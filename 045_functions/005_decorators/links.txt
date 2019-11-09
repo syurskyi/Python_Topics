@@ -1,0 +1,2 @@
+Декоратор с аргументами в Python
+https://python-scripts.com/decorator-arguments
