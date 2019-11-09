@@ -8,6 +8,15 @@
 # print()
 
 # ######################################################################################################################
+# You can use variables to store functions
+# ___ my_function
+#     print I am a function
+#
+# test  my_function
+# test
+#
+# # print()
+# ######################################################################################################################
 # You can pass functions as parameters
 
 # ___ call_passed_function incoming
@@ -48,16 +57,16 @@
 # ___ add x y
 #     r_ x + y
 #
-# ___ sub(x, y):
+# ___ sub x y
 #     r_ x - y
 #
 # operations _ _
-#     _+_: a_,
-#     _-_: s_
+#     _+_| a_
+#     _-_| s_
 # _
 
-# print(o_|_+_|(2, 3))
-# print(o_|_-_|(2, 3))
+# print(o_|_+_||2_ 3||
+# print(o_|_-_||2_ 3||
 
 # print()
 
