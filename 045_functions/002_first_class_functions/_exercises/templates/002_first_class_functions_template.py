@@ -152,3 +152,55 @@
 # print(oper___['-'](2, 3))
 #
 # print()
+
+# ######################################################################################################################
+# Python program to illustrate functions
+# can be treated as objects
+
+
+# ___ shout text
+#     r_ t_*u____
+#
+#
+# print shout__Hello__
+#
+# yell _ shout
+#
+# print yell__Hello___
+
+
+# Python program to illustrate functions
+# can be passed as arguments to other functions
+# ___ shout text
+#     r_ t_*u_
+
+
+# ___ whisper text
+#     r_ t_*l____
+#
+#
+# ___ greet func
+#     # storing the function in a variable
+#     greeting - func _Hi, I am created by a function passed as an argument._
+#     print greeting
+#
+#
+# greet _shout_
+# greet _whisper_
+
+
+# Python program to illustrate functions
+# Functions can return another function
+
+# ___ create_adder x
+#     __ adder y
+#         r_ x + y
+#
+#     r_ ad___
+#
+#
+# add_15 _ cr_ad 15
+#
+# print add_15_10__
+
+
