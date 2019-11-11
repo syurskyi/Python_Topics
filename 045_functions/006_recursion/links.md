@@ -18,3 +18,6 @@ https://www.datacamp.com/community/tutorials/understanding-recursive-functions-p
 
 Chapter 19: Рекурсия
 http://programarcadegames.com/index.php?chapter=recursion&lang=ru
+
+Мемоизация и каррирование (Python)
+https://habr.com/ru/post/335866/
