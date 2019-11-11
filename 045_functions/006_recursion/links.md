@@ -15,3 +15,6 @@ https://thepythonguru.com/python-recursive-functions/
 
 https://thepythonguru.com/python-recursive-functions/
 https://www.datacamp.com/community/tutorials/understanding-recursive-functions-python
+
+Chapter 19: Рекурсия
+http://programarcadegames.com/index.php?chapter=recursion&lang=ru
