@@ -26,8 +26,7 @@ except NameError as e:
     print(e)
     # выведет: "name 'shout' is not defined"
 
-print
-scream()
+print(scream())
 # выведет: 'Да!'
 
 # Запомним этот факт, скоро мы к нему вернёмся, но кроме того, стоит понимать, что функция в Python'e может быть
