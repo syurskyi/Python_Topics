@@ -1,19 +1,19 @@
-# Global mutable state
-current_number = 1
-accumulated_sum = 0
-
-
-def sum_recursive():
-    global current_number
-    global accumulated_sum
-    # Base case
-    if current_number == 11:
-        return accumulated_sum
-    # Recursive case
-    else:
-        accumulated_sum = accumulated_sum + current_number
-        current_number = current_number + 1
-        return sum_recursive()
-
-print(sum_recursive())
-# 55
+# # Global mutable state
+# # current_number = 1
+# # accumulated_sum = 0
+# #
+# #
+# # _ sum_recursive():
+# #     g_ c00_n00
+# #     g_ a00_s00
+# #     # Base case
+# #     i_ c00_n00 __ 11:
+# #         r_ accumulated_sum
+# #     # Recursive case
+# #     e__
+# #         accumulated_sum = accumulated_sum + c00_n00
+# #         c00_n00 = c00_n00 + 1
+# #         r_ s00_r00
+# #
+# # print s00_r00
+# # # 55
