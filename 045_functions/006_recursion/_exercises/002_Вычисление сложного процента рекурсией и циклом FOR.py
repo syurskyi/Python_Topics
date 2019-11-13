@@ -6,17 +6,17 @@ principalAmount = 4000
 # for
 
 
-# def compoundInterest(principal, compounded, duration, rate):
-#     totalCompounded = duration * compounded
-#     for i in range(1, (totalCompounded+1)):
-#         principal = principal*(1+(rate/compounded))
-#     return principal
-#
-#
-# print(compoundInterest(principalAmount, compoundedPerYear, durationInYears, interestRate))
+def compoundInterest(principal, compounded, duration, rate):
+    totalCompounded = duration * compounded
+    for i in range(1, (totalCompounded+1)):
+        principal = principal*(1+(rate/compounded))
+    return principal
 
-# recursion
 
+print(compoundInterest(principalAmount, compoundedPerYear, durationInYears, interestRate))
+#
+# # recursion
+#
 #
 def compoundRecursion(principal, compounded, duration, rate, numberOfRecursions):
     if numberOfRecursions == 0:
@@ -30,4 +30,4 @@ def compoundRecursion(principal, compounded, duration, rate, numberOfRecursions)
         amount = principal*(1+(rate/compounded))
         return compoundRecursion(amount, compounded, newDuration, rate, 1)
 
-print (compoundRecursion(principalAmount, compoundedPerYear, durationInYears, interestRate, 0))
+print(compoundRecursion(principalAmount, compoundedPerYear, durationInYears, interestRate, 0))

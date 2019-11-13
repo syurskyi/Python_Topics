@@ -3,7 +3,7 @@
 #
 # ___ deliver_presents_iteratively
 # ___ house i_ houses
-#         print Delivering presents to*; house
+#         print Delivering presents to*; h...
 #
 # deliver_presents_iteratively
 # # Delivering presents to Eric's house
@@ -23,13 +23,13 @@
 #     # Worker elf doing his work
 #     i_ l00 houses __ 1
 #         hou00 _ hou000|0|
-#         print Delivering presents to*; house
+#         print Delivering presents to*; h...
 #
 #     # Manager elf doing his work
 #     e___
 #         mid _ l00|houses| // 2
-#         first_half _|:mid|
-#         second_half _ houses|mid:|
+#         first_half _ h...|:mid|
+#         second_half _ h...|mid:|
 #
 #         # Divides his work among two elves
 #         d0000 first_half

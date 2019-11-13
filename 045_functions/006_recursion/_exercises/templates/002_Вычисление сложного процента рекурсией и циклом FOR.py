@@ -28,6 +28,6 @@
 #     e___
 #         newDuration _ t00D000 - 1
 #         amount _ pri00*|1+|ra00/comp000||
-#         r_ c00R00 amount compounded newDuration rate 1
+#         r_ c00R00 a... c.... n.... r... 1
 #
 # print c000R00 p00A00, p00A000 c000P00Y000 d00I0Y00 i00R00 0
