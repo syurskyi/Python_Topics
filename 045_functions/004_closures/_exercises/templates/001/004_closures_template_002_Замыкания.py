@@ -5,40 +5,40 @@
 #     r_ ad____
 #
 # # То же самое, но через безымянные функции:
-# make_adder _ l_ x| _lambda n: x + n)
+# make_adder _ l_ x| _l..... n: x + n)
 #
-# f _ make_adder 10
-# print f|5|| # 15
-# print f|-1|| # 9
-#
+# f _ m.._a... 10
+# print f 5 # 15
+# print f -1  # 9
+#print()
 #
 # ___ multiplier n  # multiplier возвращает функцию умножения на n
-#     def mul(k):
+#     ___ mul k
 #         r_ n * k
-#     r_ mul
+#     r_ m..
 #
 #
-# mul3 _ multiplier 3   # mul3 - функция, умножающая на 3
-# print mul3|3|_ mul3|5||
+# mul3 _ m.... 3   # mul3 - функция, умножающая на 3
+# print m..3 3 ; m..3 5
 #
 # n = 3
 #
 # ___ mult k mul_n
-#     r_ mul * k
+#     r_ m.. * k
 #
 #
 # n = 7
-# print mult 3
+# print m.. 3
 # n = 13
-# print mult 5
+# print m.. 5
 #
 # n = 10
-# mult = l_ k_ mul_n| mul * k
-# print mult 3
+# mult = l_ k_ mul_n| m.. * k
+# print m.. 3
 #
 #
 # ___ outer_func(x
 #     ___ inner_func y
 #         # inner_func замкнуло в себе х
 #         r_ y + x
-#     r_ in__f__
+#     r_ i...
