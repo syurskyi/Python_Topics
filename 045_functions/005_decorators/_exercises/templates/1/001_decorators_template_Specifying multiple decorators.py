@@ -11,7 +11,7 @@
 # _d..1
 # _d..2
 # ___ func x
-#     r_  x = _0_.f_ x
-# print(f_ 10
+#     r_  x = |0|.f_ x
+# print f_ 10
 #
 # print()
