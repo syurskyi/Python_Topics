@@ -6,23 +6,23 @@
 #     ___ cast_decorator function
 #         """Сам декоратор"""
 #
-#         ___ decorated_function _args __kwargs
-#             result _ function _args __kwargs
-#             r_ type_ result
+#         ___ decorated_function _a... __k...
+#             result _ function _a... __k..
+#             r_ type_ r..
 #
-#         r_ decorated_function
+#         r_ d.._f..
 #
-#     r_ cast_decorator
+#     r_ c.._de..
 #
-# _cast_result float
+# _c... float
 # ___ add x y
 #     r_ x + y
 #
 # print add(2, 3)
 #
-# import decimal
+# _____ dec...
 #
-# _cast_result repr
+# _c... repr
 # _cast_result d_.D_
 # ___ div x y
 #     r_ x / y

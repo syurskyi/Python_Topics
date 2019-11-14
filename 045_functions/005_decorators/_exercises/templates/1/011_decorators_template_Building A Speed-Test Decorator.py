@@ -5,20 +5,20 @@
 #
 # ___ speed_test fn
 #     _wraps fn
-#     ___ wrapper _args __kwargs
+#     ___ wrapper _a.. __k...
 #         start_time _ time
-#         result _ fn _args __kwargs
+#         result _ fn _a.. __k..
 #         end_time _ time
 #         print _"Executing |fn.__n_|"
-#         print _"Time Elapsed: |end_time - start_time|")
+#         print _"Time Elapsed: |e.._t.. - s.._t..|")
 #         r_ res___
-#     r_ wra___
+#     r_ w...
 #
-# _speed_test
+# _s..
 # ___ sum_nums_gen
 #     r_ s_(x ___ x __ r_(90000000))
 #
-# _speed_test
+# _s..
 # ___ sum_nums_list
 #     r_ s_([x ___ x __ r_(90000000)])
 #

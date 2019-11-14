@@ -1,22 +1,27 @@
 # ######################################################################################################################
-# Introduction to Decorators_decorate-syntax - be polite
+# Introduction to Decorators
+# be_polite
 
-# ___ be_polite fn
+# ___ be_politefn
 #     ___ wrapper
-#         print What a pleasure to meet you!
+#         print "What a pleasure to meet you!"
 #         fn()
 #         print Have a great day!
-#     r_ wr___
+#     r_ w..
 #
-# _be_polite
 # ___ greet
 #     print My name is Colt.
 #
-# _be_polite
 # ___ rage
 #     print I HATE YOU!
 #
-# greet()
-# rage()
+# # we are decorating our function
+# # with politeness!
+#
+# greet _ be_polite greet
+#
+# polite_rage _ be_polite rage
+# polite_rage()
 #
 # print()
+

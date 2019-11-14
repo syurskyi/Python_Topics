@@ -4,29 +4,29 @@
 
 # i_ f_
 #
-# user = {'username': 'jose123', 'access_level': 'admin'}
+# user _ 'username': 'jose123', 'access_level': 'admin'   # dictionary
 #
 # ___ user_has_permission func
-#     _fun___.wr__ func
-#     ___ secure_func _args __kwargs
+#     _fun___.wr__ f..
+#     ___ secure_func _a.. __k..
 #         __ user.g_('access_level') __ 'admin'
-#             r_ func _args __kwargs
-#     r_ secure_func
+#             r_ fu.. _a.. __k..
+#     r_ s..
 #
-# _user_has_permission
+# _u....
 # ___ my_function panel
 #     """
 #     Allows us to retrieve the password for the admin panel.
 #     """
 #     r_ _'Password for |panel| panel is 1234.'
 #
-# _user_has_permission
+# _u...
 # ___ another
 #     pass
 #
-# print(my_function.__n_
+# print m._f__.__n_
 #
-# print(my_function('movies'))
-# print(another())
+# print m._f.. 'movies'
+# print a..
 #
 # print()

@@ -8,23 +8,23 @@
 #
 #     ___ register case
 #         ___ inner fn
-#             registry|case| _ fn
+#             registry|c..| _ fn
 #             r_ fn  # we do this so we can stack register decorators!
 #
-#         r_ inner
+#         r_ i..
 #
 #     ___ decorator case
-#         fn _ registry.g_ case registry|_default_|
+#         fn _ registry.g_ c... registry|_default_|
 #         r_ fn()
 #
 #     decorator.register _ register
-#     r_ decorator
+#     r_ d..
 #
-# _switcher
+# _s...
 # ___ dow
 #     print Invalid day of week
 #
-# _dow.register 1
+# _d__.register 1
 # ___ dow_1(
 #     print Monday
 #

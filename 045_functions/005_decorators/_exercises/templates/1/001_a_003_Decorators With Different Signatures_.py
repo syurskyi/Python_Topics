@@ -3,18 +3,18 @@
 
 # ___ shout fn
 #     ___ wrapper _args __kwargs
-#         r_ fn _args __kwargs.u_
+#         r_ fn _a... __k____|.u_
 #     r_ wr__
 #
-# _shout
+# _s....
 # ___ greet name
-#     r_ f"Hi, I'm |name|."
+#     r_ f"Hi, I'm |n..|."
 #
-# _shout
+# _s....
 # ___ order main side
-#     r_ _"Hi, I'd like the |main|, with a side of |side|, please."
+#     r_ _"Hi, I'd like the |m..|, with a side of |s..|, please."
 #
-# _shout
+# _s...
 # ___ lol
 #     r_ "lol"
 #

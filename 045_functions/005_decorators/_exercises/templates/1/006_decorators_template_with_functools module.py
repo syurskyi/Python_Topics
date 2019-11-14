@@ -7,15 +7,15 @@
 #     count _ 0
 #
 #     _wraps fn
-#     ___ inner _args __kwargs
+#     ___ inner _a.. __k...
 #         no__
 #         co__
 #         co__ += 1
 #         print("|0| was called |1| times".f_ fn.__n_ co__
 #
-#     r_ inner
+#     r_ i..
 #
-# _counter
+# _c..
 # ___ add a| int__ b| int _ 10 __ int
 #     """
 #     returns sum of two integers

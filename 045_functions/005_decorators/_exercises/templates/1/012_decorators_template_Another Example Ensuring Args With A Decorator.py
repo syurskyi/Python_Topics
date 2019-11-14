@@ -4,15 +4,15 @@
 #
 # ___ ensure_no_kwargs fn
 #     _wraps fn
-#     ___ wrapper _args __kwargs
-#         __ kwargs
+#     ___ wrapper _a.. __k..
+#         __ k..
 #             ra___ V_E_ No kwargs allowed! sorry :(")
-#         r_ fn _args __kwargs
-#     r_ wra___
+#         r_ fn _a.. __k..
+#     r_ w..
 #
-# _ensure_no_kwargs
+# _e...
 # ___ greet name
-#     print _"hi there |name|"
+#     print _"hi there |n..|"
 #
 # greet name_"Tony"
 #

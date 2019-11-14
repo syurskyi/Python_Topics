@@ -3,20 +3,20 @@
 # ___ decorator fn
 #     """Пример декоратора"""
 #
-#     ___ decorated_fn _args __kwargs
+#     ___ decorated_fn _a... __k...
 #         """Модифицированная функция"""
 #
 #         print Decorated function says:
-#         fn _args __kwargs  # вызов изначальной функции
+#         fn _a... __k...  # вызов изначальной функции
 #         print()
 #
-#     r_ decorated_fn
+#     r_ d...
 #
 # _d
 # ___ hello
 #     print Hello!
 #
 # # Вызов декорированной функции
-# hello()
+# he...
 #
 # print()

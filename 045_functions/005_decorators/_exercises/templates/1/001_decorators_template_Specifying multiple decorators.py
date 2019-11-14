@@ -6,10 +6,10 @@
 # ___ deco2 f
 #     print("Вызвана функция deco2()")
 #     r_ f
-# _deco1
-# _deco2
+# _d..1
+# _d..2
 # ___ func x
 #     r_  x = _0_.f_ x
-# print(f_(10))
+# print(f_ 10
 #
 # print()
