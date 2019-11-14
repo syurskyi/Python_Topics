@@ -2,7 +2,7 @@
 # shout example
 
 # ___ shout fn
-#     ___ wrapper _args __kwargs
+#     ___ wrapper _a... __k...
 #         r_ fn _a... __k____|.u_
 #     r_ wr__
 #
