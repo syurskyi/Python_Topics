@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 def outer(num1):
     def inner_increment(num1):  # Hidden from outer code
         return num1 + 1

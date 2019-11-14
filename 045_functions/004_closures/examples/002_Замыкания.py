@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Реализация с помощью именованных функций:
 def make_adder(x):
     def adder(n):

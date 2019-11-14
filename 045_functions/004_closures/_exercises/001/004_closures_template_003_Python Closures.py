@@ -1,10 +1,24 @@
 # Python program to illustrate
+# nested functions
+# ___ outerFunction text
+#     text _ t..
+#
+#     ___ innerFunction
+#         print t..
+#
+#     in...
+#
+#
+# __ __n__ ** __m_
+#     o_F_ Hey!
+
+# Python program to illustrate
 # closures
 # ___ outerFunction text
 #     text _ text
 #
 #     ___ innerFunction
-#         print text
+#         print t...
 #
 #     r_ i_F_  # Note we are returning function WITHOUT parenthesis
 #

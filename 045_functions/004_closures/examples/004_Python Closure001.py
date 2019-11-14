@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # Python program to illustrate
 # closures
 import logging

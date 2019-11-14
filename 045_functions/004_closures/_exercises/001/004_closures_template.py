@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # ######################################################################################################################
 # closures
 
@@ -31,10 +33,10 @@
 #     ___ i __ r_ 1 n + 1
 #         f_.a_ |l_ x_ x ** i
 #
-#     r_ functions
+#     r_ f...
 #
 # ___ function __ make_powers 3
-#     print(function(2))
+#     print fu.. 2
 
 # Видно, что результататом было не 2, 4, 8, как можно было бы ожидать,
 # а 8, 8, 8
@@ -67,7 +69,7 @@
 #     ___ do_add y
 #         r_ x + y
 #
-#     r_ do_add
+#     r_ d....
 #
 # print o_(2, 3)
 # print c_(2)(3)
@@ -114,7 +116,7 @@
 #     ___ inner x
 #         # x is local to inner
 #         r_ x ** n
-#     r_ inner
+#     r_ i...
 
 # In this example, n, in the function inner is a free variable, so we have a closure that contains inner and the free variable n
 
@@ -135,14 +137,14 @@
 # ___ counter fn
 #     count _ 0
 #
-#     ___ inner _args __kwargs
+#     ___ inner _a... __k....
 #         no___
 #         co__
 #         co__ += 1
 #         print('Function |0| was called |1| times'.f_ fn.__n_ count
-#         r_ fn _args __kwargs
+#         r_ fn _a... __k...
 #
-#     r_ inner
+#     r_ i...
 #
 # ___ add a b_0
 #     """

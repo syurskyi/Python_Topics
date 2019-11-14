@@ -1,9 +1,9 @@
 # ___ has_permission page
 #     ___ inner username
-#         i_ username __ *Admin*
-#             r___ **|0|* does have access to |1|.*;f_ |u_____; page|
+#         i_ us... __ *Admin*
+#             r___ **|0|* does have access to |1|.*;f_ |u_____; p..|
 #         e____
-#             r___ **|0|* does NOT have access to |1|.*;f___|username; page|
+#             r___ **|0|* does NOT have access to |1|.*;f___|u...; p...|
 #     r_ i_____
 #
 #

@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 def print_msg(msg):
 # This is the outer enclosing function
 

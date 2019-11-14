@@ -18,7 +18,7 @@
 #     text _ text
 #
 #     ___ innerFunction
-#         print text
+#         print t...
 #
 #     r_ i_F_  # Note we are returning function WITHOUT parenthesis
 #

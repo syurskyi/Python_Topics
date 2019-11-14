@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # A function which is defined inside another function is known as nested function.
 # Nested functions are able to access variables of the enclosing scope.
 # In Python, these non-local variables can be accessed only within their scope and not outside their scope.
