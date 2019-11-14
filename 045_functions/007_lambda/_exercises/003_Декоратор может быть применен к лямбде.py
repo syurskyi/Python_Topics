@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # ___ some_decorator f
 #     ___ wraps 0a___
 #         print |_*Calling function *|f.__n__|**|

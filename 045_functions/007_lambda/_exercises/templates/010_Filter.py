@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # even _ l_____ x; x % 2 __ 0
 # print l000 fi00 even ra000 11||||
 # # [0, 2, 4, 6, 8, 10]

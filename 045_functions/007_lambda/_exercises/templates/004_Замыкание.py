@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # ___ outer_func x
 #      y _ 4
 #      ___ inner_func z

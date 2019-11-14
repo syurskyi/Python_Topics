@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # # Лямдба-выражения позволяют нам превратить следующий код:
 #
 # colors = ["Goldenrod", "Purple", "Salmon", "Turquoise", "Cyan"]

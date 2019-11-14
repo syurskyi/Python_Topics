@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # print l00 ma0 l_____ x; x.cap0000||; |*cat*; *dog*; *cow*||||
 # # ['Cat', 'Dog', 'Cow']
 #

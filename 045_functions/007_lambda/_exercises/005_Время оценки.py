@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # ___ wrap n
 #     ___ f
 #         print n

@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # ______ fun00
 # pairs _ ||1, 'a'|; |2, 'b'|; |3, 'c'||
 # fun00.r00(l_____ acc; pair; a00 + p00|0|; pairs; 0
