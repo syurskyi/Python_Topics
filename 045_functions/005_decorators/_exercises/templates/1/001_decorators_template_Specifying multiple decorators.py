@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # Specifying multiple decorators
 
 # ___ deco1 f
