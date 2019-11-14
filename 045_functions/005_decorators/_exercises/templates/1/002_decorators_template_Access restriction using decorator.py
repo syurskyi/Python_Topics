@@ -1,8 +1,8 @@
 # Access restriction using decorator
 
-# passw i_ Введите пароль:
+# passw _ i_ Введите пароль:
 #
-# ___ test_passw
+# ___ test_passw p
 #     ___ deco f
 #         i_ p == "10":  # Сравниваем пароли
 #             r_ f
@@ -13,8 +13,8 @@
 #
 # _t...
 # ___ func
-#     ___ "Доступ открыт"
+#     r___ Доступ открыт
 #
-# print(f_  # Вызываем функцию
+# print f_  # Вызываем функцию
 #
 # print()
