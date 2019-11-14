@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # Access restriction using decorator
 
 # passw _ i_ Введите пароль:
