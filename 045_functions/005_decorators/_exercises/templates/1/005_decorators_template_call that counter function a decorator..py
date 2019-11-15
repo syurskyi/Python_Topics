@@ -5,8 +5,7 @@
 #     count _ 0
 #
 #     ___ inner _a... __k...
-#         no__
-#         co__
+#         no__ co__
 #         co__ += 1
 #         print('Function |0| was called |1| times'.f_fn.__n_ co__
 #         r_ fn _a.. __k..
