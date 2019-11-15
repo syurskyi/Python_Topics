@@ -1,5 +1,6 @@
 # Annotations
 
+
 def my_func(a: 'annotation for a',
             b: 'annotation for b') -> 'annotation for return':
     return a * b
@@ -12,8 +13,10 @@ help(my_func)
 
 x = 3
 y = 5
+
+
 def my_func(a: str) -> 'a repeated ' + str(max(3, 5)) + ' times':
-	return a*max(x, y)
+    return a*max(x, y)
 
 help(my_func)
 
@@ -29,15 +32,19 @@ my_func.__annotations__
 
 # Annotations will work with default parameters too: just specify the default after the annotation
 
-def my_func(a:str='a', b:int=1)->str:
+
+def my_func(a: str = 'a', b: int = 1)->str:
     return a*b
+
 
 help(my_func)
 my_func()
 my_func('abc', 3)
 
-def my_func(a:int=0, *args:'additional args'):
+
+def my_func(a: int = 0, *args: 'additional args'):
     print(a, args)
+
 
 my_func.__annotations__
 
@@ -45,7 +52,6 @@ help(my_func)
 
 # Function Introspection
 # The name attribute holds the function's name:
-
 def my_func(a, b=2, c=3, *, kw1, kw2=2, **kwargs):
     pass
 
@@ -116,15 +122,15 @@ inspect.ismethod(my_func)
 
 # Introspecting Callable Code
 
-def fact(n: "some non-negative integer") -> "n! or 0 if n < 0": """Calculates the factorial of a non-negative integer n
-
-If n is negative, returns 0.
-"""
-if n < 0:
-    return 0
-elif n <= 1:
-    return 1
-else:
-    return n * fact(n-1)
-
-inspect.getsource(fact)
+# def fact(n: "some non-negative integer") -> "n! or 0 if n < 0": """Calculates the factorial of a non-negative integer n
+#
+# If n is negative, returns 0.
+# """
+#     if n < 0:
+#         return 0
+#     elif n <= 1:
+#         return 1
+#     else:
+#         return n * fact(n-1)
+#
+# inspect.getsource(fact)

@@ -1,52 +1,134 @@
-# An example of using function generators
-
-# ___ func x y
-#     f_ i i_ r_ 1 x+1
-#         y_ i ** y
-# f_ n i_ f_ 10 2
-#     print n e_=" "    # Выведет: 1 4 9 16 25 36 49 64 81 100
-# print()                  # Вставляем пустую строку
-# f_ n i_ f_ 10 3
-#     print n e_=" "    # Выведет: 1 8 27 64 125 216 343 512 729 1000
+# # Annotations
 #
-# print()
-# ######################################################################################################################
-#  Using the __next __ () parameter
-
-# ___ func x y
-#     ___ i i_ r_ 1 x + 1
-#         y_ i ** y
+# ___ my_func a annotation for a
+#             b 'annotation for b __ annotation for return
+#     r_ a * b
 #
-# i = f_ 3 3
-# print(i.__n_  # Выведет: 1 (1 ** 3)
-# print(i.__n_  # Выведет: 8 (2 ** 3)
-# print(i.__n_  # Выведет: 27 (3 ** 3)
-# print(i.__n_  # Исключение StopIteration
 #
-# print()
-# ######################################################################################################################
-#  Calling one generator function fro… (simple case)
-
-# ___ gen l
-#     ___ e __ l
-#         y_ f_ r_ 1 e + 1
+# help m...
 #
-# l = [5, 10]
-# ___ i __ g_([5, 10]): print i e_ - " ")
+# # The annotations can be any expression, not just strings:
 #
-# print()
-# ######################################################################################################################
-# Calling one function generator fro…er (hard case)
-
-# ___ gen2 n
-#     ___ e __ r_ 1 n + 1
-#         y_ e * 2
+# x = 3
+# y = 5
+# ___ my_func a str __ *a repeated * + s.. ma. 3 5 + * times
+# 	r_ a*m.. x y
 #
-# ___ gen l
-#     ___ e __ l
-#         y_ f_ gen2(e)
+# help m..
 #
-# l = [5, 10]
-# ___ i __ g_([5, 10]): print i e_ - " "
+# # Just like docstrings are stored in the __doc__ property, annotations are stored in the __annotations__ property
+# # - a dictionary whose keys are the parameter names, and values are the annotation.
 #
-# print()
+# x = 3
+# y = 5
+# ___ my_func a: str __ *a repeated * + s.. ma. 3 5 + * times
+# 	r_ a*m.. x y
+#
+# m._f_.__a....
+#
+# # Annotations will work with default parameters too: just specify the default after the annotation
+#
+# ___ my_func a; s.._ a  b; i.._1 __s..
+#     r_ a*b
+#
+# help m...
+# m...
+# m... 'abc' 3
+#
+# ___ my_func a; i.._0 0a...; *additional args
+#     print a a...
+#
+# m._f_.__a....
+#
+# help m....
+#
+# # Function Introspection
+# # The name attribute holds the function's name:
+#
+# ___ my_func a b_2 c_3 * kw1 kw2_2 00k...
+#     pa..
+#
+# f _ m...
+#
+#
+# m___.__n____
+# f.__n____
+#
+# # Function Introspection
+# # The defaults attribute is a tuple containing any positional parameter defaults:
+#
+# ___ my_func a b_2 c_3 * kw1 kw2_2 00k___
+#     p...
+# f _ m...
+#
+# m___.__de_____
+# m____.__kw____
+#
+#
+# # Function Introspection
+# # The code attribute contains a code object:
+#
+# ___ my_func a b_1 0ar.. 00k...
+#     i _ 10
+#     b _ min i b
+#     r_ a * b
+#
+# m... 'a' 100
+#
+# m____.__c___
+#
+# d__ m____.__c___
+#
+# # Function Introspection
+# #
+# # Attribute co_varnames is a tuple containing the parameter names and local variables:
+#
+# ___ my_func a b_2 c_3 * kw1 kw2_2 00k...
+#     pa..
+#
+# f _ m....
+#
+# m____.__c__.c._va..
+#
+#
+# # Function Introspection
+# # Attribute co_argcount returns the number of arguments (minus any * and ** args)
+#
+# ___ my_func a b_2 c_3 * kw1 kw2_2 00k___
+#     pa..
+#
+# f _ m...
+# m___.__c___.c._ar...
+#
+# # The inspect module
+#
+# ___ my_func a b_1 0a... 00k...
+#     i _ 10
+#     b _ min i b
+#     r_ a * b
+#
+# m.... 'a' 100
+#
+# ______ i.....
+# i___.isf.... m...
+# i___.ism m....
+#
+# # Introspecting Callable Code
+#
+# ___ fact n| "some non-negative integer") -> "n! or 0 if n < 0": """Calculates the factorial of a non-negative integer n
+#
+# If n is negative, returns 0.
+# """
+# i_ n < 0:
+#     r_ 0
+# e____ n <= 1:
+#     r_ 1
+# e____
+#     r_ n * fact(n-1)
+#
+# i___.getsource(fact)
+#
+#
+#
+#
+#
