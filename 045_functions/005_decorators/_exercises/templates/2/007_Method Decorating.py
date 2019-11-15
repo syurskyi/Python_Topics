@@ -9,9 +9,9 @@
 #         # Теперь мы распакуем *args и **kwargs
 #         # Если вы не слишком хорошо знакомы с распаковкой, можете прочесть следующую статью:
 #         # http://www.saltycrane.com/blog/2008/01/how-to-use-args-and-kwargs-in-python/
-#         function_to_decorate 0a__ 00k__
+#         f........ 0a__ 00k__
 #
-#     r_ a_w00_a00_a000_a000
+#     r_ a...
 #
 #
 # 0a_000
@@ -19,7 +19,7 @@
 #     print Python is cool, no argument here. # оставлено без перевода, хорошая игра слов:)
 #
 #
-# f000_w00_n0
+# f000..
 #
 #
 # # выведет:
@@ -33,7 +33,7 @@
 #     print a b c
 #
 #
-# f000_w00_ar000 1 2 3
+# f.... 1 2 3
 #
 #
 # # выведет:
@@ -44,7 +44,7 @@
 #
 # 0a_00
 # ___ function_with_named_arguments a b c platypus _ Почему нет?
-#     print Любят ли /s, /s и /s утконосов? /s* / |a b c platypus||
+#     print Любят ли /s, /s и /s утконосов? /s* / |a b c pl....||
 #
 #
 # f000 Билл Линус Стив platypus_Определенно!
@@ -60,7 +60,7 @@
 #     ___ __i__ ____
 #         ____.age _ 31
 #
-#     a_decorator_passing_arbitrary_arguments
+#     0a_.....
 #     ___ sayYourAge ____ lie_-3  # Теперь мы можем указать значение по умолчанию
 #         print Мне /s, а ты бы сколько дал?* / |_____.age + lie||
 #
