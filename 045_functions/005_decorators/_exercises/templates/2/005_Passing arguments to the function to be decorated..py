@@ -1,11 +1,11 @@
-# -*- coding: utf-8 -*-
+# # # -*- coding: utf-8 -*-
 
-# __ a_decorator_passing_arguments function_to_decorate
+# # __ a_decorator_passing_arguments function_to_decorate
 # #     ___ a_wrapper_accepting_arguments arg1 arg2 # аргументы прибывают отсюда
 # #         print Смотри, что я получил:*_ ar__ ar__
-# #         function_to_decorate ar__ ar__
+# #         f......... ar__ ar__
 # #
-# #     r__ a_w0000
+# #     r__ a.....
 # #
 # #
 # # # Теперь, когда мы вызываем функцию, которую возвращает декоратор,
@@ -14,7 +14,7 @@
 # #
 # # _a_de0000
 # # ___ print_full_name first_name last_name
-# #     print Меня зовут*_ first_name last_name
+# #     print Меня зовут*_ f..... l.....
 # #
 # #
 # # pr000 Питер _ Венкман
