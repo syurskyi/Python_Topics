@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # ___ benchmark iters
 #     ___ actual_decorator func
 #         im_ ti00

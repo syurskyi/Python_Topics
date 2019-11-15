@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # __ method_friendly_decorator method_to_decorate
 #     ___ wrapper ____ lie
 #         lie _ lie - 3  # действительно, дружелюбно - снизим возраст ещё сильней :-)

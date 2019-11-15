@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # __ a_decorator_passing_arguments function_to_decorate
 # #     ___ a_wrapper_accepting_arguments arg1 arg2 # аргументы прибывают отсюда
 # #         print Смотри, что я получил:*_ ar__ ar__

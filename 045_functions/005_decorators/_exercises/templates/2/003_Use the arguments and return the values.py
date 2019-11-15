@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # ___ benchmark_func
 #     im_ ti00
 #

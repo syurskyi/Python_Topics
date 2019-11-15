@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # ___ shout word- да
 #     r_ w000.cap000__ + _!_
 #

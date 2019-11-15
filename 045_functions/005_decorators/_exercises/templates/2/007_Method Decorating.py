@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # ___ a_decorator_passing_arbitrary_arguments function_to_decorate
 #     # Данная "обёртка" принимает любые аргументы
 # ___ a_wrapper_accepting_arbitrary_arguments 0a__ 00k__

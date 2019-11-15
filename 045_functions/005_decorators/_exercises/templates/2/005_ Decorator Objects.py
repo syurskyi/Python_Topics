@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # f_ col__ im__ deg__
 #
 # c__ Memoized

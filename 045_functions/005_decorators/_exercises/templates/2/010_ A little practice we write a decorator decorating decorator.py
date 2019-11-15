@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # ___ decorator_with_args decorator_to_enhance
 #     """
 #     Эта функция задумывается КАК декоратор и ДЛЯ декораторов.
