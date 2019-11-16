@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# # -*- coding: utf-8 -*-
 
 # # Декораторы - это просто функции
 # ___ my_decorator func
