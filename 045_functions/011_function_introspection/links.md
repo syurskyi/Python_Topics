@@ -15,3 +15,6 @@ https://linuxhint.com/python-inspect-module/
 
 inspect — Inspect Live Objects
 https://pymotw.com/3/inspect/
+
+inspect — Inspect live objects
+https://docs.python.org/3/library/inspect.html
