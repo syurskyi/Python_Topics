@@ -8,7 +8,7 @@
 #     t...
 #         result _ s___.r... 1024
 #     e____ K...I....
-#         s___.cl___
+#         s___.c___
 #         b____
 #     e____
-#         print 'Message' r___.de___ utf-8
+#         print 'Message' r___.d___ utf-8
