@@ -6,3 +6,12 @@ https://pythonru.com/biblioteki/kratkoe-rukovodstvo-po-biblioteke-python-request
 
 Python’s Requests Library (Guide)
 https://realpython.com/python-requests/
+
+Python Requests tutorial
+http://zetcode.com/python/requests/
+
+Python Requests Tutorial
+https://nitratine.net/blog/post/python-requests-tutorial/
+
+GET and POST requests using Python
+https://www.geeksforgeeks.org/get-post-requests-using-python/

@@ -1,3 +1,6 @@
+Виртуальная среда Python – Основы
+https://python-scripts.com/virtualenv
+
 Managing Python Dependencies
 https://training.talkpython.fm/courses/details/managing-python-dependencies-with-pip-and-virtual-environments
 
