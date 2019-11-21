@@ -42,7 +42,8 @@ intersect(d1, d2)
 # You have text data spread across multiple servers.
 # Each server is able to analyze this data and return a dictionary that contains words and their frequency.
 # Your job is to combine this data to create a single dictionary that contains all the words and their combined
-# frequencies from all these data sources. Bonus points if you can make your dictionary sorted by frequency (highest to lowest).
+# frequencies from all these data sources. Bonus points if you can make your dictionary sorted by frequency
+# (highest to lowest).
 # For example, you may have three servers that each return these dictionaries:
 #
 # d1 = {'python': 10, 'java': 3, 'c#': 8, 'javascript': 15}
