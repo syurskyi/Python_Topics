@@ -21,3 +21,21 @@ http://programarcadegames.com/index.php?chapter=recursion&lang=ru
 
 Мемоизация и каррирование (Python)
 https://habr.com/ru/post/335866/
+
+
+
+YOUTUBE LINKS
+ Рекурсия в Python. Рекурсивная функция Часть 1
+ https://www.youtube.com/watch?v=jvFULnNpNLg
+ 
+ Примеры рекурсивных алгоритмов
+https://www.youtube.com/watch?v=oRd4WanaeSQ
+
+Информатика. Язык Python: Рекурсия в Python. Центр онлайн-обучения «Фоксфорд»
+https://www.youtube.com/watch?v=5wm1eJP4JeU
+
+Рекурсия. Репка и матрёшка
+https://www.youtube.com/watch?v=NOaSY5pJmyc
+
+Алгоритмы на Python 3. Лекция №7
+https://www.youtube.com/watch?v=0Bc8zLURY-c
