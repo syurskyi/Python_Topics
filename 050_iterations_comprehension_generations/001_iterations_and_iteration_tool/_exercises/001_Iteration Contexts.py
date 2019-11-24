@@ -2,26 +2,25 @@
 
 # Iteration Contexts
 # Use file iterators
+for line in open('script2.py'):
+    print(line.upper(), end='')
 
-___ line i_ o... script2.py
-    print l__.u... e.._
-#
-# # Iteration Contexts
-# # Use List Comprehension
-#
-# uppers _  l__.u... ___ l... i_ o.. script2.py
-# print uppers
-#
-# # Iteration Contexts
-# # Use Map
-#
-# print m.. st_.u... o... script1.py
-#
-# # Iteration Contexts
-# # Use List and Map
-#
-# print l.. m.. st_.u.. o... script2.py
-#
+# Iteration Contexts
+# Use List Comprehension
+
+uppers = [line.upper() for line in open('script2.py')]
+print(uppers, end='')
+
+# Iteration Contexts
+# Use Map
+print()
+print(map(str.upper, open('script1.py')))
+
+# Iteration Contexts
+# Use List and Map
+print()
+print(list(map(str.upper, open('script2.py'))))
+
 # # Iteration Contexts
 # # Use Sorted
 #
