@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# # -*- coding: utf-8 -*-
 
 # # Iteration Contexts
 # # Use file iterators
@@ -6,6 +6,7 @@
 # ___ line i_ o... script2.py
 #     print l__.u... e.._
 #
+# print()
 # # Iteration Contexts
 # # Use List Comprehension
 #
@@ -51,6 +52,8 @@
 # print()
 # # Iteration Contexts
 # # Use Reduce
+# ______ fun...
+# ______ op...
 #
 # print f___.r.... o__.a.. o... script2.py
 #
@@ -58,7 +61,7 @@
 # # Iteration Contexts
 # # Use Sum
 #
-# print su. 3, 2, 4, 1, 5, 0
+# print su. 3, 2, 4, 1, 5, 0   # list
 #
 # print()
 # # Iteration Contexts
