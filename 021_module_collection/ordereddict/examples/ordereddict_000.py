@@ -1,3 +1,5 @@
+# # # -*- coding: utf-8 -*-
+
 # OrderedDict
 #
 # Модуль Python collections имеет еще один замечательный наследуемый класс dict под названием OrderedDict.
