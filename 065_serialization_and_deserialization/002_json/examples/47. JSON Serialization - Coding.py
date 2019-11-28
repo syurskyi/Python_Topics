@@ -67,6 +67,7 @@ d1 = {"a": 100, "b": 200}
 d1_json = json.dumps(d1)
 print(d1_json, type(d1_json))
 # ('{"a": 100, "b": 200}', str)
+# ######################################################################################################################
 
 print('#' * 52 + '  By the way, we can obtain a better looking JSON string by specifying'
                  '  an indent for the `dump` or `dumps` functions:')
@@ -77,6 +78,7 @@ print(json.dumps(d1, indent=2))
 #   "a": 100,
 #   "b": 200
 # }
+# ######################################################################################################################
 # And we can deserialize the JSON string:
 
 print('#' * 52 + '  And we can deserialize the JSON string:')
@@ -87,6 +89,7 @@ print(d2, type(d2))
 print(d1 == d2)
 # ({'a': 100, 'b': 200}, dict)
 # True
+# ######################################################################################################################
 
 # In fact, the original dictionary and the new one are equal.
 
@@ -98,7 +101,7 @@ d1 = {1: 100, 2: 200}
 d1_json = json.dumps(d1)
 print(d1_json)
 # '{"1": 100, "2": 200}'
-
+# ######################################################################################################################
 
 print('#' * 52 + '  Notice how the keys are now strings in the JSON "object".')
 print('#' * 52 + '  And when we deserialize:')
@@ -109,6 +112,7 @@ print(d1)
 print(d2)
 # {1: 100, 2: 200}
 # {'1': 100, '2': 200}
+# ######################################################################################################################
 
 print('#' * 52 + '  As you can see our keys are now strings!')
 print('#' * 52 + '   So be careful, it is **not** true in general that `d == loads(dumps(d))`')
@@ -137,13 +141,13 @@ d_json = '''
 d = json.loads(d_json)
 print(d)
 # {'name': 'John Cleese', 'age': 82, 'height': 1.96, 'walksFunny': True, 'sketches': [{'title': 'Dead Parrot', 'costars': ['Michael Palin']}, {'title': 'Ministry of Silly Walks', 'costars': ['Michael Palin', 'Terry Jones']}], 'boring': None}
-
-
+# ######################################################################################################################
 
 from pprint import pprint
 d
 print()
 pprint(d)
+# ######################################################################################################################
 
 # Important: The order of the keys appears preserved - but JSON objects are an unordered collection, so there is
 # no guarantee of this - do not rely on it.
@@ -164,6 +168,7 @@ print(d['sketches'][0], type(d['sketches'][0]))
 # [{'title': 'Dead Parrot', 'costars': ['Michael Palin']}, {'title': 'Ministry of Silly Walks', 'costars': ['Michael Palin', 'Terry Jones']}] <class 'list'>
 # True <class 'bool'>
 # {'title': 'Dead Parrot', 'costars': ['Michael Palin']} <class 'dict'>
+# ######################################################################################################################
 
 # As you can see the JSON array was serialized into a list, true was serialized into a bool, integer looking values
 # into int, float looking values into float and sub-objects into dict. As you can see deserializing JSON objects into
@@ -182,12 +187,14 @@ print('#' * 52 + '  Lets look at tuples, and see serializing those work:')
 d = {'a': (1, 2, 3)}
 print(json.dumps(d))
 # '{"a": [1, 2, 3]}'
+# ######################################################################################################################
 
 print('#' * 52 + '  So Python tuples are serialized into JSON lists - which again means'
                  '  that if we deserialize the JSON we will not get our exact object back:')
 
 print(json.loads(json.dumps(d)))
 # {'a': [1, 2, 3]}
+# ######################################################################################################################
 
 print('#' * 52 + '  Of course, JSON does not have a notion of tuples as a data type, so this will not work:')
 
@@ -230,9 +237,11 @@ print('#' * 52 + '  Now we could get around that problem by looking at the strin
 
 print(str(Decimal(0.5)))
 # '0.5'
+# ######################################################################################################################
 
 print(json.dumps({"a": str(Decimal(0.5))}))
 # '{"a": "0.5"}'
+# ######################################################################################################################
 
 print('#' * 52 + '  But as you can see from the JSON, when we read that data back, '
                  '  we will get the **string** `0.5` back, not even a float!')
@@ -276,6 +285,7 @@ class Person:
 p = Person('John', 82)
 print(p.toJSON())
 # {'name': 'John', 'age': 82}
+# ######################################################################################################################
 
 print('#' * 52 + '  And now we can serialize it as follows:')
 
@@ -286,6 +296,7 @@ print(json.dumps({"john": p.toJSON()}, indent=2))
 #     "age": 82
 #   }
 # }
+# ######################################################################################################################
 # In fact, often we can make our life a little easier by using the vars function (or the __dict__ attribute)
 # to return a dictionary of our object attributes:
 
@@ -294,9 +305,11 @@ print('#' * 52 + '  In fact, often we can make our life a little easier by using
 
 print(vars(p))
 # {'name': 'John', 'age': 82}
+# ######################################################################################################################
 
 print(p.__dict__)
 # {'name': 'John', 'age': 82}
+# ######################################################################################################################
 
 print('#' * 52 + '  ')
 
@@ -313,6 +326,7 @@ class Person:
 
 print(json.dumps(dict(john=p.toJSON())))
 # '{"john": {"name": "John", "age": 82}}'
+# ######################################################################################################################
 
 print('#' * 52 + '  How about dealing with sets, where we do not control the class definition:')
 
@@ -322,9 +336,11 @@ s = {1, 2, 3}
 
 print(json.dumps(dict(a=list({1, 2, 3}))))
 # '{"a": [1, 2, 3]}'
+# ######################################################################################################################
 
 # There are a couple of glaring issues at this point:
 # we have to remember to call .toJSON() for our custom objects
 # what about built-in or standard types like sets, or dates? use built-in or write custom functions to convert
 # and call them every time?
 # There has to be a better way... !
+
