@@ -55,7 +55,7 @@
 # # We are going to use the json module:
 #
 #
-# ______ json
+# ______ j...
 #
 # # In Python, serializing a dictionary to JSON is done using the dump and dumps functions - they are just variants
 # # of the same thing - dumps serializes to a string, while dump writes the serialization to a file
@@ -97,7 +97,7 @@
 # print('#' * 52 + '   In Python, keys can be any hashable object.')
 # print('#' * 52 + '  But remember that in JSON keys must be strings!')
 #
-# d1 =  1 100 2 200
+# d1 _ 1 100 2 200
 # d1_json _ j___.d... _1
 # print _1_
 # # '{"1": 100, "2": 200}'
@@ -227,7 +227,7 @@
 # # Object of type 'complex' is not JSON serializable
 #
 # t__
-#     j___.d... "a" 1 2 3}
+#     j___.d... "a" 1 2 3}   # double {}
 # e___ T..E.. a_ ex
 #     print ?
 # # Object of type 'set' is not JSON serializable
@@ -270,7 +270,7 @@
 #                  '  and use that when we serialize the object:')
 #
 #
-# c_ Person:
+# c_ Person
 #     ___ __i__ ____ name age
 #         ____.n.. _ n..
 #         ____.a.. _ a..
