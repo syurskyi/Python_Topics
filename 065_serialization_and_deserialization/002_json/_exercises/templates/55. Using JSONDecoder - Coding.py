@@ -5,11 +5,11 @@
 # When we subclass JSONEncoder we override the default method which then allows us to intercept encoding of specific
 # types of objects, and delegate back to the parent class what we don't want to handle specifically.
 # With the JSONDecoder class we override the decode function which passes us the entire JSON as a string and we have
-# to return whatever Python object we want. There's no delegating anything back to the parent class unless we want 
+# to return whatever Python object we want. There's no delegating anything back to the parent class unless we want
 # to completely skip customizing the output.
 # Let's first see how the functions work:
 
-import json
+______ j___
 
 j = '''
     {
@@ -23,12 +23,12 @@ j = '''
     }
 '''
 
-class CustomDecoder(json.JSONDecoder):
+class CustomDecoder(j___.JSONDecoder):
     def decode(self, arg):
         print("decode:", type(arg), arg)
         return "a simple string object"
 
-print(json.loads(j, cls=CustomDecoder))
+print(j___.loads(j, cls=CustomDecoder))
 
 # As you can see, whatever we return from the decode method is the result of calling loads.
 # So, we might want to intercept certain JSON strings, handling them in some custom way, and delegate back to
@@ -65,16 +65,16 @@ j_other = '''
 }
 '''
 
-class CustomDecoder(json.JSONDecoder):
+class CustomDecoder(j___.JSONDecoder):
     def decode(self, arg):
         if 'points' in arg:
-            obj = json.loads(arg)
+            obj = j___.loads(arg)
             return "parsing object for points"
         else:
             return super().decode(arg)
 
-print(json.loads(j_points, cls=CustomDecoder))
-print(json.loads(j_other, cls=CustomDecoder))
+print(j___.loads(j_points, cls=CustomDecoder))
+print(j___.loads(j_other, cls=CustomDecoder))
 # {'a': 1, 'b': 2}
 # ######################################################################################################################
 
@@ -82,20 +82,20 @@ print('#' * 52 + '  So, lets implement the custom decoder now, assuming that `po
                  '  in the JSON object:')
 
 
-class CustomDecoder(json.JSONDecoder):
+class CustomDecoder(j___.JSONDecoder):
     def decode(self, arg):
-        obj = json.loads(arg)
+        obj = j___.loads(arg)
         if 'points' in obj:  # top level
             obj['points'] = [Point(x, y)
                              for x, y in obj['points']]
         return obj
 
 
-print(json.loads(j_points, cls=CustomDecoder))
+print(j___.loads(j_points, cls=CustomDecoder))
 # {'points': [Point(x=10, y=20), Point(x=-1, y=-2), Point(x=0.5, y=0.5)]}
 # ######################################################################################################################
 
-print(json.loads(j_other, cls=CustomDecoder))
+print(j___.loads(j_other, cls=CustomDecoder))
 # {'a': 1, 'b': 2}
 # ######################################################################################################################
 
@@ -104,13 +104,13 @@ print(json.loads(j_other, cls=CustomDecoder))
 # Here I am going to specify that a Point object in the JSON document should be specified using this format:
 # {"_type": "point", "x": x-coord, "y": y-coord}
 # So, when we parse the JSON string we are going to look for such a structure, and do the appropriate type conversion
-# if needed. Of course, we'll have to look recursively in the JSON for this structure. We'll follow the same approach 
+# if needed. Of course, we'll have to look recursively in the JSON for this structure. We'll follow the same approach
 # as before, first deserializing to a "generic" Python dict, then replacing any Point structure as we find them.
 # To avoid having to iterate through the deserialized JSON object when we don't have that structure there in the first
 # place, I'm going to look for "_type": "point" in the string. Technically we also need to look for "_type":"point"
 # since both, from a JSON object perspective, are the same thing. In fact any amount of whitespace surrounding the :
 # is acceptable. It would be possible but result in very unwieldy and concoluted code if we were to use an ordinary
-# string search, so I'm going to use a regular expression instead (if you need help getting started with regular 
+# string search, so I'm going to use a regular expression instead (if you need help getting started with regular
 # expressions, I highly recommend using this site:
 
 
@@ -161,12 +161,12 @@ print(re.search(pattern, '"_type"  :  "point"'))
 # <_sre.SRE_Match object; span=(0, 19), match='"_type"  :  "point"'>
 # ######################################################################################################################
 
-print('#' * 52 + '  OK, now that we have a working regular expression pattern we can implement our custom JSON decoder.')
+print('#' * 52 + '  OK, now that we have a working regular expression pattern we can implement our custom j___ decoder.')
 
 
-class CustomDecoder(json.JSONDecoder):
+class CustomDecoder(j___.JSONDecoder):
     def decode(self, arg):
-        obj = json.loads(arg)
+        obj = j___.loads(arg)
         pattern = r'"_type"\s*:\s*"point"'
         if re.search(pattern, arg):
             # we have at least one `Point'
@@ -213,7 +213,7 @@ j = '''
 }
 '''
 
-print(json.loads(j))
+print(j___.loads(j))
 # {'a': 100,
 #  'b': 0.5,
 #  'rectangle': {'corners': {'b_left': {'_type': 'point', 'x': -1, 'y': -1},
@@ -226,7 +226,7 @@ print(json.loads(j))
 # ######################################################################################################################
 
 from pprint import pprint
-pprint(json.loads(j, cls=CustomDecoder))
+pprint(j___.loads(j, cls=CustomDecoder))
 # {'a': 100,
 #  'b': 0.5,
 #  'rectangle': {'corners': {'b_left': Point(x=-1, y=-1),
@@ -245,7 +245,7 @@ print('#' * 52 + '   but instead of specifying this each and every time we calls
                  ' we can bundle this up into a custom decoder instead:')
 
 from decimal import Decimal
-CustomDecoder = json.JSONDecoder(parse_float=Decimal)
+CustomDecoder = j___.JSONDecoder(parse_float=Decimal)
 
 d = CustomDecoder.decode(j)
 pprint(d)
@@ -265,8 +265,8 @@ pprint(d)
 print('#' * 52 + '  Of course, we can combine this with our custom decoder too:')
 
 
-class CustomDecoder(json.JSONDecoder):
-    base_decoder = json.JSONDecoder(parse_float=Decimal)
+class CustomDecoder(j___.JSONDecoder):
+    base_decoder = j___.JSONDecoder(parse_float=Decimal)
 
     def decode(self, arg):
         obj = self.base_decoder.decode(arg)
@@ -297,7 +297,7 @@ class CustomDecoder(json.JSONDecoder):
         return obj
 
 
-pprint(json.loads(j, cls=CustomDecoder))
+pprint(j___.loads(j, cls=CustomDecoder))
 # {'a': 100,
 #  'b': Decimal('0.5'),
 #  'rectangle': {'corners': {'b_left': Point(x=-1, y=-1),
@@ -312,13 +312,13 @@ print('#' * 52 + '  Its not evident that our `Point(x=0.5, y=0.5)` actually cont
                  '  that is really just the string representation - so lets just make sure they are indeed '
                  ' `Decimal` objects:')
 
-result = json.loads(j, cls=CustomDecoder)
+result = j___.loads(j, cls=CustomDecoder)
 pt = result['rectangle']['interior_pts'][1]
 print(type(pt.x), type(pt.y))
 # <class 'decimal.Decimal'> <class 'decimal.Decimal'>
 # ######################################################################################################################
 
-# As you can see, decoding JSON into custom objects is not exactly easy - the basic reason being that JSON does not 
+# As you can see, decoding JSON into custom objects is not exactly easy - the basic reason being that JSON does not
 # support anything other than simple data types such as integers, floats, strings, booleans, constants and objects and lists.
 # The rest is up to us.
 # This is one of the reasons there are quite a few 3rd party libraries that allow us to serialize and deserialize
