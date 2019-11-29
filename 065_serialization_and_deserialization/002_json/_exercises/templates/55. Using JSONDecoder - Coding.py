@@ -11,7 +11,7 @@
 
 ______ j___
 
-j = '''
+j _ '''
     {
         "a": 100,
         "b": [1, 2, 3],
@@ -23,10 +23,10 @@ j = '''
     }
 '''
 
-class CustomDecoder(j___.JSONDecoder):
-    def decode(self, arg):
-        print("decode:", type(arg), arg)
-        return "a simple string object"
+c_ CustomDecoder j___.J..D..
+    ___ decode ____ ar.
+        print("decode:", ty.. ar. ar.
+        r_ "a simple string object"
 
 print(j___.loads(j, cls=CustomDecoder))
 
@@ -40,15 +40,15 @@ print('#' * 52 + '  So, we might want to intercept certain JSON strings, handlin
                  '  and delegate back to the parent class if its not a string we want to handle ourselves -'
                  '  but its all or nothing:')
 
-class Point:
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
+c_ Point:
+    ___ __i___ ___ x y
+        ____.x _ x
+        ____.y _ y
 
-    def __repr__(self):
-        return f'Point(x={self.x}, y={self.y})'
+    ___ __re__ ____
+        r_ _*P.. x_|____.x y_ ____.y *
 
-j_points = '''
+j_points _ '''
 {
     "points": [
         [10, 20],
@@ -58,23 +58,23 @@ j_points = '''
 }
 '''
 
-j_other = '''
+j_other _ '''
 {
     "a": 1,
     "b": 2
 }
 '''
 
-class CustomDecoder(j___.JSONDecoder):
-    def decode(self, arg):
-        if 'points' in arg:
-            obj = j___.loads(arg)
-            return "parsing object for points"
-        else:
-            return super().decode(arg)
+c_ CustomDecoder j___.J..D..
+    ___ decode ____ ar.
+        i_ 'points' i_ ar.
+            obj _ j___.lo.. ar.
+            r_ "parsing object for points"
+        e___
+            r_ su__.de.. ar.
 
-print(j___.loads(j_points, cls=CustomDecoder))
-print(j___.loads(j_other, cls=CustomDecoder))
+print j___.lo.. j_po.. cl._C..De..
+print j___.lo.. j_o.. cl._C..De..
 # {'a': 1, 'b': 2}
 # ######################################################################################################################
 
@@ -82,20 +82,20 @@ print('#' * 52 + '  So, lets implement the custom decoder now, assuming that `po
                  '  in the JSON object:')
 
 
-class CustomDecoder(j___.JSONDecoder):
-    def decode(self, arg):
-        obj = j___.loads(arg)
-        if 'points' in obj:  # top level
-            obj['points'] = [Point(x, y)
-                             for x, y in obj['points']]
-        return obj
+c_ CustomDecoder j___.J..D..
+    ___ decode ____  ar.
+        obj _ j___.lo.. ar.
+        i_ 'points' i_ obj  # top level
+            ob. 'points'| _ P... x y
+                             ___ x  y i_ ob. |'points'
+        r_ ob.
 
 
-print(j___.loads(j_points, cls=CustomDecoder))
+print j___.lo.. j_po.. cl._Cu..
 # {'points': [Point(x=10, y=20), Point(x=-1, y=-2), Point(x=0.5, y=0.5)]}
 # ######################################################################################################################
 
-print(j___.loads(j_other, cls=CustomDecoder))
+print j___.lo.. j_ot.. cl._Cu..
 # {'a': 1, 'b': 2}
 # ######################################################################################################################
 
@@ -118,8 +118,8 @@ print('#' * 52 + '  ')
 print('#' * 52 + '  ')
 print('#' * 52 + '  ')
 
-import re
-pattern = r'"_type"\s*:\s*"point"'
+______ r_
+pattern _ r'"_type"\s*:\s*"point"'
 
 # In this pattern, \s simply means a whitespace character, and the * right after it means zero or more times.
 # Also note that we prefix that string with r to tell Python not to interpret the \ as anything special -
@@ -141,59 +141,59 @@ print(r'word1\tword2')
 # Once we have it compiled, we can use the search method that will find the first occurrence of the pattern in our
 # search string, or return None if it was not found:
 
-regexp = re.compile(pattern)
-print(regexp.search('"a": 1'))
+regexp _ r_.co.. pa..
+print re__.se.. '"a": 1'
 # None
 # ######################################################################################################################
 
-print(regexp.search('"_type": "point"'))
+print r..e...se.. '"_type": "point"'
 # <_sre.SRE_Match object; span=(0, 16), match='"_type": "point"'>
 # ######################################################################################################################
 
-print(regexp.search('"_type"   : "point"'))
+print r__e__.se.. '"_type"   : "point"'
 # <_sre.SRE_Match object; span=(0, 19), match='"_type"   : "point"'>
 # ######################################################################################################################
 
 print('#' * 52 + '  Alternatively, if we dont want to compile it'
                  ' (if we only use it once, there is no real need to do so), we can do a search this way:')
 
-print(re.search(pattern, '"_type"  :  "point"'))
+print r_.se.. pa.. '"_type"  :  "point"'
 # <_sre.SRE_Match object; span=(0, 19), match='"_type"  :  "point"'>
 # ######################################################################################################################
 
 print('#' * 52 + '  OK, now that we have a working regular expression pattern we can implement our custom j___ decoder.')
 
 
-class CustomDecoder(j___.JSONDecoder):
-    def decode(self, arg):
-        obj = j___.loads(arg)
-        pattern = r'"_type"\s*:\s*"point"'
-        if re.search(pattern, arg):
+c_ CustomDecoder j___.J..D..
+    ___ decode ____ ar.
+        obj _ j___.lo.. ar.
+        pattern _ r'"_type"\s*:\s*"point"'
+        i_ r_.se.. p... ar.
             # we have at least one `Point'
-            obj = self.make_pts(obj)
-        return obj
+            obj _ ____.make_pts ob.
+        r_ ob.
 
-    def make_pts(self, obj):
+    ___ make_pts ____ ob.
         # recursive function to find and replace points
         # received object could be a dictionary, a list, or a simple type
-        if isinstance(obj, dict):
+        i_ isi.. ob. di..
             # first see if this dictionary is a point itself
-            if '_type' in obj and obj['_type'] == 'point':
+            i_ '_type' i_ ob. an. ob. '_type'| __ 'point'
                 # could have used: if obj.get('_type', None) == 'point'
-                obj = Point(obj['x'], obj['y'])
-            else:
+                obj _ P... ob.|'x' obj|'y'
+            e___
                 # root object is not a point
                 # but it could contain a sub-object which itself
                 # is or contains a Point object
-                for key, value in obj.items():
-                    obj[key] = self.make_pts(value)
-        elif isinstance(obj, list):
-            for index, item in enumerate(obj):
-                obj[index] = self.make_pts(item)
-        return obj
+                ___ key value i_ ob_.it..
+                    obj key| _ ____.make_pts va..
+        e___ isi.. ob. li..
+            ___ index item i_ en.. ob.
+                ob_ in..| _ ____.make_pts it..
+        r___ ob.
 
 
-j = '''
+j _ '''
 {
     "a": 100,
     "b": 0.5,
@@ -213,7 +213,7 @@ j = '''
 }
 '''
 
-print(j___.loads(j))
+print j___.lo.. ?
 # {'a': 100,
 #  'b': 0.5,
 #  'rectangle': {'corners': {'b_left': {'_type': 'point', 'x': -1, 'y': -1},
@@ -225,8 +225,8 @@ print(j___.loads(j))
 #    {'_type': 'point', 'x': 0.5, 'y': 0.5}]}}
 # ######################################################################################################################
 
-from pprint import pprint
-pprint(j___.loads(j, cls=CustomDecoder))
+f___ pp.. _______ pp..
+pprint j___.lo.. ? cl._Cu..
 # {'a': 100,
 #  'b': 0.5,
 #  'rectangle': {'corners': {'b_left': Point(x=-1, y=-1),
@@ -244,10 +244,10 @@ print('#' * 52 + '  We can use those to define a custom `JSONEncoder` class if w
 print('#' * 52 + '   but instead of specifying this each and every time we calls `loads`, '
                  ' we can bundle this up into a custom decoder instead:')
 
-from decimal import Decimal
-CustomDecoder = j___.JSONDecoder(parse_float=Decimal)
+f___ de... _____ D..
+CustomDecoder _ j___.J..D.. parse_float=D..
 
-d = CustomDecoder.decode(j)
+d _ Cu___.de.. ?
 pprint(d)
 # {'a': 100,
 #  'b': Decimal('0.5'),
@@ -265,40 +265,40 @@ pprint(d)
 print('#' * 52 + '  Of course, we can combine this with our custom decoder too:')
 
 
-class CustomDecoder(j___.JSONDecoder):
-    base_decoder = j___.JSONDecoder(parse_float=Decimal)
+c_ CustomDecoder(j___.J..D..):
+    base_decoder _ j___.J..D.. parse_float_D...
 
-    def decode(self, arg):
-        obj = self.base_decoder.decode(arg)
-        pattern = r'"_type"\s*:\s*"point"'
-        if re.search(pattern, arg):
+    ___ decode ____  ar.
+        obj _ ____.ba.._de...de.. ar.
+        pattern _ r'"_type"\s*:\s*"point"'
+        i_ r_.se.. pa.. ar.
             # we have at least one `Point'
-            obj = self.make_pts(obj)
-        return obj
+            obj _ ____.m.._p.. ob.
+        r_ ?
 
-    def make_pts(self, obj):
+    ___ make_pts ____ obj
         # recursive function to find and replace points
         # received object could be a dictionary, a list, or a simple type
-        if isinstance(obj, dict):
+        i_ isi.. ob. di..
             # first see if this dictionary is a point itself
-            if '_type' in obj and obj['_type'] == 'point':
-                obj = Point(obj['x'], obj['y'])
-            else:
+            i_ '_type' i_ ob. an. ob.|'_type' __ 'point':
+                obj _ P... ob.|'x' obj|'y'
+            e___
                 # root object is not a point
                 # but it could contain a sub-object which itself
                 # is or contains a Point object nested at some level
                 # maybe another dictionary, or a list
-                for key, value in obj.items():
-                    obj[key] = self.make_pts(value)
-        elif isinstance(obj, list):
+                ____ key value i_ ob_.it..
+                    ob. |k.. _ ____.m.._p.va..
+        e___ isi.. ob. li..
             # received a list - need to run each item through make_pts
-            for index, item in enumerate(obj):
-                obj[index] = self.make_pts(item)
-        return obj
+            ___ index, item i_ en... ob.
+                ob. in...| _ ____.ma.._p.. it..
+        r_ o..
 
 
-pprint(j___.loads(j, cls=CustomDecoder))
-# {'a': 100,
+pprint j___.lo.. ? cls_Cu__
+# {.
 #  'b': Decimal('0.5'),
 #  'rectangle': {'corners': {'b_left': Point(x=-1, y=-1),
 #    'b_right': Point(x=1, y=-1),
@@ -312,9 +312,9 @@ print('#' * 52 + '  Its not evident that our `Point(x=0.5, y=0.5)` actually cont
                  '  that is really just the string representation - so lets just make sure they are indeed '
                  ' `Decimal` objects:')
 
-result = j___.loads(j, cls=CustomDecoder)
-pt = result['rectangle']['interior_pts'][1]
-print(type(pt.x), type(pt.y))
+result _ j___.lo.. ? cl._Cu..
+pt _ re... 'rectangle' 'interior_pts' 1
+print ty.. p_.x ty.. p_.y
 # <class 'decimal.Decimal'> <class 'decimal.Decimal'>
 # ######################################################################################################################
 
