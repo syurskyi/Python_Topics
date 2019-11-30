@@ -1,5 +1,6 @@
-passw = input("Введите пароль: ")
+# # -*- coding: utf-8 -*-
 
+passw = input("Введите пароль: ")
 
 def test_passw(p):
     def deco(f):

@@ -1,3 +1,5 @@
+# # -*- coding: utf-8 -*-
+
 def benchmark(iters):
     def actual_decorator(func):
         import time

@@ -1,3 +1,5 @@
+# # -*- coding: utf-8 -*-
+
 def shout(word="да"):
     return word.capitalize() + "!"
 

@@ -1,3 +1,5 @@
+# # -*- coding: utf-8 -*-
+
 def method_friendly_decorator(method_to_decorate):
     def wrapper(self, lie):
         lie = lie - 3  # действительно, дружелюбно - снизим возраст ещё сильней :-)

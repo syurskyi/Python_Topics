@@ -1,3 +1,5 @@
+# # -*- coding: utf-8 -*-
+
 def a_decorator_passing_arbitrary_arguments(function_to_decorate):
     # Данная "обёртка" принимает любые аргументы
     def a_wrapper_accepting_arbitrary_arguments(*args, **kwargs):

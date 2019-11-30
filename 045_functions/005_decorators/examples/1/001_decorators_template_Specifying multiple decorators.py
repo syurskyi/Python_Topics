@@ -1,3 +1,5 @@
+# # -*- coding: utf-8 -*-
+
 def deco1(f):
     print("Вызвана функция deco1()")
     return f
