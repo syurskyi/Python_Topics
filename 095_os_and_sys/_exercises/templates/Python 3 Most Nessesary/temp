@@ -1,0 +1,22 @@
+16.2. Methods for working with files
+
+16.3. Accessing files with the os module
+16.4. Classes StringIO and BytesIO
+16.5. File and Directory Permissions
+16.6. Functions
+for manipulating files
+Listing 16.4. An example of using the stat () function
+Listing 16.5. An example of using the utime () function
+16.7. Converting the path to a file or directory
+16.8. I / O Redirection
+Listing 16.6. Redirect output to file
+Listing 16.7. Input stream redirection
+Listing 16.8. Contents of the tests.py file
+Listing 16.9. Process progress bar
+16.9. Saving objects to a file
+Listing 16.10. Saving multiple objects
+Listing 16.11. Recover multiple objects
+16.10. Functions for working with catalogs
+Listing 16.12. An example of using the glob () function
+16.11. Exceptions thrown by file operations
+Listing 16.13. Handling exceptions thrown during file operations
