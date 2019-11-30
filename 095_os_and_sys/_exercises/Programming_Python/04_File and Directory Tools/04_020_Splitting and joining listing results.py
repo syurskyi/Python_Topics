@@ -9,6 +9,7 @@ for file in glob.glob(dirname + '/*'):
 # C:\temp\parts part0002 => C:\Other\part0002
 # C:\temp\parts part0003 => C:\Other\part0003
 # C:\temp\parts part0004 => C:\Other\part0004
+# ######################################################################################################################
 
 import os
 for file in os.listdir(dirname):
@@ -18,5 +19,5 @@ for file in os.listdir(dirname):
 # C:\temp\parts part0002 => C:\temp\parts\part0002
 # C:\temp\parts part0003 => C:\temp\parts\part0003
 # C:\temp\parts part0004 => C:\temp\parts\part0004
-
+# ######################################################################################################################
 

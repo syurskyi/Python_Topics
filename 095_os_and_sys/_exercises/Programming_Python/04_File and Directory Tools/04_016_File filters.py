@@ -13,6 +13,7 @@ def filter_stream(function):
 # +Jethro
 # *Elly May
 # +"Uncle Jed"
+# ######################################################################################################################
 
 from filters import filter_files
 filter_files('hillbillies.txt', str.upper)
@@ -21,3 +22,4 @@ print(open('hillbillies.txt.out').read())
 # +JETHRO
 # *ELLY MAY
 # +"UNCLE JED"
+# ######################################################################################################################

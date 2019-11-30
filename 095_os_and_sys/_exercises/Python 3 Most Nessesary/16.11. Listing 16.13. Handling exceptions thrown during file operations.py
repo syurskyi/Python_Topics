@@ -1,4 +1,5 @@
-. . .
+# # -*- coding: utf-8 -*-
+
 try:
     open("C:\temp\new\file.txt")
 except FileNotFoundError:

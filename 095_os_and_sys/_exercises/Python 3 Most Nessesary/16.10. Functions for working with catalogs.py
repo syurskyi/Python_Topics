@@ -1,3 +1,5 @@
+# # -*- coding: utf-8 -*-
+
 import os
 os.getcwd()               # Текущий рабочий каталог
 # 'C:\\book'
@@ -6,13 +8,14 @@ os.getcwd()               # Текущий рабочий каталог
 os.chdir("C:\\book\\folder1\\")
 os.getcwd()               # Текущий рабочий каталог
 # 'C:\\book\\folder1'
+# ######################################################################################################################
 
 os.mkdir("newfolder")     # Создание каталога
-
 os.rmdir("newfolder") # Удаление каталога
 
 os.listdir("C:\\book\\folder1\\")
 # ['file1.txt', 'file2.txt', 'file3.txt', 'folder1', 'folder2']
+# ######################################################################################################################
 
 for (p, d, f) in os.walk("C:\\book\\folder1\\"):
     print(p)
@@ -22,7 +25,7 @@ for (p, d, f) in os.walk("C:\\book\\folder1\\"):
 # C:\book\folder1\folder1_1\folder1_1_1
 # C:\book\folder1\folder1_1\folder1_1_2
 # C:\book\folder1\folder1_2
-
+# ######################################################################################################################
 
 for (p, d, f) in os.walk("C:\\book\\folder1\\", False):
     print(p)
@@ -32,6 +35,7 @@ for (p, d, f) in os.walk("C:\\book\\folder1\\", False):
 # C:\book\folder1\folder1_1
 # C:\book\folder1\folder1_2
 # C:\book\folder1\
+# ######################################################################################################################
 
 
 import os
@@ -49,16 +53,17 @@ shutil.rmtree("C:\\book\\folder1\\")
 from os.path import normcase
 normcase(r"c:/BoOk/fIlE.TxT")
 # 'c:\\book\\file.txt'
-
+# ######################################################################################################################
 
 import os.path
 os.path.isdir(r"C:\book\file.txt")
 # False
 os.path.isdir("C:\\book\\")
 # True
-
+# ######################################################################################################################
 
 os.path.isfile(r"C:\book\file.txt")
 # True
 os.path.isfile("C:\\book\\")
 # False
+# ######################################################################################################################

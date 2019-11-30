@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 import sys, time
 for i in range(5, 101, 5):
     sys.stdout.write("\r ... %s%%" % i) # Обновляем индикатор

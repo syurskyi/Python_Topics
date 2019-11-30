@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 import sys
 tmp_in = sys.stdin          # Сохраняем ссылку на sys.stdin
 f = open(r"file.txt", "r")  # Открываем файл на чтение

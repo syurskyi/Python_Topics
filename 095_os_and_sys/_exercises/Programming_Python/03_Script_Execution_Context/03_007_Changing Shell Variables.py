@@ -9,6 +9,7 @@ print(os.environ['TEMP'])
 # C:\...\PP4E\System\Environment> set USER=Bob
 # C:\...\PP4E\System\Environment> python echoenv.py
 # echoenv... Hello, Bob
+# ######################################################################################################################
 
 print('#' * 52 + 'setenv.py')
 import os
@@ -32,3 +33,4 @@ print(os.environ['USER'])                # show current shell variable value
 # echoenv... Hello, Gumby
 # C:\...\PP4E\System\Environment> echo %USER%
 # Bob
+# ######################################################################################################################

@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import sys                  # Подключаем модуль sys
 tmp_out = sys.stdout        # Сохраняем ссылку на sys.stdout
 f = open(r"file.txt", "a")  # Открываем файл на дозапись

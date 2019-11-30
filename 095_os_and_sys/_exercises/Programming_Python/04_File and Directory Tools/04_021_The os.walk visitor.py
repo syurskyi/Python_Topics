@@ -26,6 +26,7 @@ for (dirname, subshere, fileshere) in os.walk('.'):
 # C:\temp\test\parts\part0002
 # C:\temp\test\parts\part0003
 # C:\temp\test\parts\part0004
+# ######################################################################################################################
 
 import os
 matches = []
@@ -45,6 +46,7 @@ for name in matches: print(name)
 # C:\temp\PP3E\Examples\PP3E\Internet\Ftp\mirror\ftptools.py
 # C:\temp\PP3E\Examples\PP3E\Internet\Ftp\mirror\uploadflat.py
 # C:\temp\PP3E\Examples\PP3E\System\Media\playfile.py
+# ######################################################################################################################
 
 gen = os.walk(r'C:\temp\test')
 gen.__next__()
@@ -55,4 +57,5 @@ gen.__next__()
 # Traceback (most recent call last):
 # File "<stdin>", line 1, in <module>
 # StopIteration
+# ######################################################################################################################
 

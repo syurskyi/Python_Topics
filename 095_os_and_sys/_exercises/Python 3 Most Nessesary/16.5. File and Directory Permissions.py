@@ -1,3 +1,5 @@
+# # -*- coding: utf-8 -*-
+
 import os                       # Подключаем модуль os
 os.access(r"file.txt", os.F_OK)  # Файл существует
 # True

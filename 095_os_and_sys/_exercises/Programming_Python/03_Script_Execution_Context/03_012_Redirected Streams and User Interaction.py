@@ -12,16 +12,18 @@ if __name__ == '__main__': # when run, not when imported
 # Enter a number>8 squared is 64
 # Enter a number>6 squared is 36
 # Enter a number>Bye
+# ######################################################################################################################
 
 from moreplus import more
 more(open('adderSmall.py').read())
 import sys
 print(sum(int(line) for line in sys.stdin))
-
 # C:\...\PP4E\System\Streams> python moreplus.py adderSmall.py
+
 import sys
 print(sum(int(line) for line in sys.stdin))
 # C:\...\PP4E\System\Streams> python moreplus.py moreplus.py
+# ######################################################################################################################
 
 # import sys
 # def getreply():

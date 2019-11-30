@@ -16,6 +16,8 @@ import os
 pipe = os.popen('python hello-out.py') # 'r' is default--read stdout
 print(pipe.read())
 # 'Hello shell world\n'
+# ######################################################################################################################
+
 print(pipe.close()) # exit status: None is good
 # None
 
