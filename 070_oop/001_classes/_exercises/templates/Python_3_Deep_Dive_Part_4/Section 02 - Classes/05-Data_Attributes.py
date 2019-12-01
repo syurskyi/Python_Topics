@@ -11,7 +11,7 @@
 #
 # # %%
 # c_ BankAccount
-#     a__ _ 1.2
+#     apr _ 1.2
 #
 # # %%
 # print ?.-d

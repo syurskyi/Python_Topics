@@ -13,7 +13,7 @@
 #     language _ 'Python'
 #
 #     ___ say_hello
-#         print(_*Hello f___  ?.l.. !*
+#         print(_*Hello from  ?.l.. !*
 #
 # # %%
 # print ?.-d
@@ -25,7 +25,7 @@
 # # '''
 # #
 # # # %%
-# print ?.s._h. g.. ? 'say_hello'
+# print ?.s._h. g.. ? 's....
 # #
 # # # %%
 # # '''
@@ -36,7 +36,7 @@
 # ?.s._h.
 # #
 # # # %%
-# # getattr(Program, 'say_hello')()
+# g.. ? s..
 # #
 # # # %%
 # # '''
@@ -44,6 +44,6 @@
 # # '''
 # #
 # # # %%
-# print ?.-d 'say_hello'
+# print ?.-d 's....
 # #
 # # # %%

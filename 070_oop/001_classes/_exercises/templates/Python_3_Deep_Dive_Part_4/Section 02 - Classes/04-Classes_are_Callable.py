@@ -10,10 +10,10 @@
 # '''
 #
 # # %%
-# c_ Program:
+# c_ Program
 #     language = 'Python'
 #
-#     def say_hello():
+#     def say_hello
 #         print _*Hello from |?.l.. !*
 #
 # # %%
