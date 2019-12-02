@@ -19,3 +19,6 @@ https://pythonawesome.com/simple-real-time-visualisation-of-the-execution-of-a-p
 Python Call Graph
 http://pycallgraph.slowchop.com/en/master/
 
+objgraph 3.4.1
+https://pypi.org/project/objgraph/
+
