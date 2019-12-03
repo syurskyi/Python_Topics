@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 class MyClass:
     def __init__(self):   # Конструктор
         self.x = 10       # Атрибут экземпляра класса

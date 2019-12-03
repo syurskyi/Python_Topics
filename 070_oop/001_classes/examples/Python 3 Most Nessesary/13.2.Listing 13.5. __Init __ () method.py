@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 class MyClass:
     def __init__(self, value1, value2): # Конструктор
         self.x = value1

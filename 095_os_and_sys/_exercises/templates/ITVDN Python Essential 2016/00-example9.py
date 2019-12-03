@@ -1,21 +1,21 @@
-import datetime
-import statistics
-
-message_fmt = '''\
-Statistika od {date}
-Kolichestvo:  {count}
-Symma:        {sum}
-Srednee:      {mean}
-Mediana:      {median}
-'''
-
-with open('data/example05.txt', 'r+') as data:
-    numbers = [float(line) for line in data
-               if line != '\n' and not line.startswith('#')]
-
-    message = message_fmt.format(date=datetime.datetime.now(),
-                                 count=len(numbers),
-                                 sum=sum(numbers),
-                                 mean=statistics.mean(numbers),
-                                 median=statistics.median(numbers))
-    print(message, file=data)
+# ______ d_t_
+# ______ st....
+#
+# message_fmt = '''\
+# Statistika od {date}
+# Kolichestvo:  {count}
+# Symma:        {sum}
+# Srednee:      {mean}
+# Mediana:      {median}
+# '''
+#
+# w___ o.. data/example05.txt __  a_ data
+#     numbers _ fl.. line ___ l.. i_ ?
+#                i_ l.. !_ '\n' an. no. l____.s.w.( #
+#
+#     message _ ?.f.... date_datetime.d_t_.n..,
+#                                  count _ le. n..,
+#                                  sum _ su. n..,
+#                                  mean _ st____.m.. n...,
+#                                  median _ st___.m.. n..
+#     print ?, file _ d..

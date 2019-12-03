@@ -1,36 +1,37 @@
-﻿"""Пример использования бинарного файла"""
-
-from array import array
-import os.path
-
-prefix = os.path.join('data', 'ex09_')
-
-# Создание списка чисел
-numbers = list(range(300, 400))
-
-# Запись в текстовый файл
-with open(prefix + 'text.txt', 'w') as txt_file:
-    print(numbers, file=txt_file)
-
-# Создание массива, поддеживающего buffer protocol, из списка
-numbers_array = array('i', numbers)
-
-# Запись в бинарный файл
-binary_filename = prefix + 'binary.bin'
-with open(binary_filename, 'wb') as bin_file:
-    bin_file.write(numbers_array)
-
-# Подготовка массива
-filesize = os.path.getsize(binary_filename)  # размер файла
-int_len = array('i').itemsize  # размер одного элемента в байтах
-read_array = array('i', (0 for _ in range(filesize // int_len)))
-
-# Чтение из бинарного файла
-with open(binary_filename, 'rb') as file:
-    file.readinto(read_array)  # чтение в массив
-
-# Вывод массива на экран
-print(read_array)
-
-# Проверка, что считанные данные соответствуют изначальным
-print(read_array.tolist() == numbers)
+﻿# # -*- coding: utf-8 -*-
+#
+# """Пример использования бинарного файла"""
+#
+# f___ a.. ______ a..
+# ______ __.p___
+#
+# prefix _ __.p___.j.. data ex09_
+#
+# # Создание списка чисел
+# numbers _ li.. ra.. 300 400
+#
+# # Запись в текстовый файл
+# w___ o...(p____ + text.txt _ a_ txt_file
+#     print n____ file _ ?
+#
+# # Создание массива, поддеживающего buffer protocol, из списка
+# numbers_array _ a.. 'i', n____
+#
+# # Запись в бинарный файл
+# binary_filename _ p____ + binary.bin
+# w___ o... b... __ a_ bin_file
+#     ?.w... n..
+# # Подготовка массива
+# filesize _ __.p___.g.s. b....  # размер файла
+# int_len _ a.. 'i' .i.s.  # размер одного элемента в байтах
+# read_array _ a.. 'i' 0 ___ _ i_ ra.. f.s. // i..
+#
+# # Чтение из бинарного файла
+# w___ o... b... __ a_ file
+#     ?.r..i.. r...  # чтение в массив
+#
+# # Вывод массива на экран
+# print r..
+#
+# # Проверка, что считанные данные соответствуют изначальным
+# print r___.t.l. __ n____

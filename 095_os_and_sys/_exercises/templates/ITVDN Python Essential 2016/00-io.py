@@ -1,4 +1,4 @@
-import io
-print(io.open is open)
-
-print(dir(io))
+# _______ i_
+# print i_.o.. i. o..
+#
+# print di. i.

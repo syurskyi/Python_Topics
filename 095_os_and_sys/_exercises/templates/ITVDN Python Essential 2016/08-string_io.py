@@ -1,33 +1,35 @@
-﻿"""Пример использования файлового объекта io.StringIO"""
-
-import io
-
-# Создание потока
-stream = io.StringIO()  # или io.StringIO('начальное значение')
-
-# Запись данных в поток
-stream.write('asdf in memory')
-
-# Получение строки из объекта StringIO
-print(stream.getvalue())
-
-# Вывод текущей позиции
-print('Current position:', stream.tell())
-
-# Переход в начало потока
-stream.seek(0)
-
-# Запись данных в поток
-stream.write('data')
-
-# Вывод текущей позиции
-print('Current position:', stream.tell())
-
-# Чтение оставшихся данных в потоке
-print(stream.read())
-
-# Вывод текущей позиции
-print('Current position:', stream.tell())
-
-# Получение строки из объекта StringIO
-print(stream.getvalue())
+﻿# # -*- coding: utf-8 -*-
+#
+# """Пример использования файлового объекта io.StringIO"""
+#
+# _______ i_
+#
+# # Создание потока
+# stream = i_.S.IO  # или io.StringIO('начальное значение')
+#
+# # Запись данных в поток
+# ?.w.. asdf in memory
+#
+# # Получение строки из объекта StringIO
+# print ?.g..
+#
+# # Вывод текущей позиции
+# print('Current position:', ?.t..
+#
+# # Переход в начало потока
+# ?.s.. 0
+#
+# # Запись данных в поток
+# ?.w.. data
+#
+# # Вывод текущей позиции
+# print('Current position:', ?.t..
+#
+# # Чтение оставшихся данных в потоке
+# print ?.r..
+#
+# # Вывод текущей позиции
+# print('Current position:', ?.t..
+#
+# # Получение строки из объекта StringIO
+# print(?.g..
