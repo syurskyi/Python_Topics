@@ -20,8 +20,8 @@
 #
 # # Example 2: Iterating through a string Using List Comprehension
 #
-# h_letters _ letter ___ le.. i_ 'human'
-# print h_l...
+# h_letters _ letter ___ ? i_ 'human'
+# print ?
 #
 #
 # # hen we run the program, the output will be:
@@ -63,8 +63,8 @@
 #
 # # Example 4: Using if with List Comprehension
 #
-# number_list _ x ___ x i_ ra.. 20 i_ x % 2 _ 0
-# print n.._l..
+# number_list _ x ___ ? i_ ra.. 20 i_ x % 2 _ 0
+# print ?
 #
 # # When we run the above program, the output will be:
 # #

@@ -2,8 +2,8 @@
 #     ___ i i_ r___ N
 #         y___ i ** 2  # Resume here later
 #
-# ___ i i_ gensquares 5  # Resume the function
-#     print i, e.._'  '  # # Print last y___ed value
+# ___ i i_ ? 5  # Resume the function
+#     print i, e.._' : '  # # Print last y___ed value
 #
 # print()
 # x _ gensquares 4
@@ -33,11 +33,11 @@
 #
 # ___ buildsquares n
 #     res _    #list
-#     ___ i i_ r___ n res.appe.. i ** 2
-#     r_ res
+#     ___ i i_ r___ n ?.ap.. i ** 2
+#     r_ ?
 #
 #
-# ___ x i_ buildsquares 5 print x e.._'  '
+# ___ x i_ ? 5 print x e.._'  '
 # print()
 #
 # ___ x i_  |n ** 2 ___ n i_ r___ 5 | print x e.._'  '
@@ -49,7 +49,7 @@
 # # Generator Functions and Expressions
 # # def  ups()
 # ___ ups line
-#     ___ sub i_ l__.split ','  # Substring generator
+#     ___ sub i_ l__.sp.. ','  # Substring generator
 #         y___ s__.up..
 #
 #

@@ -23,15 +23,15 @@
 #
 # line _ 'aaa,bbb,ccc'
 #
-# print ''.jo.. |x.up...   ___ x i_ li__.sp... ',' # Makes a pointless list
+# print ''.jo.. |x.up...   ___ x i_ ?.sp... ',' # Makes a pointless list
 #
-# print ''.jo.. x.up...   ___ x i_ li__.sp... ','  # Generates results
+# print ''.jo.. x.up...   ___ x i_ ?.sp... ','  # Generates results
 #
-# print ''.jo.. ma. str.up... li__.sp... ','  # Generates results
+# print ''.jo.. ma. st_.up... ?.sp... ','  # Generates results
 #
-# print ''.jo.. x * 2 ___ x i_ li__.sp... ','  # Simpler as generator?
+# print ''.jo.. x * 2 ___ x i_ ?.sp... ','  # Simpler as generator?
 #
-# print ''.jo.. ma. l____ x: x * 2, li__.sp... ','
+# print ''.jo.. ma. l____ x x * 2, ?.sp... ','
 #
 # # Generator expressions versus map
 # # [x * 2 ___ x i_ [abs x
@@ -42,13 +42,13 @@
 #
 # print |x * 2 ___ x i_ |ab. x  ___ x i_  -1, -2, 3, 4  # Nested comprehensions
 #
-# print l___ ma. l____ x: x * 2, ma. ab.,  -1, -2, 3, 4  # Nested maps
+# print l___ ma. l____ x x * 2, ma. ab.,  -1, -2, 3, 4  # Nested maps
 #
 # print l___ x * 2 ___ x i_  ab. x  ___ x i_  -1, -2, 3, 4  # Nested generators
 #
-# import math
+# _______ ma..
 #
-# print l___ ma. math.sqrt,  x ** 2 ___ x i_ ra.. 4  # Nested combinations
+# print l___ ma. ma__.sq..  x ** 2 ___ x i_ ra.. 4  # Nested combinations
 #
 # # Generator expressions versus filter
 # #  ''.join x ___ x i_ line.sp...
@@ -58,20 +58,20 @@
 #
 # line _ 'aa bbb c'
 #
-# print ''.jo.. x ___ x i_ li__.sp...   i_ le. x  > 1  # Generator with 'if'
+# print ''.jo.. x ___ x i_ li__.sp...   i_ le. x > 1  # Generator with 'if'
 #
-# print ''.jo.. fi.. l____ x: le. x  > 1, li__.sp...   # Similar to filter
+# print ''.jo.. fi.. l____ x le. x > 1, li__.sp...   # Similar to filter
 #
-# print ''.jo.. x.up...   ___ x i_ li__.sp...   i_ le. x  > 1
+# print ''.jo.. x.up...   ___ x i_ li__.sp...   i_ le. x > 1
 #
-# print ''.jo.. ma. str.up..., fi.. l____ x: le. x  > 1, li__.sp...
+# print ''.jo.. ma. st_.up..., fi.. l____ x le. x > 1, li__.sp...
 #
-# print ''.jo.. x.up...   ___ x i_ li__.sp...   i_ le. x  > 1
+# print ''.jo.. x.up...   ___ x i_ li__.sp...   i_ le. x > 1
 #
 # print
 #
 # res _ ''
 # ___ x i_ li__.sp...
-#     i_ le. x  > 1
-#         res +_ x.up...
-# print r..
+#     i_ le. x > 1
+#         ? +_ x.up...
+# print ?
