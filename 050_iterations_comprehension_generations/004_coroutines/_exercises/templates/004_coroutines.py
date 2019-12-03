@@ -11,17 +11,17 @@
 # # Rolling our own Next method
 #
 # c_ Squares
-#     ___ __init______
+#     ___ - ______
 #         ____.i _ 0
 #
-#     ___ next_____:
+#     __ next_ ___:
 #         result _ ____.i ** 2
 #         ____.i +_ 1
-#         r_ r...
+#         r_ ?
 #
-# sq _ S...
-# sq.n..
-# sq.n..
+# sq _ ?
+# ?.n..
+# ?.n..
 #
 # ___ i i_ r... 10
 #     print sq.n...
@@ -44,38 +44,35 @@
 # f_ col__ ______ d...
 #
 # dq _ d... 1 2 3 4 5
-# d.
+# print ?
 #
-# d_.app.. 100
-# d.
+# ?.app.. 100
+# print ?
 #
-# dq.app..l... -10
-# d.
+# ?.app..l... -10
+# print ?
 #
-# d_.po.
-# d.
-# d_.po.l..
+# ?.po.
+# print ?
+# ?.po.l..
 #
 # # Coroutines
-# #
 # # We can create a capped queue:
-# #
 # # As you can see the first item (2) was automatically discarded from the left of the queue when we added 300 to the right.
-# #
 # # We can also find the number of elements in the queue by using the len() function:
 # # as well as query the maxlen:
 #
 # f_ col___ ______ d...
 # dq _ d.. 1 2 3 4 ; m..l.._5
-# dq.app.. 100
-# d.
-# d_.app.. 200
-# d.
-# d_.app.. 300
-# d.
+# ?.app.. 100
+# print ?
+# ?.app.. 200
+# print ?
+# ?.app.. 300
+# print ?
 #
-# le. d.
-# d_.m..l..
+# print le. ?
+# ?.m..l..
 #
 # # Coroutines
 # # Now let's create an empty queue, and write two functions - one that will add elements to the queue, and one that will consume elements from the queue:
@@ -107,16 +104,16 @@
 #
 # ___ produce_elements dq n
 #     ___ i i_ r.. 1 n
-#         d_.app..l.. i
-#         i_ le. d_ __ d_.m..l..
+#         ?.app..l.. i
+#         i_ le. ? __ ?.m..l..
 #             print queue full - yielding control
 #             y....
 #
 #
 # ___ consume_elements dq
 #     w____ T..
-#         w____ l.. d. > 0
-#             print processing * d_.po.
+#         w____ l.. ? > 0
+#             print processing * ?.po.
 #         print queue empty - yielding control
 #         y....
 #
