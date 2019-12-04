@@ -1,2 +1,0 @@
-import sys
-help(sys)

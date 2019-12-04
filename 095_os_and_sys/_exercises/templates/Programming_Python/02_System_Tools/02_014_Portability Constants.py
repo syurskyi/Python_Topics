@@ -1,5 +1,5 @@
-import os
-
-print(os.pathsep, os.sep, os.pardir, os.curdir, os.linesep)
-# (';', '\\', '..', '.', '\r\n')
-
+# ______ __
+#
+# print(__.p.hs. __.s. __.p.d. __.c.d. __.l.s.
+# # (';', '\\', '..', '.', '\r\n')
+#

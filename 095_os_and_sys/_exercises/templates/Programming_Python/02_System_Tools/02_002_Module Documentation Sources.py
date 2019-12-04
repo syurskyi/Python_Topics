@@ -1,5 +1,5 @@
-import sys
-
-print(dir(sys))
-
-print(sys.__doc__)
+# ______ ___
+#
+# print(di. ___
+#
+# print(___. -d

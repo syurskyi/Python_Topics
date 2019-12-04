@@ -1,4 +1,4 @@
-# C:\...\PP4E\System> python
-from more import more
-import sys
-more(sys.__doc__)
+# # C:\...\PP4E\System> python
+# from more ______ more
+# ______ ___
+# more(___. -d

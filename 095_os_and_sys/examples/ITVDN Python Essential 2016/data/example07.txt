@@ -1,12 +1,5 @@
-# This is a commentg
-
 1
 2
 3
 4
-5Statistika od 2017-10-24 23:01:43.889298
-Kolichestvo:  5
-Symma:        15.0
-Srednee:      3.0
-Mediana:      3.0
-
+5

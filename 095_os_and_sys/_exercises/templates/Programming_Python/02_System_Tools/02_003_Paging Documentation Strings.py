@@ -1,2 +1,2 @@
-import sys
-help(sys)
+# ______ ___
+# help(___

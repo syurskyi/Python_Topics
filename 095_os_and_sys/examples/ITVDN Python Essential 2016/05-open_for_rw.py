@@ -30,5 +30,5 @@ def calculate_stats(filename):
 
 
 if __name__ == '__main__':
-    filename = os.path.join('data', 'example07.txt')
+    filename = os.path.join('data', 'example05.txt')
     calculate_stats(filename)
