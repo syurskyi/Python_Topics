@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 class Class4(Class2, Class3): # Множественное наследование
     # Наследуем func2() из класса Class3, а не из класса Class2
     func2 = Class3.func2

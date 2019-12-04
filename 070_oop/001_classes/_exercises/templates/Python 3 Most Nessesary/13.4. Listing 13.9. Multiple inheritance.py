@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 class Class1:         # Базовый класс для класса Class2
     def func1(self):
         print("Метод func1() класса Class1")

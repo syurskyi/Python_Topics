@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 class Class1:
     def func(self, x):     # Абстрактный метод
         # Возбуждаем исключение с помощью raise

@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 class Class1 (Mixin):
     def method1(self):
         print("Метод класса Class1")

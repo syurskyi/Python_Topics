@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-
-
 class Class1:                 # Базовый класс
     def __init__(self):
         print("Конструктор базового класса")

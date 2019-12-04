@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 class MyClass:
     @staticmethod
     def func1(x, y):               # Статический метод

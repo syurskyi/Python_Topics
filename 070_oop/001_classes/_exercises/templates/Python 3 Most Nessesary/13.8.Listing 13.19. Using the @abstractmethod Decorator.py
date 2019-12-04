@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 from abc import ABCMeta, abstractmethod
 class Class1(metaclass=ABCMeta):
     @abstractmethod

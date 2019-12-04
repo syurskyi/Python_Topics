@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 class MyClass:
     def __init__(self, x):
         self.__privateVar = x

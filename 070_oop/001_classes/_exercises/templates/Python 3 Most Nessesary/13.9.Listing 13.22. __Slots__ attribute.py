@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 class MyClass:
     __slots__ = ["x", "y"]
     def __init__(self, a, b):
