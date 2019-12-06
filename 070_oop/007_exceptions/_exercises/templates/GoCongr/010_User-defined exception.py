@@ -1,23 +1,23 @@
-# -*- coding: utf-8 -*-
-
-# User-defined exception
+# # -*- coding: utf-8 -*-
 #
-# # Raise an instance
-class Bad(Exception):
-    pass
-
-def doomed():
-    raise Bad()
-
-# User-defined exception
-# Catch class name
-class Bad(Exception):
-    pass
-
-def doomed():
-    raise Bad()
-
-try:
-    doomed()
-except Bad:                           # Catch class name
-    print('got Bad')
+# # User-defined exception
+# #
+# # # r___ an instance
+# c_ Bad E..
+#     p___
+#
+# ___ doomed
+#     r___ B..
+#
+# # User-defined exception
+# # Catch class name
+# c_ Bad E..
+#     p___
+#
+# ___ doomed
+#     r___ B..
+#
+# t__
+#     d..
+# e___ B..                           # Catch class name
+#     print('got Bad')

@@ -1,21 +1,21 @@
-# C:\...\PP4E\System\Filetools> python commands.py hillbillies.txt
-# Ms. Granny
-# Mr. Jethro
-# Ms. Elly May
-# Mr. "Uncle Jed"
-
-commands = {'*': 'Ms.', '+': 'Mr.'} # data is easier to expand than code?
-def processLine(line):
-    try:
-        print(commands[line[0]], line[1:-1])
-    except KeyError:
-        raise UnknownCommand(line)
-
-def scanner(name, function):
-    list(map(function, open(name, 'r')))
-
-def scanner(name, function):
-    [function(line) for line in open(name, 'r')]
-
-def scanner(name, function):
-    list(function(line) for line in open(name, 'r'))
+# # C:\...\PP4E\System\Filetools> python commands.py hillbillies.txt
+# # Ms. Granny
+# # Mr. Jethro
+# # Ms. Elly May
+# # Mr. "Uncle Jed"
+#
+# commands = {'*': 'Ms.', '+': 'Mr.'} # data is easier to expand than code?
+# ___ processLine line
+#     t__
+#         print ? l.. 0 l.. 1:-1
+#     e____ ?
+#         r___ U... l..
+#
+# ___ scanner name function
+#     li.. ma. f... o... n.. _
+#
+# ___ scanner name function
+#     f... line ___ ? i_ o.. n.. _
+#
+# ___ scanner name function
+#     li.. f... line ___ ? i_ o.. n.. _

@@ -1,4 +1,4 @@
-try:
-    raise ValueError
-except ZeroDivisionError:
-    print('Division by zero')
+# t__
+#     r___ V...
+# e___ Z...:
+#     print('Division by zero')

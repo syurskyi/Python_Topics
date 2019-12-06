@@ -1,18 +1,17 @@
-# multiple_exceptions_in_single_clause
-def divide_numbers():
-    loop = True
-    while loop:
-        try:
-            first_number = float(input('First number: '))
-            second_number = float(input('Second number: '))
-            print('Result:', first_number / second_number)
-            loop = False
-        except (ValueError, ZeroDivisionError) as error:
-            print('Error:', error)
-            print('Please try again')
-            print()
-            loop = True
-
-
-if __name__ == '__main__':
-    divide_numbers()
+# # multiple_exceptions_in_single_clause
+# ___ divide_numbers
+#     loop = T...
+#     w___ ?
+#         t__
+#             first_number _ fl.. inp..('First number: '))
+#             second_number = fl.. inp...('Second number: '))
+#             print('Result:', f.. / s..)
+#             ? _ F..
+#         e____  V..., Z... a_ error
+#             print('Error:', ?)
+#             print('Please try again')
+#             print()
+#             ? _ T..
+#
+# __ _______ __ _____
+#     ?

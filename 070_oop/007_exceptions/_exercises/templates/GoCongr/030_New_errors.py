@@ -1,8 +1,8 @@
-# New_errors
-# create class MyCustomError
-class MyCustomError(TypeError):
-    def __init__(self, message, code):
-        super().__init__(f'Error code : {code},{message}')
-        self.code = code
-
-raise MyCustomError('OUch! an errer heppend !',500)
+# # New_errors
+# # create class MyCustomError
+# c_ MyCustomError T..
+#     ___ -  ____ message code
+#         s___. - _ Error code : |code |message
+#         ____.c.. _ c..
+#
+# r____ ? 'OUch! an errer heppend !' 500

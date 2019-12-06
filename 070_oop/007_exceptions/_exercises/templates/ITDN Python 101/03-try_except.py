@@ -1,4 +1,4 @@
-try:
-    x = 2 / 0
-except ZeroDivisionError:
-    print('Division by zero detected')
+# t__
+#     x = 2 / 0
+# e____ Z....
+#     print('Division by zero detected')

@@ -1,33 +1,33 @@
-import sys
-for stream in (sys.stdin, sys.stdout, sys.stderr):
-    print(stream.fileno())
-# 012
-# ######################################################################################################################
-
-sys.stdout.write('Hello stdio world\n') # write via file method
-# Hello stdio world
-# 18
-# ######################################################################################################################
-
-import os
-os.write(1, b'Hello descriptor world\n') # write via os module
-# Hello descriptor world
-# 23
-# ######################################################################################################################
-
-file = open(r'C:\temp\spam.txt', 'w') # create external file, object
-file.write('Hello stdio file\n') # write via file object method
-file.flush() # else os.write to disk first!
-fd = file.fileno() # get descriptor from object
-fd
-# 3
-# ######################################################################################################################
-
-import os
-os.write(fd, b'Hello descriptor file\n') # write via os module
-file.close()
-# C:\temp> type spam.txt # lines from both schemes
-# Hello stdio file
-# Hello descriptor file
-# ######################################################################################################################
-
+# ______ ___
+# ___ stream i_ ___.s.i., ___.s.o. ___.s.e.
+#     print ?.f.n.
+# # 012
+# # ######################################################################################################################
+# 
+# ___.s.o..w..('Hello stdio world\n' # write via file method
+# # Hello stdio world
+# # 18
+# # ######################################################################################################################
+# 
+# _______ __
+# __.w.. 1 _'Hello descriptor world\n' # write via os module
+# # Hello descriptor world
+# # 23
+# # ######################################################################################################################
+# 
+# file = o... _'C:\temp\spam.txt' _ # create external file, object
+# ?.w..('Hello stdio file\n') # write via file object method
+# ?.fl.. # else __.write to disk first!
+# fd _ ?.f.n. # get descriptor from object
+# ?
+# # 3
+# # ######################################################################################################################
+# 
+# _______ __
+# __.w.. ? _'Hello descriptor file\n # write via os module
+# ?.cl..
+# # C:\temp> type spam.txt # lines from both schemes
+# # Hello stdio file
+# # Hello descriptor file
+# # ######################################################################################################################
+# 

@@ -1,13 +1,13 @@
-# Custom Data and Behavior
-class FormatError(Exception):
-    def __init__(self, line, file):
-        self.line = line
-        self.file = file
-
-def parser():
-    raise FormatError(42, file='spam.txt')     # When error  found
-
-try:
-    parser()
-except FormatError as X:
-    print('Error at', X.file, X.line)
+# # Custom Data and Behavior
+# c_ FormatError E..
+#     ___ - ____ line file
+#         ____.l.. _ l..
+#         ____.f.. _ f..
+#
+# ___ parser
+#     r... ? 42 file _ 'spam.txt'     # When error  found
+#
+# t__
+#     p..
+# e__ ? a_ X
+#     print 'Error at' ?.f.. ?.l..

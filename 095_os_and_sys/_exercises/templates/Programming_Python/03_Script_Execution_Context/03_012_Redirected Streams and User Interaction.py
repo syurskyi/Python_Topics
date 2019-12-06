@@ -1,36 +1,36 @@
-# C:\...\PP4E\System\Streams> python teststreams.py < input.txt | more
-import more
-
-if __name__ == '__main__': # when run, not when imported
-    import sys
-    if len(sys.argv) == 1: # page stdin if no cmd args
-        more(sys.stdin.read())
-    else:
-        more(open(sys.argv[1]).read())
-
-# Hello stream world
-# Enter a number>8 squared is 64
-# Enter a number>6 squared is 36
-# Enter a number>Bye
-# ######################################################################################################################
-
-from moreplus import more
-more(open('adderSmall.py').read())
-import sys
-print(sum(int(line) for line in sys.stdin))
-# C:\...\PP4E\System\Streams> python moreplus.py adderSmall.py
-
-import sys
-print(sum(int(line) for line in sys.stdin))
-# C:\...\PP4E\System\Streams> python moreplus.py moreplus.py
-# ######################################################################################################################
-
-# import sys
-# def getreply():
-# ?n
-
-#......\System\Streams> python teststreams.py < input.txt | python moreplus.py
-# Hello stream world
-# Enter a number>8 squared is 64
-# Enter a number>6 squared is 36
-# Enter a number>Bye
+# # C:\...\PP4E\System\Streams> python teststreams.py < input.txt | more
+# _____ more
+#
+# __ ______ __ ______ # when run, not when imported
+#     _____ ___
+#     i_ le. ___.a.. __ 1: # page stdin if no cmd args
+#         ? ___.s.i_.r..
+#     e___
+#         ? o.. ___.a. 1 .r..
+#
+# # Hello stream world
+# # Enter a number>8 squared is 64
+# # Enter a number>6 squared is 36
+# # Enter a number>Bye
+# # ######################################################################################################################
+#
+# f__ moreplus _____ more
+# ? o.. 'adderSmall.py' .r..
+# _____ ___
+# print su. in. line ___ l.. i_ ___.s.i.
+# # C:\...\PP4E\System\Streams> python moreplus.py adderSmall.py
+#
+# _____ ___
+# print su. in. line ___ l.. i_ ___.s.i.
+# # C:\...\PP4E\System\Streams> python moreplus.py moreplus.py
+# # ######################################################################################################################
+#
+# # _____ sys
+# # def getreply():
+# # ?n
+#
+# #......\System\Streams> python teststreams.py < input.txt | python moreplus.py
+# # Hello stream world
+# # Enter a number>8 squared is 64
+# # Enter a number>6 squared is 36
+# # Enter a number>Bye

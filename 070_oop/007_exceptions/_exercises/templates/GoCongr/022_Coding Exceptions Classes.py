@@ -1,14 +1,14 @@
-# Coding Exceptions Classes
-class General(Exception): pass
-class Specific1(General): pass
-class Specific2(General): pass
-
-def raiser0(): raise General()
-def raiser1(): raise Specific1()
-def raiser2(): raise Specific2()
-
-for func in (raiser0, raiser1, raiser2):
-    try:
-        func()
-    except General as X:                     # X is the raised instance
-        print('caught:', X.__class__)        # Same as sys.exc_info()[0]
+# # Coding Exceptions Classes
+# c_ General ? p..
+# c_ Specific1 G.. p..
+# c_ Specific2 G.. p..
+#
+# ___ raiser0 r____ G...
+# ___ raiser1 r____ S.1
+# ___ raiser2 r____ S.2
+#
+# ___ func i_ _0 _1 _2
+#     t__
+#         ?
+#     e___ G.. a_ X                     # X is the raised instance
+#         print('caught:' X. -c        # Same as sys.exc_info()[0]

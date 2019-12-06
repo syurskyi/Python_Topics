@@ -1,23 +1,23 @@
-# Coding Exceptions Classes
-class General(Exception): pass
-class Specific1(General): pass
-class Specific2(General): pass
-
-def raiser0():
-    X = General()          # Raise superclass instance
-    raise X
-
-def raiser1():
-    X = Specific1()        # Raise subclass instance
-    raise X
-
-def raiser2():
-    X = Specific2()        # Raise different subclass instance
-    raise X
-
-for func in (raiser0, raiser1, raiser2):
-    try:
-        func()
-    except General:        # Match General or any subclass of it
-        import sys
-        print('caught:', sys.exc_info()[0])
+# # Coding Exceptions Classes
+# c_ General ? p_
+# c_ Specific1 ? p_
+# c_ Specific2 ? p_
+#
+# ___ raiser0
+#     X = G..         # Raise superclass instance
+#     r... ?
+#
+# ___ raiser1
+#     X = S.1        # Raise subclass instance
+#     r___ ?
+#
+# ___ raiser2
+#     X = S.2       # Raise different subclass instance
+#     r_ X
+#
+# ___ func i_ _0 _1 _2
+#     t__
+#         f...
+#     e___ G...       # Match General or any subclass of it
+#         _______ __
+#         print('caught:', ___.ex.. 0|

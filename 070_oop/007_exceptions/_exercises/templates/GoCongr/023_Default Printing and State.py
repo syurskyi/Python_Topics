@@ -1,31 +1,31 @@
-# Default Printing and State
-raise IndexError                    # Same as IndexError(): no arguments
-
-raise IndexError('spam')            # Constructor argument attached, printed
-
-I = IndexError('spam')              # Available in object attribute
-I.args
-# ('spam',)
-print(I)
-
-class E(Exception): pass
-
-raise E
-
-raise E('spam')
-
-I = E('spam')
-I.args
-print(I)
-
-try:
-  raise E('spam')
-except E as X:
-  print(X, X.args)                 # Displays and saves construtor arguments
-
-# spam ('spam',)
-
-try:
-  raise E('spam', 'eggs', 'ham')
-except E as X:
-  print(X, X.args)
+# # Default Printing and State
+# r___ I....                    # Same as IndexError(): no arguments
+#
+# r___ I....spam          # Constructor argument attached, printed
+#
+# I = I.... spam            # Available in object attribute
+# I.a..
+# # ('spam',)
+# print(I)
+#
+# class E E... p..
+#
+# r___ E
+#
+# r___ E spam
+#
+# I = E spam
+# I.a..
+# print(I)
+#
+# t__
+#   r___ E spam
+# e____ E a_ X
+#   print ? ?.a...                 # Displays and saves construtor arguments
+#
+# # spam ('spam',)
+#
+# t___
+#   r___ E('spam', 'eggs', 'ham')
+# e___ E a_ X
+#   print ? ?.a...

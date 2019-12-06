@@ -1,7 +1,7 @@
-try:
-    try:
-        raise ValueError('incorrect value')
-    except ZeroDivisionError:
-        print('division by zero')
-except Exception as e:
-    print(e)
+# t__
+#     t__
+#         r___ V... incorrect value
+#     e___ Z...
+#         print('division by zero')
+# e___ E.. a_ e
+#     print ?

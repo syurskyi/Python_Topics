@@ -1,9 +1,9 @@
-class MyException(Exception):
-    pass
-
-try:
-    raise MyException("error")
-except MyException as e:
-    print(e)
-except Exception:
-    print('some exception')
+# c_ MyException E..
+#     p..
+#
+# t__
+#     r____ ? "error
+# e____ ? a_ e
+#     print ?
+# except E...
+#     print('some exception')

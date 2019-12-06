@@ -1,36 +1,36 @@
-import os
-fdfile = os.open(r'C:\temp\spam.txt', (os.O_RDWR | os.O_BINARY))
-fdfile
-# 3
-# ######################################################################################################################
-
-objfile = os.fdopen(fdfile, 'rb')
-objfile.read()
-# b'Jello stdio file\r\nHello descriptor file\n'
-# ######################################################################################################################
-
-# C:\...\PP4E\System> python
-import os
-fdfile = os.open(r'C:\temp\spam.txt', (os.O_RDWR | os.O_BINARY))
-objfile = os.fdopen(fdfile, 'r')
-objfile.read()
-# 'Jello stdio file\nHello descriptor file\n'
-# ######################################################################################################################
-
-# C:\...\PP4E\System> python
-import os
-fdfile = os.open(r'C:\temp\spam.txt', (os.O_RDWR | os.O_BINARY))
-fdfile
-# 3
-# ######################################################################################################################
-
-objfile = open(fdfile, 'r', encoding='latin1', closefd=False)
-objfile.read()
-# 'Jello stdio file\nHello descriptor file\n'
-# ######################################################################################################################
-
-objfile = os.fdopen(fdfile, 'r', encoding='latin1', closefd=True)
-objfile.seek(0)
-objfile.read()
-# 'Jello stdio file\nHello descriptor file\n'
-# ######################################################################################################################
+# import __
+# fdfile = __.o...(r'C:\temp\spam.txt', (__.O_R... | __.O_B..))
+# ?
+# # 3
+# # ######################################################################################################################
+#
+# objfile = __.f.o. f.f. __
+# ?.r..
+# # b'Jello stdio file\r\nHello descriptor file\n'
+# # ######################################################################################################################
+#
+# # C:\...\PP4E\System> python
+# ______ __
+# fdfile _ __.o...(r'C:\temp\spam.txt', __.O_R... | __.O_B..
+# objfile _ __.f.o. f.f. _
+# ?.r..
+# # 'Jello stdio file\nHello descriptor file\n'
+# # ######################################################################################################################
+#
+# # C:\...\PP4E\System> python
+# ______ __
+# fdfile = __.o...(r'C:\temp\spam.txt' __.O_R... | __.O_B..
+# ?
+# # 3
+# # ######################################################################################################################
+#
+# objfile = o... f.f. _ en.._'latin1' cl.f._F..
+# ?.r..
+# # 'Jello stdio file\nHello descriptor file\n'
+# # ######################################################################################################################
+#
+# objfile _ __.f.o. f.f. _ en.._'latin1' cl.f._T..
+# ?.se.. 0
+# ?.r..
+# # 'Jello stdio file\nHello descriptor file\n'
+# # ######################################################################################################################

@@ -1,4 +1,4 @@
-try:
-    2 / 0
-finally:
-    print('Finally block is always executed')
+# t__
+#     2 / 0
+# f____
+#     print('Finally block is always executed')

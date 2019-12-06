@@ -1,22 +1,22 @@
-# The Context Management Protocol
-class TraceBlock:
-    def message(self, arg):
-        print('running', arg)
-    def __enter__(self):
-        print('starting with block')
-        return self
-    def __exit__(self, exc_type, exc_value, exc_tb):
-        if exc_type is None:
-            print('exited normally\n')
-        else:
-            print('raise an exception!', exc_type)
-            return False                                  # Propagate
-
-with TraceBlock() as action:
-    action.message('test 1')
-    print('reached')
-
-with TraceBlock() as action:
-    action.message('test 2')
-    raise TypeError
-    print('not reached')
+# # The Context Management Protocol
+# c_ TraceBlock
+#     ___ message ____  arg
+#         print('running', a__
+#     ___ -e ____
+#         print('starting with block')
+#         r_ ____
+#     ___ -e ____,
+#         i_ e._t. i_ N..
+#             print('exited normally\n')
+#         e____
+#             print('raise an exception!', e._t.
+#             r_ F..                                  # Propagate
+#
+# w_ ? a_ action
+#     ?.m.. test 1')
+#     print('reached')
+#
+# w__ ? a_ action
+#     ?.m..('test 2')
+#     r____ T..
+#     print('not reached')

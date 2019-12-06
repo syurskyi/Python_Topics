@@ -1,7 +1,7 @@
-a = 5
-b = 0
-
-try:
-    c = a / b
-except ZeroDivisionError:
-    raise ValueError
+# a = 5
+# b = 0
+#
+# t__
+#     c = a / b
+# e____ Z...
+#     r____ V....

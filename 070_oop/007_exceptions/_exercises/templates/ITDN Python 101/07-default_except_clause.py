@@ -1,6 +1,6 @@
-try:
-    x = 3 / 0
-except:
-    pass
-
-print('Program flow goes further')
+# t__
+#     x = 3 / 0
+# e_
+#     p____
+#
+# print('Program flow goes further')

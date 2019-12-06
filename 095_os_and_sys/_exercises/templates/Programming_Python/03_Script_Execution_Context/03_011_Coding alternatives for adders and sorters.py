@@ -1,9 +1,9 @@
-# C:\...\PP4E\System\Streams> type sorterSmall.py
-import sys
-for line in sorted(sys.stdin):
-    print(line, end='')
-# C:\...\PP4E\System\Streams> type adderSmall.py
-# ######################################################################################################################
-
-import sys
-print(sum(int(line) for line in sys.stdin))
+# # C:\...\PP4E\System\Streams> type sorterSmall.py
+# ______ ___
+# ___ line i_ so..  ___.s.i.
+#     print ? e.._''
+# # C:\...\PP4E\System\Streams> type adderSmall.py
+# # ######################################################################################################################
+#
+# ______ ___
+# print su. in. line ___ l.. i_ ___.s.i.
