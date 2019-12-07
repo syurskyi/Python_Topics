@@ -1,12 +1,14 @@
-class Class1: x = 10
-class Class2(Class1): pass
-class Class3(Class2): pass
-class Class4(Class3): pass
-class Class5(Class2): pass
-class Class6(Class5): pass
-class Class7(Class4, Class6): pass
-c = Class7()
-print(c.x)
-
-
-print(Class7.__mro__)
+# # # -*- coding: utf-8 -*-
+#
+# c_ Class1: x = 10
+# c_ Class2 C.1 : p___
+# c_ Class3 C.2 : p___
+# c_ Class4 C.3 : p___
+# c_ Class5 C.2 : p___
+# c_ Class6 C.5 : p___
+# c_ Class7 C.4, C.6 : p___
+# c = C.7
+# print ?.x
+#
+#
+# print C.7. -m

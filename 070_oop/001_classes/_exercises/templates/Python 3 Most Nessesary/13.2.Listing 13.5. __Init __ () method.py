@@ -1,8 +1,8 @@
-# -*- coding: utf-8 -*-
-
-class MyClass:
-    def __init__(self, value1, value2): # Конструктор
-        self.x = value1
-        self.y = value2
-c = MyClass(100, 300)                   # Создаем экземпляр класса
-print(c.x, c.y)                         # Выведет: 100 300
+# # -*- coding: utf-8 -*-
+#
+# c_ MyClass
+#     ___ - ____ value1 value2 # Конструктор
+#         ____.x = _1
+#         ____.y = _2
+# c = ? 100 300                  # Создаем экземпляр класса
+# print ?.x, ?.y)                         # Выведет: 100 300

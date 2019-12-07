@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 class MyClass:
     @classmethod
     def func(cls, x): # Метод класса

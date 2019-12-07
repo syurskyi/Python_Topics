@@ -1,17 +1,17 @@
-# -*- coding: utf-8 -*-
-
-class MyClass:
-    def __init__(self):
-        self.x = 10
-    def get_x(self):
-        return self.x
-c = MyClass()                  # Создаем экземпляр класса
-print(getattr(c, "x"))         # Выведет: 10
-print(getattr(c, "get_x")())   # Выведет: 10
-print(getattr(c, "y", 0))      # Выведет: 0, т. к. атрибут не найден
-setattr(c, "y", 20)            # Создаем атрибут y
-print(getattr(c, "y", 0))      # Выведет: 20
-delattr(c, "y")                # Удаляем атрибут y
-print(getattr(c, "y", 0))      # Выведет: 0, т. к. атрибут не найден
-print(hasattr(c, "x"))         # Выведет: True
-print(hasattr(c, "y"))         # Выведет: False
+# # -*- coding: utf-8 -*-
+#
+# c_ MyClass:
+#     ___ - ____
+#         ____.x = 10
+#     ___ get_x ____
+#         r_ ____.x
+# c = ?               # Создаем экземпляр класса
+# print g.. c, "x"         # Выведет: 10
+# print(g..(c, "get_x"  # Выведет: 10
+# print(g..(c, "y", 0  # Выведет: 0, т. к. атрибут не найден
+# s... c, "y", 20)           # Создаем атрибут y
+# print g.. c, "y", 0     # Выведет: 20
+# d... c, "y")                # Удаляем атрибут y
+# print g.. c, "y", 0   # Выведет: 0, т. к. атрибут не найден
+# print h... c, "x"        # Выведет: True
+# print h... c, "y"        # Выведет: False
