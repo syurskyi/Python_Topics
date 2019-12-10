@@ -1,34 +1,44 @@
-# c_ Methods
-#     __ imeth ____  x            # Normal instance method: passed a ____
-#         print ____ x
+# # A decorator for both functions and methods
 #
-#     __ smeth x                  # Static: no instance passed
-#         print(x)
-#
-#     __ cmeth ___ x             # Class: gets class, not instance
-#         print ___ x
-#
-#     smeth = st... sm..    # Make smeth a static method
-#     cmeth = cl... cm..     # Make cmeth a class method
+# ___ tracer func                        # Use function, not class with __call__
+#     calls = 0                            # Else "self" is decorator instance only!
+#     ___ onCall($ $$:
+#         no... ?
+#         ? +_ 1
+#         print('call @ to @' @ c.. func. -n
+#         r_ f.. $ $$
+#     r_ o...
 #
 #
+# # Applies to simple functions
 #
-# obj = ?                # Make an instance
+# _t...
+# ___ spam(a, b, c):                       # spam = tracer(spam)
+#     print(a + b + c)                     # onCall remembers spam
 #
-# ?.im.. 1                   # Normal method, call through instance
-# # <__main__.Methods object...> 1     # Becomes imeth(obj, 1)
+# spam(1, 2, 3)                            # Runs onCall(1, 2, 3)
+# spam(a=4, b=5, c=6)
 #
-# M_.im__ ob. 2          # Normal method, call through class
-# # <__main__.Methods object...> 2     # Instance passed explicitly
 #
-# M_.sm.. 3               # Static method, call through class
-#                                   # No instance passed or expected
+# # Applies to class method functions too!
 #
-# o__.sm.. 4                   # Static method, call through instance
-#                                   # Instance not passed
+# c_ Person
+#     ___ - ___ name pay
+#         ___.n... _ n...
+#         ___.p..  _ p..
 #
-# M__.cm.. 5               # Class method, call through class
-# # <class '__main__.Methods'> 5       # Becomes cmeth(Methods, 5)
+#     _t...
+#     ___ giveRaise ___ percent        # giveRaise = tracer(giverRaise)
+#         ___.p.. *_ (1.0 + p...      # onCall remembers giveRaise
 #
-# o_.cm.. 6                   # Class method, call through instance
-# # <class '__main__.Methods'> 6       # Becomes cmeth(Methods, 6)
+#     _t...
+#     ___ lastName ___                  # lastName = tracer(lastName)
+#         r_ ___.n....sp.. -1
+#
+# print('methods...')
+# bob = Person('Bob Smith', 50000)
+# sue = Person('Sue Jones', 100000)
+# print(bob.n..., sue.n...)
+# sue.giveRaise(.10)                       # Runs onCall(sue, .10)
+# print(sue.p..)
+# print(bob.lastName(), sue.lastName())    # Runs onCall(bob), lastName in scopes
