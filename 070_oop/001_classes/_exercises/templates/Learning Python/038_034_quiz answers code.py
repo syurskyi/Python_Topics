@@ -1,54 +1,54 @@
-import time
+_______ ti...
 
-def timer(label='', trace=True):             # On decorator args: retain args
-    def onDecorator(func):                   # On @: retain decorated func
-        def onCall(*args, **kargs):          # On calls: call original
-            start   = time.clock()           # State is scopes + func attr
-            result  = func(*args, **kargs)
-            elapsed = time.clock() - start
-            onCall.alltime += elapsed
-            if trace:
-                format = '%s%s: %.5f, %.5f'
-                values = (label, func.__name__, elapsed, onCall.alltime)
+___ timer label_'' trace_T..             # On decorator args: retain args
+    ___ onDecorator func                   # On @: retain decorated func
+        ___ onCall $ $$          # On calls: call original
+            start   _ ti__.cl..           # State is scopes + func attr
+            result  _ func($ $$
+            elapsed _ ti__.cl.. - start
+            o.C_.alltime +_ elapsed
+            i_ trace
+                format _ '%s%s: %.5f, %.5f'
+                values _ label, fu_. -n el.. o.C_.alltime
                 print(format % values)
-            return result
-        onCall.alltime = 0
-        return onCall
-    return onDecorator
+            r_ r...
+        o.C_.alltime _ 0
+        r_ o.C.
+    r_ o.D.
 
 # Test on functions
 
-@timer(trace=True, label='[CCC]==>')
-def listcomp(N):                             # Like listcomp = timer(...)(listcomp)
-    return [x * 2 for x in range(N)]         # listcomp(...) triggers onCall
+_t..  trace_T.., label_'[CCC]==>')
+___ listcomp N                             # Like listcomp _ timer(...)(listcomp)
+    r_ x * 2 ___ x i_ ra.. N         # listcomp(...) triggers onCall
 
-@timer(trace=True, label='[MMM]==>')
-def mapcall(N):
-    return list(map((lambda x: x * 2), range(N)))   # list for 3.0 views
+_t.. trace_T... label_'[MMM]==>'
+___ mapcall  N
+    r_ li.. ma. l_____ x x * 2 ra... N   # list for 3.0 views
 
-for func in (listcomp, mapcall):
-    result = func(5)                  # Time for this call, all calls, return value
-    func(5000000)
-    print(result)
-    print('allTime = %s\n' % func.alltime)   # Total time for all calls
+___ func i_ li.. ma..
+    result _ fu.. 5                  # Time for this call, all calls, r_ value
+    ? 5000000
+    print r..
+    print('allTime _ @\n' @ f__.allt..   # Total time for all calls
 
 # Test on methods
 
-class Person:
-    def __init__(self, name, pay):
-        self.name = name
-        self.pay  = pay
+c_ Person
+    ___ -  ____ name pay
+        ____.n.. _ n..
+        ____.p..  _ p..
 
-    @timer()
-    def giveRaise(self, percent):            # giveRaise = timer()(giverRaise)
-        self.pay *= (1.0 + percent)          # tracer remembers giveRaise
+    _t..
+    ___ giveRaise ____ p...            # giveRaise _ timer()(giverRaise)
+        ____.pa. *_ (1.0 + p...          # tracer remembers giveRaise
 
-    @timer(label='**')
-    def lastName(self):                      # lastName = timer(...)(lastName)
-        return self.name.split()[-1]         # alltime per class, not instance
+    _t.. label_'**')
+    ___ lastName ____                      # lastName _ timer(...)(lastName)
+        r_ ____.n...sp.. -1         # alltime per class, not instance
 
-bob = Person('Bob Smith', 50000)
-sue = Person('Sue Jones', 100000)
+bob _ Person('Bob Smith', 50000)
+sue _ Person('Sue Jones', 100000)
 bob.giveRaise(.10)
 sue.giveRaise(.20)                           # runs onCall(sue, .10)
 print(bob.pay, sue.pay)
@@ -60,12 +60,12 @@ print('%.5f %.5f' % (Person.giveRaise.alltime, Person.lastName.alltime))
 # [CCC]==>listcomp: 0.00002, 0.00002
 # [CCC]==>listcomp: 1.19636, 1.19638
 # [0, 2, 4, 6, 8]
-# allTime = 1.19637775192
+# allTime _ 1.19637775192
 #
 # [MMM]==>mapcall: 0.00002, 0.00002
 # [MMM]==>mapcall: 2.29260, 2.29262
 # [0, 2, 4, 6, 8]
-# allTime = 2.2926232943
+# allTime _ 2.2926232943
 #
 # giveRaise: 0.00001, 0.00001
 # giveRaise: 0.00001, 0.00002
@@ -81,71 +81,68 @@ print('%.5f %.5f' % (Person.giveRaise.alltime, Person.lastName.alltime))
 ### question 2
 
 
-traceMe = False
-def trace(*args):
-    if traceMe: print('[' + ' '.join(map(str, args)) + ']')
+traceMe _ F...
+___ trace $
+    i_ ? print('[' + ' '.jo.. ma. st. a... )) + ']')
 
-def accessControl(failIf):
-    def onDecorator(aClass):
-        if not __debug__:
-            return aClass
-        else:
-            class onInstance:
-                def __init__(self, *args, **kargs):
-                    self.__wrapped = aClass(*args, **kargs)
-                def __getattr__(self, attr):
-                    trace('get:', attr)
-                    if failIf(attr):
-                        raise TypeError('private attribute fetch: ' + attr)
-                    else:
-                        return getattr(self.__wrapped, attr)
-                def __setattr__(self, attr, value):
-                    trace('set:', attr, value)
-                    if attr == '_onInstance__wrapped':
-                        self.__dict__[attr] = value
-                    elif failIf(attr):
-                        raise TypeError('private attribute change: ' + attr)
-                    else:
-                        setattr(self.__wrapped, attr, value)
-            return onInstance
-    return onDecorator
+___ accessControl failIf
+    ___ onDecorator aClass
+        i_ no_ __debug__
+            r_ a..
+        e____
+            c_ onInstance
+                ___ - ____ $ $$
+                    ____.__wr... _ aC.. $ $$
+                ___ -g ____ att..
+                    tr.. 'get:', a..
+                    i_ failIf a..
+                        r____ T....  'private attribute fetch: ' + a...
+                    e____
+                        r_ g... ____.__wr.. a..
+                ___ -s ____ attr value
+                    tr.. ('set:', at.. va..
+                    i_ a.. __ '_onInstance__wrapped':
+                        ____. -d a..| _ va..
+                    e____ failIf a..
+                        r____ T... 'private attribute change: ' + a..
+                    e____
+                        se... ____.__wr.. a.. v...
+            r_ o.I.
+    r_ o.D.
 
-def Private(*attributes):
-    return accessControl(failIf=(lambda attr: attr in attributes))
+___ Private 0attributes
+    r_ a.C. failIf_ l_____ attr ? i_ a...
 
-def Public(*attributes):
-    return accessControl(failIf=(lambda attr: attr not in attributes))
+___ Public 0attributes
+    r_ a.C. failIf_ l_____ attr ? no. i. a....
 
 
 # Test code: split me off to another file to reuse decorator
 
-@Private('age')                             # Person = Private('age')(Person)
-class Person:                               # Person = onInstance with state
-    def __init__(self, name, age):
-        self.name = name
-        self.age  = age                     # Inside accesses run normally
+_P.. 'age'                             # Person _ Private('age')(Person)
+c_ Person                               # Person _ onInstance with state
+    ___ - ____ name age
+        ____.n.. _ n..
+        ____.age  _ age                     # Inside accesses run normally
 
-X = Person('Bob', 40)
-print(X.name)                               # Outside accesses validated
-X.name = 'Sue'
-print(X.name)
+X _ Person('Bob', 40)
+print(X.n..)                               # Outside accesses validated
+X.n.. _ 'Sue'
+print(X.n..)
 #print(X.age)    # FAILS unles "python -O"
-#X.age = 999     # ditto
+#X.age _ 999     # ditto
 #print(X.age)    # ditto
 
-@Public('name')
-class Person:
-    def __init__(self, name, age):
-        self.name = name
-        self.age  = age
+_P.. 'name'
+c_ Person
+    ___ - ____ name age
+        ____.n.. _ n..
+        ____.a..  _ a..
 
-X = Person('bob', 40)                       # X is an onInstance
-print(X.name)                               # onInstance embeds Person
-X.name = 'Sue'
-print(X.name)
+X _ Person('bob', 40)                       # X is an onInstance
+print(X.n..)                               # onInstance embeds Person
+X.n.. _ 'Sue'
+print(X.n..)
 #print(X.age)    # FAILS unless "python �O main.py"
-#X.age = 999     # ditto
+#X.age _ 999     # ditto
 #print(X.age)    # ditto
-
-
-
