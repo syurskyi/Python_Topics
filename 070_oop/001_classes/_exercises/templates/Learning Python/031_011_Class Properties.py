@@ -1,76 +1,76 @@
-class classic:
-    def __getattr__(self, name):
-        if name == 'age':
-            return 40
-        else:
-            raise AttributeError
-
-x = classic()
-print('#' * 23 + ' Runs __getattr__')
-print(x.age)                                 # Runs __getattr__
-
-# x.name                                # Runs __getattr__
-# AttributeError
-
-
-class newprops(object):
-    def getage(self):
-        return 40
-    age = property(getage, None, None, None)  # get, set, del, docs
-
-x = newprops()
-print('#' * 23 + ' Runs getage')
-print(x.age)                                         # Runs getage
-
-# x.name                                        # Normal fetch
-# AttributeError: newprops instance has no attribute 'name'
-
-
-class newprops(object):
-    def getage(self):
-        return 40
-
-    def setage(self, value):
-        print('set age:', value)
-        self._age = value
-    age = property(getage, setage, None, None)
-
-x = newprops()
-print('#' * 23 + ' Runs getage')
-print(x.age)                                         # Runs getage
-
-x.age = 42                                    # Runs setage
-
-print('#' * 23 + ' Normal fetch; no getage call')
-print(x._age)                                        # Normal fetch; no getage call
-
-x.job = 'trainer'                             # Normal assign; no setage call
-print('#' * 23 + ' Normal fetch; no getage call')
-print(x.job)                                         # Normal fetch; no getage call
-
-
-class classic:
-    def __getattr__(self, name):              # On undefined reference
-        if name == 'age':
-            return 40
-        else:
-            raise AttributeError
-
-    def __setattr__(self, name, value):       # On all assignments
-        print('set:', name, value)
-        if name == 'age':
-            self.__dict__['_age'] = value
-        else:
-            self.__dict__[name] = value
-
-x = classic()
-print('#' * 23 + ' Runs __getattr__')
-print(x.age)                                         # Runs __getattr__
-
-x.age = 41                                    # Runs __setattr__
-print('#' * 23 + ' Defined: no __getattr__ call')
-print(x._age)                                        # Defined: no __getattr__ call
-
-print('#' * 23 + ' Defined: no __getattr__ call')
-x.job = 'trainer'                             # Runs __setattr__ again
-print(x.job)                                         # Defined: no __getattr__ call
+# c_ classic:
+#     ___ -g ____ name
+#         i_ name __ 'age':
+#             r_ 40
+#         e___
+#             r.. A..
+#
+# x = ?
+# print('#' * 23 + ' Runs __getattr__')
+# print ?.age                                 # Runs __getattr__
+#
+# # x.name                                # Runs __getattr__
+# # AttributeError
+#
+#
+# c_ newprops o..
+#     ___ getage ____
+#         r_ 40
+#     age _ pr.. ? N.. N.. N..  # get, set, del, docs
+#
+# x = ?
+# print('#' * 23 + ' Runs getage')
+# print ?.a..                                         # Runs getage
+#
+# # x.name                                        # Normal fetch
+# # AttributeError: newprops instance has no attribute 'name'
+#
+#
+# c_ newprops o..
+#     ___ getage ____
+#         r_ 40
+#
+#     ___ setage ____ value
+#         print('set age:' v..
+#         ____._age _ v..
+#     age = pr.. g.. s.. N.. N..
+#
+# x = ?
+# print('#' * 23 + ' Runs getage')
+# print(?.a..                                         # Runs getage
+#
+# ?.a.. _ 42                                    # Runs setage
+#
+# print('#' * 23 + ' Normal fetch; no getage call')
+# print ?._a..                                        # Normal fetch; no getage call
+#
+# ?.j.. _ 'trainer'                             # Normal assign; no setage call
+# print('#' * 23 + ' Normal fetch; no getage call')
+# print ?.j..                                         # Normal fetch; no getage call
+#
+#
+# c_ classic
+#     ___ -g ____ name              # On undefined reference
+#         __ name __ 'age'
+#             r_ 40
+#         e__
+#             r____ A...
+#
+#     ___ -s ____ name value       # On all assignments
+#         print('set:', n.. v..
+#         i_ n.. __ 'age'
+#             ____. -d  '_age' _ v...
+#         e___
+#             ____. -d name _ v...
+#
+# x _ cl...
+# print('#' * 23 + ' Runs __getattr__')
+# print ?.a..                                         # Runs __getattr__
+#
+# ?.a.. _ 41                                    # Runs __setattr__
+# print('#' * 23 + ' Defined: no __getattr__ call')
+# print ?._a..                                        # Defined: no __getattr__ call
+#
+# print('#' * 23 + ' Defined: no __getattr__ call')
+# ?.j.. _ 'trainer'                             # Runs __setattr__ again
+# print ?.j..                                         # Defined: no __getattr__ call

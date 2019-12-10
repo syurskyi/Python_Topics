@@ -1,55 +1,55 @@
-def __getattr__(self, name):        # On undefined attribute fetch [obj.name]
-    pass
-
-
-def __getattribute__(self, name):   # On all attribute fetch [obj.name]
-    pass
-
-def __setattr__(self, name, value): # On all attribute assignment [obj.name=value]
-    pass
-
-
-def __delattr__(self, name):        # On all attribute deletion [del obj.name]
-    pass
-
-
-class Catcher:
-    def __getattr__(self, name):
-        print('Get:', name)
-
-    def __setattr__(self, name, value):
-        print('Set:', name, value)
-
-
-X = Catcher()
-X.job                               # Prints "Get: job"
-X.pay                               # Prints "Get: pay"
-X.pay = 99                          # Prints "Set: pay 99"
-
-
-class Wrapper:
-    def __init__(self, object):
-        self.wrapped = object                    # Save object
-
-    def __getattr__(self, attrname):
-        print('Trace:', attrname)                # Trace fetch
-        return getattr(self.wrapped, attrname)   # Delegate fetch
-
-    def __getattribute__(self, name):
-        x = self.other                                # LOOPS!
-
-    def __getattribute__(self, name):
-        x = object.__getattribute__(self, 'other')    # Force higher to avoid me
-
-    def __setattr__(self, name, value):
-        self.other = value                            # LOOPS!
-
-    def __setattr__(self, name, value):
-        self.__dict__['other'] = value                # Use atttr dict to avoid me
-
-    def __setattr__(self, name, value):
-        object.__setattr__(self, 'other', value)      # Force higher to avoid me
-
-    def __getattribute__(self, name):
-        x = self.__dict__['other']                    # LOOPS!
-
+# ___ -g ____ name        # On undefined attribute fetch [obj.name]
+#     p___
+#
+#
+# ___ -g ____ name   # On all attribute fetch [obj.name]
+#     p___
+#
+# ___ -s ____ name value # On all attribute assignment [obj.name=value]
+#     p___
+#
+#
+# ___ -d ____ name        # On all attribute deletion [del obj.name]
+#     p___
+#
+#
+# c_ Catcher
+#     ___ -g ____ name
+#         print 'Get:' n..
+#
+#     ___ -s ____ name value
+#         print('Set:', n.. v..
+#
+#
+# X = ?
+# ?.job                               # Prints "Get: job"
+# ?.pay                               # Prints "Get: pay"
+# ?.pay = 99                          # Prints "Set: pay 99"
+#
+#
+# c_ Wrapper
+#     ___ - ____ object
+#         ____.wrapped = o..                    # Save object
+#
+#     ___ -g ____ attrname
+#         print('Trace:', a..                # Trace fetch
+#         r_ g... ____.w... a..   # Delegate fetch
+#
+#     ___ -g ____ name
+#         x = ____.other                                # LOOPS!
+#
+#     ___ -g  ____ name
+#         x = ob___. -g ____ 'other'    # Force higher to avoid me
+#
+#     ___ -s ____ name value
+#         ____.other _ v...                            # LOOPS!
+#
+#     ___ -s ____ name, value
+#         ____. -d 'other' _ v...               # Use atttr dict to avoid me
+#
+#     ___ -s ____ name value
+#         ob__. -s ____ 'other' v..      # Force higher to avoid me
+#
+#     ___ -g ____ name
+#         x _ ____. -d 'other'                    # LOOPS!
+#

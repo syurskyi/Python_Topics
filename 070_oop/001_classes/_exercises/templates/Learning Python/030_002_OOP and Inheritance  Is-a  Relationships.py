@@ -1,61 +1,61 @@
-### file: employees.py
-
-
-class Employee:
-
-    def __init__(self, name, salary=0):
-        self.name = name
-        self.salary = salary
-
-    def giveRaise(self, percent):
-
-        self.salary = self.salary + (self.salary * percent)
-
-    def work(self):
-        print(self.name, "does stuff")
-
-    def __repr__(self):
-        return "<Employee: name=%s, salary=%s>" % (self.name, self.salary)
-
-
-class Chef(Employee):
-
-    def __init__(self, name):
-        Employee.__init__(self, name, 50000)
-
-    def work(self):
-        print(self.name, "makes food")
-
-
-class Server(Employee):
-
-    def __init__(self, name):
-        Employee.__init__(self, name, 40000)
-
-    def work(self):
-        print(self.name, "interfaces with customer")
-
-
-class PizzaRobot(Chef):
-
-    def __init__(self, name):
-        Chef.__init__(self, name)
-
-    def work(self):
-        print(self.name, "makes pizza")
-
-if __name__ == "__main__":
-    bob = PizzaRobot('bob')       # Make a robot named bob
-    print('#' * 23 + ' Run inherited __repr__')
-    print(bob)                    # Run inherited __repr__
-    print('#' * 23 + ' Run type-specific action')
-    bob.work()                    # Run type-specific action
-    bob.giveRaise(0.20)           # Give bob a 20% raise
-    print('#' * 23 + ' Give bob a 20% raise')
-    print(bob); print()
-
-    print('#' * 23 + ' for klass in Employee, Chef, Server, PizzaRobot:')
-    for klass in Employee, Chef, Server, PizzaRobot:
-        obj = klass(klass.__name__)
-        obj.work()
-
+# ### file: employees.py
+#
+#
+# c_ Employee:
+#
+#     ___ - ____, name, salary_0
+#         ____.n.. _ n..
+#         ____.s.. _ s..
+#
+#     ___ giveRaise ____ percent
+#
+#         ____.s.. _ ____.s.. + ____.s.. * p..
+#
+#     ___ work ____
+#         print(____.n.., "does stuff")
+#
+#     ___ -r ____
+#         return "<Employee: name=/_, salary=/_>" / ____.n.. ____.s..
+#
+#
+# c_ Chef ?
+#
+#     ___ - ____ name
+#         E__.- ____ n.. 50000
+#
+#     ___ work ____
+#         print(____.n.. "makes food")
+#
+#
+# c_ Server E..
+#
+#     ___ - ____, name
+#         E__.- ____ n.. 40000
+#
+#     ___ work ____
+#         print(____.n... "interfaces with customer")
+#
+#
+# c_ PizzaRobot C.
+#
+#     ___ - ____ name
+#         C___.- ____ n...
+#
+#     ___ work ____
+#         print(____.n.. "makes pizza")
+#
+# __ _____ __ _____
+#     bob = P.R. bob       # Make a robot named bob
+#     print('#' * 23 + ' Run inherited __repr__')
+#     print(bob)                    # Run inherited __repr__
+#     print('#' * 23 + ' Run type-specific action')
+#     bob.work()                    # Run type-specific action
+#     bob.giveRaise(0.20)           # Give bob a 20% raise
+#     print('#' * 23 + ' Give bob a 20% raise')
+#     print(bob); print()
+#
+#     print('#' * 23 + ' for klass in Employee, Chef, Server, PizzaRobot:')
+#     ___ klass i_ E... C... S... P..
+#         obj _ k_ k___. -n
+#         ?.w..
+#

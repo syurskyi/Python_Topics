@@ -1,24 +1,23 @@
-
-class Spam:
-    numInstances = 0
-    def count(cls):                    # Per-class instance counters
-        cls.numInstances += 1          # cls is lowest class above instance
-    def __init__(self):
-        self.count()                   # Passes self.__class__ to count
-    count = classmethod(count)
-
-class Sub(Spam):
-    numInstances = 0
-    def __init__(self):                # Redefines __init__
-        Spam.__init__(self)
-
-class Other(Spam):                     # Inherits __init__
-    numInstances = 0
-
-x = Spam()
-y1, y2 = Sub(), Sub()
-z1, z2, z3 = Other(), Other(), Other()
-x.numInstances, y1.numInstances, z1.numInstances
-
-Spam.numInstances, Sub.numInstances, Other.numInstances
-
+# c_ Spam:
+#     numInstances = 0
+#     ___ count ___                    # Per-class instance counters
+#         ___.n.. +_ 1          # cls is lowest class above instance
+#     ___  - ____
+#         ____.c...                   # Passes self.__class__ to count
+#     count _ cl... c..
+#
+# c_ Sub Sp..
+#     numInstances = 0
+#     ___  - ____                # Redefines __init__
+#         Spam. - ____
+#
+# c_ Other Sp..                     # Inherits __init__
+#     numInstances = 0
+#
+# x = ?
+# y1, y2 = S.. S..
+# z1, z2, z3 = O.. O... O..
+# x.n..., y1.n..., z1.n...
+#
+# Spam.n..., Sub.n..., Other.n...
+#

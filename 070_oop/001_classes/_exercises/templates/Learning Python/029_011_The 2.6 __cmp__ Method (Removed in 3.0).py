@@ -1,17 +1,17 @@
-class C:
-    data = 'spam'                          # 2.6 only
-    def __cmp__(self, other):              # __cmp__ not used in 3.0
-        return cmp(self.data, other)       # cmp() not defined in 3.0
-
-X = C()
-print('#' * 23 + ' True  (runs __cmp__)')
-print(X > 'ham')         # True  (runs __cmp__)
-print('#' * 23 + ' False (runs __cmp__)')
-print(X < 'ham')         # False (runs __cmp__)
-
-
-
-class C:
-    data = 'spam'
-    def __cmp__(self, other):
-        return (self.data > other) - (self.data < other)
+# c_ C
+#     data _ 'spam'                          # 2.6 only
+#     ___ __cmp__ ____ other              # __cmp__ not used in 3.0
+#         r_ ? ____.d.. o..     # cmp() not defined in 3.0
+#
+# X = ?
+# print('#' * 23 + ' True  (runs __cmp__)')
+# print(X > 'ham')         # True  (runs __cmp__)
+# print('#' * 23 + ' False (runs __cmp__)')
+# print(X < 'ham')         # False (runs __cmp__)
+#
+#
+#
+# c_ C
+#     data = 'spam'
+#     ___ __cmp__ ____ other
+#         r_ ____.d.. > o.. - ____.d... < o...

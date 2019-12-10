@@ -1,32 +1,32 @@
-class Person:
-    def __init__(self, name):
-        self._name = name
-
-    @property
-    def name(self):  # name = property(name)
-        "name property docs"
-        print('fetch...')
-        return self._name
-
-    @name.setter
-    def name(self, value):  # name = name.setter(name)
-        print('change...')
-        self._name = value
-
-    @name.deleter
-    def name(self):  # name = name.deleter(name)
-        print('remove...')
-        del self._name
-
-
-bob = Person('Bob Smith')  # bob has a managed attribute
-print(bob.name)  # Runs name getter (name 1)
-bob.name = 'Robert Smith'  # Runs name setter (name 2)
-print(bob.name)
-del bob.name  # Runs name deleter (name 3)
-
-print('-' * 20)
-sue = Person('Sue Jones')  # sue inherits property too
-print(sue.name)
-print(Person.name.__doc__)  # Or help(Person.name)
-
+# c_ Person
+#     ___ - ____ name
+#         ____._name _ name
+#
+#     0p.
+#     ___ name ____  # name = property(name)
+#         "name property docs"
+#         print('fetch...')
+#         r_ ____._n.
+#
+#     0n_.s.
+#     ___ name ____ value  # name = name.setter(name)
+#         print('change...')
+#         ____._n. _ v..
+#
+#     0n_.d..
+#     ___ name ____  # name = name.deleter(name)
+#         print('remove...')
+#         del ____._n.
+#
+#
+# bob = ? Bob Smith  # bob has a managed attribute
+# print(?.name)  # Runs name getter (name 1)
+# ?.n.. _ 'Robert Smith'  # Runs name setter (name 2)
+# print ?.na..
+# del ?.na..  # Runs name deleter (name 3)
+#
+# print('-' * 20)
+# sue = ? Sue Jones  # sue inherits property too
+# print ?.na..
+# print P__.n__. -d  # Or help(Person.name)
+#

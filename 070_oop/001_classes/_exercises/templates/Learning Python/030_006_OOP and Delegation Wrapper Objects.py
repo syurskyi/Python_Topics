@@ -1,20 +1,20 @@
-class Wrapper:
-    def __init__(self, object):
-        self.wrapped = object                    # Save object
-
-    def __getattr__(self, attrname):
-        print('Trace:', attrname)                # Trace fetch
-        return getattr(self.wrapped, attrname)   # Delegate fetch
-
-# NOTE: in the following, use list(x.keys()) for Python 3.X
-# (list() was not used in the first printing of the book
-
-# from trace import Wrapper
-x = Wrapper([1, 2, 3])                         # Wrap a list
-x.append(4)                                  # Delegate to list method
+# c_ Wrapper:
+#     ___ - ____, object
+#         ____.wrapped _ o..                  # Save object
 #
-print(x.wrapped)                                   # Print my member
+#     ___ -g ____ attrname
+#         print('Trace:', a..                # Trace fetch
+#         r_ getattr ____.w.. a...   # Delegate fetch
 #
-x = Wrapper({'a': 1, 'b': 2})
-print(list(x.keys()))                         # Delegate to dictionary method
-
+# # NOTE: in the following, use list(x.keys()) for Python 3.X
+# # (list() was not used in the first printing of the book
+#
+# # from trace import Wrapper
+# x = ? 1, 2, 3                         # Wrap a list
+# ?.a.. 4                                 # Delegate to list method
+# #
+# print ?.w..                                  # Print my member
+# #
+# x = ? 'a' 1, 'b' 2
+# print li.. x.k..                        # Delegate to dictionary method
+#

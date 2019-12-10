@@ -1,27 +1,27 @@
-
-class C:
-   @staticmethod                                 # Decoration syntax
-   def meth():
-       ...
-
-class C:
-   def meth():
-       ...
-   meth = staticmethod(meth)                     # Rebind name
-
-
-
-class Spam:
-    numInstances = 0
-    def __init__(self):
-        Spam.numInstances = Spam.numInstances + 1
-
-    @staticmethod
-    def printNumInstances():
-        print("Number of instances created: ", Spam.numInstances)
-
-a = Spam()
-b = Spam()
-c = Spam()
-Spam.printNumInstances()      # Calls from both classes and instances work now!
-a.printNumInstances()         # Both print "Number of instances created:  3"
+#
+# c_ C
+#    0s..                               # Decoration syntax
+#    ___ meth
+#        ...
+#
+# c_ C
+#    ___ meth
+#        ...
+#    meth _ st... m..                   # Rebind name
+#
+#
+#
+# c_ Spam
+#     numInstances _ 0
+#     ___ - ____
+#         S_.n... _ ?.nu... + 1
+#
+#     0s..
+#     ___ printNumInstances(
+#         print("Number of instances created: ", S_.nu...
+#
+# a = ?
+# b = ?
+# c = ?
+# S__.p...      # Calls from both classes and instances work now!
+# a.p...         # Both print "Number of instances created:  3"

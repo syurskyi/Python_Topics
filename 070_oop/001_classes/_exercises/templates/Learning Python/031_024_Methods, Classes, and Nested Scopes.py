@@ -1,49 +1,48 @@
-
-def generate():                  # Fails prior to Python 2.2, works later
-    class Spam:
-        count = 1
-        def method(self):        # Name Spam not visible:
-            print(Spam.count)    # not local (def), global (module), built-in
-    return Spam()
-
-generate().method()
-
-# C:\python\examples> python nester.py
-# ...error text omitted...
-#     Print(Spam.count)            # Not local (def), global (module), built-in
-# NameError: Spam
-
-
-
-def generate():
-    global Spam                 # Force Spam to module scope
-    class Spam:
-        count = 1
-        def method(self):
-            print(Spam.count)   # Works: in global (enclosing module)
-    return Spam()
-
-generate().method()             # Prints 1
-
-
-
-def generate():
-    return Spam()
-
-class Spam:                    # Define at top level of module
-    count = 1
-    def method(self):
-        print(Spam.count)      # Works: in global (enclosing module)
-
-generate().method()
-
-
-
-def generate():
-    class Spam:
-        count = 1
-        def method(self):
-            print(self.__class__.count)      # Works: qualify to get class
-    return Spam()
-
-generate().method()
+# ___ generate                  # Fails prior to Python 2.2, works later
+#     c_ Spam:
+#         count = 1
+#         ___ method ____        # Name Spam not visible:
+#             print S_.c..    # not local (def), global (module), built-in
+#     r_ Sp..
+#
+# g___.m..
+#
+# # C:\python\examples> python nester.py
+# # ...error text omitted...
+# #     Print(Spam.count)            # Not local (def), global (module), built-in
+# # NameError: Spam
+#
+#
+#
+# ___ generate
+#     gl... S..                 # Force Spam to module scope
+#     c_ Sp..
+#         count = 1
+#         ___ method ____
+#             print ?.c..   # Works: in global (enclosing module)
+#     r_ S...
+#
+# ge__.me..             # Prints 1
+#
+#
+#
+# ___ generate
+#     r_ S..
+#
+# c_ Spam                    # Define at top level of module
+#     count = 1
+#     ___ method ____
+#         print S__.c..      # Works: in global (enclosing module)
+#
+# g__.m..
+#
+#
+#
+# ___ generate
+#     c_ Spam
+#         count = 1
+#         ___ method ____
+#             print(____. -c.c..      # Works: qualify to get class
+#     r_ S...
+#
+# g__.m..

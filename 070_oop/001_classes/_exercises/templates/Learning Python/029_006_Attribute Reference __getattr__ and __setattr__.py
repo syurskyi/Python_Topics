@@ -1,58 +1,58 @@
-class empty:
-    def __getattr__(self, attrname):
-        if attrname == "age":
-            return 40
-        else:
-            raise AttributeError(attrname)
-X = empty()
-print(X.age)
-
-# X.name   # AttributeError: name
-
-class accesscontrol:
-    def __setattr__(self, attr, value):
-        if attr == 'age':
-            self.__dict__[attr] = value
-        else:
-            raise AttributeError(attr + ' not allowed')
-X = accesscontrol()
-X.age = 40                                  # Calls __setattr__
-print(X.age)
+# c_ empty:
+#     ___ -g ____ attrname
+#         i_ attrname __ "age":
+#             r_ 40
+#         e___
+#             r____ A... ?
+# X = ?
+# print(?.age)
 #
-# X.name = 'mel'  # AttributeError: name not allowed
+# # X.name   # AttributeError: name
+#
+# c_ accesscontrol
+#     ___ -s ____ attr value
+#         i_ a.. __ 'age'
+#             ____.-d a.. = v..
+#         e____
+#             r_____ A... a.. + ' not allowed'
+# X = a...
+# X.age = 40                                  # Calls __setattr__
+# print(X.age)
+# #
+# # X.name = 'mel'  # AttributeError: name not allowed
+# #
+# #
+# #
 #
 #
+# c_ PrivateExc E.. p..                   # More on exceptions later
 #
-
-
-class PrivateExc(Exception): pass                   # More on exceptions later
-
-
-class Privacy:
-    def __setattr__(self, attrname, value):         # On self.attrname = value
-        if attrname in self.privates:
-            raise PrivateExc(attrname, self)
-        else:
-            self.__dict__[attrname] = value         # self.attrname = value loops!
-
-
-class Test1(Privacy):
-    privates = ['age']
-
-
-class Test2(Privacy):
-    privates = ['name', 'pay']
-    def __init__(self):
-        self.__dict__['name'] = 'Tom'
-
-x = Test1()
-y = Test2()
-
-x.name = 'Bob'
-print(x.name)
-# y.name = 'Sue'                                      # Fails
 #
-y.age = 30
-print(y.age)
-# x.age = 40                                         # Fails
+# c_ Privacy
+#     ___ -s ____ attrname value         # On ____.attrname = value
+#         i_ a.. i_ ____.privates
+#             r.. P.. a... ____
+#         e____
+#             ____. -d a... _ v...        # ____.attrname = value loops!
 #
+#
+# c_ Test1 P..
+#     privates = age
+#
+#
+# c_ Test2 P..
+#     privates _ name pay
+#     ___ -  ____
+#         ____. -d name _ 'Tom'
+#
+# x = _1
+# y = _2
+#
+# x.name = 'Bob'
+# print(x.name)
+# # y.name = 'Sue'                                      # Fails
+# #
+# y.age = 30
+# print(y.age)
+# # x.age = 40                                         # Fails
+# #

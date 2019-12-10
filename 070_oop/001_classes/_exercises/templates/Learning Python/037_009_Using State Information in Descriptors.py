@@ -1,50 +1,49 @@
-class DescState:                           # Use descriptor state
-    def __init__(self, value):
-        self.value = value
-    def __get__(self, instance, owner):    # On attr fetch
-        print('DescState get')
-        return self.value * 10
-    def __set__(self, instance, value):    # On attr assign
-        print('DescState set')
-        self.value = value
-
-# Client class
-
-class CalcAttrs:
-    X = DescState(2)                       # Descriptor class attr
-    Y = 3                                  # Class attr
-    def __init__(self):
-        self.Z = 4                         # Instance attr
-
-obj = CalcAttrs()
-print(obj.X, obj.Y, obj.Z)                 # X is computed, others are not
-obj.X = 5                                  # X assignment is intercepted
-obj.Y = 6
-obj.Z = 7
-print(obj.X, obj.Y, obj.Z)
-
-
-class InstState:                           # Using instance state
-    def __get__(self, instance, owner):
-        print('InstState get')             # Assume set by client class
-        return instance._Y * 100
-    def __set__(self, instance, value):
-        print('InstState set')
-        instance._Y = value
-
-# Client class
-
-class CalcAttrs:
-    X = DescState(2)                       # Descriptor class attr
-    Y = InstState()                        # Descriptor class attr
-    def __init__(self):
-        self._Y = 3                        # Instance attr
-        self.Z  = 4                        # Instance attr
-
-obj = CalcAttrs()
-print(obj.X, obj.Y, obj.Z)                 # X and Y are computed, Z is not
-obj.X = 5                                  # X and Y arssignments intercepted
-obj.Y = 6
-obj.Z = 7
-print(obj.X, obj.Y, obj.Z)
-
+# c_ DescState:                           # Use descriptor state
+#     ___ - ____, value
+#         ____.v... _ v...
+#     ___ -g ____ instance owner    # On attr fetch
+#         print('DescState get')
+#         r_ ____.v... * 10
+#     ___ -s ____ instance v...    # On attr assign
+#         print('DescState set')
+#         ____.v... _ v...
+#
+# # Client class
+#
+# c_ CalcAttrs
+#     X _ D___ 2                       # Descriptor c_ attr
+#     Y _ 3                                  # Class attr
+#     ___ - ____
+#         ____.Z _ 4                         # Instance attr
+#
+# obj _ C...
+# print(?.X, ?.Y, ?.Z)                 # X is computed, others are not
+# ?.X _ 5                                  # X assignment is intercepted
+# ?.Y _ 6
+# ?.Z _ 7
+# print(?.X, ?.Y, ?.Z)
+#
+#
+# c_ InstState                           # Using instance state
+#     ___ -g ____ instance owner
+#         print('InstState get')             # Assume set by client class
+#         r_ in___._Y * 100
+#     ___ - ____ instance v...
+#         print('InstState set')
+#         in___._Y _ v...
+#
+# # Client class
+#
+# c_ CalcAttrs
+#     X = D.. 2                       # Descriptor class attr
+#     Y = I...                        # Descriptor class attr
+#     ___ -  ____
+#         ____._Y = 3                        # Instance attr
+#         ____.Z  = 4                        # Instance attr
+#
+# obj = C..
+# print(?.X, ?.Y, ?.Z)                 # X and Y are computed, Z is not
+# ?.X _ 5                                  # X and Y arssignments intercepted
+# ?.Y _ 6
+# ?.Z _ 7
+# print(?.X, ?.Y, ?.Z)

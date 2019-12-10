@@ -1,13 +1,13 @@
-class Life:
-    def __init__(self, name='unknown'):
-        print('Hello', name)
-        self.name = name
-    def __del__(self):
-        print('Goodbye', self.name)
-
-brian = Life('Brian')
-
-brian = 'loretta'
-
-
-
+# c_ Life
+#     ___ - ____ name _'unknown'
+#         print 'Hello' ?
+#         ____.n.. _ n..
+#     ___ -d ____
+#         print('Goodbye', ____.n..
+#
+# brian = ? Brian
+#
+# brian = 'loretta'
+#
+#
+#

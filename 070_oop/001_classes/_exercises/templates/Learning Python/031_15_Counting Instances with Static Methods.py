@@ -1,36 +1,36 @@
-class Spam:
-    numInstances = 0                         # Use static method for class data
-    def __init__(self):
-        Spam.numInstances += 1
-    def printNumInstances():
-        print("Number of instances:", Spam.numInstances)
-    printNumInstances = staticmethod(printNumInstances)
-
-a = Spam()
-b = Spam()
-c = Spam()
-Spam.printNumInstances()                 # Call as simple function
-a.printNumInstances()                    # Instance argument not passed
-
-
-class Sub(Spam):
-    def printNumInstances():                 # Override a static method
-        print("Extra stuff...")              # But call back to original
-        Spam.printNumInstances()
-    printNumInstances = staticmethod(printNumInstances)
-
-a = Sub()
-b = Sub()
-a.printNumInstances()                    # Call from subclass instance
-# Number of instances: 2
-# Sub.printNumInstances()                  # Call from subclass itself
-# Number of instances: 2
-# Spam.printNumInstances()
-# Number of instances: 2
-
-class Other(Spam):
-    pass                       # Inherit static method verbatim
-
-c = Other()
-c.printNumInstances()
-# Number of instances: 3
+# c_ Spam
+#     numInstances = 0                         # Use static method for class data
+#     ___ -  ____
+#         S__.n.. +_ 1
+#     ___ printNumInstances
+#         print("Number of instances:", S_.n..
+#     printNumInstances _ st... p...
+#
+# a = ?
+# b = ?
+# c = ?
+# S_.p...                # Call as simple function
+# a.p..                    # Instance argument not passed
+#
+#
+# c_ Sub S..
+#     ___ p...                 # Override a static method
+#         print("Extra stuff...")              # But call back to original
+#         S_.p..
+#     printNumInstances = st... p..
+#
+# a = Su.
+# b = Su.
+# a.p...                    # Call from subclass instance
+# # Number of instances: 2
+# # Sub.printNumInstances()                  # Call from subclass itself
+# # Number of instances: 2
+# # Spam.printNumInstances()
+# # Number of instances: 2
+#
+# c_ Other S..
+#     p..                       # Inherit static method verbatim
+#
+# c _ O..
+# ?.p...
+# # Number of instances: 3

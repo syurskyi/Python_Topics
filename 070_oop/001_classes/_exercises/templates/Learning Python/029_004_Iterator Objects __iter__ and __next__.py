@@ -1,127 +1,127 @@
-# You're using Python 2.x, which has used .next() since forever and still does so - only Python 3 renamed that method ' \
-# to .__next__(). Python 2 and 3 aren't compatible. If you're reading a 3.x book, use Python 3.x yourself, and vice versa.
+# # You're using Python 2.x, which has used .next() since forever and still does so - only Python 3 renamed that method ' \
+# # to .__next__(). Python 2 and 3 aren't compatible. If you're reading a 3.x book, use Python 3.x yourself, and vice versa.
+# #
+# # ___ Python 2.x, you can change __next__() to next()
 #
-# For Python 2.x, you can change __next__() to next()
-
-from __future__ import print_function
-### file: iters.py
-
-class Squares:
-    def __init__(self, start, stop):    # Save state when created
-        self.value = start - 1
-        self.stop = stop
-    def __iter__(self):                 # Get iterator object on iter()
-        return self
-    def __next__(self):                 # Return a square on each iteration
-        if self.value == self.stop:     # Also called by next() built-in
-            raise StopIteration
-        self.value += 1
-        return self.value ** 2
-
-print('#' * 23 + 'for calls iter(), which calls __iter__()')
-# from iters import Squares
-for i in Squares(1, 5):             # for calls iter(), which calls __iter__()
-    print(i, end=' ')               # Each iteration calls __next__()
-
-print('#' * 23 + 'Iterate manually: what loops do')
-X = Squares(1, 5)                   # Iterate manually: what loops do
-I = iter(X)                         # iter() calls __iter__
-next(I)                             # next() calls __next__
-
-next(I)
-
-next(I)
-
-# next(I)                             # Can catch this in try statement
-# # StopIteration
+# f__ -f ______ p._f.
+# ### file: iters.py
 #
-X = Squares(1, 5)
-# X[1]
-# # AttributeError: Squares instance has no attribute '__getitem__'
+# c_ Squares
+#     ___ -  ____ start stop    # Save state when created
+#         ____.value = s.. - 1
+#         ____.stop = s..
+#     ___ -i ____                 # Get iterator object on iter()
+#         r_ ____
+#     ___ -n  ____               # Return a square on each iteration
+#         i_ ____.v.. __ ____.st..     # Also called by next() built-in
+#             r... S...
+#         ____.v... += 1
+#         r_ ____.v... ** 2
 #
-print('#' * 23 + 'Exhausts items')
-X = Squares(1, 5)
-print([n for n in X])                # Exhausts items
+# print('#' * 23 + '___ calls iter(), which calls __iter__()')
+# # from iters import Squares
+# ___ i i_ S... 1 5            # ___ calls iter(), which calls __iter__()
+#     print(i, end=' ')               # Each iteration calls __next__()
 #
-print([n for n in X])                # Now it's empty
-
-print('#' * 23 + 'Make a new iterator object')
-print([n for n in Squares(1, 5)])    # Make a new iterator object
+# print('#' * 23 + 'Iterate manually: what loops do')
+# X = S... 1, 5                  # Iterate manually: what loops do
+# I = iter(X)                         # iter() calls __iter__
+# next(I)                             # next() calls __next__
 #
-print(list(Squares(1, 3)))
+# next(I)
 #
+# next(I)
 #
-print('#' * 23)
-print('#' * 23)
-
-def gsquares(start, stop):
-    for i in range(start, stop+1):
-        yield i ** 2
+# # next(I)                             # Can catch this in try statement
+# # # StopIteration
+# #
+# X = S...(1, 5)
+# # X[1]
+# # # AttributeError: Squares instance has no attribute '__getitem__'
+# #
+# print('#' * 23 + 'Exhausts items')
+# X = Squares(1, 5)
+# print([n ___ n i_ X                # Exhausts items
+# #
+# print([n ___ n i_ X              # Now it's empty
 #
-for i in gsquares(1, 5):
-    print(i, end=' ')
+# print('#' * 23 + 'Make a new iterator object')
+# print([n ___ n i_ ?(1, 5    # Make a new iterator object
+# #
+# print(li.. ?(1, 3
+# #
+# #
+# print('#' * 23)
+# print('#' * 23)
 #
-print('#' * 23)
-print('#' * 23)
-print([x ** 2 for x in range(1, 6)])
+# ___ gsquares start stop
+#     ___ i i_ ra..  s.. s..+1
+#         y... i ** 2
+# #
+# ___ i i_ gsquares(1, 5
+#     print i e.._' '
+# #
+# print('#' * 23)
+# print('#' * 23)
+# print([x ** 2 ___ x in ra..(1, 6
+# #
 #
-
-print('#' * 23)
-print('#' * 23)
-S = 'ace'
-for x in S:
-    for y in S:
-        print(x + y, end=' ')
+# print('#' * 23)
+# print('#' * 23)
+# S = 'ace'
+# ___ x i_ S:
+#     ___ y i_ S:
+#         print(x + y, e.._' ')
+# #
+# # ### file: skipper.py
+# #
+# c_ SkipIterator
+#     ___ - ____ wrapped
+#         ____.w.. = w..                  # Iterator state information
+#         ____.offset  = 0
+#     ___ -n ____
+#         i_ ____.offset >= le. ____.w..      # Terminate iterations
+#             r____ S..
+#         e____
+#             item = ____.w... ____.o..      # else return and skip
+#             ____.o.. += 2
+#             r_ ?
 #
-# ### file: skipper.py
+# c_ SkipObject
+#     ___ - ____ wrapped                # Save item to be used
+#         ____.w.. = w..
+#     ___ __iter__ ____
+#         r_ S... ____.w...         # New iterator each time
 #
-class SkipIterator:
-    def __init__(self, wrapped):
-        self.wrapped = wrapped                    # Iterator state information
-        self.offset  = 0
-    def __next__(self):
-        if self.offset >= len(self.wrapped):      # Terminate iterations
-            raise StopIteration
-        else:
-            item = self.wrapped[self.offset]      # else return and skip
-            self.offset += 2
-            return item
-
-class SkipObject:
-    def __init__(self, wrapped):                  # Save item to be used
-        self.wrapped = wrapped
-    def __iter__(self):
-        return SkipIterator(self.wrapped)         # New iterator each time
-
-if __name__ == '__main__':
-    alpha = 'abcdef'
-    skipper = SkipObject(alpha)                   # Make container object
-    I = iter(skipper)                             # Make an iterator on it
-    print(next(I), next(I), next(I))              # Visit offsets 0, 2, 4
+# __ _______ __ ______
+#     alpha = 'abcdef'
+#     skipper = S... ?                   # Make container object
+#     I = it.. ?                             # Make an iterator on it
+#     print(next(I), next(I), next(I))              # Visit offsets 0, 2, 4
+# #
+#     ___ x i_ skipper               # ___ calls __iter__ automatically
+#         ___ y i_ skipper           # Nested fors call __iter__ again each time
+#             print(x + y, end=' ')   # Each iterator has its own state, offset
+# #
+# #
+# print('#' * 23)
+# print('#' * 23)
+# print('#' * 23)
 #
-    for x in skipper:               # for calls __iter__ automatically
-        for y in skipper:           # Nested fors call __iter__ again each time
-            print(x + y, end=' ')   # Each iterator has its own state, offset
+# S = 'abcdef'
+# ___ x i_ ? ::2
+#     ___ y i_ ? ::2            # New objects on each iteration
+#         print(x + y, e.._' '
 #
+# print('#' * 23)
+# print('#' * 23)
 #
-print('#' * 23)
-print('#' * 23)
-print('#' * 23)
-
-S = 'abcdef'
-for x in S[::2]:
-    for y in S[::2]:            # New objects on each iteration
-        print(x + y, end=' ')
-
-print('#' * 23)
-print('#' * 23)
-
-S = 'abcdef'
-S = S[::2]
-print(S)
-print('#' * 23)
-
-for x in S:
-    for y in S:                 # Same object, new iterators
-        print(x + y, end=' ')
-
+# S = 'abcdef'
+# S = ? ::2
+# print(S)
+# print('#' * 23)
+#
+# ___ x i_ S
+#     ___ y i_ S                 # Same object, new iterators
+#         print(x + y e.._' '
+#
