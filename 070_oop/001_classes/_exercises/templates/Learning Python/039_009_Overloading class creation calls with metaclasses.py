@@ -1,28 +1,28 @@
-# __call__ can be redefined, metas can have metas
-
-class SuperMeta(type):
-    def __call__(meta, classname, supers, classdict):
-        print('In SuperMeta.call: ', classname, supers, classdict, sep='\n...')
-        return type.__call__(meta, classname, supers, classdict)
-
-class SubMeta(type, metaclass=SuperMeta):
-    def __new__(meta, classname, supers, classdict):
-        print('In SubMeta.new: ', classname, supers, classdict, sep='\n...')
-        return type.__new__(meta, classname, supers, classdict)
-
-    def __init__(Class, classname, supers, classdict):
-        print('In SubMeta init:', classname, supers, classdict, sep='\n...')
-        print('...init class object:', list(Class.__dict__.keys()))
-
-class Eggs:
-    pass
-
-print('making class')
-class Spam(Eggs, metaclass=SubMeta):
-    data = 1
-    def meth(self, arg):
-        pass
-
-print('making instance')
-X = Spam()
-print('data:', X.data)
+# # __call__ can be redefined, metas can have metas
+# 
+# c_ SuperMeta ty..
+#     ___ -c meta classname supers classdict
+#         print('In SuperMeta.call: ' c.. s.. cl.. s..__'\n...'
+#         r_ ty__. -c m.. c.. s.. cl..
+# 
+# c_ SubMeta ty__ m.. _ S..
+#     ___ -n meta classname supers classdict
+#         print('In SubMeta.new: ' c.. s.. cl.. s..__'\n...')
+#         r_ ty__. -n m.. c.. s.. cl..
+# 
+#     ___ - Class classname supers classdict
+#         print('In SubMeta init:' c.. s.. cl.. s..__'\n...'
+#         print('...init class object:' li.. C__. -d.k..
+# 
+# c_ Eggs
+#     p..
+# 
+# print('making class')
+# c_ Spam Eggs m.. _ S..
+#     data _ 1
+#     ___ meth ____ arg
+#         p..
+# 
+# print('making instance')
+# X = Spam()
+# print('data:', X.data)
