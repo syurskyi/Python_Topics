@@ -1,28 +1,28 @@
-# Metaclass that adds tracing decorator to every method of a client class
-
-from types import FunctionType
-from mytools2 import tracer
-
-class MetaTrace(type):
-    def __new__(meta, classname, supers, classdict):
-        for attr, attrval in classdict.items():
-            if type(attrval) is FunctionType:                      # Method?
-                classdict[attr] = tracer(attrval)                  # Decorate it
-        return type.__new__(meta, classname, supers, classdict)    # Make class
-
-class Person(metaclass=MetaTrace):
-    def __init__(self, name, pay):
-        self.name = name
-        self.pay  = pay
-    def giveRaise(self, percent):
-        self.pay *= (1.0 + percent)
-    def lastName(self):
-        return self.name.split()[-1]
-
-bob = Person('Bob Smith', 50000)
-sue = Person('Sue Jones', 100000)
-print(bob.name, sue.name)
-sue.giveRaise(.10)
-print(sue.pay)
-print(bob.lastName(), sue.lastName())
-
+# # Metaclass that adds tracing decorator to every method of a client class
+# 
+# f__ ty.. ________ F..T..
+# from mytools2 import tracer
+# 
+# c_ MetaTrace ty..
+#     ___  - meta classname supers classdict
+#         ___ attr, attrval i_ cl.d_.it..
+#             i_ ty.. attr... i_ F.T.                      # Method?
+#                 c.d. a.. _ t... attr..                  # Decorate it
+#         r_ ty_. -n m.. c... s... cl..    # Make class
+# 
+# c_ Person m.. _ M..
+#     ___ - ____ name pay
+#         ____.n.. _ n..
+#         ____.p..  _ p..
+#     ___ giveRaise ____ percent
+#         ____.pay *= (1.0 + p..
+#     ___ lastName ____
+#         r_ ____.n__.sp.. -1
+# 
+# bob = ?('Bob Smith', 50000)
+# sue = ?('Sue Jones', 100000)
+# print(bob.name, sue.name)
+# sue.giveRaise(.10)
+# print(sue.pay)
+# print(bob.lastName(), sue.lastName())
+# 
