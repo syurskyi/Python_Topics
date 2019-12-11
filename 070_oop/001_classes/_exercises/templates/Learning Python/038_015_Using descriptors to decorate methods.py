@@ -1,58 +1,58 @@
-class Descriptor(object):
-    def __get__(self, instance, owner): ...
-
-class Subject:
-    attr = Descriptor()
-
-X = Subject()
-X.attr         # Roughly runs Descriptor.__get__(Subject.attr, X, Subject)
-
-
-class tracer(object):
-    def __init__(self, func):                # On @ decorator
-        self.calls = 0                       # Save func for later call
-        self.func  = func
-
-    def __call__(self, *args, **kwargs):     # On call to original func
-        self.calls += 1
-        print('call %s to %s' % (self.calls, self.func.__name__))
-        return self.func(*args, **kwargs)
-
-    def __get__(self, instance, owner):      # On method attribute fetch
-        return wrapper(self, instance)
-
-
-class wrapper:
-    def __init__(self, desc, subj):          # Save both instances
-        self.desc = desc                     # Route calls back to  decr
-        self.subj = subj
-
-    def __call__(self, *args, **kwargs):
-        return self.desc(self.subj, *args, **kwargs)  # Runs tracer.__call__
-
-@tracer
-def spam(a, b, c):                           # spam = tracer(spam)
-    pass                                     # Uses __call__ only
-
-
-class Person:
-    @tracer
-    def giveRaise(self, percent):            # giveRaise = tracer(giverRaise)
-        pass                                 # Makes giveRaise a descriptor
-
-
-class tracer(object):
-    def __init__(self, func):                # On @ decorator
-        self.calls = 0                       # Save func for later call
-        self.func  = func
-
-    def __call__(self, *args, **kwargs):     # On call to original func
-        self.calls += 1
-        print('call %s to %s' % (self.calls, self.func.__name__))
-        return self.func(*args, **kwargs)
-
-    def __get__(self, instance, owner):                # On method fetch
-        def wrapper(*args, **kwargs):                  # Retain both inst
-            return self(instance, *args, **kwargs)     # Runs __call__
-        return wrapper
-
+# c_ Descriptor o...
+#     ___ -g  ____ instance owner  ...
+#
+# c_ Subject:
+#     attr = D...
+#
+# X = S..
+# ?.a..         # Roughly runs Descriptor.__get__(Subject.attr, X, Subject)
+#
+#
+# c_ tracer o...
+#     ___ -  ____ func                # On @ decorator
+#         ____.calls _ 0                       # Save func for later call
+#         ____.f..  _ f..
+#
+#     ___ -c ____ $  $$     # On call to original func
+#         ____.calls += 1
+#         print('call @ to @' @ ____.c.. ____.f___. -n
+#         r_ ____.func($  $$
+#
+#     ___ -g ____ instance owner      # On method attribute fetch
+#         r_ w... ____ in..
+#
+#
+# c_ wrapper
+#     ___ - ____ desc subj         # Save both instances
+#         ____.d.. _ d..                     # Route calls back to  decr
+#         ____.s... _ s..
+#
+#     ___ -c ____ $  $$
+#         r_ ____.d___ ____.s... $  $$  # Runs tracer.__call__
+#
+# _t..
+# ___ spam(a, b, c):                           # spam = tracer(spam)
+#     p...                                    # Uses __call__ only
+#
+#
+# c_ Person
+#     _t..
+#     ___ giveRaise ____ percent            # giveRaise = tracer(giverRaise)
+#         p..                                 # Makes giveRaise a descriptor
+#
+#
+# c_ tracer(o...
+#     ___ - ____ func                # On @ decorator
+#         ____.calls _ 0                       # Save func for later call
+#         ____.f...  _ f...
+#
+#     ___ -c ____ $  $$:     # On call to original func
+#         ____.calls += 1
+#         print('call @ to @' @ (____.c.. ____.f___. -n
+#         r_ ____.f__ $  $$
+#
+#     ___ -g ____ instance owner                # On method fetch
+#         ___ wrapper $  $$                  # Retain both inst
+#             r_ ____ in.. $  $$     # Runs __call__
+#         r_ w...
+#
