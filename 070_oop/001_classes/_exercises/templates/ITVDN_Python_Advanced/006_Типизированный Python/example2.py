@@ -1,17 +1,17 @@
-# typed
-value: int = 10
-
-
-class User:
-    def __init__(self, first_name: str, last_name: str):
-        self.first_name = first_name
-        self.last_name = last_name
-
-
-def create_new_user(first_name: str, last_name: str) -> User:
-    # автоподстановка first_name.STR_METHODS_AND_PROPS
-    print(first_name.upper(), last_name.upper())
-    return User(first_name=first_name, last_name=last_name)
-
-
-user: User = create_new_user('Eugene', 'Test')
+# # -*- coding: utf-8 -*-
+# # typed
+# value in. _ 10
+# 
+# c_ User
+#     ___ - ____ first_name st. last_name st.
+#         ____.f... _ f...
+#         ____.l... _ l...
+# 
+# 
+# ___ create_new_user first_name s.. last_name s.. __ U..
+#     # автоподстановка first_name.STR_METHODS_AND_PROPS
+#     print f....up.. l....up..
+#     r_ U..  f..._f... l..._l...
+# 
+# 
+# user U.. _ c.. 'Eugene', 'Test'
