@@ -1,66 +1,66 @@
-import unittest
-from second_project import Counter
-
-
-class EasyTestCase(unittest.TestCase):
-
-    def setUp(self):
-        self.counter = Counter()
-
-    def test_easy_input(self):
-        self.assertEqual(self.counter.get_value(), 0)
-
-    def test_easy_input_two(self):
-        self.counter.clear()
-        self.assertEqual(self.counter.get_value(), 0)
-
-    def tearDown(self):
-        self.counter = None
-
-
-class MediumTestCase(unittest.TestCase):
-
-    def setUp(self):
-        self.counter = Counter()
-
-    def test_medium_input(self):
-        self.counter.add()
-        self.counter.add()
-        self.counter.add()
-        self.assertEqual(self.counter.get_value(), 3)
-
-    def test_medium_input_two(self):
-        self.counter.add()
-        self.counter.add()
-        self.counter.add()
-        self.counter.remove()
-        self.counter.remove()
-        self.assertEqual(self.counter.get_value(), 1)
-
-    def tearDown(self):
-        self.counter = None
-
-
-class HardTestCase(unittest.TestCase):
-
-    def setUp(self):
-        self.counter = Counter()
-
-    def test_hard_input(self):
-        self.counter.remove()
-        self.counter.remove()
-        self.counter.remove()
-        self.counter.remove()
-        self.assertEqual(self.counter.get_value(), 0)
-
-    def test_hard_input_two(self):
-        for _ in range(0, 1000):
-            self.counter.add()
-        self.assertEqual(self.counter.get_value(), 1000)
-
-    def tearDown(self):
-        self.counter = None
-
-
-if __name__ == '__main__':
-    unittest.main()
+# ______ u___
+# from second_project ______ Counter
+#
+#
+# c_ EasyTestCase u___.T...
+#
+#     ___ setUp ____
+#         ____.counter _ C__
+#
+#     ___ test_easy_input ____
+#         ____.aE_ ____.c___.g._v.  , 0
+#
+#     ___ test_easy_input_two ____
+#         ____.c___.cl..
+#         ____.aE_ ____.c___.g._v.  , 0
+#
+#     ___ tearDown ____
+#         ____.c___ _ N..
+#
+#
+# c_ MediumTestCase u___.T...
+#
+#     ___ setUp ____
+#         ____.counter _ C__
+#
+#     ___ test_medium_input ____
+#         ____.c___.ad.
+#         ____.c___.ad.
+#         ____.c___.ad.
+#         ____.aE_ ____.c___.g._v.  , 3
+#
+#     ___ test_medium_input_two ____
+#         ____.c___.ad.
+#         ____.c___.ad.
+#         ____.c___.ad.
+#         ____.c___.re..
+#         ____.c___.re..
+#         ____.aE_ ____.c___.g._v.  , 1
+#
+#     ___ tearDown ____
+#         ____.c___ _ N..
+#
+#
+# c_ HardTestCase u___.T...
+#
+#     ___ setUp ____
+#         ____.counter _ C__
+#
+#     ___ test_hard_input ____
+#         ____.c___.re..
+#         ____.c___.re..
+#         ____.c___.re..
+#         ____.c___.re..
+#         ____.aE_ ____.c___.g._v.  , 0
+#
+#     ___ test_hard_input_two ____
+#         ___ _ i_ ra.. 0, 1000
+#             ____.c___.ad.
+#         ____.aE_ ____.c___.g._v.  , 1000
+#
+#     ___ tearDown ____
+#         ____.c___ _ N...
+#
+#
+# __ ______ __ ______
+#     u___.m..
