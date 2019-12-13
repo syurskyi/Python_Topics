@@ -26,6 +26,12 @@ logging — Logging facility for Python
 https://docs.python.org/3/library/logging.html#logrecord-attributes
 
 
+Welcome to Logbook
+https://logbook.readthedocs.io/en/stable/
+
+Logbook Quickstart
+https://logbook.readthedocs.io/en/stable/quickstart.html
+
 Python Tutorial: Logging Basics - Logging to Files, Setting Levels, and Formatting
 https://www.youtube.com/watch?v=-ARI4Cz-awo
 code for this video
