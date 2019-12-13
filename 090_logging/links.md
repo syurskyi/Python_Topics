@@ -35,3 +35,6 @@ Python Tutorial: Logging Advanced - Loggers, Handlers, and Formatters
 https://www.youtube.com/watch?v=jxmzY9soFXg
 code for this video
 https://github.com/CoreyMSchafer/code_snippets/tree/master/Logging-Advanced
+
+Mario Corchero - Effortless Logging: A deep dive into the logging module - PyCon 2018
+https://www.youtube.com/watch?v=Pbz1fo7KlGg
