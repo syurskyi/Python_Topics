@@ -21,3 +21,17 @@ https://docs.python.org/3/howto/logging.html#logging-basic-tutorial
 
 Logging Cookbook
 https://docs.python.org/3/howto/logging-cookbook.html#logging-cookbook
+
+logging — Logging facility for Python
+https://docs.python.org/3/library/logging.html#logrecord-attributes
+
+
+Python Tutorial: Logging Basics - Logging to Files, Setting Levels, and Formatting
+https://www.youtube.com/watch?v=-ARI4Cz-awo
+code for this video
+https://github.com/CoreyMSchafer/code_snippets/tree/master/Logging-Basics
+
+Python Tutorial: Logging Advanced - Loggers, Handlers, and Formatters
+https://www.youtube.com/watch?v=jxmzY9soFXg
+code for this video
+https://github.com/CoreyMSchafer/code_snippets/tree/master/Logging-Advanced
