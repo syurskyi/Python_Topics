@@ -1,0 +1,9 @@
+2019-12-12 16:20:34,515 : WARNING : __main__ : Something is not right.
+2019-12-12 16:20:34,515 : ERROR : __main__ : A Major error has happened.
+2019-12-12 16:20:34,515 : CRITICAL : __main__ : Fatal error. Cannot continue
+2019-12-12 16:20:52,724 : WARNING : __main__ : Something is not right.
+2019-12-12 16:20:52,724 : ERROR : __main__ : A Major error has happened.
+2019-12-12 16:20:52,724 : CRITICAL : __main__ : Fatal error. Cannot continue
+2019-12-12 16:21:25,385 : WARNING : __main__ : Something is not right.
+2019-12-12 16:21:25,385 : ERROR : __main__ : A Major error has happened.
+2019-12-12 16:21:25,385 : CRITICAL : __main__ : Fatal error. Cannot continue
