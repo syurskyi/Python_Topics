@@ -1,6 +1,6 @@
-______ l____
-
-log = l____.getLogger(__name__)
-
-def do_something():
-    log.debug("Doing something!")
+# ______ l____
+#
+# log = l____.gL_ _n
+#
+# ___ do_something
+#     ?.d.. "Doing something!"
