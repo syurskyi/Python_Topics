@@ -5,14 +5,14 @@
 # To communicate with the user, continue using `print()` and `input()`.
 # To use logging, we just have to import the `logging` module and get a new logger:
 # """
-#
-# ______ l____
-#
-# logger _ l____.gL_test_logger'
-#
-# ?.i.. "This won't show up."
-# ?.w.. 'This will.'
-#
+
+import logging
+
+logger = logging.getLogger('test_logger')
+
+logger.info("This won't show up.")
+logger.warning('This will.')
+
 # """
 # There are various logging levels (below in ascending order of criticality), for you to use depending
 # on the circumstance:
@@ -28,13 +28,13 @@
 # You can configure the output so all messages are shown, not just warning and above:
 # """
 #
-# l____.bC_ l.._l____.D..
+logging.basicConfig(level=logging.DEBUG)
 #
 # """
 # You can configure the output to include more than just the l... and the logger used. You can add for example the time:
 # """
 #
-# l____.bC_ fo.._'_ asctime _ _ levelname _:_ message _' l.._l____.D..
+logging.basicConfig(format='%(asctime)s, %(levelname)s:%(message)s', level=logging.DEBUG)
 #
 # """
 # Or below, an example of a great way to configure your logger for maximum readability and usefulness.
@@ -42,45 +42,46 @@
 # logger would be better. Or when you’ll work with people who want logging in a particular way.
 # You’ll then have to decide how you want to log things, and as most things in software that should be a team decision.
 # """
-#
-# ______ l____
-#
-# l____.bC_ f.._' _ asctime _ _ levelname -8_ |_ filename _:_ lineno _| _ message _'
-#     datefmt_'%d-%m-%Y:%H:%M:%S'
-#     l.._l____.D..
-#
-# logger _ l____.gL_ my_app
-# ?.d.. This is a debug log
-# ?.i.. This is an info log
-# ?.c.. This is critical
-# ?.e.. An error occurred
-#
+
+import logging
+
+logging.basicConfig(format='%(asctime)s %(levelname) -8s [%(filename)s:%(lineno)d] %(message)s',
+    datefmt='%d-%m-%Y:%H:%M:%S',
+    level=logging.CRITICAL)
+
+logger = logging.getLogger('my_app')
+logger.debug('This is a debug log')
+logger.info('This is an info log')
+logger.critical("This is critical")
+logger.error('An error occurred')
+
 # """
 # And if you wanted your applications logs to go to a file instead of the console, do something like this:
 # """
-#
-# l____.bC_(f..._'_ asctime _ _ levelname -8s |_ filename _:_ lineno _| _ message _'
-#     datefmt_'%d-%m-%Y:%H:%M:%S'
-#     l..._l____.D..
-#     f..._ logs.txt
-#
+
+logging.basicConfig(format='%(asctime)s %(levelname) -8s [%(filename:lineno)s] %(message)s',
+    datefmt='%d-%m-%Y:%H:%M:%S',
+    level=logging.DEBUG,
+    file='logs.txt')
+
+
 # """
 # If you call `logging.getLogger('my_app')` from many different files, you’ll always get the same `Logger` object—so
 # any configuration changes and the handler added will be reflected throughout all the app.
 # If you want to use a different name but want the configuration to be kept between handlers, the best way is to create
 # child handlers:
 # """
-#
-# ______ l____
-#
-# l____.bC_(f..._'_ asctime _ _ levelname -8_ |_ filename _:_ lineno _ _ message _'
-#     datefmt_'%d-%m-%Y:%H:%M:%S'
-#     l..._l____.D..
-#     f..._ logs.txt
-#
-# logger _ l____.gL_ my_app
-#
-# another_logger _ l____.gL_ my_app.database   # gets a child logger called 'database' of 'my_app'
+
+import logging
+
+logging.basicConfig(format='%(asctime)s %(levelname) -8s [%(filename)s:(%lineno)d] (%message)s',
+    datefmt='%d-%m-%Y:%H:%M:%S',
+    level=logging.DEBUG,
+    file='logs.txt')
+
+logger = logging.getLogger('my_app')
+
+another_logger = logging.getLogger('my_app.database')   # gets a child logger called 'database' of 'my_app'
 #
 # """
 # Add logging to your projects moving forward! It’s great when you can trace what was happening in your system as it
