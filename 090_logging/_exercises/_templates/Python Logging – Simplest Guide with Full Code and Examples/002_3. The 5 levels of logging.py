@@ -27,10 +27,10 @@
 #
 # kwargs _ 'a' 3 'b' 4 'c' h..  3 4
 #
-# l____.d.. "a = _, b = _".f... $$
+# l____.d.. "a  _, b  _".f... $$
 # l____.i.. "Hypotenuse of _, _ is _".f... $$
-# l____.w.. "a=_ and b=_ are equal".f... $$
-# l____.e.. "a=_ and b=_ cannot be negative".f... $$
+# l____.w.. "a _ and b _ are equal".f... $$
+# l____.e.. "a _ and b _ cannot be negative".f... $$
 # l____.c.. "Hypotenuse of _, _ is _".f... $$
 #
 # #> WARNING:root:a=3 and b=3 are equal
