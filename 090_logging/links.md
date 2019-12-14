@@ -48,4 +48,6 @@ https://www.youtube.com/watch?v=Pbz1fo7KlGg
 Become a logging expert in 30 minutes
 https://www.youtube.com/watch?v=24_4WWkSmNo
 code for this video
+https://github.com/gmr/pycon2013-logging
+
 
