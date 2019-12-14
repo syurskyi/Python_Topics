@@ -44,3 +44,8 @@ https://github.com/CoreyMSchafer/code_snippets/tree/master/Logging-Advanced
 
 Mario Corchero - Effortless Logging: A deep dive into the logging module - PyCon 2018
 https://www.youtube.com/watch?v=Pbz1fo7KlGg
+
+Become a logging expert in 30 minutes
+https://www.youtube.com/watch?v=24_4WWkSmNo
+code for this video
+
