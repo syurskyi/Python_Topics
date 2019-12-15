@@ -3,7 +3,7 @@
 #
 #
 # c_ Printer:
-#     ___ - ____, pages_per_s in. capacity in.
+#     ___ - ____ pages_per_s in. capacity in.
 #         ____.p.. _ p...
 #         ____._c.. _ c..
 #
@@ -13,4 +13,4 @@
 #
 #         ____._c... -_ p..
 #
-#         r_ _ Printed |pages pages in |pages/____.pages_per_s:.2f} seconds.'
+#         r_ _ Printed |pages pages in |pages/____.p... .2_| seconds.'
