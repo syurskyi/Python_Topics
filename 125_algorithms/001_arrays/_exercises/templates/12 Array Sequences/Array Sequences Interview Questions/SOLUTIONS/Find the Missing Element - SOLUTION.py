@@ -24,22 +24,22 @@
 # simultaneously. Once two iterators have different values we can stop. The value of the first iterator is the missing
 # element. This solution is also O(NlogN). Here is the solution for this approach:
 
-def finder(arr1, arr2):
-    # Sort the arrays
-    arr1.sort()
-    arr2.sort()
-
-    # Compare elements in the sorted arrays
-    for num1, num2 in zip(arr1, arr2):
-        if num1 != num2:
-            return num1
-
-    # Otherwise return last element
-    return arr1[-1]
-
-arr1 = [1,2,3,4,5,6,7]
-arr2 = [3,7,2,1,4,6]
-print(finder(arr1,arr2))
+# def finder(arr1, arr2):
+#     # Sort the arrays
+#     arr1.sort()
+#     arr2.sort()
+#
+#     # Compare elements in the sorted arrays
+#     for num1, num2 in zip(arr1, arr2):
+#         if num1 != num2:
+#             return num1
+#
+#     # Otherwise return last element
+#     return arr1[-1]
+#
+# arr1 = [1,2,3,4,5,6,7]
+# arr2 = [3,7,2,1,4,6]
+# print(finder(arr1,arr2))
 
 # 5
 
@@ -69,7 +69,7 @@ def finder2(arr1, arr2):
 arr1 = [5,5,7,7]
 arr2 = [5,7,7]
 
-finder2(arr1,arr2)
+print(finder2(arr1, arr2))
 
 # One possible solution is computing the sum of all the numbers in arr1 and arr2, and subtracting arr2’s sum from
 # array1’s sum. The difference is the missing number in arr2. However, this approach could be problematic if the arrays
@@ -93,22 +93,22 @@ finder3(arr1,arr2)
 
 # Test Your Solution
 
-"""
-RUN THIS CELL TO TEST YOUR SOLUTION
-"""
-from nose.tools import assert_equal
-
-
-class TestFinder(object):
-
-    def test(self, sol):
-        assert_equal(sol([5, 5, 7, 7], [5, 7, 7]), 5)
-        assert_equal(sol([1, 2, 3, 4, 5, 6, 7], [3, 7, 2, 1, 4, 6]), 5)
-        assert_equal(sol([9, 8, 7, 6, 5, 4, 3, 2, 1], [9, 8, 7, 5, 4, 3, 2, 1]), 6)
-        print('ALL TEST CASES PASSED')
-
-
-# Run test
-t = TestFinder()
-t.test(finder)
+# """
+# RUN THIS CELL TO TEST YOUR SOLUTION
+# """
+# from nose.tools import assert_equal
+#
+#
+# class TestFinder(object):
+#
+#     def test(self, sol):
+#         assert_equal(sol([5, 5, 7, 7], [5, 7, 7]), 5)
+#         assert_equal(sol([1, 2, 3, 4, 5, 6, 7], [3, 7, 2, 1, 4, 6]), 5)
+#         assert_equal(sol([9, 8, 7, 6, 5, 4, 3, 2, 1], [9, 8, 7, 5, 4, 3, 2, 1]), 6)
+#         print('ALL TEST CASES PASSED')
+#
+#
+# # Run test
+# t = TestFinder()
+# t.test(finder)
 

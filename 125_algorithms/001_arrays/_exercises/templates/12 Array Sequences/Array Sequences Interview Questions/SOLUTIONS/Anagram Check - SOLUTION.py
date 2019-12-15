@@ -28,13 +28,9 @@ def anagram(s1,s2):
     return sorted(s1) == sorted(s2)
 
 # %%
-anagram('dog','god')
-
-# %%
-anagram('clint eastwood','old west action')
-
-# %%
-anagram('aa','bb')
+print(anagram('dog', 'god'))
+print(anagram('clint eastwood', 'old west action'))
+print(anagram('aa', 'bb'))
 
 # %%
 '''
@@ -56,9 +52,7 @@ def anagram2(s1,s2):
     
     # Create counting dictionary (Note could use DefaultDict from Collections module)
     count = {}
-    
-    
-        
+
     # Fill dictionary for first string (add counts)
     for letter in s1:
         if letter in count:
@@ -82,13 +76,9 @@ def anagram2(s1,s2):
     return True
 
 # %%
-anagram2('dog','god')
-
-# %%
-anagram2('clint eastwood','old west action')
-
-# %%
-anagram2('dd','aa')
+print(anagram2('dog','god'))
+print(anagram2('clint eastwood','old west action'))
+print(anagram2('dd','aa'))
 
 # %%
 '''
@@ -107,17 +97,17 @@ Run the cell below to test your solution
 """
 RUN THIS CELL TO TEST YOUR SOLUTION
 """
-from nose.tools import assert_equal
-
-class AnagramTest(object):
-    
-    def test(self,sol):
-        assert_equal(sol('go go go','gggooo'),True)
-        assert_equal(sol('abc','cba'),True)
-        assert_equal(sol('hi man','hi     man'),True)
-        assert_equal(sol('aabbcc','aabbc'),False)
-        assert_equal(sol('123','1 2'),False)
-        print "ALL TEST CASES PASSED"
+# from nose.tools import assert_equal
+#
+# class AnagramTest(object):
+#
+#     def test(self, sol):
+#         assert_equal(sol('go go go','gggooo'),True)
+#         assert_equal(sol('abc','cba'),True)
+#         assert_equal(sol('hi man','hi     man'),True)
+#         assert_equal(sol('aabbcc','aabbc'),False)
+#         assert_equal(sol('123','1 2'),False)
+#         print("ALL TEST CASES PASSED")
 
 # # Run Tests
 # t = AnagramTest()
