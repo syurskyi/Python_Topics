@@ -1,34 +1,34 @@
-from typing import List
-
-class User:
-    def __init__(self, first_name: str, last_name: str):
-        self.first_name = first_name
-        self.last_name = last_name
-
-    def get_full_name(self):
-        return self.first_name + ' ' + self.last_name
-
-
-def create_users_v1(first_names: list, last_names: list) -> list:
-    users = []    # list
-    items = zip(first_names, last_names)
-    for first_name, last_name in items:
-        # first_name.?????
-        users.append(User(first_name, last_name))
-    return users
-
-
-def create_users_v2(first_names: List[str],
-                    last_names: List[str]) -> List[User]:
-    users = []      # list
-    items = zip(first_names, last_names)
-    for first_name, last_name in items:
-        # first_name.AUTOCOMPLETE
-        users.append(User(first_name, last_name))
-    return users
-
-
-users1 = create_users_v2(['f1', 'f2'], ['l1', 'l2'])
-users2 = create_users_v2(['f1', '10'], ['10.5', 'l2'])
-users3 = create_users_v2(['f1', 'f2'], ['[]', 'l2'])
-print(users2[0].get_full_name())
+# f___ ty... ______ L..
+# 
+# c_ User
+#     ___ - ____ first_name s.. last_name s..
+#         ____.f... _ f...
+#         ____.l... _ l...
+# 
+#     ___ get_full_name ____
+#         r_ ____.f... + ' ' + ____.l...
+# 
+# 
+# ___ create_users_v1 first_names l.. last_names l.. __ l..
+#     users _    # list
+#     items _ zi.(f...s l...s
+#     ___ f... l... i_ ?
+#         # first_name.?????
+#         u__.ap.. U.. f... l...
+#     r_ u..
+# 
+# 
+# ___ create_users_v2 first_names L.. s..,
+#                     last_names L.. s.. __ L.. U..
+#     users _      # list
+#     items _ zi. f...s l...s
+#     ___ f... l... i_ ?
+#         # first_name.AUTOCOMPLETE
+#         u___.ap.. U.. f... l...
+#     r_ u..
+# 
+# 
+# users1 = create_users_v2(['f1', 'f2'], ['l1', 'l2'])
+# users2 = create_users_v2(['f1', '10'], ['10.5', 'l2'])
+# users3 = create_users_v2(['f1', 'f2'], ['[]', 'l2'])
+# print(users2[0].get_full_name())

@@ -7,13 +7,13 @@
 #         d__d _ 15
 #         d__r _ 3
 #         e_r. _ 5.0
-#         ____.aAE  di.. d__d d__r  e_r. delta_0.0001
+#         ____.aAE  di.. d__d d__r  e_r. d.._0.0001
 #
 #     ___ test_divide_negative ____
 #         d__d _ 15
 #         d__r _ -3
 #         e_r. _ -5.0
-#         ____.aAE  di.. d__d d__r  e_r. de.._0.0001
+#         ____.aAE  di.. d__d d__r  e_r. d...._0.0001
 #
 #     ___ test_divide_dividend_zero ____
 #         d__d _ 0

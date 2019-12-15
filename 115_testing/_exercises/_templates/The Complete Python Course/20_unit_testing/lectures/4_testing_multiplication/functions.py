@@ -1,4 +1,4 @@
-# f__ ty... ______ U..., Tuple
+# f__ ty... ______ U..., T...
 #
 # ___ divide(dividend U.. in., fl.., divisor U... in. fl..
 #     i_ d__r __ 0

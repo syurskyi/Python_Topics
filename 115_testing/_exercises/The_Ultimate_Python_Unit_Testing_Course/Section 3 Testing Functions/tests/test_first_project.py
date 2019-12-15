@@ -30,7 +30,7 @@ class HardTestCase(unittest.TestCase):
 
     def test_hard_input_two(self):
         with self.assertRaises(TypeError):
-            self.assertEqual(avg(10, 10, 10, 10, float), 10)
+            self.assertRaises(avg(10, 10, 10, 10, float), 10)
 
     def test_hard_input_three(self):
         with self.assertRaises(TypeError):
@@ -41,5 +41,5 @@ class HardTestCase(unittest.TestCase):
             self.assertEqual(avg(10, 10, 10, 10, set), 10)
 
 
-if __name__ == '__main':
-    unittest.main
+if __name__ == '__main__':
+    unittest.main()

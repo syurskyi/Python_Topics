@@ -1,58 +1,58 @@
-# f___ fu.... _______ di... mu...
-# f___ u___ _______ T...
-#
-#
-# c_ TestFunctions T..
-#     ___ test_divide_result ____
-#         d__d _ 15
-#         d__r _ 3
-#         e_r. _ 5.0
-#         ____.aAE  di.. d__d d__r  e_r. delta_0.0001
-#
-#     ___ test_divide_negative ____
-#         d__d _ 15
-#         d__r _ -3
-#         e_r. _ -5.0
-#         ____.aAE  di.. d__d d__r  e_r. de.._0.0001
-#
-#     ___ test_divide_dividend_zero ____
-#         d__d _ 0
-#         d__r _ 5
-#         e_r. _ 0
-#         ____.aE_  di.. d__d d__r  e_r.
-#
-#     ___ test_divide_error_on_zero ____
-#         w__ ____.aR_  V...
-#             di.. 25 0
-#
-#     ___ test_multiply_empty ____
-#         wi__ ____.aR_  V...
-#             mu..
-#
-#     ___ test_multiply_single_value ____
-#         ex___  _ 15
-#         ____.aE_  mu.. ex___   ex___
-#
-#     ___ test_multiply_zero ____
-#         ex___  _ 0
-#         ____.aE_  mu.. ex___   ex___
-#
-#     ___ test_multiply_result ____
-#         inputs _  3 5
-#         ex___  _ 15
-#         ____.aE_  mu.. 0in___  ex___
-#
-#     ___ test_multiply_results_with_zero ____
-#         inputs _  3 5 0
-#         ex___  _ 0
-#         ____.aE_  mu.. 0in___  ex___
-#
-#     ___ test_multiply_negative ____
-#         inputs _  3 -5 2
-#         ex___  _ -30
-#         ____.aE_  mu.. 0in___  ex___
-#
-#     ___ test_multiply_floats ____
-#         inputs _  3.0 2
-#         ex___  _ 6.0
-#         ____.aE_  mu.. 0in___  ex___
+from functions import divide, multiply
+from unittest import TestCase
+
+
+class TestFunctions(TestCase):
+    def test_divide_result(self):
+        dividend = 15
+        diviser = 3
+        expected_result = 5.0
+        self.assertAlmostEqual(divide(dividend, divisor),  expected_result, delta=0.0001)
+
+    def test_divide_negative(self):
+        dividend = 15
+        divisor = -3
+        expected_result = -5.0
+        self.assertAlmostEqual(divide(dividend, divisor),  expected_result, delta=0.0001)
+
+    def test_divide_dividend_zero(self):
+        dividend = 0
+        divisor = 5
+        expected_result = 0
+        self.assertAlmostEqual(divide(dividend, divisor) , expected_result)
+
+    def test_divide_error_on_zero(self):
+        with self.assertRaises(ValueError):
+            divide(25, 0)
+
+    def test_multiply_empty(self):
+        with self.assertRaises(ValueError):
+            multiply()
+
+    def test_multiply_single_value(self):
+        expected = 15
+        self.assertEqual(multyply(expected), expected)
+
+    def test_multiply_zero(self):
+        expected = 0
+        self.assertEqual(multiply(expected), expected)
+
+    def test_multiply_result(self):
+        inputs = (3, 5)
+        expected = 15
+        self.assertEqual(multiply(*inputs), expected)
+
+    def test_multiply_results_with_zero(self):
+        inputs = (3, 5, 0)
+        expected = 0
+        self.assertEqual(multiply(*inputs),  expected)
+
+    def test_multiply_negative(self):
+        inputs = (3, -5, 2)
+        expected = -30
+        self.assertEqual(multiply(*inputs),  expected)
+
+    def test_multiply_floats(self):
+        inputs = (3.0, 2)
+        expected = 6.0
+        self.assertEqual(multiply(*inputs),  expected)

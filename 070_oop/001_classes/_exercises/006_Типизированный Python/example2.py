@@ -1,5 +1,5 @@
-# # -*- coding: utf-8 -*-
-# # typed
+# -*- coding: utf-8 -*-
+# typed
 value: int = 10
 
 class User:
