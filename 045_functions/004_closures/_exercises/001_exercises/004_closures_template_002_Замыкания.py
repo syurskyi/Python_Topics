@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 # Реализация с помощью именованных функций:
 def make_adder(x):
     def adder(n):
@@ -10,21 +11,19 @@ make_adder = lambda x: (lambda n: x + n)
 
 f = make_adder(10)
 print(f(5)) # 15
-print(f(-1)) # 9
-
+print(f(-1))  # 9
+print()
 
 def multiplier(n):  # multiplier возвращает функцию умножения на n
     def mul(k):
         return n * k
-
     return mul
 
 
-mul3 = multiplier(3)  # mul3 - функция, умножающая на 3
+mul3 = multiplier(3)   # mul3 - функция, умножающая на 3
 print(mul3(3), mul3(5))
 
 n = 3
-
 
 def mult(k, mul=n):
     return mul * k

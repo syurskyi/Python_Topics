@@ -6,10 +6,10 @@
 #     ___ innerFunction
 #         print t..
 #
-#     in...
+#     ?
 #
 #
-# __ __n__ ** __m_
+# __ ______ __ ______
 #     o_F_ Hey!
 
 # Python program to illustrate
@@ -20,9 +20,9 @@
 #     ___ innerFunction
 #         print t...
 #
-#     r_ i_F_  # Note we are returning function WITHOUT parenthesis
+#     r_ ?  # Note we are returning function WITHOUT parenthesis
 #
 #
-# __ _n_ -- _m
-#     myFunction _ o_F____ Hey!
-#     m_F0000__
+# __ ______ __ ______
+#     myFunction _ o.. Hey!
+#     ?
