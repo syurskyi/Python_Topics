@@ -7,7 +7,7 @@ class TestFunctions(TestCase):
         dividend = 15
         diviser = 3
         expected_result = 5.0
-        self.assertAlmostEqual(divide(dividend, divisor),  expected_result, delta=0.0001)
+        self.assertAlmostEqual(divide(dividend, diviser),  expected_result, delta=0.0001)
 
     def test_divide_negative(self):
         dividend = 15
@@ -31,7 +31,7 @@ class TestFunctions(TestCase):
 
     def test_multiply_single_value(self):
         expected = 15
-        self.assertEqual(multyply(expected), expected)
+        self.assertEqual(multiply(expected), expected)
 
     def test_multiply_zero(self):
         expected = 0
