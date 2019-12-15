@@ -18,3 +18,6 @@ https://pymotw.com/3/inspect/
 
 inspect — Inspect live objects
 https://docs.python.org/3/library/inspect.html
+
+dis – Python Bytecode Disassembler
+https://pymotw.com/2/dis/
