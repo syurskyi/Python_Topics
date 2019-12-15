@@ -1,28 +1,28 @@
 # -*- coding: utf-8 -*-
 
-# l_____ x x + 1
-# print||l_____ x x + 1||2
-#
-# add_one _ l_____ x x + 1
-# add_one 2
-# # 3
-#
+print(lambda x: x + 1)
+print((lambda x: x + 1)(2))
+
+add_one = lambda x: x + 1
+add_one(2)
+# 3
+
 # # Вышеупомянутая лямбда-функция эквивалентна написанию этого:
-#
-# ___ add_one x
-#     r_ x + 1
-#
-#
-# full_name _ l_____ first; last; _*Full name; |fi00.tit000||| |la00.tit00000*
-# print fu00_na00|*guido*; *van rossum*
-# # 'Full name: Guido Van Rossum'
-#
+
+def add_one(x):
+    return x + 1
+
+
+full_name = lambda first, last: f'Full name: {first.title()} {last.title()}'
+print(full_name('guido', 'van rossum'))
+# 'Full name: Guido Van Rossum'
+
 # # ругой шаблон, используемый в других языках, таких как JavaScript, – это немедленное выполнение лямбда-функции Python.
 # # Это называется выражением немедленного вызова функции (IIFE –  Immediately Invoked Function Expression,
 # # произносится «iffy»). Вот пример:
 #
-# (l_____ x y x + y||2 3
-# # 5
+print((lambda x, y: x + y)(2, 3))
+# 5
 #
 # # Лямбда-функции часто используются с функциями более высокого порядка, которые принимают одну или несколько функций
 # # в качестве аргументов или возвращают одну или несколько функций.
@@ -30,21 +30,21 @@
 # # Лямбда-функция может быть функцией более высокого порядка, принимая функцию (нормальную или лямбда-функцию)
 # # в качестве аргумента, как в следующем надуманном примере:
 #
-# high_ord_func _ l_____ x; func; x + func x
-# high_ord_func 2; l_____ x; x * x
-# # 6
-# high_ord_func 2; l_____ x; x + 3
-# # 7
-#
+high_ord_func = lambda x, func: x + func(x)
+print(high_ord_func(2, lambda x: x * x))
+# 6
+print(high_ord_func(2, lambda x: x + 3))
+# 7
+
 # # Модуль dis предоставляет функции для анализа байт-кода Python, сгенерированного компилятором Python:
 #
-# ______ di0
-# add _ l_____ x; y; x + y
-# type add
+import dis
+add = lambda x, y: x + y
+print(type(add))
 #
 # # class 'function'>
 #
-# di0.di0 add
+dis.dis(add)
 # # 1 0 LOAD_FAST  0(x)
 # # 2 LOAD_FAST    1(y)
 # # 4 BINARY_ADD

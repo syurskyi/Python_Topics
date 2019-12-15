@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 # l_____ x x + 1
-# print||l_____ x x + 1||2
+# print l_____ x x + 1||2
 #
 # add_one _ l_____ x x + 1
 # add_one 2
@@ -13,8 +13,8 @@
 #     r_ x + 1
 #
 #
-# full_name _ l_____ first; last; _*Full name; |fi00.tit000||| |la00.tit00000*
-# print fu00_na00|*guido*; *van rossum*
+# full_name _ l_____ first; last; _*Full name; |fi00.tit000||||la00.tit00000*
+# print ? guido van rossum
 # # 'Full name: Guido Van Rossum'
 #
 # # ругой шаблон, используемый в других языках, таких как JavaScript, – это немедленное выполнение лямбда-функции Python.
@@ -30,17 +30,17 @@
 # # Лямбда-функция может быть функцией более высокого порядка, принимая функцию (нормальную или лямбда-функцию)
 # # в качестве аргумента, как в следующем надуманном примере:
 #
-# high_ord_func _ l_____ x; func; x + func x
-# high_ord_func 2; l_____ x; x * x
+# high_ord_func _ l_____ x func x + ? x
+# high_ord_func 2 l_____ x x * x
 # # 6
-# high_ord_func 2; l_____ x; x + 3
+# high_ord_func 2 l_____ x x + 3
 # # 7
 #
 # # Модуль dis предоставляет функции для анализа байт-кода Python, сгенерированного компилятором Python:
 #
 # ______ di0
-# add _ l_____ x; y; x + y
-# type add
+# add _ l_____ x y x + y
+# ty.. add
 #
 # # class 'function'>
 #
