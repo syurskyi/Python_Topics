@@ -1,8 +1,11 @@
 # Function Annotations in Python
 # Basic Terminology
 #
-# PEP: PEP stands for Python Enhancement Proposal. It is a design document that describes new features for Python or its processes or environment. It also provides information to the python community.
-# PEP is a primary mechanism for proposing major new features, for example – Python Web Server Gateway Interface, collecting the inputs of the community on the issues and documenting design decisions that have been implemented in Python.
+# PEP: PEP stands for Python Enhancement Proposal. It is a design document that describes new features for Python or
+# its processes or environment. It also provides information to the python community.
+# PEP is a primary mechanism for proposing major new features, for example – Python Web Server Gateway Interface,
+# collecting the inputs of the community on the issues and documenting design decisions that have been implemented
+# in Python.
 #
 # Function Annotations – PEP 3107  PEP-3107 introduced the concept and syntax for adding arbitrary metadata annotations
 # to Python. It was introduced in Python3 which was previously done using external libraries in python 2.x
