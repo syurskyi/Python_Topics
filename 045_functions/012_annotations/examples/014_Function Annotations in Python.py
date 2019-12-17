@@ -49,14 +49,14 @@ func('Function','-','Annotation')
 # All the annotations are stored in a dictionary called __annotations__, which itself is an attribute of the function
 
 def func(x:'annotating x', y: 'annotating y', z: int) -> float: print(x + y + z)
-func.__annotations__
+print(func.__annotations__)
 # {'x': 'annotating x', 'y': 'annotating y', 'z': <class 'int'>, 'return': <class 'float'>}
 # As we can see in the preceding code example, annotations are not typed declarations, though they could certainly be
 # used for that purpose and they resemble the typing syntax used in some other languages, as shown below
 #
 def func(a: 'python', b: {'category: ' 'language'}) -> 'yep':
    pass
-func.__annotations__
+print(func.__annotations__)
 # {'a': 'python', 'b': {'category: language'}, 'return': 'yep'}
 # >>>
 # They are arbitrary expressions, which means that arbitrary values can be stored in the __annotations__ dictionary.
@@ -79,26 +79,26 @@ def func(a: 'python', b: {'category: ' 'language'}) -> 'yep':
 # Annotations combine well with decorators because annotation values make a good way to provide input to a decorator,
 # and decorator-generated wrappers are a good place to put code that gives meaning to annotations.
 
-from functools import wraps
-def adapted(func):
-   @wraps(func)
-   def wrapper(**kwargs):
-      final_args = {}
-   for name, value in kwargs. items():
-      adapt = func.__annotations__.get(name)
-      if adapt is not None:
-         final_args[name] = adapt(value)
-      else:
-   final_args[name] = value
-   result = func(**final_args)
-   adapt = func.__annotations__.get('result')
-   if adapt is not None:
-      return adapt(result)
-   return result
-return wrapper
-@adapted
-def func(a: int, b: repr) -> str:
-return a
+# from functools import wraps
+# def adapted(func):
+#    @wraps(func)
+#    def wrapper(**kwargs):
+#       final_args = {}
+#    for name, value in kwargs. items():
+#       adapt = func.__annotations__.get(name)
+#       if adapt is not None:
+#          final_args[name] = adapt(value)
+#       else:
+#          final_args[name] = value
+#    result = func(**final_args)
+#    adapt = func.__annotations__.get('result')
+#    if adapt is not None:
+#       return adapt(result)
+#    return result
+# return wrapper
+# @adapted
+# def func(a: int, b: repr) -> str:
+#    return a
 # So, the adapted decorator encloses the function in a wrapper. This wrapper only accepts keyword arguments,
 # which means that even, if the original function could accept positional arguments, they have to be specified by name.
 # Once the function is wrapped, wrapper also looks for adapters in the function's parameter annotations and applies
@@ -110,23 +110,23 @@ return a
 # Keyword arguments
 # Sometimes, one or more of a method's parameters don't require any processing, except assigning them to an attribute
 # of self. Can we use decorators and annotations to make this happen automatically? Of course, we can.
-
-from functools import wraps
-def store_args(func):
-   @wraps(func)
-   def wrapper(self, **kwargs):
-   for name, value in kwargs.items():
-      attrib = func.__annotations__.get(name)
-      if attrib is True:
-         attrib = name
-      if isinstance(attrib, str):
-         setattr(self, attrib, value)
-      return func(self, **kwargs)
-   return wrapper
-class A:
-@store_args
-def __init__(self, first: True, second: 'example'):
-pass
-a = A(first = 5, second = 6)
-assert a.first == 5
-assert a.example == 6
+#
+# from functools import wraps
+# def store_args(func):
+#    @wraps(func)
+#    def wrapper(self, **kwargs):
+#    for name, value in kwargs.items():
+#       attrib = func.__annotations__.get(name)
+#       if attrib is True:
+#          attrib = name
+#       if isinstance(attrib, str):
+#          setattr(self, attrib, value)
+#       return func(self, **kwargs)
+#    return wrapper
+# class A:
+# @store_args
+# def __init__(self, first: True, second: 'example'):
+# pass
+# a = A(first = 5, second = 6)
+# assert a.first == 5
+# assert a.example == 6
