@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 even = lambda x: x % 2 == 0
 print(list(filter(even, range(11))))
 # [0, 2, 4, 6, 8, 10]

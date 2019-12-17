@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 lambda x: x + 1
 print((lambda x: x + 1)(2))
 

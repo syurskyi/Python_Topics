@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 print(list(map(lambda x: x.capitalize(), ['cat', 'dog', 'cow'])))
 # ['Cat', 'Dog', 'Cow']
 

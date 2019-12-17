@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import functools
 pairs = [(1, 'a'), (2, 'b'), (3, 'c')]
 functools.reduce(lambda acc, pair: acc + pair[0], pairs, 0)

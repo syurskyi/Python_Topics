@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 def wrap(n):
     def f():
         print(n)

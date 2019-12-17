@@ -1,33 +1,37 @@
-# The dis module includes functions for working with Python bytecode by disassembling it into a more human-readable
-# form. Reviewing the bytecodes being executed by the interpreter is a good way to hand-tune tight loops and perform
-# other kinds of optimizations. It is also useful for finding race conditions in multi-threaded applications,
-# since you can estimate the point in your code where thread control may switch.
+# # The dis module includes functions for working with Python bytecode by disassembling it into a more human-readable
+# # form. Reviewing the bytecodes being executed by the interpreter is a good way to hand-tune tight loops and perform
+# # other kinds of optimizations. It is also useful for finding race conditions in multi-threaded applications,
+# # since you can estimate the point in your code where thread control may switch.
+# #
+# # Basic Disassembly
+# # The function dis.dis() prints the disassembled representation of a Python code source (module, class, method,
+# # function, or code object). We can disassemble a module such as:
 #
-# Basic Disassembly
-# The function dis.dis() prints the disassembled representation of a Python code source (module, class, method,
-# function, or code object). We can disassemble a module such as:
-
-#!/usr/bin/env python
-# encoding: utf-8
-
-my_dict = { 'a':1 }
-
-# by running dis from the command line. The output is organized into columns with the original source line number,
-# the instruction address within the code object, the opcode name, and any arguments passed to the opcode.
+# #!/usr/bin/env python
+# # encoding: utf-8
 #
+my_dict = {'a': 1}
+#
+# # by running dis from the command line. The output is organized into columns with the original source line number,
+# # the instruction address within the code object, the opcode name, and any arguments passed to the opcode.
+# #
+
+# import dis
+# dis.dis(my_dict)
+
 # $ python -m dis dis_simple.py
-#
-#   4           0 BUILD_MAP                1
-#               3 LOAD_CONST               0 (1)
-#               6 LOAD_CONST               1 ('a')
-#               9 STORE_MAP
-#              10 STORE_NAME               0 (my_dict)
-#              13 LOAD_CONST               2 (None)
-#              16 RETURN_VALUE
-# In this case, the source translates to 5 different operations to create and populate the dictionary,
-# then save the results to a local variable. Since the Python interpreter is stack-based, the first steps are to put
-# the constants onto the stack in the correct order with LOAD_CONST, and then use STORE_MAP to pop off the new key
-# and value to be added to the dictionary. The resulting object is bound to the name my_dict with STORE_NAME.
+# #
+# #   4           0 BUILD_MAP                1
+# #               3 LOAD_CONST               0 (1)
+# #               6 LOAD_CONST               1 ('a')
+# #               9 STORE_MAP
+# #              10 STORE_NAME               0 (my_dict)
+# #              13 LOAD_CONST               2 (None)
+# #              16 RETURN_VALUE
+# # In this case, the source translates to 5 different operations to create and populate the dictionary,
+# # then save the results to a local variable. Since the Python interpreter is stack-based, the first steps are to put
+# # the constants onto the stack in the correct order with LOAD_CONST, and then use STORE_MAP to pop off the new key
+# # and value to be added to the dictionary. The resulting object is bound to the name my_dict with STORE_NAME.
 
 # Disassembling Functions
 # Unfortunately, disassembling the entire module does not recurse into functions automatically. For example, if we start
@@ -38,61 +42,61 @@ my_dict = { 'a':1 }
 
 def f(*args):
     nargs = len(args)
-    print nargs, args
+    print(nargs, args)
 
 if __name__ == '__main__':
     import dis
     dis.dis(f)
 
-# the results show loading the code object onto the stack and then turning it into a function
-# (LOAD_CONST, MAKE_FUNCTION), but not the body of the function.
-
-# $ python -m dis dis_function.py
+# # the results show loading the code object onto the stack and then turning it into a function
+# # (LOAD_CONST, MAKE_FUNCTION), but not the body of the function.
 #
-#   4           0 LOAD_CONST               0 (<code object f at 0x10046db30, file "dis_function.py", line 4>)
-#               3 MAKE_FUNCTION            0
-#               6 STORE_NAME               0 (f)
+# # $ python -m dis dis_function.py
+# #
+# #   4           0 LOAD_CONST               0 (<code object f at 0x10046db30, file "dis_function.py", line 4>)
+# #               3 MAKE_FUNCTION            0
+# #               6 STORE_NAME               0 (f)
+# #
+# #   8           9 LOAD_NAME                1 (__name__)
+# #              12 LOAD_CONST               1 ('__main__')
+# #              15 COMPARE_OP               2 (==)
+# #              18 POP_JUMP_IF_FALSE       49
+# #
+# #   9          21 LOAD_CONST               2 (-1)
+# #              24 LOAD_CONST               3 (None)
+# #              27 IMPORT_NAME              2 (dis)
+# #              30 STORE_NAME               2 (dis)
+# #
+# #  10          33 LOAD_NAME                2 (dis)
+# #              36 LOAD_ATTR                2 (dis)
+# #              39 LOAD_NAME                0 (f)
+# #              42 CALL_FUNCTION            1
+# #              45 POP_TOP
+# #              46 JUMP_FORWARD             0 (to 49)
+# #         >>   49 LOAD_CONST               3 (None)
+# #              52 RETURN_VALUE
 #
-#   8           9 LOAD_NAME                1 (__name__)
-#              12 LOAD_CONST               1 ('__main__')
-#              15 COMPARE_OP               2 (==)
-#              18 POP_JUMP_IF_FALSE       49
+# # To see inside the function, we need to pass it to dis.dis().
+# #
+# # $ python dis_function.py
+# #
+# #   5           0 LOAD_GLOBAL              0 (len)
+# #               3 LOAD_FAST                0 (args)
+# #               6 CALL_FUNCTION            1
+# #               9 STORE_FAST               1 (nargs)
+# #
+# #   6          12 LOAD_FAST                1 (nargs)
+# #              15 PRINT_ITEM
+# #              16 LOAD_FAST                0 (args)
+# #              19 PRINT_ITEM
+# #              20 PRINT_NEWLINE
+# #              21 LOAD_CONST               0 (None)
+# #              24 RETURN_VALUE
+# # Classes
+# # You can also pass classes to dis, in which case all of the methods are disassembled in turn.
 #
-#   9          21 LOAD_CONST               2 (-1)
-#              24 LOAD_CONST               3 (None)
-#              27 IMPORT_NAME              2 (dis)
-#              30 STORE_NAME               2 (dis)
-#
-#  10          33 LOAD_NAME                2 (dis)
-#              36 LOAD_ATTR                2 (dis)
-#              39 LOAD_NAME                0 (f)
-#              42 CALL_FUNCTION            1
-#              45 POP_TOP
-#              46 JUMP_FORWARD             0 (to 49)
-#         >>   49 LOAD_CONST               3 (None)
-#              52 RETURN_VALUE
-
-# To see inside the function, we need to pass it to dis.dis().
-#
-# $ python dis_function.py
-#
-#   5           0 LOAD_GLOBAL              0 (len)
-#               3 LOAD_FAST                0 (args)
-#               6 CALL_FUNCTION            1
-#               9 STORE_FAST               1 (nargs)
-#
-#   6          12 LOAD_FAST                1 (nargs)
-#              15 PRINT_ITEM
-#              16 LOAD_FAST                0 (args)
-#              19 PRINT_ITEM
-#              20 PRINT_NEWLINE
-#              21 LOAD_CONST               0 (None)
-#              24 RETURN_VALUE
-# Classes
-# You can also pass classes to dis, in which case all of the methods are disassembled in turn.
-
-# !/usr/bin/env python
-# encoding: utf-8
+# # !/usr/bin/env python
+# # encoding: utf-8
 
 import dis
 
@@ -265,7 +269,7 @@ words = [l.strip() for l in open('/usr/share/dict/words', 'rt')]
     """ % locals()
     )
 iterations = 10
-print 'TIME: %0.4f' % (t.timeit(iterations)/iterations)
+print('TIME: %0.4f' % (t.timeit(iterations)/iterations))
 
 # We can use dis_test_loop.py to run each incarnation of the Dictionary class.
 # A straightforward implementation of Dictionary might look something like:
@@ -499,9 +503,9 @@ f = 3.4 * 5.6
 s = 'Hello,' + ' World!'
 
 # Not folded
-I = i * 3 * 4
-F = f / 2 / 3
-S = s + '\n' + 'Fantastic!
+# I = i * 3 * 4
+# F = f / 2 / 3
+# S = s + '\n' + 'Fantastic!
 
 # The expressions on lines 5-7 can be computed at compilation time and collapsed into single LOAD_CONST instructions
 # because nothing in the expression can change the way the operation is performed. That isnt true about lines 10-12.

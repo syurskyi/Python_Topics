@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 #  An example of using anonymous functions
 
 # f1 = l_: 10 + 20                # Функция без параметров
