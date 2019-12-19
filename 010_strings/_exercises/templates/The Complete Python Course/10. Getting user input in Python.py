@@ -13,7 +13,7 @@ We can assign that to a variable if we want!
 ## Calculating months
 
 age = input('Enter your age: ')  # Enter 3
-print 'You have lived for {age} months.'.format(age=age)  # Prints You have lived for 333333333333 months.
+print('You have lived for {age} months.'.format(age=age))  # Prints You have lived for 333333333333 months.
 
 """
 It doesn't work quite as we'd expect.
