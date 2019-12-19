@@ -1,7 +1,7 @@
-# -*- coding: utf-8 -*-
-
-print(chr(1055))
-# П
-
-print(ord("П"))
-# 1055
+# # -*- coding: utf-8 -*-
+#
+# print(c.. 1055
+# # П
+#
+# print(o.. "П"
+# # 1055
