@@ -1,80 +1,80 @@
-# -*- coding: utf-8 -*-
-
-print("0123".isalnum(), "123abc".isalnum(), "abc123".isalnum())
-# (True, True, True)
-print("строка".isalnum())
-# True
-print("".isalnum(), "123 abc".isalnum(), "abc, 123.".isalnum())
-# (False, False, False)
-
-
-print("string".isalpha(), "строка".isalpha(), "".isalpha())
-# (True, True, False)
-print("123abc".isalpha(), "str str".isalpha(), "st,st".isalpha())
-# (False, False, False)
-
-
-print("0123".isdigit(), "123abc".isdigit(), "abc123".isdigit())
-# (True, False, False)
-
-
-print("123".isdecimal(), "123стр".isdecimal())
-# (True, False)
-
-
-print("\u2155".isnumeric(), "\u2155".isdigit())
-# (True, False)
-print("\u2155") # Выведет символ "1/5"
-
-
-print("STRING".isupper(), "СТРОКА".isupper(), "".isupper())
-# (True, True, False)
-print("STRING1".isupper(), "СТРОКА, 123".isupper(), "123".isupper())
-# (True, True, False)
-print("string".isupper(), "STRing".isupper())
-# (False, False)
-
-
-print("srting".islower(), "строка".islower(), "".islower())
-# (True, True, False)
-print("string1".islower(), "str, 123".islower(), "123".islower())
-# (True, True, False)
-print("STRING".islower(), "Строка".islower())
-# (False, False)
-
-
-print("Str Str".istitle(), "Стр Стр".istitle())
-# (True, True)
-print("Str Str 123".istitle(), "Стр Стр 123".istitle())
-# (True, True)
-print("Str str".istitle(), "Стр стр".istitle())
-# (False, False)
-print("".istitle(), "123".istitle())
-# (False, False)
-
-
-print("123".isprintable())
-# True
-print("PHP Python".isprintable())
-# True
-print("\n".isprintable())
-# False
-
-
-print("".isspace(), " \n\r\t".isspace(), "str str".isspace())
-# (False, True, False)
-
-
-print("s".isidentifier())
-# True
-print("func".isidentifier())
-# True
-print("123func".isidentifier())
-# False
-
-import keyword
-
-print(keyword.iskeyword("else"))
-# True
-print(keyword.iskeyword("elsewhere"))
-# False
+# # -*- coding: utf-8 -*-
+#
+# print("0123".i_n_ "123abc".i_n_ "abc123".i_n_
+# # (True, True, True)
+# print("строка".isalnum())
+# # True
+# print("".i_n_ "123 abc".i_n_ "abc, 123.".i_n_
+# # (False, False, False)
+#
+#
+# print("string".i_a_ "строка".i_a_ "".i_a_
+# # (True, True, False)
+# print("123abc".i_a_ "str str".i_a_ "st,st".i_a_
+# # (False, False, False)
+#
+#
+# print("0123".i_d_ "123abc".i_d_ "abc123".i_d_
+# # (True, False, False)
+#
+#
+# print("123".i_d_ "123стр".i_d_
+# # (True, False)
+#
+#
+# print("\u2155".i_n_ "\u2155".i_d_
+# # (True, False)
+# print("\u2155") # Выведет символ "1/5"
+#
+#
+# print("STRING".isu.. "СТРОКА".isu.. "".isu..
+# # (True, True, False)
+# print("STRING1".isu.. "СТРОКА, 123".isu.. "123".isu..
+# # (True, True, False)
+# print("string".isu.. "STRing".isu..
+# # (False, False)
+#
+#
+# print("srting".isl.. "строка".isl.. "".isl..
+# # (True, True, False)
+# print("string1".isl.. "str, 123".isl.. "123".isl..
+# # (True, True, False)
+# print("STRING".isl.. "Строка".isl..
+# # (False, False)
+#
+#
+# print("Str Str".ist.. "Стр Стр".ist..
+# # (True, True)
+# print("Str Str 123".ist.. "Стр Стр 123".ist..
+# # (True, True)
+# print("Str str".ist.. "Стр стр".ist..
+# # (False, False)
+# print("".ist.. "123".ist..
+# # (False, False)
+#
+#
+# print("123".isp..
+# # True
+# print("PHP Python".isp..
+# # True
+# print("\n".isp..
+# # False
+#
+#
+# print("".iss.. " \n\r\t".iss.. "str str".iss..
+# # (False, True, False)
+#
+#
+# print("s".isi..
+# # True
+# print("func".isi..
+# # True
+# print("123func".isi..
+# # False
+#
+# ______ key____
+#
+# print(?.isk..("else"
+# # True
+# print(?.isk..("elsewhere"
+# # False
