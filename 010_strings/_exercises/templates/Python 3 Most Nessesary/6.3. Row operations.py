@@ -16,7 +16,7 @@
 #
 #
 # s = "Python"
-# print(s[-1], s[len(s)-1])
+# print ? -1 ? le. ?-1
 # # ('n', 'n')
 #
 #
