@@ -36,11 +36,11 @@ print(another_greeting2)
 
 name = 'Fred'
 age = 42
-print 'He said his name is {} and he is {} years old.'.format(name, age)
+print('He said his name is {} and he is {} years old.'.format(name, age))
 
 name = 'Fredddddy'
 age = 42
-print 'He said his name is {name} and he is {age} years old.'.format(name=name, age=age)
+print('He said his name is {name} and he is {age} years old.'.format(name=name, age=age))
 
 
 
