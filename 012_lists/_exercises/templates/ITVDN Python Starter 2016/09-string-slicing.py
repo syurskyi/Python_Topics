@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # # Создание строки
 # string = "a string"
 #

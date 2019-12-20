@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 arr = [1, 2, 3]
 arr.append(4); print(arr)               # Добавляем число
 # [1, 2, 3, 4]

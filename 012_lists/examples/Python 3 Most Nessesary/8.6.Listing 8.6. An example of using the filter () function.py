@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 def func(elem):
     return elem >= 0
 

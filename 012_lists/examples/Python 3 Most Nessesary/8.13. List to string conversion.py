@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 arr = ["word1", "word2", "word3"]
 print(" — ".join(arr))
 # 'word1 — word2 — word3'

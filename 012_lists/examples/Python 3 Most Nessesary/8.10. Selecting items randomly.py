@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import random # Подключаем модуль random
 random.choice(["s", "t", "r"]) # Список
 's'

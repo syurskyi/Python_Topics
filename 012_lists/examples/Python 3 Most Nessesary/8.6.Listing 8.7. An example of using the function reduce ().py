@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from functools import reduce # Подключаем модуль
 
 def func(x, y):

@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 arr = [1, "str", 3.2, "4"]
 print(arr[0], arr[1], arr[2], arr[3])
 # (1, 'str', 3.2, '4')
