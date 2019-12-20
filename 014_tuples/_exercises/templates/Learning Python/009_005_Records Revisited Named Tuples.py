@@ -1,53 +1,53 @@
-bob = ('Bob', 40.5, ['dev', 'mgr']) # Tuple record
-print(bob)
-# ('Bob', 40.5, ['dev', 'mgr'])
-print(bob[0], bob[2])  # Access by position
-# ('Bob', ['dev', 'mgr'])
-
-bob = dict(name='Bob', age=40.5, jobs=['dev', 'mgr'])  # Dictionary record
-print(bob)
-# {'jobs': ['dev', 'mgr'], 'name': 'Bob', 'age': 40.5}
-print(bob['name'], bob['jobs'])  # Access by key
-# ('Bob', ['dev', 'mgr'])
-
-print(tuple(bob.values()))  # Values to tuple
-# (['dev', 'mgr'], 'Bob', 40.5)
-print(list(bob.items())) # Items to tuple list
-# [('jobs', ['dev', 'mgr']), ('name', 'Bob'), ('age', 40.5)]
-
-from collections import namedtuple  # Import extension type
-Rec = namedtuple('Rec', ['name', 'age', 'jobs'])  # Make a generated class
-bob = Rec('Bob', age=40.5, jobs=['dev', 'mgr'])  # A named-tuple record
-print(bob)
-# Rec(name='Bob', age=40.5, jobs=['dev', 'mgr'])
-print(bob[0], bob[2])  # Access by position
-# ('Bob', ['dev', 'mgr'])
-print(bob.name, bob.jobs)  # Access by attribute
-# ('Bob', ['dev', 'mgr'])
-
-O = bob._asdict()  # Dictionary-like form
-print(O['name'], O['jobs'])  # Access by key too
-# ('Bob', ['dev', 'mgr'])
-print(O)
-# OrderedDict([('name', 'Bob'), ('age', 40.5), ('jobs', ['dev', 'mgr'])])
-
-bob = Rec('Bob', 40.5, ['dev', 'mgr'])  # For both tuples and named tuples
-name, age, jobs = bob  # Tuple assignment (Chapter 11)
-print(name, jobs)
-# ('Bob', ['dev', 'mgr'])
-for x in bob:
-    print(x)  # Iteration context (Chapters 14, 20)
-# ...prints Bob, 40.5, ['dev', 'mgr']...
-
-bob = {'name': 'Bob', 'age': 40.5, 'jobs': ['dev', 'mgr']}
-job, name, age = bob.values()
-print(name, job)  # Dict equivalent (but order may vary)
-# ('Bob', ['dev', 'mgr'])
-
-for x in bob:
-    print(bob[x])  # Step though keys, index values
-# ...prints values...
-for x in bob.values():
-
-    print(x)  # Step through values view
-# ...prints values...
+# bob = ('Bob', 40.5, 'dev', 'mgr'  # Tuple record
+# print ?
+# # ('Bob', 40.5, ['dev', 'mgr'])
+# print ? 0 ? 2  # Access by position
+# # ('Bob', ['dev', 'mgr'])
+#
+# bob = di.. name_'Bob', age_40.5, jobs_'dev', 'mgr'  # Dictionary record
+# print ?
+# # {'jobs': ['dev', 'mgr'], 'name': 'Bob', 'age': 40.5}
+# print ?  name , ? jobs  # Access by key
+# # ('Bob', ['dev', 'mgr'])
+#
+# print ___ ?.va..  # Values to tuple
+# # (['dev', 'mgr'], 'Bob', 40.5)
+# print(l.. ?.it.. # Items to tuple list
+# # [('jobs', ['dev', 'mgr']), ('name', 'Bob'), ('age', 40.5)]
+#
+# f____ co___ ______ n_t_  # Import extension type
+# Rec = n_t_ 'Rec', |'name', 'age', 'jobs'  # Make a generated class
+# bob = ? Bob , age_40.5, jobs_|dev mgr  # A named-tuple record
+# print ?
+# # Rec(name='Bob', age=40.5, jobs=['dev', 'mgr'])
+# print ? 0 ? 2  # Access by position
+# # ('Bob', ['dev', 'mgr'])
+# print ?.n.. ?.j..  # Access by attribute
+# # ('Bob', ['dev', 'mgr'])
+#
+# O = ?._asd..  # Dictionary-like form
+# print ?  name , ?  jobs  # Access by key too
+# # ('Bob', ['dev', 'mgr'])
+# print ?
+# # OrderedDict([('name', 'Bob'), ('age', 40.5), ('jobs', ['dev', 'mgr'])])
+#
+# bob = R.. Bob 40.5 | dev , mgr  # For both tuples and named tuples
+# n.. a.. j.. _ ?  # Tuple assignment (Chapter 11)
+# print n.. j..
+# # ('Bob', ['dev', 'mgr'])
+# ___ x __ ?
+#     print ?  # Iteration context (Chapters 14, 20)
+# # ...prints Bob, 40.5, ['dev', 'mgr']...
+#
+# bob =  name Bob age 40.5 jobs dev mgr
+# j.. n.. a.. _ ?.va..
+# print n.. j..  # Dict equivalent (but order may vary)
+# # ('Bob', ['dev', 'mgr'])
+#
+# ___ x i_ ?
+#     print ? ?  # Step though keys, index values
+# # ...prints values...
+# ___ x __ ?.va..
+#
+#     print(x)  # Step through values view
+# # ...prints values...
