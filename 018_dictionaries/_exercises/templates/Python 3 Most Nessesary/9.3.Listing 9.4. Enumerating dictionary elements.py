@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 d = {"x": 1, "y": 2, "z": 3}
 for key in d.keys():          # Использование метода keys()
     print("({0} => {1})".format(key, d[key]), end=" ")

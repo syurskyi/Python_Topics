@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 d = {1: "int", "a": "str", (1, 2): "tuple"}
 print(d[1], d["a"], d[(1, 2)])
 # ('int', 'str', 'tuple')

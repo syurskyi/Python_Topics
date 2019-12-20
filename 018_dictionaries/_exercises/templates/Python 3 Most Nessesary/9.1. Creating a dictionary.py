@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 d = dict(); print(d)                 # Создаем пустой словарь
 # {}
 d = dict(a=1, b=2); print(d)

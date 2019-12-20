@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 d1, d2 = {"a": 1, "b": 2 }, {"a": 3, "c": 4, "d": 5}
 print(d1.keys(), d2.keys())                                       # Получаем объект dict_keys
 # (dict_keys(['a', 'b']), dict_keys(['a', 'c', 'd']))
