@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 x = 5
 while x:  # пока x не равен нулю
     print(x)

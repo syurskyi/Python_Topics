@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 arr = [1, 2, 3]
 i, count = 0, len(arr)
 while i < count:
