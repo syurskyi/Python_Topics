@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 x = int(input('x = '))
 
 if 0 < x < 7:

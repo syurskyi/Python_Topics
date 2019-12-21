@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 string = input('Enter a string: ')
 # то же самое, что if string is not None and string != ''
 if string:
