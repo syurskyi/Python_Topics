@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 arr = {"x": 1, "y": 2, "z": 3}
 arr.keys()
 # dict_keys(['y', 'x', 'z'])
