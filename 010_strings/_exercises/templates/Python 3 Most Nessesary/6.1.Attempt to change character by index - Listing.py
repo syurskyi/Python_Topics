@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-s = "Python"
-print(s[0])                    # Можно получить символ по индексу
+# s = "Python"
+# print ? 0                    # Можно получить символ по индексу
 # 'P'
 # s[0] = "J"              # Изменить строку нельзя
 # Traceback (most recent call last):
@@ -9,7 +9,7 @@ print(s[0])                    # Можно получить символ по �
 #     s[0] = "J"              # Изменить строку нельзя
 # TypeError: 'str' object does not support item assignment
 #
-print(type("строка"))
+# print ty.. "строка
 # <class 'str'>
 # print("строка".encode(encoding="cp1251"))
 # b'\xf1\xf2\xf0\xee\xea\xe0'
@@ -17,10 +17,10 @@ print(type("строка"))
 # b'\xd1\x81\xd1\x82\xd1\x80\xd0\xbe\xd0\xba\xd0\xb0'
 #
 #
-s = bytes("стр str", "cp1251")
+# s = by.. "стр str" cp1251
 # print(s[0], s[5], s[0:3], s[4:7])
 # (241, 116, b'\xf1\xf2\xf0', b'str')
-print(s)
+# print ?
 # b'\xf1\xf2\xf0 str'
 #
 #
