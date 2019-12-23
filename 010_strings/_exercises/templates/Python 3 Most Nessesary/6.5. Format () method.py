@@ -11,7 +11,7 @@
 # # '10 — 12.3 — string'
 # print(" model — color ".f... c.._ red , m.._ BMW # Ключи
 # # 'BMW — red'
-# d = "color" "red" "model" "BMW"
+# d = "color" "red" "model" "BMW"              # dict
 # print(" m.. — c..".f... $$?                  # Ключи
 # # 'BMW — red'
 # print(" c.. — @".f... 2015 c.._ red         # Комбинация
@@ -25,7 +25,7 @@
 # '10 — string'
 #
 #
-# c_ Car:
+# c_ Car
 #     color, model _ "red", "BMW"
 #
 #
