@@ -13,6 +13,6 @@
 # print(S)
 #
 #
-# print('That is @ @ bird!'  1 'dead'  # Format expression: all Pythons
+# print('That is @ @ bird!'  1 'dead'  # Format expression: all Pythons the firt is digit the second string
 #
 # print 'That is @ @ bird!'.f.. 1 'dead'  # Format method in 2.6, 2.7, 3.X
