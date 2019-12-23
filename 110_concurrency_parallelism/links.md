@@ -54,3 +54,11 @@ https://geekbrains.ru/posts/python_threading_part1
 https://habr.com/ru/post/149420/
 
 
+
+https://pymotw.com/3/asyncio/index.html
+
+https://pymotw.com/3/multiprocessing/basics.html
+
+
+
+
