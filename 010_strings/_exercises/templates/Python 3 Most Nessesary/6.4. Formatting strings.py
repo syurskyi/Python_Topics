@@ -6,17 +6,17 @@
 # '10 — 20 — 30'
 #
 #
-# print("_ name _ — _ year _" _ "year" 1978 "name" "Nik"
+# print("_ name _ — _ year _" _ "year" 1978 "name" "Nik"     # dict
 # # 'Nik — 1978'
 #
 #
-# print("_#o _#o _#o" _ 0o77, 10, 105
+# print("_|_ _|_ _|_" _ 0o77, 10, 105    # oct
 # # 0o77 0o12 0o12
-# print("_#x _#x _#x" _ 0xff, 10, 105
+# print("_|_ _|_ _|_" _ 0xff, 10, 105    #  hexadecimal
 # # 0xff 0xa 0xa
-# print("_#X _#X _#X" _ 0xff, 10, 105
+# print("_|_ _|_ _|_" _ 0xff, 10, 105    # hexadecimal with big O
 # # 0XFF 0XA 0XA
-# print("_#.0F _.0F" _ 300, 300
+# print("_|.0F _.0F" _ 300, 300          # tochnost'
 # # 300. 300
 #
 #
