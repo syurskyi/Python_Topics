@@ -1,15 +1,15 @@
 # # -*- coding: utf-8 -*-
 #
-# print( s.. ,  s.. 1, 2,  s.. 3, 4,  s.. "x" 1
+# print( s.. ,  s.. 1, 2,  s.. 3, 4,  s.. x 1
 # # ('', '[1, 2]', '(3, 4)', "{'x': 1}")
 # print("строка1\nстрока2")
 # # строка1
 # # строка2
 #
 #
-# print(r.. Строка", r.. 1, 2, 3, r.. "x" 5
+# print(r.. Строка", r.. 1, 2, 3, r.. x 5
 # # ("'Строка'", '[1, 2, 3]', "{'x': 5}")
-# print(r..("строка1\nстрока2"))
+# print(r.. строка1\nстрока2
 # # "'строка1\\nстрока2'"
 #
 #
@@ -19,7 +19,7 @@
 # # "'\\u0441\\u0442\\u0440\\u043e\\u043a\\u0430'"
 #
 #
-# print(le. Python, le. "\r\n\t" le. r"\r\n\t"
+# print(le. Python, le. "\r\n\t" le. _"\r\n\t"
 # # (6, 3, 6)
 # print(le. строка
 # # 6
@@ -53,20 +53,20 @@
 #
 #
 # s = ",,word1,,word2,,word3,,"
-# print(?.sp..","
+# print(?.sp.. !
 # # ['', '', 'word1', '', 'word2', '', 'word3', '', '']
-# print "1,,2,,3".sp.. ","
+# print "1,,2,,3".sp.. !
 # # ['1', '', '2', '', '3']
 #
 #
-# print("word1 word2 word3".sp.. "\n"
+# print("word1 word2 word3".sp.. \n
 # # ['word1 word2 word3']
 #
 #
 # s = "word1 word2 word3"
 # print ?.rs.. ?.rs.. N.. 1
 # # (['word1', 'word2', 'word3'], ['word1 word2', 'word3'])
-# print("word1\nword2\nword3".rs.. "\n"
+# print("word1\nword2\nword3".rs.. \n
 # # ['word1', 'word2', 'word3']
 #
 #
@@ -106,7 +106,7 @@
 #
 #
 # s = "Python"
-# arr = li.. s; print ?        # Преобразуем строку в список
+# arr = li.. ?; print ?        # Преобразуем строку в список
 # # ['P', 'y', 't', 'h', 'o', 'n']
 # ? 0 = "J"; print ?       # Изменяем элемент по индексу
 # # ['J', 'y', 't', 'h', 'o', 'n']
