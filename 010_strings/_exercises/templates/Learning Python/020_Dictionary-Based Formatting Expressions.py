@@ -1,13 +1,13 @@
-# print '@ qty|_ more 2 food|_'  'qty' 1 'food' 'spam'
+# print '@ qty|_ more @ food|_'  'qty' 1 'food' 'spam'
 #
 #
 # # Template with substitution targets
 # reply = """
 # Greetings...
-# Hello %(name)s!
-# Your age is %(age)s
+# Hello @ name _!
+# Your age is @ age _
 # """
-# values _ 'name' 'Bob' 'age': 40 # Build up values to substitute
+# values _ 'name' 'Bob' 'age' 40 # Build up values to substitute
 # print r.. @ v... # Perform substitutions
 #
 #
