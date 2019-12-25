@@ -17,7 +17,7 @@ library (you should now know where to find that on your local machine - you have
 import sys
 
 # %%
-sys.exec_prefix
+print(sys.exec_prefix)
 
 # %%
 '''
@@ -28,7 +28,7 @@ Or you can import `importlib` and look at the `__file__` property to get an exac
 import importlib
 
 # %%
-importlib.__file__
+print(importlib.__file__)
 
 # %%
 '''
@@ -151,7 +151,7 @@ Let's look at the module spec for `fractions`:
 '''
 
 # %%
-fractions.__spec__
+print(fractions.__spec__)
 
 # %%
 '''
@@ -171,7 +171,7 @@ Here are the finders currently registered on my system:
 '''
 
 # %%
-sys.meta_path
+print(sys.meta_path)
 
 # %%
 '''
@@ -221,7 +221,7 @@ Now let's go ahead and actually import it:
 import module1
 
 # %%
-module1.a
+print(module1.a)
 
 # %%
 '''
@@ -244,7 +244,7 @@ import os
 ext_module_path = os.environ.get('HOME', os.environ['HOMEPATH'])
 
 # %%
-ext_module_path
+print(ext_module_path)
 
 # %%
 file_abs_path = os.path.join(ext_module_path, 'module2.py')
@@ -299,7 +299,7 @@ The module was not found because `sys.path` knows nothing about `ext_module_path
 '''
 
 # %%
-ext_module_path in sys.path
+print(ext_module_path in sys.path)
 
 # %%
 '''
@@ -326,7 +326,7 @@ Hurray! Our import should now work...
 import module2
 
 # %%
-module2.x
+print(module2.x)
 
 # %%
 '''
