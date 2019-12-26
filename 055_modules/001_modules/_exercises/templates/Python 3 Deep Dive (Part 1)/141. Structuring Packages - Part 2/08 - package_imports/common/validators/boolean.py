@@ -1,15 +1,15 @@
-# boolean.py
-
-? = ['is_boolean']
-
-
-def is_boolean(arg):
-    pass
-
-
-def boolean_helper_1():
-    pass
-
-
-def boolean_helper_2():
-    pass
+# # boolean.py
+#
+# ? _ is_b.
+#
+#
+# ___ is_boolean arg
+#     p..
+#
+#
+# ___ boolean_helper_1
+#     p..
+#
+#
+# ___ boolean_helper_2
+#     p..
