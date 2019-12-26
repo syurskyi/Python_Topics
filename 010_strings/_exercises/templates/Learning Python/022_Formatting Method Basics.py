@@ -18,9 +18,9 @@
 #
 # print('#' * 52 + ' Same via expression')
 # template = '@, @ and @'  # Same via expression
-# print(? %  'spam' 'ham' 'eggs'
+# print(? _  'spam' 'ham' 'eggs'
 # template _ '@ motto _, @ pork _ and @ food _'
-# print(? % di.. m.._'spam' p.. _'ham' f.._'eggs'
+# print(? _ di.. m.._'spam' p.. _'ham' f.._'eggs'
 # print(' motto, @ and  food '. f... 42 m.._3.14 f.._ 1, 2]
 # X = ' motto , @ and food '. f...  42 m.._3.14 f.._ 1, 2]
 # print(X)
