@@ -1,15 +1,15 @@
-# import sys
-# print(' 0 10 _ 1 10'.f.. 'spam', 123.4567  # In Python 3.3
-# print('{0:>10} _ {1:<10}'.f..('spam', 123.4567))
+# ______ ___
+# print(' _ 10 _ _ 10'.f.. 'spam', 123.4567  # In Python 3.3
+# print('{_ >10} _ {_ <10}'.f..('spam', 123.4567))
 # print('@ .platform >10 _ @ kind <10'.f.. ___ di.. kind_'laptop'
 # print(' 10 _ 10'.f.. 'spam', 123.4567
 # print(' >10 _ <10 '.f.. 'spam' 123.4567
 # print(' .platform >10 _ kind <10 '.f.. ___ di.. kind_'laptop'
-# print(' 0 e {1 .3e {2 g '.f.. 3.14159, 3.14159, 3.14159
-# print('0 f  1 .2f 2 06.2f '.f.. 3.14159, 3.14159, 3.14159
+# print(' _ e |_ .3e |_ g '.f.. 3.14159, 3.14159, 3.14159
+# print('_ f  _ .2f _ 06.2f '.f.. 3.14159, 3.14159, 3.14159
 #
 # print('#' * 52 + ' Hex, octal, binary')
-# print(' 0 X 1 o 2 b'.f..(255, 255, 255))  # Hex, octal, binary
+# print(' _ X _ o _ b'.f..(255, 255, 255))  # Hex, octal, binary
 #
 # print('#' * 52 + ' Other to/from binary')
 # print(bi. 255 in. '11111111', 2), 0b11111111  # Other to/from binary
