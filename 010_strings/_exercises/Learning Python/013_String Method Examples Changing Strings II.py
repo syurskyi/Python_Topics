@@ -24,7 +24,7 @@
 # print ?.re.. SPAM EGGS  # Replace all
 #
 # print('#' * 52 + ' Replace one')
-# print ?.re.. SPAM EGGS 1  # Replace one
+# print ?.re.. SPAM EGGS _  # Replace one
 #
 # S _ 'spammy'
 # L _ li.. ?

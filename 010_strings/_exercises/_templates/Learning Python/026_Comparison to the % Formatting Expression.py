@@ -1,4 +1,4 @@
-# import ___
+# ______ ___
 # print('#' * 52 + ' Format expression: in all 2.X/3.X')
 # print('@_@'  'spam' 42  # Format expression: in all 2.X/3.X
 #
@@ -9,9 +9,9 @@
 # print('@_@'.f... 'spam' 42  # With autonumbering: in 3.1+ and 2.7
 #
 # print('#' * 52 + ' Arbitrary types')
-# print('@, @ and @'  3.14 42 [1, 2]  # Arbitrary types
+# print('@, @ and @'  3.14 42 |1, 2 # string  # Arbitrary types
 # print('My _ kind _ runs _ platform _' 'kind' 'laptop' 'platform' ___.pl..
-# print('My _ kind _ runs _ platform _ s'  di..  k.._'laptop', pl..._sys.pl...))
+# print('My _ kind _ runs _ platform _ '  di..  k.._ laptop', pl..._ ___.pl...
 # somelist _ li.. 'SPAM'
 # parts _ ? 0, ? -1, ? 1 3
 # print('first_@, last_@, middle_@'  ?
@@ -25,12 +25,12 @@
 #
 # # Floating-point numbers
 # print('#' * 52 + ' Floating-point numbers')
-# print('_e, _.3e, _g' 3.14159 3.14159 3.14159
-# print('_f, _.2f, _06.2_' 3.14159 3.14159 3.14159
+# print('_ _, _.3_, _ _' 3.14159 3.14159 3.14159  # |expotencial|expotencial|short expotencial
+# print('_ _, _.2_, _06.2_' 3.14159 3.14159 3.14159 # float
 #
 # # Hex and octal, but not binary (see ahead)
 # print('#' * 52 + ' Hex and octal, but not binary (see ahead)')
-# print('_x, _o' 255, 255
+# print('__, __' 255, 255   # hex|octal
 #
 # # Hardcoded references in both
 # print('#' * 52 + ' Hardcoded references in both')
