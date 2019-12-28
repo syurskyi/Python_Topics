@@ -1,4 +1,4 @@
-# _____ ___
+import sys
 # print('My _ |kind runs _.platform'.f.... ___ 'kind' 'laptop'     # dict
 # print('My |map kind runs ___.platform'.f...  ___ _ ___ m..  _ 'kind' 'laptop'
 # somelist = li.. 'SPAM'

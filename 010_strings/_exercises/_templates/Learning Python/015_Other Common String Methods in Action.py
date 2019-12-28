@@ -9,4 +9,4 @@
 # print('Ni' i_ ?
 # sub = 'Ni!\n'
 # print ?.endsw.. sub  # End test via method call or slice
-# print ? -le. s..  __ s..
+# print ? -le. s.. ; __ s..

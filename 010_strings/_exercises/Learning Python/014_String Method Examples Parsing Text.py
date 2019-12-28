@@ -1,12 +1,12 @@
-# line _ 'aaa bbb ccc'
-# col1 _ ? 0 3
-# col3 _ ? 8
-# print _1
-# print _3
-# line _ 'aaa bbb ccc'
-# cols _ ?.sp..
-# print c..
-# line _ 'bob,hacker,40'
-# ?.sp.. ',
-# line _ "i'mSPAMaSPAMlumberjack"
-# ?.sp.. SPAM
+line = 'aaa bbb ccc'
+col1 = line[0:3]
+col3 = line[8:]
+print(col1)
+print(col3)
+line = 'aaa bbb ccc'
+cols = line.split()
+print(cols)
+line = 'bob,hacker,40'
+print(line.split(','))
+line = "i'mSPAMaSPAMlumberjack"
+print(line.split('SPAM'))

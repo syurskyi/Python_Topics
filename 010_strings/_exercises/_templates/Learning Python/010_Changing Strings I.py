@@ -2,14 +2,14 @@
 # # S[0] = 'x' # Raises an error!
 # # TypeError: 'str' object does not support item assignment
 #
-# S = S + 'SPAM!' # To change a string, make a new one
-# print S
-# S _ S 4 + 'Burger' + S -1
-# print S
+# S = ? + 'SPAM!' # To change a string, make a new one
+# print ?
+# S _ ? ;4 + 'Burger' + ? -1
+# print ?
 #
 #
 # S _ 'splot'
-# S _ S.re.. 'pl' 'pamal'
+# S _ ?. re.. 'pl' 'pamal'
 # print(S)
 #
 #
