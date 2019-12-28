@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-# # Создание строки
-# string = "a string"
+# Создание строки
+string = "a string"
 #
 # # Вывод срезов строки
 # print ? 2 5  # str
