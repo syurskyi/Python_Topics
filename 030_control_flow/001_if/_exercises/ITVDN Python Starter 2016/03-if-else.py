@@ -1,6 +1,6 @@
-# x = in. in.. 'x = '
-# __ x > 0
-#     y _ ? ** 0.5
-# ____
-#     y _ ? ** 2
-# print(y)
+x = int(input('x = '))
+if x > 0:
+    y = x ** 0.5
+else:
+    y = x ** 2
+print(y)
