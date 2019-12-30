@@ -5,9 +5,9 @@
 # # Все эти примеры создают одинаковые словари
 # a _ di.. one_1 two_2 three_3
 # b _  one 1 two 2 three 3
-# c _ di.. z.. one two three ], 1 2 3
-# d _ di..  two 2), one 1) (three 3
-# e _ di..  three 3 one 1 two 2
+# c _ di.. z.. one two three |, 1 2 3
+# d _ di.. two 2|, one 1| three 3|
+# e _ di.. three 3 one 1 two 2
 #
 # # Те, кто имел опыт программирования на Си-подобных языках, могут
 # # подумать, что в этой строке ошибка (потому что в них операции
