@@ -10,7 +10,7 @@
 # }
 #
 # # len(d) – количество элементов.
-# print le. ?  'entries found')
+# print ? ?  'entries found')
 #
 # print()
 #
@@ -19,22 +19,22 @@
 # # вызывается. Если ключ не существует и метод __missing__ не определён,
 # # выбрасывается исключение KeyError.
 # t__
-#     print('Mary:', ? Mary'
+#     print('Mary:', ? Mary
 #     print('Lumberjack:', ? Lumberjack
-# e___ K... a_ e
+# ____ K... __ e
 #     print('No entry for', $?.a..
 #
 # print()
 #
 # # d[key] = value – изменить значение или создать новую пару ключ-значение, если
 # # ключ не существует.
-# ?['Lumberjack'] = '000-777'
+# ? Lumberjack = '000-777'
 #
 # # key in d, key not in d – проверка наличия ключа в отображении.
 # ____ person __ 'Guido', 'Mary', 'Ahmed'
-#     i_ ? __ p..
+#     __ ? __ p..
 #         print ? is in the phonebook
-#     e__
+#     ___
 #         print('No entry found for', ?
 #
 # print()
@@ -47,23 +47,23 @@
 # print()
 #
 # # copy() – создать неполную копию словаря.
-# phonebook_copy = ph__.c..
+# phonebook_copy = ph__.?
 # print('Phonebook:', ph__
-# print('Phonebook copy:', ph_c
+# print('Phonebook copy:', p_c
 #
 # print()
 #
 # # clear() – удалить все элементы словаря.
-# ph_c_.cl..
+# ph_c_.?
 # print('Phonebook:', ph..
-# print('Phonebook copy:', ph._c..
+# print('Phonebook copy:', p_c..
 #
 # print()
 #
 # # (метод класса) dict.fromkeys(sequence[, value]) – создаёт новый словарь с
 # # ключами из последовательности sequence и заданным значением (по умолчанию –
 # # None).
-# numbers_dict _ di__.fr.. ra.. 3) 42
+# numbers_dict _ di__.? ra.. 3) 42
 # print ?
 #
 # print()
@@ -72,7 +72,7 @@
 # # выбрасывает KeyError).  Если ключ не найден, возвращается значение default
 # # (по-умолчанию – None).
 # ___ key __ ra.. 5
-#     print '@:'.f.. ?, n__.ge. ? 0
+#     print '@:'.f.. ?, n__.? ? 0
 #
 # print()
 #
@@ -80,19 +80,19 @@
 # # соответствующий парам (двухэлементным кортежам) вида (ключ, значение).  В
 # # Python 2 возвращает соответствующий список, а метод iteritems() возвращает
 # # итератор.  Аналогичный метод в Python 2.7 – viewitems().
-# print('Items:', ph__.it..
+# print('Items:', ph__.?
 #
 # # d.keys() – в Python 3 возвращает объект представления словаря,
 # # соответствующий ключам словаря.  В Python 2 возвращает соответствующий
 # # список, а метод iterkeys() возвращает итератор.  Аналогичный метод в Python
 # # 2.7 – viewkeys().
-# print('Keys:', ph__.k..
+# print('Keys:', ph__.?
 #
 # # d.values() – в Python 3 возвращает объект представления словаря,
 # # соответствующий значениям.  В Python 2 возвращает соответствующий список, а
 # # метод itervalues() возвращает итератор.  Аналогичный метод в Python 2.7 –
 # # viewvalues().
-# print('Values:', ph__.va..
+# print('Values:', ph__.?
 #
 # print()
 #
@@ -100,7 +100,7 @@
 # # и возвращает его значение.  Если ключ не существует и задано значение
 # # default, возвращается данное значение, иначе выбрасывается исключение
 # # KeyError.
-# number = ph__.p..'Lumberjack'
+# number = ph__.? Lumberjack
 # print('Deleted Lumberjack (was ' + ? + ')')
 # print ph__
 #
@@ -110,7 +110,7 @@
 # # словарь пустой, возникает исключение KeyError.  Метод полезен для алгоритмов,
 # # которые обходят словарь, удаляя уже обработанные значения (например,
 # # определённые алгоритмы, связанные с теорией графов).
-# person _ ph__.p.i.
+# person _ ph__.?
 # print('Popped @ (phone: @)'.f.. $?
 #
 # print()
@@ -119,8 +119,8 @@
 # # соответствующее значение.  Иначе создаёт элемент с ключом key и значением
 # # default.  default по умолчанию равен None.
 # ___ person __ 'Jack', 'Liz'
-#     phone _ ph__.s.d. ? 000-000
-#     print('@: @'.f..  p.. ph..
+#     phone _ ph__.? ? 000-000
+#     print('@: @'.f..  ? ph..
 #
 # print ph..
 #
@@ -130,7 +130,7 @@
 # # итерабельный объект, состоящий из итерабельных объектов – пар ключ-значение,
 # # либо именованные аргументы.  Добавляет соответствующие элементы в словарь,
 # # перезаписывая элементы с существующими ключами.
-# ph__.up.. 'Alex': '832-438', 'Alice': '231-987'
-# ph__.up.. 'Joe', '217-531'), ('James', '783-428'
-# ph__.up..(Carl='783-923', Victoria='386-486')
+# ph__.? Alex 832-438 Alice 231-987
+# ph__.? Joe , 217-531 |  James , 783-428
+# ph__.? Carl _ 783-923  Victoria _ 386-486
 # print ?
