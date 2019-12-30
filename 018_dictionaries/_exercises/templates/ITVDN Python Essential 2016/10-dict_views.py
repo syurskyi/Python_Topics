@@ -18,12 +18,12 @@
 # #   в словаре.
 #
 # dishes _ eggs 2 sausage 1 bacon 1 spam 500
-# keys _ ?.k..
-# values _ d__.va..
+# keys _ ?.?
+# values _ ?.?
 #
 # # Итерирование
 # n = 0
-# ___ val __ ?
+# ___ val __ v..
 #     n +_ ?
 # print ?
 #
@@ -37,5 +37,5 @@
 # print li.. k..
 #
 # # Также они поддерживают операции с множествами
-# print k.. @ 'eggs', 'bacon', 'salad'
-# print k.. ^ 'sausage', 'juice'
+# print k.. _ 'eggs', 'bacon', 'salad'   # Пересечение множеств | intersection
+# print k.. ^ 'sausage', 'juice'         # # Симметрическая разница | symmetric_difference
