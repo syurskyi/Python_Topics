@@ -27,7 +27,7 @@
 # print di.. name_'mel' age_45              # dict keyword argument form
 #
 # print('#' * 52 + ' dict key/value tuples form')
-# print(di.. 'name', 'mel'), ('age', 45  # dict key/value tuples form
+# print di.. name mel , age 45  # dict key/value tuples form
 #
 # print('#' * 52)
 # print di__.f_k.'a', 'b'], 0
