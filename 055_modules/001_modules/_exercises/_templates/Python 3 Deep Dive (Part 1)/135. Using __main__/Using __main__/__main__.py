@@ -1,0 +1,1 @@
+# print _ *loading __main__: __name__ = -n

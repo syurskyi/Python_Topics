@@ -1,0 +1,32 @@
+12. Modules and packages
+Listing 12.1. Checking the module startup method
+12.1. Import instruction
+12.1.Listing 12.2. Connecting several modules at once
+12.1.Listing 12.3. An example of using the getattr () function
+12.1.Listing 12.4. Attribute existence check
+12.1.Listing 12.5. Use of pseudonyms
+12.1.Listing 12.6. Content of the tests.py module
+12.1.Listing 12.7. The contents of the main program
+12.1.Listing 12.8. Listing the keys of the modules dictionary
+12.1.Listing 12.9. Using the __import __ () function
+12.1.Listing 12.10. List all identifiers
+12.2. Instruction from
+12.2.Listing 12.11. Instruction from
+12.2.Listing 12.12. Import all identifiers from a module
+12.2.Listing 12.13. The contents of the module1.py file
+12.2.Listing 12.14. The contents of the module2.py file
+12.2.Listing 12.15. The contents of the main program
+12.2.Listing 12.16. Using the __all__ attribute
+12.2.Listing 12.17. The contents of the main program
+12.3. Ways to find modules
+12.3.Listing 12.18. Modifying the list of module search paths
+
+12.4. Reloading Modules
+12.4.Listing 12.19. Module reloading
+12.5. Packages
+12.5.Listing 12.20. Content of __init__.py
+12.5.Listing 12.21. Contents of module1.py, module2.py and module3.py
+12.5.Listing 12.22. Contents of the main.py file
+12.5.Listing 12.23. Contents of the main.py file
+12.5.Listing 12.24. Module3.py module content
+12.5.Listing 12.25. Contents of the main.py file
