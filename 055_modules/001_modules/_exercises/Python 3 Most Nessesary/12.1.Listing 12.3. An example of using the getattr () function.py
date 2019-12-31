@@ -1,5 +1,5 @@
-# # -*- coding: utf-8 -*-
-#
-# ______ ma..
-# print g.. ? pi      # Число pi
-# print g.. ?, "x", 50    # Число 50, т. к. x не существует
+# -*- coding: utf-8 -*-
+
+import math
+print(getattr(math, 'pi'))      # Число pi
+print(getattr(math, "x", 50))    # Число 50, т. к. x не существует

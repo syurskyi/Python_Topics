@@ -1,10 +1,10 @@
-# # -*- coding: utf-8 -*-
-#
-# _____ ma__
-# ___ hasattr_math attr
-#     __ h.. ma.. a..
-#         r_ "Атрибут существует"
-#     ____
-#         r_ "Атрибут не существует"
-# print ? pi       # Атрибут существует
-# print ? x        # Атрибут не существует
+# -*- coding: utf-8 -*-
+
+import math
+def hasattr_math(attr):
+    if hasattr(math, attr):
+        return "Атрибут существует"
+    else:
+        return "Атрибут не существует"
+print(hasattr_math('pi'))       # Атрибут существует
+print(hasattr_math('x'))        # Атрибут не существует

@@ -1,5 +1,5 @@
-# # -*- coding: utf-8 -*-
-# ______ tests
-# print di. ?
-# print s.. ?. -d.k..
-# input()
+# -*- coding: utf-8 -*-
+import tests
+print(dir(tests))
+print(sorted(tests.__dict__.keys()))
+input()

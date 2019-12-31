@@ -1,4 +1,4 @@
-# # -*- coding: utf-8 -*-
-# ____ module3 _______ $
-# print s.. v.. .k.. # Получаем список всех идентификаторов
-# input()
+# -*- coding: utf-8 -*-
+from module3 import *
+print(sorted(vars().keys())) # Получаем список всех идентификаторов
+input()

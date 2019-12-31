@@ -1,4 +1,4 @@
-# # -*- coding: utf-8 -*-
-#
-# _____ ma__ __ m                # Создание псевдонима
-# print ? pi                     # Число pi
+# -*- coding: utf-8 -*-
+
+import math as m                # Создание псевдонима
+print(m.pi)                     # Число pi
