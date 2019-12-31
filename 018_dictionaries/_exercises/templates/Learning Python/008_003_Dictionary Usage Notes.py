@@ -1,4 +1,4 @@
-#
+# # -*- coding: utf-8 -*-
 # __author__ = 'sergejyurskyj'
 #
 # """
@@ -15,13 +15,13 @@
 #
 #
 # Matrix  _  # dict
-# ? 2, 3, 4 = 88
-# ? 7, 8, 9 = 99
+# ?||2, 3, 4 = 88
+# ?|| 7, 8, 9 = 99
 # print ?
 #
 # print('#' * 52 + ' separates statements')
 # X = 2; Y = 3; Z = 4               # ; separates statements
-# ? X, Y, Z
+# ?||X, Y, Z
 # print ?
 #
 # """
@@ -33,17 +33,17 @@
 #
 # print('#' * 52 + ' Check for key before fetch')
 #
-# i_ 2, 3, 6 __ M...           # Check for key before fetch
-#     print ? 2, 3, 6      # See Chapter 12 for if/else
-# e___
+# __ 2, 3, 6 __ M...           # Check for key before fetch
+#     print ?||2, 3, 6      # See Chapter 12 for if/else
+# ____
 #     print(0)
 #
 #
 # print('#' * 52 + ' Try to index')
 #
 # t__
-#     print M.. 2, 3, 6      # Try to index
-# e___ K...                  # Catch and recover
+#     print M..||2, 3, 6      # Try to index
+# ____ K...                  # Catch and recover
 #     print(0)                      # See Chapter 33 for try/except
 #
 #
