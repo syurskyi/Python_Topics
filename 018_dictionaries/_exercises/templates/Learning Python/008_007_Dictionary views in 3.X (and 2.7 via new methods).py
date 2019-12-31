@@ -1,6 +1,6 @@
 # __author__ = 'sergejyurskyj'
 #
-# D = di.. a=1, b=2, c=3)
+# D = di.. a 1 b 2 c 3
 # print ?
 #
 # print('#' * 52 + ' Makes a view object in 3.0, not a list')
