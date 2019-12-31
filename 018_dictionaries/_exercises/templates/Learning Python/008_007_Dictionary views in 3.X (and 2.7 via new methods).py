@@ -11,10 +11,10 @@
 # print li.. ?                            # Force a real list in 3.0 if needed
 #
 # print('#' * 52 + ' Ditto for values and items views')
-# V = ?.v..                     # Ditto for values and items views
+# V = 1?.?                     # Ditto for values and items views
 # print ?
 # print li.. ?
-# print li.. ?.it..
+# print li.. 1?.it..
 #
 # print('#' * 52 + ' List operations fail unless converted')
 # #K[0]                               # List operations fail unless converted
@@ -22,7 +22,7 @@
 # print li.. ? 0
 #
 # print('#' * 52 + ' Iterators used automatically in loops')
-# ___ k __ ?.k.. print ?        # Iterators used automatically in loops
+# ___ k __ 1?.k.. print ?        # Iterators used automatically in loops
 #
 # print('#' * 52 + ' Still no need to call keys() to iterate')
 # ___ key __ ? print ?           # Still no need to call keys() to iterate
