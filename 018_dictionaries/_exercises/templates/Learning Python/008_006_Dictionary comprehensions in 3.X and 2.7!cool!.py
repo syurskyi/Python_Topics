@@ -1,16 +1,16 @@
 # __author__ = 'sergejyurskyj'
 #
 # print('#' * 52 + ' Zip together keys and values')
-# print li.. z.. 'a', 'b', 'c' , |1, 2, 3        # Zip together keys and values
+# print li.. ? 'a', 'b', 'c' , |1, 2, 3        # Zip together keys and values
 #
 # print('#' * 52 + ' Make a dict from zip result')
-# D = di.. z.. 'a', 'b', 'c'| , |1, 2, 3]    # Make a dict from zip result
+# D = di.. ? 'a', 'b', 'c'| |1, 2, 3    # Make a dict from zip result
 # print ?
 #
 # # dict comprehension
 # print('#' * 52 + ' dict comprehension')
 #
-# D =  k v __ k, ? __ z.. 'a', 'b', 'c' , |1, 2, 3
+# D =  k v ___ ?, ? __ z.. 'a', 'b', 'c' , |1, 2, 3
 # print ?
 #
 # print('#' * 52 + ' Or: range(1, 5)')
@@ -25,7 +25,7 @@
 # print(D)
 #
 # print('#' * 52 + ' Initialize dict from keys')
-# D = di__.f.k. 'a', 'b', 'c' , 0       # Initialize dict from keys
+# D = di__.? 'a', 'b', 'c' , 0       # Initialize dict from keys
 # print ?
 #
 # print('#' * 52 + ' Same, but with a comprehension')
