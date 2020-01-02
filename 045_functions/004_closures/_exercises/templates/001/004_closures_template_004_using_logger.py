@@ -1,17 +1,17 @@
 # Python program to illustrate
 # closures
-# i___ log____
+# ____ l____
 #
-# l___.b_C_(f_- example.log  l_-l_.I____
+# l___.b_C_ f__- example.log  l_-l_.I____
 #
 #
 # ___ logger func
-#     ___ log_func 0args
-#         l__.i_|*Running *||* w__ arguments ||*_fu__;--n__; args||
-#         print f__ 0args
+#     ___ log_func $
+#         l__.i_ Running "@" with arguments @*.f... f.. --n a..
+#         print f__ $
 #         # Necessary for closure to work (returning WITHOUT parenthesis)
 #
-#     r_ l___fu__
+#     r_ ?
 #
 #
 # ___ add x y
@@ -22,8 +22,8 @@
 #     r__ x - y
 #
 #
-# add_logger _ logger add
-# sub_logger _ logger sub
+# add_logger _ ? a..
+# sub_logger _ ? s..
 #
 # add_logger 3 3
 # add_logger 4 5
