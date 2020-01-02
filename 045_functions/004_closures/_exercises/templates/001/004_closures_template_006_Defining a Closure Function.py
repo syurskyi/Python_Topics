@@ -3,11 +3,11 @@
 #
 #     ___ printer
 # # This is the nested function
-#         print msg
+#         print ?
 #
-#     r_ pr___  # this got changed
+#     r_ ?  # this got changed
 #
 # # Now let's try calling this function.
 # # Output: Hello
-# another _ pr_m__ Hello
-# a...
+# another _ ? Hello
+# ?
