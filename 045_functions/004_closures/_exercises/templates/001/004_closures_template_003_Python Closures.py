@@ -10,12 +10,12 @@
 #
 #
 # __ ______ __ ______
-#     o_F_ Hey!
+#     o.. Hey!
 
 # Python program to illustrate
 # closures
 # ___ outerFunction text
-#     text _ text
+#     text _ t..
 #
 #     ___ innerFunction
 #         print t...
