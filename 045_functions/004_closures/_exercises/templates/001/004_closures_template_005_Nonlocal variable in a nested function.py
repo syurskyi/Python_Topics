@@ -5,9 +5,6 @@
 # # This is the nested function
 #         print m...
 #
-#     r_ p...  # this got changed
+#     ?  # this got changed
 #
-# # Now let's try calling this function.
-# # Output: Hello
-# another = p... Hello
-# a...
+# ? Hello
