@@ -5,13 +5,11 @@
 #         print _*Calling function * | ?. -n |**|
 #         r_ ? a___
 #
-#     r_ w00
-#
-#
+#     r_ ?
 #
 # ??
 # ___ decorated_function x
-#     print|_*With argument *|x|**|
+#     print _*With argument *|x|**|
 #
 # ? 2
 #
@@ -22,13 +20,13 @@
 # # Defining a decorator
 # ___ trace f
 #     ___ wrap $ $$
-#         print|_*[TRACE] func: ?. -n| args: a..| kwargs: k..|*|
+#         print _*[TRACE] func: ?. -n| args: a..| kwargs: k..|*|
 #         r_ _|$ $$
 #
 #     r_ ?
 #
 # # Applying decorator to a function
-# 0t__
+# ??
 # ___ add_two x
 #     r_ ? + 2
 #
@@ -36,11 +34,11 @@
 # ? 3
 #
 # # Applying decorator to a lambda
-# print t00|l_____ x; x ** 2|||3
+# print t00|l_____ x x ** 2 | 3
 #
 # print('#' * 52 + '  ')
 # print('#' * 52 + '  ')
 # print('#' * 52 + '  ')
 #
 #
-# l.. ma. t..|l_____ x ? * 2| ra.. 3
+# li.. ma. t..|l_____ x ? * 2 |ra.. 3
