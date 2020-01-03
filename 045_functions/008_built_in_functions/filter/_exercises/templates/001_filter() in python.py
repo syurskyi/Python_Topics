@@ -1,9 +1,9 @@
 # # function that filters vowels
 # ___ fun variable
 # 	letters _ |'a' 'e' 'i' 'o' 'u'|
-# 	i_ (v0000 i_ l000
+# 	__ v.. __ l..
 # 		r_ T_
-# 	e____
+# 	____
 # 		r_ F_
 #
 #
@@ -11,11 +11,11 @@
 # sequence _ |'g', 'e', 'e', 'j', 'k', 's', 'p', 'r'|
 #
 # # using filter function
-# filtered _ f00 f00 s000
+# filtered _ f.. ? ?
 #
 # print The filtered letters are:
-# ___ s i_ fil00
-# 	print s
+# ___ s __ ?
+# 	print ?
 #
 # # The filtered letters are:
 # # e
