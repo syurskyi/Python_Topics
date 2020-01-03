@@ -1,34 +1,34 @@
 # my_pets _ ['alfred', 'tabitha', 'william', 'arla']
-# uppered_pets = []
+# uppered_pets    # list
 #
-# ___ pet i_ my_pets
+# ___ pet __ ?
 #     pet_ _ pet.up___
-#     uppered_pets.app___ pet_
+#     u__.ap.. ?
 #
-# print uppered_pets
+# print u....
 #
 # my_pets _ |'alfred' 'tabitha' 'william' 'arla'|
 #
-# uppered_pets _ l...|m.. str.upper m.._p..
+# uppered_pets _ l... m.. str.up.. ?
 #
-# print uppered_pets
+# print ?
 #
-#
-# circle_areas _ [3.56773, 5.57668, 4.00914, 56.24241, 9.01344, 32.00013]
-#
-# result _ l...(m..(r... c..._a... r...(1,7)))
-#
-# print result
 #
 # circle_areas _ [3.56773, 5.57668, 4.00914, 56.24241, 9.01344, 32.00013]
 #
-# result _ l...|m..|r... c..._a... r...|1,3
+# result _ l... m.. ro... ? ra.. 1 7
 #
-# print result
+# print ?
+#
+# circle_areas _ [3.56773, 5.57668, 4.00914, 56.24241, 9.01344, 32.00013]
+#
+# result _ l... m.. r0... ? ra.. 1 3
+#
+# print ?
 #
 # my_strings _ ['a', 'b', 'c', 'd', 'e']
 # my_numbers _ [1,2,3,4,5]
 #
-# results _ l...|m..|l.... x; y; |x y| m._s.; m._n...||
+# results _ l... m.. l____ x y |x y| ?1 ?2
 #
-# print(results)
+# print ?
