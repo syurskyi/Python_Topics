@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 def has_permission(page):
     def inner(username):
         if username == 'Admin':
