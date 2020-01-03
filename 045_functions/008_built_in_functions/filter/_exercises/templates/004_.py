@@ -11,6 +11,6 @@
 # # Python 3
 # dromes _ "demigod", "rewire", "madam", "freer", "anutforajaroftuna", "kiosk"
 #
-# palindromes _ l.. f..... l..... word w.. _ w..|__-1 ?
+# palindromes _ l.. f..... l..... word w.. _ w..|``-1 ?
 #
 # print ?
