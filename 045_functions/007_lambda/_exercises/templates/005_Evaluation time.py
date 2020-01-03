@@ -6,7 +6,7 @@
 #     r_ ?
 #
 # numbers _ 'one', 'two', 'three'
-# funcs _ ||
+# funcs _    # list
 # ___ n __ ?
 #     f__.ap.. w.. n
 #

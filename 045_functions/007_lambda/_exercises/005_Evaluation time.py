@@ -5,13 +5,13 @@ def wrap(n):
         print(n)
     return f
 
-numbers _ 'one', 'two', 'three'
-funcs _ ||
-___ n __ ?
-    f__.ap.. w.. n
+numbers = ['one', 'two', 'three']
+funcs = []
+for n in numbers:
+    funcs.append(wrap(n))
 
-___ f __ f...
-    ?
+for f in funcs:
+    f()
 
 # one
 # two
