@@ -1,3 +1,3 @@
-# ____ sy0
-# print s00.getrecursionlimit
+# ____ ___
+# print ___.g_r_l.
 # # 3000
