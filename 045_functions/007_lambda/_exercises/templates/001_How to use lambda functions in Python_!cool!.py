@@ -10,10 +10,10 @@
 # # Вышеупомянутая лямбда-функция эквивалентна написанию этого:
 #
 # ___ add_one x
-#     r_ x + 1
+#     r_ ? + 1
 #
 #
-# full_name _ l_____ first; last; _*Full name; |fi00.tit000||||la00.tit00000*
+# full_name _ l_____ first last _*Full name: |?.ti.. |?.t..*
 # print ? guido van rossum
 # # 'Full name: Guido Van Rossum'
 #
@@ -21,7 +21,7 @@
 # # Это называется выражением немедленного вызова функции (IIFE –  Immediately Invoked Function Expression,
 # # произносится «iffy»). Вот пример:
 #
-# (l_____ x y x + y||2 3
+# print l_____ x y x + y|2 3
 # # 5
 #
 # # Лямбда-функции часто используются с функциями более высокого порядка, которые принимают одну или несколько функций
@@ -31,26 +31,26 @@
 # # в качестве аргумента, как в следующем надуманном примере:
 #
 # high_ord_func _ l_____ x func x + ? x
-# high_ord_func 2 l_____ x x * x
+# print ? 2 l_____ x x * x
 # # 6
-# high_ord_func 2 l_____ x x + 3
+# print ? 2 l_____ x x + 3
 # # 7
 #
 # # Модуль dis предоставляет функции для анализа байт-кода Python, сгенерированного компилятором Python:
 #
-# ______ di0
-# add _ l_____ x y x + y
-# ty.. add
+# ______ ___
+# add _ l_____ x y ? + ?
+# print ty.. ?
 #
 # # class 'function'>
 #
-# di0.di0 add
+# d__.d__ ?
 # # 1 0 LOAD_FAST  0(x)
 # # 2 LOAD_FAST    1(y)
 # # 4 BINARY_ADD
 # # 6 RETURN_VALUE
 #
-# add
+# print ?
 # # < function <lambda > at 0x7f30c6ce9ea0 >
 #
 # # Вы можете видеть, что dis() предоставляет читаемую версию байт-кода Python,
@@ -59,11 +59,11 @@
 # #
 # # Теперь посмотрим на обычный объект функции:
 #
-# ______ di0
-# ___ add x y: r_ x + y
-# ty00|add|
+# ______ ___
+# ___ add x y r_ x + y
+# print ty.. ?
 # # <class 'function'>
-# di0.di0 add
+# d__.d__ ?
 #   # 1           0 LOAD_FAST                0 (x)
 #   #             2 LOAD_FAST                1 (y)
 #   #             4 BINARY_ADD

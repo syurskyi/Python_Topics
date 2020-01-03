@@ -2,16 +2,16 @@
 
 # ___ wrap n
 #     ___ f
-#         print n
-#     r_ f
+#         print ?
+#     r_ ?
 #
 # numbers _ 'one', 'two', 'three'
 # funcs _ ||
-# ___ n i_ n000
-#     fu000.app00|wrap|n||
+# ___ n __ ?
+#     f__.ap.. w.. n
 #
-# ___ f i_ fu000
-#     f
+# ___ f __ f...
+#     ?
 #
 # # one
 # # two
@@ -24,11 +24,11 @@
 #
 # numbers _ 'one', 'two', 'three'
 # funcs _ ||
-# ___ n i_ nu000
-#     fu00.app00|l_____; print n
+# ___ n __ ?
+#     f__.ap.. l_____ print ?
 #
-# ___ f i_ fu000
-#     f
+# ___ f __ ?
+#     ?
 #
 # # three
 # # three
@@ -43,11 +43,11 @@
 #
 # numbers _ 'one', 'two', 'three'
 # funcs _ ||
-# ___ n i_ nu00
-#     fu00.app00|l_____ n_n; print n
+# ___ n __ ?
+#     f__.ap.. l_____ n_n print ?
 #
-# ___ f in funcs
-#     f()
+# ___ f __ ?
+#     ?
 #
 # # one
 # # two

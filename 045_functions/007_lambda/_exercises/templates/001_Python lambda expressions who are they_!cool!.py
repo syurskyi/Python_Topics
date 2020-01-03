@@ -5,14 +5,14 @@
 # colors = ["Goldenrod", "Purple", "Salmon", "Turquoise", "Cyan"]
 #
 # _ normalize_case string
-#     r_ str000.case0000||
+#     r_ ?.ca__f.
 #
 #
-# normalized_colors _ ma0|n000_ co000
+# normalized_colors _ ma. ? c...
 #
 # # Вот в такой код:
 #
 #
 # colors _ ["Goldenrod", "Purple", "Salmon", "Turquoise", "Cyan"]
 #
-# normalized_colors _ ma0(l_____ s s.case0000|| co000
+# normalized_colors _ ma. l_____ s ?.ca_f..  c...
