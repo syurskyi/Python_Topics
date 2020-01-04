@@ -1,18 +1,18 @@
 # partial
 
-# f_ f_ _____ p_
+# _____ f_ _____ ____
 #
 # # Частичное применение функции
-# print_with_comma = p_(print s_-', '
+# print_with_comma = p... print s_-', '
 #
-# print_with_comma 2 3 5
+# ? 2 3 5
 #
 # print()
 
 # ######################################################################################################################
 # Partial Functions
 
-# f_ fu_ i_ pa_
+# _____ fu_ ______ _____
 # ___ my_func a b c
 #     print a b c
 # f _ p_ my_func 10

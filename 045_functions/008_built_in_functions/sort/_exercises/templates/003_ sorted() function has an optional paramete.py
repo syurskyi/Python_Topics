@@ -1,8 +1,8 @@
 # L = "cccc" "b" "dd" "aaa"
 #
-# print "Normal sort :" s.... L
+# print "Normal sort :" s.. ?
 #
-# print "Sort with len :" s... L k.. _ len
+# print "Sort with len :" s.. ? k.. _ len
 #
 # # Output :
 # # Normal sort : ['aaa', 'b', 'cccc', 'dd']

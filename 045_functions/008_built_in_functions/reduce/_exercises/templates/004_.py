@@ -1,13 +1,13 @@
 # # Python 3
-# from functools import reduce
+# ____ fu.. _____ r..
 #
 # numbers = 3 4 6 9 34 12
 #
 # ___ custom_sum first second
-#     r_ f... + s...
+#     r_ ? + ?
 #
-# result _ r... c..._s.. n......
-# print r.....
+# result _ r... ? n..
+# print ?
 #
 #
 #
@@ -17,8 +17,8 @@
 # numbers = 3 4 6 9 34 12
 #
 # ___ custom_sum first second
-#     r_ f..... + s....
+#     r_ ? + ?
 #
-# result _ r... c..._s.. n... 10
-# print r...
+# result _ r... ? n.. 10
+# print ?
 #

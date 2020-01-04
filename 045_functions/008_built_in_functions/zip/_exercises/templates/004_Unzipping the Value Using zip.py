@@ -2,7 +2,7 @@
 # value _ 3 4 5 0 9
 #
 # result _ z_ c... v...
-# resultList _ l_ r..
+# resultList _ l_ ?
 # print r..
 #
 # c, v _  z_ 0r...

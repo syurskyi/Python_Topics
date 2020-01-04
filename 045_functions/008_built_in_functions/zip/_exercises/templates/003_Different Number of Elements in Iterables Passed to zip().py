@@ -5,14 +5,14 @@
 # result _ z.. nL nT
 #
 # # Converting to set
-# resultSet _ set r...
-# print r.....
+# resultSet _ se. ?
+# print ?
 #
 # result _ z.. nL sL nT
 #
 # # Converting to set
-# resultSet _ set r....
-# print r.....
+# resultSet _ se. ?
+# print ?
 #
 #
 # # {(2, 'TWO'), (3, 'THREE'), (1, 'ONE')}

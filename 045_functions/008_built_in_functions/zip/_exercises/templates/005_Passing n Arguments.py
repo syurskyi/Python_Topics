@@ -1,9 +1,9 @@
 # numbers _ 1 2 3
 # letters _ 'a' 'b' 'c'
 # zipped _ z_ n.. l00
-# z.....  # Holds an iterator object
+# print z..  # Holds an iterator object
 # # <zip object at 0x7fa4831153c8>
-# ty.. z......
+# print ty.. z..
 # # <class 'zip'>
 # l_ zi0000
 # # [(1, 'a'), (2, 'b'), (3, 'c')]

@@ -6,29 +6,29 @@
 #
 # add 1 2
 # # 3
-# add1 = partial add 4
-# add1 6
+# add1 = p.. ? 4
+# ? 6
 # # 10
-# add1 10
+# ? 10
 # # 14
 #
 # # Partial is a higher order function which takes a function as input (like map and filter) but it also
 # # returns a function that can be used in the same way as any other function in your program.
 #
-# l.. m.. a..1 |1 2 3 4 5|||
+# l.. m.. ? |1 2 3 4 5
 # # [5, 6, 7, 8, 9]
-# seven = p.... a..1 3
-# se...
+# seven = p.... ? 3
+# print ?
 # # 7
 #
 # # We can also use partial on object methods, for e.g. to generate a list of default string
 # #
 #
 # str1 _ "Hello, Python"
-# helloStr _ p... s..1.re___ "Python"
-# helloStr "Tutorialspoint
+# helloStr _ p... ?.re___ "Python"
+# print ? "Tutorialspoint
 # # 'Hello, Tutorialspoint'
-# helloStr "Java
+# print ? "Java
 # # 'Hello, Java'
 #
 # # Partial function application is a very useful tools especially where you need to apply a range of different

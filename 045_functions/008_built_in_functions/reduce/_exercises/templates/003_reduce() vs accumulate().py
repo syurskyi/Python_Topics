@@ -2,7 +2,7 @@
 # # using reduce() and accumulate()
 #
 # # importing itertools for accumulate()
-# ____ i.....
+# ____ i..
 #
 # # importing functools for reduce()
 # ____ f...s
@@ -12,11 +12,11 @@
 #
 # # priting summation using accumulate()
 # print "The summation of list using accumulate is :"; e.._""
-# print l... i______.acc_____ lis; l.... x y  x+y
+# print l... i____.ac__ ? l___ x y  ?+?
 #
 # # priting summation using reduce()
 # print "The summation of list using reduce is :"; e.._""
-# print f____.r..... l...... x y x+y lis
+# print f____.r.. l___ x y ?+? ?
 #
 # # Output:
 # #
