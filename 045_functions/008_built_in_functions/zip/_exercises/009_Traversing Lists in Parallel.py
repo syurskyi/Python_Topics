@@ -1,6 +1,6 @@
 # letters _ 'a' 'b' 'c'
 # numbers _ 0 1 2
-# ___ l, n i_ z_ l... n...
+# ___ l, n __ z_ ? ?
 #     print _*Letter: |l|
 #     print _*Number: |n|
 #

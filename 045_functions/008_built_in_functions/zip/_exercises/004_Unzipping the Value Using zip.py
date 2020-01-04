@@ -1,13 +1,13 @@
-coordinate _ 'x' 'y' 'z'
-value _ 3 4 5 0 9
+coordinate = ['x', 'y', 'z']
+value = [3, 4, 5, 0, 9]
 
-result _ z_ c... v...
-resultList _ l_ ?
-print r..
+result = zip(coordinate, value)
+resultList = list(result)
+print(resultList)
 
-c, v _  z_ 0r...
-print 'c =' c
-print 'v =' v
+c, v =  zip(*resultList)
+print('c =', c)
+print('v =', v)
 
 # [('x', 3), ('y', 4), ('z', 5)]
 # c = ('x', 'y', 'z')

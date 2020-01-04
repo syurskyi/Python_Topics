@@ -3,7 +3,7 @@
 #
 # result _ z_ c... v...
 # resultList _ l_ ?
-# print r..
+# print ?
 #
 # c, v _  z_ 0r...
 # print 'c =' c
