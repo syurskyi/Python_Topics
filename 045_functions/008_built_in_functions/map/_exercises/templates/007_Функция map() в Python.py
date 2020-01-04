@@ -6,16 +6,16 @@
 #
 # old_list _ '1' '2' '3' '4' '5' '6' '7'
 # new_list _ ||
-# ___ item i_ o.._l..
-# n.._l__.app.. i00 item
+# ___ item __ ?1
+# ?2.ap.. i.. item
 # print n.._l...
 # # [1, 2, 3, 4, 5, 6, 7]
 #
 # # Тот же эффект мы можем получить, применив функцию map:
 #
 # old_list _ '1' '2' '3' '4' '5' '6' '7'
-# new_list = l... m.. i00 o.._l..
-# print  n.._l..
+# new_list = l... m.. i00 ?1
+# print  ?2
 #
 # # [1, 2, 3, 4, 5, 6, 7]
 #
@@ -23,19 +23,19 @@
 # # с функциями созданными пользователем:
 #
 # ___ miles_to_kilometers num_miles
-#     r_ n.._m.. * 1.6
+#     r_ ? * 1.6
 #
 # mile_distances _ 1.0 6.5 17.4 2.4 9
-# kilometer_distances _ l.. m.. m.._t._k. m._d..
-# print k__
+# kilometer_distances _ l.. m.. m_t.. m_d..
+# print ?
 # # [1.6, 10.4, 27.84, 3.84, 14.4]
 #
 # # А теперь то же самое, только используя lambda выражение:
 #
 # mile_distances _ 1.0 6.5 17.4 2.4 9
-# kilometer_distances _ l.. m.. l... x x * 1.6 mile_distances
+# kilometer_distances _ l.. m.. l... x ? * 1.6 ?
 #
-# print kilometer_distances
+# print ?
 # # [1.6, 10.4, 27.84, 3.84, 14.4]
 #
 # # Функция map может быть так же применена для нескольких списков, в таком случае функция-аргумент должна принимать
@@ -44,8 +44,8 @@
 # l1 _ 1 2 3
 # l2 _ 4,5,6
 #
-# new_list _ l.... m.. l..... x y x + y l1 l2
-# print n_____
+# new_list _ l.... m.. l..... x y ? + ? ? ?
+# print ?
 # # [5, 7, 9]
 #
 # # Если же количество элементов в списках совпадать не будет, то выполнение закончится на минимальном списке:
@@ -53,9 +53,9 @@
 # l1 = 1 2 3
 # l2 = 4 5
 #
-# new_list _ l.. m.. l.. x y + y l1 l2
+# new_list _ l.. m.. l.. x y + y ? ?
 #
-# print n_____
+# print ?
 # # [5,7]
 #
 # # Функция filter() в Python:
