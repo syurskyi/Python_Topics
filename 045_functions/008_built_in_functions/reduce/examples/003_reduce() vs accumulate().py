@@ -8,7 +8,7 @@ import itertools
 import functools
 
 # initializing list
-lis = [ 1, 3, 4, 10, 4 ]
+lis = [ 1, 3, 4, 10, 4]
 
 # priting summation using accumulate()
 print ("The summation of list using accumulate is :",end="")
