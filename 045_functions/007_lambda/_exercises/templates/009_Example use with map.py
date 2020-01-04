@@ -1,8 +1,7 @@
-# # Program to double each item in a list using map()
+# ____ ti00 ______ ti00
+# _____ *factorial(999)", "____ ma.. ______ fact..*; nu.._10
+# # 0.0013087529951008037
 #
-# my_list _ [1, 5, 4, 6, 8, 11, 3, 12]
-#
-# new_list _ l00(m00|l_____ x;l x * 2; m0_l0||
-#
-# # Output: [2, 10, 8, 12, 16, 22, 6, 24]
-# print n00_l00
+# ____ ma.. ______ fac..
+# _____ l_____ fac.. 999 nu.._10
+# # 0.0012704220062005334

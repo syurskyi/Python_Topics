@@ -3,12 +3,12 @@
 #
 # # Return double of n
 # ___ addition n
-# 	r_ n + n
+# 	r_ ? + ?
 #
 # # We double all numbers using map()
 # numbers _ 1 2 3 4
-# result _ m..|a.... n....
-# print l... result
+# result _ m.. a.... n....
+# print l... ?
 #
 # # Output :
 # #
@@ -16,18 +16,17 @@
 #
 # # Double all numbers using map and lambda
 #
-# numbers _ 1 2 , 4
-# result _ m..|l..... x; x + x n....
-# print l... result
-#
+# numbers _ 1 2 3 4
+# result _ m.. l____ x ? + ? ?
+# print l... ?
 #
 # # Add two lists using map and lambda
 #
 # numbers1 = 1 2 3
 # numbers2 = 4 5 6
 #
-# result _ m..|l.... x; y; x + y; n.1 n.2
-# print l.. result
+# result _ m.. l.... x y ? + ? ?1 ?2
+# print l.. ?
 #
 # # Output :
 # #
@@ -37,8 +36,8 @@
 # l _ 'sat' 'bat' 'cat' 'mat'
 #
 # # map() can listify the list of strings individually
-# test = l..|m..|l... l
-# print test
+# test = l.. m.. li.. ?
+# print ?
 #
 # # Output :
 # #

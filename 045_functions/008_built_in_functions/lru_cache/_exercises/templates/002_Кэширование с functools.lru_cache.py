@@ -5,12 +5,12 @@
 # f.... f.... ______ l.._c..
 #
 #
-# 0l..._c... m...s..._24
+# ? ? m...s..._24
 # ___ get_webpage module
 #     """
 #     Поиск странице модуля
 #     """
-#     webpage _ "https://docs.python.org/3/library/{}.html".f... module
+#     webpage _ "https://docs.python.org/3/library/{}.html".f... m...
 #
 #     t__
 #         w___ url___.r___.url___|w_____| a. r_____
@@ -18,11 +18,10 @@
 #     e____ url___.er__.HT0000
 #         r_ N__
 #
-#
-# i_ ..... __  __m___
+# __ ______ __ ______
 #     modules _ |'functools' 'collections' 'os' 'sys'|
-#     ___ module i_ m00000
-#         page _ g.._w.. module
+#     ___ module __ ?
+#         page _ g.._w.. m..
 #
-#         i_ page
-#             print *|| страница модуля найдена!*.f... module
+#         __ ?
+#             print *@ страница модуля найдена!*.f... m..
