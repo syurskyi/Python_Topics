@@ -3,36 +3,36 @@
 #
 # # initializing lists
 #
-# name _  "Manjeet" "Nikhil" "Shambhavi" "Astha"
-# roll_no _  4 1 3 2
-# marks _  40 50 60 70
+# name _  "Manjeet" "Nikhil" "Shambhavi" "Astha"  # list
+# roll_no _  4 1 3 2                              # list
+# marks _  40 50 60 70                            # list
 #
 # # using zip() to map values
-# mapped _ z_(n... r... m...
+# mapped _ z_ ? ? ?
 #
 # # converting values to print as list
-# mapped _ l_ m..
+# mapped _ l_ ?
 #
 # # printing resultant values
-# print The zipped result is : "; e.._""
-# print m..
+# print The zipped result is : " e.._""
+# print ?
 #
 # print "//"
 #
 # # unzipping values
-# namz, roll_noz, marksz _ z_ 0m..
+# namz, roll_noz, marksz _ z_ 0?
 #
-# print The unzipped result: //"; e.._""
+# print The unzipped result: //" e.._""
 #
 # # printing initial lists
-# print The name list is : "; e.._""
-# print n..z
+# print The name list is : " e.._""
+# print ?1
 #
-# print The roll_no list is : "; e.._""
-# print r....z
+# print The roll_no list is : " e.._""
+# print ?2
 #
-# print The marks list is : "; e.._""
-# print  m....
+# print The marks list is : " e.._""
+# print  ?3
 #
 #
 # # The zipped result is : [('Manjeet', 4, 40), ('Nikhil', 1, 50),

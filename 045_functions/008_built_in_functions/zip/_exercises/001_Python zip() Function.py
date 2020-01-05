@@ -1,11 +1,9 @@
-a = ("John", "Charles", "Mike")
-b = ("Jenny", "Christy", "Monica")
-
-x = zip(a, b)
-print(list(x))
-
-a = ("John", "Charles", "Mike")
-b = ("Jenny", "Christy", "Monica", "Vicky")
-
-x = zip(a, b)
-print(list(x))
+# a _ "John" "Charles" "Mike"
+# b _ "Jenny" "Christy" "Monica"
+#
+# x _ z.. ? ?
+#
+# a _ "John" "Charles" "Mike"
+# b _ "Jenny" "Christy" "Monica" "Vicky"
+#
+# x _ z.. ? ?

@@ -2,14 +2,14 @@
 # # zip()
 #
 # # initializing list of players.
-# players _  "Sachin" "Sehwag" "Gambhir" "Dravid" "Raina"
+# players _  "Sachin" "Sehwag" "Gambhir" "Dravid" "Raina"   # list
 #
 # # initializing their scores
-# scores _ 100 15 17 28 43
+# scores _ 100 15 17 28 43                                  # list
 #
 # # printing players and scores.
-# ___ pl, sc i_ z_ p... s..
-# 	print Player : //	 Score : //" / pl sc
+# ___ pl, sc __ z_ ? ?
+# 	print Player : @ Score : @* ? ?    # string | digit
 #
 # # Output:
 # #
