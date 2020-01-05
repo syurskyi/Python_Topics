@@ -1,22 +1,22 @@
 # -*- coding: utf-8 -*-
-
+#
 # Access restriction using decorator
 
-# passw _ i_ Введите пароль:
-#
-# ___ test_passw p
-#     ___ deco f
-#         i_ p == "10":  # Сравниваем пароли
-#             r_ f
-#         e_
-#             r_ l_ "Доступ закрыт"
-#
-#     r_ d_  # Возвращаем функцию-декоратор
-#
-# _t...
-# ___ func
-#     r___ Доступ открыт
-#
-# print f_  # Вызываем функцию
-#
-# print()
+passw = input('Введите пароль:')
+
+def test_passw(p):
+    def deco(f):
+        if p == "10":  # Сравниваем пароли
+            return f
+        else:
+            return lambda: "Доступ закрыт"
+
+    return deco  # Возвращаем функцию-декоратор
+
+@test_passw(passw)
+def func():
+    return 'Доступ открыт'
+
+print(func)  # Вызываем функцию
+
+print()

@@ -1,17 +1,17 @@
-# -*- coding: utf-8 -*-
+# # -*- coding: utf-8 -*-
 
-# Specifying multiple decorators
+# # Specifying multiple decorators
 
 # ___ deco1 f
 #     print("Вызвана функция deco1()")
-#     r_ f
+#     r_ ?
 # ___ deco2 f
 #     print("Вызвана функция deco2()")
-#     r_ f
-# _d..1
-# _d..2
+#     r_ ?
+# ??
+# ??
 # ___ func x
-#     r_  x = |0|.f_ x
-# print f_ 10
+#     r_ *x = @*.f.. x
+# print ? 10
 #
 # print()

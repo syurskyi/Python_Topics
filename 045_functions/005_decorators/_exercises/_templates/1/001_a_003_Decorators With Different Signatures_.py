@@ -1,25 +1,25 @@
-#  Decorators With Different Signatures
-# shout example
+# #   Decorators With Different Signatures
+# # shout example
 
 # ___ shout fn
-#     ___ wrapper _a... __k...
-#         r_ fn _a... __k____|.u_
-#     r_ wr__
+#     ___ wrapper $ $$
+#         r_ ? $ $$|.up..
+#     r_ ?
 #
-# _s....
+# ??
 # ___ greet name
-#     r_ f"Hi, I'm |n..|."
+#     r_ _*Hi, I'm |?.
 #
-# _s....
+# ??
 # ___ order main side
-#     r_ _"Hi, I'd like the |m..|, with a side of |s..|, please."
+#     r_ _*Hi, I'd like the |m.. , with a side of |s.. , please.*
 #
-# _s...
+# ??
 # ___ lol
 #     r_ "lol"
 #
-# print greet("todd")
-# print(order(side_"burger" main_"fries"))
-# print(lol())
+# print g.. "todd"
+# print o.. si.._"burger" ma.._"fries"))
+# print lo.
 #
 # print()

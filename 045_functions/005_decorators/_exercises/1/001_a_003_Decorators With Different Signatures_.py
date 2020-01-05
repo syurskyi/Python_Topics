@@ -1,25 +1,25 @@
 #  Decorators With Different Signatures
 # shout example
 
-# ___ shout fn
-#     ___ wrapper _a... __k...
-#         r_ fn _a... __k____|.u_
-#     r_ wr__
-#
-# _s....
-# ___ greet name
-#     r_ f"Hi, I'm |n..|."
-#
-# _s....
-# ___ order main side
-#     r_ _"Hi, I'd like the |m..|, with a side of |s..|, please."
-#
-# _s...
-# ___ lol
-#     r_ "lol"
-#
-# print greet("todd")
-# print(order(side_"burger" main_"fries"))
-# print(lol())
-#
-# print()
+def shout(fn):
+    def wrapper(*args, **kwargs):
+        return fn(*args, **kwargs).upper()
+    return wrapper
+
+@shout
+def greet(name):
+    return f"Hi, I'm {name}."
+
+@shout
+def order(main, side):
+    return f"Hi, I'd like the {main}, with a side of {side}, please."
+
+@shout
+def lol():
+    return "lol"
+
+print(greet("todd"))
+print(order(side="burger", main="fries"))
+print(lol())
+
+print()

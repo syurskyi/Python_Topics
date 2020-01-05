@@ -2,16 +2,16 @@
 
 # Specifying multiple decorators
 
-# ___ deco1 f
-#     print("Вызвана функция deco1()")
-#     r_ f
-# ___ deco2 f
-#     print("Вызвана функция deco2()")
-#     r_ f
-# _d..1
-# _d..2
-# ___ func x
-#     r_  x = |0|.f_ x
-# print f_ 10
-#
-# print()
+def deco1(f):
+    print("Вызвана функция deco1()")
+    return f
+def deco2(f):
+    print("Вызвана функция deco2()")
+    return f
+@deco1
+@deco2
+def func(x):
+    return 'x = {0}'.format(x)
+print(func(10))
+
+print()

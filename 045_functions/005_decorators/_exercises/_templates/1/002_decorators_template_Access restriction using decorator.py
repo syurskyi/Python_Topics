@@ -1,22 +1,22 @@
-# -*- coding: utf-8 -*-
+# # -*- coding: utf-8 -*-
 
-# Access restriction using decorator
+# # Access restriction using decorator
 
 # passw _ i_ Введите пароль:
 #
 # ___ test_passw p
 #     ___ deco f
-#         i_ p == "10":  # Сравниваем пароли
-#             r_ f
-#         e_
-#             r_ l_ "Доступ закрыт"
+#         __ p __ "10"  # Сравниваем пароли
+#             r_
+#         ____
+#             r_ l____ "Доступ закрыт"
 #
-#     r_ d_  # Возвращаем функцию-декоратор
+#     r_ ?  # Возвращаем функцию-декоратор
 #
-# _t...
+# ?? p..
 # ___ func
 #     r___ Доступ открыт
 #
-# print f_  # Вызываем функцию
+# print ?  # Вызываем функцию
 #
 # print()
