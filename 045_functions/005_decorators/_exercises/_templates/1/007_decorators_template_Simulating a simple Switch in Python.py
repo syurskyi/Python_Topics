@@ -2,26 +2,26 @@
 # Simulating a simple Switch in Python
 
 # ___ dow_switch_fn dow
-#     __ dow __ 1
-#         fn _ l____: print Monday
-#     e__ dow __ 2
-#         fn _ l____: print Tuesday
-#     e__ dow __ 3
-#         fn _ l____: print Wednesday
-#     e__ dow __ 4:
-#         fn _ l____: print Thursday
-#     e___ dow __ 5:
-#         fn _ l____: print Friday
-#     e___ dow __ 6:
-#         fn _ l____: print Saturday
-#     e___ dow == 7:
-#         fn = l____: print Sunday
-#     e___
-#         fn = l____: print Invalid day of week
+#     __ ? __ 1
+#         fn _ l____ print Monday
+#     ___ ? __ 2
+#         ? _ l____ print Tuesday
+#     ___ ? __ 3
+#         ? _ l____ print Wednesday
+#     ___ ? __ 4
+#         ? _ l____ print Thursday
+#     ____ ? __ 5
+#         ? _ l____ print Friday
+#     ____ ? __ 6
+#         ? _ l____ print Saturday
+#     ____ ? __ 7
+#         ? _ l____ print Sunday
+#     ____
+#         ? _ l____ print Invalid day of week
 #
-#     r_ fn()
+#     r_ ?
 #
-# d.......... 1
-# d 100
+# ? 1
+# ? 100
 #
 # print()
