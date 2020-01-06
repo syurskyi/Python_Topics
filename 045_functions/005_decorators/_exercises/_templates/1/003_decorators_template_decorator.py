@@ -1,6 +1,6 @@
-# -*- coding: utf-8 -*-
+# # -*- coding: utf-8 -*-
 
-# decorator
+# # decorator
 #
 # ___ decorator fn
 #     """Пример декоратора"""
