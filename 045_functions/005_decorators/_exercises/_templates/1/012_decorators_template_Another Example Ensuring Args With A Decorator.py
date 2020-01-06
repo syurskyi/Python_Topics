@@ -1,18 +1,18 @@
 # ######################################################################################################################
 # Another Example Ensuring Args With A Decorator
-# f_ f_ i_ w_
+# ____ f_ _____ w_
 #
 # ___ ensure_no_kwargs fn
-#     _wraps fn
-#     ___ wrapper _a.. __k..
+#     _w__ ?
+#     ___ wrapper $ $$
 #         __ k..
 #             ra___ V_E_ No kwargs allowed! sorry :(")
-#         r_ fn _a.. __k..
-#     r_ w..
+#         r_ ? $ $$
+#     r_ ?
 #
-# _e...
+# ??
 # ___ greet name
-#     print _"hi there |n..|"
+#     print _"hi there |n.. "
 #
 # greet name_"Tony"
 #
