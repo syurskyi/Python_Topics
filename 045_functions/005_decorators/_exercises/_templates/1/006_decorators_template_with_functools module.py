@@ -1,29 +1,30 @@
 # ######################################################################################################################
 # We can use a special function in the functools module, called wraps. In fact, that function is a decorator itself!
 
-# f_ f_ i_ w_
+# ____ f_ ______ w_
 #
 # ___ counter fn
 #     count _ 0
 #
-#     _wraps fn
-#     ___ inner _a.. __k...
+#     _w.. ?
+#     ___ inner $ $$
 #         no__
 #         co__
 #         co__ += 1
-#         print("|0| was called |1| times".f_ fn.__n_ co__
+#         print("@ was called @ times".f... f.. -n co__
 #
-#     r_ i..
+#     r_ ?
 #
-# _c..
-# ___ add a| int__ b| int _ 10 __ int
+# ??
+# ___ add a| in. b in. _ 10 __ int
 #     """
 #     returns sum of two integers
 #     """
 #     r_ a + b
 #
-# i_.g_ add
-# i_.s_ add
-# i_.s_ add.p_
+# import inspect
+# ____.g_ add
+# ____.s_ add
+# ____.s_ add.p_
 #
 # print()
