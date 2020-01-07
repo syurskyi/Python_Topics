@@ -1,27 +1,27 @@
 # -*- coding: utf-8 -*-
 
-# ___ benchmark_func
-#     im_ ti00
+# ___ benchmark func
+#     _____ ti..
 #
-#     ___ wrapper _args __kwargs
-#         start _ ti00.ti00__
-#         return_value _ f000 _ar00 __kw000
-#         end _ ti00.ti00__
-#         print |*| Время выполнения: || секунд.*;f__ end - start
-#         r__ re00_va000
+#     ___ wrapper $ $$
+#         start _ ti__.ti__
+#         return_value _ ? $ $$
+#         end _ ti__.ti__
+#         print |*| Время выполнения: @ секунд. f... e.. - s..
+#         r__ re..
 #
-#     r_ wr000
+#     r_ ?
 #
 #
-# _b0000
+# ??
 # ___ fetch_webpage url
-#     im_ req000
-#     webpage _ req000.g00 url
-#     r_ we000.t__
+#     _____ req...
+#     webpage _ req__.g00 ?
+#     r_ ?.t__
 #
 #
-# webpage _ fe000_we000 https://google.com
-# print webpage
+# webpage _ ? https://google.com
+# print ?
 #
 #
 # # [*] Время выполнения: 1.4475083351135254 секунд.
