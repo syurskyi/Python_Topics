@@ -7,7 +7,7 @@
 # user _ 'username': 'jose123', 'access_level': 'guest'  # dictionary
 #
 # ___ user_has_permission func
-#     _f__.w_ ?
+#     ??.? ?
 #     ___ secure_func
 #         __ u__.g_ 'access_level'| __ 'admin'
 #             r_ ?
