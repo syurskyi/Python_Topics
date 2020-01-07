@@ -2,21 +2,21 @@
 
 # ___ enforce types
 #     ___ decorator f
-#         ___ new_func _a.. __k..
+#         ___ new_func $ $$
 #             # convert args into something mutable
-#             newargs _ ||
+#             newargs _      # list
 #             ___  a t __ z_ args types
-#                newargs.a_(t(a))  # feel free to have more elaborated convertion
-#             r_ f(_newargs __k..
-#         r_ n..
-#     r_ d..
+#                n__.a_ t a  # feel free to have more elaborated convertion
+#             r_ f $n... $$
+#         r_ ?
+#     r_ ?
 #
-# _e... st in
+# ?? st in
 # ___ repeat_msg msg times
-#     ___ time __ r_ times
+#     ___ time __ ra.. ti..
 #         print m..
 #
-# _e.. fl_ fl_
+# ?? fl_ fl_
 # ___ divide a b
 #     print a/b
 # # repeat_msg("hello", '5')
