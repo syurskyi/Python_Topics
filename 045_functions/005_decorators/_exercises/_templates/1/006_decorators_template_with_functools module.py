@@ -6,7 +6,7 @@
 # ___ counter fn
 #     count _ 0
 #
-#     _w.. ?
+#     ?? ?
 #     ___ inner $ $$
 #         no__
 #         co__
