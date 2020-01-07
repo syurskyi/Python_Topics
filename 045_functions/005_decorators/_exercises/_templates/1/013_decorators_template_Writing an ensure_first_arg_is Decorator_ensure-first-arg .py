@@ -5,7 +5,7 @@
 #
 # ___ ensure_first_arg_is val
 #     ___ inner fn
-#         _w.. ?
+#         ?? ?
 #         ___ wrapper $ $$
 #             __ a.. an_ args 0| != va.
 #                 r_ _ First arg needs to be |val
