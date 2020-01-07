@@ -4,7 +4,7 @@
 # ____ ti__ ______ ti_
 #
 # ___ speed_test fn
-#     _w__ ?
+#     ?? ?
 #     ___ wrapper $ $$
 #         start_time _ ti..
 #         result _ ? $ $$
