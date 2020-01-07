@@ -8,7 +8,7 @@
 #
 # ___ user_has_permission access_level
 #     ___ my_decorator f..
-#         f__.w__ ?
+#         ??.? ?
 #         ___ secure_func panel
 #             __ u__.g__ 'access_level'| __ access_level
 #                 r_ f.. pa.
