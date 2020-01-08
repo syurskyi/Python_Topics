@@ -5,20 +5,20 @@
 # #     return wrapper_do_twice
 #
 # ___ do_twice func
-#     ___ wrapper_do_twice _a_ __k__
-#         f00 _a__ __k__
-#         f00 _a__ __k__
-#     r_ w00
+#     ___ wrapper_do_twice $ $$
+#         ? $ $$
+#         ? $ $$
+#     r_ ?
 #
-# _do_00
+# ??
 # ___ return_greeting name
 #     print Creating greeting
-#     r_ _ Hi |name|       # new formating
+#     r_ _ Hi |name       # new formating
 #
-# hi_adam _ r00_g00 Adam
+# hi_adam _ ? Adam
 # # Creating greeting
 # # Creating greeting
-# print hi_adam
+# print ?
 # # None
 #
 # # Oops, your decorator ate the return value from the function.
@@ -29,19 +29,19 @@
 # # To fix this, you need to make sure the wrapper function returns the return value of the decorated function.
 #
 # ___ do_twice func
-#     ___ wrapper_do_twice _a__ __k__
-#         f__ _a__ __k__
-#         r_ f00 _a__ __k__
-#     r_ w00
+#     ___ wrapper_do_twice $ $$
+#         ? $ $$
+#         r_ $ $$ $ $$
+#     r_ ?
 #
-# _do_00
+# $
 # ___ return_greeting name
 #     print Creating greeting
-#     r_ _ Hi |name|              # new formating
+#     r_ _ Hi |name             # new formating
 #
-# hi_adam _ r00_g00 Adam
+# hi_adam _ ? Adam
 #
-# r00_g00 Adam
+# re... Adam
 # # Creating greeting
 # # Creating greeting
 # # 'Hi Adam'

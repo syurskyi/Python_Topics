@@ -1,25 +1,25 @@
 # ____ fun__
 #
 # ___ count_calls func
-#     _fu__.wr__ func
-#     ___ wrapper_count_calls _args __kw__
-#         w_c_c_.num_calls += 1
-#         print f Call |w_c_c_.num_calls| of |f00.__n_!r|*|  # new format
-#         r_ f00 _a_ __k_
-#     w_c_c.num_calls _ 0
-#     r_ w_c_c_
+#     ??.? ?
+#     ___ wrapper_count_calls $ $$
+#         w___.num_calls += 1
+#         print _*Call |w__.nu._c.| of |?. -n!r|*|  # new format
+#         r_ ? $ $$
+#     w___.nu._c _ 0
+#     r_ w___
 #
-# _c_c
+# ??
 # ___ say_whee
 #     print Whee!
 #
-# say_whee
+# ?
 # # Call 1 of 'say_whee'
 # # Whee!
 #
-# say_whee
+# ?
 # # Call 2 of 'say_whee'
 # # Whee!
 #
-# say_whee.num_calls
+# ?.n._c.
 # # 2

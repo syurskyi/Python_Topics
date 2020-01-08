@@ -6,13 +6,13 @@
 #     выполнение декорируемой функции.
 #     """
 #     _____ ti00
-#     ___ wrapper 0a__ 00k__
-#         t _ ti00.cl00||
-#         res _ f00 0a__ 00k__
-#         print f00.__n__ ti00.c00|| - t
-#         r_ r00
+#     ___ wrapper $ $$
+#         t _ ti__.cl..
+#         res _ ? $ $$
+#         print ?. -n ti__.cl..  - t
+#         r_ ?
 #
-#     r_ w00
+#     r_ ?
 #
 #
 # ___ logging func
@@ -21,12 +21,12 @@
 #     (хорошо, он просто выводит вызовы, но тут могло быть и логирование!)
 #     """
 #
-#     ___ wrapper 0a__ 00k__
-#         res = f00 0a__ 00k__
-#         print f00.__n__ a__ k__
-#         r_ r00
+#     ___ wrapper $ $$
+#         res = ? $ $$
+#         print ?. -n a.. k..
+#         r_ ?
 #
-#     r_ w00
+#     r_ ?
 #
 #
 # ___ counter func
@@ -35,21 +35,21 @@
 #     декорируемой функции.
 #     """
 #
-#     ___ wrapper 0a__ 00k__
-#         w00.co00 += 1
-#         res _ f00 0a__ 00k__
-#         print *|0| была вызвана: |1|x*.f____|f00.__n__ w000.c00||
-#         r_ r00
+#     ___ wrapper $ $$
+#         w__.co__ += 1
+#         res _ ? $ $$
+#         print *@ была вызвана: @x*.f__ ?. -n w__.co__
+#         r_ ?
 #
-#     w00.c00 _ 0
-#     r_ w00
+#     w__.c__ _ 0
+#     r_ ?
 #
 #
 # 0b___
 # 0ll___
 # 0c___
 # ___ reverse_string string
-#     r_ st_ rev___ string
+#     r_ st_ rev___ str..
 #
 #
 # print r000 А роза упала на лапу Азора
@@ -86,14 +86,14 @@
 # ___ get_random_futurama_quote
 #     conn _ htt__.HTTPConn00 slashdot.org:80
 #     conn.req___  HEAD /index.html
-#     ___ key value i_ conn.getresponse||.getheaders||
-#         i_ k00.startsw00 x-b o_ k00.startsw00 x-f
-#             r__ value
+#     ___ key value __ conn.getresponse||.getheaders||
+#         i_ k__.startsw00 x-b o_ k00.startsw00 x-f
+#             r__ va..
 #     r_  Эх, нет... не могу!
 #
 #
-# print get_random_futurama_quote
-# print get_random_futurama_quote
+# print ?
+# print ?
 #
 # # outputs:
 # # get_random_futurama_quote () {}

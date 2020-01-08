@@ -5,7 +5,7 @@
 #     print foo
 #
 #
-# print f00.__n__
+# print ?. -n
 #
 # # выведет: foo
 #
@@ -13,17 +13,17 @@
 # ___ bar func
 #     ___ wrapper
 #         print  bar
-#         r_ f00
+#         r_ ?
 #
-#     r_ w000
+#     r_ ?
 #
 #
-# _b__
+# ??
 # ___ foo
 #     print foo
 #
 #
-# print f00.__n__
+# print ?. -n
 # # выведет: wrapper
 #
 # # "functools" может нам с этим помочь
@@ -34,18 +34,18 @@
 # ___ bar func
 #     # Объявляем "wrapper" оборачивающим "func"
 #     # и запускаем магию:
-#     _f00.w00 func
+#     ??.? ?
 #     ___ wrapper
 #         print bar
-#         r__ f00
+#         r__ ?
 #
-#     r_ w00
+#     r_ ?
 #
 #
-# _b00
+# ??
 # ___ foo
-#     print foo
+#     print ?
 #
 #
-# print f00.__n__
+# print ?. -n
 # # выведет: foo

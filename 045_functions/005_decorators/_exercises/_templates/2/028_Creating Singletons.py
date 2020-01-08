@@ -1,21 +1,21 @@
-# i_ fun____
+# ______ fu____
 #
-# ___ singleton cls
+# ___ singleton cl.
 #     """Make a class a Singleton class (only one instance)"""
-#     _f__.w__ cls
-#     ___ wrapper_singleton _a___ __k__
-#         i_ n__ w00.ins___
-#             wr000.ins___ _ c__ _a__ __k__
-#         r_ wr000.ins__
-#     w00.ins__ _ N___
-#     r_ w000
+#     ??.? cl.
+#     ___ wrapper_singleton $ $$
+#         __ n__ ?.ins___
+#             ?.ins___ _ cl_ $ $$
+#         r_ ?.ins__
+#     ?.ins__ _ N___
+#     r_ ?
 #
-# _s00000
+# ?
 # c___ TheOne:
 #     pass
 #
-# first_one _ TheOne
-# another_one _ TheOne
+# first_one _ ?
+# another_one _ ?
 #
 # print id first_one
 # # 140094218762280

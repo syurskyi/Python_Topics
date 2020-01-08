@@ -5,13 +5,13 @@
 #     ___ second_child
 #         r_ Call me Liam
 #
-#     i_ num __ 1
-#         r_ f00_c00
-#     e___
-#         r_ s00
+#     __ ? __ 1
+#         r_ f__
+#     ___
+#         r_ s__
 #
-# first _ parent 1
-# second _ parent 2
+# first _ ? 1
+# second _ ? 2
 #
 # print first
 # # <function parent.<locals>.first_child at 0x7f599f1e2e18>

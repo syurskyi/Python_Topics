@@ -1,21 +1,21 @@
 # ___ generate_power exponent
 #     ___ decorator f
-#         ___ inner _args
-#             result _ f _a_
-#             r_ exponent**result
-#         r_ i00
-#     r_ d00
+#         ___ inner $
+#             result _ ? $
+#             r_ e..**r00
+#         r_ ?
+#     r_ ?
 #
 #
-# _g00_p00 2
+# ??
 # ___ raise_two n
-#     r_ n
+#     r_ ?
 #
-# print raise_two 7
+# print ? 7
 #
 #
-# _g00_p00 3
+# ?? 3
 # ___ raise_three n
-#     r_ n
+#     r_ ?
 #
 # print raise_two 5

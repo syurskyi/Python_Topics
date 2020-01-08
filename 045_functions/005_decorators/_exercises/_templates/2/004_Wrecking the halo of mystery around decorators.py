@@ -3,26 +3,26 @@
 # ___ bread func
 #     ___ wrapper
 #         print </------\>
-#         f___
+#         ?
 #         print <\______/>
 #
-#     r_ w___
+#     r_ ?
 #
 #
 # ___ ingredients func
 #     ___ wrapper
 #         print #помидоры#
-#         f___
+#         ?
 #         print ~салат~
 #
-#     r_ w___
+#     r_ ?
 #
 #
 # ___ sandwich food_ --ветчина--
 #     print food
 #
 #
-# sandwich__
+# ?
 # # выведет: --ветчина--
 # sandwich _ bread _ ingredients _ sandwich
 # sandwich__
