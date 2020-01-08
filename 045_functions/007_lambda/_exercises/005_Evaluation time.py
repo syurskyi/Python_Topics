@@ -1,21 +1,21 @@
 # -*- coding: utf-8 -*-
 
-def wrap(n):
-    def f():
-        print(n)
-    return f
-
-numbers = ['one', 'two', 'three']
-funcs = []
-for n in numbers:
-    funcs.append(wrap(n))
-
-for f in funcs:
-    f()
-
-# one
-# two
-# three
+# ___ wrap n
+#     ___ f
+#         print ?
+#     r_ ?
+#
+# numbers _ 'one', 'two', 'three'
+# funcs _    # list
+# ___ n __ ?
+#     f__.ap.. w.. n
+#
+# ___ f __ f...
+#     ?
+#
+# # one
+# # two
+# # three
 #
 # # В нормальной функции n вычисляется во время определения, в строке 9, когда функция добавляется в список:
 # # funcs.append (wrap (n)).

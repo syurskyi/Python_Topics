@@ -2,7 +2,7 @@
 #
 # my_list _ [1, 5, 4, 6, 8, 11, 3, 12]
 #
-# new_list _ l00 fi00|l_____ x; |x%2 __ 0| ; m0_00||
+# new_list _ li.. f.. l_____ x |x%2 __ 0  ?   # need to be carefull with parentheses
 #
 # # Output: [4, 6, 8, 12]
-# print n00_l0
+# print ?

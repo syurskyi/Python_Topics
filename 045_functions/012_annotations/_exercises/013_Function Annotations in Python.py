@@ -64,22 +64,20 @@
 # # the python's function and function annotations.
 #
 # # Python program to print Fibonacci series
-def fib(n:'int', output:'list'=[])-> 'list':
-	if n == 0:
-		return output
-	else:
-		if len(output)< 2:
-			output.append(1)
-			fib(n-1, output)
-		else:
-			last = output[-1]
-			second_last = output[-2]
-			output.append(last + second_last)
-			fib(n-1, output)
-		return output
-print(fib(5))
-
-
+# ___ fib n i.. output l.. _||  l..0
+# 	i_ n __ 0
+# 		r_ o___
+# 	e___:
+# 		i_ le o... < 2
+# 			o___.ap.. 1
+# 			f.. n-1 o..
+# 		e___
+# 			last _ o... -1
+# 			second_last _ o... -2
+# 			o___.ap.. l... + s...
+# 			f.. n-1 o..
+# 		r_ o..
+# print ? 5
 #
 # # Output: [1, 1, 2, 3, 5]
 #
@@ -92,13 +90,21 @@ print(fib(5))
 # # the annotated arguments. The following code will print the annotations.
 #
 # # Python program to illustrate Function Annotations
-def fib(n: 'int', output: 'list') -> 'list':
-    if n == 0:
-        return output
-    else:
-        if len(output)<2:
-            output.append(1)
-
+# ___ fib n i.. output l.. ||  l...
+# 	i_ n __ 0
+# 		r_ o...
+# 	e___
+# 		i_ le_ o.... < 2
+# 			o___.ap.. 1
+# 			f.. n-1 o..
+# 		e___
+# 			last _ o .. -1
+# 			second_last _ o___ -2
+# 			o___.ap.. l.. + s...
+# 			f.. n-1 o___
+# 		r_ o___
+# print ?. -a
+#
 #
 # # 2. Using standard module pydoc : The pydoc is a standard python module that returns the documentation inside a
 # # python module(if any). It has a special help() method that provides an interactive shell to get help on any keyword,
