@@ -1,6 +1,8 @@
-﻿"""Пример использования функции chain модуля itertools"""
-
-from itertools import chain
-
-for i in chain(range(2), range(3)):
-    print(i)
+# # # -*- coding: utf-8 -*-
+#
+# """Пример использования функции chain модуля itertools"""
+#
+# _____ it.. ______ ch..
+#
+# ___ i __ c__ ra.. 2 ra.. 3
+#     print(i)
