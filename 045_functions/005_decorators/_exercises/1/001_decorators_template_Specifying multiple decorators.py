@@ -1,17 +1,17 @@
-# -*- coding: utf-8 -*-
+# # -*- coding: utf-8 -*-
 
-# Specifying multiple decorators
+# # Specifying multiple decorators
 
-def deco1(f):
-    print("Вызвана функция deco1()")
-    return f
-def deco2(f):
-    print("Вызвана функция deco2()")
-    return f
-@deco1
-@deco2
-def func(x):
-    return 'x = {0}'.format(x)
-print(func(10))
-
-print()
+# ___ deco1 f
+#     print("Вызвана функция deco1()")
+#     r_ ?
+# ___ deco2 f
+#     print("Вызвана функция deco2()")
+#     r_ ?
+# ??
+# ??
+# ___ func x
+#     r_ *x = @*.f.. x
+# print ? 10
+#
+# print()

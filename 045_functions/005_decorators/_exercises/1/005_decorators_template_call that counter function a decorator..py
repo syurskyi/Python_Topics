@@ -4,27 +4,27 @@
 # ___ counter fn
 #     count _ 0
 #
-#     ___ inner _a... __k...
+#     ___ inner $ $$
 #         no__ co__
 #         co__ += 1
-#         print('Function |0| was called |1| times'.f_fn.__n_ co__
-#         r_ fn _a.. __k..
+#         print('Function @ was called @ times'.f... fn. -n co__
+#         r_ fn $ $$
 #
-#     r_ i..
+#     r_ ?
 #
-# _c..
-# ___ mult a| float b| float _ 1 c| float _ 1) __ float
+# ??
+# ___ mult a| fl.. b fl.. _ 1 c fl.. _ 1) __ fl..   # annotation
 #     """
 #     returns the product of a, b, and c
 #     """
 #     r_ a * b * c
 #
-# mu.. 1 2 3
-# mu.. 2 2 2
+# ? 1 2 3
+# ? 2 2 2
 #
 # # Let's do a little bit of introspection on our two decorated functions:
 #
-# a__.__n_
-# m__.__n_
+# a__. -n
+# m__. -n
 #
 # print()

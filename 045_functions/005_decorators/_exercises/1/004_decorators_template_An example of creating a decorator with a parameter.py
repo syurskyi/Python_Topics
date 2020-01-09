@@ -8,27 +8,27 @@
 #     ___ cast_decorator function
 #         """Сам декоратор"""
 # 
-#         ___ decorated_function _a... __k...
-#             result _ function _a... __k..
-#             r_ type_ r..
+#         ___ decorated_function $ $$
+#             result _ fu.. $ $$
+#             r_ type_ ?
 # 
-#         r_ d.._f..
+#         r_ ?
 # 
-#     r_ c.._de..
+#     r_ ?
 # 
-# _c... float
+# ?? float
 # ___ add x y
-#     r_ x + y
+#     r_ ? + ?
 # 
-# print add 2 3
+# print ? 2 3
 # 
 # _____ dec...
 # 
-# _c... repr
-# _cast_result d_.D_
+# ?? re..
+# ?? dec_.D_
 # ___ div x y
 #     r_ x / y
 # 
-# print div 3 2
+# print ? 3 2
 # 
 # print()

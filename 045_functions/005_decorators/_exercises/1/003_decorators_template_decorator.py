@@ -1,24 +1,24 @@
-# -*- coding: utf-8 -*-
+# # -*- coding: utf-8 -*-
 
-# decorator
+# # decorator
 #
 # ___ decorator fn
 #     """Пример декоратора"""
 #
-#     ___ decorated_fn _a... __k...
+#     ___ decorated_fn $ $$
 #         """Модифицированная функция"""
 #
 #         print Decorated function says:
-#         fn _a... __k...  # вызов изначальной функции
+#         ? $ $$  # вызов изначальной функции
 #         print()
 #
-#     r_ d...
+#     r_ ?
 #
-# _d
+# ??
 # ___ hello
 #     print Hello!
 #
 # # Вызов декорированной функции
-# he...
+# ?
 #
 # print()
