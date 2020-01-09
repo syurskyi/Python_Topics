@@ -1,15 +1,17 @@
-﻿"""Пример использования функций takewhile и dropwhile модуля itertools"""
-
-from itertools import takewhile, dropwhile
-
-
-numbers = [1, 4, 6, 4, 1]
-predicate = lambda x: x < 5
-
-for value in takewhile(predicate, numbers):
-    print(value)
-
-print()
-
-for value in dropwhile(predicate, numbers):
-    print(value)
+# # # -*- coding: utf-8 -*-
+#
+# """Пример использования функций takewhile и dropwhile модуля itertools"""
+#
+# _____ it.. ______ ta.. dr..
+#
+#
+# numbers _ 1, 4, 6, 4, 1    # list
+# predicate _ l____ x ? < 5
+#
+# ___ value __ ta.. p.. n..
+#     print ?
+#
+# print()
+#
+# ___ value __ dr.. p.. n..
+#     print ?
