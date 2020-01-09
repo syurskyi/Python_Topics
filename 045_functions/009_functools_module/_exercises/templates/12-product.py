@@ -1,6 +1,8 @@
-﻿"""Пример использования функции product модуля itertools"""
-
-from itertools import product
-
-for a, b in product(range(2), range(3)):
-    print(a, b)
+# # -*- coding: utf-8 -*-
+#
+# """Пример использования функции product модуля itertools"""
+#
+# _____ it.. ______ pr..
+#
+# ___ a, b __ p__ ra..2  ra.. 3
+#     print(a, b)
