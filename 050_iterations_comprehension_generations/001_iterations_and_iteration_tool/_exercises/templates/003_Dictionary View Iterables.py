@@ -19,7 +19,7 @@
 # print n___ I
 # print n___ I
 #
-# ___ k i_ D.k.. print k e.._' '
+# ___ k __ D.k.. print k e.._' '
 #
 # # Dictionary View Iterables
 # # Ditto for values() and items() views
@@ -35,7 +35,7 @@
 # print(V)
 # print l___ V
 # print l___ D.items
-# ___ k v i_ D.i... print k v e.._' '
+# ___ k v __ D.i... print ? ? e.._' '
 # print()
 # print(D)
 #
@@ -43,7 +43,7 @@
 # print n___ I
 # print n___ I
 #
-# ___ key i_ D print k.. e.._' '
+# ___ key __ D print ? e.._' '
 #
 # # Dictionary View Iterables
 # # sorted
@@ -55,9 +55,9 @@
 # K _ D.k..
 # V _ D.v..
 #
-# ___ k i_ so.. D.k.. print k D|k e.._' '
+# ___ k __ so.. D.k.. print k D|k e.._' '
 # print()
 #
 # print(D)
 #
-# ___ k i_ so.. D print k D|k e.._' '
+# ___ k __ so.. D print k D|k e.._' '
