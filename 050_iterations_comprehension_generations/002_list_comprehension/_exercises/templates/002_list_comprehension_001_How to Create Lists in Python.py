@@ -13,9 +13,9 @@
 # # in three lines of code:
 #
 # squares _    # list
-# ___ i i_ ra.. 10
-#     s__.ap.. i * i
-# prints...
+# ___ i __ ra.. 10
+#     ?.ap.. i * i
+# print ?
 # # [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 #
 # # Here, you instantiate an empty list, squares. Then, you use a for loop to iterate over range(10). Finally,
@@ -31,11 +31,11 @@
 #
 #
 # ___ get_price_with_tax txn
-#     r_ t.. *  1 + T.._R.
+#     r_ t.. *  1 + T..
 #
 #
-# final_prices _ ma. g._p_w_t t...
-# l.. f._p...
+# final_prices _ ma. ? t...
+# l.. ?
 # # [1.1772000000000002, 25.4448, 62.467200000000005, 4.9248, 7.322400000000001]
 #
 # # Here, you have an iterable txns and a function get_price_with_tax(). You pass both of these arguments to map(),
@@ -44,8 +44,8 @@
 # # List comprehensions are a third way of making lists. With this elegant approach, you could rewrite the
 # # for loop from the first example in just a single line of code:
 #
-# squares _ i * i ___ i i_ ra.. 10
-# print s..
+# squares _ i * i ___ i __ ra.. 10
+# print ?
 # # [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 #
 # # Rather than creating an empty list and adding each element to the end, you simply define the list and its contents
@@ -66,11 +66,11 @@
 #
 #
 # ___ get_price_with_tax txn
-#     r_ t.. *  1 + T._R.
+#     r_ t.. *  1 + T..
 #
 #
-# final_prices _ g._p_ i ___ i i. t..
-# print f....
+# final_prices _ ? i ___ ? __ t..
+# print ?
 # # [1.1772000000000002, 25.4448, 62.467200000000005, 4.9248, 7.322400000000001]
 #
 # # The only distinction between this implementation and map() is that the list comprehension in Python returns
