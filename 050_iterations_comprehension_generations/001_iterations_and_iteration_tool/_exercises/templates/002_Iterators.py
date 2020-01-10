@@ -16,10 +16,10 @@
 # print R |-1
 #
 # print n___ I  # Continue taking from iterator, where left off
-# print I.__n___  # .next() becomes .__next__(), but use new next()
+# print I. -n  # .next() becomes .__next__(), but use new next()
 #
 # # The map  Iterable
-# M _ ma. ab. |-1 0 1  # map returns an iterator, not a list
+# M _ ? ab. |-1 0 1  # map returns an iterator, not a list
 # print(M)
 #
 # print n___ M  # Use iterator manually: exhausts results. hese do not support len() or indexing
@@ -30,11 +30,11 @@
 #
 # # print(next(M))
 #
-# ___ x i_ M print x  # map iterator is now empty: one pass only
+# ___ x __ M print x  # map iterator is now empty: one pass only
 #
 # M = ma. ab. |-1 0 1  # Make a new iterator to scan again
 #
-# ___ x i_ M print x  # Iteration contexts auto call next()
+# ___ x __ M print x  # Iteration contexts auto call next()
 #
 # print l___ ma. ab. |-1 0 1  # Can force a real list if needed
 #
@@ -45,24 +45,24 @@
 #
 # print l___ Z
 #
-# ___ pair i_ Z print p...  # Exhausted after one pass
+# ___ pair __ Z print p...  # Exhausted after one pass
 #
 # Z _ z.. 1 2 3| 10 20 30
 #
-# ___ pair i_ Z print p..  # Iterator used automatically or manually
+# ___ pair __ Z print p..  # Iterator used automatically or manually
 #
 # Z = z__ 2 3| 10 20 30
 # print n___ Z
 # print n___ Z
 #
 # # The filter Iterables
-# print(fi... bo.. |'spam' '' 'ni
-# print(l___ fi... bo.. |'spam' '' 'ni'
+# print(? bo.. |'spam' '' 'ni
+# print(l___ ? bo.. |'spam' '' 'ni'
 #
 # # Multiple Versus Single Pass Iterators
 # # Range
 #
-# R _ r___ 3  # range allows multiple iterators
+# R _ ? 3  # range allows multiple iterators
 #
 # # print(next(R))                       # TypeError: range object is not an iterator
 #
@@ -84,7 +84,7 @@
 # # Multiple Versus Single Pass Iterators
 # # Zip
 #
-# Z = z__ 1 2 3|; 10 11 12
+# Z = ? 1 2 3|; 10 11 12
 #
 # I1 _ i___ Z
 # I2 _ i___ Z # Two iterators on one zip
@@ -97,7 +97,7 @@
 # # Multiple Versus Single Pass Iterators
 # # Map
 #
-# M _ ma. ab. |-1 0 1  # Ditto for map (and filter)
+# M _ ? ab. |-1 0 1  # Ditto for map (and filter)
 # I1 _ i___ M
 # I2 _ i___ M
 # print n___ I1 ; n___ I1 ; n___ I1
