@@ -2,19 +2,19 @@
 # # implement a __len__ method to support the len() function
 #
 # c_ Squares
-#     ___ __init__ ____ length
-#         ____.le... _ length
+#     ___ - ____ length
+#         ____.? _ ?
 #         ____.i _ 0
 #
 #     ___ next_ ____
-#         i_ ____.i >_ ____.le...
-#             ra... S..It..
-#         e___
+#         __ ____.i >_ ____.le...
+#             r... S..It..
+#         ____
 #             result _ ____.i ** 2
 #             ____.i +_ 1
 #             r_ r...
 #
-#     ___ __len__ ____
+#     ___ -l ____
 #         r_ ____.le..
 #
 # sq _ Sq.. 3
@@ -29,7 +29,7 @@
 # w___ T..
 #     t..
 #         print s_.next_
-#     e___ S...I..
+#     ____ S...I..
 #         # reached end of iteration
 #         # stop looping
 #         b....
@@ -40,19 +40,19 @@
 # import random
 #
 # c_ RandomNumbers
-#     ___ __init__ ____ length * range_min_0 range_max_10
+#     ___ - ____ length * range_min_0 range_max_10
 #         ____.l... _ length
 #         ____.r._m. _ range_min
 #         ____.r.._m.. _ range_max
 #         ____.n.._r... _ 0
 #
-#     ___ __len__ ____
+#     ___ -l ____
 #         r... ____.le...
 #
-#     ___ __next__(____):
-#         i_ ____.n.._r.. >_ ____.le..
+#     ___ -n (____):
+#         __ ____.n.._r.. >_ ____.le..
 #             r.. S...I..
-#         e____
+#         _____
 #             ____.n.._r.. +_ 1
 #             r_ ra___.rand___ ____.r.._m..  ____.r.._ma.
 #
@@ -63,14 +63,14 @@
 # w____ T...
 #     t..
 #         print n.... nu..
-#     e____ S...I..
+#     _____ S...I..
 #         b.....
 #
 # # We still cannot use a for loop, and if we want to 'restart' the iteration, we have to create a new object every time.
 # #
 # numbers _ R.... 10
 #
-# ___ item i_ n....
+# ___ item __ n....
 #     print item #error
 #
 #
@@ -78,30 +78,30 @@
 # # build class Cities
 #
 # c_ Cities:
-#     ___ __init__ ____
+#     ___ - ____
 #         ____._cities _ 'New York' 'Newark' 'New Delhi' 'Newcastle'
-#     ___ __len__ ____
-#         r_ len ____._cities
-#     ___ __getitem__ ____ s
+#     ___ -l ____
+#         r_ le. ____._cities
+#     ___ -g ____ s
 #         print 'getting item...'
 #         r_ ____._cities |s
-#     ___ __iter__ ____
+#     ___ -it ____
 #         print Calling Cities instance __iter__
 #         r_ ____.C...I... ____
 #     c_ CityIterator:
-#         ___ __init__ ____ city_obj
+#         ___ - ____ city_obj
 #             # cities is an instance of Cities
 #             print Calling CityIterator __init__
 #             ____._c..._o.. _ city_obj
 #             ____._index _ 0
-#         ___ __iter__ ____
+#         ___ -it ____
 #             print Calling CitiyIterator instance __iter__
 #             r_ ____
-#         ___ __next__ ____
+#         ___ -n ____
 #             print Calling __next__
-#             i_ ____._index >_ le. s____elf._c.._o..
+#             __ ____._index >_ le. _____._c.._o..
 #                 r.... S...I...
-#             e____
+#             _____
 #                 item _ ____._c___o__._cities ____._in___
 #                 ____._in... +_ 1
 #                 r_ it..
