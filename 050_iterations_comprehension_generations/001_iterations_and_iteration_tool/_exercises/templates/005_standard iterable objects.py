@@ -6,13 +6,13 @@
 # my_list _ 1 2 5 7 32 148  # List
 #
 # # Обход списка
-# ___ element i_ m...
-#     print e...
+# ___ element __ ?
+#     print ?
 #
 #
 # # Функция enumerate возвращает итерабельный объект, который возвращает пары индекс-значение
-# ___ index element i_ en... m...
-#     print *my_list|||| _ ||*.f.... i... e...
+# ___ index element __ en... ?
+#     print *my_list|||| _ ||*.f.... ? ?
 #
 #
 # # Примеры некоторых стандартных итерабельных объектов.
@@ -20,8 +20,8 @@
 #
 # string _ A string
 # # Обход строки посимвольно
-# ___ char i_ s...
-#     print c...
+# ___ char __ ?
+#     print ?
 #
 # # Create my function ,my_for
 #
@@ -50,7 +50,7 @@
 #
 # my_range _ r____ 2 17 2
 #
-# ___ counter i_ m._r..
+# ___ counter __ m._r..
 #     print c...
 #
 # # iterable_with_getitem
@@ -70,10 +70,10 @@
 # c__ SimpleIterable o_____
 #     """Класс итерабельного объекта с методом __getitem__"""
 #
-#     ___ __g__ ____ index
-#         i_ 0 <_ i... < 5
-#             r_ i.. * 2
-#         e____
+#     ___ -g ____ index
+#         __ 0 <_ ? < 5
+#             r_ ? * 2
+#         _____
 #             r___ I...E.. iterable index out of range
 #
 #
@@ -102,9 +102,9 @@
 #
 #
 # ___ traverse iterable
-#     print Traversing ||:*.f.. ty.. it___.__n__
-#     ___ element i_ it__
-#         print el..
+#     print Traversing ||:*.f.. ty.. it___. -n
+#     ___ element __ it__
+#         print ?
 #     print()
 #
 #
