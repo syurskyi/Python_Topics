@@ -7,3 +7,6 @@ https://www.afternerd.com/blog/python-http-server/
 
 Python HTTP Client Request – GET, POST
 https://www.journaldev.com/19213/python-http-client-request-get-post
+
+Exploring HTTPS With Python
+https://realpython.com/python-https/
