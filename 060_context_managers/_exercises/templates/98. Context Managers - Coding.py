@@ -4,20 +4,20 @@
 #
 # print('#' * 52 + '  You should be familiar with `try` and `finally`.')
 #
-# t__:
+# t__
 #     10 / 2
-# e_____ Z.....
+# _____ Z.....
 #     print('Zero division exception occurred')
-# f____:
+# f____
 #     print('finally ran!')
 #
 # print('#' * 52 + '  ')
 #
 # # finally ran!
 #
-# t__
+# ___
 #     1 / 0
-# e_____ Z.....:
+# ______ Z.....
 #     print('Zero division exception occurred')
 # f____
 #     print('finally ran!')
@@ -37,11 +37,11 @@
 #
 #
 # ___ my_func
-#     t__
+#     ___
 #         1 / 0
-#     e_____
+#     ______
 #         r_
-#     f____:
+#     _____
 #         print('finally running...')
 #
 #
@@ -50,10 +50,10 @@
 # print('#' * 52 + '  This is very handy to release resources even in cases where an exception occurs. ')
 # print('#' * 52 + '  For example making sure a file is closed after being opened:')
 #
-# t__
+# ___
 #     f _ open('test.txt', 'w')
 #     a _ 1 / 0
-# e_____
+# _____
 #     print('an exception occurred...')
 # f____
 #     print('Closing file...')
@@ -140,7 +140,7 @@
 # # We haven't covered exceptions in detail yet, so let's quickly see what those three things are:
 #
 #
-# # ___ my_func():
+# # ___ my_func
 # #     return 1.0 / 0.0
 # # my_func()  # Z.....: float division by zero
 # # ######################################################################################################################

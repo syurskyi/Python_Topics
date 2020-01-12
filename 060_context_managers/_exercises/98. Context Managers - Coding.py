@@ -1,51 +1,51 @@
-# # You should be familiar with try and finally.
-# #
-# # We use the finally block to make sure a piece of code is executed, whether an exception has happened or not:
+# You should be familiar with try and finally.
 #
-# print('#' * 52 + '  You should be familiar with `try` and `finally`.')
-#
-# t__:
-#     10 / 2
-# e_____ Z.....
-#     print('Zero division exception occurred')
-# f____:
-#     print('finally ran!')
-#
-# print('#' * 52 + '  ')
-#
-# # finally ran!
-#
-# t__
-#     1 / 0
-# e_____ Z.....:
-#     print('Zero division exception occurred')
-# f____
-#     print('finally ran!')
-#
-# print('#' * 52 + '  You will see that in both instances, the `finally` block was executed.'
-#                  '  Even if an exception is raised in the `except` block, the `finally` block will **still** execute!')
-#
-# print(
-#     '#' * 52 + 'Even if the finally is in a function and there is a return statement in the `try` or `except` blocks:')
-#
-# # Zero division exception occurred
-# # finally ran!
-# # ######################################################################################################################
-# # You'll see that in both instances, the finally block was executed. Even if an exception is raised in the except block,
-# # the finally block will still execute!
-# # Even if the finally is in a function and there is a return statement in the try or except blocks:
-#
-#
-# ___ my_func
-#     t__
-#         1 / 0
-#     e_____
-#         r_
-#     f____:
-#         print('finally running...')
-#
-#
-# my_func()
+# We use the finally block to make sure a piece of code is executed, whether an exception has happened or not:
+
+print('#' * 52 + '  You should be familiar with `try` and `finally`.')
+
+try:
+    10 / 2
+except  ZeroDivisionError:
+    print('Zero division exception occurred')
+finally:
+    print('finally ran!')
+
+print('#' * 52 + '  ')
+
+# finally ran!
+
+try:
+    1 / 0
+except  ZeroDivisionError:
+    print('Zero division exception occurred')
+finally:
+    print('finally ran!')
+
+print('#' * 52 + '  You will see that in both instances, the `finally` block was executed.'
+                 '  Even if an exception is raised in the `except` block, the `finally` block will **still** execute!')
+
+print(
+    '#' * 52 + 'Even if the finally is in a function and there is a return statement in the `try` or `except` blocks:')
+
+# Zero division exception occurred
+# finally ran!
+# ######################################################################################################################
+# You'll see that in both instances, the finally block was executed. Even if an exception is raised in the except block,
+# the finally block will still execute!
+# Even if the finally is in a function and there is a return statement in the try or except blocks:
+
+
+def my_func():
+    try:
+        1 / 0
+    except:
+        return
+    finally:
+        print('finally running...')
+
+
+my_func()
 #
 # print('#' * 52 + '  This is very handy to release resources even in cases where an exception occurs. ')
 # print('#' * 52 + '  For example making sure a file is closed after being opened:')
