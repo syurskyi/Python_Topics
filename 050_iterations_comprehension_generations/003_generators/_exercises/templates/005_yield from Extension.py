@@ -2,8 +2,8 @@
 # # def both (N )
 #
 # ___ both N
-#     ___ i i_ ra.. N   y___ i
-#     ___ i i_  x ** 2 ___ x i_ ra.. N   y___ i
+#     ___ i __ ra.. ?   y___ ?
+#     ___ i __  x ** 2 ___ x __ ra.. ?   y___ ?
 #
 #
 # print ? 5
@@ -11,10 +11,10 @@
 #
 #
 # ___ both N
-#      y___ f.. ra.. N
-#      y___ f..  x ** 2 ___ x i_ ra.. N
+#      y___ f.. ra.. ?
+#      y___ f..  x ** 2 ___ x __ ra.. ?
 #
 #
 # print  li.. ? 5
 #
-# print ' : '.jo.. st_ i  ___ i i_ ? 5
+# print ' : '.jo.. st_ i  ___ ? __ ? 5
