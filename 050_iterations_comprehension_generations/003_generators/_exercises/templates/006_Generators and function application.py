@@ -5,13 +5,13 @@
 # #  Unpack range values: iterable in 3.X
 # #  Unpack generator expression values
 #
-# ___ f a, b, c : print '/, /, and /' /  a, b, c
+# ___ f a, b, c : print @, @, and @'  a, b, c     # string
 #
 # f 0, 1, 2   # Normal positionals
 #
-# f *ra.. 3   # Unpack range values: iterable in 3.X
+# f ?ra.. 3   # Unpack range values: iterable in 3.X
 #
-# f * i ___ i i_ ra.. 3
+# f ?|i ___ ? __ ra.. 3
 #
 # # Generators and function application
 # # dict
@@ -35,51 +35,51 @@
 # # Generators and function application
 # # ___ x in 'spam':
 #
-# ___ x i_ 'spam': print x.up..   e.._' '
+# ___ x __ 'spam': print x.up.. e.._' '
 # print
 #
-# li.. print x.up..  , e.._' '  ___ x i_ 'spam'
+# li.. print x.up.. e.._' '|  ___ ? __ 'spam'
 # print
 #
-# print * x.up..   ___ x i_ 'spam'
+# print * x.up..   ___ ? __ 'spam'
 #
 # # range-generator
 # ___ my_range first second_None step_1
 #     """Функция-генератор, работающая подобно стандартному классу range"""
 #
-#     i_ second i_ N..
+#     __ second i_ N..
 #         current _ 0
-#         e.. _ first
-#     e____
-#         current _ fi..
-#         e.. _ se..
+#         end _ f..
+#     _____
+#         current _ f..
+#         e.. _ s..
 #
-#     i_ step __ 0:
-#         r.... V...E... 'step must not be zero'
+#     __ step __ 0
+#         r.... V... 'step must not be zero'
 #
-#     w____  step > 0 an. cur.. < e..  o.  step < 0 an. cur... > e.. :
+#     w____  s.. > 0 an. c.. < e..|  o.  step < 0 an. c.. > e..|
 #         # yield выдаёт текущее значение и приостанавливает работу генератора.
 #         # При следующем вызове next выполнение продолжится с этого места.
-#         y____ cur...
-#         cur... +_ step
+#         y____ c...
+#         c... +_ s..
 #
 #
 # # fibonacci-sequence
-# ___ fibonacci max_count :
+# ___ fibonacci max_count
 #     """Генерация max_count чисел Фибоначчи"""
 #     count _ 0
 #     first second _ 0, 1
 #
-#     w____ count < max_count:
+#     w____ c.. < m..
 #         c... +_ 1
-#         y____ second
-#         first, second _ second, first + second
+#         y____ s..
+#         f.. s.. _ s.. f... + s...
 #
 #
 # ___ main
 #     # Вывод 15 первых чисел Фибоначчи
-#     ___ number i_ fibonacci 15
-#         print n...
+#     ___ number __ ? 15
+#         print ?
 #
 #
 # i_ __.... ____ .....
