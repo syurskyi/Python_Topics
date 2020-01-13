@@ -10,13 +10,13 @@
 # # значения  синтаксис соответствует заголовку оператора if . Такие выражения
 # # называются выражениями-генераторами  generator expressions .
 # #
-# generator _  x ** 2 + y ___ x i_ ra... 2, 7  ___ y i_ ra... 3  i_ x !_ 6
-# ___ number i_ g...
-#     print n....
+# generator _  x ** 2 + y ___ ? __ ra... 2, 7  ___ ? __ ra... 3  __ x !_ 6
+# ___ number __ ?
+#     print ?
 #
 # print
 #
-# print su. 2 * x ___ x i_ ra... 5
+# print su. 2 * x ___ ? __ ra... 5
 #
 # # delegating-to-subgenerator
 #
@@ -28,9 +28,9 @@
 # #
 # #
 # ___ generator
-#     y___ f...   3 * x ___ x i_ ra... 5
-#     y___ f...   2 * x ___ x i_ ra... 5, 10
+#     y_ f..   3 * x ___ ? __ ra... 5
+#     y_ f..   2 * x ___ ? __ ra... 5, 10
 #
 #
-# ___ i i_ generator
-#     print i
+# ___ i __ ?
+#     print ?
