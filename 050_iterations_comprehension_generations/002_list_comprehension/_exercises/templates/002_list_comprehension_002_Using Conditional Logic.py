@@ -10,7 +10,7 @@
 # # normally require a call to filter():
 #
 # sentence _ 'the rocket came back from mars'
-# vowels _ i ___ i i_ s.. i_ i i_ 'aeiou'
+# vowels _ i ___ i __ ? __ ? __ 'aeiou'
 # print v..
 # # ['e', 'o', 'e', 'a', 'e', 'a', 'o', 'a']
 #
@@ -27,7 +27,7 @@
 #     r_ le__.isa.. an. le___.lo.. no. i. vo..
 #
 #
-# consonants _ i ___ i i_ se.. i_ i._c. i
+# consonants _ i ___ ? __ se.. __ i._c. i
 # # ['T', 'h', 'r', 'c', 'k', 't', 'w', 'h', 'w', 's', 'n', 'm', 'd', \
 # # 'T', 'd', 'c', 'm', 'b', 'c', 'k', 'f', 'r', 'm', 'M', 'r', 's', 'b', \
 # # 'c', 's', 'h', 'm', 's', 's', 'd', 'h', 's', 'f', 'r', 'n', 'd', 's']
@@ -43,7 +43,7 @@
 # # the positive values unchanged:
 # #
 # original_prices _ 1.25, -9.45, 10.22, 3.78, -5.92, 1.16
-# prices _  i i_ i > 0 e___ 0 ___ i i_ o.._p..
+# prices _  i __ ? > 0 e___ 0 ___ ? __ o.._p..
 # print p...
 # # [1.25, 0, 10.22, 3.78, 0, 1.16]
 #
@@ -53,11 +53,11 @@
 #
 #
 # ___ get_price price
-#     r__ p... i_ p.. > 0 e___ 0
+#     r__ p... i_ ? > 0 e___ 0
 #
 #
-# prices _ g._pr. i ___ i i_ o._p.
-# print p...
+# prices _ ? i ___ ? __ o._p.
+# print ?
 # # [1.25, 0, 10.22, 3.78, 0, 1.16]
 #
 # # Now, your conditional statement is contained within get_price(), and you can use it as part of

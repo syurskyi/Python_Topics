@@ -3,7 +3,7 @@
 # # even medium-sized lists, this is generally fine. If you want to sum the squares of the first one-thousand integers,
 # # then a list comprehension will solve this problem admirably:
 #
-# su. i * i ___ i i_ ra.. 1000
+# su. i * i ___ ? __ ra.. 1000
 # # 332833500
 #
 # # But what if you wanted to sum the squares of the first billion integers? If you tried then on your machine,
@@ -18,7 +18,7 @@
 # # If you were to sum the first billion squares with a generator, then your program will likely run for a while,
 # # but it shouldn’t cause your computer to freeze. The example below uses a generator:
 #
-# su. i * i ___ i i. ra.. 1000000000
+# su. i * i ___ ? i. ra.. 1000000000
 # # 333333332833333333500000000
 #
 # # You can tell this is a generator because the expression isn’t surrounded by brackets or curly braces.

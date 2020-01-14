@@ -10,26 +10,26 @@
 # ______ ran...
 # ______ ti..
 # TAX_RATE _ .08
-# txns _ ra__.r..r.. 100 ___ _ i_ ra.. 100000
+# txns _ ra__.r..r.. 100 ___ _ __ ra.. 100000
 #
 #
 # ___ get_price txn
-#     r_ tx. * 1 + T._R.
+#     r_ ? * 1 + T._R.
 #
 #
 # ___ get_prices_with_map
-#     r_ list(map(get_price, tx..
+#     r_ l.. ma ?, t..
 #
 #
-# ___ get_prices_with_comprehension():
-#     r_ g.._p.. txn. ___ txn i_ tx..
+# ___ get_prices_with_comprehension
+#     r_ g._p.. t__. ___ txn __ t..
 #
 #
 # ___ get_prices_with_loop
 #     prices _     # List
-#     ___ txn i_ tx..
-#         pr__.ap.. g._p. tx.
-#     r_ p...
+#     ___ txn __ t..
+#         ?.ap.. g._p. t..
+#     r_ ?
 #
 #
 # ti__.ti.. g_p_w_m. nu.._100
