@@ -5,8 +5,8 @@
 # # using curly braces instead of brackets:
 # #
 # quote _ "life, uh, finds a way"
-# unique_vowels _ i ___ i i_ quote i_ i i_ 'aeiou'
-# print(u._v.
+# unique_vowels _ i ___ ? __ ? __ ? __ 'aeiou'
+# print ?
 # # {'a', 'e', 'u', 'i'}
 #
 # # Your set comprehension outputs all the unique vowels it found in quote. Unlike lists, sets don’t guarantee that items
@@ -14,8 +14,8 @@
 # # in quote is i.
 # # Dictionary comprehensions are similar, with the additional requirement of defining a key:
 #
-# squares _ i: i * i ___ i i_ ra.. 10
-# print s..
+# squares _ i i * i ___ ? __ ra.. 10
+# print ?
 # # {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}
 #
 # # To create the squares dictionary, you use curly braces ({}) as well as a key-value pair (i: i * i) in your expression.

@@ -8,8 +8,8 @@
 # # a dictionary comprehension:
 #
 # cities _ 'Austin', 'Tacoma', 'Topeka', 'Sacramento', 'Charlotte'
-# temps _ city |0 ___ _ i_ ra.. 7| ___ city i_ ci...
-# print t...
+# temps _ city |0 ___ _ __ ra.. 7| ___ ? __ ?    # _ the first is original # dict
+# print ?
 # # {
 # #     'Austin': [0, 0, 0, 0, 0, 0, 0],
 # #     'Tacoma': [0, 0, 0, 0, 0, 0, 0],
@@ -23,7 +23,7 @@
 # # Nested lists are a common way to create matrices, which are often used for mathematical purposes.
 # # Take a look at the code block below:
 #
-# matrix _ i ___ i i_ ra.. 5  ___ _ i_ ra.. 6
+# matrix _ ||i ___ ? __ ra.. 5  ___ _ __ ra.. 6   # _ the first is original # dict
 # print m...
 # # [
 # #     [0, 1, 2, 3, 4],
@@ -45,8 +45,8 @@
 #     [1, 1, 1],
 #     [2, 2, 2],
 #
-# flat _ num ___ ro. i_ ma.. ___ nu. i_ ro.
-# print f..
+# flat _ num ___ row __ ? ___ n.. __ r..
+# print ?
 # # [0, 0, 0, 1, 1, 1, 2, 2, 2]
 #
 # # The code to flatten the matrix is concise, but it may not be so intuitive to understand how it works.
@@ -59,9 +59,9 @@
 #     [2, 2, 2],
 # ]
 # flat _     # List
-# ___ row i_ m...
-#     ___ num i_ ro.
-#         fl__.ap.. n..
+# ___ row __ m..
+#     ___ num __ r..
+#         f__.ap.. n..
 #
 # print f..
 # # [0, 0, 0, 1, 1, 1, 2, 2, 2]
