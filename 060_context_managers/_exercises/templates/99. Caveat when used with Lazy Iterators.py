@@ -7,7 +7,7 @@
 #
 #
 # ___ read_data
-#     w___ o... 'nyc_parking_tickets_extract.csv' a_ f
+#     w___ o... 'nyc_parking_tickets_extract.csv' __ f
 #         r_ cs_.re.. f delimiter_',', quotechar_'"'
 #
 # # for row in read_data():
@@ -25,12 +25,12 @@
 #
 #
 # ___ read_data
-#     w___ o.. 'nyc_parking_tickets_extract.csv') a_ f
+#     w___ o.. 'nyc_parking_tickets_extract.csv') __ f
 #         r_ li cs_.re..  delimiter_',', quotechar_'"'
 #
 #
-# ___ row i_ r._d.
-#     print r..
+# ___ row __ ?
+#     print ?
 #
 # # The second method, the one we have used quite a bit, involves yielding each row from the csv reader:
 #
@@ -39,9 +39,9 @@
 #
 #
 # ___ read_data
-#     w___ o.. ('nyc_parking_tickets_extract.csv') a_ f
+#     w___ o.. ('nyc_parking_tickets_extract.csv') __ f
 #         y_____ f.. cs_.re.. f de..._',' quot.._'"'
 #
 #
-# ___ row i_ r._d.
-#     print r..
+# ___ row __ ?
+#     print ?

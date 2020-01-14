@@ -4,8 +4,8 @@
 # print('#' * 52 + '  ### Not Just a Context Manager')
 #
 # f _ o.. test.txt '_'
-# f.w..l.. 'this is a test'
-# f.c..
+# ?.w..l.. 'this is a test'
+# ?.c..
 #
 # # Here we did not use a context manager - the open function simply returned the file object - but we had to close
 # # the file ourselves - there was not context used.
@@ -13,8 +13,8 @@
 #
 # print('#' * 52 + '  On the other hand we can also use it with a context manager:')
 #
-# w___ o.. test.txt a_ f
-#     print(f.r.l.
+# w___ o.. test.txt __ f
+#     print(?.r.l.
 # # ['this is a test']
 # # ######################################################################################################################
 #
@@ -24,30 +24,30 @@
 # # We can implement classes that implement their own functionality as well as a context manager if we want to.
 #
 # c_ DataIterator:
-#     ___ __i______ fname
-#         ____._f.. _ f..
+#     ___ - fname
+#         ____._f.. _ ?
 #         ____._f _ N..
 #
-#     ___ __i__ ____
+#     ___ -i ____
 #         r_ ____
 #
-#     ___ __n__ ____
+#     ___ -n ____
 #         row _ n.. ____._f
 #         r_ ro_.st.. '\n' .sp.. ','
 #
-#     ___ __e__ ____)
+#     ___ -e ____
 #         ____._f _ o... ____._fn..
 #         r_ ____
 #
-#     ___ __e__ ____ exc_type exc_value exc_tb
-#         i_ n.. ____._f.c..
+#     ___ -e
+#         __ n.. ____._f.c..
 #             ____._f.c..
 #         r_ F...
 #
 #
-# w___ D...  'nyc_parking_tickets_extract.csv' a_ data
-#     ___ row i_ d..
-#         print r..
+# w___ D...  'nyc_parking_tickets_extract.csv' __ data
+#     ___ row __ ?
+#         print ?
 #
 # print('#' * 52 + '  Of course, we cannot use this iterator without also using the context manager'
 #                  '  since the file would not be opened otherwise:')
@@ -68,7 +68,7 @@
 # # At this stage, the object has been created, but the __enter__ method has not been called yet.
 # # Once we use with, then the file will be opened, and the iterator will be ready for use:
 #
-# w... d._i. a_ data
-#     ___ row i_ d..
-#         print r..
+# w... ? __ data
+#     ___ row __ ?
+#         print ?
 #

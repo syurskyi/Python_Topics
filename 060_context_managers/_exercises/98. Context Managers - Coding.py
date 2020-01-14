@@ -3,206 +3,206 @@
 # # We use the finally block to make sure a piece of code is executed, whether an exception has happened or not:
 #
 # print('#' * 52 + '  You should be familiar with `try` and `finally`.')
+
+try:
+    10 / 2
+except ZeroDivisionError:
+    print('Zero division exception occurred')
+finally:
+    print('finally ran!')
+
+print('#' * 52 + '  ')
+
+# finally ran!
+
+try:
+    1 / 0
+except ZeroDivisionError:
+    print('Zero division exception occurred')
+finally:
+    print('finally ran!')
+
+print('#' * 52 + '  You will see that in both instances, the `finally` block was executed.'
+                 '  Even if an exception is raised in the `except` block, the `finally` block will **still** execute!')
+
+print(
+    '#' * 52 + 'Even if the finally is in a function and there is a return statement in the `try` or `except` blocks:')
+
+# Zero division exception occurred
+# finally ran!
+# ######################################################################################################################
+# You'll see that in both instances, the finally block was executed. Even if an exception is raised in the except block,
+# the finally block will still execute!
+# Even if the finally is in a function and there is a return statement in the try or except blocks:
+
+
+def my_func():
+    try:
+        1 / 0
+    except:
+        return
+    finally:
+        print('finally running...')
+
+
+my_func()
+
+print('#' * 52 + '  This is very handy to release resources even in cases where an exception occurs. ')
+print('#' * 52 + '  For example making sure a file is closed after being opened:')
+
+try:
+    f = open('test.txt', 'w')
+    a = 1 / 0
+except:
+    print('an exception occurred...')
+finally:
+    print('Closing file...')
+    f.close()
+
+# We should always do that when dealing with files.
+# But that can get cumbersome...
+# So, there is a better way.
+# Let's talk about context managers, and the pattern we are trying to solve:
+#     Run some code to create some object(s)
+#     Work with object(s)
+#     Run some code when done to clean up object(s)
+# Context managers do precisely that.
+# We use a context manager to create and clean up some objects. The key point is that the cleanup needs to happens
+# automatically - we should not have to write code such as the try...except...finally code we saw above.
+# When we use context managers in conjunction with the with statement, we end up with the "cleanup" phase happening as
+# soon as the with statement finishes:
+
+
+print('#' * 52 + '  We should **always** do that when dealing with files.')
+print('#' * 52 + '  ')
+print('#' * 52 + '  When we use context managers in conjunction with the `with` statement,'
+                 '  we end up with the "cleanup" phase happening as soon as the `with` statement finishes:')
+
+with open('test.txt', 'w') as file:
+    print('inside with: file closed?', file.closed)
+print('after with: file closed?', file.closed)
+# inside with: file closed? False
+# after with: file closed? True
+# ######################################################################################################################
+
+print('#' * 52 + '  This works even in this case:')
+
+
+def test():
+    with open('test.txt', 'w') as file:
+        print('inside with: file closed?', file.closed)
+        return file
+
+# As you can see, we return directly out of the with block...
+
+
+file = test()
+# inside with: file closed? False
+
+print(file.closed)
+# True
+
+print('#' * 52 + '  And yet, the file was still closed.')
+print('#' * 52 + '  It also works even if we have an exception in the middle of the block')
+# with open('test.txt', 'w') as f:
+#     print('inside with: file closed?', f.closed)
+#     raise ValueError()                              ###### ValueError:
+# ######################################################################################################################
+
+print('after with: file closed?', f.closed)
+# after with: file closed? True
+
+print('#' * 52 + '  ')
+print('#' * 52 + '  ')
+print('#' * 52 + '  ')
+
+# Context managers can be used for more than just opening and closing files.
+# If we think about it there are two phases to a context manager:
+#     when the with statement is executing: we enter the context
+#     when the with block is done: we exit the context
+# We can create our own context manager using a class that implements an __enter__ method which is executed when
+# we enter the context, and an __exit__ method that is executed when we exit the context.
+# There is a general pattern that context managers can help us deal with:
+#     Open - Close
+#     Lock - Release
+#     Change - Reset
+#     Enter - Exit
+#     Start - Stop
+# The __enter__ method is quite straightforward. It can (but does not have to) return one or more objects we then
+# use inside the with block.
+# The __exit__ method however is slightly more complicated.
+#     It needs to return a boolean True/False. This indicates to Python whether to suppress any errors that occurred
+#     in the with block. As we saw with files, that was not the case - i.e. it returns a False
+#     If an error does occur in the with block, the error information is passed to the __exit__ method - so it needs
+#     three things: the exception type, the exception value and the traceback. If no error occured, then those values
+#     will simply be None.
 #
-# t__
-#     10 / 2
-# _____ Z.....
-#     print('Zero division exception occurred')
-# f____
-#     print('finally ran!')
-#
-# print('#' * 52 + '  ')
-#
-# # finally ran!
-#
-# ___
-#     1 / 0
-# ______ Z.....
-#     print('Zero division exception occurred')
-# f____
-#     print('finally ran!')
-#
-# print('#' * 52 + '  You will see that in both instances, the `finally` block was executed.'
-#                  '  Even if an exception is raised in the `except` block, the `finally` block will **still** execute!')
-#
-# print(
-#     '#' * 52 + 'Even if the finally is in a function and there is a return statement in the `try` or `except` blocks:')
-#
-# # Zero division exception occurred
-# # finally ran!
-# # ######################################################################################################################
-# # You'll see that in both instances, the finally block was executed. Even if an exception is raised in the except block,
-# # the finally block will still execute!
-# # Even if the finally is in a function and there is a return statement in the try or except blocks:
-#
-#
+# We haven't covered exceptions in detail yet, so let's quickly see what those three things are:
+
+
 # ___ my_func
-#     ___
-#         1 / 0
-#     ______
-#         r_
-#     _____
-#         print('finally running...')
-#
-#
-# my_func()
-#
-# print('#' * 52 + '  This is very handy to release resources even in cases where an exception occurs. ')
-# print('#' * 52 + '  For example making sure a file is closed after being opened:')
-#
-# ___
-#     f _ open('test.txt', 'w')
-#     a _ 1 / 0
-# _____
-#     print('an exception occurred...')
-# f____
-#     print('Closing file...')
-#     f.c...
-#
-# # We should always do that when dealing with files.
-# # But that can get cumbersome...
-# # So, there is a better way.
-# # Let's talk about context managers, and the pattern we are trying to solve:
-# #     Run some code to create some object(s)
-# #     Work with object(s)
-# #     Run some code when done to clean up object(s)
-# # Context managers do precisely that.
-# # We use a context manager to create and clean up some objects. The key point is that the cleanup needs to happens
-# # automatically - we should not have to write code such as the try...except...finally code we saw above.
-# # When we use context managers in conjunction with the with statement, we end up with the "cleanup" phase happening as
-# # soon as the with statement finishes:
-#
-#
-# print('#' * 52 + '  We should **always** do that when dealing with files.')
-# print('#' * 52 + '  ')
-# print('#' * 52 + '  When we use context managers in conjunction with the `with` statement,'
-#                  '  we end up with the "cleanup" phase happening as soon as the `with` statement finishes:')
-#
-# w___ o.. 'test.txt' '_') a_ fi..
-#     print('inside with: file closed?' fi__.cl..
-# print('after with: file closed?', fi__.cl__)
-# # inside with: file closed? False
-# # after with: file closed? True
-# # ######################################################################################################################
-#
-# print('#' * 52 + '  This works even in this case:')
-#
-#
-# ___ test
-#     w___ o.. 'test.txt' '_' a_ fi..
-#         print('inside with: file closed?', fi__.cl__)
-#         r_ fi..
-#
-# # As you can see, we return directly out of the with block...
-#
-#
-# file = test()
-# # inside with: file closed? False
-#
-# print(file.cl__)
-# # True
-#
-# print('#' * 52 + '  And yet, the file was still closed.')
-# print('#' * 52 + '  It also works even if we have an exception in the middle of the block')
-# # with open('test.txt', 'w') as f:
-# #     print('inside with: file closed?', f.closed)
-# #     raise ValueError()                              ###### ValueError:
-# # ######################################################################################################################
-#
-# print('after with: file closed?', f.cl__)
-# # after with: file closed? True
-#
-# print('#' * 52 + '  ')
-# print('#' * 52 + '  ')
-# print('#' * 52 + '  ')
-#
-# # Context managers can be used for more than just opening and closing files.
-# # If we think about it there are two phases to a context manager:
-# #     when the with statement is executing: we enter the context
-# #     when the with block is done: we exit the context
-# # We can create our own context manager using a class that implements an __enter__ method which is executed when
-# # we enter the context, and an __exit__ method that is executed when we exit the context.
-# # There is a general pattern that context managers can help us deal with:
-# #     Open - Close
-# #     Lock - Release
-# #     Change - Reset
-# #     Enter - Exit
-# #     Start - Stop
-# # The __enter__ method is quite straightforward. It can (but does not have to) return one or more objects we then
-# # use inside the with block.
-# # The __exit__ method however is slightly more complicated.
-# #     It needs to return a boolean True/False. This indicates to Python whether to suppress any errors that occurred
-# #     in the with block. As we saw with files, that was not the case - i.e. it returns a False
-# #     If an error does occur in the with block, the error information is passed to the __exit__ method - so it needs
-# #     three things: the exception type, the exception value and the traceback. If no error occured, then those values
-# #     will simply be None.
-# #
-# # We haven't covered exceptions in detail yet, so let's quickly see what those three things are:
-#
-#
-# # ___ my_func
-# #     return 1.0 / 0.0
-# # my_func()  # Z.....: float division by zero
-# # ######################################################################################################################
-#
-# print('#' * 52 + '  Lets go ahead and create a context manager:')
-#
-# # The exception type here is Z......
-# # The exception value is float division by zero.
-# # The traceback is an object of type traceback (that itself points to other traceback objects forming the trace stack)
-# # used to generate that text shown in the output.
-# # I am not going to cover traceback objects at this point - we'll do this in a future part (OOP) of this series.
-# # Let's go ahead and create a context manager:
-#
-#
-# c_ MyContext
-#     ___ __i___ ____
-#         ____.obj _ N...
-#
-#     ___ __e__ ____
-#         print('entering context...')
-#         ____.obj _ 'the Return Object'
-#         r__ ____.o..
-#
-#     ___ __ex__ ____ exc_type exc_value exc_traceback
-#         print('exiting context...')
-#         i_ e.._t..
-#             print _'*** Error occurred: |e.._t.. |e.._v)
-#         r_ F..  # do not suppress exceptions
-#
-# # with MyContext() as obj:
-# #     raise ValueError    # ValueError:
-#
-#
-# # As you can see, the __exit__ method was still called - which is exactly what we wanted in the first place. Also,
-# # the exception that was raise inside the with block is seen.
-# # We can change that by returning True from the __exit__ method:
-#
-#
+#     return 1.0 / 0.0
+# my_func()  # Z.....: float division by zero
+# ######################################################################################################################
+
+print('#' * 52 + '  Lets go ahead and create a context manager:')
+
+# The exception type here is Z......
+# The exception value is float division by zero.
+# The traceback is an object of type traceback (that itself points to other traceback objects forming the trace stack)
+# used to generate that text shown in the output.
+# I am not going to cover traceback objects at this point - we'll do this in a future part (OOP) of this series.
+# Let's go ahead and create a context manager:
+
+
+class MyContext:
+    def __init__(self):
+        self.obj = None
+
+    def __entet__(self):
+        print('entering context...')
+        self.obj = 'the Return Object'
+        retrun self.obj
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        print('exiting context...')
+        if exc_type:
+            print(f'*** Error occurred: {exc_type}, {exc_val}')
+        return False  # do not suppress exceptions
+
+# with MyContext() as obj:
+#     raise ValueError    # ValueError:
+
+
+# As you can see, the __exit__ method was still called - which is exactly what we wanted in the first place. Also,
+# the exception that was raise inside the with block is seen.
+# We can change that by returning True from the __exit__ method:
+
+
 # print('#' * 52 + '  As you can see, the `__exit__` method was still called -'
 #                  '  which is exactly what we wanted in the first place.')
 # print('#' * 52 + '   Also, the exception that was raise inside the `with` block is seen.')
 # print('#' * 52 + '  We can change that by returning `True` from the `__exit__` method:')
 #
 #
-# c_ MyContext
-#     ___ __i__ ____)
-#         ____.obj _ None
-#
-#     ___ __e__ _____
-#         print('entering context...')
-#         ____.obj _ 'the Return Object'
-#         r_ ____.o..
-#
-#     ___ __e..__ ____ exc_type exc_value exc_traceback)
-#         print('exiting context...')
-#         i_ e.._t..
-#             print(_'*** Error occurred: e.._t.. e.._v..')
-#         r_ T.. # suppress exceptions
-#
-#
-# w___ M... a_ ob..
-#     r____ V..E..
+class MyContext:
+    def __init__(self):
+        self.obj = None
+
+    def __enter__(self):
+        print('entering context...')
+        self.obj = 'the Return Object'
+        return self.obj
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        print('exiting context...')
+        if exc_type:
+            print(f'*** Error occurred: {exc_type}, {exc_val}')
+        return True # suppress exceptions
+
+
+with MyContext() as obj:
+    return ValueError
 # print('reached here without an exception...')
 # # entering context...
 # # exiting context...

@@ -51,7 +51,7 @@
 # print('#' * 52 + '  For example making sure a file is closed after being opened:')
 #
 # ___
-#     f _ open('test.txt', 'w')
+#     f _ o.. test.txt _
 #     a _ 1 / 0
 # _____
 #     print('an exception occurred...')
@@ -78,9 +78,9 @@
 # print('#' * 52 + '  When we use context managers in conjunction with the `with` statement,'
 #                  '  we end up with the "cleanup" phase happening as soon as the `with` statement finishes:')
 #
-# w___ o.. 'test.txt' '_') a_ fi..
-#     print('inside with: file closed?' fi__.cl..
-# print('after with: file closed?', fi__.cl__)
+# w___ o.. 'test.txt' _ a_ f..
+#     print('inside with: file closed?' ?.cl..
+# print('after with: file closed?', ?.cl__)
 # # inside with: file closed? False
 # # after with: file closed? True
 # # ######################################################################################################################
@@ -89,17 +89,17 @@
 #
 #
 # ___ test
-#     w___ o.. 'test.txt' '_' a_ fi..
-#         print('inside with: file closed?', fi__.cl__)
-#         r_ fi..
+#     w___ o.. 'test.txt' _ __ ....
+#         print('inside with: file closed?', ?.cl__)
+#         r_ ?
 #
 # # As you can see, we return directly out of the with block...
 #
 #
-# file = test()
+# file = ?
 # # inside with: file closed? False
 #
-# print(file.cl__)
+# print(?.cl__)
 # # True
 #
 # print('#' * 52 + '  And yet, the file was still closed.')
@@ -156,18 +156,18 @@
 #
 #
 # c_ MyContext
-#     ___ __i___ ____
+#     ___ - ____
 #         ____.obj _ N...
 #
-#     ___ __e__ ____
+#     ___ -e ____
 #         print('entering context...')
-#         ____.obj _ 'the Return Object'
-#         r__ ____.o..
+#         ____.o.. _ 'the Return Object'
+#         r__ ____.?
 #
-#     ___ __ex__ ____ exc_type exc_value exc_traceback
+#     ___ -e ____ __ __
 #         print('exiting context...')
-#         i_ e.._t..
-#             print _'*** Error occurred: |e.._t.. |e.._v)
+#         i_ e_t..
+#             print _'*** Error occurred: |e_t.. e_v
 #         r_ F..  # do not suppress exceptions
 #
 # # with MyContext() as obj:
@@ -186,23 +186,23 @@
 #
 #
 # c_ MyContext
-#     ___ __i__ ____)
+#     ___ -
 #         ____.obj _ None
 #
-#     ___ __e__ _____
+#     ___ -e _____
 #         print('entering context...')
-#         ____.obj _ 'the Return Object'
-#         r_ ____.o..
+#         ____.o.. _ 'the Return Object'
+#         r_ ____.?
 #
-#     ___ __e..__ ____ exc_type exc_value exc_traceback)
+#     ___ -e
 #         print('exiting context...')
-#         i_ e.._t..
-#             print(_'*** Error occurred: e.._t.. e.._v..')
+#         __ e_t..
+#             print(_'*** Error occurred: e_t.. e_v..
 #         r_ T.. # suppress exceptions
 #
 #
-# w___ M... a_ ob..
-#     r____ V..E..
+# w___ ? __ ob.
+#     r____ V..
 # print('reached here without an exception...')
 # # entering context...
 # # exiting context...
@@ -212,10 +212,10 @@
 #
 # print('#' * 52 + '  Look at the output of this code:')
 #
-# w___ M... a_ obj
+# w___ ? __ obj
 #     print('running inside with block...')
-#     print ob.
-# print(obj)
+#     print ?
+# print ?
 # # entering context...
 # # running inside with block...
 # # the Return Object
@@ -233,33 +233,33 @@
 #
 #
 # c_ Resource
-#     ___ __in___ ___ name
-#         ____.name _ n..
+#     ___ - ___ name
+#         ____.? _ ?
 #         ____.state _ N..
 #
 #
 # c_ ResourceManager
-#     ___ __i__ ____ name
-#         ____.name _ n..
+#     ___ - ____ name
+#         ____.? _ ?
 #         ____.resource _ N..
 #
-#     ___ __e__ ____
+#     ___ -e ____
 #         print('entering context')
-#         ____.resource _ R.. ____.n..
-#         ____.resource.state _ 'created'
-#         r_ ____.resource
+#         ____.r.. _ R.. ____.n..
+#         ____.r__.st.. _ 'created'
+#         r_ ____.r..
 #
-#     ___ __e__ ____ exc_type exc_value exc_traceback
+#     ___ -e ____ __
 #         print('exiting context')
-#         ____.resource.state = 'destroyed'
-#         i_ exc_type
+#         ____.r__.st.. = 'destroyed'
+#         __ e_t..
 #             print('error occurred')
 #         r__ F..
 #
 #
-# w___ R.. 'spam' a_ r..
-#     print(_' res.name _ res.state'
-# print(_' res.name _ res.state'
+# w___ R.. 'spam' __ res
+#     print(_' ?.n.. _ ?.st..'
+# print(_' ?.n.. _ ?.s..'
 # # entering context
 # # spam = created
 # # exiting context
@@ -277,23 +277,23 @@
 #
 #
 # c_ File
-#     ___ __i__ ____ name mode
-#         ____.n.. _ n..
-#         ____.m.. _ m..
+#     ___ ? ____ name mode
+#         ____.? _ ?
+#         ____.? _ ?
 #
-#     ___ __e__ ____
+#     ___ -e
 #         print('opening file...')
 #         ____.file _ o.. ____.n.. ____.m..
 #         r__ ____.fi..
 #
-#     ___ __e__ ____ exc_typ, exc_value exc_traceback
+#     ___ -e _____ __
 #         print('closing file...')
 #         ____.f__.c..
 #         r_ F..
 #
 #
-# w___ F..  'test.txt' '_') a_ f
-#     f.w..('This is a late parrot!')
+# w___ ?  'test.txt' _ __ f
+#     ?.w..('This is a late parrot!')
 # # opening file...
 # # closing file...
 # # ######################################################################################################################
@@ -306,12 +306,12 @@
 #
 #
 # ___ test
-#     w__ F.. test.txt '_') a_ f
-#         f.w.. 'This is a late parrot')
-#         i_ T..
-#             r) f
-#         print(f.cl__
-#     print(f.cl__
+#     w__ ? test.txt _ __ f
+#         ?.w.. 'This is a late parrot')
+#         __ T..
+#             r_ ?
+#         print(?.cl__
+#     print(?.cl__
 #
 #
 # f _ t..
@@ -327,16 +327,16 @@
 #
 #
 # c_ File
-#     ___ __i__ ____ name mode
-#         ____.n.. _ n..
-#         ____.m.. _ m..
+#     ___ - ____ name mode
+#         ____.? _ ?
+#         ____.? _ ?
 #
-#     ___ __e__ ____
+#     ___ -e
 #         print('opening file...')
 #         ____.file _ o.. ____.n.. ____.m..
 #         r_ ____
 #
-#     ___ __e__ ____ exc_type exc_value exc_traceback
+#     ___ -e ____
 #         print('closing file...')
 #         ____.f__.c..
 #         r_ F..
@@ -344,8 +344,8 @@
 # # Of course, now we would have to use the context manager object's file property to get a handle to the file:
 #
 #
-# w___ F.. test.txt '_') a_ file_ctx
-#     print n..  f.._c_.fi..
+# w___ ? test.txt _ __ file_ctx
+#     print n..  ?.fi..
 #     print(fi._c__.na..
 #     print(fi._c__.mo..
 #
