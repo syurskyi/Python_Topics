@@ -65,11 +65,11 @@
 #
 # ___ bare_bones
 #     print("My first Coroutine!")
-#     try:
+#     ___
 #         w___ T..
 #             value _ |y...
 #             print ?
-#     e_ G..
+#     ____ G..
 #         print("Exiting coroutine...")
 #
 # coroutine _ ?
@@ -90,7 +90,7 @@
 # ___ filter_line num
 #     w___ T..
 #         line _ |y...
-#         i_ num i_ ?
+#         __ num __ ?
 #             print ?
 #
 # cor _ ? 33
@@ -127,12 +127,12 @@
 #     w___ T..
 #         value _ |y...
 #         print ?
-# t__
+# ___
 #     cor _ t..
 #     ne.. ?
 #     ?.cl..
 #     ?.se..("So Good")
-# e____ S..
+# _____ S..
 #     print("Done with the basics")
 #
 # # Output:
@@ -151,7 +151,7 @@
 #         r_ ?
 #     r_ ?
 #
-# 0c..
+# ??
 # ___ bare_bones
 #     w___ T..
 #         value _ |y...
@@ -177,14 +177,14 @@
 #         c__.send ?
 #         n _ n * 2
 #
-# 0c..
+# ??
 # ___ my_filter num cor
 #     w___ T..
 #         n _ |y...
-#         i_ n < num
+#         __ n < n..
 #             c__.se.. ?
 #
-# 0c...
+# ??
 # ___ printer
 #     w___ T..
 #         n _ |y...
@@ -277,16 +277,16 @@
 #         next_cor _ |y...
 #         print v..
 #         value _ value - 1
-#         i_ n_co !_ N..
-#             ne_c_.se.. ?
+#         __ n.. !_ N..
+#             n_.se.. ?
 #
 # ___ coroutine_2 next_cor
 #     w___ T..
 #         value _ |y...
 #         print ?
 #         value _ value - 2
-#         i_ next !_ N..
-#             ne_c_.se.. ?
+#         __ next !_ N..
+#             n_.se.. ?
 #
 # cor1 _ _1 20
 # ne.. ?
