@@ -33,7 +33,7 @@
 # print('#' * 52 + '  but this is not quite ISO-8601. We could write a custom formatter ourselves:')
 # 
 # ___ format_iso dt
-#     r_ dt.st..ti.. %Y-%m-%dT%H:%M:%S
+#     r_ ?.st..ti.. %Y-%m-%dT%H:%M:%S
 # 
 # # (If you want more info and options on date and time formatting/parsing using strftime and strptime,
 # # which essentially pass through to their C counterparts, you can see the Python docs here:
@@ -66,7 +66,7 @@
 # print('#' * 52 + '  OK, this works, but this is far from ideal.')
 # print('#' * 52 + '  Normally, our dictionary will contain the `datetime` object, not its string representation.')
 # 
-# log_record _ 'time': d..t_.u..n..(), 'message': 'testing'
+# log_record _ 'time': d..t_.u..n.. 'message': 'testing'
 # # The problem is that log_record is now not JSON serializable!
 # # What we have to do is write custom code to replace non-JSON serializable objects in our dictionary with custom
 # # representations. This can quickly become tedious and unmanageable if we deal with many dictionaries,
@@ -76,9 +76,9 @@
 # # The simplest way is to specify a function that dump/dumps will call when it encounters something it cannot serialize
 # 
 # ___ format_iso dt
-#     r_ dt.i.f.
+#     r_ ?.i.f.
 # 
-# print j___.d___ l._r. de.._f..
+# print j___.d___ ? de.._f..
 # # '{"time": "2018-12-29T22:26:42.532485", "message": "testing"}'
 # # ######################################################################################################################
 # 
@@ -90,7 +90,7 @@
 #     'message' 'Testing...'
 # 
 # 
-# print j___.d___ l._r. d.._f._i.
+# print j___.d___ ? d.._f...
 # # '{"time1": "2018-12-29T22:26:43.296170", "time2": "2018-12-29T22:26:43.296171", "message": "Testing..."}'
 # # ######################################################################################################################
 # 
@@ -115,35 +115,35 @@
 # print('#' * 52 + '  Lets first write it without the decorator to make sure we have our code correct:')
 # 
 # ___ custom_json_formatter arg
-#     i_ isi.. a.. d..t_
-#         r_ a__.i.f.
-#     e___ isi.. a.. se.
-#         r_ l____ a..
+#     __ isi.. ? d_t_
+#         r_ ?.i.f.
+#     ____ isi.. ? se.
+#         r_ l__ ?
 # 
-# print j___.d___ l._r. d.._c_j_f_a
+# print j___.d___ l._r. d.._?
 # # '{"time": "2018-12-29T22:26:43.760863", "message": "Testing...", "other": ["c", "a", "b"]}'
 # # ######################################################################################################################
 # 
 # print('#' * 52 + '  To make things a little more interesting, lets throw in a custom object as well:')
 # 
 # c_ Person:
-#     ___ __i__ ____ name age
-#         ____.n.. = n..
-#         ____.a.. = a..
-#         ____.create_dt = d..t_.u..n..()
+#     ___ -i name age
+#         ____.?  ?
+#         ____.?  ?
+#         ____.create_dt = d..t_.u..n..
 # 
-#     ___ __r__ ____
-#         r_ _*P.. n.._|____.n.. a.._|____.a..
+#     ___ -r
+#         r_ _*P.. |n.._|____.n.. a.._|____.a..
 # 
 #     ___ toJSON ____
 #         r_
-#             'name': ____.n..,
-#             'age': ____.a..,
-#             'create_dt': ____.create_dt.i.f.()
+#             'name': ____.?
+#             'age': ____.?
+#             'create_dt': ____.?.i.f.
 # 
 # 
 # 
-# p = P.. John 82
+# p = ? John 82
 # print ?
 # print ?.__J..
 # # Person(name=John, age=82)
@@ -154,12 +154,12 @@
 # 
 # 
 # ___ custom_json_formatter arg
-#     i_ isi..(a.. d..t_
-#         r_ a__.i.f.
-#     e___ isi.. a.. s..
-#         r_ l.. a..
-#     e___ isi.. a.. P..
-#         r_ a__.__J..
+#     __ isi..(? d..t_
+#         r_ ?.i.f.
+#     ____ isi.. ? s..
+#         r_ l.. ?
+#     ____ isi.. ? P..
+#         r_ ?.__J..
 # 
 # 
 # log_record _ di.. ti.._d..t_.u..n..
@@ -188,23 +188,23 @@
 #                  '  let `custom_json_formatter` handle serializing the `datetime` object:')
 # 
 # c_ Person
-#     ___ __i__ ____ name age
-#         ____.n.. _ n..
-#         ____.a.. _ a..
+#     ___ - name age
+#         ____.? _ ?
+#         ____.? _ ?
 #         ____.create_dt _ d..t_.u..n..
 # 
-#     ___ __re..__ ____
+#     ___ -r
 #         r_ _*P... n.._|____.n.. a.._ ____.a..
 # 
 #     ___ toJSON ____
 #         r_
-#             'name': ____.n..,
-#             'age': ____.a..,
-#             'create_dt': ____.create_dt
+#             'name': ____.?
+#             'age': ____.?
+#             'create_dt': ____.?
 # 
 # 
 # 
-# p _ P... Monty 100
+# p _ ? Monty 100
 # 
 # log_record _ di.. time_d..t_.u..n..
 #                   message_'Created new person record',
@@ -230,18 +230,18 @@
 # 
 # 
 # c_ Person
-#     ___ __i__ ____ name age
-#         ____.n.. _ n..
-#         ____.a.. _ a..
+#     ___ - name age
+#         ____.?  ?
+#         ____.?  ?
 #         ____.create_dt _ d..t_.u..n..
 # 
-#     ___ __r__ ____
+#     ___ -r
 #         r_ _*P.. n.._|____.n.. a.._|____.a..
 # 
 #     ___ toJSON ____
 #         r_ va.. ____
 # 
-# p _ P.. Python 27
+# p _ ? Python 27
 # 
 # print p.__J..
 # # {'name': 'Python',
@@ -282,28 +282,28 @@
 # # ######################################################################################################################
 # 
 # ___ custom_json_formatter arg
-#     i_ isi.. a.. d..t_
-#         r_ arg.i.f.
-#     e___ isi..(a.. se.
-#         r_ li.. a..
-#     e___
+#     __ isi.. ? d..t_
+#         r_ ?.i.f.
+#     ____ isi.. ? se.
+#         r_ li.. ?
+#     ____
 #         t__
-#             r_ a...__J..
-#         e___ A..E..
-#             t..
-#                 r_ v.. a..
-#             e... T..E..
+#             r_ ?__J..
+#         ____ A..
+#             ...
+#                 r_ v.. ?
+#             .... T.
 #                 r_ st. a..
 # 
 # 
 # print('#' * 52 + '  Lets create another custom class that does not have a `toJSON` method:')
 # 
 # c_ Point
-#     ___ __i__ ____ x y
-#         ____.x _ x
-#         ____.y _ y
+#     ___ - x y
+#         ____.?  ?
+#         ____.?  ?
 # 
-#     ___ __r..__ ____
+#     ___ -r
 #         r_ _*P.. x_|____.x y_|____.y
 # 
 # 
@@ -350,20 +350,20 @@
 # 
 # # Our default approach is going to first try to use toJSON, if not it will try to use vars, and it that still fails
 # # we'll use the string representation, whatever that happens to be:
-# 
-# 0s..d..
+#
+# ??
 # ___ json_format arg
 #     print ?
-#     t__
+#     ___
 #         print('\ttrying to use toJSON...')
-#         r_ a__.__J..
-#     e___ A..E..
+#         r_ ?.__J..
+#     ____ A..
 #         print('\tfailed - trying to use vars...')
 #         t__
-#             r_ va.. a..
-#         e___ T..E..
+#             r_ va.. ?
+#         ____ T..
 #             print('\tfailed - using string representation...')
-#             r_ st. a..
+#             r_ st. ?
 # 
 # # And now we 'register' other data types:
 # 
@@ -400,12 +400,12 @@
 # print('#' * 52 + '  Lets change our Person class to emit some custom JSON instead of just using `vars`:')
 # 
 # c_ Person:
-#     ___ __i__ ____ name age
-#         ____.n.. _ n..
-#         ____.a.. _ a..
+#     ___ - name age
+#         ____.?  ?
+#         ____.?  ?
 #         ____.create_dt _ d..t_.u..n..
 # 
-#     ___ __repr__(____):
+#     ___ -r
 #         r_ _*P.. n.._|____.n.. a.. |____.a..
 # 
 #     ___ toJSON ____
@@ -476,7 +476,7 @@
 # 
 # 0j.._fo__.re.. D...
 # ___ _ arg
-#     r_ _*D.. |st. a.. *
+#     r_ _*D.. |st. ?
 # 
 # 
 # print j___.d___ d... a_1 + 1j,
