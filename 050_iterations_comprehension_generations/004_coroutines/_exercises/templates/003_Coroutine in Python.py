@@ -40,7 +40,7 @@
 #     print("Searching prefix: |".f...  ?
 #     w___ T...
 #         name _ |y..
-#         i_ ? i_ ?
+#         __ ? __ ?
 #             print ?
 #
 # # calling coroutine, nothing will happen
@@ -78,20 +78,20 @@
 #
 # ___ print_name prefix
 #     print("Searching prefix: |".f...  ?
-#     t__
+#     ___
 #         w___ T...
 #             name = |y..
-#             i_ ? i_ ?
+#             __ ? __ ?
 #                 print ?
-#     e____ G...
+#     _____ G...
 #         print("Closing coroutine!!")
 #
 #
 # corou = print_name("Dear")
-# corou.__next__()
-# corou.send("Atul")
-# corou.send("Dear Atul")
-# corou.close()
+# ?.__next__()
+# ?.s..("Atul")
+# ?.s..("Dear Atul")
+# ?.c..
 #
 # # Output:
 # #
@@ -119,7 +119,7 @@
 #     feed it to pattern_filter coroutine
 #     '''
 #     tokens = s__.sp.. (" ")
-#     ___ token i_ ?
+#     ___ token __ ?
 #         n___.se.. ?
 #     n___.cl..
 #
@@ -131,12 +131,12 @@
 #     print_token() coroutine for printing
 #     '''
 #     print("Searching for | ".f...  p..
-#     t__
+#     ___
 #         w___ T...
 #             token _ |y..
-#             i_ p.. i_ ?
+#             __ p.. __ ?
 #                 n____.se.. ?
-#     e____ G..
+#     _____ G..
 #         print("Done with filtering!!")
 #
 #
@@ -146,11 +146,11 @@
 #     received tokens
 #     '''
 #     print("I'm sink, i'll print tokens")
-#     t__
+#     ___
 #         w___ T...
 #             token _ |y..
 #             print ?
-#     e___ G...
+#     ____ G...
 #         print("Done with printing!")
 #
 #
