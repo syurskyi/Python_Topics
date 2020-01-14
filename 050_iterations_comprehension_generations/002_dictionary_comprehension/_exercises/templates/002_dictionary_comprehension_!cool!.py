@@ -1,7 +1,7 @@
 # # Comprehension Syntax Summary
 # # Dictionary comprehension
 #
-# print x x * x ___ ? __ r... 10
+# print x x * x ___ ? __ r... 10   # # Dictionary comprehension
 #
 # # Comprehending Set and Dictionary Comprehensions
 # # Comprehension
@@ -9,17 +9,17 @@
 # #  Set comprehension equivalent
 # # Dict comprehension equivalent
 #
-# print x * x ___ ? __ r__ 10
+# print x * x ___ ? __ r__ 10    # dict
 # se_ x * x ___ ? __ r__ 10    # not dict
-# print x x * x ___ ? __ r__ 10
+# print x x * x ___ ? __ r__ 10  # dict
 # print di.. x x * x| ___ ? __ r__ 10
 #
-# res _ se_
+# res _    # set
 # ___ x __ r__ 10
 #     ?.a.. x * x
 # print ?
 #
-# res _   - # dictionary
+# res _    # dictionary
 # ___ x __ r__ 10
 #     ? |x _ x * x
 #
@@ -29,7 +29,7 @@
 # # results on demand both forms build objects all at once. If you mean to produce keys
 # # and values upon request, a generator expression is more appropriate:
 #
-# G _ x x * x ___ ? __ r__10
+# G _ x x * x ___ ? __ r__10  # generator expression
 # print n.. ?
 #
 # print n.. ?
