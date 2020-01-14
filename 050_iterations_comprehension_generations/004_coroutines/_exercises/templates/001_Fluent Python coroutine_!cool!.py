@@ -22,9 +22,9 @@
 #
 # ___ basic_coroutine1 start
 #     print('Start value:', ?)
-#     first _ y..
+#     first _ ?
 #     print('First received:', ?)
-#     second _ y..
+#     second _ ?
 #     print('Second received:', ?)
 #
 # # Вызываем функцию, чтобы получить генератор:
@@ -84,10 +84,10 @@
 # ___ basic_coroutine2
 #     collection _
 #     w___ T..
-#         item _ y..
-#         i_ ? i_ N...
+#         item _ ?
+#         __ ? __ N...
 #             r_ c..
-#         c_.ap. it..
+#         c_.ap. ?
 #
 #
 # # Инициация генератора и отправка данных выполняется аналогично:
@@ -117,8 +117,8 @@
 # ?.se.. 300
 # t__
 #     ?.se.. N..
-# e_ S___ a_ e
-#     result _ e.va..
+# ___ S___ __ e
+#     result _ ?.va..
 #
 # result
 # # [100, 200, 300]
@@ -127,10 +127,10 @@
 # # В этом примере yield не просто приостанавливает выполнение сопрограммы, а еще и возвращает данные:
 #
 # ___ basic_coroutine3 items
-#     collection _ i ___ i i_ it..
+#     collection _ i ___ ? __ ?
 #     w__ T..
 #         item _ y.. ?
-#         ?.ap. it..
+#         ?.ap. i..
 #
 # # Еще одно небольшое изменение - сопрограмма создана с параметром items. Это значит, что ей можно передавать аргументы:
 #
@@ -288,7 +288,7 @@
 # # При использовании в генераторе, yield from может помочь упростить использование yield в цикле for:
 #
 # ___ generate
-#     ___ i i_ ra.. 5
+#     ___ i __ ra.. 5
 #         y... i
 #
 # li.. ?
@@ -306,15 +306,15 @@
 # # (упрощенный вариант примера 4.14 из книги Python Cookbook:
 #
 # ___ flatten_list alist
-#     ___ item i_ ?
-#         __ ty.. it.. i_ list
-#             y... f.. ? it..
-#         e__
-#             y... it..
+#     ___ item __ ?
+#         __ ty.. ? __ list
+#             y... f.. ? i..
+#         ___
+#             y... i..
 #
 # example = [0, 1, [2, 3], 4, [5, 6, [7, 8]], 9]
 #
-# li.. ? ex..
+# li.. ? ?
 # # Out[7]: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 #
 # # yield from в сопрограммах
@@ -334,8 +334,8 @@
 #             print('Finish subgenerator')
 #             b___
 #         print ?
-#         r__ ? = ?**2
-#     r_ r__
+#         res__|? = ?**2
+#     r_ ?
 #
 #
 # #delegating generator
@@ -352,10 +352,10 @@
 # #caller
 # ___ mainnum_sets
 #     results _  # dict
-#     ___ set_id num_set i_ num_sets.it..
-#         collect _ del_gen r____ set_id
+#     ___ set_id num_set __ n___.it..
+#         collect _ del_gen r____ s..
 #         ne.. ?
-#         ___ num in n._s.
+#         ___ num __ n._s.
 #             c__.se.. n..
 #         c__.se.. N..
 #     r_ r____
@@ -368,8 +368,8 @@
 #
 # # Функция main перебирает наборы чисел и для каждого набора вызывает сопрограмму del_gen и инициирует генератор:
 #
-# ___ set_id, num_set i_ num_sets.it..
-#     collect _ del_gen r... s._i.
+# ___ set_id, num_set __ n__.it..
+#     collect _ del_gen r... s..
 #     ne.. ?
 #
 # # После этого, генератор останавливается на yield и вызывается вложенный генератор power. Теперь send из функции main
