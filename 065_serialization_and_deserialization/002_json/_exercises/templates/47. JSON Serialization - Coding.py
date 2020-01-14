@@ -179,7 +179,7 @@
 # print('#' * 52 + '  `true` was serialized into a `bool`,')
 # print('#' * 52 + '   integer looking values into `int`,')
 # print('#' * 52 + '  float looking values into `float` and sub-objects into `dict`.')
-# print('#' * 52 + '  As you can see deserializing j___ objects into Python is very straightforward and intuitive')
+# print('#' * 52 + '  As you can see deserializing json objects into Python is very straightforward and intuitive')
 # print()
 # print()
 #
@@ -219,16 +219,16 @@
 #
 # print('#' * 52 + '  !!! So `Decimal` objects are not serializable. Lets see the others as well:')
 #
-# t__
+# ___
 #     j___.d... "a": 1+1j
-# e___ T..E.. a_ ex
+# ____ T.. __ ex
 #     print ?
 #
 # # Object of type 'complex' is not JSON serializable
 #
-# t__
-#     j___.d... "a" 1 2 3}   # double {}
-# e___ T..E.. a_ ex
+# ___
+#     j___.d... "a" 1 2 3   # double {}
+# ____ T.. __ ex
 #     print ?
 # # Object of type 'set' is not JSON serializable
 # # Now we could get around that problem by looking at the string representation of those objects
@@ -250,12 +250,12 @@
 #
 #
 # c_ Person
-#     ___ __i__ ____ name age
-#         ____.n.. _ n..
-#         ____.a.. _ a..
+#     ___ -  name age
+#         ____.? _ ?
+#         ____.? _ ?
 #
-#     ___ __r__ ____
-#         r_ _*P.. n.._|____.n..  a.._|____.a..*
+#     ___ -r
+#         r_ _*P.. |n.._|____.n..  a.._|____.a..*
 #
 #
 # p _ P.. John 82
@@ -271,12 +271,12 @@
 #
 #
 # c_ Person
-#     ___ __i__ ____ name age
-#         ____.n.. _ n..
-#         ____.a.. _ a..
+#     ___ - name age
+#         ____.? _ ?
+#         ____.? _ ?
 #
-#     ___ __r__ ____
-#         r_ _*P.. n.._|____.n.. a.._|____.a..*
+#     ___ -r
+#         r_ _*P.. |n.._|____.n.. a.._|____.a..
 #
 #     ___ toJSON ____
 #         r_ di.. n.. _ ____.n.. a. _ ____.a..
@@ -314,12 +314,12 @@
 # print('#' * 52 + '  ')
 #
 # c_ Person
-#     ___ __i__ ____ name age
-#         ____.n.. _ n..
-#         ____.a.. _ a..
+#     ___ - name age
+#         ____.? _ ?
+#         ____.? _ ?
 #
-#     ___ __r__ ____
-#         r_ _*P.. n.._|____.n.. a.._|____.a..
+#     ___ -r
+#         r_ _*P.. |n.._|____.n.. a.._|____.a..
 #
 #     ___ toJSON ____
 #         r__ va.. ____
