@@ -1,6 +1,6 @@
 # ___ gensquares N
-#     ___ i __ r___ N
-#         y___ i ** 2  # Resume here later
+#     ___ i __ r___ ?
+#         y___ ? ** 2  # Resume here later
 #
 # ___ i __ ? 5  # Resume the function
 #     print ? e.._' : '  # # Print last y___ed value
@@ -40,11 +40,11 @@
 # ___ x __ ? 5 print ? e.._'  '
 # print()
 #
-# ___ x __  |n ** 2 ___ n __ r___ 5|| print ? e.._'  '
+# ___ x __  |n ** 2 ___ n __ r___ 5|| print ? e.._'  '    # list
 #
 # print()
 #
-# ___ x i_ ma. ||l____ n n ** 2| r___ 5 print x e.._"  "
+# ___ x __ ma. ||l____ n ? ** 2| r___ 5|| print ? e.._" : "
 #
 # # Generator Functions and Expressions
 # # def  ups()
