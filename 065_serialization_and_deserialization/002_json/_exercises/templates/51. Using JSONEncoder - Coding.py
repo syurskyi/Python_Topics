@@ -42,11 +42,11 @@
 #
 #
 # c_ CustomJSONEncoder j___.J..E..
-#     ___ default ____ a..
-#         i_ isi.. a.. d..t__
-#             r_ a__.i..f..
-#         e__
-#             su__.de.. a__
+#     ___ default ____ arg
+#         __ isi.. ? d..t__
+#             r_ ?.i..f..
+#         ___
+#             su__.de.. ?
 #
 #
 # custom_encoder _ C..
@@ -67,10 +67,10 @@
 #                  '  cannot already serialize on its own (strings, integers, lists, etc).')
 #
 #
-# ___ custom_encoderarg
+# ___ custom_encoder arg
 #     print('Custom encoder called...')
-#     i_ isi.. a__ str
-#         r_ _*some string: a__*
+#     __ isi.. ? str
+#         r_ _*some string: ?
 #
 # # Here we want to "override" dumps default encoding behavior for strings:
 # print j___.du.. 'name' 'Python' de.._cu...
@@ -202,18 +202,18 @@
 #
 #
 # c_ CustomEncoder j___.J..E..
-#     ___ __i..__ ____ 0a.. 00k..
-#         su__.__i__ sk..k.._T..
+#     ___ - $ $$
+#         su__.- sk..k.._T..
 #                          allow_nan_F..
 #                          in.._'---'
 #                          se..._ '', ' = '
 #
 #
-#     ___ default ____ a..
-#         i_ isi.. a__ d..t__
-#             r_ a__.i..f..
-#         e___
-#             r_ su__ .de.. a__
+#     ___ default ____ arg
+#         __ isi.. ? d..t__
+#             r_ ?.i..f..
+#         ____
+#             r_ su__ .de.. ?
 #
 # d =
 #     'time': d..t__.u..n.
@@ -236,21 +236,21 @@
 #
 # c_ CustomEncoder j___.J..E..
 #     ___ default ____ a..
-#         i_ isi.. a__ d..t__
+#         __ isi.. ? d..t__
 #             obj _ di..
 #                 datatype_"d..t__"
-#                 is._a__.i..f..
-#                 da.._a__.da.. .i..f..
-#                 ti.._a__.ti.. .i..f..
-#                 y.._a__.y...
-#                 m.._a__.m...
-#                 d.._a__.d..
-#                 h.._a__.h..
-#                 mi.._a__.m...
-#                 se.._a__.s..
+#                 is._?.i..f..
+#                 da.._?.da.. .i..f..
+#                 ti.._?.ti.. .i..f..
+#                 y.._?.y...
+#                 m.._?.m...
+#                 d.._?.d..
+#                 h.._?.h..
+#                 mi.._?.m...
+#                 se.._?.s..
 #             )
 #             r_ ?
-#         e___
+#         ____
 #             r_ su__ .de.. a_
 # d _ {
 #     'time': d..t__.u..n..
