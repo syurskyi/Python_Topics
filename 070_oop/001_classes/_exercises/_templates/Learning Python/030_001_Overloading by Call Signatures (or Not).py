@@ -1,4 +1,4 @@
-# c_ C:
+# c_ C
 #     ___ meth ____ x
 #         p..
 #     ___ meth____ x, y, z
@@ -7,10 +7,10 @@
 # # Chapters 4 and 9, or the argument list tools introduced in Chapter 18:
 #
 # c_ C
-#     ___ meth ____ 0a.
-#         i_ le. a.. __ 1
+#     ___ meth ____ $
+#         __ le. a.. __ 1
 #             p..
-#         e... ty.. a.. 0 __ in.
+#         .... ty.. a..|0 __ in.
 #             p..
 #
 #
