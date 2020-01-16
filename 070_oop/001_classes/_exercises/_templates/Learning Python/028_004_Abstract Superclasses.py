@@ -1,7 +1,7 @@
 # c_ Super
 #     ___ delegate ___
 #         ___.action
-#     ___ action(___):
+#     ___ ? ___
 #         a... F.. 'action must be defined!'         # If this version called
 #
 #
@@ -12,7 +12,7 @@
 # c_ Super:
 #     ___ delegate ___
 #         ___.action
-#     ___ action ___
+#     ___ ? ___
 #         r... N.. action must be defined!
 #
 #
