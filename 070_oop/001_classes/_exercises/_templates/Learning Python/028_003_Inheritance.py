@@ -19,7 +19,7 @@
 #         print('in Super.method')
 #
 #
-# c_ Sub Super
+# c_ Sub S..
 #     ___ method ____                 # Override method
 #         print('starting Sub.method')     # Add actions here
 #         S__.m... ____            # Run default action
@@ -49,13 +49,13 @@
 #     p...
 #
 #
-# c_ Replacer Super                     # Replace method completely
+# c_ Replacer S..                   # Replace method completely
 #     ___ method ____
 #         print('#' * 23 + ' Replace method completely')
 #         print('in Replacer.method')
 #
 #
-# c_ Extender Super                     # Extend method behavior
+# c_ Extender S...                     # Extend method behavior
 #     ___ method____
 #         print('#' * 23 + ' Extend method behavior')
 #         print('starting Extender.method')
@@ -70,9 +70,9 @@
 #
 #
 # __ _______ __ ________
-#     ___ klass i_ I... R... E..
+#     ___ klass __ I... R... E..
 #         print('\n' + ?. -n + '...')
-#         k__.m..
+#         k__ .m..
 #     print('\nProvider...')
 #     x = P..
 #     ?.d..
