@@ -1,8 +1,8 @@
 # c_ empty:
 #     ___ -g ____ attrname
-#         i_ attrname __ "age":
+#         __ ? __ "age":
 #             r_ 40
-#         e___
+#         ____
 #             r____ A... ?
 # X = ?
 # print(?.age)
@@ -11,9 +11,9 @@
 #
 # c_ accesscontrol
 #     ___ -s ____ attr value
-#         i_ a.. __ 'age'
-#             ____.-d a.. = v..
-#         e____
+#         __ a.. __ 'age'
+#             ____.-d|a.. = v..
+#         _____
 #             r_____ A... a.. + ' not allowed'
 # X = a...
 # X.age = 40                                  # Calls __setattr__
@@ -30,9 +30,9 @@
 #
 # c_ Privacy
 #     ___ -s ____ attrname value         # On ____.attrname = value
-#         i_ a.. i_ ____.privates
+#         __ a.. __ ____.privates
 #             r.. P.. a... ____
-#         e____
+#         _____
 #             ____. -d a... _ v...        # ____.attrname = value loops!
 #
 #
@@ -43,7 +43,7 @@
 # c_ Test2 P..
 #     privates _ name pay
 #     ___ -  ____
-#         ____. -d name _ 'Tom'
+#         ____. -d|n.. _ 'Tom'
 #
 # x = _1
 # y = _2
