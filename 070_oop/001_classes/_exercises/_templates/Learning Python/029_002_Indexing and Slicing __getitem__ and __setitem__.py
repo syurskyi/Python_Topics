@@ -55,14 +55,14 @@
 # X[::2]
 #
 #
-# ___ __setitem__ ____ index value    # Intercept index or slice assignment
+# ___ -s_i_ ____ index value    # Intercept index or slice assignment
 #
 #     ____.data i..  = v..           # Assign index or slice
 #
 #
 # # method __index is only in Python 3.0
 # c_ C
-#     ___ __index__ ____
+#     ___ -i ____
 #         r_ 255
 #
 # X = C()
