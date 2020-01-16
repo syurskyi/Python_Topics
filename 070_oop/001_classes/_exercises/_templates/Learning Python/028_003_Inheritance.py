@@ -1,79 +1,33 @@
-# # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-# '''
-# class Super:
-#     def __init__(self, x):
-#         ...default code...
+# c_ stepper:
+#     ___ -g ____ i
+#         r_ ____.data i
 #
-# class Sub(Super):
-#     def __init__(self, x, y):
-#         Super.__init__(self, x)             # Run superclass __init__
-#         ...custom code...                   # Do my init actions
+# X = ?                     # X is a stepper object
+# X.data = "Spam"
+# print('#' * 23 + ' Indexing calls __getitem__')
+# print(X[1])                              # Indexing calls __getitem__
 #
-# I = Sub(1, 2)
-# '''
-# # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# print('#' * 23 + ' for loops call __getitem__')
+# ___ item __ X                    # for loops call __getitem__
+#     print ?          # for indexes items 0..N
 #
 #
-# c_ Super
-#     ___ method ____
-#         print('in Super.method')
+# print('#' * 23 + '  All call __getitem__ too')
+# print('p' in X)                          # All call __getitem__ too
+#
+# print('#' * 23 + ' List comprehension')
+# print c ___ ? __ X                    # List comprehension
+#
+# print('#' * 23 + '   map calls (use list() in 3.0)')
+# print li.. ? st_.up.. ?           # map calls (use list() in 3.0)
 #
 #
-# c_ Sub S..
-#     ___ method ____                 # Override method
-#         print('starting Sub.method')     # Add actions here
-#         S__.m... ____            # Run default action
-#         print('ending Sub.method')
+# (a, b, c, d) = X                  # Sequence assignments
+# print('#' * 23 + ' Sequence assignments')
+# print(a, c, d)
 #
-# x _ S..                            # Make a Super instance
-# print('#' * 23 + ' Runs Super.method')
-# ?.m..                               # Runs Super.method
+# print('#' * 53)
+# print(li.. ? tu.. ? ''.jo.. ?
 #
-# x = Su.                                # Make a Sub instance
-# print('#' * 23 + ' Runs Sub.method, calls Super.method')
-# ?.m..                              # Runs Sub.method, calls Super.method
-#
-#
-# # ## file: specialize.py
-#
-#
-# c_ Super
-#     ___ method ____
-#         print('#' * 23 + ' Default behavior')
-#         print('in Super.method')           # Default behavior
-#     ___ delegate ____
-#         ____.action()                      # Expected to be defined
-#
-#
-# c_ Inheritor S..                    # Inherit method verbatim
-#     p...
-#
-#
-# c_ Replacer S..                   # Replace method completely
-#     ___ method ____
-#         print('#' * 23 + ' Replace method completely')
-#         print('in Replacer.method')
-#
-#
-# c_ Extender S...                     # Extend method behavior
-#     ___ method____
-#         print('#' * 23 + ' Extend method behavior')
-#         print('starting Extender.method')
-#         S___.m... ____
-#         print('ending Extender.method')
-#
-#
-# c_ Provider S..                     # Fill in a required method
-#     ___ action ____
-#         print('#' * 23 + ' Fill in a required method')
-#         print('in Provider.action')
-#
-#
-# __ _______ __ ________
-#     ___ klass __ I... R... E..
-#         print('\n' + ?. -n + '...')
-#         k__ .m..
-#     print('\nProvider...')
-#     x = P..
-#     ?.d..
-#
+# print('#' * 53)
+# print(X)
