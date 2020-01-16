@@ -1,5 +1,5 @@
 # c_ Callee
-#     ___ -c ____ 0pa.. 00ka..   # Intercept instance calls
+#     ___ -c ____ $p $$k   # Intercept instance calls
 #         print('Called:', pa.. ka..     # Accept arbitrary arguments
 #
 # C = ?
@@ -31,7 +31,7 @@
 # #
 # c_ Prod
 #     ___ - ____ value            # Accept just one argument
-#         ____.v.. _ v..
+#         ____.?  ?
 #
 #     ___ -c ____ other
 #         r_ ____.v.. * o..
@@ -45,8 +45,8 @@
 #
 # c_ Prod
 #     ___ - ____ value
-#         ____.v.. _ v..
-#     ___ comp ____ other):
+#         ____.?  ?
+#     ___ comp ____ other
 #         r_ ____.v.. * o..
 #
 # x = ? 3
@@ -60,14 +60,14 @@
 # #
 # c_ Callback
 #     ___ - ____ color             # Function + state information
-#         ____.c.. _ c..
+#         ____.?  ?
 #
 #     ___ -c ____                      # Support calls with no arguments
-#         print('turn', ____.c...
+#         print('turn', ____.?
 #
 #
-# # cb1 = Callback('blue')                       # Remember blue
-# # cb2 = Callback('green')
+# # cb1 = ? blue                      # Remember blue
+# # cb2 = ? green
 # #
 # # B1 = Button(command=cb1)                     # Register handlers
 # # B2 = Button(command=cb2)                     # Register handlers
