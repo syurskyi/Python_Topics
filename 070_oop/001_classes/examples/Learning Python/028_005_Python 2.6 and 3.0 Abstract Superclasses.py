@@ -25,12 +25,12 @@ class Super(metaclass=ABCMeta):
     def action(self):
         pass
 
-X = Super()
+# X = Super()
 # TypeError: Can't instantiate abstract class Super with abstract methods action
 
 class Sub(Super): pass
 
-X = Sub()
+# X = Sub()
 # TypeError: Can't instantiate abstract class Sub with abstract methods action
 
 class Sub(Super):
