@@ -1,11 +1,11 @@
 # ### file: employees.py
 #
 #
-# c_ Employee:
+# c_ Employee
 #
 #     ___ - ____, name, salary_0
-#         ____.n.. _ n..
-#         ____.s.. _ s..
+#         ____.?  ?
+#         ____.?  ?
 #
 #     ___ giveRaise ____ percent
 #
@@ -15,7 +15,7 @@
 #         print(____.n.., "does stuff")
 #
 #     ___ -r ____
-#         return "<Employee: name=/_, salary=/_>" / ____.n.. ____.s..
+#         return "<Employee: n.._@, s.._@>" / ____.? ____.?   # string
 #
 #
 # c_ Chef ?
@@ -55,7 +55,7 @@
 #     print(bob); print()
 #
 #     print('#' * 23 + ' for klass in Employee, Chef, Server, PizzaRobot:')
-#     ___ klass i_ E... C... S... P..
-#         obj _ k_ k___. -n
+#     ___ klass __ E... C... S... P..
+#         obj _ ?|?. -n
 #         ?.w..
 #
