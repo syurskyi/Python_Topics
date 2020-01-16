@@ -11,7 +11,7 @@
 #
 # c_ addrepr a..                        # Inherit __init__, __add__
 #     ___ -r ___                      # Add string representation
-#         r_ 'addrepr(/_)'/ ____.data     # Convert to as-code string
+#         r_ 'addrepr|@'  ____.data     # Convert to as-code string  # string
 #
 # x = ? 2                              # Runs __init__
 # print(x + 1)                                        # Runs __add__
@@ -25,7 +25,7 @@
 #
 # c_ addstr a..
 #     ___ -s ____                       # __str__ but no __repr__
-#         r_ '[Value: /_]' / ____.data     # Convert to nice string
+#         r_ '[Value: @]' / ____.d..     # Convert to nice string # string
 #
 # x = a... 3
 # x + 1
@@ -40,9 +40,9 @@
 #
 # c_ addboth a..
 #     ___ -s ____
-#         r_ '[Value: /_' / ____.data     # User-friendly string
-#     ___ __repr__(____):
-#         r_ 'addboth(/_' / ____.data     # As-code string
+#         r_ '[Value: @'  ____.d..     # User-friendly string
+#     ___ -r ____
+#         r_ 'addboth(@'  ____.d..     # As-code string
 #
 # x = ? 4
 # x + 1
@@ -55,14 +55,14 @@
 #
 # c_ Printer:
 #     ___ - ____ val
-#         ____.v.. _ v..
+#         ____.?  ?
 #     ___ -s ____                  # Used for instance itself
-#         r_ st. ____.v..            # Convert to a string result
+#         r_ st. ____.?            # Convert to a string result
 #
 # objs =  ? 2  ? 3
 # print('#' * 23 + ' __str__ run when instance printed')
 # print('#' * 23 + ' But not when instance in a list!')
-# ___ x i_ o.. print(x)                 # __str__ run when instance printed
+# ___ x __ ? print(x)                 # __str__ run when instance printed
 #                                         # But not when instance in a list!
 #
 #
@@ -75,13 +75,13 @@
 #
 # c_ Printer
 #     ___ - ____ val
-#         ____.v.. _ v..
+#         ____.?  ?
 #     ___ -r ____                 # __repr__ used by print if no __str__
-#         r_ st. ____.v..            # __repr__ used if echoed or nested
+#         r_ st. ____.?            # __repr__ used if echoed or nested
 #
 # objs =  ? 2 ? 3
 # print('#' * 23 + ' No __str__: runs __repr__')
-# ___ x i_ ? print(x)                 # No __str__: runs __repr__
+# ___ x __ ? print(x)                 # No __str__: runs __repr__
 # #
 # #
 # #
