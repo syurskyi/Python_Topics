@@ -5,12 +5,12 @@
 #
 # c_ Customer
 #     ___  - ____ name
-#         ____.n... _ n...
+#         ____.?  ?
 #
 #     ___ order ____ server
 #         print(____.n... "orders from" s..
 #
-#     ___ pay(____ server
+#     ___ pay ____ server
 #         print(____.n..., "pays for item to" s..
 #
 #
@@ -27,13 +27,13 @@
 #
 #     ___ order ____ n...
 #         customer = C... n...           # Activate other objects
-#         ?.order(____.s..         # Customer orders from server
+#         ?.order ____.s..         # Customer orders from server
 #         ____.c__.w..
 #         ____.o__.bake
 #         c__.pay ____.s...
 #
 # __ ______ __ _____
-#     scene = P.S.                    # Make the composite
+#     scene = P...                    # Make the composite
 #     print('#' * 23 + ' Simulate Homers order')
 #     ?.o.. Homer                    # Simulate Homer's order
 #     print('...')
