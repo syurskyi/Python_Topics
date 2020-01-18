@@ -1,4 +1,4 @@
-# c_ C1:
+# c_ C1
 #     ___ meth1 ____ ____.X = 88         # I assume X is mine
 #
 #     ___ meth2 ____ print(____.X
@@ -19,7 +19,7 @@
 # ### file: private.py
 #
 #
-# c_ C1:
+# c_ C1
 #     ___ meth1 ____ ____.__X = 88       # Now X is mine
 #
 #     ___ meth2 ____ print(____.__X)     # Becomes _C1__X in I
@@ -39,7 +39,7 @@
 # ?._2 ?.m_b
 #
 #
-# c_ Super:
+# c_ Super
 #     ___ method ____                  # A real application method
 #         p___
 #
@@ -48,7 +48,7 @@
 #     ___ __method ____                 # Becomes _Tool__method
 #         p..
 #
-#     ___ other ____ ____.__me..       # Use my internal method
+#     ___ other ____ ____.?       # Use my internal method
 #
 #
 # c_ Sub1 T.. S..
