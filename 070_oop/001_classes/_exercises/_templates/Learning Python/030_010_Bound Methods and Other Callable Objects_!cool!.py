@@ -48,7 +48,7 @@
 # #
 # print('#' * 23 + ' Function, instance, method. All 3 called same way. Call any 1-arg callable')
 # ___ act __ a..                          # All 3 called same way
-#     print  5                            # Call any 1-arg callable
+#     print ? 5                            # Call any 1-arg callable
 # #
 # #
 # print('#' * 23 + ' Index, comprehensions, maps')
