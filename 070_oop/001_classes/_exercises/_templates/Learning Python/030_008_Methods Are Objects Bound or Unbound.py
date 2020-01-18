@@ -9,13 +9,13 @@
 #
 # print('#' * 23 + ' Bound method')
 # object1 _ ?
-# x _ _1.d..        # Bound method object: instance+function
+# x _ ?.d..        # Bound method object: instance+function
 # ? hello world        # Same effect as object1.doit('...')
 #
 #
 # print('#' * 23 + ' Bound method')
 # object1 _ S..
-# t = ?.d..          # Unbound method object (a function in 3.0: see ahead)
+# t = S_.d..          # Unbound method object (a function in 3.0: see ahead)
 # ? _1 'howdy'     # Pass in instance (if the method expects one in 3.0)
 #
 #
