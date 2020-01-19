@@ -4,9 +4,9 @@
 # # Map 1..N to 0..N-1; call back to built-in version.
 #
 # c_ MyList li..
-#     ___ -g ____ offset
-#         print('(indexing /_ at /_)' /  ____ of..
-#         r_ li__. -g ____ of.. - 1)
+#     ___ -g  offset
+#         print('(indexing @ at @)' @  ____ ?
+#         r_ li__. -g ____ ? - 1)
 #
 # __ _____ __ _____
 #     print(li.. ('abc'))
@@ -23,25 +23,25 @@
 # ### file: setsubclass.py
 #
 # c_ Set li..
-#     ___  - ____ value _     # list      # Constructor
+#     ___  -  value _     # list      # Constructor
 #         li__. - |                # Customizes list
-#         ____.concat v..               # Copies mutable defaults
+#         ____.co.. v..               # Copies mutable defaults
 #
 #     ___ intersect ____ other          # other is any sequence
 #         res _    # list                         # ____ is the subject
-#         ___ x i_ ____
-#             i_ x i_ o...               # Pick common items
+#         ___ x __ ____
+#             __ x __ o...               # Pick common items
 #                 ?.ap.. x
 #         r_ S.. ?                  # Return a new Set
 #
 #     ___ union ____ other              # other is any sequence
 #         res _ S.. ____                  # Copy me and my list
-#         ?.concat o.
+#         ?.co.. o.
 #         r_ ?
 #
 #     ___ concat ____ value             # value: list, Set . . .
-#         ___ x i_ v..                  # Removes duplicates
-#             i_ no. x i_ ____
+#         ___ x __ ?                  # Removes duplicates
+#             __ no. x __ ____
 #                 ____.ap.. x
 #
 #     ___ -a  ____ other r_ ____.in... o..

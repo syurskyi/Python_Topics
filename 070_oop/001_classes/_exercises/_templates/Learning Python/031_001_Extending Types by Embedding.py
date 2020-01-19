@@ -1,42 +1,42 @@
 # ### file: setwrapper.py
 #
-# c_ Set:
-#    ___  - ____ value_    # Constructor
+# c_ Set
+#    ___  -  value _    # Constructor  # List
 #        ____.data _     # list                 # Manages a list
 #        ____.concat v...
 #
-#    ___ intersect ____ other        # other is any sequence
+#    ___ intersect  other        # other is any sequence
 #        res _    # list                      # self is the subject
-#        ___ x i_ ____.data
-#            i_ x i_ o..             # Pick common items
+#        ___ x __ ____.d..
+#            __ x __ o..             # Pick common items
 #                ?.ap.. x
 #        r_ S.. ?                # Return a new Set
 #
-#    ___ union ____ other            # other is any sequence
+#    ___ union  other            # other is any sequence
 #        res = ____.data               # Copy of my list
-#        ___ x i_ o...                # Add items in other
-#            i_ no. x i_ ?
+#        ___ x __ o...                # Add items in other
+#            __ no. x __ ?
 #                ?.ap... x
 #        r_ S... ?
 #
-#    ___ concat ____ value          # value: list, Set...
-#        ___ x i_ v...                # Removes duplicates
-#           i_ no. x i_ ____.data
+#    ___ concat  value          # value: list, Set...
+#        ___ x __ ?                # Removes duplicates
+#           __ no. x __ ____.d..
 #                ____.d__.ap.. x
 #
-#    ___ -l ____
+#    ___ -l
 #        r_ le. ____.d..            # len(self)
 #
-#    ___ -g ____ key
+#    ___ -g key
 #        r_ ____.d.. k..            # self[i]
 #
-#    ___ -a ____ other
-#        r_ ____.intersect o..     # self & other
+#    ___ -an  other
+#        r_ ____.in... o..     # self & other
 #
-#    ___ -o ____ other
-#        r_ ____.union o..         # self | other
+#    ___ -o other
+#        r_ ____.un.. o..         # self | other
 #
-#    ___ -r ____
+#    ___ -r
 #        r_ 'Set:' + r.. ____.d..  # print()
 #
 #
