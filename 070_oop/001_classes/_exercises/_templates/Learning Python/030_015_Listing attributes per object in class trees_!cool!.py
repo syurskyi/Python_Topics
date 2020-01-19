@@ -11,7 +11,7 @@
 #     """
 #     ___ -s ____
 #         ____.__visited _       # dict
-#         r_ '<Instance of _, address _ :\n _ _>'.f...(
+#         r_ '<Instance of @, address @ :\n @ @>'.f...(
 #                            ____.-c.-n
 #                            i. ____
 #                            ____.__a.. ____ 0
@@ -19,30 +19,30 @@
 #
 #     ___ __listclass ____ aClass indent
 #         dots = '.' * indent
-#         i_ aClass i_ ____.__v..
+#         __ aC.. __ ____.__v..
 #             r_ '\n _ <Class _ :, address _ : (see above)>\n'.f...(
 #                            d..
-#                            aC__. -n
-#                            id aCl..
-#         e___
+#                            a__. -n
+#                            id a__
+#         ____
 #             ____.__v... aC.. _ T...
-#             genabove _ ____.__l.. c, in..+4) ___ c i_ aC__. -b)
-#             r_ '\n _ <Class _ , address _ :\n _ _ _ >\n'.f...(
+#             genabove _ ____.__l.. c, in..+4| ___ c __ aC__. -b|
+#             r_ '\n @ <Class @ , address @ :\n @ @ @ >\n'.f...(
 #                            d..
-#                            aC___. -n
-#                            id aC..
-#                            ____.__attrnames aC... in...
+#                            a___. -n
+#                            id aC__
+#                            ____.__att.. a... in...
 #                            ''.j... g..
 #                            d...
 #
 #     ___ __attrnames ____ obj indent
-#         spaces _ ' ' * (indent + 4)
+#         spaces _ ' ' * (in.. + 4)
 #         result _ ''
-#         ___ attr i_ so.. ?. -d
-#             i_ a__.s_s_('__') an. a__.e.w. '__'
-#                 result +_ s... + ' _ =<>\n'.f... a..
-#             e___
-#                 r___ +_ s___ + ' _ _ _ \n'.f... a... getattr o... a..
+#         ___ attr __ so.. o. -d
+#             __ a__.s_s_('__') an. a__.e.w. '__'
+#                 r.. +_ s... + ' @ =<>\n'.f... a..
+#             ____
+#                 r___ + @ s___ + ' @ @ @# \n'.f... a... getattr o... a..
 #         r_ r...
 #
 #
