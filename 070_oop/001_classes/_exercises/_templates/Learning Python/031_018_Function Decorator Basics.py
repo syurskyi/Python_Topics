@@ -7,18 +7,18 @@
 # c_ C
 #    ___ meth
 #        ...
-#    meth _ st... m..                   # Rebind name
+#    meth _ st... ?                   # Rebind name
 #
 #
 #
 # c_ Spam
 #     numInstances _ 0
 #     ___ - ____
-#         S_.n... _ ?.nu... + 1
+#         ?.? _ ?.? + 1
 #
 #     0s..
-#     ___ printNumInstances(
-#         print("Number of instances created: ", S_.nu...
+#     ___ printNumInstances
+#         print("Number of instances created: ", ?.?
 #
 # a = ?
 # b = ?
