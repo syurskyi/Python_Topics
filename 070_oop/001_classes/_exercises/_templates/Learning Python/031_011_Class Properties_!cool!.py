@@ -1,9 +1,9 @@
-# c_ classic:
+# c_ classic
 #     ___ -g ____ name
-#         i_ name __ 'age':
+#         __ name __ 'age':
 #             r_ 40
-#         e___
-#             r.. A..
+#         ____
+#             ra.. A..
 #
 # x = ?
 # print('#' * 23 + ' Runs __getattr__')
@@ -31,9 +31,9 @@
 #         r_ 40
 #
 #     ___ setage ____ value
-#         print('set age:' v..
-#         ____._age _ v..
-#     age = pr.. g.. s.. N.. N..
+#         print('set age:' ?
+#         ____._age _ ?
+#     age = pr.. ? ? N.. N..
 #
 # x = ?
 # print('#' * 23 + ' Runs getage')
@@ -44,7 +44,7 @@
 # print('#' * 23 + ' Normal fetch; no getage call')
 # print ?._a..                                        # Normal fetch; no getage call
 #
-# ?.j.. _ 'trainer'                             # Normal assign; no setage call
+# ?.job _ 'trainer'                             # Normal assign; no setage call
 # print('#' * 23 + ' Normal fetch; no getage call')
 # print ?.j..                                         # Normal fetch; no getage call
 #
@@ -53,14 +53,14 @@
 #     ___ -g ____ name              # On undefined reference
 #         __ name __ 'age'
 #             r_ 40
-#         e__
+#         ___
 #             r____ A...
 #
 #     ___ -s ____ name value       # On all assignments
-#         print('set:', n.. v..
-#         i_ n.. __ 'age'
+#         print('set:', ? ?
+#         __ n.. __ 'age'
 #             ____. -d  '_age' _ v...
-#         e___
+#         ____
 #             ____. -d name _ v...
 #
 # x _ cl...
