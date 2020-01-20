@@ -3,10 +3,10 @@
 # c_ Spam
 #     numInstances = 0
 #     ___ - ____
-#         ?.n.. _ ?.n.. + 1
+#         ?.? _ ?.? + 1
 #
 #     ___ printNumInstances ____
-#         print("Number of instances created: " ?.n..
+#         print("Number of instances created: " ?.?
 #
 # # from spam import Spam
 # a = ?                   # Cannot call unbound class methods in 2.6
