@@ -1,5 +1,5 @@
 # c_ limiter o..
-#     __slots__ = 'age', 'name', 'job'
+#     -s = 'age', 'name', 'job'
 #
 # x = ?
 # ?.a..                                          # Must assign before use

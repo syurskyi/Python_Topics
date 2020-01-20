@@ -2,7 +2,7 @@
 #     ___ - ____ data
 #         ____.d.. _ ?
 #
-#     ___ selfless ____ arg1, arg2               # A simple function in 3.0
+#     ___ selfless arg1, arg2               # A simple function in 3.0
 #         r_ arg1 + arg2
 #
 #     ___ normal ____ arg1, arg2           # Instance expected when called

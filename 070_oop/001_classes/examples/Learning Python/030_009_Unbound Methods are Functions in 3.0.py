@@ -2,7 +2,7 @@ class Selfless:
     def __init__(self, data):
         self.data = data
 
-    def selfless(self, arg1, arg2):               # A simple function in 3.0
+    def selfless(arg1, arg2):               # A simple function in 3.0
         return arg1 + arg2
 
     def normal(self, arg1, arg2):           # Instance expected when called
