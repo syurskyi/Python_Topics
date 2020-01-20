@@ -1,13 +1,13 @@
 # c_ tracer
 #     ___ - ____ func
 #         ____.calls _ 0
-#         ____.func  _ f..
-#     ___ -c ____ 0a..
+#         ____.func  _ ?
+#     ___ -c ____ $
 #         ____.ca.. +_ 1
-#         print('call /_ to /_' / ____.c... ____.f__. -n
-#         ____.f... 0a..
+#         print('call @ to @'  ____.c... ____.f__. -n
+#         ____.f... @
 #
-# 0t..                      # Same as spam = tracer(spam)
+# ??                      # Same as spam = tracer(spam)
 # ___ spam(a, b, c):            # Wrap spam in a decorator object
 #     print(a, b, c)
 #
