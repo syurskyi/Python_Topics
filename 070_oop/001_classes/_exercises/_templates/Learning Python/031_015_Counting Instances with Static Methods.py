@@ -1,10 +1,10 @@
 # c_ Spam
 #     numInstances = 0                         # Use static method for class data
 #     ___ -  ____
-#         S__.n.. +_ 1
+#         ?.? +_ 1
 #     ___ printNumInstances
-#         print("Number of instances:", S_.n..
-#     printNumInstances _ st... p...
+#         print("Number of instances:", ?.?
+#     ? _ st... p...
 #
 # a = ?
 # b = ?
@@ -16,8 +16,8 @@
 # c_ Sub S..
 #     ___ p...                 # Override a static method
 #         print("Extra stuff...")              # But call back to original
-#         S_.p..
-#     printNumInstances = st... p..
+#         ?.?
+#     ? = st... p..
 #
 # a = Su.
 # b = Su.
@@ -31,6 +31,6 @@
 # c_ Other S..
 #     p..                       # Inherit static method verbatim
 #
-# c _ O..
+# c _ ?
 # ?.p...
 # # Number of instances: 3
