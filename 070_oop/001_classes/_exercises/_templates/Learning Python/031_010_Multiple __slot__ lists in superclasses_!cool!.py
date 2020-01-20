@@ -14,7 +14,7 @@
 # X. -s                           # Instance inherits *lowest* __slots__
 # X. -d                            # And has its own an attr dict
 #
-# ___ attr i_ li.. g.. X '-d' | + g..  X ' -s' |
+# ___ attr __ li.. g.. X '-d'|||| + g..  X ' -s' ||||
 #     print a.. '=>', g.. X a..
 #
 # # b => 2                                    # Superclass slots missed!
