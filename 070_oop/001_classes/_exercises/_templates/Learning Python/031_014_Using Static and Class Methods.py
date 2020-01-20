@@ -1,44 +1,34 @@
-# # A decorator for both functions and methods
-#
-# ___ tracer func                        # Use function, not class with __call__
-#     calls = 0                            # Else "self" is decorator instance only!
-#     ___ onCall($ $$:
-#         no... ?
-#         ? +_ 1
-#         print('call @ to @' @ c.. func. -n
-#         r_ f.. $ $$
-#     r_ o...
-#
-#
-# # Applies to simple functions
-#
-# _t...
-# ___ spam(a, b, c):                       # spam = tracer(spam)
-#     print(a + b + c)                     # onCall remembers spam
-#
-# spam(1, 2, 3)                            # Runs onCall(1, 2, 3)
-# spam(a=4, b=5, c=6)
-#
-#
-# # Applies to class method functions too!
-#
-# c_ Person
-#     ___ - ___ name pay
-#         ___.n... _ n...
-#         ___.p..  _ p..
-#
-#     _t...
-#     ___ giveRaise ___ percent        # giveRaise = tracer(giverRaise)
-#         ___.p.. *_ (1.0 + p...      # onCall remembers giveRaise
-#
-#     _t...
-#     ___ lastName ___                  # lastName = tracer(lastName)
-#         r_ ___.n....sp.. -1
-#
-# print('methods...')
-# bob = Person('Bob Smith', 50000)
-# sue = Person('Sue Jones', 100000)
-# print(bob.n..., sue.n...)
-# sue.giveRaise(.10)                       # Runs onCall(sue, .10)
-# print(sue.p..)
-# print(bob.lastName(), sue.lastName())    # Runs onCall(bob), lastName in scopes
+# c_ Methods
+#     ___ imeth ____ x           # Normal instance method: passed a self
+#         print ____ ?
+# 
+#     ___ smeth x                 # Static: no instance passed
+#         print(x)
+# 
+#     ___ cmeth ___ x             # Class: gets class, not instance
+#         print ___ ?
+# 
+#     smeth = s... s..    # Make smeth a static method
+#     cmeth = c... c..     # Make cmeth a class method
+# 
+# 
+# 
+# obj = ?               # Make an instance
+# 
+# ?.i.. 1                  # Normal method, call through instance
+# # <__main__.Methods object...> 1     # Becomes imeth(obj, 1)
+# 
+# M__.i.. ? 2          # Normal method, call through class
+# # <__main__.Methods object...> 2     # Instance passed explicitly
+# 
+# M__.s.. 3               # Static method, call through class
+#                                   # No instance passed or expected
+# 
+# ?.s.. 4                   # Static method, call through instance
+#                                   # Instance not passed
+# 
+# M__.c.. 5               # Class method, call through class
+# # <class '__main__.Methods'> 5       # Becomes cmeth(Methods, 5)
+# 
+# ?.c.. 6                   # Class method, call through instance
+# # <class '__main__.Methods'> 6       # Becomes cmeth(Methods, 6)
