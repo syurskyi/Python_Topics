@@ -1,4 +1,3 @@
-
 class Spam:
     numInstances = 0
     def count(cls):                    # Per-class instance counters

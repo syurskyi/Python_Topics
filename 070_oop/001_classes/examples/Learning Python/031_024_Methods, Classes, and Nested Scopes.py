@@ -1,4 +1,3 @@
-
 def generate():                  # Fails prior to Python 2.2, works later
     class Spam:
         count = 1
