@@ -1,7 +1,7 @@
 # # Propagating Exceptions with raise
-# t__
+# ___
 #     r... I...( spam # Exceptions remember arguments
-# e_____ I...
+# ______ I...
 #     print('propagating')
 #     r... # Reraise most recent exception
 #

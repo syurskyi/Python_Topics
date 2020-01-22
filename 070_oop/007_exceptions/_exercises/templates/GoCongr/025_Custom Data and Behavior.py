@@ -1,13 +1,13 @@
 # # Custom Data and Behavior
 # c_ FormatError E..
 #     ___ - ____ line file
-#         ____.l.. _ l..
-#         ____.f.. _ f..
+#         ____.?  ?
+#         ____.?  ?
 #
 # ___ parser
 #     r... ? 42 file _ 'spam.txt'     # When error  found
 #
-# t__
+# ___
 #     p..
-# e__ ? a_ X
+# ___ ? __ X
 #     print 'Error at' ?.f.. ?.l..

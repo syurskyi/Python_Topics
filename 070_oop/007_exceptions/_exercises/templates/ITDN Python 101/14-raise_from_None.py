@@ -1,7 +1,7 @@
 # a = 5
 # b = 0
 #
-# t__
+# ___
 #     c = a / b
-# e____ Z.... a_ error:
+# _____ Z.... __ error
 #     r____('variable b is incorrect') f.. N..

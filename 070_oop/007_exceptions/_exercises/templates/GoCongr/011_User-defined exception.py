@@ -5,9 +5,9 @@
 #
 #
 # ___ grail
-# 	r___ A... # Raise an instance
+# 	r___ ?    # Raise an instance
 #
-# t__
+# ___
 #     g..
-# e___ A..     # Catch class name
+# ____ ?     # Catch class name
 # 	print('got exception')

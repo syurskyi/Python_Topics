@@ -1,24 +1,24 @@
 # # default_except_clause
-# t__
+# ___
 #     x _ 3 / 0
-# e____
+# _____
 #     p___
 #
 # print('Program flow goes further')
 #
 # # unhandled_exception
-# t__
+# ___
 #     r____ V...
-# e____ Z.....
+# _____ Z.....
 #     print('Division by zero')
 #
 # # unhandled_exception_in_inner_try
-# t__
-#     t__
+# ___
+#     ___
 #         r____ V...('incorrect value')
-#     e____ Z.....
+#     _____ Z.....
 #         print('division by zero')
-# e____ E... a_ e
+# _____ E... __ e
 #     print ?
 #
 # # exception_in_destructor
@@ -36,54 +36,54 @@
 # print('Done')
 #
 # # raise_in_except
-# t__
-#     t__
+# ___
+#     ___
 #         r____ V...('value is incorrect')
-#     e____ V... a_ error
+#     _____ V... a_ error
 #         print('Exception:', ?)
 #         r____
-# e____ V...
+# _____ V...
 #     print('ValueError detected')
 #
 # # raise_another_exception_in_except
 # a _ 5
 # b _ 0
 #
-# t__
+# ___
 #     c _ a / b
-# e____ Z.....
+# _____ Z.....
 #     r____ V...
 #
 # # raise_from
 # a _ 5
 # b _ 0
 #
-# t__
+# ___
 #     c _ a / b
-# e____ Z..... a_ error
+# _____ Z..... a_ error
 #     r____ V...('variable b is incorrect') fr.. ?
 #
 # # raise_from_None
 # a _ 5
 # b _ 0
 #
-# t__
+# ___
 #     c _ a / b
-# e____ Z..... a_ error
+# _____ Z..... a_ error
 #     r____ V...('variable b is incorrect') fr.. N..
 #
 # # else
 # ___ divide_numbers
 #     w____ T..
-#         t__
+#         ___
 #             first_number _ float(input('First number: '))
 #             second_number _ float(input('Second number: '))
 #             result _ first_number / second_number
-#         e____ V... Z..... a_ error
+#         _____ V... Z..... a_ error
 #             print('Error:', ?)
 #             print('Please t__ again')
 #             print()
-#         e___
+#         ____
 #             print('Result:' ?
 #             b____
 #
@@ -96,19 +96,19 @@
 #     response _ N..
 #     w___ ? !_ 'y' and ? !_ 'n'
 #         ? _ inp.. ('r____ an exception? (y/n) ')
-#     i_ ? __ 'y'
+#     __ ? __ 'y'
 #         r____ E..
 #
 #
-# t__
+# ___
 #     ?
-# e____
+# _____
 #     print('Exception handler')
 # f_____
 #     print('Finally block')
 #
 # # t__-finally
-# t__
+# ___
 #     2 / 0
 # f____
 #     print('Finally block is always executed')

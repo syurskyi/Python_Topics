@@ -3,16 +3,16 @@
 #
 #
 # ___ input_body_parameter name unit supposed_maximum
-#     parameter  _  fl..  inp.. 'Enter your | (in |): '.f.... n.. u...
-#     i_ ? < _  0:
+#     parameter  _  fl..  inp.. 'Enter your @ (in @): '.f.... n.. u...
+#     __ ? < _  0:
 #         r____ V... n.. + ' cannot be negative')
-#     i_ ? > s...
+#     __ ? > s...
 #         w____.w... 'suspiciously large value of ' + n..
 #     r_ ?
 #
 #
 # ___ input_mass
-#     r_ i... n... _ 'mass' u... _ 'kg' s.... _ 100
+#     r_ i... n... _'mass' u... _'kg' s.... _ 100
 #
 #
 # ___ input_height

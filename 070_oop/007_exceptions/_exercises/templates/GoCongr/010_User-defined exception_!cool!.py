@@ -2,12 +2,12 @@
 #
 # # User-defined exception
 # #
-# # # r___ an instance
+# # # Raise an instance
 # c_ Bad E..
 #     p___
 #
 # ___ doomed
-#     r___ B..
+#     r___ ?
 #
 # # User-defined exception
 # # Catch class name
@@ -15,9 +15,9 @@
 #     p___
 #
 # ___ doomed
-#     r___ B..
+#     r___ ?
 #
-# t__
+# ___
 #     d..
-# e___ B..                           # Catch class name
+# ____ ?                           # Catch class name
 #     print('got Bad')

@@ -3,8 +3,8 @@
 #
 #
 # # try_except
-# t__
+# ___
 #     x = 2 / 0
-# e__ Z...
+# ___ Z...
 #     print('Division by zero detected'
 #

@@ -1,5 +1,5 @@
 # # Coding Exceptions Classes
-# c_ General ? p_
+# c_ General E.. p_
 # c_ Specific1 ? p_
 # c_ Specific2 ? p_
 #
@@ -15,9 +15,9 @@
 #     X = S.2       # Raise different subclass instance
 #     r_ X
 #
-# ___ func i_ _0 _1 _2
-#     t__
+# ___ func __ _0 _1 _2
+#     ___
 #         f...
-#     e___ G...       # Match General or any subclass of it
+#     ____ G...       # Match General or any subclass of it
 #         _______ __
 #         print('caught:', ___.ex.. 0|

@@ -1,86 +1,86 @@
 # # Basic try/e___
-#
+# ___
 #     print(1 / 0)
-# e____
+# _____
 #     print('0!!')
 #
-# t__
+# ___
 #     print(1 / 0)
-# e____ E...  # it is almost the same as just `e____:`
+# _____ E...  # it is almost the same as just `e____:`
 #     print('0!!')
 #
 # # Catching specific exceptions
-# t__
+# ___
 #     print(1 / 0)
-# e____ X....
+# _____ X....
 #     print('E...!')
 #
 # # Catching E... instance
-# t__:
+# ___
 #     print(1 / 0)
-# e____ X.... as some_var
+# _____ X.... as some_var
 #     print('E...! Stop it!')
 #     print ?
 #
 # # Mismatched E... will not be captured
-# t__
+# ___
 #     d = {'key': 23}
 #     print d|'does not exist'
-# e____ X....
+# _____ X....
 #     print("This won't be called")
 #
-# t__
+# ___
 #     d = {'key': 23}
 #     print(d['does not exist'])
-# e____ K.... a_ e
+# _____ K.... a_ e
 #     print("Got it", ?)
 #
 # # Raising E...
-# t__
+# ___
 #     r____ V...('Custom message')
-# e____ V... a_ e
+# _____ V... a_ e
 #     print('Message is', ?)
 #
 # # Multiple e____ blocks
-# t__:
+# ___
 #     r____ V...
-# e____ X....
+# _____ X....
 #     print('Divided by zero!')
-# e____ A...
+# _____ A...
 #     print('Key is missing!')
-# e____ E... a_ ex
+# _____ E... __ ex
 #     print("I don't know what's going on!")
 #     print ?
 #
 # # t__/e____/else
-# t__
+# ___
 #     print('Fine')
-# e____ K...
+# _____ K...
 #     print('Nope.')
-# e____
+# _____
 #     print('Else clause')
 #
 # # t__/e____/finally
 #
-# t__
+# ___
 #     print(1 / 0)
-# e____ X....
+# _____ X....
 #     print('0!')
 # f_____
 #     print('I will be called in the end!')
 #
 # # All together
 #
-# t__
+# ___
 #     print('t__')
-# e____ V...
+# _____ V...
 #     pass  # You should never pass on exceptions!
-# e____
+# _____
 #     print('else')
 # f____
 #     print('finally')
 #
-# t__
+# ___
 #     r____ V...()
 # f____
 #     print('Finally!')

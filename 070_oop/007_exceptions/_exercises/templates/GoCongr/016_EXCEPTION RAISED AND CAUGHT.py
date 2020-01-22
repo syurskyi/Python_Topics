@@ -1,27 +1,27 @@
 # # EXCEPTION RAISED AND CAUGHT
-# t__
+# ___
 #     x = 'spam'[99]
-# e____ I...
-#     print('e____ run')
+# _____ I...
+#     print('except run')
 # f____
 #     print('finally run')
 # print('after run')
 #
 # # NO EXCEPTION RAISED
-# t__
+# ___
 #     x = 'spam'[3]
-# e____ I...
-#     print('e____ run')
-# f____:
+# _____ I...
+#     print('except run')
+# f____
 #     print('finally run')
 # print('after run')
 #
 # # NO EXCEPTION RAISED, WITH ELSE
-# t__
+# ___
 #     x = 'spam'[3]
-# e____ I...
-#     print('e____ run')
-# e___
+# _____ I...
+#     print('except run')
+# ____
 #     print('else run')
 # f____
 #     print('finally run')

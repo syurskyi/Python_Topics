@@ -7,8 +7,8 @@
 # ___ raiser1 r____ S.1
 # ___ raiser2 r____ S.2
 #
-# ___ func i_ _0 _1 _2
-#     t__
+# ___ func __ _0 _1 _2
+#     ___
 #         ?
-#     e___ G.. a_ X                     # X is the raised instance
+#     ____ G.. __ X                     # X is the raised instance
 #         print('caught:' X. -c        # Same as sys.exc_info()[0]

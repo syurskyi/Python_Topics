@@ -1,9 +1,9 @@
 # c_ MyException E..
 #     p..
 #
-# t__
+# ___
 #     r____ ? "error
-# e____ ? a_ e
+# _____ ? __ e
 #     print ?
 # except E...
 #     print('some exception')

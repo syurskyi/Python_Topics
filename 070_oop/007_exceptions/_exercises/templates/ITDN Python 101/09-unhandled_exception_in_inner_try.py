@@ -1,7 +1,7 @@
-# t__
-#     t__
+# ___
+#     ___
 #         r___ V... incorrect value
-#     e___ Z...
+#     ____ Z...
 #         print('division by zero')
-# e___ E.. a_ e
+# ____ E.. __ e
 #     print ?

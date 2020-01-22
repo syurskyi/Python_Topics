@@ -4,7 +4,7 @@
 #  ___ parser
 #      r____ ? 42 spam.txt        # No keywords allowed!
 #
-# t__
+# ___
 #     p..
-# e___ ? a_ X
-#     print('Error at:' ?.a.. 0 ?.a.. 1   # Not specific to this app
+# ____ ? __ X
+#     print('Error at:' ?.a..|0 ?.a..|1   # Not specific to this app

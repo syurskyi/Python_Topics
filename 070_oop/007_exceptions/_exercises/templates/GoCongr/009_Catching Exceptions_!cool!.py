@@ -2,22 +2,22 @@
 #
 # # Catching Exceptions
 # ___ fetcher obj index
-#     r_ ? ?
+#     r_ ?|?
 #
 # x = 'spam'
 #
-# t__
-#     ? x 4
-# e__ I...                   # Catch and recover
+# ___
+
+# ___ I...                   # Catch and recover
 #     print('got exception')
 #
 # print()
 #
 #
 # ___ catcher
-#     t__
+#     ___
 #         ? x 4
-#     e__ I..
+#     ____ I..
 #         print('got exception')
 #     print('continuing')
 # ?

@@ -1,4 +1,4 @@
-# t__
+# ___
 #     r___ V...
-# e___ Z...:
+# ____ Z...
 #     print('Division by zero')

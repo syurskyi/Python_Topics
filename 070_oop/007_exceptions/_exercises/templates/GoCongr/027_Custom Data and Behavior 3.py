@@ -2,16 +2,16 @@
 # c_ FormatError E..
 #     logfile _  'formaterror.txt'
 #     ___ - ___ line file
-#         ___.l.. _  l..
-#         ___.f.. _  f..
+#         ___.?  ?
+#         ___.?  ?
 #     ___ logerror ___
-#         log _  o... ___.?, 'a'
+#         log _  o... ___.?, _           # append
 #         print('Error at', ___.f.. ___.l.. f.. _ log)
 #
 # ___ parser
 #     r_ ? 40 'spam.txt'
 #
-# t__
+# ___
 #     p..
-# e___ ? a_ exc:
+# ____ ? __ exc
 #     ?.lo..

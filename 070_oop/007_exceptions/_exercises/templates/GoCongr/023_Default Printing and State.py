@@ -18,14 +18,14 @@
 # I.a..
 # print(I)
 #
-# t__
+# ___
 #   r___ E spam
-# e____ E a_ X
+# _____ E __ X
 #   print ? ?.a...                 # Displays and saves construtor arguments
 #
 # # spam ('spam',)
 #
-# t___
+# ____
 #   r___ E('spam', 'eggs', 'ham')
-# e___ E a_ X
+# ____ E __ X
 #   print ? ?.a...

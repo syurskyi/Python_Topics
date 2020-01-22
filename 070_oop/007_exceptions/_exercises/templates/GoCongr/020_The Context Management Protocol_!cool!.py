@@ -1,22 +1,22 @@
 # # The Context Management Protocol
 # c_ TraceBlock
 #     ___ message ____  arg
-#         print('running', a__
-#     ___ -e ____
+#         print('running' ?
+#     ___ -e
 #         print('starting with block')
 #         r_ ____
-#     ___ -e ____,
-#         i_ e._t. i_ N..
+#     ___ -e ____,__ __
+#         __ e._t. __ N..
 #             print('exited normally\n')
-#         e____
+#         _____
 #             print('raise an exception!', e._t.
 #             r_ F..                                  # Propagate
 #
-# w_ ? a_ action
-#     ?.m.. test 1')
+# ____ ? __ action
+#     ?.m.. test 1'
 #     print('reached')
 #
-# w__ ? a_ action
+# ___ ? __ action
 #     ?.m..('test 2')
 #     r____ T..
 #     print('not reached')

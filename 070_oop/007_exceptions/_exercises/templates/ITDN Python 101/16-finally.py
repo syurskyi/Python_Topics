@@ -2,13 +2,13 @@
 #     response _ N..
 #     w____ ? !_ 'y' an. ? != 'n':
 #         ? _ input('Raise an exception? (y/n) ')
-#     i_ ? __ 'y'
+#     __ ? __ 'y'
 #         r____ E...
 #
 #
-# t__
+# ___
 #     ?
-# e____
+# _____
 #     print('Exception handler')
 # f____
 #     print('Finally block')

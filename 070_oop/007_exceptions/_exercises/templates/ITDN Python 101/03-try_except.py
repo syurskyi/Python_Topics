@@ -1,4 +1,4 @@
-# t__
+# ___
 #     x = 2 / 0
-# e____ Z....
+# _____ Z....
 #     print('Division by zero detected')

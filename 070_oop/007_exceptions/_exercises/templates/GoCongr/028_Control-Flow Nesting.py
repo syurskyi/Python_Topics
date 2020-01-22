@@ -3,12 +3,12 @@
 #     print(1 + [])            # Generate TypeError
 #
 # ___ action1
-#     t__:
+#     ___
 #         _2
-#     e____ T..        # Most recent matching try
+#     _____ T..        # Most recent matching try
 #         print('inner tty')
 #
-# t__
+# ___
 #     _1
-# e____ T...           # Here, only if action1 re-raises
+# _____ T...           # Here, only if action1 re-raises
 #     print('outer try')

@@ -6,9 +6,9 @@
 #
 # c_ MyBad E... p___
 #
-# t__
+# ___
 #     r___ ? Sorry--my mistake!
-# e___ ? a_ X
+# ____ ? __ X
 #     print ?
 #
 # r___ ? Sorry--my mistake!
@@ -17,9 +17,9 @@
 #     ___ -s _____
 #         r_ 'Always look on the bright side of life...'
 #
-# t__
+# ___
 #     r___ ?
-# e___ ? a_ X:
+# ____ ? __ X:
 #     print ?
 #
 # r___ ?

@@ -6,9 +6,9 @@
 #     r.. M..
 #
 # file = o.. data _     # Open an output file
-# t__
+# ___
 #     s.. ?              # Raises exception
 # f___
-#     ?.cl..             # Always close file to flush output buffers
+#     ?.c..             # Always close file to flush output buffers
 # print('not reached')         # Continue here only if no exception
 # #

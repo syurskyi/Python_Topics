@@ -1,6 +1,6 @@
-# t__
+# ___
 #     x = 3 / 0
-# e_
+# ______
 #     p____
 #
 # print('Program flow goes further')

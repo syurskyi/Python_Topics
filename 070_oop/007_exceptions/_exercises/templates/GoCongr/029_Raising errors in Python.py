@@ -3,7 +3,7 @@
 # # NotImplementedError
 # c_ Garage
 #     ___ - ____
-#         ____.cars _ []
+#         ____.cars _     # list
 #
 #     ___ -l ____
 #         r_ le. ____.c..

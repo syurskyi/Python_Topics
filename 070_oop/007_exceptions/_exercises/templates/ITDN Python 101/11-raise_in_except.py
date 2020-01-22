@@ -1,8 +1,8 @@
-# t__
-#     t__
+# ___
+#     ___
 #         r___ V...('value is incorrect')
-#     e____ V... a_ error
+#     _____ V... __ error
 #         print('Exception:' ?
 #         r___
-# e____ V...
+# _____ V...
 #     print('V... detected')
