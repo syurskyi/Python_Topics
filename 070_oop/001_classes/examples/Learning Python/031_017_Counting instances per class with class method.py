@@ -17,7 +17,7 @@ class Other(Spam):                     # Inherits __init__
 x = Spam()
 y1, y2 = Sub(), Sub()
 z1, z2, z3 = Other(), Other(), Other()
-x.numInstances, y1.numInstances, z1.numInstances
+print(x.numInstances, y1.numInstances, z1.numInstances)
 
-Spam.numInstances, Sub.numInstances, Other.numInstances
+print(Spam.numInstances, Sub.numInstances, Other.numInstances)
 

@@ -1,10 +1,10 @@
-# c_ Spam:
+# c_ Spam
 #     numInstances = 0
 #     ___ count ___                    # Per-class instance counters
 #         ___.n.. +_ 1          # cls is lowest class above instance
 #     ___  - ____
 #         ____.c...                   # Passes self.__class__ to count
-#     count _ cl... c..
+#     count _ c... c..
 #
 # c_ Sub Sp..
 #     numInstances = 0
