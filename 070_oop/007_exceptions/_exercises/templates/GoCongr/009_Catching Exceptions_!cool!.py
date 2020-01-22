@@ -7,8 +7,8 @@
 # x = 'spam'
 #
 # ___
-
-# ___ I...                   # Catch and recover
+#     ? x 4
+# ______ I..                    # Catch and recover
 #     print('got exception')
 #
 # print()
