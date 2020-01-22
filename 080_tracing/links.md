@@ -7,6 +7,12 @@ https://pymotw.com/2/trace/
 Trace or track Python statement execution (trace)
 https://www.tutorialspoint.com/trace-or-track-python-statement-execution-trace
 
+traceback – Extract, format, and print exceptions and stack traces
+https://pymotw.com/2/traceback/
+
+https://pymotw.com/3/traceback/
+traceback — Exceptions and Stack Traces
+
 Tracing function calls
 https://monkeytype.readthedocs.io/en/stable/tracing.html
 
@@ -40,4 +46,14 @@ https://www.oreilly.com/library/view/python-standard-library/0596000960/ch02s11.
 
 Getting More Information from Tracebacks
 https://www.oreilly.com/library/view/python-cookbook/0596001673/ch14s05.html
+
+traceback — Print or retrieve a stack traceback
+https://docs.python.org/3/library/traceback.html
+
+29.9. traceback — Print or retrieve a stack traceback¶
+https://docs.python.org/3.4/library/traceback.html
+
+28.10. traceback — Print or retrieve a stack traceback
+https://docs.python.org/2/library/traceback.html
+
 
