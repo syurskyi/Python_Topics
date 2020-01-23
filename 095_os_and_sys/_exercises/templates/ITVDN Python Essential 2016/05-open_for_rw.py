@@ -1,4 +1,4 @@
-﻿# # -*- coding: utf-8 -*-
+# # -*- coding: utf-8 -*-
 #
 # """Пример открытия файла для чтения и записи"""
 #
@@ -7,8 +7,8 @@
 # ______ d_t_
 #
 # ___ calculate_stats filename
-#     w___ o... f..., _ a_ file
-#         numbers _ fl.. line ___ l.. i_ ?.r.l. i_ ? !_ '\n' an. no. l__.ls__.s..w #
+#     w___ o... f... _ __ file              # Opens a file for reading and writing
+#         numbers _ fl.. line ___ l.. __ ?.r.l. __ ? !_ '\n' an. no. l__.ls__.s..w #'
 #
 #         sum_ = su. ?
 #         mean = st__.m.. n__
@@ -22,10 +22,10 @@
 #               '# Медиана:  {median}\n' \
 #               '# Среднее:  {mean}'
 #
-#         print(?.f... time=c..,
-#                          mean=m..,
-#                          median=m...,
-#                          sum=s..),
+#         print(?.f... time_c..
+#                          mean_m..
+#                          median_m...
+#                          sum_s..),
 #               file=f..)
 #
 #
