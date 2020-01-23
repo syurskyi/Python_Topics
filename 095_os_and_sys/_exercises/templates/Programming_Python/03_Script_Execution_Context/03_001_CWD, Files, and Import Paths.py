@@ -1,7 +1,7 @@
 # # C:\...\PP4E\System> type whereami.py
-# _______ __, __
+# _______ __ ___
 # print('my os.getcwd =>' __.g.. # show my cwd execution dir
-# print('my sys.path =>', __.pa.. :6 # show first 6 import paths
+# print('my sys.path =>', ___.pa.. :6 # show first 6 import paths
 # # input() # wait for keypress if clicked
 #
 # # C:\...\PP4E\System> set PYTHONPATH=C:\PP4thEd\Examples
