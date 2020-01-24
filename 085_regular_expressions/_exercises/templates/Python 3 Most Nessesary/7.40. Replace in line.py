@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import re
 p = re.compile(r"<(?P<tag1>[a-z]+)><(?P<tag2>[a-z]+)>")
 p.sub(r"<\2><\1>", "<br><hr>")             # \номер

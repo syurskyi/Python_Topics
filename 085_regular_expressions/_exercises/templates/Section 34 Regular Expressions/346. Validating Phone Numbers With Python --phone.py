@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import re
 # Returns first instance of phone number pattern:
 def extract_phone(input):

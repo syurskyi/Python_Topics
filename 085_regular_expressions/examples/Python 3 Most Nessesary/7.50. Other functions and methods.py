@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import re
 p = re.compile(r"[\s,.]+")
 p.split("word1, word2\nword3\r\nword4.word5")

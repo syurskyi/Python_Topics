@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 p = re.compile(r"^.+$")       # Точка не соответствует \n
 p.findall("str1\nstr2\nstr3") # Ничего не найдено
 # []

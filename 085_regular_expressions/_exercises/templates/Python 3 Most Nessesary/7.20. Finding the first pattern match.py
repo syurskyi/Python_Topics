@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import re
 p = re.compile(r"[0-9]+")
 print("Найдено" if p.match("str123") else "Нет")

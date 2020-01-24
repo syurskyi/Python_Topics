@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 import re
 print("Введите слово 'stop' для получения результата")
 summa = 0

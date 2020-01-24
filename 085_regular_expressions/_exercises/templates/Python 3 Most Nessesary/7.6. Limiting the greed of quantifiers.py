@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import re
 
 s = "<b>Text1</b>Text2<b>Text3</b>"

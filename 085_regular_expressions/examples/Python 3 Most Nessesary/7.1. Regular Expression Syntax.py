@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import re
 p = re.compile(r"^[а-яе]+$", re.I | re.U)
 print("Найдено" if p.search("АБВГДЕЕ") else "Нет")

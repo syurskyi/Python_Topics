@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 import re
 email = input("Введите e-mail: ")
 pe = r"^([a-z0-9_.-]+)@(([a-z0-9-]+\.)+[a-z]{2,6})$"

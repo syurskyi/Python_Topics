@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import re
 p = re.compile(r"[0-9]+")
 p.findall("2007, 2008, 2009, 2010, 2011")
