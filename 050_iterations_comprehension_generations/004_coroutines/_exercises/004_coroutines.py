@@ -14,7 +14,7 @@
 #     ___ - ______
 #         ____.i _ 0
 #
-#     __ next_ ___:
+#     __ next_ ___
 #         result _ ____.i ** 2
 #         ____.i +_ 1
 #         r_ ?
@@ -23,7 +23,7 @@
 # ?.n..
 # ?.n..
 #
-# ___ i i_ r... 10
+# ___ i __ r... 10
 #     print sq.n...
 #
 # # Coroutines
@@ -78,12 +78,12 @@
 # # Now let's create an empty queue, and write two functions - one that will add elements to the queue, and one that will consume elements from the queue:
 #
 # ___ produce_elements dq
-#     ___ i i_ r... 1 36
-#         d_.app..l.. i
+#     ___ i __ r... 1 36
+#         ?.app..l.. i
 #
 # ___ consume_elements dq
 #     w____ le. d. > 0
-#         item _ d_.po..
+#         item _ ?.po..
 #         print processing item i..
 #
 # ___ coordinator(
@@ -103,9 +103,9 @@
 # # and the consumer removing and processing elements from the queue:
 #
 # ___ produce_elements dq n
-#     ___ i i_ r.. 1 n
-#         ?.app..l.. i
-#         i_ le. ? __ ?.m..l..
+#     ___ i __ r.. 1 n
+#         ?.app..l.. ?
+#         __ le. ? __ ?.m..l..
 #             print queue full - yielding control
 #             y....
 #
@@ -123,13 +123,13 @@
 #     producer _ p.._e.. dq 36
 #     consumer _ c.._e.. dq
 #     w____ T...
-#         t..
+#         ...
 #             print producing...
 #             n____ pr..
-#         e_____ S..I...
+#         ____ S.
 #             # producer finished
-#             b...
-#         f...
+#             ....
+#         ....
 #             print consuming...
 #             n___ c...
 #
