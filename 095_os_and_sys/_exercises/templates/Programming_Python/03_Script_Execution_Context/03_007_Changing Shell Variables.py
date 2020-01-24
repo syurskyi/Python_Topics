@@ -1,7 +1,7 @@
-# import __
-# print(__.en____ TEMP
+# ______ __
+# print(__.e__ TEMP
 # # 'C:\\Users\\mark\\AppData\\Local\\Temp
-# __.en____ TEMP _ _'c:\temp'
+# __.e__ TEMP _ _'c:\temp'
 # print(__.en____ TEMP
 # # 'c:\\temp'
 #
@@ -14,7 +14,7 @@
 # print('#' * 52 + 'setenv.py')
 # _______ __
 # print('setenv...' e.._' '
-# print(__.en____ USER                # show current shell variable value
+# print(__.e__ USER                # show current shell variable value
 # #
 # # os.environ['USER'] = 'Brian'             # runs os.putenv behind the scenes
 # # os.system('python echoenv.py')
