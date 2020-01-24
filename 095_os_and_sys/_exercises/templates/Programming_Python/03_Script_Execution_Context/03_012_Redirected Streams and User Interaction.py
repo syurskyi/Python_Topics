@@ -3,9 +3,9 @@
 #
 # __ ______ __ ______ # when run, not when imported
 #     _____ ___
-#     i_ le. ___.a.. __ 1: # page stdin if no cmd args
+#     __ le. ___.a.. __ 1 # page stdin if no cmd args
 #         ? ___.s.i_.r..
-#     e___
+#     ____
 #         ? o.. ___.a. 1 .r..
 #
 # # Hello stream world
@@ -25,7 +25,7 @@
 # # C:\...\PP4E\System\Streams> python moreplus.py moreplus.py
 # # ######################################################################################################################
 #
-# # _____ sys
+# # _____ ___
 # # def getreply():
 # # ?n
 #
