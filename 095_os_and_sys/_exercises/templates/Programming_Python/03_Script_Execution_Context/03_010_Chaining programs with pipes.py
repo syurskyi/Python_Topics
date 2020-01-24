@@ -20,7 +20,7 @@
 # # C:\...\PP4E\System\Streams> type data.txt | python adder.py sum type output
 # # 1164
 # # C:\...\PP4E\System\Streams> type writer2.py
-# ___ data i_ (123, 0, 999, 42)
+# ___ data __ (123, 0, 999, 42)
 #     print('/03_' | ?
 # # C:\...\PP4E\System\Streams> python writer2.py | python sorter.py sort py output
 # # 000
