@@ -2,14 +2,14 @@
 #
 # This is marked as PAINLESS difficulty
 
-def solution(A, K):
-    result = [None] * len(A)
+___ solution A K
+    result _ |N.. * le. A
 
-    for i in range(len(A)):
-        result[(i + K) % len(A)] = A[i]
+    ___ i __ ra.. le A
+        ? || i + K % le. |A + A|i
 
-    return result
+    r_ r..
 
-print(solution([1, 2, 3, 4, 5], 2))
+print(? 1, 2, 3, 4, 5| 2
 
-print(solution([1, 2, 3, 4, 5], 5))
+print(? 1, 2, 3, 4, 5| 5
