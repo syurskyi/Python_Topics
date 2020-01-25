@@ -1,30 +1,30 @@
 # -*- coding: utf-8 -*-
 
-import re
+______ __
 # Returns first instance of phone number pattern:
-def extract_phone(input):
-	phone_regex = re.compile(r'\b\d{3} \d{3}-\d{4}\b')
-	match = phone_regex.search(input)
-	if match:
-		return match.group()
+___ extract_phone input
+	phone_regex = __.c..(r'\b\d{3} \d{3}-\d{4}\b')
+	match = ?.s.. ?
+	__ ?
+		r_ ?.g..
 	return None
 
 # Returns all instances of phone number pattern in a list
-def extract_all_phones(input):
-	phone_regex = re.compile(r'\b\d{3} \d{3}-\d{4}\b')
+___ extract_all_phones(input):
+	phone_regex = __.c..(r'\b\d{3} \d{3}-\d{4}\b')
 	return phone_regex.findall(input)
 
 # One way of checking if entire string is valid phone number:
-# def is_valid_phone(input):
-# 	phone_regex = re.compile(r'^\d{3} \d{3}-\d{4}$')
+# ___ is_valid_phone(input):
+# 	phone_regex = __.c..(r'^\d{3} \d{3}-\d{4}$')
 # 	match = phone_regex.search(input)
 # 	if match:
 # 		return True
 # 	return False
 
 # Another way of doing the same thing, using the fullmatch method
-def is_valid_phone(input):
-	phone_regex = re.compile(r'\d{3} \d{3}-\d{4}')
+___ is_valid_phone(input):
+	phone_regex = __.c..(r'\d{3} \d{3}-\d{4}')
 	match = phone_regex.fullmatch(input)
 	if match:
 		return True

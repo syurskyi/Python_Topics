@@ -14,6 +14,8 @@
 #
 # s _ "<b>Text1</b>Text2<I>Text3</I><b>Text4</b>"
 # p _ __.c.. _ <  a-z 1? > .2?3_ </\1>  __.4? 5? __.6?   # 1. One or more occurrences
-#                                                        # |2. Zero or more occurrences |  3. zero or one occurrence | 4. Makes a period (dot) match any character, including a newline | 5.Either or | 6.Performs case-insensitive matching.
+#                                                        # 2. Zero or more occurrences |  3. zero or one occurrence
+#                                                        # 4. Makes a period (dot) match any character, including a newline
+#                                                        # 5 .Either or | 6.Performs case-insensitive matching.
 # ?.f.. ?
 # # [('b', 'Text1'), ('I', 'Text3'), ('b', 'Text4')]

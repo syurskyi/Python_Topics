@@ -10,7 +10,8 @@
 # # p = __.c.. _ 1? .2? 3?       # Точка не соответствует \n  # # 1.Starts with | 2.One or more occurrences | 3.Ends with |
 # # ?.f..("str1\nstr2\nstr3") # Ничего не найдено
 # # # []
-# # ? = __.c.. _ 1? .2? 3?  __.S # Теперь точка соответствует \n #1. Starts with | 2.One or more occurrences | 3. Ends with | Makes a period (dot) match any character, including a newline.
+# # ? = __.c.. _ 1? .2? 3?  __.S # Теперь точка соответствует \n #1. Starts with | 2.One or more occurrences
+#                                # 3. Ends with | Makes a period (dot) match any character, including a newline.
 # # ?.f..("str1\nstr2\nstr3") # Строка полностью соответствует
 # # # ['str1\nstr2\nstr3']
 # # ? = __.c.. _ 1? .2? 3?  __.4? # 4.Многострочный режим          # 1.Starts with | 2.One or more occurrences | 3.Ends with |

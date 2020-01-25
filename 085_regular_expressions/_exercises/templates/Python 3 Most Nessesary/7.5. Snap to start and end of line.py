@@ -2,13 +2,15 @@
 #
 # # Кроме того, можно указать привязку только к началу или только к концу строки
 # _______ __                     # Подключаем модуль
-# p _ __.c.. _ 0-9 1? 2?  __.3?)          # 1.One or more occurrences | 2.Ends with | 3.Makes a period (dot) match any character, including a newline.
+# p _ __.c.. _ 0-9 1? 2?  __.3?)          # 1.One or more occurrences | 2.Ends with
+#                                         # 3.Makes a period (dot) match any character, including a newline.
 # __ ?.s..("Строка245"):
 #     print("Есть число в конце строки")
 # ____
 #     print("Нет числа в конце строки")
 # # Выведет: Есть число в конце строки
-# p _ __.c.. _ 1? 0-9 2?  __.3?          # 1.Starts with | 2.One or more occurrences | 3.Makes a period (dot) match any character, including a newline.
+# p _ __.c.. _ 1? 0-9 2?  __.3?          # 1.Starts with | 2.One or more occurrences
+#                                        # 3.Makes a period (dot) match any character, including a newline.
 # __ ?.s..("Строка245"):
 #     print("Есть число в начале строки")
 # ____

@@ -4,7 +4,8 @@
 # r или IGNORECASE - поиск без учета регистра. Пример:
 
 # ____ __
-# p = __.c__ _"1? а-яе + 2?", __.3? _ __.4?  # 1.Starts with | 2.Ends with | 3.case-insensitive matching | 4.Interprets letters according to the Unicode character set
+# p = __.c__ _"1? а-яе + 2?", __.3? _ __.4?  # 1.Starts with | 2.Ends with | 3.case-insensitive matching
+#                                            # 4.Interprets letters according to the Unicode character set
 # print("Найдено" __ ?.se.. АБВГДЕЕ ___ "Нет")
 # # Найдено
 # p = __.c__ _"1? а-яе + 2?", __.3?    # 1.Starts with  | 2.Ends with | 3.Interprets letters according to the Unicode character set
