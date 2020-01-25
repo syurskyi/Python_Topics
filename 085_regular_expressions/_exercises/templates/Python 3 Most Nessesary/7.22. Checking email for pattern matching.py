@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 
-import re
-email = input("Введите e-mail: ")
-pe = r"^([a-z0-9_.-]+)@(([a-z0-9-]+\.)+[a-z]{2,6})$"
-p = re.compile(pe, re.I | re.S)
-m = p.search(email)
-if not m:
+_______ __
+email _ in.. Введите e-mail: 
+pe _ r"^([a-z0-9_.-]+)@(([a-z0-9-]+\.)+[a-z]{2,6})$"
+p _ __.c..(pe, __.I | __.S)
+m _ ?.s.. e..
+__ no. m
     print("E-mail не соответствует шаблону")
-else:
-    print("E-mail", m.group(0), "соответствует шаблону")
-    print("ящик:", m.group(1), "домен:", m.group(2))
+____
+    print("E-mail", m.g.. 0 "соответствует шаблону"
+    print("ящик:", m.g.. 1 "домен:", ?.g..2
 input()
