@@ -1,86 +1,103 @@
 # -*- coding: utf-8 -*-
 
-import re
+_______ __
 print("Введите слово 'stop' для получения результата")
-summa = 0
-p = re.compile(r"^[-]?[0-9]+$", re.S)
-while True:
-    x = input("Введите число: ")
-    if x == "stop":
-        break    # Выход из цикла
-    if not p.search(x):
+summa _ 0
+p _ __.c..(r"^[-]?[0-9]+$", __.S)
+w____ T..
+    x _ in.. Введите число:
+    __ x __ stop
+        b..    # Выход из цикла
+    __ no. ?.s.. ?
         print("Необходимо ввести число, а не строку!")
-        continue # Переходим на следующую итерацию цикла
-    x = int(x)   # Преобразуем строку в число
-    summa += x
-print("Сумма чисел равна:", summa)
+        c... # Переходим на следующую итерацию цикла
+    x _ in.. ?   # Преобразуем строку в число
+    s.. +_ ?
+print("Сумма чисел равна:" s..
 input()
 
+# Объект Match, возвращаемый методами (функuиями) match () и search (), имеет следующие
+# свойства и методы:
+# + re - ссылка на скомпилированный шаблон, указанный в методах (функциях) match () и
+# search (). Через эту ссылку доступны следующие свойства:
+# • groups - количество групп в шаблоне;
+# • groupindex - словарь с названиями групп и их номерами;
+# pattern - исходная строка с регулярным выражением;
+# 125
+# • f lags - комбинация флагов, заданных при создании регулярного выражения в
+# функции compile (), и флагов, указанных в самом регулярном выражении, в конструкции (?aiLm.sux);
+# t string - значение параметра <Строка> в методах (функциях) match () и search ();
+# t pos - значение параметра <Начальная позиция> в методах match () и search () ;
+# t endpos - значение параметра <Конечная позиция> в методах match () и search () ;
+# t lastindex- возвращает номер последней группы или значение None, если поиск завершился неудачей;
+# t lastgroup - возвращает название последней группы или значение None, если эта группа
+# не имеет имени, или поиск завершился неудачей.
 
-p = re.compile(r"(?P<num>[0-9]+)(?P<str>[a-z]+)")
-m = p.search("123456string 67890text")
+p _ __.c..(r"(?P<num>[0-9]+)(?P<str>[a-z]+)")
+m _ p.s..("123456string 67890text")
 m
+
 # <_sre.SRE_Match object at 0x00FC9DE8>
-m.re.groups, m.re.groupindex
+print m.__.g.. m.__.g_i_
 # (2, {'num': 1, 'str': 2})
-p.groups, p.groupindex
+print p.g.. p.g_i_
 # (2, {'num': 1, 'str': 2})
-m.string
+print m.s..
 # '123456string 67890text'
-m.lastindex, m.lastgroup
+print m.l_i_ m.l_g_
 # (2, 'str')
-m.pos, m.endpos
+print m.p..  m.e_p_
 # (0, 22)
 
 
-p = re.compile(r"(?P<num>[0-9]+)(?P<str>[a-z]+)")
-m = p.search("123456string 67890text")
-m.group(), m.group(0) # Полное соответствие шаблону
+p _ __.c..(r"(?P<num>[0-9]+)(?P<str>[a-z]+)")
+m _ p.s..("123456string 67890text")
+print m.g.. m.g.. 0 # Полное соответствие шаблону
 # ('123456string', '123456string')
-m.group(1), m.group(2)         # Обращение по индексу
+print m.g.. 1 m.g.. 2         # Обращение по индексу
 # ('123456', 'string')
-m.group("num"), m.group("str") # Обращение по названию
+print m.g.. num m.g.. str # Обращение по названию
 # ('123456', 'string')
-m.group(1, 2), m.group("num", "str") # Несколько параметров
+m.g. 1, 2), m.g.. num str # Несколько параметров
 # (('123456', 'string'), ('123456', 'string'))
 
 
-p = re.compile(r"(?P<num>[0-9]+)(?P<str>[a-z])?")
-m = p.search("123456")
-m.groupdict()
+p _ __.c..(r"(?P<num>[0-9]+)(?P<str>[a-z])?")
+m _ p.s..("123456")
+print m.g_d_
 # {'num': '123456', 'str': None}
-m.groupdict("")
+print m.g_d_ ""
 # {'num': '123456', 'str': ''}
 
 
-p = re.compile(r"(?P<num>[0-9]+)(?P<str>[a-z])?")
-m = p.search("123456")
-m.groups()
+p _ __.c..(r"(?P<num>[0-9]+)(?P<str>[a-z])?")
+m _ p.s..("123456")
+print m.g..
 # ('123456', None)
-m.groups("")
+print m.g.. ""
 # ('123456', '')
 
 
-p = re.compile(r"(?P<num>[0-9]+)(?P<str>[a-z]+)")
-s = "str123456str"
-m = p.search(s)
-m.start(), m.end(), m.span()
+p _ __.c..(r"(?P<num>[0-9]+)(?P<str>[a-z]+)")
+s _ "str123456str"
+m _ ?.s.. ?
+m.s.. m.e.., m.sp..
 # (3, 12, (3, 12))
-m.start(1), m.end(1), m.start("num"), m.end("num")
+m.s.. 1, m.e. 1, m.s.. num, m.e.. num
 # (3, 9, 3, 9)
-m.start(2), m.end(2), m.start("str"), m.end("str")
+m.s.. 2 m.e.. 2 m.s.. str m.e.. str
 # (9, 12, 9, 12)
-m.span(1), m.span("num"), m.span(2), m.span("str")
+m.sp.. 1 m.sp.. num m.sp.. 2 m.sp.. str
 # ((3, 9), (3, 9), (9, 12), (9, 12))
-s[m.start(1):m.end(1)], s[m.start(2):m.end(2)]
+?|m.s.. 1 ; m.e.. 1 |, ?|m.s.. 2 ; m.e.. 2
 # ('123456', 'str')
 
 
-p = re.compile(r"<(?P<tag1>[a-z]+)><(?P<tag2>[a-z]+)>")
-m = p.search("<br><hr>")
-m.expand(r"<\2><\1>")             # \номер
+p _ __.c..(r"<(?P<tag1>[a-z]+)><(?P<tag2>[a-z]+)>")
+m _ p.s..("<br><hr>")
+m.ex..(r"<\2><\1>")             # \номер
 # '<hr><br>'
-m.expand(r"<\g<2>><\g<1>>")       # \g<номер>
+m.ex..(r"<\g<2>><\g<1>>")       # \g<номер>
 # '<hr><br>'
-m.expand(r"<\g<tag2>><\g<tag1>>") # \g<название>
+m.ex..(r"<\g<tag2>><\g<tag1>>") # \g<название>
 # '<hr><br>'
