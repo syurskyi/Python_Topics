@@ -6,10 +6,12 @@
 
 # O(nlogn)
 
+
 def anagram(word1, word2):
 	return sorted(word1) == sorted(word2)
 
 # O(n) O(n)
+
 
 def anagram2(word1, word2):
 	if len(word1) != len(word2):
