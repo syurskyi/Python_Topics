@@ -1,85 +1,85 @@
-class HtmlElement:
-    indent_size = 2
-
-    def __init__(self, name="", text=""):
-        self.name = name
-        self.text = text
-        self.elements = []
-
-    def __str(self, indent):
-        lines = []
-        i = ' ' * (indent * self.indent_size)
-        lines.append(f'{i}<{self.name}>')
-
-        if self.text:
-            i1 = ' ' * ((indent + 1) * self.indent_size)
-            lines.append(f'{i1}{self.text}')
-
-        for e in self.elements:
-            lines.append(e.__str(indent + 1))
-
-        lines.append(f'{i}</{self.name}>')
-        return '\n'.join(lines)
-
-    def __str__(self):
-        return self.__str(0)
-
-    @staticmethod
-    def create(name):
-        return HtmlBuilder(name)
-
-
-class HtmlBuilder:
-    __root = HtmlElement()
-
-    def __init__(self, root_name):
-        self.root_name = root_name
-        self.__root.name = root_name
-
-    # not fluent
-    def add_child(self, child_name, child_text):
-        self.__root.elements.append(
-            HtmlElement(child_name, child_text)
-        )
-
-    # fluent
-    def add_child_fluent(self, child_name, child_text):
-        self.__root.elements.append(
-            HtmlElement(child_name, child_text)
-        )
-        return self
-
-    def clear(self):
-        self.__root = HtmlElement(name=self.root_name)
-
-    def __str__(self):
-        return str(self.__root)
-
-
-# if you want to build a simple HTML paragraph using a list
-hello = 'hello'
-parts = ['<p>', hello, '</p>']
-print(''.join(parts))
-
-# now I want an HTML list with 2 words in it
-words = ['hello', 'world']
-parts = ['<ul>']
-for w in words:
-    parts.append(f'  <li>{w}</li>')
-parts.append('</ul>')
-print('\n'.join(parts))
-
-# ordinary non-fluent builder
-# builder = HtmlBuilder('ul')
-builder = HtmlElement.create('ul')
-builder.add_child('li', 'hello')
-builder.add_child('li', 'world')
-print('Ordinary builder:')
-print(builder)
-
-# fluent builder
-builder.clear()
-builder.add_child_fluent('li', 'hello') \
-    .add_child_fluent('li', 'world')
-print('Fluent builder:')
-print(builder)
+# c_ HtmlElement
+#     indent_size _ 2
+#
+#     ___  - ____ name_"" text_""
+#         ____.? ?
+#         ____.? ?
+#         ____.elements _      # list
+#
+#     ___ __str ____ indent
+#         lines _    # list
+#         i _ ' ' * i... * ____.i..
+#         l__.a.. _* ? < ____.n.. >*
+#
+#         __ ____.t..
+#             i1 _ ' ' * i.. + 1) * ____.i..
+#             l__.a..  _* ? ____.t..
+#
+#         ___ e __ ____.e..
+#             l__.a.. ?.__st. i.. + 1
+#
+#         l__.a..  _* ? </ ____.n.. >
+#         r_ '\n'.j.. l..
+#
+#     ___ -s ____
+#         r_ ____.__st. 0
+#
+#     ?s
+#     ___ create name
+#         r_ H.. ?
+#
+#
+# c_ HtmlBuilder:
+#     __root _ H..
+#
+#     ___  - ____ root_name
+#         ____.?  ?
+#         ____.__r__.n__ _ r..
+#
+#     # not fluent
+#     ___ add_child ____ child_name child_text
+#         ____.__r__.e__.a..(
+#             H.. ? ?
+#         )
+#
+#     # fluent
+#     ___ add_child_fluen ____ child_name child_text
+#         ____.__r__.e__.a..(
+#             H.. ? ?
+#         )
+#         r_ ____
+#
+#     ___ clear ____
+#         ____.__r.. _ H.. name_self.root_name
+#
+#     ___ -s ____
+#         r_ st. ____.__r..
+#
+#
+# # __ you want to build a simple HTML paragraph using a list
+# hello _ 'hello'
+# parts _ ['<p>', hello, '</p>']
+# print(''.join(parts))
+#
+# # now I want an HTML list with 2 words __ it
+# words _ ['hello', 'world']
+# parts _ ['<ul>']
+# ___ w __ words:
+#     parts.a..( _*  <li>{w}</li>')
+# parts.a..('</ul>')
+# print('\n'.join(parts))
+#
+# # ordinary non-fluent builder
+# # builder _ HtmlBuilder('ul')
+# builder _ HtmlElement.create('ul')
+# builder.add_child('li', 'hello')
+# builder.add_child('li', 'world')
+# print('Ordinary builder:')
+# print(builder)
+#
+# # fluent builder
+# builder.clear()
+# builder.add_child_fluent('li', 'hello') \
+#     .add_child_fluent('li', 'world')
+# print('Fluent builder:')
+# print(builder)
