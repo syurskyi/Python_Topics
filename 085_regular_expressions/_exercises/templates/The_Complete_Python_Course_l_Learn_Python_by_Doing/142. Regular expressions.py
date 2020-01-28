@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 """
 Regular expressions are one of those topics that are usually covered plenty in online courses and tutorials,
 but never quite understood very well.
