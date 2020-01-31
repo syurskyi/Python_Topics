@@ -1,107 +1,107 @@
-# #!/usr/bin/env python
-# # Written by: DGC
-#
-# ______ a..
-#
-# #==============================================================================
-# c_ Vehicle o..
-#
-#     ___ - ____ type_name
-#         ____.type _ ?
-#         ____.wheels _ N..
-#         ____.doors _ N..
-#         ____.seats _ N..
-#
-#     ___ view ____
-#         print(
-#             "This vehicle is a " +
-#             ____.ty.. +
-#             " with; " +
-#             st. ____.w.. +
-#             " wheels, " +
-#             st. ____.d.. +
-#             " doors, and " +
-#             st. ____.s.. +
-#             " seats."
-#             )
-#
-# #==============================================================================
-# c_ VehicleBuilder o..
-#     """
-#     An abstract builder class, for concrete builders to be derived from.
-#     """
-#     __metadata__ _ ___.____
-#
-#     ??.?
-#     ___ make_wheels ____
-#         ra..
-#
-#     ??.?
-#     ___ make_doors ____
-#         ra..
-#
-#     ??.?
-#     ___ make_seats ____
-#         ra..
-#
-# #==============================================================================
-# c_ CarBuilder VB..
-#
-#     ___ - ____
-#         ____.vehicle _ V.. "Car "
-#
-#     ___ make_wheels ____
-#         ____.?.w.. _ 4
-#
-#     ___ make_doors ____
-#         ____.?.d.. _ 3
-#
-#     ___ make_seats ____
-#         ____.?.s.. _ 5
-#
-# #==============================================================================
-# c_ BikeBuilder VB..
-#
-#     ___ - ____
-#         ____.vehicle _ V.. "Bike
-#
-#     ___ make_wheels ____
-#         ____.?.w.. _ 2
-#
-#     ___ make_doors ____
-#         ____.?.d.. _ 0
-#
-#     ___ make_seats ____
-#         ____.?.s.. _ 2
-#
-# #==============================================================================
-# c_ VehicleManufacturer o..
-#     """
-#     The director class, this will keep a concrete builder.
-#     """
-#
-#     ___ - ____
-#         ____.builder _ N..
-#
-#     ___ create ____
-#         """
-#         Creates and returns a Vehicle using ____.builder
-#         Precondition: not ____.builder is N..
-#         """
-#         a.. no. ____.b.. __ N.., "No defined builder"
-#         ____.?.m..
-#         ____.?.m..
-#         ____.?.m..
-#         r_ ____.?.?
-#
-# #==============================================================================
-# __ ______ __ _____
-#     manufacturer _ VM..
-#
-#     ?.b.. _ CB..
-#     car _ ?.c..
-#     ?.v..
-#
-#     ?.b.. _ BB..
-#     bike _ ?.c..
-#     ?.v..
+#!/usr/bin/env python
+# Written by: DGC
+
+import abc
+
+#==============================================================================
+class Vehicle(object):
+
+    def __init__(self, type_name):
+        self.type = type_name
+        self.wheels = None
+        self.doors = None
+        self.seats = None
+
+    def view(self):
+        print(
+            "This vehicle is a " +
+            self.type +
+            " with; " +
+            str(self.wheels) +
+            " wheels, " +
+            str(self.doors) +
+            " doors, and " +
+            str(self.seats) +
+            " seats."
+            )
+
+#==============================================================================
+class VehicleBuilder(object):
+    """
+    An abstract builder class, for concrete builders to be derived from.
+    """
+    __metadata__ = abc.ABCMeta
+
+    @abc.abstractmethod
+    def make_wheels(self):
+        raise NotImplemented
+
+    @abc.abstractmethod
+    def make_doors(self):
+        raise NotImplemented
+
+
+    @abc.abstractmethod
+    def make_seats(self):
+        raise NotImplemented
+#==============================================================================
+class CarBuilder(VehicleBuilder):
+
+    def __init__(self):
+        self.vehicle = Vehicle("Car ")
+
+    def make_wheels(self):
+        self.vehicle.wheels = 4
+
+    def make_doors(self):
+        self.vehicle.doors = 3
+
+    def make_seats(self):
+        self.vehicle.seats = 5
+
+#==============================================================================
+class BikeBuilder(Vehicle):
+
+    def __init__(self):
+        self.vehicle = Vehicle("Bike")
+
+    def make_wheels(self):
+        self.vehicle.wheels = 2
+
+    def make_doors(self):
+        self.vehicle.doors = 0
+
+    def make_seats(self):
+        self.vehicle.seats = 2
+
+#==============================================================================
+class VehicleManufacturer(object):
+    """
+    The director class, this will keep a concrete builder.
+    """
+
+    def __init__(self):
+        self.builder = None
+
+    def create(self):
+        """
+        Creates and returns a Vehicle using ____.builder
+        Precondition: not ____.builder is N..
+        """
+        assert not self.builder is None, "No defined builder"
+        self.builder.make_wheels()
+        self.builder.make_doors()
+        self.builder.make_seats()
+        return self.builder.vehicle
+
+#==============================================================================
+if (__name__ == '__main__'):
+    manufacture = VehicleManufacturer()
+
+    manufacture.builder = CarBuilder()
+    car = manufacture.create()
+    car.view()
+
+    manufacture.builder = BikeBuilder()
+    bike = manufacture.create()
+    bike.view()
