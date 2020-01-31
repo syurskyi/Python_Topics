@@ -1,81 +1,81 @@
-# coding: utf-8
-
-"""
-Строитель (Builder) - паттерн, порождающий объекты.
-
-Отделяет конструирование сложного объекта от его представления,
-так что в результате одного и того же процесса конструирования могут получаться разные представления.
-
-От абстрактной фабрики отличается тем, что делает акцент на пошаговом конструировании объекта.
-Строитель возвращает объект на последнем шаге, тогда как абстрактная фабрика возвращает объект немедленно.
-
-Строитель часто используется для создания паттерна компоновщик.
-"""
-
-
-class Builder(object):
-    def build_body(self):
-        raise NotImplementedError()
-
-    def build_lamp(self):
-        raise NotImplementedError()
-
-    def build_battery(self):
-        raise NotImplementedError()
-
-    def create_flashlight(self):
-        raise NotImplementedError()
-
-
-class Flashlight(object):
-    """Карманный фонарик"""
-    def __init__(self, body, lamp, battery):
-        self._shine = False  # излучать свет
-        self._body = body
-        self._lamp = lamp
-        self._battery = battery
-
-    def on(self):
-        self._shine = True
-
-    def off(self):
-        self._shine = False
-
-    def __str__(self):
-        shine = 'on' if self._shine else 'off'
-        return 'Flashlight [%s]' % shine
-
-
-class Lamp(object):
-    """Лампочка"""
-
-
-class Body(object):
-    """Корпус"""
-
-
-class Battery(object):
-    """Батарея"""
-
-
-class FlashlightBuilder(Builder):
-    def build_body(self):
-        return Body()
-
-    def build_battery(self):
-        return Battery()
-
-    def build_lamp(self):
-        return Lamp()
-
-    def create_flashlight(self):
-        body = self.build_body()
-        lamp = self.build_lamp()
-        battery = self.build_battery()
-        return Flashlight(body, lamp, battery)
-
-
-builder = FlashlightBuilder()
-flashlight = builder.create_flashlight()
-flashlight.on()
-print flashlight  # Flashlight [on]
+# # coding: utf-8
+# 
+# """
+# Строитель (Builder) - паттерн, порождающий объекты.
+# 
+# Отделяет конструирование сложного объекта от его представления,
+# так что в результате одного и того же процесса конструирования могут получаться разные представления.
+# 
+# От абстрактной фабрики отличается тем, что делает акцент на пошаговом конструировании объекта.
+# Строитель возвращает объект на последнем шаге, тогда как абстрактная фабрика возвращает объект немедленно.
+# 
+# Строитель часто используется для создания паттерна компоновщик.
+# """
+# 
+# 
+# c_ Builder o..
+#     ___ build_body ____
+#         r.. N..
+# 
+#     ___ build_lamp ____
+#         r.. N..
+# 
+#     ___ build_battery ____
+#         r.. N..
+# 
+#     ___ create_flashlight ____
+#         r.. N..
+# 
+# 
+# c_ Flashlight o..
+#     """Карманный фонарик"""
+#     ___ - ____  body lamp battery
+#         ____._shine _ F..  # излучать свет
+#         ____._? _ ?
+#         ____._? _ ?
+#         ____._? _ ?
+# 
+#     ___ on ____
+#         ____._shine _ T..
+# 
+#     ___ off ____
+#         ____._shine _ F..
+# 
+#     ___ -s ____
+#         shine _ 'on' __ ____._s.. ____ 'off'
+#         r_ 'Flashlight @'  ?   # string
+# 
+# 
+# c_ Lamp o..
+#     """Лампочка"""
+# 
+# 
+# c_ Body o..
+#     """Корпус"""
+# 
+# 
+# c_ Battery o..
+#     """Батарея"""
+# 
+# 
+# c_ FlashlightBuilder B..
+#     ___ build_body ____
+#         r_ Bo..
+# 
+#     ___ build_battery ____
+#         r_ Ba..
+# 
+#     ___ build_lamp ____
+#         r_ L..
+# 
+#     ___ create_flashlight ____
+#         body _ ____.b_b.
+#         lamp _ ____.b_l..
+#         battery _ ____.b_ba..
+#         r_ F.. ? ? ?
+# 
+# 
+# builder _ FB..
+# flashlight _ ?.c_f..
+# ?.o.
+# print ?  # Flashlight [on]
