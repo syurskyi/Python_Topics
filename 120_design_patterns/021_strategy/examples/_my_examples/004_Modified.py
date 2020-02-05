@@ -24,4 +24,5 @@ class Context:
     def execude_strategy(self, num1, num2):
         return self._strategy.do_operation(self, num1, num2)
 
-def main():
+context = Context(OperationAdd)
+print(context.execude_strategy(10, 5))
