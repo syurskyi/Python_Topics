@@ -1,0 +1,6 @@
+Better to issue 002_oop.
+Create list what have to be in the good class
+Made logging
+Made __str__ and __repr__
+MAde test
+Made graphical interface.
