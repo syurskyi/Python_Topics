@@ -8,14 +8,14 @@ users = [
 ]
 
 # extract inactive users using filter:
-inactive_users = list(filter(lambda u: not u['tweets'], users))
+inactive_users _ l.. f.. l.. u; no. ? 'tweets'| u..
 
 # extract inactive users using list comprehension:
-inactive_users2 = [user for user in users if not user["tweets"]]
+inactive_users2 + user __ ? __ u.. __ no. ? "tweets"|
 
 # extract usernames of inactive users w/ map and filter:
-usernames = list(map(lambda user: user["username"].upper(),
-                     filter(lambda u: not u['tweets'], users)))
+usernames = l.. m.. l... user ? "username"|.u.. ,
+                     f.. l.. u; no. ? 'tweets'| ?
 
 # extract usernames of inactive users w/ list comprehension
-usernames2 = [user["username"].upper() for user in users if not user["tweets"]]
+usernames2 = user "username"|.u.. ___ ? __ u.. __ no. ? "tweets"|

@@ -1,19 +1,20 @@
 # A regular named function
-def square(num): return num * num
+___ square num 
+    r_ ? * ?
 
 # An equivalent lambda, saved to a variable
 
 
-square2 = lambda num: num * num
+square2 = l____ num ? * ?
 
 # Another lambda
-add = lambda a, b: a + b
+add = l.. a b ? + ?
 
 # Executing the lambdas
-print(square2(7))
-print(add(3, 10))
+print(s..2(7))
+print(a..(3, 10))
 
 # Notice that the square function has a name, but the two lambdas do not
-print(square.__name__)
-print(square2.__name__)
-print(add.__name__)
+print(square. -n)
+print(square2. -n)
+print(add. -n)
