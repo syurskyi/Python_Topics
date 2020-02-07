@@ -1,6 +1,6 @@
-from database import Database
-
-
-class Saveable:
-    def save(self):
-        Database.insert(self.to_dict())
+# ____ d.. ______ D...
+#
+#
+# c_ Saveable
+#     ___ save _____
+#         D__.in.. ____.to_dict
