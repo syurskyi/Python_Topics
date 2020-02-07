@@ -1,7 +1,7 @@
-from animal import Animal
-from dog import Dog
-
-d = Dog('Bob')
-# a = Animal()
-
-d.walk()
+# ____ a.. ______ A..
+# ____ d.. ______ D..
+#
+# d = D.. ('Bob')
+# # a = Animal()
+#
+# ?.w..
