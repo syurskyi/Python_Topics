@@ -1,30 +1,33 @@
-class Flight:
-    def __init__(self, segments):
-        """
-        Creates a new Flight wrapper object from an arbitrary number of segments.
-
-        :param segments: a list of segments in this flight—normally just one.
-        """
-        self.segments = segments
-    
-    def __repr__(self):
-        stops = [self.segments[0].departure, self.segments[0].destination]
-        for seg in self.segments[1:]:
-            stops.append(seg.destination)
-        
-        return ' -> '.join(stops)
-    
-    @property
-    def departure_point(self):
-        return self.segments[0].departure
-    
-    @departure_point.setter
-    def departure_point(self, val):
-        dest = self.segments[0].destination
-        self.segments[0] = Segment(departure=val, destination=dest)
-    
-
-class Segment:
-    def __init__(self, departure, destination):
-        self.departure = departure
-        self.destination = destination
+# # -*- coding: utf-8 -*-
+#
+# c_ Flight:
+#     ___ - ____ segments
+#         """
+#         Creates a new Flight wrapper object from an arbitrary number of segments.
+#
+#         :param segments: a list of segments in this flight—normally just one.
+#         """
+#         ____.?  ?
+#
+#     ___ -r
+#         stops = ____.? 0 .departure ____.? 0.destination
+#         ___ seg __ ____.? 1:
+#             s__.ap.. ?.d..
+#
+#         r_ ' -> '.j.. ?
+#
+#     ??
+#     ___ departure_point ____
+#         r_ ____.? 0.d..
+#
+#     ??.s..
+#     ___ departure_point ____ val
+#         dest = ____.? 0 .d..
+#         ____.? 0 = S.. departure_? destination_?
+#
+#
+# c_ Segment
+#     ___ - ____ departure destination
+#         ____.?  ?
+#         ____.?  ?
+#
