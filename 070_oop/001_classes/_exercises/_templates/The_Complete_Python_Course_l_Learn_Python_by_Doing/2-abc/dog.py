@@ -1,9 +1,9 @@
-from animal import Animal
-
-
-class Dog(Animal):
-    def __init__(self, name):
-        self.name = name
-    
-    def num_legs(self):
-        return 4
+# ____ a... ______ A..
+#
+#
+# c_ Dog(Animal):
+#     ___ - ____ name
+#         ____.?  ?
+#
+#     ___ num_legs ____
+#         r_ 4
