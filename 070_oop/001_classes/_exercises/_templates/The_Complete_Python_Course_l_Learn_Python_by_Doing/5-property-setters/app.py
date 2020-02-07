@@ -1,14 +1,14 @@
-from flight import Segment, Flight
-
-
-seg = [Segment('EDI', 'LHR'), Segment('LHR', 'CAN')]
-flight = Flight(seg)
-
-print(flight.departure_point)
-print(flight)
-
-flight.departure_point = 'GLA'
-print('...Set departure to GLA...')
-
-print(flight.departure_point)
-print(flight)
+# ____ f.. ______ S.. F...
+#
+#
+# seg = [S..('EDI', 'LHR'), S..('LHR', 'CAN')]
+# flight = F.. ?
+#
+# print ?.d..
+# print ?
+#
+# ?.d.. = 'GLA'
+# print('...Set departure to GLA...')
+#
+# print ?.d..
+# print ?
