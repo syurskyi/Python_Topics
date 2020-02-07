@@ -1,8 +1,8 @@
-from dog import Dog
-from monkey import Monkey
-
-d = Dog('Bob')
-m = Monkey('Rolf')
-
-d.walk()
-m.eat()
+# ____ d.. ______ D..
+# ____ m.. ______ M..
+#
+# d = D.. 'Bob'
+# m = M.. 'Rolf'
+#
+# d.w..
+# m.e..
