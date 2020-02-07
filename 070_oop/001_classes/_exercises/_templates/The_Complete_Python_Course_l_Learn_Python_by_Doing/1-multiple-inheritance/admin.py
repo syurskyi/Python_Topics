@@ -1,18 +1,18 @@
-from user import User
-from saveable import Saveable
-
-
-class Admin(User, Saveable):
-    def __init__(self, username, password, access):
-        super(Admin, self).__init__(username, password)
-        self.access = access
-    
-    def __repr__(self):
-        return f'<Admin {self.username}, access {self.access}>'
-
-    def to_dict(self):
-        return {
-            'username': self.username,
-            'password': self.password,
-            'access': self.access
-        }
+# ____ u.. ______ User
+# ____ s.. ______ Saveable
+#
+#
+# c_ Admin U.. S..
+#     ___ -  ____ username password access
+#         s__ A.. ____ .- u.. p..
+#         ____.?  ?
+#
+#     ___ -r
+#         r_ _*<Admin |____.u..| access |____.a..>'
+#
+#     ___ to_dict ____
+#         r_ {
+#             'username': ____.u..
+#             'password': ____.p..
+#             'access': ____.a..
+#         }
