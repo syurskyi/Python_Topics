@@ -1,6 +1,6 @@
-from animal import Animal
-
-
-class Monkey(Animal):
-    def num_legs(self):
-        return 2
+# ____ a.. ______ A..
+#
+#
+# c_ Monkey ?
+#     ____ num_legs _____
+#         r_ 2
