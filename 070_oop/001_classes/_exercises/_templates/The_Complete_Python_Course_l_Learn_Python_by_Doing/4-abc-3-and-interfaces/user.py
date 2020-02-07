@@ -1,18 +1,18 @@
-from saveable import Saveable
-
-class User(Saveable):
-    def __init__(self, username, password):
-        self.username = username
-        self.password = password
-    
-    def login(self):
-        return 'Logged in!'
-    
-    def __repr__(self):
-        return f'<User {self.username}>'
-
-    def to_dict(self):
-        return {
-            'username': self.username,
-            'password': self.password
-        }
+# ____ s.. ______ S..
+#
+# c_ User ?
+#     ___ -  ____ username password
+#         ____.?  ?
+#         ____.?  ?
+#
+#     ___ login ____
+#         r_ 'Logged in!'
+#
+#     ___ -r
+#         r_ _*<U.. |____.u.. >'
+#
+#     ___ to_dict ____
+#         r_ {
+#             'username': ____.username
+#             'password': ____.password
+#         }
