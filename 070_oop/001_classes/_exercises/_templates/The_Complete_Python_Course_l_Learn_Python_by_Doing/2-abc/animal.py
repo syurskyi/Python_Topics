@@ -1,14 +1,14 @@
-from abc import ABCMeta, abstractmethod
-
-
-class Animal(metaclass=ABCMeta):
-
-    def walk(self):
-        print('Walking...')
-    
-    def eat(self):
-        print('Eating...')
-    
-    @abstractmethod
-    def num_legs():
-        pass
+# ____ abc ______ A.. a..
+#
+#
+# c_ Animal m.. _
+#
+#     ___ walk____
+#         print('Walking...')
+#
+#     ___ eat____
+#         print('Eating...')
+#
+#     ??
+#     ___ num_legs
+#         pass
