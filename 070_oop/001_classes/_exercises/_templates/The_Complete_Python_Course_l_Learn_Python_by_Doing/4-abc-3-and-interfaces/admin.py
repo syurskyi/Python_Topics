@@ -1,16 +1,16 @@
-from user import User
-
-class Admin(User):
-    def __init__(self, username, password, access):
-        super(Admin, self).__init__(username, password)
-        self.access = access
-    
-    def __repr__(self):
-        return f'<Admin {self.username}, access {self.access}>'
-
-    def to_dict(self):
-        return {
-            'username': self.username,
-            'password': self.password,
-            'access': self.access
-        }
+# ____ u.. ______ U..
+#
+# c_ Admin ?
+#     ___ - ____ username password access
+#         s.. A.. ____ . - ?
+#         ____.?  ?
+#
+#     ___ -r
+#         r_ _*<Admin |____.u..| access |____.a|>'
+#
+#     ___ to_dict ____
+#         r_ {
+#             'username': ____.username
+#             'password': ____.password
+#             'access': ____.access
+#         }
