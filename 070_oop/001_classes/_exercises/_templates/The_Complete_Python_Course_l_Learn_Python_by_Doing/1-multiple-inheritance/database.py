@@ -1,14 +1,14 @@
-class Database:
-    content = {'users': []}
-
-    @classmethod
-    def insert(cls, data):
-        cls.content['users'].append(data)
-    
-    @classmethod
-    def remove(cls, finder):
-        cls.content['users'] = [user for user in cls.content['users'] if not finder(user)]
-    
-    @classmethod
-    def find(cls, finder):
-        return [user for user in cls.content['users'] if finder(user)]
+# c_ Database
+#     content _ 'users':    # list
+#
+#     ??
+#     ___ insert ___ data
+#         ___.c.. 'users'|.ap.. ?
+#
+#     ??
+#     ___ remove ___ finder
+#         ___.c.. 'users'| _ user ___ ? __ ___.c.. 'users'| __ no. f.. u..
+#
+#     ??
+#     ___ find ___ finder
+#         r_  user ___ ? __ ___.c.. 'users'| __ f.. u..
