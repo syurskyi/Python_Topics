@@ -20,9 +20,6 @@ https://www.dofactory.com/javascript/strategy-design-pattern
 https://www.dofactory.com/javascript/strategy-design-pattern
 https://medium.com/better-programming/design-patterns-using-the-strategy-pattern-in-javascript-3c12af58fd8a
 
-Keep it Simple with the Strategy Design Pattern
-https://github.com/syurskyi/Python_Topics/edit/master/120_design_patterns/021_strategy/links.md
-
 Strategy Design Pattern in JavaScript
 https://gist.github.com/Integralist/5736427
 
