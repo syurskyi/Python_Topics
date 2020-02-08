@@ -1,4 +1,4 @@
-from strategy.strategy_abc import AbsStrategy
+from strategies.strategy import AbsStrategy
 
 class PostalStrategy(AbsStrategy):
     def calculate(self, order):

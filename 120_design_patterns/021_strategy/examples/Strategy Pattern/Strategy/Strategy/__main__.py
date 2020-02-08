@@ -1,5 +1,5 @@
-from strategy import Order, ShippingCost
-from strategy import FedExStrategy, PostalStrategy, UPSStrategy
+from strategies.strategy import Order, ShippingCost
+from strategies.strategy import FedExStrategy, PostalStrategy, UPSStrategy
 
 # Test Federal Express shipping
 
