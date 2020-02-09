@@ -35,9 +35,6 @@ https://github.com/syurskyi/Python_Topics/edit/master/120_design_patterns/021_st
 C# Design Patterns – Strategy Design Pattern
 https://code-maze.com/strategy/
 
-Design Patterns - Strategy Pattern in JavaScript
-https://github.com/syurskyi/Python_Topics/edit/master/120_design_patterns/021_strategy/links.md
-
 Strategy Design Pattern in Java – Example Tutorial
 https://github.com/syurskyi/Python_Topics/edit/master/120_design_patterns/021_strategy/links.md
 
