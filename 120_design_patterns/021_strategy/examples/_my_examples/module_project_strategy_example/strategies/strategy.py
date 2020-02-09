@@ -1,6 +1,6 @@
 from abc import ABC
 
 
-class Strategy:
+class Strategy(ABC):
     def calculate(self, value):
         pass
