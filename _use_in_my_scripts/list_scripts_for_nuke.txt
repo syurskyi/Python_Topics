@@ -1,0 +1,1 @@
+070_oop\001_classes\_exercises\ITDN Python RUS\001_Vvedenie v OOP\07-static-methods.py
