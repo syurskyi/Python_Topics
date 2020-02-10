@@ -12,7 +12,7 @@
 #
 #
 # c_ MyClass
-#     ___ __init__ ____
+#     ___ -
 #         ____.__private_attribute = 42
 #
 #     ___ get_private ____
@@ -22,4 +22,4 @@
 # obj = ?
 # print ?.g..  # 42
 # print ?.__p..  # ошибка
-# # print(obj._MyClass__private_attribute)  # 42
+# # print(?._M..__p..)  # 42
