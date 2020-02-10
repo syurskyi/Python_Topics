@@ -1,4 +1,4 @@
-# c_ User:
+# c_ User
 # #     ___ - ____ username password
 # #         ____.?  ?
 # #         ____.?  ?
