@@ -1,6 +1,6 @@
 # # -*- coding: utf-8 -*-
 # 
-# c__ Student:
+# c__ Student
 #     ___ - ____ name school
 #         ____.?  ?
 #         ____.?  ?
