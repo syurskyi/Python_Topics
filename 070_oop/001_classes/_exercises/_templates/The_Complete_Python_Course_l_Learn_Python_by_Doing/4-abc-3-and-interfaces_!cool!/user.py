@@ -13,6 +13,6 @@
 #
 #     ___ to_dict ____
 #         r_ {
-#             'username': ____.username
-#             'password': ____.password
+#             'u..': ____.?
+#             'p..': ____.?
 #         }
