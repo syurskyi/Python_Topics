@@ -1,2 +1,3 @@
 070_oop\001_classes\_exercises\ITDN Python RUS\001_Vvedenie v OOP\07-static-methods.py
 070_oop\001_classes\examples\ITDN Python RUS\001_Vvedenie v OOP\08-class-methods.py
+070_oop\001_classes\_exercises\Python 3 Most Necessary\13.5. Special methods.py
