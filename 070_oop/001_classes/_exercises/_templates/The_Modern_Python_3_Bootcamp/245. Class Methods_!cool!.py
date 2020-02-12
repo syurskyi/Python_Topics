@@ -1,5 +1,5 @@
 # # A User class with both instance attributes and instance methods
-# c_ User:
+# c_ User
 #     active_users _ 0
 #
 #     ??
