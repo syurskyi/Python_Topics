@@ -2,10 +2,10 @@
 #     ___ - ____ data
 #         ____.d.. _ ?
 #
-#     ___ selfless arg1, arg2               # A simple function in 3.0
+#     ___ selfless arg1 arg2               # A simple function in 3.0
 #         r_ arg1 + arg2
 #
-#     ___ normal ____ arg1, arg2           # Instance expected when called
+#     ___ normal ____ arg1 arg2           # Instance expected when called
 #         r_ ____.d.. + _1 + _2
 #
 # print('#' * 23 + ' Instance passed to self automatically')
