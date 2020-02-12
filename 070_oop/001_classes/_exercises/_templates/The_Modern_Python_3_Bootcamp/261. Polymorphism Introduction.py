@@ -6,11 +6,11 @@
 #     ___ swim ____
 #         r_ _* ____.n..| is swimming"
 #
-#     ___ greet(____):
+#     ___ greet ____
 #         r_ _*I am {____.n..} of the sea!"
 #
 #
-# c_ Ambulatory:
+# c_ Ambulatory
 #     ___ - ____,name
 #         print("AMBULATORY INIT!")
 #         ____.?  ?
