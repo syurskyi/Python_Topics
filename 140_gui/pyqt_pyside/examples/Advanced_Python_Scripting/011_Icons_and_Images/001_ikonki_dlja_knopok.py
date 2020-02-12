@@ -1,0 +1,1 @@
+# KAzduj widget, element ili item, kotoromy mozno naznachit' icon imeet method setIcon
