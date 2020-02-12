@@ -18,7 +18,7 @@
 # t = S_.d..          # Unbound method object (a function in 3.0: see ahead)
 # ? _1 'howdy'     # Pass in instance (if the method expects one in 3.0)
 #
-#
+# print('#' * 23 + ' Class Bound method')
 # c_ Eggs
 #     ___ m1 ____ n
 #         print(n)
