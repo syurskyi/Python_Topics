@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # c_ Number
 #     ___ - ____ base
 #         ____.?  ?
@@ -31,13 +33,13 @@
 #     r_ ? ** 2                          # Simple functions (def or lambda)
 # #
 # c_ Sum
-#     ___ - ____, val                 # Callable instances
+#     ___ - ____ val                 # Callable instances
 #         ____.?  ?
 #     ___ -c ____ arg
-#         r_ ____.val + a..
+#         r_ ____.v.. + a..
 # #
 # c_ Product
-#     ___ - ____, val                 # Bound methods
+#     ___ - ____ val                 # Bound methods
 #         ____.?  ?
 #     ___ method ____ arg
 #         r_ ____.v.. * a..
@@ -54,32 +56,33 @@
 # print('#' * 23 + ' Index, comprehensions, maps')
 # actions[-1](5)                               # Index, comprehensions, maps
 # #
-# [act 5 ___ ? __ a...
+# |act 5 ___ ? __ a...
 #
-# li.. ma. l act ac. (5) ac..
+# li.. ma. l___ act ac. (5) ac..
 #
 #
 # c_ Negate
-#     ___ - ____ val                 # Classes are callables too
-#         ____.?  ?                      # But called for object, not work
+#     ___ - ____ val                      # Classes are callables too
+#         ____.?  -?                      # But called for object, not work # has to be negative
 #
 #     ___ -r ____                      # Instance print format
 #         r_ st. ____.v..
 #
-# print('#' * 23 + ' Call a c_ too')
+# print('#' * 23 + ' Call a class too')
 # actions _  s... so... po____.me... Ne...     # Call a c_ too
 # ___ act __ ?
 #     print ? 5
 # #
 # print('#' * 23 + ' Runs __repr__ not __str__!')
-# print act 5 ___ ? __ ac..                    # Runs __repr__ not __str__!
+# print act 5 ___ ? __ a..                    # Runs __repr__ not __str__!
 # #
 # #
+# print('#' * 23 + ' 2.6/3.0 dict comprehension')
+# table =  act 5 ? ___ ? __ ?        # 2.6/3.0 dict comprehension
 #
-# table =  act 5 act ___ ? i_ ac..        # 2.6/3.0 dict comprehension
 # print('#' * 23 + '  2.6/3.0 str.format')
 # ___ key value __ t___.it..
-#     print(' _:2 => _ '.f... k. v..    # 2.6/3.0 str.format
+#     print(' @;@ => @ '.f... k. v..    # 2.6/3.0 str.format # Индексы i  dva probela v pervom
 #
 # # -5 => <c_ '__main__.Negate'>
 # # 25 => <function square at 0x025D4978>
