@@ -1,18 +1,18 @@
-from PySide.QtGui import *
-
-
-class MyWidget(QWidget):                          # NAdo sozdat' svoj klass ynasledovanuj ot nyznogo nam vidgeta
-    def __init__(self):
-        super(MyWidget, self).__init__()
-        l = QVBoxLayout()                         # i kogda mu sozdajom interface dlja nego
-        self.setLayout(l)                         # nyzno obrachatsja k ekzempljary cherz self
-        label = QLabel('Text')
-        l.addWidget(label)
-        b = QPushButton('OK')
-        l.addWidget(b)
-
-
-app = QApplication([])
-w = MyWidget()
-w.show()
-app.exec_()
+# ____ ___._G.. ______
+#
+#
+# c_ MyWidget _W..                               # NAdo sozdat' svoj klass ynasledovanuj ot nyznogo nam vidgeta
+#     ___ - ____
+#         s__ ? ____ . -
+#         l = QVB__                              # i kogda mu sozdajom interface dlja nego
+#         ____.s_L.. ?                         # nyzno obrachatsja k ekzempljary cherz self
+#         label = QL.. 'Text'
+#         ?._W.. ?
+#         b = QPB..'OK')
+#         ?._W ?
+#
+#
+# app = Q...
+# w = ?
+# ?.s..
+# ?.e..
