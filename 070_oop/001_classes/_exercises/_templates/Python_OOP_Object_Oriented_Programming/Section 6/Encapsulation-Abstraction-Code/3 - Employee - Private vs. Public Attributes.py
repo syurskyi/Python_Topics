@@ -1,8 +1,8 @@
-class Employee:
-
-    def __init__(self, name, age, address, number, vehicle=None):
-        self.name = name
-        self._age = age
-        self._address = address
-        self.__number = number
-        self.__vehicle = vehicle
+# c_ Employee
+#
+#     ___ - ____ name age address number vehicle_N..
+#         ____.?  ?
+#         ____._?  ?
+#         ____._?  ?
+#         ____.__?  ?
+#         ____.__?  ?
