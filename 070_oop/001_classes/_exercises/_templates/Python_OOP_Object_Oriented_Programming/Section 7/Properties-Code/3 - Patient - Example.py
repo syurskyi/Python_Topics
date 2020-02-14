@@ -1,28 +1,28 @@
-class Patient:
-    
-    def __init__(self, name, age, id_num, num_children=0):
-        self.name = name
-        self.age = age
-        self._id_num = id_num
-        self._num_children = num_children
-
-    def get_id_num(self):
-        return self._id_num
-
-    def set_id_num(self, new_id):
-        if isinstance(new_id, str):
-            self._id_num = new_id
-        else:
-            print("Please enter a valid id")
-
-    def get_num_children(self):
-        return self._num_children
-
-    def set_num_children(self, num_children):
-        if isinstance(num_children, int) and 0 < num_children < 70:
-            self._num_children = num_children
-        else:
-            print("Please enter a valid number of children")
-        
-
-        
+# c_ Patient
+#
+#     ___ - ____ name age id_num num_children_0
+#         ____.?  ?
+#         ____.?  ?
+#         ____._?  ?
+#         ____._?  ?
+#
+#     ___ get_id_num ____
+#         r_ ____._i...
+#
+#     ___ set_id_num ____ new_id
+#         __ isi... ? st.
+#             ____._? _ ?
+#         ____
+#             print("Please enter a valid id")
+#
+#     ___ get_num_children ____
+#         r_ ____._n..
+#
+#     ___ set_num_children ____ num_children
+#         __ isi... ? in. an. 0 < ? < 70
+#             ____._? _ ?
+#         ____
+#             print("Please enter a valid number of children")
+#
+#
+#
