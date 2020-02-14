@@ -1,29 +1,36 @@
-# # dialog.py
 # ____ ?.? ______ _
 # ____ ?.? ______ _
+# ______ di..
 #
-# c_ dialogClass QD..
-#     ___ -  ____
-#         s__ ? ____). -
-#         ____.ly = QVBL..____
-#         ____.label = QE..
-#         ____.l_.aW.. ?
+# c_ simpleWindow QW..
+#     ___ -
+#         s__ ? ___ . -
+#         ly = QVBL.. ___
+#         ___.btn = QPB..('Open')
+#         ?.aW.. ?
+#         ___.re.. 300, 200)
+#         ___.b__.cl__.c.. ___.?
 #
-#         ____.ok_btn _ QPB.. 'OK
-#         ____.l_.aW.. ?
+#     ___ showMessage ___
+#         ___.dial = di__.dC..
+#         r = ___.?.e..
+#         print ?
+#         __ ?
+#             print ___.d__.gD..
+#             # print ___.dial.label.text()
 #
-#         ____.cancel_btn _ QPB..('Cancel')
-#         ____.l_.aW.. ?
+# __ ______ __ ______
+#     app = QA..
+#     w = ?
+#     ?.s..
+#     ?.e..
 #
-#         # Sam klass QDialog ynasledovan ot widgeta ot klassa QWidget. A znachit y nego est' method 'show'
-#         # No on y nas prosto otkroet okno. To est' programma prodolzit dal'she dejstvovat'  kak esli bu ja prosto otkrul
-#         # docechernee okno. Shto bu okno dialog zarabotalo kak dialog y nas est' fynkcija exec, no shto bu eta fynkcija shto to
-#         # vernyla dlja etogo est' dve specialnue fynkcii, kotorue nado  eto accept and reject
-#
-#         ____.o__.cl__.c.. ____.a..
-#         ____.c__.cl__.c.. ____.r..
-#
-#     # Kogda y nas est' dialog i est' mnogo parametrov, nyzno sdelat' kakyjy to fynkcijy, kotoraja iz etih parametrov
-#     #  soberjot ydobnuj slovar'
-#     ___ getData ____
-#         r_ di.. text _ ____.la__.t..
+# # Sam klass QDialog ynasledovan ot klassa Widgeta.
+# # A znachit y nego est'  metod show. No on y nas prosto otkroet okno.
+# # To est'  programma prodolzet dal'she dejstvovat', kak esli bu mu otkruli dochernee okno.
+# # Shtobu dialog zarabotal kak dialog y nas est' fynkcija exec. No shto bu eta fynkcija sto to vernyla
+# # dlja etogo est' 2 specialnue fynkcii, kotorue nyzno vuzvat'. Eto accept i rejcet. Mu na nih
+# # dolznu zakonektit' nashi knopki
+# #
+# # KOgda y nas dialog i tam mnogo kakih to parametrov, nyzno sdelat'  kakyjy to fynkcijy, kotoraja iz etih parametrov
+# # nam soberjot ydobnuj naprimer slovar'.
