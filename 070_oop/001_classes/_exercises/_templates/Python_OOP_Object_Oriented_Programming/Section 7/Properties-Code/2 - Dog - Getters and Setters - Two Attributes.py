@@ -1,26 +1,26 @@
-class Dog:
-    def __init__(self, name, age):
-        self._name = name
-        self._age = age
-
-    # Name
-
-    def get_name(self):
-        return self._name
-
-    def set_name(self, name):
-        if isinstance(name, str):
-            self._name = name
-        else:
-            print("Please enter a valid name")
-
-    # Age
-
-    def get_age(self):
-        return self._age
-
-    def set_age(self, age):
-        if isinstance(age, int) and 0 < age < 30:
-            self._age = age
-        else:
-            print("Please enter a valid age")
+# c_ Dog
+#     ___ - ____ name age
+#         ____._?  ?
+#         ____._?  ?
+#
+#     # Name
+#
+#     ___ get_name ____
+#         r_ ____._n..
+#
+#     ___ set_name ____ name
+#         __ isi.. ? st.
+#             ____._? = ?
+#         ____
+#             print("Please enter a valid name")
+#
+#     # Age
+#
+#     ___ get_age ____
+#         r_ ____._?
+#
+#     ___ set_age ____ age
+#         __ isi.. ? in. an. 0 < ? < 30
+#             ____._? _ ?
+#         ____
+#             print("Please enter a valid age")
