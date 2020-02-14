@@ -1,6 +1,6 @@
-class Player:
-	def __init__(self, username, rank, time_played, id_num):
-		self.username = username
-		self._rank = rank
-		self.__time_played = time_played
-		self.__id_num = id_num
+# c_ Player
+# 	___ - ____ username rank time_played id_num
+# 		____.?  ?
+# 		____._?  ?
+# 		____.__?  ?
+# 		____.__?  ?
