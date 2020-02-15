@@ -1,27 +1,27 @@
-class CashRegister:
-
-    tax = 0.05
-
-    def __init__(self, cashier, serial):
-        self.cashier = cashier
-        self._serial = serial
-
-    @property
-    def serial(self):
-        return self._serial
-
-    def display_total(self, subtotal):
-        print("=== Welcome to our store ===")
-        print("The subtotal is:", subtotal)
-        print("The tax is:", self._calculate_tax(subtotal))
-        print("-----------------------")
-        print("The total is:", self._calculate_total(subtotal))
-
-    def _calculate_total(self, subtotal):
-        return subtotal + self._calculate_tax(subtotal)
-
-    def _calculate_tax(self, amount):
-        return amount * CashRegister.tax
-        
-register = CashRegister("Melanie", "3453513")
-register.display_total(5022.5)
+# c_ CashRegister
+# 
+#     tax = 0.05
+# 
+#     ___ -  ____ cashier serial
+#         ____.?  ?
+#         ____._?  ?
+# 
+#     ??
+#     ___ serial ____
+#         r_ ____._?
+# 
+#     ___ display_total ____ subtotal
+#         print("=== Welcome to our store ===")
+#         print("The subtotal is:" ?
+#         print("The tax is:", ____._c_t.. ?
+#         print("-----------------------")
+#         print("The total is:", ____._c_t.. ?
+# 
+#     ___ _calculate_total ____ subtotal
+#         r_ ? + ____._c_t.. ?
+# 
+#     ___ _calculate_tax ____ amount
+#         r_ ? * C__.t..
+#         
+# register = ?("Melanie", "3453513")
+# ?.d.. (5022.5)
