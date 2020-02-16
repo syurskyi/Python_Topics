@@ -79,6 +79,4 @@
 # forest1 = F..(randint(-90, 90), randint(-180, 180), "453453", 34535)
 # ?.populate_trees(2)
 # ?.display_trees_data()
-#
-#
-#
+
