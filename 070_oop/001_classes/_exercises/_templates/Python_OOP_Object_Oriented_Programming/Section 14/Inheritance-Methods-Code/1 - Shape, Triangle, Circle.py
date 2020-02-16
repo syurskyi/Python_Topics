@@ -1,33 +1,33 @@
-class Shape:
-
-    def __init__(self, color, is_polygon, description):
-        self.color = color
-        self.is_polygon = is_polygon
-        self.description = description
-
-    def display_data(self):
-        print(f"\n=== {self.description.capitalize()} ===")
-        print("Color:", self.color)
-        print("Is the shape a polygon?", "Yes" if self.is_polygon else "No")
-
-class Triangle(Shape):
-
-    def __init__(self, color, vertices, base, height):
-        Shape.__init__(self, color, True, "Triangle")
-        self.vertices = vertices
-        self.base = base
-        self.height = height
-
-class Circle(Shape):
-
-    def __init__(self, color, radius):
-        Shape.__init__(self, color, False, "Circle")
-        self.radius = radius
-
-
-triangle = Triangle("red", [(-2, 0), (2, 0), (0, 7)], 4, 7)
-circle = Circle("blue", 6.3)
-
-triangle.display_data()
-circle.display_data()
-
+# c_ Shape:
+#
+#     ___ - color is_polygon description
+#         ____.?  ?
+#         ____.?  ?
+#         ____.?  ?
+#
+#     ___ display_data ____
+#         print(_*\n=== .d__.ca..| ===
+#         print("Color:", .c..
+#         print("Is the shape a polygon?", "Yes" if .i.. else "No")
+#
+# c_ Triangle ?
+#
+#     ___ -  color vertices base height
+#         ?. -  c.. T.. "Triangle")
+#         ____.?  ?
+#         ____.?  ?
+#         ____.?  ?
+#
+# c_ Circle ?
+#
+#     ___ - ____ color radius
+#         ?. - c.. F.. "Circle")
+#         ____.?  ?
+#
+#
+# triangle = T..("red", [(-2, 0), (2, 0), (0, 7)], 4, 7)
+# circle = C..("blue", 6.3)
+#
+# t__.d..
+# c__.d..
+#
