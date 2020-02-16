@@ -1,20 +1,20 @@
 # c_ Sprite
 # 
-#     ___ - ____ character x y
-#         ____.?  ?
-#         ____._?  ?
-#         ____._? ?
+#     ___ - character x y
+#         ?  ?
+#         _?  ?
+#         _? ?
 # 
-#     ___ move_forward ____ angle step_5 movement_"vertical"
+#     ___ move_forward  angle step_5 movement_"vertical"
 #         __ m.. __ "v..
-#             ____._y += s..
+#             _y += s..
 #         ____
-#             ____._x += s..
+#             _x += s..
 # 
 #     ??
-#     ___ y ____
-#         r_ ____._y
+#     ___ y ?
+#         r_ _y
 # 
 #     ??
-#     ___ x ____
-#         r_ ____._x
+#     ___ x ?
+#         r_ _x
