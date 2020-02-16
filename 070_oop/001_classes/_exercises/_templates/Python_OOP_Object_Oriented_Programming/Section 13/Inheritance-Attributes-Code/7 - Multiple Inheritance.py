@@ -1,17 +1,17 @@
-class Rectangle:
-
-    def __init__(self, length, width, color):
-        self.length = length
-        self.width = width
-        self.color = color
-
-class GUIElement:
-
-    def click():
-        print("The object was clicked...")
-
-class Button(Rectangle, GUIElement):
-
-    def __init__(self, length, width, color, text):
-        Rectangle.__init__(self, length, width, color)
-        self.text = text
+# c_ Rectangle
+#
+#     ___ - ____ length width color
+#         ____.?  ?
+#         ____.?  ?
+#         ____.?  ?
+#
+# c_ GUIElement
+#
+#     ___ click
+#         print("The object was clicked...")
+#
+# c_ Button ?  ?
+#
+#     ___ - length width color text
+#         ?. -  l... w.. c..
+#         ____.?  ?

@@ -1,21 +1,21 @@
-class Ad:
-
-    def __init__(self, owner, link):
-        self.owner = owner
-        self.link = link
-        self.num_views = 0
-        self.num_clicks = 0
-
-class HouseAd(Ad):
-
-    def __init__(self, owner, link, address, house_price):
-        Ad.__init__(self, owner, link)
-        self.address = address
-        self.house_price = house_price
-
-class ProductAd(Ad):
-
-    def __init__(self, owner, link, description, product_price):
-        Ad.__init__(self, owner, link)
-        self.description = description
-        self.product_price = product_price
+# c_ Ad
+#
+#     ___ -  ____ owner link
+#         ____.?  ?
+#         ____.?  ?
+#         ____.num_views _ 0
+#         ____.num_clicks _ 0
+#
+# c_ HouseAd ?
+#
+#     ___ - ____ owner link address house_price
+#         ?.- ____ o... l..
+#         ____.?  ?
+#         ____.?  ?
+#
+# c_ ProductAd ?
+#
+#     ___ - ____ owner link description product_price
+#         ?.- ____ o.. l..
+#         ____.?  ?
+#         ____.?  ?

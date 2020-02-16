@@ -1,25 +1,25 @@
-class Product:
-
-    def __init__(self, code, price, brand):
-        self.code = code
-        self.price = price
-        self.brand = brand
-
-    def display_product_data(self):
-        print("==== Product Data ====")
-        print("Code:", self.code)
-        print("Price:", self.price)
-        print("Brand:", self.brand)
-
-class Butter(Product):
-
-    def __init__(self, code, price, brand, expiration_date, temp):
-        Product.__init__(self, code, price, brand)
-        self.expiration_date = expiration_date
-        self.temp = temp
-
-class Shampoo(Product):
-
-    def __init__(self, code, price, brand, size):
-        Product.__init__(self, code, price, brand)
-        self.size = size
+# c_ Product
+#
+#     ___ - ____ code price brand
+#         ____.?  ?
+#         ____.?  ?
+#         ____.?  ?
+#
+#     ___ display_product_data ____
+#         print("==== Product Data ====")
+#         print("Code:", ?
+#         print("Price:", ?
+#         print("Brand:", ?
+#
+# c_ Butter ?
+#
+#     ___ -  code price brand expiration_date temp
+#         ?.-  c.. p.. b..
+#         ____.?  ?
+#         ____.?  ?
+#
+# c_ Shampoo ?
+#
+#     ___ -  code price brand size
+#         ?.- ____ c.. p.. b..
+#         ____.?  ?

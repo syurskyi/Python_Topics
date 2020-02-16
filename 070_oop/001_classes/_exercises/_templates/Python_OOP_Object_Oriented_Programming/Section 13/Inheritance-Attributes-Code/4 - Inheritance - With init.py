@@ -1,21 +1,21 @@
-class Vehicle:
-
-    def __init__(self, speed, miles, price):
-        self.speed = speed
-        self.miles = miles
-        self.price = price
-
-class Truck(Vehicle):        
-
-    def __init__(self, speed, miles, price, driver):
-        Vehicle.__init__(self, speed, miles, price)
-        self.driver = driver
-        
-
-class Airplane(Vehicle):
-
-    def __init__(self, speed, miles, price, pilot):
-        Vehicle.__init__(self, speed, miles, price)
-        self.pilot = pilot
-    
-        
+# c_ Vehicle
+#
+#     ___ -  ____ speed miles price
+#         ____.?  ?
+#         ____.?  ?
+#         ____.?  ?
+#
+# c_ Truck ?
+#
+#     ___ - ____ speed miles price driver
+#         V___.- ____ s.. m.. p..
+#         ____.?  ?
+#
+#
+# c_ Airplane ?
+#
+#     ___ - ____ speed miles price pilot
+#         V__.- ____ speed miles price
+#         ____.?  ?
+#
+#
