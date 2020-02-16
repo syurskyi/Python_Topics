@@ -20,22 +20,22 @@ Let's see a simple example illustrating this:
 '''
 
 # %%
-class ValidString:
+c_ ValidString:
     def __set_name__(self, owner_class, property_name):
         print(f'__set_name__ called: owner={owner_class}, prop={property_name}')
 
 # %%
-class Person:
+c_ Person:
     name = ValidString()
 
 # %%
 '''
-As you can see `__set_name__` was called when the `Person` class was created. This is the only time it gets called.
+As you can see `__set_name__` was called when the `Person` c_ was created. This is the only time it gets called.
 The main advantage of this is that we can capture the property name:
 '''
 
 # %%
-class ValidString:
+c_ ValidString:
     def __set_name__(self, owner_class, property_name):
         print(f'__set_name__ called: owner={owner_class}, prop={property_name}')
         self.property_name = property_name
@@ -48,7 +48,7 @@ class ValidString:
                   f'of instance {instance}')
 
 # %%
-class Person:
+c_ Person:
     first_name = ValidString()
     last_name = ValidString()
 
@@ -74,7 +74,7 @@ That can be handy for messages that can reference the property name, or even sto
 '''
 
 # %%
-class ValidString():
+c_ ValidString():
     def __init__(self, min_length):
         self.min_length = min_length
         
@@ -99,7 +99,7 @@ class ValidString():
             return getattr(instance, key, None)
 
 # %%
-class Person:
+c_ Person:
     first_name = ValidString(1)
     last_name = ValidString(2)
 
