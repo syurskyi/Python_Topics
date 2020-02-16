@@ -3,25 +3,25 @@
 # c_ Forest
 #
 #     ____ - ____ latitude longitude code aprox_num_trees
-#         ____.?  ?
-#         ____.? ?
-#         ____.__?  ?
-#         ____.?  ?
+#         ?  ?
+#         ? ?
+#         __?  ?
+#         ?  ?
 #         # The list of trees that are being studied
 #         # is initially empty
-#         ____.trees =     # list
+#         ?trees =     # list
 #
-#     ____ populate_trees ____ num
+#     ____ populate_trees  num
 #         __ no. isi.. ? in.
-#             raise ValueError("Please enter a valid number")
+#             r.. V.. ("Please enter a valid number")
 #
 #         print(_*=== Adding |?| new trees to the forest ===")
 #         ___ i __ ra.. ?
 #             print(_*\n-> Tree #{i+1}")
-#             tree = ____.c...
-#             ____.tr__.ap.. ?
+#             tree = ?c...
+#             ?tr__.ap.. ?
 #
-#     ____ create_tree ____
+#     ____ create_tree
 #         w___ T..
 #             ___
 #                 code = st. in.. "Code of this new tree (sequence of integers):\n"
@@ -34,44 +34,44 @@
 #
 #         r_ T.. ? ? ?
 #
-#     ____ display_trees_data ____
+#     ____ display_trees_data
 #         print("\n====== Trees in this forest ======")
-#         ___ tree __ ____.tr..
+#         ___ tree __ ?tr..
 #             ?.di..
 #
 #
 # c_ Tree
 #
-#     ____ - ____ code height num_rings
-#         ____.__?  ?
-#         ____._?  ?
-#         ____._?  ?
+#     ____ -  code height num_rings
+#         __?  ?
+#         _?  ?
+#         _?  ?
 #
-#     ____ display_data ____
+#     ____ display_data
 #         print("\n===== Tree =====")
-#         print("Code:", ____.?
-#         print("Height:", ____.?
-#         print("Number of rings:", ____.?
+#         print("Code:" ?
+#         print("Height:" ?
+#         print("Number of rings:" ?
 #
 #     ?
-#     ____ height ____
-#         r_ ____.?
+#     ____ height
+#         r_ ?
 #
 #     ??.?
-#     ____ ? ____ new_height
+#     ____ ?  new_height
 #         __ 0 < ? < 100
-#             ____._h.. _ ?
+#             _h.. _ ?
 #         ____
 #             print("Please enter a valid tree height")
 #
 #     ??
-#     ____ num_rings ____
-#         r_ ____.?
+#     ____ num_rings
+#         r_ ?
 #
 #     ??.?
 #     ____ ? ____ new_num_rings
 #         __ 0 < ? < 6000
-#             ____._n.. _ ?
+#             _n.. _ ?
 #         ____
 #             print("Please enter a valid number of rings")
 #
