@@ -11,7 +11,7 @@
 #     ___ age ____ new_age
 #         print("Running setter")
 #         __ isi.. ? in. an. 0 < ? < 30
-#             _a.. _ ?
+#             _? _ ?
 #         ____
 #             print("Please enter a valid age")
 #

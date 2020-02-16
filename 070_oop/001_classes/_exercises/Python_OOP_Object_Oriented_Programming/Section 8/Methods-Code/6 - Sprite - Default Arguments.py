@@ -1,20 +1,20 @@
-# c_ Sprite
-# 
-#     ___ - ____ character x y
-#         ____.?  ?
-#         ____._?  ?
-#         ____._? ?
-# 
-#     ___ move_forward ____ angle step_5 movement_"vertical"
-#         __ m.. __ "v..
-#             ____._y += s..
-#         ____
-#             ____._x += s..
-# 
-#     ??
-#     ___ y ____
-#         r_ ____._y
-# 
-#     ??
-#     ___ x ____
-#         r_ ____._x
+class Sprite:
+
+    def __init__(self, character, x, y):
+        self.character = character
+        self._x = x
+        self._y = y
+
+    def move_forward(self, angle, step=5, movement="vertical"):
+        if movement == "vertical":
+            self._y += step
+        else:
+            self._x += step
+
+    @property
+    def y(self):
+        return self._y
+
+    @property
+    def x(self):
+        return self._x

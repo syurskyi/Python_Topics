@@ -8,7 +8,7 @@
 #         print("Getter")
 #         r_ _?
 #
-#     @price.setter
+#     ??.?
 #     ___ price ____ new_price
 #         __ p.. > 0
 #             ._p.. _ _p..

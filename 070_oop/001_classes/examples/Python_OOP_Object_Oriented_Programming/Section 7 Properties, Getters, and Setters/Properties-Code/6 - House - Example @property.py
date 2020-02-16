@@ -10,8 +10,8 @@ class House:
 
     @price.setter
     def price(self, new_price):
-        if price > 0:
-            self._price = _price
+        if self._price > 0:
+            self._price = new_price
         else:
             print("Please enter a valid price")
 
