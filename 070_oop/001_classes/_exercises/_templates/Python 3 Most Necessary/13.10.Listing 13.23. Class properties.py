@@ -1,16 +1,16 @@
-# -*- coding: utf-8 -*-
-
-class MyClass:
-    def __init__(self, value):
-        self.__var = value
-    def get_var(self):        # Чтение
-        return self.__var
-    def set_var(self, value): # Запись
-        self.__var = value
-    def del_var(self):        # Удаление
-        del self.__var
-    v = property(get_var, set_var, del_var, "Строка документирования")
-c = MyClass(5)
-c.v = 35                    # Вызывается метод set_var()
-print(c.v)                  # Вызывается метод get_var()
-del c.v                     # Вызывается метод del_var()
+# # -*- coding: utf-8 -*-
+#
+# c_ MyClass
+#     ___ -  value
+#         ?.__var _ ?
+#     ___ get_var ?        # Чтение
+#         r_ ??
+#     ___ set_var value # Запись
+#         ?? _ ?
+#     ___ del_var ?        # Удаление
+#         del ??
+#     v = ? ? ? ? "Строка документирования")
+# c = ? 5
+# ?.v _ 35                    # Вызывается метод set_var()
+# print ?.v)                  # Вызывается метод get_var()
+# del c.v                     # Вызывается метод del_var()
