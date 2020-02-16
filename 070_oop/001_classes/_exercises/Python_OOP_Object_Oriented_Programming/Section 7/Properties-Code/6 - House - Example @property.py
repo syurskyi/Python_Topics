@@ -1,17 +1,17 @@
 # c_ House
 #
-#     ___ -  price
-#         _?  ?
+#     ___ - ____ price
+#         ____._?  ?
 #
 #     ??
 #     ___ price ____
 #         print("Getter")
-#         r_ _?
+#         return ____._?
 #
 #     @price.setter
 #     ___ price ____ new_price
 #         __ p.. > 0
-#             ._p.. _ _p..
+#             ____._p.. _ _p..
 #         ____
 #             print("Please enter a valid price")
 #

@@ -1,17 +1,17 @@
 # c_ Dog
-#     ___ - age
-#         _?  ?
+#     ___ - ____ age
+#         ____._?  ?
 #
 #     ??
 #     ___ age ____
 #         print("Running getter")
-#         r_ _?
+#         r_ ____._?
 #
 #     ??.?
 #     ___ age ____ new_age
 #         print("Running setter")
 #         __ isi.. ? in. an. 0 < ? < 30
-#             _a.. _ ?
+#             ____._a.. _ ?
 #         ____
 #             print("Please enter a valid age")
 #
