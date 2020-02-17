@@ -11,7 +11,7 @@
 # ____ -f ______ p..
 #
 #
-# ___c_ Subject o..
+# c_ Subject o..
 #
 #     ___ -
 #         ?_observers     # list
@@ -33,7 +33,7 @@
 #
 #
 # # Example usage
-# ___c_ Data S..
+# c_ Data S..
 #
 #     ___ -  name_''
 #         S__. -
@@ -50,14 +50,14 @@
 #         .no..
 #
 #
-# ___c_ HexViewer
+# c_ HexViewer
 #
 #     ___ update  subject
 #         print(u'HexViewer: Subject @ has data 0x%x'
 #               (?.n.. ?.d..
 #
 #
-# ___c_ DecimalViewer
+# c_ DecimalViewer
 #
 #     ___ update  subject
 #         print(u'DecimalViewer: Subject @ has data @'
