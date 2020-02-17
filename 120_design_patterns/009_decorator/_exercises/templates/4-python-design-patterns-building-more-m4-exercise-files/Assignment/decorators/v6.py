@@ -1,10 +1,10 @@
-from .abs_decorator import AbsDecorator
-
-class V6(AbsDecorator):
-    @property
-    def description(self):
-        return self.car.description + ', V6'
-
-    @property
-    def cost(self):
-        return self.car.cost + 1200.00*self.car.premium
+# ___ .a___ ______ A...
+# 
+# c_ V6 ?
+#     ??
+#     ___ description
+#         r_ ?c__.d.. + ', V6'
+# 
+#     ??
+#     ___ cost
+#         r_ ?c__.c.. + 1200.00 * ?c__.p..

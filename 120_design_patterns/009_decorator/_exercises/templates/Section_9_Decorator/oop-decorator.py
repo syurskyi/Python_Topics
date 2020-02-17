@@ -1,63 +1,63 @@
-from abc import ABC
-
-
-class Shape(ABC):
-    def __str__(self):
-        return ''
-
-
-class Circle(Shape):
-    def __init__(self, radius=0.0):
-        self.radius = radius
-
-    def resize(self, factor):
-        self.radius *= factor
-
-    def __str__(self):
-        return f'A circle of radius {self.radius}'
-
-
-class Square(Shape):
-    def __init__(self, side):
-        self.side = side
-
-    def __str__(self):
-        return f'A square with side {self.side}'
-
-
-class ColoredShape(Shape):
-    def __init__(self, shape, color):
-        if isinstance(shape, ColoredShape):
-            raise Exception('Cannot apply ColoredDecorator twice')
-        self.shape = shape
-        self.color = color
-
-    def __str__(self):
-        return f'{self.shape} has the color {self.color}'
-
-
-class TransparentShape(Shape):
-    def __init__(self, shape, transparency):
-        self.shape = shape
-        self.transparency = transparency
-
-    def __str__(self):
-        return f'{self.shape} has {self.transparency * 100.0}% transparency'
-
-
-if __name__ == '__main__':
-    circle = Circle(2)
-    print(circle)
-
-    red_circle = ColoredShape(circle, "red")
-    print(red_circle)
-
-    # ColoredShape doesn't have resize()
-    # red_circle.resize(3)
-
-    red_half_transparent_square = TransparentShape(red_circle, 0.5)
-    print(red_half_transparent_square)
-
-    # nothing prevents double application
-    mixed = ColoredShape(ColoredShape(Circle(3), 'red'), 'blue')
-    print(mixed)
+# ____ a.. _______ A..
+#
+#
+# c_ Shape ?
+#     ___ -s
+#         r_ ''
+#
+#
+# c_ Circle S..
+#     ___ -  radius_0.0
+#         ?  ?
+#
+#     ___ resize  factor
+#         ?r.. *= ?
+#
+#     ___ -s
+#         r_ _*A circle of radius |?r..
+#
+#
+# c_ Square S..
+#     ___ -i side
+#         ?  ?
+#
+#     ___ -s
+#         r_ _*A square with side |?s..'
+#
+#
+# c_ ColoredShape S..
+#     ___ -  shape color
+#         __ isi... ? C..
+#             r_ E.. ('Cannot apply ColoredDecorator twice')
+#         ?  ?
+#         ?  ?
+#
+#     ___ -s
+#         r_ _*|?s..| has the color |?c..
+#
+#
+# c_ TransparentShape S..
+#     ___ - shape transparency
+#         ?  ?
+#         ?  ?
+#
+#     ___ -s
+#         r_ _*|?s..| has |?t.. * 100.0|% transparency'
+#
+#
+# __ _______ __ ______
+#     circle = C.. 2
+#     print ?
+#
+#     red_circle = CS.. ? "red"
+#     print ?
+#
+#     # ColoredShape doesn't have resize()
+#     # red_circle.resize(3)
+#
+#     red_half_transparent_square = TS_ ? 0.5
+#     print ?
+#
+#     # nothing prevents double application
+#     mixed = CS.. CS.. C.. 3 'red' 'blue'
+#     print ?

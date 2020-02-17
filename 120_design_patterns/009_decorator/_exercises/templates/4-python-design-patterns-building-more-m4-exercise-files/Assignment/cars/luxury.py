@@ -1,14 +1,14 @@
-from .abs_car import AbsCar
-
-class Luxury(AbsCar):
-    @property
-    def description(self):
-        return 'Luxury'
-
-    @property
-    def cost(self):
-        return 18000.00
-
-    @property
-    def premium(self):
-        return 2.00
+# ____ .a_c.. _______ A_C.
+# 
+# c_ Luxury ?
+#     ??
+#     ___ description
+#         r_ 'Luxury'
+# 
+#     ??
+#     ___ cost
+#         r_ 18000.00
+# 
+#     ??
+#     ___ premium
+#         r_ 2.00

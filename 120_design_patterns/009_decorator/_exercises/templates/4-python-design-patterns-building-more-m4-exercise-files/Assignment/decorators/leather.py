@@ -1,10 +1,10 @@
-from .abs_decorator import AbsDecorator
-
-class V6(AbsDecorator):
-    @property
-    def description(self):
-        return self.car.description + ', top-grain leather'
-
-    @property
-    def cost(self):
-        return self.car.cost + 2700.00*self.car.premium
+# ___ .a__ ______ A...
+# 
+# c_ V6 ?
+#     ??
+#     ___ description
+#         r_ ?c__.d.. + ', top-grain leather'
+# 
+#     ??
+#     ___ cost
+#         r_ ?c__.c.. + 2700.00 * ?c__.p..

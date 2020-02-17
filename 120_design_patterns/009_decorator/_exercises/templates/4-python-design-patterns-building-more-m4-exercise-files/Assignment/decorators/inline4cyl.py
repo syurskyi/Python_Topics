@@ -1,10 +1,10 @@
-from .abs_decorator import AbsDecorator
-
-class Inline4Cyl(AbsDecorator):
-    @property
-    def description(self):
-        return self.car.description + ', inline 4 cylinder'
-
-    @property
-    def cost(self):
-        return self.car.cost + 500.00*self.car.premium
+# ___ .a__ ______ A...
+# 
+# c_ Inline4Cyl ?
+#     ??
+#     ___ description
+#         r_ ?c__.d... + ', inline 4 cylinder'
+# 
+#     ??
+#     ___ cost
+#         r_ ?c_.c.. + 500.00* ?c__.p...

@@ -1,73 +1,73 @@
-import six
-from abc import ABCMeta
-
-
-@six.add_metaclass(ABCMeta)
-class Abstract_Coffee(object):
-
-    def get_cost(self):
-        pass
-
-    def get_ingredients(self):
-        pass
-
-    def get_tax(self):
-        return 0.1 * self.get_cost()
-
-
-class Concrete_Coffee(Abstract_Coffee):
-
-    def get_cost(self):
-        return 1.00
-
-    def get_ingredients(self):
-        return 'coffee'
-
-
-@six.add_metaclass(ABCMeta)
-class Abstract_Coffee_Decorator(Abstract_Coffee):
-
-    def __init__(self, decorated_coffee):
-        self.decorated_coffee = decorated_coffee
-
-    def get_cost(self):
-        return self.decorated_coffee.get_cost()
-
-    def get_ingredients(self):
-        return self.decorated_coffee.get_ingredients()
-
-
-class Sugar(Abstract_Coffee_Decorator):
-
-    def __init__(self, decorated_coffee):
-        Abstract_Coffee_Decorator.__init__(self, decorated_coffee)
-
-    def get_cost(self):
-        return self.decorated_coffee.get_cost()
-
-    def get_ingredients(self):
-        return self.decorated_coffee.get_ingredients() + ', sugar'
-
-
-class Milk(Abstract_Coffee_Decorator):
-
-    def __init__(self, decorated_coffee):
-        Abstract_Coffee_Decorator.__init__(self, decorated_coffee)
-
-    def get_cost(self):
-        return self.decorated_coffee.get_cost() + 0.25
-
-    def get_ingredients(self):
-        return self.decorated_coffee.get_ingredients() + ', milk'
-
-
-class Vanilla(Abstract_Coffee_Decorator):
-
-    def __init__(self, decorated_coffee):
-        Abstract_Coffee_Decorator.__init__(self, decorated_coffee)
-
-    def get_cost(self):
-        return self.decorated_coffee.get_cost() + 0.75
-
-    def get_ingredients(self):
-        return self.decorated_coffee.get_ingredients() + ', vanilla'
+# ______ six
+# ____ a... _______ A..
+# 
+# 
+# ?six.add_metaclass A..
+# c_ Abstract_Coffee o..
+# 
+#     ___ get_cost 
+#         p..
+# 
+#     ___ get_ingredients
+#         p...
+# 
+#     ___ get_tax 
+#         r_ 0.1 * ?g_c..
+# 
+# 
+# c_ Concrete_Coffee A..
+# 
+#     ___ get_cost 
+#         r_ 1.00
+# 
+#     ___ get_ingredients 
+#         r_ 'coffee'
+# 
+# 
+# ?six.add_metaclass A..
+# c_ Abstract_Coffee_Decorator A..
+# 
+#     ___ - decorated_coffee
+#         ?  ?
+# 
+#     ___ get_cost
+#         r_ ?d___.g...
+# 
+#     ___ get_ingredients 
+#         r_ ?d___.g_i..
+# 
+# 
+# c_ Sugar A_C_D...
+# 
+#     ___ - decorated_coffee
+#         A__. - ?
+# 
+#     ___ get_cost 
+#         r_ ?d___.g..
+# 
+#     ___ get_ingredients 
+#         r_ ?d__.g_i.. + ', sugar'
+# 
+# 
+# c_ Milk A_C_D..
+# 
+#     ___ - d..
+#         A___. - ?
+# 
+#     ___ get_cost 
+#         r_ ?d__.g_c.. + 0.25
+# 
+#     ___ get_ingredients
+#         r_ ?d___.g_i.. + ', milk'
+# 
+# 
+# c_ Vanilla A_C__D..
+# 
+#     ___ - decorated_coffee
+#         A___. - ?
+# 
+#     ___ get_cost 
+#         r_ ?d__.g_c.. + 0.75
+# 
+#     ___ get_ingredients
+#         r_ ?d__.g_i.. + ', vanilla'

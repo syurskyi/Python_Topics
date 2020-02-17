@@ -1,10 +1,10 @@
-from .abs_decorator import AbsDecorator
-
-class Red(AbsDecorator):
-    @property
-    def description(self):
-        return self.car.description + ', Ferarri red'
-
-    @property
-    def cost(self):
-        return self.car.cost + 1200.00*self.car.premium
+# ___ .a__ ______ A...
+#
+# c_ Red ?
+#     ??
+#     ___ description
+#         r_ ?c__.d.. + ', Ferarri red'
+#
+#     ??
+#     ___ cost
+#         r_ ?c__.c.. + 1200.00 * ?c__.p..

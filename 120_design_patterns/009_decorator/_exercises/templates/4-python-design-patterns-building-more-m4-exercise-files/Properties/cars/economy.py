@@ -1,27 +1,27 @@
-from .abs_car import AbsCar
-
-class Economy(AbsCar):
-    def __init__(self, engine, paint, upholstery):
-        self._engine = engine
-        self._paint = paint
-        self._upholstery = upholstery
-
-    @property
-    def description(self):
-        return 'Economy'
-
-    @property
-    def engine(self):
-        return self._engine
-
-    @property
-    def paint(self):
-        return self._paint
-
-    @property
-    def upholstery(self):
-        return self._upholstery
-
-    @property
-    def cost(self):
-        return 12000.00 + super().cost()
+# ___ .a.. _____ A..
+#
+# c_ Economy ?
+#     ___ -  engine paint upholstery
+#         _?  ?
+#         _?  ?
+#         _?  ?
+#
+#     ??
+#     ___ description
+#         r_ 'Economy'
+#
+#     ??
+#     ___ engine
+#         r_ _e..
+#
+#     ??
+#     ___ paint
+#         r_ _p..
+#
+#     ??
+#     ___ upholstery
+#         r_ _u..
+#
+#     ??
+#     ___ cost
+#         r_ 12000.00 + s__.c..

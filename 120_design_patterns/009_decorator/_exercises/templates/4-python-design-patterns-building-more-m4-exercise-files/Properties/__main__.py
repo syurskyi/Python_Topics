@@ -1,11 +1,11 @@
-from cars.economy import Economy
-
-def main():
-    car1 = Economy('4 cyl', 'black', 'vinyl')
-    car2 = Economy('6 cyl', 'red', 'leather')
-
-    print('{}: ${}'.format(car1.description, car1.cost))
-    print('{}: ${}'.format(car2.description, car2.cost))
-
-if __name__ == '__main__':
-    main()
+# ____ c__.e... ______ E..
+#
+# ___ main
+#     car1 = E___('4 cyl', 'black', 'vinyl')
+#     car2 = E___('6 cyl', 'red', 'leather')
+#
+#     print('@: $@'.f.. _1.de.. _1.co..
+#     print('@: $@'.f.. _2.de.. _2.co..
+#
+# __ ______ __ _____
+#     ?
