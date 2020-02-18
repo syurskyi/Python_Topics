@@ -1,14 +1,6 @@
 # coding: utf-8
 
-"""
-Прототип - паттерн, порождающий объекты.
-
-Задает виды создаваемых объектов с помощью экземпляра-прототипа
-и создает новые объекты путем копирования этого прототипа.
-"""
-
 import copy
-
 
 class Prototype(object):
     def __init__(self):
@@ -29,12 +21,11 @@ class Prototype(object):
 class Bird(object):
     """Птица"""
 
-
 prototype = Prototype()
 prototype.register('bird', Bird())
 
 owl = prototype.clone('bird', {'name': 'Owl'})
-print(type(owl), owl.name)  # <class '__main__.Bird'> Owl
+print(type(owl), owl.name) # Owl
 
 duck = prototype.clone('bird', {'name': 'Duck'})
-print(type(duck), duck.name)  # <class '__main__.Bird'> Duck
+print(type(duck), duck.name) # Duck
