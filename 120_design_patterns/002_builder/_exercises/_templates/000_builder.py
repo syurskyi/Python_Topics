@@ -46,7 +46,7 @@
 #         _product _ P_1
 #
 #     ?p..
-#     ___ product __ Product1
+#     ___ product __ P_1
 #         """
 #         Конкретные Строители должны предоставить свои собственные методы
 #         получения результатов. Это связано с тем, что различные типы строителей
@@ -73,7 +73,7 @@
 #         _pr__.ad.. "PartB1"
 #
 #     ___ produce_part_c __ N..
-#         pr_.ad.. "PartC1"
+#         _pr_.ad.. "PartC1"
 #
 #
 # c_ Product1
@@ -90,7 +90,7 @@
 #         ?parts _      # list
 #
 #     ___ add  part A.. __ N..
-#         ?parts.ap.. ?
+#         ?p__.ap.. ?
 #
 #     ___ list_parts __ N..
 #         print _*Product parts: |', '.jo.. ?p.. " en._"")
