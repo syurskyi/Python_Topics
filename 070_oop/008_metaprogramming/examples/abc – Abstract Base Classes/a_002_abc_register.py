@@ -39,3 +39,25 @@ if __name__ == '__main__':
 # In this example the RegisteredImplementation is derived from LocalBaseClass, but is registered as implementing
 # the PluginBase API so issubclass() and isinstance() treat it as though it is derived from PluginBase.
 
+
+# python2
+
+# import abc
+# from abc_base import PluginBase
+#
+#
+# class RegisteredImplementation(object):
+#
+#     def load(self, input):
+#         return input.read()
+#
+#     def save(self, output, data):
+#         return output.write(data)
+#
+#
+# PluginBase.register(RegisteredImplementation)
+#
+# if __name__ == '__main__':
+#     print 'Subclass:', issubclass(RegisteredImplementation, PluginBase)
+#     print 'Instance:', isinstance(RegisteredImplementation(), PluginBase)
+
