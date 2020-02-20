@@ -31,3 +31,20 @@ if __name__ == '__main__':
 #     print('Instance:', isinstance(IncompleteImplementation(),
 # TypeError: Can't instantiate abstract class
 # IncompleteImplementation with abstract methods load
+
+
+# python 2
+
+# import abc
+# from abc_base import PluginBase
+#
+# class IncompleteImplementation(PluginBase):
+#
+#     def save(self, output, data):
+#         return output.write(data)
+#
+# PluginBase.register(IncompleteImplementation)
+#
+# if __name__ == '__main__':
+#     print 'Subclass:', issubclass(IncompleteImplementation, PluginBase)
+#     print 'Instance:', isinstance(IncompleteImplementation(), PluginBase)
