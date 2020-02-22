@@ -1,7 +1,7 @@
-from autos.abs_auto import AbsAuto
-
-class CadillacCTS(AbsAuto):
-    def start(self):
-        print('Cadillac CTS purring luxuriously.')
-    def stop(self):
-        print('Cadillac CTS shutting down.')
+# ____ a__.a.. ______ A..
+#
+# c_ CadillacCTS A..
+#     ___ start
+#         print('Cadillac CTS purring luxuriously.')
+#     ___ stop
+#         print('Cadillac CTS shutting down.')
