@@ -1,9 +1,9 @@
-from .abs_factory import AbsFactory
-from autos.fordfocus import FordFocus
-
-class FordFactory(AbsFactory):
-
-    def create_auto(self):
-        self.ford = ford = FordFocus()
-        ford.name = 'Ford Focus'
-        return ford
+# ____ .a_f.. ______ A..
+# ____ a__.f.. ______ F..
+#
+# c_ FordFactory A..
+#
+#     ___ create_auto
+#         ?ford = ford = F..
+#         ?.name = 'Ford Focus'
+#         r_ ?
