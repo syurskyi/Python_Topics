@@ -1,9 +1,9 @@
-from .abs_factory import AbsFactory
-from autos.nullcar import NullCar
-
-class NullFactory(AbsFactory):
-
-    def create_auto(self):
-        self.nullcar = nullcar = NullCar()
-        nullcar.name = 'Unknown'
-        return nullcar
+# ____ .a_f.. ______ A..
+# ____ a__.n.. ______ N..
+#
+# c_ NullFactory A..
+#
+#     ___ create_auto
+#         ?nullcar _ n.. _ N..
+#         ?.n.. _ 'Unknown'
+#         r_ ?
