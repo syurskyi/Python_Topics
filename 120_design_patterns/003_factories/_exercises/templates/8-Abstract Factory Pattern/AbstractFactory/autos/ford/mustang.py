@@ -1,7 +1,7 @@
-from autos.abs_auto import AbsAuto
-
-class FordMustang(AbsAuto):
-    def start(self):
-        print("Ford Mustang roaring and ready to go!")
-    def stop(self):
-        print('Ford Mustang shutting down.')
+# ____ a___.a.. ______ A..
+#
+# c_ FordMustang A..
+#     ___ start
+#         print("Ford Mustang roaring and ready to go!")
+#     ___ stop
+#         print('Ford Mustang shutting down.')
