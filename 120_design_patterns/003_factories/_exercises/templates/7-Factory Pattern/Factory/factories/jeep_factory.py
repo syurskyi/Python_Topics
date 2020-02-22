@@ -1,8 +1,8 @@
-from .abs_factory import AbsFactory
-from autos.jeepsahara import JeepSahara
-
-class JeepFactory(AbsFactory):
-
-    def create_auto(self):
-        self.jeep = jeep = JeepSahara('Jeep Sahara')
-        return jeep
+# ____ .a_f.. ______ A..
+# ____ a__.j.. ______ J..
+#
+# c_ JeepFactory A..
+#
+#     ___ create_auto
+#         ?jeep = j.. = J.. 'Jeep Sahara')
+#         r_ ?
