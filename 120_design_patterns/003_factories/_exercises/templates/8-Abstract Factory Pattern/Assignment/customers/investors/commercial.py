@@ -1,6 +1,6 @@
-from ..abs_cust import AbsCust
-
-
-class Commercial(AbsCust):
-    def report_type(self):
-        print('"%s" is a commercial investor.' % self.name)
+# ____ ..a.. ______ A..
+#
+#
+# c_ Commercial A..
+#     ___ report_type
+#         print('"@" is a commercial investor.'  n..
