@@ -1,19 +1,19 @@
-import abc
-
-class AbsAuto(metaclass=abc.ABCMeta):
-
-    @property
-    def name(self):
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        self._name = name
-
-    @abc.abstractmethod
-    def start(self):
-        pass
-
-    @abc.abstractmethod
-    def stop(self):
-        pass
+# ______ a..
+#
+# c_ AbsAuto m..
+#
+#     ??
+#     ___ name
+#         r_ _n..
+#
+#     ??s..
+#     ___ name name
+#         _?  ?
+#
+#     ??a..
+#     ___ start
+#         p..
+#
+#     ??a..
+#     ___ stop
+#         p..
