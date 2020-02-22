@@ -1,8 +1,8 @@
-from autos.abs_auto import AbsAuto
-
-class FordFiesta(AbsAuto):
-	def start(self):
-		print('Ford Fiesta running cheaply.')
-
-	def stop(self):
-		print('Ford Fiestashutting down.')
+# ____ a__.a.. ______ A..
+#
+# c_ FordFiesta A..
+# 	___ start
+# 		print('Ford Fiesta running cheaply.')
+#
+# 	___ stop
+# 		print('Ford Fiestashutting down.')
