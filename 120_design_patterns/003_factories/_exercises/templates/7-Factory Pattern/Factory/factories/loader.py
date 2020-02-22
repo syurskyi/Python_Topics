@@ -1,16 +1,16 @@
-from importlib import import_module
-from inspect import getmembers, isabstract, isclass
-from .abs_factory import AbsFactory
-
-def load_factory(factory_name):
-    try:
-        factory_module = import_module('.' + factory_name, 'factories')
-    except ImportError:
-        factory_module = import_module('.null_factory', 'factories')
-    
-    classes = getmembers(factory_module, 
-                        lambda m: isclass(m) and not isabstract(m))
-
-    for name, _class in classes:
-        if issubclass(_class, AbsFactory):
-            return _class()
+# ____ importlib ______ i_m..
+# ____ inspect ______ g_m.. isa.. isc..
+# ____ .a_f.. ______ A..
+#
+# ___ load_factory factory_name
+#     ___
+#         factory_module _ i.. '.' + ? 'factories'
+#     _______ I..
+#         factory_module _ i.. '.null_factory', 'factories'
+#
+#     classes = g_m.. ?
+#                         l___ m isc.. ? an. no. isa.. ?
+#
+#     ___ name _class __ ?
+#         __ iss.. _c.. A..
+#             r_ _c..
