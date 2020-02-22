@@ -1,17 +1,17 @@
-from .abs_factory import AbsFactory
-from autos.gm.spark import ChevySpark
-from autos.gm.camaro import ChevyCamaro
-from autos.gm.cadillac import CadillacCTS
-
-class GMFactory(AbsFactory):
-    @staticmethod
-    def create_economy():
-        return ChevySpark()
-
-    @staticmethod
-    def create_sport():
-        return ChevyCamaro()
-
-    @staticmethod
-    def create_luxury():
-        return CadillacCTS()
+# ____ .a.. ______ A...
+# ____ a__.g_.s.. ______ C..
+# ____ a__.g_.c.. ______ C..
+# ____ a__.g_.c.. ______ C..
+#
+# c_ GMFactory A..
+#     ??
+#     ___ create_economy
+#         r_ CS..
+#
+#     ??
+#     ___ create_sport
+#         r_ CC..
+#
+#     ??
+#     ___ create_luxury
+#         r_ CCTS.
