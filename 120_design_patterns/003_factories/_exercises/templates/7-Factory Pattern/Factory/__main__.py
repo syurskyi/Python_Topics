@@ -1,9 +1,9 @@
-from factories import loader
-
-for factory_name in 'chevy_factory', 'jeep_factory', 'ford_factory', 'tesla_factory':
-
-    factory = loader.load_factory(factory_name)
-    car = factory.create_auto()
-
-    car.start()
-    car.stop()
+# ____ f.. _______ l..
+#
+# ___ factory_name __ 'chevy_factory', 'jeep_factory', 'ford_factory', 'tesla_factory'
+#
+#     factory = l__.l.. ?
+#     car = ?.c..
+#
+#     ?.s..
+#     ?.s..
