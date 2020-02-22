@@ -1,9 +1,9 @@
-from .abs_factory import AbsFactory
-from autos.chevyvolt import ChevyVolt
-
-class ChevyFactory(AbsFactory):
-
-    def create_auto(self):
-        self.chevy = chevy = ChevyVolt()
-        chevy.name = 'Chevy Volt'
-        return chevy
+# ____ .a_f.. ______ A..
+# ____ a__.c.. ______ C..
+#
+# c_ ChevyFactory A..
+#
+#     ____ create_auto
+#         ?chevy = c.. = C..
+#         ?.n.. = 'Chevy Volt'
+#         r_ ?
