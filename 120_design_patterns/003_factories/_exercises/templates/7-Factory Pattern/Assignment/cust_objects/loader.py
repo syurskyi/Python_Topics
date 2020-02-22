@@ -1,17 +1,17 @@
-from importlib import import_module
-from inspect import getmembers, isabstract, isclass
-from .null_cust import NullCust
-from .abs_cust import AbsCust
-
-def load_cust(cust_type):
-    try:
-        cust_module = import_module('.' + cust_type, 'cust_objects')
-    except ImportError:
-        return NullCust(cust_type)
-    
-    classes = getmembers(cust_module, 
-                        lambda m: isclass(m) and not isabstract(m))
-
-    for name, _class in classes:
-        if issubclass(_class, AbsCust):
-            return _class()
+# ____ importlib ______ i_m.
+# ____ inspect ______ g..m.. isa.. isc..
+# ____ .n.. ______ N..
+# ____ .a.. ______ A..
+#
+# ___ load_cust cust_type
+#     ___
+#         cust_module = i..  '.' + ? 'cust_objects'
+#     ______ I..
+#         r_ N.. ?
+#
+#     classes = g_m.. c..
+#                         l____ m isc.. ? an. no. isa.. ?
+#
+#     ___ name _class __ ?
+#         __ iss.. _c.. A..
+#             r.. _c..
