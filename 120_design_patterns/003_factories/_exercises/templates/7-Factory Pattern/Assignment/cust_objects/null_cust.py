@@ -1,16 +1,16 @@
-from .abs_cust import AbsCust
-
-class NullCust(AbsCust):
-    def __init__(self,cust_type):
-        self._cust_type = cust_type
-
-    @property
-    def name(self):
-        return None
-
-    @name.setter
-    def name(self, name):
-        pass
-
-    def send_invoice(self):
-        print('Customer type "%s" not found.' % self._cust_type)
+# ____ .a.. ________ A..
+#
+# c_ NullCust A..
+#     ___ - cust_type
+#         _?  ?
+#
+#     ??
+#     ___ name
+#         r_ N..
+#
+#     ??s..
+#     ___ name name
+#         p..
+#
+#     ___ send_invoice
+#         print('Customer type "@" not found.'  _c..
