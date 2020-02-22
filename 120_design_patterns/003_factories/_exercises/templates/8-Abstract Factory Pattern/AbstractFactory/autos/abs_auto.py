@@ -1,10 +1,10 @@
-import abc
-
-class AbsAuto(metaclass=abc.ABCMeta):
-    @abc.abstractmethod
-    def start(self):
-        pass
-
-    @abc.abstractmethod
-    def stop(self):
-        pass
+# ______ abc
+#
+# c_ AbsAuto m..
+#     ??a..
+#     ___ start
+#         p..
+#
+#     ??a
+#     ___ stop
+#         p..
