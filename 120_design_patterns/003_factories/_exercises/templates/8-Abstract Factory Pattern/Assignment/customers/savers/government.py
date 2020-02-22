@@ -1,6 +1,6 @@
-from ..abs_cust import AbsCust
-
-
-class Government(AbsCust):
-    def report_type(self):
-        print('"%s" is a government saver.' % self.name)
+# ____ ..a.. ______ A..
+#
+#
+# c_ Government A..
+#     ___ report_type
+#         print('"@" is a government saver.' n..
