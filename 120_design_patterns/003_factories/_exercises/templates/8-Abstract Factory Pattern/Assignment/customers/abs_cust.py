@@ -1,13 +1,13 @@
-import abc
-
-class AbsCust(metaclass=abc.ABCMeta):
-    def __init__(self, name):
-        self._name = name
-    
-    @property
-    def name(self):
-        return self._name
-
-    @abc.abstractmethod
-    def report_type(self):
-        pass
+# ______ a..
+#
+# c_ AbsCust m..
+#     ___ - name
+#         _?  ?
+#
+#     ??
+#     ___ name
+#         r_ _n...
+#
+#     ??a..
+#     ___ report_type
+#         p..
