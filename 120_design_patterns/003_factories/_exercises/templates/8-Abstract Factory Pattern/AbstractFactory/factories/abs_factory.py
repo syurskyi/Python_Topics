@@ -1,14 +1,14 @@
-import abc
-
-class AbsFactory(metaclass=abc.ABCMeta):
-    @abc.abstractstaticmethod
-    def create_economy():
-        pass
-
-    @abc.abstractstaticmethod
-    def create_sport():
-        pass
-
-    @abc.abstractstaticmethod
-    def create_luxury():
-        pass
+# ______ a..
+#
+# c_ AbsFactory m..
+#     ??.a..
+#     ___ create_economy
+#         p..
+#
+#     ??.a..
+#     ___ create_sport
+#         p..
+#
+#     ??.a..
+#     ___ create_luxury
+#         p..
