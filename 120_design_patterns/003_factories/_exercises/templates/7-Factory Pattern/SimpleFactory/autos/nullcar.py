@@ -1,11 +1,11 @@
-from .abs_auto import AbsAuto
-
-class NullCar(AbsAuto):
-    def __init__(self, carname):
-        self._carname = carname
-
-    def start(self):
-        print('Unknown car "%s".' % self._carname)
-
-    def stop(self):
-        pass
+# ____ .a.. ______ A..
+#
+# c_ NullCar A..
+#     ___ -  carname
+#         _?  ?
+#
+#     ___ start
+#         print('Unknown car "@".' _c..
+#
+#     ___ stop
+#         p..
