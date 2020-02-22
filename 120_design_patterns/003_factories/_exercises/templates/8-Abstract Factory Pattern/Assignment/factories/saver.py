@@ -1,18 +1,18 @@
-from .abs_factory import AbsFactory
-from customers.savers.commercial import Commercial
-from customers.savers.government import Government
-from customers.savers.retail import Retail
-
-
-class Saver(AbsFactory): 
-    @staticmethod
-    def create_commercial():
-        return Commercial
-
-    @staticmethod
-    def create_government():
-        return Government
-
-    @staticmethod
-    def create_retail():
-        return Retail
+# ____ .a.. ______ A..
+# ____ customers.savers.commercial ______ C..
+# ____ customers.savers.government ______ G..
+# ____ customers.savers.retail ______ R..
+#
+#
+# c_ Saver A..
+#     ??
+#     ___ create_commercial
+#         r_ ?
+#
+#     ??
+#     ___ create_government
+#         r_ ?
+#
+#     ??
+#     ___ create_retail
+#         r_ ?
