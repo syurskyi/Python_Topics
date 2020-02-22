@@ -1,17 +1,17 @@
-class ChevySpark:
-    def start(self):
-        print('Chevy Spark running efficiently.')
-    def stop(self):
-        print('Chevy Spark shutting down.')
-
-class ChevyCamaro:
-    def start(self):
-        print('Chevy Camaro V8 sounding awesome!')
-    def stop(self):
-        print('Chevy Camaro shutting down.')
-
-class CadillacCTS:
-    def start(self):
-        print('Cadillac CTS purring luxuriously.')
-    def stop(self):
-        print('Cadillac CTS shutting down.')
+# c_ ChevySpark
+#     ___ start
+#         print('Chevy Spark running efficiently.')
+#     ___ stop
+#         print('Chevy Spark shutting down.')
+#
+# c_ ChevyCamaro
+#     ___ start
+#         print('Chevy Camaro V8 sounding awesome!')
+#     ___ stop
+#         print('Chevy Camaro shutting down.')
+#
+# c_ CadillacCTS
+#     ___ start
+#         print('Cadillac CTS purring luxuriously.')
+#     ___ stop
+#         print('Cadillac CTS shutting down.')
