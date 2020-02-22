@@ -1,7 +1,7 @@
-from autos.abs_auto import AbsAuto
-
-class LincolnMKS(AbsAuto):
-    def start(self):
-        print('Lincoln MKS running smoothly.')
-    def stop(self):
-        print('Lincoln MKS shutting down.')
+# ____ a__.a.. ______ A..
+#
+# c_ LincolnMKS A..
+#     ___ start
+#         print('Lincoln MKS running smoothly.')
+#     ___ stop
+#         print('Lincoln MKS shutting down.')
