@@ -1,9 +1,9 @@
-from autofactory import AutoFactory
-
-factory = AutoFactory()
-
-for carname in 'ChevyVolt', 'FordFocus', 'JeepSahara', 'Tesla P90D':
-    
-    car = factory.create_instance(carname)
-    car.start()
-    car.stop()
+# ____ a.. ______ A..
+#
+# factory = A..
+#
+# ___ carname __ 'ChevyVolt', 'FordFocus', 'JeepSahara', 'Tesla P90D':
+#
+#     car = f__.c_i.. ?
+#     ?.s...
+#     ?.s..
