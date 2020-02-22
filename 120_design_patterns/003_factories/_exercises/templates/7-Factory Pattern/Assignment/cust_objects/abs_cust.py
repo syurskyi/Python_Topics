@@ -1,16 +1,16 @@
-import abc
-
-class AbsCust(metaclass=abc.ABCMeta):
-    @property
-    @abc.abstractmethod
-    def name(self):
-        pass
-
-    @name.setter
-    @abc.abstractmethod
-    def name(self, name):
-        pass
-
-    @abc.abstractmethod
-    def send_invoice(self):
-        pass
+# ______ a..
+#
+# c_ AbsCust m..
+#     ?p
+#     ??.a
+#     ___ name
+#         p..
+#
+#     ??s..
+#     ??a
+#     ___ name name
+#         p..
+#
+#     ??a..
+#     ___ send_invoice
+#         p..
