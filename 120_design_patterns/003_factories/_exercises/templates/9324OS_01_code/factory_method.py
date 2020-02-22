@@ -1,62 +1,62 @@
-import xml.etree.ElementTree as etree
-import json
-
-class JSONConnector:
-    def __init__(self, filepath):
-        self.data = dict()
-        with open(filepath, mode='r', encoding='utf-8') as f:
-            self.data = json.load(f)
-
-    @property
-    def parsed_data(self):
-        return self.data
-
-class XMLConnector:
-    def __init__(self, filepath):
-        self.tree = etree.parse(filepath)
-
-    @property
-    def parsed_data(self):
-        return self.tree
-
-def connection_factory(filepath):
-    if filepath.endswith('json'):
-        connector = JSONConnector
-    elif filepath.endswith('xml'):
-        connector = XMLConnector
-    else:
-        raise ValueError('Cannot connect to {}'.format(filepath))
-    return connector(filepath)
-
-def connect_to(filepath):
-    factory = None
-    try:
-        factory = connection_factory(filepath)
-    except ValueError as ve:
-        print(ve)
-    return factory
-
-def main():
-    sqlite_factory = connect_to('data/person.sq3')
-    print()
-
-    xml_factory = connect_to('data/person.xml')
-    xml_data = xml_factory.parsed_data
-    liars = xml_data.findall(".//person[lastName='{}']".format('Liar'))
-    print('found: {} persons'.format(len(liars)))
-    for liar in liars:
-        print('first name: {}'.format(liar.find('firstName').text))
-        print('last name: {}'.format(liar.find('lastName').text))
-        [print('phone number ({}):'.format(p.attrib['type']), p.text) for p in liar.find('phoneNumbers')]
-    print()
-
-    json_factory = connect_to('data/donut.json')
-    json_data = json_factory.parsed_data
-    print('found: {} donuts'.format(len(json_data)))
-    for donut in json_data:
-        print('name: {}'.format(donut['name']))
-        print('price: ${}'.format(donut['ppu']))
-        [print('topping: {} {}'.format(t['id'], t['type'])) for t in donut['topping']]
-
-if __name__ == '__main__':
-    main()
+# ______ xml.etree.ElementTree as etree
+# ______ j..
+#
+# c_ JSONConnector
+#     ___ - filepath
+#         ?data _ di..
+#         w___ o.. ? mo.._'r' en.._ utf-8 __ f
+#             ?d.. _ j__.l.. ?
+#
+#     ??
+#     ___ parsed_data
+#         r_ ?d..
+#
+# c_ XMLConnector
+#     ___ - filepath
+#         ?tree = et__.par.. ?
+#
+#     ??
+#     ___ parsed_data
+#         r_ ?t..
+#
+# ___ connection_factory filepath
+#     __ ?.e_w_('json
+#         connector = JC..
+#     ____ ?.e_w_('xml
+#         connector = XC..
+#     ____
+#         r_ V... 'Cannot connect to @'.f.. ?
+#     r_ c.. ?
+#
+# ___ connect_to filepath
+#     factory = N..
+#     ___
+#         factory = c_f.. ?
+#     ________ V.. __ ve
+#         print ?
+#     r_ f..
+#
+# ___ main
+#     sqlite_factory = c_t.. 'data/person.sq3'
+#     print()
+#
+#     xml_factory = c_t.. 'data/person.xml'
+#     xml_data = ?.p_d..
+#     liars = x_d__.f_a.. ".//person[lastName='@']".f.. 'Liar'
+#     print('found @ persons'.f.. le. ?
+#     ___ liar __ ?
+#         print('first name @'.f.. ?.fi.. 'firstName' .t..
+#         print('last name @'.f.. ?.fi.. 'lastName' .t..
+#         |print('phone number (@)'.f.. p.attrib | 'type'|| p.text) ___ p __ ?.fi.. 'phoneNumbers'
+#     print()
+#
+#     json_factory = c_t. 'data/donut.json'
+#     json_data = ?.p_d..
+#     print('found @ donuts'.f.. le. ?
+#     ___ donut __ ?
+#         print('name @'.f.. ? 'name'
+#         print('price $@'.f.. ? 'ppu'
+#         |print('topping @ @'.f..(t 'id'| t|'type' ___ t __ ? 'topping'
+#
+# __ _______ __ _____
+#     ?
