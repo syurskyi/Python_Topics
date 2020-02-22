@@ -1,7 +1,7 @@
-from cust_objects import loader
-
-for cust_type in 'smb_cust', 'ent_cust', 'gov_cust', 'alien_cust':
-    cust = loader.load_cust(cust_type)
-    cust.name = cust_type
-    cust.send_invoice()
-    
+# ____ c.. ______ l..
+#
+# ___ cust_type __ 'smb_cust', 'ent_cust', 'gov_cust', 'alien_cust'
+#     cust = l__.l.. ?
+#     ?.name _ c_t..
+#     ?.s_i..
+#
