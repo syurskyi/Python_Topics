@@ -1,9 +1,9 @@
-from .abs_auto import AbsAuto
-
-class FordFocus(AbsAuto):
-
-	def start(self):
-		print('%s running cooly!' % self.name)
-
-	def stop(self):
-		print('%s shutting down.' % self.name)
+# ____ .a.. _______ A..
+#
+# c_ FordFocus A..
+#
+# 	___ start
+# 		print('@ running cooly!'  sn..
+#
+# 	___ stop(self):
+# 		print('@ shutting down.'  n..
