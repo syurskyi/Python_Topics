@@ -1,6 +1,6 @@
-from ..abs_cust import AbsCust
-
-
-class Retail(AbsCust):
-    def report_type(self):
-        print('"%s" is a retail saver.' % self.name)
+# ____ ..a.. ______ A..
+#
+#
+# c_ Retail A..
+#     ___ report_type
+#         print('"@" is a retail saver.' n..
