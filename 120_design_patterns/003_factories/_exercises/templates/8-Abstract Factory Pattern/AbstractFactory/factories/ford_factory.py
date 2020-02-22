@@ -1,17 +1,16 @@
-from .abs_factory import AbsFactory
-from autos.ford.fiesta import FordFiesta
-from autos.ford.mustang import FordMustang
-from autos.ford.lincoln import LincolnMKS
-
-class FordFactory(AbsFactory):
-    @staticmethod
-    def create_economy():
-        return FordFiesta()
-
-    @staticmethod
-    def create_sport():
-        return FordMustang()
-
-    @staticmethod
-    def create_luxury():
-        return LincolnMKS()
+# ____ .abs_factory ______ A..
+# ____ a__.f__.f.. ______ F..
+# ____ a__.f__.m.. ______ F...
+# ____ a__.f__.l.. ______ L...
+#
+# c_ FordFactory A..
+#     ??
+#     ___ create_economy
+#         r_ FF..
+#
+#     ??
+#     ___ create_sport
+#         r_ FM..
+#     ??
+#     ___ create_luxury
+#         r_ LMKS
