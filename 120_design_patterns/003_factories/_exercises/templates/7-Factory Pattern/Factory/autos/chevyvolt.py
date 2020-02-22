@@ -1,9 +1,9 @@
-from .abs_auto import AbsAuto
-
-class ChevyVolt(AbsAuto):
-
-	def start(self):
-		print('%s running with shocking power!' % self.name)
-
-	def stop(self):
-		print('%s shutting down.' % self.name)
+# ____ .a.. _______ A..
+#
+# c_ ChevyVolt A..
+#
+# 	___ start
+# 		print('@ running with shocking power!'  n..
+#
+# 	___ stop
+# 		print('@ shutting down.'  n...
