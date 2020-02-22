@@ -1,14 +1,14 @@
-from factories.investor import Investor
-from factories.saver import Saver
-
-
-for factory in Investor, Saver:
-    cust = factory.create_commercial()
-    cust = cust('Acme Corp')
-    cust.report_type()
-    cust = factory.create_government()
-    cust = cust('Prussia')
-    cust.report_type()
-    cust = factory.create_retail()
-    cust = cust('Douglas Adams')
-    cust.report_type()
+# ____ f__.i.. ______ I..
+# ____ f__.s.. ______ S..
+#
+#
+# ___ f__ __ I.. S..
+#     cust = f__.c_c..
+#     cust = ?('Acme Corp')
+#     ?.r_t..
+#     cust = f__.c_g..
+#     cust = ?('Prussia')
+#     ?.r_t..
+#     cust = f__.c_r..
+#     cust = ?('Douglas Adams')
+#     ?.r_t..
