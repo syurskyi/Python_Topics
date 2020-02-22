@@ -1,121 +1,121 @@
-"""
-Provide an interface for creating families of related or dependent
-objects without specifying their concrete classes.
-"""
-
-import abc
-
-
-class AbstractFactory(metaclass=abc.ABCMeta):
-    """
-    Declare an interface for operations that create abstract product
-    objects.
-    """
-
-    @abc.abstractmethod
-    def create_product_a(self):
-        pass
-
-    @abc.abstractmethod
-    def create_product_b(self):
-        pass
-
-
-class ConcreteFactory1(AbstractFactory):
-    """
-    Implement the operations to create concrete product objects.
-    """
-
-    def create_product_a(self):
-        return ConcreteProductA1()
-
-    def create_product_b(self):
-        return ConcreteProductB1()
-
-
-class ConcreteFactory2(AbstractFactory):
-    """
-    Implement the operations to create concrete product objects.
-    """
-
-    def create_product_a(self):
-        return ConcreteProductA2()
-
-    def create_product_b(self):
-        return ConcreteProductB2()
-
-
-class AbstractProductA(metaclass=abc.ABCMeta):
-    """
-    Declare an interface for a type of product object.
-    """
-
-    @abc.abstractmethod
-    def interface_a(self):
-        pass
-
-
-class ConcreteProductA1(AbstractProductA):
-    """
-    Define a product object to be created by the corresponding concrete
-    factory.
-    Implement the AbstractProduct interface.
-    """
-
-    def interface_a(self):
-        pass
-
-
-class ConcreteProductA2(AbstractProductA):
-    """
-    Define a product object to be created by the corresponding concrete
-    factory.
-    Implement the AbstractProduct interface.
-    """
-
-    def interface_a(self):
-        pass
-
-
-class AbstractProductB(metaclass=abc.ABCMeta):
-    """
-    Declare an interface for a type of product object.
-    """
-
-    @abc.abstractmethod
-    def interface_b(self):
-        pass
-
-
-class ConcreteProductB1(AbstractProductB):
-    """
-    Define a product object to be created by the corresponding concrete
-    factory.
-    Implement the AbstractProduct interface.
-    """
-
-    def interface_b(self):
-        pass
-
-
-class ConcreteProductB2(AbstractProductB):
-    """
-    Define a product object to be created by the corresponding concrete
-    factory.
-    Implement the AbstractProduct interface.
-    """
-
-    def interface_b(self):
-        pass
-
-
-def main():
-    for factory in (ConcreteFactory1(), ConcreteFactory2()):
-        product_a = factory.create_product_a()
-        product_b = factory.create_product_b()
-        product_a.interface_a()
-        product_b.interface_b()
-
-
-if __name__ == "__main__":
-    main()
+# """
+# Provide an interface for creating families of related or dependent
+# objects without specifying their concrete classes.
+# """
+#
+# ______ a..
+#
+#
+# c_ AbstractFactory m..
+#     """
+#     Declare an interface for operations that create abstract product
+#     objects.
+#     """
+#
+#     ??.?
+#     ___ create_product_a
+#         p..
+#
+#     ??.?
+#     ___ create_product_b
+#         p..
+#
+#
+# c_ ConcreteFactory1 A..
+#     """
+#     Implement the operations to create concrete product objects.
+#     """
+#
+#     ___ create_product_a
+#         r_ C_A1
+#
+#     ___ create_product_b
+#         r_ C_B1
+#
+#
+# c_ ConcreteFactory2 A..
+#     """
+#     Implement the operations to create concrete product objects.
+#     """
+#
+#     ___ create_product_a
+#         r_ C_A2
+#
+#     ___ create_product_b
+#         r_ C_B2
+#
+#
+# c_ AbstractProductA m..
+#     """
+#     Declare an interface for a type of product object.
+#     """
+#
+#     ??.?
+#     ___ interface_a
+#         p..
+#
+#
+# c_ ConcreteProductA1 A_A
+#     """
+#     Define a product object to be created by the corresponding concrete
+#     factory.
+#     Implement the AbstractProduct interface.
+#     """
+#
+#     ___ interface_a
+#         p..
+#
+#
+# c_ ConcreteProductA2 A_A
+#     """
+#     Define a product object to be created by the corresponding concrete
+#     factory.
+#     Implement the AbstractProduct interface.
+#     """
+#
+#     ___ interface_a
+#         p..
+#
+#
+# c_ AbstractProductB m..
+#     """
+#     Declare an interface for a type of product object.
+#     """
+#
+#     ??.?
+#     ___ interface_b
+#         p..
+#
+#
+# c_ ConcreteProductB1 A_B
+#     """
+#     Define a product object to be created by the corresponding concrete
+#     factory.
+#     Implement the AbstractProduct interface.
+#     """
+#
+#     ___ interface_b
+#         p..
+#
+#
+# c_ ConcreteProductB2 A_B
+#     """
+#     Define a product object to be created by the corresponding concrete
+#     factory.
+#     Implement the AbstractProduct interface.
+#     """
+#
+#     ___ interface_b
+#         p..
+#
+#
+# ___ main
+#     ___ factory __ C_1 C_2
+#         product_a = ?.c_a
+#         product_b = ?.c_b
+#         pr_a.i_a
+#         pr_b.i_b
+#
+#
+# __ _______ __ _____
+#     ?

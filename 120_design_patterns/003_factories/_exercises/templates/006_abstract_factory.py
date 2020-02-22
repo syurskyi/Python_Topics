@@ -1,65 +1,65 @@
-"""Implementation of the abstract factory pattern"""
-import random
-
-
-class PetShop:
-    """A pet shop"""
-
-    def __init__(self, animal_factory=None):
-        """pet_factory is our abstract factory. We can set it at will."""
-        self.pet_factory = animal_factory
-
-    def show_pet(self):
-        """Creates and shows a pet using the abstract factory"""
-        pet = self.pet_factory.get_pet()
-        print("This is a lovely", pet)
-        print("It says", pet.speak())
-        print("It eats", self.pet_factory.get_food())
-
-# Stuff that our factory makes
-
-
-class Dog:
-    def speak(self):
-        return "woof"
-
-    def __str__(self):
-        return "Dog"
-
-
-class Cat:
-    def speak(self):
-        return "meow"
-
-    def __str__(self):
-        return "Cat"
-
-
-# Factory classes
-class DogFactory:
-    def get_pet(self):
-        return Dog()
-
-    def get_food(self):
-        return "dog food"
-
-
-class CatFactory:
-    def get_pet(self):
-        return Cat()
-
-    def get_food(self):
-        return "cat food"
-
-
-# Create the proper family
-def get_factory():
-    """Let's be dynamic!"""
-    return random.choice([DogFactory, CatFactory])()
-
-# Show pets with various factories
-shop = PetShop()
-for i in range(3):
-    shop.pet_factory = get_factory()
-    shop.show_pet()
-    print("=" * 10)
+# """Implementation of the abstract factory pattern"""
+# ______ ra...
+#
+#
+# c_ PetShop
+#     """A pet shop"""
+#
+#     ___ - animal_factory_N..
+#         """pet_factory is our abstract factory. We can set it at will."""
+#         ?pet_factory _ ?
+#
+#     ___ show_pet
+#         """Creates and shows a pet using the abstract factory"""
+#         pet = ?p_f_.g_p..
+#         print("This is a lovely", ?
+#         print("It says", ?.s..
+#         print("It eats", ?p_f__.g_f..
+#
+# # Stuff that our factory makes
+#
+#
+# c_ Dog
+#     ___ speak
+#         r_ "woof"
+#
+#     ___ __str__
+#         r_ "Dog"
+#
+#
+# c_ Cat
+#     ___ speak
+#         r_ "meow"
+#
+#     ___ __str__
+#         r_ "Cat"
+#
+#
+# # Factory classes
+# c_ DogFactory
+#     ___ get_pet
+#         r_ ?
+#
+#     ___ get_food
+#         r_ "dog food"
+#
+#
+# c_ CatFactory
+#     ___ get_pet
+#         r_ ?
+#
+#     ___ get_food
+#         r_ "cat food"
+#
+#
+# # Create the proper family
+# ___ get_factory
+#     """Let's be dynamic!"""
+#     r_ ra__.ch.. D.. C..
+#
+# # Show pets with various factories
+# shop = P..
+# ___ i __ ra__ 3
+#     ?.p_f.. _ g_f..
+#     ?.s_p..
+#     print("=" * 10)

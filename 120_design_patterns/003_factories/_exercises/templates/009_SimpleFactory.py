@@ -1,166 +1,166 @@
-#=======================================================================================================================
-from abc import ABCMeta, abstractmethod
-# Introduce ABCMeta and abstractmethod to define abstract classes and abstract methods
-
-class Coffee(metaclass=ABCMeta):
-    """coffee"""
-
-    def __init__(self, name):
-        self.__name = name
-
-    def getName(self):
-        return self.__name
-
-    @abstractmethod
-    def getTaste(self):
-        pass
-
-
-class LatteCaffe(Coffee):
-    """latte"""
-
-    def __init__(self, name):
-        super().__init__(name)
-
-    def getTaste(self):
-        return "Gentle and mellow"
-
-class MochaCoffee(Coffee):
-    """Mocha"""
-
-    def __init__(self, name):
-        super().__init__(name)
-
-    def getTaste(self):
-        return "Silky and mellow"
-
-class Coffeemaker:
-    """咖啡机"""
-
-    @staticmethod
-    def makeCoffee(coffeeBean):
-        "Define a static method with the staticmethod decorator"
-        if(coffeeBean == "Latte coffee beans"):
-            coffee = LatteCaffe("latte")
-        elif(coffeeBean == "Mocha coffee beans"):
-            coffee = MochaCoffee("Mocha")
-        else:
-            raise ValueError("Unsupported parameters %s" % coffeeBean)
-        return coffee
-
-
-
-# Version 2.0
-#=======================================================================================================================
-# Code framework
-#==============================
-from abc import ABCMeta, abstractmethod
-# Introduce ABCMeta and abstractmethod to define abstract classes and abstract methods
-from enum import Enum
-# Python3.4 Enum syntax is supported afterwards
-
-class PenType(Enum):
-    """Brush type"""
-    PenTypeLine = 1
-    PenTypeRect = 2
-    PenTypeEllipse = 3
-
-
-class Pen(metaclass=ABCMeta):
-    """brush"""
-
-    def __init__(self, name):
-        self.__name = name
-
-    @abstractmethod
-    def getType(self):
-        pass
-
-    def getName(self):
-        return self.__name
-
-
-class LinePen(Pen):
-    """Straight brush"""
-
-    def __init__(self, name):
-        super().__init__(name)
-
-    def getType(self):
-        return PenType.PenTypeLine
-
-class RectanglePen(Pen):
-    """Rectangular brush"""
-
-    def __init__(self, name):
-        super().__init__(name)
-
-    def getType(self):
-        return PenType.PenTypeRect
-
-
-class EllipsePen(Pen):
-    """Oval brush"""
-
-    def __init__(self, name):
-        super().__init__(name)
-
-    def getType(self):
-        return PenType.PenTypeEllipse
-
-
-class PenFactory:
-    """Brush factory class"""
-
-    def __init__(self):
-        "Define a dictionary (key: PenType, value: Pen) to store objects, and ensure that there will only be one object of each type"
-        self.__pens = {}
-
-    def getSingleObj(self, penType, name):
-        """Get unique instance of object"""
-
-
-    def createPen(self, penType):
-        """Create brush"""
-        if (self.__pens.get(penType) is None):
-            # If the object does not exist, an object is created and stored in the dictionary
-            if penType == PenType.PenTypeLine:
-                pen = LinePen("Straight brush")
-            elif penType == PenType.PenTypeRect:
-                pen = RectanglePen("Rectangular brush")
-            elif penType == PenType.PenTypeEllipse:
-                pen = EllipsePen("Oval brush")
-            else:
-                pen = Pen("")
-            self.__pens[penType] = pen
-        # Otherwise return the object in the dictionary directly
-        return self.__pens[penType]
-
-
-# Framework-based implementation
-#==============================
-
-
-# Test
-#=======================================================================================================================
-def testCoffeeMaker():
-    latte = Coffeemaker.makeCoffee("Latte coffee beans")
-    print("%s Ready for you, taste: %s. Please enjoy slowly!" % (latte.getName(), latte.getTaste()) )
-    mocha = Coffeemaker.makeCoffee("Mocha coffee beans")
-    print("%s is ready for you, taste: %s. Please enjoy slowly!" % (mocha.getName(), mocha.getTaste()))
-
-
-def testPenFactory():
-    factory = PenFactory()
-    linePen = factory.createPen(PenType.PenTypeLine)
-    print("created %s，Object id: %s， Types of:%s" % (linePen.getName(), id(linePen), linePen.getType()) )
-    rectPen = factory.createPen(PenType.PenTypeRect)
-    print("created %s，Object id: %s， Types of: %s" % (rectPen.getName(), id(rectPen), rectPen.getType()) )
-    rectPen2 = factory.createPen(PenType.PenTypeRect)
-    print("created %s，Object id: %s， Types of:%s" % (rectPen2.getName(), id(rectPen2), rectPen2.getType()) )
-    ellipsePen = factory.createPen(PenType.PenTypeEllipse)
-    print("created %s，Object id: %s， Types of: %s" % (ellipsePen.getName(), id(ellipsePen), ellipsePen.getType()) )
-
-
-# testCoffeeMaker()
-testPenFactory()
+# #=======================================================================================================================
+# ____ a.. ______ A.. a..m..
+# # Introduce ABCMeta and abstractmethod to define abstract classes and abstract methods
+#
+# c_ Coffee m...
+#     """coffee"""
+#
+#     ___ -  name
+#         .__?  ?
+#
+#     ___ getName
+#         r_ __n..
+#
+#     ??
+#     ___ getTaste
+#         p..
+#
+#
+# c_ LatteCaffe C..
+#     """latte"""
+#
+#     ___ - name
+#         s__ . - ?
+#
+#     ___ getTaste
+#         r_ "Gentle and mellow"
+#
+# c_ MochaCoffee C..
+#     """Mocha"""
+#
+#     ___ - name
+#         s__ . - ?
+#
+#     ___ getTaste
+#         r_ "Silky and mellow"
+#
+# c_ Coffeemaker
+#     """Coffee machine"""
+#
+#     ??
+#     ___ makeCoffee coffeeBean
+#         "Define a static method with the staticmethod decorator"
+#         __ ? __ "Latte coffee beans"
+#             coffee _ L latte
+#         ____ ? __ "Mocha coffee beans"
+#             coffee _ M.. Mocha
+#         ____
+#             r_ V..("Unsupported parameters @"  ?
+#         r_ c..
+#
+#
+#
+# # Version 2.0
+# #=======================================================================================================================
+# # Code framework
+# #==============================
+# ____ a.. ______ A.. a_m..
+# # Introduce ABCMeta and abstractmethod to define abstract classes and abstract methods
+# ____ e.. ______ E..
+# # Python3.4 Enum syntax is supported afterwards
+#
+# c_ PenType E..
+#     """Brush type"""
+#     PenTypeLine = 1
+#     PenTypeRect = 2
+#     PenTypeEllipse = 3
+#
+#
+# c_ Pen m..
+#     """brush"""
+#
+#     ___ - name
+#         __?  ?
+#
+#     ??
+#     ___ getType
+#         p..
+#
+#     ___ getName
+#         r_ __n..
+#
+#
+# c_ LinePen P..
+#     """Straight brush"""
+#
+#     ___ - name
+#         s__ . - ?
+#
+#     ___ getType
+#         r_ PT_.PTL..
+#
+# c_ RectanglePen P..
+#     """Rectangular brush"""
+#
+#     ___ - name
+#         s__ . - ?
+#
+#     ___ getType
+#         r_ PT__.PTR..
+#
+#
+# c_ EllipsePen P..
+#     """Oval brush"""
+#
+#     ___ -, name
+#         s__. -?
+#
+#     ___ getType
+#         r_ PT__.PTE..
+#
+#
+# c_ PenFactory
+#     """Brush factory c_"""
+#
+#     ___ -
+#         "Define a dictionary (key: PenType, value: Pen) to store objects, and ensure that there will only be one object of each type"
+#         ?__pens _    # dict
+#
+#     ___ getSingleObj penType name
+#         """Get unique instance of object"""
+#
+#
+#     ___ createPen penType
+#         """Create brush"""
+#         __ ?__p__.ge. ? __ N..
+#             # If the object does not exist, an object is created and stored in the dictionary
+#             __ ? __ PT__.pTL..
+#                 pen _ L..("Straight brush")
+#             ____ ? __ PT...PR..
+#                 pen _ R.. ("Rectangular brush")
+#             ____ ? __ PT...PTE..
+#                 pen _ E.. ("Oval brush")
+#             ____
+#                 pen = P.. ""
+#             __p__ pT.. _ pen
+#         # Otherwise r_ the object in the dictionary directly
+#         r_ .__p.. pT..
+#
+#
+# # Framework-based implementation
+# #==============================
+#
+#
+# # Test
+# #=======================================================================================================================
+# ___ testCoffeeMaker
+#     latte = C___.mC..("Latte coffee beans")
+#     print("@ Ready for you, taste: @. Please enjoy slowly!"  ?.gN.. ?.gT..
+#     mocha = C___.mC..("Mocha coffee beans")
+#     print("@ is ready for you, taste: @. Please enjoy slowly!" ?.gN.. ?.gT..
+#
+#
+# ___ testPenFactory
+#     factory = P..
+#     linePen = ?.cP.. PT...PTL..
+#     print("created @，Object id: @， Types of:@" % (?.gN.. id ? ?.gT..
+#     rectPen = ?.cP.. PT...PTR..
+#     print("created @，Object id: @， Types of: @" % (?.gN.. id ? ?.gT..
+#     rectPen2 = ?.cP.. PT...PTR..
+#     print("created @，Object id: @， Types of:@" % (?.gN.. id ? ?.gT..
+#     ellipsePen = ?.cP..( T...PTE..
+#     print("created @，Object id: @， Types of: @" % (?.gN.. id ? eP__.gT..
+#
+#
+# # testCoffeeMaker()
+# testPenFactory()
