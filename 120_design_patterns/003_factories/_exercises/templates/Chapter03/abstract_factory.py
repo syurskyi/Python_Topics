@@ -1,76 +1,75 @@
-__author__ = 'Chetan'
-from abc import ABCMeta, abstractmethod
-
-
-class PizzaFactory(metaclass=ABCMeta):
-    
-    @abstractmethod
-    def createVegPizza(self):
-        pass
-    
-    @abstractmethod
-    def createNonVegPizza(self):
-        pass
-
-class IndianPizzaFactory(PizzaFactory):
-    
-    def createVegPizza(self):
-        return DeluxVeggiePizza()
-    def createNonVegPizza(self):
-        return ChickenPizza()
-
-class USPizzaFactory(PizzaFactory):
-    
-    def createVegPizza(self):
-        return MexicanVegPizza()
-    def createNonVegPizza(self):
-        return HamPizza()
-
-class VegPizza(metaclass=ABCMeta):
-    
-    @abstractmethod
-    def prepare(self, VegPizza):
-        pass
-
-class NonVegPizza(metaclass=ABCMeta):
-    
-    @abstractmethod
-    def serve(self, VegPizza):
-        pass
-
-class DeluxVeggiePizza(VegPizza):
-    
-    def prepare(self):
-        print("Prepare ", type(self).__name__)
-
-class ChickenPizza(NonVegPizza):
-    
-    def serve(self, VegPizza):
-        print(type(self).__name__, " is served with Chicken on ", type(VegPizza).__name__)
-
-class MexicanVegPizza(VegPizza):
-    
-    def prepare(self):
-        print("Prepare ", type(self).__name__)
-
-class HamPizza(NonVegPizza):
-    
-    def serve(self, VegPizza):
-        print(type(self).__name__, " is served with Ham on ", type(VegPizza).__name__)
-
-class PizzaStore:
-    
-    def __init__(self):
-        pass
-    
-    def makePizzas(self):
-        for factory in [IndianPizzaFactory(), USPizzaFactory()]:
-            self.factory = factory
-            self.NonVegPizza = self.factory.createNonVegPizza()
-            self.VegPizza = self.factory.createVegPizza()
-            self.VegPizza.prepare()
-            self.NonVegPizza.serve(self.VegPizza)
-
-
-pizza = PizzaStore()
-pizza.makePizzas()
+# ____ a.. _______ A.. a..
+#
+#
+# c_ PizzaFactory m..
+#
+#     ??
+#     ___ createVegPizza
+#         p..
+#
+#     ??
+#     ___ createNonVegPizza
+#         p..
+#
+# c_ IndianPizzaFactory P..
+#
+#     ___ createVegPizza
+#         r_ D..
+#     ___ createNonVegPizza
+#         r_ C..
+#
+# c_ USPizzaFactory P..
+#
+#     ___ createVegPizza
+#         r_ M..
+#     ___ createNonVegPizza
+#         r_ H..
+#
+# c_ VegPizza m..
+#
+#     ??
+#     ___ prepare VegPizza
+#         p..
+#
+# c_ NonVegPizza m..
+#
+#     ??
+#     ___ serve VegPizza
+#         p..
+#
+# c_ DeluxVeggiePizza V..
+#
+#     ___ prepare
+#         print("Prepare ", ty.. ____. -n
+#
+# c_ ChickenPizza N..
+#
+#     ___ serve  VegPizza
+#         print(ty.. ____. -n, " is served with Chicken on ", ty.. V... -n
+#
+# c_ MexicanVegPizza V..
+#
+#     ___ prepare
+#         print("Prepare ", ty.. ____ . -n
+#
+# c_ HamPizza N..
+#
+#     ___ serve VegPizza)
+#         print(ty.. _____. -n " is served with Ham on ", ty..  V.. -n
+#
+# c_ PizzaStore
+#
+#     ___ -
+#         p..
+#
+#     ___ makePizzas
+#         ___ factory __ I.., U..
+#             ?factory = f..
+#             ?N.. = ?f__.c..
+#             ?V.. = ?f__.c..
+#             ?V__.p..
+#             ?N__.s.. ?V..
+#
+#
+# pizza = PizzaStore()
+# pizza.makePizzas()

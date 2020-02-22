@@ -1,87 +1,87 @@
-from abc import ABC
-from enum import Enum, auto
-
-
-class HotDrink(ABC):
-    def consume(self):
-        pass
-
-
-class Tea(HotDrink):
-    def consume(self):
-        print('This tea is nice but I\'d prefer it with milk')
-
-
-class Coffee(HotDrink):
-    def consume(self):
-        print('This coffee is delicious')
-
-
-class HotDrinkFactory(ABC):
-    def prepare(self, amount):
-        pass
-
-
-class TeaFactory(HotDrinkFactory):
-    def prepare(self, amount):
-        print(f'Put in tea bag, boil water, pour {amount}ml, enjoy!')
-        return Tea()
-
-
-class CoffeeFactory(HotDrinkFactory):
-    def prepare(self, amount):
-        print(f'Grind some beans, boil water, pour {amount}ml, enjoy!')
-        return Coffee()
-
-
-class HotDrinkMachine:
-    class AvailableDrink(Enum):  # violates OCP
-        COFFEE = auto()
-        TEA = auto()
-
-    factories = []
-    initialized = False
-
-    def __init__(self):
-        if not self.initialized:
-            self.initialized = True
-            for d in self.AvailableDrink:
-                name = d.name[0] + d.name[1:].lower()
-                factory_name = name + 'Factory'
-                factory_instance = eval(factory_name)()
-                self.factories.append((name, factory_instance))
-
-
-
-
-
-    def make_drink(self):
-        print('Available drinks:')
-        for f in self.factories:
-            print(f[0])
-
-        s = input(f'Please pick drink (0-{len(self.factories)-1}): ')
-        idx = int(s)
-        s = input(f'Specify amount: ')
-        amount = int(s)
-        return self.factories[idx][1].prepare(amount)
-
-
-
-def make_drink(type):
-    if type == 'tea':
-        return TeaFactory().prepare(200)
-    elif type == 'coffee':
-        return CoffeeFactory().prepare(50)
-    else:
-        return None
-
-
-if __name__ == '__main__':
-    # entry = input('What kind of drink would you like?')
-    # drink = make_drink(entry)
-    # drink.consume()
-
-    hdm = HotDrinkMachine()
-    drink = hdm.make_drink()
-    drink.consume()
+# ____ a.. ______ A..
+# ____ e.. ______ E.. au..
+#
+#
+# c_ HotDrink A..
+#     ___ consume
+#         p..
+#
+#
+# c_ Tea H..
+#     ___ consume
+#         print('This tea is nice but I\'d prefer it with milk')
+#
+#
+# c_ Coffee H..
+#     ___ consume
+#         print('This coffee is delicious')
+#
+#
+# c_ HotDrinkFactory A..
+#     ___ prepare  amount
+#         p..
+#
+#
+# c_ TeaFactory H..
+#     ___ prepare  amount
+#         print _*Put in tea bag, boil water, pour |? ml, enjoy!')
+#         r_ T..
+#
+#
+# c_ CoffeeFactory H..
+#     ___ prepare  amount
+#         print _*Grind some beans, boil water, pour |? ml, enjoy!')
+#         r_ C..
+#
+#
+# c_ HotDrinkMachine
+#     c_ AvailableDrink E..  # violates OCP
+#         COFFEE = a..
+#         TEA = a..
+#
+#     factories =    # list
+#     initialized = F..
+#
+#     ___ -
+#         __ no. ?i..
+#             ?i.. _ T..
+#             ___ d in ?A..
+#                 name = ?.n.. 0 + ?.n.. 1: .lo..
+#                 factory_name = ? + 'Factory'
+#                 factory_instance = ev..  ?
+#                 ?f__.ap.. n.. ?
+#
+#
+#
+#
+#
+#     ___ make_drink
+#         print('Available drinks:')
+#         ___ f __ ?f..
+#             print ? 0
+#
+#         s = i..  _*Please pick drink |0-|le. ?f..|-1||: '
+#         idx = in. ?
+#         s = i.. _*Specify amount: ')
+#         amount = in. ?
+#         r_ ?f.. |idx 1.pr.. am..
+#
+#
+#
+# ___ make_drink type
+#     __ ? __ 't..
+#         r_ T__.p..200
+#     ____ ? __ 'c..
+#         r_ C___.p.. 50
+#     ____
+#         r_ N..
+#
+#
+# __ _______ __ _____
+#     # entry = input('What kind of drink would you like?')
+#     # drink = make_drink(entry)
+#     # drink.consume()
+#
+#     hdm = H..
+#     drink = ?.m..
+#     ?.c..

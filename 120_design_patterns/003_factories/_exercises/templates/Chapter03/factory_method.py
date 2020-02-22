@@ -1,73 +1,71 @@
-__author__ = 'Chetan'
-
-from abc import ABCMeta, abstractmethod
-
-
-class Section(metaclass=ABCMeta):
-    
-    @abstractmethod
-    def describe(self):
-        pass
-
-
-class PersonalSection(Section):
-    
-    def describe(self):
-        print("Personal Section")
-
-
-class AlbumSection(Section):
-    
-    def describe(self):
-        print("Album Section")
-
-
-class PatentSection(Section):
-    
-    def describe(self):
-        print("Patent Section")
-
-
-class PublicationSection(Section):
-    
-    def describe(self):
-        print("Publication Section")
-
-
-class Profile(metaclass=ABCMeta):
-    
-    def __init__(self):
-        self.sections = []
-        self.createProfile()
-    
-    @abstractmethod
-    def createProfile(self):
-        pass
-    
-    def getSections(self):
-        return self.sections
-    
-    def addSections(self, section):
-        self.sections.append(section)
-
-
-class linkedin(Profile):
-    
-    def createProfile(self):
-        self.addSections(PersonalSection())
-        self.addSections(PatentSection())
-        self.addSections(PublicationSection())
-
-
-class facebook(Profile):
-    
-    def createProfile(self):
-        self.addSections(PersonalSection())
-        self.addSections(AlbumSection())
-
-
-if __name__ == '__main__':
-    profile_type = input("Which Profile you'd like to create? [LinkedIn or FaceBook]")
-    profile = eval(profile_type.lower())()
-    print("Creating Profile..", type(profile).__name__)
-    print("Profile has sections --", profile.getSections())
+# ____ a.. ________ A.. a..
+#
+#
+# c_ Section m..
+#
+#     ??
+#     ___ describe
+#         p..
+#
+#
+# c_ PersonalSection S..
+#
+#     ___ describe
+#         print("Personal Section")
+#
+#
+# c_ AlbumSection S..
+#
+#     ___ describe
+#         print("Album Section")
+#
+#
+# c_ PatentSection S..
+#
+#     ___ describe
+#         print("Patent Section")
+#
+#
+# c_ PublicationSection S..
+#
+#     ___ describe
+#         print("Publication Section")
+#
+#
+# c_ Profile m..
+#
+#     ___ -
+#         ?sections    # list
+#         ?cP..
+#
+#     ??
+#     ___ createProfile
+#         p..
+#
+#     ___ getSections
+#         r_ self.sections
+#
+#     ___ addSections section
+#         ?s__.a.. ?
+#
+#
+# c_ linkedin P..
+#
+#     ___ createProfile
+#         ?aS.. Pe_S..
+#         ?aS.. Pa__S..
+#         ?aS.. Pu__S..
+#
+#
+# c_ facebook P..
+#
+#     ___ createProfile
+#         ?aS.. P..
+#         ?aS.. A..
+#
+#
+# __ _______ __ _____
+#     profile_type = i.. ("Which Profile you'd like to create? [LinkedIn or FaceBook]")
+#     profile = ev.. ?.lo..
+#     print("Creating Profile..", ty.. ?. -n
+#     print("Profile has sections --", ?.g..

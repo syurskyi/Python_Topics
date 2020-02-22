@@ -1,65 +1,65 @@
-from enum import Enum
-from math import *
-
-
-class CoordinateSystem(Enum):
-    CARTESIAN = 1
-    POLAR = 2
-
-
-class Point:
-    # def __init__(self, x, y):
-    #     self.x = x
-    #     self.y = y
-
-    def __str__(self):
-        return f'x: {self.x}, y: {self.y}'
-
-    # redeclaration won't work
-    # def __init__(self, rho, theta):
-
-    def __init__(self, a, b, system=CoordinateSystem.CARTESIAN):
-        if system == CoordinateSystem.CARTESIAN:
-            self.x = a
-            self.y = b
-        elif system == CoordinateSystem.POLAR:
-            self.x = a * sin(b)
-            self.y = a * cos(b)
-
-        # steps to add a new system
-        # 1. augment CoordinateSystem
-        # 2. change init method
-
-    @staticmethod
-    def new_cartesian_point(x, y):
-        return Point(x, y)
-
-    @staticmethod
-    def new_polar_point(rho, theta):
-        return Point(rho * sin(theta), rho * cos(theta))
-
-    class Factory:
-        @staticmethod
-        def new_cartesian_point(x, y):
-            return Point(x, y)
-
-    factory = Factory()
-
-# take out factory methods to a separate class
-class PointFactory:
-    @staticmethod
-    def new_cartesian_point(x, y):
-        return Point(x, y)
-
-    @staticmethod
-    def new_polar_point(rho, theta):
-        return Point(rho * sin(theta), rho * cos(theta))
-
-
-if __name__ == '__main__':
-    p1 = Point(2, 3, CoordinateSystem.CARTESIAN)
-    p2 = PointFactory.new_cartesian_point(1, 2)
-    # or you can expose factory through the type
-    p3 = Point.Factory.new_cartesian_point(5, 6)
-    p4 = Point.factory.new_cartesian_point(7, 8)
-    print(p1, p2, p3, p4)
+# ____ e.. ______ E..
+# ____ ma.. ______ *
+#
+#
+# c_ CoordinateSystem E..
+#     CARTESIAN = 1
+#     POLAR = 2
+#
+#
+# c_ Point
+#     # ___ __init__(self, x, y):
+#     #     self.x = x
+#     #     self.y = y
+#
+#     ___ -s
+#         r_ _*x: |.x , y: |.y '
+#
+#     # redeclaration won't work
+#     # ___ __init__(self, rho, theta):
+#
+#     ___ - a b system_C__.C..
+#         __ ? __ C___.C..
+#             ?x _ a
+#             ?y _ b
+#         ____ system __ c___.P..
+#             ?x _ a * sin(b)
+#             ?y _ a * cos(b)
+#
+#         # steps to add a new system
+#         # 1. augment CoordinateSystem
+#         # 2. change init method
+#
+#     ??
+#     ___ new_cartesian_point x y
+#         r_ P.. x y
+#
+#     ??
+#     ___ new_polar_point rho theta
+#         r_ P.. ? * sin(t..  ? * cos(t..
+#
+#     c_ F..
+#         ??
+#         ___ new_cartesian_point x y)
+#             r_ P.. x y
+#
+#     factory = F..
+#
+# # take out factory methods to a separate c_
+# c_ PointFactory
+#     ??
+#     ___ new_cartesian_point x y
+#         r_ P... x y
+#
+#     ??
+#     ___ new_polar_point rho theta)
+#         r_ P__ ? * sin(t.. ? * cos(t..
+#
+#
+# __ _______ __ _____
+#     p1 = P.. 2 3 C__.C..
+#     p2 = PF_.n_c_p.. 1 2
+#     # or you can expose factory through the type
+#     p3 = P__.F__.n.. 5 6
+#     p4 = P__.f__.n.. 7 8
+#     print(p1, p2, p3, p4)
