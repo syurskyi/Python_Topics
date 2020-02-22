@@ -1,7 +1,7 @@
-import abc
-
-class AbsFactory(metaclass=abc.ABCMeta):
-
-    @abc.abstractmethod
-    def create_auto(self):
-        pass
+# ________ a..
+#
+# c_ AbsFactory m..
+#
+#     ??a..
+#     ___ create_auto
+#         p..
