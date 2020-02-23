@@ -149,14 +149,14 @@ if __name__ == "__main__":
 
     print("\n")
 
-    print("Standard full featured product: ")
-    director.build_full_featured_product()
-    builder.product.list_parts()
-
-    print("\n")
-
-    # Помните, что паттерн Строитель можно использовать без класса Директор.
-    print("Custom product: ")
-    builder.produce_part_a()
-    builder.produce_part_b()
-    builder.product.list_parts()
+    # print("Standard full featured product: ")
+    # director.build_full_featured_product()
+    # builder.product.list_parts()
+    #
+    # print("\n")
+    #
+    # # Помните, что паттерн Строитель можно использовать без класса Директор.
+    # print("Custom product: ")
+    # builder.produce_part_a()
+    # builder.produce_part_b()
+    # builder.product.list_parts()

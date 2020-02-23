@@ -1,52 +1,52 @@
 # -*- coding : utf-8 -*-
 
-from - ______ an...
-from a.. ______ A.. a..m.. a..p..
-from ty.. ______ A..
+from __future__ import annotations
+from abc import ABC, abstractmethod, abstractproperty
+from typing import Any
 
 
-c_ Builder A..
+class Builder(ABC):
     """
     Интерфейс Строителя объявляет создающие методы для различных частей объектов
     Продуктов.
     """
 
-    ?a_p_
-    ___ product __ N..
-        p..
+    @abstractproperty
+    def product(self) -> None:
+        pass
 
-    ?a_m_
-    ___ produce_part_a __ N..
-        p..
+    @abstractmethod
+    def produce_part_a(self) -> None:
+        pass
 
-    ?a_m_
-    ___ produce_part_b __ N..
-        p..
+    @abstractmethod
+    def produce_part_b(self) -> None:
+        pass
 
-    ?a_m_
-    ___ produce_part_c __ N..
-        p..
+    @abstractmethod
+    def produce_part_c(self) -> None:
+        pass
 
 
-c_ ConcreteBuilder1 B..
+class ConcreteBuilder1(Builder):
     """
     Классы Конкретного Строителя следуют интерфейсу Строителя и предоставляют
     конкретные реализации шагов построения. Ваша программа может иметь несколько
     вариантов Строителей, реализованных по-разному.
     """
 
-    ___ - __ N..
+    def __init__(self) -> None:
         """
         Новый экземпляр строителя должен содержать пустой объект продукта,
         который используется в дальнейшей сборке.
         """
-        ?re..
+        self.reset()
 
-    ___ reset __ N..
-        _product _ P_1
+    def reset(self) -> None:
+        self._product = Product1()
 
-    ?p..
-    ___ product __ P_1
+    @property
+    def product(self) -> Product1:
         """
         Конкретные Строители должны предоставить свои собственные методы
         получения результатов. Это связано с тем, что различные типы строителей
@@ -62,21 +62,21 @@ c_ ConcreteBuilder1 B..
         можете заставить своих строителей ждать явного запроса на сброс из кода
         клиента, прежде чем избавиться от предыдущего результата.
         """
-        product = _product
-        ?re..
-        r_ ?
+        product = self._product
+        self.reset()
+        return product
 
-    ___ produce_part_a __ N..
-        ._pr__.ad.. "PartA1"
+    def produce_part_a(self) -> None:
+        self._product.add("PartA1")
 
-    ___ produce_part_b __ N..
-        _pr__.ad.. "PartB1"
+    def produce_part_b(self) -> None:
+        self._product.add("PartB1")
 
-    ___ produce_part_c __ N..
-        _pr_.ad.. "PartC1"
+    def produce_part_c(self) -> None:
+        self._product.add("PartC1")
 
 
-c_ Product1
+class Product1():
     """
     Имеет смысл использовать паттерн Строитель только тогда, когда ваши продукты
     достаточно сложны и требуют обширной конфигурации.
@@ -86,17 +86,17 @@ c_ Product1
     различных строителей могут не всегда следовать одному и тому же интерфейсу.
     """
 
-    ___ - __ N..
-        ?parts _      # list
+    def __init__(self) -> None:
+        self.parts = []      # list
 
-    ___ add  part A.. __ N..
-        ?p__.ap.. ?
+    def add(self, part: Any) -> None:
+        self.parts.append(part)
 
-    ___ list_parts __ N..
-        print _*Product parts: |', '.jo.. ?p.. " en._"")
+    def list_parts(self) -> None:
+        print(f"Product parts: {', '.join(self.parts)}", end="")
 
 
-c_ Director
+class Director:
     """
     Директор отвечает только за выполнение шагов построения в определённой
     последовательности. Это полезно при производстве продуктов в определённом
@@ -104,61 +104,61 @@ c_ Director
     так как клиент может напрямую управлять строителями.
     """
 
-    ___ - __ N..
-        _builder = N..
+    def __init__(self) -> None:
+        self._builder = None
 
-    ?p..
-    ___ builder __ B..
-        r__ _b..
+    @property
+    def builder(self) -> Builder:
+        return self._builder
 
-    ??.?
-    ___ builder  builder B.. __ N..
+    @builder.setter
+    def builder(self, builder: Builder) -> None:
         """
         Директор работает с любым экземпляром строителя, который передаётся ему
         клиентским кодом. Таким образом, клиентский код может изменить конечный
         тип вновь собираемого продукта.
         """
-        _?  ?
+        self._builder = builder
 
     """
     Директор может строить несколько вариаций продукта, используя одинаковые
     шаги построения.
     """
 
-    ___ build_minimal_viable_product __ N..
-        ?b__.p_a..
+    def build_minimal_viable_product(self) -> None:
+        self.builder.produce_part_a()
 
-    ___ build_full_featured_product __ N..
-        ?b__.p_a
-        ?b__.p_b
-        ?b__.p_c
+    def build_full_featured_product(self) -> None:
+        self.builder.produce_part_a()
+        self.builder.produce_part_b()
+        self.builder.produce_part_c()
 
 
-__ _______ __ ______
+if __name__ == '__main__':
     """
     Клиентский код создаёт объект-строитель, передаёт его директору, а затем
     инициирует процесс построения. Конечный результат извлекается из объекта-
     строителя.
     """
 
-    director = D..
-    builder = C..
-    d__.b.. = b...
+    director = Director()
+    builder = ConcreteBuilder1()
+    director.builder = builder
 
     print("Standard basic product: ")
-    d__.b_m
-    b___.pr__.l_p..
+    director.build_minimal_viable_product()
+    builder.product.list_parts()
 
     print("\n")
 
-    print("Standard full featured product: ")
-    d__.b_f_f_p..
-    b___.p__.l_p..
-
-    print("\n")
-
-    # Помните, что паттерн Строитель можно использовать без класса Директор.
-    print("Custom product: ")
-    b___.p_a
-    b___.p_b
-    b___.p__.l_p..
+    # print("Standard full featured product: ")
+    # d__.b_f_f_p..
+    # b___.p__.l_p..
+    #
+    # print("\n")
+    #
+    # # Помните, что паттерн Строитель можно использовать без класса Директор.
+    # print("Custom product: ")
+    # b___.p_a
+    # b___.p_b
+    # b___.p__.l_p..
