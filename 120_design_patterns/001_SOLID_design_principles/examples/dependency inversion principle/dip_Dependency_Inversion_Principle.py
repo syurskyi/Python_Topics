@@ -15,7 +15,8 @@ class Person:
 
 class RelationshipBrowser:
     @abstractmethod
-    def find_all_children_of(self, name): pass
+    def find_all_children_of(self, name):
+        pass
 
 
 class Relationships(RelationshipBrowser):  # low-level
