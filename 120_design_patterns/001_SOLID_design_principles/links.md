@@ -27,7 +27,24 @@ https://habr.com/ru/post/72757/
 https://habr.com/ru/post/332578/
 
 
-Interfaces
+##Youtube
+
+Liskov's Substitution Principle | SOLID Design Principles (ep 1 part 1)
+https://www.youtube.com/watch?v=ObHQHszbIcE
+
+Becoming a better developer by using the SOLID design principles by Katerina Trajchevska
+https://www.youtube.com/watch?v=rtmFCcjEgEw&t=67s
+
+SOLID принципы [GeekBrains]
+https://www.youtube.com/watch?v=59tq5Fcgn7A
+
+Просто о SOLID (Принципы ООП)
+https://www.youtube.com/watch?v=A6wEkG4B38E
+
+Принципы SOLID: примеры из жизни
+https://www.youtube.com/watch?v=i4OIt35zDqE
+
+##Interfaces
 Interfaces and Metaclasses in Python
 https://ca.godaddy.com/engineering/2018/12/20/python-metaclasses/
 
