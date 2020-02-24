@@ -15,3 +15,10 @@ https://webdevblog.ru/solid-principy-chast-2/
 
 SOLID принципы часть 3
 https://webdevblog.ru/solid-principy-chast-3/
+
+Принцип подстановки Барбары Лисков
+https://dou.ua/lenta/articles/liskov-substitution-principle/
+
+L: Принцип подстановки Лисков
+https://refactoring.guru/ru/didp/principles/solid-principles/lsp
+
