@@ -69,7 +69,7 @@
 # """
 #
 # c_ XMLHttpService C..
-#     xhr = XR..
+#     xhr = X___R..
 #
 #     ___ request url st. options di..
 #         ?x__.o..
