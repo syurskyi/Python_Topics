@@ -22,3 +22,12 @@ https://dou.ua/lenta/articles/liskov-substitution-principle/
 L: Принцип подстановки Лисков
 https://refactoring.guru/ru/didp/principles/solid-principles/lsp
 
+Need to look
+https://habr.com/ru/post/72757/
+https://habr.com/ru/post/332578/
+
+Программирование на Java с нуля #13. Интерфейсы, абстрактные классы.
+https://www.youtube.com/watch?v=uDN75SRyUzI
+Look if it possible to do in Python
+
+
