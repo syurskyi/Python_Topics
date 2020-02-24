@@ -26,6 +26,21 @@ Need to look
 https://habr.com/ru/post/72757/
 https://habr.com/ru/post/332578/
 
+
+Interfaces
+Interfaces and Metaclasses in Python
+https://ca.godaddy.com/engineering/2018/12/20/python-metaclasses/
+
+Implementing an Interface in Python
+https://realpython.com/python-interface/
+
+Python how to Implement Interfaces
+https://www.youtube.com/watch?v=MuFcvopLTD0
+
+Abstract Classes and Interfaces
+https://www.youtube.com/watch?v=AU07jJc_qMQ
+
+
 Программирование на Java с нуля #13. Интерфейсы, абстрактные классы.
 https://www.youtube.com/watch?v=uDN75SRyUzI
 Look if it possible to do in Python
