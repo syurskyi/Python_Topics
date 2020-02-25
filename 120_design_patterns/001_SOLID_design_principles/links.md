@@ -57,6 +57,15 @@ http://masnun.rocks/2017/04/15/interfaces-in-python-protocols-and-abcs/
 Interfaces and Annotations in Python3
 https://dmerej.info/blog/post/interfaces-and-annotations-in-python3/
 
+Абстрактные классы и интерфейсы в Питоне
+https://habr.com/ru/post/72757/
+
+Интерфейс vs interface
+https://habr.com/ru/post/332578/
+
+Expert Python Programming: Interfaces
+https://hub.packtpub.com/interfaces/
+
 #
 
 Python how to Implement Interfaces
