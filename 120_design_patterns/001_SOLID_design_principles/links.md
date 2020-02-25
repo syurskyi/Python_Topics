@@ -57,6 +57,11 @@ https://www.youtube.com/watch?v=MuFcvopLTD0
 Abstract Classes and Interfaces
 https://www.youtube.com/watch?v=AU07jJc_qMQ
 
+Interfaces in Python: Protocols and ABCs
+http://masnun.rocks/2017/04/15/interfaces-in-python-protocols-and-abcs/
+
+Interfaces and Annotations in Python3
+https://dmerej.info/blog/post/interfaces-and-annotations-in-python3/
 
 Программирование на Java с нуля #13. Интерфейсы, абстрактные классы.
 https://www.youtube.com/watch?v=uDN75SRyUzI
