@@ -62,4 +62,7 @@ https://www.youtube.com/watch?v=AU07jJc_qMQ
 https://www.youtube.com/watch?v=uDN75SRyUzI
 Look if it possible to do in Python
 
+Python Python. К вершинам мастерства  book
+page374
+
 
