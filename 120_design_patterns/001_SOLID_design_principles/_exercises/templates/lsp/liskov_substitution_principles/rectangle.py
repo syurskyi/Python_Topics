@@ -1,23 +1,23 @@
-class Rectangle:
-    def __init__(self, width, height):
-        self.width = width
-        self.height = height
-
-    @property
-    def width(self):
-        return self.__width
-
-    @property
-    def height(self):
-        return self.__height
-
-    @width.setter
-    def width(self, width):
-        self.__width = width
-
-    @height.setter
-    def height(self, height):
-        self.__height = height
-
-    def get_area(self):
-        return self.width * self.height
+# c_ Rectangle
+#     ___ - width height
+#         ??  ?
+#         ??  ?
+#
+#     ?p..
+#     ___ width
+#         r_ __?
+#
+#     ?p..
+#     ___ height
+#         r_ __?
+#
+#     ??.?
+#     ___ width width
+#         __?  ?
+#
+#     ??.?
+#     ___ height height
+#         __?  ?
+#
+#     ___ get_area
+#         r_ w.. * h..
