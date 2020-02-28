@@ -1,78 +1,78 @@
-"""Prototype pattern
-"""
-import copy
-from collections import OrderedDict
-
-
-class Book:
-
-    def __init__(self, name, authors, price, **kwargs):
-        """Examples of kwargs: publisher, length, tags, publication date"""
-        self.name = name
-        self.authors = authors
-        self.price = price
-        self.__dict__.update(kwargs)
-
-    def __str__(self):
-        mylist = []
-        ordered = OrderedDict(sorted(self.__dict__.items()))
-        for i in ordered.keys():
-            mylist.append("{}: {}".format(i, ordered[i]))
-            if i == "price":
-                mylist.append("$")
-            mylist.append("\n")
-        return "".join(mylist)
-
-
-class Prototype:
-
-    def __init__(self):
-        self.objects = dict()
-
-    def register(self, identifier, obj):
-        self.objects[identifier] = obj
-
-    def unregister(self, identifier):
-        del self.objects[identifier]
-
-    def clone(self, identifier, **attr):
-        found = self.objects.get(identifier)
-        if not found:
-            raise ValueError("Incorrect object identifier: {}".format(identifier))
-
-        obj = copy.deepcopy(found)
-        obj.__dict__.update(attr)
-        return obj
-
-
-def main():
-    b1 = Book(
-        name="The C Programming Language",
-        authors=("Brian W. Kernighan", "Dennis M.Ritchie"),
-        price=118,
-        publisher="Prentice Hall",
-        length=228,
-        publication_date="1978-02-22",
-        tags=("C", "programming", "algorithms", "data structures"),
-    )
-
-    prototype = Prototype()
-    cid = "k&r-first"
-    prototype.register(cid, b1)
-    b2 = prototype.clone(
-        cid,
-        name="The C Programming Language (ANSI)",
-        price=48.99,
-        length=274,
-        publication_date="1988-04-01",
-        edition=2,
-    )
-
-    for i in (b1, b2):
-        print(i)
-
-    print("ID b1 : {} != ID b2 : {}".format(id(b1), id(b2)))
-
-
-if __name__ == "__main__":
-    main()
+# """Prototype pattern
+# """
+# ______ c___
+# ____ co.. ______ OD..
+#
+#
+# c_ Book
+#
+#     ___ - name authors price $$
+#         """Examples of kwargs: publisher, length, tags, publication date"""
+#         ?  ?
+#         ?  ?
+#         ?  ?
+#         ?. -d .u.. k..
+#
+#     ___ -s
+#         mylist _     # list
+#         ordered _ OD.. so.. ?. -d.it..
+#         ___ i __ ?.ke..
+#             my___.ap.. "@: @".f... ? o..|?
+#             __ i __ "price":
+#                 my___.ap.. "$"
+#             my___.ap.. "\n"
+#         r_ "".jo.. m..
+#
+#
+# c_ Prototype
+#
+#     ___ -
+#         ?objects _ di..
+#
+#     ___ register identifier obj
+#         o..|? _ ?
+#
+#     ___ unregister identifier
+#         de. .o..|?
+#
+#     ___ clone  identifier $$attr
+#         found _ .o___.ge. i..
+#         __ no. found
+#             r_ V.. ("Incorrect object identifier: @".f... i..
+#
+#         obj _ c___.de.. f..
+#         ?. -d .up.. a..
+#         r_ ?
+#
+#
+# ___ main
+#     b1 _ B..|
+#         name_"The C Programming Language",
+#         authors_("Brian W. Kernighan", "Dennis M.Ritchie"),
+#         price_118,
+#         publisher_"Prentice Hall",
+#         length_228,
+#         publication_date_"1978-02-22",
+#         tags_("C", "programming", "algorithms", "data structures"),
+#     )
+#
+#     prototype _ P..
+#     cid _ "k&r-first"
+#     ?.re.. c.. b.
+#     b2 _ ?.cl.. |
+#         c..
+#         name_"The C Programming Language (ANSI)",
+#         price_48.99,
+#         length_274,
+#         publication_date_"1988-04-01",
+#         edition_2,
+#     )
+#
+#     ___ i __ _1 _2
+#         print ?
+#
+#     print("ID b1 : @ !_ ID b2 : @".f... i. _1 i. _2
+#
+#
+# __ ______ __ ______
+#     ?
