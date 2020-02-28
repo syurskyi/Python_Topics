@@ -1,40 +1,40 @@
-# coding: utf-8
-
-"""
-Прототип - паттерн, порождающий объекты.
-
-Задает виды создаваемых объектов с помощью экземпляра-прототипа
-и создает новые объекты путем копирования этого прототипа.
-"""
-
-import copy
-
-
-class Prototype(object):
-    def __init__(self):
-        self._objects = {}
-
-    def register(self, name, obj):
-        self._objects[name] = obj
-
-    def unregister(self, name):
-        del self._objects[name]
-
-    def clone(self, name, attrs):
-        obj = copy.deepcopy(self._objects[name])
-        obj.__dict__.update(attrs)
-        return obj
-
-
-class Bird(object):
-    """Птица"""
-
-
-prototype = Prototype()
-prototype.register('bird', Bird())
-
-owl = prototype.clone('bird', {'name': 'Owl'})
-print(type(owl), owl.name)  # <class '__main__.Bird'> Owl
-
-duck = prototype.clone('bird', {'name': 'Duck'})
-print(type(duck), duck.name)  # <class '__main__.Bird'> Duck
+# # coding: utf-8
+#
+# """
+# Прототип - паттерн, порождающий объекты.
+#
+# Задает виды создаваемых объектов с помощью экземпляра-прототипа
+# и создает новые объекты путем копирования этого прототипа.
+# """
+#
+# ______ c___
+#
+#
+# c_ Prototype o..
+#     ___ -
+#         _objects =     # dict
+#
+#     ___ register name obj
+#         _o..|? _ ?
+#
+#     ___ unregister name
+#         de. _o..|?
+# 
+#     ___ clone name attrs
+#         obj = c___.de.. _o..|n..
+#         ?. -d .up.. a..
+#         r_ ?
+#
+#
+# c_ Bird o..
+#     """Птица"""
+#
+#
+# prototype = P..
+# ?.r.. 'bird' Bi..
+#
+# owl = ?.cl.. 'bird', |'name' 'Owl'
+# print ty.. ? ?.n..  # <c_ '__main__.Bird'> Owl
+#
+# duck = ?.cl.. 'bird', |'name' 'Duck'
+# print ty.. ? ?.n..  # <c_ '__main__.Bird'> Duck
