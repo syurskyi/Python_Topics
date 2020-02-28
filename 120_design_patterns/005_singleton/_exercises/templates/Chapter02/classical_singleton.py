@@ -1,15 +1,13 @@
-__author__ = 'Chetan'
-
-class Singleton(object):
-     
-    def __new__(cls):
-       if not hasattr(cls, 'instance'):
-         cls.instance = super(Singleton, cls).__new__(cls)
-       return cls.instance
-
-s = Singleton()
-print("Object created", s)
-
-s1 = Singleton()
-print("Object created", s1)
-
+# c_ Singleton o..
+#
+#     ___  -n ___
+#        __ no. has.. ___ 'instance'
+#          ___.i.. _ s.. S.. ___ . -n ___
+#        r_ ___.i..
+#
+# s = ?
+# print("Object created" ?
+#
+# s1 = ?
+# print("Object created" ?
+#
