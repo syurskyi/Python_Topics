@@ -1,12 +1,12 @@
-from logger_meta import Logger
-
-logger = Logger('my.log')
-logger.write_log('Logging with classic Singleton pattern')
-logger2 = Logger('***ignored***')
-logger2.write_log('Another log record')
-
-logger.close_log()
-
-with open('my.log', 'r') as f:
-    for line in f:
-        print(line, end='')
+# ____ l_m.. ______ L...
+#
+# logger = L.. my.log
+# ?.w.. 'Logging with classic Singleton pattern'
+# logger2 = L.. ('***ignored***')
+# ?.w.. 'Another log record')
+#
+# logger.cl...
+#
+# w___ o.. 'my.log' _ __ f
+#     ___ line __ ?
+#         print ? en._''
