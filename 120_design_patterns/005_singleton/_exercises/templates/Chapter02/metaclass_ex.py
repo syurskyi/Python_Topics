@@ -1,17 +1,15 @@
-__author__ = 'Chetan'
-
-class MyInt(type):
-    
-    def __call__(cls, *args, **kwds):
-        print("***** Here's My int *****", args)
-        print("Now do whatever you want with these objects...")
-        return type.__call__(cls, *args, **kwds)
-
-
-class int(metaclass=MyInt):
-    
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
-
-i = int(4,5)
+# c_ MyInt ty..
+#     
+#     __ -c ___ $ $$
+#         print("***** Here's My int *****" a..
+#         print("Now do whatever you want with these objects...")
+#         r_ ty__. -c ___ $ $$
+# 
+# 
+# c_ int m..._M..
+#     
+#     ___ - x y
+#         ?   ?
+#         ?   ?
+# 
+# i = int(4,5)
