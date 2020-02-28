@@ -1,31 +1,31 @@
-# coding: utf-8
-
-import copy
-
-class Prototype(object):
-    def __init__(self):
-        self._objects = {}
-
-    def register(self, name, obj):
-        self._objects[name] = obj
-
-    def unregister(self, name):
-        del self._objects[name]
-
-    def clone(self, name, attrs):
-        obj = copy.deepcopy(self._objects[name])
-        obj.__dict__.update(attrs)
-        return obj
-
-
-class Bird(object):
-    """Птица"""
-
-prototype = Prototype()
-prototype.register('bird', Bird())
-
-owl = prototype.clone('bird', {'name': 'Owl'})
-print(type(owl), owl.name) # Owl
-
-duck = prototype.clone('bird', {'name': 'Duck'})
-print(type(duck), duck.name) # Duck
+# # coding: utf-8
+#
+# ______ c___
+#
+# c_ Prototype o...
+#     ___ -
+#         _objects _     # dicy
+#
+#     ___ register name obj
+#         _o.. n.. _ o..
+#
+#     ___ unregister name
+#         de. _o..|?
+#
+#     ___ clone name attrs
+#         obj _ c____.de.. _o...|n..
+#         ?. -d .up.. ?
+#         r_ ?
+#
+#
+# c_ Bird o..
+#     """Птица"""
+#
+# prototype _ P..
+# ?.register 'bird' B..
+#
+# owl _ ?.cl.. ('bird', |'name' 'Owl'
+# print ty..? ?.n.. # Owl
+#
+# duck _ ?.cl.. 'bird', |'name' 'Duck'
+# print ty.. ? ?.n.. # Duck
