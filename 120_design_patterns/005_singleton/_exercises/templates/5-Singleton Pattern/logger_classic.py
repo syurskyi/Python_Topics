@@ -1,32 +1,32 @@
-import datetime
-
-class Logger(object):
-    log_file = None
-
-    @staticmethod
-    def instance():
-        if  '_instance' not in Logger.__dict__:
-             Logger._instance = Logger()
-        return Logger._instance
-
-    def open_log(self, path):
-        self.log_file = open(path,mode='w')
-
-    def write_log(self, log_record):
-        now = str(datetime.datetime.now())
-        record = '%s: %s' % (now, log_record)
-        self.log_file.write(record)
-    
-    def close_log(self):
-        self.log_file.close()
-
-logger = Logger.instance()
-logger.open_log('my.log')
-logger.write_log('Logging with classic Singleton pattern')
-logger.close_log()
-
-with open('my.log', 'r') as f:
-    for line in f:
-        print(line)
-
-     
+# _______ d_t_
+#
+# c_ Logger o..
+#     log_file _ N...
+#
+#     ?s..
+#     ___ instance
+#         __  '_i..' no. __ L___. -d
+#              L___._i.. _ L___
+#         r_ L___._i..
+#
+#     ___ open_log path
+#         .l... _ o.. ? mode_ _
+#
+#     ___ write_log log_record
+#         now _ st. d_t_.d_t_.n...
+#         record _ '@: @'  ? l...
+#         .l__.w.. ?
+#
+#     ___ close_log
+#         .l___.cl..
+#
+# logger _ L___.i..
+# ?.o.. 'my.log
+# ?.w... 'Logging with classic Singleton pattern')
+# ?.c..
+#
+# w___ o.. my.log _ __ f
+#     ___ line __ f
+#         print ?
+# 
+#
