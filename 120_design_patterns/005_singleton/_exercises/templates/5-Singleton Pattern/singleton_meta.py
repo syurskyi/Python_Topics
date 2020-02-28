@@ -1,10 +1,10 @@
-import datetime
-
-class Singleton(type):
-    _instances = {}
-
-    def __call__(cls, *args, **kwargs):
-        if cls not in cls._instances: 
-            instance = super().__call__(*args, **kwargs)
-            cls._instances[cls] = instance
-        return cls._instances[cls]
+# _______ d_t_
+# 
+# c_ Singleton ty..
+#     _instances       # dict
+# 
+#     ___ -c ___ $  $$
+#         __ ___ no. __ ___._i..
+#             instance = s___ . -c $ $$
+#             ___._i..|___ _ ?
+#         r_ ___._i..|___
