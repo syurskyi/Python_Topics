@@ -1,21 +1,19 @@
-__author__ = 'Chetan'
-
-class Singleton:
-    
-    __instance = None
-    
-    def __init__(self):
-        if not Singleton.__instance:
-            print(" __init__ method called..")
-        else:
-            print("Instance already created:", self.getInstance())
-    
-    @classmethod
-    def getInstance(cls):
-        if not cls.__instance:
-            cls.__instance = Singleton()
-        return cls.__instance
-
-s = Singleton() ## class initialized, but object not created
-print("Object created", Singleton.getInstance()) ## Gets created here
-s1 = Singleton() ## instance already created
+# c_ Singleton
+#     
+#     __instance _ N..
+#     
+#     ___ -
+#         __ no. S___.__?
+#             print(" __init__ method called..")
+#         ____
+#             print("Instance already created:" gI..
+#     
+#     ??
+#     ___ getInstance ___
+#         __ no. ___.__i..
+#             ___.__i.. _ S..
+#         r_ ___.__i..
+# 
+# s = S..    ## class initialized, but object not created
+# print("Object created", Singleton.getInstance()) ## Gets created here
+# s1 = S..  ## instance already created
