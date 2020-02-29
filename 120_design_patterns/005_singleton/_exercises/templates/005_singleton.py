@@ -1,48 +1,48 @@
-# ---------- Singletone ----------
-
-
-# Real Singleton instance
-class Singleton(object):
-    def __new__(type):
-        if not '_the_instance' in type.__dict__:
-            type._the_instance = object.__new__(type)
-        return type._the_instance
-
-a = Singleton()
-a.toto = 12
-
-b = Singleton()
-print(b.toto)
-print(id(a), id(b))  # The same !!
-
-
-# ---------- Borg's singletone ----------
-class Borg:
-    __shared_state = {}
-
-    def __init__(self):
-        self.__dict__ = self.__shared_state
-
-a = Borg()
-a.toto = 12
-
-b = Borg()
-print(b.toto)
-print(id(a), id(b))  # different ! but states are sames
-
-# ---------- Alex's Martelli examples ----------
-
-class Singleton(object):
-    def __new__(cls, *a, **k):
-        if not hasattr(cls, '_inst'):
-            cls._inst = super(Singleton, cls
-).__new__(cls, *a, **k)
-        return cls._inst
-
-class Borg(object):
-    """Subclassing is no problem."""
-    _shared_state = {}
-    def __new__(cls, *a, **k):
-        obj = super(Borg, cls).__new__(cls, *a, **k)
-        obj.__dict__ = cls._shared_state
-        return obj
+# # ---------- Singletone ----------
+# 
+# 
+# # Real Singleton instance
+# c_ Singleton o..
+#     ___  -n ty__
+#         __ no. '_the_instance' __ ty__. -d 
+#             ty__._? _ object. -n ty__
+#         r_ ty__._?
+# 
+# a = ?
+# a.toto = 12
+# 
+# b = ?
+# print(b.toto)
+# print(id(a), id(b))  # The same !!
+# 
+# 
+# # ---------- Borg's singletone ----------
+# c_ Borg
+#     __shared_state    # dict
+# 
+#     ___ -
+#         . -d  = .__?
+# 
+# a = ?
+# a.toto = 12
+# 
+# b = ?
+# print(b.toto)
+# print(id(a), id(b))  # different ! but states are sames
+# 
+# # ---------- Alex's Martelli examples ----------
+# 
+# c_ Singleton o..
+#     ___  -n ___ $ $$
+#         __ no. h.. ___ '_inst'
+#             ___._? _ s___ S.. ___
+# ). -n ___ $ $$
+#         r_ ___._inst
+# 
+# c_ Borg o..
+#     """Subclassing is no problem."""
+#     _shared_state    # dict
+#     ___  -n ___ $  $$
+#         obj = s___ B.. ___. -n ___ $ $$
+#         ?. -d  _ ___._?
+#         r_ ?
