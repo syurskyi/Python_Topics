@@ -1,39 +1,41 @@
-from __future__ import annotations
-from typing import Optional
+# -*- coding: utf-8 -*-
 
-
-class SingletonMeta(type):
-    """
-    В Python класс Одиночка можно реализовать по-разному. Возможные способы
-    включают себя базовый класс, декоратор, метакласс. Мы воспользуемся
-    метаклассом, поскольку он лучше всего подходит для этой цели.
-    """
-
-    _instance: Optional[Singleton] = None
-
-    def __call__(self) -> Singleton:
-        if self._instance is None:
-            self._instance = super().__call__()
-        return self._instance
-
-
-class Singleton(metaclass=SingletonMeta):
-    def some_business_logic(self):
-        """
-        Наконец, любой одиночка должен содержать некоторую бизнес-логику,
-        которая может быть выполнена на его экземпляре.
-        """
-
-        # ...
-
-
-if __name__ == "__main__":
-    # Клиентский код.
-
-    s1 = Singleton()
-    s2 = Singleton()
-
-    if id(s1) == id(s2):
-        print("Singleton works, both variables contain the same instance.")
-    else:
-        print("Singleton failed, variables contain different instances.")
+# ____ -f ______ a..
+# ____ ty.. ______ O..
+#
+#
+# c_ SingletonMeta ty..
+#     """
+#     В Python класс Одиночка можно реализовать по-разному. Возможные способы
+#     включают себя базовый класс, декоратор, метакласс. Мы воспользуемся
+#     метаклассом, поскольку он лучше всего подходит для этой цели.
+#     """
+#
+#     _instance O..|S.. _ N..
+#
+#     ___ -c __ S..
+#         __ _? __ N..
+#             _? _ s____. -c
+#         r_ _?
+#
+#
+# c_ Singleton m.._S..
+#     ___ some_business_logic
+#         """
+#         Наконец, любой одиночка должен содержать некоторую бизнес-логику,
+#         которая может быть выполнена на его экземпляре.
+#         """
+#
+#         # ...
+#
+#
+# __ ______ __ ______
+#     # Клиентский код.
+#
+#     s1 = ?
+#     s2 = ?
+#
+#     __ i. _1 __ i. _2
+#         print("Singleton works, both variables contain the same instance.")
+#     ____
+#         print("Singleton failed, variables contain different instances.")
