@@ -1,32 +1,32 @@
-from external import Synthesizer, Human
+____ e.. ______ S... H..
 
-class Computer:
-    def __init__(self, name):
-        self.name = name
+c_ Computer
+    ___ - name
+        ?  ?
 
-    def __str__(self):
-        return 'the {} computer'.format(self.name)
+    ___ -s
+        r_ 'the @ computer'.f.. n..
 
-    def execute(self):
-        return 'executes a program'
+    ___ execute
+        r_ 'executes a program'
 
-class Adapter:
-    def __init__(self, obj, adapted_methods):
-        self.obj = obj
-        self.__dict__.update(adapted_methods)
+c_ Adapter
+    ___ - obj, adapted_methods)
+        ?  ?
+        . -d.up.. ?
 
-    def __str__(self):
-        return str(self.obj)
+    ___ -s
+        r_ st. o..
 
-def main():
-    objects = [Computer('Asus')]
-    synth = Synthesizer('moog')
-    objects.append(Adapter(synth, dict(execute=synth.play)))
-    human = Human('Bob')
-    objects.append(Adapter(human, dict(execute=human.speak)))
+___ main
+    objects = C.. 'Asus'
+    synth = S.. 'moog'
+    o__.ap..  A.. ? dict execute_?.pl..
+    human = H.. 'Bob'
+    o__.ap.. A..  ? dict(execute_?.sp..
 
-    for i in objects:
-        print('{} {}'.format(str(i), i.execute()))
+    ___ i __ o....
+        print('@ @'.f.. st. ?, ?.ex..
 
-if __name__ == "__main__":
-    main()
+__ ______ __ _______
+    ?
