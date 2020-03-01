@@ -1,5 +1,5 @@
-from abc import ABC
-from collections.abc import Iterable
+____ abc ______ ABC
+____ collections.abc ______ Iterable
 
 
 class Connectable(Iterable, ABC):

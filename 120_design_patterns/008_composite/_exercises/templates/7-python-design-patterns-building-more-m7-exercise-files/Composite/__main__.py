@@ -1,6 +1,6 @@
-from datetime import date
-from person import Person
-from tree import Tree
+____ datetime ______ date
+____ person ______ Person
+____ tree ______ Tree
 
 def main():
     hitchhikers = Tree([

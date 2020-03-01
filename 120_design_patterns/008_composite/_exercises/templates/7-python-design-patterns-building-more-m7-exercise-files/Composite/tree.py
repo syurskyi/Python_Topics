@@ -1,7 +1,7 @@
-from collections import Iterable
-from functools import reduce
-from datetime import date
-from abs_composite import AbsComposite
+____ collections ______ Iterable
+____ functools ______ reduce
+____ datetime ______ date
+____ abs_composite ______ AbsComposite
 
 class Tree(Iterable, AbsComposite):
 

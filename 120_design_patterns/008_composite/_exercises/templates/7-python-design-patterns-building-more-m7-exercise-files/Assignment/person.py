@@ -1,4 +1,4 @@
-from abs_composite import AbsComposite
+____ abs_composite ______ AbsComposite
 
 class Person(AbsComposite):
 

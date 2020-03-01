@@ -1,32 +1,32 @@
-from datetime import date
-from person import Person
-from tree import Tree
-
-def main():
-    hitchhikers = Tree([
-        Person('Trillian', date(1970, 3, 14)),
-        Person('Arthur', date(1965, 7, 4)),
-        Person('Ford', date(1995, 2, 2)),
-        Person('Zaphod', date(1997, 5, 1)),
-        Person('Douglas', date(1999, 4, 2))
-    ])
-
-    singles = Tree([
-        Person('Marvin', date(1991, 1, 1)),
-        Person('Slarti', date(1993, 9, 9))
-    ])
-
-    loner = Person('Dirk', date(1990, 6, 6))
-
-    tree1 = Tree([hitchhikers])
-    tree2 = Tree([singles, loner])
-    tree3 = Tree([tree1, tree2])
-
-
-    inheritance = 314159.36
-
-    for tree in tree1, tree2, tree3:
-        tree.distribute_inheritance(inheritance)
-
-if __name__ == '__main__':
-    main()
+# ____ d_d_ ______ d..
+# ____ p.. ______ P..
+# ____ t.. ______ T..
+#
+# ___ main
+#     hitchhikers = T..||
+#         P..('Trillian', d..(1970, 3, 14)),
+#         P..('Arthur', d..(1965, 7, 4)),
+#         P..('Ford', d..(1995, 2, 2)),
+#         P..('Zaphod', d..(1997, 5, 1)),
+#         P..('Douglas', d..(1999, 4, 2))
+#     ||
+#
+#     singles = T..||
+#         P..('Marvin', d..(1991, 1, 1)),
+#         P..('Slarti', d..(1993, 9, 9))
+#     ])
+#
+#     loner = P..('Dirk', d..(1990, 6, 6))
+#
+#     tree1 = T.. h..
+#     tree2 = T.. s... l..
+#     tree3 = T.. tree1 tree2
+#
+#
+#     inheritance = 314159.36
+#
+#     ___ tree __ _1 _2 _3
+#         ?.d_i.. i...
+#
+# __ _______ __ ______
+#     ?

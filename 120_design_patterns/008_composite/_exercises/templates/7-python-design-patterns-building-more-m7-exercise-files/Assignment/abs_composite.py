@@ -1,4 +1,4 @@
-import abc
+______ abc
 
 class AbsComposite(metaclass=abc.ABCMeta):
 
