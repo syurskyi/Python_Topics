@@ -11,7 +11,7 @@ The client interacts with the interface class, and the interface class in turn
 Adapter makes things work after they're designed; Bridge makes them work before
 they are.
 """
-from abc import ABC, abstractmethod
+____ abc ______ ABC, abstractmethod
 
 
 # Abstract Interface (aka Handle) used by the client
@@ -118,7 +118,7 @@ def main():
 
     # in a real world scenario, we could perform A/B testing of our website by
     # choosing a random implementation
-    import random
+    ______ random
 
     impl = random.choice([ImplementationA(), ImplementationB()])
     print(FreeWebsite(impl))

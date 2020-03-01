@@ -1,5 +1,3 @@
-
-
 # Implementor
 class DrawingAPI:
     def drawCircle(x, y, radius):
