@@ -1,9 +1,9 @@
-from OCP.Applicants.IApplicantModel import IApplicantModel
-
-
-class IAccounts:
-
-	@staticmethod
-	def create(person: IApplicantModel):
-		# raise NotImplementedError('Implement create method')
-		pass
+# ____ ?.App__.I... ________ I..
+#
+#
+# c_ IAccounts
+#
+# 	?s...
+# 	___ create person I..
+# 		# raise NotImplementedError('Implement create method')
+# 		p...

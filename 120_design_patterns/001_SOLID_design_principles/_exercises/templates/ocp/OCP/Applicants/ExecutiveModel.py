@@ -1,24 +1,24 @@
-from OCP.Accounts.ExecutiveAccounts import ExecutiveAccounts
-from OCP.Applicants.IApplicantModel import IApplicantModel
-
-
-class ExecutiveModel(IApplicantModel):
-
-	def __init__(self):
-		self.accounts = ExecutiveAccounts()
-
-	@property
-	def first_name(self) -> str:
-		return self.firstName
-
-	@first_name.setter
-	def first_name(self, firstName: str):
-		self.firstName = firstName
-
-	@property
-	def last_name(self) -> str:
-		return self.lastName
-
-	@last_name.setter
-	def last_name(self, lastName: str):
-		self.lastName = lastName
+# ____ ?.Ac___.E... ______ E..
+# ____ ?.Ap___.I.. ______ I..
+#
+#
+# c_ ExecutiveModel I..
+#
+# 	___ -
+# 		?accounts _ E..
+#
+# 	?p..
+# 	___ first_name __ ?
+# 		r_ ?fN..
+#
+# 	??.?
+# 	___ first_name firstName ?
+# 		?  ?
+#
+# 	?p..
+# 	___ last_name __ ?:
+# 		r_ ?lN..
+#
+# 	??.?
+# 	___ last_name lastName ?
+# 		?  ?

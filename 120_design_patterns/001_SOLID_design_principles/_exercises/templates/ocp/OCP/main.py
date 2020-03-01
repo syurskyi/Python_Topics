@@ -1,40 +1,40 @@
-from OCP.Applicants.ExecutiveModel import ExecutiveModel
-from OCP.Applicants.PersonModel import PersonModel
-from OCP.Applicants.ManagerModel import ManagerModel
-
-
-if __name__ == '__main__':
-
-	person1 = PersonModel()
-	person2 = ManagerModel()
-	person3 = ExecutiveModel()
-	person4 = ManagerModel()
-
-	person1.first_name = 'Harry'
-	person1.last_name = 'Potter'
-
-	person2.first_name = 'Hermoine'
-	person2.last_name = 'Granger'
-
-	person3.first_name = 'Ron'
-	person3.last_name = 'Weisley'
-
-	person4.first_name = 'Ron'
-	person4.last_name = 'Weisley'
-
-	applicants = [person1, person2, person3, person4]
-
-	employees = list()
-
-	for person in applicants:
-		try:
-			employees.append(person.accounts.create(person))
-		except Exception as e:
-			print(e)
-			print(person)
-
-	for emp in employees:
-		try:
-			print("{} {} : {} : IsManager {} : IsExecutive {}".format(emp.first_name, emp.last_name, emp.email, emp.is_manager, emp.is_executive))
-		except Exception as e:
-			print(e)
+# ____ ?.Ap__.E.. ______ E..
+# ____ ?.Ap__.P.. ______ P...
+# ____ ?.Ap__.M.. ______ M...
+#
+#
+# __ ______ __ ______
+#
+# 	person1 _ P..
+# 	person2 _ M..
+# 	person3 _ E..
+# 	person4 _ M..
+#
+# 	_1.f.. _ 'Harry'
+# 	_1.l.. _ 'Potter'
+#
+# 	_2.f.. _ 'Hermoine'
+# 	_2.l.. _ 'Granger'
+#
+# 	_3.f.. _ 'Ron'
+# 	_3.l.. _ 'Weisley'
+#
+# 	_4.f.. _ 'Ron'
+# 	_4.l.. _ 'Weisley'
+#
+# 	applicants _ _1, _2, _3, _4
+#
+# 	employees _ li..
+#
+# 	___ person __ a..
+# 		___
+# 			e__.ap.. ?.a__.cr.. ?
+# 		______ E.. __ e
+# 			print ?
+# 			print ?
+#
+# 	___ emp __ e..
+# 		___
+# 			print("@ @ : @ : IsManager @ : IsExecutive @".f___ ?.f.. ?.l.. ?.e.. ?.i_m.. ?.i_e..
+# 		______ E.. __ e
+# 			print ?

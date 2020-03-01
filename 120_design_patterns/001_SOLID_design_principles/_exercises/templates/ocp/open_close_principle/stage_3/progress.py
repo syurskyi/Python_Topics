@@ -1,8 +1,8 @@
-from file import File
-from song import Song
-from measurable import Measurable
-
-
-class Progress:
-    def getSentLengthPercentage(measurable: Measurable) -> float:
-        return measurable.getSentLengthPercentage()
+# ____ f.. ______ F..
+# ____ s.. ______ S..
+# ____ m.. ______ M..
+#
+#
+# c_ Progress
+#     ___ getSentLengthPercentage measurable M.. __ fl..
+#         r_ ?.gSLP..

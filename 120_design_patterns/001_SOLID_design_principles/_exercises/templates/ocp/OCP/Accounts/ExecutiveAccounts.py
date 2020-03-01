@@ -1,17 +1,17 @@
-from OCP.Accounts.IAccounts import IAccounts
-from OCP.Applicants.IApplicantModel import IApplicantModel
-from OCP.Applicants.EmployeeModel import EmployeeModel
-
-class ExecutiveAccounts(IAccounts):
-
-	@staticmethod
-	def create(person: IApplicantModel) -> EmployeeModel:
-		output = EmployeeModel()
-		output.first_name = person.first_name
-		output.last_name = person.last_name
-		output.email = "{}.{}@ocpcorp.com".format(output.first_name, output.last_name)
-
-		output.is_executive = True
-		output.is_manager = True
-
-		return output
+# ____ ?.Ac___.I..______ I..
+# ____ ?.Ap___.I... ______ I..
+# ____ ?.Ap___.E.. ______ E..
+#
+# c_ ExecutiveAccounts I..
+#
+# 	?s..
+# 	___ create person I.. __ E..
+# 		output _ E..
+# 		?.first_name _ p__.?
+# 		?.last_name _ p__.?
+# 		?.email _ "@.@@ocpcorp.com".f.. ?.f.. ?.l..
+#
+# 		?.i_e.. _ T..
+# 		?.i_m.. _ T..
+#
+# 		r_ ?

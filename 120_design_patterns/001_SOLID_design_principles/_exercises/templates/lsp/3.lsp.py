@@ -54,7 +54,7 @@
 #
 # c_    ___ leg_count
 #         p..
-# 
+#
 #
 # """
 # When it’s passed to the animal_leg_count function, it returns the number of legs
