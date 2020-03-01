@@ -1,71 +1,71 @@
-____ abc ______ ABC
-____ collections.abc ______ Iterable
-
-
-class Connectable(Iterable, ABC):
-    def connect_to(self, other):
-        if self == other:
-            return
-
-        for s in self:
-            for o in other:
-                s.outputs.append(o)
-                o.inputs.append(s)
-
-
-class Neuron(Connectable):
-    def __init__(self, name):
-        self.name = name
-        self.inputs = []
-        self.outputs = []
-
-    # def connect_to(self, other):
-    #     self.outputs.append(other)
-    #     other.inputs.append(self)
-
-    def __iter__(self):
-        yield self
-
-    def __str__(self):
-        return f'{self.name}, {len(self.inputs)} inputs, {len(self.outputs)} outputs'
-
-
-class NeuronLayer(list, Connectable):
-    def __init__(self, name, count):
-        super().__init__()
-        self.name = name
-        for x in range(0, count):
-            self.append(Neuron(f'{name}-{x}'))
-
-    def __str__(self):
-        return f'{self.name} with {len(self)} neurons'
-
-
-def connect_to(self, other):
-    if self == other:
-        return
-
-    for s in self:
-        for o in other:
-            s.outputs.append(o)
-            o.inputs.append(s)
-
-
-if __name__ == '__main__':
-    neuron1 = Neuron('n1')
-    neuron2 = Neuron('n2')
-    layer1 = NeuronLayer('L1', 3)
-    layer2 = NeuronLayer('L2', 4)
-
-    # Neuron.connect_to = connect_to
-    # NeuronLayer.connect_to = connect_to
-
-    neuron1.connect_to(neuron2)
-    neuron1.connect_to(layer1)
-    layer1.connect_to(neuron2)
-    layer1.connect_to(layer2)
-
-    print(neuron1)
-    print(neuron2)
-    print(layer1)
-    print(layer2)
+# ____ a.. ______ A...
+# ____ col___.a.. ______ It..
+#
+#
+# c_ Connectable It.. A..
+#     ___ connect_to  other
+#         __ _____ __ ?
+#             r_
+#
+#         ___ s in ____
+#             ___ o __ ?
+#                 s.o__.ap.. ?
+#                 o.i__.ap.. ?
+#
+#
+# c_ Neuron C...
+#     ___ - name
+#         ?  ?
+#         inputs     # list
+#         outputs    # list
+#
+#     # ___ connect_to(self, other):
+#     #     self.outputs.ap..(other)
+#     #     other.inputs.ap..(self)
+#
+#     ___ -it
+#         y... ____
+#
+#     ___ -s
+#         r_ _*|n.. |l.. in.. inp.. |le. o.. outputs'
+#
+#
+# c_ NeuronLayer list C..
+#     ___ - name count
+#         s___ . -
+#         ?  ?
+#         ___ x _ ra.. 0 ?
+#             .ap.. N.. _*|n..-|x '
+#
+#     ___ -s
+#         r_ _*|n.. with |le. ____ neurons'
+#
+#
+# ___ connect_to other
+#     __ ____ __ ?
+#         r_
+#
+#     ___ s in ____
+#         ___ o in ?
+#             s.o___.ap.. ?
+#             o.i___.ap.. ?
+#
+#
+# __ _______ __ ______
+#     neuron1 = N.. 'n1'
+#     neuron2 = N.. 'n2'
+#     layer1 = NL.. 'L1', 3
+#     layer2 = NL.. 'L2', 4
+#
+#     # Neuron.connect_to = connect_to
+#     # NeuronLayer.connect_to = connect_to
+#
+#     _1.c.. _2
+#     n_1.c___ l_1
+#     l_1.c___ n_2
+#     l_1.c___l_2
+#
+#     print n_1
+#     print n_2
+#     print l_1
+#     print l_2
