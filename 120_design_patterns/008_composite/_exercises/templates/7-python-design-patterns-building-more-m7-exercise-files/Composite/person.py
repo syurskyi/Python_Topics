@@ -1,10 +1,10 @@
-____ abs_composite ______ AbsComposite
-
-class Person(AbsComposite):
-
-    def __init__(self, name, birthdate):
-        self.name = name
-        self.birthdate = birthdate
-
-    def get_oldest(self):
-        return self
+# ____ a_c.. ______ AC..
+#
+# c_ Person AC..
+#
+#     ___ - name birthdate
+#         ?  ?
+#         ?  ?
+#
+#     ___ get_oldest
+#         r_ ____
