@@ -1,65 +1,65 @@
-import datetime
-
-from ISP.IBorrowableDVD import IBorrowableDVD
-
-
-class DVD(IBorrowableDVD):
-
-	@property
-	def library_id(self) -> str:
-		return self.libraryId
-
-	@library_id.setter
-	def library_id(self, libraryId: str):
-		self.libraryId = libraryId
-
-	@property
-	def check_out_duration_in_days(self) -> int:
-		return self.check_out_duration_days
-
-	@check_out_duration_in_days.setter
-	def check_out_duration_in_days(self, num_days: int):
-		self.check_out_duration_days = num_days
-
-	@property
-	def borrower(self) -> str:
-		return self.borrowerName
-
-	@borrower.setter
-	def borrower(self, borrowerName: str):
-		self.borrowerName = borrowerName
-
-	@property
-	def borrow_date(self) -> datetime.datetime:
-		return self.borrowDate
-
-	@borrow_date.setter
-	def borrow_date(self, borrowDate: str):
-		self.borrowDate = borrowDate
-
-	def check_out(self, borrower: str):
-		self.borrower = borrower
-		self.borrowDate = datetime.datetime.now()
-
-	def check_in(self):
-		self.borrower = ""
-
-	def get_due_date(self) -> datetime.datetime:
-		final_date = self.borrowDate + datetime.timedelta(days=self.check_out_duration_in_days)
-		return final_date
-
-	@property
-	def run_time_in_minutes(self) -> int:
-		return self.run_time
-
-	@run_time_in_minutes.setter
-	def run_time_in_minutes(self, run_time: int):
-		self.run_time = run_time
-
-	@property
-	def actors(self) -> list:
-		return self.actorNames
-
-	@actors.setter
-	def actors(self, actorNames: list):
-		self.actorNames = actorNames
+# ______ datetime
+#
+# ____ I__.IB..D.. ______ IB..D..
+#
+#
+# c_ DVD(IB..D..
+#
+# 	?p..
+# 	___ library_id __ ?:
+# 		r_ lI.
+#
+# 	??.?
+# 	___ library_id libraryId ?
+# 		??  ?
+#
+# 	?p..
+# 	___ check_out_duration_in_days __ ?
+# 		r_ check_out_duration_days
+#
+# 	??.?
+# 	___ check_out_duration_in_days num_days ?
+# 		?c.. _ n_d..
+#
+# 	?p..
+# 	___ borrower __ ?:
+# 		r_ bN..
+#
+# 	??.?
+# 	___ borrower borrowerName ?
+# 		??   ?
+#
+# 	?p..
+# 	___ borrow_date __ d_t_.d_t_
+# 		r_ bD..
+#
+# 	??.?
+# 	___ borrow_date borrowDate ?
+# 		??  ?
+#
+# 	___ check_out borrower ?
+# 		??  ?
+# 		?bD.. _ d_t_.d_t_.n..
+#
+# 	___ check_in
+# 		?b.. _ ""
+#
+# 	___ get_due_date __ d_t_.d_t_
+# 		final_date _ bD.. + d_t_.ti..de.. days_?ch..
+# 		r_ ?
+#
+# 	?p..
+# 	___ run_time_in_minutes __ ?
+# 		r_ r_t..
+#
+# 	??.?
+# 	___ run_time_in_minutes run_time ?
+# 		??  ?
+#
+# 	?p..
+# 	___ actors __ li..
+# 		r_ aN..
+#
+# 	??.?
+# 	___ actors actorNames li..
+# 		??.?

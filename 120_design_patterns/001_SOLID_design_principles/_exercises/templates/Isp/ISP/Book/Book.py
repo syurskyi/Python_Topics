@@ -1,73 +1,73 @@
-import datetime
-
-from ISP.IBorrowableBook import IBorrowableBook
-
-
-class Book(IBorrowableBook):
-
-	@property
-	def library_id(self) -> str:
-		return self.libraryId
-
-	@library_id.setter
-	def library_id(self, libraryId: str):
-		self.libraryId = libraryId
-
-	@property
-	def title(self) -> str:
-		return self.title
-
-	@title.setter
-	def title(self, titleName: str):
-		self.titleName = titleName
-
-	@property
-	def author(self) -> str:
-		return self.authorName
-
-	@author.setter
-	def author(self, authorName: str):
-		self.authorName = authorName
-
-	@property
-	def pages(self) -> int:
-		return self.num_pages
-
-	@pages.setter
-	def pages(self, num_pages: int):
-		self.num_pages = num_pages
-
-	@property
-	def check_out_duration_in_days(self) -> int:
-		return self.check_out_duration_days
-
-	@check_out_duration_in_days.setter
-	def check_out_duration_in_days(self, num_days: int):
-		self.check_out_duration_days = num_days
-
-	@property
-	def borrower(self) -> str:
-		return self.borrowerName
-
-	@borrower.setter
-	def borrower(self, borrowerName: str):
-		self.borrowerName = borrowerName
-
-	@property
-	def borrow_date(self) -> datetime.datetime:
-		return self.borrowDate
-
-	@borrow_date.setter
-	def borrow_date(self, borrowDate: str):
-		self.borrowDate = borrowDate
-
-	def check_out(self, borrower: str):
-		self.borrower = borrower
-		self.borrowDate = datetime.datetime.now()
-
-	def check_in(self):
-		self.borrower = ""
-
-	def get_due_date(self) -> datetime.datetime:
-		final_date = self.borrowDate + datetime.timedelta(days=self.check_out_duration_in_days)
-		return final_date
+# ______ datetime
+#
+# ___ ISP.IBorrowableBook ______ IB..
+#
+#
+# c_ Book IB..
+#
+# 	?p..
+# 	___ library_id __ ?
+# 		r_ lI..
+#
+# 	??.?
+# 	___ library_id  libraryId ?
+# 		self.libraryId = libraryId
+#
+# 	?p..
+# 	___ title __ ?
+# 		r_ ti..
+#
+# 	??.?
+# 	___ title titleName ?
+# 		??  ?
+#
+# 	?p..
+# 	___ author __ ?
+# 		r_ aN..
+#
+# 	??.?
+# 	___ author authorName ?
+# 		??  ?
+#
+# 	?p..
+# 	___ pages __ ?
+# 		r_ n_p..
+#
+# 	??.?
+# 	___ pages num_pages ?
+# 		??   ?
+#
+# 	?p..
+# 	___ check_out_duration_in_days __ ?
+# 		r_ check_out_duration_days
+#
+# 	??.?
+# 	___ check_out_duration_in_days num_days: ?
+# 		ch... _ n_d..
+#
+# 	?p..
+# 	___ borrower __ ?
+# 		r_ bN..
+#
+# 	??.?
+# 	___ borrower borrowerName ?
+# 		??  ?
+#
+# 	?p..
+# 	___ borrow_date __ d_t_.d_t_
+# 		r_ bD..
+#
+# 	??.?
+# 	___ borrow_date borrowDate ?
+# 		??  ?
+#
+# 	___ check_out borrower ?
+# 		??  ?
+# 		?bD.. _ d_t_.d_t_.n..
+#
+# 	___ check_in
+# 		?bo.. = ""
+#
+# 	___ get_due_date __ d_t_.d_t_
+# 		final_date _ bD.. + d_t_.ti..de.. days_?ch...
+# 		r_ ?

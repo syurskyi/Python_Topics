@@ -1,75 +1,81 @@
-# -*- coding: utf-8 -*-
-from abc import ABCMeta, abstractmethod
-
-# Abstract Class
-
-class SpeedControl(object):
-
-    @abstractmethod
-    def start_engine(self): raise NotImplementedError
-
-    @abstractmethod
-    def accelerate(self): raise NotImplementedError
-
-    @abstractmethod
-    def brake(self): raise NotImplementedError
-
-    @abstractmethod
-    def change_gear(self): raise NotImplementedError
-
-class RadioCd(object):
-
-    @abstractmethod
-    def stop_radio(self): raise NotImplementedError
-
-    @abstractmethod
-    def eject_cd(self): raise NotImplementedError
-
-# implements
-
-class CarSpeedControl(SpeedControl):
-
-    def start_engine(self):
-        print('start engine')
-
-    def accelerate(self):
-        print('accelerate')
-
-    def brake(self):
-        print('brake')
-
-    def change_gear(self):
-        print('change gear')
-
-class CarRadioCd(RadioCd):
-
-    def stop_radio(self):
-        print('stop radio')
-
-    def eject_cd(self):
-        print('eject cd')
-
-# Decorator
-
-def validate_type_hinting(func):
-    def inner(*argv):
-        if not issubclass(type(argv[1]), SpeedControl) : print("%s is a type %s, the function need a SpeedControl type" % (argv[1], type(argv[1]))); exit(0)
-        if not issubclass(type(argv[2]), RadioCd) : print("%s is a type %s, the function need a RadioCd type" % (argv[2], type(argv[2]))); exit(0)
-        return func(*argv)
-    return inner
-
-# Vehicle
-
-class Car(object):
-
-    @validate_type_hinting
-    def __init__(self, speed_control, radio_cd):
-        self.speed_control = speed_control
-        self.radio_cd = radio_cd
-
-if __name__ == '__main__':
-    speed_control = CarSpeedControl()
-    radio_cd = CarRadioCd()
-    car = Car(speed_control, radio_cd)
-    car.speed_control.start_engine()
-    car.speed_control.accelerate()
+# # -*- coding: utf-8 -*-
+# ___ a ______ A.. a..
+#
+# # Abstract Class
+#
+# c_ SpeedControl o..
+#
+#     ??
+#     ___ start_engine
+#         r_ N..
+#
+#     ??
+#     ___ accelerate
+#         r_ N..
+#
+#     ??
+#     ___ brake
+#         r_ N..
+#
+#     ??
+#     ___ change_gear
+#         r_ N..
+#
+# c_ RadioCd o..
+#
+#     ??
+#     ___ stop_radio
+#         r_ N..
+#
+#     ??
+#     ___ eject_cd
+#         r_ N..
+#
+# # implements
+#
+# c_ CarSpeedControl S..
+#
+#     ___ start_engine
+#         print('start engine')
+#
+#     ___ accelerate
+#         print('accelerate')
+#
+#     ___ brake
+#         print('brake')
+#
+#     ___ change_gear
+#         print('change gear')
+#
+# c_ CarRadioCd R..
+#
+#     ___ stop_radio
+#         print('stop radio')
+#
+#     ___ eject_cd
+#         print('eject cd')
+#
+# # Decorator
+#
+# ___ validate_type_hinting func
+#     ___ inner(*argv):
+#         __ no. iss.. ty.. ar.. 1 S... : print("@ is a type @, the function need a SpeedControl type"  ar.. 1 ty.. ar.. 1||||; exit(0)
+#         __ no. iss.. ty.. ar.. 2 R... : print("@ is a type @, the function need a RadioCd type"  ar.. 2 ty.. ar.. 2||||; exit(0)
+#         r_ f.. $
+#     r_ i..
+#
+# # Vehicle
+#
+# c_ Car o..
+#
+#     ?v...
+#     ___ - speed_control radio_cd
+#         ??  ?
+#         ??  ?
+#
+# __ ______ __ _______
+#     speed_control = CSC..
+#     radio_cd = CRC...
+#     car = C.. ?  ?
+#     ?.s_c_.s_e..
+#     ?.s_c_.a...

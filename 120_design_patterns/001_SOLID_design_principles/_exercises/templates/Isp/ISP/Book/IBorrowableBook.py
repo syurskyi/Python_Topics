@@ -1,6 +1,6 @@
-from ISP.Book.IBook import IBook
-from ISP.GeneralInterface.IBorrowable import IBorrowable
-
-
-class IBorrowableBook(IBorrowable, IBook):
-	raise NotImplementedError
+# ___ I__.B__.IB.. ______ IB..
+# ___ I__.G__.IB.. ______ IB..
+#
+#
+# c_ IBorrowableBook(IB.. IB..
+# 	r_ N...

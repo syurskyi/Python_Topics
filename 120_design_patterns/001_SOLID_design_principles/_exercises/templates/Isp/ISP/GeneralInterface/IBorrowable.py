@@ -1,28 +1,28 @@
-import datetime
-
-
-class IBorrowable:
-	@property
-	def borrow_date(self) -> datetime.datetime:
-		raise NotImplementedError
-
-	@borrow_date.setter
-	def borrow_date(self, borrowDate: datetime.datetime):
-		raise NotImplementedError
-
-	@property
-	def check_out_duration_in_days(self) -> int:
-		raise NotImplementedError
-
-	@check_out_duration_in_days.setter
-	def check_out_duration_in_days(self, days: int):
-		raise NotImplementedError
-
-	def check_in(self):
-		raise NotImplementedError
-
-	def check_out(self, borrower: str):
-		raise NotImplementedError
-
-	def get_due_date(self) -> datetime.datetime:
-		raise NotImplementedError
+# ______ d_t_
+#
+#
+# c_ IBorrowable
+# 	?p...
+# 	___ borrow_date __ d_t_.d_t_
+# 		r_ N...
+#
+# 	??.?
+# 	___ borrow_date borrowDate d_t_.d_t_
+# 		r_ N...
+#
+# 	?p...
+# 	___ check_out_duration_in_days __ ?
+# 		r_ N...
+#
+# 	??.?
+# 	___ check_out_duration_in_days days ?
+# 		r_ N...
+#
+# 	___ check_in:
+# 		r_ N...
+#
+# 	___ check_out borrower ?
+# 		r_ N...
+#
+# 	___ get_due_date __ d_t_.d_t_
+# 		r_ N...

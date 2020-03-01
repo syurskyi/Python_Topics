@@ -1,28 +1,28 @@
-from ISP.GeneralInterface.ILibraryItem import ILibraryItem
-
-
-class IDVD(ILibraryItem):
-
-	@property
-	def actors(self) -> list:
-		raise NotImplementedError
-
-	@actors.setter
-	def actors(self, actorNames: list):
-		raise NotImplementedError
-
-	@property
-	def run_time_in_minutes(self) -> int:
-		raise NotImplementedError
-
-	@run_time_in_minutes.setter
-	def run_time_in_minutes(self, run_time: int):
-		raise NotImplementedError
-
-	@property
-	def title(self) -> str:
-		raise NotImplementedError
-
-	@title.setter
-	def title(self, titleName: str):
-		raise NotImplementedError
+# ____ I__.G___.IL.. ______ IL..
+#
+#
+# c_ IDVD(IL..
+#
+# 	?p...
+# 	___ actors __ ?
+# 		r_  N...
+#
+# 	??.?
+# 	___ actors  actorNames ?
+# 		r_  N...
+#
+# 	?p...
+# 	___ run_time_in_minutes __ ?
+# 		r_  N...
+#
+# 	??.?
+# 	___ run_time_in_minutes run_time ?
+# 		r_  N...
+#
+# 	?p...
+# 	___ title __ ?
+# 		r_  N...
+#
+# 	??.?
+# 	___ title titleName ?
+# 		r_  N...

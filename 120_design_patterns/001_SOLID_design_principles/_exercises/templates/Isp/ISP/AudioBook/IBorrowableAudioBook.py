@@ -1,6 +1,6 @@
-from ISP.AudioBook.IAudioBook import IAudioBook
-from ISP.GeneralInterface.IBorrowable import IBorrowable
-
-
-class IBorrowableAudioBook(IBorrowable, IAudioBook):
-	raise NotImplementedError
+# ___ ISP.AudioBook.IAudioBook ______ IA..
+# ___ ISP.GeneralInterface.IBorrowable ______ IB..
+#
+#
+# c_ IBorrowableAudioBook IB.. IA..
+# 	r_ N..

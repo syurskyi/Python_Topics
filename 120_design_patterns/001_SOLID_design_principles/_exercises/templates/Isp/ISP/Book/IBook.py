@@ -1,20 +1,20 @@
-from ISP.ILibraryItem import ILibraryItem
-
-
-class IBook(ILibraryItem):
-
-	@property
-	def pages(self) -> int:
-		raise NotImplementedError
-
-	@pages.setter
-	def pages(self, num_pages: int):
-		raise NotImplementedError
-
-	@property
-	def title(self) -> str:
-		raise NotImplementedError
-
-	@title.setter
-	def title(self, titleName: str):
-		raise NotImplementedError
+# ___ ISP.IL.. ______ IL..
+#
+#
+# c_ IBookIL..
+#
+# 	?p..
+# 	___ pages -> ?
+# 		r_ N...
+#
+# 	??.?
+# 	___ pages num_pages ?
+# 		r_ N...
+#
+# 	?p..
+# 	___ title __ ?
+# 		r_ N...
+#
+# 	??.?
+# 	___ title titleName ?
+# 		r_ N...

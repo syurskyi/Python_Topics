@@ -1,89 +1,89 @@
-from abc import abstractmethod
-
-
-class Machine:
-    def print(self, document):
-        raise NotImplementedError()
-
-    def fax(self, document):
-        raise NotImplementedError()
-
-    def scan(self, document):
-        raise NotImplementedError()
-
-
-# ok if you need a multifunction device
-class MultiFunctionPrinter(Machine):
-    def print(self, document):
-        pass
-
-    def fax(self, document):
-        pass
-
-    def scan(self, document):
-        pass
-
-
-class OldFashionedPrinter(Machine):
-    def print(self, document):
-        # ok - print stuff
-        pass
-
-    def fax(self, document):
-        pass  # do-nothing
-
-    def scan(self, document):
-        """Not supported!"""
-        raise NotImplementedError('Printer cannot scan!')
-
-
-class Printer:
-    @abstractmethod
-    def print(self, document): pass
-
-
-class Scanner:
-    @abstractmethod
-    def scan(self, document): pass
-
-
-# same for Fax, etc.
-
-class MyPrinter(Printer):
-    def print(self, document):
-        print(document)
-
-
-class Photocopier(Printer, Scanner):
-    def print(self, document):
-        print(document)
-
-    def scan(self, document):
-        pass  # something meaningful
-
-
-class MultiFunctionDevice(Printer, Scanner):  # , Fax, etc
-    @abstractmethod
-    def print(self, document):
-        pass
-
-    @abstractmethod
-    def scan(self, document):
-        pass
-
-
-class MultiFunctionMachine(MultiFunctionDevice):
-    def __init__(self, printer, scanner):
-        self.printer = printer
-        self.scanner = scanner
-
-    def print(self, document):
-        self.printer.print(document)
-
-    def scan(self, document):
-        self.scanner.scan(document)
-
-
-printer = OldFashionedPrinter()
-printer.fax(123)  # nothing happens
-printer.scan(123)  # oops!
+# ____ a.. _______ a..
+#
+#
+# c_ Machine:
+#     ___ print document
+#         r_ N...
+#
+#     ___ fax document
+#         r_ N...
+#
+#     ___ scan document
+#         r_ N...
+#
+#
+# # ok if you need a multifunction device
+# c_ MultiFunctionPrinter M..
+#     ___ print document
+#         p..
+#
+#     ___ fax document
+#         p..
+#
+#     ___ scan document
+#         p..
+#
+#
+# c_ OldFashionedPrinter(M..
+#     ___ print document
+#         # ok - print stuff
+#         p..
+#
+#     ___ fax document
+#         p..  # do-nothing
+#
+#     ___ scan document
+#         """Not supported!"""
+#         r_ N...('Printer cannot scan!')
+#
+#
+# c_ Printer
+#     ?a..
+#     ___ print document p..
+#
+#
+# c_ Scanner:
+#     ?a..
+#     ___ scan document p..
+#
+#
+# # same for Fax, etc.
+#
+# c_ MyPrinter Printer
+#     ___ print document
+#         print ?
+#
+#
+# c_ Photocopier P.. S..
+#     ___ print document
+#         print ?
+#
+#     ___ scan document
+#         p..  # something meaningful
+#
+#
+# c_ MultiFunctionDevice P.. S..  # , Fax, etc
+#     ?a..
+#     ___ print document
+#         p..
+#
+#     ?a..
+#     ___ scan document
+#         p..
+#
+#
+# c_ MultiFunctionMachine M..
+#     ___ - printer scanner
+#         ??  ?
+#         ??  ?
+#
+#     ___ print document
+#         p__.p.. ?
+#
+#     ___ scan document
+#         s__.s.. ?
+#
+#
+# printer = OldFashionedPrinter()
+# printer.fax(123)  # nothing happens
+# printer.scan(123)  # oops!

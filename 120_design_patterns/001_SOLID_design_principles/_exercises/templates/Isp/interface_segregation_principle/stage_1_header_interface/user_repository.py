@@ -1,12 +1,12 @@
-from abc import ABC
-
-
-class UserRepository(ABC):
-    def save(self, user) -> None:
-        raise NotImplementedError
-
-    def commit(self, user) -> None:
-        raise NotImplementedError
-
-    def saveAll(self, users) -> None:
-        raise NotImplementedError
+# ___ a.. ______ A..
+#
+#
+# c_ UserRepository A..
+#     ___ save ___ user __ N..
+#         r_ N...
+#
+#     ___ commit ___ user __ N..
+#         r_ N...
+#
+#     ___ saveAll ___ users __ N..
+#         r_ N...

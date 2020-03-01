@@ -1,6 +1,6 @@
-from ISP.GeneralInterface.IBorrowable import IBorrowable
-from ISP.IDVD import IDVD
-
-
-class IBorrowableDVD(IDVD, IBorrowable):
-	raise NotImplementedError
+# ____ I__.G___.IB... ______ IB..
+# ____ I__.ID.. ______ ID..
+#
+#
+# c_ IBorrowableDVD(ID.. IB..
+# 	r_ N..
