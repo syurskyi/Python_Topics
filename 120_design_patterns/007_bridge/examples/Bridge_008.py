@@ -5,10 +5,10 @@
 # Version 1.0
 #=======================================================================================================================
 from abc import ABCMeta, abstractmethod
-# 引入ABCMeta和abstractmethod来定义抽象类和抽象方法
+# Introduce ABCMeta and abstractmethod to define abstract classes and abstract methods
 
 class Shape(metaclass=ABCMeta):
-    """形状"""
+    """shape"""
 
     def __init__(self, color):
         self._color = color
@@ -18,29 +18,29 @@ class Shape(metaclass=ABCMeta):
         pass
 
     def getShapeInfo(self):
-        return self._color.getColor() + "的" + self.getShapeType()
+        return self._color.getColor() + "of" + self.getShapeType()
 
 
 class Rectange(Shape):
-    """矩形"""
+    """rectangle"""
 
     def __init__(self, color):
         super().__init__(color)
 
     def getShapeType(self):
-        return "矩形"
+        return "rectangle"
 
 class Ellipse(Shape):
-    """椭圆"""
+    """oval"""
 
     def __init__(self, color):
         super().__init__(color)
 
     def getShapeType(self):
-        return "椭圆"
+        return "oval"
 
 class Color(metaclass=ABCMeta):
-    """颜色"""
+    """colour"""
 
     @abstractmethod
     def getColor(self):
@@ -48,32 +48,32 @@ class Color(metaclass=ABCMeta):
 
 
 class Red(Color):
-    """红色"""
+    """red"""
 
     def getColor(self):
-        return "红色"
+        return "red"
 
 
 class Green(Color):
-    """绿色"""
+    """green"""
 
     def getColor(self):
-        return "绿色"
+        return "green"
 
 # Version 2.0
 #=======================================================================================================================
-# 代码框架
+# Code framework
 #==============================
 
 
-# 基于框架的实现
+# Framework-based implementation
 #==============================
 
 
 # Test
 #=======================================================================================================================
 
-def testShap():
+def Shap():
     redRect = Rectange(Red())
     print(redRect.getShapeInfo())
     greenRect = Rectange(Green())
@@ -85,4 +85,4 @@ def testShap():
     print(greenEllipse.getShapeInfo())
 
 
-testShap()
+Shap()
