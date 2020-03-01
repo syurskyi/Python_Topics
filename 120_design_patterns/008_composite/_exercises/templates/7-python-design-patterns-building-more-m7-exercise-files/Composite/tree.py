@@ -1,25 +1,25 @@
-____ collections ______ Iterable
-____ functools ______ reduce
-____ datetime ______ date
-____ abs_composite ______ AbsComposite
-
-class Tree(Iterable, AbsComposite):
-
-    def __init__(self, members):
-        self.members = members
-
-    def __iter__(self):
-        return iter(self.members)
-
-    def get_oldest(self):
-        def f(t1, t2):
-            t1_, t2_ = t1.get_oldest(), t2.get_oldest()
-            return t1_ if t1_.birthdate < t2_.birthdate else t2_
-        return reduce(f, self, NullPerson())
-
-class NullPerson(AbsComposite):
-    name = None
-    birthdate = date.max
-
-    def get_oldest(self):
-        return self
+# ____ col.. ______ It..
+# ____ fun.. ______ re..
+# ____ d_t_ ______ d..
+# ____ a_c.. ______ AC..
+#
+# c_ Tree It.. AC..
+#
+#     ___ - members
+#         ?  ?
+#
+#     ___ -i
+#         r_ it.. m..
+#
+#     ___ get_oldest
+#         ___ f t1, t2)
+#             t1_, t2_ _ _1.g_o_ _2.g_o..
+#             r_ t1_ __ _1_.b... < _2_.b.. _____ _2_
+#         r_ reduce f, ____ N...
+#
+# c_ NullPerson AC..
+#     name _ N..
+#     birthdate _ d__.ma.
+#
+#     ___ get_oldest
+#         r_ ____
