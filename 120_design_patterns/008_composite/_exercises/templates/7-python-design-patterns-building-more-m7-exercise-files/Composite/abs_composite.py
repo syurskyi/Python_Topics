@@ -1,7 +1,7 @@
-______ abc
+______ a..
 
-class AbsComposite(metaclass=abc.ABCMeta):
+c_ AbsComposite m...
 
-    @abc.abstractmethod
-    def get_oldest(self):
-        pass
+    ??.?
+    ___ get_oldest
+        p..
