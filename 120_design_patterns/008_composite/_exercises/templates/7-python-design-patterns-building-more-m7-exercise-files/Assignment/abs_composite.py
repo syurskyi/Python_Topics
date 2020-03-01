@@ -1,11 +1,11 @@
-______ abc
+______ a..
 
-class AbsComposite(metaclass=abc.ABCMeta):
+c_ AbsComposite m..
 
-    @abc.abstractmethod
-    def get_oldest(self):
-        pass
+    ??.?
+    ___ get_oldest
+        p..
 
-    @abc.abstractmethod
-    def distribute_inheritance(self, value):
-        pass
+    ??.?
+    ___ distribute_inheritance value
+        p..
