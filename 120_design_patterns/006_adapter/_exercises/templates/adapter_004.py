@@ -1,25 +1,25 @@
-class Adaptee:
-    def specific_request(self):
-        return 'Adaptee'
-
-class Adapter:
-    def __init__(self, adaptee):
-        self.adaptee = adaptee
-
-    def request(self):
-        return self.adaptee.specific_request()
-
-client = Adapter(Adaptee())
-print client.request()
-
-# --------- Second example (by Alex Martelli)------------
-
-class UppercasingFile:
-    def __init__(self, *a, **k):
-        self.f = file(*a, **k)
-
-    def write(self, data):
-        self.f.write(data.upper())
-
-    def __getattr__(self, name):
-        return getattr(self.f, name)
+# c_ Adaptee
+#     ___ specific_request
+#         r_ 'Adaptee'
+#
+# c_ Adapter
+#     ___ - adaptee
+#         ??  ?
+#
+#     ___ request
+#         r_ a___.s__
+#
+# client = A.. A..
+# print ?.r..
+#
+# # --------- Second example (by Alex Martelli)------------
+#
+# c_ UppercasingFile
+#     ___ - $ $$
+#         f _ file $ $$
+#
+#     ___ write data
+#         f.w.. ?.up..
+#
+#     ___ -g name
+#         r_ ge.. ?f ?
