@@ -1,6 +1,6 @@
 """Composite pattern
 """
-from abc import ABC, abstractmethod
+____ abc import ABC, abstractmethod
 
 
 class Component(ABC):
@@ -33,7 +33,7 @@ class Composite(Component):
         self.children = list()
 
     # we can design the "child management" interface here (we have safety,
-    # namely a client cannot append/remove a child from a Leaf), or design such
+    # namely a client cannot append/remove a child ____ a Leaf), or design such
     # interface in the Component class (we have transparency, but a client
     # could try to perform meaningless things like appending a node to a Leaf)
 
