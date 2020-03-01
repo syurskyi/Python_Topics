@@ -1,30 +1,30 @@
-____ collections ______ Iterable
-____ functools ______ reduce
-____ datetime ______ date
-____ abs_composite ______ AbsComposite
-
-class Tree(Iterable, AbsComposite):
-
-    def __init__(self, members):
-        self.members = members
-
-    def __iter__(self):
-        return iter(self.members)
-
-    def get_oldest(self):
-        def f(t1, t2):
-            t1_, t2_ = t1.get_oldest(), t2.get_oldest()
-            return t1_ if t1_.birthdate < t2_.birthdate else t2_
-        return reduce(f, self, NullPerson())
-
-    def distribute_inheritance(self, value):
-        portion = value / len(self.members)
-        for member in self.members:
-            member.distribute_inheritance(portion)
-
-class NullPerson(AbsComposite):
-    name = None
-    birthdate = date.max
-
-    def get_oldest(self):
-        return self
+# ____ col... ______ It...
+# ____ fun.. ______ re..
+# ____ d_t_ ______ d...
+# ____ a_c.. ______ AC..
+#
+# c_ Tree It.. AC..
+#
+#     ___ - members
+#         ?  ?
+#
+#     ___ -i
+#         r_ i.. m..
+#
+#     ___ get_oldest
+#         ___ f t1 t2
+#             t1_, t2_ _ t1.g_o.. t2.g_o..
+#             r_ t1_ __ t1_.b.. < t2_.b... _____ t2_
+#         r_ re... f _____ N...
+#
+#     ___ distribute_inheritance value
+#         portion _ va.. / le. m..
+#         ___ member __ m..
+#             ?.d_i.. p..
+#
+# c_ NullPerson AC..
+#     name _ N..
+#     birthdate _ d___.m..
+#
+#     ___ get_oldest
+#         r_ ____
