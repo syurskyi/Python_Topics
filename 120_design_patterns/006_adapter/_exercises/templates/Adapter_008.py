@@ -1,28 +1,28 @@
 #=======================================================================================================================
 from abc import ABCMeta, abstractmethod
-# 引入ABCMeta和abstractmethod来定义抽象类和抽象方法
+# Introduce ABCMeta and abstractmethod to define abstract classes and abstract methods
 
 class IHightPerson(metaclass=ABCMeta):
-    """接口类，提供空实现的方法，由子类去实现"""
+    """Interface class, which provides empty implementation methods, implemented by subclasses"""
 
     @abstractmethod
     def getName(self):
-        """获取姓名"""
+        """Get name"""
         pass
 
     @abstractmethod
     def getHeight(self):
-        """获取身高"""
+        """Get height"""
         pass
 
     @abstractmethod
     def appearance(self, person):
-        """外貌"""
+        """appearance"""
         pass
 
 
 class HighPerson(IHightPerson):
-    """个高的人"""
+    """Tall man"""
 
     def __init__(self, name):
         self.__name = name
@@ -34,11 +34,11 @@ class HighPerson(IHightPerson):
         return 170
 
     def appearance(self):
-        print(self.getName() + "身高" + str(self.getHeight()) + "，完美如你，天生的美女！")
+        print(self.getName() + "height" + str(self.getHeight()) + "，Perfect as you, born beauty!")
 
 
 class ShortPerson:
-    """个矮的人"""
+    """Short man"""
 
     def __init__(self, name):
         self.__name = name
@@ -54,7 +54,7 @@ class ShortPerson:
 
 
 class DecoratePerson(ShortPerson, IHightPerson):
-    """有高跟鞋搭配的人"""
+    """People with high heels"""
 
     def __init__(self, name):
         super().__init__(name)
@@ -66,48 +66,48 @@ class DecoratePerson(ShortPerson, IHightPerson):
         return super().getRealHeight() + super().getShoesHeight()
 
     def appearance(self):
-        print(self.getName() + "身高" + str(self.getHeight()) + ", 在高跟鞋的适配下，你身高不输高圆圆，气质不输范冰冰！")
+        print(self.getName() + "height" + str(self.getHeight()) + ", With the adaptation of high heels, your height is not less than Gao Yuanyuan, and your temperament is not less than Fan Bingbing!")
 
 
 class HeightMatch:
-    """身高匹配"""
+    """Height matching"""
 
     def __init__(self, person):
         self.__person = person
 
     def matching(self, person1):
-        """假设标准身高差为10厘米内"""
+        """Assuming standard height difference within 10 cm"""
         distance = abs(self.__person.getHeight() - person1.getHeight())
         isMatch = distance <= 10
-        print(self.__person.getName() + "和" + person1.getName() + "是否为情侣的标准身高差："
-              + ("是" if isMatch else "否") + ", 差值：" + str(distance))
+        print(self.__person.getName() + "with" + person1.getName() + "Whether it is the standard height difference of the couple："
+              + ("Yes" if isMatch else "否") + ", Difference:" + str(distance))
 
 
 class Hotel:
-    """(高级)酒店"""
+    """(Superior) Hotel"""
 
     def recruit(self, person):
         """
-        :param person: IHightPerson的对象
+        :param person: Object of IHightPerson
         """
         suitable = self.receptionistSuitable(person)
-        print(person.getName() + "是否适合做接待员：", "符合" if suitable else "不符合")
+        print(person.getName() + "Is it suitable to be a receptionist:", "meets the" if suitable else "incompatible")
 
     def receptionistSuitable(self, person):
         """
-        是否可以成为(高级酒店)接待员
-        :param person: IHightPerson的对象
-        :return: 是否符合做接待员的条件
+        s it possible to become a (premium hotel) receptionist
+         : param person: Object of IHightPerson
+         : return: whether it meets the requirements to be a receptionist
         """
         return person.getHeight() >= 165;
 
 # Version 1.0
 # =======================================================================================================================
 from abc import ABCMeta, abstractmethod
-# 引入ABCMeta和abstractmethod来定义抽象类和抽象方法
+#Introduce ABCMeta and abstractmethod to define abstract classes and abstract methods
 
 class SocketEntity:
-    """接口类型定义"""
+    """Interface type definition"""
 
     def __init__(self, numOfPin, typeOfPin):
         self.__numOfPin = numOfPin
@@ -127,61 +127,61 @@ class SocketEntity:
 
 
 class ISocket(metaclass=ABCMeta):
-    """插座类型"""
+    """Socket Type"""
 
     def getName(self):
-        """插座名称"""
+        """Socket name"""
         pass
 
     def getSocket(self):
-        """获取接口"""
+        """Get interface"""
         pass
 
 
 class ChineseSocket(ISocket):
-    """国标插座"""
+    """GB socket"""
 
     def getName(self):
-        return  "国标插座"
+        return  "GB socket"
 
     def getSocket(self):
-        return SocketEntity(3, "八字扁型")
+        return SocketEntity(3, "Flat character")
 
 
 class BritishSocket:
-    """英标插座"""
+    """British Standard Socket"""
 
     def name(self):
-        return  "英标插座"
+        return  "British Standard Socket"
 
     def socketInterface(self):
-        return SocketEntity(3, "T字方型")
+        return SocketEntity(3, "T-square")
 
 class AdapterSocket(ISocket):
-    """插座转换器"""
+    """Socket converter"""
 
     def __init__(self, britishSocket):
         self.__britishSocket = britishSocket
 
     def getName(self):
-        return  self.__britishSocket.name() + "转换器"
+        return  self.__britishSocket.name() + "converter"
 
     def getSocket(self):
         socket = self.__britishSocket.socketInterface()
-        socket.setTypeOfPin("八字扁型")
+        socket.setTypeOfPin("Flat character")
         return socket
 
 
 
 # Version 2.0
 #=======================================================================================================================
-# 代码框架
+# Code framework
 #==============================
 from abc import ABCMeta, abstractmethod
-# 引入ABCMeta和abstractmethod来定义抽象类和抽象方法
+# Introduce ABCMeta and abstractmethod to define abstract classes and abstract methods
 
 class Target(metaclass=ABCMeta):
-    """目标类"""
+    """Target class"""
 
     @abstractmethod
     def function(self):
@@ -189,41 +189,41 @@ class Target(metaclass=ABCMeta):
 
 
 class Adaptee:
-    """源对象类"""
+    """Source object class"""
 
     def speciaficFunction(self):
-        print("被适配对象的特殊功能")
+        print("Special functions of the adapted object")
 
 class Adapter(Target):
-    """适配器"""
+    """adapter"""
 
     def __init__(self, adaptee):
         self.__adaptee = adaptee
 
     def function(self):
-        print("进行功能的转换")
+        print("Perform function conversion")
         self.__adaptee.speciaficFunction()
 
 
 
-# 基于框架的实现
+#Framework-based implementation
 #==============================
 from abc import ABCMeta, abstractmethod
-# 引入ABCMeta和abstractmethod来定义抽象类和抽象方法
+# Introduce ABCMeta and abstractmethod to define abstract classes and abstract methods
 import os
-# 导入os库,用于文件、路径相关的解析
+# Import os library for file and path related analysis
 
 class Page:
-    """电子书一页的内容"""
+    """Content of an e-book page"""
     def __init__(self, pageNum):
         self.__pageNum = pageNum
 
     def getContent(self):
-        return "第 " + str(self.__pageNum) + " 页的内容..."
+        return "First " + str(self.__pageNum) + "Content of the page ..."
 
 
 class Catalogue:
-    """目录结构"""
+    """Directory Structure"""
 
     def __init__(self, title):
         self.__title = title
@@ -233,50 +233,50 @@ class Catalogue:
         self.__chapters.append(title)
 
     def showInfo(self):
-        print("书名：" + self.__title)
-        print("目录:")
+        print("Title:" + self.__title)
+        print("table of Contents:")
         for chapter in self.__chapters:
             print("    " + chapter)
 
 
 class IBook(metaclass=ABCMeta):
-    """电子书文档的接口类"""
+    """Interface class for e-book documents"""
 
     @abstractmethod
     def parseFile(self, filePath):
-        """解析文档"""
+        """Parse the document"""
         pass
 
     @abstractmethod
     def getCatalogue(self):
-        """获取目录"""
+        """Get the directory"""
         pass
 
     @abstractmethod
     def getPageCount(self):
-        """获取页数"""
+        """Get the number of pages"""
         pass
 
     @abstractmethod
     def getPage(self, pageNum):
-        """获取第pageNum页的内容"""
+        """Get the content of pageNum"""
         pass
 
 
 class TxtBook(IBook):
-    """TXT解析类"""
+    """TXT parsing class"""
 
     def parseFile(self, filePath):
-        # 模拟文档的解析
-        print(filePath + " 文件解析成功")
+        # Parsing of simulated documents
+        print(filePath + " File parsed successfully")
         self.__title = os.path.splitext(filePath)[0]
         self.__pageCount = 500
         return True
 
     def getCatalogue(self):
         catalogue = Catalogue(self.__title)
-        catalogue.addChapter("第一章 标题")
-        catalogue.addChapter("第二章 标题")
+        catalogue.addChapter("Chapter 1 Title")
+        catalogue.addChapter("hapter 2 Title")
         return catalogue
 
     def getPageCount(self):
@@ -287,19 +287,19 @@ class TxtBook(IBook):
 
 
 class EpubBook(IBook):
-    """Epub解析类"""
+    """Epub parsing class"""
 
     def parseFile(self, filePath):
-        # 模拟文档的解析
-        print(filePath + " 文件解析成功")
+        # Parsing of simulated documents
+        print(filePath + " File parsed successfully")
         self.__title = os.path.splitext(filePath)[0]
         self.__pageCount = 800
         return True
 
     def getCatalogue(self):
         catalogue = Catalogue(self.__title)
-        catalogue.addChapter("第一章 标题")
-        catalogue.addChapter("第二章 标题")
+        catalogue.addChapter("Chapter 1 Title")
+        catalogue.addChapter("Chapter 2 Title")
         return catalogue
 
     def getPageCount(self):
@@ -310,7 +310,7 @@ class EpubBook(IBook):
 
 
 class Outline:
-    """第三方PDF解析库的目录类"""
+    """Catalog classes for third-party PDF parsing libraries"""
     def __init__(self):
         self.__outlines = []
 
@@ -322,7 +322,7 @@ class Outline:
 
 
 class PdfPage:
-    "PDF页"
+    "PDF pages"
 
     def __init__(self, pageNum):
         self.__pageNum = pageNum
@@ -332,14 +332,14 @@ class PdfPage:
 
 
 class ThirdPdf:
-    """第三方PDF解析库"""
+    """Third-party PDF parsing library"""
 
     def __init__(self):
         self.__pageSize = 0
         self.__title = ""
 
     def open(self, filePath):
-        print("第三方库解析PDF文件：" + filePath)
+        print("Parsing PDF files by third-party libraries：" + filePath)
         self.__title = os.path.splitext(filePath)[0]
         self.__pageSize = 1000
         return True
@@ -349,8 +349,8 @@ class ThirdPdf:
 
     def getOutline(self):
         outline = Outline()
-        outline.addOutline("第一章 PDF电子书标题")
-        outline.addOutline("第二章 PDF电子书标题")
+        outline.addOutline("Chapter 1 PDF eBook Title")
+        outline.addOutline("Chapter 2 PDF eBook Title")
         return outline
 
     def pageSize(self):
@@ -361,21 +361,21 @@ class ThirdPdf:
 
 
 class PdfAdapterBook(ThirdPdf, IBook):
-    """对第三方的PDF解析库重新进行包装"""
+    """Repackage third-party PDF parsing libraries"""
 
     def __init__(self, thirdPdf):
         self.__thirdPdf = thirdPdf
 
     def parseFile(self, filePath):
-        # 模拟文档的解析
+        # Parsing of simulated documents
         rtn = self.__thirdPdf.open(filePath)
         if(rtn):
-            print(filePath + "文件解析成功")
+            print(filePath + "File parsed successfully")
         return rtn
 
     def getCatalogue(self):
         outline = self.getOutline()
-        print("将Outline结构的目录转换成Catalogue结构的目录")
+        print("Transform the outline structure to the catalogue structure")
         catalogue = Catalogue(self.__thirdPdf.getTitle())
         for title in outline.getOutlines():
             catalogue.addChapter(title)
@@ -386,12 +386,12 @@ class PdfAdapterBook(ThirdPdf, IBook):
 
     def getPage(self, pageNum):
         page = self.page(pageNum)
-        print("将PdfPage的面对象转换成Page的对象")
+        print("Convert a PdfPage's face object into a Page object")
         return Page(page.getPageNum())
 
 
 class Reader:
-    "阅读器"
+    "Reader"
 
     def __init__(self, name):
         self.__name = name
@@ -421,7 +421,7 @@ class Reader:
         return False
 
     def closeFile(self):
-        print("关闭 " + self.__filePath + " 文件")
+        print("shut down " + self.__filePath + " file")
         return True
 
     def showCatalogue(self):
@@ -429,18 +429,18 @@ class Reader:
         catalogue.showInfo()
 
     def prePage(self):
-        print("往前翻一页：", end="")
+        print("Page forward:", end="")
         return self.gotoPage(self.__curPageNum - 1)
 
     def nextPage(self):
-        print("往后翻一页：", end="")
+        print("Next page:", end="")
         return self.gotoPage(self.__curPageNum + 1)
 
     def gotoPage(self, pageNum):
         if(pageNum > 1 and pageNum < self.__curBook.getPageCount() -1):
             self.__curPageNum = pageNum
 
-        print("显示第" + str(self.__curPageNum) + "页")
+        print("Show" + str(self.__curPageNum) + "page")
         page = self.__curBook.getPage(self.__curPageNum)
         page.getContent()
         return page
@@ -467,8 +467,8 @@ def testAdapter():
     adpater.function()
 
 def testReader():
-    reader = Reader("阅读器")
-    if(not reader.openFile("平凡的世界.txt")):
+    reader = Reader("Reader")
+    if(not reader.openFile("Ordinary world.txt")):
         return
     reader.showCatalogue()
     reader.prePage()
@@ -477,7 +477,7 @@ def testReader():
     reader.closeFile()
     print()
 
-    if (not reader.openFile("追风筝的人.epub")):
+    if (not reader.openFile("a kite chaser.epub")):
         return
     reader.showCatalogue()
     reader.nextPage()
@@ -486,7 +486,7 @@ def testReader():
     reader.closeFile()
     print()
 
-    if (not reader.openFile("如何从生活中领悟设计模式.pdf")):
+    if (not reader.openFile("How to understand design patterns from life.pdf")):
         return
     reader.showCatalogue()
     reader.nextPage()
@@ -495,14 +495,14 @@ def testReader():
 
 
 def canChargeforDigtalDevice(name, socket):
-    if socket.getNumOfPin() == 3 and socket.getTypeOfPin() == "八字扁型":
-        isStandard = "符合"
-        canCharge = "可以"
+    if socket.getNumOfPin() == 3 and socket.getTypeOfPin() == "Flat character":
+        isStandard = "meets the"
+        canCharge = "can"
     else:
-        isStandard = "不符合"
-        canCharge = "不能"
+        isStandard = "incompatible"
+        canCharge = "Can't"
 
-    print("[%s]：\n针脚数量：%d，针脚类型：%s； %s中国标准，%s给大陆的电子设备充电！"
+    print("[%s]：\nNumber of pins: %d, pin type: %s; %s Chinese standard, %s charges mainland electronics!"
           % (name, socket.getNumOfPin(), socket.getTypeOfPin(), isStandard, canCharge))
 
 def testSocket():
