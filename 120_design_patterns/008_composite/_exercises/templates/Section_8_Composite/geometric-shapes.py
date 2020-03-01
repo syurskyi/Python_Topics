@@ -1,48 +1,48 @@
-class GraphicObject:
-    def __init__(self, color=None):
-        self.color = color
-        self.children = []
-        self._name = 'Group'
-
-    @property
-    def name(self):
-        return self._name
-
-    def _print(self, items, depth):
-        items.append('*' * depth)
-        if self.color:
-            items.append(self.color)
-        items.append(f'{self.name}\n')
-        for child in self.children:
-            child._print(items, depth + 1)
-
-    def __str__(self):
-        items = []
-        self._print(items, 0)
-        return ''.join(items)
-
-
-class Circle(GraphicObject):
-    @property
-    def name(self):
-        return 'Circle'
-
-
-class Square(GraphicObject):
-    @property
-    def name(self):
-        return 'Square'
-
-
-if __name__ == '__main__':
-    drawing = GraphicObject()
-    drawing._name = 'My Drawing'
-    drawing.children.append(Square('Red'))
-    drawing.children.append(Circle('Yellow'))
-
-    group = GraphicObject()  # no name
-    group.children.append(Circle('Blue'))
-    group.children.append(Square('Blue'))
-    drawing.children.append(group)
-
-    print(drawing)
+# c_ GraphicObject
+#     ___ - color_N..
+#         ?  ?
+#         children =    # list
+#         _name = 'Group'
+#
+#     ?p...
+#     ___ name
+#         r_ _n..
+#
+#     ___ _print items depth
+#         i__.ap.. '*' * d...
+#         __ color
+#             i__.ap.. c..
+#         i__.ap.. _*|n.. \n')
+#         ___ child __ c...
+#             ?._p.. ? ? + 1
+#
+#     ___ -s
+#         items _    # list
+#         _print ? 0
+#         r_ ''.jo.. ?
+#
+#
+# c_ Circle G..
+#     ?p..
+#     ___ name
+#         r_ 'Circle'
+#
+#
+# c_ Square G..
+#     ?p..
+#     ___ name
+#         r_ 'Square'
+#
+#
+# __ _______ __ ______
+#     drawing = G...
+#     ?._name = 'My Drawing'
+#     ?.ch___.ap.. S.. 'Red'
+#     ?.ch___.ap.. C.. ('Yellow'
+#
+#     group = GraphicObject()  # no name
+#     ?.ch___.ap.. C.. 'Blue'
+#     ?.ch___.ap.. S.. 'Blue'
+#     ?.ch___.ap.. ?
+#
+#     print(?)
