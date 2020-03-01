@@ -1,15 +1,15 @@
 """
 *What is this pattern about?
-The Adapter pattern provides a different interface for a class. We can
+The A..  pattern provides a different interface for a class. We can
 think about it as a cable adapter that allows you to charge a phone
 somewhere that has outlets in a different shape. Following this idea,
-the Adapter pattern is useful to integrate classes that couldn't be
+the A..  pattern is useful to integrate classes that couldn't be
 integrated due to their incompatible interfaces.
 
 *What does this example do?
 
 The example has classes that represent entities (Dog, Cat, Human, Car)
-that make different noises. The Adapter class provides a different
+that make different noises. The A..  class provides a different
 interface to the original methods that make such noises. So the
 original interfaces (e.g., bark and meow) are available under a
 different name: make_noise.
@@ -29,91 +29,90 @@ Allows the interface of an existing class to be used as another interface.
 """
 
 
-class Dog:
-    def __init__(self):
-        self.name = "Dog"
+c_ Dog
+    ___ -
+        name _ "Dog"
 
-    def bark(self):
-        return "woof!"
-
-
-class Cat:
-    def __init__(self):
-        self.name = "Cat"
-
-    def meow(self):
-        return "meow!"
+    ___ bark
+        r_ "woof!"
 
 
-class Human:
-    def __init__(self):
-        self.name = "Human"
+c_ Cat
+    ___  -
+        name _ "Cat"
 
-    def speak(self):
-        return "'hello'"
-
-
-class Car:
-    def __init__(self):
-        self.name = "Car"
-
-    def make_noise(self, octane_level):
-        return "vroom{0}".format("!" * octane_level)
+    ___ meow
+        r_ "meow!"
 
 
-class Adapter:
+c_ Human
+    ___  -
+        name _ "Human"
+
+    ___ speak
+        r_ "'hello'"
+
+
+c_ Car
+    ___  -
+        name _ "Car"
+
+    ___ make_noise octane_level
+        r_ "vroom @".f..("!" * ?
+
+
+c_ A.. 
     """
     Adapts an object by replacing methods.
     Usage:
-    dog = Dog()
-    dog = Adapter(dog, make_noise=dog.bark)
+    dog _ Dog()
+    dog _ A.. (dog, m_n_d_.bark)
     """
 
-    def __init__(self, obj, **adapted_methods):
+    ___ - obj $$adapted_methods
         """We set the adapted methods in the object's dict"""
-        self.obj = obj
-        self.__dict__.update(adapted_methods)
+        ??
+        . -d.up.. a...
 
-    def __getattr__(self, attr):
+    ___ -g attr
         """All non-adapted calls are passed to the object"""
-        return getattr(self.obj, attr)
+        r_ ge__ .o.. ?
 
-    def original_dict(self):
+    ___ original_dict
         """Print original object dict"""
-        return self.obj.__dict__
+        r_ o__. -d
 
 
-def main():
-    """
-    >>> objects = []
-    >>> dog = Dog()
-    >>> print(dog.__dict__)
-    {'name': 'Dog'}
+def main
+    
+    objects _    # list
+    dog _ D..
+    print ?. -d
+    # {'name': 'Dog'}
 
-    >>> objects.append(Adapter(dog, make_noise=dog.bark))
+    o___.ap.. A.. ? m_n_d_.ba..
 
-    >>> objects[0].__dict__['obj'], objects[0].__dict__['make_noise']
-    (<...Dog object at 0x...>, <bound method Dog.bark of <...Dog object at 0x...>>)
+    o___[0]. -d |'obj', o___ 0. -d |'make_noise'
+    # (<...Dog object at 0x...>, <bound method Dog.bark of <...Dog object at 0x...>>)
 
-    >>> print(objects[0].original_dict())
-    {'name': 'Dog'}
+    print o___|0 .or..)
+    # {'name': 'Dog'}
 
-    >>> cat = Cat()
-    >>> objects.append(Adapter(cat, make_noise=cat.meow))
-    >>> human = Human()
-    >>> objects.append(Adapter(human, make_noise=human.speak))
-    >>> car = Car()
-    >>> objects.append(Adapter(car, make_noise=lambda: car.make_noise(3)))
+    cat _ C..
+    o___.ap..  A..  ? m_n_d_.m..
+    human _ H..
+    o___.ap..  A..  ? m_n_h_.sp..
+    car _ C..
+    o___.ap..  A..  ? make_noise_lambda ?.m_n_ 3
 
-    >>> for obj in objects:
-    ...    print("A {0} goes {1}".format(obj.name, obj.make_noise()))
-    A Dog goes woof!
-    A Cat goes meow!
-    A Human goes 'hello'
-    A Car goes vroom!!!
-    """
+    ___ obj __ o___
+       print("A @ goes @".f.. ?.n.. ?.m_n..
+    # A Dog goes woof!
+    # A Cat goes meow!
+    # A Human goes 'hello'
+    # A Car goes vroom!!!
+    
 
+__ ______ __ _______
+    ?
 
-if __name__ == "__main__":
-    import doctest
-    doctest.testmod(optionflags=doctest.ELLIPSIS)
