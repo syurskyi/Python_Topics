@@ -1,36 +1,36 @@
-class Component(object):
-    def __init__(self, *args, **kw):
-        pass
-
-    def component_function(self):
-        pass
-
-
-class Leaf(Component):
-    def __init__(self, *args, **kw):
-        Component.__init__(self, *args, **kw)
-
-    def component_function(self):
-        print "some function"
-
-
-class Composite(Component):
-    def __init__(self, *args, **kw):
-        Component.__init__(self, *args, **kw)
-        self.children = []
-
-    def append_child(self, child):
-        self.children.append(child)
-
-    def remove_child(self, child):
-        self.children.remove(child)
-
-    def component_function(self):
-        map(lambda x: x.component_function(), self.children)
-
-c = Composite()
-l = Leaf()
-l_two = Leaf()
-c.append_child(l)
-c.append_child(l_two)
-c.component_function()
+# c_ Component o..
+#     ___ - $ $$
+#         p..
+#
+#     ___ component_function
+#         p..
+#
+#
+# c_ Leaf C..
+#     ___  -  $ $$
+#         C___. -  $ $$
+#
+#     ___ component_function
+#         print "some function"
+#
+#
+# c_ Composite C..
+#     ___  -  $ $$
+#         C___. -  $ $$
+#         children _    # list
+#
+#     ___ append_child child
+#         c___.ap.. ?
+#
+#     ___ remove_child child
+#         c___.r.. ?
+#
+#     ___ component_function
+#         ma. l______ x ?.c... c....
+#
+# c = C...
+# l = L...
+# l_two = L..
+# c.a_c.. l
+# c.a_c.. l_two
+# c.c_f..
