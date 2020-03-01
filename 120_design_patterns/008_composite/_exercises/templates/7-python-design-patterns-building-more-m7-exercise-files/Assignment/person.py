@@ -1,13 +1,13 @@
-____ abs_composite ______ AbsComposite
-
-class Person(AbsComposite):
-
-    def __init__(self, name, birthdate):
-        self.name = name
-        self.birthdate = birthdate
-
-    def get_oldest(self):
-        return self
-
-    def distribute_inheritance(self, value):
-        print('{} receives {:6.2f}'.format(self.name, value))
+# ____ a_c... ______ AC..
+#
+# c_ Person AC..
+#
+#     ___ - name birthdate
+#         ?  ?
+#         ?  ?
+#
+#     ___ get_oldest
+#         r_ _____
+#
+#     ___ distribute_inheritance value
+#         print('@ receives :6.2f'.f... n... ?
