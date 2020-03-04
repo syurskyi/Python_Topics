@@ -1,109 +1,14 @@
-##!/usr/bin/python
-
-# Version 1.0
-########################################################################################################################
-# from abc import ABCMeta, abstractmethod
-# # 引入ABCMeta和abstractmethod来定义抽象类和抽象方法
-#
-# class Water:
-#     """水(H2O)"""
-#
-#     def __init__(self, state):
-#         self.__temperature = 25 # 默认25℃常温
-#         self.__state = state
-#
-#     def setState(self, state):
-#         self.__state = state
-#
-#     def changeState(self, state):
-#         if (self.__state):
-#             print("由", self.__state.getName(), "变为", state.getName())
-#         else:
-#             print("初始化为", state.getName())
-#         self.__state = state
-#
-#     def getTemperature(self):
-#         return self.__temperature
-#
-#     def setTemperature(self, temperature):
-#         self.__temperature = temperature
-#         if (self.__temperature <= 0):
-#             self.changeState(SolidState("固态"))
-#         elif (self.__temperature <= 100):
-#             self.changeState(LiquidState("液态"))
-#         else:
-#             self.changeState(GaseousState("气态"))
-#
-#     def riseTemperature(self, step):
-#         self.setTemperature(self.__temperature + step)
-#
-#     def reduceTemperature(self, step):
-#         self.setTemperature(self.__temperature - step)
-#
-#     def behavior(self):
-#         self.__state.behavior(self)
-#
-#
-# class State(metaclass=ABCMeta):
-#     """状态类"""
-#
-#     def __init__(self, name):
-#         self.__name = name
-#
-#     def getName(self):
-#         return self.__name
-#
-#     @abstractmethod
-#     def behavior(self, water):
-#         """不同状态下的行为"""
-#         pass
-#
-#
-# class SolidState(State):
-#     """固态"""
-#
-#     def __init__(self, name):
-#         super().__init__(name)
-#
-#     def behavior(self, water):
-#         print("我性格高冷，当前体温" + str(water.getTemperature()) +
-#               "℃，我坚如钢铁，仿如一冷血动物，请用我砸人，嘿嘿……")
-#
-#
-# class LiquidState(State):
-#     """液态"""
-#
-#     def __init__(self, name):
-#         super().__init__(name)
-#
-#     def behavior(self, water):
-#         print("我性格温和，当前体温" + str(water.getTemperature()) +
-#               "℃，我可滋润万物，饮用我可让你活力倍增……")
-#
-#
-# class GaseousState(State):
-#     """气态"""
-#
-#     def __init__(self, name):
-#         super().__init__(name)
-#
-#     def behavior(self, water):
-#         print("我性格热烈，当前体温" + str(water.getTemperature()) +
-#               "℃，飞向天空是我毕生的梦想，在这你将看不到我的存在，我将达到无我的境界……")
-
-
-# Version 2.0
 ########################################################################################################################
 from abc import ABCMeta, abstractmethod
-# 引入ABCMeta和abstractmethod来定义抽象类和抽象方法
+# Introduce ABCMeta and abstractmethod to define abstract classes and abstract methods
 
 class Context(metaclass=ABCMeta):
-    """状态模式的上下文环境类"""
+    """Context Class for State Mode"""
 
     def __init__(self):
         self.__states = []
         self.__curState = None
-        # 状态发生变化依赖的属性, 当这一变量由多个变量共同决定时可以将其单独定义成一个类
+        # Attributes that depend on state changes. When this variable is jointly determined by multiple variables, it can be defined separately as a class.
         self.__stateInfo = 0
 
     def addState(self, state):
@@ -114,9 +19,9 @@ class Context(metaclass=ABCMeta):
         if (state is None):
             return False
         if (self.__curState is None):
-            print("初始化为", state.getName())
+            print("Initialized to", state.getName())
         else:
-            print("由", self.__curState.getName(), "变为", state.getName())
+            print("by", self.__curState.getName(), "Becomes", state.getName())
         self.__curState = state
         self.addState(state)
         return True
@@ -135,7 +40,7 @@ class Context(metaclass=ABCMeta):
 
 
 class State:
-    """状态的基类"""
+    """Base class for states"""
 
     def __init__(self, name):
         self.__name = name
@@ -144,7 +49,7 @@ class State:
         return self.__name
 
     def isMatch(self, stateInfo):
-        "状态的属性stateInfo是否在当前的状态范围内"
+        "Whether the state property stateInfo is within the current state range"
         return False
 
     @abstractmethod
@@ -153,16 +58,16 @@ class State:
 
 
 
-# Demo 实现
+# Demo achieve
 
 class Water(Context):
-    """水(H2O)"""
+    """water(H2O)"""
 
     def __init__(self):
         super().__init__()
-        self.addState(SolidState("固态"))
-        self.addState(LiquidState("液态"))
-        self.addState(GaseousState("气态"))
+        self.addState(SolidState("Solid"))
+        self.addState(LiquidState("Liquid"))
+        self.addState(GaseousState("Gaseous"))
         self.setTemperature(25)
 
     def getTemperature(self):
@@ -183,9 +88,9 @@ class Water(Context):
             state.behavior(self)
 
 
-# 单例的装饰器
+# Singleton decorator
 def singleton(cls, *args, **kwargs):
-    "构造一个单例的装饰器"
+    "Construct a singleton decorator"
     instance = {}
 
     def __singleton(*args, **kwargs):
@@ -198,7 +103,7 @@ def singleton(cls, *args, **kwargs):
 
 @singleton
 class SolidState(State):
-    """固态"""
+    """Solid"""
 
     def __init__(self, name):
         super().__init__(name)
@@ -207,13 +112,13 @@ class SolidState(State):
         return stateInfo < 0
 
     def behavior(self, context):
-        print("我性格高冷，当前体温", context._getStateInfo(),
-              "℃，我坚如钢铁，仿如一冷血动物，请用我砸人，嘿嘿……")
+        print("I have a cold personality and my current temperature", context._getStateInfo(),
+              "*C, I am as strong as steel, as a cold-blooded animal, please hit me with people, hehe ...")
 
 
 @singleton
 class LiquidState(State):
-    """液态"""
+    """Liquid"""
 
     def __init__(self, name):
         super().__init__(name)
@@ -222,12 +127,12 @@ class LiquidState(State):
         return (stateInfo >= 0 and stateInfo < 100)
 
     def behavior(self, context):
-        print("我性格温和，当前体温", context._getStateInfo(),
-              "℃，我可滋润万物，饮用我可让你活力倍增……")
+        print("I have a gentle personality and my current temperature", context._getStateInfo(),
+              "℃, I can moisturize all things, drinking I can make you more energetic ...")
 
 @singleton
 class GaseousState(State):
-    """气态"""
+    """Gaseous"""
 
     def __init__(self, name):
         super().__init__(name)
@@ -236,8 +141,8 @@ class GaseousState(State):
         return stateInfo >= 100
 
     def behavior(self, context):
-        print("我性格热烈，当前体温", context._getStateInfo(),
-              "℃，飞向天空是我毕生的梦想，在这你将看不到我的存在，我将达到无我的境界……")
+        print("I have a warm personality and my current temperature", context._getStateInfo(),
+              "℃, flying to the sky is my lifelong dream, here you will not see my existence, I will reach the realm of selflessness ...")
 
 
 # Test
