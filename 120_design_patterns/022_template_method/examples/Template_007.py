@@ -1,14 +1,10 @@
-#!/usr/bin/python
-# Authoer: Spencer.Luo
-# Date: 7/8/2018
-
-# Version 1.0 代码框架
+# Version 1.0 Code framework
 #=======================================================================================================================
 from abc import ABCMeta, abstractmethod
-# 引入ABCMeta和abstractmethod来定义抽象类和抽象方法
+# Introduce ABCMeta and abstractmethod to define abstract classes and abstract methods
 
 class Template(metaclass=ABCMeta):
-    """模板类(抽象类)"""
+    """Template class (abstract class)"""
 
     @abstractmethod
     def stepOne(self):
@@ -23,27 +19,27 @@ class Template(metaclass=ABCMeta):
         pass
 
     def templateMethold(self):
-        """模板方法"""
+        """Template method"""
         self.stepOne()
         self.stepTwo()
         self.stepThree()
 
 
 class TemplateImplA(Template):
-    """模板实现类A"""
+    """Template implementation class A"""
 
     def stepOne(self):
-        print("步骤一")
+        print("step one")
 
     def stepTwo(self):
-        print("步骤二")
+        print("Step two")
 
     def stepThree(self):
-        print("步骤三")
+        print("Step three")
 
 
 class TemplateImplB(Template):
-    """模板实现类B"""
+    """Template implementation class B"""
 
     def stepOne(self):
         print("Step one")
@@ -55,49 +51,49 @@ class TemplateImplB(Template):
         print("Step three")
 
 
-# Version 2.0 阅读器视图
+# Version 2.0 Reader view
 #=======================================================================================================================
 from abc import ABCMeta, abstractmethod
-# 引入ABCMeta和abstractmethod来定义抽象类和抽象方法
+# Introduce ABCMeta and abstractmethod to define abstract classes and abstract methods
 
 class ReaderView(metaclass=ABCMeta):
-    """阅读器视图"""
+    """Reader view"""
 
     def __init__(self):
         self.__curPageNum = 1
 
     def getPage(self, pageNum):
         self.__curPageNum = pageNum
-        return "第" + str(pageNum) + "的内容"
+        return "First" + str(pageNum) + "Content"
 
     def prePage(self):
-        """模板方法，往前翻一页"""
+        """Template method, page forward"""
         content = self.getPage(self.__curPageNum - 1)
         self._displayPage(content)
 
     def nextPage(self):
-        """模板方法，往后翻一页"""
+        """Template method, page backward"""
         content = self.getPage(self.__curPageNum + 1)
         self._displayPage(content)
 
     @abstractmethod
     def _displayPage(self, content):
-        """翻页效果"""
+        """Page turning effect"""
         pass
 
 
 class SmoothView(ReaderView):
-    """左右平滑的视图"""
+    """Left and right smooth view"""
 
     def _displayPage(self, content):
-        print("左右平滑:" + content)
+        print("Smooth left and right:" + content)
 
 
 class SimulationView(ReaderView):
-    """仿真翻页的视图"""
+    """Flip page view"""
 
     def _displayPage(self, content):
-        print("仿真翻页:" + content)
+        print("Page turning simulation:" + content)
 
 
 # Test
