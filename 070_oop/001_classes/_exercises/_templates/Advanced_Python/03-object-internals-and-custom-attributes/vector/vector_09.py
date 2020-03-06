@@ -1,69 +1,69 @@
-"""Demonstrate object implementation and custom attributes using a simple 2D vector.
-"""
-
-import math
-
-
-class Vector:
-
-    def __init__(self, **coords):
-        private_coords = {'_' + k: v for k, v in coords.items()}
-        self.__dict__.update(private_coords)
-
-    def __getattr__(self, name):
-        private_name = '_' + name
-        try:
-            return self.__dict__[private_name]
-        except KeyError:
-            raise AttributeError('{!r} object has no attribute {!r}'.format(self.__class__.__name__, name))
-
-    def __setattr__(self, name, value):
-        raise AttributeError("Can't set attribute {!r}".format(name))
-
-    def __delattr__(self, name):
-        raise AttributeError("Can't delete attribute {!r}".format(name))
-
-    def __repr__(self):
-        return "{}({})".format(self.__class__.__name__,
-                               ', '.join("{k}={v}".format(k=k[1:], v=self.__dict__[k])
-                                         for k in sorted(self.__dict__.keys())))
-
-
-class ColoredVector(Vector):
-
-    COLOR_INDEXES = ('red', 'green', 'blue')
-
-    def __init__(self, red, green, blue, **coords):
-        super().__init__(**coords)
-        self.__dict__['color'] = [red, green, blue]
-
-    def __getattr__(self, name):
-        try:
-            channel = ColoredVector.COLOR_INDEXES.index(name)
-        except ValueError:
-            return super().__getattr__(name)
-        else:
-            return self.__dict__['color'][channel]
-
-    def __setattr__(self, name, value):
-        try:
-            channel = ColoredVector.COLOR_INDEXES.index(name)
-        except ValueError:
-            super().__setattr__(name, value)
-        else:
-            self.__dict__['color'][channel] = value
-
-    def __repr__(self):
-        keys = set(self.__dict__.keys())
-        keys.discard('color')
-        coords = ', '.join(
-            "{k}={v}".format(k=k[1:], v=self.__dict__[k])
-            for k in sorted(keys))
-
-        return "{cls}({red}, {green}, {blue}, {coords})".format(
-            cls=self.__class__.__name__,
-            red=self.red,
-            green=self.green,
-            blue=self.blue,
-            coords=coords)
-
+# """Demonstrate object implementation and custom attributes using a simple 2D vector.
+# """
+#
+# import math
+#
+#
+# c_ Vector
+#
+#     ___ -  $$coords
+#         private_coords _ |'_' + k; v ___ ? ? __ c___.it..
+#         -d.up.. ?
+#
+#     ___ -g name
+#         private_name _ '_' + ?
+#         ___
+#             r_ -d |?
+#         _____ K...
+#             r_ A..('@ object has no attribute @'.f..( -c . -n  n..
+#
+#     ___ -d name value
+#         r_ A..("Can't set attribute @".f.. n..
+#
+#     ___ -d name
+#         r_ A..("Can't delete attribute @".f.. ?
+#
+#     ___ -r
+#         r_ "@(@)".f..| -c . -n ,
+#                                ', '.j.. ("|k _ |v".f.. ?_?|1; ?_ -d |?||
+#                                          ___ ? __ so..  -d .k..
+#
+#
+# c_ ColoredVector V..
+#
+#     COLOR_INDEXES _ ('red', 'green', 'blue')
+#
+#     ___ - red green blue $$coords
+#         s___ . - $$
+#         -d |*c.. _ |?  ?  ?
+#
+#     ___ -g name
+#         ___
+#             channel _ CV__.C__.in.. ?
+#         _____ V..
+#             r_ s___ . -g ?
+#         ____
+#             r_ -d |*c.. |ch..
+#
+#     ___ -s name value
+#         ___
+#             channel _ CV___.C___.in.. n..
+#         _____ V....
+#             s___ . -s ?  ?
+#         ____
+#             -d |*c.. |ch.. _ v..
+#
+#     ___ -r
+#         keys _ se. -d .k..
+#         ?.discard *c..
+#         coords _ ', '.jo.. (
+#             "? _ ?".f..|? _ ?|1; ? _ -d|?
+#             ___ ? __ so..|k..
+#
+#         r_ "? (?, ?, ?, ?)".f..(
+#             cls_ -c . -n ,
+#             ? _ ?
+#             ? _ ?
+#             ? _ ?
+#             ? _ ?
+#
