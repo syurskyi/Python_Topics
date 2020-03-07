@@ -1,133 +1,133 @@
-# -*- coding: utf8 -*-
-
-from sys import stdout as console
-
-
-# Handling 'exit' command
-class SessionClosed(Exception):
-    def __init__(self, value):
-        self.value = value
-
-
-# Interface
-class Command:
-    def execute(self):
-        raise NotImplementedError()
-
-    def cancel(self):
-        raise NotImplementedError()
-
-    def name():
-        raise NotImplementedError()
-
-
-# rm command
-class RmCommand(Command):
-    def execute(self):
-        console.write("You are executed \"rm\" command\n")
-
-    def cancel(self):
-        console.write("You are canceled \"rm\" command\n")
-
-    def name(self):
-        return "rm"
-
-
-# uptime command
-class UptimeCommand(Command):
-    def execute(self):
-        console.write("You are executed \"uptime\" command\n")
-
-    def cancel(self):
-        console.write("You are canceled \"uptime\" command\n")
-
-    def name(self):
-        return "uptime"
-
-
-# undo command
-class UndoCommand(Command):
-    def execute(self):
-        try:
-            cmd = HISTORY.pop()
-            TRASH.append(cmd)
-            console.write("Undo command \"{0}\"\n".format(cmd.name()))
-            cmd.cancel()
-
-        except IndexError:
-            console.write("ERROR: HISTORY is empty\n")
-
-    def name(self):
-        return "undo"
-
-
-# redo command
-class RedoCommand(Command):
-    def execute(self):
-        try:
-            cmd = TRASH.pop()
-            HISTORY.append(cmd)
-            console.write("Redo command \"{0}\"\n".format(cmd.name()))
-            cmd.execute()
-        except IndexError:
-            console.write("ERROR: TRASH is empty\n")
-
-    def name(self):
-        return "redo"
-
-
-# history command
-class HistoryCommand(Command):
-    def execute(self):
-        i = 0
-        for cmd in HISTORY:
-            console.write("{0}: {1}\n".format(i, cmd.name()))
-            i = i + 1
-
-    def name(self):
-        print "history"
-
-
-# exit command
-class ExitCommand(Command):
-    def execute(self):
-        raise SessionClosed("Good day!")
-
-    def name(self):
-        return "exit"
-
-# available commands
-COMMANDS = {'rm': RmCommand(), 'uptime': UptimeCommand(), 'undo':
-            UndoCommand(), 'redo': RedoCommand(), 'history': HistoryCommand(),
-            'exit': ExitCommand()}
-
-HISTORY = list()
-TRASH = list()
-
-
-# Shell
-def main():
-    try:
-        while True:
-            console.flush()
-            console.write("pysh >> ")
-
-            cmd = raw_input()
-
-            try:
-                command = COMMANDS[cmd]
-                command.execute()
-                if (not isinstance(command, UndoCommand) and not
-                    isinstance(command, RedoCommand) and not
-                    isinstance(command, HistoryCommand)):
-                    TRASH = list()
-                    HISTORY.append(command)
-
-            except KeyError:
-                console.write("ERROR: Command \"%s\" not found\n" % cmd)
-
-    except SessionClosed as e:
-        console.write(e.value)
-
-if __name__ == "__main__":
-    main()
+# # -*- coding: utf8 -*-
+#
+# ____ ___ ______ stdout as console
+#
+#
+# # Handling 'exit' command
+# c_ SessionClosed E..
+#     ___ - value
+#         ?  ?
+#
+#
+# # Interface
+# c_ Command
+#     ___ execute
+#         r_ N...
+#
+#     ___ cancel
+#         r_ N...
+#
+#     ___ name
+#         r_ N...
+#
+#
+# # rm command
+# c_ RmCommand C..
+#     ___ execute
+#         c___.w.. ("You are executed \"rm\" command\n")
+#
+#     ___ cancel
+#         c___.w.. ("You are canceled \"rm\" command\n")
+#
+#     ___ name
+#         r_ "rm"
+#
+#
+# # uptime command
+# c_ UptimeCommand C..
+#     ___ execute
+#         c___.w.. ("You are executed \"uptime\" command\n")
+#
+#     ___ cancel
+#         c___.w.. ("You are canceled \"uptime\" command\n")
+#
+#     ___ name
+#         r_ "uptime"
+#
+#
+# # undo command
+# c_ UndoCommand C..
+#     ___ execute
+#         ___
+#             cmd _ H___.p..
+#             T___.ap.. ?
+#             c___.w.. ("Undo command \"@\"\n".f.. ?.n..
+#             ?.c..
+#
+#         ______ I...
+#             c___.w.. ("ERROR: HISTORY is empty\n")
+#
+#     ___ name
+#         r_ "undo"
+#
+#
+# # redo command
+# c_ RedoCommand C..
+#     ___ execute
+#         ___
+#             cmd _ T___.p..
+#             H___.ap.. ?
+#             c___.w.. ("Redo command \"{0}\"\n".f.. ?.n..
+#             ?.ex..
+#         ______ I..
+#             c___.w.. ("ERROR: TRASH is empty\n")
+#
+#     ___ name
+#         r_ "redo"
+#
+#
+# # history command
+# c_ HistoryCommand C..
+#     ___ execute
+#         i _ 0
+#         ___ cmd in H..
+#             c___.w.. ("@: @\n".f.. i ?.n..
+#             i _ i + 1
+#
+#     ___ name
+#         print "history"
+#
+#
+# # exit command
+# c_ ExitCommand C..
+#     ___ execute
+#         r_ S.. "Good day!"
+#
+#     ___ name
+#         r_ "exit"
+#
+# # available commands
+# COMMANDS _ {*rm R.. *uptime U.. *undo
+#             U.. *redo R.. *history H..
+#             *exit E..
+#
+# HISTORY _ l..
+# TRASH _ l..
+#
+#
+# # Shell
+# ___ main
+#     ___
+#         w___ T..
+#             c___.fl..
+#             c___.w.. ("pysh >> ")
+#
+#             cmd _ r_i..
+#
+#             ___
+#                 command _ C..|?
+#                 ?.ex..
+#                 __ |no. isi.. c..., U.. an. no.
+#                     isi.. c..., R... an. no.
+#                     isi.. c..., H..
+#                     T.._ l..
+#                     H___.ap.. c..
+#
+#             ______ KeyError
+#                 c___.w.. ("ERROR: Command \"@\" not found\n"  ?
+#
+#     ______ SessionClosed __ e
+#         c___.w..  ?.v..
+#
+# __ _______ __ ______
+#     ?
