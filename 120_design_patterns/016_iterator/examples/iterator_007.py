@@ -20,24 +20,21 @@ count_to_five = lambda: count_to(5)
 
 
 def main():
-    """
+
     # Counting to two...
-    >>> for number in count_to_two():
-    ...     print(number)
-    one
-    two
+    for number in count_to_two():
+        print(number)
+    # one
+    # two
 
     # Counting to five...
-    >>> for number in count_to_five():
-    ...     print(number)
-    one
-    two
-    three
-    four
-    five
-    """
-
+    for number in count_to_five():
+        print(number)
+    # one
+    # two
+    # three
+    # four
+    # five
 
 if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
+    main()

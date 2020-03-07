@@ -44,7 +44,7 @@
 #
 #     ___ visit_B node $  $$
 #         print'visit_B ' + ?. -c. -n
-# 
+#
 #
 # a = A()
 # b = B()

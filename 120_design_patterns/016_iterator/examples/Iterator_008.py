@@ -1,12 +1,7 @@
-#!/usr/bin/python
-# Authoer: Spencer.Luo
-# Date: 12/7/2017
-
-# Version 1.0
 #=======================================================================================================================
 
 class Customer:
-    """客户"""
+    """client"""
 
     def __init__(self, name):
         self.__name = name
@@ -33,14 +28,14 @@ class Customer:
 
 
 class NumeralIterator:
-    """迭代器"""
+    """Iterator"""
 
     def __init__(self, data):
         self.__data = data
         self.__curIdx = -1
 
     def next(self):
-        """移动至下一个元素"""
+        """Move to next element"""
         if (self.__curIdx < len(self.__data) - 1):
             self.__curIdx += 1
             return True
@@ -48,14 +43,14 @@ class NumeralIterator:
             return False
 
     def current(self):
-        """获取当前的元素"""
+        """Get the current element"""
         return self.__data[self.__curIdx] if (self.__curIdx < len(self.__data) and self.__curIdx >= 0) else None
 
 
 class NumeralSystem:
-    """排号系统"""
+    """Ranking system"""
 
-    __clinics = ("1号分诊室", "2号分诊室", "3号分诊室")
+    __clinics = ("Screening Room No. 1", "Screening Room 2", "Screening Room 3")
 
     def __init__(self, name):
         self.__customers = []
@@ -68,7 +63,7 @@ class NumeralSystem:
         customer.setClinic(click)
         self.__curNum += 1
         self.__customers.append(customer)
-        print("%s 您好！您已在%s成功挂号，序号：%04d，请耐心等待！"
+        print("%s Hello! You are already %s Registered successfully, serial number:%04d, please wait patiently!"
               % (customer.getName(), self.__name, customer.getNum()) )
 
     def getIterator(self):
@@ -77,7 +72,7 @@ class NumeralSystem:
 
     def visit(self):
         for customer in self.__customers:
-            print("下一位病人 %04d(%s) 请到 %s 就诊。"
+            print("Next patient %04d(%s) Please go %s See a doctor."
                   % (customer.getNum(), customer.getName(), customer.getClinic()) )
 
 
@@ -86,22 +81,22 @@ class NumeralSystem:
 # 代码框架
 #==============================
 class BaseIterator:
-    """迭代器"""
+    """Iterator"""
 
     def __init__(self, data):
         self.__data = data
         self.toBegin()
 
     def toBegin(self):
-        """将指针移至起始位置"""
+        """Move the pointer to the starting position"""
         self.__curIdx = -1
 
     def toEnd(self):
-        """将指针移至结尾位置"""
+        """Move the pointer to the end"""
         self.__curIdx = len(self.__data)
 
     def next(self):
-        """移动至下一个元素"""
+        """Move to next element"""
         if (self.__curIdx < len(self.__data) - 1):
             self.__curIdx += 1
             return True
@@ -109,7 +104,7 @@ class BaseIterator:
             return False
 
     def previous(self):
-        "移动至上一个元素"
+        "Move to previous element"
         if (self.__curIdx > 0):
             self.__curIdx -= 1
             return True
@@ -117,7 +112,7 @@ class BaseIterator:
             return False
 
     def current(self):
-        """获取当前的元素"""
+        """Get the current element"""
         return self.__data[self.__curIdx] if (self.__curIdx < len(self.__data) and self.__curIdx >= 0) else None
 
 
@@ -129,7 +124,7 @@ class BaseIterator:
 #=======================================================================================================================
 
 def testHospital():
-    numeralSystem = NumeralSystem("挂号台")
+    numeralSystem = NumeralSystem("Registration desk")
     lily = Customer("Lily")
     lily.register(numeralSystem);
     pony = Customer("Pony")
@@ -143,7 +138,7 @@ def testHospital():
     iterator = numeralSystem.getIterator()
     while(iterator.next()):
         customer = iterator.current()
-        print("下一位病人 %04d(%s) 请到 %s 就诊。"
+        print("Next patient %04d(%s) Please go %s See a doctor."
               % (customer.getNum(), customer.getName(), customer.getClinic()) )
 
     # numeralSystem.visit()
@@ -151,22 +146,18 @@ def testHospital():
 
 
 def testBaseIterator():
-    print("从前往后遍历:")
+    print("Traverse: ")
     iterator = BaseIterator(range(0, 10))
     while(iterator.next()):
         customer = iterator.current()
         print(customer, end="\t")
     print()
 
-    print("从后往前遍历:")
+    print("Traverse from back to front: ")
     iterator.toEnd()
     while (iterator.previous()):
         customer = iterator.current()
         print(customer, end="\t")
-
-
-
-
 
 
 def testLoop():
@@ -175,30 +166,30 @@ def testLoop():
         print(e, end="\t")
 
 
-#  方法一：使用()定义生成器
+#  Method 1: Use () to define the generator
 gen = (x * x for x in range(10))
 
-#  方法二：使用yield定义generator函数
+#  Method 2: Define the generator function using yield
 def fibonacci(maxNum):
-    """斐波那契数列的生成器"""
+    """Fibonacci generator"""
     a = b = 1
     for i in range(maxNum):
         yield a
         a, b = b, a + b
 
 def testIterable():
-    print("方法一，0-9的平方数：")
+    print("Method one, the square of 0-9：")
     for e in gen:
         print(e, end="\t")
     print()
 
-    print("方法二，斐波那契数列：")
+    print("Method two, Fibonacci sequence: ")
     fib = fibonacci(10)
     for n in fib:
         print(n, end="\t")
     print()
 
-    print("内置容器的for循环：")
+    print("The for loop of the built-in container:")
     arr = [x * x for x in range(10)]
     for e in arr:
         print(e, end="\t")
@@ -211,10 +202,10 @@ def testIterable():
 
 
 from collections import Iterable, Iterator
-# 引入Iterable和Iterator
+# Introducing Iterable and Iterator
 
 def testIsIterator():
-    print("是否为Iterable对象：")
+    print("Whether it is an Iterable object:")
     print(isinstance([], Iterable))
     print(isinstance({}, Iterable))
     print(isinstance((1, 2, 3), Iterable))
@@ -222,7 +213,7 @@ def testIsIterator():
     print(isinstance("string", Iterable))
     print(isinstance(gen, Iterable))
     print(isinstance(fibonacci(10), Iterable))
-    print("是否为Iterator对象：")
+    print("Whether it is an Iterator object: ")
     print(isinstance([], Iterator))
     print(isinstance({}, Iterator))
     print(isinstance((1, 2, 3), Iterator))
@@ -233,14 +224,14 @@ def testIsIterator():
 
 
 def testNextItem():
-    print("将Iterable对象转成Iterator对象：")
+    print("Turn Iterable object into Iterator object: ")
     l = [1, 2, 3]
     itrL = iter(l)
     print(next(itrL))
     print(next(itrL))
     print(next(itrL))
 
-    print("next()函数遍历迭代器元素：")
+    print("next() The function iterates over the iterator elements:")
     fib = fibonacci(4)
     print(next(fib))
     print(next(fib))
@@ -250,7 +241,7 @@ def testNextItem():
 
 
 class NumberSequence:
-    """生成一个间隔为step的数字系列"""
+    """Generate a series of numbers spaced in steps"""
 
     def __init__(self, init, step, max = 100):
         self.__data = init
@@ -269,7 +260,7 @@ class NumberSequence:
             raise StopIteration
 
 
-def testNumberSequence():
+def NumberSequence():
     numSeq = NumberSequence(0, 5, 20)
     print(isinstance(numSeq, Iterable))
     print(isinstance(numSeq, Iterator))

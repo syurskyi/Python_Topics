@@ -1,11 +1,6 @@
-#!/usr/bin/python
-# Authoer: Spencer.Luo
-# Date: 5/19/2018
-
-# Version 1.0
 #=======================================================================================================================
 class Engineer:
-    """工程师"""
+    """engineer"""
 
     def __init__(self, name):
         self.__name = name
@@ -16,31 +11,31 @@ class Engineer:
 
     def forget(self):
         self.__workItems.clear()
-        print(self.__name + "工作太忙了，都忘记要做什么了！")
+        print(self.__name + "I'm too busy at work, I've forgotten what to do!")
 
     def writeTodoList(self):
-        """将工作项记录TodoList"""
+        """Record work items in TodoList"""
         todoList = TodoList()
         for item in self.__workItems:
             todoList.writeWorkItem(item)
         return todoList
 
     def retrospect(self, todoList):
-        """回忆工作项"""
+        """Recall work items"""
         self.__workItems = todoList.getWorkItems()
-        print(self.__name + "想起要做什么了！")
+        print(self.__name + "Think of what to do!")
 
     def showWorkItem(self):
         if(len(self.__workItems)):
-            print(self.__name + "的工作项：")
+            print(self.__name + "Work item:")
             for idx in range(0, len(self.__workItems)):
                 print(str(idx + 1) + ". " + self.__workItems[idx] + ";")
         else:
-            print(self.__name + "暂无工作项！")
+            print(self.__name + "No work items!")
 
 
 class TodoList:
-    """工作项"""
+    """Work item"""
 
     def __init__(self):
         self.__workItems = []
@@ -53,7 +48,7 @@ class TodoList:
 
 
 class TodoListCaretaker:
-    """TodoList管理类"""
+    """TodoList Management Class"""
 
     def __init__(self):
         self.__todoList = None
@@ -67,24 +62,24 @@ class TodoListCaretaker:
 
 # Version 2.0
 #=======================================================================================================================
-# 代码框架
+# Code framework
 #==============================
 from copy import deepcopy
 
 class Memento:
-    """备忘录"""
+    """memorandum"""
 
     def setAttributes(self, dict):
-        """深度拷贝字典dict中的所有属性"""
+        """Deep copy all attributes in dictionary dict"""
         self.__dict__ = deepcopy(dict)
 
     def getAttributes(self):
-        """获取属性字典"""
+        """Get attribute dictionary"""
         return self.__dict__
 
 
 class Caretaker:
-    """备忘录管理类"""
+    """Memo Management"""
 
     def __init__(self):
         self._mementos = {}
@@ -96,7 +91,7 @@ class Caretaker:
         return self._mementos[name]
 
 class Originator:
-    """备份发起人"""
+    """Backup initiator"""
 
     def createMemento(self):
         memento = Memento()
@@ -107,17 +102,17 @@ class Originator:
         self.__dict__.update(memento.getAttributes())
 
 
-# 基于框架的实现
+# Framework-based implementation
 #==============================
 
 # Test
 #=======================================================================================================================
 
-def testEngineer():
+def Engineer():
     tony = Engineer("Tony")
-    tony.addWorkItem("解决线上部分用户因昵称太长而无法显示全的问题")
-    tony.addWorkItem("完成PDF的解析")
-    tony.addWorkItem("在阅读器中显示PDF第一页的内容")
+    tony.addWorkItem("Solve the problem that some users online cannot display the full name because the nickname is too long")
+    tony.addWorkItem("Complete the parsing of the PDF")
+    tony.addWorkItem("Display the contents of the first page of a PDF in a reader")
     tony.showWorkItem()
     caretaker = TodoListCaretaker()
     caretaker.setTodoList(tony.writeTodoList())

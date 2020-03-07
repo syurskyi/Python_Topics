@@ -5,7 +5,7 @@
 # Version 1.0
 #=======================================================================================================================
 class HouseInfo:
-    """房源信息"""
+    """Listing Information"""
 
     def __init__(self, area, price, hasWindow, hasBathroom, hasKitchen, address, owner):
         self.__area = area
@@ -23,17 +23,17 @@ class HouseInfo:
         return self.__owner.getName()
 
     def showInfo(self, isShowOwner = True):
-        print("面积:" + str(self.__area) + "平米",
-              "价格:" + str(self.__price) + "元",
-              "窗户:" + ("有" if self.__hasWindow else "没有"),
-              "卫生间:" + self.__hasBathroom,
-              "厨房:" + ("有" if self.__hasKitchen else "没有"),
-              "地址:" + self.__address,
-              "房东:" + self.getOwnerName() if isShowOwner else "")
+        print("Area: " + str(self.__area) + "square meter",
+              "Price: " + str(self.__price) + "yuan",
+              "Window: " + ("Yes" if self.__hasWindow else "No"),
+              "Bathroom: " + self.__hasBathroom,
+              "Kitchen:" + ("Yes" if self.__hasKitchen else "No"),
+              "Address:" + self.__address,
+              "Host:" + self.getOwnerName() if isShowOwner else "")
 
 
 class HousingAgency:
-    """房屋中介"""
+    """Housing agency"""
 
     def __init__(self, name):
         self.__houseInfos = []
@@ -51,22 +51,22 @@ class HousingAgency:
                 self.__houseInfos.remove(info)
 
     def getSearchCondition(self, description):
-        """这里有一个将用户描述信息转换成搜索条件的逻辑
-        (为节省篇幅这里原样返回描述)"""
+        """Here's a logic that turns user descriptions into search criteria
+         (To save space, return to the description as it is)"""
         return description
 
     def getMatchInfos(self, searchCondition):
-        """根据房源信息的各个属性查找最匹配的信息
-        (为节省篇幅这里略去匹配的过程，全部输出)"""
-        print(self.getName(), "为您找到以下最适合的房源：")
+        """Find the best match based on the properties of the listing
+         (To save space, the matching process is omitted here, all output)"""
+        print(self.getName(), "Find the best fit for you:")
         for info in self.__houseInfos:
             info.showInfo(False)
         return  self.__houseInfos
 
     def signContract(self, houseInfo, period):
-        """与房东签订协议"""
-        print(self.getName(), "与房东", houseInfo.getOwnerName(), "签订", houseInfo.getAddress(),
-              "的房子的的租赁合同，租期", period, "年。 合同期内", self.getName(), "有权对其进行使用和转租！")
+        """Sign an agreement with the landlord"""
+        print(self.getName(), "With the host", houseInfo.getOwnerName(), "Sign", houseInfo.getAddress(),
+              "Lease contract for house", period, "year. During the contract", self.getName(), "Right to use and sublet it!")
 
     def signContracts(self, period):
         for info in self.__houseInfos :
@@ -74,7 +74,7 @@ class HousingAgency:
 
 
 class HouseOwner:
-    """房东"""
+    """landlord"""
 
     def __init__(self, name):
         self.__name = name
@@ -88,12 +88,12 @@ class HouseOwner:
 
     def publishHouseInfo(self, agency):
         agency.addHouseInfo(self.__houseInfo)
-        print(self.getName() + "在", agency.getName(), "发布房源出租信息：")
+        print(self.getName() + "in", agency.getName(), "Post Property Rental Information:")
         self.__houseInfo.showInfo()
 
 
 class Customer:
-    """用户，租房的贫下中农"""
+    """Users, poor middle peasants renting houses"""
 
     def __init__(self, name):
         self.__name = name
@@ -102,65 +102,65 @@ class Customer:
         return self.__name
 
     def findHouse(self, description, agency):
-        print("我是" + self.getName() + ", 我想要找一个\"" + description + "\"的房子")
+        print("I am" + self.getName() + ", I want to find one\"" + description + "\"House of")
         print()
         return agency.getMatchInfos(agency.getSearchCondition(description))
 
     def seeHouse(self, houseInfos):
-        """去看房，选择最使用的房子
-        (这里省略看房的过程)"""
+        """Go to the house and choose the most used house
+         (The process of viewing a house is omitted here)"""
         size = len(houseInfos)
         return houseInfos[size-1]
 
     def signContract(self, houseInfo, agency, period):
-        """与中介签订协议"""
-        print(self.getName(), "与中介", agency.getName(), "签订", houseInfo.getAddress(),
-              "的房子的租赁合同, 租期", period, "年。合同期内", self.__name, "有权对其进行使用！")
+        """Sign an agreement with an intermediary"""
+        print(self.getName(), "Intermediary", agency.getName(), "Sign", houseInfo.getAddress(),
+              "Lease contract for a house", period, "year. During the contract", self.__name, "Right to use it!")
 
 # Version 2.0
 #=======================================================================================================================
-# 代码框架
+# Code framework
 #==============================
 class InteractiveObject:
-    """进行交互的对象"""
+    """Objects to interact with"""
     pass
 
 class InteractiveObjectImplA:
-    """实现类A"""
+    """Implementation class A"""
     pass
 
 class InteractiveObjectImplB:
-    """实现类B"""
+    """Implementation class B"""
     pass
 
 class Meditor:
-    """中介类"""
+    """Intermediary"""
 
     def __init__(self):
         self.__interactiveObjA = InteractiveObjectImplA()
         self.__interactiveObjB = InteractiveObjectImplB()
 
     def interative(self):
-        """进行交互的操作"""
-        # 通过self.__interactiveObjA和self.__interactiveObjB完成相应的交互操作
+        """Interactive operation"""
+        # Complete the corresponding interactive operations through self .__ interactiveObjA and self .__ interactiveObjB
         pass
 
 
-# 基于框架的实现
+# Framework-based implementation
 #==============================
 from abc import ABCMeta, abstractmethod
 # 引入ABCMeta和abstractmethod来定义抽象类和抽象方法
 from enum import Enum
-# Python3.4 之后支持枚举Enum的语法
+# Enum enum syntax is supported after Python 3.4
 
 class DeviceType(Enum):
-    "设备类型"
+    "Equipment type"
     TypeSpeaker = 1
     TypeMicrophone = 2
     TypeCamera = 3
 
 class DeviceItem:
-    """设备项"""
+    """Equipment item"""
 
     def __init__(self, id, name, type, isDefault = False):
         self.__id = id
@@ -186,7 +186,7 @@ class DeviceItem:
 
 
 class DeviceList:
-    """设备列表"""
+    """Device List"""
 
     def __init__(self):
         self.__devices = []
@@ -212,37 +212,37 @@ class DeviceMgr(metaclass=ABCMeta):
 
     @abstractmethod
     def enumerate(self):
-        """枚举设备列表
-        (在程序初始化时，有设备插拔时都要重新获取设备列表)"""
+        """Enumerating the device list
+         (When the program is initialized, the device list must be re-obtained when there is a device plug-in)"""
         pass
 
     @abstractmethod
     def active(self, deviceId):
-        """选择要使用的设备"""
+        """Select the device you want to use"""
         pass
 
     @abstractmethod
     def getCurDeviceId(self):
-        """获取当前正在使用的设计ID"""
+        """Get the design ID currently in use"""
         pass
 
 
 class SpeakerMgr(DeviceMgr):
-    """扬声器设备管理类"""
+    """Speaker device management class"""
 
     def __init__(self):
         self.__curDeviceId = None
 
     def enumerate(self):
-        """枚举设备列表
-        (真实的项目应该通过驱动程序去读取设备信息，这里只用初始化来模拟)"""
+        """Enumerating the device list
+         (The real project should read the device information through the driver, here only the initialization is used to simulate)"""
         devices = DeviceList()
         devices.add(DeviceItem("369dd760-893b-4fe0-89b1-671eca0f0224", "Realtek High Definition Audio", DeviceType.TypeSpeaker))
         devices.add(DeviceItem("59357639-6a43-4b79-8184-f79aed9a0dfc", "NVIDIA High Definition Audio", DeviceType.TypeSpeaker, True))
         return devices
 
     def active(self, deviceId):
-        """激活指定的设备作为当前要用的设备"""
+        """Activate the specified device as the current device"""
         self.__curDeviceId = deviceId
 
     def getCurDeviceId(self):
@@ -250,7 +250,7 @@ class SpeakerMgr(DeviceMgr):
 
 
 class DeviceUtil:
-    """设备工具类"""
+    """Equipment tools"""
 
     def __init__(self):
         self.__mgrs = {}
@@ -275,16 +275,16 @@ class DeviceUtil:
 # Test
 #=======================================================================================================================
 
-def testRenting():
-    myHome = HousingAgency("我爱我家")
-    zhangsan = HouseOwner("张三");
-    zhangsan.setHouseInfo("上地西里", 20, 2500, 1, "独立卫生间", 0)
+def Renting():
+    myHome = HousingAgency("I love my home")
+    zhangsan = HouseOwner("Zhang San");
+    zhangsan.setHouseInfo("Upper Sicily", 20, 2500, 1, "individual washroom", 0)
     zhangsan.publishHouseInfo(myHome)
-    lisi = HouseOwner("李四")
-    lisi.setHouseInfo("当代城市家园", 16, 1800, 1, "公用卫生间", 0)
+    lisi = HouseOwner("Li Si")
+    lisi.setHouseInfo("Contemporary Urban Home", 16, 1800, 1, "Public toilet", 0)
     lisi.publishHouseInfo(myHome)
-    wangwu = HouseOwner("王五")
-    wangwu.setHouseInfo("金隅美和园", 18, 2600, 1, "独立卫生间", 1)
+    wangwu = HouseOwner("Wang Wu")
+    wangwu.setHouseInfo("Golden Beauty Garden", 18, 2600, 1, "独立卫生间", 1)
     wangwu.publishHouseInfo(myHome)
     print()
 
@@ -292,27 +292,27 @@ def testRenting():
     print()
 
     tony = Customer("Tony")
-    houseInfos = tony.findHouse("18平米左右，要有独卫，要有窗户，最好是朝南，有厨房更好！价位在2000左右", myHome)
+    houseInfos = tony.findHouse("About 18 square meters, you need to have independent guards and windows. It is best to face south. A kitchen is better! Price around 2000", myHome)
     print()
-    print("正在看房，寻找最合适的住巢……")
+    print("Looking around, looking for the most suitable nest ...")
     print()
     AppropriateHouse = tony.seeHouse(houseInfos)
     tony.signContract(AppropriateHouse, myHome, 1)
 
 
-def testDevices():
+def Devices():
     deviceUtil = DeviceUtil()
     deviceList = deviceUtil.getDeviceList(DeviceType.TypeSpeaker)
-    print("麦克风设备列表：")
+    print("Microphone device list：")
     if deviceList.getCount() > 0:
-        # 设置第一个设备为要用的设备
+        # Set the first device to be used
         deviceUtil.active(DeviceType.TypeSpeaker, deviceList.getByIdx(0).getId())
     for idx in range(0, deviceList.getCount()):
         device = deviceList.getByIdx(idx)
         print(device)
-    print("当前使用的设备："
+    print("Equipment currently in use:"
           + deviceList.getById(deviceUtil.getCurDeviceId(DeviceType.TypeSpeaker)).getName())
 
 
 # testRenting()
-testDevices()
+Devices()
