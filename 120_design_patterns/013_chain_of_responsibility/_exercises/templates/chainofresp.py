@@ -1,44 +1,44 @@
-class Car:
-    def __init__(self):
-        self.name = None
-        self.km = 11100
-        self.fuel = 5
-        self.oil = 5
-
-
-def handle_fuel(car):
-    if car.fuel < 10:
-        print "added fuel"
-        car.fuel = 100
-
-
-def handle_km(car):
-    if car.km > 10000:
-        print "made a car test."
-        car.km = 0
-
-
-def handle_oil(car):
-    if car.oil < 10:
-        print "Added oil"
-        car.oil = 100
-
-
-class Garage:
-    def __init__(self):
-        self.handlers = []
-
-    def add_handler(self, handler):
-        self.handlers.append(handler)
-
-    def handle_car(self, car):
-        for handler in self.handlers:
-            handler(car)
-
-__ _______ __ ______
-    handlers = [handle_fuel, handle_km, handle_oil]
-    garage = Garage()
-
-    for handle in handlers:
-        garage.add_handler(handle)
-    garage.handle_car(Car())
+# c_ Car
+#     ___ -
+#         name _ N..
+#         km _ 11100
+#         fuel _ 5
+#         oil _ 5
+#
+#
+# ___ handle_fuel car
+#     __ ?.? < 10
+#         print "added fuel"
+#         ?.? _ 100
+#
+#
+# ___ handle_km car
+#     __ ?.? > 10000
+#         print "made a car test."
+#         ?.? _ 0
+#
+#
+# ___ handle_oil car
+#     __ ?.? < 10
+#         print "Added oil"
+#         ?.? _ 100
+#
+#
+# c_ Garage
+#     ___ -
+#         handlers _    # list
+#
+#     ___ add_handler handler
+#         h____.ap.. ?
+#
+#     ___ handle_car car
+#         ___ handler __ ?
+#             ? ?
+#
+# __ _______ __ ______
+#     handlers _ _f.. _k.. _o..
+#     garage _ G..
+#
+#     ___ handle in h..
+#         g___.a_h.. ?
+#     g__.h_c.. C..
