@@ -1,14 +1,9 @@
-#!/usr/bin/python
-# Authoer: Spencer.Luo
-# Date: 6/4/2018
-
-# Version 1.0
 #=======================================================================================================================
 import logging
-# 引入logging模块记录异常
+# Introduce logging module to record exceptions
 
 class Pigment:
-    """颜料"""
+    """pigment"""
 
     def __init__(self, color):
         self.__color = color
@@ -22,52 +17,52 @@ class Pigment:
         return self
 
     def showInfo(self):
-        print("%s 取得 %s色颜料"  % (self.__user, self.__color) )
+        print("%s get %s color pigment"  % (self.__user, self.__color) )
 
 class PigmengFactory:
-    """资料的工厂类"""
+    """Data Factory Class"""
 
     def __init__(self):
         self.__sigmentSet = {
-            "红": Pigment("红"),
-            "黄": Pigment("黄"),
-            "蓝": Pigment("蓝"),
-            "绿": Pigment("绿"),
-            "紫": Pigment("紫"),
+            "red": Pigment("red"),
+            "yellow": Pigment("yellow"),
+            "blue": Pigment("blue"),
+            "green": Pigment("green"),
+            "purple": Pigment("purple"),
         }
 
     def getPigment(self, color):
         pigment = self.__sigmentSet.get(color)
         if pigment is None:
-            logging.error("没有%s颜色的颜料！", color)
+            logging.error("No %s Color！", color)
         return pigment
 
 
 # Version 2.0
 #=======================================================================================================================
-# 代码框架
+# Code framework
 #==============================
 from abc import ABCMeta, abstractmethod
-# 引入ABCMeta和abstractmethod来定义抽象类和抽象方法
+# Introduce ABCMeta and abstractmethod to define abstract classes and abstract methods
 
 class Flyweight(metaclass=ABCMeta):
-    """享元类"""
+    """Flyweight Class"""
 
     @abstractmethod
     def operation(self, extrinsicState):
         pass
 
 class FlyweightImpl(Flyweight):
-    """享元类的具体实现类"""
+    """Concrete implementation class of Flyweight class"""
 
     def __init__(self, color):
         self.__color = color
 
     def operation(self, extrinsicState):
-        print("%s 取得 %s色颜料" % (extrinsicState, self.__color))
+        print("%s Get %s Color pigment" % (extrinsicState, self.__color))
 
 class FlyweightFactory:
-    """享元工厂"""
+    """Flyweight Factory"""
 
     def __init__(self):
         self.__flyweights = {}
@@ -78,34 +73,34 @@ class FlyweightFactory:
             pigment = FlyweightImpl(key)
         return pigment
 
-# 基于框架的实现
+# Framework-based implementation
 #==============================
 
 
 # Test
 #=======================================================================================================================
-def testPigment():
+def Pigment():
     factory = PigmengFactory()
-    pigmentRed = factory.getPigment("红").setUser("梦之队")
+    pigmentRed = factory.getPigment("red").setUser("Dream team")
     pigmentRed.showInfo()
-    pigmentYellow = factory.getPigment("黄").setUser("梦之队")
+    pigmentYellow = factory.getPigment("yellow").setUser("Dream team")
     pigmentYellow.showInfo()
-    pigmentBlue1 = factory.getPigment("蓝").setUser("梦之队")
+    pigmentBlue1 = factory.getPigment("blue").setUser("Dream team")
     pigmentBlue1.showInfo()
-    pigmentBlue2 = factory.getPigment("蓝").setUser("和平队")
+    pigmentBlue2 = factory.getPigment("blue").setUser("Peace corps")
     pigmentBlue2.showInfo()
 
 
-def testFlyweight():
+def Flyweight():
     factory = FlyweightFactory()
-    pigmentRed = factory.getFlyweight("红")
-    pigmentRed.operation("梦之队")
-    pigmentYellow = factory.getFlyweight("黄")
-    pigmentYellow.operation("梦之队")
-    pigmentBlue1 = factory.getFlyweight("蓝")
-    pigmentBlue1.operation("梦之队")
-    pigmentBlue2 = factory.getFlyweight("蓝")
-    pigmentBlue2.operation("和平队")
+    pigmentRed = factory.getFlyweight("red")
+    pigmentRed.operation("Dream team")
+    pigmentYellow = factory.getFlyweight("yellow")
+    pigmentYellow.operation("Dream team")
+    pigmentBlue1 = factory.getFlyweight("blue")
+    pigmentBlue1.operation("Dream team")
+    pigmentBlue2 = factory.getFlyweight("blue")
+    pigmentBlue2.operation("Peace corps")
 
 
 # print("Blue1:" + str(id(pigmentBlue1)) + ", Bule2:" + str(id(pigmentBlue2))
@@ -113,5 +108,5 @@ def testFlyweight():
 
 
 
-# testPigment()
-testFlyweight()
+# Pigment()
+Flyweight()
