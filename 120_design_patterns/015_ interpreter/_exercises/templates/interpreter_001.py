@@ -1,167 +1,167 @@
-import inspect
-from pyparsing import Word, OneOrMore, Optional, Group, Suppress, alphanums
-
-
-class DeviceNotAvailable(Exception):
-    pass
-
-
-class ActionNotAvailable(Exception):
-    pass
-
-
-class IncorrectAction(Exception):
-    pass
-
-
-class Device(object):
-
-    def __call__(self, *args):
-        action = args[0]
-        try:
-            method = getattr(self, action)
-        except AttributeError:
-            raise ActionNotAvailable(
-                '!!! "{}" not available for {}'.format(action, self.__class__.__name__)
-            )
-
-        signature = inspect.signature(method)
-        # arity of the device's method (excluding self)
-        arity = len(signature.parameters.keys())
-        # or alternatively
-        # arity = method.__code__.co_argcount -1
-        # arity = len(inspect.getfullargspec(method)[0]) - 1
-
-        num_args = len([a for a in args if a is not None])
-        if arity != num_args - 1:
-            parameters = list(signature.parameters.keys())
-            if parameters:
-                substring = "these parameters {}".format(parameters)
-            else:
-                substring = "no parameters"
-            err_msg = '!!! "{}" on {} must be defined with {}'.format(
-                action, self.__class__.__name__, substring
-            )
-            raise IncorrectAction(err_msg)
-
-        else:
-            if num_args == 1:
-                method()
-            elif num_args == 2:
-                method(int(args[1]))
-            else:
-                raise Exception
-
-
-class Garage(Device):
-
-    def __init__(self):
-        self.is_open = False
-
-    def open(self):
-        print("opening the garage")
-        self.is_open = True
-
-    def close(self):
-        print("closing the garage")
-        self.is_open = False
-
-
-class Boiler(Device):
-
-    def __init__(self):
-        self.temperature = 83
-
-    def heat(self, amount):
-        print("heat the boiler up by {} degrees".format(amount))
-        self.temperature += amount
-
-    def cool(self, amount):
-        print("cool the boiler down by {} degrees".format(amount))
-        self.temperature -= amount
-
-
-class Television(Device):
-
-    def __init__(self):
-        self.is_on = False
-
-    def switch_on(self):
-        print("switch on the television")
-        self.is_on = True
-
-    def switch_off(self):
-        print("switch off the television")
-        self.is_on = False
-
-
-class Interpreter(object):
-
-    DEVICES = {"boiler": Boiler(), "garage": Garage(), "television": Television()}
-
-    @staticmethod
-    def parse(input_string):
-        word = Word(alphanums)
-        command = Group(OneOrMore(word))
-        token = Suppress("->")
-        device = Group(OneOrMore(word))
-        argument = Group(OneOrMore(word))
-        event = command + token + device + Optional(token + argument)
-        parse_results = event.parseString(input_string)
-        cmd = parse_results[0]
-        dev = parse_results[1]
-        cmd_str = "_".join(cmd)
-        dev_str = "_".join(dev)
-        try:
-            val = parse_results[2]
-        except IndexError:
-            val_str = None
-        else:
-            val_str = "_".join(val)
-        return cmd_str, dev_str, val_str
-
-    def interpret(self, input_string):
-        cmd_str, dev_str, val_str = self.parse(input_string)
-        try:
-            device = self.DEVICES[dev_str]
-        except KeyError:
-            raise DeviceNotAvailable(
-                "!!! {} is not available an available " "device".format(dev_str)
-            )
-
-        else:
-            device(cmd_str, val_str)
-
-
-def main():
-    interpreter = Interpreter()
-
-    valid_inputs = (
-        "open -> garage",
-        "heat -> boiler -> 5",
-        "cool -> boiler -> 3",
-        "switch on -> television",
-        "switch off -> television",
-    )
-
-    for valid_input in valid_inputs:
-        interpreter.interpret(valid_input)
-
-    try:
-        interpreter.interpret("read -> book")
-    except DeviceNotAvailable as e:
-        print(e)
-
-    try:
-        interpreter.interpret("heat -> boiler")
-    except IncorrectAction as e:
-        print(e)
-
-    try:
-        interpreter.interpret("throw away -> television")
-    except ActionNotAvailable as e:
-        print(e)
-
-
-if __name__ == "__main__":
-    main()
+# ______ ins..
+# ____ pyparsing ______ W.. OOM.. O.. G.. S.. a..
+#
+#
+# c_ DeviceNotAvailable E...
+#     p..
+#
+#
+# c_ ANA... E...
+#     p..
+#
+#
+# c_ IncorrectAction E...
+#     p..
+#
+#
+# c_ Device o..
+#
+#     ___ -c $
+#         action _ ar..|0
+#         ___
+#             method _ ge.. ? a..
+#         ______ A...:
+#             r_ ANA...(
+#                 '!!! "@" not available for @'.f... a..  -c. -n
+#             )
+#
+#         signature _ ins__.si.. m..
+#         # arity of the device's method (excluding self)
+#         arity _ le. ?.pa__.k..
+#         # or alternatively
+#         # arity _ method.__code__.co_argcount -1
+#         # arity _ len(inspect.getfullargspec(method)[0]) - 1
+#
+#         num_args _ le. a ___ a __ ar.. __ a _ no. N..
+#         __ arity !_ num_args - 1
+#             parameters _ li.. si__.pa___.k..
+#             __ parameters
+#                 substring _ "these parameters @".f... ?
+#             ____
+#                 substring _ "no parameters"
+#             err_msg _ '!!! "@" on @ must be defined with @'.f...(
+#                 action,  -c. -n, s..
+#             )
+#             r_ IA.. ?
+#
+#         ____
+#             __ num_args __ 1
+#                 m...
+#             ____ ? __ 2
+#                 m.. in. ar..|1
+#             ____
+#                 r_ E..
+#
+#
+# c_ Garage D..
+#
+#     ___ -
+#         is_open _ F..
+#
+#     ___ open
+#         print("opening the garage")
+#         is_ _ T..
+#
+#     ___ close
+#         print("closing the garage")
+#         i_o _ F..
+#
+#
+# c_ Boiler D..
+#
+#     ___ -
+#         temperature _ 83
+#
+#     ___ heat amount
+#         print("heat the boiler up by @ degrees".f... ?
+#         t.. +_ ?
+#
+#     ___ cool amount
+#         print("cool the boiler down by @ degrees".f... ?
+#         t... -_ ?
+#
+#
+# c_ Television D..
+#
+#     ___ -
+#         i_o. _ F..
+#
+#     ___ switch_on
+#         print("switch on the television")
+#         i_o. _ T..
+#
+#     ___ switch_off
+#         print("switch off the television")
+#         i_o. _ F..
+#
+#
+# c_ Interpreter o..
+#
+#     DEVICES _ |*boiler ? *garage ? *television ?
+#
+#     ??
+#     ___ parse input_string
+#         word _ W.. alphanums
+#         command _ G..(OOM.. ?
+#         token _ Su.. ("->")
+#         device _ G.. OOM.. ?
+#         argument _ Gr.. OOM.. ?
+#         event _ c.. + t.. + d.. + O.. t.. + a..
+#         parse_results _ e__.pS.. i_s..
+#         cmd _ p_r.. 0
+#         dev _ p_r.. 1
+#         cmd_str _ "_".j.. c..
+#         dev_str _ "_".j.. d..
+#         ___
+#             val _ p_r.. 2
+#         ______ I..
+#             val_str _ N..
+#         ____
+#             val_str _ "_".jo.. ?
+#         r_ cmd_str, dev_str, val_str
+#
+#     ___ interpret input_string
+#         cmd_str, dev_str, val_str _ parse input_string
+#         ___
+#             device _ D..[dev_str]
+#         ______ K..
+#             r_ DNA...(
+#                 "!!! @ is not available an available " "device".f... d_s..
+#             )
+#
+#         ____
+#             d___ c_s.. v_s..
+#
+#
+# ___ main
+#     interpreter _ I...
+#
+#     valid_inputs _ (
+#         "open -> garage",
+#         "heat -> boiler -> 5",
+#         "cool -> boiler -> 3",
+#         "switch on -> television",
+#         "switch off -> television",
+#     )
+#
+#     ___ valid_input in valid_inputs:
+#         interpreter.interpret(valid_input)
+#
+#     ___
+#         interpreter.interpret("read -> book")
+#     ______ DeviceNotAvailable as e:
+#         print(e)
+#
+#     ___
+#         interpreter.interpret("heat -> boiler")
+#     ______ IncorrectAction as e:
+#         print(e)
+#
+#     ___
+#         interpreter.interpret("throw away -> television")
+#     ______ ANA... as e:
+#         print(e)
+#
+#
+# __ _______ __ ______
+#     ?
