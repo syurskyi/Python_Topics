@@ -1,125 +1,125 @@
-# -*- coding: utf-8 -*-
-
-from __future__ import annotations
-from abc import ABC, abstractmethod
-
-
-class Command(ABC):
-    """
-    Интерфейс Команды объявляет метод для выполнения команд.
-    """
-
-    @abstractmethod
-    def execute(self) -> None:
-        pass
-
-
-class SimpleCommand(Command):
-    """
-    Некоторые команды способны выполнять простые операции самостоятельно.
-    """
-
-    def __init__(self, payload: str) -> None:
-        self._payload = payload
-
-    def execute(self) -> None:
-        print(f"SimpleCommand: See, I can do simple things like printing"
-              f"({self._payload})")
-
-
-class ComplexCommand(Command):
-    """
-    Но есть и команды, которые делегируют более сложные операции другим
-    объектам, называемым «получателями».
-    """
-
-    def __init__(self, receiver: Receiver, a: str, b: str) -> None:
-        """
-        Сложные команды могут принимать один или несколько объектов-получателей
-        вместе с любыми данными о контексте через конструктор.
-        """
-
-        self._receiver = receiver
-        self._a = a
-        self._b = b
-
-    def execute(self) -> None:
-        """
-        Команды могут делегировать выполнение любым методам получателя.
-        """
-
-        print("ComplexCommand: Complex stuff should be done by a receiver object", end="")
-        self._receiver.do_something(self._a)
-        self._receiver.do_something_else(self._b)
-
-
-class Receiver:
-    """
-    Классы Получателей содержат некую важную бизнес-логику. Они умеют выполнять
-    все виды операций, связанных с выполнением запроса. Фактически, любой класс
-    может выступать Получателем.
-    """
-
-    def do_something(self, a: str) -> None:
-        print(f"\nReceiver: Working on ({a}.)", end="")
-
-    def do_something_else(self, b: str) -> None:
-        print(f"\nReceiver: Also working on ({b}.)", end="")
-
-
-class Invoker:
-    """
-    Отправитель связан с одной или несколькими командами. Он отправляет запрос
-    команде.
-    """
-
-    _on_start = None
-    _on_finish = None
-
-    """
-    Инициализация команд.
-    """
-
-    def set_on_start(self, command: Command):
-        self._on_start = command
-
-    def set_on_finish(self, command: Command):
-        self._on_finish = command
-
-    def do_something_important(self) -> None:
-        """
-        Отправитель не зависит от классов конкретных команд и получателей.
-        Отправитель передаёт запрос получателю косвенно, выполняя команду.
-        """
-
-        print("Invoker: Does anybody want something done before I begin?")
-        if isinstance(self._on_start, Command):
-            self._on_start.execute()
-
-        print("Invoker: ...doing something really important...")
-
-        print("Invoker: Does anybody want something done after I finish?")
-        if isinstance(self._on_finish, Command):
-            self._on_finish.execute()
-
-
-if __name__ == "__main__":
-    """
-    Клиентский код может параметризовать отправителя любыми командами.
-    """
-
-    invoker = Invoker()
-    invoker.set_on_start(SimpleCommand("Say Hi!"))
-    receiver = Receiver()
-    invoker.set_on_finish(ComplexCommand(
-        receiver, "Send email", "Save report"))
-
-    invoker.do_something_important()
-
-# Invoker: Does anybody want something done before I begin?
-# SimpleCommand: See, I can do simple things like printing (Say Hi!)
-# Invoker: ...doing something really important...
-# Invoker: Does anybody want something done after I finish?
-# ComplexCommand: Complex stuff should be done by a receiver object
-# Receiver: Working on (Send email.)
-# Receiver: Also working on (Save report.)
+# # -*- coding: utf-8 -*-
+#
+# ____ -f ______ a..
+# ____ a.. ______ ABC, a..
+#
+#
+# c_ Command A..
+#     """
+#     Интерфейс Команды объявляет метод для выполнения команд.
+#     """
+#
+#     ??
+#     ___ execute __ ?
+#         p..
+#
+#
+# c_ SimpleCommand C..
+#     """
+#     Некоторые команды способны выполнять простые операции самостоятельно.
+#     """
+#
+#     ___ - payload st. __ ?
+#         _payload _ payload
+#
+#     ___ execute __ ?
+#         print(_*SimpleCommand: See, I can do simple things like printing"
+#               _*||_p..
+#
+#
+# c_ ComplexCommand C..
+#     """
+#     Но есть и команды, которые делегируют более сложные операции другим
+#     объектам, называемым «получателями».
+#     """
+#
+#     ___ - receiver R.. a st. b st. __ ?
+#         """
+#         Сложные команды могут принимать один или несколько объектов-получателей
+#         вместе с любыми данными о контексте через конструктор.
+#         """
+#
+#         _?  ?
+#         _?  ?
+#         _?  ?
+#
+#     ___ execute __ ?
+#         """
+#         Команды могут делегировать выполнение любым методам получателя.
+#         """
+#
+#         print("ComplexCommand: Complex stuff should be done by a receiver object", e.._"")
+#         -r__.d_s.. _a
+#         -r__.d_s_e.. _b
+#
+#
+# c_ Receiver
+#     """
+#     Классы Получателей содержат некую важную бизнес-логику. Они умеют выполнять
+#     все виды операций, связанных с выполнением запроса. Фактически, любой класс
+#     может выступать Получателем.
+#     """
+#
+#     ___ do_something a st. __ ?
+#         print(_*\nReceiver: Working on ||?.)", e.._"")
+#
+#     ___ do_something_else b st. __ ?
+#         print(_*\nReceiver: Also working on ||?.)", e.._"")
+#
+#
+# c_ Invoker
+#     """
+#     Отправитель связан с одной или несколькими командами. Он отправляет запрос
+#     команде.
+#     """
+#
+#     _on_start _ N..
+#     _on_finish _ N..
+#
+#     """
+#     Инициализация команд.
+#     """
+#
+#     ___ set_on_start command C..
+#         _on_start _ ?
+#
+#     ___ set_on_finish command C..
+#         _on_finish _ ?
+#
+#     ___ do_something_important __ ?
+#         """
+#         Отправитель не зависит от классов конкретных команд и получателей.
+#         Отправитель передаёт запрос получателю косвенно, выполняя команду.
+#         """
+#
+#         print("Invoker: Does anybody want something done before I begin?")
+#         __ isi.. _o_s_ C..
+#             _o_s__.ex..
+#
+#         print("Invoker: ...doing something really important...")
+#
+#         print("Invoker: Does anybody want something done after I finish?")
+#         __ isi.. _o_f.. C..
+#             _o_f__.e..
+#
+#
+# __ _______ __ ______
+#     """
+#     Клиентский код может параметризовать отправителя любыми командами.
+#     """
+#
+#     invoker _ I..
+#     ?.s_o_s.. S.. "Say Hi!"
+#     receiver _ R..
+#     i___.s_o_f.. CC..(
+#         r... "Send email", "Save report"
+#
+#     i____.d_s_i..
+#
+# # Invoker: Does anybody want something done before I begin?
+# # SimpleCommand: See, I can do simple things like printing (Say Hi!)
+# # Invoker: ...doing something really important...
+# # Invoker: Does anybody want something done after I finish?
+# # ComplexCommand: Complex stuff should be done by a receiver object
+# # Receiver: Working on (Send email.)
+# # Receiver: Also working on (Save report.)
