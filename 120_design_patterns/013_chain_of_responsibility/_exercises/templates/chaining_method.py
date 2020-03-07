@@ -1,37 +1,37 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-____ __future__ ______ print_function
-
-
-class Person(object):
-
-    def __init__(self, name, action):
-        self.name = name
-        self.action = action
-
-    def do_action(self):
-        print(self.name, self.action.name, end=' ')
-        return self.action
-
-
-class Action(object):
-
-    def __init__(self, name):
-        self.name = name
-
-    def amount(self, val):
-        print(val, end=' ')
-        return self
-
-    def stop(self):
-        print('then stop')
-
-__ _______ __ ______
-
-    move = Action('move')
-    person = Person('Jack', move)
-    person.do_action().amount('5m').stop()
-
-### OUTPUT ###
-# Jack move 5m then stop
+# #!/usr/bin/env python
+# # -*- coding: utf-8 -*-
+#
+# ____ -f ______ p..
+#
+#
+# c_ Person o..
+#
+#     ___ - name action
+#         ?  ?
+#         ?  ?
+#
+#     ___ do_action
+#         print name a__.n.. e.._' '
+#         r_ a..
+#
+#
+# c_ Action o..
+#
+#     ___ - name
+#         ?  ?
+#
+#     ___ amount val
+#         print ? e.._' '
+#         r_ ?
+#
+#     ___ stop
+#         print('then stop')
+#
+# __ _______ __ ______
+#
+#     move = A.. 'move')
+#     person = P.. 'Jack', ?
+#     ?.d__.am.. '5m' .st..
+#
+# ### OUTPUT ###
+# # Jack move 5m then stop
