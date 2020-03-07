@@ -1,0 +1,9 @@
+You are a consultant called to help automate a bakery.  This particular bakery
+is famous for two things: its breads and its cakes.
+
+You start off creating a Bread class and Cake class to represent these products.
+As you do though, you begin to see some duplication of preparation steps and 
+of course the final baking in the oven.
+
+Use the Template Method pattern to standardize the baking steps and achieve As
+much code reuse as possible.
