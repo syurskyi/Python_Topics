@@ -1,14 +1,9 @@
-#!/usr/bin/python
-# Authoer: Spencer.Luo
-# Date: 11/12/2017
-
-# Version 1.0
 #=======================================================================================================================
 from abc import ABCMeta, abstractmethod
-# 引入ABCMeta和abstractmethod来定义抽象类和抽象方法
+# Introduce ABCMeta and abstractmethod to define abstract classes and abstract methods
 
 class ReceiveParcel(metaclass=ABCMeta):
-    """接收包裹抽象类"""
+    """Receive Parcel Abstract Class"""
 
     def __init__(self, name):
         self.__name = name
@@ -22,7 +17,7 @@ class ReceiveParcel(metaclass=ABCMeta):
 
 
 # class TonyReception(ReceiveParcel):
-#     """Tony接收"""
+#     """Tony receives"""
 #
 #     def __init__(self, name, phoneNum):
 #         super().__init__(name)
@@ -32,33 +27,33 @@ class ReceiveParcel(metaclass=ABCMeta):
 #         return self.__phoneNum
 #
 #     def receive(self, parcelContent):
-#         print("货物主人：%s，手机号：%s" % (self.getName(), self.getPhoneNum()) )
-#         print("接收到一个包裹，包裹内容：%s" % parcelContent)
+#         print("Cargo owner：%s，phone number：%s" % (self.getName(), self.getPhoneNum()) )
+#         print("Received a parcel，Package contents:%s" % parcelContent)
 #
 #
 # class WendyReception(ReceiveParcel):
-#     """Wendy代收"""
+#     """Wendy Collection"""
 #
 #     def __init__(self, name, receiver):
 #         super().__init__(name)
 #         self.__receiver = receiver
 #
 #     def receive(self, parcelContent):
-#         print("我是%s的朋友，我来帮他代收快递！" % (self.__receiver.getName() + "") )
+#         print("I'm a friend of %s, I'll help him collect the delivery!" % (self.__receiver.getName() + "") )
 #         if(self.__receiver is not None):
 #             self.__receiver.receive(parcelContent)
-#         print("代收人：%s" % self.getName())
+#         print("Income:%s" % self.getName())
 
 
 # Version 2.0
 #=======================================================================================================================
-# 代码框架
+# Code framework
 #==============================
 from abc import ABCMeta, abstractmethod
-# 引入ABCMeta和abstractmethod来定义抽象类和抽象方法
+# Introduce ABCMeta and abstractmethod to define abstract classes and abstract methods
 
 class Subject(metaclass=ABCMeta):
-    """主题类"""
+    """Theme class"""
 
     def __init__(self, name):
         self.__name = name
@@ -72,14 +67,14 @@ class Subject(metaclass=ABCMeta):
 
 
 class RealSubject(Subject):
-    """真实主题类"""
+    """Real theme"""
 
     def request(self, content):
         print("RealSubject todo something...")
 
 
 class ProxySubject(Subject):
-    """代理主题类"""
+    """Agent theme class"""
 
     def __init__(self, name, subject):
         super().__init__(name)
@@ -98,11 +93,11 @@ class ProxySubject(Subject):
         print("afterRequest")
 
 
-# 基于框架的实现
+# Framework-based implementation
 #==============================
 
 class TonyReception(Subject):
-    """Tony接收"""
+    """Tony receives"""
 
     def __init__(self, name, phoneNum):
         super().__init__(name)
@@ -112,52 +107,52 @@ class TonyReception(Subject):
         return self.__phoneNum
 
     def request(self, content):
-        print("货物主人：%s，手机号：%s" % (self.getName(), self.getPhoneNum()))
-        print("接收到一个包裹，包裹内容：%s" % str(content))
+        print("Cargo owner: %s，phone number: %s" % (self.getName(), self.getPhoneNum()))
+        print("Received a package, package content: %s" % str(content))
 
 
 class WendyReception(ProxySubject):
-    """Wendy代收"""
+    """Wendy Collection"""
 
     def __init__(self, name, receiver):
         super().__init__(name, receiver)
 
     def preRequest(self):
-        print("我是%s的朋友，我来帮他代收快递！" % (self._realSubject.getName() + ""))
+        print("I'm a friend of %s  I'll help him collect the delivery!" % (self._realSubject.getName() + ""))
 
     def afterRequest(self):
-        print("代收人：%s" % self.getName())
+        print("Recipient: %s" % self.getName())
 
 
 # Test
 #=======================================================================================================================
-def testReceiveParcel():
+def ReceiveParcel():
     tony = TonyReception("Tony", "18512345678")
-    print("Tony接收：")
-    tony.receive("雪地靴")
+    print("Tony receives:")
+    tony.receive("Snow boots")
     print()
 
-    print("Wendy代收：")
+    print("Wendy Collection:")
     wendy = WendyReception("Wendy", tony)
-    wendy.receive("雪地靴")
+    wendy.receive("Snow boots")
 
 
-def testProxy():
+def Proxy():
     realObj = RealSubject('RealSubject')
     proxyObj = ProxySubject('ProxySubject', realObj)
     proxyObj.request()
 
-def testReceiveParcel2():
+def ReceiveParcel2():
     tony = TonyReception("Tony", "18512345678")
-    print("Tony接收：")
-    tony.request("雪地靴")
+    print("Tony receives: ")
+    tony.request("Snow boots")
     print()
 
-    print("Wendy代收：")
+    print("Wendy Collection:")
     wendy = WendyReception("Wendy", tony)
-    wendy.request("雪地靴")
+    wendy.request("Snow Boots")
 
-# testReceiveParcel()
-# testProxy()
-testReceiveParcel2()
+# ReceiveParcel()
+# Proxy()
+ReceiveParcel2()
 
