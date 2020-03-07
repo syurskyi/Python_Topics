@@ -1,43 +1,43 @@
-"""
-"Using the __new__() method to override instance creation process" section
-example of overriding `__new__()` method to count class instances
-
-"""
-from random import randint
-
-
-class InstanceCountingClass:
-    instances_created = 0
-
-    def __new__(cls, *args, **kwargs):
-        print('__new__() called with:', cls, args, kwargs)
-        instance = super().__new__(cls)
-        instance.number = cls.instances_created
-        cls.instances_created += 1
-
-        return instance
-
-    def __init__(self, attribute):
-        print('__init__() called with:', self, attribute)
-        self.attribute = attribute
-
-
-if __name__ == "__main__":
-    print(
-        "InstanceCountingClass.instances_created =",
-        InstanceCountingClass.instances_created
-    )
-
-    desired_count = randint(2, 10)
-    print(
-        "Creating {} instances of InstanceCountingClass..."
-        "".format(desired_count)
-    )
-
-    for number in range(desired_count):
-        InstanceCountingClass(number)
-
-    print(
-        "InstanceCountingClass.instances_created =",
-        InstanceCountingClass.instances_created
-    )
+# """
+# "Using the __new__() method to override instance creation process" section
+# example of overriding `__new__()` method to count class instances
+# 
+# """
+# ____ ra... ______ r_i..
+# 
+# 
+# c_ InstanceCountingClass:
+#     instances_created _ 0
+# 
+#     ___ -n ___ $ $$
+#         print('__new__() called with:' ___ a.. kw..
+#         instance _ s___ . -n ___
+#         ?.nu.. _ ___.i_c..
+#         ___.i_c.. +_ 1
+# 
+#         r_ i...
+# 
+#     ___ - attribute
+#         print('__init__() called with:' ? ?
+#         ?  ?
+# 
+# 
+# __ _______ __ _______
+#     print(
+#         "InstanceCountingClass.instances_created _",
+#         I___.i_c..
+#     )
+# 
+#     desired_count _ r_i.. 2 10
+#     print(
+#         "Creating @ instances of InstanceCountingClass..."
+#         "".f... ?
+#     )
+# 
+#     ___ number __ ra.. ?
+#         I___ ?
+# 
+#     print(
+#         "InstanceCountingClass.instances_created _",
+#         I____.i_c..
+#     )

@@ -1,70 +1,28 @@
-#!/usr/bin/python
-# Authoer: Spencer.Luo
-# Date: 6/30/2018
-
-# Version 1.0
-#=======================================================================================================================
-# from abc import ABCMeta, abstractmethod
-# # 引入ABCMeta和abstractmethod来定义抽象类和抽象方法
-#
-# class DesignPatternBook:
-#     """《从生活的角度解读设计模式》一书"""
-#     def getName(self):
-#         return "《从生活的角度解读设计模式》"
-#
-#
-# class Reader(metaclass=ABCMeta):
-#     """访问者，也就是读者"""
-#
-#     @abstractmethod
-#     def read(self, book):
-#         pass
-#
-# class Engineer(Reader):
-#     """工程师"""
-#
-#     def read(self, book):
-#         print("技术狗读%s一书后的感受：能抓住模式的核心思想，深入浅出，很有见地！" % book.getName())
-#
-#
-# class ProductManager(Reader):
-#     """产品经理"""
-#
-#     def read(self, book):
-#         print("产品经理读%s一书后的感受：配图非常有趣，文章很有层次感！" % book.getName())
-#
-# class OtherFriend(Reader):
-#     """IT圈外的朋友"""
-#
-#     def read(self, book):
-#         print("IT圈外的朋友读%s一书后的感受：技术的内容一脸懵逼，但故事很精彩，像是看小说或是故事集！"
-#               % book.getName())
-
 # Version 2.0
 #=======================================================================================================================
-# 代码框架
+# Code framework
 #==============================
 from abc import ABCMeta, abstractmethod
-# 引入ABCMeta和abstractmethod来定义抽象类和抽象方法
+# Introduce ABCMeta and abstractmethod to define abstract classes and abstract methods
 
 class DataNode(metaclass=ABCMeta):
-    """数据结构类"""
+    """Data Structure Class"""
 
     def accept(self, visitor):
-        """接受访问者的访问"""
+        """Accept visitors"""
         visitor.visit(self)
 
 class Visitor(metaclass=ABCMeta):
-    """访问者"""
+    """Visitors"""
 
     @abstractmethod
     def visit(self, data):
-        """对数据对象的访问操作"""
+        """Access operations on data objects"""
         pass
 
 
 class ObjectStructure:
-    """数据结构的管理类，也是数据对象的一个容器，可遍历容器内的所有元素"""
+    """The management class of the data structure is also a container for the data object, which can traverse all the elements in the container"""
 
     def __init__(self):
         self.__datas = []
@@ -73,46 +31,46 @@ class ObjectStructure:
         self.__datas.append(dataElement)
 
     def action(self, visitor):
-        """进行数据访问的操作"""
+        """Operations for data access"""
         for data in self.__datas:
             data.accept(visitor)
 
 
-# 基于框架的实现
+# Framework-based implementation
 #==============================
 class DesignPatternBook(DataNode):
-    """《从生活的角度解读设计模式》一书"""
+    """Interpreting Design Patterns from a Life Perspective"""
 
     def getName(self):
-        return "《从生活的角度解读设计模式》"
+        return "Interpreting design patterns from a life perspective》"
 
 
 class Engineer(Visitor):
-    """工程师"""
+    """engineer"""
 
     def visit(self, book):
-        print("技术狗读%s一书后的感受：能抓住模式的核心思想，深入浅出，很有见地！" % book.getName())
+        print("Technical dog's feeling after reading the book %s: Can grasp the core idea of the model, explain it in a simple way, very insightful!" % book.getName())
 
 
 class ProductManager(Visitor):
-    """产品经理"""
+    """Product manager"""
 
     def visit(self, book):
-        print("产品经理读%s一书后的感受：配图非常有趣，文章很有层次感！" % book.getName())
+        print("Product manager's feelings after reading the book %s: The picture is very interesting, and the article is very layered!" % book.getName())
 
 
 class OtherFriend(Visitor):
-    """IT圈外的朋友"""
+    """Friends outside the IT circle"""
 
     def visit(self, book):
-        print("IT圈外的朋友读%s一书后的感受：技术的内容一脸懵逼，但故事很精彩，像是看小说或是故事集！"
+        print("Friends outside the IT circle feel after reading the book %s: the content of technology is aggressive, but the story is very exciting, like watching a novel or a story collection!"
               % book.getName())
 
 
-# 实战
+# Actual combat
 # =======================================================================================================================
 class Animal(DataNode):
-    """动物类"""
+    """Animal"""
 
     def __init__(self, name, isMale, age, weight):
         self.__name = name
@@ -133,27 +91,27 @@ class Animal(DataNode):
         return self.__weight
 
 class Cat(Animal):
-    """猫"""
+    """Cat"""
 
     def __init__(self, name, isMale, age, weight):
         super().__init__(name, isMale, age, weight)
 
     def speak(self):
-        print("miao~")
+        print("miao")
 
 
 class Dog(Animal):
-    """狗"""
+    """dog"""
 
     def __init__(self,  name, isMale, age, weight):
         super().__init__( name, isMale, age, weight)
 
     def speak(self):
-        print("wang~")
+        print("wang")
 
 
 class GenderCounter(Visitor):
-    """性别统计"""
+    """Sex statistics"""
 
     def __init__(self):
         self.__maleCat = 0
@@ -176,12 +134,12 @@ class GenderCounter(Visitor):
             print("Not support this type")
 
     def getInfo(self):
-        print("%d只雄猫，%d只雌猫，%d只雄狗，%d只雌狗。"
+        print("%d males, %d females, %d males, %d females."
               % (self.__maleCat, self.__femaleCat, self.__maleDog, self.__femalDog) )
 
 
 class WeightCounter(Visitor):
-    """体重的统计"""
+    """Statistics of weight"""
 
     def __init__(self):
         self.__catNum = 0
@@ -200,12 +158,12 @@ class WeightCounter(Visitor):
             print("Not support this type")
 
     def getInfo(self):
-        print("猫的平均体重是：%0.2fkg， 狗的平均体重是：%0.2fkg" %
+        print("The average weight of cats is: %0.2fkg, the average weight of dogs is: %0.2fkg " %
               ((self.__catWeight / self.__catNum),(self.__dogWeight / self.__dogNum)))
 
 
 class AgeCounter(Visitor):
-    """年龄统计"""
+    """Age statistics"""
 
     def __init__(self):
         self.__catMaxAge = 0
@@ -222,7 +180,7 @@ class AgeCounter(Visitor):
             print("Not support this type")
 
     def getInfo(self):
-        print("猫的最大年龄是：%s，狗的最大年龄是：%s" % (self.__catMaxAge, self.__dogMaxAge) )
+        print("The maximum age of a cat is: %s, and the maximum age of a dog is: %s" % (self.__catMaxAge, self.__dogMaxAge) )
 
 # Test
 #=======================================================================================================================
