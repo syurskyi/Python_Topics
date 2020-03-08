@@ -1,60 +1,60 @@
-#!/usr/bin/env python
-# Written by: DGC
-
-import re
-
-#==============================================================================
-class CamelCase(object):
-
-    def __init__(self):
-        self.SomeProperty = "A property"
-
-    def SomeMethod(self, argument):
-        print(argument)
-
-#==============================================================================
-class CamelCaseInterpreter(object):
-    
-    def __init__(self, old_class):
-        super(CamelCaseInterpreter, self).__setattr__("__old_class", old_class)
-
-    def __getattribute__(self, name):
-        old_class = super(CamelCaseInterpreter, self).__getattribute__("__old_class")
-        converter = super(CamelCaseInterpreter, self).__getattribute__("name_converter")
-        return old_class.__getattribute__(converter(name))
-
-    def __setattr__(self, name, value):
-        old_class = super(CamelCaseInterpreter, self).__getattribute__("__old_class")
-        converter = super(CamelCaseInterpreter, self).__getattribute__("name_converter")
-        old_class.__setattr__(converter(name), value)
-
-    def name_converter(self, name):
-        """ 
-        Converts function/property names which are lowercase with underscores 
-        to CamelCase. i.e some_property becomes SomeProperty.
-        """
-        new_name = name[0].upper()
-        previous_underscore = new_name == "_"
-        for char in name[1:]:
-            if (char == "_"):
-                previous_underscore = True
-            else:
-                if (previous_underscore):
-                    new_name += char.upper()
-                else:
-                    new_name += char
-                previous_underscore = False
-        return new_name
-
-#==============================================================================
-if (__name__ == "__main__"):
-    old_class = CamelCase()
-
-    interpreted_class = CamelCaseInterpreter(old_class)
-    print(interpreted_class.some_property)
-
-    interpreted_class.some_property = "Newly set property"
-    print(interpreted_class.some_property)
-
-    interpreted_class.some_method("Argument to some_method")
-    
+# #!/usr/bin/env python
+# # Written by: DGC
+#
+# import re
+#
+# #==============================================================================
+# c_ CamelCase o..
+#
+#     ___ -
+#         SomeProperty _ "A property"
+#
+#     ___ SomeMethod argument
+#         print ?
+#
+# #==============================================================================
+# c_ CamelCaseInterpreter o..
+#
+#     ___ - old_class
+#         s___ C.., ? . -s ("__old_class" ?
+#
+#     ___ __getattribute__ name
+#         old_class _ s___ C.. ? . -g ("__old_class")
+#         converter _ s___ C.. ? . -g ("name_converter")
+#         r_ o_c__. -g  con.. n..
+#
+#     ___ -s name value
+#         old_class _ s___ C.. ? . -g ("__old_class")
+#         converter _ s___ C.. ? . -g ("name_converter")
+#         ?. -s  c.. n.. v..
+#
+#     ___ name_converter name
+#         """
+#         Converts function/property names which are lowercase with underscores
+#         to CamelCase. i.e some_property becomes SomeProperty.
+#         """
+#         new_name _ n.. 0 .up..
+#         previous_underscore _ ? __ "_"
+#         ___ char __ n..|1;
+#             __ ? __ "_"
+#                 p_u.. _ T..
+#             ____
+#                 __ p_u..
+#                     n_n.. +_ ?.up..
+#                 ____
+#                     n_n.. +_ ?
+#                 p_u.. _ F..
+#         r_ n_n..
+#
+# #==============================================================================
+# __ _______ __ ______
+#     old_class _ C..
+#
+#     interpreted_class _ C.. ?
+#     print i_c_.s_p..
+#
+#     i_c__.s_p.. _ "Newly set property"
+#     print(i_c__.s_p..
+#
+#     i_c__.s_m..("Argument to some_method")
+#
