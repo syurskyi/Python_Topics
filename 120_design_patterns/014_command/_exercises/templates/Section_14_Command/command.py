@@ -1,80 +1,80 @@
-from abc import ABC
-from enum import Enum
-
-
-class BankAccount:
-    OVERDRAFT_LIMIT = -500
-
-    def __init__(self, balance=0):
-        self.balance = balance
-
-    def deposit(self, amount):
-        self.balance += amount
-        print(f'Deposited {amount}, balance = {self.balance}')
-
-    def withdraw(self, amount):
-        if self.balance - amount >= BankAccount.OVERDRAFT_LIMIT:
-            self.balance -= amount
-            print(f'Withdrew {amount}, balance = {self.balance}')
-            return True
-        return False
-
-    def __str__(self):
-        return f'Balance = {self.balance}'
-
-
-# optional
-class Command(ABC):
-    def invoke(self):
-        pass
-
-    def undo(self):
-        pass
-
-
-class BankAccountCommand(Command):
-    def __init__(self, account, action, amount):
-        self.amount = amount
-        self.action = action
-        self.account = account
-        self.success = None
-
-    class Action(Enum):
-        DEPOSIT = 0
-        WITHDRAW = 1
-
-    def invoke(self):
-        if self.action == self.Action.DEPOSIT:
-            self.account.deposit(self.amount)
-            self.success = True
-        elif self.action == self.Action.WITHDRAW:
-            self.success = self.account.withdraw(self.amount)
-
-    def undo(self):
-        if not self.success:
-            return
-        # strictly speaking this is not correct
-        # (you don't undo a deposit by withdrawing)
-        # but it works for this demo, so...
-        if self.action == self.Action.DEPOSIT:
-            self.account.withdraw(self.amount)
-        elif self.action == self.Action.WITHDRAW:
-            self.account.deposit(self.amount)
-
-
-if __name__ == '__main__':
-    ba = BankAccount()
-    cmd = BankAccountCommand(ba, BankAccountCommand.Action.DEPOSIT, 100)
-    cmd.invoke()
-    print('After $100 deposit:', ba)
-
-    cmd.undo()
-    print('$100 deposit undone:', ba)
-
-    illegal_cmd = BankAccountCommand(ba, BankAccountCommand.Action.WITHDRAW, 1000)
-    illegal_cmd.invoke()
-    print('After impossible withdrawal:', ba)
-    illegal_cmd.undo()
-    print('After undo:', ba)
-
-
+# ___ a.. ______ A..
+# ___ e..  ______ E..
+#
+#
+# c_ BankAccount
+#     OVERDRAFT_LIMIT _ -500
+#
+#     ___ - balance_0
+#         ?  ?
+#
+#     ___ deposit  amount
+#         b___ +_ ?
+#         print _*Deposited |?, balance _ |b..
+#
+#     ___ withdraw amount
+#         __ b... - ? >_ BA___.O...
+#             b... -_ a..
+#             print _*Withdrew |a..., balance _ |b...
+#             r_ T..
+#         r_ F..
+#
+#     ___ -s
+#         r_ _*Balance _ |b..
+#
+#
+# # optional
+# c_ Command A..
+#     ___ invoke
+#         p..
+#
+#     ___ undo(
+#         p..
+#
+#
+# c_ BankAccountCommand C..
+#     ___ -  account, action, amount
+#         am.. _ am..
+#         ac.. _ ac..
+#         acc.. _ acc..
+#         success _ N..
+#
+#     c_ Action E..
+#         DEPOSIT _ 0
+#         WITHDRAW _ 1
+#
+#     ___ invoke
+#         __ action __ A__.D..
+#             acc___.de.. am..
+#             success _ T..
+#         ____ action __ A__.W..
+#             success _ acc___.wi.. am..
+#
+#     ___ undo
+#         __ no. success
+#             r_
+#         # strictly speaking this is not correct
+#         # (you don't undo a deposit by withdrawing)
+#         # but it works for this demo, so...
+#         __ action __ A__.D..
+#             acc__.wi.. am..
+#         ____ action __ A___.W..
+#             acc__.de.. am..
+#
+#
+# __ _______ __ ______
+#     ba _ BA..
+#     cmd _ BAC.. ? BAC___.A__.DE.. 100
+#     ?.in..
+#     print('After $100 deposit:' b.
+#
+#     c__.un..
+#     print('$100 deposit undone:' b.
+#
+#     illegal_cmd _ BAC.. b. BAC__.A__.W.. 1000
+#     ?.in..
+#     print('After impossible withdrawal:', b.
+#     i_c_.un..
+#     print('After undo:', b.
+#
+#
