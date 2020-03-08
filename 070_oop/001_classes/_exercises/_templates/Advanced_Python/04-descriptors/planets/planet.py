@@ -1,82 +1,82 @@
-from weakref import WeakKeyDictionary
-
-
-class Positive:
-
-    def __init__(self):
-        self._instance_data = WeakKeyDictionary()
-
-    def __get__(self, instance, owner):
-        if instance is None:
-            return self
-        return self._instance_data[instance]
-
-    def __set__(self, instance, value):
-        if value <= 0:
-            raise ValueError("Value {} is not positive".format(value))
-        self._instance_data[instance] = value
-
-    def __delete__(self, instance):
-        raise AttributeError("Cannot delete attribute")
-
-
-class Planet:
-
-    def __init__(self,
-                 name,
-                 radius_metres,
-                 mass_kilograms,
-                 orbital_period_seconds,
-                 surface_temperature_kelvin):
-        self.name = name
-        self.radius_metres = radius_metres
-        self.mass_kilograms = mass_kilograms
-        self.orbital_period_seconds = orbital_period_seconds
-        self.surface_temperature_kelvin = surface_temperature_kelvin
-
-    @property
-    def name(self):
-        return self._name
-
-    @name.setter
-    def name(self, value):
-        if not value:
-            raise ValueError("Cannot set empty Planet.name")
-        self._name = value
-
-    radius_metres = Positive()
-    mass_kilograms = Positive()
-    orbital_period_seconds = Positive()
-    surface_temperature_kelvin = Positive()
-
-
-def main():
-
-    mercury = Planet("Mercury",
-                     radius_metres=2439.7e3,
-                     mass_kilograms=3.3022e23,
-                     orbital_period_seconds=7.60052e6,
-                     surface_temperature_kelvin=340)
-
-    venus = Planet("Venus",
-                   radius_metres=6051.8e3,
-                   mass_kilograms=4.8676e24,
-                   orbital_period_seconds=1.94142e7,
-                   surface_temperature_kelvin=737)
-
-    earth = Planet("Earth",
-                   radius_metres=6371.0e3,
-                   mass_kilograms=5.972e24,
-                   orbital_period_seconds=3.15581e7,
-                   surface_temperature_kelvin=288)
-
-    mars = Planet("Mars",
-                  radius_metres=3389.5e3,
-                  mass_kilograms=6.4185e23,
-                  orbital_period_seconds=5.93543e7,
-                  surface_temperature_kelvin=210)
-
-    return mercury, venus, earth, mars
-
-if __name__ == '__main__':
-  main()
+# ____ w_r_ ______ WKD..
+#
+#
+# c_ Positive
+#
+#     ___ -
+#         _instance_data _ WKD..
+#
+#     ___ -g instance owner
+#         __ i____ __ N..
+#             r_ ?
+#         r_ _i..|i____
+#
+#     ___ -s instance value
+#         __ ? <_ 0
+#             r_ V...("Value @ __ not positive".f.. ?
+#         _i..|i___ _ ?
+#
+#     ___ -d instance
+#         r_ A... "Cannot delete attribute"
+#
+#
+# c_ Planet
+#
+#     ___ -
+#                  name
+#                  radius_metres
+#                  mass_kilograms
+#                  orbital_period_seconds
+#                  surface_temperature_kelvin
+#         ?  ?
+#         ?  ?
+#         ?  ?
+#         ?  ?
+#         ?  ?
+#
+#     ??
+#     ___ name
+#         r_ _?
+#
+#     ??.?
+#     ___ name value
+#         __ no. ?
+#             r_ V..("Cannot set empty Planet.name")
+#         _n.. _ ?
+#
+#     radius_metres _ P..
+#     mass_kilograms _ P..
+#     orbital_period_seconds _ P..
+#     surface_temperature_kelvin _ P..
+#
+#
+# ___ main
+#
+#     mercury _ P..(*?
+#                      radius_metres_2439.7e3,
+#                      mass_kilograms_3.3022e23,
+#                      orbital_period_seconds_7.60052e6,
+#                      surface_temperature_kelvin_340)
+#
+#     venus _ P..(*?
+#                    radius_metres_6051.8e3,
+#                    mass_kilograms_4.8676e24,
+#                    orbital_period_seconds_1.94142e7,
+#                    surface_temperature_kelvin_737)
+#
+#     earth _ P..(*?
+#                    radius_metres_6371.0e3,
+#                    mass_kilograms_5.972e24,
+#                    orbital_period_seconds_3.15581e7,
+#                    surface_temperature_kelvin_288)
+#
+#     mars _ P..(*?
+#                   radius_metres_3389.5e3,
+#                   mass_kilograms_6.4185e23,
+#                   orbital_period_seconds_5.93543e7,
+#                   surface_temperature_kelvin_210)
+#
+#     r_ mercury, venus, earth, mars
+#
+# __ _______ __ ______ __
+#   ?
