@@ -1,318 +1,313 @@
-#!/usr/bin/python
-# Authoer: Spencer.Luo
-# Date: 11/17/2017
-
-# Version 1.0
-#=======================================================================================================================
-class HouseInfo:
-    """Listing Information"""
-
-    def __init__(self, area, price, hasWindow, hasBathroom, hasKitchen, address, owner):
-        self.__area = area
-        self.__price = price
-        self.__hasWindow = hasWindow
-        self.__hasBathroom = hasBathroom
-        self.__hasKitchen = hasKitchen
-        self.__address = address
-        self.__owner = owner
-
-    def getAddress(self):
-        return self.__address
-
-    def getOwnerName(self):
-        return self.__owner.getName()
-
-    def showInfo(self, isShowOwner = True):
-        print("Area: " + str(self.__area) + "square meter",
-              "Price: " + str(self.__price) + "yuan",
-              "Window: " + ("Yes" if self.__hasWindow else "No"),
-              "Bathroom: " + self.__hasBathroom,
-              "Kitchen:" + ("Yes" if self.__hasKitchen else "No"),
-              "Address:" + self.__address,
-              "Host:" + self.getOwnerName() if isShowOwner else "")
-
-
-class HousingAgency:
-    """Housing agency"""
-
-    def __init__(self, name):
-        self.__houseInfos = []
-        self.__name = name
-
-    def getName(self):
-        return self.__name
-
-    def addHouseInfo(self, houseInfo):
-        self.__houseInfos.append(houseInfo)
-
-    def removeHouseInfo(self, houseInfo):
-        for info in self.__houseInfos:
-            if(info == houseInfo):
-                self.__houseInfos.remove(info)
-
-    def getSearchCondition(self, description):
-        """Here's a logic that turns user descriptions into search criteria
-         (To save space, return to the description as it is)"""
-        return description
-
-    def getMatchInfos(self, searchCondition):
-        """Find the best match based on the properties of the listing
-         (To save space, the matching process is omitted here, all output)"""
-        print(self.getName(), "Find the best fit for you:")
-        for info in self.__houseInfos:
-            info.showInfo(False)
-        return  self.__houseInfos
-
-    def signContract(self, houseInfo, period):
-        """Sign an agreement with the landlord"""
-        print(self.getName(), "With the host", houseInfo.getOwnerName(), "Sign", houseInfo.getAddress(),
-              "Lease contract for house", period, "year. During the contract", self.getName(), "Right to use and sublet it!")
-
-    def signContracts(self, period):
-        for info in self.__houseInfos :
-            self.signContract(info, period)
-
-
-class HouseOwner:
-    """landlord"""
-
-    def __init__(self, name):
-        self.__name = name
-        self.__houseInfo = None
-
-    def getName(self):
-        return self.__name
-
-    def setHouseInfo(self, address, area, price, hasWindow, bathroom, kitchen):
-        self.__houseInfo = HouseInfo(area, price, hasWindow, bathroom, kitchen, address, self)
-
-    def publishHouseInfo(self, agency):
-        agency.addHouseInfo(self.__houseInfo)
-        print(self.getName() + "in", agency.getName(), "Post Property Rental Information:")
-        self.__houseInfo.showInfo()
-
-
-class Customer:
-    """Users, poor middle peasants renting houses"""
-
-    def __init__(self, name):
-        self.__name = name
-
-    def getName(self):
-        return self.__name
-
-    def findHouse(self, description, agency):
-        print("I am" + self.getName() + ", I want to find one\"" + description + "\"House of")
-        print()
-        return agency.getMatchInfos(agency.getSearchCondition(description))
-
-    def seeHouse(self, houseInfos):
-        """Go to the house and choose the most used house
-         (The process of viewing a house is omitted here)"""
-        size = len(houseInfos)
-        return houseInfos[size-1]
-
-    def signContract(self, houseInfo, agency, period):
-        """Sign an agreement with an intermediary"""
-        print(self.getName(), "Intermediary", agency.getName(), "Sign", houseInfo.getAddress(),
-              "Lease contract for a house", period, "year. During the contract", self.__name, "Right to use it!")
-
-# Version 2.0
-#=======================================================================================================================
-# Code framework
-#==============================
-class InteractiveObject:
-    """Objects to interact with"""
-    pass
-
-class InteractiveObjectImplA:
-    """Implementation class A"""
-    pass
-
-class InteractiveObjectImplB:
-    """Implementation class B"""
-    pass
-
-class Meditor:
-    """Intermediary"""
-
-    def __init__(self):
-        self.__interactiveObjA = InteractiveObjectImplA()
-        self.__interactiveObjB = InteractiveObjectImplB()
-
-    def interative(self):
-        """Interactive operation"""
-        # Complete the corresponding interactive operations through self .__ interactiveObjA and self .__ interactiveObjB
-        pass
-
-
-# Framework-based implementation
-#==============================
-from abc import ABCMeta, abstractmethod
-# 引入ABCMeta和abstractmethod来定义抽象类和抽象方法
-from enum import Enum
-# Enum enum syntax is supported after Python 3.4
-
-class DeviceType(Enum):
-    "Equipment type"
-    TypeSpeaker = 1
-    TypeMicrophone = 2
-    TypeCamera = 3
-
-class DeviceItem:
-    """Equipment item"""
-
-    def __init__(self, id, name, type, isDefault = False):
-        self.__id = id
-        self.__name = name
-        self.__type = type
-        self.__isDefault = isDefault
-
-    def __str__(self):
-        return "type:" + str(self.__type) + " id:" + str(self.__id) \
-               + " name:" + str(self.__name) + " isDefault:" + str(self.__isDefault)
-
-    def getId(self):
-        return self.__id
-
-    def getName(self):
-        return self.__name
-
-    def getType(self):
-        return self.__type
-
-    def isDefault(self):
-        return self.__isDefault
-
-
-class DeviceList:
-    """Device List"""
-
-    def __init__(self):
-        self.__devices = []
-
-    def add(self, deviceItem):
-        self.__devices.append(deviceItem)
-
-    def getCount(self):
-        return len(self.__devices)
-
-    def getByIdx(self, idx):
-        if idx < 0 or idx >= self.getCount():
-            return None
-        return self.__devices[idx]
-
-    def getById(self, id):
-        for item in self.__devices:
-            if( item.getId() == id):
-                return item
-        return None
-
-class DeviceMgr(metaclass=ABCMeta):
-
-    @abstractmethod
-    def enumerate(self):
-        """Enumerating the device list
-         (When the program is initialized, the device list must be re-obtained when there is a device plug-in)"""
-        pass
-
-    @abstractmethod
-    def active(self, deviceId):
-        """Select the device you want to use"""
-        pass
-
-    @abstractmethod
-    def getCurDeviceId(self):
-        """Get the design ID currently in use"""
-        pass
-
-
-class SpeakerMgr(DeviceMgr):
-    """Speaker device management class"""
-
-    def __init__(self):
-        self.__curDeviceId = None
-
-    def enumerate(self):
-        """Enumerating the device list
-         (The real project should read the device information through the driver, here only the initialization is used to simulate)"""
-        devices = DeviceList()
-        devices.add(DeviceItem("369dd760-893b-4fe0-89b1-671eca0f0224", "Realtek High Definition Audio", DeviceType.TypeSpeaker))
-        devices.add(DeviceItem("59357639-6a43-4b79-8184-f79aed9a0dfc", "NVIDIA High Definition Audio", DeviceType.TypeSpeaker, True))
-        return devices
-
-    def active(self, deviceId):
-        """Activate the specified device as the current device"""
-        self.__curDeviceId = deviceId
-
-    def getCurDeviceId(self):
-        return self.__curDeviceId
-
-
-class DeviceUtil:
-    """Equipment tools"""
-
-    def __init__(self):
-        self.__mgrs = {}
-        self.__mgrs[DeviceType.TypeSpeaker] = SpeakerMgr()
-        # 为节省篇幅，MicrophoneMgr和CameraMgr不再实现
-        # self.__microphoneMgr = MicrophoneMgr()
-        # self.__cameraMgr = CameraMgr
-
-    def __getDeviceMgr(self, type):
-        return self.__mgrs[type]
-
-    def getDeviceList(self, type):
-        return self.__getDeviceMgr(type).enumerate()
-
-    def active(self, type, deviceId):
-        self.__getDeviceMgr(type).active(deviceId)
-
-    def getCurDeviceId(self, type):
-        return self.__getDeviceMgr(type).getCurDeviceId()
-
-
-# Test
-#=======================================================================================================================
-
-def Renting():
-    myHome = HousingAgency("I love my home")
-    zhangsan = HouseOwner("Zhang San");
-    zhangsan.setHouseInfo("Upper Sicily", 20, 2500, 1, "individual washroom", 0)
-    zhangsan.publishHouseInfo(myHome)
-    lisi = HouseOwner("Li Si")
-    lisi.setHouseInfo("Contemporary Urban Home", 16, 1800, 1, "Public toilet", 0)
-    lisi.publishHouseInfo(myHome)
-    wangwu = HouseOwner("Wang Wu")
-    wangwu.setHouseInfo("Golden Beauty Garden", 18, 2600, 1, "独立卫生间", 1)
-    wangwu.publishHouseInfo(myHome)
-    print()
-
-    myHome.signContracts(3)
-    print()
-
-    tony = Customer("Tony")
-    houseInfos = tony.findHouse("About 18 square meters, you need to have independent guards and windows. It is best to face south. A kitchen is better! Price around 2000", myHome)
-    print()
-    print("Looking around, looking for the most suitable nest ...")
-    print()
-    AppropriateHouse = tony.seeHouse(houseInfos)
-    tony.signContract(AppropriateHouse, myHome, 1)
-
-
-def Devices():
-    deviceUtil = DeviceUtil()
-    deviceList = deviceUtil.getDeviceList(DeviceType.TypeSpeaker)
-    print("Microphone device list：")
-    if deviceList.getCount() > 0:
-        # Set the first device to be used
-        deviceUtil.active(DeviceType.TypeSpeaker, deviceList.getByIdx(0).getId())
-    for idx in range(0, deviceList.getCount()):
-        device = deviceList.getByIdx(idx)
-        print(device)
-    print("Equipment currently in use:"
-          + deviceList.getById(deviceUtil.getCurDeviceId(DeviceType.TypeSpeaker)).getName())
-
-
-# testRenting()
-Devices()
+# ========================================================================================================
+# c_ HouseInfo
+#     """Listing Information"""
+#
+#     ___ - area price hasWindow hasBathroom hasKitchen address owner
+#         __?  ?
+#         __?  ?
+#         __?  ?
+#         __?  ?
+#         __?  ?
+#         __?  ?
+#         __?  ?
+#
+#     ___ getAddress
+#         r_ __a..
+#
+#     ___ getOwnerName
+#         r_ __o__.gN..
+#
+#     ___ showInfo isShowOwner _ T..
+#         print("Area: " + st. __a.. + "square meter"
+#               "Price: " + st. __p.. + "yuan"
+#               "Window: " + "Yes" __ __hW.. ____ "No"
+#               "Bathroom: " + __hB..
+#               "Kitchen:" + ("Yes" __ __hK.. ____ "No"
+#               "Address:" + __a..
+#               "Host:" + gON.. __ iSO... ____ ""
+#
+#
+# c_ HousingAgency
+#     """Housing agency"""
+#
+#     ___ - name
+#         __houseInfos _   # list
+#         __?  ?
+#
+#     ___ getName
+#         r_ __n..
+#
+#     ___ addHouseInfo houseInfo
+#         __h___.ap.. ?
+#
+#     ___ removeHouseInfo houseInfo
+#         ___ info __ __h..
+#             __ |? __ ?
+#                 __h__.re.. ?
+#
+#     ___ getSearchCondition description
+#         """Here's a logic that turns user descriptions into search criteria
+#          (To save space, r_ to the description as it is)"""
+#         r_ ?
+#
+#     ___ getMatchInfos searchCondition
+#         """Find the best match based on the properties of the listing
+#          (To save space, the matching process is omitted here, all output)"""
+#         print(gN.. "Find the best fit ___ you:")
+#         ___ info __ __h..
+#             ?.sI.. F...
+#         r_  __h..
+#
+#     ___ signContract houseInfo period
+#         """Sign an agreement with the landlord"""
+#         print(gN.. "With the host" hI___.gON.. "Sign" hI___.gA..
+#               "Lease contract ___ house" p... "year. During the contract" gN.. "Right to use and sublet it!")
+#
+#     ___ signContracts period
+#         ___ info __ __h..
+#             sC.. i.. ?
+#
+#
+# c_ HouseOwner
+#     """landlord"""
+#
+#     ___ - name
+#         __? ?
+#         __houseInfo _ N..
+#
+#     ___ getName
+#         r_ __?
+#
+#     ___ setHouseInfo self address area price hasWindow bathroom kitchen
+#         __houseInfo _ HI.. area price hasWindow bathroom kitchen address ____
+#
+#     ___ publishHouseInfo agency
+#         ?.aHI.. __h..
+#         print(gN.. + "__" ?.gN.. "Post Property Rental Information:")
+#         __h____.shI..
+#
+#
+# c_ Customer
+#     """Users, poor middle peasants renting houses"""
+#
+#     ___ - name
+#         __?  ?
+#
+#     ___ getName
+#         r_ __?
+#
+#     ___ findHouse description agency
+#         print("I am" + gN.. + ", I want to find one\"" + ? + "\"House of")
+#         print()
+#         r_ ?.gMI.. a____.gSC... d...
+#
+#     ___ seeHouse houseInfos
+#         """Go to the house and choose the most used house
+#          (The process of viewing a house is omitted here)"""
+#         size _ le. hI..
+#         r_ hI...|s..-1
+#
+#     ___ signContract houseInfo agency period
+#         """Sign an agreement with an intermediary"""
+#         print(gN.. "Intermediary" a____.gN.. "Sign" hI___.gA..
+#               "Lease contract ___ a house" p___ "year. During the contract" __n.. "Right to use it!")
+#
+# # Version 2.0
+# #=======================================================================================================================
+# # Code framework
+# #==============================
+# c_ InteractiveObject
+#     """Objects to interact with"""
+#     p..
+#
+# c_ InteractiveObjectImplA
+#     """Implementation c_ A"""
+#     p..
+#
+# c_ InteractiveObjectImplB:
+#     """Implementation c_ B"""
+#     p..
+#
+# c_ Meditor
+#     """Intermediary"""
+#
+#     ___ -
+#         __interactiveObjA _ InteractiveObjectImplA
+#         __interactiveObjB _ InteractiveObjectImplB
+#
+#     ___ interative
+#         """Interactive operation"""
+#         # Complete the corresponding interactive operations through self .__ interactiveObjA and self .__ interactiveObjB
+#         p..
+#
+#
+# # Framework-based implementation
+# #==============================
+# ____ a.. ______ A.. a..
+# # Introduce ABCMeta and abstractmethod to define abstract classes and abstract methods
+# ____ e.. ______ E..
+# # Enum enum syntax is supported after Python 3.4
+#
+# c_ DeviceType E..
+#     "Equipment type"
+#     TypeSpeaker _ 1
+#     TypeMicrophone _ 2
+#     TypeCamera _ 3
+#
+# c_ DeviceItem
+#     """Equipment item"""
+#
+#     ___ -  id name type isDefault _ F...
+#         __?  ?
+#         __?  ?
+#         __?  ?
+#         __?  ?
+#
+#     ___ -s
+#         r_ "type:" + st. __t.. + " id:" + st. __i. \
+#                + " name:" + st. __n.. + " isDefault:" + st. __iD..
+#
+#     ___ getId
+#         r_ __?
+#
+#     ___ getName
+#         r_ __?
+#
+#     ___ getType
+#         r_ __?
+#
+#     ___ isDefault
+#         r_ __?
+#
+#
+# c_ DeviceList:
+#     """Device List"""
+#
+#     ___ -
+#         __devices _    # list
+#
+#     ___ add deviceItem
+#         __d___.ap.. ?
+#
+#     ___ getCount
+#         r_ le. __d___
+#
+#     ___ getByIdx  idx
+#         __ ? < 0 o. ? >_ gC..
+#             r_ N..
+#         r_ __d___|?
+#
+#     ___ getById id
+#         ___ item __ __d___
+#             __|?.gI.. __ ?
+#                 r_ ?
+#         r_ N..
+#
+# c_ DeviceMgr m..
+#
+#     ??
+#     ___ enumerate
+#         """Enumerating the device list
+#          (When the program is initialized the device list must be re-obtained when there is a device plug-__)"""
+#         p..
+#
+#     ??
+#     ___ active deviceId
+#         """Select the device you want to use"""
+#         p..
+#
+#     ??
+#     ___ getCurDeviceId
+#         """Get the design ID currently __ use"""
+#         p..
+#
+#
+# c_ SpeakerMgr D..
+#     """Speaker device management c_"""
+#
+#     ___ -
+#         __curDeviceId _ N..
+#
+#     ___ enumerate
+#         """Enumerating the device list
+#          (The real project should read the device information through the driver, here only the initialization is used to simulate)"""
+#         devices _ D..
+#         ?.ad. DI.. "369dd760-893b-4fe0-89b1-671eca0f0224" "Realtek High Definition Audio" DT___.TS___
+#         ?.ad. DI.. "59357639-6a43-4b79-8184-f79aed9a0dfc" "NVIDIA High Definition Audio" DT___.TS___ T..
+#         r_ ?
+#
+#     ___ active deviceId
+#         """Activate the specified device as the current device"""
+#         __curDeviceId _ ?
+#
+#     ___ getCurDeviceId
+#         r_ __?
+#
+#
+# c_ DeviceUtil
+#     """Equipment tools"""
+#
+#     ___ -
+#         __mgrs _    # dict
+#         __?|DT___.TS___ _ SM..
+#         # To save space, MicrophoneMgr and CameraMgr are no longer implemented
+#         # __microphoneMgr _ MicrophoneMgr()
+#         # __cameraMgr _ CameraMgr
+#
+#     ___ __getDeviceMgr type
+#         r_ __m...|?
+#
+#     ___ getDeviceList type
+#         r_ __gM..|? .en..
+#
+#     ___ active type deviceId
+#         __gDM.. ty.. .a.. dI.
+#
+#     ___ getCurDeviceId type
+#         r_ __gDM.. ?. gCDI.
+#
+#
+# # Test
+# #=======================================================================================================================
+#
+# ___ Renting
+#     myHome _ HA.. "I love my home"
+#     zhangsan _ HO.. "Zhang San"
+#     ?.sHI.. "Upper Sicily", 20, 2500, 1, "individual washroom", 0
+#     ?.pHI.. m..
+#     lisi _ HO.. "Li Si"
+#     ?.sHI.. "Contemporary Urban Home", 16, 1800, 1, "Public toilet", 0
+#     ?.pHI.. m..
+#     wangwu _ HO.. "Wang Wu"
+#     ?.sHI..("Golden Beauty Garden", 18, 2600, 1, "individual washroom", 1
+#     ?.pHI.. m..
+#     print()
+#
+#     m__.sC.. 3
+#     print()
+#
+#     tony _ C.. "Tony"
+#     houseInfos _ ?.fH.. "About 18 square meters, you need to have independent guards and windows. It is best to face south. A kitchen is better! Price around 2000", myHome)
+#     print()
+#     print("Looking around, looking ___ the most suitable nest ...")
+#     print()
+#     AppropriateHouse _ t___.sH.. hI..
+#     t__.sC... AH.. my.. 1
+#
+#
+# ___ Devices
+#     deviceUtil _ D..
+#     deviceList _ ?.gDL.. DT___.TS___
+#     print("Microphone device list：")
+#     __ dL__.gC.. > 0:
+#         # Set the first device to be used
+#         dU__.a.. DT___.TS___, dL__.gBI.. 0 .gI..
+#     ___ idx __ ra.. 0 dL__.gC..
+#         device _ dL__.gBI.. ?
+#         print ?
+#     print("Equipment currently __ use:"
+#           + dL__.gBI. dU__.gCDI. DT___.TS___||.gN..
+#
+#
+# # testRenting()
+# Devices()

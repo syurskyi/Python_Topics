@@ -1,104 +1,104 @@
-# # -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
+
+from __future__ import annotations
+from abc import ABC
+
+
+class Mediator(ABC):
+    """
+    Интерфейс Посредника предоставляет метод, используемый компонентами для
+    уведомления посредника о различных событиях. Посредник может реагировать на
+    эти события и передавать исполнение другим компонентам.
+    """
+
+    def notify(self, sender: object, event: str) -> None:
+        pass
+
+
+class ConcreteMediator(Mediator):
+    def __init__(self, component1: Component1, component2: Component2) -> None:
+        self._component1 = component1
+        self._component1.mediator = self
+        self._component2 = component2
+        self._component2.mediator = self
+
+    def notify(self, sender: object, event: str) -> None:
+        if event == "A":
+            print("Mediator reacts on A and triggers following operations:")
+            self._component2.do_c()
+        elif event == "D":
+            print("Mediator reacts on D and triggers following operations:")
+            self._component1.do_b()
+            self._component2.do_c()
+
+
+class BaseComponent:
+    """
+    Базовый Компонент обеспечивает базовую функциональность хранения экземпляра
+    посредника внутри объектов компонентов.
+    """
+
+    def __init__(self, mediator: Mediator = None) -> None:
+        self._mediator = mediator
+
+    @property
+    def mediator(self) -> Mediator:
+        return self._mediator
+
+    @mediator.setter
+    def mediator(self, mediator: Mediator) -> None:
+        self._mediator = mediator
+
+
+"""
+Конкретные Компоненты реализуют различную функциональность. Они не зависят от
+других компонентов. Они также не зависят от каких-либо конкретных классов
+посредников.
+"""
+
+
+class Component1(BaseComponent):
+    def do_a(self) -> None:
+        print("Component 1 does A.")
+        self.mediator.notify(self, "A")
+
+    def do_b(self) -> None:
+        print("Component 1 does B.")
+        self.mediator.notify(self, "B")
+
+
+class Component2(BaseComponent):
+    def do_c(self) -> None:
+        print("Component 2 does C.")
+        self.mediator.notify(self, "C")
+
+    def do_d(self) -> None:
+        print("Component 2 does D.")
+        self.mediator.notify(self, "D")
+
+
+if __name__ == "__main__":
+    # Клиентский код.
+    c1 = Component1()
+    c2 = Component2()
+    mediator = ConcreteMediator(c1, c2)
+
+    print("Client triggers operation A.")
+    c1.do_a()
+
+    print("\n", end="")
+
+    print("Client triggers operation D.")
+    c2.do_d()
+
+# Client triggers operation A.
+# Component 1 does A.
+# Mediator reacts on A and triggers following operations:
+# Component 2 does C.
 #
-# ____ -f ______ a..
-# ____ a.. ______ A..
 #
-#
-# c_ Mediator A..
-#     """
-#     Интерфейс Посредника предоставляет метод, используемый компонентами для
-#     уведомления посредника о различных событиях. Посредник может реагировать на
-#     эти события и передавать исполнение другим компонентам.
-#     """
-#
-#     ___ notify sender object event ? __ ?
-#         p..
-#
-#
-# c_ ConcreteMediator M...
-#     ___ - component1 C_1 component2 C_2 __ ?
-#         _?  ?
-#         _component1.m___ _ ?
-#         _?  ?
-#         _c_2.m___ _ ?
-#
-#     ___ notify sender object event ? __ ?
-#         __ e.... __ "A":
-#             print("Mediator reacts on A and triggers following operations:")
-#             _component2.d._c
-#         ____ e.... __ "D":
-#             print("Mediator reacts on D and triggers following operations:")
-#             _c_1.d._b
-#             _c_2.d._c
-#
-#
-# c_ BaseComponent
-#     """
-#     Базовый Компонент обеспечивает базовую функциональность хранения экземпляра
-#     посредника внутри объектов компонентов.
-#     """
-#
-#     ___ - mediator M.. _ N... __ ?
-#         _?  ?
-#
-#     ??
-#     ___ mediator __ M..
-#         r_ _m..
-#
-#     ??.?
-#     ___ m___ m____ M.. __ ?
-#         _m... _ m...
-#
-#
-# """
-# Конкретные Компоненты реализуют различную функциональность. Они не зависят от
-# других компонентов. Они также не зависят от каких-либо конкретных классов
-# посредников.
-# """
-#
-#
-# c_ Component1 B..
-#     ___ do_a __ ?
-#         print("Component 1 does A.")
-#         m___.n.. "A")
-#
-#     ___ do_b __ ?
-#         print("Component 1 does B.")
-#         m___.n.."B")
-#
-#
-# c_ Component2(BaseComponent):
-#     ___ do_c __ ?
-#         print("Component 2 does C.")
-#         m___.n.. "C")
-#
-#     ___ do_d __ ?
-#         print("Component 2 does D.")
-#         m___.n.. "D")
-#
-#
-# __ _______ __ ______
-#     # Клиентский код.
-#     c1 _ C_1
-#     c2 _ C_2
-#     m___ _ CM..?  ?
-#
-#     print("Client triggers operation A.")
-#     c1.d._a
-#
-#     print("\n", e.._"")
-#
-#     print("Client triggers operation D.")
-#     c2.d._d
-#
-# # Client triggers operation A.
-# # Component 1 does A.
-# # Mediator reacts on A and triggers following operations:
-# # Component 2 does C.
-# #
-# #
-# # Client triggers operation D.
-# # Component 2 does D.
-# # Mediator reacts on D and triggers following operations:
-# # Component 1 does B.
-# # Component 2 does C.
+# Client triggers operation D.
+# Component 2 does D.
+# Mediator reacts on D and triggers following operations:
+# Component 1 does B.
+# Component 2 does C.

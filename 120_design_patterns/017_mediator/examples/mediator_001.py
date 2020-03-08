@@ -1,147 +1,148 @@
-# #!/usr/bin/env python
-# # -*- coding: utf-8 -*-
-#
-# """
-# http://web.archive.org/web/20120309135549/http://dpip.testingperspective.com/?p_28
-#
-# *TL;DR80
-# Encapsulates how a set of objects interact.
-# """
-#
-# ______ ra..
-# ______ ti__
-#
-#
-# c_ TC
-#
-#     ___ -
-#         _tm _ N...
-#         _bProblem _ 0
-#
-#     ___ setup
-#         print("Setting up the Test")
-#         ti__.sl.. 0.1
-#         _tm.pR..
-#
-#     ___ execute
-#         __ no. _bP...
-#             print("Executing the test")
-#             ti__.sl..0.1
-#         ____
-#             print("Problem in setup. Test no. executed.")
-#
-#     ___ tearDown
-#         __ no. _bP...
-#             print("Tearing down")
-#             ti__.sl.. 0.1
-#             _t_.pR..
-#         ____
-#             print("Test no. executed. No tear down required.")
-#
-#     ___ setTM tm
-#         _t_ _ tm
-#
-#     ___ setProblem value
-#         _bP... _ ?
-#
-#
-# c_ Reporter
-#
-#     ___ -
-#         _tm _ N...
-#
-#     ___ prepare
-#         print("Reporter Class is preparing to report the results")
-#         ti__.sl.. 0.1
-#
-#     ___ report
-#         print("Reporting the results of Test")
-#         ti__.sl.. 0.1
-#     ___ setTM  tm
-#         _t_ _ ?
-#
-#
-# c_ DB
-#
-#     ___ -
-#         _tm _ N...
-#
-#     ___ insert
-#         print("Inserting the execution begin status in the Database")
-#         ti__.sl.. 0.1
-#         # Following code is to simulate a communication from DB to TC
-#         __ ra___.r_r.. 1 4 __ 3
-#             r_ -1
-#
-#     ___ update
-#         print("Updating the test results in Database")
-#         ti__.sl.. 0.1
-#
-#     ___ setTM tm
-#         _t_ _ tm
-#
-#
-# c_ TestManager
-#
-#     ___ -
-#         _reporter _ N...
-#         _db _ N...
-#         _tc _ N...
-#
-#     ___ prepareReporting
-#         rvalue _ _d_.in..
-#         __ ? __ -1
-#             _t_.sP.. 1
-#             _r___.pr..
-#
-#     ___ setReporter reporter
-#         _?  ?
-#
-#     ___ setDB db
-#         _?  ?
-#
-#     ___ publishReport
-#         _d_.up..
-#         _r____.re..
-#
-#     ___ setTC tc
-#         _?  ?
-#
-#
-# __ _______ __ ______
-#     reporter _ R...
-#     db _ ?
-#     tm _ ?
-#     ?.sR.. r..
-#     ?.sD. d_
-#     r___.sT_ t_
-#     d_.sT_ t_
-#     # For simplification we are looping on the same test.
-#     # Practically, it could be about various unique test classes and their
-#     # objects
-#     ___ i __ ra.. 3
-#         tc _ T..
-#         ?.sT. t_
-#         t_.sT_ t_
-#         ?.s..
-#         ?.e..
-#         ?.tD..
-#
-# ### OUTPUT ###
-# # Setting up the Test
-# # Inserting the execution begin status in the Database
-# # Executing the test
-# # Tearing down
-# # Updating the test results in Database
-# # Reporting the results of Test
-# # Setting up the Test
-# # Inserting the execution begin status in the Database
-# # Reporter Class is preparing to report the results
-# # Problem in setup. Test no. executed.
-# # Test no. executed. No tear down required.
-# # Setting up the Test
-# # Inserting the execution begin status in the Database
-# # Executing the test
-# # Tearing down
-# # Updating the test results in Database
-# # Reporting the results of Test
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""
+http://web.archive.org/web/20120309135549/http://dpip.testingperspective.com/?p=28
+
+*TL;DR80
+Encapsulates how a set of objects interact.
+"""
+
+import random
+import time
+
+
+class TC:
+
+    def __init__(self):
+        self._tm = None
+        self._bProblem = 0
+
+    def setup(self):
+        print("Setting up the Test")
+        time.sleep(0.1)
+        self._tm.prepareReporting()
+
+    def execute(self):
+        if not self._bProblem:
+            print("Executing the test")
+            time.sleep(0.1)
+        else:
+            print("Problem in setup. Test not executed.")
+
+    def tearDown(self):
+        if not self._bProblem:
+            print("Tearing down")
+            time.sleep(0.1)
+            self._tm.publishReport()
+        else:
+            print("Test not executed. No tear down required.")
+
+    def setTM(self, tm):
+        self._tm = tm
+
+    def setProblem(self, value):
+        self._bProblem = value
+
+
+class Reporter:
+
+    def __init__(self):
+        self._tm = None
+
+    def prepare(self):
+        print("Reporter Class is preparing to report the results")
+        time.sleep(0.1)
+
+    def report(self):
+        print("Reporting the results of Test")
+        time.sleep(0.1)
+
+    def setTM(self, tm):
+        self._tm = tm
+
+
+class DB:
+
+    def __init__(self):
+        self._tm = None
+
+    def insert(self):
+        print("Inserting the execution begin status in the Database")
+        time.sleep(0.1)
+        # Following code is to simulate a communication from DB to TC
+        if random.randrange(1, 4) == 3:
+            return -1
+
+    def update(self):
+        print("Updating the test results in Database")
+        time.sleep(0.1)
+
+    def setTM(self, tm):
+        self._tm = tm
+
+
+class TestManager:
+
+    def __init__(self):
+        self._reporter = None
+        self._db = None
+        self._tc = None
+
+    def prepareReporting(self):
+        rvalue = self._db.insert()
+        if rvalue == -1:
+            self._tc.setProblem(1)
+            self._reporter.prepare()
+
+    def setReporter(self, reporter):
+        self._reporter = reporter
+
+    def setDB(self, db):
+        self._db = db
+
+    def publishReport(self):
+        self._db.update()
+        self._reporter.report()
+
+    def setTC(self, tc):
+        self._tc = tc
+
+
+if __name__ == '__main__':
+    reporter = Reporter()
+    db = DB()
+    tm = TestManager()
+    tm.setReporter(reporter)
+    tm.setDB(db)
+    reporter.setTM(tm)
+    db.setTM(tm)
+    # For simplification we are looping on the same test.
+    # Practically, it could be about various unique test classes and their
+    # objects
+    for i in range(3):
+        tc = TC()
+        tc.setTM(tm)
+        tm.setTC(tc)
+        tc.setup()
+        tc.execute()
+        tc.tearDown()
+
+### OUTPUT ###
+# Setting up the Test
+# Inserting the execution begin status in the Database
+# Executing the test
+# Tearing down
+# Updating the test results in Database
+# Reporting the results of Test
+# Setting up the Test
+# Inserting the execution begin status in the Database
+# Reporter Class is preparing to report the results
+# Problem in setup. Test not executed.
+# Test not executed. No tear down required.
+# Setting up the Test
+# Inserting the execution begin status in the Database
+# Executing the test
+# Tearing down
+# Updating the test results in Database
+# Reporting the results of Test
