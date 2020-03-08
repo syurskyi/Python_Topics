@@ -1,175 +1,175 @@
-# -*- coding: utf-8 -*-
-
-from __future__ import annotations
-from abc import ABC, abstractmethod
-from datetime import datetime
-from random import sample
-from string import ascii_letters, digits
-
-
-class Originator():
-    """
-    Создатель содержит некоторое важное состояние, которое может со временем
-    меняться. Он также объявляет метод сохранения состояния внутри снимка и
-    метод восстановления состояния из него.
-    """
-
-    _state = None
-    """
-    Для удобства состояние создателя хранится внутри одной переменной.
-    """
-
-    def __init__(self, state: str) -> None:
-        self._state = state
-        print(f"Originator: My initial state is: {self._state}")
-
-    def do_something(self) -> None:
-        """
-        Бизнес-логика Создателя может повлиять на его внутреннее состояние.
-        Поэтому клиент должен выполнить резервное копирование состояния с
-        помощью метода save перед запуском методов бизнес-логики.
-        """
-
-        print("Originator: I'm doing something important.")
-        self._state = self._generate_random_string(30)
-        print(f"Originator: and my state has changed to: {self._state}")
-
-    def _generate_random_string(self, length: int = 10) -> None:
-        return "".join(sample(ascii_letters, length))
-
-    def save(self) -> Memento:
-        """
-        Сохраняет текущее состояние внутри снимка.
-        """
-
-        return ConcreteMemento(self._state)
-
-    def restore(self, memento: Memento) -> None:
-        """
-        Восстанавливает состояние Создателя из объекта снимка.
-        """
-
-        self._state = memento.get_state()
-        print(f"Originator: My state has changed to: {self._state}")
-
-
-class Memento(ABC):
-    """
-    Интерфейс Снимка предоставляет способ извлечения метаданных снимка, таких
-    как дата создания или название. Однако он не раскрывает состояние Создателя.
-    """
-
-    @abstractmethod
-    def get_name(self) -> str:
-        pass
-
-    @abstractmethod
-    def get_date(self) -> str:
-        pass
-
-
-class ConcreteMemento(Memento):
-    def __init__(self, state: str) -> None:
-        self._state = state
-        self._date = str(datetime.now())[:19]
-
-    def get_state(self) -> str:
-        """
-        Создатель использует этот метод, когда восстанавливает своё состояние.
-        """
-        return self._state
-
-    def get_name(self) -> str:
-        """
-        Остальные методы используются Опекуном для отображения метаданных.
-        """
-
-        return f"{self._date} / ({self._state[0:9]}...)"
-
-    def get_date(self) -> str:
-        return self._date
-
-
-class Caretaker():
-    """
-    Опекун не зависит от класса Конкретного Снимка. Таким образом, он не имеет
-    доступа к состоянию создателя, хранящемуся внутри снимка. Он работает со
-    всеми снимками через базовый интерфейс Снимка.
-    """
-
-    def __init__(self, originator: Originator) -> None:
-        self._mementos = []
-        self._originator = originator
-
-    def backup(self) -> None:
-        print("\nCaretaker: Saving Originator's state...")
-        self._mementos.append(self._originator.save())
-
-    def undo(self) -> None:
-        if not len(self._mementos):
-            return
-
-        memento = self._mementos.pop()
-        print(f"Caretaker: Restoring state to: {memento.get_name()}")
-        try:
-            self._originator.restore(memento)
-        except Exception:
-            self.undo()
-
-    def show_history(self) -> None:
-        print("Caretaker: Here's the list of mementos:")
-        for memento in self._mementos:
-            print(memento.get_name())
-
-
-if __name__ == "__main__":
-    originator = Originator("Super-duper-super-puper-super.")
-    caretaker = Caretaker(originator)
-
-    caretaker.backup()
-    originator.do_something()
-
-    caretaker.backup()
-    originator.do_something()
-
-    caretaker.backup()
-    originator.do_something()
-
-    print()
-    caretaker.show_history()
-
-    print("\nClient: Now, let's rollback!\n")
-    caretaker.undo()
-
-    print("\nClient: Once more!\n")
-    caretaker.undo()
-
-
-# Originator: My initial state is: Super-duper-super-puper-super.
+# # -*- coding: utf-8 -*-
 #
-# Caretaker: Saving Originator's state...
-# Originator: I'm doing something important.
-# Originator: and my state has changed to: wQAehHYOqVSlpEXjyIcgobrxsZUnat
+# ____ -f ______ a...
+# ____ a.. ______ A.. a..
+# ____ d_t_ ______ d_t_
+# ____ ra.. ______ s..
+# ____ str..______ a_l.. dig..
 #
-# Caretaker: Saving Originator's state...
-# Originator: I'm doing something important.
-# Originator: and my state has changed to: lHxNORKcsgMWYnJqoXjVCbQLEIeiSp
 #
-# Caretaker: Saving Originator's state...
-# Originator: I'm doing something important.
-# Originator: and my state has changed to: cvIYsRilNOtwynaKdEZpDCQkFAXVMf
+# c_ Originator
+#     """
+#     Создатель содержит некоторое важное состояние, которое может со временем
+#     меняться. Он также объявляет метод сохранения состояния внутри снимка и
+#     метод восстановления состояния из него.
+#     """
 #
-# Caretaker: Here's the list of mementos:
-# 2019-01-26 21:11:24 / (Super-dup...)
-# 2019-01-26 21:11:24 / (wQAehHYOq...)
-# 2019-01-26 21:11:24 / (lHxNORKcs...)
+#     _state _ N..
+#     """
+#     Для удобства состояние создателя хранится внутри одной переменной.
+#     """
 #
-# Client: Now, let's rollback!
+#     ___ - state ? __ ?
+#         _?  ?
+#         print _*Originator: My initial state is: |_?")
 #
-# Caretaker: Restoring state to: 2019-01-26 21:11:24 / (lHxNORKcs...)
-# Originator: My state has changed to: lHxNORKcsgMWYnJqoXjVCbQLEIeiSp
+#     ___ do_something __ ?
+#         """
+#         Бизнес-логика Создателя может повлиять на его внутреннее состояние.
+#         Поэтому клиент должен выполнить резервное копирование состояния с
+#         помощью метода save перед запуском методов бизнес-логики.
+#         """
 #
-# Client: Once more!
+#         print("Originator: I'm doing something important.")
+#         _state _ _g_r_s.. 30
+#         print _*Originator: and my state has changed to: |_?")
 #
-# Caretaker: Restoring state to: 2019-01-26 21:11:24 / (wQAehHYOq...)
-# Originator: My state has changed to: wQAehHYOqVSlpEXjyIcgobrxsZUnat
+#     ___ _generate_random_string length int _ 10 __ ?
+#         r_ "".jo.. sa.. a_l.. l..
+#
+#     ___ save __ M..
+#         """
+#         Сохраняет текущее состояние внутри снимка.
+#         """
+#
+#         r_ CM... _s..
+#
+#     ___ restore memento M... __ ?
+#         """
+#         Восстанавливает состояние Создателя из объекта снимка.
+#         """
+#
+#         _state _ m___.g_s..
+#         print _*Originator: My state has changed to: |_s..
+#
+#
+# c_ Memento A..
+#     """
+#     Интерфейс Снимка предоставляет способ извлечения метаданных снимка, таких
+#     как дата создания или название. Однако он не раскрывает состояние Создателя.
+#     """
+#
+#     ??
+#     ___ get_name __ ?
+#         p..
+#
+#     ??
+#     ___ get_date __ ?:
+#         p..
+#
+#
+# c_ ConcreteMemento M..
+#     ___ - state ?) __ ?
+#         _?  ?
+#         _date _ st. d_t_.no.|;19
+#
+#     ___ get_state __ ?:
+#         """
+#         Создатель использует этот метод, когда восстанавливает своё состояние.
+#         """
+#         r_ _s..
+#
+#     ___ get_name __ ?:
+#         """
+#         Остальные методы используются Опекуном для отображения метаданных.
+#         """
+#
+#         r_ _*|_d.. / ||_s..|0;9...)"
+#
+#     ___ get_date __ ?
+#         r_ _d..
+#
+#
+# c_ Caretaker
+#     """
+#     Опекун не зависит от класса Конкретного Снимка. Таким образом, он не имеет
+#     доступа к состоянию создателя, хранящемуся внутри снимка. Он работает со
+#     всеми снимками через базовый интерфейс Снимка.
+#     """
+#
+#     ___ - originator O.. __ ?
+#         _mementos _     # list
+#         _?  ?
+#
+#     ___ backup __ ?
+#         print("\nCaretaker: Saving Originator's state...")
+#         _m___.ap.. _o____.s..
+#
+#     ___ undo __ ?
+#         __ no. le. _m..
+#             r_
+#
+#         memento _ _m__.po.
+#         print _*Caretaker: Restoring state to: |m___.g_n..
+#         ___
+#             _o___.re.. ?
+#         _______ E..
+#             un..
+#
+#     ___ show_history __ ?
+#         print("Caretaker: Here's the list of mementos:")
+#         ___ memento in _m..
+#             print ?.g_n..
+#
+#
+# __ _______ __ ______
+#     originator _ O.. "Super-duper-super-puper-super."
+#     caretaker _ C.. ?
+#
+#     ?.ba..
+#     o____.d_s..
+#
+#     c___.ba...
+#     o____.d_s..
+#
+#     c___.ba...
+#     o____.d_s..
+#
+#     print()
+#     c___.s_h...
+#
+#     print("\nClient: Now, let's rollback!\n")
+#     c___.u..
+#
+#     print("\nClient: Once more!\n")
+#     c___.u..
+#
+#
+# # Originator: My initial state is: Super-duper-super-puper-super.
+# #
+# # Caretaker: Saving Originator's state...
+# # Originator: I'm doing something important.
+# # Originator: and my state has changed to: wQAehHYOqVSlpEXjyIcgobrxsZUnat
+# #
+# # Caretaker: Saving Originator's state...
+# # Originator: I'm doing something important.
+# # Originator: and my state has changed to: lHxNORKcsgMWYnJqoXjVCbQLEIeiSp
+# #
+# # Caretaker: Saving Originator's state...
+# # Originator: I'm doing something important.
+# # Originator: and my state has changed to: cvIYsRilNOtwynaKdEZpDCQkFAXVMf
+# #
+# # Caretaker: Here's the list of mementos:
+# # 2019-01-26 21:11:24 / (Super-dup...)
+# # 2019-01-26 21:11:24 / (wQAehHYOq...)
+# # 2019-01-26 21:11:24 / (lHxNORKcs...)
+# #
+# # Client: Now, let's rollback!
+# #
+# # Caretaker: Restoring state to: 2019-01-26 21:11:24 / (lHxNORKcs...)
+# # Originator: My state has changed to: lHxNORKcsgMWYnJqoXjVCbQLEIeiSp
+# #
+# # Client: Once more!
+# #
+# # Caretaker: Restoring state to: 2019-01-26 21:11:24 / (wQAehHYOq...)
+# # Originator: My state has changed to: wQAehHYOqVSlpEXjyIcgobrxsZUnat
