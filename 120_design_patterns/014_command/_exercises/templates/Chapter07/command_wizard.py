@@ -1,32 +1,30 @@
-__author__ = 'Chetan'
-
-class Wizard():
-    
-    def __init__(self, src, rootdir):
-        self.choices = []
-        self.rootdir = rootdir
-        self.src = src
-    
-    def preferences(self, command):
-        self.choices.append(command)
-    
-    def execute(self):
-        for choice in self.choices:
-            if list(choice.values())[0]:
-                print("Copying binaries --", self.src, " to ", self.rootdir)
-            else:
-                print("No Operation")
-    
-    def rollback(self):
-        print("Deleting the unwanted..", self.rootdir)
-
-
-if __name__ == '__main__':
-    ## Client code
-    wizard = Wizard('python3.5.gzip', '/usr/bin/')
-    ## Steps for installation. ## Users chooses to install Python only
-    wizard.preferences({'python':True})
-    wizard.preferences({'java':False})
-    wizard.execute()
-
-
+# c_ Wizard
+#
+#     ___ - src rootdir
+#         choices _    # list
+#         r.. _ r...
+#         s.. _ s..
+#
+#     ___ preferences command
+#         ch__.ap.. ?
+#
+#     ___ execute
+#         ___ choice __ ch...
+#             __ li.. ?.v.. ||0
+#                 print("Copying binaries --", s.. " to " r..
+#             ____
+#                 print("No Operation")
+#
+#     ___ rollback
+#         print("Deleting the unwanted.." r..
+#
+#
+# __ _______ __ ______
+#     ## Client code
+#     wizard _ W.. 'python3.5.gzip', '/usr/bin/'
+#     ## Steps for installation. ## Users chooses to install Python only
+#     ?.pr..  'python' T..
+#     ?.pr.. 'java' F..
+#     ?.ex..
+#
+#
