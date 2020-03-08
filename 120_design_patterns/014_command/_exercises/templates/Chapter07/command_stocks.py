@@ -1,56 +1,54 @@
-__author__ = 'Chetan'
-
-from abc import ABCMeta, abstractmethod
-
-class Order(metaclass=ABCMeta):
-    
-    @abstractmethod
-    def execute(self):
-        pass
-
-class StockTrade:
-    
-    def buy(self):
-        print("You will buy stocks")
-    
-    def sell(self):
-        print("You will sell stocks")
-
-class Agent:
-    
-    def __init__(self):
-        self.__orderQueue = []
-    
-    def placeOrder(self, order):
-        self.__orderQueue.append(order)
-        order.execute()
-
-class BuyStockOrder(Order):
-    
-    def __init__(self, stock):
-        self.stock = stock
-    
-    def execute(self):
-        self.stock.buy()
-
-class SellStockOrder(Order):
-    
-    def __init__(self, stock):
-        self.stock = stock
-    
-    def execute(self):
-        self.stock.sell()
-
-
-if __name__ == '__main__':
-    #Client
-    stock = StockTrade()
-    buyStock = BuyStockOrder(stock)
-    sellStock = SellStockOrder(stock)
-    
-    #Invoker
-    agent = Agent()
-    agent.placeOrder(buyStock)
-    agent.placeOrder(sellStock)
-
-
+# ____ a.. _______ A.. a...
+#
+# c_ Order m...
+#
+#     ??
+#     ___ execute
+#         p..
+#
+# c_ StockTrade
+#
+#     ___ buy
+#         print("You will buy stocks")
+#
+#     ___ sell
+#         print("You will sell stocks")
+#
+# c_ Agent
+#
+#     ___ -
+#         __orderQueue _    # list
+#
+#     ___ placeOrder order
+#         __o__.ap.. ?
+#         ?.ex..
+#
+# c_ BuyStockOrder O..
+#
+#     ___ - stock
+#         ?  ?
+#
+#     ___ execute
+#         s___.bu.
+#
+# c_ SellStockOrder O..
+#
+#     ___ - stock
+#         ?  ?
+#
+#     ___ execute
+#         s__.se..
+#
+#
+# __ _______ __ ______
+#     #Client
+#     stock _ ST..
+#     buyStock _ B... ?
+#     sellStock _ S.. ?
+#
+#     #Invoker
+#     agent _ A...
+#     ?.pO.. bS..
+#     ?.pO.. sS..
+#
+#
