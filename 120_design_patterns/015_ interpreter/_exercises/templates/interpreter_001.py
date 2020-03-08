@@ -144,23 +144,23 @@
 #         "switch off -> television",
 #     )
 #
-#     ___ valid_input in valid_inputs:
-#         interpreter.interpret(valid_input)
+#     ___ valid_input __ ?
+#         i___.int... ?
 #
 #     ___
-#         interpreter.interpret("read -> book")
-#     ______ DeviceNotAvailable as e:
-#         print(e)
+#         i___.int....("read -> book")
+#     ______ DNA..__ e
+#         print ?
 #
 #     ___
-#         interpreter.interpret("heat -> boiler")
-#     ______ IncorrectAction as e:
-#         print(e)
+#         i___.int...("heat -> boiler")
+#     ______ IA.. __ e
+#         print ?
 #
 #     ___
-#         interpreter.interpret("throw away -> television")
-#     ______ ANA... as e:
-#         print(e)
+#         i___.int...("throw away -> television")
+#     ______ ANA... ___ e
+#         print ?
 #
 #
 # __ _______ __ ______
