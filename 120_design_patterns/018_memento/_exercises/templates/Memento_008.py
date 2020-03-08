@@ -1,128 +1,128 @@
-#=======================================================================================================================
-class Engineer:
-    """engineer"""
-
-    def __init__(self, name):
-        self.__name = name
-        self.__workItems = []
-
-    def addWorkItem(self, item):
-        self.__workItems.append(item)
-
-    def forget(self):
-        self.__workItems.clear()
-        print(self.__name + "I'm too busy at work, I've forgotten what to do!")
-
-    def writeTodoList(self):
-        """Record work items in TodoList"""
-        todoList = TodoList()
-        for item in self.__workItems:
-            todoList.writeWorkItem(item)
-        return todoList
-
-    def retrospect(self, todoList):
-        """Recall work items"""
-        self.__workItems = todoList.getWorkItems()
-        print(self.__name + "Think of what to do!")
-
-    def showWorkItem(self):
-        if(len(self.__workItems)):
-            print(self.__name + "Work item:")
-            for idx in range(0, len(self.__workItems)):
-                print(str(idx + 1) + ". " + self.__workItems[idx] + ";")
-        else:
-            print(self.__name + "No work items!")
-
-
-class TodoList:
-    """Work item"""
-
-    def __init__(self):
-        self.__workItems = []
-
-    def writeWorkItem(self, item):
-        self.__workItems.append(item)
-
-    def getWorkItems(self):
-        return self.__workItems
-
-
-class TodoListCaretaker:
-    """TodoList Management Class"""
-
-    def __init__(self):
-        self.__todoList = None
-
-    def setTodoList(self, todoList):
-        self.__todoList = todoList
-
-    def getTodoList(self):
-        return self.__todoList
-
-
-# Version 2.0
-#=======================================================================================================================
-# Code framework
-#==============================
-from copy import deepcopy
-
-class Memento:
-    """memorandum"""
-
-    def setAttributes(self, dict):
-        """Deep copy all attributes in dictionary dict"""
-        self.__dict__ = deepcopy(dict)
-
-    def getAttributes(self):
-        """Get attribute dictionary"""
-        return self.__dict__
-
-
-class Caretaker:
-    """Memo Management"""
-
-    def __init__(self):
-        self._mementos = {}
-
-    def addMemento(self, name, memento):
-        self._mementos[name] = memento
-
-    def getMemento(self, name):
-        return self._mementos[name]
-
-class Originator:
-    """Backup initiator"""
-
-    def createMemento(self):
-        memento = Memento()
-        memento.setAttributes(self.__dict__)
-        return memento
-
-    def restoreFromMemento(self, memento):
-        self.__dict__.update(memento.getAttributes())
-
-
-# Framework-based implementation
-#==============================
-
-# Test
-#=======================================================================================================================
-
-def Engineer():
-    tony = Engineer("Tony")
-    tony.addWorkItem("Solve the problem that some users online cannot display the full name because the nickname is too long")
-    tony.addWorkItem("Complete the parsing of the PDF")
-    tony.addWorkItem("Display the contents of the first page of a PDF in a reader")
-    tony.showWorkItem()
-    caretaker = TodoListCaretaker()
-    caretaker.setTodoList(tony.writeTodoList())
-
-    print()
-    tony.forget()
-    tony.showWorkItem()
-
-    print()
-    tony.retrospect(caretaker.getTodoList())
-    tony.showWorkItem()
-
-# testEngineer()
+# #=======================================================================================================================
+# c_ Engineer
+#     """engineer"""
+#
+#     ___ - name
+#         __?  ?
+#         __workItems _    # list
+#
+#     ___ addWorkItem item
+#         __w....ap.. ?
+#
+#     ___ forget
+#         __w....cl..
+#         print(__n.. + "I'm too busy at work, I've forgotten what to do!")
+#
+#     ___ writeTodoList
+#         """Record work items in TodoList"""
+#         todoList _ ?
+#         ___ item __ __w...
+#             ?.wWI.. ?
+#         r_ ?
+#
+#     ___ retrospect todoList
+#         """Recall work items"""
+#         __w... _ ?.gWI..
+#         print(__n.. + "Think of what to do!")
+#
+#     ___ showWorkItem
+#         __ le. __w...
+#             print(__n.. + "Work item:")
+#             ___ idx __ ra.. 0, le. __w...
+#                 print(st. ? + 1) + ". " + __w...|? + ";")
+#         ___
+#             print(__n.. + "No work items!")
+#
+#
+# c_ TodoList
+#     """Work item"""
+#
+#     ___ -
+#         __workItems _    # list
+#
+#     ___ writeWorkItem item
+#         __w....ap.. ?
+#
+#     ___ getWorkItems
+#         r_ __w...
+#
+#
+# c_ TodoListCaretaker
+#     """TodoList Management Class"""
+#
+#     ___ -
+#         __todoList _ N..
+#
+#     ___ setTodoList todoList
+#         __?  ?
+#
+#     ___ getTodoList
+#         r_ __?
+#
+#
+# # Version 2.0
+# #=======================================================================================================================
+# # Code framework
+# #==============================
+# ____ co__ ______ d_c_
+#
+# c_ Memento
+#     """memorandum"""
+#
+#     ___ setAttributes dict
+#         """Deep copy all attributes __ dictionary dict"""
+#         -d _ d_c_ ?
+#
+#     ___ getAttributes
+#         """Get attribute dictionary"""
+#         r_ -d
+#
+#
+# c_ Caretaker
+#     """Memo Management"""
+#
+#     ___
+#         _mementos _    # dict
+#
+#     ___ addMemento name memento
+#         _mementos|? _ ?
+#
+#     ___ getMemento name
+#         r_ _m...|?
+#
+# c_ Originator
+#     """Backup initiator"""
+#
+#     ___ createMemento
+#         memento _ M..
+#         ?.sA.. -d
+#         r_ ?
+#
+#     ___ restoreFromMemento memento
+#         -d.up.. ?.gA..
+#
+#
+# # Framework-based implementation
+# #==============================
+#
+# # Test
+# #=======================================================================================================================
+#
+# ___ Engineer
+#     tony _ E.. "Tony"
+#     ?.a... "Solve the problem that some users online cannot display the full name because the nickname is too long")
+#     ?.a... "Complete the parsing of the PDF")
+#     ?.a... "Display the contents of the first page of a PDF __ a reader")
+#     ?.sWI..
+#     caretaker _ TLC..
+#     ?.sTL.. ?.wTL..
+#
+#     print()
+#     ?.f..
+#     ?.sWI..
+#
+#     print()
+#     ?.re.... c___.gTL..
+#     ?.sWI..
+#
+# # testEngineer()
