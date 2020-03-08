@@ -1,14 +1,14 @@
-from command_abc import AbsCommand
-
-
-class NoCommand(AbsCommand):
-    def __init__(self, args):
-        self._command = args[0]
-        pass
-
-    def execute(self):
-        print('No command named %s' % self._command)
-
-
-
-
+# ____ c_a.. ______ AC..
+#
+#
+# c_ NoCommand AC..
+#     ___ - args
+#         _command = ar.. 0
+#         p..
+#
+#     ___ execute
+#         print('No command named @'  _c..
+#
+#
+#
+#

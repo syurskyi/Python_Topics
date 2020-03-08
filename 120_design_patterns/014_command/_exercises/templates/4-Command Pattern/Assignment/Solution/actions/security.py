@@ -1,6 +1,6 @@
-class Security(object):
-    def arm(self):
-        print ('Security system armed')
-
-    def disarm(self):
-        print('Security disarmed')
+# c_ Security o..
+#     ___ arm
+#         print ('Security system armed')
+#
+#     ___ disarm(
+#         print('Security disarmed')

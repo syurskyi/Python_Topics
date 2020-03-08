@@ -1,13 +1,13 @@
-import abc
-
-class AbsCommand(object):                           # Python 2.x
-# class AbsCommand(object, metaclass=abc.ABCMeta):  # Python 3.x
-    __metaclass__ = abc.ABCMeta
-
-    @abc.abstractmethod
-    def execute(self):
-        pass
-
-    @abc.abstractmethod
-    def undo(self):
-        pass
+# ______ abc
+#
+# c_ AbsCommand o..                          # Python 2.x
+# # class AbsCommand(object, metaclass=abc.ABCMeta):  # Python 3.x
+#     -m
+#
+#     ??.?
+#     ___ execute
+#         p..
+#
+#     ??.?
+#     ___ undo
+#         p..

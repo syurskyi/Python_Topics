@@ -1,9 +1,9 @@
-class Appliance(object):
-    def __init__(self, name):
-        self._name = name
-
-    def on(self):
-        print('%s has been turned on.' % self._name)
-
-    def off(self):
-        print('%s has been turned off.' % self._name)
+# c_ Appliance o..
+#     ___ - name
+#         _?  ?
+#
+#     ___ on
+#         print('@ has been turned on.'  _?
+#
+#     ___ off
+#         print('@ has been turned off.'  _?

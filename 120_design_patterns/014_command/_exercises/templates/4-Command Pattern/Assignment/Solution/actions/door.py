@@ -1,9 +1,9 @@
-class Door(object):
-    def __init__(self, name):
-        self.name = name
-
-    def lock(self):
-        print("%s is locked." % self.name)
-
-    def unlock(self):
-        print("%s is unlocked." % self.name)
+# c_ Door o..
+#     ___ - name
+#         ?  ?
+#
+#     ___ lock
+#         print("@ is locked."  ?
+#
+#     ___ unlock(self):
+#         print("@ is unlocked."  ?

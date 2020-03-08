@@ -1,9 +1,9 @@
-from command_abc import AbsCommand
-from order_command_abc import AbsOrderCommand
+____ c_a.. _____ AC..
+____ o_c_a.. ______ AOC..
 
 
-class ShipOrder(AbsCommand, AbsOrderCommand):
-    name = description = 'ShipOrder'
+c_ ShipOrder AC.. AOC..
+    name _ description = 'ShipOrder'
 
-    def execute(self):
-        raise NotImplementedError
+    __ execute
+        r_ N...

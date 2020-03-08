@@ -1,9 +1,9 @@
-import abc
-
-
-class AbsCommand(object):
-    __metaclass__ = abc.ABCMeta
-
-    @abc.abstractmethod
-    def execute(self):
-        pass
+# ______ a..
+#
+#
+# c_ AbsCommand o..
+#     -m
+#
+#     ??.?
+#     ___ execute
+#         p..

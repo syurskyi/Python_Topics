@@ -1,28 +1,28 @@
-from actions.door import Door
-from command_abc import AbsCommand
-
-
-class DoorLockCommand(AbsCommand):
-    def __init__(self, door):
-        if not isinstance(door, Door):
-            raise TypeError('Expected a Door object, got %s instead.' % door.__class__.__name__)
-        self.door = door
-
-    def execute(self):
-        self.door.lock()
-
-    def undo(self):
-        self.door.unlock()
-
-
-class DoorUnlockCommand(AbsCommand):
-    def __init__(self, door):
-        if not isinstance(door, Door):
-            raise TypeError
-        self.door = door
-
-    def execute(self):
-        self.door.unlock()
-
-    def undo(self):
-        self.door.lock()
+# ____ a___.d.. ______ D..
+# ____ c_a.. ______ AC..
+#
+#
+# c_ DoorLockCommand AC..
+#     ___ - door
+#         __ no. isi.. ? D..
+#             r_ T.. ('Expected a Door object, got @ instead.'  ?. -c . -n
+#         ?  ?
+#
+#     ___ execute
+#         d__.lo..
+#
+#     ___ undo
+#         d__.un..
+#
+#
+# c_ DoorUnlockCommand AC..
+#     ___ - door
+#         __ no. isi..  ? D..
+#             r_ T..
+#         ?  ?
+#
+#     ___ execute
+#         d__.un..
+#
+#     ___ undo
+#         d__.lo..

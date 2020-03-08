@@ -1,29 +1,29 @@
-from Queue import LifoQueue
-from collections import defaultdict
-
-class Actions(object):
-    def __init__(self, activate, deactivate):
-        self.activate = activate
-        self.deactivate = deactivate
-
-class MenuAction(object):
-    def __init__(self):
-        self.undo_commands = LifoQueue()
-        self.commands = defaultdict(Actions)
-
-    def set_command(self, item, activate, deactivate):
-        self.commands[item] = Actions(activate, deactivate)
-
-    def activate(self, item):
-        action = self.commands[item].activate
-        action.execute()
-        self.undo_commands.put(action)
-
-    def deactivate(self, item):
-        action = self.commands[item].deactivate
-        action.execute()
-        self.undo_commands.put(action)
-
-    def undo(self):
-        if not self.undo_commands.empty():
-            self.undo_commands.get().undo()
+# ____ Q.. ______ L..
+# ____ col.. ______ d..d..
+#
+# c_ Actions o..
+#     ___ - activate deactivate
+#         ?  ?
+#         ?  ?
+#
+# c_ MenuAction o..
+#     ___ -
+#         undo_commands _ LQ..
+#         commands _ d..d.. A..
+#
+#     ___ set_command item activate deactivate
+#         c...|i.. _ A... a.. d..
+#
+#     ___ activate item
+#         action _ c...|i...ac..
+#         ?.e...
+#         u_c__.pu. ?
+#
+#     ___ deactivate item
+#         action _ c..|i...de..
+#         ?.ex..
+#         u__c_.pu. ?
+#
+#     ___ undo
+#         __ no. u_c_.em..
+#             u__c_.ge_.u..

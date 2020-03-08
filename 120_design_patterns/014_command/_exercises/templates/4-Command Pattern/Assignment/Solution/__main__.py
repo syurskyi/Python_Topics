@@ -1,29 +1,29 @@
-from actions.appliance import Appliance
-from actions.door import Door
-from actions.security import Security
-
-from appliance_commands import ApplianceOnCommand, ApplianceOffCommand
-from door_commands import DoorLockCommand, DoorUnlockCommand
-from security_commands import SecurityArmCommand, SecurityDisarmCommand
-from menu_action import MenuAction
-
-# instantiate new objects
-menu_action = MenuAction()
-frontdoor = Door('Front Door')
-frontdoor_lock = DoorLockCommand(frontdoor)
-frontdoor_unlock = DoorUnlockCommand(frontdoor)
-
-# Set up the commands
-menu_action.set_command(frontdoor, frontdoor_lock, frontdoor_unlock)
-
-# Try the commands with undo
-menu_action.activate(frontdoor)
-menu_action.deactivate(frontdoor)
-menu_action.deactivate(frontdoor)
-menu_action.undo()
-menu_action.undo()
-menu_action.undo()
-
-# Extra undo to test empty queue
-menu_action.undo()
-
+# ____ a___.a.. ______ A..
+# ____ a___.d... ______ D..
+# ____ a___.s... ______ S..
+#
+# ____ a_c.. ______ AOC.. AfC..
+# ____ d_c.. ______ DLC.. DUC..
+# ____ s_c.. ______ SAC.. SDC..
+# ____ m_a.. ______ MA..
+#
+# # instantiate new objects
+# menu_action _ M..
+# frontdoor _ D.. 'Front Door
+# frontdoor_lock _ DLC.. ?
+# frontdoor_unlock _ DUC.. ?
+#
+# # Set up the commands
+# m_a__.set_command(f_d.. f_l.. f_u..
+#
+# # Try the commands with undo
+# m_a__.a.. f_d..
+# m_a__.d.. f_d..
+# m_a__.d.. f_d..
+# m_a__.u..
+# m_a__.u..
+# m_a__.u..
+#
+# # Extra undo to test empty queue
+# m_a__.u..
+#
