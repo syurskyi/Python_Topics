@@ -1,81 +1,81 @@
-# TODO finish it
-import copy
-
-
-def Memento(obj, deep=False):
-    state = (copy.copy, copy.deepcopy)[bool(deep)](obj.__dict__)
-    def Restore():
-        obj.__dict__.clear()
-        obj.__dict__.update(state)
-    return Restore
-
-class Transaction:
-    """A transaction guard. This is realy just syntactic suggar arount a memento
-    closure."""
-    deep = False
-    def __init__(self, *targets):
-        self.targets = targets
-        self.Commit()
-    def Commit(self):
-        self.states = [Memento(target, self.deep) for target in self.targets]
-    def Rollback(self):
-        for state in self.states:
-            state()
-
-class transactional(object):
-    """Adds transactional semantics to methods. Methods decorated with
-    @transactional will rollback to entry state upon exceptions."""
-    def __init__(self, method):
-        self.method = method
-    def __get__(self, obj, T):
-        def transaction(*args, **kwargs):
-            state = Memento(obj)
-            try:
-                return self.method(obj, *args, **kwargs)
-            except:
-                state()
-                raise
-        return transaction
-
-if __name__ == '__main__':
-
-   class NumObj(object):
-      def __init__(self, value):
-         self.value = value
-      def __repr__(self):
-         return '<%s: %r>' % (self.__class__.__name__, self.value)
-      def Increment(self):
-         self.value += 1
-      @transactional
-      def DoStuff(self):
-         self.value = '1111' # <- invalid value
-         self.Increment()    # <- will fail and rollback
-
-   print
-   n = NumObj(-1)
-   print n
-   t = Transaction(n)
-   try:
-      for i in range(3):
-         n.Increment()
-         print n
-      t.Commit()
-      print '-- commited'
-      for i in range(3):
-         n.Increment()
-         print n
-      n.value += 'x' # will fail
-      print n
-   except:
-      t.Rollback()
-      print '-- rolled back'
-   print n
-   print '-- now doing stuff ...'
-   try:
-      n.DoStuff()
-   except:
-      print '-> doing stuff failed!'
-      import traceback
-      traceback.print_exc(0)
-      pass
-   print n
+# # TODO finish it
+# ______ co..
+#
+#
+# ___ Memento obj deep_F..
+#     state _ co__.co__ co__.d_c_||bo.. de..|||?. -d
+#     ___ R..
+#         ?. -d.c..
+#         ?. -d.up.. ?
+#     r_ R...
+#
+# c_ Transaction
+#     """A transaction guard. This is realy just syntactic suggar arount a memento
+#     closure."""
+#     deep _ F..
+#     ___ - $targets
+#         ?  ?
+#         C...
+#     ___ C...
+#         states _ |M.. t.. de.. ___ target __ t..
+#     ___ R...
+#         ___ state __ ?
+#             ?
+#
+# c_ transactional o..
+#     """Adds transactional semantics to methods. Methods decorated with
+#     @transactional will rollback to entry state upon exceptions."""
+#     ___ - method
+#         ?  ?
+#     ___ -g obj T
+#         ___ transaction $  $$
+#             state _ M.. ?
+#             ___
+#                 r_ m.. ? $ $$
+#             ______
+#                 s..
+#                 r_
+#         r_ ?
+#
+# __ _______ __ ______
+#
+#    c_ NumObj o..
+#       ___ - value
+#          ?  ?
+#       ___ -r
+#          r_ '<%s: %r>'  -c . -n ?
+#       ___ I...
+#          ? +_ 1
+#       ?t..
+#       ___ DoStuff
+#          value _ '1111' # <- invalid value
+#          I...    # <- will fail and rollback
+#
+#    print
+#    n _ N.. -1
+#    print ?
+#    t _ T.. ?
+#    ___
+#       ___ i __ ra.. 3
+#          n.I..
+#          print ?
+#       t.C..
+#       print '-- commited'
+#       ___ i __ ra.. 3
+#          n.I..
+#          print ?
+#       ?.v.. +_ 'x' # will fail
+#       print ?
+#    ________
+#       t.R..
+#       print '-- rolled back'
+#    print ?
+#    print '-- now doing stuff ...'
+#    ___
+#       n.DS..
+#    _______
+#       print '-> doing stuff failed!'
+#       ______ tr...
+#       tr____.p_e... 0
+#       pass
+#    print ?
