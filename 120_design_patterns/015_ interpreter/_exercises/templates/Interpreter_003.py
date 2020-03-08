@@ -1,174 +1,174 @@
-#=======================================================================================================================
-from abc import ABCMeta, abstractmethod
-# Introduce ABCMeta and abstractmethod to define abstract classes and abstract methods
-
-class Expression(metaclass=ABCMeta):
-    """Abstract expression"""
-
-    @abstractmethod
-    def interpreter(self, var):
-        pass
-
-
-class VarExpression(Expression):
-    """Variable parser"""
-
-    def __init__(self, key):
-        self.__key = key
-
-    def interpreter(self, var):
-        return var.get(self.__key)
-
-
-class SymbolExpression(Expression):
-    """Operator parser, abstract class for operators"""
-
-    def __init__(self, left, right):
-        self._left = left
-        self._right = right
-
-
-class AddExpression(SymbolExpression):
-    """Addition parser"""
-
-    def __init__(self, left, right):
-        super().__init__(left, right)
-
-    def interpreter(self, var):
-        return self._left.interpreter(var) + self._right.interpreter(var)
-
-
-class SubExpression(SymbolExpression):
-    """Subtraction parser"""
-
-    def __init__(self, left, right):
-        super().__init__(left, right)
-
-    def interpreter(self, var):
-        return self._left.interpreter(var) - self._right.interpreter(var)
-
-
-
-class Stack:
-    """Encapsulating a stack class"""
-
-    def __init__(self):
-        self.items = []
-
-    def isEmpty(self):
-        return len(self.items) == 0
-
-    def push(self, item):
-        self.items.append(item)
-
-    def pop(self):
-        return self.items.pop()
-
-    def peek(self):
-        if not self.isEmpty():
-            return self.items[len(self.items) - 1]
-
-    def size(self):
-        return len(self.items)
-
-
-class Calculator:
-    """Calculator"""
-
-    def __init__(self, text):
-        self.__expression = self.parserText(text)
-
-    def parserText(self, expText):
-        # Define a stack, processing sequence
-        stack = Stack()
-        left = right = None # Left and right expression
-        idx = 0
-        while(idx < len(expText)):
-            if (expText[idx] == '+'):
-                left = stack.pop()
-                idx += 1
-                right = VarExpression(expText[idx])
-                stack.push(AddExpression(left, right))
-            elif(expText[idx] == '-'):
-                left = stack.pop()
-                idx += 1
-                right = VarExpression(expText[idx])
-                stack.push(SubExpression(left, right))
-            else:
-                stack.push(VarExpression(expText[idx]))
-            idx += 1
-        return stack.pop()
-
-    def run(self, var):
-        return self.__expression.interpreter(var)
-
-
-
-
-
-# Version 2.0
-#=======================================================================================================================
-# Code framework
-#==============================
-
-
-# Framework-based implementation
-#==============================
-
-
-# Test
-#=======================================================================================================================
-
-def Stack():
-    s = Stack()
-    print(s.isEmpty())
-    s.push(4)
-    s.push('dog')
-    print(s.peek())
-    s.push(True)
-    print(s.size())
-    print(s.isEmpty())
-    s.push(8.4)
-    print(s.pop())
-    print(s.pop())
-    print(s.size())
-
-
-
-def Calculator():
-    # Get expression
-    expStr = input("Please enter an expression ");
-    # Get the key-value pairs of each parameter
-    newExp, expressionMap = getMapValue(expStr)
-    calculator = Calculator(newExp)
-    result = calculator.run(expressionMap)
-    print("The operation result is: " + expStr + " = " + str(result))
-
-def getMapValue(expStr):
-    preIdx = 0
-    expressionMap = {}
-    newExp = []
-    for i in range(0, len(expStr)):
-        if (expStr[i] == '+' or expStr[i] == '-'):
-            key = expStr[preIdx:i]
-            key = key.strip()  # Remove leading and trailing blank characters
-            newExp.append(key)
-            newExp.append(expStr[i])
-            var = input("Please enter parameters" + key + "The value of ");
-            var = var.strip()
-            expressionMap[key] = float(var)
-            preIdx = i + 1
-
-    # Processing the last parameter
-    key = expStr[preIdx:len(expStr)]
-    key = key.strip()  # Remove leading and trailing blank characters
-    newExp.append(key)
-    var = input("Please enter parameters" + key + "The value of: ");
-    var = var.strip()
-    expressionMap[key] = float(var)
-
-    return newExp, expressionMap
-
-
-# testStack()
-Calculator()
+# #_______________________________________________________________________________________________________________________
+# ____ a.. ______ A.. a..
+# # Introduce ABCMeta and abstractmethod to define abstract classes and abstract methods
+#
+# c_ Expression m..
+#     """Abstract expression"""
+#
+#     ??
+#     ___ interpreter var
+#         p..
+#
+#
+# c_ VarExpression E...
+#     """Variable parser"""
+#
+#     ___ - key
+#         __?  ?
+#
+#     ___ interpreter var
+#         r_ ?.ge. __k..
+#
+#
+# c_ SymbolExpression E..
+#     """Operator parser, abstract class ___ operators"""
+#
+#     ___ - left right
+#         _?  ?
+#         _?  ?
+#
+#
+# c_ AddExpression SE..
+#     """Addition parser"""
+#
+#     ___ - left right
+#         s___ . - ?  ?
+#
+#     ___ interpreter var
+#         r_ _l___.int.. ? + _r___.int.. ?
+#
+#
+# c_ SubExpression S..
+#     """Subtraction parser"""
+#
+#     ___  - left right
+#         s____. - left right
+#
+#     ___ interpreter var
+#         r_ _l__.int.. ? - _r___.int.. ?
+#
+#
+#
+# c_ Stack
+#     """Encapsulating a stack class"""
+#
+#     ___  -
+#         items _    # list
+#
+#     ___ isEmpty
+#         r_ le. i.. __ 0
+#
+#     ___ p..  item
+#         i____.ap.. ?
+#
+#     ___ pop
+#         r_ i___.p..
+#
+#     ___ peek
+#         __ no iE..
+#             r_ i___|le. i___| - 1
+#
+#     ___ size
+#         r_ le. i___
+#
+#
+# c_ Calculator
+#     """Calculator"""
+#
+#     ___  -  text
+#         __expression _ pT.. ?
+#
+#     ___ parserText expText
+#         # Define a stack, processing sequence
+#         stack _ S...
+#         left _ right _ N.. # Left and right expression
+#         idx _ 0
+#         w___ id. < le. eT..
+#             __ eT..|id. __ '+'
+#                 left _ st__.po.
+#                 id. +_ 1
+#                 right _ VE... eT...|id.
+#                 st__.p.. AE.. l.. r..
+#             ____ eT..|id. __ '-'
+#                 left _ st__.po.
+#                 id. +_ 1
+#                 right _ VE.. eT..|id.
+#                 st__.pu.. SE.. l.. r..
+#             ____
+#                 st__.pu.. VE.. eT..|id.
+#             id. +_ 1
+#         r_ st__.po.
+#
+#     ___ run var
+#         r_ __e_____.int.. ?
+#
+#
+#
+#
+#
+# # Version 2.0
+# #_______________________________________________________________________________________________________________________
+# # Code framework
+# #______________________________
+#
+#
+# # Framework-based implementation
+# #______________________________
+#
+#
+# # Test
+# #_______________________________________________________________________________________________________________________
+#
+# ___ Stack
+#     s _ S...
+#     print ?.iE...
+#     ?.p.. 4
+#     ?.p.. 'dog'
+#     print ?.pe..
+#     ?.p.. T..
+#     print ?.s..
+#     print ?.iE...
+#     ?.p.. 8.4
+#     print ?.p..
+#     print ?.p..
+#     print ?.s..
+#
+#
+#
+# ___ Calculator
+#     # Get expression
+#     expStr _ in.. Please enter an expression
+#     # Get the key-value pairs of each parameter
+#     newExp, expressionMap _ gMV.. ?
+#     calculator _ C.. n..
+#     result _ ?.ru. eM...
+#     print("The operation result is: " + eS.. + " _ " + st. ?
+#
+# ___ getMapValueexpStr
+#     preIdx _ 0
+#     expressionMap _    # dict
+#     newExp _     # list
+#     ___ i __ ra..  0 le. eS..
+#         __ eS.. |? __ '+' or eS..|? __ '-
+#             key _ eS.. |pI..;?
+#             key _ ?.st..  # Remove leading and trailing blank characters
+#             nE__.ap.. ?
+#             nE__.ap.. eS.. |?
+#             var _ in..("Please enter parameters" + k.. + "The value of ");
+#             var _ ?.st..
+#             eM..|k.. _ fl.. ?
+#             preIdx _ ? + 1
+#
+#     # Processing the last parameter
+#     key _ eS.. [pI..;le. eS..
+#     key _ ?.st..  # Remove leading and trailing blank characters
+#     nE__.ap.. ?
+#     var _ in..("Please enter parameters" + k.. + "The value of: ");
+#     var _ ?.st..
+#     eM..|k.. _ fl.. ?
+#
+#     r_ nE.. eM..
+#
+#
+# # testStack()
+# Calculator()
