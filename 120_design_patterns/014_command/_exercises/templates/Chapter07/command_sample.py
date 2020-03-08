@@ -1,37 +1,36 @@
-__author__ = 'Chetan'
-
-from abc import ABCMeta, abstractmethod
-class Command(metaclass=ABCMeta):
-    def __init__(self, recv):
-        self.recv = recv
-    
-    def execute(self):
-        pass
-
-class ConcreteCommand(Command):
-        
-    def __init__(self, recv):
-        self.recv = recv
-    
-    def execute(self):
-        self.recv.action()
-
-class Receiver:
-    
-    def action(self):
-        print("Receiver Action")
-
-class Invoker:
-    
-    def command(self, cmd):
-        self.cmd = cmd
-    
-    def execute(self):
-        self.cmd.execute()
-
-if __name__ == '__main__':
-    recv = Receiver()
-    cmd = ConcreteCommand(recv)
-    invoker = Invoker()
-    invoker.command(cmd)
-    invoker.execute()
+# ____ a.. ______ A.. a..
+#
+# c_ Command m..
+#     ___ - recv
+#         ?  ?
+#
+#     ___ execute
+#         p...
+#
+# c_ ConcreteCommand C..
+#
+#     ___ - recv
+#         ?  ?
+#
+#     ___ execute
+#         r__.a..
+#
+# c_ Receiver
+#
+#     ___ action
+#         print("Receiver Action")
+#
+# c_ Invoker
+#
+#     ___ command cmd
+#         ?  ?
+#
+#     ___ execute
+#         c__.ex..
+#
+# __ _______ __ ______
+#     recv = R..
+#     cmd = CC.. ?
+#     invoker = I...
+#     ?.c__ c__
+#     ?.ex..
