@@ -1,154 +1,154 @@
-import abc
-import os
-
-history = []
-
-class Command(object):
-    """The command interface."""
-
-    __metaclass__ = abc.ABCMeta
-
-    @abc.abstractmethod
-    def execute(self):
-        """Method to execute the command."""
-        pass
-
-    @abc.abstractmethod
-    def undo(self):
-        """A method to undo the command."""
-        pass
-
-class LsCommand(Command):
-    """Concrete command that emulates ls unix command behavior."""
-
-    def __init__(self, receiver):
-        self.receiver = receiver
-
-    def execute(self):
-        """The command delegates the call to its receiver."""
-        self.receiver.show_current_dir()
-
-    def undo(self):
-        """Can not undo ls command."""
-        pass
-
-class LsReceiver(object):
-    def show_current_dir(self):
-        """The receiver knows how to execute the command."""
-
-        cur_dir = './'
-
-        filenames = []
-        for filename in os.listdir(cur_dir):
-            if os.path.isfile(os.path.join(cur_dir, filename)):
-                filenames.append(filename)
-
-        print 'Content of dir: ', ' '.join(filenames)
-
-class TouchCommand(Command):
-    """Concrete command that emulates touch unix command behavior."""
-
-    def __init__(self, receiver):
-        self.receiver = receiver
-
-    def execute(self):
-        self.receiver.create_file()
-
-    def undo(self):
-        self.receiver.delete_file()
-
-class TouchReceiver(object):
-
-    def __init__(self, filename):
-        self.filename = filename
-
-    def create_file(self):
-        """Actual implementation of unix touch command."""
-        with file(self.filename, 'a'):
-            os.utime(self.filename, None)
-
-    def delete_file(self):
-        """Undo unix touch command. Here we simply delete the file."""
-        os.remove(self.filename)
-
-class RmCommand(Command):
-    """Concrete command that emulates rm unix command behavior."""
-    def __init__(self, receiver):
-        self.receiver = receiver
-
-    def execute(self):
-        self.receiver.delete_file()
-
-    def undo(self):
-        self.receiver.undo()
-
-class RmReceiver(object):
-
-    def __init__(self, filename):
-        self.filename = filename
-        self.backup_name = None
-
-    def delete_file(self):
-        """Deletes file with creating backup to restore it in undo method."""
-        self.backup_name = '.' + self.filename
-        os.rename(self.filename, self.backup_name)
-
-    def undo(self):
-        """Restores the deleted file."""
-        original_name = self.backup_name[1:]
-        os.rename(self.backup_name, original_name)
-        self.backup_name = None
-
-class Invoker(object):
-    def __init__(self, create_file_commands, delete_file_commands):
-        self.create_file_commands = create_file_commands
-        self.delete_file_commands = delete_file_commands
-        self.history = []
-
-    def create_file(self):
-        print 'Creating file...'
-
-        for command in self.create_file_commands:
-            command.execute()
-            self.history.append(command)
-
-        print 'File created.\n'
-
-    def delete_file(self):
-        print 'Deleting file...'
-        for command in self.delete_file_commands:
-            command.execute()
-            self.history.append(command)
-        print 'File deleted.\n'
-
-    def undo_all(self):
-        print 'Undo all...'
-
-        for command in reversed(self.history):
-            command.undo()
-
-        print 'Undo all finished.'
-
-if __name__ == '__main__':
-    # Client
-
-    # List files in current directory
-    ls_receiver = LsReceiver()
-    ls_command = LsCommand(ls_receiver)
-
-    # Create a file
-    touch_receiver = TouchReceiver('test_file')
-    touch_command = TouchCommand(touch_receiver)
-
-    # Delete created file
-    rm_receiver = RmReceiver('test_file')
-    rm_command = RmCommand(rm_receiver)
-
-    create_file_commands = [ls_command, touch_command, ls_command]
-    delete_file_commands = [ls_command, rm_command, ls_command]
-
-    invoker = Invoker(create_file_commands, delete_file_commands)
-
-    invoker.create_file()
-    invoker.delete_file()
-    invoker.undo_all()
+# ______ a..
+# ______ __
+#
+# history _    # list
+#
+# c_ Command o..
+#     """The command interface."""
+#
+#     -m
+#
+#     ??.?
+#     ___ execute
+#         """Method to execute the command."""
+#         pass
+#
+#     ??.?
+#     ___ undo
+#         """A method to undo the command."""
+#         pass
+#
+# c_ LsCommand C..
+#     """Concrete command that emulates ls unix command behavior."""
+#
+#     ___ - receiver
+#         ?  ?
+#
+#     ___ execute
+#         """The command delegates the call to its receiver."""
+#         r___.s_c_d..
+#
+#     ___ undo
+#         """Can not undo ls command."""
+#         p..
+#
+# c_ LsReceiver o..
+#     ___ show_current_dir
+#         """The receiver knows how to execute the command."""
+#
+#         cur_dir _ './'
+#
+#         filenames _   # list
+#         ____ filename __ __.listdir c_d..
+#             __ __.pa__.isf.. __.pa__.jo.. c_d.. ?
+#                 f___.ap.. ?
+#
+#         print 'Content of dir: ', ' '.jo.. f..
+#
+# c_ TouchCommand C..
+#     """Concrete command that emulates touch unix command behavior."""
+#
+#     ___ - receiver
+#         ?  ?
+#
+#     ___ execute
+#         r___.c_f..
+#
+#     ___ undo
+#         r___.d_f..
+#
+# c_ TouchReceiver o..
+#
+#     ___ -  filename
+#         ?  ?
+#
+#     ___ create_file
+#         """Actual implementation of unix touch command."""
+#         w__ fi.. ? _
+#             __.uti.. ? N..
+#
+#     ___ delete_file
+#         """Undo unix touch command. Here we simply delete the file."""
+#         __.r... f...
+#
+# c_ RmCommand C..
+#     """Concrete command that emulates rm unix command behavior."""
+#     ___ - receiver
+#         ?  ?
+#
+#     ___ execute
+#         r___.d_f..
+#
+#     ___ undo
+#         r___.un..
+#
+# c_ RmReceiver o..
+#
+#     ___ - filename
+#         ?  ?
+#         b_n.. _ N..
+#
+#     ___ delete_file
+#         """Deletes file with creating backup to restore it in undo method."""
+#         backup_name _ '.' + f...
+#         __.re.. f.. ?
+#
+#     ___ undo
+#         """Restores the deleted file."""
+#         original_name _ b_n..|1;
+#         __.re.. b_n.. o_n..
+#         b_n.. _ N..
+#
+# c_ Invoker o..
+#     ___ -  create_file_commands delete_file_commands
+#         ?  ?
+#         ?  ?
+#         history _    # list
+#
+#     ___ create_file
+#         print 'Creating file...'
+#
+#         ___ command __ c_f_c...
+#             ?.ex..
+#             h___.ap.. ?
+#
+#         print 'File created.\n'
+#
+#     ___ delete_file
+#         print 'Deleting file...'
+#         ___ command __ d_f_c..
+#             ?.ex..
+#             h__.ap.. ?
+#         print 'File deleted.\n'
+#
+#     ___ undo_all
+#         print 'Undo all...'
+#
+#         ___ command __ re.. h..
+#             ?.u..
+#
+#         print 'Undo all finished.'
+#
+# __ _______ __ ______
+#     # Client
+#
+#     # List files in current directory
+#     ls_receiver _ LsR..
+#     ls_command _ LsC.. ?
+#
+#     # Create a file
+#     touch_receiver _ TR.. 'test_file')
+#     touch_command _ TC.. t_r..
+#
+#     # Delete created file
+#     rm_receiver _ RR..('test_file')
+#     rm_command _ RC.. ?
+#
+#     create_file_commands _ l_c.. t_c.. ls_c..
+#     delete_file_commands _ l_c.. r_c.. l_c..
+#
+#     invoker _ I.. c_f_c.. d_f_c..
+#
+#     ?.c_f..
+#     ?.d_f..
+#     ?.u_a..
