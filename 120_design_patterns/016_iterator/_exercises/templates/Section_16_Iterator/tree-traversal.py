@@ -1,81 +1,81 @@
-class Node:
-  def __init__(self, value, left=None, right=None):
-    self.right = right
-    self.left = left
-    self.value = value
-
-    self.parent = None
-
-    if left:
-      self.left.parent = self
-    if right:
-      self.right.parent = self
-
-  def __iter__(self):
-    return InOrderIterator(self)
-
-
-class InOrderIterator:
-  def __init__(self, root):
-    self.root = self.current = root
-    self.yielded_start = False
-    while self.current.left:
-      self.current = self.current.left
-
-  def __next__(self):
-    if not self.yielded_start:
-      self.yielded_start = True
-      return self.current
-
-    if self.current.right:
-      self.current = self.current.right
-      while self.current.left:
-        self.current = self.current.left
-      return self.current
-    else:
-      p = self.current.parent
-      while p and self.current == p.right:
-        self.current = p
-        p = p.parent
-      self.current = p
-      if self.current:
-        return self.current
-      else:
-        raise StopIteration
-
-def traverse_in_order(root):
-  def traverse(current):
-    if current.left:
-      for left in traverse(current.left):
-        yield left
-    yield current
-    if current.right:
-      for right in traverse(current.right):
-        yield right
-  for node in traverse(root):
-    yield node
-
-
-
-if __name__ == '__main__':
-  #   1
-  #  / \
-  # 2   3
-
-  # in-order: 213
-  # preorder: 123
-  # postorder: 231
-
-  root = Node(1,
-              Node(2),
-              Node(3))
-
-  it = iter(root)
-
-  print([next(it).value for x in range(3)])
-
-  for x in root:
-    print(x.value)
-
-  for y in traverse_in_order(root):
-    print(y.value)
+# c_ Node
+#   ___ -  value, left_N... right_N...
+#     r  r
+#     l  l
+#     v  v
+#
+#     parent _ N...
+#
+#     __ l___
+#       l___.p.. _ ?
+#     __ r____
+#       r____.p.. _ ?
+#
+#   ___ -i
+#     r_ IOI.. ?
+#
+#
+# c_ InOrderIterator
+#   ___ -  root
+#     root _ current _ root
+#     yielded_start _ F..
+#     w____ c___.l___
+#       c___ _ c___.l___
+#
+#   ___ -n
+#     __ no. y_s..
+#       y_s.. _ T..
+#       r_ c___
+#
+#     __ c___.r____
+#       c___ _ c___.r____
+#       w____ c___.l___
+#         c___ _ c___.l___
+#       r_ c___
+#     ____
+#       p _ c___.p..
+#       w____ p an. c___ __ p.r____
+#         c___ _ p
+#         p _ p.p..
+#       c___ _ p
+#       __ c___
+#         r_ c___
+#       ____
+#         r_ S...
+#
+# ___ traverse_in_order root
+#   ___ traverse c___
+#     __ c___.l___
+#       ___ l___ __ tr.. c___.l___
+#         y... l___
+#     y... c___
+#     __ c___.r____
+#       ___ r____ __ tr.. c___.r____
+#         y... r____
+#   ___ node __ tr.. ?
+#     y... ?
+#
+#
+#
+# __ _______ __ ______
+#   #   1
+#   #  / \
+#   # 2   3
+#
+#   # in-order 213
+#   # preorder 123
+#   # postorder 231
+#
+#   root _ N..(1,
+#               N..(2),
+#               N..(3))
+#
+#   it _ it.. ?
+#
+#   print ne.. ? .v.. ___ x __ ra.. 3
+#
+#   ___ x __ r..
+#     print ?.v..
+#
+#   ___ y __ t_i_o.. r..
+#     print ?.v..
