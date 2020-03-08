@@ -1,278 +1,278 @@
-#=======================================================================================================================
-
-class Customer:
-    """client"""
-
-    def __init__(self, name):
-        self.__name = name
-        self.__num = 0
-        self.__clinics = None
-
-    def getName(self):
-        return self.__name
-
-    def register(self, system):
-        system.pushCustomer(self)
-
-    def setNum(self, num):
-        self.__num = num
-
-    def getNum(self):
-        return self.__num
-
-    def setClinic(self, clinic):
-        self.__clinics = clinic
-
-    def getClinic(self):
-        return self.__clinics
-
-
-class NumeralIterator:
-    """Iterator"""
-
-    def __init__(self, data):
-        self.__data = data
-        self.__curIdx = -1
-
-    def next(self):
-        """Move to next element"""
-        if (self.__curIdx < len(self.__data) - 1):
-            self.__curIdx += 1
-            return True
-        else:
-            return False
-
-    def current(self):
-        """Get the current element"""
-        return self.__data[self.__curIdx] if (self.__curIdx < len(self.__data) and self.__curIdx >= 0) else None
-
-
-class NumeralSystem:
-    """Ranking system"""
-
-    __clinics = ("Screening Room No. 1", "Screening Room 2", "Screening Room 3")
-
-    def __init__(self, name):
-        self.__customers = []
-        self.__curNum = 0
-        self.__name = name
-
-    def pushCustomer(self, customer):
-        customer.setNum(self.__curNum + 1)
-        click = NumeralSystem.__clinics[self.__curNum % len(NumeralSystem.__clinics)]
-        customer.setClinic(click)
-        self.__curNum += 1
-        self.__customers.append(customer)
-        print("%s Hello! You are already %s Registered successfully, serial number:%04d, please wait patiently!"
-              % (customer.getName(), self.__name, customer.getNum()) )
-
-    def getIterator(self):
-        return NumeralIterator(self.__customers)
-
-
-    def visit(self):
-        for customer in self.__customers:
-            print("Next patient %04d(%s) Please go %s See a doctor."
-                  % (customer.getNum(), customer.getName(), customer.getClinic()) )
-
-
-# Version 2.0
-#=======================================================================================================================
-# 代码框架
-#==============================
-class BaseIterator:
-    """Iterator"""
-
-    def __init__(self, data):
-        self.__data = data
-        self.toBegin()
-
-    def toBegin(self):
-        """Move the pointer to the starting position"""
-        self.__curIdx = -1
-
-    def toEnd(self):
-        """Move the pointer to the end"""
-        self.__curIdx = len(self.__data)
-
-    def next(self):
-        """Move to next element"""
-        if (self.__curIdx < len(self.__data) - 1):
-            self.__curIdx += 1
-            return True
-        else:
-            return False
-
-    def previous(self):
-        "Move to previous element"
-        if (self.__curIdx > 0):
-            self.__curIdx -= 1
-            return True
-        else:
-            return False
-
-    def current(self):
-        """Get the current element"""
-        return self.__data[self.__curIdx] if (self.__curIdx < len(self.__data) and self.__curIdx >= 0) else None
-
-
-# 基于框架的实现
-#==============================
-
-
-# Test
-#=======================================================================================================================
-
-def testHospital():
-    numeralSystem = NumeralSystem("Registration desk")
-    lily = Customer("Lily")
-    lily.register(numeralSystem);
-    pony = Customer("Pony")
-    pony.register(numeralSystem)
-    nick = Customer("Nick")
-    nick.register(numeralSystem)
-    tony = Customer("Tony")
-    tony.register(numeralSystem)
-    print()
-
-    iterator = numeralSystem.getIterator()
-    while(iterator.next()):
-        customer = iterator.current()
-        print("Next patient %04d(%s) Please go %s See a doctor."
-              % (customer.getNum(), customer.getName(), customer.getClinic()) )
-
-    # numeralSystem.visit()
-
-
-
-def testBaseIterator():
-    print("Traverse: ")
-    iterator = BaseIterator(range(0, 10))
-    while(iterator.next()):
-        customer = iterator.current()
-        print(customer, end="\t")
-    print()
-
-    print("Traverse from back to front: ")
-    iterator.toEnd()
-    while (iterator.previous()):
-        customer = iterator.current()
-        print(customer, end="\t")
-
-
-def testLoop():
-    arr = [0, 1, 2, 3, 4, 5, 6, 7 ,8 , 9];
-    for e in arr:
-        print(e, end="\t")
-
-
-#  Method 1: Use () to define the generator
-gen = (x * x for x in range(10))
-
-#  Method 2: Define the generator function using yield
-def fibonacci(maxNum):
-    """Fibonacci generator"""
-    a = b = 1
-    for i in range(maxNum):
-        yield a
-        a, b = b, a + b
-
-def testIterable():
-    print("Method one, the square of 0-9：")
-    for e in gen:
-        print(e, end="\t")
-    print()
-
-    print("Method two, Fibonacci sequence: ")
-    fib = fibonacci(10)
-    for n in fib:
-        print(n, end="\t")
-    print()
-
-    print("The for loop of the built-in container:")
-    arr = [x * x for x in range(10)]
-    for e in arr:
-        print(e, end="\t")
-    print()
-
-    print()
-    print(type(gen))
-    print(type(fib))
-    print(type(arr))
-
-
-from collections import Iterable, Iterator
-# Introducing Iterable and Iterator
-
-def testIsIterator():
-    print("Whether it is an Iterable object:")
-    print(isinstance([], Iterable))
-    print(isinstance({}, Iterable))
-    print(isinstance((1, 2, 3), Iterable))
-    print(isinstance(set([1, 2, 3]), Iterable))
-    print(isinstance("string", Iterable))
-    print(isinstance(gen, Iterable))
-    print(isinstance(fibonacci(10), Iterable))
-    print("Whether it is an Iterator object: ")
-    print(isinstance([], Iterator))
-    print(isinstance({}, Iterator))
-    print(isinstance((1, 2, 3), Iterator))
-    print(isinstance(set([1, 2, 3]), Iterator))
-    print(isinstance("string", Iterator))
-    print(isinstance(gen, Iterator))
-    print(isinstance(fibonacci(10), Iterator))
-
-
-def testNextItem():
-    print("Turn Iterable object into Iterator object: ")
-    l = [1, 2, 3]
-    itrL = iter(l)
-    print(next(itrL))
-    print(next(itrL))
-    print(next(itrL))
-
-    print("next() The function iterates over the iterator elements:")
-    fib = fibonacci(4)
-    print(next(fib))
-    print(next(fib))
-    print(next(fib))
-    print(next(fib))
-    # print(next(fib))
-
-
-class NumberSequence:
-    """Generate a series of numbers spaced in steps"""
-
-    def __init__(self, init, step, max = 100):
-        self.__data = init
-        self.__step = step
-        self.__max = max
-
-    def __iter__(self):
-        return self
-
-    def __next__(self):
-        if(self.__data < self.__max):
-            tmp = self.__data
-            self.__data += self.__step
-            return tmp
-        else:
-            raise StopIteration
-
-
-def NumberSequence():
-    numSeq = NumberSequence(0, 5, 20)
-    print(isinstance(numSeq, Iterable))
-    print(isinstance(numSeq, Iterator))
-    for n in numSeq:
-        print(n, end="\t")
-
-
-# testHospital()
-# testBaseIterator()
-# testLoop()
-# testIterable()
-testIsIterator()
-# testNextItem()
-# testNumberSequence()
-
+# #=======================================================================================================================
+#
+# c_ Customer
+#     """client"""
+#
+#     ___  name
+#         __?  ?
+#         __num _ 0
+#         __clinics _ N..
+#
+#     ___ getName
+#         r_ __name
+#
+#     ___ register system
+#         system.pushCustomer
+#
+#     ___ setNum num
+#         __?  ?
+#
+#     ___ getNum
+#         r_ __?
+#
+#     ___ setClinic clinic
+#         __?  ?
+#
+#     ___ getClinic
+#         r_ __?
+#
+#
+# c_ NumeralIterator
+#     """Iterator"""
+#
+#     ___ - data
+#         __?  ?
+#         __curIdx _ -1
+#
+#     ___ next
+#         """Move to next element"""
+#         __ (__cI.. < le. __d.. - 1
+#             __cI.. +_ 1
+#             r_ T..
+#         ____
+#             r_ F..
+#
+#     ___ current
+#         """Get the current element"""
+#         r_ __d..|__cI.. __ |__cI.. < le.|__d.. an. __cI.. >_ 0 ____ N..
+#
+#
+# c_ NumeralSystem
+#     """Ranking system"""
+#
+#     __clinics _ ("Screening Room No. 1", "Screening Room 2", "Screening Room 3")
+#
+#     ___ - name
+#         __customers _     # list
+#         __curNum _ 0
+#         __? _ ?
+#
+#     ___ pushCustomer customer
+#         ?.setNum __cN.. + 1)
+#         click _ NS__.__c..|__cN.. % le. NS__.__c..
+#         ?.sC.. ?
+#         __cN.. +_ 1
+#         __cu____.ap.. ?
+#         print("@ Hello! You are already @ Registered successfully, serial number%04d, please wait patiently!"
+#                (?.gN.. __n.. ?.gN..
+#
+#     ___ getIterator
+#         r_ NI.. __c..
+#
+#
+#     ___ visit
+#         ___ customer in __cu..
+#             print("Next patient %04d(@) Please go @ See a doctor."
+#                    ?.gN.. ?.gN... ?.gC..
+#
+#
+# # Version 2.0
+# #=======================================================================================================================
+# # Code framework
+# #==============================
+# c_ BaseIterator
+#     """Iterator"""
+#
+#     ___ - data
+#         __?  ?
+#         tB..
+#
+#     ___ toBegin
+#         """Move the pointer to the starting position"""
+#         __cI.. _ -1
+#
+#     ___ toEnd
+#         """Move the pointer to the end"""
+#         __cI.. _ le. __d..
+#
+#     ___ next
+#         """Move to next element"""
+#         __ __cI.. < le.__d... - 1
+#             __cI.. +_ 1
+#             r_ T..
+#         ____
+#             r_ F..
+#
+#     ___ previous
+#         "Move to previous element"
+#         __ __cI.. > 0
+#             __cI.. -_ 1
+#             r_ T..
+#         ____
+#             r_ F..
+#
+#     ___ current
+#         """Get the current element"""
+#         r_ __d...|__cI.. __ |__cI.. < le. __d... an. __cI.. >_ 0 ____ N..
+#
+#
+# # Framework-based implementation
+# #==============================
+#
+#
+# # Test
+# #=======================================================================================================================
+#
+# ___ Hospital
+#     numeralSystem _ NS.. "Registration desk"
+#     lily _ C.. "Lily"
+#     ?.r.. nS..
+#     pony _ C... "Pony"
+#     ?.r.. nS..
+#     nick _ C.. "Nick"
+#     nick.r.. nS..
+#     tony _ C.. "Tony"
+#     ?.r.. nS..
+#     print()
+#
+#     iterator _ nS...gI..
+#     w____ ?.ne..
+#         customer _ it___.cu..
+#         print("Next patient %04d(@) Please go @ See a doctor."
+#                ?.gNu. ?.gNa.. ?.gC..
+#
+#     # numeralSystem.visit()
+#
+#
+#
+# ___ BaseIterator
+#     print("Traverse ")
+#     iterator _ B.. ra.. 0, 10
+#     w____ ?.ne..
+#         customer _ ?.cu..
+#         print(?, e.._"\t")
+#     print()
+#
+#     print("Traverse from back to front ")
+#     ?.tE..
+#     w____  i___.pr..
+#         customer _ it___.cu..
+#         print ? e.._"\t"
+#
+#
+# ___ testLoop
+#     arr _ 0, 1, 2, 3, 4, 5, 6, 7 ,8 , 9
+#     ___ e __ ?
+#         print ? e.._"\t")
+#
+#
+# #  Method 1 Use () to define the generator
+# gen _ x * x ___ x __ ra.. 10
+#
+# #  Method 2 Define the generator function using yield
+# ___ fibonacci maxNum
+#     """Fibonacci generator"""
+#     a _ b _ 1
+#     ___ i __ ra.. mN...
+#         y.. a
+#         a, b _ b, a + b
+#
+# ___ Iterable
+#     print("Method one, the square of 0-9：")
+#     ___ e __ gen
+#         print ? end_"\t")
+#     print()
+#
+#     print("Method two, Fibonacci sequence ")
+#     fib _ fibonacci 10
+#     ___ n __ ?
+#         print(n, e.._"\t")
+#     print()
+#
+#     print("The ___ loop of the built-in container")
+#     arr _ |x * ? ___ ? __ ra.. 10
+#     ___ e __ ?
+#         print ? e.._"\t"
+#     print()
+#
+#     print()
+#     print(ty.. g..
+#     print(ty.. f..
+#     print(ty.. a..
+#
+#
+# ____ col...________ Iterable, Iterator
+# # Introducing Iterable and Iterator
+#
+# ___ IsIterator
+#     print("Whether it is an Iterable object")
+#     print(isinstance([], Iterable))
+#     print(isinstance({}, Iterable))
+#     print(isinstance((1, 2, 3), Iterable))
+#     print(isinstance(set([1, 2, 3]), Iterable))
+#     print(isinstance("string", Iterable))
+#     print(isinstance(gen, Iterable))
+#     print(isinstance(fibonacci(10), Iterable))
+#     print("Whether it is an Iterator object ")
+#     print(isinstance([], Iterator))
+#     print(isinstance({}, Iterator))
+#     print(isinstance((1, 2, 3), Iterator))
+#     print(isinstance(set([1, 2, 3]), Iterator))
+#     print(isinstance("string", Iterator))
+#     print(isinstance(gen, Iterator))
+#     print(isinstance(fibonacci(10), Iterator))
+#
+#
+# ___ NextItem
+#     print("Turn Iterable object into Iterator object ")
+#     l _ [1, 2, 3]
+#     itrL _ iter(l)
+#     print(next(itrL))
+#     print(next(itrL))
+#     print(next(itrL))
+#
+#     print("next() The function iterates over the iterator elements")
+#     fib _ fibonacci(4)
+#     print(next(fib))
+#     print(next(fib))
+#     print(next(fib))
+#     print(next(fib))
+#     # print(next(fib))
+#
+#
+# c_ NumberSequence
+#     """Generate a series of numbers spaced in steps"""
+#
+#     ___ - init step max _ 100
+#         __data _ init
+#         __step _ step
+#         __max _ max
+#
+#     ___ -i
+#         r_ ?
+#
+#     ___ -n
+#         __(__d... < __max)
+#             tmp _ __d...
+#             __d... +_ __step
+#             r_ tmp
+#         ____
+#             r_ S...
+#
+#
+# ___ NumberSequence
+#     numSeq _ NS.. 0, 5, 20
+#     print(isinstance(numSeq, Iterable))
+#     print(isinstance(numSeq, Iterator))
+#     ___ n __ numSeq
+#         print(n, end_"\t")
+#
+#
+# # testHospital()
+# # testBaseIterator()
+# # testLoop()
+# # testIterable()
+# # testIsIterator()
+# # testNextItem()
+# # testNumberSequence()
+#
