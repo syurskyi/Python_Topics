@@ -1,58 +1,58 @@
-class Person:
-    def __init__(self, name):
-        self.name = name
-        self.chat_log = []
-        self.room = None
-
-    def receive(self, sender, message):
-        s = f'{sender}: {message}'
-        print(f'[{self.name}\'s chat session] {s}')
-        self.chat_log.append(s)
-
-    def say(self, message):
-        self.room.broadcast(self.name, message)
-
-    def private_message(self, who, message):
-        self.room.message(self.name, who, message)
-
-
-class ChatRoom:
-    def __init__(self):
-        self.people = []
-
-    def broadcast(self, source, message):
-        for p in self.people:
-            if p.name != source:
-                p.receive(source, message)
-
-
-    def join(self, person):
-        join_msg = f'{person.name} joins the chat'
-        self.broadcast('room', join_msg)
-        person.room = self
-        self.people.append(person)
-
-
-    def message(self, source, destination, message):
-        for p in self.people:
-            if p.name == destination:
-                p.receive(source, message)
-
-
-if __name__ == '__main__':
-    room = ChatRoom()
-
-    john = Person('John')
-    jane = Person('Jane')
-
-    room.join(john)
-    room.join(jane)
-
-    john.say('hi room')
-    jane.say('oh, hey john')
-
-    simon = Person('Simon')
-    room.join(simon)
-    simon.say('hi everyone!')
-
-    jane.private_message('Simon', 'glad you could join us!')
+# c_ Person
+#     ___ - name
+#         ?  ?
+#         chat_log _   # list
+#         room _ N..
+#
+#     ___ receive sender message
+#         s _ _*|?: |?'
+#         print(_*[|n..\'s chat session] |?')
+#         c_l__.ap.. ?
+#
+#     ___ say message
+#         r___.b.. n.. m..
+#
+#     ___ private_message who message
+#         r___.m.. n.. w.. m..
+#
+#
+# c_ ChatRoom
+#     ___ -
+#         people _    # list
+#
+#     ___ broadcast source message
+#         ___ p __ people
+#             __ ?.n.. !_ s..
+#                 p.re.. s.. m..
+#
+#
+#     ___ join person
+#         join_msg _ _*|?.n..| joins the chat'
+#         b..('room' ?
+#         p___.r___ _ ?
+#         pe___.ap.. ?
+#
+#
+#     ___ message source destination message
+#         ___ p __ people
+#             __ ?.name __ d...
+#                 ?.re.. s.. m..
+#
+#
+# __ _______ __ ______
+#     room _ C..
+#
+#     john _ P.. 'John'
+#     jane _ P.. 'Jane'
+#
+#     r__.jo.. jo..
+#     r__.jo.. ja..
+#
+#     john.s.. 'hi room')
+#     jane.s.. 'oh, hey john')
+#
+#     simon _ P.. 'Simon'
+#     r__.j.. ?
+#     ?.say('hi everyone!')
+#
+#     jane.p_m..('Simon', 'glad you could join us!')
