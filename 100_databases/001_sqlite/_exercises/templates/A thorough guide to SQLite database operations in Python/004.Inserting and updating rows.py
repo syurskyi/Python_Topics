@@ -1,29 +1,29 @@
-import sqlite3
-
-sqlite_file = 'my_first_db.sqlite'
-table_name = 'my_table_2'
-id_column = 'my_1st_column'
-column_name = 'my_2nd_column'
-
-# Connecting to the database file
-conn = sqlite3.connect(sqlite_file)
-c = conn.cursor()
-
-# A) Inserts an ID with a specific value in a second column
-try:
-    c.execute("INSERT INTO {tn} ({idf}, {cn}) VALUES (123456, 'test')".\
-        format(tn=table_name, idf=id_column, cn=column_name))
-except sqlite3.IntegrityError:
-    print('ERROR: ID already exists in PRIMARY KEY column {}'.format(id_column))
-
-# B) Tries to insert an ID (if it does not exist yet)
-# with a specific value in a second column
-c.execute("INSERT OR IGNORE INTO {tn} ({idf}, {cn}) VALUES (123456, 'test')".\
-        format(tn=table_name, idf=id_column, cn=column_name))
-
-# C) Updates the newly inserted or pre-existing entry
-c.execute("UPDATE {tn} SET {cn}=('Hi World') WHERE {idf}=(123456)".\
-        format(tn=table_name, cn=column_name, idf=id_column))
-
-conn.commit()
-conn.close()
+# _____ _3
+#
+# sqlite_file _ 'my_first_db.sqlite'
+# table_name _ 'my_table_2'
+# id_column _ 'my_1st_column'
+# column_name _ 'my_2nd_column'
+#
+# # Connecting to the database file
+# conn _ _3.co.. s_f..
+# c _ ?.cu..
+#
+# # A) Inserts an ID with a specific value in a second column
+# ___
+#     ?.ex..("INSERT INTO @ (@, @) VALUES (123456, 'test')".\
+#         f.. tn_? idf_? cn_?
+# ______ _3.I..
+#     print('ERROR: ID already exists in PRIMARY KEY column @'.f.. i_c..
+#
+# # B) Tries to insert an ID (if it does not exist yet)
+# # with a specific value in a second column
+# ?.ex..("INSERT OR IGNORE INTO @ (@, @) VALUES (123456, 'test')".\
+#         f.. tn_? idf_? cn_?
+#
+# # C) Updates the newly inserted or pre-existing entry
+# ?.ex..("UPDATE @ SET @_('Hi World') WHERE @_(123456)".\
+#         f.. tn_? cn_? idf_?
+#
+# ?.co..
+# ?.cl..
