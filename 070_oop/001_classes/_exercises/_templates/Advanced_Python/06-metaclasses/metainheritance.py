@@ -1,26 +1,26 @@
-
-class MetaA(type):
-    pass
-
-
-class MetaB(type):
-    pass
-
-
-class MetaC(MetaA, MetaB):
-    pass
-
-class A(metaclass=MetaA):
-    pass
-
-
-class B(metaclass=MetaB):
-    pass
-
-
-class D(A):
-    pass
-
-
-class C(A, B, metaclass=MetaC):
-    pass
+#
+# c_ MetaA ty..
+#     p..
+#
+#
+# c_ MetaB ty..
+#     p..
+#
+#
+# c_ MetaC MA, MB
+#     p..
+#
+# c_ A m... MA
+#     p..
+#
+#
+# c_ B m.. MB
+#     p..
+#
+#
+# c_ D(A)
+#     p..
+#
+#
+# c_ C A, B, m.. MC
+#     p..
