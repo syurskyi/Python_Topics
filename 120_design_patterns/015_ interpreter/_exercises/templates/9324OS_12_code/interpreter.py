@@ -1,145 +1,145 @@
-from pyparsing import Word, OneOrMore, Optional, Group, Suppress, alphanums
-
-class Gate:
-    def __init__(self):
-        self.is_open = False
-
-    def __str__(self):
-        return 'open' if self.is_open else 'closed'
-
-    def open(self):
-        print('opening the gate')
-        self.is_open = True
-
-    def close(self):
-        print('closing the gate')
-        self.is_open = False
-
-class Garage:
-    def __init__(self):
-        self.is_open = False
-
-    def __str__(self):
-        return 'open' if self.is_open else 'closed'
-
-    def open(self):
-        print('opening the garage')
-        self.is_open = True
-
-    def close(self):
-        print('closing the garage')
-        self.is_open = False
-
-class Aircondition:
-    def __init__(self):
-        self.is_on = False
-
-    def __str__(self):
-        return 'on' if self.is_on else 'off'
-
-    def turn_on(self):
-        print('turning on the aircondition')
-        self.is_on = True
-
-    def turn_off(self):
-        print('turning off the aircondition')
-        self.is_on = False
-
-class Heating:
-    def __init__(self):
-        self.is_on = False
-
-    def __str__(self):
-        return 'on' if self.is_on else 'off'
-
-    def turn_on(self):
-        print('turning on the heating')
-        self.is_on = True
-
-    def turn_off(self):
-        print('turning off the heating')
-        self.is_on = False
-
-class Boiler:
-    def __init__(self):
-        self.temperature = 83 # in celsius
-
-    def __str__(self):
-        return 'boiler temperature: {}'.format(self.temperature)
-
-    def increase_temperature(self, amount):
-        print("increasing the boiler's temperature by {} degrees".format(amount))
-        self.temperature += amount
-
-    def decrease_temperature(self, amount):
-        print("decreasing the boiler's temperature by {} degrees".format(amount))
-        self.temperature -= amount
-
-class Fridge:
-    def __init__(self):
-        self.temperature = 2 # in celsius
-
-    def __str__(self):
-        return 'fridge temperature: {}'.format(self.temperature)
-
-    def increase_temperature(self, amount):
-        print("increasing the fridge's temperature by {} degrees".format(amount))
-        self.temperature += amount
-
-    def decrease_temperature(self, amount):
-        print("decreasing the fridge's temperature by {} degrees".format(amount))
-        self.temperature -= amount
-
-
-def main():
-    word = Word(alphanums)
-    command = Group(OneOrMore(word))
-    token = Suppress("->")
-    device = Group(OneOrMore(word))
-    argument = Group(OneOrMore(word))
-    event = command + token + device + Optional(token + argument)
-
-    gate = Gate()
-    garage = Garage()
-    airco = Aircondition()
-    heating = Heating()
-    boiler = Boiler()
-    fridge = Fridge()
-
-    tests = ('open -> gate',
-             'close -> garage',
-             'turn on -> aircondition',
-             'turn off -> heating',
-             'increase -> boiler temperature -> 5 degrees',
-             'decrease -> fridge temperature -> 2 degrees')
-
-    open_actions = {'gate':gate.open, 'garage':garage.open, 'aircondition':airco.turn_on,
-                  'heating':heating.turn_on, 'boiler temperature':boiler.increase_temperature,
-                  'fridge temperature':fridge.increase_temperature}
-    close_actions = {'gate':gate.close, 'garage':garage.close, 'aircondition':airco.turn_off,
-                   'heating':heating.turn_off, 'boiler temperature':boiler.decrease_temperature,
-                   'fridge temperature':fridge.decrease_temperature}
-
-    for t in tests:
-        if len(event.parseString(t)) == 2: # no argument
-            cmd, dev = event.parseString(t)
-            cmd_str, dev_str = ' '.join(cmd), ' '.join(dev)
-            if 'open' in cmd_str or 'turn on' in cmd_str:
-                open_actions[dev_str]()
-            elif 'close' in cmd_str or 'turn off' in cmd_str:
-                close_actions[dev_str]()
-        elif len(event.parseString(t)) == 3: # argument
-            cmd, dev, arg = event.parseString(t)
-            cmd_str, dev_str, arg_str = ' '.join(cmd), ' '.join(dev), ' '.join(arg)
-            num_arg = 0
-            try:
-                num_arg = int(arg_str.split()[0]) # extract the numeric part
-            except ValueError as err:
-                print("expected number but got: '{}'".format(arg_str[0]))
-            if 'increase' in cmd_str and num_arg > 0:
-                open_actions[dev_str](num_arg)
-            elif 'decrease' in cmd_str and num_arg > 0:
-                close_actions[dev_str](num_arg)
-
-if __name__ == '__main__':
-    main()
+# from pyparsing import Word, OneOrMore, Optional, Group, Suppress, alphanums
+#
+# c_ Gate
+#     ___ -
+#         is_open _ F..
+#
+#     ___ __str__
+#         r_ *o.. __ is_open ____ *c..
+#
+#     ___ open
+#         print('opening the gate')
+#         i_o.. _ T..
+#
+#     ___ close
+#         print('closing the gate')
+#         i_o.. _ F..
+#
+# c_ Garage
+#     ___ -
+#         i_o.. _ F..
+#
+#     ___ __str__
+#         r_ *o.. __ i_o.. ____ *c..
+#
+#     ___ open
+#         print('opening the garage')
+#         i_o.. _ T..
+#
+#     ___ close
+#         print('closing the garage')
+#         i_o.. _ F..
+#
+# c_ Aircondition:
+#     ___ -
+#         is_on _ F..
+#
+#     ___ -s
+#         r_ 'on' __ is_on ____ 'off'
+#
+#     ___ turn_on
+#         print('turning on the aircondition')
+#         i_o. _ T..
+#
+#     ___ turn_off
+#         print('turning off the aircondition')
+#         i_o. _ F..
+#
+# c_ Heating:
+#     ___ -
+#         is_on _ F..
+#
+#     ___ -s
+#         r_ 'on' __ is_on ____ 'off'
+#
+#     ___ turn_on
+#         print('turning on the heating')
+#         i_o. _ T..
+#
+#     ___ turn_off
+#         print('turning off the heating')
+#         i_o. _ F..
+#
+# c_ Boiler
+#     ___ -
+#         temperature _ 83 # __ celsius
+#
+#     ___ -s
+#         r_ 'boiler temperature: @'.f.. ?
+#
+#     ___ increase_temperature amount
+#         print("increasing the boiler's temperature by @ degrees".f.. ?
+#         t.. +_ a..
+#
+#     ___ decrease_temperature amount
+#         print("decreasing the boiler's temperature by @ degrees".f.. /
+#         t.. -_ ?
+#
+# c_ Fridge
+#     ___ -
+#         temperature _ 2 # __ celsius
+#
+#     ___ -s
+#         r_ 'fridge temperature: @'.f.. ?
+#
+#     ___ increase_temperature amount
+#         print("increasing the fridge's temperature by @ degrees".f.. ?
+#         t.. +_ ?
+#
+#     ___ decrease_temperature, amount
+#         print("decreasing the fridge's temperature by @ degrees".f.. ?
+#         t.. -_ ?
+#
+#
+# ___ mai
+#     word _ W.. a_a..
+#     command _ G.. OOM.. ?
+#     token _ S.. ("->")
+#     device _ G.. OOM.. w..
+#     argument _ G.. OOM.. w..
+#     event _ c.. + t.. + d.. + O.. t.. + a..
+#
+#     gate _ ?
+#     garage _ ?
+#     airco _ ?
+#     heating _ ?
+#     boiler _ ?
+#     fridge _ ?
+#
+#     tests _ ('open -> gate',
+#              'close -> garage',
+#              'turn on -> aircondition',
+#              'turn off -> heating',
+#              'increase -> boiler temperature -> 5 degrees',
+#              'decrease -> fridge temperature -> 2 degrees')
+#
+#     open_actions _ |*gate ?.o.. *garage ?.o.. *aircondition ?.t_o
+#                   *heating ?.t_o. *boiler temperature ?.i_t..
+#                   *fridge temperature ?.i_t..
+#     close_actions _ |*gate ?.cl.. *garage ?.cl.. *aircondition a___.t_o..
+#                    *heating ?.t_of. *boiler temperature ?.d_t..
+#                    *fridge temperature ?.d_t..
+#
+#     ___ t __ tests
+#         __ le. e___.pS.. t __ 2: # no argument
+#             cmd, dev _ e___.pS.. t
+#             cmd_str, dev_str _ ' '.jo.. c.. ' '.jo.. d..
+#             __ *o.. __ c_s.. o. 'turn on' __ c_s..
+#                 o_a..|d_s..
+#             ____ *close __ cmd_str or *turn off __ c_s..
+#                 c_a..|d_s..
+#         ____ le. e___.pS.. t __ 3 # argument
+#             cmd, dev, arg _ e___.pS.. t
+#             cmd_str, dev_str, arg_str _ ' '.jo.. c.. ' '.jo.. d.. ' '.jo.. a..
+#             num_arg _ 0
+#             ___
+#                 num_arg _ in.  a_s__.sp.. 0 # extract the numeric part
+#             ______ V.. __ err
+#                 print("expected number but got: '@'".f.. a_s.. 0
+#             __ *increase __ c_s.. an n_a.. > 0
+#                 o_a..|d_s.. n_a..
+#             ____ *decrease  __ c_s.. an. n_a.. > 0
+#                 c_a..|d_s..||n_a..
+#
+# __ _______ __ ______
+#     ?
