@@ -1,4 +1,4 @@
-# ____ random _______ randint
+# ____ ra.. _______ r_i..
 #
 # c_ Forest
 #
@@ -13,20 +13,20 @@
 #
 #     ____ populate_trees  num
 #         __ no. isi.. ? in.
-#             r.. V.. ("Please enter a valid number")
+#             r.. V.. Please enter a valid number
 #
-#         print(_*=== Adding |?| new trees to the forest ===")
+#         print(_*=== Adding |?| new trees to the forest ===
 #         ___ i __ ra.. ?
-#             print(_*\n-> Tree #{i+1}")
+#             print(_*\n-> Tree #|?+1 
 #             tree = ?c...
 #             ?tr__.ap.. ?
 #
 #     ____ create_tree
 #         w___ T..
 #             ___
-#                 code = st. in.. "Code of this new tree (sequence of integers):\n"
-#                 height = int(in.. "Height of the tree (as an integer):\n"
-#                 num_rings = int(in.. "Number of rings of the tree (as an integer):\n"
+#                 code = st. in.. Code of this new tree (sequence of integers):\n
+#                 height = in. in.. Height of the tree (as an integer):\n
+#                 num_rings = in. in.. Number of rings of the tree (as an integer):\n
 #             _______
 #                 print("Please try again. Enter a valid value.\n")
 #             ____
