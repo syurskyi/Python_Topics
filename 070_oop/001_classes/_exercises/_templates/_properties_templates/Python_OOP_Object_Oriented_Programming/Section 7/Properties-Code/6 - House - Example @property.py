@@ -4,12 +4,12 @@
 #         _?  ?
 #
 #     ??
-#     ___ price ____
+#     ___ price
 #         print("Getter")
 #         r_ _?
 #
-#     @price.setter
-#     ___ price ____ new_price
+#     ??.?
+#     ___ price new_price
 #         __ p.. > 0
 #             ._p.. _ _p..
 #         ____
