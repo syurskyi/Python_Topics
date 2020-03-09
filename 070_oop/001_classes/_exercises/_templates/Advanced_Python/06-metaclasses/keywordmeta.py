@@ -1,14 +1,13 @@
-
-class KeywordsOnlyMeta(type):
-
-    def __call__(cls, *args, **kwargs):
-        if args:
-            raise TypeError("Constructor for class {!r} does not accept positional arguments.".format(cls))
-        return super().__call__(cls, **kwargs)
-
-
-class ConstrainedToKeywords(metaclass=KeywordsOnlyMeta):
-
-    def __init__(self, *args, **kwargs):
-        print("args =", args)
-        print("kwargs =", kwargs)
+# c_ KeywordsOnlyMeta ty..
+#
+#     ___ -c ___ $ $$
+#         __ ar..
+#             r.. T.. ("Constructor for class {!r} does not accept positional arguments.".f.. ___
+#         r_ s___ . -c ___ $$
+#
+#
+# c_ ConstrainedToKeywords m..
+#
+#     ___ -  $ $$
+#         print("args =" a..
+#         print("kwargs =" k..
