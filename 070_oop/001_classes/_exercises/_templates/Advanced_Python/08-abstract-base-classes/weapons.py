@@ -1,64 +1,64 @@
-from abc import ABC, abstractmethod
-
-
-class Sword(ABC):
-
-    @classmethod
-    def __subclasshook__(cls, sub):
-        return ((hasattr(sub, 'swipe') and callable(sub.swipe)
-                 and
-                 hasattr(sub, 'thrust') and callable(sub.thrust)
-                 and
-                 hasattr(sub, 'parry') and callable(sub.parry)
-                 and
-                 hasattr(sub, 'sharpen') and callable(sub.sharpen))
-                or NotImplemented)
-
-    @abstractmethod
-    def swipe(self):
-        raise NotImplementedError
-
-    @abstractmethod
-    def thrust(self):
-        print("Thrusting...")
-
-    @abstractmethod
-    def parry(self):
-        raise NotImplementedError
-
-
-class BroadSword:
-
-    def swipe(self):
-        print("Swoosh!")
-
-    def thrust(self):
-        super().thrust()
-
-    def parry(self):
-        print("Parry!")
-
-    def sharpen(self):
-        print("Shink!")
-
-
-@Sword.register
-class LightSaber:
-
-    def swipe(self):
-        print("Ffffkrrrrshhzzzwooooom..woom..woooom..")
-
-
-class SamuraiSword:
-
-    def swipe(self):
-        print("Slice!")
-
-    def sharpen(self):
-        print("Shink!")
-
-
-class Rifle:
-
-    def fire(self):
-        print("Bang!")
+# ____ a.. ______ A.. a..
+#
+#
+# c_ Sword A..
+#
+#     ??
+#     ___ -s ___ sub
+#         r_ ||h.. ?, 'swipe') an. ca... ?.s..
+#                  an.
+#                  h... ?, 'thrust') an. ca... ?.th..
+#                  an.
+#                  h... ?, 'parry') an. ca... ?.pa..
+#                  an.
+#                  h... ?, 'sharpen') an. ca... ?.sh..
+#                 o. N..
+#
+#     ??
+#     ___ swipe
+#         r_ N..
+#
+#     ??
+#     ___ thrust
+#         print("Thrusting...")
+#
+#     ??
+#     ___ parry
+#         r_ N..
+#
+#
+# c_ BroadSword
+#
+#     ___ swipe
+#         print("Swoosh!")
+#
+#     ___ thrust
+#         s____ .th..
+#
+#     ___ parry
+#         print("Parry!")
+#
+#     ___ sharpen
+#         print("Shink!")
+#
+#
+# ?S__.r..
+# c_ LightSaber
+#
+#     ___ swipe
+#         print("Ffffkrrrrshhzzzwooooom..woom..woooom..")
+#
+#
+# c_ SamuraiSword:
+#
+#     ___ swipe
+#         print("Slice!")
+#
+#     ___ sharpen
+#         print("Shink!")
+#
+#
+# c_ Rifle
+#
+#     ___ fire
+#         print("Bang!")
