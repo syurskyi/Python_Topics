@@ -1,49 +1,49 @@
-class Event(list):
-    def __call__(self, *args, **kwargs):
-        for item in self:
-            item(*args, **kwargs)
-
-
-class Game:
-    def __init__(self):
-        self.events = Event()
-
-    def fire(self, args):
-        self.events(args)
-
-
-class GoalScoredInfo:
-    def __init__(self, who_scored, goals_scored):
-        self.goals_scored = goals_scored
-        self.who_scored = who_scored
-
-
-class Player:
-    def __init__(self, name, game):
-        self.name = name
-        self.game = game
-        self.goals_scored = 0
-
-    def score(self):
-        self.goals_scored += 1
-        args = GoalScoredInfo(self.name, self.goals_scored)
-        self.game.fire(args)
-
-
-class Coach:
-    def __init__(self, game):
-        game.events.append(self.celebrate_goal)
-
-    def celebrate_goal(self, args):
-        if isinstance(args, GoalScoredInfo) and args.goals_scored < 3:
-            print(f'Coach says: well done, {args.who_scored}!')
-
-
-if __name__ == '__main__':
-    game = Game()
-    player = Player('Sam', game)
-    coach = Coach(game)
-
-    player.score()  # Coach says: well done, Sam!
-    player.score()  # Coach says: well done, Sam!
-    player.score()  # ignored by coach
+# c_ Event li..
+#     ___ -c $ $$
+#         ___ item __ ?
+#             ? $ $$
+#
+#
+# c_ Game
+#     ___ -
+#         __events _ E..
+#
+#     ___ fire args
+#         __e.. a..
+#
+#
+# c_ GoalScoredInfo
+#     ___ -  who_scored goals_scored
+#         __g.. _ g..
+#         __w.. _ w..
+#
+#
+# c_ Player
+#     ___ - name game
+#         __?  ?
+#         __?  ?
+#         __goals_scored _ 0
+#
+#     ___ score
+#         __goals_scored +_ 1
+#         args _ GSI.. __n.. __g..
+#         __game.fire(args)
+#
+#
+# c_ Coach
+#     ___ - game
+#         ?.e___.ap.. __c..
+#
+#     ___ celebrate_goal args
+#         __ isi.. ar.. GSI.. an. ar__.g_s.. < 3
+#             print _*Coach says: well done, |ar__.w_s..!
+#
+#
+# __ _______ __ ______
+#     game _ G..
+#     player _ P.. 'Sam', ?
+#     coach _ C.. g..
+#
+#     p__.sc..  # Coach says: well done, Sam!
+#     p__.sc..  # Coach says: well done, Sam!
+#     p__.sc..  # ignored by coach
