@@ -1,65 +1,51 @@
-# # Abstract base classes (ABCs) enforce what derived classes implement particular methods from the base class.
+# # abc_base.py
+#
+# # Why use Abstract Base Classes?
+# # Abstract base classes are a form of interface checking more strict than individual hasattr() checks for particular
+# # methods. By defining an abstract base class, a common API can be established for a set of subclasses.
+# # This capability is especially useful in situations where someone less familiar with the source for an application is
+# # going to provide plug-in extensions, but can also help when working on a large team or with a large code-base
+# # where keeping track of all of the classes at the same time is difficult or not possible.
 # #
-# # To understand how this works and why we should use it, let's take a look at an example that Van Rossum would enjoy.
-# # Let's say we have a Base class "MontyPython" with two methods (joke & punchline) that must be implemented by all derived classes.
+# # How ABCs Work
+# # abc works by marking methods of the base class as abstract, and then registering concrete classes as implementations
+# # of the abstract base. If an application or library requires a particular API, issubclass() or isinstance()
+# # can be used to check an object against the abstract class.
+# #
+# # To start, define an abstract base class to represent the API of a set of plug-ins for saving and loading data.
+# # Set the metaclass for the new base class to ABCMeta, and use decorators to establish the public API for the class.
+# # The following examples use abc_base.py.
+#
+# ______ a..
 #
 #
-# c_ MontyPython
-#     ___ joke
-#         r_ N...
+# c_ PluginBase m..
 #
-#     ___ punchline
-#         r_ N..
+#     ??.?
+#     ___ load input
+#         """Retrieve data from the input source
+#         and return an object.
+#         """
 #
-#
-# c_ ArgumentClinic ?
-#     ___ joke
-#         r_ "Hahahahahah"
-#
-# # When we instantiate an object and call it's two methods, we'll get an error (as expected) with the punchline() method.
+#     ??.?
+#     ___ save output data
+#         """Save the data object to the output."""
 #
 #
-# sketch = A..
-# ?.p..
+# # python 2
 #
-#
-# # NotImplementedError
-# # However, this still allows us to instantiate an object of the ArgumentClinic class without getting an error.
-# # In fact we don't get an error until we look for the punchline().
-# # This is avoided by using the Abstract Base Class (ABC) module. Let's see how this works with the same example:
-#
-# ____ a.. _______ A.. a..
-#
-#
-# c_ MontyPython m..
-#     ??
-#     ___ joke
-#         p..
-#
-#
-# ??
-# ___ punchline
-#     p..
-#
-#
-# c_ ArgumentClinic M..
-#     ___ joke
-#         r_ "Hahahahahah"
-#
-#
-# # This time when we try to instantiate an object from the incomplete class, we immediately get a TypeError!
-#
-# c = A..
-#
-# # TypeError:
-# # "Can't instantiate abstract class ArgumentClinic with abstract methods punchline"
-# # In this case, it's easy to complete the class to avoid any TypeErrors:
-#
-# c_ ArgumentClinic M..
-#     ___ joke
-#         r_ "Hahahahahah"
-#
-#     ___ punchline
-#         r_ "Send in the constable!"
-#
-# # This time when you instantiate an object it works!
+# # ______ abc
+# #
+# #
+# # class PluginBase(object):
+# #     __metaclass__ = abc.ABCMeta
+# #
+# #     @abc.abstractmethod
+# #     ___ load(self, input):
+# #         """Retrieve data from the input source and return an object."""
+# #         return
+# #
+# #     @abc.abstractmethod
+# #     ___ save(self, output, data):
+# #         """Save the data object to the output."""
+# #         return
