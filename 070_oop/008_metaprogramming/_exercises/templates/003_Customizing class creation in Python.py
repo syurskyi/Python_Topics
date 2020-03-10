@@ -13,22 +13,21 @@
 # is implicitly available in the class definition.
 
 
-import abc
-from abc import abstractmethod
+______ a..
+___ a.. ______ a..
 
-class DaABC(abc.ABCMeta):
-    @classmethod
-    def __prepare__(metacls, name, bases, **kwargs):
-        return {"abstractmethod": abc.abstractmethod}
+c_ DaABC a..
+    ___ -p metacls name bases $$
+        r_ |"abstractmethod": ??
 
 
 # Using this metaclass gives you access to abstractmethod without having to get it from abc.
 
-class Foo(metaclass=DaABC):
+c_ Foo m.._D..
     # Notice not `abc.abstractmethod`.
-    @abstractmethod
-    def meth(self):
-        pass
+    ??
+    ___ meth
+        p..
 
 # This works because the way classes are created is essentially by taking the class' body and passing it
 # to exec() with the result of calling __prepare__() as the locals.
@@ -41,29 +40,29 @@ class Foo(metaclass=DaABC):
 # an __init__() and (optionally) the __repr__() for a class based on variable type annotations.
 
 
-class ScareHynek:
+c_ ScareHynek
 
-    def __init_subclass__(cls, **kwargs):
-        super().__init_subclass__()
-        attrs = tuple(cls.__annotations__.keys())
-        def __init__(self, *args, **kwargs):
+    ___ -i_s.. ___ $$
+        s___ .__i_s..
+        attrs _ tu.. ___. -a .k..
+        ___ -  $ $$
             # Skimping on the argument-checking because I'm lazy.
-            if len(args) > len(attrs):
-                raise TypeError("too many positional arguments")
-            for attr, val in zip(attrs, args):
+            __ le. ar.. > le. at..
+                r_ T.. too many positional arguments
+            ___ at.., val __ z.. at.., ar..
                 setattr(self, attr, val)
-            for attr, val in kwargs.items():
-                if attr not in attrs:
-                    raise TypeError("got an unexpected keyword argument {!r}")
-                setattr(self, attr, val)
-        cls.__init__ = __init__
-        if kwargs.get("repr", True):
-            repr_format = "<" + ", ".join(f"{attr}={{{attr}!r}}" for attr in attrs) + ">"
-            def __repr__(self):
-                all_attrs = self.__class__.__dict__.copy()
-                all_attrs.update(self.__dict__)
-                return repr_format.format_map(all_attrs)
-            cls.__repr__ = __repr__
+            ___ at.., val __ kw__.it..
+                __ at.. no. __ at..
+                    r_ T.. got an unexpected keyword argument _r
+                se.. ? attr val
+        ____. - _ -
+        __ kw__.ge. "repr" Tr..
+            repr_format _ "<" + ", ".jo.. _*|at.. _|||at..|_r " ___ attr in attrs) + ">"
+            ___ -r
+                all_attrs _ . -c. -d.co..
+                ?.up.. . -d
+                r_ r_f__.f_m.. a_a..
+            ___. -r  _ -r
 
 # This then lets you create simple Python objects that you may have created using types.SimpleNamespace instead
 # (aside: please don't abuse collections.namedtuple to make a simple Python object; the class is meant to help
@@ -71,23 +70,23 @@ class ScareHynek:
 # leaking a tuple API that you probably didn't want to begin with).
 
 
-class Simple(ScareHynek):
-    question: str
-    answer: int = 42
+c_ Simple S..
+    question: st.
+    answer: in. _ 42
 
-ins = Simple(question="Ultimate Question of Life, The Universe, and Everything")
-print(repr(ins))
-# Prints "# <question='Ultimate Question of Life, The Universe, and Everything', answer=42>"
+ins _ ?(question_"Ultimate Question of Life, The Universe, and Everything")
+print re ?
+# Prints "# <question_'Ultimate Question of Life, The Universe, and Everything', answer_42>"
 
 
 # You can also use keyword arguments to the class definition to skip the __repr__() definition.
 
 
-class Plain(ScareHynek, repr=False):
-    x: int
+c_ Plain S... re.._F..
+    x: in.
 
-ins = Plain(42)
-print(repr(ins))
+ins _ ? 42
+print(re.. ?
 # Prints "<class_creation.Plain object at 0x100f91198>"
 
 
