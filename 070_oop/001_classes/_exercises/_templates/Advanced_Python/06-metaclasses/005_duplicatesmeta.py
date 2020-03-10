@@ -7,7 +7,7 @@
 #             ___ k, v __ e..:
 #                 ?|? _ ?
 #
-#     ___ -s key value
+#     ___ -s_i.. key value
 #         __ ? __ ?
 #             r_ V...("Cannot assign to existing key @".f... ?
 #         s___ . -s ?  ?
@@ -22,10 +22,10 @@
 #             ___ k, v __ e..
 #                 ?|? _ ?
 #
-#     ___ -s key value
+#     ___ -s_i.. key value
 #         __ key __ ?
 #             r_ T...("Cannot reassign existing c_ attribute @ of @".f.. ? _n..
-#         s___ . -s ?  ?
+#         s___ . -s_i.. ?  ?
 #
 #
 # c_ ProhibitDuplicatesMeta ty..

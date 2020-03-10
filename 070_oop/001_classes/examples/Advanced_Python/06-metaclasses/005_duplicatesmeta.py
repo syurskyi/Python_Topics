@@ -1,4 +1,3 @@
-
 class OneShotDict(dict):
 
     def __init__(self, existing=None):
@@ -42,10 +41,3 @@ class Dodgy(metaclass=ProhibitDuplicatesMeta):
 
     def method(self):
         return "second definition"
-
-
-
-
-
-
-
