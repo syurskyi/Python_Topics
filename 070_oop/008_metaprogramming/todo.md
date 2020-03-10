@@ -13,3 +13,6 @@ https://www.geeksforgeeks.org/abstract-classes-in-python/
 
 ## Abstract Base Classes
 https://pythonprogramminglanguage.com/abstract-base-classes/
+
+## Understanding Python metaclasses
+https://blog.ionelmc.ro/2015/02/09/understanding-python-metaclasses/

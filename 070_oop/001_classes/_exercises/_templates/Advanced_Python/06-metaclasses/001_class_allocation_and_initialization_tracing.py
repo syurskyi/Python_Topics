@@ -53,7 +53,7 @@
 #         r_ ?
 #
 #
-# class TracingClass m.._TM..
+# c_ TracingClass m.._TM..
 #
 #     ___ -n ___ $ $$
 #         print("  TracingClass.__new__(cls, args, kwargs")
