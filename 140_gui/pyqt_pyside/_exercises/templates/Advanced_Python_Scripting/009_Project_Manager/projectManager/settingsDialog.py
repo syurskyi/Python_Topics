@@ -1,37 +1,37 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
-from widgets import settingsDialog_UIs as ui
-import settings
-
-class settingsDialogClass(QDialog, ui.Ui_settingsDialog):
-    def __init__(self, parent):
-        super(settingsDialogClass, self).__init__(parent)
-        self.setupUi(self)
-        # ui
-        self.table.setColumnCount(2)
-
-        # start
-        self.fillTable()
-
-    def fillTable(self):
-        data = settings.settingsClass().load()
-        for key, value in data.items():
-            self.addParm(key, value)
-
-    def addParm(self, parm, value):
-        self.table.insertRow(self.table.rowCount())
-        item = QTableWidgetItem()
-        item.setText(parm)
-        self.table.setItem(self.table.rowCount()-1, 0, item)
-
-        item = QTableWidgetItem()
-        item.setText(value)
-        self.table.setItem(self.table.rowCount()-1, 1, item)
-
-    def getTableData(self):
-        data = dict()
-        for i in range(self.table.rowCount()):
-            parm = self.table.item(i, 0).text()
-            value = self.table.item(i, 1).text()
-            data[parm] = value
-        return  data
+# ____ __.________ _
+# ____ __.__ ______ _
+# ____ w... ______ sD_U __ ui
+# ______ s..
+#
+# c_ settingsDialogClass QDi.. __.U_sD..
+#     ___ -  parent
+#         s___ ? ? . - ?
+#         setupUi ?
+#         # ui
+#         ta__.sCC.. 2
+#
+#         # start
+#         fT..
+#
+#     ___ fillTable
+#         data _ s__.sC__.lo..
+#         ___ key value __ ?.it..
+#             aP.. ? ?
+#
+#     ___ addParm parm value
+#         ta__.iR.. ta__.rC..
+#         item _ QTWI..
+#         ?.sT.. ?
+#         ta__.sI.. ta__.rC.. -1 0 ?
+#
+#         item _ QTWI..
+#         ?.sT.. ?
+#         ta__.sI.. ta__.rC.. -1 1 ?
+#
+#     ___ getTableData
+#         data _ di..
+#         ___ i __ ra.. ta__.rC..
+#             parm _ ta__.it.. ? 0 .t..
+#             value _ ta__.it.. ? 1 .t..
+#             da..|p.. _ ?
+#         r_  ?
