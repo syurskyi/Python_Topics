@@ -1,4 +1,19 @@
 # ____ w_r_ ______ WKD..
+# 
+# The weakref module allows the Python programmer to create weak references to objects.
+# A weak reference to an object is not enough to keep the object alive: when the only remaining references to 
+# a referent are weak references, garbage collection is free to destroy the referent and reuse its memory for something 
+# else. A primary use for weak references is to implement caches or mappings holding large objects, where it's desired 
+# that a large object not be kept alive solely because it appears in a cache or mapping.
+# 
+# For example, if you have a number of large binary image objects, you may wish to associate a name with each. 
+# If you used a Python dictionary to map names to images, or images to names, the image objects would remain alive just
+# because they appeared as values or keys in the dictionaries. The WeakKeyDictionary and WeakValueDictionary classes
+# supplied by the weakref module are an alternative, using weak references to construct mappings that don't keep
+# objects alive solely because they appear in the mapping objects. If, for example, an image object is a value in 
+# a WeakValueDictionary, then when the last remaining references to that image object are the weak references held 
+# by weak mappings, garbage collection can reclaim the object, and its corresponding entries in weak mappings 
+# are simply deleted.
 #
 #
 # c_ Positive
@@ -12,7 +27,7 @@
 #         r_ _i..|i____
 #
 #     ___ -s instance value
-#         __ ? <_ 0
+#         __ v___ <_ 0
 #             r_ V...("Value @ __ not positive".f.. ?
 #         _i..|i___ _ ?
 #
