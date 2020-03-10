@@ -1,66 +1,66 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
-from widgets import templateEditor_UIs as ui
-import os, json
-
-templateFile = os.path.join(os.path.dirname(__file__), 'template.json')
-
-class templateEditorClass(QWidget, ui.Ui_templateEditor):
-    def __init__(self):
-        super(templateEditorClass, self).__init__()
-        self.setupUi(self)
-        # ui
-        self.tree.setDragDropMode(QAbstractItemView.InternalMove)
-        self.tree.setSelectionMode(QAbstractItemView.ExtendedSelection)
-        # connects
-        self.add_btn.clicked.connect(self.addItem)
-        self.remove_btn.clicked.connect(self.removeItem)
-        self.save_btn.clicked.connect(self.saveTemplate)
-        self.close_btn.clicked.connect(self.close)
-        # start
-        self.loadTemplate()
-
-    def addItem(self, name='Folder', parent=None):
-        if not parent:
-            parent = self.tree.invisibleRootItem()
-        item = QTreeWidgetItem()
-        item.setFlags(Qt.ItemIsEnabled | Qt.ItemIsSelectable | Qt.ItemIsEditable | Qt.ItemIsDragEnabled | Qt.ItemIsDropEnabled)
-        item.setText(0, name)
-        parent.addChild(item)
-        item.setExpanded(1)
-        return item
-
-    def removeItem(self):
-        items = self.tree.selectedItems()
-        for i in items:
-            (i.parent() or self.tree.invisibleRootItem()).takeChild(self.tree.indexFromItem(i).row())
-
-    def saveTemplate(self):
-        template = self.getStructure()
-        with open(templateFile, 'w') as f:
-            json.dump(template, f, indent=4)
-        self.close()
-
-    def getStructure(self, parent=None):
-        level = []
-        if not parent:
-            parent = self.tree.invisibleRootItem()
-        for i in range(parent.childCount()):
-            ch = parent.child(i)
-            content = self.getStructure(ch)
-            level.append({'name':ch.text(0),
-                          'content':content})
-        return level
-
-    def loadTemplate(self):
-        if os.path.exists(templateFile):
-            with open(templateFile) as f:
-                template = json.load(f)
-                self.restoreStructure(template)
-
-    def restoreStructure(self, data, parent=None):
-        if not parent:
-            parent = self.tree.invisibleRootItem()
-        for i in data:
-            item = self.addItem(i['name'], parent)
-            self.restoreStructure(i['content'], item)
+# ____ __.__ ______ _
+# ____ __.__ ______ _
+# ____ w.. ______ tE_U __ ui
+# ______ __ j..
+#
+# templateFile _ __.pa__.jo.. __.pa__.d..n.. -f template.json
+#
+# c_ templateEditorClass QW.. __._tE..
+#     ___ -
+#         s___ ?  ? . -
+#         setupUi ?
+#         # ui
+#         t__.sDDM.. QAIV__.IM..
+#         t__.sSM.. QAIV__.ES..
+#         # connects
+#         a_b__.c__.c.. aI..
+#         r_b_.c__.c.. rI..
+#         s__b_.c__.c.. sT..
+#         c_b_.c__.c.. cl..
+#         # start
+#         lT..
+#
+#     ___ addItem name_*F.. parent_N..
+#         __ no. p..
+#             parent _ t__.iRI..
+#         item _ QTWI..
+#         ?.sF.. __.IIE.. | __.IIS.. | __.IIE.. | __.IIDE.. | __.IIDE..
+#         ?.sT.. 0 ?
+#         p__.aC.. ?
+#         ?.sE.. 1
+#         r_ ?
+#
+#     ___ removeItem
+#         items _ t__.sI..
+#         ___ i __ ?
+#             ?.pa.. o. t__.iRIt__.tC.. t__.iFIt.. ? .r..
+#
+#     ___ saveTemplate
+#         template _ gS..
+#         w____ o.. tF.. _ __ f
+#             j___.d.. ? ? ind.._4
+#         cl..
+#
+#     ___ getStructure parent_N..
+#         level _    # list
+#         __ no. ?
+#             parent _ t__.iRIt..
+#         ___ i __ ra.. pa__.cC..
+#             ch _ pa__.ch.. ?
+#             content _ gS.. ?
+#             l__.ap.. *n..:?.t.. 0
+#                           *c...:c..
+#         r_ ?
+#
+#     ___ loadTemplate
+#         __ __.pa__.ex.. tF..
+#             w____ o.. tF.. __ f
+#                 template _ j___.l.. ?
+#                 rS.. ?
+#
+#     ___ restoreStructure data parent_N..
+#         __ no. ?
+#             parent _ t__.iRIt..
+#         ___ i __ ?
+#             item _ aI.. ?|*n.. ?
+#             rS.. ?|*c.. ?
