@@ -1,4 +1,3 @@
-
 import os, json
 settingsFileName = 'projectManagerFileName.json'
 

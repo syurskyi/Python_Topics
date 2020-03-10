@@ -1,9 +1,9 @@
-____ __.__ ______ _
-____ __.__ ______ _
-____ w..______ p_UIs __ ui
-____ w.. ______ pLW..
-
-______ cPD.. sD.. tE.. s..
+from PySide.QtCore import *
+from PySide.QtGui import *
+from widgets import projectManager_UIs as ui
+from widgets import projectListWidget
+import createProjectDialog, settingsDialog, templateEditor, settings, createProject
+import webbrowser
 
 class projectManagerClass(QMainWindow, ui.Ui_projectManager):
     def __init__(self):
@@ -20,12 +20,16 @@ class projectManagerClass(QMainWindow, ui.Ui_projectManager):
         self.create_btn.clicked.connect(self.createProject)
         self.settings_btn.clicked.connect(self.openSettingsDialog)
         self.templateEditor_btn.clicked.connect(self.openTemplateEditorDialog)
+        self.projectList_lwd.itemClicked.connect(self.showInfo)
+        self.projectList_lwd.itemDoubleClicked.connect(self.openProject)
 
         # start
 
+        self.info_lb.setText('')
         self.updateList()
 
     def updateList(self):
+
         if not self.projectList_lwd.updateProjectList():
             self.create_btn.setEnabled(0)
         else:
@@ -34,7 +38,7 @@ class projectManagerClass(QMainWindow, ui.Ui_projectManager):
     def openSettingsDialog(self):
         self.dial = settingsDialog.settingsDialogClass(self)
         if self.dial.exec_():
-            data = self.dial.getTableOrder()
+            data = self.dial.getTableData()
             settings.settingsClass().save(data)
         self.updateList()
 
@@ -43,13 +47,28 @@ class projectManagerClass(QMainWindow, ui.Ui_projectManager):
         self.dial.show()
 
     def createProject(self):
-        self.dial = createProjectDialog.projectManagerClass(self)
+        self.dial = createProjectDialog.createProjectDialogClass(self)
         if self.dial.exec_():
-            print 'CREATE'
+            data = self.dial.getDialogData()
+            createProject.createProject(data)
+            self.updateList()
 
-    def showInfo(self):
-        pass
+    def showInfo(self, item):
+        info = createProject.getProjectInfo(item.data(32))
+        if info:
+            text = '''Name:
+%s
 
+Comment:
+%s
+''' % (info['name'], info['comment'])
+        else:
+            text = ''
+        self.info_lb.setText(text)
+
+    def openProject(self, item):
+        path = item.data(32)
+        webbrowser.open(path)
 
 if __name__ == '__main__':
     app = QApplication([])

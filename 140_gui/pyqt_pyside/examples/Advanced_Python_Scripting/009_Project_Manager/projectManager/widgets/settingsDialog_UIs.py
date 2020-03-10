@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'C:\Users\Sergej\Dropbox\nuke\.nuke\example\PYTHON_EXAMPLE\Python_Example_All_Tutorials\VIDEO\Advanced_Python_Scripting\009_Project_Manager\projectManager\widgets\settingsDialog.ui'
+# Form implementation generated from reading ui file 'G:\projects\pyqt\week2\projectManager\widgets\settingsDialog.ui'
 #
-# Created: Tue Dec 27 21:19:16 2016
-#      by: pyside-uic 0.2.15 running on PySide 1.2.4
+# Created: Thu Oct 09 13:34:28 2014
+#      by: pyside-uic 0.2.15 running on PySide 1.2.2
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -32,5 +32,5 @@ class Ui_settingsDialog(object):
         QtCore.QMetaObject.connectSlotsByName(settingsDialog)
 
     def retranslateUi(self, settingsDialog):
-        settingsDialog.setWindowTitle(QtGui.QApplication.translate("settingsDialog", "Settings Dialog", None, QtGui.QApplication.UnicodeUTF8))
+        settingsDialog.setWindowTitle(QtGui.QApplication.translate("settingsDialog", "Dialog", None, QtGui.QApplication.UnicodeUTF8))
 

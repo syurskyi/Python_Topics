@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'C:\Users\Sergej\Dropbox\nuke\.nuke\example\PYTHON_EXAMPLE\Python_Example_All_Tutorials\VIDEO\Advanced_Python_Scripting\009_Project_Manager\projectManager\widgets\settingsDialog.ui'
+# Form implementation generated from reading ui file 'G:\projects\pyqt\week2\projectManager\widgets\settingsDialog.ui'
 #
-# Created by: PyQt4 UI code generator 4.11.4
+# Created: Thu Oct 09 13:34:28 2014
+#      by: PyQt4 UI code generator 4.11.2
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -25,11 +26,13 @@ except AttributeError:
 class Ui_settingsDialog(object):
     def setupUi(self, settingsDialog):
         settingsDialog.setObjectName(_fromUtf8("settingsDialog"))
-        settingsDialog.resize(520, 147)
+        settingsDialog.resize(458, 153)
         self.verticalLayout = QtGui.QVBoxLayout(settingsDialog)
         self.verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
-        self.table = QtGui.QTableView(settingsDialog)
+        self.table = QtGui.QTableWidget(settingsDialog)
         self.table.setObjectName(_fromUtf8("table"))
+        self.table.setColumnCount(0)
+        self.table.setRowCount(0)
         self.verticalLayout.addWidget(self.table)
         self.buttonBox = QtGui.QDialogButtonBox(settingsDialog)
         self.buttonBox.setOrientation(QtCore.Qt.Horizontal)
@@ -43,5 +46,5 @@ class Ui_settingsDialog(object):
         QtCore.QMetaObject.connectSlotsByName(settingsDialog)
 
     def retranslateUi(self, settingsDialog):
-        settingsDialog.setWindowTitle(_translate("settingsDialog", "Settings Dialog", None))
+        settingsDialog.setWindowTitle(_translate("settingsDialog", "Dialog", None))
 
