@@ -1,10 +1,10 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
-from widgets import settingsDialog_UIs as ui
+____ __.__ ______ _
+____ __.__ ______ _
+____ widgets ______ settingsDialog_UIs as ui
 
-import settings
+______ settings
 
-from widgets import settingsDialog_UIs as ui
+____ widgets ______ settingsDialog_UIs as ui
 
 class settingsDialogClass(QDialog, ui.Ui_settingsDialog):
     def __init__(self, parent):

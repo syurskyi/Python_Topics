@@ -1,7 +1,7 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
+____ __.__ ______ _
+____ __.__ ______ _
 
-from widgets import createProject_UIs as ui
+____ w... ______ c_U __ ui
 
 class projectManagerClass(QDialog, ui.Ui_createDialog):
     def __init__(self, parent):

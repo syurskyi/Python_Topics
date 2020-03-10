@@ -1,7 +1,7 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
+____ __.__ ______ _
+____ __.__ ______ _
 
-import settings
+______ settings
 
 class projectListClass(QListWidget):
     def __init__(self):

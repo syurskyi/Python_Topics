@@ -1,7 +1,7 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
+____ __.__ ______ _
+____ __.__ ______ _
 
-from widgets import templateEditor_UIs as ui
+____ widgets ______ templateEditor_UIs as ui
 
 class templateEditorClass(QWidget, ui.Ui_templateEditor):
     def __init__(self):

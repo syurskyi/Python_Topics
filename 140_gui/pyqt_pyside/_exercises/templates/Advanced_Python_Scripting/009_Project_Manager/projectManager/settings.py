@@ -1,5 +1,4 @@
-
-import os, json
+______ __ j..
 settingsFileName = 'projectManagerFileName.json'
 
 class settingsClass(object):

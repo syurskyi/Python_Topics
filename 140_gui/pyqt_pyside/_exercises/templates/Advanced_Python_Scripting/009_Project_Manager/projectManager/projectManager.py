@@ -1,9 +1,9 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
-from widgets import projectManager_UIs as ui
-from widgets import projectListWidget
+____ __.__ ______ _
+____ __.__ ______ _
+____ w..______ p_UIs __ ui
+____ w.. ______ pLW..
 
-import createProjectDialog, settingsDialog, templateEditor, settings
+______ cPD.. sD.. tE.. s..
 
 class projectManagerClass(QMainWindow, ui.Ui_projectManager):
     def __init__(self):
