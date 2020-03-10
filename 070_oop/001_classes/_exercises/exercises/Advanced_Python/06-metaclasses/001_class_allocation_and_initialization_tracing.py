@@ -2,72 +2,72 @@
 class TracingMeta(type):
 
     @classmethod
-    def __prepare__(mcs, name, bases):
+    def __prepare__(mcs, name, bases, **kwargs):
         print("TracingMeta.__prepare__(name, bases, **kwargs)")
-        print("  mcs =" ?
-        print("  name =" ?
-        print("  bases =" ?
-        print("  kwargs =" ?
-        namespace = s___ . -p n.. b..
-        print("<-- namespace =", n...
+        print("  mcs =", mcs)
+        print("  name =", name)
+        print("  bases =", bases)
+        print("  kwargs =", kwargs)
+        namespace = super().__prepare__(name, bases)
+        print("<-- namespace =", namespace)
         print()
-        r_ ?
+        return namespace
 
-    def __new__(___ name bases namespace $$
+    def __new__(mcs, name, bases, namespace, **kwargs):
         print("TracingMeta.__new__(mcs, name, bases, namespace, **kwargs)")
-        print("  mcs =" ?
-        print("  name =" ?
-        print("  bases =" ?
-        print("  namespace =" ?
-        print("  kwargs =" ?
-        cls _ s___ . -n ___ n.. b.. n.. $$
-        print("<-- cls =", ___)
+        print("  mcs =", mcs)
+        print("  name =", name)
+        print("  bases =", bases)
+        print("  namespace =", namespace)
+        print("  kwargs =", kwargs)
+        cls = super().__new__(mcs, name, bases, namespace, **kwargs)
+        print("<-- cls =", cls)
         print()
-        r_ ___
+        return cls
 
-    def  - ___ name bases namespace $$
+    def __init__(cls, name, bases, namespace, **kwargs):
         print("TracingMeta. - (cls, name, bases, namespace, **kwargs)")
-        print("  cls =" ?
-        print("  name =" ?
-        print("  bases =" ?
-        print("  namespace =" ?
-        print("  kwargs =" ?
-        s___ . -  n.. b.. n..
+        print("  cls =", cls)
+        print("  name =", name)
+        print("  bases =", bases)
+        print("  namespace =", namespace)
+        print("  kwargs =", kwargs)
+        super().__init__(name, bases, namespace,)
         print()
 
-    def metamethod ___
+    def metamethod(cls):
         print("TracingMeta.metamethod(___)")
-        print("  cls = " ?
+        print("  cls = ", cls)
         print()
 
-    def -c ___ $ $$
+    def __call__(self, *args, **kwargs):
         print("TracingMeta.__call__(cls, *args, **kwargs)")
-        print("  cls =" ?
-        print("  args =" ?
-        print("  kwargs =" ?
+        print("  cls =", cls)
+        print("  args =", args)
+        print("  kwargs =", kwargs)
         print("  About to call type.__call__()")
-        obj = s___ . -c $  $$
+        obj = super().__call__(*args, **kwargs)
         print("  Returned from type.__call__()")
-        print("<-- obj =" ?
+        print("<-- obj =", obj)
         print()
-        r_ ?
+        return obj
 
 
-class TracingClass m.._TM..
+class TracingClass(metaclass=TracingMeta):
 
-    def -n ___ $ $$
+    def __new__(cls, *args, **kwargs):
         print("  TracingClass.__new__(cls, args, kwargs")
-        print("    cls =" ?
-        print("    args =" ?
-        print("    kwargs =" ?
-        obj = s___ . -n ___
-        print("  <-- obj =" ?
+        print("    cls =", cls)
+        print("    args =", args)
+        print("    kwargs =", kwargs)
+        obj = super().__new__(cls)
+        print("  <-- obj =", obj)
         print()
-        r_ ?
+        return obj
 
-    def  -  ?, $$
+    def __init__(self, *args, **kwargs):
         print("  TracingClass. - (self, *args, **kwargs")
-        print("    self =" ?
-        print("    args =" ?
-        print("    kwargs =" ?
+        print("    self =", self)
+        print("    args =", args)
+        print("    kwargs =", kwargs)
         print()
