@@ -1,22 +1,22 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
-from widgets import createProject_UIs as ui
-
-class createProjectDialogClass(QDialog, ui.Ui_createDialog):
-    def __init__(self, parent):
-        super(createProjectDialogClass, self).__init__(parent)
-        self.setupUi(self)
-
-        # connect
-        self.create_btn.clicked.connect(self.doCreate)
-        self.cancel_btn.clicked.connect(self.reject)
-
-    def doCreate(self):
-        if self.name_lb.text():
-            self.accept()
-
-    def getDialogData(self):
-        return dict(
-            name=self.name_lb.text(),
-            comment=self.comment_te.toPlainText()
-        )
+# ____ __.__ ______ _
+# ____ __.__ ______ _
+# ____ w... ______ cP_U __ ui
+#
+# c_ createProjectDialogClass QD.. __.U_cD..
+#     ___ -  parent
+#         s___ ? ? . - ?
+#         setupUi ?
+#
+#         # connect
+#         c_b_.c__.c.. dC..
+#         ca_b__.c__.c.. r..
+#
+#     ___ doCreate
+#         __ n_l_.t..
+#             ac..
+#
+#     ___ getDialogData
+#         r_ di..|
+#             name_n_l_.t..
+#             comment_c_t_.tPT..
+#         |
