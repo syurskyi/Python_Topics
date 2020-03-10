@@ -1,21 +1,21 @@
 #
-# c_ ?
+# c_ ChessCoordinate
 #
 #     _interned _     # dict
 #
 #     ___ -n ___ file rank
 #
 #         __ le. f... !_ 1
-#             r_ V... "@ component file {!r} does not have a length of one."
-#                              .f.. ___. -c  f...
+#             r_ V... "@ component file _r does not have a length of one."
+#                              .f.. ___. -n  f...
 #
-#         __ f... not in 'abcdefgh':
-#             r_ V... "@ component file {!r} is out of range."
-#                              .f.. ___. -c , f...
+#         __ f... no. __ 'abcdefgh':
+#             r_ V... "@ component file _r is out of range."
+#                              .f.. ___. -n , f...
 #
-#         __ rank no. __ ra.. 1, 9
-#             r_ V...("@ component rank {!r} is out of range."
-#                              .f.. ___. -c , ?
+#         __ r.. no. __ ra.. 1, 9
+#             r_ V...("@ component rank _r is out of range."
+#                              .f.. ___. -n , ?
 #
 #         key _ f... r..
 #         __ ? no. __ ___._i..
@@ -36,7 +36,7 @@
 #         r_ _?
 #
 #     ___ -r
-#         r_ "@(file_@, rank_@)".f..  -c . -c , f... r..
+#         r_ "@(file_@, rank_@)".f..  -c . -n , f... r..
 #
 #     ___ -s
 #         r_ '@@'.f..(f... r..
