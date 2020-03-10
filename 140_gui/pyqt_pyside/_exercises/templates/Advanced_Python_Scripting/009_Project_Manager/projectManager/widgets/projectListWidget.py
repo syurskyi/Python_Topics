@@ -1,33 +1,33 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
-import settings, createProject
-import os
-
-class projectListClass(QListWidget):
-    def __init__(self):
-        super(projectListClass, self).__init__()
-
-    def updateProjectList(self):
-        self.clear()
-        data = settings.settingsClass().load()
-        path = data.get('path')
-        if path:
-            if os.path.exists(path):
-                for f in os.listdir(path):
-                    fullPath = os.path.join(path, f )
-                    if self.isProject(fullPath):
-                        item = self.addProject(f)
-                        item.setData(32, fullPath)
-
-            return True
-        else:
-            return False
-
-    def isProject(self, path):
-        return os.path.exists(os.path.join(path, createProject.projectFile))
-
-    def addProject(self, name):
-        item = QListWidgetItem()
-        item.setText(name)
-        self.addItem(item)
-        return item
+# ____ __.________ _
+# ____ __.__ ______ _
+# ______ s. cP..
+# ______ __
+#
+# c_ projectListClass QLi..
+#     ___ -
+#         s____ ? ? . -
+#
+#     ___ updateProjectList
+#         cl..
+#         data _ s_____.sC__.lo..
+#         path _ ?.ge. *p..
+#         __ ?
+#             __ __.pa__.ex.. ?
+#                 ___ f __ __.l__d.. ?
+#                     fullPath _ __.pa__.jo.. p.. ?
+#                     __ iP.. ?
+#                         item _ aP.. ?
+#                         ?.sD.. 32 ?
+#
+#             r_ T..
+#         ____
+#             r_ F..
+#
+#     ___ isProject path
+#         r_ __.pa__.exists(__.pa__.jo.. ? cP__.pF..
+#
+#     ___ addProject name
+#         item _ QWI..
+#         ?.setText ?
+#         aI.. ?
+#         r_ ?
