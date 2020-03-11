@@ -1,25 +1,25 @@
-import sqlite3
-
-# connect to database
-# conn = sqlite3.connect(':memory:')
-conn = sqlite3.connect('customer.db')
-
-# Create a cursor
-c = conn.cursor()
-
-many_customer = [
-    ('Wes', 'Brown', 'john@comedy.com'),
-    ('Steph', 'Kuewa', 'steph@comedy.com'),
-    ('Dan', 'Pas', 'dan@comedy.com'),
-]
-
-# Create a Table
-c.executemany("INSERT INTO customers VALUES (?, ?, ?)", many_customer)
-
-
-print("Command executed succesfully...")
-# Commit our command
-conn.commit()
-
-# Close our connection
-conn.close()
+# ______ _3
+#
+# # connect to database
+# # conn _ sqlite3.connect(':memory:')
+# conn _ _3.c.. customer.db
+#
+# # Create a cursor
+# c _ ?.c..
+#
+# many_customer _ |
+#     ('Wes', 'Brown', 'john@comedy.com'),
+#     ('Steph', 'Kuewa', 'steph@comedy.com'),
+#     ('Dan', 'Pas', 'dan@comedy.com'),
+# |
+#
+# # Create a Table
+# c.e..m.. "I... I.. customers V.. _, _, _)" _
+#
+#
+# print("Command executed succesfully...")
+# # Commit our command
+# ?.c..
+#
+# # Close our connection
+# ?.c..
