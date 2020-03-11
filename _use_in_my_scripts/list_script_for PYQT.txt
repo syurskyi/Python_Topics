@@ -1,0 +1,4 @@
+Dependency Inversion Principle
+C:\Users\syurskyi\Documents\Python\Python_Topics-master\Python_Topics-master\120_design_patterns\001_SOLID_design_principles\examples\dip\DIP.py
+C:\Users\syurskyi\Documents\Python\Python_Topics-master\Python_Topics-master\120_design_patterns\001_SOLID_design_principles\examples\dip\dip_Dependency_Inversion_Principle.py
+C:\Users\syurskyi\Documents\Python\Python_Topics-master\Python_Topics-master\120_design_patterns\001_SOLID_design_principles\examples\dip\dependencyInversionPrinciple\incorrect\main.py
