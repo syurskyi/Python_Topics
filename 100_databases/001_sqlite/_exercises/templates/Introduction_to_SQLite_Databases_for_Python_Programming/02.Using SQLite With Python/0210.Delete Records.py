@@ -1,27 +1,27 @@
-import sqlite3
-
-# connect to database
-# conn = sqlite3.connect(':memory:')
-conn = sqlite3.connect('customer.db')
-
-# Create a cursor
-c = conn.cursor()
-
-# Delete Records
-c.execute("DELETE from customers WHERE rowid = 6")
-
-conn.commit()
-
-# Query The Database
-c.execute("SELECT rowid, * FROM customers")
-
-items = c.fetchall()
-
-for item in items:
-    print(item)
-
-# Commit our command
-conn.commit()
-
-# Close our connection
-conn.close()
+# ______ _3
+#
+# # connect to database
+# # conn = sqlite3.connect(':memory:')
+# conn ? _3.c.. customer.db
+#
+# # Create a cursor
+# c ? ?.c..
+#
+# # Delete Records
+# c.e.. D.. f.. customers W... r.. _ 6
+#
+# ?.c..
+#
+# # Query The Database
+# c.e.. S.. r.. _ F.. customers
+#
+# items ? c.f..
+#
+# ___ item __ ?
+#     print ?
+#
+# # Commit our command
+# ?.c..
+#
+# # Close our connection
+# ?.c..
