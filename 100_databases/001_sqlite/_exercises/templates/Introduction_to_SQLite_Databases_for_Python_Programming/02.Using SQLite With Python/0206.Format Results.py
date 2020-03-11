@@ -1,48 +1,48 @@
-import sqlite3
-
-# connect to database
-# conn = sqlite3.connect(':memory:')
-conn = sqlite3.connect('customer.db')
-
-# Create a cursor
-c = conn.cursor()
-
-# Query The Database
-c.execute("SELECT * FROM customers")
-# print(c.fetchall())
-# print(c.fetchone())
-# print(c.fetchone()[3])
-# print(c.fetchmany(3))
-
-items = c.fetchall()
-# print(items)
-for item in items:
-    print(item)
-
-print()
-
-for item in items:
-    print(item[0])
-
-print()
-
-for item in items:
-    print(item[0] + " " + item[1] + " " + item[2])
-
-print()
-
-for item in items:
-    print(item[0] + " " + item[1] + " | " + item[2])
-
-print()
-
-print("NAME " + "\t\t\t\tEMAIL")
-print("-------" + "\t\t\t\t------")
-for item in items:
-    print(item[0] + " " + item[1] + "\t\t\t" + item[2])
-
-# Commit our command
-conn.commit()
-
-# Close our connection
-conn.close()
+# ______ _3
+#
+# # connect to database
+# # conn = sqlite3.connect(':memory:')
+# conn ? _3.c.. customer.db
+#
+# # Create a cursor
+# c ? ?.c..
+#
+# # Query The Database
+# ?.e.. S.. _ F.. customers
+# # print(c.fetchall())
+# # print(c.fetchone())
+# # print(c.fetchone()[3])
+# # print(c.fetchmany(3))
+#
+# items ? ?.f..
+# # print(items)
+# ___ item __ ?
+#     print ?
+#
+# print()
+#
+# ___ item __ ?
+#     print ? 0
+#
+# print()
+#
+# ___ item __ ?
+#     print ? 0 + " " + ? 1 + " " + ? 2
+#
+# print()
+#
+# ___ item __ ?
+#     print(? 0 + " " + ? 1 + " | " + ? 2
+#
+# print()
+#
+# print("NAME " + "\t\t\t\tEMAIL")
+# print("-------" + "\t\t\t\t------")
+# ___ item __ ?
+#     print(? 0 + " " + ? 1 + "\t\t\t" + ? 2
+#
+# # Commit our command
+# ?.c..
+#
+# # Close our connection
+# ?.c..
