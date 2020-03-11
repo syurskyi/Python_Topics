@@ -4,6 +4,9 @@ ome useful apps based on PyQt5https://github.com/taseikyo/PyQt5-Apps
 15 minute (small) desktop apps built with PyQt 
 https://github.com/learnpyqt/15-minute-apps
 
+PyQt, SQLAlchemy ORM, PostgreSQL
+https://github.com/FokinAleksandr/PyQT-CRUD-App
+
 Banking app using python, pyQt5 and sqlite for database
 https://github.com/garantor/Bank_app_with_pyqt5_python_and_sqlite3
 
