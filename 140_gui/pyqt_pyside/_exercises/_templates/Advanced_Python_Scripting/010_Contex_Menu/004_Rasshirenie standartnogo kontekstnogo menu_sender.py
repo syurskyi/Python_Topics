@@ -1,40 +1,40 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
-
-textArray = 'Click', 'Press', 'Enter'
-
-
-class WidgetMenuClass(QWidget):
-    def __init__(self):
-        super(WidgetMenuClass, self).__init__()
-        ly = QVBoxLayout(self)
-        self.btn = QPushButton('Click')
-        ly.addWidget(self.btn)
-        self.line = QLineEdit()
-        ly.addWidget(self.line)
-
-        self.btn.setContextMenuPolicy(Qt.CustomContextMenu)
-        self.btn.customContextMenuRequested.connect(self.openMenu)
-
-        self.line.setContextMenuPolicy(Qt.CustomContextMenu)
-        self.line.customContextMenuRequested.connect(self.openMenu) # Kogda y nas srabatuvet kakoj to signal, to v klasse generitsja
-                                                                    # special'naja peremenaja, kotoraja nazuvaetsja sender - otpravitel' signala
-
-    def openMenu(self, pos):
-        pos = self.sender().mapToGlobal(pos)
-        try:
-            menu = self.sender().createStandardContextMenu()
-        except:
-            menu = QMenu()
-        for i in textArray:
-            menu.addAction(QAction(i, self))
-        a = menu.exec_(QCursor().pos())
-        if a:
-            self.sender().setText(a.text())
-
-
-if __name__ == '__main__':
-    app = QApplication([])
-    w = WidgetMenuClass()
-    w.show()
-    app.exec_()
+# ____ __.__ ______ _
+# ____ __.__ ______ _
+#
+# textArray _ 'Click', 'Press', 'Enter'
+#
+#
+# c_ WidgetMenuClass QW..
+#     ___ -
+#         s___ ? ? . -
+#         ly _ QVBL.. ?
+#         btn _ QPB.. *C..
+#         ?.aW.. ?
+#         line _ QLE..
+#         ?.aW.. ?
+#
+#         ?.sCMP.. __.CCM..
+#         ?.cCMR...c.. oM..
+#
+#         ?.sCMP.. __.CCM..
+#         ?.cCMR__.c.. oM.. # Kogda y nas srabatuvet kakoj to signal, to v klasse generitsja
+#                                                                     # special'naja peremenaja, kotoraja nazuvaetsja sender - otpravitel' signala
+#
+#     ___ openMenu pos
+#         pos _ s___.mTG.. ?
+#         ___
+#             menu _ s___.cSCM..
+#         ______
+#             menu _ QM..
+#         ___ i __ tA..
+#             ?.aA.. QAc.. ?  ?
+#         a _ ?.ex.._ QCu...p..
+#         __ ?
+#             s__.sT.. ?.t..
+#
+#
+# __ ______ __ ______
+#     app _ ?
+#     w _ ?
+#     ?.s..
+#     ?.e..
