@@ -1,29 +1,29 @@
-import sqlite3
-
-# connect to database
-# conn = sqlite3.connect(':memory:')
-conn = sqlite3.connect('customer.db')
-
-# Create a cursor
-c = conn.cursor()
-
-# Update Records
-
-c.execute("""UPDATE customers SET first_name = 'John'
-             WHERE last_name = 'Elder'
-    """)
-conn.commit()
-
-# Query The Database
-c.execute("SELECT rowid, * FROM customers")
-
-items = c.fetchall()
-
-for item in items:
-    print(item)
-
-# Commit our command
-conn.commit()
-
-# Close our connection
-conn.close()
+# ______ _3
+#
+# # connect to database
+# # conn = sqlite3.connect(':memory:')
+# conn _ _3.c.. customer.db
+#
+# # Create a cursor
+# c _ ?.c..
+#
+# # Update Records
+#
+# c.e.. U.. customers S.. first_name = 'John'
+#              W.. last_name = 'Elder'
+#
+# ?.c..
+#
+# # Query The Database
+# c.e... S.. r.., _ F... customers
+#
+# items _ ?.f..
+#
+# ___ item __ ?
+#     print ?
+#
+# # Commit our command
+# ?.c..
+#
+# # Close our connection
+# ?.c...
