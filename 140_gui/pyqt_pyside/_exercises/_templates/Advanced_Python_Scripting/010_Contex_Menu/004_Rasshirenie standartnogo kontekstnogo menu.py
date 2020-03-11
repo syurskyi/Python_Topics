@@ -1,49 +1,49 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
-
-textArray = 'Click', 'Press', 'Enter'
-
-# Y nas est' dva varianta rabotu s kontekstnum menu, zamenit menu ili dopolnit'
-
-class WidgetMenuClass(QWidget):
-    def __init__(self):
-        super(WidgetMenuClass, self).__init__()
-        ly = QVBoxLayout(self)
-        self.btn = QPushButton('Click')
-        ly.addWidget(self.btn)
-        self.line = QLineEdit()
-        ly.addWidget(self.line)
-
-        self.btn.setContextMenuPolicy(Qt.CustomContextMenu)
-        self.btn.customContextMenuRequested.connect(self.openMenu)
-
-        self.line.setContextMenuPolicy(Qt.CustomContextMenu)
-        self.line.customContextMenuRequested.connect(self.openMenu2) # Kogda y nas srabatuvet kakoj to signal, to v klasse generitsja
-                                                                     # special'naja peremenaja, kotoraja nazuvaetsja sender - otpravitel' signala
-                                                                     #
-
-    def openMenu(self, pos):
-        pos = self.btn.mapToGlobal(pos)
-        menu = QMenu()
-        for i in textArray:
-            menu.addAction(QAction(i, self))
-        a = menu.exec_(QCursor().pos())
-        if a:
-            self.btn.setText(a.text())
-
-    def openMenu2(self, pos):                                        # Shto bu nam ne zamenjat menu a doplnit' ili rasshiret'
-        pos = self.line.mapToGlobal(pos)                             # Nam nyzno sozdavat' ego ne novoe, a vzjat' standartnoe menu
-        menu = self.line.createStandardContextMenu()                 # y lineEdit
-        menu.addSeparator()
-        for i in textArray:
-            menu.addAction(QAction(i, self))
-        a = menu.exec_(QCursor().pos())
-        if a:
-            self.line.setText(a.text())
-
-
-if __name__ == '__main__':
-    app = QApplication([])
-    w = WidgetMenuClass()
-    w.show()
-    app.exec_()
+# ____ __.__ ______ _
+# ____ __.__ ______ _
+#
+# textArray _ 'Click', 'Press', 'Enter'
+#
+# # Y nas est' dva varianta rabotu s kontekstnum menu, zamenit menu ili dopolnit'
+#
+# c_ WidgetMenuClass QW..
+#     ___ -
+#         s___ ?  ? . -
+#         ly _ QVBL.. ?
+#         btn _ QPB.. *C
+#         ?.aW.. ?
+#         line _ QLE..
+#         ?.aW.. ?
+#
+#         ?.sCMP.. __.CCM..
+#         ?.sCMR...c.. oM..
+#
+#         l___.sCMP.. __.CCM..
+#         l___.sCMR...c.. oM_2 # Kogda y nas srabatuvet kakoj to signal, to v klasse generitsja
+#                                                                      # special'naja peremenaja, kotoraja nazuvaetsja sender - otpravitel' signala
+#                                                                      #
+#
+#     ___ openMenu pos
+#         pos _ b__.mTG.. ?
+#         menu _ QM..
+#         ___ i __ tA..
+#             ?.aA.. QAc.. ? ?
+#         a _ ?.ex.._ QCu...p..
+#         __ ?
+#             b__.sT.. ?.te..
+#
+#     ___ openMenu2 ? pos                                       # Shto bu nam ne zamenjat menu a doplnit' ili rasshiret'
+#         pos _ l__.mTG.. ?                            # Nam nyzno sozdavat' ego ne novoe, a vzjat' standartnoe menu
+#         menu _ l__.cSCM..                 # y lineEdit
+#         ?.aS..
+#         ___ i __ tA..
+#             ?.aA.. QAc.. ?  ?
+#         a _ ?.ex.._ QC...p..
+#         __ ?
+#             l___.sT.. ?.t..
+#
+#
+# __ ______ __ ______
+#     app _ ?
+#     w _ ?
+#     ?.s...
+#     ?.e..
