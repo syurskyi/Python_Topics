@@ -1,23 +1,23 @@
-import sqlite3
-
-# connect to database
-# conn = sqlite3.connect(':memory:')
-conn = sqlite3.connect('customer.db')
-
-# Create a cursor
-c = conn.cursor()
-
-# Query The Database
-# c.execute("SELECT * FROM customers WHERE last_name LIKE 'Br%'")
-c.execute("SELECT * FROM customers WHERE email LIKE '%codemy.com' ")
-items = c.fetchall()
-
-for item in items:
-    print(item)
-
-
-# Commit our command
-conn.commit()
-
-# Close our connection
-conn.close()
+# ______ _3
+#
+# # connect to database
+# # conn = sqlite3.connect(':memory:')
+# conn _ _3.c.. customer.db
+#
+# # Create a cursor
+# c _ conn.c..
+#
+# # Query The Database
+# # c.execute("SELECT * FROM customers WHERE last_name LIKE 'Br%'")
+# ?.e.. S.. _ F... customers W.. email L.. @codemy.com
+# items _ ?.f...
+#
+# ___ item __ ?
+#     print ?
+#
+#
+# # Commit our command
+# ?.c...
+#
+# # Close our connection
+# ?.c..
