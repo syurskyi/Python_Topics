@@ -1,23 +1,23 @@
-import sqlite3
-
-# connect to database
-# conn = sqlite3.connect(':memory:')
-conn = sqlite3.connect('customer.db')
-
-# Create a cursor
-c = conn.cursor()
-
-# Query The Database
-# c.execute("SELECT rowid, * FROM customers LIMIT 2")
-c.execute("SELECT rowid, * FROM customers ORDER BY rowid DESC LIMIT 2")
-
-items = c.fetchall()
-
-for item in items:
-    print(item)
-
-# Commit our command
-conn.commit()
-
-# Close our connection
-conn.close()
+# ______ _3
+#
+# # connect to database
+# # conn = sqlite3.connect(':memory:')
+# conn _ _3.c.. customer.db
+#
+# # Create a cursor
+# c _ ?.c..
+#
+# # Query The Database
+# # c.execute("SELECT rowid, * FROM customers LIMIT 2")
+# ?.e.. S.. r.., _ F.. customers O.. B. r.. D.. L.. 2
+#
+# items _ ?.f..
+#
+# ___ item __ ?
+#     print ?
+#
+# # Commit our command
+# ?.c..
+#
+# # Close our connection
+# ?.c..
