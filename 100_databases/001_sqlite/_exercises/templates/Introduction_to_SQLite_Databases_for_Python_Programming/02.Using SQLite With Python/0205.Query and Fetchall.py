@@ -1,18 +1,18 @@
-import sqlite3
-
-# connect to database
-# conn = sqlite3.connect(':memory:')
-conn = sqlite3.connect('customer.db')
-
-# Create a cursor
-c = conn.cursor()
-
-# Query The Database
-c.execute("SELECT * FROM customers")
-print(c.fetchall())
-
-# Commit our command
-conn.commit()
-
-# Close our connection
-conn.close()
+# ______ _3
+#
+# # connect to database
+# # conn = sqlite3.connect(':memory:')
+# conn _ _3.c.. customer.db
+#
+# # Create a cursor
+# c _ ?.c..
+#
+# # Query The Database
+# ?.e.. S.. _ F.. customers
+# print ?.f..
+#
+# # Commit our command
+# ?.c..
+#
+# # Close our connection
+# ?.c..
