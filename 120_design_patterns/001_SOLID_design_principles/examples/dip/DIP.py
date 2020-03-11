@@ -1,52 +1,48 @@
-#!/usr/bin/python
-# Authoer: Spencer.Luo
-# Date: 8/7/2018
-
-# Dependence Inversion Principle, 简称DIP
+# Dependence Inversion Principle, DIP for short
 
 from abc import ABCMeta, abstractmethod
-# 引入ABCMeta和abstractmethod来定义抽象类和抽象方法
+# Introduce ABCMeta and abstractmethod to define abstract classes and abstract methods
 
 class Animal(metaclass=ABCMeta):
-    """动物"""
+    """animal"""
 
     def __init__(self, name):
         self._name = name
 
     def eat(self, food):
         if(self.checkFood(food)):
-            print(self._name + "进食" + food.getName())
+            print(self._name + "Eat" + food.getName())
         else:
-            print(self._name + "不吃" + food.getName())
+            print(self._name + "Not eat" + food.getName())
 
     @abstractmethod
     def checkFood(self, food):
-        """检查哪种食物能吃"""
+        """Check what foods you can eat"""
         pass
 
 
 class Dog(Animal):
-    """狗"""
+    """dog"""
 
     def __init__(self):
-        super().__init__("狗")
+        super().__init__("dog")
 
     def checkFood(self, food):
-        return food.category() == "肉类"
+        return food.category() == "meat"
 
 
 class Swallow(Animal):
-    """燕子"""
+    """Swallow"""
 
     def __init__(self):
-        super().__init__("燕子")
+        super().__init__("Swallow")
 
     def checkFood(self, food):
-        return food.category() == "昆虫"
+        return food.category() == "insect"
 
 
 class Food(metaclass=ABCMeta):
-    """食物"""
+    """food"""
 
     def __init__(self, name):
         self._name = name
@@ -69,13 +65,13 @@ class Meat(Food):
     """肉"""
 
     def __init__(self):
-        super().__init__("肉")
+        super().__init__("meat")
 
     def category(self):
-        return "肉类"
+        return "meat"
 
     def nutrient(self):
-        return "蛋白质、脂肪"
+        return "Protein, fat"
 
 
 class Worm(Food):
@@ -91,7 +87,7 @@ class Worm(Food):
         return "蛋白质含、微量元素"
 
 
-def testFood():
+def Food():
     dog = Dog()
     swallow = Swallow()
     meat = Meat()
@@ -102,4 +98,4 @@ def testFood():
     swallow.eat(worm)
 
 
-testFood()
+Food()
