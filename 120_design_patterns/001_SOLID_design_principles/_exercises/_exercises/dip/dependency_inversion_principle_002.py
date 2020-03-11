@@ -1,56 +1,56 @@
 # Dependency Inversion Principle (DIP)
 
 # High-level objects should not depend on low-level implementation. Both should depend on abstractions.
-from a.. ______ a.. A..
-from ti.. ______ sl..
+from abc import abstractmethod, ABC
+from time import sleep
 
 
-class TurnableOnObject A..
-    def -
-        _on _ F..
+class TurnableOnObject(ABC):
+    def __init__(self):
+        self._on = False
 
-    ?p...
-    def on __ b..
-        r_ _o.
+    @property
+    def on(self) -> bool:
+        return self._on
 
-    ?a..
-    def turn_on __ N..
-        p..
-
-
-class Lamp T..
-    ___ turn_on(
-        _on _ T..
+    @abstractmethod
+    def turn_on(self) -> None:
+        pass
 
 
-class TimedLamp L..
-    ___ turn_on
-        _o. _ T..
+class Lamp(TurnableOnObject):
+    def turn_on(self):
+        self._on = True
+
+
+class TimedLamp(Lamp):
+    def turn_on(self):
+        self._on = True
         print("Waiting for 1 second before turning the lamp off.")
-        sl.. 1
-        _o. _ F..
+        sleep(1)
+        self._on = False
 
 
-class OnButton
-    ___ - lamp L..
-        ??  ?
+class OnButton:
+    def __init__(self, lamp: Lamp):
+        self.lamp = lamp
 
-    ___ press
-        __ no. ?l__.o.
-            ?l__.t...
+    def press(self):
+        if not self.lamp.on:
+            self.lamp.turn_on()
             print("The lamp has been turned on.")
-        ____
+        else:
             print("The lamp was already on.")
 
 
-__ _______ __ _____
-    lamp = L..
-    on_button = O.. ?
-    ?.p..
-    ?.p..
-    ?.p..
+if __name__ == "__main__":
+    lamp = Lamp()
+    on_button = OnButton(lamp)
+    on_button.press()
+    on_button.press()
+    on_button.press()
 
-    timed_lamp = T..
-    on_button_2 = O.. ?
-    # on_button_2.press()
-    # on_button_2.press()
+    timed_lamp = TimedLamp()
+    on_button_2 = OnButton(timed_lamp)
+    on_button_2.press()
+    on_button_2.press()
