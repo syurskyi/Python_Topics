@@ -45,7 +45,7 @@ class Research:
 
     def __init__(self, browser):
         for p in browser.find_all_children_of("John"):
-            print(f'John has a child called ?')
+            print(f'John has a child called {p}')
 
 
 parent = Person('John')
@@ -53,7 +53,7 @@ child1 = Person('Chris')
 child2 = Person('Matt')
 
 # low-level module
-relationships = Relationship()
+relationships = Relationships()
 relationships.add_parent_and_child(parent, child1)
 relationships.add_parent_and_child(parent, child2)
 
