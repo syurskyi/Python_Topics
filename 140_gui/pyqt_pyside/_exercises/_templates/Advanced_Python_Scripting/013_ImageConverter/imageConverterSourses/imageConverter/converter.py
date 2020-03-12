@@ -1,20 +1,20 @@
-import os
-
-iconvert = 'C:/CG/houdini/13.0.509/bin/iconvert.exe'
-
-def convert(src, trg=None):
-    if trg:
-        if not os.path.exists(trg):
-            os.makedirs(trg)
-        elif os.path.isfile(trg):
-            trg = os.path.dirname(trg)
-        basename = os.path.basename(src)
-        name, ext = os.path.splitext(basename)
-        trg = os.path.join(trg, name+'.exr')
-    else:
-        trg = os.path.splitext(src)[0] + '.exr'
-    #######
-    cmd = ' '.join([iconvert, src, trg])
-    os.popen(cmd)
-
-# convert('G:/projects/pyqt/week4/texture.jpg')
+# ______ __
+#
+# iconvert _ 'C:/CG/houdini/13.0.509/bin/iconvert.exe'
+#
+# ___ convert src trg_N..
+#     __ trg
+#         __ no. __.pa__.e.. ?
+#             __.m_d.. ?
+#         ____ __.pa__.i_f.. ?
+#             trg _ __.pa__.d.. ?
+#         basename _ __.pa__.b.. ?
+#         name, ext _ __.pa__.s_t.. ?
+#         trg _ __.pa__.j.. ? n.. + '.exr'
+#     ____
+#         trg _ __.pa__.s_t..|s..|0 + '.exr'
+#     #######
+#     cmd _ ' '.j..||i.. s.. ?
+#     __.p.. ?
+#
+# # convert('G:/projects/pyqt/week4/texture.jpg')
