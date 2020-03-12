@@ -1,0 +1,388 @@
+1
+00:00:01,452 --> 00:00:05,097
+We'll finish off this module by looking at
+
+2
+00:00:05,097 --> 00:00:07,375
+how metaclasses interact with inheritance.
+
+3
+00:00:07,375 --> 00:00:10,765
+Let's define two metaclasses, MetaA and
+
+4
+00:00:10,765 --> 00:00:15,817
+MetaB, related only by the fact that they
+
+5
+00:00:15,817 --> 00:00:20,270
+both subclass type. Both metaclasses will
+
+6
+00:00:20,270 --> 00:00:23,828
+be empty. We'll also define two regular
+
+7
+00:00:23,828 --> 00:00:27,144
+classes, A and B, which use MetaA and
+
+8
+00:00:27,144 --> 00:00:31,799
+MetaB as their respective subclasses. Now
+
+9
+00:00:31,799 --> 00:00:37,012
+we'll introduce a third class, D, which
+
+10
+00:00:37,012 --> 00:00:41,935
+derives from class A. Now let's introspect
+
+11
+00:00:41,935 --> 00:00:46,733
+class D itself, not an instance of D with
+
+12
+00:00:46,733 --> 00:00:50,608
+type D to determine what its metaclass is.
+
+13
+00:00:50,608 --> 00:00:53,537
+The metaclass of D is MetaA, which was
+
+14
+00:00:53,537 --> 00:00:56,752
+inherited from its regular base class A,
+
+15
+00:00:56,752 --> 00:01:00,252
+so metaclasses are inherited, but what
+
+16
+00:01:00,252 --> 00:01:04,393
+happens if we try to create a new class C,
+
+17
+00:01:04,393 --> 00:01:07,006
+which inherits from both regular classes A
+
+18
+00:01:07,006 --> 00:01:10,389
+and B with their different metaclasses,
+
+19
+00:01:10,389 --> 00:01:14,085
+MetaA and MetaB? Let's give it a go. When
+
+20
+00:01:14,085 --> 00:01:16,758
+we try to execute this code by importing
+
+21
+00:01:16,758 --> 00:01:20,470
+it at the REPL we get a type error with
+
+22
+00:01:20,470 --> 00:01:22,367
+the message, metaclass conflict: the
+
+23
+00:01:22,367 --> 00:01:25,531
+metaclass of a derived class must be a
+
+24
+00:01:25,531 --> 00:01:27,645
+(non-strict) subclass of the metaclasses
+
+25
+00:01:27,645 --> 00:01:31,819
+of all its bases. Python is telling us it
+
+26
+00:01:31,819 --> 00:01:35,933
+doesn't know what to do with the unrelated
+
+27
+00:01:35,933 --> 00:01:38,490
+metaclasses, MetaA and MetaB. Which
+
+28
+00:01:38,490 --> 00:01:41,789
+metaclass dunder new should be used to
+
+29
+00:01:41,789 --> 00:01:44,524
+allocate the class object? To resolve this
+
+30
+00:01:44,524 --> 00:01:46,917
+we need a single metaclass. Let's call it
+
+31
+00:01:46,917 --> 00:01:49,197
+MetaC, which we can create by inheriting
+
+32
+00:01:49,197 --> 00:01:52,365
+from both MetaA and MetaB. In the
+
+33
+00:01:52,365 --> 00:01:55,889
+definition of regular class C we must
+
+34
+00:01:55,889 --> 00:01:59,158
+override the metaclass to specify MetaC.
+
+35
+00:01:59,158 --> 00:02:02,399
+With these changes we can successfully
+
+36
+00:02:02,399 --> 00:02:06,538
+import C and check that its metaclass is
+
+37
+00:02:06,538 --> 00:02:10,472
+MetaC by asking for the type of C. So
+
+38
+00:02:10,472 --> 00:02:13,252
+we've persuaded Python to accept our code,
+
+39
+00:02:13,252 --> 00:02:19,558
+but our metaclasses are empty, so combine
+
+40
+00:02:19,558 --> 00:02:22,150
+trivially. Sometimes metaclasses will
+
+41
+00:02:22,150 --> 00:02:25,082
+combine in straightforward ways. For
+
+42
+00:02:25,082 --> 00:02:27,792
+example, our ProhibitDuplicatesMeta, which
+
+43
+00:02:27,792 --> 00:02:31,328
+overrides only dunder prepare, and our
+
+44
+00:02:31,328 --> 00:02:33,510
+KeywordsOnlyMeta, which overrides only
+
+45
+00:02:33,510 --> 00:02:36,822
+dunder call, can be combined into the
+
+46
+00:02:36,822 --> 00:02:41,207
+conceptually simple, but horribly named,
+
+47
+00:02:41,207 --> 00:02:42,361
+ProhibitDuplicatesAndKeywordsOnlyMeta,
+
+48
+00:02:42,361 --> 00:02:45,450
+which can have an empty class body, but
+
+49
+00:02:45,450 --> 00:02:47,621
+combine both behaviors. To cooperate
+
+50
+00:02:47,621 --> 00:02:50,149
+gracefully non-trivial metaclasses must be
+
+51
+00:02:50,149 --> 00:02:53,165
+designed with this in mind, which isn't
+
+52
+00:02:53,165 --> 00:02:55,569
+always straightforward or even possible if
+
+53
+00:02:55,569 --> 00:02:58,547
+the combination makes no sense. An
+
+54
+00:02:58,547 --> 00:03:00,723
+important step in designing cooperative
+
+55
+00:03:00,723 --> 00:03:03,576
+metaclasses is to diligently use super
+
+56
+00:03:03,576 --> 00:03:06,672
+when delegating to base classes because,
+
+57
+00:03:06,672 --> 00:03:09,651
+as we learned in Python Beyond the Basics,
+
+58
+00:03:09,651 --> 00:03:12,383
+super actually delegates to the next class
+
+59
+00:03:12,383 --> 00:03:15,280
+in the method resolution order or MRO,
+
+60
+00:03:15,280 --> 00:03:18,898
+which accounts for multiple inheritance.
+
+61
+00:03:18,898 --> 00:03:21,847
+Even though both our TracingMeta class we
+
+62
+00:03:21,847 --> 00:03:23,562
+defined earlier, and the
+
+63
+00:03:23,562 --> 00:03:25,307
+DescriptorNamingMeta metaclass we used
+
+64
+00:03:25,307 --> 00:03:28,069
+with the Planet attributes both override
+
+65
+00:03:28,069 --> 00:03:31,461
+dunder new, they combine easily in either
+
+66
+00:03:31,461 --> 00:03:33,286
+order because our implementations delegate
+
+67
+00:03:33,286 --> 00:03:37,458
+to the next class in the MRO chain using
+
+68
+00:03:37,458 --> 00:03:42,739
+calls to super. In planet. py we can
+
+69
+00:03:42,739 --> 00:03:46,033
+import TracingMeta, and combine our two
+
+70
+00:03:46,033 --> 00:03:47,087
+metaclasses into
+
+71
+00:03:47,087 --> 00:03:51,810
+TracingDescriptorNamingMeta with multiple
+
+72
+00:03:51,810 --> 00:03:55,593
+inheritance. The planet class definition
+
+73
+00:03:55,593 --> 00:03:59,459
+is executed when we import the module.
+
+74
+00:03:59,459 --> 00:04:01,536
+This is when the metaclasses do their
+
+75
+00:04:01,536 --> 00:04:04,673
+work, and we can see that tracing works as
+
+76
+00:04:04,673 --> 00:04:07,837
+expected. We can also confirm that the
+
+77
+00:04:07,837 --> 00:04:10,069
+descriptor naming is working by causing a
+
+78
+00:04:10,069 --> 00:04:11,849
+value error and checking for the
+
+79
+00:04:11,849 --> 00:04:15,518
+descriptor name in the error message. The
+
+80
+00:04:15,518 --> 00:04:19,029
+two metaclasses cooperate successfully by
+
+81
+00:04:19,029 --> 00:04:22,540
+using super. Another tip for designing
+
+82
+00:04:22,540 --> 00:04:24,901
+metaclasses which cooperate well is to
+
+83
+00:04:24,901 --> 00:04:27,233
+prefer to put code which configures the
+
+84
+00:04:27,233 --> 00:04:29,297
+class object in the dunder init
+
+85
+00:04:29,297 --> 00:04:31,691
+metamethod, which is handed the class
+
+86
+00:04:31,691 --> 00:04:34,356
+object to be configured rather than the
+
+87
+00:04:34,356 --> 00:04:36,137
+dunder new metamethod, which is
+
+88
+00:04:36,137 --> 00:04:38,389
+responsible for allocating the new class
+
+89
+00:04:38,389 --> 00:04:41,469
+object. Of course, each object may be only
+
+90
+00:04:41,469 --> 00:04:44,773
+allocated once, but could be configured
+
+91
+00:04:44,773 --> 00:04:46,793
+multiple times. Ultimately though, if
+
+92
+00:04:46,793 --> 00:04:48,630
+you're dependent on metaclasses from a
+
+93
+00:04:48,630 --> 00:04:51,059
+third party framework, such as SQLAlchemy
+
+94
+00:04:51,059 --> 00:04:54,032
+or Qt, there's a good chance their
+
+95
+00:04:54,032 --> 00:04:55,960
+metaclasses won't compose gracefully. You
+
+96
+00:04:55,960 --> 00:04:58,798
+should be able to figure out whether they
+
+97
+00:04:58,798 --> 00:05:06,000
+will compose by reading their source code if you have access to it.
+

@@ -1,0 +1,356 @@
+1
+00:00:01,649 --> 00:00:04,129
+Back in Python Beyond the Basics we
+
+2
+00:00:04,129 --> 00:00:05,901
+introduced property as a function
+
+3
+00:00:05,901 --> 00:00:10,005
+decorator for property getters. To briefly
+
+4
+00:00:10,005 --> 00:00:13,632
+recap, a getter method, which encapsulates
+
+5
+00:00:13,632 --> 00:00:16,305
+direct attribute access, is decorated by
+
+6
+00:00:16,305 --> 00:00:21,054
+the property decorator, which creates a
+
+7
+00:00:21,054 --> 00:00:23,960
+property object. The getter function is
+
+8
+00:00:23,960 --> 00:00:26,035
+bound to an attribute of the property
+
+9
+00:00:26,035 --> 00:00:28,755
+object called fget, and the original name
+
+10
+00:00:28,755 --> 00:00:31,953
+of the getter is conceptually rebound to
+
+11
+00:00:31,953 --> 00:00:35,486
+the property object. The property object
+
+12
+00:00:35,486 --> 00:00:39,903
+also has an attribute called setter, which
+
+13
+00:00:39,903 --> 00:00:43,948
+is in fact another decorator. When a
+
+14
+00:00:43,948 --> 00:00:46,508
+setter method is decorated by the setter
+
+15
+00:00:46,508 --> 00:00:48,950
+the original property object is modified
+
+16
+00:00:48,950 --> 00:00:52,535
+to bind and attribute called fset to the
+
+17
+00:00:52,535 --> 00:00:54,500
+setter method. The property object
+
+18
+00:00:54,500 --> 00:00:56,282
+effectively aggregates the getter and
+
+19
+00:00:56,282 --> 00:00:59,419
+setter into a single property object which
+
+20
+00:00:59,419 --> 00:01:03,298
+behaves like an attribute because it is a
+
+21
+00:01:03,298 --> 00:01:05,734
+descriptor. Shortly we'll learn how it is
+
+22
+00:01:05,734 --> 00:01:08,287
+able to appear so attribute like, but
+
+23
+00:01:08,287 --> 00:01:12,504
+first let's unravel properties a bit more.
+
+24
+00:01:12,504 --> 00:01:14,637
+Remember that function decorators are just
+
+25
+00:01:14,637 --> 00:01:16,560
+regular functions which process an
+
+26
+00:01:16,560 --> 00:01:19,557
+existing function and return a new object,
+
+27
+00:01:19,557 --> 00:01:23,439
+usually a new function, which wraps the
+
+28
+00:01:23,439 --> 00:01:25,759
+decorated function. Instead of using
+
+29
+00:01:25,759 --> 00:01:28,141
+decorator syntax to apply the decorator to
+
+30
+00:01:28,141 --> 00:01:30,789
+a function we can just define a regular
+
+31
+00:01:30,789 --> 00:01:32,756
+undecorated function, and then pass the
+
+32
+00:01:32,756 --> 00:01:36,539
+function to the decorator, rebinding it to
+
+33
+00:01:36,539 --> 00:01:40,669
+the same or indeed any other name. Given
+
+34
+00:01:40,669 --> 00:01:42,750
+that decorators are just functions, let's
+
+35
+00:01:42,750 --> 00:01:45,347
+rework our code to apply property
+
+36
+00:01:45,347 --> 00:01:48,369
+explicitly using regular function call
+
+37
+00:01:48,369 --> 00:01:51,369
+syntax, avoiding the special decorator
+
+38
+00:01:51,369 --> 00:01:54,963
+application syntax using the @ symbol.
+
+39
+00:01:54,963 --> 00:01:57,338
+When doing this it's important to note
+
+40
+00:01:57,338 --> 00:01:59,222
+that the property function supports
+
+41
+00:01:59,222 --> 00:02:01,329
+several arguments for simultaneously
+
+42
+00:02:01,329 --> 00:02:04,367
+supplying the getter, setter, and deleter
+
+43
+00:02:04,367 --> 00:02:07,767
+functions, along with a doc string value.
+
+44
+00:02:07,767 --> 00:02:11,700
+In fact, help property makes this quite
+
+45
+00:02:11,700 --> 00:02:14,608
+clear. As you can see, we can separately
+
+46
+00:02:14,608 --> 00:02:16,663
+define our getter and setter functions,
+
+47
+00:02:16,663 --> 00:02:18,943
+then call the property constructor within
+
+48
+00:02:18,943 --> 00:02:22,287
+the class definition to produce a class
+
+49
+00:02:22,287 --> 00:02:25,905
+attribute. Let's use this form in our
+
+50
+00:02:25,905 --> 00:02:31,190
+Planet class for the numerical attributes.
+
+51
+00:02:31,190 --> 00:02:34,656
+First we'll remove the property decorator
+
+52
+00:02:34,656 --> 00:02:38,606
+from the getter functions before removing
+
+53
+00:02:38,606 --> 00:02:43,523
+the setter decorator from the setter
+
+54
+00:02:43,523 --> 00:02:48,150
+functions. Now we'll prefix the names of
+
+55
+00:02:48,150 --> 00:02:52,593
+the getter functions with _get_ and the
+
+56
+00:02:52,593 --> 00:02:56,790
+names of the setter functions with _set_.
+
+57
+00:02:56,790 --> 00:03:01,157
+We use single underscore prefixes here
+
+58
+00:03:01,157 --> 00:03:07,065
+because these are not special methods.
+
+59
+00:03:07,065 --> 00:03:09,395
+Finally, we create a property object using
+
+60
+00:03:09,395 --> 00:03:11,808
+the property function. You can think of it
+
+61
+00:03:11,808 --> 00:03:13,788
+as a constructor call in this context,
+
+62
+00:03:13,788 --> 00:03:19,580
+passing the pair of getter and setter
+
+63
+00:03:19,580 --> 00:03:24,330
+functions. Continuing, we need to do the
+
+64
+00:03:24,330 --> 00:03:29,284
+same for the mass_kilograms property, the
+
+65
+00:03:29,284 --> 00:03:36,023
+orbital_seconds property, and the
+
+66
+00:03:36,023 --> 00:03:39,678
+surface_temperature_kelvin property. If
+
+67
+00:03:39,678 --> 00:03:42,249
+you think this form of property set up is
+
+68
+00:03:42,249 --> 00:03:44,025
+a retrograde step compared to the
+
+69
+00:03:44,025 --> 00:03:45,863
+decorator form we'd agree with you.
+
+70
+00:03:45,863 --> 00:03:48,284
+There's a good reason we introduce
+
+71
+00:03:48,284 --> 00:03:49,898
+properties as decorators first,
+
+72
+00:03:49,898 --> 00:03:51,975
+nevertheless, it reinforces the notion
+
+73
+00:03:51,975 --> 00:03:55,491
+that property is simply a function, which
+
+74
+00:03:55,491 --> 00:03:59,812
+returns an object called a descriptor
+
+75
+00:03:59,812 --> 00:04:04,001
+bound to a class attribute. The runtime
+
+76
+00:04:04,001 --> 00:04:06,062
+behavior of this code hasn't changed at
+
+77
+00:04:06,062 --> 00:04:08,439
+all. We can still create objects, retrieve
+
+78
+00:04:08,439 --> 00:04:10,333
+attribute values through properties, and
+
+79
+00:04:10,333 --> 00:04:12,891
+attempt to set attribute values through
+
+80
+00:04:12,891 --> 00:04:20,188
+properties with rejection of nonsensical
+
+81
+00:04:20,188 --> 00:04:23,478
+values. We already know what sort of
+
+82
+00:04:23,478 --> 00:04:25,049
+operations we can perform with a
+
+83
+00:04:25,049 --> 00:04:27,956
+descriptor. We can get a value, set a
+
+84
+00:04:27,956 --> 00:04:31,748
+value, and delete a value. In the case of
+
+85
+00:04:31,748 --> 00:04:34,074
+property, these getting, setting, and
+
+86
+00:04:34,074 --> 00:04:36,609
+deleting operations call functions of our
+
+87
+00:04:36,609 --> 00:04:39,267
+own, which query and manipulate instance
+
+88
+00:04:39,267 --> 00:04:42,200
+attributes, although in general, the
+
+89
+00:04:42,200 --> 00:04:49,000
+descriptor operations can be implemented to do almost anything.
+

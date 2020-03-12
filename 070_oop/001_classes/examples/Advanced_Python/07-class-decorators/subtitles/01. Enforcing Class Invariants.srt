@@ -1,0 +1,376 @@
+1
+00:00:01,591 --> 00:00:04,128
+To do this in a generic way we need to
+
+2
+00:00:04,128 --> 00:00:06,026
+provide a way of specifying the class
+
+3
+00:00:06,026 --> 00:00:08,285
+invariant to the class decorator. Recall
+
+4
+00:00:08,285 --> 00:00:10,557
+from our earlier work with function
+
+5
+00:00:10,557 --> 00:00:12,859
+decorators, in Python Beyond the Basics,
+
+6
+00:00:12,859 --> 00:00:15,909
+to do this we define a function accepting
+
+7
+00:00:15,909 --> 00:00:18,561
+the arguments we need, which in turn
+
+8
+00:00:18,561 --> 00:00:22,352
+returns a decorator. A predicate function
+
+9
+00:00:22,352 --> 00:00:24,105
+which describes the invariant will be
+
+10
+00:00:24,105 --> 00:00:26,738
+passed to a factory function, a class
+
+11
+00:00:26,738 --> 00:00:29,319
+decorator factory, if you will, which
+
+12
+00:00:29,319 --> 00:00:31,628
+creates the actual class decorator, which
+
+13
+00:00:31,628 --> 00:00:33,551
+processes the definition of the
+
+14
+00:00:33,551 --> 00:00:35,474
+temperature class. As the temperature
+
+15
+00:00:35,474 --> 00:00:38,155
+class is processed by the class decorator
+
+16
+00:00:38,155 --> 00:00:40,832
+each callable member of the class is
+
+17
+00:00:40,832 --> 00:00:43,134
+identified in turn. These are the methods
+
+18
+00:00:43,134 --> 00:00:45,721
+of the temperature class, and a function
+
+19
+00:00:45,721 --> 00:00:48,654
+decorator is applied to each method. When
+
+20
+00:00:48,654 --> 00:00:50,998
+invoked, the method decorators delegate to
+
+21
+00:00:50,998 --> 00:00:53,520
+the original predicate function to verify
+
+22
+00:00:53,520 --> 00:00:56,670
+the invariant. There's a lot going on
+
+23
+00:00:56,670 --> 00:00:59,853
+here, so let's look at the code. The
+
+24
+00:00:59,853 --> 00:01:02,398
+invariant function, which is, in effect, a
+
+25
+00:01:02,398 --> 00:01:04,079
+decorator factory, accepts a predicate
+
+26
+00:01:04,079 --> 00:01:06,306
+function, which is used to test the
+
+27
+00:01:06,306 --> 00:01:09,382
+invariant, and returns the
+
+28
+00:01:09,382 --> 00:01:10,301
+invariant_checking_class_decorator
+
+29
+00:01:10,301 --> 00:01:12,738
+function. The class decorator accepts the
+
+30
+00:01:12,738 --> 00:01:15,769
+class object as cls and builds a list of
+
+31
+00:01:15,769 --> 00:01:19,374
+method names by identifying the callable
+
+32
+00:01:19,374 --> 00:01:21,510
+attributes. Each method is then processed
+
+33
+00:01:21,510 --> 00:01:22,738
+by a function called
+
+34
+00:01:22,738 --> 00:01:23,570
+wrap_method_with_invariant_checking_proxy,
+
+35
+00:01:23,570 --> 00:01:27,583
+which creates a function decorator for
+
+36
+00:01:27,583 --> 00:01:29,986
+each method, which calls the method, and
+
+37
+00:01:29,986 --> 00:01:32,322
+then checks that the invariant predicate
+
+38
+00:01:32,322 --> 00:01:35,694
+still holds. Note that we must use setattr
+
+39
+00:01:35,694 --> 00:01:39,105
+to update the class namespace, rather than
+
+40
+00:01:39,105 --> 00:01:41,172
+manipulating the class dunderdict
+
+41
+00:01:41,172 --> 00:01:45,412
+directly, as the latter is not mutable. We
+
+42
+00:01:45,412 --> 00:01:48,324
+can now define our temperature class like
+
+43
+00:01:48,324 --> 00:01:50,424
+this, calling the invariant class
+
+44
+00:01:50,424 --> 00:01:53,371
+decorator function and passing to it our
+
+45
+00:01:53,371 --> 00:01:56,186
+not_below_absolute_zero predicate
+
+46
+00:01:56,186 --> 00:01:58,943
+function. Our predicate function is
+
+47
+00:01:58,943 --> 00:02:00,630
+defined as our free function,
+
+48
+00:02:00,630 --> 00:02:02,738
+not_below_absolute_zero, which simply
+
+49
+00:02:02,738 --> 00:02:06,706
+tests the _kelvin private attribute. The
+
+50
+00:02:06,706 --> 00:02:08,525
+predicate function necessarily directly
+
+51
+00:02:08,525 --> 00:02:11,516
+accesses the private attributes of the
+
+52
+00:02:11,516 --> 00:02:14,647
+temperature class. That's fine. The class
+
+53
+00:02:14,647 --> 00:02:18,015
+and the function are very closely related.
+
+54
+00:02:18,015 --> 00:02:20,046
+Creating non-negative temperatures works
+
+55
+00:02:20,046 --> 00:02:22,579
+as expected. Here we create a temperature
+
+56
+00:02:22,579 --> 00:02:25,377
+of 5 Kelvin, but an attempt to construct a
+
+57
+00:02:25,377 --> 00:02:27,588
+negative temperature, here we tried to
+
+58
+00:02:27,588 --> 00:02:29,876
+create a temperature of -1 Kelvin,
+
+59
+00:02:29,876 --> 00:02:32,545
+demonstrates that our class decorator has
+
+60
+00:02:32,545 --> 00:02:35,904
+successfully wrapped dunder init with the
+
+61
+00:02:35,904 --> 00:02:38,818
+function decorator which checks the
+
+62
+00:02:38,818 --> 00:02:40,948
+invariant. Likewise, the function
+
+63
+00:02:40,948 --> 00:02:43,527
+decorator successfully wraps set Kelvin.
+
+64
+00:02:43,527 --> 00:02:45,531
+After constructing a temperature of 42
+
+65
+00:02:45,531 --> 00:02:48,122
+Kelvin we tried to modify the temperature
+
+66
+00:02:48,122 --> 00:02:52,814
+to -1 Kelvin, and the runtime error is
+
+67
+00:02:52,814 --> 00:02:54,960
+raised. Before we get too excited, let's
+
+68
+00:02:54,960 --> 00:02:56,780
+see what happens if we introduce some
+
+69
+00:02:56,780 --> 00:02:59,357
+properties, defined using the property
+
+70
+00:02:59,357 --> 00:03:01,934
+decorator into our Temperature class.
+
+71
+00:03:01,934 --> 00:03:06,533
+We've added properties to get and set the
+
+72
+00:03:06,533 --> 00:03:09,982
+temperature in both Celsius and Farenheit.
+
+73
+00:03:09,982 --> 00:03:11,803
+We create a temperature of 42 Kelvin,
+
+74
+00:03:11,803 --> 00:03:14,253
+which is reported back to us by the
+
+75
+00:03:14,253 --> 00:03:18,659
+Celsius getter as about -231 Celsius. This
+
+76
+00:03:18,659 --> 00:03:22,576
+is fine. Now let's set the Celsius to
+
+77
+00:03:22,576 --> 00:03:25,682
+-100. That's fine because -100 Celsius is
+
+78
+00:03:25,682 --> 00:03:28,374
+well above absolute zero. This works
+
+79
+00:03:28,374 --> 00:03:31,279
+without a hitch, and the temperature is
+
+80
+00:03:31,279 --> 00:03:34,007
+reported back to us in Celsius accurately.
+
+81
+00:03:34,007 --> 00:03:36,733
+Now let's try to set a temperature of -300
+
+82
+00:03:36,733 --> 00:03:38,967
+Celsius, which is well below absolute 0.
+
+83
+00:03:38,967 --> 00:03:41,691
+At this point, we should have received a
+
+84
+00:03:41,691 --> 00:03:44,927
+runtime error, as -300 Celsius is less
+
+85
+00:03:44,927 --> 00:03:47,760
+than absolute 0 Kelvin; however, no
+
+86
+00:03:47,760 --> 00:03:50,468
+exception is raised, and the class
+
+87
+00:03:50,468 --> 00:03:53,494
+invariant has been violated. If we try to
+
+88
+00:03:53,494 --> 00:03:55,630
+get the Kelvin value via the get_kelvin
+
+89
+00:03:55,630 --> 00:03:59,087
+method we do indeed get an error, but this
+
+90
+00:03:59,087 --> 00:04:01,689
+is too late. Class invariant violations
+
+91
+00:04:01,689 --> 00:04:04,354
+should never be detected by non-mutating
+
+92
+00:04:04,354 --> 00:04:06,990
+getters or other query methods. A breach
+
+93
+00:04:06,990 --> 00:04:09,729
+in our defenses has permitted the object
+
+94
+00:04:09,729 --> 00:04:17,000
+to get into an invalid state. How is our invariant check being circumvented?
+

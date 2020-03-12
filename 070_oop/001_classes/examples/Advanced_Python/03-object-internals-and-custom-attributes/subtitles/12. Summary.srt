@@ -1,0 +1,156 @@
+1
+00:00:01,465 --> 00:00:04,673
+Let's summarize what we've covered in this
+
+2
+00:00:04,673 --> 00:00:06,600
+course module. We've discovered that
+
+3
+00:00:06,600 --> 00:00:08,283
+Python objects store their attributes
+
+4
+00:00:08,283 --> 00:00:10,419
+internally within a dictionary called
+
+5
+00:00:10,419 --> 00:00:13,568
+dunder dict, which maps attribute names to
+
+6
+00:00:13,568 --> 00:00:16,061
+attribute values. We showed that instance
+
+7
+00:00:16,061 --> 00:00:18,053
+attributes can be created, retrieved,
+
+8
+00:00:18,053 --> 00:00:21,481
+updated, and deleted by direct
+
+9
+00:00:21,481 --> 00:00:25,191
+manipulation of dunder dict. We showed how
+
+10
+00:00:25,191 --> 00:00:27,451
+any failure to retrieve an attribute by
+
+11
+00:00:27,451 --> 00:00:29,979
+normal means causes the dunder getattr
+
+12
+00:00:29,979 --> 00:00:32,721
+special method to be invoked. The
+
+13
+00:00:32,721 --> 00:00:35,054
+implementation of dunder getattr can use
+
+14
+00:00:35,054 --> 00:00:39,296
+arbitrary logic to fake the existence of
+
+15
+00:00:39,296 --> 00:00:41,550
+attributes programmatically. Similarly,
+
+16
+00:00:41,550 --> 00:00:44,329
+assignment attributes can be customized by
+
+17
+00:00:44,329 --> 00:00:46,527
+overriding dunder setattr, and deletion of
+
+18
+00:00:46,527 --> 00:00:49,481
+attributes can be customized by overriding
+
+19
+00:00:49,481 --> 00:00:53,557
+dunder delattr. Calls to the hasattr
+
+20
+00:00:53,557 --> 00:00:56,014
+built-in function may also invoke dunder
+
+21
+00:00:56,014 --> 00:00:58,103
+getattr, so dunder getattr implementations
+
+22
+00:00:58,103 --> 00:01:01,443
+need to be particularly careful to avoid
+
+23
+00:01:01,443 --> 00:01:03,907
+non-terminating recursion. Occasionally,
+
+24
+00:01:03,907 --> 00:01:07,918
+it's necessary to customize all attribute
+
+25
+00:01:07,918 --> 00:01:10,800
+lookup, even for regular attributes. In
+
+26
+00:01:10,800 --> 00:01:12,620
+these cases, the default lookup machinery
+
+27
+00:01:12,620 --> 00:01:14,638
+and the special dunder getattribute method
+
+28
+00:01:14,638 --> 00:01:17,457
+of the object based class may be
+
+29
+00:01:17,457 --> 00:01:19,821
+overridden, taking care to delegate to the
+
+30
+00:01:19,821 --> 00:01:21,935
+base class implementation as necessary via
+
+31
+00:01:21,935 --> 00:01:25,290
+a call to super. Method callables are
+
+32
+00:01:25,290 --> 00:01:28,700
+stored in the dunder class. dunder dict
+
+33
+00:01:28,700 --> 00:01:32,682
+dictionary. Slots are a quick way to make
+
+34
+00:01:32,682 --> 00:01:35,510
+Python objects more memory efficient at
+
+35
+00:01:35,510 --> 00:01:39,000
+the cost of them being less dynamic. In
+
+36
+00:01:39,000 --> 00:01:40,824
+the next module we'll be looking at even
+
+37
+00:01:40,824 --> 00:01:42,280
+more sophisticated ways to customize
+
+38
+00:01:42,280 --> 00:01:45,546
+attribute access using a Python feature
+
+39
+00:01:45,546 --> 00:01:53,000
+called descriptors. Thanks for watching, and we'll see you in the next module.
+

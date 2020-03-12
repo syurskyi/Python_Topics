@@ -1,0 +1,204 @@
+1
+00:00:01,469 --> 00:00:03,634
+Finally, we reach the aspect of Python's
+
+2
+00:00:03,634 --> 00:00:05,131
+abstract base classes, which most
+
+3
+00:00:05,131 --> 00:00:07,122
+immediately springs to mind when we talk
+
+4
+00:00:07,122 --> 00:00:09,715
+about abstract base classes in general,
+
+5
+00:00:09,715 --> 00:00:12,750
+the ability to declare abstract methods.
+
+6
+00:00:12,750 --> 00:00:15,217
+An abstract method is a method which is
+
+7
+00:00:15,217 --> 00:00:17,008
+declared, but which doesn't necessarily
+
+8
+00:00:17,008 --> 00:00:20,359
+have a useful definition. Abstract methods
+
+9
+00:00:20,359 --> 00:00:22,980
+must be overridden in derived concrete
+
+10
+00:00:22,980 --> 00:00:25,925
+classes, and the presence of an abstract
+
+11
+00:00:25,925 --> 00:00:30,742
+method will prevent its host class being
+
+12
+00:00:30,742 --> 00:00:32,975
+instantiated. Abstract methods should be
+
+13
+00:00:32,975 --> 00:00:34,520
+decorated with the abstractmethod
+
+14
+00:00:34,520 --> 00:00:36,422
+decorator, and their abstractness will
+
+15
+00:00:36,422 --> 00:00:40,511
+only be enforced if the metaclass of the
+
+16
+00:00:40,511 --> 00:00:44,882
+host class is ABCMeta. Let's add abstract
+
+17
+00:00:44,882 --> 00:00:48,281
+methods to our Sword abstract base class.
+
+18
+00:00:48,281 --> 00:00:51,657
+First, we need to import abstractmethod
+
+19
+00:00:51,657 --> 00:00:54,526
+from the ABC module. Python syntax
+
+20
+00:00:54,526 --> 00:00:57,000
+requires that we provide a body for each
+
+21
+00:00:57,000 --> 00:01:00,207
+method, so for swipe and parry we raise a
+
+22
+00:01:00,207 --> 00:01:02,988
+NotImplemented error, but for thrust we
+
+23
+00:01:02,988 --> 00:01:08,802
+provide a default behavior of printing,
+
+24
+00:01:08,802 --> 00:01:11,148
+thrusting. We'll take this opportunity to
+
+25
+00:01:11,148 --> 00:01:12,800
+remind you of the distinction between
+
+26
+00:01:12,800 --> 00:01:15,226
+NotImplemented and NotImplementedError.
+
+27
+00:01:15,226 --> 00:01:19,220
+NotImplemented is a value returnable from
+
+28
+00:01:19,220 --> 00:01:21,498
+predicate functions, which are unable to
+
+29
+00:01:21,498 --> 00:01:25,706
+make a determination of true or false. On
+
+30
+00:01:25,706 --> 00:01:29,355
+the other hand, NotImplementedError is an
+
+31
+00:01:29,355 --> 00:01:34,489
+exception type to be raised in place of
+
+32
+00:01:34,489 --> 00:01:38,914
+missing code. We'll also update dunder
+
+33
+00:01:38,914 --> 00:01:42,779
+subclasshook to match. If we now make
+
+34
+00:01:42,779 --> 00:01:45,422
+BroadSword a real subclass of Sword by
+
+35
+00:01:45,422 --> 00:01:48,091
+explicitly adding Sword to the list of
+
+36
+00:01:48,091 --> 00:01:50,001
+base classes we cannot instantiate
+
+37
+00:01:50,001 --> 00:01:53,332
+BroadSword, as it is still too abstract.
+
+38
+00:01:53,332 --> 00:01:56,329
+We get a TypeError, Can't instantiate
+
+39
+00:01:56,329 --> 00:01:59,062
+abstract class BroadSword with abstract
+
+40
+00:01:59,062 --> 00:02:01,748
+methods, parry and thrust. We must
+
+41
+00:02:01,748 --> 00:02:04,317
+implement all abstract methods for the
+
+42
+00:02:04,317 --> 00:02:06,580
+class to be considered concrete. Notice
+
+43
+00:02:06,580 --> 00:02:09,834
+that in thrust we call the implementation
+
+44
+00:02:09,834 --> 00:02:15,778
+provided in the abstract class using
+
+45
+00:02:15,778 --> 00:02:20,994
+super. Now we can successfully instantiate
+
+46
+00:02:20,994 --> 00:02:25,707
+BroadSword and call its methods. Note,
+
+47
+00:02:25,707 --> 00:02:28,633
+however, that the requirement to implement
+
+48
+00:02:28,633 --> 00:02:32,116
+abstract methods doesn't extend to virtual
+
+49
+00:02:32,116 --> 00:02:35,656
+subclasses, only to real subclasses. We
+
+50
+00:02:35,656 --> 00:02:37,281
+can still instantiate SamuraiSword
+
+51
+00:02:37,281 --> 00:02:47,000
+successfully, even though it doesn't implement all of the abstract methods.
+

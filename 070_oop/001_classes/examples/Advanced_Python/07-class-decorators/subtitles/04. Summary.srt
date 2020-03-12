@@ -1,0 +1,36 @@
+1
+00:00:01,480 --> 00:00:03,925
+Let's summarize. Class decorators provide
+
+2
+00:00:03,925 --> 00:00:06,753
+a simple alternative to metaclasses for
+
+3
+00:00:06,753 --> 00:00:09,369
+processing class definitions prior to the
+
+4
+00:00:09,369 --> 00:00:12,244
+definition being bound to the class name.
+
+5
+00:00:12,244 --> 00:00:14,671
+Remember, though, that class decorators
+
+6
+00:00:14,671 --> 00:00:17,816
+are less powerful than metaclasses. Use
+
+7
+00:00:17,816 --> 00:00:20,551
+class decorators when you can and
+
+8
+00:00:20,551 --> 00:00:24,374
+metaclasses when you must. Thanks for
+
+9
+00:00:24,374 --> 00:00:30,000
+watching, and we'll see you in the next module on abstract base classes.
+

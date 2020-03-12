@@ -1,0 +1,196 @@
+1
+00:00:01,600 --> 00:00:03,965
+We've pointed out that implementing dunder
+
+2
+00:00:03,965 --> 00:00:05,652
+subclasscheck and dunder instancecheck
+
+3
+00:00:05,652 --> 00:00:09,177
+correctly can be awkward to get right.
+
+4
+00:00:09,177 --> 00:00:10,579
+Fortunately, the standard library provides
+
+5
+00:00:10,579 --> 00:00:12,386
+some support for implementing abstract
+
+6
+00:00:12,386 --> 00:00:15,929
+base classes in the ABC module, the abc
+
+7
+00:00:15,929 --> 00:00:17,868
+metaclass, along with some other useful
+
+8
+00:00:17,868 --> 00:00:20,233
+pieces of infrastructure, including the
+
+9
+00:00:20,233 --> 00:00:23,672
+ABC base class and the abstractmethod
+
+10
+00:00:23,672 --> 00:00:26,142
+decorator. We'll cover each of these in
+
+11
+00:00:26,142 --> 00:00:28,558
+detail now. The ABCMeta metaclass
+
+12
+00:00:28,558 --> 00:00:30,936
+implements reliable dunder subclasscheck
+
+13
+00:00:30,936 --> 00:00:33,355
+and dunder instancecheck methods, along
+
+14
+00:00:33,355 --> 00:00:36,030
+with some other handy capabilities we'll
+
+15
+00:00:36,030 --> 00:00:38,796
+come to shortly. We'll have our Sword
+
+16
+00:00:38,796 --> 00:00:41,239
+class use ABCMeta instead of SwordMeta,
+
+17
+00:00:41,239 --> 00:00:44,255
+which will allow us to dispose of
+
+18
+00:00:44,255 --> 00:00:46,410
+SwordMeta after we've cannibalized it.
+
+19
+00:00:46,410 --> 00:00:48,935
+Now, of course, ABCMeta doesn't know what
+
+20
+00:00:48,935 --> 00:00:52,961
+it means to be a sword, so the test that
+
+21
+00:00:52,961 --> 00:00:55,287
+was previously in SwordMeta dunder
+
+22
+00:00:55,287 --> 00:01:00,019
+subclasscheck needs to be relocated
+
+23
+00:01:00,019 --> 00:01:02,697
+elsewhere. The ABCMeta dunder
+
+24
+00:01:02,697 --> 00:01:05,382
+subclasscheck method calls the special
+
+25
+00:01:05,382 --> 00:01:08,844
+dunder subclasshook method on our actual
+
+26
+00:01:08,844 --> 00:01:13,045
+class to perform the test. In fact, all
+
+27
+00:01:13,045 --> 00:01:15,172
+Python objects have the dunder
+
+28
+00:01:15,172 --> 00:01:17,380
+subclasshook class method, which accepts
+
+29
+00:01:17,380 --> 00:01:20,176
+the potential subclass as its only
+
+30
+00:01:20,176 --> 00:01:23,682
+argument. We can see this by calling it on
+
+31
+00:01:23,682 --> 00:01:25,962
+object where it returns not implemented.
+
+32
+00:01:25,962 --> 00:01:30,295
+The method should return True, False, or
+
+33
+00:01:30,295 --> 00:01:32,786
+NotImplemented. For classes where dunder
+
+34
+00:01:32,786 --> 00:01:34,658
+subclasshook returns NotImplemented the
+
+35
+00:01:34,658 --> 00:01:36,901
+subclass test continues with the usual
+
+36
+00:01:36,901 --> 00:01:39,575
+mechanism of testing the non-virtual base
+
+37
+00:01:39,575 --> 00:01:41,934
+classes. Boolean values definitively
+
+38
+00:01:41,934 --> 00:01:44,469
+indicate whether the argument class is to
+
+39
+00:01:44,469 --> 00:01:48,189
+be considered a subclass of the base or
+
+40
+00:01:48,189 --> 00:01:50,361
+not. Let's try implementing dunder
+
+41
+00:01:50,361 --> 00:01:52,289
+subclasshook for our sword class with
+
+42
+00:01:52,289 --> 00:01:57,227
+pretty much the same definition we use for
+
+43
+00:01:57,227 --> 00:01:59,696
+dunder subclasscheck in SwordMeta
+
+44
+00:01:59,696 --> 00:02:01,833
+previously. This class method, in
+
+45
+00:02:01,833 --> 00:02:04,113
+conjunction with ABCMeta, is sufficient to
+
+46
+00:02:04,113 --> 00:02:07,613
+make our issubclass and isinstance tests
+
+47
+00:02:07,613 --> 00:02:10,786
+work as expected. SamuraiSword is a
+
+48
+00:02:10,786 --> 00:02:14,255
+subclass of Sword, Rifle is not a subclass
+
+49
+00:02:14,255 --> 00:02:23,000
+of Sword, and an instance of broad_sword is an instance of Sword.
+

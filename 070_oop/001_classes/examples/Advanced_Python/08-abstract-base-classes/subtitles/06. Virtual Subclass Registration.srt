@@ -1,0 +1,76 @@
+1
+00:00:01,401 --> 00:00:03,755
+It's also possible to directly register a
+
+2
+00:00:03,755 --> 00:00:06,561
+class as a virtual subclass with an
+
+3
+00:00:06,561 --> 00:00:09,931
+abstract base class whose metaclass is
+
+4
+00:00:09,931 --> 00:00:13,141
+ABCMeta using the register metamethod. For
+
+5
+00:00:13,141 --> 00:00:15,550
+example, let's create an abstract base
+
+6
+00:00:15,550 --> 00:00:18,633
+class Text, and register the built-in
+
+7
+00:00:18,633 --> 00:00:22,385
+type, str, as a virtual subclass. Notice
+
+8
+00:00:22,385 --> 00:00:24,376
+that the register metamethod returns the
+
+9
+00:00:24,376 --> 00:00:27,035
+class which was registered, a point we'll
+
+10
+00:00:27,035 --> 00:00:31,079
+return to in a moment. Now we can even
+
+11
+00:00:31,079 --> 00:00:34,024
+retrofit base classes to the built-in
+
+12
+00:00:34,024 --> 00:00:36,546
+types albeit virtual bases. Here we
+
+13
+00:00:36,546 --> 00:00:38,503
+demonstrate that the built-in str class is
+
+14
+00:00:38,503 --> 00:00:40,539
+now considered a subclass of our text
+
+15
+00:00:40,539 --> 00:00:42,634
+class defined at the REPL, and string
+
+16
+00:00:42,634 --> 00:00:46,583
+objects are instances of Text. Because the
+
+17
+00:00:46,583 --> 00:00:49,633
+register metamethod returns it's argument
+
+18
+00:00:49,633 --> 00:00:52,954
+we can even use it as a class decorator.
+
+19
+00:00:52,954 --> 00:01:01,000
+Let's register a class, Prose, as a virtual subclass of Text.
+

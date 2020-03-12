@@ -1,0 +1,240 @@
+1
+00:00:01,546 --> 00:00:04,074
+Recall that the property decorator
+
+2
+00:00:04,074 --> 00:00:06,949
+produces a descriptor, which wraps the
+
+3
+00:00:06,949 --> 00:00:09,665
+getter and setter methods, but because
+
+4
+00:00:09,665 --> 00:00:11,929
+descriptors aren't callable functions they
+
+5
+00:00:11,929 --> 00:00:15,264
+aren't being detected and wrapped by our
+
+6
+00:00:15,264 --> 00:00:18,000
+invariant checking function decorator. To
+
+7
+00:00:18,000 --> 00:00:20,323
+fix this we need to beef up our machinery
+
+8
+00:00:20,323 --> 00:00:22,528
+to detect and appropriately proxy these
+
+9
+00:00:22,528 --> 00:00:25,867
+descriptors. If we take a peek at
+
+10
+00:00:25,867 --> 00:00:28,618
+vars(Temperature) we can see that
+
+11
+00:00:28,618 --> 00:00:31,369
+Fahrenheit and Celsius correspond to
+
+12
+00:00:31,369 --> 00:00:33,996
+property objects. Ideally, we detect any
+
+13
+00:00:33,996 --> 00:00:36,669
+value in this mapping, which is a
+
+14
+00:00:36,669 --> 00:00:38,603
+descriptor, which is any object supporting
+
+15
+00:00:38,603 --> 00:00:41,194
+any of the dunder get, dunder set, or
+
+16
+00:00:41,194 --> 00:00:43,288
+dunder delete methods. Unfortunately for
+
+17
+00:00:43,288 --> 00:00:46,066
+us, in this case, descriptors are also
+
+18
+00:00:46,066 --> 00:00:49,006
+used for all the functions and methods for
+
+19
+00:00:49,006 --> 00:00:51,334
+reasons we won't even get into in this
+
+20
+00:00:51,334 --> 00:00:53,552
+advanced course, so they too would be
+
+21
+00:00:53,552 --> 00:00:55,841
+detected. Instead, we'll go for the
+
+22
+00:00:55,841 --> 00:00:58,616
+simpler approach of looking for instances
+
+23
+00:00:58,616 --> 00:01:01,875
+of property, how updated class decorator
+
+24
+00:01:01,875 --> 00:01:04,448
+factory function looks like this. After we
+
+25
+00:01:04,448 --> 00:01:06,822
+have detected the method names by looking
+
+26
+00:01:06,822 --> 00:01:08,889
+for callable attributes, we detect the
+
+27
+00:01:08,889 --> 00:01:11,273
+property names by looking for attributes
+
+28
+00:01:11,273 --> 00:01:14,423
+where the value is an instance of
+
+29
+00:01:14,423 --> 00:01:16,298
+property. We'll insert a new section into
+
+30
+00:01:16,298 --> 00:01:18,678
+the body of the class decorator itself to
+
+31
+00:01:18,678 --> 00:01:22,023
+search for and wrap any class attributes
+
+32
+00:01:22,023 --> 00:01:24,974
+which are properties. This delegates to a
+
+33
+00:01:24,974 --> 00:01:26,112
+new function called
+
+34
+00:01:26,112 --> 00:01:35,277
+wrap_property_with_invariant_checking_proxy.
+
+35
+00:01:35,277 --> 00:01:37,172
+This function retrieves the property from
+
+36
+00:01:37,172 --> 00:01:39,743
+the class, and passes it and the predicate
+
+37
+00:01:39,743 --> 00:01:42,110
+function, to the constructor of a new
+
+38
+00:01:42,110 --> 00:01:44,203
+class, InvariantCheckingPropertyProxy. We
+
+39
+00:01:44,203 --> 00:01:50,025
+use setattr to replace the property with
+
+40
+00:01:50,025 --> 00:01:52,177
+the proxy. The
+
+41
+00:01:52,177 --> 00:01:54,908
+InvariantCheckingPropertyProxy is itself a
+
+42
+00:01:54,908 --> 00:01:57,222
+descriptor, implementing dunder get,
+
+43
+00:01:57,222 --> 00:02:00,537
+dunder set, and dunder delete. The
+
+44
+00:02:00,537 --> 00:02:02,647
+initializer simply stores references to
+
+45
+00:02:02,647 --> 00:02:05,429
+the referent property and the predicate
+
+46
+00:02:05,429 --> 00:02:08,165
+function. The implementations of dunder
+
+47
+00:02:08,165 --> 00:02:11,216
+get, dunder set, and dunder delete forward
+
+48
+00:02:11,216 --> 00:02:13,918
+to the underlying referent property, and
+
+49
+00:02:13,918 --> 00:02:18,050
+then check that the class invariant of the
+
+50
+00:02:18,050 --> 00:02:20,716
+instance remains unviolated. A quick test
+
+51
+00:02:20,716 --> 00:02:23,322
+at the REPL shows that everything is
+
+52
+00:02:23,322 --> 00:02:25,513
+working as designed. We'll create a
+
+53
+00:02:25,513 --> 00:02:28,379
+Temperature of 42 Kelvin, try to use the
+
+54
+00:02:28,379 --> 00:02:30,776
+Celsius setter to set a temperature of
+
+55
+00:02:30,776 --> 00:02:33,129
+-300 Celsius, which results in a runtime
+
+56
+00:02:33,129 --> 00:02:36,684
+error, showing that our
+
+57
+00:02:36,684 --> 00:02:39,350
+InvariantCheckingPropertyProxy is working.
+
+58
+00:02:39,350 --> 00:02:41,603
+A temperature of 100 Fahrenheit is
+
+59
+00:02:41,603 --> 00:02:44,232
+admissible, and we can convert that to
+
+60
+00:02:44,232 --> 00:02:48,000
+Celsius. Everything seems to be working fine.
+

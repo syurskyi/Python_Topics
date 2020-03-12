@@ -1,0 +1,92 @@
+1
+00:00:01,486 --> 00:00:03,699
+Do you remember the vars built-in
+
+2
+00:00:03,699 --> 00:00:06,004
+function? Without an argument it returns a
+
+3
+00:00:06,004 --> 00:00:07,294
+dictionary containing the current
+
+4
+00:00:07,294 --> 00:00:10,310
+namespace, and so acts just like the
+
+5
+00:00:10,310 --> 00:00:12,708
+locals built-in function, however, if we
+
+6
+00:00:12,708 --> 00:00:15,287
+supply an argument it returns the dunder
+
+7
+00:00:15,287 --> 00:00:18,471
+dict attribute of its argument, so instead
+
+8
+00:00:18,471 --> 00:00:22,386
+of writing obj. dunder dict we can write
+
+9
+00:00:22,386 --> 00:00:24,838
+vars(obj). Arguably, this is more Pythonic
+
+10
+00:00:24,838 --> 00:00:27,167
+than accessing dunder dict directly, for
+
+11
+00:00:27,167 --> 00:00:29,362
+much the same reason that calling
+
+12
+00:00:29,362 --> 00:00:31,060
+len(collection) is definitely more
+
+13
+00:00:31,060 --> 00:00:34,063
+idiomatic than calling collection. dunder
+
+14
+00:00:34,063 --> 00:00:37,274
+len. That said, the length returned by len
+
+15
+00:00:37,274 --> 00:00:39,698
+is always immutable, whereas dunder dict
+
+16
+00:00:39,698 --> 00:00:42,227
+is a mutable dictionary. In our opinion,
+
+17
+00:00:42,227 --> 00:00:44,069
+it's much clearer that the internal stage
+
+18
+00:00:44,069 --> 00:00:46,715
+of an object is being modified when we
+
+19
+00:00:46,715 --> 00:00:48,944
+directly modify the dunder dict attribute
+
+20
+00:00:48,944 --> 00:00:52,003
+like this by assigning to one of its keys,
+
+21
+00:00:52,003 --> 00:00:54,544
+then when we go via vars. Whichever form
+
+22
+00:00:54,544 --> 00:00:56,550
+you use, and we don't feel strongly either
+
+23
+00:00:56,550 --> 00:01:03,000
+way, you should be aware of this use of vars with an argument.
+

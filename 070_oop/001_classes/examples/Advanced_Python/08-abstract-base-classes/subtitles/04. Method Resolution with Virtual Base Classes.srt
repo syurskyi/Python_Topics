@@ -1,0 +1,56 @@
+1
+00:00:01,416 --> 00:00:03,764
+It's worth bearing in mind that unlike
+
+2
+00:00:03,764 --> 00:00:05,837
+regular base classes, virtual base classes
+
+3
+00:00:05,837 --> 00:00:08,326
+don't play a role in method resolution.
+
+4
+00:00:08,326 --> 00:00:13,297
+We'll demonstrate this by adding a thrust
+
+5
+00:00:13,297 --> 00:00:18,268
+method to the Sword virtual base class.
+
+6
+00:00:18,268 --> 00:00:24,792
+Now let's create an instance of
+
+7
+00:00:24,792 --> 00:00:29,731
+broad_sword. Invoking swipe on broad_sword
+
+8
+00:00:29,731 --> 00:00:33,729
+works as expected. Attempts to invoke
+
+9
+00:00:33,729 --> 00:00:35,947
+thrust on subclasses raise an attribute
+
+10
+00:00:35,947 --> 00:00:37,879
+error, and checking further, we can see
+
+11
+00:00:37,879 --> 00:00:40,089
+that sword is not present in the method
+
+12
+00:00:40,089 --> 00:00:42,418
+resolution order for BroadSword. For this
+
+13
+00:00:42,418 --> 00:00:45,660
+reason, it is not possible to call virtual
+
+14
+00:00:45,660 --> 00:00:54,000
+base class methods using super, which relies on searching the mro.
+

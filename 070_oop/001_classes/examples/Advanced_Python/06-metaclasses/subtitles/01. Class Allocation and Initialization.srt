@@ -1,0 +1,712 @@
+1
+00:00:01,500 --> 00:00:03,368
+Roughly speaking, when we write a class
+
+2
+00:00:03,368 --> 00:00:05,974
+block in our Python source code it is
+
+3
+00:00:05,974 --> 00:00:08,517
+syntactic sugar for creating a dictionary.
+
+4
+00:00:08,517 --> 00:00:10,802
+The Python runtime populates the namespace
+
+5
+00:00:10,802 --> 00:00:12,921
+dictionary while reading the contents of
+
+6
+00:00:12,921 --> 00:00:15,525
+the class block, which is passed to a
+
+7
+00:00:15,525 --> 00:00:19,094
+metaclass to convert the dictionary into a
+
+8
+00:00:19,094 --> 00:00:21,982
+class object. To see how that works it's
+
+9
+00:00:21,982 --> 00:00:23,702
+important to understand the several tasks
+
+10
+00:00:23,702 --> 00:00:27,254
+that metaclasses perform during creation
+
+11
+00:00:27,254 --> 00:00:32,211
+of a new class. When we write class Widget
+
+12
+00:00:32,211 --> 00:00:34,327
+what's actually happening is something
+
+13
+00:00:34,327 --> 00:00:38,600
+like this, which is to say that the class
+
+14
+00:00:38,600 --> 00:00:42,480
+name is Widget, the metaclass is type, the
+
+15
+00:00:42,480 --> 00:00:46,450
+class has no base classes, other than the
+
+16
+00:00:46,450 --> 00:00:48,631
+implicit object, no keyword arguments were
+
+17
+00:00:48,631 --> 00:00:50,713
+passed to the metaclass, we'll cover what
+
+18
+00:00:50,713 --> 00:00:53,290
+this means later. The metaclasses, dunder
+
+19
+00:00:53,290 --> 00:00:56,675
+prepare method is called to create a new
+
+20
+00:00:56,675 --> 00:00:59,149
+namespace object, which behaves like a
+
+21
+00:00:59,149 --> 00:01:01,511
+dictionary. Behind the scenes the Python
+
+22
+00:01:01,511 --> 00:01:03,446
+runtime populates the namespace dictionary
+
+23
+00:01:03,446 --> 00:01:06,070
+while reading the contents of the class
+
+24
+00:01:06,070 --> 00:01:07,885
+block. The metaclasses dunder new method
+
+25
+00:01:07,885 --> 00:01:10,024
+is called to allocate the class object,
+
+26
+00:01:10,024 --> 00:01:12,493
+and finally, the metaclasses dunder init
+
+27
+00:01:12,493 --> 00:01:15,991
+is called to initialize the class object.
+
+28
+00:01:15,991 --> 00:01:19,387
+The name, bases, and namespace arguments
+
+29
+00:01:19,387 --> 00:01:21,179
+contain the information collected during
+
+30
+00:01:21,179 --> 00:01:23,080
+execution of the class definition,
+
+31
+00:01:23,080 --> 00:01:25,885
+normally the class attributes and method
+
+32
+00:01:25,885 --> 00:01:27,866
+definitions inside the class block,
+
+33
+00:01:27,866 --> 00:01:30,893
+although in our case, the class block is
+
+34
+00:01:30,893 --> 00:01:34,257
+logically empty. By providing our own
+
+35
+00:01:34,257 --> 00:01:37,516
+metaclass we can customize these
+
+36
+00:01:37,516 --> 00:01:40,164
+behaviors. We'll start with a very simple
+
+37
+00:01:40,164 --> 00:01:42,249
+metaclass called TracingMeta in a module,
+
+38
+00:01:42,249 --> 00:01:44,782
+tracing. py, which simply prints its
+
+39
+00:01:44,782 --> 00:01:47,369
+method invocations and return values to
+
+40
+00:01:47,369 --> 00:01:50,452
+the console for each of dunder prepare,
+
+41
+00:01:50,452 --> 00:01:52,649
+dunder new, and dunder init. Notice that
+
+42
+00:01:52,649 --> 00:01:55,954
+our metaclass should be a subclass of an
+
+43
+00:01:55,954 --> 00:01:58,846
+existing metaclass, so we'll subclass
+
+44
+00:01:58,846 --> 00:02:01,294
+type. Each of our overrides delegates to
+
+45
+00:02:01,294 --> 00:02:03,947
+the base class type method to do the
+
+46
+00:02:03,947 --> 00:02:07,717
+actual work required via a call to super.
+
+47
+00:02:07,717 --> 00:02:09,761
+Notice that although dunder new is
+
+48
+00:02:09,761 --> 00:02:13,107
+implicitly a class method, we must
+
+49
+00:02:13,107 --> 00:02:18,066
+explicitly decorate the dunder prepare
+
+50
+00:02:18,066 --> 00:02:23,025
+class method with the appropriate
+
+51
+00:02:23,025 --> 00:02:25,712
+decorator. Now we'll define a class
+
+52
+00:02:25,712 --> 00:02:27,746
+containing a simple method called action,
+
+53
+00:02:27,746 --> 00:02:30,648
+which just prints a message, and a single
+
+54
+00:02:30,648 --> 00:02:34,221
+class attribute, the answer, with the
+
+55
+00:02:34,221 --> 00:02:37,629
+cosmically inevitable value 42. We'll do
+
+56
+00:02:37,629 --> 00:02:40,144
+this at the REPL, so you can see clearly
+
+57
+00:02:40,144 --> 00:02:42,473
+when the metaclass machinery is invoked.
+
+58
+00:02:42,473 --> 00:02:45,951
+At the instant we complete the class
+
+59
+00:02:45,951 --> 00:02:48,682
+definition we can see from the tracing
+
+60
+00:02:48,682 --> 00:02:50,915
+output that Python executes the dunder
+
+61
+00:02:50,915 --> 00:02:55,486
+prepare, dunder new, and dunder init
+
+62
+00:02:55,486 --> 00:02:59,270
+method in turn. First of all, let's look
+
+63
+00:02:59,270 --> 00:03:01,666
+at dunder prepare, the purpose of which is
+
+64
+00:03:01,666 --> 00:03:04,868
+to produce an initial mapping object to
+
+65
+00:03:04,868 --> 00:03:07,651
+contain the class namespace. The mcs
+
+66
+00:03:07,651 --> 00:03:10,198
+argument, short for metaclass, is a
+
+67
+00:03:10,198 --> 00:03:12,714
+reference to the metaclass itself. This
+
+68
+00:03:12,714 --> 00:03:15,079
+first argument is analogous to the
+
+69
+00:03:15,079 --> 00:03:17,214
+self-argument passed to instance methods,
+
+70
+00:03:17,214 --> 00:03:20,544
+and the cls argument passed to class
+
+71
+00:03:20,544 --> 00:03:24,046
+methods. For metaclass methods it is
+
+72
+00:03:24,046 --> 00:03:26,742
+conventionally called mcs. The name
+
+73
+00:03:26,742 --> 00:03:29,823
+argument contains the name of our Widget
+
+74
+00:03:29,823 --> 00:03:32,984
+class as a string. The bases argument is
+
+75
+00:03:32,984 --> 00:03:35,786
+an empty tuple. We didn't declare any base
+
+76
+00:03:35,786 --> 00:03:38,715
+classes for widget, and the ultimate
+
+77
+00:03:38,715 --> 00:03:42,097
+object based class is implicit. The kwargs
+
+78
+00:03:42,097 --> 00:03:45,006
+argument is an empty dictionary. We'll
+
+79
+00:03:45,006 --> 00:03:48,336
+cover the significance of this shortly.
+
+80
+00:03:48,336 --> 00:03:49,971
+The most important aspect of dunder
+
+81
+00:03:49,971 --> 00:03:52,299
+prepare is that when it calls it's super
+
+82
+00:03:52,299 --> 00:03:54,819
+class implementation in type the return
+
+83
+00:03:54,819 --> 00:03:57,724
+value is a dictionary or, more generally,
+
+84
+00:03:57,724 --> 00:04:00,989
+a mapping type. In this case, it's a
+
+85
+00:04:00,989 --> 00:04:03,202
+regular, empty dictionary. This dictionary
+
+86
+00:04:03,202 --> 00:04:06,662
+will be the namespace associated with the
+
+87
+00:04:06,662 --> 00:04:09,150
+nascent class. Moving on to looking detail
+
+88
+00:04:09,150 --> 00:04:11,850
+at dunder new, the purpose of which is to
+
+89
+00:04:11,850 --> 00:04:14,189
+allocate the new class object, the mcs
+
+90
+00:04:14,189 --> 00:04:16,649
+argument is a reference to the metaclass
+
+91
+00:04:16,649 --> 00:04:19,842
+as before. The name and bases arguments
+
+92
+00:04:19,842 --> 00:04:24,425
+are still the string name of the new class
+
+93
+00:04:24,425 --> 00:04:28,285
+and the tuple of base classes. The mapping
+
+94
+00:04:28,285 --> 00:04:30,544
+object we returned from dunder prepare is
+
+95
+00:04:30,544 --> 00:04:33,323
+passed as the namespace argument to dunder
+
+96
+00:04:33,323 --> 00:04:36,346
+new. The Python runtime has populated this
+
+97
+00:04:36,346 --> 00:04:38,494
+dictionary with several entries, as it has
+
+98
+00:04:38,494 --> 00:04:40,766
+processed the class definition of widget.
+
+99
+00:04:40,766 --> 00:04:44,818
+Two of the items are our action method and
+
+100
+00:04:44,818 --> 00:04:47,949
+the the answer class attribute. The other
+
+101
+00:04:47,949 --> 00:04:51,078
+two items are dunder module and dunder
+
+102
+00:04:51,078 --> 00:04:53,770
+qualname, which the Python runtime has
+
+103
+00:04:53,770 --> 00:04:55,445
+added. The dunder module attribute is
+
+104
+00:04:55,445 --> 00:04:57,873
+mapped in the name of the module in which
+
+105
+00:04:57,873 --> 00:05:01,605
+the class was defined. Because we use the
+
+106
+00:05:01,605 --> 00:05:04,071
+REPL this is built-ins. The dunder
+
+107
+00:05:04,071 --> 00:05:05,570
+qualname attribute contains the fully
+
+108
+00:05:05,570 --> 00:05:07,958
+qualified name of the class, including
+
+109
+00:05:07,958 --> 00:05:11,054
+parent modules and packages. In this case,
+
+110
+00:05:11,054 --> 00:05:12,969
+it just contains the class name, as the
+
+111
+00:05:12,969 --> 00:05:15,493
+built-in's module used by the REPL is
+
+112
+00:05:15,493 --> 00:05:17,398
+available everywhere, being the last
+
+113
+00:05:17,398 --> 00:05:21,945
+namespace in the LEGB lookup hierarchy.
+
+114
+00:05:21,945 --> 00:05:25,675
+The kwargs dictionary passed to dunder new
+
+115
+00:05:25,675 --> 00:05:28,954
+is also still empty. Within dunder new we
+
+116
+00:05:28,954 --> 00:05:30,963
+delegate to the base class, type. dunder
+
+117
+00:05:30,963 --> 00:05:34,530
+new, via a call to super, forwarding the
+
+118
+00:05:34,530 --> 00:05:37,237
+mcs, name, bases, and namespace arguments.
+
+119
+00:05:37,237 --> 00:05:40,708
+The object returned by this call is the
+
+120
+00:05:40,708 --> 00:05:44,029
+new Widget class. We are in the process of
+
+121
+00:05:44,029 --> 00:05:46,434
+allocating and configuring. The new Widget
+
+122
+00:05:46,434 --> 00:05:50,153
+class is what we returned from dunder new.
+
+123
+00:05:50,153 --> 00:05:52,242
+Note that any changes we wish to make to
+
+124
+00:05:52,242 --> 00:05:54,021
+the contents of the namespace object must
+
+125
+00:05:54,021 --> 00:05:56,494
+have been made before this call, as this
+
+126
+00:05:56,494 --> 00:05:59,497
+is the point at which the class object is
+
+127
+00:05:59,497 --> 00:06:01,970
+created. To change the contents of the
+
+128
+00:06:01,970 --> 00:06:05,770
+class namespace after this call the class
+
+129
+00:06:05,770 --> 00:06:08,485
+object must be manipulated directly.
+
+130
+00:06:08,485 --> 00:06:10,521
+Finally, we come to dunder init, the
+
+131
+00:06:10,521 --> 00:06:13,040
+purpose of which is to configure the newly
+
+132
+00:06:13,040 --> 00:06:15,363
+created class object. Note that dunder
+
+133
+00:06:15,363 --> 00:06:18,620
+init here is an instance method of the
+
+134
+00:06:18,620 --> 00:06:21,181
+metaclass, not an explicit class method
+
+135
+00:06:21,181 --> 00:06:24,391
+like dunder prepare or an implicit class
+
+136
+00:06:24,391 --> 00:06:27,417
+method like dunder new. As such, it
+
+137
+00:06:27,417 --> 00:06:30,147
+accepts cls as its first argument, which
+
+138
+00:06:30,147 --> 00:06:38,706
+is one level less meta than cls. The name,
+
+139
+00:06:38,706 --> 00:06:45,401
+bases, namespace, and kwargs arguments are
+
+140
+00:06:45,401 --> 00:06:49,705
+all as before. Again, we delegate to the
+
+141
+00:06:49,705 --> 00:06:53,120
+type base class via super, although dunder
+
+142
+00:06:53,120 --> 00:06:55,645
+init doesn't return anything it's expected
+
+143
+00:06:55,645 --> 00:06:58,058
+to it's expected to modify the existing
+
+144
+00:06:58,058 --> 00:07:00,702
+class object that was handed to it. Note
+
+145
+00:07:00,702 --> 00:07:02,623
+that although the namespace object is
+
+146
+00:07:02,623 --> 00:07:05,046
+passed to dunder init, its content should
+
+147
+00:07:05,046 --> 00:07:07,714
+already have been used upstream by dunder
+
+148
+00:07:07,714 --> 00:07:09,959
+new when allocating the class object.
+
+149
+00:07:09,959 --> 00:07:12,171
+Changes to namespace will be ineffectual,
+
+150
+00:07:12,171 --> 00:07:14,957
+and any changes to the class object must
+
+151
+00:07:14,957 --> 00:07:17,588
+be affected by manipulating cls directly.
+
+152
+00:07:17,588 --> 00:07:21,818
+The key here is that metaclasses give us
+
+153
+00:07:21,818 --> 00:07:24,179
+the opportunity to modify the dictionary
+
+154
+00:07:24,179 --> 00:07:26,432
+of class attributes, which includes
+
+155
+00:07:26,432 --> 00:07:29,647
+methods, before the class is instantiated.
+
+156
+00:07:29,647 --> 00:07:31,944
+We even get the opportunity to modify the
+
+157
+00:07:31,944 --> 00:07:34,199
+list of base classes or produce an
+
+158
+00:07:34,199 --> 00:07:36,247
+entirely different class, if required,
+
+159
+00:07:36,247 --> 00:07:40,059
+although such uses are rare. We'll look at
+
+160
+00:07:40,059 --> 00:07:44,174
+some complex examples soon to make this
+
+161
+00:07:44,174 --> 00:07:46,942
+clear. You may be wondering which out of
+
+162
+00:07:46,942 --> 00:07:49,350
+dunder prepare, dunder new, and dunder
+
+163
+00:07:49,350 --> 00:07:53,420
+init you should override. If you don't
+
+164
+00:07:53,420 --> 00:07:55,719
+override dunder prepare the default
+
+165
+00:07:55,719 --> 00:07:57,990
+implementation in type will produce a
+
+166
+00:07:57,990 --> 00:07:59,692
+regular dictionary for the namespace
+
+167
+00:07:59,692 --> 00:08:02,809
+object, so you only need to override it if
+
+168
+00:08:02,809 --> 00:08:06,097
+you need the behavior provided by another
+
+169
+00:08:06,097 --> 00:08:08,975
+mapping type. Usually it will only be
+
+170
+00:08:08,975 --> 00:08:11,689
+necessary to override either dunder new or
+
+171
+00:08:11,689 --> 00:08:14,618
+dunder init, but of these two only dunder
+
+172
+00:08:14,618 --> 00:08:17,571
+new can make decisions before the new
+
+173
+00:08:17,571 --> 00:08:20,051
+class is allocated. The distinction
+
+174
+00:08:20,051 --> 00:08:23,294
+between dunder new and dunder init for
+
+175
+00:08:23,294 --> 00:08:26,802
+metaclasses is exactly the same as it is
+
+176
+00:08:26,802 --> 00:08:29,118
+for regular classes. Later we'll see that
+
+177
+00:08:29,118 --> 00:08:31,120
+it might be wise to prefer a configuration
+
+178
+00:08:31,120 --> 00:08:40,000
+in dunder init rather than dunder new, so that metaclasses are more composable.
+

@@ -1,0 +1,372 @@
+1
+00:00:01,654 --> 00:00:04,976
+Now let's look at dunder getattribute as
+
+2
+00:00:04,976 --> 00:00:07,667
+opposed to dunder getattr. Recall that
+
+3
+00:00:07,667 --> 00:00:10,444
+dunder getattr is called only in cases
+
+4
+00:00:10,444 --> 00:00:12,792
+when normal attribute lookup fails. It's
+
+5
+00:00:12,792 --> 00:00:15,808
+our last chance for us to intervene before
+
+6
+00:00:15,808 --> 00:00:17,569
+the Python runtime raises an attribute
+
+7
+00:00:17,569 --> 00:00:20,501
+error, but what if we want to intercept
+
+8
+00:00:20,501 --> 00:00:24,199
+all attribute access? In this case, we can
+
+9
+00:00:24,199 --> 00:00:26,513
+override dunder getattribute. I use the
+
+10
+00:00:26,513 --> 00:00:28,906
+term override advisedly because it's the
+
+11
+00:00:28,906 --> 00:00:30,933
+implementation of dunder getattribute in
+
+12
+00:00:30,933 --> 00:00:33,647
+the ultimate base class object that is
+
+13
+00:00:33,647 --> 00:00:35,940
+responsible for normal lookup behavior,
+
+14
+00:00:35,940 --> 00:00:39,179
+including calling dunder getattr. This
+
+15
+00:00:39,179 --> 00:00:41,090
+level of control is seldom required, and
+
+16
+00:00:41,090 --> 00:00:43,226
+you should always consider whether dunder
+
+17
+00:00:43,226 --> 00:00:46,548
+getattr is sufficient for your needs. That
+
+18
+00:00:46,548 --> 00:00:50,669
+said, dunder getattribute does have its
+
+19
+00:00:50,669 --> 00:00:52,887
+uses. Consider this class, which
+
+20
+00:00:52,887 --> 00:00:55,169
+implements a logging proxy, which logs
+
+21
+00:00:55,169 --> 00:00:57,427
+every attribute retrieval made against the
+
+22
+00:00:57,427 --> 00:00:59,537
+target objects supplied to the
+
+23
+00:00:59,537 --> 00:01:01,347
+constructor. Since dunder getattribute
+
+24
+00:01:01,347 --> 00:01:03,297
+intercepts all attribute access through
+
+25
+00:01:03,297 --> 00:01:06,084
+the dot operator we must be very careful
+
+26
+00:01:06,084 --> 00:01:08,872
+never to access attributes of the logging
+
+27
+00:01:08,872 --> 00:01:11,704
+proxy through the dot. In the initializer
+
+28
+00:01:11,704 --> 00:01:14,181
+we use the dunder setattr implementation
+
+29
+00:01:14,181 --> 00:01:16,915
+inherited from the object super class to
+
+30
+00:01:16,915 --> 00:01:19,405
+do our work. Inside dunder getattribute
+
+31
+00:01:19,405 --> 00:01:22,064
+itself we retrieve the attribute called
+
+32
+00:01:22,064 --> 00:01:24,600
+target using a call to the super class
+
+33
+00:01:24,600 --> 00:01:26,211
+implementation of dunder getattribute,
+
+34
+00:01:26,211 --> 00:01:29,510
+which remember, implements the default
+
+35
+00:01:29,510 --> 00:01:32,115
+lookup behavior. Once we have a reference
+
+36
+00:01:32,115 --> 00:01:34,170
+to the target class we delegate to the
+
+37
+00:01:34,170 --> 00:01:36,372
+getattr built-in function. If attribute
+
+38
+00:01:36,372 --> 00:01:39,994
+lookup on the target fails we then raise
+
+39
+00:01:39,994 --> 00:01:42,930
+an attribute error with an informative
+
+40
+00:01:42,930 --> 00:01:46,543
+message. Note how careful we must be even
+
+41
+00:01:46,543 --> 00:01:49,589
+to return our object's dunder class. If
+
+42
+00:01:49,589 --> 00:01:51,431
+attribute retrieval was successful we
+
+43
+00:01:51,431 --> 00:01:54,099
+report as much before returning the
+
+44
+00:01:54,099 --> 00:01:58,279
+attribute value. Let's see this in action.
+
+45
+00:01:58,279 --> 00:02:00,408
+Note we're doing this in the regular
+
+46
+00:02:00,408 --> 00:02:02,655
+Python REPL in a terminal rather than
+
+47
+00:02:02,655 --> 00:02:05,187
+using the PyCharm REPL simply because
+
+48
+00:02:05,187 --> 00:02:07,821
+PyCharm itself performs a great many
+
+49
+00:02:07,821 --> 00:02:10,660
+invocations of dunder getattribute in its
+
+50
+00:02:10,660 --> 00:02:13,438
+console to support code completion. We
+
+51
+00:02:13,438 --> 00:02:16,185
+create a ColoredVector called CV with
+
+52
+00:02:16,185 --> 00:02:22,221
+colors red 23, green 44, blue 238, and
+
+53
+00:02:22,221 --> 00:02:27,123
+vector components p=9 and q=14. We then
+
+54
+00:02:27,123 --> 00:02:31,076
+wrap a LoggingProxy called CW around the
+
+55
+00:02:31,076 --> 00:02:34,102
+ColoredVector, CV. When we retrieve the p
+
+56
+00:02:34,102 --> 00:02:35,998
+attribute from CloudWatch our dunder
+
+57
+00:02:35,998 --> 00:02:38,079
+getattribute code is invoked, and the
+
+58
+00:02:38,079 --> 00:02:40,961
+message is printed. Likewise, for the red
+
+59
+00:02:40,961 --> 00:02:44,182
+attribute. So far so good, but what
+
+60
+00:02:44,182 --> 00:02:46,777
+happens when we write to an attribute
+
+61
+00:02:46,777 --> 00:02:49,467
+through the proxy? In this example both
+
+62
+00:02:49,467 --> 00:02:51,902
+writes appear to be accepted without
+
+63
+00:02:51,902 --> 00:02:54,644
+error, although only one of them should
+
+64
+00:02:54,644 --> 00:02:56,908
+be. Remember, the vector component should
+
+65
+00:02:56,908 --> 00:02:59,133
+be immutable. Only the colors are mutable.
+
+66
+00:02:59,133 --> 00:03:01,512
+In fact, though, neither of the writes
+
+67
+00:03:01,512 --> 00:03:04,203
+succeeded. Let's check by retrieving the
+
+68
+00:03:04,203 --> 00:03:07,062
+attributes. It looked like p was set to
+
+69
+00:03:07,062 --> 00:03:10,145
+19, but it still has the value 9. The
+
+70
+00:03:10,145 --> 00:03:13,320
+color red should have been set to 5, but
+
+71
+00:03:13,320 --> 00:03:15,766
+it still has the value 23. What's
+
+72
+00:03:15,766 --> 00:03:17,738
+happening here is that our attribute
+
+73
+00:03:17,738 --> 00:03:20,528
+writes to the CW proxy are invoking the
+
+74
+00:03:20,528 --> 00:03:22,822
+inherited dunder setattr on the object
+
+75
+00:03:22,822 --> 00:03:25,786
+base class, which is actually creating new
+
+76
+00:03:25,786 --> 00:03:28,551
+attributes in the logging proxy instances,
+
+77
+00:03:28,551 --> 00:03:31,949
+dunder dict, however, reads through the
+
+78
+00:03:31,949 --> 00:03:34,781
+proxy, correctly bypass this dunder dict,
+
+79
+00:03:34,781 --> 00:03:38,135
+and are redirected to the target. In
+
+80
+00:03:38,135 --> 00:03:42,589
+effect, the proxy dunder dict has become
+
+81
+00:03:42,589 --> 00:03:46,630
+write only. The solution to this is to
+
+82
+00:03:46,630 --> 00:03:48,937
+override dunder setattr on the
+
+83
+00:03:48,937 --> 00:03:50,939
+loggingproxy too. In the implementation we
+
+84
+00:03:50,939 --> 00:03:52,556
+retrieve the attribute called target using
+
+85
+00:03:52,556 --> 00:03:55,951
+a call to the superclass implementation of
+
+86
+00:03:55,951 --> 00:03:58,893
+dunder getattribute. We'll then use the
+
+87
+00:03:58,893 --> 00:04:01,746
+setattr built-in function to set the
+
+88
+00:04:01,746 --> 00:04:04,279
+attribute on the target. With dunder
+
+89
+00:04:04,279 --> 00:04:06,490
+setattr in place we can successfully write
+
+90
+00:04:06,490 --> 00:04:11,461
+through the logging proxy to modify
+
+91
+00:04:11,461 --> 00:04:16,316
+mutable attributes. Here we update red to
+
+92
+00:04:16,316 --> 00:04:19,540
+55, and attempted writes to immutable
+
+93
+00:04:19,540 --> 00:04:27,000
+attributes, such as p, are rejected as we intended.
+

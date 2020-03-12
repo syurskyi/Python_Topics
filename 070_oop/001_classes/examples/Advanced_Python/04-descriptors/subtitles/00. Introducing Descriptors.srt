@@ -1,0 +1,316 @@
+1
+00:00:00,000 --> 00:00:03,007
+Hello. My name is Robert Smallshire.
+
+2
+00:00:03,007 --> 00:00:06,207
+Welcome to the fourth module of the
+
+3
+00:00:06,207 --> 00:00:08,288
+Advanced Python course. In this module
+
+4
+00:00:08,288 --> 00:00:11,510
+we'll investigate a feature of Python
+
+5
+00:00:11,510 --> 00:00:15,146
+you've been using, perhaps unknowingly,
+
+6
+00:00:15,146 --> 00:00:17,745
+called descriptors. Descriptors are the
+
+7
+00:00:17,745 --> 00:00:20,032
+mechanism used to implement properties in
+
+8
+00:00:20,032 --> 00:00:21,932
+Python. We covered properties thoroughly
+
+9
+00:00:21,932 --> 00:00:24,544
+in Python Beyond the Basics, but we'll
+
+10
+00:00:24,544 --> 00:00:27,398
+start here with a short recap. In Python
+
+11
+00:00:27,398 --> 00:00:30,643
+Beyond the Basics we showed how to create
+
+12
+00:00:30,643 --> 00:00:32,818
+properties using the property decorator.
+
+13
+00:00:32,818 --> 00:00:35,105
+In this module we'll dig deeper and show
+
+14
+00:00:35,105 --> 00:00:37,790
+how to create properties in the raw using
+
+15
+00:00:37,790 --> 00:00:40,302
+the property constructor. Then we'll show
+
+16
+00:00:40,302 --> 00:00:43,380
+how to create a specialized property by
+
+17
+00:00:43,380 --> 00:00:45,745
+defining a custom descriptor, which
+
+18
+00:00:45,745 --> 00:00:48,462
+implements the descriptor protocol. We'll
+
+19
+00:00:48,462 --> 00:00:51,227
+round off by demonstrating that there are
+
+20
+00:00:51,227 --> 00:00:52,845
+two categories of descriptor, data
+
+21
+00:00:52,845 --> 00:00:55,267
+descriptors and non-data descriptors, and
+
+22
+00:00:55,267 --> 00:00:58,644
+we'll show how these interact with
+
+23
+00:00:58,644 --> 00:01:01,522
+Python's somewhat complicated attribute
+
+24
+00:01:01,522 --> 00:01:04,140
+lookup rules. As promised, we'll start
+
+25
+00:01:04,140 --> 00:01:06,202
+with a very brief review of properties,
+
+26
+00:01:06,202 --> 00:01:09,217
+our entry point into the world of
+
+27
+00:01:09,217 --> 00:01:10,883
+descriptors. To explain descriptors we'll
+
+28
+00:01:10,883 --> 00:01:13,043
+be building this simple class to model
+
+29
+00:01:13,043 --> 00:01:15,914
+planets, such as Pluto here, focusing on
+
+30
+00:01:15,914 --> 00:01:18,882
+particular physical attributes, such as
+
+31
+00:01:18,882 --> 00:01:22,463
+size, mass, and temperature. Let's start
+
+32
+00:01:22,463 --> 00:01:24,970
+with this basic class definition for a
+
+33
+00:01:24,970 --> 00:01:27,731
+planet in planet. py consisting of little
+
+34
+00:01:27,731 --> 00:01:30,473
+more than an initializer. There are no
+
+35
+00:01:30,473 --> 00:01:33,059
+properties here yet. We'll add them in a
+
+36
+00:01:33,059 --> 00:01:35,188
+moment. Inside the planet initializer we
+
+37
+00:01:35,188 --> 00:01:37,477
+initialize the planet's name, its radius
+
+38
+00:01:37,477 --> 00:01:40,429
+in meters, its mass in kilograms, its
+
+39
+00:01:40,429 --> 00:01:43,809
+orbital period in seconds, and its surface
+
+40
+00:01:43,809 --> 00:01:46,351
+temperature in Kelvin. This Planet class
+
+41
+00:01:46,351 --> 00:01:48,890
+is simple enough to use. Here we create an
+
+42
+00:01:48,890 --> 00:01:50,548
+instance of planet called Pluto, which we
+
+43
+00:01:50,548 --> 00:01:55,241
+give a radius of 1184Km, together with the
+
+44
+00:01:55,241 --> 00:01:59,461
+correct values for its other physical
+
+45
+00:01:59,461 --> 00:02:02,288
+quantities. Of course, we can easily
+
+46
+00:02:02,288 --> 00:02:04,836
+retrieve the value of the radius_metres
+
+47
+00:02:04,836 --> 00:02:07,186
+attribute. Unfortunately, our code allows
+
+48
+00:02:07,186 --> 00:02:09,593
+us to represent nonsensical situations,
+
+49
+00:02:09,593 --> 00:02:12,270
+such as setting a negative radius, either
+
+50
+00:02:12,270 --> 00:02:14,521
+by directly mutating an attribute like
+
+51
+00:02:14,521 --> 00:02:17,767
+this, here we set the radius of Pluto to
+
+52
+00:02:17,767 --> 00:02:20,307
+-10, 000 meters or simply by passing
+
+53
+00:02:20,307 --> 00:02:23,224
+nonsense, such as a 0 mass and negative
+
+54
+00:02:23,224 --> 00:02:26,850
+orbital period or a temperature below
+
+55
+00:02:26,850 --> 00:02:30,553
+absolute 0 to the constructor. We already
+
+56
+00:02:30,553 --> 00:02:32,544
+know how to improve this sort of code, by
+
+57
+00:02:32,544 --> 00:02:34,474
+wrapping our instance attribute in
+
+58
+00:02:34,474 --> 00:02:36,832
+property getters and setters, which
+
+59
+00:02:36,832 --> 00:02:38,706
+perform validation by checking the
+
+60
+00:02:38,706 --> 00:02:40,865
+physical quantities are positive. We then
+
+61
+00:02:40,865 --> 00:02:42,840
+assigned through those properties in the
+
+62
+00:02:42,840 --> 00:02:44,702
+initializer to get validation on
+
+63
+00:02:44,702 --> 00:02:47,323
+constriction for free. Here we've wrapped
+
+64
+00:02:47,323 --> 00:02:50,362
+radius_metres, mass_kilograms, orbital or
+
+65
+00:02:50,362 --> 00:02:53,581
+period seconds, and surface temperature
+
+66
+00:02:53,581 --> 00:02:56,980
+kelvin in properties setters and getters.
+
+67
+00:02:56,980 --> 00:02:59,784
+From a robustness standpoint this code is
+
+68
+00:02:59,784 --> 00:03:03,070
+much better. For example, we can no longer
+
+69
+00:03:03,070 --> 00:03:05,380
+construct massless planets. Now we get a
+
+70
+00:03:05,380 --> 00:03:07,248
+value error with a helpful message telling
+
+71
+00:03:07,248 --> 00:03:10,220
+us that a mass in kilograms with a value
+
+72
+00:03:10,220 --> 00:03:12,817
+of 0 is not positive. The tradeoff,
+
+73
+00:03:12,817 --> 00:03:15,589
+though, is that the amount of code is
+
+74
+00:03:15,589 --> 00:03:17,799
+exploded, and worse, there's a lot of
+
+75
+00:03:17,799 --> 00:03:19,663
+duplicated code checking that all those
+
+76
+00:03:19,663 --> 00:03:23,456
+numeric attribute values are non-negative.
+
+77
+00:03:23,456 --> 00:03:25,266
+Descriptors will ultimately provide a way
+
+78
+00:03:25,266 --> 00:03:31,775
+out of this, but first we need to do a
+
+79
+00:03:31,775 --> 00:03:34,000
+little more unraveling of properties to aid our understanding.
+

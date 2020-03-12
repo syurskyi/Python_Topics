@@ -1,0 +1,172 @@
+1
+00:00:01,098 --> 00:00:03,613
+You need to take care when combining
+
+2
+00:00:03,613 --> 00:00:05,429
+virtual subclass registration with the
+
+3
+00:00:05,429 --> 00:00:07,275
+dunder subclasshook technique because the
+
+4
+00:00:07,275 --> 00:00:09,655
+results of dunder subclasshook takes
+
+5
+00:00:09,655 --> 00:00:12,836
+precedence over the subclass registry.
+
+6
+00:00:12,836 --> 00:00:15,370
+Returning true or false from dunder
+
+7
+00:00:15,370 --> 00:00:17,905
+subclasshook is taken as a definite
+
+8
+00:00:17,905 --> 00:00:20,175
+answer. If you also want registration to
+
+9
+00:00:20,175 --> 00:00:22,023
+be accounted for you should return
+
+10
+00:00:22,023 --> 00:00:24,986
+NotImplemented to indicate not sure. To
+
+11
+00:00:24,986 --> 00:00:29,589
+see this in action let's add a lightsaber,
+
+12
+00:00:29,589 --> 00:00:35,327
+which has no sharpen method, to our
+
+13
+00:00:35,327 --> 00:00:38,148
+example. This class won't satisfy the
+
+14
+00:00:38,148 --> 00:00:40,549
+dunder subclasshook test we defined in
+
+15
+00:00:40,549 --> 00:00:43,734
+Sword, but we still want it identified as
+
+16
+00:00:43,734 --> 00:00:46,620
+a virtual subclass of sort, so we've
+
+17
+00:00:46,620 --> 00:00:49,750
+registered it using the decorator form of
+
+18
+00:00:49,750 --> 00:00:52,114
+Sword. register. Even though we've
+
+19
+00:00:52,114 --> 00:00:54,562
+registered LightSaber with Sword the
+
+20
+00:00:54,562 --> 00:00:57,622
+subclass test returns false. To fix this
+
+21
+00:00:57,622 --> 00:01:00,194
+we need to ensure that dunder subclasshook
+
+22
+00:01:00,194 --> 00:01:02,882
+never returns false because doing so
+
+23
+00:01:02,882 --> 00:01:05,323
+causes the dunder subclass check
+
+24
+00:01:05,323 --> 00:01:09,250
+implementation in ABCMeta to skip the
+
+25
+00:01:09,250 --> 00:01:12,473
+check for registered subclasses. Instead,
+
+26
+00:01:12,473 --> 00:01:16,708
+in the case of a negative result we should
+
+27
+00:01:16,708 --> 00:01:19,291
+return NotImplemented. With this change in
+
+28
+00:01:19,291 --> 00:01:21,343
+place we should exploit shortcut
+
+29
+00:01:21,343 --> 00:01:23,396
+evaluation of the logical operators.
+
+30
+00:01:23,396 --> 00:01:25,865
+Subclass detection now works as expected
+
+31
+00:01:25,865 --> 00:01:28,123
+for implicitly detected subclasses,
+
+32
+00:01:28,123 --> 00:01:32,220
+explicitly registered subclasses, and
+
+33
+00:01:32,220 --> 00:01:34,749
+non-subclasses. Do bear in mind, though,
+
+34
+00:01:34,749 --> 00:01:36,555
+that this somewhat contrived example is
+
+35
+00:01:36,555 --> 00:01:38,879
+designed to demonstrate that you should
+
+36
+00:01:38,879 --> 00:01:41,215
+take care with subclass registration. How
+
+37
+00:01:41,215 --> 00:01:44,005
+useful is our virtual base class, Sword,
+
+38
+00:01:44,005 --> 00:01:46,588
+now? The answer is not very because being
+
+39
+00:01:46,588 --> 00:01:49,371
+an instance of Sword is no longer a useful
+
+40
+00:01:49,371 --> 00:01:51,469
+predicate for the object in question, as
+
+41
+00:01:51,469 --> 00:01:53,669
+we can't guarantee the presence of the
+
+42
+00:01:53,669 --> 00:01:55,621
+sharpen method, which was, if you'll
+
+43
+00:01:55,621 --> 00:02:02,000
+excuse the pun, the whole point of the sword.
+

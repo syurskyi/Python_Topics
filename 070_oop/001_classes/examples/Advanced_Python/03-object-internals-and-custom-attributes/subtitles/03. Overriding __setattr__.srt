@@ -1,0 +1,40 @@
+1
+00:00:01,758 --> 00:00:04,632
+We can prevent this by overriding dunder
+
+2
+00:00:04,632 --> 00:00:07,380
+setattr too to intercept attempts to write
+
+3
+00:00:07,380 --> 00:00:09,960
+to our attributes. In this case, dunder
+
+4
+00:00:09,960 --> 00:00:12,624
+setattr is configured to simply raise an
+
+5
+00:00:12,624 --> 00:00:14,566
+AttributeError with a message explaining
+
+6
+00:00:14,566 --> 00:00:17,375
+that we're not allowed to set attributes
+
+7
+00:00:17,375 --> 00:00:22,946
+on immutable objects of this class. This
+
+8
+00:00:22,946 --> 00:00:26,427
+successfully prevents writing to any
+
+9
+00:00:26,427 --> 00:00:28,525
+attribute. We'll return to dunder setattr
+
+10
+00:00:28,525 --> 00:00:37,000
+shortly, but first we need to demonstrate another problem with our dunder getattr.
+

@@ -1,0 +1,92 @@
+1
+00:00:01,496 --> 00:00:05,447
+Now let's look at customizing attribute
+
+2
+00:00:05,447 --> 00:00:07,301
+deletion. Deleting attributes is something
+
+3
+00:00:07,301 --> 00:00:09,395
+that is very rarely seen in Python,
+
+4
+00:00:09,395 --> 00:00:12,738
+although it is possible. Here, using a
+
+5
+00:00:12,738 --> 00:00:16,138
+vector, v, with components p=1 and q=2,
+
+6
+00:00:16,138 --> 00:00:20,184
+our vector class also allows us to remove
+
+7
+00:00:20,184 --> 00:00:22,988
+attributes by calling delattr. We rather
+
+8
+00:00:22,988 --> 00:00:24,940
+mischievously delete the _p attribute
+
+9
+00:00:24,940 --> 00:00:28,382
+using a call to delattr and the _q
+
+10
+00:00:28,382 --> 00:00:31,201
+attribute by using the built-in del
+
+11
+00:00:31,201 --> 00:00:34,442
+statement. This leaves us with a vector
+
+12
+00:00:34,442 --> 00:00:37,209
+with no components. Although a client is
+
+13
+00:00:37,209 --> 00:00:39,522
+unlikely to attempt this inadvertently, we
+
+14
+00:00:39,522 --> 00:00:43,032
+can prevent it by overriding dunder
+
+15
+00:00:43,032 --> 00:00:45,693
+delattr. In a similar manner to our dunder
+
+16
+00:00:45,693 --> 00:00:47,528
+setattr, our dunder delattr simply raises
+
+17
+00:00:47,528 --> 00:00:49,639
+an AttributeError with a message informing
+
+18
+00:00:49,639 --> 00:00:51,920
+the client that the operation is
+
+19
+00:00:51,920 --> 00:00:54,543
+forbidden. Here's how that code behaves
+
+20
+00:00:54,543 --> 00:00:57,570
+when trying to delete either public or
+
+21
+00:00:57,570 --> 00:01:00,689
+private attributes using a vector, v, with
+
+22
+00:01:00,689 --> 00:01:04,512
+components p=9 and q=12. Deleting q using
+
+23
+00:01:04,512 --> 00:01:14,000
+the del statement with v. q causes an AttributeError to be raised.
+

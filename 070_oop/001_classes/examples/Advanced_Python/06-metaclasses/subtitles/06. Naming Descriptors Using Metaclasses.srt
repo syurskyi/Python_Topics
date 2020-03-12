@@ -1,0 +1,308 @@
+1
+00:00:01,409 --> 00:00:03,270
+For our next metaclass example let's
+
+2
+00:00:03,270 --> 00:00:06,489
+return to the Planet example we used in a
+
+3
+00:00:06,489 --> 00:00:08,753
+previous course module to illustrate
+
+4
+00:00:08,753 --> 00:00:11,132
+descriptors. Here's a reminder of the code
+
+5
+00:00:11,132 --> 00:00:13,785
+we ended up with. Recall that we
+
+6
+00:00:13,785 --> 00:00:16,522
+implemented a new descriptor type called
+
+7
+00:00:16,522 --> 00:00:19,749
+Positive, which would only emit positive
+
+8
+00:00:19,749 --> 00:00:22,333
+numeric values. This saved a lot of
+
+9
+00:00:22,333 --> 00:00:24,399
+boilerplate code in the definition of our
+
+10
+00:00:24,399 --> 00:00:26,434
+Planet class, but we lost an important
+
+11
+00:00:26,434 --> 00:00:28,574
+capability along the way because there is
+
+12
+00:00:28,574 --> 00:00:31,773
+no way for a descriptor instance to know
+
+13
+00:00:31,773 --> 00:00:34,237
+to which class attribute it has been
+
+14
+00:00:34,237 --> 00:00:36,544
+bound. One of the instances of positive is
+
+15
+00:00:36,544 --> 00:00:39,342
+bound to Planet. radius_metres, but it has
+
+16
+00:00:39,342 --> 00:00:42,904
+no way of knowing that. The default Python
+
+17
+00:00:42,904 --> 00:00:45,138
+machinery for processing class definitions
+
+18
+00:00:45,138 --> 00:00:48,500
+just doesn't set up that association. The
+
+19
+00:00:48,500 --> 00:00:51,650
+shortcoming is revealed when we trigger a
+
+20
+00:00:51,650 --> 00:00:54,172
+value error by trying to assign a
+
+21
+00:00:54,172 --> 00:00:56,352
+non-positive value to one of the
+
+22
+00:00:56,352 --> 00:00:59,306
+attributes. Here we try to give the planet
+
+23
+00:00:59,306 --> 00:01:02,364
+Mercury a nonsensical negative mass of
+
+24
+00:01:02,364 --> 00:01:06,454
+-10, 000. The error message doesn't, and
+
+25
+00:01:06,454 --> 00:01:10,741
+in fact, can't tell us which attribute
+
+26
+00:01:10,741 --> 00:01:13,509
+triggered the exception. Now we'll show
+
+27
+00:01:13,509 --> 00:01:15,680
+how we can modify the class creation
+
+28
+00:01:15,680 --> 00:01:17,730
+machinery by defining a metaclass which
+
+29
+00:01:17,730 --> 00:01:20,232
+can intervene in the process of defining
+
+30
+00:01:20,232 --> 00:01:24,051
+the Planet class in order to give each
+
+31
+00:01:24,051 --> 00:01:26,869
+descriptor instance the right name. We'll
+
+32
+00:01:26,869 --> 00:01:30,321
+start by introducing a new base class for
+
+33
+00:01:30,321 --> 00:01:33,258
+our descriptors called Named. This is very
+
+34
+00:01:33,258 --> 00:01:36,488
+simple and just has name as a public
+
+35
+00:01:36,488 --> 00:01:37,880
+instance attribute. The constructor
+
+36
+00:01:37,880 --> 00:01:40,214
+defines a default value of none because we
+
+37
+00:01:40,214 --> 00:01:42,918
+won't be in a position to assign the
+
+38
+00:01:42,918 --> 00:01:45,111
+attribute value until after the descriptor
+
+39
+00:01:45,111 --> 00:01:48,912
+object has been constructed. We'll modify
+
+40
+00:01:48,912 --> 00:01:52,211
+our existing positive descriptor, so it
+
+41
+00:01:52,211 --> 00:01:55,473
+becomes a subclass of named, and therefore
+
+42
+00:01:55,473 --> 00:01:58,306
+gains the name attribute. Again, the
+
+43
+00:01:58,306 --> 00:02:01,213
+constructor arguments define a default of
+
+44
+00:02:01,213 --> 00:02:04,020
+none. We've modified the argument listed,
+
+45
+00:02:04,020 --> 00:02:06,993
+dunder init, ensured that the super class
+
+46
+00:02:06,993 --> 00:02:09,590
+initializer is called, and made use of the
+
+47
+00:02:09,590 --> 00:02:13,077
+new name attribute in the error messages
+
+48
+00:02:13,077 --> 00:02:17,048
+raised by dunder set and dunder delete.
+
+49
+00:02:17,048 --> 00:02:19,699
+Now we need a metaclass which can detect
+
+50
+00:02:19,699 --> 00:02:21,807
+the presence of descriptors which are
+
+51
+00:02:21,807 --> 00:02:24,154
+named, and assign the class attribute
+
+52
+00:02:24,154 --> 00:02:26,642
+names to them. Here is
+
+53
+00:02:26,642 --> 00:02:29,271
+DescriptorNamingMeta. Again, this is
+
+54
+00:02:29,271 --> 00:02:31,837
+fairly straightforward. In dunder new we
+
+55
+00:02:31,837 --> 00:02:34,029
+iterate over the names and attributes in
+
+56
+00:02:34,029 --> 00:02:36,236
+the namespace dictionary, and if the
+
+57
+00:02:36,236 --> 00:02:38,888
+attribute is an instance of named we
+
+58
+00:02:38,888 --> 00:02:42,838
+assign the name of the current item to its
+
+59
+00:02:42,838 --> 00:02:45,213
+public name attribute. Having modified the
+
+60
+00:02:45,213 --> 00:02:48,034
+contents of the namespace we then call the
+
+61
+00:02:48,034 --> 00:02:51,057
+super class implementation of dunder new
+
+62
+00:02:51,057 --> 00:02:54,796
+to actually allocate the new class object.
+
+63
+00:02:54,796 --> 00:02:56,720
+The only change we need to make to our
+
+64
+00:02:56,720 --> 00:02:58,668
+Planet class is to refer to the metaclass
+
+65
+00:02:58,668 --> 00:03:02,284
+on the opening line. There's no need for
+
+66
+00:03:02,284 --> 00:03:05,776
+us to modify the uses of our positive
+
+67
+00:03:05,776 --> 00:03:07,881
+descriptor. The optional name argument
+
+68
+00:03:07,881 --> 00:03:10,068
+will default to none when the class
+
+69
+00:03:10,068 --> 00:03:11,833
+definition is first read before the
+
+70
+00:03:11,833 --> 00:03:16,566
+metaclass dunder new is invoked. By trying
+
+71
+00:03:16,566 --> 00:03:20,556
+to set a non-positive mass for the planet
+
+72
+00:03:20,556 --> 00:03:22,805
+Mercury we can see that each descriptor
+
+73
+00:03:22,805 --> 00:03:24,967
+object now knows the name of the attribute
+
+74
+00:03:24,967 --> 00:03:27,722
+to which it has been bound, so it can emit
+
+75
+00:03:27,722 --> 00:03:30,581
+a much more helpful diagnostic message,
+
+76
+00:03:30,581 --> 00:03:33,008
+such as Attribute value mass_kilograms
+
+77
+00:03:33,008 --> 00:03:43,000
+-10000 is not positive, allowing us to much more easily track down the problem.
+
