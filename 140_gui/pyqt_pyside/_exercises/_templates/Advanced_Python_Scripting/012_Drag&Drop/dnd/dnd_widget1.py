@@ -1,86 +1,86 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
-
-import os
-
-icon = os.path.join(os.path.dirname(__file__), 'drag.png')
-
-class listWidgetClass(QListWidget):
-    def __init__(self):
-        super(listWidgetClass, self).__init__()
-        self.setWindowFlags(Qt.WindowStaysOnTopHint)      #okno bydet vsegda poverh drygih okon
-        self.setDragDropMode(QAbstractItemView.DragDrop)
-        self.setSelectionMode(QAbstractItemView.ExtendedSelection)
-        self.files = []
-
-    def dropEvent(self, event):
-        mimedata = event.mimeData()
-        if mimedata.hasUrls():
-            for f in mimedata.urls():
-                self.addFile(f.toLocalFile())
-
-    def dragEnterEvent(self, event):
-        if event.source() is self:
-            event.ignore()
-        else:
-            mimedata = event.mimeData()
-            if mimedata.hasUrls():
-                event.accept()
-            else:
-                event.ignore()
-
-    def dragMoveEvent(self, event):
-        if event.source() is self:
-            event.ignore()
-        else:
-            mimedata = event.mimeData()
-            if mimedata.hasUrls():
-                event.accept()
-            else:
-                event.ignore()
-
-    def startDrag(self, dropAction):
-        drag = QDrag(self)
-        mimedata = QMimeData()
-        url = []
-        for i in self.selectedItems():
-            url.append(i.data(Qt.UserRole))
-        mimedata.setUrls([QUrl.fromLocalFile(x) for x in url])
-        drag.setMimeData(mimedata)
-        pix = QPixmap(icon)
-        drag.setPixmap(pix)
-        r = drag.exec_()
-        if r == Qt.DropAction.MoveAction:
-            self.deleteSelected()
-
-    def addFile(self, path):
-        if not path in self.files:
-            item = QListWidgetItem(self)
-            item.setText(os.path.basename(path))
-            item.setData(Qt.UserRole, path)
-            self.files.append(path)
-
-    def deleteSelected(self):
-        for s in self.selectedItems():
-            self.files.remove(s.data(32))
-            self.takeItem(self.indexFromItem(s).row())
-
-    def mousePressEvent(self, event):
-        if event.button() == Qt.MouseButton.RightButton:
-            pass
-        elif event.button() == Qt.MouseButton.LeftButton:
-            self.setDragDropMode(QAbstractItemView.NoDragDrop)
-            super(listWidgetClass, self).mousePressEvent(event)
-        else:
-            self.setDragDropMode(QAbstractItemView.DragDrop)
-            super(listWidgetClass, self).mousePressEvent(event)
-
-    def mouseReleaseEvent(self, event):
-        self.setDragDropMode(QAbstractItemView.DragDrop)
-        super(listWidgetClass, self).mouseReleaseEvent(event)
-
-if __name__ == '__main__':
-    app = QApplication([])
-    w = listWidgetClass()
-    w.show()
-    app.exec_()
+# ____ __.__ ______ _
+# ____ __.__ ______ _
+#
+# ______ __
+#
+# icon _ __.pa__.j... __.pa__.d..n.. -f  drag.png
+#
+# c_ listWidgetClass QLW..
+#     ___ -
+#         s____ ? ?. -
+#         sWF.. __.WSOTH..                     #okno bydet vsegda poverh drygih okon
+#         sDDM.. QAIV__.DD..
+#         sSM.. QAbIV__.ES..
+#         files _    # list
+#
+#     ___ dropEvent event
+#         mimedata _ e__.mD..
+#         __ ?.hU..
+#             ___ f __ ?.u..
+#                 aF.. ?.tLF..
+#
+#     ___ dragEnterEvent event
+#         __ ?.so.. __ ?
+#             ?.ig..
+#         ____
+#             mimedata _ ?.mD..
+#             __ ?.hU..
+#                 ?.a..
+#             ____
+#                 ?.i..
+#
+#     ___ dragMoveEvent event
+#         __ ?.so.. __ ?
+#             ?.i..
+#         ____
+#             mimedata _ ?.mD..
+#             __ ?.hU..
+#                 ?.a..
+#             ____
+#                 ?.i..
+#
+#     ___ startDrag dropAction
+#         drag _ QD.. ?
+#         mimedata _ QMD..
+#         url _    # list
+#         ___ i __ sI..
+#             ?.ap.. ?.da.. __.UR..
+#         m___.sU.. |QU__.fLF.. x ___ ? __ u..
+#         d___.sMD.. ?
+#         pix _ QPi.. i..
+#         d___.sP.. ?
+#         r _ d___.e..
+#         __ r __ __.DA__.MA..
+#             dS..
+#
+#     ___ addFile path
+#         __ no. pa__ __ files
+#             item _ QLWI.. ?
+#             ?.sT.. __.pa__.b.. pa__
+#             ?.sD.. __.UR.. pa__
+#             ?.ap.. pa__
+#
+#     ___ deleteSelected
+#         ___ s __ sI..
+#             f__.r.. ?.d.. 32
+#             tI.. iFI.. ?.r..
+#
+#     ___ mousePressEvent event
+#         __ ?.b.. __ __.MB__.RB..
+#             p..
+#         ____ ?.b.. __ __.MB__.LB..
+#             sDDM.. QAIV__.NDD..
+#             s___ ?  ?.mPE.. ?
+#         ____
+#             sDDM.. QAIV__.DD..
+#             s___ ? ?.mPE.. ?
+#
+#     ___ mouseReleaseEvent ?
+#         sDDM.. QAIV__.DD..
+#         s__ ? ?.mRE.. ?
+#
+# __ ______ __ ______
+#     app _ ?
+#     w _ ?
+#     ?.s..
+#     ?.e...
