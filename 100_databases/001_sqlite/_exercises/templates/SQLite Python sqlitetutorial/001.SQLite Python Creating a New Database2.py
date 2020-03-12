@@ -1,22 +1,22 @@
-# The following program creates an SQLite database in the memory.
-import sqlite3
-from sqlite3 import Error
-
-
-def create_connection():
-    """ create a database connection to a database that resides
-        in the memory
-    """
-    conn = None;
-    try:
-        conn = sqlite3.connect(':memory:')
-        print(sqlite3.version)
-    except Error as e:
-        print(e)
-    finally:
-        if conn:
-            conn.close()
-
-
-if __name__ == '__main__':
-    create_connection()
+# # The following program creates an SQLite database in the memory.
+# ______ _3
+# ____ _3 ______ E..
+#
+#
+# ___ create_connection
+#     """ create a database connection to a database that resides
+#         in the memory
+#     """
+#     conn _ N..
+#     ___
+#         ? _ _3.c.. *:m...
+#         print _3.v..
+#     _______ E.. __ e
+#         print(e)
+#     ________
+#         __ ?
+#             ?.c..
+#
+#
+# __ _______ __ _____
+#     ?
