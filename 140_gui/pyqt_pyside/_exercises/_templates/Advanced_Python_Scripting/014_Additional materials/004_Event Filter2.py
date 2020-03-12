@@ -1,27 +1,27 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
-
-class simpleWidget(QWidget):
-    def __init__(self):
-        super(simpleWidget, self).__init__()
-        self.label = QLabel('OUT')
-        ly.addWidget(self.label)
-        self.e = eventFilterClass()
-        self.installEventFlter()
-
-    def eventFilter(self, obj, event):
-        # print event
-        # print event.type()
-        if event.type() == QEvent.Enter:
-            self.label.setText('IN')
-            return True
-        elif event.type() == QEvent.Leave:
-            self.label.setText('OUT')
-            return True
-        return False
-
-if __name__ == '__main':
-    app = QApplication([])
-    w = simpleWidget()
-    w.show()
-    app.exec_()
+# ____ __.__ ______ _
+# ____ __.__ ______ _
+#
+# c_ simpleWidget QW..
+#     ___ -
+#         s__ ? ?. -
+#         label _ QL.. *OUT
+#         l_.aW.. ?
+#         e _ eFC..
+#         iEF..
+#
+#     ___ eventFilter  obj event
+#         # print event
+#         # print event.type()
+#         __ e___.ty.. __ QE__.E..
+#             l__.sT.. *IN
+#             r_ T..
+#         ____ e___.ty.. __ QE__.L...
+#             l__.sT.. *OUT
+#             r__ T..
+#         r___ F..
+#
+# __ ______ __ ______
+#     app _ ?
+#     w _ ?
+#     ?.s..
+#     ?.e..
