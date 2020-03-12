@@ -1,0 +1,272 @@
+1
+00:00:00,000 --> 00:00:02,539
+Hello. My name is Robert Smallshire.
+
+2
+00:00:02,539 --> 00:00:05,386
+Welcome to the fifth module of the
+
+3
+00:00:05,386 --> 00:00:07,242
+Advanced Python course. In this course
+
+4
+00:00:07,242 --> 00:00:09,741
+module we'll be taking a deep dive into
+
+5
+00:00:09,741 --> 00:00:12,281
+exactly what happens when we create a new
+
+6
+00:00:12,281 --> 00:00:14,204
+object. With this knowledge in hand we'll
+
+7
+00:00:14,204 --> 00:00:16,352
+be able to exercise fine control over
+
+8
+00:00:16,352 --> 00:00:19,605
+instance creation, which allows us to
+
+9
+00:00:19,605 --> 00:00:22,857
+customize Python objects in powerful ways.
+
+10
+00:00:22,857 --> 00:00:26,543
+So, what does happen when you create an
+
+11
+00:00:26,543 --> 00:00:28,284
+object? Consider this simple class which
+
+12
+00:00:28,284 --> 00:00:30,153
+models the coordinates on a chess board
+
+13
+00:00:30,153 --> 00:00:33,154
+consisting of a file letter from a to h
+
+14
+00:00:33,154 --> 00:00:36,775
+inclusive, and a rank number from one to
+
+15
+00:00:36,775 --> 00:00:40,205
+eight inclusive. The class implements an
+
+16
+00:00:40,205 --> 00:00:42,789
+immutable value type. The initializer
+
+17
+00:00:42,789 --> 00:00:44,962
+establishes the invariance, and the
+
+18
+00:00:44,962 --> 00:00:47,302
+property accessors prevent inadvertent
+
+19
+00:00:47,302 --> 00:00:50,979
+modification of the encapsulated data.
+
+20
+00:00:50,979 --> 00:00:53,791
+It's easy to think of dunder init as the
+
+21
+00:00:53,791 --> 00:00:55,200
+construct implementation, but let's look
+
+22
+00:00:55,200 --> 00:00:57,291
+closely at what happens when we create an
+
+23
+00:00:57,291 --> 00:00:59,747
+instance of chess coordinate by calling
+
+24
+00:00:59,747 --> 00:01:04,142
+the constructor. Here we create an
+
+25
+00:01:04,142 --> 00:01:08,428
+instance called white_queen at coordinate
+
+26
+00:01:08,428 --> 00:01:12,583
+(d, 4). We'll step in with the debugger,
+
+27
+00:01:12,583 --> 00:01:15,838
+pausing on the first line of dunder init.
+
+28
+00:01:15,838 --> 00:01:17,885
+This much should already be evident from
+
+29
+00:01:17,885 --> 00:01:19,730
+the signature of dunder init, which
+
+30
+00:01:19,730 --> 00:01:22,408
+accepts self as its first argument, but
+
+31
+00:01:22,408 --> 00:01:25,169
+the object referred to by self already
+
+32
+00:01:25,169 --> 00:01:28,451
+exists. That is to say, the object has
+
+33
+00:01:28,451 --> 00:01:31,252
+already been constructed, and the job of
+
+34
+00:01:31,252 --> 00:01:34,026
+dunder init really is just to initialize
+
+35
+00:01:34,026 --> 00:01:36,364
+the object. At this juncture our debugger
+
+36
+00:01:36,364 --> 00:01:37,908
+is having difficulty displaying the
+
+37
+00:01:37,908 --> 00:01:40,825
+uninitialized object because our dunder
+
+38
+00:01:40,825 --> 00:01:42,949
+repr implementation, quite reasonably,
+
+39
+00:01:42,949 --> 00:01:45,821
+expects that the object has been
+
+40
+00:01:45,821 --> 00:01:48,179
+initialized. However, we can add a watch
+
+41
+00:01:48,179 --> 00:01:50,998
+in the debugger for type self to see that
+
+42
+00:01:50,998 --> 00:01:54,347
+self already has the required type, and
+
+43
+00:01:54,347 --> 00:01:58,332
+self. dunder dict to see that the instance
+
+44
+00:01:58,332 --> 00:02:02,230
+dictionary is empty. As we continue to
+
+45
+00:02:02,230 --> 00:02:05,302
+step through the initializer we can watch
+
+46
+00:02:05,302 --> 00:02:07,754
+as the instance dictionary is populated by
+
+47
+00:02:07,754 --> 00:02:11,101
+assignments to attributes of self. Behind
+
+48
+00:02:11,101 --> 00:02:14,141
+the scenes, object. dunder setattr is
+
+49
+00:02:14,141 --> 00:02:17,509
+being called. Note also that dunder init
+
+50
+00:02:17,509 --> 00:02:20,559
+doesn't return anything. It simply mutates
+
+51
+00:02:20,559 --> 00:02:25,036
+the instance it has been given. So if
+
+52
+00:02:25,036 --> 00:02:29,319
+dunder init isn't responsible for creating
+
+53
+00:02:29,319 --> 00:02:33,594
+the instance, what is? If we look at the
+
+54
+00:02:33,594 --> 00:02:35,298
+special methods of ChessCoordinate using a
+
+55
+00:02:35,298 --> 00:02:39,105
+call to dir we can see one called dunder
+
+56
+00:02:39,105 --> 00:02:41,882
+new. We haven't defined dunder new
+
+57
+00:02:41,882 --> 00:02:44,218
+ourselves, but we do inherit an
+
+58
+00:02:44,218 --> 00:02:46,165
+implementation from the universal base
+
+59
+00:02:46,165 --> 00:02:49,680
+class object, so it is the base class
+
+60
+00:02:49,680 --> 00:02:52,099
+implementation of dunder new, which is
+
+61
+00:02:52,099 --> 00:02:54,081
+responsible for allocating our object in
+
+62
+00:02:54,081 --> 00:02:56,605
+this case. A simple test demonstrates that
+
+63
+00:02:56,605 --> 00:02:59,343
+ChessCoordinate. dunder new is in fact the
+
+64
+00:02:59,343 --> 00:03:02,865
+very same method as object. dunder new,
+
+65
+00:03:02,865 --> 00:03:06,233
+but what is the signature of dunder new?
+
+66
+00:03:06,233 --> 00:03:08,224
+Don't bother looking in the help because,
+
+67
+00:03:08,224 --> 00:03:10,676
+frankly, the answer isn't very helpful. We
+
+68
+00:03:10,676 --> 00:03:18,000
+have all the answers though, and we'll be overriding dunder new to demonstrate.
+

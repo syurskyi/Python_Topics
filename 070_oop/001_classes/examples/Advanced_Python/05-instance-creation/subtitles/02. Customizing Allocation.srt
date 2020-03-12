@@ -1,0 +1,352 @@
+1
+00:00:01,446 --> 00:00:04,427
+Now let's look at customizing allocation
+
+2
+00:00:04,427 --> 00:00:07,306
+by overriding dunder new. We've shown the
+
+3
+00:00:07,306 --> 00:00:09,076
+mechanics of overriding dunder new. We
+
+4
+00:00:09,076 --> 00:00:11,063
+accept the class type and the constructor
+
+5
+00:00:11,063 --> 00:00:13,201
+arguments and return an instance of the
+
+6
+00:00:13,201 --> 00:00:15,207
+correct type. Ultimately, the only means
+
+7
+00:00:15,207 --> 00:00:18,795
+we have of creating new instances is by
+
+8
+00:00:18,795 --> 00:00:21,908
+calling object. dunder new. This is all
+
+9
+00:00:21,908 --> 00:00:24,691
+well and good, but what are some practical
+
+10
+00:00:24,691 --> 00:00:26,845
+uses? One use for controlling instance
+
+11
+00:00:26,845 --> 00:00:29,417
+creation is a technique called interning,
+
+12
+00:00:29,417 --> 00:00:33,244
+which can dramatically reduce memory
+
+13
+00:00:33,244 --> 00:00:34,905
+consumption. We'll demonstrate by
+
+14
+00:00:34,905 --> 00:00:36,696
+extending our program to allocate some
+
+15
+00:00:36,696 --> 00:00:38,879
+chess boards in the start of game
+
+16
+00:00:38,879 --> 00:00:40,822
+configuration. In our implementation each
+
+17
+00:00:40,822 --> 00:00:43,266
+board is represented as a dictionary
+
+18
+00:00:43,266 --> 00:00:46,363
+mapping the name of the piece to one of
+
+19
+00:00:46,363 --> 00:00:48,722
+our ChessCoordinate objects. For fun we've
+
+20
+00:00:48,722 --> 00:00:51,375
+used Unicode chess code points to
+
+21
+00:00:51,375 --> 00:00:54,291
+represent our pieces. In our program a
+
+22
+00:00:54,291 --> 00:00:57,072
+string comprised of white queen and white
+
+23
+00:00:57,072 --> 00:00:59,899
+rook means white queen's rook, and a
+
+24
+00:00:59,899 --> 00:01:02,337
+string composed of black king, black
+
+25
+00:01:02,337 --> 00:01:06,081
+bishop, black pawn means black king's
+
+26
+00:01:06,081 --> 00:01:09,101
+bishop's pawn. We need to be this specific
+
+27
+00:01:09,101 --> 00:01:11,157
+because, remember, dictionaries require
+
+28
+00:01:11,157 --> 00:01:14,879
+that keys are distinct. Our revised
+
+29
+00:01:14,879 --> 00:01:17,442
+program now has a starting board function
+
+30
+00:01:17,442 --> 00:01:20,902
+and main creates, for the time being, a
+
+31
+00:01:20,902 --> 00:01:23,390
+single search board. We've also removed
+
+32
+00:01:23,390 --> 00:01:25,637
+the various print statements from our
+
+33
+00:01:25,637 --> 00:01:28,090
+dunder new and dunder init functions. If
+
+34
+00:01:28,090 --> 00:01:31,114
+we create a single chess board this way a
+
+35
+00:01:31,114 --> 00:01:33,487
+peek in activity monitor on our Mac shows
+
+36
+00:01:33,487 --> 00:01:37,967
+that Python is allocated about 17. 1Mb of
+
+37
+00:01:37,967 --> 00:01:42,083
+memory. Creating 10, 000 chessboards
+
+38
+00:01:42,083 --> 00:01:46,717
+utilizes some 84. 2Mb of memory to store
+
+39
+00:01:46,717 --> 00:01:49,705
+the 320, 000 instances of ChessCoordinate
+
+40
+00:01:49,705 --> 00:01:51,673
+contained by the 10, 000 dictionaries that
+
+41
+00:01:51,673 --> 00:01:54,685
+must have been created to represent all
+
+42
+00:01:54,685 --> 00:01:57,891
+the boards. Bear in mind, though, that
+
+43
+00:01:57,891 --> 00:02:00,452
+there are only 64 distinct positions on a
+
+44
+00:02:00,452 --> 00:02:02,289
+chess board, and given that our
+
+45
+00:02:02,289 --> 00:02:03,704
+ChessCoordinate objects are deliberately
+
+46
+00:02:03,704 --> 00:02:06,685
+immutable value types, we should never
+
+47
+00:02:06,685 --> 00:02:09,732
+need more than 64 instances. In our
+
+48
+00:02:09,732 --> 00:02:11,703
+specific case, we should never need more
+
+49
+00:02:11,703 --> 00:02:14,428
+than the 32 positions occupied by the
+
+50
+00:02:14,428 --> 00:02:17,834
+pieces in their initial places. Let's put
+
+51
+00:02:17,834 --> 00:02:20,058
+in place updated definitions for dunder
+
+52
+00:02:20,058 --> 00:02:22,797
+new and dunder init, which achieve just
+
+53
+00:02:22,797 --> 00:02:25,311
+that. We're now using named position
+
+54
+00:02:25,311 --> 00:02:27,709
+arguments for the file and rank arguments
+
+55
+00:02:27,709 --> 00:02:29,893
+to dunder new, and we'll move the
+
+56
+00:02:29,893 --> 00:02:34,872
+validation logic from dunder init to
+
+57
+00:02:34,872 --> 00:02:37,666
+dunder new. Once the arguments are
+
+58
+00:02:37,666 --> 00:02:39,935
+validated we use them to create a single
+
+59
+00:02:39,935 --> 00:02:42,484
+tuple object from file and rank to use as
+
+60
+00:02:42,484 --> 00:02:45,242
+a key, and check if there is an entry
+
+61
+00:02:45,242 --> 00:02:48,703
+against this key tuple in a dictionary
+
+62
+00:02:48,703 --> 00:02:51,692
+called _interned we've attached as a class
+
+63
+00:02:51,692 --> 00:02:54,703
+attribute. Only if the tuple key is not
+
+64
+00:02:54,703 --> 00:02:58,070
+present in the dictionary do we allocate a
+
+65
+00:02:58,070 --> 00:03:00,635
+new instance by calling object. dunder
+
+66
+00:03:00,635 --> 00:03:02,745
+new. We then configure the new instance
+
+67
+00:03:02,745 --> 00:03:05,464
+during the remainder of the work that used
+
+68
+00:03:05,464 --> 00:03:10,124
+to be done in dunder init, and insert the
+
+69
+00:03:10,124 --> 00:03:12,872
+newly minted instance into the dictionary.
+
+70
+00:03:12,872 --> 00:03:15,869
+Of course, the instance we return is
+
+71
+00:03:15,869 --> 00:03:18,996
+whichever instance we have just or
+
+72
+00:03:18,996 --> 00:03:21,602
+previously inserted into the dictionary.
+
+73
+00:03:21,602 --> 00:03:23,589
+Our dunder init method is now empty and
+
+74
+00:03:23,589 --> 00:03:26,232
+can, in fact, be removed entirely. With
+
+75
+00:03:26,232 --> 00:03:29,554
+these changes in place allocating 10, 000
+
+76
+00:03:29,554 --> 00:03:32,029
+boards takes much less memory than
+
+77
+00:03:32,029 --> 00:03:34,936
+previously. In fact, we're down to 37.
+
+78
+00:03:34,936 --> 00:03:37,847
+1Mb, less than half what we required
+
+79
+00:03:37,847 --> 00:03:39,637
+previously. Remember that even though
+
+80
+00:03:39,637 --> 00:03:41,697
+we've interned the ChessCoordinate type we
+
+81
+00:03:41,697 --> 00:03:45,184
+still have to store 10, 000 distinct
+
+82
+00:03:45,184 --> 00:03:47,176
+dictionaries representing the board
+
+83
+00:03:47,176 --> 00:03:49,155
+configurations. Interning is a powerful
+
+84
+00:03:49,155 --> 00:03:51,806
+tool for managing memory usage. In fact,
+
+85
+00:03:51,806 --> 00:03:54,604
+Python uses it internally for integers and
+
+86
+00:03:54,604 --> 00:03:57,289
+strings, but it should only be used for
+
+87
+00:03:57,289 --> 00:03:59,247
+immutable value types, such as our
+
+88
+00:03:59,247 --> 00:04:07,000
+ChessCoordinate where instances can safely be shared between data structures.
+
