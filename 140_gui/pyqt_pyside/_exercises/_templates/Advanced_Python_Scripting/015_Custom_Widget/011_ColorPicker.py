@@ -1,55 +1,55 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
-
-class pickerClass(QWidget):
-    def __init__(self):
-        super(pickerClass, self).__init__()
-        self.sz = 300
-        self.setFixedSize(QSize(self.sz, self.sz))
-        self.img = self.getRamp()
-
-    def paintEvent(self, event):
-        painter = QPainter()
-        painter.begin(self)
-        painter.setRenderHint(QPainter.Antialiasing)
-        rec = event.rect()
-        painter.drawImage(0, 0, self.img)
-        painter.end()
-
-    def getRamp(self):
-        img = QImage(self.sz, self.sz, QImage.Format_RGB32)
-        color = QColor()
-        for x in range(self.sz):
-            h = x / float(self.sz)
-            for y in range(self.sz):
-                s = y / float(self.sz)
-                v = 1
-                color.setHsvF(h, s, v)
-                img.setPixel(x, y, color.rgb())
-        return img
-
-    def mousePressEvent(self, event):
-        super(pickerClass, self).mousePressEvent(event)
-        self.getColor(event.pos())
-
-    def getColor(self, pos):
-        # print pos
-        h = pos.x()/float(self.sz)
-        s = pos.y()/float(self.sz)
-        c = QColor()
-        c.setHslF(h, s, 1)
-        print c
-        return c
-
-class colorPickerWindow(QWidget):
-    def __init__(self):
-        super(colorPickerWindow, self).__init__()
-        self.ly = QVBoxLayaout(self)
-        self.color = QLabel()
-        self.ly.addWidget(self.color)
-
-if __name__ == '__main__':
-    app = QApplication([])
-    w = pickerClass()
-    w.show()
-    app.exec_()
+# ____ __.__ ______ _
+# ____ __.__ ______ _
+#
+# c_ pickerClass QW..
+#     ___ -
+#         s___? ?. -
+#         sz _ 300
+#         sFS.. QS.. ?  ?
+#         img _ gR..
+#
+#     ___ paintEvent event
+#         painter _ QP..
+#         ?.b.. ?
+#         ?.sRH.. QP__.A..
+#         rec _ ?.r..
+#         ?.dI.. 0 0 i..
+#         ?.e..
+#
+#     ___ getRamp
+#         img _ QI.. s. s. QI__.F_R..32
+#         color _ QC..
+#         ___ x __ ra..  s.
+#             h _ x / fl.. s.
+#             ___ y __ ra.. s.
+#                 s _ y / fl.. s.
+#                 v _ 1
+#                 c___.sHF h, s, v
+#                 i__.sP.. x y c___.r..
+#         r_ ?
+#
+#     ___ mousePressEvent event
+#         s__ ? ?.mPE.. ?
+#         gC.. ?.p..
+#
+#     ___ getColor pos
+#         # print pos
+#         h _ ?.x /fl.. s.
+#         s _ ?.y /fl.. s.
+#         c _ QC..
+#         ?.sHF h s 1
+#         print ?
+#         r_ ?
+#
+# c_ colorPickerWindow QW..
+#     ___ -
+#         s___? ?. -
+#         ly _ QVBL.. ?
+#         color _ QL..
+#         l_.aW.. ?
+#
+# __ ______ __ ______
+#     app _ ?
+#     w _ ?
+#     ?.s..
+#     ?.e..
