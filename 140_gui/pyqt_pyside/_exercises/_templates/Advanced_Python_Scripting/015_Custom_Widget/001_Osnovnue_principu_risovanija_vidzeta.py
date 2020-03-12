@@ -1,24 +1,23 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
-
-
-class DrawCustomWidget(QWidget):
-    def __init__(self):
-        super(DrawCustomWidget, self).__init__()
-        self.resize(300, 200)
-        self.setWindowTitle('Custom Widget')
-
-    def paintEvent(self, event):
-        rec = event.rect()
-        # print rec
-        painter = QPainter()
-        painter.begin(self)
-        ###
-        painter.end()
-
-
-if __name__ == '__main__':
-    app = QApplication([])
-    w = DrawCustomWidget()
-    w.show()
-    app.exec_()
+# ____ __.__ ______ _
+# ____ __.__ ______ _
+# 
+# c_ DrawCustomWidget QW..
+#     ___ -
+#         s__ ?  ?. -
+#         re.. 300 200
+#         sWT.. 'Custom Widget'
+# 
+#     ___ paintEvent event
+#         rec _ ?.r..
+#         # print rec
+#         painter _ QP..
+#         ?.b.. ?
+#         ###
+#         ?.e..
+# 
+# 
+# __ ______ __ ______
+#     app _ ?
+#     w _ ?
+#     ?.s..
+#     ?.e..
