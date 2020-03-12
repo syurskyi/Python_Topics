@@ -1,33 +1,33 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
-from widgets import imageConverter_UIs as ui
-from widgets import filesWidget
-import converter
-import os
-
-
-class imageConverterClass(QMainWindow, ui.Ui_imageConverter):
-    def __init__(self):
-        super(imageConverterClass, self).__init__()
-        self.setupUi(self)
-        self.list = filesWidget.listWidgetClass()
-        self.files_ly.addWidget(self.list)
-        self.start_btn.clicked.connect(self.start)
-        self.progressBar.setValue(40)
-
-
-    def start(self):
-        files = self.list.getAllFiles()
-        if files:
-            out = self.out_le.text()
-            inc = 100 / len(files)
-            for f in files:
-                converter.convert(f, out)
-                self.progressBar.setValue(self.progressBar.value()+inc)
-        self.progressBar.setValue(0)
-
-if __name__ == '__main__':
-    app = QApplication([])
-    w = imageConverterClass()
-    w.show()
-    app.exec_()
+# ____ __.__ ______ _
+# ____ __.__ ______ _
+# ____ w... ______ iC..__ ui
+# ____ w... ______ fW..
+# ______ c..
+# ______ __
+#
+#
+# c_ imageConverterClass QM.. __.iC..
+#     ___ -
+#         s___ ? ?. -
+#         setupUi
+#         list _ fW___.lWC..
+#         f_l_.aW.. li..
+#         s__b_.c__.c.. st..
+#         pB__.sV.. 40
+#
+#
+#     ___ start
+#         files _ li__.gAF..
+#         __ ?
+#             out _ o_l_.t..
+#             inc _ 100 / le. ?
+#             ___ f __ ?
+#                 c___.c.. ? o..
+#                 pB__.sV.. pB__.v.. + i..
+#         pB__.sV.. 0
+#
+# __ ______ __ ______
+#     app _ ?
+#     w _ ?
+#     ?.s..
+#     ?.e..
