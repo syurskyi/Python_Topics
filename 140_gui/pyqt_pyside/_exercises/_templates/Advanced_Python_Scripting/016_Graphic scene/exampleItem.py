@@ -1,29 +1,29 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
-
-class exampleItemClass(QGraphicsItem):
-    def __init__(self):
-        super(exampleItemClass, self).__init__()
-        self.x = 0
-        self.y = 0
-        self.h = 50
-        self.w = 170
-        self.width = 2
-        self.text = 'None'
-        self.setFlags(QGraphicsItem.ItemIsSelectable | QGraphicsItem.ItemIsMovable)
-
-    def boundingRect(self):
-        return QRect(self.x, self.y, self.w, self.h)
-
-    def paint(self, painter, options, widget):
-        painter.setPen(QPen(Qt.black, self.width))
-        if self.isSelected():
-            painter.setBrush(Qt.red)
-        else:
-            painter.setBrush(Qt.lightGray)
-        rec = self.boundingRect().adjusted(self.width/2, self.width/2, -self.width/2, -self.width/2)
-        painter.drawRect(rec)
-
-        painter.setFont(QFont("Arial", 16))
-        painter.drawText(self.boundingRect(), Qt.AlignCenter, self.text)
-
+# ____ __.__ ______ _
+# ____ __.__ ______ _
+#
+# c_ exampleItemClass QG..
+#     ___ -
+#         s__? ?. -
+#         x _ 0
+#         y _ 0
+#         h _ 50
+#         w _ 170
+#         width _ 2
+#         text _ 'None'
+#         sF.. QGI__.IIS.. _ QGI__.IIM..
+#
+#     ___ boundingRect
+#         r_ QR.. x, y, w, h
+#
+#     ___ paint painter options widget
+#         ?.sP.. QP.. __.bl.. w..
+#         __ iS..
+#             ?.sB.. __.r..
+#         ____
+#             ?.sB.. __.lG..
+#         rec _ bRe__.ad.. w.. /2 w../2, -w../2 -w../2
+#         ?.dR.. ?
+#
+#         ?.sF.. QF.. "Arial", 16
+#         ?.dT.. bR.. __.AC.. t..
+#
