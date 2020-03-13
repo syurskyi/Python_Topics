@@ -1,97 +1,97 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
-
-class pickerClass(QWidget):
-    colorChangeSignal = Signal(QColor)
-    def __init__(self):
-        super(pickerClass, self).__init__()
-        self.sz = 300
-        self.setFixedSize(QSize(self.sz, self.sz))
-        self.img = self.getRamp()
-        self.markerSize = 6
-        self.markerPos = None
-        self.preview = None
-        self.setAttribute(Qt.WA_Hover)
-        self.installEventFilter(self)
-        self.setCursor(Qt.BlankCursor)
-
-    def paintEvent(self, event):
-        painter = QPainter()
-        painter.begin(self)
-        painter.setRenderHint(QPainter.Antialiasing)
-        rec = event.rect()
-        painter.drawImage(0, 0, self.img)
-        if self.markerPos:
-            painter.setPen(QPen(QBrush(Qt.black), 3))
-            painter.drawEllipse(self.markerPos, self.markerSize, self.markerSize)
-        if self.preview:
-            painter.setPen(QPen(QBrush(QColor(0, 0, 0, 50)), 3))
-            painter.drawEllipse(self.preview, self.markerSize, self.markerSize)
-        painter.end()
-
-    def getRamp(self):
-        img = QImage(self.sz, self.sz, QImage.Format_RGB32)
-        color = QColor()
-        for x in range(self.sz):
-            h = x / float(self.sz)
-            for y in range(self.sz):
-                s = y / float(self.sz)
-                v = 1
-                color.setHsvF(h, s, v)
-                img.setPixel(x, y, color.rgb())
-        return img
-
-    def mousePressEvent(self, event):
-        super(pickerClass, self).mousePressEvent(event)
-        self.markerPos = event.pos()
-        self.getColor(event.pos())
-        self.update()
-
-    def mouseMoveEvent(self, event):
-        super(pickerClass, self).mouseMoveEvent(event)
-        self.markerPos = event.pos()
-        self.getColor(event.pos())
-        self.update()
-
-    def getColor(self, pos):
-        # print pos
-        h = pos.x()/float(self.sz)
-        s = pos.y()/float(self.sz)
-        c = QColor()
-        c.setHsvF(h, s, 1)
-        # print c
-        # return c
-        self.colorChangeSignal.emit(c)
-
-    def eventFilter(self, obj, event):
-        if event.type() == QEvent.HoverMove:
-            self.preview = event.pos()
-            self.update()
-            return True
-        return False
-
-
-class colorPickerWindow(QWidget):
-    def __init__(self):
-        super(colorPickerWindow, self).__init__()
-        self.ly = QVBoxLayout(self)
-        self.color = QLabel()
-        self.color.setMinimumHeight(40)
-        self.color.setAutoFillBackground(True)
-        self.ly.addWidget(self.color)
-        self.picker = pickerClass()
-        self.ly.addWidget(self.picker)
-        self.picker.colorChangeSignal.connect(self.updateColor)
-
-    def updateColor(self, color):
-        # print '>>', color
-        print color.name()
-        palette = self.color.palette()
-        palette.setColor(self.color.backgroundRole(), color)
-        self.color.setPalette(palette)
-
-if __name__ == '__main__':
-    app = QApplication([])
-    w = colorPickerWindow()
-    w.show()
-    app.exec_()
+# ____ __.__ ______ _
+# ____ __.__ ______ _
+#
+# c_ pickerClass QW..
+#     colorChangeSignal _ Si.. QC..
+#     ___ -
+#         s___ ? ?. -
+#         sz _ 300
+#         sFS.. QS.. ? ?
+#         img _ gR..
+#         markerSize _ 6
+#         markerPos _ N..
+#         preview _ N..
+#         sA.. __.W._H..
+#         iEF.. ?
+#         sC.. __.BC..
+#
+#     ___ paintEvent event
+#         painter _ QP..
+#         ?.b.. ?
+#         ?.sRH.. QP__.A..
+#         rec _ ?.r..
+#         ?.dI.. 0 0 i..
+#         __ mP..
+#             ?.sP.. QP.. QB.. __.bl.., 3
+#             ?.dE.. mP.. mS.. mS..
+#         __ pr..
+#             ?.sP.. QP.. QB.. QC.. 0, 0, 0, 50)), 3
+#             ?.dE.. p.. mS.. mS..
+#         ?.e..
+#
+#     ___ getRamp
+#         img _ QI.. s. s. QI__.F_R..32
+#         color _ QC..
+#         ___ x __ ra.. s.
+#             h _ x / fl.. s.
+#             ___ y __ ra.. s.
+#                 s _ y / fl.. s.
+#                 v _ 1
+#                 c__.sHF h s v
+#                 i__.sP.. x y c__.r..
+#         r_ ?
+#
+#     ___ mousePressEvent event
+#         s___? ?.mPE... ?
+#         mP.. _ ?.p..
+#         gC.. ?.p..
+#         u..
+#
+#     ___ mouseMoveEvent event
+#         s___? ?.mME.. ?
+#         mP.. _ ?.p..
+#         gC.. ?.p..
+#         u..
+#
+#     ___ getColor pos
+#         # print pos
+#         h _ p__.x /fl.. s.
+#         s _ p__.y /fl.. s.
+#         c _ QC..
+#         ?.sHF h s 1
+#         # print c
+#         # return c
+#         cChS__.e.. ?
+#
+#     ___ eventFilter obj event
+#         __ ?.ty.. __ QE__.HM..
+#             preview _ ?.p..
+#             u..
+#             r_ T..
+#         r_ F..
+#
+#
+# c_ colorPickerWindow QW..
+#     ___ -
+#         s__? ?. -
+#         ly _ QVBL.. ?
+#         color _ QL..
+#         ?.sMH.. 40
+#         ?.sAFB.. T..
+#         l_.aW.. ?
+#         picker _ pC..
+#         l_.aW.. ?
+#         ?.cCS__.c.. uC..
+#
+#     ___ updateColor color
+#         # print '>>', color
+#         print ?.n..
+#         palette _ ?.pa..
+#         ?.sC..(?.bR.. ?
+#         ?.sP.. ?
+#
+# __ ______ __ ______
+#     app _ ?
+#     w _ ?
+#     ?.s..
+#     ?.e..
