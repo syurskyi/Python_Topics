@@ -1,6 +1,6 @@
-import sys
-from PyQt5.QtWidgets import *
-from PyQt5.QtCore import QTimer
+______ ___
+____ _5._W.. ______ _
+____ _5._C.. ______ QT..
 
 count = 0
 
