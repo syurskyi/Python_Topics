@@ -1,49 +1,49 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
-from PySide.QtNetwork import *
-from widgets import client_UIs as ui
-import util
-
-class clientWindow(QWidget, ui.Ui_client):
-    def __init__(self):
-        super(clientWindow, self).__init__()
-        self.setWindowFlags(Qt.WindowStaysOnTopHint)
-        self.setupUi(self)
-        self.ip_le.setText(util.IP)
-        self.server = None
-        self.connect_btn.clicked.connect(self.connectToServer)
-        self.progress_sle.sliderReleased.connect(self.messageToServer)
-
-    def connectToServer(self):
-        ip = self.ip_le.text()
-        self.server = QTcpSocket()
-        self.server.connectToHost(ip, util.PORT)
-        self.server.disconnected.connect(self.serverError)
-        self.server.error.connect(self.serverError)
-        self.connect_btn.setEnabled(0)
-        self.ip_le.setEnabled(0)
-
-    def messageToServer(self):
-        msg = str(self.progress_sle.value())
-        if not self.server:
-            return
-        self.request = QByteArray()
-        stream = QDataStream(self.request, QIODevice.WriteOnly)
-        stream.setVersion(QDataStream.Qt_4_2)
-        stream.writeUInt32(0)
-        stream << msg
-        stream.device().seek(0)
-        stream.writeUInt32(self.request.size() - util.UINT32)
-        self.server.write(self.request)
-        self.nextBlockSize = 0
-
-    def serverError(self):
-        self.server.close()
-        self.connect_btn.setEnabled(1)
-        self.ip_le.setEnabled(1)
-
-if __name__ == '__main__':
-    app = QApplication([])
-    w = clientWindow()
-    w.show()
-    app.exec_()
+# ____ __.__ ______ _
+# ____ __.__ ______ _
+# ____ __.Q_N.. ______ _
+# ____ w.. ______ c_U.. __ ui
+# ______ u..
+#
+# c_ clientWindowQW.. __.U_c..
+#     ___ -
+#         s__? ?. -
+#         sWF..__.WSOTH..
+#         sU.. ?
+#         i._l_.sT.. u__.I.
+#         server _ N..
+#         c_b__.c___.c.. cTS..
+#         p_s__.sR__.c.. mTS..
+#
+#     ___ connectToServer
+#         ip _ i_l_.t..
+#         server _ QTS..
+#         ?.cTH.. i. u__.P..
+#         ?.d___.c.. sE..
+#         ?.e__.c... sE..
+#         c_b__.sE.. 0
+#         ip_le.sE.. 0
+#
+#     ___ messageToServer
+#         msg _ st. p_s__.v..
+#         __ no. server
+#             r_
+#         request _ QBA..
+#         stream _ QDS.. ? QIOD___.WO..
+#         ?.sV.. QDS__.Qt_4_2
+#         ?.wUI..32 0
+#         ? << m..
+#         ?.de__.se.. 0
+#         ?.wUI..32 r___.si.. - u__.U..32
+#         s__.w.. r..
+#         nBS.. _ 0
+#
+#     ___ serverError
+#         s___.c..
+#         c_b__.sE.. 1
+#         i_l_.sE.. 1
+#
+# __ ______ __ ______
+#     app _ ?
+#     w _ ?
+#     ?.s..
+#     ?.e..
