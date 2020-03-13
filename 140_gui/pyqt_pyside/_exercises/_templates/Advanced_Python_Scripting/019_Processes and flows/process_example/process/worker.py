@@ -1,5 +1,5 @@
-import time
-
-for i in range(11):
-    time.sleep(0.2)
-    print 'Progress: ', i*10
+# ______ ti..
+#
+# ___ i __ ra.. 11
+#     ti__.sl.. 0.2
+#     print 'Progress: ', i*10
