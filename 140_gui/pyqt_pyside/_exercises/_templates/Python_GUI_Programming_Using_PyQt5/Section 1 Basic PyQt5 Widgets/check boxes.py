@@ -1,42 +1,42 @@
-import sys
-from PyQt5.QtWidgets import *
-from PyQt5.QtGui import QPixmap
-
-
-class Window(QWidget):
-    def __init__(self):
-        super().__init__()
-        self.setWindowTitle("Using Labels")
-        self.setGeometry(50, 50, 500, 500)
-        self.ui()
-
-    def ui(self):
-        self.name = QLineEdit(self)
-        self.name.setPlaceholderText("Enter your name")
-        self.surname = QLineEdit(self)
-        self.surname.setPlaceholderText("Enter your surname")
-        self.name.move(150, 50)
-        self.surname.move(150, 80)
-        self.remember = QCheckBox("Remember me", self)
-        self.remember.move(150, 110)
-        button = QPushButton("Submit", self)
-        button.move(200, 140)
-        button.clicked.connect(self.submit)
-
-        self.show()
-
-    def submit(self):
-        if (self.remember.isChecked()):
-            print("Name : "+self.name.text() + "\nSurname: "+self.surname.text()+"\nRemember me checked")
-        else:
-            print("Name : "+self.name.text() + "\nSurname: "+self.surname.text()+"\nRemember me not checked")
-
-
-def main():
-    app = QApplication(sys.argv)
-    window = Window()
-    sys.exit(app.exec_())
-
-
-if __name__ == '__main__':
-    main()
+# ______ ___
+# ____ _5._W.. ______ _
+# ____ _t5._G.. ______ QP..
+#
+#
+# c_ Window QW..
+#     ___ -
+#         s__. -
+#         sWT..*Using Labels
+#         sG... 50, 50, 500, 500
+#         ?
+#
+#     ___ ui
+#         name _ QLineEdit ?
+#         ?.sPT.. Enter your name
+#         surname _ QLE.. ?
+#         ?.sPT.. Enter your surname
+#         n__.m.. 150, 50
+#         surname.m.. 150, 80
+#         remember _ QCB.. Remember me" ?
+#         ?.m.. 150, 110
+#         button _ QPB.. *Submit ?
+#         ?.m.. 200, 140
+#         ?.c____.c.. s..
+#
+#         s..
+#
+#     ___ submit
+#         __ r___.iC..
+#             print("Name : "+n__.t.. + "\nSurname: "+s___.t..+"\nRemember me checked")
+#         ____
+#             print("Name : "+n__.t.. + "\nSurname: "+s___.t..+"\nRemember me not checked")
+#
+#
+# ___ main
+#     app _ ?
+#     window _ ?
+#     ___.e.. ?.e.._
+#
+#
+# __ _____ __ ______
+#     ?
