@@ -1,60 +1,60 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
-import os, time
-
-class folderSizeCompute(QWidget):
-    def __init__(self):
-        super(folderSizeCompute, self).__init__()
-        self.ly = QVBoxLayout(self)
-        self.start_btn = QPushButton('Compute')
-        self.ly.addWidget(self.start_btn)
-        self.start_btn.clicked.connect(self.compute)
-        self.path_le = QLineEdit()
-        self.ly.addWidget(self.path_le)
-        self.info_lb = QLabel()
-        self.ly.addWidget(self.info_lb)
-        self.path_le.setText('C:/Python27')
-        self.resize(300,100)
-
-    def compute(self):
-        path = self.path_le.text()
-        self.obj = worker(path)
-        self.t = QThread()
-        self.obj.moveToThread(self.t)
-        self.t.started.connect(self.obj.start)
-        self.obj.finishSignal.connect(self.t.quit)
-        self.obj.updateSignal.connect(self.setInfo)
-
-        self.t.start()
-
-
-    def setInfo(self, i):
-        self.info_lb.setText('%s bytes' % i)
-
-
-class worker(QObject):
-    finishSignal = Signal()
-    updateSignal = Signal(int)
-    def __init__(self, path):
-        super(worker, self).__init__()
-        self.path = path
-
-    def start(self):
-        size = 0
-        st = time.time()
-        for path, dirs, files in os.walk(self.path):
-            for f in files:
-                b = os.path.getsize(os.path.join(path,f))
-                size += int(b/1024.0)
-                if (time.time() - st) > 0.5:
-                    self.updateSignal.emit(size)
-                    st = time.time()
-
-        self.finishSignal.emit()
-
-
-if __name__ == '__main__':
-    app = QApplication([])
-    w = folderSizeCompute()
-    w.show()
-    app.exec_()
+# ____ __.__ ______ _
+# ____ __.__ ______ _
+# ______ __ ti..
+#
+# c_ folderSizeCompute QW..
+#     ___ -
+#         s___ ? ?. -
+#         ly _ QVBL.. ?
+#         start_btn _ QPB.. *Compute
+#         l_.aW.. ?
+#         s_b_.c___.c... c..
+#         path_le _ QLE..
+#         l_.aW.. ?
+#         info_lb _ QL..
+#         l_.aW.. ?
+#         p_l_.sT.. C:/Python27
+#         r.. 300,100
+#
+#     ___ compute
+#         path _ p_l_.t..
+#         obj _ w.. ?
+#         t _ QT..
+#         o__.mTT.. ?
+#         ?.st__.c... o__.st..
+#         o__.fS___.c... t.q..
+#         o__.uS___.c... sI..
+#
+#         t.st..
+#
+#
+#     ___ setInfo i
+#         i_l_.sT.. '@ bytes'  ?
+#
+#
+# c_ worker QO..
+#     finishSignal _ S..
+#     updateSignal _ S.. in.
+#     ___ - path
+#         s___ ? ?. -
+#        ?  ?
+#
+#     ___ start
+#         size _ 0
+#         st _ ti__.ti..
+#         ___ path, dirs, files __ __.w.. p..
+#             ___ f __ files:
+#                 b _ __.pa__.g_s.. __.pa__.j.. p.. ?
+#                 s.. +_ in. b/1024.0)
+#                 __ ti__.ti.. - s. > 0.5
+#                     uS__.em.. s..
+#                     s. _ ti__.ti..
+#
+#         fS__.em..
+#
+#
+# __ ______ __ ______
+#     app _ ?
+#     w _ ?
+#     ?.s..
+#     ?.e..
