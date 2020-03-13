@@ -1,6 +1,6 @@
-import sys
-from PyQt5.QtWidgets import *
-from PyQt5.QtGui import QFont
+______ ___
+____ _5._W.. ______ _
+____ _5._G.. ______  QF..
 
 font = QFont("Times", 14)
 

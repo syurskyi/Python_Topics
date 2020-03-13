@@ -1,5 +1,5 @@
-import sys
-from PyQt5.QtWidgets import *
+______ ___
+____ _5._W.. ______ _
 
 class Window(QWidget):
     def __init__(self):

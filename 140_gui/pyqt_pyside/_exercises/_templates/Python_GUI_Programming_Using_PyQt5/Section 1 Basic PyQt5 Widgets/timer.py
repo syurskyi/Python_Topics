@@ -1,7 +1,7 @@
-import sys
-from PyQt5.QtWidgets import *
-from PyQt5.QtGui import QFont
-from PyQt5.QtCore import QTimer
+______ ___
+____ _5._W.. ______ _
+____ _5._G.. ______ QF..
+____ _5._C.. ______ QT..
 
 
 class Window(QWidget):
