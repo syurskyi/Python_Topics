@@ -1,18 +1,19 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
-from widgets import editorView
-
-class editorWindowClass(QWidget):
-    def __init__(self):
-        super(editorWindowClass, self).__init__()
-        self.ly = QVBoxLayout(self)
-        self.view = editorView.editorViewClass()
-        self.ly.addWidget(self.view)
-        # start
-        self.resize(500, 200)
-
-if __name__ == '__main__':
-    app = QApplication([])
-    w = editorWindowClass()
-    w.show()
-    app.exec_()
+# ____ __.__ ______ _
+# ____ __.__ ______ _
+# ____ w.. ______ eV..
+#
+# c_ editorWindowClass QW..
+#     __ -
+#         s__ ? ?. -
+#         ly _ QVBL.. ?
+#         view _ eV__.eVC..
+#         l_.aW.. ?
+#         #start
+#         r.. 500 200
+#
+#
+# __ ______ __ ______
+#     app _ ?
+#     w _ ?
+#     ?.s..
+#     ?.e..
