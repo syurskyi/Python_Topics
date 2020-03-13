@@ -1,39 +1,39 @@
-import sys
-from PyQt5.QtWidgets import *
-
-
-class Window(QWidget):
-    def __init__(self):
-        super().__init__()
-        self.setWindowTitle("Using Labels")
-        self.setGeometry(50, 50, 350, 350)
-        self.UI()
-
-    def UI(self):
-        self.text=QLabel("My Text", self)
-        enterButon= QPushButton("Enter", self)
-        exitButon= QPushButton("Exit", self)
-        self.text.move(160, 50)
-        enterButon.move(100, 80)
-        exitButon.move(200, 80)
-        enterButon.clicked.connect(self.enterFunc)
-        exitButon.clicked.connect(self.exitFunc)
-        self.show()
-
-    def enterFunc(self):
-        self.text.setText("You clicked Enter")
-        self.text.resize(150, 20)
-
-    def exitFunc(self):
-        self.text.setText("You clicked Exit")
-        self.text.resize(150, 20)
-
-
-def main():
-    app = QApplication(sys.argv)
-    window = Window()
-    sys.exit(app.exec_())
-
-
-if __name__ == '__main__':
-    main()
+# ______ ___
+# ____ _5._W.. ______ _
+#
+#
+# c_ Window QW..
+#     ___ -
+#         s___. -
+#         sWT.. "Using Labels"
+#         sG.. 50, 50, 350, 350)
+#         ?
+#
+#     ___ UI
+#         text _ QL..("My Text" ?
+#         enterButon _ QPB.. "Enter" ?
+#         exitButon _ QPB.. "Exit" ?
+#         t__.m.. 160, 50
+#         eB__.m.. 100 80
+#         eB__.m.. 200 80
+#         eB__.c___ .c.. eF..
+#         eB__.c___ .c.. eF..
+#         s..
+#
+#     ___ enterFunc
+#         t__.sT.. You clicked Enter
+#         t__.r.. 150 20
+#
+#     ___ exitFunc
+#         t__.sT.. You clicked Exit
+#         t__.r.. 150 20
+#
+#
+# ___ main
+#     app _ ?
+#     window _ ?
+#     ___.e.. ?.e._
+#
+#
+# __ _____ __ ______
+#     ?
