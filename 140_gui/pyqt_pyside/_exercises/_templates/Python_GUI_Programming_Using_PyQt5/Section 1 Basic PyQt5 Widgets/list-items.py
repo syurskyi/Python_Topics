@@ -1,66 +1,65 @@
-______ ___
-____ _5._W.. ______ _
-
-
-class Window(QWidget):
-    def __init__(self):
-        super().__init__()
-        self.setWindowTitle("Text Edit")
-        self.setGeometry(50, 50, 500, 500)
-        self.ui()
-
-
-    def ui(self):
-
-        self.addItem = QLineEdit(self)
-        self.addItem.move(100, 50)
-        self.listWidget = QListWidget(self)
-        self.listWidget.move(100, 80)
-
-        btn_add = QPushButton("Add", self)
-        btn_add.move(360, 80)
-        btn_add.clicked.connect(self.func_add)
-
-        btn_delete = QPushButton("Delete", self)
-        btn_delete.move(360, 110)
-        btn_delete.clicked.connect(self.delete_item)
-
-        btn_get = QPushButton("Get Item", self)
-        btn_get.move(360, 140)
-        btn_get.clicked.connect(self.get_item)
-
-        btn_delete_all = QPushButton("Delete All", self)
-        btn_delete_all.move(360, 170)
-        btn_delete_all.clicked.connect(self.delete_all)
-
-        list1 = ["Batman", "Superman", "Spiderman"]
-        self.listWidget.addItems(list1)
-        self.listWidget.addItem("Heman")
-        self.show()
-
-    def get_item(self):
-        value = self.listWidget.currentItem().text()
-        print(value)
-
-    def delete_all(self):
-        self.listWidget.clear()
-
-    def delete_item(self):
-        index = self.listWidget.currentRow()
-        print(index)
-        self.listWidget.takeItem(index)
-
-    def func_add(self):
-        val = self.addItem.text()
-        self.listWidget.addItem(val)
-        self.addItem.setText("")
-
-
-def main():
-    app = QApplication(sys.argv)
-    window = Window()
-    sys.exit(app.exec_())
-
-
-if __name__ == '__main__':
-    main()
+# ______ ___
+# ____ _5._W.. ______ _
+#
+#
+# c_ Window QW..
+#     ___ -
+#         s__. -
+#         sWT.. *Text Edit
+#         sG.. 50, 50, 500, 500
+#         ?
+#
+#
+#     ___ ui
+#
+#         addItem _ QLE..
+#         ?.m.. 100, 50
+#         listWidget _ QLW..
+#         ?.m.. 100, 80
+#
+#         btn_add _ QPB... *Add ?
+#         ?.m.. 360, 80
+#         ?.c__.c.. f_a..
+#
+#         btn_delete _ QPB... *Delete ?
+#         ?.m.. 360, 110
+#         ?.c__.c.. d_i..
+#
+#         btn_get _ QPB... *Get Item ?
+#         ?.m.. 360, 140
+#         ?.c__.c.. g_i..
+#
+#         btn_delete_all _ QPB... *Delete All ?
+#         ?.m.. 360, 170
+#         ?.c__.c.. d_a..
+#
+#         list1 _ "Batman", "Superman", "Spiderman"
+#         lW__.aI.. ?
+#         lW__.aI.. *Heman
+#         s..
+#
+#     ___ get_item
+#         value _ lW__.cI__.t..
+#         print ?
+#
+#     ___ delete_all
+#         lW__.c..
+#
+#     ___ delete_item
+#         index _ lW__.cR..
+#         print ?
+#         lW__.tI.. ?
+#
+#     ___ func_add
+#         val _ aI__.t..
+#         lW__.aI__ ?
+#         aI__.sT.. ""
+#
+#
+# ___ main
+#     App _ ?
+#     window _ ?
+#     ___.e.. ?.e..
+#
+# __ _____ __ ______
+#     ?
