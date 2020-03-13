@@ -1,59 +1,59 @@
 ______ ___
-____ _5._W.. ______ _
-____ _5._G.. ______ QF..
-____ _5._C.. ______ QT..
-
-
-class Window(QWidget):
-    def __init__(self):
-        super().__init__()
-        self.setWindowTitle("Using Timer")
-        self.setGeometry(250, 150, 350, 350)
-        self.ui()
-
-    def ui(self):
-        self.colorLabel = QLabel(self)
-        self.colorLabel.resize(250, 250)
-        self.colorLabel.setStyleSheet("background-color:green")
-        self.colorLabel.move(40, 20)
-
-        # #####################Buttons##################
-        btn_start = QPushButton("Start", self)
-        btn_start.move(80, 300)
-        btn_start.clicked.connect(self.start)
-        btn_stop = QPushButton("Stop", self)
-        btn_stop.move(190, 300)
-        btn_stop.clicked.connect(self.stop)
-
-        # #################Timer########################
-        self.timer = QTimer()
-        self.timer.setInterval(500)
-        self.timer.timeout.connect(self.change_color)
-        self.value = 0
-
-        self.show()
-
-    def change_color(self):
-        if self.value == 0:
-            self.colorLabel.setStyleSheet("background-color:yellow")
-            self.value = 1
-        else:
-            self.colorLabel.setStyleSheet("background-color:red")
-            self.value = 0
-
-    def start(self):
-        self.timer.start()
-
-    def stop(self):
-        self.timer.stop()
-
-
-def main():
-    app = QApplication(sys.argv)
-    window = Window()
-    window.start()
-    sys.exit(app.exec_())
-
-
-if __name__ == '__main__':
-    main()
+# ____ _5._W.. ______ _
+# ____ _5._G.. ______ QF..
+# ____ _5._C.. ______ QT..
+#
+#
+# c_ Window QW..
+#     ___ -
+#         s__. -
+#         sWT.. *Using Timer
+#         sG.. 250, 150, 350, 350
+#         ?
+#
+#     ___ ui
+#         colorLabel  QL..
+#         ?.r.. 250 250
+#         ?.sSS.. *background-color:g..
+#         ?.m.. 40 20
+#
+#         # #####################Buttons##################
+#         btn_start  QPushButton *Start ?
+#         ?.m.. 80 300
+#         ?.c__.c.. s..
+#         btn_stop  QPB.. *Stop ?
+#         ?.m.. 190, 300
+#         ?.c__.c.. s..
+#
+#         # #################Timer########################
+#         timer  QT..
+#         ?.sI.. 500
+#         ?.t__.c.. c_c..
+#         value  0
+#
+#         s..
+#
+#     ___ change_color
+#         __ value __ 0
+#             coL__.sSS.. *background-color:y..
+#             ?  1
+#         ____
+#             coL__.sSS.. *background-color:r..
+#             v..  0
+#
+#     ___ start
+#         ti__.?
+#
+#     ___ stop
+#         ti__.?
+#
+#
+# ___ main
+#     app  ?
+#     window  ?
+#     ?.s..
+#     ___.e.. ?.e..
+#
+#
+# __ _____ __ ______
+#     ?
