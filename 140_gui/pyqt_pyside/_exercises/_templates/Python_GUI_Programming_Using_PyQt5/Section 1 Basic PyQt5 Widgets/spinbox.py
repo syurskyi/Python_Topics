@@ -1,43 +1,43 @@
-______ ___
-____ _5._W.. ______ _
-____ _5._G.. ______  QF..
-
-font = QFont("Times",16)
-
-
-class Window(QWidget):
-    def __init__(self):
-        super().__init__()
-        self.setWindowTitle("Using Spin Boxes")
-        self.setGeometry(250, 150, 500, 500)
-        self.ui()
-
-    def ui(self):
-        self.spinBox = QSpinBox(self)
-        self.spinBox.move(150, 100)
-        self.spinBox.setFont(font)
-        # self.spinBox.setMinimum(25)
-        # self.spinBox.setMaximum(110)
-        self.spinBox.setRange(25, 110)
-        # self.spinBox.setPrefix("$ ")
-        self.spinBox.setSuffix("cm")
-        self.spinBox.setSingleStep(5)
-        # self.spinBox.valueChanged.connect(self.getValue)
-        button = QPushButton("Send", self)
-        button.move(150, 140)
-        button.clicked.connect(self.get_value)
-
-        self.show()
-
-    def get_value(self):
-        value = self.spinBox.value()
-        print(value)
-
-
-def main():
-    app = QApplication(sys.argv)
-    window = Window()
-    sys.exit(app.exec_())
-
-if __name__ == '__main__':
-    main()
+# ______ ___
+# ____ _5._W.. ______ _
+# ____ _5._G.. ______  QF..
+#
+# font _ QFont("Times",16)
+#
+#
+# c_ Window QW..
+#     ___ -
+#         s__. -
+#         sWT.. *Using Spin Boxes
+#         sG.. 250, 150, 500, 500)
+#         ?
+#
+#     ___ ui
+#         spinBox _ QSpinBox ?
+#         sB__.m.. 150, 100
+#         sB__.sF.. f..
+#         # sB__.setMinimum(25)
+#         # sB__.setMaximum(110)
+#         sB__.sR.. 25, 110
+#         # sB__.setPrefix("$ ")
+#         sB__.sS..("cm"
+#         sB__.sSS.. 5
+#         # sB__.valueChanged.connect(getValue)
+#         button _ QPB.. *Send ?
+#         ?.m.. 150 140
+#         ?.c__.c.. ?
+#
+#         s..
+#
+#     ___ get_value
+#         value _ sB__.v..
+#         print ?
+#
+#
+# ___ main
+#     App _ ?
+#     window _ ?
+#     ___.e.. ?.e..
+#
+# __ _____ __ ______
+#     ?
