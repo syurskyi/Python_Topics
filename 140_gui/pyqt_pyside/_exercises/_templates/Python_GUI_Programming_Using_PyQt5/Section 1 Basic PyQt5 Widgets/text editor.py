@@ -1,36 +1,36 @@
-______ ___
-____ _5._W.. ______ _
-____ _5._G.. ______  QF..
-
-font = QFont("Times", 14)
-
-
-class Window(QWidget):
-    def __init__(self):
-        super().__init__()
-        self.setWindowTitle("Using Text editor")
-        self.setGeometry(250, 150, 500, 500)
-        self.ui()
-
-    def ui(self):
-        self.editor = QTextEdit(self)
-        self.editor.move(150, 80)
-        button = QPushButton("Send", self)
-        self.editor.setAcceptRichText(False)
-        button.move(330, 280)
-        button.clicked.connect(self.get_value)
-
-        self.show()
-
-    def get_value(self):
-        text = self.editor.toPlainText()
-        print(text)
-
-
-def main():
-    app = QApplication(sys.argv)
-    window = Window()
-    sys.exit(app.exec_())
-
-if __name__ == '__main__':
-    main()
+# ______ ___
+# ____ _5._W.. ______ _
+# ____ _5._G.. ______  QF..
+#
+# font _ QFont("Times", 14)
+#
+#
+# c_ Window QW..
+#     ___ -
+#         s__. -
+#         sWT.. *Using Text editor
+#         sG.. 250, 150, 500, 500
+#         ?
+#
+#     ___ ui
+#         editor _ QTE.. ?
+#         ?.m.. 150 80
+#         button _ QPB.. *Send ?
+#         e__.sART.. F..
+#         ?.m.. 330 280
+#         ?.c__.c.. ?
+#
+#         s..
+#
+#     ___ get_value
+#         text _ e__.tPT..
+#         print ?
+#
+#
+# ___ main
+#     App _ ?
+#     window _ ?
+#     ___.e.. ?.e..
+#
+# __ _____ __ ______
+#     ?
