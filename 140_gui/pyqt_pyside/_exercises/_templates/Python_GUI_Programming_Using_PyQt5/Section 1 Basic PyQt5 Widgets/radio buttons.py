@@ -1,45 +1,45 @@
-______ ___
-____ _5._W.. ______ _
-
-
-class Window(QWidget):
-    def __init__(self):
-        super().__init__()
-        self.setWindowTitle("Using Radio Buttons")
-        self.setGeometry(250, 150, 500, 500)
-        self.ui()
-
-    def ui(self):
-        self.name = QLineEdit(self)
-        self.name.move(150, 50)
-        self.name.setPlaceholderText("Enter your name")
-        self.surname = QLineEdit(self)
-        self.surname.move(150, 80)
-        self.surname.setPlaceholderText("Enter your surname")
-        self.male = QRadioButton("Male", self)
-        self.male.setChecked(True)
-        self.female = QRadioButton("Female", self)
-        self.male.move(150, 110)
-        self.female.move(200, 110)
-        button = QPushButton("Submit", self)
-        button.clicked.connect(self.get_values)
-        button.move(200, 140)
-
-        self.show()
-
-    def get_values(self):
-        name = self.name.text()
-        surname = self.surname.text()
-        if self.male.isChecked():
-            print(name+" " + surname +" You are a male")
-        else:
-            print(name + " " + surname + " You are a female")
-
-
-def main():
-    app = QApplication(sys.argv)
-    window = Window()
-    sys.exit(app.exec_())
-
-if __name__ == '__main__':
-    main()
+# ______ ___
+# ____ _5._W.. ______ _
+#
+#
+# c_ Window QW..
+#     ___ -
+#         s__. -
+#         sWT.. *Using Radio Buttons
+#         sG.. 250, 150, 500, 500
+#         ?
+#
+#     ___ ui
+#         name _ QLE..
+#         ?.m.. 150, 50
+#         ?.sPT.. *Enter your name
+#         surname _ QLE..
+#         ?.m.. 150, 80
+#         ?.sPT... *Enter your surname
+#         male _ QRB.. *Male ?
+#         ?.sC.. T..
+#         female _ QRB.. *Female ?
+#         m__.m.. 150, 110
+#         f__.m.. 200, 110
+#         button _ QPB.. *Submit ?
+#         ?.c___.c.. ?
+#         ?.m.. 200, 140
+#
+#         s..
+#
+#     ___ get_values
+#         name _ n__.t..
+#         surname _ s__.t..
+#         __ m__.iC..
+#             print(n.. +" " + s.. + " You are a male")
+#         ____
+#             print(n.. + " " + s.. + " You are a female")
+#
+#
+# ___ main
+#     App _ ?
+#     window _ ?
+#     ___.e.. ?.e..
+#
+# __ _____ __ ______
+#     ?
