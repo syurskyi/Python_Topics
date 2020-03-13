@@ -26,4 +26,3 @@ class exampleItemClass(QGraphicsItem):
 
         painter.setFont(QFont("Arial", 16))
         painter.drawText(self.boundingRect(), Qt.AlignCenter, self.text)
-
