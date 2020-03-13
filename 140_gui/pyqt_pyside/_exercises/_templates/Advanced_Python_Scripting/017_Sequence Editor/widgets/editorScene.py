@@ -1,37 +1,46 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
-import editorItem
-
-class editorSceneClass(QGraphicsScene):
-    def __init__(self):
-        super(editorSceneClass, self).__init__()
-        self.setSceneRect(-1000, -100, 2000, 2000)
-        self.grid = 30
-        self.addNode()
-
-    def drawBackground(self, painter, rect):
-        if False:
-            painter = QPainter()
-        painter.fillRect(rect, QColor(30, 30, 30))
-        left = int(rect.left()) - (int(rect.left()) % self.grid)
-        top = int(rect.top()) - int(rect.top()) % self.grid
-        right = int(rect.right())
-        bottom = int(rect.bottom())
-        lines = []
-        for x in range(left, right, self.grid):
-            lines.append(QLine(x, top, x, bottom))
-        for y in range(top, bottom, self.grid):
-            lines.append(QLine(left, y, right, y))
-
-        painter.setPen(QPen(QColor(100, 100, 100), 1))
-        painter.drawLines(lines)
-
-    def addNode(self, pos=False):
-        if not pos:
-            pos = QPoint(0, 0)
-        item = editorItem.editorItemClass(self.grid, len(self.items()) + 1)
-        self.addItem(item)
-        item.setPos(pos)
-
-    def mouseDoubleClickEvent(self, event):
-        self.addNode(event.scenePos())
+# ____ __.__ ______ _
+# ____ __.__ ______ _
+# ______ eI..
+#
+#
+# c_ editorSceneClass QG..
+#     ___ -
+#         s__ ? ?.-
+#         sSR.. -1000, -1000, 2000, 2000
+#         grid _ 30
+#         # addNode()
+#
+#     ___ drawBackground painter rect
+#         __ F..
+#             ? _ QP..
+#         ?.fillRect r__, QC.. 30,30,30
+#         left _ in. r__.l.. -  in. r__.l..  g..
+#         top _ in. r__.top - in. r__.t..  g..
+#         right _ in. r__.r..
+#         bottom _ in. r__.b..
+#         lines _   # list
+#         ___ x __ ra.. l.., r.. g..
+#             l__.ap.. QL.. x, t.. x b..
+#         ___ y __ ra.. t.. b.. g..
+#             l__.ap.. QLine l.. y r.. y
+#
+#         ?.sP.. QP.. QC.. 100,100,100), 1
+#         ?.dL.. l__
+#
+#     ___ addNode pos_F..
+#         __ no. ?
+#             ? _ QP.. 0,0
+#         item _ eI__.eIC.. g... le. it.. + 1
+#         aI.. ?
+#         ?.sP.. p..
+#
+#     ___ mouseDoubleClickEvent event
+#         addNode ?.sP..
+#         s__ ?  ?.mDCE.. ?
+#
+#     ___ mouseReleaseEvent event
+#         ___ i __ items
+#             ?.ad..
+#         ___ i __ sI..
+#             ?.cC..
+#         s__ ? ?.mRE.. ?
