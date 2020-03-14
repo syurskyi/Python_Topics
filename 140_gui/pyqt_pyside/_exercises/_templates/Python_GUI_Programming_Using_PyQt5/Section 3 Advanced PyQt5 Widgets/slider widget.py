@@ -1,51 +1,50 @@
-______ ___
-____ _5._W.. ______ _
-____ _5._C.. ______ Qt
-____ _5._G.. ______ _ QF..
-
-
-class Window(QWidget):
-    def __init__(self):
-        super().__init__()
-        self.setWindowTitle("Slider Widget")
-        self.setGeometry(350, 150, 600, 500)
-        self.ui()
-
-    def ui(self):
-        vbox = QVBoxLayout()
-        self.slider = QSlider(Qt.Horizontal)
-        self.slider.setMinimum(0)
-        self.slider.setMaximum(100)
-        self.slider.setTickPosition(QSlider.TicksAbove)
-        self.slider.setTickInterval(10)
-        self.slider.valueChanged.connect(self.get_value)
-        self.text1 = QLabel("0")
-        self.text1.setAlignment(Qt.AlignCenter)
-        self.text2 = QLabel("Hello Python")
-
-        vbox.addStretch()
-        vbox.addWidget(self.text1)
-        vbox.addWidget(self.text2)
-        vbox.addWidget(self.slider)
-        self.setLayout(vbox)
-
-        self.show()
-
-    def get_value(self):
-        val = self.slider.value()
-        print(val)
-        self.text1.setText(str(val))
-        font_size = self.slider.value()
-        font = QFont("Times", font_size)
-        self.text2.setFont(font)
-
-
-def main():
-    app = QApplication(sys.argv)
-    window = Window()
-    sys.exit(app.exec_())
-
-
-if __name__ == '__main__':
-    main()
-
+# ______ ___
+# ____ _5._W.. ______ _
+# ____ _5._C.. ______ __
+# ____ _5._G.. ______ _ QF..
+#
+#
+# c_ Window QW..
+#     ___ -
+#         s__. -
+#         sWT.. *Slider Widget
+#         sG.. 350, 150, 600, 500
+#         ?
+#
+#     ___ ui
+#         vbox _ QVBL..
+#         slider _ QSl.. __.H..
+#         ?.sMi.. 0
+#         ?.sMa.. 100
+#         ?.sTP.. QS__.TA..
+#         ?.sTI.. 10
+#         ?.vC__.c.. ?
+#         text1 _ QL.. "0"
+#         ?.sA.. __.AC..
+#         text2 _ QL.. *Hello Python
+#
+#         v__.aS..
+#         v__.aW.. _1
+#         v__.aW.. _2
+#         v__.aW.. ?
+#         sL.. v__
+#
+#         s..
+#
+#     ___ get_value
+#         val _ s__.v..
+#         print ?
+#         _1.sT.. st. ?
+#         font_size _ s__.v..
+#         font _ QF.. ("Times" ?
+#         _2.sF.. ?
+#
+#
+# ___ main
+#     App _ ?
+#     window _ ?
+#     ___.e.. ?.e..
+#
+# __ _____ __ ______
+#     ?
+#
