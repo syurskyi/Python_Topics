@@ -13,8 +13,8 @@
 #         combo _ QCB.. ?
 #         c__.m.. 150, 100
 #         button _ QPB.. *Save ?
-#         b__.m.. 150 130
-#         b__.c__.c... g_v..
+#         ?.m.. 150 130
+#         ?.c__.c... g_v..
 #         c__.aI.. *Python
 #         c__.aI.. |"C", "C#", "PHP
 #         list1 _ |"Batman", "Superman", "Spiderman"
