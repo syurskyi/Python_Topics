@@ -1,33 +1,32 @@
-______ ___
-____ _5._W.. ______ _
-
-
-class Window(QWidget):
-    def __init__(self):
-        super().__init__()
-        self.setWindowTitle("Horizontal Box Layout")
-        self.setGeometry(350, 150, 400, 400)
-        self.ui()
-
-    def ui(self):
-        hbox = QHBoxLayout()
-        button1 = QPushButton("Button1", self)
-        button2 = QPushButton("Button2")
-        button3 = QPushButton("Button3")
-        hbox.addStretch()
-        hbox.addWidget(button1)
-        hbox.addWidget(button2)
-        hbox.addWidget(button3)
-        hbox.addStretch()
-        self.setLayout(hbox)
-        self.show()
-
-
-def main():
-    app = QApplication(sys.argv)
-    window = Window()
-    sys.exit(app.exec_())
-
-
-if __name__ == '__main__':
-    main()
+# ______ ___
+# ____ _5._W.. ______ _
+#
+#
+# c_ Window QW..
+#     ___ __. -
+#         s__. -
+#         sWT.. *Horizontal Box Layout
+#         sG..350, 150, 400, 400)
+#         ?
+#
+#     ___ ui
+#         hbox  QHBL..
+#         button1  QPB.. *Button1 ?
+#         button2  QPB.. *Button2
+#         button3  QPB.. *Button3
+#         ?.aS..
+#         ?.aW.. _1
+#         ?.aW.. _2
+#         ?.aW.. _3
+#         ?.aS..
+#         sL.. ?
+#         s..
+#
+#
+# ___ main
+#     App _ ?
+#     window _ ?
+#     ___.e.. ?.e..
+#
+# __ _____ __ ______
+#     ?
