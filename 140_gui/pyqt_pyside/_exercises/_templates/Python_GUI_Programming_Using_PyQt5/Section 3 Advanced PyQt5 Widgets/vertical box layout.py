@@ -1,35 +1,34 @@
-______ ___
-____ _5._W.. ______ _
-
-
-class Window(QWidget):
-    def __init__(self):
-        super().__init__()
-        self.setWindowTitle("Vertical Box Layout")
-        self.setGeometry(350, 150, 400, 400)
-        self.ui()
-
-    def ui(self):
-        vbox = QVBoxLayout()
-        button1 = QPushButton("Save")
-        button2 = QPushButton("Exit")
-        button3 = QPushButton("Hello")
-        vbox.addStretch()
-        vbox.addWidget(button1)
-        vbox.addWidget(button2)
-        vbox.addWidget(button3)
-        vbox.addStretch()
-        self.setLayout(vbox)
-
-        self.show()
-
-
-def main():
-    app = QApplication(sys.argv)
-    window = Window()
-    sys.exit(app.exec_())
-
-
-if __name__ == '__main__':
-    main()
-
+# ______ ___
+# ____ _5._W.. ______ _
+#
+#
+# c_ Window QW..
+#     ___ -
+#         s__. -
+#         sWT.. *Vertical Box Layout
+#         sG.. 350, 150, 400, 400
+#         ?
+#
+#     ___ ui
+#         vbox _ QVBL..
+#         button1 _ QPB.. *Save
+#         button2 _ QPB.. *Exit
+#         button3 _ QPB.. *Hello
+#         ?.aS..
+#         ?.aW.. _1
+#         ?.aW.. _2
+#         ?.aW.. _3
+#         ?.aS..
+#         sL.. ?
+#
+#         s..
+#
+#
+# ___ main
+#     App _ ?
+#     window _ ?
+#     ___.e.. ?.e..
+#
+# __ _____ __ ______
+#     ?
+#
