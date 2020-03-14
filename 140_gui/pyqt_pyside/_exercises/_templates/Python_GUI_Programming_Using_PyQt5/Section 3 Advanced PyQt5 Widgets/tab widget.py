@@ -1,52 +1,51 @@
-______ ___
-____ _5._W.. ______ _
-
-
-class Window(QWidget):
-    def __init__(self):
-        super().__init__()
-        self.setWindowTitle("Tab Widget")
-        self.setGeometry(350, 150, 600, 600)
-        self.ui()
-
-    def ui(self):
-        main_layout = QVBoxLayout()
-        self.tabs = QTabWidget()
-
-        self.tab1 = QWidget()
-        self.tab2 = QWidget()
-        self.tab3 = QWidget()
-        self.tabs.addTab(self.tab1, "First Tab")
-        self.tabs.addTab(self.tab2, "Second Tab")
-        self.tabs.addTab(self.tab3, "Last Tab")
-
-        # #################Widgets###############
-        vbox = QVBoxLayout()
-        hbox = QHBoxLayout()
-        self.text = QLabel("Hello Python")
-        self.btn1 = QPushButton("First Tab")
-        self.btn1.clicked.connect(self.btn_func)
-        self.btn2 = QPushButton("Second Tab")
-        vbox.addWidget(self.text)
-        vbox.addWidget(self.btn1)
-        hbox.addWidget(self.btn2)
-        self.tab1.setLayout(vbox)
-        self.tab2.setLayout(hbox)
-
-        main_layout.addWidget(self.tabs)
-        self.setLayout(main_layout)
-
-        self.show()
-
-    def btn_func(self):
-        self.text.setText("Button is active")
-
-
-def main():
-    app=QApplication(sys.argv)
-    window = Window()
-    sys.exit(app.exec_())
-
-
-if __name__ == '__main__':
-    main()
+# ______ ___
+# ____ _5._W.. ______ _
+#
+#
+# c_ Window QW..
+#     ___ -
+#         s__. -
+#         sWT.. *Tab Widget
+#         sG.. 350, 150, 600, 600
+#         ?
+#
+#     ___ ui(self):
+#         main_layout _ QVBL..
+#         tabs _ QTW..
+#
+#         tab1 _ QW..
+#         tab2 _ QW..
+#         tab3 _ QW..
+#         ?.aT.. _1 *First Tab
+#         ?.aT.. _2 *Second Tab
+#         ?.aT.. _3 *Last Tab
+#
+#         # #################Widgets###############
+#         vbox _ QVBL..
+#         hbox _ QHBL..
+#         text _ QL.. *Hello Python
+#         btn1 _ QPB.. *First Tab
+#         ?.c___.c.. ?
+#         btn2 _ QPB.. *Second Tab
+#         v__.aW.. t..
+#         v__.aW.. _1
+#         h__.aW.. _2
+#         _1.sL.. v..
+#         _2.sL.. h..
+#
+#         m_l_.aW.. t..
+#         sL.. m_l..
+#
+#         ?
+#
+#     ___ btn_func
+#         t_.sT.. *Button is active
+#
+#
+# ___ main
+#     App _ ?
+#     window _ ?
+#     ___.e.. ?.e..
+#
+# __ _____ __ ______
+#     ?
