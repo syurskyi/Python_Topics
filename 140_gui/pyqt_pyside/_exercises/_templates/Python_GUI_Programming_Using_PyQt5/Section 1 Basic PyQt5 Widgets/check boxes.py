@@ -11,7 +11,7 @@
 #         ?
 #
 #     ___ ui
-#         name _ QLineEdit ?
+#         name _ QLE.. ?
 #         ?.sPT.. Enter your name
 #         surname _ QLE.. ?
 #         ?.sPT.. Enter your surname
