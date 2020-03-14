@@ -1,52 +1,51 @@
-______ ___
-____ _5._W.. ______ _
-
-
-class Window(QWidget):
-    def __init__(self):
-        super().__init__()
-        self.setWindowTitle("Table Widget")
-        self.setGeometry(350, 150, 400, 400)
-        self.ui()
-
-    def ui(self):
-        vbox = QVBoxLayout()
-        self.table = QTableWidget()
-        btn = QPushButton("Get")
-        self.table.setRowCount(5)
-        self.table.setColumnCount(3)
-        self.table.setHorizontalHeaderItem(0, QTableWidgetItem("Name"))
-        self.table.setHorizontalHeaderItem(1, QTableWidgetItem("Surname"))
-        self.table.setHorizontalHeaderItem(2, QTableWidgetItem("Address"))
-        # self.table.horizontalHeader().hide()
-        # self.table.verticalHeader().hide()
-        self.table.setItem(0, 0, QTableWidgetItem("First Item"))
-        self.table.setItem(0, 1, QTableWidgetItem("2th Item"))
-        self.table.setItem(1, 2, QTableWidgetItem("3th Item"))
-        self.table.setItem(4, 2, QTableWidgetItem("4t Item"))
-        self.table.setEditTriggers(QAbstractItemView.NoEditTriggers)
-        self.table.doubleClicked.connect(self.double_clicked)
-        btn.clicked.connect(self.get_value)
-        vbox.addWidget(self.table)
-        vbox.addWidget(btn)
-        self.setLayout(vbox)
-        self.show()
-
-    def get_value(self):
-        for item in self.table.selectedItems():
-            print(item.text(), item.row(), item.column())
-
-    def double_clicked(self):
-        for item in self.table.selectedItems():
-            print(item.text(), item.row(), item.column())
-
-
-def main():
-    app = QApplication(sys.argv)
-    window = Window()
-    sys.exit(app.exec_())
-
-
-if __name__ == '__main__':
-    main()
-
+# ______ ___
+# ____ _5._W.. ______ _
+#
+#
+# c_ Window QW..
+#     ___ -
+#         s__. -
+#         sWT.. *Table Widget
+#         sG.. 350, 150, 400, 400
+#         ?
+#
+#     ___ ui
+#         vbox _ QVBL..
+#         table _ QTW..
+#         btn _ QPB.. *Get
+#         ?.sRC.. 5
+#         ?.sCC.. 3
+#         ?.sHHI.. 0, QTWI.. *Name
+#         ?.sHHI.. 1, QTWI.. *Surname
+#         ?.sHHI.. 2, QTWI.. *Address
+#         # ?.horizontalHeader().hide()
+#         # ?.verticalHeader().hide()
+#         ?.sI..0, 0, QTWI.. *First Item
+#         ?.sI..0, 1, QTWI.. *2th Item
+#         ?.sI..1, 2, QTWI.. *3th Item
+#         ?.sI..4, 2, QTWI.. *4t Item
+#         ?.sET.. QAIV__.NET..
+#         ?.dC__.c.. d_c..
+#         btn.c__.c.. g_v..
+#         v__.aW.. ?
+#         v__.aW. b..
+#         sL.. v..
+#         s..
+#
+#     ___ get_value
+#         ___ item __ ?.sI..
+#             print ?.t.. ?.r.. ?.c..
+#
+#     ___ double_clicked
+#         ___ item __ ?.sI..
+#             print ?.t.. ?.r.. ?.c..
+#
+#
+# ___ main
+#     App _ ?
+#     window _ ?
+#     ___.e.. ?.e..
+#
+# __ _____ __ ______
+#     ?
+#
