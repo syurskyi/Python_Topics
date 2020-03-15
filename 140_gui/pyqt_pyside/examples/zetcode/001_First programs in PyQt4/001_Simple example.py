@@ -1,14 +1,3 @@
-"""
-ZetCode PyQt4 tutorial 
-
-In this example, we create a simple
-window in PyQt4.
-
-author: Jan Bodnar
-website: zetcode.com 
-last edited: October 2011
-"""
-
 import sys
 from PySide2.QtWidgets import QApplication, QWidget
 
