@@ -2,7 +2,7 @@
 # ____ _5._W.. ______ _
 #
 #
-# c_ Window QWidget
+# c_ Window QW..
 #     ___ -
 #         s___. -
 #         sWT.. *Using Comboboxes

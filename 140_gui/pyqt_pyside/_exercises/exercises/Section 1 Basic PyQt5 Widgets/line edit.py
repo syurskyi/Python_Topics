@@ -1,38 +1,38 @@
-# ______ ___
-# ____ _5._W.. ______ _
-#
-#
-# c_ Window(QWidget):
-#     ___ -
-#         s___. -
-#         sWT.. *Using LineEdits
-#         s  50, 50, 350, 350
-#         ?
-#
-#     ___ ui
-#         nameTextBox _ QLineEdit ?
-#         ?.sPT.. *Please Enter your name
-#         ?.m.. 120 50
-#         passTextBox _ QLE.. ?
-#         ?.sPT.. *Please Enter Your Password")
-#         ?.sEM.. QLE__.P..
-#         ?.m.. 120, 80
-#         button _ QPB.. *Save ?
-#         ?.m.. 180, 110
-#         ?.c__.c.. ?
-#         ?
-#
-#     ___ get_values
-#         name _ nTtB__.t..
-#         password _ pTB__.t..
-#         sWT.. ("Your name is : " + ? + "Your Password is :" + ?
-#
-#
-# ___ main
-#     App _ ?
-#     window _ ?
-#     ___.e.. ?.e._
-#
-#
-# __ _____ __ ______
-#     ?
+import sys
+from PyQt5.QtWidgets import *
+
+
+class Window(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Using LineEdits")
+        self.setGeometry(50, 50, 350, 350)
+        self.ui()
+
+    def ui(self):
+        self.nameTextBox = QLineEdit(self)
+        self.nameTextBox.setPlaceholderText('Please Enter your name')
+        self.nameTextBox.move(120, 50)
+        self.passTextBox = QLineEdit(self)
+        self.passTextBox.setPlaceholderText("Please Enter Your Password")
+        self.passTextBox.setEchoMode(QLineEdit.Password)
+        self.passTextBox.move(120, 80)
+        button = QPushButton('Save', self)
+        button.move(180, 110)
+        button.clicked.connect(self.get_values)
+        self.show()
+
+    def get_values(self):
+        name = self.nameTextBox.text()
+        password = self.passTextBox.text()
+        self.setWindowTitle ("Your name is : " + self.name + "Your Password is :" + self.password)
+
+
+def main():
+    App = QApplication(sys.argv)
+    window = Window()
+    sys.exit(App.exec_())
+
+
+if __name__ == '__main__':
+    main()

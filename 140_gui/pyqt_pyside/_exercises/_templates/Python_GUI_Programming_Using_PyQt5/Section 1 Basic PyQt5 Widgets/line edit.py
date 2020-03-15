@@ -2,7 +2,7 @@
 # ____ _5._W.. ______ _
 #
 #
-# c_ Window(QWidget):
+# c_ Window QW..
 #     ___ -
 #         s___. -
 #         sWT.. *Using LineEdits
@@ -10,7 +10,7 @@
 #         ?
 #
 #     ___ ui
-#         nameTextBox _ QLineEdit ?
+#         nameTextBox _ QLE.. ?
 #         ?.sPT.. *Please Enter your name
 #         ?.m.. 120 50
 #         passTextBox _ QLE.. ?
