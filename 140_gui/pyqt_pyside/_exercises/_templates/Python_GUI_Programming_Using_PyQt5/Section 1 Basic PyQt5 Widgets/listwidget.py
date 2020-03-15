@@ -10,7 +10,7 @@
 #
 #
 #     ___ UI
-#         addRecord _ QL..
+#         addRecord _ QLE..
 #         ?.m.. 100, 50
 #         listWidget _ QLW..
 #         ?.m.. 100,80
@@ -35,7 +35,7 @@
 #         bDA__.m.. 360,170
 #         bDA__.c__.c.. fDA..
 #
-#         show()
+#         ?
 #
 #
 #     ___ funcDeleteAll

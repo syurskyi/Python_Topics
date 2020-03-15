@@ -1,64 +1,67 @@
-# ______ ___
-# ____ _5._W.. ______ _
-#
-# c_ Window QW..
-#     ___ -
-#         s__. -
-#         sWT.. *Using list widget
-#         sG.. 50,50,500,500
-#         ?
-#
-#
-#     ___ UI
-#         addRecord _ QL..
-#         ?.m.. 100, 50
-#         listWidget _ QLW..
-#         ?.m.. 100,80
-#         ##################################################
-#         list1_ "Batman","Superman", "Spiderman"
-#         lW__.aI.. ?
-#         lW__.aI.. *Heman
-#
-#         # for number in range(5,11):
-#         #     listWidget.addItem(str(number))
-#         ##################################################
-#         btnAdd _ QPB.. *Add ?
-#         bA__.m.. 360,80
-#         bA__.c__.c.. fA..
-#         bD.. _ QPB.. *Delete ?
-#         bD__.m.. 360,110)
-#         bD__.c___.c.. fD..
-#         btnGet _ QPB.. *Get ?
-#         bG__.m.. 360,140)
-#         bG__.c__.c.. fG..
-#         btnDeleteAll _ QPB.. *Delete All ?
-#         bDA__.m.. 360,170
-#         bDA__.c__.c.. fDA..
-#
-#         show()
-#
-#
-#     ___ funcDeleteAll
-#         lW__.cl..
-#     ___ funcGet
-#         val _ lW__.cI__.t..
-#         print ?
-#
-#     ___ funcDelete
-#         id _ lW__.cR..
-#         print ?
-#         lW__.tI.. ?
-#     ___ funcAdd
-#         val _ aR__.t..
-#         lW__.aI.. ?
-#         aR__.sT.. ""
-#
-#
-#
-# ___ main
-#     App _ ?
-#     window _ ?
-#     ___.e.. ?.e..
-#
-# __ _____ __ ______
-#     ?
+import sys
+from PyQt5.QtWidgets import *
+
+class Window(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle('Using list widget')
+        self.setGeometry(50,50,500,500)
+        self.UI()
+
+
+    def UI(self):
+        self.addRecord = QLineEdit(self)
+        self.addRecord.move(100, 50)
+        self.listWidget = QListWidget(self)
+        self.listWidget.move(100,80)
+        ##################################################
+        list1 = ["Batman","Superman", "Spiderman"]
+        self.listWidget.addItems(list1)
+        self.listWidget.addItem('Heman')
+
+        # for number in range(5,11):
+        #     listWidget.addItem(str(number))
+        ##################################################
+        btnAdd = QPushButton("Add", self)
+        btnAdd.move(360,80)
+        btnAdd.clicked.connect(self.funcAdd)
+        btnDelete = QPushButton("Delete", self)
+        btnDelete.move(360, 110)
+        btnDelete.clicked.connect(self.funcDelete)
+        btnGet = QPushButton("Get", self)
+        btnGet.move(360,140)
+        btnGet.clicked.connect(self.funcGet)
+        btnDeleteAll = QPushButton("Delete All", self)
+        btnDeleteAll.move(360,170)
+        btnDeleteAll.clicked.connect(self.funcDeleteAll)
+
+        self.show()
+
+
+    def funcDeleteAll(self):
+        self.listWidget.clear()
+
+    def funcGet(self):
+        val = self.listWidget.currentItem().text()
+        print(val)
+
+    def funcDelete(self):
+        id = self.listWidget.currentRow()
+        print(id)
+        self.listWidget.takeItem(id)
+
+    def funcAdd(self):
+        val = self.addRecord.text()
+        self.listWidget.addItem(val)
+        self.addRecord.setText("")
+
+
+
+
+def main():
+    App = QApplication(sys.argv)
+    window = Window()
+    sys.exit(App.exec_())
+
+if __name__ == '__main__':
+    main()
