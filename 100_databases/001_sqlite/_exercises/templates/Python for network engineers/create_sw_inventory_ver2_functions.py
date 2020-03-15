@@ -1,24 +1,24 @@
 # -*- coding: utf-8 -*-
-from pprint import pprint
-import sqlite3
+____ pp.. ______ pp..
+______ _3
 
 
-data = [('0000.AAAA.CCCC', 'sw1', 'Cisco 3750', 'London, Green Str'),
+data _ [('0000.AAAA.CCCC', 'sw1', 'Cisco 3750', 'London, Green Str'),
         ('0000.BBBB.CCCC', 'sw2', 'Cisco 3780', 'London, Green Str'),
         ('0000.AAAA.DDDD', 'sw3', 'Cisco 2960', 'London, Green Str'),
         ('0011.AAAA.CCCC', 'sw4', 'Cisco 3750', 'London, Green Str')]
 
 
-def create_connection(db_name):
+___ create_connection(db_name):
     '''
     Функция создает соединение с БД db_name
     и возвращает его
     '''
-    connection = sqlite3.connect(db_name)
+    connection _ _3.connect(db_name)
     return connection
 
 
-def write_data_to_db(connection, query, data):
+___ write_data_to_db(connection, query, data):
     '''
     Функция ожидает аргументы:
      * connection - соединение с БД
@@ -34,7 +34,7 @@ def write_data_to_db(connection, query, data):
     try:
         with connection:
             connection.executemany(query, data)
-    except sqlite3.IntegrityError as e:
+    except _3.IntegrityError as e:
         print('Error occured: ', e)
         return False
     else:
@@ -42,7 +42,7 @@ def write_data_to_db(connection, query, data):
         return True
 
 
-def get_all_from_db(connection, query):
+___ get_all_from_db(connection, query):
     '''
     Функция ожидает аргументы:
      * connection - соединение с БД
@@ -50,20 +50,20 @@ def get_all_from_db(connection, query):
 
     Функция возвращает данные полученные из БД.
     '''
-    result = [row for row in connection.execute(query)]
+    result _ [row for row in connection.execute(query)]
     return result
 
 
 if __name__ == '__main__':
-    con = create_connection('sw_inventory3.db')
+    con _ create_connection('sw_inventory3.db')
 
     print('Создание таблицы...')
-    schema = '''create table switch
+    schema _ '''create table switch
                 (mac text primary key, hostname text, model text, location text)'''
     con.execute(schema)
 
-    query_insert = 'INSERT into switch values (?, ?, ?, ?)'
-    query_get_all = 'SELECT * from switch'
+    query_insert _ 'INSERT into switch values (?, ?, ?, ?)'
+    query_get_all _ 'SELECT * from switch'
 
     print('Запись данных в БД:')
     pprint(data)
