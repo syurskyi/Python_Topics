@@ -4,15 +4,15 @@
 # c_ MyWidget _W..                               # NAdo sozdat' svoj klass ynasledovanuj ot nyznogo nam vidgeta
 #     ___ - ____
 #         s__ ? ____ . -
-#         l = QVB__                              # i kogda mu sozdajom interface dlja nego
+#         l _ QVB__                              # i kogda mu sozdajom interface dlja nego
 #         ____.s_L.. ?                         # nyzno obrachatsja k ekzempljary cherz self
-#         label _ QL.. 'Text'
+#         label _ QL.. *Text
 #         ?.aW.. ?
-#         b _ QPB..'OK'
+#         b _ QPB..*OK
 #         ?.aW ?
 #
 #
-# app = Q...
-# w = ?
+# app _ Q...
+# w _ ?
 # ?.s..
 # ?.e..

@@ -12,16 +12,16 @@
 # c_ myWidget QW..
 #     ___ - ____
 #         s.. ? ____ . -
-#         layout = QVBL.. ____
-#         button = QPB..('Print')
+#         layout _ QVBL.. ?
+#         button _ QPB.. *Print
 #         l__.aW.. ?
-#         line = QLE..
+#         line _ QLE..
 #         l__.aW.. ?
-#         l__.tC__.co.. ____.t..
+#         l__.tC__.co.. ?.t..
 #         # first version
-#         # b___.cl__.co.. ____.a..
+#         # b___.cl__.co.. ?.a..
 #         # second version
-#         # ____.co.. b.. S.. 'cl.. ' ____ S.. 'ac.. '
+#         # ?.co.. b.. S.. 'cl.. ' ? S.. 'ac.. '
 #         # third version
 #         # Zapis cheres dekorator rabotaet tochno takze kak pervuj variant, potomyshto decorator eto funkcija,
 #         # kotoraja polychaet v vide argumenta drygyjy fynkcijy. V pervom variante mu peredajom  prosto funcijy,
@@ -31,13 +31,13 @@
 #
 #         ?b__.cl__.c..
 #         ___ click
-#             ____.a..
+#             a..
 #
 #     # @SLOT()
-#     ___ action ____
+#     ___ action
 #         print 'ACTION'
 #
-#     ___ text ____ arg
+#     ___ text arg
 #         print ?
 #
 #
