@@ -90,9 +90,9 @@ class Body:
 
 
 def main():
-    jeepBuilder = JeepBuilder  # initializing the class
+    jeepBuilder = JeepBuilder()  # initializing the class
 
-    director = Director
+    director = Director()
 
     # Build Jeep
     print("Jeep")

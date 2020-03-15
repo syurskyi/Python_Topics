@@ -28,7 +28,7 @@
 #     """
 #
 #     ___ -
-#         self.product = Product()
+#         product _ P..
 #
 #     ??.?
 #     ___ _build_part_a
