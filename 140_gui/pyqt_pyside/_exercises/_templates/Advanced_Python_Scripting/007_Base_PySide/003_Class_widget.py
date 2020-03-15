@@ -6,10 +6,10 @@
 #         s__ ? ____ . -
 #         l = QVB__                              # i kogda mu sozdajom interface dlja nego
 #         ____.s_L.. ?                         # nyzno obrachatsja k ekzempljary cherz self
-#         label = QL.. 'Text'
-#         ?._W.. ?
-#         b = QPB..'OK')
-#         ?._W ?
+#         label _ QL.. 'Text'
+#         ?.aW.. ?
+#         b _ QPB..'OK'
+#         ?.aW ?
 #
 #
 # app = Q...
