@@ -28,7 +28,7 @@ class PersonBuilder:  # facade
 
     @property
     def works(self):
-        return PersonAddressBuilder(self.person)
+        return PersonJobBuilder(self.person)
 
     def build(self):
         return self.person
@@ -39,7 +39,7 @@ class PersonJobBuilder(PersonBuilder):
         super().__init__(person)
 
     def at(self, company_name):
-        self.company_name = company_name
+        self.person.company_name = company_name
         return self
 
     def as_a(self, position):
@@ -65,7 +65,7 @@ class PersonAddressBuilder(PersonBuilder):
 
     def in_city(self, city):
         self.person.city = city
-        return city
+        return self
 
 if __name__ == '__main__':
     pb = PersonBuilder()
@@ -80,5 +80,5 @@ if __name__ == '__main__':
             .earning(123000)\
         .build()
     print(p)
-    person2 = PersonBuilder.build()
+    person2 = PersonBuilder().build()
     print(person2)
