@@ -4,7 +4,7 @@
 # c_ simpleWindowClass QW..
 #     ___ - ____
 #         s.. ? ____ . -
-#         layout = QVL.. ____   # zdes' sozdan LAyout no on ni kak neoboznachen kak layout nashego widgeta. Na samom
+#         layout = QVL.. ?   # zdes' sozdan LAyout no on ni kak neoboznachen kak layout nashego widgeta. Na samom
 #         # self.setLayout(layout)     # dele zdes' ykazan v kachestve argymenta self. To est' parenta. I dlja layout eto
 #                                      # avtomaticheski oboznachaet vstroitsja k nemy kak osnovnoj layout, esli tam yze
 #                                      #  ne sychestvyet kakogoto layouta. To est' ne prishlos' dal'she pisat'
@@ -16,20 +16,20 @@
 #                                      # I esli v dannom primere mu napishem self.layout mu perezapishem etot metod.
 #                                      # Lychshe kak to ego pereimenovat'  esli mu hotim pomestit' ego v atribyt klassa.
 #
-#         ____.label = QL.. 'Text'   # nadpis label = QLabel objavljaetsja kak lokalnyjy peremenyjy. I mu ne polychaem
+#         label _ QL.. *Text  # nadpis label = QLabel objavljaetsja kak lokalnyjy peremenyjy. I mu ne polychaem
 #                                      # prjmogo dostypa k etomy vidzety. Shto bu imet'  vozmoznost'  obratitsja k nemy
 #                                      # s lybogo metoda, ego nado pomechat' v atribyt klassa - self.label
-#         l__.aW.. ____.l..
-#         ____.bu.. = QPB.. 'Press'
-#         l__.aW.. ____.b..
-#         ____.bu__.cl__.c.. ____.a..    # Posle pervogo nazatija knopki, connect izmenitsja na zakrutie okna.
+#         l__.aW.. ?
+#         bu.. _ QPB.. *Press
+#         l__.aW.. ?
+#         bu__.c__.c.. a..    # Posle pervogo nazatija knopki, connect izmenitsja na zakrutie okna.
 #                                                     # To est' mozno menjat' ne tol'ko tekst no i connectu i signalu,
 #                                                     # to est' lybue svojstva
 #
-#     ___ action ____
-#         ____.l__.sT.. 'New Text'
-#         ____.b__.sT..('Presseed')
-#         ____.b__.cl__.co.. ____.cl..
+#     ___ action
+#         l__.sT.. *New Text
+#         b__.sT.. *Presseed
+#         b__.c__.c.. ____.c..
 #
 # __ ______ __ _____
 #     app = QA..
