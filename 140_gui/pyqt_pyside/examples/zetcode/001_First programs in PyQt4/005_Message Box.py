@@ -11,10 +11,10 @@ last edited: October 2011
 """
 
 import sys
-from PySide import QtGui
+from PySide2.QtWidgets import QWidget, QMessageBox, QApplication
 
 
-class Example(QtGui.QWidget):
+class Example(QWidget):
     def __init__(self):
         super(Example, self).__init__()
 
@@ -28,11 +28,11 @@ class Example(QtGui.QWidget):
 
     def closeEvent(self, event):
 
-        reply = QtGui.QMessageBox.question(self, 'Message',
-                                           "Are you sure to quit?", QtGui.QMessageBox.Yes |
-                                           QtGui.QMessageBox.No, QtGui.QMessageBox.No)
+        reply = QMessageBox.question(self, 'Message',
+                                           "Are you sure to quit?", QMessageBox.Yes |
+                                           QMessageBox.No, QMessageBox.No)
 
-        if reply == QtGui.QMessageBox.Yes:
+        if reply == QMessageBox.Yes:
             event.accept()
         else:
             event.ignore()
@@ -45,7 +45,7 @@ if __name__ == '__main__':
     try:
         import nuke
     except ImportError:
-        app = QtGui.QApplication(sys.argv)
+        app = QApplication(sys.argv)
     main = Example()
     main.show()
 
