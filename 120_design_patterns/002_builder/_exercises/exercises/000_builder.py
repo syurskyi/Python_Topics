@@ -47,14 +47,13 @@ class Builder(ABC):
     Продуктов.
     """
 
-    @abstractmethod
+    @abstractproperty
     def product(self) -> None:
         pass
 
     @abstractmethod
     def produce_part_a(self) -> None:
         pass
-
 
     @abstractmethod
     def produce_part_b(self) -> None:
@@ -124,7 +123,7 @@ class Product1:
     """
 
     def __init__(self) -> None:
-        self.parts = []      # list
+        self.parts =  []      # list
 
     def add(self, part: Any) -> None:
         self.parts.append(part)
@@ -166,12 +165,12 @@ class Director:
         self.builder.produce_part_a()
 
     def build_full_featured_product(self) -> None:
-        self.builder.produce_part_a
+        self.builder.produce_part_a()
         self.builder.produce_part_b()
         self.builder.produce_part_c()
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     """
     Клиентский код создаёт объект-строитель, передаёт его директору, а затем
     инициирует процесс построения. Конечный результат извлекается из объекта-
@@ -189,13 +188,13 @@ if __name__ == "__main__":
     print("\n")
 
     print("Standard full featured product: ")
-    d__.b_f_f_p..
-    b___.p__.l_p..
+    director.build_full_featured_product()
+    builder.product.list_parts()
 
     print("\n")
 
     # Помните, что паттерн Строитель можно использовать без класса Директор.
     print("Custom product: ")
-    b___.p_a
-    b___.p_b
-    b___.p__.l_p..
+    builder.produce_part_a()
+    builder.produce_part_b()
+    builder.product.list_parts()

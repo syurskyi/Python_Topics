@@ -6,22 +6,22 @@
 # #==============================================================================
 # c_ Vehicle o..
 #
-#     ___ - ____ type_name
-#         ____.type _ ?
-#         ____.wheels _ N..
-#         ____.doors _ N..
-#         ____.seats _ N..
+#     ___ -  type_name
+#         type _ ?
+#         wheels _ N..
+#         doors _ N..
+#         seats _ N..
 #
-#     ___ view ____
+#     ___ view
 #         print(
 #             "This vehicle is a " +
-#             ____.ty.. +
+#             ty.. +
 #             " with; " +
-#             st. ____.w.. +
+#             st. w.. +
 #             " wheels, " +
-#             st. ____.d.. +
+#             st. d.. +
 #             " doors, and " +
-#             st. ____.s.. +
+#             st.s.. +
 #             " seats."
 #             )
 #
@@ -33,45 +33,45 @@
 #     __m__ _ ___.____
 #
 #     ??.?
-#     ___ make_wheels ____
+#     ___ make_wheels
 #         ra..
 #
 #     ??.?
-#     ___ make_doors ____
+#     ___ make_doors
 #         ra..
 #
 #     ??.?
-#     ___ make_seats ____
+#     ___ make_seats
 #         ra..
 #
 # #==============================================================================
 # c_ CarBuilder VB..
 #
-#     ___ - ____
-#         ____.vehicle _ V.. "Car "
+#     ___ -
+#         vehicle _ V.. "Car "
 #
-#     ___ make_wheels ____
-#         ____.?.w.. _ 4
+#     ___ make_wheels
+#         ?.w.. _ 4
 #
-#     ___ make_doors ____
+#     ___ make_doors
 #         ____.?.d.. _ 3
 #
-#     ___ make_seats ____
-#         ____.?.s.. _ 5
+#     ___ make_seats
+#         ?.s.. _ 5
 #
 # #==============================================================================
 # c_ BikeBuilder VB..
 #
-#     ___ - ____
-#         ____.vehicle _ V.. "Bike
+#     ___ -
+#         vehicle _ V.. "Bike
 #
-#     ___ make_wheels ____
-#         ____.?.w.. _ 2
+#     ___ make_wheels
+#         ?.w.. _ 2
 #
-#     ___ make_doors ____
-#         ____.?.d.. _ 0
+#     ___ make_doors
+#         ?.d.. _ 0
 #
-#     ___ make_seats ____
+#     ___ make_seats
 #         ____.?.s.. _ 2
 #
 # #==============================================================================
@@ -80,19 +80,19 @@
 #     The director class, this will keep a concrete builder.
 #     """
 #
-#     ___ - ____
-#         ____.builder _ N..
+#     ___ -
+#         builder _ N..
 #
-#     ___ create ____
+#     ___ create
 #         """
 #         Creates and returns a Vehicle using ____.builder
 #         Precondition: not ____.builder is N..
 #         """
-#         a.. no. ____.b.. __ N.., "No defined builder"
-#         ____.?.m..
-#         ____.?.m..
-#         ____.?.m..
-#         r_ ____.?.?
+#         a.. no. b.. __ N.., "No defined builder"
+#         ?.m..
+#         ?.m..
+#         ?.m..
+#         r_ ?.?
 #
 # #==============================================================================
 # __ ______ __ _____

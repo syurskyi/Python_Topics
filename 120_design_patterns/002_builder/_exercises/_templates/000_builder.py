@@ -1,11 +1,11 @@
 # # -*- coding : utf-8 -*-
 # #
 
-# # abc.ABC basically just an extra layer over metaclass=abc.ABCMeta. i.e abc.ABC implicitly defines the metaclass for us.
+# # abc.ABC basically just an extra layer over metaclass_abc.ABCMeta. i.e abc.ABC implicitly defines the metaclass for us.
 # # The only difference is that in the former case you need a simple inheritance and in the latter you need
 # # to specify the metaclass.
 # # New class ABC has ABCMeta as its meta class. Using ABC as a base class has essentially the same effect as specifying
-# # metaclass=abc.ABCMeta, but is simpler to type and easier to read.
+# # metaclass_abc.ABCMeta, but is simpler to type and easier to read.
 
 # #
 # # class abc.ABC
@@ -21,7 +21,7 @@
 # #
 # #    from abc import ABCMeta
 # #
-# #   class MyABC(metaclass=ABCMeta):
+# #   class MyABC(metaclass_ABCMeta):
 # #       pass
 # #
 # #    New in version 3.4.
@@ -98,7 +98,7 @@
 #         можете заставить своих строителей ждать явного запроса на сброс из кода
 #         клиента, прежде чем избавиться от предыдущего результата.
 #         """
-#         product = _product
+#         product _ _product
 #         ?re..
 #         r_ ?
 #
@@ -141,7 +141,7 @@
 #     """
 #
 #     ___ - __ N..
-#         _builder = N..
+#         _builder _ N..
 #
 #     ?p..
 #     ___ builder __ B..
@@ -177,9 +177,9 @@
 #     строителя.
 #     """
 #
-#     director = D..
-#     builder = C..
-#     d__.b.. = b...
+#     director _ D..
+#     builder _ C..
+#     d__.b.. _ b...
 #
 #     print("Standard basic product: ")
 #     d__.b_m

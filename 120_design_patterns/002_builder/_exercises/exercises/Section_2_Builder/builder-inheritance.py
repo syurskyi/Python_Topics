@@ -1,40 +1,40 @@
 # c_ Person:
-#     ___ -  ____
-#         ____.name _ N..
-#         ____.position _ N..
-#         ____.date_of_birth _ N..
+#     ___ -
+#         name _ N..
+#         position _ N..
+#         date_of_birth _ N..
 #
-#     ___ -s ____
-#         r_ _* ____.n..| born on ____.d..| works as a ____.p...|
+#     ___ -s
+#         r_ _* n..| born on d..| works as a p...|
 #
 #     ??
 #     ___ new
 #         r_ P..
 #
 # c_ PersonBuilder:
-#     ___ - ____
-#         ____.person _ P..
+#     ___ -
+#         person _ P..
 #
-#     ___ build ____
-#         r_ ____.?
+#     ___ build
+#         r_ ?
 #
 #
 # c_ PersonInfoBuilder PB..
 #     ___ called ____ name
-#         ____.p__.? _ ?
-#         r_ ____
+#         p__.? _ ?
+#         r_
 #
 #
 # c_ PersonJobBuilder PIB..
 #     ___ works_as_a ____ position
-#         ____.p__.? _ ?
-#         r_ ____
+#         p__.? _ ?
+#         r_
 #
 #
 # c_ PersonBirthDateBuilder PJB..
 #     ___ born ____ date_of_birth
-#         ____.p__.? _ ?
-#         r_ ____
+#         p__.? _ ?
+#         r_
 #
 #
 # __ _______ __ ______
