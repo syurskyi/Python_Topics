@@ -10,13 +10,13 @@ last edited: October 2011
 """
 
 import sys
-from PySide import QtGui
+from PySide2.QtWidgets import QApplication, QWidget
 
 
 def main():
-    app = QtGui.QApplication(sys.argv)
+    app = QApplication(sys.argv)
 
-    w = QtGui.QWidget()
+    w = QWidget()
     w.resize(250, 150)
     w.move(300, 300)
     w.setWindowTitle('Simple')
@@ -26,4 +26,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    main()K
