@@ -3,24 +3,24 @@
 #
 #
 # c_ windowClass(QMW..
-#     ___ - ____
-#         s__ ? ____ . -
-#         ____.w = QW..
-#         ____.sCW.. ____.?  # etot metod est' tol'ko y QMainWindow
+#     ___ -
+#         s__ ? ? . -
+#         w _ QW..
+#         sCW.. ?  # etot metod est' tol'ko y QMainWindow
 #
-#         ____.menuBar _ QMB..     # shto bu programno sozdat' menubar ili statusbar, nyzno snachalo sozdat'
+#         menuBar _ QMB..     # shto bu programno sozdat' menubar ili statusbar, nyzno snachalo sozdat'
 #                                        # etot widget kak objekt
-#         ____.sMB.. ____.?
+#         sMB.. ?
 #
-#         ____.menu = QM.. 'File
-#         ____.mB__.aM.. ____.?
+#         menu _ QM.. *File
+#         mB__.aM.. ?
 #
-#         ____.act1 _ QA.. 'Open' ____
-#         ____.m__.aA.. ____.?
+#         act1 _ QA.. *Open
+#         m__.aA.. ?
 #
 #
 # __ _______ __ ____
-#     app = QA..
-#     w = ?
+#     app _ QA..
+#     w _ ?
 #     ?.s..
 #     ?.e..
