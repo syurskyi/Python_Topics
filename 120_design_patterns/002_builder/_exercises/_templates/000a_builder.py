@@ -5,7 +5,7 @@
 #         __?  ?
 #
 #     ___ getCar
-#         car = C..
+#         car _ C..
 #
 #         # First goes the body
 #         body _ __b__.g..
@@ -16,9 +16,9 @@
 #         c__.s.. ?
 #
 #         # And four wheels
-#         i = 0
+#         i _ 0
 #         w____ ? < 4
-#             wheel = __b__.gW..
+#             wheel _ __b__.gW..
 #             car.aW.. ?
 #             ? +_ 1
 #
@@ -28,9 +28,9 @@
 # # The whole product
 # c_ Car
 #     ___ -
-#         __wheels = li..
-#         __engine = N..
-#         __body = N..
+#         __wheels _ li..
+#         __engine _ N..
+#         __body _ N..
 #
 #     ___ setBody  body
 #         __?  ?
@@ -61,18 +61,18 @@
 # c_ JeepBuilder B..
 #
 #     ___ getWheel
-#         wheel = W..
+#         wheel _ W..
 #         ?.s.. _ 22
 #         r_ ?
 #
 #     ___ getEngine
-#         engine = E..
+#         engine _ E..
 #         ?.h.. _ 400
 #         r_ ?
 #
 #     ___ getBody
-#         body = B..
-#         ?.s.. = "SUV"
+#         body _ B..
+#         ?.s.. _ "SUV"
 #         r_ body
 #
 #
@@ -86,19 +86,19 @@
 #
 #
 # c_ Body
-#     shape = N..
+#     shape _ N..
 #
 #
 # ___ main
-#     jeepBuilder = J..  # initializing the class
+#     jeepBuilder _ J..  # initializing the class
 #
-#     director = D..
+#     director _ D..
 #
 #     # Build Jeep
 #     print("Jeep")
 #
 #     ?.sB... j..
-#     jeep = ?.gC..
+#     jeep _ ?.gC..
 #     ?.s..
 #     print("")
 #

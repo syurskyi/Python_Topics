@@ -12,7 +12,7 @@
 #     """
 #
 #     ___ -
-#         _builder = N..
+#         _builder _ N..
 #
 #     ___ construct builder
 #         _?  ?
@@ -70,10 +70,10 @@
 #
 #
 # ___ main
-#     concrete_builder = C..
-#     director = D..
+#     concrete_builder _ C..
+#     director _ D..
 #     ?.c.. ?
-#     product = c__.pr..
+#     product _ c__.pr..
 #
 #
 # __ _______ __ ______

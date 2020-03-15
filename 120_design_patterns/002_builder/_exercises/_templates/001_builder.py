@@ -39,16 +39,16 @@
 # # Abstract Builder
 # c_ Builder o..
 #
-#     ___ - ____
-#         ____.building _ N..
+#     ___ -
+#         building _ N..
 #
-#     ___ new_building ____
+#     ___ new_building
 #         ____.building _ B..
 #
-#     ___ build_floor ____
+#     ___ build_floor
 #         ra.. N...
 #
-#     ___ build_size ____
+#     ___ build_size
 #         ra.. N..
 #
 # # Concrete Builder
@@ -56,27 +56,27 @@
 #
 # c_ BuilderHouse B..
 #
-#     ___ build_floor ____
-#         ____.building.floor _ 'One'
+#     ___ build_floor
+#         building.floor _ 'One'
 #
-#     ___ build_size ____
-#         ____.building.size _ 'Big'
+#     ___ build_size
+#         building.size _ 'Big'
 #
 #
 # c_ BuilderFlat B..
 #     ___ build_floor ____
-#         ____.building.floor _ 'More than One'
+#         building.floor _ 'More than One'
 #
-#     ___ build_size ____
-#         ____.building.size _ 'Small'
+#     ___ build_size
+#         building.size _ 'Small'
 #
 #
 # # Product
 # c_ Building o..
 #
-#     ___ - ____
-#         ____.floor _ N..
-#         ____.size _ N..
+#     ___ -
+#         floor _ N..
+#         size _ N..
 #
 #     ___ -r ____
 #         r_ 'Floor: 0.f.. | Size: 0.s..'.f.. ____

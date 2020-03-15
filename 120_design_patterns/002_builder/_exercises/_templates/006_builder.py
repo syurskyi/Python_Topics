@@ -13,7 +13,7 @@
 #     ___ getName
 #         r_ _n..
 #
-#     ___ addComponent  component count = 1 unit = "Each"
+#     ___ addComponent  component count _ 1 unit _ "Each"
 #         __c__.ap.. ? ? ?
 #         # print("%s increased %d %s%s" % (self._name, count, unit, component) );
 #
@@ -48,7 +48,7 @@
 #     """Construction class of car"""
 #
 #     ___ buildProduct
-#         car = C..("Mini car")
+#         car _ C..("Mini car")
 #         print("Building @ ....."  ?.g..
 #         ?.aC.. "wheel", 4
 #         ?.aC.. "Bodywork", 1
@@ -61,7 +61,7 @@
 #     """Manor Construction"""
 #
 #     ___ buildProduct
-#         manor = M.. ("Taotao Small Manor")
+#         manor _ M.. ("Taotao Small Manor")
 #         print("Building @ ...."  ?.g..
 #         ?.aC.. 'living room', 1, "between"
 #         ?.aC.. 'bedroom', 2, "between"
@@ -75,14 +75,14 @@
 #     """Construction Management"""
 #
 #     ___ -
-#         __carBuilder = C..
-#         __manorBuilder = M..
+#         __carBuilder _ C..
+#         __manorBuilder _ M..
 #
 #     ___ buildCar  num
 #         count _ 0
 #         products _     # list
 #         w__(c... < n..
-#             car = __cB__.bP..
+#             car _ __cB__.bP..
 #             p__.ap.. ?
 #             c.. +_1
 #             print("Construction completed @ Car @"  c.. c__.gN..
@@ -92,7 +92,7 @@
 #         count _ 0
 #         products _       # list
 #         w___ c.. < n..
-#             manor = __mB__.bP..
+#             manor _ __mB__.bP..
 #             p__.ap.. ?
 #             c.. +_ 1
 #             print("Construction completed @ Each @"  c.. m__.gN...
@@ -102,7 +102,7 @@
 # # Test
 # # ==============================
 # ___ testAdvancedBuilder
-#     builderMgr = B..
+#     builderMgr _ B..
 #     ?.bM.. 2
 #     print()
 #     ?.bC.. 4

@@ -11,14 +11,14 @@
 #     """Abstract Product."""
 #
 #     ??
-#     ___ need_spoon ____
+#     ___ need_spoon 
 #         r_ F..
 #
-#     ___ -s ____
-#         string = ____. -c . -n
+#     ___ -s 
+#         string _ ____. -c . -n
 #         ___ key value __ ____. -d.i..
-#             s.. += "\n@: @".f.. ? ?
-#         s... += "\n"
+#             s.. +_ "\n@: @".f.. ? ?
+#         s... +_ "\n"
 #         r_ s...
 #
 #
@@ -31,7 +31,7 @@
 #     """Concrete Product 2."""
 #
 #     ??
-#     ___ need_spoon ____
+#     ___ need_spoon
 #         r_ T..
 #
 #
@@ -43,26 +43,26 @@
 #     """
 #
 #     @??
-#     ___ - ____
-#         ____.product = N..
-#         ____.toppings = N..
+#     ___ - 
+#         product _ N..
+#         _toppings _ N..
 #
 #     ___ set_flavors ____ flavors
-#         ____.p__.? _ ?
+#         p__.? _ ?
+#         r_ 
+#
+#     ___ set_toppings 
+#         __ t... __ no. N..
+#            p___.t.. _ ?
 #         r_ ____
 #
-#     ___ set_toppings ____
-#         __ ____.t... __ no. N..
-#             ____.p___.t.. _ ____.?
-#         r_ ____
+#     ___ add_spoon 
+#         __ p__.need_spoon
+#             p___.spoon _ 1
+#         r_ 
 #
-#     ___ add_spoon ____
-#         __ ____.p__.need_spoon
-#             ____.p___.spoon = 1
-#         r_ ____
-#
-#     ___ get_product ____
-#         r_ ____.p..
+#     ___ get_product 
+#         r_ p..
 #
 #
 # c_ ConeIceCreamBuilder B..
@@ -72,11 +72,11 @@
 #     It defines and keeps track of the representation it creates.
 #     """
 #
-#     ___ - ____
+#     ___ - 
 #         # super().__init__()  # ok in Python 3.x, not in 2.x
 #         s.. ____. -c ____ |. -  # also ok in Python 2.x
-#         ____.product _ CIC..
-#         ____.toppings _ "hazelnuts"
+#         product _ CIC..
+#         toppings _ "hazelnuts"
 #
 #
 # c_ CupIceCreamBuilder B..
@@ -86,20 +86,20 @@
 #     It defines and keeps track of the representation it creates.
 #     """
 #
-#     ___ - ____
+#     ___ - 
 #         # super().__init__()  # ok in Python 3.x, not in 2.x
 #         s.. ____. -c  ____|. -  # also ok in Python 2.x
-#         ____.product _ CIC..
-#         ____.toppings _ "chocolate chips"
+#         product _ CIC..
+#         toppings _ "chocolate chips"
 #
 #
 # c_ Director o..
 #     """Build an object using the Builder interface."""
 #
-#     ___ - ____ builder
-#         ____.? _ ?
+#     ___ -  builder
+#         ? _ ?
 #
-#     ___ build_product ____ flavors
+#     ___ build_product flavors
 #         """Prepare the product and finally return it to the client.
 #
 #         The Builder class defined above is a "fluent interface", so we can use
@@ -113,7 +113,7 @@
 #         -------
 #         ConeIceCream or CupIceCream
 #         """
-#         r_ ____.b__.set_flavors(
+#         r_ b__.set_flavors(
 #             f..
 #         ).s_t__.ad__.g_p..
 #
@@ -122,16 +122,16 @@
 #
 #
 # ___ main
-#     director = D.. CICB..
-#     product = ?.b_p.. "chocolate", "vanilla", "banana"
+#     director _ D.. CICB..
+#     product _ ?.b_p.. "chocolate", "vanilla", "banana"
 #     print ?
 #
-#     director = D.. CICB..
-#     product = ?.b_p.. "lemon", "strawberry"
+#     director _ D.. CICB..
+#     product _ ?.b_p.. "lemon", "strawberry"
 #     print ?
 #
-#     builder = CICB..
-#     director = D.. ?
+#     builder _ CICB..
+#     director _ D.. ?
 #     b__.t.. _ N..  # the ConeIceCreamBuilder has no more toppings!
 #     product _ d__.b.. "chocolate", "vanilla", "banana"
 #     print ?

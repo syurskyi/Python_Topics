@@ -19,7 +19,7 @@
 #     """Карманный фонарик"""
 # 
 #     ___ - body lamp battery
-#         _shine = F..  # излучать свет
+#         _shine _ F..  # излучать свет
 #         _?  ?
 #         _?  ?
 #         _?  ?
@@ -58,13 +58,13 @@
 #         r_ L..
 # 
 #     ___ create_flashlight
-#         body = b..
-#         lamp = b..
-#         battery = b..
+#         body _ b..
+#         lamp _ b..
+#         battery _ b..
 #         r_ F.. ?  ?  ?
 # 
 # 
-# builder = F..
-# flashlight = ?.c..
+# builder _ F..
+# flashlight _ ?.c..
 # ?.o.
 # print ? # Flashlight [on]

@@ -35,13 +35,13 @@
 # # Abstract Building
 # c_ Building:
 #     ___ -
-#         ____.b_f..
-#         ____.b_s..
+#         b_f..
+#         b_s..
 #
-#     ___ build_floor ____
+#     ___ build_floor 
 #         r.. N..
 #
-#     ___ build_size ____
+#     ___ build_size
 #         r.. N..
 #
 #     ___ -r
@@ -50,19 +50,19 @@
 #
 # # Concrete Buildings
 # c_ House B..
-#     ___ build_floor ____
-#         ____.floor _ 'One'
+#     ___ build_floor 
+#         floor _ 'One'
 #
-#     ___ build_size ____
-#         ____.size _ 'Big'
+#     ___ build_size 
+#         size _ 'Big'
 #
 #
 # c_ Flat B..
-#     ___ build_floor ____
-#         ____.floor _ 'More than One'
+#     ___ build_floor 
+#         floor _ 'More than One'
 #
-#     ___ build_size ____
-#         ____.size _ 'Small'
+#     ___ build_size 
+#         size _ 'Small'
 #
 #
 # # In some very complex cases, it might be desirable to pull out the building
@@ -77,15 +77,15 @@
 #
 #
 # c_ ComplexHouse CB..
-#     ___ build_floor ____
-#         ____.floor _ 'One'
+#     ___ build_floor 
+#         floor _ 'One'
 #
-#     ___ build_size ____
-#         ____.size = 'Big and fancy'
+#     ___ build_size 
+#         size _ 'Big and fancy'
 #
 #
 # ___ construct_building cls
-#     building = ?
+#     building _ ?
 #     ?.b_f..
 #     ?.b_s..
 #     r_ b..
@@ -93,16 +93,16 @@
 #
 # ___ main():
 #     """
-#     >>> house = House()
+#     >>> house _ House()
 #     >>> house
 #     Floor: One | Size: Big
 #
-#     >>> flat = Flat()
+#     >>> flat _ Flat()
 #     >>> flat
 #     Floor: More than One | Size: Small
 #
 #     # Using an external constructor function:
-#     >>> complex_house = construct_building(ComplexHouse)
+#     >>> complex_house _ construct_building(ComplexHouse)
 #     >>> complex_house
 #     Floor: One | Size: Big and fancy
 #     """

@@ -14,35 +14,35 @@
 # 
 # 
 # c_ Builder o..
-#     ___ build_body ____
+#     ___ build_body
 #         r.. N..
 # 
-#     ___ build_lamp ____
+#     ___ build_lamp
 #         r.. N..
 # 
-#     ___ build_battery ____
+#     ___ build_battery
 #         r.. N..
 # 
-#     ___ create_flashlight ____
+#     ___ create_flashlight
 #         r.. N..
 # 
 # 
 # c_ Flashlight o..
 #     """Карманный фонарик"""
-#     ___ - ____  body lamp battery
-#         ____._shine _ F..  # излучать свет
-#         ____._? _ ?
-#         ____._? _ ?
-#         ____._? _ ?
+#     ___ -   body lamp battery
+#         _shine _ F..  # излучать свет
+#         _? _ ?
+#         _? _ ?
+#         _? _ ?
 # 
-#     ___ on ____
-#         ____._shine _ T..
+#     ___ on
+#         _shine _ T..
 # 
-#     ___ off ____
-#         ____._shine _ F..
+#     ___ off
+#         _shine _ F..
 # 
-#     ___ -s ____
-#         shine _ 'on' __ ____._s.. ____ 'off'
+#     ___ -s
+#         shine _ 'on' __ _s.. ____ 'off'
 #         r_ 'Flashlight @'  ?   # string
 # 
 # 
@@ -59,19 +59,19 @@
 # 
 # 
 # c_ FlashlightBuilder B..
-#     ___ build_body ____
+#     ___ build_body
 #         r_ Bo..
 # 
-#     ___ build_battery ____
+#     ___ build_battery
 #         r_ Ba..
 # 
-#     ___ build_lamp ____
+#     ___ build_lamp
 #         r_ L..
 # 
-#     ___ create_flashlight ____
-#         body _ ____.b_b.
-#         lamp _ ____.b_l..
-#         battery _ ____.b_ba..
+#     ___ create_flashlight
+#         body _ b_b.
+#         lamp _ b_l..
+#         battery _ b_ba..
 #         r_ F.. ? ? ?
 # 
 # 
