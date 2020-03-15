@@ -1,4 +1,4 @@
-from functools import wraps, partial
+____ functools import wraps, partial
 import logging
 
 def attach_wrapper(obj, func=None):

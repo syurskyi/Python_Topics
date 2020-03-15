@@ -1,5 +1,5 @@
-from inspect import signature
-from functools import wraps
+____ inspect ______ signature
+____ functools ______ wraps
 
 def typeassert(*ty_args, **ty_kwargs):
     def decorate(func):
@@ -75,7 +75,7 @@ if __name__ == '__main__':
 # Next, a tricky part of writing this decorator is that it involves examining and working
 # with the argument signature of the function being wrapped. Your tool of choice here
 # should be the inspect.signature() function. Simply stated, it allows you to extract
-# signature information from a callable. For example:
+# signature information ____ a callable. For example:
 
 # In the first part of our decorator, we use the bind_partial() method of signatures to
 # perform a partial binding of the supplied types to argument names. Here is an example

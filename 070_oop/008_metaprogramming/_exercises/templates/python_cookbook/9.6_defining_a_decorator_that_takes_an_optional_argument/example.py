@@ -1,5 +1,5 @@
-from functools import wraps, partial
-import logging
+____ functools ____ wraps, partial
+____ logging
 
 def logged(func=None, *, level=logging.DEBUG, name=None, message=None):
     if func is None:
@@ -28,7 +28,7 @@ def spam():
     print('Spam!')
 
 if __name__ == '__main__':
-    import logging
+    ____ logging
     logging.basicConfig(level=logging.DEBUG)
     add(2,3)
     sub(2,3)
@@ -42,7 +42,7 @@ if __name__ == '__main__':
 # Solution
 # Here is a variant of the logging code shown in Recipe 9.5 that defines such a decorator:
 
-# As you can see from the example, the decorator can be used in both a simple form (i.e.,
+# As you can see ____ the example, the decorator can be used in both a simple form (i.e.,
 # @logged) or with optional arguments supplied (i.e., @logged(level=logging.CRITI
 # CAL, name='example')).
 # Discussion

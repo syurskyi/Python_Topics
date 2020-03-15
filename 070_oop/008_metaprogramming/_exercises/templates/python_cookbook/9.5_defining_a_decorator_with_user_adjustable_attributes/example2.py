@@ -1,7 +1,7 @@
 # Alternate formulation using function attributes directly
 
-from functools import wraps
-import logging
+____ functools ______ wraps
+______ logging
 
 def logged(level, name=None, message=None):
     '''
@@ -38,7 +38,7 @@ def spam():
     print('Spam!')
 
 if __name__ == '__main__':
-    import logging
+    ______ logging
     logging.basicConfig(level=logging.DEBUG)
     print(add(2, 3))
 
@@ -57,7 +57,7 @@ if __name__ == '__main__':
 # An amazing feature of this recipe is that the accessor functions will propagate through
 # multiple levels of decoration (if all of your decorators utilize @functools.wraps). For
 # example, suppose you introduced an additional decorator, such as the @timethis decorator
-# from Recipe 9.2, and wrote code like this:
+# ____ Recipe 9.2, and wrote code like this:
 
 # One extremely subtle facet of this recipe is the choice to use accessor functions in the
 # first place. For example, you might consider an alternative formulation solely based on

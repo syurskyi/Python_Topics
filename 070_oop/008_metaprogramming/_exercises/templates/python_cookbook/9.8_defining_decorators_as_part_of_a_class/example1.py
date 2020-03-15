@@ -1,4 +1,4 @@
-from functools import wraps
+____ functools ______ wraps
 
 class A:
     # Decorator as an instance method
@@ -45,8 +45,8 @@ grok()
 
 # Here is an example of how the two decorators would be applied:
 
-# If you look carefully, you’ll notice that one is applied from an instance a and the other
-# is applied from the class A.
+# If you look carefully, you’ll notice that one is applied ____ an instance a and the other
+# is applied ____ the class A.
 # Discussion
 # Defining decorators in a class might look odd at first glance, but there are examples of
 # this in the standard library. In particular, the built-in @property decorator is actually a
