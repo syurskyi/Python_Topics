@@ -1,43 +1,44 @@
-import os
-import sqlite3
-import re
-
-data_filename = 'dhcp_snooping.txt'
-db_filename = 'dhcp_snooping.db'
-schema_filename = 'dhcp_snooping_schema.sql'
-
-regex = re.compile('(\S+) +(\S+) +\d+ +\S+ +(\d+) +(\S+)')
-
-result = []
-
-with open('dhcp_snooping.txt') as data:
-    for line in data:
-        match = regex.search(line)
-        if match:
-            result.append(match.groups())
-
-db_exists = os.path.exists(db_filename)
-
-conn = sqlite3.connect(db_filename)
-
-if not db_exists:
-    print('Creating schema...')
-    with open(schema_filename, 'r') as f:
-        schema = f.read()
-    conn.executescript(schema)
-    print('Done')
-else:
-    print('Database exists, assume dhcp table does, too.')
-
-print('Inserting DHCP Snooping data')
-
-for row in result:
-    try:
-        with conn:
-            query = '''insert into dhcp (mac, ip, vlan, interface)
-                       values (?, ?, ?, ?)'''
-            conn.execute(query, row)
-    except sqlite3.IntegrityError as e:
-        print('Error occured: ', e)
-
-conn.close()
+# ______ __
+# ______ _3
+# ______ re
+#
+# data_filename _ 'dhcp_snooping.txt'
+# db_filename _ 'dhcp_snooping.db'
+# schema_filename _ 'dhcp_snooping_schema.sql'
+#
+# regex _ ?.c.. ('(___1) +(___1) +__2 +__1 +(__2) +(__1)')    # 1 соответствует заполненному полю
+#                                                             # 2 соответствует цифре
+#
+# result _      # list
+#
+# w__ o.. dhcp_snooping.txt __ data
+#     ___ line __ ?
+#         match _ r___.s.. ?
+#         __ ?
+#             r__.ap.. ?.g..
+#
+# db_exists _ __.pa__.ex.. d_f..
+#
+# conn _ _3.c.. d_f..
+#
+# __ no. d_e..
+#     print('Creating schema...')
+#     w__ o.. s_f.. _ __ f
+#         schema _ ?.r..
+#     c__.ex.. ?
+#     print('Done')
+# ____
+#     print('Database exists, assume dhcp table does, too.')
+#
+# print('Inserting DHCP Snooping data')
+#
+# ___ row __ result
+#     ___
+#         w__ c..
+#             query _ i.. i.. dhcp |m.. ip, vlan, interface
+#                        v @ @ @ @
+#             c__.ex.. q.. r..
+#     ______ _3.IntegrityError __ e:
+#         print *Error occured:  ?
+#
+# ?.c..
