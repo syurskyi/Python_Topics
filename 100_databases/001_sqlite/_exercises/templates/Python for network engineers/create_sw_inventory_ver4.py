@@ -1,56 +1,56 @@
-# -*- coding: utf-8 -*-
-____ pp.. ______ pp..
-______ _3
-______ _ver2_ __ dbf
-
-#MAC-адрес sw7 совпадает с MAC-адресом коммутатора sw3 в списке data
-data2 _ [('0055.AAAA.CCCC', 'sw5', 'Cisco 3750', 'London, Green Str'),
-         ('0066.BBBB.CCCC', 'sw6', 'Cisco 3780', 'London, Green Str'),
-         ('0000.AAAA.DDDD', 'sw7', 'Cisco 2960', 'London, Green Str'),
-         ('0088.AAAA.CCCC', 'sw8', 'Cisco 3750', 'London, Green Str')]
-
-
-___ write_rows_to_db(connection, query, data, verbose_False):
-    '''
-    Функция ожидает аргументы:
-     * connection - соединение с БД
-     * query - запрос, который нужно выполнить
-     * data - данные, которые надо передать в виде списка кортежей
-
-    Функция пытается записать поочереди кортежи из списка data.
-    Если кортеж удалось записать успешно, изменения сохраняются в БД.
-    Если в процессе записи кортежа возникла ошибка, транзакция откатывается.
-
-    Флаг verbose контролирует то, будут ли выведены сообщения об удачной
-    или неудачной записи кортежа.
-    '''
-    for row in data:
-        try:
-            with connection:
-                connection.execute(query, row)
-        except sqlite3.IntegrityError as e:
-            if verbose:
-                print("При записи данных '{}' возникла ошибка".format(
-                    ', '.join(row), e))
-        else:
-            if verbose:
-                print("Запись данных '{}' прошла успешно".format(
-                    ', '.join(row)))
-
-
-con _ dbf.create_connection('sw_inventory3.db')
-
-query_insert _ 'INSERT into switch values (?, ?, ?, ?)'
-query_get_all _ 'SELECT * from switch'
-
-print('\nПроверка текущего содержимого БД')
-pprint(dbf.get_all_from_db(con, query_get_all))
-
-print('-' * 60)
-print('Попытка записать данные с повторяющимся MAC-адресом:')
-pprint(data2)
-write_rows_to_db(con, query_insert, data2, verbose_True)
-print('\nПроверка содержимого БД')
-pprint(dbf.get_all_from_db(con, query_get_all))
-
-con.close()
+# # -*- coding: utf-8 -*-
+# ____ pp.. ______ pp..
+# ______ _3
+# ______ _ver2_ __ dbf
+#
+# #MAC-адрес sw7 совпадает с MAC-адресом коммутатора sw3 в списке data
+# data2 _ [('0055.AAAA.CCCC', 'sw5', 'Cisco 3750', 'London, Green Str'),
+#          ('0066.BBBB.CCCC', 'sw6', 'Cisco 3780', 'London, Green Str'),
+#          ('0000.AAAA.DDDD', 'sw7', 'Cisco 2960', 'London, Green Str'),
+#          ('0088.AAAA.CCCC', 'sw8', 'Cisco 3750', 'London, Green Str')]
+#
+#
+# ___ write_rows_to_db connection query data verbose_F..
+#     '''
+#     Функция ожидает аргументы:
+#      * connection - соединение с БД
+#      * query - запрос, который нужно выполнить
+#      * data - данные, которые надо передать в виде списка кортежей
+#
+#     Функция пытается записать поочереди кортежи из списка data.
+#     Если кортеж удалось записать успешно, изменения сохраняются в БД.
+#     Если в процессе записи кортежа возникла ошибка, транзакция откатывается.
+#
+#     Флаг verbose контролирует то, будут ли выведены сообщения об удачной
+#     или неудачной записи кортежа.
+#     '''
+#     ___ row __ d..
+#         ___
+#             w___ c..
+#                 ?.e.. q.. r..
+#         ______ _3.I.. __ e
+#             __ v...
+#                 print("При записи данных '@' возникла ошибка".f..(
+#                     ', '.j.. r..  ?
+#         ____
+#             __ v..
+#                 print("Запись данных '@' прошла успешно".f...(
+#                     ', '.j.. r..
+#
+#
+# con _ d__.c_c.. *sw_inventory3.db
+#
+# query_insert _ I.. i.. s.. v.. @ @ @ @
+# query_get_all _ S.. _ f.. sw..
+#
+# print('\nПроверка текущего содержимого БД')
+# pprint(d)).g.. ? qu_g_a..
+#
+# print('-' * 60)
+# print('Попытка записать данные с повторяющимся MAC-адресом:')
+# pprint(data2)
+# w.. ? q_i.. _2 v.._T..
+# print('\nПроверка содержимого БД')
+# pprint d__.g.. ? q_g_a..
+#
+# ?.c..
