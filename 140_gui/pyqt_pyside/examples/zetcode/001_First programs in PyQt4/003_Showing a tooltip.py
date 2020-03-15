@@ -1,30 +1,21 @@
-"""
-ZetCode PyQt4 tutorial 
-
-This example shows a tooltip on 
-a window and a button
-
-author: Jan Bodnar
-website: zetcode.com 
-last edited: October 2011
-"""
-
 import sys
-from PySide import QtGui
+from PySide2.QtWidgets import (QWidget, QToolTip,
+    QPushButton, QApplication)
+from PySide2.QtGui import QFont
 
 
-class Example(QtGui.QWidget):
+class Example(QWidget):
     def __init__(self):
         super(Example, self).__init__()
 
         self.initUI()
 
     def initUI(self):
-        QtGui.QToolTip.setFont(QtGui.QFont('SansSerif', 10))
+        QToolTip.setFont(QFont('SansSerif', 10))
 
         self.setToolTip('This is a <b>QWidget</b> widget')
 
-        btn = QtGui.QPushButton('Button', self)
+        btn = QPushButton('Button', self)
         btn.setToolTip('This is a <b>QPushButton</b> widget')
         btn.resize(btn.sizeHint())
         btn.move(50, 50)
@@ -41,7 +32,7 @@ if __name__ == '__main__':
     try:
         import nuke
     except ImportError:
-        app = QtGui.QApplication(sys.argv)
+        app = QApplication(sys.argv)
     main = Example()
     main.show()
 
