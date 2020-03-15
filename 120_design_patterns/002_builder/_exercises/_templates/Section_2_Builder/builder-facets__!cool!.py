@@ -2,75 +2,75 @@
 #     ___ -
 #         print('Creating an instance of Person')
 #         # address
-#         ____.street_address = N...
-#         ____.postcode = N...
-#         ____.city = N...
+#         street_address _ N...
+#         postcode _ N...
+#         city _ N...
 #         # employment info
-#         ____.company_name = N...
-#         ____.position = N...
-#         ____.annual_income = N...
+#         company_name _ N...
+#         position _ N...
+#         annual_income _ N...
 # 
 #     ___ -s __ st..
-#         r_ _*Address: ____.s..| ____.p..| ____.c.. \n' +\
-#             _*Employed at ____.c..| as a ____.p.. earning ____.a..
+#         r_ _*Address: s..| p..| c.. \n' +\
+#             _*Employed at c..| as a p.. earning a..
 # 
 # 
 # c_ PersonBuilder:  # facade
-#     ___ - ____ person_N...
+#     ___ -  person_N...
 #         __ ? __ N...
-#             ____.? = P..
+#             ? _ P..
 #         ____
-#             ____.?  ?
+#             ?  ?
 # 
 #     ??
-#     ___ lives ____
-#         r_ P.. ____.p..
+#     ___ lives
+#         r_ P.. p..
 # 
 #     ??
-#     ___ works ____
-#         r_ P.. ____.p...
+#     ___ works
+#         r_ P.. p...
 # 
-#     ___ build ____
-#         r_ ____.p..
+#     ___ build
+#         r_ p..
 # 
 # 
 # c_ PersonJobBuilder PB..
-#     ___ - ____ person
+#     ___ -  person
 #         s__. - p..
 # 
-#     ___ at ____ company_name
-#         ____.?.c.. _ c..
-#         r_ ____
+#     ___ at  company_name
+#         ?.c.. _ c..
+#         r_
 # 
-#     ___ as_a ____ position
-#         ____.p__.? _ ?
-#         r_ ____
+#     ___ as_a  position
+#         p__.? _ ?
+#         r_
 # 
-#     ___ earning ____ annual_income
-#         ____.p__.? _ ?
-#         r_ ____
+#     ___ earning  annual_income
+#         p__.? _ ?
+#         r_
 # 
 # 
 # c_ PersonAddressBuilder PB..
-#     ___  - ____ person
+#     ___  -  person
 #         s__. - ?
 # 
-#     ___ at ____ street_address)
-#         ____.p__.? _ ?
-#         r_ ____
+#     ___ at  street_address)
+#         p__.? _ ?
+#         r_
 # 
-#     ___ with_postcode ____ postcode
-#         ____.p__.? _ ?
-#         r_ ____
+#     ___ with_postcode  postcode
+#         p__.? _ ?
+#         r_
 # 
 #     ___ in_city ____ city
-#         ____.p__.? _ ?
-#         r_ ____
+#         p__.? _ ?
+#         r_
 # 
 # 
 # __ ______ __ _____
-#     pb = PB..
-#     p = ?\
+#     pb _ PB..
+#     p _ ?\
 #         .lives\
 #             .at('123 London Road')\
 #             .in_city('London')\
@@ -81,5 +81,5 @@
 #             .earning(123000)\
 #         .b..
 #     print ?
-#     person2 = PB__.b..
+#     person2 _ PB__.b..
 #     print ?
