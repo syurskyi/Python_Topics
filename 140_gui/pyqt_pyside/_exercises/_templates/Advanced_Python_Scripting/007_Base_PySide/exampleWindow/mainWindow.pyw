@@ -13,25 +13,25 @@
 # # ochen' vazno connektit' knopky posle vuzova fynkcii setupUi, potomyshto do etogo etoj knopki ne sychestvyet
 #
 # c_ exampleWindowClass QW.. ?.Ui_ex..
-#     ___ - ____
-#         s.. ? ____ . -
-#         ____.sU. ____
-#         ____.sWT..('ITEM LIST')
-#         ____.co.. _ 1                                 # shobu dobavit nymeracijy. Zavodim atribyt klassa
-#         ____.a_b__.cl__.co.. ____.aI..
-#         ____.name_le.returnPressed.co.. ____.aI.. # signal vuzuvaetsja kogda nazimaetsja Enter
+#     ___ -
+#         s.. ? ?. -
+#         sU.?
+#         sWT.. *ITEM LIST
+#         co.. _ 1                                 # shobu dobavit nymeracijy. Zavodim atribyt klassa
+#         a_b__.cl__.co.. ____.aI..
+#         n_l_.rP___.co.. ____.aI.. # signal vuzuvaetsja kogda nazimaetsja Enter
 #
-#     ___ addItem ____
-#         text = ____.n_l_.t..    # vo pervuh nado polychit test s lineedit. On vozvrachaet nam tekst s lineedit
+#     ___ addItem
+#         text _ n_l_.t..    # vo pervuh nado polychit test s lineedit. On vozvrachaet nam tekst s lineedit
 #         # print text, type(text)
 #         __ t..                                   # esli teks est' on ne pystoj,
-#             # lb = QLabel(text)
-#             lb = QL.. '@: @'  ____.c.. t..  # mu sozdajom novuj label
-#             ____.i_l_.aW.. ?                # dobavljaem v svoj layout novuj vidget
-#             ____.co.. +_ 1
+#             # lb _ QLabel(text)
+#             lb _ QL.. '@: @'  c.. t..  # mu sozdajom novuj label
+#             i_l_.aW.. ?                # dobavljaem v svoj layout novuj vidget
+#             co.. +_ 1
 #
 # __ _______ __ _____
-#     app = QA..
-#     w = ?
+#     app _ QA..
+#     w _ ?
 #     ?.s..
 #     ?.e..
