@@ -10,10 +10,10 @@ last edited: October 2011
 """
 
 import sys
-from PySide import QtGui
+from PySide2.QtWidgets import QWidget, QDesktopWidget, QApplication
 
 
-class Example(QtGui.QWidget):
+class Example(QWidget):
     def __init__(self):
         super(Example, self).__init__()
 
@@ -28,7 +28,7 @@ class Example(QtGui.QWidget):
 
     def center(self):
         qr = self.frameGeometry()
-        cp = QtGui.QDesktopWidget().availableGeometry().center()
+        cp = QDesktopWidget().availableGeometry().center()
         qr.moveCenter(cp)
         self.move(qr.topLeft())
 
@@ -40,7 +40,7 @@ if __name__ == '__main__':
     try:
         import nuke
     except ImportError:
-        app = QtGui.QApplication(sys.argv)
+        app = QApplication(sys.argv)
     main = Example()
     main.show()
 
