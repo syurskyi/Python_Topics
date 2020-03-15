@@ -1,4 +1,4 @@
-# c_ Person:
+# c_ Person
 #     ___ -
 #         print('Creating an instance of Person')
 #         # address
@@ -15,7 +15,7 @@
 #             _*Employed at c..| as a p.. earning a..
 # 
 # 
-# c_ PersonBuilder:  # facade
+# c_ PersonBuilder  # facade
 #     ___ -  person_N...
 #         __ ? __ N...
 #             ? _ P..
@@ -63,7 +63,7 @@
 #         p__.? _ ?
 #         r_
 # 
-#     ___ in_city ____ city
+#     ___ in_city city
 #         p__.? _ ?
 #         r_
 # 

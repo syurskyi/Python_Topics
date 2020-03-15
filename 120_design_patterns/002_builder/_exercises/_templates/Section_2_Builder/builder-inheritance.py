@@ -1,4 +1,4 @@
-# c_ Person:
+# c_ Person
 #     ___ -
 #         name _ N..
 #         position _ N..
@@ -11,7 +11,7 @@
 #     ___ new
 #         r_ P..
 #
-# c_ PersonBuilder:
+# c_ PersonBuilder
 #     ___ -
 #         person _ P..
 #
