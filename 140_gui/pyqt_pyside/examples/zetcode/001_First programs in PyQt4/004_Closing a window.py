@@ -1,28 +1,16 @@
-"""
-ZetCode PyQt4 tutorial 
-
-This program creates a quit
-button. When we press the button,
-the application terminates. 
-
-author: Jan Bodnar
-website: zetcode.com 
-last edited: October 2011
-"""
-
 import sys
-from PySide import QtGui, QtCore
+from PySide2.QtWidgets import QWidget, QPushButton, QApplication
 
 
-class Example(QtGui.QWidget):
+class Example(QWidget):
     def __init__(self):
         super(Example, self).__init__()
 
         self.initUI()
 
     def initUI(self):
-        qbtn = QtGui.QPushButton('Quit', self)
-        qbtn.clicked.connect(QtCore.QCoreApplication.instance().quit)
+        qbtn = QPushButton('Quit', self)
+        qbtn.clicked.connect(QApplication.instance().quit)
         qbtn.resize(qbtn.sizeHint())
         qbtn.move(50, 50)
 
@@ -38,7 +26,7 @@ if __name__ == '__main__':
     try:
         import nuke
     except ImportError:
-        app = QtGui.QApplication(sys.argv)
+        app = QApplication(sys.argv)
     main = Example()
     main.show()
 
