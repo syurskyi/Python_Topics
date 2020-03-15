@@ -1,21 +1,8 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
-
-"""
-ZetCode PyQt4 tutorial 
-
-This program creates a statusbar.
-
-author: Jan Bodnar
-website: zetcode.com 
-last edited: September 2011
-"""
-
 import sys
-from PySide import QtGui
+from PySide2.QtWidgets import QMainWindow, QApplication
 
 
-class Example(QtGui.QMainWindow):
+class Example(QMainWindow):
     def __init__(self):
         super(Example, self).__init__()
 
@@ -36,7 +23,7 @@ if __name__ == '__main__':
     try:
         import nuke
     except ImportError:
-        app = QtGui.QApplication(sys.argv)
+        app = QApplication(sys.argv)
     main = Example()
     main.show()
 
