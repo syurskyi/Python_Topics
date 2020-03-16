@@ -1,18 +1,7 @@
-"""
-ZetCode PyQt4 tutorial
-
-This example shows three labels on a window
-using absolute positioning.
-
-author: Jan Bodnar
-website: zetcode.com
-last edited: October 2011
-"""
-
 import sys
-from PySide import QtGui
+from PyQt5.QtWidgets import QWidget, QLabel, QApplication
 
-class Example(QtGui.QWidget):
+class Example(QWidget):
 
     def __init__(self):
         super(Example, self).__init__()
@@ -21,13 +10,13 @@ class Example(QtGui.QWidget):
 
     def initUI(self):
 
-        lbl1 = QtGui.QLabel('ZetCode', self)
+        lbl1 = QLabel('ZetCode', self)
         lbl1.move(15, 10)
 
-        lbl2 = QtGui.QLabel('tutorials', self)
+        lbl2 = QLabel('tutorials', self)
         lbl2.move(35, 40)
 
-        lbl3 = QtGui.QLabel('for programmers', self)
+        lbl3 = QLabel('for programmers', self)
         lbl3.move(55, 70)
 
         self.setGeometry(300, 300, 250, 150)
@@ -41,7 +30,7 @@ if __name__ == '__main__':
     try:
         import nuke
     except ImportError:
-        app = QtGui.QApplication(sys.argv)
+        app = QApplication(sys.argv)
     main = Example()
     main.show()
 

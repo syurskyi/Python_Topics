@@ -1,27 +1,21 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
 import sys
-from PySide import QtGui
-
-"""
-ZetCode PyQt4 tutorial 
-
-In this example, we create a skeleton
-of a calculator using a QtGui.QGridLayout.
-
-author: Jan Bodnar
-website: zetcode.com 
-last edited: July 2014
-"""
+from PySide2.QtWidgets import (QWidget, QGridLayout,
+                             QPushButton, QApplication)
 
 
-class Example(QtGui.QWidget):
+class Example(QWidget):
+
     def __init__(self):
-        super(Example, self).__init__()
+        super().__init__()
 
         self.initUI()
 
     def initUI(self):
 
-        grid = QtGui.QGridLayout()
+        grid = QGridLayout()
         self.setLayout(grid)
 
         names = ['Cls', 'Bck', '', 'Close',
@@ -36,23 +30,15 @@ class Example(QtGui.QWidget):
 
             if name == '':
                 continue
-            button = QtGui.QPushButton(name)
+            button = QPushButton(name)
             grid.addWidget(button, *position)
 
         self.move(300, 150)
         self.setWindowTitle('Calculator')
         self.show()
 
+
 if __name__ == '__main__':
-    import sys
-
-    app = None
-    try:
-        import nuke
-    except ImportError:
-        app = QtGui.QApplication(sys.argv)
-    main = Example()
-    main.show()
-
-    if app is not None:
-        app.exec_()
+    app = QApplication(sys.argv)
+    ex = Example()
+    sys.exit(app.exec_())

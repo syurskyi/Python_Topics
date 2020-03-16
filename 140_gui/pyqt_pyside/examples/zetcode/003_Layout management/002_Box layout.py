@@ -1,19 +1,8 @@
-"""
-ZetCode PyQt4 tutorial
-
-In this example, we position two push
-buttons in the bottom-right corner
-of the window.
-
-author: Jan Bodnar
-website: zetcode.com
-last edited: October 2011
-"""
-
 import sys
-from PySide import QtGui
+from PySide2.QtWidgets import (QWidget, QPushButton,
+    QHBoxLayout, QVBoxLayout, QApplication)
 
-class Example(QtGui.QWidget):
+class Example(QWidget):
 
     def __init__(self):
         super(Example, self).__init__()
@@ -22,15 +11,15 @@ class Example(QtGui.QWidget):
 
     def initUI(self):
 
-        okButton = QtGui.QPushButton("OK")
-        cancelButton = QtGui.QPushButton("Cancel")
+        okButton = QPushButton("OK")
+        cancelButton = QPushButton("Cancel")
 
-        hbox = QtGui.QHBoxLayout()
+        hbox = QHBoxLayout()
         hbox.addStretch(1)
         hbox.addWidget(okButton)
         hbox.addWidget(cancelButton)
 
-        vbox = QtGui.QVBoxLayout()
+        vbox = QVBoxLayout()
         vbox.addStretch(1)
         vbox.addLayout(hbox)
 
@@ -47,7 +36,7 @@ if __name__ == '__main__':
     try:
         import nuke
     except ImportError:
-        app = QtGui.QApplication(sys.argv)
+        app = QApplication(sys.argv)
     main = Example()
     main.show()
 
