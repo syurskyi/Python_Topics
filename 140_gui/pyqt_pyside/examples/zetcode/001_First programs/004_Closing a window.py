@@ -1,10 +1,10 @@
 import sys
 from PySide2.QtWidgets import QWidget, QPushButton, QApplication
 
-
 class Example(QWidget):
+
     def __init__(self):
-        super(Example, self).__init__()
+        super().__init__()
 
         self.initUI()
 

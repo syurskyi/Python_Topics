@@ -5,8 +5,9 @@ from PySide2.QtGui import QFont
 
 
 class Example(QWidget):
+
     def __init__(self):
-        super(Example, self).__init__()
+        super().__init__()
 
         self.initUI()
 
@@ -20,7 +21,7 @@ class Example(QWidget):
         btn.resize(btn.sizeHint())
         btn.move(50, 50)
 
-        self.setGeometry(300, 300, 250, 150)
+        self.setGeometry(300, 300, 300, 200)
         self.setWindowTitle('Tooltips')
         self.show()
 

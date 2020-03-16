@@ -1,22 +1,11 @@
-"""
-ZetCode PyQt4 tutorial 
-
-This program shows a confirmation 
-message box when we click on the close
-button of the application window. 
-
-author: Jan Bodnar
-website: zetcode.com 
-last edited: October 2011
-"""
-
 import sys
 from PySide2.QtWidgets import QWidget, QMessageBox, QApplication
 
 
 class Example(QWidget):
+
     def __init__(self):
-        super(Example, self).__init__()
+        super().__init__()
 
         self.initUI()
 
@@ -29,8 +18,8 @@ class Example(QWidget):
     def closeEvent(self, event):
 
         reply = QMessageBox.question(self, 'Message',
-                                           "Are you sure to quit?", QMessageBox.Yes |
-                                           QMessageBox.No, QMessageBox.No)
+                                     "Are you sure to quit?", QMessageBox.Yes |
+                                     QMessageBox.No, QMessageBox.No)
 
         if reply == QMessageBox.Yes:
             event.accept()
