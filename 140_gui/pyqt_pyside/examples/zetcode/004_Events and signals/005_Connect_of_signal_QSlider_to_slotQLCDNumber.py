@@ -1,8 +1,9 @@
 import sys
-from PyQt4 import QtGui, QtCore
+from PySide2.QtCore import Qt
+from PySide2.QtWidgets import *
 
 
-class Example(QtGui.QWidget):
+class Example(QWidget):
 
     def __init__(self):
         super(Example, self).__init__()
@@ -11,10 +12,10 @@ class Example(QtGui.QWidget):
 
     def initUI(self):
 
-        lcd = QtGui.QLCDNumber(self)
-        sld = QtGui.QSlider(QtCore.Qt.Horizontal, self)
+        lcd = QLCDNumber(self)
+        sld = QSlider(Qt.Horizontal, self)
 
-        vbox = QtGui.QVBoxLayout()
+        vbox = QVBoxLayout()
         vbox.addWidget(lcd)
         vbox.addWidget(sld)
 

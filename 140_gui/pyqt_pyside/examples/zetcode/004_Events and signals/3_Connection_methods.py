@@ -1,5 +1,5 @@
-from PySide.QtGui import *
-from PySide.QtCore import *
+from PySide2.QtCore import Qt
+from PySide2.QtWidgets import *
 
 class myWidget(QWidget):
     def __init__(self):
@@ -21,10 +21,10 @@ class myWidget(QWidget):
 
     # @SLOT()
     def action(self):
-        print 'ACTION'
+        print('ACTION')
 
     def text(self, arg):
-        print arg
+        print(arg)
 
 
 

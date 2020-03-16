@@ -1,8 +1,9 @@
 import sys
-from PySide import QtGui, QtCore
+from PySide2.QtWidgets import *
+from PySide2.QtCore import Qt
 
 
-class Example(QtGui.QMainWindow):
+class Example(QMainWindow):
 
     def __init__(self):
         super(Example, self).__init__()
@@ -11,10 +12,10 @@ class Example(QtGui.QMainWindow):
 
     def initUI(self):
 
-        btn1 = QtGui.QPushButton("Get Amounts of Knobs", self)
+        btn1 = QPushButton("Get Amounts of Knobs", self)
         btn1.move(30, 50)
 
-        btn2 = QtGui.QPushButton("Get Name of Node", self)
+        btn2 = QPushButton("Get Name of Node", self)
         btn2.move(150, 50)
 
         btn1.clicked.connect(self.button1Clicked)
@@ -44,7 +45,7 @@ if __name__ == '__main__':
     try:
         import nuke
     except ImportError:
-        app = QtGui.QApplication(sys.argv)
+        app = QApplication(sys.argv)
     main = Example()
     main.show()
 

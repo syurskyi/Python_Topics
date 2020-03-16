@@ -1,20 +1,22 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
 import sys
-from PySide import QtGui, QtCore
+from PySide2.QtWidgets import QMainWindow, QPushButton, QApplication
 
 
-class Example(QtGui.QMainWindow):
+class Example(QMainWindow):
 
     def __init__(self):
-        super(Example, self).__init__()
+        super().__init__()
 
         self.initUI()
 
     def initUI(self):
-
-        btn1 = QtGui.QPushButton("Button 1", self)
+        btn1 = QPushButton("Button 1", self)
         btn1.move(30, 50)
 
-        btn2 = QtGui.QPushButton("Button 2", self)
+        btn2 = QPushButton("Button 2", self)
         btn2.move(150, 50)
 
         btn1.clicked.connect(self.buttonClicked)
@@ -27,21 +29,11 @@ class Example(QtGui.QMainWindow):
         self.show()
 
     def buttonClicked(self):
-
         sender = self.sender()
         self.statusBar().showMessage(sender.text() + ' was pressed')
 
 
 if __name__ == '__main__':
-    import sys
-
-    app = None
-    try:
-        import nuke
-    except ImportError:
-        app = QtGui.QApplication(sys.argv)
-    main = Example()
-    main.show()
-
-    if app is not None:
-        app.exec_()
+    app = QApplication(sys.argv)
+    ex = Example()
+    sys.exit(app.exec_())
