@@ -1,32 +1,33 @@
-import sys
-from PySide2.QtWidgets import QApplication, QWidget
-from PySide2.QtGui import QIcon
-
-
-class Example(QWidget):
-    def __init__(self):
-        super(Example, self).__init__()
-
-        self.initUI()
-
-    def initUI(self):
-        self.setGeometry(300, 300, 250, 150)
-        self.setWindowTitle('Icon')
-        self.setWindowIcon(QIcon('NukeApp128.png'))
-
-        self.show()
-
-
-if __name__ == '__main__':
-    import sys
-
-    app = None
-    try:
-        import nuke
-    except ImportError:
-        app = QApplication(sys.argv)
-    main = Example()
-    main.show()
-
-    if app is not None:
-        app.exec_()
+# ______ ___
+# ____ _2._W.. ______ QA.. QW..
+# ____ _2._G ______ QI..
+#
+#
+# c_ Example QW..
+#
+#     ___ -
+#         s__. -
+#
+#         initUI
+#
+#     ___ initUI
+#         sG.. 300, 300, 300, 220
+#         sWT.. -=*Icon
+#         sWI.. QI.. *NukeApp128.png
+#
+#         ?
+#
+#
+# __ ______ __ ______
+#     ______ ___
+#
+#     app _ N..
+#     ___
+#         ______ n..
+#     ______ I..
+#         app _ ?
+#     main _ ?
+#     ?".s..
+#
+#     __ ? __ no. N..
+#         ?.e.._

@@ -1,15 +1,3 @@
-"""
-ZetCode PyQt4 tutorial 
-
-This program shows a confirmation 
-message box when we click on the close
-button of the application window. 
-
-author: Jan Bodnar
-website: zetcode.com 
-last edited: October 2011
-"""
-
 import sys
 from PySide2.QtWidgets import QWidget, QMessageBox, QApplication
 

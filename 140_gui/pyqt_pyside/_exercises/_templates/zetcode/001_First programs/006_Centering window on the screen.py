@@ -1,14 +1,3 @@
-"""
-ZetCode PyQt4 tutorial 
-
-This program centers a window 
-on the screen. 
-
-author: Jan Bodnar
-website: zetcode.com 
-last edited: October 2011
-"""
-
 import sys
 from PySide2.QtWidgets import QWidget, QDesktopWidget, QApplication
 
