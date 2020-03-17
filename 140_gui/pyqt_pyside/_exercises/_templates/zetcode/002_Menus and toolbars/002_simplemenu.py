@@ -1,33 +1,42 @@
-import sys
-from PySide2.QtWidgets import QMainWindow, QAction, qApp, QApplication
-from PySide2.QtGui import QIcon
-
-
-class Example(QMainWindow):
-
-    def __init__(self):
-        super().__init__()
-
-        self.initUI()
-
-    def initUI(self):
-        exitAct = QAction(QIcon('exit.png'), '&Exit', self)
-        exitAct.setShortcut('Ctrl+Q')
-        exitAct.setStatusTip('Exit application')
-        exitAct.triggered.connect(qApp.quit)
-
-        self.statusBar()
-
-        menubar = self.menuBar()
-        fileMenu = menubar.addMenu('&File')
-        fileMenu.addAction(exitAct)
-
-        self.setGeometry(300, 300, 300, 200)
-        self.setWindowTitle('Simple menu')
-        self.show()
-
-
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = Example()
-    sys.exit(app.exec_())
+# ______ ___
+# ____ _2._W.. ______ QMW.. QAc.. qAp.. QA..
+# ____ _2._G.. ______ QI..
+#
+#
+# c_ Example QMW..
+#
+#     ___ -
+#         s__. -
+#
+#         ?
+#
+#     ___ initUI
+#         exitAct _ QA.. QI.. *exit.png *&Exit ?
+#         ?.sS.. *Ctrl+Q
+#         ?.sST.. *Exit application
+#         ?.t__.c.. qA__.q..
+#
+#         sB..
+#
+#         menubar _ mB..
+#         fileMenu _ ?.aM.. *&File
+#         ?.aA.. eA..
+#
+#         sG.. 300, 300, 300, 200
+#         sWT.. *Simple menu
+#         ?
+#
+#
+# __ ______ __ ______
+#     ______ ___
+#
+#     app _ N..
+#     ___
+#         ______ n..
+#     ______ I..
+#         ? _ ?
+#     main _ ?
+#     ?*.s..
+#
+#     __ ? __ no. N..
+#         ?.e.._
