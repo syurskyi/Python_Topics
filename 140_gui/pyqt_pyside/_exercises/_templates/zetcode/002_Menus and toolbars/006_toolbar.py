@@ -1,29 +1,38 @@
-import sys
-from PyQt5.QtWidgets import QMainWindow, QAction, qApp, QApplication
-from PyQt5.QtGui import QIcon
-
-
-class Example(QMainWindow):
-
-    def __init__(self):
-        super().__init__()
-
-        self.initUI()
-
-    def initUI(self):
-        exitAct = QAction(QIcon('exit24.png'), 'Exit', self)
-        exitAct.setShortcut('Ctrl+Q')
-        exitAct.triggered.connect(qApp.quit)
-
-        self.toolbar = self.addToolBar('Exit')
-        self.toolbar.addAction(exitAct)
-
-        self.setGeometry(300, 300, 300, 200)
-        self.setWindowTitle('Toolbar')
-        self.show()
-
-
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = Example()
-    sys.exit(app.exec_())
+# ______ ___
+# # ____ _2._W.. ______ QM.. QA.. qAp.. QA..
+# # ____ _2._G.. ______ QI..
+# #
+# #
+# # class Example QM..
+# #
+# #     ___ -
+# #         s__. -
+# #
+# #         ?
+# #
+# #     ___ initUI
+# #         exitAct _ QA.. QI.. *exit24.png *Exit ?
+# #         ?.sS.. *Ctrl+Q
+# #         ?.t__.c.. qA__.q..
+# #
+# #         toolbar _ aTB.. *Exit
+# #         ?.aA.. eA..
+# #
+# #         sG.. 300, 300, 300, 200
+# #         sWT.. *Toolbar
+# #         ?
+# #
+# #
+# # __ ______ __ ______
+# #     ______ ___
+# #
+# #     app _ N..
+# #     ___
+# #         ______ n..
+# #     ______ I..
+# #         ? _ ?
+# #     main _ ?
+# #     ?*.s..
+# #
+# #     __ ? __ no. N..
+# #         ?.e.._
