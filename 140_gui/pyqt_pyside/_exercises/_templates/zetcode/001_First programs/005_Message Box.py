@@ -1,41 +1,41 @@
-import sys
-from PySide2.QtWidgets import QWidget, QMessageBox, QApplication
-
-
-class Example(QWidget):
-    def __init__(self):
-        super(Example, self).__init__()
-
-        self.initUI()
-
-    def initUI(self):
-
-        self.setGeometry(300, 300, 250, 150)
-        self.setWindowTitle('Message box')
-        self.show()
-
-    def closeEvent(self, event):
-
-        reply = QMessageBox.question(self, 'Message',
-                                           "Are you sure to quit?", QMessageBox.Yes |
-                                           QMessageBox.No, QMessageBox.No)
-
-        if reply == QMessageBox.Yes:
-            event.accept()
-        else:
-            event.ignore()
-
-
-if __name__ == '__main__':
-    import sys
-
-    app = None
-    try:
-        import nuke
-    except ImportError:
-        app = QApplication(sys.argv)
-    main = Example()
-    main.show()
-
-    if app is not None:
-        app.exec_()
+# ______ ___
+# ____ _2._W.. ______  QW.. QMB.. QA..
+#
+#
+# c_ Example(QW..
+#     ___ -
+#         s__. -
+#
+#         ?
+#
+#     ___ initUI
+#
+#         sG.. 300, 300, 250, 150
+#         sWT.. *Message box
+#         ?
+#
+#     ___ closeEvent event
+#
+#         reply _ QMB__.q.. ? *Message,
+#                                            "Are you sure to quit?", QMB__.Y.. _
+#                                            QMB__.N. QMB__.N.
+#
+#         __ ? __ QMB__.Y..
+#             ?.a..
+#         ____
+#             ?.i..
+#
+#
+# __ ______ __ ______
+#     ______ ___
+#
+#     app _ N..
+#     ___
+#         ______ n..
+#     ______ I..
+#         ? _ ?
+#     main _ ?
+#     ?*.s..
+#
+#     __ ? __ no. N..
+#         ?.e.._
