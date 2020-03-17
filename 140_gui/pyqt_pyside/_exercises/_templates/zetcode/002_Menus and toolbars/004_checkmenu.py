@@ -1,42 +1,51 @@
-______ ___
-____ _2._W.. ______ QMainWindow, QActio QA..
-
-
-class Example(QMainWindow):
-
-    def __init__(self):
-        super().__init__()
-
-        self.initUI()
-
-    def initUI(self):
-
-        self.statusbar = self.statusBar()
-        self.statusbar.showMessage('Ready')
-
-        menubar = self.menuBar()
-        viewMenu = menubar.addMenu('View')
-
-        viewStatAct = QAction('View statusbar', self, checkable=True)
-        viewStatAct.setStatusTip('View statusbar')
-        viewStatAct.setChecked(True)
-        viewStatAct.triggered.connect(self.toggleMenu)
-
-        viewMenu.addAction(viewStatAct)
-
-        self.setGeometry(300, 300, 300, 200)
-        self.setWindowTitle('Check menu')
-        self.show()
-
-    def toggleMenu(self, state):
-
-        if state:
-            self.statusbar.show()
-        else:
-            self.statusbar.hide()
-
-
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = Example()
-    sys.exit(app.exec_())
+# ______ ___
+# ____ _2._W.. ______ QM.. QA.. QA..
+#
+#
+# c_ Example QM..
+#
+#     ___ -
+#         s___. -
+#
+#         ?
+#
+#     ___ initUI
+#
+#         statusbar _ stB..
+#         ?.sM.. *Ready
+#
+#         menubar _ mB..
+#         viewMenu _ ?.aM.. *View
+#
+#         viewStatAct _ QA.. *View statusbar ? ch.._T..
+#         ?.sST.. *View statusbar
+#         ?.sC.. T..
+#         ?.t___.c.. tM..
+#
+#         vM__.aA.. vSA..
+#
+#         sG.. 300, 300, 300, 200
+#         sWT.. *Check menu
+#         ?
+#
+#     ___ toggleMenu, state
+#
+#         __ ?
+#             s__.s..
+#         ____
+#             s__.h..
+#
+#
+# __ ______ __ ______
+#     ______ ___
+#
+#     app _ N..
+#     ___
+#         ______ n..
+#     ______ I..
+#         ? _ ?
+#     main _ ?
+#     ?*.s..
+#
+#     __ ? __ no. N..
+#         ?.e.._
