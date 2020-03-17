@@ -1,31 +1,39 @@
-import sys
-from PyQt5.QtWidgets import QMainWindow, qApp, QMenu, QApplication
-
-class Example(QMainWindow):
-
-    def __init__(self):
-        super().__init__()
-
-        self.initUI()
-
-    def initUI(self):
-        self.setGeometry(300, 300, 300, 200)
-        self.setWindowTitle('Context menu')
-        self.show()
-
-    def contextMenuEvent(self, event):
-        cmenu = QMenu(self)
-
-        newAct = cmenu.addAction("New")
-        opnAct = cmenu.addAction("Open")
-        quitAct = cmenu.addAction("Quit")
-        action = cmenu.exec_(self.mapToGlobal(event.pos()))
-
-        if action == quitAct:
-            qApp.quit()
-
-
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = Example()
-    sys.exit(app.exec_())
+# ______ ___
+# ____ _2._W.. ______ QM.. qAp.. QM.. QA..
+#
+# c_ Example QM..
+#
+#     ___ -
+#         s__. -
+#
+#         ?
+#
+#     ___ initUI(
+#         sG.. 300, 300, 300, 200
+#         sWT.. *Context menu
+#         ?
+#
+#     ___ contextMenuEvent event
+#         cmenu _ QM.. ?
+#
+#         newAct _ ?.aA.. *New
+#         opnAct _ ?.aA.. *Open
+#         quitAct _ ?.aA.. *Quit
+#         action _ ?.e.._ mTG.. ?.p..
+#
+#         __ ? __ qA..
+#             qA__.q..
+#
+# __ ______ __ ______
+#     ______ ___
+#
+#     app _ N..
+#     ___
+#         ______ n..
+#     ______ I..
+#         ? _ ?
+#     main _ ?
+#     ?*.s..
+#
+#     __ ? __ no. N..
+#         ?.e.._
