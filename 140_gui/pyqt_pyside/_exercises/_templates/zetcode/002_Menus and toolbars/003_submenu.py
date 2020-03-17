@@ -1,33 +1,42 @@
-import sys
-from PySide2.QtWidgets import QMainWindow, QAction, QMenu, QApplication
-
-
-class Example(QMainWindow):
-
-    def __init__(self):
-        super().__init__()
-
-        self.initUI()
-
-    def initUI(self):
-        menubar = self.menuBar()
-        fileMenu = menubar.addMenu('File')
-
-        impMenu = QMenu('Import', self)
-        impAct = QAction('Import mail', self)
-        impMenu.addAction(impAct)
-
-        newAct = QAction('New', self)
-
-        fileMenu.addAction(newAct)
-        fileMenu.addMenu(impMenu)
-
-        self.setGeometry(300, 300, 300, 200)
-        self.setWindowTitle('Submenu')
-        self.show()
-
-
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = Example()
-    sys.exit(app.exec_())
+# ______ ___
+# ____ _2._W..______ QW.. QA.. QM.. QA..
+#
+#
+# c_ Example QM..
+#
+#     ___ -
+#         s___. -
+#
+#         ?
+#
+#     ___ initUI
+#         menubar _ mB..
+#         fileMenu _ ?.aM.. *File
+#
+#         impMenu _ QM.. *Import ?
+#         impAct _ QA.. *Import mail ?
+#         iM__.aA.. iA..
+#
+#         newAct _ QA.. *New ?
+#
+#         fM__.aA.. nA..
+#         fM__.aM.. iM..
+#
+#         sG.. 300, 300, 300, 200
+#         sWT.. *Submenu
+#         ?
+#
+#
+# __ ______ __ ______
+#     ______ ___
+#
+#     app _ N..
+#     ___
+#         ______ n..
+#     ______ I..
+#         ? _ ?
+#     main _ ?
+#     ?*.s..
+#
+#     __ ? __ no. N..
+#         ?.e.._
