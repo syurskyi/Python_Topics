@@ -1,5 +1,5 @@
-import sys
-from PySide2.QtWidgets import QMainWindow, QAction, QApplication
+______ ___
+____ _2._W.. ______ QMainWindow, QActio QA..
 
 
 class Example(QMainWindow):
