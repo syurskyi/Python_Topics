@@ -1,34 +1,34 @@
-from pprint import pprint
-
-
-class Stack:
-    #Constructor function
-    def __init__(self, items=[]):
-        self.stackArray = items 
-
-    #Insert element into the Stack
-    def push(self,element):
-        return self.stackArray.append(element)
-
-    #Remove element from the stack
-    def pop(self):
-        return self.stackArray.pop() 
-
-    def isEmpty(self):
-        return not self.stackArray
-
-    def __repr__(self):
-        return "Stack {0}".format(self.stack)
-
-def reverseStack(stack):
-  def reverseStackRecursive(stack, newStack=Stack()):
-     if not stack.isEmpty():
-        newStack.push(stack.pop())
-        reverseStackRecursive(stack, newStack)
-     return newStack
-
-  return reverseStackRecursive(stack)
-
-stk=Stack(range(3))
-pprint(vars(stk))
-pprint (vars(reverseStack(stk)))
+# ____ pp.. ______ pp..
+#
+#
+# c_ Stack
+#     #Constructor function
+#     ___ -  item _  # list
+#         stackArray _ ?
+#
+#     #Insert element into the Stack
+#     ___ push element
+#         r_ ?.ap.. ?
+#
+#     #Remove element from the stack
+#     ___ pop
+#         r_ ?.po.
+#
+#     ___ isEmpty
+#         r_ not sA..
+#
+#     ___ -r
+#         r_ "Stack @".f.. st..
+#
+# ___ reverseStack stack
+#   ___ reverseStackRecursive stack newStack _ S..
+#      __ no. ?.iE..
+#         ?.pu.. ?.po.
+#         rSR.. s.. nS..
+#      r_ nS..
+#
+#   r_ ? ?
+#
+# stk _ Stack ra.. 3
+# pprint(va.. ?
+# pprint (va.. rS.. ?
