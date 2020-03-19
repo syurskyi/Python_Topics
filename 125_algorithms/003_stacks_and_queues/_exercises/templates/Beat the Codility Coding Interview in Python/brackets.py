@@ -1,23 +1,23 @@
-# This is the solution for Stacks And Queues > Brackets
+# # This is the solution for Stacks And Queues > Brackets
+# #
+# # This is marked as PAINLESS difficulty
 #
-# This is marked as PAINLESS difficulty
-
-
-def solution(S):
-    valid = True
-    stack = []
-    for c in S:
-        if c == "[" or c == "(" or c == "{":
-            stack.append(c)
-        elif c == ")":
-            valid = False if not stack or stack.pop() != "(" else valid
-        elif c == "]":
-            valid = False if not stack or stack.pop() != "[" else valid
-        elif c == "}":
-            valid = False if not stack or stack.pop() != "{" else valid
-    return 1 if valid and not stack else 0
-
-
-print(solution("()[]{}()[]{}"))
-
-print(solution("()]]"))
+#
+# ___ solution S
+#     valid _ T..
+#     stack _     # list
+#     ___ c __ ?
+#         __ c __ "[" o. ? __ "(" o. ? __ "{"
+#             ?.ap.. ?
+#         ____ c __ ")":
+#             ? _ F.. __ no. ? o. ?.p.. !_ "(" ____ ?
+#         ____ c __ "]":
+#             ? _ F.. __ no. ? o. ?.p.. !_ "[" ____ ?
+#         ____ c __ "}":
+#             ? _ F.. __ no. ? o. ?.p.. !_ "{" ____ ?
+#     r_ 1 __ ? an. no. ? ____ 0
+#
+#
+# print(?("()[]{}()[]{}"))
+#
+# print(?("()]]"))
