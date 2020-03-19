@@ -10,51 +10,51 @@
 # * removeRear() removes the rear item from the deque. It needs no parameters and returns the item. The deque is modified.
 # * isEmpty() tests to see whether the deque is empty. It needs no parameters and returns a boolean value.
 # * size() returns the number of items in the deque. It needs no parameters and returns an integer.
-# 
+#
 # ## Deque Implementation
 # '''
-# 
+#
 # # %%
 # c_ Deque
 #     ___ -
 #         items     # list
-# 
+#
 #     ___ isEmpty
 #         r_ ? __  # list
-# 
+#
 #     ___ addFront item
 #         ?.ap.. ?
-# 
+#
 #     ___ addRear item
-#         ?.i.. 0 ? 
-# 
+#         ?.i.. 0 ?
+#
 #     ___ removeFront
 #         r_ ?.p..
-# 
+#
 #     ___ removeRear
 #         r_ ?.p.. 0
-# 
+#
 #     ___ size
 #         r_ le. ?
-# 
+#
 # # %%
 # d = ?
-# 
+#
 # # %%
 # ?.a F.. 'hello'
-# 
+#
 # # %%
 # ?.aR.. 'world'
-# 
+#
 # # %%
 # ?.s..
-# 
+#
 # # %%
 # print ?.rF.. + ' ' +  ?.rR..
-# 
+#
 # # %%
 # ?.s...
-# 
+#
 # # %%
 # '''
 # ## Good Job!
