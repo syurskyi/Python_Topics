@@ -1,45 +1,45 @@
-class Stack:
-    #Constructor function
-    def __init__(self):
-        self.stackArray = list()
-        self.maxLimit = 10 
-        self.top = 0
-
-    #Insert element into the Stack
-    def push(self,element):
-        if self.top>=self.maxLimit:
-            return ("The Stack Array Is Full!")
-        self.stackArray.append(element)
-        self.top += 1
-
-    #Remove element from the stack
-    def pop(self):
-        if self.top<=0:
-            return ("The Stack Array Is Empty!")
-        item = self.stackArray.pop()
-        self.top -= 1
-        return item
-
-    #return the size of the stack
-    def size(self):
-        return self.top
-
-    def isEmpty(self):
-        return len(self.stackArray) <= 0
-
-def isPalindrome(str):
-  print "input:", str
-  strStack = Stack()
-  palindrome = False
-  for char in str:
-    strStack.push(char)
-  for char in str:
-    if char == strStack.pop():
-       palindrome = True
-    else:
-       palindrome = False
-
-  return palindrome
-
-print isPalindrome("12321")
-#print isPalindrome("malayalam")
+# c_ Stack
+#     #Constructor function
+#     ___ -
+#         stackArray _ li..
+#         maxLimit _ 10
+#         top _ 0
+#
+#     #Insert element into the Stack
+#     ___ push element
+#         __ ? >_ ?
+#             r_ ("The Stack Array Is Full!")
+#         sA__.ap.. ?
+#         ? +_ 1
+#
+#     #Remove element from the stack
+#     ___ pop
+#         __ ? <_ 0
+#             r_ ("The Stack Array Is Empty!")
+#         item _ sA__.p..
+#         ? -_ 1
+#         r_ ?
+#
+#     #r_ the size of the stack
+#     ___ size
+#         r_ ?
+#
+#     ___ isEmpty
+#         r_ le. sA.. <_ 0
+#
+# ___ isPalindrome st.
+#   print "input:" ?
+#   strStack _ ?
+#   palindrome _ F..
+#   ___ char __ ?
+#     sS__.pu.. ?
+#   ___ char __ ?
+#     __ ? __ sS__.p..
+#        ? _ T..
+#     ____
+#        ? _ F..
+#
+#   r_ ?
+#
+# print iP.. *12321
+# #print isPalindrome("malayalam")
