@@ -1,54 +1,54 @@
-class Stack:
-    def __init__(self):
-        self.stackArray = list()
-        self.maxLimit = 8
-        self.top = 0
-
-    def push(self,element):
-        if self.top>=self.maxLimit:
-            return ("The Stack Array Is Full!")
-        self.stackArray.append(element)
-        self.top += 1
-
-    def pop(self):
-        if self.top<=0:
-            return ("The Stack Array Is Empty!")
-        item = self.stackArray.pop()
-        self.top -= 1
-        return item
-
-    def size(self):
-        return self.top
-
-    def isEmpty(self):
-        return len(self.stackArray) <= 0
-
-
-def pfEval(postfixExpr):
-    print("input:", postfixExpr)
-    stackObject = Stack()
-    tokenList = postfixExpr.split()
-
-    for token in tokenList:
-        if token in "0123456789":
-            stackObject.push(int(token))
-        else:
-            operand2 = stackObject.pop()
-            operand1 = stackObject.pop()
-            result = doMath(token,operand1,operand2)
-            stackObject.push(result)
-    return stackObject.pop()
-
-
-def doMath(op, op1, op2):
-    if op == "*":
-        return op1 * op2
-    elif op == "/":
-        return op1 / op2
-    elif op == "+":
-        return op1 + op2
-    else:
-        return op1 - op2
-
-print(pfEval('1 2 3 * +'))
-
+# c_ Stack
+#     ___ -
+#         stackArray _ li..
+#         maxLimit _ 8
+#         top _ 0
+#
+#     ___ push element
+#         __ ? >_ mL..
+#             r_ ("The Stack Array Is Full!")
+#         stA__.ap.. ?
+#         ? +_ 1
+#
+#     ___ pop
+#         __ ? <_ 0
+#             r_ ("The Stack Array Is Empty!")
+#         item _ sA__.p..
+#         ? -_ 1
+#         r_ ?
+#
+#     ___ size
+#         r_ ?
+#
+#     ___ isEmpty
+#         r_ le. sA.. <_ 0
+#
+#
+# ___ pfEval postfixExpr
+#     print("input:" ?
+#     stackObject _ ?
+#     tokenList _ pE__.sp..
+#
+#     ___ token __ ?
+#         __ ? __ "0123456789":
+#             sO__.pu.. in. ?
+#         ____
+#             operand2 _ sO__.po.
+#             operand1 _ sO__.po.
+#             result _ dM.. ? _1 _2
+#             sO__.pu.. ?
+#     r_ sO__.po.
+#
+#
+# ___ doMath op op1 op2
+#     __ ? __ "*"
+#         r_ _1 * _2
+#     ____ ? __ "/"
+#         r_ _1 / _2
+#     ____ ? __ "+":
+#         r_ _1 + _2
+#     ____
+#         r_ _1 - _2
+#
+# print ?'1 2 3 * +'
+#
