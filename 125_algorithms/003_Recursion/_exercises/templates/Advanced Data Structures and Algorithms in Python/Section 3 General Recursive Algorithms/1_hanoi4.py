@@ -42,20 +42,4 @@
 # hanoi3(3, 'start', 'i', 'dest')
 # print('\nn=3, 4 pegs:')
 # hanoi4(3, 'start', 'i1', 'i2', 'dest')
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
+
