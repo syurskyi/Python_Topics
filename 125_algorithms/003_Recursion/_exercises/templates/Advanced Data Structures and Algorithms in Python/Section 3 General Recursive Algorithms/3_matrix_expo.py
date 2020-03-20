@@ -1,54 +1,54 @@
-class Matrix:
-
-    def __init__(self, rows, cols):
-        self.mat = []
-        self.rows = rows
-        self.cols = cols
-        for i in range(rows):
-            self.mat.append([0] * cols)
-
-    def __mul__(self, other):
-        assert self.cols == other.rows
-        result = Matrix(self.rows, other.cols)
-        for k in range(other.rows):
-            for i in range(self.rows):
-                for j in range(other.cols):
-                    result.mat[i][j] += self.mat[i][k] * other.mat[k][j]
-        return result
-
-    def __mod__(self, mod):
-        result = Matrix(self.rows, self.cols)
-        for i in range(self.rows):
-            for j in  range(self.cols):
-                result.mat[i][j] = self.mat[i][j] % mod
-        return result
-
-    def __pow__(self, power, modulo=666013):
-        assert self.rows == self.cols
-        if power == 0:
-            ret = Matrix(self.rows, self.cols)
-            for i in range(self.cols):
-                ret.mat[i][i] = 1
-            return ret
-
-        half_power = self ** (power // 2)
-        if power % 2 == 0:
-            return (half_power * half_power) % modulo
-        return (half_power * half_power * self) % modulo
-
-    def __str__(self):
-        result = ''
-        for i in range(self.rows):
-            for j in range(self.cols):
-                result += str(self.mat[i][j]) + '\t'
-            result += '\n'
-        return result
-
-
-mat = Matrix(2, 2)
-mat.mat = [[1, 1], [1, 0]]
-print(mat)
-print(mat * mat)
-print(mat * mat * mat)
-print(mat * mat * mat * mat)
-print(mat ** 1000000000000000000) # 10 ** 18, instant execution time
+# c_ Matrix
+#
+#     ___ - rows cols
+#         mat _   # list
+#         ?  ?
+#         ?  ?
+#         ___ i __ ra.. r..
+#             m__.ap.. 0 * c..
+#
+#     ___ __mul__ other
+#         as.. cols __ ?.r..
+#         result _ M.. r.. ?.c..
+#         ___ k __ ra..  ?.r..
+#             ___ i __ ra.. r..
+#                 ___ j __ ra.. ?.c..
+#                     r__.m.. ? ? +_ m.. ? ? * ?.m.. ? ?
+#         r_ ?
+#
+#     ___ __mod__ mod
+#         result _ M.. r.. c..
+#         ___ i __ ra..  r..
+#             ___ j __  ra..  c..
+#                 r___.m.. ? ? _ m.. ? ? % ?
+#         r_ ?
+#
+#     ___ __pow__ power modulo_666013
+#         as.. r.. __ c..
+#         __ ? __ 0
+#             ret _ M.. r.. c..
+#             ___ i __ ra..  c..
+#                 ?.m.. ? ? _ 1
+#             r_ ?
+#
+#         half_power _ ____ ** p.. // 2
+#         __ p.. % 2 __ 0
+#             r_ ? * ? % m..
+#         r_ ? * ? * ____ % m..
+#
+#     ___ -s
+#         result _ ''
+#         ___ i __ ra..  r..
+#             ___ j __ ra.. c..
+#                 r.. +_ st. m.. ? ? + '\t'
+#             r.. +_ '\n'
+#         r_ ?
+#
+#
+# mat _ ?(2, 2)
+# ?.mat _ [[1, 1], [1, 0]]
+# print(mat)
+# print(mat * mat)
+# print(mat * mat * mat)
+# print(mat * mat * mat * mat)
+# print(mat ** 1000000000000000000) # 10 ** 18, instant execution time
