@@ -1,18 +1,18 @@
-#   [[1, 2]
-#   [3, 4]
-#   [5, 6]]
-# OUTPUT
-#   [[6, 5]
-#   [4, 3]
-#   [2, 1]]
-
-def reverse_matrix(M):
-    M.reverse()
-    for row in M:
-        row.reverse()
-
-M = [[1, 2],
-   [3, 4],
-   [5, 6]]
-reverse_matrix(M)
-print(M)
+# #   [[1, 2]
+# #   [3, 4]
+# #   [5, 6]]
+# # OUTPUT
+# #   [[6, 5]
+# #   [4, 3]
+# #   [2, 1]]
+#
+# ___ reverse_matrix M
+#     ?.re..
+#     ___ row __ ?
+#         ?.re..
+#
+# M = [[1, 2],
+#    [3, 4],
+#    [5, 6]]
+# ? ?
+# print ?
