@@ -1,45 +1,37 @@
-def zeros(n):
-    num_zeros = 0
-    while n:
-        num_zeros += n // 5
-        n //= 5
-
-    return num_zeros
-
-def linear_search(num_zeros):
-    n = 0
-    while zeros(n) < num_zeros:
-        n += 1
-
-    if zeros(n) == num_zeros:
-        return n
-    return None
-
-def binary_search(num_zeros):
-
-    left = 0
-    right = 5*num_zeros
-    while left < right:
-        middle = (left + right) // 2
-        if zeros(middle) < num_zeros:
-            left = middle + 1
-        else:
-            right = middle
-
-    if zeros(left) == num_zeros:
-        return left
-    return None
-
-
-for i in range(101):
-    print(i, binary_search(i))
-    assert binary_search(i) == linear_search(i)
-
-
-
-
-
-
-
-
+# ___ zeros n
+#     num_zeros _ 0
+#     w___ n
+#         ? +_ ? // 5
+#         ? //_ 5
+#
+#     r_ ?
+#
+# ___ linear_search num_zeros
+#     n _ 0
+#     w___ zeros ? < ?
+#         ? +_ 1
+#
+#     __ z.. ? __ ?
+#         r_ n
+#     r_ N..
+#
+# ___ binary_search num_zeros
+#
+#     left _ 0
+#     right _ 5*?
+#     w___ ? < r..
+#         middle _ (l.. + ?) // 2
+#         __ z.. ? < n_z..
+#             l.. _ ? + 1
+#         ____
+#             r.. _ m..
+#
+#     __ z.. l.. __ ?
+#         r_ l..
+#     r_ N..
+#
+#
+# ___ i __ ra.. 101
+#     print ? b.. ?
+#     as.. b ? __ l.. ?
 
