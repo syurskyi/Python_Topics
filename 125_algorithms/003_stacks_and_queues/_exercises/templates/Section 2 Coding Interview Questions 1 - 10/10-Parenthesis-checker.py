@@ -1,19 +1,19 @@
-# ((()())()) => True
-# )())) = False
-# (() => False
-# )( => False
-
-def check(s):
-    left = 0
-    for c in s:
-        if c == '(':
-            left += 1
-        else:
-            if left == 0:
-                return False
-            left -= 1
-    return left == 0
-
-print(check("((()())())"))
-print(check("(()()))"))
-print(check(")("))
+# # ((()())()) => True
+# # )())) = False
+# # (() => False
+# # )( => False
+#
+# ___ check s
+#     left _ 0
+#     ___ c __ ?
+#         __ ? __ '('
+#             l.. +_ 1
+#         ____
+#             __ l.. __ 0
+#                 r_ F..
+#             l.. -_ 1
+#     r_ l.. __ 0
+#
+# print(check("((()())())"))
+# print(check("(()()))"))
+# print(check(")("))
