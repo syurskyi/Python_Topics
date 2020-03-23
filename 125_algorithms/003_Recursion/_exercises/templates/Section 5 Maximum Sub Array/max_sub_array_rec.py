@@ -15,7 +15,7 @@
 #
 #
 # msa _ ? 5, -4, 8, -10, -2, 4, -3, 2, 7, -8, 3, -5, 3
-# print(msa.max_sub_array())
+# print ?.m..
 #
 # # input _ [1] * 900
 # # for i in range(10):
