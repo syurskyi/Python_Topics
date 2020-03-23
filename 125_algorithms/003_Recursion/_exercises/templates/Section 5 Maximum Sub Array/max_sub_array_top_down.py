@@ -1,4 +1,4 @@
-class MaxSubArrayTopDown:
+c_ MaxSubArrayTopDown:
     def __init__(self, prices):
         self.prices = prices
         self.sub_solutions = [None] * len(prices)

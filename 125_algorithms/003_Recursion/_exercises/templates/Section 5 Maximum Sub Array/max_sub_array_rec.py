@@ -1,4 +1,4 @@
-class MaxSubArrayRec:
+c_ MaxSubArrayRec:
     def __init__(self, prices):
         self.prices = prices
 
