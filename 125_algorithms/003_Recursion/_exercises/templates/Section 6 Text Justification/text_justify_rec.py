@@ -1,5 +1,4 @@
-import sys
-
+_____ sys
 
 class TextJustifyRec:
     def __init__(self, txt, line_length):

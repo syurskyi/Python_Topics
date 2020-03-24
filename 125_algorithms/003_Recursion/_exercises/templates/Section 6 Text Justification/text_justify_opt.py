@@ -1,5 +1,4 @@
-import sys
-
+_____ sys
 
 class TextJustifyOpt:
     def __init__(self, txt, line_length):
