@@ -1,27 +1,27 @@
-class StringDistanceBottomUp:
-    def __init__(self, str_A, str_B):
-        self.str_A = str_A
-        self.str_B = str_B
-        self.dist = [[]] * (len(str_A) + 1)
-        for a in range(len(str_A) + 1):
-            self.dist[a] = [-1] * (len(str_B) + 1)
-            for b in range(len(str_B) + 1):
-                if a == 0:
-                    self.dist[a][b] = b
-                elif b == 0:
-                    self.dist[a][b] = a
-                else:
-                    replace_cost = 0 if self.str_A[a - 1] == self.str_B[b - 1] else 1
-                    cost_delete = self.dist[a - 1][b] + 1
-                    cost_insert = self.dist[a][b - 1] + 1
-                    cost_replace = self.dist[a - 1][b - 1] + replace_cost
-                    self.dist[a][b] = min(cost_delete, cost_insert, cost_replace)
-            print(self.dist[a])
-
-    def distance(self):
-        return self.dist[len(self.str_A)][len(self.str_B)]
-
-
-#dist = StringDistanceBottomUp("TodayIsSaturday", "TomorrowIsSunday")
-dist = StringDistanceBottomUp("Saturday", "Sundays")
-print(dist.distance())
+# c_ StringDistanceBottomUp
+#     ___ - str_A str_B
+#         ?  ?
+#         ?  ?
+#         dist _ |||| * le. _?| + 1
+#         ___ a __ ra.. le.(_?) + 1
+#             d..|? _ |-1 * le. _? + 1
+#             ___ b __ ra.. le. _? + 1
+#                 __ a __ 0
+#                     d..|?|? _ ?
+#                 ____ ? __ 0
+#                     d..|?|? _ ?
+#                 ____
+#                     replace_cost _ 0 __ _?|? - 1 __ _?|? - 1 ____ 1
+#                     cost_delete _ d..|? - 1||? + 1
+#                     cost_insert _ d..|?||? - 1 + 1
+#                     cost_replace _ d..|? - 1||? - 1 + r..
+#                     d..|?||? _ mi. _d _i _r
+#             print(d..|?
+#
+#     ___ distance
+#         r_ di.. [le. _? le. _?
+#
+#
+# #dist _ StringDistanceBottomUp("TodayIsSaturday", "TomorrowIsSunday")
+# dist _ ? "Saturday", "Sundays"
+# print ?.d..
