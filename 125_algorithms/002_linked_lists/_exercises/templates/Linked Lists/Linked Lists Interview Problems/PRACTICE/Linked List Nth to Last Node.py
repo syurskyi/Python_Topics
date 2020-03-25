@@ -68,11 +68,11 @@
 #
 # ####
 #
-# c_ TestNLast(object):
+# c_ TestNLast o..
 #
-#     def test(self,sol):
+#     ___ test sol
 #
-#         assert_equal(sol(2,a),d)
+#         a_e.. ? 2,a|,d)
 #         print ('ALL TEST CASES PASSED')
 #
 # # Run tests
