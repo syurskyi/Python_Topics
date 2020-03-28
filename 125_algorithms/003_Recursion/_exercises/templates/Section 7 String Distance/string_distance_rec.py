@@ -1,24 +1,24 @@
-class StringDistance:
-    def __init__(self, str_A, str_B):
-        self.str_A = str_A
-        self.str_B = str_B
+c_ StringDistance
+    ___ - str_A str_B
+        ? ?
+        ? ?
 
-    def distance(self):
-        return self.distance_r(len(self.str_A), len(self.str_B))
+    ___ distance
+        r_ _r le. _A le. _B
 
-    def distance_r(self, a, b):
-        if a == 0:
-            return b
-        if b == 0:
-            return a
-        replace_cost = 0 if self.str_A[a - 1] == self.str_B[b - 1] else 1
+    ___ distance_r a b
+        __ a __ 0
+            r_ b
+        __ b __ 0
+            r_ a
+        replace_cost = 0 __ _A|a - 1 __ _B|b - 1 ____ 1
 
-        cost_delete = self.distance_r(a - 1, b) + 1
-        cost_insert = self.distance_r(a, b - 1) + 1
-        cost_replace = self.distance_r(a - 1, b - 1) + replace_cost
-        return min(cost_delete, cost_insert, cost_replace)
+        cost_delete = _r a - 1, b + 1
+        cost_insert = _r a, b - 1 + 1
+        cost_replace = _r(a - 1, b - 1) + r_c..
+        r_ min c_d.. c_i.. c_r..
 
 
 #dist = StringDistance("TodayIsSaturday", "TomorrowIsSunday")
-dist = StringDistance("Saturday", "Sundays")
-print(dist.distance())
+dist = ?("Saturday", "Sundays")
+print(?.d..
