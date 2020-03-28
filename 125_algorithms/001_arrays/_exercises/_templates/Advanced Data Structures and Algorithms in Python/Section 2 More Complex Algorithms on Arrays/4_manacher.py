@@ -1,7 +1,7 @@
 import random
 
 
-def naive(string):
+___ naive(string):
     n = len(string)
     max_len = 0
     for i in range(n):
@@ -11,7 +11,7 @@ def naive(string):
                 max_len = max(max_len, j - i + 1)
     return max_len
 
-def manacher(string):
+___ manacher(string):
     string = '~ ' + ' '.join(string) +' !'
     n = len(string)
     L = [0] * (n+1) # is n enough here?

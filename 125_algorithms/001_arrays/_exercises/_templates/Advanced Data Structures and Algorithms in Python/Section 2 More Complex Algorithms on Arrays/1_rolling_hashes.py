@@ -1,13 +1,13 @@
-import random
+______ ra..
 
-def naive(str):
+___ naive(str):
     str_rev = str[::-1]
     n = len(str)
     for i in range(n, -1, -1):
         if str_rev[:i] == str_rev[i-1::-1]:
             return str + str_rev[i:]
 
-def rolling_hashes(str):
+___ rolling_hashes(str):
     p = 23
     P = 666013
     str_rev = str[::-1]

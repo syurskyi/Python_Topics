@@ -1,7 +1,7 @@
 from collections import deque
 from random import randint
 
-def trivial(array, k):
+___ trivial(array, k):
     n = len(array)
     max_len = 0
     for i in range(n):
@@ -12,7 +12,7 @@ def trivial(array, k):
                 max_len = max(max_len, j - i + 1)
     return max_len
 
-def length_ok(array, length, k):
+___ length_ok(array, length, k):
     maximum = max(array[:length])
     minimum = min(array[:length])
     d_max = deque()
@@ -39,7 +39,7 @@ def length_ok(array, length, k):
 
     return result
 
-def efficient(array, k):
+___ efficient(array, k):
     left = 1
     right = len(array)
     answer = 0
@@ -53,7 +53,7 @@ def efficient(array, k):
     return answer
 
 
-def optimal(array, k):
+___ optimal(array, k):
     d_max = deque()
     d_min = deque()
     d_max.append(0)

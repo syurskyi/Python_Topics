@@ -1,6 +1,6 @@
 from random import randint
 
-def naive(array, s):
+___ naive(array, s):
     n = len(array)
     count = 0
     for i in range(n):
@@ -9,7 +9,7 @@ def naive(array, s):
                 count += 1
     return count
 
-def efficient(array, s):
+___ efficient(array, s):
     n = len(array)
     count = 0
     prefix_sum_counts = {0: 1}

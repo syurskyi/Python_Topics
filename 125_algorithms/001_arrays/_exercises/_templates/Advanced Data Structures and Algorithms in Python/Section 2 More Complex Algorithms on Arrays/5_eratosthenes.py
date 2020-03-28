@@ -1,6 +1,6 @@
 from time import clock
 
-def eratosthenes_1(n):
+___ eratosthenes_1(n):
     sieve = [True] * (n + 1)
     sieve[0] = sieve[1] = False
     for i in range(2, n+1):
@@ -9,7 +9,7 @@ def eratosthenes_1(n):
                 sieve[j] = False
     return [i for i, v in enumerate(sieve) if v]
 
-def eratosthenes_2(n):
+___ eratosthenes_2(n):
     sieve = [True] * (n + 1)
     sieve[0] = sieve[1] = False
     for i in range(4, n+1, 2):
@@ -20,7 +20,7 @@ def eratosthenes_2(n):
                 sieve[j] = False
     return [i for i, v in enumerate(sieve) if v]
 
-def eratosthenes_3(n):
+___ eratosthenes_3(n):
     sieve = [True] * (n + 1)
     sieve[0] = sieve[1] = False
     for i in range(4, n+1, 2):
@@ -32,7 +32,7 @@ def eratosthenes_3(n):
     return [i for i, v in enumerate(sieve) if v]
 
 import numpy as np
-def eratosthenes_np(n):
+___ eratosthenes_np(n):
     sieve = np.ones(n+1, dtype=np.bool)
     sieve[0] = sieve[1] = 0
     sieve[4::2] = 0
@@ -52,7 +52,7 @@ for i in range(2, 1000):
     assert e1 == e3, 'i={}, e1={}, e3={}'.format(i, e1, e3)
     assert e1 == enp, 'i={}, e1={}, enp={}'.format(i, e1, enp)
 
-def time_it(func, n=10000000, repeats=10):
+___ time_it(func, n=10000000, repeats=10):
     t1 = clock()
     for _ in range(repeats):
         assert len(func(n)) > 100
