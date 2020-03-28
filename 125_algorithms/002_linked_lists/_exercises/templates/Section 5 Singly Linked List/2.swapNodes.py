@@ -1,33 +1,33 @@
-from singlyLinkedList import Node, LinkedList
+____ singlyLinkedList ______ Node, LinkedList
 
-def swapNodes(linkedList, dataOne, dataTwo):
+___ swapNodes linkedList dataOne dataTwo
     # 4->3->5->2->7->1 || 4->7->5->2->3->1
     # 4 -> previousFirst
     # 3 -> FirstNode
     # 2 -> previousSecond
     # 7 -> secondNode
-    currentNode = linkedList.head
-    previousFirst = None
-    previousSecond = None
-    while True:
-        if currentNode.data == dataOne:
-            firstNode = currentNode
-            break
-        previousFirst = currentNode
-        currentNode = currentNode.next
-    currentNode = linkedList.head
-    while True:
-        if currentNode.data == dataTwo:
-            secondNode = currentNode
-            break
-        previousSecond = currentNode
-        currentNode = currentNode.next
+    currentNode _ ?.h..
+    previousFirst _ N..
+    previousSecond _ N..
+    w__ T..
+        __ c__.d.. __ dO..
+            firstNode _ c__
+            b..
+        pF__ _ c__
+        c__ _ c__.n..
+    c__ _ ?.h..
+    w__ T..
+        __ c__.d.. __ dT..
+            sN.. _ c__
+            b...
+        pS.. _ c__
+        c__ _ c__.n..
     # Changing pointers
-    previousFirst.next = secondNode
-    nextSecond = secondNode.next
-    secondNode.next = firstNode.next
-    previousSecond.next = firstNode
-    firstNode.next = nextSecond
+    pF__.n.. _ sN..
+    nS.. _ sN__.n..
+    sN__.next _ fN__.n..
+    pS__.n.. _ fN..
+    fN__.n.. _ nS..
 
 nodeOne = Node(4)
 nodeTwo = Node(3)
