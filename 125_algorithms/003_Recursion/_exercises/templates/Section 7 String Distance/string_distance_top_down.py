@@ -1,31 +1,31 @@
-class StringDistanceTopDown:
-    def __init__(self, str_A, str_B):
-        self.str_A = str_A
-        self.str_B = str_B
-        self.dist = [[]] * (len(str_A) + 1)
-        for i in range(len(str_A) + 1):
-            self.dist[i] = [-1] * (len(str_B) + 1)
-
-    def distance(self):
-            return self.distance_r(len(self.str_A), len(self.str_B))
-
-    def distance_r(self, a, b):
-        if self.dist[a][b] != -1:
-            return self.dist[a][b]
-        if a == 0:
-            return b
-        if b == 0:
-            return a
-        replace_cost = 0 if self.str_A[a - 1] == self.str_B[b - 1] else 1
-
-        cost_delete = self.distance_r(a - 1, b) + 1
-        cost_insert = self.distance_r(a, b - 1) + 1
-        cost_replace = self.distance_r(a - 1, b - 1) + replace_cost
-        min_cost = min(cost_delete, cost_insert, cost_replace)
-        self.dist[a][b] = min_cost
-        return min_cost
-
-
-#dist = StringDistanceTopDown("TodayIsSaturday", "TomorrowIsSunday")
-dist = StringDistanceTopDown("Saturday", "Sundays")
-print(dist.distance())
+# c_ StringDistanceTopDown
+#     ___ - str_A str_B
+#         ?  ?
+#         ?  ?
+#         dist _ |||| *  le. _A + 1
+#         ___ i __ ra.. le. _A + 1
+#             d..|i _ |-1 * le. _B| + 1
+#
+#     ___ distance
+#             r_ _r le. _A le. _B
+#
+#     ___ distance_r a b
+#         __ d..|a |b !_ -1
+#             r_ d..|a |b
+#         __ a __ 0
+#             r_ b
+#         __ b __ 0
+#             r_ a
+#         replace_cost _ 0 __ _A|a - 1 __ _B|b - 1 ____ 1
+#
+#         cost_delete _ _r a - 1, b) + 1
+#         cost_insert _ _r a, b - 1) + 1
+#         cost_replace _ _r a - 1, b - 1 + r_c..
+#         min_cost _ mi. c_d.. c_i.. c_r..
+#         d...|a |b _ m_c..
+#         r_ min_cost
+#
+#
+# #dist = StringDistanceTopDown("TodayIsSaturday", "TomorrowIsSunday")
+# dist = ?("Saturday", "Sundays")
+# print(?.d..
