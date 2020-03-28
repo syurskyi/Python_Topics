@@ -56,9 +56,9 @@
 # nodeOne _ Node(10)
 # nodeTwo _ Node(20)
 # nodeThree _ Node(30)
-# linkedList _ LinkedList()
-# linkedList.insertEnd(nodeOne)
-# linkedList.insertEnd(nodeTwo)
-# linkedList.insertEnd(nodeThree)
-# linkedList.deleteHead()
-# linkedList.printList()
+# linkedList _ ?
+# ?.iE.. nO..
+# ?.iE.. nT..
+# ?.iE.. nT..
+# ?.dH..
+# ?.pL..
