@@ -1,7 +1,7 @@
 from pprint import pprint
 
 
-class Node(object):
+c_ Node(object):
 
     def __init__(self, data=None, next_node=None):
         self.data = data
@@ -19,7 +19,7 @@ class Node(object):
     def set_next(self, new_next):
         self.next_node = new_next
 
-class LinkedList(object):
+c_ LinkedList(object):
     def __init__(self, head=None):
         self.head = head
 
