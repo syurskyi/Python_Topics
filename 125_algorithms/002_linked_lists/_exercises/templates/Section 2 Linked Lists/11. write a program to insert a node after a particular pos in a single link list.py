@@ -1,34 +1,34 @@
 from pprint import pprint
 
 
-c_ Node(object):
+c_ Node o..
 
-    def __init__(self, data=None, next_node=None):
+    ___ -  data=None, next_node_N..
         self.data = data
         self.next_node = None 
 
-    def get_data(self):
+    ___ get_data(self):
         return self.data
 
-    def set_data(self, data):
+    ___ set_data(self, data):
         self.data = data
 
-    def get_next(self):
+    ___ get_next(self):
         return self.next_node
 
-    def set_next(self, new_next):
+    ___ set_next(self, new_next):
         self.next_node = new_next
 
-c_ LinkedList(object):
-    def __init__(self, head=None):
+c_ LinkedList o..
+    ___ __init__(self, head=None):
         self.head = head
 
-    def insert(self, data):
+    ___ insert(self, data):
         new_node = Node(data)
         new_node.set_next(self.head)
         self.head = new_node
 
-    def insertatEnd(self,item):
+    ___ insertatEnd(self,item):
         current = self.head
         if current:
             while current.get_next() != None:
@@ -37,7 +37,7 @@ c_ LinkedList(object):
         else:
             self.head = Node(item)
 
-    def insertAtPos(self, pos, item):
+    ___ insertAtPos(self, pos, item):
         if pos > self.size() or pos < 0:
             return None
         if pos == 0:
@@ -56,7 +56,7 @@ c_ LinkedList(object):
                 newNode.set_next(current.get_next())
                 current.set_next(newNode)
 
-    def size(self):
+    ___ size(self):
         current = self.head
         count = 0
         while current:
@@ -65,7 +65,7 @@ c_ LinkedList(object):
         return count 
 
 
-    def search(self, data):
+    ___ search(self, data):
         current = self.head
         found = False
         while current and found is False:
@@ -78,7 +78,7 @@ c_ LinkedList(object):
         return current
 
 
-    def delete(self, data):
+    ___ delete(self, data):
         current = self.head
         previous = None
         found = False
@@ -95,7 +95,7 @@ c_ LinkedList(object):
         else:
             previous.set_next(current.get_next())
 
-    def __str__( self ) :
+    ___ __str__( self ) :
         s = ""
         p = self.head
         if p != None :

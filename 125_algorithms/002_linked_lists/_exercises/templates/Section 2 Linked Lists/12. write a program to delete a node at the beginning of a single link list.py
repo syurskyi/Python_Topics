@@ -1,31 +1,31 @@
 from pprint import pprint
 
 
-c_ Node(object):
+c_ Node o..
 
-    def __init__(self, data=None, next_node=None):
-        self.data = data
-        self.next_node = None 
+    c_ -  data=None, next_node=None):
+        ? ?
+        ? ?
 
-    def get_data(self):
+    c_ get_data(self):
         return self.data
 
-    def get_next(self):
+    c_ get_next(self):
         return self.next_node
 
-    def set_next(self, new_next):
+    c_ set_next(self, new_next):
         self.next_node = new_next
 
-c_ LinkedList(object):
-    def __init__(self, head=None):
+c_ LinkedList o..
+    c_ -(self, head=None):
         self.head = head
 
-    def insert(self, data):
+    c_ insert(self, data):
         new_node = Node(data)
         new_node.set_next(self.head)
         self.head = new_node
 
-    def insertatEnd(self,item):
+    c_ insertatEnd(self,item):
         current = self.head
         if current:
             while current.get_next() != None:
@@ -34,7 +34,7 @@ c_ LinkedList(object):
         else:
             self.head = Node(item)
 
-    def size(self):
+    c_ size(self):
         current = self.head
         count = 0
         while current:
@@ -43,7 +43,7 @@ c_ LinkedList(object):
         return count 
 
 
-    def search(self, data):
+    c_ search(self, data):
         current = self.head
         found = False
         while current and found is False:
@@ -56,7 +56,7 @@ c_ LinkedList(object):
         return current
 
 
-    def delete(self, data):
+    c_ delete(self, data):
         current = self.head
         previous = None
         found = False
@@ -74,12 +74,12 @@ c_ LinkedList(object):
             previous.set_next(current.get_next())
 
 
-    def deleteatbeg(self):
+    c_ deleteatbeg(self):
        if self.head is not None:
           current = self.head
           self.head = current.get_next()
 
-    def __str__( self ) :
+    c_ __str__( self ) :
         s = ""
         p = self.head
         if p != None :
