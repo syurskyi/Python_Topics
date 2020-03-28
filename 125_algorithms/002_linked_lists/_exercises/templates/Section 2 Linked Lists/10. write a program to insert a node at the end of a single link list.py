@@ -1,104 +1,104 @@
-from pprint import pprint
-
-
-c_ Node(object):
-
-    def __init__(self, data=None, next_node=None):
-        self.data = data
-        self.next_node = None 
-
-    def get_data(self):
-        return self.data
-
-    def get_next(self):
-        return self.next_node
-
-    def set_next(self, new_next):
-        self.next_node = new_next
-
-c_ LinkedList(object):
-    def __init__(self, head=None):
-        self.head = head
-
-    def insert(self, data):
-        new_node = Node(data)
-        new_node.set_next(self.head)
-        self.head = new_node
-
-    def insertatEnd(self,item):
-        current = self.head
-        if current:
-            while current.get_next() != None:
-                current = current.get_next()
-            current.set_next(Node(item))
-        else:
-            self.head = Node(item)
-
-
-    def size(self):
-        current = self.head
-        count = 0
-        while current:
-          count += 1
-          current = current.get_next()
-        return count 
-
-
-    def search(self, data):
-        current = self.head
-        found = False
-        while current and found is False:
-            if current.get_data() == data:
-                found = True
-            else:
-                current = current.get_next()
-        if current is None:
-            raise ValueError("Data not in list")
-        return current
-
-
-    def delete(self, data):
-        current = self.head
-        previous = None
-        found = False
-        while current and found is False:
-            if current.get_data() == data:
-                found = True
-            else:
-                previous = current
-                current = current.get_next()
-        if current is None:
-            raise ValueError("Data not in list")
-        if previous is None:
-            self.head = current.get_next()
-        else:
-            previous.set_next(current.get_next())
-
-    def __str__( self ) :
-        s = ""
-        p = self.head
-        if p != None :
-                while p.next_node != None :
-                        s += p.data
-                        p = p.next_node
-                s += p.data
-        return s
-
-
-l = LinkedList()
-
-l.insertatEnd( 'a' )
-l.insertatEnd( 'b' )
-l.insertatEnd( 'c' )
-
-
-print l
-
-if l.search( 'b' ):
-  print "node found"
-else:
-  print "not not found"
- 
-l.delete( 'b' ) 
-print l
- 
+# from pprint import pprint
+#
+#
+# c_ Node o..
+#
+#     ___ -  data_N.. next_node_N..
+#         ? ?
+#         ? ?
+#
+#     ___ get_data
+#         r_ ?
+#
+#     ___ get_next
+#         r_ ?
+#
+#     ___ set_next new_next
+#         n_n.. _ ?
+#
+# c_ LinkedList o..
+#     ___  - head_N..
+#         ? ?
+#
+#     ___ insert data
+#         new_node _ N.. ?
+#         ?.s_n.. h..
+#         h.. _ ?
+#
+#     ___ insertatEnditem
+#         current _ h..
+#         __ ?:
+#             w__ ?.g_n.. !_ N..
+#                 ? _ ?.g_n..
+#             ?.s_n.. N.. i..
+#         ____
+#             h.. _ N.. i..
+#
+#
+#     ___ size
+#         current _ head
+#         count _ 0
+#         w__ ?
+#           co.. +_ 1
+#           ? _ ?.g_n..
+#         r_ ?
+#
+#
+#     ___ search data
+#         current _ h..
+#         found _ F..
+#         w__ ? an. f.. __ F..
+#             __ ?.g_d.. __ d..
+#                 f.. _ T..
+#             ____
+#                 ? _ ?.g_n..
+#         __ ? __ N..
+#             r_ V.. ("Data not in list")
+#         r_ ?
+#
+#
+#     ___ delete data
+#         current _ h..
+#         previous _ N..
+#         found _ F..
+#         w__ ? an. f.. __ F..
+#             __ ?.g_d.. __ d..
+#                 f.. _ T..
+#             ____
+#                 previous _ ?
+#                 ? _ ?.g_n..
+#         __ ? __ N..
+#             r_ V.. "Data not in list"
+#         __ pr.. __ N..
+#             h.. _ ?.g_n..
+#         ____
+#             p__.s_n.. ?.g_n..
+#
+#     ___ -s
+#         s _ ""
+#         p _ h..
+#         __ p !_ N..
+#                 w__ p.n_n.. !_ N..
+#                         s +_ p.da..
+#                         p _ p.n_n..
+#                 s +_ p.da..
+#         r_ s
+#
+#
+# l _ LinkedList()
+#
+# l.insertatEnd( 'a' )
+# l.insertatEnd( 'b' )
+# l.insertatEnd( 'c' )
+#
+#
+# print l
+#
+# __ l.search( 'b' ):
+#   print "node found"
+# ____
+#   print "not not found"
+#
+# l.delete( 'b' )
+# print l
+#
