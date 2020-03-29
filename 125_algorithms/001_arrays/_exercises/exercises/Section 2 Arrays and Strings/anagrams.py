@@ -22,8 +22,8 @@ def anagram2(word1, word2):
     for i in range(len(word1)):
         if word1[i] not in dict1.keys():
             dict1[word1[i]] = 1
-    else:
-        dict1[word1[i]] += 1
+        else:
+            dict1[word1[i]] += 1
 
     for i in range(len(word2)):
         if word2[i] not in dict2.keys():
