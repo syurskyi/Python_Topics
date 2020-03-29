@@ -6,7 +6,7 @@
 #
 # # O(nlogn)
 #
-# ___ anagram word1, word2
+# ___ anagram word1 word2
 # 	r_ so.. ? __ so.. ?
 #
 # # O(n) O(n)
