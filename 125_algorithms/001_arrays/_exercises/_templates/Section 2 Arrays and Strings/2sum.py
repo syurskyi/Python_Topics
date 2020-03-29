@@ -18,11 +18,12 @@
 # ___ twosum nums target
 # 	dic _    # dcit
 #
-# 	___ i __ ra.. le. n..
-# 		__ n.. ? __ d__.ke..
+# 	___ i __ ra.. le. ?
+# 		__ ? ? __ d__.ke..
 # 			r_ |d..|n.. ?|| ?
+#       ____
 #
-# 			d..|t.. - n..|?|| _ i
+# 			d..|t.. - n..|?|| _ ?
 #
 # 	r_    # list
 #
