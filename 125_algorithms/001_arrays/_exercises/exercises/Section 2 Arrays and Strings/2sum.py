@@ -16,15 +16,15 @@
 # O(n) + O(n)
 
 def twosum(nums, target):
-	dic = {}    # dcit
+    dic = {}    # dcit
 
-	for i in range(len(nums)):
-		if nums[i] == dic.keys():
-			return [dict[nums[i]], i]
+    for i in range(len(nums)):
+        if nums[i] == dic.keys():
+            return [dic[nums[i]], i]
+        else:
+            dic[target - nums[i]] = i
 
-			dict[target - nums[i]] = i
-
-	return []    # list
+    return []    # list
 
 print(twosum([2, 7, 11, 15], 9))
 print(twosum([2, 7, 11, 15, 4, 23, 19, 5], 19))
