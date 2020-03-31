@@ -1,4 +1,3 @@
-
 class HamiltonianProblem:
 	
 	def __init__(self, adjacencyMatrix):

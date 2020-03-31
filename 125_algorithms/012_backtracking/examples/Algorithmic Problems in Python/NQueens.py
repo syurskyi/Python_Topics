@@ -1,4 +1,3 @@
-
 class QueensProblem:
 	
 	def __init__(self, numOfQueens):

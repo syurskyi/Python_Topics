@@ -1,4 +1,3 @@
-
 class ColoringProblem:
 
 	def __init__(self, numOfVertices, numOfColors, graphMatrix):

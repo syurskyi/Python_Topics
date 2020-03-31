@@ -1,4 +1,3 @@
-
 class MazeProblem:
 	
 	def __init__(self, mazeTable):
