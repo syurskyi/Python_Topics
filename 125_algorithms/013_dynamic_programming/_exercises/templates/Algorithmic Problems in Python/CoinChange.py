@@ -1,46 +1,40 @@
-# c_ Knapsack
+# c_ CoinChange
 #
-# 	___ - numOfItems capacityOfKnapsack weightOfItems profitOfItems
-# 		? ?
-# 		? ?
-# 		? ?
-# 		? ?
-# 		dpTable _ ||0 ___ x __ ra.. c..+1|| ___ x __ ra.. n..+1
+# 	# M - total amount and v[] coins
+# 	___ naiveApproach M v index
 #
-# 	___ dynamicProgrammingApproach
+# 		__ M < 0: r_ 0
+# 		__ M __ 0: r_ 1
 #
-# 		# no need to initialize because there are 0s by default !!!
+# 		__ ? __ le. v: r_ 0
 #
-# 		___ i __ ra.. 1 n..+1
-# 			___ w __ ra.. 1 c..+ 1
+# 		r_ ? M-v|i.. v i..| + ? M v i...+1
 #
-# 				notTakingItem _ dT..|?-1 |?
-# 				takingItem _ 0
+# 	# M - total amount and v[] coins
+# 	___ dynamicProgrammingApproach v M
 #
-# 				__ w..|i  <_ w
-# 					t.. _ p..|i  + dT..|?-1 |?-w..|?
+# 		dpTable _ ||0*|M+1 ___ x __ ra.. le. |v| +1
 #
-# 				dT..|? |?  _ ma. n.. t.. )
+# 		#___ j __ range(M+1):
+# 		#	dpTable[0][j] = 0
 #
-# 	___ showResult
+# 		___ i __ ra.. len v|+1
+# 			dT.|? 0 _ 1
 #
-# 		print("Total benefit: @"  dT..|n.. |c..   # digit
+# 		___ i __ ra.. 1 le. v|+1
+# 			___ j __ ra.. 1 M+1
 #
-# 		w _ capacityOfKnapsack
-# 		___ n __ ra.. n.. 0 -1
+# 				__ v|?-1 <_ ?
+# 					dT..|? |? _ dT..|?-1 |? + dT..|? |?-v|?-1
+# 				____
+# 					dT..|? |? _ dT..|? - 1 |?
 #
-# 			__ dT..|? |w  !_0 an. dT..|? |w  !_ dT..|?-1 |w
-# 				print("We take item #@"  ?   # digit
-# 				w _ w - w..|?
+# 		print("Solution is: @"  dT..|le. v|||M   # digit
 #
 # __ _______ __ ______
 #
-# 	numOfItems _ 4
-# 	capacityOfKnapsack _ 7
-# 	weightOfItems _ [0,1,3,4,5]
-# 	p.. _ [0,1,4,5,7]
+# 	M = 1000
+# 	coins = [1,2,3]
 #
-#
-# 	knapsack _ ? n.. c.. w.. p..
-# 	?.d..
-# 	?.s..
+# 	coinChange = CoinChange()
+# 	coinChange.dynamicProgrammingApproach(coins,M)
