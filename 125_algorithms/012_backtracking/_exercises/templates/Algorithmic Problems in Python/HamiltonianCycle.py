@@ -1,72 +1,71 @@
-
-class HamiltonianProblem:
-	
-	def __init__(self, adjacencyMatrix):
-		self.numOfVertexes = len(adjacencyMatrix)
-		self.hamiltonianPath = [None]*self.numOfVertexes
-		self.adjacencyMatrix = adjacencyMatrix
-		
-	def hamiltonianCycle(self):
-		
-		self.hamiltonianPath[0] = 0;
-		
-		if not self.findFeasibleSolution(1):
-			print('No feasible solution found...')
-		else:
-			self.showHamiltonianPath()
-		
-	def findFeasibleSolution(self, position):
-	
-		# check whether if we are done -> the last node can be connected to the first in order to form a cycle?
-		if (position == self.numOfVertexes):
-			x = self.hamiltonianPath[position - 1]
-			y = self.hamiltonianPath[0]
-			if ( self.adjacencyMatrix[x][y]  == 1): return True
-			else: return False
-		
-		for vertexIndex in range(1,self.numOfVertexes):
-			
-			if self.isFeasible(vertexIndex, position):
-				
-				self.hamiltonianPath[position] = vertexIndex
-				
-				if self.findFeasibleSolution(position+1):
-					return True
-					
-				# BACKTRACK
-					
-		return False
-		
-	def isFeasible(self, vertex, actualPosition):
-	
-		# first criteria: whether the two nodes are connected?
-		if self.adjacencyMatrix[self.hamiltonianPath[actualPosition - 1]][vertex] == 0:
-			return False;
-		
-		# second criteria: whether we have already added this given node?
-		for i in range(actualPosition):
-			if self.hamiltonianPath[i] == vertex:
-				return False;
-		
-		return True;
-	
-	def showHamiltonianPath(self):
-	
-		print('Hamiltonian cycle exists: ')
-		
-		for i in range(self.numOfVertexes):
-			print(self.hamiltonianPath[i]),
-			
-		print(self.hamiltonianPath[0])
-		
-if __name__ == "__main__":
-
-	adjacencyMatrix = [[0,1,0],
-					   [1,0,1],
-					   [1,1,0]
-					  ]
-
-	hamiltonian = HamiltonianProblem(adjacencyMatrix)
-	hamiltonian.hamiltonianCycle()
-		
-	
+# c_ HamiltonianProblem
+#
+# 	___ - adjacencyMatrix
+# 		numOfVertexes _ le. ?
+# 		hamiltonianPath _ |N..*?
+# 		? ?
+#
+# 	___ hamiltonianCycle
+#
+# 		hamiltonianPath|0 _ 0
+#
+# 		__ no. fFS.. 1
+# 			print('No feasible solution found...')
+# 		____
+# 			sHP..
+#
+# 	___ findFeasibleSolution position
+#
+# 		# check whether __ we are done -> the last node can be connected to the first in order to form a cycle?
+# 		__ ? __ nOV..
+# 			x _ hP..|? - 1
+# 			y _ hP..[0]
+# 			__ ( aM..[x][y]  __ 1): r_ T..
+# 			____ r_ F..
+#
+# 		___ vertexIndex in ra.. 1 nOV..
+#
+# 			__ isFeasible vI.. ?
+#
+# 				hP..|? _ vI..
+#
+# 				__ fFS.. ?+1
+# 					r_ T..
+#
+# 				# BACKTRACK
+#
+# 		r_ F..
+#
+# 	___ isFeasible vertex, actualPosition
+#
+# 		# first criteria: whether the two nodes are connected?
+# 		__ aM..|hP..|a.. - 1|||v.. __ 0
+# 			r_ F..
+#
+# 		# second criteria: whether we have already added this given node?
+# 		___ i __ ra.. aP..
+# 			__ hP..|? __ v..
+# 				r_ F..
+#
+# 		r_ T..
+#
+# 	___ showHamiltonianPath
+#
+# 		print('Hamiltonian cycle exists: ')
+#
+# 		___ i __ ra.. nOV..
+# 			print(hP..|?
+#
+# 		print(hP..|0
+#
+# __ _______ __ ______
+#
+# 	adjacencyMatrix _ [[0,1,0],
+# 					   [1,0,1],
+# 					   [1,1,0]
+# 					  ]
+#
+# 	hamiltonian _ ? aM..
+# 	?.hC..
+#
+#
