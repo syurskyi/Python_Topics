@@ -1,66 +1,63 @@
-
-class ColoringProblem:
-
-	def __init__(self, numOfVertices, numOfColors, graphMatrix):
-		self.numOfVertices = numOfVertices
-		self.numOfColors = numOfColors
-		self.colors = [0]*numOfVertices
-		self.graphMatrix = graphMatrix
-	
-	def solveColoringProblem(self):
-		
-		if self.solve(0):		
-			self.showResult()
-		else:
-			print('No feasible solution with the given parameters...')
-
-	def solve(self, nodeIndex):
-	
-		if nodeIndex == self.numOfVertices:
-			return True
-		
-		#try all colors
-		for colorIndex in range(1,self.numOfColors+1):
-			
-			if self.isColorValid(nodeIndex, colorIndex):
-				#assign and proceed with next vertex
-				self.colors[nodeIndex] = colorIndex
-		
-				if self.solve(nodeIndex+1):
-					return True
-				
-				#BACKTRACK !!!
-
-		return False
-		
-	def isColorValid(self, nodeIndex, colorIndex):
-		
-		for i in range(self.numOfVertices):
-			if self.graphMatrix[nodeIndex][i] == 1 and colorIndex == self.colors[i]:
-				return False
-				
-		return True
-
-	def showResult(self):
-	
-		for i in range(self.numOfVertices):
-			print('Node %d has color index: %d' % (i,self.colors[i]) )
-
-		
-if __name__ == "__main__":	
-
-	graphMatrix = [[0,1,0,1,0],
-				   [1,0,1,0,1],
-				   [0,1,0,1,0],
-				   [1,1,1,0,1],
-				   [0,0,0,1,0]
-				  ]
-     
-	numOfColors = 3
-	numOfVertices = 5
-	
-
-	coloringProblem = ColoringProblem(numOfVertices,numOfColors,graphMatrix)
-	coloringProblem.solveColoringProblem()
-		
-	
+# c_ ColoringProblem
+#
+# 	___ - numOfVertices numOfColors graphMatrix
+# 		? ?
+# 		? ?
+# 		colors _ |0 *nOV..
+# 		? ?
+#
+# 	___ solveColoringProblem
+#
+# 		__ solve 0
+# 			sR..
+# 		____
+# 			print('No feasible solution with the given parameters...')
+#
+# 	___ solve nodeIndex
+#
+# 		__ ? __ nOV..
+# 			r_ T..
+#
+# 		#try all colors
+# 		___ cI.. __ ra.. 1 nOC..+1
+#
+# 			__ isColorValid ? cI..
+# 				#assign and proceed with next vertex
+# 				c.. |? _ cI..
+#
+# 				__ solve ?+1
+# 					r_ T..
+#
+# 				#BACKTRACK !!!
+#
+# 		r_ F..
+#
+# 	___ isColorValid nodeIndex colorIndex
+#
+# 		___ i __ ra.. nOV..
+# 			__ gM..|nI.. |? __ 1 an. cI.. __ c..|?
+# 				r_ F..
+#
+# 		r_ T..
+#
+# 	___ showResult
+#
+# 		___ i __ ra.. nOV..
+# 			print('Node @ has color index: @' ? c..|?  # digit
+#
+#
+# __ _______ __ ______
+#
+# 	graphMatrix _ [[0,1,0,1,0],
+# 				   [1,0,1,0,1],
+# 				   [0,1,0,1,0],
+# 				   [1,1,1,0,1],
+# 				   [0,0,0,1,0]
+# 				  ]
+#
+# 	numOfColors _ 3
+# 	numOfVertices _ 5
+#
+#
+# 	coloringProblem _ ? nOV.. nOC.. gM..
+# 	?.sCP..

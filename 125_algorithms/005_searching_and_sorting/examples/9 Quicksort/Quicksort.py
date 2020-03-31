@@ -1,4 +1,5 @@
 def quicksort(lst, low, high):
+
     # If the interval [low, high] is valid
     if low < high: 
         # Partition the list and get the partitioning index.
