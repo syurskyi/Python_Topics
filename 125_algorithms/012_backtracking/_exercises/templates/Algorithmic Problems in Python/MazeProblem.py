@@ -1,81 +1,80 @@
-
-class MazeProblem:
+c_ MazeProblem
 	
-	def __init__(self, mazeTable):
-		self.mazeTable = mazeTable
-		self.mazeSize = len(mazeTable)
-		self.solutionTable = [[0]*self.mazeSize for x in range(self.mazeSize)]
+	___ - mazeTable
+		? ?
+		mazeSize _ le. ?
+		solutionTable _ ||0 *? ___ x __ ra.. ?
 	
-	def solveMaze(self):
+	___ solveMaze
 	
-		if self.solve(0,0):
-			self.showResult();
-		else:
+		__ solve 0,0
+			shR..
+		____
 			print('No feasible solution has found...')					
 	
-	def solve(self, x, y):
+	___ solve x, y
 	
-		if self.isFinished(x,y):
-			return True
+		__ isFinished x y
+			r_ T..
 			
-		if self.isValid(x,y):
+		__ isValid x y
 		
-			self.solutionTable[x][y] = 1  #it is valid so it is part of the solution
+			sT..|x |y _ 1  #it is valid so it is part of the solution
 			
-			if self.solve(x+1,y):
-				return True  #  go forward in x direction 
+			__ s.. x+1 y
+				r_ T..  #  go forward in x direction 
 				
-			if self.solve(x,y+1):
-				return True
+			__ s.. x y+1
+				r_ T..
 				
-			if self.solve(x-1,y):
-				return True  #  go forward in x direction 
+			__ s.. x-1 y
+				r_ T..  #  go forward in x direction 
 				
-			if self.solve(x,y-1):
-				return True
+			__ s.. x y-1
+				r_ T..
 				
-			self.solutionTable[x][y] = 0 # no feasible solution: backtrack
+			sT..|x |y _ 0 # no feasible solution: backtrack
 		
-		return False
+		r_ F..
 		
-	def isFinished(self, x, y):
+	___ isFinished x y
 	
-		if x == self.mazeSize-1 and y == self.mazeSize-1:
-			self.solutionTable[x][y] = 1
-			return True
+		__ x __ mS..-1 an. y __ mS..-1
+			sT..|x |y _ 1
+			r_ T..
 			
-		return False
+		r_ F..
 		
-	def isValid(self, x, y):
+	___ isValid x y
 	
-		if x < 0 or x >= self.mazeSize: return False
-		if y < 0 or y >= self.mazeSize: return False
-		if self.mazeTable[x][y] == 0: return False
+		__ x < 0 o. x >_ mS..: r_ F..
+		__ y < 0 o. y >_ mS..: r_ F..
+		__ mT..|x |y __ 0: r_ F..
 		
-		return True
+		r_ T..
 		
-	def showResult(self):
+	___ showResult
 	
-		for i in range(self.mazeSize):
-			for j in range(self.mazeSize):
-				if self.solutionTable[i][j] == 1:
-					print(' S ', end=""),
-				else:
-					print(' - ', end=""),
+		___ i __ ra.. mS..
+			___ j __ ra.. mS..
+				__ sT..|? |?__ 1
+					print(' S ' e.._""
+				____
+					print(' - ', e.._""
 		
 			print('\n')			
 		
 		
-if __name__ == "__main__":
+__ _______ __ ______
 
-	mazeTable = [[ 1, 1, 1, 1 ,1],
+	mazeTable _ [[ 1, 1, 1, 1 ,1],
 				 [ 0, 0, 0, 1, 0],
 			     [ 1, 1, 1, 1, 0],
 			     [ 1, 0, 0, 0, 0],
 				 [ 1, 1, 1, 1, 1]
 				];
 		
-	mazeProblem = MazeProblem(mazeTable);
-	mazeProblem.solveMaze();
+	mazeProblem _ ? ?
+	?.sM..
 		
 	
