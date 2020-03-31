@@ -1,45 +1,46 @@
-class CoinChange:
-	
-	# M - total amount and v[] coins
-	def naiveApproach(self, M, v, index):
-		
-		if M < 0: return 0
-		if M == 0: return 1
-	
-		if index == len(v): return 0
-		
-		return self.naiveApproach(M-v[index], v, index) + self.naiveApproach(M, v, index+1)
-	
-	# M - total amount and v[] coins
-	def dynamicProgrammingApproach(self, v, M):
-	
-		dpTable = [ [0]*(M+1) for x in range(len(v)+1) ]
-		
-		#for j in range(M+1):
-		#	dpTable[0][j] = 0
-		
-		for i in range(len(v)+1):
-			dpTable[i][0] = 1
-	
-		for i in range(1,len(v)+1):
-			for j in range(1,M+1):
-			
-				if v[i-1] <= j:
-					dpTable[i][j] = dpTable[i-1][j] + dpTable[i][j-v[i-1]]
-				else:
-					dpTable[i][j] = dpTable[i - 1][j];
-					
-		print("Solution is: %d" % dpTable[len(v)][M] )
-		
-if __name__ == "__main__":
-
-	M = 1000
-	coins = [1,2,3]
-
-	coinChange = CoinChange()
-	coinChange.dynamicProgrammingApproach(coins,M)
-	
-	
-	
-		
-	
+# c_ Knapsack
+#
+# 	___ - numOfItems capacityOfKnapsack weightOfItems profitOfItems
+# 		? ?
+# 		? ?
+# 		? ?
+# 		? ?
+# 		dpTable _ ||0 ___ x __ ra.. c..+1|| ___ x __ ra.. n..+1
+#
+# 	___ dynamicProgrammingApproach
+#
+# 		# no need to initialize because there are 0s by default !!!
+#
+# 		___ i __ ra.. 1 n..+1
+# 			___ w __ ra.. 1 c..+ 1
+#
+# 				notTakingItem _ dT..|?-1 |?
+# 				takingItem _ 0
+#
+# 				__ w..|i  <_ w
+# 					t.. _ p..|i  + dT..|?-1 |?-w..|?
+#
+# 				dT..|? |?  _ ma. n.. t.. )
+#
+# 	___ showResult
+#
+# 		print("Total benefit: @"  dT..|n.. |c..   # digit
+#
+# 		w _ capacityOfKnapsack
+# 		___ n __ ra.. n.. 0 -1
+#
+# 			__ dT..|? |w  !_0 an. dT..|? |w  !_ dT..|?-1 |w
+# 				print("We take item #@"  ?   # digit
+# 				w _ w - w..|?
+#
+# __ _______ __ ______
+#
+# 	numOfItems _ 4
+# 	capacityOfKnapsack _ 7
+# 	weightOfItems _ [0,1,3,4,5]
+# 	p.. _ [0,1,4,5,7]
+#
+#
+# 	knapsack _ ? n.. c.. w.. p..
+# 	?.d..
+# 	?.s..
