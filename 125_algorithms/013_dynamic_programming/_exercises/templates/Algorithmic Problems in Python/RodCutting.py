@@ -1,48 +1,43 @@
-
-class RodCutting:
-	
-	def __init__(self, lengthOfRod, prices):
-		self.lengthOfRod = lengthOfRod
-		self.prices = prices
-		self.dpTable = [ [0]*(lengthOfRod+1) for x in range(len(prices)) ]
-	
-	def dynamicProgrammingApproach(self, lengthOfRod, prices):
-		
-		# 2 for loops to make sure the first row / column have all zeros !!!
-	
-		for i in range(1,len(self.prices)):
-			for j in range(1,self.lengthOfRod+1):
-			
-				if i <= j:
-					self.dpTable[i][j] = max(self.dpTable[i-1][j], self.prices[i]+self.dpTable[i][j-i]);
-				else:
-					self.dpTable[i][j] = self.dpTable[i-1][j];
-		
-	def showResults(self):
-	
-		print("Max profit is: $%d" % self.dpTable[len(self.prices)-1][self.lengthOfRod])
-	
-		columnIndex = self.lengthOfRod
-		rowIndex = len(self.prices)-1
-		
-		while columnIndex > 0 or rowIndex > 0:
-			
-			if self.dpTable[rowIndex][columnIndex] == self.dpTable[rowIndex-1][columnIndex]:
-				rowIndex = rowIndex - 1
-			else:
-				print("We make cut: ", rowIndex,"m")
-				columnIndex = columnIndex - rowIndex
-		
-if __name__ == "__main__":
-
-	lengthOfRod = 5
-	prices = [0,2,5,7,3]
-
-	rodCutting = RodCutting(lengthOfRod, prices)
-	rodCutting.dynamicProgrammingApproach(lengthOfRod, prices)
-	rodCutting.showResults()
-	
-	
-	
-		
-	
+# c_ RodCutting
+#
+# 	___ -  lengthOfRod prices
+# 		?  ?
+# 		?  ?
+# 		dpTable = ||0 * l.. + 1 ___ x __ ra.. le. p..
+#
+# 	___ dynamicProgrammingApproach lengthOfRod prices
+#
+# 		# 2 for loops to make sure the first row / column have all zeros !!!
+#
+# 		___ i __ ra.. 1 le. p..
+# 			___
+# 			j __ ra.. 1 l.. + 1
+#
+# 				__ ? <_ ?
+# 					dT..|? |?  _ ma. dT..|?-1 |?  p..|? +dT..|? |?-?
+# 				____
+# 					dT..|? |?  _ dT..|?-1 |? ;
+#
+# 	___ showResults
+#
+# 		print("Max profit is: $@"  dT..|le. p...|-1 |l..    # digit
+#
+# 		columnIndex _ l...
+# 		rowIndex _ le. p..-1
+#
+# 		w__ ? > 0 o. ? > 0
+#
+# 			__ dT..|r.. |c..  __ dT..|r..-1 |c..
+# 				r.. _ r.. - 1
+# 			____
+# 				print("We make cut: " r.. "m")
+# 				c.. _ c.. - r...
+#
+# __ _______ __ ______
+#
+# 	lengthOfRod = 5
+# 	prices = [0,2,5,7,3]
+#
+# 	rodCutting = ? l.. p..
+# 	?.d.. l.. p..
+# 	?.s..
