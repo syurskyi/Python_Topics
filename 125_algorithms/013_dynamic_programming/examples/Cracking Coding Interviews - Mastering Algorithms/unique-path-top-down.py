@@ -20,26 +20,26 @@
 # 	[1, 2, 3],
 # ]
 
-def unique_paths_rec(m, n, i, j, memo):
-	if m - 1 == i and n - 1 == j:
-		return 1
-	elif i >= m or j >= n:
-		return 0
+___ unique_paths_rec m n i j memo
+	__ ?1 - 1 __ ?3 an. ?2 - 1 __ ?4
+		r_ 1
+	____ ?3 >_ ?1 o. ?4 >_ ?2
+		r_ 0
 
-	key = str(i) + "," + str(j)
+	key _ st. ?3 + "," + st. ?4
 
-	if key in memo:
-		return memo[key]
+	__ ? __ ?5
+		r_ ?5|?
 
-	num_paths = unique_paths_rec(m, n, i + 1, j, memo) + unique_paths_rec(m, n, i, j + 1, memo)
-	memo[key] = num_paths
+	num_paths _ u.. ?1 ?2 ?3 + 1 ?4 ?5 + u.. ?1 ?2 ?3 ?4 + 1, ?5
+	?5|k... _ ?
 
-	return num_paths
+	r_ ?
 
-def unique_paths(m, n):
-	return unique_paths_rec(m, n, 0, 0, dict())
+___ unique_paths ?1 ?2
+	r_ ? ?1 ?2 0 0 di..
 
-print(unique_paths(3, 2))
-print(unique_paths(7, 3))
+print(?(3, 2))
+print(?(7, 3))
 
-print(unique_paths(15, 15))
+print(?(15, 15))
