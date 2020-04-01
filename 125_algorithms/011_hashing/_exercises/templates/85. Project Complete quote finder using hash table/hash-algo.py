@@ -1,48 +1,48 @@
-class AlgoHashTable:
-
-    def __init__(self, size):
-        self.size = size
-        self.hash_table = self.create_buckets()
-
-    def create_buckets(self):
-        return [[] for _ in range(self.size)]
-
-    def set_val(self, key, value):
-        hashed_key = hash(key)%self.size
-        bucket = self.hash_table[hashed_key]
-        found_key = False
-        for index, record in enumerate(bucket):
-            record_key, record_value = record
-            if record_key == key:
-                found_key = True
-                break
-        if found_key:
-            bucket[index] = (key, value)
-        else:
-            bucket.append((key, value))
-
-    def get_val(self, key):
-        hashed_key = hash(key)%self.size
-        bucket = self.hash_table[hashed_key]
-        found_key = False
-        for index, record in enumerate(bucket):
-            record_key, record_value = record
-            if record_key == key:
-                found_key = True
-                break
-        if found_key:
-            return record_value
-        else:
-            return "No record found with that email address"
-
-    def __str__(self):
-        return "".join(str(item) for item in self.hash_table)
-
-hash_table = AlgoHashTable(256)
-with open("data.txt") as f:
-    for line in f:
-        key, value = line.split(":")
-        hash_table.set_val(key, value)
-
-print(hash_table.get_val('mashrur@example.com'))
-print(hash_table.get_val('evgeny@example.com'))
+# c_ AlgoHashTable
+#
+#     ___ - size
+#         ? ?
+#         hash_table _ c..
+#
+#     ___ create_buckets
+#         r_ || ___ _ __ ra.. s..     # _ original symbol
+#
+#     ___ set_val key value
+#         hashed_key _ ha.. k..%s..
+#         bucket _ ha_t..|h_k..
+#         found_key _ F..
+#         ___ index record __ en.. b..
+#             r_k.. r_v.. _ r.
+#             __ r_k.. __ k..
+#                 f_k.. _ T..
+#                 b..
+#         __ f..
+#             b..|i.. _  k.. v..
+#         ____
+#             b__.ap.. k.. v..
+#
+#     ___ get_val key
+#         hashed_key _ ha.. k.. % s..
+#         bucket _ h_t..|h_k..
+#         f_k.. _ F..
+#         ___ index record __ en.. b..
+#             r_k.. r_v.. _ r..
+#             __ r_k.. __ k..
+#                 f_k.. _ T..
+#                 b__
+#         __ f_k..
+#             r_ ?
+#         ____
+#             r_ "No record found with that email address"
+#
+#     ___ -
+#         r_ "".jo.. st. i.. ___ i.. __ h_t..
+#
+# hash_table _ ? 256
+# w___ o.. data.txt __ f
+#     ___ line __ ?
+#         key, value _ ?.sp.. ":"
+#         h_t...s_v.. ? ?
+#
+# print(?.g_v.. 'mashrur@example.com'
+# print(?.g_v.. 'evgeny@example.com'
