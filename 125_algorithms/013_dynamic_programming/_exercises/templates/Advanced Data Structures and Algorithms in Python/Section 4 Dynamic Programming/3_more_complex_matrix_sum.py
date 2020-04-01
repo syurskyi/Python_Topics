@@ -1,45 +1,45 @@
-import numpy as np
-
-inf = 10 ** 20
-
-
-def run_recursive(array, m):
-    n = array.shape[0]
-
-    def inner(k, line, col):
-        if k < 0 or line < 0 or col < 0 or line >= n or col >= n:
-            return inf
-        if k == 0 and line == 0 and col == 0:
-            return array[line, col]
-
-        return array[line, col] + min(inner(k - 1, line - 1, col),
-                                      inner(k - 1, line, col - 1),
-                                      inner(k - 1, line + 1, col),
-                                      inner(k - 1, line, col + 1))
-    return inner(m, n - 1, n - 1)
-
-
-def run_dp(array, m):
-    n = array.shape[0]
-    dp = np.ones((m+1, n, n)) * inf
-    dp[0, 0, 0] = array[0, 0]
-    for k in range(1, m+1):
-        for i in range(n):
-            for j in range(n):
-                n1 = dp[k-1, i-1, j] if i-1 >= 0 else inf
-                n2 = dp[k-1, i, j-1] if j-1 >= 0 else inf
-                n3 = dp[k-1, i+1, j] if i+1 < n else inf
-                n4 = dp[k-1, i, j+1] if j+1 < n else inf
-                dp[k, i, j] = array[i, j] + min(n1, n2, n3, n4)
-    return dp[m, n-1, n-1]
-
-
-array = np.array([
-    [4, 3, 4, 31],
-    [1, 15, 9, 11],
-    [71, 13, 10, 6],
-    [21, 41, 51, 2]
-])
-
-print(run_recursive(array, 10))
-print(run_dp(array, 10))
+# ______ n.. __ np
+#
+# inf = 10 ** 20
+#
+#
+# ___ run_recursive array m
+#     n _ a___.s..|0
+#
+#     ___ inner k line col
+#         __ ? < 0 o. ? < 0 o. ? < 0 o. ? >_ n o. ? >_ n
+#             r_ inf
+#         __ ? __ 0 an. ? __ 0 an. ? __ 0
+#             r_ a___|l.. c..
+#
+#         r_ a___|l.. c.. + mi. i.. k - 1 l.. - 1 c..
+#                                       ? k - 1 l.. c.. - 1
+#                                       ? k - 1 l.. + 1, c..
+#                                       ? k - 1 l.. c.. + 1
+#     r_ ? m ? - 1 ? - 1
+#
+#
+# ___ run_dp array m
+#     n _ a___.s..|0
+#     dp _ __.o.. ? + 1 n n * inf
+#     ? 0 0 0 _ a___|0 0
+#     ___ k __ ra.. 1 ? + 1
+#         ___ i __ ra.. n
+#             ___ j __ ra.. n
+#                 n1 _ d. ?-1 ?-1 ?| __ ?-1 >_ 0 ____ i..
+#                 n2 _ d. ?-1 ? ?-1| __ ?-1 >_ 0 ____ i..
+#                 n3 _ d. ?-1 ?+1 ?| __ ?+1 < n ____ i..
+#                 n4 _ d. ?-1 ? ?+1| __ ?+1 < n ____ i..
+#                 d. |? ? ? _ a___|i, j + mi. ? ? ? ?
+#     r_ d.|m ?-1 ?-1
+#
+#
+# array = __.a___||
+#     [4, 3, 4, 31],
+#     [1, 15, 9, 11],
+#     [71, 13, 10, 6],
+#     [21, 41, 51, 2]
+# ||
+#
+# print r_r.. a___ 10
+# print r_d. a___ 10
