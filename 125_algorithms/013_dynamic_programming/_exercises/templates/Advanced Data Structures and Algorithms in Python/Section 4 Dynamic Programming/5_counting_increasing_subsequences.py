@@ -1,51 +1,49 @@
-from random import randint
-
-import numpy as np
-
-
-def first_dp(array, k):
-    n = len(array)
-    dp = np.zeros((n, k))
-    dp[:, 0] = 1
-    for i in range(n):
-        for p in range(i):
-            if array[i] > array[p]:
-                for j in range(1, k):
-                    dp[i, j] += dp[p, j -1]
-    return sum(dp[:, k - 1])
-
-
-def second_dp(array, k):
-    n = len(array)
-    dp = np.zeros((n,k))
-    dp[:, 0] = 1
-    for j in range(1, k):
-        num = {} # num[v] = how many subsequences of length j end with v
-        for i in range(1, n):
-            if array[i - 1] in num:
-                num[array[i - 1]] += dp[i - 1, j - 1]
-            else:
-                num[array[i - 1]] = dp[i - 1, j - 1]
-
-            for p in range(array[i]):
-                if p in num:
-                    dp[i, j] += num[p]
-    return sum(dp[:, k - 1])
-
-
-for tests in range(1000):
-    array = []
-    for i in range(randint(20, 100)):
-        array.append(randint(1, 100))
-    k = randint(5, 20)
-    with_first = first_dp(array, k)
-    with_second = second_dp(array, k)
-    assert with_first == with_second, \
-        'first={}, second={},\narray={},\nk={}'.format(
-            with_first,
-            with_second,
-            array,
-            k
-        )
-
-
+# ____ ra.. ______ r..i..
+#
+# ______ n.. __ np
+#
+#
+# ___ first_dp array k
+#     n _ le. ?
+#     dp _ __.z.. ? k
+#     ?|; 0 _ 1
+#     ___ i __ ra.. n
+#         ___ p __ ra.. ?
+#             __ a..|? > a..|?
+#                 ___ j __ ra.. 1 k
+#                     d.|1 ?4 +_ d.|?2 j -1
+#     r_ su. d.|; k - 1
+#
+#
+# ___ second_dp array k
+#     n _ le. ?
+#     dp _ __.z.. n k
+#     ?|; 0 _ 1
+#     ___ j __ ra.. 1 k
+#         num _ ||  # dict # num[v] _ how many subsequences of length j end with v
+#         ___ i __ ra.. 1 n
+#             __ a..|? - 1 __ n..
+#                 n..|a..|? - 1 +_ d.|? - 1 ? - 1
+#             ____
+#                 n..|a...|? - 1 _ d.|? - 1 ? - 1
+#
+#             ___ p __ ra.. a..|i
+#                 __ p __ n..
+#                     d.| ? ? +_ n..|?
+#     r_ su. d.|; k - 1
+#
+#
+# ___ tests __ ra.. 1000
+#     array _ ||  # list
+#     ___ i __ ra.. r_i.. 20 100
+#         ?.ap.. r_i.. 1 100
+#     k _ r_i.. 5 20
+#     with_first _ f_d. a.. k
+#     with_second _ s_d. a.. k
+#     as.. w_f.. __ w_s.. \
+#         'first_@, second_@,\narray_@,\nk_@'.f..(
+#             w_f..
+#             w_s..
+#             a..
+#             k
+#         )
