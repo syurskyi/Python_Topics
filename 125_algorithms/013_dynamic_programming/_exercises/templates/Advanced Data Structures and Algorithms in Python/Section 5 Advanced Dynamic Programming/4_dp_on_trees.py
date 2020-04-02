@@ -1,14 +1,14 @@
-import numpy as np
+______ numpy __ np
 
 
-def count_bsts(n):
-    dp = np.zeros(n + 1)
-    dp[0] = 1
-    dp[1] = 1
-    for i in range(2, n + 1):
-        for j in range(1, i + 1):
-            dp[i] += dp[j - 1] * dp[i - j]
-    return dp[n]
+___ count_bsts n
+    dp _ __.z.. ? + 1
+    ? 0 _ 1
+    ? 1 _ 1
+    ___ i __ ra.. 2 ? + 1
+        ___ j __ ra.. 1 ? + 1
+            d.|? +_ d.|? - 1 * d.|? - ?
+    r_ d.|?
 
 
 print(count_bsts(1))
