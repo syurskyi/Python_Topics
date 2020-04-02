@@ -1,51 +1,50 @@
-import numpy as np
-from random import randint
-
-
-def naive_query(array, a, b):
-    return min(array[a:b+1])
-
-
-def compute_rmq_table(array):
-    n = len(array)
-    log2n = int(np.log2(n))
-    dp = np.zeros((log2n + 1, n))
-    dp[0, :] = array
-    pow = 1
-    for i in range(1, log2n + 1):
-        for j in range(n):
-            dp[i, j] = dp[i - 1, j]
-            if j + pow < n:
-                dp[i, j] = min(dp[i, j], dp[i - 1, j + pow])
-        pow *= 2
-    return dp
-
-
-def dp_query(array, a, b, dp):
-    k = int(np.log2(b - a + 1))
-    return min(dp[k, a], dp[k, b - 2**k + 1])
-
-
-for tests in range(100):
-    array = []
-    n = randint(1, 1000)
-    for i in range(n):
-        array.append(randint(1, 1000))
-
-    dp = compute_rmq_table(array)
-    for _ in range(2000):
-        a = randint(0, n - 1)
-        b = randint(a, n - 1)
-        with_naive = naive_query(array, a, b)
-        with_dp = dp_query(array, a, b, dp)
-        assert with_dp == with_naive, \
-            'naive={}, efficient dp={},\nn={},\na={}\n={}\narray={}'.format(
-                with_naive,
-                with_dp,
-                n,
-                a,
-                b,
-                array
-            )
-
+# ______ n.. __ np
+# ____ ra.. ______ r_i..
+#
+#
+# ___ naive_query array a b
+#     r_ mi. a..|?;?+1
+#
+#
+# ___ compute_rmq_table array
+#     n _ le. ?
+#     log2n _ __. __.log2 ?
+#     dp _ __.z.. __2. + 1 ?
+#     ?|0 ; _ a..
+#     pow _ 1
+#     ___ i __ ra.. 1 __2_ + 1
+#         ___ j __ ra.. n
+#             d.|? ? _ d.|? - 1 ?
+#             __ j + po. < n
+#                 d.|? ? _ mi. d.|? ? d.|? - 1 ? + po.
+#         po. *_ 2
+#     r_ ?
+#
+#
+# ___ dp_query array a b dp
+#     k _ in. __.log2 ?2 - ?1 + 1
+#     r_ mi. d.|k a d.|k b - 2**k + 1
+#
+#
+# ___ tests __ ra.. 100
+#     array _ ||  # list
+#     n _ r_i.. 1 1000)
+#     ___ i __ ra.. ?
+#         a__.ap.. r_i.. 1 1000
+#
+#     dp _ c_r_t.. a..
+#     ___ _ __ ra.. 2000
+#         a _ r_i.. 0 n - 1
+#         b _ r_i.. a n - 1
+#         with_naive _ n_q.. a.. a b
+#         with_dp _ d_q.. a.. a b d.
+#         as.. ? __ w_n.. \
+#             'naive_@, efficient dp_@,\nn_@,\na_@\n_@\narray_@'.f..(
+#                 w_n..
+#                 w_d.
+#                 n
+#                 a
+#                 b
+#                 a..
+#             )
 
