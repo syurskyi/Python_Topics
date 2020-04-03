@@ -25,21 +25,21 @@
 # # 3. 2 steps + 1 step
 #
 # ___ climb n i memo
-# 	__ ?1 __ ?2
+# 	__ n __ i
 # 		r_ 1
-# 	____ ?2 > ?1
+# 	____ i > n
 # 		r_ 0
 #
-# 	__ ?2 __ ?3
+# 	__ i __ m..
 # 		r_ m..|?
 #
-# 	num_ways _ ?|? ? + 1 ? + ?|? ? + 2 ?
+# 	num_ways _ c.. n ? + 1 m..| + c.. n ? + 2 m..
 # 	m..|? _ ?
 #
-# 	r_ n_w..
+# 	r_ ?
 #
 # ___ climb_stairs n
-# 	r_ c.. ? 0 di..
+# 	r_ ? ? 0 d..
 #
 #
 # print(? 2
