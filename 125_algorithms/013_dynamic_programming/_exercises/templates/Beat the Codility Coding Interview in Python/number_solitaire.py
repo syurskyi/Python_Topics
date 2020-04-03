@@ -1,64 +1,64 @@
-# This is the solution for Dynamic programming > NumberSolitaire
+# # This is the solution for Dynamic programming > NumberSolitaire
+# #
+# # This is marked as RESPECTABLE difficulty
+# # Note here we have the evolution of the algorithm. Only the last function is the correct one.
 #
-# This is marked as RESPECTABLE difficulty
-# Note here we have the evolution of the algorithm. Only the last function is the correct one.
-
-def solutionRecursive(A):
-    return max_sum_six_distances(A, 0)
-
-
-def max_sum_six_distances(a, position):
-    if position == len(a) - 1:
-        return a[position]
-    else:
-        max_forward = min(len(a) - position, 6)
-        current_max = -100000
-        for i in range(1, max_forward):
-            local_max = max_sum_six_distances(a, position + i)
-            current_max = max(current_max, local_max)
-        return current_max + a[position]
-
-
-def solutionMemoize(A):
-    values = [-100000] * len(A)
-    return max_sum_six_distancesMem(A, 0, values)
-
-
-def max_sum_six_distancesMem(a, position, values):
-    if position == len(a) - 1:
-        return a[position]
-    if values[position] == -100000:
-        max_forward = min(len(a) - position, 6)
-        current_max = -100000
-        for i in range(1, max_forward):
-            local_max = max_sum_six_distancesMem(a, position + i, values)
-            current_max = max(current_max, local_max)
-        values[position] = current_max + a[position]
-    return values[position]
-
-
-def solution(A):
-    values = [0] * len(A)
-    values[len(A) - 1] = A[len(A) - 1]
-    for i in range(len(A) - 2, -1, -1):
-        values[i] = A[i] + find_max_between(values, i + 1, 6)
-    return values[0]
-
-
-def find_max_between(values, start, length):
-    max = values[start]
-    upto = min(start + length, len(values))
-    for i in range(start, upto):
-        if values[i] > max:
-            max = values[i]
-    return max
-
-
-print(solutionRecursive([1, -2, 0, 9, -1, -2, 5, -4]))
-print(solutionRecursive([1, -2, 0, 9, -1, -2, 5, -4, -5, -1, -10, -5, -6, -4, -2]))
-
-print(solutionMemoize([1, -2, 0, 9, -1, -2, 5, -4]))
-print(solutionMemoize([1, -2, 0, 9, -1, -2, 5, -4, -5, -1, -10, -5, -6, -4, -2]))
-
-print(solution([1, -2, 0, 9, -1, -2, 5, -4]))
-print(solution([1, -2, 0, 9, -1, -2, 5, -4, -5, -1, -10, -5, -6, -4, -2]))
+# ___ solutionRecursive A
+#     r_ m.. ? 0
+#
+#
+# ___ max_sum_six_distances a position
+#     __ ? __ le. ? - 1
+#         r_ ?|?
+#     ____
+#         max_forward _ mi. le. ? - ? 6
+#         current_max _ -100000
+#         ___ i __ ra.. 1 m..
+#             local_max _ m.. a ? + ?
+#             current_max _ ma. c.. ?
+#         r_ ? + a|?
+#
+#
+# ___ solutionMemoize A
+#     values _ |-100000 * le. ?
+#     r_ m.. ? 0, v..
+#
+#
+# ___ max_sum_six_distancesMem a position values
+#     __ ? __ le. ? - 1
+#         r_ ?|?
+#     __ v..|? __ -100000
+#         max_forward _ mi. le. ? - ?, 6
+#         current_max _ -100000
+#         ___ i __ ra.. 1 m_f..
+#             local_max _ m.. a ? + ? v..
+#             current_max _ ma. c_m.0 l..
+#         v..|? _ c_m.. + a|?
+#     r_ ?|?
+#
+#
+# ___ solution A
+#     values _ |0 * le. ?
+#     ?|le. ? - 1 _ ?|le. ? - 1
+#     ___ i __ ra.. le. ? - 2 -1 -1)
+#         v..|? _ ?|? + f.. v.. ? + 1 6
+#     r_ v..|0
+#
+#
+# ___ find_max_between values start length
+#     max _ v..|s..
+#     upto _ mi. s.. + l.. le. v..
+#     ___ i __ ra.. s.. u..
+#         __ v..|? > m..
+#             m.. _ v..|?
+#     r_ max
+#
+#
+# print(sR.. 1, -2, 0, 9, -1, -2, 5, -4
+# print(sR.. 1, -2, 0, 9, -1, -2, 5, -4, -5, -1, -10, -5, -6, -4, -2
+#
+# print(sM.. 1, -2, 0, 9, -1, -2, 5, -4
+# print(sM.. 1, -2, 0, 9, -1, -2, 5, -4, -5, -1, -10, -5, -6, -4, -2
+#
+# print(s.. 1, -2, 0, 9, -1, -2, 5, -4
+# print(s.. 1, -2, 0, 9, -1, -2, 5, -4, -5, -1, -10, -5, -6, -4, -2
