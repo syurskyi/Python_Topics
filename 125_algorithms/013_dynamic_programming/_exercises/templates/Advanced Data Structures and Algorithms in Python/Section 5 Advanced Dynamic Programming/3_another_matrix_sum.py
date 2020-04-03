@@ -1,4 +1,4 @@
-import numpy as np
+______ numpy as np
 
 MOD = 666013
 
@@ -76,5 +76,3 @@ for n in range(2, 5):
             n,
             m
         )
-
-
