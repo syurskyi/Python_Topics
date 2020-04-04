@@ -119,17 +119,17 @@ class LinkedList:
             print(currentNode.data)
             currentNode = currentNode.next
 
-# Node => data, next
-# firstNode.data => John, firstNode.next => None
-firstNode = Node("John")
-linkedList = LinkedList()
-linkedList.insertEnd(firstNode)
-secondNode = Node("Ben")
-linkedList = LinkedList()
-linkedList.insertEnd(secondNode)
-thirdNode = Node("Matthew")
-linkedList.insertHead(thirdNode)
-linkedList.printList()
+# # Node => data, next
+# # firstNode.data => John, firstNode.next => None
+# firstNode = Node("John")
+# linkedList = LinkedList()
+# linkedList.insertEnd(firstNode)
+# secondNode = Node("Ben")
+# linkedList = LinkedList()
+# linkedList.insertEnd(secondNode)
+# thirdNode = Node("Matthew")
+# linkedList.insertHead(thirdNode)
+# linkedList.printList()
 
 
 
