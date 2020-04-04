@@ -63,24 +63,3 @@
 # #time_it(eratosthenes_2)
 # #time_it(eratosthenes_3)
 # time_it(eratosthenes_np)
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
