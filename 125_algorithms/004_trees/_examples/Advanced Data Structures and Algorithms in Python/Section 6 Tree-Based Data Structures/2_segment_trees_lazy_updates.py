@@ -94,25 +94,3 @@ for tests in range(100):
             v = randint(-1000, 1000)
             naive_update(array, a, b, v)
             update(n, segment_tree, a, b, v)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
