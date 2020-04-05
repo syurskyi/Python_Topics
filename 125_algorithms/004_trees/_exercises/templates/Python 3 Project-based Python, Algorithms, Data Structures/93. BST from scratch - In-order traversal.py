@@ -1,33 +1,33 @@
-# # c_ Node
-# #     ___ - key
-# #         data _ ?
-# #         left_child _ N..
-# #         right_child _ N..
-# #
-# # c_ BSTDemo
-# #     ___ -
-# #         root _ N..
-# #
-# #     ___ insert key
-# #         __ no. isi.. ? N..
-# #             k.. _ N.. ?
-# #         __ r.. __ N..
-# #             ? _ key
-# #         ____
-# #             _? r.. k..
-# #
-# #     ___ _insert curr key
-# #         __ k__.d.. > ?.d..
-# #             __ ?.right_child __ N..
-# #                 ?.right_child _ k..
-# #             ____
-# #                 _? ?.r.. k..
-# #         ____ k__.d.. < ?.d..
-# #             __ ?.l.. __ N..
-# #                 ?.l.. _ k..
-# #             ____
-# #                 _? ?.l.. k..
-# #
+# c_ Node
+#     ___ - key
+#         data _ ?
+#         left_child _ N..
+#         right_child _ N..
+#
+# c_ BSTDemo
+#     ___ -
+#         root _ N..
+#
+#     ___ insert key
+#         __ no. isi.. ? N..
+#             k.. _ N.. ?
+#         __ r.. __ N..
+#             ? _ key
+#         ____
+#             _? r.. k..
+#
+#     ___ _insert curr key
+#         __ k__.d.. > ?.d..
+#             __ ?.right_child __ N..
+#                 ?.right_child _ k..
+#             ____
+#                 _? ?.r.. k..
+#         ____ k__.d.. < ?.d..
+#             __ ?.l.. __ N..
+#                 ?.l.. _ k..
+#             ____
+#                 _? ?.l.. k..
+#
 #     ___ in_order
 #         _i.. r..
 #         print("")
