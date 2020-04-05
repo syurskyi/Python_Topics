@@ -1,89 +1,91 @@
-class Node:
-    def __init__(self, key):
-        self.data = key
-        self.left_child = None
-        self.right_child = None
-
-class BSTDemo:
-    def __init__(self):
-        self.root = None
-
-    def insert(self, key):
-        if not isinstance(key, Node):
-            key = Node(key)
-        if self.root == None:
-            self.root = key
-        else:
-            self._insert(self.root, key)
-
-    def _insert(self, curr, key):
-        if key.data > curr.data:
-            if curr.right_child == None:
-                curr.right_child = key
-            else:
-                self._insert(curr.right_child, key)
-        elif key.data < curr.data:
-            if curr.left_child == None:
-                curr.left_child = key
-            else:
-                self._insert(curr.left_child, key)
-
-    def in_order(self):
-        self._in_order(self.root)
-        print("")
-
-    def _in_order(self, curr):
-        if curr:
-            self._in_order(curr.left_child)
-            print(curr.data, end=" ")
-            self._in_order(curr.right_child)
-
-    def pre_order(self):
-        pass
-
-    def _pre_order(self, curr):
-        pass
-
-    def post_order(self):
-        pass
-
-    def _post_order(self, curr):
-        pass
-
-    def find_val(self, key):
-        return self._find_val(self.root, key)
-
-    def _find_val(self, curr, key):
-        if curr:
-            if key == curr.data:
-                return "Value found in tree"
-            elif key < curr.data:
-                return self._find_val(curr.left_child, key)
-            else:
-                return self._find_val(curr.right_child, key)
-        return "Value not found in tree"
-
-    def delete_val(self, key):
-        pass
-
-    def _delete_val(self, curr, prev, is_left, key):
-        pass
-
-tree = BSTDemo()
-tree.insert("H")
-tree.insert("D")
-tree.insert("I")
-tree.insert("M")
-tree.insert("J")
-tree.insert("L")
-tree.insert("F")
-tree.insert("C")
-tree.insert("G")
-tree.insert("A")
-tree.insert("B")
-tree.insert("K")
-tree.insert("E")
-tree.in_order()
-print(tree.find_val("E"))
-print(tree.find_val("J"))
-print(tree.find_val("Z"))
+# c_ Node
+#     ___ - key
+#         data _ ?
+#         left_child _ N..
+#         right_child _ N..
+#
+# c_ BSTDemo
+#     ___ -
+#         root _ N..
+#
+#     ___ insert key
+#         __ no. isi.. ? N..
+#             k.. _ N.. ?
+#         __ r.. __ N..
+#             ? _ key
+#         ____
+#             _? r.. k..
+#
+#     ___ _insert curr key
+#         __ k__.d.. > ?.d..
+#             __ ?.right_child __ N..
+#                 ?.right_child _ k..
+#             ____
+#                 _? ?.r.. k..
+#         ____ k__.d.. < ?.d..
+#             __ ?.l.. __ N..
+#                 ?.l.. _ k..
+#             ____
+#                 _? ?.l.. k..
+#
+#     ___ in_order
+#         _i.. r..
+#         print("")
+#
+#     ___ _in_order curr
+#         __ ?
+#             _i.. ?.l..
+#             print ?.d.. e.._" "
+#             _i.. ?.r..
+#
+#     ___ pre_order
+#         '''root, left, right'''
+#         p..
+#
+#     ___ _pre_order curr
+#         p..
+#
+#     ___ post_order
+#         '''left, right, root'''
+#         p..
+#
+#     ___ _post_order curr
+#         p..
+#
+#     ___ find_val key
+#         r_ _? ? ?
+#
+#     ___ _find_val curr key
+#         __ ?
+#             __ k.. __ ?.d..
+#                 r_ "Value found in tree"
+#             ____ k.. < ?.d..
+#                 r_ _? ?.l.. k..
+#             ____
+#                 r_ _? ?.r.. k..
+#         r_ "Value not found in tree"
+#
+#     ___ delete_val key
+#         p..
+#
+#     ___ _delete_val curr prev is_left key
+#         p..
+#
+# tree = BSTDemo()
+# tree.insert("H")
+# tree.insert("D")
+# tree.insert("I")
+# tree.insert("M")
+# tree.insert("J")
+# tree.insert("L")
+# tree.insert("F")
+# tree.insert("C")
+# tree.insert("G")
+# tree.insert("A")
+# tree.insert("B")
+# tree.insert("K")
+# tree.insert("E")
+# tree.in_order()
+# print(tree.find_val("E"))
+# print(tree.find_val("J"))
+# print(tree.find_val("Z"))
