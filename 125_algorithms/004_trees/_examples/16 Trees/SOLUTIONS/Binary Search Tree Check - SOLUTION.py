@@ -18,7 +18,7 @@ def inorder(tree):
 def sort_check(tree_vals):
     return tree_vals == sorted(tree_vals)
 
-inorder(tree)
+inorder(tree_vals)
 sort_check(tree_vals)
 # True
 #
