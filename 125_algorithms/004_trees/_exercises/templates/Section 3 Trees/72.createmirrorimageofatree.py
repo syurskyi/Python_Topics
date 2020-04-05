@@ -1,12 +1,12 @@
 #!/usr/bin/python
 
-class Node:
+c_ Node:
     def __init__(self, data):
         self.l = None
         self.r = None
         self.v = data
 
-class binTree:
+c_ binTree:
     def __init__(self):
         self.root = None
 
