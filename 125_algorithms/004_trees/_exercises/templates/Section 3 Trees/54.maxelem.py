@@ -57,7 +57,7 @@ class binTree:
     def _printTree(self, node):
         if(node != None):
             self._printTree(node.l)
-            print str(node.v) + ' '
+            print(str(node.v) + ' ')
             self._printTree(node.r)
 
 
@@ -83,7 +83,7 @@ def maxusingloops(root):
     if node.r is not None:
        q.put(node.r)
         
-  print maxElem
+  print(maxElem)
 
 #     3
 # 0     4
@@ -95,5 +95,5 @@ tree.addnode(0)
 tree.addnode(8)
 tree.addnode(2)
 tree.printFullTree()
-print "maxelement:"
+print("maxelement:")
 maxusingloops(tree.root)

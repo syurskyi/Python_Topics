@@ -55,7 +55,7 @@ class binTree:
     def _printTree(self, node):
         if(node != None):
             self._printTree(node.l)
-            print str(node.v) + ' '
+            print(str(node.v) + ' ')
             self._printTree(node.r)
 
 
@@ -91,7 +91,7 @@ def levelOrder(root):
             items.insert(0,temp.l)
         if temp.r!=None:
             items.insert(0,temp.r)
-    print "Level order traversal of BST: "+ elements
+    print("Level order traversal of BST: "+ elements)
 
 def findsize(tree):
        if not tree:
@@ -110,7 +110,7 @@ def printReverse(root):
             items.insert(0,temp.l)
         if temp.r!=None:
             items.insert(0,temp.r)
-    print "Level order traversal of BST: "+ elements
+    print("Level order traversal of BST: "+ elements)
 
 
 def maximumDepthOfTree(root):
@@ -131,10 +131,10 @@ def deepestNode(root):
             items.insert(0,temp.l)
         if temp.r!=None:
             items.insert(0,temp.r)
-        for p in items: print p.v
-        print "####"
+        for p in items: print(p.v)
+        print("####")
 
-    print "Deepest node is ",temp.v
+    print("Deepest node is ",temp.v)
 
 
 def countLeaves(root):
@@ -151,7 +151,7 @@ def countLeaves(root):
         if temp.r!=None:
             items.insert(0,temp.r)
 
-    print "number of leafs in the tree ",count
+    print("number of leafs in the tree ",count)
 
 
 def countFullNodes(root):
@@ -167,7 +167,7 @@ def countFullNodes(root):
         if temp.r!=None:
             items.insert(0,temp.r)
 
-    print "number of full nodes in the tree ",count
+    print("number of full nodes in the tree ",count)
 
 
 
@@ -185,7 +185,7 @@ def countHalfNodes(root):
         if temp.r!=None:
             items.insert(0,temp.r)
 
-    print "number of half nodes in the tree ",count
+    print("number of half nodes in the tree ",count)
 
 ptr = 0
 def diaTree(root):
@@ -206,9 +206,9 @@ def appendpath(root, path, paths):
                 return 0
 
         path.append(root.v)
-        print "PATH:",path
+        print("PATH:",path)
         paths.append(path)
-        print "PATHS:",paths
+        print("PATHS:",paths)
         appendpath(root.l, path + [root.v], paths)
         appendpath(root.r, path + [root.v], paths)
 
@@ -216,17 +216,17 @@ def appendpath(root, path, paths):
 def getthepathofeachnode(rootnode):
     nodepaths = []
     appendpath(rootnode, [], nodepaths)
-    print 'path of nodes:', nodepaths
+    print('path of nodes:', nodepaths)
 
 
 def getthepath(root, val, path, paths):
     
     
-    print "root", root
-    print "root.data", root.v
-    print "val", val
-    print "path", path
-    print "paths", paths
+    print("root", root)
+    print("root.data", root.v)
+    print("val", val)
+    print("path", path)
+    print("paths", paths)
 
     if not root:
         return False
@@ -247,8 +247,8 @@ def getthepath(root, val, path, paths):
 def checkwhetherpathhassum(root, val):
     paths = []
     getthepath(root, val, [], paths)
-    print 'sum:', val
-    print 'paths:', paths
+    print('sum:', val)
+    print('paths:', paths)
 
 
 def sumOfNodes(root):
@@ -263,10 +263,10 @@ def sumOfNodes(root):
             items.insert(0,temp.l)
         if temp.r!=None:
             items.insert(0,temp.r)
-        for p in items: print p.v
-        print "####"
+        for p in items: print(p.v)
+        print("####")
 
-    print "Total sum of all nodes is ",sum
+    print("Total sum of all nodes is ",sum)
 
 
 

@@ -57,7 +57,7 @@ class binTree:
     def _printTree(self, node):
         if(node != None):
             self._printTree(node.l)
-            print str(node.v) + ' '
+            print(str(node.v) + ' ')
             self._printTree(node.r)
 
 
@@ -74,7 +74,7 @@ def findusingloops(root,data):
     node=q.get()
 
     if data == node.v:
-       print "node.v", node.v
+       print("node.v", node.v)
        return 1
 
     if node.l is not None:
@@ -96,7 +96,7 @@ tree.addnode(8)
 tree.addnode(2)
 tree.printFullTree()
 if findusingloops(tree.root, 8):
-   print "The data: 8 is found" 
+   print("The data: 8 is found")
 else:
-   print "data not found"
+   print("data not found")
 

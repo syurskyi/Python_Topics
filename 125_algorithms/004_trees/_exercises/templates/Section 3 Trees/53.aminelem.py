@@ -55,7 +55,7 @@ class binTree:
     def _printTree(self, node):
         if(node != None):
             self._printTree(node.l)
-            print str(node.v) + ' '
+            print(str(node.v) + ' ')
             self._printTree(node.r)
 
 
@@ -64,7 +64,7 @@ def minNode(root):
       return 0
    while root.l != None:
          root=root.l
-   print root.v 
+   print(root.v)
         
 
 
@@ -78,5 +78,5 @@ tree.addnode(0)
 tree.addnode(8)
 tree.addnode(2)
 tree.printFullTree()
-print "min value is:"
+print("min value is:")
 minNode(tree.root)
