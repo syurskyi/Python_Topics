@@ -93,6 +93,23 @@ def levelOrder(root):
             items.insert(0,temp.r)
     print "Level order traversal of BST: "+ elements
 
+
+def findsizeusingiteration(root):
+    items = []
+    count=0
+    items.insert(count,root)
+    elements =""
+    while items != []:
+        temp = items.pop()
+        count += 1 
+        if temp.l!=None:
+            items.insert(0,temp.l)
+        if temp.r!=None:
+            items.insert(0,temp.r)
+    print "size of the tree is : ", count
+
+
+
 def findsize(tree):
        if not tree:
           return 0
@@ -263,10 +280,17 @@ def sumOfNodes(root):
             items.insert(0,temp.l)
         if temp.r!=None:
             items.insert(0,temp.r)
-        for p in items: print p.v
-        print "####"
 
     print "Total sum of all nodes is ",sum
+
+def printtheparentsofthenode(root, node):
+        if(root == None):
+                return 0
+        if(root.l == node or root.r == node or  printtheparentsofthenode(root.l, node) or printtheparentsofthenode(root.r, node)):
+                print(root.v)
+                return 1
+        return 0
+
 
 
 
@@ -282,3 +306,5 @@ tree.addnode(8)
 tree.addnode(2)
 tree.addnode(3.5)
 tree.printFullTree()
+print "print the parent of the node:", tree.root.l.l.v
+printtheparentsofthenode(tree.root, tree.root.l.l)
