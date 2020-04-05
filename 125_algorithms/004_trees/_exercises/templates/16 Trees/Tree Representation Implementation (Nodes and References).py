@@ -1,62 +1,62 @@
-# Nodes and References Implementation of a Tree
+# # Nodes and References Implementation of a Tree
+# #
+# # In this notebook is the code corresponding to the lecture for implementing the representation of a Tree as a class with nodes and references!
 #
-# In this notebook is the code corresponding to the lecture for implementing the representation of a Tree as a class with nodes and references!
-
-class BinaryTree(object):
-    def __init__(self,rootObj):
-        self.key = rootObj
-        self.leftChild = None
-        self.rightChild = None
-
-    def insertLeft(self,newNode):
-        if self.leftChild == None:
-            self.leftChild = BinaryTree(newNode)
-        else:
-            t = BinaryTree(newNode)
-            t.leftChild = self.leftChild
-            self.leftChild = t
-
-    def insertRight(self,newNode):
-        if self.rightChild == None:
-            self.rightChild = BinaryTree(newNode)
-        else:
-            t = BinaryTree(newNode)
-            t.rightChild = self.rightChild
-            self.rightChild = t
-
-
-    def getRightChild(self):
-        return self.rightChild
-
-    def getLeftChild(self):
-        return self.leftChild
-
-    def setRootVal(self,obj):
-        self.key = obj
-
-    def getRootVal(self):
-        return self.key
-
-# We can see some examples of creating a tree and assigning children. Note that some outputs are Trees themselves!
+# c_ BinaryTree o..
+#     ___ - rootObj
+#         key _ ?
+#         leftChild _ N..
+#         rightChild _ N..
 #
-from __future__ import print_function
+#     ___ insertLeft newNode
+#         __ l.. __ N..
+#             l.. _ ? ?
+#         ____
+#             t _ ? ?
+#             t.l.. _ l..
+#             l.. _ t
 #
-r = BinaryTree('a')
-print(r.getRootVal())
-print(r.getLeftChild())
-r.insertLeft('b')
-print(r.getLeftChild())
-print(r.getLeftChild().getRootVal())
-r.insertRight('c')
-print(r.getRightChild())
-print(r.getRightChild().getRootVal())
-r.getRightChild().setRootVal('hello')
-print(r.getRightChild().getRootVal())
-
-# a
-# None
-# <__main__.BinaryTree object at 0x104779c10>
-# b
-# <__main__.BinaryTree object at 0x103b42c50>
-# c
-# hello
+#     ___ insertRight newNode
+#         __ r.. __ N..
+#             r.. _ ? ?
+#         ____
+#             t _ ? ?
+#             t.r.. _ r..
+#             r.. _ t
+#
+#
+#     ___ getRightChild
+#         r_ ?
+#
+#     ___ getLeftChild
+#         r_ ?
+#
+#     ___ setRootVal obj
+#         key _ ?
+#
+#     ___ getRootVal
+#         r_ k..
+#
+# # We can see some examples of creating a tree and assigning children. Note that some outputs are Trees themselves!
+# #
+# # from __future__ import print_function
+# #
+# r _ ?('a')
+# print(?.gRV..
+# print(?.gLC..
+# ?.iL.. ('b')
+# print(?.gLC..
+# print(?.gLC__.gRV..
+# ?.iR.. 'c')
+# print(?.gRC..
+# print(?.gRC__.gRV..
+# ?.gRC__.sRV.. 'hello')
+# print(?.gRC__.gRV..
+#
+# # a
+# # N..
+# # <__main__.BinaryTree object at 0x104779c10>
+# # b
+# # <__main__.BinaryTree object at 0x103b42c50>
+# # c
+# # hello
