@@ -1,87 +1,87 @@
-class Node:
-    val = 0
-    left = 0
-    right = 0
-    def __init__(self, val):
-        self.val = val
-
-class BST:
-    
-    def __init__(self, val):
-        self.root = Node(val)
-
-    def insert(self, val, node):
-        if node.val < val:
-            if node.right:
-                #go right
-                self.insert(val, node.right)
-            else:
-                node.right = Node(val) #insert
-        elif val < node.val:
-            if node.left:
-                #go left
-                self.insert(val, node.left)
-            else:
-                node.left = Node(val)
-        else:
-            print(val, " Already in tree")
-
-    def number_of_leaves(self, node):
-        if node.left and node.right:
-            return self.number_of_leaves(node.left) + self.number_of_leaves(node.right)
-        elif node.left:
-            return self.number_of_leaves(node.left)
-        elif node.right:
-            return self.number_of_leaves(node.right)
-        else:
-            #leave
-            return 1
-    
-    def number_of_leaves_i(self):
-        leaves = 0
-        nodes = [self.root]
-        while nodes:
-            node = nodes[0]
-            if node.left:
-                nodes.append(node.left)
-            if node.right:
-                nodes.append(node.right)
-            if (not node.left) and (not node.right):
-                leaves += 1
-            del nodes[0]
-        return leaves
-
-    def height(self, node):
-        if node.left and node.right:
-            print(node.val, " Height of left ", self.height(node.left)," Hegiht of right ", self.height(node.right))
-            return 1 + max(self.height(node.left), self.height(node.right))
-        elif node.left:
-            #print(node.val, self.height(node.left))
-            return 1 + self.height(node.left)
-        elif node.right:
-            #print(node.val, self.height(node.right))
-            return 1 + self.height(node.right)
-        else:
-            #print(node.val)
-            return 1
-
-    def is_identical(self, second_root):
-        nodes1 = [self.root]
-        nodes2 = [second_root]
-        while nodes1 and nodes2:
-            node = nodes1[0]
-            node2 = nodes2[0]
-            if node.val == node2.val:
-                if node.left:
-                    nodes1.append(node.left)
-                if node.right:
-                    nodes1.append(node.right)
-                if node2.left:
-                    nodes2.append(node2.left)
-                if node2.right:
-                    nodes2.append(node2.right)
-            else:
-                return False
-            del nodes1[0]
-            del nodes2[0]
-        return len(nodes1) == len(nodes2)
+# c_ Node
+#     val _ 0
+#     left _ 0
+#     right _ 0
+#     ___ - val
+#         ? ?
+#
+# c_ BST
+#
+#     ___ - val
+#         root _ ? ?
+#
+#     ___ insert val node
+#         __ n__.v.. < ?
+#             __ n__.r..
+#                 #go right
+#                 i.. ? n__.r..
+#             _____
+#                 n__.r.. _ ? ? #insert
+#         ____ ? < n__.v..
+#             __ n__.l..
+#                 #go left
+#                 i.. ? n__.l..
+#             _____
+#                 n__.l.. _ ? ?
+#         _____
+#             print ? " Already in tree")
+#
+#     ___ number_of_leaves  node
+#         __ ?.l.. an. ?.r..
+#             r_ ? ?.l..| + ? ?.r..
+#         ____ ?.l..
+#             r_ ? ?.l..
+#         ____ ?.r..
+#             r_ ? ?.r..
+#         _____
+#             #leave
+#             r_ 1
+#
+#     ___ number_of_leaves_i
+#         leaves _ 0
+#         nodes _ |r..
+#         w__ n..
+#             ? _ n..|0
+#             __ ?.l..
+#                 n__.ap.. ?.l..
+#             __ ?.r..
+#                 n__.ap.. ?.r..
+#             __ no. ?.l.. an. no. ?.r..
+#                 l.. +_ 1
+#             de. n..|0
+#         r_ ?
+#
+#     ___ height node
+#         __ ?.l.. an. ?.r..
+#             print(?.v.. " Height of left ", h.. ?.l.. " Hegiht of right ", h.. ?.r..
+#             r_ 1 + ma. h.. ?.l.. h.. ?.r..
+#         ____ ?.l..
+#             #print(?.val, height(?.left))
+#             r_ 1 + h.. ?.l..
+#         ____ ?.r..
+#             #print(?.val, height(?.right))
+#             r_ 1 + h.. ?.r..
+#         _____
+#             #print(?.val)
+#             r_ 1
+#
+#     ___ is_identical second_root
+#         nodes1 _ |r..
+#         nodes2 _ |?
+#         w__ _1 an. _2
+#             ? _ _1|0
+#             _2 _ _2|0
+#             __ ?.v.. __ _2.v..
+#                 __ ?.l..
+#                     _1.ap.. ?.l..
+#                 __ ?.r..
+#                     _1.ap.. ?.r..
+#                 __ _2.l..
+#                     nodes2.ap.. _2.l..
+#                 __ node2.r..
+#                     _2.ap.. _2.r..
+#             _____
+#                 r_ F..
+#             de. -1|0
+#             de. -2|0
+#         r_ le. _1 __ le. _2
