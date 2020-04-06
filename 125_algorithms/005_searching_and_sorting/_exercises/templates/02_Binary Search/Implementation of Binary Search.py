@@ -1,77 +1,77 @@
-# Implementation of Binary Search
+# # Implementation of Binary Search
+# #
+# # In this notebook we will just implement two versions of a simple binary search. View the video lecture for
+# # a full breakdown!
+# # Binary Search
 #
-# In this notebook we will just implement two versions of a simple binary search. View the video lecture for
-# a full breakdown!
-# Binary Search
-
-def binary_search(arr,ele):
-
-    # First and last index values
-    first = 0
-    last = len(arr) - 1
-
-    found = False
-
-
-    while first <= last and not found:
-
-        mid = (first+last)/2 # or // for Python 3
-
-        # Match found
-        if arr[mid] == ele:
-            found = True
-
-        # Set new midpoints up or down depending on comparison
-        else:
-            # Set down
-            if ele < arr[mid]:
-                last = mid -1
-            # Set up
-            else:
-                first = mid + 1
-
-    return found
-
-# # list must already be sorted!
-arr = [1,2,3,4,5,6,7,8,9,10]
-
-binary_search(arr,4)
-# True
+# ___ binary_search arr ele
 #
-binary_search(arr,2.2)
-# False
+#     # First and last index values
+#     first _ 0
+#     last _ le. a.. - 1
 #
-# Recursive Version of Binary Search
-
-def rec_bin_search(arr,ele):
-
-    # Base Case!
-    if len(arr) == 0:
-        return False
-
-    # Recursive Case
-    else:
-
-        mid = len(arr)/2
-
-        # If match found
-        if arr[mid]==ele:
-            return True
-
-        else:
-
-            # Call again on second half
-            if ele<arr[mid]:
-                return rec_bin_search(arr[:mid],ele)
-
-            # Or call on first half
-            else:
-                return rec_bin_search(arr[mid+1:],ele)
-
-rec_bin_search(arr,3)
-# True
+#     found _ F..
 #
-rec_bin_search(arr,15)
-# False
 #
-# Good Job!
+#     w__ f.. <_ l.. an. no. f..
+#
+#         mid _  ? + ? /2 # or // for Python 3
+#
+#         # Match found
+#         __ a..|m.. __ e..
+#             f.. _ T..
+#
+#         # Set new midpoints up or down depending on comparison
+#         e..
+#             # Set down
+#             __ e.. < a..|m..
+#                 l.. _ m.. -1
+#             # Set up
+#             ____
+#                 f.. _ m.. + 1
+#
+#     r_ f..
+#
+# # # list must already be sorted!
+# arr _ [1,2,3,4,5,6,7,8,9,10]
+#
+# ? ? 4
+# # True
+# #
+# ? ? 2.2
+# # False
+# #
+# # Recursive Version of Binary Search
+#
+# ___ rec_bin_search arr ele
+#
+#     # Base Case!
+#     __ le. ? __ 0
+#         r_ F..
+#
+#     # Recursive Case
+#     ____
+#
+#         mid _ le. ?/2
+#
+#         # If match found
+#         __ ?|m..__e..
+#             r_ T..
+#
+#         ____
+#
+#             # Call again on second half
+#             __ e.. < ?|m..
+#                 r_ ? ?|;m.. e..
+#
+#             # Or call on first half
+#             ____
+#                 r_ ? ?|m.. + 1; e..
+#
+# ?(?,3)
+# # True
+# #
+# ?(?,15)
+# # False
+# #
+# # Good Job!
