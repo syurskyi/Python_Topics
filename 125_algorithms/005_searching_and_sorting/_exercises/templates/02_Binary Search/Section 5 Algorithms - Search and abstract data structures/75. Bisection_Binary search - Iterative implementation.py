@@ -1,16 +1,16 @@
-def bisection_iter(n, arr):
-    start = 0
-    stop = len(arr)-1
-    while start <= stop:
-        mid = (start + stop)//2
-        if n == arr[mid]:
-            return f"{n} found at index: {mid}"
-        elif n > arr[mid]:
-            start = mid + 1
-        else:
-            stop = mid - 1
-    return f"{n} not found in list"
-
-# I have left the create list function out since you can
-# create it anyway you like, I personally would recommend
-# list comprehension 
+# ___ bisection_iter n arr
+#     start _ 0
+#     stop _ le. ? -1
+#     w__ ? <_ ?
+#         mid _ (? + ?)//2
+#         __ n __ a..|m..
+#             r_ _*|? found at index: |m..
+#         ____ n > a..|m..
+#             ? _ m.. + 1
+#         ____
+#             ? _ m.. - 1
+#     r_ _*|? not found in list"
+#
+# # I have left the create list function out since you can
+# # create it anyway you like, I personally would recommend
+# # list comprehension
