@@ -1,139 +1,139 @@
-from datetime import datetime, timedelta
-
-class Node:
-    def __init__(self, key):
-        sched_time, duration, name_of_job = key.split(",")
-        raw_sched_time = datetime.strptime(sched_time, '%H:%M')
-        key = raw_sched_time.time()
-        end_time = (raw_sched_time + timedelta(minutes=int(duration))).time()
-        self.data = key
-        self.scheduled_end = end_time
-        self.duration = duration
-        self.name_of_job = name_of_job.rstrip()
-        self.left_child = None
-        self.right_child = None
-
-    def __str__(self):
-        return f"Time: {self.data}, Duration: {self.duration}, End: {self.scheduled_end}, Jobname: {self.name_of_job}"
-
-class BSTDemo:
-    def __init__(self):
-        self.root = None
-
-    def insert(self, key):
-        if not isinstance(key, Node):
-            key = Node(key)
-        if self.root == None:
-            self.root = key
-            self.helpful_print(key, True)
-        else:
-            self._insert(self.root, key)
-
-    def _insert(self, curr, key):
-        if key.data > curr.data and key.data >= curr.scheduled_end:
-            if curr.right_child == None:
-                curr.right_child = key
-                self.helpful_print(key, True)
-            else:
-                self._insert(curr.right_child, key)
-        elif key.data < curr.data and key.scheduled_end <= curr.data:
-            if curr.left_child == None:
-                curr.left_child = key
-                self.helpful_print(key, True)
-            else:
-                self._insert(curr.left_child, key)
-        else:
-            self.helpful_print(key, False)
-
-    def helpful_print(self, key, succeeded):
-        if succeeded:
-            print(f"Added:\t\t {key.name_of_job}")
-            print(f"Begin:\t\t {key.data}")
-            print(f"End:\t\t {key.scheduled_end}")
-            print("-"*60)
-        else:
-            print(f"Rejected:\t {key.name_of_job}")
-            print(f"Begin:\t\t {key.data}")
-            print(f"End:\t\t {key.scheduled_end}")
-            print("Reason:\t Time slot overlap, please verify")
-            print("-"*60)
-
-    def in_order(self):
-        print("Full job schedule for today")
-        print("-"*60)
-        self._in_order(self.root)
-        print("-"*60)
-
-    def _in_order(self, curr):
-        if curr:
-            self._in_order(curr.left_child)
-            print(curr)
-            self._in_order(curr.right_child)
-
-    def length(self):
-        return self._length(self.root)
-
-    def _length(self, curr):
-        if curr is None:
-            return 0
-        return 1 + self._length(curr.left_child) + self._length(curr.right_child)
-
-    def find_val(self, key):
-        return self._find_val(self.root, key)
-
-    def _find_val(self, curr, key):
-        if curr:
-            if key == curr.data:
-                return curr
-            elif key < curr.data:
-                return self._find_val(curr.left_child, key)
-            else:
-                return self._find_val(curr.right_child, key)
-        return
-
-    def min_right_subtree(self, curr):
-        if curr.left_child == None:
-            return curr
-        else:
-            return self.min_right_subtree(curr.left_child)
-
-    def delete_val(self, key):
-        self._delete_val(self.root, None, None, key)
-
-    def _delete_val(self, curr, prev, is_left, key):
-        if curr:
-            if key == curr.data:
-                if curr.left_child and curr.right_child:
-                    min_child = self.min_right_subtree(curr.right_child)
-                    curr.data = min_child.data
-                    self._delete_val(curr.right_child, curr, False, min_child.data)
-                elif curr.left_child == None and curr.right_child == None:
-                    if prev:
-                        if is_left:
-                            prev.left_child = None
-                        else:
-                            prev.right_child = None
-                    else:
-                        self.root = None
-                elif curr.left_child == None:
-                    if prev:
-                        if is_left:
-                            prev.left_child = curr.right_child
-                        else:
-                            prev.right_child = curr.right_child
-                    else:
-                        self.root = curr.right_child
-                else:
-                    if prev:
-                        if is_left:
-                            prev.left_child = curr.left_child
-                        else:
-                            prev.right_child = curr.left_child
-                    else:
-                        self.root = curr.left_child
-            elif key < curr.data:
-                self._delete_val(curr.left_child, curr, True, key)
-            elif key > curr.data:
-                self._delete_val(curr.right_child, curr, False, key)
-        else:
-            print(f"{key} not found in Tree")
+# ____ d.. _______ d_t.. t_d..
+#
+# c_ Node
+#     ___ - key
+#         sched_time, duration, name_of_job _ ?.sp.. ","
+#         raw_sched_time _ d_t_.s_t.. s_t.. '%H:%M'
+#         key _ ?.ti..
+#         end_time _ r.. + t__d.. m_i.. d___ .ti..
+#         data _ k..
+#         scheduled_end _ e..
+#         duration _ ?
+#         name_of_job _ n__.rs
+#         left_child _ N..
+#         right_child _ N..
+#
+#     ___ -
+#         r_ _*Time: |? Duration: |?, End: |?, Jobname: |?
+#
+# c_ BSTDemo
+#     ___ -
+#         root _ N..
+#
+#     ___ insert key
+#         __ no. isi.. ? ?
+#             ? _ ? ?
+#         __ r.. __ N..
+#             r.. _ ?
+#             h.. k.. T..
+#         ____
+#             _? r.. k..
+#
+#     ___ _insert curr key
+#         __ k__.d.. > ?.d.. an. k__.d.. >_ ?.s..
+#             __ ?.r.. __ N..
+#                 ?.r.. _ k__
+#                 h.. k__ T..
+#             ____
+#                 _? ?.r.. k__
+#         ____ k__.d.. < ?.d.. an. k__.s.. <_ ?.d..
+#             __ ?.l.. __ N..
+#                 ?.l.. _ k__
+#                 h.. k__ T..
+#             ____
+#                 _? ?.l.. k__
+#         ____
+#             h.. k__ F..
+#
+#     ___ helpful_print key succeeded
+#         __ s..
+#             print(_*Added:\t\t |?.n..
+#             print(_*Begin:\t\t |?.d..
+#             print(_*End:\t\t |?.s..
+#             print("-"*60)
+#         ____
+#             print(_*Rejected:\t |?.n..
+#             print(_*Begin:\t\t |?.d..
+#             print(_*End:\t\t |?.s..
+#             print("Reason:\t Time slot overlap, please verify")
+#             print("-"*60)
+#
+#     ___ in_order
+#         print("Full job schedule for today")
+#         print("-"*60)
+#         _? r..
+#         print("-"*60)
+#
+#     ___ _in_order curr
+#         __ ?
+#             _? ?.l..
+#             print(?)
+#             _? ?.r..
+#
+#     ___ length
+#         r_ _? r..
+#
+#     ___ _length curr
+#         __ ? __ N..
+#             r_ 0
+#         r_ 1 + _? ?.l.. + _? ?.r..
+#
+#     ___ find_val key
+#         r_ _? r.. ?
+#
+#     ___ _find_val curr key
+#         __ ?
+#             __ ? __ ?.d..
+#                 r_ ?
+#             ____ ? < ?.d..
+#                 r_ _? ?.l.. ?
+#             ____
+#                 r_ _? ?.r.. ?
+#         r_
+#
+#     ___ min_right_subtree curr
+#         __ ?.l.. __ N..
+#             r_ ?
+#         ____
+#             r_ ? ?.l..
+#
+#     ___ delete_val key
+#         _? r.. N.. N.. ?
+#
+#     ___ _delete_val curr prev is_left key
+#         __ ?
+#             __ k__ __ ?.d..
+#                 __ ?.l.. an. ?.r..
+#                     min_child _ m.. ?.r..
+#                     ?.d.. _ ?.d..
+#                     _? ?.r.. ? F.. ?.d..
+#                 ____ ?.l.. __ N.. an. ?.r.. __ N..
+#                     __ p..
+#                         __ i..
+#                             p__.l.. _ N..
+#                         ____
+#                             p__.r.. _ N..
+#                     ____
+#                         r.. _ N..
+#                 ____ ?.l.. __ N..
+#                     __ p..
+#                         __ i..
+#                             p__.l.. _ ?.r..
+#                         ____
+#                             p__.r.. _ ?.r..
+#                     ____
+#                         r.. _ ?.r..
+#                 ____
+#                     __ p..
+#                         __ i..
+#                             p__.l.. _ ?.l..
+#                         ____
+#                             p__.r.. _ ?.l..
+#                     ____
+#                         r.. _ ?.l..
+#             ____ k__ < ?.d..
+#                 _d.. ?.l.. ? T.. k__
+#             ____ k__ > ?.d..
+#                 _de(?.r.. ? F.. k__
+#         ____
+#             print(_*|k__ no. found in Tree")
