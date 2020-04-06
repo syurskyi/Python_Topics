@@ -1,81 +1,81 @@
-class Node:
-    def __init__(self, key):
-        self.data = key
-        self.left_child = None
-        self.right_child = None
-
-class BSTDemo:
-    def __init__(self):
-        self.root = None
-
-    def insert(self, key):
-        if not isinstance(key, Node):
-            key = Node(key)
-        if self.root == None:
-            self.root = key
-        else:
-            self._insert(self.root, key)
-
-    def _insert(self, curr, key):
-        if key.data > curr.data:
-            if curr.right_child == None:
-                curr.right_child = key
-            else:
-                self._insert(curr.right_child, key)
-        elif key.data < curr.data:
-            if curr.left_child == None:
-                curr.left_child = key
-            else:
-                self._insert(curr.left_child, key)
-
-    def in_order(self):
-        self._in_order(self.root)
-        print("")
-
-    def _in_order(self, curr):
-        if curr:
-            self._in_order(curr.left_child)
-            print(curr.data, end=" ")
-            self._in_order(curr.right_child)
-
-    def pre_order(self):
-        '''root, left, right'''
-        pass
-
-    def _pre_order(self, curr):
-        pass
-
-    def post_order(self):
-        '''left, right, root'''
-        pass
-
-    def _post_order(self, curr):
-        pass
-
-    def find_val(self, key):
-        pass
-
-    def _find_val(self, curr, key):
-        pass
-
-    def delete_val(self, key):
-        pass
-
-    def _delete_val(self, curr, prev, is_left, key):
-        pass
-
-tree = BSTDemo()
-tree.insert("F")
-tree.insert("C")
-tree.insert("G")
-tree.insert("A")
-tree.insert("B")
-tree.insert("K")
-tree.insert("E")
-tree.insert("H")
-tree.insert("D")
-tree.insert("I")
-tree.insert("M")
-tree.insert("J")
-tree.insert("L")
-tree.in_order()
+# c_ Node
+#     ___ - key
+#         data _ ?
+#         left_child _ N..
+#         right_child _ N..
+#
+# c_ BSTDemo
+#     ___ -
+#         root _ N..
+#
+#     ___ insert key
+#         __ no. isi..? ?
+#             k.. _ ? ?
+#         __ r.. __ N..
+#             r.. _ ?
+#         ____
+#             _? r.. ?
+#
+#     ___ _insert curr key
+#         __ ?.d.. > ?.d..
+#             __ ?.r.. __ N..
+#                 ?.r.. _ ?
+#             ____
+#                 _? ?.r.. ?
+#         ____ ?.d.. < ?.d..
+#             __ ?.l.. __ N..
+#                 ?.l.. _ ?
+#             ____
+#                 _? ?.l.. ?
+#
+#     ___ in_order
+#         _? r..
+#         print("")
+#
+#     ___ _in_order curr
+#         __ ?
+#             _? ?.l..
+#             print ?.d.. e.._" "
+#             _? ?.r..
+#
+#     ___ pre_order
+#         '''root, left, right'''
+#         p..
+#
+#     ___ _pre_order curr
+#         p..
+#
+#     ___ post_order
+#         '''left, right, root'''
+#         p..
+#
+#     ___ _post_order curr
+#         p..
+#
+#     ___ find_val key
+#         p..
+#
+#     ___ _find_val curr key
+#         p..
+#
+#     ___ delete_val key
+#         p..
+#
+#     ___ _delete_val  curr prev is_left key
+#         p..
+#
+# tree _ BSTDemo()
+# tree.insert("F")
+# tree.insert("C")
+# tree.insert("G")
+# tree.insert("A")
+# tree.insert("B")
+# tree.insert("K")
+# tree.insert("E")
+# tree.insert("H")
+# tree.insert("D")
+# tree.insert("I")
+# tree.insert("M")
+# tree.insert("J")
+# tree.insert("L")
+# tree.in_order()
