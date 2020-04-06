@@ -1,11 +1,11 @@
-def bisection_recur(n, arr, start, stop):
-    if start > stop:
-        return f"{n} not found in list"
-    else:
-        mid = (start + stop)//2
-        if n == arr[mid]:
-            return f"{n} found at index: {mid}"
-        elif n > arr[mid]:
-            return bisection_recur(n, arr, mid+1, stop)
-        else:
-            return bisection_recur(n, arr, start, mid-1)
+# ___ bisection_recur n arr start stop
+#     __ ? > ?
+#         r_ _*|? not found in list"
+#     ____
+#         mid _ ? + ?|//2
+#         __ ? __ a..|m..
+#             r_ _*|? found at index: |m.."
+#         ____ ? > a..|m..
+#             r_ ? ? a.. m..+1 s..
+#         ____
+#             r_ ? ? a.. s.. m..-1
