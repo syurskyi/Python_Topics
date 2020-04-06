@@ -1,11 +1,11 @@
-def linear_search(main_list, item):
+___ linear_search main_list item
     # Check every item in the list
-    for i in range(len(main_list)):
+    ___ i __ ra.. le. ?
         # If the item is the one you are looking for
-        if main_list[i] == item:
+        __ ?|? __ ?
             # Return the index where the item is located
-            return i
+            r_ ?
     # If the item is not found, return -1
-    return -1
+    r_ -1
 
 
