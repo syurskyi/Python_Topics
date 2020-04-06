@@ -1,84 +1,84 @@
-from datetime import datetime
-from bst_demo import BSTDemo, Node
-
-def get_job_input_details():
-    start_time = input("Enter the time in hh:mm format, example 18:30 or 6:30-> ")
-    while True:
-        try:
-            datetime.strptime(start_time, '%H:%M')
-        except ValueError:
-            print("Incorrect time format, should be hh:mm")
-            start_time = input("Enter the time in hh:mm format, ex 18:30 or 6:30-> ")
-        else:
-            break
-    duration_of_job = input("Enter the duration of the job in minutes, ex 60-> ")
-    while True:
-        try:
-            int(duration_of_job)
-        except ValueError:
-            print("Please enter a number for number of minutes")
-            duration_of_job = input("Enter the duration of the job in minutes, ex 60-> ")
-        else:
-            break
-    job_name = input("Enter the name of the job (case sensitive)-> ")
-    return start_time, duration_of_job, job_name
-
-my_tree = BSTDemo()
-
-with open("data.txt") as f:
-    for line in f:
-        my_tree.insert(line)
-
-while True:
-    print("Please choose an option from the list below:")
-    print("Press 1 to view today's scheduled jobs")
-    print("Press 2 to add a job to today's schedule")
-    print("Press 3 to remove a job from the schedule")
-    print("Press 4 to quit")
-    selection = input("Enter your choice-> ")
-    try:
-        entry = int(selection)
-    except ValueError:
-        print("Please enter a number between 1 and 4")
-        continue
-    if int(selection) == 1:
-        my_tree.in_order()
-    elif int(selection) == 2:
-        print("You have chosen to add a job to the schedule")
-        start_time, duration_of_job, job_name = get_job_input_details()
-        line = start_time+","+duration_of_job+","+job_name
-        num = my_tree.length()
-        my_tree.insert(line)
-        if num == my_tree.length()-1:
-            with open("data.txt", "a+") as to_write:
-                to_write.write(line+"\n")
-        input("Press any key to continue... ")
-    elif int(selection) == 3:
-        print("You have chosen to remove a job from the schedule")
-        start_time, duration_of_job, job_name = get_job_input_details()
-        key_to_find = datetime.strptime(start_time, '%H:%M').time()
-        result = my_tree.find_val(key_to_find)
-        if result:
-            if result.name_of_job == job_name and result.duration == duration_of_job:
-                print("Removing job:")
-                print(result)
-                my_tree.delete_val(key_to_find)
-                print("Job successfully removed")
-                with open("data.txt", "r") as f:
-                    lines = f.readlines()
-                with open("data.txt", "w") as f:
-                    for line in lines:
-                        if line.strip("\n") != start_time+","+duration_of_job+","+job_name:
-                            f.write(line)
-                input("Press any key to continue... ")
-            else:
-                print("The name and/or duration of job did not match, delete failed")
-                input("Press any key to continue... ")
-        else:
-            print("Job not found")
-            input("Press any key to continue... ")
-    elif int(selection) == 4:
-        print("Exiting program...")
-        break
-    else:
-        print("Please enter a number between 1 and 4")
+# ____ datetime ______ d_t..
+# ____ bst_demo ______ B.. N..
+#
+# ___ get_job_input_details
+#     start_time _ in.. "Enter the time in hh:mm format, example 18:30 or 6:30-> "
+#     w__ T..
+#         ___
+#             d_t_.strptime(start_time, '%H:%M')
+#         ______ V..
+#             print("Incorrect time format, should be hh:mm")
+#             start_time _ in..("Enter the time in hh:mm format, ex 18:30 or 6:30-> ")
+#         ____
+#             b..
+#     duration_of_job _ in..("Enter the duration of the job in minutes, ex 60-> ")
+#     w__ T..
+#         ___
+#             in. ?
+#         ______ V..
+#             print("Please enter a number for number of minutes")
+#             d.. _ in..("Enter the duration of the job in minutes, ex 60-> ")
+#         ____
+#             b..
+#     job_name _ in..("Enter the name of the job (case sensitive)-> ")
+#     r_ s.. d.. j..
+#
+# my_tree _ ?
+#
+# w___ o__ data.txt __ f
+#     ___ line __ ?
+#         m__.i.. ?
+#
+# w__ T..
+#     print("Please choose an option from the list below:")
+#     print("Press 1 to view today's scheduled jobs")
+#     print("Press 2 to add a job to today's schedule")
+#     print("Press 3 to remove a job from the schedule")
+#     print("Press 4 to quit")
+#     selection _ in..("Enter your choice-> ")
+#     ___
+#         entry _ in. ?
+#     ______ V..
+#         print("Please enter a number between 1 and 4")
+#         c..
+#     __ in. s.. __ 1
+#         m__.i..
+#     ____ in. s.. __ 2
+#         print("You have chosen to add a job to the schedule")
+#         s.. d.. j.. _ g..
+#         line _ s.. + "," + d.. + "," + j..
+#         num _ m__.l..
+#         m__.i.. l..
+#         __ n.. __ m__.l__ -1
+#             w___ o__ data.txt __ __ to_write
+#                 ?.w.. l.. + "\n")
+#         in..("Press any key to continue... ")
+#     ____ in. s.. __ 3
+#         print("You have chosen to remove a job from the schedule")
+#         s.. d.. j.. _ g..
+#         key_to_find _ d_t_.st.. s.. '%H:%M' .t..
+#         result _ m__.f.. ?
+#         __ ?
+#             __ ?.n.. __ j.. an. ?.d.. __ d..
+#                 print("Removing job:")
+#                 print(?)
+#                 m__.d.. k..
+#                 print("Job successfully removed")
+#                 w___ o__ data.txt _ _ f
+#                     lines _ ?.r_l_
+#                 w___ o__ data.txt _ __ f
+#                     __ line __ lines
+#                         __ ?.st..("\n") !_ s.. + "," + d.. + "," + j..
+#                             ?.w.. ?
+#                 in..("Press any key to continue... ")
+#             ____
+#                 print("The name and/or duration of job did not match, delete failed")
+#                 in..("Press any key to continue... ")
+#         ____
+#             print("Job not found")
+#             in..("Press any key to continue... ")
+#     ____ in. s.. __ 4
+#         print("Exiting program...")
+#         b..
+#     ____
+#         print("Please enter a number between 1 and 4")
