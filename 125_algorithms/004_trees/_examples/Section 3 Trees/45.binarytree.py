@@ -1,288 +1,288 @@
-#!/usr/bin/python
-
-class Node:
-    def __init__(self, data):
-        self.l = None
-        self.r = None
-        self.v = data
-
-class binTree:
-    def __init__(self):
-        self.root = None
-
-    def getRoot(self):
-        return self.root
-
-    def addnode(self, data):
-        if (self.root == None):
-            self.root = Node(data)
-        else:
-            self._add(data, self.root)
-
-    def _add(self, data, node):
-        if (data < node.v):
-            if (node.l != None):
-                self._add(data, node.l)
-            else:
-                node.l = Node(data)
-        else:
-            if (node.r != None):
-                self._add(data, node.r)
-            else:
-                node.r = Node(data)
-
-    def findnode(self, data):
-        if (self.root != None):
-            return self._find(data, self.root)
-        else:
-            return None
-
-    def _find(self, data, node):
-        if (data == node.v):
-            return node
-        elif (data < node.v and node.l != None):
-            self._find(data, node.l)
-        elif (data > node.v and node.r != None):
-            self._find(data, node.r)
-
-    def deleteTree(self):
-        self.root = None
-
-    def printFullTree(self):
-        if (self.root != None):
-            self._printTree(self.root)
-
-    def _printTree(self, node):
-        if (node != None):
-            self._printTree(node.l)
-            print(str(node.v) + ' ')
-            self._printTree(node.r)
-
-
-def checkwhetheritsabintree(root):
-    if root == None:
-        return 1
-    # false if left is > than root
-    if root.l != None and root.l.v > root.v:
-        return 0
-
-    # false if right is < than root
-    if root.r != None and root.r.v < root.v:
-        return 0
-
-    # false if, recursively, the left or right is not a BST
-    if not checkwhetheritsabintree(root.l) or not checkwhetheritsabintree(root.r):
-        return 0
-
-    # passing all that, it's a BST
-    return 1
-
-
-def levelOrder(root):
-    items = []
-    count = 0
-    items.insert(count, root)
-    elements = ""
-    while items != []:
-        temp = items.pop()
-        elements = elements + str(temp.v) + " "
-        if temp.l != None:
-            items.insert(0, temp.l)
-        if temp.r != None:
-            items.insert(0, temp.r)
-    print("Level order traversal of BST: " + elements)
-
-
-def findsize(tree):
-    if not tree:
-        return 0
-    return findsize(tree.l) + findsize(tree.r) + 1
-
-
-def printReverse(root):
-    items = []
-    count = 0
-    items.insert(count, root)
-    elements = ""
-    while items != []:
-        temp = items.pop()
-        elements = str(temp.v) + " " + elements
-        if temp.l != None:
-            items.insert(0, temp.l)
-        if temp.r != None:
-            items.insert(0, temp.r)
-    print("Level order traversal of BST: " + elements)
-
-
-def maximumDepthOfTree(root):
-    if root == None:
-        return 0
-    return max(maximumDepthOfTree(root.l), maximumDepthOfTree(root.r)) + 1
-
-
-def deepestNode(root):
-    items = []
-    count = 0
-    items.insert(count, root)
-    elements = ""
-    while items != []:
-        temp = items.pop()
-        elements = str(temp.v) + " " + elements
-        if temp.l != None:
-            items.insert(0, temp.l)
-        if temp.r != None:
-            items.insert(0, temp.r)
-        for p in items: print(p.v)
-        print("####")
-
-    print("Deepest node is ", temp.v)
-
-
-def countLeaves(root):
-    items = []
-    count = 0
-    items.insert(count, root)
-    elements = ""
-    while items != []:
-        temp = items.pop()
-        if temp.l is None and temp.r is None:
-            count += 1
-        if temp.l != None:
-            items.insert(0, temp.l)
-        if temp.r != None:
-            items.insert(0, temp.r)
-
-    print("number of leafs in the tree ", count)
-
-
-def countFullNodes(root):
-    items = []
-    count = 0
-    items.insert(count, root)
-    while items != []:
-        temp = items.pop()
-        if temp.l is not None and temp.r is not None:
-            count += 1
-        if temp.l != None:
-            items.insert(0, temp.l)
-        if temp.r != None:
-            items.insert(0, temp.r)
-
-    print("number of full nodes in the tree ", count)
-
-
-def countHalfNodes(root):
-    items = []
-    count = 0
-    items.insert(count, root)
-    while items != []:
-        temp = items.pop()
-        if (temp.l is None and temp.r is not None) or \
-                (temp.l is not None and temp.r is None):
-            count += 1
-        if temp.l != None:
-            items.insert(0, temp.l)
-        if temp.r != None:
-            items.insert(0, temp.r)
-
-    print("number of half nodes in the tree ", count)
-
-
-ptr = 0
-
-
-def diaTree(root):
-    global ptr
-    if (not root):
-        return 0
-    left = diaTree(root.l);
-    right = diaTree(root.r);
-
-    if (left + right > ptr):
-        ptr = left + right
-    return max(left, right) + 1
-
-
-def appendpath(root, path, paths):
-    if not root:
-        return 0
-
-    path.append(root.v)
-    print("PATH:", path)
-    paths.append(path)
-    print("PATHS:", paths)
-    appendpath(root.l, path + [root.v], paths)
-    appendpath(root.r, path + [root.v], paths)
-
-
-def getthepathofeachnode(rootnode):
-    nodepaths = []
-    appendpath(rootnode, [], nodepaths)
-    print('path of nodes:', nodepaths)
-
-
-def getthepath(root, val, path, paths):
-    print("root", root)
-    print("root.data", root.v)
-    print("val", val)
-    print("path", path)
-    print("paths", paths)
-
-    if not root:
-        return False
-
-    if not root.l and not root.r:
-        if root.v == val:
-            path.append(root.v)
-            paths.append(path)
-            return True
-        else:
-            return False
-
-    left = getthepath(root.l, val - root.v, path + [root.v], paths)
-    right = getthepath(root.r, val - root.v, path + [root.v], paths)
-    return left or right
-
-
-def checkwhetherpathhassum(root, val):
-    paths = []
-    getthepath(root, val, [], paths)
-    print('sum:', val)
-    print('paths:', paths)
-
-
-def sumOfNodes(root):
-    items = []
-    count = 0
-    items.insert(count, root)
-    sum = 0
-    while items != []:
-        temp = items.pop()
-        sum += temp.v
-        if temp.l != None:
-            items.insert(0, temp.l)
-        if temp.r != None:
-            items.insert(0, temp.r)
-        for p in items: print(p.v)
-        print("####")
-
-    print("Total sum of all nodes is ", sum)
-
+# #!/usr/bin/python
+#
+# c_ Node
+#     ___ - data
+#         l _ N..
+#         r _ N..
+#         v _ ?
+#
+# c_ binTree
+#     ___ -
+#         root _ N..
+#
+#     ___ getRoot
+#         r_ ?
+#
+#     ___ addnode data
+#         __ |r.. __ N..
+#             r.. _ ? ?
+#         ____
+#             _add ? r..
+#
+#     ___ _add data node
+#         __ |? < n__.v
+#             __ |n__.l !_ N..
+#                 _?| n__.l
+#             ____
+#                 n__.l _ ? ?
+#         ____
+#             __ |n__.r !_ N..
+#                 _? ? ?.r
+#             ____
+#                 n__.r _ ? ?
+#
+#     ___ findnode data
+#         __ |r.. !_ N..
+#             r_ _? ? r..
+#         ____
+#             r_ N..
+#
+#     ___ _find data node
+#         __ |? __ n__.v
+#             r_ n..
+#         ____ |? < n__.v an. n__.l !_ N..
+#             _? ? n__.l
+#         ____ |? > n__.v an. n__.r !_ N..
+#             _? ? N__.r
+#
+#     ___ deleteTree
+#         r.. _ N..
+#
+#     ___ printFullTree
+#         __ |r.. !_ N..
+#             _? r..
+#
+#     ___ _printTree node
+#         __ |node !_ N..
+#             _? n__.l
+#             print st. n__.v| + ' '
+#             _? n__.r
+#
+#
+# ___ checkwhetheritsabintree root
+#     __ r.. __ N..
+#         r_ 1
+#     # false __ left is > than root
+#     __ r...l !_ N.. an. r...l.v > r...v
+#         r_ 0
+#
+#     # false __ right is < than root
+#     __ r...r !_ N.. an. r...r.v < r...v:
+#         r_ 0
+#
+#     # false __, recursively, the left or right is not a BST
+#     __ no. checkwhetheritsabintree(r...l) o. no. checkwhetheritsabintree(r...r):
+#         r_ 0
+#
+#     # passing all that, it's a BST
+#     r_ 1
+#
+#
+# ___ levelOrder root
+#     items _    # list
+#     count _ 0
+#     i__.i.. c.. r..
+#     elements _ ""
+#     w__ i.. !_    # list
+#         temp _ i__.p..
+#         e.. _ e.. + st. ?.v + " "
+#         __ t__.l !_ N..
+#             i__.i.. 0 t__.l
+#         __ t__.r !_ N..
+#             i__.i.. 0, t__.r
+#     print("Level order traversal of BST: " + ?
+#
+#
+# ___ findsize tree
+#     __ no. ?
+#         r_ 0
+#     r_ ?|?.l + ?|?.r + 1
+#
+#
+# ___ printReverse root
+#     items _    # list
+#     count _ 0
+#     i__.i.. c.. r..
+#     elements _ ""
+#     w__ i.. !_    # list
+#         temp _ i__.p..
+#         e... _ st. t__.v + " " + e..
+#         __ t__.l !_ N..
+#             i__.i.. 0 t__.l
+#         __ t__.r !_ N..
+#             i__.i.. 0 t__.r
+#     print("Level order traversal of BST: " + ?
+#
+#
+# ___ maximumDepthOfTree root
+#     __ r.. __ N..
+#         r_ 0
+#     r_ ma. ?|r...l ?|r...r|| + 1
+#
+#
+# ___ deepestNode root
+#     items _    # list
+#     count _ 0
+#     i__.i.. ? r..
+#     elements _ ""
+#     w__ i.. !_    # list
+#         temp _ i__.p..
+#         e.. _ st. t__.v + " " + e..
+#         __ t__.l !_ N..
+#             i__.i.. 0 t__.l
+#         __ t__.r !_ N..
+#             i__.i.. 0 t__.r
+#         ___ p __ i__: print(p.v)
+#         print("####")
+#
+#     print("Deepest node is " t__.v
+#
+#
+# ___ countLeaves root
+#     items _    # list
+#     count _ 0
+#     i__.i..|? r..
+#     elements _ ""
+#     w__ i__ !_    # list
+#         temp _ i__.p..
+#         __ t__.l is N.. an. t__.r __ N..
+#             c.. +_ 1
+#         __ t__.l !_ N..
+#             i__.i.. 0 t__.l
+#         __ t__.r !_ N..
+#             i__.i.. 0 t__.r
+#
+#     print("number of leafs in the tree " ?
+#
+#
+# ___ countFullNodes root
+#     items _    # list
+#     count _ 0
+#     i__.i.. c.., r..
+#     w__ i__ !_    # list:
+#         temp _ i__.p..
+#         __ t__.l __ no. N.. an. t__.r __ no. N..
+#             c.. +_ 1
+#         __ t__.l !_ N..
+#             i__.i.. 0 t__.l
+#         __ t__.r !_ N..
+#             i__.i.. 0 t__.r
+#
+#     print("number of full nodes in the tree " ?
+#
+#
+# ___ countHalfNodes root
+#     items _    # list
+#     count _ 0
+#     items.i.. c.. r..
+#     w__ i__ !_    # list:
+#         temp _ i__.p..
+#         __ (t__.l __ N.. an. t__.r __ no. N..) o. \
+#                 (t__.l __ no. N.. an. t__.r __ N..)
+#             c.. +_ 1
+#         __ t__.l !_ N..
+#             i__.i.. 0 t__.l
+#         __ t__.r !_ N..
+#             i__.i.. 0 t__.r
+#
+#     print("number of half nodes in the tree " ?
+#
+#
+# ptr _ 0
+#
+#
+# ___ diaTree root
+#     g.. ?
+#     __ |no. r..
+#         r_ 0
+#     left _ ?|r...l
+#     right _ ?|r...r
+#
+#     __ |l.. + r.. > p..
+#         p.. _ l.. + r..
+#     r_ ma. l.. r.. + 1
+#
+#
+# ___ appendpath root path paths
+#     __ no. r..
+#         r_ 0
+#
+#     p__.ap.. r...v
+#     print "PATH:", p__
+#     p___.ap..(p__)
+#     print("PATHS:", ?
+#     ? r...l, p__ + |r...v p..
+#     ? r...r, p__ + |r...v p..
+#
+#
+# ___ getthepathofeachnode rootnode
+#     nodepaths _    # list
+#     appendpath ?,    # list, nodepaths)
+#     print('p__ of nodes:', n..
+#
+# ___ getthepath root val path paths
+#     print("r..", r..
+#     print("r...data", r...v
+#     print("val", ?
+#     print("p__", p__)
+#     print("paths", ?
+#
+#     __ no. r..
+#         r_ F..
+#
+#     __ no. r...l an. no. r...r
+#         __ r...v __ val
+#             p__.ap.. r...v
+#             p__.ap.. p__
+#             r_ T..
+#         ____
+#             r_ F..
+#
+#     left _ g.. r...l v.. - r...v, p__ + |r...v p..
+#     right _ g.. r...r v.. - r...v, p__ + |r...v p..
+#     r_ ? o. ?
+#
+#
+# ___ checkwhetherpathhassum root val
+#     paths _    # list
+#     g.. r.. ?    # list, paths)
+#     print('sum:', ?
+#     print('paths:' ?
+#
+#
+# ___ sumOfNodes root
+#     items _    # list
+#     count _ 0
+#     i__.i.. count, r..
+#     sum _ 0
+#     w__ i__ !_    # list:
+#         temp _ i__.p..
+#         s.. +_ t__.v
+#         __ t__.l !_ N..
+#             i__.i.. 0 t__.l
+#         __ t__.r !_ N..
+#             i__.i.. 0 t__.r
+#         ___ p __ i__: print(p.v)
+#         print("####")
+#
+#     print("Total sum of all nodes is " ?
+#
+#
 
 
 #     3
 # 0     4
 #   2      8
-tree = binTree()
-tree.addnode(3)
-tree.addnode(4)
-tree.addnode(0)
-tree.addnode(-1)
-tree.addnode(8)
-tree.addnode(2)
-tree.addnode(3.5)
+# tree = binTree()
+# tree.addnode(3)
+# tree.addnode(4)
+# tree.addnode(0)
+# tree.addnode(-1)
+# tree.addnode(8)
+# tree.addnode(2)
+# tree.addnode(3.5)
 #tree.addnode(10)
-tree.printFullTree()
+# tree.printFullTree()
 #print (tree.findnode(3)).v
 #print tree.findnode(10)
 #tree.deleteTree()
