@@ -1,33 +1,33 @@
-def merge_sorted(arr1,arr2):
-    sorted_arr = []
-    i, j = 0, 0
-    while i < len(arr1) and j < len(arr2):
-        if arr1[i] < arr2[j]:
-            sorted_arr.append(arr1[i])
-            i += 1
-        else:
-            sorted_arr.append(arr2[j])
-            j += 1
-    while i < len(arr1):
-        sorted_arr.append(arr1[i])
-        i += 1
-    while j < len(arr2):
-        sorted_arr.append(arr2[j])
-        j += 1
-    return sorted_arr
-
-def divide_arr(arr):
-    if len(arr) < 2:
-        return arr[:]
-    else:
-        middle = len(arr)//2
-        l1 = divide_arr(arr[:middle])
-        l2 = divide_arr(arr[middle:])
-        return merge_sorted(l1, l2)
-
-# xxxxxxxxxxxx Program Execution xxxxxxxxxxxx
-l = [6, 8, 1, 4, 10, 7, 8, 9, 3, 2, 5]
-print(divide_arr(l))
-# xxxxxxxxxxxx End Program xxxxxxxxxxxx
-
-# orig list = [6, 8, 1, 4, 10, 7, 8, 9, 3, 2, 5]
+# ___ merge_sorted arr1 arr2
+#     sorted_arr  # list
+#     i j _ 0 0
+#     w___ i < le. ? an. j < le. ?
+#         __ ?|? < ?|?
+#             ?.ap.. ?|?
+#             i +_ 1
+#         ____
+#             ?.ap.. ?|?
+#             j +_ 1
+#     w___ i < le. ?
+#         ?.ap.. ?|?
+#         i +_ 1
+#     w___ j < le. ?
+#         ?.ap.. ?|?
+#         j ++ 1
+#     r_ ?
+#
+# ___ divide_arr arr
+#     __ le. ? < 2
+#         r_ ? |;
+#     ____
+#         middle _ le. ?//2
+#         l1 _ ? ?|;?
+#         l2 _ ? ?|?;
+#         r_ ? ? ?
+#
+# # xxxxxxxxxxxx Program Execution xxxxxxxxxxxx
+# l = [6, 8, 1, 4, 10, 7, 8, 9, 3, 2, 5]
+# print(? ?
+# # xxxxxxxxxxxx End Program xxxxxxxxxxxx
+#
+# # orig list = [6, 8, 1, 4, 10, 7, 8, 9, 3, 2, 5]
