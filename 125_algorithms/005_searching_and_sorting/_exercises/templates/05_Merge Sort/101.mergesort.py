@@ -1,41 +1,41 @@
-
-def mymergesort(myarray):
-    #print "Array entering the function:",myarray
-    if len(myarray) > 1:
-        mid = len(myarray) // 2
-        lefthalf = myarray[:mid]
-        righthalf = myarray[mid:]
-        #print "lefthalf:",lefthalf
-        #print "righthalf:",righthalf
-        mymergesort(lefthalf)
-        mymergesort(righthalf)
-        i = j = k = 0
-        while i < len(lefthalf) and j < len(righthalf):
-            #print "In first while loop myarray:",myarray
-            if lefthalf[i] < righthalf[j]:
-                myarray[k] = lefthalf[i]
-                i = i + 1
-            else:
-                myarray[k] = righthalf[j]
-                j = j + 1
-            k = k + 1
-        #print "while exiting first while loop:",myarray
-
-        while i < len(lefthalf):
-            #print "In second while loop myarray:",myarray
-            myarray[k] = lefthalf[i]
-            i = i + 1
-            k = k + 1
-        #print "while exiting second while loop:",myarray
-
-        while j < len(righthalf):
-            #print "In third while loop myarray:",myarray
-            myarray[k] = righthalf[j]
-            j = j + 1
-            k = k + 1
-        #print "while exiting third while loop:",myarray
-
-myarray=[600,500,400,300,200,100]
-print "given array:",myarray
-mymergesort(myarray)
-print(myarray)
+#
+# ___ mymergesort myarray
+#     #print "Array entering the function:",myarray
+#     __ le. ? > 1
+#         mid _ le. ? // 2
+#         lefthalf _ ?|;?
+#         righthalf _ ?|?;
+#         #print "lefthalf:",lefthalf
+#         #print "righthalf:",righthalf
+#         ? ?
+#         ? ?
+#         i _ j _ k _ 0
+#         w__ i < le. ? an. j < le. ?
+#             #print "In first while loop myarray:",myarray
+#             __ ?|? < ?|?
+#                 ?|? _ ?|?
+#                 i _ i + 1
+#             ____
+#                 ?|k _ ?|?
+#                 j _ j + 1
+#             k _ k + 1
+#         #print "while exiting first while loop:",myarray
+#
+#         w__ i < le. l..
+#             #print "In second while loop myarray:",myarray
+#             ?|k _ ?|?
+#             i _ i + 1
+#             k _ k + 1
+#         #print "while exiting second while loop:",myarray
+#
+#         w__ j < le. ?
+#             #print "In third while loop myarray:",myarray
+#             ?|k _ ?|?
+#             j _ j + 1
+#             k _ k + 1
+#         #print "while exiting third while loop:",myarray
+#
+# myarray_[600,500,400,300,200,100]
+# print "given array:" ?
+# ? ?
+# print ?
