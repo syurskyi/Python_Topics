@@ -1,10 +1,9 @@
-
 def checkdupsorting(myarray):
 	myarray.sort()
-        print myarray
+	print(myarray)
 	for i in range(0, len(myarray) - 1):
-                #print "in for loop:", myarray
-                #print "comparing", myarray[i],"and",myarray[i + 1]  
+		# print "in for loop:", myarray
+		# print "comparing", myarray[i],"and",myarray[i + 1]
 		if(myarray[i] == myarray[i + 1]):
 			print("Duplicates present:", myarray[i])
 			return

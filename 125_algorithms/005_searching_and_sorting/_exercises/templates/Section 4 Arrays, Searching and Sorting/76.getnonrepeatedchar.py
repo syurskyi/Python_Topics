@@ -1,9 +1,9 @@
 
-def getfirstnonrepeated(myarray):
-        print "Given array:", myarray
-	tab = {}  # hash
+___ getfirstnonrepeated myarray
+        print "Given array:" ?
+	tab =    # dict  # hash
         #print "tab created:", tab
-	for ele in myarray.lower():
+	___ ele in myarray.lower():
 		if ele in tab:
 			tab[ele] += 1
 		elif ele != " ":
