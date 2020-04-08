@@ -1,7 +1,7 @@
 def getfirstnonrepeated(myarray):
 	print("Given array:", myarray)
 	tab = {}  # hash
-	# print "tab created:", tab
+	# #print "tab created:", tab
 	for ele in myarray.lower():
 		if ele in tab:
 			tab[ele] += 1
@@ -9,7 +9,7 @@ def getfirstnonrepeated(myarray):
 			tab[ele] = 1
 		else:
 			tab[ele] = 0
-		# print "in loop:",tab,"for","'",ele,"'","in",myarray
+		#print "in loop:",tab,"for","'",ele,"'","in",myarray
 
 	for ele in myarray.lower():
 		if tab[ele] == 1:

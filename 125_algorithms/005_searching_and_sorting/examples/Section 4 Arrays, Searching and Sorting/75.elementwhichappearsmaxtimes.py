@@ -5,15 +5,15 @@ def elementwhichappearsmaxtimes(myarray):
 	count = max = 1
 	element = myarray[0]
 	for i in range(1, len(myarray)):
-		# print "in for loop:", myarray
-		# print "comparing", myarray[i],"and", element
+		#print "in for loop:", myarray
+		# #print "comparing", myarray[i],"and", element
 		if (myarray[i] == element):
-			# print myarray[i],"and", element,"are same"
+			#print myarray[i],"and", element,"are same"
 			count += 1
-			# print myarray[i],"appeared", count,"times"
+			#print myarray[i],"appeared", count,"times"
 			if count > max:
-				# print count,"greater then", max
-				# print "maxrepeated element appearing till now", element
+				#print count,"greater then", max
+				# #print "maxrepeated element appearing till now", element
 				max = count
 				maxRepeatedElement = element
 		else:

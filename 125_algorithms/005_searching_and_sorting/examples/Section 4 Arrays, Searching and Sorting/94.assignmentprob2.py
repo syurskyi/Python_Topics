@@ -1,4 +1,3 @@
-
 def func(numArray, val, l=0, h=-1):
     if not numArray: return -1
     if(h == -1): h = len(numArray) - 1
