@@ -1,52 +1,52 @@
-print("Algorithms file loaded")
-
-def quicksort(arr):
-    if len(arr) < 2:
-        return arr
-    else:
-        pivot = arr[-1]
-        smaller, equal, larger = [], [], []
-        for num in arr:
-            if num < pivot:
-                smaller.append(num)
-            elif num == pivot:
-                equal.append(num)
-            else:
-                larger.append(num)
-        return quicksort(smaller) + equal + quicksort(larger)
-
-def merge_sorted(arr1,arr2):
-    sorted_arr = []
-    i, j = 0, 0
-    while i < len(arr1) and j < len(arr2):
-        if arr1[i] < arr2[j]:
-            sorted_arr.append(arr1[i])
-            i += 1
-        else:
-            sorted_arr.append(arr2[j])
-            j += 1
-    while i < len(arr1):
-        sorted_arr.append(arr1[i])
-        i += 1
-    while j < len(arr2):
-        sorted_arr.append(arr2[j])
-        j += 1
-    return sorted_arr
-
-def mergesort(arr):
-    if len(arr) < 2:
-        return arr[:]
-    else:
-        middle = len(arr)//2
-        l1 = mergesort(arr[:middle])
-        l2 = mergesort(arr[middle:])
-        return merge_sorted(l1, l2)
-
-def bubblesort(arr):
-    swap_happened = True
-    while swap_happened:
-        swap_happened = False
-        for num in range(len(arr)-1):
-            if arr[num] > arr[num+1]:
-                swap_happened = True
-                arr[num], arr[num+1] = arr[num+1], arr[num]
+# print("Algorithms file loaded")
+#
+# ___ quicksort arr
+#     __ le. ? < 2
+#         r_ ?
+#     ____
+#         pivot _ ?|-1
+#         smaller equal larger _   # lists
+#         ___ num __ ?
+#             __ ? < p..
+#                 s__.ap.. ?
+#             ____ ? __ p..
+#                 e__.ap.. ?
+#             ____
+#                 l__.ap.. ?
+#         r_ ? ? + ? + ?|?
+#
+# ___ merge_sorted arr1 arr2
+#     sorted_arr _   # list
+#     i j _ 0 0
+#     w___ i < le.(?) an. j < le. ?
+#         __ ?|? < ?|?
+#             s__.ap.. ?|?
+#             ? +_ 1
+#         ____
+#             s__.ap.. ?|?
+#             j +_ 1
+#     w___ i < le. ?
+#         s__.ap.. ?|?
+#         i +_ 1
+#     w___ j < le. ?
+#         s__.ap.. ?|?
+#         j +_ 1
+#     r_ ?
+#
+# ___ mergesort ?
+#     __ le. ? < 2
+#         r_ ?|;
+#     ____
+#         middle _ le. ? //2
+#         l1 _ ? ?|;?
+#         l2 _ ? ?|?;
+#         r_ ? ? ?
+#
+# ___ bubblesort arr
+#     swap_happened _ T..
+#     w___ ?
+#         s.. _ F..
+#         ___ num __ ra.. le. ?|-1
+#             __ ?|? > ?|?+1
+#                 s.. _ T..
+#                 ?|? ?|?+1 _ ?|?+1 ?|?
