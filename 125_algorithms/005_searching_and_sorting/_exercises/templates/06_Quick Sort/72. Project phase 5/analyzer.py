@@ -1,35 +1,35 @@
-import time
-import random
-from demos import quicksort, mergesort, bubblesort
-
-def create_random_list(size, max_val):
-    ran_list = []
-    for num in range(size):
-        ran_list.append(random.randint(1,max_val))
-    return ran_list
-
-# For those of you who are familiar with list comprehension covered
-# in section 3, the code in the function above can be written as below:
-
-# def create_random_list(size, max_val):
-#     return [random.randint(1,max_val) for num in range(size)]
-
-def analyze_func(func_name, arr):
-    tic = time.time()
-    func_name(arr)
-    toc = time.time()
-    seconds = toc-tic
-    print(f"{func_name.__name__.capitalize()}\t-> Elapsed time: {seconds:.5f}")
-
-size = int(input("What size list do you want to create? "))
-max = int(input("What is the max value of the range? "))
-run_times = int(input("How many times do you want to run? "))
-
-for num in range(run_times):
-    print(f"Run: {num+1}")
-    l = create_random_list(size,max)
-    analyze_func(bubblesort, l.copy())
-    analyze_func(quicksort, l)
-    analyze_func(mergesort, l)
-    analyze_func(sorted, l)
-    print("-" * 40)
+# ______ t..
+# ______ ra..
+# ____ d.. ______ q.. m.. b..
+#
+# ___ create_random_list size max_val
+#     ran_list    # list
+#     ___ num __ ra.. ?
+#         ?.ap.. ra__.r_i.. 1 ?
+#     r_ ?
+#
+# # For those of you who are familiar with list comprehension covered
+# # in section 3, the code in the function above can be written as below:
+#
+# # def create_random_list(size, max_val):
+# #     return [random.randint(1,max_val) for num in range(size)]
+#
+# ___ analyze_func func_name arr
+#     tic _ t_.t_
+#     ? ?
+#     toc _ t_.t_
+#     seconds _ to. - t..
+#     print _*|?.-n .ca.. \t-> Elapsed t_: |?;.5_
+#
+# size _ in. in.("What size list do you want to create? "))
+# max _ in. in.("What is the max value of the range? "))
+# run_times _ in. in.("How many times do you want to run? "))
+#
+# ___ num __ ra.. r..
+#     print _*Run: |?+1
+#     l _ c.. s.. m..
+#     ? b.. ?.c..
+#     ? q.. ?
+#     ? m.. ?
+#     ? so.. ?
+#     print("-" * 40)
