@@ -1,23 +1,23 @@
-
-def func(myarray, value):
-	l = 0
-	r = len(myarray) - 1
-	while l <= r:
-		m = (l + r) / 2
-		if myarray[m] == value:
-			return m
-		if myarray[m] >= myarray[l]:
-			if myarray[l] <= value < myarray[m]:
-				r = m - 1
-			else:
-				l = m + 1
-		else:
-			if myarray[m] < value <= myarray[r]:
-				l = m + 1
-			else:
-				r = m - 1
-	return -1
-	
-myarray = [6,7,8,9,10,1,2,3,4,5]		
-
-print(func(myarray, 5))
+#
+# ___ func myarray value
+# 	l _ 0
+# 	r _ le. ? - 1
+# 	w__ l <_ r
+# 		m _ (l + r) / 2
+# 		__ ?|m __ ?
+# 			r_ m
+# 		__ ?|m >_ ?|l
+# 			__ ?|l <_ v.. < ?|m
+# 				r _ m - 1
+# 			____0
+# 				l _ m + 1
+# 		____
+# 			__ ?[m] < value <_ ?[r]:
+# 				l _ m + 1
+# 			____
+# 				r _ m - 1
+# 	r_ -1
+#
+# myarray _ [6,7,8,9,10,1,2,3,4,5]
+#
+# print ? ? 5
