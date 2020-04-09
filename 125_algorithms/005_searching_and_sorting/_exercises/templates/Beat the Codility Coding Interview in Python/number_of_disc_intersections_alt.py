@@ -1,36 +1,36 @@
-# This is the solution for Sorting > NumberOfDiscIntersections
+# # This is the solution for Sorting > NumberOfDiscIntersections
+# #
+# # This is marked as RESPECTABLE difficulty
 #
-# This is marked as RESPECTABLE difficulty
-
-class Disc():
-    def __init__(self, low_x, high_x):
-        self.low_x = low_x
-        self.high_x = high_x
-
-def index_less_than(sortedDiscList, i, start, last):
-    mid = start + (last - start) // 2
-    if last <= start and sortedDiscList[mid].low_x > i:
-        return mid - 1
-    elif last <= start:
-        return mid
-    elif sortedDiscList[mid].low_x > i:
-        return index_less_than(sortedDiscList, i, start, mid - 1)
-    else:
-        return index_less_than(sortedDiscList, i, mid + 1, last)
-
-def solution(A):
-    discs = []
-    for i in range(len(A)):
-        discs.append(Disc(i - A[i], i + A[i]))
-    discs = sorted(discs, key=lambda d: d.low_x)
-    total = 0
-    for i in range(len(discs)):
-        total += index_less_than(discs, discs[i].high_x + 0.5, 0, len(discs) - 1) - i
-        if total > 10000000:
-            total = -1
-            break
-    return total
-
-print(solution([1, 5, 2, 1, 4, 0]))
-
-print(solution([0] * 100000))
+# c_ Disc
+#     ___ - low_x high_x
+#         ? ?
+#         ? ?
+#
+# ___ index_less_than sortedDiscList i start last
+#     mid _ s.. + |l.. - s.. // 2
+#     __ l.. <_ s.. an. s.. |m__.l.. > i
+#         r_ m.. - 1
+#     ____ l.. <_ s..
+#         r_ m..
+#     ____ s..|m...l.. > i
+#         r_ ?|s.. i s.. m.. - 1
+#     ____
+#         r_ ? s.. i m.. + 1 l..
+#
+# ___ solution A
+#     discs    # dict
+#     ___ i in ra.. le. ?
+#         ?.ap.. ? i - ?|? i + ?|i
+#     discs _ so.. ? key_l__ d; ?.l..
+#     total _ 0
+#     ___ i __ ra.. le. ?
+#         t.. += ? d.. d..|? .h.. + 0.5, 0, le. d.. - 1) - i
+#         __ ? > 10000000
+#             ? _ -1
+#             b..
+#     r_ ?
+#
+# print(solution([1, 5, 2, 1, 4, 0]))
+#
+# print(solution([0] * 100000))
