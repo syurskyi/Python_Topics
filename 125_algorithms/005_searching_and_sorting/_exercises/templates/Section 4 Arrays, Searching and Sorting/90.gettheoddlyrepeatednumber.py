@@ -1,12 +1,12 @@
 
-def gettheoddlyrepeatednumber(myarray):
-	print("myarray:", myarray)
-	i = result = 0
-	for i in range (0, len(myarray)):
+___ gettheoddlyrepeatednumber myarray
+	print("myarray:" ?
+	i _ result _ 0
+	___ i __ ra.. 0 le. ?
 		# print result,"^",myarray[i],"is",result ^ myarray[i]
-		result = result ^ myarray[i]
+		? _ ? ^ ?|?
                  
-	return result
+	r_ ?
 
 myarray = [70, 23, 16, 23, 23, 16, 70]
-print(gettheoddlyrepeatednumber(myarray))
+print ? ?
