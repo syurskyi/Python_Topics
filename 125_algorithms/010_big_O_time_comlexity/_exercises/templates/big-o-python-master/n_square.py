@@ -1,11 +1,11 @@
-from notation import Notation
+____ n.. ______ N..
 
-class NSquare(Notation):
+c_ NSquare N..
 
-    def run(self, n):
-        total = 0
-        for x in range(1, n+1):
-            for y in range(1, n+1):
-                self.add_step()
-                total += (x + y)
-        self.set_result(total)
+    ___ run n
+        total _ 0
+        ___ x __ ra.. 1 ?+1
+            ___ y __ ra.. 1 ?+1
+                a_s..
+                ? += (x + y)
+        s_r.. ?
