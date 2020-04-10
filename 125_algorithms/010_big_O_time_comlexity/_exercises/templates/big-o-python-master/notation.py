@@ -1,19 +1,19 @@
-class Notation(object):
-    steps = 0
-    result = 0
-
-    def __init__(self):
-        pass
-
-    def run(self):
-        print("You need to implement run method to %s class." % type(self).__name__)
-        pass
-
-    def add_step(self):
-        self.steps += 1
-
-    def set_result(self, result):
-        self.result = result
-
-    def print_results(self):
-        print("O(%s) - Steps: %d" % (type(self).__name__, self.steps))
+# c_ Notation o..
+#     steps _ 0
+#     result _ 0
+#
+#     ___ -
+#         p..
+#
+#     ___ run
+#         print("You need to implement run method to @ class."  ty..|____|. -n
+#         p..
+#
+#     ___ add_step
+#         s.. +_ 1
+#
+#     ___ set_result result
+#         .? _ ?
+#
+#     ___ print_results
+#         print("O(@) - Steps: @"  ty.. ____ . -n s..    # string digital
