@@ -1,6 +1,6 @@
-import nose.tools
-import big_o
-from random import randint
+______ nose.tools
+______ big_o
+____ random ______ randint
 
 test_of_1 = big_o.BigO_of_1()
 test_of_N = big_o.BigO_of_N()

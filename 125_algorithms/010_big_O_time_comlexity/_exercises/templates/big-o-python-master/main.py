@@ -1,8 +1,8 @@
-from one import One
-from log_n import LogN
-from n import N
-from n_square import NSquare
-import random
+____ one ______ One
+____ log_n ______ LogN
+____ n ______ N
+____ n_square ______ NSquare
+____ random
 
 algorithms = [ One(), LogN(), N(), NSquare() ]
 elements = [10, 100, 250, 500, 1000, 2000, 2500, 3000]
