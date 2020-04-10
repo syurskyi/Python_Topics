@@ -1,10 +1,10 @@
-from notation import Notation
+____ n.. ______ N..
 
-class N(Notation):
+c_ N N..
 
-    def run(self, n):
-        total = 0
-        for x in range(1, n+1):
-            self.add_step()
-            total += x
-        self.set_result(total)
+    ___ run n
+        total _ 0
+        ___ x __ ra.. 1 ?+1
+            a_s..
+            ? +_ x
+        s_r.. ?
