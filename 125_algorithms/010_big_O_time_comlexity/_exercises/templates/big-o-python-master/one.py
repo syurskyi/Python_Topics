@@ -1,8 +1,8 @@
-____ notation ______ Notation
-
-class One(Notation):
-    
-    def run(self, n):
-        self.add_step()
-        result = n * (n + 1) / 2
-        self.set_result(result)
+# ____ n.. ______ N..
+#
+# c_ One N..
+#
+#     ___ run n
+#         a_s..
+#         result _ ? * (? + 1) / 2
+#         s_r.. ?
