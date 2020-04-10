@@ -1,22 +1,22 @@
-from notation import Notation
-import random
-
-class LogN(Notation):
-
-    def run(self, n):
-        data_array = random.sample(range(1, 10000), n)
-        data_array.sort()
-        data_to_find = data_array[random.randint(0, len(data_array) -1)]
-
-        l = 0
-        h = len(data_array) -1
-        while l <= h:
-            m = int((l + h) / 2)
-            self.add_step()
-            if data_array[m] < data_to_find:
-                l = m + 1
-            elif data_array[m] > data_to_find:
-                h = m - 1
-            else:
-                self.set_result(m)
-                break
+# ____ n.. ______ N..
+# ______ ra..
+#
+# c_ LogN N..
+#
+#     ___ run n
+#         data_array _ ra__.sa..(range(1, 10000) ?
+#         ?.so..
+#         data_to_find _ ?|ra__.r_i.. 0, le. ? -1
+#
+#         l _ 0
+#         h _ le. ? -1
+#         w__ ? <_ ?
+#             m _ in. l + h / 2)
+#             add_step()
+#             __ _a..|? < _f..
+#                 l _ m + 1
+#             ____ _a..|? > _f..
+#                 h _ m - 1
+#             ____
+#                 s.. m
+#                 b..
