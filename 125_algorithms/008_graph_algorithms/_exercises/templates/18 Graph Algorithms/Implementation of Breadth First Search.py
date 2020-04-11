@@ -21,16 +21,16 @@ graph = {'A': set(['B', 'C']),
 # Similar to the iterative DFS implementation the only alteration required is to remove the next item from
 # the beginning of the list structure instead of the stacks last.
 
-def bfs(graph, start):
-    visited, queue = set(), [start]
-    while queue:
-        vertex = queue.pop(0)
-        if vertex not in visited:
-            visited.add(vertex)
-            queue.extend(graph[vertex] - visited)
-    return visited
+___ bfs graph start
+    visited queue _ se. |s..
+    w__ queue
+        vertex _ ?.po. 0
+        __ ? no. __ v..
+            ?.ad. ?
+            ?.ex.. ?|v.. - v..
+    r_ ?
 
-bfs(graph, 'A')
+? ? 'A'
 # {'A', 'B', 'C', 'D', 'E', 'F'}
 #
 # Paths
@@ -38,17 +38,17 @@ bfs(graph, 'A')
 # This implementation can again be altered slightly to instead return all possible paths between two vertices,
 # the first of which being one of the shortest such path.
 
-def bfs_paths(graph, start, goal):
-    queue = [(start, [start])]
-    while queue:
-        (vertex, path) = queue.pop(0)
-        for next in graph[vertex] - set(path):
-            if next == goal:
-                yield path + [next]
-            else:
-                queue.append((next, path + [next]))
+___ bfs_paths graph start goal
+    queue _ ||s.. |s..
+    w__ ?
+        |vertex path| _ ?.po. 0
+        ___ next __ ?|v.. - se. p..
+            __ ? __ g..
+                y__ p.. + |?
+            ____
+                ?.ap.. ? p.. + |?
 
-list(bfs_paths(graph, 'A', 'F'))
+li.. ? ? 'A', 'F'
 # [['A', 'C', 'F'], ['A', 'B', 'E', 'F']]
 #
 # Knowing that the shortest path will be returned first from the BFS path generator method we can create
@@ -56,13 +56,13 @@ list(bfs_paths(graph, 'A', 'F'))
 # this in theory should provide similar performance results as just breaking out and returning the first matching path
 # in the BFS implementation.
 
-def shortest_path(graph, start, goal):
-    try:
-        return next(bfs_paths(graph, start, goal))
-    except StopIteration:
-        return None
+___ shortest_path graph start goal
+    ___
+        r_ n.. b_p.. ? ? ?
+    _______ S..
+        r_ N..
 
-shortest_path(graph, 'A', 'F')
+? ? 'A', 'F'
 # ['A', 'C', 'F']
 #
 # Resources
