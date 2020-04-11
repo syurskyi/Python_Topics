@@ -1,41 +1,40 @@
-
-class Node(object):
-
-	def __init__(self, name):
-		self.name = name;
-		self.adjacencyList = [];
-		self.visited = False;
-		self.predecessor = None;
-		
-class BreadthFirstSearch(object):
-
-	def bfs(self, startNode):
-	
-		queue = [];
-		queue.append(startNode);
-		startNode.visited = True;
-		
-		# BFS -> queue      DFS --> stack BUT usually we implement it with recursion !!!
-		while queue:
-		
-			actualNode = queue.pop(0);
-			print("%s " % actualNode.name);
-			
-			for n in actualNode.adjacencyList:
-				if not n.visited:
-					n.visited = True;
-					queue.append(n);
-					
-node1 = Node("A");
-node2 = Node("B");
-node3 = Node("C");
-node4 = Node("D");
-node5 = Node("E");
-
-node1.adjacencyList.append(node2);
-node1.adjacencyList.append(node3);
-node2.adjacencyList.append(node4);
-node4.adjacencyList.append(node5);
-
-bfs = BreadthFirstSearch();
-bfs.bfs(node1);
+#
+# c_ Node o..
+#
+# 	___ - name
+# 		? ?
+# 		adjacencyList _   # list
+# 		visited _ F..
+# 		predecessor _ N..
+#
+# c_ BreadthFirstSearch o..
+#
+# 	___ bfs startNode
+#
+# 		queue _     # list
+# 		?.ap.. ?
+# 		?.v.. _ T..
+#
+# 		# BFS -> queue      DFS --> stack BUT usually we implement it with recursion !!!
+# 		w__ ?
+#
+# 			actualNode _ ?.po. 0
+# 			print("@ "  ?.n..    # string
+#
+# 			___ n __ ?.a..
+# 				__ no. ?.v..
+# 					?.v.. _ T..
+# 					?.ap.. ?
+#
+# node1 _ ? "A"
+# node2 _ ? "B"
+# node3 _ ? "C"
+# node4 _ ? "D"
+# node5 _ ? "E
+# _1.a...ap.. node2
+# _1.a...ap.. node3
+# _2.a...ap.. node4
+# _4.a...ap.. node5
+#
+# bfs _ ?
+# ?.b.. _1
