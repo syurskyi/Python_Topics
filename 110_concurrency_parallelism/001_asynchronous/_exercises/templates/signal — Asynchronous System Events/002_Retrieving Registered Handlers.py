@@ -1,6 +1,6 @@
 # signal_getsignal.py
 
-import signal
+______ signal
 
 
 def alarm_received(n, stack):

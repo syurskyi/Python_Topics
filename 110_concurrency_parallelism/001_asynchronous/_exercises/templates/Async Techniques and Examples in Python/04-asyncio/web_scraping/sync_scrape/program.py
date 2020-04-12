@@ -1,6 +1,6 @@
-import requests
-import bs4
-from colorama import Fore
+______ requests
+______ bs4
+from colorama ______ Fore
 
 
 def get_html(episode_number: int) -> str:

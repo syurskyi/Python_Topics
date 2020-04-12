@@ -1,4 +1,4 @@
-import asyncio
+______ asyncio
 
 @asyncio.coroutine
 def py34_coro():

@@ -1,6 +1,6 @@
-import asyncio
-from asyncio.coroutines import iscoroutine
-import time
+______ asyncio
+from asyncio.coroutines ______ iscoroutine
+______ time
 
 
 def sync_worker(number, divider):

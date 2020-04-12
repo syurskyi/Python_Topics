@@ -1,7 +1,7 @@
-import random
-import time
-from typing import Tuple
-import requests
+______ random
+______ time
+from typing ______ Tuple
+______ requests
 
 use_cached_data = False
 

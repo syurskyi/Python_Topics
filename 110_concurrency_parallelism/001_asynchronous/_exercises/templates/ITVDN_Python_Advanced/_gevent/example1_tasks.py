@@ -1,16 +1,16 @@
-import gevent
-
-
-def task():
-    print('Gevent sleep')
-    gevent.sleep(1)
-    print('Gevent finished')
-
-
-jobs = [
-    gevent.spawn(task),
-    gevent.spawn(task),
-    gevent.spawn(task)
-]
-
-gevent.joinall(jobs)
+# ______ g..
+#
+#
+# ___ task
+#     print('Gevent sleep')
+#     g__.sl.. 1
+#     print('Gevent finished')
+#
+#
+# jobs = [
+#     ?.s.. ?
+#     ?.s.. ?
+#     ?.s.. ?
+# ]
+#
+# ?.j_a.. ?

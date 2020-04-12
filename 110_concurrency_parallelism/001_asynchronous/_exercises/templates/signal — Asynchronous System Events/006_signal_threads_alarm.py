@@ -1,8 +1,8 @@
 # signal_threads_alarm.py
 
-import signal
-import time
-import threading
+______ signal
+______ time
+______ threading
 
 
 def signal_handler(num, stack):

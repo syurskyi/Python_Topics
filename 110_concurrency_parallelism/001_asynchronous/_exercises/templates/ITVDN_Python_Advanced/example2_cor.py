@@ -1,4 +1,4 @@
-import functools
+______ functools
 
 
 def is_divider(number):

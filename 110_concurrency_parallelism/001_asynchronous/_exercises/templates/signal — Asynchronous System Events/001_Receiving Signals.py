@@ -1,8 +1,8 @@
 # signal_signal.py
 
-import signal
-import os
-import time
+______ signal
+______ os
+______ time
 
 
 def receive_signal(signum, stack):

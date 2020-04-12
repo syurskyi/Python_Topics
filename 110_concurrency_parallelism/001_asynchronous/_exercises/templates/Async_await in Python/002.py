@@ -1,5 +1,5 @@
-from concurrent.futures import ThreadPoolExecutor
-from time import sleep
+from concurrent.futures ______ ThreadPoolExecutor
+from time ______ sleep
 
 
 def return_after_5_secs(message):

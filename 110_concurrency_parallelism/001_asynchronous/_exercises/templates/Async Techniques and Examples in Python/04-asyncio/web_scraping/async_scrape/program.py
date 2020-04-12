@@ -1,8 +1,8 @@
-import asyncio
+______ asyncio
 
-import aiohttp
-import bs4
-from colorama import Fore
+______ aiohttp
+______ bs4
+from colorama ______ Fore
 
 # Older versions of python require calling loop.create_task() rather than on asyncio.
 # Make this available more easily.

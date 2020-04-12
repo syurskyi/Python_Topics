@@ -1,9 +1,9 @@
-import asyncio
-import datetime
-import random
-import time
+______ asyncio
+______ datetime
+______ random
+______ time
 
-import aiohttp
+______ aiohttp
 
 measured_latency_in_sec = [0.399203, 0.7046, 0.422959, 0.741911, 0.404674]
 use_cached_data = False

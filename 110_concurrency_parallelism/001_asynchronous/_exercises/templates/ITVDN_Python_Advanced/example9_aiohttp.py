@@ -1,7 +1,7 @@
-import asyncio
-import time
-import aiohttp
-import requests
+______ asyncio
+______ time
+______ aiohttp
+______ requests
 
 resources = [
     'https://jsonplaceholder.typicode.com/todos/1',

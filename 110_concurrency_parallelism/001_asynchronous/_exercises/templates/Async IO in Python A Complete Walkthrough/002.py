@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # countsync.py
 
-import time
+______ time
 
 def count():
     print("One")

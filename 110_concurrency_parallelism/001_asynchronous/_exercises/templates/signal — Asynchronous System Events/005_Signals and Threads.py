@@ -1,9 +1,9 @@
 # signal_threads.py
 
-import signal
-import threading
-import os
-import time
+______ signal
+______ threading
+______ os
+______ time
 
 
 def signal_handler(num, stack):

@@ -1,5 +1,5 @@
-from collections import deque
-from types import coroutine
+from collections ______ deque
+from types ______ coroutine
 
 friends = deque(('Rolf', 'Jose', 'Charlie', 'Jen', 'Anna'))
 

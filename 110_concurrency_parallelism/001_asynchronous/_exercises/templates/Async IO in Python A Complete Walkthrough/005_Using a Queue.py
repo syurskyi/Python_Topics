@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # asyncq.py
 
-import asyncio
-import itertools as it
-import os
-import random
-import time
+______ asyncio
+______ itertools as it
+______ os
+______ random
+______ time
 
 async def makeitem(size: int = 5) -> str:
     return os.urandom(size).hex()
@@ -44,7 +44,7 @@ async def main(nprod: int, ncon: int):
         c.cancel()
 
 if __name__ == "__main__":
-    import argparse
+    ______ argparse
     random.seed(444)
     parser = argparse.ArgumentParser()
     parser.add_argument("-p", "--nprod", type=int, default=5)

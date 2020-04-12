@@ -1,7 +1,7 @@
-import datetime
-import colorama
-import random
-import trio
+______ datetime
+______ colorama
+______ random
+______ trio
 
 
 async def main():

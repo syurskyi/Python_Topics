@@ -1,8 +1,8 @@
 # signal_ignore.py
 
-import signal
-import os
-import time
+______ signal
+______ os
+______ time
 
 
 def do_exit(sig, stack):

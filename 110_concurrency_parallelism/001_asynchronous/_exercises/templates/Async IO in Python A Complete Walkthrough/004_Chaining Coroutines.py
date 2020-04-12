@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # chained.py
 
-import asyncio
-import random
-import time
+______ asyncio
+______ random
+______ time
 
 async def part1(n: int) -> str:
     i = random.randint(0, 10)
@@ -32,7 +32,7 @@ async def main(*args):
     await asyncio.gather(*(chain(n) for n in args))
 
 if __name__ == "__main__":
-    import sys
+    ______ sys
     random.seed(444)
     args = [1, 2, 3] if len(sys.argv) == 1 else map(int, sys.argv[1:])
     start = time.perf_counter()

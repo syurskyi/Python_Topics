@@ -1,7 +1,7 @@
-import datetime
-import colorama
-import random
-import time
+______ datetime
+______ colorama
+______ random
+______ time
 
 
 def main():

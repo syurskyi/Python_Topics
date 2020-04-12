@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # rand.py
 
-import asyncio
-import random
+______ asyncio
+______ random
 
 # ANSI colors
 c = (
