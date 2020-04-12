@@ -1,53 +1,53 @@
-# Knight's Tour Code
+# # Knight's Tour Code
+# #
+# # ** Below is th ecode referenced in the video lecture. Please refer to the video lectures for full explanation.**
 #
-# ** Below is th ecode referenced in the video lecture. Please refer to the video lectures for full explanation.**
-
-def knightGraph(bdSize):
-    ktGraph = Graph()
-    for row in range(bdSize):
-        for col in range(bdSize):
-            nodeId = posToNodeId(row,col,bdSize)
-            newPositions = genLegalMoves(row,col,bdSize)
-            for e in newPositions:
-                nid = posToNodeId(e[0],e[1],bdSize)
-                ktGraph.addEdge(nodeId,nid)
-    return ktGraph
-
-def posToNodeId(row, column, board_size):
-    return (row * board_size) + column
-
-def genLegalMoves(x,y,bdSize):
-    newMoves = []
-    moveOffsets = [(-1,-2),(-1,2),(-2,-1),(-2,1),
-                   ( 1,-2),( 1,2),( 2,-1),( 2,1)]
-    for i in moveOffsets:
-        newX = x + i[0]
-        newY = y + i[1]
-        if legalCoord(newX,bdSize) and \
-                        legalCoord(newY,bdSize):
-            newMoves.append((newX,newY))
-    return newMoves
-
-def legalCoord(x,bdSize):
-    if x >= 0 and x < bdSize:
-        return True
-    else:
-        return False
-
-def knightTour(n,path,u,limit):
-        u.setColor('gray')
-        path.append(u)
-        if n < limit:
-            nbrList = list(u.getConnections())
-            i = 0
-            done = False
-            while i < len(nbrList) and not done:
-                if nbrList[i].getColor() == 'white':
-                    done = knightTour(n+1, path, nbrList[i], limit)
-                i = i + 1
-            if not done:  # prepare to backtrack
-                path.pop()
-                u.setColor('white')
-        else:
-            done = True
-        return done
+# ___ knightGraph bdSize
+#     ktGraph _ Graph()
+#     ___ row __ ra.. ?
+#         ___ col __ ra.. ?
+#             nodeId _ p.. ? ? ?
+#             newPositions _ g.. ? ? ?
+#             ___ e __ ?
+#                 nid _ p.. ?|0 ?|1 ?
+#                 k__.aE.. n.. nid)
+#     r_ ?
+#
+# ___ posToNodeId row column board_size
+#     r_ |r.. * b.| + c..
+#
+# ___ genLegalMoves x y bdSize
+#     newMoves _   # list
+#     moveOffsets _ [(-1,-2),(-1,2),(-2,-1),(-2,1),
+#                    ( 1,-2),( 1,2),( 2,-1),( 2,1)]
+#     ___ i __ m..
+#         newX _ x + i[0]
+#         newY _ y + i[1]
+#         __ l.. |_X b.. an. \
+#                         l.. _Y b..
+#             n__.ap..||_X _Y
+#     r_ ?
+#
+# ___ legalCoord x bdSize
+#     __ ? >_ 0 an. ? < ?
+#         r_ T..
+#     ____
+#         r_ F..
+#
+# ___ knightTour n path u limit
+#         u.s.. 'gray'
+#         p__.ap.. u
+#         __ n < l..
+#             nbrList _ li.. u.g..
+#             i _ 0
+#             done _ F..
+#             w___ i < le. ? an. no. d..
+#                 __ ?|? .gC.. __ 'white'
+#                     d.. _ ? ?+1 p.. n..|? l..
+#                 i _ ? + 1
+#             __ no. d..  # prepare to backtrack
+#                 p__.po.
+#                 u.sC.. 'white'
+#         ____
+#             d.. _ T..
+#         r_ ?
