@@ -111,11 +111,15 @@ venv/
 *.iml
 out
 gen
-!/070_oop/001_classes/examples/Advanced_Python/08-abstract-base-classes/subtitles/
-!/070_oop/001_classes/examples/Advanced_Python/08-abstract-base-classes/subtitles/00. Introducing Abstract Base Classes.srt
-!/070_oop/001_classes/examples/Advanced_Python/08-abstract-base-classes/subtitles/01. Abstract Base Classes in Python.srt
-!/070_oop/001_classes/examples/Advanced_Python/03-object-internals-and-custom-attributes/subtitles/
-!/070_oop/001_classes/examples/Advanced_Python/04-descriptors/subtitles/
-!/070_oop/001_classes/examples/Advanced_Python/05-instance-creation/subtitles/
-!/070_oop/001_classes/examples/Advanced_Python/06-metaclasses/subtitles/
-!/070_oop/001_classes/examples/Advanced_Python/07-class-decorators/subtitles/
+
+/100_databases/003_mongodb/examples/MongoDB_for_Developers_with_Python/src/data/bookstore/bookstore/Book.bson
+/100_databases/003_mongodb/examples/MongoDB_for_Developers_with_Python/src/data/bookstore/bookstore/User.bson
+/100_databases/003_mongodb/examples/MongoDB_for_Developers_with_Python/src/data/bookstore/bookstore/Book.metadata.json
+/100_databases/003_mongodb/examples/MongoDB_for_Developers_with_Python/src/data/bookstore/bookstore/Publisher.metadata.json
+/100_databases/003_mongodb/examples/MongoDB_for_Developers_with_Python/src/data/bookstore/bookstore/User.metadata.json
+/100_databases/003_mongodb/examples/MongoDB_for_Developers_with_Python/src/data/bookstore/bookstore/system.indexes.bson
+/100_databases/003_mongodb/examples/MongoDB_for_Developers_with_Python/src/data/bookstore/bookstore/Publisher.bson
+/100_databases/003_mongodb/examples/MongoDB_for_Developers_with_Python/src/data/dealership_db_250k/dealership/owners.metadata.json
+/100_databases/003_mongodb/examples/MongoDB_for_Developers_with_Python/src/data/dealership_db_250k/dealership/cars.bson
+/100_databases/003_mongodb/examples/MongoDB_for_Developers_with_Python/src/data/dealership_db_250k/dealership/cars.metadata.json
+/100_databases/003_mongodb/examples/MongoDB_for_Developers_with_Python/src/data/dealership_db_250k/dealership/owners.bson
