@@ -1,7 +1,7 @@
-class Node:
-	def __init__(self, val, neighbors):
-		self.val = val
-		self.neighbors = neighbors
+c_ Node
+	___ _  val neighbors
+		? ?
+		? ?
 
 # Example Input:
 
@@ -23,31 +23,31 @@ class Node:
 # DFS - Depth First Search
 # apply recursion
 
-def clone_helper(node, visited):
-	if node == None:
-		return None
-	elif node in visited.keys():
-		return visited[node]
+___ clone_helper node visited
+	__ ? __ N..
+		r_ N..
+	____ ? __ v__.k..
+		r_ v..|?
 
-	neighbors = []
-	new_node = Node(node.val, neighbors)
+	neighbors _    # list
+	new_node _ N.. n__.v.. n..
 
-	visited[node] = new_node
+	v..|n.. _ n..
 
-	for i in range(len(node.neighbors)):
-		neighbor_node = clone_helper(node.neighbors[i], visited)
-		neighbors.append(neighbor_node)
+	___ i __ ra.. le. n__.n..
+		neighbor_node _ ? n__.n.|? v..
+		n__.ap.. ?
 
-	return new_node
+	r_ ?
 
-def clone(node):
-	return clone_helper(node, dict())
+___ clone node
+	r_ c? ? di..
 
 
-node = Node(1, [])
-node2 = Node(2, [])
-node3 = Node(3, [])
-node4 = Node(4, [])
+node _ Node(1, [])
+node2 _ Node(2, [])
+node3 _ Node(3, [])
+node4 _ Node(4, [])
 
 node.neighbors.append(node2)
 node.neighbors.append(node4)
