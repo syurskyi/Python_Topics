@@ -1,83 +1,83 @@
-# Word Ladder Example Code
-# Below is the Vertex and Graph class used for the Word Ladder example code:
-
-class Vertex:
-    def __init__(self,key):
-        self.id = key
-        self.connectedTo = {}
-
-    def addNeighbor(self,nbr,weight=0):
-        self.connectedTo[nbr] = weight
-
-    def __str__(self):
-        return str(self.id) + ' connectedTo: ' + str([x.id for x in self.connectedTo])
-
-    def getConnections(self):
-        return self.connectedTo.keys()
-
-    def getId(self):
-        return self.id
-
-    def getWeight(self,nbr):
-        return self.connectedTo[nbr]
-
-class Graph:
-    def __init__(self):
-        self.vertList = {}
-        self.numVertices = 0
-
-    def addVertex(self,key):
-        self.numVertices = self.numVertices + 1
-        newVertex = Vertex(key)
-        self.vertList[key] = newVertex
-        return newVertex
-
-    def getVertex(self,n):
-        if n in self.vertList:
-            return self.vertList[n]
-        else:
-            return None
-
-    def __contains__(self,n):
-        return n in self.vertList
-
-    def addEdge(self,f,t,cost=0):
-        if f not in self.vertList:
-            nv = self.addVertex(f)
-        if t not in self.vertList:
-            nv = self.addVertex(t)
-        self.vertList[f].addNeighbor(self.vertList[t], cost)
-
-    def getVertices(self):
-        return self.vertList.keys()
-
-    def __iter__(self):
-        return iter(self.vertList.values())
-
-# Code for buildGraph function:
-
-def buildGraph(wordFile):
-    d = {}
-    g = Graph()
-
-    wfile = open(wordFile,'r')
-    # create buckets of words that differ by one letter
-    for line in wfile:
-        print line
-        word = line[:-1]
-        print word
-        for i in range(len(word)):
-            bucket = word[:i] + '_' + word[i+1:]
-            if bucket in d:
-                d[bucket].append(word)
-            else:
-                d[bucket] = [word]
-    # add vertices and edges for words in the same bucket
-    for bucket in d.keys():
-        for word1 in d[bucket]:
-            for word2 in d[bucket]:
-                if word1 != word2:
-                    g.addEdge(word1,word2)
-    return g
-
-# Please reference the video for full explanation!
+# # Word Ladder Example Code
+# # Below is the Vertex and Graph class used for the Word Ladder example code:
+#
+# c_ Vertex
+#     ___ -  key
+#         id _ ?
+#         connectedTo _     # dict
+#
+#     ___ addNeighbor nbr weight_0
+#         c..|? _ w..
+#
+#     ___ -s
+#         r_ st. i. + ' connectedTo: ' + st. ||x.i. ___ x __ c..
+#
+#     ___ getConnections
+#         r_ c__.k..
+#
+#     ___ getId
+#         r_ ?
+#
+#     ___ getWeight nbr
+#         r_ c..|?
+#
+# c_ Graph
+#     ___ -
+#         vertList _    # dict
+#         numVertices _ 0
+#
+#     ___ addVertex key
+#         numVertices _ ? + 1
+#         newVertex _ ? ?
+#         v..|? _ ?
+#         r_ ?
+#
+#     ___ getVertex n
+#         __ ? __ v..
+#             r_ v..|?
+#         ____
+#             r_ N..
+#
+#     ___ -c n
+#         r_ ? __ v..
+#
+#     ___ addEdge f t cost_0
+#         __ f no. __ v..
+#             nv _ a.. ?
+#         __ t no. __ v..
+#             nv _ a.. ?
+#         v..|?.a.. v..|? c..
+#
+#     ___ getVertices
+#         r_ v__.k..
+#
+#     ___ -i
+#         r_ ? v__.v..
+#
+# # Code for buildGraph function:
+#
+# ___ buildGraph wordFile
+#     d _    # dict
+#     g _ ?
+#
+#     wfile _ o.. ? _
+#     # create buckets of words that differ by one letter
+#     ___ line __ ?
+#         print ?
+#         word _ ?|;-1
+#         print ?
+#         ___ i __ ra.. le. w..
+#             bucket _ w..|;? + '_' + w..|?+1;
+#             __ ? __ d
+#                 ?|?.ap.. w..
+#             ____
+#                 ?|b.. _ |w..
+#     # add vertices and edges for words __ the same bucket
+#     ___ bucket __ d.k..
+#         ___ word1 __ d|b..
+#             ___ word2 __ d|b..
+#                 __ ? !_ ?
+#                     g.aE.. ? ?
+#     r_ ?
+#
+# # Please reference the video for full explanation!
