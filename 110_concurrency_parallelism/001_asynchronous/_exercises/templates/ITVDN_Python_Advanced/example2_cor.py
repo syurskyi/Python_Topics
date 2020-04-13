@@ -1,44 +1,44 @@
-______ functools
+______ fun..
 
 
-def is_divider(number):
+___ is_divider number
     print("Coroutine started")
-    while True:
-        value = yield
-        if number % value == 0:
-            print(value)
+    w___ T..
+        value _ y..
+        __ ? % ? __ 0
+            print ?
 
 
-cor = is_divider(100)
-cor.send(None)
-cor.send(11)
-cor.send(18)
-cor.send(20)
+cor _ ? 100
+?.s.. N..
+?.s.. 11
+?.s.. 18
+?.s.. 20
 # close coroutine
-cor.close()
+?.cl..
 
 
-def coroutine(func):
-    @functools.wraps(func)
-    def wrapper(*args, **kwargs):
-        res = func(*args, **kwargs)
-        res.send(None)
-        return res
+___ coroutine func
+    ??.? ?
+    ___ wrapper $ $$
+        res _ ? $ $$
+        ?.s.. N..
+        r_ ""
 
-    return wrapper
+    r_ ?
 
 
-@coroutine
-def is_divider_cor(number):
+??
+___ is_divider_cor number
     print("Coroutine started")
-    while True:
-        value = yield
-        if number % value == 0:
-            print(value)
+    w__ T..
+        value _ y..
+        __ ? % ? __ 0
+            print ?
 
 
-cor = is_divider_cor(100)
-cor.send(10)
-cor.send(10)
-cor.send(10)
-cor.close()
+cor _ is_divider_cor(100)
+?.s.. 10
+?.s.. 10
+?.s.. 10
+?.cl..
