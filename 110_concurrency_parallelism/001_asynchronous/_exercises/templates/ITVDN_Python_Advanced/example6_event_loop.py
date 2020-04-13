@@ -1,39 +1,39 @@
-______ asyncio
-
-
-async def async_worker(seconds):
-    print('Sleep using {}'.format(seconds))
-    await asyncio.sleep(seconds)
-    print('Done sleep: {}'.format(seconds))
-
-
-async def stop_event_loop(loop, seconds):
-    print('Stop in {}s'.format(seconds))
-    await asyncio.sleep(seconds)
-    loop.stop()
-    print('Stopped')
-
-
-async def resolve_future(future):
-    await asyncio.sleep(5)
-    print('Future set_result')
-    future.set_result(10)
-
-
-async def wait_for_future(future):
-    result = await future
-    print('Future result: {}'.format(result))
-
-
-event_loop = asyncio.get_event_loop()
-
-# fut = event_loop.create_future()
-fut = asyncio.Future()
-
-event_loop.create_task(async_worker(3))
-event_loop.create_task(async_worker(4))
-event_loop.create_task(stop_event_loop(event_loop, 3))
-event_loop.create_task(resolve_future(fut))
-event_loop.create_task(wait_for_future(fut))
-event_loop.run_forever()
-event_loop.close()
+# ______ a..
+#
+#
+# ? ___ async_worker seconds
+#     print('Sleep using @'.f.. ?
+#     ?.s.. ?
+#     print('Done sleep: @'.f.. ?
+#
+#
+# ? ___ stop_event_loop loop seconds
+#     print('Stop in @s'.f.. ?
+#     a.. ?.s ?
+#     l__.st..
+#     print('Stopped')
+#
+#
+# ? ___ resolve_future future
+#     a.. ?.s.. 5
+#     print('Future set_result')
+#     ?.s.. 10
+#
+#
+# ? ___ wait_for_future future
+#     result _ a.. ?
+#     print('Future result: @'.f.. ?
+#
+#
+# event_loop = ?.g_e_l..
+#
+# # fut = event_loop.create_future()
+# fut = ?.F..
+#
+# ?.c.. a.. 3
+# ?.c.. a.. 4
+# ?.c.. s_e_l.. ? 3
+# ?.c.. r_f.. ?
+# ?.c.. w_f_f.. ?
+# ?.r_f..
+# ?.cl..
