@@ -1,22 +1,22 @@
-______ asyncio
-
-
-def highload_operation(value):
-    result = 0
-    for i in range(0, value):
-        result += i
-    return result
-
-
-async def main(value):
-    result = await loop.run_in_executor(None, highload_operation, value)
-    print('Result is {}'.format(result))
-
-
-loop = asyncio.get_event_loop()
-tasks = asyncio.wait([
-    loop.create_task(main(10_000_000)),
-    loop.create_task(main(10_000_001)),
-])
-loop.run_until_complete(tasks)
-loop.close()
+# ______ a..
+#
+#
+# ___ highload_operation value
+#     result _ 0
+#     ___ i __ ra.. 0 ?
+#         ? +_ ?
+#     r_ ?
+#
+#
+# a.. ___ main value
+#     result _ a.. l__.r_i_e.. N.. ? ?
+#     print('Result is @'.f.. ?
+#
+#
+# loop _ ?.g_e_l..
+# tasks _ ?.w..||
+#     l__.c.. m.. 10_000_000
+#     l__.c.. m.. 10_000_001
+# ||
+# ?.r_u_c... ?
+# ?.c...
