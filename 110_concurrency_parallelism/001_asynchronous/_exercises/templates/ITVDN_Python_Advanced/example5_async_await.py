@@ -1,30 +1,30 @@
-______ asyncio
-
-
-async def async_worker(number, divider):
-    print('Worker {} started'.format(number))
-    await asyncio.sleep(100)
-    print(number / divider)
-    return number / divider
-
-
-async def gather_worker():
-    result = await asyncio.gather(
-        async_worker(50, 10),
-        async_worker(60, 10),
-        async_worker(70, 10),
-        async_worker(80, 10),
-        async_worker(90, 10),
-    )
-    print(result)
-
-
-event_loop = asyncio.get_event_loop()
-task_list = [
-    # async_worker(30, 10),
-    # asyncio.ensure_future(async_worker(30, 10)),
-    event_loop.create_task(gather_worker())
-]
-tasks = asyncio.wait(task_list)
-event_loop.run_until_complete(tasks)
-event_loop.close()
+# ______ a..
+#
+#
+# ? ___ async_worker number divider
+#     print('Worker {} started'.f.. ?
+#     a...s.. 100
+#     print ? / ?
+#     r_ ? / ?
+#
+#
+# ? ___ gather_worker
+#     result _ a__.g..(
+#         ? 50 10
+#         ? 60 10
+#         ? 70 10
+#         ? 80 10
+#         ? 90 10
+#     )
+#     print ?
+#
+#
+# event_loop _ ?.g_e_l..
+# task_list _ [
+#     # async_worker(30, 10),
+#     # asyncio.ensure_future(async_worker(30, 10)),
+#     ?.c.. g..
+# ]
+# tasks _ ?.w.. ?
+# ?.r_u_c.. ?
+# ?.cl..
