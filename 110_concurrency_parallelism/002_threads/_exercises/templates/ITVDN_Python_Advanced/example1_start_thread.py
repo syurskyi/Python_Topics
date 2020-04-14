@@ -1,24 +1,24 @@
-import threading
-import time
-
-
-def handler(started=0, finished=0):
-    result = 0
-    for i in range(started, finished):
-        result += i
-    print('Value: ', result)
-
-
-params = {'finished': 2 ** 26}
-
-task = threading.Thread(target=handler, kwargs=params)
-started_at = time.time()
-print('RESULTS 1')
-task.start()
-task.join()
-print('Time: {}'.format(time.time() - started_at))
-
-started_at = time.time()
-print('RESULTS 2')
-handler(**params)
-print('Time: {}'.format(time.time() - started_at))
+# ______ t..
+# ______ t..
+#
+#
+# ___ handler started_0 finished_0
+#     result _ 0
+#     ___ i __ ra.. ? ?
+#         ? +_ ?
+#     print('Value: ' ?
+#
+#
+# params _ {'finished': 2 ** 26}
+#
+# task _ t__.T.. target_handler, kwargs_params
+# started_at _ t__.t__
+# print('RESULTS 1')
+# ?.s..
+# ?.j..
+# print('Time: @'.f.. t__.t__ - s..
+#
+# started_at _ t__.t__
+# print('RESULTS 2')
+# ? $$params
+# print('Time: @'.f.. t__.t__ - ?
