@@ -1,34 +1,34 @@
 # threading_names_log.py
 
-import logging
-import threading
-import time
+______ l..
+______ t..
+______ t..
 
 
-def worker():
-    logging.debug('Starting')
-    time.sleep(0.2)
-    logging.debug('Exiting')
+___ worker
+    l__.d.. 'Starting'
+    t__.s.. 0.2
+    l__.d..('Exiting')
 
 
-def my_service():
-    logging.debug('Starting')
-    time.sleep(0.3)
-    logging.debug('Exiting')
+___ my_service
+    l__.d..('Starting')
+    t__.s.. 0.3
+    l__.d..('Exiting')
 
 
-logging.basicConfig(
-    level=logging.DEBUG,
-    format='[%(levelname)s] (%(threadName)-10s) %(message)s',
+l__.bC..(
+    l.._l__.D..
+    f.._'|_|l..|_| |_|tN..|-10_| _|m..|_',
 )
 
-t = threading.Thread(name='my_service', target=my_service)
-w = threading.Thread(name='worker', target=worker)
-w2 = threading.Thread(target=worker)  # use default name
+t _ ?.T.. n.._'my_service', t.._?
+w _ ?.T.. n.._'worker', t.._?
+w2 _ ?.T.. t.._?  # use default name
 
-w.start()
-w2.start()
-t.start()
+w.s..
+w2.s..
+t.s..
 
 # $ python3 threading_names_log.py
 #
