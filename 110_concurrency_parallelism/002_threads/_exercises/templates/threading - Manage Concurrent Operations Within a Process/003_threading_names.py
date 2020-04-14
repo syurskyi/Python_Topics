@@ -1,36 +1,36 @@
-# threading_names.py
-
-import threading
-import time
-
-
-def worker():
-    print(threading.current_thread().getName(), 'Starting')
-    time.sleep(0.2)
-    print(threading.current_thread().getName(), 'Exiting')
-
-
-def my_service():
-    print(threading.current_thread().getName(), 'Starting')
-    time.sleep(0.3)
-    print(threading.current_thread().getName(), 'Exiting')
-
-
-t = threading.Thread(name='my_service', target=my_service)
-w = threading.Thread(name='worker', target=worker)
-w2 = threading.Thread(target=worker)  # use default name
-
-w.start()
-w2.start()
-t.start()
-
-# $ python3 threading_names.py
+# # threading_names.py
 #
-# worker Starting
-# Thread-1 Starting
-# my_service Starting
-# worker Exiting
-# Thread-1 Exiting
-# my_service Exiting
-
-
+# ______ th..
+# ______ ti..
+#
+#
+# ___ worker
+#     print(?.c_t__.gN.. 'Starting'
+#     t__.s.. 0.2
+#     print ?.c_t__ .gN.. 'Exiting'
+#
+#
+# ___ my_service
+#     print ?.c_t__ .gN.. 'Starting'
+#     t__.s.. 0.3
+#     print ?.c_t__ .gN.. 'Exiting'
+#
+#
+# t _ ?.T.. n.._'my_service', t.._?
+# w _ ?.T.. n.._'worker', t.._?
+# w2 _ ?.T.. t.._? # use default name
+#
+# w.s..
+# w2.s..
+# t.s..
+#
+# # $ python3 threading_names.py
+# #
+# # worker Starting
+# # Thread-1 Starting
+# # my_service Starting
+# # worker Exiting
+# # Thread-1 Exiting
+# # my_service Exiting
+#
+#
