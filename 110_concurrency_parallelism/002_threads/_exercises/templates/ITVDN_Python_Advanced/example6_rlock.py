@@ -1,5 +1,5 @@
 # DEAD LOCK
-import threading
+______ t..
 
 
 def producer():

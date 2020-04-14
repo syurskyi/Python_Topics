@@ -1,5 +1,5 @@
-import threading
-import time
+______ t..
+______ t..
 
 
 def producer():
