@@ -1,23 +1,23 @@
-from collections import deque
+___ col.. _______ d..
 
-friends = deque(('Rolf', 'Jose', 'Charlie', 'Jen', 'Anna'))
-
-
-def get_friend():
-    yield from friends
+friends _ d.. 'Rolf', 'Jose', 'Charlie', 'Jen', 'Anna'
 
 
-def greet(g):
-    while True:
-        try:
-            friend = next(g)
-            yield f'HELLO {friend}'
-        except StopIteration:
-            pass
+___ get_friend
+    ? ? ?
 
 
-friends_generator = get_friend()
-g = greet(friends_generator)
-print(next(g))
-print(next(g))
+___ greet g
+    w__ T..
+        ___
+            friend _ n.. ?
+            y.. _*HELLO |?'
+        ______ S..
+            p..
+
+
+friends_generator _ g..
+g _ g.. ?
+print n.. ?
+print n.. ?
 
