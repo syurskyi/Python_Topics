@@ -1,17 +1,17 @@
-def countdown(n):
-    while n > 0:
-        yield n
-        n -= 1
-
-
-tasks = [countdown(10), countdown(5), countdown(20)]
-
-while tasks:
-    task = tasks[0]
-    tasks.remove(task)
-    try:
-        x = next(task)
-        print(x)
-        tasks.append(task)
-    except StopIteration:
-        print('Task finished')
+# ___ countdown n
+#     w___ ? > 0:
+#         ? ?
+#         ? -_ 1
+#
+#
+# tasks _ |? 10 ? 5 ? 20
+#
+# w___ ?
+#     task _ ? 0
+#     ?.r.. ?
+#     ___
+#         x _ ne.. ?
+#         print ?
+#         ?.ap.. ?
+#     ______ S..
+#         print('Task finished')
