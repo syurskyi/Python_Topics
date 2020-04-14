@@ -1,54 +1,54 @@
-import threading
-
-print(threading.active_count())
-current = threading.current_thread()
-print(current.getName())
-print(current.is_alive())
-# что произойдет, если попробуем еще раз его запустить
-try:
-    current.start()
-except RuntimeError as e:
-    print('ERROR: {error}'.format(error=e))
-current.setName('SuperThread')
-print(current.getName())
-
-# на самом деле setName, getName - это просто старый интерфейс.
-# В реальных задачах вы смело можете работаь напрямую с атрибутом name
-current.name = 'SuperThread1'
-print(current.name)
-print(current.getName())
-
-# вывод всех запущенных и живых трэдов
-print(threading.enumerate())
-
-# Напишем пример для демонстрации потокобезопасного хранилища данных.
-thread_data = threading.local()
-thread_data.value = 5
-
-
-def print_results():
-    print(threading.current_thread())
-    print('Result: {}'.format(thread_data.value))
-
-
-def counter(started, to_value):
-    print(hasattr(thread_data, 'value'))
-    thread_data.value = started
-    for i in range(to_value):
-        thread_data.value += 1
-    print_results()
-
-
-task1 = threading.Thread(target=counter, args=(0, 10), name='Task1')
-task2 = threading.Thread(target=counter, args=(100, 3), name='Task2')
-task1.name = 'task1'
-task2.name = 'task2'
-
-task1.start()
-task2.start()
-
-print_results()
-
-task1.join()
-task2.join()
-print_results()
+# ______ t..
+#
+# print(t__.a_c..
+# current = t__.c_t..
+# print ?.gN..
+# print ?.i_a..
+# # что произойдет, если попробуем еще раз его запустить
+# ___
+#     ?.s..
+# ______ R.. __ e
+#     print('ERROR: |er..'.f.. e.._?
+# ?.sN..'SuperThread'
+# print ?.gN..
+#
+# # на самом деле setName, getName - это просто старый интерфейс.
+# # В реальных задачах вы смело можете работаь напрямую с атрибутом name
+# ?.name = 'SuperThread1'
+# print ?.n..
+# print ?.gN..
+#
+# # вывод всех запущенных и живых трэдов
+# print(t__.en..
+#
+# # Напишем пример для демонстрации потокобезопасного хранилища данных.
+# thread_data _ t__.l..
+# ?.v.. _ 5
+#
+#
+# ___ print_results
+#     print(t__.c_t..
+#     print('Result: @'.f.. t_d__.v..
+#
+#
+# ___ counter started to_value
+#     print h.. t.. 'value'
+#     t_d_.v.. _ ?
+#     ___ i __ ra.. ?
+#         t_d__.value +_ 1
+#     ?
+#
+#
+# task1 = t__.T..(target_c.. args_(0, 10), name_'Task1')
+# task2 = t__.T..(target_c.. args_(100, 3), name_'Task2')
+# _1.n.. = 'task1'
+# _2.n.. = 'task2'
+#
+# _1.s..
+# _2.s..
+#
+# p..
+#
+# _1.j..
+# _2.j..
+# p..
