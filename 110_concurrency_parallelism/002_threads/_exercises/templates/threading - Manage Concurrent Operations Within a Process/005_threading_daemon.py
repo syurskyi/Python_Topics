@@ -1,32 +1,32 @@
 # threading_daemon.py
 
-import threading
-import time
-import logging
+______ th..
+______ ti..
+______ l..
 
 
-def daemon():
-    logging.debug('Starting')
-    time.sleep(0.2)
-    logging.debug('Exiting')
+___ daemon
+    l__.d.. 'Starting'
+    t__.s.. 0.2
+    l__.d.. 'Exiting'
 
 
-def non_daemon():
-    logging.debug('Starting')
-    logging.debug('Exiting')
+___ non_daemon
+    l__.d.. 'Starting'
+    l__.d.. 'Exiting'
 
 
-logging.basicConfig(
-    level=logging.DEBUG,
-    format='(%(threadName)-10s) %(message)s',
-)
+l__.b..|
+    l.._l__.D..
+    f.._'|_(tN..|-10_| _|m..|_'
+|
 
-d = threading.Thread(name='daemon', target=daemon, daemon=True)
+d _ ?.T.. n.._'daemon' t.._d.. d.._T..
 
-t = threading.Thread(name='non-daemon', target=non_daemon)
+t _ ?.T.. n.._'non-daemon' t.._n..
 
-d.start()
-t.start()
+d.s..
+t.s..
 
 # $ python3 threading_daemon.py
 #
