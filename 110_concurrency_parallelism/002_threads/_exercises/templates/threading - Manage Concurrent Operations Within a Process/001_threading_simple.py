@@ -1,18 +1,18 @@
 # threading_simple.py
 
-import threading
+______ t..
 
 
-def worker():
+___ worker
     """thread worker function"""
     print('Worker')
 
 
-threads = []
-for i in range(5):
-    t = threading.Thread(target=worker)
-    threads.append(t)
-    t.start()
+threads _    # LIST
+___ i __ ra.. 5
+    t _ ?.T.. t.._?
+    ?.ap.. ?
+    t.st..
 
 # $ python3 threading_simple.py
 #
