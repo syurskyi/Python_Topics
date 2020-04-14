@@ -1,28 +1,28 @@
-______ t..
-______ t..
-
-
-def producer():
-    with lock:
-        print('Set locking', lock._value)
-        time.sleep(3)
-        print("I'm free")
-
-
-max_workers = 1
-lock = threading.BoundedSemaphore(value=max_workers)
-
-task1 = threading.Thread(target=producer)
-task2 = threading.Thread(target=producer)
-task3 = threading.Thread(target=producer)
-task4 = threading.Thread(target=producer)
-
-task1.start()
-task2.start()
-task3.start()
-task4.start()
-
-task1.join()
-task2.join()
-task3.join()
-task4.join()
+# ______ t..
+# ______ t..
+#
+#
+# ___ producer
+#     w__ ?
+#         print('Set locking' ?._v..
+#         t__.s.. 3
+#         print("I'm free")
+#
+#
+# max_workers _ 1
+# lock _ ?.B.. v.._?
+#
+# task1 _ ?.T..  t.._?
+# task2 _ ?.T..  t.._?
+# task3 _ ?.T..  t.._?
+# task4 _ ?.T..  t.._?
+#
+# _1.s..
+# _2.s..
+# _3.s..
+# _4.s..
+#
+# _1.j..
+# _2.j..
+# _3.j..
+# _4.j..
