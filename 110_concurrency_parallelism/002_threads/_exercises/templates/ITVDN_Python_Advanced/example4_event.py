@@ -1,27 +1,27 @@
-import threading
-import time
-
-
-def producer():
-    time.sleep(10)
-    print('Product found!')
-    product.set()
-    product.clear()
-
-
-def consumer():
-    print('product wait')
-    product.wait()
-    print('Product exists!')
-
-
-product = threading.Event()
-
-task1 = threading.Thread(target=producer)
-task2 = threading.Thread(target=consumer)
-
-task1.start()
-task2.start()
-
-task1.join()
-task2.join()
+# ______ t..
+# ______ t..
+#
+#
+# ___ producer
+#     t__.s.. 10
+#     print('Product found!')
+#     product.s..
+#     product.c..
+#
+#
+# ___ consumer
+#     print('product wait')
+#     product.w..
+#     print('Product exists!')
+#
+#
+# product = t__.E..
+#
+# task1 = ?.T.. t.._p..
+# task2 = ?.T.. t.._c..
+#
+# _1.s..
+# _2.s..
+#
+# _1.j..
+# _2.j..
