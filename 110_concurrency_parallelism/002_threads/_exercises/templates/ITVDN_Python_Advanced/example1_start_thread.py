@@ -11,7 +11,7 @@
 #
 # params _ {'finished': 2 ** 26}
 #
-# task _ t__.T.. target_handler, kwargs_params
+# task _ t__.T.. target_h.., kwargs_p..
 # started_at _ t__.t__
 # print('RESULTS 1')
 # ?.s..
