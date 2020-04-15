@@ -1,55 +1,55 @@
-# threading_local_defaults.py
-
-import random
-import threading
-import logging
-
-
-def show_value(data):
-    try:
-        val = data.value
-    except AttributeError:
-        logging.debug('No value yet')
-    else:
-        logging.debug('value=%s', val)
-
-
-def worker(data):
-    show_value(data)
-    data.value = random.randint(1, 100)
-    show_value(data)
-
-
-class MyLocal(threading.local):
-
-    def __init__(self, value):
-        super().__init__()
-        logging.debug('Initializing %r', self)
-        self.value = value
-
-
-logging.basicConfig(
-    level=logging.DEBUG,
-    format='(%(threadName)-10s) %(message)s',
-)
-
-local_data = MyLocal(1000)
-show_value(local_data)
-
-for i in range(2):
-    t = threading.Thread(target=worker, args=(local_data,))
-    t.start()
-
-# $ python3 threading_local_defaults.py
+# # threading_local_defaults.py
 #
-# (MainThread) Initializing <__main__.MyLocal object at
-# 0x101c6c288>
-# (MainThread) value=1000
-# (Thread-1  ) Initializing <__main__.MyLocal object at
-# 0x101c6c288>
-# (Thread-1  ) value=1000
-# (Thread-1  ) value=18
-# (Thread-2  ) Initializing <__main__.MyLocal object at
-# 0x101c6c288>
-# (Thread-2  ) value=1000
-# (Thread-2  ) value=77
+# ______ ra..
+# ______ t..
+# ______ l..
+#
+#
+# ___ show_value data
+#     ___
+#         val _ ?.v..
+#     ______ A..
+#         l___.d.. 'No value yet'
+#     ____
+#         l___.d..('value_@' ?
+#
+#
+# ___ worker data
+#     ? ?
+#     ?.v.. _ ra__.r_i.. 1 100
+#     ? ?
+#
+#
+# c_ MyLocal ?.l..
+#
+#     ___ - value
+#         s__ . -
+#         l___.d..('Initializing @' ?
+#         ? ?
+#
+#
+# l___.b..
+#     l.._l__.D..
+#     f.._'|_|tN..|-10_| _|m..|_'
+# )
+#
+# local_data _ ? 1000
+# ? ?
+#
+# ___ i __ ra.. 2
+#     t _ ?.T.. t.._w.. a.._ l..
+#     ?.s..
+#
+# # $ python3 threading_local_defaults.py
+# #
+# # (MainThread) Initializing <__main__.MyLocal object at
+# # 0x101c6c288>
+# # (MainThread) value_1000
+# # (Thread-1  ) Initializing <__main__.MyLocal object at
+# # 0x101c6c288>
+# # (Thread-1  ) value_1000
+# # (Thread-1  ) value_18
+# # (Thread-2  ) Initializing <__main__.MyLocal object at
+# # 0x101c6c288>
+# # (Thread-2  ) value_1000
+# # (Thread-2  ) value_77
