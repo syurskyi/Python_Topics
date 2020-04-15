@@ -1,54 +1,54 @@
-
-threading_barrier_abort.py
-
-import threading
-import time
-
-
-def worker(barrier):
-    print(threading.current_thread().name,
-          'waiting for barrier with {} others'.format(
-              barrier.n_waiting))
-    try:
-        worker_id = barrier.wait()
-    except threading.BrokenBarrierError:
-        print(threading.current_thread().name, 'aborting')
-    else:
-        print(threading.current_thread().name, 'after barrier',
-              worker_id)
-
-
-NUM_THREADS = 3
-
-barrier = threading.Barrier(NUM_THREADS + 1)
-
-threads = [
-    threading.Thread(
-        name='worker-%s' % i,
-        target=worker,
-        args=(barrier,),
-    )
-    for i in range(NUM_THREADS)
-]
-
-for t in threads:
-    print(t.name, 'starting')
-    t.start()
-    time.sleep(0.1)
-
-barrier.abort()
-
-for t in threads:
-    t.join()
-
-# $ python3 threading_barrier_abort.py
 #
-# worker-0 starting
-# worker-0 waiting for barrier with 0 others
-# worker-1 starting
-# worker-1 waiting for barrier with 1 others
-# worker-2 starting
-# worker-2 waiting for barrier with 2 others
-# worker-0 aborting
-# worker-2 aborting
-# worker-1 aborting
+# # threading_barrier_abort.py
+#
+# ______ t..
+# ______ t..
+#
+#
+# ___ worker barrier
+#     print ?.c_t.. .n..
+#           'waiting for barrier with @ others'.f..
+#               ?.n_w..
+#     ___
+#         worker_id _ ?.w..
+#     ______ ?.BBE..
+#         print(?.c_t.. .n.. 'aborting'
+#     ____
+#         print(?.c_t.. .n.. 'after barrier',
+#               ?
+#
+#
+# NUM_THREADS _ 3
+#
+# barrier _ ?.B.. ? + 1
+#
+# threads _ |
+#     ?.T..|
+#         n.._'worker-@' @ ?
+#         t.._w..
+#         a.._ b..
+#     )
+#     ___ i __ ra.. ?
+# ]
+#
+# ___ t __ ?
+#     print ?.n.. 'starting'
+#     ?.s..
+#     t__.s.. 0.1
+#
+# ?.a..
+#
+# ___ t __ ?
+#     ?.j..
+#
+# # $ python3 threading_barrier_abort.py
+# #
+# # worker-0 starting
+# # worker-0 waiting for barrier with 0 others
+# # worker-1 starting
+# # worker-1 waiting for barrier with 1 others
+# # worker-2 starting
+# # worker-2 waiting for barrier with 2 others
+# # worker-0 aborting
+# # worker-2 aborting
+# # worker-1 aborting
