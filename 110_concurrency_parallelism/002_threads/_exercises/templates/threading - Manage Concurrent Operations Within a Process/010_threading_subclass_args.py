@@ -34,6 +34,3 @@
 # # (Thread-3  ) running with (2,) and {'b': 'B', 'a': 'A'}
 # # (Thread-4  ) running with (3,) and {'b': 'B', 'a': 'A'}
 # # (Thread-5  ) running with (4,) and {'b': 'B', 'a': 'A'}
-#
-#
-#
