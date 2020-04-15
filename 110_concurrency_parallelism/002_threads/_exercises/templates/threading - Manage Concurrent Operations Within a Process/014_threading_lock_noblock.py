@@ -1,86 +1,86 @@
-# threading_lock_noblock.py
-
-import logging
-import threading
-import time
-
-
-def lock_holder(lock):
-    logging.debug('Starting')
-    while True:
-        lock.acquire()
-        try:
-            logging.debug('Holding')
-            time.sleep(0.5)
-        finally:
-            logging.debug('Not holding')
-            lock.release()
-        time.sleep(0.5)
-
-
-def worker(lock):
-    logging.debug('Starting')
-    num_tries = 0
-    num_acquires = 0
-    while num_acquires < 3:
-        time.sleep(0.5)
-        logging.debug('Trying to acquire')
-        have_it = lock.acquire(0)
-        try:
-            num_tries += 1
-            if have_it:
-                logging.debug('Iteration %d: Acquired',
-                              num_tries)
-                num_acquires += 1
-            else:
-                logging.debug('Iteration %d: Not acquired',
-                              num_tries)
-        finally:
-            if have_it:
-                lock.release()
-    logging.debug('Done after %d iterations', num_tries)
-
-
-logging.basicConfig(
-    level=logging.DEBUG,
-    format='(%(threadName)-10s) %(message)s',
-)
-
-lock = threading.Lock()
-
-holder = threading.Thread(
-    target=lock_holder,
-    args=(lock,),
-    name='LockHolder',
-    daemon=True,
-)
-holder.start()
-
-worker = threading.Thread(
-    target=worker,
-    args=(lock,),
-    name='Worker',
-)
-worker.start()
-
-# $ python3 threading_lock_noblock.py
+# # threading_lock_noblock.py
 #
-# (LockHolder) Starting
-# (LockHolder) Holding
-# (Worker    ) Starting
-# (LockHolder) Not holding
-# (Worker    ) Trying to acquire
-# (Worker    ) Iteration 1: Acquired
-# (LockHolder) Holding
-# (Worker    ) Trying to acquire
-# (Worker    ) Iteration 2: Not acquired
-# (LockHolder) Not holding
-# (Worker    ) Trying to acquire
-# (Worker    ) Iteration 3: Acquired
-# (LockHolder) Holding
-# (Worker    ) Trying to acquire
-# (Worker    ) Iteration 4: Not acquired
-# (LockHolder) Not holding
-# (Worker    ) Trying to acquire
-# (Worker    ) Iteration 5: Acquired
-# (Worker    ) Done after 5 iterations
+# ______ l..
+# ______ t..
+# ______ t..
+#
+#
+# ___ lock_holder lock
+#     l__.d.. 'Starting'
+#     w__ T..
+#         ?.a..
+#         ___
+#             l__.d..('Holding')
+#             t__.s.. 0.5
+#         f..
+#             l__.d..('Not holding')
+#             ?.r..
+#         t__.s.. 0.5
+#
+#
+# ___ worker lock
+#     l__.d..('Starting')
+#     num_tries _ 0
+#     num_acquires _ 0
+#     w__ _a.. < 3
+#         t__.s.. 0.5
+#         l__.d.. 'Trying to acquire'
+#         have_it _ ?.a.. 0
+#         ___
+#             _t.. +_ 1
+#             __ h_i.
+#                 l__.d..('Iteration @: Acquired',
+#                               _t..
+#                 _a.. +_ 1
+#             ____
+#                 l__.d..('Iteration @: Not acquired'
+#                               n_t..
+#         f...
+#             __ h_i.
+#                 ?.r..
+#     l__.d.. 'Done after @ iterations' _t..
+#
+#
+# l__.b..|
+#     l.._l__.D..
+#     f.._'|_|tN..|-10_| _|m..|_'
+# |
+#
+# lock _ ?.L..
+#
+# holder _ ?.T..|
+#     t.._l..
+#     a.._|l..,
+#     n.._'LockHolder
+#     d.._T..
+# )
+# ?.s..
+#
+# worker _ ?.T..|
+#     t.._w..
+#     a.._ l..
+#     n.._'Worker',
+# )
+# ?.s..
+#
+# # $ python3 threading_lock_noblock.py
+# #
+# # (LockHolder) Starting
+# # (LockHolder) Holding
+# # (Worker    ) Starting
+# # (LockHolder) Not holding
+# # (Worker    ) Trying to acquire
+# # (Worker    ) Iteration 1: Acquired
+# # (LockHolder) Holding
+# # (Worker    ) Trying to acquire
+# # (Worker    ) Iteration 2: Not acquired
+# # (LockHolder) Not holding
+# # (Worker    ) Trying to acquire
+# # (Worker    ) Iteration 3: Acquired
+# # (LockHolder) Holding
+# # (Worker    ) Trying to acquire
+# # (Worker    ) Iteration 4: Not acquired
+# # (LockHolder) Not holding
+# # (Worker    ) Trying to acquire
+# # (Worker    ) Iteration 5: Acquired
+# # (Worker    ) Done after 5 iterations
