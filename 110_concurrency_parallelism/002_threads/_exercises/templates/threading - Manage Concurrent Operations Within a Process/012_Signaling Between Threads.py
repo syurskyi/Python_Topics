@@ -1,53 +1,53 @@
 # threading_event.py
 
-import logging
-import threading
-import time
+______ l..
+______ th..
+______ ti..
 
 
-def wait_for_event(e):
+___ wait_for_event e
     """Wait for the event to be set before doing anything"""
-    logging.debug('wait_for_event starting')
-    event_is_set = e.wait()
-    logging.debug('event set: %s', event_is_set)
+    l__.d.. 'wait_for_event starting'
+    event_is_set _ ?.w..
+    l__.d..('event set: @' ?
 
 
-def wait_for_event_timeout(e, t):
+___ wait_for_event_timeout e t
     """Wait t seconds and then timeout"""
-    while not e.is_set():
-        logging.debug('wait_for_event_timeout starting')
-        event_is_set = e.wait(t)
-        logging.debug('event set: %s', event_is_set)
-        if event_is_set:
-            logging.debug('processing event')
-        else:
-            logging.debug('doing other work')
+    w__ no. ?.i_s..
+        l__.d.. 'wait_for_event_timeout starting'
+        event_is_set _ ?.w.. ?
+        l__.d.. 'event set: @' ?
+        __ ?
+            l__.d.. 'processing event'
+        ____
+            l__.d..('doing other work')
 
 
-logging.basicConfig(
-    level=logging.DEBUG,
-    format='(%(threadName)-10s) %(message)s',
+l__.b..|
+    l.._l__.D..
+    f.._'|_|tN..|-10_| _|m..|_',
 )
 
-e = threading.Event()
-t1 = threading.Thread(
-    name='block',
-    target=wait_for_event,
-    args=(e,),
+e _ ?.E..
+t1 _ ?.T..|
+    n.._'block',
+    t.._?
+    a.._?,
 )
-t1.start()
+t1.s..
 
-t2 = threading.Thread(
-    name='nonblock',
-    target=wait_for_event_timeout,
-    args=(e, 2),
+t2 _ ?.T..|
+    n.._'nonblock',
+    t.._?
+    a.._? 2
 )
-t2.start()
+t2.s..
 
-logging.debug('Waiting before calling Event.set()')
-time.sleep(0.3)
-e.set()
-logging.debug('Event is set')
+l__.d..('Waiting before calling Event.set()')
+t__.s.. 0.3
+e.s..
+l__.d..('Event is set')
 
 # $ python3 threading_event.py
 #
