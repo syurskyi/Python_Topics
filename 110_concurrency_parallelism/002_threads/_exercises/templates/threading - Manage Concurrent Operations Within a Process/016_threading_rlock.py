@@ -1,11 +1,11 @@
 # threading_rlock.py
 
-import threading
+______ t..
 
-lock = threading.RLock()
+lock _ ?.RL..
 
-print('First try :', lock.acquire())
-print('Second try:', lock.acquire(0))
+print('First try :' ?.a..
+print('Second try:' ?.a.. 0
 
 # $ python3 threading_rlock.py
 #
