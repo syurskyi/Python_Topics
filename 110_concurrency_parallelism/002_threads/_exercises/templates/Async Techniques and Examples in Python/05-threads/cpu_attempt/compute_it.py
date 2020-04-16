@@ -1,25 +1,25 @@
-import datetime
-import math
-
-
-def main():
-    do_math(1)
-
-    t0 = datetime.datetime.now()
-
-    do_math(num=30000000)
-
-    dt = datetime.datetime.now() - t0
-    print("Done in {:,.2f} sec.".format(dt.total_seconds()))
-
-
-def do_math(start=0, num=10):
-    pos = start
-    k_sq = 1000 * 1000
-    while pos < num:
-        pos += 1
-        dist = math.sqrt((pos - k_sq)*(pos - k_sq))
-
-
-if __name__ == '__main__':
-    main()
+# ______ d..
+# ______ m..
+#
+#
+# ___ main
+#     ? 1
+#
+#     t0 _ d_t_.d_t_.n..
+#
+#     ? num_30000000
+#
+#     dt _ d_t_.d_t_.n.. - t0
+#     print("Done in |;,.2_ sec.".f.. ?.total_seconds
+#
+#
+# ___ do_math start_0 num_10
+#     pos _ ?
+#     k_sq _ 1000 * 1000
+#     w___ ? < ?
+#         ? +_ 1
+#         dist _ m__.sqrt p.. - k..)*(.. - k..
+#
+#
+# __ _____ __ ______
+#     ?
