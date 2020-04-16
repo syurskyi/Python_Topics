@@ -1,70 +1,70 @@
-import datetime
-import colorama
-import random
-import time
-import threading
-
-
-def main():
-    t0 = datetime.datetime.now()
-    print(colorama.Fore.WHITE + "App started.", flush=True)
-
-    data = []
-
-    threads = [
-        threading.Thread(target=generate_data, args=(20, data), daemon=True),
-        threading.Thread(target=generate_data, args=(20, data), daemon=True),
-        threading.Thread(target=process_data, args=(40, data), daemon=True),
-    ]
-    abort_thread = threading.Thread(target=check_cancel, daemon=True)
-    abort_thread.start()
-
-    [t.start() for t in threads]
-
-    while any([t.is_alive() for t in threads]):
-        [t.join(.001) for t in threads]
-        if not abort_thread.is_alive():
-            print("Cancelling on your request!", flush=True)
-            break
-
-    dt = datetime.datetime.now() - t0
-    print(colorama.Fore.WHITE + "App exiting, total time: {:,.2f} sec.".format(dt.total_seconds()), flush=True)
-
-
-def check_cancel():
-    print(colorama.Fore.RED + "Press enter to cancel...", flush=True)
-    input()
-
-
-def generate_data(num: int, data: list):
-    for idx in range(1, num + 1):
-        item = idx * idx
-        data.append((item, datetime.datetime.now()))
-
-        print(colorama.Fore.YELLOW + f" -- generated item {idx}", flush=True)
-        time.sleep(random.random() + .5)
-
-
-def process_data(num: int, data: list):
-    processed = 0
-    while processed < num:
-        item = None
-
-        if data:
-            item = data.pop(0)
-        if not item:
-            time.sleep(.01)
-            continue
-
-        processed += 1
-        value = item[0]
-        t = item[1]
-        dt = datetime.datetime.now() - t
-
-        print(colorama.Fore.CYAN +
-              " +++ Processed value {} after {:,.2f} sec.".format(value, dt.total_seconds()), flush=True)
-        time.sleep(.5)
-
-
-if __name__ == '__main__':
-    main()
+# ______ d_t_
+# ______ col__
+# ______ ra..
+# ______ ti..
+# ______ th..
+#
+#
+# ___ main
+#     t0 _ d_t_.d_t_.n..
+#     print(col__.F__.W.. + "App started.", f.._T..
+#
+#     data _    # list
+#
+#     threads _ |
+#         ?.T.(t.._g.. a.._ 20, ?| d.._T
+#         ?.T.(t.._g.. a.._ 20, ?| d.._T
+#         ?.T.(t.._p.. a.._ 40, ?| d.._T
+#     ]
+#     abort_thread _ ?.T.. t.._c_c.. d.._T..
+#     ?.s..
+#
+#     t.s.. ___ ? __ ?
+#
+#     w___ an. t.i_a.. ___ ? __ ?
+#         t.j..|.001 ___ ? __ ?
+#         __ no. a__.i_a..
+#             print("Cancelling on your request!", f_T..
+#             b..
+#
+#     dt _ d_t_.d_t_.n.. - t0
+#     print(col__.F__.W.. + "App exiting, total time: |;,.2_ sec.".f.. ?.t_s.. f.._T..
+#
+#
+# ___ check_cancel
+#     print(col__.F__.RED + "Press enter to cancel...", f.._T..
+#     in..
+#
+#
+# ___ generate_data num ? data ?
+#     ___ idx __ ra.. 1 ? + 1
+#         item _ ? * ?
+#         ?.ap.. ? d_t_.d_t_.no.
+#
+#         print(col__.F__.Y.. + f" -- generated item |i..", f.._T..
+#         ti__.s.. ra__.ra.. + .5)
+#
+#
+# ___ process_data num ? data ?
+#     processed _ 0
+#     w__ ? < ?
+#         item _ N..
+#
+#         __ ?
+#             i.. _ d__.p.. 0
+#         __ no. i..
+#             t__.s.. .01
+#             c..
+#
+#         ? +_ 1
+#         value _ i.. |0
+#         t _ i.. |1
+#         dt _ d_t_.d_t_.n.. - t
+#
+#         print(col__.F__.CYAN +
+#               " +++ Processed value {} after {:,.2f} sec.".f.. v.. d_.t_s.. f.._T..
+#         t__.s.. .5
+#
+#
+# __ _____ __ ______
+#     ?
