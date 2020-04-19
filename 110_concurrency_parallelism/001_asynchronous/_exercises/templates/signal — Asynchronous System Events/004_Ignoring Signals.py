@@ -1,20 +1,20 @@
 # signal_ignore.py
 
-______ signal
-______ os
-______ time
+______ si..
+______ __
+______ ti..
 
 
-def do_exit(sig, stack):
-    raise SystemExit('Exiting')
+___ do_exit sig stack
+    r_ S.. 'Exiting'
 
 
-signal.signal(signal.SIGINT, signal.SIG_IGN)
-signal.signal(signal.SIGUSR1, do_exit)
+s__.s__ s__.S.. s__.S_I..
+s__.s__ s__.S..1 ?
 
-print('My PID:', os.getpid())
+print('My PID:' __.g_p..
 
-signal.pause()
+s__.pa..
 
 # $ python3 signal_ignore.py
 #
