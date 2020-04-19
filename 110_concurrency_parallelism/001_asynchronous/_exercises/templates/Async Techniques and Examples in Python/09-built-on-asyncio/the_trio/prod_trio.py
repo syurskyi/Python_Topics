@@ -1,50 +1,50 @@
-______ datetime
-______ colorama
-______ random
-______ trio
-
-
-async def main():
-    t0 = datetime.datetime.now()
-    print(colorama.Fore.WHITE + "App started.", flush=True)
-
-    data = trio.Queue(capacity=10)
-
-    with trio.move_on_after(5):
-        async with trio.open_nursery() as nursery:
-            nursery.start_soon(generate_data, 20, data, name='Prod 1')
-            nursery.start_soon(generate_data, 20, data, name='Prod 2')
-            nursery.start_soon(process_data, 40, data, name='Consumer')
-
-    dt = datetime.datetime.now() - t0
-    print(colorama.Fore.WHITE + "App exiting, total time: {:,.2f} sec.".format(
-        dt.total_seconds()), flush=True)
-
-
-async def generate_data(num: int, data: trio.Queue):
-    for idx in range(1, num + 1):
-        item = idx*idx
-        await data.put((item, datetime.datetime.now()))
-
-        print(colorama.Fore.YELLOW + f" -- generated item {idx}", flush=True)
-        await trio.sleep(random.random() + .5)
-
-
-async def process_data(num: int, data: trio.Queue):
-    processed = 0
-    while processed < num:
-        item = await data.get()
-
-        processed += 1
-        value = item[0]
-        t = item[1]
-        dt = datetime.datetime.now() - t
-
-        print(colorama.Fore.CYAN +
-              " +++ Processed value {} after {:,.2f} sec.".format(
-                  value, dt.total_seconds()), flush=True)
-        await trio.sleep(.5)
-
-
-if __name__ == '__main__':
-    trio.run(main)
+# ______ d..
+# ______ co..
+# ______ ra..
+# ______ tr..
+#
+#
+# ? ___ main
+#     t0 _ d_t_.d_t_.n..
+#     print(co__.F__.W.. + "App started.", f.._T..
+#
+#     data _ tr__.Q.. capacity_10
+#
+#     w__ tr__.m_o_a.. 5
+#         ? w__ tr__.op_n.. __ nursery:
+#             ?.s_s.. g_d.. 20, d.. n.._'Prod 1')
+#             ?.s_s.. g_d.. 20, d.. n.._'Prod 2')
+#             ?.s_s.. p.. 40 d.. n.._'Consumer')
+#
+#     dt _ d_t_.d_t_.n.. - t0
+#     print(co__.F__.W.. + *App exiting, total time: |;,.2_ sec. .f..(
+#         ?.t_s.. f.._T..
+#
+#
+# ? ___ generate_data(num ? data tr__.Q..
+#     ___ idx __ ra.. 1 ? + 1
+#         item _ i..*i..
+#         ? d__.p.. ? d_t_.d_t_.n..
+#
+#         print(co__.F__.Y.. + _* -- generated item |? f.._T..
+#         ? tr__.sleep(ra__.ra.. + .5
+#
+#
+# ? ___ process_data num ? data tr__.Q..
+#     processed _ 0
+#     w__ ? < ?
+#         item _ ? d__.g..
+#
+#         ? +_ 1
+#         value _ ? 0
+#         t _ ? 1
+#         dt _ d_t_.d_t_.n.. - t
+#
+#         print(co__.F__.C.. +
+#               * +++ Processed value @ after |;,.2_ sec. .f..(
+#                   v.. ?.t_s.. f.._T..
+#         ? tr__.s.. .5
+#
+#
+# __ _________ __ ________
+#     tr__.r.. ?
