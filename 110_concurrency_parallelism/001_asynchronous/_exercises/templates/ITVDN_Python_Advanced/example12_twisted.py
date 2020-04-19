@@ -1,66 +1,66 @@
-from twisted.internet ______ reactor, defer
-
-
-def resolve_deferred(deff, value):
-    try:
-        deff.callback(value)
-    except Exception as e:
-        deff.errback(e)
-
-
-def make_data(raw, timeout):
-    print('make data called')
-    deferred = defer.Deferred()  # Future()
-    reactor.callLater(
-        timeout,
-        resolve_deferred,
-        deferred,
-        raw
-    )  # Future.set_result
-    return deferred
-
-
-def pipe_1(result):
-    print('Logging value: {}'.format(result))
-    return result
-
-
-def pipe_2(result):
-    return result + 10
-
-
-def pipe_3(result):
-    return result * 2
-
-
-def pipe_4(result):
-    return 100 / result
-
-
-def error_1(e):
-    print('Error: {}'.format(e))
-
-
-deferred = make_data(40, 2)
-deferred.addCallback(pipe_1)
-deferred.addCallback(pipe_2)
-deferred.addCallback(pipe_1)
-deferred.addCallback(pipe_3)
-deferred.addCallback(pipe_1)
-deferred.addCallback(pipe_4)
-deferred.addCallbacks(pipe_1, error_1)
-
-deferred = make_data(-10, 2)
-deferred.addCallback(pipe_1)
-deferred.addCallback(pipe_2)
-deferred.addCallback(pipe_1)
-deferred.addCallback(pipe_3)
-deferred.addCallback(pipe_1)
-deferred.addCallback(pipe_4)
-deferred.addCallbacks(pipe_1, error_1)
-
-reactor.callLater(4, reactor.stop)
-
-print('Reactor is starting.')
-reactor.run()
-print('Reactor is stopped.')
+# ____ tw__.in.. ______ r.. d..
+#
+#
+# ___ resolve_deferred deff value
+#     ___
+#         ?.ca.. ?
+#     ______ E.. __ e
+#         ?.e.. ?
+#
+#
+# ___ make_data raw timeout
+#     print('make data called')
+#     deferred _ defer.D..  # Future()
+#     r__.cL..|
+#         t..
+#         r..
+#         d..
+#         r..
+#     )  # Future.set_result
+#     r_ d..
+#
+#
+# ___ pipe_1 result
+#     print('Logging value: @'.f.. ?
+#     r_ ?
+#
+#
+# ___ pipe_2 result
+#     r_ ? + 10
+#
+#
+# ___ pipe_3 result
+#     r_ ? * 2
+#
+#
+# ___ pipe_4 result
+#     r_ 100 / ?
+#
+#
+# ___ error_1 e
+#     print('Error: @'.f.. ?
+#
+#
+# deferred _ make_data(40, 2)
+# ?.aC.. p_1
+# ?.aC.. p_2
+# ?.aC.. p_1
+# ?.aC.. p_3
+# ?.aC.. p_1
+# ?.aC.. p_4
+# ?.aC..(pipe_1, error_1)
+#
+# deferred _ make_data(-10, 2)
+# ?.aC... p_1
+# ?.aC... p_2
+# ?.aC... p_1
+# ?.aC... p_3
+# ?.aC... p_1
+# ?.aC... p_4
+# ?.aC..(pipe_1, error_1)
+#
+# r__.cL.. 4, r__.st..
+#
+# print('Reactor is starting.')
+# r__.r..
+# print('Reactor is stopped.')
