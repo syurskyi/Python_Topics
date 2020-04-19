@@ -1,17 +1,17 @@
-import threading
-import time
-
-def F(n):
-    if n == 0: return 0
-    elif n == 1: return 1
-    else: return F(n-1)+F(n-2)
-
-def main():
-  t0 = time.time()
-  for i in range(35):
-    F(i)
-  t1 = time.time()
-  print("Total Execution Time {}".format(t1-t0))
-
-if __name__ == '__main__':
-  main()
+# ______ th..
+# ______ ti..
+#
+# ___ F n
+#     __ n __ 0: r_ 0
+#     ____ n __ 1: r_ 1
+#     ____ r_ ?|?-1|+?|?-2
+#
+# ___ main
+#   t0 _ t__.t..
+#   ___ i __ ra.. 35
+#     ? ?
+#   t1 _ t__.t..
+#   print("Total Execution Time @".f.. t1-t0
+#
+# __ _________ __ ________
+#   ?
