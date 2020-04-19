@@ -1,19 +1,19 @@
-#!/usr/bin/env python3
-# countasync.py
-
-______ asyncio
-
-async def count():
-    print("One")
-    await asyncio.sleep(1)
-    print("Two")
-
-async def main():
-    await asyncio.gather(count(), count(), count())
-
-if __name__ == "__main__":
-    ______ time
-    s = time.perf_counter()
-    asyncio.run(main())
-    elapsed = time.perf_counter() - s
-    print(f"{__file__} executed in {elapsed:0.2f} seconds.")
+# #!/usr/bin/env python3
+# # countasync.py
+#
+# ______ a..
+#
+# a.. ___ count
+#     print("One")
+#     a.. ?.sl.. 1
+#     print("Two")
+#
+# a.. ___ main
+#     a.. ?.g.. ? ? ?
+#
+# __ ______ __ ______
+#     ______ ti..
+#     s _ t__.p_c..
+#     ?.r.. ?
+#     elapsed _ t__.p_c.. - ?
+#     print _*| -f| executed in |e..;0.2_| seconds.")
