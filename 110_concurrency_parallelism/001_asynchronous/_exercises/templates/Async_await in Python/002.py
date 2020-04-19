@@ -1,16 +1,16 @@
-from concurrent.futures ______ ThreadPoolExecutor
-from time ______ sleep
-
-
-def return_after_5_secs(message):
-    sleep(5)
-    return message
-
-
-pool = ThreadPoolExecutor(3)
-
-future = pool.submit(return_after_5_secs, ("hello"))
-print(future.done())
-sleep(5)
-print(future.done())
-print(future.result())
+# ___ c__.f..______ TPE..
+# ___ t.. ______ s..
+#
+#
+# ___ return_after_5_secs message
+#     s.. 5
+#     r_ ?
+#
+#
+# pool _ TPE.. 3
+#
+# future _ ?.s.. ? ("hello"))
+# print ?.do..
+# s.. 5
+# print ?.do..
+# print ?.re..
