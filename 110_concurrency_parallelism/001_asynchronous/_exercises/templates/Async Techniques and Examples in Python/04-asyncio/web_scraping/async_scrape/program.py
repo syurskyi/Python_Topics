@@ -1,63 +1,63 @@
-______ asyncio
-
-______ aiohttp
-______ bs4
-from colorama ______ Fore
-
-# Older versions of python require calling loop.create_task() rather than on asyncio.
-# Make this available more easily.
-global loop
-
-
-async def get_html(episode_number: int) -> str:
-    print(Fore.YELLOW + f"Getting HTML for episode {episode_number}", flush=True)
-
-    url = f'https://talkpython.fm/{episode_number}'
-
-    async with aiohttp.ClientSession() as session:
-        async with session.get(url) as resp:
-            resp.raise_for_status()
-
-            return await resp.text()
-
-
-def get_title(html: str, episode_number: int) -> str:
-    print(Fore.CYAN + f"Getting TITLE for episode {episode_number}", flush=True)
-    soup = bs4.BeautifulSoup(html, 'html.parser')
-    header = soup.select_one('h1')
-    if not header:
-        return "MISSING"
-
-    return header.text.strip()
-
-
-def main():
-    global loop
-    loop = asyncio.get_event_loop()
-    loop.run_until_complete(get_title_range())
-    print("Done.")
-
-
-async def get_title_range_old_version():
-    # Please keep this range pretty small to not DDoS my site. ;)
-    for n in range(150, 160):
-        html = await get_html(n)
-        title = get_title(html, n)
-        print(Fore.WHITE + f"Title found: {title}", flush=True)
-
-
-async def get_title_range():
-    # Please keep this range pretty small to not DDoS my site. ;)
-
-    tasks = []
-    for n in range(150, 160):
-        tasks.append((n, loop.create_task(get_html(n))))
-
-    for n, t in tasks:
-        html = await t
-        title = get_title(html, n)
-        print(Fore.WHITE + f"Title found: {title}", flush=True)
-
-
-if __name__ == '__main__':
-    main()
+# ______ a..
+#
+# ______ ai..
+# ______ _4
+# ____ co.. ______ F..
+#
+# # Older versions of python require calling loop.create_task() rather than on ?.
+# # Make this available more easily.
+# global loop
+#
+#
+# ? ___ get_html episode_number ?  s..
+#     print(F__.Y.. + _*Getting HTML for episode |?  f.._T..
+#
+#     url _ _*https://talkpython.fm/|?
+#
+#     ? w__ ai__.CS.. __ session
+#         ? w__ ?.g.. ? __ resp
+#             ?.r_f_s..
+#
+#             r_ ? ?.t..
+#
+#
+# ___ get_title html ? episode_number ? s..
+#     print(F__.C.. + _*Getting TITLE for episode |? f.._T..
+#     soup _ __4.BS.. ? 'html.parser'
+#     header _ ?.s_o.. 'h1'
+#     __ no. ?
+#         r_ "MISSING"
+#
+#     r_ ?.t__.st..
+#
+#
+# ___ main
+#     g.. l..
+#     loop _ ?.g_e_l..
+#     ?.r_u_c.. g_t_r..
+#     print("Done.")
+#
+#
+# ? ___ get_title_range_old_version
+#     # Please keep this range pretty small to not DDoS my site. ;)
+#     ___ n __ ra.. 150 160
+#         html _ ? g_h.. ?
+#         title _ g_t.. h.. ?
+#         print F__.W.. + _*Title found: |? f.._T..
+#
+#
+# ? ___ get_title_range
+#     # Please keep this range pretty small to not DDoS my site. ;)
+#
+#     tasks _    # list
+#     ___ n __ ra.. 150 160
+#         ?.ap.. ? l__.c_t.. g_h.. ?
+#
+#     ___ n, t __ ?
+#         html _ ? t
+#         title _ g_t.. h.. ?
+#         print(F__.W.. + _*Title found: |? f.._T..
+#
+#
+# __ _________ __ ________
+#     ?
