@@ -1,3 +1,3 @@
-import multiprocessing
+_____ m..
 
-print(multiprocessing.cpu_count())
+print(?.c..
