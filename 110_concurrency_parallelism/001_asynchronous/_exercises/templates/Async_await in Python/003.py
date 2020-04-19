@@ -1,24 +1,24 @@
-______ asyncio
-______ datetime
-______ random
-
-
-async def my_sleep_func():
-    await asyncio.sleep(random.randint(0, 5))
-
-
-async def display_date(num, loop):
-    end_time = loop.time() + 50.0
-    while True:
-        print("Loop: {} Time: {}".format(num, datetime.datetime.now()))
-        if (loop.time() + 1.0) >= end_time:
-            break
-        await my_sleep_func()
-
-
-loop = asyncio.get_event_loop()
-
-asyncio.ensure_future(display_date(1, loop))
-asyncio.ensure_future(display_date(2, loop))
-
-loop.run_forever()
+# ______ a..
+# ______ d_t..
+# ______ ra..
+#
+#
+# ? ___ my_sleep_func
+#     ? ?.s.. ra__.r_i.. 0 5
+#
+#
+# ? ___ display_date num loop
+#     end_time _ l__.t.. + 50.0
+#     w___ T..
+#         print("Loop: @ Time: @".f.. ? d_t_.d_t_.n..
+#         __ (l__.t.. + 1.0) >_ e..
+#             b..
+#         ? m..
+#
+#
+# loop = ?.g_e_l..
+#
+# ?.e_f.. d.. 1 ?
+# ?.e_f.. d.. 2 ?
+#
+# l__.r_f..
