@@ -1,40 +1,40 @@
-import datetime
-import math
-from threading import Thread
-import multiprocessing
-
-
-def main():
-    do_math(1)
-
-    t0 = datetime.datetime.now()
-
-    # do_math(num=30000000)
-    print("Doing math on {:,} processors.".format(multiprocessing.cpu_count()))
-
-    processor_count = multiprocessing.cpu_count()
-    threads = []
-    for n in range(1, processor_count + 1):
-        threads.append(Thread(target=do_math,
-                              args=(30_000_000 * (n - 1) / processor_count,
-                                    30_000_000 * n / processor_count),
-                              daemon=True)
-                       )
-
-    [t.start() for t in threads]
-    [t.join() for t in threads]
-
-    dt = datetime.datetime.now() - t0
-    print("Done in {:,.2f} sec.".format(dt.total_seconds()))
-
-
-def do_math(start=0, num=10):
-    pos = start
-    k_sq = 1000 * 1000
-    while pos < num:
-        pos += 1
-        math.sqrt((pos - k_sq) * (pos - k_sq))
-
-
-if __name__ == '__main__':
-    main()
+# ______ da..
+# ______ ma..
+# ____ t.. ______ T..
+# ______ mu..
+#
+#
+# ___ main
+#     ? 1
+#
+#     t0 _ d_t_.d_t_.n..
+#
+#     # do_math(num_30000000)
+#     print("Doing math on {:,} processors.".f.. ?.c_c..
+#
+#     processor_count _ ?.c_c..
+#     threads _   # list
+#     ___ n __ ra.. 1 p_c.. + 1
+#         t__.ap.. T.. t_d_m..
+#                               args_(30_000_000 * |? - 1| / p_c..,
+#                                     30_000_000 * ? / p_c..),
+#                               d.._T..
+#                        )
+#
+#     t.s.. ___ ? __ t..
+#     t.j.. ___ ? __ t..
+#
+#     dt _ d_t_.d_t_.n.. - t0
+#     print *Done in |?,.2_ sec. .f.. ?.t_s..
+#
+#
+# ___ do_math start_0 num_10
+#     pos _ s..
+#     k_sq _ 1000 * 1000
+#     w___ p.. < n..
+#         p.. +_ 1
+#         ma__.sq.. p.. - k_| * |p.. - k_
+#
+#
+# __ _________ __ ________
+#     ?
