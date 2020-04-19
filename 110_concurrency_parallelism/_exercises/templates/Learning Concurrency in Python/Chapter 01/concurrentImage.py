@@ -1,38 +1,38 @@
-import threading
-import urllib.request
-import time
-
-def downloadImage(imagePath, fileName):
-  print("Downloading Image from ", imagePath)
-  urllib.request.urlretrieve(imagePath, fileName)
-  print("Completed Download")
-
-def executeThread(i): 
-  imageName = "temp/image-" + str(i) + ".jpg"
-  downloadImage("http://lorempixel.com/400/200/sports", imageName)
-
-def main():
-  t0 = time.time()
-  # create an array which will store a reference to
-  # all of our threads
-  threads = []
-
-  # create 10 threads, append them to our array of threads
-  # and start them off
-  for i in range(10):
-    thread = threading.Thread(target=executeThread, args=(i,))
-    threads.append(thread)
-    thread.start()
-  
-  # ensure that all the threads in our array have completed
-  # their execution before we log the total time to complete
-  for i in threads:
-    i.join()
-
-  # calculate the total execution time
-  t1 = time.time()
-  totalTime = t1 - t0
-  print("Total Execution Time {}".format(totalTime))
-
-if __name__ == '__main__':
-  main()
+# _____ t..
+# _____ u__.re..
+# _____ ti..
+#
+# ___ downloadImage imagePath fileName
+#   print("Downloading Image from " ?
+#   u__.re__.u_r.. ? ?
+#   print("Completed Download")
+#
+# ___ executeThread i
+#   imageName _ "temp/image-" + st. ? + ".jpg"
+#   downloadImage("http://lorempixel.com/400/200/sports" ?
+#
+# ___ main
+#   t0 _ t__.t..
+#   # create an array which will store a reference to
+#   # all of our threads
+#   threads _   # list
+#
+#   # create 10 threads, append them to our array of threads
+#   # and start them off
+#   ___ i __ ra.. 10
+#     thread _ ?.T.. t.._eT.. a.._ ?,
+#     threads.ap.. ?
+#     ?.s..
+#
+#   # ensure that all the threads in our array have completed
+#   # their execution before we log the total time to complete
+#   ___ i __ threads
+#     ?.j..
+#
+#   # calculate the total execution time
+#   t1 _ t__.t..
+#   totalTime _ t1 - t0
+#   print("Total Execution Time @".f.. ?
+#
+# __ _________ __ ________
+#   ?
