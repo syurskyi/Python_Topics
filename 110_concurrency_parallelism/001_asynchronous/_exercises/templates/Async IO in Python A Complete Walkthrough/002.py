@@ -1,19 +1,19 @@
-#!/usr/bin/env python3
-# countsync.py
-
-______ time
-
-def count():
-    print("One")
-    time.sleep(1)
-    print("Two")
-
-def main():
-    for _ in range(3):
-        count()
-
-if __name__ == "__main__":
-    s = time.perf_counter()
-    main()
-    elapsed = time.perf_counter() - s
-    print(f"{__file__} executed in {elapsed:0.2f} seconds.")
+# #!/usr/bin/env python3
+# # countsync.py
+#
+# ______ t..
+#
+# ___ count
+#     print("One")
+#     t__.s.. 1
+#     print("Two")
+#
+# ___ main
+#     ___ _ __ ra.. 3
+#         ?
+#
+# __ ______ __ ______
+#     s _ t__.p_c..
+#     ?
+#     elapsed _ t__.p_c.. - ?
+#     print _*| -f executed in |?;0.2_ seconds.")
