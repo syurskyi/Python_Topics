@@ -1,53 +1,53 @@
-______ datetime
-______ colorama
-______ random
-______ asyncio
-
-
-def main():
-    t0 = datetime.datetime.now()
-    print(colorama.Fore.WHITE + "App started.", flush=True)
-
-    loop = asyncio.get_event_loop()
-    data = asyncio.Queue()
-
-    task1 = loop.create_task(generate_data(20, data))
-    task3 = loop.create_task(generate_data(20, data))
-    # task4 = loop.create_task(generate_data(20, data))
-    task2 = loop.create_task(process_data(40, data))
-
-    final_task = asyncio.gather(task1, task2, task3)
-    loop.run_until_complete(final_task)
-
-    dt = datetime.datetime.now() - t0
-    print(colorama.Fore.WHITE + "App exiting, total time: {:,.2f} sec.".format(
-        dt.total_seconds()), flush=True)
-
-
-async def generate_data(num: int, data: asyncio.Queue):
-    for idx in range(1, num + 1):
-        item = idx*idx
-        await data.put((item, datetime.datetime.now()))
-
-        print(colorama.Fore.YELLOW + f" -- generated item {idx}", flush=True)
-        await asyncio.sleep(random.random() + .5)
-
-
-async def process_data(num: int, data: asyncio.Queue):
-    processed = 0
-    while processed < num:
-        item = await data.get()
-
-        processed += 1
-        value = item[0]
-        t = item[1]
-        dt = datetime.datetime.now() - t
-
-        print(colorama.Fore.CYAN +
-              " +++ Processed value {} after {:,.2f} sec.".format(
-                  value, dt.total_seconds()), flush=True)
-        await asyncio.sleep(.5)
-
-
-if __name__ == '__main__':
-    main()
+# ______ d..
+# ______ co..
+# ______ ra..
+# ______ a..
+#
+#
+# ___ main
+#     t0 _ d_t_.d_t_.n..
+#     print(co__.F__.W.. + "App started.", f.._T..
+#
+#     loop _ ?.g_e_l..
+#     data _ ?.Q..
+#
+#     task1 _ ?.c_t.. g.. 20 ?
+#     task3 _ ?.c_t.. g.. 20 ?
+#     # task4 _ loop.create_task(generate_data(20, data))
+#     task2 _ ?.c_t.. p.. 40 d..
+#
+#     final_task _ ?.g.. _1 _2 _3
+#     ?.r_u_c.. ?
+#
+#     dt _ d_t_.d_t_.n.. - t0
+#     print co__.F__.W.. + "App exiting, total time: {:,.2f} sec.".f..(
+#         ?.t.._s.. f.._T..
+#
+#
+# ? ___ generate_data num ? data ?..Q..
+#     ___ idx __ ra.. 1 ? + 1
+#         item _ i..*i..
+#         ? d__.p.. ? d_t_.d_t_.n..
+#
+#         print(co__.F__.Y.. + _* -- generated item |? f_T..
+#         ? ?.s.. ra__.ra.. + .5
+#
+#
+# ? ___ process_data num ? data ?.Q..
+#     processed _ 0
+#     w___ ? < ?
+#         item _ ? d__.g..
+#
+#         ? +_ 1
+#         value _ i.. 0
+#         t _ i.. 1
+#         dt _ d_t_.d_t_.n.. - t
+#
+#         print(co__.F__.C.. +
+#               " +++ Processed value @ after |;,.2_ sec.".f..(
+#                   v.. ?.t_s.. f.._T..
+#         ? ?.s.. .5
+#
+#
+# __ _________ __ ________
+#     ?
