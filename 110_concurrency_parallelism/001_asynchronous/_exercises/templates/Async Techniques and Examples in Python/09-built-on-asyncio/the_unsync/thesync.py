@@ -1,16 +1,16 @@
-from unsync ______ unsync
-______ asyncio
-______ datetime
-______ math
+___ un.. ______ un..
+______ a..
+______ da..
+______ ma..
 
-______ aiohttp
-______ requests
+______ ai..
+______ re..
 
 
-def main():
-    t0 = datetime.datetime.now()
+___ main
+    t0 _ d_t_.d_t_.n..
 
-    tasks = [
+    tasks _ [
         compute_some(),
         compute_some(),
         compute_some(),
@@ -26,48 +26,48 @@ def main():
 
     [t.result() for t in tasks]
 
-    dt = datetime.datetime.now() - t0
+    dt _ d_t_.d_t_.n.. - t0
     print("Synchronous version done in {:,.2f} seconds.".format(dt.total_seconds()))
 
 
-@unsync(cpu_bound=True)
-def compute_some():
+@unsync(cpu_bound_True)
+___ compute_some():
     print("Computing...")
     for _ in range(1, 10_000_000):
         math.sqrt(25 ** 25 + .01)
 
 
 @unsync()
-async def download_some():
+async ___ download_some():
     print("Downloading...")
-    url = 'https://talkpython.fm/episodes/show/174/coming-into-python-from-another-industry-part-2'
-    async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(ssl=False)) as session:
+    url _ 'https://talkpython.fm/episodes/show/174/coming-into-python-from-another-industry-part-2'
+    async with aiohttp.ClientSession(connector_aiohttp.TCPConnector(ssl_False)) as session:
         async with session.get(url) as resp:
             resp.raise_for_status()
 
-            text = await resp.text()
+            text _ await resp.text()
 
     print("Downloaded (more) {:,} characters.".format(len(text)))
 
 
 @unsync()
-def download_some_more():
+___ download_some_more():
     print("Downloading more ...")
-    url = 'https://pythonbytes.fm/episodes/show/92/will-your-python-be-compiled'
-    resp = requests.get(url)
+    url _ 'https://pythonbytes.fm/episodes/show/92/will-your-python-be-compiled'
+    resp _ requests.get(url)
     resp.raise_for_status()
 
-    text = resp.text
+    text _ resp.text
 
     print("Downloaded {:,} characters.".format(len(text)))
 
 
 @unsync()
-async def wait_some():
+async ___ wait_some():
     print("Waiting...")
     for _ in range(1, 1000):
         await asyncio.sleep(.001)
 
 
-if __name__ == '__main__':
-    main()
+__ _________ __ ________
+    ?
