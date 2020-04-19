@@ -1,46 +1,46 @@
-______ datetime
-______ colorama
-______ random
-______ time
-
-
-def main():
-    t0 = datetime.datetime.now()
-    print(colorama.Fore.WHITE + "App started.", flush=True)
-    data = []
-    generate_data(20, data)
-    process_data(20, data)
-
-    dt = datetime.datetime.now() - t0
-    print(colorama.Fore.WHITE + "App exiting, total time: {:,.2f} sec.".format(dt.total_seconds()), flush=True)
-
-
-def generate_data(num: int, data: list):
-    for idx in range(1, num + 1):
-        item = idx*idx
-        data.append((item, datetime.datetime.now()))
-
-        print(colorama.Fore.YELLOW + " -- generated item {}".format(idx), flush=True)
-        time.sleep(random.random() + .5)
-
-
-def process_data(num: int, data: list):
-    processed = 0
-    while processed < num:
-        item = data.pop(0)
-        if not item:
-            time.sleep(.01)
-            continue
-
-        processed += 1
-        value = item[0]
-        t = item[1]
-        dt = datetime.datetime.now() - t
-
-        print(colorama.Fore.CYAN +
-              " +++ Processed value {} after {:,.2f} sec.".format(value, dt.total_seconds()), flush=True)
-        time.sleep(.5)
-
-
-if __name__ == '__main__':
-    main()
+# ______ da..
+# ______ co..
+# ______ ra..
+# ______ ti..
+#
+#
+# ___ main
+#     t0 _ d_t_.d_t_.n..
+#     print(co__.F__.W.. + "App started.", f.._T..
+#     data _ # list
+#     g.. 20 ?
+#     p.. 20 ?
+#
+#     dt _ d_t_.d_t_.n.. - t0
+#     print co__.F__.W.. + "App exiting, total time: |;,.2_ sec.".f.. ?.t_s.. f.._T..
+#
+#
+# ___ generate_data num ? data li..
+#     ___ idx __ ra.. 1 ? + 1
+#         item _ i..*i..
+#         d__.ap.. ? d_t_.d_t_.n..
+#
+#         print(co__.F__.Y.. + " -- generated item @".f.. i.. f.._T..
+#         time.sleep(ra__.ra.. + .5
+#
+#
+# ___ process_data num ? data ?
+#     processed _ 0
+#     w___ ? < ?
+#         item _ d__.p.. 0
+#         __ no. ?
+#             t__.s.. .01
+#             c...
+#
+#         ? +_ 1
+#         value _ i.. 0
+#         t _ i.. 1
+#         dt _ d_t_.d_t_.n.. - t
+#
+#         print(co__.F__.C.. +
+#               " +++ Processed value @ after |;,.2_ sec.".f.. v.. ?.t_s.. f.._T..
+#         t__.s.. .5
+#
+#
+# __ _________ __ ________
+#     ?
