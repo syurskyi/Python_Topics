@@ -1,41 +1,41 @@
-______ datetime
-______ colorama
-______ asyncio
-
-
-def main():
-    lim = 250_000
-    print("Running standard loop with {:,} actions.".format(lim*2))
-    t0 = datetime.datetime.now()
-
-    loop = asyncio.get_event_loop()
-    data = asyncio.Queue()
-
-    task1 = loop.create_task(generate_data(lim, data))
-    task3 = loop.create_task(generate_data(lim, data))
-    task2 = loop.create_task(process_data(2 * lim, data))
-
-    final_task = asyncio.gather(task1, task2, task3)
-    loop.run_until_complete(final_task)
-
-    dt = datetime.datetime.now() - t0
-    print(colorama.Fore.WHITE + "App exiting, total time: {:,.2f} sec.".format(dt.total_seconds()), flush=True)
-
-
-async def generate_data(num: int, data: asyncio.Queue):
-    for idx in range(1, num + 1):
-        item = idx * idx
-        await data.put((item, datetime.datetime.now()))
-        await asyncio.sleep(0)
-
-
-async def process_data(num: int, data: asyncio.Queue):
-    processed = 0
-    while processed < num:
-        await data.get()
-        processed += 1
-        await asyncio.sleep(0)
-
-
-if __name__ == '__main__':
-    main()
+# ______ da..
+# ______ co..
+# ______ a..
+#
+#
+# ___ main
+#     lim _ 250_000
+#     print("Running standard loop with |;,| actions.".f.. ?*2
+#     t0 _ d_t_.d__.n..
+#
+#     loop _ ?.g_e_l..
+#     data _ ?.Q..
+#
+#     task1 _ ?.c_t.. g.. l.. d..
+#     task3 _ ?.c_t.. g.. l.. d..
+#     task2 _ ?.c_t.. p.. 2 * l.. d..
+#
+#     final_task _ ?.g.. _1 _2 _3
+#     ?.r_u_c.. ?
+#
+#     dt _ d_t_.d__.n.. - t0
+#     print co__.F__.W.. + "App exiting, total time: |;,.2_ sec.".f.. ?.t_s.. f_T..
+#
+#
+# ? ___ generate_data num i.. d.. ?.Q..
+#     ___ idx __ ra.. 1 ? + 1
+#         item _ i.. * i..
+#         ? d__.p.. ? d_t_.d__.n..
+#         ? ?.s.. 0
+#
+#
+# ? ___ process_data num i.. data ?.Q..
+#     processed _ 0
+#     w___ ? < ?
+#         ? d__.g..
+#         p.. +_ 1
+#         ? ?.s.. 0
+#
+#
+# __ _________ __ ________
+#     ?
