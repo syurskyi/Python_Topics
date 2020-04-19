@@ -1,40 +1,40 @@
-______ requests
-______ bs4
-from colorama ______ Fore
-
-
-def get_html(episode_number: int) -> str:
-    print(Fore.YELLOW + f"Getting HTML for episode {episode_number}", flush=True)
-
-    url = f'https://talkpython.fm/{episode_number}'
-    resp = requests.get(url)
-    resp.raise_for_status()
-
-    return resp.text
-
-
-def get_title(html: str, episode_number: int) -> str:
-    print(Fore.CYAN + f"Getting TITLE for episode {episode_number}", flush=True)
-    soup = bs4.BeautifulSoup(html, 'html.parser')
-    header = soup.select_one('h1')
-    if not header:
-        return "MISSING"
-
-    return header.text.strip()
-
-
-def main():
-    get_title_range()
-    print("Done.")
-
-
-def get_title_range():
-    # Please keep this range pretty small to not DDoS my site. ;)
-    for n in range(150, 160):
-        html = get_html(n)
-        title = get_title(html, n)
-        print(Fore.WHITE + f"Title found: {title}", flush=True)
-
-
-if __name__ == '__main__':
-    main()
+# ______ re..
+# ______ __4
+# ____ co.. ______ F..
+#
+#
+# ___ get_html episode_number ? s..
+#     print(F__.Y.. + _*Getting HTML for episode |? f.._T..
+#
+#     url _ f'https://talkpython.fm/{episode_number}'
+#     resp _ re__.g.. ?
+#     ?.r_f_s..
+#
+#     r_ ?.t..
+#
+#
+# ___ get_title html ? episode_number ? s..
+#     print(F__.C.. + _*Getting TITLE for episode |? f.._T..
+#     soup _ _4.BS.. ? 'html.parser'
+#     header _ ?.s_o.. 'h1'
+#     __ no. ?
+#         r_ "MISSING"
+#
+#     r_ ?.t__.st..
+#
+#
+# ___ main
+#     ?
+#     print("Done.")
+#
+#
+# ___ get_title_range
+#     # Please keep this range pretty small to not DDoS my site. ;)
+#     ___ n __ ra.. 150 160
+#         html _ g_h.. ?
+#         title _ g_t.. ? ?
+#         print F__.W.. + _*Title found: |? f.._T..
+#
+#
+# __ _________ __ ________
+#     ?
