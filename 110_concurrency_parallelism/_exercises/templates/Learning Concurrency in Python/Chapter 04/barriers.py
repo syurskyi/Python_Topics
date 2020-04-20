@@ -1,30 +1,30 @@
-______ threading
-______ time
-______ random
-
-class myThread(threading.Thread):
-
-    def __init__(self, barrier):
-      threading.Thread.__init__(self)
-      self.barrier = barrier;
-
-    def run(self):
-      print("Thread {} working on something".format(threading.current_thread()))
-      time.sleep(random.randint(1,10))
-      print("Thread {} is joining {} waiting on Barrier".format(threading.current_thread(), self.barrier.n_waiting))
-      self.barrier.wait()
-      
-      print("Barrier has been lifted, continuing with work")
-
-
-barrier = threading.Barrier(4)
-
-threads = []
-
-for i in range(4):
-  thread = myThread(barrier)
-  thread.start()
-  threads.append(thread)
-
-for t in threads:
-    t.join()
+# ______ th..
+# ______ ti..
+# ______ ra..
+#
+# c_ myThread ?.T..
+#
+#     ___ -  barrier
+#       ?.T__. -
+#       ? ?
+#
+#     ___ run
+#       print("Thread @ working on something".f.. ?.c_t..
+#       t__.s.. ra__.r_i.. 1,10
+#       print("Thread @ is joining @ waiting on Barrier".f.. ?.c_t.. b__.n_waiting
+#       b__.w..
+#
+#       print("Barrier has been lifted, continuing with work")
+#
+#
+# barrier _ ?.B.. 4
+#
+# threads _  # list
+#
+# ___ i __ ra.. 4
+#   thread _ ? b..
+#   ?.s..
+#   ?s.ap.. ?
+#
+# ___ t __ ?s
+#     ?.j..
