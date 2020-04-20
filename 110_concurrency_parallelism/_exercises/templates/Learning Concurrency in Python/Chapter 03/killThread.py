@@ -1,16 +1,16 @@
-from multiprocessing ______ Process
-______ time
-
-def myWorker():
-  t1 = time.time()
-  print("Process started at: {}".format(t1))
-  time.sleep(20)
-
-myProcess = Process(target=myWorker)
-print("Process {}".format(myProcess))
-myProcess.start()
-print("Terminating Process...")
-myProcess.terminate()
-myProcess.join()
-print("Process Terminated: {}".format(myProcess))
-
+# ____ m.. ______ P..
+# ______ ti..
+#
+# ___ myWorker
+#   t1 _ t__.t__
+#   print("Process started at: @".f.. ?
+#   t__.s.. 20
+#
+# myProcess _ P.. t.._?
+# print("Process @".f.. ?
+# ?.s..
+# print("Terminating Process...")
+# ?.t..
+# ?.j..
+# print("Process Terminated: @".f.. ?
+#
