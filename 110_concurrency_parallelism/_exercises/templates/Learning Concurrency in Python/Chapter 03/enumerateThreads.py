@@ -1,19 +1,19 @@
-______ threading
-______ time
-______ random
-
-def myThread(i):
-  print("Thread {}: started".format(i))
-  time.sleep(random.randint(1,5))
-  print("Thread {}: finished".format(i))
-
-
-def main():
-  for i in range(4):
-    thread = threading.Thread(target=myThread, args=(i,))
-    thread.start()
-
-  print("Enumerating: {}".format(threading.enumerate()))
-
-if __name__ == '__main__':
-  main()
+# ______ th..
+# ______ ti..
+# ______ ra..
+#
+# ___ myThread i
+#   print("Thread @: started".f.. ?
+#   t__.s.. ra__.r_i.. 1,5
+#   print("Thread @: finished".f.. ?
+#
+#
+# ___ main
+#   ___ i __ ra.. 4
+#     thread _ ?.T.. t.._? a.._ ?,
+#     ?.s..
+#
+#   print("Enumerating: @".f.. ?.en..
+#
+# __ _________ __ ________
+#   ?
