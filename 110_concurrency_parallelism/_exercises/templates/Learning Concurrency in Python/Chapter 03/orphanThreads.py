@@ -1,33 +1,29 @@
-______ threading
-______ time
-
-class Parent(threading.Thread):
-
-  def __init__(self):
-    threading.Thread.__init__(self)
-    self.process = None
-
-  def run(self):
-    for i in range(10):
-      childThread = threading.Thread(target=self.child)
-      childThread.start()
-
-  def kill(self):
-    print("Trying to kill thread")
-    if self.process is not None:
-      self.process.terminate()
-      self.process = None
-
-  def child(self):
-    print("{} starting".format(threading.currentThread().getName()))
-    time.sleep(10)
-    print("{} ending".format(threading.currentThread().getName()))
-
-parent = Parent()
-parent.start()
-time.sleep(2)
-parent.kill()
-
-
-      
-      
+# ______ th..
+# ______ ti..
+#
+# c_ Parent(?.T..
+#
+#   ___ -
+#     ?.T... -
+#     process _ N..
+#
+#   ___ run
+#     ___ i __ ra.. 10
+#       childThread _ ?.T.. t.._.c..
+#       ?.s..
+#
+#   ___ kill
+#     print("Trying to kill thread")
+#     __ p.. __ no. N..
+#       ?.t..
+#       ? _ N..
+#
+#   ___ child
+#     print("@ starting".f..(?.T.. .gN..
+#     ti__.s.. 10
+#     print("@ ending".f.. ?.cT.. .gN..
+#
+# parent _ P..
+# ?.s..
+# t__.s.. 2
+# p__.k..
