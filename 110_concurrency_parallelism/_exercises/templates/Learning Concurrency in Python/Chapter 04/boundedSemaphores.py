@@ -1,47 +1,47 @@
-______ threading
-______ time
-______ random
-
-class TicketSeller(threading.Thread):
-  ticketsSold = 0
-
-  def __init__(self, semaphore):
-    threading.Thread.__init__(self);
-    self.sem = semaphore
-    print("Ticket Seller Started Work")
-
-  def run(self):
-    global ticketsAvailable
-    running = True
-    while running:
-      self.randomDelay()
-      
-      self.sem.acquire()
-      if(ticketsAvailable <= 0):
-        running = False
-      else:
-        self.ticketsSold = self.ticketsSold + 1
-        ticketsAvailable = ticketsAvailable - 1
-        print("{} Sold One ({} left)".format(self.getName(), ticketsAvailable))
-      self.sem.release()
-    print("Ticket Seller {} Sold {} tickets in total".format(self.getName(), self.ticketsSold))
-
-  def randomDelay(self):
-    time.sleep(random.randint(0,4)/4)
-
-
-# our sempahore primitive
-semaphore = threading.BoundedSemaphore(2)
-# Our Ticket Allocation
-ticketsAvailable = 200
-
-# our array of sellers
-sellers = []
-for i in range(4):
-  seller = TicketSeller(semaphore)
-  seller.start()
-  sellers.append(seller)
-
-# joining all our sellers
-for seller in sellers:
-  seller.join()
+# ______ th..
+# ______ ti..
+# ______ ra..
+#
+# c_ TicketSeller ?.T..
+#   ticketsSold _ 0
+#
+#   ___ - semaphore
+#     ?.T__. -
+#     sem _ ?
+#     print("Ticket Seller Started Work")
+#
+#   ___ run
+#     g.. tA..
+#     running _ T..
+#     w__ running:
+#       rD..
+#
+#       s__.ac..
+#       __ tA.. <_ 0
+#         running _ F..
+#       ____
+#         ticketsSold _ tS.. + 1
+#         tA.. _ tA.. - 1
+#         print("@ Sold One (@ left)".f.. gN.. tA..
+#       sem.release()
+#     print("Ticket Seller @ Sold @ tickets in total".f.. gN.. tS..
+#
+#   ___ randomDelay
+#     t__.s.. ra__.r_i_0,4)/4)
+#
+#
+# # our sempahore primitive
+# semaphore _ ?.BS.. 2
+# # Our Ticket Allocation
+# ticketsAvailable _ 200
+#
+# # our array of sellers
+# sellers _   # list
+# ___ i __ ra.. 4
+#   seller _ TS.. ?
+#   ?.s..
+#   ?s.ap.. ?
+#
+# # joining all our sellers
+# ___ s.. __ ?s
+#   ?.j..
