@@ -1,7 +1,7 @@
-______ time
-from multiprocess ______ multiprocess
-
-def MyProcess():
-  print("My Process Starting")
-  time.sleep()
-
+# ______ ti..
+# ____ m.. ______ m..
+#
+# ___ MyProcess
+#   print("My Process Starting")
+#   t__.s..
+#
