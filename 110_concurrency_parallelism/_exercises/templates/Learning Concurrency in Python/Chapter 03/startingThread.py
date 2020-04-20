@@ -1,15 +1,15 @@
-______ threading
-______ time
-______ random
-
-def executeThread(i):
-  print("Thread {} started".format(i))
-  sleepTime = random.randint(1,10)
-  time.sleep(sleepTime)
-  print("Thread {} finished executing".format(i))
-
-for i in range(10):
-  thread = threading.Thread(target=executeThread, args=(i,))
-  thread.start()
-
-  print("Active Threads:" , threading.enumerate())
+# ______ th..
+# ______ ti..
+# ______ ra..
+#
+# ___ executeThread i
+#   print("Thread @ started".f.. ?
+#   sleepTime _ ra__.r_i.. 1,10
+#   t__.s.. ?
+#   print("Thread @ finished executing".f.. ?
+#
+# ___ i __ ra.. 10
+#   thread _ ?.T.. t.._? a.._ ?,
+#   ?.s..
+#
+#   print("Active Threads:" , ?.en..
