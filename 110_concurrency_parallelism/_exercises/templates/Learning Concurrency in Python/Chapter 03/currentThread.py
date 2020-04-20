@@ -1,18 +1,18 @@
-______ threading
-______ time
-
-def myChildThread():
-  print("Child Thread Starting")
-  time.sleep(5)
-  print("Current Thread ----------")
-  print(threading.current_thread())
-  print("-------------------------")
-  print("Main Thread -------------")
-  print(threading.main_thread())
-  print("-------------------------")
-  print("Child Thread Ending")
-
-
-child = threading.Thread(target=myChildThread)
-child.start()
-child.join()
+# ______ th..
+# ______ ti..
+#
+# ___ myChildThread
+#   print("Child Thread Starting")
+#   t__.s.. 5
+#   print("Current Thread ----------")
+#   print(?.current_thread())
+#   print("-------------------------")
+#   print("Main Thread -------------")
+#   print(?.m_t..
+#   print("-------------------------")
+#   print("Child Thread Ending")
+#
+#
+# child = ?.T.. t.._?
+# ?.s..
+# ?.j..
