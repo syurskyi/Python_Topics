@@ -1,14 +1,14 @@
-______ urllib2
-______ time
-from BeautifulSoup ______ BeautifulSoup
-
-linkArray = []
-
-def getLinks():
-  req = urllib2.urlopen('http://www.example.com')
-  soup = BeautifulSoup(req.read())
-  for link in soup.findAll('a'):
-    linkArray.append(link.get('href'))
-    print(len(linkArray))
-
-getLinks()
+# ______ u_l_2
+# ______ ti..
+# ____ BS.. ______ BS..
+#
+# linkArray  _  # list
+#
+# ___ getLinks
+#   req _ u_2.u_o.. http://www.example.com
+#   soup _ BS.. ?.r..
+#   ___ link __ ?.fA.. 'a'
+#     lA__.ap.. ?.g.. 'href'
+#     print le. ?
+#
+# ?
