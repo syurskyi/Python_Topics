@@ -1,15 +1,15 @@
-______ threading
-______ random
-______ time
+______ th..
+______ ra..
+______ ti..
 
-class Publisher(threading.Thread):
+c_ Publisher(threading.Thread):
 
-  def __init__(self, integers, condition):
+  ___ __init__(self, integers, condition):
     self.condition = condition
     self.integers = integers
     threading.Thread.__init__(self)
 
-  def run(self):
+  ___ run(self):
     while True:
       integer = random.randint(0,1000)
       self.condition.acquire()
@@ -21,14 +21,14 @@ class Publisher(threading.Thread):
       self.condition.release()
       time.sleep(1)
 
-class Subscriber(threading.Thread):
+c_ Subscriber(threading.Thread):
 
-  def __init__(self, integers, condition):
+  ___ __init__(self, integers, condition):
     self.integers = integers
     self.condition = condition
     threading.Thread.__init__(self)
 
-  def run(self):
+  ___ run(self):
     while True:
       self.condition.acquire()
       print("Condition Acquired by Consumer: {}".format(self.name))
@@ -42,7 +42,7 @@ class Subscriber(threading.Thread):
       print("Consumer {} Releasing Condition".format(self.name))
       self.condition.release()
 
-def main():
+___ main():
   integers = []
   condition = threading.Condition()
   
