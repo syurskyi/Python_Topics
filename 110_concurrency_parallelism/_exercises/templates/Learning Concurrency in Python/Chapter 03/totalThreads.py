@@ -1,20 +1,20 @@
-______ threading
-______ time
-______ random
-
-def myThread(i):
-  print("Thread {}: started".format(i))
-  time.sleep(random.randint(1,5))
-  print("Thread {}: finished".format(i))
-
-
-def main():
-  for i in range(random.randint(2,50)):
-    thread = threading.Thread(target=myThread, args=(i,))
-    thread.start()
-
-  time.sleep(4)
-  print("Total Number of Active Threads: {}".format(threading.active_count()))
-
-if __name__ == '__main__':
-  main()
+# ______ th..
+# ______ ti..
+# ______ ra..
+#
+# ___ myThread i
+#   print("Thread @: started".f.. ?
+#   t__.s.. ra__.r_i.. 1,5
+#   print("Thread @: finished".f.. ?
+#
+#
+# ___ main
+#   ___ i __ ra.. ra__.r_i.. 2,50
+#     thread _ ?.T.. t..? a.._ ?,
+#     ?.s..
+#
+#   t__.s.. 4
+#   print("Total Number of Active Threads: @".f.. ?.a_c..
+#
+# __ _________ __ ________
+#   ?
