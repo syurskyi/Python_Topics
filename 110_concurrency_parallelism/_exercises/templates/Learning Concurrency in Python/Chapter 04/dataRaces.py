@@ -1,11 +1,11 @@
-______ threading
-______ time
-
-def myWorker():
-  pass
-
-def main():
-  pass
-
-if __name__ == '__main__':
-  main()
+# ______ th..
+# ______ ti..
+#
+# ___ myWorker
+#   p..
+#
+# ___ main
+#   p..
+#
+# __ _________ __ ________
+#   ?
