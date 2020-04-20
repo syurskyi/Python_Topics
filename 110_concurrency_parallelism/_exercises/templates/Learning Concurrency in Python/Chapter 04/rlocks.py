@@ -1,36 +1,36 @@
-______ threading
-______ time
-
-class myWorker():
-
-  def __init__(self):
-    self.a = 1
-    self.b = 2
-    self.rlock = threading.RLock()
-  
-  def modifyA(self):
-    with self.rlock:
-      print("Modifying A : RLock Acquired: {}".format(self.rlock._is_owned()))
-      print("{}".format(self.rlock))
-      self.a = self.a + 1
-      time.sleep(5)
-
-  def modifyB(self):
-    with self.rlock:
-      print("Modifying B : RLock Acquired: {}".format(self.rlock._is_owned()))
-      print("{}".format(self.rlock))
-      self.b = self.b - 1
-      time.sleep(5)
-
-  def modifyBoth(self):
-    with self.rlock:
-      print("Rlock acquired, modifying A and B")
-      print("{}".format(self.rlock))
-      self.modifyA()
-      print("{}".format(self.rlock))
-      self.modifyB()
-    print("{}".format(self.rlock))
-
-
-workerA = myWorker()
-workerA.modifyBoth()
+# ______ th..
+# ______ ti..
+#
+# c_ myWorker
+#
+#   ___ -
+#     a _ 1
+#     b _ 2
+#     rlock _ ?.RL..
+#
+#   ___ modifyA
+#     w__ rlock
+#       print("Modifying A : RLock Acquired: @".f.. ._i_o..
+#       print("@".f.. ?
+#       a _ a + 1
+#       t__.s.. 5
+#
+#   ___ modifyB
+#     w__ rlock:
+#       print("Modifying B : RLock Acquired: @".f.. ?._i_o..
+#       print("@".f.. ?
+#       b _ b - 1
+#       t__.s.. 5
+#
+#   ___ modifyBoth
+#     w__ rlock
+#       print("Rlock acquired, modifying A and B")
+#       print("@".f.. ?
+#       _A
+#       print("@".f.. ?
+#       _B
+#     print("@".f.. ?
+#
+#
+# workerA _ ?
+# ?.mB..
