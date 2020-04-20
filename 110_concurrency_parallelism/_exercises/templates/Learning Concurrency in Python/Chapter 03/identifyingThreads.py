@@ -1,15 +1,14 @@
-______ threading
-______ time
-
-
-def myThread():
-  print("Thread {} starting".format(threading.currentThread().getName()))
-  time.sleep(10)
-  print("Thread {} ending".format(threading.currentThread().getName()))
-
-for i in range(4):
-  threadName = "Thread-" + str(i)
-  thread = threading.Thread(name=threadName, target=myThread)
-  thread.start()
-
-print("{}".format(threading.enumerate()))
+# ______ th..
+# ______ ti..
+#
+#
+# ___ myThread
+#   print("Thread @ starting".f.. ?.cT.. .gN..
+#   time.sleep(10)
+#   print("Thread @ ending".f.. ?.cT.. .gN..
+# ___ i __ ra.. 4
+#   threadName _ "Thread-" + st. ?
+#   thread _ ?.T.. n.._? t.._?
+#   ?.s..
+#
+# print("@".f.. ?.en..
