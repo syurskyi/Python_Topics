@@ -1,32 +1,32 @@
-______ threading
-from multiprocessing ______ Process
-______ time
-______ os
-
-def MyThread():
-  time.sleep(2)
-
-t0 = time.time()
-threads = []
-for i in range(10):
-  thread = threading.Thread(target=MyThread)
-  thread.start()
-  threads.append(thread)
-t1 = time.time()
-print("Total Time for Creating 10 Threads: {} seconds".format(t1-t0))
-
-for thread in threads:
-  thread.join()
-
-t2 = time.time()
-procs = []
-
-for i in range(10):
-  process = Process(target=MyThread)
-  process.start()
-  procs.append(process)
-
-t3 = time.time()
-print("Total Time for Creating 10 Processes: {} seconds".format(t3-t2))
-for proc in procs:
-  proc.join()
+# ______ th..
+# ____ m.. ______ P..
+# ______ ti..
+# ______ __
+#
+# ___ MyThread
+#   t__.s.. 2
+#
+# t0 _ t__.t__
+# threads _   # list
+# ___ i __ ra..(10
+#   thread _ ?.T.. t.._?
+#   ?.s..
+#   t_s.ap.. ?
+# t1 _ t__.t__
+# print("Total Time ___ Creating 10 Threads: @ seconds".f.. t1-t0
+#
+# ___ t.. __ t_s
+#   ?.j..
+#
+# t2 _ t__.t__
+# procs _   # list
+#
+# ___ i __ ra.. 10
+#   process _ P.. t.._?
+#   ?.s..
+#   p_s.ap.. ?
+#
+# t3 _ t__.t__
+# print("Total Time ___ Creating 10 Processes: @ seconds".f.. t3-t2
+# ___ p.. __ p_s
+#   ?.j..
