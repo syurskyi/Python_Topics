@@ -1,42 +1,42 @@
-______ time
-______ random
-______ threading
-
-def calculatePrimeFactors(n):
-  primfac = []
-  d = 2
-  while d*d <= n:
-    while (n % d) == 0:
-      primfac.append(d)  
-      n //= d
-    d += 1
-  if n > 1:
-    primfac.append(n)
-  return primfac
-
-def executeProc():
-  for i in range(1000):
-    rand = random.randint(20000, 100000000)
-    print(calculatePrimeFactors(rand))
-
-def main():
-  print("Starting number crunching")
-  t0 = time.time()
-  
-  threads = []
-
-  for i in range(10):
-    thread = threading.Thread(target=executeProc)
-    threads.append(thread)
-    thread.start()
-
-  for thread in threads:
-    thread.join()
-
-  t1 = time.time()
-  totalTime = t1 - t0
-  print("Execution Time: {}".format(totalTime))
-
-
-if __name__ == '__main__':
-  main()
+# ______ ti..
+# ______ ra..
+# ______ th..
+#
+# ___ calculatePrimeFactors n
+#   primfac _    # list
+#   d _ 2
+#   w__ d*d <_ n
+#     w__ (n % d) __ 0
+#       p__.ap.. d
+#       n //_ d
+#     d +_ 1
+#   __ n > 1
+#     p__.ap.. ?
+#   r_ ?
+#
+# ___ executeProc
+#   ___ i __ ra.. 1000
+#     rand _ ra__.r_i.. 20000 100000000
+#     print ? ?
+#
+# ___ main
+#   print("Starting number crunching")
+#   t0 _ t__.t..
+#
+#   threads _   # list
+#
+#   ___ i __ ra.. 10
+#     thread _ ?.T.. t.._e..
+#     ?s.a.. ?
+#     ?.s..
+#
+#   ___ ? __ ?s
+#     ?.j..
+#
+#   t1 _ t__.t..
+#   totalTime _ t1 - t0
+#   print("Execution Time: @".f.. ?
+#
+#
+# __ _________ __ ________
+#   ?
