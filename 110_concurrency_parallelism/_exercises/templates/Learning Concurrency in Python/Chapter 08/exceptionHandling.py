@@ -1,6 +1,6 @@
-import multiprocessing
-import os, sys
-import traceback
+______ multiprocessing
+______ os, sys
+______ traceback
 
 class MyProcess(multiprocessing.Process):
   

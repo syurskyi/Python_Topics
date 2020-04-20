@@ -1,5 +1,5 @@
-import multiprocessing as mp
-import queue
+______ multiprocessing as mp
+______ queue
 
 def myProcess(ns):
   # Update values within our namespace

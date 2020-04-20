@@ -1,6 +1,6 @@
-import random
-import timeit
-import time
+______ random
+______ timeit
+______ time
  
 def timethis(func):
 

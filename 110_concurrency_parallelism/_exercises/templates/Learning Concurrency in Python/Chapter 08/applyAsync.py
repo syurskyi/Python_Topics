@@ -1,6 +1,6 @@
-from multiprocessing import Pool
-import time
-import os
+from multiprocessing ______ Pool
+______ time
+______ os
 
 def myTask(n):
   print("Task processed by Process {}".format(os.getpid()))

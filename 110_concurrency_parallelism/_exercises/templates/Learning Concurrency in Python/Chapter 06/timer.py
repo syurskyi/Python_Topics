@@ -1,4 +1,4 @@
-from timeit import default_timer
+from timeit ______ default_timer
 
 class Timer(object):
     def __init__(self, verbose=False):

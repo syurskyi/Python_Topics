@@ -1,5 +1,5 @@
-import timeit
-import time
+______ timeit
+______ time
 
 def func1():
   print("Function 1 Executing")
@@ -11,12 +11,12 @@ def func2():
   time.sleep(2)
   print("Function 2 complete")
 
-t1 = timeit.Timer("func1()", setup="from __main__ import func1")
+t1 = timeit.Timer("func1()", setup="from __main__ ______ func1")
 times = t1.repeat(repeat=2, number=1)
 for t in times:
   print("{} Seconds: ".format(t))
 
-t2 = timeit.Timer("func2()", setup="from __main__ import func2")
+t2 = timeit.Timer("func2()", setup="from __main__ ______ func2")
 times = t2.repeat(repeat=2, number=1)
 for t in times:
   print("{} Seconds: ".format(t))

@@ -1,5 +1,5 @@
-from multiprocessing import Pool
-import time
+from multiprocessing ______ Pool
+______ time
 
 def myTask(x, y):
   time.sleep(x)

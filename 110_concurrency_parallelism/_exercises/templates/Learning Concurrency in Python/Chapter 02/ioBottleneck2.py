@@ -1,6 +1,6 @@
-import urllib2
-import time
-from BeautifulSoup import BeautifulSoup
+______ urllib2
+______ time
+from BeautifulSoup ______ BeautifulSoup
 
 linkArray = []
 

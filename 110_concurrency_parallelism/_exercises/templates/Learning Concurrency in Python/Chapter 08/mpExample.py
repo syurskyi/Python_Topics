@@ -1,6 +1,6 @@
-from multiprocessing import Pool
-import timeit
-import math
+from multiprocessing ______ Pool
+______ timeit
+______ math
 
 PRIMES = [
     112272535095293,

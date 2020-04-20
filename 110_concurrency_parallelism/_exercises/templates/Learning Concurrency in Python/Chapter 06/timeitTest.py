@@ -1,7 +1,7 @@
 # timeitTest.py
-import threading
-import random
-import time
+______ threading
+______ random
+______ time
 
 def myWorker():
   for i in range(5):

@@ -1,5 +1,5 @@
-import threading
-import time
+______ threading
+______ time
 
 def myThread(myEvent):
   while not myEvent.is_set():

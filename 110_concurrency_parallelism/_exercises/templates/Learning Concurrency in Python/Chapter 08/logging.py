@@ -1,5 +1,5 @@
-import logging
-from multiprocessing import Pool
+______ logging
+from multiprocessing ______ Pool
 
 logging.basicConfig(filename='myapp.log', level=logging.INFO,
   format='%(processName)-10s %(asctime)%s %(levelname)s %(message)s')

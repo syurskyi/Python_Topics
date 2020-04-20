@@ -1,5 +1,5 @@
-import random
-import time
+______ random
+______ time
 
 
 def slowFunction():

@@ -1,4 +1,4 @@
-import collections
+______ collections
 
 doubleEndedQueue = collections.deque('123456')
 

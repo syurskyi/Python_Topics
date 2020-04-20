@@ -1,5 +1,5 @@
-import threading
-import time
+______ threading
+______ time
 
 class Parent(threading.Thread):
 

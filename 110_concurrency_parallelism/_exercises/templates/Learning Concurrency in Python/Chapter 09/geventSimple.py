@@ -1,5 +1,5 @@
-import gevent
-from gevent import socket
+______ gevent
+from gevent ______ socket
 
 def main():
   urls = ['www.google.com', 'www.example.com', 'www.python.org']

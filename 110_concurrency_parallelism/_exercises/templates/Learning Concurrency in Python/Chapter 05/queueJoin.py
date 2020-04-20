@@ -1,6 +1,6 @@
-import threading
-import queue
-import time
+______ threading
+______ queue
+______ time
 
 def mySubscriber(queue):
   time.sleep(1)

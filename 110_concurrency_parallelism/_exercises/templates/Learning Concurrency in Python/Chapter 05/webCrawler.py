@@ -1,10 +1,10 @@
-from urllib.request import Request, urlopen, urljoin, URLError
-from urllib.parse import urlparse
-import time
-import threading
-import queue
-from bs4 import BeautifulSoup
-import ssl
+from urllib.request ______ Request, urlopen, urljoin, URLError
+from urllib.parse ______ urlparse
+______ time
+______ threading
+______ queue
+from bs4 ______ BeautifulSoup
+______ ssl
 
 class Crawler(threading.Thread):
 

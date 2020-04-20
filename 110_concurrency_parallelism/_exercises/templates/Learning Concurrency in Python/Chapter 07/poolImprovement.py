@@ -1,7 +1,7 @@
-import timeit
-from concurrent.futures import ThreadPoolExecutor
-from concurrent.futures import ProcessPoolExecutor
-import math
+______ timeit
+from concurrent.futures ______ ThreadPoolExecutor
+from concurrent.futures ______ ProcessPoolExecutor
+______ math
 
 values = [40000000, 30000000, 20000000, 10000000]
 

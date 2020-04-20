@@ -1,6 +1,6 @@
-import threading
-import time
-import random
+______ threading
+______ time
+______ random
 
 class Philosopher(threading.Thread):
 

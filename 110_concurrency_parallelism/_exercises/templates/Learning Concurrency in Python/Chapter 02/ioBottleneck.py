@@ -1,5 +1,5 @@
-import urllib.request
-import time
+______ urllib.request
+______ time
 
 t0 = time.time()
 req = urllib.request.urlopen('http://www.example.com')

@@ -1,5 +1,5 @@
-from pycsp.parallel import *
-import time
+from pycsp.parallel ______ *
+______ time
 
 @process
 def Process1():

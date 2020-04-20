@@ -1,7 +1,7 @@
-import sys
-import threading
-import time
-import queue
+______ sys
+______ threading
+______ time
+______ queue
 
 
 def myThread(queue):

@@ -1,5 +1,5 @@
-import gevent
-from gevent import Greenlet
+______ gevent
+from gevent ______ Greenlet
 
 class MyNoopGreenlet(Greenlet):
 

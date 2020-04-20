@@ -1,6 +1,6 @@
-import urllib.request
-import time
-from bs4 import BeautifulSoup
+______ urllib.request
+______ time
+from bs4 ______ BeautifulSoup
 
 t0 = time.time()
 req = urllib.request.urlopen('http://www.example.com')

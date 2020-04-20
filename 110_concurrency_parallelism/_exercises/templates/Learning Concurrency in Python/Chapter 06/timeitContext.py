@@ -1,6 +1,6 @@
-from timer import Timer
-from urllib.request import Request, urlopen
-import ssl
+from timer ______ Timer
+from urllib.request ______ Request, urlopen
+______ ssl
 
 def myFunction():
   # We create this context so that we can crawl 

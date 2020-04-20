@@ -1,4 +1,4 @@
-from threading import Lock
+from threading ______ Lock
 
 def lock_class(methodnames, lockfactory):
     return lambda cls: make_threadsafe(cls, methodnames, lockfactory)

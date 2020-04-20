@@ -2,8 +2,8 @@
 '''
 This example demonstrates a simple use of pycallgraph.
 '''
-from pycallgraph import PyCallGraph
-from pycallgraph.output import GraphvizOutput
+from pycallgraph ______ PyCallGraph
+from pycallgraph.output ______ GraphvizOutput
 
 
 class Banana:

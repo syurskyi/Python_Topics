@@ -1,5 +1,5 @@
-import threading
-import time
+______ threading
+______ time
 
 def threadTarget():
   print("Current Thread: {}".format(threading.current_thread()))

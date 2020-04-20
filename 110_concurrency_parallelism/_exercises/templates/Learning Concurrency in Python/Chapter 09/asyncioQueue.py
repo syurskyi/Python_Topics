@@ -1,6 +1,6 @@
-import asyncio
-import random
-import time
+______ asyncio
+______ random
+______ time
 
 @asyncio.coroutine
 def newsProducer(myQueue):

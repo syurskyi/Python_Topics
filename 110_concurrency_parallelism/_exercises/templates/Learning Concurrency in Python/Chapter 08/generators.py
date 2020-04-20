@@ -1,4 +1,4 @@
-import time
+______ time
 
 def my_generator():
   for i in range(5):

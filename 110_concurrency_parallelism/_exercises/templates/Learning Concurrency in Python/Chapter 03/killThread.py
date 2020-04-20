@@ -1,5 +1,5 @@
-from multiprocessing import Process
-import time
+from multiprocessing ______ Process
+______ time
 
 def myWorker():
   t1 = time.time()

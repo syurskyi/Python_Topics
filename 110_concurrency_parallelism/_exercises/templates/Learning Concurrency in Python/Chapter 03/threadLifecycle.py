@@ -1,5 +1,5 @@
-import threading
-import time
+______ threading
+______ time
 
 # A very simple method for our thread to execute
 def threadWorker():

@@ -1,7 +1,7 @@
-import threading
-from multiprocessing import Process
-import time
-import os
+______ threading
+from multiprocessing ______ Process
+______ time
+______ os
 
 def MyThread():
   time.sleep(2)

@@ -1,6 +1,6 @@
-from twisted.web.server import Site
-from twisted.web.static import File
-from twisted.internet import reactor, endpoints
+from twisted.web.server ______ Site
+from twisted.web.static ______ File
+from twisted.internet ______ reactor, endpoints
 
 resource = File('tmp')
 factory = Site(resource)

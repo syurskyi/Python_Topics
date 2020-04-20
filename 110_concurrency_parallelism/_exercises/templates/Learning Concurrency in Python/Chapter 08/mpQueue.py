@@ -1,7 +1,7 @@
-from multiprocessing import Pool
-import multiprocessing
-import queue
-import time
+from multiprocessing ______ Pool
+______ multiprocessing
+______ queue
+______ time
 
 def myTask(queue):
   value = queue.get()

@@ -1,6 +1,6 @@
-import time
-import random
-import threading
+______ time
+______ random
+______ threading
 
 def calculatePrimeFactors(n):
   primfac = []
