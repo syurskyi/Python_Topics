@@ -1,30 +1,30 @@
-______ __ ___
-______ m..
-
-class ChildProcess(multiprocessing.Process):
-
-  ___ __init__(self, pipein):
-    super(ChildProcess, self).__init__()
-    self.pipein = pipein
-
-  ___ run(self):
-    print("Attempting to pipein to pipe")
-    self.pipein = os.fdopen(self.pipein, 'w')
-    self.pipein.write("My Name is Elliot")
-    self.pipein.close()
-
-___ main():
-  pipeout, pipein = os.pipe()
-
-  child = ChildProcess(pipein)
-  child.start()
-  child.join()
-
-  os.close(pipein)
-  pipeout = os.fdopen(pipeout)
-
-  pipeContent = pipeout.read()
-  print("Pipe: {}".format(pipeContent))
-
-if __name__ == '__main__':
-  main()
+# ______ __ ___
+# ______ m..
+#
+# c_ ChildProcess ?.P..
+#
+#   ___ -  pipein
+#     s___ ? ? . -
+#     ? ?
+#
+#   ___ run
+#     print("Attempting to pipein to pipe")
+#     pipein _ __.fd.. p.. _
+#     ?.write("My Name is Elliot")
+#     ?.c..
+#
+# ___ main
+#   p_o. p.i_ _ __.p..
+#
+#   child _ ? ?
+#   ?.s..
+#   ?.j..
+#
+#   __.c.. ?
+#   pipeout _ __.fd.. ?
+#
+#   pipeContent _ p_o_.r..
+#   print("Pipe: @".f.. ?
+#
+# __ _________ __ ________
+#   ?
