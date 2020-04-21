@@ -1,26 +1,26 @@
-____ c__.f.. ______ TPE..
-
-def task(n):
-  print("Processing {}".format(n))
-
-def taskDone(fn):
-  if fn.cancelled():
-    print("Our {} Future has been cancelled".format(fn.arg))
-  elif fn.done():
-    print("Our Task has completed")
-
-def secondTaskDone(fn):
-  print("I didn't think this would work")
-
-def main():
-  print("Starting ThreadPoolExecutor")
-  with ThreadPoolExecutor(max_workers=3) as executor:
-    future = executor.submit(task, (2))
-    future.add_done_callback(taskDone)
-    future.add_done_callback(secondTaskDone)
-
-    
-  print("All tasks complete")
-    
-if __name__ == '__main__':
-  main()
+# ____ c__.f.. ______ TPE..
+#
+# ___ task n
+#   print("Processing @".f.. n
+#
+# ___ taskDone fn
+#   __ ?.ca..
+#     print("Our @ Future has been cancelled".f.. ?.a..
+#   ____ ?.do..
+#     print("Our Task has completed")
+#
+# ___ secondTaskDone fn
+#   print("I didn't think this would work")
+#
+# ___ main
+#   print("Starting ThreadPoolExecutor")
+#   w___ TPE.. m_w.._3 __ executor
+#     future _ ?.s.. t.. 2
+#     ?.a_d_c.. t..
+#     ?.a_d_c.. s..
+#
+#
+#   print("All tasks complete")
+#
+# __ _________ __ ________
+#   ?
