@@ -1,25 +1,23 @@
-____ m.. ______ P..
-______ ti..
-______ os
-
-___ myTask(n):
-  print("Task processed by Process {}".format(os.getpid()))
-  return n*2
-
-___ main():
-  print("apply_async")
-  with Pool(4) as p:
-    tasks = []
-
-    for i in range(4):
-      task = p.apply_async(func=myTask, args=(i,))
-      tasks.append(task)
-
-    for task in tasks:
-      task.wait()
-      print("Result: {}".format(task.get()))
-  
-    
-
-if __name__ == '__main__':
-  main()
+# ____ m.. ______ P..
+# ______ ti..
+# ______ __
+#
+# ___ myTask n
+#   print("Task processed by Process @".f.. __.g__p..
+#   r_ n*2
+#
+# ___ main
+#   print("apply_async")
+#   w___ P.. 4 __ p
+#     tasks _    # list
+#
+#     ___ i __ ra.. 4
+#       task _ p.a_a.. f.._? a.._ ?
+#       ?s.ap.. ?
+#
+#     ___ t.. __ ?s
+#       ?.w..
+#       print("Result: @".f.. ?.g..
+#
+# __ _________ __ ________
+#   ?
