@@ -1,19 +1,19 @@
-______ ti..
-____ c__.f.. ______ TPE..
-from concurrent.futures ______ as_completed
-
-values = [2,3,4,5,6,7,8]
-
-def multiplyByTwo(n):
-  return 2 * n
-
-def main():
-  with ThreadPoolExecutor(max_workers=3) as executor:
-    results = executor.map(multiplyByTwo, values)
-    for result in results:
-      print(result)
-
-if __name__ == '__main__':
-  main()
-  results = list(map(multiplyByTwo, values))
-  print(results)
+# ______ ti..
+# ____ c__.f.. ______ TPE..
+# ____ c__.f.. ______ as_completed
+#
+# values _ [2,3,4,5,6,7,8]
+#
+# ___ multiplyByTwo n
+#   r_ 2 * ?
+#
+# ___ main
+#   w__ TPE.. m_w.._3 __ executor
+#     results _ ?.m.. ? v..
+#     ___ result __ ?
+#       print ?
+#
+# __ _________ __ ________
+#   ?
+#   results _ li.. m.. ? v..
+#   print ?
