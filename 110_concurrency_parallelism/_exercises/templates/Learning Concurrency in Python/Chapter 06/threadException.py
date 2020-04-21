@@ -1,26 +1,26 @@
-______ sys
-______ threading
-______ time
-______ queue
-
-
-def myThread(queue):
-  while True:
-    try:
-      time.sleep(2)
-      raise Exception("Exception Thrown In Child Thread {}".format(threading.current_thread()))
-    except:
-      queue.put(sys.exc_info())
-
-queue = queue.Queue()
-myThread = threading.Thread(target=myThread, args=(queue,))
-myThread.start()
-
-while True:  
-  try:
-    exception = queue.get()
-  except Queue.Empty:
-    pass
-  else:
-    print(exception)
-    break
+# ______ ___
+# ______ th...
+# ______ ti...
+# ______ qu...
+#
+#
+# ___ myThread queue
+#   w___ T..
+#     ___
+#       t__.s.. 2
+#       r_ E.. ("Exception Thrown In Child Thread @".f.. ?.c_t..
+#     ______
+#       ?.pu. ___.e..
+#
+# queue _ q__.Q..
+# myThread _ ?.T.. t.._? a.._ ?
+# ?.s..
+#
+# w__ T..
+#   ___
+#     exception _ q__.g..
+#   _____ Q__.E..
+#     p..
+#   ____
+#     print ?
+#     b..
