@@ -1,19 +1,19 @@
-def locked_method(method):
+___ locked_method method
     """Method decorator. Requires a lock object at self._lock"""
-    def newmethod(self, *args, **kwargs):
-        with self._lock:
-            return method(self, *args, **kwargs)
-    return newmethod
+    ___ newmethod $ $$
+        w__ _lock
+            r_ ? $ $$
+    r_ ?
 
-class DecoratorLockedSet(set):
-    def __init__(self, *args, **kwargs):
-        self._lock = Lock()
-        super(DecoratorLockedSet, self).__init__(*args, **kwargs)
+c_ DecoratorLockedSet set
+    ___ -  $ $$
+        _lock _ L..
+        s__ ? ?. - $ $$
 
-    @locked_method
-    def add(self, *args, **kwargs):
-        return super(DecoratorLockedSet, self).add(elem)
+    ??
+    ___ add $ $$
+        r_ s__ ? ? .a.. elem
 
-    @locked_method
-    def remove(self, *args, **kwargs):
-        return super(DecoratorLockedSet, self).remove(elem)
+    ??
+    ___ remove $ $$
+        r_ s__ ? ? .r.. elem
