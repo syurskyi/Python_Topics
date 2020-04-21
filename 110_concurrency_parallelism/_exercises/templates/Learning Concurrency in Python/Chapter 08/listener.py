@@ -1,14 +1,14 @@
-____ m...con.. ______ L..
-____ ar..______ ar..
-
-address = ('localhost', 6000)     # family is deduced to be 'AF_INET'
-
-with Listener(address, authkey=b'secret password') as listener:
-    with listener.accept() as conn:
-        print('connection accepted from', listener.last_accepted)
-
-        conn.send([2.25, None, 'junk', float])
-
-        conn.send_bytes(b'hello')
-
-        conn.send_bytes(array('i', [42, 1729]))
+# ____ m...con.. ______ L..
+# ____ ar..______ ar..
+#
+# address _ ('localhost', 6000)     # family is deduced to be 'AF_INET'
+#
+# w__ Listener a.. a.._?'secret password') __ listener
+#     w__ ?.a.. __ conn
+#         print('connection accepted from', ?.l_a..
+#
+#         ?.s.. 2.25, N.. 'junk', fl..
+#
+#         ?.s_b..(b'hello')
+#
+#         ?.s_b..(ar.. ('i', [42, 1729
