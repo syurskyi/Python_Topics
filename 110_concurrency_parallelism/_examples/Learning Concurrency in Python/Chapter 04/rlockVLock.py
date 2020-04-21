@@ -8,7 +8,7 @@ class myWorker():
     self.b = 2
     self.lock = threading.Lock()
   
-  def modifyA(self)
+  def modifyA(self):
     print("Modifying A : RLock Acquired: {}".format(self.lock._is_owned()))
     print("{}".format(self.lock))
     self.a = self.a + 1
