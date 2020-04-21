@@ -1,13 +1,13 @@
 ____ m___.con.. ______ C..
 ____ ar.. ______ ar..
 
-address = ('localhost', 6000)
+address _ ('localhost', 6000)
 
-with Client(address, authkey=b'secret password') as conn:
-    print(conn.recv())                  # => [2.25, None, 'junk', float]
+w__ Client a.. a.._?'secret password') __ conn
+    print ?.r..                 # => [2.25, None, 'junk', float]
 
-    print(conn.recv_bytes())            # => 'hello'
+    print ?.r_b..          # => 'hello'
 
-    arr = array('i', [0, 0, 0, 0, 0])
-    print(conn.recv_bytes_into(arr))    # => 8
-    print(arr)                          # => array('i', [42, 1729, 0, 0, 0])
+    arr _ ar.. ('i', |0, 0, 0, 0, 0
+    print ?.r_b_i.. ?    # => 8
+    print ?                          # => array('i', [42, 1729, 0, 0, 0])
