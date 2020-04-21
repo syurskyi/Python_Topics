@@ -53,5 +53,5 @@ ___ main():
     print("{} is prime: {}".format(number, isPrime))
   print("{} Seconds needed for single threaded execution".format(timeit.default_timer()-t3))
 
-if __name__ == '__main__':
+__ _________ __ ________
   main()
