@@ -1,15 +1,14 @@
-____ m.. ______ P..
-______ ti..
-
-___ myTask(n):
-  time.sleep(n+2)
-  return n+2
-
-___ main():
-  with Pool(4) as p:
-     for iter in p.imap_unordered(myTask, [1,3,2,1]):
-       print(iter)
-     
-
-if __name__ == '__main__':
-  main()
+# ____ m.. ______ P..
+# ______ ti..
+#
+# ___ myTask n
+#   t__.s.. ?+2
+#   r_ ?+2
+#
+# ___ main
+#   w__ P.. 4 __ p
+#      ___ iter __ ?.i_u.. ? |1,3,2,1
+#        print ?
+#
+# __ _________ __ ________
+#   ?
