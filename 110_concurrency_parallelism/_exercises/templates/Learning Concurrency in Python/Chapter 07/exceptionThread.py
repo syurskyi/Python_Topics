@@ -1,28 +1,28 @@
-____ c__.f.. ______ TPE..
-______ c__.f..
-______ th..
-______ ra..
- 
- 
-___ isEven(n):
-    print("Checking if {} is even".format(n))
-    if type(n) != int:
-        raise Exception("Value entered is not an integer")
-    if n % 2 == 0:
-        print("{} is even".format(n))
-        return True
-    else:
-        print("{} is odd".format(n))
-        return False
-
-___ main():
-    with ThreadPoolExecutor(max_workers=4) as executor:
-        task1 = executor.submit(isEven, (2))
-        task2 = executor.submit(isEven, (3))
-        task3 = executor.submit(isEven, ('t'))
-
-    for future in concurrent.futures.as_completed([task1, task2, task3]):
-        print("Result of Task: {}".format(future.result()))
- 
-if __name__ == '__main__':
-    main()
+# ____ c__.f.. ______ TPE..
+# ______ c__.f..
+# ______ th..
+# ______ ra..
+#
+#
+# ___ isEven n
+#     print("Checking if @ is even".f.. ?
+#     __ ty.. ? !_ in.
+#         r_ E.. "Value entered is not an integer"
+#     __ ? % 2 __ 0
+#         print("@ is even".f.. ?
+#         r_ T..
+#     ____
+#         print("@ is odd".f.. ?
+#         r_ F..
+#
+# ___ main
+#     w__ TPE.. m_w.._4 __ executor:
+#         task1 _ ?.s.. ?  2
+#         task2 _ ?.s.. ?  3
+#         task3 _ ?.s.. ?  't'
+#
+#     ___ future __ c__.f__.a_c.. _1 _2 _3
+#         print("Result of Task: @".f.. f__.r..
+#
+# __ _________ __ ________
+#     ?
