@@ -1,14 +1,14 @@
-import collections
-
-doubleEndedQueue = collections.deque('123456')
-
-print("Dequeue: {}".format(doubleEndedQueue))
-
-for item in doubleEndedQueue:
-  print("Item {}".format(item))
-
-print("Left Most Element: {}".format(doubleEndedQueue[0]))
-print("Right Most Element: {}".format(doubleEndedQueue[-1]))
-
-doubleEndedQueue.remove('1')
-print("Removing Element: {}".format(doubleEndedQueue))
+# ______ col..
+#
+# doubleEndedQueue _ c__.d.. '123456'
+#
+# print("Dequeue: @".f.. ?
+#
+# ___ item __ ?
+#   print("Item @".f.. ?
+#
+# print("Left Most Element: @".f.. ? 0
+# print("Right Most Element: @".f.. ? -1
+#
+# ?.r.. '1'
+# print("Removing Element: @".f.. ?
