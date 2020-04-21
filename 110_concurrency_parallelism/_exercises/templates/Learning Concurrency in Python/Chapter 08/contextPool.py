@@ -1,11 +1,11 @@
-____ m.. ______ P..
-
-___ task(n):
-    print(n)
-
-___ main():
-    with Pool(4) as p:
-        print(p.map(task, [2,3,4]))
-
-if __name__ == '__main__':
-    main()
+# ____ m.. ______ P..
+#
+# ___ task n
+#     print ?
+#
+# ___ main
+#     w__ P.. 4 __ p
+#         print ?.m.. ? |2,3,4
+#
+# __ _________ __ ________
+#     ?
