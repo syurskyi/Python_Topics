@@ -1,19 +1,19 @@
-______ ti..
-______ random
-____ c__.f.. ______ TPE..
-
-def someTask(n):
-  print("Executing Task {}".format(n))
-  time.sleep(n)
-  print("Task {} Finished Executing".format(n))
-
-def main():
-  with ThreadPoolExecutor(max_workers=2) as executor:
-    task1 = executor.submit(someTask, (1))
-    task2 = executor.submit(someTask, (2))
-    print(executor.shutdown(wait=False))
-    task3 = executor.submit(someTask, (3))
-    task4 = executor.submit(someTask, (4))
-  
-if __name__ == '__main__':
-  main()
+# ______ ti..
+# ______ random
+# ____ c__.f.. ______ TPE..
+#
+# ___ someTask n
+#   print("Executing Task @".f.. ?
+#   t__.s.. ?
+#   print("Task @ Finished Executing".f.. ?
+#
+# ___ main
+#   w__ TPE.. m_w.._2 __ executor
+#     task1 _ ?.s.. ? 1
+#     task2 _ ?.s.. ? 2
+#     print(?.sh.. w.._F..
+#     task3 _ ?.s.. ? 3
+#     task4 _ ?.s.. ? 4
+#
+# __ _________ __ ________
+#   ?
