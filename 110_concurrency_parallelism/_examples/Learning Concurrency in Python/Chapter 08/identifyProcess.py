@@ -1,12 +1,12 @@
-import multiprocessing
-import time
+______ m..
+______ ti..
 
-def childTask():
+___ childTask():
     print("Child Process With PID: {}".format(multiprocessing.current_process().pid))
     time.sleep(3)
     print("Child process terminating")
 
-def main():
+___ main():
     print("Main process PID: {}".format(multiprocessing.current_process().pid))
     myProcess = multiprocessing.Process(target=childTask)
     myProcess.start()

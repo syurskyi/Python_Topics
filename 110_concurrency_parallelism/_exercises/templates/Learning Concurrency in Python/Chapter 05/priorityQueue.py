@@ -1,35 +1,35 @@
-______ threading
-______ queue
-______ random
-______ time
-
-def mySubscriber(queue):
-  while not queue.empty():
-    item = queue.get()
-    if item is None:
-      break
-    print("{} removed {} from the queue".format(threading.current_thread(), item))
-    queue.task_done()
-    time.sleep(1)
-
-
-myQueue = queue.PriorityQueue()
-
-for i in range(5):
-  myQueue.put(i, i)
-
-for i in range(5):
-  myQueue.put(i, i)
-
-print("Queue Populated")
-
-threads = []
-for i in range(2):
-  thread = threading.Thread(target=mySubscriber, args=(myQueue,))
-  thread.start()
-  threads.append(thread)
-
-for thread in threads:
-  thread.join()
-
-print("Queue is empty")
+# ______ th...
+# ______ qu...
+# ______ ra...
+# ______ ti...
+#
+# ___ mySubscriber queue
+#   w__ no. ?.e..
+#     item _ ?.g..
+#     __ i.. __ N..
+#       b..
+#     print("@ removed @ from the queue".f.. ?.c_t.. i..
+#     ?.t_d..
+#     t__.s.. 1
+#
+#
+# myQueue _ ?.PQ..
+#
+# ___ i __ ra.. 5
+#   ?.p.. ? ?  # the same
+#
+# ___ i __ ra.. 5
+#   ?.p.. ? ? # the same
+#
+# print("Queue Populated")
+#
+# threads _   # list
+# ___ i __ ra.. 2
+#   thread _ ?.T.. .._? a.._ m..,
+#   ?.s..
+#   ?s.ap.. ?
+#
+# ___ ? __ ?s
+#   ?.j..
+#
+# print("Queue is empty")

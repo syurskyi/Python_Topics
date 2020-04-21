@@ -1,5 +1,5 @@
-import multiprocessing
-import os
+______ m..
+______ __
 
 class MyProcess(multiprocessing.Process):
 

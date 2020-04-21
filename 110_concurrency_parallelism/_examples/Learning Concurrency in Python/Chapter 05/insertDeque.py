@@ -1,9 +1,11 @@
-# ______ col..
-#
-# doubleEndedQueue _ c__.d.. '123456'
-#
-# print("Deque: @".f.. ?
-#
-# ?.in.. 5,5
-#
-# print("Deque: @".f.. ?
+import collections
+
+doubleEndedQueue = collections.deque('123456')
+
+print("Deque: {}".format(doubleEndedQueue))
+
+doubleEndedQueue.insert(5,5)
+
+print("Deque: {}".format(doubleEndedQueue))
+
+

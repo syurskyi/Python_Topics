@@ -1,5 +1,5 @@
-from multiprocessing.connection import Client
-from array import array
+____ m___.con.. ______ C..
+____ ar.. ______ ar..
 
 address = ('localhost', 6000)
 

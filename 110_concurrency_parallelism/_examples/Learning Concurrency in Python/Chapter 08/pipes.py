@@ -1,19 +1,19 @@
-import os, sys
-import multiprocessing
+______ __ ___
+______ m..
 
 class ChildProcess(multiprocessing.Process):
 
-  def __init__(self, pipein):
+  ___ __init__(self, pipein):
     super(ChildProcess, self).__init__()
     self.pipein = pipein
 
-  def run(self):
+  ___ run(self):
     print("Attempting to pipein to pipe")
     self.pipein = os.fdopen(self.pipein, 'w')
     self.pipein.write("My Name is Elliot")
     self.pipein.close()
 
-def main():
+___ main():
   pipeout, pipein = os.pipe()
 
   child = ChildProcess(pipein)

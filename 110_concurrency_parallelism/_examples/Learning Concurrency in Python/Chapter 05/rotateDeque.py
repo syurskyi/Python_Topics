@@ -1,13 +1,13 @@
-# ______ col..
-#
-# doubleEndedQueue _ c___.d.. '123456'
-#
-# print("Deque: @".f.. ?
-#
-# ?.r.. 3
-#
-# print("Deque: @".f.. ?
-#
-# ?.r.. -2
-#
-# print("Deque @".f.. ?
+import collections
+
+doubleEndedQueue = collections.deque('123456')
+
+print("Deque: {}".format(doubleEndedQueue))
+
+doubleEndedQueue.rotate(3)
+
+print("Deque: {}".format(doubleEndedQueue))
+
+doubleEndedQueue.rotate(-2)
+
+print("Deque {}".format(doubleEndedQueue))
