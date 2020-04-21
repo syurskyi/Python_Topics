@@ -1,16 +1,16 @@
-____ c__.f.. ______ TPE..
-
-def task(n):
-  print("Processing {}".format(n))
-
-def main():
-  print("Starting ThreadPoolExecutor")
-  with ThreadPoolExecutor(max_workers=3) as executor:
-    future = executor.submit(task, (2))
-    future = executor.submit(task, (3))
-    future = executor.submit(task, (4))
-    
-  print("All tasks complete")
-    
-if __name__ == '__main__':
-  main()
+# ____ c__.f.. ______ TPE..
+#
+# ___ task n
+#   print("Processing @".f.. ?
+#
+# ___ main
+#   print("Starting ThreadPoolExecutor")
+#   w__ TPE.. m_w.._3 __ executor
+#     future  ?.s.. ? 2
+#     future  ?.s.. ? 3
+#     future  ?.s.. ? 4
+#
+#   print("All tasks complete")
+#
+# __ _________ __ ________
+#   ?
