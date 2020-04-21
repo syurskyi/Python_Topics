@@ -1,13 +1,13 @@
-____ m.. ______ P..
-______ ti..
-
-___ myTask(x, y):
-  time.sleep(x)
-  return y*2
-
-___ main():
-  with Pool(4) as p:
-     print(p.starmap_async(myTask, [(4,3),(2,1)]).get())
-
-if __name__ == '__main__':
-  main()
+# ____ m.. ______ P..
+# ______ ti..
+#
+# ___ myTask x y
+#   t__.s.. x
+#   r_ y*2
+#
+# ___ main
+#   w__ P.. 4 __ p
+#      print ?.s_a.. ? ||4,3),(2,1 .g..
+#
+# __ _________ __ ________
+#   ?
