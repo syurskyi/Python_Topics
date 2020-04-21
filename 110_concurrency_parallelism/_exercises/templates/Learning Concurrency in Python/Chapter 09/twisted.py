@@ -1,7 +1,7 @@
-______ twisted
-
-def main():
-  print(twisted.__version__)
-
-if __name__ == '__main__':
-  main()
+# ______ tW..
+#
+# ___ main
+#   print tw__. -v
+#
+# __ _________ __ ________
+#   ?
