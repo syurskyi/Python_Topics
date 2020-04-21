@@ -1,31 +1,31 @@
-import threading
-import queue
-import random
-import time
-
-def mySubscriber(queue):
-  while not queue.empty():
-    item = queue.get()
-    if item is None:
-      break
-    print("{} removed {} from the queue".format(threading.current_thread(), item))
-    queue.task_done()
-
-
-myQueue = queue.LifoQueue()
-
-for i in range(10):
-  myQueue.put(i)
-
-print("Queue Populated")
-
-threads = []
-for i in range(2):
-  thread = threading.Thread(target=mySubscriber, args=(myQueue,))
-  thread.start()
-  threads.append(thread)
-
-for thread in threads:
-  thread.join()
-
-print("Queue is empty")
+# ______ th..
+# ______ qu..
+# ______ ra..
+# ______ ti..
+#
+# ___ mySubscriber queue
+#   w___ no. ?.em..
+#     item _ ?.g..
+#     __ i.. __ N..
+#       b..
+#     print("@ removed @ from the queue".f.. ?.c_t.. i..
+#     ?.t_d..
+#
+#
+# myQueue _ ?.LQ..
+#
+# ___ i __ ra.. 10
+#   ?.pu. ?
+#
+# print("Queue Populated")
+#
+# threads _   # list
+# ___ i __ ra..(2):
+#   thread _ ?.T.. t.._? a.._ ?,
+#   ?.s..
+#   ?s.ap.. ?
+#
+# ___ t.. __ ?s
+#   ?.j..
+#
+# print("Queue is empty")
