@@ -1,12 +1,12 @@
-______ m..
-
-def myProcess():
-  print("{} Just performed X".format(multiprocessing.current_process().name))
-
-def main():
-  childProcess = multiprocessing.Process(target=myProcess, name='My-Awesome-Process')
-  childProcess.start()
-  childProcess.join()
-
-if __name__ == '__main__':
-  main()
+# ______ m..
+#
+# ___ myProcess
+#   print("@ Just performed X".f.. ?.c_p.. .n..
+#
+# ___ main
+#   childProcess _ ?.P.. t.._? n.._'My-Awesome-Process')
+#   ?.s..
+#   ?.j..
+#
+# __ _________ __ ________
+#   ?
