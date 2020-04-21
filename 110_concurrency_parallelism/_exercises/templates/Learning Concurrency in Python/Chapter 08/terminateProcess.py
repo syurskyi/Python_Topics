@@ -1,19 +1,19 @@
-______ m..
-______ ti..
-
-def daemonProcess():
-  current_process = multiprocessing.current_process() 
-  print("Child Process PID: {}".format(current_process.pid))
-  time.sleep(20)
-
-current_process = multiprocessing.current_process()
-print("Main process PID: {}".format(current_process.pid))
-
-myProcess = multiprocessing.Process(target=daemonProcess)
-myProcess.start()
-print("My Process has terminated, terminating main thread")
-
-print("Terminating Child Process")
-myProcess.terminate()
-
-print("Child Process Successfully terminated")
+# ______ m..
+# ______ ti..
+#
+# ___ daemonProcess
+#   current_process _ ?.c_p..
+#   print("Child Process PID: @".f.. c_p...p..
+#   t__.s.. 20
+#
+# c_p.. _ ?.c_p..
+# print("Main process PID: @".f.. c_p...p..
+#
+# myProcess _ ?.P.. t.._?
+# ?.s..
+# print("My Process has terminated, terminating main thread")
+#
+# print("Terminating Child Process")
+# ?.t..
+#
+# print("Child Process Successfully terminated")
