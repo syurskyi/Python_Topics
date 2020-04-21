@@ -1,14 +1,14 @@
-______ m..
-______ __ ___
-______ tr..
+import multiprocessing
+import os, sys
+import traceback
 
 class MyProcess(multiprocessing.Process):
   
-  ___ __init__(self, pipein):
+  def __init__(self, pipein):
     super(MyProcess, self).__init__()
     self.pipein = pipein
 
-  ___ run(self):
+  def run(self):
     try:
       raise Exception("This broke stuff")
     except:
@@ -18,7 +18,7 @@ class MyProcess(multiprocessing.Process):
       self.pipein.write(str(tb))
       self.pipein.close()
 
-___ main():
+def main():
   pipeout, pipein = os.pipe()
 
   childProcess = MyProcess(pipein)

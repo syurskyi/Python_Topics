@@ -1,12 +1,12 @@
-______ multiprocessing as mp
-______ queue
+______ m.. __ mp
+______ qu..
 
-def myProcess(ns):
+___ myProcess(ns):
   # Update values within our namespace
   print(ns.x)
   ns.x = 2
 
-def main():
+___ main():
   manager = mp.Manager()
   ns = manager.Namespace()
   ns.x = 1

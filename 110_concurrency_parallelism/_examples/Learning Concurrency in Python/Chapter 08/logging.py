@@ -1,15 +1,15 @@
-______ lo..
-____ m.. ______ P..
+import logging
+from multiprocessing import Pool
 
-______.basicConfig(filename='myapp.log', level=______.INFO,
+logging.basicConfig(filename='myapp.log', level=logging.INFO,
   format='%(processName)-10s %(asctime)%s %(levelname)s %(message)s')
 
-___ myTask(n):
-  ______.info("{} being processed".format(n))
-  ______.info("Final Result: {}".format(n*2))
+def myTask(n):
+  logging.info("{} being processed".format(n))
+  logging.info("Final Result: {}".format(n*2))
   return n*2
 
-___ main():
+def main():
   with Pool(4) as p:
     p.map(myTask, [2,3,4,5,6,])
 

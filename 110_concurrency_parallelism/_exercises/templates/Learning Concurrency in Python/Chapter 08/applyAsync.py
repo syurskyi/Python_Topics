@@ -1,12 +1,12 @@
-from multiprocessing ______ Pool
-______ time
+____ m.. ______ P..
+______ ti..
 ______ os
 
-def myTask(n):
+___ myTask(n):
   print("Task processed by Process {}".format(os.getpid()))
   return n*2
 
-def main():
+___ main():
   print("apply_async")
   with Pool(4) as p:
     tasks = []

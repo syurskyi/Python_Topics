@@ -1,5 +1,5 @@
-______ multiprocessing
-______ time
+______ m..
+______ ti..
 
 def daemonProcess():
   current_process = multiprocessing.current_process() 

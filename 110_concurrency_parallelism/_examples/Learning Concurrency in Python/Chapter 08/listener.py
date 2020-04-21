@@ -1,5 +1,5 @@
-____ m...con.. ______ L..
-____ ar..______ ar..
+from multiprocessing.connection import Listener
+from array import array
 
 address = ('localhost', 6000)     # family is deduced to be 'AF_INET'
 

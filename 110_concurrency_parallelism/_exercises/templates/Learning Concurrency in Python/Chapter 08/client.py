@@ -1,5 +1,5 @@
-from multiprocessing.connection ______ Client
-from array ______ array
+____ m___.con.. ______ C..
+____ ar.. ______ ar..
 
 address = ('localhost', 6000)
 

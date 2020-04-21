@@ -1,14 +1,14 @@
-_____ m.. _______ P..
-_______ m..
-_______ qu..
-_______ ti..
+from multiprocessing import Pool
+import multiprocessing
+import queue
+import time
 
-___ myTask(queue):
+def myTask(queue):
   value = queue.get()
   print("Process {} Popped {} from the shared Queue".format(multiprocessing.current_process().pid, value))
   queue.task_done()
 
-___ main():
+def main():
   m = multiprocessing.Manager()
   sharedQueue = m.Queue()
   sharedQueue.put(2)

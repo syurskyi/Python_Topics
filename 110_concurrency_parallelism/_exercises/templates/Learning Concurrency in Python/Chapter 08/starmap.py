@@ -1,11 +1,11 @@
-from multiprocessing ______ Pool
-______ time
+____ m.. ______ P..
+______ ti..
 
-def myTask(x, y):
+___ myTask(x, y):
   time.sleep(x/2)
   return y*2
 
-def main():
+___ main():
   with Pool(4) as p:
      print(p.starmap(myTask, [(4,3),(2,1)]))
 

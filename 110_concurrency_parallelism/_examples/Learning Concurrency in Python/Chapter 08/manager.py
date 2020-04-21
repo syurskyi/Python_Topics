@@ -1,12 +1,12 @@
-______ m.. __ mp
-______ qu..
+import multiprocessing as mp
+import queue
 
-___ myProcess(ns):
+def myProcess(ns):
   # Update values within our namespace
   print(ns.x)
   ns.x = 2
 
-___ main():
+def main():
   manager = mp.Manager()
   ns = manager.Namespace()
   ns.x = 1

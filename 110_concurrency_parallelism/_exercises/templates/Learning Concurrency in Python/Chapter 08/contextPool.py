@@ -1,9 +1,9 @@
-from multiprocessing ______ Pool
+____ m.. ______ P..
 
-def task(n):
+___ task(n):
     print(n)
 
-def main():
+___ main():
     with Pool(4) as p:
         print(p.map(task, [2,3,4]))
 

@@ -1,9 +1,9 @@
-____ m.. ______ P..
+from multiprocessing import Pool
 
-___ task(n):
+def task(n):
     print(n)
 
-___ main():
+def main():
     with Pool(4) as p:
         print(p.map(task, [2,3,4]))
 

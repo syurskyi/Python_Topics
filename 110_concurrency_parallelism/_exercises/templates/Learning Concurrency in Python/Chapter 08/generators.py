@@ -1,6 +1,6 @@
-______ time
+______ ti..
 
-def my_generator():
+___ my_generator():
   for i in range(5):
     time.sleep(1)
     yield i

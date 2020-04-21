@@ -1,6 +1,6 @@
-____ m.. ______ P..
-______ ti..
-______ math
+from multiprocessing import Pool
+import timeit
+import math
 
 PRIMES = [
     112272535095293,
@@ -19,7 +19,7 @@ PRIMES = [
     115797848077099,
     1099726899285419]
 
-___ is_prime(n):
+def is_prime(n):
     if n % 2 == 0:
         return False
 
@@ -29,7 +29,7 @@ ___ is_prime(n):
             return False
     return True
 
-___ main():
+def main():
   t1 = timeit.default_timer()
   with Pool(4) as p:
     print(p.map(is_prime, PRIMES))

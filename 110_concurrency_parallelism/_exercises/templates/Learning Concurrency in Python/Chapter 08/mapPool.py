@@ -1,11 +1,11 @@
-from multiprocessing ______ Pool
-______ time
+____ m.. ______ P..
+______ ti..
 
-def myTask(n):
+___ myTask(n):
   time.sleep(n+2)
   return n+2
 
-def main():
+___ main():
   with Pool(4) as p:
      for iter in p.imap_unordered(myTask, [1,3,2,1]):
        print(iter)

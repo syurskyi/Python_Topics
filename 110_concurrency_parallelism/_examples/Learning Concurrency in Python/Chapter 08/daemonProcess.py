@@ -1,13 +1,13 @@
-______ m..
-______ ti..
+import multiprocessing
+import time
 
-___ daemonProcess():
+def daemonProcess():
     print("Starting my Daemon Process")
     print("Daemon process started: {}".format(multiprocessing.current_process()))
     time.sleep(3)
     print("Daemon process terminating")
 
-___ main():
+def main():
     print("Main process: {}".format(multiprocessing.current_process()))
     myProcess = multiprocessing.Process(target=daemonProcess)
     myProcess.daemon = True

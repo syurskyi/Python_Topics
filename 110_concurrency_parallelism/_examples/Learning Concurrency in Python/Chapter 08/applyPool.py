@@ -1,16 +1,16 @@
-____ m.. ______ P..
-______ ti..
+from multiprocessing import Pool
+import time
 
 
-___ myTask(n):
+def myTask(n):
   time.sleep(n/2)
   return n*2
 
-___ myCallback(result):
+def myCallback(result):
   print("hi")
   print(result)
 
-___ main():
+def main():
   print("apply_async")
   with Pool(4) as p:
     task1 = p.apply_async(func=myTask, args=(4,))

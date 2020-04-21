@@ -1,5 +1,5 @@
-from multiprocessing.connection ______ Listener
-from array ______ array
+____ m...con.. ______ L..
+____ ar..______ ar..
 
 address = ('localhost', 6000)     # family is deduced to be 'AF_INET'
 

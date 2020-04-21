@@ -1,6 +1,6 @@
-______ ti..
+import time
 
-___ my_generator():
+def my_generator():
   for i in range(5):
     time.sleep(1)
     yield i

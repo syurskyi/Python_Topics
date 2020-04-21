@@ -1,7 +1,7 @@
-______ multiprocessing
-______ time
+______ m..
+______ ti..
 
-def myProcess():
+___ myProcess():
   current_process = multiprocessing.current_process().pid 
   print("Child Process PID: {}".format(current_process.pid))
   time.sleep(20)
