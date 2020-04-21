@@ -1,14 +1,14 @@
-import collections
-
-doubleEndedQueue = collections.deque('123456')
-
-print("Deque: {}".format(doubleEndedQueue))
-
-# Removing Elements from our arra
-rightPop = doubleEndedQueue.pop()
-print(rightPop)
-print("Deque: {}".format(doubleEndedQueue))
-
-leftPop = doubleEndedQueue.popleft()
-print(leftPop)
-print("Deque: {}".format(doubleEndedQueue))
+# ______ col..
+#
+# doubleEndedQueue _ c___.d.. '123456'
+#
+# print("Deque: @".f.. ?
+#
+# # Removing Elements from our arra
+# rightPop _ ?.p..
+# print ?
+# print("Deque: @".f.. ?
+#
+# leftPop _ ?.p_l..
+# print ?
+# print("Deque: @".f.. ?
