@@ -1,22 +1,22 @@
-______ m.. __ mp
-______ qu..
-
-___ myProcess(ns):
-  # Update values within our namespace
-  print(ns.x)
-  ns.x = 2
-
-___ main():
-  manager = mp.Manager()
-  ns = manager.Namespace()
-  ns.x = 1
-
-  print(ns)
-  
-  process = mp.Process(target=myProcess, args=(ns,))
-  process.start()
-  process.join()
-  print(ns)
-
-if __name__ == '__main__':
-  main()
+# ______ m.. __ mp
+# ______ qu..
+#
+# ___ myProcess ns
+#   # Update values within our namespace
+#   print ?.x
+#   ?.x _ 2
+#
+# ___ main
+#   manager _ ?.M..
+#   ns _ ?.N..
+#   ?.x _ 1
+#
+#   print ?
+#
+#   process _ ?.P.. t.._? a.._ ?
+#   ?.s..
+#   ?.j..
+#   print ?
+#
+# __ _________ __ ________
+#   ?
