@@ -1,7 +1,7 @@
-______ t_i.
-____ c__.f.. ______ TPE..
-____ c__.f.. ______ PPE..
-______ ma..
+import timeit
+from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ProcessPoolExecutor
+import math
 
 values = [40000000, 30000000, 20000000, 10000000]
 
@@ -22,7 +22,7 @@ PRIMES = [
     115797848077099,
     1099726899285419]
 
-___ is_prime(n):
+def is_prime(n):
     if n % 2 == 0:
         return False
 
@@ -32,7 +32,7 @@ ___ is_prime(n):
             return False
     return True
     
-___ main():
+def main():
 
   t1 = timeit.default_timer()
   with ProcessPoolExecutor(max_workers=4) as executor:

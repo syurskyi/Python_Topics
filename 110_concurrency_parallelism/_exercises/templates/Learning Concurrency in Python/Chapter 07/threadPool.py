@@ -1,4 +1,4 @@
-from concurrent.futures ______ ThreadPoolExecutor
+____ c__.f.. ______ TPE..
 ______ threading
 ______ random
 

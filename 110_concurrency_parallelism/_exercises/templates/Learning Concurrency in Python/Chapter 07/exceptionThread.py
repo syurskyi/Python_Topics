@@ -1,10 +1,10 @@
-from concurrent.futures ______ ThreadPoolExecutor
-______ concurrent.futures
-______ threading
-______ random
+____ c__.f.. ______ TPE..
+______ c__.f..
+______ th..
+______ ra..
  
  
-def isEven(n):
+___ isEven(n):
     print("Checking if {} is even".format(n))
     if type(n) != int:
         raise Exception("Value entered is not an integer")
@@ -15,7 +15,7 @@ def isEven(n):
         print("{} is odd".format(n))
         return False
 
-def main():
+___ main():
     with ThreadPoolExecutor(max_workers=4) as executor:
         task1 = executor.submit(isEven, (2))
         task2 = executor.submit(isEven, (3))

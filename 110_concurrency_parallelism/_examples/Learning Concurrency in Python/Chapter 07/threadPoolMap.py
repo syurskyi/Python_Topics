@@ -1,6 +1,6 @@
-______ ti..
-____ c__.f.. ______ TPE..
-from concurrent.futures ______ as_completed
+import time
+from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import as_completed
 
 values = [2,3,4,5,6,7,8]
 

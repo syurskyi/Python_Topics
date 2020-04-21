@@ -1,6 +1,6 @@
-______ ti..
-______ random
-____ c__.f.. ______ TPE..
+import time
+import random
+from concurrent.futures import ThreadPoolExecutor
 
 def someTask(n):
   print("Executing Task {}".format(n))

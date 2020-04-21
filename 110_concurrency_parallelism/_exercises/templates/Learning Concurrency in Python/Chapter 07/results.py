@@ -1,6 +1,6 @@
-______ time
+______ ti..
 ______ random
-from concurrent.futures ______ ThreadPoolExecutor
+____ c__.f.. ______ TPE..
 from concurrent.futures ______ as_completed
 
 values = [2,3,4,5,6,7,8]

@@ -1,6 +1,6 @@
-______ time
+______ ti..
 ______ random
-from concurrent.futures ______ ThreadPoolExecutor
+____ c__.f.. ______ TPE..
 
 def someTask(n):
   print("Executing Task {}".format(n))

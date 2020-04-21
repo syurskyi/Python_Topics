@@ -1,16 +1,16 @@
-______ ti..
-____ c__.f.. ______ TPE..
-____ c__.f.. ______ a_c..
+import time
+from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import as_completed
 
 values = [2,3,4,5,6,7,8]
 
-___ multiplyByTwo(n):
+def multiplyByTwo(n):
   return 2 * n
 
-___ done():
+def done():
   print("Task Done")
 
-___ main():
+def main():
   with ThreadPoolExecutor(max_workers=3) as executor:
     results = executor.map(multiplyByTwo, values)
 

@@ -1,6 +1,6 @@
-from concurrent.futures ______ ThreadPoolExecutor
-______ threading
-______ random
+____ c__.f.. ______ TPE..
+______ th..
+______ ra..
 
 def task():
   print("Executing our Task")
