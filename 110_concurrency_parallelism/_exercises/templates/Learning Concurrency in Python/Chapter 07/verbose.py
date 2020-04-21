@@ -1,23 +1,21 @@
-____ c__.f.. ______ TPE..
-______ th..
-______ ra..
-
-def task():
-  print("Executing our Task")
-  result = 0
-  i = 0
-  for i in range(10):
-    result = result + i
-  print("I: {}".format(result))
-  print("Task Executed {}".format(threading.current_thread()))
-  
-
-def main():
-  executor = ThreadPoolExecutor(max_workers=3)
-  for value in values:
-    executor.submit(multiplyByTwo, (value))
-    
-  
-
-if __name__ == '__main__':
-  main()
+# ____ c__.f.. ______ TPE..
+# ______ th..
+# ______ ra..
+#
+# ___ task
+#   print("Executing our Task")
+#   result _ 0
+#   i _ 0
+#   ___ i __ ra.. 10
+#     r.. _ r.. + i
+#   print("I: @".f.. ?
+#   print("Task Executed @".f.. ?.c_t..
+#
+#
+# ___ main
+#   executor _ TPE.. m_w.._3
+#   ___ value __ ?
+#     ?.s.. ? ?
+#
+# __ _________ __ ________
+#   ?
