@@ -1,17 +1,17 @@
-______ lo..
-____ m.. ______ P..
-
-______.basicConfig(filename='myapp.log', level=______.INFO,
-  format='%(processName)-10s %(asctime)%s %(levelname)s %(message)s')
-
-___ myTask(n):
-  ______.info("{} being processed".format(n))
-  ______.info("Final Result: {}".format(n*2))
-  return n*2
-
-___ main():
-  with Pool(4) as p:
-    p.map(myTask, [2,3,4,5,6,])
-
-if __name__ == '__main__':
-  main()
+# ______ lo..
+# ____ m.. ______ P..
+#
+# ______.b.. f.._'myapp.log' l.._ ______.I..
+#   f.._'_|pN..|-10_ _|a.. _ _|l..| _ _|m..|_'
+#
+# ___ myTask n
+#   ______.i.. ("@ being processed".f.. ?
+#   ______.i.. ("Final Result: @".f.. ?*2
+#   r_ ?*2
+#
+# ___ main
+#   w__ P.. 4 __ p
+#     p.m.. ? |2,3,4,5,6,
+#
+# __ _________ __ ________
+#   ?
