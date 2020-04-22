@@ -4,7 +4,7 @@ ______ ai..
 ______ a..
 
 ? ___ get_html(session, url):
-    ? w__ session.get(url, ssl_F..) as res:
+    ? w__ session.g..(url, ssl_F..) as res:
         r_ await res.text()
 
 ? ___ main():

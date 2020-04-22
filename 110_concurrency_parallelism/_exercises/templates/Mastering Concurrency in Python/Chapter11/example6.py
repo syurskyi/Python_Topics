@@ -6,7 +6,7 @@ ______ __
 ____ t_i_ ______ d_t_ as timer
 
 ___ download_html(url):
-    res _ ?.get(url)
+    res _ ?.g..(url)
 
     filename _ 'output/%s.html' % __.path.basename(url)
     w__ o..(filename, 'w') as f:

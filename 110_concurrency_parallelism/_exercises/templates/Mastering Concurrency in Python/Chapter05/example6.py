@@ -13,7 +13,7 @@ c_ MyThread(?.T..):
         self.result _ f'{self.url}: Custom timeout'
 
     ___ run(self):
-        res _ ?.get(self.url)
+        res _ ?.g..(self.url)
         self.result _ f'{self.url}: {res.text}'
 
 ___ process_requests(threads, timeout_5):

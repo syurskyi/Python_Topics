@@ -2,7 +2,7 @@ ______ a..
 ______ ai..
 
 ? ___ get_html(session, url):
-    ? w__ session.get(url) as res:
+    ? w__ session.g..(url) as res:
         r_ await res.text()
 
 ? ___ main():

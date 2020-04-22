@@ -20,7 +20,7 @@
 # start _ t__.t__
 # ___ url __ ?
 #     ? ?
-# print _*Sequential: |t__.t__ - s.. : .2f| seconds')
+# print _*Sequential: |t__.t__ - s.. : .2_| seconds')
 #
 # print()
 #

@@ -8,7 +8,7 @@ ______ __
 ____ t_i_ ______ d_t_ as timer
 
 ? ___ download_html(session, url):
-    ? w__ session.get(url, ssl_F..) as res:
+    ? w__ session.g..(url, ssl_F..) as res:
         filename _ 'output/%s.html' % __.path.basename(url)
 
         ? w__ aiofiles.o..(filename, 'wb') as f:

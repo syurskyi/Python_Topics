@@ -33,6 +33,6 @@
 # ___ ? __ ?
 #     print ?.r..
 #
-# print _*Took |t__.t__ - s.. : .2f| seconds')
+# print _*Took |t__.t__ - s.. : .2_| seconds')
 #
 # print('Done.')
