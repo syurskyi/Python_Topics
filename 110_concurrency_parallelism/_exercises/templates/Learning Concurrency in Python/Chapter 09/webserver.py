@@ -1,28 +1,28 @@
-from aiohttp ______ web
-
-async def handle(request):
-    name = request.match_info.get('name', "Anonymous")
-    text = "Hello, " + name
-    return web.Response(text=text)
-
-async def wshandler(request):
-    ws = web.WebSocketResponse()
-    await ws.prepare(request)
-
-    async for msg in ws:
-        if msg.type == web.MsgType.text:
-            await ws.send_str("Hello, {}".format(msg.data))
-        elif msg.type == web.MsgType.binary:
-            await ws.send_bytes(msg.data)
-        elif msg.type == web.MsgType.close:
-            break
-
-    return ws
-
-
-app = web.Application()
-app.router.add_get('/echo', wshandler)
-app.router.add_get('/', handle)
-app.router.add_get('/{name}', handle)
-
-web.run_app(app)
+# ____ ai.. ______ w..
+#
+# ? ___ handle request
+#     name _ ?.ma_i_.g.. 'name', "Anonymous"
+#     text _ "Hello, " + ?
+#     r_ w__.R.. ?_?
+#
+# ? ___ wshandler request
+#     ws _ ?.WSR..
+#     a.. ?.p.. ?
+#
+#     ? ___ msg __ ?
+#         __ ?.ty.. ___ w__.MT__.t..
+#             a.. ?.send_str("Hello, @".f.. ?.d..
+#         ____ ?.ty.. ___ w__.MT...b..
+#             a.. ?.s_b.. ?.d..
+#         ____ ?.ty.. ___ w__.MT__.c..
+#             b..
+#
+#     r_ ?
+#
+#
+# app _ w__.A..
+# ?.r__.a_g.. '/echo', w..
+# ?.r__.a_g.. '/', h..
+# ?.r__.a_g.. '/{name}', h..
+#
+# w__.r_a. ?
