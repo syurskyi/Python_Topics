@@ -1,19 +1,19 @@
-______ asyncio
-______ time
-
-async def myWork():
-  print("Starting Work")
-  time.sleep(5)
-  print("Ending Work")
-
-def main():
-  loop = asyncio.get_event_loop()
-  loop.run_until_complete(myWork())
-  loop.stop()
-  print("Loop Stopped")
-  loop.close()
-
-  print(loop.is_closed())
-
-if __name__ == '__main__':
-  main()
+# ______ a..
+# ______ ti..
+#
+# ? ___ myWork
+#   print("Starting Work")
+#   t__.s.. 5
+#   print("Ending Work")
+#
+# ___ main
+#   loop _ ?.g_e_l..
+#   ?.r_u_c.. ?
+#   ?.s..
+#   print("Loop Stopped")
+#   ?.c..
+#
+#   print ?.i_c..
+#
+# __ _________ __ ________
+#   ?
