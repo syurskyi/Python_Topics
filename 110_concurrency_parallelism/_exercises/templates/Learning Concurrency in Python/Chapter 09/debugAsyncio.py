@@ -1,20 +1,20 @@
-______ asyncio
-______ logging
-______ time
-
-logging.basicConfig(level=logging.DEBUG)
-
-async def myWorker():
-  logging.info("My Worker Coroutine Hit")
-  time.sleep(1)
-
-async def main():
-  logging.debug("My Main Function Hit")
-  await asyncio.wait([myWorker()])
-
-loop = asyncio.get_event_loop()
-loop.set_debug(True)
-try:
-  loop.run_until_complete(main())
-finally:
-  loop.close()
+# ______ a..
+# ______ l..
+# ______ ti..
+#
+# l__.b.. l.._l__.D..
+#
+# ? ___ myWorker
+#   l__.i.. "My Worker Coroutine Hit")
+#   t__.s.. 1
+#
+# ? ___ main
+#   l__.d.. "My Main Function Hit")
+#   ? ?.w..||?
+#
+# loop _ ?.g_e_l..
+# ?.s_d.. ?
+# ___
+#   ?.r_u_c.. m..
+# f..
+#   l__.c..
