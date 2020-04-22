@@ -1,18 +1,18 @@
-______ asyncio
-
-def got_result(future):
-    print(future.result())
-
-@asyncio.coroutine
-def slow_operation():
-    yield from asyncio.sleep(1)
-    return 'Future is done!'
-
-def main():
-  loop = asyncio.get_event_loop()
-  task = loop.create_task(slow_operation())
-  task.add_done_callback(got_result)
-  loop.run_until_complete(task)
-
-if __name__ == '__main__':
-  main()
+# ______ a..
+#
+# ___ got_result future
+#     print ?.r..
+#
+# ??.?
+# ___ slow_operation
+#     y.. f.. ?.s.. 1
+#     r_ 'Future is done!'
+#
+# ___ main
+#   loop _ ?.g_e_l..
+#   task _ ?.c_t.. s..
+#   ?.a_d_c.. g..
+#   l__.r_u_c.. t..
+#
+# __ _________ __ ________
+#   ?
