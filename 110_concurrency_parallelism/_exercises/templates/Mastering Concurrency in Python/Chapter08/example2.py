@@ -1,16 +1,16 @@
-# ch8/example2.py
-
-______ cv2
-
-im _ cv2.imread('input/ship.jpg')
-gray_im _ cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)
-
-cv2.imshow('Grayscale', gray_im)
-cv2.waitKey(0)
-
-print(gray_im)
-print('Type:', type(gray_im))
-print('Shape:', gray_im.shape)
-cv2.imwrite('output/gray_ship.jpg', gray_im)
-
-print('Done.')
+# # ch8/example2.py
+#
+# ______ ?2
+#
+# im _ ?2.?r..('input/ship.jpg')
+# gray_im _ ?2.cC.. ? ?2.C_B..
+#
+# ?2.?s..('Grayscale' ?
+# ?2.wK..(0)
+#
+# print ?
+# print('Type:' ty.. ?
+# print('Shape:' ?.s..
+# ?2.?w.. 'output/gray_ship.jpg' ?
+#
+# print('Done.')
