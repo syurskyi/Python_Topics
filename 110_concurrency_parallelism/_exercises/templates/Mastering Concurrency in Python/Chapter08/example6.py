@@ -17,7 +17,7 @@ names _ ['ship_%i_%i.jpg' % (i, j) ___ i __ ra..(n) ___ j __ ra..(n)]
 ___ process_threshold(name, thresh_method):
     im _ ?2.?r..(INPUT_PATH + name)
     gray_im _ ?2.cvtColor(im, ?2.C_B..
-    thresh_im _ ?2.aT..(gray_im, 255, thresh_method, ?2.THRESH_BINARY, 11, 2)
+    thresh_im _ ?2.aT..(gray_im, 255, thresh_method, ?2.T_B.., 11, 2)
 
     ?2.?w..(OUTPUT_PATH + name, thresh_im)
 
