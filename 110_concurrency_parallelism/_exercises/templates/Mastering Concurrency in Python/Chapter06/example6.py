@@ -1,29 +1,29 @@
 # ch6/example6.py
 
-import multiprocessing
+______ m..
 
-class MyWorker():
-    def __init__(self, x):
-        self.x = x
+c_ MyWorker():
+    ___  - (self, x):
+        self.x _ x
 
-    def process(self):
-        pname = multiprocessing.current_process().name
+    ___ process(self):
+        pname _ ?.current_process().name
         print('Starting process %s for number %i...' % (pname, self.x))
 
-def work(q):
-    worker = q.get()
+___ work(q):
+    worker _ q.g..
     worker.process()
 
-if __name__ == '__main__':
-    my_queue = multiprocessing.Queue()
+__ _______ __ _______
+    my_queue _ ?.Queue()
 
-    p = multiprocessing.Process(target=work, args=(my_queue,))
-    p.start()
+    p _ ?.P..(target_work, args_(my_queue,))
+    p.s..
 
     my_queue.put(MyWorker(10))
 
     my_queue.close()
     my_queue.join_thread()
-    p.join()
+    p.j..
 
     print('Done.')

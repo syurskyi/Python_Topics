@@ -1,32 +1,32 @@
 # ch6/example3.py
 
-from multiprocessing import Process, current_process
-import time
-import os
+____ m.. ______ Process, current_process
+______ ti..
+______ __
 
 
-def print_info(title):
+___ print_info(title):
     print(title)
 
-    if hasattr(os, 'getppid'):
-        print('Parent process ID: %s.' % str(os.getppid()))
+    __ hasattr(__, 'getppid'):
+        print('Parent process ID: %s.' % st.(__.g_p_
 
-    print('Current Process ID: %s.\n' % str(os.getpid()))
+    print('Current Process ID: %s.\n' % st.(__.g_p_
 
-def f():
+___ f():
     print_info('Function f')
 
-    pname = current_process().name
+    pname _ current_process().name
     print('Starting process %s...' % pname)
-    time.sleep(1)
+    t__.s..(1)
     print('Exiting process %s...' % pname)
 
 
-if __name__ == '__main__':
+__ _______ __ _______
     print_info('Main program')
 
-    p = Process(target=f)
-    p.start()
-    p.join()
+    p _ P..(target_f)
+    p.s..
+    p.j..
 
     print('Done.')

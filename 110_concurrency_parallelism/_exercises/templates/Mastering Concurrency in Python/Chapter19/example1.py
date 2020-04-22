@@ -1,20 +1,20 @@
 # ch19/example1.py
 
-from datetime import datetime
+____ datetime ______ datetime
 
-from apscheduler.schedulers.background import BlockingScheduler
+____ apscheduler.schedulers.background ______ BlockingScheduler
 
-def tick():
+___ tick():
     print(f'Tick! The time is: {datetime.now()}')
 
-if __name__ == '__main__':
-    scheduler = BlockingScheduler()
-    scheduler.add_job(tick, 'interval', seconds=3)
+__ _______ __ _______
+    scheduler _ BlockingScheduler()
+    scheduler.add_job(tick, 'interval', seconds_3)
 
-    try:
-        scheduler.start()
+    ___
+        scheduler.s..
         print('Printing in the main thread.')
-    except KeyboardInterrupt:
-        pass
+    ______ K..
+        p..
 
 scheduler.shutdown()

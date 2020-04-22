@@ -1,30 +1,30 @@
 # ch11/example5.py
 
-import aiohttp
+import ai..
 import aiofiles
-import asyncio
+import a..
 
-import os
-from timeit import default_timer as timer
+______ __
+____ t_i_ ______ d_t_ as timer
 
-async def download_html(session, url):
-    async with session.get(url, ssl=False) as res:
-        filename = 'output/%s.html' % os.path.basename(url)
+? ___ download_html(session, url):
+    ? w__ session.get(url, ssl_F..) as res:
+        filename _ 'output/%s.html' % __.path.basename(url)
 
-        async with aiofiles.open(filename, 'wb') as f:
-            while True:
-                chunk = await res.content.read(1024)
-                if not chunk:
+        ? w__ aiofiles.o..(filename, 'wb') as f:
+            w__ T..:
+                chunk _ await res.content.read(1024)
+                __ not chunk:
                     break
                 await f.write(chunk)
 
-        return await res.release()
+        r_ await res.release()
 
-async def main(url):
-    async with aiohttp.ClientSession() as session:
+? ___ main(url):
+    ? w__ ?.ClientSession() as session:
         await download_html(session, url)
 
-urls = [
+urls _ [
     'http://packtpub.com',
     'http://python.org',
     'http://docs.python.org/3/library/asyncio',
@@ -32,11 +32,11 @@ urls = [
     'http://google.com'
 ]
 
-start = timer()
+start _ timer()
 
-loop = asyncio.get_event_loop()
+loop _ ?.get_event_loop()
 loop.run_until_complete(
-    asyncio.gather(*(main(url) for url in urls))
+    ?.gather(*(main(url) ___ url __ urls))
 )
 
 print('Took %.2f seconds.' % (timer() - start))

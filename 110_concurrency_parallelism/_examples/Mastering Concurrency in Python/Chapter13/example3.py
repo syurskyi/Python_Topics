@@ -7,7 +7,7 @@ def writer():
 
     while True:
         with service:
-            resource.acquire()
+            resource.a..
 
         print(f'Writing being done by {threading.current_thread().name}.')
         text += f'Writing was done by {threading.current_thread().name}. '
@@ -19,10 +19,10 @@ def reader():
 
     while True:
         with service:
-            rcounter.acquire()
+            rcounter.a..
             rcount += 1
             if rcount == 1:
-                resource.acquire()
+                resource.a..
         rcounter.release()
 
         print(f'Reading being done by {threading.current_thread().name}:')

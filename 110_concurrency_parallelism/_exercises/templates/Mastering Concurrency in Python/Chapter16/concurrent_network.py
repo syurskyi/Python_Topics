@@ -1,36 +1,36 @@
 # ch16/concurrent_network.py
 
-from copy import deepcopy
-import time
-from random import choice
+____ copy ______ deepcopy
+______ ti..
+____ random ______ choice
 
-class Network:
-    def __init__(self, primary_key, primary_value):
-        self.primary_key = primary_key
-        self.data = {primary_key: primary_value}
+c_ Network:
+    ___  - (self, primary_key, primary_value):
+        self.primary_key _ primary_key
+        self.data _ {primary_key: primary_value}
 
-    def __str__(self):
-        result = '{\n'
-        for key in self.data:
-            result += f'\t{key}: {self.data[key]};\n'
+    ___ -s(self):
+        result _ '{\n'
+        ___ key __ self.data:
+            result +_ f'\t{key}: {self.data[key]};\n'
 
-        return result + '}'
+        r_ result + '}'
 
-    def add_node(self, key, value):
-        if key not in self.data:
-            self.data[key] = value
-            return True
+    ___ add_node(self, key, value):
+        __ key not __ self.data:
+            self.data[key] _ value
+            r_ T..
 
-        return False
+        r_ F..
 
     # precondition: the object has more than one node left
-    def refresh_primary(self):
+    ___ refresh_primary(self):
         del self.data[self.primary_key]
-        self.primary_key = choice(list(self.data))
+        self.primary_key _ choice(li..(self.data))
 
-    def get_primary_value(self):
-        copy_network = deepcopy(self)
+    ___ get_primary_value(self):
+        copy_network _ deepcopy(self)
 
-        primary_key = copy_network.primary_key
-        time.sleep(1) # creating a delay
-        return copy_network.data[primary_key]
+        primary_key _ copy_network.primary_key
+        t__.s..(1) # creating a delay
+        r_ copy_network.data[primary_key]

@@ -1,32 +1,32 @@
 # ch15/example2.py
 
-import time
-import threading
+______ ti..
+______ th..
 
-COUNT = 50000000
+COUNT _ 50000000
 
-def countdown(n):
-    while n > 0:
-        n -= 1
+___ countdown(n):
+    w__ n > 0:
+        n -_ 1
 
 ###########################################################################
 
-start = time.time()
+start _ t__.t__()
 countdown(COUNT)
 
 print('Sequential program finished.')
-print(f'Took {time.time() - start : .2f} seconds.')
+print(f'Took {t__.t__() - start : .2f} seconds.')
 
 ###########################################################################
 
-thread1 = threading.Thread(target=countdown, args=(COUNT // 2,))
-thread2 = threading.Thread(target=countdown, args=(COUNT // 2,))
+thread1 _ ?.T..(target_countdown, args_(COUNT // 2,))
+thread2 _ th...T..(target_countdown, args_(COUNT // 2,))
 
-start = time.time()
-thread1.start()
-thread2.start()
-thread1.join()
-thread2.join()
+start _ t__.t__()
+thread1.s..
+thread2.s..
+thread1.j..
+thread2.j..
 
 print('Concurrent program finished.')
-print(f'Took {time.time() - start : .2f} seconds.')
+print(f'Took {t__.t__() - start : .2f} seconds.')

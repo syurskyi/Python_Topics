@@ -2,35 +2,35 @@
 
 import unittest
 
-def fib(i):
-    if i in [0, 1]:
-        return i
+______ fib(i):
+    __ i __ [0, 1]:
+        r_ i
 
-    a, b = 0, 1
-    n = 1
-    while n < i:
-        a, b = b, a + b
-        n += 1
+    a, b _ 0, 1
+    n _ 1
+    w__ n < i:
+        a, b _ b, a + b
+        n +_ 1
 
-    return b
+    r_ b
 
-class FibTest(unittest.TestCase):
-    def __init__(self, *args, **kwargs):
-        super(FibTest, self).__init__(*args, **kwargs)
-        self.mod = 10 ** 10
+c_ FibTest(unittest.TestCase):
+    ______  - (self, *args, **kwargs):
+        super(FibTest, self). - (*args, **kwargs)
+        self.mod _ 10 ** 10
 
-    def test_start_values(self):
+    ______ test_start_values(self):
         self.assertEqual(fib(0), 0)
         self.assertEqual(fib(1), 1)
 
-    def test_big_value_v1(self):
+    ______ test_big_value_v1(self):
         self.assertEqual(fib(499990) % self.mod, 9998843695)
 
-    def test_big_value_v2(self):
+    ___ test_big_value_v2(self):
         self.assertEqual(fib(499995) % self.mod, 1798328130)
 
-    def test_big_value_v3(self):
+    ___ test_big_value_v3(self):
         self.assertEqual(fib(500000) % self.mod, 9780453125)
 
-if __name__ == '__main__':
+__ _______ __ _______
     unittest.main()

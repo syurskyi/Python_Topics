@@ -1,30 +1,30 @@
 # ch6/example1.py
 
-from multiprocessing import Process
-import time
+____ m.. ______ Process
+______ ti..
 
 
-def count_down(name, delay):
+___ count_down(name, delay):
     print('Process %s starting...' % name)
 
-    counter = 5
+    counter _ 5
 
-    while counter:
-        time.sleep(delay)
+    w__ counter:
+        t__.s..(delay)
         print('Process %s counting down: %i...' % (name, counter))
-        counter -= 1
+        counter -_ 1
 
     print('Process %s exiting...' % name)
 
 
-if __name__ == '__main__':
-    process1 = Process(target=count_down, args=('A', 0.5))
-    process2 = Process(target=count_down, args=('B', 0.5))
+__ _______ __ _______
+    process1 _ P..(target_count_down, args_('A', 0.5))
+    process2 _ P..(target_count_down, args_('B', 0.5))
 
-    process1.start()
-    process2.start()
+    process1.s..
+    process2.s..
 
-    process1.join()
-    process2.join()
+    process1.j..
+    process2.j..
 
     print('Done.')

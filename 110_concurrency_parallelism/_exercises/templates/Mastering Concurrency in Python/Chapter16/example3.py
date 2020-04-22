@@ -1,40 +1,40 @@
 # ch16/example3.py
 
-import threading
-from concurrent.futures import ThreadPoolExecutor
-import time
-import matplotlib.pyplot as plt
+______ th..
+____ c__.f.. ______ TPE..
+______ ti..
+______ matplotlib.pyplot as plt
 
-class LockedCounter:
-    def __init__(self):
-        self.value = 0
-        self.lock = threading.Lock()
+c_ LockedCounter:
+    ___  - (self):
+        self.value _ 0
+        self.lock _ ?.Lock()
 
-    def increment(self, x):
-        with self.lock:
-            new_value = self.value + x
-            time.sleep(0.001) # creating a delay
-            self.value = new_value
+    ___ increment(self, x):
+        w__ self.lock:
+            new_value _ self.value + x
+            t__.s..(0.001) # creating a delay
+            self.value _ new_value
 
-    def get_value(self):
-        with self.lock:
-            value = self.value
+    ___ get_value(self):
+        w__ self.lock:
+            value _ self.value
 
-        return value
+        r_ value
 
-n_threads = []
-times = []
-for n_workers in range(1, 11):
-    n_threads.append(n_workers)
+n_threads _    # list
+times _    # list
+___ n_workers __ ra..(1, 11):
+    n_threads.ap..(n_workers)
 
-    counter = LockedCounter()
+    counter _ LockedCounter()
 
-    start = time.time()
+    start _ t__.t__()
 
-    with ThreadPoolExecutor(max_workers=n_workers) as executor:
-        executor.map(counter.increment, [1 for i in range(100 * n_workers)])
+    w__ TPE..(max_workers_n_workers) as executor:
+        executor.m..(counter.increment, [1 ___ i __ ra..(100 * n_workers)])
 
-    times.append(time.time() - start)
+    times.ap..(t__.t__() - start)
 
     print(f'Number of threads: {n_workers}')
     print(f'Final counter: {counter.get_value()}.')

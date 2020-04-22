@@ -40,7 +40,7 @@
 # # Путь не существует:
 # s_____.c....  file.txt   C:\book2\file2.txt
 # # ... Фрагмент опущен ...
-# # FileNotFoundError: [Errno 2] No such file or directory:
+# # F.. [Errno 2] No such file or directory:
 # # 'C:\\book2\\file2.txt'
 #
 # s_____.c.  file.txt   file3.txt

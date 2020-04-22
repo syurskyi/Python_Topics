@@ -17,7 +17,7 @@ def reader():
         with rcounter:
             rcount += 1
             if rcount == 1:
-                resource.acquire()
+                resource.a..
 
         print(f'Reading being done by {threading.current_thread().name}:')
         print(text)

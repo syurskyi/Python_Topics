@@ -1,34 +1,34 @@
 # ch18/example5.py
 
-import types
+______ types
 
 @types.coroutine
-def read_data():
-    def inner(n):
-        try:
+___ read_data():
+    ___ inner(n):
+        ___
             print(f'Printing from read_data(): {n}')
-            callback = gen.send(n * 2)
-        except StopIteration:
-            pass
+            callback _ gen.send(n * 2)
+        ______ StopIteration:
+            p..
 
-    data = yield inner
-    return data
+    data _ yield inner
+    r_ data
 
-async def process():
-    try:
-        while True:
-            data = await read_data()
+? ___ process():
+    ___
+        w__ T..:
+            data _ await read_data()
             print(f'Printing from process(): {data}')
-    finally:
+    f..
         print('Processing done.')
 
-gen = process()
-callback = gen.send(None)
+gen _ process()
+callback _ gen.send(N..)
 
-def main():
-    for i in range(5):
+___ main():
+    ___ i __ ra..(5):
         print(f'Printing from main(): {i}')
         callback(i)
 
-if __name__ == '__main__':
+__ _______ __ _______
     main()

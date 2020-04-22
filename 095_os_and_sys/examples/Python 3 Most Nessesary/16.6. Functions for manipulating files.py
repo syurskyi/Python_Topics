@@ -40,7 +40,7 @@ shutil.copyfile(r"file.txt", r"file2.txt")
 # Путь не существует:
 shutil.copyfile(r"file.txt", r"C:\book2\file2.txt")
 # ... Фрагмент опущен ...
-# FileNotFoundError: [Errno 2] No such file or directory:
+# F.. [Errno 2] No such file or directory:
 # 'C:\\book2\\file2.txt'
 
 shutil.copy(r"file.txt", r"file3.txt")

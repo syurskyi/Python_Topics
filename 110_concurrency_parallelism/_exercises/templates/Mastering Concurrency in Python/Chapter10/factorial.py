@@ -1,22 +1,22 @@
-import asyncio
-import time
-from datetime import datetime
+______ a..
+______ ti..
+____ datetime ______ datetime
 
-async def custom_factorial(name, n):
-    f = 1
+? ___ custom_factorial(name, n):
+    f _ 1
 
-    for i in range(2, n + 1):
+    ___ i __ ra..(2, n + 1):
         print(f'Task {name}: Compute factorial({i}).')
-        await asyncio.sleep(1)
-        f *= i
+        await ?.s..(1)
+        f *_ i
 
     print(f'Task {name}: factorial({n}) is {f}.')
 
-async def main():
-    tasks = [custom_factorial('A', 3), custom_factorial('B', 4)]
-    await asyncio.gather(*tasks)
+? ___ main():
+    tasks _ [custom_factorial('A', 3), custom_factorial('B', 4)]
+    await ?.gather(*tasks)
 
-start = time.time()
-asyncio.run(main())
-end = time.time()
+start _ t__.t__()
+?.run(main())
+end _ t__.t__()
 print(f'Total time: {end - start : .4f}.')

@@ -8,7 +8,7 @@ class acquire(object):
 
     def __enter__(self):
         for lock in self.locks:
-            lock.acquire()
+            lock.a..
 
     def __exit__(self, ty, val, tb):
         for lock in reversed(self.locks):

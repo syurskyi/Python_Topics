@@ -1,46 +1,46 @@
 # ch13/example3.py
 
-import threading
+______ th..
 
-def writer():
-    global text
+___ writer():
+    g.. text
 
-    while True:
-        with service:
-            resource.acquire()
+    w__ T..:
+        w__ service:
+            resource.a..
 
-        print(f'Writing being done by {threading.current_thread().name}.')
-        text += f'Writing was done by {threading.current_thread().name}. '
+        print(f'Writing being done by {?.current_thread().name}.')
+        text +_ f'Writing was done by {?.current_thread().name}. '
 
         resource.release()
 
-def reader():
-    global rcount
+___ reader():
+    g.. rcount
 
-    while True:
-        with service:
-            rcounter.acquire()
-            rcount += 1
-            if rcount == 1:
-                resource.acquire()
+    w__ T..:
+        w__ service:
+            rcounter.a..
+            rcount +_ 1
+            __ rcount __ 1:
+                resource.a..
         rcounter.release()
 
-        print(f'Reading being done by {threading.current_thread().name}:')
+        print(f'Reading being done by {?.current_thread().name}:')
         #print(text)
 
-        with rcounter:
-            rcount -= 1
-            if rcount == 0:
+        w__ rcounter:
+            rcount -_ 1
+            __ rcount __ 0:
                 resource.release()
 
-text = 'This is some text. '
-rcount = 0
+text _ 'This is some text. '
+rcount _ 0
 
-rcounter = threading.Lock()
-resource = threading.Lock()
-service = threading.Lock()
+rcounter _ ?.Lock()
+resource _ ?.Lock()
+service _ ?.Lock()
 
-threads = [threading.Thread(target=reader) for i in range(3)] + [threading.Thread(target=writer) for i in range(2)]
+threads _ [?.T..(target_reader) ___ i __ ra..(3)] + [?.T..(target_writer) ___ i __ ra..(2)]
 
-for thread in threads:
-    thread.start()
+___ thread __ threads:
+    thread.s..

@@ -1,35 +1,35 @@
 # ch05/example5.py
 
-import threading
-import requests
-import time
+______ th..
+______ req..
+______ ti..
 
-class MyThread(threading.Thread):
-    def __init__(self, url):
-        threading.Thread.__init__(self)
-        self.url = url
-        self.result = None
+c_ MyThread(?.T..):
+    ___  - (self, url):
+        ?.T... - (self)
+        self.url _ url
+        self.result _ N..
 
-    def run(self):
-        res = requests.get(self.url)
-        self.result = f'{self.url}: {res.text}'
+    ___ run(self):
+        res _ ?.get(self.url)
+        self.result _ f'{self.url}: {res.text}'
 
-urls = [
+urls _ [
     'http://httpstat.us/200',
     'http://httpstat.us/200?sleep=20000',
     'http://httpstat.us/400'
 ]
 
-start = time.time()
+start _ t__.t__()
 
-threads = [MyThread(url) for url in urls]
-for thread in threads:
-    thread.start()
-for thread in threads:
-    thread.join()
-for thread in threads:
+threads _ [MyThread(url) ___ url __ urls]
+___ thread __ threads:
+    thread.s..
+___ thread __ threads:
+    thread.j..
+___ thread __ threads:
     print(thread.result)
 
-print(f'Took {time.time() - start : .2f} seconds')
+print(f'Took {t__.t__() - start : .2f} seconds')
 
 print('Done.')

@@ -1,26 +1,26 @@
 # ch14/example2.py
 
-import threading
-import random
-import time
+______ th..
+______ random
+______ ti..
 
-def update():
-    global counter
+___ update():
+    g.. counter
 
-    with count_lock:
-        current_counter = counter # reading in shared resource
-        time.sleep(random.randint(0, 1)) # simulating heavy calculations
-        counter = current_counter + 1
+    w__ count_lock:
+        current_counter _ counter # reading in shared resource
+        t__.s..(random.randint(0, 1)) # simulating heavy calculations
+        counter _ current_counter + 1
 
-counter = 0
-count_lock = threading.Lock()
+counter _ 0
+count_lock _ ?.Lock()
 
-threads = [threading.Thread(target=update) for i in range(20)]
+threads _ [?.T..(target_update) ___ i __ ra..(20)]
 
-for thread in threads:
-    thread.start()
-for thread in threads:
-    thread.join()
+___ thread __ threads:
+    thread.s..
+___ thread __ threads:
+    thread.j..
 
 print(f'Final counter: {counter}.')
 print('Finished.')

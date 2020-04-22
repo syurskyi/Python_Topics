@@ -1,37 +1,37 @@
 # ch12/example7.py
 
-import threading
-import time
-from timeit import default_timer as timer
+______ th..
+______ ti..
+____ t_i_ ______ d_t_ as timer
 
-def thread_a():
+___ thread_a():
     print('Thread A is starting...')
 
     print('Thread A is performing some calculation...')
-    time.sleep(2)
+    t__.s..(2)
 
     print('Thread A is performing some calculation...')
-    time.sleep(2)
+    t__.s..(2)
 
-def thread_b():
+___ thread_b():
     print('Thread B is starting...')
 
     print('Thread B is performing some calculation...')
-    time.sleep(5)
+    t__.s..(5)
 
     print('Thread B is performing some calculation...')
-    time.sleep(5)
+    t__.s..(5)
 
-thread1 = threading.Thread(target=thread_a)
-thread2 = threading.Thread(target=thread_b)
+thread1 _ ?.T..(target_thread_a)
+thread2 _ ?.T..(target_thread_b)
 
-start = timer()
+start _ timer()
 
-thread1.start()
-thread2.start()
+thread1.s..
+thread2.s..
 
-thread1.join()
-thread2.join()
+thread1.j..
+thread2.j..
 
 print('Took %.2f seconds.' % (timer() - start))
 

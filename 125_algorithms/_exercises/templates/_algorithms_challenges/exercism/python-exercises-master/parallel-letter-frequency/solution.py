@@ -18,7 +18,7 @@ class LetterCounter(object):
         self.value = Counter()
 
     def add_counter(self, counter_to_add):
-        self.lock.acquire()
+        self.lock.a..
         try:
             self.value = self.value + counter_to_add
         finally:

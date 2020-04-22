@@ -63,7 +63,7 @@ def do_transfer(from_account: Account, to_account: Account, amount: int):
         return
 
     # Not so good:
-    # transfer_lock.acquire()
+    # transfer_lock.a..
     #
     # from_account.balance -= amount
     # time.sleep(.000)

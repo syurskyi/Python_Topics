@@ -12,7 +12,7 @@
 #
 #
 # lock _ ?.L..
-# # __enter__ => lock.acquire()
+# # __enter__ => lock.a..
 # # __exit__ => lock.release()
 #
 # task1 = ?.T.. t.._?

@@ -1,47 +1,47 @@
 # ch14/example3.py
 
-import threading
-import random; random.seed(0)
-import time
+______ th..
+______ random; random.seed(0)
+______ ti..
 
-def update(pause_period):
-    global counter
+___ update(pause_period):
+    g.. counter
 
-    with count_lock:
-        current_counter = counter # reading in shared resource
-        time.sleep(pause_period) # simulating heavy calculations
-        counter = current_counter + 1 # updating shared resource
+    w__ count_lock:
+        current_counter _ counter # reading in shared resource
+        t__.s..(pause_period) # simulating heavy calculations
+        counter _ current_counter + 1 # updating shared resource
 
-pause_periods = [random.randint(0, 1) for i in range(20)]
+pause_periods _ [random.randint(0, 1) ___ i __ ra..(20)]
 
 ###########################################################################
 
-counter = 0
-count_lock = threading.Lock()
+counter _ 0
+count_lock _ ?.Lock()
 
-start = time.perf_counter()
-for i in range(20):
+start _ t__.perf_counter()
+___ i __ ra..(20):
     update(pause_periods[i])
 
 print('--Sequential version--')
 print(f'Final counter: {counter}.')
-print(f'Took {time.perf_counter() - start : .2f} seconds.')
+print(f'Took {t__.perf_counter() - start : .2f} seconds.')
 
 ###########################################################################
 
-counter = 0
+counter _ 0
 
-threads = [threading.Thread(target=update, args=(pause_periods[i],)) for i in range(20)]
+threads _ [?.T..(target_update, args_(pause_periods[i],)) ___ i __ ra..(20)]
 
-start = time.perf_counter()
-for thread in threads:
-    thread.start()
-for thread in threads:
-    thread.join()
+start _ t__.perf_counter()
+___ thread __ threads:
+    thread.s..
+___ thread __ threads:
+    thread.j..
 
 print('--Concurrent version--')
 print(f'Final counter: {counter}.')
-print(f'Took {time.perf_counter() - start : .2f} seconds.')
+print(f'Took {t__.perf_counter() - start : .2f} seconds.')
 
 ###########################################################################
 

@@ -10,14 +10,14 @@ shared_resource_lock = threading.Lock()
 def increment_with_lock():
     global shared_resource_with_lock
     for i in range(COUNT):
-        shared_resource_lock.acquire()
+        shared_resource_lock.a..
         shared_resource_with_lock += 1
         shared_resource_lock.release()
 
 def decrement_with_lock():
     global shared_resource_with_lock
     for i in range(COUNT):
-        shared_resource_lock.acquire()
+        shared_resource_lock.a..
         shared_resource_with_lock -= 1
         shared_resource_lock.release()
         

@@ -12,7 +12,7 @@ semaphore = threading.Semaphore(0)
 def consumer():
     print ("consumer is waiting.")
     ##Acquire a semaphore
-    semaphore.acquire()
+    semaphore.a..
     ##The consumer have access to the shared resource
     print ("Consumer notify : consumed item number %s " %item)
 

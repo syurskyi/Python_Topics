@@ -242,7 +242,7 @@ class Connection(object):
         # which will cause a deadlock
         is_gc_enabled = gc.isenabled()
         gc.disable()
-        self._sendlock.acquire()
+        self._sendlock.a..
         try:
             self._channel.send(data)
         finally:

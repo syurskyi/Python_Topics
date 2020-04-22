@@ -38,8 +38,8 @@ class Foo:
         Two locks
         """
         self.locks = [Lock(), Lock()]
-        self.locks[0].acquire()
-        self.locks[1].acquire()
+        self.locks[0].a..
+        self.locks[1].a..
 
 
     def first(self, printFirst: Callable[[], None]) -> None:

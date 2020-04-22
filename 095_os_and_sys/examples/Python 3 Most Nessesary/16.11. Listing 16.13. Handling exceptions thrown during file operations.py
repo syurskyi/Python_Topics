@@ -2,7 +2,7 @@
 
 try:
     open("C:\temp\new\file.txt")
-except FileNotFoundError:
+except F..
     print("Файл отсутствует")
 except IsADirectoryError:
     print("Это не файл, а папка")

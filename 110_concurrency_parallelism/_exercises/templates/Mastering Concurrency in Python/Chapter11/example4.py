@@ -1,16 +1,16 @@
 # ch11/example4.py
 
-import aiohttp
-import asyncio
+______ ai..
+______ a..
 
-async def get_html(session, url):
-    async with session.get(url, ssl=False) as res:
-        return await res.text()
+? ___ get_html(session, url):
+    ? w__ session.get(url, ssl_F..) as res:
+        r_ await res.text()
 
-async def main():
-    async with aiohttp.ClientSession() as session:
-        html = await get_html(session, 'http://packtpub.com')
+? ___ main():
+    ? w__ ?.ClientSession() as session:
+        html _ await get_html(session, 'http://packtpub.com')
         print(html)
 
-loop = asyncio.get_event_loop()
+loop _ ?.get_event_loop()
 loop.run_until_complete(main())

@@ -1,54 +1,54 @@
 # ch13/example2.py
 
-import threading
+______ th..
 
-def writer():
-    global text
-    global wcount
+___ writer():
+    g.. text
+    g.. wcount
 
-    while True:
-        with wcounter:
-            wcount += 1
-            if wcount == 1:
-                read_try.acquire()
+    w__ T..:
+        w__ wcounter:
+            wcount +_ 1
+            __ wcount __ 1:
+                read_try.a..
 
-        with resource:
-            print(f'Writing being done by {threading.current_thread().name}.')
-            text += f'Writing was done by {threading.current_thread().name}. '
+        w__ resource:
+            print(f'Writing being done by {?.current_thread().name}.')
+            text +_ f'Writing was done by {?.current_thread().name}. '
 
-        with wcounter:
-            wcount -= 1
-            if wcount == 0:
+        w__ wcounter:
+            wcount -_ 1
+            __ wcount __ 0:
                 read_try.release()
 
-def reader():
-    global rcount
+___ reader():
+    g.. rcount
 
-    while True:
-        with read_try:
-            with rcounter:
-                rcount += 1
-                if rcount == 1:
-                    resource.acquire()
+    w__ T..:
+        w__ read_try:
+            w__ rcounter:
+                rcount +_ 1
+                __ rcount __ 1:
+                    resource.a..
 
-            print(f'Reading being done by {threading.current_thread().name}:')
+            print(f'Reading being done by {?.current_thread().name}:')
             print(text)
 
-            with rcounter:
-                rcount -= 1
-                if rcount == 0:
+            w__ rcounter:
+                rcount -_ 1
+                __ rcount __ 0:
                     resource.release()
 
-text = 'This is some text. '
-wcount = 0
-rcount = 0
+text _ 'This is some text. '
+wcount _ 0
+rcount _ 0
 
-wcounter = threading.Lock()
-rcounter = threading.Lock()
-resource = threading.Lock()
-read_try = threading.Lock()
+wcounter _ ?.Lock()
+rcounter _ ?.Lock()
+resource _ ?.Lock()
+read_try _ ?.Lock()
 
-threads = [threading.Thread(target=reader) for i in range(3)] + [threading.Thread(target=writer) for i in range(2)]
+threads _ [?.T..(target_reader) ___ i __ ra..(3)] + [?.T..(target_writer) ___ i __ ra..(2)]
 
-for thread in threads:
-    thread.start()
+___ thread __ threads:
+    thread.s..

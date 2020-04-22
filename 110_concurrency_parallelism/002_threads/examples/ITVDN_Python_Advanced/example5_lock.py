@@ -12,7 +12,7 @@ def producer():
 
 
 lock = threading.Lock()
-# __enter__ => lock.acquire()
+# __enter__ => lock.a..
 # __exit__ => lock.release()
 
 task1 = threading.Thread(target=producer)

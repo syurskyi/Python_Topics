@@ -9,7 +9,7 @@ def threading_with(statement):
         logging.debug('%s acquired via with'  %statement)
         
 def threading_not_with(statement):
-    statement.acquire()
+    statement.a..
     try:
         logging.debug('%s acquired directly' %statement )
     finally:

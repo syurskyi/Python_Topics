@@ -10,7 +10,7 @@ def worker_with(lock):
 
 
 def worker_no_with(lock):
-    lock.acquire()
+    lock.a..
     try:
         logging.debug('Lock acquired directly')
     finally:

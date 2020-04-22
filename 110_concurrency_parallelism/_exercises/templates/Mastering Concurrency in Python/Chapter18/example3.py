@@ -1,67 +1,67 @@
 # ch18/example3.py
 
-import socket
-from operator import mul
-from functools import reduce
+______ socket
+____ operator ______ mul
+____ functools ______ reduce
 
 # Main event loop
-def reactor(host, port):
-    sock = socket.socket()
+___ reactor(host, port):
+    sock _ socket.socket()
     sock.bind((host, port))
     sock.listen(5)
     print(f'Server up, running, and waiting for call on {host} {port}')
 
-    try:
-        while True:
-            conn, cli_address = sock.accept()
+    ___
+        w__ T..:
+            conn, cli_address _ sock.accept()
             process_request(conn, cli_address)
 
-    finally:
+    f..
         sock.close()
 
-def process_request(conn, cli_address):
-    file = conn.makefile()
+___ process_request(conn, cli_address):
+    file _ conn.makefile()
 
     print(f'Received connection from {cli_address}')
-    mode = 'sum'
+    mode _ 'sum'
 
-    try:
+    ___
         conn.sendall(b'<welcome: starting in sum mode>\n')
-        while True:
-            line = file.readline()
-            if line:
-                line = line.rstrip()
-                if line == 'quit':
+        w__ T..:
+            line _ file.readline()
+            __ line:
+                line _ line.rstrip()
+                __ line __ 'quit':
                     conn.sendall(b'connection closed\r\n')
-                    return
+                    r_
 
-                if line == 'sum':
+                __ line __ 'sum':
                     conn.sendall(b'<switching to sum mode>\r\n')
-                    mode = 'sum'
-                    continue
-                if line == 'product':
+                    mode _ 'sum'
+                    c..
+                __ line __ 'product':
                     conn.sendall(b'<switching to product mode>\r\n')
-                    mode = 'product'
-                    continue
+                    mode _ 'product'
+                    c..
 
                 print(f'{cli_address} --> {line}')
-                try:
-                    nums = list(map(int, line.split(',')))
-                except ValueError:
+                ___
+                    nums _ li..(m..(int, line.split(',')))
+                ______ ValueError:
                     conn.sendall(
                         b'ERROR. Enter only integers separated by commas\n')
-                    continue
+                    c..
 
-                if mode == 'sum':
+                __ mode __ 'sum':
                     conn.sendall(b'Sum of input numbers: %a\r\n'
-                        % str(sum(nums)))
-                else:
+                        % st.(su.(nums)))
+                ____
                     conn.sendall(b'Product of input numbers: %a\r\n'
-                        % str(reduce(mul, nums, 1)))
-    finally:
+                        % st.(reduce(mul, nums, 1)))
+    f..
         print(f'{cli_address} quit')
         file.close()
         conn.close()
 
-if __name__ == '__main__':
+__ _______ __ _______
     reactor('localhost', 8080)

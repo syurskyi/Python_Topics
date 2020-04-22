@@ -11,7 +11,7 @@ class MyThread(threading.Thread):
 
     def run(self):
         print('Starting thread %s.' % self.name)
-        thread_lock.acquire()
+        thread_lock.a..
         thread_count_down(self.name, self.delay)
         thread_lock.release()
         print('Finished thread %s.' % self.name)

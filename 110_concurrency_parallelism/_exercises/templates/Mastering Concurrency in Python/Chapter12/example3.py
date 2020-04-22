@@ -1,24 +1,24 @@
 # ch12/example3.py
 
-import threading
+______ th..
 
 # The philosopher thread
-def philosopher(left, right):
-    while True:
-        with left:
-             with right:
-                 print(f'Philosopher at {threading.currentThread()} is eating.')
+___ philosopher(left, right):
+    w__ T..:
+        w__ left:
+             w__ right:
+                 print(f'Philosopher at {?.currentThread()} is eating.')
 
 # The chopsticks
-N_FORKS = 5
-forks = [threading.Lock() for n in range(N_FORKS)]
+N_FORKS _ 5
+forks _ [?.Lock() ___ n __ ra..(N_FORKS)]
 
 # Create all of the philosophers
-phils = [threading.Thread(
-    target=philosopher,
-    args=(forks[n], forks[(n + 1) % N_FORKS])
-) for n in range(N_FORKS)]
+phils _ [?.T..(
+    target_philosopher,
+    args_(forks[n], forks[(n + 1) % N_FORKS])
+) ___ n __ ra..(N_FORKS)]
 
 # Run all of the philosophers
-for p in phils:
-    p.start()
+___ p __ phils:
+    p.s..

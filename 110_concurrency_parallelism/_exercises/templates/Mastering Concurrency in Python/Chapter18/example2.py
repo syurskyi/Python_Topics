@@ -1,19 +1,19 @@
 # ch18/example2.py
 
-from operator import mul
-from functools import reduce
+____ operator ______ mul
+____ functools ______ reduce
 
-try:
-    while True:
-        line = input('Please enter a list of integer, separated by commas: ')
-        try:
-            nums = list(map(int, line.split(',')))
-        except ValueError:
+___
+    w__ T..:
+        line _ in..('Please enter a list of integer, separated by commas: ')
+        ___
+            nums _ li..(m..(int, line.split(',')))
+        ______ ValueError:
             print('ERROR. Enter only integers separated by commas')
-            continue
+            c..
 
-        print('Sum of input integers', sum(nums))
+        print('Sum of input integers', su.(nums))
         print('Product of input integers', reduce(mul, nums, 1))
 
-except KeyboardInterrupt:
+______ K..
     print('\nFinished.')

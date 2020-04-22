@@ -15,7 +15,7 @@ class consumer(Thread):
 		global condition
 		global items
 
-		condition.acquire()
+		condition.a..
 		if len(items) == 0:
 			condition.wait()
 			print("Consumer notify : no item to consume")
@@ -40,7 +40,7 @@ class producer(Thread):
 		global condition
 		global items
 
-		condition.acquire()
+		condition.a..
 		if len(items) == 10:
 			condition.wait()
 			print("Producer notify : items producted are "\

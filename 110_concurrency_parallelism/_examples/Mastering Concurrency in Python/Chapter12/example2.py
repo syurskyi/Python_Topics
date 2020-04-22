@@ -7,12 +7,12 @@ def thread_a():
     print('Thread A is starting...')
 
     print('Thread A waiting to acquire lock A.')
-    lock_a.acquire()
+    lock_a.a..
     print('Thread A has acquired lock A, performing some calculation...')
     time.sleep(2)
 
     print('Thread A waiting to acquire lock B.')
-    lock_b.acquire()
+    lock_b.a..
     print('Thread A has acquired lock B, performing some calculation...')
     time.sleep(2)
 
@@ -24,12 +24,12 @@ def thread_b():
     print('Thread B is starting...')
 
     print('Thread B waiting to acquire lock A.')
-    lock_a.acquire()
+    lock_a.a..
     print('Thread B has acquired lock A, performing some calculation...')
     time.sleep(5)
 
     print('Thread B waiting to acquire lock B.')
-    lock_b.acquire()
+    lock_b.a..
     print('Thread B has acquired lock B, performing some calculation...')
     time.sleep(5)
 

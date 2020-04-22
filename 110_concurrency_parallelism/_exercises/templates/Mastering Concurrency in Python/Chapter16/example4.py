@@ -1,88 +1,88 @@
 # ch16/example4.py
 
-import threading
-from concurrent.futures import ThreadPoolExecutor
-import time
-import matplotlib.pyplot as plt
+______ th..
+____ c__.f.. ______ TPE..
+______ ti..
+______ matplotlib.pyplot as plt
 
-class LockedCounter:
-    def __init__(self):
-        self.value = 0
-        self.lock = threading.Lock()
+c_ LockedCounter:
+    ___  - (self):
+        self.value _ 0
+        self.lock _ ?.Lock()
 
-    def increment(self, x):
-        with self.lock:
-            new_value = self.value + x
-            time.sleep(0.001) # creating a delay
-            self.value = new_value
+    ___ increment(self, x):
+        w__ self.lock:
+            new_value _ self.value + x
+            t__.s..(0.001) # creating a delay
+            self.value _ new_value
 
-    def get_value(self):
-        with self.lock:
-            value = self.value
+    ___ get_value(self):
+        w__ self.lock:
+            value _ self.value
 
-        return value
+        r_ value
 
-class ApproximateCounter:
-    def __init__(self, global_counter):
-        self.value = 0
-        self.lock = threading.Lock()
-        self.global_counter = global_counter
-        self.threshold = 10
+c_ ApproximateCounter:
+    ___  - (self, global_counter):
+        self.value _ 0
+        self.lock _ ?.Lock()
+        self.global_counter _ global_counter
+        self.threshold _ 10
 
-    def increment(self, x):
-        with self.lock:
-            new_value = self.value + x
-            time.sleep(0.001) # creating a delay
-            self.value = new_value
+    ___ increment(self, x):
+        w__ self.lock:
+            new_value _ self.value + x
+            t__.s..(0.001) # creating a delay
+            self.value _ new_value
 
-            if self.value >= self.threshold:
+            __ self.value >_ self.threshold:
                 self.global_counter.increment(self.value)
-                self.value = 0
+                self.value _ 0
 
-    def get_value(self):
-        with self.lock:
-            value = self.value
+    ___ get_value(self):
+        w__ self.lock:
+            value _ self.value
 
-        return value
+        r_ value
 
 ###########################################################################
 # Previous single-lock counter
 
-single_counter_n_threads = []
-single_counter_times = []
-for n_workers in range(1, 11):
-    single_counter_n_threads.append(n_workers)
+single_counter_n_threads _    # list
+single_counter_times _    # list
+___ n_workers __ ra..(1, 11):
+    single_counter_n_threads.ap..(n_workers)
 
-    counter = LockedCounter()
+    counter _ LockedCounter()
 
-    start = time.time()
+    start _ t__.t__()
 
-    with ThreadPoolExecutor(max_workers=n_workers) as executor:
-        executor.map(counter.increment, [1 for i in range(100 * n_workers)])
+    w__ TPE..(max_workers_n_workers) as executor:
+        executor.m..(counter.increment, [1 ___ i __ ra..(100 * n_workers)])
 
-    single_counter_times.append(time.time() - start)
+    single_counter_times.ap..(t__.t__() - start)
 
 ###########################################################################
 # New approximate counters
 
-def thread_increment(counter):
+___ thread_increment(counter):
     counter.increment(1)
 
-approx_counter_n_threads = []
-approx_counter_times = []
-for n_workers in range(1, 11):
-    approx_counter_n_threads.append(n_workers)
+approx_counter_n_threads _    # list
+approx_counter_times _    # list
+___ n_workers __ ra..(1, 11):
+    approx_counter_n_threads.ap..(n_workers)
 
-    global_counter = LockedCounter()
+    global_counter _ LockedCounter()
 
-    start = time.time()
+    start _ t__.t__()
 
-    local_counters = [ApproximateCounter(global_counter) for i in range(n_workers)]
-    with ThreadPoolExecutor(max_workers=n_workers) as executor:
-        for i in range(100):
-            executor.map(thread_increment, local_counters)
+    local_counters _ [ApproximateCounter(global_counter) ___ i __ ra..(n_workers)]
+    w__ TPE..(max_workers_n_workers) as executor:
+        ___ i __ ra..(100):
+            executor.m..(thread_increment, local_counters)
 
-    approx_counter_times.append(time.time() - start)
+    approx_counter_times.ap..(t__.t__() - start)
 
     print(f'Number of threads: {n_workers}')
     print(f'Final counter: {global_counter.get_value()}.')
@@ -91,18 +91,18 @@ for n_workers in range(1, 11):
 ###########################################################################
 # Plotting
 
-single_counter_line, = plt.plot(
+single_counter_line, _ plt.plot(
     single_counter_n_threads,
     single_counter_times,
-    c = 'blue',
-    label = 'Single counter'
+    c _ 'blue',
+    label _ 'Single counter'
 )
-approx_counter_line, = plt.plot(
+approx_counter_line, _ plt.plot(
     approx_counter_n_threads,
     approx_counter_times,
-    c = 'red',
-    label = 'Approximate counter'
+    c _ 'red',
+    label _ 'Approximate counter'
 )
-plt.legend(handles=[single_counter_line, approx_counter_line], loc=2)
+plt.legend(handles_[single_counter_line, approx_counter_line], loc_2)
 plt.xlabel('Number of threads'); plt.ylabel('Time in seconds')
 plt.show()

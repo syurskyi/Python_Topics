@@ -1,53 +1,53 @@
 # ch10/example6.py
 
-from math import sqrt
-import asyncio
-from concurrent.futures import ProcessPoolExecutor
-from timeit import default_timer as timer
+____ ma__ ______ sqrt
+______ a..
+____ c__.f.. ______ PPE..
+____ t_i_ ______ d_t_ as timer
 
 #async def is_prime(x):
-def is_prime(x):
+___ is_prime(x):
     print('Processing %i...' % x)
 
-    if x < 2:
+    __ x < 2:
         print('%i is not a prime number.' % x)
 
-    elif x == 2:
+    ____ x __ 2:
         print('%i is a prime number.' % x)
 
-    elif x % 2 == 0:
+    ____ x % 2 __ 0:
         print('%i is not a prime number.' % x)
 
-    else:
-        limit = int(sqrt(x)) + 1
-        for i in range(3, limit, 2):
-            if x % i == 0:
+    ____
+        limit _ int(sqrt(x)) + 1
+        ___ i __ ra..(3, limit, 2):
+            __ x % i __ 0:
                 print('%i is not a prime number.' % x)
-                return
+                r_
 
         print('%i is a prime number.' % x)
 
-async def main():
+? ___ main():
 
-    task1 = loop.run_in_executor(executor, is_prime, 9637529763296797)
-    task2 = loop.run_in_executor(executor, is_prime, 427920331)
-    task3 = loop.run_in_executor(executor, is_prime, 157)
+    task1 _ loop.run_in_executor(executor, is_prime, 9637529763296797)
+    task2 _ loop.run_in_executor(executor, is_prime, 427920331)
+    task3 _ loop.run_in_executor(executor, is_prime, 157)
 
-    await asyncio.gather(*[task1, task2, task3])
+    await ?.gather(*[task1, task2, task3])
 
-if __name__ == '__main__':
-    try:
-        start = timer()
+__ _______ __ _______
+    ___
+        start _ timer()
 
-        executor = ProcessPoolExecutor(max_workers=3)
-        loop = asyncio.get_event_loop()
+        executor _ PPE..(max_workers_3)
+        loop _ ?.get_event_loop()
         loop.run_until_complete(main())
 
         print('Took %.2f seconds.' % (timer() - start))
 
-    except Exception as e:
+    ______ Exception as e:
         print('There was a problem:')
-        print(str(e))
+        print(st.(e))
 
-    finally:
+    f..
         loop.close()

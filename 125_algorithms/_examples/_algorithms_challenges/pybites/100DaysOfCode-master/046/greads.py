@@ -15,7 +15,7 @@ SESSION = 'session'
 
 try:
     session = pickle.load(open(SESSION, "rb"))
-except FileNotFoundError:
+except F..
     session = authorize()
 
 ACCESS_TOKEN = session.access_token

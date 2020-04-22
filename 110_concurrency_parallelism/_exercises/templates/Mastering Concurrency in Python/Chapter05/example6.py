@@ -1,47 +1,47 @@
 # ch05/example6.py
 
-import threading
-import requests
-import time
+______ th..
+______ req..
+______ ti..
 
-UPDATE_INTERVAL = 0.01
+UPDATE_INTERVAL _ 0.01
 
-class MyThread(threading.Thread):
-    def __init__(self, url):
-        threading.Thread.__init__(self)
-        self.url = url
-        self.result = f'{self.url}: Custom timeout'
+c_ MyThread(?.T..):
+    ___  - (self, url):
+        ?.T... - (self)
+        self.url _ url
+        self.result _ f'{self.url}: Custom timeout'
 
-    def run(self):
-        res = requests.get(self.url)
-        self.result = f'{self.url}: {res.text}'
+    ___ run(self):
+        res _ ?.get(self.url)
+        self.result _ f'{self.url}: {res.text}'
 
-def process_requests(threads, timeout=5):
-    def alive_count():
-        alive = [1 if thread.isAlive() else 0 for thread in threads]
-        return sum(alive)
+___ process_requests(threads, timeout_5):
+    ___ alive_count():
+        alive _ [1 __ thread.isAlive() else 0 ___ thread __ threads]
+        r_ su.(alive)
 
-    while alive_count() > 0 and timeout > 0:
-        timeout -= UPDATE_INTERVAL
-        time.sleep(UPDATE_INTERVAL)
-    for thread in threads:
+    w__ alive_count() > 0 and timeout > 0:
+        timeout -_ UPDATE_INTERVAL
+        t__.s..(UPDATE_INTERVAL)
+    ___ thread __ threads:
         print(thread.result)
 
-urls = [
+urls _ [
     'http://httpstat.us/200',
     'http://httpstat.us/200?sleep=4000',
     'http://httpstat.us/200?sleep=20000',
     'http://httpstat.us/400'
 ]
 
-start = time.time()
+start _ t__.t__()
 
-threads = [MyThread(url) for url in urls]
-for thread in threads:
-    thread.setDaemon(True)
-    thread.start()
+threads _ [MyThread(url) ___ url __ urls]
+___ thread __ threads:
+    thread.setDaemon(T..)
+    thread.s..
 process_requests(threads)
 
-print(f'Took {time.time() - start : .2f} seconds')
+print(f'Took {t__.t__() - start : .2f} seconds')
 
 print('Done.')

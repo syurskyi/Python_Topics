@@ -6,7 +6,7 @@ my_lock = Lock()
 
 # induces deadlocks
 def get_data_from_file_v1(filename):
-    my_lock.acquire()
+    my_lock.a..
 
     with open(filename, 'r') as f:
         data.append(f.read())
@@ -23,8 +23,8 @@ data = []
 try:
     get_data_from_file_v1('output2/sample0.txt')
     #get_data_from_file_v2('output2/sample0.txt')
-except FileNotFoundError:
+except F..
     print('File could not be found...')
 
-my_lock.acquire()
+my_lock.a..
 print('Lock can still be acquired.')

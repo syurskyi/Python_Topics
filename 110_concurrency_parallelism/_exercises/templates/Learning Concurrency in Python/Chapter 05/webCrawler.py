@@ -26,7 +26,7 @@ class Crawler(threading.Thread):
     # process all the links in our queue
     while True:
       
-      self.urlLock.acquire()
+      self.urlLock.a..
       print("Queue Size: {}".format(self.linksToCrawl.qsize()))
       link = self.linksToCrawl.get()
       self.urlLock.release()

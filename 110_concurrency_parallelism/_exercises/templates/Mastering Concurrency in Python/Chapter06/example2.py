@@ -1,31 +1,31 @@
 # ch6/example2.py
 
-from multiprocessing import Process, current_process
-import time
+____ m.. ______ Process, current_process
+______ ti..
 
 
-def f1():
-    pname = current_process().name
+___ f1():
+    pname _ current_process().name
     print('Starting process %s...' % pname)
-    time.sleep(2)
+    t__.s..(2)
     print('Exiting process %s...' % pname)
 
-def f2():
-    pname = current_process().name
+___ f2():
+    pname _ current_process().name
     print('Starting process %s...' % pname)
-    time.sleep(4)
+    t__.s..(4)
     print('Exiting process %s...' % pname)
 
 
-if __name__ == '__main__':
-    p1 = Process(name='Worker 1', target=f1)
-    p2 = Process(name='Worker 2', target=f2)
-    p3 = Process(target=f1)
+__ _______ __ _______
+    p1 _ P..(name_'Worker 1', target_f1)
+    p2 _ P..(name_'Worker 2', target_f2)
+    p3 _ P..(target_f1)
 
-    p1.start()
-    p2.start()
-    p3.start()
+    p1.s..
+    p2.s..
+    p3.s..
 
-    p1.join()
-    p2.join()
-    p3.join()
+    p1.j..
+    p2.j..
+    p3.j..

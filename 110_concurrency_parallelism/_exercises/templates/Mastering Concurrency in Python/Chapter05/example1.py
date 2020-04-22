@@ -1,15 +1,15 @@
 # ch05/example1.py
 
-import requests
+______ req..
 
-url = 'http://www.google.com'
+url _ 'http://www.google.com'
 
-res = requests.get(url)
+res _ ?.get(url)
 
 print(res.status_code)
 print(res.headers)
 
-with open('google.html', 'w') as f:
+w__ o..('google.html', 'w') as f:
     f.write(res.text)
 
 print('Done.')

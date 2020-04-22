@@ -6,15 +6,15 @@ class Box(object):
     def __init__(self):
         self.total_items = 0
     def execute(self,n):
-        Box.lock.acquire()
+        Box.lock.a..
         self.total_items += n
         Box.lock.release()
     def add(self):
-        Box.lock.acquire()
+        Box.lock.a..
         self.execute(1)
         Box.lock.release()
     def remove(self):
-        Box.lock.acquire()
+        Box.lock.a..
         self.execute(-1)
         Box.lock.release()
 

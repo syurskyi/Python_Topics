@@ -1,25 +1,25 @@
 # ch17/example2.py
 
-import sys; sys.setswitchinterval(.000001)
-import threading
+______ ___; ___.setswitchinterval(.000001)
+______ th..
 
-def foo():
-    global my_list
-    my_list.append(1)
+___ foo():
+    g.. my_list
+    my_list.ap..(1)
 
-my_list = []
+my_list _    # list
 
-threads = []
-for i in range(1000):
-    thread = threading.Thread(target=foo)
-    threads.append(thread)
+threads _    # list
+___ i __ ra..(1000):
+    thread _ ?.T..(target_foo)
+    threads.ap..(thread)
 
-for thread in threads:
-    thread.start()
+___ thread __ threads:
+    thread.s..
 
-for thread in threads:
-    thread.join()
+___ thread __ threads:
+    thread.j..
 
-print(f'Final list length: {len(my_list)}.')
+print(f'Final list length: {le.(my_list)}.')
 
 print('Finished.')

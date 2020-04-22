@@ -1,27 +1,27 @@
 # ch6/example4.py
 
-from multiprocessing import Process, current_process
-import time
+____ m.. ______ Process, current_process
+______ ti..
 
 
-def f1():
-    p = current_process()
+___ f1():
+    p _ current_process()
     print('Starting process %s, ID %s...' % (p.name, p.pid))
-    time.sleep(4)
+    t__.s..(4)
     print('Exiting process %s, ID %s...' % (p.name, p.pid))
 
-def f2():
-    p = current_process()
+___ f2():
+    p _ current_process()
     print('Starting process %s, ID %s...' % (p.name, p.pid))
-    time.sleep(2)
+    t__.s..(2)
     print('Exiting process %s, ID %s...' % (p.name, p.pid))
 
 
-if __name__ == '__main__':
-    p1 = Process(name='Worker 1', target=f1)
-    p1.daemon = True
-    p2 = Process(name='Worker 2', target=f2)
+__ _______ __ _______
+    p1 _ P..(name_'Worker 1', target_f1)
+    p1.daemon _ T..
+    p2 _ P..(name_'Worker 2', target_f2)
 
-    p1.start()
-    time.sleep(1)
-    p2.start()
+    p1.s..
+    t__.s..(1)
+    p2.s..

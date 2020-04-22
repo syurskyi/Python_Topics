@@ -1,18 +1,18 @@
 # ch11/example6.py
 
-import requests
-import os
+______ req..
+______ __
 
-from timeit import default_timer as timer
+____ t_i_ ______ d_t_ as timer
 
-def download_html(url):
-    res = requests.get(url)
+___ download_html(url):
+    res _ ?.get(url)
 
-    filename = 'output/%s.html' % os.path.basename(url)
-    with open(filename, 'w') as f:
+    filename _ 'output/%s.html' % __.path.basename(url)
+    w__ o..(filename, 'w') as f:
         f.write(res.text)
 
-urls = [
+urls _ [
     'http://packtpub.com',
     'http://python.org',
     'http://docs.python.org/3/library/asyncio',
@@ -20,9 +20,9 @@ urls = [
     'http://google.com'
 ]
 
-start = timer()
+start _ timer()
 
-for url in urls:
+___ url __ urls:
     download_html(url)
 
 print('Took %.2f seconds.' % (timer() - start))

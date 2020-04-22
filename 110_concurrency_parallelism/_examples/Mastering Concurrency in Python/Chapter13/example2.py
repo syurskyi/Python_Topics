@@ -10,7 +10,7 @@ def writer():
         with wcounter:
             wcount += 1
             if wcount == 1:
-                read_try.acquire()
+                read_try.a..
 
         with resource:
             print(f'Writing being done by {threading.current_thread().name}.')
@@ -29,7 +29,7 @@ def reader():
             with rcounter:
                 rcount += 1
                 if rcount == 1:
-                    resource.acquire()
+                    resource.a..
 
             print(f'Reading being done by {threading.current_thread().name}:')
             print(text)

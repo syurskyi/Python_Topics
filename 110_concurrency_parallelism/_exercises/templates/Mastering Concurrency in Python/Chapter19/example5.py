@@ -2,19 +2,19 @@
 
 import unittest
 
-def fib(i):
-    if i in [0, 1]:
-        return i
+___ fib(i):
+    __ i __ [0, 1]:
+        r_ i
 
-    return fib(i - 1) + fib(i - 2)
+    r_ fib(i - 1) + fib(i - 2)
 
-class FibTest(unittest.TestCase):
-    def test_start_values(self):
+c_ FibTest(unittest.TestCase):
+    ___ test_start_values(self):
         self.assertEqual(fib(0), 0)
         self.assertEqual(fib(1), 1)
 
-    def test_other_values(self):
+    ___ test_other_values(self):
         self.assertEqual(fib(10), 55)
 
-if __name__ == '__main__':
+__ _______ __ _______
     unittest.main()

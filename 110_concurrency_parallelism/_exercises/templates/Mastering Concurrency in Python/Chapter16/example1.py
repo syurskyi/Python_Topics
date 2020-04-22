@@ -1,23 +1,23 @@
 # ch16/example1.py
 
-from concurrent.futures import ThreadPoolExecutor
-import time
+____ c__.f.. ______ TPE..
+______ ti..
 
-class LocklessCounter:
-    def __init__(self):
-        self.value = 0
+c_ LocklessCounter:
+    ___  - (self):
+        self.value _ 0
 
-    def increment(self, x):
-        new_value = self.value + x
-        time.sleep(0.001) # creating a delay
-        self.value = new_value
+    ___ increment(self, x):
+        new_value _ self.value + x
+        t__.s..(0.001) # creating a delay
+        self.value _ new_value
 
-    def get_value(self):
-        return self.value
+    ___ get_value(self):
+        r_ self.value
 
-counter = LocklessCounter()
-with ThreadPoolExecutor(max_workers=3) as executor:
-    executor.map(counter.increment, [1 for i in range(300)])
+counter _ LocklessCounter()
+w__ TPE..(max_workers_3) as executor:
+    executor.m..(counter.increment, [1 ___ i __ ra..(300)])
 
 print(f'Final counter: {counter.get_value()}.')
 print('Finished.')

@@ -1,29 +1,29 @@
 # ch7/example1.py
 
-import multiprocessing
+______ m..
 
 
-class ReductionConsumer(multiprocessing.Process):
+c_ ReductionConsumer(?.P..):
 
-    def __init__(self, task_queue, result_queue):
-        multiprocessing.Process.__init__(self)
-        self.task_queue = task_queue
-        self.result_queue = result_queue
+    ___  - (self, task_queue, result_queue):
+        ?.P... - (self)
+        self.task_queue _ task_queue
+        self.result_queue _ result_queue
 
-    def run(self):
-        pname = self.name
+    ___ run(self):
+        pname _ self.name
         print('Using process %s...' % pname)
 
-        while True:
-            num1 = self.task_queue.get()
-            if num1 is None:
+        w__ T..:
+            num1 _ self.task_queue.g..
+            __ num1 is N..:
                 print('Exiting process %s.' % pname)
                 self.task_queue.task_done()
                 break
 
             self.task_queue.task_done()
-            num2 = self.task_queue.get()
-            if num2 is None:
+            num2 _ self.task_queue.g..
+            __ num2 is N..:
                 print('Reaching the end with process %s and number %i.' % (pname, num1))
                 self.task_queue.task_done()
                 self.result_queue.put(num1)
@@ -34,35 +34,35 @@ class ReductionConsumer(multiprocessing.Process):
             self.result_queue.put(num1 + num2)
 
 
-def reduce_sum(array):
-    tasks = multiprocessing.JoinableQueue()
-    results = multiprocessing.JoinableQueue()
-    result_size = len(array)
+___ reduce_sum(array):
+    tasks _ ?.JoinableQueue()
+    results _ ?.JoinableQueue()
+    result_size _ le.(array)
 
-    n_consumers = multiprocessing.cpu_count()
+    n_consumers _ ?.cpu_count()
 
-    for item in array:
+    ___ item __ array:
         results.put(item)
 
-    while result_size > 1:
-        tasks = results
-        results = multiprocessing.JoinableQueue()
+    w__ result_size > 1:
+        tasks _ results
+        results _ ?.JoinableQueue()
 
-        consumers = [ReductionConsumer(tasks, results) for i in range(n_consumers)]
-        for consumer in consumers:
-            consumer.start()
+        consumers _ [ReductionConsumer(tasks, results) ___ i __ ra..(n_consumers)]
+        ___ consumer __ consumers:
+            consumer.s..
 
-        for i in range(n_consumers):
-            tasks.put(None)
+        ___ i __ ra..(n_consumers):
+            tasks.put(N..)
 
-        tasks.join()
-        result_size = result_size // 2 + (result_size % 2)
+        tasks.j..
+        result_size _ result_size // 2 + (result_size % 2)
         #print('-' * 40)
 
-    return results.get()
+    r_ results.g..
 
 
-my_array = [i for i in range(20)]
+my_array _ [i ___ i __ ra..(20)]
 
-result = reduce_sum(my_array)
+result _ reduce_sum(my_array)
 print('Final result: %i.' % result)

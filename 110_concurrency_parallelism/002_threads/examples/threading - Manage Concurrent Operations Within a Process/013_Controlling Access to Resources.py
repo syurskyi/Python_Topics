@@ -14,7 +14,7 @@ class Counter:
 
     def increment(self):
         logging.debug('Waiting for lock')
-        self.lock.acquire()
+        self.lock.a..
         try:
             logging.debug('Acquired lock')
             self.value = self.value + 1

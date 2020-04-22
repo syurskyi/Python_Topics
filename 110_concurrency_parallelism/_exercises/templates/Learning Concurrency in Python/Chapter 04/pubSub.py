@@ -12,7 +12,7 @@ c_ Publisher(threading.Thread):
   ___ run(self):
     while True:
       integer = random.randint(0,1000)
-      self.condition.acquire()
+      self.condition.a..
       print("Condition Acquired by Publisher: {}".format(self.name))
       self.integers.append(integer)
       print("Publisher {} appending to array: {}".format(self.name, integer))
@@ -30,7 +30,7 @@ c_ Subscriber(threading.Thread):
 
   ___ run(self):
     while True:
-      self.condition.acquire()
+      self.condition.a..
       print("Condition Acquired by Consumer: {}".format(self.name))
       while True:
         if self.integers:

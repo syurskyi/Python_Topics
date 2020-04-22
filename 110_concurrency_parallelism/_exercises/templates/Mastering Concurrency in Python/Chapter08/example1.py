@@ -1,8 +1,8 @@
 # ch8/example1.py
 
-import cv2
+______ cv2
 
-im = cv2.imread('input/ship.jpg')
+im _ cv2.imread('input/ship.jpg')
 cv2.imshow('Test', im)
 cv2.waitKey(0) # press any key to move forward here
 

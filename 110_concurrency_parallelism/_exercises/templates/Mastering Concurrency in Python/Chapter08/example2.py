@@ -1,9 +1,9 @@
 # ch8/example2.py
 
-import cv2
+______ cv2
 
-im = cv2.imread('input/ship.jpg')
-gray_im = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)
+im _ cv2.imread('input/ship.jpg')
+gray_im _ cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)
 
 cv2.imshow('Grayscale', gray_im)
 cv2.waitKey(0)

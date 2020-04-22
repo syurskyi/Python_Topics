@@ -1,14 +1,14 @@
 # ch05/example3.py
 
-import threading
-import requests
-import time
+______ th..
+______ req..
+______ ti..
 
-def ping(url):
-    res = requests.get(url)
+___ ping(url
+    res _ ?.get(url)
     print(f'{url}: {res.text}')
 
-urls = [
+urls _ [
     'http://httpstat.us/200',
     'http://httpstat.us/400',
     'http://httpstat.us/404',
@@ -17,20 +17,20 @@ urls = [
     'http://httpstat.us/524'
 ]
 
-start = time.time()
-for url in urls:
+start _ t__.t__()
+___ url __ urls:
     ping(url)
-print(f'Sequential: {time.time() - start : .2f} seconds')
+print(f'Sequential: {t__.t__() - start : .2f} seconds')
 
 print()
 
-start = time.time()
-threads = []
-for url in urls:
-    thread = threading.Thread(target=ping, args=(url,))
-    threads.append(thread)
-    thread.start()
-for thread in threads:
-    thread.join()
+start _ t__.t__()
+threads _    # list
+___ url __ urls:
+    thread _ ?.T..(target_ping, args_(url,))
+    threads.ap..(thread)
+    thread.s..
+___ thread __ threads:
+    thread.j..
 
-print(f'Threading: {time.time() - start : .2f} seconds')
+print(f'Threading: {t__.t__() - start : .2f} seconds')

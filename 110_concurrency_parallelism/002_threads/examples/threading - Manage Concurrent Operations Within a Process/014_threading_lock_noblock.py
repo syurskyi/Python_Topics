@@ -8,7 +8,7 @@ import time
 def lock_holder(lock):
     logging.debug('Starting')
     while True:
-        lock.acquire()
+        lock.a..
         try:
             logging.debug('Holding')
             time.sleep(0.5)

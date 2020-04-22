@@ -1,45 +1,45 @@
 # ch9/example1.py
 
-from math import sqrt
-import asyncio
+____ ma__ ______ sqrt
+______ a..
 
-async def is_prime(x):
+? ___ is_prime(x):
     print('Processing %i...' % x)
 
-    if x < 2:
+    __ x < 2:
         print('%i is not a prime number.' % x)
 
-    elif x == 2:
+    ____ x __ 2:
         print('%i is a prime number.' % x)
 
-    elif x % 2 == 0:
+    ____ x % 2 __ 0:
         print('%i is not a prime number.' % x)
 
-    else:
-        limit = int(sqrt(x)) + 1
-        for i in range(3, limit, 2):
-            if x % i == 0:
+    ____
+        limit _ int(sqrt(x)) + 1
+        ___ i __ ra..(3, limit, 2):
+            __ x % i __ 0:
                 print('%i is not a prime number.' % x)
-                return
-            elif i % 100000 == 1:
-                await asyncio.sleep(0)
+                r_
+            ____ i % 100000 __ 1:
+                await ?.s..(0)
 
         print('%i is a prime number.' % x)
 
-async def main():
+? ___ main():
 
-    task1 = loop.create_task(is_prime(9637529763296797))
-    task2 = loop.create_task(is_prime(427920331))
-    task3 = loop.create_task(is_prime(157))
+    task1 _ loop.create_task(is_prime(9637529763296797))
+    task2 _ loop.create_task(is_prime(427920331))
+    task3 _ loop.create_task(is_prime(157))
 
-    await asyncio.wait([task1, task2, task3])
+    await ?.wait([task1, task2, task3])
 
-if __name__ == '__main__':
-    try:
-        loop = asyncio.get_event_loop()
+__ _______ __ _______
+    ___
+        loop _ ?.get_event_loop()
         loop.run_until_complete(main())
-    except Exception as e:
+    ______ Exception as e:
         print('There was a problem:')
-        print(str(e))
-    finally:
+        print(st.(e))
+    f..
         loop.close()

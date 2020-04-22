@@ -1,24 +1,24 @@
 # ch14/example1.py
 
-import threading
-import random
-import time
+______ th..
+______ random
+______ ti..
 
-def update():
-    global counter
+___ update():
+    g.. counter
 
-    current_counter = counter # reading in shared resource
-    time.sleep(random.randint(0, 1)) # simulating heavy calculations
-    counter = current_counter + 1 # updating shared resource
+    current_counter _ counter # reading in shared resource
+    t__.s..(random.randint(0, 1)) # simulating heavy calculations
+    counter _ current_counter + 1 # updating shared resource
 
-counter = 0
+counter _ 0
 
-threads = [threading.Thread(target=update) for i in range(20)]
+threads _ [?.T..(target_update) ___ i __ ra..(20)]
 
-for thread in threads:
-    thread.start()
-for thread in threads:
-    thread.join()
+___ thread __ threads:
+    thread.s..
+___ thread __ threads:
+    thread.j..
 
 print(f'Final counter: {counter}.')
 print('Finished.')

@@ -18,7 +18,7 @@ class Cache:
     def __enter__(self):
         try:
             self.cache = pickle.load(open(CACHE, "rb"))
-        except FileNotFoundError:
+        except F..
             self.cache = defaultdict(list)
         return self.cache
 

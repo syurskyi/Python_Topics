@@ -1,23 +1,23 @@
 # ch19/example2.py
 
-from datetime import datetime
-import time
+____ datetime ______ datetime
+______ ti..
 
-from apscheduler.schedulers.background import BackgroundScheduler
+____ apscheduler.schedulers.background ______ BackgroundScheduler
 
-def tick():
+___ tick():
     print(f'Tick! The time is: {datetime.now()}')
 
-if __name__ == '__main__':
-    scheduler = BackgroundScheduler()
-    scheduler.add_job(tick, 'interval', seconds=3)
-    scheduler.start()
+__ _______ __ _______
+    scheduler _ BackgroundScheduler()
+    scheduler.add_job(tick, 'interval', seconds_3)
+    scheduler.s..
 
-    try:
-        while True:
-            time.sleep(2)
+    ___
+        w__ T..:
+            t__.s..(2)
             print('Printing in the main thread.')
-    except KeyboardInterrupt:
-        pass
+    ______ K..
+        p..
 
 scheduler.shutdown()

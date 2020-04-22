@@ -1,29 +1,29 @@
 # ch16/example2.py
 
-import threading
-from concurrent.futures import ThreadPoolExecutor
-import time
+______ th..
+____ c__.f.. ______ TPE..
+______ ti..
 
-class LockedCounter:
-    def __init__(self):
-        self.value = 0
-        self.lock = threading.Lock()
+c_ LockedCounter:
+    ___  - (self):
+        self.value _ 0
+        self.lock _ ?.Lock()
 
-    def increment(self, x):
-        with self.lock:
-            new_value = self.value + x
-            time.sleep(0.001) # creating a delay
-            self.value = new_value
+    ___ increment(self, x):
+        w__ self.lock:
+            new_value _ self.value + x
+            t__.s..(0.001) # creating a delay
+            self.value _ new_value
 
-    def get_value(self):
-        with self.lock:
-            value = self.value
+    ___ get_value(self):
+        w__ self.lock:
+            value _ self.value
 
-        return value
+        r_ value
 
-counter = LockedCounter()
-with ThreadPoolExecutor(max_workers=3) as executor:
-    executor.map(counter.increment, [1 for i in range(300)])
+counter _ LockedCounter()
+w__ TPE..(max_workers_3) as executor:
+    executor.m..(counter.increment, [1 ___ i __ ra..(300)])
 
 print(f'Final counter: {counter.get_value()}.')
 print('Finished.')

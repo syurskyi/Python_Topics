@@ -1,56 +1,56 @@
 # ch18/example6.py
 
-import socket, select, types
-from collections import namedtuple
-from operator import mul
-from functools import reduce
+______ socket, select, types
+____ collections ______ namedtuple
+____ operator ______ mul
+____ functools ______ reduce
 
 ###########################################################################
 # Reactor
 
-Session = namedtuple('Session', ['address', 'file'])
+Session _ namedtuple('Session', ['address', 'file'])
 
-sessions = {}           # { csocket : Session(address, file)}
-callback = {}           # { csocket : callback(client, line) }
-generators = {}         # { csocket : inline callback generator }
+sessions _ {}           # { csocket : Session(address, file)}
+callback _ {}           # { csocket : callback(client, line) }
+generators _ {}         # { csocket : inline callback generator }
 
 # Main event loop
-def reactor(host, port):
-    sock = socket.socket()
+___ reactor(host, port):
+    sock _ socket.socket()
     sock.bind((host, port))
     sock.listen(5)
     sock.setblocking(0) # Make asynchronous
 
-    sessions[sock] = None
+    sessions[sock] _ N..
     print(f'Server up, running, and waiting for call on {host} {port}')
 
-    try:
-        while True:
+    ___
+        w__ T..:
             # Serve existing clients only if they already have data ready
-            ready_to_read, _, _ = select.select(sessions, [], [], 0.1)
-            for conn in ready_to_read:
-                if conn is sock:
-                    conn, cli_address = sock.accept()
+            ready_to_read, _, _ _ select.select(sessions,    # list, [], 0.1)
+            ___ conn __ ready_to_read:
+                __ conn is sock:
+                    conn, cli_address _ sock.accept()
                     connect(conn, cli_address)
-                    continue
+                    c..
 
-                line = sessions[conn].file.readline()
-                if line:
+                line _ sessions[conn].file.readline()
+                __ line:
                     callback[conn](conn, line.rstrip())
-                else:
+                ____
                     disconnect(conn)
-    finally:
+    f..
         sock.close()
 
-def connect(conn, cli_address):
-    sessions[conn] = Session(cli_address, conn.makefile())
+___ connect(conn, cli_address):
+    sessions[conn] _ Session(cli_address, conn.makefile())
 
-    gen = process_request(conn)
-    generators[conn] = gen
-    callback[conn] = gen.send(None) # Start the generator
+    gen _ process_request(conn)
+    generators[conn] _ gen
+    callback[conn] _ gen.send(N..) # Start the generator
 
-def disconnect(conn):
-    gen = generators.pop(conn)
+___ disconnect(conn):
+    gen _ generators.pop(conn)
     gen.close()
     sessions[conn].file.close()
     conn.close()
@@ -59,56 +59,56 @@ def disconnect(conn):
     del callback[conn]
 
 @types.coroutine
-def readline(conn):
-    def inner(conn, line):
-        gen = generators[conn]
-        try:
-            callback[conn] = gen.send(line) # Continue the generator
-        except StopIteration:
+___ readline(conn):
+    ___ inner(conn, line):
+        gen _ generators[conn]
+        ___
+            callback[conn] _ gen.send(line) # Continue the generator
+        ______ StopIteration:
             disconnect(conn)
 
-    line = yield inner
-    return line
+    line _ yield inner
+    r_ line
 
 ###########################################################################
 # User's Business Logic
 
-async def process_request(conn):
+? ___ process_request(conn):
     print(f'Received connection from {sessions[conn].address}')
-    mode = 'sum'
+    mode _ 'sum'
 
-    try:
+    ___
         conn.sendall(b'<welcome: starting in sum mode>\n')
-        while True:
-            line = await readline(conn)
-            if line == 'quit':
+        w__ T..:
+            line _ await readline(conn)
+            __ line __ 'quit':
                 conn.sendall(b'connection closed\r\n')
-                return
-            if line == 'sum':
+                r_
+            __ line __ 'sum':
                 conn.sendall(b'<switching to sum mode>\r\n')
-                mode = 'sum'
-                continue
-            if line == 'product':
+                mode _ 'sum'
+                c..
+            __ line __ 'product':
                 conn.sendall(b'<switching to product mode>\r\n')
-                mode = 'product'
-                continue
+                mode _ 'product'
+                c..
 
             print(f'{sessions[conn].address} --> {line}')
-            try:
-                nums = list(map(int, line.split(',')))
-            except ValueError:
+            ___
+                nums _ li..(m..(int, line.split(',')))
+            ______ ValueError:
                 conn.sendall(
                     b'ERROR. Enter only integers separated by commas\n')
-                continue
+                c..
 
-            if mode == 'sum':
+            __ mode __ 'sum':
                 conn.sendall(b'Sum of input integers: %a\r\n'
-                    % str(sum(nums)))
-            else:
+                    % st.(su.(nums)))
+            ____
                 conn.sendall(b'Product of input integers: %a\r\n'
-                    % str(reduce(mul, nums, 1)))
-    finally:
+                    % st.(reduce(mul, nums, 1)))
+    f..
         print(f'{sessions[conn].address} quit')
 
-if __name__ == '__main__':
+__ _______ __ _______
     reactor('localhost', 8080)

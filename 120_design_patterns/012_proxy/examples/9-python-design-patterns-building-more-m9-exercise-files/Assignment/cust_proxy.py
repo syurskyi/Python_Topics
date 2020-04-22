@@ -7,7 +7,7 @@ class CustProxy(Customer):
     @property
     def name(self):
         self.name_lock = threading.RLock()
-        self.name_lock.acquire()
+        self.name_lock.a..
         return self._name
 
     @name.setter

@@ -42,13 +42,13 @@ class ZeroEvenOdd:
         """
         self.n = n
         self.locks = [Lock() for _ in range(3)]
-        self.locks[1].acquire()
-        self.locks[2].acquire()
+        self.locks[1].a..
+        self.locks[2].a..
 
 	# printNumber(x) outputs "x", where x is an integer.
     def zero(self, printNumber: Callable[[int], None]) -> None:
         for i in range(self.n):
-            self.locks[0].acquire()
+            self.locks[0].a..
             printNumber(0)
             if (i + 1) % 2 == 1:
                 self.locks[1].release()
@@ -57,13 +57,13 @@ class ZeroEvenOdd:
 
     def odd(self, printNumber: Callable[[int], None]) -> None:
         for i in range((self.n + 1) // 2):
-            self.locks[1].acquire()
+            self.locks[1].a..
             printNumber(i * 2 + 1)
             self.locks[0].release()
 
     def even(self, printNumber: Callable[[int], None]) -> None:
         for i in range(self.n // 2):
-            self.locks[2].acquire()
+            self.locks[2].a..
             printNumber(i * 2 + 2)
             self.locks[0].release()
 
@@ -79,7 +79,7 @@ class ZeroEvenOddError:
         self.n = n
         self.locks = [Lock(), Lock(), Lock(), Lock()]
         for i in range(1, len(self.locks)):
-            self.locks[i].acquire()
+            self.locks[i].a..
 
 	# printNumber(x) outputs "x", where x is an integer.
     def zero(self, printNumber: 'Callable[[int], None]') -> None:

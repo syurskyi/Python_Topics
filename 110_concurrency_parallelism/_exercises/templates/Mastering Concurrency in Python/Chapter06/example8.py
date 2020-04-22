@@ -1,81 +1,81 @@
 # ch6/example8.py
 
-from math import sqrt
-import multiprocessing
+____ ma__ ______ sqrt
+______ m..
 
-class Consumer(multiprocessing.Process):
+c_ Consumer(?.P..):
 
-    def __init__(self, task_queue, result_queue):
-        multiprocessing.Process.__init__(self)
-        self.task_queue = task_queue
-        self.result_queue = result_queue
+    ___  - (self, task_queue, result_queue):
+        ?.P... - (self)
+        self.task_queue _ task_queue
+        self.result_queue _ result_queue
 
-    def run(self):
-        pname = self.name
+    ___ run(self):
+        pname _ self.name
 
-        while True:
-            temp_task = self.task_queue.get()
+        w__ T..:
+            temp_task _ self.task_queue.g..
 
-            if temp_task is None:
+            __ temp_task is N..:
                 print('Exiting %s...' % pname)
                 self.task_queue.task_done()
                 break
 
             print('%s processing task: %s' % (pname, temp_task))
 
-            answer = temp_task.process()
+            answer _ temp_task.process()
             self.task_queue.task_done()
             self.result_queue.put(answer)
 
-class Task():
-    def __init__(self, x):
-        self.x = x
+c_ Task():
+    ___  - (self, x):
+        self.x _ x
 
-    def process(self):
-        if self.x < 2:
-            return '%i is not a prime number.' % self.x
+    ___ process(self):
+        __ self.x < 2:
+            r_ '%i is not a prime number.' % self.x
 
-        if self.x == 2:
-            return '%i is a prime number.' % self.x
+        __ self.x __ 2:
+            r_ '%i is a prime number.' % self.x
 
-        if self.x % 2 == 0:
-            return '%i is not a prime number.' % self.x
+        __ self.x % 2 __ 0:
+            r_ '%i is not a prime number.' % self.x
 
-        limit = int(sqrt(self.x)) + 1
-        for i in range(3, limit, 2):
-            if self.x % i == 0:
-                return '%i is not a prime number.' % self.x
+        limit _ int(sqrt(self.x)) + 1
+        ___ i __ ra..(3, limit, 2):
+            __ self.x % i __ 0:
+                r_ '%i is not a prime number.' % self.x
 
-        return '%i is a prime number.' % self.x
+        r_ '%i is a prime number.' % self.x
 
-    def __str__(self):
-        return 'Checking if %i is a prime or not.' % self.x
+    ___ -s(self):
+        r_ 'Checking if %i is a prime or not.' % self.x
 
-if __name__ == '__main__':
+__ _______ __ _______
 
-    tasks = multiprocessing.JoinableQueue()
-    results = multiprocessing.Queue()
+    tasks _ ?.JoinableQueue()
+    results _ ?.Queue()
 
     # spawning consumers with respect to the
     # number cores available in the system
-    n_consumers = multiprocessing.cpu_count()
+    n_consumers _ ?.cpu_count()
     print('Spawning %i consumers...' % n_consumers)
-    consumers = [Consumer(tasks, results) for i in range(n_consumers)]
-    for consumer in consumers:
-        consumer.start()
+    consumers _ [Consumer(tasks, results) ___ i __ ra..(n_consumers)]
+    ___ consumer __ consumers:
+        consumer.s..
 
     # enqueueing jobs
-    my_input = [2, 36, 101, 193, 323, 513, 1327, 100000, 9999999, 433785907]
-    for item in my_input:
+    my_input _ [2, 36, 101, 193, 323, 513, 1327, 100000, 9999999, 433785907]
+    ___ item __ my_input:
         tasks.put(Task(item))
 
-    for i in range(n_consumers):
-        tasks.put(None)
+    ___ i __ ra..(n_consumers):
+        tasks.put(N..)
 
-    tasks.join()
+    tasks.j..
 
-    for i in range(len(my_input)):
-        temp_result = results.get()
+    ___ i __ ra..(le.(my_input)):
+        temp_result _ results.g..
         print('Result:', temp_result)
 
     print('Done.')

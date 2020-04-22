@@ -1,27 +1,27 @@
 # ch19/example3.py
 
-from datetime import datetime
-import time
-import os
+____ datetime ______ datetime
+______ ti..
+______ __
 
-from apscheduler.schedulers.background import BackgroundScheduler
+____ apscheduler.schedulers.background ______ BackgroundScheduler
 
-def task():
-    print(f'From process {os.getpid()}: The time is {datetime.now()}')
-    print(f'Starting job inside {os.getpid()}')
-    time.sleep(4)
-    print(f'Ending job inside {os.getpid()}')
+___ task():
+    print(f'From process {__.getpid()}: The time is {datetime.now()}')
+    print(f'Starting job inside {__.getpid()}')
+    t__.s..(4)
+    print(f'Ending job inside {__.getpid()}')
 
-if __name__ == '__main__':
-    scheduler = BackgroundScheduler()
+__ _______ __ _______
+    scheduler _ BackgroundScheduler()
     scheduler.add_executor('processpool')
-    scheduler.add_job(task, 'interval', seconds=3, max_instances=3)
-    scheduler.start()
+    scheduler.add_job(task, 'interval', seconds_3, max_instances_3)
+    scheduler.s..
 
-    try:
-        while True:
-            time.sleep(1)
-    except KeyboardInterrupt:
-        pass
+    ___
+        w__ T..:
+            t__.s..(1)
+    ______ K..
+        p..
 
 scheduler.shutdown()

@@ -126,7 +126,7 @@
 #
 # # Traceback (most recent call last):
 # #     Python Shell, prompt 4, line 1
-# # builtins.FileNotFoundError: [Errno 2] No such file or directory: 'fauxfile.txt'
+# # builtins.F.. [Errno 2] No such file or directory: 'fauxfile.txt'
 #
 # # Как мы видим, этот контекстный менеджер не выполняет обработку данного исключения.
 # # Если вам нужно проигнорировать эту ошибку, лучше напишите следующий код:

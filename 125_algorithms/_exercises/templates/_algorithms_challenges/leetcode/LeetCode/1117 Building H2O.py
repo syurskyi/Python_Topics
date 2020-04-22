@@ -74,7 +74,7 @@ class H2O_TLE2:
         self.gates = [Semaphore(2), Semaphore(0)]  # inititally allow 2 H, 0 O
 
     def hydrogen(self, releaseHydrogen: Callable[[], None]) -> None:
-        self.gates[0].acquire()
+        self.gates[0].a..
         # releaseHydrogen() outputs "H". Do not change or remove this line.
         releaseHydrogen()
         if self.gates[0].acquire(blocking=False):  # self.gates[0]._value > 0
@@ -85,7 +85,7 @@ class H2O_TLE2:
 
 
     def oxygen(self, releaseOxygen: Callable[[], None]) -> None:
-        self.gates[1].acquire()
+        self.gates[1].a..
         # releaseOxygen() outputs "O". Do not change or remove this line.
         releaseOxygen()
         self.gates[0].release()
@@ -100,11 +100,11 @@ class H2O_TLE:
         """
         self.h_cnt = 0
         self.locks = [Lock() for _ in range(3)]
-        self.locks[1].acquire()
+        self.locks[1].a..
 
 
     def hydrogen(self, releaseHydrogen: Callable[[], None]) -> None:
-        self.locks[0].acquire()
+        self.locks[0].a..
         self.h_cnt += 1
         # releaseHydrogen() outputs "H". Do not change or remove this line.
         releaseHydrogen()
@@ -115,7 +115,7 @@ class H2O_TLE:
 
 
     def oxygen(self, releaseOxygen: Callable[[], None]) -> None:
-        self.locks[1].acquire()
+        self.locks[1].a..
         # releaseOxygen() outputs "O". Do not change or remove this line.
         releaseOxygen()
         self.h_cnt = 0

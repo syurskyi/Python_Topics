@@ -1,52 +1,52 @@
 # ch15/example3.py
 
-import time
-import threading
-from multiprocessing import Pool
+______ ti..
+______ th..
+____ m.. ______ Pool
 
-COUNT = 50000000
+COUNT _ 50000000
 
-def countdown(n):
-    while n > 0:
-        n -= 1
+___ countdown(n):
+    w__ n > 0:
+        n -_ 1
 
-if __name__ == '__main__':
+__ _______ __ _______
 
     #######################################################################
     # Sequential
 
-    start = time.time()
+    start _ t__.t__()
     countdown(COUNT)
 
     print('Sequential program finished.')
-    print(f'Took {time.time() - start : .2f} seconds.')
+    print(f'Took {t__.t__() - start : .2f} seconds.')
     print()
 
     #######################################################################
     # Multithreading
 
-    thread1 = threading.Thread(target=countdown, args=(COUNT // 2,))
-    thread2 = threading.Thread(target=countdown, args=(COUNT // 2,))
+    thread1 _ ?.T..(target_countdown, args_(COUNT // 2,))
+    thread2 _ ?.T..(target_countdown, args_(COUNT // 2,))
 
-    start = time.time()
-    thread1.start()
-    thread2.start()
-    thread1.join()
-    thread2.join()
+    start _ t__.t__()
+    thread1.s..
+    thread2.s..
+    thread1.j..
+    thread2.j..
 
     print('Multithreading program finished.')
-    print(f'Took {time.time() - start : .2f} seconds.')
+    print(f'Took {t__.t__() - start : .2f} seconds.')
     print()
 
     #######################################################################
     # Multiprocessing
 
-    pool = Pool(processes=2)
-    start = time.time()
-    pool.apply_async(countdown, args=(COUNT//2,))
-    pool.apply_async(countdown, args=(COUNT//2,))
+    pool _ Pool(processes_2)
+    start _ t__.t__()
+    pool.apply_async(countdown, args_(COUNT//2,))
+    pool.apply_async(countdown, args_(COUNT//2,))
     pool.close()
-    pool.join()
+    pool.j..
 
     print('Multiprocessing program finished.')
-    print(f'Took {time.time() - start : .2f} seconds.')
+    print(f'Took {t__.t__() - start : .2f} seconds.')
