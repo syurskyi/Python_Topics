@@ -1,39 +1,39 @@
-______ asyncio
-______ functools
-
-
-def set_event(event):
-    print('setting event in callback')
-    event.set()
-
-
-async def coro1(event):
-    print('coro1 waiting for event')
-    await event.wait()
-    print('coro1 triggered')
-
-
-async def coro2(event):
-    print('coro2 waiting for event')
-    await event.wait()
-    print('coro2 triggered')
-
-
-async def main(loop):
-    # Create a shared event
-    event = asyncio.Event()
-    print('event start state: {}'.format(event.is_set()))
-
-    loop.call_later(
-        0.1, functools.partial(set_event, event)
-    )
-
-    await asyncio.wait([coro1(event), coro2(event)])
-    print('event end state: {}'.format(event.is_set()))
-
-
-event_loop = asyncio.get_event_loop()
-try:
-    event_loop.run_until_complete(main(event_loop))
-finally:
-    event_loop.close()
+# ______ a..
+# ______ f..
+#
+#
+# ___ set_event event
+#     print('setting event in callback')
+#     ?.s..
+#
+#
+# ? ___ coro1 event
+#     print('coro1 waiting for event')
+#     ? ?.w..
+#     print('coro1 triggered')
+#
+#
+# ? ___ coro2 event
+#     print('coro2 waiting for event')
+#     ? ?.w..
+#     print('coro2 triggered')
+#
+#
+# ? ___ main loop
+#     # Create a shared event
+#     event _ ?.E..
+#     print('event start state: @'.f.. ?.i_s..
+#
+#     ?.c_l..|
+#         0.1, f___.pa.. s_e.. e..
+#     )
+#
+#     ? ?.w..||_1 e.. _2 e..
+#     print('event end state: @'.f.. e__.i_s..
+#
+#
+# event_loop _ ?.g_e_l..
+# ___
+#     ?.r_u_c.. m.. e_l..
+# f..
+#     ?.c..
