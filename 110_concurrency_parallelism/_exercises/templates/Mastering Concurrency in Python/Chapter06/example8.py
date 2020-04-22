@@ -1,81 +1,81 @@
-# ch6/example8.py
-
-____ ma__ ______ sqrt
-______ m..
-
-c_ Consumer(?.P..):
-
-    ___  - (self, task_queue, result_queue):
-        ?.P... - (self)
-        self.task_queue _ task_queue
-        self.result_queue _ result_queue
-
-    ___ run(self):
-        pname _ self.name
-
-        w__ T..:
-            temp_task _ self.task_queue.g..
-
-            __ temp_task is N..:
-                print('Exiting %s...' % pname)
-                self.task_queue.task_done()
-                break
-
-            print('%s processing task: %s' % (pname, temp_task))
-
-            answer _ temp_task.process()
-            self.task_queue.task_done()
-            self.result_queue.put(answer)
-
-c_ Task():
-    ___  - (self, x):
-        self.x _ x
-
-    ___ process(self):
-        __ self.x < 2:
-            r_ '%i is not a prime number.' % self.x
-
-        __ self.x __ 2:
-            r_ '%i is a prime number.' % self.x
-
-        __ self.x % 2 __ 0:
-            r_ '%i is not a prime number.' % self.x
-
-        limit _ int(sqrt(self.x)) + 1
-        ___ i __ ra..(3, limit, 2):
-            __ self.x % i __ 0:
-                r_ '%i is not a prime number.' % self.x
-
-        r_ '%i is a prime number.' % self.x
-
-    ___ -s(self):
-        r_ 'Checking if %i is a prime or not.' % self.x
-
-__ _______ __ _______
-
-    tasks _ ?.JoinableQueue()
-    results _ ?.Queue()
-
-    # spawning consumers with respect to the
-    # number cores available in the system
-    n_consumers _ ?.cpu_count()
-    print('Spawning %i consumers...' % n_consumers)
-    consumers _ [Consumer(tasks, results) ___ i __ ra..(n_consumers)]
-    ___ consumer __ consumers:
-        consumer.s..
-
-    # enqueueing jobs
-    my_input _ [2, 36, 101, 193, 323, 513, 1327, 100000, 9999999, 433785907]
-    ___ item __ my_input:
-        tasks.put(Task(item))
-
-    ___ i __ ra..(n_consumers):
-        tasks.put(N..)
-
-    tasks.j..
-
-    ___ i __ ra..(le.(my_input)):
-        temp_result _ results.g..
-        print('Result:', temp_result)
-
-    print('Done.')
+# # ch6/example8.py
+#
+# ____ ma__ ______ sqrt
+# ______ m..
+#
+# c_ Consumer ?.P..
+#
+#     ___  -  task_queue, result_queue
+#         ?.P... - ?
+#         ? ?
+#         ? ?
+#
+#     ___ run
+#         pname _ n..
+#
+#         w__ T..
+#             temp_task _ ?.g..
+#
+#             __ ? __ N..
+#                 print('Exiting @...' p..
+#                 t_q_.t_d..
+#                 b..
+#
+#             print('@ processing task: @'  p.. t..
+#
+#             answer _ t__.p..
+#             t_q_.t_d..
+#             r_q_.p.. ?
+#
+# c_ Task
+#     ___  -  x)
+#         ? ?
+#
+#     ___ process
+#         __ ? < 2
+#             r_ '@ is not a prime number.'  ?
+#
+#         __ ? __ 2
+#             r_ '@ is a prime number.'  ?
+#
+#         __ ?  2 __ 0
+#             r_ '@ is not a prime number.'  ?
+#
+#         limit _ in. sq.. ?|| + 1
+#         ___ i __ ra.. 3 ? 2
+#             __ ?  i __ 0
+#                 r_ '@ is not a prime number.'  ?
+#
+#         r_ '@ is a prime number.'  ?
+#
+#     ___ -s
+#         r_ 'Checking if @ is a prime or not.'  ?
+#
+# __ _______ __ _______
+#
+#     tasks _ ?.JQ..
+#     results _ ?.Q..
+#
+#     # spawning consumers with respect to the
+#     # number cores available in the system
+#     n_consumers _ ?.c_c..
+#     print('Spawning @ consumers...'  n_
+#     consumers _ C.. t.. r..| ___ i __ ra..(n_
+#     ___ consumer __ ?
+#         ?.s..
+#
+#     # enqueueing jobs
+#     my_input _ [2, 36, 101, 193, 323, 513, 1327, 100000, 9999999, 433785907]
+#     ___ item __ ?
+#         ?s.p.. T.. ?
+#
+#     ___ i __ ra.. n_
+#         ?s.p.. N..
+#
+#     ?s.j..
+#
+#     ___ i __ ra.. le. m..
+#         temp_result _ ?s.g..
+#         print('Result:' ?
+#
+#     print('Done.')
