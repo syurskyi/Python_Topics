@@ -1,33 +1,33 @@
-# ch1/example2.py
-
-import concurrent.futures
-from timeit import default_timer as timer
-
-
-# sequential
-def f(x):
-    return x * x - x + 1
-
-start = timer()
-result = 3
-for i in range(20):
-    result = f(result)
-
-print('Result is very large. Only printing the last 5 digits:', result % 100000)
-print('Sequential took: %.2f seconds.' % (timer() - start))
-
-
-# concurrent
-def concurrent_f(x):
-    global result
-    result = f(result)
-
-result = 3
-
-with concurrent.futures.ThreadPoolExecutor(max_workers=20) as exector:
-    futures = [exector.submit(concurrent_f, i) for i in range(20)]
-
-    _ = concurrent.futures.as_completed(futures)
-
-print('Result is very large. Only printing the last 5 digits:', result % 100000)
-print('Concurrent took: %.2f seconds.' % (timer() - start))
+# # ch1/example2.py
+#
+# ______ c__.f..
+# ____ t_i_ ______ d_t.. __ timer
+#
+#
+# # sequential
+# ___ f x
+#     r_ x * x - x + 1
+#
+# start _ t..
+# result _ 3
+# ___ i __ ra.. 20
+#     r.. _ f ?
+#
+# print('Result is very large. Only printing the last 5 digits:' ? % 100000
+# print('Sequential took: @.2_ seconds.'  t.. - s..
+#
+#
+# # concurrent
+# ___ concurrent_f x
+#     g.. r..
+#     r.. _ f ?
+#
+# result _ 3
+#
+# w__ c__.f...TPE.. m_w.._20 __ exector
+#     futures _ ?.s.. ? i| ___ ? __ ra.. 20
+#
+#     _ _ c__.f...a_c.. f..
+#
+# print('Result is very large. Only printing the last 5 digits:', r.. % 100000
+# print('Concurrent took: @.2_ seconds.'  t.. - s..
