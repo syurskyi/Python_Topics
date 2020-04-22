@@ -1,19 +1,19 @@
-______ asyncio
-from concurrent.futures ______ Future
-from concurrent.futures ______ ThreadPoolExecutor
-
-def myTask():
-  print("Hello World")
-
-myFuture = Future()
-myWrappedFuture = asyncio.wrap_future(myFuture)
-
-with ThreadPoolExecutor(max_workers=4) as executor:
-    future = executor.submit(task, (4))
-    myWrappedFuture = asyncio.wrap_future(future)
-
-loop = asyncio.get_event_loop()
-try:
-  loop.run_until_complete(myWrappedFuture())
-finally:
-  loop.close()
+# ______ a..
+# ____ c__.f.. ______ F..
+# ____ c__.f.. ______ TPE..
+#
+# ___ myTask
+#   print("Hello World")
+#
+# myFuture _ F..
+# myWrappedFuture _ ?.w_f.. ?
+#
+# w__ TPE.. m.._4 __ executor
+#     future _ ?.s.. t.. 4
+#     m.. _ ?.w_f.. ?
+#
+# loop _ ?.g_e_l..
+# ___
+#   ?.r_u_c.. ?
+# f..
+#   l__.c..
