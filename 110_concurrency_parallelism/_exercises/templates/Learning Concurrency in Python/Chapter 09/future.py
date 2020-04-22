@@ -1,16 +1,16 @@
-______ asyncio
-
-async def myFuture(future):
-  await asyncio.sleep(1)
-  future.set_result("My Future Has Completed")
-
-async def main():
-  future = asyncio.Future()
-  await asyncio.ensure_future(myFuture(future))
-  print(future.result())
-
-loop = asyncio.get_event_loop()
-try:
-  loop.run_until_complete(main())
-finally:
-  loop.close()
+# ______ a..
+#
+# ? ___ myFuture future
+#   ? ?.s.. 1
+#   ?.s_r.. ("My Future Has Completed")
+#
+# ? ___ main
+#   future _ ?.F..
+#   ? ?.e_f.. ? f..
+#   print ?.r..
+#
+# loop _ ?.g_e_l..
+# ___
+#   ?.r_u_c.. m..
+# f..
+#   ?.c..
