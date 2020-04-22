@@ -15,7 +15,7 @@ ____ t_i_ ______ d_t_ as timer
             w__ T..:
                 chunk _ await res.content.read(1024)
                 __ not chunk:
-                    break
+                    b..
                 await f.write(chunk)
 
         r_ await res.release()
