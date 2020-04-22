@@ -1,19 +1,19 @@
-______ asyncio
-
-async def myCoroutine():
-  print("My Coroutine")
-
-async def main():
-  await asyncio.sleep(1)
-
-loop = asyncio.get_event_loop()
-try:
-  loop.create_task(myCoroutine())
-  loop.create_task(myCoroutine())
-  loop.create_task(myCoroutine())
-
-  pending = asyncio.Task.all_tasks()
-  print(pending)
-  loop.run_until_complete(main())
-finally:
-  loop.close()
+# ______ a..
+#
+# ? ___ myCoroutine
+#   print("My Coroutine")
+#
+# ? ___ main
+#   ? ?.s.. (1
+#
+# loop _ ?.g_e_l..
+# ___
+#   ?.c_t.. ?
+#   ?.c_t.. ?
+#   ?.c_t.. ?
+#
+#   pending _ ?.T__.a_t..
+#   print ?
+#   l__.r_u_c.. m..
+# f..
+#   l__.c..
