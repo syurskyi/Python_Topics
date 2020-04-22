@@ -1,26 +1,26 @@
-______ asyncio
- 
-@asyncio.coroutine
-def hello_world():
-    yield from asyncio.sleep(1)
-    print('Hello World')
-    asyncio.async(hello_world())
- 
-@asyncio.coroutine
-def good_evening():
-    yield from asyncio.sleep(1)
-    print('Good Evening')
-    asyncio.async(good_evening())
- 
-print('step: asyncio.get_event_loop()')
-loop = asyncio.get_event_loop()
-try:
-    print('step: loop.run_until_complete()')
-    asyncio.async(hello_world())
-    asyncio.async(good_evening())
-    loop.run_forever()
-except KeyboardInterrupt:
-    pass
-finally:
-    print('step: loop.close()')
-    loop.close()
+# ______ a...
+#
+# ??.?
+# ___ hello_world
+#     y.. f.. ?.s.. 1
+#     print('Hello World')
+#     ?.? ?
+#
+# ??.?
+# ___ good_evening
+#     y.. f.. ?.s.. 1
+#     print('Good Evening')
+#     ?.? ?
+#
+# print('step: ?.get_event_loop()')
+# loop _ ?.g_e_l..
+# ___
+#     print('step: loop.run_until_complete()')
+#     ?.? h..
+#     ?.? g..
+#     ?.r_f..
+# _____ K..
+#     p..
+# f..
+#     print('step: loop.close()')
+#     ?.c..
