@@ -1,47 +1,47 @@
-# ch3/example3.py
-
-import threading
-from math import sqrt
-
-def is_prime(x):
-    if x < 2:
-        print('%i is not a prime number.' % x)
-
-    elif x == 2:
-        print('%i is a prime number.' % x)
-
-    elif x % 2 == 0:
-        print('%i is not a prime number.' % x)
-
-    else:
-        limit = int(sqrt(x)) + 1
-        for i in range(3, limit, 2):
-            if x % i == 0:
-                print('%i is not a prime number.' % x)
-                return
-
-        print('%i is a prime number.' % x)
-
-class MyThread(threading.Thread):
-    def __init__(self, x):
-        threading.Thread.__init__(self)
-        self.x = x
-
-    def run(self):
-        print('Starting processing %i...' % x)
-        is_prime(self.x)
-
-my_input = [2, 193, 323, 1327, 433785907]
-
-threads = []
-
-for x in my_input:
-    temp_thread = MyThread(x)
-    temp_thread.start()
-
-    threads.append(temp_thread)
-
-for thread in threads:
-    thread.join()
-
-print('Finished.')
+# # ch3/example3.py
+#
+# ______ th..
+# ____ ma__ ______ sqrt
+#
+# ___ is_primex
+#     __ x < 2
+#         print('@ is not a prime number.' ?
+#
+#     ____ x __ 2:
+#         print('@ is a prime number.' ?
+#
+#     ____ x % 2 __ 0:
+#         print('@ is not a prime number.' ?
+#
+#     ____
+#         limit _ in. sq.. ? + 1
+#         ___ i __ ra..(3, limit, 2):
+#             __ x % i __ 0:
+#                 print('@ is not a prime number.' ?
+#                 r_
+#
+#         print('@ is a prime number.' % x)
+#
+# c_ MyThread ?.T..
+#     ___  -  x
+#         ?.T... - ?
+#         ? ?
+#
+#     ___ run
+#         print('Starting processing @...' ?
+#         i_p.. .x
+#
+# my_input _ [2, 193, 323, 1327, 433785907]
+#
+# threads _    # list
+#
+# ___ x __ ?
+#     temp_thread _ ? ?
+#     ?.s..
+#
+#     ?s.ap.. ?
+#
+# ___ ? __ ?s
+#     ?.j..
+#
+# print('Finished.')
