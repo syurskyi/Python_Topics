@@ -1,22 +1,22 @@
-______ asyncio
-______ time
-
-@asyncio.coroutine
-def myTask(n):
-   time.sleep(1)
-   print("Processing {}".format(n))
-
-@asyncio.coroutine
-def myGenerator():
-   for i in range(5):
-       asyncio.ensure_future(myTask(i))
-   print("Completed Tasks")
-   yield from asyncio.sleep(2)
-
-def main():
-   loop = asyncio.get_event_loop()
-   loop.run_until_complete(myGenerator())
-   loop.close()
-
-if __name__ == '__main__':
-   main()
+# ______ a..
+# ______ ti..
+#
+# ??.?
+# ___ myTask n
+#    t__.s.. 1
+#    print("Processing @".f.. ?
+#
+# ??.?
+# ___ myGenerator
+#    ___ i __ ra.. 5
+#        ?.en_f.. ? ?
+#    print("Completed Tasks")
+#    y.. f.. ?.s.. 2
+#
+# ___ main
+#    loop _ ?.g_e_l..
+#    ?.r_u_c.. ?
+#    ?.c..
+#
+# __ _________ __ ________
+#    ?
