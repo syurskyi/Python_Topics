@@ -1,31 +1,31 @@
-# ch6/example2.py
-
-____ m.. ______ Process, current_process
-______ ti..
-
-
-___ f1():
-    pname _ current_process().name
-    print('Starting process %s...' % pname)
-    t__.s..(2)
-    print('Exiting process %s...' % pname)
-
-___ f2():
-    pname _ current_process().name
-    print('Starting process %s...' % pname)
-    t__.s..(4)
-    print('Exiting process %s...' % pname)
-
-
-__ _______ __ _______
-    p1 _ P..(name_'Worker 1', target_f1)
-    p2 _ P..(name_'Worker 2', target_f2)
-    p3 _ P..(target_f1)
-
-    p1.s..
-    p2.s..
-    p3.s..
-
-    p1.j..
-    p2.j..
-    p3.j..
+# # ch6/example2.py
+#
+# ____ m.. ______ P.. c_p..
+# ______ ti..
+#
+#
+# ___ f1
+#     pname _ c_p__.n..
+#     print('Starting process @...' ?
+#     t__.s.. 2
+#     print('Exiting process @...' ?
+#
+# ___ f2
+#     pname _ c_p__.n..
+#     print('Starting process @...' ?
+#     t__.s..(4)
+#     print('Exiting process @...' ?
+#
+#
+# __ _______ __ _______
+#     p1 _ P.. n.._'Worker 1' t..__1
+#     p2 _ P.. n.._'Worker 2' t..__2
+#     p3 _ P.. t..__1
+#
+#     _1.s..
+#     _2.s..
+#     _3.s..
+#
+#     _1.j..
+#     _2.j..
+#     _3.j..
