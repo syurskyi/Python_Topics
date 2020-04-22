@@ -1,27 +1,27 @@
-______ asyncio
-______ random
-______ time
-
-@asyncio.coroutine
-def newsProducer(myQueue):
-  while True:
-    yield from myQueue.put(random.randint(1,5))
-    yield from asyncio.sleep(1)
-    
-@asyncio.coroutine
-def newsConsumer(myQueue):
-  while True:
-    articleId = yield from myQueue.get()
-    print("News Reader Consumed News Article {}", articleId)
-
-myQueue = asyncio.Queue()
-
-loop = asyncio.get_event_loop()
-
-loop.create_task(newsProducer(myQueue))
-loop.create_task(newsConsumer(myQueue))
-
-try:
-  loop.run_forever()
-finally:
-  loop.close()
+# ______ a
+# ______ ra..
+# ______ ti..
+#
+# ??.?
+# ___ newsProducer myQueue
+#   w__ T..
+#     y.. f.. ?.pu. ra__.r_i. 1,5
+#     y.. f.. ?.s.. 1
+#
+# ??.?
+# ___ newsConsumer myQueue
+#   w__ T..
+#     articleId _ y.. f.. ?.g..
+#     print("News Reader Consumed News Article @" ?
+#
+# myQueue _ ?.Q..
+#
+# loop _ ?.g_e_l..
+#
+# ?.c_t.. ? ?
+# ?.c_t.. ? ?
+#
+# ___
+#   l__.r_f..
+# f..
+#   l__.c..
