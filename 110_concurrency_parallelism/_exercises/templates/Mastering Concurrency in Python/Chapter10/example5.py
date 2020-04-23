@@ -5,7 +5,7 @@ ______ a..
 ______ ti..
 
 ___ count_down(name, delay):
-    indents _ (ord(name) - ord('A')) * '\t'
+    indents _ (or.(name) - or.('A')) * '\t'
 
     n _ 3
     w__ n:
