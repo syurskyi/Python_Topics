@@ -1,14 +1,14 @@
 ______ a..
 
 ? ___ handle_echo(reader, writer):
-    data _ await reader.read(100)
+    data _ ? reader.read(100)
     message _ data.decode()
     addr _ writer.get_extra_info('peername')
     print("Received %r from %r" % (message, addr))
 
     print("Send: %r" % message)
     writer.write(data)
-    await writer.drain()
+    ? writer.drain()
 
     print("Close the client socket")
     writer.close()

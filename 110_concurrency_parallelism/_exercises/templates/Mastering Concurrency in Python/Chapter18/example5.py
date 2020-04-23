@@ -17,7 +17,7 @@ ___ read_data():
 ? ___ process():
     ___
         w__ T..:
-            data _ await read_data()
+            data _ ? read_data()
             print(f'Printing from process(): {data}')
     f..
         print('Processing done.')

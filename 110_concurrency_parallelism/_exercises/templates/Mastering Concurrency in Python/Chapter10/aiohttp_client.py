@@ -1,19 +1,19 @@
-______ a..
-______ ai..
-
-? ___ get_html(session, url):
-    ? w__ session.g..(url) as res:
-        r_ await res.text()
-
-? ___ main():
-    urls _ [
-        'http://python.org',
-        'http://google.com',
-        ''
-    ]
-
-    ? w__ ?.ClientSession(connector_aiohttp.TCPConnector(ssl_F..)) as session:
-        html _ await get_html(session, 'http://python.org')
-        print(le.(html))
-
-?.run(main())
+# ______ a..
+# ______ ai..
+#
+# ? ___ get_html session url
+#     ? w__ s__.g.. ? __ res
+#         r_ ? ?.t..
+#
+# ? ___ main
+#     urls _ |
+#         'http://python.org',
+#         'http://google.com',
+#         ''
+#     |
+#
+#     ? w__ ?.CS.. co.._ai__.TCPC.. s.._F.. __ session
+#         html _ ? ? ? 'http://python.org')
+#         print(le. ?
+#
+# ?.r.. ?

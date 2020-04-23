@@ -8,7 +8,7 @@ ______ ti..
 
     n _ 3
     w__ n:
-        await ?.s..(delay)
+        ? ?.s..(delay)
 
         duration _ t__.perf_counter() - start
         print('-' * 40)
@@ -18,7 +18,7 @@ ______ ti..
 
 ? ___ main():
 
-    await ?.gather(*[
+    ? ?.gather(*[
         count_down('A', 1),
         count_down('B', 0.8),
         count_down('C', 0.5)

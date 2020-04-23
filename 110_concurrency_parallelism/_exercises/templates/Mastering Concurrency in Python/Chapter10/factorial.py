@@ -7,14 +7,14 @@ ____ datetime ______ datetime
 
     ___ i __ ra..(2, n + 1):
         print(f'Task {name}: Compute factorial({i}).')
-        await ?.s..(1)
+        ? ?.s..(1)
         f *_ i
 
     print(f'Task {name}: factorial({n}) is {f}.')
 
 ? ___ main():
     tasks _ [custom_factorial('A', 3), custom_factorial('B', 4)]
-    await ?.gather(*tasks)
+    ? ?.gather(*tasks)
 
 start _ t__.t__()
 ?.run(main())

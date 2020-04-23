@@ -80,7 +80,7 @@ ___ readline(conn):
     ___
         conn.sendall(b'<welcome: starting in sum mode>\n')
         w__ T..:
-            line _ await readline(conn)
+            line _ ? readline(conn)
             __ line __ 'quit':
                 conn.sendall(b'connection closed\r\n')
                 r_

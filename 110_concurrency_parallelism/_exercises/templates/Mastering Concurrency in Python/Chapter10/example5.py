@@ -24,7 +24,7 @@ ___ count_down(name, delay):
         *args
     ) ___ args __ [('A', 1), ('B', 0.8), ('C', 0.5)]]
 
-    await ?.gather(*futures)
+    ? ?.gather(*futures)
 
     print('-' * 40)
     print('Done.')

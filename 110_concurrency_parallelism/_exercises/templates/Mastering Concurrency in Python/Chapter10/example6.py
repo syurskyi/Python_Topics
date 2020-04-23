@@ -33,7 +33,7 @@ ___ is_prime(x):
     task2 _ loop.run_in_executor(executor, is_prime, 427920331)
     task3 _ loop.run_in_executor(executor, is_prime, 157)
 
-    await ?.gather(*[task1, task2, task3])
+    ? ?.gather(*[task1, task2, task3])
 
 __ _______ __ _______
     ___

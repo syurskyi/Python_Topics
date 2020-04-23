@@ -13,16 +13,16 @@ ____ t_i_ ______ d_t_ as timer
 
         ? w__ aiofiles.o..(filename, 'wb') as f:
             w__ T..:
-                chunk _ await res.content.read(1024)
+                chunk _ ? res.content.read(1024)
                 __ not chunk:
                     b..
-                await f.write(chunk)
+                ? f.write(chunk)
 
-        r_ await res.release()
+        r_ ? res.release()
 
 ? ___ main(url):
     ? w__ ?.ClientSession() as session:
-        await download_html(session, url)
+        ? download_html(session, url)
 
 urls _ [
     'http://packtpub.com',

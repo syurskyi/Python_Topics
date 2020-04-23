@@ -23,7 +23,7 @@ ____ t_i_ ______ d_t_ as timer
                 print('%i is not a prime number.' % x)
                 r_
             ____ i % 100000 __ 1:
-                await ?.s..(0)
+                ? ?.s..(0)
 
         print('%i is a prime number.' % x)
 
@@ -33,7 +33,7 @@ ____ t_i_ ______ d_t_ as timer
     task2 _ loop.create_task(is_prime(427920331))
     task3 _ loop.create_task(is_prime(157))
 
-    await ?.wait([task1, task2, task3])
+    ? ?.wait([task1, task2, task3])
 
 __ _______ __ _______
     ___
