@@ -1,31 +1,31 @@
-# ch11/example2.py
-
-______ a..
-
-c_ EchoServerClientProtocol(?.Protocol):
-    ___ connection_made(self, transport):
-        peername _ transport.get_extra_info('peername')
-        print('Connection from {}'.format(peername))
-        self.transport _ transport
-
-    ___ data_received(self, data):
-        message _ data.decode()
-        print('Data received: {!r}'.format(message))
-
-        self.transport.write(('Echoed back: {}'.format(message)).encode())
-
-loop _ ?.g_e_l..
-coro _ loop.create_server(EchoServerClientProtocol, '127.0.0.1', 8888)
-server _ loop.r_u_c..(coro)
-
-# Serve requests until Ctrl+C is pressed
-print('Serving on {}'.format(server.sockets[0].getsockname()))
-___
-    loop.run_forever()
-______ K..
-    p..
-
-# Close the server
-server.close()
-loop.r_u_c..(server.wait_closed())
-loop.close()
+# # ch11/example2.py
+#
+# ______ a..
+#
+# c_ EchoServerClientProtocol ?.P..
+#     ___ connection_made transport
+#         peername _ ?.g_e_i.. 'peername'
+#         print('Connection from @ '.f.. ?
+#         ? ?
+#
+#     ___ data_received data
+#         message _ ?.d..
+#         print('Data received: @'.f.. ?
+#
+#         self.transport.write(('Echoed back: @'.f.. ? .en..
+#
+# loop _ ?.g_e_l..
+# coro _ loop.c_s..(?, '127.0.0.1', 8888)
+# server _ loop.r_u_c.. ?
+#
+# # Serve requests until Ctrl+C is pressed
+# print('Serving on @'.f.. s__.s.. 0 .g_s_n..
+# ___
+#     l__.r_f..
+# ______ K..
+#     p..
+#
+# # Close the server
+# s__.c..
+# l__.r_u_c.. s__.w_c..
+# l__.c..
