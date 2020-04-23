@@ -1,39 +1,39 @@
-# ch13/example1.py
-
-______ th..
-
-___ writer():
-    g.. text
-
-    w__ T..:
-        w__ resource:
-            print(f'Writing being done by {?.current_thread().name}.')
-            text +_ f'Writing was done by {?.current_thread().name}. '
-
-___ reader():
-    g.. rcount
-
-    w__ T..:
-        w__ rcounter:
-            rcount +_ 1
-            __ rcount __ 1:
-                resource.a..
-
-        print(f'Reading being done by {?.current_thread().name}:')
-        print(text)
-
-        w__ rcounter:
-            rcount -_ 1
-            __ rcount __ 0:
-                resource.release()
-
-text _ 'This is some text. '
-rcount _ 0
-
-rcounter _ ?.Lock()
-resource _ ?.Lock()
-
-threads _ [?.T..(target_reader) ___ i __ ra..(3)] + [?.T..(target_writer) ___ i __ ra..(2)]
-
-___ thread __ threads:
-    thread.s..
+# # ch13/example1.py
+#
+# ______ th..
+#
+# ___ writer
+#     g.. text
+#
+#     w__ T..
+#         w__ resource:
+#             print _*Writing being done by |?.c_t_ .n.. .')
+#             t.. +_ _*Writing was done by |?.c_t_ .n.. . '
+#
+# ___ reader
+#     g.. rcount
+#
+#     w__ T..
+#         w__ rc..
+#             ? +_ 1
+#             __ ? __ 1
+#                 r__.a..
+#
+#         print _*Reading being done by |?.c_t_.n.. :')
+#         print t..
+#
+#         w__ rc..
+#             ? -_ 1
+#             __ ? __ 0
+#                 r__.r..
+#
+# text _ 'This is some text. '
+# rcount _ 0
+#
+# rcounter _ ?.L..
+# resource _ ?.L..
+#
+# threads _ |?.T.. t.._re.. ___ i __ ra.. 3|| + |?.T.. t.._wr.. ___ i __ ra.. 2
+#
+# ___ thread __ ?
+#     ?.s..
