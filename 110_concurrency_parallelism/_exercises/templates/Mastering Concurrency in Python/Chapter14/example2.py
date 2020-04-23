@@ -1,26 +1,26 @@
-# ch14/example2.py
-
-______ th..
-______ random
-______ ti..
-
-___ update():
-    g.. counter
-
-    w__ count_lock:
-        current_counter _ counter # reading in shared resource
-        t__.s..(random.randint(0, 1)) # simulating heavy calculations
-        counter _ current_counter + 1
-
-counter _ 0
-count_lock _ ?.Lock()
-
-threads _ [?.T..(target_update) ___ i __ ra..(20)]
-
-___ thread __ threads:
-    thread.s..
-___ thread __ threads:
-    thread.j..
-
-print(f'Final counter: {counter}.')
-print('Finished.')
+# # ch14/example2.py
+#
+# ______ th..
+# ______ ra..
+# ______ ti..
+#
+# ___ update
+#     g.. counter
+#
+#     w__ c_l..
+#         c_c.. _ ? # reading in shared resource
+#         t__.s.. ra__.r_i.. 0, 1 # simulating heavy calculations
+#         counter _ c_c.. + 1
+#
+# c.. _ 0
+# count_lock _ ?.L..
+#
+# threads _ ?.T.. t.._? ___ i __ ra..( 0
+#
+# ___ thread __ ?
+#     ?.s..
+# ___ ? __ ?
+#     ?.j..
+#
+# print _*Final counter: |c.. .')
+# print('Finished.')
