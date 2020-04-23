@@ -13,9 +13,9 @@ ______ a..
     print("Close the client socket")
     writer.close()
 
-loop _ ?.get_event_loop()
+loop _ ?.g_e_l..
 coro _ ?.start_server(handle_echo, '127.0.0.1', 8888, loop_loop)
-server _ loop.run_until_complete(coro)
+server _ loop.r_u_c..(coro)
 
 # Serve requests until Ctrl+C is pressed
 print('Serving on {}'.format(server.sockets[0].getsockname()))
@@ -26,5 +26,5 @@ ______ K..
 
 # Close the server
 server.close()
-loop.run_until_complete(server.wait_closed())
+loop.r_u_c..(server.wait_closed())
 loop.close()

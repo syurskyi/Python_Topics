@@ -31,5 +31,5 @@ ___ count_down(name, delay):
 
 start _ t__.perf_counter()
 executor _ TPE..(max_workers_3)
-loop _ ?.get_event_loop()
-loop.run_until_complete(main())
+loop _ ?.g_e_l..
+loop.r_u_c..(main())

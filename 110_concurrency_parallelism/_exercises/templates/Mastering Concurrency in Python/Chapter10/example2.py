@@ -16,7 +16,7 @@ ______ ti..
 
         n -_ 1
 
-loop _ ?.get_event_loop()
+loop _ ?.g_e_l..
 tasks _ [
     loop.create_task(count_down('A', 1)),
     loop.create_task(count_down('B', 0.8)),
@@ -24,7 +24,7 @@ tasks _ [
 ]
 
 start _ t__.perf_counter()
-loop.run_until_complete(?.wait(tasks))
+loop.r_u_c..(?.wait(tasks))
 
 print('-' * 40)
 print('Done.')

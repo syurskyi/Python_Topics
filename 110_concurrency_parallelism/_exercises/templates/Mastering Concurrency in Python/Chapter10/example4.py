@@ -38,10 +38,10 @@ ____ t_i_ ______ d_t_ as timer
 __ _______ __ _______
     ___
         start _ timer()
-        loop _ ?.get_event_loop()
-        loop.run_until_complete(main())
+        loop _ ?.g_e_l..
+        loop.r_u_c..(main())
         print('Took %.2f seconds.' % (timer() - start))
-    ______ Exception as e:
+    ______ E.. as e:
         print('There was a problem:')
         print(st.(e))
     f..

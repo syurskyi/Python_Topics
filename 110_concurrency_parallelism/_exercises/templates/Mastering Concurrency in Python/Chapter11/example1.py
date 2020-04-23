@@ -12,9 +12,9 @@ c_ EchoServerClientProtocol(?.Protocol):
         message _ data.decode()
         print('Data received: {!r}'.format(message))
 
-loop _ ?.get_event_loop()
+loop _ ?.g_e_l..
 coro _ loop.create_server(EchoServerClientProtocol, '127.0.0.1', 8888)
-server _ loop.run_until_complete(coro)
+server _ loop.r_u_c..(coro)
 
 # Serve requests until Ctrl+C is pressed
 print('Serving on {}'.format(server.sockets[0].getsockname()))
@@ -25,5 +25,5 @@ ______ K..
 
 # Close the server
 server.close()
-loop.run_until_complete(server.wait_closed())
+loop.r_u_c..(server.wait_closed())
 loop.close()

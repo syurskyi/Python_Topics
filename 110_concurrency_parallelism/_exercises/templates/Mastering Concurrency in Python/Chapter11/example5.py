@@ -34,8 +34,8 @@ urls _ [
 
 start _ timer()
 
-loop _ ?.get_event_loop()
-loop.run_until_complete(
+loop _ ?.g_e_l..
+loop.r_u_c..(
     ?.gather(*(main(url) ___ url __ urls))
 )
 

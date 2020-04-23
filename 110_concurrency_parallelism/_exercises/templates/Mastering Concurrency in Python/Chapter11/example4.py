@@ -12,5 +12,5 @@ ______ a..
         html _ await get_html(session, 'http://packtpub.com')
         print(html)
 
-loop _ ?.get_event_loop()
-loop.run_until_complete(main())
+loop _ ?.g_e_l..
+loop.r_u_c..(main())
