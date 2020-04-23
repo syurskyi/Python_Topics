@@ -1,23 +1,23 @@
-# ch16/example1.py
-
-____ c__.f.. ______ TPE..
-______ ti..
-
-c_ LocklessCounter:
-    ___  - (self):
-        self.value _ 0
-
-    ___ increment(self, x):
-        new_value _ self.value + x
-        t__.s..(0.001) # creating a delay
-        self.value _ new_value
-
-    ___ get_value(self):
-        r_ self.value
-
-counter _ LocklessCounter()
-w__ TPE..(max_workers_3) as executor:
-    executor.m..(counter.increment, [1 ___ i __ ra..(300)])
-
-print(f'Final counter: {counter.get_value()}.')
-print('Finished.')
+# # ch16/example1.py
+#
+# ____ c__.f.. ______ TPE..
+# ______ ti..
+#
+# c_ LocklessCounter
+#     ___  -
+#         value _ 0
+#
+#     ___ increment x
+#         new_value _ v.. + x
+#         t__.s.. 0.001 # creating a delay
+#         value _ ?
+#
+#     ___ get_value
+#         r_ ?
+#
+# counter _ ?
+# w__ TPE.. m.._3 __ executor
+#     ?.m.. c__.i.. |1 ___ i __ ra.. 300
+#
+# print _*Final counter: |c__.g_v.. .
+# print('Finished.')
