@@ -1,19 +1,19 @@
-# ch15/example1.py
-
-______ ___
-
-print(f'Reference count when direct-referencing: {___.getrefcount([7])}.')
-
-a _ [7]
-print(f'Reference count when referenced once: {___.getrefcount(a)}.')
-
-b _ a
-print(f'Reference count when referenced twice: {___.getrefcount(a)}.')
-
-###########################################################################
-
-a[0] _ 8
-print(f'Variable a after a is changed: {a}.')
-print(f'Variable b after a is changed: {b}.')
-
-print('Finished.')
+# # ch15/example1.py
+#
+# ______ ___
+#
+# print _*Reference count when direct-referencing: |___.g_f_ 7 .
+#
+# a _ [7]
+# print _*Reference count when referenced once: |___.g_f_(a .
+#
+# b _ a
+# print _*Reference count when referenced twice: |___.g_f_(a .
+#
+# ###########################################################################
+#
+# a 0 _ 8
+# print _*Variable a after a is changed: |a .')
+# print _*Variable b after a is changed: |b .')
+#
+# print('Finished.')
