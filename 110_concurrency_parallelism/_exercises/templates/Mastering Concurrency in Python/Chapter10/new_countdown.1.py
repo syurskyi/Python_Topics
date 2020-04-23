@@ -10,7 +10,7 @@ ______ ti..
     w__ n:
         ? ?.s..(delay)
 
-        duration _ t__.perf_counter() - start
+        duration _ t__.p_c.. - start
         print('-' * 40)
         print('%.4f \t%s%s = %i' % (duration, indents, name, n))
 
@@ -24,7 +24,7 @@ ______ ti..
         count_down('C', 0.5)
     ])
 
-start _ t__.perf_counter()
+start _ t__.p_c..
 ?.run(main())
 
 print('-' * 40)
