@@ -45,7 +45,7 @@ __ _______ __ _______
     start _ t__.t__()
     pool.apply_async(countdown, args_(COUNT//2,))
     pool.apply_async(countdown, args_(COUNT//2,))
-    pool.close()
+    pool.c..
     pool.j..
 
     print('Multiprocessing program finished.')
