@@ -1,12 +1,12 @@
 # ch19/example2.py
 
-____ datetime ______ datetime
+____ d_t_ ______ d_t_
 ______ ti..
 
 ____ apscheduler.schedulers.background ______ BackgroundScheduler
 
 ___ tick():
-    print(f'Tick! The time is: {datetime.now()}')
+    print(f'Tick! The time is: {d_t_.now()}')
 
 __ _______ __ _______
     scheduler _ BackgroundScheduler()

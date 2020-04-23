@@ -1,13 +1,13 @@
 # ch19/example3.py
 
-____ datetime ______ datetime
+____ d_t_ ______ d_t_
 ______ ti..
 ______ __
 
 ____ apscheduler.schedulers.background ______ BackgroundScheduler
 
 ___ task():
-    print(f'From process {__.getpid()}: The time is {datetime.now()}')
+    print(f'From process {__.getpid()}: The time is {d_t_.now()}')
     print(f'Starting job inside {__.getpid()}')
     t__.s..(4)
     print(f'Ending job inside {__.getpid()}')

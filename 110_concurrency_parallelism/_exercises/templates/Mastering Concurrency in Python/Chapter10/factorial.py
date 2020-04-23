@@ -1,22 +1,22 @@
-______ a..
-______ ti..
-____ datetime ______ datetime
-
-? ___ custom_factorial(name, n):
-    f _ 1
-
-    ___ i __ ra..(2, n + 1):
-        print(f'Task {name}: Compute factorial({i}).')
-        ? ?.s..(1)
-        f *_ i
-
-    print(f'Task {name}: factorial({n}) is {f}.')
-
-? ___ main():
-    tasks _ [custom_factorial('A', 3), custom_factorial('B', 4)]
-    ? ?.gather(*tasks)
-
-start _ t__.t__()
-?.run(main())
-end _ t__.t__()
-print(f'Total time: {end - start : .4f}.')
+# ______ a..
+# ______ ti..
+# ____ d_t_ ______ d_t_
+#
+# ? ___ custom_factorial name n
+#     f _ 1
+#
+#     ___ i __ ra.. 2, ? + 1
+#         print _*Task |? : Compute factorial(|?).')
+#         ? ?.s.. 1
+#         f $_ ?
+#
+#     print _*Task |?: factorial(|?) is |?.')
+#
+# ? ___ main
+#     tasks _ ?('A', 3), ?('B', 4
+#     ? ?.g.. $?
+#
+# start _ t__.t__
+# ?.r.. m..
+# end _ t__.t__
+# print _*Total time: |e.. - s.. : .4_ .
