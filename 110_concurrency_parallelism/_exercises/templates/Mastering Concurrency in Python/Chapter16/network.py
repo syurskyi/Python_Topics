@@ -1,32 +1,32 @@
-# ch16/network.py
-
-______ ti..
-____ random ______ choice
-
-c_ Network:
-    ___  - (self, primary_key, primary_value):
-        self.primary_key _ primary_key
-        self.data _ {primary_key: primary_value}
-
-    ___ -s
-        result _ '{\n'
-        ___ key __ self.data:
-            result +_ f'\t{key}: {self.data[key]};\n'
-
-        r_ result + '}'
-
-    ___ add_node(self, key, value):
-        __ key not __ self.data:
-            self.data[key] _ value
-            r_ T..
-
-        r_ F..
-
-    ___ refresh_primary(self):
-        del self.data[self.primary_key]
-        self.primary_key _ choice(li..(self.data))
-
-    ___ get_primary_value(self):
-        primary_key _ self.primary_key
-        t__.s..(1) # creating a delay
-        r_ self.data[primary_key]
+# # ch16/network.py
+#
+# ______ ti..
+# ____ ra.. ______ ch..
+#
+# c_ Network
+#     ___  -  primary_key, primary_valu
+#          _$? ?
+#          _$data _ |?; ?
+#
+#     ___ -s
+#         result _ '{\n'
+#         ___ key __  _$d..
+#             r.. +_ _*\t|k.. : | _$d..|k.. ;\n'
+#
+#         r_ r.. + '}'
+#
+#     ___ add_node key, value
+#         __ ? no. __  _$d..
+#              _@d..|k.. _ v..
+#             r_ T..
+#
+#         r_ F..
+#
+#     ___ refresh_primary
+#         de.  _$d..| _$p_k..
+#          _$p_k.. _ ch.. li.. _@d..
+#
+#     ___ get_primary_value(
+#         ? _  _$?
+#         t__.s.. 1 # creating a delay
+#         r_  _$d..|?
