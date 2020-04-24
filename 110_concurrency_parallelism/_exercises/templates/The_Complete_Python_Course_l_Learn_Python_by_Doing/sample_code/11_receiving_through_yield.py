@@ -1,21 +1,21 @@
-from collections import deque
-
-friends = deque(('Rolf', 'Jose', 'Charlie', 'Jen', 'Anna'))
-
-
-def friend_upper():
-    while friends:
-        friend = friends.popleft().upper()
-        greeting = yield
-        print(f'{greeting} {friend}')
-
-
-def greet(g):
-    yield from g
-
-
-greeter = greet(friend_upper())
-greeter.send(None)
-greeter.send('Hello')
-print('Hello, world! Multitasking...')
-greeter.send('How are you,')
+# ____ co.. ______ d..
+#
+# friends _ ? 'Rolf', 'Jose', 'Charlie', 'Jen', 'Anna'
+#
+#
+# ___ friend_upper
+#     w__ ?
+#         friend _ ?.p_l_.u..
+#         greeting _ ?
+#         print _*|? |?
+#
+#
+# ___ greet g
+#     ? ____ ?
+#
+#
+# greeter _ g.. ?
+# ?.s.. N..
+# ?.s..('Hello')
+# print('Hello, world! Multitasking...')
+# ?.s..('How are you,')
