@@ -1,2 +1,2 @@
-print("Hello Python Parallel Cookbook!!")
-closeInput = input("Press ENTER to exit")
+# print("Hello Python Parallel Cookbook!!")
+# closeInput _ __.. ("Press ENTER to exit")
