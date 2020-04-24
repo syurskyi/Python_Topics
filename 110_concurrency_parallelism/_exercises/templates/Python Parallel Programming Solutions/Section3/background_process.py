@@ -1,26 +1,25 @@
-import multiprocessing
-import time
-
-def foo():
-    name = multiprocessing.current_process().name
-    print ("Starting %s \n" %name)
-    time.sleep(3)
-    print ("Exiting %s \n" %name)
-    
-
-if __name__ == '__main__':
-    background_process = multiprocessing.Process\
-                         (name='background_process',\
-                          target=foo)
-    background_process.daemon = True
-
-    NO_background_process = multiprocessing.Process\
-                            (name='NO_background_process',\
-                             target=foo)
-    
-    NO_background_process.daemon = False
-    
-    background_process.start()
-    NO_background_process.start()
-    
+# ______ m..
+# ______ ti..
+#
+# ___ foo
+#     name _ ?.c_p.. .n..
+#     print ("Starting @ \n" n..
+#     t__.s..(3)
+#     print ("Exiting @ \n" n..
+#
+#
+# __ _______ __ _______
+#     background_process _ ?.P..\
+#                          (n.._'background_process',\
+#                           t.._?|
+#     ?.d.. _ T..
+#
+#     NO_background_process _ ?.P..\
+#                             (n.._'NO_background_process',\
+#                              t.._?|
+#
+#     ?.d.. _ F..
+#
+#     ?.s..
+#     ?.s..
 
