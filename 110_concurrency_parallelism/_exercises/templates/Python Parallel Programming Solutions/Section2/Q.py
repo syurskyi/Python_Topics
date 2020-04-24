@@ -1,46 +1,46 @@
-from threading import Thread, Event
-from queue import Queue
-import time
-import random
-
-
-class producer(Thread):
-    def __init__(self, queue):
-        Thread.__init__(self)
-        self.queue = queue
-
-    def run(self) :
-        for i in range(10):
-            item = random.randint(0, 256)
-            self.queue.put(item)
-            print ('Producer notify : item N° %d appended to queue by %s \n'\
-                   % (item, self.name))
-            time.sleep(1)
-
-
-
-
-class consumer(Thread):
-    def __init__(self, queue):
-        Thread.__init__(self)
-        self.queue = queue
-
-    def run(self):
-        while True:
-            item = self.queue.get()
-            print ('Consumer notify : %d popped from queue by %s'\
-                   % (item, self.name))
-            self.queue.task_done()
-
-
-if __name__ == '__main__':
-        queue = Queue()
-        t1 = producer(queue)
-        t2 = consumer(queue)
-        t3 = consumer(queue)
-        t1.start()
-        t2.start()
-        t3.start()
-        t1.join()
-        t2.join()
-        t3.join()
+# ____ th.. ______ T.. E..
+# ____ queue ______ Q..
+# ______ ti..
+# ______ ra__
+#
+#
+# c_ producer T..
+#     ___  -  queue
+#         T... -
+#         ? ?
+#
+#     ___ run
+#         ___ i __ ra.. 10
+#             item _ ra__.r_i.. 0, 256
+#             q_.p.. ?
+#             print ('Producer notify : item N° @ appended to queue by @ \n'\
+#                    (i.. n..
+#             t__.s.. 1
+#
+#
+#
+#
+# c_ consumer T..
+#     ___  -  queue
+#         T... -
+#         ? ?
+#
+#     ___ run
+#         w__ T..
+#             item _ q__.g..
+#             print ('Consumer notify : @ popped from queue by @'\
+#                     (i.. n..
+#             q__.t_d..
+#
+#
+# __ _______ __ _______
+#         queue _ Q..
+#         t1 _ p.. q..
+#         t2 _ c.. q..
+#         t3 _ c.. q..
+#         _1.s..
+#         _2.s..
+#         _3.s..
+#         _1.r..
+#         _2.r..
+#         _3.r..
