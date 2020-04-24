@@ -1,16 +1,16 @@
-#alltoall communication – Section 3: Process Based Parallelism
-from mpi4py import MPI
-import numpy
-
-comm = MPI.COMM_WORLD
-size = comm.Get_size()
-rank = comm.Get_rank()
-
-a_size = 1
-senddata = (rank+1)*numpy.arange(size,dtype=int)
-recvdata = numpy.empty(size*a_size,dtype=int)
-comm.Alltoall(senddata,recvdata)
-
-
-print(" process %s sending %s receiving %s"\
-      %(rank , senddata , recvdata))
+# #alltoall communication – Section 3: Process Based Parallelism
+# ____ mpi4py ______ MPI
+# ______ numpy
+#
+# comm _ MPI.COMM_WORLD
+# size _ comm.Get_size()
+# rank _ comm.Get_rank()
+#
+# a_size _ 1
+# senddata _ (rank+1)*numpy.arange(size,dtype_int)
+# recvdata _ numpy.empty(size*a_size,dtype_int)
+# comm.Alltoall(senddata,recvdata)
+#
+#
+# print(" process @ sending @ receiving @"\
+#       @(rank , senddata , recvdata))
