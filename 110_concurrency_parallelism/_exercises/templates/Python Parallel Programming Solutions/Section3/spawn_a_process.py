@@ -1,14 +1,14 @@
-#Spawn a Process – Section 3: Process Based Parallelism
-import multiprocessing
-
-def function(i):
-    print ('called function in process: %s' %i)
-    return
-
-if __name__ == '__main__':
-    Process_jobs = []
-    for i in range(5):
-        p = multiprocessing.Process(target=function, args=(i,))
-        Process_jobs.append(p)
-        p.start()
-        p.join()
+# #Spawn a Process – Section 3: Process Based Parallelism
+# ______ m..
+#
+# ___ function i
+#     print ('called function in process: @' ?
+#     r_
+#
+# __ _______ __ _______
+#     Process_jobs _  # list
+#     ___ i __ ra.. 5
+#         p _ ?.P.. t.._f.. a.._ ?
+#         ?.ap.. ?
+#         ?.s..
+#         ?.r..
