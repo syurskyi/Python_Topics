@@ -1,4 +1,4 @@
-#target_function.py
-def function(i):
- print ('called function in process: %s' %i)
- return
+# #target_function.py
+# ___ function i
+#  print ('called function in process: @' ?
+#  r_
