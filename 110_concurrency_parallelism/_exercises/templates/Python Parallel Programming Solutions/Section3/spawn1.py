@@ -1,10 +1,10 @@
-import multiprocessing
-import target_function
-if __name__ == '__main__':
- Process_jobs = []
- for i in range(5):
-     p = multiprocessing.Process \
-     (target=target_function.function,args=(i,))
-     Process_jobs.append(p)
-     p.start()
-     p.join()
+# ______ m..
+# ______ target_function
+# __ _______ __ _______
+#  Process_jobs _  # list
+#  ___ i __ ra..(5):
+#      p _ ?.P.. \
+#      |t.._t.._f__.f.. a.._ ?
+#      ?.ap.. ?
+#      ?.s..
+#      ?.r..
