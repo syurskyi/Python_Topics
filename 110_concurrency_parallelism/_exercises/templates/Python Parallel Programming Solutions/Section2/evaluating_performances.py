@@ -1,61 +1,61 @@
-from threading import Thread
-
-class threads_object(Thread):
-	def run(self):
-		function_to_run()
-
-class nothreads_object(object):
-	def run(self):
-		function_to_run()
-
-def non_threaded(num_iter):
-	funcs = []
-	for i in range(int(num_iter)):
-		funcs.append(nothreads_object())
-	for i in funcs:
-		i.run()
-
-def threaded(num_threads):
-	funcs = []
-	for i in range(int(num_threads)):
-		funcs.append(threads_object())
-	for i in funcs:
-		i.start()
-	for i in funcs:
-		i.join()
-
-def function_to_run():
- 	import urllib.request
-	for i in range(10):
-		 with urllib.request.urlopen("https://www.packtpub.com/")as f:
-			 f.read(1024)
-
-def show_results(func_name, results):
-	print ("%-23s %4.6f seconds"\
-               % (func_name, results))
-
-if __name__ == "__main__":
-	 import sys
-	 from timeit import Timer
-
-	 repeat = 100
-	 number = 1
-	 num_threads = [ 1, 2, 4, 8]
-print('Starting tests')
-for i in num_threads:
-		 t = Timer("non_threaded(%s)"\
-                           % i, "from __main__ import non_threaded")
-		 best_result =\
-                           min(t.repeat(repeat=repeat, number=number))
-		 show_results("non_threaded (%s iters)"\
-                              % i, best_result)
-
-		 t = Timer("threaded(%s)"\
-                           % i, "from __main__ import threaded")
-		 best_result = \
-                           min(t.repeat(repeat=repeat, number=number))
-		 show_results("threaded (%s threads)"\
-                              % i, best_result)
-
-
-print ('Iterations complete')
+# ____ th.. ______ T..
+#
+# c_ threads_object T..
+# 	___ run
+# 		f..
+#
+# c_ nothreads_object object
+# 	___ run
+# 		f..
+#
+# ___ non_threaded num_iter
+# 	funcs _  # list
+# 	___ i __ ra..(in. ?
+# 		f__.ap.. n..
+# 	___ i __ f..
+# 		i.r..
+#
+# ___ threaded num_threads
+# 	funcs _  # list
+# 	___ i __ ra..(in. ?
+# 		f__.ap.. t..
+# 	___ i __ f..
+# 		i.s..
+# 	___ i __ f..
+# 		i.r..
+#
+# ___ function_to_run
+#  	______ u_l_.re..
+# 	___ i __ ra.. 10
+# 		 w__ u__.re__.u_o..("https://www.packtpub.com/")_ f
+# 			 ?.r.. 1024
+#
+# ___ show_results func_name results
+# 	print ("@-23_ @4.6_ seconds"\
+#                 f_n.. r..
+#
+# __ _______ __ "__main__":
+# 	 ______ ___
+# 	 ____ t_i.. ______ T..
+#
+# 	 repeat _ 100
+# 	 number _ 1
+# 	 num_threads _ [ 1, 2, 4, 8]
+# print('Starting tests')
+# ___ i __ n_t..
+# 		 t _ T..("non_threaded(@)"\
+#                             ? "from __main__ ______ non_threaded")
+# 		 best_result _\
+#                            mi. t.re.. r.._r.. n.._n..
+# 		 show_results("non_threaded (@ iters)"\
+#                                ? b_r..
+#
+# 		 t _ Timer("threaded(@)"\
+#                             ? "from __main__ ______ threaded")
+# 		 best_result _ \
+#                            mi.  t.re..(r.._r.. n.._n..
+# 		 show_results("threaded (@ threads)"\
+#                                ?, b_r..
+#
+#
+# print ('Iterations complete')
