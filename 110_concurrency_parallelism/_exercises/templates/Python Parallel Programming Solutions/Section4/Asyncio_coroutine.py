@@ -1,76 +1,76 @@
-#Asyncio Finite State Machine
-
-import asyncio
-import time
-from random import randint
-
-
-@asyncio.coroutine
-def StartState():
-    print ("Start State called \n")
-    input_value = randint(0,1)
-    time.sleep(1)
-    if (input_value == 0):
-        result = yield from State2(input_value)
-    else :
-        result = yield from State1(input_value)
-    print("Resume of the Transition : \nStart State calling "\
-          + result)
-    
-    
-@asyncio.coroutine
-def State1(transition_value):
-    outputValue =  str(("State 1 with transition value = %s \n"\
-                        %(transition_value)))
-    input_value = randint(0,1)
-    time.sleep(1)
-    print("...Evaluating...")
-    if (input_value == 0):
-        result =  yield from State3(input_value)
-    else :
-        result = yield from State2(input_value)
-    result = "State 1 calling " + result
-    return (outputValue + str(result))
-
-
-@asyncio.coroutine
-def State2(transition_value):
-    outputValue =  str(("State 2 with transition value = %s \n" \
-                        %(transition_value)))
-    input_value = randint(0,1)
-    time.sleep(1)
-    print("...Evaluating...")
-    if (input_value == 0):
-        result = yield from State1(input_value)
-    else :
-        result = yield from State3(input_value)
-    result = "State 2 calling " + result
-    return (outputValue + str(result))
-
-
-@asyncio.coroutine
-def State3(transition_value):
-    outputValue =  str(("State 3 with transition value = %s \n" \
-                        %(transition_value)))
-    input_value = randint(0,1)
-    time.sleep(1)
-    print("...Evaluating...")
-    if (input_value == 0):
-        result = yield from State1(input_value)
-    else :
-        result = yield from EndState(input_value)
-    result = "State 3 calling " + result
-    return (outputValue + str(result))
-
-
-@asyncio.coroutine
-def EndState(transition_value):
-    outputValue =  str(("End State with transition value = %s \n"\
-                        %(transition_value)))
-    print("...Stop Computation...")
-    return (outputValue )
-
-if __name__ == "__main__":
-    print("Finite State Machine simulation with Asyncio Coroutine")
-    loop = asyncio.get_event_loop()
-    loop.run_until_complete(StartState())
+# #Asyncio Finite State Machine
+#
+# ______ a..
+# ______ ti..
+# ____ ra__ ______ r_i..
+#
+#
+# ??.?
+# ___ StartState
+#     print ("Start State called \n")
+#     input_value _ r_i.. 0,1
+#     t__.s.. 1
+#     __ ? __ 0
+#         result _ ? ? _2 ?
+#     ____
+#         result _ ? ? _1 ?
+#     print("Resume of the Transition : \nStart State calling "\
+#           + r..
+#
+#
+# ??.?
+# ___ State1 transition_value
+#     outputValue _  st.(("State 1 with transition value = @ \n"\
+#                         ?
+#     input_value _ r_i.. 0 1
+#     t__.s.. 1
+#     print("...Evaluating...")
+#     __ ? __ 0
+#         result _  ? ? _3 ?
+#     ____ :
+#         result _ ? ? _2 ?
+#     result _ "State 1 calling " + r..
+#     r_  o.. + st. r..
+#
+#
+# ??.?
+# ___ State2 transition_value
+#     outputValue _  st.(("State 2 with transition value = @ \n" \
+#                         ?
+#     input_value _ r_i.. 0 1
+#     t__.s.. 1
+#     print("...Evaluating...")
+#     __ ? __ 0
+#         result _ ? ? _1 ?
+#     ____
+#         result _ ? ? _3 ?
+#     result _ "State 2 calling " + result
+#     r_ (o.. + st. r..
+#
+#
+# ??.?
+# ___ State3 transition_value
+#     outputValue _  st.(("State 3 with transition value = @ \n" \
+#                         ?
+#     input_value _ r_i.. 0 1
+#     t__.s.. 1
+#     print("...Evaluating...")
+#     __ ? __ 0
+#         result _ ? ? _1 ?
+#     ____
+#         result _ ? ? E.. ?
+#     result _ "State 3 calling " + r..
+#     r_  o.. + st. r..
+#
+#
+# ??.?
+# ___ EndState transition_value
+#     outputValue _  st.(("End State with transition value = @ \n"\
+#                         ?
+#     print("...Stop Computation...")
+#     r_ ?
+#
+# __ _______ __ _______
+#     print("Finite State Machine simulation with Asyncio Coroutine")
+#     loop _ ?.g_e_l..
+#     ?.r_u_c.. S..
