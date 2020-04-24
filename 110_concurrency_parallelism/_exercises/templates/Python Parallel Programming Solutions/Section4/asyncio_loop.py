@@ -1,51 +1,51 @@
+# #
+# # Asyncio.loop - Section 4 Asynchronous Programming
+# #
 #
-# Asyncio.loop - Section 4 Asynchronous Programming
 #
-
-
-import asyncio
-import datetime
-import time
-
-def function_1(end_time, loop):
-    print ("function_1 called")
-    print (end_time)
-    if (loop.time() + 1.0) < end_time:
-        loop.call_later(1, function_2, end_time, loop)
-    else:
-        loop.stop()
-
-def function_2(end_time, loop):
-    print ("function_2 called ")
-    print (end_time)
-    if (loop.time() + 1.0) < end_time:
-        loop.call_later(1, function_3, end_time, loop)
-    else:
-        loop.stop()
-
-def function_3(end_time, loop):
-    print ("function_3 called")
-    print (end_time)
-    if (loop.time() + 1.0) < end_time:
-        loop.call_later(1, function_1, end_time, loop)
-    else:
-        loop.stop()
-
-def function_4(end_time, loop):
-    print ("function_5 called")
-    print (end_time)
-    if (loop.time() + 1.0) < end_time:
-        loop.call_later(1, function_4, end_time, loop)
-    else:
-        loop.stop()
-
-loop = asyncio.get_event_loop()
-
-# Schedule the first call to display_date()
-end_loop_1 = loop.time() + 9.0
-loop.call_soon(function_1, end_loop_1, loop)
-#loop.call_soon(function_4, end_loop_1, loop)
-
-# Blocking call interrupted by loop.stop()
-loop.run_forever()
-loop.close()
+# ______ a..
+# ______ d_t_
+# ______ ti..
+#
+# ___ function_1 end_time loop
+#     print ("function_1 called")
+#     print ?
+#     __ (l__.t__ + 1.0) < ?
+#         l__.c_l.. 1 _2, e.. l__
+#     ____
+#         l__.s..
+#
+# ___ function_2 end_time loop
+#     print ("function_2 called ")
+#     print e..
+#     __ (l__.t__ + 1.0) < e..
+#         l__.c_l.. 1 _3 e.. l__
+#     ____
+#         l__.s..
+#
+# ___ function_3 end_time loop
+#     print ("function_3 called")
+#     print e..
+#     __ l__.t__ + 1.0| < e..
+#         l__.c_l.. 1 _1 e.. l__
+#     ____
+#         l__.s..
+#
+# ___ function_4 end_time loop
+#     print ("function_5 called")
+#     print e..
+#     __ l__.t__ + 1.0| < e..
+#         l__.c_l.. 1 _4, e.. l__
+#     ____
+#         l__.s..
+#
+# loop _ ?.g_e_l..
+#
+# # Schedule the first call to display_date()
+# end_loop_1 _ l__.t__ + 9.0
+# l__.c_s.. _1, e_1 l__
+# #loop.call_soon(function_4, end_loop_1, loop)
+#
+# # Blocking call interrupted by loop.stop()
+# l__.r_f..
+# l__.c..
