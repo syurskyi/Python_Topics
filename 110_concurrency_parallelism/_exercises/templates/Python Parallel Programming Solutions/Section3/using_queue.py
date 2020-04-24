@@ -1,46 +1,46 @@
-##Using Queue with multiprocessing – Section 3: Process Based Parallelism
-
-import multiprocessing
-import random
-import time
-
-class producer(multiprocessing.Process):
-    def __init__(self, queue):
-        multiprocessing.Process.__init__(self)
-        self.queue = queue
-
-    def run(self) :
-        for i in range(10):
-            item = random.randint(0, 256)
-            self.queue.put(item)
-            print ("Process Producer : item %d appended to queue %s"\
-                   % (item,self.name))
-            time.sleep(1)
-            print ("The size of queue is %s"\
-                   % self.queue.qsize())
-
-class consumer(multiprocessing.Process):
-    def __init__(self, queue):
-        multiprocessing.Process.__init__(self)
-        self.queue = queue
-
-    def run(self):
-        while True:
-            if (self.queue.empty()):
-                print("the queue is empty")
-            else :
-                time.sleep(2)
-                item = self.queue.get()
-                print ('Process Consumer : item %d popped from by %s \n'\
-                       % (item, self.name))
-                time.sleep(1)
-
-
-if __name__ == '__main__':
-        queue = multiprocessing.Queue()
-        process_producer = producer(queue)
-        process_consumer = consumer(queue)
-        process_producer.start()
-        process_consumer.start()
-        process_producer.join()
-        process_consumer.join()
+# ##Using Queue with multiprocessing – Section 3: Process Based Parallelism
+#
+# ______ m..
+# ______ ra__
+# ______ t__
+#
+# c_ producer ?.P..
+#     ___  - queue
+#         ?.P.. . -
+#         ? ?
+#
+#     ___ run
+#         ___ i __ ra.. 10
+#             item _ ra__.r_i.. 0, 256
+#             q__.p.. ?
+#             print ("P.. Producer : item @d appended to queue @"\
+#                    i.. n..
+#             t__.s.. 1
+#             print ("The size of queue is @"\
+#                     q__.qs..
+#
+# c_ consumer ?.P..
+#     ___  -  queue
+#         ?.P.. . -
+#         ? ?
+#
+#     ___ run
+#         w__ T..
+#             __ q__.e..
+#                 print("the queue is empty")
+#             ____
+#                 t__.s.. 2
+#                 item _ q__.g..
+#                 print ('P.. Consumer : item @d popped from by @ \n'\
+#                         i.. n..
+#                 t__.s.. 1
+#
+#
+# __ _______ __ _______
+#         queue _ ?.Q..
+#         process_producer _ ? ?
+#         process_consumer _ ? ?
+#         _p__.s..
+#         _c__.s..
+#         _p__.r..
+#         _c__.r..
