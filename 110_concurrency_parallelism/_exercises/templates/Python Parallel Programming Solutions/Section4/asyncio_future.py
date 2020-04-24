@@ -1,48 +1,48 @@
-"""
-Asyncio.Futures -  Section 4 Asynchronous Programming
-"""
-import asyncio
-import sys
-
-#SUM OF N INTEGERS
-@asyncio.coroutine
-def first_coroutine(future,N):
-    count = 0
-    for i in range(1,N+1):
-        count=count + i
-    yield from asyncio.sleep(3)
-    future.set_result("first coroutine (sum of N integers) result = "\
-                      + str(count))
-
-
-#FACTORIAL(N)
-@asyncio.coroutine
-def second_coroutine(future,N):
-    count = 1
-    for i in range(2, N+1):
-        count *= i
-    yield from asyncio.sleep(4)
-    future.set_result("second coroutine (factorial) result = "\
-                      + str(count))
-
-def got_result(future):
-    print(future.result())
-
-
-if __name__ == "__main__":
-    N1 = int(sys.argv[1])
-    N2 = int(sys.argv[2])
-
-    loop = asyncio.get_event_loop()
-    future1 = asyncio.Future()
-    future2 = asyncio.Future()
-
-    tasks = [
-        first_coroutine(future1,N1),
-        second_coroutine(future2,N2)]
-
-    future1.add_done_callback(got_result)
-    future2.add_done_callback(got_result)
-
-    loop.run_until_complete(asyncio.wait(tasks))
-    loop.close()
+# """
+# Asyncio.Futures -  Section 4 Asynchronous Programming
+# """
+# ______ a..
+# ______ ___
+#
+# #SUM OF N INTEGERS
+# ??.?
+# ___ first_coroutinem future N
+#     count _ 0
+#     ___ i __ ra.. 1 ?+1
+#         c.._c.. + ?
+#     ? ? ?.s.. 3
+#     f__.s_r..("first coroutine (sum of N integers) result = "\
+#                       + st. c..
+#
+#
+# #FACTORIAL(N)
+# ??.?
+# ___ second_coroutine future N
+#     count _ 1
+#     ___ i __ ra.. 2 ?+1
+#         c.. *_ ?
+#     ? ? ?.s.. 4
+#     f__.s_r..("second coroutine (factorial) result = "\
+#                       + st. c..
+#
+# ___ got_result future
+#     print ?.r..
+#
+#
+# __ _______ __ _______
+#     N1 _ in. ___.a.. 1
+#     N2 _ in. ___.a.. 2
+#
+#     loop _ ?.g_e_l..
+#     future1 _ ?.F..
+#     future2 _ ?.F..
+#
+#     tasks _ |
+#         first_coroutine _1 _1
+#         second_coroutine _2 _2
+#
+#     _1.a_d_c.. g_r..
+#     _2.a_d_c.. g_r..
+#
+#     ?.r_u_c.. ?.w.. t..
+#     ?.c..
