@@ -1,14 +1,14 @@
-import threading
-
-def function(i):
-    print("function called by thread %i\n" %i)
-    return
-
-threads = []
-for i in range(5):
-    t = threading.Thread\
-        (target=function, args=(i,))
-    threads.append(t)
-    t.start()
-    t.join()
+# ______ th..
+#
+# ___ function i
+#     print("function called by thread @\n" ?
+#     r_
+#
+# threads _  # list
+# ___ i __ ra.. 5
+#     t _ ?.T..\
+#          t.._f.. a.._ ?
+#     ?.ap.. ?
+#     ?.s..
+#     ?.r..
 
