@@ -1,24 +1,22 @@
-
-
-import multiprocessing
-import time
-
-def foo():
-    print ('Starting function')
-    time.sleep(0.1)
-    print ('Finished function')
-
-if __name__ == '__main__':
-    p = multiprocessing.Process(target=foo)
-    print ('Process before execution:', p, p.is_alive())
-
-    p.start()
-    print ('Process running:', p, p.is_alive())
-
-    p.terminate()
-    print ('Process terminated:', p, p.is_alive())
-
-    p.join()
-    print ('Process joined:', p, p.is_alive())
-
-    print ('Process exit code:', p.exitcode)
+# ______ m..
+# ______ ti..
+#
+# ___ foo
+#     print ('Starting function')
+#     t__.s.. 0.1
+#     print ('Finished function')
+#
+# __ _______ __ _______
+#     p _ ?.P..  t.._?
+#     print ('Process before execution:' ? p.i_a..
+#
+#     ?.s..
+#     print ('Process running:' ? p.i_a..
+#
+#     ?.t..
+#     print ('Process terminated:' ? p.i_a..
+#
+#     p.r..
+#     print ('Process joined:' ? p.i_a..
+#
+#     print ('Process exit code:', ?.e..
