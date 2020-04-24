@@ -1,62 +1,62 @@
-#Virtual Topology– Section 3: Process Based Parallelism
-from mpi4py import MPI
-import numpy as np
-
-UP = 0
-DOWN = 1
-LEFT = 2
-RIGHT = 3
-neighbour_processes = [0,0,0,0]
-if __name__ == "__main__":
-    comm = MPI.COMM_WORLD
-    rank = comm.rank
-    size = comm.size
-
-    grid_rows = int(np.floor(np.sqrt(comm.size)))
-    grid_column = comm.size // grid_rows
-
-
-    if grid_rows*grid_column > size:
-        grid_column -= 1
-    if grid_rows*grid_column > size:
-        grid_rows -= 1
-
-    if (rank == 0) :
-        print("Building a %d x %d grid topology:"\
-              % (grid_rows, grid_column) )
-
-
-#Bidimensional MxN Mesh
-##    cartesian_communicator = comm.Create_cart( (grid_rows, grid_column), periods=(False, False), reorder=True)
-##    my_mpi_row, my_mpi_col = cartesian_communicator.Get_coords( cartesian_communicator.rank )
-
-   # print ("rank = %s grid row = %s grid column =%s" %(rank, my_mpi_row, my_mpi_col))
-
-
-    #Thorus MxN
-    cartesian_communicator = \
-                           comm.Create_cart( \
-                               (grid_rows, grid_column), \
-                               periods=(True, True), reorder=True)
-    my_mpi_row, my_mpi_col = \
-                cartesian_communicator.Get_coords\
-                ( cartesian_communicator.rank )
-##    print ("rank = %s grid row = %s grid column =%s" %(rank, my_mpi_row, my_mpi_col))
-##
-
-
-    neighbour_processes[UP], neighbour_processes[DOWN]\
-                             = cartesian_communicator.Shift(0, 1)
-    neighbour_processes[LEFT],  \
-                               neighbour_processes[RIGHT]  = \
-                               cartesian_communicator.Shift(1, 1)
-    print ("Process = %s \
-row = %s \
-column = %s ----> neighbour_processes[UP] = %s \
-neighbour_processes[DOWN] = %s \
-neighbour_processes[LEFT] =%s neighbour_processes[RIGHT]=%s" \
-           %(rank, my_mpi_row, \
-             my_mpi_col,neighbour_processes[UP], \
-             neighbour_processes[DOWN], \
-             neighbour_processes[LEFT] , \
-             neighbour_processes[RIGHT]))
+# #Virtual Topology– Section 3: Process Based Parallelism
+# ____ mpi4py ______ MPI
+# ______ numpy as np
+#
+# UP _ 0
+# DOWN _ 1
+# LEFT _ 2
+# RIGHT _ 3
+# neighbour_processes _ [0,0,0,0]
+# __ _______ __ "__main__":
+#     comm _ MPI.COMM_WORLD
+#     rank _ comm.rank
+#     size _ comm.size
+#
+#     grid_rows _ in.(np.floor(np.sqrt(comm.size)))
+#     grid_column _ comm.size // grid_rows
+#
+#
+#     __ grid_rows*grid_column > size:
+#         grid_column -_ 1
+#     __ grid_rows*grid_column > size:
+#         grid_rows -_ 1
+#
+#     __ (rank __ 0) :
+#         print("Building a @d x @d grid topology:"\
+#               @ (grid_rows, grid_column) )
+#
+#
+# #Bidimensional MxN Mesh
+# ##    cartesian_communicator = comm.Create_cart( (grid_rows, grid_column), periods=(False, False), reorder=True)
+# ##    my_mpi_row, my_mpi_col = cartesian_communicator.Get_coords( cartesian_communicator.rank )
+#
+#    # print ("rank = @s grid row = @s grid column =@s" @(rank, my_mpi_row, my_mpi_col))
+#
+#
+#     #Thorus MxN
+#     cartesian_communicator _ \
+#                            comm.Create_cart( \
+#                                (grid_rows, grid_column), \
+#                                periods_(T.., T..), reorder_True)
+#     my_mpi_row, my_mpi_col _ \
+#                 cartesian_communicator.Get_coords\
+#                 ( cartesian_communicator.rank )
+# ##    print ("rank = @s grid row = @s grid column =@s" @(rank, my_mpi_row, my_mpi_col))
+# ##
+#
+#
+#     neighbour_processes[UP], neighbour_processes[DOWN]\
+#                              _ cartesian_communicator.Shift(0, 1)
+#     neighbour_processes[LEFT],  \
+#                                neighbour_processes[RIGHT]  _ \
+#                                cartesian_communicator.Shift(1, 1)
+#     print ("Process = @ \
+# row = @ \
+# column = @ ----> neighbour_processes[UP] = @ \
+# neighbour_processes[DOWN] = @ \
+# neighbour_processes[LEFT] =@ neighbour_processes[RIGHT]=@" \
+#            @(rank, my_mpi_row, \
+#              my_mpi_col,neighbour_processes[UP], \
+#              neighbour_processes[DOWN], \
+#              neighbour_processes[LEFT] , \
+#              neighbour_processes[RIGHT]))
