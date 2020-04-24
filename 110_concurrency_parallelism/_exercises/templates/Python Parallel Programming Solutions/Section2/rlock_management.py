@@ -1,51 +1,51 @@
-import threading
-import time
-
-class Box(object):
-    lock = threading.RLock()
-    def __init__(self):
-        self.total_items = 0
-    def execute(self,n):
-        Box.lock.a..
-        self.total_items += n
-        Box.lock.release()
-    def add(self):
-        Box.lock.a..
-        self.execute(1)
-        Box.lock.release()
-    def remove(self):
-        Box.lock.a..
-        self.execute(-1)
-        Box.lock.release()
-
-## These two functions run n in separate
-## threads and call the Box's methods
-
-def adder(box,items):
-    while items > 0:
-        print ("adding 1 item in the box\n")
-        box.add()
-        time.sleep(5)
-        items -= 1
-
-def remover(box,items):
-    while items > 0:
-        print ("removing 1 item in the box")
-        box.remove()
-        time.sleep(5)
-        items -= 1
-
-## the main program build some
-## threads and make sure it works
-if __name__ == "__main__":
-    items = 5
-    print ("putting %s items in the box " % items)
-    box = Box()
-    t1 = threading.Thread(target=adder,args=(box,items))
-    t2 = threading.Thread(target=remover,args=(box,items))
-    t1.start()
-    t2.start()
-    t1.join()
-    t2.join()
-    print ("%s items still remain in the box " % box.total_items)
-
+# ______ th..
+# ______ ti..
+#
+# c_ Box o..
+#     lock _ ?.RL..
+#     ___  -
+#         total_items _ 0
+#     ___ e.. n
+#         ?.l__.a..
+#         t_i.. +_ n
+#         ?.l__.r..
+#     ___ add
+#         ?.l__.a..
+#         e.. 1
+#         ?.l__.r..
+#     ___ remove
+#         ?.l__.a..
+#         e.. -1
+#         ?.l__.r..
+#
+# ## These two functions run n in separate
+# ## threads and call the Box's methods
+#
+# ___ adder box items
+#     w__ i.. > 0
+#         print ("adding 1 item in the box\n")
+#         b__.a..
+#         t__.s.. 5
+#         i.. -_ 1
+#
+# ___ remover box items
+#     w__ i.. > 0
+#         print ("removing 1 item in the box")
+#         b__.r..
+#         t__.s.. 5
+#         i__ -_ 1
+#
+# ## the main program build some
+# ## threads and make sure it works
+# __ _______ __ "__main__":
+#     items _ 5
+#     print ("putting @ items in the box "  ?
+#     box _ ?
+#     t1 _ ?.T.. t.._a.. a.._ b.. i..
+#     t2 _ ?.T.. t.._r.. a.._ b.. i..
+#     _1.s..
+#     _2.s..
+#     _1.r..
+#     _2.r..
+#     print ("@ items still remain in the box "  b__.t_i..
+#
