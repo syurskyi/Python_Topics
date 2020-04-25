@@ -6,7 +6,7 @@ sites _   # list
 # need a cursor to keep track of where we are
 cur _ conn.cursor
 ___ row __ cur.ex..("SELECT * FROM moz_cookies"
-    __ row[1] not __ sites:
+    __ row[1] no. __ sites:
         sites.ap..(row[1])
 
 sites.sort

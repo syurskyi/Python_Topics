@@ -9,12 +9,12 @@ ___ scan(ip, users
         rsp _ s.r..(1024)
         s.s..(b"HELO friend\n")
         rsp _ s.r..(1024)
-        __ b"250" not __ rsp:
+        __ b"250" no. __ rsp:
             print("[!] Something went wrong, exiting.")
             ___.e..(0)
         s.s..(b"MAIL FROM:nice@guy.com\n")
         rsp _ s.r..(1024)
-        __ b"250" not __ rsp:
+        __ b"250" no. __ rsp:
             print("[!] Something went wrong, exiting.")
             ___.e..(0)
         ___ user __ users:

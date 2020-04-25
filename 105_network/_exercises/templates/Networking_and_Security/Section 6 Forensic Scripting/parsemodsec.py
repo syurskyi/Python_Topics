@@ -49,7 +49,7 @@ p__sedArgs _ vars(argParser.parse_args)
 inputFileName _ p__sedArgs['i']
 outputFileName _ p__sedArgs['o']
 
-__ not __.pa__.exists(inputFileName
+__ no. __.pa__.exists(inputFileName
     print("You must specify an input file that exists")
     e..
 
