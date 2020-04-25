@@ -1,53 +1,53 @@
-____ scapy.all ______ *
-______ ___, a_p_, m.., l..
-____ d_t_ ______ d_t_
-
-?.getLogger("scapy.runtime").sL..(?.E..)
-conf.verb _ 0
-
-
-___ scanPort(ip, port
-    srcp _ RandShort
-    pkt _ sr1(IP(dst_ip) / TCP(sport_srcp, dport_port, flags_"S"))
-    flag _ pkt.getlayer(TCP).flags
-    __ flag __ 0x12:
-        print("[+] Port " + st.(port) + " open")
-        s..(IP(dst_ip) / TCP(sport_srcp, dport_port, flags_"R"))
-
-
-___ main(args
-    start _ d_t_.now
-    args.throttle _ fl..(args.throttle)
-    print("============================================================")
-    print("Stealh Port Scanning " + args.IP + " for ports " + st.(args.sport)
-          + " - " + st.(args.eport))
-    print("Started @ " + st.(start))
-    print("============================================================")
-    ___ port __ ra.. in.(args.sport), in.(args.eport + 1)
-        p _ ?.Process(t.._scanPort, args_(args.IP, port))
-        p.start
-        t__.s..(args.throttle)
-    t__.s..(3)
-    stop _ d_t_.now
-    print("============================================================")
-    print("Scan Duration: " + st.(stop - start))
-    print("Completed @ " + st.(stop))
-    print("============================================================")
-
-
-__ _______ __ _______
-    parser _ a_p_.A_P..
-    parser.a_a..("IP", action_"store", help_"IP to port scan", type_st.)
-    parser.a_a..("sport", action_"store", nargs_'?', default_1,
-                        const_1, help_"Start Port Range", type_int)
-    parser.a_a..("eport", action_"store", nargs_'?', default_1023,
-                        const_1023, help_"End Port Range", type_int)
-    parser.a_a..("-t", "--throttle", action_"store",
-                        help_"throttle connection attempts", nargs_'?', default_0.25, const_0.25)
-
-    __ le.(___.argv[1:]) __ 0:
-        parser.parse_args
-        parser.e..
-
-    args _ parser.parse_args
-    main(args)
+# ____ sc__.all ______ _
+# ______ ___, a_p_, m.., l..
+# ____ d_t_ ______ d_t_
+#
+# ?.gL.."scapy.runtime" .sL.. ?.E..
+# c__.v.. _ 0
+#
+#
+# ___ scanPort ip port
+#     srcp _ RandShort
+#     pkt _ sr1 I. dst_ip / T.. sport_sr.. dport_p.. fl.._"S"
+#     flag _ ?.g.. T...f..
+#     __ ? __ 0x12
+#         print("[+] Port " + st. p.. + " open"
+#         s.. I.bdst_ip / T.. sport_sr.. dport_p.. f.._"R"
+#
+#
+# ___ main args
+#     start _ d_t_.n..
+#     args.throttle _ fl.. ?.th..
+#     print("============================================================")
+#     print("Stealh Port Scanning " + ?.I. + " for ports " + st. ?.s..
+#           + " - " + st. ?.e..
+#     print("Started @ " + st. s..
+#     print("============================================================")
+#     ___ port __ ra.. in. ?.s.. in. ?.e.. + 1
+#         p _ ?.P.. t.._? a.._ ?.I. p..
+#         ?.s..
+#         t__.s..(?.t..
+#     t__.s.. 3
+#     stop _ d_t_.n..
+#     print("============================================================")
+#     print("Scan Duration: " + st. s.. - s..
+#     print("Completed @ " + st. s..
+#     print("============================================================")
+#
+#
+# __ _______ __ _______
+#     parser _ a_p_.A_P..
+#     ?.a_a.. "IP", a.._"store", h.._"IP to port scan", ty.._st.
+#     ?.a_a.. "sport", a.._"store", n.._'?', d.._1,
+#                         c.._1, h.._"Start Port Range", ty.._in.
+#     ?.a_a.. "eport", a.._"store", n.._'?', d.._1023,
+#                         c.._1023, h.._"End Port Range", ty.._in.
+#     ?.a_a.. "-t", "--throttle", a.._"store",
+#                         h.._"throttle connection attempts", n.._'?', d.._0.25, c.._0.25
+#
+#     __ le. ___.a.. 1; __ 0
+#         ?.p_a..
+#         ?.e..
+#
+#     args _ ?.p_a..
+#     main ?
