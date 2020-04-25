@@ -1,32 +1,32 @@
-#Importing the necessary modules
-import sys
-
-from ip_file_valid import ip_file_valid
-from ip_addr_valid import ip_addr_valid
-from ip_reach import ip_reach
-from ssh_connection import ssh_connection
-from create_threads import create_threads
-
-#Saving the list of IP addresses in ip.txt to a variable
-ip_list = ip_file_valid()
-
-#Verifying the validity of each IP address in the list
-try:
-    ip_addr_valid(ip_list)
-    
-except KeyboardInterrupt:
-    print("\n\n* Program aborted by user. Exiting...\n")
-    sys.exit()
-
-#Verifying the reachability of each IP address in the list
-try:
-    ip_reach(ip_list)
-    
-except KeyboardInterrupt:
-    print("\n\n* Program aborted by user. Exiting...\n")
-    sys.exit()
-
-#Calling threads creation function for one or multiple SSH connections
-create_threads(ip_list, ssh_connection)
-
-#End of program
+# #Importing the necessary modules
+# ______ ___
+#
+# ____ i_f_v.. ______ i_f_v
+# ____ i_a_v ______ i_a_v
+# ____ i_r ______ i_r
+# ____ s_c ______ s_c
+# ____ c_t ______ c_t
+#
+# #Saving the list of IP addresses in ip.txt to a variable
+# ip_list _ i_f_v..
+#
+# #Verifying the validity of each IP address in the list
+# ___
+#     ip_addr_valid ?
+#
+# ______ K..
+#     print("\n\n* Program aborted by user. Exiting...\n")
+#     ___.e..
+#
+# #Verifying the reachability of each IP address in the list
+# ___
+#     i._r.. ?
+#
+# ______ K..
+#     print("\n\n* Program aborted by user. Exiting...\n")
+#     ___.e..
+#
+# #Calling threads creation function for one or multiple SSH connections
+# c_t.. i_l.. s_c..
+#
+# #End of program
