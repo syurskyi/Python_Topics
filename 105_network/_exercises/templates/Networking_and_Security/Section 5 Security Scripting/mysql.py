@@ -1,20 +1,15 @@
-#!/usr/bin/python
-__author__ = 'kilroy'
-#  (c) 2014, WasHere Consulting, Inc.
-#  Written for Infinite Skills
+______ MySQLdb
 
-import MySQLdb
+___
+    db _ MySQLdb.c..(host_"localhost", user_"ric", p__swd_"P4ssw0rd!", db_"myDB")
 
-try:
-    db = MySQLdb.connect(host="localhost", user="ric", passwd="P4ssw0rd!", db="myDB")
+    curs _ db.cursor
 
-    curs = db.cursor()
+    curs.ex..("select * from tblGrades")
 
-    curs.execute("select * from tblGrades")
+    ___ row __ curs.fetchall
+        print("Name: @, Grade: @"  (row[1], row[2]))
 
-    for row in curs.fetchall():
-        print("Name: %s, Grade: %s" % (row[1], row[2]))
-
-except Exception as e:
+______ E.. __ e:
     print(e)
 

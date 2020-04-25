@@ -1,25 +1,20 @@
-#!/usr/bin/python
-__author__ = 'kilroy'
-#  (c) 2014, WasHere Consulting, Inc.
-#  Written for Infinite Skills
+_____ h_l_
+______ b__e64
+______ string
 
-import httplib
-import base64
-import string
+h _ "172.30.42.127"
+u _ "ric"
+p _ "P4ssw0rd"
 
-h = "172.30.42.127"
-u = "ric"
-p = "P4ssw0rd"
-
-authToken = base64.encodestring('%s:%s' % (u, p)).replace('\n', '')
+authToken _ b__e64.encodestring('@:@'  (u, p)).r..('\n', '')
 print(authToken)
 
-req = httplib.HTTP(h)
-req.putrequest("GET", "/protected/index.html")
-req.putheader("Host", h)
-req.putheader("Authorization", "Basic %s" % authToken)
-req.endheaders()
-req.send("")
+req _ h_l_.H..(h)
+req.p_r_("GET", "/protected/index.html")
+req.p_h_("Host", h)
+req.p_h_("Authorization", "Basic @"  authToken)
+req.e_h_
+req.s..("")
 
-statusCode, statusMsg, headers = req.getreply()
+statusCode, statusMsg, headers _ req.g_r..
 print("Response: ", statusMsg)

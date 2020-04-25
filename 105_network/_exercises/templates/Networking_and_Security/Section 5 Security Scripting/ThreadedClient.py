@@ -1,26 +1,21 @@
-#!/usr/bin/python
-__author__ = 'kilroy'
-#  (c) 2014, WasHere Consulting, Inc.
-#  Written for Infinite Skills
+______ ?
+______ th..
+______ _2
 
-import socket
-import threading
-import urllib2
+c_ clientConnect(?.T..
+    ___ __init__(self
+        ?.T...__init__(self)
 
-class clientConnect(threading.Thread):
-    def __init__(self):
-        threading.Thread.__init__(self)
-
-    def run(self):
-        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        addr = ("www.google.com", 443)
-        sock.connect(addr)
+    ___ run(self
+        sock _ ?.?(?.A.. ?.S..
+        addr _ ("www.google.com", 443)
+        sock.c..(addr)
         print("Connected")
 
 
-sockClients = []
-for i in range(1,100):
-    s = clientConnect()
-    s.start()
+sockClients _   # list
+___ i __ ra.. 1,100
+    s _ clientConnect
+    s.start
     print("started ", i)
-    sockClients.append(s)
+    sockClients.ap..(s)

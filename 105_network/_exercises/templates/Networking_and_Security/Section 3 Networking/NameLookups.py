@@ -1,9 +1,4 @@
-#!/usr/bin/python3
-__author__ = 'kilroy'
-#  (c) 2014, WasHere Consulting, Inc.
-#  Written for Infinite Skills
+______ so..
 
-import socket
-
-print(socket.gethostbyaddr("8.8.8.8"))
-print(socket.gethostbyname("www.google.com"))
+print(?.gethostbyaddr("8.8.8.8"))
+print(?.g_h_b_n..("www.google.com"))

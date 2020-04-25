@@ -1,15 +1,10 @@
-#!/usr/bin/python
-__author__ = 'kilroy'
-#  (c) 2014, WasHere Consulting, Inc.
-#  Written for Infinite Skills
-
 #  this requires NTFS on the file system
-fh = open("file.txt:myfile", "w")
-fh.write("this is a test")
-fh.close()
+fh _ o..("file.txt:myfile", _
+fh.w..("this is a test")
+fh.c..
 
-fh = open("file.txt:myfile", "r")
-data = fh.read(100)
+fh _ o..("file.txt:myfile", "r")
+data _ fh.r..(100)
 print(data)
 
 

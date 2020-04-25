@@ -1,17 +1,12 @@
-#!/usr/bin/python
-__author__ = 'kilroy'
-#  (c) 2014, WasHere Consulting, Inc.
-#  Written for Infinite Skills
+______ h_l_
 
-import httplib
+host _ "172.30.42.126"
 
-host = "172.30.42.126"
+req _ h_l_.H..(host)
+req.p_r_("HEAD", "/")
+req.p_h_("Host", host)
+req.e_h_
+req.s..("")
 
-req = httplib.HTTP(host)
-req.putrequest("HEAD", "/")
-req.putheader("Host", host)
-req.endheaders()
-req.send("")
-
-statusCode, statusMsg, headers = req.getreply()
+statusCode, statusMsg, headers _ req.g_r..
 print("Status: ", statusCode)

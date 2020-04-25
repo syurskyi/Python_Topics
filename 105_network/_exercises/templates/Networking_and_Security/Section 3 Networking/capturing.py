@@ -1,15 +1,13 @@
-#!/usr/bin/python
+______ pcapy
 
-import pcapy
-
-devs = pcapy.findalldevs()
+devs _ pcapy.findalldevs
 print(devs)
 
 #  device, # of byte to capture per packet, promiscuous mode, timeout (ms)
-cap = pcapy.open_live("eth0", 65536 , 1 , 0)
+cap _ pcapy.open_live("eth0", 65536 , 1 , 0)
 
-count = 1
-while count:
-    (header, payload) = cap.next()
+count _ 1
+w__ count:
+    (header, payload) _ cap.n..
     print(count)
-    count = count + 1
+    count _ count + 1

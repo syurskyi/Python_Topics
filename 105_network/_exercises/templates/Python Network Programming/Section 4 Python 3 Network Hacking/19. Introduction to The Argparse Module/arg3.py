@@ -1,33 +1,33 @@
-import argparse
+______ a_p_
 
 #define ArgumentParser
-parser = argparse.ArgumentParser()
+parser _ a_p_.A_P..
 
 #define argument names
-parser.add_argument('-s', action='store', help='Store a simple value')
+parser.a_a..('-s', action_'store', help_'Store a simple value')
 
-parser.add_argument('-c', action='store_const', const='value-to-store',
-                    help='Store a constant value')
+parser.a_a..('-c', action_'store_const', const_'value-to-store',
+                    help_'Store a constant value')
 
-parser.add_argument('-a', action='append', default=[],
-                    help='Add repeated values to a list',)
+parser.a_a..('-a', action_'append', default_[],
+                    help_'Add repeated values to a list',)
 
-parser.add_argument('-A', action='append_const', const='value-1-to-append',
-                    default=[], dest='const_collection',
-                    help='Add different values to list')
+parser.a_a..('-A', action_'append_const', const_'value-1-to-append',
+                    default_[], dest_'const_collection',
+                    help_'Add different values to list')
 
-parser.add_argument('-B', action='append_const', const='value-2-to-append',
-                    dest='const_collection',
-                    help='Add different values to list')
+parser.a_a..('-B', action_'append_const', const_'value-2-to-append',
+                    dest_'const_collection',
+                    help_'Add different values to list')
 
-parser.add_argument('--version', action='version', version='%(prog)s 1.0')
+parser.a_a..('--version', action_'version', version_'%(prog)s 1.0')
 
 #parse arguments
-args = parser.parse_args()
+args _ parser.parse_args
 
 #print arguments to screen
-print ('simple_value     : ' + str(args.s))
-print ('constant_value   : ' + str(args.c))
-print ('collection       : ' + str(args.a))
-print ('const_collection : ' + str(args.const_collection))
-print ('version          : ' + str(args.version))
+print ('simple_value     : ' + st.(args.s))
+print ('constant_value   : ' + st.(args.c))
+print ('collection       : ' + st.(args.a))
+print ('const_collection : ' + st.(args.const_collection))
+print ('version          : ' + st.(args.version))

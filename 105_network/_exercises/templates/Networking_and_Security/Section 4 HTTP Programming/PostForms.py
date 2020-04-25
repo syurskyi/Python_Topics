@@ -1,15 +1,10 @@
-#!/usr/bin/python
-__author__ = 'kilroy'
-#  (c) 2014, WasHere Consulting, Inc.
-#  Written for Infinite Skills
+______ _2
+______ u_l_
 
-import urllib2
-import urllib
-
-url = "http://172.30.42.127/test.php"
-data = {'txtName' : 'Ric', 'txtAge' : '19', 'btnSubmit' : 'Submit'}
-params = urllib.urlencode(data)
-req = urllib2.Request(url, data=params)
-handle = urllib2.urlopen(req)
-page = handle.read()
+url _ "http://172.30.42.127/test.php"
+data _ {'txtName' : 'Ric', 'txtAge' : '19', 'btnSubmit' : 'Submit'}
+params _ u_l_.urlencode(data)
+req _ _2.R..(url, data_params)
+handle _ _2.u_o..(req)
+page _ handle.r..
 print(page)

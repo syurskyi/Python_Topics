@@ -1,23 +1,20 @@
-# Copyright (c) Twisted Matrix Laboratories.
-# See LICENSE for details.
+____ twisted.internet ______ reactor, protocol
 
-from twisted.internet import reactor, protocol
-
-class Echo(protocol.Protocol):
+c_ Echo(protocol.Protocol
     """This is just about the simplest possible protocol"""
     
-    def dataReceived(self, data):
+    ___ dataReceived(self, data
         "As soon as any data is received, write it back."
-        self.transport.write(data)
+        self.transport.w..(data)
         print(data)
 
-def main():
+___ main
     """This runs the protocol on port 8000"""
-    factory = protocol.ServerFactory()
-    factory.protocol = Echo
-    reactor.listenTCP(8000,factory)
-    reactor.run()
+    factory _ protocol.ServerFactory
+    factory.protocol _ Echo
+    reactor.l..TCP(8000,factory)
+    reactor.run
 
 # this only runs if the module was *not* imported
-if __name__ == '__main__':
-    main()
+__ __name__ __ '__main__':
+    main

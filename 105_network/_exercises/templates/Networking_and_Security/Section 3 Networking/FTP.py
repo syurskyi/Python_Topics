@@ -1,21 +1,16 @@
-#!/usr/bin/python3
-__author__ = 'kilroy'
-#  (c) 2014, WasHere Consulting, Inc.
-#  Written for Infinite Skills
+______ f_l.
 
-import ftplib
+f _ ?.FTP("172.30.42.127")
 
-f = ftplib.FTP("172.30.42.127")
-
-try:
-    f.login("ric", "P4ssw0rd!")
-    print(f.getwelcome())
+___
+    f.l..("ric", "P4ssw0rd!")
+    print(f.g_w_
     f.delete("myfile")
-    print(f.dir())
-    f.set_pasv(1)
-    f.storbinary("STOR myfile", open("myfile", "rb"))
-    print(f.dir())
-except Exception as e:
+    print(f.dir)
+    f.set_p__v(1)
+    f.storbinary("STOR myfile", o..("myfile", __))
+    print(f.dir)
+______ E.. __ e:
     print("Exception: ", e)
-finally:
-    f.close()
+f..
+    f.c..

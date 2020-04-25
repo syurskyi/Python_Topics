@@ -1,16 +1,16 @@
-import socket
+______ so..
 
-HOST = '127.0.0.1'  # Standard loopback interface address (localhost)
-PORT = 8081        # Port to listen on (non-privileged ports are > 1023)
+HOST _ '127.0.0.1'  # Standard loopback interface address (localhost)
+PORT _ 8081        # Port to listen on (non-privileged ports are > 1023)
 
-with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-    s.bind((HOST, PORT))
-    s.listen()
-    conn, addr = s.accept()
-    with conn:
+w__ ?.?(?.A.. ?.S.. __ s:
+    s.b..((HOST, PORT))
+    s.l..
+    conn, addr _ s.a..
+    w__ conn:
         print('Connected by', addr)
-        while True:
-            data = conn.recv(1024)
-            if not data:
-                break
-            conn.sendall(data)
+        w__ T..:
+            data _ conn.r..(1024)
+            __ not data:
+                b..
+            conn.s_a..(data)

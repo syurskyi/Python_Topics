@@ -1,59 +1,59 @@
-import os, argparse, socket, socketserver, binascii
+______ __, a_p_, so.., so..server, bin__cii
 
-class tcpServer(socketserver.BaseRequestHandler):
-    def handle(self):
-        data = self.request.recv(512).strip()
-        if data.startswith(b"send:"):
-            fle = data.split(b":")[1]
-            print("Receiving File: " + fle.decode())
-            with open(str(fle.decode("utf-8")), 'wb') as f:
-                while data:
-                    data = bytearray(self.request.recv(512).strip())
-                    if len(data) % 2 == 0:
-                        f.write(binascii.unhexlify(data))
-                    else:
-                        f.write(binascii.unhexlify(data.append(0)))
+c_ tcpServer(socketserver.B__eR..Handler
+    ___ handle(self
+        data _ self.request.r..(512).strip
+        __ data.startswith(b"send:"
+            fle _ data.sp..(b":")[1]
+            print("Receiving File: " + fle.d..)
+            w__ o..(st.(fle.d..("utf-8")), 'wb') __ f:
+                w__ data:
+                    data _ bytearray(self.request.r..(512).strip)
+                    __ le.(data)  2 __ 0:
+                        f.w..(bin__cii.unhexlify(data))
+                    ____
+                        f.w..(bin__cii.unhexlify(data.ap..(0)))
         print ("File Received.\n-----------------------------------")
 
-def startServer(args):
-    server = socketserver.TCPServer(("", args.port), tcpServer)
+___ startServer(args
+    server _ socketserver.T_S_(("", args.port), tcpServer)
     print("[Server Started]")
-    server.serve_forever()
+    server.serve_forever
 
-def startClient(args):
-    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    sock.connect((args.ip, args.port))
-    path, fle = os.path.split(args.file)
+___ startClient(args
+    sock _ ?.?(?.A.. ?.S..
+    sock.c..((args.ip, args.port))
+    pa__, fle _ __.pa__.sp..(args.file)
     print("Sending file: " + args.file)
-    sock.sendall(b"send:" + bytes(fle, "utf-8"))
-    with open(args.file, 'rb') as f:
-        data = f.read(512)
-        while (data):
-            sock.sendall(binascii.hexlify(data))
-            data = f.read(512)
-    sock.close()
+    sock.s_a..(b"send:" + bytes(fle, "utf-8"))
+    w__ o..(args.file, __) __ f:
+        data _ f.r..(512)
+        w__ (data
+            sock.s_a..(bin__cii.hexlify(data))
+            data _ f.r..(512)
+    sock.c..
     print("File sent: " + args.file)
 
 
-def main(args):
-    if (args.client):
+___ main(args
+    __ (args.client
         startClient(args)
-    elif (args.server):
+    ____ (args.server
         startServer(args)
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("-c", "--client", action="store", help="start client", type=str,
-    nargs='?', default=False, const=True)
-    parser.add_argument("-s", "--server", action="store", help="start server", type=str,
-    nargs='?', default=False, const=True)
-    parser.add_argument("-i", "--ip", action="store", help="remote server ip", type=str)
-    parser.add_argument("-p", "--port", action="store", help="remote server port", type=int)
-    parser.add_argument("-f", "--file", action="store", help="file to send", type=str)
+__ __name__ __ "__main__":
+    parser _ a_p_.A_P..
+    parser.a_a..("-c", "--client", action_"store", help_"start client", type_st.,
+    nargs_'?', default_False, const_T..)
+    parser.a_a..("-s", "--server", action_"store", help_"start server", type_st.,
+    nargs_'?', default_False, const_T..)
+    parser.a_a..("-i", "--ip", action_"store", help_"remote server ip", type_st.)
+    parser.a_a..("-p", "--port", action_"store", help_"remote server port", type_int)
+    parser.a_a..("-f", "--file", action_"store", help_"file to send", type_st.)
 
-    args = parser.parse_args() # Declare argumnets object to args
-    if (not args.client and not args.server):
-        parser.print_help()
+    args _ parser.parse_args # Declare argumnets object to args
+    __ (not args.client an. not args.server
+        parser.print_help
         print ("\n\nYou must specify --client or --server")
-        parser.exit()
+        parser.e..
     main(args)

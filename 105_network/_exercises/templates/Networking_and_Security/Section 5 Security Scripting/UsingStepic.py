@@ -1,21 +1,16 @@
-#!/usr/bin/python
-__author__ = 'kilroy'
-#  (c) 2014, WasHere Consulting, Inc.
-#  Written for Infinite Skills
-
 # need PIL and stepic packages
-import Image, stepic
+______ Image, stepic
 
-i = Image.open("bullpuppies.jpg")
-i.show()
+i _ Image.o..("bullpuppies.jpg")
+i.show
 #  could open a file here
 # f = open("myfile", "r")
 # text = f.read()
 
-steg = stepic.encode(i, "This is some text")
+steg _ stepic.en..(i, "This is some text")
 # steg = stepic.encode(i, text)
 
 steg.save("steg.jpg", "JPEG")
 
-i2 = Image.open("steg.jpg")
-i2.show()
+i2 _ Image.o..("steg.jpg")
+i2.show

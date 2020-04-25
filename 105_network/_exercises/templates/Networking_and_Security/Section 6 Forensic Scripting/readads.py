@@ -1,15 +1,10 @@
-#!/usr/bin/python
-__author__ = 'kilroy'
-#  (c) 2014, WasHere Consulting, Inc.
-#  Written for Infinite Skills
+stuff _ b_a_
 
-stuff = bytearray()
+w__ o..("C:\crap.txt:cmd.exe", __) __ ads:
+    stuff _ ads.r..
+    print(stuff. -l
+    ads.c..
 
-with open("C:\crap.txt:cmd.exe", "rb") as ads:
-    stuff = ads.read()
-    print(stuff.__len__())
-    ads.close()
-
-with open("C:\Users\kilroy\Downloads\cmd.exe", "wb") as ostream:
-    ostream.write(stuff)
-    ostream.close()
+w__ o..("C:\Users\kilroy\Downloads\cmd.exe", __) __ ostream:
+    ostream.w..(stuff)
+    ostream.c..

@@ -1,25 +1,23 @@
-#!/usr/bin/python3
-#  (c) 2014, WasHere Consulting, Inc
-import struct
+______ struct
 
-f = open("mbr.dd", "rb")
+f _ o..("mbr.dd", __)
 
-mbr = bytearray()
-try:
-    mbr = f.read(512)
-finally:
-    f.close()
+mbr _ b_a_
+___
+    mbr _ f.r..(512)
+f..
+    f.c..
 
-sig = struct.unpack("<I", mbr[0x1B8:0x1BC])
+sig _ struct.unpack("<I", mbr[0x1B8:0x1BC])
 print("Disk signature: ", sig[0])
-active = mbr[0x1BE]
-if active == 0x80:
+active _ mbr[0x1BE]
+__ active __ 0x80:
 	print("Active flag: Active")
-else:
+____
 	print("Active flag: Not active")
 
-lbastart = struct.unpack("<I", mbr[0x1C6:0x1CA])
-print("Partition Start (LBA): ", lbastart[0])
-lbaend = struct.unpack("<I", mbr[0x1C9:0x1CD])
+lb__tart _ struct.unpack("<I", mbr[0x1C6:0x1CA])
+print("Partition Start (LBA): ", lb__tart[0])
+lbaend _ struct.unpack("<I", mbr[0x1C9:0x1CD])
 print("Partition End (LBA): ", lbaend[0])
 

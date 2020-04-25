@@ -1,14 +1,9 @@
-#!/usr/bin/python
-__author__ = 'kilroy'
-#  (c) 2014, WasHere Consulting, Inc.
-#  Written for Infinite Skills
+_____ _2
 
-import urllib2
-
-url = "https://www.google.com"
-request = urllib2.Request(url)
-resp = urllib2.urlopen(request)
-cookies = resp.info()['Set-Cookie']
-content = resp.read()
-resp.close()
+url _ "https://www.google.com"
+request _ _2.R..(url)
+resp _ _2.u_o..(request)
+cookies _ resp.info['Set-Cookie']
+content _ resp.r..
+resp.c..
 print (cookies, content)

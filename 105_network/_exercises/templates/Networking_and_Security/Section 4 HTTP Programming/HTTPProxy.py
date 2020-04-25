@@ -1,14 +1,9 @@
-#!/usr/bin/python
-__author__ = 'kilroy'
-#  (c) 2014, WasHere Consulting, Inc.
-#  Written for Infinite Skills
+______ _2
 
-import urllib2
+proxy _ _2.ProxyHandler({'http': '127.0.0.1:8080'})
+opener _ _2.build_opener(proxy)
+_2.install_opener(opener)
+handle _ _2.u_o..('http://www.microsoft.com')
 
-proxy = urllib2.ProxyHandler({'http': '127.0.0.1:8080'})
-opener = urllib2.build_opener(proxy)
-urllib2.install_opener(opener)
-handle = urllib2.urlopen('http://www.microsoft.com')
-
-print(handle.read())
+print(handle.r..)
 

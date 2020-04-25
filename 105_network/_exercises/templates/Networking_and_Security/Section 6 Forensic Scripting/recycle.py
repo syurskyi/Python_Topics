@@ -1,12 +1,7 @@
-#!/usr/bin/python
-__author__ = 'kilroy'
-#  (c) 2014, WasHere Consulting, Inc.
-#  Written for Infinite Skills
+______ __
 
-import os
-
-rootdir = "C:\\$Recycle.Bin"
-for curr, dirs, files in os.walk(rootdir):
-    for f in files:
-        path = "%s/%s" % (curr, f)
-        print (path)
+rootdir _ "C:\\$Recycle.Bin"
+___ curr, dirs, files __ __.walk(rootdir
+    ___ f __ files:
+        pa__ _ "@/@"  (curr, f)
+        print (pa__)

@@ -1,21 +1,16 @@
-#!/usr/bin/python
-__author__ = 'kilroy'
-#  (c) 2014, WasHere Consulting, Inc.
-#  Written for Infinite Skills
+____ _3
 
-import sqlite3
+conn _ _3.c..("cookies.sqlite")
 
-conn = sqlite3.connect("cookies.sqlite")
-
-sites = []
+sites _   # list
 # need a cursor to keep track of where we are
-cur = conn.cursor()
-for row in cur.execute("SELECT * FROM moz_cookies"):
-    if row[1] not in sites:
-        sites.append(row[1])
+cur _ conn.cursor
+___ row __ cur.ex..("SELECT * FROM moz_cookies"
+    __ row[1] not __ sites:
+        sites.ap..(row[1])
 
-sites.sort()
+sites.sort
 
-for s in sites:
+___ s __ sites:
     print(s)
 

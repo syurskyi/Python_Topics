@@ -1,21 +1,16 @@
-#!/usr/bin/python3
-__author__ = 'kilroy'
-#  (c) 2014, WasHere Consulting, Inc.
-#  Written for Infinite Skills
+______ so..
 
-import socket
+host_'localhost'
 
-host='localhost'
+mysock_?.?(?.A.. ?.S..
+addr_(host,5555)
+mysock.c..(addr)
 
-mysock=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-addr=(host,5555)
-mysock.connect(addr)
-
-try:
-    msg=b"hi, this is a test\n"
-    mysock.sendall(msg)
-except socket.errno as e:
+___
+    msg_b"hi, this is a test\n"
+    mysock.s_a..(msg)
+______ ?.errno __ e:
     print("Socket error ", e)
-finally:
-    mysock.close()
+f..
+    mysock.c..
 

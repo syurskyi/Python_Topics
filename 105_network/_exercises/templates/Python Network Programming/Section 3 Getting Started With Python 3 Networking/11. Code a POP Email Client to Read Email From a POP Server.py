@@ -1,16 +1,16 @@
-import poplib
-from email.message import EmailMessage
+______ p_l_
+____ email.message ______ EmailMessage
 
-server = "127.0.0.1"
-user = "phil"
-passwd = "pythoncode"
+server _ "127.0.0.1"
+user _ "phil"
+p__swd _ "pythoncode"
 
-server = poplib.POP3(server)
+server _ p_l_.POP3(server)
 server.user(user)
-server.pass_(passwd)
+server.p__s_(p__swd)
 
-msgNum = len(server.list()[1])
+msgNum _ le.(server.list[1])
 
-for i in range(msgNum):
-    for msg in server.retr(i+1)[1]:
-        print (msg.decode())
+___ i __ ra.. msgNum
+    ___ msg __ server.retr(i+1)[1]:
+        print (msg.d..)

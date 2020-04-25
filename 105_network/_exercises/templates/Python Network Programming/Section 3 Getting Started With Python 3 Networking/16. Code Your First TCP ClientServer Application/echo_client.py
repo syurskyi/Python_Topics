@@ -1,11 +1,11 @@
-import socket
+______ so..
 
-host = '127.0.0.1'
-port = 8081
+host _ '127.0.0.1'
+port _ 8081
 
-with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-    s.connect((host, port))
-    s.sendall(b'Hello world')
-    data = s.recv(1024)
+w__ ?.?(?.A.. ?.S.. __ s:
+    s.c..((host, port))
+    s.s_a..(b'Hello world')
+    data _ s.r..(1024)
 
-print('Received', repr(data.decode()))
+print('Received', repr(data.d..))

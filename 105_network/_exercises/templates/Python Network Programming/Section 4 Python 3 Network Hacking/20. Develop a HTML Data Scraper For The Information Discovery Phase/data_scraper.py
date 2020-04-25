@@ -1,72 +1,72 @@
-import re, requests, sys, argparse
+______ __, requests, ___, a_p_
 
 
-class RegEx:
-    def __init__(self, pattern, desc):
-        self.pattern = pattern
-        self.desc = desc
+c_ RegEx:
+    ___ __init__(self, pattern, desc
+        self.pattern _ pattern
+        self.desc _ desc
 
 
-rgxEmail = RegEx(r"[a-z0-9\.\-+_]+@[a-z0-9\.\-+_]+\.[a-z]+", "Emails")
-rgxPhone = RegEx(r"\b\d{3}[-.]?\d{3}[-.]?\d{4}\b", "Phone Numbers")
-rgxIP = RegEx(r"\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b", "IP Addresses")
-rgxWord = RegEx(r"[a-zA-Z]+", "Words")
+rgxEmail _ RegEx(r"[a-z0-9\.\-+_]+@[a-z0-9\.\-+_]+\.[a-z]+", "Emails")
+rgxPhone _ RegEx(r"\b\d{3}[-.]?\d{3}[-.]?\d{4}\b", "Phone Numbers")
+rgxIP _ RegEx(r"\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b", "IP Addresses")
+rgxWor. _ RegEx(r"[a-zA-Z]+", "Words")
 
 
-def scrapeURL(url, rgx):
-    try:
-        src = requests.get(url.strip())
-        for rg in rgx:
-            print("[*] Scraping" + rg.desc + " form " + url.strip())
-            res = set(re.findall(rg.pattern, src.text, re.I))
-            for dat in res:
+___ scrapeURL(url, rgx
+    ___
+        src _ requests.get(url.strip)
+        ___ rg __ rgx:
+            print("[*] Scraping" + rg.desc + " form " + url.strip)
+            res _ set(__.findall(rg.pattern, src.text, __.I))
+            ___ dat __ res:
                 print(dat)
-    except Exception as err:
-        print(str(err))
+    ______ E.. __ err:
+        print(st.(err))
 
 
-def scrapeFile(fle, rgx):
-    try:
-        with open(fle) as fh:
-            for url in fh:
+___ scrapeFile(fle, rgx
+    ___
+        w__ o..(fle) __ fh:
+            ___ url __ fh:
                 scrapeURL(url, rgx)
-    except Exception as err:
-        print(str(err))
+    ______ E.. __ err:
+        print(st.(err))
 
 
-def main(args):
-    rgx = []
-    isFile = True
-    if args.input.lower().startswith("http"):
-        isFile = False
-    if args.scrape.lower() == "e":  # scrape emails
-        rgx = [rgxEmail]
-    elif args.scrape.lower() == "p":  # scrape phone #
-        rgx = [rgxPhone]
-    elif args.scrape.lower() == "w":  # scrape words
-        rgx = [rgxWord]
-    elif args.scrape.lower() == "i":  # scrape IP
-        rgx = [rgxIP]
-    elif args.scrape.lower() == "a":  # scrape everything
-        rgx = [rgxEmail, rgxPhone, rgxWord, rgxIP]
+___ main(args
+    rgx _   # list
+    isFile _ T..
+    __ args.in__.lower.startswith("http"
+        isFile _ False
+    __ args.scrape.lower __ "e":  # scrape emails
+        rgx _ [rgxEmail]
+    ____ args.scrape.lower __ "p":  # scrape phone #
+        rgx _ [rgxPhone]
+    ____ args.scrape.lower __ "w":  # scrape words
+        rgx _ [rgxWor.]
+    ____ args.scrape.lower __ "i":  # scrape IP
+        rgx _ [rgxIP]
+    ____ args.scrape.lower __ "a":  # scrape everything
+        rgx _ [rgxEmail, rgxPhone, rgxWor., rgxIP]
 
-    if isFile:
-        scrapeFile(args.input, rgx)
-    else:
-        scrapeURL(args.input, rgx)
+    __ isFile:
+        scrapeFile(args.in__, rgx)
+    ____
+        scrapeURL(args.in__, rgx)
 
     print("================================================")
 
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("input", action="store", type=str, help="The URL or file containing URLs to scrape")
-    parser.add_argument("scrape", action="store", type=str, nargs="?", default="a",
-                        help="e = Email, p = Phone, i = IPs, w = Words, a = All")
+__ __name__ __ "__main__":
+    parser _ a_p_.A_P..
+    parser.a_a..("input", action_"store", type_st., help_"The URL or file containing URLs to scrape")
+    parser.a_a..("scrape", action_"store", type_st., nargs_"?", default_"a",
+                        help_"e = Email, p = Phone, i = IPs, w = Words, a = All")
 
-    if len(sys.argv[2:]) == 0:
-        parser.print_help()
-        parser.exit()
+    __ le.(___.argv[2:]) __ 0:
+        parser.print_help
+        parser.e..
 
-    args = parser.parse_args()
+    args _ parser.parse_args
     main(args)

@@ -1,93 +1,93 @@
-import multiprocessing, sys, netaddr, argparse, logging
-from scapy.all import *
-from datetime import datetime
+______ m.., ___, netaddr, a_p_, l..
+____ scapy.all ______ *
+____ d_t_ ______ d_t_
 
-logging.getLogger("scapy.runetime").setLevel(logging.ERROR)
-conf.verb = 0
-
-
-class const:
-    ARP = 0
-    PING = 1
-    TCP = 2
+?.getLogger("scapy.runetime").sL..(?.E..)
+conf.verb _ 0
 
 
-def arpScan(subnet):
-    ans, unans = srp(Ether(dst="ff:ff:ff:ff:ff:ff") / ARP(pdst=subnet), timeout=2)
-    for snd, rcv in ans:
+c_ const:
+    ARP _ 0
+    PING _ 1
+    TCP _ 2
+
+
+___ arpScan(subnet
+    ans, unans _ srp(Ether(dst_"ff:ff:ff:ff:ff:ff") / ARP(pdst_subnet), timeout_2)
+    ___ snd, rcv __ ans:
         print(rcv.sprintf(r"[ARP] Online: %ARP.psrc% - %Ether.src%"))
 
 
-def ping(ip):
-    reply = sr1(IP(dst=str(ip)) / ICMP(), timeout=3)
-    if reply is not None:
-        print("[PING] Online: " + str(ip))
+___ ping(ip
+    reply _ sr1(IP(dst_st.(ip)) / ICMP, timeout_3)
+    __ reply is not None:
+        print("[PING] Online: " + st.(ip))
 
 
-def tcp(ip):
-    port = 53
-    srcp = RandShort()
-    pkt = sr1(IP(dst=str(ip)) / TCP(sport=srcp, dport=port, flags="S"), timeout=5)
-    if pkt is not None:
-        flag = pkt.getlayer(TCP).flags
-        if flag == 0x12:  # syn,ack
-            print("[TCP] Online:" + str(ip) + " - replied with syn,ack")
-            send(IP(dst=str(ip)) / TCP(sport=srcp, dport=port, flags="R"))
-        elif flag == 0x14:  # RST
-            print("[TCP] Online: " + str(ip) + " - replied with rst,ack")
+___ tcp(ip
+    port _ 53
+    srcp _ RandShort
+    pkt _ sr1(IP(dst_st.(ip)) / TCP(sport_srcp, dport_port, flags_"S"), timeout_5)
+    __ pkt is not None:
+        flag _ pkt.getlayer(TCP).flags
+        __ flag __ 0x12:  # syn,ack
+            print("[TCP] Online:" + st.(ip) + " - replied with syn,ack")
+            s..(IP(dst_st.(ip)) / TCP(sport_srcp, dport_port, flags_"R"))
+        ____ flag __ 0x14:  # RST
+            print("[TCP] Online: " + st.(ip) + " - replied with rst,ack")
 
 
-def scan(subnet, typ):
-    jobs = []
-    for ip in subnet:
-        if typ == const.PING:
-            p = multiprocessing.Process(target=ping, args=(ip,))
-            jobs.append(p)
-            p.start()
-        else:
-            p = multiprocessing.Process(target=tcp, args=(ip,))
-            jobs.append(p)
-            p.start()
+___ scan(subnet, typ
+    jobs _   # list
+    ___ ip __ subnet:
+        __ typ __ const.PING:
+            p _ ?.Process(t.._ping, args_(ip,))
+            jobs.ap..(p)
+            p.start
+        ____
+            p _ ?.Process(t.._tcp, args_(ip,))
+            jobs.ap..(p)
+            p.start
 
-    for j in jobs:
-        j.join()
+    ___ j __ jobs:
+        j.j..
 
 
-def main(args):
-    subnet = netaddr.IPNetwork(args.subnet)
-    start = datetime.now()
+___ main(args
+    subnet _ netaddr.IPNetwork(args.subnet)
+    start _ d_t_.now
     print("==================================================")
-    print("Scanning " + str(subnet[0]) + " to " + str(subnet[-1]))
-    print("Started @ " + str(start))
+    print("Scanning " + st.(subnet[0]) + " to " + st.(subnet[-1]))
+    print("Started @ " + st.(start))
     print("==================================================")
 
-    if args.scantype == const.ARP:
+    __ args.scantype __ const.ARP:
         arpScan(args.subnet)
-    elif args.scantype == const.PING:
+    ____ args.scantype __ const.PING:
         scan(subnet, const.PING)
-    elif args.scantype == const.TCP:
+    ____ args.scantype __ const.TCP:
         scan(subnet, const.TCP)
-    else:
+    ____
         arpScan(args.subnet)
         scan(subnet, const.PING)
         scan(subnet, const.TCP)
 
-    stop = datetime.now()
+    stop _ d_t_.now
     print("==================================================")
-    print("Scan Duration: " + str(stop - start))
-    print("Completed @ " + str(stop))
+    print("Scan Duration: " + st.(stop - start))
+    print("Completed @ " + st.(stop))
     print("==================================================")
 
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("subnet", action="store", help="Subnet to scan for hosts", type=str)
-    parser.add_argument("scantype", action="store", nargs="?", default=3,
-                        help="Type of scan: [0 = Arp, 1 = Ping, 2 = TCP, 3 = ALL]", type=int)
+__ __name__ __ "__main__":
+    parser _ a_p_.A_P..
+    parser.a_a..("subnet", action_"store", help_"Subnet to scan for hosts", type_st.)
+    parser.a_a..("scantype", action_"store", nargs_"?", default_3,
+                        help_"Type of scan: [0 = Arp, 1 = Ping, 2 = TCP, 3 = ALL]", type_int)
 
-    if len(sys.argv[1:]) == 0:
-        parser.print_help()
-        parser.exit()
+    __ le.(___.argv[1:]) __ 0:
+        parser.print_help
+        parser.e..
 
-    args = parser.parse_args()
+    args _ parser.parse_args
     main(args)

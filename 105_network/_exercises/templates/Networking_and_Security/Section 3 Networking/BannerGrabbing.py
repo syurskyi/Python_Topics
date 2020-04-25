@@ -1,30 +1,25 @@
-#!/usr/bin/python3
-__author__ = 'kilroy'
-#  (c) 2014, WasHere Consulting, Inc.
-#  Written for Infinite Skills
+______ so..
+______ __
 
-import socket
-import re
+sock _ ?.?(?.A.. ?.S..
+sock.c..(("www.microsoft.com", 80))
 
-sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-sock.connect(("www.microsoft.com", 80))
-
-http_get = b"GET / HTTP/1.1\nHost: www.microsoft.com\n\n"
-data = ''
-try:
-    sock.sendall(http_get)
-    data = sock.recvfrom(1024)
-except socket.error:
-    print ("Socket error", socket.errno)
-finally:
+http_get _ b"GET / HTTP/1.1\nHost: www.microsoft.com\n\n"
+data _ ''
+___
+    sock.s_a..(http_get)
+    data _ sock.r_f..(1024)
+______ ?.e..
+    print ("Socket error", ?.er..
+f..
     print("closing connection")
-    sock.close()
+    sock.c..
 
-strdata = data[0].decode("utf-8")
+strdata _ data[0].d..("utf-8")
 #  looks like one long line so split it at newline into multiple strings
-headers = strdata.splitlines()
+headers _ strdata.s_l..
 #  use regular expression library to look for the one line we like
-for s in headers:
-    if re.search('Server:', s):
-        s = s.replace("Server: ", "")
+___ s __ headers:
+    __ __.s..('Server:', s
+        s _ s.r..("Server: ", "")
         print(s)

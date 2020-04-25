@@ -1,14 +1,9 @@
-#!/usr/bin/python
-__author__ = 'kilroy'
-#  (c) 2014, WasHere Consulting, Inc.
-#  Written for Infinite Skills
+_____ __
 
-import os
+rootdir _ "/"
 
-rootdir = "/"
+___ curr, dirs, files __ __.walk(rootdir
 
-for curr, dirs, files in os.walk(rootdir):
-
-    for f in files:
-        print ('%s/%s' % (curr, f))
+    ___ f __ files:
+        print ('@/@'  (curr, f))
 

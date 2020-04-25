@@ -1,18 +1,18 @@
-import sys
-import subprocess
+______ ___
+______ su..
 
 #Checking IP reachability
-def ip_reach(list):
+___ ip_reach(list
 
-    for ip in list:
-        ip = ip.rstrip("\n")
+    ___ ip __ list:
+        ip _ ip.rs..("\n")
         
-        ping_reply = subprocess.call('ping %s -n 2' % (ip,), stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        ping_reply _ ?.ca..('ping @ -n 2'  (ip,), s_o.._?.D.., s_e.._?.D..)
         
-        if ping_reply == 0:
-            print("\n* {} is reachable :)\n".format(ip))
-            continue
+        __ ping_reply __ 0:
+            print("\n* @ is reachable :)\n".f..(ip))
+            c..
         
-        else:
-            print('\n* {} not reachable :( Check connectivity and try again.'.format(ip))
-            sys.exit()
+        ____
+            print('\n* @ not reachable :( Check connectivity and try again.'.f..(ip))
+            ___.e..

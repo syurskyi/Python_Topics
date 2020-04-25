@@ -1,20 +1,15 @@
-#!/usr/bin/python
-__author__ = 'kilroy'
-#  (c) 2014, WasHere Consulting, Inc.
-#  Written for Infinite Skills
+______ h_l_
 
-import httplib
+h _ "www.infiniteskills.com"
 
-h = "www.infiniteskills.com"
+req _ h_l_.H..(h)
+req.p_r_("GET", "/")
+req.p_h_("Host", h)
+req.p_h_("User-Agent", "Garbage browser: 5.6")
+req.p_h_("My-Header", "My value")
+req.e_h_
+req.s..("")
 
-req = httplib.HTTP(h)
-req.putrequest("GET", "/")
-req.putheader("Host", h)
-req.putheader("User-Agent", "Garbage browser: 5.6")
-req.putheader("My-Header", "My value")
-req.endheaders()
-req.send("")
-
-statusCode, statusMsg, headers = req.getreply()
+statusCode, statusMsg, headers _ req.g_r..
 print("Response: ", statusMsg)
 

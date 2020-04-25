@@ -1,15 +1,10 @@
-#!/usr/bin/python
-__author__ = 'kilroy'
-#  (c) 2014, WasHere Consulting, Inc.
-#  Written for Infinite Skills
+_____ so..
 
-import socket
-
-try:
-    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    sock.sendto(b"Hi, this is a message", ("172.30.42.117", 5599))
+___
+    sock _ ?.?(?.A.. ?.S_D..)
+    sock.s_t..(b"Hi, this is a message", ("172.30.42.117", 5599))
     print("Sent the message")
-except Exception as e:
+______ E.. __ e:
     print("Exception: ", e)
-finally:
+f..
     print("Done")

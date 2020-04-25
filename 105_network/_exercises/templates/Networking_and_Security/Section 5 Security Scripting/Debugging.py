@@ -1,27 +1,22 @@
-#!/usr/bin/python
-__author__ = 'kilroy'
-#  (c) 2014, WasHere Consulting, Inc.
-#  Written for Infinite Skills
+____ winappdbg ______ *
 
-from winappdbg import *
-
-with Debug ( bKillOnExit = True ) as dbg:
+w__ Debug ( bKillOnExit _ T.. ) __ dbg:
     dbg.execl("calc.exe")
 
-    while dbg:
-        try:
+    w__ dbg:
+        ___
             dbg.wait(1000)
-        except Exception as e:
+        ______ E.. __ e:
             print(e)
 
-        try:
-            dbg.dispatch()
-        finally:
-            dbg.cont()
+        ___
+            dbg.dispatch
+        f..
+            dbg.cont
 
-cmdDbg = Debug()
-cmdDbg.system.scan_processes()
+cmdDbg _ Debug
+cmdDbg.system.scan_processes
     # let's look for cmd.exe processes
-for ( proc, name ) in cmdDbg.system.find_processes_by_filename( 'cmd.exe' ):
+___ ( proc, name ) __ cmdDbg.system.find_processes_by_filename( 'cmd.exe'
     # print out the process ID and the name of the process
-    print proc.get_pid(), name
+    print proc.get_pid, name

@@ -1,35 +1,35 @@
 #Importing the necessary modules
-import sys
-import time
+______ ___
+______ t__
 
-from ip_file_valid import ip_file_valid
-from ip_addr_valid import ip_addr_valid
-from ip_reach import ip_reach
-from ssh_connection import ssh_connection
-from create_threads import create_threads
+____ ip_file_valid ______ ip_file_valid
+____ ip_addr_valid ______ ip_addr_valid
+____ ip_reach ______ ip_reach
+____ ssh_connection ______ ssh_connection
+____ create_threads ______ create_threads
 
 #Saving the list of IP addresses in ip.txt to a variable
-ip_list = ip_file_valid()
+ip_list _ ip_file_valid
 
 #Verifying the validity of each IP address in the list
-try:
+___
     ip_addr_valid(ip_list)
     
-except KeyboardInterrupt:
+______ K..
     print("\n\n* Program aborted by user. Exiting...\n")
-    sys.exit()
+    ___.e..
 
 #Verifying the reachability of each IP address in the list
-try:
+___
     ip_reach(ip_list)
     
-except KeyboardInterrupt:
+______ K..
     print("\n\n* Program aborted by user. Exiting...\n")
-    sys.exit()
+    ___.e..
 
 #Calling threads creation function for one or multiple SSH connections
-while True:
+w__ T..:
     create_threads(ip_list, ssh_connection)
-    time.sleep(10)
+    t__.s..(10)
 
 #End of program

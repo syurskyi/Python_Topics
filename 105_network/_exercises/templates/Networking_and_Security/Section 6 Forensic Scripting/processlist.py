@@ -1,14 +1,9 @@
-#!/usr/bin/python
-__author__ = 'kilroy'
-#  (c) 2014, WasHere Consulting, Inc.
-#  Written for Infinite Skills
+______ psutil
 
-import psutil
+l _ psutil.get_process_list
 
-l = psutil.get_process_list()
-
-for proc in l:
+___ proc __ l:
     print(proc)
-    print(proc.name())
-    if (proc.name() == "Python"):
-        print(proc.get_memory_maps())
+    print(proc.name)
+    __ (proc.name __ "Python"
+        print(proc.get_memory_maps)

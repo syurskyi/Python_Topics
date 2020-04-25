@@ -1,67 +1,67 @@
 # Importing the necessary modules
-import difflib
-import datetime
-import smtplib
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
-from netmiko import ConnectHandler
+______ difflib
+______ d_t_
+______ s_l_
+____ email.mime.multipart ______ MIMEMultipart
+____ email.mime.text ______ MIMEText
+____ netmiko ______ ConnectHandler
 
 # Defining the device to monitor
-ip = '10.10.10.2'
+ip _ '10.10.10.2'
 
 # Defining the device type for running netmiko
-device_type = 'arista_eos'
+device_type _ 'arista_eos'
 
 # Defining the username and password for running netmiko
-username = 'admin'
-password = 'python'
+username _ 'admin'
+p__swor. _ 'python'
 
 # Defining the command to send to each device
-command = 'show running'
+command _ 'show running'
 
 # Connecting to the device via SSH
-session = ConnectHandler(device_type=device_type, ip=ip, username=username, password=password, global_delay_factor=3)
+session _ ConnectHandler(device_type_device_type, ip_ip, username_username, p__swor._p__swor., global_delay_factor_3)
 
 # Entering enable mode
-enable = session.enable()
+enable _ session.enable
 
 # Sending the command and storing the output (running configuration)
-output = session.send_command(command)
+output _ session.s.._command(command)
 
 # Defining the file from yesterday, for comparison.
-device_cfg_old = 'cfgfiles/' + ip + '_' + (datetime.date.today() - datetime.timedelta(days=1)).isoformat()
+device_cfg_old _ 'cfgfiles/' + ip + '_' + (d_t_.date.today - d_t_.timedelta(days_1)).isoformat
 
 # Writing the command output to a file for today.
-with open('cfgfiles/' + ip + '_' + datetime.date.today().isoformat(), 'w') as device_cfg_new:
-    device_cfg_new.write(output + '\n')
+w__ o..('cfgfiles/' + ip + '_' + d_t_.date.today.isoformat, 'w') __ device_cfg_new:
+    device_cfg_new.w..(output + '\n')
 
 # Extracting the differences between yesterday's and today's files in HTML format
-with open(device_cfg_old, 'r') as old_file, open('cfgfiles/' + ip + '_' + datetime.date.today().isoformat(),
-                                                 'r') as new_file:
-    difference = difflib.HtmlDiff().make_file(fromlines=old_file.readlines(), tolines=new_file.readlines(),
-                                              fromdesc='Yesterday', todesc='Today')
+w__ o..(device_cfg_old, _) __ old_file, o..('cfgfiles/' + ip + '_' + d_t_.date.today.isoformat,
+                                                 _) __ new_file:
+    difference _ difflib.HtmlDiff.make_file(____lines_old_file.r_l.., tolines_new_file.r_l..,
+                                              ____desc_'Yesterday', todesc_'Today')
 
 # Sending the differences via email
 # Defining the e-mail parameters
-fromaddr = 'mihai.python3@gmail.com'
-toaddr = 'mihai.python3@gmail.com'
+____addr _ 'mihai.python3@gmail.com'
+toaddr _ 'mihai.python3@gmail.com'
 
 # More on MIME and multipart: https://en.wikipedia.org/wiki/MIME#Multipart_messages
-msg = MIMEMultipart()
-msg['From'] = fromaddr
-msg['To'] = toaddr
-msg['Subject'] = 'Daily Configuration Management Report'
+msg _ MIMEMultipart
+msg['From'] _ ____addr
+msg['To'] _ toaddr
+msg['Subject'] _ 'Daily Configuration Management Report'
 msg.attach(MIMEText(difference, 'html'))
 
 # Sending the email via Gmail's SMTP server on port 587
-server = smtplib.SMTP('smtp.gmail.com', 587)
+server _ s_l_.S..('smtp.gmail.com', 587)
 
 # SMTP connection is in TLS (Transport Layer Security) mode. All SMTP commands that follow will be encrypted.
-server.starttls()
+server.starttls
 
 # Logging in to Gmail and sending the e-mail
-server.login('mihai.python3', 'python3.7')
-server.sendmail(fromaddr, toaddr, msg.as_string())
-server.quit()
+server.l..('mihai.python3', 'python3.7')
+server.s..mail(____addr, toaddr, msg.___string)
+server.quit
 
 # End Of Program

@@ -1,27 +1,22 @@
-#!/usr/bin/python
-__author__ = 'kilroy'
-#  (c) 2014, WasHere Consulting, Inc.
-#  Written for Infinite Skills
-
-import telnetlib, getpass
+______ t_l_, getp__s
 
 # user = getpass.getuser()
-user = "ric"
-pw = getpass.getpass()
-host = "172.30.42.127"
+user _ "ric"
+pw _ getp__s.getp__s
+host _ "172.30.42.127"
 
-t = telnetlib.Telnet(host)
+t _ t_l_.Telnet(host)
 
-try:
+___
     t.read_until("login: ")
-    t.write(user + '\n')
+    t.w..(user + '\n')
     t.read_until("Password: ")
-    t.write(pw + '\n')
+    t.w..(pw + '\n')
 
     t.read_until("~ $ ")
-    t.write("ls\n")
+    t.w..("ls\n")
     print(t.read_until("~ $ "))
-except Exception as e:
+______ E.. __ e:
     print(e)
-finally:
-    t.close()
+f..
+    t.c..

@@ -1,20 +1,15 @@
-#!/usr/bin/python
-__author__ = 'kilroy'
-#  (c) 2014, WasHere Consulting, Inc.
-#  Written for Infinite Skills
+______ __, d_t_
 
-import os, datetime
+rootdir _ "/Users/kilroy"
+searchdate _ d_t_.date.today-d_t_.timedelta(days_3)
 
-rootdir = "/Users/kilroy"
-searchdate = datetime.date.today()-datetime.timedelta(days=3)
+___ curr, dirs, files __ __.walk(rootdir
 
-for curr, dirs, files in os.walk(rootdir):
-
-    for f in files:
-        try:
-            path = "%s/%s" % (curr, f)
-            t = datetime.date.fromtimestamp(os.path.getmtime(path))
-            if (t > searchdate):
-                print("found date %s on file %s" % (t,f))
-        except Exception as e:
-            no_op = 0
+    ___ f __ files:
+        ___
+            pa__ _ "@/@"  (curr, f)
+            t _ d_t_.date.____timestamp(__.pa__.getmtime(pa__))
+            __ (t > searchdate
+                print("found date @ on file @"  (t,f))
+        ______ E.. __ e:
+            no_op _ 0

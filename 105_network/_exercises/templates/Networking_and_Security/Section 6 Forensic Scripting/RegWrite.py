@@ -1,11 +1,6 @@
-#!/usr/bin/python
-__author__ = 'kilroy'
-#  (c) 2014, WasHere Consulting, Inc.
-#  Written for Infinite Skills
+_____ _winreg
 
-import _winreg
-
-valName = "myKey"
-key = _winreg.CreateKey(_winreg.HKEY_CURRENT_USER, "Software\\" + valName)
+valName _ "myKey"
+key _ _winreg.CreateKey(_winreg.HKEY_CURRENT_USER, "Software\\" + valName)
 _winreg.SetValueEx(key, "myVal", 0, _winreg.REG_SZ, "This is a value")
 

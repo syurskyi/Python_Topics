@@ -1,40 +1,40 @@
-import ftplib
-import os
+______ f_l_
+______ __
 
 
-def getFile(ftp, filename):
-    try:
-        ftp.retrbinary("RETR " + filename, open(filename, 'wb').write)
-    except:
+___ getFile(ftp, filename
+    ___
+        ftp.retrbinary("RETR " + filename, o..(filename, 'wb').w..)
+    ______:
         print("Error")
 
 
-def upload(ftp, file):
-    ext = os.path.splitext(file)[1]
-    if ext in (".txt", ".htm", ".html"):
-        ftp.storlines("STOR " + file, open(file))
-    else:
-        ftp.storbinary("STOR " + file, open(file, "rb"), 1024)
+___ upload(ftp, file
+    ext _ __.pa__.sp..ext(file)[1]
+    __ ext __ (".txt", ".htm", ".html"
+        ftp.storlines("STOR " + file, o..(file))
+    ____
+        ftp.storbinary("STOR " + file, o..(file, __), 1024)
 
 
-ftp = ftplib.FTP("ftp.nluug.nl")
-ftp.login("anonymous", "ftplib-example-1")
+ftp _ f_l_.FTP("ftp.nluug.nl")
+ftp.l..("anonymous", "ftplib-example-1")
 
-data = []
+data _   # list
 
 # change directory to /pub/
 ftp.cwd('/pub/')
-ftp.dir(data.append)
-for line in data:
+ftp.dir(data.ap..)
+___ line __ data:
     print("-", line)
 
 print("Downloading README.nluug")
 getFile(ftp, 'README.nluug')
 print("Download complete")
 print("Uploading README.nluug")
-try:
+___
     upload(ftp, "README.nluug")
-except:
+______:
     print("Failed to upload README.nluug")
 
-ftp.quit()
+ftp.quit

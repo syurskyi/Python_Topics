@@ -1,22 +1,17 @@
-#!/usr/bin/python
-__author__ = 'kilroy'
-#  (c) 2014, WasHere Consulting, Inc.
-#  Written for Infinite Skills
+____ pyfuzz.generator ______ *
+______ so..
 
-from pyfuzz.generator import *
-import socket
-
-msg = random_ascii() + b" / HTTP/1.1\nHost: 172.30.42.114\r\n"
+msg _ random___cii + b" / HTTP/1.1\nHost: 172.30.42.114\r\n"
 print(msg)
 
-try:
-    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    addr = ("172.30.42.114", 80)
-    s.connect(addr)
-    s.sendall(msg)
-    resp = s.recv(4096)
+___
+    s _ ?.?(?.A.. ?.S..
+    addr _ ("172.30.42.114", 80)
+    s.c..(addr)
+    s.s_a..(msg)
+    resp _ s.r..(4096)
     print(resp)
-except Exception as e:
+______ E.. __ e:
     print(e)
-finally:
-    s.close()
+f..
+    s.c..
