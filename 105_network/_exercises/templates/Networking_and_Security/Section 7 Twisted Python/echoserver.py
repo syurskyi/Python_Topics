@@ -3,7 +3,7 @@ ____ twisted.internet ______ reactor, protocol
 c_ Echo(protocol.Protocol
     """This is just about the simplest possible protocol"""
     
-    ___ dataReceived(self, data
+    ___ dataReceived data
         "As soon as any data is received, write it back."
         self.transport.w..(data)
         print(data)

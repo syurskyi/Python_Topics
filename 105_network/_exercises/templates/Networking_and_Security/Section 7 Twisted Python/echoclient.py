@@ -11,22 +11,22 @@ c_ EchoClient(protocol.Protocol
     ___ connectionMade(self
         self.transport.w..(b"hello, world!")
     
-    ___ dataReceived(self, data
+    ___ dataReceived data
         "As soon as any data is received, write it back."
         print ("Server said:", data)
         self.transport.loseConnection
     
-    ___ connectionLost(self, re__on
+    ___ connectionLost re__on
         print ("connection lost")
 
 c_ EchoFactory(protocol.ClientFactory
     protocol _ EchoClient
 
-    ___ clientConnectionFailed(self, connector, re__on
+    ___ clientConnectionFailed connector, re__on
         print ("Connection failed - goodbye!")
         reactor.stop
     
-    ___ clientConnectionLost(self, connector, re__on
+    ___ clientConnectionLost connector, re__on
         print ("Connection lost - goodbye!")
         reactor.stop
 

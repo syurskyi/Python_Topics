@@ -3,8 +3,8 @@ ______ th..
 ______ _2
 
 c_ clientConnect(?.T..
-    ___ __init__(self
-        ?.T...__init__(self)
+    ___  - (self
+        ?.T... - (self)
 
     ___ run(self
         sock _ ?.?(?.A.. ?.S..

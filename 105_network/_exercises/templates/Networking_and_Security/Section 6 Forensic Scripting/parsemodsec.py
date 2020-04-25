@@ -5,20 +5,20 @@ ______ __, ___, __, a_p_
 #   ready to print them out
 c_ modsecRec:
     #  this is the initializer
-    ___ __init__(self
+    ___  - (self
     	#  this is the list where all of the individual items are stored
         self.storageList _   # list
 
     #  append items to the list
-    ___ ap..(self, newItem
+    ___ ap.. newItem
         self.storageList.ap..(newItem)
 
     #  extract information from the message line and append it
-    ___ extractMessage(self, msgLine
+    ___ extractMessage msgLine
         self.storageList.ap..(msgLine)
 
 	#  print the parsed data out to a file from the list
-    ___ printListToFile(self, outputFilename
+    ___ printListToFile outputFilename
         w__ o..(outputFileName, 'a') __ outHandle:
         	#  create a blank string
             completeLine _ ''

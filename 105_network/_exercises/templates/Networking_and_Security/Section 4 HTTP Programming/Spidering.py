@@ -2,7 +2,7 @@ ____ H_P.. ______ H_P..
 ______ _2
 
 c_ myParser(H_P..
-    ___ handle_starttag(self, tag, attrs
+    ___ handle_starttag tag, attrs
         __ (tag __ "a"
             ___ a __ attrs:
                 __ (a[0] __ 'href'
