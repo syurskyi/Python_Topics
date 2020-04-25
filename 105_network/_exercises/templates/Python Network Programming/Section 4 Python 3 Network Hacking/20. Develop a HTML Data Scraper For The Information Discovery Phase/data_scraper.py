@@ -58,7 +58,7 @@ ___ main(args
     print("================================================")
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     parser _ a_p_.A_P..
     parser.a_a..("input", action_"store", type_st., help_"The URL or file containing URLs to scrape")
     parser.a_a..("scrape", action_"store", type_st., nargs_"?", default_"a",

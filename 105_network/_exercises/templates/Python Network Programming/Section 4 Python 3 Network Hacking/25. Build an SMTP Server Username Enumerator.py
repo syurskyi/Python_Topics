@@ -54,7 +54,7 @@ ___ main(args
     print("==================================================")
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     parser _ a_p_.A_P..
     parser.a_a..("ip", action_"store", help_"smtp host address")
     parser.a_a..("wordlist", action_"store", help_"wordlist of usernames")

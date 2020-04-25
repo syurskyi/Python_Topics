@@ -35,7 +35,7 @@ ___ main(args
     print("============================================================")
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     parser _ a_p_.A_P..
     parser.a_a..("IP", action_"store", help_"IP to port scan", type_st.)
     parser.a_a..("sport", action_"store", nargs_'?', default_1,

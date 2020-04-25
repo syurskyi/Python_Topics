@@ -29,7 +29,7 @@ ___ arpRestore(gateIp, gateMac, targetIp, targetMac
         s..(ARP(op_2, psrc_targetIp, pdst_gateIp, hwdst_bc__t, hwsrc_targetMac), count_5)
         t__.s..(2)
 
-__ __name__ __ '__main__':
+__ _______ __ '__main__':
     conf.iface _ interface
     conf.verb _ 0
     gateMac _ ip2mac(gateIP)

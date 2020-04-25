@@ -16,5 +16,5 @@ ___ main
     reactor.run
 
 # this only runs if the module was *not* imported
-__ __name__ __ '__main__':
+__ _______ __ '__main__':
     main

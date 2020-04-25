@@ -79,7 +79,7 @@ ___ main(args
     print("==================================================")
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     parser _ a_p_.A_P..
     parser.a_a..("subnet", action_"store", help_"Subnet to scan for hosts", type_st.)
     parser.a_a..("scantype", action_"store", nargs_"?", default_3,
