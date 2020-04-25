@@ -7,7 +7,7 @@ host _ ''
 port _ 9898
 #  family = Internet, type = stream socket means TCP
 sock _ ?.?(?.A.. ?.S..
-sock.setsockopt(?.S_S.., ?.S_R.., 1)
+sock.s_s_(?.S_S.., ?.S_R.., 1)
 #  we have a socket, we need to bind to an IP address and port
 #  to have a place to listen on
 sock.b..((host, port))
