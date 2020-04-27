@@ -1,10 +1,10 @@
-_____ u..
-
-_____ m_e_
-
-
-c_ Engine(?.EmbeddedD..
-    horsepower _ ?.IF..(r.._True)
-    liters _ ?.FF..(r.._True)
-    mpg _ ?.FF..(r.._True)
-    serial_number _ ?.SF..(d.._lambda: st.(?.uuid4()))
+# _____ u..
+#
+# _____ m_e_
+#
+#
+# c_ Engine ?.ED..
+#     horsepower _ ?.IF.. r.._T..
+#     liters _ ?.FF.. r.._T..
+#     mpg _ ?.FF..(r.._T..
+#     serial_number _ ?.SF.. d.._l___ st. ?._4
