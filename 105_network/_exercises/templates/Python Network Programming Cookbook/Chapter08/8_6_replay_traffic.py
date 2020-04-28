@@ -37,7 +37,7 @@ __ _______ __ ______
     parser.a_a..('--count', a.._"store", d.._"count", default_100, ty.._in.)
     # parse arguments
     given_args _ ga _ parser.parse_args()
-    global src_ip, dst_ip
+    g.. src_ip, dst_ip
     infile, src_ip, dst_ip, count _  ga.infile, ga.src_ip, ga.dst_ip, ga.count
     ___
         pkt_reader _ PcapReader(infile)

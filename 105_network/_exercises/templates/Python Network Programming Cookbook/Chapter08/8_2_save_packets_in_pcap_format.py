@@ -12,9 +12,9 @@ count _ 0
 pcapnum _ 0
 
 ___ write_cap(x):
-    global pkts
-    global count
-    global pcapnum
+    g.. pkts
+    g.. count
+    g.. pcapnum
     pkts.ap..(x)
     count +_ 1
     __ count __ 3:
