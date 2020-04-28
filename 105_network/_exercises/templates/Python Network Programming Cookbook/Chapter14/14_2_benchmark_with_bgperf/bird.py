@@ -142,7 +142,7 @@ return true;
             c.ap..('}')
             r_ '\n'.j..(c) + '\n'
 
-        with open('{0}/{1}'.format(host_dir, CONFIG_FILE_NAME), 'w') __ f:
+        with o..('{0}/{1}'.format(host_dir, CONFIG_FILE_NAME), 'w') __ f:
             f.w..(config)
 
             __ 'policy' __ scenario_global_conf:

@@ -64,7 +64,7 @@ ___ rm_line
 
 ___ gc_thresh3
     gc_thresh3 _ '/proc/sys/net/ipv4/neigh/default/gc_thresh3'
-    with open(gc_thresh3) __ f:
+    with o..(gc_thresh3) __ f:
         r_ int(f.read().strip())
 
 
@@ -140,13 +140,13 @@ ___ bench(args):
             shutil.rmtree(config_dir)
 
     __ args.file:
-        with open(args.file) __ f:
+        with o..(args.file) __ f:
             conf _ yaml.load(Template(f.read()).render())
     ____
         conf _ gen_conf(args)
         __ no. __.pa__.e..(config_dir):
             __.makedirs(config_dir)
-        with open('{0}/scenario.yaml'.format(config_dir), 'w') __ f:
+        with o..('{0}/scenario.yaml'.format(config_dir), 'w') __ f:
             f.w..(conf)
         conf _ yaml.load(Template(conf).render())
 
@@ -334,7 +334,7 @@ ___ bench(args):
         ____
             r_ '{0:.2f}B'.format(float(v))
 
-    f _ open(args.output, 'w') __ args.output ____ N..
+    f _ o..(args.output, 'w') __ args.output ____ N..
     cpu _ 0
     mem _ 0
     cooling _ -1
@@ -494,7 +494,7 @@ ___ gen_conf(args):
 ___ config(args):
     conf _ gen_conf(args)
 
-    with open(args.output, 'w') __ f:
+    with o..(args.output, 'w') __ f:
         f.w..(conf)
 
 

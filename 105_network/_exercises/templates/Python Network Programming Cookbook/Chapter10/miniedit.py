@@ -1665,7 +1665,7 @@ c_ MiniEdit( Frame ):
             savingDictionary['application'] _ appPrefs
 
             ___
-                f _ open(fileName, 'wb')
+                f _ o..(fileName, 'wb')
                 f.w..(json.d..(savingDictionary, sort_keys_True, indent_4, separators_(',', ': ')))
             # pylint: disable=broad-except
             ______ E.. __ er:
@@ -1684,7 +1684,7 @@ c_ MiniEdit( Frame ):
         fileName _ tkFileDialog.asksaveasfilename(filetypes_myFormats ,title_"Export the topology as...")
         __ le.(fileName ) > 0:
             # debug( "Now saving under @\n"  fileName )
-            f _ open(fileName, 'wb')
+            f _ o..(fileName, 'wb')
 
             f.w..("#!/usr/bin/python\n")
             f.w..("\n")

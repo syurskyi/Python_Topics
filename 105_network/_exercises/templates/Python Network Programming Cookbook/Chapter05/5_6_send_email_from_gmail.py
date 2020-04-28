@@ -33,7 +33,7 @@ ___ send_email(sender, recipient):
         pa__ _ __.pa__.j..(__.getcwd(), filename)
         __ no. __.pa__.isfile(pa__):
             c..
-        img _ MIMEImage(open(pa__, 'rb').read(), _subtype_"gif")
+        img _ MIMEImage(o..(pa__, 'rb').read(), _subtype_"gif")
         img.add_header('Content-Disposition', 'attachment', filename_filename)
         msg.attach(img)
  

@@ -65,7 +65,7 @@ neighbor {0} timers 30 90
                     c +_ 'neighbor {0} route-map {1} export\n'.format(local_addr, p)
             r_ c
 
-        with open('{0}/{1}'.format(host_dir, CONFIG_FILE_NAME), 'w') __ f:
+        with o..('{0}/{1}'.format(host_dir, CONFIG_FILE_NAME), 'w') __ f:
             f.w..(config)
             ___ n __ list(flatten(list(t.get('neighbors', {}).values()) ___ t __ scenario_global_conf['testers'])) + [scenario_global_conf['monitor']]:
                 f.w..(gen_neighbor_config(n))

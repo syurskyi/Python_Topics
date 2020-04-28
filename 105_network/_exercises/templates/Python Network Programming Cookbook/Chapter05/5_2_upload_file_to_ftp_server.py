@@ -18,9 +18,9 @@ ___ ftp_upload(ftp_server, username, password, file_name):
     ftp.login(username, password)
     ext _ __.pa__.splitext(file_name)[1]
     __ ext __ (".txt", ".htm", ".html"):
-        ftp.storlines("STOR " + file_name, open(file_name))
+        ftp.storlines("STOR " + file_name, o..(file_name))
     ____
-        ftp.storbinary("STOR " + file_name, open(file_name, "rb"), 1024)
+        ftp.storbinary("STOR " + file_name, o..(file_name, "rb"), 1024)
     print ("Uploaded file: @" file_name)
 
 

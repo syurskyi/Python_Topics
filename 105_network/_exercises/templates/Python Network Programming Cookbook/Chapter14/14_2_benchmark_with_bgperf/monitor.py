@@ -38,7 +38,7 @@ c_ Monitor(GoBGP):
                                             'peer-as': conf['target']['as']},
                                  'transport': {'config': {'local-address': conf['monitor']['local-address']}},
                                  'timers': {'config': {'connect-retry': 10}}}]
-        with open('{0}/{1}'.format(host_dir, 'gobgpd.conf'), 'w') __ f:
+        with o..('{0}/{1}'.format(host_dir, 'gobgpd.conf'), 'w') __ f:
             f.w..(yaml.dump(config))
         config_name _ 'gobgpd.conf'
         startup _ '''#!/bin/bash
@@ -46,7 +46,7 @@ ulimit -n 65536
 gobgpd -t yaml -f {1}/{2} -l {3} > {1}/gobgpd.log 2>&1
 '''.format(conf['monitor']['local-address'], guest_dir, config_name, 'info')
         filename _ '{0}/start.sh'.format(host_dir)
-        with open(filename, 'w') __ f:
+        with o..(filename, 'w') __ f:
             f.w..(startup)
         __.chmod(filename, 0o777)
         i _ dckr.exec_create(container_self.name, cmd_'{0}/start.sh'.format(guest_dir))
