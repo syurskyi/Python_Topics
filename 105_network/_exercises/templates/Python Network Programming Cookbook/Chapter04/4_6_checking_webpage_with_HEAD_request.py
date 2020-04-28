@@ -46,7 +46,7 @@ ___ get_server_status_code(url):
         print ("Server: @ status is: @ " (url, e))
         # Comment out the above line and uncomment the below for Python 2.7.x.
         #except StandardError:
-        r_ None
+        r_ N..
 
 __ _______ __ ______
     parser _ ?.AP..(d.._'Example HEAD Request')

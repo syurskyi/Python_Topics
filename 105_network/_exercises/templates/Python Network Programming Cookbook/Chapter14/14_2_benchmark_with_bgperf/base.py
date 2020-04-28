@@ -34,7 +34,7 @@ ___ ctn_exists(name):
 
 
 ___ img_exists(name):
-    r_ name __ [ctn['RepoTags'][0].s..(':')[0] ___ ctn __ dckr.images() __ ctn['RepoTags'] !_ None]
+    r_ name __ [ctn['RepoTags'][0].s..(':')[0] ___ ctn __ dckr.images() __ ctn['RepoTags'] !_ N..]
 
 
 ___ rm_line
@@ -48,7 +48,7 @@ c_ Container(o..):
         host_dir _ host_dir
         guest_dir _ guest_dir
         conf _ conf
-        config_name _ None
+        config_name _ N..
         __ no. __.pa__.e..(host_dir):
             __.makedirs(host_dir)
             __.chmod(host_dir, 0o777)
@@ -103,7 +103,7 @@ c_ Container(o..):
 
         ipv4_addresses _ get_ipv4_addresses()
 
-        net_id _ None
+        net_id _ N..
         ___ network __ dckr.networks(names_[dckr_net_name]):
             __ network['Name'] !_ dckr_net_name:
                 c..
@@ -137,7 +137,7 @@ c_ Container(o..):
                     ___.e..(1)
             b..
 
-        __ net_id is None:
+        __ net_id is N..:
             print ('Docker network "{}" not found!'.format(dckr_net_name))
             r_
 
@@ -147,7 +147,7 @@ c_ Container(o..):
         __ le.(ipv4_addresses) > 1:
 
             # get the interface used by the first IP address already added by Docker
-            dev _ None
+            dev _ N..
             res _ local('ip addr')
             ___ line __ res.s..(b'\n'):
                 __ ipv4_addresses[0].e..('utf-8') __ line:
@@ -208,7 +208,7 @@ c_ Container(o..):
 
 c_ Target(Container):
 
-    CONFIG_FILE_NAME _ None
+    CONFIG_FILE_NAME _ N..
 
     ___ write_config scenario_global_conf):
         r_ NotImplementedError()
@@ -234,7 +234,7 @@ c_ Target(Container):
 
 c_ Tester(Container):
 
-    CONTAINER_NAME_PREFIX _ None
+    CONTAINER_NAME_PREFIX _ N..
 
     ___ -  name, host_dir, conf, image):
         Container.-  CONTAINER_NAME_PREFIX + name, image, host_dir, GUEST_DIR, conf)

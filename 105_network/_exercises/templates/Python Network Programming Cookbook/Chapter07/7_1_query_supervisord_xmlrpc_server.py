@@ -8,7 +8,7 @@ ______ supervisor.xmlrpc
 ______ xmlrpclib
 
 ___ query_supervisr(sock):
-    transport _ supervisor.xmlrpc.SupervisorTransport(None, None,
+    transport _ supervisor.xmlrpc.SupervisorTransport(N.., N..,
                 'unix://@' sock)
     proxy _ xmlrpclib.ServerProxy('http://127.0.0.1',
             transport_transport)

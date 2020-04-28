@@ -17,7 +17,7 @@ ____ base ______ *
 
 c_ Quagga(Container):
 
-    CONTAINER_NAME _ None
+    CONTAINER_NAME _ N..
     GUEST_DIR _ '/root/config'
 
     ___ -  host_dir, conf, image_'bgperf/quagga'):

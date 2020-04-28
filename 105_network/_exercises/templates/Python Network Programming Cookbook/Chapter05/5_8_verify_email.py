@@ -16,7 +16,7 @@ ___ mail_checker(fromAddress, toAddress):
     addressToVerify _ st..(toAddress)
 
     match _ re.match(regex, addressToVerify)
-    __ match __ None:
+    __ match __ N..:
 	    print('Bad Syntax in the address to verify. Re-enter the correct value')
 	    r_ ValueError('Bad Syntax')
 

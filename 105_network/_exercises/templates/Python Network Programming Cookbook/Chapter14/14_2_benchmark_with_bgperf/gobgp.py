@@ -17,7 +17,7 @@ ____ base ______ *
 
 c_ GoBGP(Container):
 
-    CONTAINER_NAME _ None
+    CONTAINER_NAME _ N..
     GUEST_DIR _ '/root/config'
 
     ___ -  host_dir, conf, image_'bgperf/gobgp'):

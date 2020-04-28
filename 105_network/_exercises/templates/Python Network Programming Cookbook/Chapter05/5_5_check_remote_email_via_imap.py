@@ -14,7 +14,7 @@ ___ check_email(username):
     password _ getpass.getpass(prompt_"Enter your Google password: ") 
     mailbox.login(username, password)
     mailbox.se__('Inbox')
-    typ, data _ mailbox.search(None, 'ALL')
+    typ, data _ mailbox.search(N.., 'ALL')
     ___ num __ data[0].s..
         typ, data _ mailbox.fetch(num, '(RFC822)')
         print ('Message @\n@\n'  (num, data[0][1]))

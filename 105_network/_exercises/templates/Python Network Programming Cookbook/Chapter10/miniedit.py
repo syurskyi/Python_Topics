@@ -70,14 +70,14 @@ TOPOS _ { 'minimal': lambda: SingleSwitchTopo( k_2 ),
           'linear': LinearTopo,
           'reversed': SingleSwitchReversedTopo,
           'single': SingleSwitchTopo,
-          'none': None,
+          'none': N..,
           'tree': TreeTopo }
 CONTROLLERDEF _ 'ref'
 CONTROLLERS _ { 'ref': Controller,
                 'ovsc': OVSController,
                 'nox': NOX,
                 'remote': RemoteController,
-                'none': lambda name: None }
+                'none': lambda name: N.. }
 LINKDEF _ 'default'
 LINKS _ { 'default': Link,
           'tc': TCLink }
@@ -97,7 +97,7 @@ c_ CustomUserSwitch(UserSwitch):
     "Customized UserSwitch"
     ___ - ( self, name, dpopts_'--no-slicing', **kwargs ):
         UserSwitch.- ( self, name, **kwargs )
-        switchIP _ None
+        switchIP _ N..
 
     ___ getSwitchIP
         "Return management IP address"
@@ -112,7 +112,7 @@ c_ CustomUserSwitch(UserSwitch):
         # Call superclass constructor
         UserSwitch.start( self, controllers )
         # Set Switch IP address
-        __ switchIP is no. None:
+        __ switchIP is no. N..:
             __ no. inNamespace:
                 cmd( 'ifconfig', self, switchIP )
             ____
@@ -134,14 +134,14 @@ c_ LegacySwitch(OVSSwitch):
     "OVS switch in standalone/bridge mode"
     ___ - ( self, name, **params ):
         OVSSwitch.- ( self, name, failMode_'standalone', **params )
-        switchIP _ None
+        switchIP _ N..
 
 c_ customOvs(OVSSwitch):
     "Customized OVS switch"
 
     ___ - ( self, name, failMode_'secure', datapath_'kernel', **params ):
         OVSSwitch.- ( self, name, failMode_failMode, datapath_datapath,**params )
-        switchIP _ None
+        switchIP _ N..
 
     ___ getSwitchIP
         "Return management IP address"
@@ -156,7 +156,7 @@ c_ customOvs(OVSSwitch):
         # Call superclass constructor
         OVSSwitch.start( self, controllers )
         # Set Switch IP address
-        __ switchIP is no. None:
+        __ switchIP is no. N..:
             cmd( 'ifconfig', self, switchIP )
 
 c_ PrefsDialog(tkSimpleDialog.Dialog):
@@ -374,7 +374,7 @@ c_ PrefsDialog(tkSimpleDialog.Dialog):
                                              'ovsOf12':ovsOf12,
                                              'ovsOf13':ovsOf13}
         ____
-            result _ None
+            result _ N..
 
     @staticmethod
     ___ getOvsVersion
@@ -382,9 +382,9 @@ c_ PrefsDialog(tkSimpleDialog.Dialog):
         outp _ quietRun("ovs-vsctl --version")
         r _ r'ovs-vsctl \(Open vSwitch\) (.*)'
         m _ re.search(r, outp)
-        __ m is None:
+        __ m is N..:
             warn( 'Version check failed' )
-            r_ None
+            r_ N..
         ____
             info( 'Open vSwitch version is '+m.group(1), '\n' )
             r_ m.group(1)
@@ -430,7 +430,7 @@ c_ HostDialog(CustomDialog):
     ___ -  master, title, prefDefaults):
 
         prefValues _ prefDefaults
-        result _ None
+        result _ N..
 
         CustomDialog.-  master, title)
 
@@ -612,7 +612,7 @@ c_ SwitchDialog(CustomDialog):
     ___ -  master, title, prefDefaults):
 
         prefValues _ prefDefaults
-        result _ None
+        result _ N..
         CustomDialog.-  master, title)
 
     ___ body master):
@@ -747,7 +747,7 @@ c_ SwitchDialog(CustomDialog):
             dpid _ hex( dpid )[ 2: ]
             r_ dpid
         ______ IndexError:
-            r_ None
+            r_ N..
             #raise Exception( 'Unable to derive default datapath ID - '
             #                 'please either specify a dpid or use a '
             #                 'canonical switch name such as s23.' )
@@ -760,7 +760,7 @@ c_ SwitchDialog(CustomDialog):
                 externalInterfaces.ap..(tableFrame.get(row, 0))
 
         dpid _ dpidEntry.get()
-        __ (defaultDpid(hostnameEntry.get()) is None
+        __ (defaultDpid(hostnameEntry.get()) is N..
            and le.(dpid) __ 0):
             showerror(title_"Error",
                           message_ 'Unable to derive default datapath ID - '
@@ -871,7 +871,7 @@ c_ TableFrame(Frame):
         ___ column __ ra..(columns):
             label _ Entry borderwidth_0)
             label.grid(row_self.rows, column_column, sticky_"wens", padx_1, pady_1)
-            __ value is no. None:
+            __ value is no. N..:
                 label.insert(0, value[column])
             __ readonly __ T..:
                 label.configure(state_'readonly')
@@ -1040,8 +1040,8 @@ c_ ToolTip(o..):
 
     ___ -  widget):
         widget _ widget
-        tipwindow _ None
-        id _ None
+        tipwindow _ N..
+        id _ N..
         x _ y _ 0
 
     ___ showtip text):
@@ -1071,7 +1071,7 @@ c_ ToolTip(o..):
 
     ___ hidetip
         tw _ tipwindow
-        tipwindow _ None
+        tipwindow _ N..
         __ tw:
             tw.d..roy()
 
@@ -1108,7 +1108,7 @@ c_ MiniEdit( Frame ):
 
 
         Frame.- ( self, parent )
-        a.. _ None
+        a.. _ N..
         appName _ 'MiniEdit'
         fixedFont _ tkFont.Font ( family_"DejaVu Sans Mono", size_"14" )
 
@@ -1134,7 +1134,7 @@ c_ MiniEdit( Frame ):
         # Toolbar
         images _ miniEditImages()
         buttons _ {}
-        active _ None
+        active _ N..
         tools _ ( 'Select', 'Host', 'Switch', 'LegacySwitch', 'LegacyRouter', 'NetLink', 'Controller' )
         customColors _ { 'Switch': 'darkGreen', 'Host': 'blue' }
         toolbar _ createToolbar()
@@ -1147,7 +1147,7 @@ c_ MiniEdit( Frame ):
         pack( expand_True, fill_'both' )
 
         # About box
-        aboutBox _ None
+        aboutBox _ N..
 
         # Initialize node data
         nodeBindings _ createNodeBindings()
@@ -1156,10 +1156,10 @@ c_ MiniEdit( Frame ):
         itemToWidget _ {}
 
         # Initialize link tool
-        link _ linkWidget _ None
+        link _ linkWidget _ N..
 
         # Selection support
-        selection _ None
+        selection _ N..
 
         # Keyboard bindings
         b..( '<Control-q>', lambda event: quit() )
@@ -1210,8 +1210,8 @@ c_ MiniEdit( Frame ):
 
 
         # Event handling initalization
-        linkx _ linky _ linkItem _ None
-        lastSelection _ None
+        linkx _ linky _ linkItem _ N..
+        lastSelection _ N..
 
         # Model initialization
         links _ {}
@@ -1220,7 +1220,7 @@ c_ MiniEdit( Frame ):
         hostCount _ 0
         switchCount _ 0
         controllerCount _ 0
-        net _ None
+        net _ N..
 
         # Close window gracefully
         Wm.wm_protocol( top, name_'WM_DELETE_WINDOW', func_self.quit )
@@ -1251,7 +1251,7 @@ c_ MiniEdit( Frame ):
         editMenu _ Menu( mbar, tearoff_False )
         mbar.add_cascade( label_"Edit", font_font, menu_editMenu )
         editMenu.add_command( label_"Cut", font_font,
-                              command_lambda: deleteSelection( None ) )
+                              command_lambda: deleteSelection( N.. ) )
         editMenu.add_command( label_"Preferences", font_font, command_self.prefDetails)
 
         runMenu _ Menu( mbar, tearoff_False )
@@ -1306,7 +1306,7 @@ c_ MiniEdit( Frame ):
     ___ updateScrollRegion( self ):
         "Update canvas scroll region to hold everything."
         bbox _ canvas.bbox( 'all' )
-        __ bbox is no. None:
+        __ bbox is no. N..:
             canvas.configure( scrollregion_( 0, 0, bbox[ 2 ],
                                    bbox[ 3 ] ) )
 
@@ -1392,7 +1392,7 @@ c_ MiniEdit( Frame ):
             hostCount +_ 1
         __ 'Controller' __ node:
             controllerCount +_ 1
-        __ name is None:
+        __ name is N..:
             name _ nodePrefixes[ node ] + nodeNum
         addNamedNode(node, name, x, y)
 
@@ -1425,7 +1425,7 @@ c_ MiniEdit( Frame ):
             ('All Files','*'),
         ]
         f _ tkFileDialog.askopenfile(filetypes_myFormats, mode_'rb')
-        __ f __ None:
+        __ f __ N..:
             r_
         newTopology()
         loadedTopology _ convertJsonUnicode(json.load(f))
@@ -1545,7 +1545,7 @@ c_ MiniEdit( Frame ):
                     c.itemconfig(link, tags_c.gettags(link)+('control',))
                     addLink( icon, d.., linktype_'control' )
                     createControlLinkBindings()
-                    link _ linkWidget _ None
+                    link _ linkWidget _ N..
             ____
                 d.. _ findWidgetByName('c0')
                 dx, dy _ canvas.coords( widgetToItem[ d.. ] )
@@ -1560,7 +1560,7 @@ c_ MiniEdit( Frame ):
                 c.itemconfig(link, tags_c.gettags(link)+('control',))
                 addLink( icon, d.., linktype_'control' )
                 createControlLinkBindings()
-                link _ linkWidget _ None
+                link _ linkWidget _ N..
 
         # Load links
         links _ loadedTopology['links']
@@ -1578,7 +1578,7 @@ c_ MiniEdit( Frame ):
             c.itemconfig(link, tags_c.gettags(link)+('data',))
             addLink( src, d.., linkopts_link['opts'] )
             createDataLinkBindings()
-            link _ linkWidget _ None
+            link _ linkWidget _ N..
 
         f.c..
 
@@ -1807,8 +1807,8 @@ c_ MiniEdit( Frame ):
                 tags _ canvas.gettags( widgetToItem[ widget ] )
                 __ 'Host' __ tags:
                     opts _ hostOpts[name]
-                    ip _ None
-                    defaultRoute _ None
+                    ip _ N..
+                    defaultRoute _ N..
                     __ 'defaultRoute' __ opts and le.(opts['defaultRoute']) > 0:
                         defaultRoute _ "'via "+opts['defaultRoute']+"'"
                     ____
@@ -2037,11 +2037,11 @@ c_ MiniEdit( Frame ):
 
     ___ canvasHandle( self, eventName, event ):
         "Generic canvas event handler"
-        __ active is None:
+        __ active is N..:
             r_
         toolName _ active
-        handler _ getattr( self, eventName + toolName, None )
-        __ handler is no. None:
+        handler _ getattr( self, eventName + toolName, N.. )
+        __ handler is no. N..:
             handler( event )
 
     ___ clickCanvas( self, event ):
@@ -2063,7 +2063,7 @@ c_ MiniEdit( Frame ):
         "Find items at a location in our canvas."
         items _ canvas.find_overlapping( x, y, x, y )
         __ le.( items ) __ 0:
-            r_ None
+            r_ N..
         ____
             r_ items[ 0 ]
 
@@ -2088,9 +2088,9 @@ c_ MiniEdit( Frame ):
 
     ___ deleteSelection( self, _event ):
         "Delete the selected item."
-        __ selection is no. None:
+        __ selection is no. N..:
             deleteItem( selection )
-        selectItem( None )
+        selectItem( N.. )
 
     ___ nodeIcon( self, node, name ):
         "Create a new node icon."
@@ -2187,7 +2187,7 @@ c_ MiniEdit( Frame ):
 
     ___ dragNetLink( self, event ):
         "Drag a link's endpoint to another node."
-        __ link is None:
+        __ link is N..:
             r_
         # Since drag starts in widget, we use root coords
         x _ canvasx( event.x_root )
@@ -2197,9 +2197,9 @@ c_ MiniEdit( Frame ):
 
     ___ releaseNetLink( self, _event ):
         "Give up on the current link."
-        __ link is no. None:
+        __ link is no. N..:
             canvas.delete( link )
-        linkWidget _ linkItem _ link _ None
+        linkWidget _ linkItem _ link _ N..
 
     # Generic node handlers
 
@@ -2254,7 +2254,7 @@ c_ MiniEdit( Frame ):
 
     ___ selectNode( self, event ):
         "Select the node that was clicked on."
-        item _ widgetToItem.get( event.widget, None )
+        item _ widgetToItem.get( event.widget, N.. )
         selectItem( item )
 
     ___ dragNodeAround( self, event ):
@@ -2344,15 +2344,15 @@ c_ MiniEdit( Frame ):
 
     ___ finishLink( self, event ):
         "Finish creating a link"
-        __ link is None:
+        __ link is N..:
             r_
         source _ linkWidget
         c _ canvas
         # Since we dragged from the widget, use root coords
         x, y _ canvasx( event.x_root ), canvasy( event.y_root )
         target _ findItem( x, y )
-        d.. _ itemToWidget.get( target, None )
-        __ ( source is None or d.. is None or source __ d..
+        d.. _ itemToWidget.get( target, N.. )
+        __ ( source is N.. or d.. is N.. or source __ d..
                 or d.. __ source.links or source __ d...links ):
             releaseNetLink( event )
             r_
@@ -2397,14 +2397,14 @@ c_ MiniEdit( Frame ):
             switchOpts[switchName]['controllers'].ap..(controllerName)
 
         # We're done
-        link _ linkWidget _ None
+        link _ linkWidget _ N..
 
     # Menu handlers
 
     ___ about( self ):
         "Display about box."
         about _ aboutBox
-        __ about is None:
+        __ about is N..:
             bg _ 'white'
             about _ Toplevel( bg_'white' )
             about.title( 'About' )
@@ -2450,8 +2450,8 @@ c_ MiniEdit( Frame ):
         r_ T..
 
     ___ hostDetails( self, _ignore_None ):
-        __ ( selection is None or
-             net is no. None or
+        __ ( selection is N.. or
+             net is no. N.. or
              selection no. __ itemToWidget ):
             r_
         widget _ itemToWidget[ selection ]
@@ -2492,8 +2492,8 @@ c_ MiniEdit( Frame ):
             info( 'New host details for ' + name + ' = ' + st..(newHostOpts), '\n' )
 
     ___ switchDetails( self, _ignore_None ):
-        __ ( selection is None or
-             net is no. None or
+        __ ( selection is N.. or
+             net is no. N.. or
              selection no. __ itemToWidget ):
             r_
         widget _ itemToWidget[ selection ]
@@ -2530,8 +2530,8 @@ c_ MiniEdit( Frame ):
             info( 'New switch details for ' + name + ' = ' + st..(newSwitchOpts), '\n' )
 
     ___ linkUp( self ):
-        __ ( selection is None or
-             net is None):
+        __ ( selection is N.. or
+             net is N..):
             r_
         link _ selection
         linkDetail _  links[link]
@@ -2542,8 +2542,8 @@ c_ MiniEdit( Frame ):
         canvas.itemconfig(link, dash_())
 
     ___ linkDown( self ):
-        __ ( selection is None or
-             net is None):
+        __ ( selection is N.. or
+             net is N..):
             r_
         link _ selection
         linkDetail _  links[link]
@@ -2554,8 +2554,8 @@ c_ MiniEdit( Frame ):
         canvas.itemconfig(link, dash_(4, 4))
 
     ___ linkDetails( self, _ignore_None ):
-        __ ( selection is None or
-             net is no. None):
+        __ ( selection is N.. or
+             net is no. N..):
             r_
         link _ selection
 
@@ -2564,7 +2564,7 @@ c_ MiniEdit( Frame ):
         # dest = linkDetail['dest']
         linkopts _ linkDetail['linkOpts']
         linkBox _ LinkDialog title_'Link Details', linkDefaults_linkopts)
-        __ linkBox.result is no. None:
+        __ linkBox.result is no. N..:
             linkDetail['linkOpts'] _ linkBox.result
             info( 'New link details = ' + st..(linkBox.result), '\n' )
 
@@ -2577,8 +2577,8 @@ c_ MiniEdit( Frame ):
 
 
     ___ controllerDetails( self ):
-        __ ( selection is None or
-             net is no. None or
+        __ ( selection is N.. or
+             net is no. N.. or
              selection no. __ itemToWidget ):
             r_
         widget _ itemToWidget[ selection ]
@@ -2611,8 +2611,8 @@ c_ MiniEdit( Frame ):
 
 
     ___ listBridge( self, _ignore_None ):
-        __ ( selection is None or
-             net is None or
+        __ ( selection is N.. or
+             net is N.. or
              selection no. __ itemToWidget ):
             r_
         name _ itemToWidget[ selection ][ 'text' ]
@@ -2638,7 +2638,7 @@ c_ MiniEdit( Frame ):
 
     ___ addLink( self, source, d.., linktype_'data', linkopts_None ):
         "Add link to model."
-        __ linkopts is None:
+        __ linkopts is N..:
             linkopts _ {}
         source.links[ d.. ] _ link
         d...links[ source ] _ link
@@ -2649,8 +2649,8 @@ c_ MiniEdit( Frame ):
 
     ___ deleteLink( self, link ):
         "Delete link from model."
-        pair _ links.get( link, None )
-        __ pair is no. None:
+        pair _ links.get( link, N.. )
+        __ pair is no. N..:
             source_pair['src']
             d.._pair['dest']
             del source.links[ d.. ]
@@ -2673,7 +2673,7 @@ c_ MiniEdit( Frame ):
                     switchOpts[switchName]['controllers'].r..(controllerName)
 
 
-        __ link is no. None:
+        __ link is no. N..:
             del links[ link ]
 
     ___ deleteNode( self, item ):
@@ -2773,8 +2773,8 @@ c_ MiniEdit( Frame ):
             ____ 'Host' __ tags:
                 opts _ hostOpts[name]
                 # debug( st..(opts), '\n' )
-                ip _ None
-                defaultRoute _ None
+                ip _ N..
+                defaultRoute _ N..
                 __ 'defaultRoute' __ opts and le.(opts['defaultRoute']) > 0:
                     defaultRoute _ 'via '+opts['defaultRoute']
                 __ 'ip' __ opts and le.(opts['ip']) > 0:
@@ -2895,7 +2895,7 @@ c_ MiniEdit( Frame ):
     ___ build( self ):
         "Build network based on our topology."
 
-        dpctl _ None
+        dpctl _ N..
         __ le.(appPrefs['dpctl']) > 0:
             dpctl _ int(appPrefs['dpctl'])
         net _ Mininet( topo_None,
@@ -3001,7 +3001,7 @@ c_ MiniEdit( Frame ):
 
     ___ start( self ):
         "Start network."
-        __ net is None:
+        __ net is N..:
             net _ build()
 
             # Since I am going to inject per switch controllers.
@@ -3037,7 +3037,7 @@ c_ MiniEdit( Frame ):
 
     ___ stop( self ):
         "Stop network."
-        __ net is no. None:
+        __ net is no. N..:
             # Stop host details
             ___ widget __ widgetToItem:
                 name _ widget[ 'text' ]
@@ -3057,11 +3057,11 @@ c_ MiniEdit( Frame ):
 
             net.stop()
         cleanUpScreens()
-        net _ None
+        net _ N..
 
     ___ do_linkPopup event):
         # display the popup menu
-        __ net is None:
+        __ net is N..:
             ___
                 linkPopup.tk_popup(event.x_root, event.y_root, 0)
             f..
@@ -3076,7 +3076,7 @@ c_ MiniEdit( Frame ):
 
     ___ do_controllerPopup event):
         # display the popup menu
-        __ net is None:
+        __ net is N..:
             ___
                 controllerPopup.tk_popup(event.x_root, event.y_root, 0)
             f..
@@ -3085,7 +3085,7 @@ c_ MiniEdit( Frame ):
 
     ___ do_legacyRouterPopup event):
         # display the popup menu
-        __ net is no. None:
+        __ net is no. N..:
             ___
                 legacyRouterRunPopup.tk_popup(event.x_root, event.y_root, 0)
             f..
@@ -3094,7 +3094,7 @@ c_ MiniEdit( Frame ):
 
     ___ do_hostPopup event):
         # display the popup menu
-        __ net is None:
+        __ net is N..:
             ___
                 hostPopup.tk_popup(event.x_root, event.y_root, 0)
             f..
@@ -3109,7 +3109,7 @@ c_ MiniEdit( Frame ):
 
     ___ do_legacySwitchPopup event):
         # display the popup menu
-        __ net is no. None:
+        __ net is no. N..:
             ___
                 switchRunPopup.tk_popup(event.x_root, event.y_root, 0)
             f..
@@ -3118,7 +3118,7 @@ c_ MiniEdit( Frame ):
 
     ___ do_switchPopup event):
         # display the popup menu
-        __ net is None:
+        __ net is N..:
             ___
                 switchPopup.tk_popup(event.x_root, event.y_root, 0)
             f..
@@ -3133,8 +3133,8 @@ c_ MiniEdit( Frame ):
 
     ___ xterm( self, _ignore_None ):
         "Make an xterm when a button is pressed."
-        __ ( selection is None or
-             net is None or
+        __ ( selection is N.. or
+             net is N.. or
              selection no. __ itemToWidget ):
             r_
         name _ itemToWidget[ selection ][ 'text' ]
@@ -3148,8 +3148,8 @@ c_ MiniEdit( Frame ):
 
     ___ iperf( self, _ignore_None ):
         "Make an xterm when a button is pressed."
-        __ ( selection is None or
-             net is None or
+        __ ( selection is N.. or
+             net is N.. or
              selection no. __ itemToWidget ):
             r_
         name _ itemToWidget[ selection ][ 'text' ]
@@ -3282,7 +3282,7 @@ c_ MiniEdit( Frame ):
                 c.itemconfig(link, tags_c.gettags(link)+('control',))
                 addLink( icon, d.., linktype_'control' )
                 createControlLinkBindings()
-                link _ linkWidget _ None
+                link _ linkWidget _ N..
             __ columnCount __ 9:
                 columnCount _ 0
                 currentY _ currentY + rowIncrement
@@ -3332,7 +3332,7 @@ c_ MiniEdit( Frame ):
             c.itemconfig(link, tags_c.gettags(link)+('data',))
             addLink( src, d.., linkopts_params )
             createDataLinkBindings()
-            link _ linkWidget _ None
+            link _ linkWidget _ N..
 
         importNet.stop()
 

@@ -220,7 +220,7 @@ ___ bench(args):
 
         # if intf is not member of the bridge, add it
         __ intf_bridge no. __ raw_bridges:
-            __ intf_bridge is None:
+            __ intf_bridge is N..:
                 print('Since the target is remote, the host interface used to '
                       'reach the target ({}) must be part of the Linux bridge '
                       'used by the Docker network {}'.format(
@@ -334,7 +334,7 @@ ___ bench(args):
         ____
             r_ '{0:.2f}B'.format(float(v))
 
-    f _ open(args.output, 'w') __ args.output ____ None
+    f _ open(args.output, 'w') __ args.output ____ N..
     cpu _ 0
     mem _ 0
     cooling _ -1
@@ -352,11 +352,11 @@ ___ bench(args):
             __ elapsed.seconds > 0:
                 rm_line()
             print ('elapsed: {0}sec, cpu: {1:>4.2f}, mem: {2}, recved: {3}'.format(elapsed.seconds, cpu, mem_human(mem), recved))
-            f.write('{0}, {1}, {2}, {3}\n'.format(elapsed.seconds, cpu, mem, recved)) __ f ____ None
-            f.f.. __ f ____ None
+            f.write('{0}, {1}, {2}, {3}\n'.format(elapsed.seconds, cpu, mem, recved)) __ f ____ N..
+            f.f.. __ f ____ N..
 
             __ cooling __ args.cooling:
-                f.c.. __ f ____ None
+                f.c.. __ f ____ N..
                 r_
 
             __ cooling >_ 0:
