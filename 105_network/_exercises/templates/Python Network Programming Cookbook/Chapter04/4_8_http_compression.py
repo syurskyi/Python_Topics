@@ -62,9 +62,9 @@ c_ RequestHandler(BaseHTTPRequestHandler):
 
 __ _______ __ ______
     parser _ ?.AP..(d.._'Simple HTTP Server Example')
-    parser.a_a..('--port', a.._"store", d.._"port", ty.._in., default_DEFAULT_PORT)
-    given_args _ parser.p_a..
-    port _ given_args.port
+    ?.a_a..('--port', a.._"store", d.._"port", ty.._in., default_DEFAULT_PORT)
+    given_args _ ?.p_a..
+    port _ ?.port
     server_address _  (DEFAULT_HOST, port)
     server _ HTTPServer(server_address, RequestHandler)
     server.serve_forever()

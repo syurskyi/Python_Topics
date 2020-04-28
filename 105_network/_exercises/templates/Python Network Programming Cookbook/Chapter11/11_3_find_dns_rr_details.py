@@ -64,6 +64,6 @@ __ _______ __ ______
     parser _ ?.AP..(d.._'DNS Python')
     parser.a_a..('--address', a.._"store", d.._"address",  default_'dnspython.org')
     given_args _ parser.p_a..
-    address _ given_args.address
+    address _ ?.address
     main (address)
 

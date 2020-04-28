@@ -24,12 +24,12 @@ ___ mail_client(host, port, fromAddress, toAddress, subject, body):
 
 __ _______ __ ______
     parser _ ?.AP..(d.._'Mail Server Example')
-    parser.a_a..('--host', a.._"store", d.._"host", type_str, r.._T..)
-    parser.a_a..('--port', a.._"store", d.._"port", ty.._in., r.._T..)
-    parser.a_a..('--fromAddress', a.._"store", d.._"fromAddress", type_str, r.._T..)
-    parser.a_a..('--toAddress', a.._"store", d.._"toAddress", type_str, r.._T..)
-    parser.a_a..('--subject', a.._"store", d.._"subject", type_str, r.._T..)
-    parser.a_a..('--body', a.._"store", d.._"body", type_str, r.._T..)
-    given_args _ parser.parse_args()
-    mail_client(given_args.host, given_args.port, given_args.fromAddress, given_args.toAddress, given_args.subject, given_args.body)
+    ?.a_a..('--host', a.._"store", d.._"host", type_str, r.._T..)
+    ?.a_a..('--port', a.._"store", d.._"port", ty.._in., r.._T..)
+    ?.a_a..('--fromAddress', a.._"store", d.._"fromAddress", type_str, r.._T..)
+    ?.a_a..('--toAddress', a.._"store", d.._"toAddress", type_str, r.._T..)
+    ?.a_a..('--subject', a.._"store", d.._"subject", type_str, r.._T..)
+    ?.a_a..('--body', a.._"store", d.._"body", type_str, r.._T..)
+    given_args _ ?.parse_args()
+    mail_client(?.host, ?.port, ?.fromAddress, ?.toAddress, ?.subject, ?.body)
 

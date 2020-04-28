@@ -51,7 +51,7 @@ ___ run_server(port):
 
 __ _____ __ ______
     parser _ ?.AP..(d.._'Simple HTTP Server Example')
-    parser.a_a..('--port', a.._"store", d.._"port", ty.._in., default_DEFAULT_PORT)
-    given_args _ parser.p_a..
-    port _ given_args.port
+    ?.a_a..('--port', a.._"store", d.._"port", ty.._in., default_DEFAULT_PORT)
+    given_args _ ?.p_a..
+    port _ ?.port
     run_server(port)

@@ -57,12 +57,12 @@ ___ collect_photo_info(api_key, tag, max_count):
 
 __ _______ __ ______
     parser _ ?.AP..(d.._'Get photo info from Flickr')
-    parser.a_a..('--api-key', a.._"store", d.._"api_key", default_flickr_apikey)
-    parser.a_a..('--tag', a.._"store", d.._"tag", default_'Python')
-    parser.a_a..('--max-count', a.._"store", d.._"max_count", default_3, ty.._in.)
+    ?.a_a..('--api-key', a.._"store", d.._"api_key", default_flickr_apikey)
+    ?.a_a..('--tag', a.._"store", d.._"tag", default_'Python')
+    ?.a_a..('--max-count', a.._"store", d.._"max_count", default_3, ty.._in.)
     # parse arguments
-    given_args _ parser.parse_args()
-    api_key, tag, max_count _  given_args.api_key, given_args.tag, given_args.max_count
+    given_args _ ?.parse_args()
+    api_key, tag, max_count _  ?.api_key, ?.tag, ?.max_count
     photo_info _ collect_photo_info(api_key, tag, max_count)
     ___ photo __ photo_info:
         ___ k,v __ photo.iteritems

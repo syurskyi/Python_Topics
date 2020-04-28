@@ -43,9 +43,9 @@ ___ detect_inactive_hosts(scan_hosts):
 
 __ _____ __ ______
     parser _ ?.AP..(d.._'Python networking utils')
-    parser.a_a..('--scan-hosts', a.._"store", d.._"scan_hosts", r.._T..)
+    ?.a_a..('--scan-hosts', a.._"store", d.._"scan_hosts", r.._T..)
     given_args _ parser.p_a..
-    scan_hosts _ given_args.scan_hosts    
+    scan_hosts _ ?.scan_hosts
     scheduler.enter(1, 1, detect_inactive_hosts, (scan_hosts, ))
     scheduler.r..
 

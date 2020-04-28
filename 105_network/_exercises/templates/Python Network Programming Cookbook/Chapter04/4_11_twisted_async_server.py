@@ -32,8 +32,8 @@ c_ PubFactory(protocol.Factory):
 
 __ _______ __ ______
     parser _ ?.AP..(d.._'Socket Server Example with Epoll')
-    parser.a_a..('--port', a.._"store", d.._"port", ty.._in., r.._T..)
-    given_args _ parser.p_a..
+    ?.a_a..('--port', a.._"store", d.._"port", ty.._in., r.._T..)
+    given_args _ ?.p_a..
     port _ given_args.port
     endpoints.serverFromString(reactor, "tcp:@" port).l..(PubFactory())
     reactor.r..

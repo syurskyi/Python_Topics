@@ -25,8 +25,8 @@ __ _______ __ ______
     parser.a_a..('--dn', a.._"store", d.._"dn",  default_'cn=read-only-admin,dc=example,dc=com')
     parser.a_a..('--password', a.._"store", d.._"password",  default_'password')
     given_args _ parser.p_a..
-    address _ given_args.address
-    dn _ given_args.dn
-    password _ given_args.password
+    address _ ?.address
+    dn _ ?.dn
+    password _ ?.password
     main (address, dn, password)
 

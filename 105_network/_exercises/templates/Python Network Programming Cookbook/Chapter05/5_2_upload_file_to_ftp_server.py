@@ -26,11 +26,11 @@ ___ ftp_upload(ftp_server, username, password, file_name):
 
 __ _______ __ ______
     parser _ ?.AP..(d.._'FTP Server Upload Example')
-    parser.a_a..('--ftp-server', a.._"store", d.._"ftp_server", default_LOCAL_FTP_SERVER)
-    parser.a_a..('--file-name', a.._"store", d.._"file_name", default_LOCAL_FILE)
-    parser.a_a..('--username', a.._"store", d.._"username", default_getpass.getuser())
-    given_args _ parser.parse_args()
-    ftp_server, file_name, username _ given_args.ftp_server, given_args.file_name, given_args.username
+    ?.a_a..('--ftp-server', a.._"store", d.._"ftp_server", default_LOCAL_FTP_SERVER)
+    ?.a_a..('--file-name', a.._"store", d.._"file_name", default_LOCAL_FILE)
+    ?.a_a..('--username', a.._"store", d.._"username", default_getpass.getuser())
+    given_args _ ?.parse_args()
+    ftp_server, file_name, username _ ?.ftp_server, ?.file_name, ?.username
     password _ getpass.getpass(prompt_"Enter you FTP password: ")
     ftp_upload(ftp_server, username, password, file_name)
 

@@ -38,7 +38,7 @@ ___ web_server(port):
 
 __ _______ __ ______
     parser _ ?.AP..(d.._'CGI Server Example')
-    parser.a_a..('--port', a.._"store", d.._"port", ty.._in., r.._T..)
-    given_args _ parser.parse_args()
-    web_server(given_args.port)
+    ?.a_a..('--port', a.._"store", d.._"port", ty.._in., r.._T..)
+    given_args _ ?.parse_args()
+    web_server(?.port)
 

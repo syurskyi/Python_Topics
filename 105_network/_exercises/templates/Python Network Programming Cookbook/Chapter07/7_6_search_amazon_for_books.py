@@ -45,11 +45,11 @@ ___ search_for_books(tag, index):
 
 __ _______ __ ______
     parser _ ?.AP..(d.._'Search info from Amazon')
-    parser.a_a..('--tag', a.._"store", d.._"tag", default_'Python')
-    parser.a_a..('--index', a.._"store", d.._"index", default_'Books')
+    ?.a_a..('--tag', a.._"store", d.._"tag", default_'Python')
+    ?.a_a..('--index', a.._"store", d.._"index", default_'Books')
     # parse arguments
-    given_args _ parser.parse_args()
-    books _ search_for_books(given_args.tag, given_args.index)    
+    given_args _ ?.parse_args()
+    books _ search_for_books(?.tag, ?.index)
     
     ___ book __ books:
         ___ k,v __ book.iteritems

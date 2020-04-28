@@ -29,10 +29,10 @@ c_ HTTPClient:
 
 __ _____ __ ______
     parser _ ?.AP..(d.._'HTTP Client Example')
-    parser.a_a..('--host', a.._"store", d.._"host",  default_REMOTE_SERVER_HOST)
+    ?.a_a..('--host', a.._"store", d.._"host",  default_REMOTE_SERVER_HOST)
 
-    given_args _ parser.p_a..
-    host _ given_args.host
+    given_args _ ?.p_a..
+    host _ ?.host
     client _ HTTPClient(host)
     print (client.fetch())
 

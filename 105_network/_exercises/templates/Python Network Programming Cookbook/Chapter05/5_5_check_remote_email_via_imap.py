@@ -25,7 +25,7 @@ ___ check_email(username):
 
 __ _______ __ ______
     parser _ ?.AP..(d.._'Email Download Example')
-    parser.a_a..('--username', a.._"store", d.._"username", default_getpass.getuser())
-    given_args _ parser.p_a..
-    username _ given_args.username
+    ?.a_a..('--username', a.._"store", d.._"username", default_getpass.getuser())
+    given_args _ ?.p_a..
+    username _ ?.username
     check_email(username)

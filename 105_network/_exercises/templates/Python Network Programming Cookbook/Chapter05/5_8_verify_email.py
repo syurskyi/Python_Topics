@@ -51,8 +51,8 @@ ___ mail_checker(fromAddress, toAddress):
 
 __ _______ __ ______
     parser _ ?.AP..(d.._'Mail Server Example')
-    parser.a_a..('--fromAddress', a.._"store", d.._"fromAddress", type_str, r.._T..)
-    parser.a_a..('--toAddress', a.._"store", d.._"toAddress", type_str, r.._T..)
-    given_args _ parser.parse_args()
-    mail_checker(given_args.fromAddress, given_args.toAddress)
+    ?.a_a..('--fromAddress', a.._"store", d.._"fromAddress", type_str, r.._T..)
+    ?.a_a..('--toAddress', a.._"store", d.._"toAddress", type_str, r.._T..)
+    given_args _ ?.parse_args()
+    mail_checker(?.fromAddress, ?.toAddress)
 

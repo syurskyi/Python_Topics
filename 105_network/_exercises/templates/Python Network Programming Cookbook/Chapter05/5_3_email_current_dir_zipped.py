@@ -49,7 +49,7 @@ ___ email_dir_zipped(sender, recipient):
 
 __ _______ __ ______
     parser _ ?.AP..(d.._'Email Example')
-    parser.a_a..('--sender', a.._"store", d.._"sender", default_'you@you.com')
-    parser.a_a..('--recipient', a.._"store", d.._"recipient")
-    given_args _ parser.parse_args()
-    email_dir_zipped(given_args.sender, given_args.recipient)
+    ?.a_a..('--sender', a.._"store", d.._"sender", default_'you@you.com')
+    ?.a_a..('--recipient', a.._"store", d.._"recipient")
+    given_args _ ?.parse_args()
+    email_dir_zipped(?.sender, ?.recipient)

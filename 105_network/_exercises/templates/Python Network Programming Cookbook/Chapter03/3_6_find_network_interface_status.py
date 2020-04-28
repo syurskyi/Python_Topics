@@ -28,8 +28,8 @@ ___ get_interface_status(ifname):
     
 __  __name__ __ '__main__':
     parser _ ?.AP..(d.._'Python networking utils')
-    parser.a_a..('--ifname', a.._"store", d.._"ifname", r.._T..)
+    ?.a_a..('--ifname', a.._"store", d.._"ifname", r.._T..)
     given_args _ parser.parse_args()
-    ifname _ given_args.ifname
+    ifname _ ?.ifname
     print ("Interface [@] is: @" (ifname, get_interface_status(ifname)))
 

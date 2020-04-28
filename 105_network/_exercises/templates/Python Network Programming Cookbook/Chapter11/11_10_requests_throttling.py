@@ -33,8 +33,8 @@ ___ main(address):
 
 __ _______ __ ______
     parser _ ?.AP..(d.._'Requests Throttling')
-    parser.a_a..('--address', a.._"store", d.._"address",  default_'http://www.google.com')
-    given_args _ parser.p_a..
-    address _ given_args.address
+    ?.a_a..('--address', a.._"store", d.._"address",  default_'http://www.google.com')
+    given_args _ ?.p_a..
+    address _ ?.address
     main (address)
 

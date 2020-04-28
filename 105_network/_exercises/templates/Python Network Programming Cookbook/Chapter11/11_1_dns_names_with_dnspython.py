@@ -20,7 +20,7 @@ __ _______ __ ______
     parser.a_a..('--site1', a.._"store", d.._"site1",  default_'www.dnspython.org')
     parser.a_a..('--site2', a.._"store", d.._"site2",  default_'dnspython.org')
     given_args _ parser.p_a..
-    site1 _ given_args.site1
-    site2 _ given_args.site2
+    site1 _ ?.site1
+    site2 _ ?.site2
     main (site1, site2)
 

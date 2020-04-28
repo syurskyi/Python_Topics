@@ -18,10 +18,10 @@ c_ CustomSMTPServer(smtpd.SMTPServer):
 
 __ _______ __ ______
     parser _ ?.AP..(d.._'Mail Server Example')
-    parser.a_a..('--host', a.._"store", d.._"host", type_str, r.._T..)
-    parser.a_a..('--port', a.._"store", d.._"port", ty.._in., r.._T..)
-    given_args _ parser.parse_args()
-    server _ CustomSMTPServer((given_args.host, given_args.port), None)
+    ?.a_a..('--host', a.._"store", d.._"host", type_str, r.._T..)
+    ?.a_a..('--port', a.._"store", d.._"port", ty.._in., r.._T..)
+    given_args _ ?.parse_args()
+    server _ CustomSMTPServer((?.host, ?.port), None)
     ?.loop()
 
 

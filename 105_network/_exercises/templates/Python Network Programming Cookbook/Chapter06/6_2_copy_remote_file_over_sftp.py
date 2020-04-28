@@ -36,8 +36,8 @@ __ _______ __ ______
     parser.a_a..('--dst', a.._"store", d.._"dst", default_DESTINATION)
     
     given_args _ parser.parse_args()
-    hostname, port _  given_args.host, given_args.port
-    src, dst _ given_args.src, given_args.dst
+    hostname, port _  ?.host, ?.port
+    src, dst _ ?.src, ?.dst
     
     user _ input("Enter your remote account: ")
     # Comment out the above line and uncomment the below line for Python 2.7.

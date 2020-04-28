@@ -39,8 +39,8 @@ ___ echo_server(port, host_HOST):
 
 __ _______ __ ______
     parser _ ?.AP..(d.._'IPv6 Socket Server Example')
-    parser.a_a..('--port', a.._"store", d.._"port", ty.._in., r.._T..)
+    ?.a_a..('--port', a.._"store", d.._"port", ty.._in., r.._T..)
     given_args _ parser.parse_args()
-    port _ given_args.port
+    port _ ?.port
     echo_server(port)
     

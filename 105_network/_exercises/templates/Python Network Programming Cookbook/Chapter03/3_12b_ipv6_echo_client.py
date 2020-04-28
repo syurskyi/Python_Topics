@@ -38,7 +38,7 @@ ___ ipv6_echo_client(port, host_HOST):
 
 __ _______ __ ______ 
     parser _ ?.AP..(d.._'IPv6 socket client example')
-    parser.a_a..('--port', a.._"store", d.._"port", ty.._in., r.._T..)
+    ?.a_a..('--port', a.._"store", d.._"port", ty.._in., r.._T..)
     given_args _ parser.p_a..
-    port _ given_args.port
+    port _ ?.port
     ipv6_echo_client(port)

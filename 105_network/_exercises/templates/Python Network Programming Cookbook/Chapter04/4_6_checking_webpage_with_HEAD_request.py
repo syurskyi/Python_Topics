@@ -50,9 +50,9 @@ ___ get_server_status_code(url):
 
 __ _______ __ ______
     parser _ ?.AP..(d.._'Example HEAD Request')
-    parser.a_a..('--url', a.._"store", d.._"url", default_DEFAULT_URL)
-    given_args _ parser.p_a..
-    url _ given_args.url
+    ?.a_a..('--url', a.._"store", d.._"url", default_DEFAULT_URL)
+    given_args _ ?.p_a..
+    url _ ?.url
     __ get_server_status_code(url) __ HTTP_GOOD_CODES:
         print ("Server: @ status is OK: @ " (url, get_server_status_code(url)))
     ____

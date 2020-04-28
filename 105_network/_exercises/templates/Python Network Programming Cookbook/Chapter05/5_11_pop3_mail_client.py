@@ -23,5 +23,5 @@ __ _______ __ ______
     parser.a_a..('--user', a.._"store", d.._"user", type_str, r.._T..)
     password _ getpass.getpass("Enter your Password:")
     given_args _ parser.parse_args()
-    mail_client(given_args.host, given_args.port, given_args.user, password)
+    mail_client(?.host, ?.port, ?.user, password)
 
