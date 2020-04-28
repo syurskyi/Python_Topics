@@ -49,7 +49,7 @@ protocol device {{ }}
 protocol direct {{ disabled; }}
 protocol kernel {{ disabled; }}
 table master{1};
-'''.format(conf['router-id'], ' sorted' __ conf['single-table'] else '')
+'''.format(conf['router-id'], ' sorted' __ conf['single-table'] ____ '')
 
         ___ gen_filter_assignment(n):
             __ 'filter' __ n:
@@ -76,7 +76,7 @@ protocol pipe pipe_{0} {{
     mode transparent;
     peer table table_{0};
 {1}
-}}'''.format(n['as'], gen_filter_assignment(n)) __ not conf['single-table'] else '') + '''protocol bgp bgp_{0} {{
+}}'''.format(n['as'], gen_filter_assignment(n)) __ not conf['single-table'] ____ '') + '''protocol bgp bgp_{0} {{
     local as {1};
     neighbor {2} as {0};
     {3};
@@ -84,7 +84,7 @@ protocol pipe pipe_{0} {{
     export all;
     rs client;
 }}
-'''.format(n['as'], conf['as'], n['local-address'], 'secondary' __ conf['single-table'] else 'table table_{0}'.format(n['as']))
+'''.format(n['as'], conf['as'], n['local-address'], 'secondary' __ conf['single-table'] ____ 'table table_{0}'.format(n['as']))
             r_ n1 + n2
 
         ___ gen_prefix_filter(name, match):

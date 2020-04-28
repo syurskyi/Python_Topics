@@ -26,7 +26,7 @@ flatten _ lambda l: chain.from_iterable(l)
 
 ___ get_ctn_names
     names _ list(flatten(n['Names'] ___ n __ dckr.containers(all_True)))
-    r_ [n[1:] __ n[0] __ '/' else n ___ n __ names]
+    r_ [n[1:] __ n[0] __ '/' ____ n ___ n __ names]
 
 
 ___ ctn_exists(name):

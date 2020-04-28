@@ -76,7 +76,7 @@ ___ doctor(args):
         curr_version _ version.parse(ver)
     min_version _ version.parse('1.9.0')
     ok _ curr_version >_ min_version
-    print ('docker version ... {1} ({0})'.format(ver, 'ok' __ ok else 'update to {} at least'.format(min_version)))
+    print ('docker version ... {1} ({0})'.format(ver, 'ok' __ ok ____ 'update to {} at least'.format(min_version)))
 
     print ('bgperf image',)
     __ img_exists('bgperf/exabgp'):
@@ -172,7 +172,7 @@ ___ bench(args):
     m _ Monitor(config_dir+'/monitor', conf['monitor'])
     m.run(conf, dckr_net_name)
 
-    is_remote _ T.. __ 'remote' __ conf['target'] and conf['target']['remote'] else F..
+    is_remote _ T.. __ 'remote' __ conf['target'] and conf['target']['remote'] ____ F..
 
     __ is_remote:
         print ('target is remote ({})'.format(conf['target']['local-address']))
@@ -334,7 +334,7 @@ ___ bench(args):
         ____
             r_ '{0:.2f}B'.format(float(v))
 
-    f _ open(args.output, 'w') __ args.output else None
+    f _ open(args.output, 'w') __ args.output ____ None
     cpu _ 0
     mem _ 0
     cooling _ -1
@@ -348,15 +348,15 @@ ___ bench(args):
         __ info['who'] __ m.name:
             now _ datetime.datetime.now()
             elapsed _ now - start
-            recved _ info['state']['adj-table']['accepted'] __ 'accepted' __ info['state']['adj-table'] else 0
+            recved _ info['state']['adj-table']['accepted'] __ 'accepted' __ info['state']['adj-table'] ____ 0
             __ elapsed.seconds > 0:
                 rm_line()
             print ('elapsed: {0}sec, cpu: {1:>4.2f}, mem: {2}, recved: {3}'.format(elapsed.seconds, cpu, mem_human(mem), recved))
-            f.write('{0}, {1}, {2}, {3}\n'.format(elapsed.seconds, cpu, mem, recved)) __ f else None
-            f.f.. __ f else None
+            f.write('{0}, {1}, {2}, {3}\n'.format(elapsed.seconds, cpu, mem, recved)) __ f ____ None
+            f.f.. __ f ____ None
 
             __ cooling __ args.cooling:
-                f.c.. __ f else None
+                f.c.. __ f ____ None
                 r_
 
             __ cooling >_ 0:

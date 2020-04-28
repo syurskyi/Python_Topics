@@ -8,7 +8,7 @@ ______ ___
 ______ ?
 ______ fcntl
 ______ st__
-______ array
+______ a___
 
 
 ___ get_ip_address(ifname):

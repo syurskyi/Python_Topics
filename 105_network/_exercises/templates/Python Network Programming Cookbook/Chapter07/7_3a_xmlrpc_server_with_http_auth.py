@@ -46,7 +46,7 @@ c_ SecureXMLRPCServer(SimpleXMLRPCServer):
         secret _ b64decode(encoded).s..(b':')
         
         username, password _ secret[0].d..("utf-8"), secret[1].d..("utf-8")
-        r_ T.. __ (username __ username and password __ password) else F..
+        r_ T.. __ (username __ username and password __ password) ____ F..
     
 
 ___ run_server(host, port, username, password):

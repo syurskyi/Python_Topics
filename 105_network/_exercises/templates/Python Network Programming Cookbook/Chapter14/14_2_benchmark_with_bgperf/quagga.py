@@ -61,7 +61,7 @@ neighbor {0} route-server-client
 neighbor {0} timers 30 90
 """.format(local_addr, n['as'])
             __ 'filter' __ n:
-                ___ p __ (n['filter']['in'] __ 'in' __ n['filter'] else []):
+                ___ p __ (n['filter']['in'] __ 'in' __ n['filter'] ____ []):
                     c +_ 'neighbor {0} route-map {1} export\n'.format(local_addr, p)
             r_ c
 

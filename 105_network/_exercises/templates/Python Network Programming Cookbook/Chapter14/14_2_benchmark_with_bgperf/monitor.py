@@ -63,7 +63,7 @@ gobgpd -t yaml -f {1}/{2} -l {3} > {1}/gobgpd.log 2>&1
 
     ___ stats queue):
         ___ stats
-            cps _ config['monitor']['check-points'] __ 'check-points' __ config['monitor'] else []
+            cps _ config['monitor']['check-points'] __ 'check-points' __ config['monitor'] ____ []
             w__ T..:
                 info _ json.loads(local('gobgp neighbor -j').d..('utf-8'))[0]
                 info['who'] _ name
