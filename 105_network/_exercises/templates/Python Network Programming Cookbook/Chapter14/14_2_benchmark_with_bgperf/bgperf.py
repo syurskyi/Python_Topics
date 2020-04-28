@@ -21,7 +21,7 @@ ______ yaml
 ______ t__
 ______ shutil
 ______ netaddr
-______ datetime
+______ d_t_
 ____ ? ______ AP.., REMAINDER
 ____ itertools ______ chain, islice
 ____ ?.exceptions ______ ConnectionError
@@ -280,7 +280,7 @@ ___ bench(args):
             target _ target_class('{0}/{1}'.f..(config_dir, args.target), conf['target'])
         target.run(conf, dckr_net_name)
 
-    t__.sleep(1)
+    t__.s..(1)
 
     print ('waiting bgp connection between {0} and monitor'.f..(args.target))
     m.wait_established(conf['target']['local-address'])
@@ -316,7 +316,7 @@ ___ bench(args):
             print ('run tester', name, 'type', tester_type)
             t.run(conf['target'], dckr_net_name)
 
-    start _ datetime.datetime.now()
+    start _ d_t_.d_t_.now()
 
     q _ Queue()
 
@@ -346,7 +346,7 @@ ___ bench(args):
             mem _ info['mem']
 
         __ info['who'] __ m.name:
-            now _ datetime.datetime.now()
+            now _ d_t_.d_t_.now()
             elapsed _ now - start
             recved _ info['state']['adj-table']['accepted'] __ 'accepted' __ info['state']['adj-table'] ____ 0
             __ elapsed.seconds > 0:

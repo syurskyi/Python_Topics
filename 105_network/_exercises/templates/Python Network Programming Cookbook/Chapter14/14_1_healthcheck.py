@@ -5,7 +5,7 @@
  
 ______ ?
 ____ ___ ______ s_o_
-____ t__ ______ sleep
+____ t__ ______ s..
 ______ a_p..
  
 ___ is_alive(address, port):
@@ -30,7 +30,7 @@ ___ confirm(addres, port):
         ____
             s_o_.w..(address + ":" + st..(port) + ' is dead\n')
             s_o_.f..
-        sleep(10)
+        s..(10)
 
 
 __ _______ __ ______

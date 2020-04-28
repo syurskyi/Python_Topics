@@ -59,7 +59,7 @@ gobgpd -t yaml -f {1}/{2} -l {3} > {1}/gobgpd.log 2>&1
             neigh _ json.loads(local('gobgp neighbor {0} -j'.f..(neighbor)).d..('utf-8'))
             __ neigh['state']['session-state'] __ 'established':
                 r_
-            t__.sleep(1)
+            t__.s..(1)
 
     ___ stats queue):
         ___ stats
@@ -74,7 +74,7 @@ gobgpd -t yaml -f {1}/{2} -l {3} > {1}/gobgpd.log 2>&1
                 ____
                     info['checked'] _ F..
                 queue.put(info)
-                t__.sleep(1)
+                t__.s..(1)
 
         t _ T..(target_stats)
         t.daemon _ T..

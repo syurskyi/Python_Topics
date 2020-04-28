@@ -8,7 +8,7 @@
 
 ______ a_p..
 ______ yaml
-______ datetime
+______ d_t_
 ______ t__
 ______ kafka
 
@@ -28,7 +28,7 @@ ___ process_message(msg):
     m _ Message(msg.value)  # Gets body of kafka message.
     t _ msg.topic  # Gets topic of kafka message.
     m_tag _ t.s..('.')[2].upper()
-    t_stamp _ st..(datetime.datetime.now())
+    t_stamp _ st..(d_t_.d_t_.now())
 
     # For various cases of BMP message topics
     __ t __ "openbmp.parsed.router":
