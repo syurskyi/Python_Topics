@@ -49,7 +49,7 @@ c_ Container(o..):
         guest_dir _ guest_dir
         conf _ conf
         config_name _ None
-        __ not __.pa__.e..(host_dir):
+        __ no. __.pa__.e..(host_dir):
             __.makedirs(host_dir)
             __.chmod(host_dir, 0o777)
 
@@ -72,7 +72,7 @@ c_ Container(o..):
                 cls.dockerfile _ insert_after_from(cls.dockerfile, 'ENV {0} {1}'.format(env, __.environ[env]))
 
         f _ io.BytesIO(cls.dockerfile.e..('utf-8'))
-        __ force or not img_exists(tag):
+        __ force or no. img_exists(tag):
             print ('build {0}...'.format(tag))
             ___ line __ dckr.build(fileobj_f, rm_True, tag_tag, decode_True, nocache_nocache):
                 __ 'stream' __ line:
@@ -106,16 +106,16 @@ c_ Container(o..):
         net_id _ None
         ___ network __ dckr.networks(names_[dckr_net_name]):
             __ network['Name'] !_ dckr_net_name:
-                continue
+                c..
 
             net_id _ network['Id']
-            __ not 'IPAM' __ network:
+            __ no. 'IPAM' __ network:
                 print('can\'t verify if container\'s IP addresses '
                       'are valid for Docker network {}: missing IPAM'.format(dckr_net_name))
                 b..
             ipam _ network['IPAM']
 
-            __ not 'Config' __ ipam:
+            __ no. 'Config' __ ipam:
                 print('can\'t verify if container\'s IP addresses '
                       'are valid for Docker network {}: missing IPAM.Config'.format(dckr_net_name))
                 b..
@@ -126,7 +126,7 @@ c_ Container(o..):
                 ___ subnet __ network_subnets:
                     ip_ok _ netaddr.IPAddress(ip) __ netaddr.IPNetwork(subnet)
 
-                __ not ip_ok:
+                __ no. ip_ok:
                     print('the container\'s IP address {} is not valid for Docker network {} '
                           'since it\'s not part of any of its subnets ({})'.format(
                               ip, dckr_net_name, ', '.j..(network_subnets)))
@@ -152,7 +152,7 @@ c_ Container(o..):
             ___ line __ res.s..(b'\n'):
                 __ ipv4_addresses[0].e..('utf-8') __ line:
                     dev _ line.s..(b' ')[-1].s..
-            __ not dev:
+            __ no. dev:
                 dev _ "eth0"
 
             ___ ip __ ipv4_addresses[1:]:
@@ -193,7 +193,7 @@ c_ Container(o..):
     ___ exec_startup_cmd stream_False, detach_False):
         startup_content _ get_startup_cmd()
 
-        __ not startup_content:
+        __ no. startup_content:
             r_
 
         filename _ '{0}/start.sh'.format(host_dir)
@@ -224,7 +224,7 @@ c_ Target(Container):
     ___ run scenario_global_conf, dckr_net_name_''):
         ctn _ super(Target, self).run(dckr_net_name)
 
-        __ not use_existing_config
+        __ no. use_existing_config
             write_config(scenario_global_conf)
 
         exec_startup_cmd(detach_True)

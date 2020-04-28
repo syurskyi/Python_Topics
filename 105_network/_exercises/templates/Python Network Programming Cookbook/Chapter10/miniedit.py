@@ -112,8 +112,8 @@ c_ CustomUserSwitch(UserSwitch):
         # Call superclass constructor
         UserSwitch.start( self, controllers )
         # Set Switch IP address
-        __ switchIP is not None:
-            __ not inNamespace:
+        __ switchIP is no. None:
+            __ no. inNamespace:
                 cmd( 'ifconfig', self, switchIP )
             ____
                 cmd( 'ifconfig lo', switchIP )
@@ -156,7 +156,7 @@ c_ customOvs(OVSSwitch):
         # Call superclass constructor
         OVSSwitch.start( self, controllers )
         # Set Switch IP address
-        __ switchIP is not None:
+        __ switchIP is no. None:
             cmd( 'ifconfig', self, switchIP )
 
 c_ PrefsDialog(tkSimpleDialog.Dialog):
@@ -871,7 +871,7 @@ c_ TableFrame(Frame):
         ___ column __ ra..(columns):
             label _ Entry borderwidth_0)
             label.grid(row_self.rows, column_column, sticky_"wens", padx_1, pady_1)
-            __ value is not None:
+            __ value is no. None:
                 label.insert(0, value[column])
             __ readonly __ T..:
                 label.configure(state_'readonly')
@@ -1047,7 +1047,7 @@ c_ ToolTip(o..):
     ___ showtip text):
         "Display text in tooltip window"
         text _ text
-        __ tipwindow or not text:
+        __ tipwindow or no. text:
             r_
         x, y, _cx, cy _ widget.bbox("insert")
         x _ x + widget.winfo_rootx() + 27
@@ -1306,7 +1306,7 @@ c_ MiniEdit( Frame ):
     ___ updateScrollRegion( self ):
         "Update canvas scroll region to hold everything."
         bbox _ canvas.bbox( 'all' )
-        __ bbox is not None:
+        __ bbox is no. None:
             canvas.configure( scrollregion_( 0, 0, bbox[ 2 ],
                                    bbox[ 3 ] ) )
 
@@ -1433,17 +1433,17 @@ c_ MiniEdit( Frame ):
         # Load application preferences
         __ 'application' __ loadedTopology:
             appPrefs _ dict(appPrefs.items() + loadedTopology['application'].items())
-            __ "ovsOf10" not __ appPrefs["openFlowVersions"]:
+            __ "ovsOf10" no. __ appPrefs["openFlowVersions"]:
                 appPrefs["openFlowVersions"]["ovsOf10"] _ '0'
-            __ "ovsOf11" not __ appPrefs["openFlowVersions"]:
+            __ "ovsOf11" no. __ appPrefs["openFlowVersions"]:
                 appPrefs["openFlowVersions"]["ovsOf11"] _ '0'
-            __ "ovsOf12" not __ appPrefs["openFlowVersions"]:
+            __ "ovsOf12" no. __ appPrefs["openFlowVersions"]:
                 appPrefs["openFlowVersions"]["ovsOf12"] _ '0'
-            __ "ovsOf13" not __ appPrefs["openFlowVersions"]:
+            __ "ovsOf13" no. __ appPrefs["openFlowVersions"]:
                 appPrefs["openFlowVersions"]["ovsOf13"] _ '0'
-            __ "sflow" not __ appPrefs:
+            __ "sflow" no. __ appPrefs:
                 appPrefs["sflow"] _ sflowDefaults
-            __ "netflow" not __ appPrefs:
+            __ "netflow" no. __ appPrefs:
                 appPrefs["netflow"] _ nflowDefaults
 
         # Load controllers
@@ -1478,7 +1478,7 @@ c_ MiniEdit( Frame ):
                 hostname _ host['opts']['hostname']
             ____
                 host['opts']['hostname'] _ hostname
-            __ 'nodeNum' not __ host['opts']:
+            __ 'nodeNum' no. __ host['opts']:
                 host['opts']['nodeNum'] _ int(nodeNum)
             x _ host['x']
             y _ host['y']
@@ -1502,15 +1502,15 @@ c_ MiniEdit( Frame ):
         ___ switch __ switches:
             nodeNum _ switch['number']
             hostname _ 's'+nodeNum
-            __ 'controllers' not __ switch['opts']:
+            __ 'controllers' no. __ switch['opts']:
                 switch['opts']['controllers'] _ []
-            __ 'switchType' not __ switch['opts']:
+            __ 'switchType' no. __ switch['opts']:
                 switch['opts']['switchType'] _ 'default'
             __ 'hostname' __ switch['opts']:
                 hostname _ switch['opts']['hostname']
             ____
                 switch['opts']['hostname'] _ hostname
-            __ 'nodeNum' not __ switch['opts']:
+            __ 'nodeNum' no. __ switch['opts']:
                 switch['opts']['nodeNum'] _ int(nodeNum)
             x _ switch['x']
             y _ switch['y']
@@ -2041,7 +2041,7 @@ c_ MiniEdit( Frame ):
             r_
         toolName _ active
         handler _ getattr( self, eventName + toolName, None )
-        __ handler is not None:
+        __ handler is no. None:
             handler( event )
 
     ___ clickCanvas( self, event ):
@@ -2088,7 +2088,7 @@ c_ MiniEdit( Frame ):
 
     ___ deleteSelection( self, _event ):
         "Delete the selected item."
-        __ selection is not None:
+        __ selection is no. None:
             deleteItem( selection )
         selectItem( None )
 
@@ -2197,7 +2197,7 @@ c_ MiniEdit( Frame ):
 
     ___ releaseNetLink( self, _event ):
         "Give up on the current link."
-        __ link is not None:
+        __ link is no. None:
             canvas.delete( link )
         linkWidget _ linkItem _ link _ None
 
@@ -2328,7 +2328,7 @@ c_ MiniEdit( Frame ):
 
     ___ startLink( self, event ):
         "Start a new link."
-        __ event.widget not __ widgetToItem:
+        __ event.widget no. __ widgetToItem:
             # Didn't click on a node
             r_
 
@@ -2438,7 +2438,7 @@ c_ MiniEdit( Frame ):
     @staticmethod
     ___ checkIntf( intf ):
         "Make sure intf exists and is not configured."
-        __ ( ' @:'  intf ) not __ quietRun( 'ip link show' ):
+        __ ( ' @:'  intf ) no. __ quietRun( 'ip link show' ):
             showerror(title_"Error",
                       message_'External interface ' +intf + ' does not exist! Skipping.')
             r_ F..
@@ -2451,13 +2451,13 @@ c_ MiniEdit( Frame ):
 
     ___ hostDetails( self, _ignore_None ):
         __ ( selection is None or
-             net is not None or
-             selection not __ itemToWidget ):
+             net is no. None or
+             selection no. __ itemToWidget ):
             r_
         widget _ itemToWidget[ selection ]
         name _ widget[ 'text' ]
         tags _ canvas.gettags( selection )
-        __ 'Host' not __ tags:
+        __ 'Host' no. __ tags:
             r_
 
         prefDefaults _ hostOpts[name]
@@ -2493,13 +2493,13 @@ c_ MiniEdit( Frame ):
 
     ___ switchDetails( self, _ignore_None ):
         __ ( selection is None or
-             net is not None or
-             selection not __ itemToWidget ):
+             net is no. None or
+             selection no. __ itemToWidget ):
             r_
         widget _ itemToWidget[ selection ]
         name _ widget[ 'text' ]
         tags _ canvas.gettags( selection )
-        __ 'Switch' not __ tags:
+        __ 'Switch' no. __ tags:
             r_
 
         prefDefaults _ switchOpts[name]
@@ -2555,7 +2555,7 @@ c_ MiniEdit( Frame ):
 
     ___ linkDetails( self, _ignore_None ):
         __ ( selection is None or
-             net is not None):
+             net is no. None):
             r_
         link _ selection
 
@@ -2564,7 +2564,7 @@ c_ MiniEdit( Frame ):
         # dest = linkDetail['dest']
         linkopts _ linkDetail['linkOpts']
         linkBox _ LinkDialog title_'Link Details', linkDefaults_linkopts)
-        __ linkBox.result is not None:
+        __ linkBox.result is no. None:
             linkDetail['linkOpts'] _ linkBox.result
             info( 'New link details = ' + st..(linkBox.result), '\n' )
 
@@ -2578,14 +2578,14 @@ c_ MiniEdit( Frame ):
 
     ___ controllerDetails( self ):
         __ ( selection is None or
-             net is not None or
-             selection not __ itemToWidget ):
+             net is no. None or
+             selection no. __ itemToWidget ):
             r_
         widget _ itemToWidget[ selection ]
         name _ widget[ 'text' ]
         tags _ canvas.gettags( selection )
         oldName _ name
-        __ 'Controller' not __ tags:
+        __ 'Controller' no. __ tags:
             r_
 
         ctrlrBox _ ControllerDialog title_'Controller Details', ctrlrDefaults_self.controllers[name])
@@ -2613,12 +2613,12 @@ c_ MiniEdit( Frame ):
     ___ listBridge( self, _ignore_None ):
         __ ( selection is None or
              net is None or
-             selection not __ itemToWidget ):
+             selection no. __ itemToWidget ):
             r_
         name _ itemToWidget[ selection ][ 'text' ]
         tags _ canvas.gettags( selection )
 
-        __ name not __ net.nameToNode:
+        __ name no. __ net.nameToNode:
             r_
         __ 'Switch' __ tags or 'LegacySwitch' __ tags:
             call(["xterm -T 'Bridge Details' -sb -sl 2000 -e 'ovs-vsctl list bridge " + name + "; read -p \"Press Enter to close\"' &"], shell_True)
@@ -2650,7 +2650,7 @@ c_ MiniEdit( Frame ):
     ___ deleteLink( self, link ):
         "Delete link from model."
         pair _ links.get( link, None )
-        __ pair is not None:
+        __ pair is no. None:
             source_pair['src']
             d.._pair['dest']
             del source.links[ d.. ]
@@ -2673,7 +2673,7 @@ c_ MiniEdit( Frame ):
                     switchOpts[switchName]['controllers'].r..(controllerName)
 
 
-        __ link is not None:
+        __ link is no. None:
             del links[ link ]
 
     ___ deleteNode( self, item ):
@@ -2866,7 +2866,7 @@ c_ MiniEdit( Frame ):
         "Make sure each program in *args can be found in $PATH."
         moduleName _ kwargs.get( 'moduleName', 'it' )
         ___ arg __ args:
-            __ not quietRun( 'which ' + arg ):
+            __ no. quietRun( 'which ' + arg ):
                 showerror(title_"Error",
                       message_ 'Cannot find required executable @.\n'  arg +
                        'Please make sure that @ is installed '  moduleName +
@@ -3037,7 +3037,7 @@ c_ MiniEdit( Frame ):
 
     ___ stop( self ):
         "Stop network."
-        __ net is not None:
+        __ net is no. None:
             # Stop host details
             ___ widget __ widgetToItem:
                 name _ widget[ 'text' ]
@@ -3085,7 +3085,7 @@ c_ MiniEdit( Frame ):
 
     ___ do_legacyRouterPopup event):
         # display the popup menu
-        __ net is not None:
+        __ net is no. None:
             ___
                 legacyRouterRunPopup.tk_popup(event.x_root, event.y_root, 0)
             f..
@@ -3109,7 +3109,7 @@ c_ MiniEdit( Frame ):
 
     ___ do_legacySwitchPopup event):
         # display the popup menu
-        __ net is not None:
+        __ net is no. None:
             ___
                 switchRunPopup.tk_popup(event.x_root, event.y_root, 0)
             f..
@@ -3135,10 +3135,10 @@ c_ MiniEdit( Frame ):
         "Make an xterm when a button is pressed."
         __ ( selection is None or
              net is None or
-             selection not __ itemToWidget ):
+             selection no. __ itemToWidget ):
             r_
         name _ itemToWidget[ selection ][ 'text' ]
-        __ name not __ net.nameToNode:
+        __ name no. __ net.nameToNode:
             r_
         term _ makeTerm( net.nameToNode[ name ], 'Host', term_self.appPrefs['terminalType'] )
         __ StrictVersion(MININET_VERSION) > StrictVersion('2.0'):
@@ -3150,10 +3150,10 @@ c_ MiniEdit( Frame ):
         "Make an xterm when a button is pressed."
         __ ( selection is None or
              net is None or
-             selection not __ itemToWidget ):
+             selection no. __ itemToWidget ):
             r_
         name _ itemToWidget[ selection ][ 'text' ]
-        __ name not __ net.nameToNode:
+        __ name no. __ net.nameToNode:
             r_
         net.nameToNode[ name ].cmd( 'iperf -s -p 5001 &' )
 
@@ -3563,10 +3563,10 @@ ___ addDictOption( opts, choicesDict, default, name, helpStr_None ):
        default: default choice key
        name: long option name
        help: string"""
-    __ default not __ choicesDict:
+    __ default no. __ choicesDict:
         r_ E..( 'Invalid  default @ for choices dict: @'
                          ( default, name ) )
-    __ not helpStr:
+    __ no. helpStr:
         helpStr _ ( '|'.j..( sorted( choicesDict.keys() ) ) +
                     '[,param=value...]' )
     opts.add_option( '--' + name,

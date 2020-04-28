@@ -12,12 +12,12 @@ END_PORT _ 1000
  
 ___ monitor_packet(pkt):
     __ IP __ pkt:
-        __ pkt[IP].src not __ captured_data:
+        __ pkt[IP].src no. __ captured_data:
             captured_data[pkt[IP].src] _ []
  
     __ TCP __ pkt:
         __ pkt[TCP].sport <_  END_PORT:
-            __ not st..(pkt[TCP].sport) __ captured_data[pkt[IP].src]:
+            __ no. st..(pkt[TCP].sport) __ captured_data[pkt[IP].src]:
                 captured_data[pkt[IP].src].ap..(st..(pkt[TCP].sport))
  
     __.system('clear')

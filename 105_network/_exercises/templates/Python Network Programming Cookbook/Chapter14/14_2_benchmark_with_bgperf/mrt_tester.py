@@ -37,7 +37,7 @@ c_ MRTTester(o..):
                 host_dir_self.host_dir,
                 filename_name + '.mrt'
             )
-            __ not __.pa__.isfile(host_mrt_file_path):
+            __ no. __.pa__.isfile(host_mrt_file_path):
                 shutil.copyfile(mrt_file_path, host_mrt_file_path)
             r_ guest_mrt_file_path
 
@@ -68,7 +68,7 @@ c_ ExaBGPMrtTester(Tester, ExaBGP_MRTParse, MRTTester):
 
             mrt_guest_file_path _ get_mrt_file(neighbor,
                                                     neighbor['router-id'])
-            __ not mrt_guest_file_path:
+            __ no. mrt_guest_file_path:
                 mrt_guest_file_path _ tester_mrt_guest_file_path
 
             cmd _ ['/usr/bin/python', '/root/mrtparse/examples/mrt2exabgp.py']
@@ -169,7 +169,7 @@ c_ GoBGPMRTTester(Tester, GoBGP, MRTTester):
         conf _ list(conf.get('neighbors', {}).values())[0]
 
         mrtfile _ get_mrt_file(conf, conf['router-id'])
-        __ not mrtfile:
+        __ no. mrtfile:
             mrtfile _ get_mrt_file(conf, name)
 
         startup _ '''#!/bin/bash

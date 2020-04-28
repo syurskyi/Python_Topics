@@ -28,7 +28,7 @@ ___ run_sql(db_name, query):
 
 ___ create_db
     """Create a MySQL DB for App version"""
-    __ not env.db_name:
+    __ no. env.db_name:
         db_name _ prompt("Enter the DB name:")
     ____
         db_name _ env.db_name
@@ -37,7 +37,7 @@ ___ create_db
 
 ___ ls_db
     """ List a dbs with size in MB """
-    __ not env.db_name:
+    __ no. env.db_name:
         db_name _ prompt("Which DB to ls?")
     ____
         db_name _ env.db_name

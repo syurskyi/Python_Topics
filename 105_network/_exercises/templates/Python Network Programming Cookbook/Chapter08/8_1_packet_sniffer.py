@@ -10,7 +10,7 @@ ____ construct.protocols.ipstack ______ ip_stack
 
 ___ print_packet(pktlen, data, timestamp):
     """ Callback for priniting the packet payload"""
-    __ not data:
+    __ no. data:
         r_
     
     stack _ ip_stack.parse(data)

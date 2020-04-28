@@ -21,7 +21,7 @@ ___ ipv6_echo_client(port, host_HOST):
             sock.c..(sa)
         ______ ?.e.. __ msg:
             sock.c..
-            continue
+            c..
     __ sock is None:
         print ('Failed to open socket!')
         ___.e..(1)
@@ -31,7 +31,7 @@ ___ ipv6_echo_client(port, host_HOST):
     w__ T..:
         data _ sock.r..(BUFSIZE)
         print ('Received from server', repr(data))
-        __ not data:
+        __ no. data:
             b..
     sock.c..
     

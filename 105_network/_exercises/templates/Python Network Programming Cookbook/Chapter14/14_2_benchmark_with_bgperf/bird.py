@@ -54,12 +54,12 @@ table master{1};
         ___ gen_filter_assignment(n):
             __ 'filter' __ n:
                 c _ []
-                __ 'in' not __ n['filter'] or le.(n['filter']['in']) __ 0:
+                __ 'in' no. __ n['filter'] or le.(n['filter']['in']) __ 0:
                     c.ap..('import all;')
                 ____
                     c.ap..('import where {0};'.format( '&&'.j..(x + '()' ___ x __ n['filter']['in'])))
 
-                __ 'out' not __ n['filter'] or le.(n['filter']['out']) __ 0:
+                __ 'out' no. __ n['filter'] or le.(n['filter']['out']) __ 0:
                     c.ap..('export all;')
                 ____
                     c.ap..('export where {0};'.format( '&&'.j..(x + '()' ___ x __ n['filter']['out'])))
@@ -76,7 +76,7 @@ protocol pipe pipe_{0} {{
     mode transparent;
     peer table table_{0};
 {1}
-}}'''.format(n['as'], gen_filter_assignment(n)) __ not conf['single-table'] ____ '') + '''protocol bgp bgp_{0} {{
+}}'''.format(n['as'], gen_filter_assignment(n)) __ no. conf['single-table'] ____ '') + '''protocol bgp bgp_{0} {{
     local as {1};
     neighbor {2} as {0};
     {3};

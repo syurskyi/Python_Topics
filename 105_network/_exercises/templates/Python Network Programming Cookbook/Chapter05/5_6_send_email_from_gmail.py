@@ -31,8 +31,8 @@ ___ send_email(sender, recipient):
     files _ filter(gifsearch.search, files)
     ___ filename __ files:
         pa__ _ __.pa__.j..(__.getcwd(), filename)
-        __ not __.pa__.isfile(pa__):
-            continue
+        __ no. __.pa__.isfile(pa__):
+            c..
         img _ MIMEImage(open(pa__, 'rb').read(), _subtype_"gif")
         img.add_header('Content-Disposition', 'attachment', filename_filename)
         msg.attach(img)

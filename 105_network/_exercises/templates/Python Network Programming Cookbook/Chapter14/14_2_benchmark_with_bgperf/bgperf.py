@@ -124,7 +124,7 @@ ___ bench(args):
             print ('removing target container', target_class.CONTAINER_NAME)
             dckr.remove_container(target_class.CONTAINER_NAME, force_True)
 
-    __ not args.repeat:
+    __ no. args.repeat:
         __ ctn_exists(Monitor.CONTAINER_NAME):
             print ('removing monitor container', Monitor.CONTAINER_NAME)
             dckr.remove_container(Monitor.CONTAINER_NAME, force_True)
@@ -144,7 +144,7 @@ ___ bench(args):
             conf _ yaml.load(Template(f.read()).render())
     ____
         conf _ gen_conf(args)
-        __ not __.pa__.e..(config_dir):
+        __ no. __.pa__.e..(config_dir):
             __.makedirs(config_dir)
         with open('{0}/scenario.yaml'.format(config_dir), 'w') __ f:
             f.write(conf)
@@ -156,7 +156,7 @@ ___ bench(args):
             print ('Docker network "{}" already exists'.format(dckr_net_name))
             bridge_found _ T..
             b..
-    __ not bridge_found:
+    __ no. bridge_found:
         subnet _ conf['local_prefix']
         print ('creating Docker network "{}" with subnet {}'.format(dckr_net_name, subnet))
         ipam _ IPAMConfig(pool_configs_[IPAMPool(subnet_subnet)])
@@ -198,7 +198,7 @@ ___ bench(args):
         # raw_bridges: list of Linux bridges that match raw_bridge_name
         raw_bridges _ ip.link_lookup(ifname_raw_bridge_name)
         __ le.(raw_bridges) __ 0:
-            __ not args.bridge_name:
+            __ no. args.bridge_name:
                 print('can\'t determine the Linux bridge interface name starting '
                       'from the Docker network {}'.format(dckr_net_name))
             ____
@@ -209,7 +209,7 @@ ___ bench(args):
                     'used by the Docker network {}, but without the correct Linux '
                     'bridge name it\'s impossible to verify if that\'s true'.format(
                         intf_name, dckr_net_name))
-            __ not args.bridge_name:
+            __ no. args.bridge_name:
                 print('Please supply the Linux bridge name corresponding to the '
                       'Docker network {} using the --bridge-name argument.'.format(
                           dckr_net_name))
@@ -219,7 +219,7 @@ ___ bench(args):
         intf_bridge _ intf.get_attr('IFLA_MASTER')
 
         # if intf is not member of the bridge, add it
-        __ intf_bridge not __ raw_bridges:
+        __ intf_bridge no. __ raw_bridges:
             __ intf_bridge is None:
                 print('Since the target is remote, the host interface used to '
                       'reach the target ({}) must be part of the Linux bridge '
@@ -285,20 +285,20 @@ ___ bench(args):
     print ('waiting bgp connection between {0} and monitor'.format(args.target))
     m.wait_established(conf['target']['local-address'])
 
-    __ not args.repeat:
+    __ no. args.repeat:
         ___ idx, tester __ enumerate(conf['testers']):
-            __ 'name' not __ tester:
+            __ 'name' no. __ tester:
                 name _ 'tester{0}'.format(idx)
             ____
                 name _ tester['name']
-            __ 'type' not __ tester:
+            __ 'type' no. __ tester:
                 tester_type _ 'normal'
             ____
                 tester_type _ tester['type']
             __ tester_type __ 'normal':
                 tester_class _ ExaBGPTester
             ____ tester_type __ 'mrt':
-                __ 'mrt_injector' not __ tester:
+                __ 'mrt_injector' no. __ tester:
                     mrt_injector _ 'gobgp'
                 ____
                     mrt_injector _ tester['mrt_injector']
@@ -321,7 +321,7 @@ ___ bench(args):
     q _ Queue()
 
     m.stats(q)
-    __ not is_remote:
+    __ no. is_remote:
         target.stats(q)
 
     ___ mem_human(v):
@@ -341,7 +341,7 @@ ___ bench(args):
     w__ T..:
         info _ q.get()
 
-        __ not is_remote and info['who'] __ target.name:
+        __ no. is_remote and info['who'] __ target.name:
             cpu _ info['cpu']
             mem _ info['mem']
 
@@ -470,7 +470,7 @@ ___ gen_conf(args):
         curr_ip _ local_address_prefix.ip + i
         __ curr_ip __ [target_local_address, monitor_local_address]:
             print('skipping tester\'s neighbor with IP {} because it collides with target or monitor'.format(curr_ip))
-            continue
+            c..
         router_id _ st..(local_address_prefix.ip + i)
         neighbors[router_id] _ {
             'as': 1000 + i,
