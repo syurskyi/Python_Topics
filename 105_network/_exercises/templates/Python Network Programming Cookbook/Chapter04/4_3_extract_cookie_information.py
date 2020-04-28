@@ -9,7 +9,7 @@ ______ http.cookiejar
 # Comment out the above line and uncomment the below for Python 2.7.x.
 #import cookielib 
 
-______ urllib
+______ u__
 
 # Uncomment the below line for Python 2.7.x.
 #import urllib2
@@ -30,13 +30,13 @@ ___ extract_cookie_info
     # Comment out the above line and uncomment the below for Python 2.7.x.
     #cj = cookielib.CookieJar()
 
-    login_data _ urllib.parse.urlencode({ID_USERNAME : USERNAME, ID_PASSWORD : PASSWORD}).e..("utf-8")
+    login_data _ ?.parse.urlencode({ID_USERNAME : USERNAME, ID_PASSWORD : PASSWORD}).e..("utf-8")
     # Comment out the above line and uncomment the below for Python 2.7.x.
     #login_data = urllib.urlencode({ID_USERNAME : USERNAME, ID_PASSWORD : PASSWORD})
 
     # create url opener
 
-    opener _ urllib.r__.build_opener(urllib.r__.HTTPCookieProcessor(cj))
+    opener _ ?.r__.build_opener(?.r__.HTTPCookieProcessor(cj))
     # Comment out the above line and uncomment the below for Python 2.7.x.
     #opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))
 

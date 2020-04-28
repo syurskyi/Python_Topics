@@ -11,12 +11,12 @@ ______ http.client
 # Comment out the above line and uncomment the below for Python 2.7.x.
 #import httplib
 
-______ urllib.parse
+______ u__.parse
 # Comment out the above line and uncomment the below for Python 2.7.x.
 #import urlparse
 
 ______ re
-______ urllib.r__, urllib.e..
+______ u__.r__, u__.e..
 # Comment out the above line and uncomment the below for Python 2.7.x.
 #import urllib
 
@@ -31,7 +31,7 @@ ___ get_server_status_code(url):
     Download just the header of a URL and
     return the server's status code.
     """
-    host, pa__ _ urllib.parse.urlparse(url)[1:3]
+    host, pa__ _ ?.parse.urlparse(url)[1:3]
     # Comment out the above line and uncomment the below for Python 2.7.x.
     #host, path = urlparse.urlparse(url)[1:3] 
     ___

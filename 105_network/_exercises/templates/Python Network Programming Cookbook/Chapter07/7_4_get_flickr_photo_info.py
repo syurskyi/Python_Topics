@@ -6,7 +6,7 @@
 
 ______ a_p..
 ______ json
-______ requests
+______ re__
 
 ___
     ____ local_settings ______ flickr_apikey
@@ -18,7 +18,7 @@ ___ collect_photo_info(api_key, tag, max_count):
     """Collects some interesting info about some photos from Flickr.com for a given tag """
     photo_collection _ []
     url _  "http://api.flickr.com/services/rest/?method=flickr.photos.search&tags=@&format=json&nojsoncallback=1&api_key=@" (tag, api_key)
-    resp _ requests.get(url)
+    resp _ ?.get(url)
     results _ resp.json()
     count  _ 0
     ___ p __ results['photos']['photo']:
@@ -27,7 +27,7 @@ ___ collect_photo_info(api_key, tag, max_count):
         print ('Processing photo: "@"'  p['title'])
         photo _ {}
         url _ "http://api.flickr.com/services/rest/?method=flickr.photos.getInfo&photo_id=" + p['id'] + "&format=json&nojsoncallback=1&api_key=" + api_key
-        info _ requests.get(url).json()
+        info _ ?.get(url).json()
         photo["flickrid"] _ p['id']
         photo["title"] _ info['photo']['title']['_content']
         photo["description"] _ info['photo']['description']['_content']
@@ -42,7 +42,7 @@ ___ collect_photo_info(api_key, tag, max_count):
         __ numcomments:
             #print "   Now reading comments (d)..."  numcomments
             url _ "http://api.flickr.com/services/rest/?method=flickr.photos.comments.getList&photo_id=" + p['id'] + "&format=json&nojsoncallback=1&api_key=" + api_key
-            comments _ requests.get(url).json()
+            comments _ ?.get(url).json()
             photo["comment"] _ []
             ___ c __ comments['comments']['comment']:
                 comment _ {}

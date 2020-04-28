@@ -24,7 +24,7 @@ ______ netaddr
 ______ datetime
 ____ ? ______ AP.., REMAINDER
 ____ itertools ______ chain, islice
-____ requests.exceptions ______ ConnectionError
+____ ?.exceptions ______ ConnectionError
 ____ pyroute2 ______ IPRoute
 ____ ? ______ AF_INET
 ____ nsenter ______ Namespace

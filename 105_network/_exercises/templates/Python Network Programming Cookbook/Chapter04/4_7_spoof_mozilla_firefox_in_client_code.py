@@ -5,7 +5,7 @@
 #
 # Follow the comments inline to make it run on Python 2.7.x.
 
-______ urllib.request, urllib.e.., urllib.parse
+______ u__.request, u__.e.., u__.parse
 # Comment out the above line and uncomment the below for Python 2.7.x.
 #import urllib2
 
@@ -14,7 +14,7 @@ URL _ 'http://www.python.org'
 
 ___ spoof_firefox
 
-    opener _ urllib.r__.build_opener()
+    opener _ ?.r__.build_opener()
     # Comment out the above line and uncomment the below for Python 2.7.x.
     #opener = urllib2.build_opener()
 

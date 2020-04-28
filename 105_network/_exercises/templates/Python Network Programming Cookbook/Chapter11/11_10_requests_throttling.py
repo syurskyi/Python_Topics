@@ -4,7 +4,7 @@
 # It may run on any other version with/without modifications.
 
 ______ a_p..
-______ requests
+______ re__
 ____ throttler.base_throttler ______ BaseThrottler
 
 
@@ -14,7 +14,7 @@ ___ main(address):
     bt _ BaseThrottler(name_'base-throttler', delay_1.5)
 
     # Visit the address provided by the user. Complete URL only.
-    r _ requests.Request(method_'GET', url_address)
+    r _ ?.Request(method_'GET', url_address)
 
     # 10 requests.
     reqs _ [r ___ i __ ra..(0, 10)]
