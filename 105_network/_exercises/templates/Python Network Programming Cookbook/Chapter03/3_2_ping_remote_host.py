@@ -110,49 +110,49 @@ c_ Pinger o..
         """
         Returns the delay (in seconds) or none on timeout.
         """
-        icmp _ ?.g_p_t_n..("icmp")
+        icmp _ ?.g_p_t_n.. "icmp"
         ___
-            sock _ ?.?(?.A.. ?.SOCK_RAW, icmp)
-        ______ ?.e.. __ e:
-            __ e.errno __ 1:
+            sock _ ?.? ?.A.. ?.S_R.. ?
+        ______ ?.e.. __ e
+            __ e.er.. __ 1
                 # Not superuser, so operation not permitted
-                e.msg +_  "ICMP messages can only be sent from root user processes"
-                r_ ?.e..(e.msg)
+                e.m.. +_  "ICMP messages can only be sent from root user processes"
+                r_ ?.e.. ?.m..
         ______ E.. __ e:
-            print ("Exception: @" (e))
+            print ("Exception: @" ?
     
         my_ID _ __.g_p.. & 0xFFFF
      
-        send_ping(sock, my_ID)
-        delay _ receive_pong(sock, my_ID, timeout)
-        sock.c..
-        r_ delay
+        send_ping s.. m_I.
+        delay _ r_p.. s.. m_I. t..
+        ?.c..
+        r_ ?
      
      
     ___ ping
         """
         Run the ping process
         """
-        ___ i __ range(count):
-            print ("Ping to @..."  target_host,)
+        ___ i __ ra.. c..
+            print ("Ping to @..."  target_host,
             ___
-                delay  _  ping_once()
-            ______ ?.g.. __ e:
-                print ("Ping failed. (socket error: '@')"  e[1])
+                delay  _  p_o..
+            ______ ?.g.. __ e
+                print ("Ping failed. (socket error: '@')"  ? 1
                 b..
      
-            __ delay  __  None:
-                print ("Ping failed. (timeout within ssec.)"  timeout)
+            __ delay  __  N..
+                print ("Ping failed. (timeout within ssec.)"  t..
             ____
                 delay  _  delay * 1000
-                print ("Get pong in 0.4fms"  delay)
+                print ("Get pong in 0.4fms"  ?
 
  
  
 __ _______ __ ______
     parser _ ?.AP..(d.._'Python ping')
-    parser.a_a..('--target-host', a.._"store", d.._"target_host", r.._T..)
-    given_args _ parser.parse_args()
-    target_host _ given_args.target_host
-    pinger _ Pinger(target_host_target_host)
-    pinger.ping()
+    ?.a_a..('--target-host' a.._"store" d.._"target_host" r.._T..
+    given_args _ ?.p_a..
+    target_host _ ?.t_h..
+    pinger _ P.. t_h.._t_h..
+    ?.p..
