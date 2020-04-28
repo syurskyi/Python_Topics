@@ -5,7 +5,7 @@
 
 ______ __
 ______ a_p..
-______ ftplib
+______ ft..
 ______ getpass 
 
 LOCAL_FTP_SERVER _ 'localhost'
@@ -13,7 +13,7 @@ LOCAL_FILE _ 'readme.txt'
 
 ___ ftp_upload(ftp_server, username, password, file_name):
     print ("Connecting to FTP server: @" ftp_server)
-    ftp _ ftplib.FTP(ftp_server)
+    ftp _ ?.FTP(ftp_server)
     print ("Login to FTP server: user=@" username)
     ftp.login(username, password)
     ext _ __.pa__.splitext(file_name)[1]

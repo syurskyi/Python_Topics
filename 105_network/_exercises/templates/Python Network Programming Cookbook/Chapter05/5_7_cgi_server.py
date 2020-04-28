@@ -9,7 +9,7 @@ ______ __
 ______ cgi
 ______ a_p..
 
-______ http.server
+______ http.s..
 # Comment out the above line and uncomment the below for Python 2.7.x.
 #import BaseHTTPServer
 
@@ -22,11 +22,11 @@ cgitb.enable()  ## enable CGI error reporting
 
 ___ web_server(port):
 
-    server _ http.server.HTTPServer
+    server _ http.s...HTTPServer
     # Comment out the above line and uncomment the below for Python 2.7.x.
     #server = BaseHTTPServer.HTTPServer
 
-    handler _ http.server.CGIHTTPRequestHandler #RequestsHandler
+    handler _ http.s...CGIHTTPRequestHandler #RequestsHandler
     # Comment out the above line and uncomment the below for Python 2.7.x.
     #handler = CGIHTTPServer.CGIHTTPRequestHandler #RequestsHandler
 

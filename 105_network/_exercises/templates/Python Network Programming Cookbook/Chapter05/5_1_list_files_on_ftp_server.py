@@ -6,12 +6,12 @@
 
 FTP_SERVER_URL _ 'ftp.ed.ac.uk'
 
-______ ftplib
-____ ftplib ______ FTP
+______ ft..
+____ ft.. ______ FTP
 
 ___ test_ftp_connection(pa__, username, email):
     #Open ftp connection
-    ftp _ ftplib.FTP(pa__, username, email)
+    ftp _ ?.FTP(pa__, username, email)
     
    #List the files in the /pub directory
     ftp.cwd("/pub")

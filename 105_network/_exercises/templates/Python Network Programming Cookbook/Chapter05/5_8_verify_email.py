@@ -29,18 +29,18 @@ ___ mail_checker(fromAddress, toAddress):
 
 
     server _ smtplib.SMTP()
-    server.set_debuglevel(1)
+    s...set_debuglevel(1)
 
     ___
-        server.c..(mxRecord)
+        s...c..(mxRecord)
     ______ E.. __ e:
         print ("Mail Check Failed Due to Error: @" st..(e))
         r_
  
-    server.helo(server.local_hostname) 
-    server.mail(fromAddress)
-    code, message _ server.rcpt(st..(addressToVerify))
-    server.quit()
+    s...helo(s...local_hostname)
+    s...mail(fromAddress)
+    code, message _ s...rcpt(st..(addressToVerify))
+    s...quit()
 
     __ code __ 250:
 	    print('Successfully verified the email: @', fromAddress)

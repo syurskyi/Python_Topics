@@ -11,7 +11,7 @@ ______ xmlrpc
 #import xmlrpclib
 ______ th..
 
-____ xmlrpc.server ______ SimpleXMLRPCServer
+____ xmlrpc.s.. ______ SimpleXMLRPCServer
 # Comment out the above line and uncomment the below line for Python 2.x.
 #from SimpleXMLRPCServer import SimpleXMLRPCServer
 

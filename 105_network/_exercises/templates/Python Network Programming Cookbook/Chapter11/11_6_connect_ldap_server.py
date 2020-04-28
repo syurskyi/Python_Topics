@@ -16,11 +16,11 @@ ___ main(address):
     
     # Print the LDAP Server Information.
     print('******************Server Info**************')
-    print(server.info)
+    print(s...info)
 
     # Print the LDAP Server Detailed Schema.
     print('******************Server Schema**************')
-    print(server.schema)
+    print(s...schema)
 
 __ _______ __ ______
     parser _ ?.AP..(d.._'Query LDAP Server')

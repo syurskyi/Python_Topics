@@ -10,8 +10,8 @@ ______ ?, __
 ____ OpenSSL ______ SSL
 
 ____ s_s ______ BaseServer
-____ http.server ______ HTTPServer
-____ http.server ______ SimpleHTTPRequestHandler
+____ http.s.. ______ HTTPServer
+____ http.s.. ______ SimpleHTTPRequestHandler
 # Comment out the above 3 lines and uncomment the below 3 lines for Python 2.7.x.
 #from SocketServer import BaseServer
 #from BaseHTTPServer import HTTPServer
@@ -44,7 +44,7 @@ ___ run_server(HandlerClass _ SecureHTTPRequestHandler,
     server _ ServerClass(server_address, HandlerClass)
     running_address _ server.?.g_s_n..()
     print ("Serving HTTPS Server on @:@ ..." (running_address[0], running_address[1]))
-    server.serve_forever()
+    s...serve_forever()
 
 
 __ _______ __ ______

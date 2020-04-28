@@ -11,7 +11,7 @@ ______ xmlrpc
 # Comment out the above line and uncomment the below line for Python 2.x.
 #import xmlrpclib
 
-____ xmlrpc.server ______ SimpleXMLRPCServer
+____ xmlrpc.s.. ______ SimpleXMLRPCServer
 # Comment out the above line for Python 2.x.
 
 ___ run_client(host, port, username, password):
@@ -20,7 +20,7 @@ ___ run_client(host, port, username, password):
     #server = xmlrpclib.ServerProxy('http://@:@@@:@' (username, password, host, port, ))
     msg _ "hello server..."
     print ("Sending message to server: @  " msg)
-    print ("Got reply: @" server.echo(msg))
+    print ("Got reply: @" s...echo(msg))
 
 __ _______ __ ______
     parser _ ?.AP..(d.._'Multithreaded multicall XMLRPC Server/Proxy')

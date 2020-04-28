@@ -12,7 +12,7 @@ ______ xmlrpc
 #import xmlrpclib
 ____ base64 ______ b64decode
 
-____ xmlrpc.server ______ SimpleXMLRPCServer, SimpleXMLRPCRequestHandler
+____ xmlrpc.s.. ______ SimpleXMLRPCServer, SimpleXMLRPCRequestHandler
 # Comment out the above line and uncomment the below line for Python 2.x.
 #from SimpleXMLRPCServer  import SimpleXMLRPCServer, SimpleXMLRPCRequestHandler
 

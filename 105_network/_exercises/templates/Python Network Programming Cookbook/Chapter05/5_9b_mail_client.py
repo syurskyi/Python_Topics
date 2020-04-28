@@ -15,11 +15,11 @@ ___ mail_client(host, port, fromAddress, toAddress, subject, body):
     msg['Subject'] _ subject
 
     server _ smtplib.SMTP(host, port)
-    server.set_debuglevel(T..)  
+    s...set_debuglevel(T..)
     ___
-        server.sendmail(fromAddress, toAddress, msg.as_string())
+        s...sendmail(fromAddress, toAddress, msg.as_string())
     f..
-        server.quit()
+        s...quit()
 
 
 __ _______ __ ______
