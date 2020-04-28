@@ -36,7 +36,7 @@ RUN git clone git://git.sv.gnu.org/quagga.git quagga
 RUN cd quagga && git checkout {0} && ./bootstrap.sh && \
 ./configure --disable-doc --localstatedir=/var/run/quagga && make && make install
 RUN ldconfig
-'''.format(checkout)
+'''.f..(checkout)
         super(Quagga, cls).build_image(force, tag, nocache)
 
 
@@ -51,7 +51,7 @@ c_ QuaggaTarget(Quagga, Target):
 password zebra
 router bgp {0}
 bgp router-id {1}
-""".format(conf['as'], conf['router-id'])
+""".f..(conf['as'], conf['router-id'])
 
         ___ gen_neighbor_config(n):
             local_addr _ n['local-address']
@@ -59,13 +59,13 @@ bgp router-id {1}
 neighbor {0} advertisement-interval 1
 neighbor {0} route-server-client
 neighbor {0} timers 30 90
-""".format(local_addr, n['as'])
+""".f..(local_addr, n['as'])
             __ 'filter' __ n:
                 ___ p __ (n['filter']['in'] __ 'in' __ n['filter'] ____ []):
-                    c +_ 'neighbor {0} route-map {1} export\n'.format(local_addr, p)
+                    c +_ 'neighbor {0} route-map {1} export\n'.f..(local_addr, p)
             r_ c
 
-        with o..('{0}/{1}'.format(host_dir, CONFIG_FILE_NAME), 'w') __ f:
+        with o..('{0}/{1}'.f..(host_dir, CONFIG_FILE_NAME), 'w') __ f:
             f.w..(config)
             ___ n __ list(flatten(list(t.get('neighbors', {}).values()) ___ t __ scenario_global_conf['testers'])) + [scenario_global_conf['monitor']]:
                 f.w..(gen_neighbor_config(n))
@@ -75,32 +75,32 @@ neighbor {0} timers 30 90
                 ___ k, v __ list(scenario_global_conf['policy'].items()):
                     match_info _ []
                     ___ i, match __ enumerate(v['match']):
-                        n _ '{0}_match_{1}'.format(k, i)
+                        n _ '{0}_match_{1}'.f..(k, i)
                         __ match['type'] __ 'prefix':
-                            f.w..(''.j..('ip prefix-list {0} deny {1}\n'.format(n, p) ___ p __ match['value']))
-                            f.w..('ip prefix-list {0} permit any\n'.format(n))
+                            f.w..(''.j..('ip prefix-list {0} deny {1}\n'.f..(n, p) ___ p __ match['value']))
+                            f.w..('ip prefix-list {0} permit any\n'.f..(n))
                         ____ match['type'] __ 'as-path':
-                            f.w..(''.j..('ip as-path access-list {0} deny _{1}_\n'.format(n, p) ___ p __ match['value']))
-                            f.w..('ip as-path access-list {0} permit .*\n'.format(n))
+                            f.w..(''.j..('ip as-path access-list {0} deny _{1}_\n'.f..(n, p) ___ p __ match['value']))
+                            f.w..('ip as-path access-list {0} permit .*\n'.f..(n))
                         ____ match['type'] __ 'community':
-                            f.w..(''.j..('ip community-list standard {0} permit {1}\n'.format(n, p) ___ p __ match['value']))
-                            f.w..('ip community-list standard {0} permit\n'.format(n))
+                            f.w..(''.j..('ip community-list standard {0} permit {1}\n'.f..(n, p) ___ p __ match['value']))
+                            f.w..('ip community-list standard {0} permit\n'.f..(n))
                         ____ match['type'] __ 'ext-community':
-                            f.w..(''.j..('ip extcommunity-list standard {0} permit {1} {2}\n'.format(n, *p.s..(':', 1)) ___ p __ match['value']))
-                            f.w..('ip extcommunity-list standard {0} permit\n'.format(n))
+                            f.w..(''.j..('ip extcommunity-list standard {0} permit {1} {2}\n'.f..(n, *p.s..(':', 1)) ___ p __ match['value']))
+                            f.w..('ip extcommunity-list standard {0} permit\n'.f..(n))
 
                         match_info.ap..((match['type'], n))
 
-                    f.w..('route-map {0} permit {1}\n'.format(k, seq))
+                    f.w..('route-map {0} permit {1}\n'.f..(k, seq))
                     ___ info __ match_info:
                         __ info[0] __ 'prefix':
-                            f.w..('match ip address prefix-list {0}\n'.format(info[1]))
+                            f.w..('match ip address prefix-list {0}\n'.f..(info[1]))
                         ____ info[0] __ 'as-path':
-                            f.w..('match as-path {0}\n'.format(info[1]))
+                            f.w..('match as-path {0}\n'.f..(info[1]))
                         ____ info[0] __ 'community':
-                            f.w..('match community {0}\n'.format(info[1]))
+                            f.w..('match community {0}\n'.f..(info[1]))
                         ____ info[0] __ 'ext-community':
-                            f.w..('match extcommunity {0}\n'.format(info[1]))
+                            f.w..('match extcommunity {0}\n'.f..(info[1]))
 
                     seq +_ 10
 
@@ -109,6 +109,6 @@ neighbor {0} timers 30 90
             ['#!/bin/bash',
              'ulimit -n 65536',
              'bgpd -u root -f {guest_dir}/{config_file_name}']
-        ).format(
+        ).f..(
             guest_dir_self.guest_dir,
             config_file_name_self.CONFIG_FILE_NAME)

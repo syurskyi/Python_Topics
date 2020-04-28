@@ -33,7 +33,7 @@ c_ ExaBGPTester(Tester, ExaBGP):
         peers _ list(conf.get('neighbors', {}).values())
 
         ___ p __ peers:
-            with o..('{0}/{1}.conf'.format(host_dir, p['router-id']), 'w') __ f:
+            with o..('{0}/{1}.conf'.f..(host_dir, p['router-id']), 'w') __ f:
                 local_address _ p['local-address']
                 config _ '''neighbor {0} {{
     peer-as {1};
@@ -41,11 +41,11 @@ c_ ExaBGPTester(Tester, ExaBGP):
     local-address {3};
     local-as {4};
     static {{
-'''.format(target_conf['local-address'], target_conf['as'],
+'''.f..(target_conf['local-address'], target_conf['as'],
                p['router-id'], local_address, p['as'])
                 f.w..(config)
                 ___ pa__ __ p['paths']:
-                    f.w..('      route {0} next-hop {1};\n'.format(pa__, local_address))
+                    f.w..('      route {0} next-hop {1};\n'.f..(pa__, local_address))
                 f.w..('''   }
 }''')
 
@@ -58,6 +58,6 @@ ulimit -n 65536''']
             startup.ap..('''env exabgp.log.destination={0}/{1}.log \
 exabgp.daemon.daemonize=true \
 exabgp.daemon.user=root \
-exabgp {0}/{1}.conf'''.format(guest_dir, p['router-id']))
+exabgp {0}/{1}.conf'''.f..(guest_dir, p['router-id']))
 
         r_ '\n'.j..(startup)

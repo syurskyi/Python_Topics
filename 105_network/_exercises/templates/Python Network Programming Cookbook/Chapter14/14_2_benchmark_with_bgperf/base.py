@@ -69,11 +69,11 @@ c_ Container(o..):
 
         ___ env __ ['http_proxy', 'https_proxy']:
             __ env __ __.environ:
-                cls.dockerfile _ insert_after_from(cls.dockerfile, 'ENV {0} {1}'.format(env, __.environ[env]))
+                cls.dockerfile _ insert_after_from(cls.dockerfile, 'ENV {0} {1}'.f..(env, __.environ[env]))
 
         f _ io.BytesIO(cls.dockerfile.e..('utf-8'))
         __ force or no. img_exists(tag):
-            print ('build {0}...'.format(tag))
+            print ('build {0}...'.f..(tag))
             ___ line __ dckr.build(fileobj_f, rm_True, tag_tag, decode_True, nocache_nocache):
                 __ 'stream' __ line:
                     print (line['stream'].strip())
@@ -91,7 +91,7 @@ c_ Container(o..):
             dckr.remove_container(name, force_True)
 
         host_config _ dckr.create_host_config(
-            binds_['{0}:{1}'.format(__.pa__.abspath(host_dir), guest_dir)],
+            binds_['{0}:{1}'.f..(__.pa__.abspath(host_dir), guest_dir)],
             privileged_True,
             network_mode_'bridge',
             cap_add_['NET_ADMIN']
@@ -111,13 +111,13 @@ c_ Container(o..):
             net_id _ network['Id']
             __ no. 'IPAM' __ network:
                 print('can\'t verify if container\'s IP addresses '
-                      'are valid for Docker network {}: missing IPAM'.format(dckr_net_name))
+                      'are valid for Docker network {}: missing IPAM'.f..(dckr_net_name))
                 b..
             ipam _ network['IPAM']
 
             __ no. 'Config' __ ipam:
                 print('can\'t verify if container\'s IP addresses '
-                      'are valid for Docker network {}: missing IPAM.Config'.format(dckr_net_name))
+                      'are valid for Docker network {}: missing IPAM.Config'.f..(dckr_net_name))
                 b..
 
             ip_ok _ F..
@@ -128,17 +128,17 @@ c_ Container(o..):
 
                 __ no. ip_ok:
                     print('the container\'s IP address {} is not valid for Docker network {} '
-                          'since it\'s not part of any of its subnets ({})'.format(
+                          'since it\'s not part of any of its subnets ({})'.f..(
                               ip, dckr_net_name, ', '.j..(network_subnets)))
                     print('Please consider removing the Docket network {net} '
                           'to allow bgperf to create it again using the '
                           'expected subnet:\n'
-                          '  docker network rm {net}'.format(net_dckr_net_name))
+                          '  docker network rm {net}'.f..(net_dckr_net_name))
                     ___.e..(1)
             b..
 
         __ net_id is N..:
-            print ('Docker network "{}" not found!'.format(dckr_net_name))
+            print ('Docker network "{}" not found!'.f..(dckr_net_name))
             r_
 
         dckr.connect_container_to_network(ctn_id, net_id, ipv4_address_ipv4_addresses[0])
@@ -156,7 +156,7 @@ c_ Container(o..):
                 dev _ "eth0"
 
             ___ ip __ ipv4_addresses[1:]:
-                local('ip addr add {} dev {}'.format(ip, dev))
+                local('ip addr add {} dev {}'.f..(ip, dev))
 
         r_ ctn
 
@@ -196,12 +196,12 @@ c_ Container(o..):
         __ no. startup_content:
             r_
 
-        filename _ '{0}/start.sh'.format(host_dir)
+        filename _ '{0}/start.sh'.f..(host_dir)
         with o..(filename, 'w') __ f:
             f.w..(startup_content)
         __.chmod(filename, 0o777)
 
-        r_ local('{0}/start.sh'.format(guest_dir),
+        r_ local('{0}/start.sh'.f..(guest_dir),
                           detach_detach,
                           stream_stream)
 
@@ -215,7 +215,7 @@ c_ Target(Container):
 
     ___ use_existing_config
         __ 'config_path' __ conf:
-            with o..('{0}/{1}'.format(host_dir, CONFIG_FILE_NAME), 'w') __ f:
+            with o..('{0}/{1}'.f..(host_dir, CONFIG_FILE_NAME), 'w') __ f:
                 with o..(conf['config_path'], 'r') __ orig:
                     f.w..(orig.read())
             r_ T..
@@ -266,6 +266,6 @@ c_ Tester(Container):
                     cnt +_ 1
                     __ cnt > 1:
                         rm_line()
-                    print('tester booting.. ({0}/{1})'.format(cnt, le.(list(conf.get('neighbors', {}).values()))))
+                    print('tester booting.. ({0}/{1})'.f..(cnt, le.(list(conf.get('neighbors', {}).values()))))
 
         r_ ctn

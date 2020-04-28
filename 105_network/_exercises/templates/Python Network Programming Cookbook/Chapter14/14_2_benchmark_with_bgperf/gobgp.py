@@ -33,7 +33,7 @@ RUN go get -v github.com/osrg/gobgp/gobgp
 RUN cd $GOPATH/src/github.com/osrg/gobgp && git checkout {0}
 RUN go install github.com/osrg/gobgp/gobgpd
 RUN go install github.com/osrg/gobgp/gobgp
-'''.format(checkout)
+'''.f..(checkout)
         super(GoBGP, cls).build_image(force, tag, nocache)
 
 
@@ -66,7 +66,7 @@ c_ GoBGPTarget(GoBGP, Target):
                     'bgp-conditions': {},
                 }
                 ___ i, match __ enumerate(v['match']):
-                    n _ '{0}_match_{1}'.format(k, i)
+                    n _ '{0}_match_{1}'.f..(k, i)
                     __ match['type'] __ 'prefix':
                         config['defined-sets']['prefix-sets'].ap..({
                             'prefix-set-name': n,
@@ -114,7 +114,7 @@ c_ GoBGPTarget(GoBGP, Target):
             r_ c
 
         config['neighbors'] _ [gen_neighbor_config(n) ___ n __ list(flatten(list(t.get('neighbors', {}).values()) ___ t __ scenario_global_conf['testers'])) + [scenario_global_conf['monitor']]]
-        with o..('{0}/{1}'.format(host_dir, CONFIG_FILE_NAME), 'w') __ f:
+        with o..('{0}/{1}'.f..(host_dir, CONFIG_FILE_NAME), 'w') __ f:
             f.w..(yaml.dump(config, default_flow_style_False))
 
     ___ get_startup_cmd
@@ -122,7 +122,7 @@ c_ GoBGPTarget(GoBGP, Target):
             ['#!/bin/bash',
              'ulimit -n 65536',
              'gobgpd -t yaml -f {guest_dir}/{config_file_name} -l {debug_level} > {guest_dir}/gobgpd.log 2>&1']
-        ).format(
+        ).f..(
             guest_dir_self.guest_dir,
             config_file_name_self.CONFIG_FILE_NAME,
             debug_level_'info')

@@ -33,7 +33,7 @@ flex bison libncurses-dev libreadline6-dev
 RUN apt-get install -qy flex
 RUN git clone https://gitlab.labs.nic.cz/labs/bird.git bird
 RUN cd bird && git checkout {0} && autoreconf -i && ./configure && make && make install
-'''.format(checkout)
+'''.f..(checkout)
         super(BIRD, cls).build_image(force, tag, nocache)
 
 
@@ -49,7 +49,7 @@ protocol device {{ }}
 protocol direct {{ disabled; }}
 protocol kernel {{ disabled; }}
 table master{1};
-'''.format(conf['router-id'], ' sorted' __ conf['single-table'] ____ '')
+'''.f..(conf['router-id'], ' sorted' __ conf['single-table'] ____ '')
 
         ___ gen_filter_assignment(n):
             __ 'filter' __ n:
@@ -57,12 +57,12 @@ table master{1};
                 __ 'in' no. __ n['filter'] or le.(n['filter']['in']) __ 0:
                     c.ap..('import all;')
                 ____
-                    c.ap..('import where {0};'.format( '&&'.j..(x + '()' ___ x __ n['filter']['in'])))
+                    c.ap..('import where {0};'.f..( '&&'.j..(x + '()' ___ x __ n['filter']['in'])))
 
                 __ 'out' no. __ n['filter'] or le.(n['filter']['out']) __ 0:
                     c.ap..('export all;')
                 ____
-                    c.ap..('export where {0};'.format( '&&'.j..(x + '()' ___ x __ n['filter']['out'])))
+                    c.ap..('export where {0};'.f..( '&&'.j..(x + '()' ___ x __ n['filter']['out'])))
 
                 r_ '\n'.j..(c)
             r_ '''import all;
@@ -76,7 +76,7 @@ protocol pipe pipe_{0} {{
     mode transparent;
     peer table table_{0};
 {1}
-}}'''.format(n['as'], gen_filter_assignment(n)) __ no. conf['single-table'] ____ '') + '''protocol bgp bgp_{0} {{
+}}'''.f..(n['as'], gen_filter_assignment(n)) __ no. conf['single-table'] ____ '') + '''protocol bgp bgp_{0} {{
     local as {1};
     neighbor {2} as {0};
     {3};
@@ -84,7 +84,7 @@ protocol pipe pipe_{0} {{
     export all;
     rs client;
 }}
-'''.format(n['as'], conf['as'], n['local-address'], 'secondary' __ conf['single-table'] ____ 'table table_{0}'.format(n['as']))
+'''.f..(n['as'], conf['as'], n['local-address'], 'secondary' __ conf['single-table'] ____ 'table table_{0}'.f..(n['as']))
             r_ n1 + n2
 
         ___ gen_prefix_filter(name, match):
@@ -97,13 +97,13 @@ prefixes = [
 if net ~ prefixes then return false;
 return true;
 }}
-'''.format(name, ',\n'.j..(match['value']))
+'''.f..(name, ',\n'.j..(match['value']))
 
         ___ gen_aspath_filter(name, match):
             c _ '''function {0}()
 {{
-'''.format(name)
-            c +_ '\n'.j..('if (bgp_path ~ [= * {0} * =]) then return false;'.format(v) ___ v __ match['value'])
+'''.f..(name)
+            c +_ '\n'.j..('if (bgp_path ~ [= * {0} * =]) then return false;'.f..(v) ___ v __ match['value'])
             c +_ '''
 return true;
 }
@@ -113,8 +113,8 @@ return true;
         ___ gen_community_filter(name, match):
             c _ '''function {0}()
 {{
-'''.format(name)
-            c +_ '\n'.j..('if ({0}, {1}) ~ bgp_community then return false;'.format(*v.s..(':')) ___ v __ match['value'])
+'''.f..(name)
+            c +_ '\n'.j..('if ({0}, {1}) ~ bgp_community then return false;'.f..(*v.s..(':')) ___ v __ match['value'])
             c +_ '''
 return true;
 }
@@ -124,8 +124,8 @@ return true;
         ___ gen_ext_community_filter(name, match):
             c _ '''function {0}()
 {{
-'''.format(name)
-            c +_ '\n'.j..('if ({0}, {1}, {2}) ~ bgp_ext_community then return false;'.format(*v.s..(':')) ___ v __ match['value'])
+'''.f..(name)
+            c +_ '\n'.j..('if ({0}, {1}, {2}) ~ bgp_ext_community then return false;'.f..(*v.s..(':')) ___ v __ match['value'])
             c +_ '''
 return true;
 }
@@ -135,21 +135,21 @@ return true;
 
 
         ___ gen_filter(name, match):
-            c _ ['function {0}()'.format(name), '{']
+            c _ ['function {0}()'.f..(name), '{']
             ___ typ, name __ match:
-                c.ap..(' if ! {0}() then return false;'.format(name))
+                c.ap..(' if ! {0}() then return false;'.f..(name))
             c.ap..('return true;')
             c.ap..('}')
             r_ '\n'.j..(c) + '\n'
 
-        with o..('{0}/{1}'.format(host_dir, CONFIG_FILE_NAME), 'w') __ f:
+        with o..('{0}/{1}'.f..(host_dir, CONFIG_FILE_NAME), 'w') __ f:
             f.w..(config)
 
             __ 'policy' __ scenario_global_conf:
                ___ k, v __ list(scenario_global_conf['policy'].items()):
                     match_info _ []
                     ___ i, match __ enumerate(v['match']):
-                        n _ '{0}_match_{1}'.format(k, i)
+                        n _ '{0}_match_{1}'.f..(k, i)
                         __ match['type'] __ 'prefix':
                             f.w..(gen_prefix_filter(n, match))
                         ____ match['type'] __ 'as-path':
@@ -170,6 +170,6 @@ return true;
             ['#!/bin/bash',
              'ulimit -n 65536',
              'bird -c {guest_dir}/{config_file_name}']
-        ).format(
+        ).f..(
             guest_dir_self.guest_dir,
             config_file_name_self.CONFIG_FILE_NAME)

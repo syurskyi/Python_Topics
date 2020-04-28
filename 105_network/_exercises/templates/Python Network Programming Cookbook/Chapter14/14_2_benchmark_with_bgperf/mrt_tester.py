@@ -29,11 +29,11 @@ c_ MRTTester(o..):
         __ 'mrt-file' __ conf:
             mrt_file_path _ __.pa__.expanduser(conf['mrt-file'])
 
-            guest_mrt_file_path _ '{guest_dir}/{filename}'.format(
+            guest_mrt_file_path _ '{guest_dir}/{filename}'.f..(
                 guest_dir_self.guest_dir,
                 filename_name + '.mrt'
             )
-            host_mrt_file_path _ '{host_dir}/{filename}'.format(
+            host_mrt_file_path _ '{host_dir}/{filename}'.f..(
                 host_dir_self.host_dir,
                 filename_name + '.mrt'
             )
@@ -62,7 +62,7 @@ c_ ExaBGPMrtTester(Tester, ExaBGP_MRTParse, MRTTester):
     api {{
         processes [ inject_mrt ];
     }}
-}}'''.format(target_conf['local-address'], target_conf['as'],
+}}'''.f..(target_conf['local-address'], target_conf['as'],
              neighbor['router-id'], neighbor['local-address'],
              neighbor['as'])
 
@@ -82,8 +82,8 @@ c_ ExaBGPMrtTester(Tester, ExaBGP_MRTParse, MRTTester):
 
             config +_ '\n'
             config +_ 'process inject_mrt {\n'
-            config +_ '    run {cmd};\n'.format(
-                cmd_' '.j..(cmd).format(
+            config +_ '    run {cmd};\n'.f..(
+                cmd_' '.j..(cmd).f..(
                     router_id _ neighbor['router-id'],
                     local_as _ neighbor['as'],
                     peer_as _ target_conf['as'],
@@ -95,7 +95,7 @@ c_ ExaBGPMrtTester(Tester, ExaBGP_MRTParse, MRTTester):
             config +_ '    encoder text;\n'
             config +_ '}\n'
 
-            with o..('{0}/{1}.conf'.format(host_dir, neighbor['router-id']), 'w') __ f:
+            with o..('{0}/{1}.conf'.f..(host_dir, neighbor['router-id']), 'w') __ f:
                 f.w..(config)
 
     ___ get_startup_cmd
@@ -113,9 +113,9 @@ c_ ExaBGPMrtTester(Tester, ExaBGP_MRTParse, MRTTester):
         # https://github.com/Exa-Networks/exabgp/wiki/High-Performance
         # WARNING: can not log to files when running multiple configuration
         __ conf.get('high-perf', F..) is T..:
-            cmd +_ ['exabgp -d {} >/dev/null 2>&1 &'.format(
+            cmd +_ ['exabgp -d {} >/dev/null 2>&1 &'.f..(
                        ' '.j..([
-                           '{}/{}.conf'.format(guest_dir, p['router-id']) ___ p __ peers
+                           '{}/{}.conf'.f..(guest_dir, p['router-id']) ___ p __ peers
                        ])
                    )]
             startup +_ [' '.j..(cmd)]
@@ -123,9 +123,9 @@ c_ ExaBGPMrtTester(Tester, ExaBGP_MRTParse, MRTTester):
             ___ p __ peers:
                 startup +_ [' '.j..(
                     cmd + [
-                        'exabgp.log.destination={0}/{1}'.format(
+                        'exabgp.log.destination={0}/{1}'.f..(
                             guest_dir, p['router-id']),
-                        'exabgp {}/{}.conf'.format(
+                        'exabgp {}/{}.conf'.f..(
                             guest_dir, p['router-id']),
                         '&'
                     ])
@@ -161,9 +161,9 @@ c_ GoBGPMRTTester(Tester, GoBGP, MRTTester):
             ]
         }
 
-        with o..('{0}/{1}.conf'.format(host_dir, name), 'w') __ f:
+        with o..('{0}/{1}.conf'.f..(host_dir, name), 'w') __ f:
             f.w..(yaml.dump(config, default_flow_style_False))
-            config_name _ '{0}.conf'.format(name)
+            config_name _ '{0}.conf'.f..(name)
 
     ___ get_startup_cmd
         conf _ list(conf.get('neighbors', {}).values())[0]
@@ -175,7 +175,7 @@ c_ GoBGPMRTTester(Tester, GoBGP, MRTTester):
         startup _ '''#!/bin/bash
 ulimit -n 65536
 gobgpd -t yaml -f {1}/{2} -l {3} > {1}/gobgpd.log 2>&1 &
-'''.format(conf['local-address'], guest_dir, config_name, 'info')
+'''.f..(conf['local-address'], guest_dir, config_name, 'info')
 
         cmd _ ['gobgp', 'mrt']
         __ conf.get('only-best', F..):

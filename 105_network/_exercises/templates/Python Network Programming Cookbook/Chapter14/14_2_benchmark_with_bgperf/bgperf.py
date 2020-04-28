@@ -76,7 +76,7 @@ ___ doctor(args):
         curr_version _ version.parse(ver)
     min_version _ version.parse('1.9.0')
     ok _ curr_version >_ min_version
-    print ('docker version ... {1} ({0})'.format(ver, 'ok' __ ok ____ 'update to {} at least'.format(min_version)))
+    print ('docker version ... {1} ({0})'.f..(ver, 'ok' __ ok ____ 'update to {} at least'.f..(min_version)))
 
     print ('bgperf image',)
     __ img_exists('bgperf/exabgp'):
@@ -85,13 +85,13 @@ ___ doctor(args):
         print ('... not found. run `bgperf prepare`')
 
     ___ name __ ['gobgp', 'bird', 'quagga']:
-        print ('{0} image'.format(name),)
-        __ img_exists('bgperf/{0}'.format(name)):
+        print ('{0} image'.f..(name),)
+        __ img_exists('bgperf/{0}'.f..(name)):
             print ('... ok')
         ____
-            print ('... not found. if you want to bench {0}, run `bgperf prepare`'.format(name))
+            print ('... not found. if you want to bench {0}, run `bgperf prepare`'.f..(name))
 
-    print ('/proc/sys/net/ipv4/neigh/default/gc_thresh3 ... {0}'.format(gc_thresh3()))
+    print ('/proc/sys/net/ipv4/neigh/default/gc_thresh3 ... {0}'.f..(gc_thresh3()))
 
 
 ___ prepare(args):
@@ -116,7 +116,7 @@ ___ update(args):
 
 
 ___ bench(args):
-    config_dir _ '{0}/{1}'.format(args.dir, args.bench_name)
+    config_dir _ '{0}/{1}'.f..(args.dir, args.bench_name)
     dckr_net_name _ args.docker_network_name or args.bench_name + '-br'
 
     ___ target_class __ [BIRDTarget, GoBGPTarget, QuaggaTarget]:
@@ -146,25 +146,25 @@ ___ bench(args):
         conf _ gen_conf(args)
         __ no. __.pa__.e..(config_dir):
             __.makedirs(config_dir)
-        with o..('{0}/scenario.yaml'.format(config_dir), 'w') __ f:
+        with o..('{0}/scenario.yaml'.f..(config_dir), 'w') __ f:
             f.w..(conf)
         conf _ yaml.load(Template(conf).render())
 
     bridge_found _ F..
     ___ network __ dckr.networks(names_[dckr_net_name]):
         __ network['Name'] __ dckr_net_name:
-            print ('Docker network "{}" already exists'.format(dckr_net_name))
+            print ('Docker network "{}" already exists'.f..(dckr_net_name))
             bridge_found _ T..
             b..
     __ no. bridge_found:
         subnet _ conf['local_prefix']
-        print ('creating Docker network "{}" with subnet {}'.format(dckr_net_name, subnet))
+        print ('creating Docker network "{}" with subnet {}'.f..(dckr_net_name, subnet))
         ipam _ IPAMConfig(pool_configs_[IPAMPool(subnet_subnet)])
         network _ dckr.create_network(dckr_net_name, driver_'bridge', ipam_ipam)
 
     num_tester _ sum(le.(t.get('neighbors', [])) ___ t __ conf.get('testers', []))
     __ num_tester > gc_thresh3
-        print ('gc_thresh3({0}) is lower than the number of peer({1})'.format(gc_thresh3(), num_tester))
+        print ('gc_thresh3({0}) is lower than the number of peer({1})'.f..(gc_thresh3(), num_tester))
         print ('type next to increase the value')
         print ('$ echo 16384 | sudo tee /proc/sys/net/ipv4/neigh/default/gc_thresh3')
 
@@ -175,14 +175,14 @@ ___ bench(args):
     is_remote _ T.. __ 'remote' __ conf['target'] and conf['target']['remote'] ____ F..
 
     __ is_remote:
-        print ('target is remote ({})'.format(conf['target']['local-address']))
+        print ('target is remote ({})'.f..(conf['target']['local-address']))
 
         ip _ IPRoute()
 
         # r: route to the target
         r _ ip.get_routes(dst_conf['target']['local-address'], family_AF_INET)
         __ le.(r) __ 0:
-            print ('no route to remote target {0}'.format(conf['target']['local-address']))
+            print ('no route to remote target {0}'.f..(conf['target']['local-address']))
             ___.e..(1)
 
         # intf: interface used to reach the target
@@ -193,25 +193,25 @@ ___ bench(args):
         # raw_bridge_name: Linux bridge name of the Docker bridge
         # TODO: not sure if the linux bridge name is always given by
         #       "br-<first 12 characters of Docker network ID>".
-        raw_bridge_name _ args.bridge_name or 'br-{}'.format(network['Id'][0:12])
+        raw_bridge_name _ args.bridge_name or 'br-{}'.f..(network['Id'][0:12])
 
         # raw_bridges: list of Linux bridges that match raw_bridge_name
         raw_bridges _ ip.link_lookup(ifname_raw_bridge_name)
         __ le.(raw_bridges) __ 0:
             __ no. args.bridge_name:
                 print('can\'t determine the Linux bridge interface name starting '
-                      'from the Docker network {}'.format(dckr_net_name))
+                      'from the Docker network {}'.f..(dckr_net_name))
             ____
-                print('the Linux bridge name provided ({}) seems nonexistent'.format(
+                print('the Linux bridge name provided ({}) seems nonexistent'.f..(
                       raw_bridge_name))
             print('Since the target is remote, the host interface used to '
                     'reach the target ({}) must be part of the Linux bridge '
                     'used by the Docker network {}, but without the correct Linux '
-                    'bridge name it\'s impossible to verify if that\'s true'.format(
+                    'bridge name it\'s impossible to verify if that\'s true'.f..(
                         intf_name, dckr_net_name))
             __ no. args.bridge_name:
                 print('Please supply the Linux bridge name corresponding to the '
-                      'Docker network {} using the --bridge-name argument.'.format(
+                      'Docker network {} using the --bridge-name argument.'.f..(
                           dckr_net_name))
             ___.e..(1)
 
@@ -223,10 +223,10 @@ ___ bench(args):
             __ intf_bridge is N..:
                 print('Since the target is remote, the host interface used to '
                       'reach the target ({}) must be part of the Linux bridge '
-                      'used by the Docker network {}'.format(
+                      'used by the Docker network {}'.f..(
                           intf_name, dckr_net_name))
                 ___.s_o_.w..('Do you confirm to add the interface {} '
-                                 'to the bridge {}? [yes/NO] '.format(
+                                 'to the bridge {}? [yes/NO] '.f..(
                                      intf_name, raw_bridge_name
                                     ))
                 ___
@@ -239,7 +239,7 @@ ___ bench(args):
                     print ('aborting')
                     ___.e..(1)
 
-                print ('adding interface {} to the bridge {}'.format(
+                print ('adding interface {} to the bridge {}'.f..(
                     intf_name, raw_bridge_name)
                 )
                 br _ raw_bridges[0]
@@ -247,10 +247,10 @@ ___ bench(args):
                 ___
                     ip.link('set', index_idx, master_br)
                 ______ E.. __ e:
-                    print('Something went wrong: {}'.format(st..(e)))
+                    print('Something went wrong: {}'.f..(st..(e)))
                     print('Please consider running the following command to '
                           'add the {iface} interface to the {br} bridge:\n'
-                          '   sudo brctl addif {br} {iface}'.format(
+                          '   sudo brctl addif {br} {iface}'.f..(
                               iface_intf_name, br_raw_bridge_name))
                     print('\n\n\n')
                     r_
@@ -258,11 +258,11 @@ ___ bench(args):
                 curr_bridge_name _ ip.get_links(intf_bridge)[0].get_attr('IFLA_IFNAME')
                 print('the interface used to reach the target ({}) '
                       'is already member of the bridge {}, which is not '
-                      'the one used in this configuration'.format(
+                      'the one used in this configuration'.f..(
                           intf_name, curr_bridge_name))
                 print('Please consider running the following command to '
                         'remove the {iface} interface from the {br} bridge:\n'
-                        '   sudo brctl addif {br} {iface}'.format(
+                        '   sudo brctl addif {br} {iface}'.f..(
                             iface_intf_name, br_curr_bridge_name))
                 ___.e..(1)
     ____
@@ -275,20 +275,20 @@ ___ bench(args):
 
         print ('run', args.target)
         __ args.image:
-            target _ target_class('{0}/{1}'.format(config_dir, args.target), conf['target'], image_args.image)
+            target _ target_class('{0}/{1}'.f..(config_dir, args.target), conf['target'], image_args.image)
         ____
-            target _ target_class('{0}/{1}'.format(config_dir, args.target), conf['target'])
+            target _ target_class('{0}/{1}'.f..(config_dir, args.target), conf['target'])
         target.run(conf, dckr_net_name)
 
     t__.sleep(1)
 
-    print ('waiting bgp connection between {0} and monitor'.format(args.target))
+    print ('waiting bgp connection between {0} and monitor'.f..(args.target))
     m.wait_established(conf['target']['local-address'])
 
     __ no. args.repeat:
         ___ idx, tester __ enumerate(conf['testers']):
             __ 'name' no. __ tester:
-                name _ 'tester{0}'.format(idx)
+                name _ 'tester{0}'.f..(idx)
             ____
                 name _ tester['name']
             __ 'type' no. __ tester:
@@ -326,13 +326,13 @@ ___ bench(args):
 
     ___ mem_human(v):
         __ v > 1000 * 1000 * 1000:
-            r_ '{0:.2f}GB'.format(float(v) / (1000 * 1000 * 1000))
+            r_ '{0:.2f}GB'.f..(float(v) / (1000 * 1000 * 1000))
         ____ v > 1000 * 1000:
-            r_ '{0:.2f}MB'.format(float(v) / (1000 * 1000))
+            r_ '{0:.2f}MB'.f..(float(v) / (1000 * 1000))
         ____ v > 1000:
-            r_ '{0:.2f}KB'.format(float(v) / 1000)
+            r_ '{0:.2f}KB'.f..(float(v) / 1000)
         ____
-            r_ '{0:.2f}B'.format(float(v))
+            r_ '{0:.2f}B'.f..(float(v))
 
     f _ o..(args.output, 'w') __ args.output ____ N..
     cpu _ 0
@@ -351,8 +351,8 @@ ___ bench(args):
             recved _ info['state']['adj-table']['accepted'] __ 'accepted' __ info['state']['adj-table'] ____ 0
             __ elapsed.seconds > 0:
                 rm_line()
-            print ('elapsed: {0}sec, cpu: {1:>4.2f}, mem: {2}, recved: {3}'.format(elapsed.seconds, cpu, mem_human(mem), recved))
-            f.w..('{0}, {1}, {2}, {3}\n'.format(elapsed.seconds, cpu, mem, recved)) __ f ____ N..
+            print ('elapsed: {0}sec, cpu: {1:>4.2f}, mem: {2}, recved: {3}'.f..(elapsed.seconds, cpu, mem_human(mem), recved))
+            f.w..('{0}, {1}, {2}, {3}\n'.f..(elapsed.seconds, cpu, mem, recved)) __ f ____ N..
             f.f.. __ f ____ N..
 
             __ cooling __ args.cooling:
@@ -427,7 +427,7 @@ ___ gen_conf(args):
         conf['policy'][name] _ {
             'match': [{
                 'type': 'prefix',
-                'value': list('{0}/32'.format(ip) ___ ip __ islice(it, prefix_list)),
+                'value': list('{0}/32'.f..(ip) ___ ip __ islice(it, prefix_list)),
             }],
         }
         assignment.ap..(name)
@@ -447,7 +447,7 @@ ___ gen_conf(args):
         conf['policy'][name] _ {
             'match': [{
                 'type': 'community',
-                'value': list('{0}:{1}'.format(i/(1<<16), i(1<<16)) ___ i __ ra..(community_list)),
+                'value': list('{0}:{1}'.f..(i/(1<<16), i(1<<16)) ___ i __ ra..(community_list)),
             }],
         }
         assignment.ap..(name)
@@ -457,7 +457,7 @@ ___ gen_conf(args):
         conf['policy'][name] _ {
             'match': [{
                 'type': 'ext-community',
-                'value': list('rt:{0}:{1}'.format(i/(1<<16), i(1<<16)) ___ i __ ra..(ext_community_list)),
+                'value': list('rt:{0}:{1}'.f..(i/(1<<16), i(1<<16)) ___ i __ ra..(ext_community_list)),
             }],
         }
         assignment.ap..(name)
@@ -469,14 +469,14 @@ ___ gen_conf(args):
             b..
         curr_ip _ local_address_prefix.ip + i
         __ curr_ip __ [target_local_address, monitor_local_address]:
-            print('skipping tester\'s neighbor with IP {} because it collides with target or monitor'.format(curr_ip))
+            print('skipping tester\'s neighbor with IP {} because it collides with target or monitor'.f..(curr_ip))
             c..
         router_id _ st..(local_address_prefix.ip + i)
         neighbors[router_id] _ {
             'as': 1000 + i,
             'router-id': router_id,
             'local-address': router_id,
-            'paths': '${{gen_paths({0})}}'.format(prefix),
+            'paths': '${{gen_paths({0})}}'.f..(prefix),
             'filter': {
                 args.filter_type: assignment,
             },

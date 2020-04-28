@@ -28,7 +28,7 @@ ___ main(address):
         print (r.response)
 
     # Final status of the requests.
-    print ("Success: {s}, Failures: {f}".format(s_bt.successes, f_bt.failures))
+    print ("Success: {s}, Failures: {f}".f..(s_bt.successes, f_bt.failures))
 
 
 __ _______ __ ______

@@ -32,7 +32,7 @@ RUN easy_install pip
 RUN git clone https://github.com/Exa-Networks/exabgp && \
 (cd exabgp && git checkout {0} && pip install six && pip install -r requirements.txt && python setup.py install)
 RUN ln -s /root/exabgp /exabgp
-'''.format(checkout)
+'''.f..(checkout)
         super(ExaBGP, cls).build_image(force, tag, nocache)
 
 
@@ -55,5 +55,5 @@ RUN git clone https://github.com/Exa-Networks/exabgp && \
 RUN ln -s /root/exabgp /exabgp
 RUN git clone https://github.com/t2mune/mrtparse.git && \
 (cd mrtparse && python setup.py install)
-'''.format(checkout)
+'''.f..(checkout)
         super(ExaBGP_MRTParse, cls).build_image(force, tag, nocache)
