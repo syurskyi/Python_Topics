@@ -1,22 +1,22 @@
-____ winappdbg ______ *
-
-w__ Debug ( bKillOnExit _ T.. ) __ dbg:
-    dbg.execl("calc.exe")
-
-    w__ dbg:
-        ___
-            dbg.wait(1000)
-        ______ E.. __ e:
-            print(e)
-
-        ___
-            dbg.dispatch
-        f..
-            dbg.cont
-
-cmdDbg _ Debug
-cmdDbg.system.scan_processes
-    # let's look for cmd.exe processes
-___ ( proc, name ) __ cmdDbg.system.find_processes_by_filename( 'cmd.exe'
-    # print out the process ID and the name of the process
-    print proc.get_pid, name
+# ____ win.. ______ _
+#
+# w__ Debug bKillOnExit _ T..  __ dbg
+#     ?.e.. "calc.exe"
+#
+#     w__ ?
+#         ___
+#             ?.w.. 1000
+#         ______ E.. __ e
+#             print ?
+#
+#         ___
+#             ?.d..
+#         f..
+#             ?.c..
+#
+# cmdDbg _ ?
+# ?.sy__.s_p..
+#     # let's look for cmd.exe processes
+# ___ ( proc, name ) __ ?.sy__.f_p_b_f.. 'cmd.exe'
+#     # print out the process ID and the name of the process
+#     print p__.g_p.. n..

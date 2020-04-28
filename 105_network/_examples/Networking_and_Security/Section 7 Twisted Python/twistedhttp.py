@@ -1,8 +1,3 @@
-#!/usr/bin/python
-__author__ = 'kilroy'
-#  (c) 2014, WasHere Consulting, Inc.
-#  Written for Infinite Skills
-
 from twisted.internet import reactor
 from twisted.web.client import getPage
 from twisted.python.util import println

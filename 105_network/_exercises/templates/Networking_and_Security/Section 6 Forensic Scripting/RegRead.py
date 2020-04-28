@@ -1,10 +1,10 @@
-______ _winreg
-
-valName _ "myKey"
-___
-    w__ _winreg.OpenKey(_winreg.HKEY_CURRENT_USER, "Software\\" + valName, 0, _winreg.KEY_READ) __ key:
-        __ key:
-            data _ _winreg.QueryValueEx(key, "myVal")
-            print(data)
-______ E.. __ e:
-    print(e)
+# ______ _win..
+#
+# valName _ "myKey"
+# ___
+#     w__ ?.OK.. ?.H_C_U.. "Software\\" + ? 0 ?.K_R.. __ key
+#         __ ?
+#             data _ ?.QVE. ? "myVal"
+#             print ?
+# ______ E.. __ e
+#     print ?

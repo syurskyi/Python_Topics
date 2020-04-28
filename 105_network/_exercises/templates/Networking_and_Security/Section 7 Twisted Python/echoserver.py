@@ -1,20 +1,20 @@
-____ twisted.internet ______ reactor, protocol
-
-c_ Echo(protocol.Protocol
-    """This is just about the simplest possible protocol"""
-    
-    ___ dataReceived data
-        "As soon as any data is received, write it back."
-        self.transport.w..(data)
-        print(data)
-
-___ main
-    """This runs the protocol on port 8000"""
-    factory _ protocol.ServerFactory
-    factory.protocol _ Echo
-    reactor.l..TCP(8000,factory)
-    reactor.run
-
-# this only runs if the module was *not* imported
-__ _______ __ '__main__':
-    main
+# ____ t__.i.. ______ rea.. pro..
+#
+# c_ Echo ?.P..
+#     """This is just about the simplest possible protocol"""
+#
+#     ___ dataReceived data
+#         "As soon as any data is received, write it back."
+#         transport.w.. ?
+#         print ?
+#
+# ___ main
+#     """This runs the protocol on port 8000"""
+#     factory _ ?.SF..
+#     ?.p.. _ ?
+#     r__.lT.. 8000 ?
+#     r__.r..
+#
+# # this only runs if the module was *not* imported
+# __ _______ __ _______
+#     ?

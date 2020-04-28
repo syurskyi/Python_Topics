@@ -1,7 +1,7 @@
-______ __
-
-rootdir _ "C:\\$Recycle.Bin"
-___ curr, dirs, files __ __.walk(rootdir
-    ___ f __ files:
-        pa__ _ "@/@"  (curr, f)
-        print (pa__)
+# ______ __
+#
+# rootdir _ "C:\\$Recycle.Bin"
+# ___ curr, dirs, files __ __.w.. ?
+#     ___ f __ f..
+#         pa__ _ "@/@" ? ?
+#         print  pa__

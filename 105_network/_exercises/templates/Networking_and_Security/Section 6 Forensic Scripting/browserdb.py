@@ -1,16 +1,16 @@
-____ _3
-
-conn _ _3.c..("cookies.sqlite")
-
-sites _   # list
-# need a cursor to keep track of where we are
-cur _ conn.cursor
-___ row __ cur.ex..("SELECT * FROM moz_cookies"
-    __ row[1] no. __ sites:
-        sites.ap..(row[1])
-
-sites.sort
-
-___ s __ sites:
-    print(s)
-
+# ____ _3
+#
+# conn _ _3.c..("cookies.sqlite")
+#
+# sites _   # list
+# # need a cursor to keep track of where we are
+# cur _ ?.c..
+# ___ row __ ?.ex.. S.. _ F.. moz_cookies
+#     __ ? 1 no. __ ?
+#         ?.ap.. ? 1
+#
+# ?.s..
+#
+# ___ s __ ?
+#     print ?
+#

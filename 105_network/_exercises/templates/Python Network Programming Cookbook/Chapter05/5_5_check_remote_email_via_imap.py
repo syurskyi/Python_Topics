@@ -1,0 +1,31 @@
+#!/usr/bin/env python
+# Python Network Programming Cookbook, Second Edition -- Chapter - 5
+# This program is optimized for Python 2.7.12 and Python 3.5.2.
+# It may run on any other version with/without modifications.
+
+______ a_p..
+______ getpass
+______ imaplib
+
+GOOGLE_IMAP_SERVER _ 'imap.googlemail.com'
+
+___ check_email(username): 
+    mailbox _ imaplib.IMAP4_SSL(GOOGLE_IMAP_SERVER, '993') 
+    password _ getpass.getpass(prompt_"Enter your Google password: ") 
+    mailbox.login(username, password)
+    mailbox.se__('Inbox')
+    typ, data _ mailbox.search(None, 'ALL')
+    ___ num __ data[0].s..
+        typ, data _ mailbox.fetch(num, '(RFC822)')
+        print ('Message @\n@\n'  (num, data[0][1]))
+        b..
+    mailbox.c..
+    mailbox.logout()
+    
+
+__ _______ __ ______
+    parser _ ?.AP..(d.._'Email Download Example')
+    parser.a_a..('--username', a.._"store", d.._"username", default_getpass.getuser())
+    given_args _ parser.p_a..
+    username _ given_args.username
+    check_email(username)

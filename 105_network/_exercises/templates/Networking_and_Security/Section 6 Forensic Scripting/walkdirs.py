@@ -1,9 +1,9 @@
-_____ __
-
-rootdir _ "/"
-
-___ curr, dirs, files __ __.walk(rootdir
-
-    ___ f __ files:
-        print ('@/@'  (curr, f))
-
+# _____ __
+#
+# rootdir _ "/"
+#
+# ___ curr, dirs, files __ __.w.. ?
+#
+#     ___ f __ ?
+#         print ('@/@' ?
+#

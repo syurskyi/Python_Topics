@@ -1,6 +1,6 @@
-_____ _winreg
-
-valName _ "myKey"
-key _ _winreg.CreateKey(_winreg.HKEY_CURRENT_USER, "Software\\" + valName)
-_winreg.SetValueEx(key, "myVal", 0, _winreg.REG_SZ, "This is a value")
-
+# _____ _wi..
+#
+# valName _ "myKey"
+# key _ ?.CrK.. ?.H_C_U.. "Software\\" + ?
+# ?.SVE.. ? "myVal", 0, ?.R_S.. "This is a value")
+#

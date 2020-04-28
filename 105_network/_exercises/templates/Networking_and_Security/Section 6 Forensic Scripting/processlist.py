@@ -1,9 +1,9 @@
-______ psutil
-
-l _ psutil.get_process_list
-
-___ proc __ l:
-    print(proc)
-    print(proc.name)
-    __ (proc.name __ "Python"
-        print(proc.get_memory_maps)
+# ______ psutil
+#
+# l _ ?.g_p_l..
+#
+# ___ proc __ l
+#     print ?
+#     print ?.n..
+#     __  ?.n.. __ "Python"
+#         print ?.g_m_m..

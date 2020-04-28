@@ -1,8 +1,3 @@
-#!/usr/bin/python
-__author__ = 'kilroy'
-#  (c) 2014, WasHere Consulting, Inc.
-#  Written for Infinite Skills
-
 import sqlite3
 
 conn = sqlite3.connect("cookies.sqlite")
