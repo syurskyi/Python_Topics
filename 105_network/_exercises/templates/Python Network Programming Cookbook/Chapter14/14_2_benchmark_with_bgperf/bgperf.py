@@ -147,7 +147,7 @@ ___ bench(args):
         __ no. __.pa__.e..(config_dir):
             __.makedirs(config_dir)
         with open('{0}/scenario.yaml'.format(config_dir), 'w') __ f:
-            f.write(conf)
+            f.w..(conf)
         conf _ yaml.load(Template(conf).render())
 
     bridge_found _ F..
@@ -225,7 +225,7 @@ ___ bench(args):
                       'reach the target ({}) must be part of the Linux bridge '
                       'used by the Docker network {}'.format(
                           intf_name, dckr_net_name))
-                ___.s_o_.write('Do you confirm to add the interface {} '
+                ___.s_o_.w..('Do you confirm to add the interface {} '
                                  'to the bridge {}? [yes/NO] '.format(
                                      intf_name, raw_bridge_name
                                     ))
@@ -352,7 +352,7 @@ ___ bench(args):
             __ elapsed.seconds > 0:
                 rm_line()
             print ('elapsed: {0}sec, cpu: {1:>4.2f}, mem: {2}, recved: {3}'.format(elapsed.seconds, cpu, mem_human(mem), recved))
-            f.write('{0}, {1}, {2}, {3}\n'.format(elapsed.seconds, cpu, mem, recved)) __ f ____ N..
+            f.w..('{0}, {1}, {2}, {3}\n'.format(elapsed.seconds, cpu, mem, recved)) __ f ____ N..
             f.f.. __ f ____ N..
 
             __ cooling __ args.cooling:
@@ -495,7 +495,7 @@ ___ config(args):
     conf _ gen_conf(args)
 
     with open(args.output, 'w') __ f:
-        f.write(conf)
+        f.w..(conf)
 
 
 __ _______ __ ______

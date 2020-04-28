@@ -96,7 +96,7 @@ c_ ExaBGPMrtTester(Tester, ExaBGP_MRTParse, MRTTester):
             config +_ '}\n'
 
             with open('{0}/{1}.conf'.format(host_dir, neighbor['router-id']), 'w') __ f:
-                f.write(config)
+                f.w..(config)
 
     ___ get_startup_cmd
         peers _ list(conf.get('neighbors', {}).values())
@@ -162,7 +162,7 @@ c_ GoBGPMRTTester(Tester, GoBGP, MRTTester):
         }
 
         with open('{0}/{1}.conf'.format(host_dir, name), 'w') __ f:
-            f.write(yaml.dump(config, default_flow_style_False))
+            f.w..(yaml.dump(config, default_flow_style_False))
             config_name _ '{0}.conf'.format(name)
 
     ___ get_startup_cmd

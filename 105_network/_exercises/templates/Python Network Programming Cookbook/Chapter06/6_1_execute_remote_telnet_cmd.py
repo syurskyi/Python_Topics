@@ -23,13 +23,13 @@ ___ run_telnet_session
     session _ telnetlib.Telnet(HOST)
     
     session.read_until(b"login: ")
-    session.write(user.e..('ascii') + b"\n")
+    session.w..(user.e..('ascii') + b"\n")
     __ password:
         session.read_until(b"Password: ")
-        session.write(password.e..('ascii') + b"\n")
+        session.w..(password.e..('ascii') + b"\n")
     
-    session.write(b"ls\n")
-    session.write(b"exit\n")
+    session.w..(b"ls\n")
+    session.w..(b"exit\n")
     
     print (session.read_all())
 

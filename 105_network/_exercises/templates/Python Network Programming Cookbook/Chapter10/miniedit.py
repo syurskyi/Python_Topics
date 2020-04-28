@@ -1666,7 +1666,7 @@ c_ MiniEdit( Frame ):
 
             ___
                 f _ open(fileName, 'wb')
-                f.write(json.d..(savingDictionary, sort_keys_True, indent_4, separators_(',', ': ')))
+                f.w..(json.d..(savingDictionary, sort_keys_True, indent_4, separators_(',', ': ')))
             # pylint: disable=broad-except
             ______ E.. __ er:
                 warn( er, '\n' )
@@ -1686,18 +1686,18 @@ c_ MiniEdit( Frame ):
             # debug( "Now saving under @\n"  fileName )
             f _ open(fileName, 'wb')
 
-            f.write("#!/usr/bin/python\n")
-            f.write("\n")
-            f.write("from mininet.net import Mininet\n")
-            f.write("from mininet.node import Controller, RemoteController, OVSController\n")
-            f.write("from mininet.node import CPULimitedHost, Host, Node\n")
-            f.write("from mininet.node import OVSKernelSwitch, UserSwitch\n")
+            f.w..("#!/usr/bin/python\n")
+            f.w..("\n")
+            f.w..("from mininet.net import Mininet\n")
+            f.w..("from mininet.node import Controller, RemoteController, OVSController\n")
+            f.w..("from mininet.node import CPULimitedHost, Host, Node\n")
+            f.w..("from mininet.node import OVSKernelSwitch, UserSwitch\n")
             __ StrictVersion(MININET_VERSION) > StrictVersion('2.0'):
-                f.write("from mininet.node import IVSSwitch\n")
-            f.write("from mininet.cli import CLI\n")
-            f.write("from mininet.log import setLogLevel, info\n")
-            f.write("from mininet.link import TCLink, Intf\n")
-            f.write("from subprocess import call\n")
+                f.w..("from mininet.node import IVSSwitch\n")
+            f.w..("from mininet.cli import CLI\n")
+            f.w..("from mininet.log import setLogLevel, info\n")
+            f.w..("from mininet.link import TCLink, Intf\n")
+            f.w..("from subprocess import call\n")
 
             inBandCtrl _ F..
             ___ widget __ widgetToItem:
@@ -1711,23 +1711,23 @@ c_ MiniEdit( Frame ):
                         inBandCtrl _ T..
 
             __ inBandCtrl __ T..:
-                f.write("\n")
-                f.write("class InbandController( RemoteController ):\n")
-                f.write("\n")
-                f.write("    def checkListening( self ):\n")
-                f.write("        \"Overridden to do nothing.\"\n")
-                f.write("        return\n")
+                f.w..("\n")
+                f.w..("class InbandController( RemoteController ):\n")
+                f.w..("\n")
+                f.w..("    def checkListening( self ):\n")
+                f.w..("        \"Overridden to do nothing.\"\n")
+                f.w..("        return\n")
 
-            f.write("\n")
-            f.write("def myNetwork():\n")
-            f.write("\n")
-            f.write("    net = Mininet( topo=None,\n")
+            f.w..("\n")
+            f.w..("def myNetwork():\n")
+            f.w..("\n")
+            f.w..("    net = Mininet( topo=None,\n")
             __ le.(appPrefs['dpctl']) > 0:
-                f.write("                   listenPort="+appPrefs['dpctl']+",\n")
-            f.write("                   build=False,\n")
-            f.write("                   ipBase='"+appPrefs['ipBase']+"')\n")
-            f.write("\n")
-            f.write("    info( '*** Adding controller\\n' )\n")
+                f.w..("                   listenPort="+appPrefs['dpctl']+",\n")
+            f.w..("                   build=False,\n")
+            f.w..("                   ipBase='"+appPrefs['ipBase']+"')\n")
+            f.w..("\n")
+            f.w..("    info( '*** Adding controller\\n' )\n")
             ___ widget __ widgetToItem:
                 name _ widget[ 'text' ]
                 tags _ canvas.gettags( widgetToItem[ widget ] )
@@ -1743,65 +1743,65 @@ c_ MiniEdit( Frame ):
                     controllerPort _ opts['remotePort']
 
 
-                    f.write("    "+name+"=net.addController(name='"+name+"',\n")
+                    f.w..("    "+name+"=net.addController(name='"+name+"',\n")
 
                     __ controllerType __ 'remote':
-                        f.write("                      controller=RemoteController,\n")
-                        f.write("                      ip='"+controllerIP+"',\n")
+                        f.w..("                      controller=RemoteController,\n")
+                        f.w..("                      ip='"+controllerIP+"',\n")
                     ____ controllerType __ 'inband':
-                        f.write("                      controller=InbandController,\n")
-                        f.write("                      ip='"+controllerIP+"',\n")
+                        f.w..("                      controller=InbandController,\n")
+                        f.w..("                      ip='"+controllerIP+"',\n")
                     ____ controllerType __ 'ovsc':
-                        f.write("                      controller=OVSController,\n")
+                        f.w..("                      controller=OVSController,\n")
                     ____
-                        f.write("                      controller=Controller,\n")
+                        f.w..("                      controller=Controller,\n")
 
-                    f.write("                      protocol='"+controllerProtocol+"',\n")
-                    f.write("                      port="+st..(controllerPort)+")\n")
-                    f.write("\n")
+                    f.w..("                      protocol='"+controllerProtocol+"',\n")
+                    f.w..("                      port="+st..(controllerPort)+")\n")
+                    f.w..("\n")
 
             # Save Switches and Hosts
-            f.write("    info( '*** Add switches\\n')\n")
+            f.w..("    info( '*** Add switches\\n')\n")
             ___ widget __ widgetToItem:
                 name _ widget[ 'text' ]
                 tags _ canvas.gettags( widgetToItem[ widget ] )
                 __ 'LegacyRouter' __ tags:
-                    f.write("    "+name+" = net.addHost('"+name+"', cls=Node, ip='0.0.0.0')\n")
-                    f.write("    "+name+".cmd('sysctl -w net.ipv4.ip_forward=1')\n")
+                    f.w..("    "+name+" = net.addHost('"+name+"', cls=Node, ip='0.0.0.0')\n")
+                    f.w..("    "+name+".cmd('sysctl -w net.ipv4.ip_forward=1')\n")
                 __ 'LegacySwitch' __ tags:
-                    f.write("    "+name+" = net.addSwitch('"+name+"', cls=OVSKernelSwitch, failMode='standalone')\n")
+                    f.w..("    "+name+" = net.addSwitch('"+name+"', cls=OVSKernelSwitch, failMode='standalone')\n")
                 __ 'Switch' __ tags:
                     opts _ switchOpts[name]
                     nodeNum _ opts['nodeNum']
-                    f.write("    "+name+" = net.addSwitch('"+name+"'")
+                    f.w..("    "+name+" = net.addSwitch('"+name+"'")
                     __ opts['switchType'] __ 'default':
                         __ appPrefs['switchType'] __ 'ivs':
-                            f.write(", cls=IVSSwitch")
+                            f.w..(", cls=IVSSwitch")
                         ____ appPrefs['switchType'] __ 'user':
-                            f.write(", cls=UserSwitch")
+                            f.w..(", cls=UserSwitch")
                         ____ appPrefs['switchType'] __ 'userns':
-                            f.write(", cls=UserSwitch, inNamespace=True")
+                            f.w..(", cls=UserSwitch, inNamespace=True")
                         ____
-                            f.write(", cls=OVSKernelSwitch")
+                            f.w..(", cls=OVSKernelSwitch")
                     ____ opts['switchType'] __ 'ivs':
-                        f.write(", cls=IVSSwitch")
+                        f.w..(", cls=IVSSwitch")
                     ____ opts['switchType'] __ 'user':
-                        f.write(", cls=UserSwitch")
+                        f.w..(", cls=UserSwitch")
                     ____ opts['switchType'] __ 'userns':
-                        f.write(", cls=UserSwitch, inNamespace=True")
+                        f.w..(", cls=UserSwitch, inNamespace=True")
                     ____
-                        f.write(", cls=OVSKernelSwitch")
+                        f.w..(", cls=OVSKernelSwitch")
                     __ 'dpctl' __ opts:
-                        f.write(", listenPort="+opts['dpctl'])
+                        f.w..(", listenPort="+opts['dpctl'])
                     __ 'dpid' __ opts:
-                        f.write(", dpid='"+opts['dpid']+"'")
-                    f.write(")\n")
+                        f.w..(", dpid='"+opts['dpid']+"'")
+                    f.w..(")\n")
                     __ 'externalInterfaces' __ opts:
                         ___ extInterface __ opts['externalInterfaces']:
-                            f.write("    Intf( '"+extInterface+"', node="+name+" )\n")
+                            f.w..("    Intf( '"+extInterface+"', node="+name+" )\n")
 
-            f.write("\n")
-            f.write("    info( '*** Add hosts\\n')\n")
+            f.w..("\n")
+            f.w..("    info( '*** Add hosts\\n')\n")
             ___ widget __ widgetToItem:
                 name _ widget[ 'text' ]
                 tags _ canvas.gettags( widgetToItem[ widget ] )
@@ -1821,20 +1821,20 @@ c_ MiniEdit( Frame ):
                         ip _ ipAdd(i_nodeNum, prefixLen_prefixLen, ipBaseNum_ipBaseNum)
 
                     __ 'cores' __ opts or 'cpu' __ opts:
-                        f.write("    "+name+" = net.addHost('"+name+"', cls=CPULimitedHost, ip='"+ip+"', defaultRoute="+defaultRoute+")\n")
+                        f.w..("    "+name+" = net.addHost('"+name+"', cls=CPULimitedHost, ip='"+ip+"', defaultRoute="+defaultRoute+")\n")
                         __ 'cores' __ opts:
-                            f.write("    "+name+".setCPUs(cores='"+opts['cores']+"')\n")
+                            f.w..("    "+name+".setCPUs(cores='"+opts['cores']+"')\n")
                         __ 'cpu' __ opts:
-                            f.write("    "+name+".setCPUFrac(f="+st..(opts['cpu'])+", sched='"+opts['sched']+"')\n")
+                            f.w..("    "+name+".setCPUFrac(f="+st..(opts['cpu'])+", sched='"+opts['sched']+"')\n")
                     ____
-                        f.write("    "+name+" = net.addHost('"+name+"', cls=Host, ip='"+ip+"', defaultRoute="+defaultRoute+")\n")
+                        f.w..("    "+name+" = net.addHost('"+name+"', cls=Host, ip='"+ip+"', defaultRoute="+defaultRoute+")\n")
                     __ 'externalInterfaces' __ opts:
                         ___ extInterface __ opts['externalInterfaces']:
-                            f.write("    Intf( '"+extInterface+"', node="+name+" )\n")
-            f.write("\n")
+                            f.w..("    Intf( '"+extInterface+"', node="+name+" )\n")
+            f.w..("\n")
 
             # Save Links
-            f.write("    info( '*** Add links\\n')\n")
+            f.w..("    info( '*** Add links\\n')\n")
             ___ key,linkDetail __ links.iteritems
                 tags _ canvas.gettags(key)
                 __ 'data' __ tags:
@@ -1881,33 +1881,33 @@ c_ MiniEdit( Frame ):
 
                     linkOpts _ linkOpts + "}"
                     __ optsExist:
-                        f.write("    "+srcName+dstName+" = "+linkOpts+"\n")
-                    f.write("    net.addLink("+srcName+", "+dstName)
+                        f.w..("    "+srcName+dstName+" = "+linkOpts+"\n")
+                    f.w..("    net.addLink("+srcName+", "+dstName)
                     __ optsExist:
-                        f.write(", cls=TCLink , **"+srcName+dstName)
-                    f.write(")\n")
+                        f.w..(", cls=TCLink , **"+srcName+dstName)
+                    f.w..(")\n")
 
-            f.write("\n")
-            f.write("    info( '*** Starting network\\n')\n")
-            f.write("    net.build()\n")
+            f.w..("\n")
+            f.w..("    info( '*** Starting network\\n')\n")
+            f.w..("    net.build()\n")
 
-            f.write("    info( '*** Starting controllers\\n')\n")
-            f.write("    for controller in net.controllers:\n")
-            f.write("        controller.start()\n")
-            f.write("\n")
+            f.w..("    info( '*** Starting controllers\\n')\n")
+            f.w..("    for controller in net.controllers:\n")
+            f.w..("        controller.start()\n")
+            f.w..("\n")
 
-            f.write("    info( '*** Starting switches\\n')\n")
+            f.w..("    info( '*** Starting switches\\n')\n")
             ___ widget __ widgetToItem:
                 name _ widget[ 'text' ]
                 tags _ canvas.gettags( widgetToItem[ widget ] )
                 __ 'Switch' __ tags or 'LegacySwitch' __ tags:
                     opts _ switchOpts[name]
                     ctrlList _ ",".j..(opts['controllers'])
-                    f.write("    net.get('"+name+"').start(["+ctrlList+"])\n")
+                    f.w..("    net.get('"+name+"').start(["+ctrlList+"])\n")
 
-            f.write("\n")
+            f.w..("\n")
 
-            f.write("    info( '*** Post configure switches and hosts\\n')\n")
+            f.w..("    info( '*** Post configure switches and hosts\\n')\n")
             ___ widget __ widgetToItem:
                 name _ widget[ 'text' ]
                 tags _ canvas.gettags( widgetToItem[ widget ] )
@@ -1917,27 +1917,27 @@ c_ MiniEdit( Frame ):
                         __ appPrefs['switchType'] __ 'user':
                             __ 'switchIP' __ opts:
                                 __ le.(opts['switchIP']) > 0:
-                                    f.write("    "+name+".cmd('ifconfig "+name+" "+opts['switchIP']+"')\n")
+                                    f.w..("    "+name+".cmd('ifconfig "+name+" "+opts['switchIP']+"')\n")
                         ____ appPrefs['switchType'] __ 'userns':
                             __ 'switchIP' __ opts:
                                 __ le.(opts['switchIP']) > 0:
-                                    f.write("    "+name+".cmd('ifconfig lo "+opts['switchIP']+"')\n")
+                                    f.w..("    "+name+".cmd('ifconfig lo "+opts['switchIP']+"')\n")
                         ____ appPrefs['switchType'] __ 'ovs':
                             __ 'switchIP' __ opts:
                                 __ le.(opts['switchIP']) > 0:
-                                    f.write("    "+name+".cmd('ifconfig "+name+" "+opts['switchIP']+"')\n")
+                                    f.w..("    "+name+".cmd('ifconfig "+name+" "+opts['switchIP']+"')\n")
                     ____ opts['switchType'] __ 'user':
                         __ 'switchIP' __ opts:
                             __ le.(opts['switchIP']) > 0:
-                                f.write("    "+name+".cmd('ifconfig "+name+" "+opts['switchIP']+"')\n")
+                                f.w..("    "+name+".cmd('ifconfig "+name+" "+opts['switchIP']+"')\n")
                     ____ opts['switchType'] __ 'userns':
                         __ 'switchIP' __ opts:
                             __ le.(opts['switchIP']) > 0:
-                                f.write("    "+name+".cmd('ifconfig lo "+opts['switchIP']+"')\n")
+                                f.w..("    "+name+".cmd('ifconfig lo "+opts['switchIP']+"')\n")
                     ____ opts['switchType'] __ 'ovs':
                         __ 'switchIP' __ opts:
                             __ le.(opts['switchIP']) > 0:
-                                f.write("    "+name+".cmd('ifconfig "+name+" "+opts['switchIP']+"')\n")
+                                f.w..("    "+name+".cmd('ifconfig "+name+" "+opts['switchIP']+"')\n")
             ___ widget __ widgetToItem:
                 name _ widget[ 'text' ]
                 tags _ canvas.gettags( widgetToItem[ widget ] )
@@ -1946,16 +1946,16 @@ c_ MiniEdit( Frame ):
                     # Attach vlan interfaces
                     __ 'vlanInterfaces' __ opts:
                         ___ vlanInterface __ opts['vlanInterfaces']:
-                            f.write("    "+name+".cmd('vconfig add "+name+"-eth0 "+vlanInterface[1]+"')\n")
-                            f.write("    "+name+".cmd('ifconfig "+name+"-eth0."+vlanInterface[1]+" "+vlanInterface[0]+"')\n")
+                            f.w..("    "+name+".cmd('vconfig add "+name+"-eth0 "+vlanInterface[1]+"')\n")
+                            f.w..("    "+name+".cmd('ifconfig "+name+"-eth0."+vlanInterface[1]+" "+vlanInterface[0]+"')\n")
                     # Run User Defined Start Command
                     __ 'startCommand' __ opts:
-                        f.write("    "+name+".cmdPrint('"+opts['startCommand']+"')\n")
+                        f.w..("    "+name+".cmdPrint('"+opts['startCommand']+"')\n")
                 __ 'Switch' __ tags:
                     opts _ switchOpts[name]
                     # Run User Defined Start Command
                     __ 'startCommand' __ opts:
-                        f.write("    "+name+".cmdPrint('"+opts['startCommand']+"')\n")
+                        f.w..("    "+name+".cmdPrint('"+opts['startCommand']+"')\n")
 
             # Configure NetFlow
             nflowValues _ appPrefs['netflow']
@@ -1978,8 +1978,8 @@ c_ MiniEdit( Frame ):
                         nflowCmd _ nflowCmd + ' add_id_to_interface=true'
                     ____
                         nflowCmd _ nflowCmd + ' add_id_to_interface=false'
-                    f.write("    \n")
-                    f.write("    call('"+nflowCmd+nflowSwitches+"', shell=True)\n")
+                    f.w..("    \n")
+                    f.w..("    call('"+nflowCmd+nflowSwitches+"', shell=True)\n")
 
             # Configure sFlow
             sflowValues _ appPrefs['sflow']
@@ -1998,11 +1998,11 @@ c_ MiniEdit( Frame ):
                                 sflowEnabled_True
                 __ sflowEnabled:
                     sflowCmd _ 'ovs-vsctl -- --id=@MiniEditSF create sFlow '+ 'target=\\\"'+sflowValues['sflowTarget']+'\\\" '+ 'header='+sflowValues['sflowHeader']+' '+ 'sampling='+sflowValues['sflowSampling']+' '+ 'polling='+sflowValues['sflowPolling']
-                    f.write("    \n")
-                    f.write("    call('"+sflowCmd+sflowSwitches+"', shell=True)\n")
+                    f.w..("    \n")
+                    f.w..("    call('"+sflowCmd+sflowSwitches+"', shell=True)\n")
 
-            f.write("\n")
-            f.write("    CLI(net)\n")
+            f.w..("\n")
+            f.w..("    CLI(net)\n")
             ___ widget __ widgetToItem:
                 name _ widget[ 'text' ]
                 tags _ canvas.gettags( widgetToItem[ widget ] )
@@ -2010,19 +2010,19 @@ c_ MiniEdit( Frame ):
                     opts _ hostOpts[name]
                     # Run User Defined Stop Command
                     __ 'stopCommand' __ opts:
-                        f.write("    "+name+".cmdPrint('"+opts['stopCommand']+"')\n")
+                        f.w..("    "+name+".cmdPrint('"+opts['stopCommand']+"')\n")
                 __ 'Switch' __ tags:
                     opts _ switchOpts[name]
                     # Run User Defined Stop Command
                     __ 'stopCommand' __ opts:
-                        f.write("    "+name+".cmdPrint('"+opts['stopCommand']+"')\n")
+                        f.w..("    "+name+".cmdPrint('"+opts['stopCommand']+"')\n")
 
-            f.write("    net.stop()\n")
-            f.write("\n")
-            f.write("if __name__ == '__main__':\n")
-            f.write("    setLogLevel( 'info' )\n")
-            f.write("    myNetwork()\n")
-            f.write("\n")
+            f.w..("    net.stop()\n")
+            f.w..("\n")
+            f.w..("if __name__ == '__main__':\n")
+            f.w..("    setLogLevel( 'info' )\n")
+            f.w..("    myNetwork()\n")
+            f.w..("\n")
 
 
             f.c..

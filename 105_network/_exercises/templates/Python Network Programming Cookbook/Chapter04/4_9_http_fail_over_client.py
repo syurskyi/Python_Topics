@@ -46,7 +46,7 @@ ___ resume_download
 		data _ web_page.read(8192)
 		__ no. data:
 			b..
-		out_file.write(data)
+		out_file.w..(data)
 		byte_count _ byte_count + le.(data)
 
 	web_page.c..

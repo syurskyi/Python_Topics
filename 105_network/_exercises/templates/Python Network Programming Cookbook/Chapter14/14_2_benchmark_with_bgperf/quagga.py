@@ -66,9 +66,9 @@ neighbor {0} timers 30 90
             r_ c
 
         with open('{0}/{1}'.format(host_dir, CONFIG_FILE_NAME), 'w') __ f:
-            f.write(config)
+            f.w..(config)
             ___ n __ list(flatten(list(t.get('neighbors', {}).values()) ___ t __ scenario_global_conf['testers'])) + [scenario_global_conf['monitor']]:
-                f.write(gen_neighbor_config(n))
+                f.w..(gen_neighbor_config(n))
 
             __ 'policy' __ scenario_global_conf:
                 seq _ 10
@@ -77,30 +77,30 @@ neighbor {0} timers 30 90
                     ___ i, match __ enumerate(v['match']):
                         n _ '{0}_match_{1}'.format(k, i)
                         __ match['type'] __ 'prefix':
-                            f.write(''.j..('ip prefix-list {0} deny {1}\n'.format(n, p) ___ p __ match['value']))
-                            f.write('ip prefix-list {0} permit any\n'.format(n))
+                            f.w..(''.j..('ip prefix-list {0} deny {1}\n'.format(n, p) ___ p __ match['value']))
+                            f.w..('ip prefix-list {0} permit any\n'.format(n))
                         ____ match['type'] __ 'as-path':
-                            f.write(''.j..('ip as-path access-list {0} deny _{1}_\n'.format(n, p) ___ p __ match['value']))
-                            f.write('ip as-path access-list {0} permit .*\n'.format(n))
+                            f.w..(''.j..('ip as-path access-list {0} deny _{1}_\n'.format(n, p) ___ p __ match['value']))
+                            f.w..('ip as-path access-list {0} permit .*\n'.format(n))
                         ____ match['type'] __ 'community':
-                            f.write(''.j..('ip community-list standard {0} permit {1}\n'.format(n, p) ___ p __ match['value']))
-                            f.write('ip community-list standard {0} permit\n'.format(n))
+                            f.w..(''.j..('ip community-list standard {0} permit {1}\n'.format(n, p) ___ p __ match['value']))
+                            f.w..('ip community-list standard {0} permit\n'.format(n))
                         ____ match['type'] __ 'ext-community':
-                            f.write(''.j..('ip extcommunity-list standard {0} permit {1} {2}\n'.format(n, *p.s..(':', 1)) ___ p __ match['value']))
-                            f.write('ip extcommunity-list standard {0} permit\n'.format(n))
+                            f.w..(''.j..('ip extcommunity-list standard {0} permit {1} {2}\n'.format(n, *p.s..(':', 1)) ___ p __ match['value']))
+                            f.w..('ip extcommunity-list standard {0} permit\n'.format(n))
 
                         match_info.ap..((match['type'], n))
 
-                    f.write('route-map {0} permit {1}\n'.format(k, seq))
+                    f.w..('route-map {0} permit {1}\n'.format(k, seq))
                     ___ info __ match_info:
                         __ info[0] __ 'prefix':
-                            f.write('match ip address prefix-list {0}\n'.format(info[1]))
+                            f.w..('match ip address prefix-list {0}\n'.format(info[1]))
                         ____ info[0] __ 'as-path':
-                            f.write('match as-path {0}\n'.format(info[1]))
+                            f.w..('match as-path {0}\n'.format(info[1]))
                         ____ info[0] __ 'community':
-                            f.write('match community {0}\n'.format(info[1]))
+                            f.w..('match community {0}\n'.format(info[1]))
                         ____ info[0] __ 'ext-community':
-                            f.write('match extcommunity {0}\n'.format(info[1]))
+                            f.w..('match extcommunity {0}\n'.format(info[1]))
 
                     seq +_ 10
 

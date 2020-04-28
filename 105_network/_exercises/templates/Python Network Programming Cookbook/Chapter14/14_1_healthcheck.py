@@ -25,10 +25,10 @@ ___ is_alive(address, port):
 ___ confirm(addres, port):
     w__ T..:
         __ is_alive(address, port):
-            s_o_.write(address + ":" + st..(port) + ' is alive\n')
+            s_o_.w..(address + ":" + st..(port) + ' is alive\n')
             s_o_.f..
         ____
-            s_o_.write(address + ":" + st..(port) + ' is dead\n')
+            s_o_.w..(address + ":" + st..(port) + ' is dead\n')
             s_o_.f..
         sleep(10)
 

@@ -17,7 +17,7 @@ ___ email_dir_zipped(sender, recipient):
     zip _ zipfile.ZipFile(zf, 'w')
     print ("Zipping current dir: @" __.getcwd())
     ___ file_name __ __.listdir(__.getcwd()):
-        zip.write(file_name)
+        zip.w..(file_name)
     zip.c..
     zf.seek(0)
 

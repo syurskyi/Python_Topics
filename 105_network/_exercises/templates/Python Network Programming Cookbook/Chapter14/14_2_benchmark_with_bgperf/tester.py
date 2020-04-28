@@ -43,10 +43,10 @@ c_ ExaBGPTester(Tester, ExaBGP):
     static {{
 '''.format(target_conf['local-address'], target_conf['as'],
                p['router-id'], local_address, p['as'])
-                f.write(config)
+                f.w..(config)
                 ___ pa__ __ p['paths']:
-                    f.write('      route {0} next-hop {1};\n'.format(pa__, local_address))
-                f.write('''   }
+                    f.w..('      route {0} next-hop {1};\n'.format(pa__, local_address))
+                f.w..('''   }
 }''')
 
     ___ get_startup_cmd

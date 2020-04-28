@@ -143,7 +143,7 @@ return true;
             r_ '\n'.j..(c) + '\n'
 
         with open('{0}/{1}'.format(host_dir, CONFIG_FILE_NAME), 'w') __ f:
-            f.write(config)
+            f.w..(config)
 
             __ 'policy' __ scenario_global_conf:
                ___ k, v __ list(scenario_global_conf['policy'].items()):
@@ -151,18 +151,18 @@ return true;
                     ___ i, match __ enumerate(v['match']):
                         n _ '{0}_match_{1}'.format(k, i)
                         __ match['type'] __ 'prefix':
-                            f.write(gen_prefix_filter(n, match))
+                            f.w..(gen_prefix_filter(n, match))
                         ____ match['type'] __ 'as-path':
-                            f.write(gen_aspath_filter(n, match))
+                            f.w..(gen_aspath_filter(n, match))
                         ____ match['type'] __ 'community':
-                            f.write(gen_community_filter(n, match))
+                            f.w..(gen_community_filter(n, match))
                         ____ match['type'] __ 'ext-community':
-                            f.write(gen_ext_community_filter(n, match))
+                            f.w..(gen_ext_community_filter(n, match))
                         match_info.ap..((match['type'], n))
-                    f.write(gen_filter(k, match_info))
+                    f.w..(gen_filter(k, match_info))
 
             ___ n __ sorted(list(flatten(list(t.get('neighbors', {}).values()) ___ t __ scenario_global_conf['testers'])) + [scenario_global_conf['monitor']], key_lambda n: n['as']):
-                f.write(gen_neighbor_config(n))
+                f.w..(gen_neighbor_config(n))
             f.f..
 
     ___ get_startup_cmd
