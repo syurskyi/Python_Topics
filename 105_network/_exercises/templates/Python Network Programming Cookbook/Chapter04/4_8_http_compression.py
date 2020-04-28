@@ -15,7 +15,7 @@ ______ io
 # Comment out the above line and uncomment the below for Python 2.7.x.
 #import cStringIO
 
-____ http.s.. ______ BaseHTTPRequestHandler, HTTPServer
+____ h__.s.. ______ BaseHTTPRequestHandler, HTTPServer
 # Comment out the above line and uncomment the below for Python 2.7.x.
 #from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
 

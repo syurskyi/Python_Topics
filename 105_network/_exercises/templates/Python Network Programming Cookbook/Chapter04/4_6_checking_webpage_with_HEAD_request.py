@@ -7,7 +7,7 @@
 
 ______ a_p..
 
-______ http.client
+______ h__.client
 # Comment out the above line and uncomment the below for Python 2.7.x.
 #import httplib
 
@@ -22,7 +22,7 @@ ______ u__.r__, u__.e..
 
 DEFAULT_URL _ 'http://www.python.org'
 
-HTTP_GOOD_CODES _  [http.client.OK, http.client.FOUND, http.client.MOVED_PERMANENTLY]
+HTTP_GOOD_CODES _  [?.client.OK, ?.client.FOUND, ?.client.MOVED_PERMANENTLY]
 # Comment out the above line and uncomment the below for Python 2.7.x.
 #HTTP_GOOD_CODES =  [httplib.OK, httplib.FOUND, httplib.MOVED_PERMANENTLY]
 
@@ -35,7 +35,7 @@ ___ get_server_status_code(url):
     # Comment out the above line and uncomment the below for Python 2.7.x.
     #host, path = urlparse.urlparse(url)[1:3] 
     ___
-        conn _ http.client.HTTPConnection(host)       
+        conn _ ?.client.HTTPConnection(host)
         # Comment out the above line and uncomment the below for Python 2.7.x.
         #conn = httplib.HTTPConnection(host)
 

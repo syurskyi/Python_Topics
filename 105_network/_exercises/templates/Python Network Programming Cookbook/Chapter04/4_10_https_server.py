@@ -10,8 +10,8 @@ ______ ?, __
 ____ OpenSSL ______ SSL
 
 ____ s_s ______ BaseServer
-____ http.s.. ______ HTTPServer
-____ http.s.. ______ SimpleHTTPRequestHandler
+____ h__.s.. ______ HTTPServer
+____ h__.s.. ______ SimpleHTTPRequestHandler
 # Comment out the above 3 lines and uncomment the below 3 lines for Python 2.7.x.
 #from SocketServer import BaseServer
 #from BaseHTTPServer import HTTPServer
