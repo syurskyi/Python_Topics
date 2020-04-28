@@ -26,9 +26,9 @@ c_ CustomURLOpener(urllib.r__.FancyURLopener):
 ___ resume_download
 	file_exists _ F..
 	CustomURLClass _ CustomURLOpener()
-	__ __.path.exists(TARGET_FILE):
+	__ __.pa__.e..(TARGET_FILE):
 		out_file _ open(TARGET_FILE,"ab")
-		file_exists _ __.path.getsize(TARGET_FILE)
+		file_exists _ __.pa__.getsize(TARGET_FILE)
 		#If the file exists, then only download the unfinished part
 		CustomURLClass.addheader("range","bytes=@-"  (file_exists))
 	____

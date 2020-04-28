@@ -44,8 +44,8 @@ c_ ExaBGPTester(Tester, ExaBGP):
 '''.format(target_conf['local-address'], target_conf['as'],
                p['router-id'], local_address, p['as'])
                 f.write(config)
-                ___ path __ p['paths']:
-                    f.write('      route {0} next-hop {1};\n'.format(path, local_address))
+                ___ pa__ __ p['paths']:
+                    f.write('      route {0} next-hop {1};\n'.format(pa__, local_address))
                 f.write('''   }
 }''')
 

@@ -9,13 +9,13 @@ FTP_SERVER_URL _ 'ftp.ed.ac.uk'
 ______ ftplib
 ____ ftplib ______ FTP
 
-___ test_ftp_connection(path, username, email):
+___ test_ftp_connection(pa__, username, email):
     #Open ftp connection
-    ftp _ ftplib.FTP(path, username, email)
+    ftp _ ftplib.FTP(pa__, username, email)
     
    #List the files in the /pub directory
     ftp.cwd("/pub")
-    print ("File list at @:" path)
+    print ("File list at @:" pa__)
     files _ ftp.dir()
     print (files)
 

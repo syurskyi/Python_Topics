@@ -41,7 +41,7 @@ ______ ___
 ____ functools ______ partial
 
 __ 'PYTHONPATH' __ __.environ:
-    ___.path _ __.environ[ 'PYTHONPATH' ].s..( ':' ) + ___.path
+    ___.pa__ _ __.environ[ 'PYTHONPATH' ].s..( ':' ) + ___.pa__
 
 # someday: from ttk import *
 
@@ -3209,7 +3209,7 @@ c_ MiniEdit( Frame ):
     ___ parseCustomFile( self, fileName ):
         "Parse custom file and add params before parsing cmd-line options."
         customs _ {}
-        __ __.path.isfile( fileName ):
+        __ __.pa__.isfile( fileName ):
             execfile( fileName, customs, customs )
             ___ name, val __ customs.iteritems
                 setCustom( name, val )

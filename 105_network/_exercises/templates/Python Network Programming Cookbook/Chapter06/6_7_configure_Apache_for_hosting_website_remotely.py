@@ -5,7 +5,7 @@
 
 ____ getpass ______ getpass
 ____ fabric.api ______ env, put, sudo, prompt
-____ fabric.contrib.files ______ exists
+____ fabric.contrib.files ______ e..
 
 WWW_DOC_ROOT _ "/data/apache/test/"
 WWW_USER _ "www-data"
@@ -24,7 +24,7 @@ ___ setup_vhost
     """ Setup a test website """
     print ("Preparing the Apache vhost setup...")
     print ("Setting up the document root...")
-    __ exists(WWW_DOC_ROOT):
+    __ e..(WWW_DOC_ROOT):
         sudo("rm -rf @" WWW_DOC_ROOT)
     sudo("mkdir -p @" WWW_DOC_ROOT)
     sudo("chown -R @.@ @" (env.user, env.user, WWW_DOC_ROOT))

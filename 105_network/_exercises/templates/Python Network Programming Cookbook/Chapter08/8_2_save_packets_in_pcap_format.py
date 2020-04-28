@@ -27,7 +27,7 @@ ___ write_cap(x):
 ___ test_dump_file
     print ("Testing the dump file...")
     dump_file _ "./pcap1.pcap"
-    __ __.path.exists(dump_file):
+    __ __.pa__.e..(dump_file):
         print ("dump fie @ found." dump_file)
         pkts _ sniff(offline_dump_file)
         count _ 0

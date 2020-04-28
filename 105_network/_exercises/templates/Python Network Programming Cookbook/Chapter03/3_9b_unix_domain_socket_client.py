@@ -13,7 +13,7 @@ SERVER_PATH _ "/tmp/python_unix_socket_server"
 
 ___ run_unix_domain_socket_client
     """ Run "a Unix domain socket client """
-    sock _ ?.?(?.AF_UNIX, ?.S_D..)
+    sock _ ?.?(?.A_U.., ?.S_D..)
     
     # Connect the socket to the path where the server is listening
     server_address _ SERVER_PATH

@@ -31,7 +31,7 @@ ___ get_server_status_code(url):
     Download just the header of a URL and
     return the server's status code.
     """
-    host, path _ urllib.parse.urlparse(url)[1:3] 
+    host, pa__ _ urllib.parse.urlparse(url)[1:3]
     # Comment out the above line and uncomment the below for Python 2.7.x.
     #host, path = urlparse.urlparse(url)[1:3] 
     ___
@@ -39,7 +39,7 @@ ___ get_server_status_code(url):
         # Comment out the above line and uncomment the below for Python 2.7.x.
         #conn = httplib.HTTPConnection(host)
 
-        conn.r__('HEAD', path)
+        conn.r__('HEAD', pa__)
         r_ conn.getresponse().status
 
     ______ E.. __ e:

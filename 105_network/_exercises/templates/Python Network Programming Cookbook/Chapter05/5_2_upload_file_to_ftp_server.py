@@ -16,7 +16,7 @@ ___ ftp_upload(ftp_server, username, password, file_name):
     ftp _ ftplib.FTP(ftp_server)
     print ("Login to FTP server: user=@" username)
     ftp.login(username, password)
-    ext _ __.path.splitext(file_name)[1]
+    ext _ __.pa__.splitext(file_name)[1]
     __ ext __ (".txt", ".htm", ".html"):
         ftp.storlines("STOR " + file_name, open(file_name))
     ____

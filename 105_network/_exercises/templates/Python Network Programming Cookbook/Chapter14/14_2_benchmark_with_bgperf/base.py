@@ -49,7 +49,7 @@ c_ Container(o..):
         guest_dir _ guest_dir
         conf _ conf
         config_name _ None
-        __ not __.path.exists(host_dir):
+        __ not __.pa__.e..(host_dir):
             __.makedirs(host_dir)
             __.chmod(host_dir, 0o777)
 
@@ -91,7 +91,7 @@ c_ Container(o..):
             dckr.remove_container(name, force_True)
 
         host_config _ dckr.create_host_config(
-            binds_['{0}:{1}'.format(__.path.abspath(host_dir), guest_dir)],
+            binds_['{0}:{1}'.format(__.pa__.abspath(host_dir), guest_dir)],
             privileged_True,
             network_mode_'bridge',
             cap_add_['NET_ADMIN']

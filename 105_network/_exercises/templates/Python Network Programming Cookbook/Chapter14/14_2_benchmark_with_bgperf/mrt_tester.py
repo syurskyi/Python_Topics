@@ -27,7 +27,7 @@ c_ MRTTester(o..):
     ___ get_mrt_file conf, name):
         # conf: tester or neighbor configuration
         __ 'mrt-file' __ conf:
-            mrt_file_path _ __.path.expanduser(conf['mrt-file'])
+            mrt_file_path _ __.pa__.expanduser(conf['mrt-file'])
 
             guest_mrt_file_path _ '{guest_dir}/{filename}'.format(
                 guest_dir_self.guest_dir,
@@ -37,7 +37,7 @@ c_ MRTTester(o..):
                 host_dir_self.host_dir,
                 filename_name + '.mrt'
             )
-            __ not __.path.isfile(host_mrt_file_path):
+            __ not __.pa__.isfile(host_mrt_file_path):
                 shutil.copyfile(mrt_file_path, host_mrt_file_path)
             r_ guest_mrt_file_path
 

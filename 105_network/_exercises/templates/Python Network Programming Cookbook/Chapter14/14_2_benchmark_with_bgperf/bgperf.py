@@ -136,7 +136,7 @@ ___ bench(args):
                 print ('removing tester container', ctn_name)
                 dckr.remove_container(ctn_name, force_True)
 
-        __ __.path.exists(config_dir):
+        __ __.pa__.e..(config_dir):
             shutil.rmtree(config_dir)
 
     __ args.file:
@@ -144,7 +144,7 @@ ___ bench(args):
             conf _ yaml.load(Template(f.read()).render())
     ____
         conf _ gen_conf(args)
-        __ not __.path.exists(config_dir):
+        __ not __.pa__.e..(config_dir):
             __.makedirs(config_dir)
         with open('{0}/scenario.yaml'.format(config_dir), 'w') __ f:
             f.write(conf)

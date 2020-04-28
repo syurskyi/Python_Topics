@@ -30,10 +30,10 @@ ___ send_email(sender, recipient):
     gifsearch _ re.compile(".gif", re.IGNORECASE)
     files _ filter(gifsearch.search, files)
     ___ filename __ files:
-        path _ __.path.j..(__.getcwd(), filename)
-        __ not __.path.isfile(path):
+        pa__ _ __.pa__.j..(__.getcwd(), filename)
+        __ not __.pa__.isfile(pa__):
             continue
-        img _ MIMEImage(open(path, 'rb').read(), _subtype_"gif")
+        img _ MIMEImage(open(pa__, 'rb').read(), _subtype_"gif")
         img.add_header('Content-Disposition', 'attachment', filename_filename)
         msg.attach(img)
  
