@@ -25,7 +25,7 @@ ___ scan_ports(host, start_port, end_port):
      
     #Scan ports
     end_port +_ 1
-    ___ port __ range(start_port,end_port):
+    ___ port __ ra..(start_port,end_port):
         ___
             sock.c..((remote_ip,port))
             print ('Port ' + st..(port) + ' is open')

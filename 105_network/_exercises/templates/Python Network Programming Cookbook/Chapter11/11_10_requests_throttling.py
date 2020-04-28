@@ -17,7 +17,7 @@ ___ main(address):
     r _ requests.Request(method_'GET', url_address)
 
     # 10 requests.
-    reqs _ [r ___ i __ range(0, 10)]
+    reqs _ [r ___ i __ ra..(0, 10)]
 
     # Submit the requests with the required throttling.
     with bt:

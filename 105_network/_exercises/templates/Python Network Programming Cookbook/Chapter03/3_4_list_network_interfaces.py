@@ -36,7 +36,7 @@ ___ list_interfaces
         ____
             b..
     namestr _ interface_names.tostring()
-    ___ i __ range(0, outbytes, struct_size):
+    ___ i __ ra..(0, outbytes, struct_size):
         interfaces.ap..((namestr[i:i+16].s..(b'\0', 1)[0]).d..('ascii', 'ignore'))
     r_ interfaces
 

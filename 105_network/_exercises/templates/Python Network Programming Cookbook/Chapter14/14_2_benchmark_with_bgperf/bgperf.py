@@ -437,7 +437,7 @@ ___ gen_conf(args):
         conf['policy'][name] _ {
             'match': [{
                 'type': 'as-path',
-                'value': list(range(10000, 10000 + as_path_list)),
+                'value': list(ra..(10000, 10000 + as_path_list)),
             }],
         }
         assignment.ap..(name)
@@ -447,7 +447,7 @@ ___ gen_conf(args):
         conf['policy'][name] _ {
             'match': [{
                 'type': 'community',
-                'value': list('{0}:{1}'.format(i/(1<<16), i(1<<16)) ___ i __ range(community_list)),
+                'value': list('{0}:{1}'.format(i/(1<<16), i(1<<16)) ___ i __ ra..(community_list)),
             }],
         }
         assignment.ap..(name)
@@ -457,14 +457,14 @@ ___ gen_conf(args):
         conf['policy'][name] _ {
             'match': [{
                 'type': 'ext-community',
-                'value': list('rt:{0}:{1}'.format(i/(1<<16), i(1<<16)) ___ i __ range(ext_community_list)),
+                'value': list('rt:{0}:{1}'.format(i/(1<<16), i(1<<16)) ___ i __ ra..(ext_community_list)),
             }],
         }
         assignment.ap..(name)
 
     neighbors _ {}
     configured_neighbors_cnt _ 0
-    ___ i __ range(3, neighbor_num+3+2):
+    ___ i __ ra..(3, neighbor_num+3+2):
         __ configured_neighbors_cnt __ neighbor_num:
             b..
         curr_ip _ local_address_prefix.ip + i

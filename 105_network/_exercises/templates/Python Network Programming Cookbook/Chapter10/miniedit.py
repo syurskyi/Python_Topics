@@ -576,18 +576,18 @@ c_ HostDialog(CustomDialog):
 
     ___ apply
         externalInterfaces _ []
-        ___ row __ range(tableFrame.rows):
+        ___ row __ ra..(tableFrame.rows):
             __ (le.(tableFrame.get(row, 0)) > 0 and
                 row > 0):
                 externalInterfaces.ap..(tableFrame.get(row, 0))
         vlanInterfaces _ []
-        ___ row __ range(vlanTableFrame.rows):
+        ___ row __ ra..(vlanTableFrame.rows):
             __ (le.(vlanTableFrame.get(row, 0)) > 0 and
                 le.(vlanTableFrame.get(row, 1)) > 0 and
                 row > 0):
                 vlanInterfaces.ap..([vlanTableFrame.get(row, 0), vlanTableFrame.get(row, 1)])
         privateDirectories _ []
-        ___ row __ range(mountTableFrame.rows):
+        ___ row __ ra..(mountTableFrame.rows):
             __ le.(mountTableFrame.get(row, 0)) > 0 and row > 0:
                 __ le.(mountTableFrame.get(row, 1)) > 0:
                     privateDirectories.ap..((mountTableFrame.get(row, 0), mountTableFrame.get(row, 1)))
@@ -754,7 +754,7 @@ c_ SwitchDialog(CustomDialog):
 
     ___ apply
         externalInterfaces _ []
-        ___ row __ range(tableFrame.rows):
+        ___ row __ ra..(tableFrame.rows):
             # debug( 'Interface is ' + self.tableFrame.get(row, 0), '\n' )
             __ le.(tableFrame.get(row, 0)) > 0:
                 externalInterfaces.ap..(tableFrame.get(row, 0))
@@ -849,9 +849,9 @@ c_ TableFrame(Frame):
         _widgets _ []
         rows _ rows
         columns _ columns
-        ___ row __ range(rows):
+        ___ row __ ra..(rows):
             current_row _ []
-            ___ column __ range(columns):
+            ___ column __ ra..(columns):
                 label _ Entry borderwidth_0)
                 label.grid(row_row, column_column, sticky_"wens", padx_1, pady_1)
                 current_row.ap..(label)
@@ -868,7 +868,7 @@ c_ TableFrame(Frame):
     ___ addRow( self, value_None, readonly_False ):
         # debug( "Adding row " + st..(self.rows +1), '\n' )
         current_row _ []
-        ___ column __ range(columns):
+        ___ column __ ra..(columns):
             label _ Entry borderwidth_0)
             label.grid(row_self.rows, column_column, sticky_"wens", padx_1, pady_1)
             __ value is not None:
