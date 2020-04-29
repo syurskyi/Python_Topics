@@ -7,7 +7,7 @@
 
 
 ______ a_p..
-______ getpass
+______ g_p_
 ______ paramiko
 
 RECV_BYTES _ 4096
@@ -47,6 +47,6 @@ __ _______ __ ______
     # Comment out the above line and uncomment the below line for Python 2.7.
     # user = raw_input("Enter your remote account: ")
 
-    password _ getpass.getpass("Enter password for @: " user)
+    password _ g_p_.g_p_("Enter password for @: " user)
     print_remote_cpu_info(hostname, port, user, password)
 

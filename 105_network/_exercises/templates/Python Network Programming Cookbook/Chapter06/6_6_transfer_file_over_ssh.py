@@ -4,12 +4,12 @@
 # It may run on any other version with/without modifications.
 
 
-____ getpass ______ getpass
+____ g_p_ ______ g_p_
 ____ fabric.api ______ local, run, env, get, put, prompt, open_shell
 
 ___ remote_server
     env.hosts _ ['127.0.0.1']
-    env.password _ getpass('Enter your system password: ')
+    env.password _ g_p_('Enter your system password: ')
     env.home_folder _ '/tmp'
 
 ___ login

@@ -6,7 +6,7 @@
 # Follow the comments inline to make the program work with Python 2.
 
 
-______ getpass
+______ g_p_
 ______ ___
 ______ telnetlib
 
@@ -18,7 +18,7 @@ ___ run_telnet_session
     # Comment out the above line and uncomment the below line for Python 2.7.
     # user = raw_input("Enter your remote account: ")
 
-    password _ getpass.getpass()
+    password _ g_p_.g_p_()
     
     session _ telnetlib.Telnet(HOST)
     

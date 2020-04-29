@@ -4,14 +4,14 @@
 # It may run on any other version with/without modifications.
 
 ______ a_p..
-______ getpass
+______ g_p_
 ______ imaplib
 
 GOOGLE_IMAP_SERVER _ 'imap.googlemail.com'
 
 ___ check_email(username): 
     mailbox _ imaplib.IMAP4_SSL(GOOGLE_IMAP_SERVER, '993') 
-    password _ getpass.getpass(prompt_"Enter your Google password: ") 
+    password _ g_p_.g_p_(prompt_"Enter your Google password: ")
     mailbox.login(username, password)
     mailbox.se__('Inbox')
     typ, data _ mailbox.search(N.., 'ALL')
@@ -25,7 +25,7 @@ ___ check_email(username):
 
 __ _______ __ ______
     parser _ ?.AP..(d.._'Email Download Example')
-    ?.a_a..('--username', a.._"store", d.._"username", d.._getpass.getuser())
+    ?.a_a..('--username', a.._"store", d.._"username", d.._getpass.g_u_
     given_args _ ?.p_a..
     username _ ?.username
     check_email(username)

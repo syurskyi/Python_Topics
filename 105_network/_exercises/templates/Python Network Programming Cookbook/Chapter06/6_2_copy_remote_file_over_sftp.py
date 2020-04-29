@@ -8,7 +8,7 @@
 
 ______ a_p..
 ______ paramiko
-______ getpass
+______ g_p_
 
 
 SOURCE _ '6_2_copy_remote_file_over_sftp.py' 
@@ -43,6 +43,6 @@ __ _______ __ ______
     # Comment out the above line and uncomment the below line for Python 2.7.
     # user = raw_input("Enter your remote account: ")
 
-    password _ getpass.getpass("Enter password for @: " user)
+    password _ g_p_.g_p_("Enter password for @: " user)
     
     copy_file(hostname, port, user, password, src, dst)

@@ -40,7 +40,7 @@ ___ mail_checker(fromAddress, toAddress):
     s...helo(s...local_hostname)
     s...mail(fromAddress)
     code, message _ s...rcpt(st..(addressToVerify))
-    s...quit()
+    s...q..
 
     __ code __ 250:
 	    print('Successfully verified the email: @', fromAddress)

@@ -1162,7 +1162,7 @@ c_ MiniEdit( Frame ):
         selection _ N..
 
         # Keyboard bindings
-        b..( '<Control-q>', lambda event: quit() )
+        b..( '<Control-q>', lambda event: q.. )
         b..( '<KeyPress-Delete>', deleteSelection )
         b..( '<KeyPress-BackSpace>', deleteSelection )
         focus()

@@ -5,7 +5,7 @@
 
 ______ a_p..
 ______ __
-______ getpass
+______ g_p_
 ______ re
 ______ ___
 ______ smtplib
@@ -46,11 +46,11 @@ ___ send_email(sender, recipient):
     session.ehlo()
     session.starttls()
     session.ehlo
-    password _ getpass.getpass(prompt_"Enter your Google password: ") 
+    password _ g_p_.g_p_(prompt_"Enter your Google password: ")
     session.login(sender, password)
     session.sendmail(sender, recipient, msg.as_string())
     print ("Email sent.")
-    session.quit()
+    session.q..
  
 __ _______ __ ______
     parser _ ?.AP..(d.._'Email Sending Example')

@@ -19,7 +19,7 @@ ___ mail_client(host, port, fromAddress, toAddress, subject, body):
     ___
         s...sendmail(fromAddress, toAddress, msg.as_string())
     f..
-        s...quit()
+        s...q..
 
 
 __ _______ __ ______

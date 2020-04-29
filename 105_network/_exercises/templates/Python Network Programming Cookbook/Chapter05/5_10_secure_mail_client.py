@@ -7,7 +7,7 @@ ______ smtplib
 ____ e__.mime.multipart ______ MIMEMultipart
 ____ e__.mime.text ______ MIMEText
 ______ a_p..
-______ getpass
+______ g_p_
 
 ___ mail_client(host, port, fromAddress, password, toAddress, subject, body):
     msg _ MIMEMultipart()
@@ -33,7 +33,7 @@ ___ mail_client(host, port, fromAddress, password, toAddress, subject, body):
     mailserver.sendmail(fromAddress,toAddress,msg.as_string())
     print ("Email sent from:", fromAddress)
 
-    mailserver.quit()
+    mailserver.q..
 
 
 
@@ -45,7 +45,7 @@ __ _______ __ ______
     parser.a_a..('--toAddress', a.._"store", d.._"toAddress", type_str, r.._T..)
     parser.a_a..('--subject', a.._"store", d.._"subject", type_str, r.._T..)
     parser.a_a..('--body', a.._"store", d.._"body", type_str, r.._T..)
-    password _ getpass.getpass("Enter your Password:")
+    password _ g_p_.g_p_("Enter your Password:")
     given_args _ parser.parse_args()
     mail_client(?.host, given_args.port, given_args.fromAddress, password, given_args.toAddress, given_args.subject, given_args.body)
 

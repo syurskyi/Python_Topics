@@ -3,7 +3,7 @@
 # This program is optimized for Python 2.7.12 and Python 3.5.2.
 # It may run on any other version with/without modifications.
 
-____ getpass ______ getpass
+____ g_p_ ______ g_p_
 ____ fabric.api ______ env, put, sudo, prompt
 ____ fabric.contrib.files ______ e..
 
@@ -17,7 +17,7 @@ APACHE_INIT_SCRIPT _ "/etc/init.d/apache2 "
 ___ remote_server
     env.hosts _ ['127.0.0.1']
     env.user _ prompt('Enter user name: ')
-    env.password _ getpass('Enter your system password: ')
+    env.password _ g_p_('Enter your system password: ')
 
 
 ___ setup_vhost

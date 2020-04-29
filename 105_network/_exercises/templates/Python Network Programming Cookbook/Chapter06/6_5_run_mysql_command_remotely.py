@@ -3,16 +3,16 @@
 # This program is optimized for Python 2.7.12 and Python 3.5.2.
 # It may run on any other version with/without modifications.
 
-____ getpass ______ getpass
+____ g_p_ ______ g_p_
 ____ fabric.api ______ run, env, prompt, cd
  
 ___ remote_server
     env.hosts _ ['127.0.0.1']
     env.user _ prompt('Enter your system username: ')
-    env.password _ getpass('Enter your system user password: ')
+    env.password _ g_p_('Enter your system user password: ')
     env.mysqlhost _ 'localhost'
     env.mysqluser _ prompt('Enter your db username: ')
-    env.mysqlpassword _ getpass('Enter your db user password: ')
+    env.mysqlpassword _ g_p_('Enter your db user password: ')
     env.db_name _ ''
 
 ___ show_dbs
