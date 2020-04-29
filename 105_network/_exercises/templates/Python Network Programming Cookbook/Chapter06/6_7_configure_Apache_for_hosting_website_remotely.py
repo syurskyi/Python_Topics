@@ -4,7 +4,7 @@
 # It may run on any other version with/without modifications.
 
 ____ g_p_ ______ g_p_
-____ fabric.api ______ env, put, sudo, prompt
+____ fabric.api ______ env, put, sudo, p..
 ____ fabric.contrib.files ______ e..
 
 WWW_DOC_ROOT _ "/data/apache/test/"
@@ -16,7 +16,7 @@ APACHE_INIT_SCRIPT _ "/etc/init.d/apache2 "
 
 ___ remote_server
     env.hosts _ ['127.0.0.1']
-    env.user _ prompt('Enter user name: ')
+    env.user _ p..('Enter user name: ')
     env.password _ g_p_('Enter your system password: ')
 
 

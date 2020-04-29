@@ -4,59 +4,59 @@
 # It may run on any other version with/without modifications.
 
 ____ g_p_ ______ g_p_
-____ fabric.api ______ run, env, prompt, cd
+____ fabric.api ______ run, env, p.., cd
  
 ___ remote_server
-    env.hosts _ ['127.0.0.1']
-    env.user _ prompt('Enter your system username: ')
-    env.password _ g_p_('Enter your system user password: ')
-    env.mysqlhost _ 'localhost'
-    env.mysqluser _ prompt('Enter your db username: ')
-    env.mysqlpassword _ g_p_('Enter your db user password: ')
-    env.db_name _ ''
+    e__.h.. _ '127.0.0.1'
+    e__.u.. _ p..'Enter your system username: '
+    e__.p.. _ g_p_('Enter your system user password: ')
+    e__.my.. _ 'localhost'
+    e__.my.. _ p..('Enter your db username: ')
+    e__.my.. _ g_p_('Enter your db user password: ')
+    e__.d_n _ ''
 
 ___ show_dbs
     """ Wraps mysql show databases cmd"""
     q _ "show databases"
-    run("echo '@' | mysql -u@ -p@" (q, env.mysqluser, env.mysqlpassword))
+    r.. "echo '@' | mysql -u@ -p@" (q, e__.m_u.., e__.my_p..
 
 
-___ run_sql(db_name, query):
+___ run_sql db_name query
     """ Generic function to run sql"""
-    with cd('/tmp'):
-        run("echo '@' | mysql -u@ -p@ -D @" (query, env.mysqluser, env.mysqlpassword, db_name))
+    w__ c. '/tmp'
+        r.. ("echo '@' | mysql -u@ -p@ -D @" ? e__.m_u.. e__.m_p.. d_n..
 
 ___ create_db
     """Create a MySQL DB for App version"""
-    __ no. env.db_name:
-        db_name _ prompt("Enter the DB name:")
+    __ no. e__.d_n..
+        d_n.. _ p..("Enter the DB name:")
     ____
-        db_name _ env.db_name
+        db_name _ e__.d_n..
     run('echo "CREATE DATABASE @ default character set utf8 collate utf8_unicode_ci;"|mysql --batch --user=@ --password=@ --host=@'\
-          (db_name, env.mysqluser, env.mysqlpassword, env.mysqlhost), pty_True)
+          (d_n.. e__.m_u.. e__.m_p.. e__.m_h.. pty_T..
 
 ___ ls_db
     """ List a dbs with size in MB """
-    __ no. env.db_name:
-        db_name _ prompt("Which DB to ls?")
+    __ no. e__.d_n..
+        db_name _ p..("Which DB to ls?")
     ____
-        db_name _ env.db_name
-    query _ """SELECT table_schema                                        "DB Name", 
-       Round(Sum(data_length + index_length) / 1024 / 1024, 1) "DB Size in MB" 
-        FROM   information_schema.tables         
-        WHERE table_schema = \"@\" 
-        GROUP  BY table_schema """ db_name
-    run_sql(db_name, query)
+        d_n.. _ e__.d_n..
+    query _ """S.. t.._s..                                       "DB Name", 
+       Round Su. d.._l.. + i_l..) / 1024 / 1024, 1) "DB Size in MB" 
+        F..   i_s_.t..        
+        W.. t_s.. = \"@\" 
+        G..  B. t_s.. """ d_n..
+    r_s.. d_n.. q..
 
 
 ___ empty_db
     """ Empty all tables of a given DB """
-    db_name _ prompt("Enter DB name to empty:")
+    db_name _ p..("Enter DB name to empty:")
     cmd _ """
     (echo 'SET foreign_key_checks = 0;'; 
     (mysqldump -u@ -p@ --add-drop-table --no-data @ | 
      grep ^DROP); 
      echo 'SET foreign_key_checks = 1;') | \
      mysql -u@ -p@ -b @
-    """ (env.mysqluser, env.mysqlpassword, db_name, env.mysqluser, env.mysqlpassword, db_name)
-    run(cmd)
+    """ (e__.m_u.. e__.m_p.. d_n.. e__.m_u_ e__.m_p.. d_n..
+    r.. ?

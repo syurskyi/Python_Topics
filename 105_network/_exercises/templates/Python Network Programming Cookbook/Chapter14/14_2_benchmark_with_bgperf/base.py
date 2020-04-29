@@ -197,7 +197,7 @@ c_ Container(o..):
             r_
 
         filename _ '{0}/start.sh'.f..(host_dir)
-        with o..(filename, 'w') __ f:
+        w__ o..(filename, 'w') __ f:
             f.w..(startup_content)
         __.chmod(filename, 0o777)
 
@@ -215,8 +215,8 @@ c_ Target(Container):
 
     ___ use_existing_config
         __ 'config_path' __ conf:
-            with o..('{0}/{1}'.f..(host_dir, CONFIG_FILE_NAME), 'w') __ f:
-                with o..(conf['config_path'], 'r') __ orig:
+            w__ o..('{0}/{1}'.f..(host_dir, CONFIG_FILE_NAME), 'w') __ f:
+                w__ o..(conf['config_path'], 'r') __ orig:
                     f.w..(orig.read())
             r_ T..
         r_ F..

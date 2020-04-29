@@ -5,7 +5,7 @@
 
 
 ____ g_p_ ______ g_p_
-____ fabric.api ______ local, run, env, get, put, prompt, open_shell
+____ fabric.api ______ local, run, env, get, put, p.., open_shell
 
 ___ remote_server
     env.hosts _ ['127.0.0.1']
@@ -19,8 +19,8 @@ ___ login
 ___ download_file
     print ("Checking local disk space...")
     local("df -h")
-    remote_path _ prompt("Enter the remote file path:")
-    local_path _ prompt("Enter the local file path:")
+    remote_path _ p..("Enter the remote file path:")
+    local_path _ p..("Enter the local file path:")
     get(remote_path_remote_path, local_path_local_path)
     local("ls @" local_path)
 
@@ -28,8 +28,8 @@ ___ download_file
 ___ upload_file
     print ("Checking remote disk space...")
     run("df -h")
-    local_path _ prompt("Enter the local file path:")
-    remote_path _ prompt("Enter the remote file path:")
+    local_path _ p..("Enter the local file path:")
+    remote_path _ p..("Enter the remote file path:")
     put(remote_path_remote_path, local_path_local_path)
     run("ls @" remote_path)
 

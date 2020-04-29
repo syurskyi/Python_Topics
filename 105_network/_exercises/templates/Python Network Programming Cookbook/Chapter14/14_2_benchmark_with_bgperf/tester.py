@@ -33,7 +33,7 @@ c_ ExaBGPTester(Tester, ExaBGP):
         peers _ list(conf.get('neighbors', {}).values())
 
         ___ p __ peers:
-            with o..('{0}/{1}.conf'.f..(host_dir, p['router-id']), 'w') __ f:
+            w__ o..('{0}/{1}.conf'.f..(host_dir, p['router-id']), 'w') __ f:
                 local_address _ p['local-address']
                 config _ '''neighbor {0} {{
     peer-as {1};

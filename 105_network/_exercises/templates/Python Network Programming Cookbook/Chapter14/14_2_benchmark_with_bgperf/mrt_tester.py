@@ -95,7 +95,7 @@ c_ ExaBGPMrtTester(Tester, ExaBGP_MRTParse, MRTTester):
             config +_ '    encoder text;\n'
             config +_ '}\n'
 
-            with o..('{0}/{1}.conf'.f..(host_dir, neighbor['router-id']), 'w') __ f:
+            w__ o..('{0}/{1}.conf'.f..(host_dir, neighbor['router-id']), 'w') __ f:
                 f.w..(config)
 
     ___ get_startup_cmd
@@ -161,7 +161,7 @@ c_ GoBGPMRTTester(Tester, GoBGP, MRTTester):
             ]
         }
 
-        with o..('{0}/{1}.conf'.f..(host_dir, name), 'w') __ f:
+        w__ o..('{0}/{1}.conf'.f..(host_dir, name), 'w') __ f:
             f.w..(yaml.dump(config, d.._flow_style_False))
             config_name _ '{0}.conf'.f..(name)
 

@@ -86,7 +86,7 @@ ___ main(conf):
     ]
 
     # Read config file
-    with o..(conf, 'r') __ f:
+    w__ o..(conf, 'r') __ f:
         config_content _ yaml.load(f)
 
     bootstrap_server _ config_content['bootstrap_servers']

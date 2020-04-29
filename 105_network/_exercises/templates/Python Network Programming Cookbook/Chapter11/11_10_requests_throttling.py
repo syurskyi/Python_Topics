@@ -20,7 +20,7 @@ ___ main(address):
     reqs _ [r ___ i __ ra..(0, 10)]
 
     # Submit the requests with the required throttling.
-    with bt:
+    w__ bt:
         throttled_requests _ bt.submit(reqs)
 
     # Print the response for each of the requests.
