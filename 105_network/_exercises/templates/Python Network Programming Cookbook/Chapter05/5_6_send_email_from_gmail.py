@@ -8,11 +8,11 @@ ______ __
 ______ g_p_
 ______ re
 ______ ___
-______ smtplib
+______ s_l_
  
-____ e__.mime.image ______ MIMEImage
-____ e__.mime.multipart ______ MIMEMultipart
-____ e__.mime.text ______ MIMEText
+____ e__.m__.image ______ MIMEImage
+____ e__.m__.multipart ______ MIMEMultipart
+____ e__.m__.text ______ MIMEText
  
 SMTP_SERVER _ 'smtp.gmail.com'
 SMTP_PORT _ 587
@@ -35,14 +35,14 @@ ___ send_email(sender, recipient):
             c..
         img _ MIMEImage(o..(pa__, 'rb').read(), _subtype_"gif")
         img.add_header('Content-Disposition', 'attachment', filename_filename)
-        msg.attach(img)
+        msg.a..(img)
  
     part _ MIMEText('text', "plain")
     part.set_payload(message)
-    msg.attach(part)
+    msg.a..(part)
     
     # create smtp session
-    session _ smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
+    session _ ?.SMTP(SMTP_SERVER, SMTP_PORT)
     session.ehlo()
     session.starttls()
     session.ehlo
