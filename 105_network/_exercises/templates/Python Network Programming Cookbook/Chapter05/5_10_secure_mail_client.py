@@ -4,8 +4,8 @@
 # It may run on any other version with/without modifications.
 
 ______ smtplib
-____ email.mime.multipart ______ MIMEMultipart
-____ email.mime.text ______ MIMEText
+____ e__.mime.multipart ______ MIMEMultipart
+____ e__.mime.text ______ MIMEText
 ______ a_p..
 ______ getpass
 

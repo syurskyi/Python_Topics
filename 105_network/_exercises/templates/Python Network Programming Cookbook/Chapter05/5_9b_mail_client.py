@@ -4,14 +4,14 @@
 # It may run on any other version with/without modifications.
 
 ______ smtplib
-______ email.utils
+______ e__.utils
 ______ a_p..
-____ email.mime.text ______ MIMEText
+____ e__.mime.text ______ MIMEText
 
 ___ mail_client(host, port, fromAddress, toAddress, subject, body):
     msg _ MIMEText(body)
-    msg['To'] _ email.utils.formataddr(('Recipient', toAddress))
-    msg['From'] _ email.utils.formataddr(('Author', fromAddress))
+    msg['To'] _ e__.utils.formataddr(('Recipient', toAddress))
+    msg['From'] _ e__.utils.formataddr(('Author', fromAddress))
     msg['Subject'] _ subject
 
     server _ smtplib.SMTP(host, port)

@@ -10,9 +10,9 @@ ______ re
 ______ ___
 ______ smtplib
  
-____ email.mime.image ______ MIMEImage
-____ email.mime.multipart ______ MIMEMultipart
-____ email.mime.text ______ MIMEText
+____ e__.mime.image ______ MIMEImage
+____ e__.mime.multipart ______ MIMEMultipart
+____ e__.mime.text ______ MIMEText
  
 SMTP_SERVER _ 'smtp.gmail.com'
 SMTP_PORT _ 587
@@ -30,7 +30,7 @@ ___ send_email(sender, recipient):
     gifsearch _ re.compile(".gif", re.IGNORECASE)
     files _ filter(gifsearch.search, files)
     ___ filename __ files:
-        pa__ _ __.pa__.j..(__.getcwd(), filename)
+        pa__ _ __.pa__.j..(__.g_c.., filename)
         __ no. __.pa__.isfile(pa__):
             c..
         img _ MIMEImage(o..(pa__, 'rb').read(), _subtype_"gif")

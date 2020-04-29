@@ -5,51 +5,51 @@
 
 ______ __
 ______ a_p..
-______ smtplib
-______ zipfile
-______ tempfile
-____ email ______ encoders
-____ email.mime.base ______ MIMEBase
-____ email.mime.multipart ______ MIMEMultipart
+______ s_p..
+______ z_f
+______ t_f..
+____ e__ ______ e..
+____ e__.m__.b.. ______ M_B..
+____ e__.m__.m.. ______ M_M..
 
-___ email_dir_zipped(sender, recipient):
-    zf _ tempfile.TemporaryFile(prefix_'mail', suffix_'.zip')
-    zip _ zipfile.ZipFile(zf, 'w')
-    print ("Zipping current dir: @" __.getcwd())
-    ___ file_name __ __.listdir(__.getcwd()):
-        zip.w..(file_name)
-    zip.c..
-    zf.seek(0)
+___ email_dir_zipped sender recipient
+    zf _ t__.TF.. pr.._'mail' su.._'.zip'
+    zip _ zf_.ZF.. ? _
+    print ("Zipping current dir: @" __.g_c..
+    ___ file_name __ __.l_d.. __.g_c..
+        ?.w.. ?
+    ?.c..
+    z_.s.. 0
 
     # Create the message
     print ("Creating email message...")
-    email_msg _ MIMEMultipart()
-    email_msg['Subject'] _ 'File from path @' __.getcwd()
-    email_msg['To'] _ ', '.j..(recipient)
-    email_msg['From'] _ sender
-    email_msg.preamble _ 'Testing email from Python.\n'
-    msg _ MIMEBase('application', 'zip')
-    msg.set_payload(zf.read())
-    encoders.encode_base64(msg)
-    msg.add_header('Content-Disposition', 'attachment', 
-                   filename_os.getcwd()[-1] + '.zip')
-    email_msg.attach(msg)
-    email_msg _ email_msg.as_string()
+    email_msg _ M_M..
+    ?['Subject'] _ 'File from path @' __.g_c..
+    ?['To'] _ ', '.j.. r..
+    ?['From'] _ sender
+    ?.pre.. _ 'Testing email from Python.\n'
+    msg _ M_B..('application', 'zip')
+    ?.s_p.. z_.r..
+    e__.e_64 ?
+    ?.a_h.. 'Content-Disposition', 'attachment',
+                   f..___.g_c. [-1 + '.zip'
+    ?.a.. ?
+    ? _ ?.a_s..
 
     # send the message
     print ("Sending email message...")
     ___
-        smtp _ smtplib.SMTP('localhost')
-        smtp.set_debuglevel(1)
-        smtp.sendmail(sender, recipient, email_msg)
-    ______ E.. __ e:
-        print ("Error: @" st..(e))
+        smtp _ s_l__.S.. 'localhost'
+        ?.s_d.. 1
+        ?.s_m.. s.. r.. e_m..
+    ______ E.. __ e
+        print ("Error: @" st.. ?
     f..
-        smtp.c..
+        ?.c..
 
 __ _______ __ ______
-    parser _ ?.AP..(d.._'Email Example')
-    ?.a_a..('--sender', a.._"store", d.._"sender", d.._'you@you.com')
-    ?.a_a..('--recipient', a.._"store", d.._"recipient")
-    given_args _ ?.parse_args()
-    email_dir_zipped(?.sender, ?.recipient)
+    parser _ ?.AP.. d.._'Email Example'
+    ?.a_a.. '--sender' a.._"store" d.._"sender" d.._'you@you.com'
+    ?.a_a.. '--recipient' a.._"store" d.._"recipient"
+    given_args _ ?.p_a..
+    ? ?.s.. ?.r..
