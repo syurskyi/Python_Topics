@@ -8,13 +8,13 @@
 
 ______ a_p..
 ______ g_p_
-______ paramiko
+______ pa..
 
 RECV_BYTES _ 4096
 COMMAND _ 'cat /proc/cpuinfo'
 
 ___ print_remote_cpu_info(hostname, port, username, password):
-    client _ paramiko.Transport((hostname, port))
+    client _ ?.Transport((hostname, port))
     client.c..(username_username, password_password)
     
     stdout_data _ []
