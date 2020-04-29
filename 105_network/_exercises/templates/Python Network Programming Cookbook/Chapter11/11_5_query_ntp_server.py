@@ -21,8 +21,8 @@ ___ main(address, v):
 
 __ _______ __ ______
     parser _ ?.AP..(d.._'Query NTP Server')
-    ?.a_a..('--address', a.._"store", d.._"address",  default_'pool.ntp.org')
-    ?.a_a..('--version', a.._"store", d.._"version",  ty.._in., default_3)
+    ?.a_a..('--address', a.._"store", d.._"address",  d.._'pool.ntp.org')
+    ?.a_a..('--version', a.._"store", d.._"version",  ty.._in., d.._3)
     given_args _ ?.p_a..
     address _ ?.address
     version _ ?.version

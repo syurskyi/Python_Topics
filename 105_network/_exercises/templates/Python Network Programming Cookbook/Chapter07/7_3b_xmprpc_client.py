@@ -24,10 +24,10 @@ ___ run_client(host, port, username, password):
 
 __ _______ __ ______
     parser _ ?.AP..(d.._'Multithreaded multicall XMLRPC Server/Proxy')
-    ?.a_a..('--host', a.._"store", d.._"host", default_'localhost')
-    ?.a_a..('--port', a.._"store", d.._"port", default_8000, ty.._in.)
-    ?.a_a..('--username', a.._"store", d.._"username", default_'user')
-    ?.a_a..('--password', a.._"store", d.._"password", default_'pass')
+    ?.a_a..('--host', a.._"store", d.._"host", d.._'localhost')
+    ?.a_a..('--port', a.._"store", d.._"port", d.._8000, ty.._in.)
+    ?.a_a..('--username', a.._"store", d.._"username", d.._'user')
+    ?.a_a..('--password', a.._"store", d.._"password", d.._'pass')
     # parse arguments
     given_args _ ?.parse_args()
     host, port _  ?.host, ?.port

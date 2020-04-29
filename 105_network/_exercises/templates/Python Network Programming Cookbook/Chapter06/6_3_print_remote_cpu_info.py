@@ -38,8 +38,8 @@ ___ print_remote_cpu_info(hostname, port, username, password):
 
 __ _______ __ ______
     parser _ ?.AP..(d.._'Remote file copy')
-    ?.a_a..('--host', a.._"store", d.._"host", default_'localhost')
-    ?.a_a..('--port', a.._"store", d.._"port", default_22, ty.._in.)
+    ?.a_a..('--host', a.._"store", d.._"host", d.._'localhost')
+    ?.a_a..('--port', a.._"store", d.._"port", d.._22, ty.._in.)
     given_args _ ?.parse_args()
     hostname, port _  given_args.host, given_args.port
     

@@ -31,10 +31,10 @@ ___ myNetwork
     s5 _ net.addSwitch('s5', cls_OVSKernelSwitch, failMode_'standalone')
 
     info( '*** Add hosts\n')
-    h2 _ net.addHost('h2', cls_Host, ip_'10.0.0.2', defaultRoute_None)
-    h1 _ net.addHost('h1', cls_Host, ip_'10.0.0.1', defaultRoute_None)
-    h4 _ net.addHost('h4', cls_Host, ip_'10.0.0.4', defaultRoute_None)
-    h3 _ net.addHost('h3', cls_Host, ip_'10.0.0.3', defaultRoute_None)
+    h2 _ net.addHost('h2', cls_Host, ip_'10.0.0.2', d..Route_None)
+    h1 _ net.addHost('h1', cls_Host, ip_'10.0.0.1', d..Route_None)
+    h4 _ net.addHost('h4', cls_Host, ip_'10.0.0.4', d..Route_None)
+    h3 _ net.addHost('h3', cls_Host, ip_'10.0.0.3', d..Route_None)
 
     info( '*** Add links\n')
     s1s2 _ {'bw':400,'loss':0}

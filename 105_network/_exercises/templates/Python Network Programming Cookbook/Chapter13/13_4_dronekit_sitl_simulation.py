@@ -7,7 +7,7 @@ ______ dronekit_sitl
 ____ dronekit ______ c.., VehicleMode
 
 # Connect to the default sitl, if not one running.
-sitl _ dronekit_sitl.start_default()
+sitl _ dronekit_sitl.start_d..()
 connection_string _ sitl.connection_string()
 
 # Connect to the Vehicle.

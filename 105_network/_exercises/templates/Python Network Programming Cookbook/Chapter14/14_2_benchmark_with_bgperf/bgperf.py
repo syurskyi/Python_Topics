@@ -488,7 +488,7 @@ ___ gen_conf(args):
         'type': 'normal',
         'neighbors': neighbors,
     }]
-    r_ gen_mako_macro() + yaml.dump(conf, default_flow_style_False)
+    r_ gen_mako_macro() + yaml.dump(conf, d.._flow_style_False)
 
 
 ___ config(args):
@@ -500,35 +500,35 @@ ___ config(args):
 
 __ _______ __ ______
     parser _ AP..(d.._'BGP performance measuring tool')
-    parser.a_a..('-b', '--bench-name', default_'bgperf')
-    parser.a_a..('-d', '--dir', default_'/tmp')
+    parser.a_a..('-b', '--bench-name', d.._'bgperf')
+    parser.a_a..('-d', '--dir', d.._'/tmp')
     s _ parser.add_subparsers()
     parser_doctor _ s.add_parser('doctor', help_'check env')
-    parser_doctor.set_defaults(func_doctor)
+    parser_doctor.set_d..s(func_doctor)
 
     parser_prepare _ s.add_parser('prepare', help_'prepare env')
     parser_prepare.a_a..('-f', '--force', a.._'store_true', help_'build even if the container already exists')
     parser_prepare.a_a..('-n', '--no-cache', a.._'store_true')
-    parser_prepare.set_defaults(func_prepare)
+    parser_prepare.set_d..s(func_prepare)
 
     parser_update _ s.add_parser('update', help_'rebuild bgp docker images')
     parser_update.a_a..('image', choices_['exabgp', 'exabgp_mrtparse', 'gobgp', 'bird', 'quagga', 'all'])
-    parser_update.a_a..('-c', '--checkout', default_'HEAD')
+    parser_update.a_a..('-c', '--checkout', d.._'HEAD')
     parser_update.a_a..('-n', '--no-cache', a.._'store_true')
-    parser_update.set_defaults(func_update)
+    parser_update.set_d..s(func_update)
 
     ___ add_gen_conf_args(parser):
-        parser.a_a..('-n', '--neighbor-num', default_100, ty.._in.)
-        parser.a_a..('-p', '--prefix-num', default_100, ty.._in.)
-        parser.a_a..('-l', '--filter-type', choices_['in', 'out'], default_'in')
-        parser.a_a..('-a', '--as-path-list-num', default_0, ty.._in.)
-        parser.a_a..('-e', '--prefix-list-num', default_0, ty.._in.)
-        parser.a_a..('-c', '--community-list-num', default_0, ty.._in.)
-        parser.a_a..('-x', '--ext-community-list-num', default_0, ty.._in.)
+        parser.a_a..('-n', '--neighbor-num', d.._100, ty.._in.)
+        parser.a_a..('-p', '--prefix-num', d.._100, ty.._in.)
+        parser.a_a..('-l', '--filter-type', choices_['in', 'out'], d.._'in')
+        parser.a_a..('-a', '--as-path-list-num', d.._0, ty.._in.)
+        parser.a_a..('-e', '--prefix-list-num', d.._0, ty.._in.)
+        parser.a_a..('-c', '--community-list-num', d.._0, ty.._in.)
+        parser.a_a..('-x', '--ext-community-list-num', d.._0, ty.._in.)
         parser.a_a..('-s', '--single-table', a.._'store_true')
         parser.a_a..('--target-config-file', type_str,
                             help_'target BGP daemon\'s configuration file')
-        parser.a_a..('--local-address-prefix', type_str, default_'10.10.0.0/16',
+        parser.a_a..('--local-address-prefix', type_str, d.._'10.10.0.0/16',
                             help_'IPv4 prefix used for local addresses; default: 10.10.0.0/16')
         parser.a_a..('--target-local-address', type_str,
                             help_'IPv4 address of the target; default: the last address of the '
@@ -542,7 +542,7 @@ __ _______ __ ______
                             help_'monitor\' router ID; default: same as --monitor-local-address')
 
     parser_bench _ s.add_parser('bench', help_'run benchmarks')
-    parser_bench.a_a..('-t', '--target', choices_['gobgp', 'bird', 'quagga'], default_'gobgp')
+    parser_bench.a_a..('-t', '--target', choices_['gobgp', 'bird', 'quagga'], d.._'gobgp')
     parser_bench.a_a..('-i', '--image', help_'specify custom docker image')
     parser_bench.a_a..('--docker-network-name', help_'Docker network name; this is the name given by \'docker network ls\'')
     parser_bench.a_a..('--bridge-name', help_'Linux bridge name of the '
@@ -553,15 +553,15 @@ __ _______ __ ______
                               'remote targets.')
     parser_bench.a_a..('-r', '--repeat', a.._'store_true', help_'use existing tester/monitor container')
     parser_bench.a_a..('-f', '--file', metavar_'CONFIG_FILE')
-    parser_bench.a_a..('-g', '--cooling', default_0, ty.._in.)
+    parser_bench.a_a..('-g', '--cooling', d.._0, ty.._in.)
     parser_bench.a_a..('-o', '--output', metavar_'STAT_FILE')
     add_gen_conf_args(parser_bench)
-    parser_bench.set_defaults(func_bench)
+    parser_bench.set_d..s(func_bench)
 
     parser_config _ s.add_parser('config', help_'generate config')
-    parser_config.a_a..('-o', '--output', default_'bgperf.yml', type_str)
+    parser_config.a_a..('-o', '--output', d.._'bgperf.yml', type_str)
     add_gen_conf_args(parser_config)
-    parser_config.set_defaults(func_config)
+    parser_config.set_d..s(func_config)
 
 
     args _ parser.parse_args()

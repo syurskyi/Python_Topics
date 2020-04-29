@@ -20,8 +20,8 @@ ___ print_packet(pktlen, data, timestamp):
 ___ main
     # setup commandline arguments
     parser _ ?.AP..(d.._'Packet Sniffer')
-    parser.a_a..('--iface', a.._"store", d.._"iface", default_'eth0')
-    parser.a_a..('--port', a.._"store", d.._"port", default_80, ty.._in.)
+    parser.a_a..('--iface', a.._"store", d.._"iface", d.._'eth0')
+    parser.a_a..('--port', a.._"store", d.._"port", d.._80, ty.._in.)
     # parse arguments
     given_args _ parser.parse_args()
     iface, port _  given_args.iface, given_args.port

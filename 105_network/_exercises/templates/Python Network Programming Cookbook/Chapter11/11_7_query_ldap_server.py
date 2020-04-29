@@ -21,9 +21,9 @@ ___ main(address, dn, password):
 
 __ _______ __ ______
     parser _ ?.AP..(d.._'Query LDAP Server')
-    parser.a_a..('--address', a.._"store", d.._"address",  default_'ldap.forumsys.com')
-    parser.a_a..('--dn', a.._"store", d.._"dn",  default_'cn=read-only-admin,dc=example,dc=com')
-    parser.a_a..('--password', a.._"store", d.._"password",  default_'password')
+    parser.a_a..('--address', a.._"store", d.._"address",  d.._'ldap.forumsys.com')
+    parser.a_a..('--dn', a.._"store", d.._"dn",  d.._'cn=read-only-admin,dc=example,dc=com')
+    parser.a_a..('--password', a.._"store", d.._"password",  d.._'password')
     given_args _ parser.p_a..
     address _ ?.address
     dn _ ?.dn

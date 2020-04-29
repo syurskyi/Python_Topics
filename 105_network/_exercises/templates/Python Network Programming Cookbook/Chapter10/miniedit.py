@@ -739,7 +739,7 @@ c_ SwitchDialog(CustomDialog):
     ___ addInterface( self ):
         tableFrame.addRow()
 
-    ___ defaultDpid( self, name):
+    ___ d..Dpid( self, name):
         "Derive dpid from switch name, s1 -> 1"
         assert self  # satisfy pylint and allow contextual override
         ___
@@ -760,7 +760,7 @@ c_ SwitchDialog(CustomDialog):
                 externalInterfaces.ap..(tableFrame.get(row, 0))
 
         dpid _ dpidEntry.get()
-        __ (defaultDpid(hostnameEntry.get()) is N..
+        __ (d..Dpid(hostnameEntry.get()) is N..
            and le.(dpid) __ 0):
             showerror(title_"Error",
                           message_ 'Unable to derive default datapath ID - '
@@ -1081,7 +1081,7 @@ c_ MiniEdit( Frame ):
 
     ___ - ( self, parent_None, cheight_600, cwidth_1000 ):
 
-        defaultIpBase_'10.0.0.0/8'
+        d..IpBase_'10.0.0.0/8'
 
         nflowDefaults _ {'nflowTarget':'',
                               'nflowTimeout':'600',
@@ -1092,7 +1092,7 @@ c_ MiniEdit( Frame ):
                               'sflowPolling':'30'}
 
         appPrefs_{
-            "ipBase": defaultIpBase,
+            "ipBase": d..IpBase,
             "startCLI": "0",
             "terminalType": 'xterm',
             "switchType": 'ovs',
@@ -1598,7 +1598,7 @@ c_ MiniEdit( Frame ):
         hostOpts _ {}
         switchOpts _ {}
         controllers _ {}
-        appPrefs["ipBase"]_ defaultIpBase
+        appPrefs["ipBase"]_ d..IpBase
 
     ___ saveTopology( self ):
         "Save command."
@@ -1808,11 +1808,11 @@ c_ MiniEdit( Frame ):
                 __ 'Host' __ tags:
                     opts _ hostOpts[name]
                     ip _ N..
-                    defaultRoute _ N..
+                    d..Route _ N..
                     __ 'defaultRoute' __ opts and le.(opts['defaultRoute']) > 0:
-                        defaultRoute _ "'via "+opts['defaultRoute']+"'"
+                        d..Route _ "'via "+opts['defaultRoute']+"'"
                     ____
-                        defaultRoute _ 'None'
+                        d..Route _ 'None'
                     __ 'ip' __ opts and le.(opts['ip']) > 0:
                         ip _ opts['ip']
                     ____
@@ -1821,13 +1821,13 @@ c_ MiniEdit( Frame ):
                         ip _ ipAdd(i_nodeNum, prefixLen_prefixLen, ipBaseNum_ipBaseNum)
 
                     __ 'cores' __ opts or 'cpu' __ opts:
-                        f.w..("    "+name+" = net.addHost('"+name+"', cls=CPULimitedHost, ip='"+ip+"', defaultRoute="+defaultRoute+")\n")
+                        f.w..("    "+name+" = net.addHost('"+name+"', cls=CPULimitedHost, ip='"+ip+"', defaultRoute="+d..Route+")\n")
                         __ 'cores' __ opts:
                             f.w..("    "+name+".setCPUs(cores='"+opts['cores']+"')\n")
                         __ 'cpu' __ opts:
                             f.w..("    "+name+".setCPUFrac(f="+st..(opts['cpu'])+", sched='"+opts['sched']+"')\n")
                     ____
-                        f.w..("    "+name+" = net.addHost('"+name+"', cls=Host, ip='"+ip+"', defaultRoute="+defaultRoute+")\n")
+                        f.w..("    "+name+" = net.addHost('"+name+"', cls=Host, ip='"+ip+"', defaultRoute="+d..Route+")\n")
                     __ 'externalInterfaces' __ opts:
                         ___ extInterface __ opts['externalInterfaces']:
                             f.w..("    Intf( '"+extInterface+"', node="+name+" )\n")
@@ -2774,9 +2774,9 @@ c_ MiniEdit( Frame ):
                 opts _ hostOpts[name]
                 # debug( st..(opts), '\n' )
                 ip _ N..
-                defaultRoute _ N..
+                d..Route _ N..
                 __ 'defaultRoute' __ opts and le.(opts['defaultRoute']) > 0:
-                    defaultRoute _ 'via '+opts['defaultRoute']
+                    d..Route _ 'via '+opts['defaultRoute']
                 __ 'ip' __ opts and le.(opts['ip']) > 0:
                     ip _ opts['ip']
                 ____
@@ -2801,7 +2801,7 @@ c_ MiniEdit( Frame ):
                 newHost _ net.addHost( name,
                                        cls_hostCls,
                                        ip_ip,
-                                       defaultRoute_defaultRoute
+                                       d..Route_d..Route
                                       )
 
                 # Set the CPULimitedHost specific options
@@ -3183,7 +3183,7 @@ c_ MiniEdit( Frame ):
         addDictOption( opts, TOPOS, TOPODEF, 'topo' )
         addDictOption( opts, LINKS, LINKDEF, 'link' )
 
-        opts.add_option( '--custom', type_'string', default_None,
+        opts.add_option( '--custom', type_'string', d.._None,
                          help_'read custom topo and node params from .py' +
                          'file' )
 
@@ -3556,22 +3556,22 @@ gGPLHwLwcMIo12Qxu0ABAQA7
         """ )
     }
 
-___ addDictOption( opts, choicesDict, default, name, helpStr_None ):
+___ addDictOption( opts, choicesDict, d.., name, helpStr_None ):
     """Convenience function to add choices dicts to OptionParser.
        opts: OptionParser instance
        choicesDict: dictionary of valid choices, must include default
        default: default choice key
        name: long option name
        help: string"""
-    __ default no. __ choicesDict:
+    __ d.. no. __ choicesDict:
         r_ E..( 'Invalid  default @ for choices dict: @'
-                         ( default, name ) )
+                         ( d.., name ) )
     __ no. helpStr:
         helpStr _ ( '|'.j..( sorted( choicesDict.keys() ) ) +
                     '[,param=value...]' )
     opts.add_option( '--' + name,
                      type_'string',
-                     default _ default,
+                     d.. _ d..,
                      help _ helpStr )
 
 __ _______ __ ______

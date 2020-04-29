@@ -162,7 +162,7 @@ c_ GoBGPMRTTester(Tester, GoBGP, MRTTester):
         }
 
         with o..('{0}/{1}.conf'.f..(host_dir, name), 'w') __ f:
-            f.w..(yaml.dump(config, default_flow_style_False))
+            f.w..(yaml.dump(config, d.._flow_style_False))
             config_name _ '{0}.conf'.f..(name)
 
     ___ get_startup_cmd

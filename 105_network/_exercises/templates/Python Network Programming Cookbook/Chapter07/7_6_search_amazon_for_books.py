@@ -45,8 +45,8 @@ ___ search_for_books(tag, index):
 
 __ _______ __ ______
     parser _ ?.AP..(d.._'Search info from Amazon')
-    ?.a_a..('--tag', a.._"store", d.._"tag", default_'Python')
-    ?.a_a..('--index', a.._"store", d.._"index", default_'Books')
+    ?.a_a..('--tag', a.._"store", d.._"tag", d.._'Python')
+    ?.a_a..('--index', a.._"store", d.._"index", d.._'Books')
     # parse arguments
     given_args _ ?.parse_args()
     books _ search_for_books(?.tag, ?.index)

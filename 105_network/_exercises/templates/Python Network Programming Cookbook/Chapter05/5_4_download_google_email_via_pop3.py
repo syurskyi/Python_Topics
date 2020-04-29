@@ -23,7 +23,7 @@ ___ download_email(username):
 
 __ _______ __ ______
     parser _ ?.AP..(d.._'Email Download Example')
-    ?.a_a..('--username', a.._"store", d.._"username", default_getpass.getuser())
+    ?.a_a..('--username', a.._"store", d.._"username", d.._getpass.getuser())
     given_args _ ?.parse_args()
     username _ ?.username
     download_email(username)
