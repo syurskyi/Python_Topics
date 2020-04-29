@@ -28,7 +28,7 @@ __ _______ __ ______
     parser.a_a..('--address', a.._"store", d.._"address",  d.._'ldap.forumsys.com')
     parser.a_a..('--dn', a.._"store", d.._"dn",  d.._'cn=read-only-admin,dc=example,dc=com')
     parser.a_a..('--password', a.._"store", d.._"password",  d.._'password')
-    given_args _ parser.parse_args()
+    given_args _ parser.p_a..
     address _ ?.address
     dn _ ?.dn
     password _ ?.password

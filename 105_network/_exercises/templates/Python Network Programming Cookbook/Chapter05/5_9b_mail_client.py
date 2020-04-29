@@ -30,6 +30,6 @@ __ _______ __ ______
     ?.a_a..('--toAddress', a.._"store", d.._"toAddress", type_str, r.._T..)
     ?.a_a..('--subject', a.._"store", d.._"subject", type_str, r.._T..)
     ?.a_a..('--body', a.._"store", d.._"body", type_str, r.._T..)
-    given_args _ ?.parse_args()
+    given_args _ ?.p_a..
     mail_client(?.host, ?.port, ?.fromAddress, ?.toAddress, ?.subject, ?.body)
 

@@ -56,5 +56,5 @@ __ _______ __ ______
     parser _ ?.AP..(d.._'Email Sending Example')
     parser.a_a..('--sender', a.._"store", d.._"sender")
     parser.a_a..('--recipient', a.._"store", d.._"recipient")
-    given_args _ parser.parse_args()
+    given_args _ parser.p_a..
     send_email(given_args.sender, given_args.recipient)

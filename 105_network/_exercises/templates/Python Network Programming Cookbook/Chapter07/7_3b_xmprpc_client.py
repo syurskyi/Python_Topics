@@ -29,7 +29,7 @@ __ _______ __ ______
     ?.a_a..('--username', a.._"store", d.._"username", d.._'user')
     ?.a_a..('--password', a.._"store", d.._"password", d.._'pass')
     # parse arguments
-    given_args _ ?.parse_args()
+    given_args _ ?.p_a..
     host, port _  ?.host, ?.port
     username, password _ ?.username, ?.password
     run_client(host, port, username, password)

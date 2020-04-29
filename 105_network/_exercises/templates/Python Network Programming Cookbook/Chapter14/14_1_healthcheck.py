@@ -39,7 +39,7 @@ __ _______ __ ______
     parser.a_a..('--address', a.._"store", d.._"address")
     parser.a_a..('--port', a.._"store", d.._"port", d.._80, ty.._in.)
     # parse arguments
-    given_args _ parser.parse_args()
+    given_args _ parser.p_a..
     address, port _  given_args.address, given_args.port
     confirm(address, port)
 

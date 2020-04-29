@@ -41,7 +41,7 @@ __ _______ __ ______
     parser.a_a..('--start-port', a.._"store", d.._"start_port", d.._1, ty.._in.)
     parser.a_a..('--end-port', a.._"store", d.._"end_port", d.._100, ty.._in.)
     # parse arguments
-    given_args _ parser.parse_args()
+    given_args _ parser.p_a..
     host, start_port, end_port _  given_args.host, given_args.start_port, given_args.end_port
     scan_ports(host, start_port, end_port)
 

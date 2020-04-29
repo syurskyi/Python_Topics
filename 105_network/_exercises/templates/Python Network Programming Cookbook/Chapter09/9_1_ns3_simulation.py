@@ -50,6 +50,6 @@ __ _______ __ ______
     parser _ ?.AP..(d.._'NS-3 Simple Simulation')
     parser.a_a..('--ipv4add', a.._"store", d.._"ipv4add", type_str, r.._T..)
     parser.a_a..('--ipv4mask', a.._"store", d.._"ipv4mask", type_str, r.._T..)
-    given_args _ parser.parse_args()
+    given_args _ parser.p_a..
     simulate(given_args.ipv4add, given_args.ipv4mask)
 

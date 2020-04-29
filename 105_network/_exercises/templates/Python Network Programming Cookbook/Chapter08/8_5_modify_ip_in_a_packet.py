@@ -36,7 +36,7 @@ __ _______ __ ______
     parser.a_a..('--dst-port', a.._"store", d.._"dst_port", d.._randint(0, 65535))
     parser.a_a..('--flags', a.._"store", d.._"flags", d.._None)
     # parse arguments
-    given_args _ parser.parse_args()
+    given_args _ parser.p_a..
     iface, protocol, src_ip,  src_port, dst_ip, dst_port, flags _  given_args.iface, given_args.protocol, given_args.src_ip,\
       given_args.src_port, given_args.dst_ip, given_args.dst_port, given_args.flags
     send_packet(protocol, src_ip, src_port, flags, dst_ip, dst_port, iface)

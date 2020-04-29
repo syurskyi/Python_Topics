@@ -72,7 +72,7 @@ __ _______ __ ______
     parser.a_a..('--host', a.._"store", d.._"host", d.._'localhost')
     parser.a_a..('--port', a.._"store", d.._"port", d.._8000, ty.._in.)
     # parse arguments
-    given_args _ parser.parse_args()
+    given_args _ parser.p_a..
     host, port _  given_args.host, given_args.port
     run_server(host, port)
     run_client(host, port)

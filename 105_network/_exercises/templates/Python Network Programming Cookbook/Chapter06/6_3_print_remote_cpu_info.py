@@ -40,7 +40,7 @@ __ _______ __ ______
     parser _ ?.AP..(d.._'Remote file copy')
     ?.a_a..('--host', a.._"store", d.._"host", d.._'localhost')
     ?.a_a..('--port', a.._"store", d.._"port", d.._22, ty.._in.)
-    given_args _ ?.parse_args()
+    given_args _ ?.p_a..
     hostname, port _  given_args.host, given_args.port
     
     user _ input("Enter your remote account: ")

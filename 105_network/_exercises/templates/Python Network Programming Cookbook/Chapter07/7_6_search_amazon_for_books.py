@@ -48,7 +48,7 @@ __ _______ __ ______
     ?.a_a..('--tag', a.._"store", d.._"tag", d.._'Python')
     ?.a_a..('--index', a.._"store", d.._"index", d.._'Books')
     # parse arguments
-    given_args _ ?.parse_args()
+    given_args _ ?.p_a..
     books _ search_for_books(?.tag, ?.index)
     
     ___ book __ books:

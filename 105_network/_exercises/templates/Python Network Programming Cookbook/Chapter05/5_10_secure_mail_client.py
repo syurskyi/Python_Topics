@@ -46,6 +46,6 @@ __ _______ __ ______
     parser.a_a..('--subject', a.._"store", d.._"subject", type_str, r.._T..)
     parser.a_a..('--body', a.._"store", d.._"body", type_str, r.._T..)
     password _ g_p_.g_p_("Enter your Password:")
-    given_args _ parser.parse_args()
+    given_args _ parser.p_a..
     mail_client(?.host, given_args.port, given_args.fromAddress, password, given_args.toAddress, given_args.subject, given_args.body)
 

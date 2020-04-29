@@ -33,6 +33,6 @@ __ _______ __ ______
     parser _ ?.AP..(d.._'Maxinet Simple Emulation')
     parser.a_a..('--depth', a.._"store", d.._"depth", ty.._in., r.._T..)
     parser.a_a..('--fanout', a.._"store", d.._"fanout", ty.._in., r.._T..)
-    given_args _ parser.parse_args()
+    given_args _ parser.p_a..
     emulate(?.depth, ?.fanout)
 

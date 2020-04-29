@@ -69,7 +69,7 @@ __ _______ __ ______
     parser.a_a..('--username', a.._"store", d.._"username", d.._'user')
     parser.a_a..('--password', a.._"store", d.._"password", d.._'pass')
     # parse arguments
-    given_args _ parser.parse_args()
+    given_args _ parser.p_a..
     host, port _  given_args.host, given_args.port
     username, password _ given_args.username, given_args.password
     run_server(host, port, username, password)

@@ -3187,7 +3187,7 @@ c_ MiniEdit( Frame ):
                          help_'read custom topo and node params from .py' +
                          'file' )
 
-        options, args _ opts.parse_args()
+        options, args _ opts.p_a..
         # We don't accept extra arguments after the options
         __ args:
             opts.print_help()

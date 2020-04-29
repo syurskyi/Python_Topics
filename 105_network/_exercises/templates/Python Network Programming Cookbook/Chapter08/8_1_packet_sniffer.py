@@ -23,7 +23,7 @@ ___ main
     parser.a_a..('--iface', a.._"store", d.._"iface", d.._'eth0')
     parser.a_a..('--port', a.._"store", d.._"port", d.._80, ty.._in.)
     # parse arguments
-    given_args _ parser.parse_args()
+    given_args _ parser.p_a..
     iface, port _  given_args.iface, given_args.port
     # start sniffing
     pc _ pcap.pcapObject()

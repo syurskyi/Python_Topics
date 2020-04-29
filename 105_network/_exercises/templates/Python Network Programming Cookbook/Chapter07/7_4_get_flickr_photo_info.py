@@ -61,7 +61,7 @@ __ _______ __ ______
     ?.a_a..('--tag', a.._"store", d.._"tag", d.._'Python')
     ?.a_a..('--max-count', a.._"store", d.._"max_count", d.._3, ty.._in.)
     # parse arguments
-    given_args _ ?.parse_args()
+    given_args _ ?.p_a..
     api_key, tag, max_count _  ?.api_key, ?.tag, ?.max_count
     photo_info _ collect_photo_info(api_key, tag, max_count)
     ___ photo __ photo_info:

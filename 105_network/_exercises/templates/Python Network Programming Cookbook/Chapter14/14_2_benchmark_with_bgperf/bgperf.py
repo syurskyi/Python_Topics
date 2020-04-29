@@ -564,5 +564,5 @@ __ _______ __ ______
     parser_config.set_d..s(func_config)
 
 
-    args _ parser.parse_args()
+    args _ parser.p_a..
     args.func(args)

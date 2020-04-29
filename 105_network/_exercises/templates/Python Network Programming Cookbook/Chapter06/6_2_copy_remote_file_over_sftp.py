@@ -35,7 +35,7 @@ __ _______ __ ______
     parser.a_a..('--src', a.._"store", d.._"src", d.._SOURCE)
     parser.a_a..('--dst', a.._"store", d.._"dst", d.._DESTINATION)
     
-    given_args _ parser.parse_args()
+    given_args _ parser.p_a..
     hostname, port _  ?.host, ?.port
     src, dst _ ?.src, ?.dst
     
