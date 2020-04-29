@@ -20,10 +20,10 @@ ___ print_packet(pktlen, data, timestamp):
 ___ main
     # setup commandline arguments
     parser _ ?.AP..(d.._'Packet Sniffer')
-    parser.a_a..('--iface', a.._"store", d.._"iface", d.._'eth0')
-    parser.a_a..('--port', a.._"store", d.._"port", d.._80, ty.._in.)
+    ?.a_a..('--iface', a.._"store", d.._"iface", d.._'eth0')
+    ?.a_a..('--port', a.._"store", d.._"port", d.._80, ty.._in.)
     # parse arguments
-    given_args _ parser.p_a..
+    given_args _ ?.p_a..
     iface, port _  given_args.iface, given_args.port
     # start sniffing
     pc _ pcap.pcapObject()

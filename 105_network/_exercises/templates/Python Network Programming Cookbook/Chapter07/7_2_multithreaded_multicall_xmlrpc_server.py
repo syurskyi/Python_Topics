@@ -69,10 +69,10 @@ ___ run_client(host, port):
 
 __ _______ __ ______
     parser _ ?.AP..(d.._'Multithreaded multicall XMLRPC Server/Proxy')
-    parser.a_a..('--host', a.._"store", d.._"host", d.._'localhost')
-    parser.a_a..('--port', a.._"store", d.._"port", d.._8000, ty.._in.)
+    ?.a_a..('--host', a.._"store", d.._"host", d.._'localhost')
+    ?.a_a..('--port', a.._"store", d.._"port", d.._8000, ty.._in.)
     # parse arguments
-    given_args _ parser.p_a..
+    given_args _ ?.p_a..
     host, port _  given_args.host, given_args.port
     run_server(host, port)
     run_client(host, port)

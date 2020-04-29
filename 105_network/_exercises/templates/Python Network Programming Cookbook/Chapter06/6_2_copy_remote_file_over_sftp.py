@@ -30,12 +30,12 @@ ___ copy_file(hostname, port, username, password, src, dst):
 
 __ _______ __ ______
     parser _ ?.AP..(d.._'Remote file copy')
-    parser.a_a..('--host', a.._"store", d.._"host", d.._'localhost')
-    parser.a_a..('--port', a.._"store", d.._"port", d.._22, ty.._in.)
-    parser.a_a..('--src', a.._"store", d.._"src", d.._SOURCE)
-    parser.a_a..('--dst', a.._"store", d.._"dst", d.._DESTINATION)
+    ?.a_a..('--host', a.._"store", d.._"host", d.._'localhost')
+    ?.a_a..('--port', a.._"store", d.._"port", d.._22, ty.._in.)
+    ?.a_a..('--src', a.._"store", d.._"src", d.._SOURCE)
+    ?.a_a..('--dst', a.._"store", d.._"dst", d.._DESTINATION)
     
-    given_args _ parser.p_a..
+    given_args _ ?.p_a..
     hostname, port _  ?.host, ?.port
     src, dst _ ?.src, ?.dst
     

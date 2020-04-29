@@ -30,8 +30,8 @@ ___ emulate(depth_, fanout_):
 
 __ _______ __ ______
     parser _ ?.AP..(d.._'Mininet Simple Emulation')
-    parser.a_a..('--depth', a.._"store", d.._"depth", ty.._in., r.._T..)
-    parser.a_a..('--fanout', a.._"store", d.._"fanout", ty.._in., r.._T..)
-    given_args _ parser.p_a..
+    ?.a_a..('--depth', a.._"store", d.._"depth", ty.._in., r.._T..)
+    ?.a_a..('--fanout', a.._"store", d.._"fanout", ty.._in., r.._T..)
+    given_args _ ?.p_a..
     emulate(given_args.depth, given_args.fanout)
 

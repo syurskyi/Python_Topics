@@ -47,9 +47,9 @@ ___ simulate(ipv4add, ipv4mask):
 
 
 __ _______ __ ______
-    parser _ ?.AP..(d.._'NS-3 Simple Simulation')
-    parser.a_a..('--ipv4add', a.._"store", d.._"ipv4add", ty.._str, r.._T..)
-    parser.a_a..('--ipv4mask', a.._"store", d.._"ipv4mask", ty.._str, r.._T..)
-    given_args _ parser.p_a..
+    ? _ ?.AP..(d.._'NS-3 Simple Simulation')
+    ?.a_a..('--ipv4add', a.._"store", d.._"ipv4add", ty.._str, r.._T..)
+    ?.a_a..('--ipv4mask', a.._"store", d.._"ipv4mask", ty.._str, r.._T..)
+    given_args _ ?.p_a..
     simulate(given_args.ipv4add, given_args.ipv4mask)
 

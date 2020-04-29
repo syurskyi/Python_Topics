@@ -62,8 +62,8 @@ ___ main(address):
 
 __ _______ __ ______
     parser _ ?.AP..(d.._'DNS Python')
-    parser.a_a..('--address', a.._"store", d.._"address",  d.._'dnspython.org')
-    given_args _ parser.p_a..
+    ?.a_a..('--address', a.._"store", d.._"address",  d.._'dnspython.org')
+    given_args _ ?.p_a..
     address _ ?.address
     main (address)
 

@@ -24,8 +24,8 @@ ___ main(address):
 
 __ _______ __ ______
     parser _ ?.AP..(d.._'Query LDAP Server')
-    parser.a_a..('--address', a.._"store", d.._"address",  d.._'ipa.demo1.freeipa.org')
-    given_args _ parser.p_a..
+    ?.a_a..('--address', a.._"store", d.._"address",  d.._'ipa.demo1.freeipa.org')
+    given_args _ ?.p_a..
     address _ given_args.address
     main (address)
 

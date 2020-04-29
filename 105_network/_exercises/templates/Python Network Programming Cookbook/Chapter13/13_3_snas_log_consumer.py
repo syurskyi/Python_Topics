@@ -118,8 +118,8 @@ ___ main(conf):
 
 __ _______ __ ______
     parser _ ?.AP..(d.._'SNAS Log Consumer')
-    parser.a_a..('--conf', a.._"store", d.._"conf",  d.._"config.yaml")
-    given_args _ parser.p_a..
+    ?.a_a..('--conf', a.._"store", d.._"conf",  d.._"config.yaml")
+    given_args _ ?.p_a..
     conf _ given_args.conf
     main (conf)
 

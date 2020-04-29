@@ -36,10 +36,10 @@ ___ confirm(addres, port):
 __ _______ __ ______
     # setup commandline arguments
     parser _ ?.AP..(d.._'Health Checker')
-    parser.a_a..('--address', a.._"store", d.._"address")
-    parser.a_a..('--port', a.._"store", d.._"port", d.._80, ty.._in.)
+    ?.a_a..('--address', a.._"store", d.._"address")
+    ?.a_a..('--port', a.._"store", d.._"port", d.._80, ty.._in.)
     # parse arguments
-    given_args _ parser.p_a..
+    given_args _ ?.p_a..
     address, port _  given_args.address, given_args.port
     confirm(address, port)
 

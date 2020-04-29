@@ -31,12 +31,12 @@ ___ send_packet(recvd_pkt, src_ip, dst_ip, count):
 __ _______ __ ______
     # setup commandline arguments
     parser _ ?.AP..(d.._'Packet Sniffer')
-    parser.a_a..('--infile', a.._"store", d.._"infile", d.._'pcap1.pcap')
-    parser.a_a..('--src-ip', a.._"store", d.._"src_ip", d.._'1.1.1.1')
-    parser.a_a..('--dst-ip', a.._"store", d.._"dst_ip", d.._'2.2.2.2')
-    parser.a_a..('--count', a.._"store", d.._"count", d.._100, ty.._in.)
+    ?.a_a..('--infile', a.._"store", d.._"infile", d.._'pcap1.pcap')
+    ?.a_a..('--src-ip', a.._"store", d.._"src_ip", d.._'1.1.1.1')
+    ?.a_a..('--dst-ip', a.._"store", d.._"dst_ip", d.._'2.2.2.2')
+    ?.a_a..('--count', a.._"store", d.._"count", d.._100, ty.._in.)
     # parse arguments
-    given_args _ ga _ parser.p_a..
+    given_args _ ga _ ?.p_a..
     g.. src_ip, dst_ip
     infile, src_ip, dst_ip, count _  ga.infile, ga.src_ip, ga.dst_ip, ga.count
     ___

@@ -500,7 +500,7 @@ ___ config(args):
 
 __ _______ __ ______
     parser _ AP..(d.._'BGP performance measuring tool')
-    parser.a_a..('-b', '--bench-name', d.._'bgperf')
+    ?.a_a..('-b', '--bench-name', d.._'bgperf')
     parser.a_a..('-d', '--dir', d.._'/tmp')
     s _ parser.add_subparsers()
     parser_doctor _ s.add_parser('doctor', help_'check env')
@@ -518,27 +518,27 @@ __ _______ __ ______
     parser_update.set_d..s(func_update)
 
     ___ add_gen_conf_args(parser):
-        parser.a_a..('-n', '--neighbor-num', d.._100, ty.._in.)
-        parser.a_a..('-p', '--prefix-num', d.._100, ty.._in.)
-        parser.a_a..('-l', '--filter-type', choices_['in', 'out'], d.._'in')
-        parser.a_a..('-a', '--as-path-list-num', d.._0, ty.._in.)
-        parser.a_a..('-e', '--prefix-list-num', d.._0, ty.._in.)
-        parser.a_a..('-c', '--community-list-num', d.._0, ty.._in.)
-        parser.a_a..('-x', '--ext-community-list-num', d.._0, ty.._in.)
-        parser.a_a..('-s', '--single-table', a.._'store_true')
-        parser.a_a..('--target-config-file', type_str,
+        ?.a_a..('-n', '--neighbor-num', d.._100, ty.._in.)
+        ?.a_a..('-p', '--prefix-num', d.._100, ty.._in.)
+        ?.a_a..('-l', '--filter-type', choices_['in', 'out'], d.._'in')
+        ?.a_a..('-a', '--as-path-list-num', d.._0, ty.._in.)
+        ?.a_a..('-e', '--prefix-list-num', d.._0, ty.._in.)
+        ?.a_a..('-c', '--community-list-num', d.._0, ty.._in.)
+        ?.a_a..('-x', '--ext-community-list-num', d.._0, ty.._in.)
+        ?.a_a..('-s', '--single-table', a.._'store_true')
+        ?.a_a..('--target-config-file', type_str,
                             help_'target BGP daemon\'s configuration file')
-        parser.a_a..('--local-address-prefix', type_str, d.._'10.10.0.0/16',
+        ?.a_a..('--local-address-prefix', type_str, d.._'10.10.0.0/16',
                             help_'IPv4 prefix used for local addresses; default: 10.10.0.0/16')
-        parser.a_a..('--target-local-address', type_str,
+        ?.a_a..('--target-local-address', type_str,
                             help_'IPv4 address of the target; default: the last address of the '
                                  'local prefix given in --local-address-prefix')
-        parser.a_a..('--target-router-id', type_str,
+        ?.a_a..('--target-router-id', type_str,
                             help_'target\' router ID; default: same as --target-local-address')
-        parser.a_a..('--monitor-local-address', type_str,
+        ?.a_a..('--monitor-local-address', type_str,
                             help_'IPv4 address of the monitor; default: the second address of the '
                                  'local prefix given in --local-address-prefix')
-        parser.a_a..('--monitor-router-id', type_str,
+        ?.a_a..('--monitor-router-id', type_str,
                             help_'monitor\' router ID; default: same as --monitor-local-address')
 
     parser_bench _ s.add_parser('bench', help_'run benchmarks')
@@ -564,5 +564,5 @@ __ _______ __ ______
     parser_config.set_d..s(func_config)
 
 
-    args _ parser.p_a..
+    args _ ?.p_a..
     args.func(args)

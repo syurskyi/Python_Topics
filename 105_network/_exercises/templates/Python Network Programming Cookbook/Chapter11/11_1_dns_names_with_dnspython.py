@@ -17,9 +17,9 @@ ___ main(site1, site2):
 
 __ _______ __ ______
     parser _ ?.AP..(d.._'DNS Python')
-    parser.a_a..('--site1', a.._"store", d.._"site1",  d.._'www.dnspython.org')
-    parser.a_a..('--site2', a.._"store", d.._"site2",  d.._'dnspython.org')
-    given_args _ parser.p_a..
+    ?.a_a..('--site1', a.._"store", d.._"site1",  d.._'www.dnspython.org')
+    ?.a_a..('--site2', a.._"store", d.._"site2",  d.._'dnspython.org')
+    given_args _ ?.p_a..
     site1 _ ?.site1
     site2 _ ?.site2
     main (site1, site2)
