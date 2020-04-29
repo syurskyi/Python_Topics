@@ -39,7 +39,7 @@ __ _______ __ ______
     hostname, port _  ?.host, ?.port
     src, dst _ ?.src, ?.dst
     
-    user _ input("Enter your remote account: ")
+    user _ in..("Enter your remote account: ")
     # Comment out the above line and uncomment the below line for Python 2.7.
     # user = raw_input("Enter your remote account: ")
 

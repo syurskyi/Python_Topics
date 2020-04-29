@@ -230,7 +230,7 @@ ___ bench(args):
                                      intf_name, raw_bridge_name
                                     ))
                 ___
-                    answer _ input()
+                    answer _ in..()
                 ______:
                     print ('aborting')
                     ___.e..(1)
