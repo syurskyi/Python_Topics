@@ -4,22 +4,22 @@
 # It may run on any other version with/without modifications.
 
 ______ a_p..
-______ dns.zone
-______ dns.resolver
+______ d__.zone
+______ d__.resolver
 ______ ?
 
 ___ main(address):
-    soa_answer _ dns.resolver.query(address, 'SOA')
-    master_answer _ dns.resolver.query(soa_answer[0].mname, 'A')
+    soa_answer _ ?.resolver.query(address, 'SOA')
+    master_answer _ ?.resolver.query(soa_answer[0].mname, 'A')
     ___
-        z _ dns.zone.from_xfr(dns.query.xfr(master_answer[0].address, address))
+        z _ ?.zone.from_xfr(?.query.xfr(master_answer[0].address, address))
         names _ z.nodes.keys()
         names.sort()
         ___ n __ names:
             print(z[n].to_text(n))
     ______ ?.e.. __ e:
         print('Failed to perform zone transfer:', e)
-    ______ dns.exception.FormError __ e:
+    ______ d__.exception.FormError __ e:
         print('Failed to perform zone transfer:', e)
 
 
