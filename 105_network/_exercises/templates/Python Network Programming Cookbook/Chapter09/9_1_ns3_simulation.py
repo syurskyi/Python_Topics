@@ -1,55 +1,55 @@
-#!/usr/bin/env python
-# Python Network Programming Cookbook, Second Edition -- Chapter - 9
-# This program is optimized for Python 2.7.12 and Python 3.5.2.
-# It may run on any other version with/without modifications.
-
-______ ns.applications
-______ ns.core
-______ ns.internet
-______ ns.network
-______ ns.point_to_point
-______ ?
-
-
-___ simulate(ipv4add, ipv4mask):
-    # Enabling logs at INFO level for both the server and the client.
-    ns.core.LogComponentEnable("UdpEchoClientApplication", ns.core.LOG_LEVEL_INFO)
-    ns.core.LogComponentEnable("UdpEchoServerApplication", ns.core.LOG_LEVEL_INFO)
-    
-    # Create the 2 nodes.
-    nodes _ ns.network.NodeContainer()
-    nodes.Create(2)
-
-    pointToPoint _ ns.point_to_point.PointToPointHelper()
-
-    devices _ pointToPoint.Install(nodes)
-
-    stack _ ns.internet.InternetStackHelper()
-    stack.Install(nodes)
-
-    # Set addresses based on the input args.
-    address _ ns.internet.Ipv4AddressHelper()
-    address.SetBase(ns.network.Ipv4Address(ipv4add), ns.network.Ipv4Mask(ipv4mask))
-
-    interfaces _ address.Assign(devices)
-
-    # Running the echo server
-    echoServer _ ns.applications.UdpEchoServerHelper(9)
-    serverApps _ echoServer.Install(nodes.Get(1))
-
-    # Running the echo client
-    echoClient _ ns.applications.UdpEchoClientHelper(interfaces.GetAddress(1), 3)
-    clientApps _ echoClient.Install(nodes.Get(0))
-
-    # Running the simulator
-    ns.core.Simulator.Run()
-    ns.core.Simulator.Destroy()
-
-
-__ _______ __ ______
-    ? _ ?.AP..(d.._'NS-3 Simple Simulation')
-    ?.a_a..('--ipv4add', a.._"store", d.._"ipv4add", ty.._str, r.._T..)
-    ?.a_a..('--ipv4mask', a.._"store", d.._"ipv4mask", ty.._str, r.._T..)
-    given_args _ ?.p_a..
-    simulate(given_args.ipv4add, given_args.ipv4mask)
-
+# #!/usr/bin/env python
+# # Python Network Programming Cookbook, Second Edition -- Chapter - 9
+# # This program is optimized for Python 2.7.12 and Python 3.5.2.
+# # It may run on any other version with/without modifications.
+#
+# ______ ns.app..
+# ______ ns.co..
+# ______ ns.in..
+# ______ ns.ne..
+# ______ ns.po..
+# ______ ?
+#
+#
+# ___ simulate ipv4add ipv4mask
+#     # Enabling logs at INFO level for both the server and the client.
+#     __.co__.LCE.. "UdpEchoClientApplication"  __.co__.L_L_I..
+#     __.co__.LCE.. "UdpEchoServerApplication"  __.co__.L_L_I..
+#
+#     # Create the 2 nodes.
+#     nodes _ __.n__.NC..
+#     ?.C.. 2
+#
+#     pointToPoint _ __.p_t_p_.PTPH..
+#
+#     devices _ pTP__.I.. n..
+#
+#     stack _ __.i__.ISH..
+#     ?.I.. n..
+#
+#     # Set addresses based on the input args.
+#     address _ __.i__.I4AH..
+#     ?.SB.. __.n__.I4A.. i4a..   __.n__.Ipv4Mask i4m..
+#
+#     interfaces _ ?.A.. d..
+#
+#     # Running the echo server
+#     echoServer _ __.ap.. __.UESH.. 9
+#     serverApps _ ?.I.. n__.G.. 1
+#
+#     # Running the echo client
+#     echoClient _ __.a__.UECH.. i__.GA.. 1 3
+#     clientApps _ eC__.I.. n__.G.. 0
+#
+#     # Running the simulator
+#     __.co__.S__.R..
+#     __.co__.S__.D..
+#
+#
+# __ _______ __ ______
+#     ? _ ?.AP.. d.._'NS-3 Simple Simulation'
+#     ?.a_a.. '--ipv4add'  a.._"store"  d.._"ipv4add"  ty.._str  r.._T..
+#     ?.a_a.. '--ipv4mask'  a.._"store"  d.._"ipv4mask"  ty.._str  r.._T..
+#     given_args _ ?.p_a..
+#     s.. ?.i4a.. ?.i4m..
+#
