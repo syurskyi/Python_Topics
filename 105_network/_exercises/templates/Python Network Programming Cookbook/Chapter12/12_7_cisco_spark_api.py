@@ -4,15 +4,15 @@
 # # It may run on any other version with/without modifications.
 #
 #
-# ____ ciscosparkapi ______ CiscoSparkAPI
+# ____ ciscosparkapi ______ CSA..
 #
-# api _ CiscoSparkAPI()
+# api _ CSA..
 #
 # # Create a new demo room
-# demo_room _ api.rooms.create('ciscosparkapi Demonstration')
+# demo_room _ ?.r__.c.. 'ciscosparkapi Demonstration'
 # print('Successfully Created the Room')
 #
 # # Post a message to the new room, and upload an image from a web url.
-# api.messages.create(demo_room.id, text_"Welcome to the room!",
-#                     files_["https://3.bp.blogspot.com/-wWHD9LVAI7c/WVeyurRmeDI/AAAAAAAADXc/CDY17VfYBdAMbI4GS6dGm2Tc4pHBvmpngCLcBGAs/s1600/IMG_4469.JPG"])
+# ?.m__.c.. ?.i. t.._"Welcome to the room!",
+#                     f.._ "https://3.bp.blogspot.com/-wWHD9LVAI7c/WVeyurRmeDI/AAAAAAAADXc/CDY17VfYBdAMbI4GS6dGm2Tc4pHBvmpngCLcBGAs/s1600/IMG_4469.JPG"
 # print('Successfully Posted the Message and the Image to the Room')
