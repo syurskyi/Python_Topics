@@ -1,5 +1,5 @@
-# udp client
-______  ?
-
-sock _ ?.?(?.AF_UNIX, ?.S_D..)
-?.sendto(b'Test Message', 'unix.sock')
+# # udp client
+# ______  ?
+#
+# sock _ ?.? ?.A_U.. ?.S_D..
+# ?.s_t. _'Test Message' 'unix.sock'
