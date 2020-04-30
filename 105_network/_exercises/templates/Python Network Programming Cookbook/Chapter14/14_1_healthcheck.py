@@ -8,39 +8,39 @@
 # ____ t__ ______ s..
 # ______ a_p..
 #
-# ___ is_alive(address, port):
+# ___ is_alive address port
 #     # Create a socket object to connect with
-#     s _ ?.?()
+#     s _ ?.?
 #
 #     # Now try connecting, passing in a tuple with address & port
 #     ___
-#         s.c..((address, port))
+#         s.c.. ? ?
 #         r_ T..
-#     ______ ?.e..:
+#     ______ ?.e..
 #         r_ F..
 #     f..
 #         s.c..
 #
 #
-# ___ confirm(addres, port):
-#     w__ T..:
-#         __ is_alive(address, port):
-#             s_o_.w..(address + ":" + st..(port) + ' is alive\n')
+# ___ confirm addres port
+#     w__ T..
+#         __ i_a.. ? ?
+#             s_o_.w.. a.. ":" + st.. p.. + ' is alive\n')
 #             s_o_.f..
 #         ____
-#             s_o_.w..(address + ":" + st..(port) + ' is dead\n')
+#             s_o_.w.. a.. + ":" + st.. p.. + ' is dead\n')
 #             s_o_.f..
-#         s..(10)
+#         s.. 10
 #
 #
 # __ _______ __ ______
 #     # setup commandline arguments
-#     parser _ ?.AP..(d.._'Health Checker')
-#     ?.a_a..('--address', a.._"store", d.._"address")
-#     ?.a_a..('--port', a.._"store", d.._"port", d.._80, ty.._in.)
+#     parser _ ?.AP.. d.._'Health Checker'
+#     ?.a_a.. '--address', a.._"store", d.._"address"
+#     ?.a_a.. '--port'  a.._"store"  d.._"port"  d.._80  ty.._in.
 #     # parse arguments
 #     given_args _ ?.p_a..
-#     address, port _  given_args.address, given_args.port
-#     confirm(address, port)
+#     address  port _  ?.?  ?.?
+#     ? ? ?
 #
 #
