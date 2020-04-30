@@ -2,13 +2,13 @@
 
 _____ ?
 
-try:
-    output _ ?.check_output(
+___
+    output _ ?.c.._output(
         'echo to stdout; echo to stderr 1>&2',
         s.._T..,
         stderr_?.STDOUT,
     )
-except ?.CalledProcessError as err:
+_____ ?.C.. __ err:
     print('ERROR:', err)
 else:
     print('Have {} bytes in output: {!r}'.format(

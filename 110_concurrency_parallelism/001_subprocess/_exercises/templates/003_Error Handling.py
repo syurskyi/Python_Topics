@@ -1,15 +1,12 @@
-# subprocess_run_check.py
-
-_____ ?
-
-try:
-    ?.r..(['false'], check_T..)
-except ?.CalledProcessError as err:
-    print('ERROR:', err)
-
-# $ python3 subprocess_run_check.py
+# # subprocess_run_check.py
 #
-# ERROR: Command '['false']' returned non-zero exit status 1
-
-
-
+# _____ ?
+#
+# ___
+#     ?.r.. 'false' c.._T..
+# _____ ?.C.. __ err
+#     print('ERROR:' ?
+#
+# # $ python3 subprocess_run_check.py
+# #
+# # ERROR: Command '['false']' returned non-zero exit status 1

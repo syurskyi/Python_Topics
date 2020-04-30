@@ -2,14 +2,14 @@
 
 _____ ?
 
-try:
+___
     completed _ ?.r..(
         'echo to stdout; echo to stderr 1>&2; exit 1',
         s.._T..,
         stdout_?.PIPE,
         stderr_?.PIPE,
     )
-except ?.CalledProcessError as err:
+_____ ?.C.. __ err:
     print('ERROR:', err)
 else:
     print('returncode:', completed.r_c..)
