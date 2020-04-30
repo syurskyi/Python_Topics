@@ -1,18 +1,18 @@
 # signal_parent.py
 
-_____ os
+_____ __
 _____ signal
 _____ ?
-_____ time
+_____ t__
 _____ ___
 
 proc _ ?.P..(['python3', 'signal_child.py'])
 print('PARENT      : Pausing before sending signal...')
 ___.s_o_.f..
-time.sleep(1)
+t__.s..(1)
 print('PARENT      : Signaling child')
 ___.s_o_.f..
-os.kill(proc.pid, signal.SIGUSR1)
+__.kill(proc.pid, signal.SIGUSR1)
 
 # $ python3 signal_parent.py
 #

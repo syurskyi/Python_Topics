@@ -1,10 +1,10 @@
 # subprocess_signal_parent_shell.py
 
-_____ os
+_____ __
 _____ signal
 _____ ?
 _____ tempfile
-_____ time
+_____ t__
 _____ ___
 
 script _ '''#!/bin/sh
@@ -20,11 +20,11 @@ proc _ ?.P..(['sh', script_file.name])
 print('PARENT      : Pausing before signaling @...'.f..(
     proc.pid))
 ___.s_o_.f..
-time.sleep(1)
+t__.s..(1)
 print('PARENT      : Signaling child @'.f..(proc.pid))
 ___.s_o_.f..
-os.kill(proc.pid, signal.SIGUSR1)
-time.sleep(3)
+__.kill(proc.pid, signal.SIGUSR1)
+t__.s..(3)
 
 # $ python3 subprocess_signal_parent_shell.py
 #

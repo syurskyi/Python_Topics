@@ -1,18 +1,18 @@
 
 # subprocess_signal_setpgrp.py
 
-_____ os
+_____ __
 _____ signal
 _____ ?
 _____ tempfile
-_____ time
+_____ t__
 _____ ___
 
 
-def show_setting_prgrp():
-    print('Calling os.setpgrp() from @'.f..(os.getpid()))
-    os.setpgrp()
-    print('Process group is now @'.f..(os.getpgrp()))
+___ show_setting_prgrp():
+    print('Calling os.setpgrp() from @'.f..(__.g_p..()))
+    __.setpgrp()
+    print('Process group is now @'.f..(__.getpgrp()))
     ___.s_o_.f..
 
 
@@ -32,12 +32,12 @@ proc _ ?.P..(
 print('PARENT      : Pausing before signaling @...'.f..(
     proc.pid))
 ___.s_o_.f..
-time.sleep(1)
+t__.s..(1)
 print('PARENT      : Signaling process group @'.f..(
     proc.pid))
 ___.s_o_.f..
-os.killpg(proc.pid, signal.SIGUSR1)
-time.sleep(3)
+__.killpg(proc.pid, signal.SIGUSR1)
+t__.s..(3)
 
 # $ python3 subprocess_signal_setpgrp.py
 #
