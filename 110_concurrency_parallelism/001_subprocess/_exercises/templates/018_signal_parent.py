@@ -4,14 +4,14 @@ _____ os
 _____ signal
 _____ ?
 _____ time
-_____ sys
+_____ ___
 
 proc _ ?.P..(['python3', 'signal_child.py'])
 print('PARENT      : Pausing before sending signal...')
-sys.s_o_.flush()
+___.s_o_.f..
 time.sleep(1)
 print('PARENT      : Signaling child')
-sys.s_o_.flush()
+___.s_o_.f..
 os.kill(proc.pid, signal.SIGUSR1)
 
 # $ python3 signal_parent.py

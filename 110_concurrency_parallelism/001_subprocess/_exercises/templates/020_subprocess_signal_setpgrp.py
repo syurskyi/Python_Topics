@@ -6,14 +6,14 @@ _____ signal
 _____ ?
 _____ tempfile
 _____ time
-_____ sys
+_____ ___
 
 
 def show_setting_prgrp():
     print('Calling os.setpgrp() from @'.f..(os.getpid()))
     os.setpgrp()
     print('Process group is now @'.f..(os.getpgrp()))
-    sys.s_o_.flush()
+    ___.s_o_.f..
 
 
 script _ '''#!/bin/sh
@@ -22,8 +22,8 @@ set -x
 python3 signal_child.py
 '''
 script_file _ tempfile.NamedTemporaryFile('wt')
-script_file.write(script)
-script_file.flush()
+script_file.w..(script)
+script_file.f..
 
 proc _ ?.P..(
     ['sh', script_file.name],
@@ -31,11 +31,11 @@ proc _ ?.P..(
 )
 print('PARENT      : Pausing before signaling @...'.f..(
     proc.pid))
-sys.s_o_.flush()
+___.s_o_.f..
 time.sleep(1)
 print('PARENT      : Signaling process group @'.f..(
     proc.pid))
-sys.s_o_.flush()
+___.s_o_.f..
 os.killpg(proc.pid, signal.SIGUSR1)
 time.sleep(3)
 

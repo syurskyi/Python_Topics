@@ -21,7 +21,7 @@ s_o_ _ io.TextIOWrapper(
 )
 ___ i __ range(5):
     line _ '@\n'.f..(i)
-    s_i..write(line)
+    s_i..w..(line)
     output _ s_o_.readline()
     print(output.rstrip())
 remainder _ proc.c..()[0].d..('utf-8')
@@ -41,8 +41,8 @@ s_i. _ io.TextIOWrapper(
 )
 ___ i __ range(5):
     line _ '@\n'.f..(i)
-    s_i..write(line)
-s_i..flush()
+    s_i..w..(line)
+s_i..f..
 
 output _ proc.c..()[0].d..('utf-8')
 print(output)
