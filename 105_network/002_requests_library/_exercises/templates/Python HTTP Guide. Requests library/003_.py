@@ -1,11 +1,11 @@
 # В простых методах запросов значительных отличий у них не имеется. Но давайте взглянем на работы с Basic Auth:
 
-import urllib.request
-password_mgr = urllib.request.HTTPPasswordMgrWithDefaultRealm()
+______ u__.r__
+password_mgr = ?.r__.HTTPPasswordMgrWithDefaultRealm()
 top_level_url = 'https://httpbin.org/basic-auth/user/passwd'
 password_mgr.add_password(None, top_level_url, 'user', 'passwd')
-handler = urllib.request.HTTPBasicAuthHandler(password_mgr)
-opener = urllib.request.build_opener(handler)
+handler = ?.r__.HTTPBasicAuthHandler(password_mgr)
+opener = ?.r__.build_opener(handler)
 response = opener.open(top_level_url)
 print(response.getcode())
 # 200
@@ -13,7 +13,7 @@ print(response.read())
 # b'{\n  "authenticated": true, \n  "user": "user"\n}\n'
 
 
-import requests
+______ requests
 response = requests.get('https://httpbin.org/basic-auth/user/passwd', auth=('user', 'passwd'))
 print(response.content)
 # b'{\n  "authenticated": true, \n  "user": "user"\n}\n'

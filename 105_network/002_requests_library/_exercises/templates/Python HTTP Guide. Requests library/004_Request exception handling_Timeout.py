@@ -3,7 +3,7 @@
 #     ConnectTimeout - таймаут на соединения
 #     ReadTimeout - таймаут на чтение
 
-import requests
+______ requests
 try:
     response = requests.get('https://httpbin.org/user-agent', timeout=(0.00001, 10))
 except requests.exceptions.ConnectTimeout:

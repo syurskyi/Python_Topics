@@ -1,4 +1,4 @@
-import requests
+______ requests
 try:
     response = requests.get('http://urldoesnotexistforsure.bom')
 except requests.exceptions.ConnectionError:

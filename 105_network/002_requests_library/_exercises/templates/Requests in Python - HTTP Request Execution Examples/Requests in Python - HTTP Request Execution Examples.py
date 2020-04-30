@@ -9,7 +9,7 @@
 # Сразу после установки requests можно полноценно использовать в приложении.
 # Импорт requests производится следующим образом.
 
-import requests
+______ requests
 
 # Python библиотека Requests метод GET
 #
@@ -81,8 +81,8 @@ else:
 # Это можно сделать при помощи использования .raise_for_status().
 
 
-import requests
-from requests.exceptions import HTTPError
+______ requests
+from requests.exceptions ______ HTTPError
 
 for url in ['https://api.github.com', 'https://api.github.com/invalid']:
     try:
@@ -234,7 +234,7 @@ response.headers['content-type']
 # При использовании метода get(), данные передаются в params. Например, для того, чтобы посмотреть на библиотеку
 # requests можно использовать Search API на GitHub.
 
-import requests
+______ requests
 
 # Поиск местонахождения для запросов на GitHub
 response = requests.get(
@@ -275,7 +275,7 @@ requests.get(
 # параметра headers. Например, можно изменить предыдущий поисковой запрос, подсветив совпадения в результате.
 # Для этого в заголовке Accept медиа тип уточняется при помощи text-match.
 
-import requests
+______ requests
 
 response = requests.get(
     'https://api.github.com/search/repositories',
@@ -361,13 +361,13 @@ json_response['headers']['Content-Type']
 # Если открыть .request, можно просмотреть PreparedRequest.
 
 response = requests.post('https://httpbin.org/post', json={'key':'value'})
-response.request.headers['Content-Type']
+response.r__.headers['Content-Type']
 # 'application/json'
 
-response.request.url
+response.r__.url
 # 'https://httpbin.org/post'
 
-response.request.body
+response.r__.body
 # b'{"key": "value"}'
 
 # Проверка PreparedRequest открывает доступ ко всей информации о выполняемом запросе. Это может быть пейлоад, URL,
@@ -388,7 +388,7 @@ response.request.body
 # Чтобы отправить запрос API-интерфейсу аутентифицированного пользователя, вы можете передать свое имя пользователя
 # и пароль на GitHub через кортеж в get().
 
-from getpass import getpass
+from getpass ______ getpass
 requests.get('https://api.github.com/user', auth=('username', getpass()))
 # <Response [200]>
 
@@ -403,8 +403,8 @@ requests.get('https://api.github.com/user')
 # Таким образом, вы можете создать тот же запрос, передав подробные учетные данные базовой аутентификации,
 # используя HTTPBasicAuth.
 
-from requests.auth import HTTPBasicAuth
-from getpass import getpass
+from requests.auth ______ HTTPBasicAuth
+from getpass ______ getpass
 requests.get(
     'https://api.github.com/user',
     auth=HTTPBasicAuth('username', getpass())
@@ -416,8 +416,8 @@ requests.get(
 # Вы даже можете предоставить свой собственный механизм аутентификации. Для этого необходимо сначала создать
 # подкласс AuthBase. Затем происходит имплементация __call__().
 
-import requests
-from requests.auth import AuthBase
+______ requests
+from requests.auth ______ AuthBase
 
 class TokenAuth(AuthBase):
     """Implements a custom authentication scheme."""
@@ -494,8 +494,8 @@ requests.get('https://api.github.com', timeout=(2, 5))
 # соединения, то ответ будет возвращен, как это было раньше. Если время ожидания истекло,
 # функция вызовет исключение Timeout.
 
-import requests
-from requests.exceptions import Timeout
+______ requests
+from requests.exceptions ______ Timeout
 
 try:
     response = requests.get('https://api.github.com', timeout=1)
@@ -520,8 +520,8 @@ else:
 # Например, если вы хотите использовать одну и ту же аутентификацию для нескольких запросов,
 # вы можете использовать сеанс:
 
-import requests
-from getpass import getpass
+______ requests
+from getpass ______ getpass
 
 # используя менеджер контента, можно убедиться, что ресурсы, применимые
 # во время сессии будут свободны после использования
@@ -553,9 +553,9 @@ print(response.json())
 # появится ConnectionError. Для этого нужно построить транспортный адаптер, установить его параметр max_retries и
 # подключить его к существующему объекту Session.
 
-import requests
-from requests.adapters import HTTPAdapter
-from requests.exceptions import ConnectionError
+______ requests
+from requests.adapters ______ HTTPAdapter
+from requests.exceptions ______ ConnectionError
 
 github_adapter = HTTPAdapter(max_retries=3)
 

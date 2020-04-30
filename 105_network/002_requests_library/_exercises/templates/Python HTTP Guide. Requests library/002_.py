@@ -1,6 +1,6 @@
 # Кстати, urllib.request это надстройка над "низкоуровневой" библиотекой httplib о которой я писал выше.
 
-import requests
+______ requests
 response = requests.get('https://httpbin.org/get')
 print(response.content)
 # b'{\n  "args": {}, \n  "headers": {\n    "Accept": "*/*", \n    "Accept-Encoding": "gzip, deflate", \n

@@ -1,6 +1,6 @@
 # Импортируйте модуль Requests:
 
-import requests
+______ requests
 
 # Попробуем получить веб-страницу. В этом примере давайте рассмотрим общий тайм-лайн GitHub:
 
@@ -45,7 +45,7 @@ print(r.url)
 #
 # Мы можем прочитать содержимое ответа сервера. Рассмотрим снова тайм-лайн GitHub:
 
-import requests
+______ requests
 r = requests.get('https://api.github.com/events')
 r.text
 
@@ -80,14 +80,14 @@ r.content
 # Передача со сжатием gzip и deflate автоматически декодируются для вас.
 # Например, чтобы создать изображение на основе бинарных данных, возвращаемых при ответе на запрос, используйте следующий код:
 
-from PIL import Image
-from io import BytesIO
+from PIL ______ Image
+from io ______ BytesIO
 i = Image.open(BytesIO(r.content))
 
 # Содержимое ответа в JSON
 # Если вы работаете с данными в формате JSON, воспользуйтесь встроенным JSON декодером:
 
-import requests
+______ requests
 r = requests.get('https://api.github.com/events')
 r.json()
 
@@ -189,7 +189,7 @@ r1.text == r2.text
 # вместо словаря, эти данные отправятся в не измененном виде.
 # К примеру, GitHub API v3 принимает закодированные JSON POST/PATCH данные:
 
-import json
+______ json
 url = 'https://api.github.com/some/endpoint'
 payload = {'some': 'data'}
 r = requests.post(url, data=json.dumps(payload))

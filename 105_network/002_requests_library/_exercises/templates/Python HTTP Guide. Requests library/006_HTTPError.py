@@ -1,4 +1,4 @@
-import requests
+______ requests
 try:
     response = requests.get('https://httpbin.org/status/500')
     response.raise_for_status()
