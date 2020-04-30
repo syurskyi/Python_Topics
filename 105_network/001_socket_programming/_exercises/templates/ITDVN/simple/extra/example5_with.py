@@ -3,7 +3,7 @@ ______  ?
 
 # __enter__ / __exit__
 # sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-with ?.?(?.A_I.., ?.SOCK_DGRAM) as sock:
+with ?.?(?.A_I.., ?.S_D..) as sock:
     print('8888 is bind')
     ?.b..(('127.0.0.1', 8888))
 

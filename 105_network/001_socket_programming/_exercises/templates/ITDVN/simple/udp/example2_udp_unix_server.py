@@ -3,7 +3,7 @@ ______  os
 ______  ?
 
 unix_sock_name _ 'unix.sock'
-sock _ ?.?(?.AF_UNIX, ?.SOCK_DGRAM)
+sock _ ?.?(?.AF_UNIX, ?.S_D..)
 
 if os.path.exists(unix_sock_name):
     os.remove(unix_sock_name)

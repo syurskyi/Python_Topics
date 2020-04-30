@@ -1,7 +1,7 @@
 # example 1 (UDP server socket)
 ______  ?
 
-sock _ ?.?(?.A_I.., ?.SOCK_DGRAM)
+sock _ ?.?(?.A_I.., ?.S_D..)
 ?.b..(('127.0.0.1', 8888))
 
 w__ T..:
