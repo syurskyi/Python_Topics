@@ -5,7 +5,7 @@ _____ ?
 try:
     output _ ?.check_output(
         'echo to stdout; echo to stderr 1>&2',
-        shell_True,
+        s.._T..,
         stderr_?.STDOUT,
     )
 except ?.CalledProcessError as err:

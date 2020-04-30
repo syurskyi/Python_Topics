@@ -5,7 +5,7 @@ _____ sys
 sys.stderr.write('repeater.py: starting\n')
 sys.stderr.flush()
 
-while True:
+while T..:
     next_line _ sys.stdin.readline()
     sys.stderr.flush()
     if not next_line:

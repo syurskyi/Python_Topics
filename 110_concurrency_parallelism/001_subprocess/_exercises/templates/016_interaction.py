@@ -6,14 +6,14 @@ _____ ?
 print('One line at a time:')
 proc _ ?.Popen(
     'python3 repeater.py',
-    shell_True,
+    s.._T..,
     stdin_?.PIPE,
     stdout_?.PIPE,
 )
 stdin _ io.TextIOWrapper(
     proc.stdin,
     encoding_'utf-8',
-    line_buffering_True,  # send data on newline
+    line_buffering_T..,  # send data on newline
 )
 stdout _ io.TextIOWrapper(
     proc.stdout,
@@ -31,7 +31,7 @@ print()
 print('All output at once:')
 proc _ ?.Popen(
     'python3 repeater.py',
-    shell_True,
+    s.._T..,
     stdin_?.PIPE,
     stdout_?.PIPE,
 )

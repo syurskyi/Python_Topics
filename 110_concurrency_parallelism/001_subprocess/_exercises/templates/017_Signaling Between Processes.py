@@ -12,7 +12,7 @@ received _ False
 def signal_usr1(signum, frame):
     "Callback invoked when a signal is received"
     global received
-    received _ True
+    received _ T..
     print('CHILD {:>6}: Received USR1'.format(pid))
     sys.stdout.flush()
 

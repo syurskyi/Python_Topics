@@ -5,8 +5,8 @@ _____ ?
 try:
     completed _ ?.r..(
         'echo to stdout; echo to stderr 1>&2; exit 1',
-        check_True,
-        shell_True,
+        check_T..,
+        s.._T..,
         stdout_?.PIPE,
     )
 except ?.CalledProcessError as err:

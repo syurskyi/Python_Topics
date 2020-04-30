@@ -3,7 +3,7 @@
 _____ ?
 
 try:
-    ?.r..(['false'], check_True)
+    ?.r..(['false'], check_T..)
 except ?.CalledProcessError as err:
     print('ERROR:', err)
 

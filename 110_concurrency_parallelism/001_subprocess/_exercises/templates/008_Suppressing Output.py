@@ -5,7 +5,7 @@ _____ ?
 try:
     completed _ ?.r..(
         'echo to stdout; echo to stderr 1>&2; exit 1',
-        shell_True,
+        s.._T..,
         stdout_?.DEVNULL,
         stderr_?.DEVNULL,
     )

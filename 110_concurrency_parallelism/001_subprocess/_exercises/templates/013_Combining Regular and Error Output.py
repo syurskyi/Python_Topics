@@ -5,7 +5,7 @@ _____ ?
 print('popen4:')
 proc _ ?.Popen(
     'cat -; echo "to stderr" 1>&2',
-    shell_True,
+    s.._T..,
     stdin_?.PIPE,
     stdout_?.PIPE,
     stderr_?.STDOUT,
