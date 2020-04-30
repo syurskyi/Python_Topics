@@ -9,49 +9,49 @@ ______ bottlenose
 ____ xml.dom ______ minidom __ xml
 
 ___
-    ____ local_settings ______ amazon_account
-______ ImportError:
+    ____ l_s.. ______ a_a..
+______ I..
     p..
 
-ACCESS_KEY _ amazon_account['access_key'] 
-SECRET_KEY _ amazon_account['secret_key'] 
-AFFILIATE_ID _ amazon_account['affiliate_id'] 
+ACCESS_KEY _ a_a.. 'access_key'
+SECRET_KEY _ a_a.. 'secret_key'
+AFFILIATE_ID _ a_a.. 'affiliate_id']
 
 
-___ search_for_books(tag, index):
+___ search_for_books tag index
     """Search Amazon for Books """
-    amazon _ bottlenose.Amazon(ACCESS_KEY, SECRET_KEY, AFFILIATE_ID)
-    results _ amazon.ItemSearch(
-                SearchIndex _ index,
+    amazon _ ?.A.. A.. S.. A..
+    results _ ?.IS..
+                SI.. _ i..
                 Sort _ "relevancerank",
                 Keywords _ tag
-                )
-    parsed_result _ xml.parseString(results)
 
-    all_items _ []
-    attrs _ ['Title','Author', 'URL']
+    parsed_result _ ___.pS.. ?
 
-    ___ item __ parsed_result.getElementsByTagName('Item'):
-        parse_item _ {}
+    all_items _ # list
+    attrs _ 'Title','Author', 'URL'
 
-        ___ attr __ attrs:
-            parse_item[attr] _ ""
+    ___ item __ p_r_.gEBTN.. 'Item'
+        parse_item _  # dict
+
+        ___ attr __ a..
+            ?|? _ ""
             ___
-                parse_item[attr] _ item.getElementsByTagName(attr)[0].childNodes[0].data
-            ______:
+                p_i.. ? _ i__.gEBTN.. ? 0 .cN.. 0 .d..
+            ______
                 p..
-        all_items.ap..(parse_item)
+        all_i__.ap.. ?
     r_ all_items
 
 __ _______ __ ______
-    parser _ ?.AP..(d.._'Search info from Amazon')
-    ?.a_a..('--tag', a.._"store", d.._"tag", d.._'Python')
-    ?.a_a..('--index', a.._"store", d.._"index", d.._'Books')
+    parser _ ?.AP.. d.._'Search info from Amazon'
+    ?.a_a.. '--tag', a.._"store", d.._"tag", d.._'Python'
+    ?.a_a.. '--index', a.._"store", d.._"index", d.._'Books'
     # parse arguments
     given_args _ ?.p_a..
-    books _ search_for_books(?.tag, ?.index)
+    books _ ? ?.t.. ?.i..
     
-    ___ book __ books:
-        ___ k,v __ book.iteritems
-            print ("@: @" (k,v))
+    ___ book __ ?
+        ___ k v __ ?.i_i..
+            print ("@: @"  ? ?
         print ("-" * 80)

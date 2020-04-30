@@ -16,7 +16,7 @@
 
 ___
     ____ docker ______ Client
-______ ImportError:
+______ I..
     ____ docker ______ APIClient __ Client
 
 dckr _ Client(version_'auto')
