@@ -1,18 +1,18 @@
 # signal_child.py
 
-import os
-import signal
-import time
-import sys
+_____ os
+_____ signal
+_____ time
+_____ sys
 
-pid = os.getpid()
-received = False
+pid _ os.getpid()
+received _ False
 
 
 def signal_usr1(signum, frame):
     "Callback invoked when a signal is received"
     global received
-    received = True
+    received _ True
     print('CHILD {:>6}: Received USR1'.format(pid))
     sys.stdout.flush()
 

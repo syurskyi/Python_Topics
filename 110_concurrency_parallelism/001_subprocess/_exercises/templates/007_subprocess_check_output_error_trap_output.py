@@ -1,14 +1,14 @@
 # subprocess_check_output_error_trap_output.py
 
-import subprocess
+_____ ?
 
 try:
-    output = subprocess.check_output(
+    output _ ?.check_output(
         'echo to stdout; echo to stderr 1>&2',
-        shell=True,
-        stderr=subprocess.STDOUT,
+        shell_True,
+        stderr_?.STDOUT,
     )
-except subprocess.CalledProcessError as err:
+except ?.CalledProcessError as err:
     print('ERROR:', err)
 else:
     print('Have {} bytes in output: {!r}'.format(

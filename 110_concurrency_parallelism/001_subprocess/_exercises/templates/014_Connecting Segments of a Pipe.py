@@ -1,25 +1,25 @@
 # subprocess_pipes.py
 
-import subprocess
+_____ ?
 
-cat = subprocess.Popen(
+cat _ ?.Popen(
     ['cat', 'index.rst'],
-    stdout=subprocess.PIPE,
+    stdout_?.PIPE,
 )
 
-grep = subprocess.Popen(
+grep _ ?.Popen(
     ['grep', '.. literalinclude::'],
-    stdin=cat.stdout,
-    stdout=subprocess.PIPE,
+    stdin_cat.stdout,
+    stdout_?.PIPE,
 )
 
-cut = subprocess.Popen(
+cut _ ?.Popen(
     ['cut', '-f', '3', '-d:'],
-    stdin=grep.stdout,
-    stdout=subprocess.PIPE,
+    stdin_grep.stdout,
+    stdout_?.PIPE,
 )
 
-end_of_pipe = cut.stdout
+end_of_pipe _ cut.stdout
 
 print('Included files:')
 for line in end_of_pipe:

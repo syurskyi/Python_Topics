@@ -1,17 +1,17 @@
 # subprocess_popen3.py
 
-import subprocess
+_____ ?
 
 print('popen3:')
-proc = subprocess.Popen(
+proc _ ?.Popen(
     'cat -; echo "to stderr" 1>&2',
-    shell=True,
-    stdin=subprocess.PIPE,
-    stdout=subprocess.PIPE,
-    stderr=subprocess.PIPE,
+    shell_True,
+    stdin_?.PIPE,
+    stdout_?.PIPE,
+    stderr_?.PIPE,
 )
-msg = 'through stdin to stdout'.encode('utf-8')
-stdout_value, stderr_value = proc.communicate(msg)
+msg _ 'through stdin to stdout'.encode('utf-8')
+stdout_value, stderr_value _ proc.communicate(msg)
 print('pass through:', repr(stdout_value.decode('utf-8')))
 print('stderr      :', repr(stderr_value.decode('utf-8')))
 

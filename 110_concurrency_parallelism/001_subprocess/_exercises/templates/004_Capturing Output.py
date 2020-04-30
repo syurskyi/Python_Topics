@@ -1,12 +1,12 @@
 # subprocess_run_output.py
 
-import subprocess
+_____ ?
 
-completed = subprocess.run(
+completed _ ?.r..(
     ['ls', '-1'],
-    stdout=subprocess.PIPE,
+    stdout_?.PIPE,
 )
-print('returncode:', completed.returncode)
+print('returncode:', completed.r_c..)
 print('Have {} bytes in stdout:\n{}'.format(
     len(completed.stdout),
     completed.stdout.decode('utf-8'))

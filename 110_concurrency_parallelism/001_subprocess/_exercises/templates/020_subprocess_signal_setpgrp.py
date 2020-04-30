@@ -1,12 +1,12 @@
 
 # subprocess_signal_setpgrp.py
 
-import os
-import signal
-import subprocess
-import tempfile
-import time
-import sys
+_____ os
+_____ signal
+_____ ?
+_____ tempfile
+_____ time
+_____ sys
 
 
 def show_setting_prgrp():
@@ -16,18 +16,18 @@ def show_setting_prgrp():
     sys.stdout.flush()
 
 
-script = '''#!/bin/sh
+script _ '''#!/bin/sh
 echo "Shell script in process $$"
 set -x
 python3 signal_child.py
 '''
-script_file = tempfile.NamedTemporaryFile('wt')
+script_file _ tempfile.NamedTemporaryFile('wt')
 script_file.write(script)
 script_file.flush()
 
-proc = subprocess.Popen(
+proc _ ?.Popen(
     ['sh', script_file.name],
-    preexec_fn=show_setting_prgrp,
+    preexec_fn_show_setting_prgrp,
 )
 print('PARENT      : Pausing before signaling {}...'.format(
     proc.pid))

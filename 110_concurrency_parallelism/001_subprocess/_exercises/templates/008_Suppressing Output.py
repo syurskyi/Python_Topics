@@ -1,18 +1,18 @@
 # subprocess_run_output_error_suppress.py
 
-import subprocess
+_____ ?
 
 try:
-    completed = subprocess.run(
+    completed _ ?.r..(
         'echo to stdout; echo to stderr 1>&2; exit 1',
-        shell=True,
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.DEVNULL,
+        shell_True,
+        stdout_?.DEVNULL,
+        stderr_?.DEVNULL,
     )
-except subprocess.CalledProcessError as err:
+except ?.CalledProcessError as err:
     print('ERROR:', err)
 else:
-    print('returncode:', completed.returncode)
+    print('returncode:', completed.r_c..)
     print('stdout is {!r}'.format(completed.stdout))
     print('stderr is {!r}'.format(completed.stderr))
 

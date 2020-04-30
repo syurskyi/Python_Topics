@@ -1,7 +1,7 @@
-# subprocess_os_system.py
-
-import subprocess
-
-completed = subprocess.run(['ls', '-1'])
-print('returncode:', completed.returncode)
-
+# # subprocess_os_system.py
+#
+# _____ ?
+#
+# completed _ ?.r.. 'ls', '-1'
+# print('returncode:' ?.r_c..)
+#

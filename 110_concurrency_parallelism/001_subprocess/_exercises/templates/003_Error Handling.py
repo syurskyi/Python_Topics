@@ -1,10 +1,10 @@
 # subprocess_run_check.py
 
-import subprocess
+_____ ?
 
 try:
-    subprocess.run(['false'], check=True)
-except subprocess.CalledProcessError as err:
+    ?.r..(['false'], check_True)
+except ?.CalledProcessError as err:
     print('ERROR:', err)
 
 # $ python3 subprocess_run_check.py

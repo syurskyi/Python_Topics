@@ -1,9 +1,9 @@
 # subprocess_shell_variables.py
 
-import subprocess
+_____ ?
 
-completed = subprocess.run('echo $HOME', shell=True)
-print('returncode:', completed.returncode)
+completed _ ?.r..('echo $HOME', shell_True)
+print('returncode:', completed.r_c..)
 
 # $ python3 subprocess_shell_variables.py
 #

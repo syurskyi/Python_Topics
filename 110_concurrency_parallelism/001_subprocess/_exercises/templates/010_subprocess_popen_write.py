@@ -1,11 +1,11 @@
 # subprocess_popen_write.py
 
-import subprocess
+_____ ?
 
 print('write:')
-proc = subprocess.Popen(
+proc _ ?.Popen(
     ['cat', '-'],
-    stdin=subprocess.PIPE,
+    stdin_?.PIPE,
 )
 proc.communicate('stdin: to stdin\n'.encode('utf-8'))
 

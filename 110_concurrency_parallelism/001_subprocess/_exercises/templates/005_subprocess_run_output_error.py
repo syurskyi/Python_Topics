@@ -1,18 +1,18 @@
 # subprocess_run_output_error.py
 
-import subprocess
+_____ ?
 
 try:
-    completed = subprocess.run(
+    completed _ ?.r..(
         'echo to stdout; echo to stderr 1>&2; exit 1',
-        check=True,
-        shell=True,
-        stdout=subprocess.PIPE,
+        check_True,
+        shell_True,
+        stdout_?.PIPE,
     )
-except subprocess.CalledProcessError as err:
+except ?.CalledProcessError as err:
     print('ERROR:', err)
 else:
-    print('returncode:', completed.returncode)
+    print('returncode:', completed.r_c..)
     print('Have {} bytes in stdout: {!r}'.format(
         len(completed.stdout),
         completed.stdout.decode('utf-8'))

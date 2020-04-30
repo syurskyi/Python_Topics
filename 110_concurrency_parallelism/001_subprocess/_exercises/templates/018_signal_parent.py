@@ -1,12 +1,12 @@
 # signal_parent.py
 
-import os
-import signal
-import subprocess
-import time
-import sys
+_____ os
+_____ signal
+_____ ?
+_____ time
+_____ sys
 
-proc = subprocess.Popen(['python3', 'signal_child.py'])
+proc _ ?.Popen(['python3', 'signal_child.py'])
 print('PARENT      : Pausing before sending signal...')
 sys.stdout.flush()
 time.sleep(1)

@@ -1,12 +1,12 @@
 # repeater.py
 
-import sys
+_____ sys
 
 sys.stderr.write('repeater.py: starting\n')
 sys.stderr.flush()
 
 while True:
-    next_line = sys.stdin.readline()
+    next_line _ sys.stdin.readline()
     sys.stderr.flush()
     if not next_line:
         break
