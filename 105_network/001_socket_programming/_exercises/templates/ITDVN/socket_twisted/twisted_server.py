@@ -1,34 +1,34 @@
-from twisted.internet ______  reactor, protocol, endpoints
-from twisted.internet.protocol ______  connectionDone
+____ tw__.internet ______  reactor, protocol, endpoints
+____ tw__.internet.protocol ______  connectionDone
 
 
-class ProcessClient(protocol.Protocol):
+c_ ProcessClient(protocol.Protocol):
 
-    def __init__(self, server):
+    ___ - (self, server):
         self.server _ server
 
-    def connectionMade(self):
+    ___ connectionMade
         print('Client connected...')
         self.server.concurrentClientCount +_ 1
 
-    def connectionLost(self, reason_connectionDone):
+    ___ connectionLost(self, reason_connectionDone):
         self.server.concurrentClientCount -_ 1
 
-    def dataReceived(self, data: str):
+    ___ dataReceived(self, data: str):
         data _ data.strip()
         print('Data: ', data)
         self.transport.write(data)
 
 
-class Server(protocol.Factory):
+c_ Server(protocol.Factory):
     commands _ ('init', 'send', 'get', 'close')
 
-    def __init__(self):
+    ___ -
         self.concurrentClientCount _ 0
         self.database _ {}
 
-    def buildProtocol(self, addr):
-        return ProcessClient(self)
+    ___ buildProtocol(self, addr):
+        r_ ProcessClient(self)
 
 
 server _ endpoints.serverFromString(reactor, 'tcp:8888')
