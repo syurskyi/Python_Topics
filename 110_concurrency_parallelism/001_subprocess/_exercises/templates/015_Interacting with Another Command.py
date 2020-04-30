@@ -6,7 +6,7 @@ sys.s_e...write('repeater.py: starting\n')
 sys.s_e...flush()
 
 while T..:
-    next_line _ sys.stdin.readline()
+    next_line _ sys.s_i..readline()
     sys.s_e...flush()
     if not next_line:
         break

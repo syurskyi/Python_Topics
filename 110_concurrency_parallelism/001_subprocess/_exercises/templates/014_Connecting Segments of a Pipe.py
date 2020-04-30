@@ -9,13 +9,13 @@ cat _ ?.P..(
 
 grep _ ?.P..(
     ['grep', '.. literalinclude::'],
-    stdin_cat.s_o_,
+    s_i._cat.s_o_,
     s_o__?.P..,
 )
 
 cut _ ?.P..(
     ['cut', '-f', '3', '-d:'],
-    stdin_grep.s_o_,
+    s_i._grep.s_o_,
     s_o__?.P..,
 )
 

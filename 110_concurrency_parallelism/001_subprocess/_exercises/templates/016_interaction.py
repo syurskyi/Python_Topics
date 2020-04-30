@@ -7,11 +7,11 @@ print('One line at a time:')
 proc _ ?.P..(
     'python3 repeater.py',
     s.._T..,
-    stdin_?.P..,
+    s_i._?.P..,
     s_o__?.P..,
 )
-stdin _ io.TextIOWrapper(
-    proc.stdin,
+s_i. _ io.TextIOWrapper(
+    proc.s_i.,
     encoding_'utf-8',
     line_buffering_T..,  # send data on newline
 )
@@ -21,7 +21,7 @@ s_o_ _ io.TextIOWrapper(
 )
 for i in range(5):
     line _ '@\n'.f..(i)
-    stdin.write(line)
+    s_i..write(line)
     output _ s_o_.readline()
     print(output.rstrip())
 remainder _ proc.c..()[0].d..('utf-8')
@@ -32,17 +32,17 @@ print('All output at once:')
 proc _ ?.P..(
     'python3 repeater.py',
     s.._T..,
-    stdin_?.P..,
+    s_i._?.P..,
     s_o__?.P..,
 )
-stdin _ io.TextIOWrapper(
-    proc.stdin,
+s_i. _ io.TextIOWrapper(
+    proc.s_i.,
     encoding_'utf-8',
 )
 for i in range(5):
     line _ '@\n'.f..(i)
-    stdin.write(line)
-stdin.flush()
+    s_i..write(line)
+s_i..flush()
 
 output _ proc.c..()[0].d..('utf-8')
 print(output)
