@@ -8,7 +8,7 @@ proc _ ?.Popen(
     s.._T..,
     stdin_?.P..,
     s_o__?.P..,
-    s_e.._?.STDOUT,
+    s_e.._?.S_O..,
 )
 msg _ 'through stdin to stdout\n'.encode('utf-8')
 s_o__value, s_e.._value _ proc.communicate(msg)
