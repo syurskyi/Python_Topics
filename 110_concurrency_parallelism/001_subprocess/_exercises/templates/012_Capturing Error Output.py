@@ -12,8 +12,8 @@
 # )
 # msg _ 'through s_i. to stdout'.e.. 'utf-8'
 # s_o__value s_e.._v.. _ ?.c.. ?
-# print('pass through:', repr(s_o._v...d.. 'utf-8'
-# print('s_e..      :', repr(s_e.._v...d.. 'utf-8'
+# print('pass through:', re..(s_o._v...d.. 'utf-8'
+# print('s_e..      :', re..(s_e.._v...d.. 'utf-8'
 #
 # # $ python3 -u subprocess_popen3.py
 # #
