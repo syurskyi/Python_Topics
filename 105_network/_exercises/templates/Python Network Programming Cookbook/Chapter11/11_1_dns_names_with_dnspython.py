@@ -5,22 +5,22 @@
 #
 #
 # ______ a_p..
-# ______ dns.name
+# ______ ?.n..
 #
-# ___ main(site1, site2):
-#     _site1 _ dns.name.from_text(site1)
-#     _site2 _ dns.name.from_text(site2)
-#     print("site1 is subdomain of site2: ", _site1.is_subdomain(_site2))
-#     print("site1 is superdomain of site2: ", _site1.is_superdomain(_site2))
-#     print("site1 labels: ", _site1.labels)
-#     print("site2 labels: ", _site2.labels)
+# ___ main site1 site2
+#     _site1 _ ?.n__.f_t_ ?
+#     _site2 _ ?.n__.f_t_ ?
+#     print("site1 is subdomain of site2: "  _1.i_s.. _2
+#     print("site1 is superdomain of site2: "  _1.i_s.. _2
+#     print("site1 labels: "  _1.l..
+#     print("site2 labels: "  _2.l..
 #
 # __ _______ __ ______
-#     parser _ ?.AP..(d.._'DNS Python')
-#     ?.a_a..('--site1', a.._"store", d.._"site1",  d.._'www.dnspython.org')
-#     ?.a_a..('--site2', a.._"store", d.._"site2",  d.._'dnspython.org')
+#     parser _ ?.AP.. d.._'DNS Python'
+#     ?.a_a.. '--site1'  a.._"store"  d.._"site1"   d.._'www.dnspython.org')
+#     ?.a_a.. '--site2'  a.._"store"  d.._"site2"   d.._'dnspython.org')
 #     given_args _ ?.p_a..
-#     site1 _ ?.site1
-#     site2 _ ?.site2
-#     main (site1, site2)
+#     site1 _ ?._1
+#     site2 _ ?._2
+#     ? ?
 #
