@@ -6,7 +6,7 @@ _____ ?
 _____ time
 _____ sys
 
-proc _ ?.Popen(['python3', 'signal_child.py'])
+proc _ ?.P..(['python3', 'signal_child.py'])
 print('PARENT      : Pausing before sending signal...')
 sys.s_o_.flush()
 time.sleep(1)

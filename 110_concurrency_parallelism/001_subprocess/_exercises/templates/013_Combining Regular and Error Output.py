@@ -3,7 +3,7 @@
 _____ ?
 
 print('popen4:')
-proc _ ?.Popen(
+proc _ ?.P..(
     'cat -; echo "to s_e.." 1>&2',
     s.._T..,
     stdin_?.P..,
@@ -11,7 +11,7 @@ proc _ ?.Popen(
     s_e.._?.S_O..,
 )
 msg _ 'through stdin to stdout\n'.encode('utf-8')
-s_o__value, s_e.._value _ proc.communicate(msg)
+s_o__value, s_e.._value _ proc.c..(msg)
 print('combined output:', repr(s_o__value.d..('utf-8')))
 print('s_e.. value   :', repr(s_e.._value))
 

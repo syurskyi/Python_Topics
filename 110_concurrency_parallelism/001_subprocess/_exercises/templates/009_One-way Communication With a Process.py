@@ -3,12 +3,12 @@
 _____ ?
 
 print('read:')
-proc _ ?.Popen(
-    ['echo', '"to stdout"'],
-    s_o__?.P..,
-)
-s_o__value _ proc.communicate()[0].d..('utf-8')
-print('stdout:', repr(s_o__value))
+proc _ ?.P..
+    'echo' '"to stdout"'
+    s_o__?.P..
+
+s_o__value _ ?.c.. 0.d.. 'utf-8'
+print('stdout:', re.. s_o__v..
 
 # $ python3 subprocess_popen_read.py
 #

@@ -3,11 +3,11 @@
 _____ ?
 
 print('write:')
-proc _ ?.Popen(
+proc _ ?.P..(
     ['cat', '-'],
     stdin_?.P..,
 )
-proc.communicate('stdin: to stdin\n'.encode('utf-8'))
+proc.c..('stdin: to stdin\n'.encode('utf-8'))
 
 # $ python3 -u subprocess_popen_write.py
 #

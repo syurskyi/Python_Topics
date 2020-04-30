@@ -4,7 +4,7 @@ _____ io
 _____ ?
 
 print('One line at a time:')
-proc _ ?.Popen(
+proc _ ?.P..(
     'python3 repeater.py',
     s.._T..,
     stdin_?.P..,
@@ -24,12 +24,12 @@ for i in range(5):
     stdin.write(line)
     output _ s_o_.readline()
     print(output.rstrip())
-remainder _ proc.communicate()[0].d..('utf-8')
+remainder _ proc.c..()[0].d..('utf-8')
 print(remainder)
 
 print()
 print('All output at once:')
-proc _ ?.Popen(
+proc _ ?.P..(
     'python3 repeater.py',
     s.._T..,
     stdin_?.P..,
@@ -44,7 +44,7 @@ for i in range(5):
     stdin.write(line)
 stdin.flush()
 
-output _ proc.communicate()[0].d..('utf-8')
+output _ proc.c..()[0].d..('utf-8')
 print(output)
 
 # $ python3 -u interaction.py

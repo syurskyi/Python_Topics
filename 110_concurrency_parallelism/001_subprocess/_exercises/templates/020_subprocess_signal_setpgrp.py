@@ -25,7 +25,7 @@ script_file _ tempfile.NamedTemporaryFile('wt')
 script_file.write(script)
 script_file.flush()
 
-proc _ ?.Popen(
+proc _ ?.P..(
     ['sh', script_file.name],
     preexec_fn_show_setting_prgrp,
 )

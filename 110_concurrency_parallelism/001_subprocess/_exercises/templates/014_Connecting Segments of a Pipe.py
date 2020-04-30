@@ -2,18 +2,18 @@
 
 _____ ?
 
-cat _ ?.Popen(
+cat _ ?.P..(
     ['cat', 'index.rst'],
     s_o__?.P..,
 )
 
-grep _ ?.Popen(
+grep _ ?.P..(
     ['grep', '.. literalinclude::'],
     stdin_cat.s_o_,
     s_o__?.P..,
 )
 
-cut _ ?.Popen(
+cut _ ?.P..(
     ['cut', '-f', '3', '-d:'],
     stdin_grep.s_o_,
     s_o__?.P..,

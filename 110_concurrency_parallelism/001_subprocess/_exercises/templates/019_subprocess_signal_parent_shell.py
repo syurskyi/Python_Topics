@@ -16,7 +16,7 @@ script_file _ tempfile.NamedTemporaryFile('wt')
 script_file.write(script)
 script_file.flush()
 
-proc _ ?.Popen(['sh', script_file.name])
+proc _ ?.P..(['sh', script_file.name])
 print('PARENT      : Pausing before signaling @...'.f..(
     proc.pid))
 sys.s_o_.flush()
