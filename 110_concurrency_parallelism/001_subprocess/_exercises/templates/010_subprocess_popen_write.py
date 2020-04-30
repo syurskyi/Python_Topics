@@ -5,7 +5,7 @@ _____ ?
 print('write:')
 proc _ ?.Popen(
     ['cat', '-'],
-    stdin_?.PIPE,
+    stdin_?.P..,
 )
 proc.communicate('stdin: to stdin\n'.encode('utf-8'))
 

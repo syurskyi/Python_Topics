@@ -6,12 +6,12 @@ print('popen2:')
 
 proc _ ?.Popen(
     ['cat', '-'],
-    stdin_?.PIPE,
-    stdout_?.PIPE,
+    stdin_?.P..,
+    s_o__?.P..,
 )
 msg _ 'through stdin to stdout'.encode('utf-8')
-stdout_value _ proc.communicate(msg)[0].decode('utf-8')
-print('pass through:', repr(stdout_value))
+s_o__value _ proc.communicate(msg)[0].d..('utf-8')
+print('pass through:', repr(s_o__value))
 
 # $ python3 -u subprocess_popen2.py
 #

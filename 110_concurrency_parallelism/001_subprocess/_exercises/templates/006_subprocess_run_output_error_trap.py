@@ -6,20 +6,20 @@ ___
     completed _ ?.r..(
         'echo to stdout; echo to stderr 1>&2; exit 1',
         s.._T..,
-        stdout_?.PIPE,
-        stderr_?.PIPE,
+        s_o__?.P..,
+        stderr_?.P..,
     )
 _____ ?.C.. __ err:
     print('ERROR:', err)
 else:
     print('returncode:', completed.r_c..)
-    print('Have {} bytes in stdout: {!r}'.format(
-        len(completed.stdout),
-        completed.stdout.decode('utf-8'))
+    print('Have @ bytes in stdout: {!r}'.f..(
+        le.(completed.s_o_),
+        completed.s_o_.d..('utf-8'))
     )
-    print('Have {} bytes in stderr: {!r}'.format(
-        len(completed.stderr),
-        completed.stderr.decode('utf-8'))
+    print('Have @ bytes in stderr: {!r}'.f..(
+        le.(completed.stderr),
+        completed.stderr.d..('utf-8'))
     )
 
 # $ python3 subprocess_run_output_error_trap.py

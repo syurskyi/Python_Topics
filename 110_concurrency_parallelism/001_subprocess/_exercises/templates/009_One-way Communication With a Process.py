@@ -5,10 +5,10 @@ _____ ?
 print('read:')
 proc _ ?.Popen(
     ['echo', '"to stdout"'],
-    stdout_?.PIPE,
+    s_o__?.P..,
 )
-stdout_value _ proc.communicate()[0].decode('utf-8')
-print('stdout:', repr(stdout_value))
+s_o__value _ proc.communicate()[0].d..('utf-8')
+print('stdout:', repr(s_o__value))
 
 # $ python3 subprocess_popen_read.py
 #

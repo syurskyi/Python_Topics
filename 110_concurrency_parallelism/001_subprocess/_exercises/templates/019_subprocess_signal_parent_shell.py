@@ -17,12 +17,12 @@ script_file.write(script)
 script_file.flush()
 
 proc _ ?.Popen(['sh', script_file.name])
-print('PARENT      : Pausing before signaling {}...'.format(
+print('PARENT      : Pausing before signaling @...'.f..(
     proc.pid))
-sys.stdout.flush()
+sys.s_o_.flush()
 time.sleep(1)
-print('PARENT      : Signaling child {}'.format(proc.pid))
-sys.stdout.flush()
+print('PARENT      : Signaling child @'.f..(proc.pid))
+sys.s_o_.flush()
 os.kill(proc.pid, signal.SIGUSR1)
 time.sleep(3)
 

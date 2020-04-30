@@ -8,10 +8,10 @@ _____ sys
 
 proc _ ?.Popen(['python3', 'signal_child.py'])
 print('PARENT      : Pausing before sending signal...')
-sys.stdout.flush()
+sys.s_o_.flush()
 time.sleep(1)
 print('PARENT      : Signaling child')
-sys.stdout.flush()
+sys.s_o_.flush()
 os.kill(proc.pid, signal.SIGUSR1)
 
 # $ python3 signal_parent.py

@@ -10,10 +10,10 @@ _____ sys
 
 
 def show_setting_prgrp():
-    print('Calling os.setpgrp() from {}'.format(os.getpid()))
+    print('Calling os.setpgrp() from @'.f..(os.getpid()))
     os.setpgrp()
-    print('Process group is now {}'.format(os.getpgrp()))
-    sys.stdout.flush()
+    print('Process group is now @'.f..(os.getpgrp()))
+    sys.s_o_.flush()
 
 
 script _ '''#!/bin/sh
@@ -29,13 +29,13 @@ proc _ ?.Popen(
     ['sh', script_file.name],
     preexec_fn_show_setting_prgrp,
 )
-print('PARENT      : Pausing before signaling {}...'.format(
+print('PARENT      : Pausing before signaling @...'.f..(
     proc.pid))
-sys.stdout.flush()
+sys.s_o_.flush()
 time.sleep(1)
-print('PARENT      : Signaling process group {}'.format(
+print('PARENT      : Signaling process group @'.f..(
     proc.pid))
-sys.stdout.flush()
+sys.s_o_.flush()
 os.killpg(proc.pid, signal.SIGUSR1)
 time.sleep(3)
 

@@ -4,26 +4,26 @@ _____ ?
 
 cat _ ?.Popen(
     ['cat', 'index.rst'],
-    stdout_?.PIPE,
+    s_o__?.P..,
 )
 
 grep _ ?.Popen(
     ['grep', '.. literalinclude::'],
-    stdin_cat.stdout,
-    stdout_?.PIPE,
+    stdin_cat.s_o_,
+    s_o__?.P..,
 )
 
 cut _ ?.Popen(
     ['cut', '-f', '3', '-d:'],
-    stdin_grep.stdout,
-    stdout_?.PIPE,
+    stdin_grep.s_o_,
+    s_o__?.P..,
 )
 
-end_of_pipe _ cut.stdout
+end_of_pipe _ cut.s_o_
 
 print('Included files:')
 for line in end_of_pipe:
-    print(line.decode('utf-8').strip())
+    print(line.d..('utf-8').strip())
 
 # $ cat index.rst | grep ".. literalinclude" | cut -f 3 -d:
 

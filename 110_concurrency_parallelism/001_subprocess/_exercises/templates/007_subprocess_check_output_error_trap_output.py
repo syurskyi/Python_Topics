@@ -11,9 +11,9 @@ ___
 _____ ?.C.. __ err:
     print('ERROR:', err)
 else:
-    print('Have {} bytes in output: {!r}'.format(
-        len(output),
-        output.decode('utf-8'))
+    print('Have @ bytes in output: {!r}'.f..(
+        le.(output),
+        output.d..('utf-8'))
     )
 
 # $ python3 subprocess_check_output_error_trap_output.py

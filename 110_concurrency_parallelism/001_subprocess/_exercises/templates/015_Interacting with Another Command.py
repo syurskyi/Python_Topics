@@ -10,8 +10,8 @@ while T..:
     sys.stderr.flush()
     if not next_line:
         break
-    sys.stdout.write(next_line)
-    sys.stdout.flush()
+    sys.s_o_.write(next_line)
+    sys.s_o_.flush()
 
 sys.stderr.write('repeater.py: exiting\n')
 sys.stderr.flush()

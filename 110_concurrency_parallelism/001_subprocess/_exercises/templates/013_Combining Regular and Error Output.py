@@ -6,13 +6,13 @@ print('popen4:')
 proc _ ?.Popen(
     'cat -; echo "to stderr" 1>&2',
     s.._T..,
-    stdin_?.PIPE,
-    stdout_?.PIPE,
+    stdin_?.P..,
+    s_o__?.P..,
     stderr_?.STDOUT,
 )
 msg _ 'through stdin to stdout\n'.encode('utf-8')
-stdout_value, stderr_value _ proc.communicate(msg)
-print('combined output:', repr(stdout_value.decode('utf-8')))
+s_o__value, stderr_value _ proc.communicate(msg)
+print('combined output:', repr(s_o__value.d..('utf-8')))
 print('stderr value   :', repr(stderr_value))
 
 # $ python3 -u subprocess_popen4.py

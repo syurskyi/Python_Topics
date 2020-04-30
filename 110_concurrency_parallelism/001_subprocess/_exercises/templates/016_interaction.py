@@ -7,24 +7,24 @@ print('One line at a time:')
 proc _ ?.Popen(
     'python3 repeater.py',
     s.._T..,
-    stdin_?.PIPE,
-    stdout_?.PIPE,
+    stdin_?.P..,
+    s_o__?.P..,
 )
 stdin _ io.TextIOWrapper(
     proc.stdin,
     encoding_'utf-8',
     line_buffering_T..,  # send data on newline
 )
-stdout _ io.TextIOWrapper(
-    proc.stdout,
+s_o_ _ io.TextIOWrapper(
+    proc.s_o_,
     encoding_'utf-8',
 )
 for i in range(5):
-    line _ '{}\n'.format(i)
+    line _ '@\n'.f..(i)
     stdin.write(line)
-    output _ stdout.readline()
+    output _ s_o_.readline()
     print(output.rstrip())
-remainder _ proc.communicate()[0].decode('utf-8')
+remainder _ proc.communicate()[0].d..('utf-8')
 print(remainder)
 
 print()
@@ -32,19 +32,19 @@ print('All output at once:')
 proc _ ?.Popen(
     'python3 repeater.py',
     s.._T..,
-    stdin_?.PIPE,
-    stdout_?.PIPE,
+    stdin_?.P..,
+    s_o__?.P..,
 )
 stdin _ io.TextIOWrapper(
     proc.stdin,
     encoding_'utf-8',
 )
 for i in range(5):
-    line _ '{}\n'.format(i)
+    line _ '@\n'.f..(i)
     stdin.write(line)
 stdin.flush()
 
-output _ proc.communicate()[0].decode('utf-8')
+output _ proc.communicate()[0].d..('utf-8')
 print(output)
 
 # $ python3 -u interaction.py

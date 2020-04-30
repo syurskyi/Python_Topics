@@ -6,15 +6,15 @@ ___
     completed _ ?.r..(
         'echo to stdout; echo to stderr 1>&2; exit 1',
         s.._T..,
-        stdout_?.DEVNULL,
+        s_o__?.DEVNULL,
         stderr_?.DEVNULL,
     )
 _____ ?.C.. __ err:
     print('ERROR:', err)
 else:
     print('returncode:', completed.r_c..)
-    print('stdout is {!r}'.format(completed.stdout))
-    print('stderr is {!r}'.format(completed.stderr))
+    print('stdout is {!r}'.f..(completed.s_o_))
+    print('stderr is {!r}'.f..(completed.stderr))
 
 # $ python3 subprocess_run_output_error_suppress.py
 #
