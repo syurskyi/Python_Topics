@@ -11,7 +11,7 @@ ___
     )
 _____ ?.C.. __ err:
     print('ERROR:', err)
-else:
+____
     print('returncode:', completed.r_c..)
     print('Have @ bytes in stdout: {!r}'.f..(
         le.(completed.s_o_),

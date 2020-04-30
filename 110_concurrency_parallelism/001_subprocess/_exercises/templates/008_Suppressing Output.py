@@ -11,7 +11,7 @@ ___
     )
 _____ ?.C.. __ err:
     print('ERROR:', err)
-else:
+____
     print('returncode:', completed.r_c..)
     print('stdout is {!r}'.f..(completed.s_o_))
     print('stderr is {!r}'.f..(completed.stderr))

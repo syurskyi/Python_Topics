@@ -10,7 +10,7 @@ ___
     )
 _____ ?.C.. __ err:
     print('ERROR:', err)
-else:
+____
     print('Have @ bytes in output: {!r}'.f..(
         le.(output),
         output.d..('utf-8'))
