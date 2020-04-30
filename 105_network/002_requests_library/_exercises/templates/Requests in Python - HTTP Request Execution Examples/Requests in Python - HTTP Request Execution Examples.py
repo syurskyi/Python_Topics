@@ -82,17 +82,17 @@ else:
 
 
 ______ r__
-from ?.exceptions ______ HTTPError
+from ?.e__ ______ HTTPError
 
 for url in ['https://api.github.com', 'https://api.github.com/invalid']:
-    try:
+    ___
         response = ?.g..(url)
 
         # если ответ успешен, исключения задействованы не будут
         response.raise_for_status()
-    except HTTPError as http_err:
+    _____ HTTPError as http_err:
         print(f'HTTP error occurred: {http_err}')  # Python 3.6
-    except Exception as err:
+    _____ Exception as err:
         print(f'Other error occurred: {err}')  # Python 3.6
     else:
         print('Success!')
@@ -495,11 +495,11 @@ class TokenAuth(AuthBase):
 # функция вызовет исключение Timeout.
 
 ______ ?
-from ?.exceptions ______ Timeout
+from ?.e__ ______ Timeout
 
-try:
+___
     response = ?.g..('https://api.github.com', timeout=1)
-except Timeout:
+_____ Timeout:
     print('The request timed out')
 else:
     print('The request did not time out')
@@ -555,7 +555,7 @@ print(response.j..())
 
 ______ r__
 from ?.adapters ______ HTTPAdapter
-from ?.exceptions ______ ConnectionError
+from ?.e__ ______ ConnectionError
 
 github_adapter = HTTPAdapter(max_retries=3)
 
@@ -564,8 +564,8 @@ session = ?.Session()
 # использование `github_adapter` для всех запросов, которые начинаются с указанным URL
 session.mount('https://api.github.com', github_adapter)
 
-try:
+___
     session.g..('https://api.github.com')
-except ConnectionError as ce:
+_____ ConnectionError as ce:
     print(ce)
 
