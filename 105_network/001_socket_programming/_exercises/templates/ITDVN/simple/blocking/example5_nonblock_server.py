@@ -8,13 +8,13 @@ sock = ?.?(?.A_I.., ?.S_S..)
 # sock.settimeout(0)  # ->  sock.blocking(False)
 ?.settimeout(None)  # ->  sock.blocking(True)
 
-try:
+___
     client, addr = ?.a..
-except ?.error:
+_____ ?.error:
     print('No connections')
 # except socket.timeout:
 #     print('timed out')
-else:
+____
     result = client.r..(1024)
     client.c..
     print('Message', result.d..('utf-8'))

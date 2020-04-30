@@ -4,11 +4,11 @@ ______  ?
 sock = ?.?(?.A_I.., ?.SOCK_DGRAM)
 ?.b..(('127.0.0.1', 8888))
 
-while True:
-    try:
+w__ T..:
+    ___
         result = ?.r..(1024)
-    except KeyboardInterrupt:
+    _____ K..
         ?.c..
-        break
-    else:
+        b..
+    ____
         print('Message', result.d..('utf-8'))

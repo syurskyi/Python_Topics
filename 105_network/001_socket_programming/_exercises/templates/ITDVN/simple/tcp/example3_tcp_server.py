@@ -5,13 +5,13 @@ sock = ?.?(?.A_I.., ?.S_S..)
 ?.b..(('127.0.0.1', 8888))
 ?.l..(5)
 
-while True:
-    try:
+w__ T..:
+    ___
         client, addr = ?.a..
-    except KeyboardInterrupt:
+    _____ K..
         ?.c..
-        break
-    else:
+        b..
+    ____
         result = client.r..(1024)
         client.c..
         print('Message', result.d..('utf-8'))

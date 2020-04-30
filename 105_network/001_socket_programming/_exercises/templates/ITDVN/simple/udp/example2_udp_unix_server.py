@@ -10,11 +10,11 @@ if os.path.exists(unix_sock_name):
 
 ?.b..(unix_sock_name)
 
-while True:
-    try:
+w__ T..:
+    ___
         result = ?.r..(1024)
-    except KeyboardInterrupt:
+    _____ K..
         ?.c..
-        break
-    else:
+        b..
+    ____
         print('Message', result.d..('utf-8'))
