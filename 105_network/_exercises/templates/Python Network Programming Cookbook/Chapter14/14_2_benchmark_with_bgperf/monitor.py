@@ -17,7 +17,7 @@ ____ gobgp ______ GoBGP
 ______ __
 ____  settings ______ dckr
 ______ yaml
-______ json
+______ j..
 ____ th.. ______ T..
 ______ t__
 
@@ -56,7 +56,7 @@ gobgpd -t yaml -f {1}/{2} -l {3} > {1}/gobgpd.log 2>&1
 
     ___ wait_established neighbor):
         w__ T..:
-            neigh _ json.loads(local('gobgp neighbor {0} -j'.f..(neighbor)).d..('utf-8'))
+            neigh _ ?.loads(local('gobgp neighbor {0} -j'.f..(neighbor)).d..('utf-8'))
             __ neigh['state']['session-state'] __ 'established':
                 r_
             t__.s..(1)
@@ -65,7 +65,7 @@ gobgpd -t yaml -f {1}/{2} -l {3} > {1}/gobgpd.log 2>&1
         ___ stats
             cps _ config['monitor']['check-points'] __ 'check-points' __ config['monitor'] ____ []
             w__ T..:
-                info _ json.loads(local('gobgp neighbor -j').d..('utf-8'))[0]
+                info _ ?.loads(local('gobgp neighbor -j').d..('utf-8'))[0]
                 info['who'] _ name
                 state _ info['state']
                 __ 'adj-table' __ state and 'accepted' __ state['adj-table'] and le.(cps) > 0 and int(cps[0]) __ int(state['adj-table']['accepted']):

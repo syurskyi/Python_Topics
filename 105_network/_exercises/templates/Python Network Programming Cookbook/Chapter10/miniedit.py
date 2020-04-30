@@ -34,7 +34,7 @@ ______ tkFont
 ______ tkFileDialog
 ______ tkSimpleDialog
 ______ re
-______ json
+______ j..
 ____ distutils.version ______ StrictVersion
 ______ __
 ______ ___
@@ -1428,7 +1428,7 @@ c_ MiniEdit( Frame ):
         __ f __ N..:
             r_
         newTopology()
-        loadedTopology _ convertJsonUnicode(json.load(f))
+        loadedTopology _ convertJsonUnicode(?.load(f))
 
         # Load application preferences
         __ 'application' __ loadedTopology:
@@ -1666,7 +1666,7 @@ c_ MiniEdit( Frame ):
 
             ___
                 f _ o..(fileName, 'wb')
-                f.w..(json.d..(savingDictionary, sort_keys_True, indent_4, separators_(',', ': ')))
+                f.w..(?.d..(savingDictionary, sort_keys_True, indent_4, separators_(',', ': ')))
             # pylint: disable=broad-except
             ______ E.. __ er:
                 warn( er, '\n' )
