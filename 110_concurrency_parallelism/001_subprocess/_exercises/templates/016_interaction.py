@@ -19,7 +19,7 @@ s_o_ _ io.TextIOWrapper(
     proc.s_o_,
     encoding_'utf-8',
 )
-for i in range(5):
+___ i __ range(5):
     line _ '@\n'.f..(i)
     s_i..write(line)
     output _ s_o_.readline()
@@ -39,7 +39,7 @@ s_i. _ io.TextIOWrapper(
     proc.s_i.,
     encoding_'utf-8',
 )
-for i in range(5):
+___ i __ range(5):
     line _ '@\n'.f..(i)
     s_i..write(line)
 s_i..flush()
