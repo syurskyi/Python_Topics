@@ -1,6 +1,6 @@
 ______  ?
 
-sock = ?.?(?.A_I.., ?.SOCK_DGRAM)
+sock _ ?.?(?.A_I.., ?.SOCK_DGRAM)
 # 255.255.255.255
 ?.b..(('127.0.0.1', 8888))
 ?.l..(5)
@@ -8,8 +8,8 @@ sock = ?.?(?.A_I.., ?.SOCK_DGRAM)
 ?.setsockopt(?.SOL_SOCKET, ?.SO_REUSEADDR, 1)
 
 
-client, addr = ?.a..
-result = client.r..(1024)
+client, addr _ ?.a..
+result _ client.r..(1024)
 client.c..
 
 print('Message', result.d..('utf-8'))

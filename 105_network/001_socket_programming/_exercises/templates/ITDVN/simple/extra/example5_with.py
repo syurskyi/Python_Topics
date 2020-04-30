@@ -8,5 +8,5 @@ with ?.?(?.A_I.., ?.SOCK_DGRAM) as sock:
     ?.b..(('127.0.0.1', 8888))
 
     w__ T..:
-        result = ?.r..(1024)
+        result _ ?.r..(1024)
         print('Message', result.d..('utf-8'))

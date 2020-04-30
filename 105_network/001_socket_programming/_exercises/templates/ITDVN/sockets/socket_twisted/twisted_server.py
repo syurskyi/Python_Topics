@@ -5,32 +5,32 @@ from twisted.internet.protocol ______  connectionDone
 class ProcessClient(protocol.Protocol):
 
     def __init__(self, server):
-        self.server = server
+        self.server _ server
 
     def connectionMade(self):
         print('Client connected...')
-        self.server.concurrentClientCount += 1
+        self.server.concurrentClientCount +_ 1
 
-    def connectionLost(self, reason=connectionDone):
-        self.server.concurrentClientCount -= 1
+    def connectionLost(self, reason_connectionDone):
+        self.server.concurrentClientCount -_ 1
 
     def dataReceived(self, data: str):
-        data = data.strip()
+        data _ data.strip()
         print('Data: ', data)
         self.transport.write(data)
 
 
 class Server(protocol.Factory):
-    commands = ('init', 'send', 'get', 'close')
+    commands _ ('init', 'send', 'get', 'close')
 
     def __init__(self):
-        self.concurrentClientCount = 0
-        self.database = {}
+        self.concurrentClientCount _ 0
+        self.database _ {}
 
     def buildProtocol(self, addr):
         return ProcessClient(self)
 
 
-server = endpoints.serverFromString(reactor, 'tcp:8888')
+server _ endpoints.serverFromString(reactor, 'tcp:8888')
 server.l..(Server())
 reactor.run()

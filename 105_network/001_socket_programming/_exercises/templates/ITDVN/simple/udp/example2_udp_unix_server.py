@@ -2,8 +2,8 @@
 ______  os
 ______  ?
 
-unix_sock_name = 'unix.sock'
-sock = ?.?(?.AF_UNIX, ?.SOCK_DGRAM)
+unix_sock_name _ 'unix.sock'
+sock _ ?.?(?.AF_UNIX, ?.SOCK_DGRAM)
 
 if os.path.exists(unix_sock_name):
     os.remove(unix_sock_name)
@@ -12,7 +12,7 @@ if os.path.exists(unix_sock_name):
 
 w__ T..:
     ___
-        result = ?.r..(1024)
+        result _ ?.r..(1024)
     _____ K..
         ?.c..
         b..
