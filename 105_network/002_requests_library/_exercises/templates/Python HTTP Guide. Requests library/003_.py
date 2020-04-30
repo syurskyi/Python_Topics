@@ -13,11 +13,11 @@ print(response.read())
 # b'{\n  "authenticated": true, \n  "user": "user"\n}\n'
 
 
-______ requests
-response = requests.get('https://httpbin.org/basic-auth/user/passwd', auth=('user', 'passwd'))
-print(response.content)
+______ r__
+response = ?.g..('https://httpbin.org/basic-auth/user/passwd', auth=('user', 'passwd'))
+print(response.c..)
 # b'{\n  "authenticated": true, \n  "user": "user"\n}\n'
-print(response.json())
+print(response.j..())
 # {'user': 'user', 'authenticated': True}
 
 # А теперь чувствуется разница между pythonic и non-pythonic? Я думаю разница на лицо.

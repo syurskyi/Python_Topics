@@ -1,23 +1,23 @@
 # Импортируйте модуль Requests:
 
-______ requests
+______ r__
 
 # Попробуем получить веб-страницу. В этом примере давайте рассмотрим общий тайм-лайн GitHub:
 
-r = requests.get('https://api.github.com/events')
+r = ?.g..('https://api.github.com/events')
 
 # Мы получили объект Response с именем r. С помощью этого объекта можно получить всю необходимую информацию.
 # Простой API Requests означает, что все формы HTTP запросов- очевидны. Ниже приведен пример того,
 # как вы можете сделать запрос HTTP POST:
 
-r = requests.post('http://httpbin.org/post', data={'key': 'value'})
+r = ?.post('http://httpbin.org/post', data={'key': 'value'})
 
 # Другие типы HTTP запросов такие как : PUT, DELETE, HEAD и OPTIONS так же очень легко выполнить:
 
-r = requests.put('http://httpbin.org/put', data={'key': 'value'})
-r = requests.delete('http://httpbin.org/delete')
-r = requests.head('http://httpbin.org/get')
-r = requests.options('http://httpbin.org/get')
+r = ?.put('http://httpbin.org/put', data={'key': 'value'})
+r = ?.delete('http://httpbin.org/delete')
+r = ?.head('http://httpbin.org/get')
+r = ?.options('http://httpbin.org/get')
 
 # Передача параметров в URL
 # Часто вам может понадобится отправить какие-то данные в строке запроса URL. Если вы настраиваете URL вручную,
@@ -26,7 +26,7 @@ r = requests.options('http://httpbin.org/get')
 # Если вы хотите передать key1=value1 и key2=value2 ресурсу httpbin.org/get, вы должны использовать следующий код:
 
 payload = {'key1': 'value1', 'key2': 'value2'}
-r = requests.get('http://httpbin.org/get', params=payload)
+r = ?.g..('http://httpbin.org/get', params=payload)
 print(r.url)
 
 # http://httpbin.org/get?key2=value2&key1=value1
@@ -35,7 +35,7 @@ print(r.url)
 # Вы можете передать список параметров в качестве значения:
 
 payload = {'key1': 'value1', 'key2': ['value2', 'value3']}
-r = requests.get('http://httpbin.org/get', params=payload)
+r = ?.g..('http://httpbin.org/get', params=payload)
 print(r.url)
 
 # http://httpbin.org/get?key1=value1&key2=value2&key2=value3
@@ -45,8 +45,8 @@ print(r.url)
 #
 # Мы можем прочитать содержимое ответа сервера. Рассмотрим снова тайм-лайн GitHub:
 
-______ requests
-r = requests.get('https://api.github.com/events')
+______ r__
+r = ?.g..('https://api.github.com/events')
 r.text
 
 # Requests будет автоматически декодировать содержимое ответа сервера.
@@ -73,7 +73,7 @@ print(r.encoding)
 # Бинарное содержимое ответа
 # Вы можете также получить доступ к телу ответа в виде байтов для не текстовых ответов:
 
-r.content
+r.c..
 
 # b'[{"repository":{"open_issues":0,"url":"https://github.com/...
 
@@ -82,14 +82,14 @@ r.content
 
 from PIL ______ Image
 from io ______ BytesIO
-i = Image.open(BytesIO(r.content))
+i = Image.open(BytesIO(r.c..))
 
 # Содержимое ответа в JSON
 # Если вы работаете с данными в формате JSON, воспользуйтесь встроенным JSON декодером:
 
-______ requests
-r = requests.get('https://api.github.com/events')
-r.json()
+______ r__
+r = ?.g..('https://api.github.com/events')
+r.j..()
 
 # [{u'repository': {u'open_issues': 0, u'url': 'https://github.com/...
 
@@ -105,7 +105,7 @@ r.json()
 # обратитесь к r.raw. Если вы хотите сделать это, убедитесь, что вы указали stream=True в вашем первом запросе.
 # После этого вы уже можете проделать следующее:
 
-r = requests.get('https://api.github.com/events', stream=True)
+r = ?.g..('https://api.github.com/events', stream=True)
 r.raw
 
 # <urllib3.response.HTTPResponse object at 0x101194810>
@@ -129,8 +129,8 @@ with open(filename, 'wb') as fd:
 # Например, мы не указали наш user-agent в предыдущем примере:
 
 url = 'https://api.github.com/some/endpoint'
-headers = {'user-agent': 'my-app/0.0.1'}
-r = requests.get(url, headers=headers)
+h.. = {'user-agent': 'my-app/0.0.1'}
+r = ?.g..(url, h..=h..)
 
 # Заголовкам дается меньший приоритет, чем более конкретным источникам информации. Например:
 #
@@ -148,7 +148,7 @@ r = requests.get(url, headers=headers)
 # будет автоматически закодирован как HTML форма, когда будет сделан запрос:
 
 payload = {'key1': 'value1', 'key2': 'value2'}
-r = requests.post("http://httpbin.org/post", data=payload)
+r = ?.post("http://httpbin.org/post", data=payload)
 print(r.text)
 # {
 # 	...
@@ -167,9 +167,9 @@ print(r.text)
 # которые используют один и тот же ключ:
 
 payload_tuples = [('key1', 'value1'), ('key1', 'value2')]
-r1 = requests.post('http://httpbin.org/post', data=payload_tuples)
+r1 = ?.post('http://httpbin.org/post', data=payload_tuples)
 payload_dict = {'key1': ['value1', 'value2']}
-r2 = requests.post('http://httpbin.org/post', data=payload_dict)
+r2 = ?.post('http://httpbin.org/post', data=payload_dict)
 print(r1.text)
 # {
 # 	...
@@ -189,17 +189,17 @@ r1.text == r2.text
 # вместо словаря, эти данные отправятся в не измененном виде.
 # К примеру, GitHub API v3 принимает закодированные JSON POST/PATCH данные:
 
-______ json
+______ j..
 url = 'https://api.github.com/some/endpoint'
 payload = {'some': 'data'}
-r = requests.post(url, data=json.dumps(payload))
+r = ?.post(url, data=j...dumps(payload))
 
 # Вместо того, чтобы кодировать dict, вы можете передать его напрямую, используя параметр json
 # (добавленный в версии 2.4.2), и он будет автоматически закодирован:
 
 url = 'https://api.github.com/some/endpoint'
 payload = {'some': 'data'}
-r = requests.post(url, json=payload)
+r = ?.post(url, j..=payload)
 
 # Обратите внимание, параметр json игнорируется, если передаются data или files.
 # Использование параметра json в запросе изменит заголовок Content-Type на application/json.
@@ -209,7 +209,7 @@ r = requests.post(url, json=payload)
 
 url = 'http://httpbin.org/post'
 files = {'file': open('report.xls', 'rb')}
-r = requests.post(url, files=files)
+r = ?.post(url, files=files)
 r.text
 # {
 # 	...
@@ -223,7 +223,7 @@ r.text
 
 url = 'http://httpbin.org/post'
 files = {'file': ('report.xls', open('report.xls', 'rb'), 'application/vnd.ms-excel', {'Expires': '0'})}
-r = requests.post(url, files=files)
+r = ?.post(url, files=files)
 r.text
 # {
 # 	...
@@ -237,7 +237,7 @@ r.text
 
 url = 'http://httpbin.org/post'
 files = {'file': ('report.csv', 'some,data,to,send\nanother,row,to,send\n')}
-r = requests.post(url, files=files)
+r = ?.post(url, files=files)
 r.text
 # {
 # 	...
@@ -255,18 +255,18 @@ r.text
 # Коды состояния ответа
 # Мы можем проверить код состояния ответа:
 
-r = requests.get('http://httpbin.org/get')
+r = ?.g..('http://httpbin.org/get')
 r.status_code
 
 # 200
 
 # У requests есть встроенный объект вывода кодов состояния:
 
-r.status_code == requests.codes.ok
+r.status_code == ?.codes.ok
 
 # True
 
-bad_r = requests.get('http://httpbin.org/status/404')
+bad_r = ?.g..('http://httpbin.org/status/404')
 bad_r.status_code
 
 # 404
@@ -284,7 +284,7 @@ r.raise_for_status()
 # Заголовки ответов
 # Мы можем просматривать заголовки ответа сервера, используя словарь Python:
 
-r.headers
+r.h..
 
 # {
 # 	'content-encoding': 'gzip',
@@ -299,10 +299,10 @@ r.headers
 # Это словарь особого рода, он создан специально для HTTP заголовков. Согласно с RFC 7230, имена заголовков HTTP нечувствительны к регистру:
 # Теперь мы можем получить доступ к заголовкам с большми буквами или без, если захотим:
 
-r.headers['Content-Type']
+r.h..['Content-Type']
 
 # 'application/json'
-r.headers.get('content-type')
+r.h...g..('content-type')
 
 # 'application/json'
 
@@ -310,7 +310,7 @@ r.headers.get('content-type')
 # Если в запросе есть cookies, вы сможете быстро получить к ним доступ:
 
 url = 'http://example.com/some/cookie/setting/url'
-r = requests.get(url)
+r = ?.g..(url)
 r.cookies['example_cookie_name']
 
 # 'example_cookie_value'
@@ -319,18 +319,18 @@ r.cookies['example_cookie_name']
 
 url = 'http://httpbin.org/cookies'
 cookies = dict(cookies_are='working')
-r = requests.get(url, cookies=cookies)
+r = ?.g..(url, cookies=cookies)
 r.text
 # '{"cookies": {"cookies_are": "working"}}'
 
 # Cookies возвращаются в RequestsCookieJar, который работает как dict, но также предлагает более полный интерфейс,
 # подходящий для использования в нескольких доменах или путях. Cookie jars могут также передаваться в запросы:
 
-jar = requests.cookies.RequestsCookieJar()
+jar = ?.cookies.RequestsCookieJar()
 jar.set('tasty_cookie', 'yum', domain='httpbin.org', path='/cookies')
 jar.set('gross_cookie', 'blech', domain='httpbin.org', path='/elsewhere')
 url = 'http://httpbin.org/cookies'
-r = requests.get(url, cookies=jar)
+r = ?.g..(url, cookies=jar)
 r.text
 
 '{"cookies": {"tasty_cookie": "yum"}}'
@@ -342,7 +342,7 @@ r.text
 # Список сортируется от более ранних, до более поздних ответов.
 # Например, GitHub перенаправляет все запросы HTTP на HTTPS:
 
-r = requests.get('http://github.com')
+r = ?.g..('http://github.com')
 r.url
 
 'https://github.com/'
@@ -356,7 +356,7 @@ r.history
 # Если вы используете GET, OPTIONS, POST, PUT, PATCH или DELETE, вы можете отключить обработку редиректа
 # с помощью параметра allow_redirects:
 
-r = requests.get('http://github.com', allow_redirects=False)
+r = ?.g..('http://github.com', allow_redirects=False)
 r.status_code
 
 # 301
@@ -366,7 +366,7 @@ r.history
 
 # Если вы используете HEAD, вы также можете включить редирект:
 
-r = requests.head('http://github.com', allow_redirects=True)
+r = ?.head('http://github.com', allow_redirects=True)
 r.url
 
 # 'https://github.com/'
@@ -380,7 +380,7 @@ r.history
 # Почти весь производственный код должен использовать этот параметр почти во всех запросах.
 # Несоблюдение этого требования может привести к зависанию вашей программы:
 
-requests.get('http://github.com', timeout=0.001)
+?.g..('http://github.com', timeout=0.001)
 
 # Traceback (most recent call last):
 # File "<stdin>", line 1, in <module>

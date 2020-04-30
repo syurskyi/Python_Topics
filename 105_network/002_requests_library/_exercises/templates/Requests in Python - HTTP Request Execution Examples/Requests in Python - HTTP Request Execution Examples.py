@@ -9,7 +9,7 @@
 # Сразу после установки requests можно полноценно использовать в приложении.
 # Импорт requests производится следующим образом.
 
-______ requests
+______ r__
 
 # Python библиотека Requests метод GET
 #
@@ -22,7 +22,7 @@ ______ requests
 # Для проверки работы команды будет выполнен запрос GET в отношении Root REST API на GitHub.
 # Для указанного ниже URL вызывается метод get().
 
-requests.get('https://api.github.com')
+?.g..('https://api.github.com')
 # <Response [200]>
 
 # Объект Response получение ответа на запрос в Python
@@ -30,7 +30,7 @@ requests.get('https://api.github.com')
 # В качестве примера будет использован предыдущий запрос, только на этот раз результат будет представлен
 # в виде переменной. Таким образом, получится лучше изучить его атрибуты и особенности использования.
 
-response = requests.get('https://api.github.com')
+response = ?.g..('https://api.github.com')
 
 # В данном примере при помощи get() захватывается определенное значение, что является частью объекта Response,
 # и помещается в переменную под названием response. Теперь можно использовать переменную response для того,
@@ -81,12 +81,12 @@ else:
 # Это можно сделать при помощи использования .raise_for_status().
 
 
-______ requests
-from requests.exceptions ______ HTTPError
+______ r__
+from ?.exceptions ______ HTTPError
 
 for url in ['https://api.github.com', 'https://api.github.com/invalid']:
     try:
-        response = requests.get(url)
+        response = ?.g..(url)
 
         # если ответ успешен, исключения задействованы не будут
         response.raise_for_status()
@@ -115,8 +115,8 @@ for url in ['https://api.github.com', 'https://api.github.com/invalid']:
 
 # Для того, чтобы получить содержимое запроса в байтах, необходимо использовать .content.
 
-response = requests.get('https://api.github.com')
-response.content
+response = ?.g..('https://api.github.com')
+response.c..
 # b'{"current_user_url":"https://api.github.com/user","current_user_authorizations_
 # html_url":"https://github.com/settings/connections/applications{/client_id}","authorizations_
 # url":"https://api.github.com/authorizations","code_search_url":"https://api.github.com/search/code?q={query}{&page,
@@ -194,7 +194,7 @@ response.text
 # Воспользовавшись словарем, можно взять полученные из .text строки str и провести с ними обратную сериализацию при
 # помощи использования json.loads(). Есть и более простой способ, который требует применения .json().
 
-response.json()
+response.j..()
 # {'current_user_url': 'https://api.github.com/user', 'current_user_authorizations_html_url': 'https://github.com/settings/connections/applications{/client_id}', 'authorizations_url': 'https://api.github.com/authorizations', 'code_search_url': 'https://api.github.com/search/code?q={query}{&page,per_page,sort,order}', 'commit_search_url': 'https://api.github.com/search/commits?q={query}{&page,per_page,sort,order}', 'emails_url': 'https://api.github.com/user/emails', 'emojis_url': 'https://api.github.com/emojis', 'events_url': 'https://api.github.com/events', 'feeds_url': 'https://api.github.com/feeds', 'followers_url': 'https://api.github.com/user/followers', 'following_url': 'https://api.github.com/user/following{/target}', 'gists_url': 'https://api.github.com/gists{/gist_id}', 'hub_url': 'https://api.github.com/hub', 'issue_search_url': 'https://api.github.com/search/issues?q={query}{&page,per_page,sort,order}', 'issues_url': 'https://api.github.com/issues', 'keys_url': 'https://api.github.com/user/keys', 'notifications_url': 'https://api.github.com/notifications', 'organization_repositories_url': 'https://api.github.com/orgs/{org}/repos{?type,page,per_page,sort}', 'organization_url': 'https://api.github.com/orgs/{org}', 'public_gists_url': 'https://api.github.com/gists/public', 'rate_limit_url': 'https://api.github.com/rate_limit', 'repository_url': 'https://api.github.com/repos/{owner}/{repo}', 'repository_search_url': 'https://api.github.com/search/repositories?q={query}{&page,per_page,sort,order}', 'current_user_repositories_url': 'https://api.github.com/user/repos{?type,page,per_page,sort}', 'starred_url': 'https://api.github.com/user/starred{/owner}{/repo}', 'starred_gists_url': 'https://api.github.com/gists/starred', 'team_url': 'https://api.github.com/teams', 'user_url': 'https://api.github.com/users/{user}', 'user_organizations_url': 'https://api.github.com/user/orgs', 'user_repositories_url': 'https://api.github.com/users/{user}/repos{?type,page,per_page,sort}', 'user_search_url': 'https://api.github.com/search/users?q={query}{&page,per_page,sort,order}'}
 
 # Тип полученного значения из .json(), является словарем. Это значит, что доступ к его содержимому можно получить по ключу.
@@ -207,20 +207,20 @@ response.json()
 # ответного пейлоада, а также ограничение по времени для кеширования ответа. Для просмотра HTTP заголовков
 # загляните в атрибут .headers.
 
-response.headers
+response.h..
 # {'Server': 'GitHub.com', 'Date': 'Mon, 10 Dec 2018 17:49:54 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Status': '200 OK', 'X-RateLimit-Limit': '60', 'X-RateLimit-Remaining': '59', 'X-RateLimit-Reset': '1544467794', 'Cache-Control': 'public, max-age=60, s-maxage=60', 'Vary': 'Accept', 'ETag': 'W/"7dc470913f1fe9bb6c7355b50a0737bc"', 'X-GitHub-Media-Type': 'github.v3; format=json', 'Access-Control-Expose-Headers': 'ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type', 'Access-Control-Allow-Origin': '*', 'Strict-Transport-Security': 'max-age=31536000; includeSubdomains; preload', 'X-Frame-Options': 'deny', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '1; mode=block', 'Referrer-Policy': 'origin-when-cross-origin, strict-origin-when-cross-origin', 'Content-Security-Policy': "default-src 'none'", 'Content-Encoding': 'gzip', 'X-GitHub-Request-Id': 'E439:4581:CF2351:1CA3E06:5C0EA741'}
 
 # .headers возвращает словарь, что позволяет получить доступ к значению заголовка HTTP по ключу.
 # Например, для просмотра типа содержимого ответного пейлоада, требуется использовать Content-Type.
 
-response.headers['Content-Type']
+response.h..['Content-Type']
 # 'application/json; charset=utf-8'
 
 #У объектов словарей в качестве заголовков есть своим особенности.
 # Специфика HTTP предполагает, что заголовки не чувствительны к регистру. Это значит, что при получении доступа к
 # заголовкам можно не беспокоится о том, использованы строчным или прописные буквы.
 
-response.headers['content-type']
+response.h..['content-type']
 # 'application/json; charset=utf-8'
 
 # При использовании ключей 'content-type' и 'Content-Type' результат будет получен один и тот же.
@@ -234,16 +234,16 @@ response.headers['content-type']
 # При использовании метода get(), данные передаются в params. Например, для того, чтобы посмотреть на библиотеку
 # requests можно использовать Search API на GitHub.
 
-______ requests
+______ r__
 
 # Поиск местонахождения для запросов на GitHub
-response = requests.get(
+response = ?.g..(
     'https://api.github.com/search/repositories',
     params={'q': 'requests+language:python'},
 )
 
 # Анализ некоторых атрибутов местонахождения запросов
-json_response = response.json()
+json_response = response.j..()
 repository = json_response['items'][0]
 print(f'Repository name: {repository["name"]}')  # Python 3.6+
 print(f'Repository description: {repository["description"]}')  # Python 3.6+
@@ -252,7 +252,7 @@ print(f'Repository description: {repository["description"]}')  # Python 3.6+
 # можно изменить ответ, что был получен при использовании Search API.
 # Можно передать параметры в get() в форме словаря, как было показано выше. Также можно использовать список кортежей.
 
-requests.get(
+?.g..(
     'https://api.github.com/search/repositories',
     params=[('q', 'requests+language:python')],
 )
@@ -260,7 +260,7 @@ requests.get(
 
 # Также можно передать значение в байтах.
 
-requests.get(
+?.g..(
     'https://api.github.com/search/repositories',
     params=b'q=requests+language:python',
 )
@@ -275,17 +275,17 @@ requests.get(
 # параметра headers. Например, можно изменить предыдущий поисковой запрос, подсветив совпадения в результате.
 # Для этого в заголовке Accept медиа тип уточняется при помощи text-match.
 
-______ requests
+______ r__
 
-response = requests.get(
+response = ?.g..(
     'https://api.github.com/search/repositories',
     params={'q': 'requests+language:python'},
-    headers={'Accept': 'application/vnd.github.v3.text-match+json'},
+    h..={'Accept': 'application/vnd.github.v3.text-match+json'},
 )
 
 # просмотр нового массива `text-matches` с предоставленными данными
 # о поиске в пределах результатов
-json_response = response.json()
+json_response = response.j..()
 repository = json_response['items'][0]
 print(f'Text matches: {repository["text_matches"]}')
 
@@ -300,22 +300,22 @@ print(f'Text matches: {repository["text_matches"]}')
 # Для каждого из этих методов существует своя сигнатура, которая очень похожа на метод get().
 
 
-requests.post('https://httpbin.org/post', data={'key':'value'})
-requests.put('https://httpbin.org/put', data={'key':'value'})
-requests.delete('https://httpbin.org/delete')
-requests.head('https://httpbin.org/get')
-requests.patch('https://httpbin.org/patch', data={'key':'value'})
-requests.options('https://httpbin.org/get')
+?.post('https://httpbin.org/post', data={'key':'value'})
+?.put('https://httpbin.org/put', data={'key':'value'})
+?.delete('https://httpbin.org/delete')
+?.head('https://httpbin.org/get')
+?.patch('https://httpbin.org/patch', data={'key':'value'})
+?.options('https://httpbin.org/get')
 
 # Каждая функция создает запрос к httpbin сервису, используя при этом ответный HTTP метод.
 # Результат каждого метода можно изучить способом, который был использован в предыдущих примерах.
 
-response = requests.head('https://httpbin.org/get')
-response.headers['Content-Type']
+response = ?.head('https://httpbin.org/get')
+response.h..['Content-Type']
 # 'application/json'
 
-response = requests.delete('https://httpbin.org/delete')
-json_response = response.json()
+response = ?.delete('https://httpbin.org/delete')
+json_response = response.j..()
 json_response['args']
 # {}
 
@@ -330,12 +330,12 @@ json_response['args']
 # К примеру, если тип содержимого запроса application/x-www-form-urlencoded, можно отправить данные формы в
 # виде словаря.
 
-requests.post('https://httpbin.org/post', data={'key':'value'})
+?.post('https://httpbin.org/post', data={'key':'value'})
 # <Response [200]>
 
 # Ту же самую информацию также можно отправить в виде списка кортежей.
 
-requests.post('https://httpbin.org/post', data=[('key', 'value')])
+?.post('https://httpbin.org/post', data=[('key', 'value')])
 # <Response [200]>
 
 # В том случае, если требуется отравить данные JSON, можно использовать параметр json. При передачи данных JSON через
@@ -345,8 +345,8 @@ requests.post('https://httpbin.org/post', data=[('key', 'value')])
 # Здесь можно составить пробный запрос и получить ответ с требуемой информацией.
 # В качестве примера рассмотрим базовый запрос с использованием POST.
 
-response = requests.post('https://httpbin.org/post', json={'key':'value'})
-json_response = response.json()
+response = ?.post('https://httpbin.org/post', j..={'key':'value'})
+json_response = response.j..()
 json_response['data']
 # '{"key": "value"}'
 json_response['headers']['Content-Type']
@@ -360,8 +360,8 @@ json_response['headers']['Content-Type']
 # и сериализация содержимого JSON.
 # Если открыть .request, можно просмотреть PreparedRequest.
 
-response = requests.post('https://httpbin.org/post', json={'key':'value'})
-response.r__.headers['Content-Type']
+response = ?.post('https://httpbin.org/post', j..={'key':'value'})
+response.r__.h..['Content-Type']
 # 'application/json'
 
 response.r__.url
@@ -389,13 +389,13 @@ response.r__.body
 # и пароль на GitHub через кортеж в get().
 
 from getpass ______ getpass
-requests.get('https://api.github.com/user', auth=('username', getpass()))
+?.g..('https://api.github.com/user', auth=('username', getpass()))
 # <Response [200]>
 
 # Запрос выполнен успешно, если учетные данные, которые вы передали в кортеже auth, действительны.
 # Если вы попытаетесь сделать этот запрос без учетных данных, вы увидите, что код состояния 401 Unauthorized.
 
-requests.get('https://api.github.com/user')
+?.g..('https://api.github.com/user')
 # <Response [401]>
 
 # Когда вы передаете имя пользователя и пароль в кортеже параметру auth, вы используете учетные данные при помощи
@@ -403,9 +403,9 @@ requests.get('https://api.github.com/user')
 # Таким образом, вы можете создать тот же запрос, передав подробные учетные данные базовой аутентификации,
 # используя HTTPBasicAuth.
 
-from requests.auth ______ HTTPBasicAuth
+from ?.auth ______ HTTPBasicAuth
 from getpass ______ getpass
-requests.get(
+?.g..(
     'https://api.github.com/user',
     auth=HTTPBasicAuth('username', getpass())
 )
@@ -416,8 +416,8 @@ requests.get(
 # Вы даже можете предоставить свой собственный механизм аутентификации. Для этого необходимо сначала создать
 # подкласс AuthBase. Затем происходит имплементация __call__().
 
-______ requests
-from requests.auth ______ AuthBase
+______ r__
+from ?.auth ______ AuthBase
 
 class TokenAuth(AuthBase):
     """Implements a custom authentication scheme."""
@@ -427,11 +427,11 @@ class TokenAuth(AuthBase):
 
     def __call__(self, r):
         """Attach an API token to a custom auth header."""
-        r.headers['X-TokenAuth'] = f'{self.token}'  # Python 3.6+
+        r.h..['X-TokenAuth'] = f'{self.token}'  # Python 3.6+
         return r
 
 
-requests.get('https://httpbin.org/get', auth=TokenAuth('12345abcde-token'))
+?.g..('https://httpbin.org/get', auth=TokenAuth('12345abcde-token'))
 
 # Здесь пользовательский механизм TokenAuth получает специальный токен. Затем этот токен включается заголовок
 # X-TokenAuth запроса.
@@ -448,7 +448,7 @@ requests.get('https://httpbin.org/get', auth=TokenAuth('12345abcde-token'))
 # внести определенные поправки.
 # Если требуется отключить проверку SSL-сертификата, параметру verify функции запроса можно присвоить значение False.
 
-requests.get('https://api.github.com', verify=False)
+?.g..('https://api.github.com', verify=False)
 # InsecureRequestWarning: Unverified HTTPS request is being made.
 # Adding certificate verification is strongly advised.
 # See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
@@ -478,27 +478,27 @@ requests.get('https://api.github.com', verify=False)
 # ожидания запроса, используйте параметр timeout. timeout может быть целым числом или числом с плавающей точкой,
 # представляющим количество секунд ожидания ответа до истечения времени ожидания.
 
-requests.get('https://api.github.com', timeout=1)
+?.g..('https://api.github.com', timeout=1)
 # <Response [200]>
-requests.get('https://api.github.com', timeout=3.05)
+?.g..('https://api.github.com', timeout=3.05)
 # <Response [200]>
 
 # В первом примере запрос истекает через 1 секунду. Во втором примере запрос истекает через 3,05 секунды.
 # Вы также можете передать кортеж. Это – таймаут соединения (время, за которое клиент может установить соединение
 # с сервером), а второй – таймаут чтения (время ожидания ответа, как только ваш клиент установил соединение):
 
-requests.get('https://api.github.com', timeout=(2, 5))
+?.g..('https://api.github.com', timeout=(2, 5))
 # <Response [200]>
 
 # Если запрос устанавливает соединение в течение 2 секунд и получает данные в течение 5 секунд после установления
 # соединения, то ответ будет возвращен, как это было раньше. Если время ожидания истекло,
 # функция вызовет исключение Timeout.
 
-______ requests
-from requests.exceptions ______ Timeout
+______ ?
+from ?.exceptions ______ Timeout
 
 try:
-    response = requests.get('https://api.github.com', timeout=1)
+    response = ?.g..('https://api.github.com', timeout=1)
 except Timeout:
     print('The request timed out')
 else:
@@ -520,20 +520,20 @@ else:
 # Например, если вы хотите использовать одну и ту же аутентификацию для нескольких запросов,
 # вы можете использовать сеанс:
 
-______ requests
+______ r__
 from getpass ______ getpass
 
 # используя менеджер контента, можно убедиться, что ресурсы, применимые
 # во время сессии будут свободны после использования
-with requests.Session() as session:
+with ?.Session() as session:
     session.auth = ('username', getpass())
 
     # Instead of requests.get(), you'll use session.get()
-    response = session.get('https://api.github.com/user')
+    response = session.g..('https://api.github.com/user')
 
 # здесь можно изучить ответ
-print(response.headers)
-print(response.json())
+print(response.h..)
+print(response.j..())
 
 # Каждый раз, когда вы делаете запрос session, после того как он был инициализирован с учетными данными аутентификации,
 # учетные данные будут сохраняться.
@@ -553,19 +553,19 @@ print(response.json())
 # появится ConnectionError. Для этого нужно построить транспортный адаптер, установить его параметр max_retries и
 # подключить его к существующему объекту Session.
 
-______ requests
-from requests.adapters ______ HTTPAdapter
-from requests.exceptions ______ ConnectionError
+______ r__
+from ?.adapters ______ HTTPAdapter
+from ?.exceptions ______ ConnectionError
 
 github_adapter = HTTPAdapter(max_retries=3)
 
-session = requests.Session()
+session = ?.Session()
 
 # использование `github_adapter` для всех запросов, которые начинаются с указанным URL
 session.mount('https://api.github.com', github_adapter)
 
 try:
-    session.get('https://api.github.com')
+    session.g..('https://api.github.com')
 except ConnectionError as ce:
     print(ce)
 

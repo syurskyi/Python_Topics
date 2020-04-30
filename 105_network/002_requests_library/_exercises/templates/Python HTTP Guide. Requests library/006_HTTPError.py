@@ -1,10 +1,10 @@
-______ requests
+______ r__
 try:
-    response = requests.get('https://httpbin.org/status/500')
+    response = ?.g..('https://httpbin.org/status/500')
     response.raise_for_status()
-except requests.exceptions.HTTPError as err:
+except ?.exceptions.HTTPError as err:
     print('Oops. HTTP Error occured')
-    print('Response is: {content}'.format(content=err.response.content))
+    print('Response is: {content}'.format(c..=err.response.c..))
 
 # Oops. HTTP Error occured
 # Response is: b''
