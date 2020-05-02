@@ -1,5 +1,5 @@
 _____ sqlite3, ___
-____ ?.?W.. _____ ?D.., ?A..,QTableWidgetItem
+____ ?.?W.. _____ ?D.., ?A..,?TWI..
 ____ sqlite3 _____ Error
 
 ____ demoShowRecords _____ *

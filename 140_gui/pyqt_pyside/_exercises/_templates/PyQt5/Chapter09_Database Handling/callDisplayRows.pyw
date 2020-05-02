@@ -1,5 +1,5 @@
 _____ sqlite3, ___
-____ ?.?W.. _____ ?D.., ?A..,QTableWidgetItem
+____ ?.?W.. _____ ?D.., ?A..,?TWI..
 ____ sqlite3 _____ Error
 
 ____ demoDisplayRowsOfTable _____ *
@@ -27,7 +27,7 @@ c_ MyForm(?D..
                 colNo_0
                 ___ columns __ tuple:
                     oneColumn_QTableWidgetItem(columns)
-                    ui.tableWidget.setItem(rowNo, colNo, oneColumn)
+                    ui.tableWidget.sI..(rowNo, colNo, oneColumn)
                     colNo+_1
                 rowNo+_1                  
                 

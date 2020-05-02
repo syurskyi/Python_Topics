@@ -721,14 +721,14 @@ c_ songCreator(?G...QTabWidget
         filename _ ?G...QFileDialog.getOpenFileName , 'Open File', os.getenv('HOME'), "song files (*.mp3 *.wav)")
 
         # adding default variable name to table
-        default_name _ ?G...QTableWidgetItem("1")
-        table.setItem(index, 0, default_name)
+        default_name _ ?G...?TWI..("1")
+        table.sI..(index, 0, default_name)
         # adding default variable name to table
-        default_name _ ?G...QTableWidgetItem(filename)
-        table.setItem(index, 1, default_name)
+        default_name _ ?G...?TWI..(filename)
+        table.sI..(index, 1, default_name)
         # adding default variable name to table
-        default_name _ ?G...QTableWidgetItem("0")
-        table.setItem(index, 2, default_name)
+        default_name _ ?G...?TWI..("0")
+        table.sI..(index, 2, default_name)
 
         tableIndex +_ 1
         # setting table format
@@ -751,14 +751,14 @@ c_ songCreator(?G...QTabWidget
         ___ song in songList:
             print("-------------------------------------")
             print(song[0])
-            default_name _ ?G...QTableWidgetItem(song[0])
-            table.setItem(index, 0, default_name)
+            default_name _ ?G...?TWI..(song[0])
+            table.sI..(index, 0, default_name)
             # adding default variable name to table
-            default_name _ ?G...QTableWidgetItem(song[1])
-            table.setItem(index, 1, default_name)
+            default_name _ ?G...?TWI..(song[1])
+            table.sI..(index, 1, default_name)
             # adding default variable name to table
-            default_name _ ?G...QTableWidgetItem(song[2])
-            table.setItem(index, 2, default_name)
+            default_name _ ?G...?TWI..(song[2])
+            table.sI..(index, 2, default_name)
             index +_ 1
 
         tableIndex _ index

@@ -23,14 +23,14 @@ c_ simpleWindow(?W..
         table.setRowCount(le.(files))
         table.setHorizontalHeaderLabels(['Name', 'Size'])
         ___ i, f __ enumerate(files
-            item _ QTableWidgetItem()
+            item _ ?TWI..()
             item.setFlags(Qt.ItemIsEnabled | Qt.ItemIsSelectable)
             item.sT..(f)
-            table.setItem(i, 0, item)
-            item _ QTableWidgetItem()
+            table.sI..(i, 0, item)
+            item _ ?TWI..()
             item.setFlags(Qt.ItemIsEnabled | Qt.ItemIsSelectable)
             item.sT..(st.(os.stat(os.path.join(path, f)).st_size) + ' bytes' )
-            table.setItem(i, 1, item)
+            table.sI..(i, 1, item)
 
 
 __ __name__ __ '__main__':
