@@ -17,7 +17,7 @@ c_ Example(W..):
     ___ initUI
         btn _ ?P..('Dialog',
         btn.m..(20, 20)
-        btn.clicked.c..(showDialog)
+        btn.c__.c..(showDialog)
 
         le _ QLineEdit(
         le.m..(130, 22)
@@ -31,7 +31,7 @@ c_ Example(W..):
                                         'Enter your name:')
 
         __ ok:
-            le.setText(str(text))
+            le.setText(st.(text))
 
 
 __ _____ __ _______

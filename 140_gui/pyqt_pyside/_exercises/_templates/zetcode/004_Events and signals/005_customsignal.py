@@ -3,14 +3,14 @@
 
 ______ ___
 ____ ?.?C.. ______ pyqtSignal, QObject
-____ ?.?W.. ______ QMainWindow, ?A..
+____ ?.?W.. ______ ?M.., ?A..
 
 
 c_ Communicate(QObject):
     closeApp _ pyqtSignal
 
 
-c_ Example(QMainWindow):
+c_ Example(?M..):
 
     ___ -
         s__ .-

@@ -15,7 +15,7 @@ c_ myWidget(W..):
         # second version
         # self.c..(button, SIGNAL('clicked()'), self, SLOT('action()'))
         # third version
-        @button.clicked.c..
+        @button.c__.c..
         ___ click :
             action
 

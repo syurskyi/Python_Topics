@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-____ ?.?W.. ______ (QMainWindow, QTextEdit,
+____ ?.?W.. ______ (?M.., QTextEdit,
                              QAction, QFileDialog, ?A..)
 ____ ?.QtGui ______ QIcon
 ______ ___
 
 
-c_ Example(QMainWindow):
+c_ Example(?M..):
 
     ___ -
         s__ .-

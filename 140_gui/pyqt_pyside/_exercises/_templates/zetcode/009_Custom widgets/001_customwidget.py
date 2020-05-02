@@ -81,8 +81,8 @@ c_ BurningWidget(W..):
         ___ i __ ra..(step, 10 * step, step):
             qp.drawLine(i, 0, i, 5)
             metrics _ qp.fontMetrics
-            fw _ metrics.width(str(num[j]))
-            qp.drawText(i - fw / 2, h / 2, str(num[j]))
+            fw _ metrics.width(st.(num[j]))
+            qp.drawText(i - fw / 2, h / 2, st.(num[j]))
             j _ j + 1
 
 

@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 
 ______ ___
-____ ?.?W.. ______ QMainWindow, ?P.., ?A..
+____ ?.?W.. ______ ?M.., ?P.., ?A..
 
 
-c_ Example(QMainWindow):
+c_ Example(?M..):
 
     ___ -
         s__ .-
@@ -19,8 +19,8 @@ c_ Example(QMainWindow):
         btn2 _ ?P..("Button 2",
         btn2.m..(150, 50)
 
-        btn1.clicked.c..(buttonClicked)
-        btn2.clicked.c..(buttonClicked)
+        btn1.c__.c..(buttonClicked)
+        btn2.c__.c..(buttonClicked)
 
         sB__
 

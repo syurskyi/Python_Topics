@@ -21,7 +21,7 @@ c_ Example(W..):
         qle.m..(60, 100)
         lbl.m..(60, 40)
 
-        qle.textChanged[str].c..(onChanged)
+        qle.textChanged[st.].c..(onChanged)
 
         sG__(300, 300, 280, 170)
         sWT__('QLineEdit')

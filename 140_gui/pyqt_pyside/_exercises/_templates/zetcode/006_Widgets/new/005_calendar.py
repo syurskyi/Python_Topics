@@ -19,7 +19,7 @@ c_ Example(W..):
 
         cal _ QCalendarWidget(
         cal.setGridVisible(True)
-        cal.clicked[QDate].c..(showDate)
+        cal.c__[QDate].c..(showDate)
 
         vbox.aW..(cal)
 

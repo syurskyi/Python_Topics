@@ -22,7 +22,7 @@ c_ Example(W..):
 
         btn _ ?P..('Start',
         btn.m..(40, 80)
-        btn.clicked.c..(doAction)
+        btn.c__.c..(doAction)
 
         timer _ QBasicTimer
         step _ 0

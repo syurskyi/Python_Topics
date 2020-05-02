@@ -7,7 +7,7 @@ c_ Communicate(?C...QObject):
     closeApp _ ?C...pyqtSignal
 
 
-c_ Example(QtGui.QMainWindow):
+c_ Example(QtGui.?M..):
 
     ___ -
         s__ ?  .-
