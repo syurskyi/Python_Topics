@@ -3,7 +3,7 @@
 
 ______ ___
 ____ ?.?W.. ______ W.., ?A..
-____ ?.QtGui ______ QPainter, QColor, QFont
+____ ?.?G__ ______ QPainter, QColor, QFont
 ____ ?.?C.. ______ __
 
 

@@ -3,7 +3,7 @@
 
 ____ ?.?W.. ______ (?M.., QTextEdit,
                              QAction, QFileDialog, ?A..)
-____ ?.QtGui ______ QIcon
+____ ?.?G__ ______ QIcon
 ______ ___
 
 

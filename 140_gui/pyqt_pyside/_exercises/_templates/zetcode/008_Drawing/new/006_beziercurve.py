@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 ____ ?.?W.. ______ W.., ?A..
-____ ?.QtGui ______ QPainter, QPainterPath
+____ ?.?G__ ______ QPainter, QPainterPath
 ____ ?.?C.. ______ __
 ______ ___
 

@@ -1,9 +1,9 @@
-____ PySide ______ ?C.., QtGui
+____ PySide ______ ?C.., ?G__
 
 
-c_ MyLabel(QtGui.?L..):
+c_ MyLabel(?G__.?L..):
     ___ - (self, text, parent=N..):
-        QtGui.?L...- (self, text, parent)
+        ?G__.?L...- (self, text, parent)
         setAlignment(?C...__.AlignCenter)
 
     ___ mousePressEvent(self, e):
@@ -20,15 +20,15 @@ c_ MyLabel(QtGui.?L..):
         sT..('Name of the Selected node is: ' + st.(name))
 
 
-c_ MyWindow(QtGui.W..):
+c_ MyWindow(?G__.W..):
     ___ - (self, parent=N..):
-        QtGui.W...- (self, parent)
+        ?G__.W...- (self, parent)
         sWT__("Name Window")
 
         resize(300, 150)
         label _ MyLabel("Click here with the mouse")
-        label.setFrameStyle(QtGui.QFrame.Box | QtGui.QFrame.Plain)
-        vbox _ QtGui.?VB..
+        label.setFrameStyle(?G__.QFrame.Box | ?G__.QFrame.Plain)
+        vbox _ ?G__.?VB..
         vbox.aW..(label)
         sL..(vbox)
 

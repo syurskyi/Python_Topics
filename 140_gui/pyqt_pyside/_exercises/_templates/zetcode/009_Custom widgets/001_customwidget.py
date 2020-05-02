@@ -5,7 +5,7 @@
 ____ ?.?W.. ______ (W.., ?S.., ?A..,
                              ?HB.., ?VB..)
 ____ ?.?C.. ______ QObject, __, pyqtSignal
-____ ?.QtGui ______ QPainter, QFont, QColor, QPen
+____ ?.?G__ ______ QPainter, QFont, QColor, QPen
 ______ ___
 
 
