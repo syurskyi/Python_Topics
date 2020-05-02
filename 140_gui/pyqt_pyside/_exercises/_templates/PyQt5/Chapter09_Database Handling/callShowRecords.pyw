@@ -16,10 +16,10 @@ c_ MyForm(?D..
         ui _ Ui_Dialog()
         ui.setupUi
         cur.execute(sqlStatement)
-        ui.pushButtonFirst.clicked.c..(ShowFirstRow)
-        ui.pushButtonPrevious.clicked.c..(ShowPreviousRow)
-        ui.pushButtonNext.clicked.c..(ShowNextRow)
-        ui.pushButtonLast.clicked.c..(ShowLastRow)
+        ui.pushButtonFirst.c___.c..(ShowFirstRow)
+        ui.pushButtonPrevious.c___.c..(ShowPreviousRow)
+        ui.pushButtonNext.c___.c..(ShowNextRow)
+        ui.pushButtonLast.c___.c..(ShowLastRow)
         s..
 
     ___ ShowFirstRow
@@ -30,7 +30,7 @@ c_ MyForm(?D..
                 ui.lineEditEmailAddress.sT..(row[0])
                 ui.lineEditPassword.sT..(row[1])
         except Error as e:
-            ui.labelResponse.sT..("Error in accessing table")
+            ui.lR___.sT..("Error in accessing table")
 
 
     ___ ShowPreviousRow
@@ -40,12 +40,12 @@ c_ MyForm(?D..
         cur.execute(sqlStatement)
         row_cur.fetchone()
         __ row:
-            ui.labelResponse.sT..("")
+            ui.lR___.sT..("")
             ui.lineEditEmailAddress.sT..(row[0])
             ui.lineEditPassword.sT..(row[1])
         else:
             rowNo +_ 1
-            ui.labelResponse.sT..("This is the first row")
+            ui.lR___.sT..("This is the first row")
        
             
     ___ ShowNextRow
@@ -55,12 +55,12 @@ c_ MyForm(?D..
         cur.execute(sqlStatement)
         row_cur.fetchone()
         __ row:
-            ui.labelResponse.sT..("")
+            ui.lR___.sT..("")
             ui.lineEditEmailAddress.sT..(row[0])
             ui.lineEditPassword.sT..(row[1])
         else:
             rowNo -_ 1
-            ui.labelResponse.sT..("This is the last row")
+            ui.lR___.sT..("This is the last row")
 
     ___ ShowLastRow
         cur.execute(sqlStatement)

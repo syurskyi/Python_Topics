@@ -237,7 +237,7 @@ c_ TP_Launcher_GUI(?W...?W..
         _workspace_cb.currentIndexChanged.c..(
             _workspace_changed
             )
-        _edit_btn.clicked.c..(_edit_toggle)
+        _edit_btn.c___.c..(_edit_toggle)
         _workspace_cb.view().pressed.c..(
             _dragging_workspace
             )
@@ -297,7 +297,7 @@ c_ TP_Launcher_GUI(?W...?W..
 
     ___ _run_app , item
         item.setSelected(False)
-        _tp_launcher.run_app(get_workspace(), st.(item.text()))
+        _tp_launcher.run_app(get_workspace(), st.(item.t..()))
 
     #======= EDIT MODE =================================
 
@@ -324,15 +324,15 @@ c_ TP_Launcher_GUI(?W...?W..
     ___ _add_workspace
         ''' Prompt user with line edit input dialog for new name,
         store if valid, populate, then select it.'''
-        text _ ?W...QInputDialog.getText(
+        t.. _ ?W...QInputDialog.getText(
             self,
             'New WORKSPACE',
             'What would you like to title the new WORKSPACE?'
             )[0]
-        __ text:
-            _tp_launcher.add_workspace(st.(text))
+        __ t..:
+            _tp_launcher.add_workspace(st.(t..))
             _populate_workspaces()
-            index _ _workspace_cb.findText(text)
+            index _ _workspace_cb.findText(t..)
             _workspace_cb.setCurrentIndex(index)
             _save_settings()
 
@@ -379,7 +379,7 @@ c_ TP_Launcher_GUI(?W...?W..
         ''' When the user begins dragging a application,
         store the item text and note it's an app
         '''
-        _dragging _ ('application', st.(item.text()))
+        _dragging _ ('application', st.(item.t..()))
 
     ___ _delete_app , app_name
         _tp_launcher.delete_app(get_workspace(), app_name)
@@ -409,7 +409,7 @@ c_ TP_Launcher_GUI(?W...?W..
         to QSettings, and store the tool data to json file.
         '''
         count _ _app_lw.count()
-        names _ [_app_lw.item(i).text() for i in range(count)]
+        names _ [_app_lw.item(i).t..() for i in range(count)]
         workspace _ get_workspace()
         _tp_launcher.reorder_apps(workspace, names)
         _settings.setValue('CurrentWorkspace', workspace)

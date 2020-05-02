@@ -124,7 +124,7 @@ QComboBox:!editable:on, QComboBox::drop-down:editable:on
 
 QComboBox:on
 {
-	/* shift the text when the popup opens */
+	/* shift the t.. when the popup opens */
 	padding-top: 3px;
 	padding-left: 4px;
 	border: 1px solid #242424;

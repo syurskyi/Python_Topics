@@ -41,39 +41,39 @@ c_ Player(?W..
         addButton.setIcon(QIcon("icons/add.png"))
         addButton.setIconSize(QSize(48, 48))
         addButton.setToolTip("Add a Song")
-        addButton.clicked.c..(addSound)
+        addButton.c___.c..(addSound)
 
         shuffleButton_QToolButton()
         shuffleButton.setIcon(QIcon("icons/shuffle.png"))
         shuffleButton.setIconSize(QSize(48,48))
         shuffleButton.setToolTip("Shuffle The list")
-        shuffleButton.clicked.c..(shufflePlayList)
+        shuffleButton.c___.c..(shufflePlayList)
 
         previousButton _ QToolButton()
         previousButton.setIcon(QIcon("icons/previous.png"))
         previousButton.setIconSize(QSize(48, 48))
         previousButton.setToolTip("Play Previous")
-        previousButton.clicked.c..(playPrevious)
+        previousButton.c___.c..(playPrevious)
 
 
         playButton _ QToolButton()
         playButton.setIcon(QIcon("icons/play.png"))
         playButton.setIconSize(QSize(64, 64))
         playButton.setToolTip("Play")
-        playButton.clicked.c..(playSounds)
+        playButton.c___.c..(playSounds)
 
         nextButton _ QToolButton()
         nextButton.setIcon(QIcon("icons/next.png"))
         nextButton.setIconSize(QSize(48, 48))
         nextButton.setToolTip("Play Next")
-        nextButton.clicked.c..(playNext)
+        nextButton.c___.c..(playNext)
 
 
         muteButton _ QToolButton()
         muteButton.setIcon(QIcon("icons/mute.png"))
         muteButton.setIconSize(QSize(24, 24))
         muteButton.setToolTip("Mute")
-        muteButton.clicked.c..(muteSound)
+        muteButton.c___.c..(muteSound)
 
         # ####################Volume Slider#################
         volumeSlider_QSlider(Qt.Horizontal)

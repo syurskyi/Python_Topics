@@ -10,12 +10,12 @@ c_ MyForm(?D..
         s__. - ()
         ui _ Ui_Dialog()
         ui.setupUi
-        ui.pushButtonSearch.clicked.c..(displayLocation)
+        ui.pushButtonSearch.c___.c..(displayLocation)
         s..
    
     ___ displayLocation 
-        lng _ float(ui.lineEditLongitude.text())
-        lat _ float(ui.lineEditLatitude.text())
+        lng _ float(ui.lineEditLongitude.t..())
+        lat _ float(ui.lineEditLatitude.t..())
         google_maps _ GoogleMaps(api_key_'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
         my_location _ google_maps.search(lat_lat, lng_lng).first()
         ui.labelLocation.sT..("Location: "+st.(my_location))

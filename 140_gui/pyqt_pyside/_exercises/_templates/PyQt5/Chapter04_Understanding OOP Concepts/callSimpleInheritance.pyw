@@ -40,12 +40,12 @@ c_ MyForm(?D..
         s__. - ()
         ui _ Ui_Dialog()
         ui.setupUi
-        ui.ButtonClickMe.clicked.c..(dispmessage)
+        ui.ButtonClickMe.c___.c..(dispmessage)
         s..
 
     ___ dispmessage 
-        marksObj_Marks(ui.lineEditCode.text(), ui.lineEditName.text(), ui.lineEditHistoryMarks.text(), ui.lineEditGeographyMarks.text())
-        ui.labelResponse.sT..("Code: "+marksObj.getCode()+", Name:"+marksObj.getName()+"\nHistory Marks:"+marksObj.getHistoryMarks()+", Geography Marks:"+marksObj.getGeographyMarks())
+        marksObj_Marks(ui.lineEditCode.t..(), ui.lEN__.t..(), ui.lineEditHistoryMarks.t..(), ui.lineEditGeographyMarks.t..())
+        ui.lR___.sT..("Code: "+marksObj.getCode()+", Name:"+marksObj.getName()+"\nHistory Marks:"+marksObj.getHistoryMarks()+", Geography Marks:"+marksObj.getGeographyMarks())
 
 __ _ ____ __ _____
     app _ ?A..(___.argv)

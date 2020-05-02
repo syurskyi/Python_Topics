@@ -23,12 +23,12 @@ c_ MyForm(?D..
         s__. - ()
         ui _ Ui_Dialog()
         ui.setupUi
-        ui.ButtonClickMe.clicked.c..(dispmessage)
+        ui.ButtonClickMe.c___.c..(dispmessage)
         s..
 
     ___ dispmessage 
-        studentObj_Student(ui.lineEditCode.text(), ui.lineEditName.text())  
-        ui.labelResponse.sT..("Code: "+studentObj.getCode()+", Name:"+studentObj.getName())
+        studentObj_Student(ui.lineEditCode.t..(), ui.lEN__.t..())
+        ui.lR___.sT..("Code: "+studentObj.getCode()+", Name:"+studentObj.getName())
 
 __ _ ____ __ _____
     app _ ?A..(___.argv)

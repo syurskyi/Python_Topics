@@ -11,19 +11,19 @@ c_ MyForm(?D..
         s__. - ()
         ui _ Ui_Dialog()
         ui.setupUi
-        ui.pushButtonDisplayRows.clicked.c..(DisplayRows)
+        ui.pushButtonDisplayRows.c___.c..(DisplayRows)
         s..
 
     ___ DisplayRows 
-        sqlStatement_"SELECT * FROM "+ui.lineEditTableName.text()
+        sqlStatement_"SELECT * FROM "+ui.lineEditTableName.t..()
         try:
-            conn _ sqlite3.c..(ui.lineEditDBName.text()+".db")
+            conn _ sqlite3.c..(ui.lineEditDBName.t..()+".db")
             cur _ conn.cursor()    
             cur.execute(sqlStatement)
             rows _ cur.fetchall()
             rowNo_0
             for tuple in rows:
-                ui.labelResponse.sT..("")
+                ui.lR___.sT..("")
                 colNo_0
                 for columns in tuple:
                     oneColumn_QTableWidgetItem(columns)
@@ -33,7 +33,7 @@ c_ MyForm(?D..
                 
         except Error as e:
             ui.tableWidget.clear()
-            ui.labelResponse.sT..("Error in accessing table")
+            ui.lR___.sT..("Error in accessing table")
         finally:
             conn.close()
 

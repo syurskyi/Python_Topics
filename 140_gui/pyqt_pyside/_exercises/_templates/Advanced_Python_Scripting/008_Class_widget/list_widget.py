@@ -19,15 +19,15 @@ c_ simpleWindow(?W..
         fillList()
 
     ___ fullPath , item
-        return os.path.join(path,item.text())
+        return os.path.join(path,item.t..())
 
     ___ fillList 
         for f in os.listdir(path
             list.addItem(f)
 
     ___ updateText , item
-        text _open(fullPath(item)).read()
-        textBrowser.sT..(text)
+        t.. _open(fullPath(item)).read()
+        textBrowser.sT..(t..)
 
     ___ openFile , item
         path _ fullPath(item)

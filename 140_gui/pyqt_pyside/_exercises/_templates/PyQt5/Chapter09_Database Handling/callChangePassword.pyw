@@ -10,28 +10,28 @@ c_ MyForm(?D..
         s__. - ()
         ui _ Ui_Dialog()
         ui.setupUi
-        ui.pushButtonChangePassword.clicked.c..(ChangePassword)
+        ui.pushButtonChangePassword.c___.c..(ChangePassword)
         s..
 
     ___ ChangePassword 
-        selectStatement_"SELECT EmailAddress, Password FROM Users where EmailAddress like '"+ui.lineEditEmailAddress.text()+"' and Password like '"+ ui.lineEditOldPassword.text()+"'"
+        selectStatement_"SELECT EmailAddress, Password FROM Users where EmailAddress like '"+ui.lineEditEmailAddress.t..()+"' and Password like '"+ ui.lineEditOldPassword.t..()+"'"
         try:
             conn _ sqlite3.c..("ECommerce.db")
             cur _ conn.cursor()    
             cur.execute(selectStatement)
             row _ cur.fetchone()
             __ row__None:
-                ui.labelResponse.sT..("Sorry, Incorrect email address or password ")
+                ui.lR___.sT..("Sorry, Incorrect email address or password ")
             else:
-                __ ui.lineEditNewPassword.text()__ ui.lineEditRePassword.text(
-                    updateStatement_"UPDATE Users set Password = '" + ui.lineEditNewPassword.text()+"' WHERE EmailAddress like '"+ui.lineEditEmailAddress.text()+"'"
+                __ ui.lineEditNewPassword.t..()__ ui.lineEditRePassword.t..(
+                    updateStatement_"UPDATE Users set Password = '" + ui.lineEditNewPassword.t..()+"' WHERE EmailAddress like '"+ui.lineEditEmailAddress.t..()+"'"
                     with conn:
                         cur.execute(updateStatement)
-                        ui.labelResponse.sT..("Password successfully changed")
+                        ui.lR___.sT..("Password successfully changed")
                 else:
-                    ui.labelResponse.sT..("The two passwords don't match")
+                    ui.lR___.sT..("The two passwords don't match")
         except Error as e:
-            ui.labelResponse.sT..("Error in accessing row")
+            ui.lR___.sT..("Error in accessing row")
         finally:
             conn.close()
 

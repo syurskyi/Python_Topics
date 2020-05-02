@@ -10,7 +10,7 @@
 
 QProgressBar:horizontal {
     border: 1px solid #3A3939;
-    text-align: center;
+    t..-align: center;
     padding: 1px;
     background: #201F1F;
 }
@@ -642,7 +642,7 @@ QDockWidget::title
 {
     border: 1px solid #3A3939;
     border-bottom: #302F2F;
-    text-align: left;
+    t..-align: left;
     spacing: 2px;
     background-color: QLinearGradient(x1:0, y1:0, x2:0, y2:1,
     stop:1 #302F2F, stop:0 #3A3939);;

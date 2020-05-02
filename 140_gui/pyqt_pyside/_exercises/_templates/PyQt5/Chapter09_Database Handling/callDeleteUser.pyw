@@ -10,15 +10,15 @@ c_ MyForm(?D..
         s__. - ()
         ui _ Ui_Dialog()
         ui.setupUi
-        ui.pushButtonDelete.clicked.c..(DeleteUser)
-        ui.pushButtonYes.clicked.c..(ConfirmDelete)
+        ui.pushButtonDelete.c___.c..(DeleteUser)
+        ui.pushButtonYes.c___.c..(ConfirmDelete)
         ui.labelSure.hide()
         ui.pushButtonYes.hide()
         ui.pushButtonNo.hide()       
         s..
 
     ___ DeleteUser 
-        selectStatement_"SELECT * FROM Users where EmailAddress like '"+ui.lineEditEmailAddress.text()+"' and Password like '"+ ui.lineEditPassword.text()+"'"
+        selectStatement_"SELECT * FROM Users where EmailAddress like '"+ui.lineEditEmailAddress.t..()+"' and Password like '"+ ui.lineEditPassword.t..()+"'"
         try:
             conn _ sqlite3.c..("ECommerce.db")
             cur _ conn.cursor()
@@ -28,27 +28,27 @@ c_ MyForm(?D..
                 ui.labelSure.hide()
                 ui.pushButtonYes.hide()
                 ui.pushButtonNo.hide()   
-                ui.labelResponse.sT..("Sorry, Incorrect email address or password ")
+                ui.lR___.sT..("Sorry, Incorrect email address or password ")
             else:
                 ui.labelSure.s..
                 ui.pushButtonYes.s..
                 ui.pushButtonNo.s..
-                ui.labelResponse.sT..("")
+                ui.lR___.sT..("")
         except Error as e:
-            ui.labelResponse.sT..("Error in accessing user account")
+            ui.lR___.sT..("Error in accessing user account")
         finally:
             conn.close()
 
     ___ ConfirmDelete 
-        deleteStatement_"DELETE FROM Users where EmailAddress like '"+ui.lineEditEmailAddress.text()+"' and Password like '"+ ui.lineEditPassword.text()+"'"
+        deleteStatement_"DELETE FROM Users where EmailAddress like '"+ui.lineEditEmailAddress.t..()+"' and Password like '"+ ui.lineEditPassword.t..()+"'"
         try:
             conn _ sqlite3.c..("ECommerce.db")
             cur _ conn.cursor()
             with conn:
                 cur.execute(deleteStatement)
-                ui.labelResponse.sT..("User successfully deleted")
+                ui.lR___.sT..("User successfully deleted")
         except Error as e:
-            ui.labelResponse.sT..("Error in deleting user account")
+            ui.lR___.sT..("Error in deleting user account")
         finally:
             conn.close()
 

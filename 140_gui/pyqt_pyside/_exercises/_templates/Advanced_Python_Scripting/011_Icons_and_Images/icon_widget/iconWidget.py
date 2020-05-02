@@ -43,8 +43,8 @@ c_ iconWidgetClass(QMainWindow, ui.Ui_MainWindow
         list_lwd.setDragDropMode(QAbstractItemView.NoDragDrop)
 
         #connects
-        fill_btn.clicked.c..(filList)
-        clear_btn.clicked.c..(clearList)
+        fill_btn.c___.c..(filList)
+        clear_btn.c___.c..(clearList)
         fill_act.triggered.c..(fillCombo)
         clear_act.triggered.c..(clearCombo)
 

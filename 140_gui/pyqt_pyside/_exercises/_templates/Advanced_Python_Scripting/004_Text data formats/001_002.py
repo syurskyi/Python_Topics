@@ -12,10 +12,10 @@ c_ settingClass(object
 
 	___ __readFile 
 		f _ open(fullPath)
-		text _ f.readlines()
+		t.. _ f.readlines()
 		f.close()
 		# data = {}
-		for line in text:
+		for line in t..:
 			key, value _ line.strip().split("=")
 			# data[key] = value
 			print(key, value)

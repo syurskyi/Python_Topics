@@ -10,7 +10,7 @@ c_ MyForm(?D..
         s__. - ()
         ui _ Ui_Dialog()
         ui.setupUi
-        ui.pushButtonBounce.clicked.c..(startAnimation)
+        ui.pushButtonBounce.c___.c..(startAnimation)
         s..
 
     ___ startAnimation 

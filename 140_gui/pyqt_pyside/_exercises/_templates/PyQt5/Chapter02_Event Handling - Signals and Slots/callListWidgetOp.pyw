@@ -13,14 +13,14 @@ c_ MyForm(?D..
         ui.listWidget.addItem('Soda')
         ui.listWidget.addItem('Coffee')
         ui.listWidget.addItem('Chocolate')
-        ui.pushButtonAdd.clicked.c..(addlist)
-        ui.pushButtonEdit.clicked.c..(editlist)
-        ui.pushButtonDelete.clicked.c..(delitem)
-        ui.pushButtonDeleteAll.clicked.c..(delallitems)
+        ui.pushButtonAdd.c___.c..(addlist)
+        ui.pushButtonEdit.c___.c..(editlist)
+        ui.pushButtonDelete.c___.c..(delitem)
+        ui.pushButtonDeleteAll.c___.c..(delallitems)
         s..
 
     ___ addlist 
-        ui.listWidget.addItem(ui.lineEdit.text())
+        ui.listWidget.addItem(ui.lineEdit.t..())
         ui.lineEdit.sT..('')
         ui.lineEdit.setFocus()
         

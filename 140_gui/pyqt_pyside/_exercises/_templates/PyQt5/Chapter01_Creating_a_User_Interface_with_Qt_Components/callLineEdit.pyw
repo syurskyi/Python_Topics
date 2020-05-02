@@ -1,22 +1,22 @@
-_____ ___
-
-____ ?.?W.. _____ ?D.., ?A..
-
-____ demoLineEdit _____ *
-
-c_ MyForm(?D..
-    ___  -
-        s__. - ()
-        ui _ Ui_Dialog()
-        ui.setupUi
-        ui.ButtonClickMe.clicked.c..(dispmessage)
-        s..
-
-    ___ dispmessage
-        ui.labelResponse.sT..("Hello "+ui.lineEditName.text())
-
-__ _ ____ __ _____
-    app _ ?A..(___.argv)
-    w _ MyForm()
-    w.s..
-    ___.e..(app.exec_())
+# _____ ___
+#
+# ____ ?.?W.. _____ ?D.., ?A..
+#
+# ____ demoLineEdit _____ _
+#
+# c_ MyForm ?D..
+#     ___  -
+#         s__. -
+#         ui _ ?
+#         ?.setupUi
+#         ?.ButtonClickMe.c___.c.. ?
+#         s..
+#
+#     ___ dispmessage
+#         ?.lR___.sT.. "Hello "+?.lEN__.t..
+#
+# __ _ ____ __ _____
+#     app _ ?A..
+#     w _ ?
+#     w.s..
+#     ___.e.. ?.e..

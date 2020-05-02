@@ -10,20 +10,20 @@ c_ MyForm(?D..
         s__. - ()
         ui _ Ui_Dialog()
         ui.setupUi
-        ui.pushButtonInsertRow.clicked.c..(InsertRows)
+        ui.pushButtonInsertRow.c___.c..(InsertRows)
         s..
 
     ___ InsertRows
-        sqlStatement_"INSERT INTO "+ui.lineEditTableName.text()+" VALUES('"+ui.lineEditEmailAddress.text()+"', '"+ui.lineEditPassword.text()+"')"
+        sqlStatement_"INSERT INTO "+ui.lineEditTableName.t..()+" VALUES('"+ui.lineEditEmailAddress.t..()+"', '"+ui.lineEditPassword.t..()+"')"
         try:
-            conn _ sqlite3.c..(ui.lineEditDBName.text()+".db")
+            conn _ sqlite3.c..(ui.lineEditDBName.t..()+".db")
             with conn:
                 cur _ conn.cursor()
                 cur.execute(sqlStatement)
                 conn.commit()
-            ui.labelResponse.sT..("Row successfully inserted")
+            ui.lR___.sT..("Row successfully inserted")
         except Error as e:
-            ui.labelResponse.sT..("Error in inserting row")
+            ui.lR___.sT..("Error in inserting row")
         finally:
             conn.close()
 

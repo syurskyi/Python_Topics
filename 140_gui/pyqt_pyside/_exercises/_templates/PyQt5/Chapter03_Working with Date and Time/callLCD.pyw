@@ -16,8 +16,8 @@ c_ MyForm(?D..
   
     ___ showlcd
         time _ ?C...QTime.currentTime()
-        text _ time.toString('hh:mm')
-        ui.lcdNumber.display(text)
+        t.. _ time.toString('hh:mm')
+        ui.lcdNumber.display(t..)
  
 __ _ ____ __ _____
     app _ ?A..(___.argv)

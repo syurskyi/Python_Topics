@@ -11,7 +11,7 @@ c_ MyForm(?D..
         s__. - ()
         ui _ Ui_Dialog()
         ui.setupUi
-        ui.pushButtonMoveCurve.clicked.c..(startAnimation)
+        ui.pushButtonMoveCurve.c___.c..(startAnimation)
         path _ QPainterPath()
         path.moveTo(30, 30)
         path.cubicTo(30, 30, 80, 180, 180, 170)                

@@ -29,11 +29,11 @@ c_ Main(?W..
         employeeList_QListWidget()
         employeeList.itemClicked.c..(singleClick)
         btnNew_?PB..("New")
-        btnNew.clicked.c..(addEmployee)
+        btnNew.c___.c..(addEmployee)
         btnUpdate_?PB..("Update")
-        btnUpdate.clicked.c..(updateEmployee)
+        btnUpdate.c___.c..(updateEmployee)
         btnDelete_?PB..("Delete")
-        btnDelete.clicked.c..(deleteEmployee)
+        btnDelete.c___.c..(deleteEmployee)
 
     ___ layouts 
         ###################Layouts###############
@@ -89,7 +89,7 @@ c_ Main(?W..
             __ widget is not None:
                 widget.deleteLater()
 
-        employee_employeeList.currentItem().text()
+        employee_employeeList.currentItem().t..()
         id_employee.split("-")[0]
         query_("SELECT * FROM employees WHERE id=?")
         person_cur.execute(query,(id,)).fetchone()#single item tuple=(1,)
@@ -110,7 +110,7 @@ c_ Main(?W..
 
     ___ deleteEmployee 
         __ employeeList.selectedItems(
-            person_employeeList.currentItem().text()
+            person_employeeList.currentItem().t..()
             id _ person.split("-")[0]
             mbox_QMessageBox.question ,"Warning","Are you sure to delete this person?",QMessageBox.Yes|QMessageBox.No,QMessageBox.No)
             __ mbox __ QMessageBox.Yes:
@@ -132,7 +132,7 @@ c_ Main(?W..
     ___ updateEmployee 
         global person_id
         __ employeeList.selectedItems(
-            person _ employeeList.currentItem().text()
+            person _ employeeList.currentItem().t..()
             person_id_person.split("-")[0]
             updateWindow_UpdateEmployee()
             close()
@@ -194,13 +194,13 @@ c_ UpdateEmployee(?W..
         imgLbl _ QLabel("Picture: ")
         imgButton _ ?PB..("Browse")
         imgButton.setStyleSheet("background-color:orange;font-size:10pt")
-        imgButton.clicked.c..(uploadImage)
+        imgButton.c___.c..(uploadImage)
         addressLbl _ QLabel("Address: ")
         addressEditor _ QTextEdit()
         addressEditor.sT..(address)
         addButton _ ?PB..("Update")
         addButton.setStyleSheet("background-color:orange;font-size:10pt")
-        addButton.clicked.c..(updateEmployee)
+        addButton.c___.c..(updateEmployee)
 
     ___ layouts 
         ##################creating main layouts##########
@@ -249,10 +249,10 @@ c_ UpdateEmployee(?W..
     ___ updateEmployee 
         global defaultImg
         global person_id
-        name_nameEntry.text()
-        surname_surnameEntry.text()
-        phone_phoneEntry.text()
-        email_emailEntry.text()
+        name_nameEntry.t..()
+        surname_surnameEntry.t..()
+        phone_phoneEntry.t..()
+        email_emailEntry.t..()
         img_defaultImg
         address_addressEditor.toPlainText()
         __ (name and surname and phone !_""
@@ -309,12 +309,12 @@ c_ AddEmployee(?W..
         imgLbl_QLabel("Picture: ")
         imgButton_?PB..("Browse")
         imgButton.setStyleSheet("background-color:orange;font-size:10pt")
-        imgButton.clicked.c..(uploadImage)
+        imgButton.c___.c..(uploadImage)
         addressLbl_QLabel("Address: ")
         addressEditor_QTextEdit()
         addButton_?PB..("Add")
         addButton.setStyleSheet("background-color:orange;font-size:10pt")
-        addButton.clicked.c..(addEmployee)
+        addButton.c___.c..(addEmployee)
 
     ___ layouts 
         ##################creating main layouts##########
@@ -361,10 +361,10 @@ c_ AddEmployee(?W..
 
     ___ addEmployee 
         global defaultImg
-        name_nameEntry.text()
-        surname_surnameEntry.text()
-        phone_phoneEntry.text()
-        email_emailEntry.text()
+        name_nameEntry.t..()
+        surname_surnameEntry.t..()
+        phone_phoneEntry.t..()
+        email_emailEntry.t..()
         img_defaultImg
         address_addressEditor.toPlainText()
         __ (name and surname and phone !_""

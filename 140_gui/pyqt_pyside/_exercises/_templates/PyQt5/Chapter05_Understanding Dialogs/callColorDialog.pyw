@@ -12,7 +12,7 @@ c_ MyForm(?D..
         ui _ Ui_Dialog()
         ui.setupUi
         ui.frameColor.setStyleSheet("QWidget { background-color: %s }" % col.name())
-        ui.pushButtonColor.clicked.c..(dispcolor)
+        ui.pushButtonColor.c___.c..(dispcolor)
         s..
 
     ___ dispcolor 

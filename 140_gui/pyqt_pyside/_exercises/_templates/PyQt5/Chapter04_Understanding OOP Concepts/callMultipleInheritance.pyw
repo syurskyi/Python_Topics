@@ -54,11 +54,11 @@ c_ MyForm(?D..
         s__. - ()
         ui _ Ui_Dialog()
         ui.setupUi
-        ui.ButtonClickMe.clicked.c..(dispmessage)
+        ui.ButtonClickMe.c___.c..(dispmessage)
         s..
 
     ___ dispmessage 
-        resultObj_Result(ui.lineEditCode.text(), ui.lineEditName.text(), int(ui.lineEditHistoryMarks.text()), int(ui.lineEditGeographyMarks.text()))
+        resultObj_Result(ui.lineEditCode.t..(), ui.lEN__.t..(), int(ui.lineEditHistoryMarks.t..()), int(ui.lineEditGeographyMarks.t..()))
         ui.lineEditTotal.sT..(st.(resultObj.getTotalMarks()))
         ui.lineEditPercentage.sT..(st.(resultObj.getPercentage()))
 

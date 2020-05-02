@@ -17,8 +17,8 @@ c_ MyForm(?D..
         items _ ui.listWidgetDiagnosis.selectedItems()
         x_[]
         for i in list(items
-            ui.listWidgetSelectedTests.addItem(i.text())
-            x.append(st.(i.text()))
+            ui.listWidgetSelectedTests.addItem(i.t..())
+            x.append(st.(i.t..()))
         
 __ _ ____ __ _____
     app _ ?A..(___.argv)

@@ -11,14 +11,14 @@ c_ MyForm(?D..
         s__. - ()
         ui _ Ui_Dialog()
         ui.setupUi
-        ui.pushButtonShowMap.clicked.c..(dispSite)
+        ui.pushButtonShowMap.c___.c..(dispSite)
         s..
 
 
     ___ dispSite 
-        lng _ float(ui.lineEditLongitude.text())
-        lat _ float(ui.lineEditLatitude.text())
-        URL_"https://www.google.com/maps/@"+ui.lineEditLatitude.text()+","+ui.lineEditLongitude.text()+",9z"
+        lng _ float(ui.lineEditLongitude.t..())
+        lat _ float(ui.lineEditLatitude.t..())
+        URL_"https://www.google.com/maps/@"+ui.lineEditLatitude.t..()+","+ui.lineEditLongitude.t..()+",9z"
         ui.widget.load(QUrl(URL))
         
 __ _ ____ __ _____

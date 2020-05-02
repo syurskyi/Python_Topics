@@ -8,7 +8,7 @@ root _ tree.getroot()
 for elem in root.getchildren(
     print(elem.tag)
     print(elem.attrib)
-    print(elem.text)
+    print(elem.t..)
 
 ___ readXml(root, ind_''
     for elem in root.getchildren(
@@ -21,7 +21,7 @@ root _ ET.Element('root')
 elem _ ET.SubElement(root, 'subElement')
 elem.set('name', 'Max')
 elem2 _ ET.SubElement(root, 'subElement2')
-elem2.text _ 'SOME TEXT'
+elem2.t.. _ 'SOME TEXT'
 
 tree _ ET.ElementTree(root)
 tree.write(path)

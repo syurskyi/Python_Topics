@@ -18,7 +18,7 @@ c_ listWidgetClass(QListWidget
         elif mimedata.hasColor(
             print mimedata.colorData()
         elif mimedata.hasText(
-            print mimedata.text()
+            print mimedata.t..()
 
 
     ___ dragEnterEvent , event

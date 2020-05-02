@@ -11,7 +11,7 @@ c_ MyForm(?D..
         ui.setupUi
         roomtypes_['Suite', 'Super Luxury', 'Super Deluxe', 'Ordinary']
         addcontent()     
-        ui.pushButton.clicked.c..(computeRoomRent) 
+        ui.pushButton.c___.c..(computeRoomRent)
         s..
 
     ___ addcontent 

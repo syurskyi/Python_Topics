@@ -9,15 +9,15 @@ c_ MyForm(?D..
         s__. - ()
         ui _ Ui_Dialog()
         ui.setupUi
-        ui.pushButtonCreateDB.clicked.c..(createDatabase)
+        ui.pushButtonCreateDB.c___.c..(createDatabase)
         s..
 
     ___ createDatabase 
         try:
-            conn _ sqlite3.c..(ui.lineEditDBName.text()+".db")
-            ui.labelResponse.sT..("Database is created")
+            conn _ sqlite3.c..(ui.lineEditDBName.t..()+".db")
+            ui.lR___.sT..("Database is created")
         except Error as e:
-            ui.labelResponse.sT..("Some error has occurred")
+            ui.lR___.sT..("Some error has occurred")
         finally:
             conn.close()
 

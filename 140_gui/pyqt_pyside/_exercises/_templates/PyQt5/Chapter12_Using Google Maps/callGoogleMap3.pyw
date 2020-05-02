@@ -11,15 +11,15 @@ c_ MyForm(?D..
         s__. - ()
         ui _ Ui_Dialog()
         ui.setupUi
-        ui.pushButtonFindDistance.clicked.c..(displayDistance)
+        ui.pushButtonFindDistance.c___.c..(displayDistance)
         s..
    
     ___ displayDistance 
         api_key _ 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
         gmaps _ Client(api_key)
-        data _ distance_matrix(gmaps, ui.lineEditFirstLocation.text(), ui.lineEditSecondLocation.text())
+        data _ distance_matrix(gmaps, ui.lineEditFirstLocation.t..(), ui.lineEditSecondLocation.t..())
         distance _ data['rows'][0]['elements'][0]['distance']['text']
-        ui.labelDistance.sT..("Distance between "+ui.lineEditFirstLocation.text()+" and "+ui.lineEditSecondLocation.text()+" is "+st.(distance))
+        ui.labelDistance.sT..("Distance between "+ui.lineEditFirstLocation.t..()+" and "+ui.lineEditSecondLocation.t..()+" is "+st.(distance))
           
 __ _ ____ __ _____
     app _ ?A..(___.argv)

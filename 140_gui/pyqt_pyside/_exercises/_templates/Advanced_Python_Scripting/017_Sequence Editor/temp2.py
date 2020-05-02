@@ -25,7 +25,7 @@ c_ eDrum(QtGui.?W..
 
         # tab for input
         pushButtonOK _ QtGui.?PB..("OK")
-        pushButtonOK.clicked.c..(setPreferences)
+        pushButtonOK.c___.c..(setPreferences)
 
         vBoxlayout _ QtGui.QVBoxLayout()
         hBoxlayout _ QtGui.QHBoxLayout()
@@ -282,7 +282,7 @@ c_ mainWindow(QtGui.QMainWindow
         tabs.setTabsClosable(T..)
         tabs.tabsClosable
         tabs.setCornerWidget(tabButton)
-        tabButton.clicked.c..(createTab)
+        tabButton.c___.c..(createTab)
         tabs.tabCloseRequested.c..(closeTab)
 
         # createting V layout
@@ -394,7 +394,7 @@ c_ mainWindow(QtGui.QMainWindow
 
     ___ setMidiNote
         # print("set midi note")
-        midiNote _ int(sender().text())
+        midiNote _ int(sender().t..())
         # print(self.midiNote)
 
     ___ midiDevice
@@ -432,7 +432,7 @@ c_ mainWindow(QtGui.QMainWindow
 
     ___ setMidiDevice
         print("setMidiDevice")
-        sender _ sender().text()
+        sender _ sender().t..()
         print(sender)
         print(type(sender))
 
@@ -627,9 +627,9 @@ c_ mainWindow(QtGui.QMainWindow
                 numRows _ w.table.rowCount()
                 print(numRows)
                 for row in range(numRows
-                    c _ w.table.item(row, 0).text()
-                    s _ w.table.item(row, 1).text()
-                    o _ w.table.item(row, 2).text()
+                    c _ w.table.item(row, 0).t..()
+                    s _ w.table.item(row, 1).t..()
+                    o _ w.table.item(row, 2).t..()
                     songDict[elem]["song"].append([c, s, o])
             tabs.setCurrentIndex(0)
             print(songDict)
@@ -682,9 +682,9 @@ c_ songCreator(QtGui.QTabWidget
         tableIndex _ 0
         # tab for input -------------------------------------------
         pushButton1 _ QtGui.?PB..("Add song")
-        pushButton1.clicked.c..(addsong)
+        pushButton1.c___.c..(addsong)
         pushButton2 _ QtGui.?PB..("Remove song")
-        pushButton2.clicked.c..(deletesong)
+        pushButton2.c___.c..(deletesong)
 
         # self.pushButton3 = QtGui.QPushButton("Delete Entire Sequence")
         # self.pushButton3.clicked.connect(self.deleteTab)

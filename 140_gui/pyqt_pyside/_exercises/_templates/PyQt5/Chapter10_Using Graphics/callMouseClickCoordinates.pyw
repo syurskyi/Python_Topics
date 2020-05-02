@@ -14,14 +14,14 @@ c_ MyForm(?D..
         __ event.buttons() & ?C...Qt.LeftButton:
             x _ event.x()
             y _ event.y()    
-            text _ "x: {0},  y: {1}".format(x, y)
-            ui.labelPress.sT..('Mouse button pressed at '+text)
+            t.. _ "x: {0},  y: {1}".format(x, y)
+            ui.labelPress.sT..('Mouse button pressed at '+t..)
             
     ___ mouseReleaseEvent , event
         x _ event.x()
         y _ event.y()    
-        text _ "x: {0},  y: {1}".format(x, y)
-        ui.labelRelease.sT..('Mouse button released at '+text)
+        t.. _ "x: {0},  y: {1}".format(x, y)
+        ui.labelRelease.sT..('Mouse button released at '+t..)
         update()
                   
 __ _ ____ __ _____

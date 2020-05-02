@@ -10,24 +10,24 @@ c_ MyForm(?D..
         s__. - ()
         ui _ Ui_Dialog()
         ui.setupUi
-        ui.pushButtonSearch.clicked.c..(SearchRows)
+        ui.pushButtonSearch.c___.c..(SearchRows)
         s..
 
     ___ SearchRows
-        sqlStatement_"SELECT Password FROM "+ui.lineEditTableName.text()+" where EmailAddress like '"+ui.lineEditEmailAddress.text()+"'"
+        sqlStatement_"SELECT Password FROM "+ui.lineEditTableName.t..()+" where EmailAddress like '"+ui.lineEditEmailAddress.t..()+"'"
         try:
-            conn _ sqlite3.c..(ui.lineEditDBName.text()+".db")
+            conn _ sqlite3.c..(ui.lineEditDBName.t..()+".db")
             cur _ conn.cursor()
             cur.execute(sqlStatement)
             row _ cur.fetchone()
             __ row__None:
-                ui.labelResponse.sT..("Sorry, No User found with this email address")
+                ui.lR___.sT..("Sorry, No User found with this email address")
                 ui.lineEditPassword.sT..("")
             else:
-                ui.labelResponse.sT..("Email Address Found, Password of this User is :")
+                ui.lR___.sT..("Email Address Found, Password of this User is :")
                 ui.lineEditPassword.sT..(row[0])
         except Error as e:
-            ui.labelResponse.sT..("Error in accessing row")
+            ui.lR___.sT..("Error in accessing row")
         finally:
             conn.close()
 

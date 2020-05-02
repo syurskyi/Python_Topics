@@ -179,7 +179,7 @@ c_ TP_Launcher_GUI(?W...?W..
     ___ _setup_connections 
         ws _ _workspace_changed
         _workspace_cb.currentIndexChanged.c..(ws)
-        _edit_btn.clicked.c..(_edit_toggle)
+        _edit_btn.c___.c..(_edit_toggle)
         dw _ _dragging_workspace
         _workspace_cb.view().pressed.c..(dw)
         _app_lw.itemPressed.c..(_dragging_app)
@@ -226,7 +226,7 @@ c_ TP_Launcher_GUI(?W...?W..
 
     ___ _run_app , item
         item.setSelected(False)
-        _tp_launcher.run_app(get_workspace(), st.(item.text()))
+        _tp_launcher.run_app(get_workspace(), st.(item.t..()))
 
     #======= EDIT MODE =================================
 
@@ -250,11 +250,11 @@ c_ TP_Launcher_GUI(?W...?W..
     ___ _add_workspace 
         ws _ 'New WORKSPACE'
         msg _ 'What would you like to title the new WORKSPACE?'
-        text _ ?W...QInputDialog.getText , ws, msg)[0]
-        __ text:
-            _tp_launcher.add_workspace(st.(text))
+        t.. _ ?W...QInputDialog.getText , ws, msg)[0]
+        __ t..:
+            _tp_launcher.add_workspace(st.(t..))
             _populate_workspaces()
-            index _ _workspace_cb.findText(text)
+            index _ _workspace_cb.findText(t..)
             _workspace_cb.setCurrentIndex(index)
             _save_settings()
 
@@ -288,7 +288,7 @@ c_ TP_Launcher_GUI(?W...?W..
         _dragging _ ('workspace', ws)
 
     ___ _dragging_app , item
-        _dragging _ ('application', st.(item.text()))
+        _dragging _ ('application', st.(item.t..()))
 
     ___ _delete_app , app_name
         _tp_launcher.delete_app(get_workspace(), app_name)
@@ -315,7 +315,7 @@ c_ TP_Launcher_GUI(?W...?W..
 
     ___ _save_settings 
         c _ _app_lw.count()
-        names _ [_app_lw.item(i).text() for i in range(c)]
+        names _ [_app_lw.item(i).t..() for i in range(c)]
         ws _ get_workspace()
         _tp_launcher.reorder_apps(ws, names)
         _settings.setValue('CurrentWorkspace', ws)

@@ -40,7 +40,7 @@ c_ MyForm(?D..
             pos1[0], pos1[1] _ event.pos().x(), event.pos().y()
                         
     ___ mouseReleaseEvent , event
-        lineType_ui.listWidgetLineType.currentItem().text()
+        lineType_ui.listWidgetLineType.currentItem().t..()
         pos2[0], pos2[1] _ event.pos().x(), event.pos().y()
         update()
                   

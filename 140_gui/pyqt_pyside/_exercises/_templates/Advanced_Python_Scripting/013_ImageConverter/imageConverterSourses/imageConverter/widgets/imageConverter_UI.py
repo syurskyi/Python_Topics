@@ -17,11 +17,11 @@ except AttributeError:
 
 try:
     _encoding _ QtGui.?A...UnicodeUTF8
-    ___ _translate(context, text, disambig
-        return QtGui.?A...translate(context, text, disambig, _encoding)
+    ___ _translate(context, t.., disambig
+        return QtGui.?A...translate(context, t.., disambig, _encoding)
 except AttributeError:
-    ___ _translate(context, text, disambig
-        return QtGui.?A...translate(context, text, disambig)
+    ___ _translate(context, t.., disambig
+        return QtGui.?A...translate(context, t.., disambig)
 
 c_ Ui_imageConverter(object
     ___ setupUi , imageConverter

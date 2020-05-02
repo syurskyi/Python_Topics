@@ -8,21 +8,21 @@ c_ MyWidget(?W..
         layout _ QVBoxLayout
         button _ ?PB..('Print')
         layout.addWidget(button)
-        button.clicked.c..(action)
+        button.c___.c..(action)
         line _ QLineEdit()
         layout.addWidget(line)
-        line.tC...c..(text)
+        line.tC...c..(t..)
         # self.connect(button, SIGNAL('clicked()'),
         #              self, SLOT('action()'))
 
-        @button.clicked.c..
+        @button.c___.c..
         ___ click(
             action()
 
     ___ action 
         print 'ACTION'
 
-    ___ text , arg
+    ___ t.. , arg
         print arg
 
 

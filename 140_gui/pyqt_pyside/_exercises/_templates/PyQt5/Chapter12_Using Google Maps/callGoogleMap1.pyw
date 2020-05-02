@@ -10,11 +10,11 @@ c_ MyForm(?D..
         s__. - ()
         ui _ Ui_Dialog()
         ui.setupUi
-        ui.pushButtonSearch.clicked.c..(displayDetails)
+        ui.pushButtonSearch.c___.c..(displayDetails)
         s..
    
     ___ displayDetails 
-        address _ st.(ui.lineEditLocation.text())
+        address _ st.(ui.lineEditLocation.t..())
         google_maps _ GoogleMaps(api_key_'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
         location _ google_maps.search(location_address) # sends search to Google Maps.
         my_location _ location.first()

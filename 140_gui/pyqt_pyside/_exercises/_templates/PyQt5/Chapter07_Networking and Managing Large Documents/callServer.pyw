@@ -16,14 +16,14 @@ c_ Window(?D..
         ui _ Ui_Dialog()
         ui.setupUi
         textEditMessages_ui.textEditMessages
-        ui.pushButtonSend.clicked.c..(dispMessage)
+        ui.pushButtonSend.c___.c..(dispMessage)
         s..
 
     ___ dispMessage 
-        text_ui.lineEditMessage.text()
+        text_ui.lineEditMessage.t..()
         global conn
-        conn.send(text.encode("utf-8"))
-        ui.textEditMessages.append("Server: "+ui.lineEditMessage.text())
+        conn.send(t...encode("utf-8"))
+        ui.textEditMessages.append("Server: "+ui.lineEditMessage.t..())
         ui.lineEditMessage.sT..("")
 
 c_ ServerThread(Thread

@@ -11,12 +11,12 @@ c_ MyForm(?D..
         s__. - ()
         ui _ Ui_Dialog()
         ui.setupUi
-        ui.pushButtonGo.clicked.c..(dispSite)
+        ui.pushButtonGo.c___.c..(dispSite)
         s..
 
 
     ___ dispSite 
-        ui.widget.load(QUrl(ui.lineEditURL.text()))
+        ui.widget.load(QUrl(ui.lineEditURL.t..()))
         
 __ _ ____ __ _____
     app _ ?A..(___.argv)

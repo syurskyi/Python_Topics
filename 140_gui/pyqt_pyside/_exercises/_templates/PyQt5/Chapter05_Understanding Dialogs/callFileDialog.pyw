@@ -29,8 +29,8 @@ c_ MyForm(QMainWindow
         options |_ QFileDialog.DontUseNativeDialog
         fileName, _ _ QFileDialog.getSaveFileName ,"QFileDialog.getSaveFileName()","","All Files (*);;Text Files (*.txt)", options_options)
         f _ open(fileName,'w')
-        text _ ui.textEdit.toPlainText()
-        f.write(text)
+        t.. _ ui.textEdit.toPlainText()
+        f.write(t..)
         f.close()
 
 __ _ ____ __ _____

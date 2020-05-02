@@ -18,12 +18,12 @@ c_ MyForm(?D..
         s__. - ()
         ui _ Ui_Dialog()
         ui.setupUi
-        ui.ButtonClickMe.clicked.c..(dispmessage)
+        ui.ButtonClickMe.c___.c..(dispmessage)
         s..
 
     ___ dispmessage 
-        studentObj_Student(ui.lineEditName.text())
-        ui.labelResponse.sT..("Hello "+studentObj.printName())
+        studentObj_Student(ui.lEN__.t..())
+        ui.lR___.sT..("Hello "+studentObj.printName())
 
 __ _ ____ __ _____
     app _ ?A..(___.argv)

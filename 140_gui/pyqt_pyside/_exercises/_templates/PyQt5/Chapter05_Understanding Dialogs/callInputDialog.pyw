@@ -9,7 +9,7 @@ c_ MyForm(?D..
         s__. - ()
         ui _ Ui_Dialog()
         ui.setupUi
-        ui.pushButtonCountry.clicked.c..(dispmessage)
+        ui.pushButtonCountry.c___.c..(dispmessage)
         s..
 
     ___ dispmessage 

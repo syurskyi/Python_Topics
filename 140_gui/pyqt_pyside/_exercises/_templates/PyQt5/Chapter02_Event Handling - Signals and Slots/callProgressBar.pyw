@@ -9,7 +9,7 @@ c_ MyForm(?D..
         s__. - ()
         ui _ Ui_Dialog()
         ui.setupUi
-        ui.pushButtonStart.clicked.c..(updateBar)
+        ui.pushButtonStart.c___.c..(updateBar)
         s..
 
     ___ updateBar 

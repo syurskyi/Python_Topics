@@ -12,7 +12,7 @@ c_ MyForm(?D..
         s__. - ()
         ui _ Ui_Dialog()
         ui.setupUi
-        ui.pushButtonDrawText.clicked.c..(dispText)
+        ui.pushButtonDrawText.c___.c..(dispText)
         textToDraw_""
         fontName_"Courier New"
         fontSize_5
@@ -27,7 +27,7 @@ c_ MyForm(?D..
         qp.end()  
 
     ___ dispText
-        fontName_ui.listWidgetFont.currentItem().text()
+        fontName_ui.listWidgetFont.currentItem().t..()
         fontSize_int(ui.comboBoxFontSize.itemText(ui.comboBoxFontSize.currentIndex()))
         textToDraw_ui.textEdit.toPlainText()
         update()

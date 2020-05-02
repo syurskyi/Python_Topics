@@ -9,11 +9,11 @@ c_ MyForm(?D..
         s__. - ()
         ui _ Ui_Dialog()
         ui.setupUi
-        ui.pushButtonAdd.clicked.c..(addlist)
+        ui.pushButtonAdd.c___.c..(addlist)
         s..
 
     ___ addlist
-        ui.listWidgetSelectedItems.addItem(ui.lineEditFoodItem.text())
+        ui.listWidgetSelectedItems.addItem(ui.lineEditFoodItem.t..())
         ui.lineEditFoodItem.sT..('')
         ui.lineEditFoodItem.setFocus()
         

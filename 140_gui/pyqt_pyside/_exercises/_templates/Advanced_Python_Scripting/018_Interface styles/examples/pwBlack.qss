@@ -354,14 +354,14 @@ QHeaderView::section
 
 QDockWidget::title
 {
-    text-align: center;
+    t..-align: center;
     spacing: 3px; /* spacing between items in the tool bar */
     background-color: QLinearGradient(x1:0, y1:0, x2:0, y2:1, stop:0 #323232, stop: 0.5 #242424, stop:1 #323232);
 }
 
 QDockWidget::close-button, QDockWidget::float-button
 {
-    text-align: center;
+    t..-align: center;
     spacing: 1px; /* spacing between items in the tool bar */
     background-color: QLinearGradient(x1:0, y1:0, x2:0, y2:1, stop:0 #323232, stop: 0.5 #242424, stop:1 #323232);
 }
@@ -390,7 +390,7 @@ QProgressBar
 {
     border: 2px solid grey;
     border-radius: 3px;
-    text-align: center;
+    t..-align: center;
 }
 
 QProgressBar::chunk

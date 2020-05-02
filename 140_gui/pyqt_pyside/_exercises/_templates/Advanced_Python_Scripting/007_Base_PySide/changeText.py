@@ -11,12 +11,12 @@ c_ SimpleWindowClass(?W..
         layout.addWidget(label)
         button _ ?PB..('Press')
         layout.addWidget(button)
-        button.clicked.c..(action)
+        button.c___.c..(action)
 
     ___ action 
         label.sT..('New Text')
         button.sT..('Presseed')
-        button.clicked.c..(close)
+        button.c___.c..(close)
 
 
 __ __name__ __ '__main__':

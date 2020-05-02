@@ -19,15 +19,15 @@
 #     ___ dispAmount
 #         amount_10
 #         __ ?.chBC__.iC..__T..
-#             amount_amount+1
+#             ?_?+1
 #         __ ?.cBO__.iC..__T..
-#             amount_amount+1
+#             ?_?+1
 #         __ ?.cBS__.iC..__T..
-#             amount_amount+2
+#             ?_?+2
 #         ?.lA__.sT..("Total amount for pizza is "+st. ?
 #
-# __ __name____"__main__":
+# __ ____ __ _____
 #     app _ ?A..
-#     w _ =?)
+#     w _ ?
 #     ?.s..
 #     ___.e.. ?.e..

@@ -8,7 +8,7 @@ c_ simpleWindow(?W..
         btn  _ ?PB..('Open')
         ly.addWidget(btn)
         resize(300,200)
-        btn.clicked.c..(showMessage2)
+        btn.c___.c..(showMessage2)
 
     ___ showMessage2 
         i _ QInputDialog.getItem , 'Enter text', 'Name:',

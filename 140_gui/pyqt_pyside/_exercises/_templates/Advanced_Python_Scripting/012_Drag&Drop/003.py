@@ -18,7 +18,7 @@ c_ listWidgetClass(QListWidget
                 print f.userName()
                 print f.toLocalFile()
         elif mimedata.hasText(
-            print mimedata.text()
+            print mimedata.t..()
 
 
     ___ dragEnterEvent , event

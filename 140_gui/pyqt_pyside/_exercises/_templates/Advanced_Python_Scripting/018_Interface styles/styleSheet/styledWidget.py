@@ -11,7 +11,7 @@ c_ styleWidgetClass(QMainWindow, ui.Ui_MainWindow
         setWindowFlags(Qt.WindowStaysOnTopHint)
         setupUi
         treeWidget.setAlternatingRowColors(1)
-        pushButton.clicked.c..(applyStyle)
+        pushButton.c___.c..(applyStyle)
 
     ___ applyStyle 
         setStyleSheet(open(style).read())

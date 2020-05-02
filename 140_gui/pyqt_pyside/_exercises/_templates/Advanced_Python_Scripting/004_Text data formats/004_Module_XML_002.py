@@ -8,7 +8,7 @@ root _ tree.getroot()
 elem _ root.find('element')
 # print(elem.tag)
 print(elem.attrib)
-print(elem.text)
+print(elem.t..)
 
 # root = ET.Element('root2')
 # elem = ET.SubElement(root, 'elem2')

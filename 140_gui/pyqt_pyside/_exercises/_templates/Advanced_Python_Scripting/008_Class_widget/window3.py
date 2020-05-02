@@ -8,7 +8,7 @@ c_ simpleWindow(?W..
         btn  _ ?PB..('Open')
         ly.addWidget(btn)
         resize(300,200)
-        btn.clicked.c..(showMessage)
+        btn.c___.c..(showMessage)
 
     ___ showMessage 
         dial _ dialog.dialogClass()

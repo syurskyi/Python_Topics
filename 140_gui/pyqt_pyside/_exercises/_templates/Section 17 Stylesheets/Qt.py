@@ -1219,9 +1219,9 @@ ___ _none(
         setattr(Qt, "_" + submodule, Mock())
 
 
-___ _log(text
+___ _log(t..
     __ QT_VERBOSE:
-        ___.stdout.write(text + "\n")
+        ___.stdout.write(t.. + "\n")
 
 
 ___ _loadUi(uifile, baseinstance_None

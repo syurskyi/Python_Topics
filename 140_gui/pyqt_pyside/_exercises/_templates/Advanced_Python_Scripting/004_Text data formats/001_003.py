@@ -10,10 +10,10 @@ c_ settings(
 
     ___ __readFile
         __ os.path.exists(path
-            text _ open(path, 'r').readlines()
+            t.. _ open(path, 'r').readlines()
             data _ {}
-            __ text:
-                for line in [x.strip() for x in text]:
+            __ t..:
+                for line in [x.strip() for x in t..]:
                     key, value _ line.split('=')
                     __ value.isdigit(
                         value _ int(value)

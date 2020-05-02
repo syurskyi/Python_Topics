@@ -42,7 +42,7 @@ c_ simpleWindow(?W..
                 item.setData(0, Qt.UserRole, {'path':os.path.normpath(fullpath)})
 
     ___ action , item
-        print item.text(0)
+        print item.t..(0)
         s _ item.data(0, Qt.UserRole)
         print s
 

@@ -59,7 +59,7 @@ c_ resourceCompileClass(QMainWindow
         ly.addWidget(list)
         run_btn _ ?PB..('RUN')
         ly.addWidget(run_btn)
-        run_btn.clicked.c..(runCompile)
+        run_btn.c___.c..(runCompile)
         __ len(___.argv) __ 2:
             image _ ___.argv[1]
             list.appendImage(image)

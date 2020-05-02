@@ -10,7 +10,7 @@ c_ MyForm(?D..
         s__. - ()
         ui _ Ui_Dialog()
         ui.setupUi
-        ui.pushButtonFont.clicked.c..(changefont)
+        ui.pushButtonFont.c___.c..(changefont)
         s..
 
     ___ changefont

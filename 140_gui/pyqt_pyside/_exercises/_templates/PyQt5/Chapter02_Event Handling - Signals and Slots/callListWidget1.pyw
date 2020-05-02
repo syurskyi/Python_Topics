@@ -13,7 +13,7 @@ c_ MyForm(?D..
         s..
 
     ___ dispSelectedTest 
-        ui.labelTest.sT..("You have selected "+ui.listWidgetDiagnosis.currentItem().text())
+        ui.labelTest.sT..("You have selected "+ui.listWidgetDiagnosis.currentItem().t..())
          
 __ _ ____ __ _____
     app _ ?A..(___.argv)
