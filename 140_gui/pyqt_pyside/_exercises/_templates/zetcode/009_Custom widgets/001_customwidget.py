@@ -33,7 +33,7 @@ c_ BurningWidget(W..):
     ___ paintEvent(self, e):
 
         qp _ ?P..
-        qp.begin(
+        qp.b..(
         drawWidget(qp)
         qp.end
 

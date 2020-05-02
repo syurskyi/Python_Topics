@@ -21,7 +21,7 @@ c_ Example(W..):
 
     ___ paintEvent(self, e):
         qp _ ?P..
-        qp.begin(
+        qp.b..(
         qp.setRenderHint(?P...Antialiasing)
         drawBezierCurve(qp)
         qp.end

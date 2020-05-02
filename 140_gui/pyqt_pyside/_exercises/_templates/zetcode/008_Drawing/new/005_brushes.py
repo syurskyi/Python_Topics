@@ -1,69 +1,69 @@
-#!/usr/bin/python3
-# -*- coding: utf-8 -*-
-
-____ ?.?W.. ______ W.., ?A..
-____ ?.?G__ ______ ?P.., QBrush
-____ ?.?C.. ______ __
-______ ___
-
-
-c_ Example(W..):
-
-    ___ -
-        s__ .-
-
-        ?
-
-    ___ initUI
-        sG__(300, 300, 355, 280)
-        sWT__('Brushes')
-        s..
-
-    ___ paintEvent(self, e):
-        qp _ ?P..
-        qp.begin(
-        drawBrushes(qp)
-        qp.end
-
-    ___ drawBrushes(self, qp):
-        brush _ QBrush(__.SolidPattern)
-        qp.setBrush(brush)
-        qp.drawRect(10, 15, 90, 60)
-
-        brush.setStyle(__.Dense1Pattern)
-        qp.setBrush(brush)
-        qp.drawRect(130, 15, 90, 60)
-
-        brush.setStyle(__.Dense2Pattern)
-        qp.setBrush(brush)
-        qp.drawRect(250, 15, 90, 60)
-
-        brush.setStyle(__.DiagCrossPattern)
-        qp.setBrush(brush)
-        qp.drawRect(10, 105, 90, 60)
-
-        brush.setStyle(__.Dense5Pattern)
-        qp.setBrush(brush)
-        qp.drawRect(130, 105, 90, 60)
-
-        brush.setStyle(__.Dense6Pattern)
-        qp.setBrush(brush)
-        qp.drawRect(250, 105, 90, 60)
-
-        brush.setStyle(__.HorPattern)
-        qp.setBrush(brush)
-        qp.drawRect(10, 195, 90, 60)
-
-        brush.setStyle(__.VerPattern)
-        qp.setBrush(brush)
-        qp.drawRect(130, 195, 90, 60)
-
-        brush.setStyle(__.BDiagPattern)
-        qp.setBrush(brush)
-        qp.drawRect(250, 195, 90, 60)
-
-
-__ _____ __ _______
-    app _ ?A..(___.argv)
-    ex _ Example
-    ___.e..(app.e..())
+# #!/usr/bin/python3
+# # -*- coding: utf-8 -*-
+#
+# ____ ?.?W.. ______ W.., ?A..
+# ____ ?.?G__ ______ ?P.., ?B..
+# ____ ?.?C.. ______ __
+# ______ ___
+#
+#
+# c_ Example W..
+#
+#     ___ -
+#         s__ .-
+#
+#         ?
+#
+#     ___ initUI
+#         sG__ 300, 300, 355, 280
+#         sWT__ 'Brushes'
+#         s..
+#
+#     ___ paintEvent  e
+#         qp _ ?P..
+#         ?.b..
+#         dB.. ?
+#         ?.end
+#
+#     ___ drawBrushes  qp
+#         brush _ ?B.. __.SP..
+#         ?.sB.. ?
+#         ?.dR.. 10, 15, 90, 60
+#
+#         brush.sS.. __.D1P..
+#         ?.sB.. ?
+#         ?.dR.. 130, 15, 90, 60
+#
+#         ?.sS.. __.D2P..
+#         ?.sB.. ?
+#         ?.dR.. 250, 15, 90, 60
+#
+#         ?.sS.. __.DCP..
+#         ?.sB.. ?
+#         ?.dR.. 10, 105, 90, 60
+#
+#         ?.sS.. __.D5P..
+#         ?.sB.. ?
+#         ?.dR.. 130, 105, 90, 60
+#
+#         ?.sS.. __.D6P..
+#         ?.sB.. ?
+#         ?.dR.. 250, 105, 90, 60
+#
+#         ?.sS.. __.HP..
+#         ?.sB.. ?
+#         ?.dR.. 10, 195, 90, 60
+#
+#         ?.sS.. __.VP..
+#         ?.sB.. ?
+#         ?.dR.. 130, 195, 90, 60
+#
+#         ?.sS.. __.BDP..
+#         ?.sB.. ?
+#         ?.dR.. 250, 195, 90, 60
+#
+#
+# __ _____ __ _______
+#     app _ ?A..
+#     ex _ ?
+#     ___.e.. ?.e..
