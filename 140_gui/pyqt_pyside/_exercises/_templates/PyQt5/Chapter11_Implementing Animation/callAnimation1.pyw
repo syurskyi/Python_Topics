@@ -3,13 +3,13 @@ _____ ___
 ____ PyQt5.?W.. _____ ?D.., ?A..
 ____ PyQt5.?C.. _____ QRect, QPropertyAnimation
 
-____ demoAnimation1 _____ *
+____ demoAnimation1 _____ _
 
 c_ MyForm(?D..
     ___  -  
         s__. - ()
         ui _ Ui_Dialog()
-        ui.setupUi
+        ui.sU..
         ui.pushButtonMoveDown.c___.c..(startAnimation)
         s..
 

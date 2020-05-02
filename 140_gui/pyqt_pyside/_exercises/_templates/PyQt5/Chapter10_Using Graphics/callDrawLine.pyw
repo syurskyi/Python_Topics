@@ -1,7 +1,7 @@
 _____ ___
 
 ____ PyQt5.?W.. _____ ?D.., ?A..
-____ PyQt5.QtGui _____ QPainter
+____ PyQt5.?G.. _____ QPainter
 
 ____ demoDrawLine _____ *
 
@@ -9,7 +9,7 @@ c_ MyForm(?D..
     ___  -  
         s__. - ()
         ui _ Ui_Dialog()
-        ui.setupUi
+        ui.sU..
         pos1 _ [0,0]
         pos2 _ [0,0]
         s..

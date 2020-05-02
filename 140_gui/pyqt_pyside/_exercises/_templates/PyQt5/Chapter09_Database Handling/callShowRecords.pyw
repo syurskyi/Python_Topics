@@ -14,7 +14,7 @@ c_ MyForm(?D..
     ___  -
         s__. - ()
         ui _ Ui_Dialog()
-        ui.setupUi
+        ui.sU..
         cur.execute(sqlStatement)
         ui.pushButtonFirst.c___.c..(ShowFirstRow)
         ui.pushButtonPrevious.c___.c..(ShowPreviousRow)

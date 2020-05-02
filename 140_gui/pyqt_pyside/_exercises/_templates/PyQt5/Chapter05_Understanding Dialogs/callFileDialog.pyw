@@ -8,7 +8,7 @@ c_ MyForm(QMainWindow
     ___  -
         s__. - ()
         ui _ Ui_MainWindow()
-        ui.setupUi
+        ui.sU..
         ui.actionOpen.triggered.c..(openFileDialog)
         ui.actionSave.triggered.c..(saveFileDialog)
         s..
@@ -22,14 +22,14 @@ c_ MyForm(QMainWindow
 
             with f:
                 data _ f.read()
-                ui.textEdit.sT..(data)
+                ui.tE__.sT..(data)
 
     ___ saveFileDialog
         options _ QFileDialog.Options()
         options |_ QFileDialog.DontUseNativeDialog
         fileName, _ _ QFileDialog.getSaveFileName ,"QFileDialog.getSaveFileName()","","All Files (*);;Text Files (*.txt)", options_options)
         f _ open(fileName,'w')
-        t.. _ ui.textEdit.toPlainText()
+        t.. _ ui.tE__.toPlainText()
         f.write(t..)
         f.close()
 

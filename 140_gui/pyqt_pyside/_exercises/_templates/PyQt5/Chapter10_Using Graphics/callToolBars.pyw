@@ -1,6 +1,6 @@
 _____ ___
 ____ ?.?W.. _____ QMainWindow, ?A..
-____ ?.QtGui _____ QPainter
+____ ?.?G.. _____ QPainter
 
 ____ demoToolBars _____ *
 

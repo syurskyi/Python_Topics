@@ -2,7 +2,7 @@ _____ ___
 
 ____ ?.?W.. _____ ?D.., ?A..
 
-____ demoStudentClass _____ *
+____ demoStudentClass _____ _
 
 c_ Student:
     name _ ""
@@ -22,7 +22,7 @@ c_ MyForm(?D..
     ___  -  
         s__. - ()
         ui _ Ui_Dialog()
-        ui.setupUi
+        ui.sU..
         ui.ButtonClickMe.c___.c..(dispmessage)
         s..
 

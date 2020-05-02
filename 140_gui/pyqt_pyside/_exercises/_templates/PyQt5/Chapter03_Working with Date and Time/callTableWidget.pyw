@@ -1,13 +1,13 @@
 _____ ___
 
 ____ ?.?W.. _____ ?D.., ?A..,QTableWidgetItem
-____ DemoTableWidget _____ *
+____ DemoTableWidget _____ _
 
 c_ MyForm(?D..
     ___  -  ,data
         s__. - ()
         ui _ Ui_Dialog()
-        ui.setupUi
+        ui.sU..
         data_data
         addcontent()
 

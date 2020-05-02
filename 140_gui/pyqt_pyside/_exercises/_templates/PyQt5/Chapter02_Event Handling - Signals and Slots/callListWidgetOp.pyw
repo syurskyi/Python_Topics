@@ -8,7 +8,7 @@ c_ MyForm(?D..
     ___  -  
         s__. - ()
         ui _ Ui_Dialog()
-        ui.setupUi
+        ui.sU..
         ui.listWidget.addItem('Ice Cream')
         ui.listWidget.addItem('Soda')
         ui.listWidget.addItem('Coffee')

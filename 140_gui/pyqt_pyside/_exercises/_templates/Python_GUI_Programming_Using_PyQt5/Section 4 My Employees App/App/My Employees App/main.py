@@ -1,5 +1,5 @@
 ____ ?.?W.. _____ _
-____ ?.QtGui _____ QPixmap,QFont
+____ ?.?G.. _____ QPixmap,?F..
 _____ ___,os
 _____ sqlite3
 ____ PIL _____ Image

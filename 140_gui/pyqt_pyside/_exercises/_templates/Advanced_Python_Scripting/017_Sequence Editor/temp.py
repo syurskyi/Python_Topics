@@ -2,55 +2,55 @@
 A viewer for all audio items in the song.
 """
 _____ ___
-____ PyQt4 _____ QtGui, ?C..
+____ PyQt4 _____ ?G.., ?C..
 colors _ [?C...Qt.blue,
  ?C...Qt.green,
  ?C...Qt.red,
  ?C...Qt.yellow]
 
-c_ timeline_item(QtGui.QGraphicsRectItem
+c_ timeline_item(?G...QGraphicsRectItem
     ___  -  , a_length, a_height, a_name, a_track_num, a_y_pos
-        QtGui.QGraphicsRectItem. -  , 0, 0, a_length, a_height)
-        label _ QtGui.QGraphicsSimpleTextItem(a_name, parent_self)
+        ?G...QGraphicsRectItem. -  , 0, 0, a_length, a_height)
+        label _ ?G...QGraphicsSimpleTextItem(a_name, parent_self)
         label.setPos(10, 5)
         label.setBrush(?C...Qt.white)
-        label.setFlag(QtGui.QGraphicsItem.ItemIgnoresTransformations)
-        setFlag(QtGui.QGraphicsItem.ItemIsMovable)
-        setFlag(QtGui.QGraphicsItem.ItemSendsGeometryChanges)
+        label.setFlag(?G...QGraphicsItem.ItemIgnoresTransformations)
+        setFlag(?G...QGraphicsItem.ItemIsMovable)
+        setFlag(?G...QGraphicsItem.ItemSendsGeometryChanges)
         track_num _ a_track_num
         mouse_y_pos _ a_y_pos
 
     ___ mouseDoubleClickEvent , a_event
-        QtGui.QGraphicsRectItem.mouseDoubleClickEvent , a_event)
+        ?G...QGraphicsRectItem.mouseDoubleClickEvent , a_event)
         print "Here's where we'll open the item properties dialog for track " + st.(track_num)
 
     ___ mousePressEvent , a_event
-        QtGui.QGraphicsRectItem.mousePressEvent , a_event)
-        setGraphicsEffect(QtGui.QGraphicsOpacityEffect())
+        ?G...QGraphicsRectItem.mousePressEvent , a_event)
+        setGraphicsEffect(?G...QGraphicsOpacityEffect())
 
     ___ mouseMoveEvent , a_event
-        QtGui.QGraphicsRectItem.mouseMoveEvent , a_event)
+        ?G...QGraphicsRectItem.mouseMoveEvent , a_event)
         f_pos _ pos().x()
         __ f_pos < 0:
             f_pos _ 0
         setPos(f_pos, mouse_y_pos)
 
     ___ mouseReleaseEvent , a_event
-        QtGui.QGraphicsRectItem.mouseReleaseEvent , a_event)
+        ?G...QGraphicsRectItem.mouseReleaseEvent , a_event)
         setGraphicsEffect(None)
         f_pos_x _ pos().x()
         setPos(f_pos_x, mouse_y_pos)
         print st.(f_pos_x)
 
-c_ timeline(QtGui.QGraphicsView
+c_ timeline(?G...QGraphicsView
     ___  -  , a_item_length _ 4, a_region_length _ 8, a_bpm _ 140.0, a_px_per_region _ 100, total_tracks _ 5, total_regions _ 300
         item_length _ float(a_item_length)
         region_length _ float(a_region_length)
-        QtGui.QGraphicsView. - 
+        ?G...QGraphicsView. - 
         setVerticalScrollBarPolicy(?C...Qt.ScrollBarAlwaysOff)
         setHorizontalScrollBarPolicy(?C...Qt.ScrollBarAlwaysOff)
-        scene _ QtGui.QGraphicsScene
-        scene.setBackgroundBrush(QtGui.QColor(90, 90, 90))
+        scene _ ?G...QGraphicsScene
+        scene.setBackgroundBrush(?G...QColor(90, 90, 90))
         setScene(scene)
         audio_items _ []
         track _ 0
@@ -80,18 +80,18 @@ c_ timeline(QtGui.QGraphicsView
         return a_track_seconds * regions_per_second
 
     ___ draw_headers 
-        f_header _ QtGui.QGraphicsRectItem(0, 0, viewer_size, header_height)
+        f_header _ ?G...QGraphicsRectItem(0, 0, viewer_size, header_height)
         scene.addItem(f_header)
         for i in range(0, total_regions
-            f_number _ QtGui.QGraphicsSimpleTextItem('%d' % i, f_header)
-            f_number.setFlag(QtGui.QGraphicsItem.ItemIgnoresTransformations)
+            f_number _ ?G...QGraphicsSimpleTextItem('%d' % i, f_header)
+            f_number.setFlag(?G...QGraphicsItem.ItemIgnoresTransformations)
             f_number.setPos(px_per_region * i, 2)
             f_number.setBrush(?C...Qt.white)
 
     ___ draw_grid 
-        f_pen _ QtGui.QPen()
+        f_pen _ ?G...QPen()
         for i in range(1, total_tracks + 1
-            f_line _ QtGui.QGraphicsLineItem(0, 0, viewer_size, 0)
+            f_line _ ?G...QGraphicsLineItem(0, 0, viewer_size, 0)
             f_line.setPos(0, header_height + padding + item_height * i)
             scene.addItem(f_line)
 
@@ -129,7 +129,7 @@ c_ timeline(QtGui.QGraphicsView
         track +_ 1
 
 __ __name__ __ '__main__':
-    app _ QtGui.?A..(___.argv)
+    app _ ?G...?A..(___.argv)
     view _ timeline(total_tracks_5)
     for i in range(5
         view.draw_item_musical_time(0, 0, 0, i + 1, 0, 0, 120, 'Item-' + st.(i), i)

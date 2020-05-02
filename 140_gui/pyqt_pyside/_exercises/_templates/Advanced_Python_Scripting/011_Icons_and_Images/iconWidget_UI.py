@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ PyQt4 _____ ?C.., QtGui
+____ PyQt4 _____ ?C.., ?G..
 
 try:
     _fromUtf8 _ ?C...QString.fromUtf8
@@ -16,72 +16,72 @@ except AttributeError:
         return s
 
 try:
-    _encoding _ QtGui.?A...UnicodeUTF8
+    _encoding _ ?G...?A...UnicodeUTF8
     ___ _translate(context, t.., disambig
-        return QtGui.?A...translate(context, t.., disambig, _encoding)
+        return ?G...?A...translate(context, t.., disambig, _encoding)
 except AttributeError:
     ___ _translate(context, t.., disambig
-        return QtGui.?A...translate(context, t.., disambig)
+        return ?G...?A...translate(context, t.., disambig)
 
 c_ Ui_MainWindow(object
     ___ setupUi , MainWindow
         MainWindow.setObjectName(_fromUtf8("MainWindow"))
         MainWindow.resize(237, 369)
-        centralwidget _ QtGui.?W..(MainWindow)
+        centralwidget _ ?G...?W..(MainWindow)
         centralwidget.setObjectName(_fromUtf8("centralwidget"))
-        horizontalLayout_2 _ QtGui.QHBoxLayout(centralwidget)
+        horizontalLayout_2 _ ?G...QHBoxLayout(centralwidget)
         horizontalLayout_2.setSpacing(0)
         horizontalLayout_2.setObjectName(_fromUtf8("horizontalLayout_2"))
-        verticalLayout _ QtGui.QVBoxLayout()
+        verticalLayout _ ?G...QVBoxLayout()
         verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
-        horizontalLayout _ QtGui.QHBoxLayout()
+        horizontalLayout _ ?G...QHBoxLayout()
         horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
-        fill_btn _ QtGui.?PB..(centralwidget)
+        fill_btn _ ?G...?PB..(centralwidget)
         fill_btn.setObjectName(_fromUtf8("fill_btn"))
         horizontalLayout.addWidget(fill_btn)
-        clear_btn _ QtGui.?PB..(centralwidget)
+        clear_btn _ ?G...?PB..(centralwidget)
         clear_btn.setMinimumSize(?C...QSize(40, 0))
         clear_btn.setObjectName(_fromUtf8("clear_btn"))
         horizontalLayout.addWidget(clear_btn)
-        image_lb _ QtGui.QLabel(centralwidget)
+        image_lb _ ?G...QLabel(centralwidget)
         image_lb.setObjectName(_fromUtf8("image_lb"))
         horizontalLayout.addWidget(image_lb)
-        spacerItem _ QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        spacerItem _ ?G...QSpacerItem(40, 20, ?G...QSizePolicy.Expanding, ?G...QSizePolicy.Minimum)
         horizontalLayout.addItem(spacerItem)
         verticalLayout.addLayout(horizontalLayout)
-        combo_cbb _ QtGui.QComboBox(centralwidget)
+        combo_cbb _ ?G...QComboBox(centralwidget)
         combo_cbb.setObjectName(_fromUtf8("combo_cbb"))
         verticalLayout.addWidget(combo_cbb)
-        list_lwd _ QtGui.QListWidget(centralwidget)
+        list_lwd _ ?G...QListWidget(centralwidget)
         list_lwd.setObjectName(_fromUtf8("list_lwd"))
         verticalLayout.addWidget(list_lwd)
         horizontalLayout_2.addLayout(verticalLayout)
-        label _ QtGui.QLabel(centralwidget)
+        label _ ?G...QLabel(centralwidget)
         label.sT..(_fromUtf8(""))
         label.setObjectName(_fromUtf8("label"))
         horizontalLayout_2.addWidget(label)
         MainWindow.setCentralWidget(centralwidget)
-        statusbar _ QtGui.QStatusBar(MainWindow)
+        statusbar _ ?G...QStatusBar(MainWindow)
         statusbar.setObjectName(_fromUtf8("statusbar"))
         MainWindow.setStatusBar(statusbar)
-        toolBar _ QtGui.QToolBar(MainWindow)
+        toolBar _ ?G...QToolBar(MainWindow)
         toolBar.setObjectName(_fromUtf8("toolBar"))
         MainWindow.addToolBar(?C...Qt.TopToolBarArea, toolBar)
-        menuBar _ QtGui.QMenuBar(MainWindow)
+        menuBar _ ?G...QMenuBar(MainWindow)
         menuBar.setGeometry(?C...QRect(0, 0, 237, 21))
         menuBar.setObjectName(_fromUtf8("menuBar"))
-        menuFile _ QtGui.QMenu(menuBar)
+        menuFile _ ?G...QMenu(menuBar)
         menuFile.setObjectName(_fromUtf8("menuFile"))
         MainWindow.setMenuBar(menuBar)
-        fill_act _ QtGui.QAction(MainWindow)
+        fill_act _ ?G...QAction(MainWindow)
         fill_act.setObjectName(_fromUtf8("fill_act"))
-        clear_act _ QtGui.QAction(MainWindow)
+        clear_act _ ?G...QAction(MainWindow)
         clear_act.setObjectName(_fromUtf8("clear_act"))
-        open_act _ QtGui.QAction(MainWindow)
+        open_act _ ?G...QAction(MainWindow)
         open_act.setObjectName(_fromUtf8("open_act"))
-        save_act _ QtGui.QAction(MainWindow)
+        save_act _ ?G...QAction(MainWindow)
         save_act.setObjectName(_fromUtf8("save_act"))
-        exit_act _ QtGui.QAction(MainWindow)
+        exit_act _ ?G...QAction(MainWindow)
         exit_act.setObjectName(_fromUtf8("exit_act"))
         toolBar.addAction(fill_act)
         toolBar.addAction(clear_act)

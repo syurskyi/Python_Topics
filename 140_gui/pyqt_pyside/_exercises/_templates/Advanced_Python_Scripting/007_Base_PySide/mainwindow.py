@@ -1,5 +1,5 @@
 ____ PySide.?C.. _____ *
-____ PySide.QtGui _____ *
+____ PySide.?G.. _____ *
 
 
 c_ WindowClass(QMainWindow

@@ -2,15 +2,15 @@ _____ ___
 
 ____ PyQt5.?W.. _____ ?D.., ?A..
 ____ PyQt5.?C.. _____ QRect, QPointF, QPropertyAnimation, pyqtProperty
-____ PyQt5.QtGui _____ QPainter, QPainterPath
+____ PyQt5.?G.. _____ QPainter, QPainterPath
 
-____ demoAnimation4 _____ *
+____ demoAnimation4 _____ _
 
 c_ MyForm(?D..
     ___  -  
         s__. - ()
         ui _ Ui_Dialog()
-        ui.setupUi
+        ui.sU..
         ui.pushButtonMoveCurve.c___.c..(startAnimation)
         path _ QPainterPath()
         path.moveTo(30, 30)

@@ -7,7 +7,7 @@ c_ AppWindow(QMainWindow
     ___  -  
         s__. - ()
         ui _ Ui_MainWindow()
-        ui.setupUi     
+        ui.sU..
         s..
 
 

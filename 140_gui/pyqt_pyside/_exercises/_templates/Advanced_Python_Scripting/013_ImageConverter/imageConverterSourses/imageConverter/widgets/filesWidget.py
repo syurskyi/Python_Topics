@@ -1,5 +1,5 @@
 ____ PySide.?C.. _____ _
-____ PySide.QtGui _____ _
+____ PySide.?G.. _____ _
 _____ os
 
 icon _ os.path.join(os.path.dirname(__file__), 'drag.png')

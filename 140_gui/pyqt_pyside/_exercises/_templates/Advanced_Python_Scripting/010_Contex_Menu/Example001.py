@@ -1,27 +1,27 @@
-____ PySide _____ ?C.., QtGui
+____ PySide _____ ?C.., ?G..
 
 
-c_ MainWindow(QtGui.QMainWindow
+c_ MainWindow(?G...QMainWindow
     ___  -  
         super(MainWindow, self). - ()
 
-        widget _ QtGui.?W..()
+        widget _ ?G...?W..()
         setCentralWidget(widget)
 
-        topFiller _ QtGui.?W..()
-        topFiller.setSizePolicy(QtGui.QSizePolicy.Expanding,
-                QtGui.QSizePolicy.Expanding)
+        topFiller _ ?G...?W..()
+        topFiller.setSizePolicy(?G...QSizePolicy.Expanding,
+                ?G...QSizePolicy.Expanding)
 
-        infoLabel _ QtGui.QLabel(
+        infoLabel _ ?G...QLabel(
                 "<i>Choose a menu option, or right-click to invoke a context menu</i>",
                 alignment_?C...Qt.AlignCenter)
-        infoLabel.setFrameStyle(QtGui.QFrame.StyledPanel | QtGui.QFrame.Sunken)
+        infoLabel.setFrameStyle(?G...QFrame.StyledPanel | ?G...QFrame.Sunken)
 
-        bottomFiller _ QtGui.?W..()
-        bottomFiller.setSizePolicy(QtGui.QSizePolicy.Expanding,
-                QtGui.QSizePolicy.Expanding)
+        bottomFiller _ ?G...?W..()
+        bottomFiller.setSizePolicy(?G...QSizePolicy.Expanding,
+                ?G...QSizePolicy.Expanding)
 
-        vbox _ QtGui.QVBoxLayout()
+        vbox _ ?G...QVBoxLayout()
         vbox.setContentsMargins(5, 5, 5, 5)
         vbox.addWidget(topFiller)
         vbox.addWidget(infoLabel)
@@ -39,7 +39,7 @@ c_ MainWindow(QtGui.QMainWindow
         resize(480,320)
 
     ___ contextMenuEvent , event
-        menu _ QtGui.QMenu
+        menu _ ?G...QMenu
         menu.addAction(cutAct)
         menu.addAction(copyAct)
         menu.addAction(pasteAct)
@@ -98,7 +98,7 @@ c_ MainWindow(QtGui.QMainWindow
 
     ___ about 
         infoLabel.sT..("Invoked <b>Help|About</b>")
-        QtGui.QMessageBox.about , "About Menu",
+        ?G...QMessageBox.about , "About Menu",
                 "The <b>Menu</b> example shows how to create menu-bar menus "
                 "and context menus.")
 
@@ -106,100 +106,100 @@ c_ MainWindow(QtGui.QMainWindow
         infoLabel.sT..("Invoked <b>Help|About Qt</b>")
 
     ___ createActions 
-        newAct _ QtGui.QAction("&New", self,
-                shortcut_QtGui.QKeySequence.New,
+        newAct _ ?G...QAction("&New", self,
+                shortcut_?G...QKeySequence.New,
                 statusTip_"Create a new file", triggered_newFile)
 
-        openAct _ QtGui.QAction("&Open...", self,
-                shortcut_QtGui.QKeySequence.Open,
+        openAct _ ?G...QAction("&Open...", self,
+                shortcut_?G...QKeySequence.Open,
                 statusTip_"Open an existing file", triggered_open)
 
-        saveAct _ QtGui.QAction("&Save", self,
-                shortcut_QtGui.QKeySequence.Save,
+        saveAct _ ?G...QAction("&Save", self,
+                shortcut_?G...QKeySequence.Save,
                 statusTip_"Save the document to disk", triggered_save)
 
-        printAct _ QtGui.QAction("&Print...", self,
-                shortcut_QtGui.QKeySequence.Print,
+        printAct _ ?G...QAction("&Print...", self,
+                shortcut_?G...QKeySequence.Print,
                 statusTip_"Print the document", triggered_print_)
 
-        exitAct _ QtGui.QAction("E&xit", self, shortcut_"Ctrl+Q",
+        exitAct _ ?G...QAction("E&xit", self, shortcut_"Ctrl+Q",
                 statusTip_"Exit the application", triggered_close)
 
-        undoAct _ QtGui.QAction("&Undo", self,
-                shortcut_QtGui.QKeySequence.Undo,
+        undoAct _ ?G...QAction("&Undo", self,
+                shortcut_?G...QKeySequence.Undo,
                 statusTip_"Undo the last operation", triggered_undo)
 
-        redoAct _ QtGui.QAction("&Redo", self,
-                shortcut_QtGui.QKeySequence.Redo,
+        redoAct _ ?G...QAction("&Redo", self,
+                shortcut_?G...QKeySequence.Redo,
                 statusTip_"Redo the last operation", triggered_redo)
 
-        cutAct _ QtGui.QAction("Cu&t", self,
-                shortcut_QtGui.QKeySequence.Cut,
+        cutAct _ ?G...QAction("Cu&t", self,
+                shortcut_?G...QKeySequence.Cut,
                 statusTip_"Cut the current selection's contents to the clipboard",
                 triggered_cut)
 
-        copyAct _ QtGui.QAction("&Copy", self,
-                shortcut_QtGui.QKeySequence.Copy,
+        copyAct _ ?G...QAction("&Copy", self,
+                shortcut_?G...QKeySequence.Copy,
                 statusTip_"Copy the current selection's contents to the clipboard",
                 triggered_copy)
 
-        pasteAct _ QtGui.QAction("&Paste", self,
-                shortcut_QtGui.QKeySequence.Paste,
+        pasteAct _ ?G...QAction("&Paste", self,
+                shortcut_?G...QKeySequence.Paste,
                 statusTip_"Paste the clipboard's contents into the current selection",
                 triggered_paste)
 
-        boldAct _ QtGui.QAction("&Bold", self, checkable_T..,
+        boldAct _ ?G...QAction("&Bold", self, checkable_T..,
                 shortcut_"Ctrl+B", statusTip_"Make the text bold",
                 triggered_bold)
 
         boldFont _ boldAct.font()
         boldFont.setBold(T..)
-        boldAct.setFont(boldFont)
+        boldAct.sF..(boldFont)
 
-        italicAct _ QtGui.QAction("&Italic", self, checkable_T..,
+        italicAct _ ?G...QAction("&Italic", self, checkable_T..,
                 shortcut_"Ctrl+I", statusTip_"Make the text italic",
                 triggered_italic)
 
         italicFont _ italicAct.font()
         italicFont.setItalic(T..)
-        italicAct.setFont(italicFont)
+        italicAct.sF..(italicFont)
 
-        setLineSpacingAct _ QtGui.QAction("Set &Line Spacing...", self,
+        setLineSpacingAct _ ?G...QAction("Set &Line Spacing...", self,
                 statusTip_"Change the gap between the lines of a paragraph",
                 triggered_setLineSpacing)
 
-        setParagraphSpacingAct _ QtGui.QAction(
+        setParagraphSpacingAct _ ?G...QAction(
                 "Set &Paragraph Spacing...", self,
                 statusTip_"Change the gap between paragraphs",
                 triggered_setParagraphSpacing)
 
-        aboutAct _ QtGui.QAction("&About", self,
+        aboutAct _ ?G...QAction("&About", self,
                 statusTip_"Show the application's About box",
                 triggered_about)
 
-        aboutQtAct _ QtGui.QAction("About &Qt", self,
+        aboutQtAct _ ?G...QAction("About &Qt", self,
                 statusTip_"Show the Qt library's About box",
                 triggered_aboutQt)
-        aboutQtAct.triggered.c..(QtGui.qApp.aboutQt)
+        aboutQtAct.triggered.c..(?G...qApp.aboutQt)
 
-        leftAlignAct _ QtGui.QAction("&Left Align", self, checkable_T..,
+        leftAlignAct _ ?G...QAction("&Left Align", self, checkable_T..,
                 shortcut_"Ctrl+L", statusTip_"Left align the selected text",
                 triggered_leftAlign)
 
-        rightAlignAct _ QtGui.QAction("&Right Align", self,
+        rightAlignAct _ ?G...QAction("&Right Align", self,
                 checkable_T.., shortcut_"Ctrl+R",
                 statusTip_"Right align the selected text",
                 triggered_rightAlign)
 
-        justifyAct _ QtGui.QAction("&Justify", self, checkable_T..,
+        justifyAct _ ?G...QAction("&Justify", self, checkable_T..,
                 shortcut_"Ctrl+J", statusTip_"Justify the selected text",
                 triggered_justify)
 
-        centerAct _ QtGui.QAction("&Center", self, checkable_T..,
+        centerAct _ ?G...QAction("&Center", self, checkable_T..,
                 shortcut_"Ctrl+C", statusTip_"Center the selected text",
                 triggered_center)
 
-        alignmentGroup _ QtGui.QActionGroup
+        alignmentGroup _ ?G...QActionGroup
         alignmentGroup.addAction(leftAlignAct)
         alignmentGroup.addAction(rightAlignAct)
         alignmentGroup.addAction(justifyAct)
@@ -245,7 +245,7 @@ __ __name__ __ '__main__':
 
     _____ ___
 
-    app _ QtGui.?A..(___.argv)
+    app _ ?G...?A..(___.argv)
     window _ MainWindow()
     window.s..
 ___.e..(app.e

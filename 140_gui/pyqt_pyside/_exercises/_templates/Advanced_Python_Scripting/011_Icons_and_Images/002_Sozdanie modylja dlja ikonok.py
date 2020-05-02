@@ -16,7 +16,7 @@
 
 
 
-____ PySide.QtGui _____ QIcon
+____ PySide.?G.. _____ QIcon
 _____ os
 root _ os.path.dirname(__file__)
 

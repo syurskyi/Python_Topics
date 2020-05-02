@@ -7,29 +7,29 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ PySide _____ ?C.., QtGui
+____ PySide _____ ?C.., ?G..
 
 c_ Ui_Server(object
     ___ setupUi , Server
         Server.setObjectName("Server")
         Server.resize(396, 407)
-        verticalLayout _ QtGui.QVBoxLayout(Server)
+        verticalLayout _ ?G...QVBoxLayout(Server)
         verticalLayout.setObjectName("verticalLayout")
-        progress_pbr _ QtGui.QProgressBar(Server)
+        progress_pbr _ ?G...QProgressBar(Server)
         progress_pbr.setProperty("value", 0)
         progress_pbr.setObjectName("progress_pbr")
         verticalLayout.addWidget(progress_pbr)
-        horizontalLayout _ QtGui.QHBoxLayout()
+        horizontalLayout _ ?G...QHBoxLayout()
         horizontalLayout.setObjectName("horizontalLayout")
-        info_lb _ QtGui.QLabel(Server)
+        info_lb _ ?G...QLabel(Server)
         info_lb.setObjectName("info_lb")
         horizontalLayout.addWidget(info_lb)
-        ip_le _ QtGui.QLineEdit(Server)
+        ip_le _ ?G...QLineEdit(Server)
         ip_le.setReadOnly(T..)
         ip_le.setObjectName("ip_le")
         horizontalLayout.addWidget(ip_le)
         verticalLayout.addLayout(horizontalLayout)
-        out_tb _ QtGui.QTextBrowser(Server)
+        out_tb _ ?G...QTextBrowser(Server)
         out_tb.setObjectName("out_tb")
         verticalLayout.addWidget(out_tb)
 
@@ -37,6 +37,6 @@ c_ Ui_Server(object
         ?C...QMetaObject.connectSlotsByName(Server)
 
     ___ retranslateUi , Server
-        Server.setWindowTitle(QtGui.?A...translate("Server", "Server", None, QtGui.?A...UnicodeUTF8))
-        info_lb.sT..(QtGui.?A...translate("Server", "IP:", None, QtGui.?A...UnicodeUTF8))
+        Server.setWindowTitle(?G...?A...translate("Server", "Server", None, ?G...?A...UnicodeUTF8))
+        info_lb.sT..(?G...?A...translate("Server", "IP:", None, ?G...?A...UnicodeUTF8))
 

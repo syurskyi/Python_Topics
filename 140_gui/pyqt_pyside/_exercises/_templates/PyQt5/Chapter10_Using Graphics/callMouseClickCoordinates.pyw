@@ -7,7 +7,7 @@ c_ MyForm(?D..
     ___  -
         s__. - ()
         ui _ Ui_Dialog()
-        ui.setupUi
+        ui.sU..
         s..
 
     ___ mousePressEvent , event

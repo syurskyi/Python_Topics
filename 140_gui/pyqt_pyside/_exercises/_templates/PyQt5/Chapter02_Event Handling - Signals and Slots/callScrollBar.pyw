@@ -8,7 +8,7 @@ c_ MyForm(?D..
     ___  -
         s__. - ()
         ui _ Ui_Dialog()
-        ui.setupUi
+        ui.sU..
         ui.horizontalScrollBarSugarLevel.valueChanged.c..(scrollhorizontal)
         ui.verticalScrollBarPulseRate.valueChanged.c..(scrollvertical)
         ui.horizontalSliderBloodPressure.valueChanged.c..(sliderhorizontal)

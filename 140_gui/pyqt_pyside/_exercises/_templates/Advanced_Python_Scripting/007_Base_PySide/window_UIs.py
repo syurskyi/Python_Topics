@@ -7,23 +7,23 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ PySide _____ ?C.., QtGui
+____ PySide _____ ?C.., ?G..
 
 c_ Ui_Form(object
     ___ setupUi , Form
         Form.setObjectName("Form")
         Form.resize(400, 300)
-        horizontalLayout _ QtGui.QHBoxLayout(Form)
+        horizontalLayout _ ?G...QHBoxLayout(Form)
         horizontalLayout.setObjectName("horizontalLayout")
-        verticalLayout _ QtGui.QVBoxLayout()
+        verticalLayout _ ?G...QVBoxLayout()
         verticalLayout.setObjectName("verticalLayout")
-        pushButton _ QtGui.?PB..(Form)
+        pushButton _ ?G...?PB..(Form)
         pushButton.setObjectName("pushButton")
         verticalLayout.addWidget(pushButton)
-        pushButton_2 _ QtGui.?PB..(Form)
+        pushButton_2 _ ?G...?PB..(Form)
         pushButton_2.setObjectName("pushButton_2")
         verticalLayout.addWidget(pushButton_2)
-        spacerItem _ QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
+        spacerItem _ ?G...QSpacerItem(20, 40, ?G...QSizePolicy.Minimum, ?G...QSizePolicy.Expanding)
         verticalLayout.addItem(spacerItem)
         horizontalLayout.addLayout(verticalLayout)
 
@@ -31,7 +31,7 @@ c_ Ui_Form(object
         ?C...QMetaObject.connectSlotsByName(Form)
 
     ___ retranslateUi , Form
-        Form.setWindowTitle(QtGui.?A...translate("Form", "Form", None, QtGui.?A...UnicodeUTF8))
-        pushButton.sT..(QtGui.?A...translate("Form", "PushButton", None, QtGui.?A...UnicodeUTF8))
-        pushButton_2.sT..(QtGui.?A...translate("Form", "PushButton", None, QtGui.?A...UnicodeUTF8))
+        Form.setWindowTitle(?G...?A...translate("Form", "Form", None, ?G...?A...UnicodeUTF8))
+        pushButton.sT..(?G...?A...translate("Form", "PushButton", None, ?G...?A...UnicodeUTF8))
+        pushButton_2.sT..(?G...?A...translate("Form", "PushButton", None, ?G...?A...UnicodeUTF8))
 

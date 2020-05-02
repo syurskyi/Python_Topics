@@ -8,7 +8,7 @@ c_ MyForm(?D..
     ___  -
         s__. - ()
         ui _ Ui_Dialog()
-        ui.setupUi
+        ui.sU..
         ui.spinBoxBookQty.editingFinished.c..(result1)
         ui.doubleSpinBoxSugarWeight.editingFinished.c..(result2)
         s..

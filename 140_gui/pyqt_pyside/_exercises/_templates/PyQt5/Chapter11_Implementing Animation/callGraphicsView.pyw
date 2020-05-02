@@ -1,16 +1,16 @@
 _____ ___
 
 ____ PyQt5.?W.. _____ ?D.., ?A.., QGraphicsScene, QGraphicsPixmapItem
-____ PyQt5.QtGui _____ QPixmap
-____ demoGraphicsView _____ *
+____ PyQt5.?G.. _____ QPixmap
+____ demoGraphicsView _____ _
 
 c_ MyForm(?D..
     ___  -  
         s__. - ()
         ui _ Ui_Dialog()
-        ui.setupUi
+        ui.sU..
         scene _ QGraphicsScene
-        pixmap_ QtGui.QPixmap()
+        pixmap_ ?G...QPixmap()
         pixmap.load("bintupic.jpg")
         item_QGraphicsPixmapItem(pixmap)
         scene.addItem(item)

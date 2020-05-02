@@ -9,14 +9,14 @@ c_ MyForm(?D..
     ___  -
         s__. - ()
         ui _ Ui_Dialog()
-        ui.setupUi
+        ui.sU..
         ui.pushButtonFont.c___.c..(changefont)
         s..
 
     ___ changefont
         font, ok _ QFontDialog.getFont()
         __ ok:
-            ui.textEdit.setFont(font)
+            ui.tE__.sF..(font)
 
 __ _ ____ __ _____
     app _ ?A..(___.argv)

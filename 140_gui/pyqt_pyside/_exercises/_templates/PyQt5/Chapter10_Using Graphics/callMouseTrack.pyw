@@ -7,7 +7,7 @@ c_ MyForm(?D..
         s__. - ()
         ui _ Ui_Dialog()
         setMouseTracking(T..)
-        ui.setupUi
+        ui.sU..
         s..
            
     ___ mouseMoveEvent , event      

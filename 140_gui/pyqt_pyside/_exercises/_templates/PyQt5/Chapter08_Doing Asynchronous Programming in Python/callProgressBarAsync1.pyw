@@ -9,7 +9,7 @@ c_ MyForm(?D..
     ___  -
         s__. - ()
         ui _ Ui_Dialog()
-        ui.setupUi
+        ui.sU..
         ui.pushButtonStart.c___.c..(invokeAsync)
         s..
 

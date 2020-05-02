@@ -2,7 +2,7 @@
 # ! /usr/bin/env python
 
 _____ ___
-____ PyQt4 _____ QtGui, ?C..
+____ PyQt4 _____ ?G.., ?C..
 
 _____ os, string
 _____ math
@@ -14,7 +14,7 @@ THUMB_MAX _ 256
 FILE_TYPE _ ['jpg', 'jpeg', 'tif', 'bmp', 'gif']
 
 
-c_ ImageWidget(QtGui.?W..
+c_ ImageWidget(?G...?W..
 
     prevSelected _ None
 
@@ -32,15 +32,15 @@ c_ ImageWidget(QtGui.?W..
         showStatus _ T..
         selected _ False
         isHightlight _ False
-        thumb _ QtGui.QImage()
+        thumb _ ?G...QImage()
         initAttrib()
 
     ___ initAttrib 
-        name_font _ QtGui.QFont()
-        bg_color _ QtGui.QColor(50, 50, 50)
-        hightlight _ QtGui.QColor(255, 255, 255, 100)
+        name_font _ ?G...?F..()
+        bg_color _ ?G...QColor(50, 50, 50)
+        hightlight _ ?G...QColor(255, 255, 255, 100)
         edge_size _ 5
-        pen_selected _ QtGui.QPen(QtGui.QColor(255, 255, 0))
+        pen_selected _ ?G...QPen(?G...QColor(255, 255, 0))
         pen_selected.setWidth(edge_size)
         pen_selected.setJoinStyle(?C...Qt.MiterJoin)
 
@@ -86,9 +86,9 @@ c_ ImageWidget(QtGui.?W..
         __ isHightlight and not selected:
             painter.fillRect(rect(), hightlight)
         # draw name
-        painter.setPen(QtGui.QPen(QtGui.QColor(255, 255, 255)))
+        painter.setPen(?G...QPen(?G...QColor(255, 255, 255)))
         name_font.setPixelSize(name_height)
-        painter.setFont(name_font)
+        painter.sF..(name_font)
         # 脚标字符
         painter.drawText(edge_size, name_ty, st.(displayText))
 
@@ -98,19 +98,19 @@ c_ ImageWidget(QtGui.?W..
             p2 _ ?C...QPoint(0, title_height)
             p3 _ ?C...QPoint(title_height, 0)
             painter.setPen(?C...Qt.NoPen)
-            painter.fillRect(0, 0, width(), title_height, QtGui.QColor(40, 40, 40, 40))
+            painter.fillRect(0, 0, width(), title_height, ?G...QColor(40, 40, 40, 40))
             __ status __ 1:
-                painter.setBrush(QtGui.QBrush(QtGui.QColor(255, 0, 0)))
+                painter.setBrush(?G...QBrush(?G...QColor(255, 0, 0)))
             elif status __ 2:
-                painter.setBrush(QtGui.QBrush(QtGui.QColor(0, 255, 0)))
+                painter.setBrush(?G...QBrush(?G...QColor(0, 255, 0)))
             elif status __ 3:
-                painter.setBrush(QtGui.QBrush(QtGui.QColor(0, 0, 255)))
+                painter.setBrush(?G...QBrush(?G...QColor(0, 0, 255)))
             painter.drawConvexPolygon(p1, p2, p3)
 
         __ version:
             version_x _ width() - edge_size - name_height * 1.5
             version_y _ name_height
-            painter.setPen(QtGui.QPen(QtGui.QColor(255, 255, 255)))
+            painter.setPen(?G...QPen(?G...QColor(255, 255, 255)))
             painter.drawText(version_x, version_y, '%s' % version)
 
         # draw selected
@@ -121,7 +121,7 @@ c_ ImageWidget(QtGui.?W..
                              width() - edge_size, height() - edge_size)
 
     ___ paintEvent , event
-        painter _ QtGui.QPainter
+        painter _ ?G...QPainter
         paintAsThumb(painter)
 
     ___ mouseReleaseEvent , event
@@ -156,14 +156,14 @@ c_ ImageWidget(QtGui.?W..
         print 'on widget clicked'
 
 
-c_ ImageContainer(QtGui.QFrame
+c_ ImageContainer(?G...QFrame
     ___  -  , widgets_None
         super(ImageContainer, self). - ()
 
-        containerLayout _ QtGui.QVBoxLayout()
+        containerLayout _ ?G...QVBoxLayout()
 
         # 初始化Slider
-        zoomSlider _ QtGui.QSlider()
+        zoomSlider _ ?G...QSlider()
         zoomSlider.setOrientation(?C...Qt.Horizontal)
         zoomSlider.setMinimum(THUMB_MIN)
         zoomSlider.setMaximum(THUMB_MAX)
@@ -174,8 +174,8 @@ c_ ImageContainer(QtGui.QFrame
         # Slider设定
         ?C...QObject.c..(zoomSlider, ?C...SIGNAL('valueChanged(int)'), setItemSize)
 
-        item_scrollarea _ QtGui.QScrollArea()
-        item_area _ QtGui.?W..()
+        item_scrollarea _ ?G...QScrollArea()
+        item_area _ ?G...?W..()
         item_scrollarea.setWidget(item_area)
 
         containerLayout.addWidget(zoomSlider)
@@ -279,31 +279,31 @@ c_ ImageContainer(QtGui.QFrame
         ImageWidgetList[st.(id)].setSelected()
 
 
-c_ MainWindow(QtGui.?W..
+c_ MainWindow(?G...?W..
     ___  -  
-        app _ QtGui.?A..(___.argv)
+        app _ ?G...?A..(___.argv)
         super(MainWindow, self). - ()
 
         setWindowTitle("Image Viewer")
         resize(1280, 800)
 
         # 屏幕居中
-        screen _ QtGui.QDesktopWidget().screenGeometry()
+        screen _ ?G...QDesktopWidget().screenGeometry()
         size _ geometry()
         move((screen.width() - size.width()) / 2, (screen.height() - size.height()) / 2)
 
         s..
 
-        mainSpliter _ QtGui.QSplitter(?C...Qt.Horizontal)
+        mainSpliter _ ?G...QSplitter(?C...Qt.Horizontal)
 
         # 文件夹列表model
-        dirModel _ QtGui.QDirModel
+        dirModel _ ?G...QDirModel
 
         # 只显示文件夹
         dirModel.setFilter(?C...QDir.Dirs | ?C...QDir.NoDotAndDotDot)
 
         # 文件夹列表view
-        dirTreeView _ QtGui.QTreeView()
+        dirTreeView _ ?G...QTreeView()
 
         # 绑定model
         dirTreeView.setModel(dirModel)
@@ -315,7 +315,7 @@ c_ MainWindow(QtGui.?W..
         # DirTree事件响应
         dirTreeView.selectionModel().selectionChanged.c..(dirTreeClicked)
 
-        mainLayout _ QtGui.QVBoxLayout()
+        mainLayout _ ?G...QVBoxLayout()
         mainSpliter.addWidget(dirTreeView)
 
         imageContainer _ ImageContainer(mainSpliter)

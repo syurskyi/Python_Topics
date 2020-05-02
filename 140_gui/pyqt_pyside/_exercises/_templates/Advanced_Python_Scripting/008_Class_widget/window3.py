@@ -1,4 +1,4 @@
-____ PySide.QtGui _____ *
+____ PySide.?G.. _____ _
 _____ dialog
 
 c_ simpleWindow(?W..

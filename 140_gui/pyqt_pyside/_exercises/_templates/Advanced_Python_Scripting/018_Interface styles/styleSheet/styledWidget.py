@@ -1,5 +1,5 @@
 ____ PySide.?C.. _____ _
-____ PySide.QtGui _____ _
+____ PySide.?G.. _____ _
 ____ widgets _____ window_UIs as ui
 _____ os
 

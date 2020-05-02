@@ -7,22 +7,22 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ PySide _____ ?C.., QtGui
+____ PySide _____ ?C.., ?G..
 
 c_ Ui_settingsDialog(object
     ___ setupUi , settingsDialog
         settingsDialog.setObjectName("settingsDialog")
         settingsDialog.resize(458, 153)
-        verticalLayout _ QtGui.QVBoxLayout(settingsDialog)
+        verticalLayout _ ?G...QVBoxLayout(settingsDialog)
         verticalLayout.setObjectName("verticalLayout")
-        table _ QtGui.QTableWidget(settingsDialog)
+        table _ ?G...QTableWidget(settingsDialog)
         table.setObjectName("table")
         table.setColumnCount(0)
         table.setRowCount(0)
         verticalLayout.addWidget(table)
-        buttonBox _ QtGui.QDialogButtonBox(settingsDialog)
+        buttonBox _ ?G...QDialogButtonBox(settingsDialog)
         buttonBox.setOrientation(?C...Qt.Horizontal)
-        buttonBox.setStandardButtons(QtGui.QDialogButtonBox.Cancel|QtGui.QDialogButtonBox.Ok)
+        buttonBox.setStandardButtons(?G...QDialogButtonBox.Cancel|?G...QDialogButtonBox.Ok)
         buttonBox.setObjectName("buttonBox")
         verticalLayout.addWidget(buttonBox)
 
@@ -32,5 +32,5 @@ c_ Ui_settingsDialog(object
         ?C...QMetaObject.connectSlotsByName(settingsDialog)
 
     ___ retranslateUi , settingsDialog
-        settingsDialog.setWindowTitle(QtGui.?A...translate("settingsDialog", "Dialog", None, QtGui.?A...UnicodeUTF8))
+        settingsDialog.setWindowTitle(?G...?A...translate("settingsDialog", "Dialog", None, ?G...?A...UnicodeUTF8))
 

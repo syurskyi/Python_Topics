@@ -1,4 +1,4 @@
-____ PySide.QtGui _____ *
+____ PySide.?G.. _____ *
 
 c_ myWidget(?W..
     ___  -

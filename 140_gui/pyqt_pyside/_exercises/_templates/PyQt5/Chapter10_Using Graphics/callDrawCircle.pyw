@@ -1,7 +1,7 @@
 _____ ___
 
 ____ ?.?W.. _____ ?D.., ?A..
-____ ?.QtGui _____ QPainter
+____ ?.?G.. _____ QPainter
 
 ____ demoDrawCircle _____ *
 
@@ -9,7 +9,7 @@ c_ MyForm(?D..
     ___  -  
         s__. - ()
         ui _ Ui_Dialog()
-        ui.setupUi
+        ui.sU..
         pos1 _ [0,0]
         pos2 _ [0,0]
         s..

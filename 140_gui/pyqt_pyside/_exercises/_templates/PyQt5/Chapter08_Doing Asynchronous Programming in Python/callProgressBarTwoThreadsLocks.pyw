@@ -10,7 +10,7 @@ c_ MyForm(?D..
     ___  -
         s__. - ()
         ui _ Ui_Dialog()
-        ui.setupUi
+        ui.sU..
         s..
        
 c_ myThread (threading.Thread

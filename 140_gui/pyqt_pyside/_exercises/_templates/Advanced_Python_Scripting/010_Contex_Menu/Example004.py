@@ -1,6 +1,6 @@
 _____ ___
 ____ PyQt4.?C.. _____ Qt
-____ PyQt4.QtGui _____ *
+____ PyQt4.?G.. _____ _
 
 app _ ?A..([])
 tableWidget _ QTableWidget()

@@ -1,4 +1,4 @@
-____ PySide.QtGui _____ _
+____ PySide.?G.. _____ _
 # from PyQt4.QtGui import *
 
 c_ simpleWindow(?W..

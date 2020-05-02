@@ -1,6 +1,6 @@
 _____ ___, time
 _____ socket
-____ ? _____ QtGui
+____ ? _____ ?G..
 ____ ? _____ ?C..
 ____ ?.?W.. _____ ?A.., ?D..
 ____ ?.?C.. _____ QCoreApplication
@@ -14,8 +14,8 @@ c_ Window(?D..
     ___  -  
         s__. - ()
         ui _ Ui_Dialog()
-        ui.setupUi
-        textEditMessages_ui.textEditMessages
+        ui.sU..
+        tE__Messages_ui.tE__Messages
         ui.pushButtonSend.c___.c..(dispMessage)
         s..
 
@@ -23,7 +23,7 @@ c_ Window(?D..
         text_ui.lineEditMessage.t..()
         global conn
         conn.send(t...encode("utf-8"))
-        ui.textEditMessages.append("Server: "+ui.lineEditMessage.t..())
+        ui.tE__Messages.append("Server: "+ui.lineEditMessage.t..())
         ui.lineEditMessage.sT..("")
 
 c_ ServerThread(Thread
@@ -65,7 +65,7 @@ c_ ClientThread(Thread
         while T.. :              
             global conn
             data _ conn.recv(1024)
-            window.textEditMessages.append("Client: "+data.decode("utf-8"))
+            window.tE__Messages.append("Client: "+data.decode("utf-8"))
  
 __ _ ____ __ _____
     app _ ?A..(___.argv)

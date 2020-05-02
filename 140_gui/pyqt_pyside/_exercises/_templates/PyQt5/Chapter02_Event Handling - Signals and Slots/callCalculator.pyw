@@ -8,7 +8,7 @@ c_ MyForm ?D..
     ___  -
         s__. -
         ui _ Ui_Dialog()
-        ui.setupUi
+        ui.sU..
         ui.pushButtonPlus.c___.c..(addtwonum)
         ui.pushButtonSubtract.c___.c..(subtracttwonum)
         ui.pushButtonMultiply.c___.c..(multiplytwonum)

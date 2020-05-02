@@ -1,22 +1,22 @@
-_____ ___
-
-____ ?.?W.. _____ ?D.., ?A..
-
-____ demoComboBox _____ _
-
-c_ MyForm(?D..
-    ___  -  
-        s__. - ()
-        ui _ Ui_Dialog()
-        ui.setupUi
-        ui.comboBoxAccountType.currentIndexChanged.c..(dispAccountType)
-        s..
-
-    ___ dispAccountType 
-        ui.labelAccountType.sT..("You have selected "+ui.comboBoxAccountType.itemText(ui.comboBoxAccountType.currentIndex()))
-
-__ _ ____ __ _____
-    app _ ?A..(___.argv)
-    w _ MyForm()
-    w.s..
-    ___.e..(app.e
+# _____ ___
+#
+# ____ ?.?W.. _____ ?D.., ?A..
+#
+# ____ demoComboBox _____ _
+#
+# c_ MyForm ?D..
+#     ___  -
+#         s__. -
+#         ui _ ?
+#         ?.sU..
+#         ?.cBAT__.cIC...c.. ?
+#         s..
+#
+#     ___ dispAccountType
+#         ?.lAT__.sT..("You have selected "+?.cBAT__.iT.. ?.cBAT__.cI..
+#
+# __ _ ____ __ _____
+#     app _ ?A..
+#     w _ ?
+#     ?.s..
+#     ___.e.. ?.e..

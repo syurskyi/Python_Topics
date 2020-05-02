@@ -1,7 +1,7 @@
 _____ ___
 
 ____ ?.?W.. _____ ?D.., ?A.., QColorDialog
-____ ?.QtGui _____ QColor
+____ ?.?G.. _____ QColor
 
 ____ demoColorDialog _____ *
 
@@ -10,7 +10,7 @@ c_ MyForm(?D..
         s__. - ()
         col _ QColor(0, 0, 0) 
         ui _ Ui_Dialog()
-        ui.setupUi
+        ui.sU..
         ui.frameColor.setStyleSheet("QWidget { background-color: %s }" % col.name())
         ui.pushButtonColor.c___.c..(dispcolor)
         s..

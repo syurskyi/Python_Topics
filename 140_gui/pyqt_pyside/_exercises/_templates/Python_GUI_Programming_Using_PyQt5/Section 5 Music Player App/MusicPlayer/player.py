@@ -1,6 +1,6 @@
 _____ ___,os
 ____ ?.?W.. _____ _
-____ ?.QtGui _____ QIcon
+____ ?.?G.. _____ QIcon
 ____ ?.?C.. _____ QSize,Qt,QTimer
 _____ random,time
 ____ pygame _____ mixer

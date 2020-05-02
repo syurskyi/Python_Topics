@@ -8,7 +8,7 @@ c_ MyForm(QMainWindow
     ___  -
         s__. - ()
         ui _ Ui_MainWindow()
-        ui.setupUi
+        ui.sU..
         ui.mdiArea.addSubWindow(ui.subwindow)
         ui.mdiArea.addSubWindow(ui.subwindow_2)
         ui.actionSubWindow_View.triggered.c..(SubWindow_View)

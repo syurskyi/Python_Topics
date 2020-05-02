@@ -2,13 +2,13 @@ _____ ___
 
 ____ ?.?W.. _____ ?D.., ?A..
 
-____ demoLCD _____ *
+____ demoLCD _____ _
 
 c_ MyForm(?D..
     ___  -
         s__. - ()
         ui _ Ui_Dialog()
-        ui.setupUi
+        ui.sU..
         timer _ ?C...QTimer
         timer.timeout.c..(showlcd)
         timer.start(1000)

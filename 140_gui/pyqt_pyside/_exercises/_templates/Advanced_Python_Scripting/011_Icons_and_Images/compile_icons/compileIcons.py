@@ -1,6 +1,6 @@
 _____ ___, os
-____ PySide.?C.. _____ *
-____ PySide.QtGui _____ *
+____ PySide.?C.. _____ _
+____ PySide.?G.. _____ _
 
 c_ fileListClass(QListWidget
     ___  -  , parent

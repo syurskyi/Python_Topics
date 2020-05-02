@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 _____ ___
-____ PyQt4.QtGui _____ *
+____ PyQt4.?G.. _____ _
 
 # Create an PyQT4 application object.
 a _ ?A..(___.argv)

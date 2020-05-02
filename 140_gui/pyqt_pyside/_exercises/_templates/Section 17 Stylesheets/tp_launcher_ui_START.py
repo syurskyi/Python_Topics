@@ -26,7 +26,7 @@ _____ os
 _____ ___
 
 _____ Qt
-____ Qt _____ ?W.., ?C.., QtGui
+____ Qt _____ ?W.., ?C.., ?G..
 _____ tp_launcher_model
 
 QT_VER _ Qt.__binding__
@@ -66,7 +66,7 @@ c_ TP_Launcher_GUI(?W...?W..
         _my_path _ os.path.dirname(os.path.realpath(__file__))
         images_path _ os.path.join(_my_path, 'images')
         full_path _ os.path.join(images_path, 'TPayne_Launcher.png')
-        _tpl_icon _ QtGui.QIcon(full_path)
+        _tpl_icon _ ?G...QIcon(full_path)
         
         _tp_launcher _ tp_launcher_model.TP_Launcher_Model()
 
@@ -178,7 +178,7 @@ c_ TP_Launcher_GUI(?W...?W..
 
     ___ _setup_connections 
         ws _ _workspace_changed
-        _workspace_cb.currentIndexChanged.c..(ws)
+        _workspace_cb.cIC...c..(ws)
         _edit_btn.c___.c..(_edit_toggle)
         dw _ _dragging_workspace
         _workspace_cb.view().pressed.c..(dw)
@@ -188,10 +188,10 @@ c_ TP_Launcher_GUI(?W...?W..
 
     ___ _populate_workspaces 
         ws _ _workspace_changed
-        _workspace_cb.currentIndexChanged.disconnect(ws)
+        _workspace_cb.cIC...disconnect(ws)
         _workspace_cb.clear()
         _workspace_cb.addItems(_tp_launcher.get_workspaces())
-        _workspace_cb.currentIndexChanged.c..(ws)
+        _workspace_cb.cIC...c..(ws)
         _populate_apps()
 
     ___ _populate_apps 
@@ -201,7 +201,7 @@ c_ TP_Launcher_GUI(?W...?W..
             item _ ?W...QListWidgetItem(_app_lw)
             icon _ _tp_launcher.get_app_icon(ws, app_name)
             __ icon:
-                item.setIcon(QtGui.QIcon(icon))
+                item.setIcon(?G...QIcon(icon))
             ____
                 item.setIcon(_icons.icon(_icons.File))
             item.sT..(app_name)
@@ -284,7 +284,7 @@ c_ TP_Launcher_GUI(?W...?W..
     #======= DELETE =================================
 
     ___ _dragging_workspace , index
-        ws _ st.(_workspace_cb.itemText(index.row()))
+        ws _ st.(_workspace_cb.iT..(index.row()))
         _dragging _ ('workspace', ws)
 
     ___ _dragging_app , item

@@ -2,7 +2,7 @@ _____ ___
 ____ pytube _____ YouTube
 ____ math _____ *
 ____ PySide.?C.. _____ *
-____ PySide.QtGui _____ *
+____ PySide.?G.. _____ *
 
 
 c_ Form(?D..

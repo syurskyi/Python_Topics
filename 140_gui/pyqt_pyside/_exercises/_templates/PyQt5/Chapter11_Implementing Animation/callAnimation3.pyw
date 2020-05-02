@@ -3,13 +3,13 @@ _____ ___
 ____ ?.?W.. _____ ?D.., ?A..
 ____ ?.?C.. _____ QRect, QPropertyAnimation
 
-____ demoAnimation3 _____ *
+____ demoAnimation3 _____ _
 
 c_ MyForm(?D..
     ___  -  
         s__. - ()
         ui _ Ui_Dialog()
-        ui.setupUi
+        ui.sU..
         ui.pushButtonBounce.c___.c..(startAnimation)
         s..
 

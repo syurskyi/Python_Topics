@@ -1042,9 +1042,9 @@ ___ _pyside(
 
     __ hasattr(Qt, "_QtGui"
         setattr(Qt, "QtWidgets", _new_module("QtWidgets"))
-        setattr(Qt, "_QtWidgets", Qt._QtGui)
+        setattr(Qt, "_QtWidgets", Qt._?G..)
 
-        Qt.QtCompat.setSectionResizeMode _ Qt._QtGui.QHeaderView.setResizeMode
+        Qt.QtCompat.setSectionResizeMode _ Qt._?G...QHeaderView.setResizeMode
 
     __ hasattr(Qt, "_QtCore"
         Qt.__qt_version__ _ Qt._QtCore.qVersion()
@@ -1155,10 +1155,10 @@ ___ _pyqt4(
 
     __ hasattr(Qt, "_QtGui"
         setattr(Qt, "QtWidgets", _new_module("QtWidgets"))
-        setattr(Qt, "_QtWidgets", Qt._QtGui)
+        setattr(Qt, "_QtWidgets", Qt._?G..)
 
         Qt.QtCompat.setSectionResizeMode _ \
-            Qt._QtGui.QHeaderView.setResizeMode
+            Qt._?G...QHeaderView.setResizeMode
 
     __ hasattr(Qt, "_QtCore"
         Qt.__binding_version__ _ Qt._QtCore.PYQT_VERSION_STR

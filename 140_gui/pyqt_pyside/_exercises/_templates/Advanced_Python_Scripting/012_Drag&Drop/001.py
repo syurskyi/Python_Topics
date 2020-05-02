@@ -1,7 +1,7 @@
 _____ ___
 _____ os
 ____ PySide.?C.. _____ *
-____ PySide.QtGui _____ *
+____ PySide.?G.. _____ *
 
 
 c_ listWidgetClass(QListWidget

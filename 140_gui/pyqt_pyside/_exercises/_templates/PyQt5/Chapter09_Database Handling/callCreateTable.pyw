@@ -10,7 +10,7 @@ c_ MyForm(?D..
     ___  -
         s__. - ()
         ui _ Ui_Dialog()
-        ui.setupUi
+        ui.sU..
         ui.pushButtonCreateTable.c___.c..(createTable)
         ui.pushButtonAddColumn.c___.c..(addColumns)
         s..
@@ -18,9 +18,9 @@ c_ MyForm(?D..
     ___ addColumns
         global tabledefinition         
         __ tabledefinition__"":
-            tabledefinition_"CREATE TABLE IF NOT EXISTS "+ ui.lineEditTableName.t..()+"("+ui.lineEditColumnName.t..()+" "+ui.comboBoxDataType.itemText(ui.comboBoxDataType.currentIndex())
+            tabledefinition_"CREATE TABLE IF NOT EXISTS "+ ui.lineEditTableName.t..()+"("+ui.lineEditColumnName.t..()+" "+ui.comboBoxDataType.iT..(ui.comboBoxDataType.cI..())
         ____
-            tabledefinition+_", "+ui.lineEditColumnName.t..()+" "+ui.comboBoxDataType.itemText(ui.comboBoxDataType.currentIndex())
+            tabledefinition+_", "+ui.lineEditColumnName.t..()+" "+ui.comboBoxDataType.iT..(ui.comboBoxDataType.cI..())
         ui.lineEditColumnName.sT..("")
         ui.lineEditColumnName.setFocus()
 

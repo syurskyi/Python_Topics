@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ PyQt4 _____ ?C.., QtGui
+____ PyQt4 _____ ?C.., ?G..
 
 try:
     _fromUtf8 _ ?C...QString.fromUtf8
@@ -16,32 +16,32 @@ except AttributeError:
         return s
 
 try:
-    _encoding _ QtGui.?A...UnicodeUTF8
+    _encoding _ ?G...?A...UnicodeUTF8
     ___ _translate(context, t.., disambig
-        return QtGui.?A...translate(context, t.., disambig, _encoding)
+        return ?G...?A...translate(context, t.., disambig, _encoding)
 except AttributeError:
     ___ _translate(context, t.., disambig
-        return QtGui.?A...translate(context, t.., disambig)
+        return ?G...?A...translate(context, t.., disambig)
 
 c_ Ui_client(object
     ___ setupUi , client
         client.setObjectName(_fromUtf8("client"))
         client.resize(366, 107)
-        verticalLayout _ QtGui.QVBoxLayout(client)
+        verticalLayout _ ?G...QVBoxLayout(client)
         verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
-        ip_le _ QtGui.QLineEdit(client)
+        ip_le _ ?G...QLineEdit(client)
         ip_le.setObjectName(_fromUtf8("ip_le"))
         verticalLayout.addWidget(ip_le)
-        connect_btn _ QtGui.?PB..(client)
+        connect_btn _ ?G...?PB..(client)
         connect_btn.setObjectName(_fromUtf8("connect_btn"))
         verticalLayout.addWidget(connect_btn)
-        horizontalLayout _ QtGui.QHBoxLayout()
+        horizontalLayout _ ?G...QHBoxLayout()
         horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
-        progress_sle _ QtGui.QSlider(client)
+        progress_sle _ ?G...QSlider(client)
         progress_sle.setOrientation(?C...Qt.Horizontal)
         progress_sle.setObjectName(_fromUtf8("progress_sle"))
         horizontalLayout.addWidget(progress_sle)
-        label _ QtGui.QLabel(client)
+        label _ ?G...QLabel(client)
         label.setMinimumSize(?C...QSize(50, 0))
         label.setObjectName(_fromUtf8("label"))
         horizontalLayout.addWidget(label)

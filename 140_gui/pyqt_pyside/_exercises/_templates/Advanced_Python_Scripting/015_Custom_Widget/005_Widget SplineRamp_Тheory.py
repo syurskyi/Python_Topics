@@ -1,5 +1,5 @@
 ____ PySide.?C.. _____ _
-____ PySide.QtGui _____ *
+____ PySide.?G.. _____ *
 
 c_ splineRampWidget(?W..
     ___  -

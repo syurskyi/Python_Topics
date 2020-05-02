@@ -1,6 +1,6 @@
 _____ ___
 ____ ?.?W.. _____ QMainWindow, ?A..
-____ ?.QtGui _____ QPainter
+____ ?.?G.. _____ QPainter
 
 ____ demoMenuBar _____ *
 
@@ -8,7 +8,7 @@ c_ AppWindow(QMainWindow
     ___  -  
         s__. - ()
         ui _ Ui_MainWindow()
-        ui.setupUi
+        ui.sU..
         pos1 _ [0,0]
         pos2 _ [0,0]
         toDraw_""
