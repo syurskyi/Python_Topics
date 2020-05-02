@@ -17,9 +17,9 @@ c_ Ui_Form(object
         horizontalLayout.setObjectName("horizontalLayout")
         verticalLayout _ ?G...QVBoxLayout()
         verticalLayout.setObjectName("verticalLayout")
-        pushButton _ ?G...?PB..(Form)
-        pushButton.setObjectName("pushButton")
-        verticalLayout.addWidget(pushButton)
+        pB__ _ ?G...?PB..(Form)
+        pB__.setObjectName("pushButton")
+        verticalLayout.addWidget(pB__)
         pushButton_2 _ ?G...?PB..(Form)
         pushButton_2.setObjectName("pushButton_2")
         verticalLayout.addWidget(pushButton_2)
@@ -32,6 +32,6 @@ c_ Ui_Form(object
 
     ___ retranslateUi , Form
         Form.setWindowTitle(?G...?A...translate("Form", "Form", None, ?G...?A...UnicodeUTF8))
-        pushButton.sT..(?G...?A...translate("Form", "PushButton", None, ?G...?A...UnicodeUTF8))
+        pB__.sT..(?G...?A...translate("Form", "PushButton", None, ?G...?A...UnicodeUTF8))
         pushButton_2.sT..(?G...?A...translate("Form", "PushButton", None, ?G...?A...UnicodeUTF8))
 
