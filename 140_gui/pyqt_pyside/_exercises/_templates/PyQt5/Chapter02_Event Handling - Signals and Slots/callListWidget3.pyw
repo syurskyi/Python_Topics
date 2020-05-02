@@ -7,7 +7,7 @@ ____ demoListWidget3 _____ *
 c_ MyForm(?D..
     ___  -
         s__. - ()
-        ui = Ui_Dialog()
+        ui _ Ui_Dialog()
         ui.setupUi
         ui.pushButtonAdd.clicked.c..(addlist)
         s..
@@ -17,8 +17,8 @@ c_ MyForm(?D..
         ui.lineEditFoodItem.sT..('')
         ui.lineEditFoodItem.setFocus()
         
-__ __name____"__main__":    
-    app = ?A..(___.argv)
-    w = MyForm()
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    w _ MyForm()
     w.s..
     ___.e..(app.exec_())

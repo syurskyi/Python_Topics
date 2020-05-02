@@ -9,20 +9,20 @@ ____ showGoogleMap _____ *
 c_ MyForm(?D..
     ___  -  
         s__. - ()
-        ui = Ui_Dialog()
+        ui _ Ui_Dialog()
         ui.setupUi
         ui.pushButtonShowMap.clicked.c..(dispSite)
         s..
 
 
     ___ dispSite 
-        lng = float(ui.lineEditLongitude.text())
-        lat = float(ui.lineEditLatitude.text())
-        URL="https://www.google.com/maps/@"+ui.lineEditLatitude.text()+","+ui.lineEditLongitude.text()+",9z"
+        lng _ float(ui.lineEditLongitude.text())
+        lat _ float(ui.lineEditLatitude.text())
+        URL_"https://www.google.com/maps/@"+ui.lineEditLatitude.text()+","+ui.lineEditLongitude.text()+",9z"
         ui.widget.load(QUrl(URL))
         
-__ __name____"__main__":    
-    app = ?A..(___.argv)
-    w = MyForm()
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    w _ MyForm()
     w.s..
     ___.e..(app.exec_())

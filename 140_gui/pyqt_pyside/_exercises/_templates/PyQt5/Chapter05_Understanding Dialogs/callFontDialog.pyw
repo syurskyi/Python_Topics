@@ -8,19 +8,19 @@ ____ demoFontDialog _____ *
 c_ MyForm(?D..
     ___  -
         s__. - ()
-        ui = Ui_Dialog()
+        ui _ Ui_Dialog()
         ui.setupUi
         ui.pushButtonFont.clicked.c..(changefont)
         s..
 
     ___ changefont
-        font, ok = QFontDialog.getFont()
+        font, ok _ QFontDialog.getFont()
         __ ok:
             ui.textEdit.setFont(font)
 
-__ __name____"__main__":
-    app = ?A..(___.argv)
-    w = MyForm()
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    w _ MyForm()
     w.s..
     ___.e..(app.exec_())
 

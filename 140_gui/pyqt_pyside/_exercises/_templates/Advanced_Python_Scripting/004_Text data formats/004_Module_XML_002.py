@@ -1,11 +1,11 @@
 _____ xml.etree.ElementTree as ET
 
-p = '/Users/sergejyurskyj/.nuke/example/PYTHON_EXAMPLE/Python_Example_All_Tutorials/VIDEO/Advanced Python Scripting/' \
+p _ '/Users/sergejyurskyj/.nuke/example/PYTHON_EXAMPLE/Python_Example_All_Tutorials/VIDEO/Advanced Python Scripting/' \
     '004_Text data formats/example5.xml'
 
-tree = ET.parse(p)
-root = tree.getroot()
-elem = root.find('element')
+tree _ ET.parse(p)
+root _ tree.getroot()
+elem _ root.find('element')
 # print(elem.tag)
 print(elem.attrib)
 print(elem.text)

@@ -1,14 +1,14 @@
 _____ json
 
-a = 123
-a = [1,2,'value','name']
+a _ 123
+a _ [1,2,'value','name']
 
-filePath = 'C:/Users/Sergej/Dropbox/nuke/.nuke/example/PYTHON_EXAMPLE/Python_Example_All_Tutorials/VIDEO/Advanced_Python_Scripting/004_Text data formats//picFile.json'
-a = [1,2,3,4,5]
-a = {'name':'Nik', 'value':1234, 'content':['obj1','obj2','obj3']}
-json.dump(a, open(filePath, 'w'), indent=4)
+filePath _ 'C:/Users/Sergej/Dropbox/nuke/.nuke/example/PYTHON_EXAMPLE/Python_Example_All_Tutorials/VIDEO/Advanced_Python_Scripting/004_Text data formats//picFile.json'
+a _ [1,2,3,4,5]
+a _ {'name':'Nik', 'value':1234, 'content':['obj1','obj2','obj3']}
+json.dump(a, open(filePath, 'w'), indent_4)
 
-b = json.load(open(filePath, 'r'))
+b _ json.load(open(filePath, 'r'))
 
 
 
@@ -20,14 +20,14 @@ c_ serializer(json.JSONEncoder
 
 c_ myClass(
     ___  -  
-        name = 'someName'
-        x = 100
+        name _ 'someName'
+        x _ 100
 
 
-a = myClass()
-b = {'cls':a}
-json.dump(b, open(filePath, 'w'), indent=4, cls=serializer)
+a _ myClass()
+b _ {'cls':a}
+json.dump(b, open(filePath, 'w'), indent_4, cls_serializer)
 
-b = json.load(open(filePath, 'r'))
+b _ json.load(open(filePath, 'r'))
 
 print(b)

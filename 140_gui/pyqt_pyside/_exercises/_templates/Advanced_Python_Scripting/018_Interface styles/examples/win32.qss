@@ -547,7 +547,7 @@ QSpinBox::up-button
 {
     subcontrol-origin: border;
     subcontrol-position: top right; /* position at the top right corner */
-    width: 16px; /* 16 + 2*1px border-width = 15px padding + 3px parent border */
+    width: 16px; /* 16 + 2*1px border-width _ 15px padding + 3px parent border */
 	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a6a6a6, stop:1 #979797);
     border: 1px solid #323232;
 	border-bottom-width: 0;
@@ -803,7 +803,7 @@ QToolButton
 	min-width: 18px;
 }
 
-QToolButton[popupMode="1"]
+QToolButton[popupMode_"1"]
 {
 	/* only for MenuButtonPopup */
 	padding-right: 20px; /* make way for the popup button */
@@ -812,7 +812,7 @@ QToolButton[popupMode="1"]
 
 QToolButton::menu-button
 {
-     /* 16px width + 4px for border = 20px allocated above */
+     /* 16px width + 4px for border _ 20px allocated above */
 	border-top: 1px solid #323232;
 	border-left: 1px solid #222222;
 	border-bottom: 1px solid #323232;
@@ -857,7 +857,7 @@ QDoubleSpinBox::up-button
 {
     subcontrol-origin: border;
     subcontrol-position: top right; /* position at the top right corner */
-    width: 16px; /* 16 + 2*1px border-width = 15px padding + 3px parent border */
+    width: 16px; /* 16 + 2*1px border-width _ 15px padding + 3px parent border */
 	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a6a6a6, stop:1 #979797);
     border: 1px solid #323232;
 	border-bottom-width: 0;

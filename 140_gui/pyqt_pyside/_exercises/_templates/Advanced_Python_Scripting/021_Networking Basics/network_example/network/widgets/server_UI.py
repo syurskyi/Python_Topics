@@ -10,13 +10,13 @@
 ____ PyQt4 _____ ?C.., QtGui
 
 try:
-    _fromUtf8 = ?C...QString.fromUtf8
+    _fromUtf8 _ ?C...QString.fromUtf8
 except AttributeError:
     ___ _fromUtf8(s
         return s
 
 try:
-    _encoding = QtGui.?A...UnicodeUTF8
+    _encoding _ QtGui.?A...UnicodeUTF8
     ___ _translate(context, text, disambig
         return QtGui.?A...translate(context, text, disambig, _encoding)
 except AttributeError:
@@ -27,23 +27,23 @@ c_ Ui_Server(object
     ___ setupUi , Server
         Server.setObjectName(_fromUtf8("Server"))
         Server.resize(396, 407)
-        verticalLayout = QtGui.QVBoxLayout(Server)
+        verticalLayout _ QtGui.QVBoxLayout(Server)
         verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
-        progress_pbr = QtGui.QProgressBar(Server)
+        progress_pbr _ QtGui.QProgressBar(Server)
         progress_pbr.setProperty("value", 0)
         progress_pbr.setObjectName(_fromUtf8("progress_pbr"))
         verticalLayout.addWidget(progress_pbr)
-        horizontalLayout = QtGui.QHBoxLayout()
+        horizontalLayout _ QtGui.QHBoxLayout()
         horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
-        info_lb = QtGui.QLabel(Server)
+        info_lb _ QtGui.QLabel(Server)
         info_lb.setObjectName(_fromUtf8("info_lb"))
         horizontalLayout.addWidget(info_lb)
-        ip_le = QtGui.QLineEdit(Server)
+        ip_le _ QtGui.QLineEdit(Server)
         ip_le.setReadOnly(T..)
         ip_le.setObjectName(_fromUtf8("ip_le"))
         horizontalLayout.addWidget(ip_le)
         verticalLayout.addLayout(horizontalLayout)
-        out_tb = QtGui.QTextBrowser(Server)
+        out_tb _ QtGui.QTextBrowser(Server)
         out_tb.setObjectName(_fromUtf8("out_tb"))
         verticalLayout.addWidget(out_tb)
 

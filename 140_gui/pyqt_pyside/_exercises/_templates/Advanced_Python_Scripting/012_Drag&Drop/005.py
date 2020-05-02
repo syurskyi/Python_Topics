@@ -3,7 +3,7 @@ _____ os
 ____ PySide.?C.. _____ *
 ____ PySide.QtGui _____ *
 
-icon = os.path.join(os.path.dirname(__file__), 'drag.png')
+icon _ os.path.join(os.path.dirname(__file__), 'drag.png')
 
 c_ listWidgetClass(QListWidget
     ___  -
@@ -11,11 +11,11 @@ c_ listWidgetClass(QListWidget
         setWindowFlags(Qt.WindowStaysOnTopHint)
         setDragDropMode(QAbstractItemView.DragDrop)
         setSelectionMode(QAbstractItemView.ExtendedSelection)
-        files = []
+        files _ []
 
     ___ dropEvent , event
         # print 'DROP', type(event)
-        mimedata = event.mimeData()
+        mimedata _ event.mimeData()
         __ mimedata.hasUrls(
             for f in mimedata.urls(
                 addFile(f.toLocalFile())
@@ -24,7 +24,7 @@ c_ listWidgetClass(QListWidget
         __ event.source() is self:
             event.ignore()
         else:
-            mimedata = event.mimeData()
+            mimedata _ event.mimeData()
             __ mimedata.hasUrls(
                 event.accept()
             else:
@@ -34,29 +34,29 @@ c_ listWidgetClass(QListWidget
         __ event.source() is self:
             event.ignore()
         else:
-            mimedata = event.mimeData()
+            mimedata _ event.mimeData()
             __ mimedata.hasUrls(
                 event.accept()
             else:
                 event.ignore()
 
     ___ startDrag , dropAction
-        drag = QDrag
-        mimedata = QMimeData()
-        url = []
+        drag _ QDrag
+        mimedata _ QMimeData()
+        url _ []
         for i in selectedItems(
             url.append(i.data(Qt.UserRole))
         mimedata.setUrls([QUrl.fromLocalFile(x) for x in url])
         drag.setMimeData(mimedata)
-        pix = QPixmap(icon)
+        pix _ QPixmap(icon)
         drag.setPixmap(pix)
-        r = drag.exec_()
+        r _ drag.exec_()
         __ r __ Qt.DropAction.MoveAction:
             deleteSelected()
 
     ___ addFile , path
         __ not path in files:
-            item = QListWidgetItem
+            item _ QListWidgetItem
             item.sT..(os.path.basename(path))
             item.setData(Qt.UserRole, path)
             files.append(path)
@@ -69,12 +69,12 @@ c_ listWidgetClass(QListWidget
 __ __name__ __ '__main__':
     _____ ___
 
-    app = None
+    app _ None
     try:
         _____ nuke
     except ImportError:
-        app = ?A..(___.argv)
-    main = listWidgetClass()
+        app _ ?A..(___.argv)
+    main _ listWidgetClass()
     main.s..
 
     __ app is not None:

@@ -18,19 +18,19 @@
 
 ____ PySide.QtGui _____ QIcon
 _____ os
-root = os.path.dirname(__file__)
+root _ os.path.dirname(__file__)
 
-icons = dict(
-    create=QIcon(os.path.join(root, 'create.png')),
-    create=os.path.join(root, 'create.png'),
-    clear=os.path.join(root, 'clear.png'),
-    open=os.path.join(root, 'open.png'),
-    close=os.path.join(root, 'close.png'),
-    save=os.path.join(root, 'save.png'),
-    item1=os.path.join(root, 'item1.png'),
-    item2=os.path.join(root, 'item2.png'),
-    item3=os.path.join(root, 'item3.png'),
-    sphere=os.path.join(root, 'sphere.png')
+icons _ dict(
+    create_QIcon(os.path.join(root, 'create.png')),
+    create_os.path.join(root, 'create.png'),
+    clear_os.path.join(root, 'clear.png'),
+    open_os.path.join(root, 'open.png'),
+    close_os.path.join(root, 'close.png'),
+    save_os.path.join(root, 'save.png'),
+    item1_os.path.join(root, 'item1.png'),
+    item2_os.path.join(root, 'item2.png'),
+    item3_os.path.join(root, 'item3.png'),
+    sphere_os.path.join(root, 'sphere.png')
 )
 
 # print icons

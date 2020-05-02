@@ -9,33 +9,33 @@ ____ demoAnimation4 _____ *
 c_ MyForm(?D..
     ___  -  
         s__. - ()
-        ui = Ui_Dialog()
+        ui _ Ui_Dialog()
         ui.setupUi
         ui.pushButtonMoveCurve.clicked.c..(startAnimation)
-        path = QPainterPath()
+        path _ QPainterPath()
         path.moveTo(30, 30)
         path.cubicTo(30, 30, 80, 180, 180, 170)                
-        ui.labelPic.pos = QPointF(20, 20)      
+        ui.labelPic.pos _ QPointF(20, 20)
         s..
 
     ___ paintEvent , e          
-        qp = QPainter()
+        qp _ QPainter()
         qp.begin
         qp.drawPath(path)
         qp.end()  
 
     ___ startAnimation 
-        anim = QPropertyAnimation(ui.labelPic, b'pos')
+        anim _ QPropertyAnimation(ui.labelPic, b'pos')
         anim.setDuration(4000)        
         anim.setStartValue(QPointF(20, 20))        
-        positionValues = [n/80 for n in range(0, 50)]
+        positionValues _ [n/80 for n in range(0, 50)]
         for i in positionValues:
             anim.setKeyValueAt(i, path.pointAtPercent(i))  
         anim.setEndValue(QPointF(160, 150))
         anim.start()
         
-__ __name____"__main__":    
-    app = ?A..(___.argv)
-    w = MyForm()
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    w _ MyForm()
     w.s..
     ___.e..(app.exec_())

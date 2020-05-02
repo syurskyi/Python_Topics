@@ -34,16 +34,16 @@ c_ TP_Launcher_Model(object
     Also includes YouTube opening function, hardcoded url though.
     '''
     ___  -  
-        _workspaces = OrderedDict()
-        _open_doc = defaultdict(lambda: 'open ')
-        _open_doc['Windows'] = 'start '
-        _platform = platform.system()
+        _workspaces _ OrderedDict()
+        _open_doc _ defaultdict(lambda: 'open ')
+        _open_doc['Windows'] _ 'start '
+        _platform _ platform.system()
 
     # ======== WORKSPACES ============
 
     ___ add_workspace , ws_name
         ''' Add a new workspace, creating ordered dict'''
-        _workspaces[ws_name] = OrderedDict()
+        _workspaces[ws_name] _ OrderedDict()
 
     ___ get_workspaces 
         ''' returns a list of workspace names '''
@@ -67,8 +67,8 @@ c_ TP_Launcher_Model(object
         ''' add an application and icon file path to the workspace
         dictionary designated
         '''
-        app_name = os.path.splitext(os.path.basename(app_path))[0]
-        _workspaces[ws_name][app_name] = [app_path, icon_path]
+        app_name _ os.path.splitext(os.path.basename(app_path))[0]
+        _workspaces[ws_name][app_name] _ [app_path, icon_path]
 
     ___ delete_app , ws_name, app_name
         ''' delete app from workspace dict'''
@@ -76,15 +76,15 @@ c_ TP_Launcher_Model(object
 
     ___ reorder_apps , ws_name, app_list
         ''' if app/file order has changed, reorder dict'''
-        __ _workspaces[ws_name].keys() != app_list:
-            temp = OrderedDict()
+        __ _workspaces[ws_name].keys() !_ app_list:
+            temp _ OrderedDict()
             for name in app_list:
-                temp[name] = _workspaces[ws_name][name]
-            _workspaces[ws_name] = temp
+                temp[name] _ _workspaces[ws_name][name]
+            _workspaces[ws_name] _ temp
 
     ___ run_app , ws_name, app_name
         ''' attempt to run application/file at path if still exists'''
-        _file = _workspaces[ws_name][app_name][0]
+        _file _ _workspaces[ws_name][app_name][0]
         __ os.path.exists(_file
             try:
                 subprocess.Popen(_file)
@@ -107,7 +107,7 @@ c_ TP_Launcher_Model(object
     ___ read_json_file , path
         ''' read data from ordered dict to json file'''
         with open(path, 'r') as js_file:
-            _workspaces = OrderedDict(json.load(js_file))
+            _workspaces _ OrderedDict(json.load(js_file))
 
 
 

@@ -5,12 +5,12 @@ ____ ?.?W.. _____ ?D.., ?A..
 ____ demoMultipleInheritance _____ *
 
 c_ Student:
-    name = ""
-    code = ""
+    name _ ""
+    code _ ""
  
     ___  -  , code, name
-        code = code
-        name = name
+        code _ code
+        name _ name
 
     ___ getCode 
         return code
@@ -20,12 +20,12 @@ c_ Student:
 
 
 c_ Marks:
-    historyMarks = 0
-    geographyMarks = 0
+    historyMarks _ 0
+    geographyMarks _ 0
  
     ___  -  ,  historyMarks, geographyMarks
-        historyMarks = historyMarks
-        geographyMarks = geographyMarks
+        historyMarks _ historyMarks
+        geographyMarks _ geographyMarks
         
     ___ getHistoryMarks 
         return historyMarks
@@ -34,14 +34,14 @@ c_ Marks:
         return geographyMarks
 
 c_ Result(Student, Marks
-    totalMarks = 0
-    percentage = 0
+    totalMarks _ 0
+    percentage _ 0
  
     ___  -  ,  code, name, historyMarks, geographyMarks
         Student. -  ,  code, name)
         Marks. -  , historyMarks, geographyMarks)
-        totalMarks = historyMarks + geographyMarks
-        percentage = (historyMarks + geographyMarks) / 200 * 100
+        totalMarks _ historyMarks + geographyMarks
+        percentage _ (historyMarks + geographyMarks) / 200 * 100
         
     ___ getTotalMarks 
         return totalMarks
@@ -52,18 +52,18 @@ c_ Result(Student, Marks
 c_ MyForm(?D..
     ___  -  
         s__. - ()
-        ui = Ui_Dialog()
+        ui _ Ui_Dialog()
         ui.setupUi
         ui.ButtonClickMe.clicked.c..(dispmessage)
         s..
 
     ___ dispmessage 
-        resultObj=Result(ui.lineEditCode.text(), ui.lineEditName.text(), int(ui.lineEditHistoryMarks.text()), int(ui.lineEditGeographyMarks.text()))
+        resultObj_Result(ui.lineEditCode.text(), ui.lineEditName.text(), int(ui.lineEditHistoryMarks.text()), int(ui.lineEditGeographyMarks.text()))
         ui.lineEditTotal.sT..(st.(resultObj.getTotalMarks()))
         ui.lineEditPercentage.sT..(st.(resultObj.getPercentage()))
 
-__ __name____"__main__":    
-    app = ?A..(___.argv)
-    w = MyForm()
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    w _ MyForm()
     w.s..
     ___.e..(app.exec_())

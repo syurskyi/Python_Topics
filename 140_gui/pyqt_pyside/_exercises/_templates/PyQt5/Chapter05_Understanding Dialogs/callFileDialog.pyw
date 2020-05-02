@@ -7,7 +7,7 @@ ____ demoFileDialog _____ *
 c_ MyForm(QMainWindow
     ___  -
         s__. - ()
-        ui = Ui_MainWindow()
+        ui _ Ui_MainWindow()
         ui.setupUi
         ui.actionOpen.triggered.c..(openFileDialog)
         ui.actionSave.triggered.c..(saveFileDialog)
@@ -15,27 +15,27 @@ c_ MyForm(QMainWindow
 
     ___ openFileDialog
 
-        fname = QFileDialog.getOpenFileName , 'Open file', '/home')
+        fname _ QFileDialog.getOpenFileName , 'Open file', '/home')
 
         __ fname[0]:
-            f = open(fname[0], 'r')
+            f _ open(fname[0], 'r')
 
             with f:
-                data = f.read()
+                data _ f.read()
                 ui.textEdit.sT..(data)
 
     ___ saveFileDialog
-        options = QFileDialog.Options()
-        options |= QFileDialog.DontUseNativeDialog
-        fileName, _ = QFileDialog.getSaveFileName ,"QFileDialog.getSaveFileName()","","All Files (*);;Text Files (*.txt)", options=options)
-        f = open(fileName,'w')
-        text = ui.textEdit.toPlainText()
+        options _ QFileDialog.Options()
+        options |_ QFileDialog.DontUseNativeDialog
+        fileName, _ _ QFileDialog.getSaveFileName ,"QFileDialog.getSaveFileName()","","All Files (*);;Text Files (*.txt)", options_options)
+        f _ open(fileName,'w')
+        text _ ui.textEdit.toPlainText()
         f.write(text)
         f.close()
 
-__ __name____"__main__":    
-    app = ?A..(___.argv)
-    w = MyForm()
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    w _ MyForm()
     w.s..
     ___.e..(app.exec_())
 

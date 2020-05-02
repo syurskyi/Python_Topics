@@ -10,13 +10,13 @@
 ____ PyQt4 _____ ?C.., QtGui
 
 try:
-    _fromUtf8 = ?C...QString.fromUtf8
+    _fromUtf8 _ ?C...QString.fromUtf8
 except AttributeError:
     ___ _fromUtf8(s
         return s
 
 try:
-    _encoding = QtGui.?A...UnicodeUTF8
+    _encoding _ QtGui.?A...UnicodeUTF8
     ___ _translate(context, text, disambig
         return QtGui.?A...translate(context, text, disambig, _encoding)
 except AttributeError:
@@ -27,14 +27,14 @@ c_ Ui_settingsDialog(object
     ___ setupUi , settingsDialog
         settingsDialog.setObjectName(_fromUtf8("settingsDialog"))
         settingsDialog.resize(458, 153)
-        verticalLayout = QtGui.QVBoxLayout(settingsDialog)
+        verticalLayout _ QtGui.QVBoxLayout(settingsDialog)
         verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
-        table = QtGui.QTableWidget(settingsDialog)
+        table _ QtGui.QTableWidget(settingsDialog)
         table.setObjectName(_fromUtf8("table"))
         table.setColumnCount(0)
         table.setRowCount(0)
         verticalLayout.addWidget(table)
-        buttonBox = QtGui.QDialogButtonBox(settingsDialog)
+        buttonBox _ QtGui.QDialogButtonBox(settingsDialog)
         buttonBox.setOrientation(?C...Qt.Horizontal)
         buttonBox.setStandardButtons(QtGui.QDialogButtonBox.Cancel|QtGui.QDialogButtonBox.Ok)
         buttonBox.setObjectName(_fromUtf8("buttonBox"))

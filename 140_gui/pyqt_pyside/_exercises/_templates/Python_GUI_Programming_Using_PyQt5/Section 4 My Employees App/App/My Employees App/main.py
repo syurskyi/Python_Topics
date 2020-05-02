@@ -5,10 +5,10 @@ _____ sqlite3
 ____ PIL _____ Image
 
 
-con = sqlite3.c..('employees.db')
-cur = con.cursor()
-defaultImg="person.png"
-person_id=None
+con _ sqlite3.c..('employees.db')
+cur _ con.cursor()
+defaultImg_"person.png"
+person_id_None
 c_ Main(?W..
     ___  -  
         s__. - ()
@@ -26,22 +26,22 @@ c_ Main(?W..
 
     ___ mainDesign 
         setStyleSheet("font-size:14pt;font-family:Arial Bold;")
-        employeeList=QListWidget()
+        employeeList_QListWidget()
         employeeList.itemClicked.c..(singleClick)
-        btnNew=?PB..("New")
+        btnNew_?PB..("New")
         btnNew.clicked.c..(addEmployee)
-        btnUpdate=?PB..("Update")
+        btnUpdate_?PB..("Update")
         btnUpdate.clicked.c..(updateEmployee)
-        btnDelete=?PB..("Delete")
+        btnDelete_?PB..("Delete")
         btnDelete.clicked.c..(deleteEmployee)
 
     ___ layouts 
         ###################Layouts###############
-        mainLayout=QHBoxLayout()
-        leftLayout=QFormLayout()
-        rightMainLayout=QVBoxLayout()
-        rightTopLayout=QHBoxLayout()
-        rightBottomLayout=QHBoxLayout()
+        mainLayout_QHBoxLayout()
+        leftLayout_QFormLayout()
+        rightMainLayout_QVBoxLayout()
+        rightTopLayout_QHBoxLayout()
+        rightBottomLayout_QHBoxLayout()
         #####################Adding child layouts to main layout###########
         rightMainLayout.addLayout(rightTopLayout)
         rightMainLayout.addLayout(rightBottomLayout)
@@ -56,24 +56,24 @@ c_ Main(?W..
         setLayout(mainLayout)
 
     ___ addEmployee 
-        newEmployee=AddEmployee()
+        newEmployee_AddEmployee()
         close()
     ___ getEmployees 
-        query="SELECT id,name,surname FROM employees"
-        employees=cur.execute(query).fetchall()
+        query_"SELECT id,name,surname FROM employees"
+        employees_cur.execute(query).fetchall()
         for employee in employees:
             employeeList.addItem(st.(employee[0])+"-"+employee[1]+" "+employee[2] )
 
     ___ displayFirstRecord 
-        query="SELECT * FROM employees ORDER BY ROWID ASC LIMIT 1"
-        employee=cur.execute(query).fetchone()
-        img=QLabel()
+        query_"SELECT * FROM employees ORDER BY ROWID ASC LIMIT 1"
+        employee_cur.execute(query).fetchone()
+        img_QLabel()
         img.setPixmap(QPixmap("images/"+employee[5]))
-        name=QLabel(employee[1])
-        surname=QLabel(employee[2])
-        phone=QLabel(employee[3])
-        email=QLabel(employee[4])
-        address=QLabel(employee[6])
+        name_QLabel(employee[1])
+        surname_QLabel(employee[2])
+        phone_QLabel(employee[3])
+        email_QLabel(employee[4])
+        address_QLabel(employee[6])
         leftLayout.setVerticalSpacing(20)
         leftLayout.addRow("",img)
         leftLayout.addRow("Name: ",name)
@@ -84,22 +84,22 @@ c_ Main(?W..
 
     ___ singleClick 
         for i in reversed(range(leftLayout.count())):
-            widget=leftLayout.takeAt(i).widget()
+            widget_leftLayout.takeAt(i).widget()
 
             __ widget is not None:
                 widget.deleteLater()
 
-        employee=employeeList.currentItem().text()
-        id=employee.split("-")[0]
-        query=("SELECT * FROM employees WHERE id=?")
-        person=cur.execute(query,(id,)).fetchone()#single item tuple=(1,)
-        img = QLabel()
+        employee_employeeList.currentItem().text()
+        id_employee.split("-")[0]
+        query_("SELECT * FROM employees WHERE id=?")
+        person_cur.execute(query,(id,)).fetchone()#single item tuple=(1,)
+        img _ QLabel()
         img.setPixmap(QPixmap("images/" + person[5]))
-        name = QLabel(person[1])
-        surname = QLabel(person[2])
-        phone = QLabel(person[3])
-        email = QLabel(person[4])
-        address = QLabel(person[6])
+        name _ QLabel(person[1])
+        surname _ QLabel(person[2])
+        phone _ QLabel(person[3])
+        email _ QLabel(person[4])
+        address _ QLabel(person[6])
         leftLayout.setVerticalSpacing(20)
         leftLayout.addRow("", img)
         leftLayout.addRow("Name: ", name)
@@ -110,17 +110,17 @@ c_ Main(?W..
 
     ___ deleteEmployee 
         __ employeeList.selectedItems(
-            person=employeeList.currentItem().text()
-            id = person.split("-")[0]
-            mbox=QMessageBox.question ,"Warning","Are you sure to delete this person?",QMessageBox.Yes|QMessageBox.No,QMessageBox.No)
+            person_employeeList.currentItem().text()
+            id _ person.split("-")[0]
+            mbox_QMessageBox.question ,"Warning","Are you sure to delete this person?",QMessageBox.Yes|QMessageBox.No,QMessageBox.No)
             __ mbox __ QMessageBox.Yes:
                 try:
-                    query="DELETE FROM employees WHERE id=?"
+                    query_"DELETE FROM employees WHERE id=?"
                     cur.execute(query,(id,))
                     con.commit()
                     QMessageBox.information ,"Info!!!","Person has been deleted")
                     close()
-                    main=Main()
+                    main_Main()
 
                 except:
                     QMessageBox.information ,"Warning!!!","Person has not been deleted")
@@ -132,9 +132,9 @@ c_ Main(?W..
     ___ updateEmployee 
         global person_id
         __ employeeList.selectedItems(
-            person = employeeList.currentItem().text()
-            person_id=person.split("-")[0]
-            updateWindow=UpdateEmployee()
+            person _ employeeList.currentItem().text()
+            person_id_person.split("-")[0]
+            updateWindow_UpdateEmployee()
             close()
 
         else:
@@ -157,56 +157,56 @@ c_ UpdateEmployee(?W..
         layouts()
 
     ___ closeEvent , event
-        main = Main()
+        main _ Main()
 
     ___ getPerson 
         global person_id
-        query="SELECT * FROM employees WHERE id=?"
-        employee=cur.execute(query,(person_id,)).fetchone()
+        query_"SELECT * FROM employees WHERE id=?"
+        employee_cur.execute(query,(person_id,)).fetchone()
         print(employee)
-        name=employee[1]
-        surname=employee[2]
-        phone=employee[3]
-        email=employee[4]
-        image=employee[5]
-        address=employee[6]
+        name_employee[1]
+        surname_employee[2]
+        phone_employee[3]
+        email_employee[4]
+        image_employee[5]
+        address_employee[6]
 
     ___ mainDesign 
         ################Top Layout widgets#######################
         setStyleSheet("background-color:white;font-size:14pt;font-family:Times")
-        title = QLabel("Update Person")
+        title _ QLabel("Update Person")
         title.setStyleSheet('font-size: 24pt;font-family:Arial Bold;')
-        imgAdd = QLabel()
+        imgAdd _ QLabel()
         imgAdd.setPixmap(QPixmap("images/{}".format(image)))
         ###################Bottom Layout Widgets#####################
-        nameLbl = QLabel("Name :")
-        nameEntry = QLineEdit()
+        nameLbl _ QLabel("Name :")
+        nameEntry _ QLineEdit()
         nameEntry.sT..(name)
-        surnameLbl = QLabel("Surname :")
-        surnameEntry = QLineEdit()
+        surnameLbl _ QLabel("Surname :")
+        surnameEntry _ QLineEdit()
         surnameEntry.sT..(surname)
-        phoneLbl = QLabel("Phone :")
-        phoneEntry = QLineEdit()
+        phoneLbl _ QLabel("Phone :")
+        phoneEntry _ QLineEdit()
         phoneEntry.sT..(phone)
-        emailLbl = QLabel("Email :")
-        emailEntry = QLineEdit()
+        emailLbl _ QLabel("Email :")
+        emailEntry _ QLineEdit()
         emailEntry.sT..(email)
-        imgLbl = QLabel("Picture: ")
-        imgButton = ?PB..("Browse")
+        imgLbl _ QLabel("Picture: ")
+        imgButton _ ?PB..("Browse")
         imgButton.setStyleSheet("background-color:orange;font-size:10pt")
         imgButton.clicked.c..(uploadImage)
-        addressLbl = QLabel("Address: ")
-        addressEditor = QTextEdit()
+        addressLbl _ QLabel("Address: ")
+        addressEditor _ QTextEdit()
         addressEditor.sT..(address)
-        addButton = ?PB..("Update")
+        addButton _ ?PB..("Update")
         addButton.setStyleSheet("background-color:orange;font-size:10pt")
         addButton.clicked.c..(updateEmployee)
 
     ___ layouts 
         ##################creating main layouts##########
-        mainLayout = QVBoxLayout()
-        topLayout = QVBoxLayout()
-        bottomLayout = QFormLayout()
+        mainLayout _ QVBoxLayout()
+        topLayout _ QVBoxLayout()
+        bottomLayout _ QFormLayout()
 
         ##########adding child layouts to main layout##############
         mainLayout.addLayout(topLayout)
@@ -234,14 +234,14 @@ c_ UpdateEmployee(?W..
 
     ___ uploadImage 
         global defaultImg
-        size =(128,128)
-        fileName,ok =QFileDialog.getOpenFileName ,'Upload Image','','Image Files (*.jpg *.png)')
+        size _(128,128)
+        fileName,ok _QFileDialog.getOpenFileName ,'Upload Image','','Image Files (*.jpg *.png)')
 
         __ ok:
 
-            defaultImg=os.path.basename(fileName)
-            img=Image.open(fileName)
-            img=img.resize(size)
+            defaultImg_os.path.basename(fileName)
+            img_Image.open(fileName)
+            img_img.resize(size)
             img.save("images/{}".format(defaultImg))
 
 
@@ -249,20 +249,20 @@ c_ UpdateEmployee(?W..
     ___ updateEmployee 
         global defaultImg
         global person_id
-        name=nameEntry.text()
-        surname=surnameEntry.text()
-        phone=phoneEntry.text()
-        email=emailEntry.text()
-        img=defaultImg
-        address=addressEditor.toPlainText()
-        __ (name and surname and phone !=""
+        name_nameEntry.text()
+        surname_surnameEntry.text()
+        phone_phoneEntry.text()
+        email_emailEntry.text()
+        img_defaultImg
+        address_addressEditor.toPlainText()
+        __ (name and surname and phone !_""
             try:
-                query="UPDATE employees set name =?, surname=?, phone=?,email=?,img=?,address=? WHERE id=?"
+                query_"UPDATE employees set name =?, surname=?, phone=?,email=?,img=?,address=? WHERE id=?"
                 cur.execute(query,(name,surname,phone,email,img,address,person_id))
                 con.commit()
                 QMessageBox.information ,"Success","Person has been updated")
                 close()
-                main=Main()
+                main_Main()
             except:
                 QMessageBox.information , "Warning", "Person has not been updated")
 
@@ -284,43 +284,43 @@ c_ AddEmployee(?W..
         layouts()
 
     ___ closeEvent , event
-        main=Main()
+        main_Main()
 
     ___ mainDesign 
         ################Top Layout widgets#######################
         setStyleSheet("background-color:white;font-size:14pt;font-family:Times")
-        title=QLabel("Add Person")
+        title_QLabel("Add Person")
         title.setStyleSheet('font-size: 24pt;font-family:Arial Bold;')
-        imgAdd=QLabel()
+        imgAdd_QLabel()
         imgAdd.setPixmap(QPixmap("icons/person.png"))
         ###################Bottom Layout Widgets#####################
-        nameLbl=QLabel("Name :")
-        nameEntry=QLineEdit()
+        nameLbl_QLabel("Name :")
+        nameEntry_QLineEdit()
         nameEntry.setPlaceholderText("Enter Employee Name")
-        surnameLbl = QLabel("Surname :")
-        surnameEntry = QLineEdit()
+        surnameLbl _ QLabel("Surname :")
+        surnameEntry _ QLineEdit()
         surnameEntry.setPlaceholderText("Enter Employee Surname")
-        phoneLbl = QLabel("Phone :")
-        phoneEntry = QLineEdit()
+        phoneLbl _ QLabel("Phone :")
+        phoneEntry _ QLineEdit()
         phoneEntry.setPlaceholderText("Enter Employee Phone Number")
-        emailLbl = QLabel("Email :")
-        emailEntry = QLineEdit()
+        emailLbl _ QLabel("Email :")
+        emailEntry _ QLineEdit()
         emailEntry.setPlaceholderText("Enter Employee Email")
-        imgLbl=QLabel("Picture: ")
-        imgButton=?PB..("Browse")
+        imgLbl_QLabel("Picture: ")
+        imgButton_?PB..("Browse")
         imgButton.setStyleSheet("background-color:orange;font-size:10pt")
         imgButton.clicked.c..(uploadImage)
-        addressLbl=QLabel("Address: ")
-        addressEditor=QTextEdit()
-        addButton=?PB..("Add")
+        addressLbl_QLabel("Address: ")
+        addressEditor_QTextEdit()
+        addButton_?PB..("Add")
         addButton.setStyleSheet("background-color:orange;font-size:10pt")
         addButton.clicked.c..(addEmployee)
 
     ___ layouts 
         ##################creating main layouts##########
-        mainLayout=QVBoxLayout()
-        topLayout=QVBoxLayout()
-        bottomLayout=QFormLayout()
+        mainLayout_QVBoxLayout()
+        topLayout_QVBoxLayout()
+        bottomLayout_QFormLayout()
 
         ##########adding child layouts to main layout##############
         mainLayout.addLayout(topLayout)
@@ -347,34 +347,34 @@ c_ AddEmployee(?W..
 
     ___ uploadImage 
         global defaultImg
-        size =(128,128)
-        fileName,ok =QFileDialog.getOpenFileName ,'Upload Image','','Image Files (*.jpg *.png)')
+        size _(128,128)
+        fileName,ok _QFileDialog.getOpenFileName ,'Upload Image','','Image Files (*.jpg *.png)')
 
         __ ok:
 
-            defaultImg=os.path.basename(fileName)
-            img=Image.open(fileName)
-            img=img.resize(size)
+            defaultImg_os.path.basename(fileName)
+            img_Image.open(fileName)
+            img_img.resize(size)
             img.save("images/{}".format(defaultImg))
 
 
 
     ___ addEmployee 
         global defaultImg
-        name=nameEntry.text()
-        surname=surnameEntry.text()
-        phone=phoneEntry.text()
-        email=emailEntry.text()
-        img=defaultImg
-        address=addressEditor.toPlainText()
-        __ (name and surname and phone !=""
+        name_nameEntry.text()
+        surname_surnameEntry.text()
+        phone_phoneEntry.text()
+        email_emailEntry.text()
+        img_defaultImg
+        address_addressEditor.toPlainText()
+        __ (name and surname and phone !_""
             try:
-                query="INSERT INTO employees (name,surname,phone,email,img,address) VALUES(?,?,?,?,?,?)"
+                query_"INSERT INTO employees (name,surname,phone,email,img,address) VALUES(?,?,?,?,?,?)"
                 cur.execute(query,(name,surname,phone,email,img,address))
                 con.commit()
                 QMessageBox.information ,"Success","Person has been added")
                 close()
-                main=Main()
+                main_Main()
             except:
                 QMessageBox.information , "Warning", "Person has not been added")
 
@@ -384,8 +384,8 @@ c_ AddEmployee(?W..
 
 
 ___ main(
-    APP=?A..(___.argv)
-    window=Main()
+    APP_?A..(___.argv)
+    window_Main()
     ___.e..(APP.exec_())
 __ __name__ __ '__main__':
     main()

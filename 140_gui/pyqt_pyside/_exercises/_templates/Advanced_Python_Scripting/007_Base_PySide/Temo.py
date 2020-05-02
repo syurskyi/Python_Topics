@@ -6,17 +6,17 @@ ____ PySide.QtGui _____ *
 
 
 c_ Form(?D..
-    ___  -  , parent=None
+    ___  -  , parent_None
         super(Form, self). - (parent)
 
-        intext = QTextEdit()
-        outtext = QTextBrowser()
-        bt1 = ?PB..()
-        output = ""
+        intext _ QTextEdit()
+        outtext _ QTextBrowser()
+        bt1 _ ?PB..()
+        output _ ""
 
         bt1.sT..("Download")
 
-        grid = QGridLayout()
+        grid _ QGridLayout()
         grid.addWidget(intext, 1, 0)
         grid.addWidget(outtext, 2, 0)
         grid.addWidget(bt1, 1, 1)
@@ -28,16 +28,16 @@ c_ Form(?D..
 
     ___ updateUi 
         outtext.append("Download has started!!")
-        yt = YouTube()
+        yt _ YouTube()
         yt.from_url(intext.toPlainText())
         yt.set_filename("Temp")
-        video = yt.videos[0]
+        video _ yt.videos[0]
         video.download()
         outtext.append("Download Finished!!")
         pass
 
 
-app = ?A..(___.argv)
-form = Form()
+app _ ?A..(___.argv)
+form _ Form()
 form.s..
 app.exec_()

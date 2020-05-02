@@ -34,8 +34,8 @@ ___ decorator(f
 
 print()
 f1()
-new = decorator(f1)
+new _ decorator(f1)
 new()
 
 print()
-f1 = decorator(f1)
+f1 _ decorator(f1)

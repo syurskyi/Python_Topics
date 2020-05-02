@@ -1,7 +1,7 @@
 _____ os
 
-path = '/home/sergei/My_Documents/Python/Advanced Python Scripting/top_projects'
-folders = \
+path _ '/home/sergei/My_Documents/Python/Advanced Python Scripting/top_projects'
+folders _ \
 [['input',  [
     ['src', []],
     ['doc', []]
@@ -25,14 +25,14 @@ ___ build(root, data
     __ data:
         for d in data:
             # print(d)
-            name = d[0]
-            path = os.path.join(root, name)
+            name _ d[0]
+            path _ os.path.join(root, name)
             createFolder(path)
             build(path, d[1])
 
-projectname = raw_input('Enter project name: ')
+projectname _ raw_input('Enter project name: ')
 __ projectname:
-    fullPath = os.path.join(path, projectname)
+    fullPath _ os.path.join(path, projectname)
     createFolder(fullPath)
     build(fullPath, folders)
 

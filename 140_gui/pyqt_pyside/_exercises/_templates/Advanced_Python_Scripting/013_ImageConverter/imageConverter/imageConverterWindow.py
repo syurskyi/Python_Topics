@@ -10,12 +10,12 @@ c_ imageConverterClass(QMainWindow, ui.Ui_imageConverter
     ___  -  
         super(imageConverterClass, self). - ()
         setupUi
-        list = filesWidget.listWidgetClass()
+        list _ filesWidget.listWidgetClass()
         files_ly.addWidget(list)
 
 __ __name__ __ '__main__':
-    app = ?A..([])
-    w = imageConverterClass()
+    app _ ?A..([])
+    w _ imageConverterClass()
     w.s..
     app.exec_()
 

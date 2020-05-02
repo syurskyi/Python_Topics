@@ -2,15 +2,15 @@ _____ ___
 ____ PyQt4.?C.. _____ Qt
 ____ PyQt4.QtGui _____ *
 
-app = ?A..([])
-tableWidget = QTableWidget()
+app _ ?A..([])
+tableWidget _ QTableWidget()
 tableWidget.setContextMenuPolicy(Qt.CustomContextMenu)
 
 ___ openMenu(position
 
-    menu = QMenu()
-    quitAction = menu.addAction("Quit")
-    action = menu.exec_(tableWidget.mapToGlobal(position))
+    menu _ QMenu()
+    quitAction _ menu.addAction("Quit")
+    action _ menu.exec_(tableWidget.mapToGlobal(position))
     __ action __ quitAction:
         qApp.quit()
 

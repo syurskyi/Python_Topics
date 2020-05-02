@@ -9,21 +9,21 @@ ____ demoGoogleMap3 _____ *
 c_ MyForm(?D..
     ___  -  
         s__. - ()
-        ui = Ui_Dialog()
+        ui _ Ui_Dialog()
         ui.setupUi
         ui.pushButtonFindDistance.clicked.c..(displayDistance)
         s..
    
     ___ displayDistance 
-        api_key = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
-        gmaps = Client(api_key)
-        data = distance_matrix(gmaps, ui.lineEditFirstLocation.text(), ui.lineEditSecondLocation.text())
-        distance = data['rows'][0]['elements'][0]['distance']['text']
+        api_key _ 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+        gmaps _ Client(api_key)
+        data _ distance_matrix(gmaps, ui.lineEditFirstLocation.text(), ui.lineEditSecondLocation.text())
+        distance _ data['rows'][0]['elements'][0]['distance']['text']
         ui.labelDistance.sT..("Distance between "+ui.lineEditFirstLocation.text()+" and "+ui.lineEditSecondLocation.text()+" is "+st.(distance))
           
-__ __name____"__main__":    
-    app = ?A..(___.argv)
-    w = MyForm()
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    w _ MyForm()
     w.s..
     ___.e..(app.exec_())
 

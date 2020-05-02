@@ -8,12 +8,12 @@ ____ mutagen.mp3 _____ MP3
 _____ style
 
 
-musicList = []
+musicList _ []
 mixer.init()
-muted = False
-count = 0
-songLength = 0
-index = 0
+muted _ False
+count _ 0
+songLength _ 0
+index _ 0
 
 
 c_ Player(?W..
@@ -30,53 +30,53 @@ c_ Player(?W..
 
     ___ widgets 
         # #######################progress bar#############
-        progressBar = QProgressBar()
+        progressBar _ QProgressBar()
         progressBar.setTextVisible(False)
         progressBar.setStyleSheet(style.progressBarStyle())
         # #######################Labels###################
-        songTimerLabel=QLabel("0:00")
-        songLenthLabel=QLabel("/ 0:00")
+        songTimerLabel_QLabel("0:00")
+        songLenthLabel_QLabel("/ 0:00")
         # ######################Buttons###################
-        addButton =QToolButton()
+        addButton _QToolButton()
         addButton.setIcon(QIcon("icons/add.png"))
         addButton.setIconSize(QSize(48, 48))
         addButton.setToolTip("Add a Song")
         addButton.clicked.c..(addSound)
 
-        shuffleButton=QToolButton()
+        shuffleButton_QToolButton()
         shuffleButton.setIcon(QIcon("icons/shuffle.png"))
         shuffleButton.setIconSize(QSize(48,48))
         shuffleButton.setToolTip("Shuffle The list")
         shuffleButton.clicked.c..(shufflePlayList)
 
-        previousButton = QToolButton()
+        previousButton _ QToolButton()
         previousButton.setIcon(QIcon("icons/previous.png"))
         previousButton.setIconSize(QSize(48, 48))
         previousButton.setToolTip("Play Previous")
         previousButton.clicked.c..(playPrevious)
 
 
-        playButton = QToolButton()
+        playButton _ QToolButton()
         playButton.setIcon(QIcon("icons/play.png"))
         playButton.setIconSize(QSize(64, 64))
         playButton.setToolTip("Play")
         playButton.clicked.c..(playSounds)
 
-        nextButton = QToolButton()
+        nextButton _ QToolButton()
         nextButton.setIcon(QIcon("icons/next.png"))
         nextButton.setIconSize(QSize(48, 48))
         nextButton.setToolTip("Play Next")
         nextButton.clicked.c..(playNext)
 
 
-        muteButton = QToolButton()
+        muteButton _ QToolButton()
         muteButton.setIcon(QIcon("icons/mute.png"))
         muteButton.setIconSize(QSize(24, 24))
         muteButton.setToolTip("Mute")
         muteButton.clicked.c..(muteSound)
 
         # ####################Volume Slider#################
-        volumeSlider=QSlider(Qt.Horizontal)
+        volumeSlider_QSlider(Qt.Horizontal)
         volumeSlider.setToolTip("Volume")
         volumeSlider.setValue(70)
         volumeSlider.setMinimum(0)
@@ -85,24 +85,24 @@ c_ Player(?W..
         volumeSlider.valueChanged.c..(setVolume)
 
         # ##################Play List####################
-        playList=QListWidget()
+        playList_QListWidget()
         playList.doubleClicked.c..(playSounds)
         playList.setStyleSheet(style.playListStyle())
 
         # ####################Timer######################
-        timer=QTimer()
+        timer_QTimer()
         timer.setInterval(1000)
         timer.timeout.c..(updateProgressBar)
 
     ___ layouts 
         # ########################Creating Layouts#################
-        mainLayout=QVBoxLayout()
-        topMainLayout=QVBoxLayout()
-        topGroupBox=QGroupBox("Music Player")
+        mainLayout_QVBoxLayout()
+        topMainLayout_QVBoxLayout()
+        topGroupBox_QGroupBox("Music Player")
         topGroupBox.setStyleSheet(style.groupboxStyle())
-        topLayout=QHBoxLayout()
-        middleLayout=QHBoxLayout()
-        bottomLayout=QVBoxLayout()
+        topLayout_QHBoxLayout()
+        middleLayout_QHBoxLayout()
+        bottomLayout_QVBoxLayout()
 
         # ##################Adding Widgets#########################
         # #################Top layout widgets######################
@@ -132,9 +132,9 @@ c_ Player(?W..
         setLayout(mainLayout)
 
     ___ addSound 
-        directory = QFileDialog.getOpenFileName , "Add Sound", "", "Sound Files (*.mp3 *.ogg *.wav)")
+        directory _ QFileDialog.getOpenFileName , "Add Sound", "", "Sound Files (*.mp3 *.ogg *.wav)")
         # print(directory)
-        filename = os.path.basename(directory[0])
+        filename _ os.path.basename(directory[0])
         # print(filename)
         playList.addItem(filename)
         musicList.append(directory[0])
@@ -144,25 +144,25 @@ c_ Player(?W..
         print(musicList)
         playList.clear()
         for song in musicList:
-            filename = os.path.basename(song)
+            filename _ os.path.basename(song)
             playList.addItem(filename)
 
     ___ playSounds 
         global songLength
         global count
         global index
-        count = 0
-        index = playList.currentRow()
+        count _ 0
+        index _ playList.currentRow()
 
         try:
             mixer.music.load(st.(musicList[index]))
             mixer.music.play()
             timer.start()
-            sound = MP3(st.(musicList[index]))
-            songLength = sound.info.length
-            songLength = round(songLength)
+            sound _ MP3(st.(musicList[index]))
+            songLength _ sound.info.length
+            songLength _ round(songLength)
             print(songLength)
-            min, sec = divmod(songLength, 60)
+            min, sec _ divmod(songLength, 60)
 
             songLenthLabel.sT..("/ "+st.(min)+":"+st.(sec))
             progressBar.setValue(0)
@@ -175,22 +175,22 @@ c_ Player(?W..
         global songLength
         global count
         global index
-        count = 0
-        items = playList.count()
+        count _ 0
+        items _ playList.count()
 
         __ index __ 0:
-             index = items
-        index -= 1
+             index _ items
+        index -_ 1
 
         try:
             mixer.music.load(st.(musicList[index]))
             mixer.music.play()
             timer.start()
-            sound = MP3(st.(musicList[index]))
-            songLength = sound.info.length
-            songLength = round(songLength)
+            sound _ MP3(st.(musicList[index]))
+            songLength _ sound.info.length
+            songLength _ round(songLength)
             print(songLength)
-            min, sec = divmod(songLength, 60)
+            min, sec _ divmod(songLength, 60)
 
             songLenthLabel.sT..("/ " + st.(min) + ":" + st.(sec))
             progressBar.setValue(0)
@@ -203,22 +203,22 @@ c_ Player(?W..
         global songLength
         global count
         global index
-        count = 0
-        items = playList.count()
-        index += 1
+        count _ 0
+        items _ playList.count()
+        index +_ 1
 
         __ index __ items:
-            index = 0
+            index _ 0
 
         try:
             mixer.music.load(st.(musicList[index]))
             mixer.music.play()
             timer.start()
-            sound = MP3(st.(musicList[index]))
-            songLength = sound.info.length
-            songLength = round(songLength)
+            sound _ MP3(st.(musicList[index]))
+            songLength _ sound.info.length
+            songLength _ round(songLength)
             print(songLength)
-            min, sec = divmod(songLength, 60)
+            min, sec _ divmod(songLength, 60)
 
             songLenthLabel.sT..("/ " + st.(min) + ":" + st.(sec))
             progressBar.setValue(0)
@@ -228,7 +228,7 @@ c_ Player(?W..
             pass
 
     ___ setVolume 
-        volume = volumeSlider.value()
+        volume _ volumeSlider.value()
         # print(self.volume)
         mixer.music.set_volume(volume/100)
 
@@ -237,14 +237,14 @@ c_ Player(?W..
 
         __ muted __ False:
             mixer.music.set_volume(0.0)
-            muted = T..
+            muted _ T..
             muteButton.setIcon(QIcon("icons/unmuted.png"))
             muteButton.setToolTip("UnMute")
             volumeSlider.setValue(0)
 
         else:
             mixer.music.set_volume(0.7)
-            muted = False
+            muted _ False
             muteButton.setToolTip("Mute")
             muteButton.setIcon(QIcon("icons/mute.png"))
             volumeSlider.setValue(70)
@@ -252,7 +252,7 @@ c_ Player(?W..
     ___ updateProgressBar 
         global count
         global songLength
-        count +=1
+        count +_1
         progressBar.setValue(count)
         songTimerLabel.sT..(time.strftime("%M:%S",time.gmtime(count)))
         __ count __ songLength:
@@ -260,8 +260,8 @@ c_ Player(?W..
 
 
 ___ main(
-    App = ?A..(___.argv)
-    window = Player()
+    App _ ?A..(___.argv)
+    window _ Player()
     ___.e..(App.exec_())
 
 

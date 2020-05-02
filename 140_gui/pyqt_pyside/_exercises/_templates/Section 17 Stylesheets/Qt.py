@@ -43,25 +43,25 @@ _____ types
 _____ shutil
 
 
-__version__ = "1.1.0.b5"
+__version__ _ "1.1.0.b5"
 
 # Enable support for `from Qt import *`
-__all__ = []
+__all__ _ []
 
 # Flags from environment variables
-QT_VERBOSE = bool(os.getenv("QT_VERBOSE"))
-QT_PREFERRED_BINDING = os.getenv("QT_PREFERRED_BINDING", "")
-QT_SIP_API_HINT = os.getenv("QT_SIP_API_HINT")
+QT_VERBOSE _ bool(os.getenv("QT_VERBOSE"))
+QT_PREFERRED_BINDING _ os.getenv("QT_PREFERRED_BINDING", "")
+QT_SIP_API_HINT _ os.getenv("QT_SIP_API_HINT")
 
 # Reference to Qt.py
-Qt = ___.modules[__name__]
-Qt.QtCompat = types.ModuleType("QtCompat")
+Qt _ ___.modules[__name__]
+Qt.QtCompat _ types.ModuleType("QtCompat")
 
 try:
     long
 except NameError:
     # Python 3 compatibility
-    long = int
+    long _ int
 
 """Common members of all bindings
 
@@ -73,7 +73,7 @@ Find or add excluded members in build_membership.py
 
 """
 
-_common_members = {
+_common_members _ {
     "QtCore": [
         "QAbstractAnimation",
         "QAbstractEventDispatcher",
@@ -650,7 +650,7 @@ _common_members = {
 These members from the original submodule are misplaced relative PySide2
 
 """
-_misplaced_members = {
+_misplaced_members _ {
     "PySide2": {
         "QtGui.QStringListModel": "QtCore.QStringListModel",
         "QtCore.Property": "QtCore.Property",
@@ -707,7 +707,7 @@ interface for obsolete members, and differences in binding return values.
     }
 }
 """
-_compatibility_members = {
+_compatibility_members _ {
     "PySide2": {
         "QHeaderView": {
             "sectionsClickable": "QtWidgets.QHeaderView.sectionsClickable",
@@ -788,11 +788,11 @@ ___ _apply_site_config(
             QtSiteConfig.update_members(_common_members)
 
         __ hasattr(QtSiteConfig, 'update_misplaced_members'
-            QtSiteConfig.update_misplaced_members(members=_misplaced_members)
+            QtSiteConfig.update_misplaced_members(members__misplaced_members)
 
         __ hasattr(QtSiteConfig, 'update_compatibility_members'
             QtSiteConfig.update_compatibility_members(
-                members=_compatibility_members)
+                members__compatibility_members)
 
 
 ___ _new_module(name
@@ -801,20 +801,20 @@ ___ _new_module(name
 
 ___ _import_sub_module(module, name
     """import_sub_module will mimic the function of importlib.import_module"""
-    module = __import__(module.__name__ + "." + name)
+    module _ __import__(module.__name__ + "." + name)
     for level in name.split("."
-        module = getattr(module, level)
+        module _ getattr(module, level)
     return module
 
 
 ___ _setup(module, extras
     """Install common submodules"""
 
-    Qt.__binding__ = module.__name__
+    Qt.__binding__ _ module.__name__
 
     for name in list(_common_members) + extras:
         try:
-            submodule = _import_sub_module(
+            submodule _ _import_sub_module(
                 module, name)
         except ImportError:
             continue
@@ -828,7 +828,7 @@ ___ _setup(module, extras
             setattr(Qt, name, _new_module(name))
 
 
-___ _wrapinstance(func, ptr, base=None
+___ _wrapinstance(func, ptr, base_None
     """Enable implicit cast of pointer to most suitable class
 
     This behaviour is available in sip per default.
@@ -855,19 +855,19 @@ ___ _wrapinstance(func, ptr, base=None
         "Argument 'base' must be of type <QObject>")
 
     __ base is None:
-        q_object = func(long(ptr), Qt.?C...QObject)
-        meta_object = q_object.metaObject()
-        class_name = meta_object.className()
-        super_class_name = meta_object.superClass().className()
+        q_object _ func(long(ptr), Qt.?C...QObject)
+        meta_object _ q_object.metaObject()
+        class_name _ meta_object.className()
+        super_class_name _ meta_object.superClass().className()
 
         __ hasattr(Qt.?W.., class_name
-            base = getattr(Qt.?W.., class_name)
+            base _ getattr(Qt.?W.., class_name)
 
         elif hasattr(Qt.?W.., super_class_name
-            base = getattr(Qt.?W.., super_class_name)
+            base _ getattr(Qt.?W.., super_class_name)
 
         else:
-            base = Qt.?C...QObject
+            base _ Qt.?C...QObject
 
     return func(long(ptr), base)
 
@@ -881,11 +881,11 @@ ___ _reassign_misplaced_members(binding
     """
 
     for src, dst in _misplaced_members[binding].items(
-        src_module, src_member = src.split(".")
-        dst_module, dst_member = dst.split(".")
+        src_module, src_member _ src.split(".")
+        dst_module, dst_member _ dst.split(".")
 
         try:
-            src_object = getattr(Qt, dst_module)
+            src_object _ getattr(Qt, dst_module)
         except AttributeError:
             # Skip reassignment of non-existing members.
             # This can happen if a request was made to
@@ -893,7 +893,7 @@ ___ _reassign_misplaced_members(binding
             # if QtWidgets isn't available on the target platform.
             continue
 
-        dst_value = getattr(getattr(Qt, "_" + src_module), src_member)
+        dst_value _ getattr(getattr(Qt, "_" + src_module), src_member)
 
         setattr(
             src_object,
@@ -902,7 +902,7 @@ ___ _reassign_misplaced_members(binding
         )
 
 
-___ _build_compatibility_members(binding, decorators=None
+___ _build_compatibility_members(binding, decorators_None
     """Apply `binding` to QtCompat
 
     Arguments:
@@ -915,7 +915,7 @@ ___ _build_compatibility_members(binding, decorators=None
 
     """
 
-    decorators = decorators or dict()
+    decorators _ decorators or dict()
 
     # Allow optional site-level customization of the compatibility members.
     # This method does not need to be implemented in QtSiteConfig.
@@ -927,14 +927,14 @@ ___ _build_compatibility_members(binding, decorators=None
         __ hasattr(QtSiteConfig, 'update_compatibility_decorators'
             QtSiteConfig.update_compatibility_decorators(binding, decorators)
 
-    _QtCompat = type("QtCompat", (object,), {})
+    _QtCompat _ type("QtCompat", (object,), {})
 
     for classname, bindings in _compatibility_members[binding].items(
-        attrs = {}
+        attrs _ {}
         for target, binding in bindings.items(
-            namespaces = binding.split('.')
+            namespaces _ binding.split('.')
             try:
-                src_object = getattr(Qt, "_" + namespaces[0])
+                src_object _ getattr(Qt, "_" + namespaces[0])
             except AttributeError as e:
                 _log("QtCompat: AttributeError: %s" % e)
                 # Skip reassignment of non-existing members.
@@ -946,20 +946,20 @@ ___ _build_compatibility_members(binding, decorators=None
             # Walk down any remaining namespace getting the object assuming
             # that if the first namespace exists the rest will exist.
             for namespace in namespaces[1:]:
-                src_object = getattr(src_object, namespace)
+                src_object _ getattr(src_object, namespace)
 
             # decorate the Qt method if a decorator was provided.
             __ target in decorators.get(classname, []
                 # staticmethod must be called on the decorated method to
                 # prevent a TypeError being raised when the decorated method
                 # is called.
-                src_object = staticmethod(
+                src_object _ staticmethod(
                     decorators[classname][target](src_object))
 
-            attrs[target] = src_object
+            attrs[target] _ src_object
 
         # Create the QtCompat class and install it into the namespace
-        compat_class = type(classname, (_QtCompat,), attrs)
+        compat_class _ type(classname, (_QtCompat,), attrs)
         setattr(Qt.QtCompat, classname, compat_class)
 
 
@@ -976,7 +976,7 @@ ___ _pyside2(
     _____ PySide2 as module
     _setup(module, ["QtUiTools"])
 
-    Qt.__binding_version__ = module.__version__
+    Qt.__binding_version__ _ module.__version__
 
     try:
         try:
@@ -986,25 +986,25 @@ ___ _pyside2(
             # After merge of PySide and shiboken, May 2017
             ____ PySide2 _____ shiboken2
 
-        Qt.QtCompat.wrapInstance = (
-            lambda ptr, base=None: _wrapinstance(
+        Qt.QtCompat.wrapInstance _ (
+            lambda ptr, base_None: _wrapinstance(
                 shiboken2.wrapInstance, ptr, base)
         )
-        Qt.QtCompat.getCppPointer = lambda object: \
+        Qt.QtCompat.getCppPointer _ lambda object: \
             shiboken2.getCppPointer(object)[0]
 
     except ImportError:
         pass  # Optional
 
     __ hasattr(Qt, "_QtUiTools"
-        Qt.QtCompat.loadUi = _loadUi
+        Qt.QtCompat.loadUi _ _loadUi
 
     __ hasattr(Qt, "_QtCore"
-        Qt.__qt_version__ = Qt._QtCore.qVersion()
-        Qt.QtCompat.translate = Qt._QtCore.QCoreApplication.translate
+        Qt.__qt_version__ _ Qt._QtCore.qVersion()
+        Qt.QtCompat.translate _ Qt._QtCore.QCoreApplication.translate
 
     __ hasattr(Qt, "_QtWidgets"
-        Qt.QtCompat.setSectionResizeMode = \
+        Qt.QtCompat.setSectionResizeMode _ \
             Qt._QtWidgets.QHeaderView.setSectionResizeMode
 
     _reassign_misplaced_members("PySide2")
@@ -1017,7 +1017,7 @@ ___ _pyside(
     _____ PySide as module
     _setup(module, ["QtUiTools"])
 
-    Qt.__binding_version__ = module.__version__
+    Qt.__binding_version__ _ module.__version__
 
     try:
         try:
@@ -1027,29 +1027,29 @@ ___ _pyside(
             # After merge of PySide and shiboken, May 2017
             ____ PySide _____ shiboken
 
-        Qt.QtCompat.wrapInstance = (
-            lambda ptr, base=None: _wrapinstance(
+        Qt.QtCompat.wrapInstance _ (
+            lambda ptr, base_None: _wrapinstance(
                 shiboken.wrapInstance, ptr, base)
         )
-        Qt.QtCompat.getCppPointer = lambda object: \
+        Qt.QtCompat.getCppPointer _ lambda object: \
             shiboken.getCppPointer(object)[0]
 
     except ImportError:
         pass  # Optional
 
     __ hasattr(Qt, "_QtUiTools"
-        Qt.QtCompat.loadUi = _loadUi
+        Qt.QtCompat.loadUi _ _loadUi
 
     __ hasattr(Qt, "_QtGui"
         setattr(Qt, "QtWidgets", _new_module("QtWidgets"))
         setattr(Qt, "_QtWidgets", Qt._QtGui)
 
-        Qt.QtCompat.setSectionResizeMode = Qt._QtGui.QHeaderView.setResizeMode
+        Qt.QtCompat.setSectionResizeMode _ Qt._QtGui.QHeaderView.setResizeMode
 
     __ hasattr(Qt, "_QtCore"
-        Qt.__qt_version__ = Qt._QtCore.qVersion()
-        QCoreApplication = Qt._QtCore.QCoreApplication
-        Qt.QtCompat.translate = (
+        Qt.__qt_version__ _ Qt._QtCore.qVersion()
+        QCoreApplication _ Qt._QtCore.QCoreApplication
+        Qt.QtCompat.translate _ (
             lambda context, sourceText, disambiguation, n:
             QCoreApplication.translate(
                 context,
@@ -1072,26 +1072,26 @@ ___ _pyqt5(
 
     try:
         _____ sip
-        Qt.QtCompat.wrapInstance = (
-            lambda ptr, base=None: _wrapinstance(
+        Qt.QtCompat.wrapInstance _ (
+            lambda ptr, base_None: _wrapinstance(
                 sip.wrapinstance, ptr, base)
         )
-        Qt.QtCompat.getCppPointer = lambda object: \
+        Qt.QtCompat.getCppPointer _ lambda object: \
             sip.unwrapinstance(object)
 
     except ImportError:
         pass  # Optional
 
     __ hasattr(Qt, "_uic"
-        Qt.QtCompat.loadUi = _loadUi
+        Qt.QtCompat.loadUi _ _loadUi
 
     __ hasattr(Qt, "_QtCore"
-        Qt.__binding_version__ = Qt._QtCore.PYQT_VERSION_STR
-        Qt.__qt_version__ = Qt._QtCore.QT_VERSION_STR
-        Qt.QtCompat.translate = Qt._QtCore.QCoreApplication.translate
+        Qt.__binding_version__ _ Qt._QtCore.PYQT_VERSION_STR
+        Qt.__qt_version__ _ Qt._QtCore.QT_VERSION_STR
+        Qt.QtCompat.translate _ Qt._QtCore.QCoreApplication.translate
 
     __ hasattr(Qt, "_QtWidgets"
-        Qt.QtCompat.setSectionResizeMode = \
+        Qt.QtCompat.setSectionResizeMode _ \
             Qt._QtWidgets.QHeaderView.setSectionResizeMode
 
     _reassign_misplaced_members("PyQt5")
@@ -1106,9 +1106,9 @@ ___ _pyqt4(
     # Validation of envivornment variable. Prevents an error if
     # the variable is invalid since it's just a hint.
     try:
-        hint = int(QT_SIP_API_HINT)
+        hint _ int(QT_SIP_API_HINT)
     except TypeError:
-        hint = None  # Variable was None, i.e. not set.
+        hint _ None  # Variable was None, i.e. not set.
     except ValueError:
         raise ImportError("QT_SIP_API_HINT=%s must be a 1 or 2")
 
@@ -1124,7 +1124,7 @@ ___ _pyqt4(
         except AttributeError:
             raise ImportError("PyQt4 < 4.6 isn't supported by Qt.py")
         except ValueError:
-            actual = sip.getapi(api)
+            actual _ sip.getapi(api)
             __ not hint:
                 raise ImportError("API version already set to %d" % actual)
             else:
@@ -1140,32 +1140,32 @@ ___ _pyqt4(
 
     try:
         _____ sip
-        Qt.QtCompat.wrapInstance = (
-            lambda ptr, base=None: _wrapinstance(
+        Qt.QtCompat.wrapInstance _ (
+            lambda ptr, base_None: _wrapinstance(
                 sip.wrapinstance, ptr, base)
         )
-        Qt.QtCompat.getCppPointer = lambda object: \
+        Qt.QtCompat.getCppPointer _ lambda object: \
             sip.unwrapinstance(object)
 
     except ImportError:
         pass  # Optional
 
     __ hasattr(Qt, "_uic"
-        Qt.QtCompat.loadUi = _loadUi
+        Qt.QtCompat.loadUi _ _loadUi
 
     __ hasattr(Qt, "_QtGui"
         setattr(Qt, "QtWidgets", _new_module("QtWidgets"))
         setattr(Qt, "_QtWidgets", Qt._QtGui)
 
-        Qt.QtCompat.setSectionResizeMode = \
+        Qt.QtCompat.setSectionResizeMode _ \
             Qt._QtGui.QHeaderView.setResizeMode
 
     __ hasattr(Qt, "_QtCore"
-        Qt.__binding_version__ = Qt._QtCore.PYQT_VERSION_STR
-        Qt.__qt_version__ = Qt._QtCore.QT_VERSION_STR
+        Qt.__binding_version__ _ Qt._QtCore.PYQT_VERSION_STR
+        Qt.__qt_version__ _ Qt._QtCore.QT_VERSION_STR
 
-        QCoreApplication = Qt._QtCore.QCoreApplication
-        Qt.QtCompat.translate = (
+        QCoreApplication _ Qt._QtCore.QCoreApplication
+        Qt.QtCompat.translate _ (
             lambda context, sourceText, disambiguation, n:
             QCoreApplication.translate(
                 context,
@@ -1181,19 +1181,19 @@ ___ _pyqt4(
     ___ _standardizeQFileDialog(some_function
         """Decorator that makes PyQt4 return conform to other bindings"""
         ___ wrapper(*args, **kwargs
-            ret = (some_function(*args, **kwargs))
+            ret _ (some_function(*args, **kwargs))
 
             # PyQt4 only returns the selected filename, force it to a
             # standard return of the selected filename, and a empty string
             # for the selected filter
             return ret, ''
 
-        wrapper.__doc__ = some_function.__doc__
-        wrapper.__name__ = some_function.__name__
+        wrapper.__doc__ _ some_function.__doc__
+        wrapper.__name__ _ some_function.__name__
 
         return wrapper
 
-    decorators = {
+    decorators _ {
         "QFileDialog": {
             "getOpenFileName": _standardizeQFileDialog,
             "getOpenFileNames": _standardizeQFileDialog,
@@ -1206,13 +1206,13 @@ ___ _pyqt4(
 ___ _none(
     """Internal option (used in installer)"""
 
-    Mock = type("Mock", (), {"__getattr__": lambda Qt, attr: None})
+    Mock _ type("Mock", (), {"__getattr__": lambda Qt, attr: None})
 
-    Qt.__binding__ = "None"
-    Qt.__qt_version__ = "0.0.0"
-    Qt.__binding_version__ = "0.0.0"
-    Qt.QtCompat.loadUi = lambda uifile, baseinstance=None: None
-    Qt.QtCompat.setSectionResizeMode = lambda *args, **kwargs: None
+    Qt.__binding__ _ "None"
+    Qt.__qt_version__ _ "0.0.0"
+    Qt.__binding_version__ _ "0.0.0"
+    Qt.QtCompat.loadUi _ lambda uifile, baseinstance_None: None
+    Qt.QtCompat.setSectionResizeMode _ lambda *args, **kwargs: None
 
     for submodule in _common_members.keys(
         setattr(Qt, submodule, Mock())
@@ -1224,7 +1224,7 @@ ___ _log(text
         ___.stdout.write(text + "\n")
 
 
-___ _loadUi(uifile, baseinstance=None
+___ _loadUi(uifile, baseinstance_None
     """Dynamically load a user interface from the given `uifile`
 
     This function calls `uic.loadUi` if using PyQt bindings,
@@ -1243,7 +1243,7 @@ ___ _loadUi(uifile, baseinstance=None
 
     """
     __ hasattr(baseinstance, "layout") and baseinstance.layout(
-        message = ("QLayout: Attempting to add Layout to %s which "
+        message _ ("QLayout: Attempting to add Layout to %s which "
                    "already has a layout")
         raise RuntimeError(message % (baseinstance))
 
@@ -1266,7 +1266,7 @@ ___ _loadUi(uifile, baseinstance=None
 
             ___  -  , baseinstance
                 super(_UiLoader, self). - (baseinstance)
-                baseinstance = baseinstance
+                baseinstance _ baseinstance
 
             ___ load , uifile, *args, **kwargs
                 ____ xml.etree.ElementTree _____ ElementTree
@@ -1274,10 +1274,10 @@ ___ _loadUi(uifile, baseinstance=None
                 # For whatever reason, if this doesn't happen then
                 # reading an invalid or non-existing .ui file throws
                 # a RuntimeError.
-                etree = ElementTree()
+                etree _ ElementTree()
                 etree.parse(uifile)
 
-                widget = Qt._QtUiTools.QUiLoader.load(
+                widget _ Qt._QtUiTools.QUiLoader.load(
                     self, uifile, *args, **kwargs)
 
                 # Workaround for PySide 1.0.9, see issue #208
@@ -1285,7 +1285,7 @@ ___ _loadUi(uifile, baseinstance=None
 
                 return widget
 
-            ___ createWidget , class_name, parent=None, name=""
+            ___ createWidget , class_name, parent_None, name_""
                 """Called for each widget defined in ui file
 
                 Overridden here to populate `baseinstance` instead.
@@ -1301,7 +1301,7 @@ ___ _loadUi(uifile, baseinstance=None
                 # widgets, but works fine, so we have to special case it here.
                 __ class_name in availableWidgets() + ["Line"]:
                     # Create a new widget for child widgets
-                    widget = Qt._QtUiTools.QUiLoader.createWidget ,
+                    widget _ Qt._QtUiTools.QUiLoader.createWidget ,
                                                                   class_name,
                                                                   parent,
                                                                   name)
@@ -1317,7 +1317,7 @@ ___ _loadUi(uifile, baseinstance=None
 
                 return widget
 
-        widget = _UiLoader(baseinstance).load(uifile)
+        widget _ _UiLoader(baseinstance).load(uifile)
         Qt.?C...QMetaObject.connectSlotsByName(widget)
 
         return widget
@@ -1339,8 +1339,8 @@ ___ _convert(lines
     """
 
     ___ parse(line
-        line = line.replace("from PySide2 import", "from Qt import QtCompat,")
-        line = line.replace("QtWidgets.QApplication.translate",
+        line _ line.replace("from PySide2 import", "from Qt import QtCompat,")
+        line _ line.replace("QtWidgets.QApplication.translate",
                             "QtCompat.translate")
         __ "QtCore.SIGNAL" in line:
             raise NotImplementedError("QtCore.SIGNAL is missing from PyQt5 "
@@ -1349,9 +1349,9 @@ ___ _convert(lines
                                       "your ui files.")
         return line
 
-    parsed = list()
+    parsed _ list()
     for line in lines:
-        line = parse(line)
+        line _ parse(line)
         parsed.append(line)
 
     return parsed
@@ -1361,20 +1361,20 @@ ___ _cli(args
     """Qt.py command-line interface"""
     _____ argparse
 
-    parser = argparse.ArgumentParser()
+    parser _ argparse.ArgumentParser()
     parser.add_argument("--convert",
-                        help="Path to compiled Python module, e.g. my_ui.py")
+                        help_"Path to compiled Python module, e.g. my_ui.py")
     parser.add_argument("--compile",
-                        help="Accept raw .ui file and compile with native "
+                        help_"Accept raw .ui file and compile with native "
                              "PySide2 compiler.")
     parser.add_argument("--stdout",
-                        help="Write to stdout instead of file",
-                        action="store_true")
+                        help_"Write to stdout instead of file",
+                        action_"store_true")
     parser.add_argument("--stdin",
-                        help="Read from stdin instead of file",
-                        action="store_true")
+                        help_"Read from stdin instead of file",
+                        action_"store_true")
 
-    args = parser.parse_args(args)
+    args _ parser.parse_args(args)
 
     __ args.stdout:
         raise NotImplementedError("--stdout")
@@ -1396,9 +1396,9 @@ ___ _cli(args
         # ------> Read
         #
         with open(args.convert) as f:
-            lines = _convert(f.readlines())
+            lines _ _convert(f.readlines())
 
-        backup = "%s_backup%s" % os.path.splitext(args.convert)
+        backup _ "%s_backup%s" % os.path.splitext(args.convert)
         ___.stdout.write("Creating \"%s\"..\n" % backup)
         shutil.copy(args.convert, backup)
 
@@ -1413,14 +1413,14 @@ ___ _cli(args
 
 ___ _install(
     # Default order (customise order and content via QT_PREFERRED_BINDING)
-    default_order = ("PySide2", "PyQt5", "PySide", "PyQt4")
-    preferred_order = list(
+    default_order _ ("PySide2", "PyQt5", "PySide", "PyQt4")
+    preferred_order _ list(
         b for b in QT_PREFERRED_BINDING.split(os.pathsep) __ b
     )
 
-    order = preferred_order or default_order
+    order _ preferred_order or default_order
 
-    available = {
+    available _ {
         "PySide2": _pyside2,
         "PyQt5": _pyqt5,
         "PySide": _pyside,
@@ -1433,13 +1433,13 @@ ___ _install(
     # Allow site-level customization of the available modules.
     _apply_site_config()
 
-    found_binding = False
+    found_binding _ False
     for name in order:
         _log("Trying %s" % name)
 
         try:
             available[name]()
-            found_binding = T..
+            found_binding _ T..
             break
 
         except ImportError as e:
@@ -1455,23 +1455,23 @@ ___ _install(
     # Install individual members
     for name, members in _common_members.items(
         try:
-            their_submodule = getattr(Qt, "_%s" % name)
+            their_submodule _ getattr(Qt, "_%s" % name)
         except AttributeError:
             continue
 
-        our_submodule = getattr(Qt, name)
+        our_submodule _ getattr(Qt, name)
 
         # Enable import *
         __all__.append(name)
 
         # Enable direct import of submodule,
         # e.g. import Qt.QtCore
-        ___.modules[__name__ + "." + name] = our_submodule
+        ___.modules[__name__ + "." + name] _ our_submodule
 
         for member in members:
             # Accept that a submodule may miss certain members.
             try:
-                their_member = getattr(their_submodule, member)
+                their_member _ getattr(their_submodule, member)
             except AttributeError:
                 _log("'%s.%s' was missing." % (name, member))
                 continue
@@ -1480,16 +1480,16 @@ ___ _install(
 
     # Backwards compatibility
     __ hasattr(Qt.QtCompat, 'loadUi'
-        Qt.QtCompat.load_ui = Qt.QtCompat.loadUi
+        Qt.QtCompat.load_ui _ Qt.QtCompat.loadUi
 
 
 _install()
 
 # Setup Binding Enum states
-Qt.IsPySide2 = Qt.__binding__ __ 'PySide2'
-Qt.IsPyQt5 = Qt.__binding__ __ 'PyQt5'
-Qt.IsPySide = Qt.__binding__ __ 'PySide'
-Qt.IsPyQt4 = Qt.__binding__ __ 'PyQt4'
+Qt.IsPySide2 _ Qt.__binding__ __ 'PySide2'
+Qt.IsPyQt5 _ Qt.__binding__ __ 'PyQt5'
+Qt.IsPySide _ Qt.__binding__ __ 'PySide'
+Qt.IsPyQt4 _ Qt.__binding__ __ 'PyQt4'
 
 """Augment QtCompat
 
@@ -1500,8 +1500,8 @@ such as `QHeaderView.setSectionResizeMode`.
 
 """
 
-Qt.QtCompat._cli = _cli
-Qt.QtCompat._convert = _convert
+Qt.QtCompat._cli _ _cli
+Qt.QtCompat._convert _ _convert
 
 # Enable command-line interface
 __ __name__ __ "__main__":

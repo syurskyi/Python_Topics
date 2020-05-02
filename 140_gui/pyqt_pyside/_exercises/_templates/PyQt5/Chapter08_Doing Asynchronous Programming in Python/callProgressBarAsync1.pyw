@@ -8,7 +8,7 @@ ____ demoTwoProgressBarsAsync _____ *
 c_ MyForm(?D..
     ___  -
         s__. - ()
-        ui = Ui_Dialog()
+        ui _ Ui_Dialog()
         ui.setupUi
         ui.pushButtonStart.clicked.c..(invokeAsync)
         s..
@@ -27,11 +27,11 @@ ___ stopper(loop
     loop.stop()
 
      
-__ __name____"__main__":    
-    app = ?A..(___.argv)
-    loop = QEventLoop(app)
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    loop _ QEventLoop(app)
     asyncio.set_event_loop(loop)
-    w = MyForm()
+    w _ MyForm()
     w.exec()
     with loop:
         loop.run_forever()

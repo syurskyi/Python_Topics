@@ -15,7 +15,7 @@
 #         ?.cBS__.sC__.c.. ?
 #         s..
 #
-#     @py_S..
+#     ?py_S..
 #     ___ dispAmount
 #         amount_10
 #         __ ?.chBC__.iC..__T..

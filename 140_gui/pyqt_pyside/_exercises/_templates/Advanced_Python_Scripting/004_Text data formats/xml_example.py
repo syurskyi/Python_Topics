@@ -1,33 +1,33 @@
 _____ xml.etree.ElementTree as ET
 
-path = '/Users/sergejyurskyj/.nuke/example/PYTHON_EXAMPLE/Python_Example_All_Tutorials/VIDEO/Advanced Python Scripting/' \
+path _ '/Users/sergejyurskyj/.nuke/example/PYTHON_EXAMPLE/Python_Example_All_Tutorials/VIDEO/Advanced Python Scripting/' \
     '004_Text data formats/example5.xml'
 
-tree = ET.parse(path)
-root = tree.getroot()
+tree _ ET.parse(path)
+root _ tree.getroot()
 for elem in root.getchildren(
     print(elem.tag)
     print(elem.attrib)
     print(elem.text)
 
-___ readXml(root, ind=''
+___ readXml(root, ind_''
     for elem in root.getchildren(
         print(ind, elem.tag)
         readXml(elem, ind+'  ')
 
 readXml(root)
 
-root = ET.Element('root')
-elem = ET.SubElement(root, 'subElement')
+root _ ET.Element('root')
+elem _ ET.SubElement(root, 'subElement')
 elem.set('name', 'Max')
-elem2 = ET.SubElement(root, 'subElement2')
-elem2.text = 'SOME TEXT'
+elem2 _ ET.SubElement(root, 'subElement2')
+elem2.text _ 'SOME TEXT'
 
-tree = ET.ElementTree(root)
+tree _ ET.ElementTree(root)
 tree.write(path)
 
 ____ xml.dom _____ minidom
-xml = minidom.parseString(ET.tostring(tree.getroot())).toprettyxml()
+xml _ minidom.parseString(ET.tostring(tree.getroot())).toprettyxml()
 
 with open('/Users/sergejyurskyj/.nuke/example/PYTHON_EXAMPLE/Python_Example_All_Tutorials/VIDEO/Advanced Python Scripting/' \
     '004_Text data formats/example4.xml', 'w') as f:

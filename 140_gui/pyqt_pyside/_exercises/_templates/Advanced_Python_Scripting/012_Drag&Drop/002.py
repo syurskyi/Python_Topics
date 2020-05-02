@@ -12,7 +12,7 @@ c_ listWidgetClass(QListWidget
 
     ___ dropEvent , event
         print 'DROP', type(event)
-        mimedata = event.mimeData()
+        mimedata _ event.mimeData()
         __ mimedata.hasUrls(
             print mimedata.urls()
         elif mimedata.hasColor(
@@ -33,12 +33,12 @@ c_ listWidgetClass(QListWidget
 __ __name__ __ '__main__':
     _____ ___
 
-    app = None
+    app _ None
     try:
         _____ nuke
     except ImportError:
-        app = ?A..(___.argv)
-    main = listWidgetClass()
+        app _ ?A..(___.argv)
+    main _ listWidgetClass()
     main.s..
 
     __ app is not None:

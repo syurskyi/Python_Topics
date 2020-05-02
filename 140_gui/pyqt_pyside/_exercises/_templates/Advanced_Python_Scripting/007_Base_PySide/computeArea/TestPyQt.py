@@ -5,10 +5,10 @@ _____ ___
 ____ PyQt4.QtGui _____ *
 
 # Create an PyQT4 application object.
-a = ?A..(___.argv)
+a _ ?A..(___.argv)
 
 # The QWidget widget is the base class of all user interface objects in PyQt4.
-w = ?W..()
+w _ ?W..()
 
 # Set window size.
 w.resize(320, 240)

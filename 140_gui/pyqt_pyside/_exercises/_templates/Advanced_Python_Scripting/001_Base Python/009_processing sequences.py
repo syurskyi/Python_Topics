@@ -1,43 +1,43 @@
 _____ os
 _____ shutil
-path = path = '/home/sergei/My_Documents/Python/Advanced Python Scripting/top_projects/render'
-correctname = 'shot_01'
-padding = 4
+path _ path _ '/home/sergei/My_Documents/Python/Advanced Python Scripting/top_projects/render'
+correctname _ 'shot_01'
+padding _ 4
 
 # list of files
 
-files = os.listdir(path)
-tmp = os.listdir(path)
-files = []
+files _ os.listdir(path)
+tmp _ os.listdir(path)
+files _ []
 for t in tmp:
     __ os.path.isfile(os.path.join(path, t)):
         files.append(t)
 
 # separate
 
-frames = []
+frames _ []
 for f in files:
-    name, ext = os.path.splitext(f)
-    fullName = name
+    name, ext _ os.path.splitext(f)
+    fullName _ name
     while name[-1].isdigit(
         # print(name)
-        name = name[:-1]
-    digits = int(fullName.replace(name, ''))
+        name _ name[:-1]
+    digits _ int(fullName.replace(name, ''))
     frames.append(digits)
-offset = min(frames) - 1
+offset _ min(frames) - 1
 #print(frames)
 
 # new name
 
-outFolder = os.path.join(path, correctname)
+outFolder _ os.path.join(path, correctname)
 __ not os.path.exists(outFolder
     os.mkdir(outFolder)
 for i, f in enumerate(files
     # print(f, frames[i])
-    old = os.path.join(path, f)
-    name, ext = os.path.splitext(f)
-    newName = correctname + '_' + st.(frames[i] - offset).zfill(padding) + ext
-    new = os.path.join(path, correctname, newName)
+    old _ os.path.join(path, f)
+    name, ext _ os.path.splitext(f)
+    newName _ correctname + '_' + st.(frames[i] - offset).zfill(padding) + ext
+    new _ os.path.join(path, correctname, newName)
     # print(old)
     # print(new)
     __ os.path.exists(new
@@ -46,9 +46,9 @@ for i, f in enumerate(files
 
 # search missing frames
 
-fullrange = range(min(frames), max(frames)+1)
+fullrange _ range(min(frames), max(frames)+1)
 # print(fullrange)
-miss = []
+miss _ []
 for i in fullrange:
     __ not i in frames:
         miss. append(i)
@@ -58,7 +58,7 @@ for i in fullrange:
 
 print('Miss frames:', miss)
 
-a = raw_input('Remove old files? [y/n]: ')
+a _ raw_input('Remove old files? [y/n]: ')
 __ a __ 'y' or a __ 'Y':
     for f in files:
         os.remove(os.path.join(path, f))

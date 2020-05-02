@@ -7,17 +7,17 @@ ____ demoGraphicsView _____ *
 c_ MyForm(?D..
     ___  -  
         s__. - ()
-        ui = Ui_Dialog()
+        ui _ Ui_Dialog()
         ui.setupUi
-        scene = QGraphicsScene
-        pixmap= QtGui.QPixmap()
+        scene _ QGraphicsScene
+        pixmap_ QtGui.QPixmap()
         pixmap.load("bintupic.jpg")
-        item=QGraphicsPixmapItem(pixmap)
+        item_QGraphicsPixmapItem(pixmap)
         scene.addItem(item)
         ui.graphicsView.setScene(scene)
 
-__ __name____"__main__":    
-    app = ?A..(___.argv)
-    myapp = MyForm()
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    myapp _ MyForm()
     myapp.s..
     ___.e..(app.exec_())

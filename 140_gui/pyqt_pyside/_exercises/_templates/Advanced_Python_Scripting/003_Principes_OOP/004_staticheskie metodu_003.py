@@ -4,5 +4,5 @@ c_ someClass(object
         pass
 
 someClass.someMethod()
-v = someClass()
-v = someClass.someMethod()
+v _ someClass()
+v _ someClass.someMethod()

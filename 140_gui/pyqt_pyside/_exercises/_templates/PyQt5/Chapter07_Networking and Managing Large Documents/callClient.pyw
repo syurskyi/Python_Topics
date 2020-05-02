@@ -8,20 +8,20 @@ ____ socketserver _____ ThreadingMixIn
 
 ____ demoClient _____ *
 
-tcpClientA=None
+tcpClientA_None
 
 c_ Window(?D..
     ___  -
         s__. - ()
-        ui = Ui_Dialog()
+        ui _ Ui_Dialog()
         ui.setupUi
-        textEditMessages=ui.textEditMessages
+        textEditMessages_ui.textEditMessages
         ui.pushButtonSend.clicked.c..(dispMessage)
         s..
 
 
     ___ dispMessage
-        text=ui.lineEditMessage.text()
+        text_ui.lineEditMessage.text()
         ui.textEditMessages.append("Client: "+ui.lineEditMessage.text())
         tcpClientA.send(text.encode())
         ui.lineEditMessage.sT..("")
@@ -29,26 +29,26 @@ c_ Window(?D..
 c_ ClientThread(Thread
     ___  -  ,window
         Thread. -  
-        window=window
+        window_window
   
     ___ run
-       host = socket.gethostname() 
-       port = 80
-       BUFFER_SIZE = 1024
+       host _ socket.gethostname()
+       port _ 80
+       BUFFER_SIZE _ 1024
        global tcpClientA
-       tcpClientA = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
+       tcpClientA _ socket.socket(socket.AF_INET, socket.SOCK_STREAM)
        tcpClientA.c..((host, port))
         
        while T..:
-           data = tcpClientA.recv(BUFFER_SIZE)
+           data _ tcpClientA.recv(BUFFER_SIZE)
            window.textEditMessages.append("Server: "+data.decode("utf-8"))
        tcpClientA.close() 
             
         
-__ __name____"__main__":    
-    app = ?A..(___.argv)
-    window = Window()
-    clientThread=ClientThread(window)
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    window _ Window()
+    clientThread_ClientThread(window)
     clientThread.start()
     window.exec()
     ___.e..(app.exec_())

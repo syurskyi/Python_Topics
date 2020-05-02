@@ -10,13 +10,13 @@
 ____ PyQt4 _____ ?C.., QtGui
 
 try:
-    _fromUtf8 = ?C...QString.fromUtf8
+    _fromUtf8 _ ?C...QString.fromUtf8
 except AttributeError:
     ___ _fromUtf8(s
         return s
 
 try:
-    _encoding = QtGui.?A...UnicodeUTF8
+    _encoding _ QtGui.?A...UnicodeUTF8
     ___ _translate(context, text, disambig
         return QtGui.?A...translate(context, text, disambig, _encoding)
 except AttributeError:
@@ -27,18 +27,18 @@ c_ Ui_example(object
     ___ setupUi , example
         example.setObjectName(_fromUtf8("example"))
         example.resize(241, 204)
-        verticalLayout_2 = QtGui.QVBoxLayout(example)
+        verticalLayout_2 _ QtGui.QVBoxLayout(example)
         verticalLayout_2.setObjectName(_fromUtf8("verticalLayout_2"))
-        additem_btn = QtGui.?PB..(example)
+        additem_btn _ QtGui.?PB..(example)
         additem_btn.setObjectName(_fromUtf8("additem_btn"))
         verticalLayout_2.addWidget(additem_btn)
-        name_le = QtGui.QLineEdit(example)
+        name_le _ QtGui.QLineEdit(example)
         name_le.setObjectName(_fromUtf8("name_le"))
         verticalLayout_2.addWidget(name_le)
-        items_ly = QtGui.QVBoxLayout()
+        items_ly _ QtGui.QVBoxLayout()
         items_ly.setObjectName(_fromUtf8("items_ly"))
         verticalLayout_2.addLayout(items_ly)
-        spacerItem = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
+        spacerItem _ QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
         verticalLayout_2.addItem(spacerItem)
 
         retranslateUi(example)

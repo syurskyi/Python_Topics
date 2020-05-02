@@ -3,7 +3,7 @@ ____ PySide.QtGui _____ *
 ____ widgets _____ window_UIs as ui
 _____ os
 
-style = os.path.join(os.path.dirname(__file__), 'style.css')
+style _ os.path.join(os.path.dirname(__file__), 'style.css')
 
 c_ styleWidgetClass(QMainWindow, ui.Ui_MainWindow
     ___  -  
@@ -21,7 +21,7 @@ c_ styleWidgetClass(QMainWindow, ui.Ui_MainWindow
 
 __ __name__ __ '__main__':
     os.chdir(os.path.dirname(__file__))
-    app = ?A..([])
-    w = styleWidgetClass()
+    app _ ?A..([])
+    w _ styleWidgetClass()
     w.s..
     app.exec_()

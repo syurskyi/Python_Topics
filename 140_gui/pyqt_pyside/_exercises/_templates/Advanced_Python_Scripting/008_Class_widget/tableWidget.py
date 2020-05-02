@@ -1,15 +1,15 @@
 ____ PySide.QtGui _____ *
 ____ PySide.?C.. _____ *
 _____ os
-path = os.path.dirname(__file__)
+path _ os.path.dirname(__file__)
 
 c_ simpleWindow(?W..
-    path = os.path.dirname(__file__)
+    path _ os.path.dirname(__file__)
     ___  -  
         super(simpleWindow, self). - ()
-        ly = QHBoxLayout()
+        ly _ QHBoxLayout()
         setLayout(ly)
-        table = QTableWidget()
+        table _ QTableWidget()
         ly.addWidget(table)
         table.verticalHeader().hide()
         table.horizontalHeader().setResizeMode(QHeaderView.Stretch)
@@ -18,23 +18,23 @@ c_ simpleWindow(?W..
         fillTable()
 
     ___ fillTable 
-        files = os.listdir(path)
+        files _ os.listdir(path)
         table.setColumnCount(2)
         table.setRowCount(len(files))
         table.setHorizontalHeaderLabels(['Name', 'Size'])
         for i, f in enumerate(files
-            item = QTableWidgetItem()
+            item _ QTableWidgetItem()
             item.setFlags(Qt.ItemIsEnabled | Qt.ItemIsSelectable)
             item.sT..(f)
             table.setItem(i, 0, item)
-            item = QTableWidgetItem()
+            item _ QTableWidgetItem()
             item.setFlags(Qt.ItemIsEnabled | Qt.ItemIsSelectable)
             item.sT..(st.(os.stat(os.path.join(path, f)).st_size) + ' bytes' )
             table.setItem(i, 1, item)
 
 
 __ __name__ __ '__main__':
-    app = ?A..([])
-    w = simpleWindow()
+    app _ ?A..([])
+    w _ simpleWindow()
     w.s..
     app.exec_()

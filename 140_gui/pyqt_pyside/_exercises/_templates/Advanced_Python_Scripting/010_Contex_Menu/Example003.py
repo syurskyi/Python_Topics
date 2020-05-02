@@ -5,16 +5,16 @@ ____ PyQt4.QtGui _____ *
 
 
 c_ TableWidget(QTableWidget
-    ___  -  , parent=None
+    ___  -  , parent_None
         QTableWidget. -  , parent)
         setContextMenuPolicy(Qt.ActionsContextMenu)
 
-        quitAction = QAction("Quit", self)
+        quitAction _ QAction("Quit", self)
         quitAction.triggered.c..(qApp.quit)
         addAction(quitAction)
 
 
-app = ?A..([])
-tableWidget = TableWidget()
+app _ ?A..([])
+tableWidget _ TableWidget()
 tableWidget.s..
 ___.e..(app.exec_())

@@ -1,21 +1,21 @@
 _____ os
 
-iconvert = 'C:/Program Files/Side Effects Software/Houdini 16.0.736/bin/iconvert.exe'
+iconvert _ 'C:/Program Files/Side Effects Software/Houdini 16.0.736/bin/iconvert.exe'
 
 
-___ convert(src, trg=None
+___ convert(src, trg_None
     __ trg:
         __ not os.path.exists(trg
             os.makedirs(trg)
         elif os.path.isfile(trg
-            trg = os.path.dirname(trg)
-        basename = os.path.basename(src)
-        name, ext = os.path.splitext(basename)
-        trg = os.path.join(trg, name+'.exr')
+            trg _ os.path.dirname(trg)
+        basename _ os.path.basename(src)
+        name, ext _ os.path.splitext(basename)
+        trg _ os.path.join(trg, name+'.exr')
     else:
-        trg = os.path.splitext(src)[0] + '.exr'
+        trg _ os.path.splitext(src)[0] + '.exr'
 
-    cmd = ' '.join([iconvert, src, trg])
+    cmd _ ' '.join([iconvert, src, trg])
     os.popen(cmd)
 
 convert('C:/Users/serge/Dropbox/nuke/.nuke/example/PYTHON_EXAMPLE/Python_Example_All_Tutorials/VIDEO/Advanced_Python_Scripting/013_ImageConverter/texture.jpg')

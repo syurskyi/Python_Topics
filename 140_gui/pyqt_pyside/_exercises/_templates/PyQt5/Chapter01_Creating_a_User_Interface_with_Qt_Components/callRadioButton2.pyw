@@ -7,7 +7,7 @@ ____ demoRadioButton2 _____ *
 c_ MyForm(?D..
     ___  -
         s__. - ()
-        ui = Ui_Dialog()
+        ui _ Ui_Dialog()
         ui.setupUi
         ui.radioButtonMedium.toggled.c..(dispSelected)
         ui.radioButtonLarge.toggled.c..(dispSelected)
@@ -19,26 +19,26 @@ c_ MyForm(?D..
         s..
 
     ___ dispSelected
-        selected1="";
-        selected2=""
+        selected1_"";
+        selected2_""
         __ ui.radioButtonMedium.iC..__T..:
-            selected1="Medium"
+            selected1_"Medium"
         __ ui.radioButtonLarge.iC..__T..:
-            selected1="Large"
+            selected1_"Large"
         __ ui.radioButtonXL.iC..__T..:
-            selected1="Extra Large"
+            selected1_"Extra Large"
         __ ui.radioButtonXXL.iC..__T..:
-            selected1="Extra Extra Large"
+            selected1_"Extra Extra Large"
         __ ui.radioButtonDebitCard.iC..__T..:
-            selected2="Debit/Credit Card"
+            selected2_"Debit/Credit Card"
         __ ui.radioButtonNetBanking.iC..__T..:
-            selected2="NetBanking"
+            selected2_"NetBanking"
         __ ui.radioButtonCashOnDelivery.iC..__T..:
-            selected2="Cash On Delivery"
+            selected2_"Cash On Delivery"
         ui.labelSelected.sT..("Chosen shirt size is "+selected1+" and payment method as " + selected2)
 
-__ __name____"__main__":
-    app = ?A..(___.argv)
-    w = MyForm()
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    w _ MyForm()
     w.s..
     ___.e..(app.exec_())

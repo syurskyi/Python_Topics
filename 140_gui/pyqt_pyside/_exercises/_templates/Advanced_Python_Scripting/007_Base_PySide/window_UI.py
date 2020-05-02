@@ -10,13 +10,13 @@
 ____ PyQt4 _____ ?C.., QtGui
 
 try:
-    _fromUtf8 = ?C...QString.fromUtf8
+    _fromUtf8 _ ?C...QString.fromUtf8
 except AttributeError:
     ___ _fromUtf8(s
         return s
 
 try:
-    _encoding = QtGui.?A...UnicodeUTF8
+    _encoding _ QtGui.?A...UnicodeUTF8
     ___ _translate(context, text, disambig
         return QtGui.?A...translate(context, text, disambig, _encoding)
 except AttributeError:
@@ -27,17 +27,17 @@ c_ Ui_Form(object
     ___ setupUi , Form
         Form.setObjectName(_fromUtf8("Form"))
         Form.resize(400, 300)
-        horizontalLayout = QtGui.QHBoxLayout(Form)
+        horizontalLayout _ QtGui.QHBoxLayout(Form)
         horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
-        verticalLayout = QtGui.QVBoxLayout()
+        verticalLayout _ QtGui.QVBoxLayout()
         verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
-        pushButton = QtGui.?PB..(Form)
+        pushButton _ QtGui.?PB..(Form)
         pushButton.setObjectName(_fromUtf8("pushButton"))
         verticalLayout.addWidget(pushButton)
-        pushButton_2 = QtGui.?PB..(Form)
+        pushButton_2 _ QtGui.?PB..(Form)
         pushButton_2.setObjectName(_fromUtf8("pushButton_2"))
         verticalLayout.addWidget(pushButton_2)
-        spacerItem = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
+        spacerItem _ QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
         verticalLayout.addItem(spacerItem)
         horizontalLayout.addLayout(verticalLayout)
 

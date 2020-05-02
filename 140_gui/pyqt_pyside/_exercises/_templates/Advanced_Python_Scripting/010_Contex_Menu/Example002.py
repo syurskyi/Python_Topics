@@ -4,18 +4,18 @@ ____ PyQt4.QtGui _____ *
 
 
 c_ TableWidget(QTableWidget
-    ___  -  , parent=None
+    ___  -  , parent_None
         QTableWidget. -  , parent)
 
     ___ contextMenuEvent , event
-        menu = QMenu
-        quitAction = menu.addAction("Quit")
-        action = menu.exec_(mapToGlobal(event.pos()))
+        menu _ QMenu
+        quitAction _ menu.addAction("Quit")
+        action _ menu.exec_(mapToGlobal(event.pos()))
         __ action __ quitAction:
             qApp.quit()
 
 
-app = ?A..([])
-tableWidget = TableWidget()
+app _ ?A..([])
+tableWidget _ TableWidget()
 tableWidget.s..
 ___.e..(app.exec_())

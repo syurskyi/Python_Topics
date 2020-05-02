@@ -7,7 +7,7 @@ ____ demoRadioButton1 _____ *
 c_ MyForm(?D..
     ___  -  
         s__. - ()
-        ui = Ui_Dialog()
+        ui _ Ui_Dialog()
         ui.setupUi
         ui.radioButtonFirstClass.toggled.c..(dispFare)
         ui.radioButtonBusinessClass.toggled.c..(dispFare)
@@ -15,17 +15,17 @@ c_ MyForm(?D..
         s..
 
     ___ dispFare 
-        fare=0
+        fare_0
         __ ui.radioButtonFirstClass.iC..__T..:
-            fare=150
+            fare_150
         __ ui.radioButtonBusinessClass.iC..__T..:
-            fare=125
+            fare_125
         __ ui.radioButtonEconomyClass.iC..__T..:
-            fare=100
+            fare_100
         ui.labelFare.sT..("Air Fare is "+st.(fare))
 
-__ __name____"__main__":    
-    app = ?A..(___.argv)
-    w = MyForm()
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    w _ MyForm()
     w.s..
     ___.e..(app.exec_())

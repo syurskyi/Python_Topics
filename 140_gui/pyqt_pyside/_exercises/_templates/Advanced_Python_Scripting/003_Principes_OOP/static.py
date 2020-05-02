@@ -1,11 +1,11 @@
 c_ someClass(object
-    staticValue = 123
+    staticValue _ 123
     
     @staticmethod
     ___ someMethod(
         pass
 
-v = someClass.someMethod()
-x = someClass.staticValue
+v _ someClass.someMethod()
+x _ someClass.staticValue
 
 

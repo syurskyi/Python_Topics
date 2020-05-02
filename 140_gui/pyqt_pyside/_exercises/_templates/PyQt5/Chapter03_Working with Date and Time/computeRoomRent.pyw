@@ -7,9 +7,9 @@ ____ reservehotel _____ *
 c_ MyForm(?D..
     ___  -  
         s__. - ()
-        ui = Ui_Dialog()
+        ui _ Ui_Dialog()
         ui.setupUi
-        roomtypes=['Suite', 'Super Luxury', 'Super Deluxe', 'Ordinary']
+        roomtypes_['Suite', 'Super Luxury', 'Super Deluxe', 'Ordinary']
         addcontent()     
         ui.pushButton.clicked.c..(computeRoomRent) 
         s..
@@ -19,25 +19,25 @@ c_ MyForm(?D..
           ui.comboBox.addItem(i)
      
     ___ computeRoomRent 
-        dateselected=ui.calendarWidget.selectedDate()
-        dateinstring=st.(dateselected.toPyDate())
-        noOfDays=ui.spinBox.value()
-        chosenRoomType=ui.comboBox.itemText(ui.comboBox.currentIndex())
+        dateselected_ui.calendarWidget.selectedDate()
+        dateinstring_st.(dateselected.toPyDate())
+        noOfDays_ui.spinBox.value()
+        chosenRoomType_ui.comboBox.itemText(ui.comboBox.currentIndex())
         ui.Enteredinfo.sT..('Date of reservation: '+dateinstring+ ', Number of days: '+ st.(noOfDays) + ' \nand Room type selected: '+ chosenRoomType)
-        roomRent=0
+        roomRent_0
         __ chosenRoomType__"Suite":
-          roomRent=40
+          roomRent_40
         __ chosenRoomType__"Super Luxury":
-          roomRent=30
+          roomRent_30
         __ chosenRoomType__"Super Deluxe":
-          roomRent=20
+          roomRent_20
         __ chosenRoomType__"Ordinary":
-          roomRent=10
-        total=roomRent*noOfDays
+          roomRent_10
+        total_roomRent*noOfDays
         ui.RoomRentinfo.sT..('Room Rent for single day for '+ chosenRoomType +' type is '+ st.(roomRent)+ '$. \nTotal room rent is '+ st.(total)+ '$')
  
-__ __name____"__main__":    
-    app = ?A..(___.argv)
-    w = MyForm()
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    w _ MyForm()
     w.s..
     ___.e..(app.exec_())

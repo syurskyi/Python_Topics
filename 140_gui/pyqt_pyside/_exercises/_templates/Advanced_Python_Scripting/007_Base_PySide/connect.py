@@ -5,11 +5,11 @@ ____ PySide.?C.. _____ *
 c_ MyWidget(?W..
     ___  -  
         super(MyWidget, self). - ()
-        layout = QVBoxLayout
-        button = ?PB..('Print')
+        layout _ QVBoxLayout
+        button _ ?PB..('Print')
         layout.addWidget(button)
         button.clicked.c..(action)
-        line = QLineEdit()
+        line _ QLineEdit()
         layout.addWidget(line)
         line.tC...c..(text)
         # self.connect(button, SIGNAL('clicked()'),
@@ -26,7 +26,7 @@ c_ MyWidget(?W..
         print arg
 
 
-app = ?A..([])
-window = MyWidget()
+app _ ?A..([])
+window _ MyWidget()
 window.s..
 app.exec_()

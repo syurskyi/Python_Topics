@@ -8,17 +8,17 @@ c_ MyForm(?D..
 
     ___  -
         s__. - ()
-        ui = Ui_Dialog()
+        ui _ Ui_Dialog()
         ui.setupUi
         ui.pushButtonInsertRow.clicked.c..(InsertRows)
         s..
 
     ___ InsertRows
-        sqlStatement="INSERT INTO "+ui.lineEditTableName.text()+" VALUES('"+ui.lineEditEmailAddress.text()+"', '"+ui.lineEditPassword.text()+"')"
+        sqlStatement_"INSERT INTO "+ui.lineEditTableName.text()+" VALUES('"+ui.lineEditEmailAddress.text()+"', '"+ui.lineEditPassword.text()+"')"
         try:
-            conn = sqlite3.c..(ui.lineEditDBName.text()+".db")
+            conn _ sqlite3.c..(ui.lineEditDBName.text()+".db")
             with conn:
-                cur = conn.cursor()
+                cur _ conn.cursor()
                 cur.execute(sqlStatement)
                 conn.commit()
             ui.labelResponse.sT..("Row successfully inserted")
@@ -27,8 +27,8 @@ c_ MyForm(?D..
         finally:
             conn.close()
 
-__ __name____"__main__":
-    app = ?A..(___.argv)
-    w = MyForm()
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    w _ MyForm()
     w.s..
     ___.e..(app.exec_())

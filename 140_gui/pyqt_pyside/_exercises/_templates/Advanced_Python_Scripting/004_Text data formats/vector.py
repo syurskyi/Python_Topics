@@ -1,8 +1,8 @@
 c_ vector(
-    ___  -  , x=0.0, y=0.0, z=0.0
-        x = float(x)
-        y = float(y)
-        z = float(z)
+    ___  -  , x_0.0, y_0.0, z_0.0
+        x _ float(x)
+        y _ float(y)
+        z _ float(z)
 
     ___ __repr__
         return 'Vector<%0.3f, %0.3f, %0.3f>'%(x, y, z)
@@ -37,7 +37,7 @@ c_ vector(
 
     ___ __getitem__ , item
         __ isinstance(item, int
-            __ 0 <= item <=2:
+            __ 0 <_ item <_2:
                 __ item __ 0:
                     return x
                 elif item __ 1:
@@ -53,11 +53,11 @@ c_ vector(
         __ isinstance(key, int
             __ key in [0,1,2]:
                 __ key __ 0:
-                    x = value
+                    x _ value
                 elif key __ 1:
-                    y = value
+                    y _ value
                 elif key __ 2:
-                    z = value
+                    z _ value
             else:
                 raise Exception('Value out of range, use 0, 1 or 2')
         else:
@@ -79,5 +79,5 @@ c_ vector(
     ___ mag
         return (x**2 + y**2 + z**2)**0.5
 
-a = vector()
+a _ vector()
 print(a)

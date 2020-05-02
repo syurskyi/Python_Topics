@@ -18,8 +18,8 @@ machines and a whole bunch of other cool stuff.
 
 #!/usr/bin/env python
 
-__author__ = 'Trevor Payne'
-__version__ = '1.0'
+__author__ _ 'Trevor Payne'
+__version__ _ '1.0'
 
 ____ collections _____ defaultdict
 _____ os
@@ -29,10 +29,10 @@ _____ Qt
 ____ Qt _____ ?W.., ?C.., QtGui
 _____ tp_launcher_model
 
-QT_VER = Qt.__binding__
-PY_VER = ___.version[:3]
+QT_VER _ Qt.__binding__
+PY_VER _ ___.version[:3]
 
-_STYLE_MAIN = '''
+_STYLE_MAIN _ '''
     QWidget{
         color: white; 
         background-color: qlineargradient(
@@ -50,7 +50,7 @@ _STYLE_MAIN = '''
     QGroupBox{ background-color: rgba(0,0,0,0)}
     QLineEdit{ color: white;  background-color: rgb(0,0,0); }
     '''
-_STYLE_BTN = '''
+_STYLE_BTN _ '''
     QPushButton{ 
         border: 1px outset gray;
         border-radius: 2px;
@@ -67,10 +67,10 @@ _STYLE_BTN = '''
 
 c_ Delete_Btn(?W...?PB..
     ''' Custom button that Triggers parent's 'delete_item' function. '''
-    ___  -  , parent=None
+    ___  -  , parent_None
         super(Delete_Btn, self). - (parent)
-        _my_parent = parent
-        _type = 'application/x-qabstractitemmodeldatalist'
+        _my_parent _ parent
+        _type _ 'application/x-qabstractitemmodeldatalist'
 
     ___ dragEnterEvent , event
         __ event.mimeData().hasFormat(_type
@@ -91,46 +91,46 @@ c_ TP_Launcher_GUI(?W...?W..
         delete workspaces and add, remove and launch
         applications within those workspaces.
     '''
-    ___  -  , parent=None
+    ___  -  , parent_None
         super(TP_Launcher_GUI, self). - (parent)
 
         # System and tool icons
-        _icons = ?W...QFileIconProvider()
-        _my_path = os.path.dirname(os.path.realpath(__file__))
-        images_path = os.path.join(_my_path, 'images')
-        full_path = os.path.join(images_path, 'TPayne_Launcher.png')
-        _tpl_icon = QtGui.QIcon(full_path)
+        _icons _ ?W...QFileIconProvider()
+        _my_path _ os.path.dirname(os.path.realpath(__file__))
+        images_path _ os.path.join(_my_path, 'images')
+        full_path _ os.path.join(images_path, 'TPayne_Launcher.png')
+        _tpl_icon _ QtGui.QIcon(full_path)
 
         # Data holding instance
-        _tp_launcher = tp_launcher_model.TP_Launcher_Model()
+        _tp_launcher _ tp_launcher_model.TP_Launcher_Model()
 
         # Toggle dictionary to replace 'if/else' statements
-        _edit_op = {
+        _edit_op _ {
             T..: _edit_on,
             False: _edit_off
         }
-        _app_instruction = T..
+        _app_instruction _ T..
 
         # Handle version specific file dialog box issues
-        _file_dialogs = defaultdict(lambda: _file_dialog)
-        _file_dialogs['PyQt4'] = _file_dialog_pyqt4
-        _dragging = None
-        _delete_op = {
+        _file_dialogs _ defaultdict(lambda: _file_dialog)
+        _file_dialogs['PyQt4'] _ _file_dialog_pyqt4
+        _dragging _ None
+        _delete_op _ {
             'workspace': _delete_workspace,
             'application':_delete_app
         }
 
         # Settings and json file read/write stuff
-        txt = 'TPayne_Experience'+QT_VER
-        _settings = ?C...QSettings(txt, 'TPayne\'s_Launcher')
-        name = '{}_{}_data.json'.format(PY_VER, QT_VER)
-        path = os.path.join(_my_path, 'data')
-        _json_file = os.path.join(path, name)
+        txt _ 'TPayne_Experience'+QT_VER
+        _settings _ ?C...QSettings(txt, 'TPayne\'s_Launcher')
+        name _ '{}_{}_data.json'.format(PY_VER, QT_VER)
+        path _ os.path.join(_my_path, 'data')
+        _json_file _ os.path.join(path, name)
 
         # Handle version specific reading/writing settings
-        d = defaultdict(lambda: _get_settings)
-        _settings_op = defaultdict(lambda: d)
-        _settings_op['2.7']['PyQt4'] = _get_settings_27_pyqt4
+        d _ defaultdict(lambda: _get_settings)
+        _settings_op _ defaultdict(lambda: d)
+        _settings_op['2.7']['PyQt4'] _ _get_settings_27_pyqt4
 
         # Setup GUI, then load settings, then display editmode properly
         _setup()
@@ -143,7 +143,7 @@ c_ TP_Launcher_GUI(?W...?W..
         ''' Create tool GUI, set title, icon, remove
         minimize / maximize buttons, resize and style.
         '''
-        v_layout = ?W...QVBoxLayout
+        v_layout _ ?W...QVBoxLayout
 
         v_layout.addLayout(_setup_header())
         v_layout.addLayout(_setup_edit_options())
@@ -154,23 +154,23 @@ c_ TP_Launcher_GUI(?W...?W..
 
         setWindowTitle('TPayne\'s Launcher ' + __version__)
         setWindowIcon(_tpl_icon)
-        flag = ?C...Qt.WindowCloseButtonHint
+        flag _ ?C...Qt.WindowCloseButtonHint
         setWindowFlags(?C...Qt.Window | flag)
         resize(190, 200)
         setStyleSheet(_STYLE_MAIN)
 
     ___ _setup_header
         ''' Create combobox for workspace and edit button '''
-        h_layout = ?W...QHBoxLayout()
-        workspace_gb = ?W...QGroupBox('Workspaces')
-        v_layout = ?W...QVBoxLayout(workspace_gb)
+        h_layout _ ?W...QHBoxLayout()
+        workspace_gb _ ?W...QGroupBox('Workspaces')
+        v_layout _ ?W...QVBoxLayout(workspace_gb)
 
-        _workspace_cb = ?W...QComboBox()
+        _workspace_cb _ ?W...QComboBox()
         _workspace_cb.view().setDragDropMode(
             ?W...QAbstractItemView.DragOnly
             )
 
-        _edit_btn = ?W...?PB..('Edit')
+        _edit_btn _ ?W...?PB..('Edit')
         _edit_btn.setMaximumSize(?C...QSize(40, 23))
         _edit_btn.setCheckable(T..)
         _edit_btn.setStyleSheet(_STYLE_BTN)
@@ -185,16 +185,16 @@ c_ TP_Launcher_GUI(?W...?W..
         ''' Create add / delete buttons with menus
         and overrides
         '''
-        add_del_l = ?W...QHBoxLayout()
+        add_del_l _ ?W...QHBoxLayout()
 
-        _add_btn = ?W...?PB..('Add')
+        _add_btn _ ?W...?PB..('Add')
         _add_btn.setMaximumSize(?C...QSize(60, 23))
-        add_menu = ?W...QMenu
+        add_menu _ ?W...QMenu
         add_menu.addAction('Workspace', _add_workspace)
         add_menu.addAction('App or File', _add_app)
         _add_btn.setMenu(add_menu)
 
-        _del_btn = Delete_Btn
+        _del_btn _ Delete_Btn
         _del_btn.sT..('Delete')
         _del_btn.setAcceptDrops(T..)
         _del_btn.setIcon(_icons.icon(_icons.Trashcan))
@@ -207,7 +207,7 @@ c_ TP_Launcher_GUI(?W...?W..
 
     ___ _setup_apps
         ''' Create apps list widget with drag/drop, and stuff'''
-        _app_lw = ?W...QListWidget()
+        _app_lw _ ?W...QListWidget()
         _app_lw.setAlternatingRowColors(T..)
         _app_lw.setDragDropMode(
             ?W...QAbstractItemView.InternalMove
@@ -216,16 +216,16 @@ c_ TP_Launcher_GUI(?W...?W..
 
     ___ _setup_tray_icon
         ''' Create icon for system tray and actions menu '''
-        tray_icon = ?W...QSystemTrayIcon
+        tray_icon _ ?W...QSystemTrayIcon
         tray_icon.setIcon(_tpl_icon)
         tray_icon.setToolTip('Launches other apps!')
 
-        tray_menu = ?W...QMenu
+        tray_menu _ ?W...QMenu
         tray_menu.addAction('Open', show)
         tray_menu.addAction('YouTube', _tp_launcher.run_youtube)
         tray_menu.addSeparator()
         tray_menu.addAction(
-            ?W...QAction('Quit', self, triggered=_close)
+            ?W...QAction('Quit', self, triggered__close)
             )
         tray_icon.setContextMenu(tray_menu)
         tray_icon.s..
@@ -265,10 +265,10 @@ c_ TP_Launcher_GUI(?W...?W..
         set each application icon and name.
         '''
         _app_lw.clear()
-        workspace = get_workspace()
+        workspace _ get_workspace()
         for app_name in _tp_launcher.get_app_names(workspace
-            item = ?W...QListWidgetItem(_app_lw)
-            icon = _tp_launcher.get_app_icon(workspace, app_name)
+            item _ ?W...QListWidgetItem(_app_lw)
+            icon _ _tp_launcher.get_app_icon(workspace, app_name)
             __ icon:
                 item.setIcon(QtGui.QIcon(icon))
             else:
@@ -324,7 +324,7 @@ c_ TP_Launcher_GUI(?W...?W..
     ___ _add_workspace
         ''' Prompt user with line edit input dialog for new name,
         store if valid, populate, then select it.'''
-        text = ?W...QInputDialog.getText(
+        text _ ?W...QInputDialog.getText(
             self,
             'New WORKSPACE',
             'What would you like to title the new WORKSPACE?'
@@ -332,7 +332,7 @@ c_ TP_Launcher_GUI(?W...?W..
         __ text:
             _tp_launcher.add_workspace(st.(text))
             _populate_workspaces()
-            index = _workspace_cb.findText(text)
+            index _ _workspace_cb.findText(text)
             _workspace_cb.setCurrentIndex(index)
             _save_settings()
 
@@ -341,16 +341,16 @@ c_ TP_Launcher_GUI(?W...?W..
         file dialog for app, optional dialog for icon,
         store, populate, and save settings'''
         __ _app_instruction:
-            msg = '1) Select the application file\n'
-            msg += '2) Select a app icon image (Optional)'
+            msg _ '1) Select the application file\n'
+            msg +_ '2) Select a app icon image (Optional)'
             ?W...QMessageBox.information , 'Add App', msg)
-            _app_instruction = False
-        sel = 'Select APP file'
-        app = _file_dialogs[QT_VER](sel, _my_path)
+            _app_instruction _ False
+        sel _ 'Select APP file'
+        app _ _file_dialogs[QT_VER](sel, _my_path)
         __ app:
-            path = os.path.split(app)[0]
-            msg = 'Select ICON file (optional)'
-            icon = _file_dialogs[QT_VER](msg, path)
+            path _ os.path.split(app)[0]
+            msg _ 'Select ICON file (optional)'
+            icon _ _file_dialogs[QT_VER](msg, path)
             _tp_launcher.add_app(get_workspace(), app, icon)
             _populate_apps()
             _save_settings()
@@ -363,7 +363,7 @@ c_ TP_Launcher_GUI(?W...?W..
     ___ _file_dialog_pyqt4 , msg, path
         ''' File dialog for PyQt4 only returns file path as QString,
         must be converted to a string'''
-        fd = ?W...QFileDialog.getOpenFileName , msg, path)
+        fd _ ?W...QFileDialog.getOpenFileName , msg, path)
         return st.(fd)
 
     #======= DELETE =================================
@@ -372,14 +372,14 @@ c_ TP_Launcher_GUI(?W...?W..
         ''' When the user begins dragging a workspace,
         store the index of the item being dragged and
         note that it is a workspace.'''
-        ws = st.(_workspace_cb.itemText(index.row()))
-        _dragging = ('workspace', ws)
+        ws _ st.(_workspace_cb.itemText(index.row()))
+        _dragging _ ('workspace', ws)
 
     ___ _dragging_app , item
         ''' When the user begins dragging a application,
         store the item text and note it's an app
         '''
-        _dragging = ('application', st.(item.text()))
+        _dragging _ ('application', st.(item.text()))
 
     ___ _delete_app , app_name
         _tp_launcher.delete_app(get_workspace(), app_name)
@@ -391,13 +391,13 @@ c_ TP_Launcher_GUI(?W...?W..
 
     ___ delete_item
         ''' Delete the item dragged onto Delete button '''
-        typ = _dragging[0]
-        name = _dragging[1]
-        title = 'Delete {}?'.format(typ)
-        msg = 'Are you sure you want to delete {} "{}"'.format(typ, name)
-        no = ?W...QMessageBox.No
-        yes = ?W...QMessageBox.Yes
-        btn = ?W...QMessageBox.warning , title, msg, yes, no)
+        typ _ _dragging[0]
+        name _ _dragging[1]
+        title _ 'Delete {}?'.format(typ)
+        msg _ 'Are you sure you want to delete {} "{}"'.format(typ, name)
+        no _ ?W...QMessageBox.No
+        yes _ ?W...QMessageBox.Yes
+        btn _ ?W...QMessageBox.warning , title, msg, yes, no)
         __ btn __ yes:
             _delete_op[typ](name)
             _save_settings()
@@ -408,9 +408,9 @@ c_ TP_Launcher_GUI(?W...?W..
         ''' Reorder the apps if necessary, then save the user settings
         to QSettings, and store the tool data to json file.
         '''
-        count = _app_lw.count()
-        names = [_app_lw.item(i).text() for i in range(count)]
-        workspace = get_workspace()
+        count _ _app_lw.count()
+        names _ [_app_lw.item(i).text() for i in range(count)]
+        workspace _ get_workspace()
         _tp_launcher.reorder_apps(workspace, names)
         _settings.setValue('CurrentWorkspace', workspace)
         _tp_launcher.write_json_file(_json_file)
@@ -424,10 +424,10 @@ c_ TP_Launcher_GUI(?W...?W..
         '''
         __ 'CurrentWorkspace' in _settings.allKeys() and \
               os.path.exists(_json_file
-            x, y, cws = _settings_op[PY_VER][QT_VER]()
+            x, y, cws _ _settings_op[PY_VER][QT_VER]()
             _tp_launcher.read_json_file(_json_file)
             _populate_workspaces()
-            index = _workspace_cb.findText(cws)
+            index _ _workspace_cb.findText(cws)
             _workspace_cb.setCurrentIndex(index)
             move(x, y)
         else:
@@ -438,17 +438,17 @@ c_ TP_Launcher_GUI(?W...?W..
         ''' Default get settings for x, y position for,
         tool and current workspace
         '''
-        x = int(_settings.value('PosX')) #PyQt5 conversion
-        y = int(_settings.value('PosY'))
-        cws = st.(_settings.value('CurrentWorkspace'))
+        x _ int(_settings.value('PosX')) #PyQt5 conversion
+        y _ int(_settings.value('PosY'))
+        cws _ st.(_settings.value('CurrentWorkspace'))
         return x, y, cws
 
     ___ _get_settings_27_pyqt4
         ''' This specific version of PyQt and python needed to be
         handled differently. '''
-        x = _settings.value('PosX').toInt()[0]
-        y = _settings.value('PosY').toInt()[0]
-        cws = st.(_settings.value('CurrentWorkspace'))
+        x _ _settings.value('PosX').toInt()[0]
+        y _ _settings.value('PosY').toInt()[0]
+        cws _ st.(_settings.value('CurrentWorkspace'))
         return x, y, cws
 
 
@@ -456,7 +456,7 @@ __ __name__ __ '__main__':
     # for debugging
     print (PY_VER)
     print (QT_VER)
-    app = ?W...?A..(___.argv)
+    app _ ?W...?A..(___.argv)
 
     # if os doesn't support Tray, quit
     __ not ?W...QSystemTrayIcon.isSystemTrayAvailable(
@@ -470,7 +470,7 @@ __ __name__ __ '__main__':
     ?W...?A...setQuitOnLastWindowClosed(False)
 
     # Create an instance of tool and run it
-    ex = TP_Launcher_GUI()
+    ex _ TP_Launcher_GUI()
     ex.s..
     ___.e..(app.exec_())
 

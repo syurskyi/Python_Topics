@@ -7,7 +7,7 @@ ____ demoScrollBar _____ *
 c_ MyForm(?D..
     ___  -
         s__. - ()
-        ui = Ui_Dialog()
+        ui _ Ui_Dialog()
         ui.setupUi
         ui.horizontalScrollBarSugarLevel.valueChanged.c..(scrollhorizontal)
         ui.verticalScrollBarPulseRate.valueChanged.c..(scrollvertical)
@@ -28,8 +28,8 @@ c_ MyForm(?D..
         ui.lineEditResult.sT..("Cholestrol Level : "+st.(value))
       
 
-__ __name____"__main__":    
-    app = ?A..(___.argv)
-    w = MyForm()
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    w _ MyForm()
     w.s..
     ___.e..(app.exec_())

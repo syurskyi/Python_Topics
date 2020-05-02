@@ -9,27 +9,27 @@ c_ MyForm(?D..
 
     ___  -  
         s__. - ()
-        ui = Ui_Dialog()
+        ui _ Ui_Dialog()
         ui.setupUi
         ui.pushButtonDisplayRows.clicked.c..(DisplayRows)
         s..
 
     ___ DisplayRows 
-        sqlStatement="SELECT * FROM "+ui.lineEditTableName.text()
+        sqlStatement_"SELECT * FROM "+ui.lineEditTableName.text()
         try:
-            conn = sqlite3.c..(ui.lineEditDBName.text()+".db")
-            cur = conn.cursor()    
+            conn _ sqlite3.c..(ui.lineEditDBName.text()+".db")
+            cur _ conn.cursor()    
             cur.execute(sqlStatement)
-            rows = cur.fetchall()
-            rowNo=0
+            rows _ cur.fetchall()
+            rowNo_0
             for tuple in rows:
                 ui.labelResponse.sT..("")
-                colNo=0
+                colNo_0
                 for columns in tuple:
-                    oneColumn=QTableWidgetItem(columns)
+                    oneColumn_QTableWidgetItem(columns)
                     ui.tableWidget.setItem(rowNo, colNo, oneColumn)
-                    colNo+=1
-                rowNo+=1                  
+                    colNo+_1
+                rowNo+_1                  
                 
         except Error as e:
             ui.tableWidget.clear()
@@ -37,8 +37,8 @@ c_ MyForm(?D..
         finally:
             conn.close()
 
-__ __name____"__main__":    
-    app = ?A..(___.argv)
-    w = MyForm()
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    w _ MyForm()
     w.s..
     ___.e..(app.exec_())

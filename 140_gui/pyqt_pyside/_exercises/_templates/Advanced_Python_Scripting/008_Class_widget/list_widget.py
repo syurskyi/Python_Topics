@@ -1,15 +1,15 @@
 ____ PySide.QtGui _____ *
 _____ os
-path = os.path.dirname(__file__)
+path _ os.path.dirname(__file__)
 
 c_ simpleWindow(?W..
     ___  -  
         super(simpleWindow, self). - ()
-        ly = QHBoxLayout()
+        ly _ QHBoxLayout()
         setLayout(ly)
-        list = QListWidget()
+        list _ QListWidget()
         ly.addWidget(list)
-        textBrowser = QTextBrowser()
+        textBrowser _ QTextBrowser()
         ly.addWidget(textBrowser)
         # connect
         list.itemClicked.c..(updateText)
@@ -26,16 +26,16 @@ c_ simpleWindow(?W..
             list.addItem(f)
 
     ___ updateText , item
-        text =open(fullPath(item)).read()
+        text _open(fullPath(item)).read()
         textBrowser.sT..(text)
 
     ___ openFile , item
-        path = fullPath(item)
+        path _ fullPath(item)
         os.system(path)
 
 
 __ __name__ __ '__main__':
-    app = ?A..([])
-    w = simpleWindow()
+    app _ ?A..([])
+    w _ simpleWindow()
     w.s..
     app.exec_()

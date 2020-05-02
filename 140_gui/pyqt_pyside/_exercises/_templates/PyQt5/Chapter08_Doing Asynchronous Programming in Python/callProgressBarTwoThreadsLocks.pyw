@@ -9,36 +9,36 @@ ____ demoTwoProgressBarsLocks _____ *
 c_ MyForm(?D..
     ___  -
         s__. - ()
-        ui = Ui_Dialog()
+        ui _ Ui_Dialog()
         ui.setupUi
         s..
        
 c_ myThread (threading.Thread
-   counter=0
+   counter_0
    ___  -  , w, ProgressBar
       threading.Thread. -
-      w=w
-      counter=0
-      progreassBar=ProgressBar
+      w_w
+      counter_0
+      progreassBar_ProgressBar
       
    ___ run
       print ("Starting " + name+"\n")
       threadLock.acquire()
-      while counter <=100:
+      while counter <_100:
           time.sleep(1)
           progreassBar.setValue(counter)
-          counter+=10
+          counter+_10
       threadLock.release()
       print ("Exiting " + name+"\n")
 
       
-__ __name____"__main__":
-    app = ?A..(___.argv)
-    w = MyForm()
-    thread1 = myThread(w, w.ui.progressBarFileDownload)
-    thread2 = myThread(w, w.ui.progressBarVirusScan)
-    threadLock = threading.Lock()
-    threads = []
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    w _ MyForm()
+    thread1 _ myThread(w, w.ui.progressBarFileDownload)
+    thread2 _ myThread(w, w.ui.progressBarVirusScan)
+    threadLock _ threading.Lock()
+    threads _ []
     thread1.start()
     thread2.start()
     w.exec()

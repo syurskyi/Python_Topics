@@ -1,10 +1,10 @@
 c_ someClass(object
-    count = 0
+    count _ 0
     ___  -
-        __class__.count += 1
+        __class__.count +_ 1
 
 
-c = someClass()
+c _ someClass()
 print(c.count)
-f = someClass()
+f _ someClass()
 print(f.count)

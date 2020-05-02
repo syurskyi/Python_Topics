@@ -7,7 +7,7 @@ ____ demoCalculator _____ *
 c_ MyForm(?D..
     ___  -
         s__. - ()
-        ui = Ui_Dialog()
+        ui _ Ui_Dialog()
         ui.setupUi
         ui.pushButtonPlus.clicked.c..(addtwonum)
         ui.pushButtonSubtract.clicked.c..(subtracttwonum)
@@ -16,55 +16,55 @@ c_ MyForm(?D..
         s..
 
     ___ addtwonum
-        __ len(ui.lineEditFirstNumber.text())!=0:
-            a=int(ui.lineEditFirstNumber.text())
+        __ len(ui.lineEditFirstNumber.text())!_0:
+            a_int(ui.lineEditFirstNumber.text())
         else:
-            a=0
-        __ len(ui.lineEditSecondNumber.text())!=0:
-            b=int(ui.lineEditSecondNumber.text())
+            a_0
+        __ len(ui.lineEditSecondNumber.text())!_0:
+            b_int(ui.lineEditSecondNumber.text())
         else:
-            b=0
-        sum=a+b
+            b_0
+        sum_a+b
         ui.labelResult.sT..("Addition: " +st.(sum))
 
     ___ subtracttwonum
-        __ len(ui.lineEditFirstNumber.text())!=0:
-            a=int(ui.lineEditFirstNumber.text())
+        __ len(ui.lineEditFirstNumber.text())!_0:
+            a_int(ui.lineEditFirstNumber.text())
         else:
-            a=0
-        __ len(ui.lineEditSecondNumber.text())!=0:
-            b=int(ui.lineEditSecondNumber.text())
+            a_0
+        __ len(ui.lineEditSecondNumber.text())!_0:
+            b_int(ui.lineEditSecondNumber.text())
         else:
-            b=0
-        diff=a-b
+            b_0
+        diff_a-b
         ui.labelResult.sT..("Substraction: " +st.(diff))
         
     ___ multiplytwonum
-        __ len(ui.lineEditFirstNumber.text())!=0:
-            a=int(ui.lineEditFirstNumber.text())
+        __ len(ui.lineEditFirstNumber.text())!_0:
+            a_int(ui.lineEditFirstNumber.text())
         else:
-            a=0
-        __ len(ui.lineEditSecondNumber.text())!=0:
-            b=int(ui.lineEditSecondNumber.text())
+            a_0
+        __ len(ui.lineEditSecondNumber.text())!_0:
+            b_int(ui.lineEditSecondNumber.text())
         else:
-            b=0
-        mult=a*b
+            b_0
+        mult_a*b
         ui.labelResult.sT..("Multiplication: " +st.(mult))
         
     ___ dividetwonum
-        __ len(ui.lineEditFirstNumber.text())!=0:
-            a=int(ui.lineEditFirstNumber.text())
+        __ len(ui.lineEditFirstNumber.text())!_0:
+            a_int(ui.lineEditFirstNumber.text())
         else:
-            a=0
-        __ len(ui.lineEditSecondNumber.text())!=0:
-            b=int(ui.lineEditSecondNumber.text())
+            a_0
+        __ len(ui.lineEditSecondNumber.text())!_0:
+            b_int(ui.lineEditSecondNumber.text())
         else:
-            b=0
-        division=a/b
+            b_0
+        division_a/b
         ui.labelResult.sT..("Division: " +st.(round(division,2)))
 
-__ __name____"__main__":    
-    app = ?A..(___.argv)
-    w = MyForm()
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    w _ MyForm()
     w.s..
     ___.e..(app.exec_())

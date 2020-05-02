@@ -1,25 +1,25 @@
 _____ os
 
 c_ settings(
-    ___  -  , path=None
+    ___  -  , path_None
         __ path:
-            path = path
+            path _ path
         else:
-            path = 'c:/settings.ini'
-        data = __readFile()
+            path _ 'c:/settings.ini'
+        data _ __readFile()
 
     ___ __readFile
         __ os.path.exists(path
-            text = open(path, 'r').readlines()
-            data = {}
+            text _ open(path, 'r').readlines()
+            data _ {}
             __ text:
                 for line in [x.strip() for x in text]:
-                    key, value = line.split('=')
+                    key, value _ line.split('=')
                     __ value.isdigit(
-                        value = int(value)
+                        value _ int(value)
                     elif value.replace('.','').isdigit() and value.count('.') __ 1:
-                        value = float(value)
-                    data[key] = value
+                        value _ float(value)
+                    data[key] _ value
             return data
         return __create_default()
 
@@ -30,20 +30,20 @@ c_ settings(
                     f.write('%s=%s\n' % (key, value))
 
     ___ __create_default
-        d = dict(app='',
-                 value=0,
-                 path='')
+        d _ dict(app_'',
+                 value_0,
+                 path_'')
         return d
 
     ___ setValue , key, value
-        data[key] = value
+        data[key] _ value
         __write_file()
 
-    ___ getValue , key, default=None
+    ___ getValue , key, default_None
         return data.get(key, default)
 
     ___ getSettings
         return data
 
-s = settings('c:/mySettings.ini')
+s _ settings('c:/mySettings.ini')
 s.setValue('app', 'Maya')

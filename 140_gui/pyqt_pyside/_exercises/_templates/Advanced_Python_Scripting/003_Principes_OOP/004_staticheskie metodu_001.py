@@ -1,15 +1,15 @@
 c_ someClass(object
-    y = 20
+    y _ 20
     ___  -  
-        x = 10
+        x _ 10
         # self.y = 100
 
-c = someClass()
+c _ someClass()
 print(c.y)
-f = someClass()
+f _ someClass()
 print(f.y)
 # f.y = 100
 print(f.y)
-f.__class__.y = 100
+f.__class__.y _ 100
 print(f.y)
 print(c.y)

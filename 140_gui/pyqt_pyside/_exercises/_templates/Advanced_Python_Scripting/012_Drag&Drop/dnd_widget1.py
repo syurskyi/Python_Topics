@@ -11,7 +11,7 @@ c_ listWidgetClass(QListWidget
 
     ___ dropEvent , event                # to shto proishodit kogda mu sbrasuvaem dannue na vidget
         print 'DROP', type(event)
-        mimedata = event.mimeData()            # kogda mu peretaskivaem element, to pomimo togo shto srabatuvaet DropEvent,
+        mimedata _ event.mimeData()            # kogda mu peretaskivaem element, to pomimo togo shto srabatuvaet DropEvent,
                                                # srabatuvaet echjo 2 eventa, dragEnterEvent and dragMoveEvent
                                                # obuchno oni odinakovue i govorjat mozet li nash vidget prinjat' eti dannue kotorue mu peretaskivaem
                                                # i vnytri etogo eventa kak raz proverjaetsja kakogo tipa dannue k nam prishli
@@ -30,7 +30,7 @@ c_ listWidgetClass(QListWidget
         print 'MOVE'
 
 __ __name__ __ '__main__':
-    app = ?A..([])
-    w = listWidgetClass()
+    app _ ?A..([])
+    w _ listWidgetClass()
     w.s..
     app.exec_()

@@ -6,29 +6,29 @@ ____ DemoTableWidget _____ *
 c_ MyForm(?D..
     ___  -  ,data
         s__. - ()
-        ui = Ui_Dialog()
+        ui _ Ui_Dialog()
         ui.setupUi
-        data=data
+        data_data
         addcontent()
 
     ___ addcontent
-        row=0
+        row_0
         for tup in data:
-            col=0
+            col_0
             for item in tup:
-                oneitem=QTableWidgetItem(item)
+                oneitem_QTableWidgetItem(item)
                 ui.tableWidget.setItem(row, col, oneitem)
-                col+=1
-            row+=1
-data=[]
+                col+_1
+            row+_1
+data_[]
 data.append(('Suite', '40$'))
 data.append(('Super Luxury', '30$'))
 data.append(('Super Deluxe', '20$'))
 data.append(('Ordinary', '10$'))
 
                 
-__ __name____"__main__":    
-    app = ?A..(___.argv)
-    w = MyForm(data)
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    w _ MyForm(data)
     w.s..
     ___.e..(app.exec_())

@@ -7,7 +7,7 @@ ____ demoMDI _____ *
 c_ MyForm(QMainWindow
     ___  -
         s__. - ()
-        ui = Ui_MainWindow()
+        ui _ Ui_MainWindow()
         ui.setupUi
         ui.mdiArea.addSubWindow(ui.subwindow)
         ui.mdiArea.addSubWindow(ui.subwindow_2)
@@ -30,9 +30,9 @@ c_ MyForm(QMainWindow
     ___ tileArrange
         ui.mdiArea.tileSubWindows()
 
-__ __name____"__main__":
-    app = ?A..(___.argv)
-    w = MyForm()
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    w _ MyForm()
     w.s..
     ___.e..(app.exec_())
 

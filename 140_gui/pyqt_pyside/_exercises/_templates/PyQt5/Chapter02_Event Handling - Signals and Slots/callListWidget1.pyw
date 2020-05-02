@@ -7,7 +7,7 @@ ____ demoListWidget1 _____ *
 c_ MyForm(?D..
     ___  -  
         s__. - ()
-        ui = Ui_Dialog()
+        ui _ Ui_Dialog()
         ui.setupUi
         ui.listWidgetDiagnosis.itemClicked.c..(dispSelectedTest)
         s..
@@ -15,8 +15,8 @@ c_ MyForm(?D..
     ___ dispSelectedTest 
         ui.labelTest.sT..("You have selected "+ui.listWidgetDiagnosis.currentItem().text())
          
-__ __name____"__main__":    
-    app = ?A..(___.argv)
-    w = MyForm()
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    w _ MyForm()
     w.s..
     ___.e..(app.exec_())

@@ -9,30 +9,30 @@ ____ demoProgressBarThread _____ *
 c_ MyForm(?D..
     ___  -  
         s__. - ()
-        ui = Ui_Dialog()
+        ui _ Ui_Dialog()
         ui.setupUi
         s..
        
 c_ myThread (threading.Thread
-   counter=0
+   counter_0
    ___  -  , w
       threading.Thread. - 
-      w=w
-      counter=0
+      w_w
+      counter_0
       
    ___ run 
       print ("Starting " + name)
-      while counter <=100:
+      while counter <_100:
           time.sleep(1)
           w.ui.progressBar.setValue(counter)
-          counter+=10
+          counter+_10
       print ("Exiting " + name)
 
       
-__ __name____"__main__":    
-    app = ?A..(___.argv)
-    w = MyForm()
-    thread1 = myThread(w)
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    w _ MyForm()
+    thread1 _ myThread(w)
     thread1.start()
     w.exec()
     ___.e..(app.exec_())

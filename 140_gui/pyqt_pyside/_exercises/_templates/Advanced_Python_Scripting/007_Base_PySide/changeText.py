@@ -6,10 +6,10 @@ ____ PySide.QtGui _____ *
 c_ SimpleWindowClass(?W..
     ___  -  
         super(SimpleWindowClass, self). - ()
-        layout = QVBoxLayout
-        label = QLabel('Text')
+        layout _ QVBoxLayout
+        label _ QLabel('Text')
         layout.addWidget(label)
-        button = ?PB..('Press')
+        button _ ?PB..('Press')
         layout.addWidget(button)
         button.clicked.c..(action)
 
@@ -20,7 +20,7 @@ c_ SimpleWindowClass(?W..
 
 
 __ __name__ __ '__main__':
-    app = ?A..([])
-    w = SimpleWindowClass()
+    app _ ?A..([])
+    w _ SimpleWindowClass()
     w.s..
     app.exec_()

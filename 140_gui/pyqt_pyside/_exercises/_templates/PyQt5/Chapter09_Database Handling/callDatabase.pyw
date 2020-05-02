@@ -7,22 +7,22 @@ ____ demoDatabase _____ *
 c_ MyForm(?D..
     ___  -  
         s__. - ()
-        ui = Ui_Dialog()
+        ui _ Ui_Dialog()
         ui.setupUi
         ui.pushButtonCreateDB.clicked.c..(createDatabase)
         s..
 
     ___ createDatabase 
         try:
-            conn = sqlite3.c..(ui.lineEditDBName.text()+".db")
+            conn _ sqlite3.c..(ui.lineEditDBName.text()+".db")
             ui.labelResponse.sT..("Database is created")
         except Error as e:
             ui.labelResponse.sT..("Some error has occurred")
         finally:
             conn.close()
 
-__ __name____"__main__":    
-    app = ?A..(___.argv)
-    w = MyForm()
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    w _ MyForm()
     w.s..
     ___.e..(app.exec_())

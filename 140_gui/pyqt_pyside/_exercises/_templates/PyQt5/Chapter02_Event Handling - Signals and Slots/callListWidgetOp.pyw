@@ -7,7 +7,7 @@ ____ demoListWidgetOp _____ *
 c_ MyForm(?D..
     ___  -  
         s__. - ()
-        ui = Ui_Dialog()
+        ui _ Ui_Dialog()
         ui.setupUi
         ui.listWidget.addItem('Ice Cream')
         ui.listWidget.addItem('Soda')
@@ -25,9 +25,9 @@ c_ MyForm(?D..
         ui.lineEdit.setFocus()
         
     ___ editlist 
-        row=ui.listWidget.currentRow()
-        newtext, ok=QInputDialog.getText , "Enter new text", "Enter new text")
-        __ ok and (len(newtext) !=0
+        row_ui.listWidget.currentRow()
+        newtext, ok_QInputDialog.getText , "Enter new text", "Enter new text")
+        __ ok and (len(newtext) !_0
             ui.listWidget.takeItem(ui.listWidget.currentRow())
             ui.listWidget.insertItem(row,QListWidgetItem(newtext))
         
@@ -38,8 +38,8 @@ c_ MyForm(?D..
         ui.listWidget.clear()
 
         
-__ __name____"__main__":    
-    app = ?A..(___.argv)
-    w = MyForm()
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    w _ MyForm()
     w.s..
     ___.e..(app.exec_())

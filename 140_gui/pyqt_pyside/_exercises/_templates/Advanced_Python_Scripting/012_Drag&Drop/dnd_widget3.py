@@ -11,7 +11,7 @@ c_ listWidgetClass(QListWidget
 
     ___ dropEvent , event
         # print 'DROP', type(event)
-        mimedata = event.mimeData()
+        mimedata _ event.mimeData()
         __ mimedata.hasUrls(
             for f in mimedata.urls(
                 print f.toLocalFile()
@@ -25,7 +25,7 @@ c_ listWidgetClass(QListWidget
         pass
 
 __ __name__ __ '__main__':
-    app = ?A..([])
-    w = listWidgetClass()
+    app _ ?A..([])
+    w _ listWidgetClass()
     w.s..
     app.exec_()

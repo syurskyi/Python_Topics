@@ -5,23 +5,23 @@ c_ MainWindow(QtGui.QMainWindow
     ___  -  
         super(MainWindow, self). - ()
 
-        widget = QtGui.?W..()
+        widget _ QtGui.?W..()
         setCentralWidget(widget)
 
-        topFiller = QtGui.?W..()
+        topFiller _ QtGui.?W..()
         topFiller.setSizePolicy(QtGui.QSizePolicy.Expanding,
                 QtGui.QSizePolicy.Expanding)
 
-        infoLabel = QtGui.QLabel(
+        infoLabel _ QtGui.QLabel(
                 "<i>Choose a menu option, or right-click to invoke a context menu</i>",
-                alignment=?C...Qt.AlignCenter)
+                alignment_?C...Qt.AlignCenter)
         infoLabel.setFrameStyle(QtGui.QFrame.StyledPanel | QtGui.QFrame.Sunken)
 
-        bottomFiller = QtGui.?W..()
+        bottomFiller _ QtGui.?W..()
         bottomFiller.setSizePolicy(QtGui.QSizePolicy.Expanding,
                 QtGui.QSizePolicy.Expanding)
 
-        vbox = QtGui.QVBoxLayout()
+        vbox _ QtGui.QVBoxLayout()
         vbox.setContentsMargins(5, 5, 5, 5)
         vbox.addWidget(topFiller)
         vbox.addWidget(infoLabel)
@@ -31,7 +31,7 @@ c_ MainWindow(QtGui.QMainWindow
         createActions()
         createMenus()
 
-        message = "A context menu is available by right-clicking"
+        message _ "A context menu is available by right-clicking"
         statusBar().showMessage(message)
 
         setWindowTitle("Menus")
@@ -39,7 +39,7 @@ c_ MainWindow(QtGui.QMainWindow
         resize(480,320)
 
     ___ contextMenuEvent , event
-        menu = QtGui.QMenu
+        menu _ QtGui.QMenu
         menu.addAction(cutAct)
         menu.addAction(copyAct)
         menu.addAction(pasteAct)
@@ -106,100 +106,100 @@ c_ MainWindow(QtGui.QMainWindow
         infoLabel.sT..("Invoked <b>Help|About Qt</b>")
 
     ___ createActions 
-        newAct = QtGui.QAction("&New", self,
-                shortcut=QtGui.QKeySequence.New,
-                statusTip="Create a new file", triggered=newFile)
+        newAct _ QtGui.QAction("&New", self,
+                shortcut_QtGui.QKeySequence.New,
+                statusTip_"Create a new file", triggered_newFile)
 
-        openAct = QtGui.QAction("&Open...", self,
-                shortcut=QtGui.QKeySequence.Open,
-                statusTip="Open an existing file", triggered=open)
+        openAct _ QtGui.QAction("&Open...", self,
+                shortcut_QtGui.QKeySequence.Open,
+                statusTip_"Open an existing file", triggered_open)
 
-        saveAct = QtGui.QAction("&Save", self,
-                shortcut=QtGui.QKeySequence.Save,
-                statusTip="Save the document to disk", triggered=save)
+        saveAct _ QtGui.QAction("&Save", self,
+                shortcut_QtGui.QKeySequence.Save,
+                statusTip_"Save the document to disk", triggered_save)
 
-        printAct = QtGui.QAction("&Print...", self,
-                shortcut=QtGui.QKeySequence.Print,
-                statusTip="Print the document", triggered=print_)
+        printAct _ QtGui.QAction("&Print...", self,
+                shortcut_QtGui.QKeySequence.Print,
+                statusTip_"Print the document", triggered_print_)
 
-        exitAct = QtGui.QAction("E&xit", self, shortcut="Ctrl+Q",
-                statusTip="Exit the application", triggered=close)
+        exitAct _ QtGui.QAction("E&xit", self, shortcut_"Ctrl+Q",
+                statusTip_"Exit the application", triggered_close)
 
-        undoAct = QtGui.QAction("&Undo", self,
-                shortcut=QtGui.QKeySequence.Undo,
-                statusTip="Undo the last operation", triggered=undo)
+        undoAct _ QtGui.QAction("&Undo", self,
+                shortcut_QtGui.QKeySequence.Undo,
+                statusTip_"Undo the last operation", triggered_undo)
 
-        redoAct = QtGui.QAction("&Redo", self,
-                shortcut=QtGui.QKeySequence.Redo,
-                statusTip="Redo the last operation", triggered=redo)
+        redoAct _ QtGui.QAction("&Redo", self,
+                shortcut_QtGui.QKeySequence.Redo,
+                statusTip_"Redo the last operation", triggered_redo)
 
-        cutAct = QtGui.QAction("Cu&t", self,
-                shortcut=QtGui.QKeySequence.Cut,
-                statusTip="Cut the current selection's contents to the clipboard",
-                triggered=cut)
+        cutAct _ QtGui.QAction("Cu&t", self,
+                shortcut_QtGui.QKeySequence.Cut,
+                statusTip_"Cut the current selection's contents to the clipboard",
+                triggered_cut)
 
-        copyAct = QtGui.QAction("&Copy", self,
-                shortcut=QtGui.QKeySequence.Copy,
-                statusTip="Copy the current selection's contents to the clipboard",
-                triggered=copy)
+        copyAct _ QtGui.QAction("&Copy", self,
+                shortcut_QtGui.QKeySequence.Copy,
+                statusTip_"Copy the current selection's contents to the clipboard",
+                triggered_copy)
 
-        pasteAct = QtGui.QAction("&Paste", self,
-                shortcut=QtGui.QKeySequence.Paste,
-                statusTip="Paste the clipboard's contents into the current selection",
-                triggered=paste)
+        pasteAct _ QtGui.QAction("&Paste", self,
+                shortcut_QtGui.QKeySequence.Paste,
+                statusTip_"Paste the clipboard's contents into the current selection",
+                triggered_paste)
 
-        boldAct = QtGui.QAction("&Bold", self, checkable=T..,
-                shortcut="Ctrl+B", statusTip="Make the text bold",
-                triggered=bold)
+        boldAct _ QtGui.QAction("&Bold", self, checkable_T..,
+                shortcut_"Ctrl+B", statusTip_"Make the text bold",
+                triggered_bold)
 
-        boldFont = boldAct.font()
+        boldFont _ boldAct.font()
         boldFont.setBold(T..)
         boldAct.setFont(boldFont)
 
-        italicAct = QtGui.QAction("&Italic", self, checkable=T..,
-                shortcut="Ctrl+I", statusTip="Make the text italic",
-                triggered=italic)
+        italicAct _ QtGui.QAction("&Italic", self, checkable_T..,
+                shortcut_"Ctrl+I", statusTip_"Make the text italic",
+                triggered_italic)
 
-        italicFont = italicAct.font()
+        italicFont _ italicAct.font()
         italicFont.setItalic(T..)
         italicAct.setFont(italicFont)
 
-        setLineSpacingAct = QtGui.QAction("Set &Line Spacing...", self,
-                statusTip="Change the gap between the lines of a paragraph",
-                triggered=setLineSpacing)
+        setLineSpacingAct _ QtGui.QAction("Set &Line Spacing...", self,
+                statusTip_"Change the gap between the lines of a paragraph",
+                triggered_setLineSpacing)
 
-        setParagraphSpacingAct = QtGui.QAction(
+        setParagraphSpacingAct _ QtGui.QAction(
                 "Set &Paragraph Spacing...", self,
-                statusTip="Change the gap between paragraphs",
-                triggered=setParagraphSpacing)
+                statusTip_"Change the gap between paragraphs",
+                triggered_setParagraphSpacing)
 
-        aboutAct = QtGui.QAction("&About", self,
-                statusTip="Show the application's About box",
-                triggered=about)
+        aboutAct _ QtGui.QAction("&About", self,
+                statusTip_"Show the application's About box",
+                triggered_about)
 
-        aboutQtAct = QtGui.QAction("About &Qt", self,
-                statusTip="Show the Qt library's About box",
-                triggered=aboutQt)
+        aboutQtAct _ QtGui.QAction("About &Qt", self,
+                statusTip_"Show the Qt library's About box",
+                triggered_aboutQt)
         aboutQtAct.triggered.c..(QtGui.qApp.aboutQt)
 
-        leftAlignAct = QtGui.QAction("&Left Align", self, checkable=T..,
-                shortcut="Ctrl+L", statusTip="Left align the selected text",
-                triggered=leftAlign)
+        leftAlignAct _ QtGui.QAction("&Left Align", self, checkable_T..,
+                shortcut_"Ctrl+L", statusTip_"Left align the selected text",
+                triggered_leftAlign)
 
-        rightAlignAct = QtGui.QAction("&Right Align", self,
-                checkable=T.., shortcut="Ctrl+R",
-                statusTip="Right align the selected text",
-                triggered=rightAlign)
+        rightAlignAct _ QtGui.QAction("&Right Align", self,
+                checkable_T.., shortcut_"Ctrl+R",
+                statusTip_"Right align the selected text",
+                triggered_rightAlign)
 
-        justifyAct = QtGui.QAction("&Justify", self, checkable=T..,
-                shortcut="Ctrl+J", statusTip="Justify the selected text",
-                triggered=justify)
+        justifyAct _ QtGui.QAction("&Justify", self, checkable_T..,
+                shortcut_"Ctrl+J", statusTip_"Justify the selected text",
+                triggered_justify)
 
-        centerAct = QtGui.QAction("&Center", self, checkable=T..,
-                shortcut="Ctrl+C", statusTip="Center the selected text",
-                triggered=center)
+        centerAct _ QtGui.QAction("&Center", self, checkable_T..,
+                shortcut_"Ctrl+C", statusTip_"Center the selected text",
+                triggered_center)
 
-        alignmentGroup = QtGui.QActionGroup
+        alignmentGroup _ QtGui.QActionGroup
         alignmentGroup.addAction(leftAlignAct)
         alignmentGroup.addAction(rightAlignAct)
         alignmentGroup.addAction(justifyAct)
@@ -207,7 +207,7 @@ c_ MainWindow(QtGui.QMainWindow
         leftAlignAct.setChecked(T..)
 
     ___ createMenus 
-        fileMenu = menuBar().addMenu("&File")
+        fileMenu _ menuBar().addMenu("&File")
         fileMenu.addAction(newAct)
         fileMenu.addAction(openAct)
         fileMenu.addAction(saveAct)
@@ -215,7 +215,7 @@ c_ MainWindow(QtGui.QMainWindow
         fileMenu.addSeparator()
         fileMenu.addAction(exitAct)
 
-        editMenu = menuBar().addMenu("&Edit")
+        editMenu _ menuBar().addMenu("&Edit")
         editMenu.addAction(undoAct)
         editMenu.addAction(redoAct)
         editMenu.addSeparator()
@@ -224,11 +224,11 @@ c_ MainWindow(QtGui.QMainWindow
         editMenu.addAction(pasteAct)
         editMenu.addSeparator()
 
-        helpMenu = menuBar().addMenu("&Help")
+        helpMenu _ menuBar().addMenu("&Help")
         helpMenu.addAction(aboutAct)
         helpMenu.addAction(aboutQtAct)
 
-        formatMenu = editMenu.addMenu("&Format")
+        formatMenu _ editMenu.addMenu("&Format")
         formatMenu.addAction(boldAct)
         formatMenu.addAction(italicAct)
         formatMenu.addSeparator().sT..("Alignment")
@@ -245,7 +245,7 @@ __ __name__ __ '__main__':
 
     _____ ___
 
-    app = QtGui.?A..(___.argv)
-    window = MainWindow()
+    app _ QtGui.?A..(___.argv)
+    window _ MainWindow()
     window.s..
 ___.e..(app.exec_())

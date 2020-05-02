@@ -4,18 +4,18 @@ ____ PySide.QtGui _____ *
 c_ dialogClass(?D..
     ___  -
         super(dialogClass, self). - ()
-        ly = QVBoxLayout
-        label = QLineEdit()
+        ly _ QVBoxLayout
+        label _ QLineEdit()
         ly.addWidget(label)
 
-        ok_btn = ?PB..('OK')
+        ok_btn _ ?PB..('OK')
         ly.addWidget(ok_btn)
 
-        cancel_btn = ?PB..('Cancel')
+        cancel_btn _ ?PB..('Cancel')
         ly.addWidget(cancel_btn)
 
         ok_btn.clicked.c..(accept)
         cancel_btn.clicked.c..(reject)
 
     ___ getData
-        return dict(text=label.text())
+        return dict(text_label.text())

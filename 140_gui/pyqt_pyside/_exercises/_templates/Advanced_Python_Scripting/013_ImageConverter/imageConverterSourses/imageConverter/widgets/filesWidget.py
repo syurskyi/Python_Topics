@@ -2,7 +2,7 @@ ____ PySide.?C.. _____ *
 ____ PySide.QtGui _____ *
 _____ os
 
-icon = os.path.join(os.path.dirname(__file__), 'drag.png')
+icon _ os.path.join(os.path.dirname(__file__), 'drag.png')
 
 
 c_ listWidgetClass(QListWidget
@@ -11,10 +11,10 @@ c_ listWidgetClass(QListWidget
         setWindowFlags(Qt.WindowStaysOnTopHint)
         setDragDropMode(QAbstractItemView.DropOnly)
         setSelectionMode(QAbstractItemView.ExtendedSelection)
-        files = []
+        files _ []
 
     ___ dropEvent , event
-        mimedata = event.mimeData()
+        mimedata _ event.mimeData()
         __ mimedata.hasUrls(
             for f in mimedata.urls(
                 addFile(f.toLocalFile())
@@ -23,7 +23,7 @@ c_ listWidgetClass(QListWidget
         __ event.source() is self:
             event.ignore()
         else:
-            mimedata = event.mimeData()
+            mimedata _ event.mimeData()
             __ mimedata.hasUrls(
                 event.accept()
             else:
@@ -33,7 +33,7 @@ c_ listWidgetClass(QListWidget
         __ event.source() is self:
             event.ignore()
         else:
-            mimedata = event.mimeData()
+            mimedata _ event.mimeData()
             __ mimedata.hasUrls(
                 event.accept()
             else:
@@ -41,7 +41,7 @@ c_ listWidgetClass(QListWidget
 
     ___ addFile , path
         __ not path in files:
-            item = QListWidgetItem
+            item _ QListWidgetItem
             item.sT..(os.path.basename(path))
             item.setData(Qt.UserRole, path)
             files.append(path)

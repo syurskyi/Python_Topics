@@ -1,7 +1,7 @@
 c_ phone(object
 	___  -
-		model = ''
-		color = 'red'
+		model _ ''
+		color _ 'red'
 	
 	___ call
 		print('Call')
@@ -20,4 +20,4 @@ c_ phone2(phone
 		else:
 			super(phone2, self).call()
 
-p = phone2
+p _ phone2

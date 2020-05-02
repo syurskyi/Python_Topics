@@ -1,34 +1,34 @@
 _____ os
 
-path = 'C:/Users/Sergej/Dropbox/nuke/.nuke/example/PYTHON_EXAMPLE/Python_Example_All_Tutorials/VIDEO/Advanced_Python_Scripting/004_Text data formats/'
+path _ 'C:/Users/Sergej/Dropbox/nuke/.nuke/example/PYTHON_EXAMPLE/Python_Example_All_Tutorials/VIDEO/Advanced_Python_Scripting/004_Text data formats/'
 # /Users/sergejyurskyj/.nuke/example/PYTHON_EXAMPLE/Python_Example_All_Tutorials/VIDEO/Advanced\ Python\ Scripting/004_Text\ data\ formats/
-fileName = 'settings.txt'
+fileName _ 'settings.txt'
 
 c_ settingClass(object
 	___  -  
-		fullPath = os.path.join(path, fileName)
+		fullPath _ os.path.join(path, fileName)
 		__ not os.path.exists(fullPath
 			open(fullPath, 'w').close()
 
 	___ __readFile 
-		f = open(fullPath)
-		text = f.readlines()
+		f _ open(fullPath)
+		text _ f.readlines()
 		f.close()
 		# data = {}
 		for line in text:
-			key, value = line.strip().split("=")
+			key, value _ line.strip().split("=")
 			# data[key] = value
 			print(key, value)
 		# return data
 
 	___ __writeFile , data
-		f = open(fullPath, 'w')
+		f _ open(fullPath, 'w')
 		for k, v in data.items(
 			f.write('%s=%s\n' % (k, v))
 		f.close()
 
 	___ readSetting 
-		data = __readFile()
+		data _ __readFile()
 		return data
 
 
@@ -43,7 +43,7 @@ c_ settingClass(object
 	___ writeValue , key, value
 		pass
 
-s = settingClass()
+s _ settingClass()
 # d = {'key1':1, 'key2':2}
 # s.writeSetting(d)
 s.readSetting()

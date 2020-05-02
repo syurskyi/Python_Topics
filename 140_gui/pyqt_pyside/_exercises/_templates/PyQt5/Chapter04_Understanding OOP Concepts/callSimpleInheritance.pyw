@@ -5,12 +5,12 @@ ____ ?.?W.. _____ ?D.., ?A..
 ____ demoSimpleInheritance _____ *
 
 c_ Student:
-    name = ""
-    code = ""
+    name _ ""
+    code _ ""
  
     ___  -  , code, name
-        code = code
-        name = name
+        code _ code
+        name _ name
 
     ___ getCode 
         return code
@@ -20,13 +20,13 @@ c_ Student:
 
 
 c_ Marks(Student
-    historyMarks = 0
-    geographyMarks = 0
+    historyMarks _ 0
+    geographyMarks _ 0
  
     ___  -  ,  code, name, historyMarks, geographyMarks
         Student. -  ,code,name)
-        historyMarks = historyMarks
-        geographyMarks = geographyMarks
+        historyMarks _ historyMarks
+        geographyMarks _ geographyMarks
         
     ___ getHistoryMarks 
         return historyMarks
@@ -38,17 +38,17 @@ c_ Marks(Student
 c_ MyForm(?D..
     ___  -  
         s__. - ()
-        ui = Ui_Dialog()
+        ui _ Ui_Dialog()
         ui.setupUi
         ui.ButtonClickMe.clicked.c..(dispmessage)
         s..
 
     ___ dispmessage 
-        marksObj=Marks(ui.lineEditCode.text(), ui.lineEditName.text(), ui.lineEditHistoryMarks.text(), ui.lineEditGeographyMarks.text())  
+        marksObj_Marks(ui.lineEditCode.text(), ui.lineEditName.text(), ui.lineEditHistoryMarks.text(), ui.lineEditGeographyMarks.text())
         ui.labelResponse.sT..("Code: "+marksObj.getCode()+", Name:"+marksObj.getName()+"\nHistory Marks:"+marksObj.getHistoryMarks()+", Geography Marks:"+marksObj.getGeographyMarks())
 
-__ __name____"__main__":    
-    app = ?A..(___.argv)
-    w = MyForm()
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    w _ MyForm()
     w.s..
     ___.e..(app.exec_())

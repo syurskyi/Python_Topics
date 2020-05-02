@@ -5,12 +5,12 @@ ____ ?.?W.. _____ ?D.., ?A..
 ____ demoStudentClass _____ *
 
 c_ Student:
-    name = ""
-    code = ""
+    name _ ""
+    code _ ""
  
     ___  -  , code, name
-        code = code
-        name = name
+        code _ code
+        name _ name
 
     ___ getCode 
         return code
@@ -21,17 +21,17 @@ c_ Student:
 c_ MyForm(?D..
     ___  -  
         s__. - ()
-        ui = Ui_Dialog()
+        ui _ Ui_Dialog()
         ui.setupUi
         ui.ButtonClickMe.clicked.c..(dispmessage)
         s..
 
     ___ dispmessage 
-        studentObj=Student(ui.lineEditCode.text(), ui.lineEditName.text())  
+        studentObj_Student(ui.lineEditCode.text(), ui.lineEditName.text())  
         ui.labelResponse.sT..("Code: "+studentObj.getCode()+", Name:"+studentObj.getName())
 
-__ __name____"__main__":    
-    app = ?A..(___.argv)
-    w = MyForm()
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    w _ MyForm()
     w.s..
     ___.e..(app.exec_())

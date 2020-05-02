@@ -7,19 +7,19 @@ ____ demoProgressBar _____ *
 c_ MyForm(?D..
     ___  -  
         s__. - ()
-        ui = Ui_Dialog()
+        ui _ Ui_Dialog()
         ui.setupUi
         ui.pushButtonStart.clicked.c..(updateBar)
         s..
 
     ___ updateBar 
-        x = 0
+        x _ 0
         while x < 100:
-            x += 0.0001
+            x +_ 0.0001
             ui.progressBar.setValue(x)
 
-__ __name____"__main__":    
-    app = ?A..(___.argv)
-    w = MyForm()
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    w _ MyForm()
     w.s..
     ___.e..(app.exec_())

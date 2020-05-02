@@ -6,40 +6,40 @@ c_ splineRampWidget(?W..
         super(splineRampWidget, self). - ()
         resize(300, 200)
 
-        lineWidth = 3
-        pointSize = 10
+        lineWidth _ 3
+        pointSize _ 10
 
-        point1 = QPointF(0, 0)
-        point2 = QPointF(300, 200)
+        point1 _ QPointF(0, 0)
+        point2 _ QPointF(300, 200)
 
-        factor1 = 0.0
-        factor2 = 1.0
+        factor1 _ 0.0
+        factor2 _ 1.0
 
-        dragged = None
+        dragged _ None
 
-        region1 = QRect()
-        region2 = QRect()
-        regionSize = 40
+        region1 _ QRect()
+        region2 _ QRect()
+        regionSize _ 40
         updateRegions()
 
     ___ updateRegions
-        region1 = QRect(0, 0, regionSize, regionSize)
+        region1 _ QRect(0, 0, regionSize, regionSize)
         region1.moveCenter(point1.toPoint())
 
-        region2 = QRect(0, 0, regionSize, regionSize)
+        region2 _ QRect(0, 0, regionSize, regionSize)
         region2.moveCenter(point2.toPoint())
 
-        factor1 = point1.y() / float(size().height())
-        factor2 = point2.y() / float(size().height())
+        factor1 _ point1.y() / float(size().height())
+        factor2 _ point2.y() / float(size().height())
         print factor1, factor2
 
     ___ paintEvent , event
-        rec = event.rect()
-        painter = QPainter()
+        rec _ event.rect()
+        painter _ QPainter()
         painter.begin
         painter.setRenderHint(QPainter.Antialiasing)
         painter.fillRect(event.rect(), Qt.black)
-        path = QPainterPath()
+        path _ QPainterPath()
         path.moveTo(point1)
         path.cubicTo(rec.width()/2, point1.y(),
                      rec.width()/2, point2.y(),
@@ -60,22 +60,22 @@ c_ splineRampWidget(?W..
     ___ mousePressEvent , event
         # print self.region1.contains(event.pos())
         __ region1.contains(event.pos()):
-            dragged = point1
+            dragged _ point1
         elif region2.contains(event.pos()):
-            dragged = point2
+            dragged _ point2
         super(splineRampWidget, self).mousePressEvent(event)
 
     ___ mouseMoveEvent , event
         # print self.dragged
         __ not dragged is None:
-            y = event.pos().y()
-            s = size()
+            y _ event.pos().y()
+            s _ size()
             dragged.setY(min(max(y, 1), s.height()))
             update()
         super(splineRampWidget, self).mouseMoveEvent(event)
 
     ___ mouseReleaseEvent , event
-        dragged = None
+        dragged _ None
         updateRegions()
         update()
         super(splineRampWidget, self).mouseReleaseEvent(event)
@@ -90,7 +90,7 @@ c_ splineRampWidget(?W..
         super(splineRampWidget, self).resizeEvent(event)
 
 __ __name__ __ '__main__':
-    app = ?A..([])
-    w = splineRampWidget()
+    app _ ?A..([])
+    w _ splineRampWidget()
     w.s..
     app.exec_()

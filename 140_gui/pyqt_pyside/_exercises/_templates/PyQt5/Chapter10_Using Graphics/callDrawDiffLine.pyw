@@ -9,18 +9,18 @@ ____ demoDrawDiffLine _____ *
 c_ MyForm(?D..
     ___  -
         s__. - ()
-        ui = Ui_Dialog()
+        ui _ Ui_Dialog()
         ui.setupUi
-        lineType="SolidLine"
-        pos1 = [0,0]
-        pos2 = [0,0]
+        lineType_"SolidLine"
+        pos1 _ [0,0]
+        pos2 _ [0,0]
         s..
 
     ___ paintEvent , event
-        qp = QPainter()
+        qp _ QPainter()
         qp.begin
-        pen = QPen(Qt.black, 4)
-        lineTypeFormat="Qt."+lineType
+        pen _ QPen(Qt.black, 4)
+        lineTypeFormat_"Qt."+lineType
         __ lineTypeFormat __ "Qt.SolidLine":
             pen.setStyle(Qt.SolidLine)
         elif lineTypeFormat __ "Qt.DashLine":
@@ -37,15 +37,15 @@ c_ MyForm(?D..
         
     ___ mousePressEvent , event
         __ event.buttons() & ?C...Qt.LeftButton:
-            pos1[0], pos1[1] = event.pos().x(), event.pos().y()
+            pos1[0], pos1[1] _ event.pos().x(), event.pos().y()
                         
     ___ mouseReleaseEvent , event
-        lineType=ui.listWidgetLineType.currentItem().text()
-        pos2[0], pos2[1] = event.pos().x(), event.pos().y()
+        lineType_ui.listWidgetLineType.currentItem().text()
+        pos2[0], pos2[1] _ event.pos().x(), event.pos().y()
         update()
                   
-__ __name____"__main__":
-    app = ?A..(___.argv)
-    w = MyForm()
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    w _ MyForm()
     w.s..
     ___.e..(app.exec_())

@@ -4,16 +4,16 @@ ____ sqlite3 _____ Error
 
 ____ demoShowRecords _____ *
 
-rowNo=1
-sqlStatement="SELECT EmailAddress, Password FROM Users"
-conn = sqlite3.c..("ECommerce.db")
-cur = conn.cursor()  
+rowNo_1
+sqlStatement_"SELECT EmailAddress, Password FROM Users"
+conn _ sqlite3.c..("ECommerce.db")
+cur _ conn.cursor()
 
 c_ MyForm(?D..
 
     ___  -
         s__. - ()
-        ui = Ui_Dialog()
+        ui _ Ui_Dialog()
         ui.setupUi
         cur.execute(sqlStatement)
         ui.pushButtonFirst.clicked.c..(ShowFirstRow)
@@ -25,7 +25,7 @@ c_ MyForm(?D..
     ___ ShowFirstRow
         try: 
             cur.execute(sqlStatement)
-            row=cur.fetchone()
+            row_cur.fetchone()
             __ row:
                 ui.lineEditEmailAddress.sT..(row[0])
                 ui.lineEditPassword.sT..(row[1])
@@ -35,31 +35,31 @@ c_ MyForm(?D..
 
     ___ ShowPreviousRow
         global rowNo
-        rowNo -= 1
-        sqlStatement="SELECT EmailAddress, Password FROM Users where rowid="+st.(rowNo)
+        rowNo -_ 1
+        sqlStatement_"SELECT EmailAddress, Password FROM Users where rowid="+st.(rowNo)
         cur.execute(sqlStatement)
-        row=cur.fetchone()
+        row_cur.fetchone()
         __ row:
             ui.labelResponse.sT..("")
             ui.lineEditEmailAddress.sT..(row[0])
             ui.lineEditPassword.sT..(row[1])
         else:
-            rowNo += 1
+            rowNo +_ 1
             ui.labelResponse.sT..("This is the first row")
        
             
     ___ ShowNextRow
         global rowNo
-        rowNo += 1
-        sqlStatement="SELECT EmailAddress, Password FROM Users where rowid="+st.(rowNo)
+        rowNo +_ 1
+        sqlStatement_"SELECT EmailAddress, Password FROM Users where rowid="+st.(rowNo)
         cur.execute(sqlStatement)
-        row=cur.fetchone()
+        row_cur.fetchone()
         __ row:
             ui.labelResponse.sT..("")
             ui.lineEditEmailAddress.sT..(row[0])
             ui.lineEditPassword.sT..(row[1])
         else:
-            rowNo -= 1
+            rowNo -_ 1
             ui.labelResponse.sT..("This is the last row")
 
     ___ ShowLastRow
@@ -69,8 +69,8 @@ c_ MyForm(?D..
             ui.lineEditPassword.sT..(row[1])
 
         
-__ __name____"__main__":    
-    app = ?A..(___.argv)
-    w = MyForm()
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    w _ MyForm()
     w.s..
     ___.e..(app.exec_())

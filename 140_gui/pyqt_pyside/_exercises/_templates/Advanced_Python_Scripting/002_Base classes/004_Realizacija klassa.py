@@ -1,20 +1,20 @@
 c_ Phone(object
     ___  -  
-        number = 1234567
+        number _ 1234567
 
     ___ call 
         print('call'), number
 
-p = Phone()
+p _ Phone()
 p.call()
 
 c_ Phone(object
     ___  -  
-        model = ''
-        color = 'red'
+        model _ ''
+        color _ 'red'
 
     ___ call 
         print('call')
 
-p = Phone()
+p _ Phone()
 p.call()

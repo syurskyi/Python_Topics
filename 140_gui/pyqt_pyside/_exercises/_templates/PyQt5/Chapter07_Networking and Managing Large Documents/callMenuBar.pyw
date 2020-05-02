@@ -7,11 +7,11 @@ ____ demoMenuBar _____ *
 c_ AppWindow(QMainWindow
     ___  -  
         s__. - ()
-        ui = Ui_MainWindow()
+        ui _ Ui_MainWindow()
         ui.setupUi
-        pos1 = [0,0]
-        pos2 = [0,0]
-        toDraw=""
+        pos1 _ [0,0]
+        pos2 _ [0,0]
+        toDraw_""
         ui.actionDraw_Circle.triggered.c..(drawCircle)
         ui.actionDraw_Rectangle.triggered.c..(drawRectangle)
         ui.actionDraw_Line.triggered.c..(drawLine)
@@ -23,42 +23,42 @@ c_ AppWindow(QMainWindow
         s..
 
     ___ paintEvent , event
-        qp = QPainter()
+        qp _ QPainter()
         qp.begin
         __ toDraw__"rectangle":
-            width = pos2[0]-pos1[0]
-            height = pos2[1] - pos1[1]     
+            width _ pos2[0]-pos1[0]
+            height _ pos2[1] - pos1[1]     
             qp.drawRect(pos1[0], pos1[1], width, height)
         __ toDraw__"line":
             qp.drawLine(pos1[0], pos1[1], pos2[0], pos2[1])
         __ toDraw__"circle":
-            width = pos2[0]-pos1[0]
-            height = pos2[1] - pos1[1]           
-            rect = ?C...QRect(pos1[0], pos1[1], width, height)
-            startAngle = 0
-            arcLength = 360 *16
+            width _ pos2[0]-pos1[0]
+            height _ pos2[1] - pos1[1]           
+            rect _ ?C...QRect(pos1[0], pos1[1], width, height)
+            startAngle _ 0
+            arcLength _ 360 *16
             qp.drawArc(rect, startAngle, arcLength)      
         qp.end()
         
     ___ mousePressEvent , event
         __ event.buttons() & ?C...Qt.LeftButton:
-            pos1[0], pos1[1] = event.pos().x(), event.pos().y()
+            pos1[0], pos1[1] _ event.pos().x(), event.pos().y()
                         
     ___ mouseReleaseEvent , event
-        pos2[0], pos2[1] = event.pos().x(), event.pos().y()    
+        pos2[0], pos2[1] _ event.pos().x(), event.pos().y()    
         update()
                
     ___ drawCircle 
         ui.label.sT..("")
-        toDraw="circle"
+        toDraw_"circle"
 
     ___ drawRectangle 
         ui.label.sT..("")
-        toDraw="rectangle"
+        toDraw_"rectangle"
 
     ___ drawLine 
         ui.label.sT..("")
-        toDraw="line"
+        toDraw_"line"
 
     ___ pageSetup 
         ui.label.sT..("Page Setup menu item is selected")
@@ -75,8 +75,8 @@ c_ AppWindow(QMainWindow
     ___ pasteMethod 
         ui.label.sT..("Paste menu item is selected")
 
-app = ?A..(___.argv)
-w = AppWindow()
+app _ ?A..(___.argv)
+w _ AppWindow()
 w.s..
 ___.e..(app.exec_())
 

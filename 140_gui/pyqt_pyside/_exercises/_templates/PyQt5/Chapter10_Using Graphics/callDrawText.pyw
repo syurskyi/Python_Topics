@@ -10,16 +10,16 @@ c_ MyForm(?D..
 
     ___  -
         s__. - ()
-        ui = Ui_Dialog()
+        ui _ Ui_Dialog()
         ui.setupUi
         ui.pushButtonDrawText.clicked.c..(dispText)
-        textToDraw=""
-        fontName="Courier New"
-        fontSize=5
+        textToDraw_""
+        fontName_"Courier New"
+        fontSize_5
         s..
 
     ___ paintEvent , event
-        qp = QPainter()
+        qp _ QPainter()
         qp.begin  
         qp.setPen(QColor(168, 34, 3))
         qp.setFont(QFont(fontName, fontSize))
@@ -27,13 +27,13 @@ c_ MyForm(?D..
         qp.end()  
 
     ___ dispText
-        fontName=ui.listWidgetFont.currentItem().text()
-        fontSize=int(ui.comboBoxFontSize.itemText(ui.comboBoxFontSize.currentIndex()))
-        textToDraw=ui.textEdit.toPlainText()
+        fontName_ui.listWidgetFont.currentItem().text()
+        fontSize_int(ui.comboBoxFontSize.itemText(ui.comboBoxFontSize.currentIndex()))
+        textToDraw_ui.textEdit.toPlainText()
         update()
 
-__ __name____"__main__":    
-    app = ?A..(___.argv)
-    w = MyForm()
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    w _ MyForm()
     w.s..
     ___.e..(app.exec_())

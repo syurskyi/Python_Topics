@@ -10,13 +10,13 @@
 ____ PyQt4 _____ ?C.., QtGui
 
 try:
-    _fromUtf8 = ?C...QString.fromUtf8
+    _fromUtf8 _ ?C...QString.fromUtf8
 except AttributeError:
     ___ _fromUtf8(s
         return s
 
 try:
-    _encoding = QtGui.?A...UnicodeUTF8
+    _encoding _ QtGui.?A...UnicodeUTF8
     ___ _translate(context, text, disambig
         return QtGui.?A...translate(context, text, disambig, _encoding)
 except AttributeError:
@@ -27,37 +27,37 @@ c_ Ui_imageConverter(object
     ___ setupUi , imageConverter
         imageConverter.setObjectName(_fromUtf8("imageConverter"))
         imageConverter.resize(339, 379)
-        centralwidget = QtGui.?W..(imageConverter)
+        centralwidget _ QtGui.?W..(imageConverter)
         centralwidget.setObjectName(_fromUtf8("centralwidget"))
-        verticalLayout = QtGui.QVBoxLayout(centralwidget)
+        verticalLayout _ QtGui.QVBoxLayout(centralwidget)
         verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
-        horizontalLayout = QtGui.QHBoxLayout()
+        horizontalLayout _ QtGui.QHBoxLayout()
         horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
-        iconvert_lb = QtGui.QLabel(centralwidget)
+        iconvert_lb _ QtGui.QLabel(centralwidget)
         iconvert_lb.setObjectName(_fromUtf8("iconvert_lb"))
         horizontalLayout.addWidget(iconvert_lb)
-        browseIconvert_btn = QtGui.?PB..(centralwidget)
+        browseIconvert_btn _ QtGui.?PB..(centralwidget)
         browseIconvert_btn.setMaximumSize(?C...QSize(30, 16777215))
         browseIconvert_btn.setObjectName(_fromUtf8("browseIconvert_btn"))
         horizontalLayout.addWidget(browseIconvert_btn)
         verticalLayout.addLayout(horizontalLayout)
-        files_ly = QtGui.QVBoxLayout()
+        files_ly _ QtGui.QVBoxLayout()
         files_ly.setObjectName(_fromUtf8("files_ly"))
         verticalLayout.addLayout(files_ly)
-        horizontalLayout_2 = QtGui.QHBoxLayout()
+        horizontalLayout_2 _ QtGui.QHBoxLayout()
         horizontalLayout_2.setObjectName(_fromUtf8("horizontalLayout_2"))
-        out_le = QtGui.QLineEdit(centralwidget)
+        out_le _ QtGui.QLineEdit(centralwidget)
         out_le.setObjectName(_fromUtf8("out_le"))
         horizontalLayout_2.addWidget(out_le)
-        browseOut_btn = QtGui.?PB..(centralwidget)
+        browseOut_btn _ QtGui.?PB..(centralwidget)
         browseOut_btn.setMaximumSize(?C...QSize(30, 16777215))
         browseOut_btn.setObjectName(_fromUtf8("browseOut_btn"))
         horizontalLayout_2.addWidget(browseOut_btn)
         verticalLayout.addLayout(horizontalLayout_2)
-        start_btn = QtGui.?PB..(centralwidget)
+        start_btn _ QtGui.?PB..(centralwidget)
         start_btn.setObjectName(_fromUtf8("start_btn"))
         verticalLayout.addWidget(start_btn)
-        progressBar = QtGui.QProgressBar(centralwidget)
+        progressBar _ QtGui.QProgressBar(centralwidget)
         progressBar.setProperty("value", 0)
         progressBar.setObjectName(_fromUtf8("progressBar"))
         verticalLayout.addWidget(progressBar)

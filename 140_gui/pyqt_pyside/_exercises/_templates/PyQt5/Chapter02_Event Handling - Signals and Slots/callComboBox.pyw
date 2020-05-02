@@ -7,7 +7,7 @@ ____ demoComboBox _____ *
 c_ MyForm(?D..
     ___  -  
         s__. - ()
-        ui = Ui_Dialog()
+        ui _ Ui_Dialog()
         ui.setupUi
         ui.comboBoxAccountType.currentIndexChanged.c..(dispAccountType)
         s..
@@ -15,8 +15,8 @@ c_ MyForm(?D..
     ___ dispAccountType 
         ui.labelAccountType.sT..("You have selected "+ui.comboBoxAccountType.itemText(ui.comboBoxAccountType.currentIndex()))
 
-__ __name____"__main__":    
-    app = ?A..(___.argv)
-    w = MyForm()
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    w _ MyForm()
     w.s..
     ___.e..(app.exec_())

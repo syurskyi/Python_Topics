@@ -4,17 +4,17 @@ _____ json
 _____ os
 _____ colorsys
 
-path = os.path.expanduser("C:/Users/nuke/Dropbox/nuke/.nuke/PYTHON/NODEGRAPH/node_color_presets/nodeColorPresets.json")
-pathToNames = "C:/Users/nuke/Dropbox/nuke/.nuke/PYTHON/NODEGRAPH/node_color_presets/colorsYIQ.json"
-targetMenu = nuke.toolbar("Nodes")
+path _ os.path.expanduser("C:/Users/nuke/Dropbox/nuke/.nuke/PYTHON/NODEGRAPH/node_color_presets/nodeColorPresets.json")
+pathToNames _ "C:/Users/nuke/Dropbox/nuke/.nuke/PYTHON/NODEGRAPH/node_color_presets/colorsYIQ.json"
+targetMenu _ nuke.toolbar("Nodes")
 
 
 c_ ColorPresetPanel(nukescripts.PythonPanel
     ___  -  , colors
         nukescripts.PythonPanel. -  , 'Manage Color Presets')
-        list = []
+        list _ []
         for color in sorted(colors
-            knob_dict = {"name": nuke.String_Knob("name_%s" % color, '', color),
+            knob_dict _ {"name": nuke.String_Knob("name_%s" % color, '', color),
                         "value": nuke.ColorChip_Knob('value_%s' % color, ''),
                         "delete": nuke.Boolean_Knob("delete_%s" % color, 'delete')}
             knob_dict["value"].setValue(colors[color])
@@ -27,34 +27,34 @@ c_ ColorPresetPanel(nukescripts.PythonPanel
 
 
 ___ name_color(r, g, b
-    yiq = colorsys.rgb_to_yiq(r, g, b)
-    x, y, z = yiq[0], yiq[1], yiq[2]
-    vector_a = nuke.math.Vector3(x, y, z)
-    name = ''
-    min_dist = None
+    yiq _ colorsys.rgb_to_yiq(r, g, b)
+    x, y, z _ yiq[0], yiq[1], yiq[2]
+    vector_a _ nuke.math.Vector3(x, y, z)
+    name _ ''
+    min_dist _ None
     try:
-        file = open(pathToNames)
-        data = json.load(file)
+        file _ open(pathToNames)
+        data _ json.load(file)
         file.close()
     except:
         print "Error loading Color labels"
         return "Unknown Color"
 
     for color in data:
-        vector_b = nuke.math.Vector3(color['x'], color['y'], color['z'])
-        dist = vector_a.distanceBetween(vector_b)
+        vector_b _ nuke.math.Vector3(color['x'], color['y'], color['z'])
+        dist _ vector_a.distanceBetween(vector_b)
         __ min_dist __ None or dist < min_dist:
-            min_dist = dist
-            name = color['label']
+            min_dist _ dist
+            name _ color['label']
     return name
 
 
 ___ nuke_hex_to_rgb(nuke_hex
     try:
-        real_hex = '%08x' % nuke_hex
-        r = int(real_hex[0:2], 16) / 255.0
-        g = int(real_hex[2:4], 16) / 255.0
-        b = int(real_hex[4:6], 16) / 255.0
+        real_hex _ '%08x' % nuke_hex
+        r _ int(real_hex[0:2], 16) / 255.0
+        g _ int(real_hex[2:4], 16) / 255.0
+        b _ int(real_hex[4:6], 16) / 255.0
     except:
         return None, None, None
     return r, g, b
@@ -66,8 +66,8 @@ ___ read_color_presets(path
         return {}
     else:
         try:
-            f = open(path)
-            colors = json.load(f)
+            f _ open(path)
+            colors _ json.load(f)
             f.close()
             __ type(colors) is dict:
                 return colors
@@ -81,7 +81,7 @@ ___ read_color_presets(path
 
 ___ write_color_presets(path, colors
     try:
-        f = open(path, "w")
+        f _ open(path, "w")
         json.dump(colors, f)
         f.close()
         return T..
@@ -89,16 +89,16 @@ ___ write_color_presets(path, colors
         return False
 
 
-___ set_tile_color(value=None
+___ set_tile_color(value_None
     __ value __ None:
-        value = nuke.getColor()
+        value _ nuke.getColor()
     for node in nuke.selectedNodes(
         node.knob('tile_color').setValue(value)
 
 
 ___ create_tile_color_menu(
-    colors = read_color_presets(path)
-    color_menu = targetMenu.addMenu('Color Nodes', icon="color_node.png")
+    colors _ read_color_presets(path)
+    color_menu _ targetMenu.addMenu('Color Nodes', icon_"color_node.png")
     for color in sorted(colors
         color_menu.addCommand(color, 'setTileColor(%s)' % colors[color])
 
@@ -109,18 +109,18 @@ ___ create_tile_color_menu(
 
 
 ___ add_new_color(
-    color = nuke.getColor()
+    color _ nuke.getColor()
     __ color:
-        colors = read_color_presets(path)
-        valid_name = False
-        r, g, b = nuke_hex_to_rgb(color)
+        colors _ read_color_presets(path)
+        valid_name _ False
+        r, g, b _ nuke_hex_to_rgb(color)
         while not valid_name:
-            name = nuke.getInput("Give a name to your color", name_color(r, g, b))
+            name _ nuke.getInput("Give a name to your color", name_color(r, g, b))
             __ name:
                 __ not name in colors.keys(
-                    valid_name = T..
-                    colors[name] = color
-                    success = write_color_presets(path, colors)
+                    valid_name _ T..
+                    colors[name] _ color
+                    success _ write_color_presets(path, colors)
                     __ success:
                         targetMenu.findItem("Color Nodes").clearMenu()
                         create_tile_color_menu()
@@ -131,14 +131,14 @@ ___ add_new_color(
 
 
 ___ manage_color_presets(
-    colors = read_color_presets(path)
-    p = ColorPresetPanel(colors)
+    colors _ read_color_presets(path)
+    p _ ColorPresetPanel(colors)
     __ p.showModalDialog(
-        new_colors = {}
+        new_colors _ {}
         for preset in p.list:
             __ not preset['delete'].value(
-                new_colors[preset['name'].value()] = preset['value'].value()
-        success = write_color_presets(path, new_colors)
+                new_colors[preset['name'].value()] _ preset['value'].value()
+        success _ write_color_presets(path, new_colors)
         __ success:
             targetMenu.findItem("Color Nodes").clearMenu()
             create_tile_color_menu()

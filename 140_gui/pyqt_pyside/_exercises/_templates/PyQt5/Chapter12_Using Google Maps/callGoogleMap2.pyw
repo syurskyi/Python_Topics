@@ -8,24 +8,24 @@ ____ demoGoogleMap2 _____ *
 c_ MyForm(?D..
     ___  -  
         s__. - ()
-        ui = Ui_Dialog()
+        ui _ Ui_Dialog()
         ui.setupUi
         ui.pushButtonSearch.clicked.c..(displayLocation)
         s..
    
     ___ displayLocation 
-        lng = float(ui.lineEditLongitude.text())
-        lat = float(ui.lineEditLatitude.text())
-        google_maps = GoogleMaps(api_key='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx') 
-        my_location = google_maps.search(lat=lat, lng=lng).first()
+        lng _ float(ui.lineEditLongitude.text())
+        lat _ float(ui.lineEditLatitude.text())
+        google_maps _ GoogleMaps(api_key_'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
+        my_location _ google_maps.search(lat_lat, lng_lng).first()
         ui.labelLocation.sT..("Location: "+st.(my_location))
         ui.labelCity.sT..("City: "+st.(my_location.city))
         ui.labelCountry.sT..("Country: "+st.(my_location.country))
         ui.labelPostalCode.sT..("Postal Code: "+st.(my_location.postal_code))
           
-__ __name____"__main__":    
-    app = ?A..(___.argv)
-    w = MyForm()
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    w _ MyForm()
     w.s..
     ___.e..(app.exec_())
 

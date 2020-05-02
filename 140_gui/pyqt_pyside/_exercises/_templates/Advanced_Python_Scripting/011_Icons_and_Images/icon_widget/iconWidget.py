@@ -32,7 +32,7 @@ c_ iconWidgetClass(QMainWindow, ui.Ui_MainWindow
         save_act.setIcon(QIcon(icons['save']))
         exit_act.setIcon(QIcon(icons['close']))
 
-        pix = QPixmap(icons['sphere']).scaled( 40, 40,
+        pix _ QPixmap(icons['sphere']).scaled( 40, 40,
                                                Qt.KeepAspectRatio,
                                                Qt.SmoothTransformation )
         image_lb.setPixmap(pix)
@@ -50,10 +50,10 @@ c_ iconWidgetClass(QMainWindow, ui.Ui_MainWindow
 
 
     ___ filList 
-        path = os.path.join(os.path.dirname(__file__), 'textures')
+        path _ os.path.join(os.path.dirname(__file__), 'textures')
         clearList()
         for i in os.listdir(path
-            item = QListWidgetItem(i)
+            item _ QListWidgetItem(i)
             item.setIcon( QIcon( os.path.join(path, i) ) )
             list_lwd.addItem(item)
     ___ clearList 
@@ -71,7 +71,7 @@ c_ iconWidgetClass(QMainWindow, ui.Ui_MainWindow
         return QIcon(icons[random.choice(['item1','item2','item3'])])
 
 __ __name__ __ '__main__':
-    app = ?A..([])
-    w = iconWidgetClass()
+    app _ ?A..([])
+    w _ iconWidgetClass()
     w.s..
     app.exec_()

@@ -8,7 +8,7 @@ c_ MyForm(?D..
 
     ___  -  
         s__. - ()
-        ui = Ui_Dialog()
+        ui _ Ui_Dialog()
         ui.setupUi
         ui.pushButtonDelete.clicked.c..(DeleteUser)
         ui.pushButtonYes.clicked.c..(ConfirmDelete)
@@ -18,12 +18,12 @@ c_ MyForm(?D..
         s..
 
     ___ DeleteUser 
-        selectStatement="SELECT * FROM Users where EmailAddress like '"+ui.lineEditEmailAddress.text()+"' and Password like '"+ ui.lineEditPassword.text()+"'"
+        selectStatement_"SELECT * FROM Users where EmailAddress like '"+ui.lineEditEmailAddress.text()+"' and Password like '"+ ui.lineEditPassword.text()+"'"
         try:
-            conn = sqlite3.c..("ECommerce.db")
-            cur = conn.cursor()    
+            conn _ sqlite3.c..("ECommerce.db")
+            cur _ conn.cursor()
             cur.execute(selectStatement)
-            row = cur.fetchone()
+            row _ cur.fetchone()
             __ row__None:
                 ui.labelSure.hide()
                 ui.pushButtonYes.hide()
@@ -40,10 +40,10 @@ c_ MyForm(?D..
             conn.close()
 
     ___ ConfirmDelete 
-        deleteStatement="DELETE FROM Users where EmailAddress like '"+ui.lineEditEmailAddress.text()+"' and Password like '"+ ui.lineEditPassword.text()+"'"      
+        deleteStatement_"DELETE FROM Users where EmailAddress like '"+ui.lineEditEmailAddress.text()+"' and Password like '"+ ui.lineEditPassword.text()+"'"
         try:
-            conn = sqlite3.c..("ECommerce.db")
-            cur = conn.cursor()  
+            conn _ sqlite3.c..("ECommerce.db")
+            cur _ conn.cursor()
             with conn:
                 cur.execute(deleteStatement)
                 ui.labelResponse.sT..("User successfully deleted")
@@ -52,8 +52,8 @@ c_ MyForm(?D..
         finally:
             conn.close()
 
-__ __name____"__main__":    
-    app = ?A..(___.argv)
-    w = MyForm()
+__ _ ____ __ _____
+    app _ ?A..(___.argv)
+    w _ MyForm()
     w.s..
     ___.e..(app.exec_())
