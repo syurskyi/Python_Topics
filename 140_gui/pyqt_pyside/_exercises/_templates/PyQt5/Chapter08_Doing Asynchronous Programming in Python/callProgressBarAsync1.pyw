@@ -31,7 +31,7 @@ __ _ ____ __ _____
     app _ ?A..(___.argv)
     loop _ QEventLoop(app)
     asyncio.set_event_loop(loop)
-    w _ MyForm()
+    w _ ?
     w.exec()
     with loop:
         loop.run_forever()

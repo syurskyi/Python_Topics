@@ -18,6 +18,6 @@ c_ MyForm(?D..
 
 __ _ ____ __ _____
     app _ ?A..(___.argv)
-    myapp _ MyForm()
+    myapp _ ?
     myapp.s..
     ___.e..(app.e

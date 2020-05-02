@@ -34,6 +34,6 @@ c_ MyForm(?D..
 
 __ _ ____ __ _____
     app _ ?A..(___.argv)
-    w _ MyForm()
+    w _ ?
     w.s..
     ___.e..(app.e

@@ -1,35 +1,35 @@
-_____ ___
-
-____ ?.?W.. _____ ?D.., ?A..
-
-____ demoScrollBar _____ *
-
-c_ MyForm(?D..
-    ___  -
-        s__. - ()
-        ui _ Ui_Dialog()
-        ui.sU..
-        ui.horizontalScrollBarSugarLevel.valueChanged.c..(scrollhorizontal)
-        ui.verticalScrollBarPulseRate.valueChanged.c..(scrollvertical)
-        ui.horizontalSliderBloodPressure.valueChanged.c..(sliderhorizontal)
-        ui.verticalSliderCholestrolLevel.valueChanged.c..(slidervertical)
-        s..
-
-    ___ scrollhorizontal ,value
-        ui.lineEditResult.sT..("Sugar Level : "+st.(value))
-
-    ___ scrollvertical , value
-        ui.lineEditResult.sT..("Pulse Rate : "+st.(value))
-
-    ___ sliderhorizontal , value
-        ui.lineEditResult.sT..("Blood Pressure : "+st.(value))
-        
-    ___ slidervertical , value
-        ui.lineEditResult.sT..("Cholestrol Level : "+st.(value))
-      
-
-__ _ ____ __ _____
-    app _ ?A..(___.argv)
-    w _ MyForm()
-    w.s..
-    ___.e..(app.e
+# _____ ___
+#
+# ____ ?.?W.. _____ ?D.., ?A..
+#
+# ____ demoScrollBar _____ _
+#
+# c_ MyForm ?D..
+#     ___  -
+#         s__. -
+#         ui _ ?
+#         ?.sU..
+#         ?.hSBSL__.vC__.c.. sh..
+#         ?.vSlBPR__.vC__.c.. sv..
+#         ?.hSBP__.vC__.c.. sh..
+#         ?.vSCL__.vC__.c.. sv..
+#         s..
+#
+#     ___ scrollhorizontal value
+#         ?.lER...sT..("Sugar Level : "+st. ?
+#
+#     ___ scrollvertical  value
+#         ?.lER...sT..("Pulse Rate : "+st. ?
+#
+#     ___ sliderhorizontal  value
+#         ?.lER...sT..("Blood Pressure : "+st. ?
+#
+#     ___ slidervertical  value
+#         ?.lER...sT..("Cholestrol Level : "+st. ?
+#
+#
+# __ _ ____ __ _____
+#     app _ ?A..
+#     w _ ?
+#     w.s..
+#     ___.e.. ?.e

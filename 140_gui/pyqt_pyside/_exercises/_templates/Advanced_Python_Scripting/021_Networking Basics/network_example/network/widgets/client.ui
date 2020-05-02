@@ -54,7 +54,7 @@
  <connections>
   <connection>
    <sender>progress_sle</sender>
-   <signal>valueChanged(int)</signal>
+   <signal>vC__(int)</signal>
    <receiver>label</receiver>
    <slot>setNum(int)</slot>
    <hints>

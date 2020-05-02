@@ -82,7 +82,7 @@ c_ Player(?W..
         volumeSlider.setMinimum(0)
         volumeSlider.setMaximum(100)
         mixer.music.set_volume(0.7)
-        volumeSlider.valueChanged.c..(setVolume)
+        volumeSlider.vC__.c..(setVolume)
 
         # ##################Play List####################
         playList_QListWidget()

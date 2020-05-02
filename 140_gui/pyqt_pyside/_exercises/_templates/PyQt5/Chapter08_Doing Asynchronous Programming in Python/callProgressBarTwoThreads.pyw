@@ -32,7 +32,7 @@ c_ myThread (threading.Thread
       
 __ _ ____ __ _____
     app _ ?A..(___.argv)
-    w _ MyForm()
+    w _ ?
     thread1 _ myThread(w, w.ui.progressBarFileDownload)
     thread2 _ myThread(w, w.ui.progressBarVirusScan)
     thread1.start()
