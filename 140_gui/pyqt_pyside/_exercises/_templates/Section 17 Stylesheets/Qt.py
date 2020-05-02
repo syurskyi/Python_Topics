@@ -1242,7 +1242,7 @@ ___ _loadUi(uifile, baseinstance_None
         return the newly created instance of the user interface.
 
     """
-    __ hasattr(baseinstance, "layout") and baseinstance.layout(
+    __ hasattr(baseinstance, "layout") an. baseinstance.layout(
         message _ ("QLayout: Attempting to add Layout to %s which "
                    "already has a layout")
         raise RuntimeError(message % (baseinstance))
@@ -1292,7 +1292,7 @@ ___ _loadUi(uifile, baseinstance_None
 
                 """
 
-                __ parent is None and baseinstance:
+                __ parent is None an. baseinstance:
                     # Supposed to create the top-level widget,
                     # return the base instance instead
                     return baseinstance

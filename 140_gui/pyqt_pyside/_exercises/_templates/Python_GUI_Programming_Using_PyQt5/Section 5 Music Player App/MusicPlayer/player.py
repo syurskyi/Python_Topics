@@ -152,7 +152,7 @@ c_ Player(?W..
         global count
         global index
         count _ 0
-        index _ playList.currentRow()
+        index _ playList.cR..
 
         try:
             mixer.music.load(st.(musicList[index]))

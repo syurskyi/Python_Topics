@@ -60,7 +60,7 @@ c_ listWidgetClass(QListWidget
 
     ___ addFile , path
         __ not path __ files:
-            item _ QListWidgetItem
+            item _ ?LWI..
             item.sT..(os.path.basename(path))
             item.setData(Qt.UserRole, path)
             files.ap..(path)
@@ -68,7 +68,7 @@ c_ listWidgetClass(QListWidget
     ___ deleteSelected 
         ___ s __ selectedItems(                          # perebiraem vse vudelenue elementu
             files.remove(s.data(32))                       # zabirajy pyt' kotoruj lezit v data i ydaljay iz svoego byfera
-            takeItem(indexFromItem(s).row())          # posle chego ydaljay sam item
+            tI..(indexFromItem(s).row())          # posle chego ydaljay sam item
 
 __ __name__ __ '__main__':
     app _ ?A..([])

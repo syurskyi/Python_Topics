@@ -267,7 +267,7 @@ c_ TP_Launcher_GUI(?W...?W..
         _app_lw.c..
         workspace _ get_workspace()
         ___ app_name in _tp_launcher.get_app_names(workspace
-            item _ ?W...QListWidgetItem(_app_lw)
+            item _ ?W...?LWI..(_app_lw)
             icon _ _tp_launcher.get_app_icon(workspace, app_name)
             __ icon:
                 item.setIcon(?G...QIcon(icon))
@@ -324,7 +324,7 @@ c_ TP_Launcher_GUI(?W...?W..
     ___ _add_workspace
         ''' Prompt user with line edit input dialog for new name,
         store if valid, populate, then select it.'''
-        t.. _ ?W...QInputDialog.getText(
+        t.. _ ?W...?ID...gT..(
             self,
             'New WORKSPACE',
             'What would you like to title the new WORKSPACE?'
@@ -422,7 +422,7 @@ c_ TP_Launcher_GUI(?W...?W..
         read in the json file, then make selections based on the
         qsettings.
         '''
-        __ 'CurrentWorkspace' in _settings.allKeys() and \
+        __ 'CurrentWorkspace' in _settings.allKeys() an. \
               os.path.exists(_json_file
             x, y, cws _ _settings_op[PY_VER][QT_VER]()
             _tp_launcher.read_json_file(_json_file)

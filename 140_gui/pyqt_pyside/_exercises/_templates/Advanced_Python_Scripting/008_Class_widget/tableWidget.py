@@ -20,7 +20,7 @@ c_ simpleWindow(?W..
     ___ fillTable 
         files _ os.listdir(path)
         table.setColumnCount(2)
-        table.setRowCount(len(files))
+        table.setRowCount(le.(files))
         table.setHorizontalHeaderLabels(['Name', 'Size'])
         ___ i, f __ enumerate(files
             item _ QTableWidgetItem()

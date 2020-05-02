@@ -11,7 +11,7 @@ c_ simpleWindow(?W..
         btn.c___.c..(showMessage2)
 
     ___ showMessage2 
-        i _ QInputDialog.getItem , 'Enter text', 'Name:',
+        i _ ?ID...getItem , 'Enter text', 'Name:',
                                  [st.(x) ___ x __ range(10)])
         print i
 

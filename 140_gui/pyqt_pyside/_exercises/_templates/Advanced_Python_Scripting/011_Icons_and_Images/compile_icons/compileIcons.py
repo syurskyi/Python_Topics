@@ -12,7 +12,7 @@ c_ fileListClass(QListWidget
         path _ path.replace('/','\\')
         __ not  path __ pathList:
             name _ os.path.basename(path)
-            item _ QListWidgetItem()
+            item _ ?LWI..()
             item.sT..(name)
             item.setData(32, path)
             aI..(item)
@@ -44,7 +44,7 @@ c_ fileListClass(QListWidget
             ___ i __ reversed(sel
                 __ i.data(32) in pathList:
                     pathList.remove(i.data(32))
-                takeItem(i.row())
+                tI..(i.row())
 
 c_ resourceCompileClass(QMainWindow
     ___  -
@@ -60,7 +60,7 @@ c_ resourceCompileClass(QMainWindow
         run_btn _ ?PB..('RUN')
         ly.addWidget(run_btn)
         run_btn.c___.c..(runCompile)
-        __ len(___.argv) __ 2:
+        __ le.(___.argv) __ 2:
             image _ ___.argv[1]
             list.appendImage(image)
 

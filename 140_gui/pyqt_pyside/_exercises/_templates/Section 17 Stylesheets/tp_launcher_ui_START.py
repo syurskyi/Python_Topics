@@ -198,7 +198,7 @@ c_ TP_Launcher_GUI(?W...?W..
         _app_lw.c..
         ws _ get_workspace()
         ___ app_name __ _tp_launcher.get_app_names(ws
-            item _ ?W...QListWidgetItem(_app_lw)
+            item _ ?W...?LWI..(_app_lw)
             icon _ _tp_launcher.get_app_icon(ws, app_name)
             __ icon:
                 item.setIcon(?G...QIcon(icon))
@@ -250,7 +250,7 @@ c_ TP_Launcher_GUI(?W...?W..
     ___ _add_workspace 
         ws _ 'New WORKSPACE'
         msg _ 'What would you like to title the new WORKSPACE?'
-        t.. _ ?W...QInputDialog.getText , ws, msg)[0]
+        t.. _ ?W...?ID...gT.. , ws, msg)[0]
         __ t..:
             _tp_launcher.add_workspace(st.(t..))
             _populate_workspaces()
@@ -324,7 +324,7 @@ c_ TP_Launcher_GUI(?W...?W..
         _settings.setValue('PosY', int(y()))
 
     ___ _load_settings 
-        __ 'CurrentWorkspace' in _settings.allKeys() and \
+        __ 'CurrentWorkspace' in _settings.allKeys() an. \
               os.path.exists(_json_file
             x, y, cws _ _settings_op[PY_VER][QT_VER]()
             _tp_launcher.read_json_file(_json_file)

@@ -56,7 +56,7 @@ c_ listWidgetClass(QListWidget
 
     ___ addFile , path
         __ not path __ files:
-            item _ QListWidgetItem
+            item _ ?LWI..
             item.sT..(os.path.basename(path))
             item.setData(Qt.UserRole, path)
             files.ap..(path)
@@ -64,7 +64,7 @@ c_ listWidgetClass(QListWidget
     ___ deleteSelected
         ___ s in selectedItems(
             files.remove(s.data(32))
-            takeItem(indexFromItem(s).row())
+            tI..(indexFromItem(s).row())
 
     ___ mousePressEvent , event
         __ event.button() __ Qt.MouseButton.RightButton:

@@ -14,7 +14,7 @@ c_ MyForm(?D..
         s..
 
     ___ result1
-        __ len(ui.lineEditBookPrice.t..())!_0:
+        __ le.(ui.lineEditBookPrice.t..())!_0:
             bookPrice_int(ui.lineEditBookPrice.t..())
         ____
             bookPrice_0
@@ -22,7 +22,7 @@ c_ MyForm(?D..
         ui.lineEditBookAmount.sT..(st.(totalBookAmount))
         
     ___ result2
-        __ len(ui.lineEditSugarPrice.t..())!_0:
+        __ le.(ui.lineEditSugarPrice.t..())!_0:
             sugarPrice_float(ui.lineEditSugarPrice.t..())
         ____
             sugarPrice_0

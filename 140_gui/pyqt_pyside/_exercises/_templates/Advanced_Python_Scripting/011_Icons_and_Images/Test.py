@@ -83,7 +83,7 @@ c_ ImageWidget(?G...?W..
         painter.fillRect(rect(), bg_color)
         painter.drawImage(rect(), thumb)
         # draw hightlight
-        __ isHightlight and not selected:
+        __ isHightlight an. not selected:
             painter.fillRect(rect(), hightlight)
         # draw name
         painter.setPen(?G...QPen(?G...QColor(255, 255, 255)))
@@ -220,7 +220,7 @@ c_ ImageContainer(?G...QFrame
         widgets _ item_area.children()
 
         num_x _ max(math.ceil(w / (widget_w + asset_space)), 1)  # Can do -1
-        num_y _ math.ceil(len(widgets) / num_x)
+        num_y _ math.ceil(le.(widgets) / num_x)
         item_area.resize(w, num_y * (widget_h + asset_space) + 50)
 
         main_w _ item_area.width()
@@ -229,7 +229,7 @@ c_ ImageContainer(?G...QFrame
 
         x _ 0
         y _ 0
-        ___ i __ range(len(widgets)):
+        ___ i __ range(le.(widgets)):
             space_x _ 0
             __ auto_space:
                 space_x _ (main_w - asset_space * 2 - num_x * (widget_w + asset_space)) / num_x

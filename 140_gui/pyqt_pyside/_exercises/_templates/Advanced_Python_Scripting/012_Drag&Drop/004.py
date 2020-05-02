@@ -34,7 +34,7 @@ c_ listWidgetClass(QListWidget
 
     ___ addFile , path
         __ not path __ files:
-            item _ QListWidgetItem
+            item _ ?LWI..
             item.sT..(os.path.basename(path))
             item.setData(Qt.UserRole, path)
             files.ap..(path)

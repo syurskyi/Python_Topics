@@ -255,7 +255,7 @@ c_ UpdateEmployee(?W..
         email_emailEntry.t..()
         img_defaultImg
         address_addressEditor.toPlainText()
-        __ (name and surname and phone !_""
+        __ (name an. surname an. phone !_""
             try:
                 query_"UPDATE employees set name =?, surname=?, phone=?,email=?,img=?,address=? WHERE id=?"
                 cur.execute(query,(name,surname,phone,email,img,address,person_id))
@@ -367,7 +367,7 @@ c_ AddEmployee(?W..
         email_emailEntry.t..()
         img_defaultImg
         address_addressEditor.toPlainText()
-        __ (name and surname and phone !_""
+        __ (name an. surname an. phone !_""
             try:
                 query_"INSERT INTO employees (name,surname,phone,email,img,address) VALUES(?,?,?,?,?,?)"
                 cur.execute(query,(name,surname,phone,email,img,address))

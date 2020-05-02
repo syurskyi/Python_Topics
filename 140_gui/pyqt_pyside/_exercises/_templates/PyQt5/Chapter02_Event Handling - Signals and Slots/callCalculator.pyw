@@ -16,11 +16,11 @@ c_ MyForm ?D..
         s..
 
     ___ addtwonum
-        __ len(ui.lineEditFirstNumber.t..())!_0:
+        __ le.(ui.lineEditFirstNumber.t..())!_0:
             a_int(ui.lineEditFirstNumber.t..())
         ____
             a_0
-        __ len(ui.lineEditSecondNumber.t..())!_0:
+        __ le.(ui.lineEditSecondNumber.t..())!_0:
             b_int(ui.lineEditSecondNumber.t..())
         ____
             b_0
@@ -28,11 +28,11 @@ c_ MyForm ?D..
         ui.labelResult.sT..("Addition: " +st.(sum))
 
     ___ subtracttwonum
-        __ len(ui.lineEditFirstNumber.t..())!_0:
+        __ le.(ui.lineEditFirstNumber.t..())!_0:
             a_int(ui.lineEditFirstNumber.t..())
         ____
             a_0
-        __ len(ui.lineEditSecondNumber.t..())!_0:
+        __ le.(ui.lineEditSecondNumber.t..())!_0:
             b_int(ui.lineEditSecondNumber.t..())
         ____
             b_0
@@ -40,11 +40,11 @@ c_ MyForm ?D..
         ui.labelResult.sT..("Substraction: " +st.(diff))
         
     ___ multiplytwonum
-        __ len(ui.lineEditFirstNumber.t..())!_0:
+        __ le.(ui.lineEditFirstNumber.t..())!_0:
             a_int(ui.lineEditFirstNumber.t..())
         ____
             a_0
-        __ len(ui.lineEditSecondNumber.t..())!_0:
+        __ le.(ui.lineEditSecondNumber.t..())!_0:
             b_int(ui.lineEditSecondNumber.t..())
         ____
             b_0
@@ -52,11 +52,11 @@ c_ MyForm ?D..
         ui.labelResult.sT..("Multiplication: " +st.(mult))
         
     ___ dividetwonum
-        __ len(ui.lineEditFirstNumber.t..())!_0:
+        __ le.(ui.lineEditFirstNumber.t..())!_0:
             a_int(ui.lineEditFirstNumber.t..())
         ____
             a_0
-        __ len(ui.lineEditSecondNumber.t..())!_0:
+        __ le.(ui.lineEditSecondNumber.t..())!_0:
             b_int(ui.lineEditSecondNumber.t..())
         ____
             b_0

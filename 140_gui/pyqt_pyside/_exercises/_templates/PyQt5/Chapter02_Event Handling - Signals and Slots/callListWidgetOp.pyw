@@ -1,45 +1,45 @@
-_____ ___
-
-____ ?.?W.. _____ ?D.., ?A.., QInputDialog, QListWidgetItem
-
-____ demoListWidgetOp _____ _
-
-c_ MyForm(?D..
-    ___  -  
-        s__. - ()
-        ui _ Ui_Dialog()
-        ui.sU..
-        ui.listWidget.aI..('Ice Cream')
-        ui.listWidget.aI..('Soda')
-        ui.listWidget.aI..('Coffee')
-        ui.listWidget.aI..('Chocolate')
-        ui.pBA...c___.c..(addlist)
-        ui.pushButtonEdit.c___.c..(editlist)
-        ui.pushButtonDelete.c___.c..(delitem)
-        ui.pushButtonDeleteAll.c___.c..(delallitems)
-        s..
-
-    ___ addlist 
-        ui.listWidget.aI..(ui.lineEdit.t..())
-        ui.lineEdit.sT..('')
-        ui.lineEdit.sF..
-        
-    ___ editlist 
-        row_ui.listWidget.currentRow()
-        newtext, ok_QInputDialog.getText , "Enter new text", "Enter new text")
-        __ ok and (len(newtext) !_0
-            ui.listWidget.takeItem(ui.listWidget.currentRow())
-            ui.listWidget.insertItem(row,QListWidgetItem(newtext))
-        
-    ___ delitem 
-        ui.listWidget.takeItem(ui.listWidget.currentRow())
-       
-    ___ delallitems 
-        ui.listWidget.c..
-
-        
-__ _ ____ __ _____
-    app _ ?A..(___.argv)
-    w _ MyForm()
-    w.s..
-    ___.e..(app.e
+# _____ ___
+#
+# ____ ?.?W.. _____ ?D.. ?A.. ?ID.. ?LWI..
+#
+# ____ demoListWidgetOp _____ _
+#
+# c_ MyForm ?D..
+#     ___  -
+#         s__. -
+#         ui _ ?
+#         ?.sU..
+#         ?.lW__.aI..('Ice Cream')
+#         ?.lW__.aI..('Soda')
+#         ?.lW__.aI..('Coffee')
+#         ?.lW__.aI..('Chocolate')
+#         ?.pBA...c___.c.. a..
+#         ?.pBE__.c___.c.. e..
+#         ?.pBD__.c___.c.. d..
+#         ?.pBDA__.c___.c.. d..
+#         s..
+#
+#     ___ addlist
+#         ?.lW__.aI.. ?.lE...t..
+#         ?.lE...sT.. ''
+#         ?.lE...sF..
+#
+#     ___ editlist
+#         row_ui.lW__.cR..
+#         newtext, ok_QID__.gT.. , "Enter new text", "Enter new text")
+#         __ ok an.  le. n.. !_0
+#             ?.lW__.tI.. ?.lW__.cR..
+#             ?.lW__.iI.. ro.. ?LWI.. n..
+#
+#     ___ delitem
+#         ?.lW__.tI.. ?.lW__.cR..
+#
+#     ___ delallitems
+#         ?.lW__.c..
+#
+#
+# __ _ ____ __ _____
+#     app _ ?A..
+#     w _ ?
+#     ?.s..
+#     ___.e.. ?.e

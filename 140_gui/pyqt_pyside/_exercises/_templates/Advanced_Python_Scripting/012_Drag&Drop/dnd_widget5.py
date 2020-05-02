@@ -42,7 +42,7 @@ c_ listWidgetClass(QListWidget
 
     ___ addFile , path                              # fynkcija kotoraja prinimaet pyt', pyt' mu polychaem s Drop Event
         __ not path __ files:                        # hranitsja byfer yze dobavlennuh fajlov
-            item _ QListWidgetItem                  # mu sozdajom novuj Item
+            item _ ?LWI..                  # mu sozdajom novuj Item
             item.sT..(os.path.basename(path))          # otpravljaem imja fajla
             item.setData(Qt.UserRole, path)               # polnuj pyt' fajla polozim v kastomnujy daty etogo fajla
             files.ap..(path)

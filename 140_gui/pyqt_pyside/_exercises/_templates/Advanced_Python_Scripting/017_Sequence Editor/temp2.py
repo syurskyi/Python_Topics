@@ -119,7 +119,7 @@ c_ pad1(?G...QGraphicsEllipseItem
                 mixer.music.stop()
                 playing _ False
                 # self.updateColor("Blue")
-                __ pad1.__counter < len(songListdecoded) - 1:
+                __ pad1.__counter < le.(songListdecoded) - 1:
                     pad1.__counter +_ 1
                 ____
                     # restart
@@ -144,7 +144,7 @@ c_ pad1(?G...QGraphicsEllipseItem
 
             # update counter
 
-            __ pad1.__counter < len(songListdecoded) - 1:
+            __ pad1.__counter < le.(songListdecoded) - 1:
                 pad1.__counter +_ 1
                 print("count = %i" % pad1.__counter)
             ____
@@ -155,7 +155,7 @@ c_ pad1(?G...QGraphicsEllipseItem
 
             # update counter
 
-            __ pad1.__counter < len(songListdecoded) - 1:
+            __ pad1.__counter < le.(songListdecoded) - 1:
                 pad1.__counter +_ 1
                 print("count = %i" % pad1.__counter)
             ____
@@ -475,7 +475,7 @@ c_ mainWindow(?G...QMainWindow
                 print(midinote)
                 print('midiint = %i' % midiint)
 
-                __ midiint > 10 and midinote __ midiNote:
+                __ midiint > 10 an. midinote __ midiNote:
                     s _ Thread(target_pad1.startSong)
                     s.start()
                     # pygame.time.wait(20)
@@ -739,7 +739,7 @@ c_ songCreator(?G...QTabWidget
         print("delete item")
         rows _ sorted(set(index.row() ___ index in
                           table.selectedIndexes()))
-        l _ len(rows)
+        l _ le.(rows)
         ___ row in rows:
             print('Row %d is selected' % row)
             table.removeRow(row)
@@ -747,7 +747,7 @@ c_ songCreator(?G...QTabWidget
 
     ___ addseq , songList
         index _ tableIndex
-        table.setRowCount(len(songList))
+        table.setRowCount(le.(songList))
         ___ song in songList:
             print("-------------------------------------")
             print(song[0])

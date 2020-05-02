@@ -70,7 +70,7 @@ ___ main(
 		elif o __ '-t':
 			to _ a
 
-	__ not (frm and to
+	__ not (frm an. to
 		print "not sufficent parameters provided to: '" + to + "' from: '" + frm + "'"
 		___.e..(2)
 		

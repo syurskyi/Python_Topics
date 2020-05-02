@@ -53,7 +53,7 @@ c_ iconWidgetClass(QMainWindow, ui.Ui_MainWindow
         path _ os.path.join(os.path.dirname(__file__), 'textures')
         clearList()
         ___ i __ os.listdir(path
-            item _ QListWidgetItem(i)
+            item _ ?LWI..(i)
             item.setIcon( QIcon( os.path.join(path, i) ) )
             list_lwd.aI..(item)
     ___ clearList 

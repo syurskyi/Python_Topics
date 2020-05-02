@@ -123,7 +123,7 @@ c_ timeline(?G...QGraphicsView
         f_audio_item.setPos(a_start, f_track_num)
         f_audio_item.setBrush(colors[gradient_index])
         gradient_index +_ 1
-        __ gradient_index >_ len(colors
+        __ gradient_index >_ le.(colors
             gradient_index _ 0
         scene.aI..(f_audio_item)
         track +_ 1
