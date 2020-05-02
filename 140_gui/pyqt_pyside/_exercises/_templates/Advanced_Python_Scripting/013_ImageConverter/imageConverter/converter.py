@@ -12,7 +12,7 @@ ___ convert(src, trg_None
         basename _ os.path.basename(src)
         name, ext _ os.path.splitext(basename)
         trg _ os.path.join(trg, name+'.exr')
-    else:
+    ____
         trg _ os.path.splitext(src)[0] + '.exr'
 
     cmd _ ' '.join([iconvert, src, trg])

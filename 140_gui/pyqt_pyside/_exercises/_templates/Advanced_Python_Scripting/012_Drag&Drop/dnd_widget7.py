@@ -23,21 +23,21 @@ c_ listWidgetClass(QListWidget
     ___ dragEnterEvent , event
         __ event.source() is self:
             event.ignore()
-        else:
+        ____
             mimedata _ event.mimeData()
             __ mimedata.hasUrls(
                 event.accept()
-            else:
+            ____
                 event.ignore()
 
     ___ dragMoveEvent , event
         __ event.source() is self:
             event.ignore()
-        else:
+        ____
             mimedata _ event.mimeData()
             __ mimedata.hasUrls(
                 event.accept()
-            else:
+            ____
                 event.ignore()
 
     ___ startDrag , dropAction     # pereopredeljaem method kotoruj otvechaet za to shto proishodit kogda mu nachinaem shto to peretaskivat'

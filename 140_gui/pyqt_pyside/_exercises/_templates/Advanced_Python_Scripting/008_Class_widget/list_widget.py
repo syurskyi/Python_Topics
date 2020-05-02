@@ -1,4 +1,4 @@
-____ PySide.QtGui _____ *
+____ PySide.QtGui _____ _
 _____ os
 path _ os.path.dirname(__file__)
 

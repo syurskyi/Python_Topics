@@ -1,5 +1,5 @@
-____ PySide.?C.. _____ *
-____ PySide.QtGui _____ *
+____ PySide.?C.. _____ _
+____ PySide.QtGui _____ _
 _____ os
 
 icon _ os.path.join(os.path.dirname(__file__), 'drag.png')
@@ -22,21 +22,21 @@ c_ listWidgetClass(QListWidget
     ___ dragEnterEvent , event
         __ event.source() is self:
             event.ignore()
-        else:
+        ____
             mimedata _ event.mimeData()
             __ mimedata.hasUrls(
                 event.accept()
-            else:
+            ____
                 event.ignore()
 
     ___ dragMoveEvent , event
         __ event.source() is self:
             event.ignore()
-        else:
+        ____
             mimedata _ event.mimeData()
             __ mimedata.hasUrls(
                 event.accept()
-            else:
+            ____
                 event.ignore()
 
     ___ addFile , path

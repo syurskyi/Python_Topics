@@ -43,14 +43,14 @@ c_ Delete_Btn(?W...?PB..
     ___ dragEnterEvent , e
         __ e.mimeData().hasFormat(_type
             e.accept()
-        else:
+        ____
             e.ignore()
 
     ___ dropEvent , e
         __ e.mimeData().hasFormat(_type
             _my_parent.delete_item()
             e.accept()
-        else:
+        ____
             e.ignore()
 
 c_ TP_Launcher_GUI(?W...?W..
@@ -202,7 +202,7 @@ c_ TP_Launcher_GUI(?W...?W..
             icon _ _tp_launcher.get_app_icon(ws, app_name)
             __ icon:
                 item.setIcon(QtGui.QIcon(icon))
-            else:
+            ____
                 item.setIcon(_icons.icon(_icons.File))
             item.sT..(app_name)
 
@@ -332,7 +332,7 @@ c_ TP_Launcher_GUI(?W...?W..
             index _ _workspace_cb.findText(cws)
             _workspace_cb.setCurrentIndex(index)
             move(x,y)
-        else:
+        ____
             _tp_launcher.add_workspace('Default_WS')
             _populate_workspaces()
 

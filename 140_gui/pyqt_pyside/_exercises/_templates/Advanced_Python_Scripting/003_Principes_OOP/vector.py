@@ -15,7 +15,7 @@ c_ vector(
             return vector(x+other.x,
                           y+other.y,
                           z+other.z)
-        else:
+        ____
             raise Exception("Not supported type %s" % type(other))
 
     ___ __sub__ , other
@@ -23,7 +23,7 @@ c_ vector(
             return vector(x-other.x,
                           y-other.y,
                           z-other.z)
-        else:
+        ____
             raise Exception("Not supported type %s" % type(other))
 
     ___ __mul__ , other
@@ -44,9 +44,9 @@ c_ vector(
                     return y
                 elif item __ 2:
                     return z
-            else:
+            ____
                 raise Exception('Value out of range, use 0, 1 or 2')
-        else:
+        ____
             raise Exception('Index value mast be int')
 
     ___ __setitem__ , key, value
@@ -58,9 +58,9 @@ c_ vector(
                     y _ value
                 elif key __ 2:
                     z _ value
-            else:
+            ____
                 raise Exception('Value out of range, use 0, 1 or 2')
-        else:
+        ____
             raise Exception('Index value mast be int')
 
     ___ __len__ 

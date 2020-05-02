@@ -2,7 +2,7 @@ _____ ___
 
 ____ ?.?W.. _____ ?D.., ?A..
 
-____ demoListWidget1 _____ *
+____ demoListWidget1 _____ _
 
 c_ MyForm(?D..
     ___  -  

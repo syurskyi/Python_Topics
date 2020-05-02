@@ -1,5 +1,5 @@
-____ PySide.QtGui _____ *
-____ PySide.?C.. _____ *
+____ PySide.QtGui _____ _
+____ PySide.?C.. _____ _
 _____ os
 path _ os.path.dirname(os.path.dirname(__file__))
 
@@ -37,7 +37,7 @@ c_ simpleWindow(?W..
             __ os.path.isdir(fullpath
                 fillTree(item, fullpath)
                 item.setExpanded(1)
-            else:
+            ____
                 item.setFlags(Qt.ItemIsEnabled | Qt.ItemIsSelectable | Qt.ItemIsEditable)
                 item.setData(0, Qt.UserRole, {'path':os.path.normpath(fullpath)})
 

@@ -64,14 +64,14 @@ ___ read_color_presets(path
     __ not os.path.isfile(path
         print "No Color preset found "
         return {}
-    else:
+    ____
         try:
             f _ open(path)
             colors _ json.load(f)
             f.close()
             __ type(colors) is dict:
                 return colors
-            else:
+            ____
                 print "The preset file doesn't contain a valid dictionary"
                 return {}
         except:
@@ -124,9 +124,9 @@ ___ add_new_color(
                     __ success:
                         targetMenu.findItem("Color Nodes").clearMenu()
                         create_tile_color_menu()
-                    else:
+                    ____
                         print "Error writing file %s" % path
-                else:
+                ____
                     nuke.message("The name already exists")
 
 
@@ -142,7 +142,7 @@ ___ manage_color_presets(
         __ success:
             targetMenu.findItem("Color Nodes").clearMenu()
             create_tile_color_menu()
-        else:
+        ____
             print "Error writing file %s" % path
 
 

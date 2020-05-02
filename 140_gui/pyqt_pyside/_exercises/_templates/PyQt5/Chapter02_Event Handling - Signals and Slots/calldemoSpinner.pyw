@@ -2,7 +2,7 @@ _____ ___
 
 ____ ?.?W.. _____ ?D.., ?A..
 
-____ demoSpinBox _____ *
+____ demoSpinBox _____ _
 
 c_ MyForm(?D..
     ___  -
@@ -16,7 +16,7 @@ c_ MyForm(?D..
     ___ result1
         __ len(ui.lineEditBookPrice.t..())!_0:
             bookPrice_int(ui.lineEditBookPrice.t..())
-        else:
+        ____
             bookPrice_0
         totalBookAmount_ui.spinBoxBookQty.value() * bookPrice
         ui.lineEditBookAmount.sT..(st.(totalBookAmount))
@@ -24,7 +24,7 @@ c_ MyForm(?D..
     ___ result2
         __ len(ui.lineEditSugarPrice.t..())!_0:
             sugarPrice_float(ui.lineEditSugarPrice.t..())
-        else:
+        ____
             sugarPrice_0
         totalSugarAmount_ui.doubleSpinBoxSugarWeight.value() * sugarPrice
         ui.lineEditSugarAmount.sT..(st.(round(totalSugarAmount,2)))

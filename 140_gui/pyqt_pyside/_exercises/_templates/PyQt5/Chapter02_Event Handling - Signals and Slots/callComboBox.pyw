@@ -2,7 +2,7 @@ _____ ___
 
 ____ ?.?W.. _____ ?D.., ?A..
 
-____ demoComboBox _____ *
+____ demoComboBox _____ _
 
 c_ MyForm(?D..
     ___  -  

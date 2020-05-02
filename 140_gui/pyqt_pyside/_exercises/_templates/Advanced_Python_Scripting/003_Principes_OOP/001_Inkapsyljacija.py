@@ -8,7 +8,7 @@ c_ dividerClass(object
     ___ setDivider , val
         __ __checkValue(val
             __div _ val
-        else:
+        ____
             print('Wrong value')
 
     ___ __checkValue , val

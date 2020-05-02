@@ -1,7 +1,7 @@
 _____ ___
 _____ os
-____ PySide.?C.. _____ *
-____ PySide.QtGui _____ *
+____ PySide.?C.. _____ _
+____ PySide.QtGui _____ _
 
 c_ fileListClass(QListWidget
     ___  -  , parent
@@ -22,13 +22,13 @@ c_ fileListClass(QListWidget
     ___ dragEnterEvent , event
         __ event.mimeData().hasUrls(
             event.accept()
-        else:
+        ____
             event.ignore()
 
     ___ dragMoveEvent , event
         __ event.mimeData().hasUrls(
             event.accept()
-        else:
+        ____
             event.ignore()
 
 c_ resourceCompileClass(QMainWindow

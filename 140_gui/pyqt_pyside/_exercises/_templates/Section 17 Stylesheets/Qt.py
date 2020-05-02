@@ -782,7 +782,7 @@ ___ _apply_site_config(
         # If no QtSiteConfig module found, no modifications
         # to _common_members are needed.
         pass
-    else:
+    ____
         # Provide the ability to modify the dicts used to build Qt.py
         __ hasattr(QtSiteConfig, 'update_members'
             QtSiteConfig.update_members(_common_members)
@@ -866,7 +866,7 @@ ___ _wrapinstance(func, ptr, base_None
         elif hasattr(Qt.?W.., super_class_name
             base _ getattr(Qt.?W.., super_class_name)
 
-        else:
+        ____
             base _ Qt.?C...QObject
 
     return func(long(ptr), base)
@@ -923,7 +923,7 @@ ___ _build_compatibility_members(binding, decorators_None
         _____ QtSiteConfig
     except ImportError:
         pass
-    else:
+    ____
         __ hasattr(QtSiteConfig, 'update_compatibility_decorators'
             QtSiteConfig.update_compatibility_decorators(binding, decorators)
 
@@ -1127,7 +1127,7 @@ ___ _pyqt4(
             actual _ sip.getapi(api)
             __ not hint:
                 raise ImportError("API version already set to %d" % actual)
-            else:
+            ____
                 # Having provided a hint indicates a soft constraint, one
                 # that doesn't throw an exception.
                 ___.stderr.write(
@@ -1306,7 +1306,7 @@ ___ _loadUi(uifile, baseinstance_None
                                                                   parent,
                                                                   name)
 
-                else:
+                ____
                     raise Exception("Custom widget '%s' not supported"
                                     % class_name)
 
@@ -1322,7 +1322,7 @@ ___ _loadUi(uifile, baseinstance_None
 
         return widget
 
-    else:
+    ____
         raise NotImplementedError("No implementation available for loadUi")
 
 

@@ -1,7 +1,7 @@
 _____ ___
 _____ os
-____ PySide.?C.. _____ *
-____ PySide.QtGui _____ *
+____ PySide.?C.. _____ _
+____ PySide.QtGui _____ _
 
 icon _ os.path.join(os.path.dirname(__file__), 'drag.png')
 
@@ -23,21 +23,21 @@ c_ listWidgetClass(QListWidget
     ___ dragEnterEvent , event
         __ event.source() is self:
             event.ignore()
-        else:
+        ____
             mimedata _ event.mimeData()
             __ mimedata.hasUrls(
                 event.accept()
-            else:
+            ____
                 event.ignore()
 
     ___ dragMoveEvent , event
         __ event.source() is self:
             event.ignore()
-        else:
+        ____
             mimedata _ event.mimeData()
             __ mimedata.hasUrls(
                 event.accept()
-            else:
+            ____
                 event.ignore()
 
     ___ startDrag , dropAction
@@ -72,7 +72,7 @@ c_ listWidgetClass(QListWidget
         elif event.button() __ Qt.MouseButton.LeftButton:
             setDragDropMode(QAbstractItemView.NoDragDrop)
             super(listWidgetClass, self).mousePressEvent(event)
-        else:
+        ____
             setDragDropMode(QAbstractItemView.DragDrop)
             super(listWidgetClass, self).mousePressEvent(event)
 

@@ -1,5 +1,5 @@
-____ PySide.?C.. _____ *
-____ PySide.QtGui _____ *
+____ PySide.?C.. _____ _
+____ PySide.QtGui _____ _
 _____  iconWidget_UIs as ui
 ____ icons.icons _____ icons
 _____ random, os

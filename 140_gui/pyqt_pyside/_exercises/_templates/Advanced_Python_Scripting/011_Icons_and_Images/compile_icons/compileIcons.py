@@ -21,13 +21,13 @@ c_ fileListClass(QListWidget
     ___ dragEnterEvent , event
         __ event.mimeData().hasUrls(
             event.accept()
-        else:
+        ____
             event.ignore()
 
     ___ dragMoveEvent , event
         __ event.mimeData().hasUrls(
             event.accept()
-        else:
+        ____
             event.ignore()
 
     ___ dropEvent , event
@@ -35,7 +35,7 @@ c_ fileListClass(QListWidget
             event.accept()
             for url in event.mimeData().urls(
                 appendImage(url.toLocalFile())
-        else:
+        ____
             event.ignore()
 
     ___ keyPressEvent , event

@@ -4,7 +4,7 @@ c_ settings(
     ___  -  , path_None
         __ path:
             path _ path
-        else:
+        ____
             path _ 'c:/settings.ini'
         data _ __readFile()
 

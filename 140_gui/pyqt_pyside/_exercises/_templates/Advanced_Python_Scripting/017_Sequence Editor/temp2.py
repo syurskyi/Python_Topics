@@ -121,7 +121,7 @@ c_ pad1(QtGui.QGraphicsEllipseItem
                 # self.updateColor("Blue")
                 __ pad1.__counter < len(songListdecoded) - 1:
                     pad1.__counter +_ 1
-                else:
+                ____
                     # restart
                     pad1.__counter _ 0
             except:
@@ -147,7 +147,7 @@ c_ pad1(QtGui.QGraphicsEllipseItem
             __ pad1.__counter < len(songListdecoded) - 1:
                 pad1.__counter +_ 1
                 print("count = %i" % pad1.__counter)
-            else:
+            ____
                 # restart
                 pad1.__counter _ 0
                 print("count = %i" % pad1.__counter)
@@ -158,7 +158,7 @@ c_ pad1(QtGui.QGraphicsEllipseItem
             __ pad1.__counter < len(songListdecoded) - 1:
                 pad1.__counter +_ 1
                 print("count = %i" % pad1.__counter)
-            else:
+            ____
                 # restart
                 pad1.__counter _ 0
                 print("count = %i" % pad1.__counter)
@@ -447,7 +447,7 @@ c_ mainWindow(QtGui.QMainWindow
                 print('device==sender')
                 device[index].setChecked(T..)
                 inp _ pygame.midi.Input(x)
-            else:
+            ____
                 device[index].setChecked(False)
 
         getMidi _ T..
@@ -552,7 +552,7 @@ c_ mainWindow(QtGui.QMainWindow
                 f.close()
             except ValueError:
                 print("Oops!  That was not a valid path.  Try again...")
-        else:
+        ____
             print("Do nothing")
 
     ___ keyPressEvent , e
@@ -608,7 +608,7 @@ c_ mainWindow(QtGui.QMainWindow
             currentQWidget.deleteLater()
             tabs.removeTab(currentIndex)
 
-        else:
+        ____
             QtGui.QMessageBox.about , "Warning", "Do not close this tab")
 
     ___ updateDict , index

@@ -1,4 +1,4 @@
-____ PySide.?C.. _____ *
+____ PySide.?C.. _____ _
 ____ PySide.QtGui _____ *
 
 c_ splineRampWidget(?W..

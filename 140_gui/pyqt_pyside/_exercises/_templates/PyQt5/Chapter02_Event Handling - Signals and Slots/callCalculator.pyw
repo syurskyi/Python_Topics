@@ -2,11 +2,11 @@ _____ ___
 
 ____ ?.?W.. _____ ?D.., ?A..
 
-____ demoCalculator _____ *
+____ demoCalculator _____ _
 
-c_ MyForm(?D..
+c_ MyForm ?D..
     ___  -
-        s__. - ()
+        s__. -
         ui _ Ui_Dialog()
         ui.setupUi
         ui.pushButtonPlus.c___.c..(addtwonum)
@@ -18,11 +18,11 @@ c_ MyForm(?D..
     ___ addtwonum
         __ len(ui.lineEditFirstNumber.t..())!_0:
             a_int(ui.lineEditFirstNumber.t..())
-        else:
+        ____
             a_0
         __ len(ui.lineEditSecondNumber.t..())!_0:
             b_int(ui.lineEditSecondNumber.t..())
-        else:
+        ____
             b_0
         sum_a+b
         ui.labelResult.sT..("Addition: " +st.(sum))
@@ -30,11 +30,11 @@ c_ MyForm(?D..
     ___ subtracttwonum
         __ len(ui.lineEditFirstNumber.t..())!_0:
             a_int(ui.lineEditFirstNumber.t..())
-        else:
+        ____
             a_0
         __ len(ui.lineEditSecondNumber.t..())!_0:
             b_int(ui.lineEditSecondNumber.t..())
-        else:
+        ____
             b_0
         diff_a-b
         ui.labelResult.sT..("Substraction: " +st.(diff))
@@ -42,11 +42,11 @@ c_ MyForm(?D..
     ___ multiplytwonum
         __ len(ui.lineEditFirstNumber.t..())!_0:
             a_int(ui.lineEditFirstNumber.t..())
-        else:
+        ____
             a_0
         __ len(ui.lineEditSecondNumber.t..())!_0:
             b_int(ui.lineEditSecondNumber.t..())
-        else:
+        ____
             b_0
         mult_a*b
         ui.labelResult.sT..("Multiplication: " +st.(mult))
@@ -54,11 +54,11 @@ c_ MyForm(?D..
     ___ dividetwonum
         __ len(ui.lineEditFirstNumber.t..())!_0:
             a_int(ui.lineEditFirstNumber.t..())
-        else:
+        ____
             a_0
         __ len(ui.lineEditSecondNumber.t..())!_0:
             b_int(ui.lineEditSecondNumber.t..())
-        else:
+        ____
             b_0
         division_a/b
         ui.labelResult.sT..("Division: " +st.(round(division,2)))

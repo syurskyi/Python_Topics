@@ -22,14 +22,14 @@ c_ listWidgetClass(QListWidget
         mimedata _ event.mimeData()
         __ mimedata.hasUrls(
             event.accept()
-        else:
+        ____
             event.ignore()
 
     ___ dragMoveEvent , event
         mimedata _ event.mimeData()
         __ mimedata.hasUrls(
             event.accept()
-        else:
+        ____
             event.ignore()
 
     ___ addFile , path

@@ -1,5 +1,5 @@
-____ PySide.?C.. _____ *
-____ PySide.QtGui _____ *
+____ PySide.?C.. _____ _
+____ PySide.QtGui _____ _
 
 ____ widgets _____ imageConverter_UIs as ui
 ____ widgets _____ filesWidget

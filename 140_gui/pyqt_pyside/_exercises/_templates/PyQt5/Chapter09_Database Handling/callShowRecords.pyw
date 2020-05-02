@@ -43,7 +43,7 @@ c_ MyForm(?D..
             ui.lR___.sT..("")
             ui.lineEditEmailAddress.sT..(row[0])
             ui.lineEditPassword.sT..(row[1])
-        else:
+        ____
             rowNo +_ 1
             ui.lR___.sT..("This is the first row")
        
@@ -58,7 +58,7 @@ c_ MyForm(?D..
             ui.lR___.sT..("")
             ui.lineEditEmailAddress.sT..(row[0])
             ui.lineEditPassword.sT..(row[1])
-        else:
+        ____
             rowNo -_ 1
             ui.lR___.sT..("This is the last row")
 

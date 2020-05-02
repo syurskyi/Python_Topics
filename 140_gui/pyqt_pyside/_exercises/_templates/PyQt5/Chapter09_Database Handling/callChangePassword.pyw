@@ -22,13 +22,13 @@ c_ MyForm(?D..
             row _ cur.fetchone()
             __ row__None:
                 ui.lR___.sT..("Sorry, Incorrect email address or password ")
-            else:
+            ____
                 __ ui.lineEditNewPassword.t..()__ ui.lineEditRePassword.t..(
                     updateStatement_"UPDATE Users set Password = '" + ui.lineEditNewPassword.t..()+"' WHERE EmailAddress like '"+ui.lineEditEmailAddress.t..()+"'"
                     with conn:
                         cur.execute(updateStatement)
                         ui.lR___.sT..("Password successfully changed")
-                else:
+                ____
                     ui.lR___.sT..("The two passwords don't match")
         except Error as e:
             ui.lR___.sT..("Error in accessing row")

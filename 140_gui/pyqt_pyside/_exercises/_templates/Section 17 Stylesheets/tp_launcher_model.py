@@ -90,7 +90,7 @@ c_ TP_Launcher_Model(object
                 subprocess.Popen(_file)
             except:
                 os.system(_open_doc[_platform] + _file)
-        else:
+        ____
             raise ValueError('Exe file no longer exists')
 
     ___ run_youtube 

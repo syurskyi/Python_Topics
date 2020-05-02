@@ -4,7 +4,7 @@ _____ time
 
 ____ ?.?W.. _____ ?D.., ?A..
 
-____ demoTwoProgressBars _____ *
+____ demoTwoProgressBars _____ _
 
 c_ MyForm(?D..
     ___  -  

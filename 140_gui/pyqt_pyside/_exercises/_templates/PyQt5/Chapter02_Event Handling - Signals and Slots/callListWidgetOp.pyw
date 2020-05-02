@@ -2,7 +2,7 @@ _____ ___
 
 ____ ?.?W.. _____ ?D.., ?A.., QInputDialog, QListWidgetItem
 
-____ demoListWidgetOp _____ *
+____ demoListWidgetOp _____ _
 
 c_ MyForm(?D..
     ___  -  

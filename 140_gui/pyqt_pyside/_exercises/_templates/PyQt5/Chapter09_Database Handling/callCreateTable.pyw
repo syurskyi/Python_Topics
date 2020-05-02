@@ -19,7 +19,7 @@ c_ MyForm(?D..
         global tabledefinition         
         __ tabledefinition__"":
             tabledefinition_"CREATE TABLE IF NOT EXISTS "+ ui.lineEditTableName.t..()+"("+ui.lineEditColumnName.t..()+" "+ui.comboBoxDataType.itemText(ui.comboBoxDataType.currentIndex())
-        else:
+        ____
             tabledefinition+_", "+ui.lineEditColumnName.t..()+" "+ui.comboBoxDataType.itemText(ui.comboBoxDataType.currentIndex())
         ui.lineEditColumnName.sT..("")
         ui.lineEditColumnName.setFocus()

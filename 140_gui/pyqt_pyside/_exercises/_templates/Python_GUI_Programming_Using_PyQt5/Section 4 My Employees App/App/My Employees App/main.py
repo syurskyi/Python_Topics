@@ -1,4 +1,4 @@
-____ ?.?W.. _____ *
+____ ?.?W.. _____ _
 ____ ?.QtGui _____ QPixmap,QFont
 _____ ___,os
 _____ sqlite3
@@ -126,7 +126,7 @@ c_ Main(?W..
                     QMessageBox.information ,"Warning!!!","Person has not been deleted")
 
 
-        else:
+        ____
             QMessageBox.information , "Warning!!!", "Please select a person to delete")
 
     ___ updateEmployee 
@@ -137,7 +137,7 @@ c_ Main(?W..
             updateWindow_UpdateEmployee()
             close()
 
-        else:
+        ____
             QMessageBox.information , "Warning!!!", "Please select a person to update")
 
 
@@ -266,7 +266,7 @@ c_ UpdateEmployee(?W..
             except:
                 QMessageBox.information , "Warning", "Person has not been updated")
 
-        else:
+        ____
             QMessageBox.information , "Warning", "Fields can not be empty")
 
 
@@ -378,7 +378,7 @@ c_ AddEmployee(?W..
             except:
                 QMessageBox.information , "Warning", "Person has not been added")
 
-        else:
+        ____
             QMessageBox.information , "Warning", "Fields can not be empty")
 
 

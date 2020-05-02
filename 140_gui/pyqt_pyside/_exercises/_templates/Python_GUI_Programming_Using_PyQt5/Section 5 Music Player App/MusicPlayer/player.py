@@ -1,5 +1,5 @@
 _____ ___,os
-____ ?.?W.. _____ *
+____ ?.?W.. _____ _
 ____ ?.QtGui _____ QIcon
 ____ ?.?C.. _____ QSize,Qt,QTimer
 _____ random,time
@@ -242,7 +242,7 @@ c_ Player(?W..
             muteButton.setToolTip("UnMute")
             volumeSlider.setValue(0)
 
-        else:
+        ____
             mixer.music.set_volume(0.7)
             muted _ False
             muteButton.setToolTip("Mute")

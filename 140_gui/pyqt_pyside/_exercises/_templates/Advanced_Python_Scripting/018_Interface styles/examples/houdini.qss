@@ -642,7 +642,7 @@ QGroupBox::title {
 
 
 /************************ QSpinBox *******************/
-/*,QDoubleSpinBox*/
+/_,QDoubleSpinBox*/
 
 QSpinBox::up-button, QDoubleSpinBox::up-button, QTimeEdit::up-button  {
     /*background:QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #535353, stop: 1 #3a3a3a);*/
