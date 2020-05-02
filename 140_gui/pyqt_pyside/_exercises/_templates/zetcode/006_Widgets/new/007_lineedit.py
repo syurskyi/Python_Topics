@@ -4,7 +4,7 @@
 
 ______ ___
 ____ ?.?W.. ______ (W.., ?L..,
-                             QLineEdit, ?A..)
+                             ?L.., ?A..)
 
 
 c_ Example(W..):
@@ -16,7 +16,7 @@ c_ Example(W..):
 
     ___ initUI
         lbl _ ?L..(
-        qle _ QLineEdit(
+        qle _ ?L..(
 
         qle.m..(60, 100)
         lbl.m..(60, 40)

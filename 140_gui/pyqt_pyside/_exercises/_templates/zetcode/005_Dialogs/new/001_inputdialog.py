@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 
-____ ?.?W.. ______ (W.., ?P.., QLineEdit,
+____ ?.?W.. ______ (W.., ?P.., ?L..,
                              QInputDialog, ?A..)
 ______ ___
 
@@ -19,7 +19,7 @@ c_ Example(W..):
         btn.m..(20, 20)
         btn.c__.c..(showDialog)
 
-        le _ QLineEdit(
+        le _ ?L..(
         le.m..(130, 22)
 
         sG__(300, 300, 290, 150)

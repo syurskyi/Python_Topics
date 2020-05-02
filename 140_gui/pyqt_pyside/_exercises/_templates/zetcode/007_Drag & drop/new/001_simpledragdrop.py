@@ -3,7 +3,7 @@
 
 
 ____ ?.?W.. ______ (?P.., W..,
-                             QLineEdit, ?A..)
+                             ?L.., ?A..)
 ______ ___
 
 
@@ -34,7 +34,7 @@ c_ Example(W..):
         ?
 
     ___ initUI
-        edit _ QLineEdit('',
+        edit _ ?L..('',
         edit.setDragEnabled(True)
         edit.m..(30, 65)
 
