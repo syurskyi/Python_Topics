@@ -51,4 +51,4 @@ __ _ ____ __ _____
     clientThread_ClientThread(window)
     clientThread.start()
     window.exec()
-    ___.e..(app.exec_())
+    ___.e..(app.e

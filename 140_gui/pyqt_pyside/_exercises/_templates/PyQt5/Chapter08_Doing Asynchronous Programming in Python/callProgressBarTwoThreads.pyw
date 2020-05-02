@@ -40,6 +40,6 @@ __ _ ____ __ _____
     w.exec()
     thread1.join()
     thread2.join()
-    ___.e..(app.exec_())
+    ___.e..(app.e
 
 

@@ -362,7 +362,7 @@ __ __name__ __ '__main__':
     ?W...?A...setQuitOnLastWindowClosed(False)
     ex _ TP_Launcher_GUI()
     ex.s..
-    ___.e..(app.exec_())
+    ___.e..(app.e
 
 # Copyright (c) 2017 Trevor Payne
 #

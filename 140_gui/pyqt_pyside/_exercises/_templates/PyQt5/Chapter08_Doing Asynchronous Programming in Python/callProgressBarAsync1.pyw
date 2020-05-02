@@ -36,6 +36,6 @@ __ _ ____ __ _____
     with loop:
         loop.run_forever()
     loop.close()
-    ___.e..(app.exec_())
+    ___.e..(app.e
 
 

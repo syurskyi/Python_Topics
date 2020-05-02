@@ -35,6 +35,6 @@ __ _ ____ __ _____
     thread1 _ myThread(w)
     thread1.start()
     w.exec()
-    ___.e..(app.exec_())
+    ___.e..(app.e
 
 

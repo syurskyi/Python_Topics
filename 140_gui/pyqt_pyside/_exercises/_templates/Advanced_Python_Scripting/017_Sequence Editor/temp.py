@@ -136,4 +136,4 @@ __ __name__ __ '__main__':
 
     view.set_zoom(2.0)
     view.s..
-___.e..(app.exec_())
+___.e..(app.e

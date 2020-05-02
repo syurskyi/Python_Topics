@@ -262,7 +262,7 @@ c_ Player(?W..
 ___ main(
     App _ ?A..(___.argv)
     window _ Player()
-    ___.e..(App.exec_())
+    ___.e..(App.e
 
 
 __ __name__ __ '__main__':

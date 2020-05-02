@@ -248,4 +248,4 @@ __ __name__ __ '__main__':
     app _ QtGui.?A..(___.argv)
     window _ MainWindow()
     window.s..
-___.e..(app.exec_())
+___.e..(app.e

@@ -19,4 +19,4 @@ w.setWindowTitle("Hello World!")
 # Show window
 w.s..
 
-___.e..(a.exec_())
+___.e..(a.e

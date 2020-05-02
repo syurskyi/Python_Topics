@@ -20,4 +20,4 @@ __ _ ____ __ _____
     app _ ?A..(___.argv)
     myapp _ MyForm()
     myapp.s..
-    ___.e..(app.exec_())
+    ___.e..(app.e

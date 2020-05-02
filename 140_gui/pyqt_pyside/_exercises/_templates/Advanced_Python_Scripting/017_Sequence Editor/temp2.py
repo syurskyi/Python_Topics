@@ -781,7 +781,7 @@ ___ main(
     # ex = Canvas()
     ex _ mainWindow()
     ex.s..
-    ___.e..(app.exec_())
+    ___.e..(app.e
 
 
 __ __name__ __ '__main__':

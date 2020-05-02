@@ -55,7 +55,7 @@ c_ AppWindow(QMainWindow
 app _ ?A..(___.argv)
 w _ AppWindow()
 w.s..
-___.e..(app.exec_())
+___.e..(app.e
 
 
 

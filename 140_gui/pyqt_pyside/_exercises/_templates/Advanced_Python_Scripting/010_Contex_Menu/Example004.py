@@ -16,4 +16,4 @@ ___ openMenu(position
 
 tableWidget.customContextMenuRequested.c..(openMenu)
 tableWidget.s..
-___.e..(app.exec_())
+___.e..(app.e

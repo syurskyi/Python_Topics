@@ -73,4 +73,4 @@ __ _ ____ __ _____
     serverThread_ServerThread(window)
     serverThread.start()
     window.exec()
-    ___.e..(app.exec_())
+    ___.e..(app.e

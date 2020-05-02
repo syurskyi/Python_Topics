@@ -45,6 +45,6 @@ __ _ ____ __ _____
     threads.append(thread2)
     for t in threads:
         t.join()
-    ___.e..(app.exec_())
+    ___.e..(app.e
 
 

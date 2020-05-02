@@ -97,7 +97,7 @@ c_ resourceCompileClass(QMainWindow
 app _ ?A..(___.argv)
 window _ resourceCompileClass()
 window.s..
-___.e..(app.exec_())
+___.e..(app.e
 
 
 

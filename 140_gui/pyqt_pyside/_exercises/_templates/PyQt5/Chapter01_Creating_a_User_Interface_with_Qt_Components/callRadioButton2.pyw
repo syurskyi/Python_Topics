@@ -9,13 +9,13 @@ c_ MyForm(?D..
         s__. - ()
         ui _ Ui_Dialog()
         ui.setupUi
-        ui.radioButtonMedium.toggled.c..(dispSelected)
-        ui.radioButtonLarge.toggled.c..(dispSelected)
-        ui.radioButtonXL.toggled.c..(dispSelected)
-        ui.radioButtonXXL.toggled.c..(dispSelected)
-        ui.radioButtonDebitCard.toggled.c..(dispSelected)
-        ui.radioButtonNetBanking.toggled.c..(dispSelected)
-        ui.radioButtonCashOnDelivery.toggled.c..(dispSelected)
+        ui.radioButtonMedium.t___.c..(dispSelected)
+        ui.radioButtonLarge.t___.c..(dispSelected)
+        ui.radioButtonXL.t___.c..(dispSelected)
+        ui.radioButtonXXL.t___.c..(dispSelected)
+        ui.radioButtonDebitCard.t___.c..(dispSelected)
+        ui.radioButtonNetBanking.t___.c..(dispSelected)
+        ui.radioButtonCashOnDelivery.t___.c..(dispSelected)
         s..
 
     ___ dispSelected
@@ -41,4 +41,4 @@ __ _ ____ __ _____
     app _ ?A..(___.argv)
     w _ MyForm()
     w.s..
-    ___.e..(app.exec_())
+    ___.e..(app.e

@@ -311,7 +311,7 @@
   </connection>
   <connection>
    <sender>radioButton_2</sender>
-   <signal>toggled(bool)</signal>
+   <signal>t___(bool)</signal>
    <receiver>treeWidget</receiver>
    <slot>setEnabled(bool)</slot>
    <hints>

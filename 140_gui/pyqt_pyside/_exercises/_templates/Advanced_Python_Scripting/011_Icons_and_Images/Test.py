@@ -327,7 +327,7 @@ c_ MainWindow(QtGui.?W..
 
         setLayout(mainLayout)
 
-        ___.e..(app.exec_())
+        ___.e..(app.e
 
     ___ dirTreeClicked 
         print 'dirTreeClicked'

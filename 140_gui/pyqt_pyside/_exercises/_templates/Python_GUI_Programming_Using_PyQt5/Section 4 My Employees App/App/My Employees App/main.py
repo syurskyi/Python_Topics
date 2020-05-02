@@ -386,6 +386,6 @@ c_ AddEmployee(?W..
 ___ main(
     APP_?A..(___.argv)
     window_Main()
-    ___.e..(APP.exec_())
+    ___.e..(APP.e
 __ __name__ __ '__main__':
     main()
