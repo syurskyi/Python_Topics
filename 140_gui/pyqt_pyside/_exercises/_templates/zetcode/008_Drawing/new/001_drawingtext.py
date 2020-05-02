@@ -3,7 +3,7 @@
 
 ______ ___
 ____ ?.?W.. ______ W.., ?A..
-____ ?.?G__ ______ QPainter, QColor, QFont
+____ ?.?G__ ______ QPainter, ?C.., QFont
 ____ ?.?C.. ______ __
 
 
@@ -28,7 +28,7 @@ c_ Example(W..):
         qp.end
 
     ___ drawText(self, event, qp):
-        qp.setPen(QColor(168, 34, 3))
+        qp.setPen(?C..(168, 34, 3))
         qp.setFont(QFont('Decorative', 10))
         qp.drawText(event.rect , __.AC., text)
 

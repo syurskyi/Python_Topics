@@ -24,7 +24,7 @@ c_ Example(W..):
 
         vbox.aW..(btn)
 
-        btn.c__.c..(showDialog)
+        btn.c__.c..(sD..)
 
         lbl _ ?L..('Knowledge only matters',
         lbl.m..(130, 20)

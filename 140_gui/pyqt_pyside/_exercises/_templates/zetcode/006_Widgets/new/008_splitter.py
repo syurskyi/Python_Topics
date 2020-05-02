@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 
-____ ?.?W.. ______ (W.., ?HB.., QFrame,
+____ ?.?W.. ______ (W.., ?HB.., ?F.,
                              QSplitter, QStyleFactory, ?A..)
 ____ ?.?C.. ______ __
 ______ ___
@@ -18,14 +18,14 @@ c_ Example(W..):
     ___ initUI
         hbox _ ?HB..(
 
-        topleft _ QFrame(
-        topleft.setFrameShape(QFrame.StyledPanel)
+        topleft _ ?F.(
+        topleft.setFrameShape(?F..StyledPanel)
 
-        topright _ QFrame(
-        topright.setFrameShape(QFrame.StyledPanel)
+        topright _ ?F.(
+        topright.setFrameShape(?F..StyledPanel)
 
-        bottom _ QFrame(
-        bottom.setFrameShape(QFrame.StyledPanel)
+        bottom _ ?F.(
+        bottom.setFrameShape(?F..StyledPanel)
 
         splitter1 _ QSplitter(__.H..)
         splitter1.aW..(topleft)

@@ -22,7 +22,7 @@ c_ Example(?M..):
         openFile _ QAction(QIcon('open.png'), 'Open',
         openFile.setShortcut('Ctrl+O')
         openFile.setStatusTip('Open new File')
-        openFile.triggered.c..(showDialog)
+        openFile.triggered.c..(sD..)
 
         menubar _ menuBar
         fileMenu _ menubar.addMenu('&File')

@@ -5,7 +5,7 @@
 ____ ?.?W.. ______ (W.., ?S.., ?A..,
                              ?HB.., ?VB..)
 ____ ?.?C.. ______ QObject, __, pyqtSignal
-____ ?.?G__ ______ QPainter, QFont, QColor, QPen
+____ ?.?G__ ______ QPainter, QFont, ?C.., QPen
 ______ ___
 
 
@@ -56,20 +56,20 @@ c_ BurningWidget(W..):
 
         __ value >= MAX_CAPACITY:
 
-            qp.setPen(QColor(255, 255, 255))
-            qp.setBrush(QColor(255, 255, 184))
+            qp.setPen(?C..(255, 255, 255))
+            qp.setBrush(?C..(255, 255, 184))
             qp.drawRect(0, 0, full, h)
-            qp.setPen(QColor(255, 175, 175))
-            qp.setBrush(QColor(255, 175, 175))
+            qp.setPen(?C..(255, 175, 175))
+            qp.setBrush(?C..(255, 175, 175))
             qp.drawRect(full, 0, till - full, h)
 
         else:
 
-            qp.setPen(QColor(255, 255, 255))
-            qp.setBrush(QColor(255, 255, 184))
+            qp.setPen(?C..(255, 255, 255))
+            qp.setBrush(?C..(255, 255, 184))
             qp.drawRect(0, 0, till, h)
 
-        pen _ QPen(QColor(20, 20, 20), 1,
+        pen _ QPen(?C..(20, 20, 20), 1,
                    __.SolidLine)
 
         qp.setPen(pen)

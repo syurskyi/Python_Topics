@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 ____ ?.?W.. ______ W.., ?A..
-____ ?.?G__ ______ QPainter, QColor, QBrush
+____ ?.?G__ ______ QPainter, ?C.., QBrush
 ______ ___
 
 
@@ -25,17 +25,17 @@ c_ Example(W..):
         qp.end
 
     ___ drawRectangles(self, qp):
-        col _ QColor(0, 0, 0)
+        col _ ?C..(0, 0, 0)
         col.setNamedColor('#d4d4d4')
         qp.setPen(col)
 
-        qp.setBrush(QColor(200, 0, 0))
+        qp.setBrush(?C..(200, 0, 0))
         qp.drawRect(10, 15, 90, 60)
 
-        qp.setBrush(QColor(255, 80, 0, 160))
+        qp.setBrush(?C..(255, 80, 0, 160))
         qp.drawRect(130, 15, 90, 60)
 
-        qp.setBrush(QColor(25, 0, 90, 200))
+        qp.setBrush(?C..(25, 0, 90, 200))
         qp.drawRect(250, 15, 90, 60)
 
 

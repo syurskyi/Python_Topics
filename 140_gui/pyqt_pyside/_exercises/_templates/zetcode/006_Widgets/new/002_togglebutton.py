@@ -3,8 +3,8 @@
 
 
 ____ ?.?W.. ______ (W.., ?P..,
-                             QFrame, ?A..)
-____ ?.?G__ ______ QColor
+                             ?F., ?A..)
+____ ?.?G__ ______ ?C..
 ______ ___
 
 
@@ -17,7 +17,7 @@ c_ Example(W..):
 
     ___ initUI
 
-        col _ QColor(0, 0, 0)
+        col _ ?C..(0, 0, 0)
 
         redb _ ?P..('Red',
         redb.setCheckable(T..)
@@ -37,9 +37,9 @@ c_ Example(W..):
 
         blueb.c__[bool].c..(setColor)
 
-        square _ QFrame(
+        square _ ?F.(
         square.sG__(150, 20, 100, 100)
-        square.setStyleSheet("QWidget { background-color: %s }" %
+        square.sSS..("QWidget { background-color: %s }" %
                                   col.name())
 
         sG__(300, 300, 280, 170)
@@ -62,7 +62,7 @@ c_ Example(W..):
         else:
             col.setBlue(val)
 
-        square.setStyleSheet("QFrame { background-color: %s }" %
+        square.sSS..("QFrame { background-color: %s }" %
                                   col.name())
 
 
