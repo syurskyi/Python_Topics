@@ -63,7 +63,7 @@ c_ BurningWidget(W..):
             qp.setBrush(?C..(255, 175, 175))
             qp.drawRect(full, 0, till - full, h)
 
-        else:
+        ____
 
             qp.setPen(?C..(255, 255, 255))
             qp.setBrush(?C..(255, 255, 184))

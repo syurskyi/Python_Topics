@@ -18,7 +18,7 @@ c_ Button(?P..):
 
         __ e.mimeData .hasFormat('text/plain'):
             e.accept
-        else:
+        ____
             e.ignore
 
     ___ dropEvent(self, e):

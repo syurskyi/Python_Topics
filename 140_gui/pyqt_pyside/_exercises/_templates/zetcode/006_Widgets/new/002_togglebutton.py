@@ -52,14 +52,14 @@ c_ Example(W..):
 
         __ pressed:
             val _ 255
-        else:
+        ____
             val _ 0
 
         __ source.text  __ "Red":
             col.setRed(val)
         elif source.text  __ "Green":
             col.setGreen(val)
-        else:
+        ____
             col.setBlue(val)
 
         square.sSS..("QFrame { background-color: %s }" %

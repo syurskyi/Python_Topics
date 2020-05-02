@@ -46,7 +46,7 @@ c_ Example(W..):
         __ timer.isActive :
             timer.stop
             btn.sT..('Start')
-        else:
+        ____
             timer.start(100,
             btn.sT..('Stop')
 
