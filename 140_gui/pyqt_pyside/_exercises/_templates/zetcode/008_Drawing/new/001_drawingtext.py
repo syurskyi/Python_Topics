@@ -30,7 +30,7 @@ c_ Example(W..):
     ___ drawText(self, event, qp):
         qp.setPen(QColor(168, 34, 3))
         qp.setFont(QFont('Decorative', 10))
-        qp.drawText(event.rect , __.AlignCenter, text)
+        qp.drawText(event.rect , __.AC., text)
 
 
 __ _____ __ _______
