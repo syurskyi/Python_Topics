@@ -17,7 +17,7 @@ class SampleWindow(QtGui.QWidget):
         self.lineEdit.returnPressed.connect(self.on_return)
         self.lineEdit.selectionChanged.connect(self.on_selection)
         self.lineEdit.selectionChanged.connect(self.on_selection)
-        self.lineEdit.textChanged["const QString&"].connect(self.on_text_changed)
+        self.lineEdit.tC..["const QString&"].connect(self.on_text_changed)
         self.lineEdit.textEdited["const QString&"].connect(self.on_text_edited)
         lineEdit2 = QtGui.QLineEdit()
         button = QtGui.QPushButton("Edit the text programmatically")

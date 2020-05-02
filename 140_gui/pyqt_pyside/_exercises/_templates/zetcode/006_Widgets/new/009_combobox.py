@@ -35,7 +35,7 @@ c_ Example(W..):
 
     ___ onActivated(self, text):
         lbl.sT..(text)
-        lbl.adjustSize
+        lbl.aS..
 
 
 __ _____ __ _______

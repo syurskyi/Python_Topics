@@ -293,7 +293,7 @@ class mainWindow(QtGui.QMainWindow):
         self.linedit = QtGui.QLineEdit("")
         self.linedit.setPlaceholderText("Set Midi Note for Song Sequence")
         # self.linedit.setEnabled(False)
-        self.linedit.textChanged.connect(self.setMidiNote)
+        self.linedit.tC...connect(self.setMidiNote)
 
         # add combo selection
         self.createCombo()

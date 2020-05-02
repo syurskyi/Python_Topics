@@ -11,7 +11,7 @@ class MyWidget(QWidget):
         button.clicked.connect(self.action)
         line = QLineEdit()
         layout.addWidget(line)
-        line.textChanged.connect(self.text)
+        line.tC...connect(self.text)
         # self.connect(button, SIGNAL('clicked()'),
         #              self, SLOT('action()'))
 

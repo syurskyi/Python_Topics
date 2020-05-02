@@ -17,7 +17,7 @@ class myWidget(QWidget):
         layout.addWidget(button)
         line = QLineEdit()
         layout.addWidget(line)
-        line.textChanged.connect(self.text)
+        line.tC...connect(self.text)
         # first version
         # button.clicked.connect(self.action)
         # second version

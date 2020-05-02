@@ -9,7 +9,7 @@
 #         layout.aW.. ?
 #         line _ ?L..
 #         l__.aW.. ?
-#         l__.textChanged.c.. t..
+#         l__.tC...c.. t..
 #         # first version
 #         # button.clicked.c..(self.action)
 #         # second version

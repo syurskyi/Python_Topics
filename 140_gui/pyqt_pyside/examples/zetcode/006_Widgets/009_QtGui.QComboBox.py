@@ -42,7 +42,7 @@ class Example(QtGui.QWidget):
     def onActivated(self, text):
 
         self.lbl.setText(text)
-        self.lbl.adjustSize()
+        self.lbl.aS..()
 
 
 # def start():

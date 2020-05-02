@@ -28,7 +28,7 @@ class Example(QtGui.QWidget):
         qle.move(60, 100)
         self.lbl.move(60, 40)
 
-        qle.textChanged[str].connect(self.onChanged)
+        qle.tC..[str].connect(self.onChanged)
 
         self.setGeometry(300, 300, 280, 170)
         self.setWindowTitle('QtGui.QLineEdit')
@@ -37,7 +37,7 @@ class Example(QtGui.QWidget):
     def onChanged(self, text):
 
         self.lbl.setText(text)
-        self.lbl.adjustSize()
+        self.lbl.aS..()
 
 # def start():
 #     global form
