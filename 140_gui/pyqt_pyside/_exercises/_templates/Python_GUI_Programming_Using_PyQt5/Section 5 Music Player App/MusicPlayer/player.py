@@ -31,8 +31,8 @@ c_ Player(?W..
     ___ widgets 
         # #######################progress bar#############
         progressBar _ QProgressBar()
-        progressBar.setTextVisible(False)
-        progressBar.setStyleSheet(style.progressBarStyle())
+        pB__.setTextVisible(False)
+        pB__.setStyleSheet(style.progressBarStyle())
         # #######################Labels###################
         songTimerLabel_QLabel("0:00")
         songLenthLabel_QLabel("/ 0:00")
@@ -78,7 +78,7 @@ c_ Player(?W..
         # ####################Volume Slider#################
         volumeSlider_QSlider(Qt.Horizontal)
         volumeSlider.setToolTip("Volume")
-        volumeSlider.setValue(70)
+        volumeSlider.sV..(70)
         volumeSlider.setMinimum(0)
         volumeSlider.setMaximum(100)
         mixer.music.set_volume(0.7)
@@ -106,7 +106,7 @@ c_ Player(?W..
 
         # ##################Adding Widgets#########################
         # #################Top layout widgets######################
-        topLayout.addWidget(progressBar)
+        topLayout.addWidget(pB__)
         topLayout.addWidget(songTimerLabel)
         topLayout.addWidget(songLenthLabel)
 
@@ -165,8 +165,8 @@ c_ Player(?W..
             min, sec _ divmod(songLength, 60)
 
             songLenthLabel.sT..("/ "+st.(min)+":"+st.(sec))
-            progressBar.setValue(0)
-            progressBar.setMaximum(songLength)
+            pB__.sV..(0)
+            pB__.setMaximum(songLength)
 
         except:
             pass
@@ -193,8 +193,8 @@ c_ Player(?W..
             min, sec _ divmod(songLength, 60)
 
             songLenthLabel.sT..("/ " + st.(min) + ":" + st.(sec))
-            progressBar.setValue(0)
-            progressBar.setMaximum(songLength)
+            pB__.sV..(0)
+            pB__.setMaximum(songLength)
 
         except:
             pass
@@ -221,8 +221,8 @@ c_ Player(?W..
             min, sec _ divmod(songLength, 60)
 
             songLenthLabel.sT..("/ " + st.(min) + ":" + st.(sec))
-            progressBar.setValue(0)
-            progressBar.setMaximum(songLength)
+            pB__.sV..(0)
+            pB__.setMaximum(songLength)
 
         except:
             pass
@@ -240,20 +240,20 @@ c_ Player(?W..
             muted _ T..
             muteButton.setIcon(QIcon("icons/unmuted.png"))
             muteButton.setToolTip("UnMute")
-            volumeSlider.setValue(0)
+            volumeSlider.sV..(0)
 
         ____
             mixer.music.set_volume(0.7)
             muted _ False
             muteButton.setToolTip("Mute")
             muteButton.setIcon(QIcon("icons/mute.png"))
-            volumeSlider.setValue(70)
+            volumeSlider.sV..(70)
 
     ___ updateProgressBar 
         global count
         global songLength
         count +_1
-        progressBar.setValue(count)
+        pB__.sV..(count)
         songTimerLabel.sT..(time.strftime("%M:%S",time.gmtime(count)))
         __ count __ songLength:
             timer.stop()

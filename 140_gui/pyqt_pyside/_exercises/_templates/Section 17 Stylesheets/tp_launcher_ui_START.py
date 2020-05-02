@@ -318,10 +318,10 @@ c_ TP_Launcher_GUI(?W...?W..
         names _ [_app_lw.item(i).t..() ___ i __ range(c)]
         ws _ get_workspace()
         _tp_launcher.reorder_apps(ws, names)
-        _settings.setValue('CurrentWorkspace', ws)
+        _settings.sV..('CurrentWorkspace', ws)
         _tp_launcher.write_json_file(_json_file)
-        _settings.setValue('PosX', int(x()))
-        _settings.setValue('PosY', int(y()))
+        _settings.sV..('PosX', int(x()))
+        _settings.sV..('PosY', int(y()))
 
     ___ _load_settings 
         __ 'CurrentWorkspace' in _settings.allKeys() an. \

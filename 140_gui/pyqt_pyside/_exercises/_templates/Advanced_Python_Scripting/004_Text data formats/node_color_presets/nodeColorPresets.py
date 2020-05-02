@@ -17,7 +17,7 @@ c_ ColorPresetPanel(nukescripts.PythonPanel
             knob_dict _ {"name": nuke.String_Knob("name_%s" % color, '', color),
                         "value": nuke.ColorChip_Knob('value_%s' % color, ''),
                         "delete": nuke.Boolean_Knob("delete_%s" % color, 'delete')}
-            knob_dict["value"].setValue(colors[color])
+            knob_dict["value"].sV..(colors[color])
             knob_dict["value"].clearFlag(nuke.STARTLINE)
             knob_dict["delete"].clearFlag(nuke.STARTLINE)
             list.ap..(knob_dict)
@@ -93,7 +93,7 @@ ___ set_tile_color(value_None
     __ value __ None:
         value _ nuke.getColor()
     ___ node in nuke.selectedNodes(
-        node.knob('tile_color').setValue(value)
+        node.knob('tile_color').sV..(value)
 
 
 ___ create_tile_color_menu(
@@ -114,7 +114,7 @@ ___ add_new_color(
         colors _ read_color_presets(path)
         valid_name _ False
         r, g, b _ nuke_hex_to_rgb(color)
-        while not valid_name:
+        w__ not valid_name:
             name _ nuke.getInput("Give a name to your color", name_color(r, g, b))
             __ name:
                 __ not name in colors.keys(

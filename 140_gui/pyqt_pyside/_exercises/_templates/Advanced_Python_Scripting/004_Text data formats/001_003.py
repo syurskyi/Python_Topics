@@ -35,7 +35,7 @@ c_ settings(
                  path_'')
         return d
 
-    ___ setValue , key, value
+    ___ sV.. , key, value
         data[key] _ value
         __write_file()
 
@@ -46,4 +46,4 @@ c_ settings(
         return data
 
 s _ settings('c:/mySettings.ini')
-s.setValue('app', 'Maya')
+s.sV..('app', 'Maya')

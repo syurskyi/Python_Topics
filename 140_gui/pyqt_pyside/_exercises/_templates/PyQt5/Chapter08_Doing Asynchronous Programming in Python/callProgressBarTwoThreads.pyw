@@ -23,9 +23,9 @@ c_ myThread (threading.Thread
       
    ___ run 
       print ("Starting " + name+"\n")
-      while counter <_100:
+      w__ counter <_100:
           time.sleep(1)
-          progreassBar.setValue(counter)
+          progreassBar.sV..(counter)
           counter+_10
       print ("Exiting " + name+"\n")
 

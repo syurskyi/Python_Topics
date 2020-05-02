@@ -167,7 +167,7 @@ c_ ImageContainer(?G...QFrame
         zoomSlider.setOrientation(?C...Qt.Horizontal)
         zoomSlider.setMinimum(THUMB_MIN)
         zoomSlider.setMaximum(THUMB_MAX)
-        zoomSlider.setValue(THUMB_WIDTH)
+        zoomSlider.sV..(THUMB_WIDTH)
         zoomSlider.setFixedWidth(128)
         zoomSlider.setFixedHeight(10)
 

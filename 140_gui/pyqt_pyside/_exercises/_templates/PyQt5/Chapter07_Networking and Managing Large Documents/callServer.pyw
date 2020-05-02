@@ -41,7 +41,7 @@ c_ ServerThread(Thread
         threads _ []
          
         tcpServer.listen(4) 
-        while T..:
+        w__ T..:
             global conn
             (conn, (ip,port)) _ tcpServer.accept()
             newthread _ ClientThread(ip,port,window)
@@ -62,7 +62,7 @@ c_ ClientThread(Thread
         
   
     ___ run  
-        while T.. :              
+        w__ T.. :
             global conn
             data _ conn.recv(1024)
             window.tE__Messages.ap..("Client: "+data.decode("utf-8"))

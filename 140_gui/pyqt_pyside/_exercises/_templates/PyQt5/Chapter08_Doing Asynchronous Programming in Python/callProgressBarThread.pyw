@@ -22,9 +22,9 @@ c_ myThread (threading.Thread
       
    ___ run 
       print ("Starting " + name)
-      while counter <_100:
+      w__ counter <_100:
           time.sleep(1)
-          w.ui.progressBar.setValue(counter)
+          w.ui.pB__.sV..(counter)
           counter+_10
       print ("Exiting " + name)
 

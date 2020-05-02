@@ -242,7 +242,7 @@ c_ pad1(?G...QGraphicsEllipseItem
         print(event.type())
 
     ___ isPlaying
-        while pygame.mixer.music.get_busy(
+        w__ pygame.mixer.music.get_busy(
             pygame.time.Clock().tick(2)
         playing _ False
         # self.updateColor("Blue")
@@ -457,7 +457,7 @@ c_ mainWindow(?G...QMainWindow
 
     ___ getMidiEvent
 
-        while getMidi:
+        w__ getMidi:
             # print("read to receive midi input")
 
             __ inp.poll(
@@ -772,7 +772,7 @@ c_ Player(
         mixer.init()
         mixer.music.load(songPath)
         mixer.music.play()
-        while pygame.mixer.music.get_busy(
+        w__ pygame.mixer.music.get_busy(
             pygame.time.Clock().tick(10)
 
 

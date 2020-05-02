@@ -19,7 +19,7 @@ frames _ []
 ___ f __ files:
     name, ext _ os.path.splitext(f)
     fullName _ name
-    while name[-1].isdigit(
+    w__ name[-1].isdigit(
         # print(name)
         name _ name[:-1]
     digits _ int(fullName.replace(name, ''))

@@ -44,9 +44,9 @@ c_ Ui_imageConverter(object
         start_btn.setObjectName("start_btn")
         verticalLayout.addWidget(start_btn)
         progressBar _ ?G...QProgressBar(centralwidget)
-        progressBar.setProperty("value", 0)
-        progressBar.setObjectName("progressBar")
-        verticalLayout.addWidget(progressBar)
+        pB__.setProperty("value", 0)
+        pB__.setObjectName("progressBar")
+        verticalLayout.addWidget(pB__)
         verticalLayout.setStretch(1, 1)
         imageConverter.setCentralWidget(centralwidget)
 

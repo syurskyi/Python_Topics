@@ -39,7 +39,7 @@ c_ ClientThread(Thread
        tcpClientA _ socket.socket(socket.AF_INET, socket.SOCK_STREAM)
        tcpClientA.c..((host, port))
         
-       while T..:
+       w__ T..:
            data _ tcpClientA.recv(BUFFER_SIZE)
            window.tE__Messages.ap..("Server: "+data.decode("utf-8"))
        tcpClientA.close() 

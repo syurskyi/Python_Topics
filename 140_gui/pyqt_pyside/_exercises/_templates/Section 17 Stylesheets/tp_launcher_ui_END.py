@@ -412,10 +412,10 @@ c_ TP_Launcher_GUI(?W...?W..
         names _ [_app_lw.item(i).t..() ___ i in range(count)]
         workspace _ get_workspace()
         _tp_launcher.reorder_apps(workspace, names)
-        _settings.setValue('CurrentWorkspace', workspace)
+        _settings.sV..('CurrentWorkspace', workspace)
         _tp_launcher.write_json_file(_json_file)
-        _settings.setValue('PosX', int(x()))
-        _settings.setValue('PosY', int(y()))
+        _settings.sV..('PosX', int(x()))
+        _settings.sV..('PosY', int(y()))
 
     ___ _load_settings
         ''' If there is a QSettings file and the json file exists,

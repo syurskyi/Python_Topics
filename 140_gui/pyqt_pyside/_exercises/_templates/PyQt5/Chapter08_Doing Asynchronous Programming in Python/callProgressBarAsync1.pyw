@@ -21,7 +21,7 @@ c_ MyForm(?D..
     async ___ updt(delay, ProgressBar
         ___ i __ range(101
             await asyncio.sleep(delay)
-            ProgressBar.setValue(i)
+            ProgressBar.sV..(i)
 
 ___ stopper(loop
     loop.stop()

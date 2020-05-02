@@ -249,7 +249,7 @@
    <sender>horizontalSlider</sender>
    <signal>valueChanged(int)</signal>
    <receiver>progressBar</receiver>
-   <slot>setValue(int)</slot>
+   <slot>sV..(int)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>43</x>
@@ -265,7 +265,7 @@
    <sender>horizontalSlider</sender>
    <signal>valueChanged(int)</signal>
    <receiver>spinBox</receiver>
-   <slot>setValue(int)</slot>
+   <slot>sV..(int)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>23</x>
@@ -281,7 +281,7 @@
    <sender>spinBox</sender>
    <signal>valueChanged(int)</signal>
    <receiver>horizontalSlider</receiver>
-   <slot>setValue(int)</slot>
+   <slot>sV..(int)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>17</x>
@@ -297,7 +297,7 @@
    <sender>spinBox</sender>
    <signal>valueChanged(int)</signal>
    <receiver>progressBar</receiver>
-   <slot>setValue(int)</slot>
+   <slot>sV..(int)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>16</x>
