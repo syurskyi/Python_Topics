@@ -17,7 +17,7 @@ c_ Example(W..):
     ___ initUI
         sG__(300, 300, 380, 250)
         sWT__('Bézier curve')
-        show
+        s..
 
     ___ paintEvent(self, e):
         qp _ ?P..

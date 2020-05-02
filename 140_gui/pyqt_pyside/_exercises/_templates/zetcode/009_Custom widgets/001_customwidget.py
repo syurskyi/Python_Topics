@@ -5,7 +5,7 @@
 ____ ?.?W.. ______ (W.., ?S.., ?A..,
                              ?HB.., ?VB..)
 ____ ?.?C.. ______ QObject, __, pyqtSignal
-____ ?.?G__ ______ ?P.., QFont, ?C.., QPen
+____ ?.?G__ ______ ?P.., QFont, ?C.., ?P..
 ______ ___
 
 
@@ -69,7 +69,7 @@ c_ BurningWidget(W..):
             qp.setBrush(?C..(255, 255, 184))
             qp.drawRect(0, 0, till, h)
 
-        pen _ QPen(?C..(20, 20, 20), 1,
+        pen _ ?P..(?C..(20, 20, 20), 1,
                    __.SolidLine)
 
         qp.setPen(pen)
@@ -79,7 +79,7 @@ c_ BurningWidget(W..):
         j _ 0
 
         ___ i __ ra..(step, 10 * step, step):
-            qp.drawLine(i, 0, i, 5)
+            qp.dL..(i, 0, i, 5)
             metrics _ qp.fontMetrics
             fw _ metrics.width(st.(num[j]))
             qp.drawText(i - fw / 2, h / 2, st.(num[j]))
@@ -116,7 +116,7 @@ c_ Example(W..):
 
         sG__(300, 300, 390, 210)
         sWT__('Burning widget')
-        show
+        s..
 
     ___ changeValue(self, value):
         c.updateBW.emit(value)

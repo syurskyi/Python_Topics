@@ -17,7 +17,7 @@ c_ Example(W..):
     ___ initUI
         sG__(300, 300, 355, 280)
         sWT__('Brushes')
-        show
+        s..
 
     ___ paintEvent(self, e):
         qp _ ?P..
