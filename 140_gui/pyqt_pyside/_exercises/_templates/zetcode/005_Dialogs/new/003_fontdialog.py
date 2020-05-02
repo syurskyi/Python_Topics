@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 ____ ?.?W.. ______ (W.., ?VB.., ?P..,
-                             QSizePolicy, ?L.., QFontDialog, QApplication)
+                             QSizePolicy, ?L.., QFontDialog, ?A..)
 ______ ___
 
 
@@ -43,6 +43,6 @@ c_ Example(W..):
 
 
 __ _____ __ _______
-    app _ QApplication(___.argv)
+    app _ ?A..(___.argv)
     ex _ Example
-    ___.exit(app.e..())
+    ___.e..(app.e..())

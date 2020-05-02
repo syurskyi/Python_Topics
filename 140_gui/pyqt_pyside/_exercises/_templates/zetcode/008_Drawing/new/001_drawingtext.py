@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 ______ ___
-____ ?.?W.. ______ W.., QApplication
+____ ?.?W.. ______ W.., ?A..
 ____ ?.QtGui ______ QPainter, QColor, QFont
 ____ ?.?C.. ______ __
 
@@ -34,6 +34,6 @@ c_ Example(W..):
 
 
 __ _____ __ _______
-    app _ QApplication(___.argv)
+    app _ ?A..(___.argv)
     ex _ Example
-    ___.exit(app.e..())
+    ___.e..(app.e..())

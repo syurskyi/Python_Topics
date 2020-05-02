@@ -4,7 +4,7 @@
 
 ______ ___
 ____ ?.?W.. ______ (W.., ?L..,
-                             QLineEdit, QApplication)
+                             QLineEdit, ?A..)
 
 
 c_ Example(W..):
@@ -33,6 +33,6 @@ c_ Example(W..):
 
 
 __ _____ __ _______
-    app _ QApplication(___.argv)
+    app _ ?A..(___.argv)
     ex _ Example
-    ___.exit(app.e..())
+    ___.e..(app.e..())

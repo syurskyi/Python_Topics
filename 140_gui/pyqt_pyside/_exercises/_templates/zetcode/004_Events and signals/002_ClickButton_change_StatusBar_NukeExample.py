@@ -45,7 +45,7 @@ __ _____ __ _______
     ___
         ______ n..
     ______ I..
-        app _ QApplication(___.argv)
+        app _ ?A..(___.argv)
     main _ Example
     main.show
 

@@ -3,7 +3,7 @@
 
 ______ ___
 ____ ?.?C.. ______ pyqtSignal, QObject
-____ ?.?W.. ______ QMainWindow, QApplication
+____ ?.?W.. ______ QMainWindow, ?A..
 
 
 c_ Communicate(QObject):
@@ -30,6 +30,6 @@ c_ Example(QMainWindow):
 
 
 __ _____ __ _______
-    app _ QApplication(___.argv)
+    app _ ?A..(___.argv)
     ex _ Example
-    ___.exit(app.e..())
+    ___.e..(app.e..())

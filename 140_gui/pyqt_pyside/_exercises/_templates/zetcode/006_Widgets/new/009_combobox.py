@@ -3,7 +3,7 @@
 
 
 ____ ?.?W.. ______ (W.., ?L..,
-                             QComboBox, QApplication)
+                             QComboBox, ?A..)
 ______ ___
 
 
@@ -39,6 +39,6 @@ c_ Example(W..):
 
 
 __ _____ __ _______
-    app _ QApplication(___.argv)
+    app _ ?A..(___.argv)
     ex _ Example
-    ___.exit(app.e..())
+    ___.e..(app.e..())

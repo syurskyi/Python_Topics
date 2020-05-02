@@ -12,7 +12,7 @@ c_ Example(W..):
 
     ___ initUI
 
-        lcd _ QLCDNumber(
+        lcd _ ?LCDN..(
         sld _ ?S..(__.H..,
 
         vbox _ ?VB..

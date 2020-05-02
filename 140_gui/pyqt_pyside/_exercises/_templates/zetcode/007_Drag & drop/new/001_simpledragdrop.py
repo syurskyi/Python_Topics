@@ -3,7 +3,7 @@
 
 
 ____ ?.?W.. ______ (?P.., W..,
-                             QLineEdit, QApplication)
+                             QLineEdit, ?A..)
 ______ ___
 
 
@@ -46,7 +46,7 @@ c_ Example(W..):
 
 
 __ _____ __ _______
-    app _ QApplication(___.argv)
+    app _ ?A..(___.argv)
     ex _ Example
     ex.show
     app.e..

@@ -11,7 +11,7 @@
 #         ?
 #
 #     ___ initUI
-#         exitAct _ QA.. QI.. *exit.png *&Exit ?
+#         exitAct _ QA.. QI.. *e...png *&Exit ?
 #         ?.sS.. *Ctrl+Q
 #         ?.sST.. *Exit application
 #         ?.t__.c.. qA__.q..

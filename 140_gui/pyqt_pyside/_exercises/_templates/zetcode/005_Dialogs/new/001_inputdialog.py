@@ -3,7 +3,7 @@
 
 
 ____ ?.?W.. ______ (W.., ?P.., QLineEdit,
-                             QInputDialog, QApplication)
+                             QInputDialog, ?A..)
 ______ ___
 
 
@@ -35,6 +35,6 @@ c_ Example(W..):
 
 
 __ _____ __ _______
-    app _ QApplication(___.argv)
+    app _ ?A..(___.argv)
     ex _ Example
-    ___.exit(app.e..())
+    ___.e..(app.e..())

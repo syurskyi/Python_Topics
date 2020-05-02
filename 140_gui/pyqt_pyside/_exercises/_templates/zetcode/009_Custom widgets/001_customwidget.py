@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 
-____ ?.?W.. ______ (W.., ?S.., QApplication,
+____ ?.?W.. ______ (W.., ?S.., ?A..,
                              ?HB.., ?VB..)
 ____ ?.?C.. ______ QObject, __, pyqtSignal
 ____ ?.QtGui ______ QPainter, QFont, QColor, QPen
@@ -124,6 +124,6 @@ c_ Example(W..):
 
 
 __ _____ __ _______
-    app _ QApplication(___.argv)
+    app _ ?A..(___.argv)
     ex _ Example
-    ___.exit(app.e..())
+    ___.e..(app.e..())

@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-____ ?.?W.. ______ W.., QCheckBox, QApplication
+____ ?.?W.. ______ W.., QCheckBox, ?A..
 ____ ?.?C.. ______ __
 ______ ___
 
@@ -33,6 +33,6 @@ c_ Example(W..):
 
 
 __ _____ __ _______
-    app _ QApplication(___.argv)
+    app _ ?A..(___.argv)
     ex _ Example
-    ___.exit(app.e..())
+    ___.e..(app.e..())
