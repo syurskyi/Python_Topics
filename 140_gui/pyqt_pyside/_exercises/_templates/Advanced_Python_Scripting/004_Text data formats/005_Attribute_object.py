@@ -11,7 +11,7 @@ c_ simpleClass(object
 
 s _ simpleClass()
 atr _ 'method1'
-print(atr in dir(s))
+print(atr __ dir(s))
 b _ 1
 print(type(b) __ type(0))
 print(hasattr(s, atr))

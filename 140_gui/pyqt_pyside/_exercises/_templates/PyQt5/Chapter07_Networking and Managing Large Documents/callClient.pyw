@@ -22,7 +22,7 @@ c_ Window(?D..
 
     ___ dispMessage
         text_ui.lineEditMessage.t..()
-        ui.tE__Messages.append("Client: "+ui.lineEditMessage.t..())
+        ui.tE__Messages.ap..("Client: "+ui.lineEditMessage.t..())
         tcpClientA.send(t...encode())
         ui.lineEditMessage.sT..("")
 
@@ -41,7 +41,7 @@ c_ ClientThread(Thread
         
        while T..:
            data _ tcpClientA.recv(BUFFER_SIZE)
-           window.tE__Messages.append("Server: "+data.decode("utf-8"))
+           window.tE__Messages.ap..("Server: "+data.decode("utf-8"))
        tcpClientA.close() 
             
         

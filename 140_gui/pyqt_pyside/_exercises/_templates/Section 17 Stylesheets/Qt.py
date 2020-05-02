@@ -802,7 +802,7 @@ ___ _new_module(name
 ___ _import_sub_module(module, name
     """import_sub_module will mimic the function of importlib.import_module"""
     module _ __import__(module.__name__ + "." + name)
-    for level in name.split("."
+    ___ level in name.split("."
         module _ getattr(module, level)
     return module
 
@@ -812,7 +812,7 @@ ___ _setup(module, extras
 
     Qt.__binding__ _ module.__name__
 
-    for name in list(_common_members) + extras:
+    ___ name in list(_common_members) + extras:
         try:
             submodule _ _import_sub_module(
                 module, name)
@@ -880,7 +880,7 @@ ___ _reassign_misplaced_members(binding
 
     """
 
-    for src, dst in _misplaced_members[binding].items(
+    ___ src, dst in _misplaced_members[binding].items(
         src_module, src_member _ src.split(".")
         dst_module, dst_member _ dst.split(".")
 
@@ -929,9 +929,9 @@ ___ _build_compatibility_members(binding, decorators_None
 
     _QtCompat _ type("QtCompat", (object,), {})
 
-    for classname, bindings in _compatibility_members[binding].items(
+    ___ classname, bindings in _compatibility_members[binding].items(
         attrs _ {}
-        for target, binding in bindings.items(
+        ___ target, binding in bindings.items(
             namespaces _ binding.split('.')
             try:
                 src_object _ getattr(Qt, "_" + namespaces[0])
@@ -945,7 +945,7 @@ ___ _build_compatibility_members(binding, decorators_None
 
             # Walk down any remaining namespace getting the object assuming
             # that if the first namespace exists the rest will exist.
-            for namespace in namespaces[1:]:
+            ___ namespace in namespaces[1:]:
                 src_object _ getattr(src_object, namespace)
 
             # decorate the Qt method if a decorator was provided.
@@ -1112,7 +1112,7 @@ ___ _pyqt4(
     except ValueError:
         raise ImportError("QT_SIP_API_HINT=%s must be a 1 or 2")
 
-    for api in ("QString",
+    ___ api in ("QString",
                 "QVariant",
                 "QDate",
                 "QDateTime",
@@ -1214,7 +1214,7 @@ ___ _none(
     Qt.QtCompat.loadUi _ lambda uifile, baseinstance_None: None
     Qt.QtCompat.setSectionResizeMode _ lambda *args, **kwargs: None
 
-    for submodule in _common_members.keys(
+    ___ submodule in _common_members.keys(
         setattr(Qt, submodule, Mock())
         setattr(Qt, "_" + submodule, Mock())
 
@@ -1350,9 +1350,9 @@ ___ _convert(lines
         return line
 
     parsed _ list()
-    for line in lines:
+    ___ line in lines:
         line _ parse(line)
-        parsed.append(line)
+        parsed.ap..(line)
 
     return parsed
 
@@ -1415,7 +1415,7 @@ ___ _install(
     # Default order (customise order and content via QT_PREFERRED_BINDING)
     default_order _ ("PySide2", "PyQt5", "PySide", "PyQt4")
     preferred_order _ list(
-        b for b in QT_PREFERRED_BINDING.split(os.pathsep) __ b
+        b ___ b in QT_PREFERRED_BINDING.split(os.pathsep) __ b
     )
 
     order _ preferred_order or default_order
@@ -1434,7 +1434,7 @@ ___ _install(
     _apply_site_config()
 
     found_binding _ False
-    for name in order:
+    ___ name in order:
         _log("Trying %s" % name)
 
         try:
@@ -1453,7 +1453,7 @@ ___ _install(
         raise ImportError("No Qt binding were found.")
 
     # Install individual members
-    for name, members in _common_members.items(
+    ___ name, members in _common_members.items(
         try:
             their_submodule _ getattr(Qt, "_%s" % name)
         except AttributeError:
@@ -1462,13 +1462,13 @@ ___ _install(
         our_submodule _ getattr(Qt, name)
 
         # Enable import *
-        __all__.append(name)
+        __all__.ap..(name)
 
         # Enable direct import of submodule,
         # e.g. import Qt.QtCore
         ___.modules[__name__ + "." + name] _ our_submodule
 
-        for member in members:
+        ___ member in members:
             # Accept that a submodule may miss certain members.
             try:
                 their_member _ getattr(their_submodule, member)

@@ -81,8 +81,8 @@ c_ timeline(?G...QGraphicsView
 
     ___ draw_headers 
         f_header _ ?G...QGraphicsRectItem(0, 0, viewer_size, header_height)
-        scene.addItem(f_header)
-        for i in range(0, total_regions
+        scene.aI..(f_header)
+        ___ i in range(0, total_regions
             f_number _ ?G...QGraphicsSimpleTextItem('%d' % i, f_header)
             f_number.setFlag(?G...QGraphicsItem.ItemIgnoresTransformations)
             f_number.setPos(px_per_region * i, 2)
@@ -90,10 +90,10 @@ c_ timeline(?G...QGraphicsView
 
     ___ draw_grid 
         f_pen _ ?G...QPen()
-        for i in range(1, total_tracks + 1
+        ___ i in range(1, total_tracks + 1
             f_line _ ?G...QGraphicsLineItem(0, 0, viewer_size, 0)
             f_line.setPos(0, header_height + padding + item_height * i)
-            scene.addItem(f_line)
+            scene.aI..(f_line)
 
     ___ draw_item_seconds , a_start_region, a_start_bar, a_start_beat, a_seconds, a_name, a_track_num
         f_start _ (a_start_region + (a_start_bar * item_length + a_start_beat) / beats_per_region) * px_per_region
@@ -112,26 +112,26 @@ c_ timeline(?G...QGraphicsView
         track _ 0
         gradient_index _ 0
         audio_items _ []
-        scene.clear()
+        scene.c..
         draw_headers()
 
     ___ draw_item , a_start, a_length, a_name, a_track_num
         """a_start in seconds, a_length in seconds"""
         f_track_num _ header_height + padding + item_height * track
         f_audio_item _ timeline_item(a_length, item_height, a_name, a_track_num, f_track_num)
-        audio_items.append(f_audio_item)
+        audio_items.ap..(f_audio_item)
         f_audio_item.setPos(a_start, f_track_num)
         f_audio_item.setBrush(colors[gradient_index])
         gradient_index +_ 1
         __ gradient_index >_ len(colors
             gradient_index _ 0
-        scene.addItem(f_audio_item)
+        scene.aI..(f_audio_item)
         track +_ 1
 
 __ __name__ __ '__main__':
     app _ ?G...?A..(___.argv)
     view _ timeline(total_tracks_5)
-    for i in range(5
+    ___ i in range(5
         view.draw_item_musical_time(0, 0, 0, i + 1, 0, 0, 120, 'Item-' + st.(i), i)
 
     view.set_zoom(2.0)

@@ -39,7 +39,7 @@ c_ Ui_example(object
         items_ly.setObjectName(_fromUtf8("items_ly"))
         verticalLayout_2.addLayout(items_ly)
         spacerItem _ ?G...QSpacerItem(20, 40, ?G...QSizePolicy.Minimum, ?G...QSizePolicy.Expanding)
-        verticalLayout_2.addItem(spacerItem)
+        verticalLayout_2.aI..(spacerItem)
 
         retranslateUi(example)
         ?C...QMetaObject.connectSlotsByName(example)

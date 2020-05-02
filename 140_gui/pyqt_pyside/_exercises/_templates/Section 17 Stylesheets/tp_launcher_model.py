@@ -78,7 +78,7 @@ c_ TP_Launcher_Model(object
         ''' if app/file order has changed, reorder dict'''
         __ _workspaces[ws_name].keys() !_ app_list:
             temp _ OrderedDict()
-            for name in app_list:
+            ___ name in app_list:
                 temp[name] _ _workspaces[ws_name][name]
             _workspaces[ws_name] _ temp
 

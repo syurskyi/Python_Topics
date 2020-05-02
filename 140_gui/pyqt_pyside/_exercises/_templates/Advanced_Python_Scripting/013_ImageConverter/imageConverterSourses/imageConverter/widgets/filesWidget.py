@@ -16,7 +16,7 @@ c_ listWidgetClass(QListWidget
     ___ dropEvent , event
         mimedata _ event.mimeData()
         __ mimedata.hasUrls(
-            for f in mimedata.urls(
+            ___ f __ mimedata.urls(
                 addFile(f.toLocalFile())
 
     ___ dragEnterEvent , event
@@ -40,14 +40,14 @@ c_ listWidgetClass(QListWidget
                 event.ignore()
 
     ___ addFile , path
-        __ not path in files:
+        __ not path __ files:
             item _ QListWidgetItem
             item.sT..(os.path.basename(path))
             item.setData(Qt.UserRole, path)
-            files.append(path)
+            files.ap..(path)
 
     ___ deleteSelected
-        for s in selectedItems(
+        ___ s __ selectedItems(
             files.remove(s.data(32))
             takeItem(indexFromItem(s).row())
 

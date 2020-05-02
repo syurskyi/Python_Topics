@@ -13,7 +13,7 @@ c_ settings(
             t.. _ open(path, 'r').readlines()
             data _ {}
             __ t..:
-                for line in [x.strip() for x in t..]:
+                ___ line in [x.strip() ___ x in t..]:
                     key, value _ line.split('=')
                     __ value.isdigit(
                         value _ int(value)
@@ -26,7 +26,7 @@ c_ settings(
     ___ __write_file
         __ data:
             with open(path, 'w') as f:
-                for key, value in data.items(
+                ___ key, value in data.items(
                     f.write('%s=%s\n' % (key, value))
 
     ___ __create_default

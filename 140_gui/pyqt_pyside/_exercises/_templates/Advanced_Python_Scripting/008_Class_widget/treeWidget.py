@@ -28,8 +28,8 @@ c_ simpleWindow(?W..
             parent _ tree.invisibleRootItem()
         __ not root:
             root _ path
-        for f in os.listdir(root
-            __ f[0] in ['.', '_']: continue
+        ___ f __ os.listdir(root
+            __ f[0] __ ['.', '_']: continue
             item _ QTreeWidgetItem()
             item.sT..(0, f)
             parent.addChild(item)

@@ -203,17 +203,17 @@ c_ ImageContainer(?G...QFrame
         ImageWidgetList[st.(widget.id)] _ widget
 
     ___ addWidgets , widgets
-        for widget in widgets:
+        ___ widget __ widgets:
             addWidget(widget)
         layout()
 
     ___ clearAll 
         widgets _ item_area.children()
         __ widgets:
-            for widget in widgets:
+            ___ widget __ widgets:
                 widget.setParent(None)
 
-        ImageWidgetList.clear()
+        ImageWidgetList.c..
 
     ___ layout 
         w _ width() - 20
@@ -229,7 +229,7 @@ c_ ImageContainer(?G...QFrame
 
         x _ 0
         y _ 0
-        for i in range(len(widgets)):
+        ___ i __ range(len(widgets)):
             space_x _ 0
             __ auto_space:
                 space_x _ (main_w - asset_space * 2 - num_x * (widget_w + asset_space)) / num_x
@@ -257,7 +257,7 @@ c_ ImageContainer(?G...QFrame
         elif widget_h < min_width:
             widget_h _ min_width
 
-        for a in widgets:
+        ___ a __ widgets:
             a.resize(widget_w, widget_h)
 
         layout()
@@ -268,7 +268,7 @@ c_ ImageContainer(?G...QFrame
         widget_w _ size
         widget_h _ size
 
-        for a in widgets:
+        ___ a __ widgets:
             a.resize(size, size)
 
         layout()
@@ -338,8 +338,8 @@ c_ MainWindow(?G...?W..
         pathSelected _ dirModel.filePath(dirTreeView.selectedIndexes()[0])
         print 'pathSelected   ', pathSelected
         # 遍历路径下的媒体文件
-        for item in os.listdir(pathSelected
-            __ item.split('.')[-1] in FILE_TYPE:
+        ___ item __ os.listdir(pathSelected
+            __ item.split('.')[-1] __ FILE_TYPE:
                 print item
                 # 添加widget
                 try:

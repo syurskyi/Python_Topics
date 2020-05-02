@@ -13,16 +13,16 @@ c_ ColorPresetPanel(nukescripts.PythonPanel
     ___  -  , colors
         nukescripts.PythonPanel. -  , 'Manage Color Presets')
         list _ []
-        for color in sorted(colors
+        ___ color in sorted(colors
             knob_dict _ {"name": nuke.String_Knob("name_%s" % color, '', color),
                         "value": nuke.ColorChip_Knob('value_%s' % color, ''),
                         "delete": nuke.Boolean_Knob("delete_%s" % color, 'delete')}
             knob_dict["value"].setValue(colors[color])
             knob_dict["value"].clearFlag(nuke.STARTLINE)
             knob_dict["delete"].clearFlag(nuke.STARTLINE)
-            list.append(knob_dict)
-        for i in list:
-            for k in i:
+            list.ap..(knob_dict)
+        ___ i in list:
+            ___ k in i:
                 addKnob(i[k])
 
 
@@ -40,7 +40,7 @@ ___ name_color(r, g, b
         print "Error loading Color labels"
         return "Unknown Color"
 
-    for color in data:
+    ___ color in data:
         vector_b _ nuke.math.Vector3(color['x'], color['y'], color['z'])
         dist _ vector_a.distanceBetween(vector_b)
         __ min_dist __ None or dist < min_dist:
@@ -92,14 +92,14 @@ ___ write_color_presets(path, colors
 ___ set_tile_color(value_None
     __ value __ None:
         value _ nuke.getColor()
-    for node in nuke.selectedNodes(
+    ___ node in nuke.selectedNodes(
         node.knob('tile_color').setValue(value)
 
 
 ___ create_tile_color_menu(
     colors _ read_color_presets(path)
     color_menu _ targetMenu.addMenu('Color Nodes', icon_"color_node.png")
-    for color in sorted(colors
+    ___ color in sorted(colors
         color_menu.addCommand(color, 'setTileColor(%s)' % colors[color])
 
     color_menu.addCommand("Custom Color", lambda: set_tile_color())
@@ -135,7 +135,7 @@ ___ manage_color_presets(
     p _ ColorPresetPanel(colors)
     __ p.showModalDialog(
         new_colors _ {}
-        for preset in p.list:
+        ___ preset in p.list:
             __ not preset['delete'].value(
                 new_colors[preset['name'].value()] _ preset['value'].value()
         success _ write_color_presets(path, new_colors)

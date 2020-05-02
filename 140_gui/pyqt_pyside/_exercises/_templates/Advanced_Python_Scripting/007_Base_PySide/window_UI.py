@@ -38,7 +38,7 @@ c_ Ui_Form(object
         pushButton_2.setObjectName(_fromUtf8("pushButton_2"))
         verticalLayout.addWidget(pushButton_2)
         spacerItem _ ?G...QSpacerItem(20, 40, ?G...QSizePolicy.Minimum, ?G...QSizePolicy.Expanding)
-        verticalLayout.addItem(spacerItem)
+        verticalLayout.aI..(spacerItem)
         horizontalLayout.addLayout(verticalLayout)
 
         retranslateUi(Form)

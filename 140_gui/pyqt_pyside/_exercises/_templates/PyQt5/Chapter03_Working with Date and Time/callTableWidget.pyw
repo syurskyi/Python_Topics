@@ -13,18 +13,18 @@ c_ MyForm(?D..
 
     ___ addcontent
         row_0
-        for tup in data:
+        ___ tup __ data:
             col_0
-            for item in tup:
+            ___ item __ tup:
                 oneitem_QTableWidgetItem(item)
                 ui.tableWidget.setItem(row, col, oneitem)
                 col+_1
             row+_1
 data_[]
-data.append(('Suite', '40$'))
-data.append(('Super Luxury', '30$'))
-data.append(('Super Deluxe', '20$'))
-data.append(('Ordinary', '10$'))
+data.ap..(('Suite', '40$'))
+data.ap..(('Super Luxury', '30$'))
+data.ap..(('Super Deluxe', '20$'))
+data.ap..(('Ordinary', '10$'))
 
                 
 __ _ ____ __ _____

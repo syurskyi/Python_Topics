@@ -2,7 +2,7 @@
 border styles: dashed | dot-dash | dot-dot-dash | dotted | double | groove | inset | outset | ridge | solid | none
 */
 
-/* Set the selection colors for all widgets. */
+/* Set the selection colors ___ all widgets. */
 ?W..
 {
 	color: #111111;
@@ -193,7 +193,7 @@ QGroupBox::title
      color: #0b0b0b;
 }
 
-/* Header for ... */
+/* Header ___ ... */
 QHeaderView::section
 {
 	color: #cccccc;
@@ -535,7 +535,7 @@ QSlider::sub-page:vertical
 
 QSpinBox
 {
-    padding-right: 15px; /* make room for the arrows */
+    padding-right: 15px; /* make room ___ the arrows */
 	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #808080, stop:1 #8c8c8c);
     border: 1px solid #4d4d4d;
     color: #ffffff;
@@ -607,7 +607,7 @@ QSpinBox::down-arrow
 
 QSpinBox::down-arrow:disabled,
 QSpinBox::down-arrow:off
-{ /* off state when value in min */
+{ /* off state when value __ min */
     image: url(:/arrow_down);
 }
 
@@ -665,7 +665,7 @@ QTreeView
 	border-radius: 0px;
 	padding: 0px;
 	background: #727272;
-	paint-alternating-row-colors-for-empty-area: 1;
+	paint-alternating-row-colors-___-empty-area: 1;
 	show-decoration-selected: 1;
 	alternate-background-color: #727272;
 }
@@ -768,12 +768,12 @@ QTabBar::tab:selected
 	color: #010101
 }
 
-/* Style for main toolbar */
+/* Style ___ main toolbar */
 QToolBar
 {
     border: 0px solid #8b8b8b;
 	background-color: transparent;
-	spacing: 2px; /* spacing between items in the tool bar */
+	spacing: 2px; /* spacing between items __ the tool bar */
 	margin-left: 3px;
 	color: #e5e5e5;
 	max-height: 22px;
@@ -805,14 +805,14 @@ QToolButton
 
 QToolButton[popupMode_"1"]
 {
-	/* only for MenuButtonPopup */
-	padding-right: 20px; /* make way for the popup button */
+	/* only ___ MenuButtonPopup */
+	padding-right: 20px; /* make way ___ the popup button */
 	/* max-width: 32px; */
 }
 
 QToolButton::menu-button
 {
-     /* 16px width + 4px for border _ 20px allocated above */
+     /* 16px width + 4px ___ border _ 20px allocated above */
 	border-top: 1px solid #323232;
 	border-left: 1px solid #222222;
 	border-bottom: 1px solid #323232;
@@ -845,7 +845,7 @@ QToolTip
 
 QDoubleSpinBox
 {
-    padding-right: 15px; /* make room for the arrows */
+    padding-right: 15px; /* make room ___ the arrows */
 	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #808080, stop:1 #8c8c8c);
     border: 1px solid #4d4d4d;
     color: #ffffff;
@@ -917,6 +917,6 @@ QDoubleSpinBox::down-arrow
 
 QDoubleSpinBox::down-arrow:disabled,
 QDoubleSpinBox::down-arrow:off
-{ /* off state when value in min */
+{ /* off state when value __ min */
     image: url(:/arrow_down);
 }

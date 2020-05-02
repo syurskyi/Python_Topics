@@ -15,7 +15,7 @@ c_ settingClass(object
 		t.. _ f.readlines()
 		f.close()
 		# data = {}
-		for line in t..:
+		___ line __ t..:
 			key, value _ line.strip().split("=")
 			# data[key] = value
 			print(key, value)
@@ -23,7 +23,7 @@ c_ settingClass(object
 
 	___ __writeFile , data
 		f _ open(fullPath, 'w')
-		for k, v in data.items(
+		___ k, v __ data.items(
 			f.write('%s=%s\n' % (k, v))
 		f.close()
 

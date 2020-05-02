@@ -13,7 +13,7 @@ c_ listWidgetClass(QListWidget
         # print 'DROP', type(event)
         mimedata _ event.mimeData()
         __ mimedata.hasUrls(
-            for f in mimedata.urls(
+            ___ f __ mimedata.urls(
                 print f.toLocalFile()
 
     ___ dragEnterEvent , event

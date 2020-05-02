@@ -15,8 +15,8 @@ c_ MyForm(?D..
         s..
 
     ___ addcontent 
-        for i in roomtypes:
-          ui.comboBox.addItem(i)
+        ___ i __ roomtypes:
+          ui.comboBox.aI..(i)
      
     ___ computeRoomRent 
         dateselected_ui.calendarWidget.selectedDate()

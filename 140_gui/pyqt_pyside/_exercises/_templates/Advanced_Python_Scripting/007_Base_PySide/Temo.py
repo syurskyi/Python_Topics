@@ -27,13 +27,13 @@ c_ Form(?D..
         pass
 
     ___ updateUi 
-        outtext.append("Download has started!!")
+        outtext.ap..("Download has started!!")
         yt _ YouTube()
         yt.from_url(intext.toPlainText())
         yt.set_filename("Temp")
         video _ yt.videos[0]
         video.download()
-        outtext.append("Download Finished!!")
+        outtext.ap..("Download Finished!!")
         pass
 
 

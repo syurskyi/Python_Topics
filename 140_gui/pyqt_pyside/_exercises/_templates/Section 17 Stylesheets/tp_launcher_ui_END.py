@@ -253,7 +253,7 @@ c_ TP_Launcher_GUI(?W...?W..
         _workspace_cb.cIC...disconnect(
             _workspace_changed
             )
-        _workspace_cb.clear()
+        _workspace_cb.c..
         _workspace_cb.addItems(_tp_launcher.get_workspaces())
         _workspace_cb.cIC...c..(
             _workspace_changed
@@ -264,9 +264,9 @@ c_ TP_Launcher_GUI(?W...?W..
         ''' Clear and Populate the apps list widget,
         set each application icon and name.
         '''
-        _app_lw.clear()
+        _app_lw.c..
         workspace _ get_workspace()
-        for app_name in _tp_launcher.get_app_names(workspace
+        ___ app_name in _tp_launcher.get_app_names(workspace
             item _ ?W...QListWidgetItem(_app_lw)
             icon _ _tp_launcher.get_app_icon(workspace, app_name)
             __ icon:
@@ -409,7 +409,7 @@ c_ TP_Launcher_GUI(?W...?W..
         to QSettings, and store the tool data to json file.
         '''
         count _ _app_lw.count()
-        names _ [_app_lw.item(i).t..() for i in range(count)]
+        names _ [_app_lw.item(i).t..() ___ i in range(count)]
         workspace _ get_workspace()
         _tp_launcher.reorder_apps(workspace, names)
         _settings.setValue('CurrentWorkspace', workspace)

@@ -22,17 +22,17 @@ c_ MyForm(?D..
             cur.execute(sqlStatement)
             rows _ cur.fetchall()
             rowNo_0
-            for tuple in rows:
+            ___ tuple __ rows:
                 ui.lR___.sT..("")
                 colNo_0
-                for columns in tuple:
+                ___ columns __ tuple:
                     oneColumn_QTableWidgetItem(columns)
                     ui.tableWidget.setItem(rowNo, colNo, oneColumn)
                     colNo+_1
                 rowNo+_1                  
                 
         except Error as e:
-            ui.tableWidget.clear()
+            ui.tableWidget.c..
             ui.lR___.sT..("Error in accessing table")
         finally:
             conn.close()

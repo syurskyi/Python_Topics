@@ -189,15 +189,15 @@ c_ TP_Launcher_GUI(?W...?W..
     ___ _populate_workspaces 
         ws _ _workspace_changed
         _workspace_cb.cIC...disconnect(ws)
-        _workspace_cb.clear()
+        _workspace_cb.c..
         _workspace_cb.addItems(_tp_launcher.get_workspaces())
         _workspace_cb.cIC...c..(ws)
         _populate_apps()
 
     ___ _populate_apps 
-        _app_lw.clear()
+        _app_lw.c..
         ws _ get_workspace()
-        for app_name in _tp_launcher.get_app_names(ws
+        ___ app_name __ _tp_launcher.get_app_names(ws
             item _ ?W...QListWidgetItem(_app_lw)
             icon _ _tp_launcher.get_app_icon(ws, app_name)
             __ icon:
@@ -315,7 +315,7 @@ c_ TP_Launcher_GUI(?W...?W..
 
     ___ _save_settings 
         c _ _app_lw.count()
-        names _ [_app_lw.item(i).t..() for i in range(c)]
+        names _ [_app_lw.item(i).t..() ___ i __ range(c)]
         ws _ get_workspace()
         _tp_launcher.reorder_apps(ws, names)
         _settings.setValue('CurrentWorkspace', ws)

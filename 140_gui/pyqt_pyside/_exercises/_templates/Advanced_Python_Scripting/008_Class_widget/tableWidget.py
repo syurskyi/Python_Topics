@@ -22,7 +22,7 @@ c_ simpleWindow(?W..
         table.setColumnCount(2)
         table.setRowCount(len(files))
         table.setHorizontalHeaderLabels(['Name', 'Size'])
-        for i, f in enumerate(files
+        ___ i, f __ enumerate(files
             item _ QTableWidgetItem()
             item.setFlags(Qt.ItemIsEnabled | Qt.ItemIsSelectable)
             item.sT..(f)

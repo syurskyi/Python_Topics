@@ -23,7 +23,7 @@ ___ createFolder(path
 
 ___ build(root, data
     __ data:
-        for d in data:
+        ___ d __ data:
             # print(d)
             name _ d[0]
             path _ os.path.join(root, name)

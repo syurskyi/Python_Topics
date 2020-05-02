@@ -4,16 +4,16 @@ _____ os
 root _ os.path.dirname(__file__)
 files _ os.listdir(root)
 txt _ []
-for f in files:
+___ f __ files:
     __ os.path.isfile(os.path.join(root, f)):
         __ os.path.splitext(f)[-1] __ '.txt':
-            arg.append(os.path.join(root, f))
+            arg.ap..(os.path.join(root, f))
 
 # print(arg)
 
 newName _ raw_input('Enter name: ')
 __ newName:
-    for i, f in enumerate(arg
+    ___ i, f __ enumerate(arg
         d _ os.path.dirname(f)
         name, ext _ os.path.splitext(os.path.basename(f))
         fName _ newName + '_' + st.(i).zfill(3) + ext

@@ -64,7 +64,7 @@ c_ MyForm(?D..
 
     ___ ShowLastRow
         cur.execute(sqlStatement)
-        for row in cur.fetchall(
+        ___ row in cur.fetchall(
             ui.lineEditEmailAddress.sT..(row[0])
             ui.lineEditPassword.sT..(row[1])
 

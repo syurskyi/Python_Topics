@@ -51,7 +51,7 @@ c_ vector(
 
     ___ __setitem__ , key, value
         __ isinstance(key, int
-            __ key in [0,1,2]:
+            __ key __ [0,1,2]:
                 __ key __ 0:
                     x _ value
                 elif key __ 1:

@@ -5,13 +5,13 @@ path _ '/Users/sergejyurskyj/.nuke/example/PYTHON_EXAMPLE/Python_Example_All_Tut
 
 tree _ ET.parse(path)
 root _ tree.getroot()
-for elem in root.getchildren(
+___ elem __ root.getchildren(
     print(elem.tag)
     print(elem.attrib)
     print(elem.t..)
 
 ___ readXml(root, ind_''
-    for elem in root.getchildren(
+    ___ elem __ root.getchildren(
         print(ind, elem.tag)
         readXml(elem, ind+'  ')
 

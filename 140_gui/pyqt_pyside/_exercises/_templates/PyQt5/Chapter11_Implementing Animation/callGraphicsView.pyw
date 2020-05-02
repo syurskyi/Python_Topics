@@ -13,7 +13,7 @@ c_ MyForm(?D..
         pixmap_ ?G...QPixmap()
         pixmap.load("bintupic.jpg")
         item_QGraphicsPixmapItem(pixmap)
-        scene.addItem(item)
+        scene.aI..(item)
         ui.graphicsView.setScene(scene)
 
 __ _ ____ __ _____

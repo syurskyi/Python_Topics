@@ -23,7 +23,7 @@ c_ Window(?D..
         text_ui.lineEditMessage.t..()
         global conn
         conn.send(t...encode("utf-8"))
-        ui.tE__Messages.append("Server: "+ui.lineEditMessage.t..())
+        ui.tE__Messages.ap..("Server: "+ui.lineEditMessage.t..())
         ui.lineEditMessage.sT..("")
 
 c_ ServerThread(Thread
@@ -46,9 +46,9 @@ c_ ServerThread(Thread
             (conn, (ip,port)) _ tcpServer.accept()
             newthread _ ClientThread(ip,port,window)
             newthread.start() 
-            threads.append(newthread) 
+            threads.ap..(newthread)
            
-        for t in threads: 
+        ___ t in threads:
             t.join() 
  
  
@@ -65,7 +65,7 @@ c_ ClientThread(Thread
         while T.. :              
             global conn
             data _ conn.recv(1024)
-            window.tE__Messages.append("Client: "+data.decode("utf-8"))
+            window.tE__Messages.ap..("Client: "+data.decode("utf-8"))
  
 __ _ ____ __ _____
     app _ ?A..(___.argv)

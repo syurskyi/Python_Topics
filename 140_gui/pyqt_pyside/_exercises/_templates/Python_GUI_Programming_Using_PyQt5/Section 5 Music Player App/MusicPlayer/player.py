@@ -136,16 +136,16 @@ c_ Player(?W..
         # print(directory)
         filename _ os.path.basename(directory[0])
         # print(filename)
-        playList.addItem(filename)
-        musicList.append(directory[0])
+        playList.aI..(filename)
+        musicList.ap..(directory[0])
 
     ___ shufflePlayList 
         random.shuffle(musicList)
         print(musicList)
-        playList.clear()
-        for song in musicList:
+        playList.c..
+        ___ song __ musicList:
             filename _ os.path.basename(song)
-            playList.addItem(filename)
+            playList.aI..(filename)
 
     ___ playSounds 
         global songLength

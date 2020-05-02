@@ -19,7 +19,7 @@ c_ MyForm(?D..
                
     @staticmethod
     async ___ updt(delay, ProgressBar
-        for i in range(101
+        ___ i __ range(101
             await asyncio.sleep(delay)
             ProgressBar.setValue(i)
 

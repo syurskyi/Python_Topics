@@ -52,7 +52,7 @@ c_ Ui_templateEditor(object
         remove_btn.setObjectName(_fromUtf8("remove_btn"))
         horizontalLayout_2.addWidget(remove_btn)
         spacerItem _ ?G...QSpacerItem(40, 20, ?G...QSizePolicy.Expanding, ?G...QSizePolicy.Minimum)
-        horizontalLayout_2.addItem(spacerItem)
+        horizontalLayout_2.aI..(spacerItem)
         verticalLayout.addLayout(horizontalLayout_2)
         tree _ ?G...QTreeWidget(templateEditor)
         tree.setObjectName(_fromUtf8("tree"))

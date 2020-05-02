@@ -52,20 +52,20 @@ c_ iconWidgetClass(QMainWindow, ui.Ui_MainWindow
     ___ filList 
         path _ os.path.join(os.path.dirname(__file__), 'textures')
         clearList()
-        for i in os.listdir(path
+        ___ i __ os.listdir(path
             item _ QListWidgetItem(i)
             item.setIcon( QIcon( os.path.join(path, i) ) )
-            list_lwd.addItem(item)
+            list_lwd.aI..(item)
     ___ clearList 
-        list_lwd.clear()
+        list_lwd.c..
 
     ___ fillCombo 
         clearCombo()
-        for i in range(10
-            combo_cbb.addItem('Item %s' % i)
+        ___ i __ range(10
+            combo_cbb.aI..('Item %s' % i)
             combo_cbb.setItemIcon(i, getRandomIcon())
     ___ clearCombo 
-        combo_cbb.clear()
+        combo_cbb.c..
 
     ___ getRandomIcon 
         return QIcon(icons[random.choice(['item1','item2','item3'])])

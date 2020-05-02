@@ -41,9 +41,9 @@ __ _ ____ __ _____
     thread1.start()
     thread2.start()
     w.exec()
-    threads.append(thread1)
-    threads.append(thread2)
-    for t in threads:
+    threads.ap..(thread1)
+    threads.ap..(thread2)
+    ___ t __ threads:
         t.join()
     ___.e..(app.e
 

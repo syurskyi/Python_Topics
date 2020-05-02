@@ -12,7 +12,7 @@ c_ simpleWindow(?W..
 
     ___ showMessage2 
         i _ QInputDialog.getItem , 'Enter text', 'Name:',
-                                 [st.(x) for x in range(10)])
+                                 [st.(x) ___ x __ range(10)])
         print i
 
     ___ showMessage 

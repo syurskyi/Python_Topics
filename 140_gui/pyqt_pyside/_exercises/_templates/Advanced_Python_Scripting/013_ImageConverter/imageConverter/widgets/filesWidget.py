@@ -17,7 +17,7 @@ c_ listWidgetClass(QListWidget
         # print 'DROP', type(event)
         mimedata _ event.mimeData()
         __ mimedata.hasUrls(
-            for f in mimedata.urls(
+            ___ f __ mimedata.urls(
                 addFile(f.toLocalFile())
 
     ___ dragEnterEvent , event
@@ -44,9 +44,9 @@ c_ listWidgetClass(QListWidget
         drag _ QDrag
         mimedata _ QMimeData()
         url _ []
-        for i in selectedItems(
-            url.append(i.data(Qt.UserRole))
-        mimedata.setUrls([QUrl.fromLocalFile(x) for x in url])
+        ___ i __ selectedItems(
+            url.ap..(i.data(Qt.UserRole))
+        mimedata.setUrls([QUrl.fromLocalFile(x) ___ x __ url])
         drag.setMimeData(mimedata)
         pix _ QPixmap(icon)
         drag.setPixmap(pix)
@@ -55,14 +55,14 @@ c_ listWidgetClass(QListWidget
             deleteSelected()
 
     ___ addFile , path
-        __ not path in files:
+        __ not path __ files:
             item _ QListWidgetItem
             item.sT..(os.path.basename(path))
             item.setData(Qt.UserRole, path)
-            files.append(path)
+            files.ap..(path)
 
     ___ deleteSelected
-        for s in selectedItems(
+        ___ s in selectedItems(
             files.remove(s.data(32))
             takeItem(indexFromItem(s).row())
 

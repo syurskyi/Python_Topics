@@ -22,8 +22,8 @@ c_ simpleWindow(?W..
         return os.path.join(path,item.t..())
 
     ___ fillList 
-        for f in os.listdir(path
-            list.addItem(f)
+        ___ f __ os.listdir(path
+            list.aI..(f)
 
     ___ updateText , item
         t.. _open(fullPath(item)).read()

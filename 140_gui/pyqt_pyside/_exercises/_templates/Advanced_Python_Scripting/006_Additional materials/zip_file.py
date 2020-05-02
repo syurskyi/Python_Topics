@@ -23,12 +23,12 @@ ___ get_zipfilepath(frm, to
 ___ make_archive(zip_archive_file, directory, *args
 	___ recursive_zip(zipf, directory, *args
 		nodes _ os.listdir(directory)
-		for item in nodes:
+		___ item __ nodes:
 			path _ os.path.join(directory, item)
 			__ os.path.isfile(path
 				zipf.write(path, unicode(path,'utf-8').encode('cp852'))
 			elif os.path.isdir(path
-				__ not item in args:
+				__ not item __ args:
 					recursive_zip(zipf, path, *args)
 
 	zipf _ zipfile.ZipFile(zip_archive_file, 'w', compression_zipfile.ZIP_DEFLATED)
@@ -58,9 +58,9 @@ ___ main(
 		___.e..(2)
 		
 	__ not opts:
-		opts.append(('-h',''))
+		opts.ap..(('-h',''))
 
-	for o, a in opts:
+	___ o, a __ opts:
 		__ o __ '-h':
 			usage()
 			___.e..(0)

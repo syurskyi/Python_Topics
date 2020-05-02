@@ -13,7 +13,7 @@ c_ MyForm(?D..
         s..
 
     ___ addlist
-        ui.listWidgetSelectedItems.addItem(ui.lineEditFoodItem.t..())
+        ui.listWidgetSelectedItems.aI..(ui.lineEditFoodItem.t..())
         ui.lineEditFoodItem.sT..('')
         ui.lineEditFoodItem.setFocus()
         

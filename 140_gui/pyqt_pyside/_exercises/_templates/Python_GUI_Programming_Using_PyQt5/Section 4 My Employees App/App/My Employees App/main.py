@@ -61,8 +61,8 @@ c_ Main(?W..
     ___ getEmployees 
         query_"SELECT id,name,surname FROM employees"
         employees_cur.execute(query).fetchall()
-        for employee in employees:
-            employeeList.addItem(st.(employee[0])+"-"+employee[1]+" "+employee[2] )
+        ___ employee __ employees:
+            employeeList.aI..(st.(employee[0])+"-"+employee[1]+" "+employee[2] )
 
     ___ displayFirstRecord 
         query_"SELECT * FROM employees ORDER BY ROWID ASC LIMIT 1"
@@ -83,7 +83,7 @@ c_ Main(?W..
         leftLayout.addRow("Address:",address)
 
     ___ singleClick 
-        for i in reversed(range(leftLayout.count())):
+        ___ i __ reversed(range(leftLayout.count())):
             widget_leftLayout.takeAt(i).widget()
 
             __ widget is not None:

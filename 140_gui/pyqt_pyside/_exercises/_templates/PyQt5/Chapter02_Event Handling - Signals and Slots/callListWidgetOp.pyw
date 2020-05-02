@@ -9,10 +9,10 @@ c_ MyForm(?D..
         s__. - ()
         ui _ Ui_Dialog()
         ui.sU..
-        ui.listWidget.addItem('Ice Cream')
-        ui.listWidget.addItem('Soda')
-        ui.listWidget.addItem('Coffee')
-        ui.listWidget.addItem('Chocolate')
+        ui.listWidget.aI..('Ice Cream')
+        ui.listWidget.aI..('Soda')
+        ui.listWidget.aI..('Coffee')
+        ui.listWidget.aI..('Chocolate')
         ui.pushButtonAdd.c___.c..(addlist)
         ui.pushButtonEdit.c___.c..(editlist)
         ui.pushButtonDelete.c___.c..(delitem)
@@ -20,7 +20,7 @@ c_ MyForm(?D..
         s..
 
     ___ addlist 
-        ui.listWidget.addItem(ui.lineEdit.t..())
+        ui.listWidget.aI..(ui.lineEdit.t..())
         ui.lineEdit.sT..('')
         ui.lineEdit.setFocus()
         
@@ -35,7 +35,7 @@ c_ MyForm(?D..
         ui.listWidget.takeItem(ui.listWidget.currentRow())
        
     ___ delallitems 
-        ui.listWidget.clear()
+        ui.listWidget.c..
 
         
 __ _ ____ __ _____

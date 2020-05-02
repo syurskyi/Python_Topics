@@ -6,7 +6,7 @@ arg _ ___.argv[1:]
 
 newName _ raw_input('Enter name: ')
 __ newName:
-    for i, f in enumerate(arg
+    ___ i, f __ enumerate(arg
         d _ os.path.dirname(f)
         name, ext _ os.path.splitext(os.path.basename(f))
         fName _ newName + '_' + st.(i).zfill(3) + ext

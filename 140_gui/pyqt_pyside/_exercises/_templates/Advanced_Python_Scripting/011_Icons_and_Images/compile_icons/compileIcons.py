@@ -10,13 +10,13 @@ c_ fileListClass(QListWidget
 
     ___ appendImage , path
         path _ path.replace('/','\\')
-        __ not  path in pathList:
+        __ not  path __ pathList:
             name _ os.path.basename(path)
             item _ QListWidgetItem()
             item.sT..(name)
             item.setData(32, path)
-            addItem(item)
-            pathList.append(path)
+            aI..(item)
+            pathList.ap..(path)
 
     ___ dragEnterEvent , event
         __ event.mimeData().hasUrls(
@@ -33,7 +33,7 @@ c_ fileListClass(QListWidget
     ___ dropEvent , event
         __ event.mimeData().hasUrls(
             event.accept()
-            for url in event.mimeData().urls(
+            ___ url __ event.mimeData().urls(
                 appendImage(url.toLocalFile())
         ____
             event.ignore()
@@ -41,7 +41,7 @@ c_ fileListClass(QListWidget
     ___ keyPressEvent , event
         __ event.key() __ Qt.Key_Delete:
             sel _ selectedIndexes()
-            for i in reversed(sel
+            ___ i __ reversed(sel
                 __ i.data(32) in pathList:
                     pathList.remove(i.data(32))
                 takeItem(i.row())
@@ -80,7 +80,7 @@ c_ resourceCompileClass(QMainWindow
         return T..
 
     ___ runCompile
-        files _ [list.item(i).data(32) for i in range(list.count())]
+        files _ [list.item(i).data(32) ___ i in range(list.count())]
         qrc _ os.path.join(os.path.dirname(files[0]), 'resource.qrc')
         __ writeFile(qrc, files
             compileQrc(qrc)
@@ -89,7 +89,7 @@ c_ resourceCompileClass(QMainWindow
     ___ writeFile , qrc, files
         with open(qrc, 'w') as f:
             f.write('<RCC>\n\t<qresource>\n')
-            for ico in files:
+            ___ ico in files:
                 f.write('\t\t<file>%s</file>\n' % os.path.basename(ico))
             f.write('\t</qresource>\n</RCC>')
         return T..

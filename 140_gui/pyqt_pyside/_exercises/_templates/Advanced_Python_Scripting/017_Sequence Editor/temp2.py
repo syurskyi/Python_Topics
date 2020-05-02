@@ -174,9 +174,9 @@ c_ pad1(?G...QGraphicsEllipseItem
             songListcoded _ inputDict[seq]['song']
             songListdecoded _ []
 
-            for s in songListcoded:
-                for rep in range(int(s[0])):
-                    songListdecoded.append([s[1], float(s[2])])
+            ___ s in songListcoded:
+                ___ rep in range(int(s[0])):
+                    songListdecoded.ap..([s[1], float(s[2])])
             print(songListdecoded)
             songListdecoded _ songListdecoded
 
@@ -307,7 +307,7 @@ c_ mainWindow(?G...QMainWindow
 
         # tab for Pad  -------------------------------------------
         view _ ?G...QGraphicsView(scene)
-        scene.addItem(pad1)
+        scene.aI..(pad1)
 
         # add midi note hitted
         bottom _ ?G...QFrame()
@@ -406,7 +406,7 @@ c_ mainWindow(?G...QMainWindow
         # list all midi devices, maximum of 10
         device _ [None] * 10
         index _ 0
-        for x in range(0, pygame.midi.get_count()):
+        ___ x in range(0, pygame.midi.get_count()):
             print(pygame.midi.get_device_info(x))
             device _ pygame.midi.get_device_info(x)
             # if is a input append in the menu bar
@@ -436,7 +436,7 @@ c_ mainWindow(?G...QMainWindow
         print(sender)
         print(type(sender))
 
-        for index in deviceList.keys(
+        ___ index in deviceList.keys(
 
             device _ deviceList[index][0]
             x _ deviceList[index][1]
@@ -516,11 +516,11 @@ c_ mainWindow(?G...QMainWindow
 
     ___ updateTabs
         # remove all tabs
-        for i in range(ntabs
+        ___ i in range(ntabs
             tabs.removeTab(i + 1)
 
         ntabs _ 1
-        for key in songDict:
+        ___ key in songDict:
             print(key)
             # self.countTabs+=1
             tabString _ key
@@ -577,7 +577,7 @@ c_ mainWindow(?G...QMainWindow
         # index = self.tabs.underMouse()
 
         # print("index =",index)
-        for i in range(ntabs
+        ___ i in range(ntabs
             print("index=", i)
             tabs.setCurrentIndex(i)
             tabs.cI..()
@@ -616,7 +616,7 @@ c_ mainWindow(?G...QMainWindow
         print(index)
         curindex _ tabs.cI..()
         __ curindex __ 0:
-            for elem in songDict:
+            ___ elem in songDict:
                 print(elem)
                 tabid _ songDict[elem]["id"]
                 songDict[elem]["song"] _ []
@@ -626,11 +626,11 @@ c_ mainWindow(?G...QMainWindow
                 print(w.table)
                 numRows _ w.table.rowCount()
                 print(numRows)
-                for row in range(numRows
+                ___ row in range(numRows
                     c _ w.table.item(row, 0).t..()
                     s _ w.table.item(row, 1).t..()
                     o _ w.table.item(row, 2).t..()
-                    songDict[elem]["song"].append([c, s, o])
+                    songDict[elem]["song"].ap..([c, s, o])
             tabs.setCurrentIndex(0)
             print(songDict)
 
@@ -654,11 +654,11 @@ c_ mainWindow(?G...QMainWindow
         # return self.combo
 
     ___ updateCombo
-        combo.clear()
-        for key in songDict:
+        combo.c..
+        ___ key in songDict:
             __ "song" in songDict[key]:
                 __ songDict[key]["song"]:
-                    combo.addItem(key)
+                    combo.aI..(key)
 
     ___ handleActivated
         print("Activate")
@@ -737,10 +737,10 @@ c_ songCreator(?G...QTabWidget
 
     ___ deletesong
         print("delete item")
-        rows _ sorted(set(index.row() for index in
+        rows _ sorted(set(index.row() ___ index in
                           table.selectedIndexes()))
         l _ len(rows)
-        for row in rows:
+        ___ row in rows:
             print('Row %d is selected' % row)
             table.removeRow(row)
         tableIndex -_ l
@@ -748,7 +748,7 @@ c_ songCreator(?G...QTabWidget
     ___ addseq , songList
         index _ tableIndex
         table.setRowCount(len(songList))
-        for song in songList:
+        ___ song in songList:
             print("-------------------------------------")
             print(song[0])
             default_name _ ?G...QTableWidgetItem(song[0])

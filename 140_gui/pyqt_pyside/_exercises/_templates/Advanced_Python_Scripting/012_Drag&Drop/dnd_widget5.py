@@ -15,7 +15,7 @@ c_ listWidgetClass(QListWidget
         # print 'DROP', type(event)
         mimedata _ event.mimeData()
         __ mimedata.hasUrls(
-            for f in mimedata.urls(
+            ___ f __ mimedata.urls(
                 addFile(f.toLocalFile())       # KOgda mu polychaem pyt' mu vuzuvaem fynkcijy addFile()
 
     ___ dragEnterEvent , event
@@ -36,16 +36,16 @@ c_ listWidgetClass(QListWidget
         drag _ QDrag
         mimedata _ QMimeData()
         url _ []
-        for i in selectedItems(
-            url.append(i.data(Qt.UserRole))
+        ___ i __ selectedItems(
+            url.ap..(i.data(Qt.UserRole))
         print url
 
     ___ addFile , path                              # fynkcija kotoraja prinimaet pyt', pyt' mu polychaem s Drop Event
-        __ not path in files:                        # hranitsja byfer yze dobavlennuh fajlov
+        __ not path __ files:                        # hranitsja byfer yze dobavlennuh fajlov
             item _ QListWidgetItem                  # mu sozdajom novuj Item
             item.sT..(os.path.basename(path))          # otpravljaem imja fajla
             item.setData(Qt.UserRole, path)               # polnuj pyt' fajla polozim v kastomnujy daty etogo fajla
-            files.append(path)
+            files.ap..(path)
 
 __ __name__ __ '__main__':
     app _ ?A..([])

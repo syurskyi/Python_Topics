@@ -47,7 +47,7 @@ c_ Ui_MainWindow(object
         image_lb.setObjectName(_fromUtf8("image_lb"))
         horizontalLayout.addWidget(image_lb)
         spacerItem _ ?G...QSpacerItem(40, 20, ?G...QSizePolicy.Expanding, ?G...QSizePolicy.Minimum)
-        horizontalLayout.addItem(spacerItem)
+        horizontalLayout.aI..(spacerItem)
         verticalLayout.addLayout(horizontalLayout)
         combo_cbb _ ?G...QComboBox(centralwidget)
         combo_cbb.setObjectName(_fromUtf8("combo_cbb"))

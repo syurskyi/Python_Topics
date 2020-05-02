@@ -28,8 +28,8 @@ c_ MyForm(?D..
         anim _ QPropertyAnimation(ui.labelPic, b'pos')
         anim.setDuration(4000)        
         anim.setStartValue(QPointF(20, 20))        
-        positionValues _ [n/80 for n in range(0, 50)]
-        for i in positionValues:
+        positionValues _ [n/80 ___ n in range(0, 50)]
+        ___ i in positionValues:
             anim.setKeyValueAt(i, path.pointAtPercent(i))  
         anim.setEndValue(QPointF(160, 150))
         anim.start()

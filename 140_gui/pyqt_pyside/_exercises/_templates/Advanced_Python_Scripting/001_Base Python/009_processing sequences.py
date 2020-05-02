@@ -9,21 +9,21 @@ padding _ 4
 files _ os.listdir(path)
 tmp _ os.listdir(path)
 files _ []
-for t in tmp:
+___ t __ tmp:
     __ os.path.isfile(os.path.join(path, t)):
-        files.append(t)
+        files.ap..(t)
 
 # separate
 
 frames _ []
-for f in files:
+___ f __ files:
     name, ext _ os.path.splitext(f)
     fullName _ name
     while name[-1].isdigit(
         # print(name)
         name _ name[:-1]
     digits _ int(fullName.replace(name, ''))
-    frames.append(digits)
+    frames.ap..(digits)
 offset _ min(frames) - 1
 #print(frames)
 
@@ -32,7 +32,7 @@ offset _ min(frames) - 1
 outFolder _ os.path.join(path, correctname)
 __ not os.path.exists(outFolder
     os.mkdir(outFolder)
-for i, f in enumerate(files
+___ i, f __ enumerate(files
     # print(f, frames[i])
     old _ os.path.join(path, f)
     name, ext _ os.path.splitext(f)
@@ -49,9 +49,9 @@ for i, f in enumerate(files
 fullrange _ range(min(frames), max(frames)+1)
 # print(fullrange)
 miss _ []
-for i in fullrange:
-    __ not i in frames:
-        miss. append(i)
+___ i __ fullrange:
+    __ not i __ frames:
+        miss. ap..(i)
 # print(miss)
 
 # message
@@ -60,7 +60,7 @@ print('Miss frames:', miss)
 
 a _ raw_input('Remove old files? [y/n]: ')
 __ a __ 'y' or a __ 'Y':
-    for f in files:
+    ___ f __ files:
         os.remove(os.path.join(path, f))
 print('Complete!!!')
 raw_input()
