@@ -2,7 +2,7 @@ _____ ___
 
 ____ ?.?W.. _____ ?D.., ?A.., QInputDialog
 
-____ demoInputDialog _____ *
+____ demoInputDialog _____ _
 
 c_ MyForm(?D..
     ___  -  

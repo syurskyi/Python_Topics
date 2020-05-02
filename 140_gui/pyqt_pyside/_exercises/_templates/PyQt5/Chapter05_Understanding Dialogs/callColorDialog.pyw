@@ -3,7 +3,7 @@ _____ ___
 ____ ?.?W.. _____ ?D.., ?A.., QColorDialog
 ____ ?.?G.. _____ QColor
 
-____ demoColorDialog _____ *
+____ demoColorDialog _____ _
 
 c_ MyForm(?D..
     ___  -  

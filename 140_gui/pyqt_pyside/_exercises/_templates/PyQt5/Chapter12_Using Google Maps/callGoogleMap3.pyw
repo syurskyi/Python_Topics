@@ -4,7 +4,7 @@ ____ ?.?W.. _____ ?D.., ?A..
 ____ googlemaps.client _____ Client
 ____ googlemaps.distance_matrix _____ distance_matrix
 
-____ demoGoogleMap3 _____ *
+____ demoGoogleMap3 _____ _
 
 c_ MyForm(?D..
     ___  -  

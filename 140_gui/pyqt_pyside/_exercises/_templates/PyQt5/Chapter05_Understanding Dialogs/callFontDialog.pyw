@@ -3,7 +3,7 @@ _____ ___
 ____ ?.?W.. _____ ?D.., ?A.., QFontDialog
 
 
-____ demoFontDialog _____ *
+____ demoFontDialog _____ _
 
 c_ MyForm(?D..
     ___  -

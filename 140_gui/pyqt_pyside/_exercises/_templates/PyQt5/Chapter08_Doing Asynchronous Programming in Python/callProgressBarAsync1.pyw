@@ -3,7 +3,7 @@ _____ asyncio
 
 ____ ?.?W.. _____ ?D.., ?A..
 ____ quamash _____ QEventLoop
-____ demoTwoProgressBarsAsync _____ *
+____ demoTwoProgressBarsAsync _____ _
 
 c_ MyForm(?D..
     ___  -

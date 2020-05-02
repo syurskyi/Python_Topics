@@ -4,7 +4,7 @@ _____ time
 
 ____ PyQt5.?W.. _____ ?D.., ?A..
 
-____ demoProgressBarThread _____ *
+____ demoProgressBarThread _____ _
 
 c_ MyForm(?D..
     ___  -  

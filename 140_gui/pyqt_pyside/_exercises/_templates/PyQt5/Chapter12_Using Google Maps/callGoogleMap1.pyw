@@ -3,7 +3,7 @@ _____ ___
 ____ ?.?W.. _____ ?D.., ?A..
 ____ geolocation.main _____ GoogleMaps
 
-____ demoGoogleMap1 _____ *
+____ demoGoogleMap1 _____ _
 
 c_ MyForm(?D..
     ___  -  

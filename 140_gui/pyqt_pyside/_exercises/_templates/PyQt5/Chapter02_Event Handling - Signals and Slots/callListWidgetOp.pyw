@@ -13,7 +13,7 @@ c_ MyForm(?D..
         ui.listWidget.aI..('Soda')
         ui.listWidget.aI..('Coffee')
         ui.listWidget.aI..('Chocolate')
-        ui.pushButtonAdd.c___.c..(addlist)
+        ui.pBA...c___.c..(addlist)
         ui.pushButtonEdit.c___.c..(editlist)
         ui.pushButtonDelete.c___.c..(delitem)
         ui.pushButtonDeleteAll.c___.c..(delallitems)
@@ -22,7 +22,7 @@ c_ MyForm(?D..
     ___ addlist 
         ui.listWidget.aI..(ui.lineEdit.t..())
         ui.lineEdit.sT..('')
-        ui.lineEdit.setFocus()
+        ui.lineEdit.sF..
         
     ___ editlist 
         row_ui.listWidget.currentRow()

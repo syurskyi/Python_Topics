@@ -2,7 +2,7 @@ _____ ___
 ____ ?.?W.. _____ QMainWindow, ?A..
 ____ ?.?G.. _____ QPainter
 
-____ demoMenuBar _____ *
+____ demoMenuBar _____ _
 
 c_ AppWindow(QMainWindow
     ___  -  

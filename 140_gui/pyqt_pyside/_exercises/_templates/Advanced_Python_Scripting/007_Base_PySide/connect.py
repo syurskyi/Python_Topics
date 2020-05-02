@@ -1,5 +1,5 @@
-____ PySide.?G.. _____ *
-____ PySide.?C.. _____ *
+____ PySide.?G.. _____ _
+____ PySide.?C.. _____ _
 
 
 c_ MyWidget(?W..

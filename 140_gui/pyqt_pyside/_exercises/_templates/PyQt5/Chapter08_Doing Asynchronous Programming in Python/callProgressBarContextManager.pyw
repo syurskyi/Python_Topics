@@ -4,7 +4,7 @@ _____ time
 
 ____ ?.?W.. _____ ?D.., ?A..
 
-____ demoTwoProgressBarsContextManager _____ *
+____ demoTwoProgressBarsContextManager _____ _
 
 c_ MyForm(?D..
     ___  -

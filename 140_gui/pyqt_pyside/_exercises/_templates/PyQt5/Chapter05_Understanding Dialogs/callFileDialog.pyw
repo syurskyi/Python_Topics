@@ -2,7 +2,7 @@ _____ ___
 
 ____ ?.?W.. _____ QMainWindow, ?A.., QAction, QFileDialog
 
-____ demoFileDialog _____ *
+____ demoFileDialog _____ _
 
 c_ MyForm(QMainWindow
     ___  -

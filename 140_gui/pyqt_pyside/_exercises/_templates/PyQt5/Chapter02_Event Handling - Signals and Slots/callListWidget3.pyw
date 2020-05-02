@@ -1,24 +1,24 @@
-_____ ___
-
-____ ?.?W.. _____ ?D.., ?A..
-
-____ demoListWidget3 _____ *
-
-c_ MyForm(?D..
-    ___  -
-        s__. - ()
-        ui _ Ui_Dialog()
-        ui.sU..
-        ui.pushButtonAdd.c___.c..(addlist)
-        s..
-
-    ___ addlist
-        ui.listWidgetSelectedItems.aI..(ui.lineEditFoodItem.t..())
-        ui.lineEditFoodItem.sT..('')
-        ui.lineEditFoodItem.setFocus()
-        
-__ _ ____ __ _____
-    app _ ?A..(___.argv)
-    w _ MyForm()
-    w.s..
-    ___.e..(app.e
+# _____ ___
+#
+# ____ ?.?W.. _____ ?D.., ?A..
+#
+# ____ demoListWidget3 _____ _
+#
+# c_ MyForm ?D..
+#     ___  -
+#         s__. -
+#         ui _ ?
+#         ?.sU..
+#         ?.pBA...c___.c.. ?
+#         s..
+#
+#     ___ addlist
+#         ?.lWSI__.aI.. ?.lEFI__t..
+#         ?.lEFI__.sT.. ''
+#         ?.lEFI__.sF..
+#
+# __ _ ____ __ _____
+#     app _ ?A..
+#     w _ ?
+#     ?.s..
+#     ___.e.. ?.e..

@@ -1,8 +1,8 @@
 _____ ___
 ____ pytube _____ YouTube
-____ math _____ *
-____ PySide.?C.. _____ *
-____ PySide.?G.. _____ *
+____ math _____ _
+____ PySide.?C.. _____ _
+____ PySide.?G.. _____ _
 
 
 c_ Form(?D..

@@ -22,7 +22,7 @@ c_ MyForm(?D..
         ____
             tabledefinition+_", "+ui.lineEditColumnName.t..()+" "+ui.comboBoxDataType.iT..(ui.comboBoxDataType.cI..())
         ui.lineEditColumnName.sT..("")
-        ui.lineEditColumnName.setFocus()
+        ui.lineEditColumnName.sF..
 
     ___ createTable
         global tabledefinition 
