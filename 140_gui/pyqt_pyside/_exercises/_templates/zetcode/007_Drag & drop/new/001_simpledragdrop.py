@@ -12,7 +12,7 @@ c_ Button(?P..):
     ___ - (self, title, parent):
         s__ .- (title, parent)
 
-        setAcceptDrops(True)
+        setAcceptDrops(T..)
 
     ___ dragEnterEvent(self, e):
 
@@ -23,7 +23,7 @@ c_ Button(?P..):
 
     ___ dropEvent(self, e):
 
-        setText(e.mimeData .text())
+        sT..(e.mimeData .text())
 
 
 c_ Example(W..):
@@ -35,7 +35,7 @@ c_ Example(W..):
 
     ___ initUI
         edit _ ?L..('',
-        edit.setDragEnabled(True)
+        edit.setDragEnabled(T..)
         edit.m..(30, 65)
 
         button _ Button("Button",

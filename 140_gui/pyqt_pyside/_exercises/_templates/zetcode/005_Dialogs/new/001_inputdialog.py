@@ -31,7 +31,7 @@ c_ Example(W..):
                                         'Enter your name:')
 
         __ ok:
-            le.setText(st.(text))
+            le.sT..(st.(text))
 
 
 __ _____ __ _______

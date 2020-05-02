@@ -34,7 +34,7 @@ c_ Example(W..):
         show
 
     ___ onActivated(self, text):
-        lbl.setText(text)
+        lbl.sT..(text)
         lbl.adjustSize
 
 

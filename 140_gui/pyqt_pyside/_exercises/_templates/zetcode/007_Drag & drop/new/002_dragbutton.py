@@ -42,7 +42,7 @@ c_ Example(W..):
         ?
 
     ___ initUI
-        setAcceptDrops(True)
+        setAcceptDrops(T..)
 
         button _ Button('Button',
         button.m..(100, 65)

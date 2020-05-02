@@ -28,7 +28,7 @@ c_ Example(W..):
         show
 
     ___ onChanged(self, text):
-        lbl.setText(text)
+        lbl.sT..(text)
         lbl.adjustSize
 
 

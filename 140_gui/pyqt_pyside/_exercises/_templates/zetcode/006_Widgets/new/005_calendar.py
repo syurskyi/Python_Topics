@@ -18,14 +18,14 @@ c_ Example(W..):
         vbox _ ?VB..(
 
         cal _ QCalendarWidget(
-        cal.setGridVisible(True)
+        cal.setGridVisible(T..)
         cal.c__[QDate].c..(showDate)
 
         vbox.aW..(cal)
 
         lbl _ ?L..(
         date _ cal.selectedDate
-        lbl.setText(date.toString())
+        lbl.sT..(date.toString())
 
         vbox.aW..(lbl)
 
@@ -36,7 +36,7 @@ c_ Example(W..):
         show
 
     ___ showDate(self, date):
-        lbl.setText(date.toString())
+        lbl.sT..(date.toString())
 
 
 __ _____ __ _______

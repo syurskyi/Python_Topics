@@ -35,7 +35,7 @@ c_ Example(W..):
 
         __ step >= 100:
             timer.stop
-            btn.setText('Finished')
+            btn.sT..('Finished')
             return
 
         step _ step + 1
@@ -45,10 +45,10 @@ c_ Example(W..):
 
         __ timer.isActive :
             timer.stop
-            btn.setText('Start')
+            btn.sT..('Start')
         else:
             timer.start(100,
-            btn.setText('Stop')
+            btn.sT..('Stop')
 
 
 __ _____ __ _______

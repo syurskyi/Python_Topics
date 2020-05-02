@@ -17,7 +17,7 @@ c_ MyLabel(QtGui.?L..):
         __ (e.buttons  & ?C...__.LeftButton and
                     e.buttons  & ?C...__.RightButton):
             print("Левая и правая кнопки нажаты")
-        setText('Name of the Selected node is: ' + st.(name))
+        sT..('Name of the Selected node is: ' + st.(name))
 
 
 c_ MyWindow(QtGui.W..):

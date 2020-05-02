@@ -20,19 +20,19 @@ c_ Example(W..):
         col _ QColor(0, 0, 0)
 
         redb _ ?P..('Red',
-        redb.setCheckable(True)
+        redb.setCheckable(T..)
         redb.m..(10, 10)
 
         redb.c__[bool].c..(setColor)
 
         greenb _ ?P..('Green',
-        greenb.setCheckable(True)
+        greenb.setCheckable(T..)
         greenb.m..(10, 60)
 
         greenb.c__[bool].c..(setColor)
 
         blueb _ ?P..('Blue',
-        blueb.setCheckable(True)
+        blueb.setCheckable(T..)
         blueb.m..(10, 110)
 
         blueb.c__[bool].c..(setColor)

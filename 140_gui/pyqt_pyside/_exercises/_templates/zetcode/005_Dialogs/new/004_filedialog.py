@@ -40,7 +40,7 @@ c_ Example(?M..):
 
             with f:
                 data _ f.read
-                textEdit.setText(data)
+                textEdit.sT..(data)
 
 
 __ _____ __ _______
