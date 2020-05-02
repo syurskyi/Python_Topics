@@ -97,7 +97,7 @@ c_ Example(W..):
         OVER_CAPACITY _ 750
 
         sld _ ?S..(__.H..,
-        sld.setFocusPolicy(__.NoFocus)
+        sld.sFP..(__.NoFocus)
         sld.setRange(1, OVER_CAPACITY)
         sld.setValue(75)
         sld.sG__(30, 40, 150, 30)

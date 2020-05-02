@@ -3,7 +3,7 @@
 
 ____ ?.?W.. ______ (W.., ?HB..,
                              ?L.., ?A..)
-____ ?.?G__ ______ QPixmap
+____ ?.?G__ ______ ?P..
 ______ ___
 
 
@@ -16,10 +16,10 @@ c_ Example(W..):
 
     ___ initUI
         hbox _ ?HB..(
-        pixmap _ QPixmap("redrock.png")
+        pixmap _ ?P..("redrock.png")
 
         lbl _ ?L..(
-        lbl.setPixmap(pixmap)
+        lbl.sP..(pixmap)
 
         hbox.aW..(lbl)
         sL..(hbox)
