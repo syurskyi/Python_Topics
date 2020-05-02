@@ -312,11 +312,11 @@ c_ TP_Launcher_GUI(?W...?W..
         _save_settings()
 
     ___ _edit_on
-        _app_lw.itemClicked.disconnect(_run_app)
+        _app_lw.iC__.disconnect(_run_app)
         _edit_btn.sT..('Done')
 
     ___ _edit_off
-        _app_lw.itemClicked.c..(_run_app)
+        _app_lw.iC__.c..(_run_app)
         _edit_btn.sT..('Edit')
 
     #======= ADD =================================

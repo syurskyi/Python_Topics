@@ -27,7 +27,7 @@ c_ MyForm(?D..
         qp.end()  
 
     ___ dispText
-        fontName_ui.listWidgetFont.currentItem().t..()
+        fontName_ui.listWidgetFont.cI__).t..()
         fontSize_int(ui.comboBoxFontSize.iT..(ui.comboBoxFontSize.cI..()))
         textToDraw_ui.tE__.toPlainText()
         update()

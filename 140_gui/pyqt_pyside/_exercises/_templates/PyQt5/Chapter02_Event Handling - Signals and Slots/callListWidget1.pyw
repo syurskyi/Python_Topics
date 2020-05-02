@@ -1,22 +1,22 @@
-_____ ___
-
-____ ?.?W.. _____ ?D.., ?A..
-
-____ demoListWidget1 _____ _
-
-c_ MyForm(?D..
-    ___  -  
-        s__. - ()
-        ui _ Ui_Dialog()
-        ui.sU..
-        ui.listWidgetDiagnosis.itemClicked.c..(dispSelectedTest)
-        s..
-
-    ___ dispSelectedTest 
-        ui.labelTest.sT..("You have selected "+ui.listWidgetDiagnosis.currentItem().t..())
-         
-__ _ ____ __ _____
-    app _ ?A..(___.argv)
-    w _ MyForm()
-    w.s..
-    ___.e..(app.e
+# _____ ___
+#
+# ____ ?.?W.. _____ ?D.., ?A..
+#
+# ____ demoListWidget1 _____ _
+#
+# c_ MyForm ?D..
+#     ___  -
+#         s__. -
+#         ui _ ?
+#         ?.sU..
+#         ?.lWD__.iC__.c.. ?
+#         s..
+#
+#     ___ dispSelectedTest
+#         ?.lT__.sT..("You have selected "+?.lWD__.cI__ .t..
+#
+# __ _ ____ __ _____
+#     app _ ?A..
+#     w _ ?
+#     ?.s..
+#     ___.e.. ?.e..

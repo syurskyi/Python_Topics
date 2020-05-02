@@ -27,7 +27,7 @@ c_ Main(?W..
     ___ mainDesign 
         setStyleSheet("font-size:14pt;font-family:Arial Bold;")
         employeeList_QListWidget()
-        employeeList.itemClicked.c..(singleClick)
+        employeeList.iC__.c..(singleClick)
         btnNew_?PB..("New")
         btnNew.c___.c..(addEmployee)
         btnUpdate_?PB..("Update")
@@ -89,7 +89,7 @@ c_ Main(?W..
             __ widget is not None:
                 widget.deleteLater()
 
-        employee_employeeList.currentItem().t..()
+        employee_employeeList.cI__).t..()
         id_employee.split("-")[0]
         query_("SELECT * FROM employees WHERE id=?")
         person_cur.execute(query,(id,)).fetchone()#single item tuple=(1,)
@@ -110,7 +110,7 @@ c_ Main(?W..
 
     ___ deleteEmployee 
         __ employeeList.selectedItems(
-            person_employeeList.currentItem().t..()
+            person_employeeList.cI__).t..()
             id _ person.split("-")[0]
             mbox_QMessageBox.question ,"Warning","Are you sure to delete this person?",QMessageBox.Yes|QMessageBox.No,QMessageBox.No)
             __ mbox __ QMessageBox.Yes:
@@ -132,7 +132,7 @@ c_ Main(?W..
     ___ updateEmployee 
         global person_id
         __ employeeList.selectedItems(
-            person _ employeeList.currentItem().t..()
+            person _ employeeList.cI__).t..()
             person_id_person.split("-")[0]
             updateWindow_UpdateEmployee()
             close()

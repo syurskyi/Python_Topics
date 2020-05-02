@@ -9,12 +9,12 @@ c_ MyForm(?D..
         s__. - ()
         ui _ Ui_Dialog()
         ui.sU..
-        ui.listWidgetDiagnosis.itemSelectionChanged.c..(dispSelectedTest)
+        ui.lWD__.itemSelectionChanged.c..(dispSelectedTest)
         s..
 
     ___ dispSelectedTest 
         ui.listWidgetSelectedTests.clear()
-        items _ ui.listWidgetDiagnosis.selectedItems()
+        items _ ui.lWD__.selectedItems()
         x_[]
         for i in list(items
             ui.listWidgetSelectedTests.addItem(i.t..())

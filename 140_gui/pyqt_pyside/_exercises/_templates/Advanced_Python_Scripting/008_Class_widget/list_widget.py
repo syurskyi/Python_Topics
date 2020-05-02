@@ -12,7 +12,7 @@ c_ simpleWindow(?W..
         textBrowser _ QTextBrowser()
         ly.addWidget(textBrowser)
         # connect
-        list.itemClicked.c..(updateText)
+        list.iC__.c..(updateText)
         list.itemDoubleClicked.c..(openFile)
         # start
         resize(500,400)
