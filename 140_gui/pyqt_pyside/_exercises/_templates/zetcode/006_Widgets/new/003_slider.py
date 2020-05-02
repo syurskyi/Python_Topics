@@ -35,9 +35,9 @@ c_ Example(W..):
 
         __ value __ 0:
             label.setPixmap(QPixmap('mute.png'))
-        elif value > 0 and value <= 30:
+        ____ value > 0 and value <= 30:
             label.setPixmap(QPixmap('min.png'))
-        elif value > 30 and value < 80:
+        ____ value > 30 and value < 80:
             label.setPixmap(QPixmap('med.png'))
         ____
             label.setPixmap(QPixmap('max.png'))
