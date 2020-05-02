@@ -9,7 +9,7 @@ c_ MyForm(?D..
 
     ___  -
         s__. - ()
-        ui _ Ui_Dialog()
+        ui _ ?
         ui.sU..
         ui.pushButtonCreateTable.c___.c..(createTable)
         ui.pushButtonAddColumn.c___.c..(addColumns)
@@ -39,7 +39,7 @@ c_ MyForm(?D..
             conn.close()
 
 __ _ ____ __ _____
-    app _ ?A..(___.argv)
+    app _ ?A..
     w _ ?
     w.s..
     ___.e..(app.e

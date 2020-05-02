@@ -7,7 +7,7 @@ ____ demoGraphicsView _____ _
 c_ MyForm(?D..
     ___  -  
         s__. - ()
-        ui _ Ui_Dialog()
+        ui _ ?
         ui.sU..
         scene _ QGraphicsScene
         pixmap_ ?G...QPixmap()
@@ -17,7 +17,7 @@ c_ MyForm(?D..
         ui.graphicsView.setScene(scene)
 
 __ _ ____ __ _____
-    app _ ?A..(___.argv)
+    app _ ?A..
     myapp _ ?
     myapp.s..
     ___.e..(app.e

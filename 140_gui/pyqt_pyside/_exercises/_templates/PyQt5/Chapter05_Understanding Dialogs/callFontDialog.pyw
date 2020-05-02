@@ -8,7 +8,7 @@ ____ demoFontDialog _____ _
 c_ MyForm(?D..
     ___  -
         s__. - ()
-        ui _ Ui_Dialog()
+        ui _ ?
         ui.sU..
         ui.pushButtonFont.c___.c..(changefont)
         s..
@@ -19,7 +19,7 @@ c_ MyForm(?D..
             ui.tE__.sF..(font)
 
 __ _ ____ __ _____
-    app _ ?A..(___.argv)
+    app _ ?A..
     w _ ?
     w.s..
     ___.e..(app.e

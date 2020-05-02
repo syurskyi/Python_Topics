@@ -29,8 +29,8 @@ c_ splineRampWidget(?W..
         region2 _ QRect(0, 0, regionSize, regionSize)
         region2.moveCenter(point2.toPoint())
 
-        factor1 _ point1.y() / float(size().height())
-        factor2 _ point2.y() / float(size().height())
+        factor1 _ point1.y() / fl..(size().height())
+        factor2 _ point2.y() / fl..(size().height())
         print factor1, factor2
 
     ___ paintEvent , event

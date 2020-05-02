@@ -245,7 +245,7 @@ __ __name__ __ '__main__':
 
     _____ ___
 
-    app _ ?G...?A..(___.argv)
+    app _ ?G...?A..
     window _ MainWindow()
     window.s..
 ___.e..(app.e

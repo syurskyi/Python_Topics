@@ -1,8 +1,8 @@
 c_ vector(
     ___  -  , x_0.0, y_0.0, z_0.0
-        x _ float(x)
-        y _ float(y)
-        z _ float(z)
+        x _ fl..(x)
+        y _ fl..(y)
+        z _ fl..(z)
 
     ___ __repr__ 
         return 'Vector<%0.3f, %0.3f, %0.3f>'%(x, y, z)
@@ -27,7 +27,7 @@ c_ vector(
             raise Exception("Not supported type %s" % type(other))
 
     ___ __mul__ , other
-        __ isinstance(other, int) or isinstance(other, float
+        __ isinstance(other, int) or isinstance(other, fl..
             return vector(x * other, y * other, z * other)
         elif isinstance( other, vector
             return vector(x * other.x, y * other.y, z * other.z)

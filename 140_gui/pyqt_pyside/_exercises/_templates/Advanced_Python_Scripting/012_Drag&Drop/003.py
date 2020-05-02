@@ -37,7 +37,7 @@ __ __name__ __ '__main__':
     try:
         _____ nuke
     except ImportError:
-        app _ ?A..(___.argv)
+        app _ ?A..
     main _ listWidgetClass()
     main.s..
 

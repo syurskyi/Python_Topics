@@ -8,14 +8,14 @@ ____ demoGoogleMap2 _____ *
 c_ MyForm(?D..
     ___  -  
         s__. - ()
-        ui _ Ui_Dialog()
+        ui _ ?
         ui.sU..
         ui.pushButtonSearch.c___.c..(displayLocation)
         s..
    
     ___ displayLocation 
-        lng _ float(ui.lineEditLongitude.t..())
-        lat _ float(ui.lineEditLatitude.t..())
+        lng _ fl..(ui.lineEditLongitude.t..())
+        lat _ fl..(ui.lineEditLatitude.t..())
         google_maps _ GoogleMaps(api_key_'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
         my_location _ google_maps.search(lat_lat, lng_lng).first()
         ui.labelLocation.sT..("Location: "+st.(my_location))
@@ -24,7 +24,7 @@ c_ MyForm(?D..
         ui.labelPostalCode.sT..("Postal Code: "+st.(my_location.postal_code))
           
 __ _ ____ __ _____
-    app _ ?A..(___.argv)
+    app _ ?A..
     w _ ?
     w.s..
     ___.e..(app.e

@@ -34,7 +34,7 @@ c_ MyForm(QMainWindow
         f.close()
 
 __ _ ____ __ _____
-    app _ ?A..(___.argv)
+    app _ ?A..
     w _ ?
     w.s..
     ___.e..(app.e

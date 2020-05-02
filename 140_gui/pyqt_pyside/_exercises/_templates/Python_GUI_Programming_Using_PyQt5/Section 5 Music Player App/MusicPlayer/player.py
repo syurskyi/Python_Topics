@@ -160,7 +160,7 @@ c_ Player(?W..
             timer.start()
             sound _ MP3(st.(musicList[index]))
             songLength _ sound.info.length
-            songLength _ round(songLength)
+            songLength _ ro..(songLength)
             print(songLength)
             min, sec _ divmod(songLength, 60)
 
@@ -188,7 +188,7 @@ c_ Player(?W..
             timer.start()
             sound _ MP3(st.(musicList[index]))
             songLength _ sound.info.length
-            songLength _ round(songLength)
+            songLength _ ro..(songLength)
             print(songLength)
             min, sec _ divmod(songLength, 60)
 
@@ -216,7 +216,7 @@ c_ Player(?W..
             timer.start()
             sound _ MP3(st.(musicList[index]))
             songLength _ sound.info.length
-            songLength _ round(songLength)
+            songLength _ ro..(songLength)
             print(songLength)
             min, sec _ divmod(songLength, 60)
 
@@ -228,7 +228,7 @@ c_ Player(?W..
             pass
 
     ___ setVolume 
-        volume _ volumeSlider.value()
+        volume _ volumeSlider.v..
         # print(self.volume)
         mixer.music.set_volume(volume/100)
 
@@ -260,7 +260,7 @@ c_ Player(?W..
 
 
 ___ main(
-    App _ ?A..(___.argv)
+    App _ ?A..
     window _ Player()
     ___.e..(App.e
 

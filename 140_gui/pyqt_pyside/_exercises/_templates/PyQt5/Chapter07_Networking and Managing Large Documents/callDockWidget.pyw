@@ -12,7 +12,7 @@ c_ AppWindow(QMainWindow
 
 
 __ _ ____ __ _____
-    app _ ?A..(___.argv)
+    app _ ?A..
     w _ AppWindow()
     w.s..
     ___.e..(app.e

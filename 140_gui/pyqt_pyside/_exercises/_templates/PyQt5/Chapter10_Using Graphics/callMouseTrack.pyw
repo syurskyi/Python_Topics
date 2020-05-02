@@ -5,7 +5,7 @@ ____ demoMousetrack _____ *
 c_ MyForm(?D..
     ___  -  
         s__. - ()
-        ui _ Ui_Dialog()
+        ui _ ?
         setMouseTracking(T..)
         ui.sU..
         s..
@@ -17,7 +17,7 @@ c_ MyForm(?D..
         ui.label.sT..(t..)
 
 __ _ ____ __ _____
-    app _ ?A..(___.argv)
+    app _ ?A..
     w _ ?
     w.s..
     ___.e..(app.e

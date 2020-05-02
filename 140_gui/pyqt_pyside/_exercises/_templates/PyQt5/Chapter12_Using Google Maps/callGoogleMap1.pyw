@@ -8,7 +8,7 @@ ____ demoGoogleMap1 _____ _
 c_ MyForm(?D..
     ___  -  
         s__. - ()
-        ui _ Ui_Dialog()
+        ui _ ?
         ui.sU..
         ui.pushButtonSearch.c___.c..(displayDetails)
         s..
@@ -24,7 +24,7 @@ c_ MyForm(?D..
         ui.labelLatitude.sT..("Latitude: "+st.(my_location.lat))
           
 __ _ ____ __ _____
-    app _ ?A..(___.argv)
+    app _ ?A..
     w _ ?
     w.s..
     ___.e..(app.e

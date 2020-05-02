@@ -7,7 +7,7 @@ ____ demoCalculator _____ _
 c_ MyForm ?D..
     ___  -
         s__. -
-        ui _ Ui_Dialog()
+        ui _ ?
         ui.sU..
         ui.pushButtonPlus.c___.c..(addtwonum)
         ui.pushButtonSubtract.c___.c..(subtracttwonum)
@@ -61,10 +61,10 @@ c_ MyForm ?D..
         ____
             b_0
         division_a/b
-        ui.labelResult.sT..("Division: " +st.(round(division,2)))
+        ui.labelResult.sT..("Division: " +st.(ro..(division,2)))
 
 __ _ ____ __ _____
-    app _ ?A..(___.argv)
+    app _ ?A..
     w _ ?
     w.s..
     ___.e..(app.e

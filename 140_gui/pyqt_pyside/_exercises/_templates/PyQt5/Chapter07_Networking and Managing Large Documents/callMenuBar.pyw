@@ -75,7 +75,7 @@ c_ AppWindow(QMainWindow
     ___ pasteMethod 
         ui.label.sT..("Paste menu item is selected")
 
-app _ ?A..(___.argv)
+app _ ?A..
 w _ AppWindow()
 w.s..
 ___.e..(app.e

@@ -137,7 +137,7 @@ ___ manage_color_presets(
         new_colors _ {}
         ___ preset in p.list:
             __ not preset['delete'].value(
-                new_colors[preset['name'].value()] _ preset['value'].value()
+                new_colors[preset['name'].v..] _ preset['value'].v..
         success _ write_color_presets(path, new_colors)
         __ success:
             targetMenu.findItem("Color Nodes").clearMenu()

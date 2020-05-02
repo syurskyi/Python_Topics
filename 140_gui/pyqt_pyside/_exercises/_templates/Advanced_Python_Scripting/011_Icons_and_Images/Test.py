@@ -281,7 +281,7 @@ c_ ImageContainer(?G...QFrame
 
 c_ MainWindow(?G...?W..
     ___  -  
-        app _ ?G...?A..(___.argv)
+        app _ ?G...?A..
         super(MainWindow, self). - ()
 
         setWindowTitle("Image Viewer")

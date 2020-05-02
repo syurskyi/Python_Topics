@@ -9,7 +9,7 @@ ____ demoProgressBarThread _____ _
 c_ MyForm(?D..
     ___  -  
         s__. - ()
-        ui _ Ui_Dialog()
+        ui _ ?
         ui.sU..
         s..
        
@@ -30,7 +30,7 @@ c_ myThread (threading.Thread
 
       
 __ _ ____ __ _____
-    app _ ?A..(___.argv)
+    app _ ?A..
     w _ ?
     thread1 _ myThread(w)
     thread1.start()

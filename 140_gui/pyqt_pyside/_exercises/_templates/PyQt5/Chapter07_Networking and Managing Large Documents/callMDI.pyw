@@ -31,7 +31,7 @@ c_ MyForm(QMainWindow
         ui.mdiArea.tileSubWindows()
 
 __ _ ____ __ _____
-    app _ ?A..(___.argv)
+    app _ ?A..
     w _ ?
     w.s..
     ___.e..(app.e

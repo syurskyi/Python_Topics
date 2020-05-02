@@ -13,7 +13,7 @@ conn_None
 c_ Window(?D..
     ___  -  
         s__. - ()
-        ui _ Ui_Dialog()
+        ui _ ?
         ui.sU..
         tE__Messages_ui.tE__Messages
         ui.pushButtonSend.c___.c..(dispMessage)
@@ -68,7 +68,7 @@ c_ ClientThread(Thread
             window.tE__Messages.ap..("Client: "+data.decode("utf-8"))
  
 __ _ ____ __ _____
-    app _ ?A..(___.argv)
+    app _ ?A..
     window _ Window()
     serverThread_ServerThread(window)
     serverThread.start()

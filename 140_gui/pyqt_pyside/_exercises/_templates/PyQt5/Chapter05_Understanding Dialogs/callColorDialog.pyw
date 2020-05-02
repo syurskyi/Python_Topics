@@ -9,7 +9,7 @@ c_ MyForm(?D..
     ___  -  
         s__. - ()
         col _ QColor(0, 0, 0) 
-        ui _ Ui_Dialog()
+        ui _ ?
         ui.sU..
         ui.frameColor.setStyleSheet("QWidget { background-color: %s }" % col.name())
         ui.pushButtonColor.c___.c..(dispcolor)
@@ -22,7 +22,7 @@ c_ MyForm(?D..
             ui.labelColor.sT..("You have selected the color with code: " + st.(col.name()))
 
 __ _ ____ __ _____
-    app _ ?A..(___.argv)
+    app _ ?A..
     w _ ?
     w.s..
     ___.e..(app.e

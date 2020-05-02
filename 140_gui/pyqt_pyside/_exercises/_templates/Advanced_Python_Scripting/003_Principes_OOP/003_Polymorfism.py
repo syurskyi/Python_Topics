@@ -5,7 +5,7 @@ c_ vectorClass(object
 		z _ z
 
 	___ __mul__ , other
-		__ isinstance(other, (int, float)):
+		__ isinstance(other, (int, fl..)):
 			return vectorClass(x * other,
 			                  y * other,
 			                  z * other)

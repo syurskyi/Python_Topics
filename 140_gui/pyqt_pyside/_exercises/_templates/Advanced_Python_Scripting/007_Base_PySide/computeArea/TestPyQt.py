@@ -5,7 +5,7 @@ _____ ___
 ____ PyQt4.?G.. _____ _
 
 # Create an PyQT4 application object.
-a _ ?A..(___.argv)
+a _ ?A..
 
 # The QWidget widget is the base class of all user interface objects in PyQt4.
 w _ ?W..()

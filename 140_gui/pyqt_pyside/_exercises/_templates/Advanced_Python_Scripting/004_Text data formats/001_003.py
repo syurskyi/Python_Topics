@@ -18,7 +18,7 @@ c_ settings(
                     __ value.isdigit(
                         value _ int(value)
                     elif value.replace('.','').isdigit() an. value.count('.') __ 1:
-                        value _ float(value)
+                        value _ fl..(value)
                     data[key] _ value
             return data
         return __create_default()

@@ -44,8 +44,8 @@ c_ timeline_item(?G...QGraphicsRectItem
 
 c_ timeline(?G...QGraphicsView
     ___  -  , a_item_length _ 4, a_region_length _ 8, a_bpm _ 140.0, a_px_per_region _ 100, total_tracks _ 5, total_regions _ 300
-        item_length _ float(a_item_length)
-        region_length _ float(a_region_length)
+        item_length _ fl..(a_item_length)
+        region_length _ fl..(a_region_length)
         ?G...QGraphicsView. - 
         setVerticalScrollBarPolicy(?C...Qt.ScrollBarAlwaysOff)
         setHorizontalScrollBarPolicy(?C...Qt.ScrollBarAlwaysOff)
@@ -129,7 +129,7 @@ c_ timeline(?G...QGraphicsView
         track +_ 1
 
 __ __name__ __ '__main__':
-    app _ ?G...?A..(___.argv)
+    app _ ?G...?A..
     view _ timeline(total_tracks_5)
     ___ i in range(5
         view.draw_item_musical_time(0, 0, 0, i + 1, 0, 0, 120, 'Item-' + st.(i), i)

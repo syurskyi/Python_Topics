@@ -456,7 +456,7 @@ __ __name__ __ '__main__':
     # for debugging
     print (PY_VER)
     print (QT_VER)
-    app _ ?W...?A..(___.argv)
+    app _ ?W...?A..
 
     # if os doesn't support Tray, quit
     __ not ?W...QSystemTrayIcon.isSystemTrayAvailable(

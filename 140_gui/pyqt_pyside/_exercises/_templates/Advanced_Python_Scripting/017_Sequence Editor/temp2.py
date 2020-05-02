@@ -139,7 +139,7 @@ c_ pad1(?G...QGraphicsEllipseItem
         try:
 
             songPath _ songListdecoded[pad1.__counter][0]
-            offset _ float(songListdecoded[pad1.__counter][1])
+            offset _ fl..(songListdecoded[pad1.__counter][1])
             playSong(songPath, offset)
 
             # update counter
@@ -176,7 +176,7 @@ c_ pad1(?G...QGraphicsEllipseItem
 
             ___ s in songListcoded:
                 ___ rep in range(int(s[0])):
-                    songListdecoded.ap..([s[1], float(s[2])])
+                    songListdecoded.ap..([s[1], fl..(s[2])])
             print(songListdecoded)
             songListdecoded _ songListdecoded
 

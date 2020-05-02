@@ -7,7 +7,7 @@ ____ demoInputDialog _____ _
 c_ MyForm(?D..
     ___  -  
         s__. - ()
-        ui _ Ui_Dialog()
+        ui _ ?
         ui.sU..
         ui.pushButtonCountry.c___.c..(dispmessage)
         s..
@@ -19,7 +19,7 @@ c_ MyForm(?D..
           ui.lineEditCountry.sT..(countryName)
 
 __ _ ____ __ _____
-    app _ ?A..(___.argv)
+    app _ ?A..
     w _ ?
     w.s..
     ___.e..(app.e

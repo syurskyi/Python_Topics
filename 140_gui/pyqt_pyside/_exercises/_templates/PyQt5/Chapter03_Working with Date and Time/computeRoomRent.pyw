@@ -7,7 +7,7 @@ ____ reservehotel _____ _
 c_ MyForm(?D..
     ___  -  
         s__. - ()
-        ui _ Ui_Dialog()
+        ui _ ?
         ui.sU..
         roomtypes_['Suite', 'Super Luxury', 'Super Deluxe', 'Ordinary']
         addcontent()     
@@ -21,7 +21,7 @@ c_ MyForm(?D..
     ___ computeRoomRent 
         dateselected_ui.calendarWidget.selectedDate()
         dateinstring_st.(dateselected.toPyDate())
-        noOfDays_ui.spinBox.value()
+        noOfDays_ui.spinBox.v..
         chosenRoomType_ui.comboBox.iT..(ui.comboBox.cI..())
         ui.Enteredinfo.sT..('Date of reservation: '+dateinstring+ ', Number of days: '+ st.(noOfDays) + ' \nand Room type selected: '+ chosenRoomType)
         roomRent_0
@@ -37,7 +37,7 @@ c_ MyForm(?D..
         ui.RoomRentinfo.sT..('Room Rent for single day for '+ chosenRoomType +' type is '+ st.(roomRent)+ '$. \nTotal room rent is '+ st.(total)+ '$')
  
 __ _ ____ __ _____
-    app _ ?A..(___.argv)
+    app _ ?A..
     w _ ?
     w.s..
     ___.e..(app.e

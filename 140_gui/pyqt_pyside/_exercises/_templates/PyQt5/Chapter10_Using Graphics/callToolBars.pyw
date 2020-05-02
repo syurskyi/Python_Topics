@@ -52,7 +52,7 @@ c_ AppWindow(QMainWindow
     ___ drawLine
         toDraw_"line"
 
-app _ ?A..(___.argv)
+app _ ?A..
 w _ AppWindow()
 w.s..
 ___.e..(app.e

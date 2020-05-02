@@ -352,7 +352,7 @@ c_ TP_Launcher_GUI(?W...?W..
 __ __name__ __ '__main__':
     print (PY_VER)
     print (QT_VER)
-    app _ ?W...?A..(___.argv)
+    app _ ?W...?A..
     __ not ?W...QSystemTrayIcon.isSystemTrayAvailable(
         ?W...QMessageBox.critical(
             None, 'Error!',

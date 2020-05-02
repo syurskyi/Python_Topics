@@ -6,7 +6,7 @@ ____ DemoTableWidget _____ _
 c_ MyForm(?D..
     ___  -  ,data
         s__. - ()
-        ui _ Ui_Dialog()
+        ui _ ?
         ui.sU..
         data_data
         addcontent()
@@ -28,7 +28,7 @@ data.ap..(('Ordinary', '10$'))
 
                 
 __ _ ____ __ _____
-    app _ ?A..(___.argv)
+    app _ ?A..
     w _ MyForm(data)
     w.s..
     ___.e..(app.e

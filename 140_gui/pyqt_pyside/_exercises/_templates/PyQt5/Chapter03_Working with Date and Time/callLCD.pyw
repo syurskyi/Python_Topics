@@ -7,7 +7,7 @@ ____ demoLCD _____ _
 c_ MyForm(?D..
     ___  -
         s__. - ()
-        ui _ Ui_Dialog()
+        ui _ ?
         ui.sU..
         timer _ ?C...QTimer
         timer.timeout.c..(showlcd)
@@ -20,7 +20,7 @@ c_ MyForm(?D..
         ui.lcdNumber.display(t..)
  
 __ _ ____ __ _____
-    app _ ?A..(___.argv)
+    app _ ?A..
     w _ ?
     w.s..
     ___.e..(app.e

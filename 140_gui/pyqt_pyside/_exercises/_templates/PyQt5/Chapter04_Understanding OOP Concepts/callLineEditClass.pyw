@@ -16,7 +16,7 @@ c_ Student:
 c_ MyForm(?D..
     ___  -  
         s__. - ()
-        ui _ Ui_Dialog()
+        ui _ ?
         ui.sU..
         ui.ButtonClickMe.c___.c..(dispmessage)
         s..
@@ -26,7 +26,7 @@ c_ MyForm(?D..
         ui.lR___.sT..("Hello "+studentObj.printName())
 
 __ _ ____ __ _____
-    app _ ?A..(___.argv)
+    app _ ?A..
     w _ ?
     w.s..
     ___.e..(app.e

@@ -60,7 +60,7 @@ c_ resourceCompileClass(QMainWindow
         run_btn _ ?PB..('RUN')
         ly.addWidget(run_btn)
         run_btn.c___.c..(runCompile)
-        __ le.(___.argv) __ 2:
+        __ le. __ 2:
             image _ ___.argv[1]
             list.appendImage(image)
 
@@ -94,7 +94,7 @@ c_ resourceCompileClass(QMainWindow
             f.write('\t</qresource>\n</RCC>')
         return T..
 
-app _ ?A..(___.argv)
+app _ ?A..
 window _ resourceCompileClass()
 window.s..
 ___.e..(app.e

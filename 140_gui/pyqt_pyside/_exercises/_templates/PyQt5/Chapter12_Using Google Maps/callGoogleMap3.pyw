@@ -9,7 +9,7 @@ ____ demoGoogleMap3 _____ _
 c_ MyForm(?D..
     ___  -  
         s__. - ()
-        ui _ Ui_Dialog()
+        ui _ ?
         ui.sU..
         ui.pushButtonFindDistance.c___.c..(displayDistance)
         s..
@@ -22,7 +22,7 @@ c_ MyForm(?D..
         ui.labelDistance.sT..("Distance between "+ui.lineEditFirstLocation.t..()+" and "+ui.lineEditSecondLocation.t..()+" is "+st.(distance))
           
 __ _ ____ __ _____
-    app _ ?A..(___.argv)
+    app _ ?A..
     w _ ?
     w.s..
     ___.e..(app.e

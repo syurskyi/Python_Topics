@@ -37,7 +37,7 @@ c_ Form(?D..
         pass
 
 
-app _ ?A..(___.argv)
+app _ ?A..
 form _ Form()
 form.s..
 app.exec_()

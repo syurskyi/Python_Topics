@@ -8,7 +8,7 @@ ____ demoAnimation1 _____ _
 c_ MyForm(?D..
     ___  -  
         s__. - ()
-        ui _ Ui_Dialog()
+        ui _ ?
         ui.sU..
         ui.pushButtonMoveDown.c___.c..(startAnimation)
         s..
@@ -21,7 +21,7 @@ c_ MyForm(?D..
         anim.start()
 
 __ _ ____ __ _____
-    app _ ?A..(___.argv)
+    app _ ?A..
     w _ ?
     w.s..
     ___.e..(app.e

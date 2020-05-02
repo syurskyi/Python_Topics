@@ -9,7 +9,7 @@ ____ demoDrawDiffLine _____ *
 c_ MyForm(?D..
     ___  -
         s__. - ()
-        ui _ Ui_Dialog()
+        ui _ ?
         ui.sU..
         lineType_"SolidLine"
         pos1 _ [0,0]
@@ -45,7 +45,7 @@ c_ MyForm(?D..
         update()
                   
 __ _ ____ __ _____
-    app _ ?A..(___.argv)
+    app _ ?A..
     w _ ?
     w.s..
     ___.e..(app.e
