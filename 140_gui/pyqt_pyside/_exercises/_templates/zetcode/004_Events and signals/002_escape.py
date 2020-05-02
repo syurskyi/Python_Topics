@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 ______ ___
-____ ?.QtCore ______ Qt
+____ ?.?C.. ______ __
 ____ ?.?W.. ______ W.., QApplication
 
 
@@ -19,7 +19,7 @@ c_ Example(W..):
         show
 
     ___ keyPressEvent(self, e):
-        __ e.key  __ Qt.Key_Escape:
+        __ e.key  __ __.Key_Escape:
             close
 
 

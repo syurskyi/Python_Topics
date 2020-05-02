@@ -23,19 +23,19 @@ c_ Example(W..):
         redb.setCheckable(True)
         redb.m..(10, 10)
 
-        redb.clicked[bool].connect(setColor)
+        redb.clicked[bool].c..(setColor)
 
         greenb _ ?P..('Green',
         greenb.setCheckable(True)
         greenb.m..(10, 60)
 
-        greenb.clicked[bool].connect(setColor)
+        greenb.clicked[bool].c..(setColor)
 
         blueb _ ?P..('Blue',
         blueb.setCheckable(True)
         blueb.m..(10, 110)
 
-        blueb.clicked[bool].connect(setColor)
+        blueb.clicked[bool].c..(setColor)
 
         square _ QFrame(
         square.sG__(150, 20, 100, 100)

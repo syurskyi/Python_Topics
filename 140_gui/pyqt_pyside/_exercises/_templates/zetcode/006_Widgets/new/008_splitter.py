@@ -4,7 +4,7 @@
 
 ____ ?.?W.. ______ (W.., ?HB.., QFrame,
                              QSplitter, QStyleFactory, QApplication)
-____ ?.QtCore ______ Qt
+____ ?.?C.. ______ __
 ______ ___
 
 
@@ -27,11 +27,11 @@ c_ Example(W..):
         bottom _ QFrame(
         bottom.setFrameShape(QFrame.StyledPanel)
 
-        splitter1 _ QSplitter(Qt.Horizontal)
+        splitter1 _ QSplitter(__.H..)
         splitter1.aW..(topleft)
         splitter1.aW..(topright)
 
-        splitter2 _ QSplitter(Qt.Vertical)
+        splitter2 _ QSplitter(__.Vertical)
         splitter2.aW..(splitter1)
         splitter2.aW..(bottom)
 

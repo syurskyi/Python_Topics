@@ -21,7 +21,7 @@ c_ Example(W..):
         btn _ ?P..('Dialog',
         btn.m..(20, 20)
 
-        btn.clicked.connect(showDialog)
+        btn.clicked.c..(showDialog)
 
         frm _ QFrame(
         frm.setStyleSheet("QWidget { background-color: %s }"

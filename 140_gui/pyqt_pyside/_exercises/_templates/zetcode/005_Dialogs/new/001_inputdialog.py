@@ -17,7 +17,7 @@ c_ Example(W..):
     ___ initUI
         btn _ ?P..('Dialog',
         btn.m..(20, 20)
-        btn.clicked.connect(showDialog)
+        btn.clicked.c..(showDialog)
 
         le _ QLineEdit(
         le.m..(130, 22)

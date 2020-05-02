@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 ______ ___
-____ ?.QtCore ______ pyqtSignal, QObject
+____ ?.?C.. ______ pyqtSignal, QObject
 ____ ?.?W.. ______ QMainWindow, QApplication
 
 
@@ -19,7 +19,7 @@ c_ Example(QMainWindow):
 
     ___ initUI
         c _ Communicate
-        c.closeApp.connect(close)
+        c.closeApp.c..(close)
 
         sG__(300, 300, 290, 150)
         sWT__('Emit signal')

@@ -1,4 +1,4 @@
-____ ?.QtCore ______ Qt
+____ ?.?C.. ______ __
 ____ ?.?W.. ______ *
 
 c_ myWidget(W..):
@@ -9,13 +9,13 @@ c_ myWidget(W..):
         layout.aW..(button)
         line _ QLineEdit
         layout.aW..(line)
-        line.textChanged.connect(text)
+        line.textChanged.c..(text)
         # first version
-        # button.clicked.connect(self.action)
+        # button.clicked.c..(self.action)
         # second version
-        # self.connect(button, SIGNAL('clicked()'), self, SLOT('action()'))
+        # self.c..(button, SIGNAL('clicked()'), self, SLOT('action()'))
         # third version
-        @button.clicked.connect
+        @button.clicked.c..
         ___ click :
             action
 

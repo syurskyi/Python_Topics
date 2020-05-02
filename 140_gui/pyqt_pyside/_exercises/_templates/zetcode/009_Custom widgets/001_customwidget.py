@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 
 
-____ ?.?W.. ______ (W.., QSlider, QApplication,
+____ ?.?W.. ______ (W.., ?S.., QApplication,
                              ?HB.., ?VB..)
-____ ?.QtCore ______ QObject, Qt, pyqtSignal
+____ ?.?C.. ______ QObject, __, pyqtSignal
 ____ ?.QtGui ______ QPainter, QFont, QColor, QPen
 ______ ___
 
@@ -70,10 +70,10 @@ c_ BurningWidget(W..):
             qp.drawRect(0, 0, till, h)
 
         pen _ QPen(QColor(20, 20, 20), 1,
-                   Qt.SolidLine)
+                   __.SolidLine)
 
         qp.setPen(pen)
-        qp.setBrush(Qt.NoBrush)
+        qp.setBrush(__.NoBrush)
         qp.drawRect(0, 0, w - 1, h - 1)
 
         j _ 0
@@ -96,17 +96,17 @@ c_ Example(W..):
     ___ initUI
         OVER_CAPACITY _ 750
 
-        sld _ QSlider(Qt.Horizontal,
-        sld.setFocusPolicy(Qt.NoFocus)
+        sld _ ?S..(__.H..,
+        sld.setFocusPolicy(__.NoFocus)
         sld.setRange(1, OVER_CAPACITY)
         sld.setValue(75)
         sld.sG__(30, 40, 150, 30)
 
         c _ Communicate
         wid _ BurningWidget
-        c.updateBW[int].connect(wid.setValue)
+        c.updateBW[int].c..(wid.setValue)
 
-        sld.valueChanged[int].connect(changeValue)
+        sld.vC__[int].c..(changeValue)
         hbox _ ?HB..
         hbox.aW..(wid)
         vbox _ ?VB..

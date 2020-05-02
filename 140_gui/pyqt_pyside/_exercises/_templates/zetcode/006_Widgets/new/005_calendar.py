@@ -3,7 +3,7 @@
 
 ____ ?.?W.. ______ (W.., QCalendarWidget,
                              ?L.., QApplication, ?VB..)
-____ ?.QtCore ______ QDate
+____ ?.?C.. ______ QDate
 ______ ___
 
 
@@ -19,7 +19,7 @@ c_ Example(W..):
 
         cal _ QCalendarWidget(
         cal.setGridVisible(True)
-        cal.clicked[QDate].connect(showDate)
+        cal.clicked[QDate].c..(showDate)
 
         vbox.aW..(cal)
 

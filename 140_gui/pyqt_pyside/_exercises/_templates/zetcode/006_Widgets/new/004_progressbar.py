@@ -4,7 +4,7 @@
 
 ____ ?.?W.. ______ (W.., QProgressBar,
                              ?P.., QApplication)
-____ ?.QtCore ______ QBasicTimer
+____ ?.?C.. ______ QBasicTimer
 ______ ___
 
 
@@ -22,7 +22,7 @@ c_ Example(W..):
 
         btn _ ?P..('Start',
         btn.m..(40, 80)
-        btn.clicked.connect(doAction)
+        btn.clicked.c..(doAction)
 
         timer _ QBasicTimer
         step _ 0

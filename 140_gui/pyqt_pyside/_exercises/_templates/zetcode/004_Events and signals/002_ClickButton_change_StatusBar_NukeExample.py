@@ -1,6 +1,6 @@
 ______ ___
 ____ ?.?W.. ______ *
-____ ?.QtCore ______ Qt
+____ ?.?C.. ______ __
 
 
 c_ Example(QMainWindow):
@@ -18,8 +18,8 @@ c_ Example(QMainWindow):
         btn2 _ ?P..("Get Name of Node",
         btn2.m..(150, 50)
 
-        btn1.clicked.connect(button1Clicked)
-        btn2.clicked.connect(button2Clicked)
+        btn1.clicked.c..(button1Clicked)
+        btn2.clicked.c..(button2Clicked)
 
         sB__
 

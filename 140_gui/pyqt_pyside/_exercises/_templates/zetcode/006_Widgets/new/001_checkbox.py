@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 ____ ?.?W.. ______ W.., QCheckBox, QApplication
-____ ?.QtCore ______ Qt
+____ ?.?C.. ______ __
 ______ ___
 
 
@@ -18,7 +18,7 @@ c_ Example(W..):
         cb _ QCheckBox('Show title',
         cb.m..(20, 20)
         cb.toggle
-        cb.stateChanged.connect(changeTitle)
+        cb.stateChanged.c..(changeTitle)
 
         sG__(300, 300, 250, 150)
         sWT__('QCheckBox')
@@ -26,7 +26,7 @@ c_ Example(W..):
 
     ___ changeTitle(self, state):
 
-        __ state __ Qt.Checked:
+        __ state __ __.Checked:
             sWT__('QCheckBox')
         else:
             sWT__(' ')

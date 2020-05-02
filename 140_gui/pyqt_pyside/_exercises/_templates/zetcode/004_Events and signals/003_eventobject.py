@@ -3,7 +3,7 @@
 
 
 ______ ___
-____ ?.QtCore ______ Qt
+____ ?.?C.. ______ __
 ____ ?.?W.. ______ W.., QApplication, ?G.., ?L..
 
 
@@ -23,7 +23,7 @@ c_ Example(W..):
         text _ "x: {0},  y: {1}".format(x, y)
 
         label _ ?L..(text,
-        grid.aW..(label, 0, 0, Qt.AlignTop)
+        grid.aW..(label, 0, 0, __.AlignTop)
 
         setMouseTracking(True)
 

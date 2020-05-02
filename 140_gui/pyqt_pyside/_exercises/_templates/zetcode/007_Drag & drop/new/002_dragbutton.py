@@ -3,7 +3,7 @@
 
 
 ____ ?.?W.. ______ ?P.., W.., QApplication
-____ ?.QtCore ______ Qt, QMimeData
+____ ?.?C.. ______ __, QMimeData
 ____ ?.QtGui ______ QDrag
 ______ ___
 
@@ -15,7 +15,7 @@ c_ Button(?P..):
 
     ___ mouseMoveEvent(self, e):
 
-        __ e.buttons  != Qt.RightButton:
+        __ e.buttons  != __.RightButton:
             return
 
         mimeData _ QMimeData
@@ -24,13 +24,13 @@ c_ Button(?P..):
         drag.setMimeData(mimeData)
         drag.setHotSpot(e.pos  - rect .topLeft())
 
-        dropAction _ drag.e..(Qt.MoveAction)
+        dropAction _ drag.e..(__.MoveAction)
 
     ___ mousePressEvent(self, e):
 
         s__ .mousePressEvent(e)
 
-        __ e.button  __ Qt.LeftButton:
+        __ e.button  __ __.LeftButton:
             print('press')
 
 
@@ -57,7 +57,7 @@ c_ Example(W..):
         position _ e.pos
         button.m..(position)
 
-        e.setDropAction(Qt.MoveAction)
+        e.setDropAction(__.MoveAction)
         e.accept
 
 

@@ -1,21 +1,21 @@
-____ PySide ______ QtCore, QtGui
+____ PySide ______ ?C.., QtGui
 
 
 c_ MyLabel(QtGui.?L..):
     ___ - (self, text, parent=N..):
         QtGui.?L...- (self, text, parent)
-        setAlignment(QtCore.Qt.AlignCenter)
+        setAlignment(?C...__.AlignCenter)
 
     ___ mousePressEvent(self, e):
         name _ nuke.selectedNode .knob('name').getValue
-        __ e.buttons  & QtCore.Qt.LeftButton:
+        __ e.buttons  & ?C...__.LeftButton:
             print("Нажата левая кнопка мыши")
-        __ e.buttons  & QtCore.Qt.RightButton:
+        __ e.buttons  & ?C...__.RightButton:
             print("Нажата правая кнопка мыши")
-        __ e.buttons  & QtCore.Qt.MiddleButton:
+        __ e.buttons  & ?C...__.MiddleButton:
             print("Нажата средняя кнопка мыши")
-        __ (e.buttons  & QtCore.Qt.LeftButton and
-                    e.buttons  & QtCore.Qt.RightButton):
+        __ (e.buttons  & ?C...__.LeftButton and
+                    e.buttons  & ?C...__.RightButton):
             print("Левая и правая кнопки нажаты")
         setText('Name of the Selected node is: ' + str(name))
 

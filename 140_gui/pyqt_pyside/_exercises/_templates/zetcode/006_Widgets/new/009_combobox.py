@@ -27,7 +27,7 @@ c_ Example(W..):
         combo.m..(50, 50)
         lbl.m..(50, 150)
 
-        combo.activated[str].connect(onActivated)
+        combo.activated[str].c..(onActivated)
 
         sG__(300, 300, 300, 200)
         sWT__('QComboBox')

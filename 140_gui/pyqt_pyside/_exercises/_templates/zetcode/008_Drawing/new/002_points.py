@@ -3,7 +3,7 @@
 
 ____ ?.?W.. ______ W.., QApplication
 ____ ?.QtGui ______ QPainter
-____ ?.QtCore ______ Qt
+____ ?.?C.. ______ __
 ______ ___, random
 
 
@@ -26,7 +26,7 @@ c_ Example(W..):
         qp.end
 
     ___ drawPoints(self, qp):
-        qp.setPen(Qt.red)
+        qp.setPen(__.red)
         size _ size
 
         ___ i __ ra..(1000):

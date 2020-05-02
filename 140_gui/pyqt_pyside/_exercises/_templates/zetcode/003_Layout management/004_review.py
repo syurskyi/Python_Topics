@@ -2,12 +2,12 @@
 # -*- coding: utf-8 -*-
 
 ______ ___
-____ ?.QtCore ______ Qt
-____ ?.?W.. ______ (W.., QLCDNumber, QSlider,
-                             ?VB.., QApplication)
+____ ?.?C.. ______ __
+____ ?.?W.. ______ (W.., ?LCDN.. ?S..
+                             ?VB.., ?A..
 
 
-c_ Example(W..):
+c_ Example W..
 
     ___ -
         s__ .-
@@ -15,22 +15,22 @@ c_ Example(W..):
         ?
 
     ___ initUI
-        lcd _ QLCDNumber(
-        sld _ QSlider(Qt.Horizontal,
+        lcd _ ?LCDN..
+        sld _ ?S.. __.H..
 
         vbox _ ?VB..
-        vbox.aW..(lcd)
-        vbox.aW..(sld)
+        ?.aW.. l..
+        ?.aW.. s..
 
-        sL..(vbox)
-        sld.valueChanged.connect(lcd.display)
+        sL.. ?
+        s__.vC__.c.. l__.d..
 
-        sG__(300, 300, 250, 150)
+        sG__ 300, 300, 250, 150
         sWT__('Signal and slot')
-        show
+        s..
 
 
 __ _____ __ _______
-    app _ QApplication(___.argv)
-    ex _ Example
-    ___.exit(app.e..())
+    app _ ?
+    ex _ ?
+    ___.e.. ?.e..

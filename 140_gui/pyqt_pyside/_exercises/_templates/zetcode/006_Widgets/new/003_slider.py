@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 
 
-____ ?.?W.. ______ (W.., QSlider,
+____ ?.?W.. ______ (W.., ?S..,
                              ?L.., QApplication)
-____ ?.QtCore ______ Qt
+____ ?.?C.. ______ __
 ____ ?.QtGui ______ QPixmap
 ______ ___
 
@@ -18,17 +18,17 @@ c_ Example(W..):
 
     ___ initUI
 
-        sld _ QSlider(Qt.Horizontal,
-        sld.setFocusPolicy(Qt.NoFocus)
+        sld _ ?S..(__.H..,
+        sld.setFocusPolicy(__.NoFocus)
         sld.sG__(30, 40, 100, 30)
-        sld.valueChanged[int].connect(changeValue)
+        sld.vC__[int].c..(changeValue)
 
         label _ ?L..(
         label.setPixmap(QPixmap('mute.png'))
         label.sG__(160, 40, 80, 30)
 
         sG__(300, 300, 280, 170)
-        sWT__('QSlider')
+        sWT__('?S..')
         show
 
     ___ changeValue(self, value):

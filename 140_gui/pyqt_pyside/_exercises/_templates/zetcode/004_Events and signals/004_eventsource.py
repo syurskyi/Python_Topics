@@ -19,8 +19,8 @@ c_ Example(QMainWindow):
         btn2 _ ?P..("Button 2",
         btn2.m..(150, 50)
 
-        btn1.clicked.connect(buttonClicked)
-        btn2.clicked.connect(buttonClicked)
+        btn1.clicked.c..(buttonClicked)
+        btn2.clicked.c..(buttonClicked)
 
         sB__
 

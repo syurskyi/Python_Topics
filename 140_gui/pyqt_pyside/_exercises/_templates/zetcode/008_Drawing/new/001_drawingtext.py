@@ -4,7 +4,7 @@
 ______ ___
 ____ ?.?W.. ______ W.., QApplication
 ____ ?.QtGui ______ QPainter, QColor, QFont
-____ ?.QtCore ______ Qt
+____ ?.?C.. ______ __
 
 
 c_ Example(W..):
@@ -30,7 +30,7 @@ c_ Example(W..):
     ___ drawText(self, event, qp):
         qp.setPen(QColor(168, 34, 3))
         qp.setFont(QFont('Decorative', 10))
-        qp.drawText(event.rect , Qt.AlignCenter, text)
+        qp.drawText(event.rect , __.AlignCenter, text)
 
 
 __ _____ __ _______

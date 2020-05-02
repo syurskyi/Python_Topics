@@ -1,10 +1,10 @@
 ______ ___
-____ PySide ______ QtGui, QtCore
+____ PySide ______ QtGui, ?C..
 
 
-c_ Communicate(QtCore.QObject):
+c_ Communicate(?C...QObject):
 
-    closeApp _ QtCore.pyqtSignal
+    closeApp _ ?C...pyqtSignal
 
 
 c_ Example(QtGui.QMainWindow):
@@ -18,7 +18,7 @@ c_ Example(QtGui.QMainWindow):
     ___ initUI
 
         c _ Communicate
-        c.closeApp.connect(close)
+        c.closeApp.c..(close)
 
         sG__(300, 300, 290, 150)
         sWT__('Emit signal')

@@ -24,7 +24,7 @@ c_ Example(W..):
 
         vbox.aW..(btn)
 
-        btn.clicked.connect(showDialog)
+        btn.clicked.c..(showDialog)
 
         lbl _ ?L..('Knowledge only matters',
         lbl.m..(130, 20)

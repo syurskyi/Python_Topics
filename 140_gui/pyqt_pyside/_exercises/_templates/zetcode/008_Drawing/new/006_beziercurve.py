@@ -3,7 +3,7 @@
 
 ____ ?.?W.. ______ W.., QApplication
 ____ ?.QtGui ______ QPainter, QPainterPath
-____ ?.QtCore ______ Qt
+____ ?.?C.. ______ __
 ______ ___
 
 
