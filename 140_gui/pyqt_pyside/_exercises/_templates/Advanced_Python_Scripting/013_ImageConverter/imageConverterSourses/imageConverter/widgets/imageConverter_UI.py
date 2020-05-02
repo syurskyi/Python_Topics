@@ -13,15 +13,15 @@ try:
     _fromUtf8 _ ?C...QString.fromUtf8
 except AttributeError:
     ___ _fromUtf8(s
-        return s
+        r_ s
 
 try:
     _encoding _ ?G...?A...UnicodeUTF8
     ___ _translate(context, t.., disambig
-        return ?G...?A...translate(context, t.., disambig, _encoding)
+        r_ ?G...?A...translate(context, t.., disambig, _encoding)
 except AttributeError:
     ___ _translate(context, t.., disambig
-        return ?G...?A...translate(context, t.., disambig)
+        r_ ?G...?A...translate(context, t.., disambig)
 
 c_ Ui_imageConverter(object
     ___ setupUi , imageConverter

@@ -68,7 +68,7 @@ c_ iconWidgetClass(QMainWindow, ui.Ui_MainWindow
         combo_cbb.c..
 
     ___ getRandomIcon 
-        return QIcon(icons[random.choice(['item1','item2','item3'])])
+        r_ QIcon(icons[random.choice(['item1','item2','item3'])])
 
 __ __name__ __ '__main__':
     app _ ?A..([])

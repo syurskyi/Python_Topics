@@ -18,4 +18,4 @@ c_ dialogClass(?D..
         cancel_btn.c___.c..(reject)
 
     ___ getData
-        return dict(text_label.t..())
+        r_ dict(text_label.t..())

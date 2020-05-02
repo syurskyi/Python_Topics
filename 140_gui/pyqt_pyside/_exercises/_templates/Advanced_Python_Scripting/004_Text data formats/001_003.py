@@ -20,8 +20,8 @@ c_ settings(
                     elif value.replace('.','').isdigit() an. value.count('.') __ 1:
                         value _ fl..(value)
                     data[key] _ value
-            return data
-        return __create_default()
+            r_ data
+        r_ __create_default()
 
     ___ __write_file
         __ data:
@@ -33,17 +33,17 @@ c_ settings(
         d _ dict(app_'',
                  value_0,
                  path_'')
-        return d
+        r_ d
 
     ___ sV.. , key, value
         data[key] _ value
         __write_file()
 
     ___ getValue , key, default_None
-        return data.get(key, default)
+        r_ data.get(key, default)
 
     ___ getSettings
-        return data
+        r_ data
 
 s _ settings('c:/mySettings.ini')
 s.sV..('app', 'Maya')

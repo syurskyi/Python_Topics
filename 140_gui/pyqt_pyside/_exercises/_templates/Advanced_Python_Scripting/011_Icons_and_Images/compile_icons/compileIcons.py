@@ -77,7 +77,7 @@ c_ resourceCompileClass(QMainWindow
         rcc _ 'C:/Python27/Lib/site-packages/PyQt4/pyrcc4.exe '
         cmd _ ' '.join([rcc, qrc, '-o', compiled])
         os.system(cmd)
-        return T..
+        r_ T..
 
     ___ runCompile
         files _ [list.item(i).data(32) ___ i in range(list.count())]
@@ -92,7 +92,7 @@ c_ resourceCompileClass(QMainWindow
             ___ ico in files:
                 f.write('\t\t<file>%s</file>\n' % os.path.basename(ico))
             f.write('\t</qresource>\n</RCC>')
-        return T..
+        r_ T..
 
 app _ ?A..
 window _ resourceCompileClass()

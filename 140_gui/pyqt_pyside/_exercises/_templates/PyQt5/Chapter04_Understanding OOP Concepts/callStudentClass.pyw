@@ -13,10 +13,10 @@ c_ Student:
         name _ name
 
     ___ getCode 
-        return code
+        r_ code
     
     ___ getName 
-        return name
+        r_ name
 
 c_ MyForm(?D..
     ___  -  

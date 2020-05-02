@@ -1,5 +1,5 @@
 ___ groupboxStyle(
-    return """
+    r_ """
         QGroupBox {
         background-color:#fcc324;
         font:15pt Times Bold;
@@ -11,7 +11,7 @@ ___ groupboxStyle(
     """
 
 ___ progressBarStyle(
-    return """
+    r_ """
         QProgressBar {
         border: 1px solid #bbb;
         background: white;
@@ -22,7 +22,7 @@ ___ progressBarStyle(
     """
 
 ___ playListStyle(
-    return """
+    r_ """
         QListWidget{
         background-color:#fff;
         border-radius: 10px;

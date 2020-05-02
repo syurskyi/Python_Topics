@@ -796,7 +796,7 @@ ___ _apply_site_config(
 
 
 ___ _new_module(name
-    return types.ModuleType(__name__ + "." + name)
+    r_ types.ModuleType(__name__ + "." + name)
 
 
 ___ _import_sub_module(module, name
@@ -804,7 +804,7 @@ ___ _import_sub_module(module, name
     module _ __import__(module.__name__ + "." + name)
     ___ level in name.split("."
         module _ getattr(module, level)
-    return module
+    r_ module
 
 
 ___ _setup(module, extras
@@ -869,7 +869,7 @@ ___ _wrapinstance(func, ptr, base_None
         ____
             base _ Qt.?C...QObject
 
-    return func(long(ptr), base)
+    r_ func(long(ptr), base)
 
 
 ___ _reassign_misplaced_members(binding
@@ -1186,12 +1186,12 @@ ___ _pyqt4(
             # PyQt4 only returns the selected filename, force it to a
             # standard return of the selected filename, and a empty string
             # for the selected filter
-            return ret, ''
+            r_ ret, ''
 
         wrapper.__doc__ _ some_function.__doc__
         wrapper.__name__ _ some_function.__name__
 
-        return wrapper
+        r_ wrapper
 
     decorators _ {
         "QFileDialog": {
@@ -1248,7 +1248,7 @@ ___ _loadUi(uifile, baseinstance_None
         raise RuntimeError(message % (baseinstance))
 
     __ hasattr(Qt, "_uic"
-        return Qt._uic.loadUi(uifile, baseinstance)
+        r_ Qt._uic.loadUi(uifile, baseinstance)
 
     elif hasattr(Qt, "_QtUiTools"
         # Implement `PyQt5.uic.loadUi` for PySide(2)
@@ -1283,7 +1283,7 @@ ___ _loadUi(uifile, baseinstance_None
                 # Workaround for PySide 1.0.9, see issue #208
                 widget.parentWidget()
 
-                return widget
+                r_ widget
 
             ___ createWidget , class_name, parent_None, name_""
                 """Called for each widget defined in ui file
@@ -1295,7 +1295,7 @@ ___ _loadUi(uifile, baseinstance_None
                 __ parent is None an. baseinstance:
                     # Supposed to create the top-level widget,
                     # return the base instance instead
-                    return baseinstance
+                    r_ baseinstance
 
                 # For some reason, Line is not in the list of available
                 # widgets, but works fine, so we have to special case it here.
@@ -1315,12 +1315,12 @@ ___ _loadUi(uifile, baseinstance_None
                     # instance, just like PyQt5.uic.loadUi does.
                     setattr(baseinstance, name, widget)
 
-                return widget
+                r_ widget
 
         widget _ _UiLoader(baseinstance).load(uifile)
         Qt.?C...QMetaObject.connectSlotsByName(widget)
 
-        return widget
+        r_ widget
 
     ____
         raise NotImplementedError("No implementation available for loadUi")
@@ -1347,14 +1347,14 @@ ___ _convert(lines
                                       "and so Qt.py does not support it: you "
                                       "should avoid defining signals inside "
                                       "your ui files.")
-        return line
+        r_ line
 
     parsed _ list()
     ___ line in lines:
         line _ parse(line)
         parsed.ap..(line)
 
-    return parsed
+    r_ parsed
 
 
 ___ _cli(args

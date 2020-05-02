@@ -3,7 +3,7 @@ c_ dividerClass(object
         __div _ 1
 
     ___ divide , value
-        return value / __div
+        r_ value / __div
 
     ___ setDivider , val
         __ __checkValue(val
@@ -12,7 +12,7 @@ c_ dividerClass(object
             print('Wrong value')
 
     ___ __checkValue , val
-        return not val __ 0
+        r_ not val __ 0
 
 d _ dividerClass()
 d.setDivider(2)

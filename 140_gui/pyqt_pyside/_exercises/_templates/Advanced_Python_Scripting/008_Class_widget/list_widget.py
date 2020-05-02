@@ -19,7 +19,7 @@ c_ simpleWindow(?W..
         fillList()
 
     ___ fullPath , item
-        return os.path.join(path,item.t..())
+        r_ os.path.join(path,item.t..())
 
     ___ fillList 
         ___ f __ os.listdir(path

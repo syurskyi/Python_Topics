@@ -13,10 +13,10 @@ c_ Student:
         name _ name
 
     ___ getCode 
-        return code
+        r_ code
     
     ___ getName 
-        return name
+        r_ name
 
 
 c_ Marks(Student
@@ -29,10 +29,10 @@ c_ Marks(Student
         geographyMarks _ geographyMarks
         
     ___ getHistoryMarks 
-        return historyMarks
+        r_ historyMarks
 
     ___ getGeographyMarks 
-        return geographyMarks
+        r_ geographyMarks
     
 
 c_ MyForm(?D..

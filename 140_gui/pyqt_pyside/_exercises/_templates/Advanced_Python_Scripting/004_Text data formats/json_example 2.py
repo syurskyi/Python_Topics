@@ -15,8 +15,8 @@ b _ json.load(open(filePath, 'r'))
 c_ serializer(json.JSONEncoder
     ___ default , obj
         __ isinstance(obj, myClass
-            return {obj.name:obj.x}
-        return json.JSONEncoder.default , obj)
+            r_ {obj.name:obj.x}
+        r_ json.JSONEncoder.default , obj)
 
 c_ myClass(
     ___  -

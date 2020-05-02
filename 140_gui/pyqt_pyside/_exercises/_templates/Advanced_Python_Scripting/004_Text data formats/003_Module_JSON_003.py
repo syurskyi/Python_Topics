@@ -11,9 +11,9 @@ c_ mySerialize(json.JSONEncoder
         __ isinstance(o, vector.vector
             d _ o.__dict__
             d.update({'classType': o.__class__.__name__})
-            return d
+            r_ d
         # return json.JSONEncoder.default(self, o)
-        return super(mySerialize, self).default(o)
+        r_ super(mySerialize, self).default(o)
 #
 json.dump(x, open(p, 'w'), indent_4, cls_mySerialize)
 #

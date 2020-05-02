@@ -47,7 +47,7 @@ c_ TP_Launcher_Model(object
 
     ___ get_workspaces 
         ''' returns a list of workspace names '''
-        return list(_workspaces.keys()) # Python 3.0+ conversion
+        r_ list(_workspaces.keys()) # Python 3.0+ conversion
 
     ___ delete_workspace , ws_name
         ''' delete workspace by workspace name '''
@@ -57,11 +57,11 @@ c_ TP_Launcher_Model(object
 
     ___ get_app_names , ws_name
         ''' returns list of application or file names, no ext'''
-        return _workspaces[ws_name].keys()
+        r_ _workspaces[ws_name].keys()
 
     ___ get_app_icon , ws_name, app_name
         ''' return filepath to icon image'''
-        return _workspaces[ws_name][app_name][1]
+        r_ _workspaces[ws_name][app_name][1]
 
     ___ add_app , ws_name, app_path, icon_path
         ''' add an application and icon file path to the workspace

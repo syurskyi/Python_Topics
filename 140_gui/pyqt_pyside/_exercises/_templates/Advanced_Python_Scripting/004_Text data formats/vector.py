@@ -5,14 +5,14 @@ c_ vector(
         z _ fl..(z)
 
     ___ __repr__
-        return 'Vector<%0.3f, %0.3f, %0.3f>'%(x, y, z)
+        r_ 'Vector<%0.3f, %0.3f, %0.3f>'%(x, y, z)
 
     ___ __str__
-        return __repr__()
+        r_ __repr__()
 
     ___ __add__ , other
         __ isinstance(other, vector
-            return vector(x+other.x,
+            r_ vector(x+other.x,
                           y+other.y,
                           z+other.z)
         ____
@@ -20,7 +20,7 @@ c_ vector(
 
     ___ __sub__ , other
         __ isinstance(other, vector
-            return vector(x-other.x,
+            r_ vector(x-other.x,
                           y-other.y,
                           z-other.z)
         ____
@@ -28,22 +28,22 @@ c_ vector(
 
     ___ __mul__ , other
         __ isinstance(other, int) or isinstance(other, fl..
-            return vector(x * other, y * other, z * other)
+            r_ vector(x * other, y * other, z * other)
         elif isinstance( other, vector
-            return vector(x * other.x, y * other.y, z * other.z)
+            r_ vector(x * other.x, y * other.y, z * other.z)
 
     ___ __call__
-        return (x, y, z)
+        r_ (x, y, z)
 
     ___ __getitem__ , item
         __ isinstance(item, int
             __ 0 <_ item <_2:
                 __ item __ 0:
-                    return x
+                    r_ x
                 elif item __ 1:
-                    return y
+                    r_ y
                 elif item __ 2:
-                    return z
+                    r_ z
             ____
                 raise Exception('Value out of range, use 0, 1 or 2')
         ____
@@ -64,20 +64,20 @@ c_ vector(
             raise Exception('Index value mast be int')
 
     ___ __len__
-        return int(mag())
+        r_ int(mag())
 
     ___ cross , other
         __ isinstance(other, vector
-            return vector(y*other.z - z*other.y,
+            r_ vector(y*other.z - z*other.y,
                  z*other.x - x*other.z,
                  x*other.y - y*other.x)
         raise Exception("Not supported type %s" % type(other))
 
     ___ dot , other
-        return x * other.x + y * other.y + z * other.z
+        r_ x * other.x + y * other.y + z * other.z
 
     ___ mag
-        return (x**2 + y**2 + z**2)**0.5
+        r_ (x**2 + y**2 + z**2)**0.5
 
 a _ vector()
 print(a)

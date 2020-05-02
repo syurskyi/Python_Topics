@@ -29,7 +29,7 @@ c_ settingClass(object
 
 	___ readSetting 
 		data _ __readFile()
-		return data
+		r_ data
 
 
 	___ writeSetting , data

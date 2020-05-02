@@ -24,7 +24,7 @@ ___ get_zipfilepath(frm, to
     name _ os.path.split(frm)[1] + '-' + dt.strftime("%Y%m%d-%H%M%S") + '.zip'
     archive_full_path _ os.path.join(to, name)
 
-    return archive_full_path
+    r_ archive_full_path
 
 
 ___ make_archive(zip_archive_file, directory, *args
@@ -47,7 +47,7 @@ ___ process(srcdir, outdir, *excludes
     archive_full_path _ get_zipfilepath(srcdir, outdir)
     os.chdir(srcdir)
     make_archive(archive_full_path, './', *excludes)
-    return archive_full_path
+    r_ archive_full_path
 
 
 ___ main(

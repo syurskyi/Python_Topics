@@ -77,7 +77,7 @@ c_ timeline(?G...QGraphicsView
 
     ___ f_seconds_to_regions , a_track_seconds
         """converts seconds to regions"""
-        return a_track_seconds * regions_per_second
+        r_ a_track_seconds * regions_per_second
 
     ___ draw_headers 
         f_header _ ?G...QGraphicsRectItem(0, 0, viewer_size, header_height)

@@ -38,7 +38,7 @@ ___ name_color(r, g, b
         file.close()
     except:
         print "Error loading Color labels"
-        return "Unknown Color"
+        r_ "Unknown Color"
 
     ___ color in data:
         vector_b _ nuke.math.Vector3(color['x'], color['y'], color['z'])
@@ -46,7 +46,7 @@ ___ name_color(r, g, b
         __ min_dist __ None or dist < min_dist:
             min_dist _ dist
             name _ color['label']
-    return name
+    r_ name
 
 
 ___ nuke_hex_to_rgb(nuke_hex
@@ -56,27 +56,27 @@ ___ nuke_hex_to_rgb(nuke_hex
         g _ int(real_hex[2:4], 16) / 255.0
         b _ int(real_hex[4:6], 16) / 255.0
     except:
-        return None, None, None
-    return r, g, b
+        r_ None, None, None
+    r_ r, g, b
 
 
 ___ read_color_presets(path
     __ not os.path.isfile(path
         print "No Color preset found "
-        return {}
+        r_ {}
     ____
         try:
             f _ open(path)
             colors _ json.load(f)
             f.close()
             __ type(colors) is dict:
-                return colors
+                r_ colors
             ____
                 print "The preset file doesn't contain a valid dictionary"
-                return {}
+                r_ {}
         except:
             print "Error reading color preset file"
-            return {}
+            r_ {}
 
 
 ___ write_color_presets(path, colors
@@ -84,9 +84,9 @@ ___ write_color_presets(path, colors
         f _ open(path, "w")
         json.dump(colors, f)
         f.close()
-        return T..
+        r_ T..
     except:
-        return False
+        r_ False
 
 
 ___ set_tile_color(value_None

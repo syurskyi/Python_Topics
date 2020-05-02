@@ -1,32 +1,32 @@
-_____ ___
-
-____ ?.?W.. _____ ?D.., ?A..
-
-____ LineEditClass _____ _
-
-c_ Student:
-    name _ ""
- 
-    ___  -  , name
-        name _ name
- 
-    ___ printName 
-        return name
-
-c_ MyForm(?D..
-    ___  -  
-        s__. - ()
-        ui _ ?
-        ui.sU..
-        ui.ButtonClickMe.c___.c..(dispmessage)
-        s..
-
-    ___ dispmessage 
-        studentObj_Student(ui.lEN__.t..())
-        ui.lR___.sT..("Hello "+studentObj.printName())
-
-__ _ ____ __ _____
-    app _ ?A..
-    w _ ?
-    w.s..
-    ___.e..(app.e
+# _____ ___
+#
+# ____ ?.?W.. _____ ?D.., ?A..
+#
+# ____ LineEditClass _____ _
+#
+# c_ Student:
+#     name _ ""
+#
+#     ___  -  , name
+#         ? ?
+#
+#     ___ printName
+#         r_ ?
+#
+# c_ MyForm ?D..
+#     ___  -
+#         s__. -
+#         ui _ ?
+#         ?.sU..
+#         ?.ButtonClickMe.c___.c.. ?
+#         s..
+#
+#     ___ dispmessage
+#         studentObj _ ?(?.lEN__.t..
+#         ?.lR___.sT.. "Hello " + sO__.pN..
+#
+# __ _ ____ __ _____
+#     app _ ?A..
+#     w _ ?
+#     ?.s..
+#     ___.e.. ?.e

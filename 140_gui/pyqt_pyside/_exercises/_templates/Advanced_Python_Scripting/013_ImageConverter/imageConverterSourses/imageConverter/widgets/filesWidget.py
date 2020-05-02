@@ -53,7 +53,7 @@ c_ listWidgetClass(QListWidget
 
 
     ___ getAllFiles
-        return files
+        r_ files
 
     ___ keyPressEvent , event
         __ event.key() __ Qt.Key_Delete:

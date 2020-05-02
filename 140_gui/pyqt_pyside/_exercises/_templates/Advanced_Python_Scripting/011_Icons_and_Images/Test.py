@@ -47,26 +47,26 @@ c_ ImageWidget(?G...?W..
     #        self.setToolTip('aaaa\nbbbb\ncccc')
 
     ___ assetFile 
-        return path + "_asset_.txt"
+        r_ path + "_asset_.txt"
 
     ___ thumbFile 
-        return path + "_thumb_.png"
+        r_ path + "_thumb_.png"
 
     ___ informationFile 
-        return path + "_information_.txt"
+        r_ path + "_information_.txt"
 
     ___ getPublishPath 
         current_version _ version
         __ not current_version:
             current_version _ '000'
         new_version _ int(string.atof(current_version)) + 1
-        return '%s/%03d' % (path, new_version)
+        r_ '%s/%03d' % (path, new_version)
 
     ___ getVersionPath , version
-        return '%s/%s' % (path, version)
+        r_ '%s/%s' % (path, version)
 
     ___ getCurrentVersionPath 
-        return getVersionPath(version)
+        r_ getVersionPath(version)
 
     ___ setThumb , thumb_None
         __ not thumb:
@@ -74,7 +74,7 @@ c_ ImageWidget(?G...?W..
         __ os.path.isfile(thumb
             thumb.load(?C...QString(thumb))
             repaint()
-            return T..
+            r_ T..
 
     ___ paintAsThumb , painter
         name_height _ max(height() * 0.15, 20)

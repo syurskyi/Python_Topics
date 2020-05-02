@@ -132,7 +132,7 @@ c_ TP_Launcher_GUI(?W...?W..
         h_layout.addWidget(workspace_gb)
         h_layout.addStretch()
         h_layout.addWidget(_edit_btn)
-        return h_layout
+        r_ h_layout
 
     ___ _setup_edit_options 
         add_del_l _ ?W...QHBoxLayout()
@@ -153,14 +153,14 @@ c_ TP_Launcher_GUI(?W...?W..
 
         add_del_l.addWidget(_add_btn)
         add_del_l.addWidget(_del_btn)
-        return add_del_l
+        r_ add_del_l
 
     ___ _setup_apps 
         _app_lw _ ?W...QListWidget()
         _app_lw.setAlternatingRowColors(T..)
         flag _ ?W...QAbstractItemView.InternalMove
         _app_lw.setDragDropMode(flag)
-        return _app_lw
+        r_ _app_lw
 
     ___ _setup_tray_icon 
         tray_icon _ ?W...QSystemTrayIcon
@@ -218,7 +218,7 @@ c_ TP_Launcher_GUI(?W...?W..
 
     ___ get_workspace 
         ''' Returns the currently selection workspace from combobox. '''
-        return st.(_workspace_cb.currentText())
+        r_ st.(_workspace_cb.currentText())
 
     ___ _workspace_changed 
         _populate_apps()
@@ -275,11 +275,11 @@ c_ TP_Launcher_GUI(?W...?W..
             _save_settings()
 
     ___ _file_dialog , msg, path
-        return ?W...QFileDialog.getOpenFileName , msg, path)[0]
+        r_ ?W...QFileDialog.getOpenFileName , msg, path)[0]
 
     ___ _file_dialog_pyqt4 , msg, path
         fd _ ?W...QFileDialog.getOpenFileName , msg, path)
-        return st.(fd)
+        r_ st.(fd)
 
     #======= DELETE =================================
 
@@ -340,13 +340,13 @@ c_ TP_Launcher_GUI(?W...?W..
         x _ int(_settings.value('PosX')) #PyQt5 conversion
         y _ int(_settings.value('PosY'))
         cws _ st.(_settings.value('CurrentWorkspace'))
-        return x, y, cws
+        r_ x, y, cws
 
     ___ _get_settings_27_pyqt4 
         x _ _settings.value('PosX').toInt()[0]
         y _ _settings.value('PosY').toInt()[0]
         cws _ st.(_settings.value('CurrentWorkspace'))
-        return x, y, cws
+        r_ x, y, cws
 
 
 __ __name__ __ '__main__':

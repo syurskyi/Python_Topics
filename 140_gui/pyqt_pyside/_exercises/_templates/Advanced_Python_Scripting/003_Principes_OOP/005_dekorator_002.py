@@ -3,7 +3,7 @@ ___ decorator(f
         print('before')
         f()
         print('after')
-    return wrapper
+    r_ wrapper
 
 @decorator
 ___ f1(
@@ -16,7 +16,7 @@ ___ decorator(f
         print('before')
         f(arg)
         print('after')
-    return wrapper
+    r_ wrapper
 
 @decorator
 ___ f1(x

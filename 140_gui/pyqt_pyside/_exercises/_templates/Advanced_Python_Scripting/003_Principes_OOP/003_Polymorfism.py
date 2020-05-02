@@ -6,18 +6,18 @@ c_ vectorClass(object
 
 	___ __mul__ , other
 		__ isinstance(other, (int, fl..)):
-			return vectorClass(x * other,
+			r_ vectorClass(x * other,
 			                  y * other,
 			                  z * other)
 
 		elif isinstance(other, vectorClass
-			return vectorClass(
+			r_ vectorClass(
 				x * other.x,
 				y * other.y,
 				z * other.z)
 
 	___ __repr__
-		return('Vector < %s:%s:%s >' % (x,
+		r_('Vector < %s:%s:%s >' % (x,
 		                                y,
 		                                z))
 

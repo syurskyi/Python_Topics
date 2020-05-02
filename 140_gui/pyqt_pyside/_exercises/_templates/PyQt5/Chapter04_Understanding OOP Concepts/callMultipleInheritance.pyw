@@ -13,10 +13,10 @@ c_ Student:
         name _ name
 
     ___ getCode 
-        return code
+        r_ code
     
     ___ getName 
-        return name
+        r_ name
 
 
 c_ Marks:
@@ -28,10 +28,10 @@ c_ Marks:
         geographyMarks _ geographyMarks
         
     ___ getHistoryMarks 
-        return historyMarks
+        r_ historyMarks
 
     ___ getGeographyMarks 
-        return geographyMarks
+        r_ geographyMarks
 
 c_ Result(Student, Marks
     totalMarks _ 0
@@ -44,10 +44,10 @@ c_ Result(Student, Marks
         percentage _ (historyMarks + geographyMarks) / 200 * 100
         
     ___ getTotalMarks 
-        return totalMarks
+        r_ totalMarks
 
     ___ getPercentage 
-        return percentage
+        r_ percentage
 
 c_ MyForm(?D..
     ___  -  
