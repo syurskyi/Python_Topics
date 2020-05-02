@@ -18,10 +18,10 @@ c_ Button(?P..):
         __ e.buttons  != __.RightButton:
             r_
 
-        mimeData _ QMimeData
+        mD__ _ QMimeData
 
         drag _ QDrag(
-        drag.setMimeData(mimeData)
+        drag.setMimeData(mD__)
         drag.setHotSpot(e.pos  - rect .topLeft())
 
         dropAction _ drag.e..(__.MoveAction)
@@ -42,7 +42,7 @@ c_ Example(W..):
         ?
 
     ___ initUI
-        setAcceptDrops(T..)
+        sAD..(T..)
 
         button _ Button('Button',
         button.m..(100, 65)
@@ -51,14 +51,14 @@ c_ Example(W..):
         sG__(300, 300, 280, 150)
 
     ___ dragEnterEvent(self, e):
-        e.accept
+        e.a...
 
     ___ dropEvent(self, e):
         position _ e.pos
         button.m..(position)
 
         e.setDropAction(__.MoveAction)
-        e.accept
+        e.a...
 
 
 __ _____ __ _______
