@@ -4,7 +4,7 @@
 #
 # ____ reservehotel _____ _
 #
-# c_ MyForm(?D..
+# c_ MyForm ?D..
 #     ___  -
 #         s__. -
 #         ui _ ?

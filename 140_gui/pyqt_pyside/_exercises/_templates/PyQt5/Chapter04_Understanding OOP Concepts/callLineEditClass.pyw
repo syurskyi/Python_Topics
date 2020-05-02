@@ -4,7 +4,7 @@
 #
 # ____ LineEditClass _____ _
 #
-# c_ Student:
+# c_ Student
 #     name _ ""
 #
 #     ___  -  , name

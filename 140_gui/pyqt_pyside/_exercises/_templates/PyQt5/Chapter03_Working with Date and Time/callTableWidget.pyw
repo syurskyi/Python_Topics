@@ -3,7 +3,7 @@
 # ____ ?.?W.. _____ ?D.., ?A.. ?TWI..
 # ____ DemoTableWidget _____ _
 #
-# c_ MyForm(?D..
+# c_ MyForm ?D..
 #     ___  -  ,data
 #         s__. -
 #         ui _ ?
