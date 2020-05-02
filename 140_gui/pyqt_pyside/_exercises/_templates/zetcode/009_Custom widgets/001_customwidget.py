@@ -26,7 +26,7 @@ c_ BurningWidget(W..):
         value _ 75
         num _ [75, 150, 225, 300, 375, 450, 525, 600, 675]
 
-    ___ setValue(self, value):
+    ___ sV..(self, value):
 
         value _ value
 
@@ -99,12 +99,12 @@ c_ Example(W..):
         sld _ ?S..(__.H..,
         sld.sFP..(__.NoFocus)
         sld.setRange(1, OVER_CAPACITY)
-        sld.setValue(75)
+        sld.sV..(75)
         sld.sG__(30, 40, 150, 30)
 
         c _ Communicate
         wid _ BurningWidget
-        c.updateBW[int].c..(wid.setValue)
+        c.updateBW[int].c..(wid.sV..)
 
         sld.vC__[int].c..(changeValue)
         hbox _ ?HB..

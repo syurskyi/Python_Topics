@@ -16,7 +16,7 @@ c_ Button(?P..):
     ___ mouseMoveEvent(self, e):
 
         __ e.buttons  != __.RightButton:
-            return
+            r_
 
         mimeData _ QMimeData
 
