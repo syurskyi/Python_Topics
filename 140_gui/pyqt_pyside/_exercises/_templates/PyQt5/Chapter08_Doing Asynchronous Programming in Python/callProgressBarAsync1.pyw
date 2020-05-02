@@ -1,34 +1,34 @@
-import sys, time
-import asyncio
+_____ ___, time
+_____ asyncio
 
-from PyQt5.QtWidgets import QDialog, QApplication
-from quamash import QEventLoop
-from demoTwoProgressBarsAsync import *
+____ ?.?W.. _____ ?D.., ?A..
+____ quamash _____ QEventLoop
+____ demoTwoProgressBarsAsync _____ *
 
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.ui.pushButtonStart.clicked.connect(self.invokeAsync)
-        self.show()
+c_ MyForm(?D..
+    ___  -
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        ui.pushButtonStart.clicked.c..(invokeAsync)
+        s..
 
-    def invokeAsync(self):
-        asyncio.ensure_future(self.updt(0.5, self.ui.progressBarFileDownload))
-        asyncio.ensure_future(self.updt(1, self.ui.progressBarVirusScan))
+    ___ invokeAsync
+        asyncio.ensure_future(updt(0.5, ui.progressBarFileDownload))
+        asyncio.ensure_future(updt(1, ui.progressBarVirusScan))
                
     @staticmethod
-    async def updt(delay, ProgressBar):
-        for i in range(101):
+    async ___ updt(delay, ProgressBar
+        for i in range(101
             await asyncio.sleep(delay)
             ProgressBar.setValue(i)
 
-def stopper(loop):
+___ stopper(loop
     loop.stop()
 
      
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     loop = QEventLoop(app)
     asyncio.set_event_loop(loop)
     w = MyForm()
@@ -36,6 +36,6 @@ if __name__=="__main__":
     with loop:
         loop.run_forever()
     loop.close()
-    sys.exit(app.exec_())
+    ___.e..(app.exec_())
 
 

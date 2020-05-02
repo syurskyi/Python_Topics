@@ -1,14 +1,14 @@
-import json
-import vector
+_____ json
+_____ vector
 
 p = 'C:/Users/Sergej/Dropbox/nuke/.nuke/example/PYTHON_EXAMPLE/Python_Example_All_Tutorials/VIDEO/Advanced_Python_Scripting/004_Text data formats/vector.json'
 
 x = vector.vector(1, 2, 3)
 
 
-class mySerialize(json.JSONEncoder):
-    def default(self, o):
-        if isinstance(o, vector.vector):
+c_ mySerialize(json.JSONEncoder
+    ___ default , o
+        __ isinstance(o, vector.vector
             d = o.__dict__
             d.update({'classType': o.__class__.__name__})
             return d

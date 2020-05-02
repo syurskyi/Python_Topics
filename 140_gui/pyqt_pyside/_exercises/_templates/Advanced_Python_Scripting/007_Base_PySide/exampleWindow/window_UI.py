@@ -7,44 +7,44 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt4 import QtCore, QtGui
+____ PyQt4 _____ ?C.., QtGui
 
 try:
-    _fromUtf8 = QtCore.QString.fromUtf8
+    _fromUtf8 = ?C...QString.fromUtf8
 except AttributeError:
-    def _fromUtf8(s):
+    ___ _fromUtf8(s
         return s
 
 try:
-    _encoding = QtGui.QApplication.UnicodeUTF8
-    def _translate(context, text, disambig):
-        return QtGui.QApplication.translate(context, text, disambig, _encoding)
+    _encoding = QtGui.?A...UnicodeUTF8
+    ___ _translate(context, text, disambig
+        return QtGui.?A...translate(context, text, disambig, _encoding)
 except AttributeError:
-    def _translate(context, text, disambig):
-        return QtGui.QApplication.translate(context, text, disambig)
+    ___ _translate(context, text, disambig
+        return QtGui.?A...translate(context, text, disambig)
 
-class Ui_example(object):
-    def setupUi(self, example):
+c_ Ui_example(object
+    ___ setupUi , example
         example.setObjectName(_fromUtf8("example"))
         example.resize(241, 204)
-        self.verticalLayout_2 = QtGui.QVBoxLayout(example)
-        self.verticalLayout_2.setObjectName(_fromUtf8("verticalLayout_2"))
-        self.additem_btn = QtGui.QPushButton(example)
-        self.additem_btn.setObjectName(_fromUtf8("additem_btn"))
-        self.verticalLayout_2.addWidget(self.additem_btn)
-        self.name_le = QtGui.QLineEdit(example)
-        self.name_le.setObjectName(_fromUtf8("name_le"))
-        self.verticalLayout_2.addWidget(self.name_le)
-        self.items_ly = QtGui.QVBoxLayout()
-        self.items_ly.setObjectName(_fromUtf8("items_ly"))
-        self.verticalLayout_2.addLayout(self.items_ly)
+        verticalLayout_2 = QtGui.QVBoxLayout(example)
+        verticalLayout_2.setObjectName(_fromUtf8("verticalLayout_2"))
+        additem_btn = QtGui.?PB..(example)
+        additem_btn.setObjectName(_fromUtf8("additem_btn"))
+        verticalLayout_2.addWidget(additem_btn)
+        name_le = QtGui.QLineEdit(example)
+        name_le.setObjectName(_fromUtf8("name_le"))
+        verticalLayout_2.addWidget(name_le)
+        items_ly = QtGui.QVBoxLayout()
+        items_ly.setObjectName(_fromUtf8("items_ly"))
+        verticalLayout_2.addLayout(items_ly)
         spacerItem = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
-        self.verticalLayout_2.addItem(spacerItem)
+        verticalLayout_2.addItem(spacerItem)
 
-        self.retranslateUi(example)
-        QtCore.QMetaObject.connectSlotsByName(example)
+        retranslateUi(example)
+        ?C...QMetaObject.connectSlotsByName(example)
 
-    def retranslateUi(self, example):
+    ___ retranslateUi , example
         example.setWindowTitle(_translate("example", "Item List", None))
-        self.additem_btn.setText(_translate("example", "Add", None))
+        additem_btn.sT..(_translate("example", "Add", None))
 

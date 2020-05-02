@@ -1,13 +1,13 @@
-import os
+_____ os
 
 iconvert = 'C:/Program Files/Side Effects Software/Houdini 16.0.736/bin/iconvert.exe'
 
 
-def convert(src, trg=None):
-    if trg:
-        if not os.path.exists(trg):
+___ convert(src, trg=None
+    __ trg:
+        __ not os.path.exists(trg
             os.makedirs(trg)
-        elif os.path.isfile(trg):
+        elif os.path.isfile(trg
             trg = os.path.dirname(trg)
         basename = os.path.basename(src)
         name, ext = os.path.splitext(basename)

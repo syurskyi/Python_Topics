@@ -1,31 +1,31 @@
-import sys
+_____ ___
 
-from PyQt5.QtWidgets import QDialog, QApplication
-from demoMouseClicks import *
+____ ?.?W.. _____ ?D.., ?A..
+____ demoMouseClicks _____ *
 
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.show()
+c_ MyForm(?D..
+    ___  -
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        s..
 
-    def mousePressEvent(self, event):
-        if event.buttons() & QtCore.Qt.LeftButton:
+    ___ mousePressEvent , event
+        __ event.buttons() & ?C...Qt.LeftButton:
             x = event.x()
             y = event.y()    
             text = "x: {0},  y: {1}".format(x, y)
-            self.ui.labelPress.setText('Mouse button pressed at '+text)
+            ui.labelPress.sT..('Mouse button pressed at '+text)
             
-    def mouseReleaseEvent(self, event):
+    ___ mouseReleaseEvent , event
         x = event.x()
         y = event.y()    
         text = "x: {0},  y: {1}".format(x, y)
-        self.ui.labelRelease.setText('Mouse button released at '+text)      
-        self.update()
+        ui.labelRelease.sT..('Mouse button released at '+text)
+        update()
                   
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())

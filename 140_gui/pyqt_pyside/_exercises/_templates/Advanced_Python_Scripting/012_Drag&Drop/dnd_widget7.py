@@ -1,51 +1,51 @@
-import sys
-import os
-from PySide.QtCore import *
-from PySide.QtGui import *
+_____ ___
+_____ os
+____ PySide.?C.. _____ *
+____ PySide.QtGui _____ *
 
 icon = os.path.join(os.path.dirname(__file__), 'drag.png')
 
-class listWidgetClass(QListWidget):
-    def __init__(self):
-        super(listWidgetClass, self).__init__()
-        self.setWindowFlags(Qt.WindowStaysOnTopHint)
-        self.setDragDropMode(QAbstractItemView.DragDrop)
-        self.setSelectionMode(QAbstractItemView.ExtendedSelection  # vjlychaet vozmoznost' vudeljat' neskol'ko fajlov
-        self.files = []
+c_ listWidgetClass(QListWidget
+    ___  -  
+        super(listWidgetClass, self). - ()
+        setWindowFlags(Qt.WindowStaysOnTopHint)
+        setDragDropMode(QAbstractItemView.DragDrop)
+        setSelectionMode(QAbstractItemView.ExtendedSelection  # vjlychaet vozmoznost' vudeljat' neskol'ko fajlov
+        files = []
 
-    def dropEvent(self, event):
+    ___ dropEvent , event
         # print 'DROP', type(event)
         mimedata = event.mimeData()
-        if mimedata.hasUrls():
-            for f in mimedata.urls():
-                self.addFile(f.toLocalFile())
+        __ mimedata.hasUrls(
+            for f in mimedata.urls(
+                addFile(f.toLocalFile())
 
-    def dragEnterEvent(self, event):
-        if event.source() is self:
+    ___ dragEnterEvent , event
+        __ event.source() is self:
             event.ignore()
         else:
             mimedata = event.mimeData()
-            if mimedata.hasUrls():
+            __ mimedata.hasUrls(
                 event.accept()
             else:
                 event.ignore()
 
-    def dragMoveEvent(self, event):
-        if event.source() is self:
+    ___ dragMoveEvent , event
+        __ event.source() is self:
             event.ignore()
         else:
             mimedata = event.mimeData()
-            if mimedata.hasUrls():
+            __ mimedata.hasUrls(
                 event.accept()
             else:
                 event.ignore()
 
-    def startDrag(self, dropAction):     # pereopredeljaem method kotoruj otvechaet za to shto proishodit kogda mu nachinaem shto to peretaskivat'
+    ___ startDrag , dropAction     # pereopredeljaem method kotoruj otvechaet za to shto proishodit kogda mu nachinaem shto to peretaskivat'
                                          # dropAction odin iz rezimov peretaskivanija
-        drag = QDrag(self)               # nyzno sozdat' klass kotoruj otvechaet za peretaskivanie dannuh i eto ne mimedata a klass QDrag. QDrag dolzen znat' komy on prenadlezit
+        drag = QDrag               # nyzno sozdat' klass kotoruj otvechaet za peretaskivanie dannuh i eto ne mimedata a klass QDrag. QDrag dolzen znat' komy on prenadlezit
         mimedata = QMimeData()           # i sootvestvenno mimedata kotorue bydyt tam lezat'
         url = []                         # potom nado sobrat' danue kotorue mu hotim pomestit' v ety mimedata a eto y nas pyti k fajlam iz vudelenuh fajlov
-        for i in self.selectedItems():   # dlja vudelenuh elementov mu zabiraem pyt' i kladjom v url
+        for i in selectedItems(   # dlja vudelenuh elementov mu zabiraem pyt' i kladjom v url
             url.append(i.data(Qt.UserRole))
         print url
         mimedata.setUrls([QUrl.fromLocalFile(x) for x in url])  # kogda mu polychili pyti nam nado ih polozit' v mimedata. preobrazovuvaem strochky v klass QUrls
@@ -55,23 +55,23 @@ class listWidgetClass(QListWidget):
         drag.setPixmap(pix)
         r = drag.exec_()                                        # exec_ kak iv dialogah vozvrachaet kakoj to rezyl'tat
         print r
-        if r == Qt.DropAction.MoveAction:                       # esli y nas yspesho proizvedeno peretaskivanie to mu ydaljaem nashi vudelenue items
-            self.deleteSelected()                               # metod deleteSelected
+        __ r __ Qt.DropAction.MoveAction:                       # esli y nas yspesho proizvedeno peretaskivanie to mu ydaljaem nashi vudelenue items
+            deleteSelected()                               # metod deleteSelected
 
-    def addFile(self, path):
-        if not path in self.files:
-            item = QListWidgetItem(self)
-            item.setText(os.path.basename(path))
+    ___ addFile , path
+        __ not path in files:
+            item = QListWidgetItem
+            item.sT..(os.path.basename(path))
             item.setData(Qt.UserRole, path)
-            self.files.append(path)
+            files.append(path)
 
-    def deleteSelected(self):
-        for s in self.selectedItems():                          # perebiraem vse vudelenue elementu
-            self.files.remove(s.data(32))                       # zabirajy pyt' kotoruj lezit v data i ydaljay iz svoego byfera
-            self.takeItem(self.indexFromItem(s).row())          # posle chego ydaljay sam item
+    ___ deleteSelected 
+        for s in selectedItems(                          # perebiraem vse vudelenue elementu
+            files.remove(s.data(32))                       # zabirajy pyt' kotoruj lezit v data i ydaljay iz svoego byfera
+            takeItem(indexFromItem(s).row())          # posle chego ydaljay sam item
 
-if __name__ == '__main__':
-    app = QApplication([])
+__ __name__ __ '__main__':
+    app = ?A..([])
     w = listWidgetClass()
-    w.show()
+    w.s..
     app.exec_()

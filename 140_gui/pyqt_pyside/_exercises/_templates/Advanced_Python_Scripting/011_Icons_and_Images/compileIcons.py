@@ -1,55 +1,55 @@
-import sys
-import os
-from PySide.QtCore import *
-from PySide.QtGui import *
+_____ ___
+_____ os
+____ PySide.?C.. _____ *
+____ PySide.QtGui _____ *
 
-class fileListClass(QListWidget):
-    def __init__(self, parent):
-        super(fileListClass, self).__init__(parent)
-        self.setAcceptDrops(True)
-        self.pathList = []
+c_ fileListClass(QListWidget
+    ___  -  , parent
+        super(fileListClass, self). - (parent)
+        setAcceptDrops(T..)
+        pathList = []
 
-    def appendImage(self, path):
+    ___ appendImage , path
         path = path.replace('/', '\\')
-        if not path in self.pathList:
+        __ not path in pathList:
             name = os.path.basename(path)
             item = QListWidgetItem()
-            item.setText(name)
+            item.sT..(name)
             item.setData(32, path)
-            self.addItem(item)
-            self.pathList.append(path)
+            addItem(item)
+            pathList.append(path)
 
-    def dragEnterEvent(self, event):
-        if event.mimeData().hasUrls():
+    ___ dragEnterEvent , event
+        __ event.mimeData().hasUrls(
             event.accept()
         else:
             event.ignore()
 
-    def dragMoveEvent(self, event):
-        if event.mimeData().hasUrls():
+    ___ dragMoveEvent , event
+        __ event.mimeData().hasUrls(
             event.accept()
         else:
             event.ignore()
 
-class resourceCompileClass(QMainWindow):
-    def __init__(self):
-        super(resourceCompileClass, self).__init__()
-        self.setWindowTitle('Resource Compiler')
-        self.resize(250, 300)
-        self.w = QWidget()
-        self.setCentralWidget(self.w)
-        self.ly = QVBoxLayout()
-        self.w.setLayout(self.ly)
-        self.list = fileListClass(self)
-        self.ly.addWidget(self.list)
-        self.run_btn = QPushButton('RUN')
-        self.ly.addWidget(self.run_btn)
-        self.run_btn.clicked.connect(self.runCompile)
-        if len(sys.argv) == 2:
-            image = sys.argv[1]
-            self.list.appendImage(image)
+c_ resourceCompileClass(QMainWindow
+    ___  -
+        super(resourceCompileClass, self). - ()
+        setWindowTitle('Resource Compiler')
+        resize(250, 300)
+        w = ?W..()
+        setCentralWidget(w)
+        ly = QVBoxLayout()
+        w.setLayout(ly)
+        list = fileListClass
+        ly.addWidget(list)
+        run_btn = ?PB..('RUN')
+        ly.addWidget(run_btn)
+        run_btn.clicked.c..(runCompile)
+        __ len(___.argv) __ 2:
+            image = ___.argv[1]
+            list.appendImage(image)
 
-    def compileQrc(self, qrc):
+    ___ compileQrc , qrc
         workDir = os.path.dirname(qrc)
         os.chdir(workDir)
         # PySide
@@ -62,20 +62,20 @@ class resourceCompileClass(QMainWindow):
         rcc = 'C:/Python27/Lib/site-packages/PyQt4/pyrcc.exe'
         cmd = ' '.join([rcc, qrc, 'o', compliled])
         os.system(cmd)
-        return True
+        return T..
 
-    def runCompile(self):
-        files = [self.list.item(i).data(32) for i in range(self.list.count())]
+    ___ runCompile
+        files = [list.item(i).data(32) for i in range(list.count())]
         qrc = os.path.join(os.path.dirname(files[0]), 'recource.qrc')
-        if self.writeFile(qrc, files):
-            self.compileQrc(qrc)
+        __ writeFile(qrc, files
+            compileQrc(qrc)
 
-    def writeFile(self, qrc, files):
+    ___ writeFile , qrc, files
         with open(qrc, 'w') as f:
             f.write('<RCC>\n\t<qresource>\n')
             for ico in files:
                 f.write('\t\t<file>%s</file>\n' % os.path.basename(ico))
             f.write('\t</qresource>\n</RCC>/')
-        return True
+        return T..
 
-app = QApplication(sys.argv)
+app = ?A..(___.argv)

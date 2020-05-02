@@ -1,54 +1,54 @@
-import sys
-import os
-from PySide.QtCore import *
-from PySide.QtGui import *
+_____ ___
+_____ os
+____ PySide.?C.. _____ *
+____ PySide.QtGui _____ *
 
-class listWidgetClass(QListWidget):
-    def __init__(self):
-        super(listWidgetClass, self).__init__()
-        self.setWindowFlags(Qt.WindowStaysOnTopHint)
-        self.setDragDropMode(QAbstractItemView.DragDrop)
-        self.setSelectionMode(QAbstractItemView.ExtendedSelection)
-        self.files = []
+c_ listWidgetClass(QListWidget
+    ___  -  
+        super(listWidgetClass, self). - ()
+        setWindowFlags(Qt.WindowStaysOnTopHint)
+        setDragDropMode(QAbstractItemView.DragDrop)
+        setSelectionMode(QAbstractItemView.ExtendedSelection)
+        files = []
 
-    def dropEvent(self, event):
+    ___ dropEvent , event
         # print 'DROP', type(event)
         mimedata = event.mimeData()
-        if mimedata.hasUrls():
-            for f in mimedata.urls():
-                self.addFile(f.toLocalFile())
+        __ mimedata.hasUrls(
+            for f in mimedata.urls(
+                addFile(f.toLocalFile())
 
-    def dragEnterEvent(self, event):
+    ___ dragEnterEvent , event
         mimedata = event.mimeData()
-        if mimedata.hasUrls():
+        __ mimedata.hasUrls(
             event.accept()
         else:
             event.ignore()
 
-    def dragMoveEvent(self, event):
+    ___ dragMoveEvent , event
         mimedata = event.mimeData()
-        if mimedata.hasUrls():
+        __ mimedata.hasUrls(
             event.accept()
         else:
             event.ignore()
 
-    def addFile(self, path):
-        if not path in self.files:
-            item = QListWidgetItem(self)
-            item.setText(os.path.basename(path))
+    ___ addFile , path
+        __ not path in files:
+            item = QListWidgetItem
+            item.sT..(os.path.basename(path))
             item.setData(Qt.UserRole, path)
-            self.files.append(path)
+            files.append(path)
 
-if __name__ == '__main__':
-    import sys
+__ __name__ __ '__main__':
+    _____ ___
 
     app = None
     try:
-        import nuke
+        _____ nuke
     except ImportError:
-        app = QApplication(sys.argv)
+        app = ?A..(___.argv)
     main = listWidgetClass()
-    main.show()
+    main.s..
 
-    if app is not None:
+    __ app is not None:
         app.exec_()

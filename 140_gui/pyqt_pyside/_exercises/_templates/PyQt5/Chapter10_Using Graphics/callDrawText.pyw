@@ -1,39 +1,39 @@
-import sys
+_____ ___
 
-from PyQt5.QtWidgets import QDialog, QApplication
-from PyQt5.QtGui import QPainter, QColor, QFont
-from PyQt5.QtCore import Qt
+____ ?.?W.. _____ ?D.., ?A..
+____ ?.QtGui _____ QPainter, QColor, QFont
+____ ?.?C.. _____ Qt
 
-from demoDrawText import *
+____ demoDrawText _____ *
 
-class MyForm(QDialog):
+c_ MyForm(?D..
 
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.ui.pushButtonDrawText.clicked.connect(self.dispText)
-        self.textToDraw=""
-        self.fontName="Courier New"
-        self.fontSize=5
-        self.show()
+    ___  -
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        ui.pushButtonDrawText.clicked.c..(dispText)
+        textToDraw=""
+        fontName="Courier New"
+        fontSize=5
+        s..
 
-    def paintEvent(self, event):
+    ___ paintEvent , event
         qp = QPainter()
-        qp.begin(self)  
+        qp.begin  
         qp.setPen(QColor(168, 34, 3))
-        qp.setFont(QFont(self.fontName, self.fontSize))
-        qp.drawText(event.rect(), Qt.AlignCenter, self.textToDraw)  
+        qp.setFont(QFont(fontName, fontSize))
+        qp.drawText(event.rect(), Qt.AlignCenter, textToDraw)
         qp.end()  
 
-    def dispText(self):
-        self.fontName=self.ui.listWidgetFont.currentItem().text()
-        self.fontSize=int(self.ui.comboBoxFontSize.itemText(self.ui.comboBoxFontSize.currentIndex()))
-        self.textToDraw=self.ui.textEdit.toPlainText()
-        self.update()
+    ___ dispText
+        fontName=ui.listWidgetFont.currentItem().text()
+        fontSize=int(ui.comboBoxFontSize.itemText(ui.comboBoxFontSize.currentIndex()))
+        textToDraw=ui.textEdit.toPlainText()
+        update()
 
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())

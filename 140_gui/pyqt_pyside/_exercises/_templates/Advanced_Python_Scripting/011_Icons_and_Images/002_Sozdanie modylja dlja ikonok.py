@@ -16,8 +16,8 @@
 
 
 
-from PySide.QtGui import QIcon
-import os
+____ PySide.QtGui _____ QIcon
+_____ os
 root = os.path.dirname(__file__)
 
 icons = dict(

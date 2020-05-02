@@ -1,25 +1,25 @@
-import os
-import sys
-import time
-import getopt
-import zipfile
+_____ os
+_____ ___
+_____ time
+_____ getopt
+_____ zipfile
 
-from datetime import datetime
+____ datetime _____ datetime
 
 
-def usage():
+___ usage(
     print("usage:\n \tzip_file2.py -f/somedir/folder -t/backup\nwill create '/backup/folder-<YYYYMMDD-hhmmss>.zip'\n"
           "where the filename is composed from zipped folder name, current date and time")
 
 
-def get_zipfilepath(frm, to):
+___ get_zipfilepath(frm, to
     dt = datetime.now()
-    if not os.path.isdir(frm):
+    __ not os.path.isdir(frm
         print "'" + frm + "' this is not valid source dir"
-        sys.exit(2)
-    if not os.path.isdir(to):
+        ___.e..(2)
+    __ not os.path.isdir(to
         print "'" + to + "' this is not valid target dir"
-        sys.exit(2)
+        ___.e..(2)
 
     name = os.path.split(frm)[1] + '-' + dt.strftime("%Y%m%d-%H%M%S") + '.zip'
     archive_full_path = os.path.join(to, name)
@@ -27,15 +27,15 @@ def get_zipfilepath(frm, to):
     return archive_full_path
 
 
-def make_archive(zip_archive_file, directory, *args):
-    def recursive_zip(zipf, directory, *args):
+___ make_archive(zip_archive_file, directory, *args
+    ___ recursive_zip(zipf, directory, *args
         nodes = os.listdir(directory)
         for item in nodes:
             path = os.path.join(directory, item)
-            if os.path.isfile(path):
+            __ os.path.isfile(path
                 zipf.write(path, unicode(path, 'utf-8').encode('cp852'))
-            elif os.path.isdir(path):
-                if not item in args:
+            elif os.path.isdir(path
+                __ not item in args:
                     recursive_zip(zipf, path, *args)
 
     zipf = zipfile.ZipFile(zip_archive_file, 'w', compression=zipfile.ZIP_DEFLATED)
@@ -43,42 +43,42 @@ def make_archive(zip_archive_file, directory, *args):
     zipf.close()
 
 
-def process(srcdir, outdir, *excludes):
+___ process(srcdir, outdir, *excludes
     archive_full_path = get_zipfilepath(srcdir, outdir)
     os.chdir(srcdir)
     make_archive(archive_full_path, './', *excludes)
     return archive_full_path
 
 
-def main():
+___ main(
     frm = ''
     to = ''
     try:
-        opts, rest = getopt.getopt(sys.argv[1:], "f:t:h")
+        opts, rest = getopt.getopt(___.argv[1:], "f:t:h")
     except getopt.GetoptError, err:
         print(err)
         usage()
-        sys.exit(2)
+        ___.e..(2)
 
-    if not opts:
+    __ not opts:
         opts.append(('-h', ''))
 
     for o, a in opts:
-        if o == '-h':
+        __ o __ '-h':
             usage()
-            sys.exit(0)
-        elif o == '-f':
+            ___.e..(0)
+        elif o __ '-f':
             frm = a
-        elif o == '-t':
+        elif o __ '-t':
             to = a
 
-    if not(frm and to):
+    __ not(frm and to
         print "not sufficent parameters provided to: '" + to + "' from: '" + frm + "'"
-        sys.exit(2)
+        ___.e..(2)
 
     zip_full_path = process(frm, to)
     print 'success ' + zip_full_path + ' was created'
 
-if __name__ == "__main__":
+__ __name__ __ "__main__":
     main()
 

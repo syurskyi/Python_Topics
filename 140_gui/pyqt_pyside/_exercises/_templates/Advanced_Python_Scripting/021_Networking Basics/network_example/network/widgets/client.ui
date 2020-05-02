@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>client</class>
- <widget class="QWidget" name="client">
+ <c_>client</c_>
+ <widget c_="QWidget" name="client">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -13,28 +13,28 @@
   <property name="windowTitle">
    <string>Client</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
+  <layout c_="QVBoxLayout" name="verticalLayout">
    <item>
-    <widget class="QLineEdit" name="ip_le"/>
+    <widget c_="QLineEdit" name="ip_le"/>
    </item>
    <item>
-    <widget class="QPushButton" name="connect_btn">
+    <widget c_="QPushButton" name="connect_btn">
      <property name="text">
       <string>Connect</string>
      </property>
     </widget>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout">
+    <layout c_="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QSlider" name="progress_sle">
+      <widget c_="QSlider" name="progress_sle">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="label">
+      <widget c_="QLabel" name="label">
        <property name="minimumSize">
         <size>
          <width>50</width>

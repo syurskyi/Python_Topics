@@ -1,37 +1,37 @@
-import sys, time
-import socket
-from PyQt5 import QtGui
-from PyQt5 import QtCore
-from PyQt5.QtWidgets import QApplication, QDialog
-from PyQt5.QtCore import QCoreApplication
-from threading import Thread 
-from socketserver import ThreadingMixIn 
-from demoServer import *
+_____ ___, time
+_____ socket
+____ ? _____ QtGui
+____ ? _____ ?C..
+____ ?.?W.. _____ ?A.., ?D..
+____ ?.?C.. _____ QCoreApplication
+____ threading _____ Thread 
+____ socketserver _____ ThreadingMixIn 
+____ demoServer _____ *
 
 conn=None
 
-class Window(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.textEditMessages=self.ui.textEditMessages
-        self.ui.pushButtonSend.clicked.connect(self.dispMessage)
-        self.show()
+c_ Window(?D..
+    ___  -  
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        textEditMessages=ui.textEditMessages
+        ui.pushButtonSend.clicked.c..(dispMessage)
+        s..
 
-    def dispMessage(self):
-        text=self.ui.lineEditMessage.text()
+    ___ dispMessage 
+        text=ui.lineEditMessage.text()
         global conn
         conn.send(text.encode("utf-8"))
-        self.ui.textEditMessages.append("Server: "+self.ui.lineEditMessage.text())
-        self.ui.lineEditMessage.setText("")
+        ui.textEditMessages.append("Server: "+ui.lineEditMessage.text())
+        ui.lineEditMessage.sT..("")
 
-class ServerThread(Thread):
-    def __init__(self,window): 
-        Thread.__init__(self) 
-        self.window=window
+c_ ServerThread(Thread
+    ___  -  ,window 
+        Thread. -  
+        window=window
    
-    def run(self): 
+    ___ run  
         TCP_IP = '0.0.0.0'
         TCP_PORT = 80
         BUFFER_SIZE = 1024 
@@ -41,7 +41,7 @@ class ServerThread(Thread):
         threads = [] 
          
         tcpServer.listen(4) 
-        while True:
+        while T..:
             global conn
             (conn, (ip,port)) = tcpServer.accept() 
             newthread = ClientThread(ip,port,window) 
@@ -52,25 +52,25 @@ class ServerThread(Thread):
             t.join() 
  
  
-class ClientThread(Thread): 
+c_ ClientThread(Thread 
   
-    def __init__(self,ip,port,window): 
-        Thread.__init__(self) 
-        self.window=window
-        self.ip = ip 
-        self.port = port 
+    ___  -  ,ip,port,window 
+        Thread. -  
+        window=window
+        ip = ip 
+        port = port 
         
   
-    def run(self): 
-        while True :              
+    ___ run  
+        while T.. :              
             global conn
             data = conn.recv(1024) 
             window.textEditMessages.append("Client: "+data.decode("utf-8"))
  
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     window = Window()
     serverThread=ServerThread(window)
     serverThread.start()
     window.exec()
-    sys.exit(app.exec_())
+    ___.e..(app.exec_())

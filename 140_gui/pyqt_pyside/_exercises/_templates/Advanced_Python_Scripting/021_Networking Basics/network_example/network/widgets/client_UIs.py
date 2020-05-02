@@ -7,38 +7,38 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-from PySide import QtCore, QtGui
+____ PySide _____ ?C.., QtGui
 
-class Ui_client(object):
-    def setupUi(self, client):
+c_ Ui_client(object
+    ___ setupUi , client
         client.setObjectName("client")
         client.resize(366, 107)
-        self.verticalLayout = QtGui.QVBoxLayout(client)
-        self.verticalLayout.setObjectName("verticalLayout")
-        self.ip_le = QtGui.QLineEdit(client)
-        self.ip_le.setObjectName("ip_le")
-        self.verticalLayout.addWidget(self.ip_le)
-        self.connect_btn = QtGui.QPushButton(client)
-        self.connect_btn.setObjectName("connect_btn")
-        self.verticalLayout.addWidget(self.connect_btn)
-        self.horizontalLayout = QtGui.QHBoxLayout()
-        self.horizontalLayout.setObjectName("horizontalLayout")
-        self.progress_sle = QtGui.QSlider(client)
-        self.progress_sle.setOrientation(QtCore.Qt.Horizontal)
-        self.progress_sle.setObjectName("progress_sle")
-        self.horizontalLayout.addWidget(self.progress_sle)
-        self.label = QtGui.QLabel(client)
-        self.label.setMinimumSize(QtCore.QSize(50, 0))
-        self.label.setObjectName("label")
-        self.horizontalLayout.addWidget(self.label)
-        self.verticalLayout.addLayout(self.horizontalLayout)
+        verticalLayout = QtGui.QVBoxLayout(client)
+        verticalLayout.setObjectName("verticalLayout")
+        ip_le = QtGui.QLineEdit(client)
+        ip_le.setObjectName("ip_le")
+        verticalLayout.addWidget(ip_le)
+        connect_btn = QtGui.?PB..(client)
+        connect_btn.setObjectName("connect_btn")
+        verticalLayout.addWidget(connect_btn)
+        horizontalLayout = QtGui.QHBoxLayout()
+        horizontalLayout.setObjectName("horizontalLayout")
+        progress_sle = QtGui.QSlider(client)
+        progress_sle.setOrientation(?C...Qt.Horizontal)
+        progress_sle.setObjectName("progress_sle")
+        horizontalLayout.addWidget(progress_sle)
+        label = QtGui.QLabel(client)
+        label.setMinimumSize(?C...QSize(50, 0))
+        label.setObjectName("label")
+        horizontalLayout.addWidget(label)
+        verticalLayout.addLayout(horizontalLayout)
 
-        self.retranslateUi(client)
-        QtCore.QObject.connect(self.progress_sle, QtCore.SIGNAL("valueChanged(int)"), self.label.setNum)
-        QtCore.QMetaObject.connectSlotsByName(client)
+        retranslateUi(client)
+        ?C...QObject.c..(progress_sle, ?C...SIGNAL("valueChanged(int)"), label.setNum)
+        ?C...QMetaObject.connectSlotsByName(client)
 
-    def retranslateUi(self, client):
-        client.setWindowTitle(QtGui.QApplication.translate("client", "Client", None, QtGui.QApplication.UnicodeUTF8))
-        self.connect_btn.setText(QtGui.QApplication.translate("client", "Connect", None, QtGui.QApplication.UnicodeUTF8))
-        self.label.setText(QtGui.QApplication.translate("client", "0", None, QtGui.QApplication.UnicodeUTF8))
+    ___ retranslateUi , client
+        client.setWindowTitle(QtGui.?A...translate("client", "Client", None, QtGui.?A...UnicodeUTF8))
+        connect_btn.sT..(QtGui.?A...translate("client", "Connect", None, QtGui.?A...UnicodeUTF8))
+        label.sT..(QtGui.?A...translate("client", "0", None, QtGui.?A...UnicodeUTF8))
 

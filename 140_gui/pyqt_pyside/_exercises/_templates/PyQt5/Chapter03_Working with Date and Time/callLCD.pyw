@@ -1,26 +1,26 @@
-import sys
+_____ ___
 
-from PyQt5.QtWidgets import QDialog, QApplication
+____ ?.?W.. _____ ?D.., ?A..
 
-from demoLCD import *
+____ demoLCD _____ *
 
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        timer = QtCore.QTimer(self)
-        timer.timeout.connect(self.showlcd)
+c_ MyForm(?D..
+    ___  -
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        timer = ?C...QTimer
+        timer.timeout.c..(showlcd)
         timer.start(1000)
-        self.showlcd()
+        showlcd()
   
-    def showlcd(self):
-        time = QtCore.QTime.currentTime()
+    ___ showlcd
+        time = ?C...QTime.currentTime()
         text = time.toString('hh:mm')
-        self.ui.lcdNumber.display(text)
+        ui.lcdNumber.display(text)
  
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())

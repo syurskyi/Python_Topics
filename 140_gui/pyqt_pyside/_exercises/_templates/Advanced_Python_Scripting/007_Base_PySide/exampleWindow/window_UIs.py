@@ -7,30 +7,30 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-from PySide import QtCore, QtGui
+____ PySide _____ ?C.., QtGui
 
-class Ui_example(object):
-    def setupUi(self, example):
+c_ Ui_example(object
+    ___ setupUi , example
         example.setObjectName("example")
         example.resize(241, 204)
-        self.verticalLayout_2 = QtGui.QVBoxLayout(example)
-        self.verticalLayout_2.setObjectName("verticalLayout_2")
-        self.additem_btn = QtGui.QPushButton(example)
-        self.additem_btn.setObjectName("additem_btn")
-        self.verticalLayout_2.addWidget(self.additem_btn)
-        self.name_le = QtGui.QLineEdit(example)
-        self.name_le.setObjectName("name_le")
-        self.verticalLayout_2.addWidget(self.name_le)
-        self.items_ly = QtGui.QVBoxLayout()
-        self.items_ly.setObjectName("items_ly")
-        self.verticalLayout_2.addLayout(self.items_ly)
+        verticalLayout_2 = QtGui.QVBoxLayout(example)
+        verticalLayout_2.setObjectName("verticalLayout_2")
+        additem_btn = QtGui.?PB..(example)
+        additem_btn.setObjectName("additem_btn")
+        verticalLayout_2.addWidget(additem_btn)
+        name_le = QtGui.QLineEdit(example)
+        name_le.setObjectName("name_le")
+        verticalLayout_2.addWidget(name_le)
+        items_ly = QtGui.QVBoxLayout()
+        items_ly.setObjectName("items_ly")
+        verticalLayout_2.addLayout(items_ly)
         spacerItem = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
-        self.verticalLayout_2.addItem(spacerItem)
+        verticalLayout_2.addItem(spacerItem)
 
-        self.retranslateUi(example)
-        QtCore.QMetaObject.connectSlotsByName(example)
+        retranslateUi(example)
+        ?C...QMetaObject.connectSlotsByName(example)
 
-    def retranslateUi(self, example):
-        example.setWindowTitle(QtGui.QApplication.translate("example", "Item List", None, QtGui.QApplication.UnicodeUTF8))
-        self.additem_btn.setText(QtGui.QApplication.translate("example", "Add", None, QtGui.QApplication.UnicodeUTF8))
+    ___ retranslateUi , example
+        example.setWindowTitle(QtGui.?A...translate("example", "Item List", None, QtGui.?A...UnicodeUTF8))
+        additem_btn.sT..(QtGui.?A...translate("example", "Add", None, QtGui.?A...UnicodeUTF8))
 

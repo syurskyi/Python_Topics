@@ -1,31 +1,31 @@
-import sys
-import os
-from PySide.QtCore import *
-from PySide.QtGui import *
+_____ ___
+_____ os
+____ PySide.?C.. _____ *
+____ PySide.QtGui _____ *
 
-class listWidgetClass(QListWidget):
-    def __init__(self):
-        super(listWidgetClass, self).__init__()
-        self.setWindowFlags(Qt.WindowStaysOnTopHint)
-        self.setDragDropMode(QAbstractItemView.DropOnly)
+c_ listWidgetClass(QListWidget
+    ___  -  
+        super(listWidgetClass, self). - ()
+        setWindowFlags(Qt.WindowStaysOnTopHint)
+        setDragDropMode(QAbstractItemView.DropOnly)
 
-    def dropEvent(self, event):
+    ___ dropEvent , event
         print 'DROP', type(event)  # type event est' QDropEvent i samoe glavnoe shto on delaet on vozvrachaet mimedata
         mimedata = event.mimeData()
         print mimedata
-        if mimedata.hasUrls():
+        __ mimedata.hasUrls(
             print mimedata.urls()
 
-    def dragEnterEvent(self, event):
+    ___ dragEnterEvent , event
         event.accept()
         # print 'ENTER', type(event)
 
-    def dragMoveEvent(self, event):
+    ___ dragMoveEvent , event
         # print 'MOVE', type(event)
         pass
 
-if __name__ == '__main__':
-    app = QApplication([])
+__ __name__ __ '__main__':
+    app = ?A..([])
     w = listWidgetClass()
-    w.show()
+    w.s..
     app.exec_()

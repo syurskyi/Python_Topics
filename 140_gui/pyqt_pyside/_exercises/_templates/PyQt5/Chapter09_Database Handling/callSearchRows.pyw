@@ -1,38 +1,38 @@
-import sqlite3, sys
-from PyQt5.QtWidgets import QDialog, QApplication
-from sqlite3 import Error
+_____ sqlite3, ___
+____ PyQt5.?W.. _____ ?D.., ?A..
+____ sqlite3 _____ Error
 
-from demoSearchRows import *
+____ demoSearchRows _____ *
 
-class MyForm(QDialog):
+c_ MyForm(?D..
 
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.ui.pushButtonSearch.clicked.connect(self.SearchRows)
-        self.show()
+    ___  -
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        ui.pushButtonSearch.clicked.c..(SearchRows)
+        s..
 
-    def SearchRows(self):
-        sqlStatement="SELECT Password FROM "+self.ui.lineEditTableName.text()+" where EmailAddress like '"+self.ui.lineEditEmailAddress.text()+"'"
+    ___ SearchRows
+        sqlStatement="SELECT Password FROM "+ui.lineEditTableName.text()+" where EmailAddress like '"+ui.lineEditEmailAddress.text()+"'"
         try:
-            conn = sqlite3.connect(self.ui.lineEditDBName.text()+".db")
+            conn = sqlite3.c..(ui.lineEditDBName.text()+".db")
             cur = conn.cursor()    
             cur.execute(sqlStatement)
             row = cur.fetchone()
-            if row==None:
-                self.ui.labelResponse.setText("Sorry, No User found with this email address")
-                self.ui.lineEditPassword.setText("")
+            __ row__None:
+                ui.labelResponse.sT..("Sorry, No User found with this email address")
+                ui.lineEditPassword.sT..("")
             else:
-                self.ui.labelResponse.setText("Email Address Found, Password of this User is :")
-                self.ui.lineEditPassword.setText(row[0])
+                ui.labelResponse.sT..("Email Address Found, Password of this User is :")
+                ui.lineEditPassword.sT..(row[0])
         except Error as e:
-            self.ui.labelResponse.setText("Error in accessing row")
+            ui.labelResponse.sT..("Error in accessing row")
         finally:
             conn.close()
 
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>templateEditor</class>
- <widget class="QWidget" name="templateEditor">
+ <c_>templateEditor</c_>
+ <widget c_="QWidget" name="templateEditor">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -13,11 +13,11 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
+  <layout c_="QVBoxLayout" name="verticalLayout">
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <layout c_="QHBoxLayout" name="horizontalLayout_2">
      <item>
-      <widget class="QPushButton" name="add_btn">
+      <widget c_="QPushButton" name="add_btn">
        <property name="minimumSize">
         <size>
          <width>30</width>
@@ -43,7 +43,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="remove_btn">
+      <widget c_="QPushButton" name="remove_btn">
        <property name="minimumSize">
         <size>
          <width>30</width>
@@ -84,7 +84,7 @@
     </layout>
    </item>
    <item>
-    <widget class="QTreeWidget" name="tree">
+    <widget c_="QTreeWidget" name="tree">
      <attribute name="headerVisible">
       <bool>false</bool>
      </attribute>
@@ -96,16 +96,16 @@
     </widget>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout">
+    <layout c_="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QPushButton" name="save_btn">
+      <widget c_="QPushButton" name="save_btn">
        <property name="text">
         <string>Save</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="close_btn">
+      <widget c_="QPushButton" name="close_btn">
        <property name="text">
         <string>Close</string>
        </property>

@@ -1,23 +1,23 @@
-import sys
+_____ ___
 
-from PyQt5.QtWidgets import QDialog, QApplication, QGraphicsScene, QGraphicsPixmapItem
-from PyQt5.QtGui import QPixmap
-from demoGraphicsView import *
+____ PyQt5.?W.. _____ ?D.., ?A.., QGraphicsScene, QGraphicsPixmapItem
+____ PyQt5.QtGui _____ QPixmap
+____ demoGraphicsView _____ *
 
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.scene = QGraphicsScene(self)
+c_ MyForm(?D..
+    ___  -  
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        scene = QGraphicsScene
         pixmap= QtGui.QPixmap()
         pixmap.load("bintupic.jpg")
         item=QGraphicsPixmapItem(pixmap)
-        self.scene.addItem(item)
-        self.ui.graphicsView.setScene(self.scene)
+        scene.addItem(item)
+        ui.graphicsView.setScene(scene)
 
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     myapp = MyForm()
-    myapp.show()
-    sys.exit(app.exec_())
+    myapp.s..
+    ___.e..(app.exec_())

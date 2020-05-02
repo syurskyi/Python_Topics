@@ -1,29 +1,29 @@
-import sys
+_____ ___
 
-from PyQt5.QtWidgets import QDialog, QApplication, QColorDialog
-from PyQt5.QtGui import QColor
+____ ?.?W.. _____ ?D.., ?A.., QColorDialog
+____ ?.QtGui _____ QColor
 
-from demoColorDialog import *
+____ demoColorDialog _____ *
 
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
+c_ MyForm(?D..
+    ___  -  
+        s__. - ()
         col = QColor(0, 0, 0) 
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.ui.frameColor.setStyleSheet("QWidget { background-color: %s }" % col.name())
-        self.ui.pushButtonColor.clicked.connect(self.dispcolor)
-        self.show()
+        ui = Ui_Dialog()
+        ui.setupUi
+        ui.frameColor.setStyleSheet("QWidget { background-color: %s }" % col.name())
+        ui.pushButtonColor.clicked.c..(dispcolor)
+        s..
 
-    def dispcolor(self):
+    ___ dispcolor 
         col = QColorDialog.getColor()
-        if col.isValid():
-            self.ui.frameColor.setStyleSheet("QWidget { background-color: %s }" % col.name())
-            self.ui.labelColor.setText("You have selected the color with code: " + str(col.name()))
+        __ col.isValid(
+            ui.frameColor.setStyleSheet("QWidget { background-color: %s }" % col.name())
+            ui.labelColor.sT..("You have selected the color with code: " + st.(col.name()))
 
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())
 

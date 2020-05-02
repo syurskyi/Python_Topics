@@ -1,54 +1,54 @@
-import sys
+_____ ___
 
-from PyQt5.QtWidgets import QDialog, QApplication
+____ ?.?W.. _____ ?D.., ?A..
 
-from demoSimpleInheritance import *
+____ demoSimpleInheritance _____ *
 
-class Student:
+c_ Student:
     name = ""
     code = ""
  
-    def __init__(self, code, name):
-        self.code = code
-        self.name = name
+    ___  -  , code, name
+        code = code
+        name = name
 
-    def getCode(self):
-        return self.code
+    ___ getCode 
+        return code
     
-    def getName(self):
-        return self.name
+    ___ getName 
+        return name
 
 
-class Marks(Student):
+c_ Marks(Student
     historyMarks = 0
     geographyMarks = 0
  
-    def __init__(self,  code, name, historyMarks, geographyMarks):
-        Student.__init__(self,code,name)
-        self.historyMarks = historyMarks
-        self.geographyMarks = geographyMarks
+    ___  -  ,  code, name, historyMarks, geographyMarks
+        Student. -  ,code,name)
+        historyMarks = historyMarks
+        geographyMarks = geographyMarks
         
-    def getHistoryMarks(self):
-        return self.historyMarks
+    ___ getHistoryMarks 
+        return historyMarks
 
-    def getGeographyMarks(self):
-        return self.geographyMarks
+    ___ getGeographyMarks 
+        return geographyMarks
     
 
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.ui.ButtonClickMe.clicked.connect(self.dispmessage)
-        self.show()
+c_ MyForm(?D..
+    ___  -  
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        ui.ButtonClickMe.clicked.c..(dispmessage)
+        s..
 
-    def dispmessage(self):
-        marksObj=Marks(self.ui.lineEditCode.text(), self.ui.lineEditName.text(), self.ui.lineEditHistoryMarks.text(), self.ui.lineEditGeographyMarks.text())  
-        self.ui.labelResponse.setText("Code: "+marksObj.getCode()+", Name:"+marksObj.getName()+"\nHistory Marks:"+marksObj.getHistoryMarks()+", Geography Marks:"+marksObj.getGeographyMarks())
+    ___ dispmessage 
+        marksObj=Marks(ui.lineEditCode.text(), ui.lineEditName.text(), ui.lineEditHistoryMarks.text(), ui.lineEditGeographyMarks.text())  
+        ui.labelResponse.sT..("Code: "+marksObj.getCode()+", Name:"+marksObj.getName()+"\nHistory Marks:"+marksObj.getHistoryMarks()+", Geography Marks:"+marksObj.getGeographyMarks())
 
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())

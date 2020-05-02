@@ -1,4 +1,4 @@
-import sys
+_____ ___
 
-print sys.argv
+print ___.argv
 raw_input()

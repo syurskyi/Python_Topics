@@ -1,16 +1,16 @@
-from PySide.QtGui import *
+____ PySide.QtGui _____ *
 
-class myWidget(QWidget):
-    def __init__(self):
-        super(myWidget, self).__init__()
+c_ myWidget(?W..
+    ___  -
+        super(myWidget, self). - ()
         l = QVBoxLayout()
-        self.setLayout(l)
+        setLayout(l)
         label = QLabel('Text')
         l.addWidget(label)
-        b = QPushButton('OK')
+        b = ?PB..('OK')
         l.addWidget(b)
 
-app = QApplication([])
+app = ?A..([])
 w = myWidget()
-w.show()
+w.s..
 app.exec_()

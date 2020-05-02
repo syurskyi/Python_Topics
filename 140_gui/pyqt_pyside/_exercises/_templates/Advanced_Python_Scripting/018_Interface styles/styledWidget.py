@@ -1,26 +1,26 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
-from widgets import window_UIs as ui
-import os
+____ PySide.?C.. _____ *
+____ PySide.QtGui _____ *
+____ widgets _____ window_UIs as ui
+_____ os
 
 style = os.path.join(os.path.dirname(__file__), 'style.css')
 
 
-class styleWidgetClass(QMainWindow, ui.Ui_MainWindow):
-    def __init__(self):
-        super(styleWidgetClass, self).__init__()
-        self.setWindowFlags(Qt.WindowStaysOnTopHint)
-        self.setupUi(self)
-        self.treeWidget.setAlternatingRowColors(1)
-        self.pushButton.clicked.connect(self.applyStyle)
+c_ styleWidgetClass(QMainWindow, ui.Ui_MainWindow
+    ___  -  
+        super(styleWidgetClass, self). - ()
+        setWindowFlags(Qt.WindowStaysOnTopHint)
+        setupUi
+        treeWidget.setAlternatingRowColors(1)
+        pushButton.clicked.c..(applyStyle)
 
-    def applyStyle(self):
-        self.setStyleSheet(open(style).read())
+    ___ applyStyle 
+        setStyleSheet(open(style).read())
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     os.chdir(os.path.dirname(__file__))
-    app = QApplication([])
+    app = ?A..([])
     w = styleWidgetClass()
-    w.show()
+    w.s..
     # app.setStyle(QStyleFactory.create('motif'))
     app.exec_()

@@ -1,25 +1,25 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
+____ PySide.?C.. _____ *
+____ PySide.QtGui _____ *
 
 
-class WindowClass(QMainWindow):
-    def __init__(self):
-        super(WindowClass, self).__init__()
-        self.w = QWidget()
-        self.setCentralWidget(self.w)
+c_ WindowClass(QMainWindow
+    ___  -  
+        super(WindowClass, self). - ()
+        w = ?W..()
+        setCentralWidget(w)
 
-        self.menuBar = QMenuBar()
-        self.setMenuBar(self.menuBar)
+        menuBar = QMenuBar()
+        setMenuBar(menuBar)
 
-        self.menu = QMenu('File')
-        self.menuBar.addMenu(self.menu)
+        menu = QMenu('File')
+        menuBar.addMenu(menu)
 
-        self.act1 = QAction('Open', self)
-        self.menu.addAction(self.act1)
+        act1 = QAction('Open', self)
+        menu.addAction(act1)
 
 
-if __name__ == '__main__':
-    app = QApplication([])
+__ __name__ __ '__main__':
+    app = ?A..([])
     w = WindowClass()
-    w.show()
+    w.s..
     app.exec_()

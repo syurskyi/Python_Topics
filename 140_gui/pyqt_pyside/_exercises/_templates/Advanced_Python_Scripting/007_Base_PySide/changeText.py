@@ -1,26 +1,26 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
+____ PySide.?C.. _____ *
+____ PySide.QtGui _____ *
 # from import PyQt4 import QtCore
 
 
-class SimpleWindowClass(QWidget):
-    def __init__(self):
-        super(SimpleWindowClass, self).__init__()
-        layout = QVBoxLayout(self)
-        self.label = QLabel('Text')
-        layout.addWidget(self.label)
-        self.button = QPushButton('Press')
-        layout.addWidget(self.button)
-        self.button.clicked.connect(self.action)
+c_ SimpleWindowClass(?W..
+    ___  -  
+        super(SimpleWindowClass, self). - ()
+        layout = QVBoxLayout
+        label = QLabel('Text')
+        layout.addWidget(label)
+        button = ?PB..('Press')
+        layout.addWidget(button)
+        button.clicked.c..(action)
 
-    def action(self):
-        self.label.setText('New Text')
-        self.button.setText('Presseed')
-        self.button.clicked.connect(self.close)
+    ___ action 
+        label.sT..('New Text')
+        button.sT..('Presseed')
+        button.clicked.c..(close)
 
 
-if __name__ == '__main__':
-    app = QApplication([])
+__ __name__ __ '__main__':
+    app = ?A..([])
     w = SimpleWindowClass()
-    w.show()
+    w.s..
     app.exec_()

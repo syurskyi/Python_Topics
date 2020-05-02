@@ -1,24 +1,24 @@
-import sys
+_____ ___
 
-from PyQt5.QtWidgets import QDialog, QApplication
+____ ?.?W.. _____ ?D.., ?A..
 
-from demoListWidget3 import *
+____ demoListWidget3 _____ *
 
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.ui.pushButtonAdd.clicked.connect(self.addlist)
-        self.show()
+c_ MyForm(?D..
+    ___  -
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        ui.pushButtonAdd.clicked.c..(addlist)
+        s..
 
-    def addlist(self):
-        self.ui.listWidgetSelectedItems.addItem(self.ui.lineEditFoodItem.text())
-        self.ui.lineEditFoodItem.setText('')
-        self.ui.lineEditFoodItem.setFocus()
+    ___ addlist
+        ui.listWidgetSelectedItems.addItem(ui.lineEditFoodItem.text())
+        ui.lineEditFoodItem.sT..('')
+        ui.lineEditFoodItem.setFocus()
         
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())

@@ -1,46 +1,46 @@
-import sys
+_____ ___
 
-from PyQt5.QtWidgets import QDialog
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton
-from PyQt5.QtCore import pyqtSlot
-from demoCheckBox2 import *
+____ ?.?W.. _____ ?D..
+____ ?.?W.. _____ ?A.., ?W.., ?PB..
+____ ?.?C.. _____ py_S..
+____ demoCheckBox2 _____ *
 
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.ui.checkBoxChoclateAlmond.stateChanged.connect(self.dispAmount)
-        self.ui.checkBoxChoclateChips.stateChanged.connect(self.dispAmount)
-        self.ui.checkBoxCookieDough.stateChanged.connect(self.dispAmount)
-        self.ui.checkBoxRockyRoad.stateChanged.connect(self.dispAmount)
-        self.ui.checkBoxCoffee.stateChanged.connect(self.dispAmount)
-        self.ui.checkBoxSoda.stateChanged.connect(self.dispAmount)
-        self.ui.checkBoxTea.stateChanged.connect(self.dispAmount)
+c_ MyForm(?D..
+    ___  -  
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        ui.checkBoxChoclateAlmond.sC__.c..(dispAmount)
+        ui.checkBoxChoclateChips.sC__.c..(dispAmount)
+        ui.checkBoxCookieDough.sC__.c..(dispAmount)
+        ui.checkBoxRockyRoad.sC__.c..(dispAmount)
+        ui.checkBoxCoffee.sC__.c..(dispAmount)
+        ui.checkBoxSoda.sC__.c..(dispAmount)
+        ui.checkBoxTea.sC__.c..(dispAmount)
 
-        self.show()
+        s..
 
-    @pyqtSlot()
-    def dispAmount(self):
+    @py_S..()
+    ___ dispAmount 
         amount=0
-        if self.ui.checkBoxChoclateAlmond.isChecked()==True:
+        __ ui.checkBoxChoclateAlmond.iC..__T..:
             amount=amount+3
-        if self.ui.checkBoxChoclateChips.isChecked()==True:
+        __ ui.checkBoxChoclateChips.iC..__T..:
             amount=amount+4
-        if self.ui.checkBoxCookieDough.isChecked()==True:
+        __ ui.checkBoxCookieDough.iC..__T..:
             amount=amount+2
-        if self.ui.checkBoxRockyRoad.isChecked()==True:
+        __ ui.checkBoxRockyRoad.iC..__T..:
             amount=amount+5
-        if self.ui.checkBoxCoffee.isChecked()==True:
+        __ ui.checkBoxCoffee.iC..__T..:
             amount=amount+2
-        if self.ui.checkBoxSoda.isChecked()==True:
+        __ ui.checkBoxSoda.iC..__T..:
             amount=amount+3
-        if self.ui.checkBoxTea.isChecked()==True:
+        __ ui.checkBoxTea.iC..__T..:
             amount=amount+1
-        self.ui.labelAmount.setText("Total amount is $"+str(amount))
+        ui.labelAmount.sT..("Total amount is $"+st.(amount))
 
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())

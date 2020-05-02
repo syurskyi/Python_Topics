@@ -1,7 +1,7 @@
-def f1():
+___ f1(
     print('function')
 
-def decorator():
+___ decorator(
     print('before')
     f1()
     print('after')
@@ -9,10 +9,10 @@ def decorator():
 f1()
 decorator()
 
-def f1():
+___ f1(
     print('function')
 
-def decorator(f):
+___ decorator(f
     print('before')
     f1()
     print('after')
@@ -22,11 +22,11 @@ f1()
 decorator(f1)
 
 
-def f1():
+___ f1(
     print('function')
 
-def decorator(f):
-    def wrapper():
+___ decorator(f
+    ___ wrapper(
         print('before')
         f1()
         print('after')

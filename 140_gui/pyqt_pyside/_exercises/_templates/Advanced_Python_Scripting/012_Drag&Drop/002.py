@@ -1,45 +1,45 @@
-import sys
-import os
-from PySide.QtCore import *
-from PySide.QtGui import *
+_____ ___
+_____ os
+____ PySide.?C.. _____ *
+____ PySide.QtGui _____ *
 
 
-class listWidgetClass(QListWidget):
-    def __init__(self):
-        super(listWidgetClass, self).__init__()
-        self.setWindowFlags(Qt.WindowStaysOnTopHint)
-        self.setDragDropMode(QAbstractItemView.DropOnly)
+c_ listWidgetClass(QListWidget
+    ___  -
+        super(listWidgetClass, self). - ()
+        setWindowFlags(Qt.WindowStaysOnTopHint)
+        setDragDropMode(QAbstractItemView.DropOnly)
 
-    def dropEvent(self, event):
+    ___ dropEvent , event
         print 'DROP', type(event)
         mimedata = event.mimeData()
-        if mimedata.hasUrls():
+        __ mimedata.hasUrls(
             print mimedata.urls()
-        elif mimedata.hasColor():
+        elif mimedata.hasColor(
             print mimedata.colorData()
-        elif mimedata.hasText():
+        elif mimedata.hasText(
             print mimedata.text()
 
 
-    def dragEnterEvent(self, event):
+    ___ dragEnterEvent , event
         event.accept()
         print 'ENTER', type(event)
 
-    def dragMoveEvent(self, event):
+    ___ dragMoveEvent , event
         event.accept()
         # print 'MOVE'
 
 
-if __name__ == '__main__':
-    import sys
+__ __name__ __ '__main__':
+    _____ ___
 
     app = None
     try:
-        import nuke
+        _____ nuke
     except ImportError:
-        app = QApplication(sys.argv)
+        app = ?A..(___.argv)
     main = listWidgetClass()
-    main.show()
+    main.s..
 
-    if app is not None:
+    __ app is not None:
         app.exec_()

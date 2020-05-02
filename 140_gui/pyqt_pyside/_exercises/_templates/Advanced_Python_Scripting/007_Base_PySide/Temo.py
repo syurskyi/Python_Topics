@@ -1,43 +1,43 @@
-import sys
-from pytube import YouTube
-from math import *
-from PySide.QtCore import *
-from PySide.QtGui import *
+_____ ___
+____ pytube _____ YouTube
+____ math _____ *
+____ PySide.?C.. _____ *
+____ PySide.QtGui _____ *
 
 
-class Form(QDialog):
-    def __init__(self, parent=None):
-        super(Form, self).__init__(parent)
+c_ Form(?D..
+    ___  -  , parent=None
+        super(Form, self). - (parent)
 
-        self.intext = QTextEdit()
-        self.outtext = QTextBrowser()
-        self.bt1 = QPushButton()
-        self.output = ""
+        intext = QTextEdit()
+        outtext = QTextBrowser()
+        bt1 = ?PB..()
+        output = ""
 
-        self.bt1.setText("Download")
+        bt1.sT..("Download")
 
         grid = QGridLayout()
-        grid.addWidget(self.intext, 1, 0)
-        grid.addWidget(self.outtext, 2, 0)
-        grid.addWidget(self.bt1, 1, 1)
-        self.setLayout(grid)
+        grid.addWidget(intext, 1, 0)
+        grid.addWidget(outtext, 2, 0)
+        grid.addWidget(bt1, 1, 1)
+        setLayout(grid)
 
-        self.connect(self.bt1, SIGNAL("clicked()"), self.updateUi)
-        self.setWindowTitle("PyTube : Download Videos From Youtube")
+        c..(bt1, SIGNAL("clicked()"), updateUi)
+        setWindowTitle("PyTube : Download Videos From Youtube")
         pass
 
-    def updateUi(self):
-        self.outtext.append("Download has started!!")
+    ___ updateUi 
+        outtext.append("Download has started!!")
         yt = YouTube()
-        yt.from_url(self.intext.toPlainText())
+        yt.from_url(intext.toPlainText())
         yt.set_filename("Temp")
         video = yt.videos[0]
         video.download()
-        self.outtext.append("Download Finished!!")
+        outtext.append("Download Finished!!")
         pass
 
 
-app = QApplication(sys.argv)
+app = ?A..(___.argv)
 form = Form()
-form.show()
+form.s..
 app.exec_()

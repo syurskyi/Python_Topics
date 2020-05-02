@@ -1,39 +1,39 @@
-import sys
-import threading
-import time
+_____ ___
+_____ threading
+_____ time
 
-from PyQt5.QtWidgets import QDialog, QApplication
+____ ?.?W.. _____ ?D.., ?A..
 
-from demoTwoProgressBarsLocks import *
+____ demoTwoProgressBarsLocks _____ *
 
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.show()
+c_ MyForm(?D..
+    ___  -
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        s..
        
-class myThread (threading.Thread):
+c_ myThread (threading.Thread
    counter=0
-   def __init__(self, w, ProgressBar):
-      threading.Thread.__init__(self)
-      self.w=w
-      self.counter=0
-      self.progreassBar=ProgressBar
+   ___  -  , w, ProgressBar
+      threading.Thread. -
+      w=w
+      counter=0
+      progreassBar=ProgressBar
       
-   def run(self):
-      print ("Starting " + self.name+"\n")
+   ___ run
+      print ("Starting " + name+"\n")
       threadLock.acquire()
-      while self.counter <=100:
+      while counter <=100:
           time.sleep(1)
-          self.progreassBar.setValue(self.counter)
-          self.counter+=10
+          progreassBar.setValue(counter)
+          counter+=10
       threadLock.release()
-      print ("Exiting " + self.name+"\n")
+      print ("Exiting " + name+"\n")
 
       
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":
+    app = ?A..(___.argv)
     w = MyForm()
     thread1 = myThread(w, w.ui.progressBarFileDownload)
     thread2 = myThread(w, w.ui.progressBarVirusScan)
@@ -46,6 +46,6 @@ if __name__=="__main__":
     threads.append(thread2)
     for t in threads:
         t.join()
-    sys.exit(app.exec_())
+    ___.e..(app.exec_())
 
 

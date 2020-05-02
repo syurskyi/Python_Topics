@@ -1,44 +1,44 @@
-import sys
+_____ ___
 
-from PyQt5.QtWidgets import QDialog, QApplication
+____ ?.?W.. _____ ?D.., ?A..
 
-from demoRadioButton2 import *
+____ demoRadioButton2 _____ *
 
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.ui.radioButtonMedium.toggled.connect(self.dispSelected)
-        self.ui.radioButtonLarge.toggled.connect(self.dispSelected)
-        self.ui.radioButtonXL.toggled.connect(self.dispSelected)
-        self.ui.radioButtonXXL.toggled.connect(self.dispSelected)
-        self.ui.radioButtonDebitCard.toggled.connect(self.dispSelected)
-        self.ui.radioButtonNetBanking.toggled.connect(self.dispSelected)
-        self.ui.radioButtonCashOnDelivery.toggled.connect(self.dispSelected)
-        self.show()
+c_ MyForm(?D..
+    ___  -
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        ui.radioButtonMedium.toggled.c..(dispSelected)
+        ui.radioButtonLarge.toggled.c..(dispSelected)
+        ui.radioButtonXL.toggled.c..(dispSelected)
+        ui.radioButtonXXL.toggled.c..(dispSelected)
+        ui.radioButtonDebitCard.toggled.c..(dispSelected)
+        ui.radioButtonNetBanking.toggled.c..(dispSelected)
+        ui.radioButtonCashOnDelivery.toggled.c..(dispSelected)
+        s..
 
-    def dispSelected(self):
+    ___ dispSelected
         selected1="";
         selected2=""
-        if self.ui.radioButtonMedium.isChecked()==True:
+        __ ui.radioButtonMedium.iC..__T..:
             selected1="Medium"
-        if self.ui.radioButtonLarge.isChecked()==True:
+        __ ui.radioButtonLarge.iC..__T..:
             selected1="Large"
-        if self.ui.radioButtonXL.isChecked()==True:
+        __ ui.radioButtonXL.iC..__T..:
             selected1="Extra Large"
-        if self.ui.radioButtonXXL.isChecked()==True:
+        __ ui.radioButtonXXL.iC..__T..:
             selected1="Extra Extra Large"
-        if self.ui.radioButtonDebitCard.isChecked()==True:
+        __ ui.radioButtonDebitCard.iC..__T..:
             selected2="Debit/Credit Card"
-        if self.ui.radioButtonNetBanking.isChecked()==True:
+        __ ui.radioButtonNetBanking.iC..__T..:
             selected2="NetBanking"
-        if self.ui.radioButtonCashOnDelivery.isChecked()==True:
+        __ ui.radioButtonCashOnDelivery.iC..__T..:
             selected2="Cash On Delivery"
-        self.ui.labelSelected.setText("Chosen shirt size is "+selected1+" and payment method as " + selected2)
+        ui.labelSelected.sT..("Chosen shirt size is "+selected1+" and payment method as " + selected2)
 
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())

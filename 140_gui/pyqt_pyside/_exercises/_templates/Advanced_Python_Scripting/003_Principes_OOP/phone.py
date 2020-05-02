@@ -1,20 +1,20 @@
-class phone(object):
-    def __init__(self):
-        self.model = ''
-        self.color = 'red'
+c_ phone(object
+    ___  -  
+        model = ''
+        color = 'red'
 
-    def call(self):
+    ___ call 
         print 'Call'
 
-class phone2(phone):
-    def __init__(self):
-        super(phone2, self).__init__()
+c_ phone2(phone
+    ___  -  
+        super(phone2, self). - ()
 
-    def sendMail(self):
+    ___ sendMail 
         pass
 
-    def call(self):
-        if True:
+    ___ call 
+        __ T..:
             pass
         else:
             super(phone2, self).call()

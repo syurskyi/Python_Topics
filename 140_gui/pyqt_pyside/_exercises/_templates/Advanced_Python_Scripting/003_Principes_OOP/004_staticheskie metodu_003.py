@@ -1,6 +1,6 @@
-class someClass(object):
+c_ someClass(object
     @staticmethod
-    def someMethod():
+    ___ someMethod(
         pass
 
 someClass.someMethod()

@@ -1,32 +1,32 @@
-import sys
+_____ ___
 
-from PyQt5.QtWidgets import QDialog, QApplication
+____ ?.?W.. _____ ?D.., ?A..
 
-from LineEditClass import *
+____ LineEditClass _____ *
 
-class Student:
+c_ Student:
     name = ""
  
-    def __init__(self, name):
-        self.name = name
+    ___  -  , name
+        name = name
  
-    def printName(self):
-        return self.name
+    ___ printName 
+        return name
 
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.ui.ButtonClickMe.clicked.connect(self.dispmessage)
-        self.show()
+c_ MyForm(?D..
+    ___  -  
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        ui.ButtonClickMe.clicked.c..(dispmessage)
+        s..
 
-    def dispmessage(self):
-        studentObj=Student(self.ui.lineEditName.text())  
-        self.ui.labelResponse.setText("Hello "+studentObj.printName())
+    ___ dispmessage 
+        studentObj=Student(ui.lineEditName.text())  
+        ui.labelResponse.sT..("Hello "+studentObj.printName())
 
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())

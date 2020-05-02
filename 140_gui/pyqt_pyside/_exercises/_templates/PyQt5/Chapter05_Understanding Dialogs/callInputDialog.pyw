@@ -1,26 +1,26 @@
-import sys
+_____ ___
 
-from PyQt5.QtWidgets import QDialog, QApplication, QInputDialog
+____ ?.?W.. _____ ?D.., ?A.., QInputDialog
 
-from demoInputDialog import *
+____ demoInputDialog _____ *
 
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.ui.pushButtonCountry.clicked.connect(self.dispmessage)
-        self.show()
+c_ MyForm(?D..
+    ___  -  
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        ui.pushButtonCountry.clicked.c..(dispmessage)
+        s..
 
-    def dispmessage(self):
+    ___ dispmessage 
       countries = ("Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda", "Argentina", "Armenia", "Aruba", "Australia", "Austria", "Azerbaijan")
-      countryName, ok = QInputDialog.getItem(self, "Input Dialog", "List of countries", countries, 0, False)			
-      if ok and countryName:
-          self.ui.lineEditCountry.setText(countryName)
+      countryName, ok = QInputDialog.getItem , "Input Dialog", "List of countries", countries, 0, False)			
+      __ ok and countryName:
+          ui.lineEditCountry.sT..(countryName)
 
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())
 

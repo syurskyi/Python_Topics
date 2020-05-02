@@ -1,23 +1,23 @@
-import sys
-from PyQt5.QtWidgets import QDialog, QApplication
-from demoMousetrack import *
+_____ ___
+____ ?.?W.. _____ ?D.., ?A..
+____ demoMousetrack _____ *
 
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.setMouseTracking(True)
-        self.ui.setupUi(self)
-        self.show()
+c_ MyForm(?D..
+    ___  -  
+        s__. - ()
+        ui = Ui_Dialog()
+        setMouseTracking(T..)
+        ui.setupUi
+        s..
            
-    def mouseMoveEvent(self, event):      
+    ___ mouseMoveEvent , event      
         x = event.x()
         y = event.y()    
         text = "x: {0},  y: {1}".format(x, y)
-        self.ui.label.setText(text)
+        ui.label.sT..(text)
 
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())

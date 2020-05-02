@@ -1,60 +1,60 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
-import os
+____ PySide.?C.. _____ *
+____ PySide.QtGui _____ *
+_____ os
 
 icon = os.path.join(os.path.dirname(__file__), 'drag.png')
 
 
-class listWidgetClass(QListWidget):
-    def __init__(self):
-        super(listWidgetClass, self).__init__()
-        self.setWindowFlags(Qt.WindowStaysOnTopHint)
-        self.setDragDropMode(QAbstractItemView.DropOnly)
-        self.setSelectionMode(QAbstractItemView.ExtendedSelection)
-        self.files = []
+c_ listWidgetClass(QListWidget
+    ___  -
+        super(listWidgetClass, self). - ()
+        setWindowFlags(Qt.WindowStaysOnTopHint)
+        setDragDropMode(QAbstractItemView.DropOnly)
+        setSelectionMode(QAbstractItemView.ExtendedSelection)
+        files = []
 
-    def dropEvent(self, event):
+    ___ dropEvent , event
         mimedata = event.mimeData()
-        if mimedata.hasUrls():
-            for f in mimedata.urls():
-                self.addFile(f.toLocalFile())
+        __ mimedata.hasUrls(
+            for f in mimedata.urls(
+                addFile(f.toLocalFile())
 
-    def dragEnterEvent(self, event):
-        if event.source() is self:
+    ___ dragEnterEvent , event
+        __ event.source() is self:
             event.ignore()
         else:
             mimedata = event.mimeData()
-            if mimedata.hasUrls():
+            __ mimedata.hasUrls(
                 event.accept()
             else:
                 event.ignore()
 
-    def dragMoveEvent(self, event):
-        if event.source() is self:
+    ___ dragMoveEvent , event
+        __ event.source() is self:
             event.ignore()
         else:
             mimedata = event.mimeData()
-            if mimedata.hasUrls():
+            __ mimedata.hasUrls(
                 event.accept()
             else:
                 event.ignore()
 
-    def addFile(self, path):
-        if not path in self.files:
-            item = QListWidgetItem(self)
-            item.setText(os.path.basename(path))
+    ___ addFile , path
+        __ not path in files:
+            item = QListWidgetItem
+            item.sT..(os.path.basename(path))
             item.setData(Qt.UserRole, path)
-            self.files.append(path)
+            files.append(path)
 
-    def deleteSelected(self):
-        for s in self.selectedItems():
-            self.files.remove(s.data(32))
-            self.takeItem(self.indexFromItem(s).row())
+    ___ deleteSelected
+        for s in selectedItems(
+            files.remove(s.data(32))
+            takeItem(indexFromItem(s).row())
 
 
-    def getAllFiles(self):
-        return self.files
+    ___ getAllFiles
+        return files
 
-    def keyPressEvent(self, event):
-        if event.key() == Qt.Key_Delete:
-            self.deleteSelected()
+    ___ keyPressEvent , event
+        __ event.key() __ Qt.Key_Delete:
+            deleteSelected()

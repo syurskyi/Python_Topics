@@ -1,96 +1,96 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
+____ PySide.?C.. _____ *
+____ PySide.QtGui _____ *
 
-class splineRampWidget(QWidget):
-    def __init__(self):
-        super(splineRampWidget, self).__init__()
-        self.resize(300, 200)
+c_ splineRampWidget(?W..
+    ___  -
+        super(splineRampWidget, self). - ()
+        resize(300, 200)
 
-        self.lineWidth = 3
-        self.pointSize = 10
+        lineWidth = 3
+        pointSize = 10
 
-        self.point1 = QPointF(0, 0)
-        self.point2 = QPointF(300, 200)
+        point1 = QPointF(0, 0)
+        point2 = QPointF(300, 200)
 
-        self.factor1 = 0.0
-        self.factor2 = 1.0
+        factor1 = 0.0
+        factor2 = 1.0
 
-        self.dragged = None
+        dragged = None
 
-        self.region1 = QRect()
-        self.region2 = QRect()
-        self.regionSize = 40
-        self.updateRegions()
+        region1 = QRect()
+        region2 = QRect()
+        regionSize = 40
+        updateRegions()
 
-    def updateRegions(self):
-        self.region1 = QRect(0, 0, self.regionSize, self.regionSize)
-        self.region1.moveCenter(self.point1.toPoint())
+    ___ updateRegions
+        region1 = QRect(0, 0, regionSize, regionSize)
+        region1.moveCenter(point1.toPoint())
 
-        self.region2 = QRect(0, 0, self.regionSize, self.regionSize)
-        self.region2.moveCenter(self.point2.toPoint())
+        region2 = QRect(0, 0, regionSize, regionSize)
+        region2.moveCenter(point2.toPoint())
 
-        self.factor1 = self.point1.y() / float(self.size().height())
-        self.factor2 = self.point2.y() / float(self.size().height())
-        print self.factor1, self.factor2
+        factor1 = point1.y() / float(size().height())
+        factor2 = point2.y() / float(size().height())
+        print factor1, factor2
 
-    def paintEvent(self, event):
+    ___ paintEvent , event
         rec = event.rect()
         painter = QPainter()
-        painter.begin(self)
+        painter.begin
         painter.setRenderHint(QPainter.Antialiasing)
         painter.fillRect(event.rect(), Qt.black)
         path = QPainterPath()
-        path.moveTo(self.point1)
-        path.cubicTo(rec.width()/2, self.point1.y(),
-                     rec.width()/2, self.point2.y(),
-                     rec.width(), self.point2.y())
-        painter.setPen(QPen(QBrush(Qt.white), self.lineWidth))
+        path.moveTo(point1)
+        path.cubicTo(rec.width()/2, point1.y(),
+                     rec.width()/2, point2.y(),
+                     rec.width(), point2.y())
+        painter.setPen(QPen(QBrush(Qt.white), lineWidth))
         painter.drawPath(path)
         painter.setBrush(QBrush(Qt.white))
 
-        painter.drawEllipse(self.point1, self.pointSize, self.pointSize)
-        painter.drawEllipse(self.point2, self.pointSize, self.pointSize)
+        painter.drawEllipse(point1, pointSize, pointSize)
+        painter.drawEllipse(point2, pointSize, pointSize)
 
         painter.setPen(QPen(QBrush(Qt.white), 1))
         painter.setBrush(Qt.NoBrush)
-        painter.drawRect(self.region1)
-        painter.drawRect(self.region2)
+        painter.drawRect(region1)
+        painter.drawRect(region2)
         painter.end()
 
-    def mousePressEvent(self, event):
+    ___ mousePressEvent , event
         # print self.region1.contains(event.pos())
-        if self.region1.contains(event.pos()):
-            self.dragged = self.point1
-        elif self.region2.contains(event.pos()):
-            self.dragged = self.point2
+        __ region1.contains(event.pos()):
+            dragged = point1
+        elif region2.contains(event.pos()):
+            dragged = point2
         super(splineRampWidget, self).mousePressEvent(event)
 
-    def mouseMoveEvent(self, event):
+    ___ mouseMoveEvent , event
         # print self.dragged
-        if not self.dragged is None:
+        __ not dragged is None:
             y = event.pos().y()
-            s = self.size()
-            self.dragged.setY(min(max(y, 1), s.height()))
-            self.update()
+            s = size()
+            dragged.setY(min(max(y, 1), s.height()))
+            update()
         super(splineRampWidget, self).mouseMoveEvent(event)
 
-    def mouseReleaseEvent(self, event):
-        self.dragged = None
-        self.updateRegions()
-        self.update()
+    ___ mouseReleaseEvent , event
+        dragged = None
+        updateRegions()
+        update()
         super(splineRampWidget, self).mouseReleaseEvent(event)
 
-    def resizeEvent(self, event):
+    ___ resizeEvent , event
 
-        self.point1.setY(event.size().height() * self.factor1)
-        self.point2.setY(event.size().height() * self.factor2)
-        self.point2.setX(event.size().width())
-        self.updateRegions()
-        self.update()
+        point1.setY(event.size().height() * factor1)
+        point2.setY(event.size().height() * factor2)
+        point2.setX(event.size().width())
+        updateRegions()
+        update()
         super(splineRampWidget, self).resizeEvent(event)
 
-if __name__ == '__main__':
-    app = QApplication([])
+__ __name__ __ '__main__':
+    app = ?A..([])
     w = splineRampWidget()
-    w.show()
+    w.s..
     app.exec_()

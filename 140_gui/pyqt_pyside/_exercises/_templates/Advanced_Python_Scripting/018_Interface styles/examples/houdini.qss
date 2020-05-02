@@ -1,12 +1,12 @@
-/******* QWidget ********/
+/******* ?W.. ********/
 
-QWidget
+?W..
 {
     color: #b1b1b1;
     background-color:#3a3a3a;
 }
 
-QWidget:disabled
+?W..:disabled
 {
     color: #b1b1b1;
     background-color: #252525;
@@ -225,9 +225,9 @@ QLineEdit,QDateEdit,QDateTimeEdit,QSpinBox
 }
 
 
-/*************** QPushButton ***********/
+/*************** ?PB.. ***********/
 
-QPushButton
+?PB..
 {
     color: #b1b1b1;
     background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #535353, stop: 0.1 #515151, stop: 0.5 #474747, stop: 0.9 #3d3d3d, stop: 1 #3a3a3a);
@@ -244,7 +244,7 @@ QPushButton
 }
 
 
-QPushButton:disabled
+?PB..:disabled
 {
     background-color:   #424242;
     border: 2px solid #313131;
@@ -255,7 +255,7 @@ QPushButton:disabled
     color: #777;
 }
 
-QPushButton:checked
+?PB..:checked
 {   
     border-color: #000;
     background-color: #2d2d2d;
@@ -263,12 +263,12 @@ QPushButton:checked
     border-width: 1px;
 }
 
- QPushButton:hover
+ ?PB..:hover
 {   
     background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #606060, stop: 0.1 #585858, stop: 0.5 #545454, stop: 0.9 #3d3d3d, stop: 1 #3a3a3a);
 
 }
-QPushButton:pressed
+?PB..:pressed
 {
     background-color: #af8021;
     color: #fff;

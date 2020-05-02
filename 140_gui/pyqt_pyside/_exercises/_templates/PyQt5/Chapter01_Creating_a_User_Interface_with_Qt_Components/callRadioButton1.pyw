@@ -1,31 +1,31 @@
-import sys
+_____ ___
 
-from PyQt5.QtWidgets import QDialog, QApplication
+____ ?.?W.. _____ ?D.., ?A..
 
-from demoRadioButton1 import *
+____ demoRadioButton1 _____ *
 
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.ui.radioButtonFirstClass.toggled.connect(self.dispFare)
-        self.ui.radioButtonBusinessClass.toggled.connect(self.dispFare)
-        self.ui.radioButtonEconomyClass.toggled.connect(self.dispFare)
-        self.show()
+c_ MyForm(?D..
+    ___  -  
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        ui.radioButtonFirstClass.toggled.c..(dispFare)
+        ui.radioButtonBusinessClass.toggled.c..(dispFare)
+        ui.radioButtonEconomyClass.toggled.c..(dispFare)
+        s..
 
-    def dispFare(self):
+    ___ dispFare 
         fare=0
-        if self.ui.radioButtonFirstClass.isChecked()==True:
+        __ ui.radioButtonFirstClass.iC..__T..:
             fare=150
-        if self.ui.radioButtonBusinessClass.isChecked()==True:
+        __ ui.radioButtonBusinessClass.iC..__T..:
             fare=125
-        if self.ui.radioButtonEconomyClass.isChecked()==True:
+        __ ui.radioButtonEconomyClass.iC..__T..:
             fare=100
-        self.ui.labelFare.setText("Air Fare is "+str(fare))
+        ui.labelFare.sT..("Air Fare is "+st.(fare))
 
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())

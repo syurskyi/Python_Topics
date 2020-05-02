@@ -7,45 +7,45 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt4 import QtCore, QtGui
+____ PyQt4 _____ ?C.., QtGui
 
 try:
-    _fromUtf8 = QtCore.QString.fromUtf8
+    _fromUtf8 = ?C...QString.fromUtf8
 except AttributeError:
-    def _fromUtf8(s):
+    ___ _fromUtf8(s
         return s
 
 try:
-    _encoding = QtGui.QApplication.UnicodeUTF8
-    def _translate(context, text, disambig):
-        return QtGui.QApplication.translate(context, text, disambig, _encoding)
+    _encoding = QtGui.?A...UnicodeUTF8
+    ___ _translate(context, text, disambig
+        return QtGui.?A...translate(context, text, disambig, _encoding)
 except AttributeError:
-    def _translate(context, text, disambig):
-        return QtGui.QApplication.translate(context, text, disambig)
+    ___ _translate(context, text, disambig
+        return QtGui.?A...translate(context, text, disambig)
 
-class Ui_Form(object):
-    def setupUi(self, Form):
+c_ Ui_Form(object
+    ___ setupUi , Form
         Form.setObjectName(_fromUtf8("Form"))
         Form.resize(400, 300)
-        self.horizontalLayout = QtGui.QHBoxLayout(Form)
-        self.horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
-        self.verticalLayout = QtGui.QVBoxLayout()
-        self.verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
-        self.pushButton = QtGui.QPushButton(Form)
-        self.pushButton.setObjectName(_fromUtf8("pushButton"))
-        self.verticalLayout.addWidget(self.pushButton)
-        self.pushButton_2 = QtGui.QPushButton(Form)
-        self.pushButton_2.setObjectName(_fromUtf8("pushButton_2"))
-        self.verticalLayout.addWidget(self.pushButton_2)
+        horizontalLayout = QtGui.QHBoxLayout(Form)
+        horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
+        verticalLayout = QtGui.QVBoxLayout()
+        verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
+        pushButton = QtGui.?PB..(Form)
+        pushButton.setObjectName(_fromUtf8("pushButton"))
+        verticalLayout.addWidget(pushButton)
+        pushButton_2 = QtGui.?PB..(Form)
+        pushButton_2.setObjectName(_fromUtf8("pushButton_2"))
+        verticalLayout.addWidget(pushButton_2)
         spacerItem = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
-        self.verticalLayout.addItem(spacerItem)
-        self.horizontalLayout.addLayout(self.verticalLayout)
+        verticalLayout.addItem(spacerItem)
+        horizontalLayout.addLayout(verticalLayout)
 
-        self.retranslateUi(Form)
-        QtCore.QMetaObject.connectSlotsByName(Form)
+        retranslateUi(Form)
+        ?C...QMetaObject.connectSlotsByName(Form)
 
-    def retranslateUi(self, Form):
+    ___ retranslateUi , Form
         Form.setWindowTitle(_translate("Form", "Form", None))
-        self.pushButton.setText(_translate("Form", "PushButton", None))
-        self.pushButton_2.setText(_translate("Form", "PushButton", None))
+        pushButton.sT..(_translate("Form", "PushButton", None))
+        pushButton_2.sT..(_translate("Form", "PushButton", None))
 

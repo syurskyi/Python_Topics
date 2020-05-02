@@ -1,54 +1,54 @@
-from PySide.QtGui import *
-from PySide.QtCore import *
-import os
+____ PySide.QtGui _____ *
+____ PySide.?C.. _____ *
+_____ os
 path = os.path.dirname(os.path.dirname(__file__))
 
 
-class simpleWindow(QWidget):
-    def __init__(self):
-        super(simpleWindow, self).__init__()
+c_ simpleWindow(?W..
+    ___  -
+        super(simpleWindow, self). - ()
         ly = QHBoxLayout()
-        self.setLayout(ly)
-        self.tree = QTreeWidget()
-        ly.addWidget(self.tree)
-        self.tree.header().hide()
+        setLayout(ly)
+        tree = QTreeWidget()
+        ly.addWidget(tree)
+        tree.header().hide()
         # connect
-        self.tree.itemChanged.connect(self.action)
+        tree.itemChanged.c..(action)
         # start
-        self.resize(500, 400)
-        self.updateTree()
+        resize(500, 400)
+        updateTree()
 
-    def updateTree(self):
-        self.tree.blockSignals(True)
-        self.fillTree()
-        self.tree.blockSignals(False)
+    ___ updateTree
+        tree.blockSignals(T..)
+        fillTree()
+        tree.blockSignals(False)
 
-    def fillTree(self, parent=None, root=None):
-        if not parent:
-            parent = self.tree.invisibleRootItem()
-        if not root:
+    ___ fillTree , parent=None, root=None
+        __ not parent:
+            parent = tree.invisibleRootItem()
+        __ not root:
             root = path
-        for f in os.listdir(root):
-            if f[0] in ['.', '_']: continue
+        for f in os.listdir(root
+            __ f[0] in ['.', '_']: continue
             item = QTreeWidgetItem()
-            item.setText(0, f)
+            item.sT..(0, f)
             parent.addChild(item)
             fullpath = os.path.join(root, f)
-            if os.path.isdir(fullpath):
-                self.fillTree(item, fullpath)
+            __ os.path.isdir(fullpath
+                fillTree(item, fullpath)
                 item.setExpanded(1)
             else:
                 item.setFlags(Qt.ItemIsEnabled | Qt.ItemIsSelectable | Qt.ItemIsEditable)
                 item.setData(0, Qt.UserRole, {'path':os.path.normpath(fullpath)})
 
-    def action(self, item):
+    ___ action , item
         print item.text(0)
         s = item.data(0, Qt.UserRole)
         print s
 
 
-if __name__ == '__main__':
-    app = QApplication([])
+__ __name__ __ '__main__':
+    app = ?A..([])
     w = simpleWindow()
-    w.show()
+    w.s..
     app.exec_()

@@ -1,23 +1,23 @@
-from PySide.QtGui import *
-import dialog
+____ PySide.QtGui _____ *
+_____ dialog
 
-class simpleWindow(QWidget):
-    def __init__(self):
-        super(simpleWindow, self).__init__()
-        ly = QVBoxLayout(self)
-        self.btn  = QPushButton('Open')
-        ly.addWidget(self.btn)
-        self.resize(300,200)
-        self.btn.clicked.connect(self.showMessage)
+c_ simpleWindow(?W..
+    ___  -  
+        super(simpleWindow, self). - ()
+        ly = QVBoxLayout
+        btn  = ?PB..('Open')
+        ly.addWidget(btn)
+        resize(300,200)
+        btn.clicked.c..(showMessage)
 
-    def showMessage(self):
-        self.dial = dialog.dialogClass()
-        r = self.dial.exec_()
-        if r:
-            print self.dial.getData()
+    ___ showMessage 
+        dial = dialog.dialogClass()
+        r = dial.exec_()
+        __ r:
+            print dial.getData()
 
-if __name__ == '__main__':
-    app = QApplication([])
+__ __name__ __ '__main__':
+    app = ?A..([])
     w = simpleWindow()
-    w.show()
+    w.s..
     app.exec_()

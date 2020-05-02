@@ -1,70 +1,70 @@
-import sys
+_____ ___
 
-from PyQt5.QtWidgets import QDialog, QApplication
+____ ?.?W.. _____ ?D.., ?A..
 
-from demoCalculator import *
+____ demoCalculator _____ *
 
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.ui.pushButtonPlus.clicked.connect(self.addtwonum)
-        self.ui.pushButtonSubtract.clicked.connect(self.subtracttwonum)
-        self.ui.pushButtonMultiply.clicked.connect(self.multiplytwonum)
-        self.ui.pushButtonDivide.clicked.connect(self.dividetwonum)
-        self.show()
+c_ MyForm(?D..
+    ___  -
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        ui.pushButtonPlus.clicked.c..(addtwonum)
+        ui.pushButtonSubtract.clicked.c..(subtracttwonum)
+        ui.pushButtonMultiply.clicked.c..(multiplytwonum)
+        ui.pushButtonDivide.clicked.c..(dividetwonum)
+        s..
 
-    def addtwonum(self):
-        if len(self.ui.lineEditFirstNumber.text())!=0:
-            a=int(self.ui.lineEditFirstNumber.text())
+    ___ addtwonum
+        __ len(ui.lineEditFirstNumber.text())!=0:
+            a=int(ui.lineEditFirstNumber.text())
         else:
             a=0
-        if len(self.ui.lineEditSecondNumber.text())!=0:
-            b=int(self.ui.lineEditSecondNumber.text())
+        __ len(ui.lineEditSecondNumber.text())!=0:
+            b=int(ui.lineEditSecondNumber.text())
         else:
             b=0
         sum=a+b
-        self.ui.labelResult.setText("Addition: " +str(sum))
+        ui.labelResult.sT..("Addition: " +st.(sum))
 
-    def subtracttwonum(self):
-        if len(self.ui.lineEditFirstNumber.text())!=0:
-            a=int(self.ui.lineEditFirstNumber.text())
+    ___ subtracttwonum
+        __ len(ui.lineEditFirstNumber.text())!=0:
+            a=int(ui.lineEditFirstNumber.text())
         else:
             a=0
-        if len(self.ui.lineEditSecondNumber.text())!=0:
-            b=int(self.ui.lineEditSecondNumber.text())
+        __ len(ui.lineEditSecondNumber.text())!=0:
+            b=int(ui.lineEditSecondNumber.text())
         else:
             b=0
         diff=a-b
-        self.ui.labelResult.setText("Substraction: " +str(diff))
+        ui.labelResult.sT..("Substraction: " +st.(diff))
         
-    def multiplytwonum(self):
-        if len(self.ui.lineEditFirstNumber.text())!=0:
-            a=int(self.ui.lineEditFirstNumber.text())
+    ___ multiplytwonum
+        __ len(ui.lineEditFirstNumber.text())!=0:
+            a=int(ui.lineEditFirstNumber.text())
         else:
             a=0
-        if len(self.ui.lineEditSecondNumber.text())!=0:
-            b=int(self.ui.lineEditSecondNumber.text())
+        __ len(ui.lineEditSecondNumber.text())!=0:
+            b=int(ui.lineEditSecondNumber.text())
         else:
             b=0
         mult=a*b
-        self.ui.labelResult.setText("Multiplication: " +str(mult))
+        ui.labelResult.sT..("Multiplication: " +st.(mult))
         
-    def dividetwonum(self):
-        if len(self.ui.lineEditFirstNumber.text())!=0:
-            a=int(self.ui.lineEditFirstNumber.text())
+    ___ dividetwonum
+        __ len(ui.lineEditFirstNumber.text())!=0:
+            a=int(ui.lineEditFirstNumber.text())
         else:
             a=0
-        if len(self.ui.lineEditSecondNumber.text())!=0:
-            b=int(self.ui.lineEditSecondNumber.text())
+        __ len(ui.lineEditSecondNumber.text())!=0:
+            b=int(ui.lineEditSecondNumber.text())
         else:
             b=0
         division=a/b
-        self.ui.labelResult.setText("Division: " +str(round(division,2)))
+        ui.labelResult.sT..("Division: " +st.(round(division,2)))
 
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())

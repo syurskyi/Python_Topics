@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>imageConverter</class>
- <widget class="QMainWindow" name="imageConverter">
+ <c_>imageConverter</c_>
+ <widget c_="QMainWindow" name="imageConverter">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -13,19 +13,19 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1,0,0,0">
+  <widget c_="QWidget" name="centralwidget">
+   <layout c_="QVBoxLayout" name="verticalLayout" stretch="0,1,0,0,0">
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout">
+     <layout c_="QHBoxLayout" name="horizontalLayout">
       <item>
-       <widget class="QLabel" name="iconvert_lb">
+       <widget c_="QLabel" name="iconvert_lb">
         <property name="text">
          <string>Path</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="browseIconvert_btn">
+       <widget c_="QPushButton" name="browseIconvert_btn">
         <property name="maximumSize">
          <size>
           <width>30</width>
@@ -40,15 +40,15 @@
      </layout>
     </item>
     <item>
-     <layout class="QVBoxLayout" name="files_ly"/>
+     <layout c_="QVBoxLayout" name="files_ly"/>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <layout c_="QHBoxLayout" name="horizontalLayout_2">
       <item>
-       <widget class="QLineEdit" name="out_le"/>
+       <widget c_="QLineEdit" name="out_le"/>
       </item>
       <item>
-       <widget class="QPushButton" name="browseOut_btn">
+       <widget c_="QPushButton" name="browseOut_btn">
         <property name="maximumSize">
          <size>
           <width>30</width>
@@ -63,14 +63,14 @@
      </layout>
     </item>
     <item>
-     <widget class="QPushButton" name="start_btn">
+     <widget c_="QPushButton" name="start_btn">
       <property name="text">
        <string>Strat</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QProgressBar" name="progressBar">
+     <widget c_="QProgressBar" name="progressBar">
       <property name="value">
        <number>0</number>
       </property>

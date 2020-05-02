@@ -1,14 +1,14 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-import sys
-from PyQt4.QtGui import *
+_____ ___
+____ PyQt4.QtGui _____ *
 
 # Create an PyQT4 application object.
-a = QApplication(sys.argv)
+a = ?A..(___.argv)
 
 # The QWidget widget is the base class of all user interface objects in PyQt4.
-w = QWidget()
+w = ?W..()
 
 # Set window size.
 w.resize(320, 240)
@@ -17,6 +17,6 @@ w.resize(320, 240)
 w.setWindowTitle("Hello World!")
 
 # Show window
-w.show()
+w.s..
 
-sys.exit(a.exec_())
+___.e..(a.exec_())

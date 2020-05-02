@@ -1,25 +1,25 @@
-class vectorClass(object):
-	def __init__(self, x=0, y=0, z=0):
-		self.x = x
-		self.y = y
-		self.z = z
+c_ vectorClass(object
+	___  -  , x=0, y=0, z=0
+		x = x
+		y = y
+		z = z
 
-	def __mul__(self, other):
-		if isinstance(other, (int, float)):
-			return vectorClass(self.x * other,
-			                  self.y * other,
-			                  self.z * other)
+	___ __mul__ , other
+		__ isinstance(other, (int, float)):
+			return vectorClass(x * other,
+			                  y * other,
+			                  z * other)
 
-		elif isinstance(other, vectorClass):
+		elif isinstance(other, vectorClass
 			return vectorClass(
-				self.x * other.x,
-				self.y * other.y,
-				self.z * other.z)
+				x * other.x,
+				y * other.y,
+				z * other.z)
 
-	def __repr__(self):
-		return('Vector < %s:%s:%s >' % (self.x,
-		                                self.y,
-		                                self.z))
+	___ __repr__
+		return('Vector < %s:%s:%s >' % (x,
+		                                y,
+		                                z))
 
 
 v1 = vectorClass(1, 2, 3)

@@ -1,8 +1,8 @@
-class someClass(object):
+c_ someClass(object
     staticValue = 123
     
     @staticmethod
-    def someMethod():
+    ___ someMethod(
         pass
 
 v = someClass.someMethod()

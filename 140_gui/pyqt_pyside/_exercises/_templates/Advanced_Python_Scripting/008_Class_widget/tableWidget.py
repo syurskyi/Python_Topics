@@ -1,40 +1,40 @@
-from PySide.QtGui import *
-from PySide.QtCore import *
-import os
+____ PySide.QtGui _____ *
+____ PySide.?C.. _____ *
+_____ os
 path = os.path.dirname(__file__)
 
-class simpleWindow(QWidget):
+c_ simpleWindow(?W..
     path = os.path.dirname(__file__)
-    def __init__(self):
-        super(simpleWindow, self).__init__()
+    ___  -  
+        super(simpleWindow, self). - ()
         ly = QHBoxLayout()
-        self.setLayout(ly)
-        self.table = QTableWidget()
-        ly.addWidget(self.table)
-        self.table.verticalHeader().hide()
-        self.table.horizontalHeader().setResizeMode(QHeaderView.Stretch)
+        setLayout(ly)
+        table = QTableWidget()
+        ly.addWidget(table)
+        table.verticalHeader().hide()
+        table.horizontalHeader().setResizeMode(QHeaderView.Stretch)
         # start
-        self.resize(500,400)
-        self.fillTable()
+        resize(500,400)
+        fillTable()
 
-    def fillTable(self):
+    ___ fillTable 
         files = os.listdir(path)
-        self.table.setColumnCount(2)
-        self.table.setRowCount(len(files))
-        self.table.setHorizontalHeaderLabels(['Name', 'Size'])
-        for i, f in enumerate(files):
+        table.setColumnCount(2)
+        table.setRowCount(len(files))
+        table.setHorizontalHeaderLabels(['Name', 'Size'])
+        for i, f in enumerate(files
             item = QTableWidgetItem()
             item.setFlags(Qt.ItemIsEnabled | Qt.ItemIsSelectable)
-            item.setText(f)
-            self.table.setItem(i, 0, item)
+            item.sT..(f)
+            table.setItem(i, 0, item)
             item = QTableWidgetItem()
             item.setFlags(Qt.ItemIsEnabled | Qt.ItemIsSelectable)
-            item.setText(str(os.stat(os.path.join(path, f)).st_size) + ' bytes' )
-            self.table.setItem(i, 1, item)
+            item.sT..(st.(os.stat(os.path.join(path, f)).st_size) + ' bytes' )
+            table.setItem(i, 1, item)
 
 
-if __name__ == '__main__':
-    app = QApplication([])
+__ __name__ __ '__main__':
+    app = ?A..([])
     w = simpleWindow()
-    w.show()
+    w.s..
     app.exec_()

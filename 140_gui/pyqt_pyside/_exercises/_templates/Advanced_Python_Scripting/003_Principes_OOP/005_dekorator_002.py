@@ -1,25 +1,25 @@
-def decorator(f):
-    def wrapper():
+___ decorator(f
+    ___ wrapper(
         print('before')
         f()
         print('after')
     return wrapper
 
 @decorator
-def f1():
+___ f1(
     print('function')
 
 f1()
 
-def decorator(f):
-    def wrapper(arg):
+___ decorator(f
+    ___ wrapper(arg
         print('before')
         f(arg)
         print('after')
     return wrapper
 
 @decorator
-def f1(x):
+___ f1(x
     print('function', x)
 
 print()

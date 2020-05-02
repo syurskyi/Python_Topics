@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <c_>MainWindow</c_>
+ <widget c_="QMainWindow" name="MainWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -13,24 +13,24 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget">
-   <layout class="QHBoxLayout" name="horizontalLayout_2">
+  <widget c_="QWidget" name="centralwidget">
+   <layout c_="QHBoxLayout" name="horizontalLayout_2">
     <property name="spacing">
      <number>0</number>
     </property>
     <item>
-     <layout class="QVBoxLayout" name="verticalLayout">
+     <layout c_="QVBoxLayout" name="verticalLayout">
       <item>
-       <layout class="QHBoxLayout" name="horizontalLayout">
+       <layout c_="QHBoxLayout" name="horizontalLayout">
         <item>
-         <widget class="QPushButton" name="fill_btn">
+         <widget c_="QPushButton" name="fill_btn">
           <property name="text">
            <string>Fill</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="clear_btn">
+         <widget c_="QPushButton" name="clear_btn">
           <property name="minimumSize">
            <size>
             <width>40</width>
@@ -43,7 +43,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="image_lb">
+         <widget c_="QLabel" name="image_lb">
           <property name="text">
            <string>TextLabel</string>
           </property>
@@ -65,15 +65,15 @@
        </layout>
       </item>
       <item>
-       <widget class="QComboBox" name="combo_cbb"/>
+       <widget c_="QComboBox" name="combo_cbb"/>
       </item>
       <item>
-       <widget class="QListWidget" name="list_lwd"/>
+       <widget c_="QListWidget" name="list_lwd"/>
       </item>
      </layout>
     </item>
     <item>
-     <widget class="QLabel" name="label">
+     <widget c_="QLabel" name="label">
       <property name="text">
        <string/>
       </property>
@@ -81,8 +81,8 @@
     </item>
    </layout>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
-  <widget class="QToolBar" name="toolBar">
+  <widget c_="QStatusBar" name="statusbar"/>
+  <widget c_="QToolBar" name="toolBar">
    <property name="windowTitle">
     <string>toolBar</string>
    </property>
@@ -95,7 +95,7 @@
    <addaction name="fill_act"/>
    <addaction name="clear_act"/>
   </widget>
-  <widget class="QMenuBar" name="menuBar">
+  <widget c_="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -104,7 +104,7 @@
      <height>21</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuFile">
+   <widget c_="QMenu" name="menuFile">
     <property name="title">
      <string>File</string>
     </property>

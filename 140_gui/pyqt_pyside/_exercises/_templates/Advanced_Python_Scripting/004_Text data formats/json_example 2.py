@@ -1,4 +1,4 @@
-import json
+_____ json
 
 a = 123
 a = [1,2,'value','name']
@@ -12,16 +12,16 @@ b = json.load(open(filePath, 'r'))
 
 
 
-class serializer(json.JSONEncoder):
-    def default(self, obj):
-        if isinstance(obj, myClass):
+c_ serializer(json.JSONEncoder
+    ___ default , obj
+        __ isinstance(obj, myClass
             return {obj.name:obj.x}
-        return json.JSONEncoder.default(self, obj)
+        return json.JSONEncoder.default , obj)
 
-class myClass():
-    def __init__(self):
-        self.name = 'someName'
-        self.x = 100
+c_ myClass(
+    ___  -
+        name = 'someName'
+        x = 100
 
 
 a = myClass()

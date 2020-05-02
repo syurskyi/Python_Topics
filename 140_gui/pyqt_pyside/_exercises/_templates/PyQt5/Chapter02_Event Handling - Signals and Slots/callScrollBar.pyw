@@ -1,35 +1,35 @@
-import sys
+_____ ___
 
-from PyQt5.QtWidgets import QDialog, QApplication
+____ ?.?W.. _____ ?D.., ?A..
 
-from demoScrollBar import *
+____ demoScrollBar _____ *
 
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.ui.horizontalScrollBarSugarLevel.valueChanged.connect(self.scrollhorizontal)
-        self.ui.verticalScrollBarPulseRate.valueChanged.connect(self.scrollvertical)
-        self.ui.horizontalSliderBloodPressure.valueChanged.connect(self.sliderhorizontal)
-        self.ui.verticalSliderCholestrolLevel.valueChanged.connect(self.slidervertical)
-        self.show()
+c_ MyForm(?D..
+    ___  -
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        ui.horizontalScrollBarSugarLevel.valueChanged.c..(scrollhorizontal)
+        ui.verticalScrollBarPulseRate.valueChanged.c..(scrollvertical)
+        ui.horizontalSliderBloodPressure.valueChanged.c..(sliderhorizontal)
+        ui.verticalSliderCholestrolLevel.valueChanged.c..(slidervertical)
+        s..
 
-    def scrollhorizontal(self,value):    
-        self.ui.lineEditResult.setText("Sugar Level : "+str(value))
+    ___ scrollhorizontal ,value
+        ui.lineEditResult.sT..("Sugar Level : "+st.(value))
 
-    def scrollvertical(self, value):    
-        self.ui.lineEditResult.setText("Pulse Rate : "+str(value))
+    ___ scrollvertical , value
+        ui.lineEditResult.sT..("Pulse Rate : "+st.(value))
 
-    def sliderhorizontal(self, value):    
-        self.ui.lineEditResult.setText("Blood Pressure : "+str(value))
+    ___ sliderhorizontal , value
+        ui.lineEditResult.sT..("Blood Pressure : "+st.(value))
         
-    def slidervertical(self, value):    
-        self.ui.lineEditResult.setText("Cholestrol Level : "+str(value))
+    ___ slidervertical , value
+        ui.lineEditResult.sT..("Cholestrol Level : "+st.(value))
       
 
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())

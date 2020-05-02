@@ -3,7 +3,7 @@ border styles: dashed | dot-dash | dot-dot-dash | dotted | double | groove | ins
 */
 
 /* Set the selection colors for all widgets. */
-QWidget
+?W..
 {
 	color: #111111;
 	border: 0px solid #737373;
@@ -245,7 +245,7 @@ QMenu::separator
 QMenu::item
 {
 	/* sets background of menu item. set this to something non-transparent
-	if you want menu color and menu item color to be different */
+	__ you want menu color and menu item color to be different */
 	background-color: transparent;
 }
 
@@ -293,7 +293,7 @@ QMenuBar::item:pressed
 	border:	1px solid #222222;
 }
 
-QPushButton
+?PB..
 {
     color: #0b0b0b;
     border: 1px solid #353535;
@@ -304,13 +304,13 @@ QPushButton
 }
 
 /* all types of push button */
-QPushButton:hover
+?PB..:hover
 {
 	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #565656, stop:1 #464646);
 	color: #ffffff;
 }
 
-QPushButton:pressed
+?PB..:pressed
 {
 	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #565656, stop:1 #464646);
 	color: #e5e5e5;

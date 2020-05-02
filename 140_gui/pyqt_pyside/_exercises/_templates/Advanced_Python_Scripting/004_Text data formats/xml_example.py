@@ -1,17 +1,17 @@
-import xml.etree.ElementTree as ET
+_____ xml.etree.ElementTree as ET
 
 path = '/Users/sergejyurskyj/.nuke/example/PYTHON_EXAMPLE/Python_Example_All_Tutorials/VIDEO/Advanced Python Scripting/' \
     '004_Text data formats/example5.xml'
 
 tree = ET.parse(path)
 root = tree.getroot()
-for elem in root.getchildren():
+for elem in root.getchildren(
     print(elem.tag)
     print(elem.attrib)
     print(elem.text)
 
-def readXml(root, ind=''):
-    for elem in root.getchildren():
+___ readXml(root, ind=''
+    for elem in root.getchildren(
         print(ind, elem.tag)
         readXml(elem, ind+'  ')
 
@@ -26,7 +26,7 @@ elem2.text = 'SOME TEXT'
 tree = ET.ElementTree(root)
 tree.write(path)
 
-from xml.dom import minidom
+____ xml.dom _____ minidom
 xml = minidom.parseString(ET.tostring(tree.getroot())).toprettyxml()
 
 with open('/Users/sergejyurskyj/.nuke/example/PYTHON_EXAMPLE/Python_Example_All_Tutorials/VIDEO/Advanced Python Scripting/' \

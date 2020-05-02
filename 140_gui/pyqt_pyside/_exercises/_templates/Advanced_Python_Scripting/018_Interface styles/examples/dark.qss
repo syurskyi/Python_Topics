@@ -27,7 +27,7 @@ QToolTip
     opacity: 200;
 }
 
-QWidget
+?W..
 {
     color: silver;
     background-color: #302F2F;
@@ -35,14 +35,14 @@ QWidget
     selection-color: black;
 }
 
-QWidget:item:hover
+?W..:item:hover
 {
     background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1,
     stop: 0 #78879b, stop: 1 #78879b);
     color: black;
 }
 
-QWidget:item:selected
+?W..:item:selected
 {
     background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1,
     stop: 0 #78879b, stop: 1 #78879b);
@@ -91,7 +91,7 @@ QMenu::item:selected
     color: black;
 }
 
-QWidget:disabled
+?W..:disabled
 {
     color: #404040;
     background-color: #302F2F;
@@ -106,7 +106,7 @@ QAbstractItemView
     padding: 1px;
 }
 
-QWidget:focus, QMenuBar:focus
+?W..:focus, QMenuBar:focus
 {
     border: 1px solid rgba(48, 86, 111);
 }
@@ -426,7 +426,7 @@ QToolBar::separator:vertical {
     image: url(:/qss_icons/rc/Vsepartoolbars.png);
 }
 
-QPushButton
+?PB..
 {
     color: silver;
     background-color: QLinearGradient( x1: 0, y1: 1, x2: 0, y2: 0,
@@ -441,7 +441,7 @@ QPushButton
     border-radius: 5px;
 }
 
-QPushButton:disabled
+?PB..:disabled
 {
     background-color: QLinearGradient( x1: 0, y1: 1, x2: 0, y2: 0,
     stop: 0 #302F2F, stop: 1 #484846);
@@ -466,7 +466,7 @@ QComboBox
     padding: 2px;
 }
 
-QComboBox:hover,QPushButton:hover,QAbstractSpinBox:hover,QLineEdit:hover,QTextEdit:hover,QPlainTextEdit:hover,QAbstractView:hover,QTreeView:hover
+QComboBox:hover,?PB..:hover,QAbstractSpinBox:hover,QLineEdit:hover,QTextEdit:hover,QPlainTextEdit:hover,QAbstractView:hover,QTreeView:hover
 {
     border: 1px solid #78879b;
     color: silver;
@@ -513,7 +513,7 @@ QComboBox::down-arrow:focus
     image: url(:/qss_icons/rc/down_arrow.png);
 }
 
-QPushButton:pressed
+?PB..:pressed
 {
     background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1,
     stop: 0 #302F2F, stop: 1 #484846);

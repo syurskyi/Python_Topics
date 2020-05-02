@@ -1,87 +1,87 @@
-import sys
-import os
-from PySide.QtCore import *
-from PySide.QtGui import *
+_____ ___
+_____ os
+____ PySide.?C.. _____ *
+____ PySide.QtGui _____ *
 
 icon = os.path.join(os.path.dirname(__file__), 'drag.png')
 
-class listWidgetClass(QListWidget):
-    def __init__(self):
-        super(listWidgetClass, self).__init__()
-        self.setWindowFlags(Qt.WindowStaysOnTopHint)
-        self.setDragDropMode(QAbstractItemView.DragDrop)
-        self.setSelectionMode(QAbstractItemView.ExtendedSelection)
-        self.files = []
+c_ listWidgetClass(QListWidget
+    ___  -
+        super(listWidgetClass, self). - ()
+        setWindowFlags(Qt.WindowStaysOnTopHint)
+        setDragDropMode(QAbstractItemView.DragDrop)
+        setSelectionMode(QAbstractItemView.ExtendedSelection)
+        files = []
 
-    def dropEvent(self, event):
+    ___ dropEvent , event
         # print 'DROP', type(event)
         mimedata = event.mimeData()
-        if mimedata.hasUrls():
-            for f in mimedata.urls():
-                self.addFile(f.toLocalFile())
+        __ mimedata.hasUrls(
+            for f in mimedata.urls(
+                addFile(f.toLocalFile())
 
-    def dragEnterEvent(self, event):
-        if event.source() is self:
+    ___ dragEnterEvent , event
+        __ event.source() is self:
             event.ignore()
         else:
             mimedata = event.mimeData()
-            if mimedata.hasUrls():
+            __ mimedata.hasUrls(
                 event.accept()
             else:
                 event.ignore()
 
-    def dragMoveEvent(self, event):
-        if event.source() is self:
+    ___ dragMoveEvent , event
+        __ event.source() is self:
             event.ignore()
         else:
             mimedata = event.mimeData()
-            if mimedata.hasUrls():
+            __ mimedata.hasUrls(
                 event.accept()
             else:
                 event.ignore()
 
-    def startDrag(self, dropAction):
-        drag = QDrag(self)
+    ___ startDrag , dropAction
+        drag = QDrag
         mimedata = QMimeData()
         url = []
-        for i in self.selectedItems():
+        for i in selectedItems(
             url.append(i.data(Qt.UserRole))
         mimedata.setUrls([QUrl.fromLocalFile(x) for x in url])
         drag.setMimeData(mimedata)
         pix = QPixmap(icon)
         drag.setPixmap(pix)
         r = drag.exec_()
-        if r == Qt.DropAction.MoveAction:
-            self.deleteSelected()
+        __ r __ Qt.DropAction.MoveAction:
+            deleteSelected()
 
-    def addFile(self, path):
-        if not path in self.files:
-            item = QListWidgetItem(self)
-            item.setText(os.path.basename(path))
+    ___ addFile , path
+        __ not path in files:
+            item = QListWidgetItem
+            item.sT..(os.path.basename(path))
             item.setData(Qt.UserRole, path)
-            self.files.append(path)
+            files.append(path)
 
-    def deleteSelected(self):
-        for s in self.selectedItems():
-            self.files.remove(s.data(32))
-            self.takeItem(self.indexFromItem(s).row())
+    ___ deleteSelected
+        for s in selectedItems(
+            files.remove(s.data(32))
+            takeItem(indexFromItem(s).row())
 
-    def mousePressEvent(self, event):
-        if event.button() == Qt.MouseButton.RightButton:
+    ___ mousePressEvent , event
+        __ event.button() __ Qt.MouseButton.RightButton:
             pass
-        elif event.button() == Qt.MouseButton.LeftButton:
-            self.setDragDropMode(QAbstractItemView.NoDragDrop)
+        elif event.button() __ Qt.MouseButton.LeftButton:
+            setDragDropMode(QAbstractItemView.NoDragDrop)
             super(listWidgetClass, self).mousePressEvent(event)
         else:
-            self.setDragDropMode(QAbstractItemView.DragDrop)
+            setDragDropMode(QAbstractItemView.DragDrop)
             super(listWidgetClass, self).mousePressEvent(event)
 
-    def mouseReleaseEvent(self, event):
-        self.setDragDropMode(QAbstractItemView.DragDrop)
+    ___ mouseReleaseEvent , event
+        setDragDropMode(QAbstractItemView.DragDrop)
         super(listWidgetClass, self).mouseReleaseEvent(event)
 
-if __name__ == '__main__':
-    app = QApplication([])
+__ __name__ __ '__main__':
+    app = ?A..([])
     w = listWidgetClass()
-    w.show()
+    w.s..
     app.exec_()

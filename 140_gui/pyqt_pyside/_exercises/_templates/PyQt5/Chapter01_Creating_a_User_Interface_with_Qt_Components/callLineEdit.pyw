@@ -1,22 +1,22 @@
-import sys
+_____ ___
 
-from PyQt5.QtWidgets import QDialog, QApplication
+____ ?.?W.. _____ ?D.., ?A..
 
-from demoLineEdit import *
+____ demoLineEdit _____ *
 
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.ui.ButtonClickMe.clicked.connect(self.dispmessage)
-        self.show()
+c_ MyForm(?D..
+    ___  -
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        ui.ButtonClickMe.clicked.c..(dispmessage)
+        s..
 
-    def dispmessage(self):
-        self.ui.labelResponse.setText("Hello "+self.ui.lineEditName.text())
+    ___ dispmessage
+        ui.labelResponse.sT..("Hello "+ui.lineEditName.text())
 
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())

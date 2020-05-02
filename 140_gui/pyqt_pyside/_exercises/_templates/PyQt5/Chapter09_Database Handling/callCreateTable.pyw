@@ -1,45 +1,45 @@
-import sqlite3, sys
-from PyQt5.QtWidgets import QDialog, QApplication
-from sqlite3 import Error
+_____ sqlite3, ___
+____ ?.?W.. _____ ?D.., ?A..
+____ sqlite3 _____ Error
 
-from demoCreateTable import *
+____ demoCreateTable _____ *
 
 tabledefinition=""
-class MyForm(QDialog):
+c_ MyForm(?D..
 
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.ui.pushButtonCreateTable.clicked.connect(self.createTable)
-        self.ui.pushButtonAddColumn.clicked.connect(self.addColumns)
-        self.show()
+    ___  -
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        ui.pushButtonCreateTable.clicked.c..(createTable)
+        ui.pushButtonAddColumn.clicked.c..(addColumns)
+        s..
 
-    def addColumns(self):
+    ___ addColumns
         global tabledefinition         
-        if tabledefinition=="":           
-            tabledefinition="CREATE TABLE IF NOT EXISTS "+ self.ui.lineEditTableName.text()+"("+self.ui.lineEditColumnName.text()+" "+self.ui.comboBoxDataType.itemText(self.ui.comboBoxDataType.currentIndex())
+        __ tabledefinition__"":
+            tabledefinition="CREATE TABLE IF NOT EXISTS "+ ui.lineEditTableName.text()+"("+ui.lineEditColumnName.text()+" "+ui.comboBoxDataType.itemText(ui.comboBoxDataType.currentIndex())
         else:
-            tabledefinition+=", "+self.ui.lineEditColumnName.text()+" "+self.ui.comboBoxDataType.itemText(self.ui.comboBoxDataType.currentIndex())
-        self.ui.lineEditColumnName.setText("")
-        self.ui.lineEditColumnName.setFocus()
+            tabledefinition+=", "+ui.lineEditColumnName.text()+" "+ui.comboBoxDataType.itemText(ui.comboBoxDataType.currentIndex())
+        ui.lineEditColumnName.sT..("")
+        ui.lineEditColumnName.setFocus()
 
-    def createTable(self):
+    ___ createTable
         global tabledefinition 
         try:
-            conn = sqlite3.connect(self.ui.lineEditDBName.text()+".db")
-            self.ui.labelResponse.setText("Database is connected")
+            conn = sqlite3.c..(ui.lineEditDBName.text()+".db")
+            ui.labelResponse.sT..("Database is connected")
             c = conn.cursor()
             tabledefinition+=");"
             c.execute(tabledefinition)
-            self.ui.labelResponse.setText("Table is successfully created")
+            ui.labelResponse.sT..("Table is successfully created")
         except Error as e:
-            self.ui.labelResponse.setText("Error in creating table")
+            ui.labelResponse.sT..("Error in creating table")
         finally:
             conn.close()
 
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())

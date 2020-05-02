@@ -1,30 +1,30 @@
-import sys
+_____ ___
 
-from PyQt5.QtWidgets import QDialog, QApplication
-from googlemaps.client import Client
-from googlemaps.distance_matrix import distance_matrix
+____ ?.?W.. _____ ?D.., ?A..
+____ googlemaps.client _____ Client
+____ googlemaps.distance_matrix _____ distance_matrix
 
-from demoGoogleMap3 import *
+____ demoGoogleMap3 _____ *
 
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.ui.pushButtonFindDistance.clicked.connect(self.displayDistance)
-        self.show()
+c_ MyForm(?D..
+    ___  -  
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        ui.pushButtonFindDistance.clicked.c..(displayDistance)
+        s..
    
-    def displayDistance(self):
+    ___ displayDistance 
         api_key = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
         gmaps = Client(api_key)
-        data = distance_matrix(gmaps, self.ui.lineEditFirstLocation.text(), self.ui.lineEditSecondLocation.text())
+        data = distance_matrix(gmaps, ui.lineEditFirstLocation.text(), ui.lineEditSecondLocation.text())
         distance = data['rows'][0]['elements'][0]['distance']['text']
-        self.ui.labelDistance.setText("Distance between "+self.ui.lineEditFirstLocation.text()+" and "+self.ui.lineEditSecondLocation.text()+" is "+str(distance))
+        ui.labelDistance.sT..("Distance between "+ui.lineEditFirstLocation.text()+" and "+ui.lineEditSecondLocation.text()+" is "+st.(distance))
           
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())
 
 

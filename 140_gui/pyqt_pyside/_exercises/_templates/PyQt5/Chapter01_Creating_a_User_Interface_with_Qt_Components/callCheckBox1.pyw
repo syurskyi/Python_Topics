@@ -1,33 +1,33 @@
-import sys
-
-from PyQt5.QtWidgets import QDialog
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton
-from PyQt5.QtCore import pyqtSlot
-from demoCheckBox1 import *
-
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.ui.checkBoxCheese.stateChanged.connect(self.dispAmount)
-        self.ui.checkBoxOlives.stateChanged.connect(self.dispAmount)
-        self.ui.checkBoxSausages.stateChanged.connect(self.dispAmount)
-        self.show()
-
-    @pyqtSlot()
-    def dispAmount(self):
-        amount=10
-        if self.ui.checkBoxCheese.isChecked()==True:
-            amount=amount+1
-        if self.ui.checkBoxOlives.isChecked()==True:
-            amount=amount+1
-        if self.ui.checkBoxSausages.isChecked()==True:
-            amount=amount+2
-        self.ui.labelAmount.setText("Total amount for pizza is "+str(amount))
-
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
-    w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+# _____ ___
+#
+# ____ ?.?W.. _____ ?D..
+# ____ ?.?W.. _____ ?A.., ?W.., ?PB..
+# ____ ?.?C.. _____ py_S..
+# ____ demoCheckBox1 _____ _
+#
+# c_ MyForm ?D..
+#     ___  -
+#         s__. -
+#         ui _ Ui_Dialog
+#         ?.setupUi
+#         ?.cBC__.sC__.c.. ?
+#         ?.cBO__.sC__.c.. ?
+#         ?.cBS__.sC__.c.. ?
+#         s..
+#
+#     @py_S..
+#     ___ dispAmount
+#         amount_10
+#         __ ?.chBC__.iC..__T..
+#             amount_amount+1
+#         __ ?.cBO__.iC..__T..
+#             amount_amount+1
+#         __ ?.cBS__.iC..__T..
+#             amount_amount+2
+#         ?.lA__.sT..("Total amount for pizza is "+st. ?
+#
+# __ __name____"__main__":
+#     app _ ?A..
+#     w _ =?)
+#     ?.s..
+#     ___.e.. ?.e..

@@ -1,24 +1,24 @@
-import sys
+_____ ___
 
-from PyQt5.QtWidgets import QDialog, QApplication
+____ ?.?W.. _____ ?D.., ?A..
 
-from demoCalendar import *
+____ demoCalendar _____ *
 
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.ui.calendarWidget.selectionChanged.connect(self.dispdate)
-        self.show()
+c_ MyForm(?D..
+    ___  -  
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        ui.calendarWidget.selectionChanged.c..(dispdate)
+        s..
 
-    def dispdate(self):
-        self.ui.dateEdit.setDisplayFormat('MMM d yyyy')
-        self.ui.dateEdit.setDate(self.ui.calendarWidget.selectedDate())
+    ___ dispdate 
+        ui.dateEdit.setDisplayFormat('MMM d yyyy')
+        ui.dateEdit.setDate(ui.calendarWidget.selectedDate())
 
 
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())

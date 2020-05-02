@@ -7,75 +7,75 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt4 import QtCore, QtGui
+____ PyQt4 _____ ?C.., QtGui
 
 try:
-    _fromUtf8 = QtCore.QString.fromUtf8
+    _fromUtf8 = ?C...QString.fromUtf8
 except AttributeError:
-    def _fromUtf8(s):
+    ___ _fromUtf8(s
         return s
 
 try:
-    _encoding = QtGui.QApplication.UnicodeUTF8
-    def _translate(context, text, disambig):
-        return QtGui.QApplication.translate(context, text, disambig, _encoding)
+    _encoding = QtGui.?A...UnicodeUTF8
+    ___ _translate(context, text, disambig
+        return QtGui.?A...translate(context, text, disambig, _encoding)
 except AttributeError:
-    def _translate(context, text, disambig):
-        return QtGui.QApplication.translate(context, text, disambig)
+    ___ _translate(context, text, disambig
+        return QtGui.?A...translate(context, text, disambig)
 
-class Ui_templateEditor(object):
-    def setupUi(self, templateEditor):
+c_ Ui_templateEditor(object
+    ___ setupUi , templateEditor
         templateEditor.setObjectName(_fromUtf8("templateEditor"))
         templateEditor.resize(357, 461)
-        self.verticalLayout = QtGui.QVBoxLayout(templateEditor)
-        self.verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
-        self.horizontalLayout_2 = QtGui.QHBoxLayout()
-        self.horizontalLayout_2.setObjectName(_fromUtf8("horizontalLayout_2"))
-        self.add_btn = QtGui.QPushButton(templateEditor)
-        self.add_btn.setMinimumSize(QtCore.QSize(30, 30))
-        self.add_btn.setMaximumSize(QtCore.QSize(30, 30))
+        verticalLayout = QtGui.QVBoxLayout(templateEditor)
+        verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
+        horizontalLayout_2 = QtGui.QHBoxLayout()
+        horizontalLayout_2.setObjectName(_fromUtf8("horizontalLayout_2"))
+        add_btn = QtGui.?PB..(templateEditor)
+        add_btn.setMinimumSize(?C...QSize(30, 30))
+        add_btn.setMaximumSize(?C...QSize(30, 30))
         font = QtGui.QFont()
         font.setPointSize(16)
-        font.setBold(True)
+        font.setBold(T..)
         font.setWeight(75)
-        self.add_btn.setFont(font)
-        self.add_btn.setObjectName(_fromUtf8("add_btn"))
-        self.horizontalLayout_2.addWidget(self.add_btn)
-        self.remove_btn = QtGui.QPushButton(templateEditor)
-        self.remove_btn.setMinimumSize(QtCore.QSize(30, 30))
-        self.remove_btn.setMaximumSize(QtCore.QSize(30, 30))
+        add_btn.setFont(font)
+        add_btn.setObjectName(_fromUtf8("add_btn"))
+        horizontalLayout_2.addWidget(add_btn)
+        remove_btn = QtGui.?PB..(templateEditor)
+        remove_btn.setMinimumSize(?C...QSize(30, 30))
+        remove_btn.setMaximumSize(?C...QSize(30, 30))
         font = QtGui.QFont()
         font.setPointSize(16)
-        font.setBold(True)
+        font.setBold(T..)
         font.setWeight(75)
-        self.remove_btn.setFont(font)
-        self.remove_btn.setObjectName(_fromUtf8("remove_btn"))
-        self.horizontalLayout_2.addWidget(self.remove_btn)
+        remove_btn.setFont(font)
+        remove_btn.setObjectName(_fromUtf8("remove_btn"))
+        horizontalLayout_2.addWidget(remove_btn)
         spacerItem = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-        self.horizontalLayout_2.addItem(spacerItem)
-        self.verticalLayout.addLayout(self.horizontalLayout_2)
-        self.tree = QtGui.QTreeWidget(templateEditor)
-        self.tree.setObjectName(_fromUtf8("tree"))
-        self.tree.headerItem().setText(0, _fromUtf8("1"))
-        self.tree.header().setVisible(False)
-        self.verticalLayout.addWidget(self.tree)
-        self.horizontalLayout = QtGui.QHBoxLayout()
-        self.horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
-        self.save_btn = QtGui.QPushButton(templateEditor)
-        self.save_btn.setObjectName(_fromUtf8("save_btn"))
-        self.horizontalLayout.addWidget(self.save_btn)
-        self.close_btn = QtGui.QPushButton(templateEditor)
-        self.close_btn.setObjectName(_fromUtf8("close_btn"))
-        self.horizontalLayout.addWidget(self.close_btn)
-        self.verticalLayout.addLayout(self.horizontalLayout)
+        horizontalLayout_2.addItem(spacerItem)
+        verticalLayout.addLayout(horizontalLayout_2)
+        tree = QtGui.QTreeWidget(templateEditor)
+        tree.setObjectName(_fromUtf8("tree"))
+        tree.headerItem().sT..(0, _fromUtf8("1"))
+        tree.header().setVisible(False)
+        verticalLayout.addWidget(tree)
+        horizontalLayout = QtGui.QHBoxLayout()
+        horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
+        save_btn = QtGui.?PB..(templateEditor)
+        save_btn.setObjectName(_fromUtf8("save_btn"))
+        horizontalLayout.addWidget(save_btn)
+        close_btn = QtGui.?PB..(templateEditor)
+        close_btn.setObjectName(_fromUtf8("close_btn"))
+        horizontalLayout.addWidget(close_btn)
+        verticalLayout.addLayout(horizontalLayout)
 
-        self.retranslateUi(templateEditor)
-        QtCore.QMetaObject.connectSlotsByName(templateEditor)
+        retranslateUi(templateEditor)
+        ?C...QMetaObject.connectSlotsByName(templateEditor)
 
-    def retranslateUi(self, templateEditor):
+    ___ retranslateUi , templateEditor
         templateEditor.setWindowTitle(_translate("templateEditor", "Form", None))
-        self.add_btn.setText(_translate("templateEditor", "+", None))
-        self.remove_btn.setText(_translate("templateEditor", "-", None))
-        self.save_btn.setText(_translate("templateEditor", "Save", None))
-        self.close_btn.setText(_translate("templateEditor", "Close", None))
+        add_btn.sT..(_translate("templateEditor", "+", None))
+        remove_btn.sT..(_translate("templateEditor", "-", None))
+        save_btn.sT..(_translate("templateEditor", "Save", None))
+        close_btn.sT..(_translate("templateEditor", "Close", None))
 

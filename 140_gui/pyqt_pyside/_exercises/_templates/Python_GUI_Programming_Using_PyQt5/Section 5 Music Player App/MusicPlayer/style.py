@@ -1,4 +1,4 @@
-def groupboxStyle():
+___ groupboxStyle(
     return """
         QGroupBox {
         background-color:#fcc324;
@@ -10,7 +10,7 @@ def groupboxStyle():
 
     """
 
-def progressBarStyle():
+___ progressBarStyle(
     return """
         QProgressBar {
         border: 1px solid #bbb;
@@ -21,7 +21,7 @@ def progressBarStyle():
         }
     """
 
-def playListStyle():
+___ playListStyle(
     return """
         QListWidget{
         background-color:#fff;

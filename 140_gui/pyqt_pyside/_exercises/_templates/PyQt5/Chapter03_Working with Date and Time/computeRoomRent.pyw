@@ -1,43 +1,43 @@
-import sys
+_____ ___
 
-from PyQt5.QtWidgets import QDialog, QApplication
+____ ?.?W.. _____ ?D.., ?A..
 
-from reservehotel import *
+____ reservehotel _____ *
 
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.roomtypes=['Suite', 'Super Luxury', 'Super Deluxe', 'Ordinary']
-        self.addcontent()     
-        self.ui.pushButton.clicked.connect(self.computeRoomRent) 
-        self.show()
+c_ MyForm(?D..
+    ___  -  
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        roomtypes=['Suite', 'Super Luxury', 'Super Deluxe', 'Ordinary']
+        addcontent()     
+        ui.pushButton.clicked.c..(computeRoomRent) 
+        s..
 
-    def addcontent(self):
-        for i in self.roomtypes:
-          self.ui.comboBox.addItem(i)
+    ___ addcontent 
+        for i in roomtypes:
+          ui.comboBox.addItem(i)
      
-    def computeRoomRent(self):
-        dateselected=self.ui.calendarWidget.selectedDate()
-        dateinstring=str(dateselected.toPyDate())
-        noOfDays=self.ui.spinBox.value()
-        chosenRoomType=self.ui.comboBox.itemText(self.ui.comboBox.currentIndex())
-        self.ui.Enteredinfo.setText('Date of reservation: '+dateinstring+ ', Number of days: '+ str(noOfDays) + ' \nand Room type selected: '+ chosenRoomType)
+    ___ computeRoomRent 
+        dateselected=ui.calendarWidget.selectedDate()
+        dateinstring=st.(dateselected.toPyDate())
+        noOfDays=ui.spinBox.value()
+        chosenRoomType=ui.comboBox.itemText(ui.comboBox.currentIndex())
+        ui.Enteredinfo.sT..('Date of reservation: '+dateinstring+ ', Number of days: '+ st.(noOfDays) + ' \nand Room type selected: '+ chosenRoomType)
         roomRent=0
-        if chosenRoomType=="Suite":
+        __ chosenRoomType__"Suite":
           roomRent=40
-        if chosenRoomType=="Super Luxury":
+        __ chosenRoomType__"Super Luxury":
           roomRent=30
-        if chosenRoomType=="Super Deluxe":
+        __ chosenRoomType__"Super Deluxe":
           roomRent=20
-        if chosenRoomType=="Ordinary":
+        __ chosenRoomType__"Ordinary":
           roomRent=10
         total=roomRent*noOfDays
-        self.ui.RoomRentinfo.setText('Room Rent for single day for '+ chosenRoomType +' type is '+ str(roomRent)+ '$. \nTotal room rent is '+ str(total)+ '$')  
+        ui.RoomRentinfo.sT..('Room Rent for single day for '+ chosenRoomType +' type is '+ st.(roomRent)+ '$. \nTotal room rent is '+ st.(total)+ '$')
  
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())

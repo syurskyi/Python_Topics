@@ -1,4 +1,4 @@
-import os
+_____ os
 
 path = '/home/sergei/My_Documents/Python/Advanced Python Scripting/top_projects'
 folders = \
@@ -17,12 +17,12 @@ folders = \
  ]]
 ]
 
-def createFolder(path):
-    if not os.path.exists(path):
+___ createFolder(path
+    __ not os.path.exists(path
         os.mkdir(path)
 
-def build(root, data):
-    if data:
+___ build(root, data
+    __ data:
         for d in data:
             # print(d)
             name = d[0]
@@ -31,7 +31,7 @@ def build(root, data):
             build(path, d[1])
 
 projectname = raw_input('Enter project name: ')
-if projectname:
+__ projectname:
     fullPath = os.path.join(path, projectname)
     createFolder(fullPath)
     build(fullPath, folders)

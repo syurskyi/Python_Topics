@@ -1,41 +1,41 @@
-from PySide.QtGui import *
-import os
+____ PySide.QtGui _____ *
+_____ os
 path = os.path.dirname(__file__)
 
-class simpleWindow(QWidget):
-    def __init__(self):
-        super(simpleWindow, self).__init__()
+c_ simpleWindow(?W..
+    ___  -  
+        super(simpleWindow, self). - ()
         ly = QHBoxLayout()
-        self.setLayout(ly)
-        self.list = QListWidget()
-        ly.addWidget(self.list)
-        self.textBrowser = QTextBrowser()
-        ly.addWidget(self.textBrowser)
+        setLayout(ly)
+        list = QListWidget()
+        ly.addWidget(list)
+        textBrowser = QTextBrowser()
+        ly.addWidget(textBrowser)
         # connect
-        self.list.itemClicked.connect(self.updateText)
-        self.list.itemDoubleClicked.connect(self.openFile)
+        list.itemClicked.c..(updateText)
+        list.itemDoubleClicked.c..(openFile)
         # start
-        self.resize(500,400)
-        self.fillList()
+        resize(500,400)
+        fillList()
 
-    def fullPath(self, item):
+    ___ fullPath , item
         return os.path.join(path,item.text())
 
-    def fillList(self):
-        for f in os.listdir(path):
-            self.list.addItem(f)
+    ___ fillList 
+        for f in os.listdir(path
+            list.addItem(f)
 
-    def updateText(self, item):
-        text =open(self.fullPath(item)).read()
-        self.textBrowser.setText(text)
+    ___ updateText , item
+        text =open(fullPath(item)).read()
+        textBrowser.sT..(text)
 
-    def openFile(self, item):
-        path = self.fullPath(item)
+    ___ openFile , item
+        path = fullPath(item)
         os.system(path)
 
 
-if __name__ == '__main__':
-    app = QApplication([])
+__ __name__ __ '__main__':
+    app = ?A..([])
     w = simpleWindow()
-    w.show()
+    w.s..
     app.exec_()

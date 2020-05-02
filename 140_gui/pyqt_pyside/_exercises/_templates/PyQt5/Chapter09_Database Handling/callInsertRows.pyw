@@ -1,34 +1,34 @@
-import sqlite3, sys
-from PyQt5.QtWidgets import QDialog, QApplication
-from sqlite3 import Error
+_____ sqlite3, ___
+____ ?.?W.. _____ ?D.., ?A..
+____ sqlite3 _____ Error
 
-from demoInsertRowsInTable import *
+____ demoInsertRowsInTable _____ *
 
-class MyForm(QDialog):
+c_ MyForm(?D..
 
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.ui.pushButtonInsertRow.clicked.connect(self.InsertRows)
-        self.show()
+    ___  -
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        ui.pushButtonInsertRow.clicked.c..(InsertRows)
+        s..
 
-    def InsertRows(self):
-        sqlStatement="INSERT INTO "+self.ui.lineEditTableName.text()+" VALUES('"+self.ui.lineEditEmailAddress.text()+"', '"+self.ui.lineEditPassword.text()+"')"
+    ___ InsertRows
+        sqlStatement="INSERT INTO "+ui.lineEditTableName.text()+" VALUES('"+ui.lineEditEmailAddress.text()+"', '"+ui.lineEditPassword.text()+"')"
         try:
-            conn = sqlite3.connect(self.ui.lineEditDBName.text()+".db")
+            conn = sqlite3.c..(ui.lineEditDBName.text()+".db")
             with conn:
                 cur = conn.cursor()
                 cur.execute(sqlStatement)
                 conn.commit()
-            self.ui.labelResponse.setText("Row successfully inserted")
+            ui.labelResponse.sT..("Row successfully inserted")
         except Error as e:
-            self.ui.labelResponse.setText("Error in inserting row")
+            ui.labelResponse.sT..("Error in inserting row")
         finally:
             conn.close()
 
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())

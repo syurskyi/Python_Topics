@@ -1,4 +1,4 @@
-Sam klass QDialog ynasledovan ot klassa Widgeta.
+Sam klass ?D.. ynasledovan ot klassa Widgeta.
 A znachit y nego est'  metod show. No on y nas prosto otkroet okno.
 To est'  programma prodolzet dal'she dejstvovat', kak esli bu mu otkruli dochernee okno.
 Shtobu dialog zarabotal kak dialog y nas est' fynkcija exec. No shto bu eta fynkcija sto to vernyla

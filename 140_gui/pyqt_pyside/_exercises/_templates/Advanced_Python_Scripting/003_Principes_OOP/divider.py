@@ -1,18 +1,18 @@
-class dividerClass(object):
-    def __init__(self):
-        self.__div = 1
+c_ dividerClass(object
+    ___  -  
+        __div = 1
 
-    def divide(self, value):
-        return value / self.__div
+    ___ divide , value
+        return value / __div
 
-    def setDivider(self, val):
-        if self.__checkValue(val):
-            self.__div = val
+    ___ setDivider , val
+        __ __checkValue(val
+            __div = val
         else:
             print 'Wrong value'
 
-    def __checkValue(self, val):
-        return not val == 0
+    ___ __checkValue , val
+        return not val __ 0
 
 d = dividerClass()
 d.setDivider(2)

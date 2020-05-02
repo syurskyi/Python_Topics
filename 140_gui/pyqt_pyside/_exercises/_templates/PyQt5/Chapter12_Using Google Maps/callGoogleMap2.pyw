@@ -1,32 +1,32 @@
-import sys
+_____ ___
 
-from PyQt5.QtWidgets import QDialog, QApplication
-from geolocation.main import GoogleMaps
+____ ?.?W.. _____ ?D.., ?A..
+____ geolocation.main _____ GoogleMaps
 
-from demoGoogleMap2 import *
+____ demoGoogleMap2 _____ *
 
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.ui.pushButtonSearch.clicked.connect(self.displayLocation)
-        self.show()
+c_ MyForm(?D..
+    ___  -  
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        ui.pushButtonSearch.clicked.c..(displayLocation)
+        s..
    
-    def displayLocation(self):
-        lng = float(self.ui.lineEditLongitude.text())
-        lat = float(self.ui.lineEditLatitude.text())
+    ___ displayLocation 
+        lng = float(ui.lineEditLongitude.text())
+        lat = float(ui.lineEditLatitude.text())
         google_maps = GoogleMaps(api_key='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx') 
         my_location = google_maps.search(lat=lat, lng=lng).first()
-        self.ui.labelLocation.setText("Location: "+str(my_location))
-        self.ui.labelCity.setText("City: "+str(my_location.city))
-        self.ui.labelCountry.setText("Country: "+str(my_location.country))
-        self.ui.labelPostalCode.setText("Postal Code: "+str(my_location.postal_code))
+        ui.labelLocation.sT..("Location: "+st.(my_location))
+        ui.labelCity.sT..("City: "+st.(my_location.city))
+        ui.labelCountry.sT..("Country: "+st.(my_location.country))
+        ui.labelPostalCode.sT..("Postal Code: "+st.(my_location.postal_code))
           
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())
 
 

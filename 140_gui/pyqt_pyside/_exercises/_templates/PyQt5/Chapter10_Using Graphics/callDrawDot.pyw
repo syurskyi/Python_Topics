@@ -1,33 +1,33 @@
-import sys
+_____ ___
 
-from PyQt5.QtWidgets import QDialog, QApplication
-from PyQt5.QtGui import QPainter, QPen
-from PyQt5.QtCore import Qt
-from demoDrawDot import *
+____ ?.?W.. _____ ?D.., ?A..
+____ ?.QtGui _____ QPainter, QPen
+____ ?.?C.. _____ Qt
+____ demoDrawDot _____ *
 
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.pos1 = [0,0]
-        self.show()
+c_ MyForm(?D..
+    ___  -
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        pos1 = [0,0]
+        s..
 
-    def paintEvent(self, event):   
+    ___ paintEvent , event
         qp = QPainter()
-        qp.begin(self)
+        qp.begin
         pen = QPen(Qt.black, 5)
         qp.setPen(pen)
-        qp.drawPoint(self.pos1[0], self.pos1[1])     
+        qp.drawPoint(pos1[0], pos1[1])
         qp.end()
         
-    def mousePressEvent(self, event):
-        if event.buttons() & QtCore.Qt.LeftButton:
-            self.pos1[0], self.pos1[1] = event.pos().x(), event.pos().y()
-            self.update()
+    ___ mousePressEvent , event
+        __ event.buttons() & ?C...Qt.LeftButton:
+            pos1[0], pos1[1] = event.pos().x(), event.pos().y()
+            update()
                               
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())

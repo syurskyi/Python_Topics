@@ -1,42 +1,42 @@
-import sqlite3, sys
-from PyQt5.QtWidgets import QDialog, QApplication
-from sqlite3 import Error
+_____ sqlite3, ___
+____ ?.?W.. _____ ?D.., ?A..
+____ sqlite3 _____ Error
 
-from demoChangePassword import *
+____ demoChangePassword _____ *
 
-class MyForm(QDialog):
+c_ MyForm(?D..
 
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.ui.pushButtonChangePassword.clicked.connect(self.ChangePassword)
-        self.show()
+    ___  -  
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        ui.pushButtonChangePassword.clicked.c..(ChangePassword)
+        s..
 
-    def ChangePassword(self):
-        selectStatement="SELECT EmailAddress, Password FROM Users where EmailAddress like '"+self.ui.lineEditEmailAddress.text()+"' and Password like '"+ self.ui.lineEditOldPassword.text()+"'"
+    ___ ChangePassword 
+        selectStatement="SELECT EmailAddress, Password FROM Users where EmailAddress like '"+ui.lineEditEmailAddress.text()+"' and Password like '"+ ui.lineEditOldPassword.text()+"'"
         try:
-            conn = sqlite3.connect("ECommerce.db")
+            conn = sqlite3.c..("ECommerce.db")
             cur = conn.cursor()    
             cur.execute(selectStatement)
             row = cur.fetchone()
-            if row==None:
-                self.ui.labelResponse.setText("Sorry, Incorrect email address or password ")
+            __ row__None:
+                ui.labelResponse.sT..("Sorry, Incorrect email address or password ")
             else:
-                if self.ui.lineEditNewPassword.text()== self.ui.lineEditRePassword.text():
-                    updateStatement="UPDATE Users set Password = '" + self.ui.lineEditNewPassword.text()+"' WHERE EmailAddress like '"+self.ui.lineEditEmailAddress.text()+"'"
+                __ ui.lineEditNewPassword.text()__ ui.lineEditRePassword.text(
+                    updateStatement="UPDATE Users set Password = '" + ui.lineEditNewPassword.text()+"' WHERE EmailAddress like '"+ui.lineEditEmailAddress.text()+"'"
                     with conn:
                         cur.execute(updateStatement)
-                        self.ui.labelResponse.setText("Password successfully changed")
+                        ui.labelResponse.sT..("Password successfully changed")
                 else:
-                    self.ui.labelResponse.setText("The two passwords don't match")
+                    ui.labelResponse.sT..("The two passwords don't match")
         except Error as e:
-            self.ui.labelResponse.setText("Error in accessing row")
+            ui.labelResponse.sT..("Error in accessing row")
         finally:
             conn.close()
 
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())

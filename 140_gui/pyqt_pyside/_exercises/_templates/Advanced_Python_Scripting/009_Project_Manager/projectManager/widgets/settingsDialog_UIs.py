@@ -7,30 +7,30 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-from PySide import QtCore, QtGui
+____ PySide _____ ?C.., QtGui
 
-class Ui_settingsDialog(object):
-    def setupUi(self, settingsDialog):
+c_ Ui_settingsDialog(object
+    ___ setupUi , settingsDialog
         settingsDialog.setObjectName("settingsDialog")
         settingsDialog.resize(458, 153)
-        self.verticalLayout = QtGui.QVBoxLayout(settingsDialog)
-        self.verticalLayout.setObjectName("verticalLayout")
-        self.table = QtGui.QTableWidget(settingsDialog)
-        self.table.setObjectName("table")
-        self.table.setColumnCount(0)
-        self.table.setRowCount(0)
-        self.verticalLayout.addWidget(self.table)
-        self.buttonBox = QtGui.QDialogButtonBox(settingsDialog)
-        self.buttonBox.setOrientation(QtCore.Qt.Horizontal)
-        self.buttonBox.setStandardButtons(QtGui.QDialogButtonBox.Cancel|QtGui.QDialogButtonBox.Ok)
-        self.buttonBox.setObjectName("buttonBox")
-        self.verticalLayout.addWidget(self.buttonBox)
+        verticalLayout = QtGui.QVBoxLayout(settingsDialog)
+        verticalLayout.setObjectName("verticalLayout")
+        table = QtGui.QTableWidget(settingsDialog)
+        table.setObjectName("table")
+        table.setColumnCount(0)
+        table.setRowCount(0)
+        verticalLayout.addWidget(table)
+        buttonBox = QtGui.QDialogButtonBox(settingsDialog)
+        buttonBox.setOrientation(?C...Qt.Horizontal)
+        buttonBox.setStandardButtons(QtGui.QDialogButtonBox.Cancel|QtGui.QDialogButtonBox.Ok)
+        buttonBox.setObjectName("buttonBox")
+        verticalLayout.addWidget(buttonBox)
 
-        self.retranslateUi(settingsDialog)
-        QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL("accepted()"), settingsDialog.accept)
-        QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL("rejected()"), settingsDialog.reject)
-        QtCore.QMetaObject.connectSlotsByName(settingsDialog)
+        retranslateUi(settingsDialog)
+        ?C...QObject.c..(buttonBox, ?C...SIGNAL("accepted()"), settingsDialog.accept)
+        ?C...QObject.c..(buttonBox, ?C...SIGNAL("rejected()"), settingsDialog.reject)
+        ?C...QMetaObject.connectSlotsByName(settingsDialog)
 
-    def retranslateUi(self, settingsDialog):
-        settingsDialog.setWindowTitle(QtGui.QApplication.translate("settingsDialog", "Dialog", None, QtGui.QApplication.UnicodeUTF8))
+    ___ retranslateUi , settingsDialog
+        settingsDialog.setWindowTitle(QtGui.?A...translate("settingsDialog", "Dialog", None, QtGui.?A...UnicodeUTF8))
 

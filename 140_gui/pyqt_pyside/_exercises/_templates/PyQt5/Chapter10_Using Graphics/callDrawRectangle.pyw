@@ -1,37 +1,37 @@
-import sys
+_____ ___
 
-from PyQt5.QtWidgets import QDialog, QApplication
-from PyQt5.QtGui import QPainter
+____ ?.?W.. _____ ?D.., ?A..
+____ ?.QtGui _____ QPainter
 
-from demoDrawRectangle import *
+____ demoDrawRectangle _____ *
 
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.pos1 = [0,0]
-        self.pos2 = [0,0]
-        self.show()
+c_ MyForm(?D..
+    ___  -  
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        pos1 = [0,0]
+        pos2 = [0,0]
+        s..
 
-    def paintEvent(self, event):
-        width = self.pos2[0]-self.pos1[0]
-        height = self.pos2[1] - self.pos1[1]     
+    ___ paintEvent , event
+        width = pos2[0]-pos1[0]
+        height = pos2[1] - pos1[1]     
         qp = QPainter()
-        qp.begin(self)     
-        qp.drawRect(self.pos1[0], self.pos1[1], width, height)        
+        qp.begin     
+        qp.drawRect(pos1[0], pos1[1], width, height)        
         qp.end()
         
-    def mousePressEvent(self, event):
-        if event.buttons() & QtCore.Qt.LeftButton:
-            self.pos1[0], self.pos1[1] = event.pos().x(), event.pos().y()
+    ___ mousePressEvent , event
+        __ event.buttons() & ?C...Qt.LeftButton:
+            pos1[0], pos1[1] = event.pos().x(), event.pos().y()
                         
-    def mouseReleaseEvent(self, event):
-        self.pos2[0], self.pos2[1] = event.pos().x(), event.pos().y()    
-        self.update()
+    ___ mouseReleaseEvent , event
+        pos2[0], pos2[1] = event.pos().x(), event.pos().y()    
+        update()
                   
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())

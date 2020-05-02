@@ -1,21 +1,21 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
+____ PySide.?C.. _____ *
+____ PySide.QtGui _____ *
 
-class dialogClass(QDialog):
-    def __init__(self):
-        super(dialogClass, self).__init__()
-        self.ly = QVBoxLayout(self)
-        self.label = QLineEdit()
-        self.ly.addWidget(self.label)
+c_ dialogClass(?D..
+    ___  -
+        super(dialogClass, self). - ()
+        ly = QVBoxLayout
+        label = QLineEdit()
+        ly.addWidget(label)
 
-        self.ok_btn = QPushButton('OK')
-        self.ly.addWidget(self.ok_btn)
+        ok_btn = ?PB..('OK')
+        ly.addWidget(ok_btn)
 
-        self.cancel_btn = QPushButton('Cancel')
-        self.ly.addWidget(self.cancel_btn)
+        cancel_btn = ?PB..('Cancel')
+        ly.addWidget(cancel_btn)
 
-        self.ok_btn.clicked.connect(self.accept)
-        self.cancel_btn.clicked.connect(self.reject)
+        ok_btn.clicked.c..(accept)
+        cancel_btn.clicked.c..(reject)
 
-    def getData(self):
-        return dict(text=self.label.text())
+    ___ getData
+        return dict(text=label.text())

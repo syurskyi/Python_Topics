@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <c_>MainWindow</c_>
+ <widget c_="QMainWindow" name="MainWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -13,43 +13,43 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout">
+  <widget c_="QWidget" name="centralwidget">
+   <layout c_="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QLineEdit" name="lineEdit"/>
+     <widget c_="QLineEdit" name="lineEdit"/>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton">
+     <widget c_="QPushButton" name="pushButton">
       <property name="text">
        <string>PushButton</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QSlider" name="horizontalSlider">
+     <widget c_="QSlider" name="horizontalSlider">
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QCheckBox" name="checkBox">
+     <widget c_="QCheckBox" name="checkBox">
       <property name="text">
        <string>Show</string>
       </property>
      </widget>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <layout c_="QHBoxLayout" name="horizontalLayout_2">
       <item>
-       <widget class="QRadioButton" name="radioButton">
+       <widget c_="QRadioButton" name="radioButton">
         <property name="text">
          <string>Enable</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QRadioButton" name="radioButton_2">
+       <widget c_="QRadioButton" name="radioButton_2">
         <property name="text">
          <string>Disable</string>
         </property>
@@ -58,7 +58,7 @@
      </layout>
     </item>
     <item>
-     <widget class="QTreeWidget" name="treeWidget">
+     <widget c_="QTreeWidget" name="treeWidget">
       <column>
        <property name="text">
         <string>1</string>
@@ -122,7 +122,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QComboBox" name="comboBox">
+     <widget c_="QComboBox" name="comboBox">
       <item>
        <property name="text">
         <string>New Item</string>
@@ -206,12 +206,12 @@
      </widget>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout">
+     <layout c_="QHBoxLayout" name="horizontalLayout">
       <item>
-       <widget class="QSpinBox" name="spinBox"/>
+       <widget c_="QSpinBox" name="spinBox"/>
       </item>
       <item>
-       <widget class="QProgressBar" name="progressBar">
+       <widget c_="QProgressBar" name="progressBar">
         <property name="value">
          <number>24</number>
         </property>
@@ -221,7 +221,7 @@
     </item>
    </layout>
   </widget>
-  <widget class="QMenuBar" name="menubar">
+  <widget c_="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -230,7 +230,7 @@
      <height>21</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuFile">
+   <widget c_="QMenu" name="menuFile">
     <property name="title">
      <string>File</string>
     </property>
@@ -238,7 +238,7 @@
     <addaction name="actionClose"/>
     <addaction name="actionExit"/>
    </widget>
-   <widget class="QMenu" name="menuHelp">
+   <widget c_="QMenu" name="menuHelp">
     <property name="title">
      <string>Help</string>
     </property>

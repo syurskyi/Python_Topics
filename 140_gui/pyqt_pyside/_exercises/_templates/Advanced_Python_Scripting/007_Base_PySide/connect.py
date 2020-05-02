@@ -1,32 +1,32 @@
-from PySide.QtGui import *
-from PySide.QtCore import *
+____ PySide.QtGui _____ *
+____ PySide.?C.. _____ *
 
 
-class MyWidget(QWidget):
-    def __init__(self):
-        super(MyWidget, self).__init__()
-        layout = QVBoxLayout(self)
-        button = QPushButton('Print')
+c_ MyWidget(?W..
+    ___  -  
+        super(MyWidget, self). - ()
+        layout = QVBoxLayout
+        button = ?PB..('Print')
         layout.addWidget(button)
-        button.clicked.connect(self.action)
+        button.clicked.c..(action)
         line = QLineEdit()
         layout.addWidget(line)
-        line.tC...connect(self.text)
+        line.tC...c..(text)
         # self.connect(button, SIGNAL('clicked()'),
         #              self, SLOT('action()'))
 
-        @button.clicked.connect
-        def click():
-            self.action()
+        @button.clicked.c..
+        ___ click(
+            action()
 
-    def action(self):
+    ___ action 
         print 'ACTION'
 
-    def text(self, arg):
+    ___ text , arg
         print arg
 
 
-app = QApplication([])
+app = ?A..([])
 window = MyWidget()
-window.show()
+window.s..
 app.exec_()

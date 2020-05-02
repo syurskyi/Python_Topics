@@ -1,40 +1,40 @@
-import sys
-import threading
-import time
+_____ ___
+_____ threading
+_____ time
 
-from PyQt5.QtWidgets import QDialog, QApplication
+____ PyQt5.?W.. _____ ?D.., ?A..
 
-from demoProgressBarThread import *
+____ demoProgressBarThread _____ *
 
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.show()
+c_ MyForm(?D..
+    ___  -  
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        s..
        
-class myThread (threading.Thread):
+c_ myThread (threading.Thread
    counter=0
-   def __init__(self, w):
-      threading.Thread.__init__(self)
-      self.w=w
-      self.counter=0
+   ___  -  , w
+      threading.Thread. - 
+      w=w
+      counter=0
       
-   def run(self):
-      print ("Starting " + self.name)
-      while self.counter <=100:
+   ___ run 
+      print ("Starting " + name)
+      while counter <=100:
           time.sleep(1)
-          w.ui.progressBar.setValue(self.counter)
-          self.counter+=10
-      print ("Exiting " + self.name)
+          w.ui.progressBar.setValue(counter)
+          counter+=10
+      print ("Exiting " + name)
 
       
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     w = MyForm()
     thread1 = myThread(w)
     thread1.start()
     w.exec()
-    sys.exit(app.exec_())
+    ___.e..(app.exec_())
 
 

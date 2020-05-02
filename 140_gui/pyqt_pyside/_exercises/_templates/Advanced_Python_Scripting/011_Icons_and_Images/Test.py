@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 # ! /usr/bin/env python
 
-import sys
-from PyQt4 import QtGui, QtCore
+_____ ___
+____ PyQt4 _____ QtGui, ?C..
 
-import os, string
-import math
+_____ os, string
+_____ math
 
 THUMB_WIDTH = 128
 THUMB_HEIGHT = 128
@@ -14,7 +14,7 @@ THUMB_MAX = 256
 FILE_TYPE = ['jpg', 'jpeg', 'tif', 'bmp', 'gif']
 
 
-class ImageWidget(QtGui.QWidget):
+c_ ImageWidget(QtGui.?W..
 
     prevSelected = None
 
@@ -22,340 +22,340 @@ class ImageWidget(QtGui.QWidget):
     Use this widget to display image.
     """
 
-    def __init__(self):
-        super(ImageWidget, self).__init__()
-        self.id = 0
-        self.displayText = ''
-        self.version = ''
-        self.status = 0
-        self.path = ''
-        self.showStatus = True
-        self.selected = False
-        self.isHightlight = False
-        self.thumb = QtGui.QImage()
-        self.initAttrib()
+    ___  -  
+        super(ImageWidget, self). - ()
+        id = 0
+        displayText = ''
+        version = ''
+        status = 0
+        path = ''
+        showStatus = T..
+        selected = False
+        isHightlight = False
+        thumb = QtGui.QImage()
+        initAttrib()
 
-    def initAttrib(self):
-        self.name_font = QtGui.QFont()
-        self.bg_color = QtGui.QColor(50, 50, 50)
-        self.hightlight = QtGui.QColor(255, 255, 255, 100)
-        self.edge_size = 5
-        self.pen_selected = QtGui.QPen(QtGui.QColor(255, 255, 0))
-        self.pen_selected.setWidth(self.edge_size)
-        self.pen_selected.setJoinStyle(QtCore.Qt.MiterJoin)
+    ___ initAttrib 
+        name_font = QtGui.QFont()
+        bg_color = QtGui.QColor(50, 50, 50)
+        hightlight = QtGui.QColor(255, 255, 255, 100)
+        edge_size = 5
+        pen_selected = QtGui.QPen(QtGui.QColor(255, 255, 0))
+        pen_selected.setWidth(edge_size)
+        pen_selected.setJoinStyle(?C...Qt.MiterJoin)
 
     #        self.setToolTip('aaaa\nbbbb\ncccc')
 
-    def assetFile(self):
-        return self.path + "_asset_.txt"
+    ___ assetFile 
+        return path + "_asset_.txt"
 
-    def thumbFile(self):
-        return self.path + "_thumb_.png"
+    ___ thumbFile 
+        return path + "_thumb_.png"
 
-    def informationFile(self):
-        return self.path + "_information_.txt"
+    ___ informationFile 
+        return path + "_information_.txt"
 
-    def getPublishPath(self):
-        current_version = self.version
-        if not current_version:
+    ___ getPublishPath 
+        current_version = version
+        __ not current_version:
             current_version = '000'
         new_version = int(string.atof(current_version)) + 1
-        return '%s/%03d' % (self.path, new_version)
+        return '%s/%03d' % (path, new_version)
 
-    def getVersionPath(self, version):
-        return '%s/%s' % (self.path, version)
+    ___ getVersionPath , version
+        return '%s/%s' % (path, version)
 
-    def getCurrentVersionPath(self):
-        return self.getVersionPath(self.version)
+    ___ getCurrentVersionPath 
+        return getVersionPath(version)
 
-    def setThumb(self, thumb=None):
-        if not thumb:
-            thumb = self.thumbFile()
-        if os.path.isfile(thumb):
-            self.thumb.load(QtCore.QString(thumb))
-            self.repaint()
-            return True
+    ___ setThumb , thumb=None
+        __ not thumb:
+            thumb = thumbFile()
+        __ os.path.isfile(thumb
+            thumb.load(?C...QString(thumb))
+            repaint()
+            return T..
 
-    def paintAsThumb(self, painter):
-        name_height = max(self.height() * 0.15, 20)
-        name_ty = self.height() - self.edge_size * 2
+    ___ paintAsThumb , painter
+        name_height = max(height() * 0.15, 20)
+        name_ty = height() - edge_size * 2
         # draw background
-        painter.fillRect(self.rect(), self.bg_color)
-        painter.drawImage(self.rect(), self.thumb)
+        painter.fillRect(rect(), bg_color)
+        painter.drawImage(rect(), thumb)
         # draw hightlight
-        if self.isHightlight and not self.selected:
-            painter.fillRect(self.rect(), self.hightlight)
+        __ isHightlight and not selected:
+            painter.fillRect(rect(), hightlight)
         # draw name
         painter.setPen(QtGui.QPen(QtGui.QColor(255, 255, 255)))
-        self.name_font.setPixelSize(name_height)
-        painter.setFont(self.name_font)
+        name_font.setPixelSize(name_height)
+        painter.setFont(name_font)
         # 脚标字符
-        painter.drawText(self.edge_size, name_ty, str(self.displayText))
+        painter.drawText(edge_size, name_ty, st.(displayText))
 
-        if self.status:
-            title_height = self.edge_size + name_height
-            p1 = QtCore.QPoint(0, 0)
-            p2 = QtCore.QPoint(0, title_height)
-            p3 = QtCore.QPoint(title_height, 0)
-            painter.setPen(QtCore.Qt.NoPen)
-            painter.fillRect(0, 0, self.width(), title_height, QtGui.QColor(40, 40, 40, 40))
-            if self.status == 1:
+        __ status:
+            title_height = edge_size + name_height
+            p1 = ?C...QPoint(0, 0)
+            p2 = ?C...QPoint(0, title_height)
+            p3 = ?C...QPoint(title_height, 0)
+            painter.setPen(?C...Qt.NoPen)
+            painter.fillRect(0, 0, width(), title_height, QtGui.QColor(40, 40, 40, 40))
+            __ status __ 1:
                 painter.setBrush(QtGui.QBrush(QtGui.QColor(255, 0, 0)))
-            elif self.status == 2:
+            elif status __ 2:
                 painter.setBrush(QtGui.QBrush(QtGui.QColor(0, 255, 0)))
-            elif self.status == 3:
+            elif status __ 3:
                 painter.setBrush(QtGui.QBrush(QtGui.QColor(0, 0, 255)))
             painter.drawConvexPolygon(p1, p2, p3)
 
-        if self.version:
-            version_x = self.width() - self.edge_size - name_height * 1.5
+        __ version:
+            version_x = width() - edge_size - name_height * 1.5
             version_y = name_height
             painter.setPen(QtGui.QPen(QtGui.QColor(255, 255, 255)))
-            painter.drawText(version_x, version_y, '%s' % self.version)
+            painter.drawText(version_x, version_y, '%s' % version)
 
         # draw selected
-        if self.selected:
-            painter.setPen(self.pen_selected)
-            painter.setBrush(QtCore.Qt.NoBrush)
-            painter.drawRect(self.edge_size / 2, self.edge_size / 2, \
-                             self.width() - self.edge_size, self.height() - self.edge_size)
+        __ selected:
+            painter.setPen(pen_selected)
+            painter.setBrush(?C...Qt.NoBrush)
+            painter.drawRect(edge_size / 2, edge_size / 2, \
+                             width() - edge_size, height() - edge_size)
 
-    def paintEvent(self, event):
-        painter = QtGui.QPainter(self)
-        self.paintAsThumb(painter)
+    ___ paintEvent , event
+        painter = QtGui.QPainter
+        paintAsThumb(painter)
 
-    def mouseReleaseEvent(self, event):
-        if event.button() == QtCore.Qt.LeftButton:
-            self.setSelected()
+    ___ mouseReleaseEvent , event
+        __ event.button() __ ?C...Qt.LeftButton:
+            setSelected()
 
-    def mouseDoubleClickEvent(self, event):
-        self.emit(QtCore.SIGNAL('doubleClick'))
+    ___ mouseDoubleClickEvent , event
+        emit(?C...SIGNAL('doubleClick'))
 
-    def enterEvent(self, event):
-        self.isHightlight = True
-        self.repaint()
+    ___ enterEvent , event
+        isHightlight = T..
+        repaint()
 
-    def leaveEvent(self, event):
-        self.isHightlight = False
-        self.repaint()
+    ___ leaveEvent , event
+        isHightlight = False
+        repaint()
 
     # 设定当前为选中状态
-    def setSelected(self):
+    ___ setSelected 
         # 取消其他缩略图的选择状态, 当前设为选择状态
-        if ImageWidget.prevSelected != None:
+        __ ImageWidget.prevSelected != None:
             ImageWidget.prevSelected.selected = False
             ImageWidget.prevSelected.repaint()
-        self.selected = True
-        self.repaint()
+        selected = T..
+        repaint()
         ImageWidget.prevSelected = self
 
-        self.onWidgetClicked()
-        self.emit(QtCore.SIGNAL("click"), self.id)
+        onWidgetClicked()
+        emit(?C...SIGNAL("click"), id)
 
-    def onWidgetClicked(self):
+    ___ onWidgetClicked 
         print 'on widget clicked'
 
 
-class ImageContainer(QtGui.QFrame):
-    def __init__(self, widgets=None):
-        super(ImageContainer, self).__init__()
+c_ ImageContainer(QtGui.QFrame
+    ___  -  , widgets=None
+        super(ImageContainer, self). - ()
 
         containerLayout = QtGui.QVBoxLayout()
 
         # 初始化Slider
-        self.zoomSlider = QtGui.QSlider()
-        self.zoomSlider.setOrientation(QtCore.Qt.Horizontal)
-        self.zoomSlider.setMinimum(THUMB_MIN)
-        self.zoomSlider.setMaximum(THUMB_MAX)
-        self.zoomSlider.setValue(THUMB_WIDTH)
-        self.zoomSlider.setFixedWidth(128)
-        self.zoomSlider.setFixedHeight(10)
+        zoomSlider = QtGui.QSlider()
+        zoomSlider.setOrientation(?C...Qt.Horizontal)
+        zoomSlider.setMinimum(THUMB_MIN)
+        zoomSlider.setMaximum(THUMB_MAX)
+        zoomSlider.setValue(THUMB_WIDTH)
+        zoomSlider.setFixedWidth(128)
+        zoomSlider.setFixedHeight(10)
 
         # Slider设定
-        QtCore.QObject.connect(self.zoomSlider, QtCore.SIGNAL('valueChanged(int)'), self.setItemSize)
+        ?C...QObject.c..(zoomSlider, ?C...SIGNAL('valueChanged(int)'), setItemSize)
 
-        self.item_scrollarea = QtGui.QScrollArea()
-        self.item_area = QtGui.QWidget()
-        self.item_scrollarea.setWidget(self.item_area)
+        item_scrollarea = QtGui.QScrollArea()
+        item_area = QtGui.?W..()
+        item_scrollarea.setWidget(item_area)
 
-        containerLayout.addWidget(self.zoomSlider)
-        containerLayout.addWidget(self.item_scrollarea)
+        containerLayout.addWidget(zoomSlider)
+        containerLayout.addWidget(item_scrollarea)
 
-        self.widget_w = THUMB_WIDTH
-        self.widget_h = THUMB_HEIGHT
-        self.min_width = THUMB_MIN
-        self.max_height = THUMB_MAX
-        self.asset_space = 2
-        self.auto_space = False
+        widget_w = THUMB_WIDTH
+        widget_h = THUMB_HEIGHT
+        min_width = THUMB_MIN
+        max_height = THUMB_MAX
+        asset_space = 2
+        auto_space = False
 
-        self.setWindowOpacity(0.0)
+        setWindowOpacity(0.0)
 
-        self.setLayout(containerLayout)
+        setLayout(containerLayout)
 
         # 缩略图对象列表
-        self.ImageWidgetList = {}
+        ImageWidgetList = {}
 
-    def addWidget(self, widget):
-        widget.setParent(self.item_area)
-        widget.resize(self.widget_w, self.widget_h)
-        widget.show()
+    ___ addWidget , widget
+        widget.setParent(item_area)
+        widget.resize(widget_w, widget_h)
+        widget.s..
         # 添加到列表
-        self.ImageWidgetList[str(widget.id)] = widget
+        ImageWidgetList[st.(widget.id)] = widget
 
-    def addWidgets(self, widgets):
+    ___ addWidgets , widgets
         for widget in widgets:
-            self.addWidget(widget)
-        self.layout()
+            addWidget(widget)
+        layout()
 
-    def clearAll(self):
-        widgets = self.item_area.children()
-        if widgets:
+    ___ clearAll 
+        widgets = item_area.children()
+        __ widgets:
             for widget in widgets:
                 widget.setParent(None)
 
-        self.ImageWidgetList.clear()
+        ImageWidgetList.clear()
 
-    def layout(self):
-        w = self.width() - 20
-        widgets = self.item_area.children()
+    ___ layout 
+        w = width() - 20
+        widgets = item_area.children()
 
-        num_x = max(math.ceil(w / (self.widget_w + self.asset_space)), 1)  # Can do -1
+        num_x = max(math.ceil(w / (widget_w + asset_space)), 1)  # Can do -1
         num_y = math.ceil(len(widgets) / num_x)
-        self.item_area.resize(w, num_y * (self.widget_h + self.asset_space) + 50)
+        item_area.resize(w, num_y * (widget_h + asset_space) + 50)
 
-        main_w = self.item_area.width()
-        main_h = self.item_area.height()
-        num_x = max(math.ceil(main_w / (self.widget_w + self.asset_space)), 1)  # Can do -1
+        main_w = item_area.width()
+        main_h = item_area.height()
+        num_x = max(math.ceil(main_w / (widget_w + asset_space)), 1)  # Can do -1
 
         x = 0
         y = 0
         for i in range(len(widgets)):
             space_x = 0
-            if self.auto_space:
-                space_x = (main_w - self.asset_space * 2 - num_x * (self.widget_w + self.asset_space)) / num_x
-            widgets[i].move(self.asset_space * 2 + x * (self.widget_w + self.asset_space + space_x), \
-                            self.asset_space * 2 + y * (self.widget_h + self.asset_space))
+            __ auto_space:
+                space_x = (main_w - asset_space * 2 - num_x * (widget_w + asset_space)) / num_x
+            widgets[i].move(asset_space * 2 + x * (widget_w + asset_space + space_x), \
+                            asset_space * 2 + y * (widget_h + asset_space))
             x += 1
-            if x >= num_x:
+            __ x >= num_x:
                 x = 0
                 y += 1
 
-    def resizeEvent(self, event):
-        self.layout()
+    ___ resizeEvent , event
+        layout()
 
-    def changeItemSize(self, mount):
-        widgets = self.item_area.children()
-        self.widget_w += mount
-        if self.widget_w > self.max_height:
-            self.widget_w = self.max_height
-        elif self.widget_w < self.min_width:
-            self.widget_w = self.min_width
+    ___ changeItemSize , mount
+        widgets = item_area.children()
+        widget_w += mount
+        __ widget_w > max_height:
+            widget_w = max_height
+        elif widget_w < min_width:
+            widget_w = min_width
 
-        self.widget_h += mount
-        if self.widget_h > self.max_height:
-            self.widget_h = self.max_height
-        elif self.widget_h < self.min_width:
-            self.widget_h = self.min_width
+        widget_h += mount
+        __ widget_h > max_height:
+            widget_h = max_height
+        elif widget_h < min_width:
+            widget_h = min_width
 
         for a in widgets:
-            a.resize(self.widget_w, self.widget_h)
+            a.resize(widget_w, widget_h)
 
-        self.layout()
+        layout()
 
-    def setItemSize(self, size):
-        widgets = self.item_area.children()
+    ___ setItemSize , size
+        widgets = item_area.children()
 
-        self.widget_w = size
-        self.widget_h = size
+        widget_w = size
+        widget_h = size
 
         for a in widgets:
             a.resize(size, size)
 
-        self.layout()
+        layout()
 
     # 设定指定id为选中状态
-    def setSelected(self, id):
+    ___ setSelected , id
         print 'ImageContainer -> setSelected    ', id
-        self.ImageWidgetList[str(id)].setSelected()
+        ImageWidgetList[st.(id)].setSelected()
 
 
-class MainWindow(QtGui.QWidget):
-    def __init__(self):
-        app = QtGui.QApplication(sys.argv)
-        super(MainWindow, self).__init__()
+c_ MainWindow(QtGui.?W..
+    ___  -  
+        app = QtGui.?A..(___.argv)
+        super(MainWindow, self). - ()
 
-        self.setWindowTitle("Image Viewer")
-        self.resize(1280, 800)
+        setWindowTitle("Image Viewer")
+        resize(1280, 800)
 
         # 屏幕居中
-        self.screen = QtGui.QDesktopWidget().screenGeometry()
-        self.size = self.geometry()
-        self.move((self.screen.width() - self.size.width()) / 2, (self.screen.height() - self.size.height()) / 2)
+        screen = QtGui.QDesktopWidget().screenGeometry()
+        size = geometry()
+        move((screen.width() - size.width()) / 2, (screen.height() - size.height()) / 2)
 
-        self.show()
+        s..
 
-        mainSpliter = QtGui.QSplitter(QtCore.Qt.Horizontal)
+        mainSpliter = QtGui.QSplitter(?C...Qt.Horizontal)
 
         # 文件夹列表model
-        self.dirModel = QtGui.QDirModel(self)
+        dirModel = QtGui.QDirModel
 
         # 只显示文件夹
-        self.dirModel.setFilter(QtCore.QDir.Dirs | QtCore.QDir.NoDotAndDotDot)
+        dirModel.setFilter(?C...QDir.Dirs | ?C...QDir.NoDotAndDotDot)
 
         # 文件夹列表view
-        self.dirTreeView = QtGui.QTreeView()
+        dirTreeView = QtGui.QTreeView()
 
         # 绑定model
-        self.dirTreeView.setModel(self.dirModel)
+        dirTreeView.setModel(dirModel)
 
-        self.dirTreeView.hideColumn(1)
-        self.dirTreeView.hideColumn(2)
-        self.dirTreeView.hideColumn(3)
+        dirTreeView.hideColumn(1)
+        dirTreeView.hideColumn(2)
+        dirTreeView.hideColumn(3)
 
         # DirTree事件响应
-        self.dirTreeView.selectionModel().selectionChanged.connect(self.dirTreeClicked)
+        dirTreeView.selectionModel().selectionChanged.c..(dirTreeClicked)
 
         mainLayout = QtGui.QVBoxLayout()
-        mainSpliter.addWidget(self.dirTreeView)
+        mainSpliter.addWidget(dirTreeView)
 
-        self.imageContainer = ImageContainer(mainSpliter)
+        imageContainer = ImageContainer(mainSpliter)
         #        self.imageContainer.setGeometry(self.imageContainer.geometry().x(), self.imageContainer.geometry().y(), 100, self.imageContainer.geometry().height())
-        self.imageContainer.setMinimumWidth(self.geometry().width() * 0.7)
-        mainSpliter.addWidget(self.imageContainer)
+        imageContainer.setMinimumWidth(geometry().width() * 0.7)
+        mainSpliter.addWidget(imageContainer)
 
         mainLayout.addWidget(mainSpliter)
 
-        self.setLayout(mainLayout)
+        setLayout(mainLayout)
 
-        sys.exit(app.exec_())
+        ___.e..(app.exec_())
 
-    def dirTreeClicked(self):
+    ___ dirTreeClicked 
         print 'dirTreeClicked'
 
-        self.imageContainer.clearAll()
+        imageContainer.clearAll()
 
         # 获取选择的路径
-        pathSelected = self.dirModel.filePath(self.dirTreeView.selectedIndexes()[0])
+        pathSelected = dirModel.filePath(dirTreeView.selectedIndexes()[0])
         print 'pathSelected   ', pathSelected
         # 遍历路径下的媒体文件
-        for item in os.listdir(pathSelected):
-            if item.split('.')[-1] in FILE_TYPE:
+        for item in os.listdir(pathSelected
+            __ item.split('.')[-1] in FILE_TYPE:
                 print item
                 # 添加widget
                 try:
                     widget = ImageWidget()
                     widget.displayText = item
                     widget.setThumb(unicode(pathSelected + '/' + item))
-                    self.imageContainer.addWidget(widget)
+                    imageContainer.addWidget(widget)
                 except:
                     pass
 
 
 # self.imageContainer.layout()
 
-def main():
+___ main(
     MainWindow()
 
 
-if __name__ == '__main__':
+__ __name__ __ '__main__':
     main()

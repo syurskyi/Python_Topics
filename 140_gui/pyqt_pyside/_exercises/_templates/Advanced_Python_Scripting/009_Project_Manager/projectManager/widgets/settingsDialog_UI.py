@@ -7,44 +7,44 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt4 import QtCore, QtGui
+____ PyQt4 _____ ?C.., QtGui
 
 try:
-    _fromUtf8 = QtCore.QString.fromUtf8
+    _fromUtf8 = ?C...QString.fromUtf8
 except AttributeError:
-    def _fromUtf8(s):
+    ___ _fromUtf8(s
         return s
 
 try:
-    _encoding = QtGui.QApplication.UnicodeUTF8
-    def _translate(context, text, disambig):
-        return QtGui.QApplication.translate(context, text, disambig, _encoding)
+    _encoding = QtGui.?A...UnicodeUTF8
+    ___ _translate(context, text, disambig
+        return QtGui.?A...translate(context, text, disambig, _encoding)
 except AttributeError:
-    def _translate(context, text, disambig):
-        return QtGui.QApplication.translate(context, text, disambig)
+    ___ _translate(context, text, disambig
+        return QtGui.?A...translate(context, text, disambig)
 
-class Ui_settingsDialog(object):
-    def setupUi(self, settingsDialog):
+c_ Ui_settingsDialog(object
+    ___ setupUi , settingsDialog
         settingsDialog.setObjectName(_fromUtf8("settingsDialog"))
         settingsDialog.resize(458, 153)
-        self.verticalLayout = QtGui.QVBoxLayout(settingsDialog)
-        self.verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
-        self.table = QtGui.QTableWidget(settingsDialog)
-        self.table.setObjectName(_fromUtf8("table"))
-        self.table.setColumnCount(0)
-        self.table.setRowCount(0)
-        self.verticalLayout.addWidget(self.table)
-        self.buttonBox = QtGui.QDialogButtonBox(settingsDialog)
-        self.buttonBox.setOrientation(QtCore.Qt.Horizontal)
-        self.buttonBox.setStandardButtons(QtGui.QDialogButtonBox.Cancel|QtGui.QDialogButtonBox.Ok)
-        self.buttonBox.setObjectName(_fromUtf8("buttonBox"))
-        self.verticalLayout.addWidget(self.buttonBox)
+        verticalLayout = QtGui.QVBoxLayout(settingsDialog)
+        verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
+        table = QtGui.QTableWidget(settingsDialog)
+        table.setObjectName(_fromUtf8("table"))
+        table.setColumnCount(0)
+        table.setRowCount(0)
+        verticalLayout.addWidget(table)
+        buttonBox = QtGui.QDialogButtonBox(settingsDialog)
+        buttonBox.setOrientation(?C...Qt.Horizontal)
+        buttonBox.setStandardButtons(QtGui.QDialogButtonBox.Cancel|QtGui.QDialogButtonBox.Ok)
+        buttonBox.setObjectName(_fromUtf8("buttonBox"))
+        verticalLayout.addWidget(buttonBox)
 
-        self.retranslateUi(settingsDialog)
-        QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL(_fromUtf8("accepted()")), settingsDialog.accept)
-        QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL(_fromUtf8("rejected()")), settingsDialog.reject)
-        QtCore.QMetaObject.connectSlotsByName(settingsDialog)
+        retranslateUi(settingsDialog)
+        ?C...QObject.c..(buttonBox, ?C...SIGNAL(_fromUtf8("accepted()")), settingsDialog.accept)
+        ?C...QObject.c..(buttonBox, ?C...SIGNAL(_fromUtf8("rejected()")), settingsDialog.reject)
+        ?C...QMetaObject.connectSlotsByName(settingsDialog)
 
-    def retranslateUi(self, settingsDialog):
+    ___ retranslateUi , settingsDialog
         settingsDialog.setWindowTitle(_translate("settingsDialog", "Dialog", None))
 

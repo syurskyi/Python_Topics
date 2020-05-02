@@ -1,49 +1,49 @@
-import os
+_____ os
 
-class settings():
-    def __init__(self, path=None):
-        if path:
-            self.path = path
+c_ settings(
+    ___  -  , path=None
+        __ path:
+            path = path
         else:
-            self.path = 'c:/settings.ini'
-        self.data = self.__readFile()
+            path = 'c:/settings.ini'
+        data = __readFile()
 
-    def __readFile(self):
-        if os.path.exists(self.path):
-            text = open(self.path, 'r').readlines()
+    ___ __readFile
+        __ os.path.exists(path
+            text = open(path, 'r').readlines()
             data = {}
-            if text:
+            __ text:
                 for line in [x.strip() for x in text]:
                     key, value = line.split('=')
-                    if value.isdigit():
+                    __ value.isdigit(
                         value = int(value)
-                    elif value.replace('.','').isdigit() and value.count('.') == 1:
+                    elif value.replace('.','').isdigit() and value.count('.') __ 1:
                         value = float(value)
                     data[key] = value
             return data
-        return self.__create_default()
+        return __create_default()
 
-    def __write_file(self):
-        if self.data:
-            with open(self.path, 'w') as f:
-                for key, value in self.data.items():
+    ___ __write_file
+        __ data:
+            with open(path, 'w') as f:
+                for key, value in data.items(
                     f.write('%s=%s\n' % (key, value))
 
-    def __create_default(self):
+    ___ __create_default
         d = dict(app='',
                  value=0,
                  path='')
         return d
 
-    def setValue(self, key, value):
-        self.data[key] = value
-        self.__write_file()
+    ___ setValue , key, value
+        data[key] = value
+        __write_file()
 
-    def getValue(self, key, default=None):
-        return self.data.get(key, default)
+    ___ getValue , key, default=None
+        return data.get(key, default)
 
-    def getSettings(self):
-        return self.data
+    ___ getSettings
+        return data
 
 s = settings('c:/mySettings.ini')
 s.setValue('app', 'Maya')

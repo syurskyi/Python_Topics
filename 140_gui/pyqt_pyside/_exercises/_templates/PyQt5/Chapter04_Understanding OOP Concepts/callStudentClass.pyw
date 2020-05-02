@@ -1,37 +1,37 @@
-import sys
+_____ ___
 
-from PyQt5.QtWidgets import QDialog, QApplication
+____ ?.?W.. _____ ?D.., ?A..
 
-from demoStudentClass import *
+____ demoStudentClass _____ *
 
-class Student:
+c_ Student:
     name = ""
     code = ""
  
-    def __init__(self, code, name):
-        self.code = code
-        self.name = name
+    ___  -  , code, name
+        code = code
+        name = name
 
-    def getCode(self):
-        return self.code
+    ___ getCode 
+        return code
     
-    def getName(self):
-        return self.name
+    ___ getName 
+        return name
 
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.ui.ButtonClickMe.clicked.connect(self.dispmessage)
-        self.show()
+c_ MyForm(?D..
+    ___  -  
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        ui.ButtonClickMe.clicked.c..(dispmessage)
+        s..
 
-    def dispmessage(self):
-        studentObj=Student(self.ui.lineEditCode.text(), self.ui.lineEditName.text())  
-        self.ui.labelResponse.setText("Code: "+studentObj.getCode()+", Name:"+studentObj.getName())
+    ___ dispmessage 
+        studentObj=Student(ui.lineEditCode.text(), ui.lineEditName.text())  
+        ui.labelResponse.sT..("Code: "+studentObj.getCode()+", Name:"+studentObj.getName())
 
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())

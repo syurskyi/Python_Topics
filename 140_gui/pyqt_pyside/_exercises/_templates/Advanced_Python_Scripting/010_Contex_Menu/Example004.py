@@ -1,19 +1,19 @@
-import sys
-from PyQt4.QtCore import Qt
-from PyQt4.QtGui import *
+_____ ___
+____ PyQt4.?C.. _____ Qt
+____ PyQt4.QtGui _____ *
 
-app = QApplication([])
+app = ?A..([])
 tableWidget = QTableWidget()
 tableWidget.setContextMenuPolicy(Qt.CustomContextMenu)
 
-def openMenu(position):
+___ openMenu(position
 
     menu = QMenu()
     quitAction = menu.addAction("Quit")
     action = menu.exec_(tableWidget.mapToGlobal(position))
-    if action == quitAction:
+    __ action __ quitAction:
         qApp.quit()
 
-tableWidget.customContextMenuRequested.connect(openMenu)
-tableWidget.show()
-sys.exit(app.exec_())
+tableWidget.customContextMenuRequested.c..(openMenu)
+tableWidget.s..
+___.e..(app.exec_())

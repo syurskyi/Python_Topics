@@ -1,26 +1,26 @@
-import sys
+_____ ___
 
-from PyQt5.QtWidgets import QDialog, QApplication, QFontDialog
+____ ?.?W.. _____ ?D.., ?A.., QFontDialog
 
 
-from demoFontDialog import *
+____ demoFontDialog _____ *
 
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)      
-        self.ui.pushButtonFont.clicked.connect(self.changefont)
-        self.show()
+c_ MyForm(?D..
+    ___  -
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        ui.pushButtonFont.clicked.c..(changefont)
+        s..
 
-    def changefont(self):
+    ___ changefont
         font, ok = QFontDialog.getFont()
-        if ok:
-            self.ui.textEdit.setFont(font)
+        __ ok:
+            ui.textEdit.setFont(font)
 
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())
 

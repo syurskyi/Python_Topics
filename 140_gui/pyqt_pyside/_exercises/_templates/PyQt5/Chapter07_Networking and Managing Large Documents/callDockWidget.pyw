@@ -1,21 +1,21 @@
-import sys
-from PyQt5.QtWidgets import QMainWindow, QApplication
+_____ ___
+____ ?.?W.. _____ QMainWindow, ?A..
 
-from demoDockWidget import *
+____ demoDockWidget _____ *
 
-class AppWindow(QMainWindow):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_MainWindow()
-        self.ui.setupUi(self)     
-        self.show()
+c_ AppWindow(QMainWindow
+    ___  -  
+        s__. - ()
+        ui = Ui_MainWindow()
+        ui.setupUi     
+        s..
 
 
-if __name__=="__main__":         
-    app = QApplication(sys.argv)
+__ __name____"__main__":         
+    app = ?A..(___.argv)
     w = AppWindow()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())
 
 
 

@@ -1,20 +1,20 @@
-import sys
-from PyQt4.QtCore import *
-from PyQt4.QtGui import *
+_____ ___
+____ PyQt4.?C.. _____ *
+____ PyQt4.QtGui _____ *
 
 
 
-class TableWidget(QTableWidget):
-    def __init__(self, parent=None):
-        QTableWidget.__init__(self, parent)
-        self.setContextMenuPolicy(Qt.ActionsContextMenu)
+c_ TableWidget(QTableWidget
+    ___  -  , parent=None
+        QTableWidget. -  , parent)
+        setContextMenuPolicy(Qt.ActionsContextMenu)
 
         quitAction = QAction("Quit", self)
-        quitAction.triggered.connect(qApp.quit)
-        self.addAction(quitAction)
+        quitAction.triggered.c..(qApp.quit)
+        addAction(quitAction)
 
 
-app = QApplication([])
+app = ?A..([])
 tableWidget = TableWidget()
-tableWidget.show()
-sys.exit(app.exec_())
+tableWidget.s..
+___.e..(app.exec_())

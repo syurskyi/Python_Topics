@@ -1,4 +1,4 @@
-import pickle
+_____ pickle
 
 p = '/Users/sergejyurskyj/.nuke/example/PYTHON_EXAMPLE/Python_Example_All_Tutorials/VIDEO/Advanced Python Scripting/' \
     '004_Text data formats/file2.txt'

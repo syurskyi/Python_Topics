@@ -1,45 +1,45 @@
-import sys
+_____ ___
 
-from PyQt5.QtWidgets import QDialog, QApplication, QInputDialog, QListWidgetItem
+____ ?.?W.. _____ ?D.., ?A.., QInputDialog, QListWidgetItem
 
-from demoListWidgetOp import *
+____ demoListWidgetOp _____ *
 
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.ui.listWidget.addItem('Ice Cream')
-        self.ui.listWidget.addItem('Soda')
-        self.ui.listWidget.addItem('Coffee')
-        self.ui.listWidget.addItem('Chocolate')
-        self.ui.pushButtonAdd.clicked.connect(self.addlist)
-        self.ui.pushButtonEdit.clicked.connect(self.editlist)
-        self.ui.pushButtonDelete.clicked.connect(self.delitem)
-        self.ui.pushButtonDeleteAll.clicked.connect(self.delallitems)
-        self.show()
+c_ MyForm(?D..
+    ___  -  
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        ui.listWidget.addItem('Ice Cream')
+        ui.listWidget.addItem('Soda')
+        ui.listWidget.addItem('Coffee')
+        ui.listWidget.addItem('Chocolate')
+        ui.pushButtonAdd.clicked.c..(addlist)
+        ui.pushButtonEdit.clicked.c..(editlist)
+        ui.pushButtonDelete.clicked.c..(delitem)
+        ui.pushButtonDeleteAll.clicked.c..(delallitems)
+        s..
 
-    def addlist(self):
-        self.ui.listWidget.addItem(self.ui.lineEdit.text())
-        self.ui.lineEdit.setText('')
-        self.ui.lineEdit.setFocus()
+    ___ addlist 
+        ui.listWidget.addItem(ui.lineEdit.text())
+        ui.lineEdit.sT..('')
+        ui.lineEdit.setFocus()
         
-    def editlist(self):
-        row=self.ui.listWidget.currentRow()
-        newtext, ok=QInputDialog.getText(self, "Enter new text", "Enter new text")
-        if ok and (len(newtext) !=0):
-            self.ui.listWidget.takeItem(self.ui.listWidget.currentRow())
-            self.ui.listWidget.insertItem(row,QListWidgetItem(newtext))
+    ___ editlist 
+        row=ui.listWidget.currentRow()
+        newtext, ok=QInputDialog.getText , "Enter new text", "Enter new text")
+        __ ok and (len(newtext) !=0
+            ui.listWidget.takeItem(ui.listWidget.currentRow())
+            ui.listWidget.insertItem(row,QListWidgetItem(newtext))
         
-    def delitem(self):
-        self.ui.listWidget.takeItem(self.ui.listWidget.currentRow())
+    ___ delitem 
+        ui.listWidget.takeItem(ui.listWidget.currentRow())
        
-    def delallitems(self):
-        self.ui.listWidget.clear()
+    ___ delallitems 
+        ui.listWidget.clear()
 
         
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())

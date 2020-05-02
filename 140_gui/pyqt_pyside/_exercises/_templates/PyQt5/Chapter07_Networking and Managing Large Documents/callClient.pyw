@@ -1,54 +1,54 @@
-import sys
+_____ ___
 
-from PyQt5.QtWidgets import QApplication, QDialog
+____ ?.?W.. _____ ?A.., ?D..
 
-import socket
-from threading import Thread 
-from socketserver import ThreadingMixIn 
+_____ socket
+____ threading _____ Thread
+____ socketserver _____ ThreadingMixIn
 
-from demoClient import *
+____ demoClient _____ *
 
 tcpClientA=None
 
-class Window(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.textEditMessages=self.ui.textEditMessages
-        self.ui.pushButtonSend.clicked.connect(self.dispMessage)
-        self.show()
+c_ Window(?D..
+    ___  -
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        textEditMessages=ui.textEditMessages
+        ui.pushButtonSend.clicked.c..(dispMessage)
+        s..
 
 
-    def dispMessage(self):
-        text=self.ui.lineEditMessage.text()
-        self.ui.textEditMessages.append("Client: "+self.ui.lineEditMessage.text())
+    ___ dispMessage
+        text=ui.lineEditMessage.text()
+        ui.textEditMessages.append("Client: "+ui.lineEditMessage.text())
         tcpClientA.send(text.encode())
-        self.ui.lineEditMessage.setText("")
+        ui.lineEditMessage.sT..("")
 
-class ClientThread(Thread):
-    def __init__(self,window): 
-        Thread.__init__(self) 
-        self.window=window
+c_ ClientThread(Thread
+    ___  -  ,window
+        Thread. -  
+        window=window
   
-    def run(self): 
+    ___ run
        host = socket.gethostname() 
        port = 80
        BUFFER_SIZE = 1024
        global tcpClientA
        tcpClientA = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
-       tcpClientA.connect((host, port))
+       tcpClientA.c..((host, port))
         
-       while True:
+       while T..:
            data = tcpClientA.recv(BUFFER_SIZE)
            window.textEditMessages.append("Server: "+data.decode("utf-8"))
        tcpClientA.close() 
             
         
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     window = Window()
     clientThread=ClientThread(window)
     clientThread.start()
     window.exec()
-    sys.exit(app.exec_())
+    ___.e..(app.exec_())

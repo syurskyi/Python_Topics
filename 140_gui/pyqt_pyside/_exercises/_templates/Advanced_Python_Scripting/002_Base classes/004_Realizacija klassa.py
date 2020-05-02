@@ -1,19 +1,19 @@
-class Phone(object):
-    def __init__(self):
-        self.number = 1234567
+c_ Phone(object
+    ___  -  
+        number = 1234567
 
-    def call(self):
-        print('call'), self.number
+    ___ call 
+        print('call'), number
 
 p = Phone()
 p.call()
 
-class Phone(object):
-    def __init__(self):
-        self.model = ''
-        self.color = 'red'
+c_ Phone(object
+    ___  -  
+        model = ''
+        color = 'red'
 
-    def call(self):
+    ___ call 
         print('call')
 
 p = Phone()

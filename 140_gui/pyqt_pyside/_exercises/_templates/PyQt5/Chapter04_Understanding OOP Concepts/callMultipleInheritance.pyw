@@ -1,69 +1,69 @@
-import sys
+_____ ___
 
-from PyQt5.QtWidgets import QDialog, QApplication
+____ ?.?W.. _____ ?D.., ?A..
 
-from demoMultipleInheritance import *
+____ demoMultipleInheritance _____ *
 
-class Student:
+c_ Student:
     name = ""
     code = ""
  
-    def __init__(self, code, name):
-        self.code = code
-        self.name = name
+    ___  -  , code, name
+        code = code
+        name = name
 
-    def getCode(self):
-        return self.code
+    ___ getCode 
+        return code
     
-    def getName(self):
-        return self.name
+    ___ getName 
+        return name
 
 
-class Marks:
+c_ Marks:
     historyMarks = 0
     geographyMarks = 0
  
-    def __init__(self,  historyMarks, geographyMarks):
-        self.historyMarks = historyMarks
-        self.geographyMarks = geographyMarks
+    ___  -  ,  historyMarks, geographyMarks
+        historyMarks = historyMarks
+        geographyMarks = geographyMarks
         
-    def getHistoryMarks(self):
-        return self.historyMarks
+    ___ getHistoryMarks 
+        return historyMarks
 
-    def getGeographyMarks(self):
-        return self.geographyMarks
+    ___ getGeographyMarks 
+        return geographyMarks
 
-class Result(Student, Marks):
+c_ Result(Student, Marks
     totalMarks = 0
     percentage = 0
  
-    def __init__(self,  code, name, historyMarks, geographyMarks):
-        Student.__init__(self,  code, name)
-        Marks.__init__(self, historyMarks, geographyMarks)
-        self.totalMarks = historyMarks + geographyMarks
-        self.percentage = (historyMarks + geographyMarks) / 200 * 100
+    ___  -  ,  code, name, historyMarks, geographyMarks
+        Student. -  ,  code, name)
+        Marks. -  , historyMarks, geographyMarks)
+        totalMarks = historyMarks + geographyMarks
+        percentage = (historyMarks + geographyMarks) / 200 * 100
         
-    def getTotalMarks(self):
-        return self.totalMarks
+    ___ getTotalMarks 
+        return totalMarks
 
-    def getPercentage(self):
-        return self.percentage
+    ___ getPercentage 
+        return percentage
 
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.ui.ButtonClickMe.clicked.connect(self.dispmessage)
-        self.show()
+c_ MyForm(?D..
+    ___  -  
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        ui.ButtonClickMe.clicked.c..(dispmessage)
+        s..
 
-    def dispmessage(self):
-        resultObj=Result(self.ui.lineEditCode.text(), self.ui.lineEditName.text(), int(self.ui.lineEditHistoryMarks.text()), int(self.ui.lineEditGeographyMarks.text()))
-        self.ui.lineEditTotal.setText(str(resultObj.getTotalMarks()))
-        self.ui.lineEditPercentage.setText(str(resultObj.getPercentage()))      
+    ___ dispmessage 
+        resultObj=Result(ui.lineEditCode.text(), ui.lineEditName.text(), int(ui.lineEditHistoryMarks.text()), int(ui.lineEditGeographyMarks.text()))
+        ui.lineEditTotal.sT..(st.(resultObj.getTotalMarks()))
+        ui.lineEditPercentage.sT..(st.(resultObj.getPercentage()))
 
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())

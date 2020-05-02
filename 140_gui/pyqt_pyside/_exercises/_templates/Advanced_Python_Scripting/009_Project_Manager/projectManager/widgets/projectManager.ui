@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>projectManager</class>
- <widget class="QMainWindow" name="projectManager">
+ <c_>projectManager</c_>
+ <widget c_="QMainWindow" name="projectManager">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -13,40 +13,40 @@
   <property name="windowTitle">
    <string>Project Manager</string>
   </property>
-  <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout_2">
+  <widget c_="QWidget" name="centralwidget">
+   <layout c_="QVBoxLayout" name="verticalLayout_2">
     <item>
-     <widget class="QSplitter" name="splitter">
+     <widget c_="QSplitter" name="splitter">
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
       </property>
-      <widget class="QWidget" name="verticalLayoutWidget">
-       <layout class="QVBoxLayout" name="projectList_ly"/>
+      <widget c_="QWidget" name="verticalLayoutWidget">
+       <layout c_="QVBoxLayout" name="projectList_ly"/>
       </widget>
-      <widget class="QWidget" name="">
-       <layout class="QVBoxLayout" name="verticalLayout">
+      <widget c_="QWidget" name="">
+       <layout c_="QVBoxLayout" name="verticalLayout">
         <item>
-         <widget class="QPushButton" name="create_btn">
+         <widget c_="QPushButton" name="create_btn">
           <property name="text">
            <string>Create Project</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="templateEditor_btn">
+         <widget c_="QPushButton" name="templateEditor_btn">
           <property name="text">
            <string>Template Editor</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QGroupBox" name="groupBox">
+         <widget c_="QGroupBox" name="groupBox">
           <property name="title">
            <string>Info</string>
           </property>
-          <layout class="QVBoxLayout" name="verticalLayout_3">
+          <layout c_="QVBoxLayout" name="verticalLayout_3">
            <item>
-            <widget class="QLabel" name="info_lb">
+            <widget c_="QLabel" name="info_lb">
              <property name="text">
               <string>TextLabel</string>
              </property>
@@ -59,7 +59,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="settings_btn">
+         <widget c_="QPushButton" name="settings_btn">
           <property name="text">
            <string>Settings</string>
           </property>

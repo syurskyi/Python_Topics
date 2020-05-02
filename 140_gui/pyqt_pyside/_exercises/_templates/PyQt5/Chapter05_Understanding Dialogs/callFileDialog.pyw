@@ -1,41 +1,41 @@
-import sys
+_____ ___
 
-from PyQt5.QtWidgets import QMainWindow, QApplication, QAction, QFileDialog
+____ ?.?W.. _____ QMainWindow, ?A.., QAction, QFileDialog
 
-from demoFileDialog import *
+____ demoFileDialog _____ *
 
-class MyForm(QMainWindow):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_MainWindow()
-        self.ui.setupUi(self)
-        self.ui.actionOpen.triggered.connect(self.openFileDialog)
-        self.ui.actionSave.triggered.connect(self.saveFileDialog)
-        self.show()
+c_ MyForm(QMainWindow
+    ___  -
+        s__. - ()
+        ui = Ui_MainWindow()
+        ui.setupUi
+        ui.actionOpen.triggered.c..(openFileDialog)
+        ui.actionSave.triggered.c..(saveFileDialog)
+        s..
 
-    def openFileDialog(self):
+    ___ openFileDialog
 
-        fname = QFileDialog.getOpenFileName(self, 'Open file', '/home')
+        fname = QFileDialog.getOpenFileName , 'Open file', '/home')
 
-        if fname[0]:
+        __ fname[0]:
             f = open(fname[0], 'r')
 
             with f:
                 data = f.read()
-                self.ui.textEdit.setText(data)
+                ui.textEdit.sT..(data)
 
-    def saveFileDialog(self):
+    ___ saveFileDialog
         options = QFileDialog.Options()
         options |= QFileDialog.DontUseNativeDialog
-        fileName, _ = QFileDialog.getSaveFileName(self,"QFileDialog.getSaveFileName()","","All Files (*);;Text Files (*.txt)", options=options)
+        fileName, _ = QFileDialog.getSaveFileName ,"QFileDialog.getSaveFileName()","","All Files (*);;Text Files (*.txt)", options=options)
         f = open(fileName,'w')
-        text = self.ui.textEdit.toPlainText()
+        text = ui.textEdit.toPlainText()
         f.write(text)
         f.close()
 
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())
 

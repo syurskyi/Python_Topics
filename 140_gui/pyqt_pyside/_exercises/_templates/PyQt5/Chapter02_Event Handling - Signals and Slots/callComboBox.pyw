@@ -1,22 +1,22 @@
-import sys
+_____ ___
 
-from PyQt5.QtWidgets import QDialog, QApplication
+____ ?.?W.. _____ ?D.., ?A..
 
-from demoComboBox import *
+____ demoComboBox _____ *
 
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.ui.comboBoxAccountType.currentIndexChanged.connect(self.dispAccountType)
-        self.show()
+c_ MyForm(?D..
+    ___  -  
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        ui.comboBoxAccountType.currentIndexChanged.c..(dispAccountType)
+        s..
 
-    def dispAccountType(self):
-        self.ui.labelAccountType.setText("You have selected "+self.ui.comboBoxAccountType.itemText(self.ui.comboBoxAccountType.currentIndex()))
+    ___ dispAccountType 
+        ui.labelAccountType.sT..("You have selected "+ui.comboBoxAccountType.itemText(ui.comboBoxAccountType.currentIndex()))
 
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())

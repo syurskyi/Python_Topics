@@ -1,28 +1,28 @@
-import sqlite3, sys
-from PyQt5.QtWidgets import QDialog, QApplication
-from sqlite3 import Error
+_____ sqlite3, ___
+____ ?.?W.. _____ ?D.., ?A..
+____ sqlite3 _____ Error
 
-from demoDatabase import *
+____ demoDatabase _____ *
  
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.ui.pushButtonCreateDB.clicked.connect(self.createDatabase)
-        self.show()
+c_ MyForm(?D..
+    ___  -  
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        ui.pushButtonCreateDB.clicked.c..(createDatabase)
+        s..
 
-    def createDatabase(self):
+    ___ createDatabase 
         try:
-            conn = sqlite3.connect(self.ui.lineEditDBName.text()+".db")
-            self.ui.labelResponse.setText("Database is created")
+            conn = sqlite3.c..(ui.lineEditDBName.text()+".db")
+            ui.labelResponse.sT..("Database is created")
         except Error as e:
-            self.ui.labelResponse.setText("Some error has occurred")
+            ui.labelResponse.sT..("Some error has occurred")
         finally:
             conn.close()
 
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())

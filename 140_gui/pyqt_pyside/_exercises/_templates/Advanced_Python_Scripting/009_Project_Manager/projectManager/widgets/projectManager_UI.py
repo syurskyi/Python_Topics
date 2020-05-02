@@ -7,72 +7,72 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt4 import QtCore, QtGui
+____ PyQt4 _____ ?C.., QtGui
 
 try:
-    _fromUtf8 = QtCore.QString.fromUtf8
+    _fromUtf8 = ?C...QString.fromUtf8
 except AttributeError:
-    def _fromUtf8(s):
+    ___ _fromUtf8(s
         return s
 
 try:
-    _encoding = QtGui.QApplication.UnicodeUTF8
-    def _translate(context, text, disambig):
-        return QtGui.QApplication.translate(context, text, disambig, _encoding)
+    _encoding = QtGui.?A...UnicodeUTF8
+    ___ _translate(context, text, disambig
+        return QtGui.?A...translate(context, text, disambig, _encoding)
 except AttributeError:
-    def _translate(context, text, disambig):
-        return QtGui.QApplication.translate(context, text, disambig)
+    ___ _translate(context, text, disambig
+        return QtGui.?A...translate(context, text, disambig)
 
-class Ui_projectManager(object):
-    def setupUi(self, projectManager):
+c_ Ui_projectManager(object
+    ___ setupUi , projectManager
         projectManager.setObjectName(_fromUtf8("projectManager"))
         projectManager.resize(508, 384)
-        self.centralwidget = QtGui.QWidget(projectManager)
-        self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
-        self.verticalLayout_2 = QtGui.QVBoxLayout(self.centralwidget)
-        self.verticalLayout_2.setObjectName(_fromUtf8("verticalLayout_2"))
-        self.splitter = QtGui.QSplitter(self.centralwidget)
-        self.splitter.setOrientation(QtCore.Qt.Horizontal)
-        self.splitter.setObjectName(_fromUtf8("splitter"))
-        self.verticalLayoutWidget = QtGui.QWidget(self.splitter)
-        self.verticalLayoutWidget.setObjectName(_fromUtf8("verticalLayoutWidget"))
-        self.projectList_ly = QtGui.QVBoxLayout(self.verticalLayoutWidget)
-        self.projectList_ly.setMargin(0)
-        self.projectList_ly.setObjectName(_fromUtf8("projectList_ly"))
-        self.widget = QtGui.QWidget(self.splitter)
-        self.widget.setObjectName(_fromUtf8("widget"))
-        self.verticalLayout = QtGui.QVBoxLayout(self.widget)
-        self.verticalLayout.setMargin(0)
-        self.verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
-        self.create_btn = QtGui.QPushButton(self.widget)
-        self.create_btn.setObjectName(_fromUtf8("create_btn"))
-        self.verticalLayout.addWidget(self.create_btn)
-        self.templateEditor_btn = QtGui.QPushButton(self.widget)
-        self.templateEditor_btn.setObjectName(_fromUtf8("templateEditor_btn"))
-        self.verticalLayout.addWidget(self.templateEditor_btn)
-        self.groupBox = QtGui.QGroupBox(self.widget)
-        self.groupBox.setObjectName(_fromUtf8("groupBox"))
-        self.verticalLayout_3 = QtGui.QVBoxLayout(self.groupBox)
-        self.verticalLayout_3.setObjectName(_fromUtf8("verticalLayout_3"))
-        self.info_lb = QtGui.QLabel(self.groupBox)
-        self.info_lb.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
-        self.info_lb.setObjectName(_fromUtf8("info_lb"))
-        self.verticalLayout_3.addWidget(self.info_lb)
-        self.verticalLayout.addWidget(self.groupBox)
-        self.settings_btn = QtGui.QPushButton(self.widget)
-        self.settings_btn.setObjectName(_fromUtf8("settings_btn"))
-        self.verticalLayout.addWidget(self.settings_btn)
-        self.verticalLayout_2.addWidget(self.splitter)
-        projectManager.setCentralWidget(self.centralwidget)
+        centralwidget = QtGui.?W..(projectManager)
+        centralwidget.setObjectName(_fromUtf8("centralwidget"))
+        verticalLayout_2 = QtGui.QVBoxLayout(centralwidget)
+        verticalLayout_2.setObjectName(_fromUtf8("verticalLayout_2"))
+        splitter = QtGui.QSplitter(centralwidget)
+        splitter.setOrientation(?C...Qt.Horizontal)
+        splitter.setObjectName(_fromUtf8("splitter"))
+        verticalLayoutWidget = QtGui.?W..(splitter)
+        verticalLayoutWidget.setObjectName(_fromUtf8("verticalLayoutWidget"))
+        projectList_ly = QtGui.QVBoxLayout(verticalLayoutWidget)
+        projectList_ly.setMargin(0)
+        projectList_ly.setObjectName(_fromUtf8("projectList_ly"))
+        widget = QtGui.?W..(splitter)
+        widget.setObjectName(_fromUtf8("widget"))
+        verticalLayout = QtGui.QVBoxLayout(widget)
+        verticalLayout.setMargin(0)
+        verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
+        create_btn = QtGui.?PB..(widget)
+        create_btn.setObjectName(_fromUtf8("create_btn"))
+        verticalLayout.addWidget(create_btn)
+        templateEditor_btn = QtGui.?PB..(widget)
+        templateEditor_btn.setObjectName(_fromUtf8("templateEditor_btn"))
+        verticalLayout.addWidget(templateEditor_btn)
+        groupBox = QtGui.QGroupBox(widget)
+        groupBox.setObjectName(_fromUtf8("groupBox"))
+        verticalLayout_3 = QtGui.QVBoxLayout(groupBox)
+        verticalLayout_3.setObjectName(_fromUtf8("verticalLayout_3"))
+        info_lb = QtGui.QLabel(groupBox)
+        info_lb.setAlignment(?C...Qt.AlignLeading|?C...Qt.AlignLeft|?C...Qt.AlignTop)
+        info_lb.setObjectName(_fromUtf8("info_lb"))
+        verticalLayout_3.addWidget(info_lb)
+        verticalLayout.addWidget(groupBox)
+        settings_btn = QtGui.?PB..(widget)
+        settings_btn.setObjectName(_fromUtf8("settings_btn"))
+        verticalLayout.addWidget(settings_btn)
+        verticalLayout_2.addWidget(splitter)
+        projectManager.setCentralWidget(centralwidget)
 
-        self.retranslateUi(projectManager)
-        QtCore.QMetaObject.connectSlotsByName(projectManager)
+        retranslateUi(projectManager)
+        ?C...QMetaObject.connectSlotsByName(projectManager)
 
-    def retranslateUi(self, projectManager):
+    ___ retranslateUi , projectManager
         projectManager.setWindowTitle(_translate("projectManager", "Project Manager", None))
-        self.create_btn.setText(_translate("projectManager", "Create Project", None))
-        self.templateEditor_btn.setText(_translate("projectManager", "Template Editor", None))
-        self.groupBox.setTitle(_translate("projectManager", "Info", None))
-        self.info_lb.setText(_translate("projectManager", "TextLabel", None))
-        self.settings_btn.setText(_translate("projectManager", "Settings", None))
+        create_btn.sT..(_translate("projectManager", "Create Project", None))
+        templateEditor_btn.sT..(_translate("projectManager", "Template Editor", None))
+        groupBox.setTitle(_translate("projectManager", "Info", None))
+        info_lb.sT..(_translate("projectManager", "TextLabel", None))
+        settings_btn.sT..(_translate("projectManager", "Settings", None))
 

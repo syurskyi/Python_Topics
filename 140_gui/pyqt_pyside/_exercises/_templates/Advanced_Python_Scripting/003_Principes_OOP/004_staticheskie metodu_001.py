@@ -1,7 +1,7 @@
-class someClass(object):
+c_ someClass(object
     y = 20
-    def __init__(self):
-        self.x = 10
+    ___  -  
+        x = 10
         # self.y = 100
 
 c = someClass()

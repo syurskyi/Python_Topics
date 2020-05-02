@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>settingsDialog</class>
- <widget class="QDialog" name="settingsDialog">
+ <c_>settingsDialog</c_>
+ <widget c_="QDialog" name="settingsDialog">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -13,12 +13,12 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
+  <layout c_="QVBoxLayout" name="verticalLayout">
    <item>
-    <widget class="QTableWidget" name="table"/>
+    <widget c_="QTableWidget" name="table"/>
    </item>
    <item>
-    <widget class="QDialogButtonBox" name="buttonBox">
+    <widget c_="QDialogButtonBox" name="buttonBox">
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
      </property>

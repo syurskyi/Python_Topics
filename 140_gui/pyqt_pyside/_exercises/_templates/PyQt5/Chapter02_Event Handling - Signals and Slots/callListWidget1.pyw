@@ -1,22 +1,22 @@
-import sys
+_____ ___
 
-from PyQt5.QtWidgets import QDialog, QApplication
+____ ?.?W.. _____ ?D.., ?A..
 
-from demoListWidget1 import *
+____ demoListWidget1 _____ *
 
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.ui.listWidgetDiagnosis.itemClicked.connect(self.dispSelectedTest)
-        self.show()
+c_ MyForm(?D..
+    ___  -  
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        ui.listWidgetDiagnosis.itemClicked.c..(dispSelectedTest)
+        s..
 
-    def dispSelectedTest(self):
-        self.ui.labelTest.setText("You have selected "+self.ui.listWidgetDiagnosis.currentItem().text())
+    ___ dispSelectedTest 
+        ui.labelTest.sT..("You have selected "+ui.listWidgetDiagnosis.currentItem().text())
          
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())

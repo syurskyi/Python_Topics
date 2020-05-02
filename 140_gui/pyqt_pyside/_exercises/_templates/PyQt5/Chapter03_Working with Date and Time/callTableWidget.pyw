@@ -1,23 +1,23 @@
-import sys
+_____ ___
 
-from PyQt5.QtWidgets import QDialog, QApplication,QTableWidgetItem
-from DemoTableWidget import *
+____ ?.?W.. _____ ?D.., ?A..,QTableWidgetItem
+____ DemoTableWidget _____ *
 
-class MyForm(QDialog):
-    def __init__(self,data):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.data=data
-        self.addcontent()
+c_ MyForm(?D..
+    ___  -  ,data
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        data=data
+        addcontent()
 
-    def addcontent(self):
+    ___ addcontent
         row=0
-        for tup in self.data:
+        for tup in data:
             col=0
             for item in tup:
                 oneitem=QTableWidgetItem(item)
-                self.ui.tableWidget.setItem(row, col, oneitem)
+                ui.tableWidget.setItem(row, col, oneitem)
                 col+=1
             row+=1
 data=[]
@@ -27,8 +27,8 @@ data.append(('Super Deluxe', '20$'))
 data.append(('Ordinary', '10$'))
 
                 
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     w = MyForm(data)
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())

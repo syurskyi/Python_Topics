@@ -1,25 +1,25 @@
-import sys
+_____ ___
 
-from PyQt5.QtWidgets import QDialog, QApplication
+____ ?.?W.. _____ ?D.., ?A..
 
-from demoProgressBar import *
+____ demoProgressBar _____ *
 
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.ui.pushButtonStart.clicked.connect(self.updateBar)
-        self.show()
+c_ MyForm(?D..
+    ___  -  
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        ui.pushButtonStart.clicked.c..(updateBar)
+        s..
 
-    def updateBar(self):
+    ___ updateBar 
         x = 0
         while x < 100:
             x += 0.0001
-            self.ui.progressBar.setValue(x)
+            ui.progressBar.setValue(x)
 
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())

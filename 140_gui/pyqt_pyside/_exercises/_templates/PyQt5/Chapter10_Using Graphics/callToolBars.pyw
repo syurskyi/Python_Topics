@@ -1,61 +1,61 @@
-import sys
-from PyQt5.QtWidgets import QMainWindow, QApplication
-from PyQt5.QtGui import QPainter
+_____ ___
+____ ?.?W.. _____ QMainWindow, ?A..
+____ ?.QtGui _____ QPainter
 
-from demoToolBars import *
+____ demoToolBars _____ *
 
-class AppWindow(QMainWindow):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_MainWindow()
-        self.ui.setupUi(self)
-        self.pos1 = [0,0]
-        self.pos2 = [0,0]
-        self.toDraw=""
-        self.ui.actionCircle.triggered.connect(self.drawCircle)
-        self.ui.actionRectangle.triggered.connect(self.drawRectangle)
-        self.ui.actionLine.triggered.connect(self.drawLine)
-        self.show()
+c_ AppWindow(QMainWindow
+    ___  -
+        s__. - ()
+        ui = Ui_MainWindow()
+        ui.setupUi
+        pos1 = [0,0]
+        pos2 = [0,0]
+        toDraw=""
+        ui.actionCircle.triggered.c..(drawCircle)
+        ui.actionRectangle.triggered.c..(drawRectangle)
+        ui.actionLine.triggered.c..(drawLine)
+        s..
 
-    def paintEvent(self, event):
+    ___ paintEvent , event
         qp = QPainter()
-        qp.begin(self)
-        if self.toDraw=="rectangle":
-            width = self.pos2[0]-self.pos1[0]
-            height = self.pos2[1] - self.pos1[1]     
-            qp.drawRect(self.pos1[0], self.pos1[1], width, height)
-        if self.toDraw=="line":
-            qp.drawLine(self.pos1[0], self.pos1[1], self.pos2[0], self.pos2[1])
-        if self.toDraw=="circle":
-            width = self.pos2[0]-self.pos1[0]
-            height = self.pos2[1] - self.pos1[1]           
-            rect = QtCore.QRect(self.pos1[0], self.pos1[1], width, height)
+        qp.begin
+        __ toDraw__"rectangle":
+            width = pos2[0]-pos1[0]
+            height = pos2[1] - pos1[1]
+            qp.drawRect(pos1[0], pos1[1], width, height)
+        __ toDraw__"line":
+            qp.drawLine(pos1[0], pos1[1], pos2[0], pos2[1])
+        __ toDraw__"circle":
+            width = pos2[0]-pos1[0]
+            height = pos2[1] - pos1[1]
+            rect = ?C...QRect(pos1[0], pos1[1], width, height)
             startAngle = 0
             arcLength = 360 *16
             qp.drawArc(rect, startAngle, arcLength)      
         qp.end()
         
-    def mousePressEvent(self, event):
-        if event.buttons() & QtCore.Qt.LeftButton:
-            self.pos1[0], self.pos1[1] = event.pos().x(), event.pos().y()
+    ___ mousePressEvent , event
+        __ event.buttons() & ?C...Qt.LeftButton:
+            pos1[0], pos1[1] = event.pos().x(), event.pos().y()
                         
-    def mouseReleaseEvent(self, event):
-        self.pos2[0], self.pos2[1] = event.pos().x(), event.pos().y()    
-        self.update()
+    ___ mouseReleaseEvent , event
+        pos2[0], pos2[1] = event.pos().x(), event.pos().y()
+        update()
                
-    def drawCircle(self):
-        self.toDraw="circle"
+    ___ drawCircle
+        toDraw="circle"
 
-    def drawRectangle(self):
-        self.toDraw="rectangle"
+    ___ drawRectangle
+        toDraw="rectangle"
 
-    def drawLine(self):
-        self.toDraw="line"
+    ___ drawLine
+        toDraw="line"
 
-app = QApplication(sys.argv)
+app = ?A..(___.argv)
 w = AppWindow()
-w.show()
-sys.exit(app.exec_())
+w.s..
+___.e..(app.exec_())
 
 
 

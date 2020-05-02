@@ -1,27 +1,27 @@
-import sys
+_____ ___
 
-from PyQt5.QtWidgets import QDialog, QApplication
-from PyQt5.QtCore import QRect, QPropertyAnimation
+____ PyQt5.?W.. _____ ?D.., ?A..
+____ PyQt5.?C.. _____ QRect, QPropertyAnimation
 
-from demoAnimation1 import *
+____ demoAnimation1 _____ *
 
-class MyForm(QDialog):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.ui.pushButtonMoveDown.clicked.connect(self.startAnimation)
-        self.show()
+c_ MyForm(?D..
+    ___  -  
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        ui.pushButtonMoveDown.clicked.c..(startAnimation)
+        s..
 
-    def startAnimation(self):
-        self.anim = QPropertyAnimation(self.ui.labelPic, b"geometry")
-        self.anim.setDuration(10000)
-        self.anim.setStartValue(QRect(160, 70, 80, 80))
-        self.anim.setEndValue(QRect(160, 70, 220, 220))
-        self.anim.start()
+    ___ startAnimation 
+        anim = QPropertyAnimation(ui.labelPic, b"geometry")
+        anim.setDuration(10000)
+        anim.setStartValue(QRect(160, 70, 80, 80))
+        anim.setEndValue(QRect(160, 70, 220, 220))
+        anim.start()
 
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())

@@ -1,44 +1,44 @@
-import sqlite3, sys
-from PyQt5.QtWidgets import QDialog, QApplication,QTableWidgetItem
-from sqlite3 import Error
+_____ sqlite3, ___
+____ ?.?W.. _____ ?D.., ?A..,QTableWidgetItem
+____ sqlite3 _____ Error
 
-from demoDisplayRowsOfTable import *
+____ demoDisplayRowsOfTable _____ *
 
 
-class MyForm(QDialog):
+c_ MyForm(?D..
 
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_Dialog()
-        self.ui.setupUi(self)
-        self.ui.pushButtonDisplayRows.clicked.connect(self.DisplayRows)
-        self.show()
+    ___  -  
+        s__. - ()
+        ui = Ui_Dialog()
+        ui.setupUi
+        ui.pushButtonDisplayRows.clicked.c..(DisplayRows)
+        s..
 
-    def DisplayRows(self):
-        sqlStatement="SELECT * FROM "+self.ui.lineEditTableName.text()
+    ___ DisplayRows 
+        sqlStatement="SELECT * FROM "+ui.lineEditTableName.text()
         try:
-            conn = sqlite3.connect(self.ui.lineEditDBName.text()+".db")
+            conn = sqlite3.c..(ui.lineEditDBName.text()+".db")
             cur = conn.cursor()    
             cur.execute(sqlStatement)
             rows = cur.fetchall()
             rowNo=0
             for tuple in rows:
-                self.ui.labelResponse.setText("")
+                ui.labelResponse.sT..("")
                 colNo=0
                 for columns in tuple:
                     oneColumn=QTableWidgetItem(columns)
-                    self.ui.tableWidget.setItem(rowNo, colNo, oneColumn)
+                    ui.tableWidget.setItem(rowNo, colNo, oneColumn)
                     colNo+=1
                 rowNo+=1                  
                 
         except Error as e:
-            self.ui.tableWidget.clear()
-            self.ui.labelResponse.setText("Error in accessing table")
+            ui.tableWidget.clear()
+            ui.labelResponse.sT..("Error in accessing table")
         finally:
             conn.close()
 
-if __name__=="__main__":    
-    app = QApplication(sys.argv)
+__ __name____"__main__":    
+    app = ?A..(___.argv)
     w = MyForm()
-    w.show()
-    sys.exit(app.exec_())
+    w.s..
+    ___.e..(app.exec_())

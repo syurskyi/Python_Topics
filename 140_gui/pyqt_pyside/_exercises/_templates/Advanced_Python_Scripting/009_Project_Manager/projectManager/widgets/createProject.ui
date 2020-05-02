@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>createDialog</class>
- <widget class="QDialog" name="createDialog">
+ <c_>createDialog</c_>
+ <widget c_="QDialog" name="createDialog">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -13,11 +13,11 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
+  <layout c_="QVBoxLayout" name="verticalLayout">
    <item>
-    <layout class="QGridLayout" name="gridLayout">
+    <layout c_="QGridLayout" name="gridLayout">
      <item row="0" column="0">
-      <widget class="QLabel" name="label">
+      <widget c_="QLabel" name="label">
        <property name="text">
         <string>Name</string>
        </property>
@@ -27,10 +27,10 @@
       </widget>
      </item>
      <item row="0" column="1">
-      <widget class="QLineEdit" name="name_lb"/>
+      <widget c_="QLineEdit" name="name_lb"/>
      </item>
      <item row="1" column="0">
-      <widget class="QLabel" name="label_2">
+      <widget c_="QLabel" name="label_2">
        <property name="text">
         <string>Comment</string>
        </property>
@@ -40,21 +40,21 @@
       </widget>
      </item>
      <item row="1" column="1">
-      <widget class="QPlainTextEdit" name="comment_te"/>
+      <widget c_="QPlainTextEdit" name="comment_te"/>
      </item>
     </layout>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout">
+    <layout c_="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QPushButton" name="create_btn">
+      <widget c_="QPushButton" name="create_btn">
        <property name="text">
         <string>Create</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="cancel_btn">
+      <widget c_="QPushButton" name="cancel_btn">
        <property name="text">
         <string>Cancel</string>
        </property>

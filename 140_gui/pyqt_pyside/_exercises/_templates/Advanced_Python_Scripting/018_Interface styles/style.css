@@ -1,4 +1,4 @@
-QWidget{
+?W..{
     background-color: #323232;
     color: #b1b1b1;
 
@@ -13,7 +13,7 @@ QLineEdit{
     font-size: 14px;
 }
 
-QPushButton{
+?PB..{
     background-color: QLinearGradient(x1:0, y1:0, x2:0, y2:1,
     stop: 0 #4a4a4a,
     stop: 0.1 #3a3a3a,
@@ -26,11 +26,11 @@ QPushButton{
     padding: 5px;
 }
 
-QPushButton:pressed{
+?PB..:pressed{
     background-color: black;
 }
 
-QPushButton:hover:!pressed{
+?PB..:hover:!pressed{
     background-color: QLinearGradient(x1:0, y1:0, x2:0, y2:1,
     stop: 0 #595959,
     stop: 0.1 #464646,

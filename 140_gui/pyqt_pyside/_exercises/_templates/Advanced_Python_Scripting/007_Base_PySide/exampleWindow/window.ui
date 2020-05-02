@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>example</class>
- <widget class="QWidget" name="example">
+ <c_>example</c_>
+ <widget c_="QWidget" name="example">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -13,19 +13,19 @@
   <property name="windowTitle">
    <string>Item List</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout_2">
+  <layout c_="QVBoxLayout" name="verticalLayout_2">
    <item>
-    <widget class="QPushButton" name="additem_btn">
+    <widget c_="QPushButton" name="additem_btn">
      <property name="text">
       <string>Add</string>
      </property>
     </widget>
    </item>
    <item>
-    <widget class="QLineEdit" name="name_le"/>
+    <widget c_="QLineEdit" name="name_le"/>
    </item>
    <item>
-    <layout class="QVBoxLayout" name="items_ly"/>
+    <layout c_="QVBoxLayout" name="items_ly"/>
    </item>
    <item>
     <spacer name="verticalSpacer">
