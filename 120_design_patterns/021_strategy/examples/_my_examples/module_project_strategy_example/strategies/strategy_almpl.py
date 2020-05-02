@@ -4,6 +4,6 @@ class StrategyAlmpl(Strategy):
     def calculate(value):
         return value * 0.03
 
-    def toString(self):
+    def tS..(self):
         return 'Strategy A'
 

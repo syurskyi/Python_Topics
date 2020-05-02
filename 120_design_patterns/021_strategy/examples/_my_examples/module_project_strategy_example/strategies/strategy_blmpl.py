@@ -4,5 +4,5 @@ class StrategyBlmpl(Strategy):
     def calculate(value):
         return value * 0.05
 
-    def toString(self):
+    def tS..(self):
         return 'Strategy B'

@@ -4,5 +4,5 @@ class StrategyClmpl(Strategy):
     def calculate(value):
         return value * 0.1
 
-    def toString(self):
+    def tS..(self):
         return 'Strategy C'

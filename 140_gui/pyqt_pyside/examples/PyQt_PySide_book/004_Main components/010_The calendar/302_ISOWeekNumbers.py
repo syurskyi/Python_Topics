@@ -3,7 +3,7 @@ from PyQt4 import QtCore, QtGui
 import sys, datetime
 
 def on_clicked():
-    print(calendar.selectedDate().toPyDate())
+    print(calendar.sD..().toPyDate())
 
 app = QtGui.QApplication(sys.argv)
 window = QtGui.QWidget()

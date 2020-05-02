@@ -54,7 +54,7 @@ class MyLabel2(QtGui.QLabel):
 
     def dropEvent(self, e):
         if e.mimeData().hasUrls():
-            self.setText(e.mimeData().urls()[0].toString())
+            self.setText(e.mimeData().urls()[0].tS..())
             e.accept()
         else:
             e.ignore()

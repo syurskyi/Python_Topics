@@ -3,7 +3,7 @@ from PyQt4 import QtCore, QtGui
 import sys
 
 def on_clicked():
-    print(textBrowser.source().toString())
+    print(textBrowser.source().tS..())
     textBrowser.home()
 
 app = QtGui.QApplication(sys.argv)

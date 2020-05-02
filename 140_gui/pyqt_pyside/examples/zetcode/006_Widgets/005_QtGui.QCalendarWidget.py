@@ -22,13 +22,13 @@ class Example(QtGui.QWidget):
     def initUI(self):
 
         cal = QtGui.QCalendarWidget(self)
-        cal.setGridVisible(True)
+        cal.sGV..(True)
         cal.move(20, 20)
         cal.clicked[QtCore.QDate].connect(self.showDate)
 
         self.lbl = QtGui.QLabel(self)
-        date = cal.selectedDate()
-        self.lbl.setText(date.toString())
+        date = cal.sD..()
+        self.lbl.setText(date.tS..())
         self.lbl.move(130, 260)
 
         self.setGeometry(300, 300, 350, 300)
@@ -37,7 +37,7 @@ class Example(QtGui.QWidget):
 
     def showDate(self, date):
 
-        self.lbl.setText(date.toString())
+        self.lbl.setText(date.tS..())
 
 def start():
     #global form

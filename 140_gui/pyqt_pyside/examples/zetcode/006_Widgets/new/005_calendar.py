@@ -18,14 +18,14 @@ class Example(QWidget):
         vbox = QVBoxLayout(self)
 
         cal = QCalendarWidget(self)
-        cal.setGridVisible(True)
+        cal.sGV..(True)
         cal.clicked[QDate].connect(self.showDate)
 
         vbox.addWidget(cal)
 
         self.lbl = QLabel(self)
-        date = cal.selectedDate()
-        self.lbl.setText(date.toString())
+        date = cal.sD..()
+        self.lbl.setText(date.tS..())
 
         vbox.addWidget(self.lbl)
 
@@ -36,7 +36,7 @@ class Example(QWidget):
         self.show()
 
     def showDate(self, date):
-        self.lbl.setText(date.toString())
+        self.lbl.setText(date.tS..())
 
 
 if __name__ == '__main__':

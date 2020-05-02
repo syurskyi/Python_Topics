@@ -20,7 +20,7 @@ class serverWindow(QWidget, ui.Ui_Server):
         connection.nextBlockSize = 0
         connection.readyRead.connect(partial(self.receiveMessage, connection))
         connection.error.connect(self.socketError)
-        adr = str(connection.peerAddress().toString())
+        adr = str(connection.peerAddress().tS..())
         self.consoleMessage('Connected to: ' + adr)
 
     def consoleMessage(self, text):
