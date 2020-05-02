@@ -313,7 +313,7 @@ c_ MainWindow(?G...?W..
         dirTreeView.hideColumn(3)
 
         # DirTree事件响应
-        dirTreeView.selectionModel().selectionChanged.c..(dirTreeClicked)
+        dirTreeView.selectionModel().sC__.c..(dirTreeClicked)
 
         mainLayout _ ?G...QVBoxLayout()
         mainSpliter.addWidget(dirTreeView)

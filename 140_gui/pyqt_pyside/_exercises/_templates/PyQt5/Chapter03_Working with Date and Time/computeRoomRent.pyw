@@ -19,7 +19,7 @@ c_ MyForm(?D..
           ui.comboBox.aI..(i)
      
     ___ computeRoomRent 
-        dateselected_ui.calendarWidget.selectedDate()
+        dateselected_ui.cW__.selectedDate()
         dateinstring_st.(dateselected.toPyDate())
         noOfDays_ui.spinBox.v..
         chosenRoomType_ui.comboBox.iT..(ui.comboBox.cI..())
