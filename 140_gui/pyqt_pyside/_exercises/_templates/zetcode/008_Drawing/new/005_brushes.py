@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 ____ ?.?W.. ______ W.., ?A..
-____ ?.?G__ ______ QPainter, QBrush
+____ ?.?G__ ______ ?P.., QBrush
 ____ ?.?C.. ______ __
 ______ ___
 
@@ -20,7 +20,7 @@ c_ Example(W..):
         show
 
     ___ paintEvent(self, e):
-        qp _ QPainter
+        qp _ ?P..
         qp.begin(
         drawBrushes(qp)
         qp.end

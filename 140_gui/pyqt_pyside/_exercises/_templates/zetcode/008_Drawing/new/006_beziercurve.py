@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 ____ ?.?W.. ______ W.., ?A..
-____ ?.?G__ ______ QPainter, QPainterPath
+____ ?.?G__ ______ ?P.., QPainterPath
 ____ ?.?C.. ______ __
 ______ ___
 
@@ -20,9 +20,9 @@ c_ Example(W..):
         show
 
     ___ paintEvent(self, e):
-        qp _ QPainter
+        qp _ ?P..
         qp.begin(
-        qp.setRenderHint(QPainter.Antialiasing)
+        qp.setRenderHint(?P...Antialiasing)
         drawBezierCurve(qp)
         qp.end
 

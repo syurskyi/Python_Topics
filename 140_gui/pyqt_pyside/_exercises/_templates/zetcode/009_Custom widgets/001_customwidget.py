@@ -5,7 +5,7 @@
 ____ ?.?W.. ______ (W.., ?S.., ?A..,
                              ?HB.., ?VB..)
 ____ ?.?C.. ______ QObject, __, pyqtSignal
-____ ?.?G__ ______ QPainter, QFont, ?C.., QPen
+____ ?.?G__ ______ ?P.., QFont, ?C.., QPen
 ______ ___
 
 
@@ -32,7 +32,7 @@ c_ BurningWidget(W..):
 
     ___ paintEvent(self, e):
 
-        qp _ QPainter
+        qp _ ?P..
         qp.begin(
         drawWidget(qp)
         qp.end

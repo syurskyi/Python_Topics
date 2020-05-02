@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 ____ ?.?W.. ______ W.., ?A..
-____ ?.?G__ ______ QPainter, ?C.., QBrush
+____ ?.?G__ ______ ?P.., ?C.., QBrush
 ______ ___
 
 
@@ -19,7 +19,7 @@ c_ Example(W..):
         show
 
     ___ paintEvent(self, e):
-        qp _ QPainter
+        qp _ ?P..
         qp.begin(
         drawRectangles(qp)
         qp.end
