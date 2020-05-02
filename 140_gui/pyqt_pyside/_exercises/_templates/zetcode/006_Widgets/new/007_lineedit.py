@@ -2,37 +2,37 @@
 # -*- coding: utf-8 -*-
 
 
-import sys
-from PySide2.QtWidgets import (QWidget, QLabel,
+______ ___
+____ ?.?W.. ______ (W.., ?L..,
                              QLineEdit, QApplication)
 
 
-class Example(QWidget):
+c_ Example(W..):
 
-    def __init__(self):
-        super().__init__()
+    ___ -
+        s__ .-
 
-        self.initUI()
+        ?
 
-    def initUI(self):
-        self.lbl = QLabel(self)
-        qle = QLineEdit(self)
+    ___ initUI
+        lbl _ ?L..(
+        qle _ QLineEdit(
 
-        qle.move(60, 100)
-        self.lbl.move(60, 40)
+        qle.m..(60, 100)
+        lbl.m..(60, 40)
 
-        qle.textChanged[str].connect(self.onChanged)
+        qle.textChanged[str].connect(onChanged)
 
-        self.setGeometry(300, 300, 280, 170)
-        self.setWindowTitle('QLineEdit')
-        self.show()
+        sG__(300, 300, 280, 170)
+        sWT__('QLineEdit')
+        show
 
-    def onChanged(self, text):
-        self.lbl.setText(text)
-        self.lbl.adjustSize()
+    ___ onChanged(self, text):
+        lbl.setText(text)
+        lbl.adjustSize
 
 
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = Example()
-    sys.exit(app.exec_())
+__ _____ __ _______
+    app _ QApplication(___.argv)
+    ex _ Example
+    ___.exit(app.e..())

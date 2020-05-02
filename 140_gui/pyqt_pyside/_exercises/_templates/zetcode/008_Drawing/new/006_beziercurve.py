@@ -1,40 +1,40 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-from PySide2.QtWidgets import QWidget, QApplication
-from PySide2.QtGui import QPainter, QPainterPath
-from PySide2.QtCore import Qt
-import sys
+____ ?.?W.. ______ W.., QApplication
+____ ?.QtGui ______ QPainter, QPainterPath
+____ ?.QtCore ______ Qt
+______ ___
 
 
-class Example(QWidget):
+c_ Example(W..):
 
-    def __init__(self):
-        super().__init__()
+    ___ -
+        s__ .-
 
-        self.initUI()
+        ?
 
-    def initUI(self):
-        self.setGeometry(300, 300, 380, 250)
-        self.setWindowTitle('Bézier curve')
-        self.show()
+    ___ initUI
+        sG__(300, 300, 380, 250)
+        sWT__('Bézier curve')
+        show
 
-    def paintEvent(self, e):
-        qp = QPainter()
-        qp.begin(self)
+    ___ paintEvent(self, e):
+        qp _ QPainter
+        qp.begin(
         qp.setRenderHint(QPainter.Antialiasing)
-        self.drawBezierCurve(qp)
-        qp.end()
+        drawBezierCurve(qp)
+        qp.end
 
-    def drawBezierCurve(self, qp):
-        path = QPainterPath()
+    ___ drawBezierCurve(self, qp):
+        path _ QPainterPath
         path.moveTo(30, 30)
         path.cubicTo(30, 30, 200, 350, 350, 30)
 
         qp.drawPath(path)
 
 
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = Example()
-    sys.exit(app.exec_())
+__ _____ __ _______
+    app _ QApplication(___.argv)
+    ex _ Example
+    ___.exit(app.e..())

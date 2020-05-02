@@ -2,39 +2,39 @@
 # -*- coding: utf-8 -*-
 
 
-from PySide2.QtWidgets import (QWidget, QPushButton, QLineEdit,
+____ ?.?W.. ______ (W.., ?P.., QLineEdit,
                              QInputDialog, QApplication)
-import sys
+______ ___
 
 
-class Example(QWidget):
+c_ Example(W..):
 
-    def __init__(self):
-        super().__init__()
+    ___ -
+        s__ .-
 
-        self.initUI()
+        ?
 
-    def initUI(self):
-        self.btn = QPushButton('Dialog', self)
-        self.btn.move(20, 20)
-        self.btn.clicked.connect(self.showDialog)
+    ___ initUI
+        btn _ ?P..('Dialog',
+        btn.m..(20, 20)
+        btn.clicked.connect(showDialog)
 
-        self.le = QLineEdit(self)
-        self.le.move(130, 22)
+        le _ QLineEdit(
+        le.m..(130, 22)
 
-        self.setGeometry(300, 300, 290, 150)
-        self.setWindowTitle('Input dialog')
-        self.show()
+        sG__(300, 300, 290, 150)
+        sWT__('Input dialog')
+        show
 
-    def showDialog(self):
-        text, ok = QInputDialog.getText(self, 'Input Dialog',
+    ___ showDialog
+        text, ok _ QInputDialog.getText(self, 'Input Dialog',
                                         'Enter your name:')
 
-        if ok:
-            self.le.setText(str(text))
+        __ ok:
+            le.setText(str(text))
 
 
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = Example()
-    sys.exit(app.exec_())
+__ _____ __ _______
+    app _ QApplication(___.argv)
+    ex _ Example
+    ___.exit(app.e..())

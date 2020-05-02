@@ -1,49 +1,49 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-from PySide2.QtWidgets import (QMainWindow, QTextEdit,
+____ ?.?W.. ______ (QMainWindow, QTextEdit,
                              QAction, QFileDialog, QApplication)
-from PySide2.QtGui import QIcon
-import sys
+____ ?.QtGui ______ QIcon
+______ ___
 
 
-class Example(QMainWindow):
+c_ Example(QMainWindow):
 
-    def __init__(self):
-        super().__init__()
+    ___ -
+        s__ .-
 
-        self.initUI()
+        ?
 
-    def initUI(self):
-        self.textEdit = QTextEdit()
-        self.setCentralWidget(self.textEdit)
-        self.statusBar()
+    ___ initUI
+        textEdit _ QTextEdit
+        setCentralWidget(textEdit)
+        sB__
 
-        openFile = QAction(QIcon('open.png'), 'Open', self)
+        openFile _ QAction(QIcon('open.png'), 'Open',
         openFile.setShortcut('Ctrl+O')
         openFile.setStatusTip('Open new File')
-        openFile.triggered.connect(self.showDialog)
+        openFile.triggered.connect(showDialog)
 
-        menubar = self.menuBar()
-        fileMenu = menubar.addMenu('&File')
+        menubar _ menuBar
+        fileMenu _ menubar.addMenu('&File')
         fileMenu.addAction(openFile)
 
-        self.setGeometry(300, 300, 350, 300)
-        self.setWindowTitle('File dialog')
-        self.show()
+        sG__(300, 300, 350, 300)
+        sWT__('File dialog')
+        show
 
-    def showDialog(self):
-        fname = QFileDialog.getOpenFileName(self, 'Open file', '/home')
+    ___ showDialog
+        fname _ QFileDialog.getOpenFileName(self, 'Open file', '/home')
 
-        if fname[0]:
-            f = open(fname[0], 'r')
+        __ fname[0]:
+            f _ open(fname[0], 'r')
 
             with f:
-                data = f.read()
-                self.textEdit.setText(data)
+                data _ f.read
+                textEdit.setText(data)
 
 
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = Example()
-    sys.exit(app.exec_())
+__ _____ __ _______
+    app _ QApplication(___.argv)
+    ex _ Example
+    ___.exit(app.e..())

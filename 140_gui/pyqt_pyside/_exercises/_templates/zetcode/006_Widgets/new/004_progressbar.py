@@ -2,56 +2,56 @@
 # -*- coding: utf-8 -*-
 
 
-from PySide2.QtWidgets import (QWidget, QProgressBar,
-                             QPushButton, QApplication)
-from PySide2.QtCore import QBasicTimer
-import sys
+____ ?.?W.. ______ (W.., QProgressBar,
+                             ?P.., QApplication)
+____ ?.QtCore ______ QBasicTimer
+______ ___
 
 
-class Example(QWidget):
+c_ Example(W..):
 
-    def __init__(self):
-        super().__init__()
+    ___ -
+        s__ .-
 
-        self.initUI()
+        ?
 
-    def initUI(self):
+    ___ initUI
 
-        self.pbar = QProgressBar(self)
-        self.pbar.setGeometry(30, 40, 200, 25)
+        pbar _ QProgressBar(
+        pbar.sG__(30, 40, 200, 25)
 
-        self.btn = QPushButton('Start', self)
-        self.btn.move(40, 80)
-        self.btn.clicked.connect(self.doAction)
+        btn _ ?P..('Start',
+        btn.m..(40, 80)
+        btn.clicked.connect(doAction)
 
-        self.timer = QBasicTimer()
-        self.step = 0
+        timer _ QBasicTimer
+        step _ 0
 
-        self.setGeometry(300, 300, 280, 170)
-        self.setWindowTitle('QProgressBar')
-        self.show()
+        sG__(300, 300, 280, 170)
+        sWT__('QProgressBar')
+        show
 
-    def timerEvent(self, e):
+    ___ timerEvent(self, e):
 
-        if self.step >= 100:
-            self.timer.stop()
-            self.btn.setText('Finished')
+        __ step >= 100:
+            timer.stop
+            btn.setText('Finished')
             return
 
-        self.step = self.step + 1
-        self.pbar.setValue(self.step)
+        step _ step + 1
+        pbar.setValue(step)
 
-    def doAction(self):
+    ___ doAction
 
-        if self.timer.isActive():
-            self.timer.stop()
-            self.btn.setText('Start')
+        __ timer.isActive :
+            timer.stop
+            btn.setText('Start')
         else:
-            self.timer.start(100, self)
-            self.btn.setText('Stop')
+            timer.start(100,
+            btn.setText('Stop')
 
 
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = Example()
-    sys.exit(app.exec_())
+__ _____ __ _______
+    app _ QApplication(___.argv)
+    ex _ Example
+    ___.exit(app.e..())

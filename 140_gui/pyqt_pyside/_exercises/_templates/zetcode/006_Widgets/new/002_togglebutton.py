@@ -2,71 +2,71 @@
 # -*- coding: utf-8 -*-
 
 
-from PySide2.QtWidgets import (QWidget, QPushButton,
+____ ?.?W.. ______ (W.., ?P..,
                              QFrame, QApplication)
-from PySide2.QtGui import QColor
-import sys
+____ ?.QtGui ______ QColor
+______ ___
 
 
-class Example(QWidget):
+c_ Example(W..):
 
-    def __init__(self):
-        super().__init__()
+    ___ -
+        s__ .-
 
-        self.initUI()
+        ?
 
-    def initUI(self):
+    ___ initUI
 
-        self.col = QColor(0, 0, 0)
+        col _ QColor(0, 0, 0)
 
-        redb = QPushButton('Red', self)
+        redb _ ?P..('Red',
         redb.setCheckable(True)
-        redb.move(10, 10)
+        redb.m..(10, 10)
 
-        redb.clicked[bool].connect(self.setColor)
+        redb.clicked[bool].connect(setColor)
 
-        greenb = QPushButton('Green', self)
+        greenb _ ?P..('Green',
         greenb.setCheckable(True)
-        greenb.move(10, 60)
+        greenb.m..(10, 60)
 
-        greenb.clicked[bool].connect(self.setColor)
+        greenb.clicked[bool].connect(setColor)
 
-        blueb = QPushButton('Blue', self)
+        blueb _ ?P..('Blue',
         blueb.setCheckable(True)
-        blueb.move(10, 110)
+        blueb.m..(10, 110)
 
-        blueb.clicked[bool].connect(self.setColor)
+        blueb.clicked[bool].connect(setColor)
 
-        self.square = QFrame(self)
-        self.square.setGeometry(150, 20, 100, 100)
-        self.square.setStyleSheet("QWidget { background-color: %s }" %
-                                  self.col.name())
+        square _ QFrame(
+        square.sG__(150, 20, 100, 100)
+        square.setStyleSheet("QWidget { background-color: %s }" %
+                                  col.name())
 
-        self.setGeometry(300, 300, 280, 170)
-        self.setWindowTitle('Toggle button')
-        self.show()
+        sG__(300, 300, 280, 170)
+        sWT__('Toggle button')
+        show
 
-    def setColor(self, pressed):
+    ___ setColor(self, pressed):
 
-        source = self.sender()
+        source _ sender
 
-        if pressed:
-            val = 255
+        __ pressed:
+            val _ 255
         else:
-            val = 0
+            val _ 0
 
-        if source.text() == "Red":
-            self.col.setRed(val)
-        elif source.text() == "Green":
-            self.col.setGreen(val)
+        __ source.text  __ "Red":
+            col.setRed(val)
+        elif source.text  __ "Green":
+            col.setGreen(val)
         else:
-            self.col.setBlue(val)
+            col.setBlue(val)
 
-        self.square.setStyleSheet("QFrame { background-color: %s }" %
-                                  self.col.name())
+        square.setStyleSheet("QFrame { background-color: %s }" %
+                                  col.name())
 
 
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = Example()
-    sys.exit(app.exec_())
+__ _____ __ _______
+    app _ QApplication(___.argv)
+    ex _ Example
+    ___.exit(app.e..())

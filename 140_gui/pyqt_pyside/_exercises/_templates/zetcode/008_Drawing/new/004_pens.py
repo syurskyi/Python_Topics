@@ -1,32 +1,32 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-from PySide2.QtWidgets import QWidget, QApplication
-from PySide2.QtGui import QPainter, QPen
-from PySide2.QtCore import Qt
-import sys
+____ ?.?W.. ______ W.., QApplication
+____ ?.QtGui ______ QPainter, QPen
+____ ?.QtCore ______ Qt
+______ ___
 
 
-class Example(QWidget):
+c_ Example(W..):
 
-    def __init__(self):
-        super().__init__()
+    ___ -
+        s__ .-
 
-        self.initUI()
+        ?
 
-    def initUI(self):
-        self.setGeometry(300, 300, 280, 270)
-        self.setWindowTitle('Pen styles')
-        self.show()
+    ___ initUI
+        sG__(300, 300, 280, 270)
+        sWT__('Pen styles')
+        show
 
-    def paintEvent(self, e):
-        qp = QPainter()
-        qp.begin(self)
-        self.drawLines(qp)
-        qp.end()
+    ___ paintEvent(self, e):
+        qp _ QPainter
+        qp.begin(
+        drawLines(qp)
+        qp.end
 
-    def drawLines(self, qp):
-        pen = QPen(Qt.black, 2, Qt.SolidLine)
+    ___ drawLines(self, qp):
+        pen _ QPen(Qt.black, 2, Qt.SolidLine)
 
         qp.setPen(pen)
         qp.drawLine(20, 40, 250, 40)
@@ -53,7 +53,7 @@ class Example(QWidget):
         qp.drawLine(20, 240, 250, 240)
 
 
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = Example()
-    sys.exit(app.exec_())
+__ _____ __ _______
+    app _ QApplication(___.argv)
+    ex _ Example
+    ___.exit(app.e..())

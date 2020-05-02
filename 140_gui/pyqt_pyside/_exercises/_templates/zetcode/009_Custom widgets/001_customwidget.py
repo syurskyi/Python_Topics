@@ -2,59 +2,59 @@
 # -*- coding: utf-8 -*-
 
 
-from PyQt5.QtWidgets import (QWidget, QSlider, QApplication,
-                             QHBoxLayout, QVBoxLayout)
-from PyQt5.QtCore import QObject, Qt, pyqtSignal
-from PyQt5.QtGui import QPainter, QFont, QColor, QPen
-import sys
+____ ?.?W.. ______ (W.., QSlider, QApplication,
+                             ?HB.., ?VB..)
+____ ?.QtCore ______ QObject, Qt, pyqtSignal
+____ ?.QtGui ______ QPainter, QFont, QColor, QPen
+______ ___
 
 
-class Communicate(QObject):
-    updateBW = pyqtSignal(int)
+c_ Communicate(QObject):
+    updateBW _ pyqtSignal(int)
 
 
-class BurningWidget(QWidget):
+c_ BurningWidget(W..):
 
-    def __init__(self):
-        super().__init__()
+    ___ -
+        s__ .-
 
-        self.initUI()
+        ?
 
-    def initUI(self):
+    ___ initUI
 
-        self.setMinimumSize(1, 30)
-        self.value = 75
-        self.num = [75, 150, 225, 300, 375, 450, 525, 600, 675]
+        setMinimumSize(1, 30)
+        value _ 75
+        num _ [75, 150, 225, 300, 375, 450, 525, 600, 675]
 
-    def setValue(self, value):
+    ___ setValue(self, value):
 
-        self.value = value
+        value _ value
 
-    def paintEvent(self, e):
+    ___ paintEvent(self, e):
 
-        qp = QPainter()
-        qp.begin(self)
-        self.drawWidget(qp)
-        qp.end()
+        qp _ QPainter
+        qp.begin(
+        drawWidget(qp)
+        qp.end
 
-    def drawWidget(self, qp):
+    ___ drawWidget(self, qp):
 
-        MAX_CAPACITY = 700
-        OVER_CAPACITY = 750
+        MAX_CAPACITY _ 700
+        OVER_CAPACITY _ 750
 
-        font = QFont('Serif', 7, QFont.Light)
+        font _ QFont('Serif', 7, QFont.Light)
         qp.setFont(font)
 
-        size = self.size()
-        w = size.width()
-        h = size.height()
+        size _ size
+        w _ size.width
+        h _ size.height
 
-        step = int(round(w / 10))
+        step _ int(round(w / 10))
 
-        till = int(((w / OVER_CAPACITY) * self.value))
-        full = int(((w / OVER_CAPACITY) * MAX_CAPACITY))
+        till _ int(((w / OVER_CAPACITY) * value))
+        full _ int(((w / OVER_CAPACITY) * MAX_CAPACITY))
 
-        if self.value >= MAX_CAPACITY:
+        __ value >= MAX_CAPACITY:
 
             qp.setPen(QColor(255, 255, 255))
             qp.setBrush(QColor(255, 255, 184))
@@ -69,61 +69,61 @@ class BurningWidget(QWidget):
             qp.setBrush(QColor(255, 255, 184))
             qp.drawRect(0, 0, till, h)
 
-        pen = QPen(QColor(20, 20, 20), 1,
+        pen _ QPen(QColor(20, 20, 20), 1,
                    Qt.SolidLine)
 
         qp.setPen(pen)
         qp.setBrush(Qt.NoBrush)
         qp.drawRect(0, 0, w - 1, h - 1)
 
-        j = 0
+        j _ 0
 
-        for i in range(step, 10 * step, step):
+        ___ i __ ra..(step, 10 * step, step):
             qp.drawLine(i, 0, i, 5)
-            metrics = qp.fontMetrics()
-            fw = metrics.width(str(self.num[j]))
-            qp.drawText(i - fw / 2, h / 2, str(self.num[j]))
-            j = j + 1
+            metrics _ qp.fontMetrics
+            fw _ metrics.width(str(num[j]))
+            qp.drawText(i - fw / 2, h / 2, str(num[j]))
+            j _ j + 1
 
 
-class Example(QWidget):
+c_ Example(W..):
 
-    def __init__(self):
-        super().__init__()
+    ___ -
+        s__ .-
 
-        self.initUI()
+        ?
 
-    def initUI(self):
-        OVER_CAPACITY = 750
+    ___ initUI
+        OVER_CAPACITY _ 750
 
-        sld = QSlider(Qt.Horizontal, self)
+        sld _ QSlider(Qt.Horizontal,
         sld.setFocusPolicy(Qt.NoFocus)
         sld.setRange(1, OVER_CAPACITY)
         sld.setValue(75)
-        sld.setGeometry(30, 40, 150, 30)
+        sld.sG__(30, 40, 150, 30)
 
-        self.c = Communicate()
-        self.wid = BurningWidget()
-        self.c.updateBW[int].connect(self.wid.setValue)
+        c _ Communicate
+        wid _ BurningWidget
+        c.updateBW[int].connect(wid.setValue)
 
-        sld.valueChanged[int].connect(self.changeValue)
-        hbox = QHBoxLayout()
-        hbox.addWidget(self.wid)
-        vbox = QVBoxLayout()
-        vbox.addStretch(1)
-        vbox.addLayout(hbox)
-        self.setLayout(vbox)
+        sld.valueChanged[int].connect(changeValue)
+        hbox _ ?HB..
+        hbox.aW..(wid)
+        vbox _ ?VB..
+        vbox.aS..(1)
+        vbox.aL..(hbox)
+        sL..(vbox)
 
-        self.setGeometry(300, 300, 390, 210)
-        self.setWindowTitle('Burning widget')
-        self.show()
+        sG__(300, 300, 390, 210)
+        sWT__('Burning widget')
+        show
 
-    def changeValue(self, value):
-        self.c.updateBW.emit(value)
-        self.wid.repaint()
+    ___ changeValue(self, value):
+        c.updateBW.emit(value)
+        wid.repaint
 
 
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = Example()
-    sys.exit(app.exec_())
+__ _____ __ _______
+    app _ QApplication(___.argv)
+    ex _ Example
+    ___.exit(app.e..())

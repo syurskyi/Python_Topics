@@ -16,7 +16,7 @@
 #         sTT.. *This is a <b>QWidget</b> widget
 #
 #         btn _ QPB..  *Button ?
-#         ?.sTT.. *This is a <b>QPushButton</b> widget
+#         ?.sTT.. *This is a <b>?P..</b> widget
 #         ?.r.. ?.sH..
 #         ?.m.. 50, 50
 #

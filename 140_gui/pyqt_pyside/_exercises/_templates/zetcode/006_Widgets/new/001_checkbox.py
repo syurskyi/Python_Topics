@@ -1,38 +1,38 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-from PySide2.QtWidgets import QWidget, QCheckBox, QApplication
-from PySide2.QtCore import Qt
-import sys
+____ ?.?W.. ______ W.., QCheckBox, QApplication
+____ ?.QtCore ______ Qt
+______ ___
 
 
-class Example(QWidget):
+c_ Example(W..):
 
-    def __init__(self):
-        super().__init__()
+    ___ -
+        s__ .-
 
-        self.initUI()
+        ?
 
-    def initUI(self):
+    ___ initUI
 
-        cb = QCheckBox('Show title', self)
-        cb.move(20, 20)
-        cb.toggle()
-        cb.stateChanged.connect(self.changeTitle)
+        cb _ QCheckBox('Show title',
+        cb.m..(20, 20)
+        cb.toggle
+        cb.stateChanged.connect(changeTitle)
 
-        self.setGeometry(300, 300, 250, 150)
-        self.setWindowTitle('QCheckBox')
-        self.show()
+        sG__(300, 300, 250, 150)
+        sWT__('QCheckBox')
+        show
 
-    def changeTitle(self, state):
+    ___ changeTitle(self, state):
 
-        if state == Qt.Checked:
-            self.setWindowTitle('QCheckBox')
+        __ state __ Qt.Checked:
+            sWT__('QCheckBox')
         else:
-            self.setWindowTitle(' ')
+            sWT__(' ')
 
 
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = Example()
-    sys.exit(app.exec_())
+__ _____ __ _______
+    app _ QApplication(___.argv)
+    ex _ Example
+    ___.exit(app.e..())

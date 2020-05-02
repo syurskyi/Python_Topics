@@ -1,35 +1,35 @@
-import sys
-from PySide2.QtCore import Qt
-from PySide2.QtWidgets import *
+______ ___
+____ ?.QtCore ______ Qt
+____ ?.?W.. ______ *
 
 
-class Example(QWidget):
+c_ Example(W..):
 
-    def __init__(self):
-        super(Example, self).__init__()
+    ___ -
+        s__ ?  .-
 
-        self.initUI()
+        ?
 
-    def initUI(self):
+    ___ initUI
 
-        lcd = QLCDNumber(self)
-        sld = QSlider(Qt.Horizontal, self)
+        lcd _ QLCDNumber(
+        sld _ QSlider(Qt.Horizontal,
 
-        vbox = QVBoxLayout()
-        vbox.addWidget(lcd)
-        vbox.addWidget(sld)
+        vbox _ ?VB..
+        vbox.aW..(lcd)
+        vbox.aW..(sld)
 
-        self.setLayout(vbox)
+        sL..(vbox)
         sld.valueChanged.connect(lcd.display)
 
-        self.setGeometry(300, 300, 250, 150)
-        self.setWindowTitle('Signal & slot')
-        self.show()
+        sG__(300, 300, 250, 150)
+        sWT__('Signal & slot')
+        show
 
 
-def start():
+___ start :
     #global form
-    start.form = Example()
-    start.form.show()
+    start.form _ Example
+    start.form.show
 
-start()
+start

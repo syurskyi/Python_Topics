@@ -2,48 +2,48 @@
 # -*- coding: utf-8 -*-
 
 
-from PySide2.QtWidgets import (QWidget, QHBoxLayout, QFrame,
+____ ?.?W.. ______ (W.., ?HB.., QFrame,
                              QSplitter, QStyleFactory, QApplication)
-from PySide2.QtCore import Qt
-import sys
+____ ?.QtCore ______ Qt
+______ ___
 
 
-class Example(QWidget):
+c_ Example(W..):
 
-    def __init__(self):
-        super().__init__()
+    ___ -
+        s__ .-
 
-        self.initUI()
+        ?
 
-    def initUI(self):
-        hbox = QHBoxLayout(self)
+    ___ initUI
+        hbox _ ?HB..(
 
-        topleft = QFrame(self)
+        topleft _ QFrame(
         topleft.setFrameShape(QFrame.StyledPanel)
 
-        topright = QFrame(self)
+        topright _ QFrame(
         topright.setFrameShape(QFrame.StyledPanel)
 
-        bottom = QFrame(self)
+        bottom _ QFrame(
         bottom.setFrameShape(QFrame.StyledPanel)
 
-        splitter1 = QSplitter(Qt.Horizontal)
-        splitter1.addWidget(topleft)
-        splitter1.addWidget(topright)
+        splitter1 _ QSplitter(Qt.Horizontal)
+        splitter1.aW..(topleft)
+        splitter1.aW..(topright)
 
-        splitter2 = QSplitter(Qt.Vertical)
-        splitter2.addWidget(splitter1)
-        splitter2.addWidget(bottom)
+        splitter2 _ QSplitter(Qt.Vertical)
+        splitter2.aW..(splitter1)
+        splitter2.aW..(bottom)
 
-        hbox.addWidget(splitter2)
-        self.setLayout(hbox)
+        hbox.aW..(splitter2)
+        sL..(hbox)
 
-        self.setGeometry(300, 300, 300, 200)
-        self.setWindowTitle('QSplitter')
-        self.show()
+        sG__(300, 300, 300, 200)
+        sWT__('QSplitter')
+        show
 
 
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = Example()
-    sys.exit(app.exec_())
+__ _____ __ _______
+    app _ QApplication(___.argv)
+    ex _ Example
+    ___.exit(app.e..())

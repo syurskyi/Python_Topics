@@ -1,35 +1,35 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-from PySide2.QtWidgets import (QWidget, QHBoxLayout,
-                             QLabel, QApplication)
-from PySide2.QtGui import QPixmap
-import sys
+____ ?.?W.. ______ (W.., ?HB..,
+                             ?L.., QApplication)
+____ ?.QtGui ______ QPixmap
+______ ___
 
 
-class Example(QWidget):
+c_ Example(W..):
 
-    def __init__(self):
-        super().__init__()
+    ___ -
+        s__ .-
 
-        self.initUI()
+        ?
 
-    def initUI(self):
-        hbox = QHBoxLayout(self)
-        pixmap = QPixmap("redrock.png")
+    ___ initUI
+        hbox _ ?HB..(
+        pixmap _ QPixmap("redrock.png")
 
-        lbl = QLabel(self)
+        lbl _ ?L..(
         lbl.setPixmap(pixmap)
 
-        hbox.addWidget(lbl)
-        self.setLayout(hbox)
+        hbox.aW..(lbl)
+        sL..(hbox)
 
-        self.move(300, 200)
-        self.setWindowTitle('Red Rock')
-        self.show()
+        m..(300, 200)
+        sWT__('Red Rock')
+        show
 
 
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = Example()
-    sys.exit(app.exec_())
+__ _____ __ _______
+    app _ QApplication(___.argv)
+    ex _ Example
+    ___.exit(app.e..())

@@ -2,43 +2,43 @@
 # -*- coding: utf-8 -*-
 
 
-from PySide2.QtWidgets import (QWidget, QLabel,
+____ ?.?W.. ______ (W.., ?L..,
                              QComboBox, QApplication)
-import sys
+______ ___
 
 
-class Example(QWidget):
+c_ Example(W..):
 
-    def __init__(self):
-        super().__init__()
+    ___ -
+        s__ .-
 
-        self.initUI()
+        ?
 
-    def initUI(self):
-        self.lbl = QLabel("Ubuntu", self)
+    ___ initUI
+        lbl _ ?L..("Ubuntu",
 
-        combo = QComboBox(self)
+        combo _ QComboBox(
         combo.addItem("Ubuntu")
         combo.addItem("Mandriva")
         combo.addItem("Fedora")
         combo.addItem("Arch")
         combo.addItem("Gentoo")
 
-        combo.move(50, 50)
-        self.lbl.move(50, 150)
+        combo.m..(50, 50)
+        lbl.m..(50, 150)
 
-        combo.activated[str].connect(self.onActivated)
+        combo.activated[str].connect(onActivated)
 
-        self.setGeometry(300, 300, 300, 200)
-        self.setWindowTitle('QComboBox')
-        self.show()
+        sG__(300, 300, 300, 200)
+        sWT__('QComboBox')
+        show
 
-    def onActivated(self, text):
-        self.lbl.setText(text)
-        self.lbl.adjustSize()
+    ___ onActivated(self, text):
+        lbl.setText(text)
+        lbl.adjustSize
 
 
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = Example()
-    sys.exit(app.exec_())
+__ _____ __ _______
+    app _ QApplication(___.argv)
+    ex _ Example
+    ___.exit(app.e..())

@@ -1,48 +1,48 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-from PySide2.QtWidgets import (QWidget, QVBoxLayout, QPushButton,
-                             QSizePolicy, QLabel, QFontDialog, QApplication)
-import sys
+____ ?.?W.. ______ (W.., ?VB.., ?P..,
+                             QSizePolicy, ?L.., QFontDialog, QApplication)
+______ ___
 
 
-class Example(QWidget):
+c_ Example(W..):
 
-    def __init__(self):
-        super().__init__()
+    ___ -
+        s__ .-
 
-        self.initUI()
+        ?
 
-    def initUI(self):
-        vbox = QVBoxLayout()
+    ___ initUI
+        vbox _ ?VB..
 
-        btn = QPushButton('Dialog', self)
+        btn _ ?P..('Dialog',
         btn.setSizePolicy(QSizePolicy.Fixed,
                           QSizePolicy.Fixed)
 
-        btn.move(20, 20)
+        btn.m..(20, 20)
 
-        vbox.addWidget(btn)
+        vbox.aW..(btn)
 
-        btn.clicked.connect(self.showDialog)
+        btn.clicked.connect(showDialog)
 
-        self.lbl = QLabel('Knowledge only matters', self)
-        self.lbl.move(130, 20)
+        lbl _ ?L..('Knowledge only matters',
+        lbl.m..(130, 20)
 
-        vbox.addWidget(self.lbl)
-        self.setLayout(vbox)
+        vbox.aW..(lbl)
+        sL..(vbox)
 
-        self.setGeometry(300, 300, 250, 180)
-        self.setWindowTitle('Font dialog')
-        self.show()
+        sG__(300, 300, 250, 180)
+        sWT__('Font dialog')
+        show
 
-    def showDialog(self):
-        font, ok = QFontDialog.getFont()
-        if ok:
-            self.lbl.setFont(font)
+    ___ showDialog
+        font, ok _ QFontDialog.getFont
+        __ ok:
+            lbl.setFont(font)
 
 
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = Example()
-    sys.exit(app.exec_())
+__ _____ __ _______
+    app _ QApplication(___.argv)
+    ex _ Example
+    ___.exit(app.e..())

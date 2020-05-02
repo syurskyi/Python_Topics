@@ -2,48 +2,48 @@
 # -*- coding: utf-8 -*-
 
 
-from PySide2.QtWidgets import (QWidget, QSlider,
-                             QLabel, QApplication)
-from PySide2.QtCore import Qt
-from PySide2.QtGui import QPixmap
-import sys
+____ ?.?W.. ______ (W.., QSlider,
+                             ?L.., QApplication)
+____ ?.QtCore ______ Qt
+____ ?.QtGui ______ QPixmap
+______ ___
 
 
-class Example(QWidget):
+c_ Example(W..):
 
-    def __init__(self):
-        super().__init__()
+    ___ -
+        s__ .-
 
-        self.initUI()
+        ?
 
-    def initUI(self):
+    ___ initUI
 
-        sld = QSlider(Qt.Horizontal, self)
+        sld _ QSlider(Qt.Horizontal,
         sld.setFocusPolicy(Qt.NoFocus)
-        sld.setGeometry(30, 40, 100, 30)
-        sld.valueChanged[int].connect(self.changeValue)
+        sld.sG__(30, 40, 100, 30)
+        sld.valueChanged[int].connect(changeValue)
 
-        self.label = QLabel(self)
-        self.label.setPixmap(QPixmap('mute.png'))
-        self.label.setGeometry(160, 40, 80, 30)
+        label _ ?L..(
+        label.setPixmap(QPixmap('mute.png'))
+        label.sG__(160, 40, 80, 30)
 
-        self.setGeometry(300, 300, 280, 170)
-        self.setWindowTitle('QSlider')
-        self.show()
+        sG__(300, 300, 280, 170)
+        sWT__('QSlider')
+        show
 
-    def changeValue(self, value):
+    ___ changeValue(self, value):
 
-        if value == 0:
-            self.label.setPixmap(QPixmap('mute.png'))
+        __ value __ 0:
+            label.setPixmap(QPixmap('mute.png'))
         elif value > 0 and value <= 30:
-            self.label.setPixmap(QPixmap('min.png'))
+            label.setPixmap(QPixmap('min.png'))
         elif value > 30 and value < 80:
-            self.label.setPixmap(QPixmap('med.png'))
+            label.setPixmap(QPixmap('med.png'))
         else:
-            self.label.setPixmap(QPixmap('max.png'))
+            label.setPixmap(QPixmap('max.png'))
 
 
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = Example()
-    sys.exit(app.exec_())
+__ _____ __ _______
+    app _ QApplication(___.argv)
+    ex _ Example
+    ___.exit(app.e..())

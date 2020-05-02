@@ -1,36 +1,36 @@
-from PySide2.QtCore import Qt
-from PySide2.QtWidgets import *
+____ ?.QtCore ______ Qt
+____ ?.?W.. ______ *
 
-class myWidget(QWidget):
-    def __init__(self):
-        super(myWidget, self).__init__()
-        layout = QVBoxLayout(self)
-        button = QPushButton('Print')
-        layout.addWidget(button)
-        line = QLineEdit()
-        layout.addWidget(line)
-        line.textChanged.connect(self.text)
+c_ myWidget(W..):
+    ___ -
+        s__(myWidget,  .-
+        layout _ ?VB..(
+        button _ ?P..('Print')
+        layout.aW..(button)
+        line _ QLineEdit
+        layout.aW..(line)
+        line.textChanged.connect(text)
         # first version
         # button.clicked.connect(self.action)
         # second version
         # self.connect(button, SIGNAL('clicked()'), self, SLOT('action()'))
         # third version
         @button.clicked.connect
-        def click():
-            self.action()
+        ___ click :
+            action
 
     # @SLOT()
-    def action(self):
+    ___ action
         print('ACTION')
 
-    def text(self, arg):
+    ___ text(self, arg):
         print(arg)
 
 
 
-def start():
+___ start :
     #global form
-    start.form = myWidget()
-    start.form.show()
+    start.form _ myWidget
+    start.form.show
 
-start()
+start

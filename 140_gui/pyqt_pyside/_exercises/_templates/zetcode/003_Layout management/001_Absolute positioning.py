@@ -16,7 +16,7 @@
 #         lbl2 _ ?L.. 'tutorials',
 #         ?.m.. 35, 40
 #
-#         lbl3 _ ?L.. 'for programmers',
+#         lbl3 _ ?L.. '___ programmers',
 #         ?.m.. 55, 70
 #
 #         sG__(300, 300, 250, 150)

@@ -1,39 +1,39 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-import sys
-from PySide2.QtWidgets import QMainWindow, QPushButton, QApplication
+______ ___
+____ ?.?W.. ______ QMainWindow, ?P.., QApplication
 
 
-class Example(QMainWindow):
+c_ Example(QMainWindow):
 
-    def __init__(self):
-        super().__init__()
+    ___ -
+        s__ .-
 
-        self.initUI()
+        ?
 
-    def initUI(self):
-        btn1 = QPushButton("Button 1", self)
-        btn1.move(30, 50)
+    ___ initUI
+        btn1 _ ?P..("Button 1",
+        btn1.m..(30, 50)
 
-        btn2 = QPushButton("Button 2", self)
-        btn2.move(150, 50)
+        btn2 _ ?P..("Button 2",
+        btn2.m..(150, 50)
 
-        btn1.clicked.connect(self.buttonClicked)
-        btn2.clicked.connect(self.buttonClicked)
+        btn1.clicked.connect(buttonClicked)
+        btn2.clicked.connect(buttonClicked)
 
-        self.statusBar()
+        sB__
 
-        self.setGeometry(300, 300, 290, 150)
-        self.setWindowTitle('Event sender')
-        self.show()
+        sG__(300, 300, 290, 150)
+        sWT__('Event sender')
+        show
 
-    def buttonClicked(self):
-        sender = self.sender()
-        self.statusBar().showMessage(sender.text() + ' was pressed')
+    ___ buttonClicked
+        sender _ sender
+        sB__ .sM..(sender.text  + ' was pressed')
 
 
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = Example()
-    sys.exit(app.exec_())
+__ _____ __ _______
+    app _ QApplication(___.argv)
+    ex _ Example
+    ___.exit(app.e..())

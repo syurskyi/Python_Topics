@@ -1,35 +1,35 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-import sys
-from PyQt5.QtCore import pyqtSignal, QObject
-from PyQt5.QtWidgets import QMainWindow, QApplication
+______ ___
+____ ?.QtCore ______ pyqtSignal, QObject
+____ ?.?W.. ______ QMainWindow, QApplication
 
 
-class Communicate(QObject):
-    closeApp = pyqtSignal()
+c_ Communicate(QObject):
+    closeApp _ pyqtSignal
 
 
-class Example(QMainWindow):
+c_ Example(QMainWindow):
 
-    def __init__(self):
-        super().__init__()
+    ___ -
+        s__ .-
 
-        self.initUI()
+        ?
 
-    def initUI(self):
-        self.c = Communicate()
-        self.c.closeApp.connect(self.close)
+    ___ initUI
+        c _ Communicate
+        c.closeApp.connect(close)
 
-        self.setGeometry(300, 300, 290, 150)
-        self.setWindowTitle('Emit signal')
-        self.show()
+        sG__(300, 300, 290, 150)
+        sWT__('Emit signal')
+        show
 
-    def mousePressEvent(self, event):
-        self.c.closeApp.emit()
+    ___ mousePressEvent(self, event):
+        c.closeApp.emit
 
 
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = Example()
-    sys.exit(app.exec_())
+__ _____ __ _______
+    app _ QApplication(___.argv)
+    ex _ Example
+    ___.exit(app.e..())

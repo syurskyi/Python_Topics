@@ -1,41 +1,41 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-from PySide2.QtWidgets import QWidget, QApplication
-from PySide2.QtGui import QPainter
-from PySide2.QtCore import Qt
-import sys, random
+____ ?.?W.. ______ W.., QApplication
+____ ?.QtGui ______ QPainter
+____ ?.QtCore ______ Qt
+______ ___, random
 
 
-class Example(QWidget):
+c_ Example(W..):
 
-    def __init__(self):
-        super().__init__()
+    ___ -
+        s__ .-
 
-        self.initUI()
+        ?
 
-    def initUI(self):
-        self.setGeometry(300, 300, 300, 190)
-        self.setWindowTitle('Points')
-        self.show()
+    ___ initUI
+        sG__(300, 300, 300, 190)
+        sWT__('Points')
+        show
 
-    def paintEvent(self, e):
-        qp = QPainter()
-        qp.begin(self)
-        self.drawPoints(qp)
-        qp.end()
+    ___ paintEvent(self, e):
+        qp _ QPainter
+        qp.begin(
+        drawPoints(qp)
+        qp.end
 
-    def drawPoints(self, qp):
+    ___ drawPoints(self, qp):
         qp.setPen(Qt.red)
-        size = self.size()
+        size _ size
 
-        for i in range(1000):
-            x = random.randint(1, size.width() - 1)
-            y = random.randint(1, size.height() - 1)
+        ___ i __ ra..(1000):
+            x _ random.randint(1, size.width  - 1)
+            y _ random.randint(1, size.height  - 1)
             qp.drawPoint(x, y)
 
 
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = Example()
-    sys.exit(app.exec_())
+__ _____ __ _______
+    app _ QApplication(___.argv)
+    ex _ Example
+    ___.exit(app.e..())

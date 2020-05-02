@@ -2,67 +2,67 @@
 # -*- coding: utf-8 -*-
 
 
-from PyQt5.QtWidgets import QPushButton, QWidget, QApplication
-from PyQt5.QtCore import Qt, QMimeData
-from PyQt5.QtGui import QDrag
-import sys
+____ ?.?W.. ______ ?P.., W.., QApplication
+____ ?.QtCore ______ Qt, QMimeData
+____ ?.QtGui ______ QDrag
+______ ___
 
 
-class Button(QPushButton):
+c_ Button(?P..):
 
-    def __init__(self, title, parent):
-        super().__init__(title, parent)
+    ___ - (self, title, parent):
+        s__ .- (title, parent)
 
-    def mouseMoveEvent(self, e):
+    ___ mouseMoveEvent(self, e):
 
-        if e.buttons() != Qt.RightButton:
+        __ e.buttons  != Qt.RightButton:
             return
 
-        mimeData = QMimeData()
+        mimeData _ QMimeData
 
-        drag = QDrag(self)
+        drag _ QDrag(
         drag.setMimeData(mimeData)
-        drag.setHotSpot(e.pos() - self.rect().topLeft())
+        drag.setHotSpot(e.pos  - rect .topLeft())
 
-        dropAction = drag.exec_(Qt.MoveAction)
+        dropAction _ drag.e..(Qt.MoveAction)
 
-    def mousePressEvent(self, e):
+    ___ mousePressEvent(self, e):
 
-        super().mousePressEvent(e)
+        s__ .mousePressEvent(e)
 
-        if e.button() == Qt.LeftButton:
+        __ e.button  __ Qt.LeftButton:
             print('press')
 
 
-class Example(QWidget):
+c_ Example(W..):
 
-    def __init__(self):
-        super().__init__()
+    ___ -
+        s__ .-
 
-        self.initUI()
+        ?
 
-    def initUI(self):
-        self.setAcceptDrops(True)
+    ___ initUI
+        setAcceptDrops(True)
 
-        self.button = Button('Button', self)
-        self.button.move(100, 65)
+        button _ Button('Button',
+        button.m..(100, 65)
 
-        self.setWindowTitle('Click or Move')
-        self.setGeometry(300, 300, 280, 150)
+        sWT__('Click or Move')
+        sG__(300, 300, 280, 150)
 
-    def dragEnterEvent(self, e):
-        e.accept()
+    ___ dragEnterEvent(self, e):
+        e.accept
 
-    def dropEvent(self, e):
-        position = e.pos()
-        self.button.move(position)
+    ___ dropEvent(self, e):
+        position _ e.pos
+        button.m..(position)
 
         e.setDropAction(Qt.MoveAction)
-        e.accept()
+        e.accept
 
 
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = Example()
-    ex.show()
-    app.exec_()
+__ _____ __ _______
+    app _ QApplication(___.argv)
+    ex _ Example
+    ex.show
+    app.e..

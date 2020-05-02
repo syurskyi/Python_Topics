@@ -2,45 +2,45 @@
 # -*- coding: utf-8 -*-
 
 
-from PySide2.QtWidgets import (QWidget, QPushButton, QFrame,
+____ ?.?W.. ______ (W.., ?P.., QFrame,
                              QColorDialog, QApplication)
-from PySide2.QtGui import QColor
-import sys
+____ ?.QtGui ______ QColor
+______ ___
 
 
-class Example(QWidget):
+c_ Example(W..):
 
-    def __init__(self):
-        super().__init__()
+    ___ -
+        s__ .-
 
-        self.initUI()
+        ?
 
-    def initUI(self):
-        col = QColor(0, 0, 0)
+    ___ initUI
+        col _ QColor(0, 0, 0)
 
-        self.btn = QPushButton('Dialog', self)
-        self.btn.move(20, 20)
+        btn _ ?P..('Dialog',
+        btn.m..(20, 20)
 
-        self.btn.clicked.connect(self.showDialog)
+        btn.clicked.connect(showDialog)
 
-        self.frm = QFrame(self)
-        self.frm.setStyleSheet("QWidget { background-color: %s }"
+        frm _ QFrame(
+        frm.setStyleSheet("QWidget { background-color: %s }"
                                % col.name())
-        self.frm.setGeometry(130, 22, 100, 100)
+        frm.sG__(130, 22, 100, 100)
 
-        self.setGeometry(300, 300, 250, 180)
-        self.setWindowTitle('Color dialog')
-        self.show()
+        sG__(300, 300, 250, 180)
+        sWT__('Color dialog')
+        show
 
-    def showDialog(self):
-        col = QColorDialog.getColor()
+    ___ showDialog
+        col _ QColorDialog.getColor
 
-        if col.isValid():
-            self.frm.setStyleSheet("QWidget { background-color: %s }"
+        __ col.isValid :
+            frm.setStyleSheet("QWidget { background-color: %s }"
                                    % col.name())
 
 
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = Example()
-    sys.exit(app.exec_())
+__ _____ __ _______
+    app _ QApplication(___.argv)
+    ex _ Example
+    ___.exit(app.e..())

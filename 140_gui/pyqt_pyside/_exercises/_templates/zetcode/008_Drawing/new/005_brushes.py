@@ -1,32 +1,32 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-from PySide2.QtWidgets import QWidget, QApplication
-from PySide2.QtGui import QPainter, QBrush
-from PySide2.QtCore import Qt
-import sys
+____ ?.?W.. ______ W.., QApplication
+____ ?.QtGui ______ QPainter, QBrush
+____ ?.QtCore ______ Qt
+______ ___
 
 
-class Example(QWidget):
+c_ Example(W..):
 
-    def __init__(self):
-        super().__init__()
+    ___ -
+        s__ .-
 
-        self.initUI()
+        ?
 
-    def initUI(self):
-        self.setGeometry(300, 300, 355, 280)
-        self.setWindowTitle('Brushes')
-        self.show()
+    ___ initUI
+        sG__(300, 300, 355, 280)
+        sWT__('Brushes')
+        show
 
-    def paintEvent(self, e):
-        qp = QPainter()
-        qp.begin(self)
-        self.drawBrushes(qp)
-        qp.end()
+    ___ paintEvent(self, e):
+        qp _ QPainter
+        qp.begin(
+        drawBrushes(qp)
+        qp.end
 
-    def drawBrushes(self, qp):
-        brush = QBrush(Qt.SolidPattern)
+    ___ drawBrushes(self, qp):
+        brush _ QBrush(Qt.SolidPattern)
         qp.setBrush(brush)
         qp.drawRect(10, 15, 90, 60)
 
@@ -63,7 +63,7 @@ class Example(QWidget):
         qp.drawRect(250, 195, 90, 60)
 
 
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = Example()
-    sys.exit(app.exec_())
+__ _____ __ _______
+    app _ QApplication(___.argv)
+    ex _ Example
+    ___.exit(app.e..())

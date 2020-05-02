@@ -1,53 +1,53 @@
-import sys
-from PySide2.QtWidgets import *
-from PySide2.QtCore import Qt
+______ ___
+____ ?.?W.. ______ *
+____ ?.QtCore ______ Qt
 
 
-class Example(QMainWindow):
+c_ Example(QMainWindow):
 
-    def __init__(self):
-        super(Example, self).__init__()
+    ___ -
+        s__ ?  .-
 
-        self.initUI()
+        ?
 
-    def initUI(self):
+    ___ initUI
 
-        btn1 = QPushButton("Get Amounts of Knobs", self)
-        btn1.move(30, 50)
+        btn1 _ ?P..("Get Amounts of Knobs",
+        btn1.m..(30, 50)
 
-        btn2 = QPushButton("Get Name of Node", self)
-        btn2.move(150, 50)
+        btn2 _ ?P..("Get Name of Node",
+        btn2.m..(150, 50)
 
-        btn1.clicked.connect(self.button1Clicked)
-        btn2.clicked.connect(self.button2Clicked)
+        btn1.clicked.connect(button1Clicked)
+        btn2.clicked.connect(button2Clicked)
 
-        self.statusBar()
+        sB__
 
-        self.setGeometry(300, 300, 290, 150)
-        self.setWindowTitle('Event sender')
-        self.show()
+        sG__(300, 300, 290, 150)
+        sWT__('Event sender')
+        show
 
-    def button1Clicked(self):
+    ___ button1Clicked
 
-        num = nuke.selectedNode().getNumKnobs()
-        self.statusBar().showMessage('Number of knobs in Selected node is: ' + str(num))
+        num _ nuke.selectedNode .getNumKnobs
+        sB__ .sM..('Number of knobs __ Selected node is: ' + str(num))
 
-    def button2Clicked(self):
+    ___ button2Clicked
 
-        name = nuke.selectedNode().knob('name').getValue()
-        self.statusBar().showMessage('Name of the Selected node is: ' + str(name))
+        name _ nuke.selectedNode .knob('name').getValue
+        sB__ .sM..('Name of the Selected node is: ' + str(name))
 
 
-if __name__ == '__main__':
-    import sys
+__ _____ __ _______
+    ______ ___
 
-    app = None
-    try:
-        import nuke
-    except ImportError:
-        app = QApplication(sys.argv)
-    main = Example()
-    main.show()
+    app _ N..
+    ___
+        ______ n..
+    ______ I..
+        app _ QApplication(___.argv)
+    main _ Example
+    main.show
 
-    if app is not None:
-        app.exec_()
+    __ app __ no. N..:
+        app.e..

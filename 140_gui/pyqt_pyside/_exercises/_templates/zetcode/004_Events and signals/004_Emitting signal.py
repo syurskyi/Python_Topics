@@ -1,45 +1,45 @@
-import sys
-from PySide import QtGui, QtCore
+______ ___
+____ PySide ______ QtGui, QtCore
 
 
-class Communicate(QtCore.QObject):
+c_ Communicate(QtCore.QObject):
 
-    closeApp = QtCore.pyqtSignal()
-
-
-class Example(QtGui.QMainWindow):
-
-    def __init__(self):
-        super(Example, self).__init__()
-
-        self.initUI()
+    closeApp _ QtCore.pyqtSignal
 
 
-    def initUI(self):
+c_ Example(QtGui.QMainWindow):
 
-        self.c = Communicate()
-        self.c.closeApp.connect(self.close)
+    ___ -
+        s__ ?  .-
 
-        self.setGeometry(300, 300, 290, 150)
-        self.setWindowTitle('Emit signal')
-        self.show()
+        ?
 
 
-    def mousePressEvent(self, event):
+    ___ initUI
 
-        self.c.closeApp.emit()
+        c _ Communicate
+        c.closeApp.connect(close)
+
+        sG__(300, 300, 290, 150)
+        sWT__('Emit signal')
+        show
 
 
-if __name__ == '__main__':
-    import sys
+    ___ mousePressEvent(self, event):
 
-    app = None
-    try:
-        import nuke
-    except ImportError:
-        app = QtGui.QApplication(sys.argv)
-    main = Example()
-    main.show()
+        c.closeApp.emit
 
-    if app is not None:
-        app.exec_()
+
+__ _____ __ _______
+    ______ ___
+
+    app _ N..
+    ___
+        ______ n..
+    ______ I..
+        app _ QtGui.QApplication(___.argv)
+    main _ Example
+    main.show
+
+    __ app __ no. N..:
+        app.e..

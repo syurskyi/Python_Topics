@@ -1,29 +1,29 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-import sys
-from PySide2.QtCore import Qt
-from PySide2.QtWidgets import QWidget, QApplication
+______ ___
+____ ?.QtCore ______ Qt
+____ ?.?W.. ______ W.., QApplication
 
 
-class Example(QWidget):
+c_ Example(W..):
 
-    def __init__(self):
-        super().__init__()
+    ___ -
+        s__ .-
 
-        self.initUI()
+        ?
 
-    def initUI(self):
-        self.setGeometry(300, 300, 250, 150)
-        self.setWindowTitle('Event handler')
-        self.show()
+    ___ initUI
+        sG__(300, 300, 250, 150)
+        sWT__('Event handler')
+        show
 
-    def keyPressEvent(self, e):
-        if e.key() == Qt.Key_Escape:
-            self.close()
+    ___ keyPressEvent(self, e):
+        __ e.key  __ Qt.Key_Escape:
+            close
 
 
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = Example()
-    sys.exit(app.exec_())
+__ _____ __ _______
+    app _ QApplication(___.argv)
+    ex _ Example
+    ___.exit(app.e..())

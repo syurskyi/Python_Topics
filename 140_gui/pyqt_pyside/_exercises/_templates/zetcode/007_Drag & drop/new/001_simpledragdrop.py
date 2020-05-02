@@ -2,51 +2,51 @@
 # -*- coding: utf-8 -*-
 
 
-from PyQt5.QtWidgets import (QPushButton, QWidget,
+____ ?.?W.. ______ (?P.., W..,
                              QLineEdit, QApplication)
-import sys
+______ ___
 
 
-class Button(QPushButton):
+c_ Button(?P..):
 
-    def __init__(self, title, parent):
-        super().__init__(title, parent)
+    ___ - (self, title, parent):
+        s__ .- (title, parent)
 
-        self.setAcceptDrops(True)
+        setAcceptDrops(True)
 
-    def dragEnterEvent(self, e):
+    ___ dragEnterEvent(self, e):
 
-        if e.mimeData().hasFormat('text/plain'):
-            e.accept()
+        __ e.mimeData .hasFormat('text/plain'):
+            e.accept
         else:
-            e.ignore()
+            e.ignore
 
-    def dropEvent(self, e):
+    ___ dropEvent(self, e):
 
-        self.setText(e.mimeData().text())
+        setText(e.mimeData .text())
 
 
-class Example(QWidget):
+c_ Example(W..):
 
-    def __init__(self):
-        super().__init__()
+    ___ -
+        s__ .-
 
-        self.initUI()
+        ?
 
-    def initUI(self):
-        edit = QLineEdit('', self)
+    ___ initUI
+        edit _ QLineEdit('',
         edit.setDragEnabled(True)
-        edit.move(30, 65)
+        edit.m..(30, 65)
 
-        button = Button("Button", self)
-        button.move(190, 65)
+        button _ Button("Button",
+        button.m..(190, 65)
 
-        self.setWindowTitle('Simple drag and drop')
-        self.setGeometry(300, 300, 300, 150)
+        sWT__('Simple drag and drop')
+        sG__(300, 300, 300, 150)
 
 
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = Example()
-    ex.show()
-    app.exec_()
+__ _____ __ _______
+    app _ QApplication(___.argv)
+    ex _ Example
+    ex.show
+    app.e..

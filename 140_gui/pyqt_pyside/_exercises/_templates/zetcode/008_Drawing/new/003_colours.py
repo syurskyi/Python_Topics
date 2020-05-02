@@ -1,31 +1,31 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-from PySide2.QtWidgets import QWidget, QApplication
-from PySide2.QtGui import QPainter, QColor, QBrush
-import sys
+____ ?.?W.. ______ W.., QApplication
+____ ?.QtGui ______ QPainter, QColor, QBrush
+______ ___
 
 
-class Example(QWidget):
+c_ Example(W..):
 
-    def __init__(self):
-        super().__init__()
+    ___ -
+        s__ .-
 
-        self.initUI()
+        ?
 
-    def initUI(self):
-        self.setGeometry(300, 300, 350, 100)
-        self.setWindowTitle('Colours')
-        self.show()
+    ___ initUI
+        sG__(300, 300, 350, 100)
+        sWT__('Colours')
+        show
 
-    def paintEvent(self, e):
-        qp = QPainter()
-        qp.begin(self)
-        self.drawRectangles(qp)
-        qp.end()
+    ___ paintEvent(self, e):
+        qp _ QPainter
+        qp.begin(
+        drawRectangles(qp)
+        qp.end
 
-    def drawRectangles(self, qp):
-        col = QColor(0, 0, 0)
+    ___ drawRectangles(self, qp):
+        col _ QColor(0, 0, 0)
         col.setNamedColor('#d4d4d4')
         qp.setPen(col)
 
@@ -39,7 +39,7 @@ class Example(QWidget):
         qp.drawRect(250, 15, 90, 60)
 
 
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = Example()
-    sys.exit(app.exec_())
+__ _____ __ _______
+    app _ QApplication(___.argv)
+    ex _ Example
+    ___.exit(app.e..())
