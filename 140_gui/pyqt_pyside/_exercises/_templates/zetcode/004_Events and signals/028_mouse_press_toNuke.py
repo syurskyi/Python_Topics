@@ -8,14 +8,14 @@
 #
 #     ___ mousePressEvent  e
 #         name _ nuke.selectedNode .knob('name').getValue
-#         __ e.buttons  & ?C...__.LeftButton:
+#         __ e.b..  & ?C...__.LeftButton:
 #             print("Нажата левая кнопка мыши")
-#         __ e.buttons  & ?C...__.RightButton:
+#         __ e.b..  & ?C...__.RightButton:
 #             print("Нажата правая кнопка мыши")
-#         __ e.buttons  & ?C...__.MiddleButton:
+#         __ e.b..  & ?C...__.MiddleButton:
 #             print("Нажата средняя кнопка мыши")
-#         __ (e.buttons  & ?C...__.LeftButton and
-#                     e.buttons  & ?C...__.RightButton):
+#         __ (e.b..  & ?C...__.LeftButton and
+#                     e.b..  & ?C...__.RightButton):
 #             print("Левая и правая кнопки нажаты")
 #         sT..('Name of the Selected node is: ' + st.(name))
 #
