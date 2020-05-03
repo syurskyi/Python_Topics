@@ -315,7 +315,7 @@ c_ TP_Launcher_GUI(?W...?W..
 
     ___ _save_settings 
         c _ _app_lw.count
-        names _ [_app_lw.item(i).t.. ___ i __ range(c)]
+        names _ [_app_lw.item(i).t.. ___ i __ ra..(c)]
         ws _ get_workspace
         _tp_launcher.reorder_apps(ws, names)
         _settings.sV..('CurrentWorkspace', ws)

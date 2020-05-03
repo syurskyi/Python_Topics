@@ -175,7 +175,7 @@ c_ pad1(?G...QGraphicsEllipseItem
             songListdecoded _ []
 
             ___ s in songListcoded:
-                ___ rep in range(int(s[0])):
+                ___ rep in ra..(int(s[0])):
                     songListdecoded.ap..([s[1], fl..(s[2])])
             print(songListdecoded)
             songListdecoded _ songListdecoded
@@ -406,7 +406,7 @@ c_ mainWindow(?G...?M..
         # list all midi devices, maximum of 10
         device _ [None] * 10
         index _ 0
-        ___ x in range(0, pygame.midi.get_count()):
+        ___ x in ra..(0, pygame.midi.get_count()):
             print(pygame.midi.get_device_info(x))
             device _ pygame.midi.get_device_info(x)
             # if is a input append in the menu bar
@@ -516,7 +516,7 @@ c_ mainWindow(?G...?M..
 
     ___ updateTabs
         # remove all tabs
-        ___ i in range(ntabs
+        ___ i in ra..(ntabs
             tabs.removeTab(i + 1)
 
         ntabs _ 1
@@ -577,7 +577,7 @@ c_ mainWindow(?G...?M..
         # index = self.tabs.underMouse()
 
         # print("index =",index)
-        ___ i in range(ntabs
+        ___ i in ra..(ntabs
             print("index=", i)
             tabs.setCurrentIndex(i)
             tabs.cI..
@@ -626,7 +626,7 @@ c_ mainWindow(?G...?M..
                 print(w.table)
                 numRows _ w.table.rowCount
                 print(numRows)
-                ___ row in range(numRows
+                ___ row in ra..(numRows
                     c _ w.table.item(row, 0).t..
                     s _ w.table.item(row, 1).t..
                     o _ w.table.item(row, 2).t..

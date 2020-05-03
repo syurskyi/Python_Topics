@@ -80,7 +80,7 @@ c_ resourceCompileClass(?M..
         r_ T..
 
     ___ runCompile
-        files _ [list.item(i).data(32) ___ i in range(list.count())]
+        files _ [list.item(i).data(32) ___ i in ra..(list.count())]
         qrc _ os.path.j..(os.path.dirname(files[0]), 'resource.qrc')
         __ writeFile(qrc, files
             compileQrc(qrc)

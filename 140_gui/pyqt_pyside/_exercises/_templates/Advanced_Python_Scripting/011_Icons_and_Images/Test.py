@@ -229,7 +229,7 @@ c_ ImageContainer(?G...QFrame
 
         x _ 0
         y _ 0
-        ___ i __ range(le.(widgets)):
+        ___ i __ ra..(le.(widgets)):
             space_x _ 0
             __ auto_space:
                 space_x _ (main_w - asset_space * 2 - num_x * (widget_w + asset_space)) / num_x

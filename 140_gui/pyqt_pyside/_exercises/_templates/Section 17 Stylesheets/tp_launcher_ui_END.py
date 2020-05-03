@@ -409,7 +409,7 @@ c_ TP_Launcher_GUI(?W...?W..
         to QSettings, and store the tool data to json file.
         '''
         count _ _app_lw.count
-        names _ [_app_lw.item(i).t.. ___ i in range(count)]
+        names _ [_app_lw.item(i).t.. ___ i in ra..(count)]
         workspace _ get_workspace
         _tp_launcher.reorder_apps(workspace, names)
         _settings.sV..('CurrentWorkspace', workspace)

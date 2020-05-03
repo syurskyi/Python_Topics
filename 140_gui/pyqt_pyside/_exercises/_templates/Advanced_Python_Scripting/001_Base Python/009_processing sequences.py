@@ -46,7 +46,7 @@ ___ i, f __ enumerate(files
 
 # search missing frames
 
-fullrange _ range(min(frames), max(frames)+1)
+fullrange _ ra..(min(frames), max(frames)+1)
 # print(fullrange)
 miss _ []
 ___ i __ fullrange:

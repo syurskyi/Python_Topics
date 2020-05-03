@@ -82,7 +82,7 @@ c_ timeline(?G...QGraphicsView
     ___ draw_headers 
         f_header _ ?G...QGraphicsRectItem(0, 0, viewer_size, header_height)
         scene.aI..(f_header)
-        ___ i in range(0, total_regions
+        ___ i in ra..(0, total_regions
             f_number _ ?G...QGraphicsSimpleTextItem('%d' % i, f_header)
             f_number.setFlag(?G...QGraphicsItem.ItemIgnoresTransformations)
             f_number.setPos(px_per_region * i, 2)
@@ -90,7 +90,7 @@ c_ timeline(?G...QGraphicsView
 
     ___ draw_grid 
         f_pen _ ?G...?P..
-        ___ i in range(1, total_tracks + 1
+        ___ i in ra..(1, total_tracks + 1
             f_line _ ?G...QGraphicsLineItem(0, 0, viewer_size, 0)
             f_line.setPos(0, header_height + padding + item_height * i)
             scene.aI..(f_line)
@@ -131,7 +131,7 @@ c_ timeline(?G...QGraphicsView
 __ __name__ __ '__main__':
     app _ ?G...?A..
     view _ timeline(total_tracks_5)
-    ___ i in range(5
+    ___ i in ra..(5
         view.draw_item_musical_time(0, 0, 0, i + 1, 0, 0, 120, 'Item-' + st.(i), i)
 
     view.set_zoom(2.0)

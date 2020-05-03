@@ -83,7 +83,7 @@ c_ Main(?W..
         leftLayout.addRow("Address:",address)
 
     ___ singleClick 
-        ___ i __ reversed(range(leftLayout.count())):
+        ___ i __ reversed(ra..(leftLayout.count())):
             widget_leftLayout.takeAt(i).widget
 
             __ widget is not None:

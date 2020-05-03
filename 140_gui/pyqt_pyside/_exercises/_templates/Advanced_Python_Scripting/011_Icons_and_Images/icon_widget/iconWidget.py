@@ -61,7 +61,7 @@ c_ iconWidgetClass(?M.., ui.Ui_MainWindow
 
     ___ fillCombo 
         clearCombo
-        ___ i __ range(10
+        ___ i __ ra..(10
             combo_cbb.aI..('Item %s' % i)
             combo_cbb.setItemIcon(i, getRandomIcon())
     ___ clearCombo 
