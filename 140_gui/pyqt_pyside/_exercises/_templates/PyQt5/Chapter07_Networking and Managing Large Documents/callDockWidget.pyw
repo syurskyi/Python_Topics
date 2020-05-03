@@ -1,22 +1,22 @@
-_____ ___
-____ ?.?W.. _____ QMainWindow, ?A..
-
-____ demoDockWidget _____ *
-
-c_ AppWindow(QMainWindow
-    ___  -  
-        s__. - 
-        ui _ Ui_MainWindow
-        ?.sU..
-        s..
-
-
-__ _ ____ __ _____
-    app _ ?A..
-    w _ AppWindow
-    w.s..
-    ___.e.. ?.e
-
-
-
-
+# _____ ___
+# ____ ?.?W.. _____ ?M.. ?A..
+#
+# ____ demoDockWidget _____ _
+#
+# c_ AppWindow ?M..
+#     ___  -
+#         s__. -
+#         ui _ ?
+#         ?.sU..
+#         s..
+#
+#
+# __ _ ____ __ _____
+#     app _ ?A..
+#     w _ ?
+#     ?.s..
+#     ___.e.. ?.e
+#
+#
+#
+#
