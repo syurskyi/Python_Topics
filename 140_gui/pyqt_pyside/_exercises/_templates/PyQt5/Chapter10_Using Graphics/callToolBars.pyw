@@ -19,7 +19,7 @@ c_ AppWindow(?M..
 
     ___ paintEvent , event
         qp _ ?P..
-        qp.begin
+        qp.b..
         __ toDraw__"rectangle":
             width _ pos2[0]-pos1[0]
             height _ pos2[1] - pos1[1]
@@ -36,11 +36,11 @@ c_ AppWindow(?M..
         qp.e..
         
     ___ mousePressEvent , event
-        __ event.buttons & ?C...__.LeftButton:
-            pos1[0], pos1[1] _ event.pos.x, event.pos.y
+        __ event.buttons & ?C...__.LB..:
+            pos1[0], pos1[1] _ event.p...x, event.p...y
                         
     ___ mouseReleaseEvent , event
-        pos2[0], pos2[1] _ event.pos.x, event.pos.y
+        pos2[0], pos2[1] _ event.p...x, event.p...y
         update
                
     ___ drawCircle

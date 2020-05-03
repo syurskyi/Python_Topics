@@ -20,8 +20,8 @@ c_ MyForm(?D..
 
     ___ paintEvent , event
         qp _ ?P..
-        qp.begin  
-        qp.setPen(?C..(168, 34, 3))
+        qp.b..
+        qp.sP..(?C..(168, 34, 3))
         qp.sF..(?F..(fontName, fontSize))
         qp.drawText(event.rect, __.AlignCenter, textToDraw)
         qp.e..

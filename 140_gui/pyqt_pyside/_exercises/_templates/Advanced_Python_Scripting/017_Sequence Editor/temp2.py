@@ -107,7 +107,7 @@ c_ pad1(?G...QGraphicsEllipseItem
 
         super(pad1, self).mousePressEvent(e)
 
-        __ e.button __ ?C...__.LeftButton:
+        __ e.button __ ?C...__.LB..:
             print('left')
             # self.TriggerPad()
             startSong

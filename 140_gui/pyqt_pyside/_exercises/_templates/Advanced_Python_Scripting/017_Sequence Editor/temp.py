@@ -30,7 +30,7 @@ c_ timeline_item(?G...QGraphicsRectItem
 
     ___ mouseMoveEvent , a_event
         ?G...QGraphicsRectItem.mouseMoveEvent , a_event)
-        f_pos _ pos.x
+        f_pos _ p...x
         __ f_pos < 0:
             f_pos _ 0
         setPos(f_pos, mouse_y_pos)
@@ -38,7 +38,7 @@ c_ timeline_item(?G...QGraphicsRectItem
     ___ mouseReleaseEvent , a_event
         ?G...QGraphicsRectItem.mouseReleaseEvent , a_event)
         setGraphicsEffect(None)
-        f_pos_x _ pos.x
+        f_pos_x _ p...x
         setPos(f_pos_x, mouse_y_pos)
         print st.(f_pos_x)
 

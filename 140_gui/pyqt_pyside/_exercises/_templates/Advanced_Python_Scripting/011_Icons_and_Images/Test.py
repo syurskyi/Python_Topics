@@ -86,7 +86,7 @@ c_ ImageWidget(?G...?W..
         __ isHightlight an. not selected:
             painter.fillRect(rect, hightlight)
         # draw name
-        painter.setPen(?G...?P..(?G...?C..(255, 255, 255)))
+        painter.sP..(?G...?P..(?G...?C..(255, 255, 255)))
         name_font.setPixelSize(name_height)
         painter.sF..(name_font)
         # 脚标字符
@@ -97,7 +97,7 @@ c_ ImageWidget(?G...?W..
             p1 _ ?C...QPoint(0, 0)
             p2 _ ?C...QPoint(0, title_height)
             p3 _ ?C...QPoint(title_height, 0)
-            painter.setPen(?C...__.NoPen)
+            painter.sP..(?C...__.NoPen)
             painter.fillRect(0, 0, width, title_height, ?G...?C..(40, 40, 40, 40))
             __ status __ 1:
                 painter.setBrush(?G...QBrush(?G...?C..(255, 0, 0)))
@@ -110,12 +110,12 @@ c_ ImageWidget(?G...?W..
         __ version:
             version_x _ width - edge_size - name_height * 1.5
             version_y _ name_height
-            painter.setPen(?G...?P..(?G...?C..(255, 255, 255)))
+            painter.sP..(?G...?P..(?G...?C..(255, 255, 255)))
             painter.drawText(version_x, version_y, '%s' % version)
 
         # draw selected
         __ selected:
-            painter.setPen(pen_selected)
+            painter.sP..(pen_selected)
             painter.setBrush(?C...__.NoBrush)
             painter.drawRect(edge_size / 2, edge_size / 2, \
                              width - edge_size, height - edge_size)
@@ -125,7 +125,7 @@ c_ ImageWidget(?G...?W..
         paintAsThumb(painter)
 
     ___ mouseReleaseEvent , event
-        __ event.button __ ?C...__.LeftButton:
+        __ event.button __ ?C...__.LB..:
             setSelected
 
     ___ mouseDoubleClickEvent , event

@@ -15,12 +15,12 @@ c_ MyForm(?D..
         path _ QPainterPath
         path.moveTo(30, 30)
         path.cubicTo(30, 30, 80, 180, 180, 170)                
-        ?.labelPic.pos _ QPointF(20, 20)
+        ?.labelPic.p.. _ QPointF(20, 20)
         s..
 
     ___ paintEvent , e          
         qp _ ?P..
-        qp.begin
+        qp.b..
         qp.drawPath(path)
         qp.e..
 

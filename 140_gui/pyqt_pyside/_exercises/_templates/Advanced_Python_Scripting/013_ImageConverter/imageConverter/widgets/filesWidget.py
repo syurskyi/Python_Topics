@@ -69,7 +69,7 @@ c_ listWidgetClass(QListWidget
     ___ mousePressEvent , event
         __ event.button __ __.MouseButton.RightButton:
             pass
-        ____ event.button __ __.MouseButton.LeftButton:
+        ____ event.button __ __.MouseButton.LB..:
             setDragDropMode(QAbstractItemView.NoDragDrop)
             super(listWidgetClass, self).mousePressEvent(event)
         ____

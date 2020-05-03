@@ -10,7 +10,7 @@ c_ TableWidget(QTableWidget
     ___ contextMenuEvent , event
         menu _ QMenu
         quitAction _ menu.addAction("Quit")
-        action _ menu.exec_(mapToGlobal(event.pos()))
+        action _ menu.exec_(mapToGlobal(event.p..()))
         __ action __ quitAction:
             qApp.quit
 

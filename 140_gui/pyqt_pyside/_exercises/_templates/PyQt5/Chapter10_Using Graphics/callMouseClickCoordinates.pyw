@@ -11,7 +11,7 @@ c_ MyForm ?D..
         s..
 
     ___ mousePressEvent , event
-        __ event.buttons & ?C...__.LeftButton:
+        __ event.buttons & ?C...__.LB..:
             x _ event.x
             y _ event.y    
             t.. _ "x: {0},  y: {1}".format(x, y)
