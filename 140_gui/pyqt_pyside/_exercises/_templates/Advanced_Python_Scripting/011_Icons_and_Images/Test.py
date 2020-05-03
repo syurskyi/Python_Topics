@@ -117,7 +117,7 @@ c_ ImageWidget(?G...?W..
         __ selected:
             painter.sP..(pen_selected)
             painter.setBrush(?C...__.NoBrush)
-            painter.drawRect(edge_size / 2, edge_size / 2, \
+            painter.dR..(edge_size / 2, edge_size / 2, \
                              width - edge_size, height - edge_size)
 
     ___ paintEvent , event

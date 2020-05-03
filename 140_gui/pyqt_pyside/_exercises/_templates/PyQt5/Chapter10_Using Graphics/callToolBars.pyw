@@ -23,7 +23,7 @@ c_ AppWindow(?M..
         __ toDraw__"rectangle":
             width _ pos2[0]-pos1[0]
             height _ pos2[1] - pos1[1]
-            qp.drawRect(pos1[0], pos1[1], width, height)
+            qp.dR..(pos1[0], pos1[1], width, height)
         __ toDraw__"line":
             qp.dL..(pos1[0], pos1[1], pos2[0], pos2[1])
         __ toDraw__"circle":

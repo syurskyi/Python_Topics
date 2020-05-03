@@ -53,8 +53,8 @@ c_ splineRampWidget(?W..
 
         painter.sP..(?P..(QBrush(__.white), 1))
         painter.setBrush(__.NoBrush)
-        painter.drawRect(region1)
-        painter.drawRect(region2)
+        painter.dR..(region1)
+        painter.dR..(region2)
         painter.e..
 
     ___ mousePressEvent , event
