@@ -1,7 +1,7 @@
 _____ ___
 
 ____ ?.?W.. _____ ?D.., ?A..
-____ ?.?C.. _____ ?R.., QPointF, QPropertyAnimation, pyqtProperty
+____ ?.?C.. _____ ?R.., QPointF, ?PA.., pyqtProperty
 ____ ?.?G.. _____ ?P.., QPainterPath
 
 ____ demoAnimation4 _____ _
@@ -25,13 +25,13 @@ c_ MyForm(?D..
         qp.e..
 
     ___ startAnimation 
-        anim _ QPropertyAnimation(?.labelPic, b'pos')
-        anim.setDuration(4000)        
-        anim.setStartValue(QPointF(20, 20))        
+        anim _ ?PA..(?.labelPic, b'pos')
+        anim.sD.(4000)
+        anim.sSV..(QPointF(20, 20))
         positionValues _ [n/80 ___ n in range(0, 50)]
         ___ i in positionValues:
             anim.setKeyValueAt(i, path.pointAtPercent(i))  
-        anim.setEndValue(QPointF(160, 150))
+        anim.sEV..(QPointF(160, 150))
         anim.s..
         
 __ _ ____ __ _____
