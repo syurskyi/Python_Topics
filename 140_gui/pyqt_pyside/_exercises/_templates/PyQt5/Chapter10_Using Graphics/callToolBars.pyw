@@ -14,7 +14,7 @@ c_ AppWindow(?M..
         toDraw_""
         ?.actionCircle.t__.c..(drawCircle)
         ?.actionRectangle.t__.c..(drawRectangle)
-        ?.actionLine.t__.c..(drawLine)
+        ?.actionLine.t__.c..(dL..)
         s..
 
     ___ paintEvent , event
@@ -25,7 +25,7 @@ c_ AppWindow(?M..
             height _ pos2[1] - pos1[1]
             qp.drawRect(pos1[0], pos1[1], width, height)
         __ toDraw__"line":
-            qp.drawLine(pos1[0], pos1[1], pos2[0], pos2[1])
+            qp.dL..(pos1[0], pos1[1], pos2[0], pos2[1])
         __ toDraw__"circle":
             width _ pos2[0]-pos1[0]
             height _ pos2[1] - pos1[1]
@@ -49,7 +49,7 @@ c_ AppWindow(?M..
     ___ drawRectangle
         toDraw_"rectangle"
 
-    ___ drawLine
+    ___ dL..
         toDraw_"line"
 
 app _ ?A..
