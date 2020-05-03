@@ -20,13 +20,13 @@ c_ fileListClass(?LW..
             pathList.ap..(path)
 
     ___ dragEnterEvent , event
-        __ event.mimeData.hasUrls(
+        __ event.mD...hU..(
             event.a..
         ____
             event.ignore
 
     ___ dragMoveEvent , event
-        __ event.mimeData.hasUrls(
+        __ event.mD...hU..(
             event.a..
         ____
             event.ignore

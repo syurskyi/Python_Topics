@@ -11,10 +11,10 @@ c_ listWidgetClass(?LW..
 
     ___ dropEvent , event
         print 'DROP', ty..(event)  # type event est' QDropEvent i samoe glavnoe shto on delaet on vozvrachaet mimedata
-        mimedata _ event.mimeData
+        mimedata _ event.mD..
         print mimedata
-        __ mimedata.hasUrls(
-            print mimedata.urls
+        __ mimedata.hU..(
+            print mimedata.u..
 
     ___ dragEnterEvent , event
         event.a..

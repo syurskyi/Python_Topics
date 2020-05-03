@@ -12,9 +12,9 @@ c_ listWidgetClass(?LW..
 
     ___ dropEvent , event
         print 'DROP', ty..(event)
-        mimedata _ event.mimeData
-        __ mimedata.hasUrls(
-            ___ f __ mimedata.urls(
+        mimedata _ event.mD..
+        __ mimedata.hU..(
+            ___ f __ mimedata.u..(
                 print f.userName
                 print f.toLocalFile
         ____ mimedata.hasText(

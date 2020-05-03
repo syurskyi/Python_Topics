@@ -12,21 +12,21 @@ c_ listWidgetClass(?LW..
 
     ___ dropEvent , event
         # print 'DROP', type(event)
-        mimedata _ event.mimeData
-        __ mimedata.hasUrls(
-            ___ f __ mimedata.urls(
+        mimedata _ event.mD..
+        __ mimedata.hU..(
+            ___ f __ mimedata.u..(
                 print f.toLocalFile
 
     ___ dragEnterEvent , event
-        mimedata _ event.mimeData
-        __ mimedata.hasUrls(
+        mimedata _ event.mD..
+        __ mimedata.hU..(
             event.a..
         ____
             event.ignore
 
     ___ dragMoveEvent , event
-        mimedata _ event.mimeData
-        __ mimedata.hasUrls(
+        mimedata _ event.mD..
+        __ mimedata.hU..(
             event.a..
         ____
             event.ignore

@@ -73,13 +73,13 @@ c_ Delete_Btn(?W...?PB..
         _type _ 'application/x-qabstractitemmodeldatalist'
 
     ___ dragEnterEvent , event
-        __ event.mimeData.hasFormat(_type
+        __ event.mD...hasFormat(_type
             event.a..
         ____
             event.ignore
 
     ___ dropEvent , event
-        __ event.mimeData.hasFormat(_type
+        __ event.mD...hasFormat(_type
             _my_parent.delete_item
             event.a..
         ____
