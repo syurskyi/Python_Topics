@@ -6,46 +6,46 @@ ____ ?.?W.. _____ ?D.., ?A..
 
 ____ demoTwoProgressBarsLocks _____ _
 
-c_ MyForm(?D..
+c_ MyForm ?D..
     ___  -
         s__. - 
         ui _ ?
         ?.sU..
         s..
        
-c_ myThread (?.T..
+c_ myThread ?.T..
    counter_0
-   ___  -  , w, ProgressBar
+   ___  -  w ProgressBar
       ?.T... -
       w_w
-      counter_0
-      progreassBar_ProgressBar
-      
+      c.._0
+      p.._P..
+
    ___ run
       print ("Starting " + name+"\n")
-      threadLock.acquire
-      w__ counter <_100:
-          t___.s..(1)
-          progreassBar.sV..(counter)
-          counter+_10
-      threadLock.release
+      threadLock.a..
+      w__ c.. <_100
+          t___.s.. 1
+          p__.sV.. c..
+          c.. +_ 10
+      tL__.r..
       print ("Exiting " + name+"\n")
 
       
 __ _ ____ __ _____
     app _ ?A..
     w _ ?
-    thread1 _ myThread(w, w.?.progressBarFileDownload)
-    thread2 _ myThread(w, w.?.progressBarVirusScan)
-    threadLock _ ?.Lock
-    threads _ []
-    thread1.s..
-    thread2.s..
-    w.exec
-    threads.ap..(thread1)
-    threads.ap..(thread2)
-    ___ t in threads:
-        t.join
+    thread1 _ ? ? ?.?.pBFD..
+    thread2 _ ? ? ?.?.pBVS..
+    threadLock _ ?.L..
+    threads _ # list
+    ?1.s..
+    ?2.s..
+    ?.e..
+    ?.ap.. _1
+    ?.ap.. _2
+    ___ t __ ?
+        t.j..
     ___.e.. ?.e
 
 

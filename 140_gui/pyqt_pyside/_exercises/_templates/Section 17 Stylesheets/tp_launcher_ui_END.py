@@ -97,8 +97,8 @@ c_ TP_Launcher_GUI(?W...?W..
         # System and tool icons
         _icons _ ?W...QFileIconProvider
         _my_path _ os.path.dirname(os.path.realpath(__file__))
-        images_path _ os.path.join(_my_path, 'images')
-        full_path _ os.path.join(images_path, 'TPayne_Launcher.png')
+        images_path _ os.path.j..(_my_path, 'images')
+        full_path _ os.path.j..(images_path, 'TPayne_Launcher.png')
         _tpl_icon _ ?G...QIcon(full_path)
 
         # Data holding instance
@@ -124,8 +124,8 @@ c_ TP_Launcher_GUI(?W...?W..
         txt _ 'TPayne_Experience'+QT_VER
         _settings _ ?C...QSettings(txt, 'TPayne\'s_Launcher')
         name _ '{}_{}_data.json'.format(PY_VER, QT_VER)
-        path _ os.path.join(_my_path, 'data')
-        _json_file _ os.path.join(path, name)
+        path _ os.path.j..(_my_path, 'data')
+        _json_file _ os.path.j..(path, name)
 
         # Handle version specific reading/writing settings
         d _ defaultdict(lambda: _get_settings)

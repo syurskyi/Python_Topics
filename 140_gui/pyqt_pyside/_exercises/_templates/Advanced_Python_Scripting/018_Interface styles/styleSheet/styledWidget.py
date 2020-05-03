@@ -3,7 +3,7 @@ ____ PySide.?G.. _____ _
 ____ widgets _____ window_UIs __ ui
 _____ os
 
-style _ os.path.join(os.path.dirname(__file__), 'style.css')
+style _ os.path.j..(os.path.dirname(__file__), 'style.css')
 
 c_ styleWidgetClass(?M.., ui.Ui_MainWindow
     ___  -  

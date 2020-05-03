@@ -33,7 +33,7 @@ c_ simpleWindow(?W..
             item _ QTreeWidgetItem
             item.sT..(0, f)
             parent.addChild(item)
-            fullpath _ os.path.join(root, f)
+            fullpath _ os.path.j..(root, f)
             __ os.path.isdir(fullpath
                 fillTree(item, fullpath)
                 item.setExpanded(1)

@@ -50,11 +50,11 @@ c_ iconWidgetClass(?M.., ui.Ui_MainWindow
 
 
     ___ filList 
-        path _ os.path.join(os.path.dirname(__file__), 'textures')
+        path _ os.path.j..(os.path.dirname(__file__), 'textures')
         clearList
         ___ i __ os.listdir(path
             item _ ?LWI..(i)
-            item.setIcon( QIcon( os.path.join(path, i) ) )
+            item.setIcon( QIcon( os.path.j..(path, i) ) )
             list_lwd.aI..(item)
     ___ clearList 
         list_lwd.c..

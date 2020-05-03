@@ -21,16 +21,16 @@ _____ os
 root _ os.path.dirname(__file__)
 
 icons _ dict(
-    create_QIcon(os.path.join(root, 'create.png')),
-    create_os.path.join(root, 'create.png'),
-    clear_os.path.join(root, 'clear.png'),
-    open_os.path.join(root, 'open.png'),
-    close_os.path.join(root, 'close.png'),
-    save_os.path.join(root, 'save.png'),
-    item1_os.path.join(root, 'item1.png'),
-    item2_os.path.join(root, 'item2.png'),
-    item3_os.path.join(root, 'item3.png'),
-    sphere_os.path.join(root, 'sphere.png')
+    create_QIcon(os.path.j..(root, 'create.png')),
+    create_os.path.j..(root, 'create.png'),
+    clear_os.path.j..(root, 'clear.png'),
+    open_os.path.j..(root, 'open.png'),
+    close_os.path.j..(root, 'close.png'),
+    save_os.path.j..(root, 'save.png'),
+    item1_os.path.j..(root, 'item1.png'),
+    item2_os.path.j..(root, 'item2.png'),
+    item3_os.path.j..(root, 'item3.png'),
+    sphere_os.path.j..(root, 'sphere.png')
 )
 
 # print icons

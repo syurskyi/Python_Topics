@@ -10,7 +10,7 @@ files _ os.listdir(path)
 tmp _ os.listdir(path)
 files _ []
 ___ t __ tmp:
-    __ os.path.isfile(os.path.join(path, t)):
+    __ os.path.isfile(os.path.j..(path, t)):
         files.ap..(t)
 
 # separate
@@ -29,15 +29,15 @@ offset _ min(frames) - 1
 
 # new name
 
-outFolder _ os.path.join(path, correctname)
+outFolder _ os.path.j..(path, correctname)
 __ not os.path.exists(outFolder
     os.mkdir(outFolder)
 ___ i, f __ enumerate(files
     # print(f, frames[i])
-    old _ os.path.join(path, f)
+    old _ os.path.j..(path, f)
     name, ext _ os.path.splitext(f)
     newName _ correctname + '_' + st.(frames[i] - offset).zfill(padding) + ext
-    new _ os.path.join(path, correctname, newName)
+    new _ os.path.j..(path, correctname, newName)
     # print(old)
     # print(new)
     __ os.path.exists(new
@@ -61,6 +61,6 @@ print('Miss frames:', miss)
 a _ raw_input('Remove old files? [y/n]: ')
 __ a __ 'y' or a __ 'Y':
     ___ f __ files:
-        os.remove(os.path.join(path, f))
+        os.remove(os.path.j..(path, f))
 print('Complete!!!')
 raw_input

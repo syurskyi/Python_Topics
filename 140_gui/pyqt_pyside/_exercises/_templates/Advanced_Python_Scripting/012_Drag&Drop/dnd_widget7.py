@@ -3,7 +3,7 @@ _____ os
 ____ PySide.?C.. _____ _
 ____ PySide.?G.. _____ _
 
-icon _ os.path.join(os.path.dirname(__file__), 'drag.png')
+icon _ os.path.j..(os.path.dirname(__file__), 'drag.png')
 
 c_ listWidgetClass(QListWidget
     ___  -  

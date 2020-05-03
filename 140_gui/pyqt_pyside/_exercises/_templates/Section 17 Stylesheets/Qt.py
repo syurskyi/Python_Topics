@@ -1406,7 +1406,7 @@ ___ _cli(args
         # <------ Write
         #
         w__ o..(args.convert, "w") __ f:
-            f.w..("".join(lines))
+            f.w..("".j..(lines))
 
         ___.stdout.w..("Successfully converted \"%s\"\n" % args.convert)
 
@@ -1428,7 +1428,7 @@ ___ _install(
         "None": _none
     }
 
-    _log("Order: '%s'" % "', '".join(order))
+    _log("Order: '%s'" % "', '".j..(order))
 
     # Allow site-level customization of the available modules.
     _apply_site_config

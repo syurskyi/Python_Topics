@@ -26,13 +26,13 @@ ___ build(root, data
         ___ d __ data:
             # print(d)
             name _ d[0]
-            path _ os.path.join(root, name)
+            path _ os.path.j..(root, name)
             createFolder(path)
             build(path, d[1])
 
 projectname _ raw_input('Enter project name: ')
 __ projectname:
-    fullPath _ os.path.join(path, projectname)
+    fullPath _ os.path.j..(path, projectname)
     createFolder(fullPath)
     build(fullPath, folders)
 

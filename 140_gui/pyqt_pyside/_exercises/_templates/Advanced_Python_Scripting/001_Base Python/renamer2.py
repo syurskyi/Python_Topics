@@ -5,9 +5,9 @@ root _ os.path.dirname(__file__)
 files _ os.listdir(root)
 txt _ []
 ___ f __ files:
-    __ os.path.isfile(os.path.join(root, f)):
+    __ os.path.isfile(os.path.j..(root, f)):
         __ os.path.splitext(f)[-1] __ '.txt':
-            arg.ap..(os.path.join(root, f))
+            arg.ap..(os.path.j..(root, f))
 
 # print(arg)
 
@@ -17,7 +17,7 @@ __ newName:
         d _ os.path.dirname(f)
         name, ext _ os.path.splitext(os.path.basename(f))
         fName _ newName + '_' + st.(i).zfill(3) + ext
-        fullPath _ os.path.join(d, fName)
+        fullPath _ os.path.j..(d, fName)
         # print(fullPath)
         os.rename(f, fullPath)
 

@@ -10,7 +10,7 @@ __ newName:
         d _ os.path.dirname(f)
         name, ext _ os.path.splitext(os.path.basename(f))
         fName _ newName + '_' + st.(i).zfill(3) + ext
-        fullPath _ os.path.join(d, fName)
+        fullPath _ os.path.j..(d, fName)
         # print(fullPath)
         os.rename(f, fullPath)
 

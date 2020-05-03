@@ -68,20 +68,20 @@ c_ resourceCompileClass(?M..
         workDir _ os.path.dirname(qrc)
         os.chdir(workDir)
         #PySide
-        compiled _ os.path.join(os.path.dirname(qrc), 'icons_rcs.py')
+        compiled _ os.path.j..(os.path.dirname(qrc), 'icons_rcs.py')
         rcc _ 'C:/Python27/Lib/site-packages/PySide/pyside-rcc.exe'
-        cmd _ ' '.join([rcc, qrc, '-o', compiled])
+        cmd _ ' '.j..([rcc, qrc, '-o', compiled])
         os.system(cmd)
         #PyQt
-        compiled _ os.path.join(os.path.dirname(qrc), 'icons_rc.py')
+        compiled _ os.path.j..(os.path.dirname(qrc), 'icons_rc.py')
         rcc _ 'C:/Python27/Lib/site-packages/PyQt4/pyrcc4.exe '
-        cmd _ ' '.join([rcc, qrc, '-o', compiled])
+        cmd _ ' '.j..([rcc, qrc, '-o', compiled])
         os.system(cmd)
         r_ T..
 
     ___ runCompile
         files _ [list.item(i).data(32) ___ i in range(list.count())]
-        qrc _ os.path.join(os.path.dirname(files[0]), 'resource.qrc')
+        qrc _ os.path.j..(os.path.dirname(files[0]), 'resource.qrc')
         __ writeFile(qrc, files
             compileQrc(qrc)
 

@@ -29,7 +29,7 @@ c_ simpleWindow(?W..
             table.sI..(i, 0, item)
             item _ ?TWI..
             item.setFlags(Qt.ItemIsEnabled | Qt.ItemIsSelectable)
-            item.sT..(st.(os.stat(os.path.join(path, f)).st_size) + ' bytes' )
+            item.sT..(st.(os.stat(os.path.j..(path, f)).st_size) + ' bytes' )
             table.sI..(i, 1, item)
 
 
