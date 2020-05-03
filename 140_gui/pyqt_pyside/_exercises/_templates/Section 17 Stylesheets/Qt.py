@@ -1001,7 +1001,7 @@ ___ _pyside2(
 
     __ hasattr(Qt, "_QtCore"
         Qt.__qt_version__ _ Qt._QtCore.qVersion
-        Qt.QtCompat.translate _ Qt._QtCore.QCoreApplication.translate
+        Qt.QtCompat.translate _ Qt._QtCore.?CA__.translate
 
     __ hasattr(Qt, "_QtWidgets"
         Qt.QtCompat.setSectionResizeMode _ \
@@ -1048,14 +1048,14 @@ ___ _pyside(
 
     __ hasattr(Qt, "_QtCore"
         Qt.__qt_version__ _ Qt._QtCore.qVersion
-        QCoreApplication _ Qt._QtCore.QCoreApplication
+        ?CA__ _ Qt._QtCore.?CA__
         Qt.QtCompat.translate _ (
             lambda context, sourceText, disambiguation, n:
-            QCoreApplication.translate(
+            ?CA__.translate(
                 context,
                 sourceText,
                 disambiguation,
-                QCoreApplication.CodecForTr,
+                ?CA__.CodecForTr,
                 n
             )
         )
@@ -1088,7 +1088,7 @@ ___ _pyqt5(
     __ hasattr(Qt, "_QtCore"
         Qt.__binding_version__ _ Qt._QtCore.PYQT_VERSION_STR
         Qt.__qt_version__ _ Qt._QtCore.QT_VERSION_STR
-        Qt.QtCompat.translate _ Qt._QtCore.QCoreApplication.translate
+        Qt.QtCompat.translate _ Qt._QtCore.?CA__.translate
 
     __ hasattr(Qt, "_QtWidgets"
         Qt.QtCompat.setSectionResizeMode _ \
@@ -1164,14 +1164,14 @@ ___ _pyqt4(
         Qt.__binding_version__ _ Qt._QtCore.PYQT_VERSION_STR
         Qt.__qt_version__ _ Qt._QtCore.QT_VERSION_STR
 
-        QCoreApplication _ Qt._QtCore.QCoreApplication
+        ?CA__ _ Qt._QtCore.?CA__
         Qt.QtCompat.translate _ (
             lambda context, sourceText, disambiguation, n:
-            QCoreApplication.translate(
+            ?CA__.translate(
                 context,
                 sourceText,
                 disambiguation,
-                QCoreApplication.CodecForTr,
+                ?CA__.CodecForTr,
                 n)
         )
 
