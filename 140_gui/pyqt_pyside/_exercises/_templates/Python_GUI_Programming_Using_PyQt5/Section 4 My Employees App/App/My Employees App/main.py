@@ -57,7 +57,7 @@ c_ Main(?W..
 
     ___ addEmployee 
         newEmployee_AddEmployee()
-        close()
+        c..
     ___ getEmployees 
         query_"SELECT id,name,surname FROM employees"
         employees_cur.execute(query).fetchall()
@@ -114,15 +114,15 @@ c_ Main(?W..
             id _ person.split("-")[0]
             mbox_QMessageBox.question ,"Warning","Are you sure to delete this person?",QMessageBox.Yes|QMessageBox.No,QMessageBox.No)
             __ mbox __ QMessageBox.Yes:
-                try:
+                ___
                     query_"DELETE FROM employees WHERE id=?"
                     cur.execute(query,(id,))
                     con.commit()
                     QMessageBox.information ,"Info!!!","Person has been deleted")
-                    close()
+                    c..
                     main_Main()
 
-                except:
+                _____:
                     QMessageBox.information ,"Warning!!!","Person has not been deleted")
 
 
@@ -135,7 +135,7 @@ c_ Main(?W..
             person _ employeeList.cI__).t..()
             person_id_person.split("-")[0]
             updateWindow_UpdateEmployee()
-            close()
+            c..
 
         ____
             QMessageBox.information , "Warning!!!", "Please select a person to update")
@@ -256,14 +256,14 @@ c_ UpdateEmployee(?W..
         img_defaultImg
         address_addressEditor.toPlainText()
         __ (name an. surname an. phone !_""
-            try:
+            ___
                 query_"UPDATE employees set name =?, surname=?, phone=?,email=?,img=?,address=? WHERE id=?"
                 cur.execute(query,(name,surname,phone,email,img,address,person_id))
                 con.commit()
                 QMessageBox.information ,"Success","Person has been updated")
-                close()
+                c..
                 main_Main()
-            except:
+            _____:
                 QMessageBox.information , "Warning", "Person has not been updated")
 
         ____
@@ -368,14 +368,14 @@ c_ AddEmployee(?W..
         img_defaultImg
         address_addressEditor.toPlainText()
         __ (name an. surname an. phone !_""
-            try:
+            ___
                 query_"INSERT INTO employees (name,surname,phone,email,img,address) VALUES(?,?,?,?,?,?)"
                 cur.execute(query,(name,surname,phone,email,img,address))
                 con.commit()
                 QMessageBox.information ,"Success","Person has been added")
-                close()
+                c..
                 main_Main()
-            except:
+            _____:
                 QMessageBox.information , "Warning", "Person has not been added")
 
         ____

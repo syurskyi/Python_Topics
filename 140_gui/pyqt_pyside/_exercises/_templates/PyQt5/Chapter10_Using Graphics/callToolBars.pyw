@@ -8,13 +8,13 @@ c_ AppWindow(QMainWindow
     ___  -
         s__. - ()
         ui _ Ui_MainWindow()
-        ui.setupUi
+        ?.setupUi
         pos1 _ [0,0]
         pos2 _ [0,0]
         toDraw_""
-        ui.actionCircle.triggered.c..(drawCircle)
-        ui.actionRectangle.triggered.c..(drawRectangle)
-        ui.actionLine.triggered.c..(drawLine)
+        ?.actionCircle.triggered.c..(drawCircle)
+        ?.actionRectangle.triggered.c..(drawRectangle)
+        ?.actionLine.triggered.c..(drawLine)
         s..
 
     ___ paintEvent , event
@@ -55,7 +55,7 @@ c_ AppWindow(QMainWindow
 app _ ?A..
 w _ AppWindow()
 w.s..
-___.e..(app.e
+___.e.. ?.e
 
 
 

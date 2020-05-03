@@ -8,18 +8,18 @@ c_ AppWindow(QMainWindow
     ___  -  
         s__. - ()
         ui _ Ui_MainWindow()
-        ui.sU..
+        ?.sU..
         pos1 _ [0,0]
         pos2 _ [0,0]
         toDraw_""
-        ui.actionDraw_Circle.triggered.c..(drawCircle)
-        ui.actionDraw_Rectangle.triggered.c..(drawRectangle)
-        ui.actionDraw_Line.triggered.c..(drawLine)
-        ui.actionPage_Setup.triggered.c..(pageSetup)
-        ui.actionSet_Password.triggered.c..(setPassword)
-        ui.actionCut.triggered.c..(cutMethod)
-        ui.actionCopy.triggered.c..(copyMethod)
-        ui.actionPaste.triggered.c..(pasteMethod)       
+        ?.actionDraw_Circle.triggered.c..(drawCircle)
+        ?.actionDraw_Rectangle.triggered.c..(drawRectangle)
+        ?.actionDraw_Line.triggered.c..(drawLine)
+        ?.actionPage_Setup.triggered.c..(pageSetup)
+        ?.actionSet_Password.triggered.c..(setPassword)
+        ?.actionCut.triggered.c..(cutMethod)
+        ?.actionCopy.triggered.c..(copyMethod)
+        ?.actionPaste.triggered.c..(pasteMethod)
         s..
 
     ___ paintEvent , event
@@ -49,36 +49,36 @@ c_ AppWindow(QMainWindow
         update()
                
     ___ drawCircle 
-        ui.label.sT..("")
+        ?.label.sT..("")
         toDraw_"circle"
 
     ___ drawRectangle 
-        ui.label.sT..("")
+        ?.label.sT..("")
         toDraw_"rectangle"
 
     ___ drawLine 
-        ui.label.sT..("")
+        ?.label.sT..("")
         toDraw_"line"
 
     ___ pageSetup 
-        ui.label.sT..("Page Setup menu item is selected")
+        ?.label.sT..("Page Setup menu item is selected")
 
     ___ setPassword 
-        ui.label.sT..("Set Password menu item is selected")
+        ?.label.sT..("Set Password menu item is selected")
         
     ___ cutMethod 
-        ui.label.sT..("Cut menu item is selected")
+        ?.label.sT..("Cut menu item is selected")
 
     ___ copyMethod 
-        ui.label.sT..("Copy menu item is selected")
+        ?.label.sT..("Copy menu item is selected")
 
     ___ pasteMethod 
-        ui.label.sT..("Paste menu item is selected")
+        ?.label.sT..("Paste menu item is selected")
 
 app _ ?A..
 w _ AppWindow()
 w.s..
-___.e..(app.e
+___.e.. ?.e
 
 
 

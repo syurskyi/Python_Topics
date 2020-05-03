@@ -4,34 +4,34 @@ ____ ?.?W.. _____ ?D.., ?A..
 
 ____ demoStudentClass _____ _
 
-c_ Student:
+c_ Student
     name _ ""
     code _ ""
  
-    ___  -  , code, name
-        code _ code
-        name _ name
+    ___  -  code name
+        ? ?
+        ? ?
 
     ___ getCode 
-        r_ code
+        r_ ?
     
     ___ getName 
-        r_ name
+        r_ ?
 
-c_ MyForm(?D..
+c_ MyForm ?D..
     ___  -  
-        s__. - ()
+        s__. -
         ui _ ?
-        ui.sU..
-        ui.ButtonClickMe.c___.c..(dispmessage)
+        ?.sU..
+        ?.ButtonClickMe.c___.c.. ?
         s..
 
     ___ dispmessage 
-        studentObj_Student(ui.lineEditCode.t..(), ui.lEN__.t..())
-        ui.lR___.sT..("Code: "+studentObj.gC..+", Name:"+studentObj.getName())
+        studentObj _ ? ?.lEC__.t.. ?.lEN__.t..
+        ?.lR___.sT.. "Code: " + sO__.gC.. + ", Name:" + sO__.gN..
 
 __ _ ____ __ _____
     app _ ?A..
     w _ ?
-    w.s..
-    ___.e..(app.e
+    ?.s..
+    ___.e.. ?.e

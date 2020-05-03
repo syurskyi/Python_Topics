@@ -87,7 +87,7 @@ c_ resourceCompileClass(QMainWindow
 
 
     ___ writeFile , qrc, files
-        with open(qrc, 'w') as f:
+        w__ open(qrc, 'w') __ f:
             f.write('<RCC>\n\t<qresource>\n')
             ___ ico in files:
                 f.write('\t\t<file>%s</file>\n' % os.path.basename(ico))
@@ -97,7 +97,7 @@ c_ resourceCompileClass(QMainWindow
 app _ ?A..
 window _ resourceCompileClass()
 window.s..
-___.e..(app.e
+___.e.. ?.e
 
 
 

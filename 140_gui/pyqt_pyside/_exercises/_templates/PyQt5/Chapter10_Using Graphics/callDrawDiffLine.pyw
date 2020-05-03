@@ -10,7 +10,7 @@ c_ MyForm(?D..
     ___  -
         s__. - ()
         ui _ ?
-        ui.sU..
+        ?.sU..
         lineType_"SolidLine"
         pos1 _ [0,0]
         pos2 _ [0,0]
@@ -48,4 +48,4 @@ __ _ ____ __ _____
     app _ ?A..
     w _ ?
     w.s..
-    ___.e..(app.e
+    ___.e.. ?.e

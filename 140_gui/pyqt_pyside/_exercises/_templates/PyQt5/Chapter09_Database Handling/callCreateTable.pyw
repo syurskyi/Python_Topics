@@ -10,36 +10,36 @@ c_ MyForm(?D..
     ___  -
         s__. - ()
         ui _ ?
-        ui.sU..
-        ui.pushButtonCreateTable.c___.c..(createTable)
-        ui.pushButtonAddColumn.c___.c..(addColumns)
+        ?.sU..
+        ?.pushButtonCreateTable.c___.c..(createTable)
+        ?.pushButtonAddColumn.c___.c..(addColumns)
         s..
 
     ___ addColumns
         global tabledefinition         
         __ tabledefinition__"":
-            tabledefinition_"CREATE TABLE IF NOT EXISTS "+ ui.lineEditTableName.t..()+"("+ui.lineEditColumnName.t..()+" "+ui.comboBoxDataType.iT..(ui.comboBoxDataType.cI..())
+            tabledefinition_"CREATE TABLE IF NOT EXISTS "+ ?.lineEditTableName.t..()+"("+?.lineEditColumnName.t..()+" "+?.comboBoxDataType.iT..(?.comboBoxDataType.cI..())
         ____
-            tabledefinition+_", "+ui.lineEditColumnName.t..()+" "+ui.comboBoxDataType.iT..(ui.comboBoxDataType.cI..())
-        ui.lineEditColumnName.sT..("")
-        ui.lineEditColumnName.sF..
+            tabledefinition+_", "+?.lineEditColumnName.t..()+" "+?.comboBoxDataType.iT..(?.comboBoxDataType.cI..())
+        ?.lineEditColumnName.sT..("")
+        ?.lineEditColumnName.sF..
 
     ___ createTable
         global tabledefinition 
-        try:
-            conn _ sqlite3.c..(ui.lineEditDBName.t..()+".db")
-            ui.lR___.sT..("Database is connected")
+        ___
+            conn _ sqlite3.c..(?.lineEditDBName.t..()+".db")
+            ?.lR___.sT..("Database is connected")
             c _ conn.cursor()
             tabledefinition+_");"
             c.execute(tabledefinition)
-            ui.lR___.sT..("Table is successfully created")
-        except Error as e:
-            ui.lR___.sT..("Error in creating table")
-        finally:
-            conn.close()
+            ?.lR___.sT..("Table is successfully created")
+        _____ Error __ e:
+            ?.lR___.sT..("Error in creating table")
+        f..
+            conn.c..
 
 __ _ ____ __ _____
     app _ ?A..
     w _ ?
     w.s..
-    ___.e..(app.e
+    ___.e.. ?.e

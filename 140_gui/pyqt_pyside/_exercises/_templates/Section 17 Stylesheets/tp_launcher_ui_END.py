@@ -472,7 +472,7 @@ __ __name__ __ '__main__':
     # Create an instance of tool and run it
     ex _ TP_Launcher_GUI()
     ex.s..
-    ___.e..(app.e
+    ___.e.. ?.e
 
 # Copyright (c) 2017 Trevor Payne
 #

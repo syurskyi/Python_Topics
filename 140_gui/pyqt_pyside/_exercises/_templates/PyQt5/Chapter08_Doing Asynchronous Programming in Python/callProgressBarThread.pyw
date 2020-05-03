@@ -2,7 +2,7 @@ _____ ___
 _____ threading
 _____ time
 
-____ PyQt5.?W.. _____ ?D.., ?A..
+____ ?.?W.. _____ ?D.., ?A..
 
 ____ demoProgressBarThread _____ _
 
@@ -10,7 +10,7 @@ c_ MyForm(?D..
     ___  -  
         s__. - ()
         ui _ ?
-        ui.sU..
+        ?.sU..
         s..
        
 c_ myThread (threading.Thread
@@ -24,7 +24,7 @@ c_ myThread (threading.Thread
       print ("Starting " + name)
       w__ counter <_100:
           time.sleep(1)
-          w.ui.pB__.sV..(counter)
+          w.?.pB__.sV..(counter)
           counter+_10
       print ("Exiting " + name)
 
@@ -35,6 +35,6 @@ __ _ ____ __ _____
     thread1 _ myThread(w)
     thread1.start()
     w.exec()
-    ___.e..(app.e
+    ___.e.. ?.e
 
 

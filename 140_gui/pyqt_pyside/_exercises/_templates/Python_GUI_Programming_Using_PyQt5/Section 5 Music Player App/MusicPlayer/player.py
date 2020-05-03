@@ -154,7 +154,7 @@ c_ Player(?W..
         count _ 0
         index _ playList.cR..
 
-        try:
+        ___
             mixer.music.load(st.(musicList[index]))
             mixer.music.play()
             timer.start()
@@ -168,7 +168,7 @@ c_ Player(?W..
             pB__.sV..(0)
             pB__.setMaximum(songLength)
 
-        except:
+        _____:
             pass
 
     ___ playPrevious 
@@ -182,7 +182,7 @@ c_ Player(?W..
              index _ items
         index -_ 1
 
-        try:
+        ___
             mixer.music.load(st.(musicList[index]))
             mixer.music.play()
             timer.start()
@@ -196,7 +196,7 @@ c_ Player(?W..
             pB__.sV..(0)
             pB__.setMaximum(songLength)
 
-        except:
+        _____:
             pass
 
     ___ playNext 
@@ -210,7 +210,7 @@ c_ Player(?W..
         __ index __ items:
             index _ 0
 
-        try:
+        ___
             mixer.music.load(st.(musicList[index]))
             mixer.music.play()
             timer.start()
@@ -224,7 +224,7 @@ c_ Player(?W..
             pB__.sV..(0)
             pB__.setMaximum(songLength)
 
-        except:
+        _____:
             pass
 
     ___ setVolume 

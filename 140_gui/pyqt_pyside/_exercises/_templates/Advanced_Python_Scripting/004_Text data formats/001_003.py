@@ -25,7 +25,7 @@ c_ settings(
 
     ___ __write_file
         __ data:
-            with open(path, 'w') as f:
+            w__ open(path, 'w') __ f:
                 ___ key, value in data.items(
                     f.write('%s=%s\n' % (key, value))
 

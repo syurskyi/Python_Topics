@@ -9,51 +9,51 @@ c_ MyForm(?D..
     ___  -  
         s__. - ()
         ui _ ?
-        ui.sU..
-        ui.pushButtonDelete.c___.c..(DeleteUser)
-        ui.pushButtonYes.c___.c..(ConfirmDelete)
-        ui.labelSure.hide()
-        ui.pushButtonYes.hide()
-        ui.pushButtonNo.hide()       
+        ?.sU..
+        ?.pushButtonDelete.c___.c..(DeleteUser)
+        ?.pushButtonYes.c___.c..(ConfirmDelete)
+        ?.labelSure.hide()
+        ?.pushButtonYes.hide()
+        ?.pushButtonNo.hide()
         s..
 
     ___ DeleteUser 
-        selectStatement_"SELECT * FROM Users where EmailAddress like '"+ui.lineEditEmailAddress.t..()+"' and Password like '"+ ui.lineEditPassword.t..()+"'"
-        try:
+        selectStatement_"SELECT * FROM Users where EmailAddress like '"+?.lineEditEmailAddress.t..()+"' and Password like '"+ ?.lineEditPassword.t..()+"'"
+        ___
             conn _ sqlite3.c..("ECommerce.db")
             cur _ conn.cursor()
             cur.execute(selectStatement)
             row _ cur.fetchone()
             __ row__None:
-                ui.labelSure.hide()
-                ui.pushButtonYes.hide()
-                ui.pushButtonNo.hide()   
-                ui.lR___.sT..("Sorry, Incorrect email address or password ")
+                ?.labelSure.hide()
+                ?.pushButtonYes.hide()
+                ?.pushButtonNo.hide()
+                ?.lR___.sT..("Sorry, Incorrect email address or password ")
             ____
-                ui.labelSure.s..
-                ui.pushButtonYes.s..
-                ui.pushButtonNo.s..
-                ui.lR___.sT..("")
-        except Error as e:
-            ui.lR___.sT..("Error in accessing user account")
-        finally:
-            conn.close()
+                ?.labelSure.s..
+                ?.pushButtonYes.s..
+                ?.pushButtonNo.s..
+                ?.lR___.sT..("")
+        _____ Error __ e:
+            ?.lR___.sT..("Error in accessing user account")
+        f..
+            conn.c..
 
     ___ ConfirmDelete 
-        deleteStatement_"DELETE FROM Users where EmailAddress like '"+ui.lineEditEmailAddress.t..()+"' and Password like '"+ ui.lineEditPassword.t..()+"'"
-        try:
+        deleteStatement_"DELETE FROM Users where EmailAddress like '"+?.lineEditEmailAddress.t..()+"' and Password like '"+ ?.lineEditPassword.t..()+"'"
+        ___
             conn _ sqlite3.c..("ECommerce.db")
             cur _ conn.cursor()
-            with conn:
+            w__ conn:
                 cur.execute(deleteStatement)
-                ui.lR___.sT..("User successfully deleted")
-        except Error as e:
-            ui.lR___.sT..("Error in deleting user account")
-        finally:
-            conn.close()
+                ?.lR___.sT..("User successfully deleted")
+        _____ Error __ e:
+            ?.lR___.sT..("Error in deleting user account")
+        f..
+            conn.c..
 
 __ _ ____ __ _____
     app _ ?A..
     w _ ?
     w.s..
-    ___.e..(app.e
+    ___.e.. ?.e

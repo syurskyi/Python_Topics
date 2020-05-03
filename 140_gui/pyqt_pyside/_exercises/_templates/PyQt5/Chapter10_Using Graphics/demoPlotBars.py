@@ -1,4 +1,4 @@
-_____ matplotlib.pyplot as graph
+_____ matplotlib.pyplot __ graph
 
 years _ ['2016', '2017', '2018']
 profit _ [70, 90, 80]

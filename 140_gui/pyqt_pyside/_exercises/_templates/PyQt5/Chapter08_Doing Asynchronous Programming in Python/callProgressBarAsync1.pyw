@@ -9,13 +9,13 @@ c_ MyForm(?D..
     ___  -
         s__. - ()
         ui _ ?
-        ui.sU..
-        ui.pushButtonStart.c___.c..(invokeAsync)
+        ?.sU..
+        ?.pushButtonStart.c___.c..(invokeAsync)
         s..
 
     ___ invokeAsync
-        asyncio.ensure_future(updt(0.5, ui.progressBarFileDownload))
-        asyncio.ensure_future(updt(1, ui.progressBarVirusScan))
+        asyncio.ensure_future(updt(0.5, ?.progressBarFileDownload))
+        asyncio.ensure_future(updt(1, ?.progressBarVirusScan))
                
     @staticmethod
     async ___ updt(delay, ProgressBar
@@ -33,9 +33,9 @@ __ _ ____ __ _____
     asyncio.set_event_loop(loop)
     w _ ?
     w.exec()
-    with loop:
+    w__ loop:
         loop.run_forever()
-    loop.close()
-    ___.e..(app.e
+    loop.c..
+    ___.e.. ?.e
 
 

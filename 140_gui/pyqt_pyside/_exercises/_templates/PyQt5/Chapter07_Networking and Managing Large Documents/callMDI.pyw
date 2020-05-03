@@ -8,31 +8,31 @@ c_ MyForm(QMainWindow
     ___  -
         s__. - ()
         ui _ Ui_MainWindow()
-        ui.sU..
-        ui.mdiArea.addSubWindow(ui.subwindow)
-        ui.mdiArea.addSubWindow(ui.subwindow_2)
-        ui.actionSubWindow_View.triggered.c..(SubWindow_View)
-        ui.actionTabbed_View.triggered.c..(Tabbed_View)
-        ui.actionCascade_View.triggered.c..(cascadeArrange)
-        ui.actionTile_View.triggered.c..(tileArrange)
+        ?.sU..
+        ?.mdiArea.addSubWindow(?.subwindow)
+        ?.mdiArea.addSubWindow(?.subwindow_2)
+        ?.actionSubWindow_View.triggered.c..(SubWindow_View)
+        ?.actionTabbed_View.triggered.c..(Tabbed_View)
+        ?.actionCascade_View.triggered.c..(cascadeArrange)
+        ?.actionTile_View.triggered.c..(tileArrange)
         s..
 
     ___ SubWindow_View
-        #self.ui.mdiArea.activateNextSubWindow()
-        ui.mdiArea.setViewMode(0)
+        #self.?.mdiArea.activateNextSubWindow()
+        ?.mdiArea.setViewMode(0)
 
     ___ Tabbed_View
-        ui.mdiArea.setViewMode(1)
+        ?.mdiArea.setViewMode(1)
 
     ___ cascadeArrange
-        ui.mdiArea.cascadeSubWindows()
+        ?.mdiArea.cascadeSubWindows()
 
     ___ tileArrange
-        ui.mdiArea.tileSubWindows()
+        ?.mdiArea.tileSubWindows()
 
 __ _ ____ __ _____
     app _ ?A..
     w _ ?
     w.s..
-    ___.e..(app.e
+    ___.e.. ?.e
 

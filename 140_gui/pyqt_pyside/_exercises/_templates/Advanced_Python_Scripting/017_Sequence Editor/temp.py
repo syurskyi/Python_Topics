@@ -50,7 +50,7 @@ c_ timeline(?G...QGraphicsView
         setVerticalScrollBarPolicy(?C...Qt.ScrollBarAlwaysOff)
         setHorizontalScrollBarPolicy(?C...Qt.ScrollBarAlwaysOff)
         scene _ ?G...QGraphicsScene
-        scene.setBackgroundBrush(?G...QColor(90, 90, 90))
+        scene.setBackgroundBrush(?G...?C..(90, 90, 90))
         setScene(scene)
         audio_items _ []
         track _ 0
@@ -136,4 +136,4 @@ __ __name__ __ '__main__':
 
     view.set_zoom(2.0)
     view.s..
-___.e..(app.e
+___.e.. ?.e

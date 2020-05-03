@@ -72,7 +72,7 @@ c_ pad1(?G...QGraphicsEllipseItem
         setAcceptHoverEvents(T..)
         acceptTouchEvents()
 
-        color _ ?G...QColor("Blue")
+        color _ ?G...?C..("Blue")
         setBrush(color)
         setAcceptDrops(T..)
         acceptTouchEvents()
@@ -100,7 +100,7 @@ c_ pad1(?G...QGraphicsEllipseItem
         updateConnectors()
 
     ___ updateColor , colorString
-        color _ ?G...QColor(colorString)
+        color _ ?G...?C..(colorString)
         setBrush(color)
 
     ___ mousePressEvent , e
@@ -115,7 +115,7 @@ c_ pad1(?G...QGraphicsEllipseItem
         __ e.button() __ ?C...Qt.RightButton:
             print('midi')
             print(pad1.__counter)
-            try:
+            ___
                 mixer.music.stop()
                 playing _ False
                 # self.updateColor("Blue")
@@ -124,7 +124,7 @@ c_ pad1(?G...QGraphicsEllipseItem
                 ____
                     # restart
                     pad1.__counter _ 0
-            except:
+            _____:
                 print("Nothing to do")
                 # QtGui.QMessageBox.about( QtGui.QWidget()	,"Warning", "Please, define a song sequence!")
 
@@ -136,7 +136,7 @@ c_ pad1(?G...QGraphicsEllipseItem
     ___ startSong
 
         # self.updateColor("Red")
-        try:
+        ___
 
             songPath _ songListdecoded[pad1.__counter][0]
             offset _ fl..(songListdecoded[pad1.__counter][1])
@@ -151,7 +151,7 @@ c_ pad1(?G...QGraphicsEllipseItem
                 # restart
                 pad1.__counter _ 0
                 print("count = %i" % pad1.__counter)
-        except:
+        _____:
 
             # update counter
 
@@ -168,7 +168,7 @@ c_ pad1(?G...QGraphicsEllipseItem
     ___ TriggerPad
         print("TriggerPad")
 
-        try:
+        ___
             print("self.inputDict[self.seq]['song']")
             print(inputDict[seq]['song'])
             songListcoded _ inputDict[seq]['song']
@@ -188,7 +188,7 @@ c_ pad1(?G...QGraphicsEllipseItem
             # print(songPath)
 
 
-        except:
+        _____:
             # QtGui.QMessageBox.about( QtGui.QWidget()	,"Warning", "Please, define a song sequence!")
             # self.updateColor("Blue")
             pass
@@ -497,7 +497,7 @@ c_ mainWindow(?G...QMainWindow
         filename _ ?G...QFileDialog.getOpenFileName , 'Open File', os.getenv('HOME'), "oss *.*")
         f _ open(filename, 'r')
         json _ json.loads(f.read())
-        f.close()
+        f.c..
 
         # parse json to dict
         songDict _ json
@@ -546,11 +546,11 @@ c_ mainWindow(?G...QMainWindow
             os.remove(filename)
 
         __ filename:
-            try:
+            ___
                 f _ open(filename, 'w')
                 f.write(jsonvar)
-                f.close()
-            except ValueError:
+                f.c..
+            _____ ValueError:
                 print("Oops!  That was not a valid path.  Try again...")
         ____
             print("Do nothing")
@@ -781,7 +781,7 @@ ___ main(
     # ex = Canvas()
     ex _ mainWindow()
     ex.s..
-    ___.e..(app.e
+    ___.e.. ?.e
 
 
 __ __name__ __ '__main__':

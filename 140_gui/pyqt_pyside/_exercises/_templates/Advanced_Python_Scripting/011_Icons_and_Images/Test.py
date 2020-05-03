@@ -37,10 +37,10 @@ c_ ImageWidget(?G...?W..
 
     ___ initAttrib 
         name_font _ ?G...?F..()
-        bg_color _ ?G...QColor(50, 50, 50)
-        hightlight _ ?G...QColor(255, 255, 255, 100)
+        bg_color _ ?G...?C..(50, 50, 50)
+        hightlight _ ?G...?C..(255, 255, 255, 100)
         edge_size _ 5
-        pen_selected _ ?G...QPen(?G...QColor(255, 255, 0))
+        pen_selected _ ?G...QPen(?G...?C..(255, 255, 0))
         pen_selected.setWidth(edge_size)
         pen_selected.setJoinStyle(?C...Qt.MiterJoin)
 
@@ -86,7 +86,7 @@ c_ ImageWidget(?G...?W..
         __ isHightlight an. not selected:
             painter.fillRect(rect(), hightlight)
         # draw name
-        painter.setPen(?G...QPen(?G...QColor(255, 255, 255)))
+        painter.setPen(?G...QPen(?G...?C..(255, 255, 255)))
         name_font.setPixelSize(name_height)
         painter.sF..(name_font)
         # 脚标字符
@@ -98,19 +98,19 @@ c_ ImageWidget(?G...?W..
             p2 _ ?C...QPoint(0, title_height)
             p3 _ ?C...QPoint(title_height, 0)
             painter.setPen(?C...Qt.NoPen)
-            painter.fillRect(0, 0, width(), title_height, ?G...QColor(40, 40, 40, 40))
+            painter.fillRect(0, 0, width(), title_height, ?G...?C..(40, 40, 40, 40))
             __ status __ 1:
-                painter.setBrush(?G...QBrush(?G...QColor(255, 0, 0)))
+                painter.setBrush(?G...QBrush(?G...?C..(255, 0, 0)))
             elif status __ 2:
-                painter.setBrush(?G...QBrush(?G...QColor(0, 255, 0)))
+                painter.setBrush(?G...QBrush(?G...?C..(0, 255, 0)))
             elif status __ 3:
-                painter.setBrush(?G...QBrush(?G...QColor(0, 0, 255)))
+                painter.setBrush(?G...QBrush(?G...?C..(0, 0, 255)))
             painter.drawConvexPolygon(p1, p2, p3)
 
         __ version:
             version_x _ width() - edge_size - name_height * 1.5
             version_y _ name_height
-            painter.setPen(?G...QPen(?G...QColor(255, 255, 255)))
+            painter.setPen(?G...QPen(?G...?C..(255, 255, 255)))
             painter.drawText(version_x, version_y, '%s' % version)
 
         # draw selected
@@ -327,7 +327,7 @@ c_ MainWindow(?G...?W..
 
         setLayout(mainLayout)
 
-        ___.e..(app.e
+        ___.e.. ?.e
 
     ___ dirTreeClicked 
         print 'dirTreeClicked'
@@ -342,12 +342,12 @@ c_ MainWindow(?G...?W..
             __ item.split('.')[-1] __ FILE_TYPE:
                 print item
                 # 添加widget
-                try:
+                ___
                     widget _ ImageWidget()
                     widget.displayText _ item
                     widget.setThumb(unicode(pathSelected + '/' + item))
                     imageContainer.addWidget(widget)
-                except:
+                _____:
                     pass
 
 

@@ -1,6 +1,6 @@
 ____ PySide.?C.. _____ _
 ____ PySide.?G.. _____ _
-_____  iconWidget_UIs as ui
+_____  iconWidget_UIs __ ui
 ____ icons.icons _____ icons
 _____ random, os
 _____ ctypes

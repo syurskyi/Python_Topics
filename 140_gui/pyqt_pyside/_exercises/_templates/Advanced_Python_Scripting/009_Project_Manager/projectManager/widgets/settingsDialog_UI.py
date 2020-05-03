@@ -9,17 +9,17 @@
 
 ____ PyQt4 _____ ?C.., ?G..
 
-try:
+___
     _fromUtf8 _ ?C...QString.fromUtf8
-except AttributeError:
+_____ AttributeError:
     ___ _fromUtf8(s
         r_ s
 
-try:
+___
     _encoding _ ?G...?A...UnicodeUTF8
     ___ _translate(context, t.., disambig
         r_ ?G...?A...translate(context, t.., disambig, _encoding)
-except AttributeError:
+_____ AttributeError:
     ___ _translate(context, t.., disambig
         r_ ?G...?A...translate(context, t.., disambig)
 

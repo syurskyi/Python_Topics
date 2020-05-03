@@ -10,7 +10,7 @@ c_ MyForm(?D..
     ___  -
         s__. - ()
         ui _ ?
-        ui.sU..
+        ?.sU..
         s..
        
 c_ myThread (threading.Thread
@@ -35,8 +35,8 @@ c_ myThread (threading.Thread
 __ _ ____ __ _____
     app _ ?A..
     w _ ?
-    thread1 _ myThread(w, w.ui.progressBarFileDownload)
-    thread2 _ myThread(w, w.ui.progressBarVirusScan)
+    thread1 _ myThread(w, w.?.progressBarFileDownload)
+    thread2 _ myThread(w, w.?.progressBarVirusScan)
     threadLock _ threading.Lock()
     threads _ []
     thread1.start()
@@ -46,6 +46,6 @@ __ _ ____ __ _____
     threads.ap..(thread2)
     ___ t in threads:
         t.join()
-    ___.e..(app.e
+    ___.e.. ?.e
 
 

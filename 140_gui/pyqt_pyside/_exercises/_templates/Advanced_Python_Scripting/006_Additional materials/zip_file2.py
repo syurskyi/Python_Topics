@@ -40,7 +40,7 @@ ___ make_archive(zip_archive_file, directory, *args
 
     zipf _ zipfile.ZipFile(zip_archive_file, 'w', compression_zipfile.ZIP_DEFLATED)
     recursive_zip(zipf, directory, *args)
-    zipf.close()
+    zipf.c..
 
 
 ___ process(srcdir, outdir, *excludes
@@ -53,9 +53,9 @@ ___ process(srcdir, outdir, *excludes
 ___ main(
     frm _ ''
     to _ ''
-    try:
+    ___
         opts, rest _ getopt.getopt(___.argv[1:], "f:t:h")
-    except getopt.GetoptError, err:
+    _____ getopt.GetoptError, err:
         print(err)
         usage()
         ___.e..(2)

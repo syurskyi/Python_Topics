@@ -1,29 +1,29 @@
 _____ ___
 
 ____ ?.?W.. _____ ?D.., ?A.., QColorDialog
-____ ?.?G.. _____ QColor
+____ ?.?G.. _____ ?C..
 
 ____ demoColorDialog _____ _
 
-c_ MyForm(?D..
+c_ MyForm ?D..
     ___  -  
-        s__. - ()
-        col _ QColor(0, 0, 0) 
+        s__. -
+        col _ ?C.. 0, 0, 0
         ui _ ?
-        ui.sU..
-        ui.frameColor.setStyleSheet("QWidget { background-color: %s }" % col.name())
-        ui.pushButtonColor.c___.c..(dispcolor)
+        ?.sU..
+        ?.frameColor.setStyleSheet("QWidget { background-color: %s }" % col.name())
+        ?.pushButtonColor.c___.c..(dispcolor)
         s..
 
     ___ dispcolor 
         col _ QColorDialog.getColor()
         __ col.isValid(
-            ui.frameColor.setStyleSheet("QWidget { background-color: %s }" % col.name())
-            ui.labelColor.sT..("You have selected the color with code: " + st.(col.name()))
+            ?.frameColor.setStyleSheet("QWidget { background-color: %s }" % col.name())
+            ?.labelColor.sT..("You have selected the color with code: " + st.(col.name()))
 
 __ _ ____ __ _____
     app _ ?A..
     w _ ?
     w.s..
-    ___.e..(app.e
+    ___.e.. ?.e
 

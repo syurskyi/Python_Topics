@@ -9,12 +9,12 @@ c_ MyForm(?D..
     ___  -  
         s__. - ()
         ui _ ?
-        ui.sU..
-        ui.pushButtonBounce.c___.c..(startAnimation)
+        ?.sU..
+        ?.pushButtonBounce.c___.c..(startAnimation)
         s..
 
     ___ startAnimation 
-        anim _ QPropertyAnimation(ui.labelPic, b"geometry")
+        anim _ QPropertyAnimation(?.labelPic, b"geometry")
         anim.setDuration(10000)
         anim.setKeyValueAt(0, QRect(0, 0, 100, 80));
         anim.setKeyValueAt(0.8, QRect(160, 160, 200, 180));
@@ -25,4 +25,4 @@ __ _ ____ __ _____
     app _ ?A..
     w _ ?
     w.s..
-    ___.e..(app.e
+    ___.e.. ?.e

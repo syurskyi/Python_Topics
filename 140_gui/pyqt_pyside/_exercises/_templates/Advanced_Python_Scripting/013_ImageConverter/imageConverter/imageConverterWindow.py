@@ -1,7 +1,7 @@
 ____ PySide.?C.. _____ _
 ____ PySide.?G.. _____ _
 
-____ widgets _____ imageConverter_UIs as ui
+____ widgets _____ imageConverter_UIs __ ui
 ____ widgets _____ filesWidget
 
 

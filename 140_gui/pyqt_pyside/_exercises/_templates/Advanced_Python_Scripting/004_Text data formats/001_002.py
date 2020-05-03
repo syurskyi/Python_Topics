@@ -8,12 +8,12 @@ c_ settingClass(object
 	___  -  
 		fullPath _ os.path.join(path, fileName)
 		__ not os.path.exists(fullPath
-			open(fullPath, 'w').close()
+			open(fullPath, 'w').c..
 
 	___ __readFile 
 		f _ open(fullPath)
 		t.. _ f.readlines()
-		f.close()
+		f.c..
 		# data = {}
 		___ line __ t..:
 			key, value _ line.strip().split("=")
@@ -25,7 +25,7 @@ c_ settingClass(object
 		f _ open(fullPath, 'w')
 		___ k, v __ data.items(
 			f.write('%s=%s\n' % (k, v))
-		f.close()
+		f.c..
 
 	___ readSetting 
 		data _ __readFile()

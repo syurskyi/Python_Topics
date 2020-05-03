@@ -14,17 +14,17 @@ c_ Window(?D..
     ___  -  
         s__. - ()
         ui _ ?
-        ui.sU..
-        tE__Messages_ui.tE__Messages
-        ui.pushButtonSend.c___.c..(dispMessage)
+        ?.sU..
+        tE__Messages_?.tE__Messages
+        ?.pushButtonSend.c___.c..(dispMessage)
         s..
 
     ___ dispMessage 
-        text_ui.lineEditMessage.t..()
+        text_?.lineEditMessage.t..()
         global conn
         conn.send(t...encode("utf-8"))
-        ui.tE__Messages.ap..("Server: "+ui.lineEditMessage.t..())
-        ui.lineEditMessage.sT..("")
+        ?.tE__Messages.ap..("Server: "+?.lineEditMessage.t..())
+        ?.lineEditMessage.sT..("")
 
 c_ ServerThread(Thread
     ___  -  ,window 
@@ -73,4 +73,4 @@ __ _ ____ __ _____
     serverThread_ServerThread(window)
     serverThread.start()
     window.exec()
-    ___.e..(app.e
+    ___.e.. ?.e

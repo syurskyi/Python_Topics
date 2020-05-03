@@ -32,11 +32,11 @@ ___ name_color(r, g, b
     vector_a _ nuke.math.Vector3(x, y, z)
     name _ ''
     min_dist _ None
-    try:
+    ___
         file _ open(pathToNames)
         data _ json.load(file)
-        file.close()
-    except:
+        file.c..
+    _____:
         print "Error loading Color labels"
         r_ "Unknown Color"
 
@@ -50,12 +50,12 @@ ___ name_color(r, g, b
 
 
 ___ nuke_hex_to_rgb(nuke_hex
-    try:
+    ___
         real_hex _ '%08x' % nuke_hex
         r _ int(real_hex[0:2], 16) / 255.0
         g _ int(real_hex[2:4], 16) / 255.0
         b _ int(real_hex[4:6], 16) / 255.0
-    except:
+    _____:
         r_ None, None, None
     r_ r, g, b
 
@@ -65,27 +65,27 @@ ___ read_color_presets(path
         print "No Color preset found "
         r_ {}
     ____
-        try:
+        ___
             f _ open(path)
             colors _ json.load(f)
-            f.close()
+            f.c..
             __ type(colors) is dict:
                 r_ colors
             ____
                 print "The preset file doesn't contain a valid dictionary"
                 r_ {}
-        except:
+        _____:
             print "Error reading color preset file"
             r_ {}
 
 
 ___ write_color_presets(path, colors
-    try:
+    ___
         f _ open(path, "w")
         json.dump(colors, f)
-        f.close()
+        f.c..
         r_ T..
-    except:
+    _____:
         r_ False
 
 

@@ -14,23 +14,23 @@ c_ MyForm(?D..
     ___  -
         s__. - ()
         ui _ ?
-        ui.sU..
+        ?.sU..
         cur.execute(sqlStatement)
-        ui.pushButtonFirst.c___.c..(ShowFirstRow)
-        ui.pushButtonPrevious.c___.c..(ShowPreviousRow)
-        ui.pushButtonNext.c___.c..(ShowNextRow)
-        ui.pushButtonLast.c___.c..(ShowLastRow)
+        ?.pushButtonFirst.c___.c..(ShowFirstRow)
+        ?.pushButtonPrevious.c___.c..(ShowPreviousRow)
+        ?.pushButtonNext.c___.c..(ShowNextRow)
+        ?.pushButtonLast.c___.c..(ShowLastRow)
         s..
 
     ___ ShowFirstRow
-        try: 
+        ___
             cur.execute(sqlStatement)
             row_cur.fetchone()
             __ row:
-                ui.lineEditEmailAddress.sT..(row[0])
-                ui.lineEditPassword.sT..(row[1])
-        except Error as e:
-            ui.lR___.sT..("Error in accessing table")
+                ?.lineEditEmailAddress.sT..(row[0])
+                ?.lineEditPassword.sT..(row[1])
+        _____ Error __ e:
+            ?.lR___.sT..("Error in accessing table")
 
 
     ___ ShowPreviousRow
@@ -40,12 +40,12 @@ c_ MyForm(?D..
         cur.execute(sqlStatement)
         row_cur.fetchone()
         __ row:
-            ui.lR___.sT..("")
-            ui.lineEditEmailAddress.sT..(row[0])
-            ui.lineEditPassword.sT..(row[1])
+            ?.lR___.sT..("")
+            ?.lineEditEmailAddress.sT..(row[0])
+            ?.lineEditPassword.sT..(row[1])
         ____
             rowNo +_ 1
-            ui.lR___.sT..("This is the first row")
+            ?.lR___.sT..("This is the first row")
        
             
     ___ ShowNextRow
@@ -55,22 +55,22 @@ c_ MyForm(?D..
         cur.execute(sqlStatement)
         row_cur.fetchone()
         __ row:
-            ui.lR___.sT..("")
-            ui.lineEditEmailAddress.sT..(row[0])
-            ui.lineEditPassword.sT..(row[1])
+            ?.lR___.sT..("")
+            ?.lineEditEmailAddress.sT..(row[0])
+            ?.lineEditPassword.sT..(row[1])
         ____
             rowNo -_ 1
-            ui.lR___.sT..("This is the last row")
+            ?.lR___.sT..("This is the last row")
 
     ___ ShowLastRow
         cur.execute(sqlStatement)
         ___ row in cur.fetchall(
-            ui.lineEditEmailAddress.sT..(row[0])
-            ui.lineEditPassword.sT..(row[1])
+            ?.lineEditEmailAddress.sT..(row[0])
+            ?.lineEditPassword.sT..(row[1])
 
         
 __ _ ____ __ _____
     app _ ?A..
     w _ ?
     w.s..
-    ___.e..(app.e
+    ___.e.. ?.e

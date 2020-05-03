@@ -57,9 +57,9 @@ QT_SIP_API_HINT _ os.getenv("QT_SIP_API_HINT")
 Qt _ ___.modules[__name__]
 Qt.QtCompat _ types.ModuleType("QtCompat")
 
-try:
+___
     long
-except NameError:
+_____ NameError:
     # Python 3 compatibility
     long _ int
 
@@ -776,9 +776,9 @@ _compatibility_members _ {
 
 
 ___ _apply_site_config(
-    try:
+    ___
         _____ QtSiteConfig
-    except ImportError:
+    _____ ImportError:
         # If no QtSiteConfig module found, no modifications
         # to _common_members are needed.
         pass
@@ -813,10 +813,10 @@ ___ _setup(module, extras
     Qt.__binding__ _ module.__name__
 
     ___ name in list(_common_members) + extras:
-        try:
+        ___
             submodule _ _import_sub_module(
                 module, name)
-        except ImportError:
+        _____ ImportError:
             continue
 
         setattr(Qt, "_" + name, submodule)
@@ -884,9 +884,9 @@ ___ _reassign_misplaced_members(binding
         src_module, src_member _ src.split(".")
         dst_module, dst_member _ dst.split(".")
 
-        try:
+        ___
             src_object _ getattr(Qt, dst_module)
-        except AttributeError:
+        _____ AttributeError:
             # Skip reassignment of non-existing members.
             # This can happen if a request was made to
             # rename a member that didn't exist, for example
@@ -919,9 +919,9 @@ ___ _build_compatibility_members(binding, decorators_None
 
     # Allow optional site-level customization of the compatibility members.
     # This method does not need to be implemented in QtSiteConfig.
-    try:
+    ___
         _____ QtSiteConfig
-    except ImportError:
+    _____ ImportError:
         pass
     ____
         __ hasattr(QtSiteConfig, 'update_compatibility_decorators'
@@ -933,9 +933,9 @@ ___ _build_compatibility_members(binding, decorators_None
         attrs _ {}
         ___ target, binding in bindings.items(
             namespaces _ binding.split('.')
-            try:
+            ___
                 src_object _ getattr(Qt, "_" + namespaces[0])
-            except AttributeError as e:
+            _____ AttributeError __ e:
                 _log("QtCompat: AttributeError: %s" % e)
                 # Skip reassignment of non-existing members.
                 # This can happen if a request was made to
@@ -973,16 +973,16 @@ ___ _pyside2(
 
     """
 
-    _____ PySide2 as module
+    _____ PySide2 __ module
     _setup(module, ["QtUiTools"])
 
     Qt.__binding_version__ _ module.__version__
 
-    try:
-        try:
+    ___
+        ___
             # Before merge of PySide and shiboken
             _____ shiboken2
-        except ImportError:
+        _____ ImportError:
             # After merge of PySide and shiboken, May 2017
             ____ PySide2 _____ shiboken2
 
@@ -993,7 +993,7 @@ ___ _pyside2(
         Qt.QtCompat.getCppPointer _ lambda object: \
             shiboken2.getCppPointer(object)[0]
 
-    except ImportError:
+    _____ ImportError:
         pass  # Optional
 
     __ hasattr(Qt, "_QtUiTools"
@@ -1014,16 +1014,16 @@ ___ _pyside2(
 ___ _pyside(
     """Initialise PySide"""
 
-    _____ PySide as module
+    _____ PySide __ module
     _setup(module, ["QtUiTools"])
 
     Qt.__binding_version__ _ module.__version__
 
-    try:
-        try:
+    ___
+        ___
             # Before merge of PySide and shiboken
             _____ shiboken
-        except ImportError:
+        _____ ImportError:
             # After merge of PySide and shiboken, May 2017
             ____ PySide _____ shiboken
 
@@ -1034,7 +1034,7 @@ ___ _pyside(
         Qt.QtCompat.getCppPointer _ lambda object: \
             shiboken.getCppPointer(object)[0]
 
-    except ImportError:
+    _____ ImportError:
         pass  # Optional
 
     __ hasattr(Qt, "_QtUiTools"
@@ -1067,10 +1067,10 @@ ___ _pyside(
 ___ _pyqt5(
     """Initialise PyQt5"""
 
-    _____ ? as module
+    _____ ? __ module
     _setup(module, ["uic"])
 
-    try:
+    ___
         _____ sip
         Qt.QtCompat.wrapInstance _ (
             lambda ptr, base_None: _wrapinstance(
@@ -1079,7 +1079,7 @@ ___ _pyqt5(
         Qt.QtCompat.getCppPointer _ lambda object: \
             sip.unwrapinstance(object)
 
-    except ImportError:
+    _____ ImportError:
         pass  # Optional
 
     __ hasattr(Qt, "_uic"
@@ -1105,11 +1105,11 @@ ___ _pyqt4(
 
     # Validation of envivornment variable. Prevents an error if
     # the variable is invalid since it's just a hint.
-    try:
+    ___
         hint _ int(QT_SIP_API_HINT)
-    except TypeError:
+    _____ TypeError:
         hint _ None  # Variable was None, i.e. not set.
-    except ValueError:
+    _____ ValueError:
         raise ImportError("QT_SIP_API_HINT=%s must be a 1 or 2")
 
     ___ api in ("QString",
@@ -1119,11 +1119,11 @@ ___ _pyqt4(
                 "QTextStream",
                 "QTime",
                 "QUrl"
-        try:
+        ___
             sip.setapi(api, hint or 2)
-        except AttributeError:
+        _____ AttributeError:
             raise ImportError("PyQt4 < 4.6 isn't supported by Qt.py")
-        except ValueError:
+        _____ ValueError:
             actual _ sip.getapi(api)
             __ not hint:
                 raise ImportError("API version already set to %d" % actual)
@@ -1135,10 +1135,10 @@ ___ _pyqt4(
                     % (api, actual)
                 )
 
-    _____ PyQt4 as module
+    _____ PyQt4 __ module
     _setup(module, ["uic"])
 
-    try:
+    ___
         _____ sip
         Qt.QtCompat.wrapInstance _ (
             lambda ptr, base_None: _wrapinstance(
@@ -1147,7 +1147,7 @@ ___ _pyqt4(
         Qt.QtCompat.getCppPointer _ lambda object: \
             sip.unwrapinstance(object)
 
-    except ImportError:
+    _____ ImportError:
         pass  # Optional
 
     __ hasattr(Qt, "_uic"
@@ -1395,7 +1395,7 @@ ___ _cli(args
         #
         # ------> Read
         #
-        with open(args.convert) as f:
+        w__ open(args.convert) __ f:
             lines _ _convert(f.readlines())
 
         backup _ "%s_backup%s" % os.path.splitext(args.convert)
@@ -1405,7 +1405,7 @@ ___ _cli(args
         #
         # <------ Write
         #
-        with open(args.convert, "w") as f:
+        w__ open(args.convert, "w") __ f:
             f.write("".join(lines))
 
         ___.stdout.write("Successfully converted \"%s\"\n" % args.convert)
@@ -1437,15 +1437,15 @@ ___ _install(
     ___ name in order:
         _log("Trying %s" % name)
 
-        try:
+        ___
             available[name]()
             found_binding _ T..
             break
 
-        except ImportError as e:
+        _____ ImportError __ e:
             _log("ImportError: %s" % e)
 
-        except KeyError:
+        _____ KeyError:
             _log("ImportError: Preferred binding '%s' not found." % name)
 
     __ not found_binding:
@@ -1454,9 +1454,9 @@ ___ _install(
 
     # Install individual members
     ___ name, members in _common_members.items(
-        try:
+        ___
             their_submodule _ getattr(Qt, "_%s" % name)
-        except AttributeError:
+        _____ AttributeError:
             continue
 
         our_submodule _ getattr(Qt, name)
@@ -1470,9 +1470,9 @@ ___ _install(
 
         ___ member in members:
             # Accept that a submodule may miss certain members.
-            try:
+            ___
                 their_member _ getattr(their_submodule, member)
-            except AttributeError:
+            _____ AttributeError:
                 _log("'%s.%s' was missing." % (name, member))
                 continue
 

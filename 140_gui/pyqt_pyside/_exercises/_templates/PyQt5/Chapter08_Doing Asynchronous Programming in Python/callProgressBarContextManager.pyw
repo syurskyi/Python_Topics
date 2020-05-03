@@ -10,7 +10,7 @@ c_ MyForm(?D..
     ___  -
         s__. - ()
         ui _ ?
-        ui.sU..
+        ?.sU..
         s..
        
 c_ myThread (threading.Thread
@@ -23,7 +23,7 @@ c_ myThread (threading.Thread
       
    ___ run
       print ("Starting " + name+"\n")
-      with threadLock:
+      w__ threadLock:
           w__ counter <_100:
               time.sleep(1)
               progreassBar.sV..(counter)
@@ -34,8 +34,8 @@ c_ myThread (threading.Thread
 __ _ ____ __ _____
     app _ ?A..
     w _ ?
-    thread1 _ myThread(w, w.ui.progressBarFileDownload)
-    thread2 _ myThread(w, w.ui.progressBarVirusScan)
+    thread1 _ myThread(w, w.?.progressBarFileDownload)
+    thread2 _ myThread(w, w.?.progressBarVirusScan)
     threadLock _ threading.Lock()
     threads _ []
     thread1.start()
@@ -45,6 +45,6 @@ __ _ ____ __ _____
     threads.ap..(thread2)
     ___ t __ threads:
         t.join()
-    ___.e..(app.e
+    ___.e.. ?.e
 
 

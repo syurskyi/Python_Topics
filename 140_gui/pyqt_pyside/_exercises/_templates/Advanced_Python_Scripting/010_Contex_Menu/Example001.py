@@ -248,4 +248,4 @@ __ __name__ __ '__main__':
     app _ ?G...?A..
     window _ MainWindow()
     window.s..
-___.e..(app.e
+___.e.. ?.e

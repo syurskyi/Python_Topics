@@ -1,6 +1,6 @@
 ____ PySide.?C.. _____ _
 ____ PySide.?G.. _____ _
-____ widgets _____ window_UIs as ui
+____ widgets _____ window_UIs __ ui
 _____ os
 
 style _ os.path.join(os.path.dirname(__file__), 'style.css')

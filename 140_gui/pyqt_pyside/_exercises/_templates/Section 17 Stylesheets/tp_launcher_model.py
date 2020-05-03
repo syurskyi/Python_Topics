@@ -86,9 +86,9 @@ c_ TP_Launcher_Model(object
         ''' attempt to run application/file at path if still exists'''
         _file _ _workspaces[ws_name][app_name][0]
         __ os.path.exists(_file
-            try:
+            ___
                 subprocess.Popen(_file)
-            except:
+            _____:
                 os.system(_open_doc[_platform] + _file)
         ____
             raise ValueError('Exe file no longer exists')
@@ -101,12 +101,12 @@ c_ TP_Launcher_Model(object
 
     ___ write_json_file , path
         ''' write data from ordered dict to json file'''
-        with open(path, 'w') as js_file:
+        w__ open(path, 'w') __ js_file:
             json.dump(_workspaces, js_file)
 
     ___ read_json_file , path
         ''' read data from ordered dict to json file'''
-        with open(path, 'r') as js_file:
+        w__ open(path, 'r') __ js_file:
             _workspaces _ OrderedDict(json.load(js_file))
 
 

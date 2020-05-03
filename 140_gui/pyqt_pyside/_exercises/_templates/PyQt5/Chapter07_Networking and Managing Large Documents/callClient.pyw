@@ -14,17 +14,17 @@ c_ Window(?D..
     ___  -
         s__. - ()
         ui _ ?
-        ui.sU..
-        tE__Messages_ui.tE__Messages
-        ui.pushButtonSend.c___.c..(dispMessage)
+        ?.sU..
+        tE__Messages_?.tE__Messages
+        ?.pushButtonSend.c___.c..(dispMessage)
         s..
 
 
     ___ dispMessage
-        text_ui.lineEditMessage.t..()
-        ui.tE__Messages.ap..("Client: "+ui.lineEditMessage.t..())
+        text_?.lineEditMessage.t..()
+        ?.tE__Messages.ap..("Client: "+?.lineEditMessage.t..())
         tcpClientA.send(t...encode())
-        ui.lineEditMessage.sT..("")
+        ?.lineEditMessage.sT..("")
 
 c_ ClientThread(Thread
     ___  -  ,window
@@ -42,7 +42,7 @@ c_ ClientThread(Thread
        w__ T..:
            data _ tcpClientA.recv(BUFFER_SIZE)
            window.tE__Messages.ap..("Server: "+data.decode("utf-8"))
-       tcpClientA.close() 
+       tcpClientA.c..
             
         
 __ _ ____ __ _____
@@ -51,4 +51,4 @@ __ _ ____ __ _____
     clientThread_ClientThread(window)
     clientThread.start()
     window.exec()
-    ___.e..(app.e
+    ___.e.. ?.e

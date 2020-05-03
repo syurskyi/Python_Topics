@@ -8,21 +8,21 @@ c_ MyForm(?D..
     ___  -  
         s__. - ()
         ui _ ?
-        ui.sU..
-        ui.pushButtonCreateDB.c___.c..(createDatabase)
+        ?.sU..
+        ?.pushButtonCreateDB.c___.c..(createDatabase)
         s..
 
     ___ createDatabase 
-        try:
-            conn _ sqlite3.c..(ui.lineEditDBName.t..()+".db")
-            ui.lR___.sT..("Database is created")
-        except Error as e:
-            ui.lR___.sT..("Some error has occurred")
-        finally:
-            conn.close()
+        ___
+            conn _ sqlite3.c..(?.lineEditDBName.t..()+".db")
+            ?.lR___.sT..("Database is created")
+        _____ Error __ e:
+            ?.lR___.sT..("Some error has occurred")
+        f..
+            conn.c..
 
 __ _ ____ __ _____
     app _ ?A..
     w _ ?
     w.s..
-    ___.e..(app.e
+    ___.e.. ?.e

@@ -1,4 +1,4 @@
-_____ matplotlib.pyplot as graph
+_____ matplotlib.pyplot __ graph
 
 graph.title('Plotting a Line!')
 graph.xlabel('x - axis')

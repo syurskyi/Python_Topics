@@ -9,28 +9,28 @@ c_ MyForm(?D..
     ___  -
         s__. - ()
         ui _ ?
-        ui.sU..
-        ui.pushButtonSearch.c___.c..(SearchRows)
+        ?.sU..
+        ?.pushButtonSearch.c___.c..(SearchRows)
         s..
 
     ___ SearchRows
-        sqlStatement_"SELECT EmailAddress, Password FROM Users where EmailAddress like '"+ui.lineEditEmailAddress.t..()+"' and Password like '"+ ui.lineEditPassword.t..()+"'"
-        try:
+        sqlStatement_"SELECT EmailAddress, Password FROM Users where EmailAddress like '"+?.lineEditEmailAddress.t..()+"' and Password like '"+ ?.lineEditPassword.t..()+"'"
+        ___
             conn _ sqlite3.c..("ECommerce.db")
             cur _ conn.cursor()    
             cur.execute(sqlStatement)
             row _ cur.fetchone()
             __ row__None:
-                ui.lR___.sT..("Sorry, Incorrect email address or password ")
+                ?.lR___.sT..("Sorry, Incorrect email address or password ")
             ____
-                ui.lR___.sT..("You are welcome ")
-        except Error as e:
-            ui.lR___.sT..("Error in accessing row")
-        finally:
-            conn.close()
+                ?.lR___.sT..("You are welcome ")
+        _____ Error __ e:
+            ?.lR___.sT..("Error in accessing row")
+        f..
+            conn.c..
 
 __ _ ____ __ _____
     app _ ?A..
     w _ ?
     w.s..
-    ___.e..(app.e
+    ___.e.. ?.e

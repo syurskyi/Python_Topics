@@ -43,9 +43,9 @@ __ __name__ __ '__main__':
     _____ ___
 
     app _ None
-    try:
+    ___
         _____ nuke
-    except ImportError:
+    _____ ImportError:
         app _ ?A..
     main _ listWidgetClass()
     main.s..

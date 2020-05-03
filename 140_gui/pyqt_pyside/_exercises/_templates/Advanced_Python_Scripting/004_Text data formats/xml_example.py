@@ -1,4 +1,4 @@
-_____ xml.etree.ElementTree as ET
+_____ xml.etree.ElementTree __ ET
 
 path _ '/Users/sergejyurskyj/.nuke/example/PYTHON_EXAMPLE/Python_Example_All_Tutorials/VIDEO/Advanced Python Scripting/' \
     '004_Text data formats/example5.xml'
@@ -29,6 +29,6 @@ tree.write(path)
 ____ xml.dom _____ minidom
 xml _ minidom.parseString(ET.tostring(tree.getroot())).toprettyxml()
 
-with open('/Users/sergejyurskyj/.nuke/example/PYTHON_EXAMPLE/Python_Example_All_Tutorials/VIDEO/Advanced Python Scripting/' \
-    '004_Text data formats/example4.xml', 'w') as f:
+w__ open('/Users/sergejyurskyj/.nuke/example/PYTHON_EXAMPLE/Python_Example_All_Tutorials/VIDEO/Advanced Python Scripting/' \
+    '004_Text data formats/example4.xml', 'w') __ f:
         f.write(xml)
