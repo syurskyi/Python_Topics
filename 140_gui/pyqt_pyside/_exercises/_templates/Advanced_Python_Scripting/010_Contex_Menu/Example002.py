@@ -17,5 +17,5 @@ c_ TableWidget(QTableWidget
 
 app _ ?A..([])
 tableWidget _ TableWidget
-tableWidget.s..
+tW__.s..
 ___.e.. ?.e
