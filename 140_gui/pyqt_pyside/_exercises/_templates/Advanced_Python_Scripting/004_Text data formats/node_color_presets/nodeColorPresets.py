@@ -86,7 +86,7 @@ ___ write_color_presets(path, colors
         f.c..
         r_ T..
     _____:
-        r_ False
+        r_ F..
 
 
 ___ set_tile_color(value_None
@@ -112,7 +112,7 @@ ___ add_new_color(
     color _ nuke.gC..
     __ color:
         colors _ read_color_presets(path)
-        valid_name _ False
+        valid_name _ F..
         r, g, b _ nuke_hex_to_rgb(color)
         w__ not valid_name:
             name _ nuke.getInput("Give a name to your color", name_color(r, g, b))

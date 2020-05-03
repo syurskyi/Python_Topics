@@ -43,7 +43,7 @@ c_ Ui_templateEditor(object
         tree _ ?G...QTreeWidget(templateEditor)
         tree.setObjectName("tree")
         tree.headerItem.sT..(0, "1")
-        tree.header.setVisible(False)
+        tree.header.setVisible(F..)
         verticalLayout.addWidget(tree)
         horizontalLayout _ ?G...QHBoxLayout
         horizontalLayout.setObjectName("horizontalLayout")

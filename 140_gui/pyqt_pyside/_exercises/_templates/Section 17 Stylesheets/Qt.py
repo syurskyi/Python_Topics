@@ -1433,7 +1433,7 @@ ___ _install(
     # Allow site-level customization of the available modules.
     _apply_site_config
 
-    found_binding _ False
+    found_binding _ F..
     ___ name in order:
         _log("Trying %s" % name)
 

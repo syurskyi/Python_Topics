@@ -117,7 +117,7 @@ c_ Ui_MainWindow(object
         radioButton_2.sT..(?G...?A...translate("MainWindow", "Disable", None, ?G...?A...UnicodeUTF8))
         treeWidget.headerItem.sT..(0, ?G...?A...translate("MainWindow", "1", None, ?G...?A...UnicodeUTF8))
         __sortingEnabled _ treeWidget.isSortingEnabled
-        treeWidget.setSortingEnabled(False)
+        treeWidget.setSortingEnabled(F..)
         treeWidget.topLevelItem(0).sT..(0, ?G...?A...translate("MainWindow", "New Item", None, ?G...?A...UnicodeUTF8))
         treeWidget.topLevelItem(0).child(0).sT..(0, ?G...?A...translate("MainWindow", "New Subitem", None, ?G...?A...UnicodeUTF8))
         treeWidget.topLevelItem(0).child(0).child(0).sT..(0, ?G...?A...translate("MainWindow", "New Subitem", None, ?G...?A...UnicodeUTF8))

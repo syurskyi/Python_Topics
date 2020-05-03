@@ -30,8 +30,8 @@ c_ ImageWidget(?G...?W..
         status _ 0
         path _ ''
         showStatus _ T..
-        selected _ False
-        isHightlight _ False
+        selected _ F..
+        isHightlight _ F..
         thumb _ ?G...QImage
         initAttrib
 
@@ -136,14 +136,14 @@ c_ ImageWidget(?G...?W..
         repaint
 
     ___ leaveEvent , event
-        isHightlight _ False
+        isHightlight _ F..
         repaint
 
     # 设定当前为选中状态
     ___ setSelected 
         # 取消其他缩略图的选择状态, 当前设为选择状态
         __ ImageWidget.prevSelected !_ None:
-            ImageWidget.prevSelected.selected _ False
+            ImageWidget.prevSelected.selected _ F..
             ImageWidget.prevSelected.repaint
         selected _ T..
         repaint
@@ -186,7 +186,7 @@ c_ ImageContainer(?G...QFrame
         min_width _ THUMB_MIN
         max_height _ THUMB_MAX
         asset_space _ 2
-        auto_space _ False
+        auto_space _ F..
 
         setWindowOpacity(0.0)
 

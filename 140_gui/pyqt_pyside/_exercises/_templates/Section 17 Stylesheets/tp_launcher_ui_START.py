@@ -72,7 +72,7 @@ c_ TP_Launcher_GUI(?W...?W..
 
         _edit_op _ {
             T..: _edit_on, 
-            False: _edit_off
+            F..: _edit_off
         }
         _app_instruction _ T..
         _file_dialogs _ defaultdict(lambda: _file_dialog)
@@ -225,7 +225,7 @@ c_ TP_Launcher_GUI(?W...?W..
         _save_settings
 
     ___ _run_app , item
-        item.setSelected(False)
+        item.setSelected(F..)
         _tp_launcher.run_app(get_workspace, st.(item.t..()))
 
     #======= EDIT MODE =================================
@@ -263,7 +263,7 @@ c_ TP_Launcher_GUI(?W...?W..
             msg _ '1) Select the application file\n'
             msg +_ '2) Select a app icon image (Optional)'
             ?W...QMessageBox.information , 'Add App', msg)
-            _app_instruction _ False
+            _app_instruction _ F..
         sel _ 'Select APP file'
         app _ _file_dialogs[QT_VER](sel, _my_path)
         __ app:
@@ -359,7 +359,7 @@ __ __name__ __ '__main__':
             'No system tray available for this system! Exiting...'
         )
         ___.e..(1)
-    ?W...?A...setQuitOnLastWindowClosed(False)
+    ?W...?A...setQuitOnLastWindowClosed(F..)
     ex _ TP_Launcher_GUI
     ex.s..
     ___.e.. ?.e

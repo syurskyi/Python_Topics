@@ -60,8 +60,8 @@ c_ pad1(?G...QGraphicsEllipseItem
         inputDict _ {}
         seq _ None
 
-        stop _ False
-        playing _ False
+        stop _ F..
+        playing _ F..
 
         parent _ parent
         parentScene _ parentScene
@@ -117,7 +117,7 @@ c_ pad1(?G...QGraphicsEllipseItem
             print(pad1.__counter)
             ___
                 mixer.music.stop
-                playing _ False
+                playing _ F..
                 # self.updateColor("Blue")
                 __ pad1.__counter < le.(songListdecoded) - 1:
                     pad1.__counter +_ 1
@@ -244,7 +244,7 @@ c_ pad1(?G...QGraphicsEllipseItem
     ___ isPlaying
         w__ pygame.mixer.music.get_busy(
             pygame.time.Clock.tick(2)
-        playing _ False
+        playing _ F..
         # self.updateColor("Blue")
 
 
@@ -448,7 +448,7 @@ c_ mainWindow(?G...QMainWindow
                 device[index].setChecked(T..)
                 inp _ pygame.midi.Input(x)
             ____
-                device[index].setChecked(False)
+                device[index].setChecked(F..)
 
         getMidi _ T..
         # starting midi looping event

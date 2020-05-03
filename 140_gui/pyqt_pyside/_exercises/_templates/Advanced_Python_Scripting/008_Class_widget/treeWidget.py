@@ -21,7 +21,7 @@ c_ simpleWindow(?W..
     ___ updateTree
         tree.blockSignals(T..)
         fillTree
-        tree.blockSignals(False)
+        tree.blockSignals(F..)
 
     ___ fillTree , parent_None, root_None
         __ not parent:

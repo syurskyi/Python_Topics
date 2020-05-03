@@ -10,7 +10,7 @@ _____ style
 
 musicList _ []
 mixer.init
-muted _ False
+muted _ F..
 count _ 0
 songLength _ 0
 index _ 0
@@ -31,7 +31,7 @@ c_ Player(?W..
     ___ widgets 
         # #######################progress bar#############
         progressBar _ QProgressBar
-        pB__.setTextVisible(False)
+        pB__.setTextVisible(F..)
         pB__.sSS..(style.progressBarStyle())
         # #######################Labels###################
         songTimerLabel_QLabel("0:00")
@@ -235,7 +235,7 @@ c_ Player(?W..
     ___ muteSound 
         global muted
 
-        __ muted __ False:
+        __ muted __ F..:
             mixer.music.set_volume(0.0)
             muted _ T..
             muteButton.setIcon(QIcon("icons/unmuted.png"))
@@ -244,7 +244,7 @@ c_ Player(?W..
 
         ____
             mixer.music.set_volume(0.7)
-            muted _ False
+            muted _ F..
             muteButton.setToolTip("Mute")
             muteButton.setIcon(QIcon("icons/mute.png"))
             volumeSlider.sV..(70)
