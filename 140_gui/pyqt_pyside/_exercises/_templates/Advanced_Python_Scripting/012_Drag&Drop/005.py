@@ -1,15 +1,15 @@
 _____ ___
 _____ os
-____ PySide.?C.. _____ _
-____ PySide.?G.. _____ _
+____ ?.?C.. _____ _
+____ ?.?G.. _____ _
 
 icon _ os.path.j..(os.path.dirname(__file__), 'drag.png')
 
-c_ listWidgetClass(QListWidget
+c_ listWidgetClass(?LW..
     ___  -
-        super(listWidgetClass, self). -
-        setWindowFlags(__.WindowStaysOnTopHint)
-        setDragDropMode(QAbstractItemView.DragDrop)
+        s__(listWidgetClass, self). -
+        sWF..(__.WSOTH..)
+        sDDM..(QAbstractItemView.DragDrop)
         setSelectionMode(QAbstractItemView.ExtendedSelection)
         files _ []
 
@@ -21,22 +21,22 @@ c_ listWidgetClass(QListWidget
                 addFile(f.toLocalFile())
 
     ___ dragEnterEvent , event
-        __ event.source is self:
+        __ event.source __ self:
             event.ignore
         ____
             mimedata _ event.mimeData
             __ mimedata.hasUrls(
-                event.accept
+                event.a..
             ____
                 event.ignore
 
     ___ dragMoveEvent , event
-        __ event.source is self:
+        __ event.source __ self:
             event.ignore
         ____
             mimedata _ event.mimeData
             __ mimedata.hasUrls(
-                event.accept
+                event.a..
             ____
                 event.ignore
 
@@ -55,7 +55,7 @@ c_ listWidgetClass(QListWidget
             deleteSelected
 
     ___ addFile , path
-        __ not path __ files:
+        __ no. path __ files:
             item _ ?LWI..
             item.sT..(os.path.basename(path))
             item.setData(__.UserRole, path)
@@ -66,16 +66,16 @@ c_ listWidgetClass(QListWidget
             files.remove(s.data(32))
             tI..(indexFromItem(s).row())
 
-__ __name__ __ '__main__':
+__ _____ __ ______
     _____ ___
 
-    app _ None
+    app _ N..
     ___
         _____ nuke
-    _____ ImportError:
+    _____ I..
         app _ ?A..
     main _ listWidgetClass
     main.s..
 
-    __ app is not None:
+    __ app __ no. N..:
         app.exec_

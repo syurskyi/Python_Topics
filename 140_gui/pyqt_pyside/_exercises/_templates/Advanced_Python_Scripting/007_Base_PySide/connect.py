@@ -1,10 +1,10 @@
-____ PySide.?G.. _____ _
-____ PySide.?C.. _____ _
+____ ?.?G.. _____ _
+____ ?.?C.. _____ _
 
 
 c_ MyWidget(?W..
     ___  -  
-        super(MyWidget, self). -
+        s__(MyWidget, self). -
         layout _ QVBoxLayout
         button _ ?PB..('Print')
         layout.addWidget(button)

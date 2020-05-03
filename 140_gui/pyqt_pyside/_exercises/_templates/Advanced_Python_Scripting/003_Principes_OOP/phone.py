@@ -8,7 +8,7 @@ c_ phone(object
 
 c_ phone2(phone
     ___  -  
-        super(phone2, self). -
+        s__(phone2, self). -
 
     ___ sendMail 
         pass
@@ -17,6 +17,6 @@ c_ phone2(phone
         __ T..:
             pass
         ____
-            super(phone2, self).call
+            s__(phone2, self).call
 
 p _ phone2

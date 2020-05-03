@@ -31,7 +31,7 @@ ___ name_color(r, g, b
     x, y, z _ yiq[0], yiq[1], yiq[2]
     vector_a _ nuke.math.Vector3(x, y, z)
     name _ ''
-    min_dist _ None
+    min_dist _ N..
     ___
         file _ o..(pathToNames)
         data _ json.l..(file)
@@ -43,7 +43,7 @@ ___ name_color(r, g, b
     ___ color in data:
         vector_b _ nuke.math.Vector3(color['x'], color['y'], color['z'])
         dist _ vector_a.distanceBetween(vector_b)
-        __ min_dist __ None or dist < min_dist:
+        __ min_dist __ N.. or dist < min_dist:
             min_dist _ dist
             name _ color['label']
     r_ name
@@ -56,12 +56,12 @@ ___ nuke_hex_to_rgb(nuke_hex
         g _ int(real_hex[2:4], 16) / 255.0
         b _ int(real_hex[4:6], 16) / 255.0
     _____:
-        r_ None, None, None
+        r_ N.., N.., N..
     r_ r, g, b
 
 
 ___ read_color_presets(path
-    __ not os.path.isfile(path
+    __ no. os.path.isfile(path
         print "No Color preset found "
         r_ {}
     ____
@@ -69,7 +69,7 @@ ___ read_color_presets(path
             f _ o..(path)
             colors _ json.l..(f)
             f.c..
-            __ type(colors) is dict:
+            __ ty..(colors) __ dict:
                 r_ colors
             ____
                 print "The preset file doesn't contain a valid dictionary"
@@ -90,7 +90,7 @@ ___ write_color_presets(path, colors
 
 
 ___ set_tile_color(value_None
-    __ value __ None:
+    __ value __ N..:
         value _ nuke.gC..
     ___ node in nuke.selectedNodes(
         node.knob('tile_color').sV..(value)
@@ -114,10 +114,10 @@ ___ add_new_color(
         colors _ read_color_presets(path)
         valid_name _ F..
         r, g, b _ nuke_hex_to_rgb(color)
-        w__ not valid_name:
+        w__ no. valid_name:
             name _ nuke.getInput("Give a name to your color", name_color(r, g, b))
             __ name:
-                __ not name in colors.keys(
+                __ no. name in colors.keys(
                     valid_name _ T..
                     colors[name] _ color
                     success _ write_color_presets(path, colors)
@@ -136,7 +136,7 @@ ___ manage_color_presets(
     __ p.showModalDialog(
         new_colors _ {}
         ___ preset in p.list:
-            __ not preset['delete'].value(
+            __ no. preset['delete'].value(
                 new_colors[preset['name'].v..] _ preset['value'].v..
         success _ write_color_presets(path, new_colors)
         __ success:

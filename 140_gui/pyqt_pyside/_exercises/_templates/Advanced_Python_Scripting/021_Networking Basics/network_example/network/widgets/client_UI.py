@@ -52,7 +52,7 @@ c_ Ui_client(object
         ?C...QMetaObject.connectSlotsByName(client)
 
     ___ retranslateUi , client
-        client.setWindowTitle(_translate("client", "Client", None))
-        connect_btn.sT..(_translate("client", "Connect", None))
-        label.sT..(_translate("client", "0", None))
+        client.setWindowTitle(_translate("client", "Client", N..))
+        connect_btn.sT..(_translate("client", "Connect", N..))
+        label.sT..(_translate("client", "0", N..))
 

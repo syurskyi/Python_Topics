@@ -1,15 +1,15 @@
 _____ ___
 _____ os
-____ PySide.?C.. _____ _
-____ PySide.?G.. _____ _
+____ ?.?C.. _____ _
+____ ?.?G.. _____ _
 
 icon _ os.path.j..(os.path.dirname(__file__), 'drag.png')
 
-c_ listWidgetClass(QListWidget
+c_ listWidgetClass(?LW..
     ___  -
-        super(listWidgetClass, self). -
-        setWindowFlags(__.WindowStaysOnTopHint)
-        setDragDropMode(QAbstractItemView.DragDrop)
+        s__(listWidgetClass, self). -
+        sWF..(__.WSOTH..)
+        sDDM..(QAbstractItemView.DragDrop)
         setSelectionMode(QAbstractItemView.ExtendedSelection)
         files _ []
 
@@ -21,22 +21,22 @@ c_ listWidgetClass(QListWidget
                 addFile(f.toLocalFile())
 
     ___ dragEnterEvent , event
-        __ event.source is self:
+        __ event.source __ self:
             event.ignore
         ____
             mimedata _ event.mimeData
             __ mimedata.hasUrls(
-                event.accept
+                event.a..
             ____
                 event.ignore
 
     ___ dragMoveEvent , event
-        __ event.source is self:
+        __ event.source __ self:
             event.ignore
         ____
             mimedata _ event.mimeData
             __ mimedata.hasUrls(
-                event.accept
+                event.a..
             ____
                 event.ignore
 
@@ -55,7 +55,7 @@ c_ listWidgetClass(QListWidget
             deleteSelected
 
     ___ addFile , path
-        __ not path __ files:
+        __ no. path __ files:
             item _ ?LWI..
             item.sT..(os.path.basename(path))
             item.setData(__.UserRole, path)
@@ -70,17 +70,17 @@ c_ listWidgetClass(QListWidget
         __ event.button __ __.MouseButton.RightButton:
             pass
         ____ event.button __ __.MouseButton.LB..:
-            setDragDropMode(QAbstractItemView.NoDragDrop)
-            super(listWidgetClass, self).mousePressEvent(event)
+            sDDM..(QAbstractItemView.NoDragDrop)
+            s__(listWidgetClass, self).mousePressEvent(event)
         ____
-            setDragDropMode(QAbstractItemView.DragDrop)
-            super(listWidgetClass, self).mousePressEvent(event)
+            sDDM..(QAbstractItemView.DragDrop)
+            s__(listWidgetClass, self).mousePressEvent(event)
 
     ___ mouseReleaseEvent , event
-        setDragDropMode(QAbstractItemView.DragDrop)
-        super(listWidgetClass, self).mouseReleaseEvent(event)
+        sDDM..(QAbstractItemView.DragDrop)
+        s__(listWidgetClass, self).mouseReleaseEvent(event)
 
-__ __name__ __ '__main__':
+__ _____ __ ______
     app _ ?A..([])
     w _ listWidgetClass
     w.s..

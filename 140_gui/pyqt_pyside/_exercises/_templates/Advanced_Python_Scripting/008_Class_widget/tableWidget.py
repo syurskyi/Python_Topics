@@ -1,12 +1,12 @@
-____ PySide.?G.. _____ _
-____ PySide.?C.. _____ _
+____ ?.?G.. _____ _
+____ ?.?C.. _____ _
 _____ os
 path _ os.path.dirname(__file__)
 
 c_ simpleWindow(?W..
     path _ os.path.dirname(__file__)
     ___  -  
-        super(simpleWindow, self). - 
+        s__(simpleWindow, self). -
         ly _ QHBoxLayout
         setLayout(ly)
         table _ QTableWidget
@@ -33,7 +33,7 @@ c_ simpleWindow(?W..
             table.sI..(i, 1, item)
 
 
-__ __name__ __ '__main__':
+__ _____ __ ______
     app _ ?A..([])
     w _ simpleWindow
     w.s..

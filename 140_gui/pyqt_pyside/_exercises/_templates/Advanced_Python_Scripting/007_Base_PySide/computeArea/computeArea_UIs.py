@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ PySide _____ ?C.., ?G..
+____ ? _____ ?C.., ?G..
 
 c_ Ui_computeArea(object
     ___ setupUi , computeArea
@@ -99,15 +99,15 @@ c_ Ui_computeArea(object
         ?C...QMetaObject.connectSlotsByName(computeArea)
 
     ___ retranslateUi , computeArea
-        computeArea.setWindowTitle(?G...?A...translate("computeArea", "ComputeArea", None, ?G...?A...UnicodeUTF8))
-        groupBox.setTitle(?G...?A...translate("computeArea", "Select Shape", None, ?G...?A...UnicodeUTF8))
-        shape_cbb.setItemText(0, ?G...?A...translate("computeArea", "Square", None, ?G...?A...UnicodeUTF8))
-        shape_cbb.setItemText(1, ?G...?A...translate("computeArea", "Radius", None, ?G...?A...UnicodeUTF8))
-        square_gb.setTitle(?G...?A...translate("computeArea", "Square", None, ?G...?A...UnicodeUTF8))
-        label.sT..(?G...?A...translate("computeArea", "Height", None, ?G...?A...UnicodeUTF8))
-        label_2.sT..(?G...?A...translate("computeArea", "Width", None, ?G...?A...UnicodeUTF8))
-        circle_gb.setTitle(?G...?A...translate("computeArea", "Circle", None, ?G...?A...UnicodeUTF8))
-        label_7.sT..(?G...?A...translate("computeArea", "Radius", None, ?G...?A...UnicodeUTF8))
-        compute_btn.sT..(?G...?A...translate("computeArea", "COMPUTE", None, ?G...?A...UnicodeUTF8))
-        result_lbl.sT..(?G...?A...translate("computeArea", "Result", None, ?G...?A...UnicodeUTF8))
+        computeArea.setWindowTitle(?G...?A...translate("computeArea", "ComputeArea", N.., ?G...?A...UnicodeUTF8))
+        groupBox.setTitle(?G...?A...translate("computeArea", "Select Shape", N.., ?G...?A...UnicodeUTF8))
+        shape_cbb.setItemText(0, ?G...?A...translate("computeArea", "Square", N.., ?G...?A...UnicodeUTF8))
+        shape_cbb.setItemText(1, ?G...?A...translate("computeArea", "Radius", N.., ?G...?A...UnicodeUTF8))
+        square_gb.setTitle(?G...?A...translate("computeArea", "Square", N.., ?G...?A...UnicodeUTF8))
+        label.sT..(?G...?A...translate("computeArea", "Height", N.., ?G...?A...UnicodeUTF8))
+        label_2.sT..(?G...?A...translate("computeArea", "Width", N.., ?G...?A...UnicodeUTF8))
+        circle_gb.setTitle(?G...?A...translate("computeArea", "Circle", N.., ?G...?A...UnicodeUTF8))
+        label_7.sT..(?G...?A...translate("computeArea", "Radius", N.., ?G...?A...UnicodeUTF8))
+        compute_btn.sT..(?G...?A...translate("computeArea", "COMPUTE", N.., ?G...?A...UnicodeUTF8))
+        result_lbl.sT..(?G...?A...translate("computeArea", "Result", N.., ?G...?A...UnicodeUTF8))
 

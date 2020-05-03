@@ -30,7 +30,7 @@ offset _ min(frames) - 1
 # new name
 
 outFolder _ os.path.j..(path, correctname)
-__ not os.path.exists(outFolder
+__ no. os.path.exists(outFolder
     os.mkdir(outFolder)
 ___ i, f __ enumerate(files
     # print(f, frames[i])
@@ -50,7 +50,7 @@ fullrange _ ra..(min(frames), max(frames)+1)
 # print(fullrange)
 miss _ []
 ___ i __ fullrange:
-    __ not i __ frames:
+    __ no. i __ frames:
         miss. ap..(i)
 # print(miss)
 

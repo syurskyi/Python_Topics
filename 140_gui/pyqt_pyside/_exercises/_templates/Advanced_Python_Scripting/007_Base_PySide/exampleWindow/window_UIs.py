@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ PySide _____ ?C.., ?G..
+____ ? _____ ?C.., ?G..
 
 c_ Ui_example(object
     ___ setupUi , example
@@ -31,6 +31,6 @@ c_ Ui_example(object
         ?C...QMetaObject.connectSlotsByName(example)
 
     ___ retranslateUi , example
-        example.setWindowTitle(?G...?A...translate("example", "Item List", None, ?G...?A...UnicodeUTF8))
-        additem_btn.sT..(?G...?A...translate("example", "Add", None, ?G...?A...UnicodeUTF8))
+        example.setWindowTitle(?G...?A...translate("example", "Item List", N.., ?G...?A...UnicodeUTF8))
+        additem_btn.sT..(?G...?A...translate("example", "Add", N.., ?G...?A...UnicodeUTF8))
 

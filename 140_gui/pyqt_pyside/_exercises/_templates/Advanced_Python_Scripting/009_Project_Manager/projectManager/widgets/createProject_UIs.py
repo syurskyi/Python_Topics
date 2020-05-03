@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ PySide _____ ?C.., ?G..
+____ ? _____ ?C.., ?G..
 
 c_ Ui_createDialog(object
     ___ setupUi , createDialog
@@ -46,9 +46,9 @@ c_ Ui_createDialog(object
         ?C...QMetaObject.connectSlotsByName(createDialog)
 
     ___ retranslateUi , createDialog
-        createDialog.setWindowTitle(?G...?A...translate("createDialog", "Dialog", None, ?G...?A...UnicodeUTF8))
-        label.sT..(?G...?A...translate("createDialog", "Name", None, ?G...?A...UnicodeUTF8))
-        label_2.sT..(?G...?A...translate("createDialog", "Comment", None, ?G...?A...UnicodeUTF8))
-        create_btn.sT..(?G...?A...translate("createDialog", "Create", None, ?G...?A...UnicodeUTF8))
-        cancel_btn.sT..(?G...?A...translate("createDialog", "Cancel", None, ?G...?A...UnicodeUTF8))
+        createDialog.setWindowTitle(?G...?A...translate("createDialog", "Dialog", N.., ?G...?A...UnicodeUTF8))
+        label.sT..(?G...?A...translate("createDialog", "Name", N.., ?G...?A...UnicodeUTF8))
+        label_2.sT..(?G...?A...translate("createDialog", "Comment", N.., ?G...?A...UnicodeUTF8))
+        create_btn.sT..(?G...?A...translate("createDialog", "Create", N.., ?G...?A...UnicodeUTF8))
+        cancel_btn.sT..(?G...?A...translate("createDialog", "Cancel", N.., ?G...?A...UnicodeUTF8))
 

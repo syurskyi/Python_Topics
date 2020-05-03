@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ PySide _____ ?C.., ?G..
+____ ? _____ ?C.., ?G..
 
 c_ Ui_Server(object
     ___ setupUi , Server
@@ -37,6 +37,6 @@ c_ Ui_Server(object
         ?C...QMetaObject.connectSlotsByName(Server)
 
     ___ retranslateUi , Server
-        Server.setWindowTitle(?G...?A...translate("Server", "Server", None, ?G...?A...UnicodeUTF8))
-        info_lb.sT..(?G...?A...translate("Server", "IP:", None, ?G...?A...UnicodeUTF8))
+        Server.setWindowTitle(?G...?A...translate("Server", "Server", N.., ?G...?A...UnicodeUTF8))
+        info_lb.sT..(?G...?A...translate("Server", "IP:", N.., ?G...?A...UnicodeUTF8))
 

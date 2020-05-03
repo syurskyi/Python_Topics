@@ -37,7 +37,7 @@ c_ timeline_item(?G...QGraphicsRectItem
 
     ___ mouseReleaseEvent , a_event
         ?G...QGraphicsRectItem.mouseReleaseEvent , a_event)
-        setGraphicsEffect(None)
+        setGraphicsEffect(N..)
         f_pos_x _ p...x
         setPos(f_pos_x, mouse_y_pos)
         print st.(f_pos_x)
@@ -128,7 +128,7 @@ c_ timeline(?G...QGraphicsView
         scene.aI..(f_audio_item)
         track +_ 1
 
-__ __name__ __ '__main__':
+__ _____ __ ______
     app _ ?G...?A..
     view _ timeline(total_tracks_5)
     ___ i in ra..(5

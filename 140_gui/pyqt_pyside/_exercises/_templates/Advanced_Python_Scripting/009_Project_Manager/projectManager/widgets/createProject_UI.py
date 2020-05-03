@@ -60,9 +60,9 @@ c_ Ui_createDialog(object
         ?C...QMetaObject.connectSlotsByName(createDialog)
 
     ___ retranslateUi , createDialog
-        createDialog.setWindowTitle(_translate("createDialog", "Dialog", None))
-        label.sT..(_translate("createDialog", "Name", None))
-        label_2.sT..(_translate("createDialog", "Comment", None))
-        create_btn.sT..(_translate("createDialog", "Create", None))
-        cancel_btn.sT..(_translate("createDialog", "Cancel", None))
+        createDialog.setWindowTitle(_translate("createDialog", "Dialog", N..))
+        label.sT..(_translate("createDialog", "Name", N..))
+        label_2.sT..(_translate("createDialog", "Comment", N..))
+        create_btn.sT..(_translate("createDialog", "Create", N..))
+        cancel_btn.sT..(_translate("createDialog", "Cancel", N..))
 

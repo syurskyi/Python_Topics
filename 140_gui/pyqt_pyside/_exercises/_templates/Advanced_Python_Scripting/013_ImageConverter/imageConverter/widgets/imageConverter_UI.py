@@ -68,9 +68,9 @@ c_ Ui_imageConverter(object
         ?C...QMetaObject.connectSlotsByName(imageConverter)
 
     ___ retranslateUi , imageConverter
-        imageConverter.setWindowTitle(_translate("imageConverter", "MainWindow", None))
-        iconver_lb.sT..(_translate("imageConverter", "Path", None))
-        browseIconvert_btn.sT..(_translate("imageConverter", "...", None))
-        browseOut_btn.sT..(_translate("imageConverter", "...", None))
-        start_btn.sT..(_translate("imageConverter", "Start", None))
+        imageConverter.setWindowTitle(_translate("imageConverter", "MainWindow", N..))
+        iconver_lb.sT..(_translate("imageConverter", "Path", N..))
+        browseIconvert_btn.sT..(_translate("imageConverter", "...", N..))
+        browseOut_btn.sT..(_translate("imageConverter", "...", N..))
+        start_btn.sT..(_translate("imageConverter", "Start", N..))
 

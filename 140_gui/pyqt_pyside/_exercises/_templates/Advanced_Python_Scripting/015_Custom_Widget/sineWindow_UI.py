@@ -85,13 +85,13 @@ c_ Ui_MainWindow(object
         ?C...QMetaObject.connectSlotsByName(MainWindow)
 
     ___ retranslateUi , MainWindow
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow", None))
-        lenght_label.sT..(_translate("MainWindow", "Length", None))
-        length_value_label.sT..(_translate("MainWindow", "0", None))
-        height_label.sT..(_translate("MainWindow", "Height", None))
-        height_value_label.sT..(_translate("MainWindow", "0", None))
-        width_label.sT..(_translate("MainWindow", "Width", None))
-        width_value_label.sT..(_translate("MainWindow", "1", None))
-        grid_label.sT..(_translate("MainWindow", "Grid", None))
-        grid_value_label.sT..(_translate("MainWindow", "3", None))
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow", N..))
+        lenght_label.sT..(_translate("MainWindow", "Length", N..))
+        length_value_label.sT..(_translate("MainWindow", "0", N..))
+        height_label.sT..(_translate("MainWindow", "Height", N..))
+        height_value_label.sT..(_translate("MainWindow", "0", N..))
+        width_label.sT..(_translate("MainWindow", "Width", N..))
+        width_value_label.sT..(_translate("MainWindow", "1", N..))
+        grid_label.sT..(_translate("MainWindow", "Grid", N..))
+        grid_value_label.sT..(_translate("MainWindow", "3", N..))
 

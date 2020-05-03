@@ -16,7 +16,7 @@ c_ vector(
                           y+other.y,
                           z+other.z)
         ____
-            raise Exception("Not supported type %s" % type(other))
+            raise Exception("Not supported type %s" % ty..(other))
 
     ___ __sub__ , other
         __ isinstance(other, vector
@@ -24,7 +24,7 @@ c_ vector(
                           y-other.y,
                           z-other.z)
         ____
-            raise Exception("Not supported type %s" % type(other))
+            raise Exception("Not supported type %s" % ty..(other))
 
     ___ __mul__ , other
         __ isinstance(other, int) or isinstance(other, fl..
@@ -71,7 +71,7 @@ c_ vector(
             r_ vector(y*other.z - z*other.y,
                  z*other.x - x*other.z,
                  x*other.y - y*other.x)
-        raise Exception("Not supported type %s" % type(other))
+        raise Exception("Not supported type %s" % ty..(other))
 
     ___ dot , other
         r_ x * other.x + y * other.y + z * other.z

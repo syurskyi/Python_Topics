@@ -13,7 +13,7 @@ c_ mySerialize(json.JSONEncoder
             d.update({'classType': o.__class__.__name__})
             r_ d
         # return json.JSONEncoder.default(self, o)
-        r_ super(mySerialize, self).default(o)
+        r_ s__(mySerialize, self).default(o)
 #
 json.dump(x, o..(p, 'w'), indent_4, cls_mySerialize)
 #

@@ -5,7 +5,7 @@ iconvert _ 'C:/Program Files/Side Effects Software/Houdini 16.0.736/bin/iconvert
 
 ___ convert(src, trg_None
     __ trg:
-        __ not os.path.exists(trg
+        __ no. os.path.exists(trg
             os.makedirs(trg)
         ____ os.path.isfile(trg
             trg _ os.path.dirname(trg)

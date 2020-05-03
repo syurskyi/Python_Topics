@@ -7,7 +7,7 @@ fileName _ 'settings.txt'
 c_ settingClass(object
 	___  -  
 		fullPath _ os.path.j..(path, fileName)
-		__ not os.path.exists(fullPath
+		__ no. os.path.exists(fullPath
 			o..(fullPath, 'w').c..
 
 	___ __readFile 

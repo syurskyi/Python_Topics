@@ -778,7 +778,7 @@ _compatibility_members _ {
 ___ _apply_site_config(
     ___
         _____ QtSiteConfig
-    _____ ImportError:
+    _____ I..
         # If no QtSiteConfig module found, no modifications
         # to _common_members are needed.
         pass
@@ -816,12 +816,12 @@ ___ _setup(module, extras
         ___
             submodule _ _import_sub_module(
                 module, name)
-        _____ ImportError:
+        _____ I..
             continue
 
         setattr(__, "_" + name, submodule)
 
-        __ name not in extras:
+        __ name no. in extras:
             # Store reference to original binding,
             # but don't store speciality modules
             # such as uic or QtUiTools
@@ -851,10 +851,10 @@ ___ _wrapinstance(func, ptr, base_None
     """
 
     assert isinstance(ptr, long), "Argument 'ptr' must be of type <long>"
-    assert (base is None) or issubclass(base, __.?C...QObject), (
+    assert (base __ N..) or issubclass(base, __.?C...QObject), (
         "Argument 'base' must be of type <QObject>")
 
-    __ base is None:
+    __ base __ N..:
         q_object _ func(long(ptr), __.?C...QObject)
         meta_object _ q_object.metaObject
         class_name _ meta_object.className
@@ -921,13 +921,13 @@ ___ _build_compatibility_members(binding, decorators_None
     # This method does not need to be implemented in QtSiteConfig.
     ___
         _____ QtSiteConfig
-    _____ ImportError:
+    _____ I..
         pass
     ____
         __ hasattr(QtSiteConfig, 'update_compatibility_decorators'
             QtSiteConfig.update_compatibility_decorators(binding, decorators)
 
-    _QtCompat _ type("QtCompat", (object,), {})
+    _QtCompat _ ty..("QtCompat", (object,), {})
 
     ___ classname, bindings in _compatibility_members[binding].items(
         attrs _ {}
@@ -959,7 +959,7 @@ ___ _build_compatibility_members(binding, decorators_None
             attrs[target] _ src_object
 
         # Create the QtCompat class and install it into the namespace
-        compat_class _ type(classname, (_QtCompat,), attrs)
+        compat_class _ ty..(classname, (_QtCompat,), attrs)
         setattr(__.QtCompat, classname, compat_class)
 
 
@@ -982,7 +982,7 @@ ___ _pyside2(
         ___
             # Before merge of PySide and shiboken
             _____ shiboken2
-        _____ ImportError:
+        _____ I..
             # After merge of PySide and shiboken, May 2017
             ____ PySide2 _____ shiboken2
 
@@ -993,7 +993,7 @@ ___ _pyside2(
         Qt.QtCompat.getCppPointer _ lambda object: \
             shiboken2.getCppPointer(object)[0]
 
-    _____ ImportError:
+    _____ I..
         pass  # Optional
 
     __ hasattr(Qt, "_QtUiTools"
@@ -1014,7 +1014,7 @@ ___ _pyside2(
 ___ _pyside(
     """Initialise PySide"""
 
-    _____ PySide __ module
+    _____ ? __ module
     _setup(module, ["QtUiTools"])
 
     Qt.__binding_version__ _ module.__version__
@@ -1023,9 +1023,9 @@ ___ _pyside(
         ___
             # Before merge of PySide and shiboken
             _____ shiboken
-        _____ ImportError:
+        _____ I..
             # After merge of PySide and shiboken, May 2017
-            ____ PySide _____ shiboken
+            ____ ? _____ shiboken
 
         Qt.QtCompat.wrapInstance _ (
             lambda ptr, base_None: _wrapinstance(
@@ -1034,7 +1034,7 @@ ___ _pyside(
         Qt.QtCompat.getCppPointer _ lambda object: \
             shiboken.getCppPointer(object)[0]
 
-    _____ ImportError:
+    _____ I..
         pass  # Optional
 
     __ hasattr(Qt, "_QtUiTools"
@@ -1079,7 +1079,7 @@ ___ _pyqt5(
         Qt.QtCompat.getCppPointer _ lambda object: \
             sip.unwrapinstance(object)
 
-    _____ ImportError:
+    _____ I..
         pass  # Optional
 
     __ hasattr(Qt, "_uic"
@@ -1108,7 +1108,7 @@ ___ _pyqt4(
     ___
         hint _ int(QT_SIP_API_HINT)
     _____ TypeError:
-        hint _ None  # Variable was None, i.e. not set.
+        hint _ N..  # Variable was None, i.e. not set.
     _____ ValueError:
         raise ImportError("QT_SIP_API_HINT=%s must be a 1 or 2")
 
@@ -1125,7 +1125,7 @@ ___ _pyqt4(
             raise ImportError("PyQt4 < 4.6 isn't supported by Qt.py")
         _____ ValueError:
             actual _ sip.getapi(api)
-            __ not hint:
+            __ no. hint:
                 raise ImportError("API version already set to %d" % actual)
             ____
                 # Having provided a hint indicates a soft constraint, one
@@ -1147,7 +1147,7 @@ ___ _pyqt4(
         Qt.QtCompat.getCppPointer _ lambda object: \
             sip.unwrapinstance(object)
 
-    _____ ImportError:
+    _____ I..
         pass  # Optional
 
     __ hasattr(Qt, "_uic"
@@ -1206,13 +1206,13 @@ ___ _pyqt4(
 ___ _none(
     """Internal option (used in installer)"""
 
-    Mock _ type("Mock", , {"__getattr__": lambda Qt, attr: None})
+    Mock _ ty..("Mock", , {"__getattr__": lambda Qt, attr: N..})
 
     Qt.__binding__ _ "None"
     Qt.__qt_version__ _ "0.0.0"
     Qt.__binding_version__ _ "0.0.0"
-    Qt.QtCompat.loadUi _ lambda uifile, baseinstance_None: None
-    Qt.QtCompat.setSectionResizeMode _ lambda *args, **kwargs: None
+    Qt.QtCompat.loadUi _ lambda uifile, baseinstance_None: N..
+    Qt.QtCompat.setSectionResizeMode _ lambda *args, **kwargs: N..
 
     ___ submodule in _common_members.keys(
         setattr(Qt, submodule, Mock())
@@ -1265,7 +1265,7 @@ ___ _loadUi(uifile, baseinstance_None
             """
 
             ___  -  , baseinstance
-                super(_UiLoader, self). - (baseinstance)
+                s__(_UiLoader, self). - (baseinstance)
                 baseinstance _ baseinstance
 
             ___ l.. , uifile, *args, **kwargs
@@ -1292,7 +1292,7 @@ ___ _loadUi(uifile, baseinstance_None
 
                 """
 
-                __ parent is None an. baseinstance:
+                __ parent __ N.. an. baseinstance:
                     # Supposed to create the top-level widget,
                     # return the base instance instead
                     r_ baseinstance
@@ -1448,7 +1448,7 @@ ___ _install(
         _____ KeyError:
             _log("ImportError: Preferred binding '%s' not found." % name)
 
-    __ not found_binding:
+    __ no. found_binding:
         # If not binding were found, throw this error
         raise ImportError("No Qt binding were found.")
 

@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ PySide _____ ?C.., ?G..
+____ ? _____ ?C.., ?G..
 
 c_ Ui_templateEditor(object
     ___ setupUi , templateEditor
@@ -59,9 +59,9 @@ c_ Ui_templateEditor(object
         ?C...QMetaObject.connectSlotsByName(templateEditor)
 
     ___ retranslateUi , templateEditor
-        templateEditor.setWindowTitle(?G...?A...translate("templateEditor", "Form", None, ?G...?A...UnicodeUTF8))
-        add_btn.sT..(?G...?A...translate("templateEditor", "+", None, ?G...?A...UnicodeUTF8))
-        remove_btn.sT..(?G...?A...translate("templateEditor", "-", None, ?G...?A...UnicodeUTF8))
-        save_btn.sT..(?G...?A...translate("templateEditor", "Save", None, ?G...?A...UnicodeUTF8))
-        close_btn.sT..(?G...?A...translate("templateEditor", "Close", None, ?G...?A...UnicodeUTF8))
+        templateEditor.setWindowTitle(?G...?A...translate("templateEditor", "Form", N.., ?G...?A...UnicodeUTF8))
+        add_btn.sT..(?G...?A...translate("templateEditor", "+", N.., ?G...?A...UnicodeUTF8))
+        remove_btn.sT..(?G...?A...translate("templateEditor", "-", N.., ?G...?A...UnicodeUTF8))
+        save_btn.sT..(?G...?A...translate("templateEditor", "Save", N.., ?G...?A...UnicodeUTF8))
+        close_btn.sT..(?G...?A...translate("templateEditor", "Close", N.., ?G...?A...UnicodeUTF8))
 

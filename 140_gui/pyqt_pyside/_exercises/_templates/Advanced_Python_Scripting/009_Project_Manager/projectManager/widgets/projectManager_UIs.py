@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ PySide _____ ?C.., ?G..
+____ ? _____ ?C.., ?G..
 
 c_ Ui_projectManager(object
     ___ setupUi , projectManager
@@ -55,10 +55,10 @@ c_ Ui_projectManager(object
         ?C...QMetaObject.connectSlotsByName(projectManager)
 
     ___ retranslateUi , projectManager
-        projectManager.setWindowTitle(?G...?A...translate("projectManager", "Project Manager", None, ?G...?A...UnicodeUTF8))
-        create_btn.sT..(?G...?A...translate("projectManager", "Create Project", None, ?G...?A...UnicodeUTF8))
-        templateEditor_btn.sT..(?G...?A...translate("projectManager", "Template Editor", None, ?G...?A...UnicodeUTF8))
-        groupBox.setTitle(?G...?A...translate("projectManager", "Info", None, ?G...?A...UnicodeUTF8))
-        info_lb.sT..(?G...?A...translate("projectManager", "TextLabel", None, ?G...?A...UnicodeUTF8))
-        settings_btn.sT..(?G...?A...translate("projectManager", "Settings", None, ?G...?A...UnicodeUTF8))
+        projectManager.setWindowTitle(?G...?A...translate("projectManager", "Project Manager", N.., ?G...?A...UnicodeUTF8))
+        create_btn.sT..(?G...?A...translate("projectManager", "Create Project", N.., ?G...?A...UnicodeUTF8))
+        templateEditor_btn.sT..(?G...?A...translate("projectManager", "Template Editor", N.., ?G...?A...UnicodeUTF8))
+        groupBox.setTitle(?G...?A...translate("projectManager", "Info", N.., ?G...?A...UnicodeUTF8))
+        info_lb.sT..(?G...?A...translate("projectManager", "TextLabel", N.., ?G...?A...UnicodeUTF8))
+        settings_btn.sT..(?G...?A...translate("projectManager", "Settings", N.., ?G...?A...UnicodeUTF8))
 

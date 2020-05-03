@@ -73,9 +73,9 @@ c_ Ui_templateEditor(object
         ?C...QMetaObject.connectSlotsByName(templateEditor)
 
     ___ retranslateUi , templateEditor
-        templateEditor.setWindowTitle(_translate("templateEditor", "Form", None))
-        add_btn.sT..(_translate("templateEditor", "+", None))
-        remove_btn.sT..(_translate("templateEditor", "-", None))
-        save_btn.sT..(_translate("templateEditor", "Save", None))
-        close_btn.sT..(_translate("templateEditor", "Close", None))
+        templateEditor.setWindowTitle(_translate("templateEditor", "Form", N..))
+        add_btn.sT..(_translate("templateEditor", "+", N..))
+        remove_btn.sT..(_translate("templateEditor", "-", N..))
+        save_btn.sT..(_translate("templateEditor", "Save", N..))
+        close_btn.sT..(_translate("templateEditor", "Close", N..))
 

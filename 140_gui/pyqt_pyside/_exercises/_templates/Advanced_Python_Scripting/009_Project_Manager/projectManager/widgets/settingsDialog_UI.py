@@ -41,10 +41,10 @@ c_ Ui_settingsDialog(object
         verticalLayout.addWidget(buttonBox)
 
         retranslateUi(settingsDialog)
-        ?C...QObject.c..(buttonBox, ?C...SIGNAL(_fromUtf8("accepted()")), settingsDialog.accept)
+        ?C...QObject.c..(buttonBox, ?C...SIGNAL(_fromUtf8("accepted()")), settingsDialog.a..)
         ?C...QObject.c..(buttonBox, ?C...SIGNAL(_fromUtf8("rejected()")), settingsDialog.reject)
         ?C...QMetaObject.connectSlotsByName(settingsDialog)
 
     ___ retranslateUi , settingsDialog
-        settingsDialog.setWindowTitle(_translate("settingsDialog", "Dialog", None))
+        settingsDialog.setWindowTitle(_translate("settingsDialog", "Dialog", N..))
 

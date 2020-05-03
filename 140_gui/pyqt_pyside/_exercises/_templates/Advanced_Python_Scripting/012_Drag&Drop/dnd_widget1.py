@@ -1,16 +1,16 @@
 _____ ___
 _____ os
-____ PySide.?C.. _____ _
-____ PySide.?G.. _____ _
+____ ?.?C.. _____ _
+____ ?.?G.. _____ _
 
-c_ listWidgetClass(QListWidget
+c_ listWidgetClass(?LW..
     ___  -  
-        super(listWidgetClass, self). - 
-        setWindowFlags(__.WindowStaysOnTopHint)          # #okno bydet vsegda poverh drygih okon
-        setDragDropMode(QAbstractItemView.DropOnly)      # shto bu dropEvent zarabotal nado vklychit dlja etogo vidgeta setDragDropMode
+        s__(listWidgetClass, self). -
+        sWF..(__.WSOTH..)          # #okno bydet vsegda poverh drygih okon
+        sDDM..(QAbstractItemView.DO..)      # shto bu dropEvent zarabotal nado vklychit dlja etogo vidgeta setDragDropMode
 
     ___ dropEvent , event                # to shto proishodit kogda mu sbrasuvaem dannue na vidget
-        print 'DROP', type(event)
+        print 'DROP', ty..(event)
         mimedata _ event.mimeData            # kogda mu peretaskivaem element, to pomimo togo shto srabatuvaet DropEvent,
                                                # srabatuvaet echjo 2 eventa, dragEnterEvent and dragMoveEvent
                                                # obuchno oni odinakovue i govorjat mozet li nash vidget prinjat' eti dannue kotorue mu peretaskivaem
@@ -22,14 +22,14 @@ c_ listWidgetClass(QListWidget
             print 'urls'
 
     ___ dragEnterEvent , event
-        event.accept
-        print 'ENTER', type(event)
+        event.a..
+        print 'ENTER', ty..(event)
 
     ___ dragMoveEvent , event
-        event.accept
+        event.a..
         print 'MOVE'
 
-__ __name__ __ '__main__':
+__ _____ __ ______
     app _ ?A..([])
     w _ listWidgetClass
     w.s..

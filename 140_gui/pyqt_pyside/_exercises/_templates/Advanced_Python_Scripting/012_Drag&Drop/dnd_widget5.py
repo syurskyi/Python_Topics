@@ -1,13 +1,13 @@
 _____ ___
 _____ os
-____ PySide.?C.. _____ _
-____ PySide.?G.. _____ _
+____ ?.?C.. _____ _
+____ ?.?G.. _____ _
 
-c_ listWidgetClass(QListWidget
+c_ listWidgetClass(?LW..
     ___  -  
-        super(listWidgetClass, self). -
-        setWindowFlags(__.WindowStaysOnTopHint)
-        setDragDropMode(QAbstractItemView.DropOnly)
+        s__(listWidgetClass, self). -
+        sWF..(__.WSOTH..)
+        sDDM..(QAbstractItemView.DO..)
         setSelectionMode(QAbstractItemView.ExtendedSelection)
         files _ []                            # eto peremenaja sozdajotsja dlja izbezanija sozdanija dyblikatov
 
@@ -21,14 +21,14 @@ c_ listWidgetClass(QListWidget
     ___ dragEnterEvent , event
         mimedata _ event.mimeData
         __ mimedata.hasUrls(
-            event.accept
+            event.a..
         ____
             event.ignore
 
     ___ dragMoveEvent , event
         mimedata _ event.mimeData
         __ mimedata.hasUrls(
-            event.accept
+            event.a..
         ____
             event.ignore
 
@@ -41,13 +41,13 @@ c_ listWidgetClass(QListWidget
         print url
 
     ___ addFile , path                              # fynkcija kotoraja prinimaet pyt', pyt' mu polychaem s Drop Event
-        __ not path __ files:                        # hranitsja byfer yze dobavlennuh fajlov
+        __ no. path __ files:                        # hranitsja byfer yze dobavlennuh fajlov
             item _ ?LWI..                  # mu sozdajom novuj Item
             item.sT..(os.path.basename(path))          # otpravljaem imja fajla
             item.setData(__.UserRole, path)               # polnuj pyt' fajla polozim v kastomnujy daty etogo fajla
             files.ap..(path)
 
-__ __name__ __ '__main__':
+__ _____ __ ______
     app _ ?A..([])
     w _ listWidgetClass
     w.s..

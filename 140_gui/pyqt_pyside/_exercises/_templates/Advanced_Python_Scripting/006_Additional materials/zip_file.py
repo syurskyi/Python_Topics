@@ -8,10 +8,10 @@ ___ usage(
 
 ___ get_zipfilepath(frm, to
 	dt _ datetime.now
-	__ not os.path.isdir(frm
+	__ no. os.path.isdir(frm
 		print "'" + frm + "' this is not valid source dir"
 		___.e..(2)
-	__ not os.path.isdir(to
+	__ no. os.path.isdir(to
 		print "'" + to + "' this is not valid target dir"
 		___.e..(2)
 
@@ -28,7 +28,7 @@ ___ make_archive(zip_archive_file, directory, *args
 			__ os.path.isfile(path
 				zipf.w..(path, unicode(path,'utf-8').e..('cp852'))
 			____ os.path.isdir(path
-				__ not item __ args:
+				__ no. item __ args:
 					recursive_zip(zipf, path, *args)
 
 	zipf _ zipfile.ZipFile(zip_archive_file, 'w', compression_zipfile.ZIP_DEFLATED)
@@ -57,7 +57,7 @@ ___ main(
 		usage
 		___.e..(2)
 		
-	__ not opts:
+	__ no. opts:
 		opts.ap..(('-h',''))
 
 	___ o, a __ opts:
@@ -70,7 +70,7 @@ ___ main(
 		____ o __ '-t':
 			to _ a
 
-	__ not (frm an. to
+	__ no. (frm an. to
 		print "not sufficent parameters provided to: '" + to + "' from: '" + frm + "'"
 		___.e..(2)
 		

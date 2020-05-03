@@ -1,44 +1,44 @@
-_____ ___
-_____ os
-____ PySide.?C.. _____ _
-____ PySide.?G.. _____ _
-
-
-c_ listWidgetClass(QListWidget
-    ___  -  
-        super(listWidgetClass, self). -
-        setWindowFlags(__.WindowStaysOnTopHint)
-        setDragDropMode(QAbstractItemView.DropOnly)
-
-    ___ dropEvent , event
-        print 'DROP', type(event)
-    #     mimedata = event.mimeData()
-    #     if mimedata.hasText():
-    #         print 'text'
-    #         # print mimedata.hasText()
-    #     elif mimedata.hasUrls():
-    #         print 'urls'
-    #         # print mimedata.urls()
-    #
-    ___ dragEnterEvent , event
-        event.accept
-        print 'ENTER', type(event)
-
-    ___ dragMoveEvent , event
-        event.accept
-        # print 'MOVE'
-
-
-__ __name__ __ '__main__':
-    _____ ___
-
-    app _ None
-    ___
-        _____ nuke
-    _____ ImportError:
-        app _ ?A..
-    main _ listWidgetClass
-    main.s..
-
-    __ app is not None:
-        app.exec_
+# _____ ___
+# _____ os
+# ____ ?.?C.. _____ _
+# ____ ?.?G.. _____ _
+#
+#
+# c_ listWidgetClass ?LW..
+#     ___  -
+#         s__ ? . -
+#         sWF.. __.WSOTH..
+#         sDDM.. ?AIV__.DO..
+#
+#     ___ dropEvent  event
+#         print 'DROP', ty.. ?
+#     #     mimedata = event.mimeData()
+#     #     if mimedata.hasText():
+#     #         print 'text'
+#     #         # print mimedata.hasText()
+#     #     elif mimedata.hasUrls():
+#     #         print 'urls'
+#     #         # print mimedata.urls()
+#     #
+#     ___ dragEnterEvent event
+#         ?.a..
+#         print 'ENTER', ty.. ?
+#
+#     ___ dragMoveEvent  event
+#         ?.a..
+#         # print 'MOVE'
+#
+#
+# __ _____ __ ______
+#     _____ ___
+#
+#     app _ N..
+#     ___
+#         _____ n..
+#     _____ I..
+#         app _ ?A..
+#     main _ ?
+#     ?.s..
+#
+#     __ ? __ no. N..
+#         ?.e..

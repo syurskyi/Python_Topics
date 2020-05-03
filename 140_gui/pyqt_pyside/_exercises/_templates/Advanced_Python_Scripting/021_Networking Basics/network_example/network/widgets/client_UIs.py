@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ PySide _____ ?C.., ?G..
+____ ? _____ ?C.., ?G..
 
 c_ Ui_client(object
     ___ setupUi , client
@@ -38,7 +38,7 @@ c_ Ui_client(object
         ?C...QMetaObject.connectSlotsByName(client)
 
     ___ retranslateUi , client
-        client.setWindowTitle(?G...?A...translate("client", "Client", None, ?G...?A...UnicodeUTF8))
-        connect_btn.sT..(?G...?A...translate("client", "Connect", None, ?G...?A...UnicodeUTF8))
-        label.sT..(?G...?A...translate("client", "0", None, ?G...?A...UnicodeUTF8))
+        client.setWindowTitle(?G...?A...translate("client", "Client", N.., ?G...?A...UnicodeUTF8))
+        connect_btn.sT..(?G...?A...translate("client", "Connect", N.., ?G...?A...UnicodeUTF8))
+        label.sT..(?G...?A...translate("client", "0", N.., ?G...?A...UnicodeUTF8))
 

@@ -18,7 +18,7 @@ folders _ \
 ]
 
 ___ createFolder(path
-    __ not os.path.exists(path
+    __ no. os.path.exists(path
         os.mkdir(path)
 
 ___ build(root, data

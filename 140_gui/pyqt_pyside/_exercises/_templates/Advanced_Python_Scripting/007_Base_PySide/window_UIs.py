@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ PySide _____ ?C.., ?G..
+____ ? _____ ?C.., ?G..
 
 c_ Ui_Form(object
     ___ setupUi , Form
@@ -31,7 +31,7 @@ c_ Ui_Form(object
         ?C...QMetaObject.connectSlotsByName(Form)
 
     ___ retranslateUi , Form
-        Form.setWindowTitle(?G...?A...translate("Form", "Form", None, ?G...?A...UnicodeUTF8))
-        pB__.sT..(?G...?A...translate("Form", "PushButton", None, ?G...?A...UnicodeUTF8))
-        pushButton_2.sT..(?G...?A...translate("Form", "PushButton", None, ?G...?A...UnicodeUTF8))
+        Form.setWindowTitle(?G...?A...translate("Form", "Form", N.., ?G...?A...UnicodeUTF8))
+        pB__.sT..(?G...?A...translate("Form", "PushButton", N.., ?G...?A...UnicodeUTF8))
+        pushButton_2.sT..(?G...?A...translate("Form", "PushButton", N.., ?G...?A...UnicodeUTF8))
 

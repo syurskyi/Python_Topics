@@ -69,10 +69,10 @@ c_ Ui_projectManager(object
         ?C...QMetaObject.connectSlotsByName(projectManager)
 
     ___ retranslateUi , projectManager
-        projectManager.setWindowTitle(_translate("projectManager", "Project Manager", None))
-        create_btn.sT..(_translate("projectManager", "Create Project", None))
-        templateEditor_btn.sT..(_translate("projectManager", "Template Editor", None))
-        groupBox.setTitle(_translate("projectManager", "Info", None))
-        info_lb.sT..(_translate("projectManager", "TextLabel", None))
-        settings_btn.sT..(_translate("projectManager", "Settings", None))
+        projectManager.setWindowTitle(_translate("projectManager", "Project Manager", N..))
+        create_btn.sT..(_translate("projectManager", "Create Project", N..))
+        templateEditor_btn.sT..(_translate("projectManager", "Template Editor", N..))
+        groupBox.setTitle(_translate("projectManager", "Info", N..))
+        info_lb.sT..(_translate("projectManager", "TextLabel", N..))
+        settings_btn.sT..(_translate("projectManager", "Settings", N..))
 

@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ PySide _____ ?C.., ?G..
+____ ? _____ ?C.., ?G..
 
 c_ Ui_MainWindow(object
     ___ setupUi , MainWindow
@@ -38,7 +38,7 @@ c_ Ui_MainWindow(object
         combo_cbb _ ?G...QComboBox(centralwidget)
         combo_cbb.setObjectName("combo_cbb")
         verticalLayout.addWidget(combo_cbb)
-        list_lwd _ ?G...QListWidget(centralwidget)
+        list_lwd _ ?G...?LW..(centralwidget)
         list_lwd.setObjectName("list_lwd")
         verticalLayout.addWidget(list_lwd)
         horizontalLayout_2.addLayout(verticalLayout)
@@ -81,15 +81,15 @@ c_ Ui_MainWindow(object
         ?C...QMetaObject.connectSlotsByName(MainWindow)
 
     ___ retranslateUi , MainWindow
-        MainWindow.setWindowTitle(?G...?A...translate("MainWindow", "MainWindow", None, ?G...?A...UnicodeUTF8))
-        fill_btn.sT..(?G...?A...translate("MainWindow", "Fill", None, ?G...?A...UnicodeUTF8))
-        clear_btn.sT..(?G...?A...translate("MainWindow", "Clear", None, ?G...?A...UnicodeUTF8))
-        image_lb.sT..(?G...?A...translate("MainWindow", "TextLabel", None, ?G...?A...UnicodeUTF8))
-        toolBar.setWindowTitle(?G...?A...translate("MainWindow", "toolBar", None, ?G...?A...UnicodeUTF8))
-        menuFile.setTitle(?G...?A...translate("MainWindow", "File", None, ?G...?A...UnicodeUTF8))
-        fill_act.sT..(?G...?A...translate("MainWindow", "Fill", None, ?G...?A...UnicodeUTF8))
-        clear_act.sT..(?G...?A...translate("MainWindow", "Clear", None, ?G...?A...UnicodeUTF8))
-        open_act.sT..(?G...?A...translate("MainWindow", "Open", None, ?G...?A...UnicodeUTF8))
-        save_act.sT..(?G...?A...translate("MainWindow", "Save", None, ?G...?A...UnicodeUTF8))
-        exit_act.sT..(?G...?A...translate("MainWindow", "Exit", None, ?G...?A...UnicodeUTF8))
+        MainWindow.setWindowTitle(?G...?A...translate("MainWindow", "MainWindow", N.., ?G...?A...UnicodeUTF8))
+        fill_btn.sT..(?G...?A...translate("MainWindow", "Fill", N.., ?G...?A...UnicodeUTF8))
+        clear_btn.sT..(?G...?A...translate("MainWindow", "Clear", N.., ?G...?A...UnicodeUTF8))
+        image_lb.sT..(?G...?A...translate("MainWindow", "TextLabel", N.., ?G...?A...UnicodeUTF8))
+        toolBar.setWindowTitle(?G...?A...translate("MainWindow", "toolBar", N.., ?G...?A...UnicodeUTF8))
+        menuFile.setTitle(?G...?A...translate("MainWindow", "File", N.., ?G...?A...UnicodeUTF8))
+        fill_act.sT..(?G...?A...translate("MainWindow", "Fill", N.., ?G...?A...UnicodeUTF8))
+        clear_act.sT..(?G...?A...translate("MainWindow", "Clear", N.., ?G...?A...UnicodeUTF8))
+        open_act.sT..(?G...?A...translate("MainWindow", "Open", N.., ?G...?A...UnicodeUTF8))
+        save_act.sT..(?G...?A...translate("MainWindow", "Save", N.., ?G...?A...UnicodeUTF8))
+        exit_act.sT..(?G...?A...translate("MainWindow", "Exit", N.., ?G...?A...UnicodeUTF8))
 

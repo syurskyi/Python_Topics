@@ -1,12 +1,12 @@
-____ PySide.?G.. _____ _
-____ PySide.?C.. _____ _
+____ ?.?G.. _____ _
+____ ?.?C.. _____ _
 _____ os
 path _ os.path.dirname(os.path.dirname(__file__))
 
 
 c_ simpleWindow(?W..
     ___  -
-        super(simpleWindow, self). - 
+        s__(simpleWindow, self). -
         ly _ QHBoxLayout
         setLayout(ly)
         tree _ QTreeWidget
@@ -24,9 +24,9 @@ c_ simpleWindow(?W..
         tree.blockSignals(F..)
 
     ___ fillTree , parent_None, root_None
-        __ not parent:
+        __ no. parent:
             parent _ tree.invisibleRootItem
-        __ not root:
+        __ no. root:
             root _ path
         ___ f __ os.listdir(root
             __ f[0] __ ['.', '_']: continue
@@ -47,7 +47,7 @@ c_ simpleWindow(?W..
         print s
 
 
-__ __name__ __ '__main__':
+__ _____ __ ______
     app _ ?A..([])
     w _ simpleWindow
     w.s..

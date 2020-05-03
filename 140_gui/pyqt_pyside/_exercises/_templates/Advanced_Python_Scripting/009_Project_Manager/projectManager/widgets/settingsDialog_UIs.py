@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ PySide _____ ?C.., ?G..
+____ ? _____ ?C.., ?G..
 
 c_ Ui_settingsDialog(object
     ___ setupUi , settingsDialog
@@ -27,10 +27,10 @@ c_ Ui_settingsDialog(object
         verticalLayout.addWidget(buttonBox)
 
         retranslateUi(settingsDialog)
-        ?C...QObject.c..(buttonBox, ?C...SIGNAL("accepted()"), settingsDialog.accept)
+        ?C...QObject.c..(buttonBox, ?C...SIGNAL("accepted()"), settingsDialog.a..)
         ?C...QObject.c..(buttonBox, ?C...SIGNAL("rejected()"), settingsDialog.reject)
         ?C...QMetaObject.connectSlotsByName(settingsDialog)
 
     ___ retranslateUi , settingsDialog
-        settingsDialog.setWindowTitle(?G...?A...translate("settingsDialog", "Dialog", None, ?G...?A...UnicodeUTF8))
+        settingsDialog.setWindowTitle(?G...?A...translate("settingsDialog", "Dialog", N.., ?G...?A...UnicodeUTF8))
 

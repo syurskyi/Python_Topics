@@ -1,10 +1,10 @@
-____ PySide.?C.. _____ _
-____ PySide.?G.. _____ _
+____ ?.?C.. _____ _
+____ ?.?G.. _____ _
 
 
 c_ WindowClass(?M..
     ___  -  
-        super(WindowClass, self). - 
+        s__(WindowClass, self). -
         w _ ?W..
         setCentralWidget(w)
 
@@ -18,7 +18,7 @@ c_ WindowClass(?M..
         menu.addAction(act1)
 
 
-__ __name__ __ '__main__':
+__ _____ __ ______
     app _ ?A..([])
     w _ WindowClass
     w.s..

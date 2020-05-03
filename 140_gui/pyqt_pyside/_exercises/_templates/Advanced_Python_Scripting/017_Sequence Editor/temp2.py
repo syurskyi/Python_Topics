@@ -18,7 +18,7 @@ ____ multiprocessing _____ Process
 
 c_ eDrum(?G...?W..
     ___  -  , inputDict_None
-        super(eDrum, self). -
+        s__(eDrum, self). -
 
         # get input dictionary
         inputDict _ inputDict
@@ -52,13 +52,13 @@ c_ pad1(?G...QGraphicsEllipseItem
     __counter _ 0
 
     ___  -  , x_0, y_0, c_50, parent_None, parentScene_None
-        super(pad1, self). - (x, y, c, c, parent, parentScene)
+        s__(pad1, self). - (x, y, c, c, parent, parentScene)
         # super(Node, self).__init__(x,y,c,v,parent,sceneparent)
         # setting node name based on counter
 
         # ---------------------------
         inputDict _ {}
-        seq _ None
+        seq _ N..
 
         stop _ F..
         playing _ F..
@@ -96,7 +96,7 @@ c_ pad1(?G...QGraphicsEllipseItem
     #        self.setBrush(color)
 
     ___ mouseMoveEvent , e
-        super(pad1, self).mouseMoveEvent(e)
+        s__(pad1, self).mouseMoveEvent(e)
         updateConnectors
 
     ___ updateColor , colorString
@@ -105,7 +105,7 @@ c_ pad1(?G...QGraphicsEllipseItem
 
     ___ mousePressEvent , e
 
-        super(pad1, self).mousePressEvent(e)
+        s__(pad1, self).mousePressEvent(e)
 
         __ e.button __ ?C...__.LB..:
             print('left')
@@ -234,12 +234,12 @@ c_ pad1(?G...QGraphicsEllipseItem
         print(e)
 
     ___ keyPressEvent , e
-        super(pad1, self).keyPressEvent(e)
+        s__(pad1, self).keyPressEvent(e)
         print(e.key)
 
     ___ eventFilter , object, event
         print("mousemove!")
-        print(event.type())
+        print(event.ty..())
 
     ___ isPlaying
         w__ pygame.mixer.music.get_busy(
@@ -250,12 +250,12 @@ c_ pad1(?G...QGraphicsEllipseItem
 
 c_ mainWindow(?G...?M..
     ___  -  , parent_None, flag_0
-        super(mainWindow, self). - (parent)
+        s__(mainWindow, self). - (parent)
 
         tableList _ []
         songDict _ {}
         deviceList _ {}
-        midiNote _ None
+        midiNote _ N..
 
         resize(800, 600)
         scene _ ?G...QGraphicsScene
@@ -404,7 +404,7 @@ c_ mainWindow(?G...?M..
         pygame.midi.init
 
         # list all midi devices, maximum of 10
-        device _ [None] * 10
+        device _ [N..] * 10
         index _ 0
         ___ x in ra..(0, pygame.midi.get_count()):
             print(pygame.midi.get_device_info(x))
@@ -434,16 +434,16 @@ c_ mainWindow(?G...?M..
         print("setMidiDevice")
         sender _ sender.t..
         print(sender)
-        print(type(sender))
+        print(ty..(sender))
 
         ___ index in deviceList.keys(
 
             device _ deviceList[index][0]
             x _ deviceList[index][1]
             print('device %s' % device)
-            print('type %s' % type(device))
+            print('type %s' % ty..(device))
             print('x = %i' % x)
-            __ type(device) __ type(sender
+            __ ty..(device) __ ty..(sender
                 print('device==sender')
                 device[index].setChecked(T..)
                 inp _ pygame.midi.Input(x)
@@ -677,7 +677,7 @@ c_ mainWindow(?G...?M..
 
 c_ songCreator(?G...QTabWidget
     ___  -  , tabs, songList_None
-        super(songCreator, self). -
+        s__(songCreator, self). -
 
         tableIndex _ 0
         # tab for input -------------------------------------------
@@ -703,7 +703,7 @@ c_ songCreator(?G...QTabWidget
 
 
 
-        __ songList !_ None:
+        __ songList !_ N..:
             addseq(songList)
 
         vBoxlayout.addLayout(hBoxlayout)
@@ -784,5 +784,5 @@ ___ main(
     ___.e.. ?.e
 
 
-__ __name__ __ '__main__':
+__ _____ __ ______
     main

@@ -68,20 +68,20 @@ _STYLE_BTN _ '''
 c_ Delete_Btn(?W...?PB..
     ''' Custom button that Triggers parent's 'delete_item' function. '''
     ___  -  , parent_None
-        super(Delete_Btn, self). - (parent)
+        s__(Delete_Btn, self). - (parent)
         _my_parent _ parent
         _type _ 'application/x-qabstractitemmodeldatalist'
 
     ___ dragEnterEvent , event
         __ event.mimeData.hasFormat(_type
-            event.accept
+            event.a..
         ____
             event.ignore
 
     ___ dropEvent , event
         __ event.mimeData.hasFormat(_type
             _my_parent.delete_item
-            event.accept
+            event.a..
         ____
             event.ignore
 
@@ -92,7 +92,7 @@ c_ TP_Launcher_GUI(?W...?W..
         applications within those workspaces.
     '''
     ___  -  , parent_None
-        super(TP_Launcher_GUI, self). - (parent)
+        s__(TP_Launcher_GUI, self). - (parent)
 
         # System and tool icons
         _icons _ ?W...QFileIconProvider
@@ -114,7 +114,7 @@ c_ TP_Launcher_GUI(?W...?W..
         # Handle version specific file dialog box issues
         _file_dialogs _ defaultdict(lambda: _file_dialog)
         _file_dialogs['PyQt4'] _ _file_dialog_pyqt4
-        _dragging _ None
+        _dragging _ N..
         _delete_op _ {
             'workspace': _delete_workspace,
             'application':_delete_app
@@ -155,7 +155,7 @@ c_ TP_Launcher_GUI(?W...?W..
         setWindowTitle('TPayne\'s Launcher ' + __version__)
         setWindowIcon(_tpl_icon)
         flag _ ?C...Qt.WindowCloseButtonHint
-        setWindowFlags(?C...Qt.Window | flag)
+        sWF..(?C...Qt.Window | flag)
         resize(190, 200)
         sSS..(_STYLE_MAIN)
 
@@ -166,7 +166,7 @@ c_ TP_Launcher_GUI(?W...?W..
         v_layout _ ?W...QVBoxLayout(workspace_gb)
 
         _workspace_cb _ ?W...QComboBox
-        _workspace_cb.view.setDragDropMode(
+        _workspace_cb.view.sDDM..(
             ?W...QAbstractItemView.DragOnly
             )
 
@@ -207,9 +207,9 @@ c_ TP_Launcher_GUI(?W...?W..
 
     ___ _setup_apps
         ''' Create apps list widget with drag/drop, and stuff'''
-        _app_lw _ ?W...QListWidget
+        _app_lw _ ?W...?LW..
         _app_lw.setAlternatingRowColors(T..)
-        _app_lw.setDragDropMode(
+        _app_lw.sDDM..(
             ?W...QAbstractItemView.InternalMove
             )
         r_ _app_lw
@@ -452,16 +452,16 @@ c_ TP_Launcher_GUI(?W...?W..
         r_ x, y, cws
 
 
-__ __name__ __ '__main__':
+__ _____ __ ______
     # for debugging
     print (PY_VER)
     print (QT_VER)
     app _ ?W...?A..
 
     # if os doesn't support Tray, quit
-    __ not ?W...QSystemTrayIcon.isSystemTrayAvailable(
+    __ no. ?W...QSystemTrayIcon.isSystemTrayAvailable(
         ?W...QMessageBox.critical(
-            None, 'Error!',
+            N.., 'Error!',
             'No system tray available for this system! Exiting...'
         )
         ___.e..(1)

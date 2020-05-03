@@ -86,7 +86,7 @@ c_ Main(?W..
         ___ i __ reversed(ra..(leftLayout.count())):
             widget_leftLayout.takeAt(i).widget
 
-            __ widget is not None:
+            __ widget __ no. N..:
                 widget.deleteLater
 
         employee_employeeList.cI__).t..
@@ -387,5 +387,5 @@ ___ main(
     APP_?A..
     window_Main
     ___.e..(APP.e
-__ __name__ __ '__main__':
+__ _____ __ ______
     main

@@ -1,8 +1,8 @@
-____ PySide.?G.. _____ *
+____ ?.?G.. _____ *
 
 c_ myWidget(?W..
     ___  -
-        super(myWidget, self). - 
+        s__(myWidget, self). -
         l _ QVBoxLayout
         setLayout(l)
         label _ QLabel('Text')

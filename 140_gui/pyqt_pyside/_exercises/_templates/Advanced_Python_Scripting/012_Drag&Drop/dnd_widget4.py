@@ -1,14 +1,14 @@
 _____ ___
 _____ os
-____ PySide.?C.. _____ _
-____ PySide.?G.. _____ _
+____ ?.?C.. _____ _
+____ ?.?G.. _____ _
 
 
-c_ listWidgetClass(QListWidget
+c_ listWidgetClass(?LW..
     ___  -
-        super(listWidgetClass, self). -
-        setWindowFlags(__.WindowStaysOnTopHint)
-        setDragDropMode(QAbstractItemView.DropOnly)
+        s__(listWidgetClass, self). -
+        sWF..(__.WSOTH..)
+        sDDM..(QAbstractItemView.DO..)
 
     ___ dropEvent , event
         # print 'DROP', type(event)
@@ -20,21 +20,21 @@ c_ listWidgetClass(QListWidget
     ___ dragEnterEvent , event
         mimedata _ event.mimeData
         __ mimedata.hasUrls(
-            event.accept
+            event.a..
         ____
             event.ignore
 
     ___ dragMoveEvent , event
         mimedata _ event.mimeData
         __ mimedata.hasUrls(
-            event.accept
+            event.a..
         ____
             event.ignore
 
     ___ addFile , path
         pass
 
-__ __name__ __ '__main__':
+__ _____ __ ______
     app _ ?A..([])
     w _ listWidgetClass
     w.s..

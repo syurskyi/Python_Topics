@@ -1,11 +1,11 @@
-____ PySide.?C.. _____ _
-____ PySide.?G.. _____ _
+____ ?.?C.. _____ _
+____ ?.?G.. _____ _
 # from import PyQt4 import QtCore
 
 
 c_ SimpleWindowClass(?W..
     ___  -  
-        super(SimpleWindowClass, self). - 
+        s__(SimpleWindowClass, self). -
         layout _ QVBoxLayout
         label _ QLabel('Text')
         layout.addWidget(label)
@@ -19,7 +19,7 @@ c_ SimpleWindowClass(?W..
         button.c___.c..(close)
 
 
-__ __name__ __ '__main__':
+__ _____ __ ______
     app _ ?A..([])
     w _ SimpleWindowClass
     w.s..

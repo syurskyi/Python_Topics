@@ -51,6 +51,6 @@ c_ Ui_Server(object
         ?C...QMetaObject.connectSlotsByName(Server)
 
     ___ retranslateUi , Server
-        Server.setWindowTitle(_translate("Server", "Server", None))
-        info_lb.sT..(_translate("Server", "IP:", None))
+        Server.setWindowTitle(_translate("Server", "Server", N..))
+        info_lb.sT..(_translate("Server", "IP:", N..))
 

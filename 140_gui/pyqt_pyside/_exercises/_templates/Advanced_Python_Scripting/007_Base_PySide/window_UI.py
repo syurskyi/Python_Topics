@@ -45,7 +45,7 @@ c_ Ui_Form(object
         ?C...QMetaObject.connectSlotsByName(Form)
 
     ___ retranslateUi , Form
-        Form.setWindowTitle(_translate("Form", "Form", None))
-        pB__.sT..(_translate("Form", "PushButton", None))
-        pushButton_2.sT..(_translate("Form", "PushButton", None))
+        Form.setWindowTitle(_translate("Form", "Form", N..))
+        pB__.sT..(_translate("Form", "PushButton", N..))
+        pushButton_2.sT..(_translate("Form", "PushButton", N..))
 

@@ -1,9 +1,9 @@
-____ PySide.?C.. _____ _
-____ PySide.?G.. _____ _
+____ ?.?C.. _____ _
+____ ?.?G.. _____ _
 
 c_ simpleWindow(?W..
     ___  -  
-        super(simpleWindow, self). -
+        s__(simpleWindow, self). -
         ly _ QVBoxLayout
         btn  _ ?PB..('Open')
         ly.addWidget(btn)
@@ -25,7 +25,7 @@ c_ simpleWindow(?W..
         ret _ msgBox.exec_
         print ret __ QMessageBox.Save
 
-__ __name__ __ '__main__':
+__ _____ __ ______
     app _ ?A..([])
     w _ simpleWindow
     w.s..

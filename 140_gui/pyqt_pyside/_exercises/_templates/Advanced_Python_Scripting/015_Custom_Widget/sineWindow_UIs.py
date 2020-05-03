@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ PySide _____ ?C.., ?G..
+____ ? _____ ?C.., ?G..
 
 c_ Ui_MainWindow(object
     ___ setupUi , MainWindow
@@ -71,13 +71,13 @@ c_ Ui_MainWindow(object
         ?C...QMetaObject.connectSlotsByName(MainWindow)
 
     ___ retranslateUi , MainWindow
-        MainWindow.setWindowTitle(?G...?A...translate("MainWindow", "MainWindow", None, ?G...?A...UnicodeUTF8))
-        lenght_label.sT..(?G...?A...translate("MainWindow", "Length", None, ?G...?A...UnicodeUTF8))
-        length_value_label.sT..(?G...?A...translate("MainWindow", "0", None, ?G...?A...UnicodeUTF8))
-        height_label.sT..(?G...?A...translate("MainWindow", "Height", None, ?G...?A...UnicodeUTF8))
-        height_value_label.sT..(?G...?A...translate("MainWindow", "0", None, ?G...?A...UnicodeUTF8))
-        width_label.sT..(?G...?A...translate("MainWindow", "Width", None, ?G...?A...UnicodeUTF8))
-        width_value_label.sT..(?G...?A...translate("MainWindow", "1", None, ?G...?A...UnicodeUTF8))
-        grid_label.sT..(?G...?A...translate("MainWindow", "Grid", None, ?G...?A...UnicodeUTF8))
-        grid_value_label.sT..(?G...?A...translate("MainWindow", "3", None, ?G...?A...UnicodeUTF8))
+        MainWindow.setWindowTitle(?G...?A...translate("MainWindow", "MainWindow", N.., ?G...?A...UnicodeUTF8))
+        lenght_label.sT..(?G...?A...translate("MainWindow", "Length", N.., ?G...?A...UnicodeUTF8))
+        length_value_label.sT..(?G...?A...translate("MainWindow", "0", N.., ?G...?A...UnicodeUTF8))
+        height_label.sT..(?G...?A...translate("MainWindow", "Height", N.., ?G...?A...UnicodeUTF8))
+        height_value_label.sT..(?G...?A...translate("MainWindow", "0", N.., ?G...?A...UnicodeUTF8))
+        width_label.sT..(?G...?A...translate("MainWindow", "Width", N.., ?G...?A...UnicodeUTF8))
+        width_value_label.sT..(?G...?A...translate("MainWindow", "1", N.., ?G...?A...UnicodeUTF8))
+        grid_label.sT..(?G...?A...translate("MainWindow", "Grid", N.., ?G...?A...UnicodeUTF8))
+        grid_value_label.sT..(?G...?A...translate("MainWindow", "3", N.., ?G...?A...UnicodeUTF8))
 

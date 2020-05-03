@@ -1,9 +1,9 @@
-____ PySide.?C.. _____ _
-____ PySide.?G.. _____ _
+____ ?.?C.. _____ _
+____ ?.?G.. _____ _
 
 c_ dialogClass(?D..
     ___  -
-        super(dialogClass, self). -
+        s__(dialogClass, self). -
         ly _ QVBoxLayout
         label _ QLineEdit
         ly.addWidget(label)
@@ -14,7 +14,7 @@ c_ dialogClass(?D..
         cancel_btn _ ?PB..('Cancel')
         ly.addWidget(cancel_btn)
 
-        ok_btn.c___.c..(accept)
+        ok_btn.c___.c..(a..)
         cancel_btn.c___.c..(reject)
 
     ___ getData

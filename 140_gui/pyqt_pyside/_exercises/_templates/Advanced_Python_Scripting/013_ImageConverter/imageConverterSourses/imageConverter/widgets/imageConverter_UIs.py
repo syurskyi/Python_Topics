@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ PySide _____ ?C.., ?G..
+____ ? _____ ?C.., ?G..
 
 c_ Ui_imageConverter(object
     ___ setupUi , imageConverter
@@ -54,9 +54,9 @@ c_ Ui_imageConverter(object
         ?C...QMetaObject.connectSlotsByName(imageConverter)
 
     ___ retranslateUi , imageConverter
-        imageConverter.setWindowTitle(?G...?A...translate("imageConverter", "MainWindow", None, ?G...?A...UnicodeUTF8))
-        iconvert_lb.sT..(?G...?A...translate("imageConverter", "Path", None, ?G...?A...UnicodeUTF8))
-        browseIconvert_btn.sT..(?G...?A...translate("imageConverter", "...", None, ?G...?A...UnicodeUTF8))
-        browseOut_btn.sT..(?G...?A...translate("imageConverter", "...", None, ?G...?A...UnicodeUTF8))
-        start_btn.sT..(?G...?A...translate("imageConverter", "Strat", None, ?G...?A...UnicodeUTF8))
+        imageConverter.setWindowTitle(?G...?A...translate("imageConverter", "MainWindow", N.., ?G...?A...UnicodeUTF8))
+        iconvert_lb.sT..(?G...?A...translate("imageConverter", "Path", N.., ?G...?A...UnicodeUTF8))
+        browseIconvert_btn.sT..(?G...?A...translate("imageConverter", "...", N.., ?G...?A...UnicodeUTF8))
+        browseOut_btn.sT..(?G...?A...translate("imageConverter", "...", N.., ?G...?A...UnicodeUTF8))
+        start_btn.sT..(?G...?A...translate("imageConverter", "Strat", N.., ?G...?A...UnicodeUTF8))
 

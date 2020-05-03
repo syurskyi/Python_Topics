@@ -45,6 +45,6 @@ c_ Ui_example(object
         ?C...QMetaObject.connectSlotsByName(example)
 
     ___ retranslateUi , example
-        example.setWindowTitle(_translate("example", "Item List", None))
-        additem_btn.sT..(_translate("example", "Add", None))
+        example.setWindowTitle(_translate("example", "Item List", N..))
+        additem_btn.sT..(_translate("example", "Add", N..))
 

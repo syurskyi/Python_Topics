@@ -1,17 +1,17 @@
 _____ ___
 _____ os
-____ PySide.?C.. _____ _
-____ PySide.?G.. _____ _
+____ ?.?C.. _____ _
+____ ?.?G.. _____ _
 
-c_ fileListClass(QListWidget
+c_ fileListClass(?LW..
     ___  -  , parent
-        super(fileListClass, self). - (parent)
+        s__(fileListClass, self). - (parent)
         setAcceptDrops(T..)
         pathList _ []
 
     ___ appendImage , path
         path _ path.replace('/', '\\')
-        __ not path __ pathList:
+        __ no. path __ pathList:
             name _ os.path.basename(path)
             item _ ?LWI..
             item.sT..(name)
@@ -21,19 +21,19 @@ c_ fileListClass(QListWidget
 
     ___ dragEnterEvent , event
         __ event.mimeData.hasUrls(
-            event.accept
+            event.a..
         ____
             event.ignore
 
     ___ dragMoveEvent , event
         __ event.mimeData.hasUrls(
-            event.accept
+            event.a..
         ____
             event.ignore
 
 c_ resourceCompileClass(?M..
     ___  -
-        super(resourceCompileClass, self). - 
+        s__(resourceCompileClass, self). -
         setWindowTitle('Resource Compiler')
         resize(250, 300)
         w _ ?W..

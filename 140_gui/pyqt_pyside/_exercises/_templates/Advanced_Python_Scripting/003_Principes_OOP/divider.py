@@ -12,7 +12,7 @@ c_ dividerClass(object
             print 'Wrong value'
 
     ___ __checkValue , val
-        r_ not val __ 0
+        r_ no. val __ 0
 
 d _ dividerClass
 d.setDivider(2)

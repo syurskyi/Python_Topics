@@ -1,5 +1,5 @@
-____ PySide.?C.. _____ _
-____ PySide.?G.. _____ _
+____ ?.?C.. _____ _
+____ ?.?G.. _____ _
 _____  iconWidget_UIs __ ui
 ____ icons.icons _____ icons
 _____ random, os
@@ -10,7 +10,7 @@ ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID('mycompany.myprodu
 
 c_ iconWidgetClass(?M.., ui.Ui_MainWindow
     ___  -  
-        super(iconWidgetClass, self). - 
+        s__(iconWidgetClass, self). -
         setupUi
         # ui
         setWindowIcon(QIcon(icons['create']))
@@ -39,8 +39,8 @@ c_ iconWidgetClass(?M.., ui.Ui_MainWindow
 
         list_lwd.sVM..(QListView.IconMode)
         list_lwd.setIconSize(QSize(64,64))
-        list_lwd.setResizeMode(QListWidget.ResizeMode.Adjust)
-        list_lwd.setDragDropMode(QAbstractItemView.NoDragDrop)
+        list_lwd.setResizeMode(?LW...ResizeMode.Adjust)
+        list_lwd.sDDM..(QAbstractItemView.NoDragDrop)
 
         #connects
         fill_btn.c___.c..(filList)
@@ -70,7 +70,7 @@ c_ iconWidgetClass(?M.., ui.Ui_MainWindow
     ___ getRandomIcon 
         r_ QIcon(icons[random.choice(['item1','item2','item3'])])
 
-__ __name__ __ '__main__':
+__ _____ __ ______
     app _ ?A..([])
     w _ iconWidgetClass
     w.s..

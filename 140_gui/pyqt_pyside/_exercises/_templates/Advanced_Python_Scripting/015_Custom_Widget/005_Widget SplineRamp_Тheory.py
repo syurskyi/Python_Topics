@@ -1,9 +1,9 @@
-____ PySide.?C.. _____ _
-____ PySide.?G.. _____ _
+____ ?.?C.. _____ _
+____ ?.?G.. _____ _
 
 c_ splineRampWidget(?W..
     ___  -
-        super(splineRampWidget, self). - 
+        s__(splineRampWidget, self). -
         resize(300, 200)
 
         lineWidth _ 3
@@ -15,7 +15,7 @@ c_ splineRampWidget(?W..
         factor1 _ 0.0
         factor2 _ 1.0
 
-        dragged _ None
+        dragged _ N..
 
         region1 _ ?R..
         region2 _ ?R..
@@ -63,22 +63,22 @@ c_ splineRampWidget(?W..
             dragged _ point1
         ____ region2.contains(event.p..()):
             dragged _ point2
-        super(splineRampWidget, self).mousePressEvent(event)
+        s__(splineRampWidget, self).mousePressEvent(event)
 
     ___ mouseMoveEvent , event
         # print self.dragged
-        __ not dragged is None:
+        __ no. dragged __ N..:
             y _ event.p...y
             s _ size
             dragged.setY(min(max(y, 1), s.height()))
             update
-        super(splineRampWidget, self).mouseMoveEvent(event)
+        s__(splineRampWidget, self).mouseMoveEvent(event)
 
     ___ mouseReleaseEvent , event
-        dragged _ None
+        dragged _ N..
         updateRegions
         update
-        super(splineRampWidget, self).mouseReleaseEvent(event)
+        s__(splineRampWidget, self).mouseReleaseEvent(event)
 
     ___ resizeEvent , event
 
@@ -87,9 +87,9 @@ c_ splineRampWidget(?W..
         point2.setX(event.size.width())
         updateRegions
         update
-        super(splineRampWidget, self).resizeEvent(event)
+        s__(splineRampWidget, self).resizeEvent(event)
 
-__ __name__ __ '__main__':
+__ _____ __ ______
     app _ ?A..([])
     w _ splineRampWidget
     w.s..

@@ -1,13 +1,13 @@
 _____ ___
 ____ pytube _____ YouTube
 ____ math _____ _
-____ PySide.?C.. _____ _
-____ PySide.?G.. _____ _
+____ ?.?C.. _____ _
+____ ?.?G.. _____ _
 
 
 c_ Form(?D..
     ___  -  , parent_None
-        super(Form, self). - (parent)
+        s__(Form, self). - (parent)
 
         intext _ QTextEdit
         outtext _ QTextBrowser

@@ -1,9 +1,9 @@
-____ PySide.?G.. _____ _
+____ ?.?G.. _____ _
 # from PyQt4.QtGui import *
 
 c_ simpleWindow(?W..
     ___  -  
-        super(simpleWindow, self). -
+        s__(simpleWindow, self). -
         ly _ QVBoxLayout
         btn  _ ?PB..('Open')
         ly.addWidget(btn)
@@ -15,7 +15,7 @@ c_ simpleWindow(?W..
         d _ ?FD__.gOFN.. , 'Set folder', 'c:/tmp', _filter)
         print d
 
-__ __name__ __ '__main__':
+__ _____ __ ______
     app _ ?A..([])
     w _ simpleWindow
     w.s..
