@@ -31,7 +31,7 @@ c_ fileListClass(QListWidget
         ____
             event.ignore
 
-c_ resourceCompileClass(QMainWindow
+c_ resourceCompileClass(?M..
     ___  -
         super(resourceCompileClass, self). - 
         setWindowTitle('Resource Compiler')

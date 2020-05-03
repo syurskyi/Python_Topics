@@ -248,7 +248,7 @@ c_ pad1(?G...QGraphicsEllipseItem
         # self.updateColor("Blue")
 
 
-c_ mainWindow(?G...QMainWindow
+c_ mainWindow(?G...?M..
     ___  -  , parent_None, flag_0
         super(mainWindow, self). - (parent)
 

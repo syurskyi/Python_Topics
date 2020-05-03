@@ -2,7 +2,7 @@ ____ PySide.?C.. _____ _
 ____ PySide.?G.. _____ _
 
 
-c_ WindowClass(QMainWindow
+c_ WindowClass(?M..
     ___  -  
         super(WindowClass, self). - 
         w _ ?W..

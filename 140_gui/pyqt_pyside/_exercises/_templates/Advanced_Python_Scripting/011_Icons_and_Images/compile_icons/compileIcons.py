@@ -46,7 +46,7 @@ c_ fileListClass(QListWidget
                     pathList.remove(i.data(32))
                 tI..(i.row())
 
-c_ resourceCompileClass(QMainWindow
+c_ resourceCompileClass(?M..
     ___  -
         super(resourceCompileClass, self). - 
         setWindowTitle('Resource Compiler')

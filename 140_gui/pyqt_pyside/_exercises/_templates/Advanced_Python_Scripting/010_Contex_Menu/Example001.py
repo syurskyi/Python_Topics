@@ -1,7 +1,7 @@
 ____ PySide _____ ?C.., ?G..
 
 
-c_ MainWindow(?G...QMainWindow
+c_ MainWindow(?G...?M..
     ___  -  
         super(MainWindow, self). - 
 

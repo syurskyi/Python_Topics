@@ -6,7 +6,7 @@ ____ widgets _____ filesWidget
 
 
 
-c_ imageConverterClass(QMainWindow, ui.Ui_imageConverter
+c_ imageConverterClass(?M.., ui.Ui_imageConverter
     ___  -  
         super(imageConverterClass, self). -
         setupUi

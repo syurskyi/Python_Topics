@@ -1,10 +1,10 @@
 _____ ___
-____ ?.?W.. _____ QMainWindow, ?A..
+____ ?.?W.. _____ ?M.., ?A..
 ____ ?.?G.. _____ QPainter
 
 ____ demoToolBars _____ *
 
-c_ AppWindow(QMainWindow
+c_ AppWindow(?M..
     ___  -
         s__. - 
         ui _ Ui_MainWindow

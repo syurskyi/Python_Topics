@@ -5,7 +5,7 @@ _____ os
 
 style _ os.path.join(os.path.dirname(__file__), 'style.css')
 
-c_ styleWidgetClass(QMainWindow, ui.Ui_MainWindow
+c_ styleWidgetClass(?M.., ui.Ui_MainWindow
     ___  -  
         super(styleWidgetClass, self). -
         setWindowFlags(Qt.WindowStaysOnTopHint)

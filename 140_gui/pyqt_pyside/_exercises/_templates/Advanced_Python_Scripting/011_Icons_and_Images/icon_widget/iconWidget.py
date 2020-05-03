@@ -8,7 +8,7 @@ ____ icons _____ icons_rcs
 ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID('mycompany.myproduct.subproduct.version')
 
 
-c_ iconWidgetClass(QMainWindow, ui.Ui_MainWindow
+c_ iconWidgetClass(?M.., ui.Ui_MainWindow
     ___  -  
         super(iconWidgetClass, self). - 
         setupUi
@@ -37,7 +37,7 @@ c_ iconWidgetClass(QMainWindow, ui.Ui_MainWindow
                                                Qt.SmoothTransformation )
         image_lb.setPixmap(pix)
 
-        list_lwd.setViewMode(QListView.IconMode)
+        list_lwd.sVM..(QListView.IconMode)
         list_lwd.setIconSize(QSize(64,64))
         list_lwd.setResizeMode(QListWidget.ResizeMode.Adjust)
         list_lwd.setDragDropMode(QAbstractItemView.NoDragDrop)
