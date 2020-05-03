@@ -2,7 +2,7 @@ _____ ___
 ____ ?.?W.. _____ ?M.., ?A..
 ____ ?.?G.. _____ ?P..
 
-____ demoToolBars _____ *
+____ demoToolBars _____ _
 
 c_ AppWindow(?M..
     ___  -
@@ -36,7 +36,7 @@ c_ AppWindow(?M..
         qp.e..
         
     ___ mousePressEvent , event
-        __ event.buttons & ?C...Qt.LeftButton:
+        __ event.buttons & ?C...__.LeftButton:
             pos1[0], pos1[1] _ event.pos.x, event.pos.y
                         
     ___ mouseReleaseEvent , event

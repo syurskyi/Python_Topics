@@ -24,7 +24,7 @@ c_ Ui_MainWindow(object
         pB__.setObjectName("pushButton")
         verticalLayout.addWidget(pB__)
         horizontalSlider _ ?G...QSlider(centralwidget)
-        horizontalSlider.setOrientation(?C...Qt.Horizontal)
+        horizontalSlider.setOrientation(?C...__.Horizontal)
         horizontalSlider.setObjectName("horizontalSlider")
         verticalLayout.addWidget(horizontalSlider)
         checkBox _ ?G...QCheckBox(centralwidget)

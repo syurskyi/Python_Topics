@@ -7,7 +7,7 @@ ___ convert(src, trg_None
     __ trg:
         __ not os.path.exists(trg
             os.makedirs(trg)
-        elif os.path.isfile(trg
+        ____ os.path.isfile(trg
             trg _ os.path.dirname(trg)
         basename _ os.path.basename(src)
         name, ext _ os.path.splitext(basename)

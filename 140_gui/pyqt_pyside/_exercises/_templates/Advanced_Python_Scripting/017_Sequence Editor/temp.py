@@ -3,8 +3,8 @@ A viewer for all audio items in the song.
 """
 _____ ___
 ____ PyQt4 _____ ?G.., ?C..
-colors _ [?C...Qt.blue,
- ?C...Qt.green,
+colors _ [?C...__.blue,
+ ?C...__.green,
  ?C...Qt.red,
  ?C...Qt.yellow]
 
@@ -89,7 +89,7 @@ c_ timeline(?G...QGraphicsView
             f_number.setBrush(?C...Qt.white)
 
     ___ draw_grid 
-        f_pen _ ?G...QPen
+        f_pen _ ?G...?P..
         ___ i in range(1, total_tracks + 1
             f_line _ ?G...QGraphicsLineItem(0, 0, viewer_size, 0)
             f_line.setPos(0, header_height + padding + item_height * i)

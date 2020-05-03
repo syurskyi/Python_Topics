@@ -35,7 +35,7 @@ c_ Ui_settingsDialog(object
         table.setRowCount(0)
         verticalLayout.addWidget(table)
         buttonBox _ ?G...QDialogButtonBox(settingsDialog)
-        buttonBox.setOrientation(?C...Qt.Horizontal)
+        buttonBox.setOrientation(?C...__.Horizontal)
         buttonBox.setStandardButtons(?G...QDialogButtonBox.Cancel|?G...QDialogButtonBox.Ok)
         buttonBox.setObjectName(_fromUtf8("buttonBox"))
         verticalLayout.addWidget(buttonBox)

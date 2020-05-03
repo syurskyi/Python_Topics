@@ -54,7 +54,7 @@ QT_PREFERRED_BINDING _ os.getenv("QT_PREFERRED_BINDING", "")
 QT_SIP_API_HINT _ os.getenv("QT_SIP_API_HINT")
 
 # Reference to Qt.py
-Qt _ ___.modules[__name__]
+__ _ ___.modules[__name__]
 __.QtCompat _ types.ModuleType("QtCompat")
 
 ___
@@ -863,7 +863,7 @@ ___ _wrapinstance(func, ptr, base_None
         __ hasattr(__.?W.., class_name
             base _ getattr(__.?W.., class_name)
 
-        elif hasattr(__.?W.., super_class_name
+        ____ hasattr(__.?W.., super_class_name
             base _ getattr(__.?W.., super_class_name)
 
         ____
@@ -885,7 +885,7 @@ ___ _reassign_misplaced_members(binding
         dst_module, dst_member _ dst.split(".")
 
         ___
-            src_object _ getattr(Qt, dst_module)
+            src_object _ getattr(__, dst_module)
         _____ AttributeError:
             # Skip reassignment of non-existing members.
             # This can happen if a request was made to
@@ -893,7 +893,7 @@ ___ _reassign_misplaced_members(binding
             # if QtWidgets isn't available on the target platform.
             continue
 
-        dst_value _ getattr(getattr(Qt, "_" + src_module), src_member)
+        dst_value _ getattr(getattr(__, "_" + src_module), src_member)
 
         setattr(
             src_object,
@@ -934,7 +934,7 @@ ___ _build_compatibility_members(binding, decorators_None
         ___ target, binding in bindings.items(
             namespaces _ binding.split('.')
             ___
-                src_object _ getattr(Qt, "_" + namespaces[0])
+                src_object _ getattr(__, "_" + namespaces[0])
             _____ AttributeError __ e:
                 _log("QtCompat: AttributeError: %s" % e)
                 # Skip reassignment of non-existing members.
@@ -960,7 +960,7 @@ ___ _build_compatibility_members(binding, decorators_None
 
         # Create the QtCompat class and install it into the namespace
         compat_class _ type(classname, (_QtCompat,), attrs)
-        setattr(Qt.QtCompat, classname, compat_class)
+        setattr(__.QtCompat, classname, compat_class)
 
 
 ___ _pyside2(
@@ -976,7 +976,7 @@ ___ _pyside2(
     _____ PySide2 __ module
     _setup(module, ["QtUiTools"])
 
-    Qt.__binding_version__ _ module.__version__
+    __.__binding_version__ _ module.__version__
 
     ___
         ___
@@ -986,7 +986,7 @@ ___ _pyside2(
             # After merge of PySide and shiboken, May 2017
             ____ PySide2 _____ shiboken2
 
-        Qt.QtCompat.wrapInstance _ (
+        __.QtCompat.wrapInstance _ (
             lambda ptr, base_None: _wrapinstance(
                 shiboken2.wrapInstance, ptr, base)
         )
@@ -1250,7 +1250,7 @@ ___ _loadUi(uifile, baseinstance_None
     __ hasattr(Qt, "_uic"
         r_ Qt._uic.loadUi(uifile, baseinstance)
 
-    elif hasattr(Qt, "_QtUiTools"
+    ____ hasattr(Qt, "_QtUiTools"
         # Implement `PyQt5.uic.loadUi` for PySide(2)
 
         c_ _UiLoader(Qt._QtUiTools.QUiLoader

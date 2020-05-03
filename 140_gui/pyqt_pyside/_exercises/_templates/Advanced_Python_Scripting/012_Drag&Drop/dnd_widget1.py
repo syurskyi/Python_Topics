@@ -18,7 +18,7 @@ c_ listWidgetClass(QListWidget
                                                # i etot event dolzen skazat' mozet li nash event eti dannue prinjat'
         __ mimedata.hasText(
             print 'text'
-        elif mimedata.hasUrls(
+        ____ mimedata.hasUrls(
             print 'urls'
 
     ___ dragEnterEvent , event

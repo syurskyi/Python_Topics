@@ -40,7 +40,7 @@ c_ ImageWidget(?G...?W..
         bg_color _ ?G...?C..(50, 50, 50)
         hightlight _ ?G...?C..(255, 255, 255, 100)
         edge_size _ 5
-        pen_selected _ ?G...QPen(?G...?C..(255, 255, 0))
+        pen_selected _ ?G...?P..(?G...?C..(255, 255, 0))
         pen_selected.setWidth(edge_size)
         pen_selected.setJoinStyle(?C...__.MiterJoin)
 
@@ -86,7 +86,7 @@ c_ ImageWidget(?G...?W..
         __ isHightlight an. not selected:
             painter.fillRect(rect, hightlight)
         # draw name
-        painter.setPen(?G...QPen(?G...?C..(255, 255, 255)))
+        painter.setPen(?G...?P..(?G...?C..(255, 255, 255)))
         name_font.setPixelSize(name_height)
         painter.sF..(name_font)
         # 脚标字符
@@ -101,16 +101,16 @@ c_ ImageWidget(?G...?W..
             painter.fillRect(0, 0, width, title_height, ?G...?C..(40, 40, 40, 40))
             __ status __ 1:
                 painter.setBrush(?G...QBrush(?G...?C..(255, 0, 0)))
-            elif status __ 2:
+            ____ status __ 2:
                 painter.setBrush(?G...QBrush(?G...?C..(0, 255, 0)))
-            elif status __ 3:
+            ____ status __ 3:
                 painter.setBrush(?G...QBrush(?G...?C..(0, 0, 255)))
             painter.drawConvexPolygon(p1, p2, p3)
 
         __ version:
             version_x _ width - edge_size - name_height * 1.5
             version_y _ name_height
-            painter.setPen(?G...QPen(?G...?C..(255, 255, 255)))
+            painter.setPen(?G...?P..(?G...?C..(255, 255, 255)))
             painter.drawText(version_x, version_y, '%s' % version)
 
         # draw selected
@@ -248,13 +248,13 @@ c_ ImageContainer(?G...QFrame
         widget_w +_ mount
         __ widget_w > max_height:
             widget_w _ max_height
-        elif widget_w < min_width:
+        ____ widget_w < min_width:
             widget_w _ min_width
 
         widget_h +_ mount
         __ widget_h > max_height:
             widget_h _ max_height
-        elif widget_h < min_width:
+        ____ widget_h < min_width:
             widget_h _ min_width
 
         ___ a __ widgets:

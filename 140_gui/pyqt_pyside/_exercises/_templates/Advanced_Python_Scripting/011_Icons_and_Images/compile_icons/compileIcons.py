@@ -39,7 +39,7 @@ c_ fileListClass(QListWidget
             event.ignore
 
     ___ keyPressEvent , event
-        __ event.key __ Qt.Key_Delete:
+        __ event.key __ __.Key_Delete:
             sel _ selectedIndexes
             ___ i __ reversed(sel
                 __ i.data(32) in pathList:

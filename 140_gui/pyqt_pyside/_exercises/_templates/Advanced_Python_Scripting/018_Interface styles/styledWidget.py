@@ -9,7 +9,7 @@ style _ os.path.j..(os.path.dirname(__file__), 'style.css')
 c_ styleWidgetClass(?M.., ui.Ui_MainWindow
     ___  -  
         super(styleWidgetClass, self). - 
-        setWindowFlags(Qt.WindowStaysOnTopHint)
+        setWindowFlags(__.WindowStaysOnTopHint)
         setupUi
         treeWidget.setAlternatingRowColors(1)
         pB__.c___.c..(applyStyle)

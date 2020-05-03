@@ -17,7 +17,7 @@ c_ settings(
                     key, value _ line.split('=')
                     __ value.isdigit(
                         value _ int(value)
-                    elif value.replace('.','').isdigit an. value.count('.') __ 1:
+                    ____ value.replace('.','').isdigit an. value.count('.') __ 1:
                         value _ fl..(value)
                     data[key] _ value
             r_ data

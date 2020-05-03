@@ -29,7 +29,7 @@ c_ vector(
     ___ __mul__ , other
         __ isinstance(other, int) or isinstance(other, fl..
             r_ vector(x * other, y * other, z * other)
-        elif isinstance( other, vector
+        ____ isinstance( other, vector
             r_ vector(x * other.x, y * other.y, z * other.z)
 
     ___ __call__
@@ -40,9 +40,9 @@ c_ vector(
             __ 0 <_ item <_2:
                 __ item __ 0:
                     r_ x
-                elif item __ 1:
+                ____ item __ 1:
                     r_ y
-                elif item __ 2:
+                ____ item __ 2:
                     r_ z
             ____
                 raise Exception('Value out of range, use 0, 1 or 2')
@@ -54,9 +54,9 @@ c_ vector(
             __ key __ [0,1,2]:
                 __ key __ 0:
                     x _ value
-                elif key __ 1:
+                ____ key __ 1:
                     y _ value
-                elif key __ 2:
+                ____ key __ 2:
                     z _ value
             ____
                 raise Exception('Value out of range, use 0, 1 or 2')

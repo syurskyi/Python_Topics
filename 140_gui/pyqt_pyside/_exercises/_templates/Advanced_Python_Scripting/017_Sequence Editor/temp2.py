@@ -107,12 +107,12 @@ c_ pad1(?G...QGraphicsEllipseItem
 
         super(pad1, self).mousePressEvent(e)
 
-        __ e.button __ ?C...Qt.LeftButton:
+        __ e.button __ ?C...__.LeftButton:
             print('left')
             # self.TriggerPad()
             startSong
 
-        __ e.button __ ?C...Qt.RightButton:
+        __ e.button __ ?C...__.RightButton:
             print('midi')
             print(pad1.__counter)
             ___
@@ -328,7 +328,7 @@ c_ mainWindow(?G...?M..
         statusBar.showMessage(midiNoteInput)
 
         # add widget to layout
-        splitter2 _ ?G...QSplitter(?C...Qt.Vertical)
+        splitter2 _ ?G...QSplitter(?C...__.Vertical)
         splitter2.addWidget(view)
         splitter2.addWidget(statusBar)
 

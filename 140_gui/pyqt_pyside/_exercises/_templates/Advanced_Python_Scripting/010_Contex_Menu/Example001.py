@@ -14,7 +14,7 @@ c_ MainWindow(?G...?M..
 
         infoLabel _ ?G...QLabel(
                 "<i>Choose a menu option, or right-click to invoke a context menu</i>",
-                alignment_?C...Qt.AlignCenter)
+                alignment_?C...__.AlignCenter)
         infoLabel.setFrameStyle(?G...QFrame.StyledPanel | ?G...QFrame.Sunken)
 
         bottomFiller _ ?G...?W..

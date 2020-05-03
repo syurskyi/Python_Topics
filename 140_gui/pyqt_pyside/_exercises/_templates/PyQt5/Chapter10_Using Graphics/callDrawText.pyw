@@ -2,9 +2,9 @@ _____ ___
 
 ____ ?.?W.. _____ ?D.., ?A..
 ____ ?.?G.. _____ ?P.., ?C.., ?F..
-____ ?.?C.. _____ Qt
+____ ?.?C.. _____ __
 
-____ demoDrawText _____ *
+____ demoDrawText _____ _
 
 c_ MyForm(?D..
 
@@ -23,7 +23,7 @@ c_ MyForm(?D..
         qp.begin  
         qp.setPen(?C..(168, 34, 3))
         qp.sF..(?F..(fontName, fontSize))
-        qp.drawText(event.rect, Qt.AlignCenter, textToDraw)
+        qp.drawText(event.rect, __.AlignCenter, textToDraw)
         qp.e..
 
     ___ dispText

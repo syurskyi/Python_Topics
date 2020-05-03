@@ -3,7 +3,7 @@ _____ ___
 ____ ?.?W.. _____ ?D.., ?A..
 ____ ?.?G.. _____ ?P..
 
-____ demoDrawRectangle _____ *
+____ demoDrawRectangle _____ _
 
 c_ MyForm(?D..
     ___  -  
@@ -23,7 +23,7 @@ c_ MyForm(?D..
         qp.e..
         
     ___ mousePressEvent , event
-        __ event.buttons & ?C...Qt.LeftButton:
+        __ event.buttons & ?C...__.LeftButton:
             pos1[0], pos1[1] _ event.pos.x, event.pos.y
                         
     ___ mouseReleaseEvent , event

@@ -7,7 +7,7 @@ ____ PySide.?G.. _____ _
 c_ listWidgetClass(QListWidget
     ___  -
         super(listWidgetClass, self). -
-        setWindowFlags(Qt.WindowStaysOnTopHint)
+        setWindowFlags(__.WindowStaysOnTopHint)
         setDragDropMode(QAbstractItemView.DropOnly)
 
     ___ dropEvent , event

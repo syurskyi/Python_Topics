@@ -6,7 +6,7 @@ ____ PySide.?G.. _____ _
 c_ listWidgetClass(QListWidget
     ___  -
         super(listWidgetClass, self). -
-        setWindowFlags(Qt.WindowStaysOnTopHint)
+        setWindowFlags(__.WindowStaysOnTopHint)
         setDragDropMode(QAbstractItemView.DragDrop)
         setSelectionMode(QAbstractItemView.ExtendedSelection)
         files _ []
@@ -36,7 +36,7 @@ c_ listWidgetClass(QListWidget
         __ not path __ files:
             item _ ?LWI..
             item.sT..(os.path.basename(path))
-            item.setData(Qt.UserRole, path)
+            item.setData(__.UserRole, path)
             files.ap..(path)
 
 __ __name__ __ '__main__':

@@ -7,7 +7,7 @@ ____ PySide.?G.. _____ _
 c_ listWidgetClass(QListWidget
     ___  -  
         super(listWidgetClass, self). - 
-        setWindowFlags(Qt.WindowStaysOnTopHint)
+        setWindowFlags(__.WindowStaysOnTopHint)
         setDragDropMode(QAbstractItemView.DropOnly)
 
     ___ dropEvent , event
@@ -17,7 +17,7 @@ c_ listWidgetClass(QListWidget
             ___ f __ mimedata.urls(
                 print f.userName
                 print f.toLocalFile
-        elif mimedata.hasText(
+        ____ mimedata.hasText(
             print mimedata.t..
 
 

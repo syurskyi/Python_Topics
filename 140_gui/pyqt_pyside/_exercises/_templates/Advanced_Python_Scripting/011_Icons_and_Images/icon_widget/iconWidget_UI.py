@@ -66,7 +66,7 @@ c_ Ui_MainWindow(object
         MainWindow.setStatusBar(statusbar)
         toolBar _ ?G...QToolBar(MainWindow)
         toolBar.setObjectName(_fromUtf8("toolBar"))
-        MainWindow.addToolBar(?C...Qt.TopToolBarArea, toolBar)
+        MainWindow.addToolBar(?C...__.TopToolBarArea, toolBar)
         menuBar _ ?G...QMenuBar(MainWindow)
         menuBar.setGeometry(?C...?R..(0, 0, 237, 21))
         menuBar.setObjectName(_fromUtf8("menuBar"))

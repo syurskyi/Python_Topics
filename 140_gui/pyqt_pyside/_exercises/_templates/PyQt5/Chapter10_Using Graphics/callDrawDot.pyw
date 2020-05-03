@@ -1,9 +1,9 @@
 _____ ___
 
 ____ ?.?W.. _____ ?D.., ?A..
-____ ?.?G.. _____ ?P.., QPen
-____ ?.?C.. _____ Qt
-____ demoDrawDot _____ *
+____ ?.?G.. _____ ?P.., ?P..
+____ ?.?C.. _____ __
+____ demoDrawDot _____ _
 
 c_ MyForm(?D..
     ___  -
@@ -16,13 +16,13 @@ c_ MyForm(?D..
     ___ paintEvent , event
         qp _ ?P..
         qp.begin
-        pen _ QPen(Qt.black, 5)
+        pen _ ?P..(__.b.., 5)
         qp.setPen(pen)
         qp.drawPoint(pos1[0], pos1[1])
         qp.e..
         
     ___ mousePressEvent , event
-        __ event.buttons & ?C...Qt.LeftButton:
+        __ event.buttons & ?C...__.LeftButton:
             pos1[0], pos1[1] _ event.pos.x, event.pos.y
             update
                               

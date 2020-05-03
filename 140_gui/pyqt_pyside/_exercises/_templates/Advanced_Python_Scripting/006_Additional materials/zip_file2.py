@@ -34,7 +34,7 @@ ___ make_archive(zip_archive_file, directory, *args
             path _ os.path.j..(directory, item)
             __ os.path.isfile(path
                 zipf.w..(path, unicode(path, 'utf-8').e..('cp852'))
-            elif os.path.isdir(path
+            ____ os.path.isdir(path
                 __ not item __ args:
                     recursive_zip(zipf, path, *args)
 
@@ -67,9 +67,9 @@ ___ main(
         __ o __ '-h':
             usage
             ___.e..(0)
-        elif o __ '-f':
+        ____ o __ '-f':
             frm _ a
-        elif o __ '-t':
+        ____ o __ '-t':
             to _ a
 
     __ not(frm an. to

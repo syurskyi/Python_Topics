@@ -1,9 +1,9 @@
 _____ ___
 
 ____ ?.?W.. _____ ?D.., ?A..
-____ demoMouseClicks _____ *
+____ demoMouseClicks _____ _
 
-c_ MyForm(?D..
+c_ MyForm ?D..
     ___  -
         s__. - 
         ui _ ?
@@ -11,7 +11,7 @@ c_ MyForm(?D..
         s..
 
     ___ mousePressEvent , event
-        __ event.buttons & ?C...Qt.LeftButton:
+        __ event.buttons & ?C...__.LeftButton:
             x _ event.x
             y _ event.y    
             t.. _ "x: {0},  y: {1}".format(x, y)

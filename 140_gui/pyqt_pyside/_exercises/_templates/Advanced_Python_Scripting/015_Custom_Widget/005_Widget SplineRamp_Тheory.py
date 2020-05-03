@@ -38,20 +38,20 @@ c_ splineRampWidget(?W..
         painter _ ?P..
         painter.begin
         painter.setRenderHint(?P...Antialiasing)
-        painter.fillRect(event.rect, __.black)
+        painter.fillRect(event.rect, __.b..)
         path _ QPainterPath
         path.moveTo(point1)
         path.cubicTo(rec.width/2, point1.y,
                      rec.width/2, point2.y,
                      rec.width, point2.y())
-        painter.setPen(QPen(QBrush(__.white), lineWidth))
+        painter.setPen(?P..(QBrush(__.white), lineWidth))
         painter.drawPath(path)
         painter.setBrush(QBrush(__.white))
 
         painter.drawEllipse(point1, pointSize, pointSize)
         painter.drawEllipse(point2, pointSize, pointSize)
 
-        painter.setPen(QPen(QBrush(__.white), 1))
+        painter.setPen(?P..(QBrush(__.white), 1))
         painter.setBrush(__.NoBrush)
         painter.drawRect(region1)
         painter.drawRect(region2)
@@ -61,7 +61,7 @@ c_ splineRampWidget(?W..
         # print self.region1.contains(event.pos())
         __ region1.contains(event.pos()):
             dragged _ point1
-        elif region2.contains(event.pos()):
+        ____ region2.contains(event.pos()):
             dragged _ point2
         super(splineRampWidget, self).mousePressEvent(event)
 

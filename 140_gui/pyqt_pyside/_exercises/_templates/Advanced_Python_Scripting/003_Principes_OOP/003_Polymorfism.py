@@ -10,7 +10,7 @@ c_ vectorClass(object
 			                  y * other,
 			                  z * other)
 
-		elif isinstance(other, vectorClass
+		____ isinstance(other, vectorClass
 			r_ vectorClass(
 				x * other.x,
 				y * other.y,

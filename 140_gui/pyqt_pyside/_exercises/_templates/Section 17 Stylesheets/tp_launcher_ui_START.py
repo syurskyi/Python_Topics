@@ -25,11 +25,11 @@ ____ collections _____ defaultdict
 _____ os
 _____ ___
 
-_____ Qt
-____ Qt _____ ?W.., ?C.., ?G..
+_____ __
+____ __ _____ ?W.., ?C.., ?G..
 _____ tp_launcher_model
 
-QT_VER _ Qt.__binding__
+QT_VER _ __.__binding__
 PY_VER _ ___.version[:3]
 
 
@@ -111,8 +111,8 @@ c_ TP_Launcher_GUI(?W...?W..
 
         setWindowTitle('TPayne\'s Launcher ' + __version__)
         setWindowIcon(_tpl_icon)
-        flag _ ?C...Qt.WindowCloseButtonHint
-        setWindowFlags(?C...Qt.Window | flag)
+        flag _ ?C...__.WindowCloseButtonHint
+        setWindowFlags(?C...__.Window | flag)
         resize(190, 200)
 
     ___ _setup_header 

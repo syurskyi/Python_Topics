@@ -8,7 +8,7 @@ icon _ os.path.j..(os.path.dirname(__file__), 'drag.png')
 c_ listWidgetClass(QListWidget
     ___  -
         super(listWidgetClass, self). -
-        setWindowFlags(Qt.WindowStaysOnTopHint)
+        setWindowFlags(__.WindowStaysOnTopHint)
         setDragDropMode(QAbstractItemView.DragDrop)
         setSelectionMode(QAbstractItemView.ExtendedSelection)
         files _ []
@@ -45,20 +45,20 @@ c_ listWidgetClass(QListWidget
         mimedata _ QMimeData
         url _ []
         ___ i __ selectedItems(
-            url.ap..(i.data(Qt.UserRole))
+            url.ap..(i.data(__.UserRole))
         mimedata.setUrls([?U__.fromLocalFile(x) ___ x __ url])
         drag.setMimeData(mimedata)
         pix _ QPixmap(icon)
         drag.setPixmap(pix)
         r _ drag.exec_
-        __ r __ Qt.DropAction.MoveAction:
+        __ r __ __.DropAction.MoveAction:
             deleteSelected
 
     ___ addFile , path
         __ not path __ files:
             item _ ?LWI..
             item.sT..(os.path.basename(path))
-            item.setData(Qt.UserRole, path)
+            item.setData(__.UserRole, path)
             files.ap..(path)
 
     ___ deleteSelected
@@ -67,9 +67,9 @@ c_ listWidgetClass(QListWidget
             tI..(indexFromItem(s).row())
 
     ___ mousePressEvent , event
-        __ event.button __ Qt.MouseButton.RightButton:
+        __ event.button __ __.MouseButton.RightButton:
             pass
-        elif event.button __ Qt.MouseButton.LeftButton:
+        ____ event.button __ __.MouseButton.LeftButton:
             setDragDropMode(QAbstractItemView.NoDragDrop)
             super(listWidgetClass, self).mousePressEvent(event)
         ____

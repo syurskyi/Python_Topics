@@ -24,11 +24,11 @@ c_ simpleWindow(?W..
         table.setHorizontalHeaderLabels(['Name', 'Size'])
         ___ i, f __ enumerate(files
             item _ ?TWI..
-            item.setFlags(Qt.ItemIsEnabled | Qt.ItemIsSelectable)
+            item.setFlags(__.ItemIsEnabled | __.ItemIsSelectable)
             item.sT..(f)
             table.sI..(i, 0, item)
             item _ ?TWI..
-            item.setFlags(Qt.ItemIsEnabled | Qt.ItemIsSelectable)
+            item.setFlags(__.ItemIsEnabled | __.ItemIsSelectable)
             item.sT..(st.(os.stat(os.path.j..(path, f)).st_size) + ' bytes' )
             table.sI..(i, 1, item)
 

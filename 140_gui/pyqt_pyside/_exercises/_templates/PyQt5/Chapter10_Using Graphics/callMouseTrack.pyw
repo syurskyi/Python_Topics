@@ -1,6 +1,6 @@
 _____ ___
 ____ ?.?W.. _____ ?D.., ?A..
-____ demoMousetrack _____ *
+____ demoMousetrack _____ _
 
 c_ MyForm(?D..
     ___  -  

@@ -8,7 +8,7 @@ icon _ os.path.j..(os.path.dirname(__file__), 'drag.png')
 c_ listWidgetClass(QListWidget
     ___  -
         super(listWidgetClass, self). - 
-        setWindowFlags(Qt.WindowStaysOnTopHint)
+        setWindowFlags(__.WindowStaysOnTopHint)
         setDragDropMode(QAbstractItemView.DropOnly)
         setSelectionMode(QAbstractItemView.ExtendedSelection)
         files _ []
@@ -43,7 +43,7 @@ c_ listWidgetClass(QListWidget
         __ not path __ files:
             item _ ?LWI..
             item.sT..(os.path.basename(path))
-            item.setData(Qt.UserRole, path)
+            item.setData(__.UserRole, path)
             files.ap..(path)
 
     ___ deleteSelected
@@ -56,5 +56,5 @@ c_ listWidgetClass(QListWidget
         r_ files
 
     ___ keyPressEvent , event
-        __ event.key __ Qt.Key_Delete:
+        __ event.key __ __.Key_Delete:
             deleteSelected
