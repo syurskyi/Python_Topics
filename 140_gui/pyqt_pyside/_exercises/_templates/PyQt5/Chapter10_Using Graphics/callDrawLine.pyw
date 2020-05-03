@@ -18,7 +18,7 @@ c_ MyForm(?D..
         qp _ ?P..
         qp.begin     
         qp.drawLine(pos1[0], pos1[1], pos2[0], pos2[1])        
-        qp.end
+        qp.e..
         
     ___ mousePressEvent , event
         __ event.buttons & ?C...Qt.LeftButton:

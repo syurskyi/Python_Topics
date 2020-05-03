@@ -19,7 +19,7 @@ c_ MyForm(?D..
         pen _ QPen(Qt.black, 5)
         qp.setPen(pen)
         qp.drawPoint(pos1[0], pos1[1])
-        qp.end
+        qp.e..
         
     ___ mousePressEvent , event
         __ event.buttons & ?C...Qt.LeftButton:

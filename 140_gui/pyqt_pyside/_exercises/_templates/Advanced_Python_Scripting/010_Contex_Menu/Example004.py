@@ -1,10 +1,10 @@
 _____ ___
-____ PyQt4.?C.. _____ Qt
+____ PyQt4.?C.. _____ __
 ____ PyQt4.?G.. _____ _
 
 app _ ?A..([])
 tableWidget _ QTableWidget
-tW__.setContextMenuPolicy(Qt.CustomContextMenu)
+tW__.setContextMenuPolicy(__.CustomContextMenu)
 
 ___ openMenu(position
 

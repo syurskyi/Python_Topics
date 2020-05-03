@@ -29,11 +29,11 @@ c_ AppWindow(?M..
         __ toDraw__"circle":
             width _ pos2[0]-pos1[0]
             height _ pos2[1] - pos1[1]
-            rect _ ?C...QRect(pos1[0], pos1[1], width, height)
+            rect _ ?C...?R..(pos1[0], pos1[1], width, height)
             startAngle _ 0
             arcLength _ 360 *16
             qp.drawArc(rect, startAngle, arcLength)      
-        qp.end
+        qp.e..
         
     ___ mousePressEvent , event
         __ event.buttons & ?C...Qt.LeftButton:

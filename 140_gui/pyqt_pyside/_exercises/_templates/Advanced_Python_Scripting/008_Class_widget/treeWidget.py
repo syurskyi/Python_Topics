@@ -38,12 +38,12 @@ c_ simpleWindow(?W..
                 fillTree(item, fullpath)
                 item.setExpanded(1)
             ____
-                item.setFlags(Qt.ItemIsEnabled | Qt.ItemIsSelectable | Qt.ItemIsEditable)
-                item.setData(0, Qt.UserRole, {'path':os.path.normpath(fullpath)})
+                item.setFlags(__.ItemIsEnabled | __.ItemIsSelectable | __.ItemIsEditable)
+                item.setData(0, __.UserRole, {'path':os.path.normpath(fullpath)})
 
     ___ action , item
         print item.t..(0)
-        s _ item.data(0, Qt.UserRole)
+        s _ item.data(0, __.UserRole)
         print s
 
 

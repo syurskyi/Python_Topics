@@ -84,7 +84,7 @@ c_ Ui_MainWindow(object
         verticalLayout.addLayout(horizontalLayout)
         MainWindow.setCentralWidget(centralwidget)
         menubar _ ?G...QMenuBar(MainWindow)
-        menubar.setGeometry(?C...QRect(0, 0, 478, 21))
+        menubar.setGeometry(?C...?R..(0, 0, 478, 21))
         menubar.setObjectName("menubar")
         menuFile _ ?G...QMenu(menubar)
         menuFile.setObjectName("menuFile")

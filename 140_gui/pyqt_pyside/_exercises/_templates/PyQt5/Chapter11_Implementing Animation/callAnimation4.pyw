@@ -1,7 +1,7 @@
 _____ ___
 
 ____ ?.?W.. _____ ?D.., ?A..
-____ ?.?C.. _____ QRect, QPointF, QPropertyAnimation, pyqtProperty
+____ ?.?C.. _____ ?R.., QPointF, QPropertyAnimation, pyqtProperty
 ____ ?.?G.. _____ ?P.., QPainterPath
 
 ____ demoAnimation4 _____ _
@@ -22,7 +22,7 @@ c_ MyForm(?D..
         qp _ ?P..
         qp.begin
         qp.drawPath(path)
-        qp.end  
+        qp.e..
 
     ___ startAnimation 
         anim _ QPropertyAnimation(?.labelPic, b'pos')

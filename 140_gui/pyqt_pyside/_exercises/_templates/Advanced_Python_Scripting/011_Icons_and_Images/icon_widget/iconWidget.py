@@ -33,8 +33,8 @@ c_ iconWidgetClass(?M.., ui.Ui_MainWindow
         exit_act.setIcon(QIcon(icons['close']))
 
         pix _ QPixmap(icons['sphere']).scaled( 40, 40,
-                                               Qt.KeepAspectRatio,
-                                               Qt.SmoothTransformation )
+                                               __.KeepAspectRatio,
+                                               __.SmoothTransformation )
         image_lb.setPixmap(pix)
 
         list_lwd.sVM..(QListView.IconMode)

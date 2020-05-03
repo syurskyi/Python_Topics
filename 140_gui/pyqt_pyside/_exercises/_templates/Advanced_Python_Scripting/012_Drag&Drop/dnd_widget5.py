@@ -6,7 +6,7 @@ ____ PySide.?G.. _____ _
 c_ listWidgetClass(QListWidget
     ___  -  
         super(listWidgetClass, self). -
-        setWindowFlags(Qt.WindowStaysOnTopHint)
+        setWindowFlags(__.WindowStaysOnTopHint)
         setDragDropMode(QAbstractItemView.DropOnly)
         setSelectionMode(QAbstractItemView.ExtendedSelection)
         files _ []                            # eto peremenaja sozdajotsja dlja izbezanija sozdanija dyblikatov
@@ -37,14 +37,14 @@ c_ listWidgetClass(QListWidget
         mimedata _ QMimeData
         url _ []
         ___ i __ selectedItems(
-            url.ap..(i.data(Qt.UserRole))
+            url.ap..(i.data(__.UserRole))
         print url
 
     ___ addFile , path                              # fynkcija kotoraja prinimaet pyt', pyt' mu polychaem s Drop Event
         __ not path __ files:                        # hranitsja byfer yze dobavlennuh fajlov
             item _ ?LWI..                  # mu sozdajom novuj Item
             item.sT..(os.path.basename(path))          # otpravljaem imja fajla
-            item.setData(Qt.UserRole, path)               # polnuj pyt' fajla polozim v kastomnujy daty etogo fajla
+            item.setData(__.UserRole, path)               # polnuj pyt' fajla polozim v kastomnujy daty etogo fajla
             files.ap..(path)
 
 __ __name__ __ '__main__':

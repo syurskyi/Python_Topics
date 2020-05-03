@@ -24,7 +24,7 @@ c_ Ui_client(object
         horizontalLayout _ ?G...QHBoxLayout
         horizontalLayout.setObjectName("horizontalLayout")
         progress_sle _ ?G...QSlider(client)
-        progress_sle.setOrientation(?C...Qt.Horizontal)
+        progress_sle.setOrientation(?C...__.Horizontal)
         progress_sle.setObjectName("progress_sle")
         horizontalLayout.addWidget(progress_sle)
         label _ ?G...QLabel(client)

@@ -55,7 +55,7 @@ QT_SIP_API_HINT _ os.getenv("QT_SIP_API_HINT")
 
 # Reference to Qt.py
 Qt _ ___.modules[__name__]
-Qt.QtCompat _ types.ModuleType("QtCompat")
+__.QtCompat _ types.ModuleType("QtCompat")
 
 ___
     long
@@ -810,7 +810,7 @@ ___ _import_sub_module(module, name
 ___ _setup(module, extras
     """Install common submodules"""
 
-    Qt.__binding__ _ module.__name__
+    __.__binding__ _ module.__name__
 
     ___ name in list(_common_members) + extras:
         ___
@@ -819,13 +819,13 @@ ___ _setup(module, extras
         _____ ImportError:
             continue
 
-        setattr(Qt, "_" + name, submodule)
+        setattr(__, "_" + name, submodule)
 
         __ name not in extras:
             # Store reference to original binding,
             # but don't store speciality modules
             # such as uic or QtUiTools
-            setattr(Qt, name, _new_module(name))
+            setattr(__, name, _new_module(name))
 
 
 ___ _wrapinstance(func, ptr, base_None
@@ -851,20 +851,20 @@ ___ _wrapinstance(func, ptr, base_None
     """
 
     assert isinstance(ptr, long), "Argument 'ptr' must be of type <long>"
-    assert (base is None) or issubclass(base, Qt.?C...QObject), (
+    assert (base is None) or issubclass(base, __.?C...QObject), (
         "Argument 'base' must be of type <QObject>")
 
     __ base is None:
-        q_object _ func(long(ptr), Qt.?C...QObject)
+        q_object _ func(long(ptr), __.?C...QObject)
         meta_object _ q_object.metaObject
         class_name _ meta_object.className
         super_class_name _ meta_object.superClass.className
 
-        __ hasattr(Qt.?W.., class_name
-            base _ getattr(Qt.?W.., class_name)
+        __ hasattr(__.?W.., class_name
+            base _ getattr(__.?W.., class_name)
 
-        elif hasattr(Qt.?W.., super_class_name
-            base _ getattr(Qt.?W.., super_class_name)
+        elif hasattr(__.?W.., super_class_name
+            base _ getattr(__.?W.., super_class_name)
 
         ____
             base _ Qt.?C...QObject

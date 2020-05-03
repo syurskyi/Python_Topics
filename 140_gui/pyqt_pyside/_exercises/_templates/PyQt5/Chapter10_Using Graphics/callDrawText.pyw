@@ -24,7 +24,7 @@ c_ MyForm(?D..
         qp.setPen(?C..(168, 34, 3))
         qp.sF..(?F..(fontName, fontSize))
         qp.drawText(event.rect, Qt.AlignCenter, textToDraw)
-        qp.end  
+        qp.e..
 
     ___ dispText
         fontName_ui.listWidgetFont.cI__).t..

@@ -68,7 +68,7 @@ c_ Ui_MainWindow(object
         toolBar.setObjectName(_fromUtf8("toolBar"))
         MainWindow.addToolBar(?C...Qt.TopToolBarArea, toolBar)
         menuBar _ ?G...QMenuBar(MainWindow)
-        menuBar.setGeometry(?C...QRect(0, 0, 237, 21))
+        menuBar.setGeometry(?C...?R..(0, 0, 237, 21))
         menuBar.setObjectName(_fromUtf8("menuBar"))
         menuFile _ ?G...QMenu(menuBar)
         menuFile.setObjectName(_fromUtf8("menuFile"))

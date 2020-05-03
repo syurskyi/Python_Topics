@@ -6,7 +6,7 @@ ____ PySide.?G.. _____ _
 c_ listWidgetClass(QListWidget
     ___  -  
         super(listWidgetClass, self). - 
-        setWindowFlags(Qt.WindowStaysOnTopHint)          # #okno bydet vsegda poverh drygih okon
+        setWindowFlags(__.WindowStaysOnTopHint)          # #okno bydet vsegda poverh drygih okon
         setDragDropMode(QAbstractItemView.DropOnly)      # shto bu dropEvent zarabotal nado vklychit dlja etogo vidgeta setDragDropMode
 
     ___ dropEvent , event                # to shto proishodit kogda mu sbrasuvaem dannue na vidget

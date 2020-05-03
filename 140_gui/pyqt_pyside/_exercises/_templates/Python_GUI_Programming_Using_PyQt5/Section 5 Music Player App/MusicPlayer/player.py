@@ -1,7 +1,7 @@
 _____ ___,os
 ____ ?.?W.. _____ _
 ____ ?.?G.. _____ QIcon
-____ ?.?C.. _____ QSize,Qt,QTimer
+____ ?.?C.. _____ QSize,__,QTimer
 _____ random,t___
 ____ pygame _____ mixer
 ____ mutagen.mp3 _____ MP3
@@ -76,7 +76,7 @@ c_ Player(?W..
         muteButton.c___.c..(muteSound)
 
         # ####################Volume Slider#################
-        volumeSlider_QSlider(Qt.Horizontal)
+        volumeSlider_QSlider(__.Horizontal)
         volumeSlider.setToolTip("Volume")
         volumeSlider.sV..(70)
         volumeSlider.setMinimum(0)

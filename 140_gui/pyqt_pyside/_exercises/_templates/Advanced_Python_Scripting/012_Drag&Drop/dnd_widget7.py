@@ -8,7 +8,7 @@ icon _ os.path.j..(os.path.dirname(__file__), 'drag.png')
 c_ listWidgetClass(QListWidget
     ___  -  
         super(listWidgetClass, self). -
-        setWindowFlags(Qt.WindowStaysOnTopHint)
+        setWindowFlags(__.WindowStaysOnTopHint)
         setDragDropMode(QAbstractItemView.DragDrop)
         setSelectionMode(QAbstractItemView.ExtendedSelection  # vjlychaet vozmoznost' vudeljat' neskol'ko fajlov
         files _ []
@@ -46,7 +46,7 @@ c_ listWidgetClass(QListWidget
         mimedata _ QMimeData           # i sootvestvenno mimedata kotorue bydyt tam lezat'
         url _ []                         # potom nado sobrat' danue kotorue mu hotim pomestit' v ety mimedata a eto y nas pyti k fajlam iz vudelenuh fajlov
         ___ i __ selectedItems(   # dlja vudelenuh elementov mu zabiraem pyt' i kladjom v url
-            url.ap..(i.data(Qt.UserRole))
+            url.ap..(i.data(__.UserRole))
         print url
         mimedata.setUrls([?U__.fromLocalFile(x) ___ x __ url])  # kogda mu polychili pyti nam nado ih polozit' v mimedata. preobrazovuvaem strochky v klass QUrls
                                                                 # kazduj pyt' kotoruj est' v spiske preobrazovuvaetsja v QUrl. Generator vernjot nam spisok etih klassov
@@ -55,14 +55,14 @@ c_ listWidgetClass(QListWidget
         drag.setPixmap(pix)
         r _ drag.exec_                                        # exec_ kak iv dialogah vozvrachaet kakoj to rezyl'tat
         print r
-        __ r __ Qt.DropAction.MoveAction:                       # esli y nas yspesho proizvedeno peretaskivanie to mu ydaljaem nashi vudelenue items
+        __ r __ __.DropAction.MoveAction:                       # esli y nas yspesho proizvedeno peretaskivanie to mu ydaljaem nashi vudelenue items
             deleteSelected                               # metod deleteSelected
 
     ___ addFile , path
         __ not path __ files:
             item _ ?LWI..
             item.sT..(os.path.basename(path))
-            item.setData(Qt.UserRole, path)
+            item.setData(__.UserRole, path)
             files.ap..(path)
 
     ___ deleteSelected 

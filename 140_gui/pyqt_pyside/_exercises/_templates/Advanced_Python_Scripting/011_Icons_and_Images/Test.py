@@ -42,7 +42,7 @@ c_ ImageWidget(?G...?W..
         edge_size _ 5
         pen_selected _ ?G...QPen(?G...?C..(255, 255, 0))
         pen_selected.setWidth(edge_size)
-        pen_selected.setJoinStyle(?C...Qt.MiterJoin)
+        pen_selected.setJoinStyle(?C...__.MiterJoin)
 
     #        self.setToolTip('aaaa\nbbbb\ncccc')
 
@@ -97,7 +97,7 @@ c_ ImageWidget(?G...?W..
             p1 _ ?C...QPoint(0, 0)
             p2 _ ?C...QPoint(0, title_height)
             p3 _ ?C...QPoint(title_height, 0)
-            painter.setPen(?C...Qt.NoPen)
+            painter.setPen(?C...__.NoPen)
             painter.fillRect(0, 0, width, title_height, ?G...?C..(40, 40, 40, 40))
             __ status __ 1:
                 painter.setBrush(?G...QBrush(?G...?C..(255, 0, 0)))
@@ -116,7 +116,7 @@ c_ ImageWidget(?G...?W..
         # draw selected
         __ selected:
             painter.setPen(pen_selected)
-            painter.setBrush(?C...Qt.NoBrush)
+            painter.setBrush(?C...__.NoBrush)
             painter.drawRect(edge_size / 2, edge_size / 2, \
                              width - edge_size, height - edge_size)
 
@@ -125,7 +125,7 @@ c_ ImageWidget(?G...?W..
         paintAsThumb(painter)
 
     ___ mouseReleaseEvent , event
-        __ event.button __ ?C...Qt.LeftButton:
+        __ event.button __ ?C...__.LeftButton:
             setSelected
 
     ___ mouseDoubleClickEvent , event
@@ -164,7 +164,7 @@ c_ ImageContainer(?G...QFrame
 
         # 初始化Slider
         zoomSlider _ ?G...QSlider
-        zoomSlider.setOrientation(?C...Qt.Horizontal)
+        zoomSlider.setOrientation(?C...__.Horizontal)
         zoomSlider.setMinimum(THUMB_MIN)
         zoomSlider.setMaximum(THUMB_MAX)
         zoomSlider.sV..(THUMB_WIDTH)
@@ -294,7 +294,7 @@ c_ MainWindow(?G...?W..
 
         s..
 
-        mainSpliter _ ?G...QSplitter(?C...Qt.Horizontal)
+        mainSpliter _ ?G...QSplitter(?C...__.Horizontal)
 
         # 文件夹列表model
         dirModel _ ?G...QDirModel

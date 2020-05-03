@@ -17,16 +17,16 @@ c_ splineRampWidget(?W..
 
         dragged _ None
 
-        region1 _ QRect
-        region2 _ QRect
+        region1 _ ?R..
+        region2 _ ?R..
         regionSize _ 40
         updateRegions
 
     ___ updateRegions
-        region1 _ QRect(0, 0, regionSize, regionSize)
+        region1 _ ?R..(0, 0, regionSize, regionSize)
         region1.moveCenter(point1.toPoint())
 
-        region2 _ QRect(0, 0, regionSize, regionSize)
+        region2 _ ?R..(0, 0, regionSize, regionSize)
         region2.moveCenter(point2.toPoint())
 
         factor1 _ point1.y / fl..(size.height())
@@ -38,24 +38,24 @@ c_ splineRampWidget(?W..
         painter _ ?P..
         painter.begin
         painter.setRenderHint(?P...Antialiasing)
-        painter.fillRect(event.rect, Qt.black)
+        painter.fillRect(event.rect, __.black)
         path _ QPainterPath
         path.moveTo(point1)
         path.cubicTo(rec.width/2, point1.y,
                      rec.width/2, point2.y,
                      rec.width, point2.y())
-        painter.setPen(QPen(QBrush(Qt.white), lineWidth))
+        painter.setPen(QPen(QBrush(__.white), lineWidth))
         painter.drawPath(path)
-        painter.setBrush(QBrush(Qt.white))
+        painter.setBrush(QBrush(__.white))
 
         painter.drawEllipse(point1, pointSize, pointSize)
         painter.drawEllipse(point2, pointSize, pointSize)
 
-        painter.setPen(QPen(QBrush(Qt.white), 1))
-        painter.setBrush(Qt.NoBrush)
+        painter.setPen(QPen(QBrush(__.white), 1))
+        painter.setBrush(__.NoBrush)
         painter.drawRect(region1)
         painter.drawRect(region2)
-        painter.end
+        painter.e..
 
     ___ mousePressEvent , event
         # print self.region1.contains(event.pos())
