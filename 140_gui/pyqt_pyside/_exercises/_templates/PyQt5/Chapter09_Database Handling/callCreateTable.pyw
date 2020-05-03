@@ -18,7 +18,7 @@
 #     ___ addColumns
 #         g.. t...
 #         __ t.._"":
-#             t.._"CREATE TABLE IF NOT EXISTS "+ ?.lETN__.t..+"("+?.lECN__.t..+" "+?.cBDT__.iT.. ?.cBDT__.cI..
+#             t.._*C.. T.. I. N.. E.. "+ ?.lETN__.t..+"("+?.lECN__.t..+" "+?.cBDT__.iT.. ?.cBDT__.cI..
 #         ____
 #             t.. +_", "+?.lECN__.t..+" "+?.cBDT__.iT.. ?.cBDT__.cI..
 #         ?.lECN__.sT..("")
