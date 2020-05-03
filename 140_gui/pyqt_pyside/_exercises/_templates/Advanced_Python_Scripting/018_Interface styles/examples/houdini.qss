@@ -593,7 +593,7 @@ QTableView { alternate-background-color: #2e2e2e }
 
 QTabWidget::pane  { 
     border: 1px solid #111111;
-    margin-top:-1px; /* hide line under selected tab*/
+    margin-top:-1px; /* h.. line under selected tab*/
 
 }
 

@@ -207,7 +207,7 @@ c_ TP_Launcher_GUI(?W...?W..
             item.sT..(app_name)
 
     ___ closeEvent , e
-        hide
+        h..
         e.ignore
 
     ___ _close 

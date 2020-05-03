@@ -277,7 +277,7 @@ c_ TP_Launcher_GUI(?W...?W..
 
     ___ closeEvent , e
         ''' Override Qt close event to instead hide tool '''
-        hide
+        h..
         e.ignore
 
     ___ _close

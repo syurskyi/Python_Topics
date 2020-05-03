@@ -11,7 +11,7 @@ c_ simpleWindow(?W..
         setLayout(ly)
         table _ QTableWidget
         ly.addWidget(table)
-        table.verticalHeader.hide
+        table.verticalHeader.h..
         table.horizontalHeader.setResizeMode(QHeaderView.Stretch)
         # start
         resize(500,400)

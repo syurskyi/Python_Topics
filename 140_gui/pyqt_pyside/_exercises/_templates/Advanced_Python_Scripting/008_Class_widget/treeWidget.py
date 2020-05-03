@@ -11,7 +11,7 @@ c_ simpleWindow(?W..
         setLayout(ly)
         tree _ QTreeWidget
         ly.addWidget(tree)
-        tree.header.hide
+        tree.header.h..
         # connect
         tree.itemChanged.c..(action)
         # start
