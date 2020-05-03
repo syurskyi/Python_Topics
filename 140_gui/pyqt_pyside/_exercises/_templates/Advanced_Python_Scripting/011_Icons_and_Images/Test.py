@@ -72,7 +72,7 @@ c_ ImageWidget(?G...?W..
         __ not thumb:
             thumb _ thumbFile
         __ os.path.isfile(thumb
-            thumb.load(?C...QString(thumb))
+            thumb.l..(?C...QString(thumb))
             repaint
             r_ T..
 

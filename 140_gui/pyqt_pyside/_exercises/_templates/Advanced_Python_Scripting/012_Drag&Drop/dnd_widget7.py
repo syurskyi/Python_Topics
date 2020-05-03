@@ -48,7 +48,7 @@ c_ listWidgetClass(QListWidget
         ___ i __ selectedItems(   # dlja vudelenuh elementov mu zabiraem pyt' i kladjom v url
             url.ap..(i.data(Qt.UserRole))
         print url
-        mimedata.setUrls([QUrl.fromLocalFile(x) ___ x __ url])  # kogda mu polychili pyti nam nado ih polozit' v mimedata. preobrazovuvaem strochky v klass QUrls
+        mimedata.setUrls([?U__.fromLocalFile(x) ___ x __ url])  # kogda mu polychili pyti nam nado ih polozit' v mimedata. preobrazovuvaem strochky v klass QUrls
                                                                 # kazduj pyt' kotoruj est' v spiske preobrazovuvaetsja v QUrl. Generator vernjot nam spisok etih klassov
         drag.setMimeData(mimedata)                              # polychennue dannue mu lozim v objekt draga, toest' v etot kontejner dlja peretaskivanija
         pix _ QPixmap(icon)

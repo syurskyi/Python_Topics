@@ -18,6 +18,6 @@ c_ mySerialize(json.JSONEncoder
 json.dump(x, o..(p, 'w'), indent_4, cls_mySerialize)
 #
 #
-y _json.load(o..(p))
+y _json.l..(o..(p))
 #
 print(y)

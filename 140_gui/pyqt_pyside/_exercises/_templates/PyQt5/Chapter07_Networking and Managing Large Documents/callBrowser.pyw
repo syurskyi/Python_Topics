@@ -1,25 +1,25 @@
-_____ ___
-
-____ ?.?C.. _____ QUrl
-____ ?.?W.. _____ ?A.., ?D..
-____ ?.QtWebEngineWidgets _____ QWebEngineView
-
-____ demoBrowser _____ *
-
-c_ MyForm(?D..
-    ___  -  
-        s__. - 
-        ui _ ?
-        ?.sU..
-        ?.pushButtonGo.c___.c..(dispSite)
-        s..
-
-
-    ___ dispSite 
-        ?.widget.load(QUrl(?.lineEditURL.t..()))
-        
-__ _ ____ __ _____
-    app _ ?A..
-    w _ ?
-    w.s..
-    ___.e.. ?.e
+# _____ ___
+#
+# ____ ?.?C.. _____ ?U__
+# ____ ?.?W.. _____ ?A.., ?D..
+# ____ ?.?WEW.. _____ ?WEV..
+#
+# ____ demoBrowser _____ _
+#
+# c_ MyForm ?D..
+#     ___  -
+#         s__. -
+#         ui _ ?
+#         ?.sU..
+#         ?.pushButtonGo.c___.c.. ?
+#         s..
+#
+#
+#     ___ dispSite
+#         ?.widget.l.. ?U__ ?.lEU__.t..
+#
+# __ _ ____ __ _____
+#     app _ ?A..
+#     w _ ?
+#     ?.s..
+#     ___.e.. ?.e

@@ -107,7 +107,7 @@ c_ TP_Launcher_Model(object
     ___ read_json_file , path
         ''' read data from ordered dict to json file'''
         w__ o..(path, 'r') __ js_file:
-            _workspaces _ OrderedDict(json.load(js_file))
+            _workspaces _ OrderedDict(json.l..(js_file))
 
 
 

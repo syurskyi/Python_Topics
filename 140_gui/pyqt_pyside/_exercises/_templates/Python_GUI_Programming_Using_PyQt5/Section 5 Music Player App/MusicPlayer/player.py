@@ -155,7 +155,7 @@ c_ Player(?W..
         index _ playList.cR..
 
         ___
-            mixer.music.load(st.(musicList[index]))
+            mixer.music.l..(st.(musicList[index]))
             mixer.music.play
             timer.start
             sound _ MP3(st.(musicList[index]))
@@ -183,7 +183,7 @@ c_ Player(?W..
         index -_ 1
 
         ___
-            mixer.music.load(st.(musicList[index]))
+            mixer.music.l..(st.(musicList[index]))
             mixer.music.play
             timer.start
             sound _ MP3(st.(musicList[index]))
@@ -211,7 +211,7 @@ c_ Player(?W..
             index _ 0
 
         ___
-            mixer.music.load(st.(musicList[index]))
+            mixer.music.l..(st.(musicList[index]))
             mixer.music.play
             timer.start
             sound _ MP3(st.(musicList[index]))

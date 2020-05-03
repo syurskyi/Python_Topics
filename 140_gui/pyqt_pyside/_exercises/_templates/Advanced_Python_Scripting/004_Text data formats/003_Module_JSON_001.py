@@ -8,6 +8,6 @@ x _ [1, 2, 3, {1:3}]
 json.dump(x, o..(p, 'w'))
 
 
-y _json.load(o..(p))
+y _json.l..(o..(p))
 
 print(y)

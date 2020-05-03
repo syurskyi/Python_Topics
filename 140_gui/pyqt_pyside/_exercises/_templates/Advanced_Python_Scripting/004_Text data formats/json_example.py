@@ -8,7 +8,7 @@ a _ [1,2,3,4,5]
 a _ {'name':'Nik', 'value':1234, 'content':['obj1','obj2','obj3']}
 json.dump(a, o..(filePath, 'w'), indent_4)
 
-b _ json.load(o..(filePath, 'r'))
+b _ json.l..(o..(filePath, 'r'))
 
 
 
@@ -28,6 +28,6 @@ a _ myClass
 b _ {'cls':a}
 json.dump(b, o..(filePath, 'w'), indent_4, cls_serializer)
 
-b _ json.load(o..(filePath, 'r'))
+b _ json.l..(o..(filePath, 'r'))
 
 print(b)

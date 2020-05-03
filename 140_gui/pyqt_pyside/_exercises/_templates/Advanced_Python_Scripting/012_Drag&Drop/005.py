@@ -46,7 +46,7 @@ c_ listWidgetClass(QListWidget
         url _ []
         ___ i __ selectedItems(
             url.ap..(i.data(Qt.UserRole))
-        mimedata.setUrls([QUrl.fromLocalFile(x) ___ x __ url])
+        mimedata.setUrls([?U__.fromLocalFile(x) ___ x __ url])
         drag.setMimeData(mimedata)
         pix _ QPixmap(icon)
         drag.setPixmap(pix)

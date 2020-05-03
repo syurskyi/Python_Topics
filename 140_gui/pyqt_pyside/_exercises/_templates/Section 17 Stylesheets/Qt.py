@@ -1268,7 +1268,7 @@ ___ _loadUi(uifile, baseinstance_None
                 super(_UiLoader, self). - (baseinstance)
                 baseinstance _ baseinstance
 
-            ___ load , uifile, *args, **kwargs
+            ___ l.. , uifile, *args, **kwargs
                 ____ xml.etree.ElementTree _____ ElementTree
 
                 # For whatever reason, if this doesn't happen then
@@ -1277,7 +1277,7 @@ ___ _loadUi(uifile, baseinstance_None
                 etree _ ElementTree
                 etree.parse(uifile)
 
-                widget _ Qt._QtUiTools.QUiLoader.load(
+                widget _ Qt._QtUiTools.QUiLoader.l..(
                     self, uifile, *args, **kwargs)
 
                 # Workaround for PySide 1.0.9, see issue #208
@@ -1317,7 +1317,7 @@ ___ _loadUi(uifile, baseinstance_None
 
                 r_ widget
 
-        widget _ _UiLoader(baseinstance).load(uifile)
+        widget _ _UiLoader(baseinstance).l..(uifile)
         Qt.?C...QMetaObject.connectSlotsByName(widget)
 
         r_ widget

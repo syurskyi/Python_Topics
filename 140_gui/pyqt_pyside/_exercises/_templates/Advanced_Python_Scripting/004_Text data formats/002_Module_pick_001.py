@@ -8,5 +8,5 @@ x _ 123
 pickle.dump(x, o..(p, 'wb'))
 
 f _ o..('file2.txt', 'rb')
-y _ pickle.load(f)
+y _ pickle.l..(f)
 print(y)

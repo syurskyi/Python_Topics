@@ -34,7 +34,7 @@ ___ name_color(r, g, b
     min_dist _ None
     ___
         file _ o..(pathToNames)
-        data _ json.load(file)
+        data _ json.l..(file)
         file.c..
     _____:
         print "Error loading Color labels"
@@ -67,7 +67,7 @@ ___ read_color_presets(path
     ____
         ___
             f _ o..(path)
-            colors _ json.load(f)
+            colors _ json.l..(f)
             f.c..
             __ type(colors) is dict:
                 r_ colors

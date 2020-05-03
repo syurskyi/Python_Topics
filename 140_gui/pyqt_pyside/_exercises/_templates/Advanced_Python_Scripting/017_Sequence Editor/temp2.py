@@ -197,7 +197,7 @@ c_ pad1(?G...QGraphicsEllipseItem
         playing _ T..
         mixer.init
         mixer.pre_init(44100, -16, 2, 2048)
-        mixer.music.load(songPath)
+        mixer.music.l..(songPath)
         endEvent _ 234
         mixer.music.set_endevent(endEvent)
 
@@ -770,7 +770,7 @@ c_ songCreator(?G...QTabWidget
 c_ Player(
     ___  - (songPath, offset
         mixer.init
-        mixer.music.load(songPath)
+        mixer.music.l..(songPath)
         mixer.music.play
         w__ pygame.mixer.music.get_busy(
             pygame.time.Clock.tick(10)
