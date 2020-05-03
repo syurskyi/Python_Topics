@@ -177,7 +177,7 @@ c_ UpdateEmployee(?W..
         title _ QLabel("Update Person")
         title.sSS..('font-size: 24pt;font-family:Arial Bold;')
         imgAdd _ QLabel
-        imgAdd.setPixmap(QPixmap("images/{}".format(image)))
+        imgAdd.setPixmap(QPixmap("images/{}".f..(image)))
         ###################Bottom Layout Widgets#####################
         nameLbl _ QLabel("Name :")
         nameEntry _ QLineEdit
@@ -242,7 +242,7 @@ c_ UpdateEmployee(?W..
             defaultImg_os.path.basename(fileName)
             img_Image.o..(fileName)
             img_img.resize(size)
-            img.save("images/{}".format(defaultImg))
+            img.save("images/{}".f..(defaultImg))
 
 
 
@@ -355,7 +355,7 @@ c_ AddEmployee(?W..
             defaultImg_os.path.basename(fileName)
             img_Image.o..(fileName)
             img_img.resize(size)
-            img.save("images/{}".format(defaultImg))
+            img.save("images/{}".f..(defaultImg))
 
 
 

@@ -13,7 +13,7 @@ c_ MyForm(?D..
     ___ mouseMoveEvent , event      
         x _ event.x
         y _ event.y    
-        t.. _ "x: {0},  y: {1}".format(x, y)
+        t.. _ "x: {0},  y: {1}".f..(x, y)
         ?.label.sT..(t..)
 
 __ _ ____ __ _____

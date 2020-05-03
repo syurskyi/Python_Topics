@@ -85,7 +85,7 @@ c_ TP_Launcher_GUI(?W...?W..
         
         txt _ 'TPayne_Experience'+QT_VER
         _settings _ ?C...QSettings(txt, 'TPayne\'s_Launcher')
-        name _ '{}_{}_data.json'.format(PY_VER, QT_VER)
+        name _ '{}_{}_data.json'.f..(PY_VER, QT_VER)
         path _ os.path.j..(_my_path, 'data')
         _json_file _ os.path.j..(path, name)
 
@@ -302,8 +302,8 @@ c_ TP_Launcher_GUI(?W...?W..
         ''' Delete the item dragged onto Delete button '''
         typ _ _dragging[0]
         name _ _dragging[1]
-        title _ 'Delete {}?'.format(typ)
-        msg _ 'Are you sure you want to delete {} "{}"'.format(typ, name)
+        title _ 'Delete {}?'.f..(typ)
+        msg _ 'Are you sure you want to delete {} "{}"'.f..(typ, name)
         no _ ?W...QMessageBox.No
         yes _ ?W...QMessageBox.Yes
         btn _ ?W...QMessageBox.warning , title, msg, yes, no)
