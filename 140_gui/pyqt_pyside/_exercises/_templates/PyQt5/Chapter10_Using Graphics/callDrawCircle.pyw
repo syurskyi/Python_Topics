@@ -3,7 +3,7 @@ _____ ___
 ____ ?.?W.. _____ ?D.., ?A..
 ____ ?.?G.. _____ ?P..
 
-____ demoDrawCircle _____ *
+____ demoDrawCircle _____ _
 
 c_ MyForm(?D..
     ___  -  
