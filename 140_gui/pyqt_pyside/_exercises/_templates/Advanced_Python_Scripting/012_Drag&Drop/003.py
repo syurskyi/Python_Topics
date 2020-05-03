@@ -1,45 +1,45 @@
-_____ ___
-_____ os
-____ ?.?C.. _____ _
-____ ?.?G.. _____ _
-
-
-c_ listWidgetClass(?LW..
-    ___  -  
-        s__(listWidgetClass, self). -
-        sWF..(__.WSOTH..)
-        sDDM..(QAbstractItemView.DO..)
-
-    ___ dropEvent , event
-        print 'DROP', ty..(event)
-        mimedata _ event.mD..
-        __ mimedata.hU..(
-            ___ f __ mimedata.u..(
-                print f.userName
-                print f.toLocalFile
-        ____ mimedata.hasText(
-            print mimedata.t..
-
-
-    ___ dragEnterEvent , event
-        event.a..
-        print 'ENTER', ty..(event)
-
-    ___ dragMoveEvent , event
-        event.a..
-        # print 'MOVE'
-
-
-__ _____ __ ______
-    _____ ___
-
-    app _ N..
-    ___
-        _____ nuke
-    _____ I..
-        app _ ?A..
-    main _ listWidgetClass
-    main.s..
-
-    __ app __ no. N..:
-        app.exec_
+# _____ ___
+# _____ os
+# ____ ?.?C.. _____ _
+# ____ ?.?G.. _____ _
+#
+#
+# c_ listWidgetClass ?LW..
+#     ___  -
+#         s__ ?  . -
+#         sWF.. __.WSOTH..
+#         sDDM.. ?AIV__.DO..
+#
+#     ___ dropEvent event
+#         print 'DROP', ty.. ?
+#         mimedata _ ?.mD..
+#         __ ?.hU..
+#             ___ f __ ?.u..
+#                 print ?.uN..
+#                 print ?.tLF..
+#         ____ ?.hT..
+#             print ?.t..
+#
+#
+#     ___ dragEnterEvent event
+#         ?.a..
+#         print 'ENTER', ty.. ?
+#
+#     ___ dragMoveEvent , ?
+#         ?.a..
+#         # print 'MOVE'
+#
+#
+# __ _____ __ ______
+#     _____ ___
+#
+#     app _ N..
+#     ___
+#         _____ n..
+#     _____ I..
+#         app _ ?A..
+#     main _ ?
+#     ?.s..
+#
+#     __ ? __ no. N..
+#         ?.e..
