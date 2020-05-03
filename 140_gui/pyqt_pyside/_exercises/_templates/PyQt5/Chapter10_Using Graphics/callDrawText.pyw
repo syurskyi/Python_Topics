@@ -9,7 +9,7 @@ ____ demoDrawText _____ *
 c_ MyForm(?D..
 
     ___  -
-        s__. - ()
+        s__. - 
         ui _ ?
         ?.sU..
         ?.pushButtonDrawText.c___.c..(dispText)
@@ -19,18 +19,18 @@ c_ MyForm(?D..
         s..
 
     ___ paintEvent , event
-        qp _ QPainter()
+        qp _ QPainter
         qp.begin  
         qp.setPen(?C..(168, 34, 3))
         qp.sF..(?F..(fontName, fontSize))
-        qp.drawText(event.rect(), Qt.AlignCenter, textToDraw)
-        qp.end()  
+        qp.drawText(event.rect, Qt.AlignCenter, textToDraw)
+        qp.end  
 
     ___ dispText
-        fontName_ui.listWidgetFont.cI__).t..()
+        fontName_ui.listWidgetFont.cI__).t..
         fontSize_int(?.comboBoxFontSize.iT..(?.comboBoxFontSize.cI..()))
-        textToDraw_ui.tE__.toPlainText()
-        update()
+        textToDraw_ui.tE__.tPT..
+        update
 
 __ _ ____ __ _____
     app _ ?A..

@@ -6,31 +6,31 @@ path _ os.path.dirname(os.path.dirname(__file__))
 
 c_ simpleWindow(?W..
     ___  -
-        super(simpleWindow, self). - ()
-        ly _ QHBoxLayout()
+        super(simpleWindow, self). - 
+        ly _ QHBoxLayout
         setLayout(ly)
-        tree _ QTreeWidget()
+        tree _ QTreeWidget
         ly.addWidget(tree)
-        tree.header().hide()
+        tree.header.hide
         # connect
         tree.itemChanged.c..(action)
         # start
         resize(500, 400)
-        updateTree()
+        updateTree
 
     ___ updateTree
         tree.blockSignals(T..)
-        fillTree()
+        fillTree
         tree.blockSignals(False)
 
     ___ fillTree , parent_None, root_None
         __ not parent:
-            parent _ tree.invisibleRootItem()
+            parent _ tree.invisibleRootItem
         __ not root:
             root _ path
         ___ f __ os.listdir(root
             __ f[0] __ ['.', '_']: continue
-            item _ QTreeWidgetItem()
+            item _ QTreeWidgetItem
             item.sT..(0, f)
             parent.addChild(item)
             fullpath _ os.path.join(root, f)
@@ -49,6 +49,6 @@ c_ simpleWindow(?W..
 
 __ __name__ __ '__main__':
     app _ ?A..([])
-    w _ simpleWindow()
+    w _ simpleWindow
     w.s..
-    app.exec_()
+    app.exec_

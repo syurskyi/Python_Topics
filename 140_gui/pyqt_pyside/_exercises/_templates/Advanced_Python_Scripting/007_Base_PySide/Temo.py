@@ -9,14 +9,14 @@ c_ Form(?D..
     ___  -  , parent_None
         super(Form, self). - (parent)
 
-        intext _ QTextEdit()
-        outtext _ QTextBrowser()
-        bt1 _ ?PB..()
+        intext _ QTextEdit
+        outtext _ QTextBrowser
+        bt1 _ ?PB..
         output _ ""
 
         bt1.sT..("Download")
 
-        grid _ QGridLayout()
+        grid _ QGridLayout
         grid.addWidget(intext, 1, 0)
         grid.addWidget(outtext, 2, 0)
         grid.addWidget(bt1, 1, 1)
@@ -28,16 +28,16 @@ c_ Form(?D..
 
     ___ updateUi 
         outtext.ap..("Download has started!!")
-        yt _ YouTube()
-        yt.from_url(intext.toPlainText())
+        yt _ YouTube
+        yt.from_url(intext.tPT..())
         yt.set_filename("Temp")
         video _ yt.videos[0]
-        video.download()
+        video.download
         outtext.ap..("Download Finished!!")
         pass
 
 
 app _ ?A..
-form _ Form()
+form _ Form
 form.s..
-app.exec_()
+app.exec_

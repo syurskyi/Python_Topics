@@ -9,7 +9,7 @@ c_ phone(object
 c_ phone2(phone
 	___  -
 		# phone.__init__(self)
-		super(phone2, self). - ()
+		super(phone2, self). - 
 	
 	___ sendMail
 		pass
@@ -18,6 +18,6 @@ c_ phone2(phone
 		__ T..:
 			pass
 		____
-			super(phone2, self).call()
+			super(phone2, self).call
 
 p _ phone2

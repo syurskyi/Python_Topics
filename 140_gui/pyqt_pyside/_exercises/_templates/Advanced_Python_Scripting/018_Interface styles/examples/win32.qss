@@ -114,7 +114,7 @@ QComboBox:!editable, QComboBox::drop-down:editable
 
 }
 
-/* QComboBox gets the "on" state when the popup is open */
+/* QComboBox gets the "on" state when the popup is o.. */
 QComboBox:!editable:on, QComboBox::drop-down:editable:on
 {
 	border: 1px solid #242424;
@@ -720,11 +720,11 @@ QTreeView::branch:closed:has-children:has-siblings
          image: url(:/branch-closed);
 }
 
-QTreeView::branch:open:has-children:!has-siblings,
-QTreeView::branch:open:has-children:has-siblings
+QTreeView::branch:o..:has-children:!has-siblings,
+QTreeView::branch:o..:has-children:has-siblings
 {
          border-image: none;
-         image: url(:/branch-open);
+         image: url(:/branch-o..);
 }
 
 /* The tab widget frame */

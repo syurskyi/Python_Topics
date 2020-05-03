@@ -8,7 +8,7 @@ ____ demoProgressBarThread _____ _
 
 c_ MyForm(?D..
     ___  -  
-        s__. - ()
+        s__. - 
         ui _ ?
         ?.sU..
         s..
@@ -33,8 +33,8 @@ __ _ ____ __ _____
     app _ ?A..
     w _ ?
     thread1 _ myThread(w)
-    thread1.start()
-    w.exec()
+    thread1.start
+    w.exec
     ___.e.. ?.e
 
 

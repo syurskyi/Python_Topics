@@ -8,7 +8,7 @@ ____ demoTwoProgressBars _____ _
 
 c_ MyForm(?D..
     ___  -  
-        s__. - ()
+        s__. - 
         ui _ ?
         ?.sU..
         s..
@@ -35,11 +35,11 @@ __ _ ____ __ _____
     w _ ?
     thread1 _ myThread(w, w.?.progressBarFileDownload)
     thread2 _ myThread(w, w.?.progressBarVirusScan)
-    thread1.start()
-    thread2.start()
-    w.exec()
-    thread1.join()
-    thread2.join()
+    thread1.start
+    thread2.start
+    w.exec
+    thread1.join
+    thread2.join
     ___.e.. ?.e
 
 

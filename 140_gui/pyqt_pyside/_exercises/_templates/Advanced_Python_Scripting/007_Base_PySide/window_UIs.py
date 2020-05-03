@@ -15,7 +15,7 @@ c_ Ui_Form(object
         Form.resize(400, 300)
         horizontalLayout _ ?G...QHBoxLayout(Form)
         horizontalLayout.setObjectName("horizontalLayout")
-        verticalLayout _ ?G...QVBoxLayout()
+        verticalLayout _ ?G...QVBoxLayout
         verticalLayout.setObjectName("verticalLayout")
         pB__ _ ?G...?PB..(Form)
         pB__.setObjectName("pushButton")

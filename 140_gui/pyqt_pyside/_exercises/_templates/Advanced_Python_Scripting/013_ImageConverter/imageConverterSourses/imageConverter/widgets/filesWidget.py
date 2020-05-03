@@ -7,37 +7,37 @@ icon _ os.path.join(os.path.dirname(__file__), 'drag.png')
 
 c_ listWidgetClass(QListWidget
     ___  -
-        super(listWidgetClass, self). - ()
+        super(listWidgetClass, self). - 
         setWindowFlags(Qt.WindowStaysOnTopHint)
         setDragDropMode(QAbstractItemView.DropOnly)
         setSelectionMode(QAbstractItemView.ExtendedSelection)
         files _ []
 
     ___ dropEvent , event
-        mimedata _ event.mimeData()
+        mimedata _ event.mimeData
         __ mimedata.hasUrls(
             ___ f __ mimedata.urls(
                 addFile(f.toLocalFile())
 
     ___ dragEnterEvent , event
-        __ event.source() is self:
-            event.ignore()
+        __ event.source is self:
+            event.ignore
         ____
-            mimedata _ event.mimeData()
+            mimedata _ event.mimeData
             __ mimedata.hasUrls(
-                event.accept()
+                event.accept
             ____
-                event.ignore()
+                event.ignore
 
     ___ dragMoveEvent , event
-        __ event.source() is self:
-            event.ignore()
+        __ event.source is self:
+            event.ignore
         ____
-            mimedata _ event.mimeData()
+            mimedata _ event.mimeData
             __ mimedata.hasUrls(
-                event.accept()
+                event.accept
             ____
-                event.ignore()
+                event.ignore
 
     ___ addFile , path
         __ not path __ files:
@@ -56,5 +56,5 @@ c_ listWidgetClass(QListWidget
         r_ files
 
     ___ keyPressEvent , event
-        __ event.key() __ Qt.Key_Delete:
-            deleteSelected()
+        __ event.key __ Qt.Key_Delete:
+            deleteSelected

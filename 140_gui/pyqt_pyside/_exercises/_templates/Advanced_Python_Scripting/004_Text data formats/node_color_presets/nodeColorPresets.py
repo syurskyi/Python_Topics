@@ -33,7 +33,7 @@ ___ name_color(r, g, b
     name _ ''
     min_dist _ None
     ___
-        file _ open(pathToNames)
+        file _ o..(pathToNames)
         data _ json.load(file)
         file.c..
     _____:
@@ -66,7 +66,7 @@ ___ read_color_presets(path
         r_ {}
     ____
         ___
-            f _ open(path)
+            f _ o..(path)
             colors _ json.load(f)
             f.c..
             __ type(colors) is dict:
@@ -81,7 +81,7 @@ ___ read_color_presets(path
 
 ___ write_color_presets(path, colors
     ___
-        f _ open(path, "w")
+        f _ o..(path, "w")
         json.dump(colors, f)
         f.c..
         r_ T..
@@ -122,8 +122,8 @@ ___ add_new_color(
                     colors[name] _ color
                     success _ write_color_presets(path, colors)
                     __ success:
-                        targetMenu.findItem("Color Nodes").clearMenu()
-                        create_tile_color_menu()
+                        targetMenu.findItem("Color Nodes").clearMenu
+                        create_tile_color_menu
                     ____
                         print "Error writing file %s" % path
                 ____
@@ -140,10 +140,10 @@ ___ manage_color_presets(
                 new_colors[preset['name'].v..] _ preset['value'].v..
         success _ write_color_presets(path, new_colors)
         __ success:
-            targetMenu.findItem("Color Nodes").clearMenu()
-            create_tile_color_menu()
+            targetMenu.findItem("Color Nodes").clearMenu
+            create_tile_color_menu
         ____
             print "Error writing file %s" % path
 
 
-create_tile_color_menu()
+create_tile_color_menu

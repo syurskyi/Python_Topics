@@ -8,7 +8,7 @@ ____ demoBrowser _____ *
 
 c_ MyForm(?D..
     ___  -  
-        s__. - ()
+        s__. - 
         ui _ ?
         ?.sU..
         ?.pushButtonGo.c___.c..(dispSite)

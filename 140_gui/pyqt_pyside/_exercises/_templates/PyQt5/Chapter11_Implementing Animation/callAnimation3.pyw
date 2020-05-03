@@ -7,7 +7,7 @@ ____ demoAnimation3 _____ _
 
 c_ MyForm(?D..
     ___  -  
-        s__. - ()
+        s__. - 
         ui _ ?
         ?.sU..
         ?.pushButtonBounce.c___.c..(startAnimation)
@@ -19,7 +19,7 @@ c_ MyForm(?D..
         anim.setKeyValueAt(0, QRect(0, 0, 100, 80));
         anim.setKeyValueAt(0.8, QRect(160, 160, 200, 180));
         anim.setKeyValueAt(1, QRect(400, 0, 100, 80));
-        anim.start()
+        anim.start
 
 __ _ ____ __ _____
     app _ ?A..

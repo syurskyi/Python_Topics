@@ -29,7 +29,7 @@ c_ Ui_Form(object
         Form.resize(400, 300)
         horizontalLayout _ ?G...QHBoxLayout(Form)
         horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
-        verticalLayout _ ?G...QVBoxLayout()
+        verticalLayout _ ?G...QVBoxLayout
         verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
         pB__ _ ?G...?PB..(Form)
         pB__.setObjectName(_fromUtf8("pushButton"))

@@ -14,6 +14,6 @@ c_ dividerClass(object
     ___ __checkValue , val
         r_ not val __ 0
 
-d _ dividerClass()
+d _ dividerClass
 d.setDivider(2)
 d.divide(100)

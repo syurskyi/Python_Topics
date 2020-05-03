@@ -12,7 +12,7 @@ conn_None
 
 c_ Window(?D..
     ___  -  
-        s__. - ()
+        s__. - 
         ui _ ?
         ?.sU..
         tE__Messages_?.tE__Messages
@@ -20,7 +20,7 @@ c_ Window(?D..
         s..
 
     ___ dispMessage 
-        text_?.lineEditMessage.t..()
+        text_?.lineEditMessage.t..
         global conn
         conn.send(t...encode("utf-8"))
         ?.tE__Messages.ap..("Server: "+?.lineEditMessage.t..())
@@ -43,13 +43,13 @@ c_ ServerThread(Thread
         tcpServer.listen(4) 
         w__ T..:
             global conn
-            (conn, (ip,port)) _ tcpServer.accept()
+            (conn, (ip,port)) _ tcpServer.accept
             newthread _ ClientThread(ip,port,window)
-            newthread.start() 
+            newthread.start 
             threads.ap..(newthread)
            
         ___ t in threads:
-            t.join() 
+            t.join 
  
  
 c_ ClientThread(Thread 
@@ -69,8 +69,8 @@ c_ ClientThread(Thread
  
 __ _ ____ __ _____
     app _ ?A..
-    window _ Window()
+    window _ Window
     serverThread_ServerThread(window)
-    serverThread.start()
-    window.exec()
+    serverThread.start
+    window.exec
     ___.e.. ?.e

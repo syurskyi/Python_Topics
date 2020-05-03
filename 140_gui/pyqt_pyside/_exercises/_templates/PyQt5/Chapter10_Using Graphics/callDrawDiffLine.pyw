@@ -8,7 +8,7 @@ ____ demoDrawDiffLine _____ *
 
 c_ MyForm(?D..
     ___  -
-        s__. - ()
+        s__. - 
         ui _ ?
         ?.sU..
         lineType_"SolidLine"
@@ -17,7 +17,7 @@ c_ MyForm(?D..
         s..
 
     ___ paintEvent , event
-        qp _ QPainter()
+        qp _ QPainter
         qp.begin
         pen _ QPen(Qt.black, 4)
         lineTypeFormat_"Qt."+lineType
@@ -33,16 +33,16 @@ c_ MyForm(?D..
             pen.setStyle(Qt.DashDotDotLine)
         qp.setPen(pen)       
         qp.drawLine(pos1[0], pos1[1], pos2[0], pos2[1])
-        qp.end()
+        qp.end
         
     ___ mousePressEvent , event
-        __ event.buttons() & ?C...Qt.LeftButton:
-            pos1[0], pos1[1] _ event.pos().x(), event.pos().y()
+        __ event.buttons & ?C...Qt.LeftButton:
+            pos1[0], pos1[1] _ event.pos.x, event.pos.y
                         
     ___ mouseReleaseEvent , event
-        lineType_ui.listWidgetLineType.cI__).t..()
-        pos2[0], pos2[1] _ event.pos().x(), event.pos().y()
-        update()
+        lineType_ui.listWidgetLineType.cI__).t..
+        pos2[0], pos2[1] _ event.pos.x, event.pos.y
+        update
                   
 __ _ ____ __ _____
     app _ ?A..

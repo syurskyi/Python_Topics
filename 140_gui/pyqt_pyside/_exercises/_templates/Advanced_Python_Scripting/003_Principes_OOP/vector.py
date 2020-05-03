@@ -8,7 +8,7 @@ c_ vector(
         r_ 'Vector<%0.3f, %0.3f, %0.3f>'%(x, y, z)
 
     ___ __str__ 
-        r_ __repr__()
+        r_ __repr__
 
     ___ __add__ , other
         __ isinstance(other, vector
@@ -79,5 +79,5 @@ c_ vector(
     ___ mag 
         r_ (x**2 + y**2 + z**2)**0.5
 
-a _ vector()
+a _ vector
 print(a)

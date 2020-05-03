@@ -7,7 +7,7 @@ ____ demoAnimation1 _____ _
 
 c_ MyForm(?D..
     ___  -  
-        s__. - ()
+        s__. -
         ui _ ?
         ?.sU..
         ?.pushButtonMoveDown.c___.c..(startAnimation)
@@ -18,7 +18,7 @@ c_ MyForm(?D..
         anim.setDuration(10000)
         anim.setStartValue(QRect(160, 70, 80, 80))
         anim.setEndValue(QRect(160, 70, 220, 220))
-        anim.start()
+        anim.start
 
 __ _ ____ __ _____
     app _ ?A..

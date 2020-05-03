@@ -5,7 +5,7 @@ c_ someClass(object
     ___ someMethod(
         pass
 
-v _ someClass.someMethod()
+v _ someClass.someMethod
 x _ someClass.staticValue
 
 

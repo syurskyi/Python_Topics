@@ -5,8 +5,8 @@ c_ Phone(object
     ___ call 
         print('call'), number
 
-p _ Phone()
-p.call()
+p _ Phone
+p.call
 
 c_ Phone(object
     ___  -  
@@ -16,5 +16,5 @@ c_ Phone(object
     ___ call 
         print('call')
 
-p _ Phone()
-p.call()
+p _ Phone
+p.call

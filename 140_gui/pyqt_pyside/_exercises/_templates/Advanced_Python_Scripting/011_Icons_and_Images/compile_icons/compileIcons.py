@@ -12,35 +12,35 @@ c_ fileListClass(QListWidget
         path _ path.replace('/','\\')
         __ not  path __ pathList:
             name _ os.path.basename(path)
-            item _ ?LWI..()
+            item _ ?LWI..
             item.sT..(name)
             item.setData(32, path)
             aI..(item)
             pathList.ap..(path)
 
     ___ dragEnterEvent , event
-        __ event.mimeData().hasUrls(
-            event.accept()
+        __ event.mimeData.hasUrls(
+            event.accept
         ____
-            event.ignore()
+            event.ignore
 
     ___ dragMoveEvent , event
-        __ event.mimeData().hasUrls(
-            event.accept()
+        __ event.mimeData.hasUrls(
+            event.accept
         ____
-            event.ignore()
+            event.ignore
 
     ___ dropEvent , event
-        __ event.mimeData().hasUrls(
-            event.accept()
-            ___ url __ event.mimeData().urls(
+        __ event.mimeData.hasUrls(
+            event.accept
+            ___ url __ event.mimeData.urls(
                 appendImage(url.toLocalFile())
         ____
-            event.ignore()
+            event.ignore
 
     ___ keyPressEvent , event
-        __ event.key() __ Qt.Key_Delete:
-            sel _ selectedIndexes()
+        __ event.key __ Qt.Key_Delete:
+            sel _ selectedIndexes
             ___ i __ reversed(sel
                 __ i.data(32) in pathList:
                     pathList.remove(i.data(32))
@@ -48,12 +48,12 @@ c_ fileListClass(QListWidget
 
 c_ resourceCompileClass(QMainWindow
     ___  -
-        super(resourceCompileClass, self). - ()
+        super(resourceCompileClass, self). - 
         setWindowTitle('Resource Compiler')
         resize(250,300)
-        w _ ?W..()
+        w _ ?W..
         setCentralWidget(w)
-        ly _ QVBoxLayout()
+        ly _ QVBoxLayout
         w.setLayout(ly)
         list _ fileListClass
         ly.addWidget(list)
@@ -87,15 +87,15 @@ c_ resourceCompileClass(QMainWindow
 
 
     ___ writeFile , qrc, files
-        w__ open(qrc, 'w') __ f:
-            f.write('<RCC>\n\t<qresource>\n')
+        w__ o..(qrc, 'w') __ f:
+            f.w..('<RCC>\n\t<qresource>\n')
             ___ ico in files:
-                f.write('\t\t<file>%s</file>\n' % os.path.basename(ico))
-            f.write('\t</qresource>\n</RCC>')
+                f.w..('\t\t<file>%s</file>\n' % os.path.basename(ico))
+            f.w..('\t</qresource>\n</RCC>')
         r_ T..
 
 app _ ?A..
-window _ resourceCompileClass()
+window _ resourceCompileClass
 window.s..
 ___.e.. ?.e
 

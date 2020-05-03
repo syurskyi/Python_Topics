@@ -9,7 +9,7 @@ c_ simpleClass(object
     ___ method2 
         print('I am method 2')
 
-s _ simpleClass()
+s _ simpleClass
 atr _ 'method1'
 print(atr __ dir(s))
 b _ 1

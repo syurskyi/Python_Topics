@@ -23,7 +23,7 @@ c_ ImageWidget(?G...?W..
     """
 
     ___  -  
-        super(ImageWidget, self). - ()
+        super(ImageWidget, self). - 
         id _ 0
         displayText _ ''
         version _ ''
@@ -32,11 +32,11 @@ c_ ImageWidget(?G...?W..
         showStatus _ T..
         selected _ False
         isHightlight _ False
-        thumb _ ?G...QImage()
-        initAttrib()
+        thumb _ ?G...QImage
+        initAttrib
 
     ___ initAttrib 
-        name_font _ ?G...?F..()
+        name_font _ ?G...?F..
         bg_color _ ?G...?C..(50, 50, 50)
         hightlight _ ?G...?C..(255, 255, 255, 100)
         edge_size _ 5
@@ -70,21 +70,21 @@ c_ ImageWidget(?G...?W..
 
     ___ setThumb , thumb_None
         __ not thumb:
-            thumb _ thumbFile()
+            thumb _ thumbFile
         __ os.path.isfile(thumb
             thumb.load(?C...QString(thumb))
-            repaint()
+            repaint
             r_ T..
 
     ___ paintAsThumb , painter
-        name_height _ max(height() * 0.15, 20)
-        name_ty _ height() - edge_size * 2
+        name_height _ max(height * 0.15, 20)
+        name_ty _ height - edge_size * 2
         # draw background
-        painter.fillRect(rect(), bg_color)
-        painter.drawImage(rect(), thumb)
+        painter.fillRect(rect, bg_color)
+        painter.drawImage(rect, thumb)
         # draw hightlight
         __ isHightlight an. not selected:
-            painter.fillRect(rect(), hightlight)
+            painter.fillRect(rect, hightlight)
         # draw name
         painter.setPen(?G...QPen(?G...?C..(255, 255, 255)))
         name_font.setPixelSize(name_height)
@@ -98,7 +98,7 @@ c_ ImageWidget(?G...?W..
             p2 _ ?C...QPoint(0, title_height)
             p3 _ ?C...QPoint(title_height, 0)
             painter.setPen(?C...Qt.NoPen)
-            painter.fillRect(0, 0, width(), title_height, ?G...?C..(40, 40, 40, 40))
+            painter.fillRect(0, 0, width, title_height, ?G...?C..(40, 40, 40, 40))
             __ status __ 1:
                 painter.setBrush(?G...QBrush(?G...?C..(255, 0, 0)))
             elif status __ 2:
@@ -108,7 +108,7 @@ c_ ImageWidget(?G...?W..
             painter.drawConvexPolygon(p1, p2, p3)
 
         __ version:
-            version_x _ width() - edge_size - name_height * 1.5
+            version_x _ width - edge_size - name_height * 1.5
             version_y _ name_height
             painter.setPen(?G...QPen(?G...?C..(255, 255, 255)))
             painter.drawText(version_x, version_y, '%s' % version)
@@ -118,38 +118,38 @@ c_ ImageWidget(?G...?W..
             painter.setPen(pen_selected)
             painter.setBrush(?C...Qt.NoBrush)
             painter.drawRect(edge_size / 2, edge_size / 2, \
-                             width() - edge_size, height() - edge_size)
+                             width - edge_size, height - edge_size)
 
     ___ paintEvent , event
         painter _ ?G...QPainter
         paintAsThumb(painter)
 
     ___ mouseReleaseEvent , event
-        __ event.button() __ ?C...Qt.LeftButton:
-            setSelected()
+        __ event.button __ ?C...Qt.LeftButton:
+            setSelected
 
     ___ mouseDoubleClickEvent , event
         emit(?C...SIGNAL('doubleClick'))
 
     ___ enterEvent , event
         isHightlight _ T..
-        repaint()
+        repaint
 
     ___ leaveEvent , event
         isHightlight _ False
-        repaint()
+        repaint
 
     # 设定当前为选中状态
     ___ setSelected 
         # 取消其他缩略图的选择状态, 当前设为选择状态
         __ ImageWidget.prevSelected !_ None:
             ImageWidget.prevSelected.selected _ False
-            ImageWidget.prevSelected.repaint()
+            ImageWidget.prevSelected.repaint
         selected _ T..
-        repaint()
+        repaint
         ImageWidget.prevSelected _ self
 
-        onWidgetClicked()
+        onWidgetClicked
         emit(?C...SIGNAL("click"), id)
 
     ___ onWidgetClicked 
@@ -158,12 +158,12 @@ c_ ImageWidget(?G...?W..
 
 c_ ImageContainer(?G...QFrame
     ___  -  , widgets_None
-        super(ImageContainer, self). - ()
+        super(ImageContainer, self). - 
 
-        containerLayout _ ?G...QVBoxLayout()
+        containerLayout _ ?G...QVBoxLayout
 
         # 初始化Slider
-        zoomSlider _ ?G...QSlider()
+        zoomSlider _ ?G...QSlider
         zoomSlider.setOrientation(?C...Qt.Horizontal)
         zoomSlider.setMinimum(THUMB_MIN)
         zoomSlider.setMaximum(THUMB_MAX)
@@ -174,8 +174,8 @@ c_ ImageContainer(?G...QFrame
         # Slider设定
         ?C...QObject.c..(zoomSlider, ?C...SIGNAL('valueChanged(int)'), setItemSize)
 
-        item_scrollarea _ ?G...QScrollArea()
-        item_area _ ?G...?W..()
+        item_scrollarea _ ?G...QScrollArea
+        item_area _ ?G...?W..
         item_scrollarea.setWidget(item_area)
 
         containerLayout.addWidget(zoomSlider)
@@ -205,10 +205,10 @@ c_ ImageContainer(?G...QFrame
     ___ addWidgets , widgets
         ___ widget __ widgets:
             addWidget(widget)
-        layout()
+        layout
 
     ___ clearAll 
-        widgets _ item_area.children()
+        widgets _ item_area.children
         __ widgets:
             ___ widget __ widgets:
                 widget.setParent(None)
@@ -216,15 +216,15 @@ c_ ImageContainer(?G...QFrame
         ImageWidgetList.c..
 
     ___ layout 
-        w _ width() - 20
-        widgets _ item_area.children()
+        w _ width - 20
+        widgets _ item_area.children
 
         num_x _ max(math.ceil(w / (widget_w + asset_space)), 1)  # Can do -1
         num_y _ math.ceil(le.(widgets) / num_x)
         item_area.resize(w, num_y * (widget_h + asset_space) + 50)
 
-        main_w _ item_area.width()
-        main_h _ item_area.height()
+        main_w _ item_area.width
+        main_h _ item_area.height
         num_x _ max(math.ceil(main_w / (widget_w + asset_space)), 1)  # Can do -1
 
         x _ 0
@@ -241,10 +241,10 @@ c_ ImageContainer(?G...QFrame
                 y +_ 1
 
     ___ resizeEvent , event
-        layout()
+        layout
 
     ___ changeItemSize , mount
-        widgets _ item_area.children()
+        widgets _ item_area.children
         widget_w +_ mount
         __ widget_w > max_height:
             widget_w _ max_height
@@ -260,10 +260,10 @@ c_ ImageContainer(?G...QFrame
         ___ a __ widgets:
             a.resize(widget_w, widget_h)
 
-        layout()
+        layout
 
     ___ setItemSize , size
-        widgets _ item_area.children()
+        widgets _ item_area.children
 
         widget_w _ size
         widget_h _ size
@@ -271,26 +271,26 @@ c_ ImageContainer(?G...QFrame
         ___ a __ widgets:
             a.resize(size, size)
 
-        layout()
+        layout
 
     # 设定指定id为选中状态
     ___ setSelected , id
         print 'ImageContainer -> setSelected    ', id
-        ImageWidgetList[st.(id)].setSelected()
+        ImageWidgetList[st.(id)].setSelected
 
 
 c_ MainWindow(?G...?W..
     ___  -  
         app _ ?G...?A..
-        super(MainWindow, self). - ()
+        super(MainWindow, self). - 
 
         setWindowTitle("Image Viewer")
         resize(1280, 800)
 
         # 屏幕居中
-        screen _ ?G...QDesktopWidget().screenGeometry()
-        size _ geometry()
-        move((screen.width() - size.width()) / 2, (screen.height() - size.height()) / 2)
+        screen _ ?G...QDesktopWidget.screenGeometry
+        size _ geometry
+        move((screen.width - size.width()) / 2, (screen.height - size.height()) / 2)
 
         s..
 
@@ -303,7 +303,7 @@ c_ MainWindow(?G...?W..
         dirModel.setFilter(?C...QDir.Dirs | ?C...QDir.NoDotAndDotDot)
 
         # 文件夹列表view
-        dirTreeView _ ?G...QTreeView()
+        dirTreeView _ ?G...QTreeView
 
         # 绑定model
         dirTreeView.setModel(dirModel)
@@ -313,14 +313,14 @@ c_ MainWindow(?G...?W..
         dirTreeView.hideColumn(3)
 
         # DirTree事件响应
-        dirTreeView.selectionModel().sC__.c..(dirTreeClicked)
+        dirTreeView.selectionModel.sC__.c..(dirTreeClicked)
 
-        mainLayout _ ?G...QVBoxLayout()
+        mainLayout _ ?G...QVBoxLayout
         mainSpliter.addWidget(dirTreeView)
 
         imageContainer _ ImageContainer(mainSpliter)
         #        self.imageContainer.setGeometry(self.imageContainer.geometry().x(), self.imageContainer.geometry().y(), 100, self.imageContainer.geometry().height())
-        imageContainer.setMinimumWidth(geometry().width() * 0.7)
+        imageContainer.setMinimumWidth(geometry.width * 0.7)
         mainSpliter.addWidget(imageContainer)
 
         mainLayout.addWidget(mainSpliter)
@@ -332,10 +332,10 @@ c_ MainWindow(?G...?W..
     ___ dirTreeClicked 
         print 'dirTreeClicked'
 
-        imageContainer.clearAll()
+        imageContainer.clearAll
 
         # 获取选择的路径
-        pathSelected _ dirModel.filePath(dirTreeView.selectedIndexes()[0])
+        pathSelected _ dirModel.filePath(dirTreeView.selectedIndexes[0])
         print 'pathSelected   ', pathSelected
         # 遍历路径下的媒体文件
         ___ item __ os.listdir(pathSelected
@@ -343,7 +343,7 @@ c_ MainWindow(?G...?W..
                 print item
                 # 添加widget
                 ___
-                    widget _ ImageWidget()
+                    widget _ ImageWidget
                     widget.displayText _ item
                     widget.setThumb(unicode(pathSelected + '/' + item))
                     imageContainer.addWidget(widget)
@@ -354,8 +354,8 @@ c_ MainWindow(?G...?W..
 # self.imageContainer.layout()
 
 ___ main(
-    MainWindow()
+    MainWindow
 
 
 __ __name__ __ '__main__':
-    main()
+    main

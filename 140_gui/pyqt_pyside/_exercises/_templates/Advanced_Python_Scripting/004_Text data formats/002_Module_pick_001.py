@@ -5,8 +5,8 @@ p _ '/Users/sergejyurskyj/.nuke/example/PYTHON_EXAMPLE/Python_Example_All_Tutori
 
 x _ 123
 
-pickle.dump(x, open(p, 'wb'))
+pickle.dump(x, o..(p, 'wb'))
 
-f _ open('file2.txt', 'rb')
+f _ o..('file2.txt', 'rb')
 y _ pickle.load(f)
 print(y)

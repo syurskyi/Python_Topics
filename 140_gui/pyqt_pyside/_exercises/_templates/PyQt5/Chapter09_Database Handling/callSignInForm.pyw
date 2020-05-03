@@ -7,19 +7,19 @@ ____ demoSignInForm _____ *
 c_ MyForm(?D..
 
     ___  -
-        s__. - ()
+        s__. -
         ui _ ?
         ?.sU..
         ?.pushButtonSearch.c___.c..(SearchRows)
         s..
 
     ___ SearchRows
-        sqlStatement_"SELECT EmailAddress, Password FROM Users where EmailAddress like '"+?.lineEditEmailAddress.t..()+"' and Password like '"+ ?.lineEditPassword.t..()+"'"
+        sqlStatement_"SELECT EmailAddress, Password FROM Users where EmailAddress like '"+?.lineEditEmailAddress.t..+"' and Password like '"+ ?.lineEditPassword.t..+"'"
         ___
             conn _ sqlite3.c..("ECommerce.db")
-            cur _ conn.cursor()    
+            cur _ conn.cursor
             cur.execute(sqlStatement)
-            row _ cur.fetchone()
+            row _ cur.fetchone
             __ row__None:
                 ?.lR___.sT..("Sorry, Incorrect email address or password ")
             ____

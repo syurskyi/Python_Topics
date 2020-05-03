@@ -1,41 +1,41 @@
-_____ ___
-
-____ ?.?W.. _____ QMainWindow, ?A.., QAction, QFileDialog
-
-____ demoFileDialog _____ _
-
-c_ MyForm(QMainWindow
-    ___  -
-        s__. - ()
-        ui _ Ui_MainWindow()
-        ?.sU..
-        ?.actionOpen.triggered.c..(openFileDialog)
-        ?.actionSave.triggered.c..(saveFileDialog)
-        s..
-
-    ___ openFileDialog
-
-        fname _ QFileDialog.getOpenFileName , 'Open file', '/home')
-
-        __ fname[0]:
-            f _ open(fname[0], 'r')
-
-            w__ f:
-                data _ f.read()
-                ?.tE__.sT..(data)
-
-    ___ saveFileDialog
-        options _ QFileDialog.Options()
-        options |_ QFileDialog.DontUseNativeDialog
-        fileName, _ _ QFileDialog.getSaveFileName ,"QFileDialog.getSaveFileName()","","All Files (*);;Text Files (*.txt)", options_options)
-        f _ open(fileName,'w')
-        t.. _ ?.tE__.toPlainText()
-        f.write(t..)
-        f.c..
-
-__ _ ____ __ _____
-    app _ ?A..
-    w _ ?
-    w.s..
-    ___.e.. ?.e
-
+# _____ ___
+#
+# ____ ?.?W.. _____ QMainWindow  ?A..  ?A__  ?FD__
+#
+# ____ demoFileDialog _____ _
+#
+# c_ MyForm(QMainWindow
+#     ___  -
+#         s__. -
+#         ui _ ?
+#         ?.sU..
+#         ?.aO__.t__.c.. o..
+#         ?.aS__.t__.c.. s..
+#         s..
+#
+#     ___ openFileDialog
+#
+#         fname _ ?FD__.gOFN..  'Open file'  '/home'
+#
+#         __ ? 0
+#             f _ o.. ? 0 _
+#
+#             w__ f
+#                 data _ ?.r..
+#                 ?.tE__.sT.. ?
+#
+#     ___ saveFileDialog
+#         options _ ?FD__.Op..
+#         options |_ ?FD__.DUND..
+#         fileName  _ _ ?FD__.gSFN..  "QFileDialog.getSaveFileName()" "" "All Files (*);;Text Files (*.txt)"  o.._o..
+#         f _ o.. ? _
+#         t.. _ ?.tE__.tPT..
+#         ?.w.. t..
+#         ?.c..
+#
+# __ _ ____ __ _____
+#     app _ ?A..
+#     w _ ?
+#     ?.s..
+#     ___.e.. ?.e
+#

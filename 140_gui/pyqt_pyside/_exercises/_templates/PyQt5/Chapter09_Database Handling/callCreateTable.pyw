@@ -8,7 +8,7 @@ tabledefinition_""
 c_ MyForm(?D..
 
     ___  -
-        s__. - ()
+        s__. - 
         ui _ ?
         ?.sU..
         ?.pushButtonCreateTable.c___.c..(createTable)
@@ -18,18 +18,18 @@ c_ MyForm(?D..
     ___ addColumns
         global tabledefinition         
         __ tabledefinition__"":
-            tabledefinition_"CREATE TABLE IF NOT EXISTS "+ ?.lineEditTableName.t..()+"("+?.lineEditColumnName.t..()+" "+?.comboBoxDataType.iT..(?.comboBoxDataType.cI..())
+            tabledefinition_"CREATE TABLE IF NOT EXISTS "+ ?.lineEditTableName.t..+"("+?.lineEditColumnName.t..+" "+?.comboBoxDataType.iT..(?.comboBoxDataType.cI..())
         ____
-            tabledefinition+_", "+?.lineEditColumnName.t..()+" "+?.comboBoxDataType.iT..(?.comboBoxDataType.cI..())
+            tabledefinition+_", "+?.lineEditColumnName.t..+" "+?.comboBoxDataType.iT..(?.comboBoxDataType.cI..())
         ?.lineEditColumnName.sT..("")
         ?.lineEditColumnName.sF..
 
     ___ createTable
         global tabledefinition 
         ___
-            conn _ sqlite3.c..(?.lineEditDBName.t..()+".db")
+            conn _ sqlite3.c..(?.lineEditDBName.t..+".db")
             ?.lR___.sT..("Database is connected")
-            c _ conn.cursor()
+            c _ conn.cursor
             tabledefinition+_");"
             c.execute(tabledefinition)
             ?.lR___.sT..("Table is successfully created")

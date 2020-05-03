@@ -7,14 +7,14 @@ ____ demoFontDialog _____ _
 
 c_ MyForm(?D..
     ___  -
-        s__. - ()
+        s__. - 
         ui _ ?
         ?.sU..
         ?.pushButtonFont.c___.c..(changefont)
         s..
 
     ___ changefont
-        font, ok _ QFontDialog.getFont()
+        font, ok _ QFontDialog.getFont
         __ ok:
             ?.tE__.sF..(font)
 

@@ -5,7 +5,7 @@ ____ PySide.?G.. _____ _
 
 c_ listWidgetClass(QListWidget
     ___  -  
-        super(listWidgetClass, self). - ()
+        super(listWidgetClass, self). -
         setWindowFlags(Qt.WindowStaysOnTopHint)
         setDragDropMode(QAbstractItemView.DropOnly)
         setSelectionMode(QAbstractItemView.ExtendedSelection)
@@ -13,28 +13,28 @@ c_ listWidgetClass(QListWidget
 
     ___ dropEvent , event
         # print 'DROP', type(event)
-        mimedata _ event.mimeData()
+        mimedata _ event.mimeData
         __ mimedata.hasUrls(
             ___ f __ mimedata.urls(
                 addFile(f.toLocalFile())       # KOgda mu polychaem pyt' mu vuzuvaem fynkcijy addFile()
 
     ___ dragEnterEvent , event
-        mimedata _ event.mimeData()
+        mimedata _ event.mimeData
         __ mimedata.hasUrls(
-            event.accept()
+            event.accept
         ____
-            event.ignore()
+            event.ignore
 
     ___ dragMoveEvent , event
-        mimedata _ event.mimeData()
+        mimedata _ event.mimeData
         __ mimedata.hasUrls(
-            event.accept()
+            event.accept
         ____
-            event.ignore()
+            event.ignore
 
     ___ startDrag , dropAction
         drag _ QDrag
-        mimedata _ QMimeData()
+        mimedata _ QMimeData
         url _ []
         ___ i __ selectedItems(
             url.ap..(i.data(Qt.UserRole))
@@ -49,6 +49,6 @@ c_ listWidgetClass(QListWidget
 
 __ __name__ __ '__main__':
     app _ ?A..([])
-    w _ listWidgetClass()
+    w _ listWidgetClass
     w.s..
-    app.exec_()
+    app.exec_

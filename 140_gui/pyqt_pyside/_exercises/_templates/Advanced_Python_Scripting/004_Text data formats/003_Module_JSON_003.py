@@ -15,9 +15,9 @@ c_ mySerialize(json.JSONEncoder
         # return json.JSONEncoder.default(self, o)
         r_ super(mySerialize, self).default(o)
 #
-json.dump(x, open(p, 'w'), indent_4, cls_mySerialize)
+json.dump(x, o..(p, 'w'), indent_4, cls_mySerialize)
 #
 #
-y _json.load(open(p))
+y _json.load(o..(p))
 #
 print(y)

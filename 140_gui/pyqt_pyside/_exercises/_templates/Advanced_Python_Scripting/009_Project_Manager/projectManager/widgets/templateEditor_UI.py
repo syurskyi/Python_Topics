@@ -29,12 +29,12 @@ c_ Ui_templateEditor(object
         templateEditor.resize(357, 461)
         verticalLayout _ ?G...QVBoxLayout(templateEditor)
         verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
-        horizontalLayout_2 _ ?G...QHBoxLayout()
+        horizontalLayout_2 _ ?G...QHBoxLayout
         horizontalLayout_2.setObjectName(_fromUtf8("horizontalLayout_2"))
         add_btn _ ?G...?PB..(templateEditor)
         add_btn.setMinimumSize(?C...QSize(30, 30))
         add_btn.setMaximumSize(?C...QSize(30, 30))
-        font _ ?G...?F..()
+        font _ ?G...?F..
         font.setPointSize(16)
         font.setBold(T..)
         font.setWeight(75)
@@ -44,7 +44,7 @@ c_ Ui_templateEditor(object
         remove_btn _ ?G...?PB..(templateEditor)
         remove_btn.setMinimumSize(?C...QSize(30, 30))
         remove_btn.setMaximumSize(?C...QSize(30, 30))
-        font _ ?G...?F..()
+        font _ ?G...?F..
         font.setPointSize(16)
         font.setBold(T..)
         font.setWeight(75)
@@ -56,10 +56,10 @@ c_ Ui_templateEditor(object
         verticalLayout.addLayout(horizontalLayout_2)
         tree _ ?G...QTreeWidget(templateEditor)
         tree.setObjectName(_fromUtf8("tree"))
-        tree.headerItem().sT..(0, _fromUtf8("1"))
-        tree.header().setVisible(False)
+        tree.headerItem.sT..(0, _fromUtf8("1"))
+        tree.header.setVisible(False)
         verticalLayout.addWidget(tree)
-        horizontalLayout _ ?G...QHBoxLayout()
+        horizontalLayout _ ?G...QHBoxLayout
         horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
         save_btn _ ?G...?PB..(templateEditor)
         save_btn.setObjectName(_fromUtf8("save_btn"))

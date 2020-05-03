@@ -35,7 +35,7 @@ c_ Ui_client(object
         connect_btn _ ?G...?PB..(client)
         connect_btn.setObjectName(_fromUtf8("connect_btn"))
         verticalLayout.addWidget(connect_btn)
-        horizontalLayout _ ?G...QHBoxLayout()
+        horizontalLayout _ ?G...QHBoxLayout
         horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
         progress_sle _ ?G...QSlider(client)
         progress_sle.setOrientation(?C...Qt.Horizontal)

@@ -3,7 +3,7 @@ ____ PySide.?G.. _____ _
 
 c_ simpleWindow(?W..
     ___  -  
-        super(simpleWindow, self). - ()
+        super(simpleWindow, self). -
         ly _ QVBoxLayout
         btn  _ ?PB..('Open')
         ly.addWidget(btn)
@@ -16,17 +16,17 @@ c_ simpleWindow(?W..
         print i
 
     ___ showMessage 
-        msgBox _ QMessageBox()
+        msgBox _ QMessageBox
         msgBox.sT..("The document has been modified.")
         msgBox.setInformativeText("Do you want to save your changes?")
         msgBox.setStandardButtons(QMessageBox.Save | QMessageBox.Discard | QMessageBox.Cancel)
         msgBox.setDefaultButton(QMessageBox.Save)
         msgBox.setDetailedText('Detail text')
-        ret _ msgBox.exec_()
+        ret _ msgBox.exec_
         print ret __ QMessageBox.Save
 
 __ __name__ __ '__main__':
     app _ ?A..([])
-    w _ simpleWindow()
+    w _ simpleWindow
     w.s..
-    app.exec_()
+    app.exec_

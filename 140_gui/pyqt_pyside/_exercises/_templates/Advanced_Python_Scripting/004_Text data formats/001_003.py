@@ -6,28 +6,28 @@ c_ settings(
             path _ path
         ____
             path _ 'c:/settings.ini'
-        data _ __readFile()
+        data _ __readFile
 
     ___ __readFile
         __ os.path.exists(path
-            t.. _ open(path, 'r').readlines()
+            t.. _ o..(path, 'r').readlines
             data _ {}
             __ t..:
-                ___ line in [x.strip() ___ x in t..]:
+                ___ line in [x.strip ___ x in t..]:
                     key, value _ line.split('=')
                     __ value.isdigit(
                         value _ int(value)
-                    elif value.replace('.','').isdigit() an. value.count('.') __ 1:
+                    elif value.replace('.','').isdigit an. value.count('.') __ 1:
                         value _ fl..(value)
                     data[key] _ value
             r_ data
-        r_ __create_default()
+        r_ __create_default
 
     ___ __write_file
         __ data:
-            w__ open(path, 'w') __ f:
+            w__ o..(path, 'w') __ f:
                 ___ key, value in data.items(
-                    f.write('%s=%s\n' % (key, value))
+                    f.w..('%s=%s\n' % (key, value))
 
     ___ __create_default
         d _ dict(app_'',
@@ -37,7 +37,7 @@ c_ settings(
 
     ___ sV.. , key, value
         data[key] _ value
-        __write_file()
+        __write_file
 
     ___ getValue , key, default_None
         r_ data.get(key, default)

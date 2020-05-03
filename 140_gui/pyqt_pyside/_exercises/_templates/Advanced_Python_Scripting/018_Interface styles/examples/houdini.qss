@@ -152,14 +152,14 @@ QTreeView::branch:closed:has-children:!has-siblings
     border-image: url(:/closed_end.png) 0;
 }
 
-QTreeView::branch:open:has-children:!has-siblings
+QTreeView::branch:o..:has-children:!has-siblings
 {
     border-image: url(:/open_end.png) 0;
 }
 
-QTreeView::branch:open:has-children:has-siblings
+QTreeView::branch:o..:has-children:has-siblings
 {
-    border-image: url(:/open.png) 0;
+    border-image: url(:/o...png) 0;
 }
 
 /********************* QListView ************/

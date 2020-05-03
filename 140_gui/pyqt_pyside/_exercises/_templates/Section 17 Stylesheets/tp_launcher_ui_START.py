@@ -41,17 +41,17 @@ c_ Delete_Btn(?W...?PB..
         _type _ 'application/x-qabstractitemmodeldatalist'
 
     ___ dragEnterEvent , e
-        __ e.mimeData().hasFormat(_type
-            e.accept()
+        __ e.mimeData.hasFormat(_type
+            e.accept
         ____
-            e.ignore()
+            e.ignore
 
     ___ dropEvent , e
-        __ e.mimeData().hasFormat(_type
-            _my_parent.delete_item()
-            e.accept()
+        __ e.mimeData.hasFormat(_type
+            _my_parent.delete_item
+            e.accept
         ____
-            e.ignore()
+            e.ignore
 
 c_ TP_Launcher_GUI(?W...?W..
     '''The goal of this tool is to create a GUI that 
@@ -62,13 +62,13 @@ c_ TP_Launcher_GUI(?W...?W..
     ___  -  , parent_None
         super(TP_Launcher_GUI, self). - (parent)
 
-        _icons _ ?W...QFileIconProvider()
+        _icons _ ?W...QFileIconProvider
         _my_path _ os.path.dirname(os.path.realpath(__file__))
         images_path _ os.path.join(_my_path, 'images')
         full_path _ os.path.join(images_path, 'TPayne_Launcher.png')
         _tpl_icon _ ?G...QIcon(full_path)
         
-        _tp_launcher _ tp_launcher_model.TP_Launcher_Model()
+        _tp_launcher _ tp_launcher_model.TP_Launcher_Model
 
         _edit_op _ {
             T..: _edit_on, 
@@ -93,9 +93,9 @@ c_ TP_Launcher_GUI(?W...?W..
         _settings_op _ defaultdict(lambda: d)
         _settings_op['2.7']['PyQt4'] _ _get_settings_27_pyqt4
 
-        _setup()
-        _load_settings()
-        _edit_toggle()
+        _setup
+        _load_settings
+        _edit_toggle
 
     #======= SETUP UI =================================
 
@@ -106,8 +106,8 @@ c_ TP_Launcher_GUI(?W...?W..
         v_layout.addLayout(_setup_edit_options())
         v_layout.addWidget(_setup_apps())
 
-        _setup_tray_icon()
-        _setup_connections()
+        _setup_tray_icon
+        _setup_connections
 
         setWindowTitle('TPayne\'s Launcher ' + __version__)
         setWindowIcon(_tpl_icon)
@@ -116,13 +116,13 @@ c_ TP_Launcher_GUI(?W...?W..
         resize(190, 200)
 
     ___ _setup_header 
-        h_layout _ ?W...QHBoxLayout()
+        h_layout _ ?W...QHBoxLayout
         workspace_gb _ ?W...QGroupBox('Workspaces')
         v_layout _ ?W...QVBoxLayout(workspace_gb)
 
-        _workspace_cb _ ?W...QComboBox()
+        _workspace_cb _ ?W...QComboBox
         flag _ ?W...QAbstractItemView.DragOnly
-        _workspace_cb.view().setDragDropMode(flag)
+        _workspace_cb.view.setDragDropMode(flag)
 
         _edit_btn _ ?W...?PB..('Edit')
         _edit_btn.setMaximumSize(?C...QSize(40,23))
@@ -130,12 +130,12 @@ c_ TP_Launcher_GUI(?W...?W..
 
         v_layout.addWidget(_workspace_cb)
         h_layout.addWidget(workspace_gb)
-        h_layout.addStretch()
+        h_layout.addStretch
         h_layout.addWidget(_edit_btn)
         r_ h_layout
 
     ___ _setup_edit_options 
-        add_del_l _ ?W...QHBoxLayout()
+        add_del_l _ ?W...QHBoxLayout
 
         _add_btn _ ?W...?PB..('Add')
         _add_btn.setMaximumSize(?C...QSize(60,23))
@@ -156,7 +156,7 @@ c_ TP_Launcher_GUI(?W...?W..
         r_ add_del_l
 
     ___ _setup_apps 
-        _app_lw _ ?W...QListWidget()
+        _app_lw _ ?W...QListWidget
         _app_lw.setAlternatingRowColors(T..)
         flag _ ?W...QAbstractItemView.InternalMove
         _app_lw.setDragDropMode(flag)
@@ -170,8 +170,8 @@ c_ TP_Launcher_GUI(?W...?W..
         tray_menu _ ?W...QMenu
         tray_menu.addAction('Open', show)
         tray_menu.addAction('YouTube', _tp_launcher.run_youtube)
-        tray_menu.addSeparator()
-        q _ ?W...QAction('Quit', self, triggered__close)
+        tray_menu.addSeparator
+        q _ ?W...?A__('Quit', self, triggered__close)
         tray_menu.addAction(q)
         tray_icon.setContextMenu(tray_menu)
         tray_icon.s..
@@ -181,7 +181,7 @@ c_ TP_Launcher_GUI(?W...?W..
         _workspace_cb.cIC...c..(ws)
         _edit_btn.c___.c..(_edit_toggle)
         dw _ _dragging_workspace
-        _workspace_cb.view().pressed.c..(dw)
+        _workspace_cb.view.pressed.c..(dw)
         _app_lw.itemPressed.c..(_dragging_app)
 
     #======= DISPLAY =================================
@@ -192,11 +192,11 @@ c_ TP_Launcher_GUI(?W...?W..
         _workspace_cb.c..
         _workspace_cb.addItems(_tp_launcher.get_workspaces())
         _workspace_cb.cIC...c..(ws)
-        _populate_apps()
+        _populate_apps
 
     ___ _populate_apps 
         _app_lw.c..
-        ws _ get_workspace()
+        ws _ get_workspace
         ___ app_name __ _tp_launcher.get_app_names(ws
             item _ ?W...?LWI..(_app_lw)
             icon _ _tp_launcher.get_app_icon(ws, app_name)
@@ -207,12 +207,12 @@ c_ TP_Launcher_GUI(?W...?W..
             item.sT..(app_name)
 
     ___ closeEvent , e
-        hide()
-        e.ignore()
+        hide
+        e.ignore
 
     ___ _close 
-        _save_settings()
-        ?W...?A...instance().quit()
+        _save_settings
+        ?W...?A...instance.quit
 
     #======= WORKSPACE + APP =================================
 
@@ -221,21 +221,21 @@ c_ TP_Launcher_GUI(?W...?W..
         r_ st.(_workspace_cb.currentText())
 
     ___ _workspace_changed 
-        _populate_apps()
-        _save_settings()
+        _populate_apps
+        _save_settings
 
     ___ _run_app , item
         item.setSelected(False)
-        _tp_launcher.run_app(get_workspace(), st.(item.t..()))
+        _tp_launcher.run_app(get_workspace, st.(item.t..()))
 
     #======= EDIT MODE =================================
 
     ___ _edit_toggle 
-        _edit_op[_edit_btn.iC..]()
+        _edit_op[_edit_btn.iC..]
         _app_lw.setDragEnabled(_edit_btn.isChecked())
         _add_btn.setVisible(_edit_btn.isChecked())
         _del_btn.setVisible(_edit_btn.isChecked())
-        _save_settings()
+        _save_settings
 
     ___ _edit_on 
         _app_lw.iC__.disconnect(_run_app)
@@ -253,10 +253,10 @@ c_ TP_Launcher_GUI(?W...?W..
         t.. _ ?W...?ID...gT.. , ws, msg)[0]
         __ t..:
             _tp_launcher.add_workspace(st.(t..))
-            _populate_workspaces()
+            _populate_workspaces
             index _ _workspace_cb.findText(t..)
             _workspace_cb.setCurrentIndex(index)
-            _save_settings()
+            _save_settings
 
     ___ _add_app 
         __ _app_instruction:
@@ -270,15 +270,15 @@ c_ TP_Launcher_GUI(?W...?W..
             path _ os.path.split(app)[0]
             msg _ 'Select ICON file (optional)'
             icon _ _file_dialogs[QT_VER](msg, path)
-            _tp_launcher.add_app(get_workspace(), app, icon)
-            _populate_apps()
-            _save_settings()
+            _tp_launcher.add_app(get_workspace, app, icon)
+            _populate_apps
+            _save_settings
 
     ___ _file_dialog , msg, path
-        r_ ?W...QFileDialog.getOpenFileName , msg, path)[0]
+        r_ ?W...?FD__.gOFN.. , msg, path)[0]
 
     ___ _file_dialog_pyqt4 , msg, path
-        fd _ ?W...QFileDialog.getOpenFileName , msg, path)
+        fd _ ?W...?FD__.gOFN.. , msg, path)
         r_ st.(fd)
 
     #======= DELETE =================================
@@ -291,12 +291,12 @@ c_ TP_Launcher_GUI(?W...?W..
         _dragging _ ('application', st.(item.t..()))
 
     ___ _delete_app , app_name
-        _tp_launcher.delete_app(get_workspace(), app_name)
-        _populate_apps()
+        _tp_launcher.delete_app(get_workspace, app_name)
+        _populate_apps
 
     ___ _delete_workspace , ws_name
         _tp_launcher.delete_workspace(ws_name)
-        _populate_workspaces()
+        _populate_workspaces
 
     ___ delete_item 
         ''' Delete the item dragged onto Delete button '''
@@ -309,14 +309,14 @@ c_ TP_Launcher_GUI(?W...?W..
         btn _ ?W...QMessageBox.warning , title, msg, yes, no)
         __ btn __ yes:
             _delete_op[typ](name)
-            _save_settings()
+            _save_settings
 
     #======= SETTINGS =================================
 
     ___ _save_settings 
-        c _ _app_lw.count()
-        names _ [_app_lw.item(i).t..() ___ i __ range(c)]
-        ws _ get_workspace()
+        c _ _app_lw.count
+        names _ [_app_lw.item(i).t.. ___ i __ range(c)]
+        ws _ get_workspace
         _tp_launcher.reorder_apps(ws, names)
         _settings.sV..('CurrentWorkspace', ws)
         _tp_launcher.write_json_file(_json_file)
@@ -324,17 +324,17 @@ c_ TP_Launcher_GUI(?W...?W..
         _settings.sV..('PosY', int(y()))
 
     ___ _load_settings 
-        __ 'CurrentWorkspace' in _settings.allKeys() an. \
+        __ 'CurrentWorkspace' in _settings.allKeys an. \
               os.path.exists(_json_file
-            x, y, cws _ _settings_op[PY_VER][QT_VER]()
+            x, y, cws _ _settings_op[PY_VER][QT_VER]
             _tp_launcher.read_json_file(_json_file)
-            _populate_workspaces()
+            _populate_workspaces
             index _ _workspace_cb.findText(cws)
             _workspace_cb.setCurrentIndex(index)
             move(x,y)
         ____
             _tp_launcher.add_workspace('Default_WS')
-            _populate_workspaces()
+            _populate_workspaces
 
     ___ _get_settings 
         x _ int(_settings.value('PosX')) #PyQt5 conversion
@@ -343,8 +343,8 @@ c_ TP_Launcher_GUI(?W...?W..
         r_ x, y, cws
 
     ___ _get_settings_27_pyqt4 
-        x _ _settings.value('PosX').toInt()[0]
-        y _ _settings.value('PosY').toInt()[0]
+        x _ _settings.value('PosX').toInt[0]
+        y _ _settings.value('PosY').toInt[0]
         cws _ st.(_settings.value('CurrentWorkspace'))
         r_ x, y, cws
 
@@ -360,7 +360,7 @@ __ __name__ __ '__main__':
         )
         ___.e..(1)
     ?W...?A...setQuitOnLastWindowClosed(False)
-    ex _ TP_Launcher_GUI()
+    ex _ TP_Launcher_GUI
     ex.s..
     ___.e.. ?.e
 

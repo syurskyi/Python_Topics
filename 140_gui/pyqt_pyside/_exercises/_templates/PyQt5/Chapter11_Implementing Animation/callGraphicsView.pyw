@@ -6,11 +6,11 @@ ____ demoGraphicsView _____ _
 
 c_ MyForm(?D..
     ___  -  
-        s__. - ()
+        s__. -
         ui _ ?
         ?.sU..
         scene _ QGraphicsScene
-        pixmap_ ?G...QPixmap()
+        pixmap_ ?G...QPixmap
         pixmap.load("bintupic.jpg")
         item_QGraphicsPixmapItem(pixmap)
         scene.aI..(item)

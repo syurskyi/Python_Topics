@@ -4,19 +4,19 @@ path _ os.path.dirname(__file__)
 
 c_ simpleWindow(?W..
     ___  -  
-        super(simpleWindow, self). - ()
-        ly _ QHBoxLayout()
+        super(simpleWindow, self). - 
+        ly _ QHBoxLayout
         setLayout(ly)
-        list _ QListWidget()
+        list _ QListWidget
         ly.addWidget(list)
-        textBrowser _ QTextBrowser()
+        textBrowser _ QTextBrowser
         ly.addWidget(textBrowser)
         # connect
         list.iC__.c..(updateText)
         list.itemDoubleClicked.c..(openFile)
         # start
         resize(500,400)
-        fillList()
+        fillList
 
     ___ fullPath , item
         r_ os.path.join(path,item.t..())
@@ -26,7 +26,7 @@ c_ simpleWindow(?W..
             list.aI..(f)
 
     ___ updateText , item
-        t.. _open(fullPath(item)).read()
+        t.. _open(fullPath(item)).read
         textBrowser.sT..(t..)
 
     ___ openFile , item
@@ -36,6 +36,6 @@ c_ simpleWindow(?W..
 
 __ __name__ __ '__main__':
     app _ ?A..([])
-    w _ simpleWindow()
+    w _ simpleWindow
     w.s..
-    app.exec_()
+    app.exec_

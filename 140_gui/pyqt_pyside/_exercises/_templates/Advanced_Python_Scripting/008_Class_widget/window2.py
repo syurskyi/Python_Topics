@@ -3,7 +3,7 @@ ____ PySide.?G.. _____ _
 
 c_ simpleWindow(?W..
     ___  -  
-        super(simpleWindow, self). - ()
+        super(simpleWindow, self). -
         ly _ QVBoxLayout
         btn  _ ?PB..('Open')
         ly.addWidget(btn)
@@ -12,11 +12,11 @@ c_ simpleWindow(?W..
 
     ___ showMessage 
         _filter _ 'Python File(*.py);; All(*.*)'
-        d _ QFileDialog.getOpenFileName , 'Set folder', 'c:/tmp', _filter)
+        d _ ?FD__.gOFN.. , 'Set folder', 'c:/tmp', _filter)
         print d
 
 __ __name__ __ '__main__':
     app _ ?A..([])
-    w _ simpleWindow()
+    w _ simpleWindow
     w.s..
-    app.exec_()
+    app.exec_

@@ -12,7 +12,7 @@ tcpClientA_None
 
 c_ Window(?D..
     ___  -
-        s__. - ()
+        s__. -
         ui _ ?
         ?.sU..
         tE__Messages_?.tE__Messages
@@ -21,7 +21,7 @@ c_ Window(?D..
 
 
     ___ dispMessage
-        text_?.lineEditMessage.t..()
+        text_?.lineEditMessage.t..
         ?.tE__Messages.ap..("Client: "+?.lineEditMessage.t..())
         tcpClientA.send(t...encode())
         ?.lineEditMessage.sT..("")
@@ -32,7 +32,7 @@ c_ ClientThread(Thread
         window_window
   
     ___ run
-       host _ socket.gethostname()
+       host _ socket.gethostname
        port _ 80
        BUFFER_SIZE _ 1024
        global tcpClientA
@@ -47,8 +47,8 @@ c_ ClientThread(Thread
         
 __ _ ____ __ _____
     app _ ?A..
-    window _ Window()
+    window _ Window
     clientThread_ClientThread(window)
-    clientThread.start()
-    window.exec()
+    clientThread.start
+    window.exec
     ___.e.. ?.e

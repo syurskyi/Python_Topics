@@ -6,7 +6,7 @@ ____ demoInputDialog _____ _
 
 c_ MyForm(?D..
     ___  -  
-        s__. - ()
+        s__. - 
         ui _ ?
         ?.sU..
         ?.pushButtonCountry.c___.c..(dispmessage)

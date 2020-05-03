@@ -8,19 +8,19 @@ ____ demoDisplayRowsOfTable _____ *
 c_ MyForm(?D..
 
     ___  -  
-        s__. - ()
+        s__. - 
         ui _ ?
         ?.sU..
         ?.pushButtonDisplayRows.c___.c..(DisplayRows)
         s..
 
     ___ DisplayRows 
-        sqlStatement_"SELECT * FROM "+?.lineEditTableName.t..()
+        sqlStatement_"SELECT * FROM "+?.lineEditTableName.t..
         ___
-            conn _ sqlite3.c..(?.lineEditDBName.t..()+".db")
-            cur _ conn.cursor()    
+            conn _ sqlite3.c..(?.lineEditDBName.t..+".db")
+            cur _ conn.cursor    
             cur.execute(sqlStatement)
-            rows _ cur.fetchall()
+            rows _ cur.fetchall
             rowNo_0
             ___ tuple __ rows:
                 ?.lR___.sT..("")

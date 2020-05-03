@@ -34,16 +34,16 @@ c_ TP_Launcher_Model(object
     Also includes YouTube opening function, hardcoded url though.
     '''
     ___  -  
-        _workspaces _ OrderedDict()
+        _workspaces _ OrderedDict
         _open_doc _ defaultdict(lambda: 'open ')
         _open_doc['Windows'] _ 'start '
-        _platform _ platform.system()
+        _platform _ platform.system
 
     # ======== WORKSPACES ============
 
     ___ add_workspace , ws_name
         ''' Add a new workspace, creating ordered dict'''
-        _workspaces[ws_name] _ OrderedDict()
+        _workspaces[ws_name] _ OrderedDict
 
     ___ get_workspaces 
         ''' returns a list of workspace names '''
@@ -57,7 +57,7 @@ c_ TP_Launcher_Model(object
 
     ___ get_app_names , ws_name
         ''' returns list of application or file names, no ext'''
-        r_ _workspaces[ws_name].keys()
+        r_ _workspaces[ws_name].keys
 
     ___ get_app_icon , ws_name, app_name
         ''' return filepath to icon image'''
@@ -76,8 +76,8 @@ c_ TP_Launcher_Model(object
 
     ___ reorder_apps , ws_name, app_list
         ''' if app/file order has changed, reorder dict'''
-        __ _workspaces[ws_name].keys() !_ app_list:
-            temp _ OrderedDict()
+        __ _workspaces[ws_name].keys !_ app_list:
+            temp _ OrderedDict
             ___ name in app_list:
                 temp[name] _ _workspaces[ws_name][name]
             _workspaces[ws_name] _ temp
@@ -95,18 +95,18 @@ c_ TP_Launcher_Model(object
 
     ___ run_youtube 
         ''' Open my favorite youtube channel! '''
-        webbrowser.open('http://www.youtube.com/TPayneExperience')
+        webbrowser.o..('http://www.youtube.com/TPayneExperience')
 
     # ======== JSON ============
 
     ___ write_json_file , path
         ''' write data from ordered dict to json file'''
-        w__ open(path, 'w') __ js_file:
+        w__ o..(path, 'w') __ js_file:
             json.dump(_workspaces, js_file)
 
     ___ read_json_file , path
         ''' read data from ordered dict to json file'''
-        w__ open(path, 'r') __ js_file:
+        w__ o..(path, 'r') __ js_file:
             _workspaces _ OrderedDict(json.load(js_file))
 
 

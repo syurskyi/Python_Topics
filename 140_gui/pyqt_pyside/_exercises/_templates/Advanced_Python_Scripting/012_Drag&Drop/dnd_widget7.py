@@ -7,7 +7,7 @@ icon _ os.path.join(os.path.dirname(__file__), 'drag.png')
 
 c_ listWidgetClass(QListWidget
     ___  -  
-        super(listWidgetClass, self). - ()
+        super(listWidgetClass, self). -
         setWindowFlags(Qt.WindowStaysOnTopHint)
         setDragDropMode(QAbstractItemView.DragDrop)
         setSelectionMode(QAbstractItemView.ExtendedSelection  # vjlychaet vozmoznost' vudeljat' neskol'ko fajlov
@@ -15,35 +15,35 @@ c_ listWidgetClass(QListWidget
 
     ___ dropEvent , event
         # print 'DROP', type(event)
-        mimedata _ event.mimeData()
+        mimedata _ event.mimeData
         __ mimedata.hasUrls(
             ___ f __ mimedata.urls(
                 addFile(f.toLocalFile())
 
     ___ dragEnterEvent , event
-        __ event.source() is self:
-            event.ignore()
+        __ event.source is self:
+            event.ignore
         ____
-            mimedata _ event.mimeData()
+            mimedata _ event.mimeData
             __ mimedata.hasUrls(
-                event.accept()
+                event.accept
             ____
-                event.ignore()
+                event.ignore
 
     ___ dragMoveEvent , event
-        __ event.source() is self:
-            event.ignore()
+        __ event.source is self:
+            event.ignore
         ____
-            mimedata _ event.mimeData()
+            mimedata _ event.mimeData
             __ mimedata.hasUrls(
-                event.accept()
+                event.accept
             ____
-                event.ignore()
+                event.ignore
 
     ___ startDrag , dropAction     # pereopredeljaem method kotoruj otvechaet za to shto proishodit kogda mu nachinaem shto to peretaskivat'
                                          # dropAction odin iz rezimov peretaskivanija
         drag _ QDrag               # nyzno sozdat' klass kotoruj otvechaet za peretaskivanie dannuh i eto ne mimedata a klass QDrag. QDrag dolzen znat' komy on prenadlezit
-        mimedata _ QMimeData()           # i sootvestvenno mimedata kotorue bydyt tam lezat'
+        mimedata _ QMimeData           # i sootvestvenno mimedata kotorue bydyt tam lezat'
         url _ []                         # potom nado sobrat' danue kotorue mu hotim pomestit' v ety mimedata a eto y nas pyti k fajlam iz vudelenuh fajlov
         ___ i __ selectedItems(   # dlja vudelenuh elementov mu zabiraem pyt' i kladjom v url
             url.ap..(i.data(Qt.UserRole))
@@ -53,10 +53,10 @@ c_ listWidgetClass(QListWidget
         drag.setMimeData(mimedata)                              # polychennue dannue mu lozim v objekt draga, toest' v etot kontejner dlja peretaskivanija
         pix _ QPixmap(icon)
         drag.setPixmap(pix)
-        r _ drag.exec_()                                        # exec_ kak iv dialogah vozvrachaet kakoj to rezyl'tat
+        r _ drag.exec_                                        # exec_ kak iv dialogah vozvrachaet kakoj to rezyl'tat
         print r
         __ r __ Qt.DropAction.MoveAction:                       # esli y nas yspesho proizvedeno peretaskivanie to mu ydaljaem nashi vudelenue items
-            deleteSelected()                               # metod deleteSelected
+            deleteSelected                               # metod deleteSelected
 
     ___ addFile , path
         __ not path __ files:
@@ -72,6 +72,6 @@ c_ listWidgetClass(QListWidget
 
 __ __name__ __ '__main__':
     app _ ?A..([])
-    w _ listWidgetClass()
+    w _ listWidgetClass
     w.s..
-    app.exec_()
+    app.exec_

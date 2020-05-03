@@ -15,7 +15,7 @@ c_ Ui_createDialog(object
         createDialog.resize(240, 219)
         verticalLayout _ ?G...QVBoxLayout(createDialog)
         verticalLayout.setObjectName("verticalLayout")
-        gridLayout _ ?G...QGridLayout()
+        gridLayout _ ?G...QGridLayout
         gridLayout.setObjectName("gridLayout")
         label _ ?G...QLabel(createDialog)
         label.setAlignment(?C...Qt.AlignRight|?C...Qt.AlignTrailing|?C...Qt.AlignVCenter)
@@ -32,7 +32,7 @@ c_ Ui_createDialog(object
         comment_te.setObjectName("comment_te")
         gridLayout.addWidget(comment_te, 1, 1, 1, 1)
         verticalLayout.addLayout(gridLayout)
-        horizontalLayout _ ?G...QHBoxLayout()
+        horizontalLayout _ ?G...QHBoxLayout
         horizontalLayout.setObjectName("horizontalLayout")
         create_btn _ ?G...?PB..(createDialog)
         create_btn.setObjectName("create_btn")

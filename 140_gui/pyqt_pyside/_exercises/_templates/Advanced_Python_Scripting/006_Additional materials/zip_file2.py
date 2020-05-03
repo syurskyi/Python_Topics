@@ -13,7 +13,7 @@ ___ usage(
 
 
 ___ get_zipfilepath(frm, to
-    dt _ datetime.now()
+    dt _ datetime.now
     __ not os.path.isdir(frm
         print "'" + frm + "' this is not valid source dir"
         ___.e..(2)
@@ -33,7 +33,7 @@ ___ make_archive(zip_archive_file, directory, *args
         ___ item __ nodes:
             path _ os.path.join(directory, item)
             __ os.path.isfile(path
-                zipf.write(path, unicode(path, 'utf-8').encode('cp852'))
+                zipf.w..(path, unicode(path, 'utf-8').encode('cp852'))
             elif os.path.isdir(path
                 __ not item __ args:
                     recursive_zip(zipf, path, *args)
@@ -57,7 +57,7 @@ ___ main(
         opts, rest _ getopt.getopt(___.argv[1:], "f:t:h")
     _____ getopt.GetoptError, err:
         print(err)
-        usage()
+        usage
         ___.e..(2)
 
     __ not opts:
@@ -65,7 +65,7 @@ ___ main(
 
     ___ o, a __ opts:
         __ o __ '-h':
-            usage()
+            usage
             ___.e..(0)
         elif o __ '-f':
             frm _ a
@@ -80,5 +80,5 @@ ___ main(
     print 'success ' + zip_full_path + ' was created'
 
 __ __name__ __ "__main__":
-    main()
+    main
 

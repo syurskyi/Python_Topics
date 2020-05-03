@@ -7,19 +7,19 @@ ____ demoSearchRows _____ *
 c_ MyForm(?D..
 
     ___  -
-        s__. - ()
+        s__. -
         ui _ ?
         ?.sU..
         ?.pushButtonSearch.c___.c..(SearchRows)
         s..
 
     ___ SearchRows
-        sqlStatement_"SELECT Password FROM "+?.lineEditTableName.t..()+" where EmailAddress like '"+?.lineEditEmailAddress.t..()+"'"
+        sqlStatement_"SELECT Password FROM "+?.lineEditTableName.t..+" where EmailAddress like '"+?.lineEditEmailAddress.t..+"'"
         ___
-            conn _ sqlite3.c..(?.lineEditDBName.t..()+".db")
-            cur _ conn.cursor()
+            conn _ sqlite3.c..(?.lineEditDBName.t..+".db")
+            cur _ conn.cursor
             cur.execute(sqlStatement)
-            row _ cur.fetchone()
+            row _ cur.fetchone
             __ row__None:
                 ?.lR___.sT..("Sorry, No User found with this email address")
                 ?.lineEditPassword.sT..("")

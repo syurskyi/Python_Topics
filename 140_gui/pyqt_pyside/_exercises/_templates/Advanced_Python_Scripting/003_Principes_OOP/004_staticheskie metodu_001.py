@@ -4,9 +4,9 @@ c_ someClass(object
         x _ 10
         # self.y = 100
 
-c _ someClass()
+c _ someClass
 print(c.y)
-f _ someClass()
+f _ someClass
 print(f.y)
 # f.y = 100
 print(f.y)

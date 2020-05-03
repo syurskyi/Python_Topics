@@ -4,7 +4,7 @@ path _ '/Users/sergejyurskyj/.nuke/example/PYTHON_EXAMPLE/Python_Example_All_Tut
     '004_Text data formats/example5.xml'
 
 tree _ ET.parse(path)
-root _ tree.getroot()
+root _ tree.getroot
 ___ elem __ root.getchildren(
     print(elem.tag)
     print(elem.attrib)
@@ -24,11 +24,11 @@ elem2 _ ET.SubElement(root, 'subElement2')
 elem2.t.. _ 'SOME TEXT'
 
 tree _ ET.ElementTree(root)
-tree.write(path)
+tree.w..(path)
 
 ____ xml.dom _____ minidom
-xml _ minidom.parseString(ET.tostring(tree.getroot())).toprettyxml()
+xml _ minidom.parseString(ET.tostring(tree.getroot())).toprettyxml
 
-w__ open('/Users/sergejyurskyj/.nuke/example/PYTHON_EXAMPLE/Python_Example_All_Tutorials/VIDEO/Advanced Python Scripting/' \
+w__ o..('/Users/sergejyurskyj/.nuke/example/PYTHON_EXAMPLE/Python_Example_All_Tutorials/VIDEO/Advanced Python Scripting/' \
     '004_Text data formats/example4.xml', 'w') __ f:
-        f.write(xml)
+        f.w..(xml)

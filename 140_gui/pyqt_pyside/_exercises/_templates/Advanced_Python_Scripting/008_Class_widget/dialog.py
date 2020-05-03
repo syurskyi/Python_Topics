@@ -3,9 +3,9 @@ ____ PySide.?G.. _____ _
 
 c_ dialogClass(?D..
     ___  -
-        super(dialogClass, self). - ()
+        super(dialogClass, self). -
         ly _ QVBoxLayout
-        label _ QLineEdit()
+        label _ QLineEdit
         ly.addWidget(label)
 
         ok_btn _ ?PB..('OK')

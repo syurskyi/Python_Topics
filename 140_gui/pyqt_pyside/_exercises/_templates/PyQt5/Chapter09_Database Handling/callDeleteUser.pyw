@@ -7,27 +7,27 @@ ____ demoDeleteUser _____ *
 c_ MyForm(?D..
 
     ___  -  
-        s__. - ()
+        s__. -
         ui _ ?
         ?.sU..
         ?.pushButtonDelete.c___.c..(DeleteUser)
         ?.pushButtonYes.c___.c..(ConfirmDelete)
-        ?.labelSure.hide()
-        ?.pushButtonYes.hide()
-        ?.pushButtonNo.hide()
+        ?.labelSure.hide
+        ?.pushButtonYes.hide
+        ?.pushButtonNo.hide
         s..
 
     ___ DeleteUser 
-        selectStatement_"SELECT * FROM Users where EmailAddress like '"+?.lineEditEmailAddress.t..()+"' and Password like '"+ ?.lineEditPassword.t..()+"'"
+        selectStatement_"SELECT * FROM Users where EmailAddress like '"+?.lineEditEmailAddress.t..+"' and Password like '"+ ?.lineEditPassword.t..+"'"
         ___
             conn _ sqlite3.c..("ECommerce.db")
-            cur _ conn.cursor()
+            cur _ conn.cursor
             cur.execute(selectStatement)
-            row _ cur.fetchone()
+            row _ cur.fetchone
             __ row__None:
-                ?.labelSure.hide()
-                ?.pushButtonYes.hide()
-                ?.pushButtonNo.hide()
+                ?.labelSure.hide
+                ?.pushButtonYes.hide
+                ?.pushButtonNo.hide
                 ?.lR___.sT..("Sorry, Incorrect email address or password ")
             ____
                 ?.labelSure.s..
@@ -40,10 +40,10 @@ c_ MyForm(?D..
             conn.c..
 
     ___ ConfirmDelete 
-        deleteStatement_"DELETE FROM Users where EmailAddress like '"+?.lineEditEmailAddress.t..()+"' and Password like '"+ ?.lineEditPassword.t..()+"'"
+        deleteStatement_"DELETE FROM Users where EmailAddress like '"+?.lineEditEmailAddress.t..+"' and Password like '"+ ?.lineEditPassword.t..+"'"
         ___
             conn _ sqlite3.c..("ECommerce.db")
-            cur _ conn.cursor()
+            cur _ conn.cursor
             w__ conn:
                 cur.execute(deleteStatement)
                 ?.lR___.sT..("User successfully deleted")

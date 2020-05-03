@@ -4,15 +4,15 @@ ____ demoMousetrack _____ *
 
 c_ MyForm(?D..
     ___  -  
-        s__. - ()
+        s__. - 
         ui _ ?
         setMouseTracking(T..)
         ?.sU..
         s..
            
     ___ mouseMoveEvent , event      
-        x _ event.x()
-        y _ event.y()    
+        x _ event.x
+        y _ event.y    
         t.. _ "x: {0},  y: {1}".format(x, y)
         ?.label.sT..(t..)
 

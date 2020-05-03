@@ -17,7 +17,7 @@ c_ Ui_imageConverter(object
         centralwidget.setObjectName("centralwidget")
         verticalLayout _ ?G...QVBoxLayout(centralwidget)
         verticalLayout.setObjectName("verticalLayout")
-        horizontalLayout _ ?G...QHBoxLayout()
+        horizontalLayout _ ?G...QHBoxLayout
         horizontalLayout.setObjectName("horizontalLayout")
         iconver_lb _ ?G...QLabel(centralwidget)
         iconver_lb.setObjectName("iconver_lb")
@@ -27,10 +27,10 @@ c_ Ui_imageConverter(object
         browseIconvert_btn.setObjectName("browseIconvert_btn")
         horizontalLayout.addWidget(browseIconvert_btn)
         verticalLayout.addLayout(horizontalLayout)
-        files_ly _ ?G...QVBoxLayout()
+        files_ly _ ?G...QVBoxLayout
         files_ly.setObjectName("files_ly")
         verticalLayout.addLayout(files_ly)
-        horizontalLayout_2 _ ?G...QHBoxLayout()
+        horizontalLayout_2 _ ?G...QHBoxLayout
         horizontalLayout_2.setObjectName("horizontalLayout_2")
         out_le _ ?G...QLineEdit(centralwidget)
         out_le.setObjectName("out_le")

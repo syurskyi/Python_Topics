@@ -18,5 +18,5 @@ ___ qInitResources(
 ___ qCleanupResources(
     ?C...qUnregisterResourceData(0x01, qt_resource_struct, qt_resource_name, qt_resource_data)
 
-qInitResources() # po ymolchanijy zapychena inicializacija resyrsa. Eto znachit shto kogda mu importiryem modyl'
+qInitResources # po ymolchanijy zapychena inicializacija resyrsa. Eto znachit shto kogda mu importiryem modyl'
                  # etot resyrs srazy inicializiryetsja i mozno bydet ego ispolzovat' vnytri nashego skripta

@@ -76,7 +76,7 @@ c_ Ui_MainWindow(object
         grid_value_label _ ?G...QLabel(widget)
         grid_value_label.setObjectName(_fromUtf8("grid_value_label"))
         gridLayout.addWidget(grid_value_label, 3, 2, 1, 1)
-        sine_verticalLayout _ ?G...QVBoxLayout()
+        sine_verticalLayout _ ?G...QVBoxLayout
         sine_verticalLayout.setObjectName(_fromUtf8("sine_verticalLayout"))
         gridLayout.addLayout(sine_verticalLayout, 4, 1, 1, 1)
         MainWindow.setCentralWidget(centralwidget)

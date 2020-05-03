@@ -8,21 +8,21 @@ ____ demoAnimation4 _____ _
 
 c_ MyForm(?D..
     ___  -  
-        s__. - ()
+        s__. - 
         ui _ ?
         ?.sU..
         ?.pushButtonMoveCurve.c___.c..(startAnimation)
-        path _ QPainterPath()
+        path _ QPainterPath
         path.moveTo(30, 30)
         path.cubicTo(30, 30, 80, 180, 180, 170)                
         ?.labelPic.pos _ QPointF(20, 20)
         s..
 
     ___ paintEvent , e          
-        qp _ QPainter()
+        qp _ QPainter
         qp.begin
         qp.drawPath(path)
-        qp.end()  
+        qp.end  
 
     ___ startAnimation 
         anim _ QPropertyAnimation(?.labelPic, b'pos')
@@ -32,7 +32,7 @@ c_ MyForm(?D..
         ___ i in positionValues:
             anim.setKeyValueAt(i, path.pointAtPercent(i))  
         anim.setEndValue(QPointF(160, 150))
-        anim.start()
+        anim.start
         
 __ _ ____ __ _____
     app _ ?A..

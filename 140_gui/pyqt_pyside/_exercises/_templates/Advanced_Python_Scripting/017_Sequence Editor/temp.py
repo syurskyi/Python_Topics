@@ -30,7 +30,7 @@ c_ timeline_item(?G...QGraphicsRectItem
 
     ___ mouseMoveEvent , a_event
         ?G...QGraphicsRectItem.mouseMoveEvent , a_event)
-        f_pos _ pos().x()
+        f_pos _ pos.x
         __ f_pos < 0:
             f_pos _ 0
         setPos(f_pos, mouse_y_pos)
@@ -38,7 +38,7 @@ c_ timeline_item(?G...QGraphicsRectItem
     ___ mouseReleaseEvent , a_event
         ?G...QGraphicsRectItem.mouseReleaseEvent , a_event)
         setGraphicsEffect(None)
-        f_pos_x _ pos().x()
+        f_pos_x _ pos.x
         setPos(f_pos_x, mouse_y_pos)
         print st.(f_pos_x)
 
@@ -63,8 +63,8 @@ c_ timeline(?G...QGraphicsView
         total_tracks _ total_tracks
         item_height _ 65
         padding _ 2
-        draw_headers()
-        draw_grid()
+        draw_headers
+        draw_grid
 
     ___ set_zoom , a_scale
         """ a_scale == number from 1.0 to 6.0 """
@@ -89,7 +89,7 @@ c_ timeline(?G...QGraphicsView
             f_number.setBrush(?C...Qt.white)
 
     ___ draw_grid 
-        f_pen _ ?G...QPen()
+        f_pen _ ?G...QPen
         ___ i in range(1, total_tracks + 1
             f_line _ ?G...QGraphicsLineItem(0, 0, viewer_size, 0)
             f_line.setPos(0, header_height + padding + item_height * i)
@@ -113,7 +113,7 @@ c_ timeline(?G...QGraphicsView
         gradient_index _ 0
         audio_items _ []
         scene.c..
-        draw_headers()
+        draw_headers
 
     ___ draw_item , a_start, a_length, a_name, a_track_num
         """a_start in seconds, a_length in seconds"""

@@ -699,8 +699,8 @@ QTreeView::branch:closed:has-children:has-siblings {
     image: url(:/qss_icons/rc/branch_closed.png);
 }
 
-QTreeView::branch:open:has-children:!has-siblings,
-QTreeView::branch:open:has-children:has-siblings  {
+QTreeView::branch:o..:has-children:!has-siblings,
+QTreeView::branch:o..:has-children:has-siblings  {
     image: url(:/qss_icons/rc/branch_open.png);
 }
 
@@ -709,8 +709,8 @@ QTreeView::branch:closed:has-children:has-siblings:hover {
     image: url(:/qss_icons/rc/branch_closed-on.png);
     }
 
-QTreeView::branch:open:has-children:!has-siblings:hover,
-QTreeView::branch:open:has-children:has-siblings:hover  {
+QTreeView::branch:o..:has-children:!has-siblings:hover,
+QTreeView::branch:o..:has-children:has-siblings:hover  {
     image: url(:/qss_icons/rc/branch_open-on.png);
     }
 

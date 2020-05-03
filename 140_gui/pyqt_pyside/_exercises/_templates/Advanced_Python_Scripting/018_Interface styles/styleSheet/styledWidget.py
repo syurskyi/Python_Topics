@@ -7,14 +7,14 @@ style _ os.path.join(os.path.dirname(__file__), 'style.css')
 
 c_ styleWidgetClass(QMainWindow, ui.Ui_MainWindow
     ___  -  
-        super(styleWidgetClass, self). - ()
+        super(styleWidgetClass, self). -
         setWindowFlags(Qt.WindowStaysOnTopHint)
         setupUi
         treeWidget.setAlternatingRowColors(1)
         pB__.c___.c..(applyStyle)
 
     ___ applyStyle 
-        sSS..(open(style).read())
+        sSS..(o..(style).read())
 
 
 
@@ -22,6 +22,6 @@ c_ styleWidgetClass(QMainWindow, ui.Ui_MainWindow
 __ __name__ __ '__main__':
     os.chdir(os.path.dirname(__file__))
     app _ ?A..([])
-    w _ styleWidgetClass()
+    w _ styleWidgetClass
     w.s..
-    app.exec_()
+    app.exec_

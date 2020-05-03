@@ -8,7 +8,7 @@ ____ demoTwoProgressBarsLocks _____ _
 
 c_ MyForm(?D..
     ___  -
-        s__. - ()
+        s__. - 
         ui _ ?
         ?.sU..
         s..
@@ -23,12 +23,12 @@ c_ myThread (threading.Thread
       
    ___ run
       print ("Starting " + name+"\n")
-      threadLock.acquire()
+      threadLock.acquire
       w__ counter <_100:
           time.sleep(1)
           progreassBar.sV..(counter)
           counter+_10
-      threadLock.release()
+      threadLock.release
       print ("Exiting " + name+"\n")
 
       
@@ -37,15 +37,15 @@ __ _ ____ __ _____
     w _ ?
     thread1 _ myThread(w, w.?.progressBarFileDownload)
     thread2 _ myThread(w, w.?.progressBarVirusScan)
-    threadLock _ threading.Lock()
+    threadLock _ threading.Lock
     threads _ []
-    thread1.start()
-    thread2.start()
-    w.exec()
+    thread1.start
+    thread2.start
+    w.exec
     threads.ap..(thread1)
     threads.ap..(thread2)
     ___ t in threads:
-        t.join()
+        t.join
     ___.e.. ?.e
 
 

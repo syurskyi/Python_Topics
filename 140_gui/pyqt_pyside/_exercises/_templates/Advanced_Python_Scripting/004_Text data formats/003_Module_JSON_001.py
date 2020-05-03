@@ -5,9 +5,9 @@ p _ '/home/sergei/.nuke/example/PYTHON_EXAMPLE/Python_Example_All_Tutorials/VIDE
 
 x _ [1, 2, 3, {1:3}]
 
-json.dump(x, open(p, 'w'))
+json.dump(x, o..(p, 'w'))
 
 
-y _json.load(open(p))
+y _json.load(o..(p))
 
 print(y)

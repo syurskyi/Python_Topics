@@ -18,7 +18,7 @@ ____ multiprocessing _____ Process
 
 c_ eDrum(?G...?W..
     ___  -  , inputDict_None
-        super(eDrum, self). - ()
+        super(eDrum, self). -
 
         # get input dictionary
         inputDict _ inputDict
@@ -27,21 +27,21 @@ c_ eDrum(?G...?W..
         pushButtonOK _ ?G...?PB..("OK")
         pushButtonOK.c___.c..(setPreferences)
 
-        vBoxlayout _ ?G...QVBoxLayout()
-        hBoxlayout _ ?G...QHBoxLayout()
+        vBoxlayout _ ?G...QVBoxLayout
+        hBoxlayout _ ?G...QHBoxLayout
 
         hBoxlayout.addWidget(pushButtonOK)
 
-        table _ ?G...QTableWidget()
+        table _ ?G...QTableWidget
         table.itemChanged.c..(itemChanged)
-        table.horizontalHeader().setMinimumSectionSize(120)
+        table.horizontalHeader.setMinimumSectionSize(120)
 
         vBoxlayout.addWidget(table)
         vBoxlayout.addLayout(hBoxlayout)
 
         setLayout(vBoxlayout)
 
-        setTable()
+        setTable
         setMaximumWidth(350)
         setMinimumWidth(180)
         resize(180, 170)
@@ -70,20 +70,20 @@ c_ pad1(?G...QGraphicsEllipseItem
         # self.setFlag(QtGui.QGraphicsItem.ItemIsMovable, True)
         # self.setFlag(QtGui.QGraphicsItem.ItemIsSelectable, True)
         setAcceptHoverEvents(T..)
-        acceptTouchEvents()
+        acceptTouchEvents
 
         color _ ?G...?C..("Blue")
         setBrush(color)
         setAcceptDrops(T..)
-        acceptTouchEvents()
+        acceptTouchEvents
 
         setToolTip("Click to start song sequence")
 
         # mixer.pre_init(44100,-16,2,2048)
         mixer.pre_init(44100, -16, 2, 512)
         # mixer.init(22100, -16, 2, 64)
-        mixer.init()
-        pygame.midi.init()
+        mixer.init
+        pygame.midi.init
 
     #    def hoverMoveEvent(self, event):
     #        #print "Mouse Entered"
@@ -97,7 +97,7 @@ c_ pad1(?G...QGraphicsEllipseItem
 
     ___ mouseMoveEvent , e
         super(pad1, self).mouseMoveEvent(e)
-        updateConnectors()
+        updateConnectors
 
     ___ updateColor , colorString
         color _ ?G...?C..(colorString)
@@ -107,16 +107,16 @@ c_ pad1(?G...QGraphicsEllipseItem
 
         super(pad1, self).mousePressEvent(e)
 
-        __ e.button() __ ?C...Qt.LeftButton:
+        __ e.button __ ?C...Qt.LeftButton:
             print('left')
             # self.TriggerPad()
-            startSong()
+            startSong
 
-        __ e.button() __ ?C...Qt.RightButton:
+        __ e.button __ ?C...Qt.RightButton:
             print('midi')
             print(pad1.__counter)
             ___
-                mixer.music.stop()
+                mixer.music.stop
                 playing _ False
                 # self.updateColor("Blue")
                 __ pad1.__counter < le.(songListdecoded) - 1:
@@ -195,7 +195,7 @@ c_ pad1(?G...QGraphicsEllipseItem
 
     ___ playSong , songPath, offset
         playing _ T..
-        mixer.init()
+        mixer.init
         mixer.pre_init(44100, -16, 2, 2048)
         mixer.music.load(songPath)
         endEvent _ 234
@@ -207,7 +207,7 @@ c_ pad1(?G...QGraphicsEllipseItem
         mixer.music.play(start_offset)
 
         p _ Thread(target_isPlaying)
-        p.start()
+        p.start
 
     #        while pygame.mixer.music.get_busy():
     # pygame.time.Clock().tick(2)
@@ -243,7 +243,7 @@ c_ pad1(?G...QGraphicsEllipseItem
 
     ___ isPlaying
         w__ pygame.mixer.music.get_busy(
-            pygame.time.Clock().tick(2)
+            pygame.time.Clock.tick(2)
         playing _ False
         # self.updateColor("Blue")
 
@@ -258,24 +258,24 @@ c_ mainWindow(?G...QMainWindow
         midiNote _ None
 
         resize(800, 600)
-        scene _ ?G...QGraphicsScene()
+        scene _ ?G...QGraphicsScene
         centralwidget _ ?G...QGraphicsView(scene)
         # vbox = QtGui.QHBoxLayout()
         qgrid _ ?G...QGridLayout(centralwidget)
         # vbox.addStretch(1)
-        pad1 _ pad1()
+        pad1 _ pad1
         ntabs _ 1
         countTabs _ 0
 
-        tabs _ ?G...QTabWidget()
+        tabs _ ?G...QTabWidget
         tabs.currentChanged.c..(updateDict)
-        tabPad _ ?G...?W..()
-        tabIn _ ?G...?W..()
-        tabPlus _ ?G...?W..()
+        tabPad _ ?G...?W..
+        tabIn _ ?G...?W..
+        tabPlus _ ?G...?W..
 
         tabButton _ ?G...QToolButton
         tabButton.sT..('+')
-        font _ tabButton.font()
+        font _ tabButton.font
         font.setBold(T..)
         tabButton.sF..(font)
         tabButton.setToolTip("Click to add new songs sequence")
@@ -286,17 +286,17 @@ c_ mainWindow(?G...QMainWindow
         tabs.tabCloseRequested.c..(closeTab)
 
         # createting V layout
-        vBox _ ?G...QVBoxLayout()
+        vBox _ ?G...QVBoxLayout
 
         # midi note and midi output
-        hBoxlayout _ ?G...QHBoxLayout()
+        hBoxlayout _ ?G...QHBoxLayout
         linedit _ ?G...QLineEdit("")
         linedit.setPlaceholderText("Set Midi Note for Song Sequence")
         # self.linedit.setEnabled(False)
         linedit.tC...c..(setMidiNote)
 
         # add combo selection
-        createCombo()
+        createCombo
 
         # add combo and qline to H layout
         hBoxlayout.addWidget(combo)
@@ -310,14 +310,14 @@ c_ mainWindow(?G...QMainWindow
         scene.aI..(pad1)
 
         # add midi note hitted
-        bottom _ ?G...QFrame()
+        bottom _ ?G...QFrame
         bottom.setFrameShape(?G...QFrame.StyledPanel)
         bottom.setMaximumHeight(20)
 
         infoline _ ?G...QLineEdit("")
         infoline.setReadOnly(T..)
 
-        statusBar _ ?G...QStatusBar()
+        statusBar _ ?G...QStatusBar
         # statusBar.setMaximumHeight(10)
         statusBar.setFixedHeight(20)
 
@@ -343,20 +343,20 @@ c_ mainWindow(?G...QMainWindow
         # ---------------------------------------------------------------
         # add tabs to app
         tabs.addTab(tabPad, "Play")
-        createTab()
+        createTab
 
         # ---------------------------------------------------------------
         # add menu file
-        menubar _ menuBar()
+        menubar _ menuBar
         fileMenu _ menubar.addMenu('&File')
 
-        openAction _ ?G...QAction('Open', self)
+        openAction _ ?G...?A__('Open', self)
         openAction.setShortcut('Ctrl+O')
-        openAction.triggered.c..(openFile)
+        openAction.t__.c..(openFile)
 
-        saveAction _ ?G...QAction('Save', self)
+        saveAction _ ?G...?A__('Save', self)
         saveAction.setShortcut('Ctrl+S')
-        saveAction.triggered.c..(saveFile)
+        saveAction.t__.c..(saveFile)
 
         # appending actions in file menu
         fileMenu.addAction(openAction)
@@ -367,13 +367,13 @@ c_ mainWindow(?G...QMainWindow
 
         midiMenu _ menubar.addMenu('&Midi_Device')
 
-        refreshAction _ ?G...QAction('Refresh', self)
+        refreshAction _ ?G...?A__('Refresh', self)
         refreshAction.setShortcut('F5')
-        refreshAction.triggered.c..(midiDevice)
+        refreshAction.t__.c..(midiDevice)
 
-        refreshAction2 _ ?G...QAction('Refresh 2', self)
+        refreshAction2 _ ?G...?A__('Refresh 2', self)
         refreshAction2.setShortcut('F6')
-        refreshAction2.triggered.c..(midiDevice)
+        refreshAction2.t__.c..(midiDevice)
 
         # appending actions in file menu
         midiMenu.addAction(refreshAction)
@@ -394,14 +394,14 @@ c_ mainWindow(?G...QMainWindow
 
     ___ setMidiNote
         # print("set midi note")
-        midiNote _ int(sender().t..())
+        midiNote _ int(sender.t..())
         # print(self.midiNote)
 
     ___ midiDevice
         deviceList _ {}
         # set up pygame
-        pygame.init()
-        pygame.midi.init()
+        pygame.init
+        pygame.midi.init
 
         # list all midi devices, maximum of 10
         device _ [None] * 10
@@ -414,9 +414,9 @@ c_ mainWindow(?G...QMainWindow
             __ device[2] __ 1:
                 print(st.(device[1]))
 
-                device[index] _ ?G...QAction(st.(device[1]), self, checkable_T..)
+                device[index] _ ?G...?A__(st.(device[1]), self, checkable_T..)
                 # self.device[index].setShortcut('F6')
-                device[index].triggered.c..(setMidiDevice)
+                device[index].t__.c..(setMidiDevice)
                 midiMenu.addAction(device[index])
 
                 #                 self.device[index] = QtGui.QAction(device[1] , self) #, checkable=True)
@@ -432,7 +432,7 @@ c_ mainWindow(?G...QMainWindow
 
     ___ setMidiDevice
         print("setMidiDevice")
-        sender _ sender().t..()
+        sender _ sender.t..
         print(sender)
         print(type(sender))
 
@@ -453,7 +453,7 @@ c_ mainWindow(?G...QMainWindow
         getMidi _ T..
         # starting midi looping event
         p _ Thread(target_getMidiEvent)
-        p.start()
+        p.start
 
     ___ getMidiEvent
 
@@ -477,7 +477,7 @@ c_ mainWindow(?G...QMainWindow
 
                 __ midiint > 10 an. midinote __ midiNote:
                     s _ Thread(target_pad1.startSong)
-                    s.start()
+                    s.start
                     # pygame.time.wait(20)
 
                     # pygame.time.wait(200)
@@ -494,8 +494,8 @@ c_ mainWindow(?G...QMainWindow
     ___ openFile
         print("open")
 
-        filename _ ?G...QFileDialog.getOpenFileName , 'Open File', os.getenv('HOME'), "oss *.*")
-        f _ open(filename, 'r')
+        filename _ ?G...?FD__.gOFN.. , 'Open File', os.getenv('HOME'), "oss *.*")
+        f _ o..(filename, 'r')
         json _ json.loads(f.read())
         f.c..
 
@@ -508,9 +508,9 @@ c_ mainWindow(?G...QMainWindow
         pad1.inputDict _ songDict
 
         # update combo selection
-        updateCombo()
+        updateCombo
 
-        updateTabs()
+        updateTabs
 
         # setting tab and tables
 
@@ -540,15 +540,15 @@ c_ mainWindow(?G...QMainWindow
         print("save")
         updateDict(1)
         jsonvar _ json.dumps(pad1.inputDict, indent_4)
-        filename _ ?G...QFileDialog.getSaveFileName , 'Save File', os.getenv('HOME'), 'oss')
+        filename _ ?G...?FD__.gSFN.. , 'Save File', os.getenv('HOME'), 'oss')
 
         __ os.path.exists(filename
             os.remove(filename)
 
         __ filename:
             ___
-                f _ open(filename, 'w')
-                f.write(jsonvar)
+                f _ o..(filename, 'w')
+                f.w..(jsonvar)
                 f.c..
             _____ ValueError:
                 print("Oops!  That was not a valid path.  Try again...")
@@ -561,14 +561,14 @@ c_ mainWindow(?G...QMainWindow
     ___ songSequence
         # tab for input -------------------------------------------
 
-        index _ tabs.cI..() + 1
-        s _ songCreator()
+        index _ tabs.cI.. + 1
+        s _ songCreator
         tabs.addTab(s, "Song Sequence_" + st.(index))
 
     ___ deleteTab
         print("delete tab")
         # print(index)
-        sending_button _ sender()
+        sending_button _ sender
 
         print(dir(sending_button))
         # self.status_label.setText('%s Clicked!' % str(sending_button.objectName()))
@@ -580,15 +580,15 @@ c_ mainWindow(?G...QMainWindow
         ___ i in range(ntabs
             print("index=", i)
             tabs.setCurrentIndex(i)
-            tabs.cI..()
+            tabs.cI..
 
         ntabs -_ 1
 
     ___ createTab
 
-        index _ tabs.cI..()
+        index _ tabs.cI..
         print(index)
-        curtab _ tabs.currentWidget()
+        curtab _ tabs.currentWidget
 
         countTabs +_ 1
         s _ songCreator(tabs)
@@ -605,7 +605,7 @@ c_ mainWindow(?G...QMainWindow
             __ key in songDict:
                 del songDict[key]
             currentQWidget _ tabs.widget(cI..)
-            currentQWidget.deleteLater()
+            currentQWidget.deleteLater
             tabs.removeTab(cI..)
 
         ____
@@ -614,7 +614,7 @@ c_ mainWindow(?G...QMainWindow
     ___ updateDict , index
         print("updateDict")
         print(index)
-        curindex _ tabs.cI..()
+        curindex _ tabs.cI..
         __ curindex __ 0:
             ___ elem in songDict:
                 print(elem)
@@ -624,12 +624,12 @@ c_ mainWindow(?G...QMainWindow
                 # w = self.tabs.currentWidget()
                 w _ tabs.widget(tabid)
                 print(w.table)
-                numRows _ w.table.rowCount()
+                numRows _ w.table.rowCount
                 print(numRows)
                 ___ row in range(numRows
-                    c _ w.table.item(row, 0).t..()
-                    s _ w.table.item(row, 1).t..()
-                    o _ w.table.item(row, 2).t..()
+                    c _ w.table.item(row, 0).t..
+                    s _ w.table.item(row, 1).t..
+                    o _ w.table.item(row, 2).t..
                     songDict[elem]["song"].ap..([c, s, o])
             tabs.setCurrentIndex(0)
             print(songDict)
@@ -638,16 +638,16 @@ c_ mainWindow(?G...QMainWindow
             pad1.inputDict _ songDict
 
             # update combo selection
-            updateCombo()
+            updateCombo
 
-            index _ combo.cI..()
+            index _ combo.cI..
 
             pad1.seq _ combo.iT..(index)
             pad1.__counter _ 0
-            pad1.TriggerPad()
+            pad1.TriggerPad
 
     ___ createCombo
-        combo _ ?G...QComboBox()
+        combo _ ?G...QComboBox
         combo.activated['QString'].c..(handleActivated)
         combo.cIC..['QString'].c..(handleChanged)
         combo.setMinimumWidth(350)
@@ -662,14 +662,14 @@ c_ mainWindow(?G...QMainWindow
 
     ___ handleActivated
         print("Activate")
-        index _ combo.cI..()
+        index _ combo.cI..
         print(combo.iT..(index))
         pad1.seq _ combo.iT..(index)
         # self.pad1.TriggerPad()
 
     ___ handleChanged
         print("Change")
-        index _ combo.cI..()
+        index _ combo.cI..
         print(combo.iT..(index))
         pad1.seq _ combo.iT..(index)
         # self.pad1.TriggerPad()
@@ -677,7 +677,7 @@ c_ mainWindow(?G...QMainWindow
 
 c_ songCreator(?G...QTabWidget
     ___  -  , tabs, songList_None
-        super(songCreator, self). - ()
+        super(songCreator, self). -
 
         tableIndex _ 0
         # tab for input -------------------------------------------
@@ -689,13 +689,13 @@ c_ songCreator(?G...QTabWidget
         # self.pushButton3 = QtGui.QPushButton("Delete Entire Sequence")
         # self.pushButton3.clicked.connect(self.deleteTab)
 
-        vBoxlayout _ ?G...QVBoxLayout()
-        hBoxlayout _ ?G...QHBoxLayout()
+        vBoxlayout _ ?G...QVBoxLayout
+        hBoxlayout _ ?G...QHBoxLayout
 
         hBoxlayout.addWidget(pushButton1)
         hBoxlayout.addWidget(pushButton2)
 
-        table _ ?G...QTableWidget()
+        table _ ?G...QTableWidget
         table.setColumnCount(3)
         table.setHorizontalHeaderLabels(["  Counter ", "  Song  ", "  offset   "])
         # self.table.itemChanged.connect(self.itemChanged)
@@ -718,7 +718,7 @@ c_ songCreator(?G...QTabWidget
         index _ tableIndex
         print("index = %i" % index)
         table.setRowCount(tableIndex + 1)
-        filename _ ?G...QFileDialog.getOpenFileName , 'Open File', os.getenv('HOME'), "song files (*.mp3 *.wav)")
+        filename _ ?G...?FD__.gOFN.. , 'Open File', os.getenv('HOME'), "song files (*.mp3 *.wav)")
 
         # adding default variable name to table
         default_name _ ?G...?TWI..("1")
@@ -732,12 +732,12 @@ c_ songCreator(?G...QTabWidget
 
         tableIndex +_ 1
         # setting table format
-        table.resizeColumnsToContents()
-        table.resizeRowsToContents()
+        table.resizeColumnsToContents
+        table.resizeRowsToContents
 
     ___ deletesong
         print("delete item")
-        rows _ sorted(set(index.row() ___ index in
+        rows _ sorted(set(index.row ___ index in
                           table.selectedIndexes()))
         l _ le.(rows)
         ___ row in rows:
@@ -763,26 +763,26 @@ c_ songCreator(?G...QTabWidget
 
         tableIndex _ index
         # setting table format
-        table.resizeColumnsToContents()
-        table.resizeRowsToContents()
+        table.resizeColumnsToContents
+        table.resizeRowsToContents
 
 
 c_ Player(
     ___  - (songPath, offset
-        mixer.init()
+        mixer.init
         mixer.music.load(songPath)
-        mixer.music.play()
+        mixer.music.play
         w__ pygame.mixer.music.get_busy(
-            pygame.time.Clock().tick(10)
+            pygame.time.Clock.tick(10)
 
 
 ___ main(
     app _ ?G...?A..([])
     # ex = Canvas()
-    ex _ mainWindow()
+    ex _ mainWindow
     ex.s..
     ___.e.. ?.e
 
 
 __ __name__ __ '__main__':
-    main()
+    main

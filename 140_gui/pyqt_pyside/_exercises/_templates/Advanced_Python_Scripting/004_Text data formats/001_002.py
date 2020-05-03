@@ -8,33 +8,33 @@ c_ settingClass(object
 	___  -  
 		fullPath _ os.path.join(path, fileName)
 		__ not os.path.exists(fullPath
-			open(fullPath, 'w').c..
+			o..(fullPath, 'w').c..
 
 	___ __readFile 
-		f _ open(fullPath)
-		t.. _ f.readlines()
+		f _ o..(fullPath)
+		t.. _ f.readlines
 		f.c..
 		# data = {}
 		___ line __ t..:
-			key, value _ line.strip().split("=")
+			key, value _ line.strip.split("=")
 			# data[key] = value
 			print(key, value)
 		# return data
 
 	___ __writeFile , data
-		f _ open(fullPath, 'w')
+		f _ o..(fullPath, 'w')
 		___ k, v __ data.items(
-			f.write('%s=%s\n' % (k, v))
+			f.w..('%s=%s\n' % (k, v))
 		f.c..
 
 	___ readSetting 
-		data _ __readFile()
+		data _ __readFile
 		r_ data
 
 
 	___ writeSetting , data
 		# check
-		__writeFile()
+		__writeFile
 
 
 	___ readValue , key
@@ -43,7 +43,7 @@ c_ settingClass(object
 	___ writeValue , key, value
 		pass
 
-s _ settingClass()
+s _ settingClass
 # d = {'key1':1, 'key2':2}
 # s.writeSetting(d)
-s.readSetting()
+s.readSetting

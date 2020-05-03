@@ -21,7 +21,7 @@ c_ Ui_example(object
         name_le _ ?G...QLineEdit(example)
         name_le.setObjectName("name_le")
         verticalLayout_2.addWidget(name_le)
-        items_ly _ ?G...QVBoxLayout()
+        items_ly _ ?G...QVBoxLayout
         items_ly.setObjectName("items_ly")
         verticalLayout_2.addLayout(items_ly)
         spacerItem _ ?G...QSpacerItem(20, 40, ?G...QSizePolicy.Minimum, ?G...QSizePolicy.Expanding)

@@ -37,7 +37,7 @@ __ projectname:
     build(fullPath, folders)
 
 print(projectname)
-raw_input()
+raw_input
 
 
 

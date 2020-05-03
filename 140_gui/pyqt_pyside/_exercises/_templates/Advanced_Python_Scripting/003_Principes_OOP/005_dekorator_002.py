@@ -1,7 +1,7 @@
 ___ decorator(f
     ___ wrapper(
         print('before')
-        f()
+        f
         print('after')
     r_ wrapper
 
@@ -9,7 +9,7 @@ ___ decorator(f
 ___ f1(
     print('function')
 
-f1()
+f1
 
 ___ decorator(f
     ___ wrapper(arg
@@ -22,6 +22,6 @@ ___ decorator(f
 ___ f1(x
     print('function', x)
 
-print()
+print
 f1(12)
 

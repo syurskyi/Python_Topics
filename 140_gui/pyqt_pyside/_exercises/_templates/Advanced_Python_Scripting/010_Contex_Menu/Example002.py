@@ -12,10 +12,10 @@ c_ TableWidget(QTableWidget
         quitAction _ menu.addAction("Quit")
         action _ menu.exec_(mapToGlobal(event.pos()))
         __ action __ quitAction:
-            qApp.quit()
+            qApp.quit
 
 
 app _ ?A..([])
-tableWidget _ TableWidget()
+tableWidget _ TableWidget
 tableWidget.s..
 ___.e.. ?.e

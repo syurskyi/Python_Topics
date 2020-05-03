@@ -33,7 +33,7 @@ c_ Ui_Server(object
         progress_pbr.setProperty("value", 0)
         progress_pbr.setObjectName(_fromUtf8("progress_pbr"))
         verticalLayout.addWidget(progress_pbr)
-        horizontalLayout _ ?G...QHBoxLayout()
+        horizontalLayout _ ?G...QHBoxLayout
         horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
         info_lb _ ?G...QLabel(Server)
         info_lb.setObjectName(_fromUtf8("info_lb"))

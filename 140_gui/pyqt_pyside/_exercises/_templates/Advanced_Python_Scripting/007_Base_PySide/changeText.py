@@ -5,7 +5,7 @@ ____ PySide.?G.. _____ _
 
 c_ SimpleWindowClass(?W..
     ___  -  
-        super(SimpleWindowClass, self). - ()
+        super(SimpleWindowClass, self). - 
         layout _ QVBoxLayout
         label _ QLabel('Text')
         layout.addWidget(label)
@@ -21,6 +21,6 @@ c_ SimpleWindowClass(?W..
 
 __ __name__ __ '__main__':
     app _ ?A..([])
-    w _ SimpleWindowClass()
+    w _ SimpleWindowClass
     w.s..
-    app.exec_()
+    app.exec_

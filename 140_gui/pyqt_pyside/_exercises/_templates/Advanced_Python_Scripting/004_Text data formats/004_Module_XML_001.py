@@ -4,7 +4,7 @@ p _ '/Users/sergejyurskyj/.nuke/example/PYTHON_EXAMPLE/Python_Example_All_Tutori
     '004_Text data formats/example1.xml'
 
 tree _ ET.parse(p)
-root _ tree.getroot()
+root _ tree.getroot
 elem _ root.find('element')
 elem.tag
 # print(elem.attrib)

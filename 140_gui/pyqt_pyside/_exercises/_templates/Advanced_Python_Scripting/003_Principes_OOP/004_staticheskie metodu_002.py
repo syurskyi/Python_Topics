@@ -4,7 +4,7 @@ c_ someClass(object
         __class__.count +_ 1
 
 
-c _ someClass()
+c _ someClass
 print(c.count)
-f _ someClass()
+f _ someClass
 print(f.count)

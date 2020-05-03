@@ -7,12 +7,12 @@ ____ demoShowRecords _____ *
 rowNo_1
 sqlStatement_"SELECT EmailAddress, Password FROM Users"
 conn _ sqlite3.c..("ECommerce.db")
-cur _ conn.cursor()
+cur _ conn.cursor
 
 c_ MyForm(?D..
 
     ___  -
-        s__. - ()
+        s__. -
         ui _ ?
         ?.sU..
         cur.execute(sqlStatement)
@@ -25,7 +25,7 @@ c_ MyForm(?D..
     ___ ShowFirstRow
         ___
             cur.execute(sqlStatement)
-            row_cur.fetchone()
+            row_cur.fetchone
             __ row:
                 ?.lineEditEmailAddress.sT..(row[0])
                 ?.lineEditPassword.sT..(row[1])
@@ -38,7 +38,7 @@ c_ MyForm(?D..
         rowNo -_ 1
         sqlStatement_"SELECT EmailAddress, Password FROM Users where rowid="+st.(rowNo)
         cur.execute(sqlStatement)
-        row_cur.fetchone()
+        row_cur.fetchone
         __ row:
             ?.lR___.sT..("")
             ?.lineEditEmailAddress.sT..(row[0])
@@ -53,7 +53,7 @@ c_ MyForm(?D..
         rowNo +_ 1
         sqlStatement_"SELECT EmailAddress, Password FROM Users where rowid="+st.(rowNo)
         cur.execute(sqlStatement)
-        row_cur.fetchone()
+        row_cur.fetchone
         __ row:
             ?.lR___.sT..("")
             ?.lineEditEmailAddress.sT..(row[0])

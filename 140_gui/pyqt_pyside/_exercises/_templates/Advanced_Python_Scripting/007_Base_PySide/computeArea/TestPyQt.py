@@ -8,7 +8,7 @@ ____ PyQt4.?G.. _____ _
 a _ ?A..
 
 # The QWidget widget is the base class of all user interface objects in PyQt4.
-w _ ?W..()
+w _ ?W..
 
 # Set window size.
 w.resize(320, 240)

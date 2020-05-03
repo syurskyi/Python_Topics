@@ -6,7 +6,7 @@ ____ demoTabWidget _____ _
 
 c_ MyForm(?D..
     ___  -
-        s__. - ()
+        s__. -
         ui _ ?
         ?.sU..
         s..

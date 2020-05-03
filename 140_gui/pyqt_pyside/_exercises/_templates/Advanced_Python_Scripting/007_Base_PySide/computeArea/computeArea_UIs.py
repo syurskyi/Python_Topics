@@ -35,7 +35,7 @@ c_ Ui_computeArea(object
         verticalLayout_2 _ ?G...QVBoxLayout(layoutWidget)
         verticalLayout_2.setContentsMargins(0, 0, 0, 0)
         verticalLayout_2.setObjectName("verticalLayout_2")
-        horizontalLayout _ ?G...QHBoxLayout()
+        horizontalLayout _ ?G...QHBoxLayout
         horizontalLayout.setObjectName("horizontalLayout")
         label _ ?G...QLabel(layoutWidget)
         label.setMinimumSize(?C...QSize(70, 0))
@@ -49,7 +49,7 @@ c_ Ui_computeArea(object
         horizontalLayout.addWidget(square_height_spx)
         horizontalLayout.setStretch(1, 1)
         verticalLayout_2.addLayout(horizontalLayout)
-        horizontalLayout_2 _ ?G...QHBoxLayout()
+        horizontalLayout_2 _ ?G...QHBoxLayout
         horizontalLayout_2.setObjectName("horizontalLayout_2")
         label_2 _ ?G...QLabel(layoutWidget)
         label_2.setMinimumSize(?C...QSize(70, 0))

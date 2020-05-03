@@ -6,7 +6,7 @@ ____ PySide.?G.. _____ _
 
 c_ listWidgetClass(QListWidget
     ___  -  
-        super(listWidgetClass, self). - ()
+        super(listWidgetClass, self). -
         setWindowFlags(Qt.WindowStaysOnTopHint)
         setDragDropMode(QAbstractItemView.DropOnly)
 
@@ -21,11 +21,11 @@ c_ listWidgetClass(QListWidget
     #         # print mimedata.urls()
     #
     ___ dragEnterEvent , event
-        event.accept()
+        event.accept
         print 'ENTER', type(event)
 
     ___ dragMoveEvent , event
-        event.accept()
+        event.accept
         # print 'MOVE'
 
 
@@ -37,8 +37,8 @@ __ __name__ __ '__main__':
         _____ nuke
     _____ ImportError:
         app _ ?A..
-    main _ listWidgetClass()
+    main _ listWidgetClass
     main.s..
 
     __ app is not None:
-        app.exec_()
+        app.exec_

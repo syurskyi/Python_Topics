@@ -6,24 +6,24 @@ ____ demoMenuBar _____ _
 
 c_ AppWindow(QMainWindow
     ___  -  
-        s__. - ()
-        ui _ Ui_MainWindow()
+        s__. - 
+        ui _ Ui_MainWindow
         ?.sU..
         pos1 _ [0,0]
         pos2 _ [0,0]
         toDraw_""
-        ?.actionDraw_Circle.triggered.c..(drawCircle)
-        ?.actionDraw_Rectangle.triggered.c..(drawRectangle)
-        ?.actionDraw_Line.triggered.c..(drawLine)
-        ?.actionPage_Setup.triggered.c..(pageSetup)
-        ?.actionSet_Password.triggered.c..(setPassword)
-        ?.actionCut.triggered.c..(cutMethod)
-        ?.actionCopy.triggered.c..(copyMethod)
-        ?.actionPaste.triggered.c..(pasteMethod)
+        ?.actionDraw_Circle.t__.c..(drawCircle)
+        ?.actionDraw_Rectangle.t__.c..(drawRectangle)
+        ?.actionDraw_Line.t__.c..(drawLine)
+        ?.actionPage_Setup.t__.c..(pageSetup)
+        ?.actionSet_Password.t__.c..(setPassword)
+        ?.actionCut.t__.c..(cutMethod)
+        ?.actionCopy.t__.c..(copyMethod)
+        ?.actionPaste.t__.c..(pasteMethod)
         s..
 
     ___ paintEvent , event
-        qp _ QPainter()
+        qp _ QPainter
         qp.begin
         __ toDraw__"rectangle":
             width _ pos2[0]-pos1[0]
@@ -38,15 +38,15 @@ c_ AppWindow(QMainWindow
             startAngle _ 0
             arcLength _ 360 *16
             qp.drawArc(rect, startAngle, arcLength)      
-        qp.end()
+        qp.end
         
     ___ mousePressEvent , event
-        __ event.buttons() & ?C...Qt.LeftButton:
-            pos1[0], pos1[1] _ event.pos().x(), event.pos().y()
+        __ event.buttons & ?C...Qt.LeftButton:
+            pos1[0], pos1[1] _ event.pos.x, event.pos.y
                         
     ___ mouseReleaseEvent , event
-        pos2[0], pos2[1] _ event.pos().x(), event.pos().y()    
-        update()
+        pos2[0], pos2[1] _ event.pos.x, event.pos.y    
+        update
                
     ___ drawCircle 
         ?.label.sT..("")
@@ -76,7 +76,7 @@ c_ AppWindow(QMainWindow
         ?.label.sT..("Paste menu item is selected")
 
 app _ ?A..
-w _ AppWindow()
+w _ AppWindow
 w.s..
 ___.e.. ?.e
 

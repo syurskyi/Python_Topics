@@ -14,4 +14,4 @@ __ newName:
         # print(fullPath)
         os.rename(f, fullPath)
 
-raw_input()
+raw_input

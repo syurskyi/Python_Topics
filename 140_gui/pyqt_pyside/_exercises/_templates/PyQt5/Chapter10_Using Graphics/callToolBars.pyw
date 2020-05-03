@@ -6,19 +6,19 @@ ____ demoToolBars _____ *
 
 c_ AppWindow(QMainWindow
     ___  -
-        s__. - ()
-        ui _ Ui_MainWindow()
+        s__. - 
+        ui _ Ui_MainWindow
         ?.setupUi
         pos1 _ [0,0]
         pos2 _ [0,0]
         toDraw_""
-        ?.actionCircle.triggered.c..(drawCircle)
-        ?.actionRectangle.triggered.c..(drawRectangle)
-        ?.actionLine.triggered.c..(drawLine)
+        ?.actionCircle.t__.c..(drawCircle)
+        ?.actionRectangle.t__.c..(drawRectangle)
+        ?.actionLine.t__.c..(drawLine)
         s..
 
     ___ paintEvent , event
-        qp _ QPainter()
+        qp _ QPainter
         qp.begin
         __ toDraw__"rectangle":
             width _ pos2[0]-pos1[0]
@@ -33,15 +33,15 @@ c_ AppWindow(QMainWindow
             startAngle _ 0
             arcLength _ 360 *16
             qp.drawArc(rect, startAngle, arcLength)      
-        qp.end()
+        qp.end
         
     ___ mousePressEvent , event
-        __ event.buttons() & ?C...Qt.LeftButton:
-            pos1[0], pos1[1] _ event.pos().x(), event.pos().y()
+        __ event.buttons & ?C...Qt.LeftButton:
+            pos1[0], pos1[1] _ event.pos.x, event.pos.y
                         
     ___ mouseReleaseEvent , event
-        pos2[0], pos2[1] _ event.pos().x(), event.pos().y()
-        update()
+        pos2[0], pos2[1] _ event.pos.x, event.pos.y
+        update
                
     ___ drawCircle
         toDraw_"circle"
@@ -53,7 +53,7 @@ c_ AppWindow(QMainWindow
         toDraw_"line"
 
 app _ ?A..
-w _ AppWindow()
+w _ AppWindow
 w.s..
 ___.e.. ?.e
 

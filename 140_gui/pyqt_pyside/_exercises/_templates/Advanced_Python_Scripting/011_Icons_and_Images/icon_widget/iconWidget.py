@@ -10,7 +10,7 @@ ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID('mycompany.myprodu
 
 c_ iconWidgetClass(QMainWindow, ui.Ui_MainWindow
     ___  -  
-        super(iconWidgetClass, self). - ()
+        super(iconWidgetClass, self). - 
         setupUi
         # ui
         setWindowIcon(QIcon(icons['create']))
@@ -45,13 +45,13 @@ c_ iconWidgetClass(QMainWindow, ui.Ui_MainWindow
         #connects
         fill_btn.c___.c..(filList)
         clear_btn.c___.c..(clearList)
-        fill_act.triggered.c..(fillCombo)
-        clear_act.triggered.c..(clearCombo)
+        fill_act.t__.c..(fillCombo)
+        clear_act.t__.c..(clearCombo)
 
 
     ___ filList 
         path _ os.path.join(os.path.dirname(__file__), 'textures')
-        clearList()
+        clearList
         ___ i __ os.listdir(path
             item _ ?LWI..(i)
             item.setIcon( QIcon( os.path.join(path, i) ) )
@@ -60,7 +60,7 @@ c_ iconWidgetClass(QMainWindow, ui.Ui_MainWindow
         list_lwd.c..
 
     ___ fillCombo 
-        clearCombo()
+        clearCombo
         ___ i __ range(10
             combo_cbb.aI..('Item %s' % i)
             combo_cbb.setItemIcon(i, getRandomIcon())
@@ -72,6 +72,6 @@ c_ iconWidgetClass(QMainWindow, ui.Ui_MainWindow
 
 __ __name__ __ '__main__':
     app _ ?A..([])
-    w _ iconWidgetClass()
+    w _ iconWidgetClass
     w.s..
-    app.exec_()
+    app.exec_

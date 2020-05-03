@@ -9,12 +9,12 @@ c_ TableWidget(QTableWidget
         QTableWidget. -  , parent)
         setContextMenuPolicy(Qt.ActionsContextMenu)
 
-        quitAction _ QAction("Quit", self)
-        quitAction.triggered.c..(qApp.quit)
+        quitAction _ ?A__("Quit", self)
+        quitAction.t__.c..(qApp.quit)
         addAction(quitAction)
 
 
 app _ ?A..([])
-tableWidget _ TableWidget()
+tableWidget _ TableWidget
 tableWidget.s..
 ___.e.. ?.e

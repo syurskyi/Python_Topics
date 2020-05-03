@@ -856,9 +856,9 @@ ___ _wrapinstance(func, ptr, base_None
 
     __ base is None:
         q_object _ func(long(ptr), Qt.?C...QObject)
-        meta_object _ q_object.metaObject()
-        class_name _ meta_object.className()
-        super_class_name _ meta_object.superClass().className()
+        meta_object _ q_object.metaObject
+        class_name _ meta_object.className
+        super_class_name _ meta_object.superClass.className
 
         __ hasattr(Qt.?W.., class_name
             base _ getattr(Qt.?W.., class_name)
@@ -915,7 +915,7 @@ ___ _build_compatibility_members(binding, decorators_None
 
     """
 
-    decorators _ decorators or dict()
+    decorators _ decorators or dict
 
     # Allow optional site-level customization of the compatibility members.
     # This method does not need to be implemented in QtSiteConfig.
@@ -1000,7 +1000,7 @@ ___ _pyside2(
         Qt.QtCompat.loadUi _ _loadUi
 
     __ hasattr(Qt, "_QtCore"
-        Qt.__qt_version__ _ Qt._QtCore.qVersion()
+        Qt.__qt_version__ _ Qt._QtCore.qVersion
         Qt.QtCompat.translate _ Qt._QtCore.QCoreApplication.translate
 
     __ hasattr(Qt, "_QtWidgets"
@@ -1047,7 +1047,7 @@ ___ _pyside(
         Qt.QtCompat.setSectionResizeMode _ Qt._?G...QHeaderView.setResizeMode
 
     __ hasattr(Qt, "_QtCore"
-        Qt.__qt_version__ _ Qt._QtCore.qVersion()
+        Qt.__qt_version__ _ Qt._QtCore.qVersion
         QCoreApplication _ Qt._QtCore.QCoreApplication
         Qt.QtCompat.translate _ (
             lambda context, sourceText, disambiguation, n:
@@ -1130,7 +1130,7 @@ ___ _pyqt4(
             ____
                 # Having provided a hint indicates a soft constraint, one
                 # that doesn't throw an exception.
-                ___.stderr.write(
+                ___.stderr.w..(
                     "Warning: API '%s' has already been set to %d.\n"
                     % (api, actual)
                 )
@@ -1206,7 +1206,7 @@ ___ _pyqt4(
 ___ _none(
     """Internal option (used in installer)"""
 
-    Mock _ type("Mock", (), {"__getattr__": lambda Qt, attr: None})
+    Mock _ type("Mock", , {"__getattr__": lambda Qt, attr: None})
 
     Qt.__binding__ _ "None"
     Qt.__qt_version__ _ "0.0.0"
@@ -1221,7 +1221,7 @@ ___ _none(
 
 ___ _log(t..
     __ QT_VERBOSE:
-        ___.stdout.write(t.. + "\n")
+        ___.stdout.w..(t.. + "\n")
 
 
 ___ _loadUi(uifile, baseinstance_None
@@ -1274,14 +1274,14 @@ ___ _loadUi(uifile, baseinstance_None
                 # For whatever reason, if this doesn't happen then
                 # reading an invalid or non-existing .ui file throws
                 # a RuntimeError.
-                etree _ ElementTree()
+                etree _ ElementTree
                 etree.parse(uifile)
 
                 widget _ Qt._QtUiTools.QUiLoader.load(
                     self, uifile, *args, **kwargs)
 
                 # Workaround for PySide 1.0.9, see issue #208
-                widget.parentWidget()
+                widget.parentWidget
 
                 r_ widget
 
@@ -1299,7 +1299,7 @@ ___ _loadUi(uifile, baseinstance_None
 
                 # For some reason, Line is not in the list of available
                 # widgets, but works fine, so we have to special case it here.
-                __ class_name in availableWidgets() + ["Line"]:
+                __ class_name in availableWidgets + ["Line"]:
                     # Create a new widget for child widgets
                     widget _ Qt._QtUiTools.QUiLoader.createWidget ,
                                                                   class_name,
@@ -1349,7 +1349,7 @@ ___ _convert(lines
                                       "your ui files.")
         r_ line
 
-    parsed _ list()
+    parsed _ list
     ___ line in lines:
         line _ parse(line)
         parsed.ap..(line)
@@ -1361,7 +1361,7 @@ ___ _cli(args
     """Qt.py command-line interface"""
     _____ argparse
 
-    parser _ argparse.ArgumentParser()
+    parser _ argparse.ArgumentParser
     parser.add_argument("--convert",
                         help_"Path to compiled Python module, e.g. my_ui.py")
     parser.add_argument("--compile",
@@ -1386,7 +1386,7 @@ ___ _cli(args
         raise NotImplementedError("--compile")
 
     __ args.convert:
-        ___.stdout.write("#\n"
+        ___.stdout.w..("#\n"
                          "# WARNING: --convert is an ALPHA feature.\n#\n"
                          "# See https://github.com/mottosso/Qt.py/pull/132\n"
                          "# for details.\n"
@@ -1395,20 +1395,20 @@ ___ _cli(args
         #
         # ------> Read
         #
-        w__ open(args.convert) __ f:
+        w__ o..(args.convert) __ f:
             lines _ _convert(f.readlines())
 
         backup _ "%s_backup%s" % os.path.splitext(args.convert)
-        ___.stdout.write("Creating \"%s\"..\n" % backup)
+        ___.stdout.w..("Creating \"%s\"..\n" % backup)
         shutil.copy(args.convert, backup)
 
         #
         # <------ Write
         #
-        w__ open(args.convert, "w") __ f:
-            f.write("".join(lines))
+        w__ o..(args.convert, "w") __ f:
+            f.w..("".join(lines))
 
-        ___.stdout.write("Successfully converted \"%s\"\n" % args.convert)
+        ___.stdout.w..("Successfully converted \"%s\"\n" % args.convert)
 
 
 ___ _install(
@@ -1431,14 +1431,14 @@ ___ _install(
     _log("Order: '%s'" % "', '".join(order))
 
     # Allow site-level customization of the available modules.
-    _apply_site_config()
+    _apply_site_config
 
     found_binding _ False
     ___ name in order:
         _log("Trying %s" % name)
 
         ___
-            available[name]()
+            available[name]
             found_binding _ T..
             break
 
@@ -1483,7 +1483,7 @@ ___ _install(
         Qt.QtCompat.load_ui _ Qt.QtCompat.loadUi
 
 
-_install()
+_install
 
 # Setup Binding Enum states
 Qt.IsPySide2 _ Qt.__binding__ __ 'PySide2'

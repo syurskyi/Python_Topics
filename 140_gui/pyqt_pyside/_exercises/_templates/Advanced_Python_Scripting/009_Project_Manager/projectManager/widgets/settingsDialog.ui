@@ -33,9 +33,9 @@
  <connections>
   <connection>
    <sender>buttonBox</sender>
-   <signal>accepted()</signal>
+   <signal>accepted</signal>
    <receiver>settingsDialog</receiver>
-   <slot>accept()</slot>
+   <slot>accept</slot>
    <hints>
     <hint type="sourcelabel">
      <x>248</x>
@@ -49,9 +49,9 @@
   </connection>
   <connection>
    <sender>buttonBox</sender>
-   <signal>rejected()</signal>
+   <signal>rejected</signal>
    <receiver>settingsDialog</receiver>
-   <slot>reject()</slot>
+   <slot>reject</slot>
    <hints>
     <hint type="sourcelabel">
      <x>316</x>

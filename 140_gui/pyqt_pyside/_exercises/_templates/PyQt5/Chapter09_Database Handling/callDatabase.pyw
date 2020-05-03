@@ -6,7 +6,7 @@ ____ demoDatabase _____ *
  
 c_ MyForm(?D..
     ___  -  
-        s__. - ()
+        s__. -
         ui _ ?
         ?.sU..
         ?.pushButtonCreateDB.c___.c..(createDatabase)
@@ -14,7 +14,7 @@ c_ MyForm(?D..
 
     ___ createDatabase 
         ___
-            conn _ sqlite3.c..(?.lineEditDBName.t..()+".db")
+            conn _ sqlite3.c..(?.lineEditDBName.t..+".db")
             ?.lR___.sT..("Database is created")
         _____ Error __ e:
             ?.lR___.sT..("Some error has occurred")

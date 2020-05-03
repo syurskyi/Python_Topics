@@ -2,8 +2,8 @@ ____ PySide.?G.. _____ *
 
 c_ myWidget(?W..
     ___  -
-        super(myWidget, self). - ()
-        l _ QVBoxLayout()
+        super(myWidget, self). - 
+        l _ QVBoxLayout
         setLayout(l)
         label _ QLabel('Text')
         l.addWidget(label)
@@ -11,6 +11,6 @@ c_ myWidget(?W..
         l.addWidget(b)
 
 app _ ?A..([])
-w _ myWidget()
+w _ myWidget
 w.s..
-app.exec_()
+app.exec_

@@ -7,20 +7,20 @@ ____ demoInsertRowsInTable _____ *
 c_ MyForm(?D..
 
     ___  -
-        s__. - ()
+        s__. -
         ui _ ?
         ?.sU..
         ?.pushButtonInsertRow.c___.c..(InsertRows)
         s..
 
     ___ InsertRows
-        sqlStatement_"INSERT INTO "+?.lineEditTableName.t..()+" VALUES('"+?.lineEditEmailAddress.t..()+"', '"+?.lineEditPassword.t..()+"')"
+        sqlStatement_"INSERT INTO "+?.lineEditTableName.t..+" VALUES('"+?.lineEditEmailAddress.t..+"', '"+?.lineEditPassword.t..+"')"
         ___
-            conn _ sqlite3.c..(?.lineEditDBName.t..()+".db")
+            conn _ sqlite3.c..(?.lineEditDBName.t..+".db")
             w__ conn:
-                cur _ conn.cursor()
+                cur _ conn.cursor
                 cur.execute(sqlStatement)
-                conn.commit()
+                conn.commit
             ?.lR___.sT..("Row successfully inserted")
         _____ Error __ e:
             ?.lR___.sT..("Error in inserting row")

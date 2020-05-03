@@ -113,12 +113,12 @@ QTreeView:branch:closed:has-children:!has-siblings
     border-image: url(ico/tree/closed_end.png) 0;
 }
 
-QTreeView:branch:open:has-children:!has-siblings
+QTreeView:branch:o..:has-children:!has-siblings
 {
     border-image: url(ico/tree/open_end.png) 0;
 }
 
-QTreeView:branch:open:has-children:has-siblings
+QTreeView:branch:o..:has-children:has-siblings
 {
     border-image: url(ico/tree/open.png) 0;
 }
