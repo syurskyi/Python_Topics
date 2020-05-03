@@ -1,6 +1,6 @@
 _____ ___
 _____ th..
-_____ time
+_____ t___
 
 ____ ?.?W.. _____ ?D.., ?A..
 
@@ -23,7 +23,7 @@ c_ myThread (?.T..
    ___ run 
       print ("Starting " + name)
       w__ counter <_100:
-          time.sleep(1)
+          t___.s..(1)
           w.?.pB__.sV..(counter)
           counter+_10
       print ("Exiting " + name)

@@ -1,41 +1,41 @@
-_____ ___, time
-_____ asyncio
-
-____ ?.?W.. _____ ?D.., ?A..
-____ quamash _____ QEventLoop
-____ demoTwoProgressBarsAsync _____ _
-
-c_ MyForm(?D..
-    ___  -
-        s__. -
-        ui _ ?
-        ?.sU..
-        ?.pushButtonStart.c___.c..(invokeAsync)
-        s..
-
-    ___ invokeAsync
-        asyncio.ensure_future(updt(0.5, ?.progressBarFileDownload))
-        asyncio.ensure_future(updt(1, ?.progressBarVirusScan))
-               
-    @staticmethod
-    async ___ updt(delay, ProgressBar
-        ___ i __ range(101
-            await asyncio.sleep(delay)
-            ProgressBar.sV..(i)
-
-___ stopper(loop
-    loop.stop
-
-     
-__ _ ____ __ _____
-    app _ ?A..
-    loop _ QEventLoop(app)
-    asyncio.set_event_loop(loop)
-    w _ ?
-    w.exec
-    w__ loop:
-        loop.run_forever
-    loop.c..
-    ___.e.. ?.e
-
-
+# _____ ___, t___
+# _____ a..
+#
+# ____ ?.?W.. _____ ?D.., ?A..
+# ____ quamash _____ QEventLoop
+# ____ demoTwoProgressBarsAsync _____ _
+#
+# c_ MyForm ?D..
+#     ___  -
+#         s__. -
+#         ui _ ?
+#         ?.sU..
+#         ?.pushButtonStart.c___.c.. ?
+#         s..
+#
+#     ___ invokeAsync
+#         ?.e_f.. u.. 0.5 ?.pBFD..
+#         ?.e_f.. u.. 1 ?.pBVS..
+#
+#     ?s..
+#     ? ___ updt delay ProgressBar
+#         ___ i __ ra.. 101
+#             ? ?.s.. ?
+#             P__.sV.. ?
+#
+# ___ stopper loop
+#     ?.s..
+#
+#
+# __ _ ____ __ _____
+#     app _ ?A..
+#     loop _ ?EL.. ?
+#     ?.s_e_l.. ?
+#     w _ ?
+#     ?.e..
+#     w__ l..
+#         l__.r_f..
+#     l__.c..
+#     ___.e.. ?.e
+#
+#

@@ -1,6 +1,6 @@
 _____ ___
 _____ th..
-_____ time
+_____ t___
 
 ____ ?.?W.. _____ ?D.., ?A..
 
@@ -25,7 +25,7 @@ c_ myThread (?.T..
       print ("Starting " + name+"\n")
       w__ threadLock:
           w__ counter <_100:
-              time.sleep(1)
+              t___.s..(1)
               progreassBar.sV..(counter)
               counter+_10
       print ("Exiting " + name+"\n")

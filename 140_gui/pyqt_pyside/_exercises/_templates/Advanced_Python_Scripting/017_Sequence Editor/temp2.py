@@ -10,7 +10,7 @@ _____ os
 ____ PyQt4.?C.. _____ py_S.., SIGNAL, SLOT
 _____ ___, pygame, pygame.midi
 ____ pygame _____ mixer  # Load the required library
-_____ time
+_____ t___
 ____ th.. _____ T..
 _____ json
 ____ multiprocessing _____ Process
@@ -243,7 +243,7 @@ c_ pad1(?G...QGraphicsEllipseItem
 
     ___ isPlaying
         w__ pygame.mixer.music.get_busy(
-            pygame.time.Clock.tick(2)
+            pygame.t___.Clock.tick(2)
         playing _ F..
         # self.updateColor("Blue")
 
@@ -773,7 +773,7 @@ c_ Player(
         mixer.music.l..(songPath)
         mixer.music.play
         w__ pygame.mixer.music.get_busy(
-            pygame.time.Clock.tick(10)
+            pygame.t___.Clock.tick(10)
 
 
 ___ main(

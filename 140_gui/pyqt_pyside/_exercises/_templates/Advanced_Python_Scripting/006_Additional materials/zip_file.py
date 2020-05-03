@@ -1,4 +1,4 @@
-_____ os, ___, time, getopt
+_____ os, ___, t___, getopt
 _____ zipfile
 ____ datetime _____ datetime
 

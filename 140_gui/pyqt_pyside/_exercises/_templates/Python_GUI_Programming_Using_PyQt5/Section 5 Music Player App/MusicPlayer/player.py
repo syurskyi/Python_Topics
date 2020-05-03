@@ -2,7 +2,7 @@ _____ ___,os
 ____ ?.?W.. _____ _
 ____ ?.?G.. _____ QIcon
 ____ ?.?C.. _____ QSize,Qt,QTimer
-_____ random,time
+_____ random,t___
 ____ pygame _____ mixer
 ____ mutagen.mp3 _____ MP3
 _____ style
@@ -254,7 +254,7 @@ c_ Player(?W..
         g.. songLength
         count +_1
         pB__.sV..(count)
-        songTimerLabel.sT..(time.strftime("%M:%S",time.gmtime(count)))
+        songTimerLabel.sT..(t___.strftime("%M:%S",t___.gmtime(count)))
         __ count __ songLength:
             timer.stop
 
