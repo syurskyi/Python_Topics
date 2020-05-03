@@ -33,12 +33,12 @@
 #     ___ getGeographyMarks
 #         r_ ?
 #
-# c_ Result Student Marks
+# c_ Result S.. M..
 #     totalMarks _ 0
 #     percentage _ 0
 #
 #     ___  - code name historyMarks geographyMarks
-#         Student. - ? ?
+#         S__. - ? ?
 #         Marks. -   ? ?
 #         totalMarks _ h.. + g..
 #         percentage _ (h.. + g..) / 200 * 100

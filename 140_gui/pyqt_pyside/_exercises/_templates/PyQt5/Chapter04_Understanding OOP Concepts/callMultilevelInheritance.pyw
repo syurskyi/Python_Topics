@@ -34,12 +34,12 @@
 #     ___ getGeographyMarks
 #         r_ ?
 #
-# c_ Result(Marks
+# c_ Result Marks
 #     totalMarks _ 0
 #     percentage _ 0
 #
 #     ___  - code name historyMarks geographyMarks
-#         Marks. - ? ? ? ?
+#         M__. - ? ? ? ?
 #         totalMarks _ h.. + g..
 #         percentage _  h.. + g..) / 200 * 100
 #
@@ -49,7 +49,7 @@
 #     ___ getPercentage
 #         r_ ?
 #
-# c_ MyForm(?D..
+# c_ MyForm ?D..
 #     ___  -
 #         s__. -
 #         ui _ ?

@@ -28,7 +28,7 @@ c_ MyForm(?D..
 
     ___ dispmessage 
         studentObj_Student(ui.lineEditCode.t..(), ui.lEN__.t..())
-        ui.lR___.sT..("Code: "+studentObj.getCode()+", Name:"+studentObj.getName())
+        ui.lR___.sT..("Code: "+studentObj.gC..+", Name:"+studentObj.getName())
 
 __ _ ____ __ _____
     app _ ?A..

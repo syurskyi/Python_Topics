@@ -1,54 +1,54 @@
-_____ ___
-
-____ ?.?W.. _____ ?D.., ?A..
-
-____ demoSimpleInheritance _____ _
-
-c_ Student:
-    name _ ""
-    code _ ""
- 
-    ___  -  , code, name
-        code _ code
-        name _ name
-
-    ___ getCode 
-        r_ code
-    
-    ___ getName 
-        r_ name
-
-
-c_ Marks(Student
-    historyMarks _ 0
-    geographyMarks _ 0
- 
-    ___  -  ,  code, name, historyMarks, geographyMarks
-        Student. -  ,code,name)
-        historyMarks _ historyMarks
-        geographyMarks _ geographyMarks
-        
-    ___ getHistoryMarks 
-        r_ historyMarks
-
-    ___ getGeographyMarks 
-        r_ geographyMarks
-    
-
-c_ MyForm(?D..
-    ___  -  
-        s__. - ()
-        ui _ ?
-        ui.sU..
-        ui.ButtonClickMe.c___.c..(dispmessage)
-        s..
-
-    ___ dispmessage 
-        marksObj_Marks(ui.lineEditCode.t..(), ui.lEN__.t..(), ui.lineEditHistoryMarks.t..(), ui.lineEditGeographyMarks.t..())
-        ui.lR___.sT..("Code: "+marksObj.getCode()+", Name:"+marksObj.getName()+"\nHistory Marks:"+marksObj.getHistoryMarks()+", Geography Marks:"+marksObj.getGeographyMarks())
-
-__ _ ____ __ _____
-    app _ ?A..
-    w _ ?
-    w.s..
-    ___.e..(app.e
+# _____ ___
+#
+# ____ ?.?W.. _____ ?D.., ?A..
+#
+# ____ demoSimpleInheritance _____ _
+#
+# c_ Student
+#     name _ ""
+#     code _ ""
+#
+#     ___  - code name
+#         ? ?
+#         ? ?
+#
+#     ___ getCode
+#         r_ ?
+#
+#     ___ getName
+#         r_ ?
+#
+#
+# c_ Marks S..
+#     historyMarks _ 0
+#     geographyMarks _ 0
+#
+#     ___  -  code name historyMarks geographyMarks
+#         S__. - ? ?
+#         ? ?
+#         ? ?
+#
+#     ___ getHistoryMarks
+#         r_ ?
+#
+#     ___ getGeographyMarks
+#         r_ ?
+#
+#
+# c_ MyForm ?D..
+#     ___  -
+#         s__. -
+#         ui _ ?
+#         ?.sU..
+#         ?.ButtonClickMe.c___.c.. ?
+#         s..
+#
+#     ___ dispmessage
+#         marksObj _ ? ?.lEC__.t.. ?.lEN__.t.. ?.lEHM__.t.. ?.lEGM__.t..
+#         ?.lR___.sT..("Code: " + mO__.gC..+", Name:" + mO__.gN.. +"\nHistory Marks:" + mO__.gHM.. + ", Geography Marks:" + mO__.gGM..
+#
+# __ _ ____ __ _____
+#     app _ ?A..
+#     w _ ?
+#     ?.s..
+#     ___.e.. ?.e
