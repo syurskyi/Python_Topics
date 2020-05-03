@@ -1,7 +1,7 @@
 _____ ___
 
 ____ ?.?W.. _____ ?D.., ?A..
-____ ?.?G.. _____ QPainter
+____ ?.?G.. _____ ?P..
 
 ____ demoDrawCircle _____ *
 
@@ -17,7 +17,7 @@ c_ MyForm(?D..
     ___ paintEvent , event
         width _ pos2[0]-pos1[0]
         height _ pos2[1] - pos1[1]     
-        qp _ QPainter
+        qp _ ?P..
         qp.begin     
         rect _ ?C...QRect(pos1[0], pos1[1], width, height)
         startAngle _ 0

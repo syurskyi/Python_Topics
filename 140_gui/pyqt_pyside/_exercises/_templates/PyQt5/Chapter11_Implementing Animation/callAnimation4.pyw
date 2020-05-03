@@ -2,7 +2,7 @@ _____ ___
 
 ____ ?.?W.. _____ ?D.., ?A..
 ____ ?.?C.. _____ QRect, QPointF, QPropertyAnimation, pyqtProperty
-____ ?.?G.. _____ QPainter, QPainterPath
+____ ?.?G.. _____ ?P.., QPainterPath
 
 ____ demoAnimation4 _____ _
 
@@ -19,7 +19,7 @@ c_ MyForm(?D..
         s..
 
     ___ paintEvent , e          
-        qp _ QPainter
+        qp _ ?P..
         qp.begin
         qp.drawPath(path)
         qp.end  

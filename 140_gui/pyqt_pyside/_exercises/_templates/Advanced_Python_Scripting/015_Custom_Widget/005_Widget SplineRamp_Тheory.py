@@ -35,9 +35,9 @@ c_ splineRampWidget(?W..
 
     ___ paintEvent , event
         rec _ event.rect
-        painter _ QPainter
+        painter _ ?P..
         painter.begin
-        painter.setRenderHint(QPainter.Antialiasing)
+        painter.setRenderHint(?P...Antialiasing)
         painter.fillRect(event.rect, Qt.black)
         path _ QPainterPath
         path.moveTo(point1)

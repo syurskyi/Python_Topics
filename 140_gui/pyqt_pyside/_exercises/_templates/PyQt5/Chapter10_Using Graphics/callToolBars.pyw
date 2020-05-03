@@ -1,6 +1,6 @@
 _____ ___
 ____ ?.?W.. _____ ?M.., ?A..
-____ ?.?G.. _____ QPainter
+____ ?.?G.. _____ ?P..
 
 ____ demoToolBars _____ *
 
@@ -18,7 +18,7 @@ c_ AppWindow(?M..
         s..
 
     ___ paintEvent , event
-        qp _ QPainter
+        qp _ ?P..
         qp.begin
         __ toDraw__"rectangle":
             width _ pos2[0]-pos1[0]

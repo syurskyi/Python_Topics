@@ -1,7 +1,7 @@
 _____ ___
 
 ____ ?.?W.. _____ ?D.., ?A..
-____ ?.?G.. _____ QPainter, ?C.., ?F..
+____ ?.?G.. _____ ?P.., ?C.., ?F..
 ____ ?.?C.. _____ Qt
 
 ____ demoDrawText _____ *
@@ -19,7 +19,7 @@ c_ MyForm(?D..
         s..
 
     ___ paintEvent , event
-        qp _ QPainter
+        qp _ ?P..
         qp.begin  
         qp.setPen(?C..(168, 34, 3))
         qp.sF..(?F..(fontName, fontSize))

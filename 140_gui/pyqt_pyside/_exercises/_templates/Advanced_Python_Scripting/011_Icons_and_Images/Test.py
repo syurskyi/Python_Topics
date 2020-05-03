@@ -121,7 +121,7 @@ c_ ImageWidget(?G...?W..
                              width - edge_size, height - edge_size)
 
     ___ paintEvent , event
-        painter _ ?G...QPainter
+        painter _ ?G...?P..
         paintAsThumb(painter)
 
     ___ mouseReleaseEvent , event

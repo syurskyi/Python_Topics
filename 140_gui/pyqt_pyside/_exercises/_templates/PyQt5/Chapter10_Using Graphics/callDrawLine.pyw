@@ -1,7 +1,7 @@
 _____ ___
 
 ____ ?.?W.. _____ ?D.., ?A..
-____ ?.?G.. _____ QPainter
+____ ?.?G.. _____ ?P..
 
 ____ demoDrawLine _____ *
 
@@ -15,7 +15,7 @@ c_ MyForm(?D..
         s..
 
     ___ paintEvent , event   
-        qp _ QPainter
+        qp _ ?P..
         qp.begin     
         qp.drawLine(pos1[0], pos1[1], pos2[0], pos2[1])        
         qp.end
