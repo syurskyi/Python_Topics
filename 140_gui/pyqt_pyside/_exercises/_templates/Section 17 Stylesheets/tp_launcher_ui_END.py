@@ -157,7 +157,7 @@ c_ TP_Launcher_GUI(?W...?W..
         flag _ ?C...Qt.WindowCloseButtonHint
         setWindowFlags(?C...Qt.Window | flag)
         resize(190, 200)
-        setStyleSheet(_STYLE_MAIN)
+        sSS..(_STYLE_MAIN)
 
     ___ _setup_header
         ''' Create combobox for workspace and edit button '''
@@ -173,7 +173,7 @@ c_ TP_Launcher_GUI(?W...?W..
         _edit_btn _ ?W...?PB..('Edit')
         _edit_btn.setMaximumSize(?C...QSize(40, 23))
         _edit_btn.setCheckable(T..)
-        _edit_btn.setStyleSheet(_STYLE_BTN)
+        _edit_btn.sSS..(_STYLE_BTN)
 
         v_layout.addWidget(_workspace_cb)
         h_layout.addWidget(workspace_gb)

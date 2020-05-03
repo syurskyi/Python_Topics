@@ -15,7 +15,7 @@ c_ styleWidgetClass(QMainWindow, ui.Ui_MainWindow
         pB__.c___.c..(applyStyle)
 
     ___ applyStyle 
-        setStyleSheet(open(style).read())
+        sSS..(open(style).read())
 
 __ __name__ __ '__main__':
     os.chdir(os.path.dirname(__file__))

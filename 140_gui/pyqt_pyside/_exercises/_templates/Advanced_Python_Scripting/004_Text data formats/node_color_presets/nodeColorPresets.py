@@ -91,7 +91,7 @@ ___ write_color_presets(path, colors
 
 ___ set_tile_color(value_None
     __ value __ None:
-        value _ nuke.getColor()
+        value _ nuke.gC..
     ___ node in nuke.selectedNodes(
         node.knob('tile_color').sV..(value)
 
@@ -109,7 +109,7 @@ ___ create_tile_color_menu(
 
 
 ___ add_new_color(
-    color _ nuke.getColor()
+    color _ nuke.gC..
     __ color:
         colors _ read_color_presets(path)
         valid_name _ False

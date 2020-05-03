@@ -25,7 +25,7 @@ c_ Main(?W..
         displayFirstRecord()
 
     ___ mainDesign 
-        setStyleSheet("font-size:14pt;font-family:Arial Bold;")
+        sSS..("font-size:14pt;font-family:Arial Bold;")
         employeeList_QListWidget()
         employeeList.iC__.c..(singleClick)
         btnNew_?PB..("New")
@@ -173,9 +173,9 @@ c_ UpdateEmployee(?W..
 
     ___ mainDesign 
         ################Top Layout widgets#######################
-        setStyleSheet("background-color:white;font-size:14pt;font-family:Times")
+        sSS..("background-color:white;font-size:14pt;font-family:Times")
         title _ QLabel("Update Person")
-        title.setStyleSheet('font-size: 24pt;font-family:Arial Bold;')
+        title.sSS..('font-size: 24pt;font-family:Arial Bold;')
         imgAdd _ QLabel()
         imgAdd.setPixmap(QPixmap("images/{}".format(image)))
         ###################Bottom Layout Widgets#####################
@@ -193,13 +193,13 @@ c_ UpdateEmployee(?W..
         emailEntry.sT..(email)
         imgLbl _ QLabel("Picture: ")
         imgButton _ ?PB..("Browse")
-        imgButton.setStyleSheet("background-color:orange;font-size:10pt")
+        imgButton.sSS..("background-color:orange;font-size:10pt")
         imgButton.c___.c..(uploadImage)
         addressLbl _ QLabel("Address: ")
         addressEditor _ QTextEdit()
         addressEditor.sT..(address)
         addButton _ ?PB..("Update")
-        addButton.setStyleSheet("background-color:orange;font-size:10pt")
+        addButton.sSS..("background-color:orange;font-size:10pt")
         addButton.c___.c..(updateEmployee)
 
     ___ layouts 
@@ -288,9 +288,9 @@ c_ AddEmployee(?W..
 
     ___ mainDesign 
         ################Top Layout widgets#######################
-        setStyleSheet("background-color:white;font-size:14pt;font-family:Times")
+        sSS..("background-color:white;font-size:14pt;font-family:Times")
         title_QLabel("Add Person")
-        title.setStyleSheet('font-size: 24pt;font-family:Arial Bold;')
+        title.sSS..('font-size: 24pt;font-family:Arial Bold;')
         imgAdd_QLabel()
         imgAdd.setPixmap(QPixmap("icons/person.png"))
         ###################Bottom Layout Widgets#####################
@@ -308,12 +308,12 @@ c_ AddEmployee(?W..
         emailEntry.setPlaceholderText("Enter Employee Email")
         imgLbl_QLabel("Picture: ")
         imgButton_?PB..("Browse")
-        imgButton.setStyleSheet("background-color:orange;font-size:10pt")
+        imgButton.sSS..("background-color:orange;font-size:10pt")
         imgButton.c___.c..(uploadImage)
         addressLbl_QLabel("Address: ")
         addressEditor_QTextEdit()
         addButton_?PB..("Add")
-        addButton.setStyleSheet("background-color:orange;font-size:10pt")
+        addButton.sSS..("background-color:orange;font-size:10pt")
         addButton.c___.c..(addEmployee)
 
     ___ layouts 

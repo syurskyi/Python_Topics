@@ -32,7 +32,7 @@ c_ Player(?W..
         # #######################progress bar#############
         progressBar _ QProgressBar()
         pB__.setTextVisible(False)
-        pB__.setStyleSheet(style.progressBarStyle())
+        pB__.sSS..(style.progressBarStyle())
         # #######################Labels###################
         songTimerLabel_QLabel("0:00")
         songLenthLabel_QLabel("/ 0:00")
@@ -87,7 +87,7 @@ c_ Player(?W..
         # ##################Play List####################
         playList_QListWidget()
         playList.doubleClicked.c..(playSounds)
-        playList.setStyleSheet(style.playListStyle())
+        playList.sSS..(style.playListStyle())
 
         # ####################Timer######################
         timer_QTimer()
@@ -99,7 +99,7 @@ c_ Player(?W..
         mainLayout_QVBoxLayout()
         topMainLayout_QVBoxLayout()
         topGroupBox_QGroupBox("Music Player")
-        topGroupBox.setStyleSheet(style.groupboxStyle())
+        topGroupBox.sSS..(style.groupboxStyle())
         topLayout_QHBoxLayout()
         middleLayout_QHBoxLayout()
         bottomLayout_QVBoxLayout()
