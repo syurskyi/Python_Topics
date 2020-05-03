@@ -1,12 +1,12 @@
 ____ ?.?W.. _____ _
 ____ ?.?G.. _____ QPixmap,?F..
 _____ ___,os
-_____ sqlite3
+_____ _3
 ____ PIL _____ Image
 
 
-con _ sqlite3.c..('employees.db')
-cur _ con.cursor
+con _ _3.c..('employees.db')
+cur _ con.c..
 defaultImg_"person.png"
 person_id_None
 c_ Main(?W..
@@ -60,13 +60,13 @@ c_ Main(?W..
         c..
     ___ getEmployees 
         query_"SELECT id,name,surname FROM employees"
-        employees_cur.execute(query).fetchall
+        employees_cur.e..(query).fetchall
         ___ employee __ employees:
             employeeList.aI..(st.(employee[0])+"-"+employee[1]+" "+employee[2] )
 
     ___ displayFirstRecord 
         query_"SELECT * FROM employees ORDER BY ROWID ASC LIMIT 1"
-        employee_cur.execute(query).fetchone
+        employee_cur.e..(query).f..
         img_QLabel
         img.setPixmap(QPixmap("images/"+employee[5]))
         name_QLabel(employee[1])
@@ -92,7 +92,7 @@ c_ Main(?W..
         employee_employeeList.cI__).t..
         id_employee.split("-")[0]
         query_("SELECT * FROM employees WHERE id=?")
-        person_cur.execute(query,(id,)).fetchone#single item tuple=(1,)
+        person_cur.e..(query,(id,)).f..#single item tuple=(1,)
         img _ QLabel
         img.setPixmap(QPixmap("images/" + person[5]))
         name _ QLabel(person[1])
@@ -116,7 +116,7 @@ c_ Main(?W..
             __ mbox __ QMessageBox.Yes:
                 ___
                     query_"DELETE FROM employees WHERE id=?"
-                    cur.execute(query,(id,))
+                    cur.e..(query,(id,))
                     con.commit
                     QMessageBox.information ,"Info!!!","Person has been deleted")
                     c..
@@ -162,7 +162,7 @@ c_ UpdateEmployee(?W..
     ___ getPerson 
         g.. person_id
         query_"SELECT * FROM employees WHERE id=?"
-        employee_cur.execute(query,(person_id,)).fetchone
+        employee_cur.e..(query,(person_id,)).f..
         print(employee)
         name_employee[1]
         surname_employee[2]
@@ -258,7 +258,7 @@ c_ UpdateEmployee(?W..
         __ (name an. surname an. phone !_""
             ___
                 query_"UPDATE employees set name =?, surname=?, phone=?,email=?,img=?,address=? WHERE id=?"
-                cur.execute(query,(name,surname,phone,email,img,address,person_id))
+                cur.e..(query,(name,surname,phone,email,img,address,person_id))
                 con.commit
                 QMessageBox.information ,"Success","Person has been updated")
                 c..
@@ -370,7 +370,7 @@ c_ AddEmployee(?W..
         __ (name an. surname an. phone !_""
             ___
                 query_"INSERT INTO employees (name,surname,phone,email,img,address) VALUES(?,?,?,?,?,?)"
-                cur.execute(query,(name,surname,phone,email,img,address))
+                cur.e..(query,(name,surname,phone,email,img,address))
                 con.commit
                 QMessageBox.information ,"Success","Person has been added")
                 c..

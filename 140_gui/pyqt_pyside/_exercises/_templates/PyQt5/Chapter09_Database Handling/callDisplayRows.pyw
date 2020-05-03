@@ -1,6 +1,6 @@
-_____ sqlite3, ___
+_____ _3, ___
 ____ ?.?W.. _____ ?D.., ?A..,?TWI..
-____ sqlite3 _____ Error
+____ _3 _____ E..
 
 ____ demoDisplayRowsOfTable _____ *
 
@@ -17,9 +17,9 @@ c_ MyForm(?D..
     ___ DisplayRows 
         sqlStatement_"SELECT * FROM "+?.lineEditTableName.t..
         ___
-            conn _ sqlite3.c..(?.lineEditDBName.t..+".db")
-            cur _ conn.cursor    
-            cur.execute(sqlStatement)
+            conn _ _3.c..(?.lineEditDBName.t..+".db")
+            cur _ conn.c..
+            cur.e..(sqlStatement)
             rows _ cur.fetchall
             rowNo_0
             ___ tuple __ rows:
@@ -31,7 +31,7 @@ c_ MyForm(?D..
                     colNo+_1
                 rowNo+_1                  
                 
-        _____ Error __ e:
+        _____ E.. __ e:
             ?.tableWidget.c..
             ?.lR___.sT..("Error in accessing table")
         f..

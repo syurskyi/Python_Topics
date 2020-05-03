@@ -1,6 +1,6 @@
-_____ sqlite3, ___
+_____ _3, ___
 ____ ?.?W.. _____ ?D.., ?A..
-____ sqlite3 _____ Error
+____ _3 _____ E..
 
 ____ demoCreateTable _____ *
 
@@ -27,13 +27,13 @@ c_ MyForm(?D..
     ___ createTable
         g.. tabledefinition
         ___
-            conn _ sqlite3.c..(?.lineEditDBName.t..+".db")
+            conn _ _3.c..(?.lineEditDBName.t..+".db")
             ?.lR___.sT..("Database is connected")
-            c _ conn.cursor
+            c _ conn.c..
             tabledefinition+_");"
-            c.execute(tabledefinition)
+            c.e..(tabledefinition)
             ?.lR___.sT..("Table is successfully created")
-        _____ Error __ e:
+        _____ E.. __ e:
             ?.lR___.sT..("Error in creating table")
         f..
             conn.c..

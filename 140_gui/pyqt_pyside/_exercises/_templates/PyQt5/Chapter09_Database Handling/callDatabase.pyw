@@ -1,6 +1,6 @@
-_____ sqlite3, ___
+_____ _3, ___
 ____ ?.?W.. _____ ?D.., ?A..
-____ sqlite3 _____ Error
+____ _3 _____ E..
 
 ____ demoDatabase _____ *
  
@@ -14,9 +14,9 @@ c_ MyForm(?D..
 
     ___ createDatabase 
         ___
-            conn _ sqlite3.c..(?.lineEditDBName.t..+".db")
+            conn _ _3.c..(?.lineEditDBName.t..+".db")
             ?.lR___.sT..("Database is created")
-        _____ Error __ e:
+        _____ E.. __ e:
             ?.lR___.sT..("Some error has occurred")
         f..
             conn.c..

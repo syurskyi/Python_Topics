@@ -1,13 +1,13 @@
-_____ sqlite3, ___
+_____ _3, ___
 ____ ?.?W.. _____ ?D.., ?A..,?TWI..
-____ sqlite3 _____ Error
+____ _3 _____ E..
 
 ____ demoShowRecords _____ *
 
 rowNo_1
 sqlStatement_"SELECT EmailAddress, Password FROM Users"
-conn _ sqlite3.c..("ECommerce.db")
-cur _ conn.cursor
+conn _ _3.c..("ECommerce.db")
+cur _ conn.c..
 
 c_ MyForm(?D..
 
@@ -15,7 +15,7 @@ c_ MyForm(?D..
         s__. -
         ui _ ?
         ?.sU..
-        cur.execute(sqlStatement)
+        cur.e..(sqlStatement)
         ?.pushButtonFirst.c___.c..(ShowFirstRow)
         ?.pushButtonPrevious.c___.c..(ShowPreviousRow)
         ?.pushButtonNext.c___.c..(ShowNextRow)
@@ -24,12 +24,12 @@ c_ MyForm(?D..
 
     ___ ShowFirstRow
         ___
-            cur.execute(sqlStatement)
-            row_cur.fetchone
+            cur.e..(sqlStatement)
+            row_cur.f..
             __ row:
                 ?.lineEditEmailAddress.sT..(row[0])
                 ?.lineEditPassword.sT..(row[1])
-        _____ Error __ e:
+        _____ E.. __ e:
             ?.lR___.sT..("Error in accessing table")
 
 
@@ -37,8 +37,8 @@ c_ MyForm(?D..
         g.. rowNo
         rowNo -_ 1
         sqlStatement_"SELECT EmailAddress, Password FROM Users where rowid="+st.(rowNo)
-        cur.execute(sqlStatement)
-        row_cur.fetchone
+        cur.e..(sqlStatement)
+        row_cur.f..
         __ row:
             ?.lR___.sT..("")
             ?.lineEditEmailAddress.sT..(row[0])
@@ -52,8 +52,8 @@ c_ MyForm(?D..
         g.. rowNo
         rowNo +_ 1
         sqlStatement_"SELECT EmailAddress, Password FROM Users where rowid="+st.(rowNo)
-        cur.execute(sqlStatement)
-        row_cur.fetchone
+        cur.e..(sqlStatement)
+        row_cur.f..
         __ row:
             ?.lR___.sT..("")
             ?.lineEditEmailAddress.sT..(row[0])
@@ -63,7 +63,7 @@ c_ MyForm(?D..
             ?.lR___.sT..("This is the last row")
 
     ___ ShowLastRow
-        cur.execute(sqlStatement)
+        cur.e..(sqlStatement)
         ___ row in cur.fetchall(
             ?.lineEditEmailAddress.sT..(row[0])
             ?.lineEditPassword.sT..(row[1])

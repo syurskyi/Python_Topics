@@ -1,6 +1,6 @@
-_____ sqlite3, ___
+_____ _3, ___
 ____ ?.?W.. _____ ?D.., ?A..
-____ sqlite3 _____ Error
+____ _3 _____ E..
 
 ____ demoDeleteUser _____ *
 
@@ -20,10 +20,10 @@ c_ MyForm(?D..
     ___ DeleteUser 
         selectStatement_"SELECT * FROM Users where EmailAddress like '"+?.lineEditEmailAddress.t..+"' and Password like '"+ ?.lineEditPassword.t..+"'"
         ___
-            conn _ sqlite3.c..("ECommerce.db")
-            cur _ conn.cursor
-            cur.execute(selectStatement)
-            row _ cur.fetchone
+            conn _ _3.c..("ECommerce.db")
+            cur _ conn.c..
+            cur.e..(selectStatement)
+            row _ cur.f..
             __ row__None:
                 ?.labelSure.hide
                 ?.pushButtonYes.hide
@@ -34,7 +34,7 @@ c_ MyForm(?D..
                 ?.pushButtonYes.s..
                 ?.pushButtonNo.s..
                 ?.lR___.sT..("")
-        _____ Error __ e:
+        _____ E.. __ e:
             ?.lR___.sT..("Error in accessing user account")
         f..
             conn.c..
@@ -42,12 +42,12 @@ c_ MyForm(?D..
     ___ ConfirmDelete 
         deleteStatement_"DELETE FROM Users where EmailAddress like '"+?.lineEditEmailAddress.t..+"' and Password like '"+ ?.lineEditPassword.t..+"'"
         ___
-            conn _ sqlite3.c..("ECommerce.db")
-            cur _ conn.cursor
+            conn _ _3.c..("ECommerce.db")
+            cur _ conn.c..
             w__ conn:
-                cur.execute(deleteStatement)
+                cur.e..(deleteStatement)
                 ?.lR___.sT..("User successfully deleted")
-        _____ Error __ e:
+        _____ E.. __ e:
             ?.lR___.sT..("Error in deleting user account")
         f..
             conn.c..
