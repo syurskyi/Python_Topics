@@ -32,7 +32,7 @@ c_ MyForm(?D..
         ___ i in positionValues:
             anim.setKeyValueAt(i, path.pointAtPercent(i))  
         anim.setEndValue(QPointF(160, 150))
-        anim.start
+        anim.s..
         
 __ _ ____ __ _____
     app _ ?A..

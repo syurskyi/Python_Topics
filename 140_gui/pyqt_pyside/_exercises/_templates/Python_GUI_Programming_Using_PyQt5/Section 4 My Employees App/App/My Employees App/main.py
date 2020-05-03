@@ -130,7 +130,7 @@ c_ Main(?W..
             QMessageBox.information , "Warning!!!", "Please select a person to delete")
 
     ___ updateEmployee 
-        global person_id
+        g.. person_id
         __ employeeList.selectedItems(
             person _ employeeList.cI__).t..
             person_id_person.split("-")[0]
@@ -160,7 +160,7 @@ c_ UpdateEmployee(?W..
         main _ Main
 
     ___ getPerson 
-        global person_id
+        g.. person_id
         query_"SELECT * FROM employees WHERE id=?"
         employee_cur.execute(query,(person_id,)).fetchone
         print(employee)
@@ -233,7 +233,7 @@ c_ UpdateEmployee(?W..
 
 
     ___ uploadImage 
-        global defaultImg
+        g.. defaultImg
         size _(128,128)
         fileName,ok _QFileDialog.gOFN.. ,'Upload Image','','Image Files (*.jpg *.png)')
 
@@ -247,8 +247,8 @@ c_ UpdateEmployee(?W..
 
 
     ___ updateEmployee 
-        global defaultImg
-        global person_id
+        g.. defaultImg
+        g.. person_id
         name_nameEntry.t..
         surname_surnameEntry.t..
         phone_phoneEntry.t..
@@ -346,7 +346,7 @@ c_ AddEmployee(?W..
         setLayout(mainLayout)
 
     ___ uploadImage 
-        global defaultImg
+        g.. defaultImg
         size _(128,128)
         fileName,ok _QFileDialog.gOFN.. ,'Upload Image','','Image Files (*.jpg *.png)')
 
@@ -360,7 +360,7 @@ c_ AddEmployee(?W..
 
 
     ___ addEmployee 
-        global defaultImg
+        g.. defaultImg
         name_nameEntry.t..
         surname_surnameEntry.t..
         phone_phoneEntry.t..

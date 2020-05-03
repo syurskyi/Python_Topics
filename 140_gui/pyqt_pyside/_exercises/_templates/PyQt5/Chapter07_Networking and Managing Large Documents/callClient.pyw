@@ -1,54 +1,54 @@
-_____ ___
-
-____ ?.?W.. _____ ?A.., ?D..
-
-_____ socket
-____ threading _____ Thread
-____ socketserver _____ ThreadingMixIn
-
-____ demoClient _____ *
-
-tcpClientA_None
-
-c_ Window(?D..
-    ___  -
-        s__. -
-        ui _ ?
-        ?.sU..
-        tE__Messages_?.tE__Messages
-        ?.pushButtonSend.c___.c..(dispMessage)
-        s..
-
-
-    ___ dispMessage
-        text_?.lineEditMessage.t..
-        ?.tE__Messages.ap..("Client: "+?.lineEditMessage.t..())
-        tcpClientA.send(t...encode())
-        ?.lineEditMessage.sT..("")
-
-c_ ClientThread(Thread
-    ___  -  ,window
-        Thread. -  
-        window_window
-  
-    ___ run
-       host _ socket.gethostname
-       port _ 80
-       BUFFER_SIZE _ 1024
-       global tcpClientA
-       tcpClientA _ socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-       tcpClientA.c..((host, port))
-        
-       w__ T..:
-           data _ tcpClientA.recv(BUFFER_SIZE)
-           window.tE__Messages.ap..("Server: "+data.decode("utf-8"))
-       tcpClientA.c..
-            
-        
-__ _ ____ __ _____
-    app _ ?A..
-    window _ Window
-    clientThread_ClientThread(window)
-    clientThread.start
-    window.exec
-    ___.e.. ?.e
+# _____ ___
+#
+# ____ ?.?W.. _____ ?A.., ?D..
+#
+# _____ s..
+# ____ th.. _____ T..
+# ____ s_s_ _____ TMI..
+#
+# ____ demoClient _____ _
+#
+# tcpClientA_None
+#
+# c_ Window ?D..
+#     ___  -
+#         s__. -
+#         ui _ ?
+#         ?.sU..
+#         tE__Messages_?.tE__Messages
+#         ?.pBS__.c___.c.. ?
+#         s..
+#
+#
+#     ___ dispMessage
+#         text_?.lEM__.t..
+#         ?.tE__Messages.ap..("Client: "+?.lEM__.t..
+#         tcpClientA.s.. t...e..
+#         ?.lEM__.sT..("")
+#
+# c_ ClientThread T..
+#     ___  -  window
+#         T... -
+#         ? ?
+#
+#     ___ run
+#        host _ ?.g_h_n..
+#        port _ 80
+#        BUFFER_SIZE _ 1024
+#        g.. _A
+#        tcpClientA _ ?.?(?.A_N.., ?.S_S..
+#        ?.c.. ? ?
+#
+#        w__ T..
+#            data _ _A.r.. B..
+#            window.tE__Messages.ap.. "Server: "+data.d.. "utf-8"
+#        _A.c..
+#
+#
+# __ _ ____ __ _____
+#     app _ ?A..
+#     window _ W..
+#     clientThread_? ?
+#     ?.s..
+#     ?.e..
+#     ___.e.. ?.e

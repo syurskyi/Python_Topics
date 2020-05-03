@@ -16,7 +16,7 @@ c_ MyForm(?D..
         s..
 
     ___ addColumns
-        global tabledefinition         
+        g.. tabledefinition
         __ tabledefinition__"":
             tabledefinition_"CREATE TABLE IF NOT EXISTS "+ ?.lineEditTableName.t..+"("+?.lineEditColumnName.t..+" "+?.comboBoxDataType.iT..(?.comboBoxDataType.cI..())
         ____
@@ -25,7 +25,7 @@ c_ MyForm(?D..
         ?.lineEditColumnName.sF..
 
     ___ createTable
-        global tabledefinition 
+        g.. tabledefinition
         ___
             conn _ sqlite3.c..(?.lineEditDBName.t..+".db")
             ?.lR___.sT..("Database is connected")

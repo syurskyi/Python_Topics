@@ -148,16 +148,16 @@ c_ Player(?W..
             playList.aI..(filename)
 
     ___ playSounds 
-        global songLength
-        global count
-        global index
+        g.. songLength
+        g.. count
+        g.. index
         count _ 0
         index _ playList.cR..
 
         ___
             mixer.music.l..(st.(musicList[index]))
             mixer.music.play
-            timer.start
+            timer.s..
             sound _ MP3(st.(musicList[index]))
             songLength _ sound.info.length
             songLength _ ro..(songLength)
@@ -172,9 +172,9 @@ c_ Player(?W..
             pass
 
     ___ playPrevious 
-        global songLength
-        global count
-        global index
+        g.. songLength
+        g.. count
+        g.. index
         count _ 0
         items _ playList.count
 
@@ -185,7 +185,7 @@ c_ Player(?W..
         ___
             mixer.music.l..(st.(musicList[index]))
             mixer.music.play
-            timer.start
+            timer.s..
             sound _ MP3(st.(musicList[index]))
             songLength _ sound.info.length
             songLength _ ro..(songLength)
@@ -200,9 +200,9 @@ c_ Player(?W..
             pass
 
     ___ playNext 
-        global songLength
-        global count
-        global index
+        g.. songLength
+        g.. count
+        g.. index
         count _ 0
         items _ playList.count
         index +_ 1
@@ -213,7 +213,7 @@ c_ Player(?W..
         ___
             mixer.music.l..(st.(musicList[index]))
             mixer.music.play
-            timer.start
+            timer.s..
             sound _ MP3(st.(musicList[index]))
             songLength _ sound.info.length
             songLength _ ro..(songLength)
@@ -233,7 +233,7 @@ c_ Player(?W..
         mixer.music.set_volume(volume/100)
 
     ___ muteSound 
-        global muted
+        g.. muted
 
         __ muted __ F..:
             mixer.music.set_volume(0.0)
@@ -250,8 +250,8 @@ c_ Player(?W..
             volumeSlider.sV..(70)
 
     ___ updateProgressBar 
-        global count
-        global songLength
+        g.. count
+        g.. songLength
         count +_1
         pB__.sV..(count)
         songTimerLabel.sT..(time.strftime("%M:%S",time.gmtime(count)))

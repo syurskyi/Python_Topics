@@ -11,7 +11,7 @@ ____ PyQt4.?C.. _____ py_S.., SIGNAL, SLOT
 _____ ___, pygame, pygame.midi
 ____ pygame _____ mixer  # Load the required library
 _____ time
-____ threading _____ Thread
+____ th.. _____ T..
 _____ json
 ____ multiprocessing _____ Process
 
@@ -206,8 +206,8 @@ c_ pad1(?G...QGraphicsEllipseItem
         # mixer.music.set_pos(offset)
         mixer.music.play(start_offset)
 
-        p _ Thread(target_isPlaying)
-        p.start
+        p _ T..(target_isPlaying)
+        p.s..
 
     #        while pygame.mixer.music.get_busy():
     # pygame.time.Clock().tick(2)
@@ -425,7 +425,7 @@ c_ mainWindow(?G...QMainWindow
                 #
                 #                 self.midiMenu.addAction(self.device[index])
 
-                deviceList[index] _ [device[1].decode("utf-8"), x]
+                deviceList[index] _ [device[1].d..("utf-8"), x]
                 index +_ 1
 
                 # self.setMidiDevice()
@@ -452,8 +452,8 @@ c_ mainWindow(?G...QMainWindow
 
         getMidi _ T..
         # starting midi looping event
-        p _ Thread(target_getMidiEvent)
-        p.start
+        p _ T..(target_getMidiEvent)
+        p.s..
 
     ___ getMidiEvent
 
@@ -476,8 +476,8 @@ c_ mainWindow(?G...QMainWindow
                 print('midiint = %i' % midiint)
 
                 __ midiint > 10 an. midinote __ midiNote:
-                    s _ Thread(target_pad1.startSong)
-                    s.start
+                    s _ T..(target_pad1.startSong)
+                    s.s..
                     # pygame.time.wait(20)
 
                     # pygame.time.wait(200)

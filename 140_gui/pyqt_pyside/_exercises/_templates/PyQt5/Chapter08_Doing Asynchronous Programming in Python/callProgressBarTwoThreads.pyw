@@ -1,5 +1,5 @@
 _____ ___
-_____ threading
+_____ th..
 _____ time
 
 ____ ?.?W.. _____ ?D.., ?A..
@@ -13,10 +13,10 @@ c_ MyForm(?D..
         ?.sU..
         s..
        
-c_ myThread (threading.Thread
+c_ myThread (?.T..
    counter_0
    ___  -  , w, ProgressBar
-      threading.Thread. - 
+      ?.T... -
       w_w
       counter_0
       progreassBar_ProgressBar
@@ -35,8 +35,8 @@ __ _ ____ __ _____
     w _ ?
     thread1 _ myThread(w, w.?.progressBarFileDownload)
     thread2 _ myThread(w, w.?.progressBarVirusScan)
-    thread1.start
-    thread2.start
+    thread1.s..
+    thread2.s..
     w.exec
     thread1.join
     thread2.join

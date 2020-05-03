@@ -18,7 +18,7 @@ c_ MyForm(?D..
         anim.setDuration(10000)
         anim.setStartValue(QRect(160, 70, 80, 80))
         anim.setEndValue(QRect(160, 70, 220, 220))
-        anim.start
+        anim.s..
 
 __ _ ____ __ _____
     app _ ?A..

@@ -34,7 +34,7 @@ c_ MyForm(?D..
 
 
     ___ ShowPreviousRow
-        global rowNo
+        g.. rowNo
         rowNo -_ 1
         sqlStatement_"SELECT EmailAddress, Password FROM Users where rowid="+st.(rowNo)
         cur.execute(sqlStatement)
@@ -49,7 +49,7 @@ c_ MyForm(?D..
        
             
     ___ ShowNextRow
-        global rowNo
+        g.. rowNo
         rowNo +_ 1
         sqlStatement_"SELECT EmailAddress, Password FROM Users where rowid="+st.(rowNo)
         cur.execute(sqlStatement)

@@ -1,5 +1,5 @@
 _____ ___
-_____ threading
+_____ th..
 _____ time
 
 ____ ?.?W.. _____ ?D.., ?A..
@@ -13,10 +13,10 @@ c_ MyForm(?D..
         ?.sU..
         s..
        
-c_ myThread (threading.Thread
+c_ myThread (?.T..
    counter_0
    ___  -  , w
-      threading.Thread. - 
+      ?.T... -
       w_w
       counter_0
       
@@ -33,7 +33,7 @@ __ _ ____ __ _____
     app _ ?A..
     w _ ?
     thread1 _ myThread(w)
-    thread1.start
+    thread1.s..
     w.exec
     ___.e.. ?.e
 

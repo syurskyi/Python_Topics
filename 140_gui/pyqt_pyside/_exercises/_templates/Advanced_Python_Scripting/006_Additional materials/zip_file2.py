@@ -33,7 +33,7 @@ ___ make_archive(zip_archive_file, directory, *args
         ___ item __ nodes:
             path _ os.path.join(directory, item)
             __ os.path.isfile(path
-                zipf.w..(path, unicode(path, 'utf-8').encode('cp852'))
+                zipf.w..(path, unicode(path, 'utf-8').e..('cp852'))
             elif os.path.isdir(path
                 __ not item __ args:
                     recursive_zip(zipf, path, *args)
