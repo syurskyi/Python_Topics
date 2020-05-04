@@ -12,12 +12,12 @@ c_ simpleWindow(?W..
 
     ___ showMessage 
         dial _ dialog.dialogClass
-        r _ dial.exec_
+        r _ dial.e..
         __ r:
             print dial.getData
 
 __ _____ __ ______
-    app _ ?A..([])
+    app _ ?A..
     w _ simpleWindow
     w.s..
-    app.exec_
+    app.e..

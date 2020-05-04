@@ -50,7 +50,7 @@ c_ listWidgetClass(?LW..
         drag.sMD..(?)
         pix _ ?P..(icon)
         drag.sP..(pix)
-        r _ drag.exec_
+        r _ drag.e..
         __ r __ __.DA...MA..:
             deleteSelected
 
@@ -81,7 +81,7 @@ c_ listWidgetClass(?LW..
         s__(listWidgetClass, self).mouseReleaseEvent(event)
 
 __ _____ __ ______
-    app _ ?A..([])
+    app _ ?A..
     w _ listWidgetClass
     w.s..
-    app.exec_
+    app.e..

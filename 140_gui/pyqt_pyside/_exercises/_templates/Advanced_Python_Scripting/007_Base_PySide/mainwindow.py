@@ -19,7 +19,7 @@ c_ WindowClass(?M..
 
 
 __ _____ __ ______
-    app _ ?A..([])
+    app _ ?A..
     w _ WindowClass
     w.s..
-    app.exec_
+    app.e..

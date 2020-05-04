@@ -53,7 +53,7 @@ c_ listWidgetClass(?LW..
         drag.sMD..(mimedata)                              # polychennue dannue mu lozim v objekt draga, toest' v etot kontejner dlja peretaskivanija
         pix _ ?P..(icon)
         drag.sP..(pix)
-        r _ drag.exec_                                        # exec_ kak iv dialogah vozvrachaet kakoj to rezyl'tat
+        r _ drag.e..                                        # exec_ kak iv dialogah vozvrachaet kakoj to rezyl'tat
         print r
         __ r __ __.DA...MA..:                       # esli y nas yspesho proizvedeno peretaskivanie to mu ydaljaem nashi vudelenue items
             deleteSelected                               # metod deleteSelected
@@ -71,7 +71,7 @@ c_ listWidgetClass(?LW..
             tI..(iFI..(s).r..())          # posle chego ydaljay sam item
 
 __ _____ __ ______
-    app _ ?A..([])
+    app _ ?A..
     w _ listWidgetClass
     w.s..
-    app.exec_
+    app.e..

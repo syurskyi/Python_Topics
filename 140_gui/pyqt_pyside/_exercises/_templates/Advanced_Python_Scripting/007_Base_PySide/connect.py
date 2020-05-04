@@ -26,7 +26,7 @@ c_ MyWidget(?W..
         print arg
 
 
-app _ ?A..([])
+app _ ?A..
 window _ MyWidget
 window.s..
-app.exec_
+app.e..

@@ -14,8 +14,8 @@ c_ imageConverterClass(?M.., ui.Ui_imageConverter
         files_ly.addWidget(list)
 
 __ _____ __ ______
-    app _ ?A..([])
+    app _ ?A..
     w _ imageConverterClass
     w.s..
-    app.exec_
+    app.e..
 

@@ -20,7 +20,7 @@ c_ SimpleWindowClass(?W..
 
 
 __ _____ __ ______
-    app _ ?A..([])
+    app _ ?A..
     w _ SimpleWindowClass
     w.s..
-    app.exec_
+    app.e..

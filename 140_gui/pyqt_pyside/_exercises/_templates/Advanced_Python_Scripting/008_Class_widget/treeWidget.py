@@ -48,7 +48,7 @@ c_ simpleWindow(?W..
 
 
 __ _____ __ ______
-    app _ ?A..([])
+    app _ ?A..
     w _ simpleWindow
     w.s..
-    app.exec_
+    app.e..

@@ -50,7 +50,7 @@ c_ listWidgetClass(?LW..
         drag.sMD..(mimedata)
         pix _ ?P..(icon)
         drag.sP..(pix)
-        r _ drag.exec_
+        r _ drag.e..
         __ r __ __.DA...MA..:
             deleteSelected
 

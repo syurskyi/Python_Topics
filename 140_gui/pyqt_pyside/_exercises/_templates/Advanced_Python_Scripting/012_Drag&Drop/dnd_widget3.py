@@ -25,7 +25,7 @@ c_ listWidgetClass(?LW..
         pass
 
 __ _____ __ ______
-    app _ ?A..([])
+    app _ ?A..
     w _ listWidgetClass
     w.s..
-    app.exec_
+    app.e..

@@ -10,7 +10,7 @@ c_ myWidget(?W..
         b _ ?PB..('OK')
         l.addWidget(b)
 
-app _ ?A..([])
+app _ ?A..
 w _ myWidget
 w.s..
-app.exec_
+app.e..

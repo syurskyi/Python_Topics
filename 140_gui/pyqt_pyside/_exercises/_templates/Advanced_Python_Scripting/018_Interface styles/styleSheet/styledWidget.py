@@ -21,7 +21,7 @@ c_ styleWidgetClass(?M.., ui.Ui_MainWindow
 
 __ _____ __ ______
     __.chdir(__.path.d_n..(__file__))
-    app _ ?A..([])
+    app _ ?A..
     w _ styleWidgetClass
     w.s..
-    app.exec_
+    app.e..

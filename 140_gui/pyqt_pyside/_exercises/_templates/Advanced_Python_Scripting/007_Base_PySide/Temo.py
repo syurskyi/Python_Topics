@@ -40,4 +40,4 @@ c_ Form(?D..
 app _ ?A..
 form _ Form
 form.s..
-app.exec_
+app.e..

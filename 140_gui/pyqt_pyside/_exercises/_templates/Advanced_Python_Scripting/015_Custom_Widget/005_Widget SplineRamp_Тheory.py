@@ -90,7 +90,7 @@ c_ splineRampWidget(?W..
         s__(splineRampWidget, self).resizeEvent(event)
 
 __ _____ __ ______
-    app _ ?A..([])
+    app _ ?A..
     w _ splineRampWidget
     w.s..
-    app.exec_
+    app.e..

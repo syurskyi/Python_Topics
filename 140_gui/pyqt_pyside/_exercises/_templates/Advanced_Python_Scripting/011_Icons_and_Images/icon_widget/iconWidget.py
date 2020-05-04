@@ -71,7 +71,7 @@ c_ iconWidgetClass(?M.., ui.Ui_MainWindow
         r_ QIcon(icons[random.choice(['item1','item2','item3'])])
 
 __ _____ __ ______
-    app _ ?A..([])
+    app _ ?A..
     w _ iconWidgetClass
     w.s..
-    app.exec_
+    app.e..

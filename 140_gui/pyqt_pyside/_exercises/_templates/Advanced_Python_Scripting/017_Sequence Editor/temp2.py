@@ -777,7 +777,7 @@ c_ Player(
 
 
 ___ main(
-    app _ ?G...?A..([])
+    app _ ?G...?A..
     # ex = Canvas()
     ex _ mainWindow
     ex.s..

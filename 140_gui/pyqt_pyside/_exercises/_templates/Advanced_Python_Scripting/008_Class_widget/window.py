@@ -22,11 +22,11 @@ c_ simpleWindow(?W..
         msgBox.setStandardButtons(QMessageBox.Save | QMessageBox.Discard | QMessageBox.Cancel)
         msgBox.setDefaultButton(QMessageBox.Save)
         msgBox.setDetailedText('Detail text')
-        ret _ msgBox.exec_
+        ret _ msgBox.e..
         print ret __ QMessageBox.Save
 
 __ _____ __ ______
-    app _ ?A..([])
+    app _ ?A..
     w _ simpleWindow
     w.s..
-    app.exec_
+    app.e..
