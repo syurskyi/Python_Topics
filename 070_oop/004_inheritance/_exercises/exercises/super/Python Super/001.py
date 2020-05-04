@@ -45,20 +45,20 @@ class SubClass(MyParentClass):
 
 class Computer:
     def __init__(self, computer, ram, ssd):
-        computer _ computer
-        ram _ ram
-        ssd _ ssd
+        self.computer = computer
+        self.ram = ram
+        self.ssd = ssd
 
-c_ Laptop C..
-    ___ __init__(self, computer, ram, ssd, model):
-        s___. - ?  ?  ?
-        m.. _ m..
+class Laptop(Computer):
+    def __init__(self, computer, ram, ssd, model):
+        super().__init__(computer, ram, ssd)
+        self.model = model
 
-lenovo _ L.. 'lenovo', 2, 512, 'l420'
-print('This computer is:' ?.c..
-print('This computer has ram of' ?.r..
-print('This computer has ssd of' ?.s..
-print('This computer has this model:' ?.m..
+lenovo = Laptop('lenovo', 2, 512, 'l420')
+print('This computer is:', lenovo.computer)
+print('This computer has ram of', lenovo.ram)
+print('This computer has ssd of', lenovo.ssd)
+print('This computer has this model:', lenovo.model)
 
 
 # In the above example, we have defined one base class which is a Computer, and one is derived class, which is Laptop.
