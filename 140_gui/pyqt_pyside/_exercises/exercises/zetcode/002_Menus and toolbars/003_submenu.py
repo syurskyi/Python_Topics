@@ -1,8 +1,8 @@
 # ______ ___
-# ____ _2._W..______ QW.. QA.. QM.. QA..
+# ____ _2._W..______ ?W.. ?A.. ?M.. ?A..
 #
 #
-# c_ Example QM..
+# c_ Example ?M..
 #
 #     ___ -
 #         s___. -
@@ -13,11 +13,11 @@
 #         menubar _ mB..
 #         fileMenu _ ?.aM.. *File
 #
-#         impMenu _ QM.. *Import ?
-#         impAct _ QA.. *Import mail ?
+#         impMenu _ ?M.. *Import ?
+#         impAct _ ?A.. *Import mail ?
 #         iM__.aA.. iA..
 #
-#         newAct _ QA.. *New ?
+#         newAct _ ?A.. *New ?
 #
 #         fM__.aA.. nA..
 #         fM__.aM.. iM..

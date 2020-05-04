@@ -1,8 +1,8 @@
 # ______ ___
-# ____ _2._W.. ______ QM.. QA.. QA..
+# ____ _2._W.. ______ ?M.. ?A.. ?A..
 #
 #
-# c_ Example QM..
+# c_ Example ?M..
 #
 #     ___ -
 #         s___. -
@@ -17,7 +17,7 @@
 #         menubar _ mB..
 #         viewMenu _ ?.aM.. *View
 #
-#         viewStatAct _ QA.. *View statusbar ? ch.._T..
+#         viewStatAct _ ?A.. *View statusbar ? ch.._T..
 #         ?.sST.. *View statusbar
 #         ?.sC.. T..
 #         ?.t___.c.. tM..

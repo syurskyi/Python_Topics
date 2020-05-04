@@ -1,8 +1,8 @@
 # ______ ___
-# ____ _2._W.. ______  QW.. QMB.. QA..
+# ____ _2._W.. ______  ?W.. ?MB.. ?A..
 #
 #
-# c_ Example(QW..
+# c_ Example ?W..
 #     ___ -
 #         s__. -
 #
@@ -16,11 +16,11 @@
 #
 #     ___ closeEvent event
 #
-#         reply _ QMB__.q.. ? *Message,
-#                                            "Are you sure to quit?", QMB__.Y.. _
-#                                            QMB__.N. QMB__.N.
+#         reply _ ?MB__.q.. ? *Message,
+#                                            "Are you sure to quit?" ?MB__.Y.. _
+#                                            ?MB__.N. ?MB__.N.
 #
-#         __ ? __ QMB__.Y..
+#         __ ? __ ?MB__.Y..
 #             ?.a..
 #         ____
 #             ?.i..

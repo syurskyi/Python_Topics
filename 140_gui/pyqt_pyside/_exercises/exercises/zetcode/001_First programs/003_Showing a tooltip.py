@@ -1,21 +1,21 @@
 # ______ ___
-# ____ _2._W.. ______ (QW.. QTT..
-#     QPB.. QAp..
-# ____ _2._G.. ______ QF..
+# ____ _2._W.. ______ ?W.. ?TT..
+#     ?PB.. ?Ap..
+# ____ _2._G.. ______ ?F..
 #
 #
-# c_ Example QW..
+# c_ Example ?W..
 #     ___ -
 #            s__. -
 #
 #         ?
 #
 #     ___ initUI
-#         QTT__.sF.. QF.. *SansSerif 10
+#         ?TT__.sF.. ?F.. *SansSerif 10
 #
 #         sTT.. *This is a <b>QWidget</b> widget
 #
-#         btn _ QPB..  *Button ?
+#         btn _ ?PB..  *Button ?
 #         ?.sTT.. *This is a <b>?P..</b> widget
 #         ?.r.. ?.sH..
 #         ?.m.. 50, 50

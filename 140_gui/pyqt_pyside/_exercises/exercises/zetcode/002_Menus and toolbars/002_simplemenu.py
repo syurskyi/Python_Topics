@@ -1,9 +1,9 @@
 # ______ ___
-# ____ _2._W.. ______ QMW.. QAc.. qAp.. QA..
-# ____ _2._G.. ______ QI..
+# ____ _2._W.. ______ ?MW.. ?Ac.. ?Ap.. ?A..
+# ____ _2._G.. ______ ?I..
 #
 #
-# c_ Example QMW..
+# c_ Example ?MW..
 #
 #     ___ -
 #         s__. -
@@ -11,10 +11,10 @@
 #         ?
 #
 #     ___ initUI
-#         exitAct _ QA.. QI.. *e...png *&Exit ?
+#         exitAct _ ?A.. ?I.. *e...png *&Exit ?
 #         ?.sS.. *Ctrl+Q
 #         ?.sST.. *Exit application
-#         ?.t__.c.. qA__.q..
+#         ?.t__.c.. ?A__.q..
 #
 #         sB..
 #
