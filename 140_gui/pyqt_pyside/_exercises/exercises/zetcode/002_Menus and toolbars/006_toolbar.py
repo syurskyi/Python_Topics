@@ -3,24 +3,24 @@ from PyQt5.QtWidgets import QMainWindow, QApplication, qApp, QAction
 from PyQt5.QtGui import QIcon
 
 
-class Example ?M..
+class Example(QMainWindow):
 
-    ___ -
-        s__. -
+    def __init__(self):
+        super().__init__()
 
-        ?
+        self.initUI()
 
-    ___ initUI
-        exitAct _ ?A.. ?I.. *exit24.png *Exit ?
-        ?.sS.. *Ctrl+Q
-        ?.t__.c.. qA__.q..
+    def initUI(self):
+        exitAct = QAction(QIcon('exit24.png'), 'Exit', self)
+        exitAct.setShortcut('Ctrl+Q')
+        exitAct.triggered.connect(qApp.quit)
 
-        toolbar _ aTB.. *Exit
-        ?.aA.. eA..
+        self.toolbar = self.addToolBar('Exit')
+        self.toolbar.addAction(exitAct)
 
-        sG.. 300, 300, 300, 200
-        sWT.. *Toolbar
-        ?
+        self.setGeometry(300, 300, 300, 200)
+        self.setWindowTitle('Toolbar')
+        self.show()
 
 
 if __name__ == '__main__':

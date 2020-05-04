@@ -3,34 +3,34 @@ from PySide2.QtWidgets import QMainWindow, QTextEdit, QAction, QApplication
 from PySide2.QtGui import QIcon
 
 
-c_ Example ?M..
+class Example(QMainWindow):
 
-    ___ -
-        s__. -
+    def __init__(self):
+        super().__init__()
 
-        ?
+        self.initUI()
+    #
+    def initUI(self):
+        textEdit = QTextEdit()
+        self.setCentralWidget(textEdit)
 
-    ___ initUI
-        textEdit _ ?TE..
-        sCW.. ?
+        exitAct = QAction(QIcon('exit24.png'), 'Exit', self)
+        exitAct.setShortcut('Ctrl+Q')
+        exitAct.setStatusTip('Exit application')
+        exitAct.triggered.connect(self.close)
 
-        exitAct _ ?A.. ?I.. *exit24.png *Exit ?
-        ?.sS.. *Ctrl+Q
-        ?.sST.. *Exit application
-        ?.t___.c.. cl..
+        self.statusBar()
 
-        sB..
+        menubar = self.menuBar()
+        fileMenu = menubar.addMenu('&File')
+        fileMenu.addAction(exitAct)
 
-        menubar _ mB..
-        fileMenu _ ?.aM.. *&File
-        ?.aA.. eA..
+        toolbar = self.addToolBar('Exit')
+        toolbar.addAction(exitAct)
 
-        toolbar _ aTB.. *Exi
-        ?.aA.. eA..
-
-        sG.. 300, 300, 350, 250
-        sWT.. *Main window
-        ?
+        self.setGeometry(300, 300, 350, 250)
+        self.setWindowTitle('Main window')
+        self.show()
 
 
 if __name__ == '__main__':
