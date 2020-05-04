@@ -3,7 +3,7 @@ c_ someClass(object
     
     @staticmethod
     ___ someMethod(
-        pass
+        p..
 
 v _ someClass.someMethod
 x _ someClass.staticValue

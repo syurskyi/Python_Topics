@@ -11,11 +11,11 @@ c_ phone2(phone
         s__(phone2, self). -
 
     ___ sendMail 
-        pass
+        p..
 
     ___ call 
         __ T..:
-            pass
+            p..
         ____
             s__(phone2, self).call
 

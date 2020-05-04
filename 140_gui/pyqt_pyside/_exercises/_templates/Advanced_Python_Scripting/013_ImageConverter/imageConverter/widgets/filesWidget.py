@@ -66,17 +66,17 @@ c_ listWidgetClass(?LW..
             files.r..(s.data(32))
             tI..(iFI..(s).r..())
 
-    ___ mousePressEvent , event
-        __ event.button __ __.MouseButton.RightButton:
-            pass
-        ____ event.button __ __.MouseButton.LB..:
-            sDDM..(?AIV...NoDragDrop)
-            s__(listWidgetClass, self).mousePressEvent(event)
+    ___ mPE.. , event
+        __ event.button __ __.MB__.RB..:
+            p..
+        ____ event.button __ __.MB__.LB..:
+            sDDM..(?AIV...NDD..)
+            s__(listWidgetClass, self).mPE..(event)
         ____
             sDDM..(?AIV...DD..)
-            s__(listWidgetClass, self).mousePressEvent(event)
+            s__(listWidgetClass, self).mPE..(event)
 
     ___ mouseReleaseEvent , event
         sDDM..(?AIV...DD..)
-        s__(listWidgetClass, self).mouseReleaseEvent(event)
+        s__(listWidgetClass, self).mRE..(event)
 

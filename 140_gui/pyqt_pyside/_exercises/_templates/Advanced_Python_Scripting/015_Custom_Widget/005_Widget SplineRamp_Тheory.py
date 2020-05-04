@@ -57,13 +57,13 @@ c_ splineRampWidget(?W..
         painter.dR..(region2)
         painter.e..
 
-    ___ mousePressEvent , event
+    ___ mPE.. , event
         # print self.region1.contains(event.pos())
         __ region1.contains(event.p..()):
             dragged _ point1
         ____ region2.contains(event.p..()):
             dragged _ point2
-        s__(splineRampWidget, self).mousePressEvent(event)
+        s__(splineRampWidget, self).mPE..(event)
 
     ___ mouseMoveEvent , event
         # print self.dragged
@@ -78,7 +78,7 @@ c_ splineRampWidget(?W..
         dragged _ N..
         updateRegions
         update
-        s__(splineRampWidget, self).mouseReleaseEvent(event)
+        s__(splineRampWidget, self).mRE..(event)
 
     ___ resizeEvent , event
 

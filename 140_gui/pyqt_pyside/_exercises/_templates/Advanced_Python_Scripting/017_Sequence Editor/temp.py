@@ -24,8 +24,8 @@ c_ timeline_item(?G...QGraphicsRectItem
         ?G...QGraphicsRectItem.mouseDoubleClickEvent , a_event)
         print "Here's where we'll open the item properties dialog for track " + st.(track_num)
 
-    ___ mousePressEvent , a_event
-        ?G...QGraphicsRectItem.mousePressEvent , a_event)
+    ___ mPE.. , a_event
+        ?G...QGraphicsRectItem.mPE.. , a_event)
         setGraphicsEffect(?G...QGraphicsOpacityEffect())
 
     ___ mouseMoveEvent , a_event
@@ -36,7 +36,7 @@ c_ timeline_item(?G...QGraphicsRectItem
         setPos(f_pos, mouse_y_pos)
 
     ___ mouseReleaseEvent , a_event
-        ?G...QGraphicsRectItem.mouseReleaseEvent , a_event)
+        ?G...QGraphicsRectItem.mRE.. , a_event)
         setGraphicsEffect(N..)
         f_pos_x _ p...x
         setPos(f_pos_x, mouse_y_pos)

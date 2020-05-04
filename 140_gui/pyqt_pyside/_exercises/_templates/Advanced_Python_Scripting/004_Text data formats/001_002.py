@@ -38,10 +38,10 @@ c_ settingClass(object
 
 
 	___ readValue , key
-		pass
+		p..
 
 	___ writeValue , key, value
-		pass
+		p..
 
 s _ settingClass
 # d = {'key1':1, 'key2':2}

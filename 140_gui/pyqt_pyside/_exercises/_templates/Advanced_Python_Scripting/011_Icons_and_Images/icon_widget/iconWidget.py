@@ -40,7 +40,7 @@ c_ iconWidgetClass(?M.., ui.Ui_MainWindow
         list_lwd.sVM..(QListView.IconMode)
         list_lwd.setIconSize(QSize(64,64))
         list_lwd.setResizeMode(?LW...ResizeMode.Adjust)
-        list_lwd.sDDM..(?AIV...NoDragDrop)
+        list_lwd.sDDM..(?AIV...NDD..)
 
         #connects
         fill_btn.c___.c..(filList)

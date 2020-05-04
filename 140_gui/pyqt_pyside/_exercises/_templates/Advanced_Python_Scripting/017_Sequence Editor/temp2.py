@@ -103,16 +103,16 @@ c_ pad1(?G...QGraphicsEllipseItem
         color _ ?G...?C..(colorString)
         setBrush(color)
 
-    ___ mousePressEvent , e
+    ___ mPE.. , e
 
-        s__(pad1, self).mousePressEvent(e)
+        s__(pad1, self).mPE..(e)
 
         __ e.button __ ?C...__.LB..:
             print('left')
             # self.TriggerPad()
             startSong
 
-        __ e.button __ ?C...__.RightButton:
+        __ e.button __ ?C...__.RB..:
             print('midi')
             print(pad1.__counter)
             ___
@@ -191,7 +191,7 @@ c_ pad1(?G...QGraphicsEllipseItem
         _____:
             # QtGui.QMessageBox.about( QtGui.QWidget()	,"Warning", "Please, define a song sequence!")
             # self.updateColor("Blue")
-            pass
+            p..
 
     ___ playSong , songPath, offset
         playing _ T..
@@ -487,7 +487,7 @@ c_ mainWindow(?G...?M..
                     #    self.errorHandeling
 
     ___ errorHandeling
-        pass
+        p..
         # QtGui.QMessageBox.about( QtGui.QWidget()	,"Warning", "Please, define a song sequence!")
         # self.pad1.updateColor("Blue")
 

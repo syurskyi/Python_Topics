@@ -781,7 +781,7 @@ ___ _apply_site_config(
     _____ I..
         # If no QtSiteConfig module found, no modifications
         # to _common_members are needed.
-        pass
+        p..
     ____
         # Provide the ability to modify the dicts used to build Qt.py
         __ hasattr(QtSiteConfig, 'update_members'
@@ -922,7 +922,7 @@ ___ _build_compatibility_members(binding, decorators_None
     ___
         _____ QtSiteConfig
     _____ I..
-        pass
+        p..
     ____
         __ hasattr(QtSiteConfig, 'update_compatibility_decorators'
             QtSiteConfig.update_compatibility_decorators(binding, decorators)
@@ -994,7 +994,7 @@ ___ _pyside2(
             shiboken2.getCppPointer(object)[0]
 
     _____ I..
-        pass  # Optional
+        p..  # Optional
 
     __ hasattr(Qt, "_QtUiTools"
         Qt.QtCompat.loadUi _ _loadUi
@@ -1035,7 +1035,7 @@ ___ _pyside(
             shiboken.getCppPointer(object)[0]
 
     _____ I..
-        pass  # Optional
+        p..  # Optional
 
     __ hasattr(Qt, "_QtUiTools"
         Qt.QtCompat.loadUi _ _loadUi
@@ -1080,7 +1080,7 @@ ___ _pyqt5(
             sip.unwrapinstance(object)
 
     _____ I..
-        pass  # Optional
+        p..  # Optional
 
     __ hasattr(Qt, "_uic"
         Qt.QtCompat.loadUi _ _loadUi
@@ -1148,7 +1148,7 @@ ___ _pyqt4(
             sip.unwrapinstance(object)
 
     _____ I..
-        pass  # Optional
+        p..  # Optional
 
     __ hasattr(Qt, "_uic"
         Qt.QtCompat.loadUi _ _loadUi

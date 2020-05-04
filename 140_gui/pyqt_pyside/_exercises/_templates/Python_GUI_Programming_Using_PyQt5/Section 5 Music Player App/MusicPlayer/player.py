@@ -169,7 +169,7 @@ c_ Player(?W..
             pB__.setMaximum(songLength)
 
         _____:
-            pass
+            p..
 
     ___ playPrevious 
         g.. songLength
@@ -197,7 +197,7 @@ c_ Player(?W..
             pB__.setMaximum(songLength)
 
         _____:
-            pass
+            p..
 
     ___ playNext 
         g.. songLength
@@ -225,7 +225,7 @@ c_ Player(?W..
             pB__.setMaximum(songLength)
 
         _____:
-            pass
+            p..
 
     ___ setVolume 
         volume _ volumeSlider.v..

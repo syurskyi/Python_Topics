@@ -24,7 +24,7 @@ c_ Form(?D..
 
         c..(bt1, SIGNAL("clicked()"), updateUi)
         setWindowTitle("PyTube : Download Videos From Youtube")
-        pass
+        p..
 
     ___ updateUi 
         outtext.ap..("Download has started!!")
@@ -34,7 +34,7 @@ c_ Form(?D..
         video _ yt.videos[0]
         video.download
         outtext.ap..("Download Finished!!")
-        pass
+        p..
 
 
 app _ ?A..
