@@ -1,7 +1,8 @@
 # ______ ___
-# ____ ?.?W.. ______ W.., ?L.., ?A..
+# ____ ?.?W.. ______ ?
+# W.., ?L.., ?A..
 #
-# c_ Example W..
+# c_ Example ?W..
 #
 #     ___ -
 #         s__ ?  .-
@@ -10,17 +11,17 @@
 #
 #     ___ initUI
 #
-#         lbl1 _ ?L.. 'ZetCode'
-#         ?.m.. 15, 10
+#         lbl1 _ ?L.. *ZetCode
+#         ?.m.. 15 10
 #
-#         lbl2 _ ?L.. 'tutorials',
-#         ?.m.. 35, 40
+#         lbl2 _ ?L.. *tutorials
+#         ?.m.. 35 40
 #
-#         lbl3 _ ?L.. '___ programmers',
-#         ?.m.. 55, 70
+#         lbl3 _ ?L.. *for programmers
+#         ?.m.. 55 70
 #
-#         sG__(300, 300, 250, 150)
-#         sWT__('Absolute')
+#         sG__ 300, 300, 250, 150
+#         sWT__ *Absolute
 #         s..
 #
 # __ _____ __ _______

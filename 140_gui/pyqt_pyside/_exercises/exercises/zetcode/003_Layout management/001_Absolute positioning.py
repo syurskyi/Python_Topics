@@ -1,38 +1,38 @@
-# ______ ___
-# ____ ?.?W.. ______ W.., ?L.., ?A..
-#
-# c_ Example W..
-#
-#     ___ -
-#         s__ ?  .-
-#
-#         ?
-#
-#     ___ initUI
-#
-#         lbl1 _ ?L.. 'ZetCode'
-#         ?.m.. 15, 10
-#
-#         lbl2 _ ?L.. 'tutorials',
-#         ?.m.. 35, 40
-#
-#         lbl3 _ ?L.. '___ programmers',
-#         ?.m.. 55, 70
-#
-#         sG__(300, 300, 250, 150)
-#         sWT__('Absolute')
-#         s..
-#
-# __ _____ __ _______
-#     ______ ___
-#
-#     app _ N..
-#     ___
-#         ______ n..
-#     ______ I..
-#         ? _ ?
-#     main _ ?
-#     ?.s..
-#
-#     __ ? __ no. N..
-#         ?.e..
+import sys
+from PyQt5.QtWidgets import QWidget, QLabel, QApplication
+
+class Example(QWidget):
+
+    def __init__(self):
+        super().__init__()
+
+        self.initUI()
+
+    def initUI(self):
+
+        lbl1 = QLabel('ZetCode', self)
+        lbl1.move(15, 10)
+
+        lbl2 = QLabel('tutorials', self)
+        lbl2.move(35, 40)
+
+        lbl3 = QLabel('for programmers', self)
+        lbl3.move(55, 70)
+
+        self.setGeometry(300, 300, 250, 150)
+        self.setWindowTitle('Absolute')
+        self.show()
+
+if __name__ == '__main__':
+    import sys
+
+    app = None
+    try:
+        import nuke
+    except ImportError:
+        app = QApplication(sys.argv)
+    main = Example()
+    main.show()
+
+    if app is not None:
+        app.exec_()
