@@ -45,12 +45,12 @@
 #
 # c_ Computer
 #     ___ - computer ram ssd
-#         computer _ computer
-#         ram _ ram
-#         ssd _ ssd
+#         ? ?
+#         ? ?
+#         ? ?
 #
 # c_ Laptop C..
-#     ___ __init__(self, computer, ram, ssd, model):
+#     ___ - computer, ram, ssd, model):
 #         s___. - ?  ?  ?
 #         m.. _ m..
 #
