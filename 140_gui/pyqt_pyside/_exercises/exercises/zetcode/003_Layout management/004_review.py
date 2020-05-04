@@ -14,19 +14,19 @@ class Example(QWidget):
         self.initUI()
 
     def initUI(self):
-        lcd _ ?LCDN..
-        sld _ ?S.. __.H..
+        lcd = QLCDNumber(self)
+        sld = QSlider(Qt.Horizontal, self)
 
-        vbox _ ?VB..
-        ?.aW.. l..
-        ?.aW.. s..
+        vbox = QVBoxLayout()
+        vbox.addWidget(lcd)
+        vbox.addWidget(sld)
 
-        sL.. ?
-        s__.vC__.c.. l__.d..
+        self.setLayout(vbox)
+        sld.valueChanged.connect(lcd.display)
 
-        sG__ 300, 300, 250, 150
-        sWT__('Signal and slot')
-        s..
+        self.setGeometry(300, 300, 250, 150)
+        self.setWindowTitle('Signal and slot')
+        self.show()
 
 
 if __name__ == '__main__':
