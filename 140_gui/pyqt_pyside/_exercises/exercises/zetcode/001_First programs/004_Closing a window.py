@@ -1,34 +1,34 @@
-# ______ ___
-# ____ _2._W.. ______ ?W.. ?P.. ?A..
-#
-#
-# c__ Example ?W..
-#
-#     ___ -
-#         s__. -
-#
-#         ?
-#
-#     ___ initUI
-#         qbtn _ ?PB..*Quit ?
-#         ?.c___.c.. ?A___.i...q..
-#         ?.r.. ?.sH..
-#         ?.m.. 50 50
-#
-#         sG.. 300, 300, 250, 150
-#         sWT.. *Quit button
-#         ?
-#
-# __ ______ __ ______
-#     ______ ___
-#
-#     app _ N..
-#     ___
-#         ______ n..
-#     ______ I..
-#         ? _ ?
-#     main _ ?
-#     ?*.s..
-#
-#     __ ? __ no. N..
-#         ?.e.._
+import sys
+from PySide2.QtWidgets import QWidget, QPushButton, QApplication
+
+
+class Example(QWidget):
+
+    def __init__(self):
+        super().__init__()
+
+        self.initUI()
+
+    def initUI(self):
+        qbtn = QPushButton('Quit', self)
+        qbtn.clicked.connect(QApplication.instance().quit)
+        qbtn.resize(qbtn.sizeHint())
+        qbtn.move(50, 50)
+
+        self.setGeometry(300, 300, 250, 150)
+        self.setWindowTitle('Quit button')
+        self.show()
+
+if __name__ == '__main__':
+    import sys
+
+    app = None
+    try:
+        import  nuke
+    except ImportError:
+        app = QApplication(sys.argv)
+    main = Example()
+    main.show()
+
+    if app is not None:
+        app.exec_()
