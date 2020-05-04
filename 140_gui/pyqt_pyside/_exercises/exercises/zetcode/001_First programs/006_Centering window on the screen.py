@@ -1,38 +1,37 @@
+import sys
+from PySide2.QtWidgets import QWidget, QDesktopWidget, QApplication
 
-# ______ ___
-# ____ _2._W.. ______ ?W.. ?DW.. ?A..
-#
-#
-# c_ Example ?W..
-#     ___ -
-#         s__. -
-#
-#         ?
-#
-#     ___ initUI
-#         r.. 250 150
-#         c..
-#
-#         sWT.. *Center
-#         ?
-#
-#     ___ center
-#         qr _ fG..
-#         cp _ ?DW__.aG__.c..
-#         ?.mC.. ?
-#         ? ?.tL..
-#
-#
-# __ ______ __ ______
-#     ______ ___
-#
-#     app _ N..
-#     ___
-#         ______ n..
-#     ______ I..
-#         ? _ ?
-#     main _ ?
-#     ?*.s..
-#
-#     __ ? __ no. N..
-#         ?.e.._
+
+class Example(QWidget):
+    def __init__(self):
+        super().__init__()
+
+        self.initUI()
+
+    def initUI(self):
+        self.resize(250, 150)
+        self.center()
+
+        self.setWindowTitle('Center')
+        self.show()
+
+    def center(self):
+        qr = self.frameGeometry()
+        cp = QDesktopWidget().availableGeometry().center()
+        qr.moveCenter(cp)
+        self.move(qr.topLeft())
+
+
+if __name__ == '__main__':
+    import sys
+
+    app = None
+    try:
+        import nuke
+    except ImportError:
+        app = QApplication(sys.argv)
+    main = Example()
+    main.show()
+
+    if app is not None:
+        app.exec_()
