@@ -1,44 +1,43 @@
-# #!/usr/bin/python3
-# # -*- coding: utf-8 -*-
-#
-# ______ ___
-# ____ ?.?W.. ______ W.. GL..
-#                              ?P.. ?A..
-#
-#
-# c_ Example W..
-#
-#     ___ -
-#         s__ .-
-#
-#         ?
-#
-#     ___ initUI
-#
-#         grid _ ?G..
-#         sL.. ?
-#
-#         names _ ['Cls', 'Bck', '', 'Close',
-#                  '7', '8', '9', '/',
-#                  '4', '5', '6', '*',
-#                  '1', '2', '3', '-',
-#                  '0', '.', '=', '+']
-#
-#         positions _ i, j ___ i __ ra.. 5 ___ j __ ra.. 4
-#
-#         ___ position, name __ z.. ? ?
-#
-#             __ name __ ''
-#                 c..
-#             button _ ?P.. ?
-#             g__.aW.. ? $p..
-#
-#         m.. 300, 150
-#         sWT__('Calculator')
-#         s..
-#
-#
-# __ _____ __ _______
-#     app _ ?
-#     ex _ ?
-#     ___.e.. ?.e..
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
+import sys
+from PyQt5.QtWidgets import QWidget, QGridLayout, QPushButton, QApplication
+
+
+class Example(QWidget):
+
+    def __init__(self):
+        super().__init__()
+
+        self.initUI()
+
+    def initUI(self):
+
+        grid = QGridLayout()
+        self.setLayout(grid)
+
+        names = ['Cls', 'Bck', '', 'Close',
+                 '7', '8', '9', '/',
+                 '4', '5', '6', '*',
+                 '1', '2', '3', '-',
+                 '0', '.', '=', '+']
+
+        positions = [(i, j) for i in range(5) for j in range(4)]
+
+        for position, name in zip(positions, names):
+
+            if name == '':
+                continue
+            button = QPushButton(name)
+            grid.addWidget(button, *position)
+
+        self.move(300, 150)
+        self.setWindowTitle('Calculator')
+        self.show()
+
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    ex = Example()
+    sys.exit(app.exec_())

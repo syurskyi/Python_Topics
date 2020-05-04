@@ -11,8 +11,8 @@
 #
 #     ___ initUI
 #
-#         okButton _ ?P.. "OK"
-#         cancelButton _ ?P.. "Cancel"
+#         okButton _ ?PB.. *OK
+#         cancelButton _ ?PB.. *Cancel
 #
 #         hbox _ ?HB..
 #         ?.aS.. 1
@@ -26,7 +26,7 @@
 #         sL.. v..
 #
 #         sG__ 300, 300, 300, 150
-#         sWT__ 'Buttons'
+#         sWT__ *Buttons
 #         show
 #
 # __ _____ __ _______
