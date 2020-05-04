@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 
 import sys
-from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import (QWidget, QLCDNumber, QSlider,
+from PySide2.QtCore import Qt
+from PySide2.QtWidgets import (QWidget, QLCDNumber, QSlider,
                              QVBoxLayout, QApplication)
 
 class Example(QWidget):
