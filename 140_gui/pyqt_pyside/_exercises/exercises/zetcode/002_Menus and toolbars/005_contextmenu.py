@@ -1,28 +1,28 @@
 import sys
 from PyQt5.QtWidgets import QMainWindow, qApp, QMenu, QApplication
 
-c_ Example ?M..
+class Example(QMainWindow):
 
-    ___ -
-        s__. -
+    def __init__(self):
+        super().__init__()
 
-        ?
+        self.initUI
 
-    ___ initUI(
-        sG.. 300, 300, 300, 200
-        sWT.. *Context menu
-        ?
+    def initUI(self):
+        self.setGeometry(300, 300, 300, 200)
+        self.setWindowTitle('Context menu')
+        self.show()
 
-    ___ contextMenuEvent event
-        cmenu _ ?M.. ?
+    def contextMenuEvent(self, event):
+        cmenu = QMenu(self)
 
-        newAct _ ?.aA.. *New
-        opnAct _ ?.aA.. *Open
-        quitAct _ ?.aA.. *Quit
-        action _ ?.e.._ mTG.. ?.p..
+        newAct = cmenu.addAction('New')
+        opnAct = cmenu.addAction('Open')
+        quitAct = cmenu.addAction('Quit')
+        action = cmenu.exec_(self.mapToGlobal(event.pos()))
 
-        __ ? __ qA..
-            qA__.q..
+        if action == quitAct:
+            qApp.quit()
 
 if __name__ == '__main__':
     import sys
