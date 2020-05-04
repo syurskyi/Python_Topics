@@ -44,7 +44,7 @@ c_ eDrum(?G...?W..
         setTable
         setMaximumWidth(350)
         setMinimumWidth(180)
-        resize(180, 170)
+        r..(180, 170)
         setWindowTitle('Scalar Seetings')
 
 
@@ -257,7 +257,7 @@ c_ mainWindow(?G...?M..
         deviceList _ {}
         midiNote _ N..
 
-        resize(800, 600)
+        r..(800, 600)
         scene _ ?G...QGraphicsScene
         centralwidget _ ?G...QGraphicsView(scene)
         # vbox = QtGui.QHBoxLayout()

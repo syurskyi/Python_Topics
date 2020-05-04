@@ -26,7 +26,7 @@ _____ AttributeError:
 c_ Ui_Form(object
     ___ setupUi , Form
         Form.setObjectName(_fromUtf8("Form"))
-        Form.resize(400, 300)
+        Form.r..(400, 300)
         horizontalLayout _ ?G...QHBoxLayout(Form)
         horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
         verticalLayout _ ?G...QVBoxLayout

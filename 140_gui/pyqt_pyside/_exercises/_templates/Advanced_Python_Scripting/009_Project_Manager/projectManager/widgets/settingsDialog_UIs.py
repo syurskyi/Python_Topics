@@ -12,7 +12,7 @@ ____ ? _____ ?C.., ?G..
 c_ Ui_settingsDialog(object
     ___ setupUi , settingsDialog
         settingsDialog.setObjectName("settingsDialog")
-        settingsDialog.resize(458, 153)
+        settingsDialog.r..(458, 153)
         verticalLayout _ ?G...QVBoxLayout(settingsDialog)
         verticalLayout.setObjectName("verticalLayout")
         table _ ?G...QTableWidget(settingsDialog)

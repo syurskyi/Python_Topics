@@ -26,7 +26,7 @@ _____ AttributeError:
 c_ Ui_client(object
     ___ setupUi , client
         client.setObjectName(_fromUtf8("client"))
-        client.resize(366, 107)
+        client.r..(366, 107)
         verticalLayout _ ?G...QVBoxLayout(client)
         verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
         ip_le _ ?G...QLineEdit(client)

@@ -12,7 +12,7 @@ ____ ? _____ ?C.., ?G..
 c_ Ui_example(object
     ___ setupUi , example
         example.setObjectName("example")
-        example.resize(241, 204)
+        example.r..(241, 204)
         verticalLayout_2 _ ?G...QVBoxLayout(example)
         verticalLayout_2.setObjectName("verticalLayout_2")
         additem_btn _ ?G...?PB..(example)

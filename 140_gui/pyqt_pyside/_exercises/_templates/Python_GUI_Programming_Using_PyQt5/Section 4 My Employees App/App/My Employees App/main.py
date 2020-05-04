@@ -241,7 +241,7 @@ c_ UpdateEmployee(?W..
 
             defaultImg_os.path.b..(fileName)
             img_Image.o..(fileName)
-            img_img.resize(size)
+            img_img.r..(size)
             img.save("images/{}".f..(defaultImg))
 
 
@@ -354,7 +354,7 @@ c_ AddEmployee(?W..
 
             defaultImg_os.path.b..(fileName)
             img_Image.o..(fileName)
-            img_img.resize(size)
+            img_img.r..(size)
             img.save("images/{}".f..(defaultImg))
 
 

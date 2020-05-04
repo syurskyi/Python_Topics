@@ -26,7 +26,7 @@ _____ AttributeError:
 c_ Ui_settingsDialog(object
     ___ setupUi , settingsDialog
         settingsDialog.setObjectName(_fromUtf8("settingsDialog"))
-        settingsDialog.resize(458, 153)
+        settingsDialog.r..(458, 153)
         verticalLayout _ ?G...QVBoxLayout(settingsDialog)
         verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
         table _ ?G...QTableWidget(settingsDialog)

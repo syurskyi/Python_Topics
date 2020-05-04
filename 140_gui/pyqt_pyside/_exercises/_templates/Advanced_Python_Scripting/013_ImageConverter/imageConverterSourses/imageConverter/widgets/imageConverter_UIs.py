@@ -12,7 +12,7 @@ ____ ? _____ ?C.., ?G..
 c_ Ui_imageConverter(object
     ___ setupUi , imageConverter
         imageConverter.setObjectName("imageConverter")
-        imageConverter.resize(339, 379)
+        imageConverter.r..(339, 379)
         centralwidget _ ?G...?W..(imageConverter)
         centralwidget.setObjectName("centralwidget")
         verticalLayout _ ?G...QVBoxLayout(centralwidget)

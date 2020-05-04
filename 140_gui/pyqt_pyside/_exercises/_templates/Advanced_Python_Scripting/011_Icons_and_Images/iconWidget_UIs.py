@@ -12,7 +12,7 @@ ____ ? _____ ?C.., ?G..
 c_ Ui_MainWindow(object
     ___ setupUi , MainWindow
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(237, 369)
+        MainWindow.r..(237, 369)
         centralwidget _ ?G...?W..(MainWindow)
         centralwidget.setObjectName("centralwidget")
         horizontalLayout_2 _ ?G...QHBoxLayout(centralwidget)

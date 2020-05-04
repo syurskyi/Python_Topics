@@ -12,7 +12,7 @@ ____ ? _____ ?C.., ?G..
 c_ Ui_computeArea(object
     ___ setupUi , computeArea
         computeArea.setObjectName("computeArea")
-        computeArea.resize(741, 777)
+        computeArea.r..(741, 777)
         centralwidget _ ?G...?W..(computeArea)
         centralwidget.setObjectName("centralwidget")
         verticalLayout_3 _ ?G...QVBoxLayout(centralwidget)

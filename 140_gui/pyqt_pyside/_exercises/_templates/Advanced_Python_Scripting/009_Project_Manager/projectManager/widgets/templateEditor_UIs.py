@@ -12,7 +12,7 @@ ____ ? _____ ?C.., ?G..
 c_ Ui_templateEditor(object
     ___ setupUi , templateEditor
         templateEditor.setObjectName("templateEditor")
-        templateEditor.resize(357, 461)
+        templateEditor.r..(357, 461)
         verticalLayout _ ?G...QVBoxLayout(templateEditor)
         verticalLayout.setObjectName("verticalLayout")
         horizontalLayout_2 _ ?G...QHBoxLayout

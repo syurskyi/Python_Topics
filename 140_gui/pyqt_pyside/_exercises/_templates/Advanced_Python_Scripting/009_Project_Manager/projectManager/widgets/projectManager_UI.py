@@ -26,7 +26,7 @@ _____ AttributeError:
 c_ Ui_projectManager(object
     ___ setupUi , projectManager
         projectManager.setObjectName(_fromUtf8("projectManager"))
-        projectManager.resize(508, 384)
+        projectManager.r..(508, 384)
         centralwidget _ ?G...?W..(projectManager)
         centralwidget.setObjectName(_fromUtf8("centralwidget"))
         verticalLayout_2 _ ?G...QVBoxLayout(centralwidget)

@@ -12,7 +12,7 @@ ____ ? _____ ?C.., ?G..
 c_ Ui_Server(object
     ___ setupUi , Server
         Server.setObjectName("Server")
-        Server.resize(396, 407)
+        Server.r..(396, 407)
         verticalLayout _ ?G...QVBoxLayout(Server)
         verticalLayout.setObjectName("verticalLayout")
         progress_pbr _ ?G...QProgressBar(Server)

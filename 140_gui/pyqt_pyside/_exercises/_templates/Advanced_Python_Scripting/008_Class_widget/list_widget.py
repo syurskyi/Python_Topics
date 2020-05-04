@@ -15,7 +15,7 @@ c_ simpleWindow(?W..
         list.iC__.c..(updateText)
         list.itemDoubleClicked.c..(openFile)
         # start
-        resize(500,400)
+        r..(500,400)
         fillList
 
     ___ fullPath , item

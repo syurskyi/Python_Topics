@@ -14,7 +14,7 @@ c_ simpleWindow(?W..
         table.verticalHeader.h..
         table.horizontalHeader.setResizeMode(QHeaderView.Stretch)
         # start
-        resize(500,400)
+        r..(500,400)
         fillTable
 
     ___ fillTable 

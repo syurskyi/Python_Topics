@@ -15,7 +15,7 @@ c_ simpleWindow(?W..
         # connect
         tree.itemChanged.c..(action)
         # start
-        resize(500, 400)
+        r..(500, 400)
         updateTree
 
     ___ updateTree

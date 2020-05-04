@@ -26,7 +26,7 @@ _____ AttributeError:
 c_ Ui_MainWindow(object
     ___ setupUi , MainWindow
         MainWindow.setObjectName(_fromUtf8("MainWindow"))
-        MainWindow.resize(478, 496)
+        MainWindow.r..(478, 496)
         centralwidget _ ?G...?W..(MainWindow)
         centralwidget.setObjectName(_fromUtf8("centralwidget"))
         verticalLayout _ ?G...QVBoxLayout(centralwidget)

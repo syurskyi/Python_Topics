@@ -7,7 +7,7 @@ c_ simpleWindow(?W..
         ly _ QVBoxLayout
         btn  _ ?PB..('Open')
         ly.addWidget(btn)
-        resize(300,200)
+        r..(300,200)
         btn.c___.c..(showMessage)
 
     ___ showMessage 

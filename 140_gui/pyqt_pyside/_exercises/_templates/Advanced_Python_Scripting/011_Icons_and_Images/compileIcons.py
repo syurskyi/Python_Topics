@@ -35,7 +35,7 @@ c_ resourceCompileClass(?M..
     ___  -
         s__(resourceCompileClass, self). -
         setWindowTitle('Resource Compiler')
-        resize(250, 300)
+        r..(250, 300)
         w _ ?W..
         setCentralWidget(w)
         ly _ QVBoxLayout

@@ -26,7 +26,7 @@ _____ AttributeError:
 c_ Ui_Server(object
     ___ setupUi , Server
         Server.setObjectName(_fromUtf8("Server"))
-        Server.resize(396, 407)
+        Server.r..(396, 407)
         verticalLayout _ ?G...QVBoxLayout(Server)
         verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
         progress_pbr _ ?G...QProgressBar(Server)

@@ -12,7 +12,7 @@ ____ ? _____ ?C.., ?G..
 c_ Ui_Form(object
     ___ setupUi , Form
         Form.setObjectName("Form")
-        Form.resize(400, 300)
+        Form.r..(400, 300)
         horizontalLayout _ ?G...QHBoxLayout(Form)
         horizontalLayout.setObjectName("horizontalLayout")
         verticalLayout _ ?G...QVBoxLayout

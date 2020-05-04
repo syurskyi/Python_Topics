@@ -26,7 +26,7 @@ _____ AttributeError:
 c_ Ui_computeArea(object
     ___ setupUi , computeArea
         computeArea.setObjectName(_fromUtf8("computeArea"))
-        computeArea.resize(741, 777)
+        computeArea.r..(741, 777)
         centralwidget _ ?G...?W..(computeArea)
         centralwidget.setObjectName(_fromUtf8("centralwidget"))
         verticalLayout_3 _ ?G...QVBoxLayout(centralwidget)

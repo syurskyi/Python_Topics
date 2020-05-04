@@ -11,7 +11,7 @@ a _ ?A..
 w _ ?W..
 
 # Set window size.
-w.resize(320, 240)
+w.r..(320, 240)
 
 # Set window title
 w.setWindowTitle("Hello World!")

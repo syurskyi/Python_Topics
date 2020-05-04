@@ -26,7 +26,7 @@ _____ AttributeError:
 c_ Ui_templateEditor(object
     ___ setupUi , templateEditor
         templateEditor.setObjectName(_fromUtf8("templateEditor"))
-        templateEditor.resize(357, 461)
+        templateEditor.r..(357, 461)
         verticalLayout _ ?G...QVBoxLayout(templateEditor)
         verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
         horizontalLayout_2 _ ?G...QHBoxLayout

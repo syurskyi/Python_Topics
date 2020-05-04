@@ -113,7 +113,7 @@ c_ TP_Launcher_GUI(?W...?W..
         setWindowIcon(_tpl_icon)
         flag _ ?C...__.WindowCloseButtonHint
         sWF..(?C...__.Window | flag)
-        resize(190, 200)
+        r..(190, 200)
 
     ___ _setup_header 
         h_layout _ ?W...QHBoxLayout

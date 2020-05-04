@@ -26,7 +26,7 @@ _____ AttributeError:
 c_ Ui_createDialog(object
     ___ setupUi , createDialog
         createDialog.setObjectName(_fromUtf8("createDialog"))
-        createDialog.resize(240, 219)
+        createDialog.r..(240, 219)
         verticalLayout _ ?G...QVBoxLayout(createDialog)
         verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
         gridLayout _ ?G...QGridLayout

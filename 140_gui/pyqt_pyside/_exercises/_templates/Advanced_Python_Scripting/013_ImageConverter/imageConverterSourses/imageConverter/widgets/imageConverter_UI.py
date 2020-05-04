@@ -26,7 +26,7 @@ _____ AttributeError:
 c_ Ui_imageConverter(object
     ___ setupUi , imageConverter
         imageConverter.setObjectName(_fromUtf8("imageConverter"))
-        imageConverter.resize(339, 379)
+        imageConverter.r..(339, 379)
         centralwidget _ ?G...?W..(imageConverter)
         centralwidget.setObjectName(_fromUtf8("centralwidget"))
         verticalLayout _ ?G...QVBoxLayout(centralwidget)
