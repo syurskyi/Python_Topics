@@ -8,16 +8,16 @@
 # Example 1: super() with Single Inheritance
 # In the case of single inheritance, it allows us to refer base class by super().
 
-class Mammal(object):
-  def __init__(self, mammalName):
-    print(mammalName, 'is a warm-blooded animal.')
+c_ Mammal o..
+  ___  -  mammalName
+    print ? 'is a warm-blooded animal.')
 
-class Dog(Mammal):
-  def __init__(self):
+c_ Dog M..
+  ___  -
     print('Dog has four legs.')
-    super().__init__('Dog')
+    s__ . - ('Dog')
 
-d1 = Dog()
+d1 _ D..
 
 # Output
 #
@@ -36,7 +36,7 @@ d1 = Dog()
 # class Dog(CanidaeFamily):
 #   def __init__(self):
 #     print('Dog has four legs.')
-#
+# 
 #    # no need to change this
 #     super().__init__('Dog')
 
@@ -47,33 +47,33 @@ d1 = Dog()
 #
 # Example 2: super() with Multiple Inheritance
 
-class Animal:
-  def __init__(self, Animal):
-    print(Animal, 'is an animal.');
+c_ Animal:
+  ___  -  A..
+    print A.. 'is an animal.'
 
-class Mammal(Animal):
-  def __init__(self, mammalName):
-    print(mammalName, 'is a warm-blooded animal.')
-    super().__init__(mammalName)
+c_ Mammal A..
+  ___  -  mammalName
+    print m.. 'is a warm-blooded animal.')
+    s__ . - ?
 
-class NonWingedMammal(Mammal):
-  def __init__(self, NonWingedMammal):
-    print(NonWingedMammal, "can't fly.")
-    super().__init__(NonWingedMammal)
+c_ NonWingedMammal M..
+  ___  - ?
+    print ? "can't fly.")
+    s__ . - ?
 
-class NonMarineMammal(Mammal):
-  def __init__(self, NonMarineMammal):
-    print(NonMarineMammal, "can't swim.")
-    super().__init__(NonMarineMammal)
+c_ NonMarineMammal M..
+  ___  -  ?
+    print ? "can't swim.")
+    s__ . - ?
 
-class Dog(NonMarineMammal, NonWingedMammal):
-  def __init__(self):
-    print('Dog has 4 legs.');
-    super().__init__('Dog')
+c_ Dog(NonM.. NonW..
+  ___  -
+    print('Dog has 4 legs.')
+    s__ . - ('Dog')
 
-d = Dog()
+d _ D.
 print('')
-bat = NonMarineMammal('Bat')
+bat _ NonMarineMammal('Bat')
 
 # Output
 #
@@ -91,7 +91,7 @@ bat = NonMarineMammal('Bat')
 # Method Resolution Order (MRO) is the order in which methods should be inherited in the presence
 # of multiple inheritance. You can view the MRO by using the __mro__ attribute.
 #
-Dog.__mro__
+D_. -m
 # (<class 'Dog'>,
 # <class 'NonMarineMammal'>,
 # <class 'NonWingedMammal'>,

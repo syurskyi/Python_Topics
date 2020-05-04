@@ -1,6 +1,6 @@
 class Base(object):
     def __init__(self):
-        print "Base created"
+        print("Base created")
 
 class ChildA(Base):
     def __init__(self):

@@ -17,7 +17,7 @@ class Logger(object):
         super(Logger,self).__init__(**kwargs)
         self.name = name
     def run_logged(self, value):
-        print "Running", self.name, "with info", self.info()
+        print("Running", self.name, "with info", self.info())
         return self.run(value)
 
 class BLogged(B, Logger):

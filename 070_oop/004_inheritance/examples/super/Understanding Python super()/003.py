@@ -15,7 +15,7 @@ class Logger(object):
     def __init__(self, name):
         self.name = name
     def run_logged(self, value):
-        print "Running", self.name, "with info", self.info()
+        print("Running", self.name, "with info", self.info())
         return self.run(value)
 
 class BLogged(B, Logger):
