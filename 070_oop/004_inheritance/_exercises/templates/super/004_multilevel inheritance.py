@@ -17,7 +17,7 @@
 
 c_ Parentclass():
     ___  -
-        pass
+        p..
 
 # derived or subclass
 # initialize the parent or base class within the subclass

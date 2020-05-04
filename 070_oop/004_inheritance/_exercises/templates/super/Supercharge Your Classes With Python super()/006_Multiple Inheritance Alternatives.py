@@ -19,11 +19,11 @@
 
 c_ Rectangle:
     ___  -  length, width):
-        self.length _ length
-        self.width _ width
+        length _ length
+        width _ width
 
     ___ area
-        return self.length * self.width
+        r_ length * width
 
 c_ Square(Rectangle):
     ___  -  length):
@@ -31,18 +31,18 @@ c_ Square(Rectangle):
 
 c_ VolumeMixin:
     ___ volume
-        return self.area() * self.height
+        r_ area() * height
 
 c_ Cube(VolumeMixin, Square):
     ___  -  length):
         s__ . - (length)
-        self.height _ length
+        height _ length
 
     ___ face_area
-        return s__ .area()
+        r_ s__ .area()
 
     ___ surface_area
-        return s__ .area() * 6
+        r_ s__ .area() * 6
 
 # In this example, the code was reworked to include a mixin called VolumeMixin. The mixin is then used by Cube
 # and gives Cube the ability to calculate its volume, which is shown below:

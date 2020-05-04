@@ -2,19 +2,19 @@
 # Create a class that will inherit all the methods and properties from another class:
 
 c_ Parent:
-  ___  -  txt):
-    self.message _ txt
+  ___  -  txt
+    message _ ?
 
-  ___ printmessage
-    print(self.message)
+  ___ print message
+    print ?
 
-c_ Child(Parent):
-  ___  -  txt):
-    s__ . - (txt)
+c_ Child P..
+  ___  -  txt
+    s__ . - ?
 
-x _ Child("Hello, and welcome!")
+x _ C..("Hello, and welcome!")
 
-x.printmessage()
+?.print(p..m.)
 
 # Definition and Usage
 # The super() function is used to give access to methods and properties of a parent or sibling class.

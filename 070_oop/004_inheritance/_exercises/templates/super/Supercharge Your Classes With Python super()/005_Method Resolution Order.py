@@ -19,14 +19,14 @@ RightPyramid.__mro__
 
 c_ RightPyramid(Square, Triangle):
     ___  -  base, slant_height):
-        self.base _ base
-        self.slant_height _ slant_height
-        s__ . - (self.base)
+        base _ base
+        slant_height _ slant_height
+        s__ . - (base)
 
     ___ area
         base_area _ s__ .area()
         perimeter _ s__ .perimeter()
-        return 0.5 * perimeter * self.slant_height + base_area
+        r_ 0.5 * perimeter * slant_height + base_area
 
 
 # Notice that RightPyramid initializes partially with the .__init__() from the Square class.
@@ -60,30 +60,30 @@ pyramid.area()
 
 c_ Triangle:
     ___  -  base, height):
-        self.base _ base
-        self.height _ height
+        base _ base
+        height _ height
         s__ . - ()
 
     ___ tri_area
-        return 0.5 * self.base * self.height
+        r_ 0.5 * base * height
 
 # Let's also go ahead and use this in the RightPyramid class:
 
 c_ RightPyramid(Square, Triangle):
     ___  -  base, slant_height):
-        self.base _ base
-        self.slant_height _ slant_height
-        s__ . - (self.base)
+        base _ base
+        slant_height _ slant_height
+        s__ . - (base)
 
     ___ area
         base_area _ s__ .area()
         perimeter _ s__ .perimeter()
-        return 0.5 * perimeter * self.slant_height + base_area
+        r_ 0.5 * perimeter * slant_height + base_area
 
     ___ area_2
         base_area _ s__ .area()
         triangle_area _ s__ .tri_area()
-        return triangle_area * 4 + base_area
+        r_ triangle_area * 4 + base_area
 
 
 # The next issue here is that the code doesn't have a delegated Triangle object like it does for a Square object,
@@ -98,15 +98,15 @@ c_ RightPyramid(Square, Triangle):
 
 c_ Rectangle:
     ___  -  length, width, **kwargs):
-        self.length _ length
-        self.width _ width
+        length _ length
+        width _ width
         s__ . - (**kwargs)
 
     ___ area
-        return self.length * self.width
+        r_ length * width
 
     ___ perimeter
-        return 2 * self.length + 2 * self.width
+        r_ 2 * length + 2 * width
 
 # Here we declare that the Square class inherits from
 # the Rectangle class
@@ -118,25 +118,25 @@ c_ Square(Rectangle):
 c_ Cube(Square):
     ___ surface_area
         face_area _ s__ .area()
-        return face_area * 6
+        r_ face_area * 6
 
     ___ volume
         face_area _ s__ .area()
-        return face_area * self.length
+        r_ face_area * length
 
 c_ Triangle:
     ___  -  base, height, **kwargs):
-        self.base _ base
-        self.height _ height
+        base _ base
+        height _ height
         s__ . - (**kwargs)
 
     ___ tri_area
-        return 0.5 * self.base * self.height
+        r_ 0.5 * base * height
 
 c_ RightPyramid(Square, Triangle):
     ___  -  base, slant_height, **kwargs):
-        self.base _ base
-        self.slant_height _ slant_height
+        base _ base
+        slant_height _ slant_height
         kwargs["height"] _ slant_height
         kwargs["length"] _ base
         s__ . - (base_base, **kwargs)
@@ -144,12 +144,12 @@ c_ RightPyramid(Square, Triangle):
     ___ area
         base_area _ s__ .area()
         perimeter _ s__ .perimeter()
-        return 0.5 * perimeter * self.slant_height + base_area
+        r_ 0.5 * perimeter * slant_height + base_area
 
     ___ area_2
         base_area _ s__ .area()
         triangle_area _ s__ .tri_area()
-        return triangle_area * 4 + base_area
+        r_ triangle_area * 4 + base_area
 
 # There are a number of important differences in this code:
 # kwargs is modified in some places (such as RightPyramid.__init__()): This will allow users of these objects
