@@ -157,7 +157,7 @@ c_ TP_Launcher_GUI(?W...?W..
 
     ___ _setup_apps 
         _app_lw _ ?W...?LW..
-        _app_lw.setAlternatingRowColors(T..)
+        _app_lw.sARC..(T..)
         flag _ ?W...?AIV...InternalMove
         _app_lw.sDDM..(flag)
         r_ _app_lw

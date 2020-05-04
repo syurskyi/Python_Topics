@@ -208,7 +208,7 @@ c_ TP_Launcher_GUI(?W...?W..
     ___ _setup_apps
         ''' Create apps list widget with drag/drop, and stuff'''
         _app_lw _ ?W...?LW..
-        _app_lw.setAlternatingRowColors(T..)
+        _app_lw.sARC..(T..)
         _app_lw.sDDM..(
             ?W...?AIV...InternalMove
             )

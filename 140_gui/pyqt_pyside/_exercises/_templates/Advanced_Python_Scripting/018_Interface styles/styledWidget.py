@@ -11,7 +11,7 @@ c_ styleWidgetClass(?M.., ui.Ui_MainWindow
         s__(styleWidgetClass, self). -
         sWF..(__.WSOTH..)
         setupUi
-        treeWidget.setAlternatingRowColors(1)
+        treeWidget.sARC..(1)
         pB__.c___.c..(applyStyle)
 
     ___ applyStyle 
