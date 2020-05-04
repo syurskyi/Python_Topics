@@ -9,17 +9,17 @@
 #         ?
 #
 #     ___ initUI
-#         sB__ .sM.. 'Ready'
+#         sB__ .sM.. *Ready
 #
 #         sG__(300, 300, 250, 150)
-#         sWT__ 'Statusbar'
+#         sWT__ *Statusbar
 #         s..
 #
 #
 # __ _____ __ _______
 #     ______ ___
 #
-#     app = N..
+#     app _ N..
 #     ___
 #         ______ n..
 #     ______ I..
