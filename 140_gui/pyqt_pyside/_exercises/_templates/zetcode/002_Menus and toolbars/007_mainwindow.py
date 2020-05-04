@@ -1,9 +1,9 @@
 # ______ ___
-# ____ _2._W.. ______ QMW.. QTE.. QA.. QA..
-# ____ _2._G.. ______  QI..
+# ____ _2._W.. ______ ?MW.. ?TE.. ?A.. ?A..
+# ____ _2._G.. ______  ?I..
 #
 #
-# c_ Example QM..
+# c_ Example ?M..
 #
 #     ___ -
 #         s__. -
@@ -11,10 +11,10 @@
 #         ?
 #
 #     ___ initUI
-#         textEdit _ QTE..
+#         textEdit _ ?TE..
 #         sCW.. ?
 #
-#         exitAct _ QA.. QI.. *exit24.png *Exit ?
+#         exitAct _ ?A.. ?I.. *exit24.png *Exit ?
 #         ?.sS.. *Ctrl+Q
 #         ?.sST.. *Exit application
 #         ?.t___.c.. cl..

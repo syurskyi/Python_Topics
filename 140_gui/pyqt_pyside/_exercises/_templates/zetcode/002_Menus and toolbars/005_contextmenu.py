@@ -1,7 +1,7 @@
 # ______ ___
-# ____ _2._W.. ______ QM.. qAp.. QM.. QA..
+# ____ _2._W.. ______ ?M.. ?Ap.. ?M.. ?A..
 #
-# c_ Example QM..
+# c_ Example ?M..
 #
 #     ___ -
 #         s__. -
@@ -14,7 +14,7 @@
 #         ?
 #
 #     ___ contextMenuEvent event
-#         cmenu _ QM.. ?
+#         cmenu _ ?M.. ?
 #
 #         newAct _ ?.aA.. *New
 #         opnAct _ ?.aA.. *Open
