@@ -1,5 +1,5 @@
 _____ ___
-_____ os
+_____ __
 ____ ?.?C.. _____ _
 ____ ?.?G.. _____ _
 
@@ -7,7 +7,7 @@ c_ listWidgetClass(?LW..
     ___  -  
         s__(listWidgetClass, self). -
         sWF..(__.WSOTH..)          # #okno bydet vsegda poverh drygih okon
-        sDDM..(QAbstractItemView.DO..)      # shto bu dropEvent zarabotal nado vklychit dlja etogo vidgeta setDragDropMode
+        sDDM..(?AIV...DO..)      # shto bu dropEvent zarabotal nado vklychit dlja etogo vidgeta setDragDropMode
 
     ___ dropEvent , event                # to shto proishodit kogda mu sbrasuvaem dannue na vidget
         print 'DROP', ty..(event)
@@ -18,7 +18,7 @@ c_ listWidgetClass(?LW..
                                                # i etot event dolzen skazat' mozet li nash event eti dannue prinjat'
         __ mimedata.hasText(
             print 'text'
-        ____ mimedata.hU..(
+        ____ ?.hU..(
             print 'urls'
 
     ___ dragEnterEvent , event

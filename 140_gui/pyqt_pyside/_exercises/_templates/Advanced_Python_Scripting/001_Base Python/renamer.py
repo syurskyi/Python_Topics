@@ -1,5 +1,5 @@
 _____ ___
-_____ os
+_____ __
 
 # print sys.argv
 arg _ ___.argv[1:]
@@ -7,11 +7,11 @@ arg _ ___.argv[1:]
 newName _ raw_input('Enter name: ')
 __ newName:
     ___ i, f __ enumerate(arg
-        d _ os.path.dirname(f)
-        name, ext _ os.path.splitext(os.path.basename(f))
+        d _ __.path.d_n..(f)
+        name, ext _ __.path.splitext(__.path.b..(f))
         fName _ newName + '_' + st.(i).zfill(3) + ext
-        fullPath _ os.path.j..(d, fName)
+        fullPath _ __.path.j..(d, fName)
         # print(fullPath)
-        os.rename(f, fullPath)
+        __.rename(f, fullPath)
 
 raw_input

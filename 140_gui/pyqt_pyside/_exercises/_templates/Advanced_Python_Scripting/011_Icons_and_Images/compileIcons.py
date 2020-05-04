@@ -1,5 +1,5 @@
 _____ ___
-_____ os
+_____ __
 ____ ?.?C.. _____ _
 ____ ?.?G.. _____ _
 
@@ -12,10 +12,10 @@ c_ fileListClass(?LW..
     ___ appendImage , path
         path _ path.replace('/', '\\')
         __ no. path __ pathList:
-            name _ os.path.basename(path)
+            name _ __.path.b..(path)
             item _ ?LWI..
             item.sT..(name)
-            item.setData(32, path)
+            item.sD..(32, path)
             aI..(item)
             pathList.ap..(path)
 
@@ -23,13 +23,13 @@ c_ fileListClass(?LW..
         __ event.mD...hU..(
             event.a..
         ____
-            event.ignore
+            event.i..
 
     ___ dragMoveEvent , event
         __ event.mD...hU..(
             event.a..
         ____
-            event.ignore
+            event.i..
 
 c_ resourceCompileClass(?M..
     ___  -
@@ -50,23 +50,23 @@ c_ resourceCompileClass(?M..
             list.appendImage(image)
 
     ___ compileQrc , qrc
-        workDir _ os.path.dirname(qrc)
-        os.chdir(workDir)
+        workDir _ __.path.d_n..(qrc)
+        __.chdir(workDir)
         # PySide
-        compliled _ os.path.j..(os.path.dirname(qrc), 'icons_rcs.py')
+        compliled _ __.path.j..(__.path.d_n..(qrc), 'icons_rcs.py')
         rcc _ 'C:/Python27/Lib/site-packages/PySide/pyside-rcc.exe'
         cmd _ ' '.j..([rcc, qrc, 'o', compliled])
-        os.system(cmd)
+        __.system(cmd)
         # PyQt
-        compliled _ os.path.j..(os.path.dirname(qrc), 'icons_rc.py')
+        compliled _ __.path.j..(__.path.d_n..(qrc), 'icons_rc.py')
         rcc _ 'C:/Python27/Lib/site-packages/PyQt4/pyrcc.exe'
         cmd _ ' '.j..([rcc, qrc, 'o', compliled])
-        os.system(cmd)
+        __.system(cmd)
         r_ T..
 
     ___ runCompile
         files _ [list.item(i).data(32) ___ i in ra..(list.count())]
-        qrc _ os.path.j..(os.path.dirname(files[0]), 'recource.qrc')
+        qrc _ __.path.j..(__.path.d_n..(files[0]), 'recource.qrc')
         __ writeFile(qrc, files
             compileQrc(qrc)
 
@@ -74,7 +74,7 @@ c_ resourceCompileClass(?M..
         w__ o..(qrc, 'w') __ f:
             f.w..('<RCC>\n\t<qresource>\n')
             ___ ico in files:
-                f.w..('\t\t<file>%s</file>\n' % os.path.basename(ico))
+                f.w..('\t\t<file>%s</file>\n' % __.path.b..(ico))
             f.w..('\t</qresource>\n</RCC>/')
         r_ T..
 

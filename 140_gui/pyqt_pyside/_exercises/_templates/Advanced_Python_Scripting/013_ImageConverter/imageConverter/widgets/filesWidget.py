@@ -1,82 +1,82 @@
 _____ ___
-_____ os
+_____ __
 ____ ?.?C.. _____ _
 ____ ?.?G.. _____ _
 
-icon _ os.path.j..(os.path.dirname(__file__), 'drag.png')
+icon _ __.path.j..(__.path.d_n..(__file__), 'drag.png')
 
 c_ listWidgetClass(?LW..
     ___  -
         s__(listWidgetClass, self). -
         sWF..(__.WSOTH..)
-        sDDM..(QAbstractItemView.DragDrop)
-        setSelectionMode(QAbstractItemView.ExtendedSelection)
+        sDDM..(?AIV...DD..)
+        sSM..(?AIV...ES..)
         files _ []
 
     ___ dropEvent , event
         # print 'DROP', type(event)
         mimedata _ event.mD..
-        __ mimedata.hU..(
-            ___ f __ mimedata.u..(
-                addFile(f.toLocalFile())
+        __ ?.hU..(
+            ___ f __ ?.u..(
+                aF..(f.tLF..())
 
     ___ dragEnterEvent , event
         __ event.source __ self:
-            event.ignore
+            event.i..
         ____
             mimedata _ event.mD..
-            __ mimedata.hU..(
+            __ ?.hU..(
                 event.a..
             ____
-                event.ignore
+                event.i..
 
     ___ dragMoveEvent , event
         __ event.source __ self:
-            event.ignore
+            event.i..
         ____
             mimedata _ event.mD..
-            __ mimedata.hU..(
+            __ ?.hU..(
                 event.a..
             ____
-                event.ignore
+                event.i..
 
     ___ startDrag , dropAction
-        drag _ QDrag
-        mimedata _ QMimeData
+        drag _ ?D..
+        mimedata _ ?MD..
         url _ []
-        ___ i __ selectedItems(
-            url.ap..(i.data(__.UserRole))
-        mimedata.setUrls([?U__.fromLocalFile(x) ___ x __ url])
-        drag.setMimeData(mimedata)
-        pix _ QPixmap(icon)
-        drag.setPixmap(pix)
+        ___ i __ sI..(
+            url.ap..(i.data(__.UR..))
+        ?.sU..([?U__.fLF..(x) ___ x __ url])
+        drag.sMD..(mimedata)
+        pix _ ?P..(icon)
+        drag.sP..(pix)
         r _ drag.exec_
-        __ r __ __.DropAction.MoveAction:
+        __ r __ __.DA...MA..:
             deleteSelected
 
-    ___ addFile , path
+    ___ aF.. , path
         __ no. path __ files:
             item _ ?LWI..
-            item.sT..(os.path.basename(path))
-            item.setData(__.UserRole, path)
+            item.sT..(__.path.b..(path))
+            item.sD..(__.UR.., path)
             files.ap..(path)
 
     ___ deleteSelected
-        ___ s in selectedItems(
-            files.remove(s.data(32))
-            tI..(indexFromItem(s).row())
+        ___ s in sI..(
+            files.r..(s.data(32))
+            tI..(iFI..(s).r..())
 
     ___ mousePressEvent , event
         __ event.button __ __.MouseButton.RightButton:
             pass
         ____ event.button __ __.MouseButton.LB..:
-            sDDM..(QAbstractItemView.NoDragDrop)
+            sDDM..(?AIV...NoDragDrop)
             s__(listWidgetClass, self).mousePressEvent(event)
         ____
-            sDDM..(QAbstractItemView.DragDrop)
+            sDDM..(?AIV...DD..)
             s__(listWidgetClass, self).mousePressEvent(event)
 
     ___ mouseReleaseEvent , event
-        sDDM..(QAbstractItemView.DragDrop)
+        sDDM..(?AIV...DD..)
         s__(listWidgetClass, self).mouseReleaseEvent(event)
 

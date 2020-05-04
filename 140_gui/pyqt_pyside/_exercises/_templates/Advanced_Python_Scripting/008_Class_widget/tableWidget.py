@@ -1,10 +1,10 @@
 ____ ?.?G.. _____ _
 ____ ?.?C.. _____ _
-_____ os
-path _ os.path.dirname(__file__)
+_____ __
+path _ __.path.d_n..(__file__)
 
 c_ simpleWindow(?W..
-    path _ os.path.dirname(__file__)
+    path _ __.path.d_n..(__file__)
     ___  -  
         s__(simpleWindow, self). -
         ly _ QHBoxLayout
@@ -18,7 +18,7 @@ c_ simpleWindow(?W..
         fillTable
 
     ___ fillTable 
-        files _ os.listdir(path)
+        files _ __.listdir(path)
         table.setColumnCount(2)
         table.setRowCount(le.(files))
         table.setHorizontalHeaderLabels(['Name', 'Size'])
@@ -29,7 +29,7 @@ c_ simpleWindow(?W..
             table.sI..(i, 0, item)
             item _ ?TWI..
             item.setFlags(__.ItemIsEnabled | __.ItemIsSelectable)
-            item.sT..(st.(os.stat(os.path.j..(path, f)).st_size) + ' bytes' )
+            item.sT..(st.(__.stat(__.path.j..(path, f)).st_size) + ' bytes' )
             table.sI..(i, 1, item)
 
 

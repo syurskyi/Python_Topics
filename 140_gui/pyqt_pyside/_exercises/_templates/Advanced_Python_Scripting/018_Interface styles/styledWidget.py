@@ -1,9 +1,9 @@
 ____ ?.?C.. _____ _
 ____ ?.?G.. _____ _
 ____ widgets _____ window_UIs __ ui
-_____ os
+_____ __
 
-style _ os.path.j..(os.path.dirname(__file__), 'style.css')
+style _ __.path.j..(__.path.d_n..(__file__), 'style.css')
 
 
 c_ styleWidgetClass(?M.., ui.Ui_MainWindow
@@ -18,7 +18,7 @@ c_ styleWidgetClass(?M.., ui.Ui_MainWindow
         sSS..(o..(style).read())
 
 __ _____ __ ______
-    os.chdir(os.path.dirname(__file__))
+    __.chdir(__.path.d_n..(__file__))
     app _ ?A..([])
     w _ styleWidgetClass
     w.s..

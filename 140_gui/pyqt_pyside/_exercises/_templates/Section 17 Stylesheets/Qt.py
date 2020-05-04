@@ -37,7 +37,7 @@ LICENSE
 
 """
 
-_____ os
+_____ __
 _____ ___
 _____ types
 _____ shutil
@@ -49,9 +49,9 @@ __version__ _ "1.1.0.b5"
 __all__ _ []
 
 # Flags from environment variables
-QT_VERBOSE _ bool(os.getenv("QT_VERBOSE"))
-QT_PREFERRED_BINDING _ os.getenv("QT_PREFERRED_BINDING", "")
-QT_SIP_API_HINT _ os.getenv("QT_SIP_API_HINT")
+QT_VERBOSE _ bool(__.getenv("QT_VERBOSE"))
+QT_PREFERRED_BINDING _ __.getenv("QT_PREFERRED_BINDING", "")
+QT_SIP_API_HINT _ __.getenv("QT_SIP_API_HINT")
 
 # Reference to Qt.py
 __ _ ___.modules[__name__]
@@ -1398,7 +1398,7 @@ ___ _cli(args
         w__ o..(args.convert) __ f:
             lines _ _convert(f.readlines())
 
-        backup _ "%s_backup%s" % os.path.splitext(args.convert)
+        backup _ "%s_backup%s" % __.path.splitext(args.convert)
         ___.stdout.w..("Creating \"%s\"..\n" % backup)
         shutil.copy(args.convert, backup)
 
@@ -1415,7 +1415,7 @@ ___ _install(
     # Default order (customise order and content via QT_PREFERRED_BINDING)
     default_order _ ("PySide2", "PyQt5", "PySide", "PyQt4")
     preferred_order _ list(
-        b ___ b in QT_PREFERRED_BINDING.split(os.pathsep) __ b
+        b ___ b in QT_PREFERRED_BINDING.split(__.pathsep) __ b
     )
 
     order _ preferred_order or default_order

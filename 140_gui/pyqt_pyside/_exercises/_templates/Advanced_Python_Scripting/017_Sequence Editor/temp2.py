@@ -6,7 +6,7 @@ Created on Fri May 06 15:46:27 2016
 
 ____ PyQt4 _____ ?C.., ?G..
 _____ ___
-_____ os
+_____ __
 ____ PyQt4.?C.. _____ py_S.., SIGNAL, SLOT
 _____ ___, pygame, pygame.midi
 ____ pygame _____ mixer  # Load the required library
@@ -494,7 +494,7 @@ c_ mainWindow(?G...?M..
     ___ openFile
         print("open")
 
-        filename _ ?G...?FD__.gOFN.. , 'Open File', os.getenv('HOME'), "oss *.*")
+        filename _ ?G...?FD__.gOFN.. , 'Open File', __.getenv('HOME'), "oss *.*")
         f _ o..(filename, 'r')
         json _ json.loads(f.read())
         f.c..
@@ -540,10 +540,10 @@ c_ mainWindow(?G...?M..
         print("save")
         updateDict(1)
         jsonvar _ json.dumps(pad1.inputDict, indent_4)
-        filename _ ?G...?FD__.gSFN.. , 'Save File', os.getenv('HOME'), 'oss')
+        filename _ ?G...?FD__.gSFN.. , 'Save File', __.getenv('HOME'), 'oss')
 
-        __ os.path.exists(filename
-            os.remove(filename)
+        __ __.path.exists(filename
+            __.r..(filename)
 
         __ filename:
             ___
@@ -626,10 +626,10 @@ c_ mainWindow(?G...?M..
                 print(w.table)
                 numRows _ w.table.rowCount
                 print(numRows)
-                ___ row in ra..(numRows
-                    c _ w.table.item(row, 0).t..
-                    s _ w.table.item(row, 1).t..
-                    o _ w.table.item(row, 2).t..
+                ___ r.. in ra..(numRows
+                    c _ w.table.item(r.., 0).t..
+                    s _ w.table.item(r.., 1).t..
+                    o _ w.table.item(r.., 2).t..
                     songDict[elem]["song"].ap..([c, s, o])
             tabs.setCurrentIndex(0)
             print(songDict)
@@ -718,7 +718,7 @@ c_ songCreator(?G...QTabWidget
         index _ tableIndex
         print("index = %i" % index)
         table.setRowCount(tableIndex + 1)
-        filename _ ?G...?FD__.gOFN.. , 'Open File', os.getenv('HOME'), "song files (*.mp3 *.wav)")
+        filename _ ?G...?FD__.gOFN.. , 'Open File', __.getenv('HOME'), "song files (*.mp3 *.wav)")
 
         # adding default variable name to table
         default_name _ ?G...?TWI..("1")
@@ -737,12 +737,12 @@ c_ songCreator(?G...QTabWidget
 
     ___ deletesong
         print("delete item")
-        rows _ sorted(set(index.row ___ index in
+        rows _ sorted(set(index.r.. ___ index in
                           table.selectedIndexes()))
         l _ le.(rows)
-        ___ row in rows:
-            print('Row %d is selected' % row)
-            table.removeRow(row)
+        ___ r.. in rows:
+            print('Row %d is selected' % r..)
+            table.removeRow(r..)
         tableIndex -_ l
 
     ___ addseq , songList

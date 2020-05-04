@@ -1,10 +1,10 @@
 _____ nuke
 _____ nukescripts
 _____ json
-_____ os
+_____ __
 _____ colorsys
 
-path _ os.path.expanduser("C:/Users/nuke/Dropbox/nuke/.nuke/PYTHON/NODEGRAPH/node_color_presets/nodeColorPresets.json")
+path _ __.path.expanduser("C:/Users/nuke/Dropbox/nuke/.nuke/PYTHON/NODEGRAPH/node_color_presets/nodeColorPresets.json")
 pathToNames _ "C:/Users/nuke/Dropbox/nuke/.nuke/PYTHON/NODEGRAPH/node_color_presets/colorsYIQ.json"
 targetMenu _ nuke.toolbar("Nodes")
 
@@ -61,7 +61,7 @@ ___ nuke_hex_to_rgb(nuke_hex
 
 
 ___ read_color_presets(path
-    __ no. os.path.isfile(path
+    __ no. __.path.isfile(path
         print "No Color preset found "
         r_ {}
     ____

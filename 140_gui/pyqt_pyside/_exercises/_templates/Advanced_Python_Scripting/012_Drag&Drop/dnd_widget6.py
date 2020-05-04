@@ -1,5 +1,5 @@
 _____ ___
-_____ os
+_____ __
 ____ ?.?C.. _____ _
 ____ ?.?G.. _____ _
 
@@ -7,36 +7,36 @@ c_ listWidgetClass(?LW..
     ___  -
         s__(listWidgetClass, self). -
         sWF..(__.WSOTH..)
-        sDDM..(QAbstractItemView.DragDrop)
-        setSelectionMode(QAbstractItemView.ExtendedSelection)
+        sDDM..(?AIV...DD..)
+        sSM..(?AIV...ES..)
         files _ []
 
     ___ dropEvent , event
         # print 'DROP', type(event)
         mimedata _ event.mD..
-        __ mimedata.hU..(
-            ___ f __ mimedata.u..(
-                addFile(f.toLocalFile())
+        __ ?.hU..(
+            ___ f __ ?.u..(
+                aF..(f.tLF..())
 
     ___ dragEnterEvent , event
         mimedata _ event.mD..
-        __ mimedata.hU..(
+        __ ?.hU..(
             event.a..
         ____
-            event.ignore
+            event.i..
 
     ___ dragMoveEvent , event
         mimedata _ event.mD..
-        __ mimedata.hU..(
+        __ ?.hU..(
             event.a..
         ____
-            event.ignore
+            event.i..
 
-    ___ addFile , path
+    ___ aF.. , path
         __ no. path __ files:
             item _ ?LWI..
-            item.sT..(os.path.basename(path))
-            item.setData(__.UserRole, path)
+            item.sT..(__.path.b..(path))
+            item.sD..(__.UR.., path)
             files.ap..(path)
 
 __ _____ __ ______

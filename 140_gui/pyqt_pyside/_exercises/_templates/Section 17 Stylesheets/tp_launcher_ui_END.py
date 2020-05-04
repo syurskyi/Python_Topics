@@ -22,7 +22,7 @@ __author__ _ 'Trevor Payne'
 __version__ _ '1.0'
 
 ____ collections _____ defaultdict
-_____ os
+_____ __
 _____ ___
 
 _____ Qt
@@ -76,14 +76,14 @@ c_ Delete_Btn(?W...?PB..
         __ event.mD...hasFormat(_type
             event.a..
         ____
-            event.ignore
+            event.i..
 
     ___ dropEvent , event
         __ event.mD...hasFormat(_type
             _my_parent.delete_item
             event.a..
         ____
-            event.ignore
+            event.i..
 
 c_ TP_Launcher_GUI(?W...?W..
     '''The goal of this tool is to create a GUI that
@@ -96,9 +96,9 @@ c_ TP_Launcher_GUI(?W...?W..
 
         # System and tool icons
         _icons _ ?W...QFileIconProvider
-        _my_path _ os.path.dirname(os.path.realpath(__file__))
-        images_path _ os.path.j..(_my_path, 'images')
-        full_path _ os.path.j..(images_path, 'TPayne_Launcher.png')
+        _my_path _ __.path.d_n..(__.path.realpath(__file__))
+        images_path _ __.path.j..(_my_path, 'images')
+        full_path _ __.path.j..(images_path, 'TPayne_Launcher.png')
         _tpl_icon _ ?G...QIcon(full_path)
 
         # Data holding instance
@@ -124,8 +124,8 @@ c_ TP_Launcher_GUI(?W...?W..
         txt _ 'TPayne_Experience'+QT_VER
         _settings _ ?C...QSettings(txt, 'TPayne\'s_Launcher')
         name _ '{}_{}_data.json'.f..(PY_VER, QT_VER)
-        path _ os.path.j..(_my_path, 'data')
-        _json_file _ os.path.j..(path, name)
+        path _ __.path.j..(_my_path, 'data')
+        _json_file _ __.path.j..(path, name)
 
         # Handle version specific reading/writing settings
         d _ defaultdict(lambda: _get_settings)
@@ -167,7 +167,7 @@ c_ TP_Launcher_GUI(?W...?W..
 
         _workspace_cb _ ?W...QComboBox
         _workspace_cb.view.sDDM..(
-            ?W...QAbstractItemView.DragOnly
+            ?W...?AIV...DragOnly
             )
 
         _edit_btn _ ?W...?PB..('Edit')
@@ -210,7 +210,7 @@ c_ TP_Launcher_GUI(?W...?W..
         _app_lw _ ?W...?LW..
         _app_lw.setAlternatingRowColors(T..)
         _app_lw.sDDM..(
-            ?W...QAbstractItemView.InternalMove
+            ?W...?AIV...InternalMove
             )
         r_ _app_lw
 
@@ -278,7 +278,7 @@ c_ TP_Launcher_GUI(?W...?W..
     ___ closeEvent , e
         ''' Override Qt close event to instead hide tool '''
         h..
-        e.ignore
+        e.i..
 
     ___ _close
         ''' Save settings and Quit tool'''
@@ -348,7 +348,7 @@ c_ TP_Launcher_GUI(?W...?W..
         sel _ 'Select APP file'
         app _ _file_dialogs[QT_VER](sel, _my_path)
         __ app:
-            path _ os.path.split(app)[0]
+            path _ __.path.split(app)[0]
             msg _ 'Select ICON file (optional)'
             icon _ _file_dialogs[QT_VER](msg, path)
             _tp_launcher.add_app(get_workspace, app, icon)
@@ -372,7 +372,7 @@ c_ TP_Launcher_GUI(?W...?W..
         ''' When the user begins dragging a workspace,
         store the index of the item being dragged and
         note that it is a workspace.'''
-        ws _ st.(_workspace_cb.iT..(index.row()))
+        ws _ st.(_workspace_cb.iT..(index.r..()))
         _dragging _ ('workspace', ws)
 
     ___ _dragging_app , item
@@ -423,7 +423,7 @@ c_ TP_Launcher_GUI(?W...?W..
         qsettings.
         '''
         __ 'CurrentWorkspace' in _settings.allKeys an. \
-              os.path.exists(_json_file
+              __.path.exists(_json_file
             x, y, cws _ _settings_op[PY_VER][QT_VER]
             _tp_launcher.read_json_file(_json_file)
             _populate_workspaces

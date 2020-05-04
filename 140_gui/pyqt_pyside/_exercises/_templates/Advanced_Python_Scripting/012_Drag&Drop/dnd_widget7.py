@@ -1,74 +1,74 @@
 _____ ___
-_____ os
+_____ __
 ____ ?.?C.. _____ _
 ____ ?.?G.. _____ _
 
-icon _ os.path.j..(os.path.dirname(__file__), 'drag.png')
+icon _ __.path.j..(__.path.d_n..(__file__), 'drag.png')
 
 c_ listWidgetClass(?LW..
     ___  -  
         s__(listWidgetClass, self). -
         sWF..(__.WSOTH..)
-        sDDM..(QAbstractItemView.DragDrop)
-        setSelectionMode(QAbstractItemView.ExtendedSelection  # vjlychaet vozmoznost' vudeljat' neskol'ko fajlov
+        sDDM..(?AIV...DD..)
+        sSM..(?AIV...ES..  # vjlychaet vozmoznost' vudeljat' neskol'ko fajlov
         files _ []
 
     ___ dropEvent , event
         # print 'DROP', type(event)
         mimedata _ event.mD..
-        __ mimedata.hU..(
-            ___ f __ mimedata.u..(
-                addFile(f.toLocalFile())
+        __ ?.hU..(
+            ___ f __ ?.u..(
+                aF..(f.tLF..())
 
     ___ dragEnterEvent , event
         __ event.source __ self:
-            event.ignore
+            event.i..
         ____
-            mimedata _ event.mD..
-            __ mimedata.hU..(
+            ? _ event.mD..
+            __ ?.hU..(
                 event.a..
             ____
-                event.ignore
+                event.i..
 
     ___ dragMoveEvent , event
         __ event.source __ self:
-            event.ignore
+            event.i..
         ____
-            mimedata _ event.mD..
-            __ mimedata.hU..(
+            ? _ event.mD..
+            __ ?.hU..(
                 event.a..
             ____
-                event.ignore
+                event.i..
 
     ___ startDrag , dropAction     # pereopredeljaem method kotoruj otvechaet za to shto proishodit kogda mu nachinaem shto to peretaskivat'
                                          # dropAction odin iz rezimov peretaskivanija
-        drag _ QDrag               # nyzno sozdat' klass kotoruj otvechaet za peretaskivanie dannuh i eto ne mimedata a klass QDrag. QDrag dolzen znat' komy on prenadlezit
-        mimedata _ QMimeData           # i sootvestvenno mimedata kotorue bydyt tam lezat'
+        drag _ ?D..               # nyzno sozdat' klass kotoruj otvechaet za peretaskivanie dannuh i eto ne mimedata a klass QDrag. QDrag dolzen znat' komy on prenadlezit
+        mimedata _ ?MD..           # i sootvestvenno mimedata kotorue bydyt tam lezat'
         url _ []                         # potom nado sobrat' danue kotorue mu hotim pomestit' v ety mimedata a eto y nas pyti k fajlam iz vudelenuh fajlov
-        ___ i __ selectedItems(   # dlja vudelenuh elementov mu zabiraem pyt' i kladjom v url
-            url.ap..(i.data(__.UserRole))
+        ___ i __ sI..(   # dlja vudelenuh elementov mu zabiraem pyt' i kladjom v url
+            url.ap..(i.data(__.UR..))
         print url
-        mimedata.setUrls([?U__.fromLocalFile(x) ___ x __ url])  # kogda mu polychili pyti nam nado ih polozit' v mimedata. preobrazovuvaem strochky v klass QUrls
+        ?.sU..([?U__.fLF..(x) ___ x __ url])  # kogda mu polychili pyti nam nado ih polozit' v mimedata. preobrazovuvaem strochky v klass QUrls
                                                                 # kazduj pyt' kotoruj est' v spiske preobrazovuvaetsja v QUrl. Generator vernjot nam spisok etih klassov
-        drag.setMimeData(mimedata)                              # polychennue dannue mu lozim v objekt draga, toest' v etot kontejner dlja peretaskivanija
-        pix _ QPixmap(icon)
-        drag.setPixmap(pix)
+        drag.sMD..(mimedata)                              # polychennue dannue mu lozim v objekt draga, toest' v etot kontejner dlja peretaskivanija
+        pix _ ?P..(icon)
+        drag.sP..(pix)
         r _ drag.exec_                                        # exec_ kak iv dialogah vozvrachaet kakoj to rezyl'tat
         print r
-        __ r __ __.DropAction.MoveAction:                       # esli y nas yspesho proizvedeno peretaskivanie to mu ydaljaem nashi vudelenue items
+        __ r __ __.DA...MA..:                       # esli y nas yspesho proizvedeno peretaskivanie to mu ydaljaem nashi vudelenue items
             deleteSelected                               # metod deleteSelected
 
-    ___ addFile , path
+    ___ aF.. , path
         __ no. path __ files:
             item _ ?LWI..
-            item.sT..(os.path.basename(path))
-            item.setData(__.UserRole, path)
+            item.sT..(__.path.b..(path))
+            item.sD..(__.UR.., path)
             files.ap..(path)
 
     ___ deleteSelected 
-        ___ s __ selectedItems(                          # perebiraem vse vudelenue elementu
-            files.remove(s.data(32))                       # zabirajy pyt' kotoruj lezit v data i ydaljay iz svoego byfera
-            tI..(indexFromItem(s).row())          # posle chego ydaljay sam item
+        ___ s __ sI..(                          # perebiraem vse vudelenue elementu
+            files.r..(s.data(32))                       # zabirajy pyt' kotoruj lezit v data i ydaljay iz svoego byfera
+            tI..(iFI..(s).r..())          # posle chego ydaljay sam item
 
 __ _____ __ ______
     app _ ?A..([])

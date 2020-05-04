@@ -1,6 +1,6 @@
 ____ ?.?G.. _____ _
-_____ os
-path _ os.path.dirname(__file__)
+_____ __
+path _ __.path.d_n..(__file__)
 
 c_ simpleWindow(?W..
     ___  -  
@@ -19,10 +19,10 @@ c_ simpleWindow(?W..
         fillList
 
     ___ fullPath , item
-        r_ os.path.j..(path,item.t..())
+        r_ __.path.j..(path,item.t..())
 
     ___ fillList 
-        ___ f __ os.listdir(path
+        ___ f __ __.listdir(path
             list.aI..(f)
 
     ___ updateText , item
@@ -31,7 +31,7 @@ c_ simpleWindow(?W..
 
     ___ openFile , item
         path _ fullPath(item)
-        os.system(path)
+        __.system(path)
 
 
 __ _____ __ ______

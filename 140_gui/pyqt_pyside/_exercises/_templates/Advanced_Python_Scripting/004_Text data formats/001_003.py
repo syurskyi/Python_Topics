@@ -1,4 +1,4 @@
-_____ os
+_____ __
 
 c_ settings(
     ___  -  , path_None
@@ -9,7 +9,7 @@ c_ settings(
         data _ __readFile
 
     ___ __readFile
-        __ os.path.exists(path
+        __ __.path.exists(path
             t.. _ o..(path, 'r').readlines
             data _ {}
             __ t..:

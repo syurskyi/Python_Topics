@@ -1,7 +1,7 @@
 ____ ?.?G.. _____ _
 ____ ?.?C.. _____ _
-_____ os
-path _ os.path.dirname(os.path.dirname(__file__))
+_____ __
+path _ __.path.d_n..(__.path.d_n..(__file__))
 
 
 c_ simpleWindow(?W..
@@ -28,22 +28,22 @@ c_ simpleWindow(?W..
             parent _ tree.invisibleRootItem
         __ no. root:
             root _ path
-        ___ f __ os.listdir(root
+        ___ f __ __.listdir(root
             __ f[0] __ ['.', '_']: continue
             item _ QTreeWidgetItem
             item.sT..(0, f)
             parent.addChild(item)
-            fullpath _ os.path.j..(root, f)
-            __ os.path.isdir(fullpath
+            fullpath _ __.path.j..(root, f)
+            __ __.path.isdir(fullpath
                 fillTree(item, fullpath)
                 item.setExpanded(1)
             ____
                 item.setFlags(__.ItemIsEnabled | __.ItemIsSelectable | __.ItemIsEditable)
-                item.setData(0, __.UserRole, {'path':os.path.normpath(fullpath)})
+                item.sD..(0, __.UR.., {'path':__.path.normpath(fullpath)})
 
     ___ action , item
         print item.t..(0)
-        s _ item.data(0, __.UserRole)
+        s _ item.data(0, __.UR..)
         print s
 
 

@@ -15,7 +15,7 @@ Also includes YouTube opening function, hardcoded url though.
 
 ____ collections _____ OrderedDict, defaultdict
 _____ json
-_____ os
+_____ __
 _____ platform
 _____ subprocess
 _____ webbrowser
@@ -67,7 +67,7 @@ c_ TP_Launcher_Model(object
         ''' add an application and icon file path to the workspace
         dictionary designated
         '''
-        app_name _ os.path.splitext(os.path.basename(app_path))[0]
+        app_name _ __.path.splitext(__.path.b..(app_path))[0]
         _workspaces[ws_name][app_name] _ [app_path, icon_path]
 
     ___ delete_app , ws_name, app_name
@@ -85,11 +85,11 @@ c_ TP_Launcher_Model(object
     ___ run_app , ws_name, app_name
         ''' attempt to run application/file at path if still exists'''
         _file _ _workspaces[ws_name][app_name][0]
-        __ os.path.exists(_file
+        __ __.path.exists(_file
             ___
                 subprocess.Popen(_file)
             _____:
-                os.system(_open_doc[_platform] + _file)
+                __.system(_open_doc[_platform] + _file)
         ____
             raise ValueError('Exe file no longer exists')
 

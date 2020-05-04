@@ -1,4 +1,4 @@
-_____ os
+_____ __
 _____ shutil
 path _ path _ '/home/sergei/My_Documents/Python/Advanced Python Scripting/top_projects/render'
 correctname _ 'shot_01'
@@ -6,18 +6,18 @@ padding _ 4
 
 # list of files
 
-files _ os.listdir(path)
-tmp _ os.listdir(path)
+files _ __.listdir(path)
+tmp _ __.listdir(path)
 files _ []
 ___ t __ tmp:
-    __ os.path.isfile(os.path.j..(path, t)):
+    __ __.path.isfile(__.path.j..(path, t)):
         files.ap..(t)
 
 # separate
 
 frames _ []
 ___ f __ files:
-    name, ext _ os.path.splitext(f)
+    name, ext _ __.path.splitext(f)
     fullName _ name
     w__ name[-1].isdigit(
         # print(name)
@@ -29,19 +29,19 @@ offset _ min(frames) - 1
 
 # new name
 
-outFolder _ os.path.j..(path, correctname)
-__ no. os.path.exists(outFolder
-    os.mkdir(outFolder)
+outFolder _ __.path.j..(path, correctname)
+__ no. __.path.exists(outFolder
+    __.mkdir(outFolder)
 ___ i, f __ enumerate(files
     # print(f, frames[i])
-    old _ os.path.j..(path, f)
-    name, ext _ os.path.splitext(f)
+    old _ __.path.j..(path, f)
+    name, ext _ __.path.splitext(f)
     newName _ correctname + '_' + st.(frames[i] - offset).zfill(padding) + ext
-    new _ os.path.j..(path, correctname, newName)
+    new _ __.path.j..(path, correctname, newName)
     # print(old)
     # print(new)
-    __ os.path.exists(new
-        os.remove(new)
+    __ __.path.exists(new
+        __.r..(new)
     shutil.copy(old, new)
 
 # search missing frames
@@ -61,6 +61,6 @@ print('Miss frames:', miss)
 a _ raw_input('Remove old files? [y/n]: ')
 __ a __ 'y' or a __ 'Y':
     ___ f __ files:
-        os.remove(os.path.j..(path, f))
+        __.r..(__.path.j..(path, f))
 print('Complete!!!')
 raw_input

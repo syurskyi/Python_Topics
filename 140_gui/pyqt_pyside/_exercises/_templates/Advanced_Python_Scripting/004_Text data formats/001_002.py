@@ -1,4 +1,4 @@
-_____ os
+_____ __
 
 path _ 'C:/Users/Sergej/Dropbox/nuke/.nuke/example/PYTHON_EXAMPLE/Python_Example_All_Tutorials/VIDEO/Advanced_Python_Scripting/004_Text data formats/'
 # /Users/sergejyurskyj/.nuke/example/PYTHON_EXAMPLE/Python_Example_All_Tutorials/VIDEO/Advanced\ Python\ Scripting/004_Text\ data\ formats/
@@ -6,8 +6,8 @@ fileName _ 'settings.txt'
 
 c_ settingClass(object
 	___  -  
-		fullPath _ os.path.j..(path, fileName)
-		__ no. os.path.exists(fullPath
+		fullPath _ __.path.j..(path, fileName)
+		__ no. __.path.exists(fullPath
 			o..(fullPath, 'w').c..
 
 	___ __readFile 

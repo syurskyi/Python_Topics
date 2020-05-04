@@ -1,6 +1,6 @@
 ____ ?.?W.. _____ _
-____ ?.?G.. _____ QPixmap,?F..
-_____ ___,os
+____ ?.?G.. _____ ?P..,?F..
+_____ ___,__
 _____ _3
 ____ PIL _____ Image
 
@@ -68,7 +68,7 @@ c_ Main(?W..
         query_"SELECT * FROM employees ORDER BY ROWID ASC LIMIT 1"
         employee_cur.e..(query).f..
         img_QLabel
-        img.setPixmap(QPixmap("images/"+employee[5]))
+        img.sP..(?P..("images/"+employee[5]))
         name_QLabel(employee[1])
         surname_QLabel(employee[2])
         phone_QLabel(employee[3])
@@ -94,7 +94,7 @@ c_ Main(?W..
         query_("SELECT * FROM employees WHERE id=?")
         person_cur.e..(query,(id,)).f..#single item tuple=(1,)
         img _ QLabel
-        img.setPixmap(QPixmap("images/" + person[5]))
+        img.sP..(?P..("images/" + person[5]))
         name _ QLabel(person[1])
         surname _ QLabel(person[2])
         phone _ QLabel(person[3])
@@ -109,7 +109,7 @@ c_ Main(?W..
         leftLayout.addRow("Address:", address)
 
     ___ deleteEmployee 
-        __ employeeList.selectedItems(
+        __ employeeList.sI..(
             person_employeeList.cI__).t..
             id _ person.split("-")[0]
             mbox_QMessageBox.question ,"Warning","Are you sure to delete this person?",QMessageBox.Yes|QMessageBox.No,QMessageBox.No)
@@ -131,7 +131,7 @@ c_ Main(?W..
 
     ___ updateEmployee 
         g.. person_id
-        __ employeeList.selectedItems(
+        __ employeeList.sI..(
             person _ employeeList.cI__).t..
             person_id_person.split("-")[0]
             updateWindow_UpdateEmployee
@@ -177,7 +177,7 @@ c_ UpdateEmployee(?W..
         title _ QLabel("Update Person")
         title.sSS..('font-size: 24pt;font-family:Arial Bold;')
         imgAdd _ QLabel
-        imgAdd.setPixmap(QPixmap("images/{}".f..(image)))
+        imgAdd.sP..(?P..("images/{}".f..(image)))
         ###################Bottom Layout Widgets#####################
         nameLbl _ QLabel("Name :")
         nameEntry _ QLineEdit
@@ -239,7 +239,7 @@ c_ UpdateEmployee(?W..
 
         __ ok:
 
-            defaultImg_os.path.basename(fileName)
+            defaultImg_os.path.b..(fileName)
             img_Image.o..(fileName)
             img_img.resize(size)
             img.save("images/{}".f..(defaultImg))
@@ -292,7 +292,7 @@ c_ AddEmployee(?W..
         title_QLabel("Add Person")
         title.sSS..('font-size: 24pt;font-family:Arial Bold;')
         imgAdd_QLabel
-        imgAdd.setPixmap(QPixmap("icons/person.png"))
+        imgAdd.sP..(?P..("icons/person.png"))
         ###################Bottom Layout Widgets#####################
         nameLbl_QLabel("Name :")
         nameEntry_QLineEdit
@@ -352,7 +352,7 @@ c_ AddEmployee(?W..
 
         __ ok:
 
-            defaultImg_os.path.basename(fileName)
+            defaultImg_os.path.b..(fileName)
             img_Image.o..(fileName)
             img_img.resize(size)
             img.save("images/{}".f..(defaultImg))

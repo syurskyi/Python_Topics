@@ -1,4 +1,4 @@
-_____ ___,os
+_____ ___,__
 ____ ?.?W.. _____ _
 ____ ?.?G.. _____ QIcon
 ____ ?.?C.. _____ QSize,__,QTimer
@@ -134,7 +134,7 @@ c_ Player(?W..
     ___ addSound 
         directory _ ?FD__.gOFN.. , "Add Sound", "", "Sound Files (*.mp3 *.ogg *.wav)")
         # print(directory)
-        filename _ os.path.basename(directory[0])
+        filename _ __.path.b..(directory[0])
         # print(filename)
         playList.aI..(filename)
         musicList.ap..(directory[0])
@@ -144,7 +144,7 @@ c_ Player(?W..
         print(musicList)
         playList.c..
         ___ song __ musicList:
-            filename _ os.path.basename(song)
+            filename _ __.path.b..(song)
             playList.aI..(filename)
 
     ___ playSounds 

@@ -2,7 +2,7 @@ ____ ?.?C.. _____ _
 ____ ?.?G.. _____ _
 _____  iconWidget_UIs __ ui
 ____ icons.icons _____ icons
-_____ random, os
+_____ random, __
 _____ ctypes
 ____ icons _____ icons_rcs
 ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID('mycompany.myproduct.subproduct.version')
@@ -32,15 +32,15 @@ c_ iconWidgetClass(?M.., ui.Ui_MainWindow
         save_act.setIcon(QIcon(icons['save']))
         exit_act.setIcon(QIcon(icons['close']))
 
-        pix _ QPixmap(icons['sphere']).scaled( 40, 40,
+        pix _ ?P..(icons['sphere']).scaled( 40, 40,
                                                __.KeepAspectRatio,
                                                __.SmoothTransformation )
-        image_lb.setPixmap(pix)
+        image_lb.sP..(pix)
 
         list_lwd.sVM..(QListView.IconMode)
         list_lwd.setIconSize(QSize(64,64))
         list_lwd.setResizeMode(?LW...ResizeMode.Adjust)
-        list_lwd.sDDM..(QAbstractItemView.NoDragDrop)
+        list_lwd.sDDM..(?AIV...NoDragDrop)
 
         #connects
         fill_btn.c___.c..(filList)
@@ -50,11 +50,11 @@ c_ iconWidgetClass(?M.., ui.Ui_MainWindow
 
 
     ___ filList 
-        path _ os.path.j..(os.path.dirname(__file__), 'textures')
+        path _ __.path.j..(__.path.d_n..(__file__), 'textures')
         clearList
-        ___ i __ os.listdir(path
+        ___ i __ __.listdir(path
             item _ ?LWI..(i)
-            item.setIcon( QIcon( os.path.j..(path, i) ) )
+            item.setIcon( QIcon( __.path.j..(path, i) ) )
             list_lwd.aI..(item)
     ___ clearList 
         list_lwd.c..

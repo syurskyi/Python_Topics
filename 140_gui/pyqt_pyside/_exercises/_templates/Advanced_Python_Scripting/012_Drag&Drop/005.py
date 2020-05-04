@@ -1,81 +1,81 @@
-_____ ___
-_____ os
-____ ?.?C.. _____ _
-____ ?.?G.. _____ _
-
-icon _ os.path.j..(os.path.dirname(__file__), 'drag.png')
-
-c_ listWidgetClass(?LW..
-    ___  -
-        s__(listWidgetClass, self). -
-        sWF..(__.WSOTH..)
-        sDDM..(QAbstractItemView.DragDrop)
-        setSelectionMode(QAbstractItemView.ExtendedSelection)
-        files _ []
-
-    ___ dropEvent , event
-        # print 'DROP', type(event)
-        mimedata _ event.mD..
-        __ mimedata.hU..(
-            ___ f __ mimedata.u..(
-                addFile(f.toLocalFile())
-
-    ___ dragEnterEvent , event
-        __ event.source __ self:
-            event.ignore
-        ____
-            mimedata _ event.mD..
-            __ mimedata.hU..(
-                event.a..
-            ____
-                event.ignore
-
-    ___ dragMoveEvent , event
-        __ event.source __ self:
-            event.ignore
-        ____
-            mimedata _ event.mD..
-            __ mimedata.hU..(
-                event.a..
-            ____
-                event.ignore
-
-    ___ startDrag , dropAction
-        drag _ QDrag
-        mimedata _ QMimeData
-        url _ []
-        ___ i __ selectedItems(
-            url.ap..(i.data(__.UserRole))
-        mimedata.setUrls([?U__.fromLocalFile(x) ___ x __ url])
-        drag.setMimeData(mimedata)
-        pix _ QPixmap(icon)
-        drag.setPixmap(pix)
-        r _ drag.exec_
-        __ r __ __.DropAction.MoveAction:
-            deleteSelected
-
-    ___ addFile , path
-        __ no. path __ files:
-            item _ ?LWI..
-            item.sT..(os.path.basename(path))
-            item.setData(__.UserRole, path)
-            files.ap..(path)
-
-    ___ deleteSelected
-        ___ s __ selectedItems(
-            files.remove(s.data(32))
-            tI..(indexFromItem(s).row())
-
-__ _____ __ ______
-    _____ ___
-
-    app _ N..
-    ___
-        _____ nuke
-    _____ I..
-        app _ ?A..
-    main _ listWidgetClass
-    main.s..
-
-    __ app __ no. N..:
-        app.exec_
+# _____ ___
+# _____ __
+# ____ ?.?C.. _____ _
+# ____ ?.?G.. _____ _
+#
+# icon _ __.pa__.j.. __.pa__.d_n.. -f 'drag.png'
+#
+# c_ listWidgetClass ?LW..
+#     ___  -
+#         s__ ? . -
+#         sWF.. __.WSOTH..
+#         sDDM.. ?AIV...DD..
+#         sSM.. ?AIV...ES..
+#         files _   # list
+#
+#     ___ dropEvent  event
+#         # print 'DROP', type(event)
+#         mimedata _ event.mD..
+#         __ ?.hU..
+#             ___ f __ ?.u..
+#                 aF.. f.tLF..
+#
+#     ___ dragEnterEvent  event
+#         __ ?.source __ ____
+#             ?.i..
+#         ____
+#             mimedata _ ?.mD..
+#             __ ?.hU..
+#                 ?.a..
+#             ____
+#                 ?.i..
+#
+#     ___ dragMoveEvent  event
+#         __ ?.source __ ____
+#             ?.i..
+#         ____
+#             mimedata _ ?.mD..
+#             __ ?.hU..
+#                 ?.a..
+#             ____
+#                 ?.i..
+#
+#     ___ startDrag  dropAction
+#         drag _ ?D..
+#         mimedata _ ?MD..
+#         url _ # list
+#         ___ i __ sI..
+#             u__.ap.. i.data __.UR..
+#         ?.sU.. ?U__.fLF..(x) ___ ? __ u..
+#         d__.sMD.. ?
+#         pix _ ?P.. i..
+#         d__.sP.. p..
+#         r _ d__.exec_
+#         __ r __ __.DA...MA..
+#             deleteSelected
+#
+#     ___ aF..  path
+#         __ no. ? __ files
+#             item _ ?LWI..
+#             ?.sT.. __.pa__.b.. ?
+#             ?.sD.. __.UR.. ?
+#             f__.ap.. ?
+#
+#     ___ deleteSelected
+#         ___ s __ sI..
+#             f__.r.. ?.da.. 32
+#             tI.. iFI.. ? .r..
+#
+# __ _____ __ ______
+#     _____ ___
+#
+#     app _ N..
+#     ___
+#         _____ n..
+#     _____ I..
+#         app _ ?A..
+#     main _ ?
+#     ?.s..
+#
+#     __ ? __ no. N..
+#         ?.e..

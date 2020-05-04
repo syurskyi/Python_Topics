@@ -1,4 +1,4 @@
-_____ os
+_____ __
 _____ ___
 _____ t___
 _____ getopt
@@ -14,27 +14,27 @@ ___ usage(
 
 ___ get_zipfilepath(frm, to
     dt _ datetime.now
-    __ no. os.path.isdir(frm
+    __ no. __.path.isdir(frm
         print "'" + frm + "' this is not valid source dir"
         ___.e..(2)
-    __ no. os.path.isdir(to
+    __ no. __.path.isdir(to
         print "'" + to + "' this is not valid target dir"
         ___.e..(2)
 
-    name _ os.path.split(frm)[1] + '-' + dt.strftime("%Y%m%d-%H%M%S") + '.zip'
-    archive_full_path _ os.path.j..(to, name)
+    name _ __.path.split(frm)[1] + '-' + dt.strftime("%Y%m%d-%H%M%S") + '.zip'
+    archive_full_path _ __.path.j..(to, name)
 
     r_ archive_full_path
 
 
 ___ make_archive(zip_archive_file, directory, *args
     ___ recursive_zip(zipf, directory, *args
-        nodes _ os.listdir(directory)
+        nodes _ __.listdir(directory)
         ___ item __ nodes:
-            path _ os.path.j..(directory, item)
-            __ os.path.isfile(path
+            path _ __.path.j..(directory, item)
+            __ __.path.isfile(path
                 zipf.w..(path, unicode(path, 'utf-8').e..('cp852'))
-            ____ os.path.isdir(path
+            ____ __.path.isdir(path
                 __ no. item __ args:
                     recursive_zip(zipf, path, *args)
 
@@ -45,7 +45,7 @@ ___ make_archive(zip_archive_file, directory, *args
 
 ___ process(srcdir, outdir, *excludes
     archive_full_path _ get_zipfilepath(srcdir, outdir)
-    os.chdir(srcdir)
+    __.chdir(srcdir)
     make_archive(archive_full_path, './', *excludes)
     r_ archive_full_path
 

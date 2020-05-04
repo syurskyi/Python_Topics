@@ -1,5 +1,5 @@
 _____ ___
-_____ os
+_____ __
 ____ ?.?C.. _____ _
 ____ ?.?G.. _____ _
 
@@ -7,14 +7,14 @@ c_ listWidgetClass(?LW..
     ___  -  
         s__(listWidgetClass, self). -
         sWF..(__.WSOTH..)
-        sDDM..(QAbstractItemView.DO..)
+        sDDM..(?AIV...DO..)
 
     ___ dropEvent , event
         # print 'DROP', type(event)
         mimedata _ event.mD..
-        __ mimedata.hU..(
-            ___ f __ mimedata.u..(
-                print f.toLocalFile
+        __ ?.hU..(
+            ___ f __ ?.u..(
+                print f.tLF..
 
     ___ dragEnterEvent , event
         event.a..

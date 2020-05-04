@@ -1,24 +1,24 @@
-_____ os
+_____ __
 
 # print __file__
-root _ os.path.dirname(__file__)
-files _ os.listdir(root)
+root _ __.path.d_n..(__file__)
+files _ __.listdir(root)
 txt _ []
 ___ f __ files:
-    __ os.path.isfile(os.path.j..(root, f)):
-        __ os.path.splitext(f)[-1] __ '.txt':
-            arg.ap..(os.path.j..(root, f))
+    __ __.path.isfile(__.path.j..(root, f)):
+        __ __.path.splitext(f)[-1] __ '.txt':
+            arg.ap..(__.path.j..(root, f))
 
 # print(arg)
 
 newName _ raw_input('Enter name: ')
 __ newName:
     ___ i, f __ enumerate(arg
-        d _ os.path.dirname(f)
-        name, ext _ os.path.splitext(os.path.basename(f))
+        d _ __.path.d_n..(f)
+        name, ext _ __.path.splitext(__.path.b..(f))
         fName _ newName + '_' + st.(i).zfill(3) + ext
-        fullPath _ os.path.j..(d, fName)
+        fullPath _ __.path.j..(d, fName)
         # print(fullPath)
-        os.rename(f, fullPath)
+        __.rename(f, fullPath)
 
 raw_input
