@@ -2,59 +2,59 @@ ____ ?.?C.. _____ _
 ____ ?.?G.. _____ _
 _____ __
 
-icon _ __.path.j..(__.path.d_n..(__file__), 'drag.png')
+icon _ __.pa__.j.. __.pa__.d_n.. -f 'drag.png'
 
 
-c_ listWidgetClass(?LW..
+c_ listWidgetClass ?LW..
     ___  -
-        s__(listWidgetClass, self). -
-        sWF..(__.WSOTH..)
-        sDDM..(?AIV...DO..)
-        sSM..(?AIV...ES..)
-        files _ []
+        s__ ? . -
+        sWF.. __.WSOTH..
+        sDDM.. ?AIV...DO..
+        sSM.. ?AIV...ES..
+        files _  # list
 
-    ___ dropEvent , event
-        mimedata _ event.mD..
-        __ ?.hU..(
-            ___ f __ ?.u..(
-                aF..(f.tLF..())
+    ___ dropEvent event
+        mimedata _ ?.mD..
+        __ ?.hU..
+            ___ f __ ?.u..
+                aF.. ?.tLF..
 
     ___ dragEnterEvent , event
-        __ event.source __ self:
-            event.i..
+        __ ?.source __ self:
+            ?.i..
         ____
-            mimedata _ event.mD..
-            __ ?.hU..(
-                event.a..
+            mimedata _ ?.mD..
+            __ ?.hU..
+                ?.a..
             ____
-                event.i..
+                ?.i..
 
-    ___ dragMoveEvent , event
-        __ event.source __ self:
-            event.i..
+    ___ dragMoveEvent  event
+        __ ?.source __ ____
+            ?.i..
         ____
-            mimedata _ event.mD..
-            __ ?.hU..(
-                event.a..
+            mimedata _ ?.mD..
+            __ ?.hU..
+                ?.a..
             ____
-                event.i..
+                ?.i..
 
-    ___ aF.. , path
-        __ no. path __ files:
+    ___ aF..  path
+        __ no. ? __ files
             item _ ?LWI..
-            item.sT..(__.path.b..(path))
-            item.sD..(__.UR.., path)
-            files.ap..(path)
+            ?.sT.. __.path.b.. ?
+            ?.sD.. __.UR.. ?
+            f__.ap.. ?
 
     ___ deleteSelected
-        ___ s __ sI..(
-            files.r..(s.data(32))
-            tI..(iFI..(s).r..())
+        ___ s __ sI..
+            f__.r.. s.d.. 32
+            tI.. iFI.. ? .r..
 
 
     ___ getAllFiles
-        r_ files
+        r_ f..
 
-    ___ keyPressEvent , event
-        __ event.key __ __.Key_Delete:
-            deleteSelected
+    ___ keyPressEvent  event
+        __ ?.key __ __.K_D..
+            dS..
