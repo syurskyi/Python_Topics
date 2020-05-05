@@ -12,10 +12,10 @@
 #
 #     ___ initUI
 #
-#         btn1 _ ?P.."Get Amounts of Knobs",
+#         btn1 _ ?PB.. *Get Amounts of Knobs
 #         ?.m.. 30 50
 #
-#         btn2 _ ?P.. "Get Name of Node",
+#         btn2 _ ?PB.. *Get Name of Node
 #         ?.m.. 150, 50
 #
 #         ?.c__.c.. _1C..
@@ -24,7 +24,8 @@
 #         sB__
 #
 #         sG__ 300, 300, 290, 150
-#         sWT__ 'Event sender'
+#         sWT__ *
+#         Event sender
 #         s..
 #
 #     ___ button1Clicked

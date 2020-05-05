@@ -2,7 +2,7 @@
 # # -*- coding: utf-8 -*-
 #
 # ______ ___
-# ____ ?.?W.. ______ ?M.. ?P.. ?A..
+# ____ ?.?W.. ______ ?M.. ?PB.. ?A..
 #
 #
 # c_ Example ?M..
@@ -13,10 +13,10 @@
 #         ?
 #
 #     ___ initUI
-#         btn1 _ ?P.. "Button 1"
+#         btn1 _ ?PB.. *Button 1
 #         ?.m.. 30  50
 #
-#         btn2 _ ?P.. "Button 2"
+#         btn2 _ ?PB.. *Button 2
 #         ?.m.. 150 50
 #
 #         ?.c__.c.. bC..
@@ -24,8 +24,8 @@
 #
 #         sB__
 #
-#         sG__(300, 300, 290, 150)
-#         sWT__('Event sender')
+#         sG__ 300, 300, 290, 150
+#         sWT__ *Event sender
 #         s..
 #
 #     ___ buttonClicked

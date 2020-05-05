@@ -7,17 +7,17 @@
 #         sA.. ?C...__.AC.
 #
 #     ___ mousePressEvent  e
-#         name _ nuke.selectedNode .knob('name').getValue
-#         __ e.b..  & ?C...__.LeftButton:
+#         name _ n__.sN__ .k.. *n.. .gV..
+#         __ e.b..  & ?C...__.LB..
 #             print("Нажата левая кнопка мыши")
-#         __ e.b..  & ?C...__.RightButton:
+#         __ e.b..  & ?C...__.RB..
 #             print("Нажата правая кнопка мыши")
-#         __ e.b..  & ?C...__.MiddleButton:
+#         __ e.b..  & ?C...__.MB..
 #             print("Нажата средняя кнопка мыши")
-#         __ (e.b..  & ?C...__.LeftButton and
-#                     e.b..  & ?C...__.RightButton):
+#         __ (e.b..  & ?C...__.LB.. and
+#                     e.b..  & ?C...__.RB..
 #             print("Левая и правая кнопки нажаты")
-#         sT..('Name of the Selected node is: ' + st.(name))
+#         sT..('Name of the Selected node is: ' + st. n..
 #
 #
 # c_ MyWindow ?G__.W..

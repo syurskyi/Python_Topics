@@ -26,7 +26,7 @@
 #         sld.vC__.c.. l__.d..
 #
 #         sG__(300, 300, 250, 150)
-#         sWT__('Signal and slot')
+#         sWT__ *Signal and slot
 #         s..
 #
 #

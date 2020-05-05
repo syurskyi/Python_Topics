@@ -6,7 +6,7 @@
 # ____ ?.?W.. ______ W.., ?A..
 #
 #
-# c_ Example(W..):
+# c_ Example W..
 #
 #     ___ -
 #         s__ .-
@@ -15,7 +15,7 @@
 #
 #     ___ initUI
 #         sG__ 300, 300, 250, 150
-#         sWT__ 'Event handler'
+#         sWT__ *Event handler
 #         s..
 #
 #     ___ keyPressEvent  e

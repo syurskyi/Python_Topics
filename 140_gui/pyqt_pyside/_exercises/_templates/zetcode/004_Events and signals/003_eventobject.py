@@ -4,7 +4,7 @@
 #
 # ______ ___
 # ____ ?.?C.. ______ __
-# ____ ?.?W.. ______ W.., ?A.., ?G.., ?L..
+# ____ ?.?W.. ______ ?W.., ?A.., ?GL.., ?L..
 #
 #
 # c_ Example W..
@@ -30,14 +30,14 @@
 #         sL.. g..
 #
 #         sG__ 300, 300, 350, 200
-#         sWT__('Event object')
+#         sWT__ *Event object
 #         s..
 #
 #     ___ mouseMoveEvent e
 #         x _ ?.x
 #         y _ ?.y
 #
-#         text _ "x: {0},  y: {1}".f.. x y
+#         text _ "x: @,  y: @".f.. x y
 #         l)).sT.. ?
 #
 #

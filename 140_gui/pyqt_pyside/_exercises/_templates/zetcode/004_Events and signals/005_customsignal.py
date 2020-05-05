@@ -22,7 +22,7 @@
 #         ?.cA__.c.. c..
 #
 #         sG__ 300, 300, 290, 150
-#         sWT__('Emit signal')
+#         sWT__ *Emit signal
 #         s..
 #
 #     ___ mousePressEvent event

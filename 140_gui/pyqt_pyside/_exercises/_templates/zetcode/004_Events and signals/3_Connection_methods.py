@@ -1,11 +1,11 @@
 # ____ ?.?C.. ______ __
-# ____ ?.?W.. ______ *
+# ____ ?.?W.. ______ _
 #
 # c_ myWidget W..
 #     ___ -
 #         s__ ?  .-
 #         layout _ ?VB..
-#         button _ ?P..('Print')
+#         button _ ?PB.. *Print
 #         layout.aW.. ?
 #         line _ ?L..
 #         l__.aW.. ?
@@ -15,7 +15,7 @@
 #         # second version
 #         # self.c..(button, SIGNAL('clicked()'), self, SLOT('action()'))
 #         # third version
-#         @button.c__.c..
+#         ?b__.c__.c..
 #         ___ click
 #             a..
 #

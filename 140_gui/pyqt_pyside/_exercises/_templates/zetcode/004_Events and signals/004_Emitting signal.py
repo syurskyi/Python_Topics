@@ -4,7 +4,7 @@
 #
 # c_ Communicate ?C...QObject
 #
-#     closeApp _ ?C...pyqtSignal
+#     closeApp _ ?C...pyqtS..
 #
 #
 # c_ Example ?G__.?M..
@@ -17,11 +17,11 @@
 #
 #     ___ initUI
 #
-#         c _ Communicate
-#         c.closeApp.c.. c..
+#         c _ C..
+#         c.cA__.c.. c..
 #
-#         sG__(300, 300, 290, 150)
-#         sWT__('Emit signal')
+#         sG__ 300, 300, 290, 150
+#         sWT__ *Emit signal
 #         s..
 #
 #

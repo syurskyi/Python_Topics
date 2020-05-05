@@ -9,7 +9,7 @@ class myWidget(QWidget):
         layout.addWidget(button)
         line = QLineEdit()
         layout.addWidget(line)
-        line.tC...connect(self.text)
+        line.textChanged.connect(self.text)
         # first version
         # button.clicked.connect(self.action)
         # second version
