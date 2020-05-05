@@ -6,22 +6,22 @@
 - Нажмите комбинацию клавиш <Ctrl>+<C>
 - Нажмите клавишу <B>
 """
-from PyQt4 import QtCore, QtGui
+from PyQt5 import QtCore, QtWidgets, QtGui
 
 
-class MyLabel(QtGui.QLabel):
+class MyLabel(QtWidgets.QLabel):
     def __init__(self, text, parent=None):
-        QtGui.QLabel.__init__(self, text, parent)
+        QtWidgets.QLabel.__init__(self, text, parent)
         self.setFocusPolicy(QtCore.Qt.StrongFocus)
         self.setAlignment(QtCore.Qt.AlignCenter)
 
     def focusInEvent(self, e):
         self.grabKeyboard()
-        QtGui.QLabel.focusInEvent(self, e)
+        QtWidgets.QLabel.focusInEvent(self, e)
 
     def focusOutEvent(self, e):
         self.releaseKeyboard()
-        QtGui.QLabel.focusOutEvent(self, e)
+        QtWidgets.QLabel.focusOutEvent(self, e)
 
     def keyPressEvent(self, e):
         msg, modifiers = [], []
@@ -34,37 +34,36 @@ class MyLabel(QtGui.QLabel):
         if len(modifiers) == 0:
             modifiers.append("No")
         if e.matches(QtGui.QKeySequence.Copy):
-            msg.append("Pressed combination <Ctrl>+<C>")
+            msg.append("Нажата комбинация <Ctrl>+<C>")
         if e.key() == QtCore.Qt.Key_B:
-            msg.append("Pressed key <B>")
+            msg.append("Нажата клавиша <B>")
         self.setText(
-            "Code: {0}, symbol: {1}\nmodifiers: {2}\n{3}".format(
+            "Код: {0}, символ: {1}\nmodifiers: {2}\n{3}".format(
                 e.key(), e.text(), "+".join(modifiers), "\n".join(msg)))
         e.ignore()
-        QtGui.QLabel.keyPressEvent(self, e)
+        QtWidgets.QLabel.keyPressEvent(self, e)
 
     def keyReleaseEvent(self, e):
-        print("key released")
-        QtGui.QLabel.keyReleaseEvent(self, e)
+        print("Клавиша отпущена")
+        QtWidgets.QLabel.keyReleaseEvent(self, e)
 
 
-class MyWindow(QtGui.QWidget):
+class MyWindow(QtWidgets.QWidget):
     def __init__(self, parent=None):
-        QtGui.QWidget.__init__(self, parent)
+        QtWidgets.QWidget.__init__(self, parent)
         self.resize(300, 150)
-        self.label = MyLabel("Press any key")
-        self.label.setFrameStyle(QtGui.QFrame.Box | QtGui.QFrame.Plain)
-        self.lineEdit = QtGui.QLineEdit()
-        self.vbox = QtGui.QVBoxLayout()
+        self.label = MyLabel("Нажмите любую клавишу")
+        self.label.setFrameStyle(QtWidgets.QFrame.Box |
+                                 QtWidgets.QFrame.Plain)
+        self.vbox = QtWidgets.QVBoxLayout()
         self.vbox.addWidget(self.label)
-        self.vbox.addWidget(self.lineEdit)
         self.setLayout(self.vbox)
 
 
 if __name__ == "__main__":
     import sys
 
-    app = QtGui.QApplication(sys.argv)
+    app = QtWidgets.QApplication(sys.argv)
     window = MyWindow()
     window.show()
     sys.exit(app.exec_())

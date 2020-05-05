@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
-from PyQt4 import QtGui
+from PyQt5 import QtWidgets
 import sys
 
-app = QtGui.QApplication(sys.argv)
-window = QtGui.QWidget()
-window.setWindowTitle("Display window in the lower right corner of the screen")
+app = QtWidgets.QApplication(sys.argv)
+window = QtWidgets.QWidget()
+window.setWindowTitle("Вывод окна в нижнем правом углу экрана")
 window.resize(300, 100)
 window.move(window.width() * -2, 0)
 window.show()
-desktop = QtGui.QApplication.desktop()
+desktop = QtWidgets.QApplication.desktop()
 taskBarHeight = (desktop.screenGeometry().height() -
                  desktop.availableGeometry().height())
 x = desktop.width() - window.frameSize().width()

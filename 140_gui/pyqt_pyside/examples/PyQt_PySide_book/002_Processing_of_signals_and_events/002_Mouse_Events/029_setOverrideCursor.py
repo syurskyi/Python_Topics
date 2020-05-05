@@ -1,26 +1,26 @@
 # -*- coding: utf-8 -*-
-from PyQt4 import QtCore, QtGui
+from PyQt5 import QtCore, QtWidgets
 
-class MyWindow(QtGui.QWidget):
+class MyWindow(QtWidgets.QWidget):
     def __init__(self, parent=None):
-        QtGui.QWidget.__init__(self, parent)
+        QtWidgets.QWidget.__init__(self, parent)
         self.setCursor(QtCore.Qt.ArrowCursor)
-        self.button = QtGui.QPushButton("Change mouse pointer", self)
+        self.button = QtWidgets.QPushButton("Изменить указатель", self)
         self.button.setGeometry(50, 10, 200, 30)
         self.button.clicked.connect(self.on_clicked)
     def on_clicked(self):
-        QtGui.QApplication.setOverrideCursor(QtCore.Qt.WaitCursor)
+        QtWidgets.QApplication.setOverrideCursor(QtCore.Qt.WaitCursor)
         self.button.setEnabled(False)
         QtCore.QTimer.singleShot(5000, self.on_timeout)
     def on_timeout(self):
-        QtGui.QApplication.restoreOverrideCursor()
+        QtWidgets.QApplication.restoreOverrideCursor()
         self.button.setEnabled(True)
 
 if __name__ == "__main__":
     import sys
-    app = QtGui.QApplication(sys.argv)
+    app = QtWidgets.QApplication(sys.argv)
     window = MyWindow()
-    window.setWindowTitle("Change the mouse pointer for the application")
+    window.setWindowTitle("Изменение указателя мыши для приложения")
     window.resize(300, 70)
     window.show()
     sys.exit(app.exec_())

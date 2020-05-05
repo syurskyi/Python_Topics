@@ -1,26 +1,27 @@
 # -*- coding: utf-8 -*-
-from PyQt4 import QtCore, QtGui
+from PyQt5 import QtCore, QtWidgets
 
-class MyLabel(QtGui.QLabel):
+class MyLabel(QtWidgets.QLabel):
     def __init__(self, text, parent=None):
-        QtGui.QLabel.__init__(self, text, parent)
+        QtWidgets.QLabel.__init__(self, text, parent)
         self.setFocusPolicy(QtCore.Qt.StrongFocus)
         self.setAlignment(QtCore.Qt.AlignCenter)
-        self.setFrameStyle(QtGui.QFrame.Box | QtGui.QFrame.Plain)
+        self.setFrameStyle(QtWidgets.QFrame.Box |
+                           QtWidgets.QFrame.Plain)
 
     def event(self, e):
         if e.type() == QtCore.QEvent.KeyPress:
             self.setText(e.text())
             print("event")
-        return QtGui.QLabel.event(self, e)
+        return QtWidgets.QLabel.event(self, e)
 
-class MyWindow(QtGui.QWidget):
+class MyWindow(QtWidgets.QWidget):
     def __init__(self, parent=None):
-        QtGui.QWidget.__init__(self, parent)
-        self.label = MyLabel("Press the B key on the keyboard")
+        QtWidgets.QWidget.__init__(self, parent)
+        self.label = MyLabel("Нажмите клавишу B на клавиатуре")
         # Назначаем фильтр
         self.label.installEventFilter(self)
-        self.vbox = QtGui.QVBoxLayout()
+        self.vbox = QtWidgets.QVBoxLayout()
         self.vbox.addWidget(self.label)
         self.setLayout(self.vbox)
 
@@ -28,15 +29,15 @@ class MyWindow(QtGui.QWidget):
         if e.type() == QtCore.QEvent.KeyPress:
             print("eventFilter", type(obj))
             if e.key() == QtCore.Qt.Key_B:
-                print("The event from the <B> key will not reach the component")
+                print("Событие от клавиши <B> не дойдет до компонента")
                 return True
-        return QtGui.QWidget.eventFilter(self, obj, e)
+        return QtWidgets.QWidget.eventFilter(self, obj, e)
 
 if __name__ == "__main__":
     import sys
-    app = QtGui.QApplication(sys.argv)
+    app = QtWidgets.QApplication(sys.argv)
     window = MyWindow()
-    window.setWindowTitle("Filtering events")
+    window.setWindowTitle("Фильтрация событий")
     window.resize(300, 150)
     window.show()
     sys.exit(app.exec_())

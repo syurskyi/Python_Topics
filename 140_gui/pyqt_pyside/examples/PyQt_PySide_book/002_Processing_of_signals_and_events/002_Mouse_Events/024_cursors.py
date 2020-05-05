@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from PyQt4 import QtCore, QtGui
+from PyQt5 import QtCore, QtWidgets
 
 cursors = [
 (QtCore.Qt.ArrowCursor, "ArrowCursor"),
@@ -21,21 +21,19 @@ cursors = [
 (QtCore.Qt.WhatsThisCursor, "WhatsThisCursor"),
 (QtCore.Qt.BusyCursor, "BusyCursor")]
 
-
-class MyLabel(QtGui.QLabel):
+class MyLabel(QtWidgets.QLabel):
     def __init__(self, cur, nameCur, parent=None):
-        QtGui.QLabel.__init__(self, nameCur, parent)
+        QtWidgets.QLabel.__init__(self, nameCur, parent)
         self.setFixedSize(150, 40)
-        self.setFrameStyle(QtGui.QFrame.Box | QtGui.QFrame.Plain)
+        self.setFrameStyle(QtWidgets.QFrame.Box | QtWidgets.QFrame.Plain)
         self.setCursor(cur)
         self.setAlignment(QtCore.Qt.AlignCenter)
 
-
-class MyWindow(QtGui.QWidget):
+class MyWindow(QtWidgets.QWidget):
     def __init__(self, parent=None):
-        QtGui.QWidget.__init__(self, parent)
+        QtWidgets.QWidget.__init__(self, parent)
         self.labels = []
-        self.grid = QtGui.QGridLayout()
+        self.grid = QtWidgets.QGridLayout()
         i = 0
         for j in range(6):
             for k in range(3):
@@ -45,14 +43,13 @@ class MyWindow(QtGui.QWidget):
                 i += 1
         self.setLayout(self.grid)
 
-
 if __name__ == "__main__":
     import sys
-    app = QtGui.QApplication(sys.argv)
+    app = QtWidgets.QApplication(sys.argv)
     window = MyWindow()
-    window.setWindowTitle("Change the appearance of the mouse pointer")
+    window.setWindowTitle("Изменение внешнего вида указателя мыши")
     window.resize(500, 350)
-    desktop = QtGui.QApplication.desktop()
+    desktop = QtWidgets.QApplication.desktop()
     window.move(desktop.availableGeometry().center() -
                 window.rect().center())
     window.show()

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from PyQt4 import QtCore, QtGui
+from PyQt5 import QtCore, QtWidgets
 
 class MyEvent(QtCore.QEvent):
     idType = QtCore.QEvent.registerEventType()
@@ -23,22 +23,23 @@ class MyThread(QtCore.QThread):
             QtCore.QCoreApplication.postEvent(self.obj,
                                     MyEvent("i = {0}".format(i)))
 
-class MyLabel(QtGui.QLabel):
+class MyLabel(QtWidgets.QLabel):
     def __init__(self, text, parent=None):
-        QtGui.QLabel.__init__(self, text, parent)
+        QtWidgets.QLabel.__init__(self, text, parent)
         self.setAlignment(QtCore.Qt.AlignCenter)
-        self.setFrameStyle(QtGui.QFrame.Box | QtGui.QFrame.Plain)
+        self.setFrameStyle(QtWidgets.QFrame.Box |
+                           QtWidgets.QFrame.Plain)
 
     def customEvent(self, e):
         if e.type() == MyEvent.idType:
-            self.setText("Got data: {0}".format(e.get_data()))
+            self.setText("Получены данные: {0}".format(e.get_data()))
 
-class MyWindow(QtGui.QWidget):
+class MyWindow(QtWidgets.QWidget):
     def __init__(self, parent=None):
-        QtGui.QWidget.__init__(self, parent)
+        QtWidgets.QWidget.__init__(self, parent)
         self.label = MyLabel("")
-        self.button = QtGui.QPushButton("Start the process")
-        self.vbox = QtGui.QVBoxLayout()
+        self.button = QtWidgets.QPushButton("Запустить процесс")
+        self.vbox = QtWidgets.QVBoxLayout()
         self.vbox.addWidget(self.label)
         self.vbox.addWidget(self.button)
         self.setLayout(self.vbox)
@@ -47,17 +48,17 @@ class MyWindow(QtGui.QWidget):
         self.thread.finished.connect(self.on_finished)
 
     def on_clicked(self):
-        self.label.setText("The process launched")
+        self.label.setText("Процесс запущен")
         self.button.setEnabled(False)
         self.thread.start()
 
     def on_finished(self):
-        self.label.setText("The process completed")
+        self.label.setText("Процесс завершен")
         self.button.setEnabled(True)
 
 if __name__ == "__main__":
     import sys
-    app = QtGui.QApplication(sys.argv)
+    app = QtWidgets.QApplication(sys.argv)
     window = MyWindow()
     window.setWindowTitle("postEvent")
     window.resize(300, 150)

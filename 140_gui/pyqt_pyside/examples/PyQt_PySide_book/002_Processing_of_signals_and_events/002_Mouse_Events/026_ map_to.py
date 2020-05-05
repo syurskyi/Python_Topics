@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-from PyQt4 import QtCore, QtGui
+from PyQt5 import QtCore, QtWidgets
 
-class MyLabel(QtGui.QLabel):
+class MyLabel(QtWidgets.QLabel):
     def __init__(self, text, prnt, parent=None):
-        QtGui.QLabel.__init__(self, text, parent)
+        QtWidgets.QLabel.__init__(self, text, parent)
         self.setAlignment(QtCore.Qt.AlignCenter)
         self.grabMouse()
         self.prnt = prnt
@@ -31,22 +31,22 @@ class MyLabel(QtGui.QLabel):
         p6 = self.mapFrom(self.prnt, p5)
         print("mapFrom - X: {0}, Y: {1}".format(p6.x(), p6.y()))
         e.ignore()
-        QtGui.QLabel.mousePressEvent(self, e)
+        QtWidgets.QLabel.mousePressEvent(self, e)
 
-
-class MyWindow(QtGui.QWidget):
+class MyWindow(QtWidgets.QWidget):
     def __init__(self, parent=None):
-        QtGui.QWidget.__init__(self, parent)
+        QtWidgets.QWidget.__init__(self, parent)
         self.resize(300, 150)
-        self.label = MyLabel("Click mouse into the window", self)
-        self.label.setFrameStyle(QtGui.QFrame.Box | QtGui.QFrame.Plain)
-        self.vbox = QtGui.QVBoxLayout()
+        self.label = MyLabel("Щелкните мышью в окне", self)
+        self.label.setFrameStyle(QtWidgets.QFrame.Box |
+                                 QtWidgets.QFrame.Plain)
+        self.vbox = QtWidgets.QVBoxLayout()
         self.vbox.addWidget(self.label)
         self.setLayout(self.vbox)
 
 if __name__ == "__main__":
     import sys
-    app = QtGui.QApplication(sys.argv)
+    app = QtWidgets.QApplication(sys.argv)
     window = MyWindow()
     window.show()
     sys.exit(app.exec_())

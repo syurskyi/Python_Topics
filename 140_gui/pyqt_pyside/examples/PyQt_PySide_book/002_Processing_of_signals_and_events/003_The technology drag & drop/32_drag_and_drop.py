@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
-from PyQt4 import QtCore, QtGui
+from PyQt5 import QtCore, QtWidgets, QtGui
 
-class MyLabel(QtGui.QLabel):
+class MyLabel(QtWidgets.QLabel):
     def __init__(self, text, parent=None):
-        QtGui.QLabel.__init__(self, text, parent)
+        QtWidgets.QLabel.__init__(self, text, parent)
         self.setAlignment(QtCore.Qt.AlignCenter)
-        self.setFrameStyle(QtGui.QFrame.Box | QtGui.QFrame.Plain)
+        self.setFrameStyle(QtWidgets.QFrame.Box |
+                           QtWidgets.QFrame.Plain)
         self.startPos = None
 
     def mousePressEvent(self, e):
@@ -14,51 +15,51 @@ class MyLabel(QtGui.QLabel):
         else:
             self.startPos = None
             e.ignore()
-        QtGui.QLabel.mousePressEvent(self, e)
+        QtWidgets.QLabel.mousePressEvent(self, e)
 
     def mouseMoveEvent(self, e):
         if self.startPos is None:
             e.ignore()
-            QtGui.QLabel.mouseMoveEvent(self, e)
+            QtWidgets.QLabel.mouseMoveEvent(self, e)
             return
         length = (e.pos() - self.startPos).manhattanLength()
-        if length <= QtGui.QApplication.startDragDistance():
+        if length <= QtWidgets.QApplication.startDragDistance():
             e.ignore()
-            QtGui.QLabel.mouseMoveEvent(self, e)
+            QtWidgets.QLabel.mouseMoveEvent(self, e)
             return
         data = QtCore.QMimeData()
-        data.setText("Drag and drop text")
+        data.setText("Перетаскиваемый текст")
         drag = QtGui.QDrag(self)
         drag.setMimeData(data)
-        self.connect(drag, QtCore.SIGNAL("actionChanged(Qt::DropAction)"),
-                     self.on_action_changed)
-        self.connect(drag, QtCore.SIGNAL("targetChanged(QWidget *)"),
-                     self.on_target_changed)
-        action = drag.exec_(QtCore.Qt.MoveAction | QtCore.Qt.CopyAction,
+        drag.actionChanged.connect(self.on_action_changed)
+        drag.targetChanged.connect(self.on_target_changed)
+        action = drag.exec_(QtCore.Qt.MoveAction |
+                            QtCore.Qt.CopyAction,
                             QtCore.Qt.MoveAction)
         if action == QtCore.Qt.CopyAction:
-            print("Action completed CopyAction")
+            print("Завершено действие CopyAction")
         elif action == QtCore.Qt.MoveAction:
-            print("Action completed MoveAction")
+            print("Завершено действие MoveAction")
         elif action == QtCore.Qt.IgnoreAction:
-            print("Action canceled")
-        QtGui.QLabel.mouseMoveEvent(self, e)
+            print("Действие отменено")
+        QtWidgets.QLabel.mouseMoveEvent(self, e)
 
     def on_action_changed(self, action):
         if action == QtCore.Qt.CopyAction:
-            print("Action changed to CopyAction")
+            print("Действие изменено на CopyAction")
         elif action == QtCore.Qt.MoveAction:
-            print("Action changed to MoveAction")
+            print("Действие изменено на MoveAction")
 
     def on_target_changed(self, target):
-        print("Component-receiver is changed", type(target))
+        print("Изменен компонент-приемник", type(target))
 
-class MyLabel2(QtGui.QLabel):
+class MyLabel2(QtWidgets.QLabel):
     def __init__(self, text, parent=None):
-        QtGui.QLabel.__init__(self, text, parent)
+        QtWidgets.QLabel.__init__(self, text, parent)
         self.setFixedSize(280, 80)
         self.setAlignment(QtCore.Qt.AlignCenter)
-        self.setFrameStyle(QtGui.QFrame.Box | QtGui.QFrame.Plain)
+        self.setFrameStyle(QtWidgets.QFrame.Box |
+                           QtWidgets.QFrame.Plain)
         self.setAcceptDrops(True)
 
     def dragEnterEvent(self, e):
@@ -72,21 +73,21 @@ class MyLabel2(QtGui.QLabel):
         else:
             e.ignore()
 
-class MyWindow(QtGui.QWidget):
+class MyWindow(QtWidgets.QWidget):
     def __init__(self, parent=None):
-        QtGui.QWidget.__init__(self, parent)
-        self.label1 = MyLabel("Click here with the mouse\n" +
-             "and drag to a text editor\n(for example, to WordPad)" +
-             "\nor on the label below")
-        self.label2 = MyLabel2("Drag text here")
-        self.vbox = QtGui.QVBoxLayout()
+        QtWidgets.QWidget.__init__(self, parent)
+        self.label1 = MyLabel("Щелкните здесь мышью\n" +
+             "и перетащите в текстовый редактор\n(например, в WordPad)" +
+             "\nили на надпись ниже")
+        self.label2 = MyLabel2("Перетащите сюда текст")
+        self.vbox = QtWidgets.QVBoxLayout()
         self.vbox.addWidget(self.label1)
         self.vbox.addWidget(self.label2)
         self.setLayout(self.vbox)
 
 if __name__ == "__main__":
     import sys
-    app = QtGui.QApplication(sys.argv)
+    app = QtWidgets.QApplication(sys.argv)
     window = MyWindow()
     window.setWindowTitle("drag & drop")
     window.resize(300, 200)

@@ -1,29 +1,29 @@
 # -*- coding: utf-8 -*-
-from PyQt4 import QtCore, QtGui
+from PyQt5 import QtCore, QtWidgets, QtGui
 
 
-class MyWindow(QtGui.QWidget):
+class MyWindow(QtWidgets.QWidget):
     def __init__(self, parent=None):
-        QtGui.QWidget.__init__(self, parent)
-        self.setCursor(QtGui.QCursor(QtGui.QPixmap("Cursor.png"), 0, 0))
-        self.label = QtGui.QLabel("Click in the window")
+        QtWidgets.QWidget.__init__(self, parent)
+        self.setCursor(QtGui.QCursor(QtGui.QPixmap("cursor.png"), 0, 0))
+        self.label = QtWidgets.QLabel("Щелкните мышью в окне")
         self.label.setAlignment(QtCore.Qt.AlignCenter)
-        self.vbox = QtGui.QVBoxLayout()
+        self.vbox = QtWidgets.QVBoxLayout()
         self.vbox.addWidget(self.label)
         self.setLayout(self.vbox)
 
     def mousePressEvent(self, e):
         self.label.setText("X: {0}, Y: {1}".format(e.x(), e.y()))
         e.ignore()
-        QtGui.QWidget.mousePressEvent(self, e)
+        QtWidgets.QWidget.mousePressEvent(self, e)
 
 
 if __name__ == "__main__":
     import sys
 
-    app = QtGui.QApplication(sys.argv)
+    app = QtWidgets.QApplication(sys.argv)
     window = MyWindow()
-    window.setWindowTitle("Custom Cursor")
+    window.setWindowTitle("Пользовательский указатель")
     window.resize(300, 100)
     window.show()
     sys.exit(app.exec_())

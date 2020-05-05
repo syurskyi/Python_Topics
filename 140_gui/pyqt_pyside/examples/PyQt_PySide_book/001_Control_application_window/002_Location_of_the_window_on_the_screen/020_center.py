@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
-from PyQt4 import QtGui
+from PyQt5 import QtWidgets
 import sys
 
-app = QtGui.QApplication(sys.argv)
-window = QtGui.QWidget()
-window.setWindowTitle("Display the window in the center of the screen")
+app = QtWidgets.QApplication(sys.argv)
+window = QtWidgets.QWidget()
+window.setWindowTitle("Вывод окна по центру экрана")
 window.resize(300, 100)
-desktop = QtGui.QApplication.desktop()
+desktop = QtWidgets.QApplication.desktop()
 window.move(desktop.availableGeometry().center() -
             window.rect().center())
 window.show()

@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-from PyQt4 import QtCore, QtGui
+from PyQt5 import QtCore, QtWidgets
 
-class MyLabel(QtGui.QLabel):
+class MyLabel(QtWidgets.QLabel):
     def __init__(self, text, parent=None):
-        QtGui.QLabel.__init__(self, text, parent)
+        QtWidgets.QLabel.__init__(self, text, parent)
         self.setAlignment(QtCore.Qt.AlignCenter)
         # Запрет передачи события родителю
         self.setAttribute(QtCore.Qt.WA_NoMousePropagation, True)
@@ -22,30 +22,30 @@ class MyLabel(QtGui.QLabel):
              "X: {0}, Y: {1}, globalX: {2}, globalY: {3}".format(
              e.x(), e.y(), e.globalX(), e.globalY()))
         e.ignore()
-        QtGui.QLabel.mousePressEvent(self, e)
+        QtWidgets.QLabel.mousePressEvent(self, e)
 
     def mouseReleaseEvent(self, e):
         print("Отпускание кнопки")
-        QtGui.QLabel.mouseReleaseEvent(self, e)
+        QtWidgets.QLabel.mouseReleaseEvent(self, e)
 
     def mouseDoubleClickEvent(self, e):
         print("Двойной щелчок")
-        QtGui.QLabel.mouseDoubleClickEvent(self, e)
+        QtWidgets.QLabel.mouseDoubleClickEvent(self, e)
 
-class MyWindow(QtGui.QWidget):
+class MyWindow(QtWidgets.QWidget):
     def __init__(self, parent=None):
-        QtGui.QWidget.__init__(self, parent)
-
+        QtWidgets.QWidget.__init__(self, parent)
         self.resize(300, 150)
-        self.label = MyLabel("Click here with the mouse")
-        self.label.setFrameStyle(QtGui.QFrame.Box | QtGui.QFrame.Plain)
-        self.vbox = QtGui.QVBoxLayout()
+        self.label = MyLabel("Щелкните здесь мышью")
+        self.label.setFrameStyle(QtWidgets.QFrame.Box |
+                                 QtWidgets.QFrame.Plain)
+        self.vbox = QtWidgets.QVBoxLayout()
         self.vbox.addWidget(self.label)
         self.setLayout(self.vbox)
 
 if __name__ == "__main__":
     import sys
-    app = QtGui.QApplication(sys.argv)
+    app = QtWidgets.QApplication(sys.argv)
     window = MyWindow()
     window.show()
     sys.exit(app.exec_())

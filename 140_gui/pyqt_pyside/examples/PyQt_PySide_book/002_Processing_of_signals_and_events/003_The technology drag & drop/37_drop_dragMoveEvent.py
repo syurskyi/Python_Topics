@@ -1,12 +1,13 @@
 # -*- coding: utf-8 -*-
-from PyQt4 import QtCore, QtGui
+from PyQt5 import QtCore, QtWidgets
 
-class MyLabel(QtGui.QLabel):
+class MyLabel(QtWidgets.QLabel):
     def __init__(self, text, parent=None):
-        QtGui.QLabel.__init__(self, text, parent)
+        QtWidgets.QLabel.__init__(self, text, parent)
         self.setFixedSize(330, 80)
         self.setAlignment(QtCore.Qt.AlignCenter)
-        self.setFrameStyle(QtGui.QFrame.Box | QtGui.QFrame.Plain)
+        self.setFrameStyle(QtWidgets.QFrame.Box |
+                           QtWidgets.QFrame.Plain)
         self.setAcceptDrops(True)
         self.setAutoFillBackground(True)
         self.setStyleSheet(
@@ -31,17 +32,17 @@ class MyLabel(QtGui.QLabel):
         else:
             e.ignore()
 
-class MyWindow(QtGui.QWidget):
+class MyWindow(QtWidgets.QWidget):
     def __init__(self, parent=None):
-        QtGui.QWidget.__init__(self, parent)
-        self.label = MyLabel("Drag the text to an image")
-        self.vbox = QtGui.QVBoxLayout()
+        QtWidgets.QWidget.__init__(self, parent)
+        self.label = MyLabel("Перетащите текст на изображение")
+        self.vbox = QtWidgets.QVBoxLayout()
         self.vbox.addWidget(self.label)
         self.setLayout(self.vbox)
 
 if __name__ == "__main__":
     import sys
-    app = QtGui.QApplication(sys.argv)
+    app = QtWidgets.QApplication(sys.argv)
     window = MyWindow()
     window.setWindowTitle("drop. dragMoveEvent")
     window.resize(350, 100)
