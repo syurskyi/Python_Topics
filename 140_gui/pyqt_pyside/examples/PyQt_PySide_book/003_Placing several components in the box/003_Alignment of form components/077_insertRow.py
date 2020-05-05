@@ -1,21 +1,21 @@
 # -*- coding: utf-8 -*-
-from PyQt4 import QtGui
+from PyQt5 import QtWidgets
 import sys
 
-app = QtGui.QApplication(sys.argv)
-window = QtGui.QWidget()
+app = QtWidgets.QApplication(sys.argv)
+window = QtWidgets.QWidget()
 window.setWindowTitle("insertRow")
 window.resize(300, 150)
 
-lineEdit = QtGui.QLineEdit()
-textEdit = QtGui.QTextEdit()
-button1 = QtGui.QPushButton("О&тправить")
-button2 = QtGui.QPushButton("О&чистить")
+lineEdit = QtWidgets.QLineEdit()
+textEdit = QtWidgets.QTextEdit()
+button1 = QtWidgets.QPushButton("О&тправить")
+button2 = QtWidgets.QPushButton("О&чистить")
 
-hbox = QtGui.QHBoxLayout()
+hbox = QtWidgets.QHBoxLayout()
 hbox.addWidget(button1)
 hbox.addWidget(button2)
-form = QtGui.QFormLayout()
+form = QtWidgets.QFormLayout()
 
 form.insertRow(0, "&Описание:", textEdit)
 form.insertRow(0, "&Название:", lineEdit)

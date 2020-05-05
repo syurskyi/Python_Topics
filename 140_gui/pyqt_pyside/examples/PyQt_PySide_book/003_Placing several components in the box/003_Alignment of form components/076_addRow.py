@@ -1,30 +1,29 @@
 # -*- coding: utf-8 -*-
-from PyQt4 import QtGui
+from PyQt5 import QtWidgets
 import sys
 
-app = QtGui.QApplication(sys.argv)
-window = QtGui.QWidget()
+app = QtWidgets.QApplication(sys.argv)
+window = QtWidgets.QWidget()
 window.setWindowTitle("addRow")
 window.resize(300, 150)
 
-label1 = QtGui.QLabel("&Название:")
-label2 = QtGui.QLabel("&Описание:")
-lineEdit = QtGui.QLineEdit()
-textEdit = QtGui.QTextEdit()
-button1 = QtGui.QPushButton("О&тправить")
-button2 = QtGui.QPushButton("О&чистить")
+label1 = QtWidgets.QLabel("&Название:")
+label2 = QtWidgets.QLabel("&Описание:")
+lineEdit = QtWidgets.QLineEdit()
+textEdit = QtWidgets.QTextEdit()
+button1 = QtWidgets.QPushButton("О&тправить")
+button2 = QtWidgets.QPushButton("О&чистить")
 
 label1.setBuddy(lineEdit)
 label2.setBuddy(textEdit)
 
-hbox = QtGui.QHBoxLayout()
+hbox = QtWidgets.QHBoxLayout()
 hbox.addWidget(button1)
 hbox.addWidget(button2)
-form = QtGui.QFormLayout()
+form = QtWidgets.QFormLayout()
 form.addRow(label1, lineEdit)
 form.addRow(label2, textEdit)
 form.addRow(hbox)
 window.setLayout(form)
-
 window.show()
 sys.exit(app.exec_())

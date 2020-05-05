@@ -1,21 +1,21 @@
 # -*- coding: utf-8 -*-
-from PyQt4 import QtGui
+from PyQt5 import QtWidgets
 import sys
 
-app = QtGui.QApplication(sys.argv)
-window = QtGui.QWidget()
-window.setWindowTitle("setMargin")
+app = QtWidgets.QApplication(sys.argv)
+window = QtWidgets.QWidget()
+window.setWindowTitle("setContentsMargins")
 window.resize(300, 150)
-lineEdit = QtGui.QLineEdit()
-textEdit = QtGui.QTextEdit()
-spinBox = QtGui.QSpinBox()
-button1 = QtGui.QPushButton("О&тправить")
-button2 = QtGui.QPushButton("О&чистить")
-hbox = QtGui.QHBoxLayout()
+lineEdit = QtWidgets.QLineEdit()
+textEdit = QtWidgets.QTextEdit()
+spinBox = QtWidgets.QSpinBox()
+button1 = QtWidgets.QPushButton("О&тправить")
+button2 = QtWidgets.QPushButton("О&чистить")
+hbox = QtWidgets.QHBoxLayout()
 hbox.addWidget(button1)
 hbox.addWidget(button2)
-form = QtGui.QFormLayout()
-form.setMargin(0)
+form = QtWidgets.QFormLayout()
+form.setContentsMargins(0, 0, 0, 0)
 form.addRow("&Название:", lineEdit)
 form.addRow("&Описание:", textEdit)
 form.addRow("&Количество:", spinBox)

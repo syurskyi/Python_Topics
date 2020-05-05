@@ -1,20 +1,20 @@
 # -*- coding: utf-8 -*-
-from PyQt4 import QtGui
+from PyQt5 import QtWidgets
 import sys
 
-app = QtGui.QApplication(sys.argv)
-window = QtGui.QWidget()
+app = QtWidgets.QApplication(sys.argv)
+window = QtWidgets.QWidget()
 window.setWindowTitle("setHorizontalSpacing")
 window.resize(350, 150)
-lineEdit = QtGui.QLineEdit()
-textEdit = QtGui.QTextEdit()
-spinBox = QtGui.QSpinBox()
-button1 = QtGui.QPushButton("О&тправить")
-button2 = QtGui.QPushButton("О&чистить")
-hbox = QtGui.QHBoxLayout()
+lineEdit = QtWidgets.QLineEdit()
+textEdit = QtWidgets.QTextEdit()
+spinBox = QtWidgets.QSpinBox()
+button1 = QtWidgets.QPushButton("О&тправить")
+button2 = QtWidgets.QPushButton("О&чистить")
+hbox = QtWidgets.QHBoxLayout()
 hbox.addWidget(button1)
 hbox.addWidget(button2)
-form = QtGui.QFormLayout()
+form = QtWidgets.QFormLayout()
 form.setHorizontalSpacing(30)
 form.addRow("&Название:", lineEdit)
 form.addRow("&Описание:", textEdit)
