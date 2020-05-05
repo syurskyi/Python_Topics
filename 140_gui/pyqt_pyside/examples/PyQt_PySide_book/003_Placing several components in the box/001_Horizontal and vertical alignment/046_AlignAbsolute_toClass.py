@@ -39,9 +39,6 @@ class SampleWindow(QtWidgets.QWidget):
         self.show()
 
 
-if __name__ == '__main__':
-    app = QtWidgets.QApplication(sys.argv)
-    ex = SampleWindow()
-    sys.exit(app.exec_())
+
 
 
