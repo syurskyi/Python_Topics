@@ -1,15 +1,20 @@
-from PySide import QtGui, QtCore
+# -*- coding: utf-8 -*-
+from PyQt5 import QtWidgets
 import sys
 
-class MyWindow(QtGui.QWidget):
+class MyWindow(QtWidgets.QWidget):
     def __init__(self):
         super(MyWindow, self).__init__()
+
+        self.initUI()
+
+    def initUI(self):
         self.setWindowTitle("addStretch")
         self.resize(350, 50)
-        button1 = QtGui.QPushButton("1")
-        button2 = QtGui.QPushButton("2")
-        button3 = QtGui.QPushButton("3")
-        hbox = QtGui.QHBoxLayout()
+        button1 = QtWidgets.QPushButton("1")
+        button2 = QtWidgets.QPushButton("2")
+        button3 = QtWidgets.QPushButton("3")
+        hbox = QtWidgets.QHBoxLayout()
         hbox.addWidget(button1)
         hbox.addStretch(1)
         hbox.addWidget(button2)
