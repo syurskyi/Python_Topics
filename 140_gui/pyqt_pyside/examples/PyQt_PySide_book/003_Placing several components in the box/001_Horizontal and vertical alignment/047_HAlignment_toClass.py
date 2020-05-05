@@ -41,8 +41,16 @@ class MyWindow(QtWidgets.QWidget):
         self.setLayout(vbox)
         self.show()
 
-
 if __name__ == '__main__':
-    app = QtWidgets.QApplication(sys.argv)
-    ex = MyWindow()
-    sys.exit(app.exec_())
+    import sys
+
+    app = None
+    try:
+        import nuke
+    except ImportError:
+        app = QtWidgets.QApplication(sys.argv)
+    main = MyWindow()
+    main.show()
+
+    if app is not None:
+        app.exec_()
