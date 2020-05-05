@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
-from PyQt4 import QtGui
+from PyQt5 import QtWidgets
 import sys
 
-app = QtGui.QApplication(sys.argv)
-window = QtGui.QWidget()
+app = QtWidgets.QApplication(sys.argv)
+window = QtWidgets.QWidget()
 window.setWindowTitle("Выравнивание по вертикали")
 window.resize(300, 150)
-button1 = QtGui.QPushButton("1")
-button2 = QtGui.QPushButton("2")
-button3 = QtGui.QPushButton("3")
-vbox = QtGui.QVBoxLayout()
+button1 = QtWidgets.QPushButton("1")
+button2 = QtWidgets.QPushButton("2")
+button3 = QtWidgets.QPushButton("3")
+vbox = QtWidgets.QVBoxLayout()
 vbox.addWidget(button1)
 vbox.addWidget(button2)
 vbox.addWidget(button3)

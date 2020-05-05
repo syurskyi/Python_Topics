@@ -1,16 +1,16 @@
 # -*- coding: utf-8 -*-
-from PyQt4 import QtGui
+from PyQt5 import QtWidgets
 import sys
 
-app = QtGui.QApplication(sys.argv)
-window = QtGui.QWidget()
+app = QtWidgets.QApplication(sys.argv)
+window = QtWidgets.QWidget()
 window.setWindowTitle("Выравнивание по горизонтали в обратном порядке")
 window.resize(300, 50)
-button1 = QtGui.QPushButton("1")
-button2 = QtGui.QPushButton("2")
-button3 = QtGui.QPushButton("3")
-hbox = QtGui.QHBoxLayout()
-hbox.setDirection(QtGui.QBoxLayout.RightToLeft)
+button1 = QtWidgets.QPushButton("1")
+button2 = QtWidgets.QPushButton("2")
+button3 = QtWidgets.QPushButton("3")
+hbox = QtWidgets.QHBoxLayout()
+hbox.setDirection(QtWidgets.QBoxLayout.RightToLeft)
 hbox.addWidget(button1)
 hbox.addWidget(button2)
 hbox.addWidget(button3)

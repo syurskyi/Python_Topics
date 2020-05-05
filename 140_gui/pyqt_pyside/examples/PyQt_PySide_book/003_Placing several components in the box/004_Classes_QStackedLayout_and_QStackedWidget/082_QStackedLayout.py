@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from PyQt4 import QtGui
+from PyQt5 import QtWidgets
 import sys
 
 def on_clicked_button1():
@@ -11,26 +11,26 @@ def on_clicked_button2():
 def on_current_changed(index):      # Вызывается при изменении компонента
     print(index)
 
-app = QtGui.QApplication(sys.argv)
-window = QtGui.QWidget()
+app = QtWidgets.QApplication(sys.argv)
+window = QtWidgets.QWidget()
 window.setWindowTitle("QStackedLayout")
 window.resize(300, 250)
-label1 = QtGui.QLabel("Страница 1")
-label2 = QtGui.QLabel("Страница 2")
-label1.setFrameStyle(QtGui.QFrame.Box | QtGui.QFrame.Plain)
-label2.setFrameStyle(QtGui.QFrame.Box | QtGui.QFrame.Plain)
-button1 = QtGui.QPushButton("Отобразить страницу 1")
-button2 = QtGui.QPushButton("Отобразить страницу 2")
+label1 = QtWidgets.QLabel("Страница 1")
+label2 = QtWidgets.QLabel("Страница 2")
+label1.setFrameStyle(QtWidgets.QFrame.Box | QtWidgets.QFrame.Plain)
+label2.setFrameStyle(QtWidgets.QFrame.Box | QtWidgets.QFrame.Plain)
+button1 = QtWidgets.QPushButton("Отобразить страницу 1")
+button2 = QtWidgets.QPushButton("Отобразить страницу 2")
 button1.clicked.connect(on_clicked_button1)
 button2.clicked.connect(on_clicked_button2)
 
-vbox = QtGui.QVBoxLayout()
-hbox = QtGui.QHBoxLayout()
+vbox = QtWidgets.QVBoxLayout()
+hbox = QtWidgets.QHBoxLayout()
 hbox.addWidget(button1)
 hbox.addWidget(button2)
 vbox.addLayout(hbox)
 
-stack = QtGui.QStackedLayout()
+stack = QtWidgets.QStackedLayout()
 id1 = stack.addWidget(label1)
 id2 = stack.addWidget(label2)
 vbox.addLayout(stack)

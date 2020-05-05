@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
-from PyQt4 import QtCore, QtGui
+from PyQt5 import QtCore, QtWidgets
 import sys
 
-app = QtGui.QApplication(sys.argv)
-window = QtGui.QWidget()
+app = QtWidgets.QApplication(sys.argv)
+window = QtWidgets.QWidget()
 window.setWindowTitle("Выравнивание по горизонтали")
 window.resize(450, 50)
-button1 = QtGui.QPushButton("1")
-button2 = QtGui.QPushButton("2")
-button3 = QtGui.QPushButton("3")
-hbox = QtGui.QHBoxLayout()
+button1 = QtWidgets.QPushButton("1")
+button2 = QtWidgets.QPushButton("2")
+button3 = QtWidgets.QPushButton("3")
+hbox = QtWidgets.QHBoxLayout()
 hbox.addWidget(button1, 10, QtCore.Qt.AlignRight)
 hbox.addWidget(button2, stretch=10)
 hbox.addWidget(button3, alignment=QtCore.Qt.AlignRight)

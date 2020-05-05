@@ -1,29 +1,29 @@
 # -*- coding: utf-8 -*-
-from PyQt4 import QtGui
+from PyQt5 import QtWidgets
 import sys
 
-app = QtGui.QApplication(sys.argv)
-window = QtGui.QWidget()
+app = QtWidgets.QApplication(sys.argv)
+window = QtWidgets.QWidget()
 window.setWindowTitle("Управление отступами")
 window.resize(400, 50)
-button1 = QtGui.QPushButton("1")
-button2 = QtGui.QPushButton("2")
-button3 = QtGui.QPushButton("3")
-button4 = QtGui.QPushButton("4")
-button5 = QtGui.QPushButton("5")
-button6 = QtGui.QPushButton("6")
-vbox = QtGui.QVBoxLayout()
+button1 = QtWidgets.QPushButton("1")
+button2 = QtWidgets.QPushButton("2")
+button3 = QtWidgets.QPushButton("3")
+button4 = QtWidgets.QPushButton("4")
+button5 = QtWidgets.QPushButton("5")
+button6 = QtWidgets.QPushButton("6")
+vbox = QtWidgets.QVBoxLayout()
 
-hbox = QtGui.QHBoxLayout()
-hbox.setMargin(0)
+hbox = QtWidgets.QHBoxLayout()
+hbox.setContentsMargins(0, 0, 0, 0)
 hbox.setSpacing(0)
 hbox.addWidget(button1)
 hbox.addWidget(button2)
 hbox.addWidget(button3)
 vbox.addLayout(hbox)
 
-hbox2 = QtGui.QHBoxLayout()
-hbox2.setMargin(30)
+hbox2 = QtWidgets.QHBoxLayout()
+hbox2.setContentsMargins(30, 30, 30, 30)
 hbox2.setSpacing(20)
 hbox2.addWidget(button4)
 hbox2.addWidget(button5)
