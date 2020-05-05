@@ -1,20 +1,20 @@
-from PySide import QtGui, QtCore
+from PyQt5 import QtWidgets
 import sys
 
-class MyWindow(QtGui.QWidget):
+class MyWindow(QtWidgets.QWidget):
     def __init__(self):
         super(MyWindow, self).__init__()
         self.setWindowTitle("Indent control")
         self.resize(400, 50)
-        button1 = QtGui.QPushButton("1")
-        button2 = QtGui.QPushButton("2")
-        button3 = QtGui.QPushButton("3")
-        button4 = QtGui.QPushButton("4")
-        button5 = QtGui.QPushButton("5")
-        button6 = QtGui.QPushButton("6")
-        vbox = QtGui.QVBoxLayout()
+        button1 = QtWidgets.QPushButton("1")
+        button2 = QtWidgets.QPushButton("2")
+        button3 = QtWidgets.QPushButton("3")
+        button4 = QtWidgets.QPushButton("4")
+        button5 = QtWidgets.QPushButton("5")
+        button6 = QtWidgets.QPushButton("6")
+        vbox = QtWidgets.QVBoxLayout()
 
-        hbox = QtGui.QHBoxLayout()
+        hbox = QtWidgets.QHBoxLayout()
         hbox.setContentsMargins(0,0,0,0)
         hbox.setSpacing(0)
         hbox.addWidget(button1)
@@ -22,7 +22,7 @@ class MyWindow(QtGui.QWidget):
         hbox.addWidget(button3)
         vbox.addLayout(hbox)
 
-        hbox2 = QtGui.QHBoxLayout()
+        hbox2 = QtWidgets.QHBoxLayout()
         hbox2.setContentsMargins(30, 30, 30, 30)
         hbox2.setSpacing(20)
         hbox2.addWidget(button4)
@@ -32,11 +32,16 @@ class MyWindow(QtGui.QWidget):
 
         self.setLayout(vbox)
 
+if __name__ == '__main__':
+    import sys
 
-def main():
-    global c
-    c = MyWindow()
-    c.show()
+    app = None
+    try:
+        import nuke
+    except ImportError:
+        app = QtWidgets.QApplication(sys.argv)
+    main = MyWindow()
+    main.show()
 
-main()
-# Result:
+    if app is not None:
+        app.exec_()
