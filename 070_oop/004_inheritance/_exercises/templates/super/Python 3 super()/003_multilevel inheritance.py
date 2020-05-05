@@ -4,7 +4,7 @@
 # # can call all other function of the superclass. So, in the following example, we will see that.
 # #
 # #
-# c_ A:
+# c_ A
 #     ___ -
 #         print('Initializing: class A')
 #

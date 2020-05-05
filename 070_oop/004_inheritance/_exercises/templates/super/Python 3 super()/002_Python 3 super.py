@@ -2,7 +2,7 @@
 # then it's slightly different and you will have to do the following changes:
 #
 #
-# class Person(object):
+# c_ Person o..
 # ...
 #         super(Student, self).__init__(student_name, student_age)
 # The first change is to have object as the base class for Person. Its required to use the super function

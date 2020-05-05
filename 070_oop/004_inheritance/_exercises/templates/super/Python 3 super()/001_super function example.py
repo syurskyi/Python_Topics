@@ -1,7 +1,7 @@
 # # At first, just look at the following code we used in our Python Inheritance tutorial. In that example code,
 # # the superclass was Person and the subclass was Student. So the code is shown below.
 #
-# c_ Person:
+# c_ Person
 #     # initializing the variables
 #     name _ ""
 #     age _ 0
