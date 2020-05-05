@@ -7,41 +7,41 @@ from PySide2.QtCore import Qt
 from PySide2.QtWidgets import QWidget, QApplication, QGridLayout, QLabel
 
 
-c_ Example W..
+class Example(QWidget):
 
-    ___ -
-        s__ .-
+    def __init__(self):
+        super().__init__()
 
-        ?
+        self.initUI()
 
-    ___ initUI
-        grid _ ?G..
+    def initUI(self):
+        grid = QGridLayout()
 
-        x _ 0
-        y _ 0
+        x = 0
+        y = 0
 
-        text _ "x: @,  y: @".f.. x y
+        self.text = "x: {0},  y: {1}".format(x, y)
 
-        label _ ?L.. ?
-        g__.aW.. ? 0, 0, __.AT..
+        self.label = QLabel(self.text, self)
+        grid.addWidget(self.label, 0, 0, Qt.AlignTop)
 
-        sMT.. T..
+        self.setMouseTracking(True)
 
-        sL.. g..
+        self.setLayout(grid)
 
-        sG__ 300, 300, 350, 200
-        sWT__ *Event object
-        s..
+        self.setGeometry(300, 300, 350, 200)
+        self.setWindowTitle('Event object')
+        self.show()
 
-    ___ mouseMoveEvent e
-        x _ ?.x
-        y _ ?.y
+    def mouseMoveEvent(self, e):
+        x = e.x()
+        y = e.y()
 
-        text _ "x: @,  y: @".f.. x y
-        l)).sT.. ?
+        text = "x: {0},  y: {1}".format(x, y)
+        self.label.setText(text)
 
 
-__ _____ __ _______
-    app _ ?A..
-    ex _ ?
-    ___.e.. ?.e..
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    ex = Example()
+    sys.exit(app.exec_())
