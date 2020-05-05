@@ -1,17 +1,17 @@
 # -*- coding: utf-8 -*-
-from PyQt4 import QtCore, QtGui
+from PyQt5 import QtCore, QtWidgets
 import sys
 
-app = QtGui.QApplication(sys.argv)
-window = QtGui.QWidget()
+app = QtWidgets.QApplication(sys.argv)
+window = QtWidgets.QWidget()
 window.setWindowFlags(QtCore.Qt.Window |
                       QtCore.Qt.WindowMinimizeButtonHint)
-window.setWindowTitle("Window Title")
+window.setWindowTitle("Заголовок окна")
 window.resize(300, 70)
-btn = QtGui.QPushButton("Закрыть окно", window)
+btn = QtWidgets.QPushButton("Закрыть окно", window)
 btn.setGeometry(50, 10, 200, 30)
-QtCore.QObject.connect(btn, QtCore.SIGNAL("clicked()"), app.quit)
-desktop = QtGui.QApplication.desktop()
+btn.clicked.connect(app.quit)
+desktop = QtWidgets.QApplication.desktop()
 x = (desktop.width() - window.width()) // 2
 y = (desktop.height() - window.height()) // 2
 window.move(x, y)

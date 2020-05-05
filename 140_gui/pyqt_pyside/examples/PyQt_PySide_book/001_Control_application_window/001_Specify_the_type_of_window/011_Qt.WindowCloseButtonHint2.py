@@ -5,8 +5,7 @@ import sys
 app = QtWidgets.QApplication(sys.argv)
 window = QtWidgets.QWidget()
 window.setWindowFlags(QtCore.Qt.Window |
-                      QtCore.Qt.FramelessWindowHint |
-                      QtCore.Qt.WindowTitleHint)
+                      QtCore.Qt.WindowCloseButtonHint)
 window.setWindowTitle("Заголовок окна")
 window.resize(300, 70)
 btn = QtWidgets.QPushButton("Закрыть окно", window)
