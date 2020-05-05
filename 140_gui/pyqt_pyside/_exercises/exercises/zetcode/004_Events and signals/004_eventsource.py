@@ -5,35 +5,35 @@ import sys
 from PySide2.QtWidgets import QMainWindow, QPushButton, QApplication
 
 
-c_ Example ?M..
+class Example(QMainWindow):
 
-    ___ -
-        s__ .-
+    def __init__(self):
+        super().__init__()
 
-        ?
+        self.initUI()
 
-    ___ initUI
-        btn1 _ ?PB.. *Button 1
-        ?.m.. 30  50
+    def initUI(self):
+        btn1 = QPushButton('Button 1', self)
+        btn1.move(30, 50)
 
-        btn2 _ ?PB.. *Button 2
-        ?.m.. 150 50
+        btn2 = QPushButton('Button 2', self)
+        btn2.move(150, 50)
 
-        ?.c__.c.. bC..
-        ?.c__.c.. bC..
+        btn1.clicked.connect(self.buttonClicked)
+        btn2.clicked.connect(self.buttonClicked)
 
-        sB__
+        self.statusBar()
 
-        sG__ 300, 300, 290, 150
-        sWT__ *Event sender
-        s..
+        self.setGeometry(300, 300, 290, 150)
+        self.setWindowTitle('Event sender')
+        self.show()
 
-    ___ buttonClicked
-        sender _ s..
-        sB__ .sM.. ?.t..  + ' was pressed')
+    def buttonClicked(self):
+        sender = self.sender()
+        self.statusBar().showMessage(sender.text()  + ' was pressed')
 
 
-__ _____ __ _______
-    app _ ?A..
-    ex _ ?
-    ___.e.. ?.e..
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    ex = Example()
+    sys.exit(app.exec_())
