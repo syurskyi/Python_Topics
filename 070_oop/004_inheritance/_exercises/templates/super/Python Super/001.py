@@ -50,7 +50,7 @@
 #         ? ?
 #
 # c_ Laptop C..
-#     ___ - computer, ram, ssd, model):
+#     ___ - computer ram ssd model
 #         s___. - ?  ?  ?
 #         m.. _ m..
 #

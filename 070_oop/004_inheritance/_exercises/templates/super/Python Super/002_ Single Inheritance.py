@@ -5,7 +5,7 @@
 #
 # # app.py
 #
-# c_ Rectangle:
+# c_ Rectangle
 #     __ - length width
 #         ?  ?
 #         ?  ?
@@ -17,7 +17,7 @@
 #         r_ 2 * l.. + 2 * w..
 #
 #
-# c_ Square:
+# c_ Square
 #     __ - length
 #         ?  ?
 #
