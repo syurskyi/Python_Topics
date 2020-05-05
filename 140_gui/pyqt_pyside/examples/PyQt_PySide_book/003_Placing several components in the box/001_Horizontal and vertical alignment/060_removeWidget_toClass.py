@@ -29,9 +29,16 @@ class MyWindow(QtGui.QWidget):
 
         self.setLayout(vbox)
 
-def main():
-    global c
-    c = MyWindow()
-    c.show()
+if __name__ == '__main__':
+    import sys
 
-main()
+    app = None
+    try:
+        import nuke
+    except ImportError:
+        app = QtWidgets.QApplication(sys.argv)
+    main = MyWindow()
+    main.show()
+
+    if app is not None:
+        app.exec_()

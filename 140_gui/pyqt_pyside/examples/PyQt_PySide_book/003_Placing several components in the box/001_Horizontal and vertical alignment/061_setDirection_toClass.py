@@ -16,10 +16,16 @@ class MyWindow(QtGui.QWidget):
         hbox.addWidget(button3)
         self.setLayout(hbox)
 
+if __name__ == '__main__':
+    import sys
 
-def main():
-    global c
-    c = MyWindow()
-    c.show()
+    app = None
+    try:
+        import nuke
+    except ImportError:
+        app = QtWidgets.QApplication(sys.argv)
+    main = MyWindow()
+    main.show()
 
-main()
+    if app is not None:
+        app.exec_()

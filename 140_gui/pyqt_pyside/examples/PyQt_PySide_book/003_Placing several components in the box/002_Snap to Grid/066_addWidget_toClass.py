@@ -14,3 +14,17 @@ class SampleWindow(QtGui.QWidget):
         grid.addWidget(button2, 0, 1, QtCore.Qt.AlignRight)
         grid.addWidget(button3, 1, 0, 1, 2)
         self.setLayout(grid)
+
+if __name__ == '__main__':
+    import sys
+
+    app = None
+    try:
+        import nuke
+    except ImportError:
+        app = QtWidgets.QApplication(sys.argv)
+    main = MyWindow()
+    main.show()
+
+    if app is not None:
+        app.exec_()

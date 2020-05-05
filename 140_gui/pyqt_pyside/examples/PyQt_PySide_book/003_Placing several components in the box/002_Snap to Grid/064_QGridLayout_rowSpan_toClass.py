@@ -16,3 +16,17 @@ class SampleWindow(QtGui.QWidget):
         self.setLayout(grid)
         self.show()
         sys.exit(app.exec_())
+
+if __name__ == '__main__':
+    import sys
+
+    app = None
+    try:
+        import nuke
+    except ImportError:
+        app = QtWidgets.QApplication(sys.argv)
+    main = MyWindow()
+    main.show()
+
+    if app is not None:
+        app.exec_()

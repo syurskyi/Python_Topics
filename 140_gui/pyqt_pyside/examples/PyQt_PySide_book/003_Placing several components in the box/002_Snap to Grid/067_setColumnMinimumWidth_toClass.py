@@ -17,3 +17,17 @@ class SampleWindow(QtGui.QWidget):
         grid.addWidget(button4, 1, 1)
         grid.setColumnMinimumWidth(1, 200)
         self.setLayout(grid)
+
+if __name__ == '__main__':
+    import sys
+
+    app = None
+    try:
+        import nuke
+    except ImportError:
+        app = QtWidgets.QApplication(sys.argv)
+    main = MyWindow()
+    main.show()
+
+    if app is not None:
+        app.exec_()
