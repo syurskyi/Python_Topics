@@ -6,24 +6,24 @@ from PySide2.QtCore import Qt
 from PySide2.QtWidgets import QWidget, QApplication
 
 
-c_ Example W..
+class Example(QWidget):
 
-    ___ -
-        s__ .-
+    def __init__(self):
+        super().__init__()
 
-        ?
+        self.initUI()
 
-    ___ initUI
-        sG__ 300, 300, 250, 150
-        sWT__ *Event handler
-        s..
+    def initUI(self):
+        self.setGeometry(300, 300, 250, 150)
+        self.setWindowTitle('Event handler')
+        self.show()
 
-    ___ keyPressEvent  e
-        __ ?.k..  __ __.K_E..
-            c..
+    def keyPressEvent(self, e):
+        if e.key() == Qt.Key_Escape:
+            self.close()
 
 
-__ _____ __ _______
-    app _ ?A..
-    ex _ ?
-    ___.e.. ?.e..
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    ex = Example()
+    sys.exit(app.exec_())
