@@ -8,7 +8,7 @@
 #     r_ ?
 #
 # ___ is_palindrome s
-#     r_ s __ ? ?
+#     r_ ? __ ? ?
 #
 #
 # print(?("abc"))
