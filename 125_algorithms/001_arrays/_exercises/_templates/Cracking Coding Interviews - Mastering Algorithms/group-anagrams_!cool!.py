@@ -11,7 +11,7 @@
 # ___ group_anagrams strs
 # 	dic =
 #
-# 	___ i _ ra.. le. s..
+# 	___ i __ ra.. le. s..
 # 		sorted_anagram = "".j.. s.. s.. ?
 # 		group_strs = d__.g. ? ||
 # 		?.ap.. s.. ?
