@@ -1,31 +1,83 @@
-import sys
 import unittest
-from io import StringIO
-from challenge import Printer
+from challenge import Car
 
 
-class TestPrintedOutPut(unittest.TestCase):
+class EasyTestCase(unittest.TestCase):
 
     def setUp(self):
-        # Todo: setup the system to record console printed output.
-        # Todo: create an object from the Printer class named printer.
-        pass
+        self.car = Car()
+        self.car.start_car()
 
-    def test_value_name(self):
-        # Todo: use the object printer to add the name 'Muhammad Ali' to the set_value method.
-        # Todo: use the object printer to call the method print_value.
-        # Todo: use assertEqual to check if the printed string is 'Muhammad Ali'
-        pass
+    def test_easy_input(self):
+        self.car.add_speed()
+        self.car.add_speed()
+        self.car.add_speed()
+        self.car.add_speed()
+        self.assertEqual(self.car.current_speed(), 20)
 
-    def test_value_job(self):
-        # Todo: use the object printer to add the job 'Boxer' to the set_value method.
-        # Todo: use the object printer to call the method print_value.
-        # Todo: use assertEqual to check if the printed string is 'Boxer'
-        pass
+    def test_easy_input_two(self):
+        self.car.add_speed()
+        self.car.add_speed()
+        self.car.stop()
+        self.assertEqual(self.car.current_speed(), 0)
 
     def tearDown(self):
-        # Todo: set the printer object to None.
-        pass
+        self.car.stop()
+        self.car.turn_off_car()
+        self.car = None
+
+
+class MediumTestCase(unittest.TestCase):
+
+    def setUp(self):
+        self.car = Car()
+        self.car.start_car()
+
+    def test_medium_input(self):
+        with self.assertRaises(Exception):
+            self.car.start_car()
+
+    def test_medium_input_two(self):
+        self.car.remove_speed()
+        self.car.remove_speed()
+        self.car.remove_speed()
+        self.car.remove_speed()
+        self.assertEqual(self.car.current_speed(), 0)
+
+    def tearDown(self):
+        self.car.stop()
+        self.car.turn_off_car()
+        self.car = None
+
+
+class HardTestCase(unittest.TestCase):
+
+    def setUp(self):
+        self.car = Car()
+        self.car.start_car()
+
+    def test_hard_input(self):
+        with self.assertRaises(Exception):
+            self.car.add_speed()
+            self.car.add_speed()
+            self.car.add_speed()
+            self.car.add_speed()
+            self.car.turn_off_car()
+
+    def test_hard_input_two(self):
+        self.car.add_speed()
+        self.car.add_speed()
+        self.car.stop()
+        self.assertEqual(self.car.current_speed(), 0)
+
+        self.car.stop()
+        self.car.stop()
+        self.assertEqual(self.car.current_speed(), 0)
+
+    def tearDown(self):
+        self.car.stop()
+        self.car.turn_off_car()
+        self.car = None
 
 
 if __name__ == '__main__':

@@ -22,14 +22,5 @@ class TestPolynomialMultiplier(unittest.TestCase):
         self._term = None
 
 
-
-
-
-
-
-
-
-
-
 if __name__ == '__main__':
     unittest.main()

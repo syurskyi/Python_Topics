@@ -1,6 +1,5 @@
 import heapq
 
-
 class ListChanger:
 	def __init__(self, input_list: list):
 		self._list = input_list
