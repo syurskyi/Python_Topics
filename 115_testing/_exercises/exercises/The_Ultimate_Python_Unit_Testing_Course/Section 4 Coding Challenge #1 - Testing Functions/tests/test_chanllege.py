@@ -31,9 +31,8 @@ class HardTestCase (unittest.TestCase):
             self.assertEqual(counter(' '), 0)
 
     def test_hard_input_two(self):
-        # Todo: make sure that your program does not accept a None input.
         with self.assertRaises(Exception):
-            self.assertEqual(counter(None, 0)
+            self.assertEqual(counter(None), 0)
 
 
 if __name__ == '__main__':
