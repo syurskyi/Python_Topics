@@ -1,0 +1,21 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "syuchan1005",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha --compilers js:babel-register --recursive $(find test -name '*.spec.js')"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "mocha": "^4.0.1"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
+}
