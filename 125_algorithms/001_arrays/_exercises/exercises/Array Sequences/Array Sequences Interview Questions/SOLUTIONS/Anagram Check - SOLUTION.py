@@ -21,11 +21,11 @@
 # ___ anagram s1 s2
 #
 #     # Remove spaces and lowercase letters
-#     s1 = s1.r..(' ','').l..
-#     s2 = s2.r..(' ','').l..
+#     s1 _ ?.r.. ' ','' .l..
+#     s2 _ ?.r.. ' ','' .l..
 #
 #     # Return boolean for sorted match.
-#     r_ s.. s1 __ s.. s2
+#     r_ s.. ? __ s.. ?
 #
 # # %%
 # print(?('dog', 'god'))
@@ -43,11 +43,11 @@
 # ___ anagram2 s1 s2
 #
 #     # Remove spaces and lowercase letters
-#     s1 = s1.r..(' ','').l..
-#     s2 = s2.r..(' ','').l..
+#     s1 _ ?.r.. ' ','' .l..
+#     s2 _ ?.r.. ' ','' .l..
 #
 #     # Edge Case to check if same number of letters
-#     __ le.(s1) !_ le. s2
+#     __ le. ?1 !_ le. s2
 #         r_ F..
 #
 #     # Create counting dictionary (Note could use DefaultDict from Collections module)
@@ -55,14 +55,14 @@
 #
 #     # Fill dictionary for first string (add counts)
 #     ___ letter __ _1
-#         __ letter __ c..
+#         __ l? __ c..
 #             c.. ? +_ 1
 #         ____
 #             c.. ? _ 1
 #
 #     # Fill dictionary for second string (subtract counts)
 #     ___ letter __ _2
-#         __ letter __ c..
+#         __ ? __ c..
 #             c.. ? -_ 1
 #         ____
 #             c.. ? _ 1
