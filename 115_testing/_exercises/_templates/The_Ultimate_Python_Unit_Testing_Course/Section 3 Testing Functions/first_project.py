@@ -1,4 +1,4 @@
-# ___ avg 0list_numbers fl..  fl..
+# ___ avg $list_numbers fl..  fl..
 # 	total _ 0
 # 	___ num __ li..
 # 		i_ isi.. ? in. fl..
