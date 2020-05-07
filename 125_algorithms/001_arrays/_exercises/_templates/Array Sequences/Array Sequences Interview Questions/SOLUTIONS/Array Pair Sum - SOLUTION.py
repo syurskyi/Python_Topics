@@ -24,7 +24,7 @@
 # # is O(N) in total.
 #
 # ___ pair_sum arr k
-#     __ le. a.. < 2
+#     __ le. ? < 2
 #         r_
 #
 #     # Sets for tracking
@@ -35,7 +35,7 @@
 #     ___ num __ a..
 #
 #         # Set target difference
-#         target = k - n..
+#         target _ k - n..
 #
 #         # Add it to set if target hasn't been seen
 #         __ target no. __ s..

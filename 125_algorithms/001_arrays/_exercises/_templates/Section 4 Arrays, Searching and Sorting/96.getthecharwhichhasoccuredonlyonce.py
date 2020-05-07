@@ -1,22 +1,22 @@
-def getelemwhichhassingleoccurence(myarray):
-	print("Given array:", myarray)
-	hashTable = {}  
-	for elem in myarray.lower():
-		if elem in hashTable:
-			hashTable[elem] += 1
-		elif elem != " ":
-			hashTable[elem] = 1
-		else:
-			hashTable[elem] = 0
-		# print ">> start loop: Array:",myarray
-	# print "               hashTable:", hashTable
-	# print "<<end loop"
-
-	for elem in myarray.lower():
-		if hashTable[elem] == 1:
-			print("the first non repeated  character is:" ,elem)
-			return elem
-
-	return
- 
-getelemwhichhassingleoccurence("aabcc")
+# ___ getelemwhichhassingleoccurence myarray
+# 	print("Given array:" ?
+# 	hashTable   # dict
+# 	___ elem __ ?.lo..
+# 		__ ? __ ?
+# 			?|? += 1
+# 		____ ? !_ " ":
+# 			?|? _ 1
+# 		____
+# 			?|? _ 0
+# 		# print ">> start loop: Array:",myarray
+# 	# print "               hashTable:", hashTable
+# 	# print "<<end loop"
+#
+# 	___ elem __ ?.l..
+# 		__ ?|? __ 1
+# 			print("the first non repeated  character is:" ?
+# 			r_ ?
+#
+# 	r_
+#
+# ?("aabcc")
