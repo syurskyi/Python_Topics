@@ -7,16 +7,16 @@
 #
 # ___ counter name
 #
-#     i_ n.. __ N..
+#     __ ? __ N..
 #         r... E.. You can't input None values
 #
-#     name = n___.re.. ' ', ''
-#     i_ len(name) __ 0:
+#     name _ ?.re.. ' ', ''
+#     __ le. ? __ 0
 #         r... E.. Please input your name
 #
-#     i_ name.isalpha
+#     __ ?.isa..
 #         r_ le. n..
-#     e____
+#     _____
 #         r... E.. The string must contain english letters
 #
 # #
