@@ -1,6 +1,6 @@
 # ___ avg 0list_numbers fl..  fl..
-# 	total = 0
-# 	___ num i_ li..
+# 	total _ 0
+# 	___ num __ li..
 # 		i_ isi.. ? in. fl..
 # 			t.. +_ ?
 # 		e___
