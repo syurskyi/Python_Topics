@@ -1,44 +1,44 @@
 # _______ u___
-# f___ first_project ______ a__
+# ____ first_project ______ a__
 #
 #
-# c_ EasyTestCase u___.T..
+# c_ EasyTestCase ?.?
 #
-#     ___ test_easy_input ____
-#         ____.aE_ a__ 1, 2, 3), 2)
+#     ___ test_easy_input
+#         aE_ a__ 1, 2, 3), 2)
 #
 #     ___ test_easy_input_two  ____
-#         ____.aE_ a__ 10, 10, 10, 10, 10), 10)
+#         aE_ a__ 10, 10, 10, 10, 10), 10)
 #
 #
-# c_ MediumTestCase u___.T..
+# c_ MediumTestCase ?.?
 #
-#     ___ test_medium_input ____
-#         w___ ____.aR_ T...
-#             ____.aE_ a__ 1, 2, 3, "Mohammad"), 2)
+#     ___ test_medium_input
+#         w___ aR_ T...
+#             aE_ a__ 1, 2, 3, "Mohammad"), 2)
 #
-#     ___ test_medium_input_two ____
-#         w___ ____.aR_ T...
-#             ____.aE_ a__ 10, 10, 10, 10, "10"), 10)
+#     ___ test_medium_input_two
+#         w___ aR_ T...
+#             aE_ a__ 10, 10, 10, 10, "10"), 10)
 #
 #
-# c_ HardTestCase u___.T..
+# c_ HardTestCase ?.?
 #
-#     ___ test_hard_input ____
-#         w___ ____.aR_ T...
-#             ____.aE_ a__ 1, 2, 3, None), 2)
+#     ___ test_hard_input
+#         w___ aR_ T...
+#             aE_ a__ 1, 2, 3, N..), 2)
 #
-#     ___ test_hard_input_two ____
-#         w___ ____.aR_ T...
-#             ____.aE_ a__ 10, 10, 10, 10, float), 10)
+#     ___ test_hard_input_two
+#         w___ aR_ T...
+#             aE_ a__ 10, 10, 10, 10, fl.. |, 10)
 #
-#     ___ test_hard_input_three ____
-#         w___ ____.aR_ T...
-#             ____.aE_ a__ 10, 10, 10, 10, frozenset), 10)
+#     ___ test_hard_input_three
+#         w___ aR_ T...
+#             aE_ a__ 10, 10, 10, 10, fr..|, 10)
 #
 #     ___ test_hard_input_four ____
-#         w___ ____.aR_ T...
-#             ____.aE_ a__ 10, 10, 10, 10, set), 10)
+#         w___ aR_ T...
+#             aE_ a__ 10, 10, 10, 10, se.|, 10)
 #
 #
 # __ ________ __ ______
