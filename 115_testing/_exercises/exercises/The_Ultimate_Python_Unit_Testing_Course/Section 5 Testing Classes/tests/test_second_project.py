@@ -1,66 +1,66 @@
-# ______ u___
-# from second_project ______ Counter
-#
-#
-# c_ EasyTestCase ?.?
-#
-#     ___ setUp
-#         counter _ C__
-#
-#     ___ test_easy_input
-#         aE_ c___.g._v.  , 0
-#
-#     ___ test_easy_input_two
-#         c___.cl..
-#         aE_ c___.g._v.  , 0
-#
-#     ___ tearDown
-#         c___ _ N..
-#
-#
-# c_ MediumTestCase ?.?
-#
-#     ___ setUp
-#         counter _ C__
-#
-#     ___ test_medium_input
-#         c___.ad.
-#         c___.ad.
-#         c___.ad.
-#         aE_ c___.g._v.  , 3
-#
-#     ___ test_medium_input_two
-#         c___.ad.
-#         c___.ad.
-#         c___.ad.
-#         c___.re..
-#         c___.re..
-#         aE_ c___.g._v.  , 1
-#
-#     ___ tearDown
-#         c___ _ N..
-#
-#
-# c_ HardTestCase ?.?
-#
-#     ___ setUp
-#         counter _ C__
-#
-#     ___ test_hard_input
-#         c___.re..
-#         c___.re..
-#         c___.re..
-#         c___.re..
-#         aE_ c___.g._v.  , 0
-#
-#     ___ test_hard_input_two
-#         ___ _ i_ ra.. 0, 1000
-#             c___.ad.
-#         aE_ c___.g._v.  , 1000
-#
-#     ___ tearDown
-#         c___ _ N...
-#
-#
-# __ ______ __ ______
-#     ?.m..
+import unittest
+from second_project import Counter
+
+
+class EasyTestCase(unittest.TestCase):
+
+    def setUp(self):
+        self.counter = Counter()
+
+    def test_easy_input(self):
+        self.assertEqual(self.counter.get_value(), 0)
+
+    def test_easy_input_two(self):
+        self.counter.clear()
+        self.assertEquals(self.counter.get_value(), 0)
+
+    def tearDown(self):
+        self.counter = None
+
+
+class MediumTestCase(unittest.TestCase):
+
+    def setUp(self):
+        self.counter = Counter()
+
+    def test_medium_input(self):
+        self.counter.add()
+        self.counter.add()
+        self.counter.add()
+        self.assertEqual(self.counter.get_value(), 3)
+
+    def test_medium_input_two(self):
+        self.counter.add()
+        self.counter.add()
+        self.counter.add()
+        self.counter.remove()
+        self.counter.remove()
+        self.assertEqual(self.counter.get_value(), 1)
+
+    def tearDown(self):
+        self.counter = None
+
+
+class HardTestCase(unittest.TestCase):
+
+    def setUp(self):
+        self.counter = Counter()
+
+    def test_hard_input(self):
+        self.counter.remove()
+        self.counter.remove()
+        self.counter.remove()
+        self.counter.remove()
+        self.assertEqual(self.counter.get_value(), 0)
+
+    def test_hard_input_two(self):
+        for _ in range(0, 1000):
+            self.counter.add()
+        self.assertEqual(self.counter.get_value(), 1000)
+
+    def tearDown(self):
+        self.counter = None
+
+
+if __name__ == '__main__':
+    unittest.main()
