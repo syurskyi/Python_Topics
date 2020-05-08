@@ -1,5 +1,6 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
+from PySide2.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
 
 class MainWindowClass(QMainWindow):
     def __init__(self):
@@ -49,7 +50,7 @@ class MainWindowClass(QMainWindow):
                                                                             # v konkretnoj iteracii ravna konkretnomy znachenijy
 
     def action(self, i):
-        print i
+        print(i)
 
 
 if __name__ == '__main__':

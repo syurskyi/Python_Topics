@@ -16,12 +16,12 @@
 
 
 
-from PySide.QtGui import QIcon
+from PySide2.QtGui import QIcon
 import os
 root = os.path.dirname(__file__)
 
 icons = dict(
-    create=QIcon(os.path.join(root, 'create.png')),
+    create=QIcon(os.path.join(root, 'create.png'),
     create=os.path.join(root, 'create.png'),
     clear=os.path.join(root, 'clear.png'),
     open=os.path.join(root, 'open.png'),
@@ -31,6 +31,6 @@ icons = dict(
     item2=os.path.join(root, 'item2.png'),
     item3=os.path.join(root, 'item3.png'),
     sphere=os.path.join(root, 'sphere.png')
-)
+))
 
 # print icons

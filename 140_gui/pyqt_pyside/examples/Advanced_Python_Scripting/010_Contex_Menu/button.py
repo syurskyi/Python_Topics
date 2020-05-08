@@ -1,5 +1,6 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
+from PySide2.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
 
 textArray = 'Click', 'Press', 'Enter'
 
@@ -18,7 +19,7 @@ class MyButtonClass(QPushButton):
     # Eto mozno ispravit' vuzvav default MousePressEvent iz roditel'skogo klassa. To est' cherez syper
 
     def mousePressEvent(self, event):
-        print event.button()
+        print(event.button())
         if event.button() == Qt.MouseButton.LeftButton:        # v evente nahoditsja informacija kakaja knopka bula nazata
             super(MyButtonClass, self).mousePressEvent(event)
         elif event.button() == Qt.MouseButton.RightButton:

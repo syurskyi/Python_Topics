@@ -17,4 +17,4 @@ icons = dict(
     sphere=os.path.join(root, 'sphere.png')
 )
 
-print icons
+print(icons)

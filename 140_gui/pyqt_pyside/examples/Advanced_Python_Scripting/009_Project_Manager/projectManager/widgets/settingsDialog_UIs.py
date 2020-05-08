@@ -7,22 +7,22 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-from PySide import QtCore, QtGui
+from PySide2 import QtCore, QtGui, QtWidgets
 
 class Ui_settingsDialog(object):
     def setupUi(self, settingsDialog):
         settingsDialog.setObjectName("settingsDialog")
         settingsDialog.resize(458, 153)
-        self.verticalLayout = QtGui.QVBoxLayout(settingsDialog)
+        self.verticalLayout = QtWidgets.QVBoxLayout(settingsDialog)
         self.verticalLayout.setObjectName("verticalLayout")
-        self.table = QtGui.QTableWidget(settingsDialog)
+        self.table = QtWidgets.QTableWidget(settingsDialog)
         self.table.setObjectName("table")
         self.table.setColumnCount(0)
         self.table.setRowCount(0)
         self.verticalLayout.addWidget(self.table)
-        self.buttonBox = QtGui.QDialogButtonBox(settingsDialog)
+        self.buttonBox = QtWidgets.QDialogButtonBox(settingsDialog)
         self.buttonBox.setOrientation(QtCore.Qt.Horizontal)
-        self.buttonBox.setStandardButtons(QtGui.QDialogButtonBox.Cancel|QtGui.QDialogButtonBox.Ok)
+        self.buttonBox.setStandardButtons(QtWidgets.QDialogButtonBox.Cancel|QtWidgets.QDialogButtonBox.Ok)
         self.buttonBox.setObjectName("buttonBox")
         self.verticalLayout.addWidget(self.buttonBox)
 
@@ -32,5 +32,5 @@ class Ui_settingsDialog(object):
         QtCore.QMetaObject.connectSlotsByName(settingsDialog)
 
     def retranslateUi(self, settingsDialog):
-        settingsDialog.setWindowTitle(QtGui.QApplication.translate("settingsDialog", "Dialog", None, QtGui.QApplication.UnicodeUTF8))
+        settingsDialog.setWindowTitle(QtWidgets.QApplication.translate("settingsDialog", "Dialog", None))
 

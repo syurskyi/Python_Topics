@@ -1,5 +1,6 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
+from PySide2.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
 
 # ne vsegda menjy buvaet statichnoe. Sostav menju zavisit ot kakih to yslovij. Poetomy chasto menu prohoditsja generirovat'
 # v moment sozdanija
@@ -40,9 +41,9 @@ class MainWindowClass(QMainWindow):
 
     def action(self):
         if self.act1.isCheckable():
-            print 'ACTION'
+            print('ACTION')
         else:
-            print 'STOP'
+            print('STOP')
 
 if __name__ == '__main__':
     app = QApplication([])

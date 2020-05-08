@@ -1,40 +1,40 @@
 [
     {
+        "name": "scenes",
         "content": [
             {
-                "content": [], 
-                "name": "animation"
-            }, 
+                "name": "animation",
+                "content": []
+            },
             {
-                "content": [], 
-                "name": "models"
-            }, 
+                "name": "models",
+                "content": []
+            },
             {
-                "content": [], 
-                "name": "assets2"
-            }, 
+                "name": "assets2",
+                "content": []
+            },
             {
-                "content": [], 
-                "name": "previs"
+                "name": "previs",
+                "content": []
             }
-        ], 
-        "name": "scenes"
-    }, 
+        ]
+    },
     {
+        "name": "render",
         "content": [
             {
-                "content": [], 
-                "name": "compos"
-            }, 
+                "name": "compossss",
+                "content": []
+            },
             {
-                "content": [], 
-                "name": "3d"
+                "name": "3d",
+                "content": []
             }
-        ], 
-        "name": "render"
-    }, 
+        ]
+    },
     {
-        "content": [], 
-        "name": "textures"
+        "name": "textures",
+        "content": []
     }
 ]
