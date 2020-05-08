@@ -7,27 +7,27 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-from PySide import QtCore, QtGui
+from PySide2 import QtCore, QtGui, QtWidgets
 
 class Ui_client(object):
     def setupUi(self, client):
         client.setObjectName("client")
         client.resize(366, 107)
-        self.verticalLayout = QtGui.QVBoxLayout(client)
+        self.verticalLayout = QtWidgets.QVBoxLayout(client)
         self.verticalLayout.setObjectName("verticalLayout")
-        self.ip_le = QtGui.QLineEdit(client)
+        self.ip_le = QtWidgets.QLineEdit(client)
         self.ip_le.setObjectName("ip_le")
         self.verticalLayout.addWidget(self.ip_le)
-        self.connect_btn = QtGui.QPushButton(client)
+        self.connect_btn = QtWidgets.QPushButton(client)
         self.connect_btn.setObjectName("connect_btn")
         self.verticalLayout.addWidget(self.connect_btn)
-        self.horizontalLayout = QtGui.QHBoxLayout()
+        self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
-        self.progress_sle = QtGui.QSlider(client)
+        self.progress_sle = QtWidgets.QSlider(client)
         self.progress_sle.setOrientation(QtCore.Qt.Horizontal)
         self.progress_sle.setObjectName("progress_sle")
         self.horizontalLayout.addWidget(self.progress_sle)
-        self.label = QtGui.QLabel(client)
+        self.label = QtWidgets.QLabel(client)
         self.label.setMinimumSize(QtCore.QSize(50, 0))
         self.label.setObjectName("label")
         self.horizontalLayout.addWidget(self.label)
@@ -38,7 +38,7 @@ class Ui_client(object):
         QtCore.QMetaObject.connectSlotsByName(client)
 
     def retranslateUi(self, client):
-        client.setWindowTitle(QtGui.QApplication.translate("client", "Client", None, QtGui.QApplication.UnicodeUTF8))
-        self.connect_btn.setText(QtGui.QApplication.translate("client", "Connect", None, QtGui.QApplication.UnicodeUTF8))
-        self.label.setText(QtGui.QApplication.translate("client", "0", None, QtGui.QApplication.UnicodeUTF8))
+        client.setWindowTitle(QtWidgets.QApplication.translate("client", "Client", None))
+        self.connect_btn.setText(QtWidgets.QApplication.translate("client", "Connect", None))
+        self.label.setText(QtWidgets.QApplication.translate("client", "0", None))
 

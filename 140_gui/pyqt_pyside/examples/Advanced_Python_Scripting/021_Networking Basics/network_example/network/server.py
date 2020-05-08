@@ -1,6 +1,7 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
-from PySide.QtNetwork import *
+from PySide2.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
+from PySide2.QtNetwork import *
 from widgets import server_UIs as ui
 import util
 from functools import partial
@@ -20,7 +21,7 @@ class serverWindow(QWidget, ui.Ui_Server):
         connection.nextBlockSize = 0
         connection.readyRead.connect(partial(self.receiveMessage, connection))
         connection.error.connect(self.socketError)
-        adr = str(connection.peerAddress().tS..())
+        adr = str(connection.peerAddress().toString())
         self.consoleMessage('Connected to: ' + adr)
 
     def consoleMessage(self, text):
