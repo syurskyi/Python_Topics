@@ -5,7 +5,7 @@
 # c_ EasyTestCase?.?
 #
 #     ___ setUp
-#         car _ Car
+#         car _ ?
 #         ?.s..
 #
 #     ___ test_easy_input
@@ -30,7 +30,7 @@
 # c_ MediumTestCase?.?
 #
 #     ___ setUp
-#         car _ Car
+#         car _ ?
 #         ?.s..
 #
 #     ___ test_medium_input
@@ -45,15 +45,15 @@
 #         aE.. ?.cu.. 0
 #
 #     ___ tearDown
-#         ?.stop
-#         ?.turn_off_car
+#         ?.st..
+#         ?.t..
 #         ? _ N..
 #
 #
 # c_ HardTestCase?.?
 #
 #     ___ setUp
-#         car _ Car
+#         car _ ?
 #         ?.s..
 #
 #     ___ test_hard_input
@@ -67,11 +67,11 @@
 #     ___ test_hard_input_two
 #         ?.a..
 #         ?.a..
-#         ?.stop
+#         ?.st..
 #         aE.. ?.cu.. 0
 #
-#         ?.stop
-#         ?.stop
+#         ?.st..
+#         ?.st..
 #         aE.. ?.cu.. 0
 #
 #     ___ tearDown

@@ -1,36 +1,36 @@
-# """Coding Challenge #2
-# """
-#
-#
-# c_ Car
-#     ___ -
-#         _speed _ 0
-#         _start_car _ F..
-#
-#     ___ start_car
-#         __ ?:
-#             r_ E.. "The car is already on"
-#         ? _ T..
-#
-#     ___ turn_off_car
-#         __ ? !_ 0
-#             r_ E.. "Cannot turn off car because of speed"
-#         ? _ F..
-#
-#     ___ add_speed
-#         ? +_ 5
-#
-#     ___ remove_speed
-#         __ ? <_ 0
-#             ? _ 0
-#         ____
-#             ? -_ 5
-#
-#     ___ current_speed
-#         r_ ?
-#
-#     ___ stop
-#         ? _ 0
-#
-#     ___ car_status
-#         r_ ?
+"""Coding Challenge #2
+"""
+
+
+class Car:
+    def __init__(self):
+        self._speed = 0
+        self._start_car = False
+
+    def start_car(self):
+        if self._start_car:
+            raise Exception("The car is already on")
+        self.start_car = True
+
+    def turn_off_car(self):
+        if self._speed != 0:
+            raise Exception("Cannot turn off car because of speed")
+        self._speed = False
+
+    def add_speed(self):
+        self._speed += 5
+
+    def remove_speed(self):
+        if self._speed <= 0:
+            self._speed = 0
+        else:
+            self._speed -= 5
+
+    def current_speed(self):
+        return self._speed
+
+    def stop(self):
+        self._speed = 0
+
+    def car_status(self):
+        return self._start_car

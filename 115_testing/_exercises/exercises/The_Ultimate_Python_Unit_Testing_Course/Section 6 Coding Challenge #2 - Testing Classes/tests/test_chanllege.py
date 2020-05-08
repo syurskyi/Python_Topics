@@ -1,84 +1,84 @@
-# ______ ?
-# ____ challenge ______ Car
-#
-#
-# c_ EasyTestCase?.?
-#
-#     ___ setUp
-#         car _ Car
-#         ?.s..
-#
-#     ___ test_easy_input
-#         ?.a..
-#         ?.a..
-#         ?.a..
-#         ?.a..
-#         aE..(?.cu.. 20
-#
-#     ___ test_easy_input_two
-#         ?.a..
-#         ?.a..
-#         ?.stop
-#         aE.. ?.cu.. 0
-#
-#     ___ tearDown
-#         ?.s..
-#         ?.t..
-#         ? _ N..
-#
-#
-# c_ MediumTestCase?.?
-#
-#     ___ setUp
-#         car _ Car
-#         ?.s..
-#
-#     ___ test_medium_input
-#         w__ aR.. E..
-#             ?.s..
-#
-#     ___ test_medium_input_two
-#         ?.r..
-#         ?.r..
-#         ?.r..
-#         ?.r..
-#         aE.. ?.cu.. 0
-#
-#     ___ tearDown
-#         ?.stop
-#         ?.turn_off_car
-#         ? _ N..
-#
-#
-# c_ HardTestCase?.?
-#
-#     ___ setUp
-#         car _ Car
-#         ?.s..
-#
-#     ___ test_hard_input
-#         w__ aR.. E..
-#             ?.a..
-#             ?.a..
-#             ?.a..
-#             ?.a..
-#             ?.t..
-#
-#     ___ test_hard_input_two
-#         ?.a..
-#         ?.a..
-#         ?.stop
-#         aE.. ?.cu.. 0
-#
-#         ?.stop
-#         ?.stop
-#         aE.. ?.cu.. 0
-#
-#     ___ tearDown
-#         ?.s..
-#         ?.t..
-#         ? _ N..
-#
-#
-# __ ______ __ ______
-#     ?.m..
+import unittest
+from challenge import Car
+
+
+class EasyTestCase(unittest.TestCase):
+
+    def setUp(self):
+        self.car = Car()
+        self.car.start_car()
+
+    def test_easy_input(self):
+        self.car.add_speed()
+        self.car.add_speed()
+        self.car.add_speed()
+        self.car.add_speed()
+        self.assertEqual(self.car.current_speed(), 20)
+
+    def test_easy_input_two(self):
+        self.car.add_speed()
+        self.car.add_speed()
+        self.car.stop
+        self.assertEqual(self.car.current_speed(), 0)
+
+    def tearDown(self):
+        self.car.stop()
+        self.car.turn_off_car()
+        self.car = None
+
+
+class MediumTestCase(unittest.TestCase):
+
+    def setUp(self):
+        self.car = Car()
+        self.car.start_car()
+
+    def test_medium_input(self):
+        with self.assertRaises(Exception):
+            self.car.start_car()
+
+    def test_medium_input_two(self):
+        self.car.remove_speed()
+        self.car.remove_speed()
+        self.car.remove_speed()
+        self.car.remove_speed()
+        self.assertEquals(self.car.current_speed(), 0)
+
+    def tearDown(self):
+        self.car.stop()
+        self.car.turn_off_car()
+        self.car = None
+
+
+class HardTestCase(unittest.TestCase):
+
+    def setUp(self):
+        self.car = Car()
+        self.car.start_car()
+
+    def test_hard_input(self):
+        with self.assertRaises(Exception):
+            self.car.add_speed()
+            self.car.add_speed()
+            self.car.add_speed()
+            self.car.add_speed()
+            self.car.turn_off_car()
+
+    def test_hard_input_two(self):
+        self.car.add_speed()
+        self.car.add_speed()
+        self.car.stop
+        self.assertEqual(self.car.current_speed(), 0)
+
+        self.car.stop()
+        self.car.stop()
+        self.assertEquals(self.car.current_speed(), 0)
+
+    def tearDown(self):
+        self.car.stop()
+        self.car.turn_off_car()
+        self.car = None
+
+
+if __name__ == '__main__':
+    unittest.main()
