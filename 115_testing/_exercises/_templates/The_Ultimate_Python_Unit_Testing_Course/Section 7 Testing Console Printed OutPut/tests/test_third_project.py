@@ -11,15 +11,15 @@
 #         profile _ Pr.. 'Mohammad Mahjoub', 21, 'student'
 #
 #     ___ test_name
-#         pro__.print_name
+#         ?.print_name
 #         aE_ ___.s_o_.g_v_.st.., 'Mohammad Mahjoub'
 #
 #     ___ test_age
-#         pro__.print_age
+#         ?.print_age
 #         aE_ ___.s_o_.g_v_.st.., '21')
 #
 #     ___ test_job
-#         pro__.print_job
+#         ?.print_job
 #         aE_ ___.s_o_.g_v_.st.., 'student')
 #
 #     ___ tearDown
