@@ -3,16 +3,21 @@
 #
 #
 # c_ Profile
-#     ___ - ____, name, aga, job
-#         ____._n.. _ n..
-#         ____._a.. _ a..
-#         ____._j.. _ j..
+#     ___ -  name, age job
+#         _n.. _ n..
+#         _a.. _ a..
+#         _j.. _ j..
 #
-#     ___ print_name ____
-#         print(____._n..
+#     ___ print_name
+#         print _n..
 #
-#     ___ print_age ____
-#         print(____._a..
+#     ___ print_age
+#         print _a..
 #
-#     ___ print_job ____
-#         print(____._j..
+#     ___ print_job
+#         print _j..
+
+profile = Profile("Mohammad Mahjoub", 21, "student")
+profile.print_name()
+profile.print_age()
+profile.print_job()
