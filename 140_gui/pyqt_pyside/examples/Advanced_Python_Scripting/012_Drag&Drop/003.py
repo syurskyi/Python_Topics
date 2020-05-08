@@ -1,7 +1,8 @@
 import sys
 import os
-from PySide.QtCore import *
-from PySide.QtGui import *
+from PySide2.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
 
 
 class listWidgetClass(QListWidget):
@@ -11,19 +12,19 @@ class listWidgetClass(QListWidget):
         self.setDragDropMode(QAbstractItemView.DropOnly)
 
     def dropEvent(self, event):
-        print 'DROP', type(event)
+        print('DROP', type(event))
         mimedata = event.mimeData()
         if mimedata.hasUrls():
             for f in mimedata.urls():
-                print f.userName()
-                print f.toLocalFile()
+                print(f.userName())
+                print(f.toLocalFile())
         elif mimedata.hasText():
-            print mimedata.text()
+            print(mimedata.text())
 
 
     def dragEnterEvent(self, event):
         event.accept()
-        print 'ENTER', type(event)
+        print('ENTER', type(event))
 
     def dragMoveEvent(self, event):
         event.accept()

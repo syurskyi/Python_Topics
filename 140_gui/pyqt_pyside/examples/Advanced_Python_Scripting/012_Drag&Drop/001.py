@@ -1,7 +1,8 @@
 import sys
 import os
-from PySide.QtCore import *
-from PySide.QtGui import *
+from PySide2.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
 
 
 class listWidgetClass(QListWidget):
@@ -11,7 +12,7 @@ class listWidgetClass(QListWidget):
         self.setDragDropMode(QAbstractItemView.DropOnly)
 
     def dropEvent(self, event):
-        print 'DROP', type(event)
+        print('DROP', type(event))
     #     mimedata = event.mimeData()
     #     if mimedata.hasText():
     #         print 'text'
@@ -22,7 +23,7 @@ class listWidgetClass(QListWidget):
     #
     def dragEnterEvent(self, event):
         event.accept()
-        print 'ENTER', type(event)
+        print('ENTER', type(event))
 
     def dragMoveEvent(self, event):
         event.accept()

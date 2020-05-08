@@ -1,7 +1,8 @@
 import sys
 import os
-from PySide.QtCore import *
-from PySide.QtGui import *
+from PySide2.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
 
 icon = os.path.join(os.path.dirname(__file__), 'drag.png')
 

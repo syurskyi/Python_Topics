@@ -1,7 +1,8 @@
 import sys
 import os
-from PySide.QtCore import *
-from PySide.QtGui import *
+from PySide2.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
 
 class listWidgetClass(QListWidget):
     def __init__(self):
@@ -38,7 +39,7 @@ class listWidgetClass(QListWidget):
         url = []
         for i in self.selectedItems():
             url.append(i.data(Qt.UserRole))
-        print url
+        print(url)
 
     def addFile(self, path):                              # fynkcija kotoraja prinimaet pyt', pyt' mu polychaem s Drop Event
         if not path in self.files:                        # hranitsja byfer yze dobavlennuh fajlov
