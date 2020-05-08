@@ -1,5 +1,6 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
+from PySide2.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
 
 class splineRampWidget(QWidget):
     def __init__(self):
@@ -31,7 +32,7 @@ class splineRampWidget(QWidget):
 
         self.factor1 = self.point1.y() / float(self.size().height())
         self.factor2 = self.point2.y() / float(self.size().height())
-        print self.factor1, self.factor2
+        print(self.factor1, self.factor2)
 
     def paintEvent(self, event):
         rec = event.rect()

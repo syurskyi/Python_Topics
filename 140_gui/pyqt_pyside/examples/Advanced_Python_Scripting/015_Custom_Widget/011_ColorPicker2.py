@@ -1,5 +1,6 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
+from PySide2.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
 
 class pickerClass(QWidget):
     colorChangeSignal = Signal(QColor)
@@ -85,7 +86,7 @@ class colorPickerWindow(QWidget):
 
     def updateColor(self, color):
         # print '>>', color
-        print color.name()
+        print(color.name())
         palette = self.color.palette()
         palette.setColor(self.color.backgroundRole(), color)
         self.color.setPalette(palette)

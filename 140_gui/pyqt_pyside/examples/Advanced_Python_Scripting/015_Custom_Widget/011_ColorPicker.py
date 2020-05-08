@@ -1,5 +1,6 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
+from PySide2.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
 
 class pickerClass(QWidget):
     def __init__(self):
@@ -38,7 +39,7 @@ class pickerClass(QWidget):
         s = pos.y()/float(self.sz)
         c = QColor()
         c.setHslF(h, s, 1)
-        print c
+        print(c)
         return c
 
 class colorPickerWindow(QWidget):
