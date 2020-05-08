@@ -4,26 +4,26 @@
 # f___ third_project ______ Pr...
 #
 #
-# c_ TestPrintedOutPut u___.T..
+# c_ TestPrintedOutPut ?.?
 #
-#     ___ setUp ____
-#         ____.held, ___.s_o_ _ ___.s_o_, S.IO
-#         ____.profile _ Pr.. ('Mohammad Mahjoub', 21, 'student')
+#     ___ setUp
+#         held, ___.s_o_ _ ___.s_o_, S.IO
+#         profile _ Pr.. 'Mohammad Mahjoub', 21, 'student'
 #
-#     ___ test_name ____
-#         ____.pro__.print_name
-#         ____.aE_(___.s_o_.g_v_.st.., 'Mohammad Mahjoub')
+#     ___ test_name
+#         pro__.print_name
+#         aE_ ___.s_o_.g_v_.st.., 'Mohammad Mahjoub'
 #
-#     ___ test_age ____
-#         ____.pro__.print_age
-#         ____.aE_(___.s_o_.g_v_.st.., '21')
+#     ___ test_age
+#         pro__.print_age
+#         aE_ ___.s_o_.g_v_.st.., '21')
 #
-#     ___ test_job ____
-#         ____.pro__.print_job
-#         ____.aE_(___.s_o_.g_v_.st.., 'student')
+#     ___ test_job
+#         pro__.print_job
+#         aE_ ___.s_o_.g_v_.st.., 'student')
 #
-#     ___ tearDown ____
-#         ____.profile _ N..
+#     ___ tearDown
+#         profile _ N..
 #
 #
 # __ ______ __ _____
