@@ -1,0 +1,6 @@
+[
+  "test_calculator.py::TddInPythonExample::test_calculator_add_method_returns_correct_result",
+  "test_calculator.py::TddInPythonExample::test_calculator_returns_error_message_if_both_args_not_numbers",
+  "test_calculator.py::TddInPythonExample::test_calculator_returns_error_message_if_x_args_not_number",
+  "test_calculator.py::TddInPythonExample::test_calculator_returns_error_message_if_y_args_not_number"
+]

@@ -1,0 +1,20 @@
+#!/usr/bin/env python
+"""
+On some systems you may want to change the following 
+to reflect the target Python Version
+#!/usr/bin/env python
+#!/usr/bin/env python3
+
+https://github.com/lathama/python-testing-example
+"""
+import sys
+sys.dont_write_bytecode = True
+
+import testingdemo
+
+print("\nThe testingdemo version is: " + testingdemo.__version__ + "\n")
+
+somethinguseful = testingdemo.AnExample()
+somethinguseful.make_something()
+print(somethinguseful.report_something())
+

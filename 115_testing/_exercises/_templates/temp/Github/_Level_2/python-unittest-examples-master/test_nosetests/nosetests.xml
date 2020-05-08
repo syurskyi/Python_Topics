@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="13" errors="1" failures="0" skip="1"><testcase classname="test_attrib_05" name="test_slow_test" time="0.000"></testcase><testcase classname="test_attrib_05" name="test_attr_name" time="0.000"></testcase><testcase classname="test_basic_01" name="test_fixture" time="0.000"></testcase><testcase classname="test_basic_01" name="test_evens(0,)" time="0.000"></testcase><testcase classname="test_basic_01" name="test_evens(1,)" time="0.000"></testcase><testcase classname="test_basic_01" name="test_evens(2,)" time="0.000"></testcase><testcase classname="test_basic_01" name="test_evens(3,)" time="0.000"></testcase><testcase classname="test_basic_01" name="test_evens(4,)" time="0.000"></testcase><testcase classname="test_deprecated_plugin_06" name="test_deprecated_test_case" time="0.000"><error type="nose.plugins.deprecated.DeprecatedTest" message=""><![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python2.7/unittest/case.py", line 327, in run
+    testMethod()
+  File "/usr/local/lib/python2.7/dist-packages/nose/case.py", line 197, in runTest
+    self.test(*self.arg)
+  File "/home/notroot/tmp/unittest-examples/nosetests/test_deprecated_plugin_06.py", line 4, in test_deprecated_test_case
+    raise DeprecatedTest
+DeprecatedTest
+]]></error></testcase><testcase classname="test_skip_plugin_07" name="test_skip_plugin" time="0.000"><skipped type="unittest.case.SkipTest" message=""><![CDATA[SkipTest
+]]></skipped></testcase><testcase classname="test_tools_02" name="test_raises_type_error" time="0.000"></testcase><testcase classname="test_tools_02" name="test_timed" time="0.201"></testcase><testcase classname="test_tools_02" name="this_is_a_test" time="0.000"></testcase></testsuite>

@@ -1,0 +1,5 @@
+base_url: 'https://codespace-api.myjetbrains.com/youtrack/rest'
+credentials:
+    login: 'root'
+    password: 'c11desp@ce'
+content-type: 'application/xml;charset=UTF-8'
