@@ -11,5 +11,3 @@
 #
 #     ___ print_value
 #         print _p..
-#
-#
