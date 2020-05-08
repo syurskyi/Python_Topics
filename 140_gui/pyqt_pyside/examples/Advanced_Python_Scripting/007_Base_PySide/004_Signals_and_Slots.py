@@ -1,5 +1,6 @@
-from PySide.QtGui import *
-from PySide.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtCore import *
+from PySide2.QtWidgets import *
 
 # Kogda prilozenie zapyskaetsja to ono vstraivaetsja v EventLoop, to est' cykl sobutij. Eto beskonechnuj cikl sobutij
 # kotorue proishodjat y nas na kompjytere ili y nas v operacionnoj sisteme
@@ -17,7 +18,7 @@ class myWidget(QWidget):
         layout.addWidget(button)
         line = QLineEdit()
         layout.addWidget(line)
-        line.tC...connect(self.text)
+        line.textChanged.connect(self.text)
         # first version
         # button.clicked.connect(self.action)
         # second version
@@ -35,10 +36,10 @@ class myWidget(QWidget):
 
     # @SLOT()
     def action(self):
-        print 'ACTION'
+        print('ACTION')
 
     def text(self, arg):
-        print arg
+        print(arg)
 
 
 app = QApplication([])

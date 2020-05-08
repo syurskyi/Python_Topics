@@ -1,4 +1,4 @@
-from PySide.QtGui import *
+from PySide2.QtWidgets import *
 
 
 class MyWidget(QWidget):                          # NAdo sozdat' svoj klass ynasledovanuj ot nyznogo nam vidgeta

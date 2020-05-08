@@ -1,5 +1,5 @@
-import PySide
+import PySide2
 
-print(PySide.__version__)
+print(PySide2.__version__)
 
-import PySide.QtCore
+import PySide2.QtCore

@@ -9,7 +9,7 @@
 # QPaintDevice eto dvizok kotoruj nam risyet prilozenie
 
 # from PySide import QtGui
-from PySide.QtGui import *
+from PySide2.QtWidgets import *
 
 # Esli pojavljaetsja oshibka "Must construct a QApplication before a QPaintDevice
 # Nado sozdat'  app = QApplication([]) pered vidzetom

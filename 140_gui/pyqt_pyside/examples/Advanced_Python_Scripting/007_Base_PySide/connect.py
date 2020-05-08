@@ -1,5 +1,6 @@
-from PySide.QtGui import *
-from PySide.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtCore import *
+from PySide2.QtWidgets import *
 
 
 class MyWidget(QWidget):
@@ -11,7 +12,7 @@ class MyWidget(QWidget):
         button.clicked.connect(self.action)
         line = QLineEdit()
         layout.addWidget(line)
-        line.tC...connect(self.text)
+        line.textChanged.connect(self.text)
         # self.connect(button, SIGNAL('clicked()'),
         #              self, SLOT('action()'))
 
@@ -20,10 +21,10 @@ class MyWidget(QWidget):
             self.action()
 
     def action(self):
-        print 'ACTION'
+        print('ACTION')
 
     def text(self, arg):
-        print arg
+        print(arg)
 
 
 app = QApplication([])
