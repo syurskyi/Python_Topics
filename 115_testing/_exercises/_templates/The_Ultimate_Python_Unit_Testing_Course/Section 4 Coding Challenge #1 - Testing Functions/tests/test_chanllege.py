@@ -2,7 +2,7 @@
 # ____ challenge _____ counter
 #
 #
-# c_ EasyTestCase ?
+# c_ EasyTestCase ?.?
 #      ___ test_easy_input
 #         # Todo: make sure that your program returns 2 given the string 'Mo'
 #         aE.. c.. 'Mo'), 2)
@@ -12,7 +12,7 @@
 #         aE.. c.. 'Mohammad'), 8)
 #
 #
-# c_ MediumTestCase ?
+# c_ MediumTestCase ?.?
 #     ___ test_medium_input
 #         # Todo: make sure that the program raises an exception whenever there is any non-english charts. Ex. !@#$%^.
 #         w___ aR.. E..
@@ -24,7 +24,7 @@
 #         aE..(c..('Mohammad Mahjoub'), 15)
 #
 #
-# c_ HardTestCase ?
+# c_ HardTestCase ?.?
 #     ___ test_hard_input
 #         # Todo: make sure that the program raises an exception whenever an empty string is given.
 #         w___ aR.. E..
