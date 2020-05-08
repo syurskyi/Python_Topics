@@ -1,21 +1,21 @@
-# """the Profile class purpose is to store a name, an age, and a job for a specific person.
-# """
-#
-#
-# c_ Profile
-#     ___ -  name, age job
-#         _n.. _ n..
-#         _a.. _ a..
-#         _j.. _ j..
-#
-#     ___ print_name
-#         print _n..
-#
-#     ___ print_age
-#         print _a..
-#
-#     ___ print_job
-#         print _j..
+"""the Profile class purpose is to store a name, an age, and a job for a specific person.
+"""
+
+
+class Profile:
+    def __init__(self, name, age, job):
+        self._name = name
+        self._age = age
+        self._job = job
+
+    def print_name(self):
+        print(self._name)
+
+    def print_age(self):
+        print(self._age)
+
+    def print_job(self):
+        print(self._job)
 
 profile = Profile("Mohammad Mahjoub", 21, "student")
 profile.print_name()

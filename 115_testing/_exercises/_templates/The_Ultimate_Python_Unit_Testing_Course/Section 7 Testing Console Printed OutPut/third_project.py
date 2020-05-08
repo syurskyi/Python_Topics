@@ -4,18 +4,18 @@
 #
 # c_ Profile
 #     ___ -  name, age job
-#         _n.. _ n..
-#         _a.. _ a..
-#         _j.. _ j..
+#         _? _ ?
+#         _? _ ?
+#         _? _ ?
 #
 #     ___ print_name
-#         print _n..
+#         print ?
 #
 #     ___ print_age
-#         print _a..
+#         print ?
 #
 #     ___ print_job
-#         print _j..
+#         print ?
 
 profile = Profile("Mohammad Mahjoub", 21, "student")
 profile.print_name()

@@ -1,30 +1,30 @@
-# ______ ___
-# ______ u___
-# f___ io ______ S.IO
-# f___ third_project ______ Pr...
-#
-#
-# c_ TestPrintedOutPut ?.?
-#
-#     ___ setUp
-#         held, ___.s_o_ _ ___.s_o_, S.IO
-#         profile _ Pr.. 'Mohammad Mahjoub', 21, 'student'
-#
-#     ___ test_name
-#         pro__.print_name
-#         aE_ ___.s_o_.g_v_.st.., 'Mohammad Mahjoub'
-#
-#     ___ test_age
-#         pro__.print_age
-#         aE_ ___.s_o_.g_v_.st.., '21')
-#
-#     ___ test_job
-#         pro__.print_job
-#         aE_ ___.s_o_.g_v_.st.., 'student')
-#
-#     ___ tearDown
-#         profile _ N..
-#
-#
-# __ ______ __ _____
-#     u___.m..
+import sys
+import unittest
+from io import StringIO
+from third_project import Profile
+
+
+class TestPrintedOutPut(unittest.TestCase):
+
+    def setUp(self):
+        self.held, sys.stdout = sys.stdout, StringIO()
+        self.profile = Profile('Mohammad Mahjoub', 21, 'student')
+
+    def test_name(self):
+        self.profile.print_name()
+        self.assertEqual(sys.stdout.getvalue().strip() , 'Mohammad Mahjoub')
+
+    def test_age(self):
+        self.profile.print_age()
+        self.assertEqual(sys.stdout.getvalue().strip() , '21')
+
+    def test_job(self):
+        self.profile.print_job()
+        self.assertEqual(sys.stdout.getvalue().strip(), 'student')
+
+    def tearDown(self):
+        self.profile = None
+
+
+if __name__ == '__main__':
+    unittest.main()
