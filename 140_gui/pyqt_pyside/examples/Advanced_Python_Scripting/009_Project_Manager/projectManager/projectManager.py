@@ -1,5 +1,6 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
+from PySide2.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
 from widgets import projectManager_UIs as ui
 from widgets import projectListWidget
 import createProjectDialog, settingsDialog, templateEditor, settings, createProject

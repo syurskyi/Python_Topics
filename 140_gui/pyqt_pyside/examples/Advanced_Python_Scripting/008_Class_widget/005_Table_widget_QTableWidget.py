@@ -1,5 +1,6 @@
-from PySide.QtGui import *
-from PySide.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtCore import *
+from PySide2.QtWidgets import *
 import os
 path = os.path.dirname(__file__)
 
@@ -13,7 +14,7 @@ class simpleWindow(QWidget):
         self.table = QTableWidget()
         ly.addWidget(self.table)
         self.table.verticalHeader().hide()                           # shto bu sprjat' vertikalnue zagolovki mozno ispol'zovat' Headers
-        print self.table.verticalHeader()                                                          # fynkcija verticalHEader vozvrachaet klass QHeaderView
+        print(self.table.verticalHeader())                                                          # fynkcija verticalHEader vozvrachaet klass QHeaderView
         # self.table.horizontalHeader().setResizeMode(QHeaderView.Stretch)
         # start
         self.resize(500, 400)

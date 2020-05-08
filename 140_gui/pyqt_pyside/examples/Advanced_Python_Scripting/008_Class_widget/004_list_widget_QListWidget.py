@@ -1,4 +1,5 @@
-from PySide.QtGui import *
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
 import os
 path = os.path.dirname(__file__)
 # path = 'C:/Users/serge/Dropbox/nuke/.nuke/GIZMOS/Filter/'  # peremenaja s kotoroj dostajytsja fajlu
@@ -37,10 +38,10 @@ class simpleWindow(QWidget):
             # print f
 
     def updateText(self, item):                          # fynkcija kotoraja srabatuvaet po signaly  self.list.itemClicked.connect(self.updateText)
-        print item
-        print item.text()                                # tekst s itema mozno zsbrat' s pomochjy metoda text(), kotoruj vozvrachaet string
+        print(item)
+        print(item.text()   )                             # tekst s itema mozno zsbrat' s pomochjy metoda text(), kotoruj vozvrachaet string)
         text =open(self.fullPath(item)).read()
-        print type(text)
+        print(type(text))
         self.textBrowser.setText(text)
     #
     # def openFile(self, item):

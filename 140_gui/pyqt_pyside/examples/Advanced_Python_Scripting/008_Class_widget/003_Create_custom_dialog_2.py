@@ -1,4 +1,5 @@
-from PySide.QtGui import *
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
 import dialog
 
 class simpleWindow(QWidget):
@@ -13,9 +14,9 @@ class simpleWindow(QWidget):
     def showMessage(self):
         self.dial = dialog.dialogClass()
         r = self.dial.exec_()
-        print r
+        print(r)
         if r:
-            print self.dial.getData()
+            print(self.dial.getData())
             # print self.dial.label.text()
 
 if __name__ == '__main__':

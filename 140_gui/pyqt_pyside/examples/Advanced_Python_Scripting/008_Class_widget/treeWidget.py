@@ -1,5 +1,6 @@
-from PySide.QtGui import *
-from PySide.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtCore import *
+from PySide2.QtWidgets import *
 import os
 path = os.path.dirname(os.path.dirname(__file__))
 
@@ -42,9 +43,9 @@ class simpleWindow(QWidget):
                 item.setData(0, Qt.UserRole, {'path':os.path.normpath(fullpath)})
 
     def action(self, item):
-        print item.text(0)
+        print(item.text(0))
         s = item.data(0, Qt.UserRole)
-        print s
+        print(s)
 
 
 if __name__ == '__main__':

@@ -1,4 +1,5 @@
-from PySide.QtGui import *
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
 # from PyQt4.QtGui import *
 
 class simpleWindow(QWidget):
@@ -20,7 +21,7 @@ class simpleWindow(QWidget):
                                                                              # vozvrachaet pyt' k direktorii
         # d = QFileDialog.getOpenFileName(self, 'Set folder', 'c:/tmp', _filter)
         # d = QFileDialog.getOpenFileNames(self, 'Set folder', 'c:/Users', _filter)
-        print d, type(d)
+        print(d, type(d))
 
 if __name__ == '__main__':
     app = QApplication([])

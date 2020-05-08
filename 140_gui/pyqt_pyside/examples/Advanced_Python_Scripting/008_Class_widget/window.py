@@ -1,5 +1,6 @@
-from PySide.QtCore import *
-from PySide.QtGui import *
+from PySide2.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
 
 class simpleWindow(QWidget):
     def __init__(self):
@@ -13,7 +14,7 @@ class simpleWindow(QWidget):
     def showMessage2(self):
         i = QInputDialog.getItem(self, 'Enter text', 'Name:',
                                  [str(x) for x in range(10)])
-        print i
+        print(i)
 
     def showMessage(self):
         msgBox = QMessageBox()
@@ -23,7 +24,7 @@ class simpleWindow(QWidget):
         msgBox.setDefaultButton(QMessageBox.Save)
         msgBox.setDetailedText('Detail text')
         ret = msgBox.exec_()
-        print ret == QMessageBox.Save
+        print(ret == QMessageBox.Save)
 
 if __name__ == '__main__':
     app = QApplication([])

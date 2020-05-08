@@ -1,4 +1,5 @@
-from PySide.QtGui import *
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
 import dialog
 
 class simpleWindow(QWidget):
@@ -14,7 +15,7 @@ class simpleWindow(QWidget):
         self.dial = dialog.dialogClass()
         r = self.dial.exec_()
         if r:
-            print self.dial.getData()
+            print(self.dial.getData())
 
 if __name__ == '__main__':
     app = QApplication([])
