@@ -4,8 +4,8 @@
 #
 # c_ Printer
 #     ___ -  pages_per_s in. capacity in.
-#         p.. _ p...
-#         _c.. _ c..
+#         ? ?
+#         _? _ ?
 #
 #     ___ print  pages
 #         __ ? > _c...
@@ -13,4 +13,4 @@
 #
 #         _c... -_ p..
 #
-#         r_ _ Printed |pages pages in |pages/____.pages_per_s:.2f} seconds.'
+#         r_ _ Printed |pages pages in |pages/ .pages_per_s;.2f} seconds.'
