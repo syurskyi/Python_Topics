@@ -31,28 +31,28 @@ class TestFunctions(TestCase):
 
     def test_multiply_single_value(self):
         expected = 15
-        self.assertEqual()  mu.. ex___   ex___
+        self.assertEqual(multiply(expected), expected)
 
-    def test_multiply_zero
-        ex___  _ 0
-        aE_  mu.. ex___   ex___
+    def test_multiply_zero(self):
+        expected  = 0
+        self.assertEqual(multiply(expected), expected)
 
-    def test_multiply_result
-        inputs _  3 5
-        ex___  _ 15
-        aE_  mu.. 0in___  ex___
+    def test_multiply_result(self):
+        inputs = (3, 5)
+        expected  = 15
+        self.assertEqual(multiply(*inputs),  expected)
 
-    def test_multiply_results_with_zero
-        inputs _  3 5 0
-        ex___  _ 0
-        aE_  mu.. 0in___  ex___
+    def test_multiply_results_with_zero(self):
+        inputs = (3, 5, 0)
+        expected = 0
+        self.assertEqual(multiply(*input), expected)
 
-    def test_multiply_negative
-        inputs _  3 -5 2
-        ex___  _ -30
-        aE_  mu.. 0in___  ex___
+    def test_multiply_negative(self):
+        inputs = (3, -5, 2)
+        expected  = -30
+        self.assertEqual(multiply(*input),  expected)
 
-    def test_multiply_floats
-        inputs _  3.0 2
-        ex___  _ 6.0
-        aE_  mu.. 0in___  ex___
+    def test_multiply_floats(self):
+        inputs = (3.0, 2)
+        expected  = 6.0
+        self.assertEqual(multiply(*input),  expected)
