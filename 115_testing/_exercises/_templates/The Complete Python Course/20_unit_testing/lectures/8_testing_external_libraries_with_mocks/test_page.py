@@ -6,11 +6,11 @@
 #
 # c_ TestPageRequester ?
 #     ___ setUp
-#         pa.. _ P_R_ https://google.com
+#         page _ P_R_ https://google.com
 #
 #     ___ test_make_request
-#         w___ pa.. requests.get a_ m._g.
-#             pa__.ge_
+#         w___ ? re__.g.. a_ m._g.
+#             ?.ge_
 #             mo.._ge_.a._c...
 #
 #     ___ test_content_returned
@@ -19,5 +19,5 @@
 #                 content _ 'Hello'
 #
 #         w___ pa.. requests.get, return_value _ F..Re.. a_ mo._ge.
-#             result _ pa__.ge.
+#             result _ ?.ge.
 #             aE_ ? 'Hello'
