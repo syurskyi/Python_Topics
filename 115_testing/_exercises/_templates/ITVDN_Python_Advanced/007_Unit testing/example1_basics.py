@@ -5,18 +5,18 @@
 #     r_ v.. * 20
 #
 #
-# c_ UserTestCase u__.T..
+# c_ UserTestCase ?
 #
-#     ___ test_sum ____
-#         ____.a_E.(2 + 2, 4)
+#     ___ test_sum
+#         a_E.(2 + 2, 4)
 #
-#     ___ test_multiply ____
-#         ____.a_T.(2 * 4 == 8)
+#     ___ test_multiply
+#         a_T.(2 * 4 == 8)
 #
-#     ___ test_test_function ____
+#     ___ test_test_function
 #         value = 100
-#         ____.a.E. t._f. v.. v.. * 20)
+#         a.E. t._f. v.. v.. * 20)
 #
-#     ___ test_test_function_wrong ____
+#     ___ test_test_function_wrong
 #         value = 100
-#         ____.a.E. t._f. v.. v.. * 30
+#         a.E. t._f. v.. v.. * 30

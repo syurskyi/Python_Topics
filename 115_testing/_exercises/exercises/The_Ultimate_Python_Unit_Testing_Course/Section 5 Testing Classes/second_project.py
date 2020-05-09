@@ -1,24 +1,24 @@
-"""
-the Counter class is going to able users to add, delete, and reset a counter object.
-"""
-
-
-class Counter:
-    def __init__(self):
-        self._value = 0
-
-    def add(self):
-        self._value += 1
-
-    def remove(self):
-        if self._value <= 0:
-            self._value = 0
-        else:
-            self._value -= 1
-
-    def clear(self):
-        self._value = 0
-
-    def get_value(self):
-        return self._value
-
+# """
+# the Counter class is going to able users to add, delete, and reset a counter object.
+# """
+#
+#
+# c_ Counter
+#     ___ -
+#         ._value = 0
+#
+#     ___ add
+#         ____._? +_ 1
+#
+#     ___ remove
+#         __ ? <_ 0
+#             ? _ 0
+#         ____
+#             ? -_ 1
+#
+#     ___ clear
+#         ? _ 0
+#
+#     ___ get_value
+#         r_ ?
+#

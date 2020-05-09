@@ -1,8 +1,8 @@
 # _______ req..
 #
 # c_ PageRequester
-#     ___ - ____ url
-#         ____.? _ ?
+#     ___ - url
+#         ? _ ?
 #
-#     ___ get ____
-#         r_ req__.ge. ____.? .content
+#     ___ get
+#         r_ req__.ge. .? .content

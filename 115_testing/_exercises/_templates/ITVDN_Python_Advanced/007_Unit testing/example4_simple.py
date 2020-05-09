@@ -22,33 +22,33 @@
 #     r_ y / x
 #
 #
-# c_ UtilsTestCase u___.T.C.
+# c_ UtilsTestCase ?.?
 #
-#     ___ test_sum_two_values _____
+#     ___ test_sum_two_values
 #         value1 _ 10
 #         value2 _ 20
 #         result _ s..  _1 _2
-#         ____.a.E. r.. _1 + _2
+#         a.E. r.. _1 + _2
 #
-#     ___ test_power ____
+#     ___ test_power
 #         value _ 2
 #         st _ 8
 #         result _ p.. v.. st
 #         expected_value _ value ** st
-#         ____.a.E. r.. e..
+#         a.E. r.. e..
 #
-#     ___ test_concat_values ____
+#     ___ test_concat_values
 #         values _ 1, 2, 3, 4
 #         result _ concat_values(*values
 #         expected_result _ '1234'
-#         ____.a.E. r.. e..
+#         a.E. r.. e..
 #
-#     ___ test_desc ____
+#     ___ test_desc
 #         x, y _ 10, 20
 #         result _ desc(x, y)
 #         expected_result _ y / x
-#         ____.a.E. r.. e..
+#         a.E. r.. e..
 #
-#     ___ test_desc_with_zero ____
-#         w___ ____.a..R. V...
+#     ___ test_desc_with_zero
+#         w___ a..R. V...
 #             desc(0, 20)

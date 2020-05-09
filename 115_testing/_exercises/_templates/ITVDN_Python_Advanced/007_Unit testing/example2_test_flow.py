@@ -2,28 +2,28 @@
 # ______ d_ti_
 #
 #
-# c_ UserTestCase u___.T.C.
+# c_ UserTestCase ?.?
 #
-#     ___ setUp ____
+#     ___ setUp
 #         print('setUp')
-#         ____.current = d_ti_.d_ti_.n..
+#         current _ d_ti_.d_ti_.n..
 #
 #     _c..
-#     ___ setUpClass ___
+#     ___ setUpClass
 #         ___.current_cls _ d_ti_.d_ti_.n..
 #         print('setUpClass')
 #
-#     ___ tearDown ____
+#     ___ tearDown
 #         print('tearDown')
 #
 #     _c.
-#     ___ tearDownClass ___
+#     ___ tearDownClass
 #         print('tearDownClass')
 #
-#     ___ test_example1 ____
-#         print(____.cu..
-#         print(____.c._c.
+#     ___ test_example1
+#         print cu..
+#         print c._c.
 #
-#     ___ test_example2 ____
-#         print(____.cu..
-#         print(____.c._c.
+#     ___ test_example2
+#         print cu..
+#         print c._c.

@@ -2,44 +2,44 @@
 # f___ u___ _______ T...
 #
 #
-# c_ TestPrinter T..
-#     ___ setUp ____
-#         ____.printer = Pr__ pages_per_s=2.0, capacity=300
+# c_ TestPrinter ?
+#     ___ setUp
+#         printer _ Pr__ pages_per_s=2.0, capacity=300
 #
-#     ___ test_print_within_capacity ____
-#         ____.pr__.print(25)
+#     ___ test_print_within_capacity
+#         ?.print(25)
 #
-#     ___ test_print_outside_capacity ____
+#     ___ test_print_outside_capacity
 #         w___ ____.aR_ P..
-#             ____.pr__.print(301)
+#             ?.print(301)
 #
-#     ___ test_print_exact_capacity ____
-#         ____.pr__.print ____.pr__._capacity
+#     ___ test_print_exact_capacity
+#         ?.print ?._capacity
 #
-#     ___ test_printer_speed ____
-#         pages = 10
-#         expected = 'Printed 10 pages in 5.00 seconds.'
+#     ___ test_printer_speed
+#         pages _ 10
+#         expected _ 'Printed 10 pages in 5.00 seconds.'
 #
-#         result = ____.pr__.print p..
-#         ____.assertEqual ? ex..
+#         result _ ?.print p..
+#         assertEqual ? ex..
 #
-#     ___ test_speed_always_two_decimals ____
+#     ___ test_speed_always_two_decimals
 #         fast_printer _ Pr__ pages_per_s=3.0, capacity=300
-#         pages = 11
-#         expected = 'Printed 11 pages in 3.67 seconds.'
+#         pages _ 11
+#         expected _ 'Printed 11 pages in 3.67 seconds.'
 #
-#         result = f_p_.print p..
-#         ____.aE_ ? e...
+#         result _ f_p_.print p..
+#         aE_ ? e...
 #
-#     ___ test_multiple_print_runs ____
-#         ____.pr__.print(25)
-#         ____.pr__.print(50)
-#         ____.pr__.print(225)
+#     ___ test_multiple_print_runs
+#         ?.print 25
+#         ?.print 50
+#         ?.print 225
 #
-#     ___ test_multiple_runs_end_up_error ____
-#         ____.pr__.print(25)
-#         ____.pr__.print(50)
-#         ____.pr__.print(225)
+#     ___ test_multiple_runs_end_up_error
+#         ?.print 25
+#         ?.print 50
+#         ?.print 225
 #
-#         w___ ____.aR_  P...
-#             ____.pr__.print(1)
+#         w___ aR_  P...
+#             ?.print(1)

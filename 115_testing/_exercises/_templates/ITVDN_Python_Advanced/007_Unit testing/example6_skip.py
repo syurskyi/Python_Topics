@@ -3,7 +3,7 @@
 # ______ u____.mock
 #
 #
-# c_ UserTestCase u____.T.C.
+# c_ UserTestCase ?.?
 #
 #     _u____.s.. Test Skip
 #     ___ test_just_skip____
@@ -23,6 +23,6 @@
 #
 #
 # _u____.sk.. ('showing c_ skipping')
-# c_ SkipTestCase u____.T.C.
+# c_ SkipTestCase ?.?
 #     ___ test_test ____
 #         ____.fa.. 'error'
