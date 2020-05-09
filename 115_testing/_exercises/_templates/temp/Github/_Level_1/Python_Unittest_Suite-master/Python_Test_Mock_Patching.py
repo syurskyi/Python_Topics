@@ -37,7 +37,7 @@ c_ ProductionClass:
             something(1, 2, 3)
 
         ___ something  a, b, c
-            pass
+            p..
 
 real _ ProductionClass()
 real.something _ MagicMock()

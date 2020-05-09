@@ -24,5 +24,5 @@ c_ TestFizzbuzz?.?
     for num in data:
       aE..(fizzbuzz.fizzbuzz(num), "")
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
   u__.main()

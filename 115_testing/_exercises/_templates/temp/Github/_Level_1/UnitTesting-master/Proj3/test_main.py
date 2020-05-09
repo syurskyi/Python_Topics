@@ -22,10 +22,10 @@ c_ TestInterest?.?
 
     ___ test_simple_interest_value_error
         """ Test all arguments of the function to ensure that negatives, non decimals, and negative time durations dont work """
-        assertRaises(ValueError, Interest().simple_interest, -100, .5, 1)
-        assertRaises(ValueError, Interest().simple_interest, 100, -.5, 1)
-        assertRaises(ValueError, Interest().simple_interest, 100, .5, -1)
-        assertRaises(ValueError, Interest().simple_interest, 100, 1.5, -1)
+        assertRaises(V.., Interest().simple_interest, -100, .5, 1)
+        assertRaises(V.., Interest().simple_interest, 100, -.5, 1)
+        assertRaises(V.., Interest().simple_interest, 100, .5, -1)
+        assertRaises(V.., Interest().simple_interest, 100, 1.5, -1)
     
     ___ test_function_output_correctness
         """ Test and make sure the functions are outputting the expected values """
@@ -54,11 +54,11 @@ c_ TestInterest?.?
 
     ___ test_compound_interest_value_error
         """ Test all arguments of the function to ensure that negatives, non decimals, and negative time durations dont work """
-        assertRaises(ValueError, Interest().compound_interest, -100, .5, 1, 2) # Check negative principal val
-        assertRaises(ValueError, Interest().compound_interest, 100, -.5, 1, 2) # Check negative rate val
-        assertRaises(ValueError, Interest().compound_interest, 100, 1.5, 1, 2) # Check rate val over 1
-        assertRaises(ValueError, Interest().compound_interest, 100, .5, -1, 2) # Check negative time val
-        assertRaises(ValueError, Interest().compound_interest, 100, .5, 1, -2) # Check num times per year val less than 0
+        assertRaises(V.., Interest().compound_interest, -100, .5, 1, 2) # Check negative principal val
+        assertRaises(V.., Interest().compound_interest, 100, -.5, 1, 2) # Check negative rate val
+        assertRaises(V.., Interest().compound_interest, 100, 1.5, 1, 2) # Check rate val over 1
+        assertRaises(V.., Interest().compound_interest, 100, .5, -1, 2) # Check negative time val
+        assertRaises(V.., Interest().compound_interest, 100, .5, 1, -2) # Check num times per year val less than 0
 
     
     ___ test_compound_output_correctness

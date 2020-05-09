@@ -66,7 +66,7 @@ mock.__enter__ _ Mock(return_value_'foo')
 mock.__exit__ _ Mock(return_value_False)
 
 w__ mock __ m:
-        assert m == 'foo'
+        a.. m __ 'foo'
 
 mock.__enter__.assert_called_with()
 

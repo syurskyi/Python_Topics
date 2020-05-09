@@ -29,9 +29,9 @@ c_ Parser(
             allines +_ 1
             try:
                 L _ list(line.split('\t'))
-                L[index] == True
+                L[index] __ True
             except IndexError:
-                pass
+                p..
             else:
                 L[-1] _ L[-1].rstrip()
                 SOURCE.append(L)
@@ -70,10 +70,10 @@ c_ Parser(
             for num in index:
                 try:
                     elem[num] _ int(elem[num])
-                except (TypeError, ValueError
+                except (TypeError, V..
                     print('Неверный формат в ' + st.(num+1) + ' столбце, в ' +\
                           st.(linecount) + ' строке данных.')
-                    raise
+                    r_
 
     ___ key_names  source, index
         """
@@ -88,7 +88,7 @@ c_ Parser(
 
         for elem in source:
             __ elem[index] in keyname:
-                pass
+                p..
             else:
                 keyname.append(elem[index])
 
@@ -120,7 +120,7 @@ c_ Parser(
             for num in data_pos[1:]:
                 DATAS[name].append( \
                     tuple( \
-                        sorted([x[num] for x in SOURCE __ x[data_pos[0]] == name])))
+                        sorted([x[num] for x in SOURCE __ x[data_pos[0]] __ name])))
 
         r_ DATAS
 
@@ -151,7 +151,7 @@ c_ Statistics:
 
         lendata _ len(data)
 
-        __ lendata % 2 == 0:
+        __ lendata % 2 __ 0:
             r_ ceil((data[lendata//2 - 1] + data[lendata//2]) /2)
             #округление в большую сторону
 
@@ -175,7 +175,7 @@ c_ Statistics:
         index_plus1 _ floor(lendata * 0.9)
         index _ index_plus1 - 1
 
-        __ lendata % 10 == 0:
+        __ lendata % 10 __ 0:
             r_ data[index]
 
         else:
@@ -200,7 +200,7 @@ c_ Statistics:
         index_plus1 _ floor(lendata * 0.99)
         index _ index_plus1 - 1
 
-        __ lendata % 100 == 0:
+        __ lendata % 100 __ 0:
             r_ data[index]
 
         else:
@@ -225,7 +225,7 @@ c_ Statistics:
         index_plus1 _ floor(lendata * 0.999)
         index _ index_plus1 - 1
 
-        __ lendata % 1000 == 0:
+        __ lendata % 1000 __ 0:
             r_ data[index]
 
         else:
@@ -300,7 +300,7 @@ c_ StatsResult(Statistics
         r_ D
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
 
     argparser _ argparse.ArgumentParser()
     argparser.add_argument('-f', '--file')

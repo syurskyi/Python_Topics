@@ -4,10 +4,10 @@ ____ nose.plugins.attrib ______ attr
 # nosetests -a 'slow'    <= Execute the test cases with the attribute 'slow'
 @attr('slow')
 ___ test_slow_test(
-    pass
+    p..
 
 # To be more specific, you can do...
 # nosetests -a speed=slow_test
 @attr(speed_'slow_test')
 ___ test_attr_name(
-    pass
+    p..

@@ -5,7 +5,7 @@ ___ is_prime(number
 
 
     for element in range(2,number
-        __ number % element == 0:
+        __ number % element __ 0:
             r_ False
 
     r_ True

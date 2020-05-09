@@ -47,7 +47,7 @@ object() in mock
 # They do the default equality comparison on identity, using the side_effect attribute, unless you change their return value to return something else:
 # 
 
-MagicMock() == 3
+MagicMock() __ 3
 
 # OUTPUT: 'False'
 
@@ -58,7 +58,7 @@ MagicMock() !_ 3
 mock _ MagicMock()
 mock.__eq__.return_value _ True
 
-mock == 3
+mock __ 3
 
 # OUTPUT: 'True'
 

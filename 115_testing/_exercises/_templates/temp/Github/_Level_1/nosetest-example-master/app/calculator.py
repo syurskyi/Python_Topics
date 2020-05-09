@@ -11,4 +11,4 @@ c_ Calculator(object
         __ isinstance(x, number_types) and isinstance(y, number_types
             r_ x + y
         else:
-            raise ValueError
+            r_ V..

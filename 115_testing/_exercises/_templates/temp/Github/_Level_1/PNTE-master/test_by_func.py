@@ -6,21 +6,21 @@ ____ myfunc ______ add
 # test with assert
 ___ test_add_nums(
   actual _ add(1,10)
-  assert actual == 11
+  a.. actual __ 11
 
 # before test
 ___ setup_func(
-  pass
+  p..
 
 # after test
 ___ teardown_func(
-  pass
+  p..
 
 # @with_setup
 @with_setup(setup_func,teardown_func)
 ___ test_add_Numbers(
   actual _ add(-1,1)
-  assert actual == 0
+  a.. actual __ 0
 
 # @raise Error
 @raises(RuntimeError)

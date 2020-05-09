@@ -21,7 +21,7 @@
 # When Autospeccing, it will also apply to method calls on the mock object.
 #
 
-___ f(a, b, c pass
+___ f(a, b, c p..
 
 mock _ Mock(spec_f)
 mock(1, 2, c_3)

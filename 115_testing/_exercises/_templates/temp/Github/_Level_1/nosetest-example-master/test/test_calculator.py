@@ -17,16 +17,16 @@ c_ TddPythonExample?.?
 
     ___ test_calculator_returns_error_if_both_args_not_numbers
         """Test that raises ValueError when Strings are passed in."""
-        assertRaises(ValueError, calc.add, 'two', 'three')
+        assertRaises(V.., calc.add, 'two', 'three')
 
     ___ test_calculator_returns_error_message_if_x_arg_not_number
         """Test that raises ValueError when x arg isn't a number."""
-        assertRaises(ValueError, calc.add, 'two', 3)
+        assertRaises(V.., calc.add, 'two', 3)
 
     ___ test_calculator_returns_error_message_if_y_arg_not_number
         """Test that raises ValueError when y arg isn't a number."""
-        assertRaises(ValueError, calc.add, 2, 'three')
+        assertRaises(V.., calc.add, 2, 'three')
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     u__.main()

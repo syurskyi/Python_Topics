@@ -75,7 +75,7 @@ c_ SecondTestClass?.?
         """Вызывается после прогона всех тестов класса"""
         print "END: tearDownClass()"
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     u__.main()
 
 

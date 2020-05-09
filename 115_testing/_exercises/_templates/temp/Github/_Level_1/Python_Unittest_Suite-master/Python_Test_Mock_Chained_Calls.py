@@ -87,4 +87,4 @@ something.method()
 chained _ call.get_endpoint('foobar').create_call('spam', 'eggs').start_call()
 call_list _ chained.call_list()
 
-assert mock_backend.mock_calls == call_list
+a.. mock_backend.mock_calls __ call_list

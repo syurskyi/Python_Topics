@@ -14,15 +14,15 @@ c_ ParserTest?.?
 
 # SetUp for tests
 
-    @classmethod
-    ___ setUpClass(cls
+    ??
+    ___ setUpClass ___
         """Set up for class"""
         print("")
         print("................Starting Parser class tests................")
         print("")
 
-    @classmethod
-    ___ tearDownClass(cls
+    ??
+    ___ tearDownClass ___
         """Tear down for class"""
         print("")
         print("Parser class tests finished")
@@ -110,14 +110,14 @@ c_ StatisticsTest?.?
 
 # SetUp for tests
 
-    @classmethod
-    ___ setUpClass(cls
+    ??
+    ___ setUpClass ___
         """Set up for class"""
         print("...............Starting Statistics class tests...............")
         print("")
 
-    @classmethod
-    ___ tearDownClass(cls
+    ??
+    ___ tearDownClass ___
         """Tear down for class"""
         print("")
         print("Statistics class tests finished")
@@ -188,14 +188,14 @@ c_ StatsResultTest?.?
 
 # SetUp for tests
 
-    @classmethod
-    ___ setUpClass(cls
+    ??
+    ___ setUpClass ___
         """Set up for class"""
         print("...............Starting StatsResult class tests...............")
         print("")
 
-    @classmethod
-    ___ tearDownClass(cls
+    ??
+    ___ tearDownClass ___
         """Tear down for class"""
         print("")
         print("StatsResult class tests finished")
@@ -223,5 +223,5 @@ c_ StatsResultTest?.?
             'Order2': [(50, 75), (200, 300)]})
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
    u__.main()

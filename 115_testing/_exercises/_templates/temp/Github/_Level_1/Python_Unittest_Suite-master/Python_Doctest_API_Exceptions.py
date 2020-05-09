@@ -3,10 +3,10 @@
 # exactly as shown.
 #
 #  There are several common ways to use doctest:
-# > To check that a module’s docstrings are up-to-date by verifying that all interactive examples still work as documented.
+# > To check that a moduleï¿½s docstrings are up-to-date by verifying that all interactive examples still work as documented.
 # > To perform regression testing by verifying that interactive examples from a test file or a test object work as expected.
 # > To write tutorial documentation for a package, liberally illustrated with input-output examples.
-#   Depending on whether the examples or the expository text are emphasized, this has the flavor of “literate testing” or “executable documentation”.
+#   Depending on whether the examples or the expository text are emphasized, this has the flavor of ï¿½literate testingï¿½ or ï¿½executable documentationï¿½.
 #
 #
 # What About Exceptions?
@@ -27,7 +27,7 @@
 # This is usually the last line of a traceback, but can extend across multiple lines if the exception has a multi-line detail:
 # 
 
-raise ValueError('multi\n    line\ndetail')
+r_ V..('multi\n    line\ndetail')
 
 #
 # Best practice is to omit the traceback stack, unless it adds significant documentation value to the example.
@@ -35,5 +35,5 @@ raise ValueError('multi\n    line\ndetail')
 # So the last example is probably better as:
 # 
 
-raise ValueError('multi\n    line\ndetail')
+r_ V..('multi\n    line\ndetail')
  

@@ -41,4 +41,4 @@ c_ BoardTest?.?
         ]
 
         board _ class_example.Board(missing_two, check_False)
-        assertRaisesRegex(ValueError, 'Number 2 is missing in the input data', board.check)
+        assertRaisesRegex(V.., 'Number 2 is missing in the input data', board.check)

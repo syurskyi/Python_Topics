@@ -3,7 +3,7 @@ ____ random ______ choice
 
 ___ eat(food, is_healthy
 	__ not isinstance(is_healthy, bool
-		raise ValueError("is_healthy must be a boolean")
+		r_ V..("is_healthy must be a boolean")
 	ending _ "because YOLO!"
 	__ is_healthy:
 		ending _ "because my body is a temple"

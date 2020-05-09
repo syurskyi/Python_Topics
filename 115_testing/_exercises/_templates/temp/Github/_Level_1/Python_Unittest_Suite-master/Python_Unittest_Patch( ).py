@@ -30,11 +30,11 @@ ___ test(MockClass1, MockClass2
         module.ClassName1()
         module.ClassName2()
 
-        assert MockClass1 is module.ClassName1
-        assert MockClass2 is module.ClassName2
+        a.. MockClass1 is module.ClassName1
+        a.. MockClass2 is module.ClassName2
 
-        assert MockClass1.called
+        a.. MockClass1.called
 
-        assert MockClass2.called
+        a.. MockClass2.called
 
 test()

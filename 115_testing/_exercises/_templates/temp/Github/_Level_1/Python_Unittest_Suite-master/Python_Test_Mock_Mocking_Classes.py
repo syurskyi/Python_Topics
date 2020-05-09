@@ -36,4 +36,4 @@ w__ patch('module.Foo') __ mock:
 
         result _ some_function()
 
-        assert result == 'the result'
+        a.. result __ 'the result'

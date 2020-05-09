@@ -30,13 +30,13 @@ original _ module.ClassName
 
 new_mock _ patcher.start()
 
-assert module.ClassName is not original
-assert module.ClassName is new_mock
+a.. module.ClassName is not original
+a.. module.ClassName is new_mock
 
 patcher.stop()
 
-assert module.ClassName is original
-assert module.ClassName is not new_mock
+a.. module.ClassName is original
+a.. module.ClassName is not new_mock
 
 # 
 # A typical use case for this might be for doing multiple patches in the setUp method of a TestCase:
@@ -56,8 +56,8 @@ c_ MyTest(TestCase
             patcher2.stop()
 
         ___ test_something
-            assert package.module.Class1 is MockClass1
-            assert package.module.Class2 is MockClass2
+            a.. package.module.Class1 is MockClass1
+            a.. package.module.Class2 is MockClass2
 
 MyTest('test_something').run()
  
@@ -76,4 +76,4 @@ c_ MyTest(TestCase
             addCleanup(patcher.stop)
 
         ___ test_something
-            assert package.module.Class is MockClass
+            a.. package.module.Class is MockClass

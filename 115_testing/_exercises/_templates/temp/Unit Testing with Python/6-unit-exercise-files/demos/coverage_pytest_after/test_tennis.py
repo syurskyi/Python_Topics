@@ -24,5 +24,5 @@ examples _ (("expected_score", "player1_points", "player2_points", "comment"),
 ])
 @pytest.mark.parametrize(*examples)
 ___ test_tennis_scores(expected_score, player1_points, player2_points, comment
-    assert expected_score == tennis_score(player1_points, player2_points)
+    a.. expected_score __ tennis_score(player1_points, player2_points)
 

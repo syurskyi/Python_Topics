@@ -52,7 +52,7 @@ c_ JsonDiffHandler(object
         __ isinstance(first_json, dict
             for key in first_json:
                 # Формирование вложенности секции через точку
-                __ len(pa__) == 0:
+                __ len(pa__) __ 0:
                     new_path _ key
                 else:
                     new_path _ "%s.%s" % (pa__, key)
@@ -113,7 +113,7 @@ ___ assert_json(test_json, ethalon_json
     # Обработка типов сообщений и их содержимого, формирование результата
     for type, message in diff1:
         newType _ 'CHANGED_VALUE'
-        __ type == PATH:
+        __ type __ PATH:
             newType _ 'REMOVED_SECTION'
         diffs.append({'type': newType, 'message': message})
     for type, message in diff2:
@@ -121,7 +121,7 @@ ___ assert_json(test_json, ethalon_json
     r_ diffs
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     w__ o..(ETHALON_JSON) __ ethalon_json, \
             o..(TEST_JSON) __ test_json:
         diff_res _ assert_json(ethalon_json.read(), test_json.read())

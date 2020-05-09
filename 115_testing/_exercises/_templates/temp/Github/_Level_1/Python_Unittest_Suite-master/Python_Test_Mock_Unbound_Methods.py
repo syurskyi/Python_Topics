@@ -34,7 +34,7 @@
 
 c_ Foo:
       ___ foo
-          pass
+          p..
 
 w__ patch.object(Foo, 'foo', autospec_True) __ mock_foo:
       mock_foo.return_value _ 'foo'

@@ -74,8 +74,8 @@ c_ MyServiceTest?.?
         invalid_token _ SSOToken()
         registry _ Mock(SingleSignOnRegistry)
         ___ is_valid(token
-            __ not token == invalid_token:
-                raise Exception("Got the wrong token")
+            __ not token __ invalid_token:
+                r_ Exception("Got the wrong token")
             r_ False
         registry.is_valid _ Mock(side_effect_is_valid)
         my_service _ MyService(registry)
@@ -87,8 +87,8 @@ c_ MyServiceTest?.?
         valid_token _ SSOToken()
         registry _ Mock(SingleSignOnRegistry)
         ___ is_valid(token
-            __ not token == valid_token:
-                raise Exception("Got the wrong token")
+            __ not token __ valid_token:
+                r_ Exception("Got the wrong token")
             r_ True
         registry.is_valid _ Mock(side_effect_is_valid)
         my_service _ MyService(registry)

@@ -33,14 +33,14 @@ ______ u__
 
 c_ Test?.?
 
-    @classmethod
+    ??
 
-    ___ setUpClass(cls
+    ___ setUpClass ___
         cls._connection _ createExpensiveConnectionObject()
 
-    @classmethod
+    ??
 
-    ___ tearDownClass(cls
+    ___ tearDownClass ___
         cls._connection.destroy()
  
 #

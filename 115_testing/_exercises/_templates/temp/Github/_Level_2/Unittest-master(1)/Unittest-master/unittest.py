@@ -156,7 +156,7 @@ c_ GetChartDataTest?.?
             assertIn("x", item, 'missing x')
             assertIn("y", item, 'missing y')
             
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     #______ sys;sys.argv = ['', 'Test.testName']
     u__.main()
 			

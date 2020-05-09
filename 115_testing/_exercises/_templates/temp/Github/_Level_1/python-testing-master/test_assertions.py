@@ -24,8 +24,8 @@ c_ TestAssertions(TestCase
         assertIsNotNone(x)
 
     ___ test_bool
-        assertTrue(1 == 1)
-        assertFalse(1 == 0)
+        assertTrue(1 __ 1)
+        assertFalse(1 __ 0)
 
     ___ test_comparison
         assertGreater(1337, 42)

@@ -7,4 +7,4 @@ ___ MyFunction(iterable
     :param iterable:
     :rtype: bool
     """
-    pass
+    p..

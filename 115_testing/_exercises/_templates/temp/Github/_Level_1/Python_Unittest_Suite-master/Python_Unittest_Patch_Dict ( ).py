@@ -36,9 +36,9 @@
 foo _ {}
 
 w__ patch.dict(foo, {'newkey': 'newvalue'}
-        assert foo == {'newkey': 'newvalue'}
+        a.. foo __ {'newkey': 'newvalue'}
 
-assert foo == {}
+a.. foo __ {}
  
 
 ______ __
@@ -49,7 +49,7 @@ w__ patch.dict('os.environ', {'newkey': 'newvalue'}
 
 # OUTPUT: 'newvalue'
 
-assert 'newkey' not in __.environ
+a.. 'newkey' not in __.environ
 
 # 
 # Keywords can be used in the patch.dict() call to set values in the dictionary:
@@ -91,9 +91,9 @@ thing _ Container()
 thing['one'] _ 1
 
 w__ patch.dict(thing, one_2, two_3
-        assert thing['one'] == 2
+        a.. thing['one'] __ 2
 
-       assert thing['two'] == 3
+       a.. thing['two'] __ 3
 
-assert thing['one'] == 1
-assert list(thing) == ['one']
+a.. thing['one'] __ 1
+a.. list(thing) __ ['one']

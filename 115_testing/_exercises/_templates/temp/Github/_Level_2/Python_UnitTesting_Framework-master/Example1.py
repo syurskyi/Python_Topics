@@ -4,8 +4,8 @@ ______ u__
 
 c_ Internect?.?
 
-    @classmethod
-    ___ setUpClass(cls
+    ??
+    ___ setUpClass ___
         global driver
         driver _ webdriver.Chrome()
         driver.get("http://the-internet.herokuapp.com/")
@@ -18,11 +18,11 @@ c_ Internect?.?
         Title_driver.title
         aE..(Title,'The Internet')
 
-    @classmethod
-    ___ tearDownClass(cls
+    ??
+    ___ tearDownClass ___
         driver.close()
         print("Close Application")
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     u__.main()

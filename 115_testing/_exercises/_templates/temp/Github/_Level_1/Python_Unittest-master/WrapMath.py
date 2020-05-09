@@ -4,7 +4,7 @@ ______ u__
 
 c_ test_c_lib?.?
         
-        @classmethod
+        ??
         ___ setUpClass
             '''This method gets called at the start of all test in this class'''
 	    cobj _ ctypes.CDLL("libMath.so") # create an instance of shared library
@@ -17,7 +17,7 @@ c_ test_c_lib?.?
             '''This method gets called after execution of each test'''
             del num1, num2
 			
-        @classmethod
+        ??
 	___ tearDownClass
             '''This method gets called at the end of all test in this class'''
 	    del cobj
@@ -42,7 +42,7 @@ c_ test_c_lib?.?
             print("Result of divide is ", result)
             aE..(10.0, result)
 			
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     u__.main(verbosity_2)
 
     

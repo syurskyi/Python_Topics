@@ -21,7 +21,7 @@ c_ Checkout:
 
     ___ addItem  item
         __ item not in prices:
-            raise Exception("Bad Item")
+            r_ Exception("Bad Item")
 
         __ item in items:
             items[item] +_ 1

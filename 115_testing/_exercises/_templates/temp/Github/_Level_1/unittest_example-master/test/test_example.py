@@ -33,13 +33,13 @@ c_ TestClassExample?.?
 
     # Class-level fixtures. Require the classmethod decorator
     # -----------------------------------------------------------
-    @classmethod
-    ___ setUpClass(cls) -> None:
+    ??
+    ___ setUpClass ___) -> None:
         """called once, at the beginning of the class testing"""
         print("In setUpClass()...(class-level fixture)")
 
-    @classmethod
-    ___ tearDownClass(cls) -> None:
+    ??
+    ___ tearDownClass ___) -> None:
         """called once, once all tests have been done, if setUpClass succesfull"""
         print("In tearDownClass")
 
@@ -70,5 +70,5 @@ c_ TestClassExample?.?
         print(id())
         assertNotEqual(True, False)
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     u__.main()

@@ -7,8 +7,8 @@ ____ selenium.webdriver ______ ActionChains
 
 c_ Auth?.?
 
-    @classmethod
-    ___ setUpClass(cls
+    ??
+    ___ setUpClass ___
         global driver
         driver _ webdriver.Chrome()
         driver.get("http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html")
@@ -26,11 +26,11 @@ c_ Auth?.?
         action _ ActionChains(driver)
         action.reset_actions()
 
-    @classmethod
-    ___ tearDownClass(cls
+    ??
+    ___ tearDownClass ___
         # driver.quit()
         print("Close Application")
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     u__.main()

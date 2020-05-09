@@ -1,5 +1,5 @@
 
 c_ Substract(object
-    @classmethod
-    ___ do(cls, x, y
+    ??
+    ___ do ___, x, y
         r_ x-y

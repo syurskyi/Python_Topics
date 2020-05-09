@@ -12,4 +12,4 @@ c_ Calculator(object
             print('Result is:{}'.f..(result))
             r_ result
         else:
-            raise ValueError
+            r_ V..

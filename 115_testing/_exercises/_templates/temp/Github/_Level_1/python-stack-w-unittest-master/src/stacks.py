@@ -5,7 +5,7 @@ c_ Stack(object
         stack _ []
 
     ___ is_empty
-        r_ stack == []
+        r_ stack __ []
 
     ___ push  data
         stack.append(data)

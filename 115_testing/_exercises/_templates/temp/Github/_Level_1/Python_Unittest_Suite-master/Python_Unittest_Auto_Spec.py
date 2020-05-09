@@ -24,7 +24,7 @@
 ____ u__.m.. ______ create_autospec
 
 ___ function(a, b, c
-        pass
+        p..
 
 mock_function _ create_autospec(function, return_value_'fishy')
 

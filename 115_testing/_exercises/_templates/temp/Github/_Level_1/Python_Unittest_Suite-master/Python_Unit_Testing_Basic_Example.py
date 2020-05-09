@@ -51,7 +51,7 @@ c_ TestStringMethods?.?
         w__ assertRaises(TypeError
             s.split(2)
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
 
     u__.main()
 

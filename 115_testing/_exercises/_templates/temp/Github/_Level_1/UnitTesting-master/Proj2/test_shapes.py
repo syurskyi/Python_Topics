@@ -5,8 +5,8 @@ ____ shapes ______ ShapesArea
 c_ TestShapes?.?
     ___ test_value_check
         # Check value of number that the user entered and make sure it is in the valid range (>0)
-        assertRaises(ValueError, ShapesArea().value_check, -1)
-        assertRaises(ValueError, ShapesArea().value_check, -100.3454)
+        assertRaises(V.., ShapesArea().value_check, -1)
+        assertRaises(V.., ShapesArea().value_check, -100.3454)
 
     ___ test_type_check
         # Check type of the information entered and raise/catch error

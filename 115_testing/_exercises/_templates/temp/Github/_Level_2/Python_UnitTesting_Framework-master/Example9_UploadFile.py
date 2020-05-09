@@ -4,8 +4,8 @@ ______ u__
 
 c_ Auth?.?
 
-    @classmethod
-    ___ setUpClass(cls
+    ??
+    ___ setUpClass ___
         global driver
         driver _ webdriver.Chrome()
         driver.get("http://testautomationpractice.blogspot.com/")
@@ -16,11 +16,11 @@ c_ Auth?.?
         Upload _ driver.find_element_by_id("RESULT_FileUpload-11")
         Upload.send_keys("/Users/reenupanwar/Desktop/Sri.jpg")
 
-    @classmethod
-    ___ tearDownClass(cls
+    ??
+    ___ tearDownClass ___
         # driver.quit()
         print("Close Application")
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     u__.main()

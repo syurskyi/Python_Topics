@@ -43,7 +43,7 @@ mock.mock_calls
 # 
 
 expected _ [call.method(), call.attribute.method(10, x_53)]
-mock.mock_calls == expected
+mock.mock_calls __ expected
 
 # OUTPUT: 'True'
  
@@ -57,6 +57,6 @@ m.factory(important_True).deliver()
 
 # OUTPUT: '<Mock name='mock.factory().deliver()' id='...'>'
 
-m.mock_calls[-1] == call.factory(important_False).deliver()
+m.mock_calls[-1] __ call.factory(important_False).deliver()
 
 # OUTPUT: 'True'

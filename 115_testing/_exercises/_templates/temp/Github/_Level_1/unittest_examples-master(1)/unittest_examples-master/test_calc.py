@@ -20,7 +20,7 @@ c_ TestCalc?.?
         aE..(calc.multiplica(-5, -2), 10)
 
     ___ test_divide
-        w__ assertRaises(ValueError
+        w__ assertRaises(V..
             calc.divide(5,0)
 
         aE..(calc.divide(5,2), 2.5)
@@ -33,6 +33,6 @@ c_ TestCalc?.?
     ___ test_fsum_method
         aE..(sum([1.1, 2.2],4.4))
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     u__.main()
 

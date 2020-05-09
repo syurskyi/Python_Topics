@@ -19,4 +19,4 @@ c_ OrderDependentExample?.?
                           "Tracked in https://github.com/stardust85/python-unittests/issues/1")
     ___ test_baz
         # Yes, we can use pytest's assertions even in unttest-like TestCase :)
-        assert 1 == 2
+        a.. 1 __ 2

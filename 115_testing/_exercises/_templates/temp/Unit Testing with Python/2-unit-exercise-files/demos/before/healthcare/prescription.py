@@ -1,4 +1,4 @@
-____ datetime ______ date, timedelta
+____ d_t_ ______ date, timedelta
 
 c_ Prescription:
     

@@ -62,7 +62,7 @@ c_ LinkedList (object
 		thisNode _ root
 		
 		while (thisNode
-			__ thisNode.getData() == dataSet:
+			__ thisNode.getData() __ dataSet:
 				next _ thisNode.getNextNode()
 				prev _ thisNode.getPrevNode()
 				
@@ -85,7 +85,7 @@ c_ LinkedList (object
 	___ findNode   dataSet
 		thisNode _ root
 		while (thisNode
-			__ (thisNode.getData() == dataSet
+			__ (thisNode.getData() __ dataSet
 			    r_ dataSet
 			else:
 			    thisNode _ thisNode.getNextNode()
@@ -94,7 +94,7 @@ c_ LinkedList (object
 	___ getAllData
 		dataList _ []
 		thisNode _ root
-		__ (root == None
+		__ (root __ None
 			dataList.append(None)
 			r_ dataList
 		while (thisNode

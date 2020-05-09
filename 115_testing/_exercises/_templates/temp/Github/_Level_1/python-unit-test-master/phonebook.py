@@ -14,7 +14,7 @@ c_ PhoneBook:
         for name1, number1 in numbers.items(
             for name2, number2 in numbers.items(
                 # if names are the same i'm comparing entry with itself
-                __ name1 == name2:
+                __ name1 __ name2:
                     continue
                 # look at 2 numbers to make sure one doesnt start with the other
                 __ number1.startswith(number2

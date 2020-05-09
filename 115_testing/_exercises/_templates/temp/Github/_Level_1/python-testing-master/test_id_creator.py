@@ -25,9 +25,9 @@ c_ TestIdCreator(TestCase
             id_creator.faculty_id('a')
 
     ___ test_invalid_type_error
-        w__ assertRaises(ValueError
+        w__ assertRaises(V..
             id_creator.faculty_id(-1)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     u__.main()

@@ -39,7 +39,7 @@
 ___ testSomething(
     something _ makeSomething()
 
-    assert something.name is not None
+    a.. something.name is not None
 
     # ...
 

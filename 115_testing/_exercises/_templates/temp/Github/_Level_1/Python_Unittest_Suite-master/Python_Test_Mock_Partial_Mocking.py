@@ -23,13 +23,13 @@
 # When the mock date class is called a real date will be constructed and returned by side_effect.
 # 
 
-____ datetime ______ date
+____ d_t_ ______ date
 
     w__ patch('mymodule.date') __ mock_date:
         mock_date.today.return_value _ date(2010, 10, 8)
 
         mock_date.side_effect _ lambda *args, **kw: date(*args, **kw)
 
-        assert mymodule.date.today() == date(2010, 10, 8)
+        a.. mymodule.date.today() __ date(2010, 10, 8)
 
-        assert mymodule.date(2009, 6, 8) == date(2009, 6, 8)
+        a.. mymodule.date(2009, 6, 8) __ date(2009, 6, 8)

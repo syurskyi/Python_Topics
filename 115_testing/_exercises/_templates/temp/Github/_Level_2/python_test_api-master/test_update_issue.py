@@ -1,6 +1,6 @@
 ____ base_api ______ BaseApi
 ______ xmltodict
-______ datetime
+______ d_t_
 ______ requests
 
 
@@ -11,7 +11,7 @@ c_ TestUpdateIssue(BaseApi
 
         url _ base_url + '/issue/' + issue_id
 
-        current_time _ st.(datetime.datetime.now())[0:-7]
+        current_time _ st.(d_t_.d_t_.now())[0:-7]
 
         issue_summary _ 'Summary updated at ' + current_time
         issue_description _ 'Description updated at ' + current_time
@@ -34,15 +34,15 @@ c_ TestUpdateIssue(BaseApi
 
         aE..(response_dict['issue']['@id'], issue_id)
         for field in response_dict['issue']['field']:
-            __ field['@name'] == 'summary':
+            __ field['@name'] __ 'summary':
                 aE..(field['value'], issue_summary)
-            __ field['@name'] == 'description':
+            __ field['@name'] __ 'description':
                 aE..(field['value'], issue_description)
 
     ___ test_update_not_existing_issue
         url _ base_url + '/issue/' + 'kjhfkaskafk'
 
-        current_time _ st.(datetime.datetime.now())[0:-7]
+        current_time _ st.(d_t_.d_t_.now())[0:-7]
 
         issue_summary _ 'Summary updated at ' + current_time
         issue_description _ 'Description updated at ' + current_time
@@ -63,7 +63,7 @@ c_ TestUpdateIssue(BaseApi
         issue_id _ _create_issue()
         url _ base_url + '/issue/' + issue_id
 
-        current_time _ st.(datetime.datetime.now())[0:-7]
+        current_time _ st.(d_t_.d_t_.now())[0:-7]
 
         issue_summary _ 'Summary updated at ' + current_time
         issue_description _ 'Description updated at ' + current_time

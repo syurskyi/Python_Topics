@@ -27,10 +27,10 @@ c_ Board:
         for i in range(16
             # check number i is at least in one row
             __ not any(map(lambda row: i in row, _rows)):
-                raise ValueError("Number {i} is missing in the input data".f..(**locals()))
+                r_ V..("Number {i} is missing in the input data".f..(**locals()))
 
     ___ is_solved
-        r_ _rows == _solved_board
+        r_ _rows __ _solved_board
 
 
 c_ FifteenSolver:
@@ -39,4 +39,4 @@ c_ FifteenSolver:
 
     ___ solve
         # TODO implement using BFS from https://github.com/TheAlgorithms/Python/blob/master/Graphs/basic-graphs.py
-        pass
+        p..

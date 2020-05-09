@@ -13,7 +13,7 @@ ___ setup_func(
 
 
 ___ teardown_func(
-    pass
+    p..
 
 # note that with_setup is useful only for test functions, not for test methods
 # in unittest.TestCase subclasses or other test classes.
@@ -21,7 +21,7 @@ ___ teardown_func(
 
 @with_setup(setup_func, teardown_func)
 ___ test_fixture(
-    assert global_a + global_b == 2
+    a.. global_a + global_b __ 2
 
 #--------------------------------------
 # nose supports test functions and methods that are generators.
@@ -38,21 +38,21 @@ ___ test_evens(
 # method check_even, then setup and teardown functions will be executed five
 # times.
 ___ check_even(n
-    assert n < 5
+    a.. n < 5
 
 
 ___ test_basic_assertion(
-    assert (1,2,3) == (1,2,3)
-    assert [1,2,3] == [1,2,3]
-    assert {'key1': 1, 'key2': 2} == {'key1': 1, 'key2': 2}
+    a.. (1,2,3) __ (1,2,3)
+    a.. [1,2,3] __ [1,2,3]
+    a.. {'key1': 1, 'key2': 2} __ {'key1': 1, 'key2': 2}
 
 ___ test_deprecated_test_case(
-    raise DeprecatedTest
+    r_ DeprecatedTest
 
 ___ test_skip_plugin(
-    raise SkipTest
+    r_ SkipTest
 
 
 @nottest
 ___ test_not_a_test(
-    pass
+    p..

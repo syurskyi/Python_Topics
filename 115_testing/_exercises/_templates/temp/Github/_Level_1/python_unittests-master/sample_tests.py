@@ -6,21 +6,21 @@ ___ test_sum(
     num1 _ 5
     num2 _ 10
     expected _ 15
-    assert sample_functions.sum(num1, num2) == 15
+    a.. sample_functions.sum(num1, num2) __ 15
 
 ___ test_contains_numbers(
     input_str _ "el12lk3j5mnfadf"
-    assert sample_functions.contains_numbers(input_str) == True
+    a.. sample_functions.contains_numbers(input_str) __ True
 
 ___ test_does_not_contain_numbers(
     input_str _ "lkqwjqlkjlkjed"
-    assert sample_functions.contains_numbers(input_str) == False
+    a.. sample_functions.contains_numbers(input_str) __ False
 
 ___ test_div(
     num1 _ 10
     num2 _ 5
     expected _ 2
-    assert sample_functions.div(num1, num2) == expected
+    a.. sample_functions.div(num1, num2) __ expected
 
 ___ test_div_by_zero(
     num1 _ 10
@@ -35,7 +35,7 @@ ___ test_div2(
     num1 _ 10
     num2 _ 5
     expected _ 2
-    assert sample_functions.div(num1, num2) == expected
+    a.. sample_functions.div(num1, num2) __ expected
     num2 _ 0
     w__ pytest.raises(ZeroDivisionError
         sample_functions.div(num1, num2)

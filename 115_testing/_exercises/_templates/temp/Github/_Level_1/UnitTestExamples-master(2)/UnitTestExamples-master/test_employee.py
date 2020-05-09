@@ -3,8 +3,8 @@ ____ employee ______ Employee
 
 c_ TestEmployee?.?
 
-	@classmethod
-	___ setUpClass(cls
+	??
+	___ setUpClass ___
 		print('setupClass')
 
 	"""
@@ -13,8 +13,8 @@ c_ TestEmployee?.?
 	only once before a test. 
 	"""
 
-	@classmethod
-	___ tearDownClass(cls
+	??
+	___ tearDownClass ___
 		print('teardownClass')
 
 	___ setUp
@@ -27,7 +27,7 @@ c_ TestEmployee?.?
 	"""
 
 	___ tearDown
-		pass
+		p..
 	"""
 	Teardown is used when you test write files to a directory
 	and later need to delete those files.
@@ -73,5 +73,5 @@ c_ TestEmployee?.?
 		aE..(emp_2.pay, 105000)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
 	u__.main()

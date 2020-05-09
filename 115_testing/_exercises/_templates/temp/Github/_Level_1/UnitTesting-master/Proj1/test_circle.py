@@ -20,7 +20,7 @@ c_ TestCircleArea?.?
 
     ___ test_area_values
         # Test to make sure the incorrect value hasnt been entered
-        assertRaises(ValueError, circle_area, -3)
+        assertRaises(V.., circle_area, -3)
 
     ___ test_circumfrence
         # Tests circumfrence to expected val
@@ -36,8 +36,8 @@ c_ TestCircleArea?.?
 
     ___ test_circumfrence_values
         # Test to insure proper type is entered into value
-        assertRaises(ValueError, circle_circumfrence, -3)
-        assertRaises(ValueError, circle_circumfrence, -99.23545)
+        assertRaises(V.., circle_circumfrence, -3)
+        assertRaises(V.., circle_circumfrence, -99.23545)
 
 
 

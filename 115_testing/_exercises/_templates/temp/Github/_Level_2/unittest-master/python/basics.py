@@ -49,6 +49,6 @@ ___ main(
     else:
         print ('There are exactly 10000 records')
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     print (CONST_AUTHOR)
     main()

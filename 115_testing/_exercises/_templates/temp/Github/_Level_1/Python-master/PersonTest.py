@@ -57,6 +57,6 @@ c_ Test?.?
         print("\nFinish get_name test\n")
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     # begin the unittest.main()
     u__.main()

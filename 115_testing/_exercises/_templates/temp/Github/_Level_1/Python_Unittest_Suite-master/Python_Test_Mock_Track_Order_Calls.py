@@ -44,7 +44,7 @@ manager.mock_calls
 # 
 
 expected_calls _ [call.foo.something(), call.bar.other.thing()]
-manager.mock_calls == expected_calls
+manager.mock_calls __ expected_calls
 
 # OUTPUT: 'True'
 

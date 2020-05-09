@@ -5,8 +5,8 @@ ____ sample ______ Calc
 
 
 c_ TestSample?.?
-    @classmethod
-    ___ setUpClass(cls
+    ??
+    ___ setUpClass ___
         cls.calc _ Calc()
 
     ___ test_add

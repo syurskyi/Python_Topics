@@ -21,7 +21,7 @@ c_ PruebaLoginBusqueda?.?
     #def testTitle(self):
       titulo _ driver.find_element_by_id("pageTitle") #verificamos si estamos en el sitio correcto atraves de su titulo
       #print(str (self.titulo))
-      __ titulo == 'Facebook - Connexion ou inscription': 
+      __ titulo __ 'Facebook - Connexion ou inscription': 
          print("Estamos en facebook!")
          time.sleep(1)
       else:
@@ -52,5 +52,5 @@ c_ PruebaLoginBusqueda?.?
         time.sleep(5.0)
         driver.close()
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     u__.main()

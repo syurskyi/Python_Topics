@@ -2,7 +2,7 @@
  https://github.com/lathama/python-testing-example
 """
 
-______ datetime
+______ d_t_
 ______ __
 ______ sys
 ______ u__
@@ -39,7 +39,7 @@ __ __debug__:
 
     unittesting_log _ o..('unittesting.log', 'a')
     file_pos _ unittesting_log.tell()
-    timestamp _ st.(datetime.datetime.now().isoformat(' ')) + "\n"
+    timestamp _ st.(d_t_.d_t_.now().isoformat(' ')) + "\n"
     unittesting_log.write("Testing Example - " + timestamp)
     suite _ u__.TestLoader().discover('./testingdemo/unittests')
     u__.TextTestRunner(stream_unittesting_log, descriptions_True,

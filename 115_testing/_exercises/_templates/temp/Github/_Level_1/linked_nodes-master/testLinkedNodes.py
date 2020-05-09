@@ -25,5 +25,5 @@ c_ TestLinkedNodesListMethods?.?
         my_linked_list.print()
 
 
-__ __name__ == 'main':
+__ __name__ __ 'main':
     u__.main()

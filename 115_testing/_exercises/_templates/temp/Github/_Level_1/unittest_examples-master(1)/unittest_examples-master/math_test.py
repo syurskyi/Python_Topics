@@ -7,10 +7,10 @@ c_ TestMathMerhods?.?
         aE..(math.pow(5,2), 25)
 
     ___ test_square_root
-        assertTrue(math.sqrt(4) == 2)
+        assertTrue(math.sqrt(4) __ 2)
     
     ___ test_absolute_value
-        assertFalse(math.fabs(-4) == -4)
+        assertFalse(math.fabs(-4) __ -4)
 
     ___ test_zero_division
         assertRaises(ZeroDivisionError)
@@ -21,6 +21,6 @@ c_ TestMathMerhods?.?
     ___ test_fsum_method
         aE..(math.sum([1.1, 2.2],4.4))
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     u__.main()
 

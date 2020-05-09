@@ -7,7 +7,7 @@ c_ Patient:
         prescriptions.append(prescription)
         
     ___ days_taking  medicine_name
-        prescriptions _ filter(lambda p: p.name == medicine_name, prescriptions)
+        prescriptions _ filter(lambda p: p.name __ medicine_name, prescriptions)
         days _ set()
         for prescription in prescriptions:
             days.update(prescription.days_taken())

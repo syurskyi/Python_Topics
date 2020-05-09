@@ -22,15 +22,15 @@ ___ test_wordcounts(
             wordcounts("Truth is beauty; beauty ... truth."))
 
 # The nose way of checking that a function raises and exception.
-@raises(ValueError)
+@raises(V..)
 ___ test_addcounts_badarg_existing(
     addcounts(None, {})
 
-@raises(ValueError)
+@raises(V..)
 ___ test_addcounts_badarg_new(
     addcounts({}, None)
 
-@raises(ValueError)
+@raises(V..)
 ___ test_addcounts_badargs(
     addcounts(None, None)
 
@@ -58,9 +58,9 @@ c_ TestWords_addcounts?.?
         '''
         Alternate way to check that ValueError is raised.
         '''
-        w__ assertRaises(ValueError
+        w__ assertRaises(V..
             addcounts(None, {})
-        w__ assertRaises(ValueError
+        w__ assertRaises(V..
             addcounts({}, None)
-        w__ assertRaises(ValueError
+        w__ assertRaises(V..
             addcounts(None, None)

@@ -38,7 +38,7 @@ c_ NodeList:
         for count in range(position
             previous_node _ checked_node
             checked_node _ checked_node.get_next_node()
-            __(checked_node == None
+            __(checked_node __ None
                 found _ False
                 break
         __(found and previous_node is not None
@@ -49,7 +49,7 @@ c_ NodeList:
         found _ True
         for count in range(position
             checked_node _ checked_node.get_next_node()
-            __(checked_node == None
+            __(checked_node __ None
                 found _ False
                 break
         __(found

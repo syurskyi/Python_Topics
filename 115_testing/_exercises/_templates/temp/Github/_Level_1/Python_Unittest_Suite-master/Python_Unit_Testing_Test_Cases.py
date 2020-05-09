@@ -27,9 +27,9 @@
 # classmethod():
  
 
-@classmethod
+??
 
-___ setUpClass(cls
+___ setUpClass ___
 
 #    ...
  
@@ -40,8 +40,8 @@ ___ setUpClass(cls
 # tearDownClass is called with the class as the only argument and must be decorated as a classmethod():
  
 
-@classmethod
+??
 
-___ tearDownClass(cls
+___ tearDownClass ___
 
 #    ...

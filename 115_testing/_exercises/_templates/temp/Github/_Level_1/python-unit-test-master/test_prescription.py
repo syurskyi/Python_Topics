@@ -1,5 +1,5 @@
 ______ u__
-____ datetime ______ date, timedelta
+____ d_t_ ______ date, timedelta
 
 ____ prescription ______ Prescription
 

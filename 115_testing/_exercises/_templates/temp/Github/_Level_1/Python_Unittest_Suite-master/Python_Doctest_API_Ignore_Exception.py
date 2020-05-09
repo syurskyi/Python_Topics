@@ -23,9 +23,9 @@
 # Hence both of these variations will work with the flag specified, regardless of whether the test is run under Python 2.7 or Python 3.2 (or later versions):
 # 
 
-raise CustomError('message')
+r_ CustomError('message')
 
-raise CustomError('message')
+r_ CustomError('message')
 
 #
 # Note that ELLIPSIS can also be used to ignore the details of the exception message, but such a test may still fail based on whether or not the module

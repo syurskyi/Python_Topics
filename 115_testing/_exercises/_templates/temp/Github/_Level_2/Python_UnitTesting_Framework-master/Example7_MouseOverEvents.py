@@ -7,8 +7,8 @@ ____ selenium.webdriver.common.keys ______ Keys
 
 c_ MouseOver?.?
 
-    @classmethod
-    ___ setUpClass(cls
+    ??
+    ___ setUpClass ___
         global driver
         driver _ webdriver.Chrome()
         driver.get("https://opensource-demo.orangehrmlive.com")
@@ -44,11 +44,11 @@ c_ MouseOver?.?
         action _ ActionChains(driver)
         action.move_to_element(AssingLeave).context_click().send_keys(Keys.ARROW_DOWN).click().perform()
 
-    @classmethod
-    ___ tearDownClass(cls
+    ??
+    ___ tearDownClass ___
         # driver.quit()
         print("Close Application")
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     u__.main()

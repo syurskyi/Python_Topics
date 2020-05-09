@@ -36,7 +36,7 @@ mock.old_method()
 # arguments:
 # 
 
-___ f(a, b, c pass
+___ f(a, b, c p..
 
 mock _ Mock(spec_f)
 mock(1, 2, 3)

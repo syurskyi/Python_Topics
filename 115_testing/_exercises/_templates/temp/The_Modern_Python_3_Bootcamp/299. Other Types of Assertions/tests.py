@@ -19,7 +19,7 @@ c_ ActivityTests?.?
 
     ___ test_eat_healthy_boolean
         """is_healthy must be a bool"""
-        w__ assertRaises(ValueError
+        w__ assertRaises(V..
             eat("pizza", is_healthy_"who cares?")
 
     ___ test_short_nap
@@ -50,5 +50,5 @@ c_ ActivityTests?.?
         assertIn(laugh(), ('lol', 'haha', 'tehehe'))
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     u__.main()

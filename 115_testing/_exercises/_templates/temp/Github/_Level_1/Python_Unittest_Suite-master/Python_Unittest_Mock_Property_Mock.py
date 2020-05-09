@@ -28,7 +28,7 @@ c_ Foo:
         @foo.setter
 
         ___ foo  value
-            pass
+            p..
 
 w__ patch('__main__.Foo.foo', new_callable_PropertyMock) __ mock_foo:
 

@@ -17,5 +17,5 @@ ___ test_update_quality(item_name, initial_quality, initial_sellin, updated_qual
     item _ Item(item_name, initial_sellin, initial_quality)
     gilded_rose _ GildedRose([item])
     gilded_rose.update_quality()
-    assert item.quality == updated_quality
-    assert item.sell_in == updated_sellin
+    a.. item.quality __ updated_quality
+    a.. item.sell_in __ updated_sellin

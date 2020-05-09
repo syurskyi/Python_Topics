@@ -96,5 +96,5 @@ c_ RequestsFunctionTests?.?
         for fl in filtered_lists:
             assertTrue(len(fl), 1)
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     u__.main()

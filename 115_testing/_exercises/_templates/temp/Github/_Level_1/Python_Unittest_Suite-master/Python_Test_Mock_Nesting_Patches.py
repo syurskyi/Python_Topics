@@ -29,17 +29,17 @@ c_ MyTest(TestCase
 
                     w__ patch('mymodule.Spam') __ mock_spam:
 
-                        assert mymodule.Foo is mock_foo
+                        a.. mymodule.Foo is mock_foo
 
-                        assert mymodule.Bar is mock_bar
+                        a.. mymodule.Bar is mock_bar
 
-                       assert mymodule.Spam is mock_spam
+                       a.. mymodule.Spam is mock_spam
 
 original _ mymodule.Foo
 
 MyTest('test_foo').test_foo()
 
-assert mymodule.Foo is original
+a.. mymodule.Foo is original
 
 # 
 # With unittest cleanup functions and the patch methods: start and stop we can achieve the same effect without the nested indentation.
@@ -64,13 +64,13 @@ c_ MyTest(TestCase
             mock_bar _ create_patch('mymodule.Bar')
             mock_spam _ create_patch('mymodule.Spam')
 
-            assert mymodule.Foo is mock_foo
+            a.. mymodule.Foo is mock_foo
 
-            assert mymodule.Bar is mock_bar
-            assert mymodule.Spam is mock_spam
+            a.. mymodule.Bar is mock_bar
+            a.. mymodule.Spam is mock_spam
 
 original _ mymodule.Foo
 
 MyTest('test_foo').run()
 
-assert mymodule.Foo is original
+a.. mymodule.Foo is original

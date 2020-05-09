@@ -40,7 +40,7 @@ result(1)
 expected _ [call(1, 2, 3), call.first(a_3), call.second(),
            call.__int__(), call()(1)]
 
-mock.mock_calls == expected
+mock.mock_calls __ expected
 
 # OUTPUT: 'True'
 
@@ -58,6 +58,6 @@ mock.mock_calls
 
 # OUTPUT: '[call.top(a=3), call.top().bottom()]'
 
-mock.mock_calls[-1] == call.top(a_-1).bottom()
+mock.mock_calls[-1] __ call.top(a_-1).bottom()
 
 # OUTPUT: 'True'

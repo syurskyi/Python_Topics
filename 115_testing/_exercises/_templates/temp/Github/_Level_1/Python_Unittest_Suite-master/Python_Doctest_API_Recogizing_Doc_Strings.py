@@ -25,7 +25,7 @@ x
 
 # OUTPUT: '12'
 
-__ x == 13:
+__ x __ 13:
         print("yes")
 
     else:
@@ -65,7 +65,7 @@ print(f.__doc__)
 # The starting column doesn�t matter:
 # 
 
-assert "Easy!"
+a.. "Easy!"
 
 ______ math
 

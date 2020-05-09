@@ -30,6 +30,6 @@ mock.call_args_list
 
 expected _ [(), ((3, 4),), ({'key': 'fish', 'next': 'w00t!'},)]
 
-mock.call_args_list == expected
+mock.call_args_list __ expected
 
 # OUTPUT: 'True'

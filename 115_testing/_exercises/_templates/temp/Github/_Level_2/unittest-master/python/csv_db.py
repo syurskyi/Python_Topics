@@ -132,7 +132,7 @@ c_ ListIterator:
 c_ ObjectListIterator(ListIterator
     ___ info
         obj _ get()
-        __ obj == None:
+        __ obj __ None:
             r_ "None"
         r_ "Current Object: " + ("%d\t%s\t%s\t%s\t%s" % (id, geo, guid, category, commodity))
 
@@ -183,6 +183,6 @@ ___ main(
     print("Programmed by " + CONST_AUTHOR)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     print (CONST_AUTHOR)
     main()

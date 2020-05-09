@@ -31,7 +31,7 @@ c_ BaseTestClass?.?
 
     ___ test_error
         """Вызывает ERROR (E) с запуском по-умолчанию"""
-        raise ZeroDivisionError('Error! Division by zero')
+        r_ ZeroDivisionError('Error! Division by zero')
 
     @u__.expectedFailure
     ___ test_expected
@@ -39,7 +39,7 @@ c_ BaseTestClass?.?
             Вызывает expected failure (x) с декоратором
             @unittest.expectedFailure
         """
-        raise ZeroDivisionError('Error! Division by zero')
+        r_ ZeroDivisionError('Error! Division by zero')
 
     @u__.expectedFailure
     ___ test_expected_ok
@@ -51,5 +51,5 @@ c_ BaseTestClass?.?
         aE..(1, 1)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     u__.main()

@@ -57,14 +57,14 @@ aE..(the_exception.error_code, 3)
 # Examples:
 # 
 
-assertRaisesRegex(ValueError, "invalid literal for.*XYZ'$",
+assertRaisesRegex(V.., "invalid literal for.*XYZ'$",
                        int, 'XYZ')
 
 # 
 # or:
 # 
 
-w__ assertRaisesRegex(ValueError, 'literal'
+w__ assertRaisesRegex(V.., 'literal'
    int('XYZ')
 
 #

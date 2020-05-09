@@ -27,7 +27,7 @@
 # 
 
 ___ frob(val
-    pass
+    p..
 
 ___ grob(val
     "First frob and then clear val"
@@ -111,7 +111,7 @@ new_mock.call_args
 # 
 
 ___ side_effect(arg
-        assert arg == {6}
+        a.. arg __ {6}
 
 mock _ Mock(side_effect_side_effect)
 

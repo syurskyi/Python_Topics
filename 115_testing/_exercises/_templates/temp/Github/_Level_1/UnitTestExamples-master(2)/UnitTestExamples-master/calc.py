@@ -12,8 +12,8 @@ ___ multiply(x,y
 	r_ x*y
 
 ___ divide(x,y
-	__ y == 0:
-		raise ValueError('Cannot devide by zero!')
+	__ y __ 0:
+		r_ V..('Cannot devide by zero!')
 	else:
 		r_ x/y
 

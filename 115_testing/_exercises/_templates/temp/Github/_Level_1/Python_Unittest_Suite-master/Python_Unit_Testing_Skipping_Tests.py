@@ -47,7 +47,7 @@ c_ MyTestCase?.?
 
         # Tests that work for only a certain version of the library.
 
-        pass
+        p..
 
     @u__.skipUnless(sys.platform.startswith("win"), "requires Windows")
 
@@ -55,7 +55,7 @@ c_ MyTestCase?.?
 
         # windows specific testing code
 
-        pass
+        p..
 
 #
 # Classes can be skipped just like methods:
@@ -66,7 +66,7 @@ c_ MyTestCase?.?
 c_ MySkippedTestCase?.?
     ___ test_not_run
 
-        pass
+        p..
 
 # 
 # TestCase.setUp() can also skip the test.

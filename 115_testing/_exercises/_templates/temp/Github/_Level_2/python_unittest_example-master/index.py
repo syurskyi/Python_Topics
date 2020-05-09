@@ -34,7 +34,7 @@ ___ parse_phone_number(element
 	for x in element:
 		__ x.isdigit(
 			digits +_ x
-	__ len(digits) == 10:
+	__ len(digits) __ 10:
 		r_ True
 	else:
 		r_ False
@@ -64,17 +64,17 @@ ___ parse_lines(line
 	__ len(line) < 4:
 		r_ None
 
-	elif len(line[4]) == 5 and line[4][0].isdigit(
+	elif len(line[4]) __ 5 and line[4][0].isdigit(
 		__ parse_phone_number(line[2]
 			r_ format_one(line)
 
 
-	elif len(line[3]) == 5 and line[3][0].isdigit(
+	elif len(line[3]) __ 5 and line[3][0].isdigit(
 		__ parse_phone_number(line[4]
 			r_ format_two(line)
 
 
-	elif len(line[2]) == 5 and line[2][0].isdigit(
+	elif len(line[2]) __ 5 and line[2][0].isdigit(
 		__ parse_phone_number(line[3]
 			r_ format_three(line)
 	else:
@@ -88,7 +88,7 @@ ___ split_line(line
 	on the first space.
 	'''
 	data_list _ line.rstrip().split(', ')
-	__ len(data_list) == 4:
+	__ len(data_list) __ 4:
 		firstn _ data_list[0].split(' ')[0]
 		lastn _ data_list[0].split(' ')[1]
 		r_ [firstn, lastn] + data_list[1:]
@@ -140,5 +140,5 @@ ___ main(
 	convert_file(input_filename, output_filename)
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
 	main()

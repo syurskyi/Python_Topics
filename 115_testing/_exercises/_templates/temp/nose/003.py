@@ -23,13 +23,13 @@ ___ my_teardown_function(
 @with_setup(my_setup_function, my_teardown_function)
 ___ test_numbers_3_4(
     print('test_numbers_3_4  <============================ actual test code')
-    assert multiply(3, 4) == 12
+    a.. multiply(3, 4) __ 12
 
 
 @with_setup(my_setup_function, my_teardown_function)
 ___ test_strings_a_3(
     print('test_strings_a_3  <============================ actual test code')
-    assert multiply('a', 3) == 'aaa'
+    a.. multiply('a', 3) __ 'aaa'
 
 
 c_ TestUM:
@@ -40,20 +40,20 @@ c_ TestUM:
     ___ teardown
         print("TestUM:teardown() after each test method")
 
-    @classmethod
-    ___ setup_class(cls
+    ??
+    ___ setup_class ___
         print("setup_class() before any methods in this class")
 
-    @classmethod
-    ___ teardown_class(cls
+    ??
+    ___ teardown_class ___
         print("teardown_class() after any methods in this class")
 
     ___ test_numbers_5_6
         print
         'test_numbers_5_6()  <============================ actual test code'
-        assert multiply(5, 6) == 30
+        a.. multiply(5, 6) __ 30
 
     ___ test_strings_b_2
         print
         'test_strings_b_2()  <============================ actual test code'
-        assert multiply('b', 2) == 'bb'
+        a.. multiply('b', 2) __ 'bb'

@@ -17,7 +17,7 @@
 # If any members of the iterable are exceptions they will be raised instead of returned:
 # 
 
-iterable _ (33, ValueError, 66)
+iterable _ (33, V.., 66)
 
 m _ MagicMock(side_effect_iterable)
 m()

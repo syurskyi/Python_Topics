@@ -22,18 +22,18 @@ c_ Widget(object
         r_ _size
 
     ___ raise_exception
-        raise Exception()
+        r_ Exception()
 
 
 @u__.skipIf(3 < 2, 'This class will be executed because 3 is greater than 2, which makes the condition false.')
 c_ TestUnittest?.?
 
-    @classmethod
-    ___ setUpClass(cls
+    ??
+    ___ setUpClass ___
         print 'setUpClass'
 
-    @classmethod
-    ___ tearDownClass(cls
+    ??
+    ___ tearDownClass ___
         print 'tearDownClass'
 
     ___ setUp
@@ -58,11 +58,11 @@ c_ TestUnittest?.?
 
     @u__.skipIf(1 < 2, 'because 1 < 2, this test case will not be executed')
     ___ test_always_be_tested
-        pass
+        p..
 
     @u__.skipUnless(1 > 2, 'This test case will be skipped. Unless the condition is true')
     ___ test_skipunless_decorator
-        pass
+        p..
 
     @u__.expectedFailure
     ___ test_fail
@@ -111,7 +111,7 @@ c_ TestUnittest?.?
         w__ assertRaises(Exception
             widget.raise_exception()
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     u__.main()
 # Do not use the following way to trigger unit testing if you wanna use
 # nosetests as the test runner.

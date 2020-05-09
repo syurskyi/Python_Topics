@@ -18,7 +18,7 @@
 # Here is a minimal example of such a test runner:
 # 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     ______ doctest
 
     flags _ doctest.REPORT_NDIFF|doctest.FAIL_FAST

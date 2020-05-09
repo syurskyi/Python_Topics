@@ -15,7 +15,7 @@ c_ TennisGame:
     ___ score
         result _ ""
         tempScore_0
-        __ (p1points==p2points
+        __ (p1points__p2points
             result _ {
                 0 : "Love-All",
                 1 : "Fifteen-All",
@@ -23,9 +23,9 @@ c_ TennisGame:
             }.get(p1points, "Deuce")
         elif (p1points>_4 o. p2points>_4
             minusResult _ p1points-p2points
-            __ (minusResult==1
+            __ (minusResult__1
                 result _"Advantage " + player1Name
-            elif (minusResult ==-1
+            elif (minusResult __-1
                 result _"Advantage " + player2Name
             elif (minusResult>_2
                 result _ "Win for " + player1Name
@@ -33,7 +33,7 @@ c_ TennisGame:
                 result _"Win for " + player2Name
         else:
             for i in range(1,3
-                __ (i==1
+                __ (i__1
                     tempScore _ p1points
                 else:
                     result+_"-"
@@ -47,7 +47,7 @@ c_ TennisGame:
         r_ result
 
         ___ won_point  playerName # pragma: no cover
-            __ playerName == player1Name:
+            __ playerName __ player1Name:
                 p1points +_ 1
             else:
                 p2points +_ 1

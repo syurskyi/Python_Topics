@@ -12,7 +12,7 @@ c_ PhoneBookTest?.?
     # Test fixture
     # Tear down resources that were initialized in setUp
     ___ tearDown
-        pass
+        p..
 
     # Test case
     ___ test_lookup_by_name # Test case name

@@ -4,8 +4,8 @@ ______ u__
 
 c_ Links?.?
 
-    @classmethod
-    ___ setUpClass(cls
+    ??
+    ___ setUpClass ___
         global driver
         driver _ webdriver.Chrome()
         driver.get("http://the-internet.herokuapp.com/")
@@ -21,11 +21,11 @@ c_ Links?.?
         for d in Delete:
             d.click()
 
-    @classmethod
-    ___ tearDownClass(cls
+    ??
+    ___ tearDownClass ___
         # driver.quit()
         print("Close Application")
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     u__.main()

@@ -42,17 +42,17 @@ original _ SomeClass.attribute
 @patch.object(SomeClass, 'attribute', sentinel.attribute)
 
       ___ test(
-         assert SomeClass.attribute == sentinel.attribute
+         a.. SomeClass.attribute __ sentinel.attribute
 
       test()
-         assert SomeClass.attribute == original
+         a.. SomeClass.attribute __ original
  
 
 @patch('package.module.attribute', sentinel.attribute)
      ___ test(
 
         ____ package.module ______ attribute
-          assert attribute is sentinel.attribute
+          a.. attribute is sentinel.attribute
 
      test()
  
@@ -67,7 +67,7 @@ mock _ MagicMock(return_value_sentinel.file_handle)
 
 mock.assert_called_with('filename', _
 
-assert handle == sentinel.file_handle, "incorrect file handle returned"
+a.. handle __ sentinel.file_handle, "incorrect file handle returned"
 
 # 
 # The module name can be �dotted�, in the form package.module if needed:
@@ -78,7 +78,7 @@ assert handle == sentinel.file_handle, "incorrect file handle returned"
     ___ test(
         ____ package.module ______ ClassName
 
-        assert ClassName.attribute == sentinel.attribute
+        a.. ClassName.attribute __ sentinel.attribute
 
     test()
  
@@ -97,7 +97,7 @@ original _ SomeClass.attribute
 
 MyTest('test_something').test_something()
 
-assert SomeClass.attribute == original
+a.. SomeClass.attribute __ original
  
 #
 # If you want to patch with a Mock, you can use patch() with only one argument (or patch.object() with two arguments).
@@ -142,9 +142,9 @@ foo _ {'key': 'value'}
 original _ foo.copy()
 
    w__ patch.dict(foo, {'newkey': 'newvalue'}, clear_True
-        assert foo == {'newkey': 'newvalue'}
+        a.. foo __ {'newkey': 'newvalue'}
 
-assert foo == original
+a.. foo __ original
 
 # 
 # patch, patch.object and patch.dict can all be used as context managers.
@@ -156,7 +156,7 @@ assert foo == original
 
 c_ ProductionClass:
         ___ method
-            pass
+            p..
 
     w__ patch.object(ProductionClass, 'method') __ mock_method:
         mock_method.return_value _ None

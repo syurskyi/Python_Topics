@@ -27,5 +27,5 @@ c_ MyTestCase?.?
         result _ app.divide(10,2)
         aE..(result,expected)
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     u__.main()

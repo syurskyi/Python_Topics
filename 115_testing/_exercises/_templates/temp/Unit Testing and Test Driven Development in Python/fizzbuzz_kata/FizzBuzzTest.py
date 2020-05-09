@@ -10,11 +10,11 @@ ___ fizzBuzz( value
     r_ st.(value)
 
 ___ isMultiple( value, mod
-    r_ (value % mod) == 0
+    r_ (value % mod) __ 0
 
 ___ checkFizzBuzz( value, expectedRetVal
     retVal _ fizzBuzz(value)
-    assert retVal == expectedRetVal
+    a.. retVal __ expectedRetVal
 
 ___ test_returns1With1PassedIn(
     checkFizzBuzz(1, "1")

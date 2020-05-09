@@ -27,7 +27,7 @@ ___ wordcounts(text
     counts _ defaultdict(int)
     for fragment in text.split(
         word _ _normalize(fragment)
-        __ word == '':
+        __ word __ '':
             continue
         counts[word] +_ 1
     r_ dict(counts)
@@ -46,9 +46,9 @@ ___ addcounts(existing, new
     If either existing or new are not dictionaries, raise ValueError
     '''
     __ not type(existing) is dict:
-        raise ValueError('existing must be a dictionary')
+        r_ V..('existing must be a dictionary')
     __ not type(new) is dict:
-        raise ValueError('new must be a dictionary')
+        r_ V..('new must be a dictionary')
     for word, count in new.viewitems(
         newcount _ count + existing.get(word, 0)
         existing[word] _ newcount

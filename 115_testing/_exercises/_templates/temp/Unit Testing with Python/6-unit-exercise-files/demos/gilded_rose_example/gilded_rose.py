@@ -14,7 +14,7 @@ c_ GildedRose(object
             else:
                 __ item.quality < 50:
                     item.quality _ item.quality + 1
-                    __ item.name == "Backstage passes to a TAFKAL80ETC concert":
+                    __ item.name __ "Backstage passes to a TAFKAL80ETC concert":
                         __ item.sell_in < 11:
                             __ item.quality < 50:
                                 item.quality _ item.quality + 1

@@ -58,6 +58,6 @@ mock.call_args_list
 
 expected _ [call(1, 2, 3), call(4, 5, 6), call()]
 
-mock.call_args_list == expected
+mock.call_args_list __ expected
 
 # OUTPUT: 'True'

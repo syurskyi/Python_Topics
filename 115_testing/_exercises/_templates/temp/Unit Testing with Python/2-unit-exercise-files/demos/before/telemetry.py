@@ -11,12 +11,12 @@ c_ TelemetryDiagnosticControls:
         telemetry_client.disconnect()
 
         retryLeft _ 3
-        while (telemetry_client.get_online_status() == False and retryLeft > 0
+        while (telemetry_client.get_online_status() __ False and retryLeft > 0
             telemetry_client.connect(TelemetryDiagnosticControls.DiagnosticChannelConnectionString)
             retryLeft -_ 1
 
-        __ telemetry_client.get_online_status() == False:
-            raise Exception("Unable to connect.")
+        __ telemetry_client.get_online_status() __ False:
+            r_ Exception("Unable to connect.")
 
         telemetry_client.send(TelemetryClient.DIAGNOSTIC_MESSAGE)
         diagnostic_info _ telemetry_client.receive()
@@ -49,7 +49,7 @@ c_ TelemetryClient(object
 
     ___ connect  telemetry_server_connection_string
         __ not telemetry_server_connection_string:
-            raise Exception()
+            r_ Exception()
 
         # simulate the operation on a real modem
         success _ random.randint(0, 10) <_ 8
@@ -60,9 +60,9 @@ c_ TelemetryClient(object
 
     ___ send  message
         __ not message:
-            raise Exception()
+            r_ Exception()
 
-        __ message == TelemetryClient.DIAGNOSTIC_MESSAGE:
+        __ message __ TelemetryClient.DIAGNOSTIC_MESSAGE:
             # simulate a status report
             _diagnostic_message_result _ """\
 LAST TX rate................ 100 MBPS\r\n

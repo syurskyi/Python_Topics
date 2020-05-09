@@ -37,7 +37,7 @@ w__ patch.dict('sys.modules', {'fooble': mock}
 
 # OUTPUT: '<Mock name='mock.blob()' id='...'>'
 
-assert 'fooble' not in sys.modules
+a.. 'fooble' not in sys.modules
 
 mock.blob.assert_called_once_with()
 

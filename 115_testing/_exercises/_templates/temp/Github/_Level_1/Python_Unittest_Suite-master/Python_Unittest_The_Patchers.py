@@ -51,15 +51,15 @@ function(None)
 
 c_ Class:
         ___ method
-            pass
+            p..
 
 w__ patch('__main__.Class') __ MockClass:
         instance _ MockClass.return_value
         instance.method.return_value _ 'foo'
 
-        assert Class() is instance
+        a.. Class() is instance
 
-     assert Class().method() == 'foo'
+     a.. Class().method() __ 'foo'
 
 # 
 # If you use spec or spec_set and patch() is replacing a class, then the return value of the created mock will have the same spec.
@@ -72,7 +72,7 @@ MockClass _ patcher.start()
 
 instance _ MockClass()
 
-assert isinstance(instance, Original)
+a.. isinstance(instance, Original)
 
 patcher.stop()
 
@@ -85,7 +85,7 @@ patcher.stop()
 thing _ object()
 
 w__ patch('__main__.thing', new_callable_NonCallableMock) __ mock_thing:
-        assert thing is mock_thing
+        a.. thing is mock_thing
 
         thing()
 
@@ -104,7 +104,7 @@ ____ io ______ StringIO
 
        foo()
 
-       assert mock_stdout.getvalue() == 'Something\n'
+       a.. mock_stdout.getvalue() __ 'Something\n'
 
 test()
 

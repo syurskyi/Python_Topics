@@ -2,9 +2,9 @@ ____ nose.tools ______ raises, timed, istest, nottest
 ______ time
 
 
-@raises(TypeError, ValueError)
+@raises(TypeError, V..)
 ___ test_raises_type_error(
-    raise TypeError("This test passes")
+    r_ TypeError("This test passes")
 
 @timed(.3)
 ___ test_timed(
@@ -12,9 +12,9 @@ ___ test_timed(
 
 @istest
 ___ this_is_a_test(
-    pass
+    p..
 
 # note this test won't pass if you use py.test
 @nottest
 ___ test_this_is_not_a_test(
-    assert False
+    a.. False

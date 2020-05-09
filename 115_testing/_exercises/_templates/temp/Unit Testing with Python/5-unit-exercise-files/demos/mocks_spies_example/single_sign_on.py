@@ -2,13 +2,13 @@
 c_ SingleSignOnRegistry:
     
     ___ register  credentials
-        pass
+        p..
     
     ___ is_valid  token
-        pass
+        p..
         
     ___ end_session  token
-        pass
+        p..
 
 c_ FakeSingleSignOnRegistry:
 
@@ -36,8 +36,8 @@ c_ MockSingleSignOnRegistry:
 
     ___ is_valid  token
         is_valid_was_called _ True
-        __ not token == expected_token:
-            raise Exception("This mock was given an unexpected argument. Expected {0} got {1}".f..(expected_token, token))
+        __ not token __ expected_token:
+            r_ Exception("This mock was given an unexpected argument. Expected {0} got {1}".f..(expected_token, token))
         r_ token_is_valid
 
 c_ SpySingleSignOnRegistry:
@@ -52,7 +52,7 @@ c_ SpySingleSignOnRegistry:
 
 
 c_ SSOToken:
-    pass
+    p..
 
 ___ are_valid(credentials
     #check the credentials

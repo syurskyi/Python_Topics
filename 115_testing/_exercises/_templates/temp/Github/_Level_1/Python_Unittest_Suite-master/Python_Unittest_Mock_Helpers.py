@@ -38,7 +38,7 @@ real.method.return_value _ sentinel.some_object
 
 result _ real.method()
 
-assert result is sentinel.some_object
+a.. result is sentinel.some_object
 
 sentinel.some_object
 
@@ -63,7 +63,7 @@ m(1, 2, a_'foo', b_'bar')
 
 m()
 
-m.call_args_list == [call(1, 2, a_'foo', b_'bar'), call()]
+m.call_args_list __ [call(1, 2, a_'foo', b_'bar'), call()]
 
 # OUTPUT: 'True'
 
@@ -84,7 +84,7 @@ kall _ call(1).method(arg_'foo').other('bar')(2.0)
 
 kall.call_list()
 
-m.mock_calls == kall.call_list()
+m.mock_calls __ kall.call_list()
 
 # OUTPUT: 'True'
  
@@ -188,6 +188,6 @@ m(1)
 m(1, 2)
 m(object())
 
-m.mock_calls == [call(1), call(1, 2), ANY]
+m.mock_calls __ [call(1), call(1, 2), ANY]
 
 # OUTPUT: 'True'

@@ -2,14 +2,14 @@ ____ math ______ pi, cos, sin
 
 c_ ShapesArea:
     ___  - 
-        pass
+        p..
 
     ___ value_check  r
         # Check to make sure user input is of acceptable type and value
         __ type(r) not in [float, int]:
-            raise TypeError("Please enter a valid number greater than 0.")
+            r_ TypeError("Please enter a valid number greater than 0.")
         __ r < 0:
-            raise ValueError("Length from center to edge must be greater than 0.")
+            r_ V..("Length from center to edge must be greater than 0.")
         
     ___ circle_area  r
         # Calculate the area of a circle with radius r

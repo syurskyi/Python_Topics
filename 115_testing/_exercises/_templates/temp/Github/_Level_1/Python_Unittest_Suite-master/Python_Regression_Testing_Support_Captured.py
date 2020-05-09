@@ -35,8 +35,8 @@ w__ captured_stdout() __ stdout, captured_stderr() __ stderr:
 
     print("error", file_sys.stderr)
 
-assert stdout.getvalue() == "hello\n"
-assert stderr.getvalue() == "error\n"
+a.. stdout.getvalue() __ "hello\n"
+a.. stderr.getvalue() __ "error\n"
  
 #
 # Example use with input stream:

@@ -6,22 +6,22 @@ ____ myfunc ______ add
 c_ TestAdd:
   
   # once before test
-  @classmethod
+  ??
   ___ setup_class(clazz
-    pass
+    p..
  
   # once after test
-  @classmethod
+  ??
   ___ teardown_class(clazz
-    pass
+    p..
 
   # before test
   ___ setup
-    pass
+    p..
   
   # after test
   ___ teardown
-    pass
+    p..
 
   # @raise Error
   @raises(RuntimeError)
@@ -36,6 +36,6 @@ c_ TestAdd:
   # test with assert
   ___ test_add_nums
     actual _ add(1,10)
-    assert actual == 11
+    a.. actual __ 11
   
   

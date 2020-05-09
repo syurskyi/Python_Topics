@@ -16,7 +16,7 @@ ___ test_returnsCorrectString(mock_open, monkeypatch
     monkeypatch.setattr("os.path.exists", mock_exists)
     result _ readFromFile("blah")
     mock_open.assert_called_once_with("blah", "r")
-    assert result == "test line"
+    a.. result __ "test line"
 
 ___ test_throwsExceptionWithBadFile(mock_open, monkeypatch
     mock_exists _ MagicMock(return_value_False)

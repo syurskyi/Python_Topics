@@ -35,8 +35,8 @@ ___ filter_hrefs_by_text(hrefs_list, filter_string
     r_ [h for h in hrefs_list __ regex.search(h)]
 
 ___ main(
-    pass
+    p..
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     main()

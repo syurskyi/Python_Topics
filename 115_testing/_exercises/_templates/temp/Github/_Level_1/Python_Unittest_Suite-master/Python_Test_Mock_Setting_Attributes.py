@@ -80,6 +80,6 @@ mock.mock_calls
 
 # OUTPUT: '[call.connection.cursor(), call.connection.cursor().execute('SELECT 1')]'
 
-mock.mock_calls == expected
+mock.mock_calls __ expected
 
 # OUTPUT: 'True'

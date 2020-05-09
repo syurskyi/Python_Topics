@@ -16,12 +16,12 @@ ___ tearDownModule(
 
 
 c_ IncrementTest?.?
-    @classmethod
-    ___ setUpClass(cls
+    ??
+    ___ setUpClass ___
         logging.info('Test class begins')
 
-    @classmethod
-    ___ tearDownClass(cls
+    ??
+    ___ tearDownClass ___
         logging.info('Test class ends')
 
     ___ setUp

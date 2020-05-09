@@ -26,7 +26,7 @@ ___ test_train(corpus
 
     ut.train(corpus)
 
-    assert ut.model == expected_model
+    a.. ut.model __ expected_model
 
 @pytest.mark.tagger
 ___ test_tag_distribution(corpus
@@ -39,8 +39,8 @@ ___ test_tag_distribution(corpus
         'NOUN': 1/3
     }
 
-    assert ut.N == 3
-    assert ut.tag_distribution == expected_distribution
+    a.. ut.N __ 3
+    a.. ut.tag_distribution __ expected_distribution
 
 @pytest.mark.tagger
 ___ test_tag(corpus
@@ -53,7 +53,7 @@ ___ test_tag(corpus
     words_to_tag _ ['train']
     tagged_words _ ut.tag(words_to_tag)
 
-    assert expected_list == tagged_words
+    a.. expected_list __ tagged_words
 
 @pytest.mark.filesystem
 ___ test_save(corpus
@@ -73,7 +73,7 @@ ___ test_save(corpus
     ut.save(testfile.name)
     actual_data _ pickle.l..(testfile)
 
-    assert expected_data == actual_data
+    a.. expected_data __ actual_data
 
 @pytest.mark.filesystem
 ___ test_load(corpus
@@ -96,7 +96,7 @@ ___ test_load(corpus
 
     ut.l..(testfile.name)
 
-    assert (
-        expected_model == ut.model and
-        expected_distribution == ut.tag_distribution
+    a.. (
+        expected_model __ ut.model and
+        expected_distribution __ ut.tag_distribution
     )

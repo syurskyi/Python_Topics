@@ -4,14 +4,14 @@ ______ pytest
 c_ Testadd2num:
 
 	___ test_sum_2pos_num
-		assert add2num(5,6) == 11
+		a.. add2num(5,6) __ 11
 
 	___ test_sum_1pos_1neg_num
-		assert add2num(-10,5) == -5
+		a.. add2num(-10,5) __ -5
 
 	___ test_using_raises
 		w__ pytest.raises(TypeError
-			add2num(2, '3') == 5
+			add2num(2, '3') __ 5
 
 
 a _ {'a':1, 'b':2}

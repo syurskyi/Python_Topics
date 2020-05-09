@@ -33,7 +33,7 @@ mock.call_args
 
 # OUTPUT: 'call()'
 
-mock.call_args == ()
+mock.call_args __ ()
 
 # OUTPUT: 'True'
 
@@ -42,7 +42,7 @@ mock.call_args
 
 # OUTPUT: 'call(3, 4)'
 
-mock.call_args == ((3, 4),)
+mock.call_args __ ((3, 4),)
 
 # OUTPUT: 'True'
 

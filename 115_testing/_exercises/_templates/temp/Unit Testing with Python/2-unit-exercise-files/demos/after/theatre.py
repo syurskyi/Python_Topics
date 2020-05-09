@@ -5,4 +5,4 @@ c_ SeatFinder:
         
     ___ find_seats  count, wheelchair_count_0
         # left as an exercise
-        pass
+        p..
