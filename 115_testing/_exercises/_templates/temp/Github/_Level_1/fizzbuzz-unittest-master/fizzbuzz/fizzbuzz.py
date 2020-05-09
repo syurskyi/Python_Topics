@@ -1,9 +1,9 @@
-___ fizzbuzz(num
-  __ (num >_ 0 an. num % 3 __ 0 an. num % 5 __ 0
+___ fizzbuzz num
+  __ (? >_ 0 an. ? % 3 __ 0 an. ? % 5 __ 0
     r_ "Fizz Buzz"
-  __ (num >_ 0 an. num % 3 __ 0
+  __ (? >_ 0 an. ? % 3 __ 0
     r_ "Fizz"
-  __ (num >_ 0 an. num % 5 __ 0
+  __ (? >_ 0 an. ? % 5 __ 0
     r_ "Buzz"
-  __ (num >_ 0
+  __ (? >_ 0
     r_ ""
