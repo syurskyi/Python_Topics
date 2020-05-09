@@ -6,7 +6,7 @@ c_ PrimesTestCase?.?
 
     ___ test_is_five_prime
         """Is five successfully determined to be prime?"""
-        assertTrue(is_prime(5))
+        aT..(is_prime(5))
 
     ___ test_is_four_non_prime
         """Is four correctly determined not to be prime?"""
@@ -22,4 +22,4 @@ c_ PrimesTestCase?.?
             assertFalse(is_prime(index), msg_'{} should not be determined to be prime'.f..(index))
 
 __ __name__ __ '__main__':
-    u__.main()
+    ?.?

@@ -9,5 +9,5 @@ ___ main(
     r_ "hello world"
 
 
-__ __name__ __ "__main__":
+__ _____ __ ______
     main()

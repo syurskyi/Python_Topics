@@ -22,6 +22,6 @@ c_ TestGetInfoForCurrentUser(BaseApi
 
         response_dict _ xmltodict.parse(r.text)
 
-        assertTrue(response_dict['user'])
+        aT..(response_dict['user'])
         aE..(response_dict['user']['@login'], '<no user>')
         aE..(response_dict['user']['@guest'], 'false')

@@ -14,12 +14,12 @@ c_ AlarmTest?.?
     ___ test_check_too_low_pressure_sounds_alarm
         alarm _ Alarm(sensor_TestSensor(15))
         alarm.check()
-        assertTrue(alarm.is_alarm_on)
+        aT..(alarm.is_alarm_on)
 
     ___ test_check_too_high_pressure_sounds_alarm
         alarm _ Alarm(sensor_TestSensor(22))
         alarm.check()
-        assertTrue(alarm.is_alarm_on)
+        aT..(alarm.is_alarm_on)
 
     ___ test_check_normal_pressure_doesnt_sound_alarm
         alarm _ Alarm(sensor_TestSensor(18))

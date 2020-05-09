@@ -12,7 +12,7 @@ c_ AlarmTest?.?
             test_sensor_class.return_value_test_sensor_instance
             alarm _ Alarm()
             alarm.check()
-            assertTrue(alarm.is_alarm_on)
+            aT..(alarm.is_alarm_on)
 
     @patch("alarm.Sensor")
     ___ test_check_with_too_low_pressure  test_sensor_class
@@ -21,4 +21,4 @@ c_ AlarmTest?.?
         test_sensor_class.return_value _ test_sensor_instance
         alarm _ Alarm()
         alarm.check()
-        assertTrue(alarm.is_alarm_on)
+        aT..(alarm.is_alarm_on)

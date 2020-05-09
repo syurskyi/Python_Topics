@@ -20,7 +20,7 @@ c_ TestCalc?.?
         aE..(calc.multiplica(-5, -2), 10)
 
     ___ test_divide
-        w__ assertRaises(V..
+        w__ aR..(V..
             calc.divide(5,0)
 
         aE..(calc.divide(5,2), 2.5)
@@ -34,5 +34,5 @@ c_ TestCalc?.?
         aE..(sum([1.1, 2.2],4.4))
 
 __ __name__ __ '__main__':
-    u__.main()
+    ?.?
 

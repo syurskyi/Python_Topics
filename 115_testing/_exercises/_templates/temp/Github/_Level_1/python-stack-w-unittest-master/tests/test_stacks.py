@@ -94,4 +94,4 @@ c_ StackTestCase?.?
         aE..(10, test_obj.size())
 
 __ __name__ __ '__main__':
-    u__.main()
+    ?.?

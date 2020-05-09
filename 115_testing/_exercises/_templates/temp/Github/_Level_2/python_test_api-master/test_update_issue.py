@@ -57,7 +57,7 @@ c_ TestUpdateIssue(BaseApi
         response_dict _ xmltodict.parse(r.text)
 
         assert_for_status_code_and_content_type(r, 404)
-        assertTrue(response_dict['error'])
+        aT..(response_dict['error'])
 
     ___ test_update_issue_without_credentials
         issue_id _ _create_issue()
@@ -79,4 +79,4 @@ c_ TestUpdateIssue(BaseApi
 
         response_dict _ xmltodict.parse(r.text)
 
-        assertTrue(response_dict['error'])
+        aT..(response_dict['error'])

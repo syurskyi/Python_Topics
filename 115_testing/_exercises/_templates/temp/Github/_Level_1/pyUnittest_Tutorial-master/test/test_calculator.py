@@ -14,14 +14,14 @@ c_ TddInPythonExample?.?
         aE..(4, result)
 
     ___ test_calculator_returns_error_message_if_both_args_not_numbers
-        assertRaises(V.., calc.add, 'two', 'three')
+        aR..(V.., calc.add, 'two', 'three')
 
     ___ test_calculator_returns_error_message_if_x_args_not_number
-        assertRaises(V.., calc.add, 'two', 3)
+        aR..(V.., calc.add, 'two', 3)
 
     ___ test_calculator_returns_error_message_if_y_args_not_number
-        assertRaises(V.., calc.add, 2, 'three')
+        aR..(V.., calc.add, 2, 'three')
 
 
 __ __name__ __ '__main__':
-    u__.main()
+    ?.?

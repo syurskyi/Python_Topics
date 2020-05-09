@@ -29,7 +29,7 @@ c_ TestCreateIssue(BaseApi
 
         # self.assertEquals(r.status_code, 202)
         assert_for_status_code_and_content_type(r, 201)
-        assertTrue(r.headers['Location'])
+        aT..(r.headers['Location'])
         # print "Location response header is: " + r.headers['Location']
 
         # self.log(logger, r)

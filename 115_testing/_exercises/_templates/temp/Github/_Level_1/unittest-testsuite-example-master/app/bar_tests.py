@@ -8,4 +8,4 @@ c_ TestBar?.?
         aE..(bar.bar(),'bar')
         
 __ __name__ __ '__main__':
-    u__.main()
+    ?.?

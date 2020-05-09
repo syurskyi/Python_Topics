@@ -30,7 +30,7 @@
 # a function:
 # 
 
-w__ assertRaises(SomeException
+w__ aR..(SomeException
     do_something()
 
 # 
@@ -42,7 +42,7 @@ w__ assertRaises(SomeException
 # This can be useful if the intention is to perform additional checks on the exception raised:
 # 
 
-w__ assertRaises(SomeException) __ cm:
+w__ aR..(SomeException) __ cm:
     do_something()
 
 the_exception _ cm.exception
@@ -92,7 +92,7 @@ w__ assertWarns(SomeWarning
 w__ assertWarns(SomeWarning) __ cm:
     do_something()
 
-assertIn('myfile.py', cm.filename)
+aI..('myfile.py', cm.filename)
 
 aE..(320, cm.lineno)
 

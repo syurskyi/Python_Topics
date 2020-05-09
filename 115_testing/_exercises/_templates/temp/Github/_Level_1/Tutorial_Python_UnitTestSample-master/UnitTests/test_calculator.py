@@ -28,4 +28,4 @@ c_ MyTestCase?.?
         aE..(result,expected)
 
 __ __name__ __ '__main__':
-    u__.main()
+    ?.?

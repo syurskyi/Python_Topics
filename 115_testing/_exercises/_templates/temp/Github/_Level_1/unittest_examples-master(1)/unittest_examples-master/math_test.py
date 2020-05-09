@@ -7,13 +7,13 @@ c_ TestMathMerhods?.?
         aE..(math.pow(5,2), 25)
 
     ___ test_square_root
-        assertTrue(math.sqrt(4) __ 2)
+        aT..(math.sqrt(4) __ 2)
     
     ___ test_absolute_value
         assertFalse(math.fabs(-4) __ -4)
 
     ___ test_zero_division
-        assertRaises(ZeroDivisionError)
+        aR..(ZeroDivisionError)
 
     #Podemos usar o skip para passar teste que sabemos que
     #vão falhar com algum motivo
@@ -22,5 +22,5 @@ c_ TestMathMerhods?.?
         aE..(math.sum([1.1, 2.2],4.4))
 
 __ __name__ __ '__main__':
-    u__.main()
+    ?.?
 

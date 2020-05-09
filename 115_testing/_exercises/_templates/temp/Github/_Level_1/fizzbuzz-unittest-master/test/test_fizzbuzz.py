@@ -25,4 +25,4 @@ c_ TestFizzbuzz?.?
       aE..(fizzbuzz.fizzbuzz(num), "")
 
 __ __name__ __ '__main__':
-  u__.main()
+  ?.?

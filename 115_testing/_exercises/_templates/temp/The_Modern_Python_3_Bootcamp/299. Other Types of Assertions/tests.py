@@ -19,7 +19,7 @@ c_ ActivityTests?.?
 
     ___ test_eat_healthy_boolean
         """is_healthy must be a bool"""
-        w__ assertRaises(V..
+        w__ aR..(V..
             eat("pizza", is_healthy_"who cares?")
 
     ___ test_short_nap
@@ -41,14 +41,14 @@ c_ ActivityTests?.?
 
     ___ test_is_funny_anyone_else
         """anyone else but tim should be funny"""
-        assertTrue(is_funny("blue"), "blue should be funny")
-        assertTrue(is_funny("tammy"), "tammy should be funny")
-        assertTrue(is_funny("sven"), "sven should be funny")
+        aT..(is_funny("blue"), "blue should be funny")
+        aT..(is_funny("tammy"), "tammy should be funny")
+        aT..(is_funny("sven"), "sven should be funny")
 
     ___ test_laugh
         """laugh returns a laughing string"""
-        assertIn(laugh(), ('lol', 'haha', 'tehehe'))
+        aI..(laugh(), ('lol', 'haha', 'tehehe'))
 
 
-__ __name__ __ "__main__":
-    u__.main()
+__ _____ __ ______
+    ?.?

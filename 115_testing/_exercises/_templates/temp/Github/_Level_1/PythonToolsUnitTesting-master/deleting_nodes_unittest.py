@@ -28,14 +28,14 @@ c_ NodesDeleteTest?.?
         #get all data from the list
         dataTest _ newList.getAllData()
         #compare the list data and the sample data
-        assertTrue(dataTest, dataList)
+        aT..(dataTest, dataList)
 
     ___ testDeleteDataItem
         #delete data=3 from the list and the sample data
         newList.removeNode(3)
         dataTest _ newList.getAllData()
         #compare the list data and the sample data
-        assertTrue(dataTest, rmItemDataList)
+        aT..(dataTest, rmItemDataList)
 
 __ __name__ __ '__main__':
     u__.main(verbosity_2)

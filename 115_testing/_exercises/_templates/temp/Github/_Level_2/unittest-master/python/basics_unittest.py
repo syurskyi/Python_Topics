@@ -56,4 +56,4 @@ ___ read_csv(file_name
     r_ lst
 
 __ __name__ __ '__main__':
-    u__.main()
+    ?.?

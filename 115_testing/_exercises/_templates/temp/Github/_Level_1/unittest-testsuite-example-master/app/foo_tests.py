@@ -11,4 +11,4 @@ c_ TestFoo?.?
         aE..(FOO.foo(),'foo')
         
 __ __name__ __ '__main__':
-    u__.main()
+    ?.?

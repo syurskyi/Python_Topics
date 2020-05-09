@@ -5,14 +5,14 @@ ____ shapes ______ ShapesArea
 c_ TestShapes?.?
     ___ test_value_check
         # Check value of number that the user entered and make sure it is in the valid range (>0)
-        assertRaises(V.., ShapesArea().value_check, -1)
-        assertRaises(V.., ShapesArea().value_check, -100.3454)
+        aR..(V.., ShapesArea().value_check, -1)
+        aR..(V.., ShapesArea().value_check, -100.3454)
 
     ___ test_type_check
         # Check type of the information entered and raise/catch error
-        assertRaises(TypeError, ShapesArea().value_check, T..)
-        assertRaises(TypeError, ShapesArea().value_check, "Text")
-        assertRaises(TypeError, ShapesArea().value_check, 3+6j)
+        aR..(TypeError, ShapesArea().value_check, T..)
+        aR..(TypeError, ShapesArea().value_check, "Text")
+        aR..(TypeError, ShapesArea().value_check, 3+6j)
 
     ___ test_circle_area_value
         # Check and confirm function is calculating the circle area value properly

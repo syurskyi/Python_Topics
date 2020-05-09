@@ -15,8 +15,8 @@ c_ TestGetAccessibleProjects(BaseApi
         response_dict _ xmltodict.parse(r.text)
 
         for x in response_dict['projects']['project']:
-            assertTrue(x['@name'])
-            assertTrue(x['@shortName'])
+            aT..(x['@name'])
+            aT..(x['@shortName'])
 
     ___ test_get_accessible_projects_without_credentials
         url _ base_url + '/project/all'
@@ -27,4 +27,4 @@ c_ TestGetAccessibleProjects(BaseApi
 
         response_dict _ xmltodict.parse(r.text)
 
-        assertTrue(response_dict['error'])
+        aT..(response_dict['error'])

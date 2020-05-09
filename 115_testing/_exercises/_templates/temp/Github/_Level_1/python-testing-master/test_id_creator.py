@@ -21,13 +21,13 @@ c_ TestIdCreator(TestCase
         aE..(6, id_creator.faculty_id(3))
 
     ___ test_invalid_value_error
-        w__ assertRaises(TypeError
+        w__ aR..(TypeError
             id_creator.faculty_id('a')
 
     ___ test_invalid_type_error
-        w__ assertRaises(V..
+        w__ aR..(V..
             id_creator.faculty_id(-1)
 
 
 __ __name__ __ '__main__':
-    u__.main()
+    ?.?

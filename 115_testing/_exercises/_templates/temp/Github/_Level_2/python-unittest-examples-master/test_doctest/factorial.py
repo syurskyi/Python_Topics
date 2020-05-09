@@ -46,6 +46,6 @@ ___ factorial(n
         factor +_ 1
     r_ result
 
-__ __name__ __ "__main__":
+__ _____ __ ______
     ______ doctest
     doctest.testmod()

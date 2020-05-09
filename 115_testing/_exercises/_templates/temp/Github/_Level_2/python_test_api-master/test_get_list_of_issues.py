@@ -20,7 +20,7 @@ c_ TestGetListOfIssues(BaseApi
 
         assert_for_status_code_and_content_type(r, 200)
         for x in response_dict['issueCompacts']['issue']:
-            assertTrue(x['@id'])
+            aT..(x['@id'])
 
     ___ test_get_list_of_issues_without_credentials
         url _ base_url + '/issue'
@@ -37,4 +37,4 @@ c_ TestGetListOfIssues(BaseApi
 
         response_dict _ xmltodict.parse(r.text)
 
-        assertTrue(response_dict['error'])
+        aT..(response_dict['error'])

@@ -26,4 +26,4 @@ c_ TestLinkedNodesListMethods?.?
 
 
 __ __name__ __ 'main':
-    u__.main()
+    ?.?

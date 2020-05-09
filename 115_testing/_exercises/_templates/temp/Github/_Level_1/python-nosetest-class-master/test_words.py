@@ -58,9 +58,9 @@ c_ TestWords_addcounts?.?
         '''
         Alternate way to check that ValueError is raised.
         '''
-        w__ assertRaises(V..
+        w__ aR..(V..
             addcounts(None, {})
-        w__ assertRaises(V..
+        w__ aR..(V..
             addcounts({}, None)
-        w__ assertRaises(V..
+        w__ aR..(V..
             addcounts(None, None)

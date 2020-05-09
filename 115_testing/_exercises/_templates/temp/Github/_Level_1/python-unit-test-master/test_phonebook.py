@@ -31,14 +31,14 @@ c_ PhoneBookTest?.?
         # assertRaises ensures everything in with context manager will throw a KeyError exception
         # KeyError is raised whenever a dictionary object is requested and the key is not present
         # In our case the name Giles was not present in the phonbook
-        w__ assertRaises(KeyError
+        w__ aR..(KeyError
             phonebook.lookup("Giles")
 
     # annotation to skip a unittest
     # @unittest.skip("WIP")
     ___ test_empty_phonebook_is_consistent
         # is_consistent method should return true for empty phonebook
-        assertTrue(phonebook.is_consistent())
+        aT..(phonebook.is_consistent())
 
     ___ test_is_consistent_with_different_entries
         # Arrange step to add entries
@@ -46,7 +46,7 @@ c_ PhoneBookTest?.?
         # Assert whether it is or not
         phonebook.add("Bob", "12345")
         phonebook.add("Anna", "012345")
-        assertTrue(phonebook.is_consistent())
+        aT..(phonebook.is_consistent())
 
     ___ test_inconsistent_with_duplicate_entries
         phonebook.add("Bob", "12345")

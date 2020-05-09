@@ -21,11 +21,11 @@ c_ PhoneBookTest?.?
         aE..("12345", number) # Assert
 
     ___ test_missing_name
-        w__ assertRaises(KeyError
+        w__ aR..(KeyError
             phonebook.lookup("missing")
 
     ___ test_is_consistent_with_empty_phonebook
-        assertTrue(phonebook.is_consistent())
+        aT..(phonebook.is_consistent())
 
     # Not good test case design. We'll miss a lot of the tests if there is a failure early in the test.
     # Testing stops when an exception is encountered
@@ -33,9 +33,9 @@ c_ PhoneBookTest?.?
     @u__.skip("Bad test case design.")
     ___ test_is_consistent
         phonebook.add("Bob", "12345")
-        assertTrue(phonebook.is_consistent())
+        aT..(phonebook.is_consistent())
         phonebook.add("Anna", "012345")
-        assertTrue(phonebook.is_consistent())
+        aT..(phonebook.is_consistent())
         phonebook.add("Sue", "12345") # identitcal to Bob
         assertFalse(phonebook.is_consistent())
         phonebook.add("Sue", "123") # prefix of Bob
@@ -44,7 +44,7 @@ c_ PhoneBookTest?.?
     ___ test_is_consistent_with_different_entries
         phonebook.add("Bob", "12345")
         phonebook.add("Anna", "012345")
-        assertTrue(phonebook.is_consistent())
+        aT..(phonebook.is_consistent())
 
     ___ test_inconsistent_with_duplicate_entries
         phonebook.add("Bob", "12345")
@@ -58,5 +58,5 @@ c_ PhoneBookTest?.?
 
     ___ test_phonebook_adds_names_and_numbers
         phonebook.add("Sue", "123343") # Act
-        assertIn("Sue", phonebook.get_names()) # Assert made on the same Act
-        assertIn("123343", phonebook.get_numbers()) # Assert made on the same Act
+        aI..("Sue", phonebook.get_names()) # Assert made on the same Act
+        aI..("123343", phonebook.get_numbers()) # Assert made on the same Act

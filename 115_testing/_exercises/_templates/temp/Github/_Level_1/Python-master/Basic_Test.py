@@ -14,4 +14,4 @@ c_ Testing?.?
         aE..(a, b)
 
 __ __name__ __ '__main__':
-    u__.main()
+    ?.?

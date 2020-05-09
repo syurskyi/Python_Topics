@@ -14,7 +14,7 @@ c_ TestAnExample?.?
 
     ___ test_make_something
         result _ theclass.make_something()
-        assertTrue(result)
+        aT..(result)
 
     ___ test_report_something
         theclass.rightnow _ epochtime
@@ -25,6 +25,6 @@ c_ TestAnExample?.?
         aE..(goal, result)
 
     ___ test_should_fail
-        assertTrue(theclass.should_fail())
+        aT..(theclass.should_fail())
     
 #badspacesandfileendlinemakestylecheckunhappy

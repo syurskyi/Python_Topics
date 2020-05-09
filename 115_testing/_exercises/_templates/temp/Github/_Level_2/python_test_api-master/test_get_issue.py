@@ -31,4 +31,4 @@ c_ TestGetIssue?.?
         assertEquals(r.headers['Content-Type'], 'application/xml;charset=UTF-8')
 
 __ __name__ __ '__main__':
-    u__.main()
+    ?.?

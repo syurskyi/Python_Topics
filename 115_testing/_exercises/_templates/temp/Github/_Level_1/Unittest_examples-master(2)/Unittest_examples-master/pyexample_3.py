@@ -76,7 +76,7 @@ c_ SecondTestClass?.?
         print "END: tearDownClass()"
 
 __ __name__ __ '__main__':
-    u__.main()
+    ?.?
 
 
 

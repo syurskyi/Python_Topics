@@ -11,7 +11,7 @@ ______ u__
 c_ TestUnittestMethods?.?
     ___ testAssertTrue
         """Вызывает ошибку, если значение аргумента != True"""
-        assertTrue(T..)
+        aT..(T..)
 
     ___ testFailUnless
         """
@@ -55,4 +55,4 @@ c_ TestUnittestMethods?.?
         failUnlessAlmostEqual(1.1, 3.3 - 2.0, places_0)
 
 __ __name__ __ '__main__':
-    u__.main()
+    ?.?

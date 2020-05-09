@@ -17,8 +17,8 @@ c_ TestAdd?.?
 
     ___ test_exception
         sample.summation.side_effect _ Exception
-        assertRaises(Exception, sample.add,1,5) 
+        aR..(Exception, sample.add,1,5)
 
 
-__ __name__ __ "__main__":
-    u__.main()
+__ _____ __ ______
+    ?.?

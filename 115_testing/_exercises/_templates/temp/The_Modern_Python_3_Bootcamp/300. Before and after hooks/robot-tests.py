@@ -17,5 +17,5 @@ c_ RobotTests?.?
         aE..(mega_man.battery, 49)
 
 
-__ __name__ __ "__main__":
-    u__.main()
+__ _____ __ ______
+    ?.?

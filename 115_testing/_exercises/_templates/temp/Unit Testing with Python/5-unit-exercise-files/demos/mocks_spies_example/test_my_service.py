@@ -10,7 +10,7 @@ c_ MyServiceTest?.?
         my_service _ MyService(registry)
 
         response _ my_service.handle_request("do stuff", token_None)
-        assertIn("please enter your login details", response)
+        aI..("please enter your login details", response)
         
     ___ test_valid_token
         registry _ FakeSingleSignOnRegistry()
@@ -18,7 +18,7 @@ c_ MyServiceTest?.?
         my_service _ MyService(registry)
     
         response _ my_service.handle_request("do stuff", token)
-        assertIn("hello world", response)
+        aI..("hello world", response)
         
     ___ test_invalid_token_with_mock
         token _ SSOToken()
@@ -26,7 +26,7 @@ c_ MyServiceTest?.?
         my_service _ MyService(registry)
 
         response _ my_service.handle_request("do stuff", token_token)
-        assertTrue(registry.is_valid_was_called)
+        aT..(registry.is_valid_was_called)
 
     ___ test_valid_token_with_mock
         token _ SSOToken()
@@ -34,7 +34,7 @@ c_ MyServiceTest?.?
         my_service _ MyService(registry)
 
         response _ my_service.handle_request("do stuff", token)
-        assertTrue(registry.is_valid_was_called)
+        aT..(registry.is_valid_was_called)
 
     ___ test_invalid_token_with_spy
         token _ SSOToken()
@@ -42,7 +42,7 @@ c_ MyServiceTest?.?
         my_service _ MyService(registry)
 
         response _ my_service.handle_request("do stuff", token_token)
-        assertIn(token, registry.checked_tokens)
+        aI..(token, registry.checked_tokens)
 
     ___ test_valid_token_with_spy
         token _ SSOToken()
@@ -50,7 +50,7 @@ c_ MyServiceTest?.?
         my_service _ MyService(registry)
 
         response _ my_service.handle_request("do stuff", token)
-        assertIn(token, registry.checked_tokens)
+        aI..(token, registry.checked_tokens)
 
     ___ test_invalid_token_with_mocking_fw_as_spy
         token _ SSOToken()

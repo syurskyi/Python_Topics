@@ -66,18 +66,18 @@ c_ TestUnittest?.?
 
     @u__.expectedFailure
     ___ test_fail
-        assertTrue(false)
+        aT..(false)
 
     ___ test_basic_usage
         aE..(1, 1)
         assertNotEqual(1, 2)
-        assertTrue(T..)
+        aT..(T..)
         assertFalse(F..)
         assertIs(widget, widget)
         assertIsNot(widget, Widget('new widget'))
         assertIsNone(None)
         assertIsNotNone('A value')
-        assertIn(1, (1, 2, 3))
+        aI..(1, (1, 2, 3))
         assertNotIn(1, (2, 3, 4))
         AII..(widget, Widget)
         assertNotIsInstance(1, Widget)
@@ -108,11 +108,11 @@ c_ TestUnittest?.?
         assertDictEqual({'key1': 1, 'key2': 2}, {'key1': 1, 'key2': 2})
 
     ___ test_raise_exception
-        w__ assertRaises(Exception
+        w__ aR..(Exception
             widget.raise_exception()
 
 __ __name__ __ '__main__':
-    u__.main()
+    ?.?
 # Do not use the following way to trigger unit testing if you wanna use
 # nosetests as the test runner.
 

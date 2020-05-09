@@ -14,7 +14,7 @@ c_ Calculator(
     ___ divide num1,num2
         r_ num1/num2
 
-__ __name__ __ "__main__":
+__ _____ __ ______
     myApp _ Calculator()
     myApp.start()
 

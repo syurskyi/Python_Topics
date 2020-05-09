@@ -19,4 +19,4 @@ c_ ProjectTestCase?.?) :
 			aE..(expected, sum(a, b))
 
 __ __name__ __ '__main__':
-    u__.main()
+    ?.?

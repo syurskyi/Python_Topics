@@ -37,7 +37,7 @@ c_ TestStringMethods?.?
         aE..('foo'.upper(), 'FOO')
 
     ___ test_isupper
-        assertTrue('FOO'.isupper())
+        aT..('FOO'.isupper())
 
         assertFalse('Foo'.isupper())
 
@@ -48,12 +48,12 @@ c_ TestStringMethods?.?
 
         # check that s.split fails when the separator is not a string
 
-        w__ assertRaises(TypeError
+        w__ aR..(TypeError
             s.split(2)
 
 __ __name__ __ '__main__':
 
-    u__.main()
+    ?.?
 
 #
 # A testcase is created by subclassing unittest.TestCase.

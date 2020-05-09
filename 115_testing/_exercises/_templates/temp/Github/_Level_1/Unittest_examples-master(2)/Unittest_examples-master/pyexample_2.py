@@ -30,5 +30,5 @@ c_ SecondTestClass?.?
         aE..(420, val * 2)
 
 __ __name__ __ '__main__':
-    u__.main()
+    ?.?
 

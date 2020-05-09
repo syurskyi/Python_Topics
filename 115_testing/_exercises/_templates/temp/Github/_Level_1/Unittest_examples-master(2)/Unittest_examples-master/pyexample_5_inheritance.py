@@ -17,7 +17,7 @@ c_ BaseTestClass(object
         aE..(210, 110*2 - 10)
 
     ___ test_base_2
-        assertTrue(20 > 1)
+        aT..(20 > 1)
 
 
 c_ DerivedTestClassA?.?, BaseTestClass
@@ -33,4 +33,4 @@ c_ DerivedTestClassB?.?, BaseTestClass
 
 
 __ __name__ __ '__main__':
-    u__.main()
+    ?.?

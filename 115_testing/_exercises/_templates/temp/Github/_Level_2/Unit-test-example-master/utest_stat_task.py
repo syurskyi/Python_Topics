@@ -224,4 +224,4 @@ c_ StatsResultTest?.?
 
 
 __ __name__ __ '__main__':
-   u__.main()
+   ?.?

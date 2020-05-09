@@ -29,7 +29,7 @@
 # 
 
 __ __name__ __ '__main__':
-    u__.main()
+    ?.?
 
 # 
 # You can run tests with more detailed information by passing in the verbosity argument:

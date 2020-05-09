@@ -59,4 +59,4 @@ c_ Test?.?
 
 __ __name__ __ '__main__':
     # begin the unittest.main()
-    u__.main()
+    ?.?

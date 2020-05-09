@@ -25,13 +25,13 @@ c_ TestGetIssuesInProject(BaseApi
         response_dict _ xmltodict.parse(r.text)
 
         for x in response_dict['issues']['issue']:
-            assertTrue(x['@id'])
-            assertTrue(x['@entityId'])
+            aT..(x['@id'])
+            aT..(x['@entityId'])
             for y in x['field']:
-                assertTrue(y['@xmlns:xsi'])
-                assertTrue(y['@xsi:type'])
-                assertTrue(y['@name'])
-                assertTrue(y['value'])
+                aT..(y['@xmlns:xsi'])
+                aT..(y['@xsi:type'])
+                aT..(y['@name'])
+                aT..(y['value'])
 
         # self.validate_xml(r, 'xsd/issues.xsd')
 
@@ -48,7 +48,7 @@ c_ TestGetIssuesInProject(BaseApi
         assert_for_status_code_and_content_type(r, 404)
 
         response_dict _ xmltodict.parse(r.text)
-        assertTrue(response_dict['error'])
+        aT..(response_dict['error'])
 
     ___ test_get_issues_in_project_without_credentials
         projects_list _ _get_accessible_projects()
@@ -68,4 +68,4 @@ c_ TestGetIssuesInProject(BaseApi
 
         response_dict _ xmltodict.parse(r.text)
 
-        assertTrue(response_dict['error'])
+        aT..(response_dict['error'])

@@ -19,4 +19,4 @@ c_ SieveTest?.?
 
 
 __ __name__ __ '__main__':
-        u__.main()
+        ?.?

@@ -10,9 +10,9 @@ c_ TestCircleArea?.?
         assertAlmostEqual(circle_area(2.1), pi*2.1**2)
 
     ___ test_values
-        assertRaises(V.., circle_area, -2)
+        aR..(V.., circle_area, -2)
 
     ___ test_types
-        assertRaises(TypeError, circle_area, 3+5j)
-        assertRaises(TypeError, circle_area, T..)
-        assertRaises(TypeError, circle_area, "radius")
+        aR..(TypeError, circle_area, 3+5j)
+        aR..(TypeError, circle_area, T..)
+        aR..(TypeError, circle_area, "radius")

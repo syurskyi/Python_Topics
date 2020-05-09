@@ -32,9 +32,9 @@ c_ TestCalc?.?
 		aE..(calc.divide(-10,2),-5)
 		aE..(calc.divide(-1,-1),1)
 		
-		assertRaises(V.., calc.divide,10,0)
+		aR..(V.., calc.divide,10,0)
 	#	Can also use a context manager to check ValueError:
-		w__ assertRaises(V..
+		w__ aR..(V..
 			calc.divide(10,0)
 
 	___ test_power
@@ -68,7 +68,7 @@ This will allow you to run the test using:
 
 
 __ __name__ __ '__main__':
-	u__.main()
+	?.?
 
 """
 If an AssertionError is produced, the first value is what is

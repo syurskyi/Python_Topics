@@ -67,7 +67,7 @@ c_ RequestsFunctionTests?.?
         m_response _ mock.create_autospec(Response, content_page_content)
         mock_get.return_value _ m_response
         hrefs _ get_hrefs_from_url('some url')
-        assertTrue(hasattr(hrefs, '__iter__'), 'No list returned')
+        aT..(hasattr(hrefs, '__iter__'), 'No list returned')
 
     @mock.patch('learning_mocks.requests.get')
     ___ test_get_hrefs_from_url_returned_list_contains_text  mock_get
@@ -76,7 +76,7 @@ c_ RequestsFunctionTests?.?
         hrefs _ get_hrefs_from_url('some url')
         good_search_string _ 'google'
         bad_search_string _ 'bad'
-        assertTrue(any(good_search_string in t for t in hrefs),
+        aT..(any(good_search_string in t for t in hrefs),
                         'string {0} not found in list elements'.f..(good_search_string))
         assertFalse(any(bad_search_string in t for t in hrefs),
                          'found string "{0}" in list element when should NOT have been found'.f..(bad_search_string))
@@ -94,7 +94,7 @@ c_ RequestsFunctionTests?.?
         filtered_lists _ [yahoo_list, yahoo_fqdn_list, google_list, google_fqdn_list]
         # test the filter results
         for fl in filtered_lists:
-            assertTrue(len(fl), 1)
+            aT..(len(fl), 1)
 
-__ __name__ __ "__main__":
-    u__.main()
+__ _____ __ ______
+    ?.?

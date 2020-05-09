@@ -21,7 +21,7 @@ c_ TestGetUserByLoginName(BaseApi
         response_dict _ xmltodict.parse(r.text)
 
         assert_for_status_code_and_content_type(r, 403)
-        assertTrue(response_dict['error'])
+        aT..(response_dict['error'])
 
     ___ test_get_user_by_login_name_without_credentials
         url _ base_url + '/user/' + settings['credentials']['login']
@@ -32,4 +32,4 @@ c_ TestGetUserByLoginName(BaseApi
 
         response_dict _ xmltodict.parse(r.text)
 
-        assertTrue(response_dict['error'])
+        aT..(response_dict['error'])

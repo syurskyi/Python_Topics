@@ -24,7 +24,7 @@ c_ TestAssertions(TestCase
         assertIsNotNone(x)
 
     ___ test_bool
-        assertTrue(1 __ 1)
+        aT..(1 __ 1)
         assertFalse(1 __ 0)
 
     ___ test_comparison
@@ -36,7 +36,7 @@ c_ TestAssertions(TestCase
         assertNotAlmostEqual(2.012, 2.013, 3)
 
     ___ test_exceptions
-        w__ assertRaises(ZeroDivisionError
+        w__ aR..(ZeroDivisionError
             x _ 42 / 0
 
     ___ test_list_comparison
