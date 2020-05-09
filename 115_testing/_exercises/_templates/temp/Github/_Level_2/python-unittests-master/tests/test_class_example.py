@@ -26,9 +26,9 @@ c_ BoardTest?.?
             ),
         ]
 
-        for input, expected_output in inputs_and_outputs:
+        for in.., expected_output __ inputs_and_outputs:
             w__ subTest(input_input, expected_output_expected_output
-                board _ class_example.Board(input)
+                board _ class_example.Board(in..)
                 actual_output _ board.is_solved()
                 aE..(actual_output, expected_output)
 

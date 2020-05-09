@@ -9,10 +9,10 @@ c_ Patient:
     ___ days_taking  medicine_name
         prescriptions _ filter(lambda p: p.name __ medicine_name, prescriptions)
         days _ set()
-        for prescription in prescriptions:
+        for prescription __ prescriptions:
             days.update(prescription.days_taken())
         r_ days
         
     ___ clash  medicine_names
-        days_taking _ [days_taking(medicine_name) for medicine_name in medicine_names] o. [set()]
+        days_taking _ [days_taking(medicine_name) for medicine_name __ medicine_names] o. [set()]
         r_ set.intersection(*days_taking)

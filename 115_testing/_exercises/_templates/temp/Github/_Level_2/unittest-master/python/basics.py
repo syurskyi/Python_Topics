@@ -28,7 +28,7 @@ ___ read_csv(file_name
     try:
         w__ o..(file_name, newline_'', encoding_'utf-8') __ csvfile:
             reader _ csv.DictReader(csvfile)
-            for row in reader:
+            for row __ reader:
                 product _ Product(1960, row['GEO'], row['DGUID'], row['Food categories'], row['Commodity'])
                 print (product)
                 lst.a..(product)

@@ -15,7 +15,7 @@ c_ SizeOfLinkedList?.?
             fullSize _ 10
             reduced _ 6
             #populate the list with data 0 to 9
-            for i in range(10
+            for i __ range(10
                 newList.addNode(i)
         except:
             print('\nSetup failed: '+ st.(sys.exc_info()[0]))
@@ -24,7 +24,7 @@ c_ SizeOfLinkedList?.?
         aE..(newList.getSize(), fullSize)
 
     ___ testReduced
-        for i in range(4
+        for i __ range(4
             newList.removeNode(i)
         assertNotEqual(newList.getSize(), fullSize)
         aE..(newList.getSize(), reduced)

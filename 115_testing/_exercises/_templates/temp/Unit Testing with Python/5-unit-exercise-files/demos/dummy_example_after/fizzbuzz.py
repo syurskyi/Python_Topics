@@ -14,7 +14,7 @@ ___ fizzbuzz(n, additional_rules_N..
     rules _ {3: "Fizz", 5: "Buzz"}
     __ additional_rules:
         rules.update(additional_rules)
-    for divisor in sorted(rules.keys()):
+    for divisor __ sorted(rules.keys()):
      __ n % divisor __ 0:
          answer +_ rules[divisor]
     __ no. answer:

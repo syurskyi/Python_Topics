@@ -19,7 +19,7 @@ c_ TestGetListOfIssues(BaseApi
         response_dict _ xmltodict.parse(r.text)
 
         assert_for_status_code_and_content_type(r, 200)
-        for x in response_dict['issueCompacts']['issue']:
+        for x __ response_dict['issueCompacts']['issue']:
             aT..(x['@id'])
 
     ___ test_get_list_of_issues_without_credentials

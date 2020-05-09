@@ -25,7 +25,7 @@ c_ Parser(
         qty _ 0
         allines _ 0
 
-        for line in fileobj:
+        for line __ fileobj:
             allines +_ 1
             try:
                 L _ list(line.split('\t'))
@@ -50,8 +50,8 @@ c_ Parser(
         """
         number _ []
 
-        for head in heads:
-            __ head in source[0]:
+        for head __ heads:
+            __ head __ source[0]:
                 number.a..(source[0].index(head))
 
         r_ number
@@ -65,9 +65,9 @@ c_ Parser(
         :return: None
         """
         linecount _ 0
-        for elem in listobj:
+        for elem __ listobj:
             linecount +_ 1
-            for num in index:
+            for num __ index:
                 try:
                     elem[num] _ int(elem[num])
                 except (TypeError, V..
@@ -86,8 +86,8 @@ c_ Parser(
         """
         keyname _ []
 
-        for elem in source:
-            __ elem[index] in keyname:
+        for elem __ source:
+            __ elem[index] __ keyname:
                 p..
             else:
                 keyname.a..(elem[index])
@@ -107,20 +107,20 @@ c_ Parser(
         """
 
         SOURCE _ data_extr(fileobj, index)
-        head_list _ [head for head in heads]
+        head_list _ [head for head __ heads]
         data_pos _ check_pos(SOURCE, *head_list)
 
         SOURCE _ SOURCE[1:]
         int_converter(SOURCE, *data_pos[1:])
         keyname _ key_names(SOURCE, data_pos[0])
 
-        DATAS _ {name: [] for name in keyname}
+        DATAS _ {name: [] for name __ keyname}
 
-        for name in keyname:
-            for num in data_pos[1:]:
+        for name __ keyname:
+            for num __ data_pos[1:]:
                 DATAS[name].a..( \
                     tuple( \
-                        sorted([x[num] for x in SOURCE __ x[data_pos[0]] __ name])))
+                        sorted([x[num] for x __ SOURCE __ x[data_pos[0]] __ name])))
 
         r_ DATAS
 
@@ -251,21 +251,21 @@ c_ Statistics:
         :param denom: integer - число, при делении данных на которое остаток 0.
         :return: {int: [int, float, float]}
         """
-        rdata _ [(x - x% -denom) for x in data]
+        rdata _ [(x - x% -denom) for x __ data]
         lendata _ len(rdata)
-        fdict _ {number: [0] for number in sorted(set(rdata))}
+        fdict _ {number: [0] for number __ sorted(set(rdata))}
 
-        for number in rdata:
+        for number __ rdata:
                 fdict[number][0] +_ 1
 
-        for key in fdict:
+        for key __ fdict:
             fdict[key].a..(f..(fdict[key][0] / lendata * 100, '.2f'))
 
-        rkeys _ list(reversed([x for x in fdict.keys()]))
+        rkeys _ list(reversed([x for x __ fdict.keys()]))
 
         while rkeys:
             sum _ 0
-            for key in rkeys:
+            for key __ rkeys:
                 sum +_ fdict[key][0]
             fdict[rkeys[0]].a..(f..(sum / lendata * 100, '.2f'))
             rkeys _ rkeys[1:]
@@ -291,11 +291,11 @@ c_ StatsResult(Statistics
 
         D _ {}
 
-        for key in datas:
+        for key __ datas:
             D[key] _ []
-            for data in datas[key]:
+            for data __ datas[key]:
                 data _ tuple(sorted(data)) # for not sorted Source_data
-                D[key].a..(tuple(x() for x in list_funcs))
+                D[key].a..(tuple(x() for x __ list_funcs))
 
         r_ D
 
@@ -315,7 +315,7 @@ __ __name__ __ '__main__':
     stdata _ stat.run(*list_funcs)
 
     w__ o..('result_stat.txt',_ __ file:
-        for key in stdata.keys(
+        for key __ stdata.keys(
             print(key, 'min=' + st.(stdata[key][0][0]),
                   '50%=' + st.(stdata[key][0][1]),
                   '90%=' + st.(stdata[key][0][2]),
@@ -326,7 +326,7 @@ __ __name__ __ '__main__':
             print('', 'ExecTime', 'TransNo', 'Weight,%', 'Percent',
                   sep_'\t', end_'\n', file_file)
 
-            for timekey in stdata[key][0][5]:
+            for timekey __ stdata[key][0][5]:
                 print('', timekey,
                       stdata[key][0][5][timekey][0],
                       stdata[key][0][5][timekey][1],

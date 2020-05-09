@@ -97,6 +97,6 @@ ___ test_load(corpus
     ut.l..(testfile.name)
 
     a.. (
-        expected_model __ ut.model and
+        expected_model __ ut.model an.
         expected_distribution __ ut.tag_distribution
     )

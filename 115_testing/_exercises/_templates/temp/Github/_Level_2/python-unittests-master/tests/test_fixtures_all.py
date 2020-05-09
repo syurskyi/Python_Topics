@@ -2,7 +2,7 @@ ______ logging
 ______ u__
 ______ sys
 
-VERBOSE _ '-v' in sys.argv o. '--verbose' in sys.argv
+VERBOSE _ '-v' __ sys.argv o. '--verbose' __ sys.argv
 
 
 ___ setUpModule(

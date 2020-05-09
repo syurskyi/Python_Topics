@@ -20,7 +20,7 @@ c_ HtmlPagesConverter:
                 __ no. line:
                     break
                 line _ line.rstrip()
-                __ "PAGE_BREAK" in line:
+                __ "PAGE_BREAK" __ line:
                     page_break_position _ f.tell()
                     breaks.a..(f.tell())
             breaks.a..(f.tell())
@@ -35,7 +35,7 @@ c_ HtmlPagesConverter:
             while f.tell() !_ page_end:
                 line _ f.readline()
                 line _ line.rstrip()
-                __ "PAGE_BREAK" in line:
+                __ "PAGE_BREAK" __ line:
                     continue
                 html +_ html_converter.escape(line, quote_True)
                 html +_ "<br />"

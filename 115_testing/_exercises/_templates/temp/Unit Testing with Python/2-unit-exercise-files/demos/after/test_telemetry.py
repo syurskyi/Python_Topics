@@ -38,7 +38,7 @@ c_ MockTelemetryClient:
 
     ___ connect  connection_string
         attempts +_ 1
-        __ go_online_on_third_attempt and attempts __ 2:
+        __ go_online_on_third_attempt an. attempts __ 2:
             online_status _ T..
 
     ___ receive

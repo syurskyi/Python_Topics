@@ -24,9 +24,9 @@ c_ Board:
             check()
 
     ___ check
-        for i in range(16
+        for i __ range(16
             # check number i is at least in one row
-            __ no. any(map(lambda row: i in row, _rows)):
+            __ no. any(map(lambda row: i __ row, _rows)):
                 r_ V..("Number {i} is missing in the input data".f..(**locals()))
 
     ___ is_solved

@@ -32,7 +32,7 @@ ___ get_hrefs_from_url(url
 
 ___ filter_hrefs_by_text(hrefs_list, filter_string
     regex _ re.compile('^http[s]?://\S*{0}\S*'.f..(filter_string))
-    r_ [h for h in hrefs_list __ regex.search(h)]
+    r_ [h for h __ hrefs_list __ regex.search(h)]
 
 ___ main(
     p..

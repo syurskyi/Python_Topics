@@ -24,10 +24,10 @@ c_ TestGetIssuesInProject(BaseApi
 
         response_dict _ xmltodict.parse(r.text)
 
-        for x in response_dict['issues']['issue']:
+        for x __ response_dict['issues']['issue']:
             aT..(x['@id'])
             aT..(x['@entityId'])
-            for y in x['field']:
+            for y __ x['field']:
                 aT..(y['@xmlns:xsi'])
                 aT..(y['@xsi:type'])
                 aT..(y['@name'])

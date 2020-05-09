@@ -14,7 +14,7 @@ c_ NodesDeleteTest?.?
             #create list
             newList _ LinkedList()
             #populate the list with data 0 to 9
-            for i in range(10
+            for i __ range(10
                 newList.addNode(i)
         except:
             print('\nSetup failed: '+ st.(sys.exc_info()[0]))

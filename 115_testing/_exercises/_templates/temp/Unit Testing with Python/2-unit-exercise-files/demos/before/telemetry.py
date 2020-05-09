@@ -11,7 +11,7 @@ c_ TelemetryDiagnosticControls:
         telemetry_client.disconnect()
 
         retryLeft _ 3
-        while (telemetry_client.get_online_status() __ F.. and retryLeft > 0
+        while (telemetry_client.get_online_status() __ F.. an. retryLeft > 0
             telemetry_client.connect(TelemetryDiagnosticControls.DiagnosticChannelConnectionString)
             retryLeft -_ 1
 

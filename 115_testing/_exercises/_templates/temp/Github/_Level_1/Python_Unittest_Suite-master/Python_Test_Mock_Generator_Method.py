@@ -29,7 +29,7 @@
 c_ Foo:
 
      ___ iter
-            for i in [1, 2, 3]:
+            for i __ [1, 2, 3]:
 
                 yield i
 

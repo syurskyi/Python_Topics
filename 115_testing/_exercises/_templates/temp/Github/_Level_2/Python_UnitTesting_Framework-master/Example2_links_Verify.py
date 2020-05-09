@@ -16,7 +16,7 @@ c_ Internet?.?
         Links _ driver.find_elements(By.TAG_NAME, "a")
         print("Total Number of Links", len(Links))
 
-        for morelinks in Links:
+        for morelinks __ Links:
             print(morelinks.text)
 
     ??

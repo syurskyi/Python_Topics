@@ -18,7 +18,7 @@ c_ PrimesTestCase?.?
 
     ___ test_negative_number
         """Is a negative number correctly determined not to be prime?"""
-        for index in range(-1, -10, -1
+        for index __ range(-1, -10, -1
             assertFalse(is_prime(index), msg_'{} should not be determined to be prime'.f..(index))
 
 __ __name__ __ '__main__':

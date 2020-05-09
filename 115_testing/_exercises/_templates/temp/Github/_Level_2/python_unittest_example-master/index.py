@@ -31,7 +31,7 @@ ___ parse_phone_number(element
 	number of digits.
 	'''
 	digits _ ''
-	for x in element:
+	for x __ element:
 		__ x.isdigit(
 			digits +_ x
 	__ len(digits) __ 10:
@@ -42,7 +42,7 @@ ___ parse_phone_number(element
 ___ format_phone_number(phone
 	'''output phone numbers in correct format'''
 	digits _ ''
-	for x in phone:
+	for x __ phone:
 		__ x.isdigit(
 			digits +_ x
 	formatted _ digits[0:3] + '-' + digits[3:6] + '-' + digits[6:]
@@ -64,17 +64,17 @@ ___ parse_lines(line
 	__ len(line) < 4:
 		r_ None
 
-	elif len(line[4]) __ 5 and line[4][0].isdigit(
+	elif len(line[4]) __ 5 an. line[4][0].isdigit(
 		__ parse_phone_number(line[2]
 			r_ format_one(line)
 
 
-	elif len(line[3]) __ 5 and line[3][0].isdigit(
+	elif len(line[3]) __ 5 an. line[3][0].isdigit(
 		__ parse_phone_number(line[4]
 			r_ format_two(line)
 
 
-	elif len(line[2]) __ 5 and line[2][0].isdigit(
+	elif len(line[2]) __ 5 an. line[2][0].isdigit(
 		__ parse_phone_number(line[3]
 			r_ format_three(line)
 	else:
@@ -107,7 +107,7 @@ ___ parse_file(input_file
 	entries _ []
 	errors _ []
 
-	for idx, line in enumerate(input_file
+	for idx, line __ enumerate(input_file
 		data_list _ split_line(line)
 		contact _ parse_lines(data_list)
 

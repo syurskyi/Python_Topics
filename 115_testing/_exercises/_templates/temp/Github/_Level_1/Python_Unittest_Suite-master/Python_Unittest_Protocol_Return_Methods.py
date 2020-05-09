@@ -38,7 +38,7 @@ list(mock)
 
 # OUTPUT: '[]'
 
-object() in mock
+object() __ mock
 
 # OUTPUT: 'False'
 

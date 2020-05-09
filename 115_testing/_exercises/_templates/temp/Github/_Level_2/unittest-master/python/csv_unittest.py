@@ -60,7 +60,7 @@ c_ Database:
         db.query(query)
         r _ db.store_result()
         product _ Product()
-        for i in r.fetch_row(maxrows_1
+        for i __ r.fetch_row(maxrows_1
             product.id _ int(i[0])
             product.geo _ i[1]
             product.guid _ i[2]
@@ -102,7 +102,7 @@ c_ List:
 
     ___ sort
         lst _ sorted(lst, key_cmpFn)
-        lstguid _ [obj.guid for obj in lst ]
+        lstguid _ [obj.guid for obj __ lst ]
 
     ___ find  guid
         r_ bisect.bisect_left(lstguid, guid)
@@ -118,7 +118,7 @@ c_ ListIterator:
         cur _ 0
 
     ___ get
-        __ cur >_0 and cur < len(lst
+        __ cur >_0 an. cur < len(lst
             r_ lst[cur]
         else:
             r_ None
@@ -168,7 +168,7 @@ ___ read_csv(file_name
     try:
         w__ o..(file_name, newline_'', encoding_'utf-8') __ csvfile:
             reader _ csv.DictReader(csvfile)
-            for row in reader:
+            for row __ reader:
                 product _ Product(row['GEO'], row['DGUID'], row['Food categories'], row['Commodity'])
                 # print (product)
                 lst.a..(product)
@@ -185,7 +185,7 @@ ___ main(
     db _ Database()
     db.select_table('products')
 
-    for item in lst:
+    for item __ lst:
         p..
         db.create(item)
 

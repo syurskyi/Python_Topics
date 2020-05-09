@@ -66,7 +66,7 @@ c_ UnigramTagger:
         Calculate the tag probability after the model is created
         """
 
-        for tag in tags.keys(
+        for tag __ tags.keys(
             tag_distribution[tag] _ (tags[tag] / N)
 
     ___ add_to_model  word, tag
@@ -76,7 +76,7 @@ c_ UnigramTagger:
         :param tag: tag to add to the word
         """
 
-        __ word no. in model:
+        __ word no. __ model:
             model[word] _ Counter()
 
         model[word][tag] +_ 1
@@ -88,7 +88,7 @@ c_ UnigramTagger:
         :params word_tag_pairs: List of word, tag tuples which will be added to the model
         """
 
-        for pair in word_tag_pairs:
+        for pair __ word_tag_pairs:
             word, tag _ pair
             add_to_model(word, tag)
 
@@ -103,8 +103,8 @@ c_ UnigramTagger:
 
         result _ list()
 
-        for word in words:
-            __ word in model:
+        for word __ words:
+            __ word __ model:
                 available_tags _ model[word]
                 most_likely_tag _ max(available_tags, key_available_tags.get)
                 result.a..((word, most_likely_tag))

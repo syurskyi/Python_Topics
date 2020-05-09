@@ -38,10 +38,10 @@ test_function()
 @patch.multiple('__main__', thing_DEFAULT, other_DEFAULT)
 
 ___ test_function(mock_exit, other, thing
-        a.. 'other' in repr(other)
-        a.. 'thing' in repr(thing)
+        a.. 'other' __ repr(other)
+        a.. 'thing' __ repr(thing)
 
-        a.. 'exit' in repr(mock_exit)
+        a.. 'exit' __ repr(mock_exit)
 
 test_function()
 
@@ -50,8 +50,8 @@ test_function()
 # 
 
 w__ patch.multiple('__main__', thing_DEFAULT, other_DEFAULT) __ values:
-        a.. 'other' in repr(values['other'])
-        a.. 'thing' in repr(values['thing'])
+        a.. 'other' __ repr(values['other'])
+        a.. 'thing' __ repr(values['thing'])
 
         a.. values['thing'] __ thing
         a.. values['other'] __ other

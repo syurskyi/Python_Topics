@@ -5,7 +5,7 @@ ___ sortingPositives (l
     and sorts the positive elements.
     '''
     positive _ []
-    for i in l:
+    for i __ l:
         __ i >_ 0:
             positive.a..(i)
     r_ sorted(positive)

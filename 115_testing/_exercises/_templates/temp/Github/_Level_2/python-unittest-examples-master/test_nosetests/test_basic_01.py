@@ -29,7 +29,7 @@ ___ test_fixture(
 
 
 ___ test_evens(
-    for i in range(0, 5
+    for i __ range(0, 5
         yield check_even, i
 
 

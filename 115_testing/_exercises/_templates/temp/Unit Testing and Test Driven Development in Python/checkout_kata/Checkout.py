@@ -20,23 +20,23 @@ c_ Checkout:
         prices[item] _ price
 
     ___ addItem  item
-        __ item no. in prices:
+        __ item no. __ prices:
             r_ Exception("Bad Item")
 
-        __ item in items:
+        __ item __ items:
             items[item] +_ 1
         else:
             items[item] _ 1
 
     ___ calculateTotal
         total _ 0
-        for item, cnt in items.items(
+        for item, cnt __ items.items(
             total +_ calculateItemTotal(item, cnt)
         r_ total
 
     ___ calculateItemTotal  item, cnt
         total _ 0
-        __ item in discounts:
+        __ item __ discounts:
             discount _ discounts[item]
             __ cnt >_ discount.nbrItems:
                 total +_ calculateItemDiscountedTotal(item, cnt, discount)

@@ -26,7 +26,7 @@ __ __name__ __ '__main__':
     __ len(sys.argv) > 1:
         name _ sys.argv[1]
 
-        __ name in globals(
+        __ name __ globals(
             obj _ globals()[name]
 
         else:

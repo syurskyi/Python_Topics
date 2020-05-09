@@ -14,7 +14,7 @@ c_ TestGetAccessibleProjects(BaseApi
 
         response_dict _ xmltodict.parse(r.text)
 
-        for x in response_dict['projects']['project']:
+        for x __ response_dict['projects']['project']:
             aT..(x['@name'])
             aT..(x['@shortName'])
 

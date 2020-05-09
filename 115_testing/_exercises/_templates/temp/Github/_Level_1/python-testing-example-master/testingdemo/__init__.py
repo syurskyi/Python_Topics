@@ -10,7 +10,7 @@ ______ u__
 __ __debug__:
 
     import_dir _ "./libraries/"
-    for d in __.listdir(import_dir
+    for d __ __.listdir(import_dir
         __ __.pa__.isdir(import_dir + d
             sys.pa__.insert(1, import_dir + d)
 

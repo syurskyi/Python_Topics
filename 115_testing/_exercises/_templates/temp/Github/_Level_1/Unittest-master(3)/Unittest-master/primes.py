@@ -4,7 +4,7 @@ ___ is_prime(number
         r_ F..
 
 
-    for element in range(2,number
+    for element __ range(2,number
         __ number % element __ 0:
             r_ F..
 

@@ -16,8 +16,8 @@ c_ Testadd2num:
 
 a _ {'a':1, 'b':2}
 
-for k,v in a.items(
+for k,v __ a.items(
 	print(k)
 	print(v)
 
-print('c' in a)
+print('c' __ a)

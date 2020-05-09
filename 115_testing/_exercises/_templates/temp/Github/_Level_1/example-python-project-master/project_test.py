@@ -12,7 +12,7 @@ c_ ProjectTestCase?.?) :
 			 (4, 2, 2)
 		]
 
-		for asset in assets :
+		for asset __ assets :
 
 			expected, a, b _ asset
 

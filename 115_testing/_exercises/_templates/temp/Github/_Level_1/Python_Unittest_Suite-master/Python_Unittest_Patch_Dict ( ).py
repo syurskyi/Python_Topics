@@ -49,7 +49,7 @@ w__ patch.dict('os.environ', {'newkey': 'newvalue'}
 
 # OUTPUT: 'newvalue'
 
-a.. 'newkey' no. in __.environ
+a.. 'newkey' no. __ __.environ
 
 # 
 # Keywords can be used in the patch.dict() call to set values in the dictionary:

@@ -8,7 +8,7 @@ c_ Calculator(object
         """Addition Function."""
         number_types _ (int, long, float, complex)
 
-        __ isi..(x, number_types) and isi..(y, number_types
+        __ isi..(x, number_types) an. isi..(y, number_types
             r_ x + y
         else:
             r_ V..

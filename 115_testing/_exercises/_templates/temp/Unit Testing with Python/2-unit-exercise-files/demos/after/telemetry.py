@@ -14,7 +14,7 @@ c_ TelemetryDiagnosticControls:
     ___ reconnect  address
         telemetry_client.disconnect()
         retryLeft _ 3
-        while ((no. telemetry_client.online_status) and retryLeft > 0
+        while ((no. telemetry_client.online_status) an. retryLeft > 0
             telemetry_client.connect(address)
             retryLeft -_ 1
 

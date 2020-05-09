@@ -19,7 +19,7 @@ c_ SearchBySymbolTest?.?
         aI..("result", response['response'], 'Missing result')
         aT..(isi..(response['response']['result'], list), "Result is not a list")
         
-        for item in response['response']['result']:
+        for item __ response['response']['result']:
 			aI..("exchange", item, 'missing exchange')
 			aI..("name", item, 'missing name')
 			aI..("symbol", item, 'missing symbol')
@@ -40,7 +40,7 @@ c_ SearchbyTermTest?.?
         aI..("result", response['response'], 'Missing result')
         aT..(isi..(response['response']['result'], list), "Result is not a list")
         
-        for item in response['response']['result']:
+        for item __ response['response']['result']:
 			aI..("exchange", item, 'missing exchange')
 			aI..("name", item, 'missing name')
 			aI..("symbol", item, 'missing symbol')
@@ -61,7 +61,7 @@ c_ SearchbyTitleTest?.?
         aI..("result", response['response'], 'Missing result')
         aT..(isi..(response['response']['result'], list), "Result is not a list")
         
-        for item in response['response']['result']:
+        for item __ response['response']['result']:
 			aI..("exchange", item, 'missing exchange')
 			aI..("name", item, 'missing name')
 			aI..("symbol", item, 'missing symbol')
@@ -82,8 +82,8 @@ c_ GetTagArticlesTest?.?
         aI..("result", response['response'], 'Missing result')
         aT..(isi..(response['response']['result'], list), "Result is not a list")
         
-        for articles in response['response']['result']:
-            for item in articles['articles']:
+        for articles __ response['response']['result']:
+            for item __ articles['articles']:
                 aI..("checksum", item, 'checksum')
                 aI..("created", item, 'missing created')
                 aI..("html", item, 'missing html')
@@ -109,7 +109,7 @@ c_ MarketMoversTest?.?
         aI..("result", response['response'], 'Missing result')
         aT..(isi..(response['response']['result'], list), "Result is not a list")
         
-        for item in response['response']['result']:
+        for item __ response['response']['result']:
 			aI..("c", item, 'missin c')
 			aI..("in", item, 'missing in')
 			aI..("lu", item, 'missing lu')
@@ -135,21 +135,21 @@ c_ GetChartDataTest?.?
         aI..("result", response['response'], 'Missing result')
         aT..(isi..(response['response']['result'], dict), "Result is not a list")
         assertEquals(u'success', response['response']['status']['message'], 'no success message')
-        for item in response['response']['result']['5yr']:
+        for item __ response['response']['result']['5yr']:
             aI..("label", item, 'missin label')
             aI..("time", item, 'missing time')
             aI..("volume", item, 'missing volume')
             aI..("x", item, 'missing x')
             aI..("y", item, 'missing y')
             
-        for item in response['response']['result']['today']:
+        for item __ response['response']['result']['today']:
             aI..("label", item, 'missin label')
             aI..("time", item, 'missing time')
             aI..("volume", item, 'missing volume')
             aI..("x", item, 'missing x')
             aI..("y", item, 'missing y')
             
-        for item in response['response']['result']['1yr']:
+        for item __ response['response']['result']['1yr']:
             aI..("label", item, 'missin label')
             aI..("time", item, 'missing time')
             aI..("volume", item, 'missing volume')

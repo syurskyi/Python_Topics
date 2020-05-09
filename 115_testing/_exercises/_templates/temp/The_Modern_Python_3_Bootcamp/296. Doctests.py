@@ -25,7 +25,7 @@ ___ double(values
 		...
 	TypeError: unsupported operand type(s) for *: 'int' and 'NoneType'
 	"""
-    r_ [2 * element for element in values]
+    r_ [2 * element for element __ values]
 
 # Doctests can only compare to single quoted strings
 
@@ -51,4 +51,4 @@ ___ make_dict(keys
 	>>> make_dict(['a','b'])
 	{'b': True, 'a': True}
 	"""
-	r_ {key: T.. for key in keys}
+	r_ {key: T.. for key __ keys}

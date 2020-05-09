@@ -8,5 +8,5 @@ c_ Prescription:
         days_supply _ days_supply
         
     ___ days_taken
-        all_days _ [dispense_date + timedelta(days_i) for i in range(days_supply)]
+        all_days _ [dispense_date + timedelta(days_i) for i __ range(days_supply)]
         r_ all_days #[day for day in all_days if day < date.today()]
