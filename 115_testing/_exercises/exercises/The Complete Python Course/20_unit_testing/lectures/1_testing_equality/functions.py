@@ -1,5 +1,5 @@
-# f__ ty... ______ U...
-#
-#
-# ___ divide(dividend U.. in., fl.., divisor U... in. fl..
-#     r_ d... / di...
+from typing import Union
+
+
+def divide(dividend: Union[int, float], divisor: Union[int, float]):
+    return dividend / divisor
