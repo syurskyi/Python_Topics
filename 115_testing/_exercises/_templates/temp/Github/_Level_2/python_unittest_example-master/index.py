@@ -112,9 +112,9 @@ ___ parse_file(input_file
 		contact _ parse_lines(data_list)
 
 		__ contact __ no. None:
-			entries.append(contact)
+			entries.a..(contact)
 		else:
-			errors.append(idx)
+			errors.a..(idx)
 
 	sorted_entries _ sorted(entries, key_lambda x:
 					(x['lastname'], x['firstname']))

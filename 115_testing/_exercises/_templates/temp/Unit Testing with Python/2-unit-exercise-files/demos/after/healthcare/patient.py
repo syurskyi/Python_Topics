@@ -4,7 +4,7 @@ c_ Patient:
         prescriptions _ prescriptions o. []
     
     ___ add_prescription  prescription
-        prescriptions.append(prescription)
+        prescriptions.a..(prescription)
         
     ___ days_taking  medicine_name
         prescriptions _ filter(lambda p: p.name __ medicine_name, prescriptions)

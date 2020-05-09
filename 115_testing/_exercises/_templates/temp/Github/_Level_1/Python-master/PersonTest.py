@@ -23,13 +23,13 @@ c_ Test?.?
             # initialize a name
             name _ 'name' + st.(i)
             # store the name into the list variable
-            user_name.append(name)
+            user_name.a..(name)
             # get the user id obtained from the function
             user_id _ person.set_name(name)
             # check if the obtained user id is null or not
             assertIsNotNone(user_id)  # null user id will fail the test
             # store the user id to the list
-            user_id.append(user_id)
+            user_id.a..(user_id)
         print("user_id length = ", len(user_id))
         print(user_id)
         print("user_name length = ", len(user_name))

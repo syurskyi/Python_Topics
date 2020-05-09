@@ -82,8 +82,8 @@ c_ List:
         lst _ []
         lstguid _ []
 
-    ___ append  obj
-        lst.append(obj)
+    ___ a..  obj
+        lst.a..(obj)
 
     ___ sort
         lst _ sorted(lst, key_cmpFn)
@@ -160,7 +160,7 @@ ___ read_csv(file_name
             for row in reader:
                 product _ Product(row['GEO'], row['DGUID'], row['Food categories'], row['Commodity'])
                 print (product)
-                lst.append(product)
+                lst.a..(product)
 
     except:
         print ('read_csv failed')

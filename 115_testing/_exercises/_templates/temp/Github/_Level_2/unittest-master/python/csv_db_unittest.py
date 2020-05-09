@@ -23,9 +23,9 @@ c_ TestList?.?
 
     ___ testList
         lst _ List()
-        lst.append(Product("Canada", "3333", "Food", "AAA"))
-        lst.append(Product("Canada", "5555", "Food", "AAA"))
-        lst.append(Product("Canada", "8888", "Food", "AAA"))
+        lst.a..(Product("Canada", "3333", "Food", "AAA"))
+        lst.a..(Product("Canada", "5555", "Food", "AAA"))
+        lst.a..(Product("Canada", "8888", "Food", "AAA"))
         lst.sort()
         aE..(lst.find("5555"), 1)
 
@@ -97,8 +97,8 @@ c_ List:
         lst _ []
         lstguid _ []
 
-    ___ append  obj
-        lst.append(obj)
+    ___ a..  obj
+        lst.a..(obj)
 
     ___ sort
         lst _ sorted(lst, key_cmpFn)
@@ -171,7 +171,7 @@ ___ read_csv(file_name
             for row in reader:
                 product _ Product(row['GEO'], row['DGUID'], row['Food categories'], row['Commodity'])
                 # print (product)
-                lst.append(product)
+                lst.a..(product)
 
     except:
         print ('read_csv failed')

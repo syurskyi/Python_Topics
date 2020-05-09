@@ -95,10 +95,10 @@ c_ LinkedList (object
 		dataList _ []
 		thisNode _ root
 		__ (root __ None
-			dataList.append(None)
+			dataList.a..(None)
 			r_ dataList
 		while (thisNode
-			dataList.append(thisNode.getData())
+			dataList.a..(thisNode.getData())
 			thisNode _ thisNode.getNextNode()
 		
 		r_ dataList

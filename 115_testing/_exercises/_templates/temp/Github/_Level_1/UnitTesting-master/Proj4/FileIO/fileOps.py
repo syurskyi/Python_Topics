@@ -38,7 +38,7 @@ cars _ list()
 w__ o..(infile) __ f1:
     for line in f1:
         row _ line.split(",")
-        cars.append(row)
+        cars.a..(row)
     print(cars[0][0])
 
 print("\n**********************")

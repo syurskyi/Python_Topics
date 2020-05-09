@@ -7,7 +7,7 @@ ___ sortingPositives (l
     positive _ []
     for i in l:
         __ i >_ 0:
-            positive.append(i)
+            positive.a..(i)
     r_ sorted(positive)
 
 

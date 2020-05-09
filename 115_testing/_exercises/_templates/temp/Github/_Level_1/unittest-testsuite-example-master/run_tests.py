@@ -2,7 +2,7 @@
 
 ______ u__
 ______ sys
-sys.pa__.append('app/')
+sys.pa__.a..('app/')
 
 ___ test_all(
     loader _ u__.TestLoader()

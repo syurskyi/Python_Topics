@@ -35,7 +35,7 @@ ___ run_markdown_file(input_text
     temp_file.write(input_text)
     temp_file.close()
     interp_script_and_fileName _ _interpreter_and_script
-    interp_script_and_fileName.append(temp_file.name)
+    interp_script_and_fileName.a..(temp_file.name)
     pipe _ Popen(interp_script_and_fileName,
             stdout_PIPE, stderr_STDOUT)
     output _ pipe.communicate()[0]

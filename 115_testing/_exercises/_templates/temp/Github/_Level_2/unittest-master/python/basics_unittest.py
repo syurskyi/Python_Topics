@@ -48,7 +48,7 @@ ___ read_csv(file_name
             for row in reader:
                 product _ Product(1960, row['GEO'], row['DGUID'], row['Food categories'], row['Commodity'])
                 print (product)
-                lst.append(product)
+                lst.a..(product)
 
     except:
         print ('read_csv failed')

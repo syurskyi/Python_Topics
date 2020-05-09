@@ -34,7 +34,7 @@ c_ Parser(
                 p..
             else:
                 L[-1] _ L[-1].rstrip()
-                SOURCE.append(L)
+                SOURCE.a..(L)
                 qty +_ 1
 
         print('Извлечено ' + st.(qty) + ' строк из ' + st.(allines))
@@ -52,7 +52,7 @@ c_ Parser(
 
         for head in heads:
             __ head in source[0]:
-                number.append(source[0].index(head))
+                number.a..(source[0].index(head))
 
         r_ number
 
@@ -90,7 +90,7 @@ c_ Parser(
             __ elem[index] in keyname:
                 p..
             else:
-                keyname.append(elem[index])
+                keyname.a..(elem[index])
 
         r_ keyname
 
@@ -118,7 +118,7 @@ c_ Parser(
 
         for name in keyname:
             for num in data_pos[1:]:
-                DATAS[name].append( \
+                DATAS[name].a..( \
                     tuple( \
                         sorted([x[num] for x in SOURCE __ x[data_pos[0]] __ name])))
 
@@ -259,7 +259,7 @@ c_ Statistics:
                 fdict[number][0] +_ 1
 
         for key in fdict:
-            fdict[key].append(f..(fdict[key][0] / lendata * 100, '.2f'))
+            fdict[key].a..(f..(fdict[key][0] / lendata * 100, '.2f'))
 
         rkeys _ list(reversed([x for x in fdict.keys()]))
 
@@ -267,7 +267,7 @@ c_ Statistics:
             sum _ 0
             for key in rkeys:
                 sum +_ fdict[key][0]
-            fdict[rkeys[0]].append(f..(sum / lendata * 100, '.2f'))
+            fdict[rkeys[0]].a..(f..(sum / lendata * 100, '.2f'))
             rkeys _ rkeys[1:]
 
         r_ fdict
@@ -295,7 +295,7 @@ c_ StatsResult(Statistics
             D[key] _ []
             for data in datas[key]:
                 data _ tuple(sorted(data)) # for not sorted Source_data
-                D[key].append(tuple(x() for x in list_funcs))
+                D[key].a..(tuple(x() for x in list_funcs))
 
         r_ D
 

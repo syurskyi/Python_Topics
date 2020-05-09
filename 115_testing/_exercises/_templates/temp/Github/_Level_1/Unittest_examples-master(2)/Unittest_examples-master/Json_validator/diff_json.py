@@ -99,8 +99,8 @@ c_ JsonDiffHandler(object
     ___ save_difference  diff_message, type_
         """Метод, сохраняющий результ сравнения (ТИП сообщения, СОДЕРЖИМОЕ сообщения)"""
         __ diff_message no. in difference:
-            seen.append(diff_message)
-            difference.append((type_, diff_message))
+            seen.a..(diff_message)
+            difference.a..((type_, diff_message))
 
 
 ___ assert_json(test_json, ethalon_json
@@ -115,9 +115,9 @@ ___ assert_json(test_json, ethalon_json
         newType _ 'CHANGED_VALUE'
         __ type __ PATH:
             newType _ 'REMOVED_SECTION'
-        diffs.append({'type': newType, 'message': message})
+        diffs.a..({'type': newType, 'message': message})
     for type, message in diff2:
-        diffs.append({'type': 'ADDED_SECTION', 'message': message})
+        diffs.a..({'type': 'ADDED_SECTION', 'message': message})
     r_ diffs
 
 

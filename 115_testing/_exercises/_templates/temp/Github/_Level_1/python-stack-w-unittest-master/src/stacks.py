@@ -8,7 +8,7 @@ c_ Stack(object
         r_ stack __ []
 
     ___ push  data
-        stack.append(data)
+        stack.a..(data)
 
     ___ pop
         __ is_empty(

@@ -22,8 +22,8 @@ c_ HtmlPagesConverter:
                 line _ line.rstrip()
                 __ "PAGE_BREAK" in line:
                     page_break_position _ f.tell()
-                    breaks.append(f.tell())
-            breaks.append(f.tell())                
+                    breaks.a..(f.tell())
+            breaks.a..(f.tell())
 
     ___ get_html_page  page
         """Return html page with the given number (zero indexed)"""

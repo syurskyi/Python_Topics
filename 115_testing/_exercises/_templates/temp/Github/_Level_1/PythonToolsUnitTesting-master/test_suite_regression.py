@@ -10,9 +10,9 @@ ______ getting_size_of_linkedlist_unittest
   
 #Load all the test cases
 suiteList _ []
-suiteList.append(u__.TestLoader().loadTestsFromTestCase(add_singlenode_unittest.SingleNodeInsertionTest))
-suiteList.append(u__.TestLoader().loadTestsFromTestCase(deleting_nodes_unittest.NodesDeleteTest))
-suiteList.append(u__.TestLoader().loadTestsFromTestCase(getting_size_of_linkedlist_unittest.SizeOfLinkedList))
+suiteList.a..(u__.TestLoader().loadTestsFromTestCase(add_singlenode_unittest.SingleNodeInsertionTest))
+suiteList.a..(u__.TestLoader().loadTestsFromTestCase(deleting_nodes_unittest.NodesDeleteTest))
+suiteList.a..(u__.TestLoader().loadTestsFromTestCase(getting_size_of_linkedlist_unittest.SizeOfLinkedList))
 
 #Join the test and running them
 comboSuite _ u__.TestSuite(suiteList)

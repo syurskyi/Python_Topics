@@ -3,7 +3,7 @@ c_ Person:
     name _ []
 
     ___ set_name  user_name
-        name.append(user_name)
+        name.a..(user_name)
         r_ len(name) - 1
 
     ___ get_name  user_id
