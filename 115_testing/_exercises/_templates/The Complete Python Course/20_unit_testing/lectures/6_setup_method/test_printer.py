@@ -2,9 +2,9 @@
 # f___ u___ _______ T...
 #
 #
-# c_ TestPrinter T..
-#     ___ setUp ____
-#         ____.printer _ P_ pages_per_s=2.0, capacity=300
+# c_ TestPrinter ?
+#     ___ setUp
+#         printer _ P_ pages_per_s=2.0, capacity=300
 #
-#     ___ test_print_within_capacity ____
-#         ____.printer.print 25
+#     ___ test_print_within_capacity
+#         printer.print 25
