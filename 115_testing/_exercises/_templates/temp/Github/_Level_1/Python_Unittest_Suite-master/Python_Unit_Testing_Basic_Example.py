@@ -28,13 +28,13 @@
 # Here is a short script to test three string methods:
 # 
 
-______ unittest
+______ u__
 
-c_ TestStringMethods(unittest.TestCase):
+c_ TestStringMethods?.?
 
     ___ test_upper
 
-        assertEqual('foo'.upper(), 'FOO')
+        aE..('foo'.upper(), 'FOO')
 
     ___ test_isupper
         assertTrue('FOO'.isupper())
@@ -44,16 +44,16 @@ c_ TestStringMethods(unittest.TestCase):
     ___ test_split
         s _ 'hello world'
  
-        assertEqual(s.split(), ['hello', 'world'])
+        aE..(s.split(), ['hello', 'world'])
 
         # check that s.split fails when the separator is not a string
 
-        with assertRaises(TypeError):
+        with assertRaises(TypeError
             s.split(2)
 
 if __name__ == '__main__':
 
-    unittest.main()
+    u__.main()
 
 #
 # A testcase is created by subclassing unittest.TestCase.

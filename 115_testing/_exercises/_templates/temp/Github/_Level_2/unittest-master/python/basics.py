@@ -10,7 +10,7 @@ CONST_AUTHOR _ "Shubham Sachdeva"
 # REF_DATE	GEO	DGUID	Food categories	Commodity
 c_ Product:
     # initialisation
-    ___  -   year, geo, guid, category, commodity):
+    ___  -   year, geo, guid, category, commodity
         id _ 0
         year _ int(year)
         geo _ geo
@@ -23,7 +23,7 @@ c_ Product:
         r_ ("%d\t%d\t%s\t%s\t%s\t%s" % (id, year, geo, guid, category, commodity))
 
 
-___ read_csv(file_name):
+___ read_csv(file_name
     lst _ []
     try:
         with open(file_name, newline_'', encoding_'utf-8') as csvfile:
@@ -38,7 +38,7 @@ ___ read_csv(file_name):
 
     r_ lst
 
-___ main():
+___ main(
     lst _ read_csv('input.csv')
     n _ len(lst)
     print ('Number of records: ', n)

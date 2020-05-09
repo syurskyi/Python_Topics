@@ -1,5 +1,5 @@
 # Example 1
-___ add_positive_numbers(x, y):
+___ add_positive_numbers(x, y
     assert x > 0 and y > 0, "Both numbers must be positive!"
     r_ x + y
 
@@ -10,7 +10,7 @@ add_positive_numbers(1, -1)  # AssertionError: Both numbers must be positive!
 # Example 2
 
 
-___ eat_junk(food):
+___ eat_junk(food
     assert food in [
         "pizza",
         "ice cream",

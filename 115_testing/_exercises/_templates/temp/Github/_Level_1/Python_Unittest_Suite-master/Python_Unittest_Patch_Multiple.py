@@ -24,7 +24,7 @@ other _ object()
 
 @patch.multiple('__main__', thing_DEFAULT, other_DEFAULT)
 
-    ___ test_function(thing, other):
+    ___ test_function(thing, other
         assert isinstance(thing, MagicMock)
         assert isinstance(other, MagicMock)
 
@@ -37,7 +37,7 @@ test_function()
 @patch('sys.exit')
 @patch.multiple('__main__', thing_DEFAULT, other_DEFAULT)
 
-___ test_function(mock_exit, other, thing):
+___ test_function(mock_exit, other, thing
         assert 'other' in repr(other)
         assert 'thing' in repr(thing)
 

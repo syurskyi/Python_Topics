@@ -1,4 +1,4 @@
-___ factorial(n):
+___ factorial(n
     """Return the factorial of n, an exact integer >= 0.
 
     If the result is small enough to fit in an int, return an int.

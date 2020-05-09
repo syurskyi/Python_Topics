@@ -1,9 +1,9 @@
-______ unittest
+______ u__
 
 ____ phonebook ______ PhoneBook
 
 
-c_ PhoneBookTest(unittest.TestCase):
+c_ PhoneBookTest?.?
 
     # setUp method is inherited from TestCase super class and called BEFORE each test method
     ___ setUp(self) -> None:
@@ -25,13 +25,13 @@ c_ PhoneBookTest(unittest.TestCase):
         number _ phonebook.lookup("Bob")
         # check that the name i've looked up is associated to the number
         # first value is value were checking against, second argument is actual value from unit test
-        assertEqual("12345", number)
+        aE..("12345", number)
 
     ___ test_missing_name
         # assertRaises ensures everything in with context manager will throw a KeyError exception
         # KeyError is raised whenever a dictionary object is requested and the key is not present
         # In our case the name Giles was not present in the phonbook
-        with assertRaises(KeyError):
+        with assertRaises(KeyError
             phonebook.lookup("Giles")
 
     # annotation to skip a unittest

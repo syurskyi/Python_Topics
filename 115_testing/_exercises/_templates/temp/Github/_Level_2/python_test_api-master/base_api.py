@@ -1,4 +1,4 @@
-______ unittest
+______ u__
 ______ requests
 ______ xmltodict
 ____ yaml ______ load
@@ -6,7 +6,7 @@ ______ lxml
 ____ lxml ______ etree
 
 
-c_ BaseApi(unittest.TestCase):
+c_ BaseApi?.?
 
     ___ setUp
         settings _ load(open('conf.yaml').read())
@@ -60,19 +60,19 @@ c_ BaseApi(unittest.TestCase):
 
     # Logging functions
 
-    ___ log  logger, r):
+    ___ log  logger, r
         logger _ logger
         r _ r
 
         logger.debug('============================')
-        logger.debug('Request URL is: ' + str(r.request.url))
-        logger.debug('Request Headers are: ' + str(r.request.headers))
-        logger.debug('Request Body is: ' + str(r.request.body))
+        logger.debug('Request URL is: ' + st.(r.request.url))
+        logger.debug('Request Headers are: ' + st.(r.request.headers))
+        logger.debug('Request Body is: ' + st.(r.request.body))
         logger.debug('============================')
-        logger.debug('Response Headers are: ' + str(r.headers))
+        logger.debug('Response Headers are: ' + st.(r.headers))
         logger.debug('Response body is: ' + r.text)
 
-    ___ log_full  r):
+    ___ log_full  r
         req _ r.request
         """
         At this point it is completely built and ready
@@ -114,9 +114,9 @@ c_ BaseApi(unittest.TestCase):
         if content_type:
             assertEquals(r.headers['Content-Type'], content_type)
         else:
-            assertEqual(r.headers['Content-Type'], content_type)
+            aE..(r.headers['Content-Type'], content_type)
 
-    ___ validate_xml  r, schema_file):
+    ___ validate_xml  r, schema_file
         try:
             # Get the XML schema to validate against
             schema _ lxml.etree.XMLSchema(file_schema_file)
@@ -148,12 +148,12 @@ c_ BaseApi(unittest.TestCase):
                 for error in schema.error_log:
                     # All the error properties (from libxml2) describing what went wrong
                     print 'domain_name: ' + error.domain_name
-                    print 'domain: ' + str(error.domain)
+                    print 'domain: ' + st.(error.domain)
                     print 'filename: ' + error.filename  # '<string>' cos var is a string of xml
-                    print 'level: ' + str(error.level)
+                    print 'level: ' + st.(error.level)
                     print 'level_name: ' + error.level_name  # an integer
-                    print 'line: ' + str(error.line)  # a unicode string that identifies the line where the error occurred.
+                    print 'line: ' + st.(error.line)  # a unicode string that identifies the line where the error occurred.
                     print 'message: ' + error.message  # a unicode string that lists the message.
-                    print 'type: ' + str(error.type)  # an integer
+                    print 'type: ' + st.(error.type)  # an integer
                     print 'type_name: ' + error.type_name
             assert False, "Test failed due to XSD validation error" # otherwise test is marked as passed even when schema failed validation

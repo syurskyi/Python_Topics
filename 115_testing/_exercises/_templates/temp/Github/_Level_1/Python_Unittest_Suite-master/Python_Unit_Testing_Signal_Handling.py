@@ -56,7 +56,7 @@
 # temporarily remove the handler while the test is being executed:
  
 
-@unittest.removeHandler
+@u__.removeHandler
 
 ___ test_signal_handling
 

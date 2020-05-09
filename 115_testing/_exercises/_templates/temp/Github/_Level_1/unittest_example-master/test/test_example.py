@@ -1,4 +1,4 @@
-______ unittest
+______ u__
 
 # from typing ______ ...
 
@@ -29,7 +29,7 @@ ___ tearDownModule() -> None:
 
 # Test class
 # ------------------------------------------------------------
-c_ TestClassExample(unittest.TestCase):
+c_ TestClassExample?.?
 
     # Class-level fixtures. Require the classmethod decorator
     # -----------------------------------------------------------
@@ -60,15 +60,15 @@ c_ TestClassExample(unittest.TestCase):
     # Test cases
     ___ test_case01
         print(id())  # Print module, class and method name, to ease test output analysis
-        assertEqual(True, False)
+        aE..(True, False)
 
     ___ test_case02
         print(id())
-        assertEqual(True, True)
+        aE..(True, True)
 
     ___ test_case03
         print(id())
         assertNotEqual(True, False)
 
 if __name__ == '__main__':
-    unittest.main()
+    u__.main()

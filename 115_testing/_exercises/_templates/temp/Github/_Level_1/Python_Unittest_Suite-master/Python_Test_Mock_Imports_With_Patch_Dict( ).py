@@ -30,7 +30,7 @@
 
 mock _ Mock()
 
-with patch.dict('sys.modules', {'fooble': mock}):
+with patch.dict('sys.modules', {'fooble': mock}
        ______ fooble
 
        fooble.blob()
@@ -49,7 +49,7 @@ mock.blob.assert_called_once_with()
 
 mock _ Mock()
 
-with patch.dict('sys.modules', {'fooble': mock}):
+with patch.dict('sys.modules', {'fooble': mock}
        ____ fooble ______ blob
 
        blob.blip()
@@ -65,7 +65,7 @@ mock.blob.blip.assert_called_once_with()
 mock _ Mock()
 modules _ {'package': mock, 'package.module': mock.module}
 
-with patch.dict('sys.modules', modules):
+with patch.dict('sys.modules', modules
         ____ package.module ______ fooble
 
         fooble()

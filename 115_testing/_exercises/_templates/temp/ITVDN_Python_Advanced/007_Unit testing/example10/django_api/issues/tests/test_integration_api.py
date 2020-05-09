@@ -4,7 +4,7 @@ ____ django.urls ______ reverse
 ____ rest_framework ______ status
 
 
-c_ AuthApiTestCase(TestCase):
+c_ AuthApiTestCase(TestCase
 
     ___ setUp
         username _ 'test'
@@ -70,5 +70,5 @@ c_ AuthApiTestCase(TestCase):
         error_keys _ list(response.data.keys())
         assertListEqual(['non_field_errors'], error_keys)
         assertListEqual(['non_field_errors'], error_keys)
-        assertEqual(response.data['non_field_errors'][0],
+        aE..(response.data['non_field_errors'][0],
                          'Incorrect username/password')

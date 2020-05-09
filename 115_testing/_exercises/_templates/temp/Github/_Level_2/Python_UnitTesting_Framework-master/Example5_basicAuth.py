@@ -1,13 +1,13 @@
 ____ selenium ______ webdriver
-______ unittest
+______ u__
 ______ requests
 
 
 
-c_ Auth(unittest.TestCase):
+c_ Auth?.?
 
     @classmethod
-    ___ setUpClass(cls):
+    ___ setUpClass(cls
         global driver
         driver _ webdriver.Chrome()
         driver.get("http://the-internet.herokuapp.com/")
@@ -24,10 +24,10 @@ c_ Auth(unittest.TestCase):
             print(link.get_attribute('href'), r.status_code)
 
     @classmethod
-    ___ tearDownClass(cls):
+    ___ tearDownClass(cls
         # driver.quit()
         print("Close Application")
 
 
 if __name__ == '__main__':
-    unittest.main()
+    u__.main()

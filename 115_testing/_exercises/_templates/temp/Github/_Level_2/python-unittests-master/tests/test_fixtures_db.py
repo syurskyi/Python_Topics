@@ -1,10 +1,10 @@
 ______ sqlite3
-______ unittest
+______ u__
 
 ____ app ______ app_with_db
 
 
-c_ AppWithDBTests(unittest.TestCase):
+c_ AppWithDBTests?.?
 
     ___ setUp
         conn _ sqlite3.connect(":memory:")

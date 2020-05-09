@@ -10,13 +10,13 @@ c_ Testadd2num:
 		assert add2num(-10,5) == -5
 
 	___ test_using_raises
-		with pytest.raises(TypeError):
+		with pytest.raises(TypeError
 			add2num(2, '3') == 5
 
 
 a _ {'a':1, 'b':2}
 
-for k,v in a.items():
+for k,v in a.items(
 	print(k)
 	print(v)
 

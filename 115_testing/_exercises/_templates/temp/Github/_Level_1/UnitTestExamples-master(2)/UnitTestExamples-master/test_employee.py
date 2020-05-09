@@ -1,10 +1,10 @@
-______ unittest
+______ u__
 ____ employee ______ Employee
 
-c_ TestEmployee(unittest.TestCase):
+c_ TestEmployee?.?
 
 	@classmethod
-	___ setUpClass(cls):
+	___ setUpClass(cls
 		print('setupClass')
 
 	"""
@@ -14,7 +14,7 @@ c_ TestEmployee(unittest.TestCase):
 	"""
 
 	@classmethod
-	___ tearDownClass(cls):
+	___ tearDownClass(cls
 		print('teardownClass')
 
 	___ setUp
@@ -37,41 +37,41 @@ c_ TestEmployee(unittest.TestCase):
 	#	emp_1 = Employee('Alex', 'Apple', 200000)
 	#	emp_2 = Employee('Barry', 'Banana', 100000)
 
-		assertEqual(emp_1.email, 'Alex.Apple@email.com')
-		assertEqual(emp_2.email, 'Barry.Banana@email.com')
+		aE..(emp_1.email, 'Alex.Apple@email.com')
+		aE..(emp_2.email, 'Barry.Banana@email.com')
 
 		emp_1.first _ 'Cathy'
 		emp_2.first _ 'David'
 
-		assertEqual(emp_1.email, 'Cathy.Apple@email.com')
-		assertEqual(emp_2.email, 'David.Banana@email.com')
+		aE..(emp_1.email, 'Cathy.Apple@email.com')
+		aE..(emp_2.email, 'David.Banana@email.com')
 
 	___ test_fullname
 	#	emp_1 = Employee('Alex', 'Apple', 200000)
 	#	emp_2 = Employee('Barry', 'Banana', 100000)
 
-		assertEqual(emp_1.fullname, 'Alex Apple')
-		assertEqual(emp_2.fullname, 'Barry Banana')
+		aE..(emp_1.fullname, 'Alex Apple')
+		aE..(emp_2.fullname, 'Barry Banana')
 
 		emp_1.first _ 'Cathy'
 		emp_2.first _ 'David'
 
-		assertEqual(emp_1.fullname, 'Cathy Apple')
-		assertEqual(emp_2.fullname, 'David Banana')
+		aE..(emp_1.fullname, 'Cathy Apple')
+		aE..(emp_2.fullname, 'David Banana')
 
 	___ test_apply_raise
 	#	emp_1 = Employee('Alex', 'Apple', 200000)
 	#	emp_2 = Employee('Barry', 'Banana', 100000)
 
-		assertEqual(emp_1.fullname, 'Alex Apple')
-		assertEqual(emp_2.fullname, 'Barry Banana')
+		aE..(emp_1.fullname, 'Alex Apple')
+		aE..(emp_2.fullname, 'Barry Banana')
 
 		emp_1.apply_raise()
 		emp_2.apply_raise()
 
-		assertEqual(emp_1.pay, 210000)
-		assertEqual(emp_2.pay, 105000)
+		aE..(emp_1.pay, 210000)
+		aE..(emp_2.pay, 105000)
 
 
 if __name__ == '__main__':
-	unittest.main()
+	u__.main()

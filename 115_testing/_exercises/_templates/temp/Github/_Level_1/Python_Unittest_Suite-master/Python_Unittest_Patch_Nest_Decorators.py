@@ -25,7 +25,7 @@
 @patch.object(SomeClass, 'class_method')
 @patch.object(SomeClass, 'static_method')
 
-___ test(mock1, mock2):
+___ test(mock1, mock2
         assert SomeClass.static_method is mock1
         assert SomeClass.class_method is mock2
 

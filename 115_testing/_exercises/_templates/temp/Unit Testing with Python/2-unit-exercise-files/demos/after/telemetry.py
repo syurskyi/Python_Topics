@@ -11,10 +11,10 @@ c_ TelemetryDiagnosticControls:
         diagnostic_info _ ""
         diagnostic_info _ fetch_diagnostic_info(telemetry_client)
 
-    ___ reconnect  address):
+    ___ reconnect  address
         telemetry_client.disconnect()
         retryLeft _ 3
-        while ((not telemetry_client.online_status) and retryLeft > 0):
+        while ((not telemetry_client.online_status) and retryLeft > 0
             telemetry_client.connect(address)
             retryLeft -_ 1
 
@@ -22,7 +22,7 @@ c_ TelemetryDiagnosticControls:
             raise Exception("Unable to connect.")
         r_ telemetry_client
 
-    ___ fetch_diagnostic_info  connected_client):
+    ___ fetch_diagnostic_info  connected_client
         connected_client.send(TelemetryClient.DIAGNOSTIC_MESSAGE)
         if not telemetry_client.online_status:
             raise Exception("Unable to connect.")
@@ -30,14 +30,14 @@ c_ TelemetryDiagnosticControls:
 
 
 
-c_ TelemetryClient(object):
+c_ TelemetryClient(object
     DIAGNOSTIC_MESSAGE _ "AT#UD"
 
     ___  -
         online_status _ False
         _diagnostic_message_result _ ""
 
-    ___ connect  telemetry_server_connection_string):
+    ___ connect  telemetry_server_connection_string
         if not telemetry_server_connection_string:
             raise Exception()
 
@@ -48,7 +48,7 @@ c_ TelemetryClient(object):
     ___ disconnect
         online_status _ False
 
-    ___ send  message):
+    ___ send  message
         if not message:
             raise Exception()
 
@@ -79,7 +79,7 @@ Remote Rtrn Count........... 00"""
             message _ ""
             messageLength _ random.randint(0, 50) + 60
             i _ messageLength
-            while(i >_ 0):
+            while(i >_ 0
                 message +_ chr((random.randint(0, 40) + 86))
                 i -_ 1
         else:

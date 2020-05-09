@@ -31,13 +31,13 @@ c_ TestFuncAcceptsSequencesMixin:
     ___ test_func
         func(arg)
 
-c_ AcceptLists(TestFuncAcceptsSequencesMixin, unittest.TestCase):
+c_ AcceptLists(TestFuncAcceptsSequencesMixin, u__.TestCase
     arg _ [1, 2, 3]
 
-c_ AcceptStrings(TestFuncAcceptsSequencesMixin, unittest.TestCase):
+c_ AcceptStrings(TestFuncAcceptsSequencesMixin, u__.TestCase
     arg _ 'abc'
 
-c_ AcceptTuples(TestFuncAcceptsSequencesMixin, unittest.TestCase):
+c_ AcceptTuples(TestFuncAcceptsSequencesMixin, u__.TestCase
     arg _ (1, 2, 3)
  
 

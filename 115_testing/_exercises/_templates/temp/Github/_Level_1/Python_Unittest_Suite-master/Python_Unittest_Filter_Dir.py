@@ -42,7 +42,7 @@ dir(Mock(spec_request))
 # If you dislike this behaviour you can switch it off by setting the module level switch FILTER_DIR:
 # 
 
-____ unittest ______ mock
+____ u__ ______ mock
 
 mock.FILTER_DIR _ False
       dir(mock.Mock())

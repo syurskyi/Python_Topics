@@ -1,4 +1,4 @@
-___ tennis_score(p1points, p2points):
+___ tennis_score(p1points, p2points
     game _ TennisGame("Player 1", "Player 2")
     game.p1points _ p1points
     game.p2points _ p2points
@@ -6,7 +6,7 @@ ___ tennis_score(p1points, p2points):
 
 c_ TennisGame:
 
-    ___  -   player1Name, player2Name):
+    ___  -   player1Name, player2Name
         player1Name _ player1Name
         player2Name _ player2Name
         p1points _ 0
@@ -15,25 +15,25 @@ c_ TennisGame:
     ___ score
         result _ ""
         tempScore_0
-        if (p1points==p2points):
+        if (p1points==p2points
             result _ {
                 0 : "Love-All",
                 1 : "Fifteen-All",
                 2 : "Thirty-All",
             }.get(p1points, "Deuce")
-        elif (p1points>_4 o. p2points>_4):
+        elif (p1points>_4 o. p2points>_4
             minusResult _ p1points-p2points
-            if (minusResult==1):
+            if (minusResult==1
                 result _"Advantage " + player1Name
-            elif (minusResult ==-1):
+            elif (minusResult ==-1
                 result _"Advantage " + player2Name
-            elif (minusResult>_2):
+            elif (minusResult>_2
                 result _ "Win for " + player1Name
             else:
                 result _"Win for " + player2Name
         else:
-            for i in range(1,3):
-                if (i==1):
+            for i in range(1,3
+                if (i==1
                     tempScore _ p1points
                 else:
                     result+_"-"
@@ -46,7 +46,7 @@ c_ TennisGame:
                 }[tempScore]
         r_ result
 
-        ___ won_point  playerName): # pragma: no cover
+        ___ won_point  playerName # pragma: no cover
             if playerName == player1Name:
                 p1points +_ 1
             else:

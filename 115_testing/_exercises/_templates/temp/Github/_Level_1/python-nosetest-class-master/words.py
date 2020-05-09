@@ -1,6 +1,6 @@
 ____ collections ______ defaultdict
 _punct _ '.,;?:'
-___ _normalize(fragment):
+___ _normalize(fragment
     fragment _ fragment.lower()
     while len(fragment) > 0 and fragment[-1] in _punct:
         fragment _ fragment[:-1]
@@ -8,7 +8,7 @@ ___ _normalize(fragment):
         fragment _ fragment[1:]
     r_ fragment
 
-___ numwords(text):
+___ numwords(text
     '''
     Return the number of unique words in a body of text.
 
@@ -18,21 +18,21 @@ ___ numwords(text):
     words.discard("")
     r_ len(words)
 
-___ wordcounts(text):
+___ wordcounts(text
     '''
     Return dictionary mapping words to the number of occurences.
 
     Case is ignored, so each key is the lowercase version of the word.
     '''
     counts _ defaultdict(int)
-    for fragment in text.split():
+    for fragment in text.split(
         word _ _normalize(fragment)
         if word == '':
             continue
         counts[word] +_ 1
     r_ dict(counts)
 
-___ addcounts(existing, new):
+___ addcounts(existing, new
     '''
     Updates an existing word count dictionary, adding in new values.
 
@@ -49,6 +49,6 @@ ___ addcounts(existing, new):
         raise ValueError('existing must be a dictionary')
     if not type(new) is dict:
         raise ValueError('new must be a dictionary')
-    for word, count in new.viewitems():
+    for word, count in new.viewitems(
         newcount _ count + existing.get(word, 0)
         existing[word] _ newcount

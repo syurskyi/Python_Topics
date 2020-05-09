@@ -51,4 +51,4 @@ with open(outfile, 'a') as f2:
 # print out whole line to file
 with open(outfile, 'a') as f2:
     for car in cars:
-        f2.write(str(car) + "\n")
+        f2.write(st.(car) + "\n")

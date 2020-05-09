@@ -1,22 +1,22 @@
 ____ hello ______ say_hello
-____ unittest.mock ______ patch
-______ unittest
+____ u__.m.. ______ patch
+______ u__
 
-c_ HelloTests(unittest.TestCase):
+c_ HelloTests?.?
     '''Testing say_hello'''
     @patch('hello.print')
-    ___ test_say_hello  mock_print):
+    ___ test_say_hello  mock_print
         # call the function
         say_hello()
         
         # Make sure it only called `print` once
-        assertEqual(mock_print.call_count ,1)
+        aE..(mock_print.call_count ,1)
         
         # getting the arguments and keyword arguments passed to the 
         # mocked function
         args, kwargs _ mock_print.call_args
 
         # Make sure it prints the correct string
-        assertEqual(args, ('Hello, World!',))
+        aE..(args, ('Hello, World!',))
 if __name__ == '__main__':
     unttest.main()

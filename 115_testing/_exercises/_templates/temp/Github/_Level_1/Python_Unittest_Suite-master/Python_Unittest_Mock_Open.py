@@ -48,7 +48,7 @@ with open('/some/path', 'w') as f:
 m _ mock_open()
 
 
-with patch('__main__.open', m):
+with patch('__main__.open', m
         with open('foo', 'w') as h:
 
             h.write('some stuff')

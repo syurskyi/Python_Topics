@@ -26,10 +26,10 @@
 # Imagine the following functions defined in �mymodule�:
 # 
 
-___ frob(val):
+___ frob(val
     pass
 
-___ grob(val):
+___ grob(val
     "First frob and then clear val"
 
     frob(val)
@@ -68,12 +68,12 @@ mock_frob.assert_called_with({6})
 # 
 
 ____ copy ______ deepcopy
-____ unittest.mock ______ Mock, patch, DEFAULT
+____ u__.m.. ______ Mock, patch, DEFAULT
 
-___ copy_call_args(mock):
+___ copy_call_args(mock
         new_mock _ Mock()
 
-        ___ side_effect(*args, **kwargs):
+        ___ side_effect(*args, **kwargs
             args _ deepcopy(args)
 
             kwargs _ deepcopy(kwargs)
@@ -110,7 +110,7 @@ new_mock.call_args
 # You can simply do the checking inside a side_effect function.
 # 
 
-___ side_effect(arg):
+___ side_effect(arg
         assert arg == {6}
 
 mock _ Mock(side_effect_side_effect)
@@ -126,8 +126,8 @@ mock(set())
 
 ____ copy ______ deepcopy
 
-    c_ CopyingMock(MagicMock):
-        ___ __call__  *args, **kwargs):
+    c_ CopyingMock(MagicMock
+        ___ __call__  *args, **kwargs
 
             args _ deepcopy(args)
 

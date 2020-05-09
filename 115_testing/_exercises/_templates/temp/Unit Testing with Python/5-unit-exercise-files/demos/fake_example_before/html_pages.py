@@ -3,7 +3,7 @@ ______ html as html_converter
 
 c_ HtmlPagesConverter:
 
-    ___  -   filename):
+    ___  -   filename
         """Read the file and note the positions of the page breaks so we can access them quickly"""
         filename _ filename
         breaks _ [0]
@@ -18,7 +18,7 @@ c_ HtmlPagesConverter:
                     breaks.append(f.tell())
             breaks.append(f.tell())                
 
-    ___ get_html_page  page):
+    ___ get_html_page  page
         """Return html page with the given number (zero indexed)"""
         page_start _ breaks[page]
         page_end _ breaks[page+1]

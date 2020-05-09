@@ -21,6 +21,6 @@
 mock _ Mock()
 mock.__str__ _ Mock(return_value_'wheeeeee')
 
-str(mock)
+st.(mock)
 
 # OUTPUT: 'wheeeeee'

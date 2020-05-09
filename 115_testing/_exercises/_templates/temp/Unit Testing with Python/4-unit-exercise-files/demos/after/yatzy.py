@@ -1,6 +1,6 @@
 ____ operator ______ itemgetter
 
-___ small_straight(dice):
+___ small_straight(dice
     """Score the given roll in the 'Small Straight' Yatzy category.
     
     Args:
@@ -31,7 +31,7 @@ ___ small_straight(dice):
         r_ 0
     
 
-___ dice_counts(dice):
+___ dice_counts(dice
     """Make a dictionary of how many of each value are in the dice
     
     >>> sorted(dice_counts([1,2,2,3,3]).items())
@@ -46,7 +46,7 @@ ___ dice_counts(dice):
     """
     r_ {x: dice.count(x) for x in range(1, 7)}    
          
-___ yatzy(dice):
+___ yatzy(dice
     """Score the given roll in the 'Yatzy' category
 
     >>> yatzy([1,1,1,1,1])
@@ -58,11 +58,11 @@ ___ yatzy(dice):
 
     """
     counts _ dice_counts(dice)
-    if 5 in counts.values():
+    if 5 in counts.values(
         r_ 50
     r_ 0
 
-___ full_house(dice):
+___ full_house(dice
     """Score the given roll in the 'Full House' category
 
     >>> full_house([1,1,2,2,2])
@@ -77,21 +77,21 @@ ___ full_house(dice):
     """
     
     counts _ dice_counts(dice)
-    if 2 in counts.values() and 3 in counts.values():
+    if 2 in counts.values() and 3 in counts.values(
         r_ sum(dice)
     r_ 0
 
-___ ones(dice):
+___ ones(dice
     """Score the given roll in the 'Ones' category"""
     r_ dice_counts(dice)[1]
     
-___ twos(dice):
+___ twos(dice
     """Score the given roll in the 'Twos' category"""
     r_ dice_counts(dice)[2]*2
 
 ALL_CATEGORIES _ [full_house, yatzy, small_straight, ones, twos]
 
-___ scores_in_categories(dice, categories_ALL_CATEGORIES):
+___ scores_in_categories(dice, categories_ALL_CATEGORIES
     """Score the dice in each category and return those with a non-zero score. 
     
     >>> scores = scores_in_categories([1,1,2,2,2])

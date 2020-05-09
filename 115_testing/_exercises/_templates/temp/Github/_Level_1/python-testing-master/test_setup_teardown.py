@@ -1,8 +1,8 @@
-______ unittest
-____ unittest ______ TestCase
+______ u__
+____ u__ ______ TestCase
 
 
-c_ TestSetUpAndTearDown(TestCase):
+c_ TestSetUpAndTearDown(TestCase
     """Showcase for a test with setUp and tearDown methods"""
 
     important_value _ None
@@ -16,9 +16,9 @@ c_ TestSetUpAndTearDown(TestCase):
         important_value _ None
 
     ___ test_value_after_setup
-        assertEqual(1337, important_value)
+        aE..(1337, important_value)
 
 
 # build in main method to run all tests in this class
 if __name__ == '__main__':
-    unittest.main()
+    u__.main()

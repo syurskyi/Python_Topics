@@ -3,12 +3,12 @@
 
 ____ nlp ______ unigramtagger
 ____ collections ______ Counter
-______ unittest
+______ u__
 ______ pickle
 ______ tempfile
 
 
-c_ UtilTest(unittest.TestCase):
+c_ UtilTest?.?
     """
     Class for the test function
     """
@@ -32,7 +32,7 @@ c_ UtilTest(unittest.TestCase):
 
         ut.train(corpus)
 
-        assertEqual(ut.model, expected_model)
+        aE..(ut.model, expected_model)
 
 
     ___ test_tag_distribution
@@ -47,8 +47,8 @@ c_ UtilTest(unittest.TestCase):
             'NOUN': 1/3
         }
 
-        assertEqual(ut.N, 3)
-        assertEqual(ut.tag_distribution, expected_distribution)
+        aE..(ut.N, 3)
+        aE..(ut.tag_distribution, expected_distribution)
 
 
     ___ test_tag
@@ -63,7 +63,7 @@ c_ UtilTest(unittest.TestCase):
         words_to_tag _ ['train']
         tagged_words _ ut.tag(words_to_tag)
 
-        assertEqual(expected_list, tagged_words)
+        aE..(expected_list, tagged_words)
 
 
     ___ test_save
@@ -84,7 +84,7 @@ c_ UtilTest(unittest.TestCase):
         ut.save(testfile.name)
         actual_data _ pickle.load(testfile)
 
-        assertEqual(expected_data, actual_data)
+        aE..(expected_data, actual_data)
 
 
     ___ test_load
@@ -108,9 +108,9 @@ c_ UtilTest(unittest.TestCase):
 
         ut.load(testfile.name)
 
-        assertEqual(expected_model,ut.model)
-        assertEqual(expected_distribution, ut.tag_distribution)
+        aE..(expected_model,ut.model)
+        aE..(expected_distribution, ut.tag_distribution)
 
 
 if __name__ == '__main__':
-        unittest.main()
+        u__.main()

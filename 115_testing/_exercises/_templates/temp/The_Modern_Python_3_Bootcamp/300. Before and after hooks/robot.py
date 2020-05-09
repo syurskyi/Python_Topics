@@ -1,5 +1,5 @@
 c_ Robot:
-	___  -   name, battery_100, skills_[]):
+	___  -   name, battery_100, skills_[]
 		name _ name
 		battery _ battery
 		skills _ skills
@@ -14,7 +14,7 @@ c_ Robot:
 			r_ f"BEEP BOOP BEEP BOOP.  I AM {name.upper()}"
 		r_ "Low power.  Please charge and try again"
 
-	___ learn_skill  new_skill, cost_to_learn):
+	___ learn_skill  new_skill, cost_to_learn
 		if battery >_ cost_to_learn:
 			battery -_ cost_to_learn
 			skills.append(new_skill)

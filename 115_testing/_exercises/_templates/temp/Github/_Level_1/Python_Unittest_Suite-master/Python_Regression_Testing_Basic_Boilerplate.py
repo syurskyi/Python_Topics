@@ -34,10 +34,10 @@
 # A basic boilerplate is often used:
 # 
 
-______ unittest
+______ u__
 ____ test ______ support
 
-c_ MyTestCase1(unittest.TestCase):
+c_ MyTestCase1?.?
 
     # Only use setUp() and tearDown() if necessary
 
@@ -63,11 +63,11 @@ c_ MyTestCase1(unittest.TestCase):
 
     # ... more test methods ...
 
-c_ MyTestCase2(unittest.TestCase):
+c_ MyTestCase2?.?
 
     # ... same structure as MyTestCase1 ...
 
 # ... more test classes ...
 
 if __name__ == '__main__':
-    unittest.main()
+    u__.main()

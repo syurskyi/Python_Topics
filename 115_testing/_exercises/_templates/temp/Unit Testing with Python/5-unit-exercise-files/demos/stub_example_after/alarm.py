@@ -1,6 +1,6 @@
 ____ sensor ______ Sensor
 
-c_ Alarm(object):
+c_ Alarm(object
 
     ___  -   sensor_N..
         _low_pressure_threshold _ 17

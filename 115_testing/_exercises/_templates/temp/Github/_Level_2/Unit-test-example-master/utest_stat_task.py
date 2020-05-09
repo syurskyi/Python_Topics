@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 #-*-coding: utf-8-*-
 
-______ unittest
+______ u__
 ____ io ______ StringIO
 ____ stat_task ______ Parser, Statistics, StatsResult
 
@@ -9,20 +9,20 @@ ____ stat_task ______ Parser, Statistics, StatsResult
 # Testing Parser
 #-------------------------------
 
-c_ ParserTest(unittest.TestCase):
+c_ ParserTest?.?
     """Parser class tests"""
 
 # SetUp for tests
 
     @classmethod
-    ___ setUpClass(cls):
+    ___ setUpClass(cls
         """Set up for class"""
         print("")
         print("................Starting Parser class tests................")
         print("")
 
     @classmethod
-    ___ tearDownClass(cls):
+    ___ tearDownClass(cls
         """Tear down for class"""
         print("")
         print("Parser class tests finished")
@@ -52,7 +52,7 @@ c_ ParserTest(unittest.TestCase):
                            '[23:23:23]\tMARKET\t\t\t2000\t200\n'
                            '\n')
 
-        assertEqual(parser.data_extr(fileobj, 5),\
+        aE..(parser.data_extr(fileobj, 5),\
                          [['TIME','EVENT','Some','Some','AVGFULL','AVGTSMR'],\
                           ['[23:23:23]','MARKET','','','1000','100'],\
                           ['[23:23:23]','LIMIT','','','1000','100'], \
@@ -61,7 +61,7 @@ c_ ParserTest(unittest.TestCase):
     ___ test_check_pos
         """Checking position test"""
         print("id: " + id())
-        assertEqual(parser.check_pos(\
+        aE..(parser.check_pos(\
             (\
                 ('Column1', 'Column2', 'EVENT', 'AVGFULL', 'AVGTSMR'),\
                 (1,2,3,4,5)\
@@ -72,12 +72,12 @@ c_ ParserTest(unittest.TestCase):
         print("id: " + id())
         data _ [['1', '2', '3', '4'], ['5','6','7','8']]
         parser.int_converter(data, 1, 3)
-        assertEqual(data, [['1', 2, '3', 4], ['5', 6, '7', 8]])
+        aE..(data, [['1', 2, '3', 4], ['5', 6, '7', 8]])
 
     ___ test_key_names
         """Key name composer test"""
         print("id: " + id())
-        assertEqual(parser.key_names(\
+        aE..(parser.key_names(\
             (\
                 ('Order1', '1'), ('Order2', '1'),\
                 ('Order1', '2'), ('Order2', '2'),\
@@ -96,7 +96,7 @@ c_ ParserTest(unittest.TestCase):
                            '[23:23:23]\tMARKET\t\t\t2000\t200\n'
                            '\n')
 
-        assertEqual( \
+        aE..( \
             parser.fin_prep(fileobj, 5, 'EVENT', 'AVGFULL', 'AVGTSMR'),\
             {'MARKET': [(1000, 2000), (100, 200)], 'LIMIT': [(1000,), (100,)]})
 
@@ -105,19 +105,19 @@ c_ ParserTest(unittest.TestCase):
 # Testing Statistics
 #-------------------------------
 
-c_ StatisticsTest(unittest.TestCase):
+c_ StatisticsTest?.?
     """Statistics class tests"""
 
 # SetUp for tests
 
     @classmethod
-    ___ setUpClass(cls):
+    ___ setUpClass(cls
         """Set up for class"""
         print("...............Starting Statistics class tests...............")
         print("")
 
     @classmethod
-    ___ tearDownClass(cls):
+    ___ tearDownClass(cls
         """Tear down for class"""
         print("")
         print("Statistics class tests finished")
@@ -143,36 +143,36 @@ c_ StatisticsTest(unittest.TestCase):
     ___ test_minimal
         """Minimal test"""
         print("id: " + id())
-        assertEqual(stat1.minimal(), 1)
+        aE..(stat1.minimal(), 1)
 
     ___ test_median
         """Median test"""
         print("id: " + id())
-        assertEqual(stat1.median(), 501)
-        assertEqual(stat2.median(), 25016)
+        aE..(stat1.median(), 501)
+        aE..(stat2.median(), 25016)
 
     ___ test_percent90
         """Percentage 90 test"""
         print("id: " + id())
-        assertEqual(stat1.percent90(), 900)
-        assertEqual(stat2.percent90(), 45028)
+        aE..(stat1.percent90(), 900)
+        aE..(stat2.percent90(), 45028)
 
     ___ test_percent99
         """Percentage 99 test"""
         print("id: " + id())
-        assertEqual(stat1.percent99(), 990)
-        assertEqual(stat2.percent99(), 49531)
+        aE..(stat1.percent99(), 990)
+        aE..(stat2.percent99(), 49531)
 
     ___ test_percent999
         """Percentage 999 test"""
         print("id: " + id())
-        assertEqual(stat1.percent999(), 999)
-        assertEqual(stat2.percent999(), 49981)
+        aE..(stat1.percent999(), 999)
+        aE..(stat2.percent999(), 49981)
 
     ___ test_fractions
         """Fractions test"""
         print("id: " + id())
-        assertEqual(stat3.fractions(7), { \
+        aE..(stat3.fractions(7), { \
             7: [2,'20.00','20.00'], 14: [1,'10.00','30.00'], \
             21: [1,'10.00','40.00'], 28: [1,'10.00','50.00'], \
             35: [1,'10.00','60.00'], 42: [1,'10.00','70.00'], \
@@ -183,19 +183,19 @@ c_ StatisticsTest(unittest.TestCase):
 # Testing StatsResult
 #-------------------------------
 
-c_ StatsResultTest(unittest.TestCase):
+c_ StatsResultTest?.?
     """StatsResult class tests"""
 
 # SetUp for tests
 
     @classmethod
-    ___ setUpClass(cls):
+    ___ setUpClass(cls
         """Set up for class"""
         print("...............Starting StatsResult class tests...............")
         print("")
 
     @classmethod
-    ___ tearDownClass(cls):
+    ___ tearDownClass(cls
         """Tear down for class"""
         print("")
         print("StatsResult class tests finished")
@@ -218,10 +218,10 @@ c_ StatsResultTest(unittest.TestCase):
     ___ test_run
         """Run stat funcs test"""
         print("id: " + id())
-        assertEqual(stat.run(stat.minimal, stat.median),{ \
+        aE..(stat.run(stat.minimal, stat.median),{ \
             'Order1': [(1000, 2500), (100, 150)], \
             'Order2': [(50, 75), (200, 300)]})
 
 
 if __name__ == '__main__':
-   unittest.main()
+   u__.main()

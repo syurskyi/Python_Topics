@@ -7,7 +7,7 @@ c_ Employee:
 
     raise_amt _ 1.05
 
-    ___  -   first, last, pay):
+    ___  -   first, last, pay
         first _ first
         last _ last
         pay _ pay
@@ -23,7 +23,7 @@ c_ Employee:
     ___ apply_raise
         pay _ int(pay * raise_amt)
 
-    ___ monthly_schedule  month):
+    ___ monthly_schedule  month
         response _ requests.get(f'http://company.com/{last}/{month}')
         if response.ok:
             r_ response.text

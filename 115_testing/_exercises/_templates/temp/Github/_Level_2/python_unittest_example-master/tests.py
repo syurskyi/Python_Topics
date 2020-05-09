@@ -1,4 +1,4 @@
-______ unittest
+______ u__
 ______ os
 ______ json
 ____ percolate ______ parse_file, split_line, parse_phone_number, parse_lines, format_one, format_two, format_three, format_phone_number
@@ -6,7 +6,7 @@ ____ percolate ______ parse_file, split_line, parse_phone_number, parse_lines, f
 __location__ _ os.path.realpath(
     os.path.join(os.getcwd(), os.path.dirname(__file__)))
 
-c_ TestFormatOne(unittest.TestCase):
+c_ TestFormatOne?.?
 	
 	___ test
 		line _ ['Chandler', 'Kerri', '(623)-668-9293', 'pink', '12345']
@@ -18,10 +18,10 @@ c_ TestFormatOne(unittest.TestCase):
 			"zipcode": "12345"
 			}
 
-		assertEqual(
+		aE..(
 			format_one(line), line_dict)
 
-c_ TestFormatTwo(unittest.TestCase):
+c_ TestFormatTwo?.?
 
 	___ test
 		line _ ['James', 'Murphy', 'yellow', '83880', '018 154 6474']
@@ -33,10 +33,10 @@ c_ TestFormatTwo(unittest.TestCase):
 			"zipcode": "83880"
 			}
 
-		assertEqual(
+		aE..(
 			format_two(line), line_dict)
 
-c_ TestFormatThree(unittest.TestCase):
+c_ TestFormatThree?.?
 	___ test
 		line _ ['Booker T.', 'Washington', '87360', '373 781 7380', 'yellow']
 		line_dict _ {
@@ -47,36 +47,36 @@ c_ TestFormatThree(unittest.TestCase):
 			"zipcode": "87360"
 			}
 
-		assertEqual(
+		aE..(
 			format_three(line), line_dict)
 
-c_ TestSplitLines(unittest.TestCase):
+c_ TestSplitLines?.?
 	___ test1
 		line _ 'James Murphy, yellow, 83880, 018 154 6474'
 		l _ ['James', 'Murphy', 'yellow', '83880', '018 154 6474']
 		
-		assertEqual(split_line(line), l)
+		aE..(split_line(line), l)
 
 	___ test2
 		line _ 'Booker T., Washington, 87360, 373 781 7380, yellow'
 		l _ ['Booker T.', 'Washington', '87360', '373 781 7380', 'yellow']
 
 
-c_ TestParsePhoneNumber(unittest.TestCase):
+c_ TestParsePhoneNumber?.?
 	___ testFalse
-		assertEqual(
+		aE..(
 			parse_phone_number('123-12-1234'), False)
 
 	___ testTrue
-		assertEqual(
+		aE..(
 			parse_phone_number('123 456 7890'), True)
 
-c_ TestFormatPhoneNumber(unittest.TestCase):
+c_ TestFormatPhoneNumber?.?
 	___ test
-		assertEqual(
+		aE..(
 			format_phone_number('1231231234'), '123-123-1234')
 
-c_ TestParseLines(unittest.TestCase):
+c_ TestParseLines?.?
 
 	___ test_error
 		'''
@@ -84,7 +84,7 @@ c_ TestParseLines(unittest.TestCase):
 		return the line's index.
 		'''
 		line _ split_line('Chandler, Kerri, (623)-668-9293, pink, 123123121')
-		assertEqual(
+		aE..(
 			parse_lines(line), None)
 
 	___ test_format_one
@@ -98,7 +98,7 @@ c_ TestParseLines(unittest.TestCase):
 			"zipcode": "12345"
 			}
 
-		assertEqual(
+		aE..(
 			parse_lines(line), line_dict)
 
 	___ test_format_two
@@ -111,7 +111,7 @@ c_ TestParseLines(unittest.TestCase):
 			"zipcode": "83880"
 			}
 
-		assertEqual(
+		aE..(
 			parse_lines(line), line_dict)
 
 	___ test_format_three
@@ -124,10 +124,10 @@ c_ TestParseLines(unittest.TestCase):
 			"zipcode": "87360"
 			}
 
-		assertEqual(
+		aE..(
 			parse_lines(line), line_dict)
 
-c_ TestParseFile(unittest.TestCase):
+c_ TestParseFile?.?
 	___ test
 		lines _ ['Booker T., Washington, 87360, 373 781 7380, yellow',
 				'Chandler, Kerri, (623)-668-9293, pink, 123123121',
@@ -157,10 +157,10 @@ c_ TestParseFile(unittest.TestCase):
 					]
 					}
 
-		assertEqual(parse_file(lines), expected_output)
+		aE..(parse_file(lines), expected_output)
 
 
 
 
 if __name__ == '__main__':
-	unittest.main()
+	u__.main()

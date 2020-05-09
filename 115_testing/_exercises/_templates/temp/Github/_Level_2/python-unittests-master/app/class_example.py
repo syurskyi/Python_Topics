@@ -17,14 +17,14 @@ c_ Board:
             array.array('B', [13, 14, 15, 0])
     ]
 
-    ___  -   rows, check_True):
+    ___  -   rows, check_True
         _rows _ rows
 
         if check:
             check()
 
     ___ check
-        for i in range(16):
+        for i in range(16
             # check number i is at least in one row
             if not any(map(lambda row: i in row, _rows)):
                 raise ValueError("Number {i} is missing in the input data".f..(**locals()))
@@ -34,7 +34,7 @@ c_ Board:
 
 
 c_ FifteenSolver:
-    ___  -   board):
+    ___  -   board
         board _ board
 
     ___ solve

@@ -1,14 +1,14 @@
 ______ os
 
-c_ Phonebook():
+c_ Phonebook(
     
     ___  -
         entries _ {}
 
-    ___ add  name, number):
+    ___ add  name, number
         entries[name] _ number
 
-    ___ lookup  name):
+    ___ lookup  name
         r_ None #self.entries[name]
         
     ___ names

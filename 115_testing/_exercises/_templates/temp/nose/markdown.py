@@ -11,17 +11,17 @@
 ______ fileinput
 ______ re
 
-___ convertStrong(line):
+___ convertStrong(line
   line _ re.sub(r'\*\*(.*)\*\*', r'<strong>\1</strong>', line)
   line _ re.sub(r'__(.*)__', r'<strong>\1</strong>', line)
   r_ line
 
-___ convertEm(line):
+___ convertEm(line
   line _ re.sub(r'\*(.*)\*', r'<em>\1</em>', line)
   line _ re.sub(r'_(.*)_', r'<em>\1</em>', line)
   r_ line
 
-for line in fileinput.input():
+for line in fileinput.input(
   line _ line.rstrip()
   line _ convertStrong(line)
   line _ convertEm(line)

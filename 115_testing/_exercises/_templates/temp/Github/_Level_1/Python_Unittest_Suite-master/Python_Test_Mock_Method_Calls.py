@@ -27,7 +27,7 @@
 # 
 
 c_ ProductionClass:
-        ___ closer  something):
+        ___ closer  something
 
             something.close()
 

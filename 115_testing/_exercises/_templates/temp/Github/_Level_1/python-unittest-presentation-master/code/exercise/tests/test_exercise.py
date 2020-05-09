@@ -1,17 +1,17 @@
 #/usr/bin/env python3
 
 
-______ unittest
+______ u__
 ______ exercise as e
 
 
-c_ ExampleTest(unittest.TestCase):
+c_ ExampleTest?.?
 
     ___ test_foobar
 
         return_value _ e.foobar('barfoo')
-        assertEqual(True, return_value)
+        aE..(True, return_value)
 
 
 if __name__ == '__main__':
-        unittest.main()
+        u__.main()

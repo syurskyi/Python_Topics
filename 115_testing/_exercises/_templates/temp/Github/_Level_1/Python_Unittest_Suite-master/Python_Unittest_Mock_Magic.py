@@ -21,7 +21,7 @@
 mock _ MagicMock()
 mock.__str__.return_value _ 'foobarbaz'
 
-str(mock)
+st.(mock)
 
 # OUTPUT: 'foobarbaz'
 

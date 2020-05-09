@@ -31,6 +31,6 @@ ______ os
 
 ____ test.support ______ load_package_tests
 
-___ load_tests(*args):
+___ load_tests(*args
 
           r_ load_package_tests(os.path.dirname(__file__), *args)

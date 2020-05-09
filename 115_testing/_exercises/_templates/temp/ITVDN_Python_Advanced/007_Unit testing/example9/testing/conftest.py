@@ -7,7 +7,7 @@ ____ models ______ User
 # @pytest.fixture(scope='class')
 # @pytest.fixture(scope='function')
 # @pytest.fixture
-___ user():
+___ user(
     r_ User(
         email_'test@example.com',
         first_name_'test1',

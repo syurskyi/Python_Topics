@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
-______ unittest
+______ u__
 ______ bar
 
-c_ TestBar(unittest.TestCase):
+c_ TestBar?.?
     ___ test_bar
-        assertEqual(bar.bar(),'bar')
+        aE..(bar.bar(),'bar')
         
 if __name__ == '__main__':
-    unittest.main()
+    u__.main()

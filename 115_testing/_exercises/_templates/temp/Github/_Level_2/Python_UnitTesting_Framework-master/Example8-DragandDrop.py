@@ -1,14 +1,14 @@
 ____ selenium ______ webdriver
-______ unittest
+______ u__
 ______ time
 
 ____ selenium.webdriver ______ ActionChains
 
 
-c_ Auth(unittest.TestCase):
+c_ Auth?.?
 
     @classmethod
-    ___ setUpClass(cls):
+    ___ setUpClass(cls
         global driver
         driver _ webdriver.Chrome()
         driver.get("http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html")
@@ -27,10 +27,10 @@ c_ Auth(unittest.TestCase):
         action.reset_actions()
 
     @classmethod
-    ___ tearDownClass(cls):
+    ___ tearDownClass(cls
         # driver.quit()
         print("Close Application")
 
 
 if __name__ == '__main__':
-    unittest.main()
+    u__.main()

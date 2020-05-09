@@ -7,13 +7,13 @@ ______ random
 # logging.basicConfig(level=logging.DEBUG)
 
 
-c_ TestCreateIssue(BaseApi):
+c_ TestCreateIssue(BaseApi
 
     ___ test_create_issue
         # logger = logging.getLogger('test_create_issue')
         url _ base_url + '/issue'
 
-        current_time _ str(datetime.datetime.now())[0:-7]
+        current_time _ st.(datetime.datetime.now())[0:-7]
 
         list_of_objects _ ['robots', 'humans', 'animals', 'developers', 'engineers', 'QA engineers']
         desc_object _ random.choice(list_of_objects)

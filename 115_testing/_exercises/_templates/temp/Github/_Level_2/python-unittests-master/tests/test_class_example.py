@@ -1,9 +1,9 @@
-______ unittest
+______ u__
 ____ app ______ class_example
 ______ array
 
 
-c_ BoardTest(unittest.TestCase):
+c_ BoardTest?.?
     ___ test_is_solved
         inputs_and_outputs _ [
             (
@@ -27,10 +27,10 @@ c_ BoardTest(unittest.TestCase):
         ]
 
         for input, expected_output in inputs_and_outputs:
-            with subTest(input_input, expected_output_expected_output):
+            with subTest(input_input, expected_output_expected_output
                 board _ class_example.Board(input)
                 actual_output _ board.is_solved()
-                assertEqual(actual_output, expected_output)
+                aE..(actual_output, expected_output)
 
     ___ test_check
         missing_two _ [

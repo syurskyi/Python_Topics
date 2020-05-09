@@ -1,7 +1,7 @@
-______ unittest
+______ u__
 ____ primes ______ is_prime
 
-c_ PrimesTestCase(unittest.TestCase):
+c_ PrimesTestCase?.?
     """Tests for `primes.py`."""
 
     ___ test_is_five_prime
@@ -18,8 +18,8 @@ c_ PrimesTestCase(unittest.TestCase):
 
     ___ test_negative_number
         """Is a negative number correctly determined not to be prime?"""
-        for index in range(-1, -10, -1):
+        for index in range(-1, -10, -1
             assertFalse(is_prime(index), msg_'{} should not be determined to be prime'.f..(index))
 
 if __name__ == '__main__':
-    unittest.main()
+    u__.main()

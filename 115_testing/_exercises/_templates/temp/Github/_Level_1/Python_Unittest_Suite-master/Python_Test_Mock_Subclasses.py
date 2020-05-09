@@ -22,7 +22,7 @@
 # Here�s a silly example:
 # 
 
-c_ MyMock(MagicMock):
+c_ MyMock(MagicMock
         ___ has_been_called
 
             r_ called
@@ -76,8 +76,8 @@ mymock.foo.has_been_called()
 # The signature is that it takes arbitrary keyword arguments (**kwargs) which are then passed onto the mock constructor:
 # 
 
-c_ Subclass(MagicMock):
-        ___ _get_child_mock  **kwargs):
+c_ Subclass(MagicMock
+        ___ _get_child_mock  **kwargs
 
             r_ MagicMock(**kwargs)
 

@@ -1,5 +1,5 @@
 
-___ fizzbuzz(n, additional_rules):
+___ fizzbuzz(n, additional_rules
     """     
     >>> fizzbuzz(2, None)
     '2'
@@ -18,5 +18,5 @@ ___ fizzbuzz(n, additional_rules):
      if n % divisor == 0:
          answer +_ rules[divisor]
     if not answer:
-     answer _ str(n)
+     answer _ st.(n)
     r_ answer

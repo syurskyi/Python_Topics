@@ -1,7 +1,7 @@
-______ unittest
+______ u__
 
 
-c_ IncrementTest(unittest.TestCase):
+c_ IncrementTest?.?
     ___ setUp
         my_dict _ {'one': 1, 'two': 2}
 
@@ -10,4 +10,4 @@ c_ IncrementTest(unittest.TestCase):
         assertNotIn('one', my_dict)
 
     ___ test_keys
-        assertEqual(set(my_dict.keys()), {'one', 'two'})
+        aE..(set(my_dict.keys()), {'one', 'two'})

@@ -47,7 +47,7 @@ mock(), mock(), mock()
 
 mock _ Mock(return_value_3)
 
-___ side_effect(*args, **kwargs):
+___ side_effect(*args, **kwargs
         r_ DEFAULT
 
 mock.side_effect _ side_effect

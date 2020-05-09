@@ -21,9 +21,9 @@
 # This ensures that your mocks will fail in the same way as your production code if they are used incorrectly:
 # 
 
-____ unittest.mock ______ create_autospec
+____ u__.m.. ______ create_autospec
 
-___ function(a, b, c):
+___ function(a, b, c
         pass
 
 mock_function _ create_autospec(function, return_value_'fishy')

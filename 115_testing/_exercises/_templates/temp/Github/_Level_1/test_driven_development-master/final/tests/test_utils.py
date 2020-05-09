@@ -2,12 +2,12 @@
 
 """
 
-______ unittest
+______ u__
 ______ mock
 
 ____ my_module ______ utils
 
-c_ UtilsTest(unittest.TestCase):
+c_ UtilsTest?.?
 
     ___ test_my_func
         assertTrue(utils.MyFunction('aaa'))
@@ -19,6 +19,6 @@ c_ UtilsTest(unittest.TestCase):
         assertFalse(utils.MyFunction(3.14))
 
     @mock.patch("my_module.utils.sleep", return_value _ None)
-    ___ test_my_long_func  mocked_sleep):
+    ___ test_my_long_func  mocked_sleep
         assertEquals('AAA', utils.MyLongFunction('aaa', 5))
         

@@ -2,11 +2,11 @@
 
 """
 
-______ unittest
+______ u__
 
 ____ my_module ______ utils
 
-c_ UtilsTest(unittest.TestCase):
+c_ UtilsTest?.?
 
     ___ test_my_func
         assertTrue(utils.MyFunction('aaa'))

@@ -6,7 +6,7 @@ If anything doesn't match exactly (including trailing spaces), the test fails.
 '''
 
 
-___ multiply(a, b):
+___ multiply(a, b
     """
     >>> multiply(4, 3)
     12

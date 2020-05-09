@@ -3,7 +3,7 @@
 ____ django.db ______ migrations, models
 
 
-c_ Migration(migrations.Migration):
+c_ Migration(migrations.Migration
 
     initial _ True
 

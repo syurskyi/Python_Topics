@@ -1,7 +1,7 @@
-____ unittest ______ TestCase
+____ u__ ______ TestCase
 ____ my_package.subpackage.utils ______ somefunction
 
-c_ TestUtils(TestCase):
+c_ TestUtils(TestCase
     ___ test_somefunction
-        assertEqual(somefunction('add', 5, 6), 11)
+        aE..(somefunction('add', 5, 6), 11)
 

@@ -7,10 +7,10 @@
 # Name: Node
 # Arguments: (object) - inhereting from object class
 # Purpose: This is a template for a node in a linked list
-c_ Node(object):
+c_ Node(object
     
     #Constructor:
-    ___  -   dataSet, next _ None, prev _ None):
+    ___  -   dataSet, next _ None, prev _ None
         data _ dataSet
         nextNode _ next
         prevNode _ prev
@@ -20,7 +20,7 @@ c_ Node(object):
         r_ nextNode
 
     #Setter for next node:
-    ___ setNextNode   next):
+    ___ setNextNode   next
         nextNode _ next
 
     #Getter for previous node:
@@ -28,7 +28,7 @@ c_ Node(object):
         r_ prevNode
 
     #Setter for previous node:
-    ___ setPrevNode   prev):
+    ___ setPrevNode   prev
         prevNode _ prev
 
     #Getter for data:
@@ -36,39 +36,39 @@ c_ Node(object):
         r_ data
 
     #Setter for data:
-    ___ setData   dataSet):
+    ___ setData   dataSet
         data _ dataSet
 
 # Name: LinkedList
 # Arguments: (object) - inhereting from object class
 # Purpose: This class holds methods for LinkedList controls (getSize, addNode, removeNode, findNode, getAllData)
-c_ LinkedList (object):
+c_ LinkedList (object
     	#Constructor:
-	___  -   rootNode _ None):
+	___  -   rootNode _ None
 		root _ rootNode
 		size _ 0
 		
 	___ getSize 
 		r_ size
 		
-	___ addNode   dataSet):
+	___ addNode   dataSet
 		newNode _ Node (dataSet, root)
-		if (root):
+		if (root
 			root.setPrevNode(newNode)
 		root _ newNode
 		size +_ 1
 		
-	___ removeNode   dataSet):
+	___ removeNode   dataSet
 		thisNode _ root
 		
-		while (thisNode):
+		while (thisNode
 			if thisNode.getData() == dataSet:
 				next _ thisNode.getNextNode()
 				prev _ thisNode.getPrevNode()
 				
-				if (next):
+				if (next
 					next.setPrevNode(prev)
-				if (prev):
+				if (prev
 					prev.setNextNode(next)
 				else:
 					root _ thisNode
@@ -82,10 +82,10 @@ c_ LinkedList (object):
 		#Could not find the specified data - nothing removed
 		r_ False
 		
-	___ findNode   dataSet):
+	___ findNode   dataSet
 		thisNode _ root
-		while (thisNode):
-			if (thisNode.getData() == dataSet):
+		while (thisNode
+			if (thisNode.getData() == dataSet
 			    r_ dataSet
 			else:
 			    thisNode _ thisNode.getNextNode()
@@ -94,10 +94,10 @@ c_ LinkedList (object):
 	___ getAllData
 		dataList _ []
 		thisNode _ root
-		if (root == None):
+		if (root == None
 			dataList.append(None)
 			r_ dataList
-		while (thisNode):
+		while (thisNode
 			dataList.append(thisNode.getData())
 			thisNode _ thisNode.getNextNode()
 		

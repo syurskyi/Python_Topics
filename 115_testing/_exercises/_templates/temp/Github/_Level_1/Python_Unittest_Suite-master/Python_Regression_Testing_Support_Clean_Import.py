@@ -27,6 +27,6 @@
 # Example usage:
 # 
 
-with CleanImport('foo'):
+with CleanImport('foo'
 
        importlib.import_module('foo')  # New reference.

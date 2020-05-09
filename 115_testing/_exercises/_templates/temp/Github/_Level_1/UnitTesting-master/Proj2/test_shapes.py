@@ -1,8 +1,8 @@
-______ unittest
+______ u__
 ____ math ______ pi, sin, cos
 ____ shapes ______ ShapesArea
 
-c_ TestShapes(unittest.TestCase):
+c_ TestShapes?.?
     ___ test_value_check
         # Check value of number that the user entered and make sure it is in the valid range (>0)
         assertRaises(ValueError, ShapesArea().value_check, -1)

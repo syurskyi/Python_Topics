@@ -29,10 +29,10 @@
 
 my_dict _ {'a': 1, 'b': 2, 'c': 3}
 
-    ___ getitem(name):
+    ___ getitem(name
          r_ my_dict[name]
 
-    ___ setitem(name, val):
+    ___ setitem(name, val
         my_dict[name] _ val
 
 mock _ MagicMock()

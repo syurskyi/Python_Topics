@@ -18,7 +18,7 @@
 # You can configure them, to specify return values or limit what attributes are available, and then make assertions about how they have been used:
 # 
 
-____ unittest.mock ______ MagicMock
+____ u__.m.. ______ MagicMock
 
 thing _ ProductionClass()
 thing.method _ MagicMock(return_value_3)
@@ -38,7 +38,7 @@ mock()
 
 values _ {'a': 1, 'b': 2, 'c': 3}
 
-___ side_effect(arg):
+___ side_effect(arg
         r_ values[arg]
 
 mock.side_effect _ side_effect

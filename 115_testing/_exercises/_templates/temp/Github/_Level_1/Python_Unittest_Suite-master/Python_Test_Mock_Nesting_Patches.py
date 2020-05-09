@@ -19,7 +19,7 @@
 # right:
 # 
 
-c_ MyTest(TestCase):
+c_ MyTest(TestCase
 
         ___ test_foo
 
@@ -47,9 +47,9 @@ assert mymodule.Foo is original
 # A simple helper method, create_patch, puts the patch in place and returns the created mock for us:
 # 
 
-c_ MyTest(TestCase):
+c_ MyTest(TestCase
 
-       ___ create_patch  name):
+       ___ create_patch  name
             patcher _ patch(name)
 
             thing _ patcher.start()

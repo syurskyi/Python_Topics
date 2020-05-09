@@ -1,11 +1,11 @@
 #/usr/bin/env python3
 
 
-______ unittest
+______ u__
 ______ sieve
 
 
-c_ SieveTest(unittest.TestCase):
+c_ SieveTest?.?
 
     ___ test_sieve_of_eratosthenes
         """
@@ -15,8 +15,8 @@ c_ SieveTest(unittest.TestCase):
         expect_return_value _ [2, 3, 5, 7, 11]
         actual_return_value _ list(sieve.sieve_of_eratosthenes(12))
 
-        assertEqual(expect_return_value, actual_return_value)
+        aE..(expect_return_value, actual_return_value)
 
 
 if __name__ == '__main__':
-        unittest.main()
+        u__.main()

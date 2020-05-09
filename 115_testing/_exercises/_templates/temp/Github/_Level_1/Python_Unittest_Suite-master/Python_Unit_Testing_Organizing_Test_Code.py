@@ -28,14 +28,14 @@
 # The simplest TestCase subclass will simply implement a test method (i.e. a method whose name starts with test) in order to perform specific testing code:
 # 
 
-______ unittest
+______ u__
 
-c_ DefaultWidgetSizeTestCase(unittest.TestCase):
+c_ DefaultWidgetSizeTestCase?.?
     ___ test_default_widget_size
 
         widget _ Widget('The widget')
 
-        assertEqual(widget.size(), (50, 50))
+        aE..(widget.size(), (50, 50))
 
 #
 # Note that in order to test something, we use one of the assert*() methods provided by the TestCase base class.
@@ -47,21 +47,21 @@ c_ DefaultWidgetSizeTestCase(unittest.TestCase):
 # we run:
 # 
 
-______ unittest
+______ u__
 
-c_ WidgetTestCase(unittest.TestCase):
+c_ WidgetTestCase?.?
 
     ___ setUp
         widget _ Widget('The widget')
 
     ___ test_default_widget_size
-        assertEqual(widget.size(), (50,50),
+        aE..(widget.size(), (50,50),
                          'incorrect default size')
 
     ___ test_widget_resize
         widget.resize(100,150)
 
-        assertEqual(widget.size(), (100,150),
+        aE..(widget.size(), (100,150),
                          'wrong size after resize')
  
 
@@ -76,9 +76,9 @@ c_ WidgetTestCase(unittest.TestCase):
 # Similarly, we can provide a tearDown() method that tidies up after the test method has been run:
 # 
 
-______ unittest
+______ u__
 
-c_ WidgetTestCase(unittest.TestCase):
+c_ WidgetTestCase?.?
 
     ___ setUp
         widget _ Widget('The widget')
@@ -106,8 +106,8 @@ c_ WidgetTestCase(unittest.TestCase):
 # However, should you want to customize the building of your test suite, you can do it yourself:
 # 
 
-___ suite():
-    suite _ unittest.TestSuite()
+___ suite(
+    suite _ u__.TestSuite()
     suite.addTest(WidgetTestCase('test_default_widget_size'))
 
     suite.addTest(WidgetTestCase('test_widget_resize'))
@@ -115,6 +115,6 @@ ___ suite():
     r_ suite
 
 if __name__ == '__main__':
-    runner _ unittest.TextTestRunner()
+    runner _ u__.TextTestRunner()
 
     runner.run(suite())

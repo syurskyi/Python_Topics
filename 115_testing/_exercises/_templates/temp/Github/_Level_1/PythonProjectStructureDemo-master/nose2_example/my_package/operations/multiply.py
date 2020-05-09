@@ -1,5 +1,5 @@
 
-c_ Multiply(object):
+c_ Multiply(object
     @classmethod
-    ___ do(cls, x, y):
+    ___ do(cls, x, y
         r_ x*y

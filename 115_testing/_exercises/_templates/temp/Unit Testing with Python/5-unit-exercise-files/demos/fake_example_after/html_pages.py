@@ -2,7 +2,7 @@
 ______ html as html_converter
 
 c_ FileAccessWrapper:
-    ___  -   filename):
+    ___  -   filename
         filename _ filename
         
     ___ open
@@ -10,7 +10,7 @@ c_ FileAccessWrapper:
 
 c_ HtmlPagesConverter:
 
-    ___  -   file_access):
+    ___  -   file_access
         """Read the file and note the positions of the page breaks so we can access them quickly"""
         file_access _ file_access
         breaks _ [0]
@@ -25,7 +25,7 @@ c_ HtmlPagesConverter:
                     breaks.append(f.tell())
             breaks.append(f.tell())                
 
-    ___ get_html_page  page):
+    ___ get_html_page  page
         """Return html page with the given number (zero indexed)"""
         page_start _ breaks[page]
         page_end _ breaks[page+1]

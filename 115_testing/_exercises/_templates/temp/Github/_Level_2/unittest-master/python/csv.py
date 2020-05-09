@@ -25,24 +25,24 @@ c_ Database:
         _tablename _ ""
 
     # insert a record
-    ___ create  product):
+    ___ create  product
         query _ ("INSERT INTO %s (geo, guid, category, commodity) VALUES('%s', '%s', '%s', '%s')" %
             (_tablename, product.geo, product.guid, product.category, product.commodity))
         db.query(query)
 
     # update a record based on id
-    ___ update  id, product):
+    ___ update  id, product
         query _ ("UPDATE %s SET geo='%s', guid='%s', category='%s', commodity='%s' WHERE id=%d" %
             (_tablename, product.geo, product.guid, product.category, product.commodity, product.id))
         db.query(query)
 
     # get a record based on id
-    ___ read  id):
+    ___ read  id
         query _ "SELECT * FROM %s WHERE id=%d" % (_tablename, id)
         db.query(query)
         r _ db.store_result()
         product _ Product()
-        for i in r.fetch_row(maxrows_1):
+        for i in r.fetch_row(maxrows_1
             product.id _ int(i[0])
             product.geo _ i[1]
             product.guid _ i[2]
@@ -51,11 +51,11 @@ c_ Database:
         r_ product
 
     # delete a record based on id
-    ___ delete  id):
+    ___ delete  id
         db.query("""DELETE FROM %s WHERE id=%d""" % (_tablename, id))
 
     # create table if it doesn't exist
-    ___ select_table  tablename):
+    ___ select_table  tablename
         db.query(
             "CREATE TABLE IF NOT EXISTS " + tablename + " (`id` INT NOT NULL AUTO_INCREMENT ,  "
                                                         "`geo` VARCHAR(30) NOT NULL , "
@@ -67,7 +67,7 @@ c_ Database:
 
 # custom sort function
 # sort by guid
-___ cmpFn(obj):
+___ cmpFn(obj
     r_ obj.guid
 
 # Class List - Custom list using standard list API library.
@@ -79,28 +79,28 @@ c_ List:
         lst _ []
         lstguid _ []
 
-    ___ append  obj):
+    ___ append  obj
         lst.append(obj)
 
     ___ sort
         lst _ sorted(lst, key_cmpFn)
         lstguid _ [obj.guid for obj in lst ]
 
-    ___ find  guid):
+    ___ find  guid
         r_ bisect.bisect_left(lstguid, guid)
 
-    ___ reverse_find  guid):
+    ___ reverse_find  guid
         r_ bisect.bisect_right(lstguid, guid)
 
 # list iterator
 # ListIterator simply operates on a list of primitive types.
 c_ ListIterator:
-    ___  -   lst):
+    ___  -   lst
         lst _ lst
         cur _ 0
 
     ___ get
-        if cur >_0 and cur < len(lst):
+        if cur >_0 and cur < len(lst
             r_ lst[cur]
         else:
             r_ None
@@ -120,11 +120,11 @@ c_ ListIterator:
             r_ False
 
     ___ info
-        r_ str(get())
+        r_ st.(get())
 
 # inherited from ListIterator
 # Member function info has been overriden.
-c_ ObjectListIterator(ListIterator):
+c_ ObjectListIterator(ListIterator
     ___ info
         obj _ get()
         if obj == None:
@@ -133,7 +133,7 @@ c_ ObjectListIterator(ListIterator):
 
 c_ Product:
     # initialisation
-    ___  -   geo, guid, category, commodity):
+    ___  -   geo, guid, category, commodity
         id _ 0
         geo _ geo
         guid _ guid
@@ -145,7 +145,7 @@ c_ Product:
         r_ ("%d\t%s\t%s\t%s\t%s" % (id, geo, guid, category, commodity))
 
 # reads 4 fields from given file
-___ read_csv(file_name):
+___ read_csv(file_name
     lst _ []
     try:
         with open(file_name, newline_'', encoding_'utf-8') as csvfile:
@@ -160,7 +160,7 @@ ___ read_csv(file_name):
 
     r_ lst
 
-___ main():
+___ main(
     lst _ read_csv('input.csv')
     n _ len(lst)
 
@@ -171,7 +171,7 @@ ___ main():
         pass
         db.create(item)
 
-    print("Created " + str(len(lst)) + " items");
+    print("Created " + st.(len(lst)) + " items");
 
     print("Programmed by " + CONST_AUTHOR)
 

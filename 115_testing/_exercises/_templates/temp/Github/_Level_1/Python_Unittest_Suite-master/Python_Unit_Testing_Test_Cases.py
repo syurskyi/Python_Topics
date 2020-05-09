@@ -29,7 +29,7 @@
 
 @classmethod
 
-___ setUpClass(cls):
+___ setUpClass(cls
 
 #    ...
  
@@ -42,6 +42,6 @@ ___ setUpClass(cls):
 
 @classmethod
 
-___ tearDownClass(cls):
+___ tearDownClass(cls
 
 #    ...

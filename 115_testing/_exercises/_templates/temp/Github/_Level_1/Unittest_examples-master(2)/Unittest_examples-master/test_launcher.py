@@ -10,13 +10,13 @@
     где "pyexample_*.py" - шаблон для поиска файлов с тестами
 """
 
-______ unittest
+______ u__
 
-loader _ unittest.TestLoader()
+loader _ u__.TestLoader()
 
 # Поиск файлов с тестами по шаблону 'pyexample_*.py'
 suite _ loader.discover(start_dir_'.',
                         pattern_'pyexample_*.py')
 
-runner _ unittest.TextTestRunner(verbosity_2)
+runner _ u__.TextTestRunner(verbosity_2)
 result _ runner.run(suite)

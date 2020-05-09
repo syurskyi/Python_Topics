@@ -1,7 +1,7 @@
-____ unittest ______ TestCase
+____ u__ ______ TestCase
 
 
-c_ TestAssertions(TestCase):
+c_ TestAssertions(TestCase
     """
     Showcase for different assertions provided by the unittest library.
     These are just a few examples and do not cover every assertion method provided.
@@ -12,7 +12,7 @@ c_ TestAssertions(TestCase):
         x _ 42
         y _ 42
 
-        assertEqual(x, y)
+        aE..(x, y)
         assertNotEqual(42, 1337)
 
     ___ test_none_values
@@ -36,7 +36,7 @@ c_ TestAssertions(TestCase):
         assertNotAlmostEqual(2.012, 2.013, 3)
 
     ___ test_exceptions
-        with assertRaises(ZeroDivisionError):
+        with assertRaises(ZeroDivisionError
             x _ 42 / 0
 
     ___ test_list_comparison

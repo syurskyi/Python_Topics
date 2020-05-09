@@ -12,13 +12,13 @@ ______ os
 # out a different script, such as markdown.pl
 _interpreter_and_script _ ['python', 'markdown.py']
 
-___ run_markdown(input_text):
+___ run_markdown(input_text
     """
     The default method when we don't care which method to use.
     """
     r_ run_markdown_pipe(input_text)
 
-___ run_markdown_pipe(input_text):
+___ run_markdown_pipe(input_text
     """
     Simulate: echo 'some input' | python markdown.py
     """
@@ -27,7 +27,7 @@ ___ run_markdown_pipe(input_text):
     output _ pipe.communicate(input_input_text)[0]
     r_ output.rstrip()
 
-___ run_markdown_file(input_text):
+___ run_markdown_file(input_text
     """
     Simulate: python markdown.py fileName
     """

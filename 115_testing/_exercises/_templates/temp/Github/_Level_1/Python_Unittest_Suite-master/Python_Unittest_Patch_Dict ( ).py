@@ -35,7 +35,7 @@
 
 foo _ {}
 
-with patch.dict(foo, {'newkey': 'newvalue'}):
+with patch.dict(foo, {'newkey': 'newvalue'}
         assert foo == {'newkey': 'newvalue'}
 
 assert foo == {}
@@ -43,7 +43,7 @@ assert foo == {}
 
 ______ os
 
-with patch.dict('os.environ', {'newkey': 'newvalue'}):
+with patch.dict('os.environ', {'newkey': 'newvalue'}
         print(os.environ['newkey'])
 
 
@@ -58,7 +58,7 @@ assert 'newkey' not in os.environ
 mymodule _ MagicMock()
 mymodule.function.return_value _ 'fish'
 
-with patch.dict('sys.modules', mymodule_mymodule):
+with patch.dict('sys.modules', mymodule_mymodule
         ______ mymodule
  
        mymodule.function('some', 'args')
@@ -75,13 +75,13 @@ c_ Container:
         ___  -
             values _ {}
 
-        ___ __getitem__  name):
+        ___ __getitem__  name
             r_ values[name]
 
-        ___ __setitem__  name, value):
+        ___ __setitem__  name, value
             values[name] _ value
 
-        ___ __delitem__  name):
+        ___ __delitem__  name
             del values[name]
 
         ___ __iter__
@@ -90,7 +90,7 @@ c_ Container:
 thing _ Container()
 thing['one'] _ 1
 
-with patch.dict(thing, one_2, two_3):
+with patch.dict(thing, one_2, two_3
         assert thing['one'] == 2
 
        assert thing['two'] == 3

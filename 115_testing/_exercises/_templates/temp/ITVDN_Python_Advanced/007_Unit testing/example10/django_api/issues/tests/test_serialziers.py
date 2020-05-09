@@ -4,7 +4,7 @@ ____ django.contrib.auth.models ______ User
 ____ issues.serializers ______ LoginSerializer
 
 
-c_ LoginSerializerTestCase(TestCase):
+c_ LoginSerializerTestCase(TestCase
 
     ___ setUp
         username _ 'test'
@@ -55,4 +55,4 @@ c_ LoginSerializerTestCase(TestCase):
         }
         serializer _ LoginSerializer(data_credentials)
         assertTrue(serializer.is_valid())
-        assertIsInstance(serializer.validated_data, User)
+        AII..(serializer.validated_data, User)

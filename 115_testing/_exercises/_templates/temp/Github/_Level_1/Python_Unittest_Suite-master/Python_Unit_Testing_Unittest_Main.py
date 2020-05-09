@@ -29,20 +29,20 @@
 # 
 
 if __name__ == '__main__':
-    unittest.main()
+    u__.main()
 
 # 
 # You can run tests with more detailed information by passing in the verbosity argument:
 # 
 
 if __name__ == '__main__':
-    unittest.main(verbosity_2)
+    u__.main(verbosity_2)
 
 #
 # main supports being used from the interactive interpreter by passing in the argument exit=False.
 # This displays the result on standard output without calling sys.exit():
 # 
 
-____ unittest ______ main
+____ u__ ______ main
 
 main(module_'test_module', exit_False)

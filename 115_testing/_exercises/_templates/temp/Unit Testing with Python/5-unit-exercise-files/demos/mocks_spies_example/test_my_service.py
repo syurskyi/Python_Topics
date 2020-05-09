@@ -1,10 +1,10 @@
-______ unittest
-____ unittest.mock ______ *
+______ u__
+____ u__.m.. ______ *
 
 ____ my_service ______ MyService
 ____ single_sign_on ______ *
 
-c_ MyServiceTest(unittest.TestCase):
+c_ MyServiceTest?.?
     ___ test_invalid_token
         registry _ FakeSingleSignOnRegistry()
         my_service _ MyService(registry)
@@ -73,7 +73,7 @@ c_ MyServiceTest(unittest.TestCase):
     ___ test_invalid_token_with_mocking_fw_as_mock
         invalid_token _ SSOToken()
         registry _ Mock(SingleSignOnRegistry)
-        ___ is_valid(token):
+        ___ is_valid(token
             if not token == invalid_token:
                 raise Exception("Got the wrong token")
             r_ False
@@ -86,7 +86,7 @@ c_ MyServiceTest(unittest.TestCase):
     ___ test_valid_token_with_mocking_fw_as_mock
         valid_token _ SSOToken()
         registry _ Mock(SingleSignOnRegistry)
-        ___ is_valid(token):
+        ___ is_valid(token
             if not token == valid_token:
                 raise Exception("Got the wrong token")
             r_ True

@@ -1,8 +1,8 @@
 
 
-c_ MyClass1(object):
+c_ MyClass1(object
 
-    ___  -   a_0, b_1, c_2):
+    ___  -   a_0, b_1, c_2
         a _ a
         b _ b
         c _ c

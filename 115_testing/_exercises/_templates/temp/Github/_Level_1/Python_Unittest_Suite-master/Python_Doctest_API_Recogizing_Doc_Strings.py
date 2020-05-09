@@ -39,7 +39,7 @@ if x == 13:
 # preserve your backslashes exactly as you type them:
 # 
 
-___ f(x):
+___ f(x
         r'''Backslashes in a raw docstring: m\n'''
 
         print(f.__doc__)
@@ -52,7 +52,7 @@ ___ f(x):
 # Alternatively, you can double each backslash in the doctest version (and not use a raw string):
 # 
 
-___ f(x):
+___ f(x
         '''Backslashes in a raw docstring: m\\n'''
 
 print(f.__doc__)

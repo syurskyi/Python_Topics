@@ -30,7 +30,7 @@
 
 @patch.object(SomeClass, 'class_method')
 
-___ test(mock_method):
+___ test(mock_method
         SomeClass.class_method(3)
 
         mock_method.assert_called_with(3)

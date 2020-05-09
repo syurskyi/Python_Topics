@@ -1,14 +1,14 @@
 ______ sys
 ____ selenium ______ webdriver
 ____ selenium.webdriver.common.keys ______ Keys
-______ unittest
+______ u__
 ______ time
 ____ selenium.webdriver.chrome.options ______ Options
 ____ selenium.common.exceptions ______ StaleElementReferenceException
 ____ selenium.common.exceptions ______ NoSuchElementException
 
 
-c_ PruebaLoginBusqueda(unittest.TestCase):
+c_ PruebaLoginBusqueda?.?
 #Creamos el driver que manipula la web
 #utilizamos el driver para abrir una url
     ___ setUp
@@ -53,4 +53,4 @@ c_ PruebaLoginBusqueda(unittest.TestCase):
         driver.close()
 
 if __name__ == '__main__':
-    unittest.main()
+    u__.main()

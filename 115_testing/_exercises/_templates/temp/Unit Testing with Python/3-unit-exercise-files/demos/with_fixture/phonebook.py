@@ -1,16 +1,16 @@
 ______ os
 
-c_ Phonebook():
+c_ Phonebook(
     
     ___  - 
         entries _ {}
         filename _ "phonebook.txt"
         file_cache _ open(filename, "w")
 
-    ___ add  name, number):
+    ___ add  name, number
         entries[name] _ number
 
-    ___ lookup  name):
+    ___ lookup  name
         r_ entries[name]
         
     ___ names

@@ -26,13 +26,13 @@
 # For example, the following test:
 # 
 
-c_ NumbersTest(unittest.TestCase):
+c_ NumbersTest?.?
 
     ___ test_even
         """
         Test that numbers between 0 and 5 are all even.
         """
-        for i in range(0, 6):
-            with subTest(i_i):
+        for i in range(0, 6
+            with subTest(i_i
 
-                assertEqual(i % 2, 0)
+                aE..(i % 2, 0)

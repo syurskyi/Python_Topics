@@ -1,8 +1,8 @@
-______ unittest
+______ u__
 
 ____ project ______ sum;
 
-c_ ProjectTestCase(unittest.TestCase) :
+c_ ProjectTestCase?.?) :
 
 	___ test_sum(self) :
 
@@ -16,7 +16,7 @@ c_ ProjectTestCase(unittest.TestCase) :
 
 			expected, a, b _ asset
 
-			assertEqual(expected, sum(a, b))
+			aE..(expected, sum(a, b))
 
 if __name__ == '__main__':
-    unittest.main()
+    u__.main()

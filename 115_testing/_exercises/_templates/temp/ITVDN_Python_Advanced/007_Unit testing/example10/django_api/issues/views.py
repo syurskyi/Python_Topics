@@ -9,7 +9,7 @@ ____ issues.models ______ Issue
 ____ issues.serializers ______ IssueSerializer, LoginSerializer
 
 
-c_ IssueModelViewSet(ModelViewSet):
+c_ IssueModelViewSet(ModelViewSet
 
     model _ Issue
     permission_classes _ (IsAuthenticated,)
@@ -17,12 +17,12 @@ c_ IssueModelViewSet(ModelViewSet):
     queryset _ Issue.objects.all()
 
 
-c_ AuthView(GenericViewSet):
+c_ AuthView(GenericViewSet
 
     serializer_class _ LoginSerializer
 
     @action(detail_False, serializer_class_LoginSerializer, methods_['post'])
-    ___ login  request, *args, **kwargs):
+    ___ login  request, *args, **kwargs
         serializer _ serializer_class(data_request.data)
         serializer.is_valid(raise_exception_True)
         user _ serializer.validated_data

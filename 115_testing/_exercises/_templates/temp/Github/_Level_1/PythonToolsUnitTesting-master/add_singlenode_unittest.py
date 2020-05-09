@@ -4,22 +4,22 @@
 #          of the linkedlist.py 
 
 ______ sys
-______ unittest
+______ u__
 ____ linkedlist ______ LinkedList
 
-c_ SingleNodeInsertionTest(unittest.TestCase):
+c_ SingleNodeInsertionTest?.?
     ___ setUp
         try:
             newList _ LinkedList()
         except:
-            print('\nSetup failed: '+ str(sys.exc_info()[0]))
+            print('\nSetup failed: '+ st.(sys.exc_info()[0]))
 
     ___ testNodeInsertion
         #insert new node
         newList.addNode(10)
         #check if node exists
-        assertEqual(newList.findNode(10), 10)
+        aE..(newList.findNode(10), 10)
 
 if __name__ == '__main__':
-    unittest.main(verbosity_2)
+    u__.main(verbosity_2)
 

@@ -5,19 +5,19 @@
 
 
 ______ sys
-______ unittest
+______ u__
 ____ linkedlist ______ LinkedList
 
-c_ NodesDeleteTest(unittest.TestCase):
+c_ NodesDeleteTest?.?
     ___ setUp
         try:
             #create list
             newList _ LinkedList()
             #populate the list with data 0 to 9
-            for i in range(10):
+            for i in range(10
                 newList.addNode(i)
         except:
-            print('\nSetup failed: '+ str(sys.exc_info()[0]))
+            print('\nSetup failed: '+ st.(sys.exc_info()[0]))
                    
         #prepare list reflecting example data in list
         dataList _ list(range(10))
@@ -38,4 +38,4 @@ c_ NodesDeleteTest(unittest.TestCase):
         assertTrue(dataTest, rmItemDataList)
 
 if __name__ == '__main__':
-    unittest.main(verbosity_2)
+    u__.main(verbosity_2)

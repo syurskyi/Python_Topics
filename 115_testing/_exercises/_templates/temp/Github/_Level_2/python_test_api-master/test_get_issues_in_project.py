@@ -4,7 +4,7 @@ ______ xmltodict
 ______ requests
 
 
-c_ TestGetIssuesInProject(BaseApi):
+c_ TestGetIssuesInProject(BaseApi
 
     ___ test_get_issues_in_project
         projects_list _ _get_accessible_projects()

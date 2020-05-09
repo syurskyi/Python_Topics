@@ -29,18 +29,18 @@
 # These must be implemented as class methods.
 # 
 
-______ unittest
+______ u__
 
-c_ Test(unittest.TestCase):
+c_ Test?.?
 
     @classmethod
 
-    ___ setUpClass(cls):
+    ___ setUpClass(cls
         cls._connection _ createExpensiveConnectionObject()
 
     @classmethod
 
-    ___ tearDownClass(cls):
+    ___ tearDownClass(cls
         cls._connection.destroy()
  
 #
@@ -59,10 +59,10 @@ c_ Test(unittest.TestCase):
 # These should be implemented as functions:
 # 
 
-___ setUpModule():
+___ setUpModule(
     createConnection()
 
-___ tearDownModule():
+___ tearDownModule(
     closeConnection()
 
 # 

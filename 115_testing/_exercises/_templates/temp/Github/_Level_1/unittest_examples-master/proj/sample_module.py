@@ -1,4 +1,4 @@
-___ add2num(a,b):
+___ add2num(a,b
 	"""This function return sum of 2 numbers
 	>>> add2num(5,6)
 	11

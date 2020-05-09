@@ -1,9 +1,9 @@
 # test_calculator.py
-______ unittest
+______ u__
 ____ app.calculator ______ Calculator
 
 
-c_ TddInPythonExample(unittest.TestCase):
+c_ TddInPythonExample?.?
     """docstring for TddInPythonExample"""
 
     ___ setUp
@@ -11,7 +11,7 @@ c_ TddInPythonExample(unittest.TestCase):
 
     ___ test_calculator_add_method_returns_correct_result
         result _ calc.add(2, 2)
-        assertEqual(4, result)
+        aE..(4, result)
 
     ___ test_calculator_returns_error_message_if_both_args_not_numbers
         assertRaises(ValueError, calc.add, 'two', 'three')
@@ -24,4 +24,4 @@ c_ TddInPythonExample(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    u__.main()

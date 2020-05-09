@@ -24,12 +24,12 @@
 
 @patch('mymodule.SomeClass')
 
-    c_ MyTest(TestCase):
+    c_ MyTest(TestCase
 
-        ___ test_one  MockSomeClass):
+        ___ test_one  MockSomeClass
             assertIs(mymodule.SomeClass, MockSomeClass)
 
-        ___ test_two  MockSomeClass):
+        ___ test_two  MockSomeClass
             assertIs(mymodule.SomeClass, MockSomeClass)
 
         ___ not_a_test
@@ -47,7 +47,7 @@ MyTest('test_two').not_a_test()
 # These allow you to move the patching into your setUp and tearDown methods.
 # 
 
-c_ MyTest(TestCase):
+c_ MyTest(TestCase
 
         ___ setUp
             patcher _ patch('mymodule.foo')
@@ -68,7 +68,7 @@ MyTest('test_foo').run()
 # makes this easier:
 # 
 
-c_ MyTest(TestCase):
+c_ MyTest(TestCase
 
         ___ setUp
             patcher _ patch('mymodule.foo')

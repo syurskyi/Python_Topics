@@ -20,6 +20,6 @@
 # arguments for the patches:
 # 
 
-with patch.multiple(settings, FIRST_PATCH_'one', SECOND_PATCH_'two'):
+with patch.multiple(settings, FIRST_PATCH_'one', SECOND_PATCH_'two'
 
 #    ...

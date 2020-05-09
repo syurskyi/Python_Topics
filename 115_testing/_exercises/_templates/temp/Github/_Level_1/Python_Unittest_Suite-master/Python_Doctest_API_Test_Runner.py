@@ -26,7 +26,7 @@ if __name__ == '__main__':
     if len(sys.argv) > 1:
         name _ sys.argv[1]
 
-        if name in globals():
+        if name in globals(
             obj _ globals()[name]
 
         else:

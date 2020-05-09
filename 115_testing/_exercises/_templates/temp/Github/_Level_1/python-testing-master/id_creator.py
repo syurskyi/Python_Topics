@@ -1,7 +1,7 @@
 c_ IdCreator:
 
-    ___ faculty_id  value):
-        if not isinstance(value, int):
+    ___ faculty_id  value
+        if not isinstance(value, int
             raise TypeError('Only integer values allowed')
         if value < 0:
             raise ValueError('Only positive values allowed')

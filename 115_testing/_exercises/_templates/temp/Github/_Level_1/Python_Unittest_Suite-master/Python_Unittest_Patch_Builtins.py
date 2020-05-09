@@ -27,7 +27,7 @@
 
 @patch('__main__.ord')
 
-___ test(mock_ord):
+___ test(mock_ord
         mock_ord.return_value _ 101
 
         print(ord('c'))

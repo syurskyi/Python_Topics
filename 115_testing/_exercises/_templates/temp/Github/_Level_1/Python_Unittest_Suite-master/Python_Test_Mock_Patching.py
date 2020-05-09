@@ -36,7 +36,7 @@ c_ ProductionClass:
         ___ method
             something(1, 2, 3)
 
-        ___ something  a, b, c):
+        ___ something  a, b, c
             pass
 
 real _ ProductionClass()

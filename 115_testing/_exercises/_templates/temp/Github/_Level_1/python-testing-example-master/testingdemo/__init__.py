@@ -5,13 +5,13 @@
 ______ datetime
 ______ os
 ______ sys
-______ unittest
+______ u__
 
 if __debug__:
 
     import_dir _ "./libraries/"
-    for d in os.listdir(import_dir):
-        if os.path.isdir(import_dir + d):
+    for d in os.listdir(import_dir
+        if os.path.isdir(import_dir + d
             sys.path.insert(1, import_dir + d)
 
     try:
@@ -39,10 +39,10 @@ if __debug__:
 
     unittesting_log _ open('unittesting.log', 'a')
     file_pos _ unittesting_log.tell()
-    timestamp _ str(datetime.datetime.now().isoformat(' ')) + "\n"
+    timestamp _ st.(datetime.datetime.now().isoformat(' ')) + "\n"
     unittesting_log.write("Testing Example - " + timestamp)
-    suite _ unittest.TestLoader().discover('./testingdemo/unittests')
-    unittest.TextTestRunner(stream_unittesting_log, descriptions_True,
+    suite _ u__.TestLoader().discover('./testingdemo/unittests')
+    u__.TextTestRunner(stream_unittesting_log, descriptions_True,
                             verbosity_3).run(suite)
     unittesting_log.close()
 

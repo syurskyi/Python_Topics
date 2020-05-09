@@ -1,11 +1,11 @@
-______ unittest
+______ u__
 
-____ unittest.mock ______ Mock
+____ u__.m.. ______ Mock
 
 ____ alarm ______ Alarm
 ____ sensor ______ Sensor
 
-c_ AlarmTest(unittest.TestCase):
+c_ AlarmTest?.?
     
     ___ test_alarm_is_off_by_default
         alarm _ Alarm()
@@ -34,7 +34,7 @@ c_ AlarmTest(unittest.TestCase):
         assertFalse(alarm.is_alarm_on)
         
 c_ TestSensor:
-    ___  -   pressure):
+    ___  -   pressure
         pressure _ pressure
     ___ sample_pressure
         r_ pressure

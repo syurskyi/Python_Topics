@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-c_ Foo():
+c_ Foo(
     ___  - 
         FOO _ 'foo'
         

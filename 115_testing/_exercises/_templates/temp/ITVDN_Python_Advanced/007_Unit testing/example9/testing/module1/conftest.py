@@ -2,7 +2,7 @@ ______ pytest
 ____ models ______ Post
 
 
-___ pytest_runtest_setup(item):
+___ pytest_runtest_setup(item
     print('SetUp', item)
 
 
@@ -11,7 +11,7 @@ ___ pytest_runtest_setup(item):
 # @pytest.fixture(scope='class')
 # @pytest.fixture(scope='function')
 # @pytest.fixture
-___ post(user):
+___ post(user
     r_ Post(
         user_user,
         comment_'Test Comment',

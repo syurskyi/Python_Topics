@@ -1,14 +1,14 @@
-______ unittest
+______ u__
 ____ datetime ______ date, timedelta
 
 ____ prescription ______ Prescription
 
 
-___ days_ago(days):
+___ days_ago(days
     r_ date.today() - timedelta(days_days)
 
 
-c_ TestPrescription(unittest.TestCase):
+c_ TestPrescription?.?
     
     ___ test_days_taken_excludes_future_dates
         prescription _ Prescription("Codeine",

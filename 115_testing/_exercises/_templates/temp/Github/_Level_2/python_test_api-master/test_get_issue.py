@@ -1,9 +1,9 @@
-______ unittest
+______ u__
 ______ requests
 ______ xmltodict
 
 
-c_ TestGetIssue(unittest.TestCase):
+c_ TestGetIssue?.?
 
     ___ setUp
         base_url _ 'https://codespace-api.myjetbrains.com/youtrack/rest'
@@ -18,7 +18,7 @@ c_ TestGetIssue(unittest.TestCase):
         assertEquals(response.status_code, 200)
         assertEquals(response_dict['issue']['@id'], id)
         assertEquals(response.headers['Content-Type'], 'application/xml;charset=UTF-8')
-        print "Response time is: " + str(response.elapsed.total_seconds())
+        print "Response time is: " + st.(response.elapsed.total_seconds())
 
     ___ test_get_issue_invalid_id
         url _ base_url + '/issue/' + '123'
@@ -31,4 +31,4 @@ c_ TestGetIssue(unittest.TestCase):
         assertEquals(r.headers['Content-Type'], 'application/xml;charset=UTF-8')
 
 if __name__ == '__main__':
-    unittest.main()
+    u__.main()

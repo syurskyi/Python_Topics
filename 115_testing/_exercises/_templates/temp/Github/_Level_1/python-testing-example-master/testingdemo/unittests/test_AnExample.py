@@ -3,9 +3,9 @@
 """
 
 ____ testingdemo.howto ______ AnExample
-______ unittest
+______ u__
 
-c_ TestAnExample(unittest.TestCase):
+c_ TestAnExample?.?
 
     ___ setUp
         theclass _ AnExample()
@@ -20,9 +20,9 @@ c_ TestAnExample(unittest.TestCase):
         theclass.rightnow _ epochtime
         theclass.yesterdaythistime _ epochtimepriorday
         result _ theclass.report_something()
-        goal _ theclass.descriptiontext + str(epochtime)
-        goal +_ " and " + str(epochtimepriorday)
-        assertEqual(goal, result)
+        goal _ theclass.descriptiontext + st.(epochtime)
+        goal +_ " and " + st.(epochtimepriorday)
+        aE..(goal, result)
 
     ___ test_should_fail
         assertTrue(theclass.should_fail())

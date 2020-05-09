@@ -1,6 +1,6 @@
-______ unittest
-____ unittest ______ mock, skip
-____ unittest.mock ______ MagicMock
+______ u__
+____ u__ ______ mock, skip
+____ u__.m.. ______ MagicMock
 
 ____ lxml ______ html
 ____ requests ______ Response
@@ -10,11 +10,11 @@ ____ learning_mocks ______ FileRemovalService, UploadService, get_hrefs_from_url
 # Followed along from https://www.toptal.com/python/an-introduction-to-mocking-in-python and
 # https://blog.fugue.co/2016-02-11-python-mocking-101.html
 
-c_ RmTestCase(unittest.TestCase):
+c_ RmTestCase?.?
 
     @mock.patch('learning_mocks.os.path')
     @mock.patch('learning_mocks.os')
-    ___ test_rm  mock_os, mock_path):
+    ___ test_rm  mock_os, mock_path
         removal_service _ FileRemovalService()
 
         # set the condition for the mock
@@ -29,9 +29,9 @@ c_ RmTestCase(unittest.TestCase):
         mock_os.remove.assert_called_with('any path')
 
 
-c_ UploadServiceTestCase(unittest.TestCase):
+c_ UploadServiceTestCase?.?
     @mock.patch.object(FileRemovalService, 'rm')
-    ___ test_upload_complete  mock_rm):
+    ___ test_upload_complete  mock_rm
         removal_service _ FileRemovalService()
         reference _ UploadService(removal_service)
         reference.upload_complete('my uploaded file')
@@ -39,7 +39,7 @@ c_ UploadServiceTestCase(unittest.TestCase):
         removal_service.rm.assert_called_with('my uploaded file')
 
 
-c_ UploadServiceMockedTestCase(unittest.TestCase):
+c_ UploadServiceMockedTestCase?.?
     ___ test_upload_complete
         mock_removal_service _ mock.create_autospec(FileRemovalService)
         reference _ UploadService(mock_removal_service)
@@ -47,7 +47,7 @@ c_ UploadServiceMockedTestCase(unittest.TestCase):
         mock_removal_service.rm.assert_called_with('my uploaded file')
 
 
-c_ RequestsFunctionTests(unittest.TestCase):
+c_ RequestsFunctionTests?.?
     ___ setUp
         page_content _ '<html><head><title>Some title</title></head><body>' \
                             '<a href="https://www.google.com/">Google</a>' \
@@ -55,7 +55,7 @@ c_ RequestsFunctionTests(unittest.TestCase):
                             '</body></html>'
 
     @mock.patch('learning_mocks.requests.get')
-    ___ test_get_hrefs_from_url_calls_get  mock_request):
+    ___ test_get_hrefs_from_url_calls_get  mock_request
         m_response _ MagicMock(spec_Response, status_code_200, text_page_content,
                                content_page_content)
         mock_request.return_value _ m_response
@@ -63,14 +63,14 @@ c_ RequestsFunctionTests(unittest.TestCase):
         mock_request.assert_called_with('some url')
 
     @mock.patch('learning_mocks.requests.get')
-    ___ test_get_hrefs_from_url_returns_list  mock_get):
+    ___ test_get_hrefs_from_url_returns_list  mock_get
         m_response _ mock.create_autospec(Response, content_page_content)
         mock_get.return_value _ m_response
         hrefs _ get_hrefs_from_url('some url')
         assertTrue(hasattr(hrefs, '__iter__'), 'No list returned')
 
     @mock.patch('learning_mocks.requests.get')
-    ___ test_get_hrefs_from_url_returned_list_contains_text  mock_get):
+    ___ test_get_hrefs_from_url_returned_list_contains_text  mock_get
         m_response _ mock.create_autospec(Response, content_page_content)
         mock_get.return_value _ m_response
         hrefs _ get_hrefs_from_url('some url')
@@ -97,4 +97,4 @@ c_ RequestsFunctionTests(unittest.TestCase):
             assertTrue(len(fl), 1)
 
 if __name__ == "__main__":
-    unittest.main()
+    u__.main()

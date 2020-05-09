@@ -39,9 +39,9 @@ mock()
 # Whatever the function returns is what the call returns:
 # 
 
-vals _ {(1, 2): 1, (2, 3): 2}
+vals _ {(1, 2 1, (2, 3 2}
 
-___ side_effect(*args):
+___ side_effect(*args
         r_ vals[args]
    
 mock _ MagicMock(side_effect_side_effect)

@@ -9,14 +9,14 @@ ______ tempfile
 
 
 @pytest.fixture
-___ corpus(request):
+___ corpus(request
 
     corpus _ [('train', 'VERB'), ('train', 'VERB'), ('train', 'NOUN')]
 
     r_ corpus
 
 @pytest.mark.tagger
-___ test_train(corpus):
+___ test_train(corpus
 
     ut _ unigramtagger.UnigramTagger()
 
@@ -29,7 +29,7 @@ ___ test_train(corpus):
     assert ut.model == expected_model
 
 @pytest.mark.tagger
-___ test_tag_distribution(corpus):
+___ test_tag_distribution(corpus
 
     ut _ unigramtagger.UnigramTagger()
     ut.train(corpus)
@@ -43,7 +43,7 @@ ___ test_tag_distribution(corpus):
     assert ut.tag_distribution == expected_distribution
 
 @pytest.mark.tagger
-___ test_tag(corpus):
+___ test_tag(corpus
 
     ut _ unigramtagger.UnigramTagger()
     ut.train(corpus)
@@ -56,7 +56,7 @@ ___ test_tag(corpus):
     assert expected_list == tagged_words
 
 @pytest.mark.filesystem
-___ test_save(corpus):
+___ test_save(corpus
 
     testfile _ tempfile.NamedTemporaryFile()
 
@@ -76,7 +76,7 @@ ___ test_save(corpus):
     assert expected_data == actual_data
 
 @pytest.mark.filesystem
-___ test_load(corpus):
+___ test_load(corpus
 
     testfile _ tempfile.NamedTemporaryFile()
 

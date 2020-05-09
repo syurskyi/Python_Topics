@@ -1,18 +1,18 @@
 # -*- coding: utf-8 -*-
 
-______ unittest
+______ u__
 ____ sets ______ Set
 
 
-c_ Widget(object):
+c_ Widget(object
 
     """For running tests"""
 
-    ___  -   widget_name):
+    ___  -   widget_name
         _size _ (50, 50)
         widget_name _ widget_name
 
-    ___ resize  x_value, y_value):
+    ___ resize  x_value, y_value
         _size _ (x_value, y_value)
 
     ___ dispose
@@ -25,15 +25,15 @@ c_ Widget(object):
         raise Exception()
 
 
-@unittest.skipIf(3 < 2, 'This class will be executed because 3 is greater than 2, which makes the condition false.')
-c_ TestUnittest(unittest.TestCase):
+@u__.skipIf(3 < 2, 'This class will be executed because 3 is greater than 2, which makes the condition false.')
+c_ TestUnittest?.?
 
     @classmethod
-    ___ setUpClass(cls):
+    ___ setUpClass(cls
         print 'setUpClass'
 
     @classmethod
-    ___ tearDownClass(cls):
+    ___ tearDownClass(cls
         print 'tearDownClass'
 
     ___ setUp
@@ -44,32 +44,32 @@ c_ TestUnittest(unittest.TestCase):
         widget _ None
 
     ___ test_default_size
-        assertEqual(widget.size(), (50, 50),
+        aE..(widget.size(), (50, 50),
                          'incorrect default size')
 
     ___ test_resize
         widget.resize(100, 150)
-        assertEqual(widget.size(), (100, 150),
+        aE..(widget.size(), (100, 150),
                          'wrong size after resize')
 
-    @unittest.skip("demonstrating skipping")
+    @u__.skip("demonstrating skipping")
     ___ test_nothing
         fail("shouldn't happen")
 
-    @unittest.skipIf(1 < 2, 'because 1 < 2, this test case will not be executed')
+    @u__.skipIf(1 < 2, 'because 1 < 2, this test case will not be executed')
     ___ test_always_be_tested
         pass
 
-    @unittest.skipUnless(1 > 2, 'This test case will be skipped. Unless the condition is true')
+    @u__.skipUnless(1 > 2, 'This test case will be skipped. Unless the condition is true')
     ___ test_skipunless_decorator
         pass
 
-    @unittest.expectedFailure
+    @u__.expectedFailure
     ___ test_fail
         assertTrue(false)
 
     ___ test_basic_usage
-        assertEqual(1, 1)
+        aE..(1, 1)
         assertNotEqual(1, 2)
         assertTrue(True)
         assertFalse(False)
@@ -79,7 +79,7 @@ c_ TestUnittest(unittest.TestCase):
         assertIsNotNone('A value')
         assertIn(1, (1, 2, 3))
         assertNotIn(1, (2, 3, 4))
-        assertIsInstance(widget, Widget)
+        AII..(widget, Widget)
         assertNotIsInstance(1, Widget)
         assertAlmostEqual(2.12345678, 2.12345679)
         assertAlmostEqual(2.1, 2.2, delta_0.2)
@@ -108,11 +108,11 @@ c_ TestUnittest(unittest.TestCase):
         assertDictEqual({'key1': 1, 'key2': 2}, {'key1': 1, 'key2': 2})
 
     ___ test_raise_exception
-        with assertRaises(Exception):
+        with assertRaises(Exception
             widget.raise_exception()
 
 if __name__ == '__main__':
-    unittest.main()
+    u__.main()
 # Do not use the following way to trigger unit testing if you wanna use
 # nosetests as the test runner.
 

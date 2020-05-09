@@ -1,6 +1,6 @@
-___ setUpModule():
+___ setUpModule(
     print 'setUpModule'
     # raise Exception()
 
-___ tearDownModule():
+___ tearDownModule(
     print 'tearDownModule'

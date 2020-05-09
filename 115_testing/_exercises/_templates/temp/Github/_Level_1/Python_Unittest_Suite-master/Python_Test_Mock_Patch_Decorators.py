@@ -41,7 +41,7 @@ original _ SomeClass.attribute
 
 @patch.object(SomeClass, 'attribute', sentinel.attribute)
 
-      ___ test():
+      ___ test(
          assert SomeClass.attribute == sentinel.attribute
 
       test()
@@ -49,7 +49,7 @@ original _ SomeClass.attribute
  
 
 @patch('package.module.attribute', sentinel.attribute)
-     ___ test():
+     ___ test(
 
         ____ package.module ______ attribute
           assert attribute is sentinel.attribute
@@ -61,7 +61,7 @@ original _ SomeClass.attribute
 # 
 
 mock _ MagicMock(return_value_sentinel.file_handle)
-       with patch('builtins.open', mock):
+       with patch('builtins.open', mock
 
         handle _ open('filename', 'r')
 
@@ -75,7 +75,7 @@ assert handle == sentinel.file_handle, "incorrect file handle returned"
 
 @patch('package.module.ClassName.attribute', sentinel.attribute)
 
-    ___ test():
+    ___ test(
         ____ package.module ______ ClassName
 
         assert ClassName.attribute == sentinel.attribute
@@ -86,12 +86,12 @@ assert handle == sentinel.file_handle, "incorrect file handle returned"
 # A nice pattern is to actually decorate test methods themselves:
 # 
 
-c_ MyTest(unittest.TestCase):
+c_ MyTest?.?
 
        @patch.object(SomeClass, 'attribute', sentinel.attribute)
 
         ___ test_something
-           assertEqual(SomeClass.attribute, sentinel.attribute)
+           aE..(SomeClass.attribute, sentinel.attribute)
 
 original _ SomeClass.attribute
 
@@ -104,11 +104,11 @@ assert SomeClass.attribute == original
 # The mock will be created for you and passed into the test function / method:
 # 
 
-c_ MyTest(unittest.TestCase):
+c_ MyTest?.?
 
         @patch.object(SomeClass, 'static_method')
 
-        ___ test_something  mock_method):
+        ___ test_something  mock_method
             SomeClass.static_method()
 
            mock_method.assert_called_with()
@@ -119,12 +119,12 @@ MyTest('test_something').test_something()
 # You can stack up multiple patch decorators using this pattern:
 # 
 
-c_ MyTest(unittest.TestCase):
+c_ MyTest?.?
 
 @patch('package.module.ClassName1')
 @patch('package.module.ClassName2')
 
-        ___ test_something  MockClass2, MockClass1):
+        ___ test_something  MockClass2, MockClass1
             assertIs(package.module.ClassName1, MockClass1)
 
             assertIs(package.module.ClassName2, MockClass2)
@@ -141,7 +141,7 @@ MyTest('test_something').test_something()
 foo _ {'key': 'value'}
 original _ foo.copy()
 
-   with patch.dict(foo, {'newkey': 'newvalue'}, clear_True):
+   with patch.dict(foo, {'newkey': 'newvalue'}, clear_True
         assert foo == {'newkey': 'newvalue'}
 
 assert foo == original

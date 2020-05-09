@@ -1,19 +1,19 @@
-______ unittest
-____ unittest.mock ______ Mock
+______ u__
+____ u__.m.. ______ Mock
 
 ______ requests_mock
 
 ____ app.mocking_better ______ CurrencyConvertor, CURRENCY_CONVERSION_API_URL
 
 
-c_ TestCurrency(unittest.TestCase):
+c_ TestCurrency?.?
     ___ test_get_exchange_rate_without_mocking
         """
         Actually NOT a unit test but rather a system test (connecting to external third party service)
         """
         convertor _ CurrencyConvertor()
         result _ convertor.get_exchange_rate('EUR', 'CZK')
-        assertIsInstance(result, float)
+        AII..(result, float)
 
     ___ test_get_exchange_rate_with_mocking
         """
@@ -42,12 +42,12 @@ c_ TestCurrency(unittest.TestCase):
                 currency_conversion_api_url_CURRENCY_CONVERSION_API_URL), text_mocked_response)
             result _ convertor.convert_currency('EUR', 'CZK', 100)
 
-        assertIsInstance(result, float)
+        AII..(result, float)
         assertAlmostEqual(result, 2577.7)
 
     ___ test_convert_currency__mocking
         convertor _ CurrencyConvertor()
         convertor.get_exchange_rate _ Mock(return_value_25.777)
         result _ convertor.convert_currency('EUR', 'CZK', 100)
-        assertIsInstance(result, float)
+        AII..(result, float)
         assertAlmostEqual(result, 2577.7)

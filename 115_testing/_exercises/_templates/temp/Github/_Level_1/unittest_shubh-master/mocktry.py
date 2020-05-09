@@ -8,7 +8,7 @@ ______ requests
 c_ Student:
     
     cal _ 3
-    ___  -  first,last,age):
+    ___  -  first,last,age
         fname _ first
         lname _ last
         age _ age
@@ -21,7 +21,7 @@ c_ Student:
         
     
     
-    ___ mylinkedin  country):
+    ___ mylinkedin  country
         r _ requests.get(f'https://www.linkedin.com/{country}/{code()}')
 
         if r.ok:

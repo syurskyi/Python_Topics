@@ -8,29 +8,29 @@ ___ foobar(arg_N..
     r_ True
 
 
-___ add(a, b):
+___ add(a, b
     r_ a + b
 
 
-___ subtract(a, b):
+___ subtract(a, b
     r_ a - b
 
 
-___ divide(a, b):
+___ divide(a, b
     r_ a / float(b)
 
 
-___ multiply(a, b):
+___ multiply(a, b
     r_ a * b
 
 
-___ reverse_string(arg):
+___ reverse_string(arg
     r_ arg[::-1]
 
 
-___ print_something(arg):
+___ print_something(arg
     print(arg)
 
 
-___ rand_int(max):
+___ rand_int(max
     r_ randint(0, max)

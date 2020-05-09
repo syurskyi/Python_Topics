@@ -8,7 +8,7 @@ c_ CurrencyConvertor:
     Why class? Because methods are easier to mock than functions. You mock it only for one object, not for whole class
     """
 
-    ___ get_exchange_rate  base_currency, target_currency):
+    ___ get_exchange_rate  base_currency, target_currency
         """
         :param base_currency: ISO 4217 code of base currency
         :param target_currency: ISO 4217 code of target currency
@@ -20,7 +20,7 @@ c_ CurrencyConvertor:
         resp_parsed _ resp.json()
         r_ resp_parsed['rates'][target_currency]
 
-    ___ convert_currency  base_currency, target_currency, base_amount):
+    ___ convert_currency  base_currency, target_currency, base_amount
         """
 
         :param base_currency: ISO 4217 code of base currency

@@ -7,7 +7,7 @@ ____ typing ______ ClassVar
 c_ Counter:
     counter: ClassVar[int] _ 0
 
-    ___  -   fixture):
+    ___  -   fixture
         if fixture:
             update_counter()
 
@@ -15,7 +15,7 @@ c_ Counter:
         __class__.counter +_ 1
         name _ __class__.__name__.lower()
         data _ {}
-        if os.path.exists('results.json'):
+        if os.path.exists('results.json'
             with open('results.json', 'r') as f:
                 data _ json.load(f)
         data.setdefault(name, 0)
@@ -24,9 +24,9 @@ c_ Counter:
             json.dump(data, f)
 
 
-c_ User(Counter):
+c_ User(Counter
 
-    ___  -   email, first_name, last_name, uid_None, fixture_False):
+    ___  -   email, first_name, last_name, uid_None, fixture_False
         super(). - (fixture)
         email _ email
         first_name _ first_name
@@ -46,9 +46,9 @@ c_ User(Counter):
         )
 
 
-c_ Post(Counter):
+c_ Post(Counter
 
-    ___  -   user, comment: str, fixture_False):
+    ___  -   user, comment: st., fixture_False
         super(). - (fixture)
         user _ user
         comment _ comment

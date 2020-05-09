@@ -16,11 +16,11 @@
 # To integrate with unittest test discovery, include a load_tests() function in your test module:
 # 
 
-______ unittest
+______ u__
 ______ doctest
 ______ my_module_with_doctests
 
-___ load_tests(loader, tests, ignore):
+___ load_tests(loader, tests, ignore
     tests.addTests(doctest.DocTestSuite(my_module_with_doctests))
 
     r_ tests

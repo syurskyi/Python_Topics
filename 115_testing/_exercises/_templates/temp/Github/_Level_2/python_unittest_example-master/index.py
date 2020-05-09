@@ -4,53 +4,53 @@ ______ json
 __location__ _ os.path.realpath(
     os.path.join(os.getcwd(), os.path.dirname(__file__)))
 
-___ format_one(line):
+___ format_one(line
 	entry _ dict(color_line[3], firstname_line[1],
 						lastname_line[0], phonenumber_format_phone_number(line[2]),
 						zipcode_line[4])
 	r_ entry
 	
 
-___ format_two(line):
+___ format_two(line
 	entry _ dict(color_line[2], firstname_line[0],
 						lastname_line[1], phonenumber_format_phone_number(line[4]),
 						zipcode_line[3])
 	r_ entry
 
 
-___ format_three(line):
+___ format_three(line
 	entry _ dict(color_line[4], firstname_line[0],
 						lastname_line[1], phonenumber_format_phone_number(line[3]),
 						zipcode_line[2])
 	r_ entry
 
 
-___ parse_phone_number(element):
+___ parse_phone_number(element
 	'''
 	ensure each phone number contains the correct
 	number of digits.
 	'''
 	digits _ ''
 	for x in element:
-		if x.isdigit():
+		if x.isdigit(
 			digits +_ x
 	if len(digits) == 10:
 		r_ True
 	else:
 		r_ False
 
-___ format_phone_number(phone):
+___ format_phone_number(phone
 	'''output phone numbers in correct format'''
 	digits _ ''
 	for x in phone:
-		if x.isdigit():
+		if x.isdigit(
 			digits +_ x
 	formatted _ digits[0:3] + '-' + digits[3:6] + '-' + digits[6:]
 	r_ formatted
 
 
 
-___ parse_lines(line):
+___ parse_lines(line
 	'''
 	If the line has fewer than 4 elements, its index
 	should be added to the 'errors' list immediately
@@ -64,23 +64,23 @@ ___ parse_lines(line):
 	if len(line) < 4:
 		r_ None
 
-	elif len(line[4]) == 5 and line[4][0].isdigit():
-		if parse_phone_number(line[2]):
+	elif len(line[4]) == 5 and line[4][0].isdigit(
+		if parse_phone_number(line[2]
 			r_ format_one(line)
 
 
-	elif len(line[3]) == 5 and line[3][0].isdigit():
-		if parse_phone_number(line[4]):
+	elif len(line[3]) == 5 and line[3][0].isdigit(
+		if parse_phone_number(line[4]
 			r_ format_two(line)
 
 
-	elif len(line[2]) == 5 and line[2][0].isdigit():
-		if parse_phone_number(line[3]):
+	elif len(line[2]) == 5 and line[2][0].isdigit(
+		if parse_phone_number(line[3]
 			r_ format_three(line)
 	else:
 		r_ None
 
-___ split_line(line):
+___ split_line(line
 	'''
 	split the line into a list of its words.
 	If there are 4 elements instead of 5, indicating
@@ -95,7 +95,7 @@ ___ split_line(line):
 	else:
 		r_ data_list
 
-___ parse_file(input_file):
+___ parse_file(input_file
 	'''
 	Parse the file by line. If the line is successfully
 	parsed, the dict object is added to entries list.
@@ -107,7 +107,7 @@ ___ parse_file(input_file):
 	entries _ []
 	errors _ []
 
-	for idx, line in enumerate(input_file):
+	for idx, line in enumerate(input_file
 		data_list _ split_line(line)
 		contact _ parse_lines(data_list)
 
@@ -122,19 +122,19 @@ ___ parse_file(input_file):
 	data _ dict(entries_sorted_entries, errors_errors)
 	r_ data
 
-___ parse_filename(input_filename):
+___ parse_filename(input_filename
 	with open(input_filename) as f:
 		r_ parse_file(f)
 
-___ write_output(filename, data):
+___ write_output(filename, data
 	with open(filename, 'w') as f:
 		json.dump(data, f, sort_keys_True, indent_2)
 
-___ convert_file(input_filename, output_filename):
+___ convert_file(input_filename, output_filename
 	data _ parse_filename(input_filename)
 	write_output(output_filename, data)
 
-___ main():
+___ main(
 	input_filename _ os.path.join(__location__, 'data.in')
 	output_filename _ os.path.join(__location__, 'result.json')
 	convert_file(input_filename, output_filename)

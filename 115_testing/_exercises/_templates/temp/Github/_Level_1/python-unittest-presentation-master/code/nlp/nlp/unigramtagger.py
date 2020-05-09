@@ -34,7 +34,7 @@ c_ UnigramTagger:
         r_ _model
 
     @model.setter
-    ___ model   model):
+    ___ model   model
         _model _ model
 
     @property
@@ -46,7 +46,7 @@ c_ UnigramTagger:
         r_ _tags
 
     @tags.setter
-    ___ tags   tags):
+    ___ tags   tags
         _tags _ tags
 
     @property
@@ -58,7 +58,7 @@ c_ UnigramTagger:
         r_ _tag_distribution
 
     @tag_distribution.setter
-    ___ tag_distribution  td):
+    ___ tag_distribution  td
         _tag_distribution _ td
 
     ___ calculate_tag_distribution
@@ -66,10 +66,10 @@ c_ UnigramTagger:
         Calculate the tag probability after the model is created
         """
 
-        for tag in tags.keys():
+        for tag in tags.keys(
             tag_distribution[tag] _ (tags[tag] / N)
 
-    ___ add_to_model  word, tag):
+    ___ add_to_model  word, tag
         """
         Add a word with a certain tag to the model
         :param word: word to add
@@ -82,7 +82,7 @@ c_ UnigramTagger:
         model[word][tag] +_ 1
         tags[tag] +_ 1
 
-    ___ train  word_tag_pairs):
+    ___ train  word_tag_pairs
         """
         Adds a list of word, tag tuples to the model. (word, tag)
         :params word_tag_pairs: List of word, tag tuples which will be added to the model
@@ -94,7 +94,7 @@ c_ UnigramTagger:
 
         calculate_tag_distribution()
 
-    ___ tag  words):
+    ___ tag  words
         """
         Tags the words in the passed list and returns a list of word, tag tuples
         If a tag is not present it will tag the word with 'None'
@@ -114,7 +114,7 @@ c_ UnigramTagger:
 
         r_ result
 
-    ___ save  filename):
+    ___ save  filename
         """
         Safes the model and tag_distribution in a pickled file
         :params filename: The filename where you wanna safe
@@ -126,7 +126,7 @@ c_ UnigramTagger:
             pickle.dump(_output, outfile)
 
 
-    ___ load  filename):
+    ___ load  filename
         """
         Loads a pickled model and tag_distribution
         :params filename: The filename which you wanna load

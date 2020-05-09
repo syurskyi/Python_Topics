@@ -1,4 +1,4 @@
 # -*- coding: utf-8 -*-
 
-___ bar():
+___ bar(
     r_('bar')

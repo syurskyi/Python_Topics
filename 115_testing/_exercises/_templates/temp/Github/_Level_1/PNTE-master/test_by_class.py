@@ -7,12 +7,12 @@ c_ TestAdd:
   
   # once before test
   @classmethod
-  ___ setup_class(clazz):
+  ___ setup_class(clazz
     pass
  
   # once after test
   @classmethod
-  ___ teardown_class(clazz):
+  ___ teardown_class(clazz
     pass
 
   # before test

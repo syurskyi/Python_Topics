@@ -5,10 +5,10 @@
     Простой пример Unittest Framework
 """
 
-______ unittest
+______ u__
 
 
-c_ BaseTestClass(unittest.TestCase):
+c_ BaseTestClass?.?
     """
         объявление Test Class'а. Для распознавания функций в
         классе и интерпретации их как тесты, необходимо чтобы
@@ -17,13 +17,13 @@ c_ BaseTestClass(unittest.TestCase):
     """
 
     ___ test_add
-        assertEqual(120, 100+20)
+        aE..(120, 100+20)
         assertFalse(10 > 20)
         assertGreater(120, 100)
 
     ___ test_sub
-        assertEqual(100, 140 - 40)
+        aE..(100, 140 - 40)
 
 if __name__ == '__main__':
     # Запуск всех тестов в текущем модуле.
-    unittest.main()
+    u__.main()

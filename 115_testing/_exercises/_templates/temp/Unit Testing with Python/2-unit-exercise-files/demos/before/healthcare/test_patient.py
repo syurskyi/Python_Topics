@@ -3,7 +3,7 @@ ____ datetime ______ date, timedelta
 ____ patient ______ Patient
 ____ prescription ______ Prescription
 
-___ days_ago(days):
+___ days_ago(days
     r_ date.today() - timedelta(days_days)
 
 c_ TestPatient:

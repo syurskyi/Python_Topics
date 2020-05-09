@@ -1,10 +1,10 @@
-______ unittest
+______ u__
 ______ math
 
-c_ TestMathMerhods(unittest.TestCase):
+c_ TestMathMerhods?.?
     
     ___ test_pow
-        assertEqual(math.pow(5,2), 25)
+        aE..(math.pow(5,2), 25)
 
     ___ test_square_root
         assertTrue(math.sqrt(4) == 2)
@@ -17,10 +17,10 @@ c_ TestMathMerhods(unittest.TestCase):
 
     #Podemos usar o skip para passar teste que sabemos que
     #vão falhar com algum motivo
-    @unittest.skip("Exemplo de pular")
+    @u__.skip("Exemplo de pular")
     ___ test_fsum_method
-        assertEqual(math.sum([1.1, 2.2],4.4))
+        aE..(math.sum([1.1, 2.2],4.4))
 
 if __name__ == '__main__':
-    unittest.main()
+    u__.main()
 

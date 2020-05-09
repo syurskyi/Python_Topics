@@ -1,5 +1,5 @@
 
-______ unittest
+______ u__
 
 ____ tennis ______ tennis_score
 
@@ -28,18 +28,18 @@ test_case_data _ \
 
 }
 
-___ tennis_test_template(*args):
+___ tennis_test_template(*args
     ___ foo
         assert_tennis_score(*args)
     r_ foo
 
-c_ TennisTest(unittest.TestCase):
+c_ TennisTest?.?
 
-    ___ assert_tennis_score  expected_score, player1_points, player2_points):
-        assertEqual(expected_score, tennis_score(player1_points, player2_points))
+    ___ assert_tennis_score  expected_score, player1_points, player2_points
+        aE..(expected_score, tennis_score(player1_points, player2_points))
 
 
-for behaviour, test_cases in test_case_data.items():
+for behaviour, test_cases in test_case_data.items(
     for tennis_test_case_data in test_cases:
         expected_output, player1_score, player2_score _ tennis_test_case_data
         test_name _ "test_{0}_{1}_{2}".f..(behaviour, player1_score, player2_score)

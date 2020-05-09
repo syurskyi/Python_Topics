@@ -1,7 +1,7 @@
 ____ base_api ______ BaseApi
 
 
-c_ TestDeleteIssue(BaseApi):
+c_ TestDeleteIssue(BaseApi
 
     ___ test_delete_issue
         issue_id _ _create_issue()

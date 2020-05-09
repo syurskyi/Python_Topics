@@ -1,6 +1,6 @@
 """Template Project."""
 
-___ main():
+___ main(
     """ Main function.
 
     Returns:

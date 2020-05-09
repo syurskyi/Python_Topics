@@ -1,10 +1,10 @@
-______ unittest
+______ u__
 ____ phonebook ______ PhoneBook
 
 # Test runner: >python3 -m unittest -v
 
 # Test Suite
-c_ PhoneBookTest(unittest.TestCase):
+c_ PhoneBookTest?.?
     # Test fixture
     ___ setUp
         phonebook _ PhoneBook()
@@ -18,10 +18,10 @@ c_ PhoneBookTest(unittest.TestCase):
     ___ test_lookup_by_name # Test case name
         phonebook.add("Bob", "12345") # Arrange
         number _ phonebook.lookup("Bob") # Act
-        assertEqual("12345", number) # Assert
+        aE..("12345", number) # Assert
 
     ___ test_missing_name
-        with assertRaises(KeyError):
+        with assertRaises(KeyError
             phonebook.lookup("missing")
 
     ___ test_is_consistent_with_empty_phonebook
@@ -30,7 +30,7 @@ c_ PhoneBookTest(unittest.TestCase):
     # Not good test case design. We'll miss a lot of the tests if there is a failure early in the test.
     # Testing stops when an exception is encountered
     # Name of test case isn't specific
-    @unittest.skip("Bad test case design.")
+    @u__.skip("Bad test case design.")
     ___ test_is_consistent
         phonebook.add("Bob", "12345")
         assertTrue(phonebook.is_consistent())

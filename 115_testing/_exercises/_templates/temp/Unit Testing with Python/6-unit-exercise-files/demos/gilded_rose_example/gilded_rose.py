@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-c_ GildedRose(object):
+c_ GildedRose(object
 
-    ___  -   items):
+    ___  -   items
         items _ items
 
     ___ update_quality
@@ -37,7 +37,7 @@ c_ GildedRose(object):
 
     
 c_ Item:
-    ___  -   name, sell_in, quality):
+    ___  -   name, sell_in, quality
         name _ name
         sell_in _ sell_in
         quality _ quality

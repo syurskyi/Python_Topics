@@ -34,7 +34,7 @@ ___ __str__
 mock _ Mock()
 mock.__str__ _ __str__
 
-str(mock)
+st.(mock)
 
 # OUTPUT: 'fooble'
  
@@ -44,7 +44,7 @@ mock.__str__ _ Mock()
 
 mock.__str__.return_value _ 'fooble'
 
-str(mock)
+st.(mock)
 
 # OUTPUT: 'fooble'
  

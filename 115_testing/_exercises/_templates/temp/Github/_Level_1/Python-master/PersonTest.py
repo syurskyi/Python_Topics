@@ -1,11 +1,11 @@
 
-______ unittest
+______ u__
 
 # This is the class we want to test. So, we need to ______ it
 ______ Person as PersonClass
 
 
-c_ Test(unittest.TestCase):
+c_ Test?.?
     """
     The basic class that inherits unittest.TestCase
     """
@@ -19,9 +19,9 @@ c_ Test(unittest.TestCase):
         """
         Any method which starts with ``test_`` will considered as a test case.
         """
-        for i in range(4):
+        for i in range(4
             # initialize a name
-            name _ 'name' + str(i)
+            name _ 'name' + st.(i)
             # store the name into the list variable
             user_name.append(name)
             # get the user id obtained from the function
@@ -45,18 +45,18 @@ c_ Test(unittest.TestCase):
         length _ len(user_id)  # total number of stored user information
         print("user_id length = ", length)
         print("user_name length = ", len(user_name))
-        for i in range(6):
+        for i in range(6
             # if i not exceed total length then verify the returned name
             if i < length:
                 # if the two name not matches it will fail the test case
-                assertEqual(user_name[i], person.get_name(user_id[i]))
+                aE..(user_name[i], person.get_name(user_id[i]))
             else:
                 print("Testing for get_name no user test")
                 # if length exceeds then check the 'no such user' type message
-                assertEqual('There is no such user', person.get_name(i))
+                aE..('There is no such user', person.get_name(i))
         print("\nFinish get_name test\n")
 
 
 if __name__ == '__main__':
     # begin the unittest.main()
-    unittest.main()
+    u__.main()

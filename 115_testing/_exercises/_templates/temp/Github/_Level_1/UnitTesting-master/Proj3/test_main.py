@@ -1,8 +1,8 @@
-______ unittest
+______ u__
 ____ math ______ exp
 ____ main ______ Interest
 
-c_ TestInterest(unittest.TestCase):
+c_ TestInterest?.?
     ___ test_simple_interest_type_error
         """ Test all arguements of the function to determine that if rouge type is entered that it is caught """
         # Arrange (instantiate class)

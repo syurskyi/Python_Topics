@@ -25,7 +25,7 @@
 # The Foo instance is the result of calling the mock, so it is configured by modifying the mock return_value.
 # 
 
-___ some_function():
+___ some_function(
         instance _ module.Foo()
 
         r_ instance.method()

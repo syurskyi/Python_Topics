@@ -3,7 +3,7 @@ ____ datetime ______ date, timedelta
 
 c_ Prescription:
     
-    ___  -   name, dispense_date, days_supply):
+    ___  -   name, dispense_date, days_supply
         name _ name
         dispense_date _ dispense_date
         days_supply _ days_supply

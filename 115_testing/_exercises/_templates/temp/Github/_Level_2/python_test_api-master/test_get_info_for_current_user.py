@@ -3,7 +3,7 @@ ______ xmltodict
 ______ requests
 
 
-c_ TestGetInfoForCurrentUser(BaseApi):
+c_ TestGetInfoForCurrentUser(BaseApi
 
     ___ test_get_info_for_current_user
         url _ base_url + '/user/current'
@@ -23,5 +23,5 @@ c_ TestGetInfoForCurrentUser(BaseApi):
         response_dict _ xmltodict.parse(r.text)
 
         assertTrue(response_dict['user'])
-        assertEqual(response_dict['user']['@login'], '<no user>')
-        assertEqual(response_dict['user']['@guest'], 'false')
+        aE..(response_dict['user']['@login'], '<no user>')
+        aE..(response_dict['user']['@guest'], 'false')

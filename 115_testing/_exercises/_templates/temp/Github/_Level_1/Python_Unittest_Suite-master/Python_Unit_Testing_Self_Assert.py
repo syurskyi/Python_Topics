@@ -30,7 +30,7 @@
 # a function:
 # 
 
-with assertRaises(SomeException):
+with assertRaises(SomeException
     do_something()
 
 # 
@@ -47,7 +47,7 @@ with assertRaises(SomeException) as cm:
 
 the_exception _ cm.exception
 
-assertEqual(the_exception.error_code, 3)
+aE..(the_exception.error_code, 3)
 
 #
 # assertRaisesRegex(exception, regex, callable, *args, **kwds) assertRaisesRegex(exception, regex, *, msg=None):
@@ -64,7 +64,7 @@ assertRaisesRegex(ValueError, "invalid literal for.*XYZ'$",
 # or:
 # 
 
-with assertRaisesRegex(ValueError, 'literal'):
+with assertRaisesRegex(ValueError, 'literal'
    int('XYZ')
 
 #
@@ -79,7 +79,7 @@ with assertRaisesRegex(ValueError, 'literal'):
 # function:
 # 
 
-with assertWarns(SomeWarning):
+with assertWarns(SomeWarning
            do_something()
  
 #
@@ -94,7 +94,7 @@ with assertWarns(SomeWarning) as cm:
 
 assertIn('myfile.py', cm.filename)
 
-assertEqual(320, cm.lineno)
+aE..(320, cm.lineno)
 
 # 
 # This method works regardless of the warning filters in place when it is called.
@@ -116,7 +116,7 @@ assertWarnsRegex(DeprecationWarning,
 # or:
 # 
 
-with assertWarnsRegex(RuntimeWarning, 'unsafe frobnicating'):
+with assertWarnsRegex(RuntimeWarning, 'unsafe frobnicating'
          frobnicate('/etc/passwd')
 
 #
@@ -147,7 +147,7 @@ with assertLogs('foo', level_'INFO') as cm:
 
    logging.getLogger('foo.bar').error('second message')
 
-assertEqual(cm.output, ['INFO:foo:first message',
+aE..(cm.output, ['INFO:foo:first message',
                              'ERROR:foo.bar:second message'])
 
 #

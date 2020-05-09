@@ -39,16 +39,16 @@
 
 ______ bar
 ______ foo
-______ unittest
+______ u__
 
 ____ test ______ support
 
-c_ MiscTestCase(unittest.TestCase):
+c_ MiscTestCase?.?
 
     ___ test__all__
         support.check__all__  foo)
 
-c_ OtherTestCase(unittest.TestCase):
+c_ OtherTestCase?.?
 
     ___ test__all__
         extra _ {'BAR_CONST', 'FOO_CONST'}

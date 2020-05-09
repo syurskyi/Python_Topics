@@ -30,7 +30,7 @@
 # 
 
 c_ Foo:
-        ___  -   a, b):
+        ___  -   a, b
 
             a, b _ a, b
 
@@ -43,8 +43,8 @@ mock.assert_called_with(Foo(1, 2))
 # A comparison function for our Foo class might look something like this:
 # 
 
-___ compare  other):
-        if not type(self) == type(other):
+___ compare  other
+        if not type(self) == type(other
 
             r_ False
 
@@ -61,11 +61,11 @@ ___ compare  other):
 # 
 
 c_ Matcher:
-        ___  -   compare, some_obj):
+        ___  -   compare, some_obj
             compare _ compare
             some_obj _ some_obj
 
-        ___ __eq__  other):
+        ___ __eq__  other
             r_ compare(some_obj, other)
 
 # 

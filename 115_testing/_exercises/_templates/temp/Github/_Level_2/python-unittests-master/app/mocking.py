@@ -3,7 +3,7 @@ ______ requests
 CURRENCY_CONVERSION_API_URL _ 'https://api.exchangeratesapi.io'
 
 
-___ convert_currency(base_currency, target_currency, base_amount):
+___ convert_currency(base_currency, target_currency, base_amount
     """
 
     :param base_currency: ISO 4217 code of base currency

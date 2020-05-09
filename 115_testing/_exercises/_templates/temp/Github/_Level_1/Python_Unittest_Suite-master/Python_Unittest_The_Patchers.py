@@ -30,7 +30,7 @@
 
 @patch('__main__.SomeClass')
 
- ___ function(normal_argument, mock_class):
+ ___ function(normal_argument, mock_class
         print(mock_class is SomeClass)
 
 function(None)
@@ -95,12 +95,12 @@ with patch('__main__.thing', new_callable_NonCallableMock) as mock_thing:
 
 ____ io ______ StringIO
 
-    ___ foo():
+    ___ foo(
         print('Something')
 
 @patch('sys.stdout', new_callable_StringIO)
 
-    ___ test(mock_stdout):
+    ___ test(mock_stdout
 
        foo()
 

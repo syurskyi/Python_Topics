@@ -10,24 +10,24 @@
 # def main - main function
 
 ______ csv
-______ unittest
+______ u__
 
 CONST_AUTHOR _ "Shubham Sachdeva"
 
-c_ TestFunc(unittest.TestCase):
+c_ TestFunc?.?
     ___ testAuthor
-        assertEqual(author(), CONST_AUTHOR)
+        aE..(author(), CONST_AUTHOR)
 
     ___ testRead
-        assertEqual(len(read_csv('input.csv')), 30559)
+        aE..(len(read_csv('input.csv')), 30559)
 
-___ author():
+___ author(
     print ('Author: ', CONST_AUTHOR)
     r_ CONST_AUTHOR
 
 c_ Product:
     # initialisation
-    ___  -   year, geo, guid, category, commodity):
+    ___  -   year, geo, guid, category, commodity
         id _ 0
         year _ int(year)
         geo _ geo
@@ -40,7 +40,7 @@ c_ Product:
         r_ ("%d\t%d\t%s\t%s\t%s\t%s" % (id, year, geo, guid, category, commodity))
 
 
-___ read_csv(file_name):
+___ read_csv(file_name
     lst _ []
     try:
         with open(file_name, newline_'', encoding_'utf-8') as csvfile:
@@ -56,4 +56,4 @@ ___ read_csv(file_name):
     r_ lst
 
 if __name__ == '__main__':
-    unittest.main()
+    u__.main()

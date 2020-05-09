@@ -5,13 +5,13 @@ ______ argparse
 ____ math ______ ceil, floor
 
 
-c_ Parser():
+c_ Parser(
     """
     Производит подготовку данных для дальнейшей обработки статистическими
     функциями
     """
 
-    ___ data_extr  fileobj, index):
+    ___ data_extr  fileobj, index
         """
         Извлекает данные, производит проверку на количество полезных строк.
         :param fileobj: файловый объект
@@ -37,10 +37,10 @@ c_ Parser():
                 SOURCE.append(L)
                 qty +_ 1
 
-        print('Извлечено ' + str(qty) + ' строк из ' + str(allines))
+        print('Извлечено ' + st.(qty) + ' строк из ' + st.(allines))
         r_ SOURCE
 
-    ___ check_pos  source, *heads):
+    ___ check_pos  source, *heads
         """
         Производит поиск индексов в source[0] для имен heads.
         :param source: список/кортеж со вложенными списками/кортежами
@@ -56,7 +56,7 @@ c_ Parser():
 
         r_ number
 
-    ___ int_converter  listobj, *index):
+    ___ int_converter  listobj, *index
         """
         Для каждого из списков с данными преобразует list[index] в integer либо
         выдает исключение с информацией о позиции с неверным типом данных.
@@ -70,12 +70,12 @@ c_ Parser():
             for num in index:
                 try:
                     elem[num] _ int(elem[num])
-                except (TypeError, ValueError):
-                    print('Неверный формат в ' + str(num+1) + ' столбце, в ' +\
-                          str(linecount) + ' строке данных.')
+                except (TypeError, ValueError
+                    print('Неверный формат в ' + st.(num+1) + ' столбце, в ' +\
+                          st.(linecount) + ' строке данных.')
                     raise
 
-    ___ key_names  source, index):
+    ___ key_names  source, index
         """
 
         :param source: список/кортеж со вложенными списками/кортежами данных
@@ -94,7 +94,7 @@ c_ Parser():
 
         r_ keyname
 
-    ___ fin_prep  fileobj, index, *heads):
+    ___ fin_prep  fileobj, index, *heads
         """
 
         :param fileobj: файловый объект
@@ -127,7 +127,7 @@ c_ Parser():
 
 c_ Statistics:
 
-    ___  -   data):
+    ___  -   data
         """
         Сортирует итерируемый объект и преобразует в tuple
         :param data: list/tuple с данными
@@ -233,7 +233,7 @@ c_ Statistics:
                 (data[index_plus1] - data[index]) *\
                 (lendata * 0.999 - index_plus1)))
 
-    ___ fractions  denom_5):
+    ___ fractions  denom_5
         """
         1.  Cоздает список объектов из data, округленных вверх до ближайшего
             целого значения, кратного denom.
@@ -273,15 +273,15 @@ c_ Statistics:
         r_ fdict
 
 
-c_ StatsResult(Statistics):
+c_ StatsResult(Statistics
 
-    ___  -   datas):
+    ___  -   datas
         """
           :param datas: {key: [[],[]...]} или {key: [(),()...]}
         """
         datas _ datas
 
-    ___ run  *list_funcs):
+    ___ run  *list_funcs
         """
         Функция предназначена для автоматизации формирования результатов
         нескольких наборов данных различными методами класса.
@@ -315,12 +315,12 @@ if __name__ == '__main__':
     stdata _ stat.run(*list_funcs)
 
     with open('result_stat.txt','w') as file:
-        for key in stdata.keys():
-            print(key, 'min=' + str(stdata[key][0][0]),
-                  '50%=' + str(stdata[key][0][1]),
-                  '90%=' + str(stdata[key][0][2]),
-                  '99%=' + str(stdata[key][0][3]),
-                  '99.9%=' + str(stdata[key][0][4]),
+        for key in stdata.keys(
+            print(key, 'min=' + st.(stdata[key][0][0]),
+                  '50%=' + st.(stdata[key][0][1]),
+                  '90%=' + st.(stdata[key][0][2]),
+                  '99%=' + st.(stdata[key][0][3]),
+                  '99.9%=' + st.(stdata[key][0][4]),
                   '\n', sep_'\t', end_'\n', file_file)
 
             print('', 'ExecTime', 'TransNo', 'Weight,%', 'Percent',

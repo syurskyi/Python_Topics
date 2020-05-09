@@ -36,7 +36,7 @@
 # Given the following test function:
 # 
 
-___ testSomething():
+___ testSomething(
     something _ makeSomething()
 
     assert something.name is not None
@@ -47,7 +47,7 @@ ___ testSomething():
 # one can create an equivalent test case instance as follows, with optional set-up and tear-down methods:
 # 
 
-testcase _ unittest.FunctionTestCase(testSomething,
+testcase _ u__.FunctionTestCase(testSomething,
                                      setUp_makeSomethingDB,
                                      tearDown_deleteSomethingDB)
 

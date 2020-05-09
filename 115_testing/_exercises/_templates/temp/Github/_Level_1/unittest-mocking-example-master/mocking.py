@@ -1,8 +1,8 @@
-______ unittest
-____ unittest.mock ______ MagicMock
+______ u__
+____ u__.m.. ______ MagicMock
 ______ sample
 
-c_ TestAdd(unittest.TestCase):
+c_ TestAdd?.?
     ___ setUp
         org_summation_method _ sample.summation
         sample.summation _ MagicMock()
@@ -13,7 +13,7 @@ c_ TestAdd(unittest.TestCase):
 
     ___ test_add
         result _ sample.add(1,5)
-        assertEqual(result, 3)
+        aE..(result, 3)
 
     ___ test_exception
         sample.summation.side_effect _ Exception
@@ -21,4 +21,4 @@ c_ TestAdd(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    unittest.main()
+    u__.main()

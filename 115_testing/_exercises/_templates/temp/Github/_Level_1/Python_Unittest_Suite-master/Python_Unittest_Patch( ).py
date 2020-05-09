@@ -21,12 +21,12 @@
 # mock (or other object) during the test and restored when the test ends:
 # 
 
-____ unittest.mock ______ patch
+____ u__.m.. ______ patch
 
 @patch('module.ClassName2')
 @patch('module.ClassName1')
 
-___ test(MockClass1, MockClass2):
+___ test(MockClass1, MockClass2
         module.ClassName1()
         module.ClassName2()
 

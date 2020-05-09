@@ -60,13 +60,13 @@ with check_warnings(("assertion is always true", SyntaxWarning),
 
 with check_warnings(quiet_True) as w:
     warnings.warn("foo")
-    assert str(w.args[0]) == "foo"
+    assert st.(w.args[0]) == "foo"
 
     warnings.warn("bar")
-    assert str(w.args[0]) == "bar"
+    assert st.(w.args[0]) == "bar"
 
-    assert str(w.warnings[0].args[0]) == "foo"
-    assert str(w.warnings[1].args[0]) == "bar"
+    assert st.(w.warnings[0].args[0]) == "foo"
+    assert st.(w.warnings[1].args[0]) == "bar"
 
     w.reset()
     assert len(w.warnings) == 0

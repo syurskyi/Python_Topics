@@ -2,7 +2,7 @@
  https://github.com/lathama/python-testing-example
 """
 
-c_ AnExample():
+c_ AnExample(
 
     ___  -
         rightnow _ None
@@ -16,7 +16,7 @@ c_ AnExample():
         r_ True
 
     ___ report_something
-        report _ descriptiontext + str(rightnow) + " and " + str(yesterdaythistime)
+        report _ descriptiontext + st.(rightnow) + " and " + st.(yesterdaythistime)
         r_ report
 
     ___ should_fail

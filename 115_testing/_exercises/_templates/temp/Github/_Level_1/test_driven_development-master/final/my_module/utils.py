@@ -5,14 +5,14 @@
 ______ collections
 ____ time ______ sleep
 
-___ MyFunction(iterable):
+___ MyFunction(iterable
     """ Take any object and return if it is iterable or not.
     :param iterable:
     :rtype: bool
     """
     r_ isinstance(iterable, collections.Iterable)
 
-___ MyLongFunction(msg, seconds):
+___ MyLongFunction(msg, seconds
     """ This is an example function that is computationally heavy.
 
     :param msg: a message to print

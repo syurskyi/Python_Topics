@@ -1,25 +1,25 @@
 
-______ unittest
+______ u__
 
 ____ phonebook ______ Phonebook
 
-c_ PhonebookTest(unittest.TestCase):
+c_ PhonebookTest?.?
     
     ___ setUp
         phonebook _ Phonebook()
     
     ___ test_lookup_entry_by_name
         phonebook.add("Bob", "12345")
-        assertEqual("12345", phonebook.lookup("Bob"))
+        aE..("12345", phonebook.lookup("Bob"))
         
     ___ test_missing_entry_raises_KeyError
-        with assertRaises(KeyError):
+        with assertRaises(KeyError
             phonebook.lookup("missing")
             
     ___ test_empty_phonebook_is_consistent
         assertTrue(phonebook.is_consistent())
         
-    @unittest.skip("poor example")
+    @u__.skip("poor example")
     ___ test_is_consistent
         assertTrue(phonebook.is_consistent())
         phonebook.add("Bob", "12345")

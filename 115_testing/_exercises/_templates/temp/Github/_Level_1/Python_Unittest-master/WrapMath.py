@@ -1,8 +1,8 @@
 #!usr/bin/python
 ______ ctypes
-______ unittest
+______ u__
 
-c_ test_c_lib(unittest.TestCase):
+c_ test_c_lib?.?
         
         @classmethod
         ___ setUpClass
@@ -25,25 +25,25 @@ c_ test_c_lib(unittest.TestCase):
         ___ test_add
             result _  cobj.add(num1, num2)
             print("Result of addition is ", result)
-            assertEqual(99, result)
+            aE..(99, result)
             
         ___ test_subtraction
             result _  cobj.subtraction(num1, num2)
             print("Result of subtraction is ", result)
-            assertEqual(81, result)
+            aE..(81, result)
 			
         ___ test_multiplication
             result _  cobj.multiplication(num1, num2)
             print("Result of mul is ", result)
-            assertEqual(810, result)
+            aE..(810, result)
 
         ___ test_divide
             result _  cobj.divide(num1, num2)
             print("Result of divide is ", result)
-            assertEqual(10.0, result)
+            aE..(10.0, result)
 			
 if __name__ == '__main__':
-    unittest.main(verbosity_2)
+    u__.main(verbosity_2)
 
     
 			

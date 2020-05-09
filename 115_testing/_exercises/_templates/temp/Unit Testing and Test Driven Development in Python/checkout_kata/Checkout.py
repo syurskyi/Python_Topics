@@ -1,7 +1,7 @@
 
 c_ Checkout:
     c_ Discount:
-        ___  -   nbrItems, price):
+        ___  -   nbrItems, price
             nbrItems _ nbrItems
             price _ price
 
@@ -11,15 +11,15 @@ c_ Checkout:
         items _ {}
 
 
-    ___ addDiscount  item, nbrOfItems, price):
+    ___ addDiscount  item, nbrOfItems, price
         discount _ Discount(nbrOfItems, price)
         discounts[item] _ discount
 
 
-    ___ addItemPrice  item, price):
+    ___ addItemPrice  item, price
         prices[item] _ price
 
-    ___ addItem  item):
+    ___ addItem  item
         if item not in prices:
             raise Exception("Bad Item")
 
@@ -30,11 +30,11 @@ c_ Checkout:
 
     ___ calculateTotal
         total _ 0
-        for item, cnt in items.items():
+        for item, cnt in items.items(
             total +_ calculateItemTotal(item, cnt)
         r_ total
 
-    ___ calculateItemTotal  item, cnt):
+    ___ calculateItemTotal  item, cnt
         total _ 0
         if item in discounts:
             discount _ discounts[item]
@@ -47,7 +47,7 @@ c_ Checkout:
 
         r_ total
 
-    ___ calculateItemDiscountedTotal  item, cnt, discount):
+    ___ calculateItemDiscountedTotal  item, cnt, discount
         total _ 0
         nbrOfDiscounts _ cnt / discount.nbrItems
         total +_ nbrOfDiscounts * discount.price

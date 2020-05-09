@@ -3,7 +3,7 @@ ______ xmltodict
 ______ requests
 
 
-c_ TestGetAccessibleProjects(BaseApi):
+c_ TestGetAccessibleProjects(BaseApi
 
     ___ test_get_accessible_projects
         url _ base_url + '/project/all'

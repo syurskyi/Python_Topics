@@ -2,12 +2,12 @@
 c_ Person:
     name _ []
 
-    ___ set_name  user_name):
+    ___ set_name  user_name
         name.append(user_name)
         r_ len(name) - 1
 
-    ___ get_name  user_id):
-        if user_id >_ len(name):
+    ___ get_name  user_id
+        if user_id >_ len(name
             r_ 'There is no such user'
         else:
             r_ name[user_id]

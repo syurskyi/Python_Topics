@@ -1,9 +1,9 @@
 """Tests For a simple Calculator App."""
-______ unittest
+______ u__
 ____ app.calculator ______ Calculator
 
 
-c_ TddPythonExample(unittest.TestCase):
+c_ TddPythonExample?.?
     """The Test Class."""
 
     ___ setUp
@@ -13,7 +13,7 @@ c_ TddPythonExample(unittest.TestCase):
     ___ test_calculator_add_method_returns_correct_result
         """Test For Add Method."""
         result _ calc.add(2, 2)
-        assertEqual(4, result)
+        aE..(4, result)
 
     ___ test_calculator_returns_error_if_both_args_not_numbers
         """Test that raises ValueError when Strings are passed in."""
@@ -29,4 +29,4 @@ c_ TddPythonExample(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    u__.main()

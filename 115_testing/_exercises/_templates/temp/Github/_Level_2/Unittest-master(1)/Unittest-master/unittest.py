@@ -1,11 +1,11 @@
-______ unittest
+______ u__
 ______ requests
  
 BASE_URL _ "<removed>"
 DF_SECTION _ '<removed>'
  
  
-c_ SearchBySymbolTest(unittest.TestCase):
+c_ SearchBySymbolTest?.?
     response _ None
     
     ___ setUp
@@ -26,7 +26,7 @@ c_ SearchBySymbolTest(unittest.TestCase):
 			assertIn("t", item, 'missing t')
 			assertEquals(u'success', response['response']['status']['message'], 'no success message')
  
-c_ SearchbyTermTest(unittest.TestCase):
+c_ SearchbyTermTest?.?
     response _ None
     
     ___ setUp
@@ -47,7 +47,7 @@ c_ SearchbyTermTest(unittest.TestCase):
 			assertIn("t", item, 'missing t')
 			assertEquals(u'success', response['response']['status']['message'], 'no success message')
 			
-c_ SearchbyTitleTest(unittest.TestCase):
+c_ SearchbyTitleTest?.?
     response _ None
     
     ___ setUp
@@ -68,7 +68,7 @@ c_ SearchbyTitleTest(unittest.TestCase):
 			assertIn("t", item, 'missing t')
 			assertEquals(u'success', response['response']['status']['message'], 'no success message')
 			
-c_ GetTagArticlesTest(unittest.TestCase):
+c_ GetTagArticlesTest?.?
     response _ None
     
     ___ setUp
@@ -95,7 +95,7 @@ c_ GetTagArticlesTest(unittest.TestCase):
                 assertIn("title", item, 'missing title')
                 assertIn("url", item, 'missing url')
                 
-c_ MarketMoversTest(unittest.TestCase):
+c_ MarketMoversTest?.?
     response _ None
     
     ___ setUp
@@ -121,7 +121,7 @@ c_ MarketMoversTest(unittest.TestCase):
 			assertIn("xcntrc", item, 'missing xcntrc')
 			assertEquals(u'success', response['response']['status']['message'], 'no success message')
 			
-c_ GetChartDataTest(unittest.TestCase):
+c_ GetChartDataTest?.?
     response _ None
     
     ___ setUp
@@ -158,7 +158,7 @@ c_ GetChartDataTest(unittest.TestCase):
             
 if __name__ == "__main__":
     #______ sys;sys.argv = ['', 'Test.testName']
-    unittest.main()
+    u__.main()
 			
 			
 			

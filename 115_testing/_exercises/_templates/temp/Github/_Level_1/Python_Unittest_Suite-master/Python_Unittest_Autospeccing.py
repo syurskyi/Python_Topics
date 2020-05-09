@@ -162,7 +162,7 @@ c_ Something:
 
         a _ 33
 
-      with patch('__main__.Something', autospec_True):
+      with patch('__main__.Something', autospec_True
       thing _ Something()
 
       thing.a
@@ -173,7 +173,7 @@ c_ Something:
 # Just because autospec doesn�t allow you to fetch attributes that don�t exist on the spec it doesn�t prevent you setting them:
 # 
 
-with patch('__main__.Something', autospec_True):
+with patch('__main__.Something', autospec_True
       thing _ Something()
 
       thing.a _ 33
@@ -183,7 +183,7 @@ with patch('__main__.Something', autospec_True):
 # This is useful if you want to ensure your code only sets valid attributes too, but obviously it prevents this particular scenario:
 # 
 
-with patch('__main__.Something', autospec_True, spec_set_True):
+with patch('__main__.Something', autospec_True, spec_set_True
       thing _ Something()
 
       thing.a _ 33
@@ -227,7 +227,7 @@ c_ Something:
 
       a _ 33
 
-c_ SomethingForTest(Something):
+c_ SomethingForTest(Something
       a _ 33
 
 p _ patch('__main__.Something', autospec_SomethingForTest)

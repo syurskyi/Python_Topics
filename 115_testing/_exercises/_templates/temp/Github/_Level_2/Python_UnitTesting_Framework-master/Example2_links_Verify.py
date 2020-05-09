@@ -1,13 +1,13 @@
 ____ selenium ______ webdriver
-______ unittest
+______ u__
 ______ time
 ____ selenium.webdriver.common.by ______ By
 
 
-c_ Internet(unittest.TestCase):
+c_ Internet?.?
 
     @classmethod
-    ___ setUpClass(cls):
+    ___ setUpClass(cls
         global driver
         driver _ webdriver.Chrome()
         driver.get("http://the-internet.herokuapp.com/")
@@ -20,10 +20,10 @@ c_ Internet(unittest.TestCase):
             print(morelinks.text)
 
     @classmethod
-    ___ tearDownClass(cls):
+    ___ tearDownClass(cls
         # driver.quit()
         print("Close Application")
 
 
 if __name__ == '__main__':
-    unittest.main()
+    u__.main()

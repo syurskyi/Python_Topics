@@ -51,4 +51,4 @@ with captured_stdin() as stdin:
 
     captured _ input()
 
-assertEqual(captured, "hello")
+aE..(captured, "hello")

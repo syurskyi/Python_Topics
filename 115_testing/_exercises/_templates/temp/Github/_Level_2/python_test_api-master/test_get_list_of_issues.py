@@ -3,7 +3,7 @@ ______ xmltodict
 ______ requests
 
 
-c_ TestGetListOfIssues(BaseApi):
+c_ TestGetListOfIssues(BaseApi
 
     ___ test_get_list_of_issues
         url _ base_url + '/issue'

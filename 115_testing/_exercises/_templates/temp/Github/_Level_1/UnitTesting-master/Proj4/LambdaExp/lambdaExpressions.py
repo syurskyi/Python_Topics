@@ -4,7 +4,7 @@
 # https://www.youtube.com/watch?v=25ovCm9jKfA
 # Anonymous functions == Lambda expressions
 
-___ f(x):
+___ f(x
     r_ 3*x+1
 
 lambda x: 3*x+1
@@ -21,7 +21,7 @@ scifi_authors.sort(key_lambda name: name.split(" ")[-1].lower())
 print(scifi_authors)
 
 # Quadratic function
-___ build_quadratic_function(a, b, c):
+___ build_quadratic_function(a, b, c
     """ Returns the function f(x) = ax^2 + bx + c"""
     r_ lambda x: a*x**2 + b*x + c
 

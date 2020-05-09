@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-______ unittest
+______ u__
 
 
-c_ ClassB(unittest.TestCase):
+c_ ClassB?.?
 
     ___ test_add_b
         assertEquals(120, 100 + 20)
@@ -16,7 +16,7 @@ c_ ClassB(unittest.TestCase):
         assertEquals(420, 105 * 4)
 
 
-c_ ClassC(unittest.TestCase):
+c_ ClassC?.?
 
     ___ test_add_c
         assertEquals(120, 100 + 20)
@@ -29,4 +29,4 @@ c_ ClassC(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    u__.main()

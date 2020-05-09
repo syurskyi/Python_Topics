@@ -1,11 +1,11 @@
-______ unittest
+______ u__
 
 ____ patient ______ Patient
 ____ prescription ______ Prescription
 ____ test_prescription ______ days_ago
 
 
-c_ TestPatient(unittest.TestCase):
+c_ TestPatient?.?
     
     ___ test_no_clash_with_no_prescriptions
         patient _ Patient(prescriptions_[])

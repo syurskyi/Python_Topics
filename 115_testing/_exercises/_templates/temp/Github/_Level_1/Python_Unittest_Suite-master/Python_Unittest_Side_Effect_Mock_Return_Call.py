@@ -19,7 +19,7 @@
 # This allows you to vary the return value of the call dynamically, based on the input:
 # 
 
-___ side_effect(value):
+___ side_effect(value
         r_ value + 1
 
 m _ MagicMock(side_effect_side_effect)

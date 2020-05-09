@@ -1,11 +1,11 @@
 
-______ unittest
+______ u__
 
 ____ theatre ______ SeatFinder
 
 # Note: A is the front row, so A6 is the 6th seat on the front row
 
-c_ SeatFinderTest(unittest.TestCase):
+c_ SeatFinderTest?.?
     ___ test_prefer_near_the_front
         finder _ SeatFinder(available_seats_{"A6", "B6", "C7"})
         seats _ finder.find_seats(1)

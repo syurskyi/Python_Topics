@@ -20,7 +20,7 @@
 
 m _ MagicMock()
 
-___ side_effect(*args, **kwargs):
+___ side_effect(*args, **kwargs
         r_ m.return_value
 
 m.side_effect _ side_effect
@@ -30,7 +30,7 @@ m()
 
 # OUTPUT: '3'
 
-___ side_effect(*args, **kwargs):
+___ side_effect(*args, **kwargs
         r_ DEFAULT
 
 m.side_effect _ side_effect

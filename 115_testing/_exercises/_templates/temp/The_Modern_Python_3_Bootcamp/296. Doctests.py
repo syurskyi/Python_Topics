@@ -1,4 +1,4 @@
-___ add(a, b):
+___ add(a, b
     """
     >>> add(2, 3)
     5
@@ -8,7 +8,7 @@ ___ add(a, b):
     r_ a + b
 
 
-___ double(values):
+___ double(values
     """ double the values in a list
 
     >>> double([1,2,3,4])
@@ -29,7 +29,7 @@ ___ double(values):
 
 # Doctests can only compare to single quoted strings
 
-___ say_hi():
+___ say_hi(
 	"""
 	>>> say_hi()
 	"hi"
@@ -38,7 +38,7 @@ ___ say_hi():
 
 # Watch out for whitespace!
 # (There's a trailing space on line 42)
-___ true_that():
+___ true_that(
 	"""
 	>>> true_that()
 	True
@@ -46,7 +46,7 @@ ___ true_that():
 	r_ True
 
 # Order of keys in dicts matters in doctests
-___ make_dict(keys):
+___ make_dict(keys
 	"""
 	>>> make_dict(['a','b'])
 	{'b': True, 'a': True}

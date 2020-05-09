@@ -19,32 +19,32 @@
         тестов модуля;
 """
 
-______ unittest
+______ u__
 
 
-___ setUpModule():
+___ setUpModule(
     """Вызывается перед запуском всех классов модуля"""
     print "START: setUpModule()"
 
-___ tearDownModule():
+___ tearDownModule(
     """Вызывается после прогона всех тестов модуля"""
     print "END: tearDownModule()"
 
 
-c_ FirstTestClass(unittest.TestCase):
+c_ FirstTestClass?.?
     """Вызывается без методов setUp и tearDown"""
     ___ test_add
         print "START TEST: test_add"
-        assertEqual(120, 100 + 20)
+        aE..(120, 100 + 20)
 
 
-c_ SecondTestClass(unittest.TestCase):
+c_ SecondTestClass?.?
     """
         Вызывается с методами setUpClass/setUp
         и tearDown/tearDownClass
     """
     @staticmethod
-    ___ setUpClass():
+    ___ setUpClass(
         """Вызывается перед запуском всех тестов класса"""
         print "START: setUpClass()"
 
@@ -54,13 +54,13 @@ c_ SecondTestClass(unittest.TestCase):
 
     ___ test_sub
         print "START TEST: test_sub()"
-        assertEqual(210, 240 - 30)
+        aE..(210, 240 - 30)
         assertNotEqual(210, 220 - 20)
 
     ___ test_mul
         print "START TEST: test_mul()"
-        assertEqual(420, 210*2)
-        assertEqual(420, 210*2.0)
+        aE..(420, 210*2)
+        aE..(420, 210*2.0)
 
     ___ tearDown
         """
@@ -71,12 +71,12 @@ c_ SecondTestClass(unittest.TestCase):
         print "END: tearDown()"
 
     @staticmethod
-    ___ tearDownClass():
+    ___ tearDownClass(
         """Вызывается после прогона всех тестов класса"""
         print "END: tearDownClass()"
 
 if __name__ == '__main__':
-    unittest.main()
+    u__.main()
 
 
 

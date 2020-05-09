@@ -3,7 +3,7 @@ ______ xmltodict
 ______ requests
 
 
-c_ TestGetUserByLoginName(BaseApi):
+c_ TestGetUserByLoginName(BaseApi
 
     ___ test_get_user_by_login_name
         url _ base_url + '/user/' + settings['credentials']['login']

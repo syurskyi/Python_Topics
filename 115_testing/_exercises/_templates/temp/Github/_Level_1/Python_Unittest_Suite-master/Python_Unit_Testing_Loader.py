@@ -32,7 +32,7 @@
 
 test_cases _ (TestCase1, TestCase2, TestCase3)
 
-___ load_tests(loader, tests, pattern):
+___ load_tests(loader, tests, pattern
     suite _ TestSuite()
 
     for test_class in test_cases:
@@ -61,7 +61,7 @@ ___ load_tests(loader, tests, pattern):
 # A �do nothing� load_tests function for a test package would look like:
 # 
 
-___ load_tests(loader, standard_tests, pattern):
+___ load_tests(loader, standard_tests, pattern
 
     # top level directory cached on loader instance
 

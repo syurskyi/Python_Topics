@@ -5,26 +5,26 @@ ______ sys
 ______ sieve
 
 
-___ test_manual():
+___ test_manual(
 
     primes _ list(sieve.sieve_of_eratosthenes(30))
     print(primes)
     print('Should be [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]')
 
 
-___ test_assert_ok():
+___ test_assert_ok(
 
     primes _ list(sieve.sieve_of_eratosthenes(30))
     assert(primes == [2, 3, 5, 7, 11, 13, 17, 19, 23, 29])
 
 
-___ test_assert_fail():
+___ test_assert_fail(
 
     primes _ list(sieve.sieve_of_eratosthenes(30))
     assert(primes == [2, 3, 5, 7, 11, 13, 17, 19, 23])
 
 
-___ main():
+___ main(
 
     option _ int(sys.argv[1])
 

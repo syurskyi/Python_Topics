@@ -22,7 +22,7 @@ The example module supplies one function, factorial().  For example,
 120
 """
 
-___ factorial(n):
+___ factorial(n
     """Return the factorial of n, an exact integer >= 0.
 
     >>> [factorial(n) for n in range(6)]

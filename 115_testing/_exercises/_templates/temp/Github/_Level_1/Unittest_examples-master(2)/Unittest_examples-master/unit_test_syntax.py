@@ -5,10 +5,10 @@
     Описание всех методов Unittest Framework
 """
 
-______ unittest
+______ u__
 
 
-c_ TestUnittestMethods(unittest.TestCase):
+c_ TestUnittestMethods?.?
     ___ testAssertTrue
         """Вызывает ошибку, если значение аргумента != True"""
         assertTrue(True)
@@ -55,4 +55,4 @@ c_ TestUnittestMethods(unittest.TestCase):
         failUnlessAlmostEqual(1.1, 3.3 - 2.0, places_0)
 
 if __name__ == '__main__':
-    unittest.main()
+    u__.main()
