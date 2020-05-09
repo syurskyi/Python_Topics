@@ -5,7 +5,7 @@
     Простой пример Unittest Framework
 """
 
-import unittest
+______ unittest
 
 
 c_ BaseTestClass(unittest.TestCase):
@@ -16,13 +16,13 @@ c_ BaseTestClass(unittest.TestCase):
         классе должны начинаться с префикса test
     """
 
-    ___ test_add(self):
-        self.assertEqual(120, 100+20)
-        self.assertFalse(10 > 20)
-        self.assertGreater(120, 100)
+    ___ test_add
+        assertEqual(120, 100+20)
+        assertFalse(10 > 20)
+        assertGreater(120, 100)
 
-    ___ test_sub(self):
-        self.assertEqual(100, 140 - 40)
+    ___ test_sub
+        assertEqual(100, 140 - 40)
 
 if __name__ == '__main__':
     # Запуск всех тестов в текущем модуле.

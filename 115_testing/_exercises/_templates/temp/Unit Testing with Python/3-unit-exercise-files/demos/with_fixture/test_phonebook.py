@@ -1,14 +1,14 @@
-import pytest
+______ pytest
 
-from phonebook import Phonebook
+____ phonebook ______ Phonebook
 
 @pytest.fixture
 ___ phonebook(request):
-    phonebook = Phonebook()
+    phonebook _ Phonebook()
     ___ cleanup_phonebook():
         phonebook.clear()
     request.addfinalizer(cleanup_phonebook)
-    return phonebook
+    r_ phonebook
 
 ___ test_add_and_lookup_entry(phonebook):
     phonebook.add("Bob", "123")

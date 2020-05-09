@@ -28,29 +28,29 @@
 # If you are using a function then it must take self as the first argument.
 # 
 
-___ __str__(self):
-        return 'fooble'
+___ __str__
+        r_ 'fooble'
 
-mock = Mock()
-mock.__str__ = __str__
-
-str(mock)
-
-# OUTPUT: 'fooble'
- 
-
-mock = Mock()
-mock.__str__ = Mock()
-
-mock.__str__.return_value = 'fooble'
+mock _ Mock()
+mock.__str__ _ __str__
 
 str(mock)
 
 # OUTPUT: 'fooble'
  
 
-mock = Mock()
-mock.__iter__ = Mock(return_value=iter([]))
+mock _ Mock()
+mock.__str__ _ Mock()
+
+mock.__str__.return_value _ 'fooble'
+
+str(mock)
+
+# OUTPUT: 'fooble'
+ 
+
+mock _ Mock()
+mock.__iter__ _ Mock(return_value_iter([]))
 
 list(mock)
 
@@ -60,10 +60,10 @@ list(mock)
 # One use case for this is for mocking objects used as context managers in a with statement:
 # 
 
-mock = Mock()
-mock.__enter__ = Mock(return_value='foo')
+mock _ Mock()
+mock.__enter__ _ Mock(return_value_'foo')
 
-mock.__exit__ = Mock(return_value=False)
+mock.__exit__ _ Mock(return_value_False)
 
 with mock as m:
         assert m == 'foo'

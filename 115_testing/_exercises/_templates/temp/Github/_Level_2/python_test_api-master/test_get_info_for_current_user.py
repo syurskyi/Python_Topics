@@ -1,27 +1,27 @@
-from base_api import BaseApi
-import xmltodict
-import requests
+____ base_api ______ BaseApi
+______ xmltodict
+______ requests
 
 
 c_ TestGetInfoForCurrentUser(BaseApi):
 
-    ___ test_get_info_for_current_user(self):
-        url = self.base_url + '/user/current'
+    ___ test_get_info_for_current_user
+        url _ base_url + '/user/current'
 
-        r = self.request(url, 'get')
+        r _ request(url, 'get')
 
-        self.assert_for_status_code_and_content_type(r, 200)
-        self.validate_xml(r, 'xsd/user.xsd')
+        assert_for_status_code_and_content_type(r, 200)
+        validate_xml(r, 'xsd/user.xsd')
 
-    ___ test_get_info_for_current_user_without_credentials(self):
-        url = self.base_url + '/user/current'
+    ___ test_get_info_for_current_user_without_credentials
+        url _ base_url + '/user/current'
 
-        r = requests.get(url)
+        r _ requests.get(url)
 
-        self.assert_for_status_code_and_content_type(r, 200)
+        assert_for_status_code_and_content_type(r, 200)
 
-        response_dict = xmltodict.parse(r.text)
+        response_dict _ xmltodict.parse(r.text)
 
-        self.assertTrue(response_dict['user'])
-        self.assertEqual(response_dict['user']['@login'], '<no user>')
-        self.assertEqual(response_dict['user']['@guest'], 'false')
+        assertTrue(response_dict['user'])
+        assertEqual(response_dict['user']['@login'], '<no user>')
+        assertEqual(response_dict['user']['@guest'], 'false')

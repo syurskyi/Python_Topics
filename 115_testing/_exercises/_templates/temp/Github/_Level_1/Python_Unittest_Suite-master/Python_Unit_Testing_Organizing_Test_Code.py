@@ -28,14 +28,14 @@
 # The simplest TestCase subclass will simply implement a test method (i.e. a method whose name starts with test) in order to perform specific testing code:
 # 
 
-import unittest
+______ unittest
 
 c_ DefaultWidgetSizeTestCase(unittest.TestCase):
-    ___ test_default_widget_size(self):
+    ___ test_default_widget_size
 
-        widget = Widget('The widget')
+        widget _ Widget('The widget')
 
-        self.assertEqual(widget.size(), (50, 50))
+        assertEqual(widget.size(), (50, 50))
 
 #
 # Note that in order to test something, we use one of the assert*() methods provided by the TestCase base class.
@@ -47,21 +47,21 @@ c_ DefaultWidgetSizeTestCase(unittest.TestCase):
 # we run:
 # 
 
-import unittest
+______ unittest
 
 c_ WidgetTestCase(unittest.TestCase):
 
-    ___ setUp(self):
-        self.widget = Widget('The widget')
+    ___ setUp
+        widget _ Widget('The widget')
 
-    ___ test_default_widget_size(self):
-        self.assertEqual(self.widget.size(), (50,50),
+    ___ test_default_widget_size
+        assertEqual(widget.size(), (50,50),
                          'incorrect default size')
 
-    ___ test_widget_resize(self):
-        self.widget.resize(100,150)
+    ___ test_widget_resize
+        widget.resize(100,150)
 
-        self.assertEqual(self.widget.size(), (100,150),
+        assertEqual(widget.size(), (100,150),
                          'wrong size after resize')
  
 
@@ -76,15 +76,15 @@ c_ WidgetTestCase(unittest.TestCase):
 # Similarly, we can provide a tearDown() method that tidies up after the test method has been run:
 # 
 
-import unittest
+______ unittest
 
 c_ WidgetTestCase(unittest.TestCase):
 
-    ___ setUp(self):
-        self.widget = Widget('The widget')
+    ___ setUp
+        widget _ Widget('The widget')
 
-    ___ tearDown(self):
-        self.widget.dispose()
+    ___ tearDown
+        widget.dispose()
 
 #
 # If setUp() succeeded, tearDown() will be run whether the test method succeeded or not.
@@ -107,14 +107,14 @@ c_ WidgetTestCase(unittest.TestCase):
 # 
 
 ___ suite():
-    suite = unittest.TestSuite()
+    suite _ unittest.TestSuite()
     suite.addTest(WidgetTestCase('test_default_widget_size'))
 
     suite.addTest(WidgetTestCase('test_widget_resize'))
 
-    return suite
+    r_ suite
 
 if __name__ == '__main__':
-    runner = unittest.TextTestRunner()
+    runner _ unittest.TextTestRunner()
 
     runner.run(suite())

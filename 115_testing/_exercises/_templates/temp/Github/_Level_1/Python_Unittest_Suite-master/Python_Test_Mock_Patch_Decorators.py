@@ -37,7 +37,7 @@
 # patch.object:
 # 
 
-original = SomeClass.attribute
+original _ SomeClass.attribute
 
 @patch.object(SomeClass, 'attribute', sentinel.attribute)
 
@@ -51,7 +51,7 @@ original = SomeClass.attribute
 @patch('package.module.attribute', sentinel.attribute)
      ___ test():
 
-        from package.module import attribute
+        ____ package.module ______ attribute
           assert attribute is sentinel.attribute
 
      test()
@@ -60,10 +60,10 @@ original = SomeClass.attribute
 # If you are patching a module (including builtins) then use patch() instead of patch.object():
 # 
 
-mock = MagicMock(return_value=sentinel.file_handle)
+mock _ MagicMock(return_value_sentinel.file_handle)
        with patch('builtins.open', mock):
 
-        handle = open('filename', 'r')
+        handle _ open('filename', 'r')
 
 mock.assert_called_with('filename', 'r')
 
@@ -76,7 +76,7 @@ assert handle == sentinel.file_handle, "incorrect file handle returned"
 @patch('package.module.ClassName.attribute', sentinel.attribute)
 
     ___ test():
-        from package.module import ClassName
+        ____ package.module ______ ClassName
 
         assert ClassName.attribute == sentinel.attribute
 
@@ -90,10 +90,10 @@ c_ MyTest(unittest.TestCase):
 
        @patch.object(SomeClass, 'attribute', sentinel.attribute)
 
-        ___ test_something(self):
-           self.assertEqual(SomeClass.attribute, sentinel.attribute)
+        ___ test_something
+           assertEqual(SomeClass.attribute, sentinel.attribute)
 
-original = SomeClass.attribute
+original _ SomeClass.attribute
 
 MyTest('test_something').test_something()
 
@@ -125,9 +125,9 @@ c_ MyTest(unittest.TestCase):
 @patch('package.module.ClassName2')
 
         ___ test_something  MockClass2, MockClass1):
-            self.assertIs(package.module.ClassName1, MockClass1)
+            assertIs(package.module.ClassName1, MockClass1)
 
-            self.assertIs(package.module.ClassName2, MockClass2)
+            assertIs(package.module.ClassName2, MockClass2)
 
 MyTest('test_something').test_something()
 
@@ -138,10 +138,10 @@ MyTest('test_something').test_something()
 # There is also patch.dict() for setting values in a dictionary just during a scope and restoring the dictionary to its original state when the test ends:
 # 
 
-foo = {'key': 'value'}
-original = foo.copy()
+foo _ {'key': 'value'}
+original _ foo.copy()
 
-   with patch.dict(foo, {'newkey': 'newvalue'}, clear=True):
+   with patch.dict(foo, {'newkey': 'newvalue'}, clear_True):
         assert foo == {'newkey': 'newvalue'}
 
 assert foo == original
@@ -155,13 +155,13 @@ assert foo == original
 # 
 
 c_ ProductionClass:
-        ___ method(self):
+        ___ method
             pass
 
     with patch.object(ProductionClass, 'method') as mock_method:
-        mock_method.return_value = None
+        mock_method.return_value _ None
 
-        real = ProductionClass()
+        real _ ProductionClass()
         real.method(1, 2, 3)
 
 mock_method.assert_called_with(1, 2, 3)

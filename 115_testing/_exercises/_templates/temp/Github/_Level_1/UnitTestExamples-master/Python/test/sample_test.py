@@ -1,24 +1,24 @@
-import sys
-import unittest
+______ sys
+______ unittest
 
-from sample import Calc
+____ sample ______ Calc
 
 
 c_ TestSample(unittest.TestCase):
     @classmethod
     ___ setUpClass(cls):
-        cls.calc = Calc()
+        cls.calc _ Calc()
 
-    ___ test_add(self):
-        self.assertEqual(15, self.calc.add(10, 5))
-        self.assertEqual(5, self.calc.add(8, -3))
+    ___ test_add
+        assertEqual(15, calc.add(10, 5))
+        assertEqual(5, calc.add(8, -3))
 
-    ___ test_pow(self):
-        self.assertEqual(125, self.calc.pow(5, 3))
-        self.assertEqual(sys.maxsize, self.calc.pow(2, 31) - 1)
+    ___ test_pow
+        assertEqual(125, calc.pow(5, 3))
+        assertEqual(sys.maxsize, calc.pow(2, 31) - 1)
 
 
 ___ suite():
-    suite = unittest.TestSuite()
+    suite _ unittest.TestSuite()
     suite.addTests(unittest.makeSuite(TestSample))
-    return suite
+    r_ suite

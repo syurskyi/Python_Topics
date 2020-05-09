@@ -6,9 +6,9 @@ ___ sieve_of_eratosthenes(n):
     Gets you all the primes from 1 to n
     """
 
-    A = [True] * n
-    A[0] = False
-    A[1] = False
+    A _ [True] * n
+    A[0] _ False
+    A[1] _ False
 
     for i, isprime in enumerate(A):
 
@@ -16,4 +16,4 @@ ___ sieve_of_eratosthenes(n):
             yield i
 
             for x in range(i * i, n, i):
-                A[x] = False
+                A[x] _ False

@@ -26,14 +26,14 @@
 # 
 
 ___ some_function():
-        instance = module.Foo()
+        instance _ module.Foo()
 
-        return instance.method()
+        r_ instance.method()
 
 with patch('module.Foo') as mock:
-        instance = mock.return_value
-        instance.method.return_value = 'the result'
+        instance _ mock.return_value
+        instance.method.return_value _ 'the result'
 
-        result = some_function()
+        result _ some_function()
 
         assert result == 'the result'

@@ -3,44 +3,44 @@
 # @email:
 # @date:          18-10-09
 
-import csv
+______ csv
 
-CONST_AUTHOR = "Shubham Sachdeva"
+CONST_AUTHOR _ "Shubham Sachdeva"
 
 # REF_DATE	GEO	DGUID	Food categories	Commodity
 c_ Product:
     # initialisation
     ___  -   year, geo, guid, category, commodity):
-        self.id = 0
-        self.year = int(year)
-        self.geo = geo
-        self.guid = guid
-        self.category = category
-        self.commodity = commodity
+        id _ 0
+        year _ int(year)
+        geo _ geo
+        guid _ guid
+        category _ category
+        commodity _ commodity
 
     # for print
-    ___ __str__(self):
-        return ("%d\t%d\t%s\t%s\t%s\t%s" % (self.id, self.year, self.geo, self.guid, self.category, self.commodity))
+    ___ __str__
+        r_ ("%d\t%d\t%s\t%s\t%s\t%s" % (id, year, geo, guid, category, commodity))
 
 
 ___ read_csv(file_name):
-    lst = []
+    lst _ []
     try:
-        with open(file_name, newline='', encoding='utf-8') as csvfile:
-            reader = csv.DictReader(csvfile)
+        with open(file_name, newline_'', encoding_'utf-8') as csvfile:
+            reader _ csv.DictReader(csvfile)
             for row in reader:
-                product = Product(1960, row['GEO'], row['DGUID'], row['Food categories'], row['Commodity'])
+                product _ Product(1960, row['GEO'], row['DGUID'], row['Food categories'], row['Commodity'])
                 print (product)
                 lst.append(product)
 
     except:
         print ('read_csv failed')
 
-    return lst
+    r_ lst
 
 ___ main():
-    lst = read_csv('input.csv')
-    n = len(lst)
+    lst _ read_csv('input.csv')
+    n _ len(lst)
     print ('Number of records: ', n)
     if n < 10000:
         print ('There are less than 10000 records')

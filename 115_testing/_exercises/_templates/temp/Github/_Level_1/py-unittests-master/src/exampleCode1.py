@@ -2,22 +2,22 @@
 
 c_ MyClass1(object):
 
-    ___  -   a=0, b=1, c=2):
-        self.a = a
-        self.b = b
-        self.c = c
+    ___  -   a_0, b_1, c_2):
+        a _ a
+        b _ b
+        c _ c
 
-    ___ getMax(self):
-        return max([self.a, self.b, self.c])
+    ___ getMax
+        r_ max([a, b, c])
 
-    ___ getMin(self):
-        return min([self.a, self.b, self.c])
+    ___ getMin
+        r_ min([a, b, c])
 
-    ___ getProduct(self):
-        return self.a * self.b * self.c
+    ___ getProduct
+        r_ a * b * c
 
-    ___ getSum(self):
-        return self.a + self.b + self.c
+    ___ getSum
+        r_ a + b + c
 
-    ___ getMean(self):
-        return self.getSum() / 3.0
+    ___ getMean
+        r_ getSum() / 3.0

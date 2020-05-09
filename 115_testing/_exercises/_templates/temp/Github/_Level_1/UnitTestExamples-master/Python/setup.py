@@ -1,11 +1,11 @@
-from setuptools import setup, find_packages
-import sys
+____ setuptools ______ setup, find_packages
+______ sys
 sys.path.append('./src')
 sys.path.append('./test')
 
 setup(
-    name = "Sample",
-    version = "1.0",
-    packages = find_packages(),
-    test_suite = 'sample_test.suite'
+    name _ "Sample",
+    version _ "1.0",
+    packages _ find_packages(),
+    test_suite _ 'sample_test.suite'
 )

@@ -9,162 +9,162 @@
 # def read_csv - function that reads data from given file
 
 
-import csv
-import _mysql
+______ csv
+______ _mysql
 
-import bisect
+______ bisect
 
-CONST_AUTHOR = "Shubham Sachdeva"
+CONST_AUTHOR _ "Shubham Sachdeva"
 
 # Uses mysql database connection.
 # Class Database simply wraps basic CRUD operations.
 c_ Database:
     # Establishing a mysql connection
-    ___  - (self):
-        self.db = _mysql.connect("localhost", "root", "root", "student")
-        self._tablename = ""
+    ___  -
+        db _ _mysql.connect("localhost", "root", "root", "student")
+        _tablename _ ""
 
     # insert a record
     ___ create  product):
-        query = ("INSERT INTO %s (geo, guid, category, commodity) VALUES('%s', '%s', '%s', '%s')" %
-            (self._tablename, product.geo, product.guid, product.category, product.commodity))
-        self.db.query(query)
+        query _ ("INSERT INTO %s (geo, guid, category, commodity) VALUES('%s', '%s', '%s', '%s')" %
+            (_tablename, product.geo, product.guid, product.category, product.commodity))
+        db.query(query)
 
     # update a record based on id
     ___ update  id, product):
-        query = ("UPDATE %s SET geo='%s', guid='%s', category='%s', commodity='%s' WHERE id=%d" %
-            (self._tablename, product.geo, product.guid, product.category, product.commodity, product.id))
-        self.db.query(query)
+        query _ ("UPDATE %s SET geo='%s', guid='%s', category='%s', commodity='%s' WHERE id=%d" %
+            (_tablename, product.geo, product.guid, product.category, product.commodity, product.id))
+        db.query(query)
 
     # get a record based on id
     ___ read  id):
-        query = "SELECT * FROM %s WHERE id=%d" % (self._tablename, id)
-        self.db.query(query)
-        r = self.db.store_result()
-        product = Product()
-        for i in r.fetch_row(maxrows=1):
-            product.id = int(i[0])
-            product.geo = i[1]
-            product.guid = i[2]
-            product.category = i[3]
-            product.commodity = i[4]
-        return product
+        query _ "SELECT * FROM %s WHERE id=%d" % (_tablename, id)
+        db.query(query)
+        r _ db.store_result()
+        product _ Product()
+        for i in r.fetch_row(maxrows_1):
+            product.id _ int(i[0])
+            product.geo _ i[1]
+            product.guid _ i[2]
+            product.category _ i[3]
+            product.commodity _ i[4]
+        r_ product
 
     # delete a record based on id
     ___ delete  id):
-        self.db.query("""DELETE FROM %s WHERE id=%d""" % (self._tablename, id))
+        db.query("""DELETE FROM %s WHERE id=%d""" % (_tablename, id))
 
     # create table if it doesn't exist
     ___ select_table  tablename):
-        self.db.query(
+        db.query(
             "CREATE TABLE IF NOT EXISTS " + tablename + " (`id` INT NOT NULL AUTO_INCREMENT ,  "
                                                         "`geo` VARCHAR(30) NOT NULL , "
                                                         "`guid` VARCHAR(30) NOT NULL , "
                                                         "`category` VARCHAR(100) NOT NULL , "
                                                         "`commodity` VARCHAR(100) NOT NULL , "
                                                         "PRIMARY KEY (`id`)) ENGINE = InnoDB;")
-        self._tablename = tablename
+        _tablename _ tablename
 
 # custom sort function
 # sort by guid
 ___ cmpFn(obj):
-    return obj.guid
+    r_ obj.guid
 
 # Class List - Custom list using standard list API library.
 # Member function find and reverse_find returns index of given element.
 # While find returns leftmost position, reverse_find returns rightmost position.
 # This assumes that the list is sorted.
 c_ List:
-    ___  - (self):
-        self.lst = []
-        self.lstguid = []
+    ___  -
+        lst _ []
+        lstguid _ []
 
     ___ append  obj):
-        self.lst.append(obj)
+        lst.append(obj)
 
-    ___ sort(self):
-        self.lst = sorted(self.lst, key=cmpFn)
-        self.lstguid = [obj.guid for obj in self.lst ]
+    ___ sort
+        lst _ sorted(lst, key_cmpFn)
+        lstguid _ [obj.guid for obj in lst ]
 
     ___ find  guid):
-        return bisect.bisect_left(self.lstguid, guid)
+        r_ bisect.bisect_left(lstguid, guid)
 
     ___ reverse_find  guid):
-        return bisect.bisect_right(self.lstguid, guid)
+        r_ bisect.bisect_right(lstguid, guid)
 
 # list iterator
 # ListIterator simply operates on a list of primitive types.
 c_ ListIterator:
     ___  -   lst):
-        self.lst = lst
-        self.cur = 0
+        lst _ lst
+        cur _ 0
 
-    ___ get(self):
-        if self.cur >=0 and self.cur < len(self.lst):
-            return self.lst[self.cur]
+    ___ get
+        if cur >_0 and cur < len(lst):
+            r_ lst[cur]
         else:
-            return None
+            r_ None
 
-    ___ next(self):
-        if self.cur < len(self.lst) -1:
-            self.cur += 1
-            return True
+    ___ next
+        if cur < len(lst) -1:
+            cur +_ 1
+            r_ True
         else:
-            return False
+            r_ False
 
-    ___ prev(self):
-        if self.cur > 0:
-            self.cur -= 1
-            return True
+    ___ prev
+        if cur > 0:
+            cur -_ 1
+            r_ True
         else:
-            return False
+            r_ False
 
-    ___ info(self):
-        return str(self.get())
+    ___ info
+        r_ str(get())
 
 # inherited from ListIterator
 # Member function info has been overriden.
 c_ ObjectListIterator(ListIterator):
-    ___ info(self):
-        obj = self.get()
+    ___ info
+        obj _ get()
         if obj == None:
-            return "None"
-        return "Current Object: " + ("%d\t%s\t%s\t%s\t%s" % (self.id, self.geo, self.guid, self.category, self.commodity))
+            r_ "None"
+        r_ "Current Object: " + ("%d\t%s\t%s\t%s\t%s" % (id, geo, guid, category, commodity))
 
 c_ Product:
     # initialisation
     ___  -   geo, guid, category, commodity):
-        self.id = 0
-        self.geo = geo
-        self.guid = guid
-        self.category = category
-        self.commodity = commodity
+        id _ 0
+        geo _ geo
+        guid _ guid
+        category _ category
+        commodity _ commodity
 
     # for print
-    ___ __str__(self):
-        return ("%d\t%s\t%s\t%s\t%s" % (self.id, self.geo, self.guid, self.category, self.commodity))
+    ___ __str__
+        r_ ("%d\t%s\t%s\t%s\t%s" % (id, geo, guid, category, commodity))
 
 # reads 4 fields from given file
 ___ read_csv(file_name):
-    lst = []
+    lst _ []
     try:
-        with open(file_name, newline='', encoding='utf-8') as csvfile:
-            reader = csv.DictReader(csvfile)
+        with open(file_name, newline_'', encoding_'utf-8') as csvfile:
+            reader _ csv.DictReader(csvfile)
             for row in reader:
-                product = Product(row['GEO'], row['DGUID'], row['Food categories'], row['Commodity'])
+                product _ Product(row['GEO'], row['DGUID'], row['Food categories'], row['Commodity'])
                 print (product)
                 lst.append(product)
 
     except:
         print ('read_csv failed')
 
-    return lst
+    r_ lst
 
 ___ main():
-    lst = read_csv('input.csv')
-    n = len(lst)
+    lst _ read_csv('input.csv')
+    n _ len(lst)
 
-    db = Database()
+    db _ Database()
     db.select_table('products')
 
     for item in lst:

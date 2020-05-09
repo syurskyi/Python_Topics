@@ -1,6 +1,6 @@
-import unittest
+______ unittest
 
-from phonebook import PhoneBook
+____ phonebook ______ PhoneBook
 
 
 c_ PhoneBookTest(unittest.TestCase):
@@ -8,7 +8,7 @@ c_ PhoneBookTest(unittest.TestCase):
     # setUp method is inherited from TestCase super class and called BEFORE each test method
     ___ setUp(self) -> None:
         # construct a new phonebook instance before each test case executes
-        self.phonebook = PhoneBook()
+        phonebook _ PhoneBook()
 
     # tearDown method is called AFTER each test method
     # release resources reserved in setUp method OR during test
@@ -16,45 +16,45 @@ c_ PhoneBookTest(unittest.TestCase):
     # def tearDown(self) -> None:
         # pass
 
-    ___ test_lookup_by_name(self):
+    ___ test_lookup_by_name
         # construct a new phonebook class instance
         # phonebook = PhoneBook()
         # insert new name and number into phonebook
-        self.phonebook.add("Bob", "12345")
+        phonebook.add("Bob", "12345")
         # lookup same name I just added
-        number = self.phonebook.lookup("Bob")
+        number _ phonebook.lookup("Bob")
         # check that the name i've looked up is associated to the number
         # first value is value were checking against, second argument is actual value from unit test
-        self.assertEqual("12345", number)
+        assertEqual("12345", number)
 
-    ___ test_missing_name(self):
+    ___ test_missing_name
         # assertRaises ensures everything in with context manager will throw a KeyError exception
         # KeyError is raised whenever a dictionary object is requested and the key is not present
         # In our case the name Giles was not present in the phonbook
-        with self.assertRaises(KeyError):
-            self.phonebook.lookup("Giles")
+        with assertRaises(KeyError):
+            phonebook.lookup("Giles")
 
     # annotation to skip a unittest
     # @unittest.skip("WIP")
-    ___ test_empty_phonebook_is_consistent(self):
+    ___ test_empty_phonebook_is_consistent
         # is_consistent method should return true for empty phonebook
-        self.assertTrue(self.phonebook.is_consistent())
+        assertTrue(phonebook.is_consistent())
 
-    ___ test_is_consistent_with_different_entries(self):
+    ___ test_is_consistent_with_different_entries
         # Arrange step to add entries
         # Act step where we check for consistency
         # Assert whether it is or not
-        self.phonebook.add("Bob", "12345")
-        self.phonebook.add("Anna", "012345")
-        self.assertTrue(self.phonebook.is_consistent())
+        phonebook.add("Bob", "12345")
+        phonebook.add("Anna", "012345")
+        assertTrue(phonebook.is_consistent())
 
-    ___ test_inconsistent_with_duplicate_entries(self):
-        self.phonebook.add("Bob", "12345")
-        self.phonebook.add("Sue", "12345")
-        self.assertFalse(self.phonebook.is_consistent())
+    ___ test_inconsistent_with_duplicate_entries
+        phonebook.add("Bob", "12345")
+        phonebook.add("Sue", "12345")
+        assertFalse(phonebook.is_consistent())
 
-    ___ test_inconsistent_with_duplicate_prefix(self):
-        self.phonebook.add("Bob", "12345")
-        self.phonebook.add("Sue", "123")
-        self.assertFalse(self.phonebook.is_consistent())
+    ___ test_inconsistent_with_duplicate_prefix
+        phonebook.add("Bob", "12345")
+        phonebook.add("Sue", "123")
+        assertFalse(phonebook.is_consistent())
 

@@ -1,6 +1,6 @@
-from nose import with_setup  # optional
+____ nose ______ with_setup  # optional
 
-from unnecessary_math import multiply
+____ unnecessary_math ______ multiply
 
 
 ___ setup_module(module):
@@ -34,10 +34,10 @@ ___ test_strings_a_3():
 
 c_ TestUM:
 
-    ___ setup(self):
+    ___ setup
         print("TestUM:setup() before each test method")
 
-    ___ teardown(self):
+    ___ teardown
         print("TestUM:teardown() after each test method")
 
     @classmethod
@@ -48,12 +48,12 @@ c_ TestUM:
     ___ teardown_class(cls):
         print("teardown_class() after any methods in this class")
 
-    ___ test_numbers_5_6(self):
+    ___ test_numbers_5_6
         print
         'test_numbers_5_6()  <============================ actual test code'
         assert multiply(5, 6) == 30
 
-    ___ test_strings_b_2(self):
+    ___ test_strings_b_2
         print
         'test_strings_b_2()  <============================ actual test code'
         assert multiply('b', 2) == 'bb'

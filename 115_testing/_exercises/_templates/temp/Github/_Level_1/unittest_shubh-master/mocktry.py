@@ -4,30 +4,30 @@ Created on Wed Jan  9 21:42:43 2019
 
 @author: Shubh
 """
-import requests
+______ requests
 c_ Student:
     
-    cal = 3
+    cal _ 3
     ___  -  first,last,age):
-        self.fname = first
-        self.lname = last
-        self.age = age
+        fname _ first
+        lname _ last
+        age _ age
         
-    ___ s_email(self):
-        return(self.fname + '.' + self.lname + '@gmail.com')
+    ___ s_email
+        r_(fname + '.' + lname + '@gmail.com')
     
-    ___ code(self):
-        return(self.fname + self.lname)
+    ___ code
+        r_(fname + lname)
         
     
     
     ___ mylinkedin  country):
-        r = requests.get(f'https://www.linkedin.com/{country}/{self.code()}')
+        r _ requests.get(f'https://www.linkedin.com/{country}/{code()}')
 
         if r.ok:
-            return r.text
+            r_ r.text
         else:
-            return 'Bad Response!'
+            r_ 'Bad Response!'
 
 
       

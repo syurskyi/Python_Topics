@@ -20,9 +20,9 @@
 # 
 
 ___ side_effect(value):
-        return value + 1
+        r_ value + 1
 
-m = MagicMock(side_effect=side_effect)
+m _ MagicMock(side_effect_side_effect)
 m(1)
 
 # OUTPUT: '2'

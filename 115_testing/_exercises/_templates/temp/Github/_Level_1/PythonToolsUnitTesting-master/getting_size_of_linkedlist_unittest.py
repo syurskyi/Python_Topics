@@ -3,31 +3,31 @@
 # Purpose: The purpose of this script is test a getSize() method
 #          of the linkedlist.py 
 
-import sys
-import unittest
-from linkedlist import LinkedList
+______ sys
+______ unittest
+____ linkedlist ______ LinkedList
 
 c_ SizeOfLinkedList(unittest.TestCase):
-    ___ setUp(self):
+    ___ setUp
         try:
             #create list
-            self.newList = LinkedList()
-            self.fullSize = 10
-            self.reduced = 6
+            newList _ LinkedList()
+            fullSize _ 10
+            reduced _ 6
             #populate the list with data 0 to 9
             for i in range(10):
-                self.newList.addNode(i)
+                newList.addNode(i)
         except:
             print('\nSetup failed: '+ str(sys.exc_info()[0]))
 
-    ___ testFullSize(self):
-        self.assertEqual(self.newList.getSize(), self.fullSize)
+    ___ testFullSize
+        assertEqual(newList.getSize(), fullSize)
 
-    ___ testReduced(self):
+    ___ testReduced
         for i in range(4):
-            self.newList.removeNode(i)
-        self.assertNotEqual(self.newList.getSize(), self.fullSize)
-        self.assertEqual(self.newList.getSize(), self.reduced)
+            newList.removeNode(i)
+        assertNotEqual(newList.getSize(), fullSize)
+        assertEqual(newList.getSize(), reduced)
 
 if __name__ == '__main__':
-    unittest.main(verbosity=2)
+    unittest.main(verbosity_2)

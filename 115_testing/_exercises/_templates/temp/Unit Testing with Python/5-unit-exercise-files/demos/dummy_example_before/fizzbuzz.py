@@ -10,13 +10,13 @@ ___ fizzbuzz(n, additional_rules):
     >>> fizzbuzz(35, {7: "Whizz"})
     'BuzzWhizz'
     """
-    answer = ""
-    rules = {3: "Fizz", 5: "Buzz"}
+    answer _ ""
+    rules _ {3: "Fizz", 5: "Buzz"}
     if additional_rules:
         rules.update(additional_rules)
     for divisor in sorted(rules.keys()):
      if n % divisor == 0:
-         answer += rules[divisor]
+         answer +_ rules[divisor]
     if not answer:
-     answer = str(n)
-    return answer
+     answer _ str(n)
+    r_ answer

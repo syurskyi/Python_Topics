@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 #-*-coding: utf-8-*-
 
-import argparse
-from math import ceil, floor
+______ argparse
+____ math ______ ceil, floor
 
 
 c_ Parser():
@@ -21,24 +21,24 @@ c_ Parser():
         :return: список со списками данных по каждой строке
         """
 
-        SOURCE = []
-        qty = 0
-        allines = 0
+        SOURCE _ []
+        qty _ 0
+        allines _ 0
 
         for line in fileobj:
-            allines += 1
+            allines +_ 1
             try:
-                L = list(line.split('\t'))
+                L _ list(line.split('\t'))
                 L[index] == True
             except IndexError:
                 pass
             else:
-                L[-1] = L[-1].rstrip()
+                L[-1] _ L[-1].rstrip()
                 SOURCE.append(L)
-                qty += 1
+                qty +_ 1
 
         print('Извлечено ' + str(qty) + ' строк из ' + str(allines))
-        return SOURCE
+        r_ SOURCE
 
     ___ check_pos  source, *heads):
         """
@@ -48,13 +48,13 @@ c_ Parser():
         :return: [int, int...] - список с позиционными номерами данных
         в списках/кортежах, соответствующих заголовкам столбцов
         """
-        number = []
+        number _ []
 
         for head in heads:
             if head in source[0]:
                 number.append(source[0].index(head))
 
-        return number
+        r_ number
 
     ___ int_converter  listobj, *index):
         """
@@ -64,12 +64,12 @@ c_ Parser():
         :param index: integer - позиционный номер для списков с данными
         :return: None
         """
-        linecount = 0
+        linecount _ 0
         for elem in listobj:
-            linecount += 1
+            linecount +_ 1
             for num in index:
                 try:
-                    elem[num] = int(elem[num])
+                    elem[num] _ int(elem[num])
                 except (TypeError, ValueError):
                     print('Неверный формат в ' + str(num+1) + ' столбце, в ' +\
                           str(linecount) + ' строке данных.')
@@ -84,7 +84,7 @@ c_ Parser():
         :return: list - список неповторяющихся значений для каждого объекта
         списка/кортежа под номером index
         """
-        keyname = []
+        keyname _ []
 
         for elem in source:
             if elem[index] in keyname:
@@ -92,7 +92,7 @@ c_ Parser():
             else:
                 keyname.append(elem[index])
 
-        return keyname
+        r_ keyname
 
     ___ fin_prep  fileobj, index, *heads):
         """
@@ -106,15 +106,15 @@ c_ Parser():
         с кортежами данных
         """
 
-        SOURCE = self.data_extr(fileobj, index)
-        head_list = [head for head in heads]
-        data_pos = self.check_pos(SOURCE, *head_list)
+        SOURCE _ data_extr(fileobj, index)
+        head_list _ [head for head in heads]
+        data_pos _ check_pos(SOURCE, *head_list)
 
-        SOURCE = SOURCE[1:]
-        self.int_converter(SOURCE, *data_pos[1:])
-        keyname = self.key_names(SOURCE, data_pos[0])
+        SOURCE _ SOURCE[1:]
+        int_converter(SOURCE, *data_pos[1:])
+        keyname _ key_names(SOURCE, data_pos[0])
 
-        DATAS = {name: [] for name in keyname}
+        DATAS _ {name: [] for name in keyname}
 
         for name in keyname:
             for num in data_pos[1:]:
@@ -122,7 +122,7 @@ c_ Parser():
                     tuple( \
                         sorted([x[num] for x in SOURCE if x[data_pos[0]] == name])))
 
-        return DATAS
+        r_ DATAS
 
 
 c_ Statistics:
@@ -132,15 +132,15 @@ c_ Statistics:
         Сортирует итерируемый объект и преобразует в tuple
         :param data: list/tuple с данными
         """
-        self.data = tuple(sorted(data))
+        data _ tuple(sorted(data))
 
-    ___ minimal(self):
+    ___ minimal
         """
         :return: минимальное значение из self.data
         """
-        return self.data[0]
+        r_ data[0]
 
-    ___ median(self):
+    ___ median
         """
         Если число элементов четное, то вычисляется полусумма значений двух
         средних индексов и округляется вверх до ближайшего целого значения.
@@ -149,16 +149,16 @@ c_ Statistics:
         :return: статистические 50% (медиану) данных в self.data
         """
 
-        lendata = len(self.data)
+        lendata _ len(data)
 
         if lendata % 2 == 0:
-            return ceil((self.data[lendata//2 - 1] + self.data[lendata//2]) /2)
+            r_ ceil((data[lendata//2 - 1] + data[lendata//2]) /2)
             #округление в большую сторону
 
         else:
-            return (self.data[lendata//2])
+            r_ (data[lendata//2])
 
-    ___ percent90(self):
+    ___ percent90
         """
         Если индекс, находящийся на границе 9/10 от data, представляет
         собой целое число, то функция возвращает значение объекта под этим
@@ -171,19 +171,19 @@ c_ Statistics:
         граничного индекса, округленного внииз до целого числа.
         :return: статистические 90% данных в data
         """
-        lendata = len(self.data)
-        index_plus1 = floor(lendata * 0.9)
-        index = index_plus1 - 1
+        lendata _ len(data)
+        index_plus1 _ floor(lendata * 0.9)
+        index _ index_plus1 - 1
 
         if lendata % 10 == 0:
-            return self.data[index]
+            r_ data[index]
 
         else:
-            return (self.data[index] + ceil( \
-                (self.data[index_plus1] - self.data[index]) * \
+            r_ (data[index] + ceil( \
+                (data[index_plus1] - data[index]) * \
                 (lendata * 0.9 - index_plus1)))
 
-    ___ percent99(self):
+    ___ percent99
         """
         Если индекс, находящийся на границе 99/100 от data, представляет
         собой целое число, то функция возвращает значение объекта под этим
@@ -196,19 +196,19 @@ c_ Statistics:
         граничного индекса, округленного внииз до целого числа.
         :return: статистические 99% данных в data
         """
-        lendata = len(self.data)
-        index_plus1 = floor(lendata * 0.99)
-        index = index_plus1 - 1
+        lendata _ len(data)
+        index_plus1 _ floor(lendata * 0.99)
+        index _ index_plus1 - 1
 
         if lendata % 100 == 0:
-            return self.data[index]
+            r_ data[index]
 
         else:
-            return (self.data[index] + ceil( \
-                (self.data[index_plus1] - self.data[index]) * \
+            r_ (data[index] + ceil( \
+                (data[index_plus1] - data[index]) * \
                 (lendata * 0.99 - index_plus1)))
 
-    ___ percent999(self):
+    ___ percent999
         """
         Если индекс, находящийся на границе 999/1000 от data, представляет
         собой целое число, то функция возвращает значение объекта под этим
@@ -221,19 +221,19 @@ c_ Statistics:
         граничного индекса, округленного внииз до целого числа.
         :return: статистические 99,9% данных в data
         """
-        lendata = len(self.data)
-        index_plus1 = floor(lendata * 0.999)
-        index = index_plus1 - 1
+        lendata _ len(data)
+        index_plus1 _ floor(lendata * 0.999)
+        index _ index_plus1 - 1
 
         if lendata % 1000 == 0:
-            return self.data[index]
+            r_ data[index]
 
         else:
-            return (self.data[index] + ceil( \
-                (self.data[index_plus1] - self.data[index]) *\
+            r_ (data[index] + ceil( \
+                (data[index_plus1] - data[index]) *\
                 (lendata * 0.999 - index_plus1)))
 
-    ___ fractions  denom=5):
+    ___ fractions  denom_5):
         """
         1.  Cоздает список объектов из data, округленных вверх до ближайшего
             целого значения, кратного denom.
@@ -251,26 +251,26 @@ c_ Statistics:
         :param denom: integer - число, при делении данных на которое остаток 0.
         :return: {int: [int, float, float]}
         """
-        rdata = [(x - x% -denom) for x in self.data]
-        lendata = len(rdata)
-        fdict = {number: [0] for number in sorted(set(rdata))}
+        rdata _ [(x - x% -denom) for x in data]
+        lendata _ len(rdata)
+        fdict _ {number: [0] for number in sorted(set(rdata))}
 
         for number in rdata:
-                fdict[number][0] += 1
+                fdict[number][0] +_ 1
 
         for key in fdict:
-            fdict[key].append(format(fdict[key][0] / lendata * 100, '.2f'))
+            fdict[key].append(f..(fdict[key][0] / lendata * 100, '.2f'))
 
-        rkeys = list(reversed([x for x in fdict.keys()]))
+        rkeys _ list(reversed([x for x in fdict.keys()]))
 
         while rkeys:
-            sum = 0
+            sum _ 0
             for key in rkeys:
-                sum += fdict[key][0]
-            fdict[rkeys[0]].append(format(sum / lendata * 100, '.2f'))
-            rkeys = rkeys[1:]
+                sum +_ fdict[key][0]
+            fdict[rkeys[0]].append(f..(sum / lendata * 100, '.2f'))
+            rkeys _ rkeys[1:]
 
-        return fdict
+        r_ fdict
 
 
 c_ StatsResult(Statistics):
@@ -279,7 +279,7 @@ c_ StatsResult(Statistics):
         """
           :param datas: {key: [[],[]...]} или {key: [(),()...]}
         """
-        self.datas = datas
+        datas _ datas
 
     ___ run  *list_funcs):
         """
@@ -289,30 +289,30 @@ c_ StatsResult(Statistics):
         :return: {key: [(),()...]}
         """
 
-        D = {}
+        D _ {}
 
-        for key in self.datas:
-            D[key] = []
-            for data in self.datas[key]:
-                self.data = tuple(sorted(data)) # for not sorted Source_data
+        for key in datas:
+            D[key] _ []
+            for data in datas[key]:
+                data _ tuple(sorted(data)) # for not sorted Source_data
                 D[key].append(tuple(x() for x in list_funcs))
 
-        return D
+        r_ D
 
 
 if __name__ == '__main__':
 
-    argparser = argparse.ArgumentParser()
+    argparser _ argparse.ArgumentParser()
     argparser.add_argument('-f', '--file')
 
-    file_source = open(argparser.parse_args().file, 'r')
-    datas = Parser().fin_prep(file_source, 4, 'EVENT', 'AVGTSMR')
+    file_source _ open(argparser.parse_args().file, 'r')
+    datas _ Parser().fin_prep(file_source, 4, 'EVENT', 'AVGTSMR')
     file_source.close()
 
-    stat = StatsResult(datas)
-    list_funcs = [stat.minimal, stat.median, stat.percent90, \
+    stat _ StatsResult(datas)
+    list_funcs _ [stat.minimal, stat.median, stat.percent90, \
                       stat.percent99, stat.percent999, stat.fractions]
-    stdata = stat.run(*list_funcs)
+    stdata _ stat.run(*list_funcs)
 
     with open('result_stat.txt','w') as file:
         for key in stdata.keys():
@@ -321,14 +321,14 @@ if __name__ == '__main__':
                   '90%=' + str(stdata[key][0][2]),
                   '99%=' + str(stdata[key][0][3]),
                   '99.9%=' + str(stdata[key][0][4]),
-                  '\n', sep='\t', end='\n', file=file)
+                  '\n', sep_'\t', end_'\n', file_file)
 
             print('', 'ExecTime', 'TransNo', 'Weight,%', 'Percent',
-                  sep='\t', end='\n', file=file)
+                  sep_'\t', end_'\n', file_file)
 
             for timekey in stdata[key][0][5]:
                 print('', timekey,
                       stdata[key][0][5][timekey][0],
                       stdata[key][0][5][timekey][1],
                       stdata[key][0][5][timekey][2],
-                      sep='\t', end='\n', file=file)
+                      sep_'\t', end_'\n', file_file)

@@ -1,31 +1,31 @@
 #/usr/bin/env python3
 
 
-from random import randint
+____ random ______ randint
 
 
-___ foobar(arg=None):
-    return True
+___ foobar(arg_N..
+    r_ True
 
 
 ___ add(a, b):
-    return a + b
+    r_ a + b
 
 
 ___ subtract(a, b):
-    return a - b
+    r_ a - b
 
 
 ___ divide(a, b):
-    return a / float(b)
+    r_ a / float(b)
 
 
 ___ multiply(a, b):
-    return a * b
+    r_ a * b
 
 
 ___ reverse_string(arg):
-    return arg[::-1]
+    r_ arg[::-1]
 
 
 ___ print_something(arg):
@@ -33,4 +33,4 @@ ___ print_something(arg):
 
 
 ___ rand_int(max):
-    return randint(0, max)
+    r_ randint(0, max)

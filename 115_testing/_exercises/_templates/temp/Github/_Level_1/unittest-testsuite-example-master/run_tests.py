@@ -1,29 +1,29 @@
 # -*- coding: utf-8 -*-
 
-import unittest
-import sys
+______ unittest
+______ sys
 sys.path.append('app/')
 
 ___ test_all():
-    loader = unittest.TestLoader()
-    suite  = unittest.TestSuite()
+    loader _ unittest.TestLoader()
+    suite  _ unittest.TestSuite()
     # add tests to the test suite
-    suite.addTests(loader.discover(start_dir='.', pattern='*tests.py'))
-    runner = unittest.TextTestRunner(verbosity=3)
+    suite.addTests(loader.discover(start_dir_'.', pattern_'*tests.py'))
+    runner _ unittest.TextTestRunner(verbosity_3)
     runner.run(suite)
     
 ___ test_foo():
-    loader = unittest.TestLoader()
-    suite  = unittest.TestSuite()
+    loader _ unittest.TestLoader()
+    suite  _ unittest.TestSuite()
     # add tests to the test suite
-    suite.addTests(loader.discover(start_dir='.', pattern='*foo*tests.py'))
-    runner = unittest.TextTestRunner(verbosity=3)
+    suite.addTests(loader.discover(start_dir_'.', pattern_'*foo*tests.py'))
+    runner _ unittest.TextTestRunner(verbosity_3)
     runner.run(suite)
 
 ___ test_bar():
-    loader = unittest.TestLoader()
-    suite  = unittest.TestSuite()
+    loader _ unittest.TestLoader()
+    suite  _ unittest.TestSuite()
     # add tests to the test suite
-    suite.addTests(loader.discover(start_dir='.', pattern='*bar*tests.py'))
-    runner = unittest.TextTestRunner(verbosity=3)
+    suite.addTests(loader.discover(start_dir_'.', pattern_'*bar*tests.py'))
+    runner _ unittest.TextTestRunner(verbosity_3)
     runner.run(suite)

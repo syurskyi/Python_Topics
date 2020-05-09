@@ -1,17 +1,17 @@
-import sqlite3
-import unittest
+______ sqlite3
+______ unittest
 
-from app import app_with_db
+____ app ______ app_with_db
 
 
 c_ AppWithDBTests(unittest.TestCase):
 
-    ___ setUp(self):
-        self.conn = sqlite3.connect(":memory:")
-        self.conn.execute("CREATE TABLE blog (id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT, text TEXT)")
+    ___ setUp
+        conn _ sqlite3.connect(":memory:")
+        conn.execute("CREATE TABLE blog (id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT, text TEXT)")
 
-    ___ tearDown(self):
-        self.conn.close()
+    ___ tearDown
+        conn.close()
 
-    ___ test_entry_creation(self):
-        app_with_db.create_blog_entry(db=self.conn, title="pytest", text="Pytest is awesome!")
+    ___ test_entry_creation
+        app_with_db.create_blog_entry(db_conn, title_"pytest", text_"Pytest is awesome!")

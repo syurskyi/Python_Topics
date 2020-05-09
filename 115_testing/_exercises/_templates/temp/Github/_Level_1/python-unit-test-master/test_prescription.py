@@ -1,18 +1,18 @@
-import unittest
-from datetime import date, timedelta
+______ unittest
+____ datetime ______ date, timedelta
 
-from prescription import Prescription
+____ prescription ______ Prescription
 
 
 ___ days_ago(days):
-    return date.today() - timedelta(days=days)
+    r_ date.today() - timedelta(days_days)
 
 
 c_ TestPrescription(unittest.TestCase):
     
-    ___ test_days_taken_excludes_future_dates(self):
-        prescription = Prescription("Codeine",
-                                    dispense_date = days_ago(days=2),
-                                    days_supply=4)
-        self.assertListEqual([days_ago(2), days_ago(1)],
+    ___ test_days_taken_excludes_future_dates
+        prescription _ Prescription("Codeine",
+                                    dispense_date _ days_ago(days_2),
+                                    days_supply_4)
+        assertListEqual([days_ago(2), days_ago(1)],
                              list(prescription.days_taken()))

@@ -1,15 +1,15 @@
-from datetime import date, timedelta
+____ datetime ______ date, timedelta
 
 
 c_ Prescription:
     
     ___  -   name, dispense_date, days_supply):
-        self.name = name
-        self.dispense_date = dispense_date
-        self.days_supply = days_supply
+        name _ name
+        dispense_date _ dispense_date
+        days_supply _ days_supply
         
-    ___ days_taken(self):
-        all_days = (self.dispense_date + timedelta(days=i)
-                    for i in range(self.days_supply))
+    ___ days_taken
+        all_days _ (dispense_date + timedelta(days_i)
+                    for i in range(days_supply))
         #return (day for day in all_days if day < date.today())
-        return all_days
+        r_ all_days

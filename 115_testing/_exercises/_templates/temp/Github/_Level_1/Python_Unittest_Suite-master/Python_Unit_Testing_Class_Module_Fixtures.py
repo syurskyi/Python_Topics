@@ -29,14 +29,14 @@
 # These must be implemented as class methods.
 # 
 
-import unittest
+______ unittest
 
 c_ Test(unittest.TestCase):
 
     @classmethod
 
     ___ setUpClass(cls):
-        cls._connection = createExpensiveConnectionObject()
+        cls._connection _ createExpensiveConnectionObject()
 
     @classmethod
 

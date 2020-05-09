@@ -1,7 +1,7 @@
-from unittest import TestCase
-from my_package.subpackage.utils import somefunction
+____ unittest ______ TestCase
+____ my_package.subpackage.utils ______ somefunction
 
 c_ TestUtils(TestCase):
-    ___ test_somefunction(self):
-        self.assertEqual(somefunction('add', 5, 6), 11)
+    ___ test_somefunction
+        assertEqual(somefunction('add', 5, 6), 11)
 

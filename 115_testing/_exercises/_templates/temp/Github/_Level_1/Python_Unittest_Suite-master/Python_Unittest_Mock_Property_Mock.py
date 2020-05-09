@@ -22,23 +22,23 @@
 c_ Foo:
         @property
 
-        ___ foo(self):
-            return 'something'
+        ___ foo
+            r_ 'something'
 
         @foo.setter
 
         ___ foo  value):
             pass
 
-with patch('__main__.Foo.foo', new_callable=PropertyMock) as mock_foo:
+with patch('__main__.Foo.foo', new_callable_PropertyMock) as mock_foo:
 
-        mock_foo.return_value = 'mockity-mock'
+        mock_foo.return_value _ 'mockity-mock'
 
-        this_foo = Foo()
+        this_foo _ Foo()
 
         print(this_foo.foo)
 
-        this_foo.foo = 6
+        this_foo.foo _ 6
 
 # OUTPUT: 'mockity-mock'
 
@@ -51,11 +51,11 @@ mock_foo.mock_calls
 # Instead you can attach it to the mock type object:
 # 
 
-m = MagicMock()
+m _ MagicMock()
 
-p = PropertyMock(return_value=3)
+p _ PropertyMock(return_value_3)
 
-type(m).foo = p
+type(m).foo _ p
 
 m.foo
 

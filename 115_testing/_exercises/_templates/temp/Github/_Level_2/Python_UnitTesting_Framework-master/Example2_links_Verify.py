@@ -1,7 +1,7 @@
-from selenium import webdriver
-import unittest
-import time
-from selenium.webdriver.common.by import By
+____ selenium ______ webdriver
+______ unittest
+______ time
+____ selenium.webdriver.common.by ______ By
 
 
 c_ Internet(unittest.TestCase):
@@ -9,11 +9,11 @@ c_ Internet(unittest.TestCase):
     @classmethod
     ___ setUpClass(cls):
         global driver
-        driver = webdriver.Chrome()
+        driver _ webdriver.Chrome()
         driver.get("http://the-internet.herokuapp.com/")
 
-    ___ test_A_Links(self):
-        Links = driver.find_elements(By.TAG_NAME, "a")
+    ___ test_A_Links
+        Links _ driver.find_elements(By.TAG_NAME, "a")
         print("Total Number of Links", len(Links))
 
         for morelinks in Links:

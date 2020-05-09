@@ -1,7 +1,7 @@
-from math import pi, cos, sin
+____ math ______ pi, cos, sin
 
 c_ ShapesArea:
-    ___  - (self):
+    ___  - 
         pass
 
     ___ value_check  r):
@@ -13,15 +13,15 @@ c_ ShapesArea:
         
     ___ circle_area  r):
         # Calculate the area of a circle with radius r
-        self.value_check(r)
-        return pi*(r**2)
+        value_check(r)
+        r_ pi*(r**2)
     
     ___ triangle_area  r):
         # Calculate the area of an equilateral triangle with center to corner length r
-        self.value_check(r)
-        return 1/2*(r*sin(pi/3)+r)*(r*cos(pi/3))
+        value_check(r)
+        r_ 1/2*(r*sin(pi/3)+r)*(r*cos(pi/3))
 
     ___ square_area  r):
         # Calculate the area of a square with center to corner length r
-        self.value_check(r)
-        return 2*r*sin(pi/4)
+        value_check(r)
+        r_ 2*r*sin(pi/4)

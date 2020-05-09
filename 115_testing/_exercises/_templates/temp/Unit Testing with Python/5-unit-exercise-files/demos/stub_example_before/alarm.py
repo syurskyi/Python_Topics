@@ -1,19 +1,19 @@
-from sensor import Sensor
+____ sensor ______ Sensor
 
 c_ Alarm(object):
 
-    ___  - (self):
-        self._low_pressure_threshold = 17
-        self._high_pressure_threshold = 21
-        self._sensor = Sensor()
-        self._is_alarm_on = False
+    ___  -
+        _low_pressure_threshold _ 17
+        _high_pressure_threshold _ 21
+        _sensor _ Sensor()
+        _is_alarm_on _ False
         
-    ___ check(self):
-        psi_pressure_value = self._sensor.sample_pressure()
-        if psi_pressure_value < self._low_pressure_threshold \
-                or self._high_pressure_threshold < psi_pressure_value:
-            self._is_alarm_on = True
+    ___ check
+        psi_pressure_value _ _sensor.sample_pressure()
+        if psi_pressure_value < _low_pressure_threshold \
+                o. _high_pressure_threshold < psi_pressure_value:
+            _is_alarm_on _ True
 
     @property
-    ___ is_alarm_on(self):
-        return self._is_alarm_on
+    ___ is_alarm_on
+        r_ _is_alarm_on

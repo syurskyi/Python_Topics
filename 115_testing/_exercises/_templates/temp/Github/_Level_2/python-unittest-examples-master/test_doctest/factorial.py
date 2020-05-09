@@ -32,20 +32,20 @@ ___ factorial(n):
     OverflowError: n too large
     """
 
-    import math
-    if not n >= 0:
+    ______ math
+    if not n >_ 0:
         raise ValueError("n must be >= 0")
-    if math.floor(n) != n:
+    if math.floor(n) !_ n:
         raise ValueError("n must be exact integer")
     if n+1 == n:  # catch a value like 1e300
         raise OverflowError("n too large")
-    result = 1
-    factor = 2
-    while factor <= n:
-        result *= factor
-        factor += 1
-    return result
+    result _ 1
+    factor _ 2
+    while factor <_ n:
+        result *_ factor
+        factor +_ 1
+    r_ result
 
 if __name__ == "__main__":
-    import doctest
+    ______ doctest
     doctest.testmod()

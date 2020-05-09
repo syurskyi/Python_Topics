@@ -3,10 +3,10 @@
 # exactly as shown.
 #
 #  There are several common ways to use doctest:
-# > To check that a module’s docstrings are up-to-date by verifying that all interactive examples still work as documented.
+# > To check that a moduleï¿½s docstrings are up-to-date by verifying that all interactive examples still work as documented.
 # > To perform regression testing by verifying that interactive examples from a test file or a test object work as expected.
 # > To write tutorial documentation for a package, liberally illustrated with input-output examples.
-#   Depending on whether the examples or the expository text are emphasized, this has the flavor of “literate testing” or “executable documentation”.
+#   Depending on whether the examples or the expository text are emphasized, this has the flavor of ï¿½literate testingï¿½ or ï¿½executable documentationï¿½.
 #
  
 #
@@ -20,7 +20,7 @@
 # For example,
 # 
 
-import doctest
+______ doctest
 
 print(doctest.script_from_examples(r"""
     Set x and y to 1 and 2.
@@ -37,7 +37,7 @@ print(doctest.script_from_examples(r"""
 
 # Set x and y to 1 and 2.
 
-x, y = 1, 2
+x, y _ 1, 2
 
 #
 # Print their sum:

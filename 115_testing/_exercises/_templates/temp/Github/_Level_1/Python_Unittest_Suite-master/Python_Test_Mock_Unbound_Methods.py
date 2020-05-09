@@ -33,13 +33,13 @@
 # 
 
 c_ Foo:
-      ___ foo(self):
+      ___ foo
           pass
 
-with patch.object(Foo, 'foo', autospec=True) as mock_foo:
-      mock_foo.return_value = 'foo'
+with patch.object(Foo, 'foo', autospec_True) as mock_foo:
+      mock_foo.return_value _ 'foo'
 
-      foo = Foo()
+      foo _ Foo()
 
       foo.foo()
 

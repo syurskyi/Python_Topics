@@ -1,5 +1,5 @@
-from nose.tools import raises, timed, istest, nottest
-import time
+____ nose.tools ______ raises, timed, istest, nottest
+______ time
 
 
 @raises(TypeError, ValueError)

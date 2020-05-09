@@ -1,55 +1,55 @@
 
-import unittest
+______ unittest
 
-from phonebook import Phonebook
+____ phonebook ______ Phonebook
 
 c_ PhonebookTest(unittest.TestCase):
     
-    ___ setUp(self):
-        self.phonebook = Phonebook()
+    ___ setUp
+        phonebook _ Phonebook()
     
-    ___ test_lookup_entry_by_name(self):
-        self.phonebook.add("Bob", "12345")
-        self.assertEqual("12345", self.phonebook.lookup("Bob"))
+    ___ test_lookup_entry_by_name
+        phonebook.add("Bob", "12345")
+        assertEqual("12345", phonebook.lookup("Bob"))
         
-    ___ test_missing_entry_raises_KeyError(self):
-        with self.assertRaises(KeyError):
-            self.phonebook.lookup("missing")
+    ___ test_missing_entry_raises_KeyError
+        with assertRaises(KeyError):
+            phonebook.lookup("missing")
             
-    ___ test_empty_phonebook_is_consistent(self):
-        self.assertTrue(self.phonebook.is_consistent())
+    ___ test_empty_phonebook_is_consistent
+        assertTrue(phonebook.is_consistent())
         
     @unittest.skip("poor example")
-    ___ test_is_consistent(self):
-        self.assertTrue(self.phonebook.is_consistent())
-        self.phonebook.add("Bob", "12345")
-        self.assertTrue(self.phonebook.is_consistent())
-        self.phonebook.add("Mary", "012345")
-        self.assertTrue(self.phonebook.is_consistent())
-        self.phonebook.add("Sue", "12345") # identical to Bob
-        self.assertFalse(self.phonebook.is_consistent())
-        self.phonebook.add("Sue", "123") # prefix of Bob
-        self.assertFalse(self.phonebook.is_consistent())
+    ___ test_is_consistent
+        assertTrue(phonebook.is_consistent())
+        phonebook.add("Bob", "12345")
+        assertTrue(phonebook.is_consistent())
+        phonebook.add("Mary", "012345")
+        assertTrue(phonebook.is_consistent())
+        phonebook.add("Sue", "12345") # identical to Bob
+        assertFalse(phonebook.is_consistent())
+        phonebook.add("Sue", "123") # prefix of Bob
+        assertFalse(phonebook.is_consistent())
         
-    ___ test_phonebook_with_normal_entries_is_consistent(self):
-        self.phonebook.add("Bob", "12345")
-        self.phonebook.add("Mary", "012345")
-        self.assertTrue(self.phonebook.is_consistent())
+    ___ test_phonebook_with_normal_entries_is_consistent
+        phonebook.add("Bob", "12345")
+        phonebook.add("Mary", "012345")
+        assertTrue(phonebook.is_consistent())
 
-    ___ test_phonebook_with_duplicate_entries_is_inconsistent(self):
-        self.phonebook.add("Bob", "12345")
-        self.phonebook.add("Mary", "12345")
-        self.assertFalse(self.phonebook.is_consistent())
+    ___ test_phonebook_with_duplicate_entries_is_inconsistent
+        phonebook.add("Bob", "12345")
+        phonebook.add("Mary", "12345")
+        assertFalse(phonebook.is_consistent())
         
-    ___ test_phonebook_with_numbers_that_prefix_one_another_is_inconsistent(self):
-        self.phonebook.add("Bob", "12345")
-        self.phonebook.add("Mary", "123")
-        self.assertFalse(self.phonebook.is_consistent())
+    ___ test_phonebook_with_numbers_that_prefix_one_another_is_inconsistent
+        phonebook.add("Bob", "12345")
+        phonebook.add("Mary", "123")
+        assertFalse(phonebook.is_consistent())
         
-    ___ test_phonebook_adds_names_and_numbers(self):
-        self.phonebook.add("Sue", "12345")
-        self.assertIn("Sue", phonebook.get_names())
-        self.assertIn("12345", phonebook.get_numbers())
+    ___ test_phonebook_adds_names_and_numbers
+        phonebook.add("Sue", "12345")
+        assertIn("Sue", phonebook.get_names())
+        assertIn("12345", phonebook.get_numbers())
         
         
         

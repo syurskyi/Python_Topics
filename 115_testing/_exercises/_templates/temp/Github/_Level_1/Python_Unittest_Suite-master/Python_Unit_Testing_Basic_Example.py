@@ -28,27 +28,27 @@
 # Here is a short script to test three string methods:
 # 
 
-import unittest
+______ unittest
 
 c_ TestStringMethods(unittest.TestCase):
 
-    ___ test_upper(self):
+    ___ test_upper
 
-        self.assertEqual('foo'.upper(), 'FOO')
+        assertEqual('foo'.upper(), 'FOO')
 
-    ___ test_isupper(self):
-        self.assertTrue('FOO'.isupper())
+    ___ test_isupper
+        assertTrue('FOO'.isupper())
 
-        self.assertFalse('Foo'.isupper())
+        assertFalse('Foo'.isupper())
 
-    ___ test_split(self):
-        s = 'hello world'
+    ___ test_split
+        s _ 'hello world'
  
-        self.assertEqual(s.split(), ['hello', 'world'])
+        assertEqual(s.split(), ['hello', 'world'])
 
         # check that s.split fails when the separator is not a string
 
-        with self.assertRaises(TypeError):
+        with assertRaises(TypeError):
             s.split(2)
 
 if __name__ == '__main__':

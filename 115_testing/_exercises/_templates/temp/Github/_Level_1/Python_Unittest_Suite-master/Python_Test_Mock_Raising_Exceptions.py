@@ -1,5 +1,5 @@
 # Python Test Mock
-# unittest.mock — mock object library
+# unittest.mock ï¿½ mock object library
 # unittest.mock is a library for testing in Python.
 # It allows you to replace parts of your system under test with mock objects and make assertions about how they have been used.
 # unittest.mock provides a core Mock class removing the need to create a host of stubs throughout your test suite.
@@ -9,7 +9,7 @@
 # Additionally, mock provides a patch() decorator that handles patching module and class level attributes within the scope of a test, along with sentinel
 # for creating unique objects.
 # 
-# Mock is very easy to use and is designed for use with unittest. Mock is based on the ‘action -> assertion’ pattern instead of ‘record -> replay’ used by
+# Mock is very easy to use and is designed for use with unittest. Mock is based on the ï¿½action -> assertionï¿½ pattern instead of ï¿½record -> replayï¿½ used by
 # many mocking frameworks.
 #
 
@@ -18,6 +18,6 @@
 # A useful attribute is side_effect. If you set this to an exception class or instance then the exception will be raised when the mock is called.
 # 
 
-mock = Mock(side_effect=Exception('Boom!'))
+mock _ Mock(side_effect_Exception('Boom!'))
 
 mock()

@@ -1,5 +1,5 @@
-from selenium import webdriver
-import unittest
+____ selenium ______ webdriver
+______ unittest
 
 
 c_ Internect(unittest.TestCase):
@@ -7,16 +7,16 @@ c_ Internect(unittest.TestCase):
     @classmethod
     ___ setUpClass(cls):
         global driver
-        driver = webdriver.Chrome()
+        driver _ webdriver.Chrome()
         driver.get("http://the-internet.herokuapp.com/")
 
-    ___ test_A_VerifyLink(self):
-        URL = driver.current_url
-        self.assertEqual(URL, 'http://the-internet.herokuapp.com/')
+    ___ test_A_VerifyLink
+        URL _ driver.current_url
+        assertEqual(URL, 'http://the-internet.herokuapp.com/')
 
-    ___ test_B_Title(self):
-        Title=driver.title
-        self.assertEqual(Title,'The Internet')
+    ___ test_B_Title
+        Title_driver.title
+        assertEqual(Title,'The Internet')
 
     @classmethod
     ___ tearDownClass(cls):

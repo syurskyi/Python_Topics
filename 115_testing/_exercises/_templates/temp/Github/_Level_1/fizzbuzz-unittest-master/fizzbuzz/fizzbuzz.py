@@ -1,9 +1,9 @@
 ___ fizzbuzz(num):
-  if (num >= 0 and num % 3 == 0 and num % 5 == 0):
-    return "Fizz Buzz"
-  if (num >= 0 and num % 3 == 0):
-    return "Fizz"
-  if (num >= 0 and num % 5 == 0):
-    return "Buzz"
-  if (num >= 0):
-    return ""
+  if (num >_ 0 and num % 3 == 0 and num % 5 == 0):
+    r_ "Fizz Buzz"
+  if (num >_ 0 and num % 3 == 0):
+    r_ "Fizz"
+  if (num >_ 0 and num % 5 == 0):
+    r_ "Buzz"
+  if (num >_ 0):
+    r_ ""

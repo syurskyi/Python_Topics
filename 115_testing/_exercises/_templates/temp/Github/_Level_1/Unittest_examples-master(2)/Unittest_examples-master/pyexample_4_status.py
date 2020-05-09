@@ -14,27 +14,27 @@
     +-------------------------+
 """
 
-import unittest
+______ unittest
 
 
 c_ BaseTestClass(unittest.TestCase):
 
-    ___ test_ok(self):
-        self.assertEqual(210, 110*2 - 10)
+    ___ test_ok
+        assertEqual(210, 110*2 - 10)
 
     @unittest.skip("not supported")
-    ___ test_skip(self):
-        self.assertEqual(1000, 10*10*10)
+    ___ test_skip
+        assertEqual(1000, 10*10*10)
 
-    ___ test_fail(self):
-        self.assertEqual(1, 2)
+    ___ test_fail
+        assertEqual(1, 2)
 
-    ___ test_error(self):
+    ___ test_error
         """Вызывает ERROR (E) с запуском по-умолчанию"""
         raise ZeroDivisionError('Error! Division by zero')
 
     @unittest.expectedFailure
-    ___ test_expected(self):
+    ___ test_expected
         """
             Вызывает expected failure (x) с декоратором
             @unittest.expectedFailure
@@ -42,13 +42,13 @@ c_ BaseTestClass(unittest.TestCase):
         raise ZeroDivisionError('Error! Division by zero')
 
     @unittest.expectedFailure
-    ___ test_expected_ok(self):
+    ___ test_expected_ok
         """
             Если тестс декоратором @unittest.expectedFailure,
             исключения не кидает и пройден успешно, ему
             присваивается статус - unexpected success (u).
         """
-        self.assertEqual(1, 1)
+        assertEqual(1, 1)
 
 
 if __name__ == '__main__':

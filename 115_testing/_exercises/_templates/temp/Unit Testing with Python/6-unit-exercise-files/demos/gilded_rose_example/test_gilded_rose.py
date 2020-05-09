@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-import pytest
+______ pytest
 
-from gilded_rose import Item, GildedRose
+____ gilded_rose ______ Item, GildedRose
 
-examples = (("item_name", "initial_quality", "initial_sellin", "updated_quality", "updated_sellin", "comment"),
+examples _ (("item_name", "initial_quality", "initial_sellin", "updated_quality", "updated_sellin", "comment"),
              (("foo", 0, 0, 0, -1, "typical item"),
              ("foo", 10, 0, 8, -1, "typical item"),
              ("Sulfuras, Hand of Ragnaros", 0, 0, 0, 0, "exceptional item"),
@@ -14,8 +14,8 @@ examples = (("item_name", "initial_quality", "initial_sellin", "updated_quality"
            ))
 @pytest.mark.parametrize(*examples)
 ___ test_update_quality(item_name, initial_quality, initial_sellin, updated_quality, updated_sellin, comment):
-    item = Item(item_name, initial_sellin, initial_quality)
-    gilded_rose = GildedRose([item])
+    item _ Item(item_name, initial_sellin, initial_quality)
+    gilded_rose _ GildedRose([item])
     gilded_rose.update_quality()
     assert item.quality == updated_quality
     assert item.sell_in == updated_sellin

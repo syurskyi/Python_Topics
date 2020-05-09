@@ -3,10 +3,10 @@
 # exactly as shown.
 #
 #  There are several common ways to use doctest:
-# > To check that a module’s docstrings are up-to-date by verifying that all interactive examples still work as documented.
+# > To check that a moduleï¿½s docstrings are up-to-date by verifying that all interactive examples still work as documented.
 # > To perform regression testing by verifying that interactive examples from a test file or a test object work as expected.
 # > To write tutorial documentation for a package, liberally illustrated with input-output examples.
-#   Depending on whether the examples or the expository text are emphasized, this has the flavor of “literate testing” or “executable documentation”.
+#   Depending on whether the examples or the expository text are emphasized, this has the flavor of ï¿½literate testingï¿½ or ï¿½executable documentationï¿½.
 #
 
 #
@@ -31,11 +31,11 @@ raise CustomError('message')
 # Note that ELLIPSIS can also be used to ignore the details of the exception message, but such a test may still fail based on whether or not the module
 # details are printed as part of the exception name.
 #
-# Using IGNORE_EXCEPTION_DETAIL and the details from Python 2.3 is also the only clear way to write a doctest that doesn’t care about the exception detail
+# Using IGNORE_EXCEPTION_DETAIL and the details from Python 2.3 is also the only clear way to write a doctest that doesnï¿½t care about the exception detail
 # yet continues to pass under Python 2.3 or earlier (those releases do not support doctest directives and ignore them as irrelevant comments).
 #
 # For example:
 # 
 
-(1, 2)[3] = 'moo'
+(1, 2)[3] _ 'moo'
  

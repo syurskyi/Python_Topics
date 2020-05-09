@@ -27,7 +27,7 @@
 # Mock has two assert methods that are extremely handy: assert_called_with() and assert_called_once_with().
 # 
 
-mock = Mock(name='Thing', return_value=None)
+mock _ Mock(name_'Thing', return_value_None)
 mock(1, 2, 3)
 
 mock.assert_called_once_with(1, 2, 3)
@@ -40,7 +40,7 @@ mock.assert_called_once_with(1, 2, 3)
 # assertion is gone:
 # 
 
-mock = Mock(name='Thing', return_value=None)
+mock _ Mock(name_'Thing', return_value_None)
 mock(1, 2, 3)
 
 mock.assret_called_once_with(4, 5, 6)
@@ -58,9 +58,9 @@ mock.assret_called_once_with(4, 5, 6)
 # attributes on the mock that exist on the real class:
 # 
 
-from urllib import request
+____ urllib ______ request
 
-mock = Mock(spec=request.Request)
+mock _ Mock(spec_request.Request)
 mock.assret_called_with
 
 #
@@ -77,17 +77,17 @@ mock.has_data.assret_called_with()
 # Auto-speccing solves this problem. You can either pass autospec=True to patch() / patch.object() or use the create_autospec() function to create a mock 
 # with a spec. If you use the autospec=True argument to patch() then the object that is being replaced will be used as the spec object.
 # Because the speccing is done �lazily� (the spec is created as attributes on the mock are accessed) you can use it with very complex or deeply nested
-# objects (like modules that import modules that import modules) without a big performance hit.
+# objects (like modules that ______ modules that ______ modules) without a big performance hit.
 # 
 
 #
 # Here�s an example of it in use:
 # 
 
-from urllib import request
+____ urllib ______ request
 
-patcher = patch('__main__.request', autospec=True)
-mock_request = patcher.start()
+patcher _ patch('__main__.request', autospec_True)
+mock_request _ patcher.start()
 
 request is mock_request
 
@@ -105,13 +105,13 @@ mock_request.Request
 # Here�s what happens if we try to call it incorrectly:
 # 
 
-req = request.Request()
+req _ request.Request()
 
 #
 # The spec also applies to instantiated classes (i.e. the return value of specced mocks):
 # 
 
-req = request.Request('foo')
+req _ request.Request('foo')
 req
 
 # OUTPUT: '<NonCallableMagicMock name='request.Request()' spec='Request' id='...'>'
@@ -137,9 +137,9 @@ req.add_header.assert_called_with('spam', 'eggs')
 # As well as using autospec through patch() there is a create_autospec() for creating autospecced mocks directly:
 # 
 
-from urllib import request
+____ urllib ______ request
 
-mock_request = create_autospec(request)
+mock_request _ create_autospec(request)
 mock_request.Request('foo', 'bar')
 
 # OUTPUT: '<NonCallableMagicMock name='mock.Request()' spec='Request' id='...'>'
@@ -158,12 +158,12 @@ mock_request.Request('foo', 'bar')
 # 
 
 c_ Something:
-      ___  - (self):
+      ___  -
 
-        self.a = 33
+        a _ 33
 
-      with patch('__main__.Something', autospec=True):
-      thing = Something()
+      with patch('__main__.Something', autospec_True):
+      thing _ Something()
 
       thing.a
 
@@ -173,20 +173,20 @@ c_ Something:
 # Just because autospec doesn�t allow you to fetch attributes that don�t exist on the spec it doesn�t prevent you setting them:
 # 
 
-with patch('__main__.Something', autospec=True):
-      thing = Something()
+with patch('__main__.Something', autospec_True):
+      thing _ Something()
 
-      thing.a = 33
+      thing.a _ 33
 
 # 
 # There is a more aggressive version of both spec and autospec that does prevent you setting non-existent attributes.
 # This is useful if you want to ensure your code only sets valid attributes too, but obviously it prevents this particular scenario:
 # 
 
-with patch('__main__.Something', autospec=True, spec_set=True):
-      thing = Something()
+with patch('__main__.Something', autospec_True, spec_set_True):
+      thing _ Something()
 
-      thing.a = 33
+      thing.a _ 33
 
 #
 # Probably the best way of solving the problem is to add class attributes as default values for instance members initialised in __init__().
@@ -195,7 +195,7 @@ with patch('__main__.Something', autospec=True, spec_set=True):
 # 
 
 c_ Something:
-       a = 33
+       a _ 33
 
 # 
 # This brings up another issue.
@@ -206,9 +206,9 @@ c_ Something:
 # 
 
 c_ Something:
-        member = None
+        member _ None
 
-mock = create_autospec(Something)
+mock _ create_autospec(Something)
 
 mock.member.foo.bar.baz()
 
@@ -223,15 +223,15 @@ mock.member.foo.bar.baz()
 # 
 
 c_ Something:
-      ___  - (self):
+      ___  -
 
-      self.a = 33
+      a _ 33
 
 c_ SomethingForTest(Something):
-      a = 33
+      a _ 33
 
-p = patch('__main__.Something', autospec=SomethingForTest)
-mock = p.start()
+p _ patch('__main__.Something', autospec_SomethingForTest)
+mock _ p.start()
 
 mock.a
 

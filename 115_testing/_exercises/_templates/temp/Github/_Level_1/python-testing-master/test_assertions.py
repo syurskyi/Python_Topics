@@ -1,4 +1,4 @@
-from unittest import TestCase
+____ unittest ______ TestCase
 
 
 c_ TestAssertions(TestCase):
@@ -8,41 +8,41 @@ c_ TestAssertions(TestCase):
     For the full documentation see the python docs: https://docs.python.org/3/library/unittest.html
     """
 
-    ___ test_equality(self):
-        x = 42
-        y = 42
+    ___ test_equality
+        x _ 42
+        y _ 42
 
-        self.assertEqual(x, y)
-        self.assertNotEqual(42, 1337)
+        assertEqual(x, y)
+        assertNotEqual(42, 1337)
 
-    ___ test_none_values(self):
-        x = 42
-        y = None
+    ___ test_none_values
+        x _ 42
+        y _ None
 
-        self.assertIsNone(None)
-        self.assertIsNone(y)
-        self.assertIsNotNone(x)
+        assertIsNone(None)
+        assertIsNone(y)
+        assertIsNotNone(x)
 
-    ___ test_bool(self):
-        self.assertTrue(1 == 1)
-        self.assertFalse(1 == 0)
+    ___ test_bool
+        assertTrue(1 == 1)
+        assertFalse(1 == 0)
 
-    ___ test_comparison(self):
-        self.assertGreater(1337, 42)
-        self.assertGreaterEqual(13, 13)
-        self.assertLess(42, 1337)
-        self.assertLessEqual(13, 13)
-        self.assertAlmostEqual(2.012, 2.013, 2)
-        self.assertNotAlmostEqual(2.012, 2.013, 3)
+    ___ test_comparison
+        assertGreater(1337, 42)
+        assertGreaterEqual(13, 13)
+        assertLess(42, 1337)
+        assertLessEqual(13, 13)
+        assertAlmostEqual(2.012, 2.013, 2)
+        assertNotAlmostEqual(2.012, 2.013, 3)
 
-    ___ test_exceptions(self):
-        with self.assertRaises(ZeroDivisionError):
-            x = 42 / 0
+    ___ test_exceptions
+        with assertRaises(ZeroDivisionError):
+            x _ 42 / 0
 
-    ___ test_list_comparison(self):
-        list1 = [1, 2, 3]
-        list2 = [1, 2, 3]
-        list3 = [3, 2, 1]
-        self.assertListEqual(list1, list2)
-        self.assertCountEqual(list1, list3)
+    ___ test_list_comparison
+        list1 _ [1, 2, 3]
+        list2 _ [1, 2, 3]
+        list3 _ [3, 2, 1]
+        assertListEqual(list1, list2)
+        assertCountEqual(list1, list3)
         # same methods exist for strings, sequences, tuples, sets and dictionaries

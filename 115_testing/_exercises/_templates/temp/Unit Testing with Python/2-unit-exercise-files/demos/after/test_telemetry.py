@@ -1,48 +1,48 @@
-import unittest
+______ unittest
 
-from telemetry import *
+____ telemetry ______ *
 
 c_ TelemetryDiagnosticControlsTest(unittest.TestCase):
-    ___ test_check_transmission_should_send_a_diagnostic_message_and_receive_a_status_message_response(self):
-        controls = TelemetryDiagnosticControls(MockTelemetryClient(online=True, receive_data="foo"))
+    ___ test_check_transmission_should_send_a_diagnostic_message_and_receive_a_status_message_response
+        controls _ TelemetryDiagnosticControls(MockTelemetryClient(online_True, receive_data_"foo"))
         controls.check_transmission()
-        self.assertEqual("foo", controls.diagnostic_info)
+        assertEqual("foo", controls.diagnostic_info)
 
-    ___ test_check_transmission_fails_if_telemetry_client_doesnt_connect(self):
-        controls = TelemetryDiagnosticControls(MockTelemetryClient(online=False, receive_data="foo",))
-        self.assertRaises(Exception, controls.check_transmission) 
-        self.assertEqual("", controls.diagnostic_info)
+    ___ test_check_transmission_fails_if_telemetry_client_doesnt_connect
+        controls _ TelemetryDiagnosticControls(MockTelemetryClient(online_False, receive_data_"foo",))
+        assertRaises(Exception, controls.check_transmission) 
+        assertEqual("", controls.diagnostic_info)
 
-    ___ test_check_transmission_fails_if_telemetry_client_disconnects_before_receive(self):
-        controls = TelemetryDiagnosticControls(MockTelemetryClient(online=True, receive_data="foo", go_offline_on_send=True))
-        self.assertRaises(Exception, controls.check_transmission) 
-        self.assertEqual("", controls.diagnostic_info)
+    ___ test_check_transmission_fails_if_telemetry_client_disconnects_before_receive
+        controls _ TelemetryDiagnosticControls(MockTelemetryClient(online_True, receive_data_"foo", go_offline_on_send_True))
+        assertRaises(Exception, controls.check_transmission) 
+        assertEqual("", controls.diagnostic_info)
 
-    ___ test_retry_connection_three_times_before_raising_an_exception(self):
-        controls = TelemetryDiagnosticControls(MockTelemetryClient(online=False, receive_data="foo", go_online_on_third_attempt=True))
+    ___ test_retry_connection_three_times_before_raising_an_exception
+        controls _ TelemetryDiagnosticControls(MockTelemetryClient(online_False, receive_data_"foo", go_online_on_third_attempt_True))
         controls.check_transmission()
-        self.assertEqual("foo", controls.diagnostic_info)
+        assertEqual("foo", controls.diagnostic_info)
 
 c_ MockTelemetryClient:
 
-    ___  -   online, receive_data="", go_offline_on_send=False, go_online_on_third_attempt=False):
-        self.online_status = online
-        self.receive_data = receive_data
-        self.go_offline_on_send = go_offline_on_send
-        self.go_online_on_third_attempt = go_online_on_third_attempt
-        self.attempts = 0
+    ___  -   online, receive_data_"", go_offline_on_send_False, go_online_on_third_attempt_False):
+        online_status _ online
+        receive_data _ receive_data
+        go_offline_on_send _ go_offline_on_send
+        go_online_on_third_attempt _ go_online_on_third_attempt
+        attempts _ 0
 
     ___ send  message):
-        if self.go_offline_on_send:
-            self.online_status = False
+        if go_offline_on_send:
+            online_status _ False
 
     ___ connect  connection_string):
-        self.attempts += 1
-        if self.go_online_on_third_attempt and self.attempts == 2:
-            self.online_status = True
+        attempts +_ 1
+        if go_online_on_third_attempt and attempts == 2:
+            online_status _ True
 
-    ___ receive(self):
-        return self.receive_data
+    ___ receive
+        r_ receive_data
 
-    ___ disconnect(self):
+    ___ disconnect
         pass

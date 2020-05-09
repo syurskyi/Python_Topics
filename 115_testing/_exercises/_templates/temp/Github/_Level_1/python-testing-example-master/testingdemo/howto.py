@@ -4,22 +4,22 @@
 
 c_ AnExample():
 
-    ___  - (self):
-        self.rightnow = None
-        self.yesterdaythistime = None
-        self.descriptiontext = "\nCurrently epoch today and 24 hours ago are: "
+    ___  -
+        rightnow _ None
+        yesterdaythistime _ None
+        descriptiontext _ "\nCurrently epoch today and 24 hours ago are: "
 
-    ___ make_something(self):
-        import time
-        self.rightnow = time.time()
-        self.yesterdaythistime = self.rightnow - 86400
-        return True
+    ___ make_something
+        ______ time
+        rightnow _ time.time()
+        yesterdaythistime _ rightnow - 86400
+        r_ True
 
-    ___ report_something(self):
-        report = self.descriptiontext + str(self.rightnow) + " and " + str(self.yesterdaythistime)
-        return report
+    ___ report_something
+        report _ descriptiontext + str(rightnow) + " and " + str(yesterdaythistime)
+        r_ report
 
-    ___ should_fail(self):
-        return False
+    ___ should_fail
+        r_ False
 
 #notesshouldhaveaspaceafterthehash

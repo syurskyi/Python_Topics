@@ -1,6 +1,6 @@
-from phonebook import Phonebook
+____ phonebook ______ Phonebook
 
 ___ test_lookup_entry():
-    phonebook = Phonebook()
+    phonebook _ Phonebook()
     phonebook.add("Bob", "12345")
     assert "12345" == phonebook.lookup("Bob")

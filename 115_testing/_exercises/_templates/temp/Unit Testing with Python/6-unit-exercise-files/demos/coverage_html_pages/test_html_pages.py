@@ -1,37 +1,37 @@
-import unittest
-import os
-import tempfile
-import io
+______ unittest
+______ os
+______ tempfile
+______ io
 
-from html_pages import HtmlPagesConverter, FileAccessWrapper
+____ html_pages ______ HtmlPagesConverter, FileAccessWrapper
 
 c_ HtmlPagesTest(unittest.TestCase):
-    ___ test_inserts_br_tags_for_linebreaks(self):
-        filename = os.path.join(tempfile.gettempdir(), "afile.txt")
-        f = open(filename, "w", encoding="UTF-8")
+    ___ test_inserts_br_tags_for_linebreaks
+        filename _ os.path.join(tempfile.gettempdir(), "afile.txt")
+        f _ open(filename, "w", encoding_"UTF-8")
         f.write("plain text\n")
         f.close()
-        converter = HtmlPagesConverter(FileAccessWrapper(filename))
-        new_text = converter.get_html_page(0)
-        self.assertEqual("plain text<br />", new_text)
+        converter _ HtmlPagesConverter(FileAccessWrapper(filename))
+        new_text _ converter.get_html_page(0)
+        assertEqual("plain text<br />", new_text)
         
-    ___ test_quotes_escaped(self):
-        converter = HtmlPagesConverter(FakeFileWrapper("text with 'quotes'"))
-        new_text = converter.get_html_page(0)
-        self.assertEqual("text with &#x27;quotes&#x27;<br />", new_text)
+    ___ test_quotes_escaped
+        converter _ HtmlPagesConverter(FakeFileWrapper("text with 'quotes'"))
+        new_text _ converter.get_html_page(0)
+        assertEqual("text with &#x27;quotes&#x27;<br />", new_text)
 
-    ___ test_random_access_pages(self):
-        converter = HtmlPagesConverter(FakeFileWrapper("page one\nPAGE_BREAK\npage two\nPAGE_BREAK\npage three"))
-        page_two = converter.get_html_page(1)
-        self.assertEqual("page two<br />", page_two)
+    ___ test_random_access_pages
+        converter _ HtmlPagesConverter(FakeFileWrapper("page one\nPAGE_BREAK\npage two\nPAGE_BREAK\npage three"))
+        page_two _ converter.get_html_page(1)
+        assertEqual("page two<br />", page_two)
 
-    ___ test_non_existant_file(self):
-        converter = HtmlPagesConverter(FileAccessWrapper("missing"))
-        self.assertEqual("", converter.get_html_page(0))
+    ___ test_non_existant_file
+        converter _ HtmlPagesConverter(FileAccessWrapper("missing"))
+        assertEqual("", converter.get_html_page(0))
 
 c_ FakeFileWrapper:
     ___  -   text):
-        self.text = text
+        text _ text
         
-    ___ open(self):
-        return io.StringIO(self.text)
+    ___ open
+        r_ io.StringIO(text)

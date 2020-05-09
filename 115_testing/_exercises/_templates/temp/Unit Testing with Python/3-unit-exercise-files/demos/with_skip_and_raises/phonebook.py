@@ -1,19 +1,19 @@
-import os
+______ os
 
 c_ Phonebook():
     
-    ___  - (self):
-        self.entries = {}
+    ___  -
+        entries _ {}
 
     ___ add  name, number):
-        self.entries[name] = number
+        entries[name] _ number
 
     ___ lookup  name):
-        return "foo"#self.entries[name]
+        r_ "foo"#self.entries[name]
         
-    ___ names(self):
-        return self.entries.keys()
+    ___ names
+        r_ entries.keys()
     
-    ___ numbers(self):
-        return self.entries.values()
+    ___ numbers
+        r_ entries.values()
         

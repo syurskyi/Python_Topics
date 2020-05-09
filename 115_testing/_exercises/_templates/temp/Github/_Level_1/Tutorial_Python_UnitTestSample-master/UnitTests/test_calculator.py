@@ -1,31 +1,31 @@
-import unittest
-from Modules.Calculator.main import Calculator
+______ unittest
+____ Modules.Calculator.main ______ Calculator
 
 
 c_ MyTestCase(unittest.TestCase):
 
-    ___ setUp(self):
-        self.app = Calculator()
+    ___ setUp
+        app _ Calculator()
 
-    ___ test_add(self):
-        expected = 5
-        result = self.app.add(3,2)
-        self.assertEqual(result,expected)
+    ___ test_add
+        expected _ 5
+        result _ app.add(3,2)
+        assertEqual(result,expected)
 
-    ___ test_subtract(self):
-        expected = 5
-        result = self.app.subtract(10,5)
-        self.assertEqual(result,expected)
+    ___ test_subtract
+        expected _ 5
+        result _ app.subtract(10,5)
+        assertEqual(result,expected)
 
-    ___ test_multiply(self):
-        expected = 5
-        result = self.app.multiply(5,1)
-        self.assertEqual(result,expected)
+    ___ test_multiply
+        expected _ 5
+        result _ app.multiply(5,1)
+        assertEqual(result,expected)
 
-    ___ test_divide(self):
-        expected = 5
-        result = self.app.divide(10,2)
-        self.assertEqual(result,expected)
+    ___ test_divide
+        expected _ 5
+        result _ app.divide(10,2)
+        assertEqual(result,expected)
 
 if __name__ == '__main__':
     unittest.main()

@@ -27,10 +27,10 @@
 # In simple cases, the test package�s __init__.py can be the following:
 # 
 
-import os
+______ os
 
-from test.support import load_package_tests
+____ test.support ______ load_package_tests
 
 ___ load_tests(*args):
 
-          return load_package_tests(os.path.dirname(__file__), *args)
+          r_ load_package_tests(os.path.dirname(__file__), *args)

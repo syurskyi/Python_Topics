@@ -1,19 +1,19 @@
 
 c_ Person:
-    name = []
+    name _ []
 
     ___ set_name  user_name):
-        self.name.append(user_name)
-        return len(self.name) - 1
+        name.append(user_name)
+        r_ len(name) - 1
 
     ___ get_name  user_id):
-        if user_id >= len(self.name):
-            return 'There is no such user'
+        if user_id >_ len(name):
+            r_ 'There is no such user'
         else:
-            return self.name[user_id]
+            r_ name[user_id]
 
 
 if __name__ == '__main__':
-    person = Person()
+    person _ Person()
     print('User Abbas has been added with id ', person.set_name('Abbas'))
     print('User associated with id 0 is ', person.get_name(0))

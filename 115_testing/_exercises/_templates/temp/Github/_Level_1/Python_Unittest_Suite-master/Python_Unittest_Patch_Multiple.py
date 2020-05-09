@@ -18,11 +18,11 @@
 # If you use patch.multiple() as a decorator then the created mocks are passed into the decorated function by keyword.
 # 
 
-thing = object()
-other = object()
+thing _ object()
+other _ object()
  
 
-@patch.multiple('__main__', thing=DEFAULT, other=DEFAULT)
+@patch.multiple('__main__', thing_DEFAULT, other_DEFAULT)
 
     ___ test_function(thing, other):
         assert isinstance(thing, MagicMock)
@@ -35,7 +35,7 @@ test_function()
 # 
 
 @patch('sys.exit')
-@patch.multiple('__main__', thing=DEFAULT, other=DEFAULT)
+@patch.multiple('__main__', thing_DEFAULT, other_DEFAULT)
 
 ___ test_function(mock_exit, other, thing):
         assert 'other' in repr(other)
@@ -49,7 +49,7 @@ test_function()
 # If patch.multiple() is used as a context manager, the value returned by the context manger is a dictionary where created mocks are keyed by name:
 # 
 
-with patch.multiple('__main__', thing=DEFAULT, other=DEFAULT) as values:
+with patch.multiple('__main__', thing_DEFAULT, other_DEFAULT) as values:
         assert 'other' in repr(values['other'])
         assert 'thing' in repr(values['thing'])
 

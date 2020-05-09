@@ -30,17 +30,17 @@
 # A typical load_tests function that loads tests from a specific set of TestCase classes may look like:
 # 
 
-test_cases = (TestCase1, TestCase2, TestCase3)
+test_cases _ (TestCase1, TestCase2, TestCase3)
 
 ___ load_tests(loader, tests, pattern):
-    suite = TestSuite()
+    suite _ TestSuite()
 
     for test_class in test_cases:
-        tests = loader.loadTestsFromTestCase(test_class)
+        tests _ loader.loadTestsFromTestCase(test_class)
 
         suite.addTests(tests)
 
-    return suite
+    r_ suite
 
 # 
 # If discovery is started in a directory containing a package, either from the command line or by calling TestLoader.discover(), then
@@ -65,11 +65,11 @@ ___ load_tests(loader, standard_tests, pattern):
 
     # top level directory cached on loader instance
 
-    this_dir = os.path.dirname(__file__)
+    this_dir _ os.path.dirname(__file__)
 
-    package_tests = loader.discover(start_dir=this_dir, pattern=pattern)
+    package_tests _ loader.discover(start_dir_this_dir, pattern_pattern)
 
     standard_tests.addTests(package_tests)
 
-    return standard_tests
+    r_ standard_tests
 

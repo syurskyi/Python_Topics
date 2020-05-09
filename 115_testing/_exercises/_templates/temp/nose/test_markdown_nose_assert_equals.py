@@ -4,8 +4,8 @@ To run tests: nosetests     test_markdown_nose.py
 Verbose (-v): nosetests -v  test_markdown_nose.py
 '''
 
-from nose.tools import assert_equals
-from markdown_adapter import run_markdown
+____ nose.tools ______ assert_equals
+____ markdown_adapter ______ run_markdown
 
 ___ test_non_marked_lines():
     print ('in test_non_marked_lines')

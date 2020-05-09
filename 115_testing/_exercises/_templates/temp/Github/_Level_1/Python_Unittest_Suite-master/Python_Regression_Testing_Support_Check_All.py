@@ -37,25 +37,25 @@
 # Example use:
 # 
 
-import bar
-import foo
-import unittest
+______ bar
+______ foo
+______ unittest
 
-from test import support
+____ test ______ support
 
 c_ MiscTestCase(unittest.TestCase):
 
-    ___ test__all__(self):
+    ___ test__all__
         support.check__all__  foo)
 
 c_ OtherTestCase(unittest.TestCase):
 
-    ___ test__all__(self):
-        extra = {'BAR_CONST', 'FOO_CONST'}
+    ___ test__all__
+        extra _ {'BAR_CONST', 'FOO_CONST'}
 
-        blacklist = {'baz'}  # Undocumented name.
+        blacklist _ {'baz'}  # Undocumented name.
 
         # bar imports part of its API from _bar.
 
         support.check__all__  bar, ('bar', '_bar'),
-                             extra=extra, blacklist=blacklist)
+                             extra_extra, blacklist_blacklist)

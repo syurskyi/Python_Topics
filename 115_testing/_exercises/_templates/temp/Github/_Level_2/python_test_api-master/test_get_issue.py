@@ -1,34 +1,34 @@
-import unittest
-import requests
-import xmltodict
+______ unittest
+______ requests
+______ xmltodict
 
 
 c_ TestGetIssue(unittest.TestCase):
 
-    ___ setUp(self):
-        self.base_url = 'https://codespace-api.myjetbrains.com/youtrack/rest'
-        self.creds = ('root', 'c11desp@ce')
+    ___ setUp
+        base_url _ 'https://codespace-api.myjetbrains.com/youtrack/rest'
+        creds _ ('root', 'c11desp@ce')
 
-    ___ test_get_issue(self):
-        self.id = 'API-1'
-        url = self.base_url + '/issue/' + self.id
-        response = requests.get(url, auth=self.creds)
-        response_dict = xmltodict.parse(response.text)
+    ___ test_get_issue
+        id _ 'API-1'
+        url _ base_url + '/issue/' + id
+        response _ requests.get(url, auth_creds)
+        response_dict _ xmltodict.parse(response.text)
 
-        self.assertEquals(response.status_code, 200)
-        self.assertEquals(response_dict['issue']['@id'], self.id)
-        self.assertEquals(response.headers['Content-Type'], 'application/xml;charset=UTF-8')
+        assertEquals(response.status_code, 200)
+        assertEquals(response_dict['issue']['@id'], id)
+        assertEquals(response.headers['Content-Type'], 'application/xml;charset=UTF-8')
         print "Response time is: " + str(response.elapsed.total_seconds())
 
-    ___ test_get_issue_invalid_id(self):
-        url = self.base_url + '/issue/' + '123'
-        r = requests.get(url, auth=self.creds)
-        r_dict = xmltodict.parse(r.text)
+    ___ test_get_issue_invalid_id
+        url _ base_url + '/issue/' + '123'
+        r _ requests.get(url, auth_creds)
+        r_dict _ xmltodict.parse(r.text)
 
-        self.assertEquals(r.status_code, 404)
+        assertEquals(r.status_code, 404)
         # assert r.status_code == 403
-        self.assertEquals(r_dict['error'], 'Issue not found.')
-        self.assertEquals(r.headers['Content-Type'], 'application/xml;charset=UTF-8')
+        assertEquals(r_dict['error'], 'Issue not found.')
+        assertEquals(r.headers['Content-Type'], 'application/xml;charset=UTF-8')
 
 if __name__ == '__main__':
     unittest.main()

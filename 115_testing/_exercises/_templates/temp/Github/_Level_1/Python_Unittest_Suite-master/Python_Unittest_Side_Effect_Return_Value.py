@@ -18,22 +18,22 @@
 # Either return mock.return_value from inside side_effect, or return DEFAULT:
 # 
 
-m = MagicMock()
+m _ MagicMock()
 
 ___ side_effect(*args, **kwargs):
-        return m.return_value
+        r_ m.return_value
 
-m.side_effect = side_effect
-m.return_value = 3
+m.side_effect _ side_effect
+m.return_value _ 3
 
 m()
 
 # OUTPUT: '3'
 
 ___ side_effect(*args, **kwargs):
-        return DEFAULT
+        r_ DEFAULT
 
-m.side_effect = side_effect
+m.side_effect _ side_effect
 m()
 
 # OUTPUT: '3'

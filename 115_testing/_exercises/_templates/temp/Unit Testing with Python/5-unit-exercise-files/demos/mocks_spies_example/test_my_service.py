@@ -1,97 +1,97 @@
-import unittest
-from unittest.mock import *
+______ unittest
+____ unittest.mock ______ *
 
-from my_service import MyService
-from single_sign_on import *
+____ my_service ______ MyService
+____ single_sign_on ______ *
 
 c_ MyServiceTest(unittest.TestCase):
-    ___ test_invalid_token(self):
-        registry = FakeSingleSignOnRegistry()
-        my_service = MyService(registry)
+    ___ test_invalid_token
+        registry _ FakeSingleSignOnRegistry()
+        my_service _ MyService(registry)
 
-        response = my_service.handle_request("do stuff", token=None)
-        self.assertIn("please enter your login details", response)
+        response _ my_service.handle_request("do stuff", token_None)
+        assertIn("please enter your login details", response)
         
-    ___ test_valid_token(self):
-        registry = FakeSingleSignOnRegistry()
-        token = registry.register("valid credentials")
-        my_service = MyService(registry)
+    ___ test_valid_token
+        registry _ FakeSingleSignOnRegistry()
+        token _ registry.register("valid credentials")
+        my_service _ MyService(registry)
     
-        response = my_service.handle_request("do stuff", token)
-        self.assertIn("hello world", response)
+        response _ my_service.handle_request("do stuff", token)
+        assertIn("hello world", response)
         
-    ___ test_invalid_token_with_mock(self):
-        token = SSOToken()
-        registry = MockSingleSignOnRegistry(expected_token=token, token_is_valid=False)
-        my_service = MyService(registry)
+    ___ test_invalid_token_with_mock
+        token _ SSOToken()
+        registry _ MockSingleSignOnRegistry(expected_token_token, token_is_valid_False)
+        my_service _ MyService(registry)
 
-        response = my_service.handle_request("do stuff", token=token)
-        self.assertTrue(registry.is_valid_was_called)
+        response _ my_service.handle_request("do stuff", token_token)
+        assertTrue(registry.is_valid_was_called)
 
-    ___ test_valid_token_with_mock(self):
-        token = SSOToken()
-        registry = MockSingleSignOnRegistry(expected_token=token, token_is_valid=True)
-        my_service = MyService(registry)
+    ___ test_valid_token_with_mock
+        token _ SSOToken()
+        registry _ MockSingleSignOnRegistry(expected_token_token, token_is_valid_True)
+        my_service _ MyService(registry)
 
-        response = my_service.handle_request("do stuff", token)
-        self.assertTrue(registry.is_valid_was_called)
+        response _ my_service.handle_request("do stuff", token)
+        assertTrue(registry.is_valid_was_called)
 
-    ___ test_invalid_token_with_spy(self):
-        token = SSOToken()
-        registry = SpySingleSignOnRegistry(accept_all_tokens=False)
-        my_service = MyService(registry)
+    ___ test_invalid_token_with_spy
+        token _ SSOToken()
+        registry _ SpySingleSignOnRegistry(accept_all_tokens_False)
+        my_service _ MyService(registry)
 
-        response = my_service.handle_request("do stuff", token=token)
-        self.assertIn(token, registry.checked_tokens)
+        response _ my_service.handle_request("do stuff", token_token)
+        assertIn(token, registry.checked_tokens)
 
-    ___ test_valid_token_with_spy(self):
-        token = SSOToken()
-        registry = SpySingleSignOnRegistry(accept_all_tokens=True)
-        my_service = MyService(registry)
+    ___ test_valid_token_with_spy
+        token _ SSOToken()
+        registry _ SpySingleSignOnRegistry(accept_all_tokens_True)
+        my_service _ MyService(registry)
 
-        response = my_service.handle_request("do stuff", token)
-        self.assertIn(token, registry.checked_tokens)
+        response _ my_service.handle_request("do stuff", token)
+        assertIn(token, registry.checked_tokens)
 
-    ___ test_invalid_token_with_mocking_fw_as_spy(self):
-        token = SSOToken()
-        registry = Mock(SingleSignOnRegistry)
-        registry.is_valid = Mock(return_value=False)
-        my_service = MyService(registry)
+    ___ test_invalid_token_with_mocking_fw_as_spy
+        token _ SSOToken()
+        registry _ Mock(SingleSignOnRegistry)
+        registry.is_valid _ Mock(return_value_False)
+        my_service _ MyService(registry)
 
-        response = my_service.handle_request("do stuff", token=token)
+        response _ my_service.handle_request("do stuff", token_token)
         registry.is_valid.assert_called_with(token)
 
-    ___ test_valid_token_with_mocking_fw_as_spy(self):
-        token = SSOToken()
-        registry = Mock(SingleSignOnRegistry)
-        registry.is_valid = Mock(return_value=True)
-        my_service = MyService(registry)
+    ___ test_valid_token_with_mocking_fw_as_spy
+        token _ SSOToken()
+        registry _ Mock(SingleSignOnRegistry)
+        registry.is_valid _ Mock(return_value_True)
+        my_service _ MyService(registry)
 
-        response = my_service.handle_request("do stuff", token)
+        response _ my_service.handle_request("do stuff", token)
         registry.is_valid.assert_called_with(token)
 
-    ___ test_invalid_token_with_mocking_fw_as_mock(self):
-        invalid_token = SSOToken()
-        registry = Mock(SingleSignOnRegistry)
+    ___ test_invalid_token_with_mocking_fw_as_mock
+        invalid_token _ SSOToken()
+        registry _ Mock(SingleSignOnRegistry)
         ___ is_valid(token):
             if not token == invalid_token:
                 raise Exception("Got the wrong token")
-            return False
-        registry.is_valid = Mock(side_effect=is_valid)
-        my_service = MyService(registry)
+            r_ False
+        registry.is_valid _ Mock(side_effect_is_valid)
+        my_service _ MyService(registry)
 
-        response = my_service.handle_request("do stuff", token=invalid_token)
+        response _ my_service.handle_request("do stuff", token_invalid_token)
         registry.is_valid.assert_called_with(invalid_token)
 
-    ___ test_valid_token_with_mocking_fw_as_mock(self):
-        valid_token = SSOToken()
-        registry = Mock(SingleSignOnRegistry)
+    ___ test_valid_token_with_mocking_fw_as_mock
+        valid_token _ SSOToken()
+        registry _ Mock(SingleSignOnRegistry)
         ___ is_valid(token):
             if not token == valid_token:
                 raise Exception("Got the wrong token")
-            return True
-        registry.is_valid = Mock(side_effect=is_valid)
-        my_service = MyService(registry)
+            r_ True
+        registry.is_valid _ Mock(side_effect_is_valid)
+        my_service _ MyService(registry)
 
-        response = my_service.handle_request("do stuff", token=valid_token)
+        response _ my_service.handle_request("do stuff", token_valid_token)
         registry.is_valid.assert_called_with(valid_token)

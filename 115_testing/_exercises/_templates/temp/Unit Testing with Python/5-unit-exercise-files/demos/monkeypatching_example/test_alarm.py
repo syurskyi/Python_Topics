@@ -1,24 +1,24 @@
-import unittest
-from unittest.mock import *
+______ unittest
+____ unittest.mock ______ *
 
-from alarm import Alarm
+____ alarm ______ Alarm
 
 c_ AlarmTest(unittest.TestCase):
     
-    ___ test_check_with_too_high_pressure(self):
+    ___ test_check_with_too_high_pressure
         with patch('alarm.Sensor') as test_sensor_class:
-            test_sensor_instance = Mock()
-            test_sensor_instance.sample_pressure.return_value = 22
-            test_sensor_class.return_value=test_sensor_instance
-            alarm = Alarm()
+            test_sensor_instance _ Mock()
+            test_sensor_instance.sample_pressure.return_value _ 22
+            test_sensor_class.return_value_test_sensor_instance
+            alarm _ Alarm()
             alarm.check()
-            self.assertTrue(alarm.is_alarm_on)
+            assertTrue(alarm.is_alarm_on)
 
     @patch("alarm.Sensor")
     ___ test_check_with_too_low_pressure  test_sensor_class):
-        test_sensor_instance = Mock()
-        test_sensor_instance.sample_pressure.return_value = 15
-        test_sensor_class.return_value = test_sensor_instance
-        alarm = Alarm()
+        test_sensor_instance _ Mock()
+        test_sensor_instance.sample_pressure.return_value _ 15
+        test_sensor_class.return_value _ test_sensor_instance
+        alarm _ Alarm()
         alarm.check()
-        self.assertTrue(alarm.is_alarm_on)
+        assertTrue(alarm.is_alarm_on)

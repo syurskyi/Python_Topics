@@ -27,18 +27,18 @@
 # After the MagicMock has been used we can use attributes like call_args_list to assert about how the dictionary was used:
 # 
 
-my_dict = {'a': 1, 'b': 2, 'c': 3}
+my_dict _ {'a': 1, 'b': 2, 'c': 3}
 
     ___ getitem(name):
-         return my_dict[name]
+         r_ my_dict[name]
 
     ___ setitem(name, val):
-        my_dict[name] = val
+        my_dict[name] _ val
 
-mock = MagicMock()
-mock.__getitem__.side_effect = getitem
+mock _ MagicMock()
+mock.__getitem__.side_effect _ getitem
 
-mock.__setitem__.side_effect = setitem
+mock.__setitem__.side_effect _ setitem
  
 
 #
@@ -46,20 +46,20 @@ mock.__setitem__.side_effect = setitem
 # An alternative to using MagicMock is to use Mock and only provide the magic methods you specifically want:
 # 
 
-mock = Mock()
+mock _ Mock()
 
-mock.__getitem__ = Mock(side_effect=getitem)
-mock.__setitem__ = Mock(side_effect=setitem)
+mock.__getitem__ _ Mock(side_effect_getitem)
+mock.__setitem__ _ Mock(side_effect_setitem)
 
 # 
 # A third option is to use MagicMock but passing in dict as the spec (or spec_set) argument so that the MagicMock created only has dictionary magic methods
 # available:
 # 
 
-mock = MagicMock(spec_set=dict)
+mock _ MagicMock(spec_set_dict)
 
-mock.__getitem__.side_effect = getitem
-mock.__setitem__.side_effect = setitem
+mock.__getitem__.side_effect _ getitem
+mock.__setitem__.side_effect _ setitem
  
 #
 # With these side effect functions in place, the mock will behave like a normal dictionary but recording the access.
@@ -76,9 +76,9 @@ mock['c']
 
 mock['d']
 
-mock['b'] = 'fish'
+mock['b'] _ 'fish'
 
-mock['d'] = 'eggs'
+mock['d'] _ 'eggs'
 
 mock['b']
 

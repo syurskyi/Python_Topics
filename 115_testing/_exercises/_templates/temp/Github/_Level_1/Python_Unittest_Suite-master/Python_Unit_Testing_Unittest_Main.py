@@ -1,5 +1,5 @@
 # Python Unit Testing
-# unittest — Unit testing framework.
+# unittest ï¿½ Unit testing framework.
 # Unittest supports test automation, sharing of setup and shutdown code for tests, aggregation of tests into collections, and independence of the tests from
 # the reporting framework.
 # 
@@ -36,13 +36,13 @@ if __name__ == '__main__':
 # 
 
 if __name__ == '__main__':
-    unittest.main(verbosity=2)
+    unittest.main(verbosity_2)
 
 #
 # main supports being used from the interactive interpreter by passing in the argument exit=False.
 # This displays the result on standard output without calling sys.exit():
 # 
 
-from unittest import main
+____ unittest ______ main
 
-main(module='test_module', exit=False)
+main(module_'test_module', exit_False)

@@ -17,17 +17,17 @@
 # To remove a side_effect, and return to the default behaviour, set the side_effect to None:
 # 
 
-m = MagicMock(return_value=6)
+m _ MagicMock(return_value_6)
 
 ___ side_effect(*args, **kwargs):
-        return 3
+        r_ 3
 
-m.side_effect = side_effect
+m.side_effect _ side_effect
 m()
 
 # OUTPUT: '3'
 
-m.side_effect = None
+m.side_effect _ None
 m()
 
 # OUTPUT: '6'

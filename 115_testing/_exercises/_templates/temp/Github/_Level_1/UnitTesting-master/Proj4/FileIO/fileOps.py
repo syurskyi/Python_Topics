@@ -1,5 +1,5 @@
-infile = "inputfile.txt"
-outfile = "outputfile.txt"
+infile _ "inputfile.txt"
+outfile _ "outputfile.txt"
 
 # print each line, as read in
 with open(infile) as f1:
@@ -18,7 +18,7 @@ print("\n**********************")
 # print first word (make) of each car
 with open(infile) as f1:
     for line in f1:
-        row = line.split(",")
+        row _ line.split(",")
         print(row[0])
 
 print("\n**********************")
@@ -26,7 +26,7 @@ print("\n**********************")
 # print each line as a formatted list
 with open(infile) as f1:
     for line in f1:
-        row = line.split(",")
+        row _ line.split(",")
         print(row[0] + "\n------------")
         for i in range(1, len(row)):
             print(row[i])
@@ -34,10 +34,10 @@ with open(infile) as f1:
 print("\n**********************")
 
 # add each line to a list
-cars = list()
+cars _ list()
 with open(infile) as f1:
     for line in f1:
-        row = line.split(",")
+        row _ line.split(",")
         cars.append(row)
     print(cars[0][0])
 

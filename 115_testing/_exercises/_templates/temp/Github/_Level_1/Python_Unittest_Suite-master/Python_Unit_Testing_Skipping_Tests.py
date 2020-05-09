@@ -37,13 +37,13 @@ c_ MyTestCase(unittest.TestCase):
 
     @unittest.skip("demonstrating skipping")
 
-    ___ test_nothing(self):
-        self.fail("shouldn't happen")
+    ___ test_nothing
+        fail("shouldn't happen")
 
     @unittest.skipIf(mylib.__version__ < (1, 3),
                      "not supported in this library version")
 
-    ___ test_format(self):
+    ___ test_format
 
         # Tests that work for only a certain version of the library.
 
@@ -51,7 +51,7 @@ c_ MyTestCase(unittest.TestCase):
 
     @unittest.skipUnless(sys.platform.startswith("win"), "requires Windows")
 
-    ___ test_windows_support(self):
+    ___ test_windows_support
 
         # windows specific testing code
 
@@ -64,7 +64,7 @@ c_ MyTestCase(unittest.TestCase):
 @unittest.skip("showing class skipping")
 
 c_ MySkippedTestCase(unittest.TestCase):
-    ___ test_not_run(self):
+    ___ test_not_run
 
         pass
 
@@ -81,8 +81,8 @@ c_ ExpectedFailureTestCase(unittest.TestCase):
 
     @unittest.expectedFailure
 
-    ___ test_fail(self):
-        self.assertEqual(1, 0, "broken")
+    ___ test_fail
+        assertEqual(1, 0, "broken")
 
 # 
 # It�s easy to roll your own skipping decorators by making a decorator that calls skip() on the test when it wants it to be skipped.
@@ -92,9 +92,9 @@ c_ ExpectedFailureTestCase(unittest.TestCase):
 ___ skipUnlessHasattr(obj, attr):
 
     if hasattr(obj, attr):
-        return lambda func: func
+        r_ lambda func: func
 
-    return unittest.skip("{!r} doesn't have {!r}".format(obj, attr))
+    r_ unittest.skip("{!r} doesn't have {!r}".f..(obj, attr))
  
 
 #

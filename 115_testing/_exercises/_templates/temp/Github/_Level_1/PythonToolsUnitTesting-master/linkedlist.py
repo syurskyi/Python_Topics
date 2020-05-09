@@ -10,95 +10,95 @@
 c_ Node(object):
     
     #Constructor:
-    ___  -   dataSet, next = None, prev = None):
-        self.data = dataSet
-        self.nextNode = next
-        self.prevNode = prev
+    ___  -   dataSet, next _ None, prev _ None):
+        data _ dataSet
+        nextNode _ next
+        prevNode _ prev
 
     #Getter for next node:
-    ___ getNextNode (self):
-        return self.nextNode
+    ___ getNextNode 
+        r_ nextNode
 
     #Setter for next node:
     ___ setNextNode   next):
-        self.nextNode = next
+        nextNode _ next
 
     #Getter for previous node:
-    ___ getPrevNode (self):
-        return self.prevNode
+    ___ getPrevNode 
+        r_ prevNode
 
     #Setter for previous node:
     ___ setPrevNode   prev):
-        self.prevNode = prev
+        prevNode _ prev
 
     #Getter for data:
-    ___ getData (self):
-        return self.data
+    ___ getData 
+        r_ data
 
     #Setter for data:
     ___ setData   dataSet):
-        self.data = dataSet
+        data _ dataSet
 
 # Name: LinkedList
 # Arguments: (object) - inhereting from object class
 # Purpose: This class holds methods for LinkedList controls (getSize, addNode, removeNode, findNode, getAllData)
 c_ LinkedList (object):
     	#Constructor:
-	___  -   rootNode = None):
-		self.root = rootNode
-		self.size = 0
+	___  -   rootNode _ None):
+		root _ rootNode
+		size _ 0
 		
-	___ getSize (self):
-		return self.size
+	___ getSize 
+		r_ size
 		
 	___ addNode   dataSet):
-		newNode = Node (dataSet, self.root)
-		if (self.root):
-			self.root.setPrevNode(newNode)
-		self.root = newNode
-		self.size += 1
+		newNode _ Node (dataSet, root)
+		if (root):
+			root.setPrevNode(newNode)
+		root _ newNode
+		size +_ 1
 		
 	___ removeNode   dataSet):
-		thisNode = self.root
+		thisNode _ root
 		
 		while (thisNode):
 			if thisNode.getData() == dataSet:
-				next = thisNode.getNextNode()
-				prev = thisNode.getPrevNode()
+				next _ thisNode.getNextNode()
+				prev _ thisNode.getPrevNode()
 				
 				if (next):
 					next.setPrevNode(prev)
 				if (prev):
 					prev.setNextNode(next)
 				else:
-					self.root = thisNode
+					root _ thisNode
 					
-				self.size -= 1
+				size -_ 1
 				#Confirmed that node  was removed
-				return True
+				r_ True
 			else:
-				thisNode = thisNode.getNextNode()
+				thisNode _ thisNode.getNextNode()
 		
 		#Could not find the specified data - nothing removed
-		return False
+		r_ False
 		
 	___ findNode   dataSet):
-		thisNode = self.root
+		thisNode _ root
 		while (thisNode):
 			if (thisNode.getData() == dataSet):
-			    return dataSet
+			    r_ dataSet
 			else:
-			    thisNode = thisNode.getNextNode()
-		return None
+			    thisNode _ thisNode.getNextNode()
+		r_ None
 
-	___ getAllData(self):
-		dataList = []
-		thisNode = self.root
-		if (self.root == None):
+	___ getAllData
+		dataList _ []
+		thisNode _ root
+		if (root == None):
 			dataList.append(None)
-			return dataList
+			r_ dataList
 		while (thisNode):
 			dataList.append(thisNode.getData())
-			thisNode = thisNode.getNextNode()
+			thisNode _ thisNode.getNextNode()
 		
-		return dataList
+		r_ dataList

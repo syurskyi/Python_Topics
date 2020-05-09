@@ -1,6 +1,6 @@
-from hello import say_hello
-from unittest.mock import patch
-import unittest
+____ hello ______ say_hello
+____ unittest.mock ______ patch
+______ unittest
 
 c_ HelloTests(unittest.TestCase):
     '''Testing say_hello'''
@@ -10,13 +10,13 @@ c_ HelloTests(unittest.TestCase):
         say_hello()
         
         # Make sure it only called `print` once
-        self.assertEqual(mock_print.call_count ,1)
+        assertEqual(mock_print.call_count ,1)
         
         # getting the arguments and keyword arguments passed to the 
         # mocked function
-        args, kwargs = mock_print.call_args
+        args, kwargs _ mock_print.call_args
 
         # Make sure it prints the correct string
-        self.assertEqual(args, ('Hello, World!',))
+        assertEqual(args, ('Hello, World!',))
 if __name__ == '__main__':
     unttest.main()

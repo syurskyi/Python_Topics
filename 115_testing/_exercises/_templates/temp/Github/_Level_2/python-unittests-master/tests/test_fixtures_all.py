@@ -1,13 +1,13 @@
-import logging
-import unittest
-import sys
+______ logging
+______ unittest
+______ sys
 
-VERBOSE = '-v' in sys.argv or '--verbose' in sys.argv
+VERBOSE _ '-v' in sys.argv o. '--verbose' in sys.argv
 
 
 ___ setUpModule():
     if VERBOSE:
-        logging.basicConfig(level=logging.DEBUG, format='   %(message)s')
+        logging.basicConfig(level_logging.DEBUG, format_'   %(message)s')
     logging.info('Starting module')
 
 
@@ -24,11 +24,11 @@ c_ IncrementTest(unittest.TestCase):
     ___ tearDownClass(cls):
         logging.info('Test class ends')
 
-    ___ setUp(self):
+    ___ setUp
         logging.info('Test method begins')
 
-    ___ tearDown(self):
+    ___ tearDown
         logging.info('Test method ends')
 
-    ___ test_dummy(self):
-        self.assertTrue(True)
+    ___ test_dummy
+        assertTrue(True)

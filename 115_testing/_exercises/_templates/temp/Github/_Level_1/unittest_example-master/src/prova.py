@@ -1,4 +1,4 @@
-import sys
+______ sys
 
 
 c_ Prova(object):
@@ -6,7 +6,7 @@ c_ Prova(object):
 
     """
 
-    Variable_hipoteticamentPrivada = 3  # type: int
+    Variable_hipoteticamentPrivada _ 3  # type: int
 
 
 ___ function():

@@ -1,12 +1,12 @@
-import pytest
-from Checkout import Checkout
+______ pytest
+____ Checkout ______ Checkout
 
 @pytest.fixture()
 ___ checkout():
-    checkout = Checkout()
+    checkout _ Checkout()
     checkout.addItemPrice("a", 1)
     checkout.addItemPrice("b", 2)
-    return checkout
+    r_ checkout
 
 ___ test_CanCalculateTotal(checkout):
     checkout.addItem("a")

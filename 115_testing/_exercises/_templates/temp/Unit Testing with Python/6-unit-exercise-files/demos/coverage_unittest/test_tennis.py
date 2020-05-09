@@ -1,12 +1,12 @@
 
-from tennis import tennis_score
+____ tennis ______ tennis_score
 
 
-import unittest
+______ unittest
 
-from tennis import tennis_score
+____ tennis ______ tennis_score
 
-test_case_data = \
+test_case_data _ \
 {   "even_scores" :                     [("Love-All", 0, 0), 
                                          ("Fifteen-All", 1, 1),
                                          ("Thirty-All", 2, 2),
@@ -31,21 +31,21 @@ test_case_data = \
 }
 
 ___ tennis_test_template(*args):
-    ___ foo(self):
-        self.assert_tennis_score(*args)
-    return foo
+    ___ foo
+        assert_tennis_score(*args)
+    r_ foo
 
 c_ TennisTest(unittest.TestCase):
 
     ___ assert_tennis_score  expected_score, player1_points, player2_points):
-        self.assertEqual(expected_score, tennis_score(player1_points, player2_points))
+        assertEqual(expected_score, tennis_score(player1_points, player2_points))
 
 
 for behaviour, test_cases in test_case_data.items():
     for tennis_test_case_data in test_cases:
-        expected_output, player1_score, player2_score = tennis_test_case_data
-        test_name = "test_{0}_{1}_{2}".format(behaviour, player1_score, player2_score)
-        tennis_test_case = tennis_test_template(*tennis_test_case_data)
+        expected_output, player1_score, player2_score _ tennis_test_case_data
+        test_name _ "test_{0}_{1}_{2}".f..(behaviour, player1_score, player2_score)
+        tennis_test_case _ tennis_test_template(*tennis_test_case_data)
         setattr(TennisTest, test_name, tennis_test_case)
 
 

@@ -1,8 +1,8 @@
-from selenium import webdriver
-import unittest
-import time
+____ selenium ______ webdriver
+______ unittest
+______ time
 
-from selenium.webdriver import ActionChains
+____ selenium.webdriver ______ ActionChains
 
 
 c_ Auth(unittest.TestCase):
@@ -10,20 +10,20 @@ c_ Auth(unittest.TestCase):
     @classmethod
     ___ setUpClass(cls):
         global driver
-        driver = webdriver.Chrome()
+        driver _ webdriver.Chrome()
         driver.get("http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html")
 
-    ___ test_A_Drag_and_Drop(self):
-        source_page = driver.find_element_by_id("box6")
-        destination_location = driver.find_element_by_id("box103")
+    ___ test_A_Drag_and_Drop
+        source_page _ driver.find_element_by_id("box6")
+        destination_location _ driver.find_element_by_id("box103")
 
-        action = ActionChains(driver)
+        action _ ActionChains(driver)
         action.drag_and_drop(source_page, destination_location).perform()
         time.sleep(5)
 
-    ___ test_B_clear(self):
-        re = driver.find_element_by_id("box6")
-        action = ActionChains(driver)
+    ___ test_B_clear
+        re _ driver.find_element_by_id("box6")
+        action _ ActionChains(driver)
         action.reset_actions()
 
     @classmethod

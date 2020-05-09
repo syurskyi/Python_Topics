@@ -3,13 +3,13 @@ c_ Calculator(object):
     """docstring for Calculator"""
 
     ___ add  x, y):
-        number_types = (int, float, complex)
+        number_types _ (int, float, complex)
 
         if isinstance(x, number_types) and isinstance(y, number_types):
-            print('X is: {}'.format(x))
-            print('Y is: {}'.format(y))
-            result = x - y
-            print('Result is:{}'.format(result))
-            return result
+            print('X is: {}'.f..(x))
+            print('Y is: {}'.f..(y))
+            result _ x - y
+            print('Result is:{}'.f..(result))
+            r_ result
         else:
             raise ValueError

@@ -1,6 +1,6 @@
-import unittest
+______ unittest
 
-# from typing import ...
+# from typing ______ ...
 
 # Example code to organize the unit testing of a class following xUnit philosophy with 'unittest'
 # Designed following chapters 3 and 6 of "Python Unit Test Automation" - Ashwin Pajankar
@@ -58,17 +58,17 @@ c_ TestClassExample(unittest.TestCase):
     # https://docs.python.org/3/library/unittest.html#assert-methods
 
     # Test cases
-    ___ test_case01(self):
-        print(self.id())  # Print module, class and method name, to ease test output analysis
-        self.assertEqual(True, False)
+    ___ test_case01
+        print(id())  # Print module, class and method name, to ease test output analysis
+        assertEqual(True, False)
 
-    ___ test_case02(self):
-        print(self.id())
-        self.assertEqual(True, True)
+    ___ test_case02
+        print(id())
+        assertEqual(True, True)
 
-    ___ test_case03(self):
-        print(self.id())
-        self.assertNotEqual(True, False)
+    ___ test_case03
+        print(id())
+        assertNotEqual(True, False)
 
 if __name__ == '__main__':
     unittest.main()

@@ -1,61 +1,61 @@
 c_ Node:
-    ___  -   value=None):
-        self.value = value
-        self.next_node = None
+    ___  -   value_N..
+        value _ value
+        next_node _ None
 
     ___ set_next_node  next_node):
-        self.next_node = next_node
+        next_node _ next_node
 
-    ___ get_next_node(self):
-        return self.next_node
+    ___ get_next_node
+        r_ next_node
 
 
 c_ NodeList:
-    ___  -   values=None):
-        self.node_head = None
+    ___  -   values_N..
+        node_head _ None
         for value in values:
-            self.add_node(value)
+            add_node(value)
 
     ___ add_node  value):
-        checked_node = self.node_head
+        checked_node _ node_head
         if(checked_node is None):
-            self.node_head = Node(value)
+            node_head _ Node(value)
         else:
             while(checked_node.get_next_node() is not None):
-                checked_node = checked_node.get_next_node()
+                checked_node _ checked_node.get_next_node()
             checked_node.set_next_node(Node(value))
 
-    ___ print(self):
-        checked_node = self.node_head
+    ___ print
+        checked_node _ node_head
         while(checked_node is not None):
             print(checked_node.value)
-            checked_node = checked_node.get_next_node()
+            checked_node _ checked_node.get_next_node()
 
     ___ remove_node  position):
-        checked_node = self.node_head
-        previous_node = None
-        found = True
+        checked_node _ node_head
+        previous_node _ None
+        found _ True
         for count in range(position):
-            previous_node = checked_node
-            checked_node = checked_node.get_next_node()
+            previous_node _ checked_node
+            checked_node _ checked_node.get_next_node()
             if(checked_node == None):
-                found = False
+                found _ False
                 break
         if(found and previous_node is not None):
             previous_node.set_next_node(checked_node.get_next_node())
 
     ___ get_node_value  position):
-        checked_node = self.node_head
-        found = True
+        checked_node _ node_head
+        found _ True
         for count in range(position):
-            checked_node = checked_node.get_next_node()
+            checked_node _ checked_node.get_next_node()
             if(checked_node == None):
-                found = False
+                found _ False
                 break
         if(found):
-            return checked_node.value
+            r_ checked_node.value
         else:
-            return None
+            r_ None
 
-    ___ get_head_node(self):
-        return self.node_head
+    ___ get_head_node
+        r_ node_head

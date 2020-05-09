@@ -21,7 +21,7 @@
 
 c_ MyTest(TestCase):
 
-        ___ test_foo(self):
+        ___ test_foo
 
             with patch('mymodule.Foo') as mock_foo:
 
@@ -35,7 +35,7 @@ c_ MyTest(TestCase):
 
                        assert mymodule.Spam is mock_spam
 
-original = mymodule.Foo
+original _ mymodule.Foo
 
 MyTest('test_foo').test_foo()
 
@@ -50,26 +50,26 @@ assert mymodule.Foo is original
 c_ MyTest(TestCase):
 
        ___ create_patch  name):
-            patcher = patch(name)
+            patcher _ patch(name)
 
-            thing = patcher.start()
+            thing _ patcher.start()
 
-            self.addCleanup(patcher.stop)
+            addCleanup(patcher.stop)
 
-            return thing
+            r_ thing
 
-        ___ test_foo(self):
-            mock_foo = self.create_patch('mymodule.Foo')
+        ___ test_foo
+            mock_foo _ create_patch('mymodule.Foo')
 
-            mock_bar = self.create_patch('mymodule.Bar')
-            mock_spam = self.create_patch('mymodule.Spam')
+            mock_bar _ create_patch('mymodule.Bar')
+            mock_spam _ create_patch('mymodule.Spam')
 
             assert mymodule.Foo is mock_foo
 
             assert mymodule.Bar is mock_bar
             assert mymodule.Spam is mock_spam
 
-original = mymodule.Foo
+original _ mymodule.Foo
 
 MyTest('test_foo').run()
 

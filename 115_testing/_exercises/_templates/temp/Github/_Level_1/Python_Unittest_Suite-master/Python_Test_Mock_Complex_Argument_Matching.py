@@ -32,9 +32,9 @@
 c_ Foo:
         ___  -   a, b):
 
-            self.a, self.b = a, b
+            a, b _ a, b
 
-mock = Mock(return_value=None)
+mock _ Mock(return_value_None)
 mock(Foo(1, 2))
 
 mock.assert_called_with(Foo(1, 2))
@@ -46,15 +46,15 @@ mock.assert_called_with(Foo(1, 2))
 ___ compare  other):
         if not type(self) == type(other):
 
-            return False
+            r_ False
 
-        if self.a != other.a:
-            return False
+        if a !_ other.a:
+            r_ False
 
-        if self.b != other.b:
-            return False
+        if b !_ other.b:
+            r_ False
 
-      return True
+      r_ True
 
 # 
 # And a matcher object that can use comparison functions like this for its equality operation would look something like this:
@@ -62,17 +62,17 @@ ___ compare  other):
 
 c_ Matcher:
         ___  -   compare, some_obj):
-            self.compare = compare
-            self.some_obj = some_obj
+            compare _ compare
+            some_obj _ some_obj
 
         ___ __eq__  other):
-            return self.compare(self.some_obj, other)
+            r_ compare(some_obj, other)
 
 # 
 # Putting all this together:
 # 
 
-match_foo = Matcher(compare, Foo(1, 2))
+match_foo _ Matcher(compare, Foo(1, 2))
 mock.assert_called_with(match_foo)
 
 # 
@@ -82,6 +82,6 @@ mock.assert_called_with(match_foo)
 # If they match then assert_called_with passes, and if they don�t an AssertionError is raised:
 # 
 
-match_wrong = Matcher(compare, Foo(3, 4))
+match_wrong _ Matcher(compare, Foo(3, 4))
 
 mock.assert_called_with(match_wrong)

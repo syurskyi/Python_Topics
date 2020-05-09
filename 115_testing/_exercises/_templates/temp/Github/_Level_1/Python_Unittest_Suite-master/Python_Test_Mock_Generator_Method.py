@@ -28,12 +28,12 @@
 
 c_ Foo:
 
-     ___ iter(self):
+     ___ iter
             for i in [1, 2, 3]:
 
                 yield i
 
-foo = Foo()
+foo _ Foo()
 
 list(foo.iter())
 
@@ -47,8 +47,8 @@ list(foo.iter())
 # To configure the values returned from the iteration (implicit in the call to list), we need to configure the object returned by the call to foo.iter().
 # 
 
-mock_foo = MagicMock()
-mock_foo.iter.return_value = iter([1, 2, 3])
+mock_foo _ MagicMock()
+mock_foo.iter.return_value _ iter([1, 2, 3])
 
 list(mock_foo.iter())
 

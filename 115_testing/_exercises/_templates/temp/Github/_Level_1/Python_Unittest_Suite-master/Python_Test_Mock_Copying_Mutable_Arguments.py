@@ -41,7 +41,7 @@ ___ grob(val):
 # 
 
 with patch('mymodule.frob') as mock_frob:
-        val = {6}
+        val _ {6}
 
         mymodule.grob(val)
 
@@ -67,28 +67,28 @@ mock_frob.assert_called_with({6})
 # Again a helper function sets this up for me.
 # 
 
-from copy import deepcopy
-from unittest.mock import Mock, patch, DEFAULT
+____ copy ______ deepcopy
+____ unittest.mock ______ Mock, patch, DEFAULT
 
 ___ copy_call_args(mock):
-        new_mock = Mock()
+        new_mock _ Mock()
 
         ___ side_effect(*args, **kwargs):
-            args = deepcopy(args)
+            args _ deepcopy(args)
 
-            kwargs = deepcopy(kwargs)
+            kwargs _ deepcopy(kwargs)
             new_mock(*args, **kwargs)
 
-            return DEFAULT
+            r_ DEFAULT
 
-        mock.side_effect = side_effect
+        mock.side_effect _ side_effect
 
-        return new_mock
+        r_ new_mock
 
 with patch('mymodule.frob') as mock_frob:
-        new_mock = copy_call_args(mock_frob)
+        new_mock _ copy_call_args(mock_frob)
 
-        val = {6}
+        val _ {6}
 
         mymodule.grob(val)
 
@@ -113,7 +113,7 @@ new_mock.call_args
 ___ side_effect(arg):
         assert arg == {6}
 
-mock = Mock(side_effect=side_effect)
+mock _ Mock(side_effect_side_effect)
 
 mock({6})
 mock(set())
@@ -124,20 +124,20 @@ mock(set())
 # Here�s an example implementation:
 # 
 
-from copy import deepcopy
+____ copy ______ deepcopy
 
     c_ CopyingMock(MagicMock):
         ___ __call__  *args, **kwargs):
 
-            args = deepcopy(args)
+            args _ deepcopy(args)
 
-            kwargs = deepcopy(kwargs)
+            kwargs _ deepcopy(kwargs)
 
-            return super(CopyingMock, self).__call__(*args, **kwargs)
+            r_ super(CopyingMock, self).__call__(*args, **kwargs)
 
-c = CopyingMock(return_value=None)
+c _ CopyingMock(return_value_None)
 
-arg = set()
+arg _ set()
 
 c(arg)
 

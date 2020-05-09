@@ -33,7 +33,7 @@
 # ends.
 # 
 
-foo = {}
+foo _ {}
 
 with patch.dict(foo, {'newkey': 'newvalue'}):
         assert foo == {'newkey': 'newvalue'}
@@ -41,7 +41,7 @@ with patch.dict(foo, {'newkey': 'newvalue'}):
 assert foo == {}
  
 
-import os
+______ os
 
 with patch.dict('os.environ', {'newkey': 'newvalue'}):
         print(os.environ['newkey'])
@@ -55,11 +55,11 @@ assert 'newkey' not in os.environ
 # Keywords can be used in the patch.dict() call to set values in the dictionary:
 # 
 
-mymodule = MagicMock()
-mymodule.function.return_value = 'fish'
+mymodule _ MagicMock()
+mymodule.function.return_value _ 'fish'
 
-with patch.dict('sys.modules', mymodule=mymodule):
-        import mymodule
+with patch.dict('sys.modules', mymodule_mymodule):
+        ______ mymodule
  
        mymodule.function('some', 'args')
 
@@ -72,25 +72,25 @@ with patch.dict('sys.modules', mymodule=mymodule):
 # 
 
 c_ Container:
-        ___  - (self):
-            self.values = {}
+        ___  -
+            values _ {}
 
         ___ __getitem__  name):
-            return self.values[name]
+            r_ values[name]
 
         ___ __setitem__  name, value):
-            self.values[name] = value
+            values[name] _ value
 
         ___ __delitem__  name):
-            del self.values[name]
+            del values[name]
 
-        ___ __iter__(self):
-            return iter(self.values)
+        ___ __iter__
+            r_ iter(values)
 
-thing = Container()
-thing['one'] = 1
+thing _ Container()
+thing['one'] _ 1
 
-with patch.dict(thing, one=2, two=3):
+with patch.dict(thing, one_2, two_3):
         assert thing['one'] == 2
 
        assert thing['two'] == 3

@@ -1,11 +1,11 @@
-from .operations import Multiply, Add, Substract
+____ .operations ______ Multiply, Add, Substract
 
 c_ MyApp(object):
-    ___  - (self):
-        self.operations={'multiply': Multiply,
+    ___  - 
+        operations_{'multiply': Multiply,
                          'add': Add,
                          'substract': Substract}
 
     ___ do  operation, number1, number2):
-        return self.operations[operation.lower()].do(number1, number2)
+        r_ operations[operation.lower()].do(number1, number2)
 

@@ -1,6 +1,6 @@
-from nose import with_setup
+____ nose ______ with_setup
 
-from unnecessary_math import multiply
+____ unnecessary_math ______ multiply
 
 ___ my_setup_function():
     pass
@@ -15,5 +15,5 @@ ___ test_numbers_3_4():
     assert multiply(3, 4) == 12
 
 
-test_numbers_3_4.setup = my_setup_function
-test_numbers_3_4.teardown = my_teardown_function
+test_numbers_3_4.setup _ my_setup_function
+test_numbers_3_4.teardown _ my_teardown_function

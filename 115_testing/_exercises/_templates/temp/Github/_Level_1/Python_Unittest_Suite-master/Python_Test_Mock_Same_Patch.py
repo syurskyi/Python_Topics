@@ -27,13 +27,13 @@
     c_ MyTest(TestCase):
 
         ___ test_one  MockSomeClass):
-            self.assertIs(mymodule.SomeClass, MockSomeClass)
+            assertIs(mymodule.SomeClass, MockSomeClass)
 
         ___ test_two  MockSomeClass):
-            self.assertIs(mymodule.SomeClass, MockSomeClass)
+            assertIs(mymodule.SomeClass, MockSomeClass)
 
-        ___ not_a_test(self):
-            return 'something'
+        ___ not_a_test
+            r_ 'something'
 
 MyTest('test_one').test_one()
 MyTest('test_two').test_two()
@@ -49,16 +49,16 @@ MyTest('test_two').not_a_test()
 
 c_ MyTest(TestCase):
 
-        ___ setUp(self):
-            self.patcher = patch('mymodule.foo')
+        ___ setUp
+            patcher _ patch('mymodule.foo')
 
-            self.mock_foo = self.patcher.start()
+            mock_foo _ patcher.start()
 
-        ___ test_foo(self):
-            self.assertIs(mymodule.foo, self.mock_foo)
+        ___ test_foo
+            assertIs(mymodule.foo, mock_foo)
 
-        ___ tearDown(self):
-            self.patcher.stop()
+        ___ tearDown
+            patcher.stop()
 
 MyTest('test_foo').run()
 
@@ -70,13 +70,13 @@ MyTest('test_foo').run()
 
 c_ MyTest(TestCase):
 
-        ___ setUp(self):
-            patcher = patch('mymodule.foo')
+        ___ setUp
+            patcher _ patch('mymodule.foo')
 
-            self.addCleanup(patcher.stop)
-            self.mock_foo = patcher.start()
+            addCleanup(patcher.stop)
+            mock_foo _ patcher.start()
 
-        ___ test_foo(self):
-            self.assertIs(mymodule.foo, self.mock_foo)
+        ___ test_foo
+            assertIs(mymodule.foo, mock_foo)
 
 MyTest('test_foo').run()

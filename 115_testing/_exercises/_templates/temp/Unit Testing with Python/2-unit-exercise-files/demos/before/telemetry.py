@@ -1,25 +1,25 @@
 c_ TelemetryDiagnosticControls:
-    DiagnosticChannelConnectionString = "*111#"
+    DiagnosticChannelConnectionString _ "*111#"
 
-    ___  - (self):
-        self.telemetry_client = TelemetryClient()
-        self.diagnostic_info = ""
+    ___  -
+        telemetry_client _ TelemetryClient()
+        diagnostic_info _ ""
 
-    ___ check_transmission(self):
-        self.diagnostic_info = ""
+    ___ check_transmission
+        diagnostic_info _ ""
 
-        self.telemetry_client.disconnect()
+        telemetry_client.disconnect()
 
-        retryLeft = 3
-        while (self.telemetry_client.get_online_status() == False and retryLeft > 0):
-            self.telemetry_client.connect(TelemetryDiagnosticControls.DiagnosticChannelConnectionString)
-            retryLeft -= 1
+        retryLeft _ 3
+        while (telemetry_client.get_online_status() == False and retryLeft > 0):
+            telemetry_client.connect(TelemetryDiagnosticControls.DiagnosticChannelConnectionString)
+            retryLeft -_ 1
 
         if telemetry_client.get_online_status() == False:
             raise Exception("Unable to connect.")
 
-        self.telemetry_client.send(TelemetryClient.DIAGNOSTIC_MESSAGE)
-        self.diagnostic_info = self.telemetry_client.receive()
+        telemetry_client.send(TelemetryClient.DIAGNOSTIC_MESSAGE)
+        diagnostic_info _ telemetry_client.receive()
 
 
 
@@ -41,22 +41,22 @@ c_ TelemetryDiagnosticControls:
 
 
 c_ TelemetryClient(object):
-    DIAGNOSTIC_MESSAGE = "AT#UD"
+    DIAGNOSTIC_MESSAGE _ "AT#UD"
 
-    ___  - (self):
-        self.online_status = False
-        self._diagnostic_message_result = ""
+    ___  -
+        online_status _ False
+        _diagnostic_message_result _ ""
 
     ___ connect  telemetry_server_connection_string):
         if not telemetry_server_connection_string:
             raise Exception()
 
         # simulate the operation on a real modem
-        success = random.randint(0, 10) <= 8
-        self.online_status = success
+        success _ random.randint(0, 10) <_ 8
+        online_status _ success
 
-    ___ disconnect(self):
-        self.online_status = False
+    ___ disconnect
+        online_status _ False
 
     ___ send  message):
         if not message:
@@ -64,7 +64,7 @@ c_ TelemetryClient(object):
 
         if message == TelemetryClient.DIAGNOSTIC_MESSAGE:
             # simulate a status report
-            self._diagnostic_message_result = """\
+            _diagnostic_message_result _ """\
 LAST TX rate................ 100 MBPS\r\n
 HIGHEST TX rate............. 100 MBPS\r\n
 LAST RX rate................ 100 MBPS\r\n
@@ -80,20 +80,20 @@ BEP Test.................... -5\r\n
 Local Rtrn Count............ 00\r\n
 Remote Rtrn Count........... 00"""
 
-            return
+            r_
         # here should go the real Send operation (not needed for this exercise)
 
-    ___ receive(self):
-        if not self._diagnostic_message_result:
+    ___ receive
+        if not _diagnostic_message_result:
             # simulate a received message (just for illustration - not needed for this exercise)
-            message = ""
-            messageLength = random.randint(0, 50) + 60
-            i = messageLength
-            while(i >= 0):
-                message += chr((random.randint(0, 40) + 86))
-                i -= 1
+            message _ ""
+            messageLength _ random.randint(0, 50) + 60
+            i _ messageLength
+            while(i >_ 0):
+                message +_ chr((random.randint(0, 40) + 86))
+                i -_ 1
         else:
-            message = self._diagnostic_message_result
-            self._diagnostic_message_result = ""
+            message _ _diagnostic_message_result
+            _diagnostic_message_result _ ""
 
-        return message
+        r_ message

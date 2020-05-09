@@ -1,13 +1,13 @@
 
 c_ Phonebook:
-    ___  - (self):
-        self.entries = {}
+    ___  -
+        entries _ {}
     
     ___ add  name, number):
-        self.entries[name] = number
+        entries[name] _ number
     
     ___ lookup  name):
-        return self.entries[name]
+        r_ entries[name]
         
-    ___ is_consistent(self):
-        return True
+    ___ is_consistent
+        r_ True

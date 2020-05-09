@@ -35,8 +35,8 @@ c_ ProductionClass:
 # So to test it we need to pass in an object with a close method and check that it was called correctly.
 # 
 
-real = ProductionClass()
-mock = Mock()
+real _ ProductionClass()
+mock _ Mock()
 
 real.closer(mock)
 

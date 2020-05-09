@@ -1,4 +1,4 @@
-from math import pi
+____ math ______ pi
 
 ___ circle_area(r):
     if type(r) not in [int, float]:
@@ -6,4 +6,4 @@ ___ circle_area(r):
 
     if r < 0:
         raise ValueError("The radius cannot be negative")
-    return pi*(r**2)
+    r_ pi*(r**2)

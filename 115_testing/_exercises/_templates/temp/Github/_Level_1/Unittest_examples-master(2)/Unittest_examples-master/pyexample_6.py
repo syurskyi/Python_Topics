@@ -5,16 +5,16 @@
     Скрипт для запуска нескольких модулей с тестами
 """
 
-import unittest
+______ unittest
 
-import pyexample_6_module_a
-import pyexample_6_module_b
+______ pyexample_6_module_a
+______ pyexample_6_module_b
 
-loader = unittest.TestLoader()
+loader _ unittest.TestLoader()
 
 # Загрузка всех тестов со всех классов указанного модуля
 
-suite = loader.loadTestsFromModule(pyexample_6_module_a)
+suite _ loader.loadTestsFromModule(pyexample_6_module_a)
 suite.addTests(loader.loadTestsFromModule(pyexample_6_module_b))
 
 # 1) <имя_модуля>, и тогда метод грузит все тесты из каждого
@@ -36,5 +36,5 @@ suite.addTests(loader.loadTestsFromModule(pyexample_6_module_b))
 #                  'pyexample_6_module_b.ClassC.test_add_c']))
 
 
-runner = unittest.TextTestRunner(verbosity=2)
-result = runner.run(suite)
+runner _ unittest.TextTestRunner(verbosity_2)
+result _ runner.run(suite)

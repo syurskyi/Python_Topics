@@ -4,40 +4,40 @@ This module provides a function based API to markdown.py
 since markdown.py only provides a CLI.
 """
 
-from subprocess import Popen, PIPE, STDOUT
-from tempfile import NamedTemporaryFile
-import os
+____ subprocess ______ Popen, PIPE, STDOUT
+____ tempfile ______ NamedTemporaryFile
+______ os
 
 # This is here so there's one line to change if I want to swap
 # out a different script, such as markdown.pl
-_interpreter_and_script = ['python', 'markdown.py']
+_interpreter_and_script _ ['python', 'markdown.py']
 
 ___ run_markdown(input_text):
     """
     The default method when we don't care which method to use.
     """
-    return run_markdown_pipe(input_text)
+    r_ run_markdown_pipe(input_text)
 
 ___ run_markdown_pipe(input_text):
     """
     Simulate: echo 'some input' | python markdown.py
     """
-    pipe = Popen(_interpreter_and_script,
-            stdout=PIPE, stdin=PIPE, stderr=STDOUT)
-    output = pipe.communicate(input=input_text)[0]
-    return output.rstrip()
+    pipe _ Popen(_interpreter_and_script,
+            stdout_PIPE, stdin_PIPE, stderr_STDOUT)
+    output _ pipe.communicate(input_input_text)[0]
+    r_ output.rstrip()
 
 ___ run_markdown_file(input_text):
     """
     Simulate: python markdown.py fileName
     """
-    temp_file = NamedTemporaryFile(delete=False)
+    temp_file _ NamedTemporaryFile(delete_False)
     temp_file.write(input_text)
     temp_file.close()
-    interp_script_and_fileName = _interpreter_and_script
+    interp_script_and_fileName _ _interpreter_and_script
     interp_script_and_fileName.append(temp_file.name)
-    pipe = Popen(interp_script_and_fileName,
-            stdout=PIPE, stderr=STDOUT)
-    output = pipe.communicate()[0]
+    pipe _ Popen(interp_script_and_fileName,
+            stdout_PIPE, stderr_STDOUT)
+    output _ pipe.communicate()[0]
     os.unlink(temp_file.name)
-    return output.rstrip()
+    r_ output.rstrip()

@@ -23,11 +23,11 @@
 
 ___ f(a, b, c): pass
 
-mock = Mock(spec=f)
-mock(1, 2, c=3)
+mock _ Mock(spec_f)
+mock(1, 2, c_3)
 
 # OUTPUT: '<Mock name='mock()' id='140161580456576'>'
 
 mock.assert_called_with(1, 2, 3)
 
-mock.assert_called_with(a=1, b=2, c=3)
+mock.assert_called_with(a_1, b_2, c_3)

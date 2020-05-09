@@ -1,8 +1,8 @@
-from selenium import webdriver
-import unittest
-import time
-from selenium.webdriver import ActionChains
-from selenium.webdriver.common.keys import Keys
+____ selenium ______ webdriver
+______ unittest
+______ time
+____ selenium.webdriver ______ ActionChains
+____ selenium.webdriver.common.keys ______ Keys
 
 
 c_ MouseOver(unittest.TestCase):
@@ -10,38 +10,38 @@ c_ MouseOver(unittest.TestCase):
     @classmethod
     ___ setUpClass(cls):
         global driver
-        driver = webdriver.Chrome()
+        driver _ webdriver.Chrome()
         driver.get("https://opensource-demo.orangehrmlive.com")
 
-    ___ test_A_Login(self):
+    ___ test_A_Login
         driver.find_element_by_id("txtUsername").send_keys("admin")
         driver.find_element_by_id("txtPassword").send_keys("admin123")
         driver.find_element_by_id("btnLogin").send_keys(Keys.ENTER)
 
     # This is the example for the hover the mouse
 
-    ___ test_B_Mouse(self):
-        Admin = driver.find_element_by_id("menu_admin_viewAdminModule")
-        UserManagement = driver.find_element_by_id("menu_admin_UserManagement")
-        Users = driver.find_element_by_id("menu_admin_viewSystemUsers")
+    ___ test_B_Mouse
+        Admin _ driver.find_element_by_id("menu_admin_viewAdminModule")
+        UserManagement _ driver.find_element_by_id("menu_admin_UserManagement")
+        Users _ driver.find_element_by_id("menu_admin_viewSystemUsers")
 
-        action = ActionChains(driver)
+        action _ ActionChains(driver)
         action.move_to_element(Admin).move_to_element(UserManagement).move_to_element(Users).click().perform()
         time.sleep(5)
 
     # This is the example for the double click
 
-    ___ test_C_DoubleClick(self):
-        Dashboard = driver.find_element_by_id("menu_dashboard_index")
-        action = ActionChains(driver)
+    ___ test_C_DoubleClick
+        Dashboard _ driver.find_element_by_id("menu_dashboard_index")
+        action _ ActionChains(driver)
         action.move_to_element(Dashboard).double_click().perform()
         time.sleep(4)
 
     # This is the example for the context_click
 
-    ___ test_D_Context(self):
-        AssingLeave = driver.find_element_by_class_name("quickLaunge")
-        action = ActionChains(driver)
+    ___ test_D_Context
+        AssingLeave _ driver.find_element_by_class_name("quickLaunge")
+        action _ ActionChains(driver)
         action.move_to_element(AssingLeave).context_click().send_keys(Keys.ARROW_DOWN).click().perform()
 
     @classmethod

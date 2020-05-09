@@ -20,12 +20,12 @@
 # This means that you can see how the object returned from a call to a mocked object has been used by interrogating the return_value mock:
 # 
 
-mock = Mock()
-mock().foo(a=2, b=3)
+mock _ Mock()
+mock().foo(a_2, b_3)
 
 # OUTPUT: '<Mock name='mock().foo()' id='...'>'
 
-mock.return_value.foo.assert_called_with(a=2, b=3)
+mock.return_value.foo.assert_called_with(a_2, b_3)
 
 # 
 # From here it is a simple step to configure and then make assertions about chained calls.
@@ -38,11 +38,11 @@ mock.return_value.foo.assert_called_with(a=2, b=3)
 
 c_ Something:
 
-        ___  - (self):
-            self.backend = BackendProvider()
+        ___  -
+            backend _ BackendProvider()
 
-        ___ method(self):
-            response = self.backend.get_endpoint('foobar').create_call('spam', 'eggs').start_call()
+        ___ method
+            response _ backend.get_endpoint('foobar').create_call('spam', 'eggs').start_call()
 
             # more code
 
@@ -61,12 +61,12 @@ c_ Something:
 # We can do that in a slightly nicer way using the configure_mock() method to directly set the return value for us:
 # 
 
-something = Something()
+something _ Something()
 
-mock_response = Mock(spec=open)
-mock_backend = Mock()
+mock_response _ Mock(spec_open)
+mock_backend _ Mock()
 
-config = {'get_endpoint.return_value.create_call.return_value.start_call.return_value': mock_response}
+config _ {'get_endpoint.return_value.create_call.return_value.start_call.return_value': mock_response}
 
 mock_backend.configure_mock(**config)
 
@@ -74,7 +74,7 @@ mock_backend.configure_mock(**config)
 # With these we monkey patch the �mock backend� in place and can make the real call:
 # 
 
-something.backend = mock_backend
+something.backend _ mock_backend
 
 something.method()
 
@@ -84,7 +84,7 @@ something.method()
 # We can use call.call_list() to create this list of calls for us:
 # 
 
-chained = call.get_endpoint('foobar').create_call('spam', 'eggs').start_call()
-call_list = chained.call_list()
+chained _ call.get_endpoint('foobar').create_call('spam', 'eggs').start_call()
+call_list _ chained.call_list()
 
 assert mock_backend.mock_calls == call_list

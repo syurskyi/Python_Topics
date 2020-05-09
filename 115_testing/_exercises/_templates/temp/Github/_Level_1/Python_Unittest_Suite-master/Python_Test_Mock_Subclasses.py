@@ -23,11 +23,11 @@
 # 
 
 c_ MyMock(MagicMock):
-        ___ has_been_called(self):
+        ___ has_been_called
 
-            return self.called
+            r_ called
 
-mymock = MyMock(return_value=None)
+mymock _ MyMock(return_value_None)
 
 mymock
 
@@ -79,9 +79,9 @@ mymock.foo.has_been_called()
 c_ Subclass(MagicMock):
         ___ _get_child_mock  **kwargs):
 
-            return MagicMock(**kwargs)
+            r_ MagicMock(**kwargs)
 
-mymock = Subclass()
+mymock _ Subclass()
 
 mymock.foo
 

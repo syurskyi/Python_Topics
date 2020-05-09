@@ -5,29 +5,29 @@
 c_ Employee:
     """A sample Employee class"""
 
-    raise_amt = 1.05
+    raise_amt _ 1.05
 
     ___  -   first, last, pay):
-        self.first = first
-        self.last = last
-        self.pay = pay
+        first _ first
+        last _ last
+        pay _ pay
 
     @property
-    ___ email(self):
-        return '{}.{}@email.com'.format(self.first, self.last)
+    ___ email
+        r_ '{}.{}@email.com'.f..(first, last)
 
     @property
-    ___ fullname(self):
-        return '{} {}'.format(self.first, self.last)
+    ___ fullname
+        r_ '{} {}'.f..(first, last)
 
-    ___ apply_raise(self):
-        self.pay = int(self.pay * self.raise_amt)
+    ___ apply_raise
+        pay _ int(pay * raise_amt)
 
     ___ monthly_schedule  month):
-        response = requests.get(f'http://company.com/{self.last}/{month}')
+        response _ requests.get(f'http://company.com/{last}/{month}')
         if response.ok:
-            return response.text
+            r_ response.text
         else:
-            return 'Bad Response!'
+            r_ 'Bad Response!'
 
 

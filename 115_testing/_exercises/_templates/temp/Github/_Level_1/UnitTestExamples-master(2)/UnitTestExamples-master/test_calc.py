@@ -2,8 +2,8 @@
 # Python Tutorial: Unit Testing Your Code with the unittest Module
 # https://www.youtube.com/watch?v=6tNS--WetLI
 
-import unittest
-import calc
+______ unittest
+______ calc
 
 c_ TestCalc(unittest.TestCase):
 
@@ -12,37 +12,37 @@ c_ TestCalc(unittest.TestCase):
 	#	self.assertEqual(result,11)
 
 	#We can rewrite the above as:
-	___ test_add(self):
-		self.assertEqual(calc.add(2,8),10)
-		self.assertEqual(calc.add(-1,1),0)
-		self.assertEqual(calc.add(-1,-1),-2)
+	___ test_add
+		assertEqual(calc.add(2,8),10)
+		assertEqual(calc.add(-1,1),0)
+		assertEqual(calc.add(-1,-1),-2)
 
-	___ test_subtract(self):
-		self.assertEqual(calc.subtract(10,8),2)
-		self.assertEqual(calc.subtract(10,10),0)
-		self.assertEqual(calc.subtract(-1,2),-3)
+	___ test_subtract
+		assertEqual(calc.subtract(10,8),2)
+		assertEqual(calc.subtract(10,10),0)
+		assertEqual(calc.subtract(-1,2),-3)
 
-	___ test_multiply(self):
-		self.assertEqual(calc.multiply(2,5),10)
-		self.assertEqual(calc.multiply(-1,1),-1)
-		self.assertEqual(calc.multiply(-1,-1),1)
+	___ test_multiply
+		assertEqual(calc.multiply(2,5),10)
+		assertEqual(calc.multiply(-1,1),-1)
+		assertEqual(calc.multiply(-1,-1),1)
 
-	___ test_divide(self):
-		self.assertEqual(calc.divide(10,2),5)
-		self.assertEqual(calc.divide(-10,2),-5)
-		self.assertEqual(calc.divide(-1,-1),1)
+	___ test_divide
+		assertEqual(calc.divide(10,2),5)
+		assertEqual(calc.divide(-10,2),-5)
+		assertEqual(calc.divide(-1,-1),1)
 		
-		self.assertRaises(ValueError, calc.divide,10,0)
+		assertRaises(ValueError, calc.divide,10,0)
 	#	Can also use a context manager to check ValueError:
-		with self.assertRaises(ValueError):
+		with assertRaises(ValueError):
 			calc.divide(10,0)
 
-	___ test_power(self):
-		self.assertEqual(calc.power(2,4),16)
-		self.assertEqual(calc.power(0,1),0)
-		self.assertEqual(calc.power(-1,-1),-1)
-		self.assertEqual(calc.power(10,0),1)
-		self.assertEqual(calc.power(0,0),1)
+	___ test_power
+		assertEqual(calc.power(2,4),16)
+		assertEqual(calc.power(0,1),0)
+		assertEqual(calc.power(-1,-1),-1)
+		assertEqual(calc.power(10,0),1)
+		assertEqual(calc.power(0,0),1)
 
 # https://docs.python.org/3/library/unittest.html#unittest.TestCase.debug
 

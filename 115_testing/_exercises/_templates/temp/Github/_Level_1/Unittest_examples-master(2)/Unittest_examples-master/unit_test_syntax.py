@@ -5,54 +5,54 @@
     Описание всех методов Unittest Framework
 """
 
-import unittest
+______ unittest
 
 
 c_ TestUnittestMethods(unittest.TestCase):
-    ___ testAssertTrue(self):
+    ___ testAssertTrue
         """Вызывает ошибку, если значение аргумента != True"""
-        self.assertTrue(True)
+        assertTrue(True)
 
-    ___ testFailUnless(self):
+    ___ testFailUnless
         """
             Устаревшее название для assertTrue().
             Вызывает ошибку, если значение аргумента != True
         """
-        self.failUnless(True)
+        failUnless(True)
 
-    ___ testFailIf(self):
+    ___ testFailIf
         """Устаревшая функция, теперь называется assertFalse()"""
-        self.assertFalse(False)
+        assertFalse(False)
 
-    ___ testAssertFalse(self):
+    ___ testAssertFalse
         """Вызывает ошибку, если начение аргумента != False"""
-        self.assertFalse(False)
+        assertFalse(False)
 
-    ___ testEqual(self):
+    ___ testEqual
         """Вызывает ошибку, если значения двух аргументов НЕ равны"""
-        self.failUnlessEqual(1, 3 - 2)
+        failUnlessEqual(1, 3 - 2)
 
-    ___ testNotEqual(self):
+    ___ testNotEqual
         """Вызывает ошибку, если значения двух аргументов равны"""
-        self.failIfEqual(2, 3 - 2)
+        failIfEqual(2, 3 - 2)
 
-    ___ testNotAlmostEqual(self):
+    ___ testNotAlmostEqual
         """
             Старое название функции.
             Теперь называется assertNotAlmostEqual().
             Сравнивает два аргумента с округлением, можно задать
             это округление. Вызывает ошибку, если значения равны.
         """
-        self.failIfAlmostEqual(1.1, 3.5 - 2.0, places=1)
+        failIfAlmostEqual(1.1, 3.5 - 2.0, places_1)
 
-    ___ testAlmostEqual(self):
+    ___ testAlmostEqual
         """
             Старое название функции.
             Теперь называется assertAlmostEquals().
             Сравнивается два аргумента с округлением, можно задать
             это округление. Вызывает ошибку, если значения НЕ равны.
         """
-        self.failUnlessAlmostEqual(1.1, 3.3 - 2.0, places=0)
+        failUnlessAlmostEqual(1.1, 3.3 - 2.0, places_0)
 
 if __name__ == '__main__':
     unittest.main()

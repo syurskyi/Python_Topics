@@ -1,52 +1,52 @@
-import unittest
-from mocktry import Student
-from unittest.mock import patch
+______ unittest
+____ mocktry ______ Student
+____ unittest.mock ______ patch
 
 c_ Testmock(unittest.TestCase):
     
-    ___ setUp(self):
-        self.s1 = Student('shubhabrata','mukherjee',72)
-        self.s2 = Student('sumitra','dey',12)
+    ___ setUp
+        s1 _ Student('shubhabrata','mukherjee',72)
+        s2 _ Student('sumitra','dey',12)
         print('this is setUp\n')
         
-    ___ tearDown(self):
+    ___ tearDown
         print('this is tearDown\n')
 
 
-    ___ test_email(self):
-        self.assertEqual(self.s1.s_email(),'shubhabrata.mukherjee@gmail.com')
-        self.assertEqual(self.s2.s_email(),'sumitra.dey@gmail.com')
+    ___ test_email
+        assertEqual(s1.s_email(),'shubhabrata.mukherjee@gmail.com')
+        assertEqual(s2.s_email(),'sumitra.dey@gmail.com')
         
         
-        self.s1.fname = 'satya'
-        self.s1.lname = 'bose'
-        self.assertEqual(self.s1.s_email(),'satya.bose@gmail.com')
+        s1.fname _ 'satya'
+        s1.lname _ 'bose'
+        assertEqual(s1.s_email(),'satya.bose@gmail.com')
         
         print('this is email method\n')
         
     
-    ___ test_mycode(self):
-        self.assertEqual(self.s1.code(),'shubhabratamukherjee')
-        self.assertEqual(self.s2.code(),'sumitradey')
+    ___ test_mycode
+        assertEqual(s1.code(),'shubhabratamukherjee')
+        assertEqual(s2.code(),'sumitradey')
         print('this is code method\n')
         
-        self.s1.fname = 'mohua'
-        self.s1.lname = 'ray'
-        self.assertEqual(self.s1.code(),'mohuaray')
+        s1.fname _ 'mohua'
+        s1.lname _ 'ray'
+        assertEqual(s1.code(),'mohuaray')
         
-    ___ test_mylinkedin(self):
+    ___ test_mylinkedin
         with patch('mocktry.requests.get') as mocked_get:
-            mocked_get.return_value.ok = True
-            mocked_get.return_value.text = 'Done'
+            mocked_get.return_value.ok _ True
+            mocked_get.return_value.text _ 'Done'
 
-            s = self.s1.mylinkedin('in')
+            s _ s1.mylinkedin('in')
             mocked_get.assert_called_with('https://www.linkedin.com/in/shubhabratamukherjee')
-            self.assertEqual(s, 'Done')
+            assertEqual(s, 'Done')
 
             
-            s = self.s2.mylinkedin('in')
+            s _ s2.mylinkedin('in')
             mocked_get.assert_called_with('https://www.linkedin.com/in/sumitradey')
-            self.assertEqual(s, 'Done')
+            assertEqual(s, 'Done')
             
             print('this is the mock function\n')
 

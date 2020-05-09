@@ -12,43 +12,43 @@ c_ SingleSignOnRegistry:
 
 c_ FakeSingleSignOnRegistry:
 
-    ___  - (self):
-        self.tokens = set()
+    ___  -
+        tokens _ set()
 
     ___ register  credentials):
         if are_valid(credentials):
-            token = SSOToken()
-            self.tokens.add(token)
-            return token
+            token _ SSOToken()
+            tokens.add(token)
+            r_ token
 
     ___ is_valid  token):
-        return token in self.tokens
+        r_ token in tokens
 
     ___ end_session  token):
-        self.tokens.remove(token)
+        tokens.remove(token)
 
 c_ MockSingleSignOnRegistry:
 
-    ___  -   expected_token, token_is_valid=True):
-        self.expected_token = expected_token
-        self.token_is_valid = token_is_valid
-        self.is_valid_was_called = False
+    ___  -   expected_token, token_is_valid_True):
+        expected_token _ expected_token
+        token_is_valid _ token_is_valid
+        is_valid_was_called _ False
 
     ___ is_valid  token):
-        self.is_valid_was_called = True
-        if not token == self.expected_token:
-            raise Exception("This mock was given an unexpected argument. Expected {0} got {1}".format(self.expected_token, token))
-        return self.token_is_valid
+        is_valid_was_called _ True
+        if not token == expected_token:
+            raise Exception("This mock was given an unexpected argument. Expected {0} got {1}".f..(expected_token, token))
+        r_ token_is_valid
 
 c_ SpySingleSignOnRegistry:
 
-    ___  -   accept_all_tokens = True):
-        self.accept_all_tokens = accept_all_tokens
-        self.checked_tokens = []
+    ___  -   accept_all_tokens _ True):
+        accept_all_tokens _ accept_all_tokens
+        checked_tokens _ []
 
     ___ is_valid  token):
-        self.checked_tokens.append(token)
-        return self.accept_all_tokens
+        checked_tokens.append(token)
+        r_ accept_all_tokens
 
 
 c_ SSOToken:
@@ -56,4 +56,4 @@ c_ SSOToken:
 
 ___ are_valid(credentials):
     #check the credentials
-    return True
+    r_ True

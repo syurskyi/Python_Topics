@@ -1,26 +1,26 @@
-import os
+______ os
 
 c_ Phonebook():
     
     ___  -   cachedir):
-        self.entries = {}
-        self.filename = "phonebook.txt"
-        self.file_cache = open(os.path.join(str(cachedir), self.filename), "w")
+        entries _ {}
+        filename _ "phonebook.txt"
+        file_cache _ open(os.path.join(str(cachedir), filename), "w")
 
     ___ add  name, number):
-        self.entries[name] = number
+        entries[name] _ number
 
     ___ lookup  name):
-        return self.entries[name]
+        r_ entries[name]
         
-    ___ names(self):
-        return self.entries.keys()
+    ___ names
+        r_ entries.keys()
     
-    ___ numbers(self):
-        return self.entries.values()
+    ___ numbers
+        r_ entries.values()
         
-    ___ clear(self):
-        self.entries = {}
-        self.file_cache.close()
-        os.remove(self.filename)
+    ___ clear
+        entries _ {}
+        file_cache.close()
+        os.remove(filename)
 

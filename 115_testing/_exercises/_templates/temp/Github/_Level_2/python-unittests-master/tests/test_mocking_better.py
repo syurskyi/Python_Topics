@@ -1,25 +1,25 @@
-import unittest
-from unittest.mock import Mock
+______ unittest
+____ unittest.mock ______ Mock
 
-import requests_mock
+______ requests_mock
 
-from app.mocking_better import CurrencyConvertor, CURRENCY_CONVERSION_API_URL
+____ app.mocking_better ______ CurrencyConvertor, CURRENCY_CONVERSION_API_URL
 
 
 c_ TestCurrency(unittest.TestCase):
-    ___ test_get_exchange_rate_without_mocking(self):
+    ___ test_get_exchange_rate_without_mocking
         """
         Actually NOT a unit test but rather a system test (connecting to external third party service)
         """
-        convertor = CurrencyConvertor()
-        result = convertor.get_exchange_rate('EUR', 'CZK')
-        self.assertIsInstance(result, float)
+        convertor _ CurrencyConvertor()
+        result _ convertor.get_exchange_rate('EUR', 'CZK')
+        assertIsInstance(result, float)
 
-    ___ test_get_exchange_rate_with_mocking(self):
+    ___ test_get_exchange_rate_with_mocking
         """
         Mocked version of previous test
         """
-        mocked_response = """
+        mocked_response _ """
                 {
                     "base":"EUR",
                     "date":"2018-06-27",
@@ -35,19 +35,19 @@ c_ TestCurrency(unittest.TestCase):
                 }
                 """
 
-        convertor = CurrencyConvertor()
+        convertor _ CurrencyConvertor()
 
         with requests_mock.mock() as m:
-            m.get('{currency_conversion_api_url}/latest?base=EUR'.format(
-                currency_conversion_api_url=CURRENCY_CONVERSION_API_URL), text=mocked_response)
-            result = convertor.convert_currency('EUR', 'CZK', 100)
+            m.get('{currency_conversion_api_url}/latest?base=EUR'.f..(
+                currency_conversion_api_url_CURRENCY_CONVERSION_API_URL), text_mocked_response)
+            result _ convertor.convert_currency('EUR', 'CZK', 100)
 
-        self.assertIsInstance(result, float)
-        self.assertAlmostEqual(result, 2577.7)
+        assertIsInstance(result, float)
+        assertAlmostEqual(result, 2577.7)
 
-    ___ test_convert_currency__mocking(self):
-        convertor = CurrencyConvertor()
-        convertor.get_exchange_rate = Mock(return_value=25.777)
-        result = convertor.convert_currency('EUR', 'CZK', 100)
-        self.assertIsInstance(result, float)
-        self.assertAlmostEqual(result, 2577.7)
+    ___ test_convert_currency__mocking
+        convertor _ CurrencyConvertor()
+        convertor.get_exchange_rate _ Mock(return_value_25.777)
+        result _ convertor.convert_currency('EUR', 'CZK', 100)
+        assertIsInstance(result, float)
+        assertAlmostEqual(result, 2577.7)

@@ -58,6 +58,6 @@
 
 @unittest.removeHandler
 
-___ test_signal_handling(self):
+___ test_signal_handling
 
 #    ...

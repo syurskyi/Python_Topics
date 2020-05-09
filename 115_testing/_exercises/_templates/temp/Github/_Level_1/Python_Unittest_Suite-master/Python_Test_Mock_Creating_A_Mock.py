@@ -28,7 +28,7 @@
 # the class in those tests.
 # 
 
-mock = Mock(spec=SomeClass)
+mock _ Mock(spec_SomeClass)
 mock.old_method()
 
 #
@@ -38,9 +38,9 @@ mock.old_method()
 
 ___ f(a, b, c): pass
 
-mock = Mock(spec=f)
+mock _ Mock(spec_f)
 mock(1, 2, 3)
 
 # OUTPUT: '<Mock name='mock()' id='140161580456576'>'
 
-mock.assert_called_with(a=1, b=2, c=3)
+mock.assert_called_with(a_1, b_2, c_3)

@@ -20,7 +20,7 @@
 # When you set side_effect to an iterable every call to the mock returns the next value from the iterable:
 # 
 
-mock = MagicMock(side_effect=[4, 5, 6])
+mock _ MagicMock(side_effect_[4, 5, 6])
 mock()
 
 # OUTPUT: '4'
@@ -39,12 +39,12 @@ mock()
 # Whatever the function returns is what the call returns:
 # 
 
-vals = {(1, 2): 1, (2, 3): 2}
+vals _ {(1, 2): 1, (2, 3): 2}
 
 ___ side_effect(*args):
-        return vals[args]
+        r_ vals[args]
    
-mock = MagicMock(side_effect=side_effect)
+mock _ MagicMock(side_effect_side_effect)
 mock(1, 2)
 
 # OUTPUT: '1'

@@ -3,23 +3,23 @@
 # Purpose: The purpose of this script is test a addNode() method
 #          of the linkedlist.py 
 
-import sys
-import unittest
-from linkedlist import LinkedList
+______ sys
+______ unittest
+____ linkedlist ______ LinkedList
 
 c_ SingleNodeInsertionTest(unittest.TestCase):
-    ___ setUp(self):
+    ___ setUp
         try:
-            self.newList = LinkedList()
+            newList _ LinkedList()
         except:
             print('\nSetup failed: '+ str(sys.exc_info()[0]))
 
-    ___ testNodeInsertion(self):
+    ___ testNodeInsertion
         #insert new node
-        self.newList.addNode(10)
+        newList.addNode(10)
         #check if node exists
-        self.assertEqual(self.newList.findNode(10), 10)
+        assertEqual(newList.findNode(10), 10)
 
 if __name__ == '__main__':
-    unittest.main(verbosity=2)
+    unittest.main(verbosity_2)
 

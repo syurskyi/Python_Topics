@@ -3,10 +3,10 @@
 # exactly as shown.
 #
 #  There are several common ways to use doctest:
-# > To check that a module’s docstrings are up-to-date by verifying that all interactive examples still work as documented.
+# > To check that a moduleï¿½s docstrings are up-to-date by verifying that all interactive examples still work as documented.
 # > To perform regression testing by verifying that interactive examples from a test file or a test object work as expected.
 # > To write tutorial documentation for a package, liberally illustrated with input-output examples.
-#   Depending on whether the examples or the expository text are emphasized, this has the flavor of “literate testing” or “executable documentation”.
+#   Depending on whether the examples or the expository text are emphasized, this has the flavor of ï¿½literate testingï¿½ or ï¿½executable documentationï¿½.
 #
  
 #
@@ -19,22 +19,22 @@
 # 
 
 if __name__ == '__main__':
-    import doctest
+    ______ doctest
 
-    flags = doctest.REPORT_NDIFF|doctest.FAIL_FAST
+    flags _ doctest.REPORT_NDIFF|doctest.FAIL_FAST
 
     if len(sys.argv) > 1:
-        name = sys.argv[1]
+        name _ sys.argv[1]
 
         if name in globals():
-            obj = globals()[name]
+            obj _ globals()[name]
 
         else:
-            obj = __test__[name]
+            obj _ __test__[name]
 
-        doctest.run_docstring_examples(obj, globals(), name=name,
-                                       optionflags=flags)
+        doctest.run_docstring_examples(obj, globals(), name_name,
+                                       optionflags_flags)
     else:
-        fail, total = doctest.testmod(optionflags=flags)
+        fail, total _ doctest.testmod(optionflags_flags)
 
-        print("{} failures out of {} tests".format(fail, total))
+        print("{} failures out of {} tests".f..(fail, total))

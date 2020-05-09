@@ -1,5 +1,5 @@
 # Python Unittest
-# unittest.mock — mock object library
+# unittest.mock ï¿½ mock object library
 # unittest.mock is a library for testing in Python.
 # It allows you to replace parts of your system under test with mock objects and make assertions about how they have been used.
 # unittest.mock provides a core Mock class removing the need to create a host of stubs throughout your test suite.
@@ -9,7 +9,7 @@
 # Additionally, mock provides a patch() decorator that handles patching module and class level attributes within the scope of a test, along with sentinel
 # for creating unique objects.
 # 
-# Mock is very easy to use and is designed for use with unittest. Mock is based on the ‘action -> assertion’ pattern instead of ‘record -> replay’ used by
+# Mock is very easy to use and is designed for use with unittest. Mock is based on the ï¿½action -> assertionï¿½ pattern instead of ï¿½record -> replayï¿½ used by
 # many mocking frameworks.
 #
 
@@ -22,13 +22,13 @@
 # Mock objects that use a class or an instance as a spec or spec_set are able to pass isinstance() tests:
 # 
 
-mock = Mock(spec=SomeClass)
+mock _ Mock(spec_SomeClass)
 
 isinstance(mock, SomeClass)
 
 # OUTPUT: 'True'
 
-mock = Mock(spec_set=SomeClass())
+mock _ Mock(spec_set_SomeClass())
 
 isinstance(mock, SomeClass)
 
@@ -41,7 +41,7 @@ isinstance(mock, SomeClass)
 # the mock:
 # 
 
-m = MagicMock(attribute=3, other='fish')
+m _ MagicMock(attribute_3, other_'fish')
 
 m.attribute
 
@@ -53,12 +53,12 @@ m.other
  
 #
 # The return value and side effect of child mocks can be set in the same way, using dotted notation.
-# As you can’t use dotted names directly in a call you have to create a dictionary and unpack it using **:
+# As you canï¿½t use dotted names directly in a call you have to create a dictionary and unpack it using **:
 # 
 
-attrs = {'method.return_value': 3, 'other.side_effect': KeyError}
+attrs _ {'method.return_value': 3, 'other.side_effect': KeyError}
 
-mock = Mock(some_attribute='eggs', **attrs)
+mock _ Mock(some_attribute_'eggs', **attrs)
 
 mock.some_attribute
 

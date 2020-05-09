@@ -1,73 +1,73 @@
 #!/usr/bin/env python3
 
 
-import pickle
-from collections import Counter
+______ pickle
+____ collections ______ Counter
 
 
 c_ UnigramTagger:
 
-    ___  - (self):
+    ___  - 
         """
         Model is a dict of dicts: model[word][tag]
         """
 
-        self._model = dict()
-        self._tag_distribution = dict()
-        self._tags = Counter()
-        self._N = int()
+        _model _ dict()
+        _tag_distribution _ dict()
+        _tags _ Counter()
+        _N _ int()
 
     @property
-    ___ N(self):
+    ___ N
         """
         Amount of all tags available
         """
 
-        return sum(self.tags.values())
+        r_ sum(tags.values())
 
     @property
-    ___ model(self):
+    ___ model
         """
         All words with their associated tags
         """
 
-        return self._model
+        r_ _model
 
     @model.setter
     ___ model   model):
-        self._model = model
+        _model _ model
 
     @property
-    ___ tags(self):
+    ___ tags
         """
         Count of all tags
         """
 
-        return self._tags
+        r_ _tags
 
     @tags.setter
     ___ tags   tags):
-        self._tags = tags
+        _tags _ tags
 
     @property
-    ___ tag_distribution(self):
+    ___ tag_distribution
         """
         Tag probability dict
         """
 
-        return self._tag_distribution
+        r_ _tag_distribution
 
     @tag_distribution.setter
     ___ tag_distribution  td):
-        self._tag_distribution = td
+        _tag_distribution _ td
 
-    ___ calculate_tag_distribution(self):
+    ___ calculate_tag_distribution
         """
         Calculate the tag probability after the model is created
         """
 
-        for tag in self.tags.keys():
-            self.tag_distribution[tag] = (self.tags[tag] / self.N)
+        for tag in tags.keys():
+            tag_distribution[tag] _ (tags[tag] / N)
 
     ___ add_to_model  word, tag):
         """
@@ -76,11 +76,11 @@ c_ UnigramTagger:
         :param tag: tag to add to the word
         """
 
-        if word not in self.model:
-            self.model[word] = Counter()
+        if word not in model:
+            model[word] _ Counter()
 
-        self.model[word][tag] += 1
-        self.tags[tag] += 1
+        model[word][tag] +_ 1
+        tags[tag] +_ 1
 
     ___ train  word_tag_pairs):
         """
@@ -89,10 +89,10 @@ c_ UnigramTagger:
         """
 
         for pair in word_tag_pairs:
-            word, tag = pair
-            self.add_to_model(word, tag)
+            word, tag _ pair
+            add_to_model(word, tag)
 
-        self.calculate_tag_distribution()
+        calculate_tag_distribution()
 
     ___ tag  words):
         """
@@ -101,18 +101,18 @@ c_ UnigramTagger:
         :param words: List of words that will be tagged
         """
 
-        result = list()
+        result _ list()
 
         for word in words:
-            if word in self.model:
-                available_tags = self.model[word]
-                most_likely_tag = max(available_tags, key=available_tags.get)
+            if word in model:
+                available_tags _ model[word]
+                most_likely_tag _ max(available_tags, key_available_tags.get)
                 result.append((word, most_likely_tag))
             else:
-                tag = max(self.tag_distribution, key=self.tag_distribution.get)
+                tag _ max(tag_distribution, key_tag_distribution.get)
                 result.append((word, tag))
 
-        return result
+        r_ result
 
     ___ save  filename):
         """
@@ -120,7 +120,7 @@ c_ UnigramTagger:
         :params filename: The filename where you wanna safe
         """
 
-        _output = (self.model, self.tag_distribution)
+        _output _ (model, tag_distribution)
 
         with open(filename, 'wb') as outfile:
             pickle.dump(_output, outfile)
@@ -133,6 +133,6 @@ c_ UnigramTagger:
         """
 
         with open(filename, 'rb') as infile:
-            data = pickle.load(infile)
-            self.model = data[0]
-            self.tag_distribution = data[1]
+            data _ pickle.load(infile)
+            model _ data[0]
+            tag_distribution _ data[1]

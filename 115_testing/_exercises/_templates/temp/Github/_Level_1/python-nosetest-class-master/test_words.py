@@ -1,6 +1,6 @@
-import unittest
-from nose.tools import *
-from words import numwords, wordcounts, addcounts
+______ unittest
+____ nose.tools ______ *
+____ words ______ numwords, wordcounts, addcounts
 ___ test_numwords():
     assert_equal(0, numwords(""))
     assert_equal(1, numwords("hey"))
@@ -38,29 +38,29 @@ ___ test_addcounts_badargs():
 # nose's @with_setup doesn't let us do the following.
 # However, nose can find and run these tests just fine.
 c_ TestWords_addcounts(unittest.TestCase):
-    ___ setUp(self):
-        self.existing = {'truth': 2, 'is': 1, 'beauty': 2}
+    ___ setUp
+        existing _ {'truth': 2, 'is': 1, 'beauty': 2}
 
-    ___ test_addcounts_empty(self):
-        addcounts(self.existing, {})
-        self.assertEqual({'truth': 2, 'is': 1, 'beauty': 2}, self.existing)
+    ___ test_addcounts_empty
+        addcounts(existing, {})
+        assertEqual({'truth': 2, 'is': 1, 'beauty': 2}, existing)
 
-    ___ test_addcounts_double(self):
-        new = dict(self.existing)
-        addcounts(self.existing, new)
-        self.assertEqual({'truth': 4, 'is': 2, 'beauty': 4}, self.existing)
+    ___ test_addcounts_double
+        new _ dict(existing)
+        addcounts(existing, new)
+        assertEqual({'truth': 4, 'is': 2, 'beauty': 4}, existing)
 
-    ___ test_addcounts_newword(self):
-        addcounts(self.existing, {'love': 1})
-        self.assertEqual({'truth': 2, 'is': 1, 'beauty': 2, 'love': 1}, self.existing)
+    ___ test_addcounts_newword
+        addcounts(existing, {'love': 1})
+        assertEqual({'truth': 2, 'is': 1, 'beauty': 2, 'love': 1}, existing)
 
-    ___ test_addcounts_errors(self):
+    ___ test_addcounts_errors
         '''
         Alternate way to check that ValueError is raised.
         '''
-        with self.assertRaises(ValueError):
+        with assertRaises(ValueError):
             addcounts(None, {})
-        with self.assertRaises(ValueError):
+        with assertRaises(ValueError):
             addcounts({}, None)
-        with self.assertRaises(ValueError):
+        with assertRaises(ValueError):
             addcounts(None, None)

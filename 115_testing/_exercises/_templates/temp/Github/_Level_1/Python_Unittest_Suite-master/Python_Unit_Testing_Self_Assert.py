@@ -1,5 +1,5 @@
 # Python Unit Testing
-# unittest — Unit testing framework.
+# unittest ï¿½ Unit testing framework.
 # Unittest supports test automation, sharing of setup and shutdown code for tests, aggregation of tests into collections, and independence of the tests from
 # the reporting framework.
 # 
@@ -30,7 +30,7 @@
 # a function:
 # 
 
-with self.assertRaises(SomeException):
+with assertRaises(SomeException):
     do_something()
 
 # 
@@ -42,12 +42,12 @@ with self.assertRaises(SomeException):
 # This can be useful if the intention is to perform additional checks on the exception raised:
 # 
 
-with self.assertRaises(SomeException) as cm:
+with assertRaises(SomeException) as cm:
     do_something()
 
-the_exception = cm.exception
+the_exception _ cm.exception
 
-self.assertEqual(the_exception.error_code, 3)
+assertEqual(the_exception.error_code, 3)
 
 #
 # assertRaisesRegex(exception, regex, callable, *args, **kwds) assertRaisesRegex(exception, regex, *, msg=None):
@@ -57,20 +57,20 @@ self.assertEqual(the_exception.error_code, 3)
 # Examples:
 # 
 
-self.assertRaisesRegex(ValueError, "invalid literal for.*XYZ'$",
+assertRaisesRegex(ValueError, "invalid literal for.*XYZ'$",
                        int, 'XYZ')
 
 # 
 # or:
 # 
 
-with self.assertRaisesRegex(ValueError, 'literal'):
+with assertRaisesRegex(ValueError, 'literal'):
    int('XYZ')
 
 #
 # assertWarns(warning, callable, *args, **kwds) assertWarns(warning, *, msg=None):
 # Test that a warning is triggered when callable is called with any positional or keyword arguments that are also passed to assertWarns().
-# The test passes if warning is triggered and fails if it isn’t. Any exception is an error. To catch any of a group of warnings, a tuple containing the
+# The test passes if warning is triggered and fails if it isnï¿½t. Any exception is an error. To catch any of a group of warnings, a tuple containing the
 # warning classes may be passed as warnings.
 #
 
@@ -79,7 +79,7 @@ with self.assertRaisesRegex(ValueError, 'literal'):
 # function:
 # 
 
-with self.assertWarns(SomeWarning):
+with assertWarns(SomeWarning):
            do_something()
  
 #
@@ -89,12 +89,12 @@ with self.assertWarns(SomeWarning):
 # This can be useful if the intention is to perform additional checks on the warning caught:
 # 
 
-with self.assertWarns(SomeWarning) as cm:
+with assertWarns(SomeWarning) as cm:
     do_something()
 
-self.assertIn('myfile.py', cm.filename)
+assertIn('myfile.py', cm.filename)
 
-self.assertEqual(320, cm.lineno)
+assertEqual(320, cm.lineno)
 
 # 
 # This method works regardless of the warning filters in place when it is called.
@@ -108,7 +108,7 @@ self.assertEqual(320, cm.lineno)
 # Example:
 # 
 
-self.assertWarnsRegex(DeprecationWarning,
+assertWarnsRegex(DeprecationWarning,
                       r'legacy_function\(\) is deprecated',
                       legacy_function, 'XYZ')
 
@@ -116,7 +116,7 @@ self.assertWarnsRegex(DeprecationWarning,
 # or:
 # 
 
-with self.assertWarnsRegex(RuntimeWarning, 'unsafe frobnicating'):
+with assertWarnsRegex(RuntimeWarning, 'unsafe frobnicating'):
          frobnicate('/etc/passwd')
 
 #
@@ -142,12 +142,12 @@ with self.assertWarnsRegex(RuntimeWarning, 'unsafe frobnicating'):
 # Example:
 # 
 
-with self.assertLogs('foo', level='INFO') as cm:
+with assertLogs('foo', level_'INFO') as cm:
    logging.getLogger('foo').info('first message')
 
    logging.getLogger('foo.bar').error('second message')
 
-self.assertEqual(cm.output, ['INFO:foo:first message',
+assertEqual(cm.output, ['INFO:foo:first message',
                              'ERROR:foo.bar:second message'])
 
 #
@@ -160,6 +160,6 @@ self.assertEqual(cm.output, ['INFO:foo:first message',
 #
 # If not, the test will fail:
  
-self.assertGreaterEqual(3, 4)
+assertGreaterEqual(3, 4)
 
 # OUTPUT: 'AssertionError: "3" unexpectedly not greater than or equal to "4"'

@@ -32,9 +32,9 @@ ___ test(mock1, mock2):
         SomeClass.static_method('foo')
         SomeClass.class_method('bar')
 
-        return mock1, mock2
+        r_ mock1, mock2
 
-mock1, mock2 = test()
+mock1, mock2 _ test()
 mock1.assert_called_once_with('foo')
 
 mock2.assert_called_once_with('bar')

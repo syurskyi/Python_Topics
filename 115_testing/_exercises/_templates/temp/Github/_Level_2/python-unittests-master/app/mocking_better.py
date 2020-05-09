@@ -1,6 +1,6 @@
-import requests
+______ requests
 
-CURRENCY_CONVERSION_API_URL = 'https://api.exchangeratesapi.io'
+CURRENCY_CONVERSION_API_URL _ 'https://api.exchangeratesapi.io'
 
 
 c_ CurrencyConvertor:
@@ -14,11 +14,11 @@ c_ CurrencyConvertor:
         :param target_currency: ISO 4217 code of target currency
         :return how many units of target currency is one unit of base currency
         """
-        resp = requests.get('{currency_conversion_api_url}/latest?base={base}'.format(
-            base=base_currency, currency_conversion_api_url=CURRENCY_CONVERSION_API_URL))
+        resp _ requests.get('{currency_conversion_api_url}/latest?base={base}'.f..(
+            base_base_currency, currency_conversion_api_url_CURRENCY_CONVERSION_API_URL))
         resp.raise_for_status()
-        resp_parsed = resp.json()
-        return resp_parsed['rates'][target_currency]
+        resp_parsed _ resp.json()
+        r_ resp_parsed['rates'][target_currency]
 
     ___ convert_currency  base_currency, target_currency, base_amount):
         """
@@ -28,5 +28,5 @@ c_ CurrencyConvertor:
         :param base_amount: amount of target currency
         :return: amount o equivalent target currency
         """
-        rate = self.get_exchange_rate(base_currency, target_currency)
-        return rate * base_amount
+        rate _ get_exchange_rate(base_currency, target_currency)
+        r_ rate * base_amount

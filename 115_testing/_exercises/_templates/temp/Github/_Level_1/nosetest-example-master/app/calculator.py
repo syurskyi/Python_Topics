@@ -6,9 +6,9 @@ c_ Calculator(object):
 
     ___ add  x, y):
         """Addition Function."""
-        number_types = (int, long, float, complex)
+        number_types _ (int, long, float, complex)
 
         if isinstance(x, number_types) and isinstance(y, number_types):
-            return x + y
+            r_ x + y
         else:
             raise ValueError

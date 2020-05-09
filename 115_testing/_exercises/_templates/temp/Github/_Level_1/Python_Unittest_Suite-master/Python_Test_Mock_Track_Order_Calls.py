@@ -1,5 +1,5 @@
 # Python Test Mock
-# unittest.mock — mock object library
+# unittest.mock ï¿½ mock object library
 # unittest.mock is a library for testing in Python.
 # It allows you to replace parts of your system under test with mock objects and make assertions about how they have been used.
 # unittest.mock provides a core Mock class removing the need to create a host of stubs throughout your test suite.
@@ -9,22 +9,22 @@
 # Additionally, mock provides a patch() decorator that handles patching module and class level attributes within the scope of a test, along with sentinel
 # for creating unique objects.
 # 
-# Mock is very easy to use and is designed for use with unittest. Mock is based on the ‘action -> assertion’ pattern instead of ‘record -> replay’ used by
+# Mock is very easy to use and is designed for use with unittest. Mock is based on the ï¿½action -> assertionï¿½ pattern instead of ï¿½record -> replayï¿½ used by
 # many mocking frameworks.
 #
 
 #
 # Tracking order of calls and less verbose call assertions
 # The Mock class allows you to track the order of method calls on your mock objects through the method_calls attribute.
-# This doesn’t allow you to track the order of calls between separate mock objects, however we can use mock_calls to achieve the same effect.
+# This doesnï¿½t allow you to track the order of calls between separate mock objects, however we can use mock_calls to achieve the same effect.
 #
 # Because mocks track calls to child mocks in mock_calls, and accessing an arbitrary attribute of a mock creates a child mock, we can create our separate
 # mocks from a parent one. Calls to those child mock will then all be recorded, in order, in the mock_calls of the parent:
  
-manager = Mock()
+manager _ Mock()
 
-mock_foo = manager.foo
-mock_bar = manager.bar
+mock_foo _ manager.foo
+mock_bar _ manager.bar
  
 
 mock_foo.something()
@@ -43,7 +43,7 @@ manager.mock_calls
 # We can then assert about the calls, including the order, by comparing with the mock_calls attribute on the manager mock:
 # 
 
-expected_calls = [call.foo.something(), call.bar.other.thing()]
+expected_calls _ [call.foo.something(), call.bar.other.thing()]
 manager.mock_calls == expected_calls
 
 # OUTPUT: 'True'
@@ -53,7 +53,7 @@ manager.mock_calls == expected_calls
 # After attaching calls will be recorded in mock_calls of the manager.
 # 
 
-manager = MagicMock()
+manager _ MagicMock()
 
 with patch('mymodule.Class1') as MockClass1:
         with patch('mymodule.Class2') as MockClass2:
@@ -70,12 +70,12 @@ with patch('mymodule.Class1') as MockClass1:
 manager.mock_calls
 
 #
-# If many calls have been made, but you’re only interested in a particular sequence of them then an alternative is to use the assert_has_calls() method.
+# If many calls have been made, but youï¿½re only interested in a particular sequence of them then an alternative is to use the assert_has_calls() method.
 # This takes a list of calls (constructed with the call object).
 # If that sequence of calls are in mock_calls then the assert succeeds.
 # 
 
-m = MagicMock()
+m _ MagicMock()
 m().foo().bar().baz()
 
 # OUTPUT: '<MagicMock name='mock().foo().bar().baz()' id='...'>'
@@ -84,23 +84,23 @@ m.one().two().three()
 
 # OUTPUT: '<MagicMock name='mock.one().two().three()' id='...'>'
 
-calls = call.one().two().three().call_list()
+calls _ call.one().two().three().call_list()
 
 m.assert_has_calls(calls)
 
 # 
-# Even though the chained call m.one().two().three() aren’t the only calls that have been made to the mock, the assert still succeeds.
+# Even though the chained call m.one().two().three() arenï¿½t the only calls that have been made to the mock, the assert still succeeds.
 # Sometimes a mock may have several calls made to it, and you are only interested in asserting about some of those calls. You may not even care about the
 # order.
 # In this case you can pass any_order=True to assert_has_calls:
 # 
 
-m = MagicMock()
+m _ MagicMock()
 
 m(1), m.two(2, 3), m.seven(7), m.fifty('50')
 
 # OUTPUT: '(...)'
 
-calls = [call.fifty('50'), call(1), call.seven(7)]
+calls _ [call.fifty('50'), call(1), call.seven(7)]
 
-m.assert_has_calls(calls, any_order=True)
+m.assert_has_calls(calls, any_order_True)

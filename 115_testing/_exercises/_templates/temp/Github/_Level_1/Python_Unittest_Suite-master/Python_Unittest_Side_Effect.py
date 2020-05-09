@@ -25,8 +25,8 @@
 # An example of a mock that raises an exception (to test exception handling of an API):
 # 
 
-mock = Mock()
-mock.side_effect = Exception('Boom!')
+mock _ Mock()
+mock.side_effect _ Exception('Boom!')
 
 mock()
 
@@ -34,8 +34,8 @@ mock()
 # Using side_effect to return a sequence of values:
 # 
 
-mock = Mock()
-mock.side_effect = [3, 2, 1]
+mock _ Mock()
+mock.side_effect _ [3, 2, 1]
 
 mock(), mock(), mock()
 
@@ -45,12 +45,12 @@ mock(), mock(), mock()
 # Using a callable:
 # 
 
-mock = Mock(return_value=3)
+mock _ Mock(return_value_3)
 
 ___ side_effect(*args, **kwargs):
-        return DEFAULT
+        r_ DEFAULT
 
-mock.side_effect = side_effect
+mock.side_effect _ side_effect
 mock()
 
 # OUTPUT: '3'
@@ -63,9 +63,9 @@ mock()
 # Here�s an example that adds one to the value the mock is called with and returns it:
 # 
 
-side_effect = lambda value: value + 1
+side_effect _ lambda value: value + 1
 
-mock = Mock(side_effect=side_effect)
+mock _ Mock(side_effect_side_effect)
 mock(3)
 
 # OUTPUT: '4'
@@ -78,11 +78,11 @@ mock(-8)
 # Setting side_effect to None clears it:
 # 
 
-m = Mock(side_effect=KeyError, return_value=3)
+m _ Mock(side_effect_KeyError, return_value_3)
 m()
 
 
-m.side_effect = None
+m.side_effect _ None
 m()
 
 # OUTPUT: '3'

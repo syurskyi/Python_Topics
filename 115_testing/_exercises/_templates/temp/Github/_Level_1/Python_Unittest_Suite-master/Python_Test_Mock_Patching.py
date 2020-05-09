@@ -23,24 +23,24 @@
 # You might want to replace a method on an object to check that it is called with the correct arguments by another part of the system:
 # 
 
-real = SomeClass()
-real.method = MagicMock(name='method')
+real _ SomeClass()
+real.method _ MagicMock(name_'method')
 
-real.method(3, 4, 5, key='value')
+real.method(3, 4, 5, key_'value')
 
 #
 # This example tests that calling ProductionClass().method results in a call to the something method:
 # 
 
 c_ ProductionClass:
-        ___ method(self):
-            self.something(1, 2, 3)
+        ___ method
+            something(1, 2, 3)
 
         ___ something  a, b, c):
             pass
 
-real = ProductionClass()
-real.something = MagicMock()
+real _ ProductionClass()
+real.something _ MagicMock()
 
 real.method()
 

@@ -1,7 +1,7 @@
 # pylint: disable=C0111
 
-import helloworld
-from helloworld.unnecessary_math import multiply
+______ helloworld
+____ helloworld.unnecessary_math ______ multiply
 
 
 ___ test_numbers_3_4():
@@ -17,4 +17,4 @@ ___ test_init():
 
 
 ___ test_not_swag():
-    assert helloworld.main() != "swag"
+    assert helloworld.main() !_ "swag"

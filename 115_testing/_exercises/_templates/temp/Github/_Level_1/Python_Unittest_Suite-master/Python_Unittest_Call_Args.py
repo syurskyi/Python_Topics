@@ -1,5 +1,5 @@
 # Python Unittest
-# unittest.mock — mock object library
+# unittest.mock ï¿½ mock object library
 # unittest.mock is a library for testing in Python.
 # It allows you to replace parts of your system under test with mock objects and make assertions about how they have been used.
 # unittest.mock provides a core Mock class removing the need to create a host of stubs throughout your test suite.
@@ -9,11 +9,11 @@
 # Additionally, mock provides a patch() decorator that handles patching module and class level attributes within the scope of a test, along with sentinel
 # for creating unique objects.
 # 
-# Mock is very easy to use and is designed for use with unittest. Mock is based on the ‘action -> assertion’ pattern instead of ‘record -> replay’ used by
+# Mock is very easy to use and is designed for use with unittest. Mock is based on the ï¿½action -> assertionï¿½ pattern instead of ï¿½record -> replayï¿½ used by
 # many mocking frameworks.
 #
 # call_args: 
-# This is either None (if the mock hasn’t been called), or the arguments that the mock was last called with.
+# This is either None (if the mock hasnï¿½t been called), or the arguments that the mock was last called with.
 # This will be in the form of a tuple: the first member is any ordered arguments the mock was called with (or an empty tuple) and the second member is any
 # keyword arguments (or an empty dictionary).
 # 
@@ -22,7 +22,7 @@
 # These are tuples, so they can be unpacked to get at the individual arguments and make more complex assertions. 
 #
 
-mock = Mock(return_value=None)
+mock _ Mock(return_value_None)
 
 print(mock.call_args)
 
@@ -46,7 +46,7 @@ mock.call_args == ((3, 4),)
 
 # OUTPUT: 'True'
 
-mock(3, 4, 5, key='fish', next='w00t!')
+mock(3, 4, 5, key_'fish', next_'w00t!')
 mock.call_args
 
 # OUTPUT: 'call(3, 4, 5, key='fish', next='w00t!')'

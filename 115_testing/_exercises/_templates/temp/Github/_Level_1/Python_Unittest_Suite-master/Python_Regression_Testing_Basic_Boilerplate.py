@@ -34,28 +34,28 @@
 # A basic boilerplate is often used:
 # 
 
-import unittest
-from test import support
+______ unittest
+____ test ______ support
 
 c_ MyTestCase1(unittest.TestCase):
 
     # Only use setUp() and tearDown() if necessary
 
-    ___ setUp(self):
+    ___ setUp
 
     # ... code to execute in preparation for tests ...
 
-    ___ tearDown(self):
+    ___ tearDown
 
     #  ... code to execute to clean up after tests ...
 
-    ___ test_feature_one(self):
+    ___ test_feature_one
 
         # Test feature one.
 
         # ... testing code ...
 
-    ___ test_feature_two(self):
+    ___ test_feature_two
 
         # Test feature two.
 

@@ -1,1 +1,1 @@
-all=['sample_module']
+all_['sample_module']

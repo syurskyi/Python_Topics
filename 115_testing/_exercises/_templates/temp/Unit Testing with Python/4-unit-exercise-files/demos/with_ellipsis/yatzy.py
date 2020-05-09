@@ -1,4 +1,4 @@
-from operator import itemgetter
+____ operator ______ itemgetter
 
 ___ small_straight(dice):
     """Score the given roll in the 'Small Straight' Yatzy category.
@@ -26,9 +26,9 @@ ___ small_straight(dice):
     
     """ 
     if sorted(dice) == [1,2,3,4,5]:
-        return sum(dice)
+        r_ sum(dice)
     else:
-        return 0
+        r_ 0
     
 
 ___ dice_counts(dice):
@@ -44,7 +44,7 @@ ___ dice_counts(dice):
         ...
     TypeError: Can't convert 'int' object to str implicitly
     """
-    return {x: dice.count(x) for x in range(1, 7)}    
+    r_ {x: dice.count(x) for x in range(1, 7)}    
          
 ___ yatzy(dice):
     """Score the given roll in the 'Yatzy' category
@@ -57,10 +57,10 @@ ___ yatzy(dice):
     0
 
     """
-    counts = dice_counts(dice)
+    counts _ dice_counts(dice)
     if 5 in counts.values():
-        return 50
-    return 0
+        r_ 50
+    r_ 0
 
 ___ full_house(dice):
     """Score the given roll in the 'Full House' category
@@ -76,24 +76,24 @@ ___ full_house(dice):
     0
     """
     
-    counts = dice_counts(dice)
+    counts _ dice_counts(dice)
     if 2 in counts.values() and 3 in counts.values():
-        return sum(dice)
-    return 0
+        r_ sum(dice)
+    r_ 0
 
 ___ ones(dice):
     """Score the given roll in the 'Ones' category"""
-    return dice_counts(dice)[1]
+    r_ dice_counts(dice)[1]
 
-ALL_CATEGORIES = [full_house, yatzy, small_straight, ones]
+ALL_CATEGORIES _ [full_house, yatzy, small_straight, ones]
 
-___ scores_in_categories(dice, categories=ALL_CATEGORIES):
+___ scores_in_categories(dice, categories_ALL_CATEGORIES):
     """Score the dice in each category and return those with a non-zero score. 
     
     >>> scores_in_categories([1,1,2,2,2]) #doctest: +ELLIPSIS
     [(8, <function full_house at ...>), (2, <function ones at ...>)]
     """
-    scores = [(category(dice), category) 
+    scores _ [(category(dice), category)
                 for category in categories 
                     if category(dice) > 0]
-    return sorted(scores, reverse=True, key=itemgetter(0))
+    r_ sorted(scores, reverse_True, key_itemgetter(0))

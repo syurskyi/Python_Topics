@@ -1,11 +1,11 @@
-import unittest
-from phonebook import Phonebook
+______ unittest
+____ phonebook ______ Phonebook
 
 c_ PhonebookTest(unittest.TestCase):
 
-    ___ setUp(self):
-        self.phonebook = Phonebook()
+    ___ setUp
+        phonebook _ Phonebook()
 
-    ___ test_lookup_entry(self):
-        self.phonebook.add("Bob", "12345")
-        self.assertEqual("12345", self.phonebook.lookup("Bob"))
+    ___ test_lookup_entry
+        phonebook.add("Bob", "12345")
+        assertEqual("12345", phonebook.lookup("Bob"))

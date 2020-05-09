@@ -1,16 +1,16 @@
-import unittest
-import requests_mock
+______ unittest
+______ requests_mock
 
-from app.mocking import convert_currency, CURRENCY_CONVERSION_API_URL
+____ app.mocking ______ convert_currency, CURRENCY_CONVERSION_API_URL
 
 
 c_ TestCurrency(unittest.TestCase):
-    ___ test_convert_currency__without_mocking(self):
-        result = convert_currency('EUR', 'CZK', 100)
-        self.assertIsInstance(result, float)
+    ___ test_convert_currency__without_mocking
+        result _ convert_currency('EUR', 'CZK', 100)
+        assertIsInstance(result, float)
 
-    ___ test_convert_currency__mocking(self):
-        mocked_response = """
+    ___ test_convert_currency__mocking
+        mocked_response _ """
         {
             "base":"EUR",
             "date":"2018-06-27",
@@ -27,8 +27,8 @@ c_ TestCurrency(unittest.TestCase):
         """
 
         with requests_mock.mock() as m:
-            m.get('{CURRENCY_CONVERSION_API_URL}/latest?base=EUR'.format(
-                CURRENCY_CONVERSION_API_URL=CURRENCY_CONVERSION_API_URL), text=mocked_response)
-            result = convert_currency('EUR', 'CZK', 100)
-        self.assertIsInstance(result, float)
-        self.assertAlmostEqual(result, 2577.7)
+            m.get('{CURRENCY_CONVERSION_API_URL}/latest?base=EUR'.f..(
+                CURRENCY_CONVERSION_API_URL_CURRENCY_CONVERSION_API_URL), text_mocked_response)
+            result _ convert_currency('EUR', 'CZK', 100)
+        assertIsInstance(result, float)
+        assertAlmostEqual(result, 2577.7)

@@ -1,7 +1,7 @@
-from selenium import webdriver
-import unittest
-import time
-from selenium.webdriver.common.by import By
+____ selenium ______ webdriver
+______ unittest
+______ time
+____ selenium.webdriver.common.by ______ By
 
 
 c_ Internet(unittest.TestCase):
@@ -9,18 +9,18 @@ c_ Internet(unittest.TestCase):
     @classmethod
     ___ setUpClass(cls):
         global driver
-        driver = webdriver.Chrome()
+        driver _ webdriver.Chrome()
         driver.get("http://the-internet.herokuapp.com/")
 
-    ___ test_A_Links(self):
+    ___ test_A_Links
         driver.find_element_by_link_text("A/B Testing").click()
         driver.implicitly_wait(5)
-        ABTestURL = driver.current_url
+        ABTestURL _ driver.current_url
 
-        self.assertEqual(ABTestURL, 'http://the-internet.herokuapp.com/abtest')
+        assertEqual(ABTestURL, 'http://the-internet.herokuapp.com/abtest')
 
-        TextComparsion = driver.find_element_by_xpath("//p")
-        self.assertEqual(TextComparsion.text,
+        TextComparsion _ driver.find_element_by_xpath("//p")
+        assertEqual(TextComparsion.text,
                          'Also known as split testing. This is a way in which businesses are able to simultaneously test and learn different versions of a page to see which text and/or functionality works best towards a desired outcome (e.g. a user action such as a click-through).')
 
         print(TextComparsion.text)

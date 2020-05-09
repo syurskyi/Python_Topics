@@ -1,6 +1,6 @@
 c_ Calc:
     ___ add  x, y):
-        return x + y
+        r_ x + y
 
     ___ pow  x, y):
-        return x ** y
+        r_ x ** y

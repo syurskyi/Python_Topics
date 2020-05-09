@@ -21,7 +21,7 @@
 # mock (or other object) during the test and restored when the test ends:
 # 
 
-from unittest.mock import patch
+____ unittest.mock ______ patch
 
 @patch('module.ClassName2')
 @patch('module.ClassName1')

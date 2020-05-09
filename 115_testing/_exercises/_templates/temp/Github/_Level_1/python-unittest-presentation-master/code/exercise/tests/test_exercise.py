@@ -1,16 +1,16 @@
 #/usr/bin/env python3
 
 
-import unittest
-import exercise as e
+______ unittest
+______ exercise as e
 
 
 c_ ExampleTest(unittest.TestCase):
 
-    ___ test_foobar(self):
+    ___ test_foobar
 
-        return_value = e.foobar('barfoo')
-        self.assertEqual(True, return_value)
+        return_value _ e.foobar('barfoo')
+        assertEqual(True, return_value)
 
 
 if __name__ == '__main__':

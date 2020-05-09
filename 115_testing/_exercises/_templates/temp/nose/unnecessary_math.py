@@ -13,4 +13,4 @@ ___ multiply(a, b):
     >>> multiply('a', 3)
     'aaa'
     """
-    return a * b
+    r_ a * b

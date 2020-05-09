@@ -4,19 +4,19 @@
    https://github.com/lathama/python-testing-example
 """
 
-from setuptools import setup, find_packages
-from sys import version_info, exit
-import testingdemo
+____ setuptools ______ setup, find_packages
+____ sys ______ version_info, exit
+______ testingdemo
 
 setup(
-    name='Testingdemo',
-    version=testingdemo.__version__,
-    description='Python Testing Demonstration',
-    url='',
-    license='',
-    packages=find_packages(),
-    install_requires=[''],
-    entry_points={
+    name_'Testingdemo',
+    version_testingdemo.__version__,
+    description_'Python Testing Demonstration',
+    url_'',
+    license_'',
+    packages_find_packages(),
+    install_requires_[''],
+    entry_points_{
         'console_scripts': ['testingdemo=testingdemo.AnExample:report_something']
     }
 )

@@ -1,11 +1,11 @@
-import os
+______ os
 
 ___ readFromFile(filename):
     if not os.path.exists(filename):
         raise Exception("Bad File")
-    infile = open(filename, "r")
-    line = infile.readline()
-    return line
+    infile _ open(filename, "r")
+    line _ infile.readline()
+    r_ line
 
 
 

@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 #-*-coding: utf-8-*-
 
-import unittest
-from io import StringIO
-from stat_task import Parser, Statistics, StatsResult
+______ unittest
+____ io ______ StringIO
+____ stat_task ______ Parser, Statistics, StatsResult
 
 #-------------------------------
 # Testing Parser
@@ -29,20 +29,20 @@ c_ ParserTest(unittest.TestCase):
         print("===========================")
         print("")
 
-    ___ setUp(self):
+    ___ setUp
         """Set up for test"""
-        self.parser = Parser()
+        parser _ Parser()
 
-    ___ tearDown(self):
+    ___ tearDown
         """Tear down for test"""
-        print(self.shortDescription() + " is finished")
+        print(shortDescription() + " is finished")
 
 # Func tests
 
-    ___ test_data_extr(self):
+    ___ test_data_extr
         """Data extractor test"""
-        print("id: " + self.id())
-        fileobj = StringIO('[26-06-15 14:10:27.725094] Statistics gath\n'
+        print("id: " + id())
+        fileobj _ StringIO('[26-06-15 14:10:27.725094] Statistics gath\n'
                            '\t123\tasd\tght\n'
                            'TIME\tEVENT\tSome\tSome\tAVGFULL\tAVGTSMR\n'
                            '\n'
@@ -52,41 +52,41 @@ c_ ParserTest(unittest.TestCase):
                            '[23:23:23]\tMARKET\t\t\t2000\t200\n'
                            '\n')
 
-        self.assertEqual(self.parser.data_extr(fileobj, 5),\
+        assertEqual(parser.data_extr(fileobj, 5),\
                          [['TIME','EVENT','Some','Some','AVGFULL','AVGTSMR'],\
                           ['[23:23:23]','MARKET','','','1000','100'],\
                           ['[23:23:23]','LIMIT','','','1000','100'], \
                           ['[23:23:23]', 'MARKET', '', '', '2000', '200']])
 
-    ___ test_check_pos(self):
+    ___ test_check_pos
         """Checking position test"""
-        print("id: " + self.id())
-        self.assertEqual(self.parser.check_pos(\
+        print("id: " + id())
+        assertEqual(parser.check_pos(\
             (\
                 ('Column1', 'Column2', 'EVENT', 'AVGFULL', 'AVGTSMR'),\
                 (1,2,3,4,5)\
             ), 'EVENT', 'AVGFULL', 'AVGTSMR'), [2,3,4])
 
-    ___ test_int_converter(self):
+    ___ test_int_converter
         """Integer converter test"""
-        print("id: " + self.id())
-        self.data = [['1', '2', '3', '4'], ['5','6','7','8']]
-        self.parser.int_converter(self.data, 1, 3)
-        self.assertEqual(self.data, [['1', 2, '3', 4], ['5', 6, '7', 8]])
+        print("id: " + id())
+        data _ [['1', '2', '3', '4'], ['5','6','7','8']]
+        parser.int_converter(data, 1, 3)
+        assertEqual(data, [['1', 2, '3', 4], ['5', 6, '7', 8]])
 
-    ___ test_key_names(self):
+    ___ test_key_names
         """Key name composer test"""
-        print("id: " + self.id())
-        self.assertEqual(self.parser.key_names(\
+        print("id: " + id())
+        assertEqual(parser.key_names(\
             (\
                 ('Order1', '1'), ('Order2', '1'),\
                 ('Order1', '2'), ('Order2', '2'),\
             ), 0), ['Order1', 'Order2'])
 
-    ___ test_fin_prep(self):
+    ___ test_fin_prep
         """Final preparing data test"""
-        print("id: " + self.id())
-        fileobj = StringIO('[26-06-15 14:10:27.725094] Statistics gath\n'
+        print("id: " + id())
+        fileobj _ StringIO('[26-06-15 14:10:27.725094] Statistics gath\n'
                            '\t123\tasd\tght\n'
                            'TIME\tEVENT\tSome\tSome\tAVGFULL\tAVGTSMR\n'
                            '\n'
@@ -96,8 +96,8 @@ c_ ParserTest(unittest.TestCase):
                            '[23:23:23]\tMARKET\t\t\t2000\t200\n'
                            '\n')
 
-        self.assertEqual( \
-            self.parser.fin_prep(fileobj, 5, 'EVENT', 'AVGFULL', 'AVGTSMR'),\
+        assertEqual( \
+            parser.fin_prep(fileobj, 5, 'EVENT', 'AVGFULL', 'AVGTSMR'),\
             {'MARKET': [(1000, 2000), (100, 200)], 'LIMIT': [(1000,), (100,)]})
 
 
@@ -124,55 +124,55 @@ c_ StatisticsTest(unittest.TestCase):
         print("===============================")
         print("")
 
-    ___ setUp(self):
+    ___ setUp
         """Set up for test"""
-        self.data1 = (x for x in range(1, 1001))
-        self.data2 = (x for x in range(1, 50032, 5))
-        self.data3 = (x for x in range(1, 56, 6))
+        data1 _ (x for x in range(1, 1001))
+        data2 _ (x for x in range(1, 50032, 5))
+        data3 _ (x for x in range(1, 56, 6))
 
-        self.stat1 = Statistics(self.data1)
-        self.stat2 = Statistics(self.data2)
-        self.stat3 = Statistics(self.data3)
+        stat1 _ Statistics(data1)
+        stat2 _ Statistics(data2)
+        stat3 _ Statistics(data3)
 
-    ___ tearDown(self):
+    ___ tearDown
         """Tear down for test"""
-        print(self.shortDescription() + " is finished")
+        print(shortDescription() + " is finished")
 
 # Func tests
 
-    ___ test_minimal(self):
+    ___ test_minimal
         """Minimal test"""
-        print("id: " + self.id())
-        self.assertEqual(self.stat1.minimal(), 1)
+        print("id: " + id())
+        assertEqual(stat1.minimal(), 1)
 
-    ___ test_median(self):
+    ___ test_median
         """Median test"""
-        print("id: " + self.id())
-        self.assertEqual(self.stat1.median(), 501)
-        self.assertEqual(self.stat2.median(), 25016)
+        print("id: " + id())
+        assertEqual(stat1.median(), 501)
+        assertEqual(stat2.median(), 25016)
 
-    ___ test_percent90(self):
+    ___ test_percent90
         """Percentage 90 test"""
-        print("id: " + self.id())
-        self.assertEqual(self.stat1.percent90(), 900)
-        self.assertEqual(self.stat2.percent90(), 45028)
+        print("id: " + id())
+        assertEqual(stat1.percent90(), 900)
+        assertEqual(stat2.percent90(), 45028)
 
-    ___ test_percent99(self):
+    ___ test_percent99
         """Percentage 99 test"""
-        print("id: " + self.id())
-        self.assertEqual(self.stat1.percent99(), 990)
-        self.assertEqual(self.stat2.percent99(), 49531)
+        print("id: " + id())
+        assertEqual(stat1.percent99(), 990)
+        assertEqual(stat2.percent99(), 49531)
 
-    ___ test_percent999(self):
+    ___ test_percent999
         """Percentage 999 test"""
-        print("id: " + self.id())
-        self.assertEqual(self.stat1.percent999(), 999)
-        self.assertEqual(self.stat2.percent999(), 49981)
+        print("id: " + id())
+        assertEqual(stat1.percent999(), 999)
+        assertEqual(stat2.percent999(), 49981)
 
-    ___ test_fractions(self):
+    ___ test_fractions
         """Fractions test"""
-        print("id: " + self.id())
-        self.assertEqual(self.stat3.fractions(7), { \
+        print("id: " + id())
+        assertEqual(stat3.fractions(7), { \
             7: [2,'20.00','20.00'], 14: [1,'10.00','30.00'], \
             21: [1,'10.00','40.00'], 28: [1,'10.00','50.00'], \
             35: [1,'10.00','60.00'], 42: [1,'10.00','70.00'], \
@@ -202,23 +202,23 @@ c_ StatsResultTest(unittest.TestCase):
         print("================================")
         print("")
 
-    ___ setUp(self):
+    ___ setUp
         """Set up for test"""
-        self.datas = {'Order1': [(1000, 2000, 3000, 4000), (100, 200)], \
+        datas _ {'Order1': [(1000, 2000, 3000, 4000), (100, 200)], \
                       'Order2': [(50,100), (200,300,400)]}
 
-        self.stat = StatsResult(self.datas)
+        stat _ StatsResult(datas)
 
-    ___ tearDown(self):
+    ___ tearDown
         """Tear down for test"""
-        print(self.shortDescription() + " is finished")
+        print(shortDescription() + " is finished")
 
 # Func tests
 
-    ___ test_run(self):
+    ___ test_run
         """Run stat funcs test"""
-        print("id: " + self.id())
-        self.assertEqual(self.stat.run(self.stat.minimal, self.stat.median),{ \
+        print("id: " + id())
+        assertEqual(stat.run(stat.minimal, stat.median),{ \
             'Order1': [(1000, 2500), (100, 150)], \
             'Order2': [(50, 75), (200, 300)]})
 

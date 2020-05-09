@@ -1,35 +1,35 @@
-from base_api import BaseApi
-import xmltodict
-import requests
+____ base_api ______ BaseApi
+______ xmltodict
+______ requests
 
 
 c_ TestGetUserByLoginName(BaseApi):
 
-    ___ test_get_user_by_login_name(self):
-        url = self.base_url + '/user/' + self.settings['credentials']['login']
+    ___ test_get_user_by_login_name
+        url _ base_url + '/user/' + settings['credentials']['login']
 
-        r = self.request(url, 'get')
+        r _ request(url, 'get')
 
-        self.assert_for_status_code_and_content_type(r, 200)
-        self.validate_xml(r, 'xsd/user.xsd')
+        assert_for_status_code_and_content_type(r, 200)
+        validate_xml(r, 'xsd/user.xsd')
 
-    ___ test_get_user_by_not_existing_login_name(self):
-        url = self.base_url + '/user/' + 'smash'
+    ___ test_get_user_by_not_existing_login_name
+        url _ base_url + '/user/' + 'smash'
 
-        r = self.request(url, 'get')
+        r _ request(url, 'get')
 
-        response_dict = xmltodict.parse(r.text)
+        response_dict _ xmltodict.parse(r.text)
 
-        self.assert_for_status_code_and_content_type(r, 403)
-        self.assertTrue(response_dict['error'])
+        assert_for_status_code_and_content_type(r, 403)
+        assertTrue(response_dict['error'])
 
-    ___ test_get_user_by_login_name_without_credentials(self):
-        url = self.base_url + '/user/' + self.settings['credentials']['login']
+    ___ test_get_user_by_login_name_without_credentials
+        url _ base_url + '/user/' + settings['credentials']['login']
 
-        r = requests.get(url)
+        r _ requests.get(url)
 
-        self.assert_for_status_code_and_content_type(r, 401)
+        assert_for_status_code_and_content_type(r, 401)
 
-        response_dict = xmltodict.parse(r.text)
+        response_dict _ xmltodict.parse(r.text)
 
-        self.assertTrue(response_dict['error'])
+        assertTrue(response_dict['error'])

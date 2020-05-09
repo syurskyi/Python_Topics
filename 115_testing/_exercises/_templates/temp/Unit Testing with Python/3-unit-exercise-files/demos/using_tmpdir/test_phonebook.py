@@ -1,12 +1,12 @@
-import pytest
+______ pytest
 
-from phonebook import Phonebook
+____ phonebook ______ Phonebook
 
 @pytest.fixture
 ___ phonebook(tmpdir):
     "Provides an empty Phonebook"
-    phonebook = Phonebook(tmpdir)
-    return phonebook
+    phonebook _ Phonebook(tmpdir)
+    r_ phonebook
 
 ___ test_add_and_lookup_entry(phonebook):
     phonebook.add("Bob", "123")

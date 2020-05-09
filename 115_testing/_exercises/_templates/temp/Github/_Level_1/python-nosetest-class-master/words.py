@@ -1,12 +1,12 @@
-from collections import defaultdict
-_punct = '.,;?:'
+____ collections ______ defaultdict
+_punct _ '.,;?:'
 ___ _normalize(fragment):
-    fragment = fragment.lower()
+    fragment _ fragment.lower()
     while len(fragment) > 0 and fragment[-1] in _punct:
-        fragment = fragment[:-1]
+        fragment _ fragment[:-1]
     while len(fragment) > 0 and fragment[0] in _punct:
-        fragment = fragment[1:]
-    return fragment
+        fragment _ fragment[1:]
+    r_ fragment
 
 ___ numwords(text):
     '''
@@ -14,9 +14,9 @@ ___ numwords(text):
 
     Punctuation and word casing are ignored.
     '''
-    words = set(_normalize(fragment) for fragment in text.split())
+    words _ set(_normalize(fragment) for fragment in text.split())
     words.discard("")
-    return len(words)
+    r_ len(words)
 
 ___ wordcounts(text):
     '''
@@ -24,13 +24,13 @@ ___ wordcounts(text):
 
     Case is ignored, so each key is the lowercase version of the word.
     '''
-    counts = defaultdict(int)
+    counts _ defaultdict(int)
     for fragment in text.split():
-        word = _normalize(fragment)
+        word _ _normalize(fragment)
         if word == '':
             continue
-        counts[word] += 1
-    return dict(counts)
+        counts[word] +_ 1
+    r_ dict(counts)
 
 ___ addcounts(existing, new):
     '''
@@ -50,5 +50,5 @@ ___ addcounts(existing, new):
     if not type(new) is dict:
         raise ValueError('new must be a dictionary')
     for word, count in new.viewitems():
-        newcount = count + existing.get(word, 0)
-        existing[word] = newcount
+        newcount _ count + existing.get(word, 0)
+        existing[word] _ newcount

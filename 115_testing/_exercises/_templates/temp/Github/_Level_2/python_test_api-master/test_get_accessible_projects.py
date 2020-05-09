@@ -1,30 +1,30 @@
-from base_api import BaseApi
-import xmltodict
-import requests
+____ base_api ______ BaseApi
+______ xmltodict
+______ requests
 
 
 c_ TestGetAccessibleProjects(BaseApi):
 
-    ___ test_get_accessible_projects(self):
-        url = self.base_url + '/project/all'
+    ___ test_get_accessible_projects
+        url _ base_url + '/project/all'
 
-        r = self.request(url, 'get')
+        r _ request(url, 'get')
 
-        self.assert_for_status_code_and_content_type(r, 200)
+        assert_for_status_code_and_content_type(r, 200)
 
-        response_dict = xmltodict.parse(r.text)
+        response_dict _ xmltodict.parse(r.text)
 
         for x in response_dict['projects']['project']:
-            self.assertTrue(x['@name'])
-            self.assertTrue(x['@shortName'])
+            assertTrue(x['@name'])
+            assertTrue(x['@shortName'])
 
-    ___ test_get_accessible_projects_without_credentials(self):
-        url = self.base_url + '/project/all'
+    ___ test_get_accessible_projects_without_credentials
+        url _ base_url + '/project/all'
 
-        r = requests.get(url)
+        r _ requests.get(url)
 
-        self.assert_for_status_code_and_content_type(r, 401)
+        assert_for_status_code_and_content_type(r, 401)
 
-        response_dict = xmltodict.parse(r.text)
+        response_dict _ xmltodict.parse(r.text)
 
-        self.assertTrue(response_dict['error'])
+        assertTrue(response_dict['error'])

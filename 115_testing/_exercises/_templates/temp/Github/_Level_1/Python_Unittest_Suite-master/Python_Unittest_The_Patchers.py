@@ -50,12 +50,12 @@ function(None)
 # 
 
 c_ Class:
-        ___ method(self):
+        ___ method
             pass
 
 with patch('__main__.Class') as MockClass:
-        instance = MockClass.return_value
-        instance.method.return_value = 'foo'
+        instance _ MockClass.return_value
+        instance.method.return_value _ 'foo'
 
         assert Class() is instance
 
@@ -65,12 +65,12 @@ with patch('__main__.Class') as MockClass:
 # If you use spec or spec_set and patch() is replacing a class, then the return value of the created mock will have the same spec.
 # 
 
-Original = Class
-patcher = patch('__main__.Class', spec=True)
+Original _ Class
+patcher _ patch('__main__.Class', spec_True)
 
-MockClass = patcher.start()
+MockClass _ patcher.start()
 
-instance = MockClass()
+instance _ MockClass()
 
 assert isinstance(instance, Original)
 
@@ -82,9 +82,9 @@ patcher.stop()
 # For example, if you wanted a NonCallableMock to be used:
 # 
 
-thing = object()
+thing _ object()
 
-with patch('__main__.thing', new_callable=NonCallableMock) as mock_thing:
+with patch('__main__.thing', new_callable_NonCallableMock) as mock_thing:
         assert thing is mock_thing
 
         thing()
@@ -93,12 +93,12 @@ with patch('__main__.thing', new_callable=NonCallableMock) as mock_thing:
 # Another use case might be to replace an object with an io.StringIO instance:
 # 
 
-from io import StringIO
+____ io ______ StringIO
 
     ___ foo():
         print('Something')
 
-@patch('sys.stdout', new_callable=StringIO)
+@patch('sys.stdout', new_callable_StringIO)
 
     ___ test(mock_stdout):
 
@@ -114,9 +114,9 @@ test()
 # Any arbitrary keywords you pass into the call will be used to set attributes on the created mock:
 # 
 
-patcher = patch('__main__.thing', first='one', second='two')
+patcher _ patch('__main__.thing', first_'one', second_'two')
 
-mock_thing = patcher.start()
+mock_thing _ patcher.start()
 mock_thing.first
 
 # OUTPUT: 'one'
@@ -131,11 +131,11 @@ mock_thing.second
 # using **:
 # 
 
-config = {'method.return_value': 3, 'other.side_effect': KeyError}
+config _ {'method.return_value': 3, 'other.side_effect': KeyError}
 
-patcher = patch('__main__.thing', **config)
+patcher _ patch('__main__.thing', **config)
 
-mock_thing = patcher.start()
+mock_thing _ patcher.start()
 mock_thing.method()
 
 # OUTPUT: '3'

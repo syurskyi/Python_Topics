@@ -24,17 +24,17 @@
 # You can inform the patchers of the different prefix by setting patch.TEST_PREFIX:
 # 
 
-patch.TEST_PREFIX = 'foo'
-value = 3
+patch.TEST_PREFIX _ 'foo'
+value _ 3
 
 @patch('__main__.value', 'not three')
 
 c_ Thing:
 
-        ___ foo_one(self):
+        ___ foo_one
             print(value)
 
-        ___ foo_two(self):
+        ___ foo_two
             print(value)
 
 Thing().foo_one()

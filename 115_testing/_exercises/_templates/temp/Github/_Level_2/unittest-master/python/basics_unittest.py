@@ -9,51 +9,51 @@
 # def read_csv - function that reads data from given file
 # def main - main function
 
-import csv
-import unittest
+______ csv
+______ unittest
 
-CONST_AUTHOR = "Shubham Sachdeva"
+CONST_AUTHOR _ "Shubham Sachdeva"
 
 c_ TestFunc(unittest.TestCase):
-    ___ testAuthor(self):
-        self.assertEqual(author(), CONST_AUTHOR)
+    ___ testAuthor
+        assertEqual(author(), CONST_AUTHOR)
 
-    ___ testRead(self):
-        self.assertEqual(len(read_csv('input.csv')), 30559)
+    ___ testRead
+        assertEqual(len(read_csv('input.csv')), 30559)
 
 ___ author():
     print ('Author: ', CONST_AUTHOR)
-    return CONST_AUTHOR
+    r_ CONST_AUTHOR
 
 c_ Product:
     # initialisation
     ___  -   year, geo, guid, category, commodity):
-        self.id = 0
-        self.year = int(year)
-        self.geo = geo
-        self.guid = guid
-        self.category = category
-        self.commodity = commodity
+        id _ 0
+        year _ int(year)
+        geo _ geo
+        guid _ guid
+        category _ category
+        commodity _ commodity
 
     # for print
-    ___ __str__(self):
-        return ("%d\t%d\t%s\t%s\t%s\t%s" % (self.id, self.year, self.geo, self.guid, self.category, self.commodity))
+    ___ __str__
+        r_ ("%d\t%d\t%s\t%s\t%s\t%s" % (id, year, geo, guid, category, commodity))
 
 
 ___ read_csv(file_name):
-    lst = []
+    lst _ []
     try:
-        with open(file_name, newline='', encoding='utf-8') as csvfile:
-            reader = csv.DictReader(csvfile)
+        with open(file_name, newline_'', encoding_'utf-8') as csvfile:
+            reader _ csv.DictReader(csvfile)
             for row in reader:
-                product = Product(1960, row['GEO'], row['DGUID'], row['Food categories'], row['Commodity'])
+                product _ Product(1960, row['GEO'], row['DGUID'], row['Food categories'], row['Commodity'])
                 print (product)
                 lst.append(product)
 
     except:
         print ('read_csv failed')
 
-    return lst
+    r_ lst
 
 if __name__ == '__main__':
     unittest.main()

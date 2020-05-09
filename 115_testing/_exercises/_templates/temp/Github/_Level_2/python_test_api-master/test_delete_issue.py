@@ -1,21 +1,21 @@
-from base_api import BaseApi
+____ base_api ______ BaseApi
 
 
 c_ TestDeleteIssue(BaseApi):
 
-    ___ test_delete_issue(self):
-        issue_id = self._create_issue()
+    ___ test_delete_issue
+        issue_id _ _create_issue()
 
-        url = self.base_url + '/issue/' + issue_id
-        r = self.request(url, 'delete')
+        url _ base_url + '/issue/' + issue_id
+        r _ request(url, 'delete')
 
-        self.assertEquals(r.status_code, 200)
+        assertEquals(r.status_code, 200)
 
-        r = self.request(url, 'get')
-        self.assertEquals(r.status_code, 404)
+        r _ request(url, 'get')
+        assertEquals(r.status_code, 404)
 
-    ___ test_delete_nonexistent_issue(self):
-        url = self.base_url + '/issue/' + 'ERUNDA'
-        r = self.request(url, 'delete')
+    ___ test_delete_nonexistent_issue
+        url _ base_url + '/issue/' + 'ERUNDA'
+        r _ request(url, 'delete')
 
-        self.assertEquals(r.status_code, 404)
+        assertEquals(r.status_code, 404)

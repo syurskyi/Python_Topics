@@ -22,13 +22,13 @@
 # If you are using patch() to create a mock for you then it will be returned by the call to patcher.start.
 # 
 
-patcher = patch('package.module.ClassName')
+patcher _ patch('package.module.ClassName')
 
-from package import module
+____ package ______ module
 
-original = module.ClassName
+original _ module.ClassName
 
-new_mock = patcher.start()
+new_mock _ patcher.start()
 
 assert module.ClassName is not original
 assert module.ClassName is new_mock
@@ -44,20 +44,20 @@ assert module.ClassName is not new_mock
 
 c_ MyTest(TestCase):
 
-        ___ setUp(self):
-            self.patcher1 = patch('package.module.Class1')
-            self.patcher2 = patch('package.module.Class2')
+        ___ setUp
+            patcher1 _ patch('package.module.Class1')
+            patcher2 _ patch('package.module.Class2')
 
-            self.MockClass1 = self.patcher1.start()
-            self.MockClass2 = self.patcher2.start()
+            MockClass1 _ patcher1.start()
+            MockClass2 _ patcher2.start()
 
-        ___ tearDown(self):
-            self.patcher1.stop()
-            self.patcher2.stop()
+        ___ tearDown
+            patcher1.stop()
+            patcher2.stop()
 
-        ___ test_something(self):
-            assert package.module.Class1 is self.MockClass1
-            assert package.module.Class2 is self.MockClass2
+        ___ test_something
+            assert package.module.Class1 is MockClass1
+            assert package.module.Class2 is MockClass2
 
 MyTest('test_something').run()
  
@@ -69,11 +69,11 @@ MyTest('test_something').run()
 # 
 
 c_ MyTest(TestCase):
-        ___ setUp(self):
-            patcher = patch('package.module.Class')
+        ___ setUp
+            patcher _ patch('package.module.Class')
 
-            self.MockClass = patcher.start()
-            self.addCleanup(patcher.stop)
+            MockClass _ patcher.start()
+            addCleanup(patcher.stop)
 
-        ___ test_something(self):
-            assert package.module.Class is self.MockClass
+        ___ test_something
+            assert package.module.Class is MockClass

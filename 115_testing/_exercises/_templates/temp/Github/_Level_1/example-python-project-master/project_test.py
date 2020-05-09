@@ -1,12 +1,12 @@
-import unittest
+______ unittest
 
-from project import sum;
+____ project ______ sum;
 
 c_ ProjectTestCase(unittest.TestCase) :
 
 	___ test_sum(self) :
 
-		assets = [
+		assets _ [
 			 (0, 0, 0),
 			 (2, 1, 1),
 			 (4, 2, 2)
@@ -14,9 +14,9 @@ c_ ProjectTestCase(unittest.TestCase) :
 
 		for asset in assets :
 
-			expected, a, b = asset
+			expected, a, b _ asset
 
-			self.assertEqual(expected, sum(a, b))
+			assertEqual(expected, sum(a, b))
 
 if __name__ == '__main__':
     unittest.main()

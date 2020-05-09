@@ -21,12 +21,12 @@
 # This ensures that your mocks will fail in the same way as your production code if they are used incorrectly:
 # 
 
-from unittest.mock import create_autospec
+____ unittest.mock ______ create_autospec
 
 ___ function(a, b, c):
         pass
 
-mock_function = create_autospec(function, return_value='fishy')
+mock_function _ create_autospec(function, return_value_'fishy')
 
 mock_function(1, 2, 3)
 

@@ -20,7 +20,7 @@
 
 # comments are ignored
 
-x = 12
+x _ 12
 x
 
 # OUTPUT: '12'
@@ -67,7 +67,7 @@ print(f.__doc__)
 
 assert "Easy!"
 
-import math
+______ math
 
 math.floor(1.9)
  

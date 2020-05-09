@@ -2,15 +2,15 @@
 
 """
 
-import collections
-from time import sleep
+______ collections
+____ time ______ sleep
 
 ___ MyFunction(iterable):
     """ Take any object and return if it is iterable or not.
     :param iterable:
     :rtype: bool
     """
-    return isinstance(iterable, collections.Iterable)
+    r_ isinstance(iterable, collections.Iterable)
 
 ___ MyLongFunction(msg, seconds):
     """ This is an example function that is computationally heavy.
@@ -25,4 +25,4 @@ ___ MyLongFunction(msg, seconds):
     # To mimic the `heavy computation`
     sleep(seconds)
 
-    return msg.upper()
+    r_ msg.upper()

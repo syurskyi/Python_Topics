@@ -1,43 +1,43 @@
-import unittest
-from circle import circle_area
-from circle import circle_circumfrence
-from math import pi
+______ unittest
+____ circle ______ circle_area
+____ circle ______ circle_circumfrence
+____ math ______ pi
 
 # https://www.youtube.com/watch?v=1Lfv5tUGsn8
 
 c_ TestCircleArea(unittest.TestCase):
-    ___ test_area(self):
+    ___ test_area
         # Tests to confirm that it calculates the area as expected
-        self.assertAlmostEqual(circle_area(0),0)
-        self.assertAlmostEqual(circle_area(2), pi*(2**2))
-        self.assertAlmostEqual(circle_area(3.145),pi*(3.145**2))
+        assertAlmostEqual(circle_area(0),0)
+        assertAlmostEqual(circle_area(2), pi*(2**2))
+        assertAlmostEqual(circle_area(3.145),pi*(3.145**2))
     
-    ___ test_area_types(self):
+    ___ test_area_types
         # Test to make sure the correct type is entered into the function
-        self.assertRaises(TypeError, circle_area, "Text")
-        self.assertRaises(TypeError, circle_area, True)
-        self.assertRaises(TypeError, circle_area, 5+3j)
+        assertRaises(TypeError, circle_area, "Text")
+        assertRaises(TypeError, circle_area, True)
+        assertRaises(TypeError, circle_area, 5+3j)
 
-    ___ test_area_values(self):
+    ___ test_area_values
         # Test to make sure the incorrect value hasnt been entered
-        self.assertRaises(ValueError, circle_area, -3)
+        assertRaises(ValueError, circle_area, -3)
 
-    ___ test_circumfrence(self):
+    ___ test_circumfrence
         # Tests circumfrence to expected val
-        self.assertAlmostEqual(circle_circumfrence(0), 0)      
-        self.assertAlmostEqual(circle_circumfrence(2), 2*pi*2)
-        self.assertAlmostEqual(circle_circumfrence(3.14556445), 3.14556445*pi*2)
+        assertAlmostEqual(circle_circumfrence(0), 0)      
+        assertAlmostEqual(circle_circumfrence(2), 2*pi*2)
+        assertAlmostEqual(circle_circumfrence(3.14556445), 3.14556445*pi*2)
 
-    ___ test_circumfrence_types(self):
+    ___ test_circumfrence_types
         # Test circumfrence input to make sure errors handled
-        self.assertRaises(TypeError, circle_circumfrence, "Text")
-        self.assertRaises(TypeError, circle_circumfrence, True)
-        self.assertRaises(TypeError, circle_circumfrence, 3+4j)
+        assertRaises(TypeError, circle_circumfrence, "Text")
+        assertRaises(TypeError, circle_circumfrence, True)
+        assertRaises(TypeError, circle_circumfrence, 3+4j)
 
-    ___ test_circumfrence_values(self):
+    ___ test_circumfrence_values
         # Test to insure proper type is entered into value
-        self.assertRaises(ValueError, circle_circumfrence, -3)
-        self.assertRaises(ValueError, circle_circumfrence, -99.23545)
+        assertRaises(ValueError, circle_circumfrence, -3)
+        assertRaises(ValueError, circle_circumfrence, -99.23545)
 
 
 

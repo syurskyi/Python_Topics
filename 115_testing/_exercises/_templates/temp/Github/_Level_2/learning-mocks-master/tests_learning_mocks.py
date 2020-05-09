@@ -1,11 +1,11 @@
-import unittest
-from unittest import mock, skip
-from unittest.mock import MagicMock
+______ unittest
+____ unittest ______ mock, skip
+____ unittest.mock ______ MagicMock
 
-from lxml import html
-from requests import Response
+____ lxml ______ html
+____ requests ______ Response
 
-from learning_mocks import FileRemovalService, UploadService, get_hrefs_from_url, filter_hrefs_by_text
+____ learning_mocks ______ FileRemovalService, UploadService, get_hrefs_from_url, filter_hrefs_by_text
 
 # Followed along from https://www.toptal.com/python/an-introduction-to-mocking-in-python and
 # https://blog.fugue.co/2016-02-11-python-mocking-101.html
@@ -15,16 +15,16 @@ c_ RmTestCase(unittest.TestCase):
     @mock.patch('learning_mocks.os.path')
     @mock.patch('learning_mocks.os')
     ___ test_rm  mock_os, mock_path):
-        removal_service = FileRemovalService()
+        removal_service _ FileRemovalService()
 
         # set the condition for the mock
-        mock_path.isfile.return_value = False
+        mock_path.isfile.return_value _ False
         removal_service.rm('any path')
         # test that remove call was NOT called
-        self.assertFalse(mock_os.remove.called, "Failed to NOT remove the if its not present")
+        assertFalse(mock_os.remove.called, "Failed to NOT remove the if its not present")
 
         # set the condition that the file does exist for the mock
-        mock_path.isfile.return_value = True
+        mock_path.isfile.return_value _ True
         removal_service.rm('any path')
         mock_os.remove.assert_called_with('any path')
 
@@ -32,69 +32,69 @@ c_ RmTestCase(unittest.TestCase):
 c_ UploadServiceTestCase(unittest.TestCase):
     @mock.patch.object(FileRemovalService, 'rm')
     ___ test_upload_complete  mock_rm):
-        removal_service = FileRemovalService()
-        reference = UploadService(removal_service)
+        removal_service _ FileRemovalService()
+        reference _ UploadService(removal_service)
         reference.upload_complete('my uploaded file')
         mock_rm.assert_called_with('my uploaded file')
         removal_service.rm.assert_called_with('my uploaded file')
 
 
 c_ UploadServiceMockedTestCase(unittest.TestCase):
-    ___ test_upload_complete(self):
-        mock_removal_service = mock.create_autospec(FileRemovalService)
-        reference = UploadService(mock_removal_service)
+    ___ test_upload_complete
+        mock_removal_service _ mock.create_autospec(FileRemovalService)
+        reference _ UploadService(mock_removal_service)
         reference.upload_complete('my uploaded file')
         mock_removal_service.rm.assert_called_with('my uploaded file')
 
 
 c_ RequestsFunctionTests(unittest.TestCase):
-    ___ setUp(self):
-        self.page_content = '<html><head><title>Some title</title></head><body>' \
+    ___ setUp
+        page_content _ '<html><head><title>Some title</title></head><body>' \
                             '<a href="https://www.google.com/">Google</a>' \
                             '<a href="http://www.yahoo.com/">Yahoo</a>' \
                             '</body></html>'
 
     @mock.patch('learning_mocks.requests.get')
     ___ test_get_hrefs_from_url_calls_get  mock_request):
-        m_response = MagicMock(spec=Response, status_code=200, text=self.page_content,
-                               content=self.page_content)
-        mock_request.return_value = m_response
+        m_response _ MagicMock(spec_Response, status_code_200, text_page_content,
+                               content_page_content)
+        mock_request.return_value _ m_response
         get_hrefs_from_url('some url')
         mock_request.assert_called_with('some url')
 
     @mock.patch('learning_mocks.requests.get')
     ___ test_get_hrefs_from_url_returns_list  mock_get):
-        m_response = mock.create_autospec(Response, content=self.page_content)
-        mock_get.return_value = m_response
-        hrefs = get_hrefs_from_url('some url')
-        self.assertTrue(hasattr(hrefs, '__iter__'), 'No list returned')
+        m_response _ mock.create_autospec(Response, content_page_content)
+        mock_get.return_value _ m_response
+        hrefs _ get_hrefs_from_url('some url')
+        assertTrue(hasattr(hrefs, '__iter__'), 'No list returned')
 
     @mock.patch('learning_mocks.requests.get')
     ___ test_get_hrefs_from_url_returned_list_contains_text  mock_get):
-        m_response = mock.create_autospec(Response, content=self.page_content)
-        mock_get.return_value = m_response
-        hrefs = get_hrefs_from_url('some url')
-        good_search_string = 'google'
-        bad_search_string = 'bad'
-        self.assertTrue(any(good_search_string in t for t in hrefs),
-                        'string {0} not found in list elements'.format(good_search_string))
-        self.assertFalse(any(bad_search_string in t for t in hrefs),
-                         'found string "{0}" in list element when should NOT have been found'.format(bad_search_string))
+        m_response _ mock.create_autospec(Response, content_page_content)
+        mock_get.return_value _ m_response
+        hrefs _ get_hrefs_from_url('some url')
+        good_search_string _ 'google'
+        bad_search_string _ 'bad'
+        assertTrue(any(good_search_string in t for t in hrefs),
+                        'string {0} not found in list elements'.f..(good_search_string))
+        assertFalse(any(bad_search_string in t for t in hrefs),
+                         'found string "{0}" in list element when should NOT have been found'.f..(bad_search_string))
 
 
-    ___ test_filter_hrefs_by_text_match_string_count(self):
+    ___ test_filter_hrefs_by_text_match_string_count
         # create a list to pass to function for testing
-        web_element = html.fromstring(self.page_content)
-        href_list = web_element.xpath('//a/@href')
+        web_element _ html.fromstring(page_content)
+        href_list _ web_element.xpath('//a/@href')
         # filter the list with some different values
-        yahoo_list = filter_hrefs_by_text(href_list, 'yahoo')
-        google_list = filter_hrefs_by_text(href_list, 'google')
-        google_fqdn_list = filter_hrefs_by_text(href_list, 'www.google.com')
-        yahoo_fqdn_list = filter_hrefs_by_text(href_list, 'www.yahoo.com')
-        filtered_lists = [yahoo_list, yahoo_fqdn_list, google_list, google_fqdn_list]
+        yahoo_list _ filter_hrefs_by_text(href_list, 'yahoo')
+        google_list _ filter_hrefs_by_text(href_list, 'google')
+        google_fqdn_list _ filter_hrefs_by_text(href_list, 'www.google.com')
+        yahoo_fqdn_list _ filter_hrefs_by_text(href_list, 'www.yahoo.com')
+        filtered_lists _ [yahoo_list, yahoo_fqdn_list, google_list, google_fqdn_list]
         # test the filter results
         for fl in filtered_lists:
-            self.assertTrue(len(fl), 1)
+            assertTrue(len(fl), 1)
 
 if __name__ == "__main__":
     unittest.main()

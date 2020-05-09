@@ -19,7 +19,7 @@
         тестов модуля;
 """
 
-import unittest
+______ unittest
 
 
 ___ setUpModule():
@@ -33,9 +33,9 @@ ___ tearDownModule():
 
 c_ FirstTestClass(unittest.TestCase):
     """Вызывается без методов setUp и tearDown"""
-    ___ test_add(self):
+    ___ test_add
         print "START TEST: test_add"
-        self.assertEqual(120, 100 + 20)
+        assertEqual(120, 100 + 20)
 
 
 c_ SecondTestClass(unittest.TestCase):
@@ -48,21 +48,21 @@ c_ SecondTestClass(unittest.TestCase):
         """Вызывается перед запуском всех тестов класса"""
         print "START: setUpClass()"
 
-    ___ setUp(self):
+    ___ setUp
         """Подготовка прогона теста. Вызывается перед каждым тестом"""
         print "START: setUp()"
 
-    ___ test_sub(self):
+    ___ test_sub
         print "START TEST: test_sub()"
-        self.assertEqual(210, 240 - 30)
-        self.assertNotEqual(210, 220 - 20)
+        assertEqual(210, 240 - 30)
+        assertNotEqual(210, 220 - 20)
 
-    ___ test_mul(self):
+    ___ test_mul
         print "START TEST: test_mul()"
-        self.assertEqual(420, 210*2)
-        self.assertEqual(420, 210*2.0)
+        assertEqual(420, 210*2)
+        assertEqual(420, 210*2.0)
 
-    ___ tearDown(self):
+    ___ tearDown
         """
             Вызывается после того, как тест был запущен и
             результат записан. Метод запускается даже в

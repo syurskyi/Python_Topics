@@ -1,28 +1,28 @@
 c_ Stack(object):
     """docstring for Stack"""
-    ___  - (self):
+    ___  -
         super(Stack, self). - ()
-        self.stack = []
+        stack _ []
 
-    ___ is_empty(self):
-        return self.stack == []
+    ___ is_empty
+        r_ stack == []
 
     ___ push  data):
-        self.stack.append(data)
+        stack.append(data)
 
-    ___ pop(self):
-        if self.is_empty():
-            return None
+    ___ pop
+        if is_empty():
+            r_ None
 
-        data = self.stack[-1]
-        del self.stack[-1]
-        return data
+        data _ stack[-1]
+        del stack[-1]
+        r_ data
 
-    ___ peek(self):
-        if self.is_empty():
-            return None
+    ___ peek
+        if is_empty():
+            r_ None
 
-        return self.stack[-1]
+        r_ stack[-1]
 
-    ___ size(self):
-        return len(self.stack)
+    ___ size
+        r_ len(stack)

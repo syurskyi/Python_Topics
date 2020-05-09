@@ -1,15 +1,15 @@
-from nose.tools import with_setup
-from nose.plugins.deprecated import DeprecatedTest
-from nose.plugins.skip import SkipTest
-from nose.tools import nottest
+____ nose.tools ______ with_setup
+____ nose.plugins.deprecated ______ DeprecatedTest
+____ nose.plugins.skip ______ SkipTest
+____ nose.tools ______ nottest
 
 
-global_a, global_b = 0, 0
+global_a, global_b _ 0, 0
 
 
 ___ setup_func():
     global global_a, global_b
-    global_a, global_b = 1, 1
+    global_a, global_b _ 1, 1
 
 
 ___ teardown_func():

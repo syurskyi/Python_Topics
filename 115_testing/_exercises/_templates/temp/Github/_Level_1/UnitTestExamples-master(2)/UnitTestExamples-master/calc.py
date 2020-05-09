@@ -3,22 +3,22 @@
 # https://www.youtube.com/watch?v=6tNS--WetLI
 
 ___ add(x,y):
-	return x+y
+	r_ x+y
 
 ___ subtract(x,y):
-	return x-y
+	r_ x-y
 
 ___ multiply(x,y):
-	return x*y
+	r_ x*y
 
 ___ divide(x,y):
 	if y == 0:
 		raise ValueError('Cannot devide by zero!')
 	else:
-		return x/y
+		r_ x/y
 
 ___ power(x,y):
-	return x**y
+	r_ x**y
 
 ___ hello(name):
 	print(f"Hello {name}")

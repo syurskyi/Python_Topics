@@ -26,19 +26,19 @@
 
 c_ TestFuncAcceptsSequencesMixin:
 
-    func = mySuperWhammyFunction
+    func _ mySuperWhammyFunction
 
-    ___ test_func(self):
-        self.func(self.arg)
+    ___ test_func
+        func(arg)
 
 c_ AcceptLists(TestFuncAcceptsSequencesMixin, unittest.TestCase):
-    arg = [1, 2, 3]
+    arg _ [1, 2, 3]
 
 c_ AcceptStrings(TestFuncAcceptsSequencesMixin, unittest.TestCase):
-    arg = 'abc'
+    arg _ 'abc'
 
 c_ AcceptTuples(TestFuncAcceptsSequencesMixin, unittest.TestCase):
-    arg = (1, 2, 3)
+    arg _ (1, 2, 3)
  
 
 #

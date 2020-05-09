@@ -1,13 +1,13 @@
-import unittest
+______ unittest
 
 
 c_ IncrementTest(unittest.TestCase):
-    ___ setUp(self):
-        self.my_dict = {'one': 1, 'two': 2}
+    ___ setUp
+        my_dict _ {'one': 1, 'two': 2}
 
-    ___ test_del(self):
-        del self.my_dict['one']
-        self.assertNotIn('one', self.my_dict)
+    ___ test_del
+        del my_dict['one']
+        assertNotIn('one', my_dict)
 
-    ___ test_keys(self):
-        self.assertEqual(set(self.my_dict.keys()), {'one', 'two'})
+    ___ test_keys
+        assertEqual(set(my_dict.keys()), {'one', 'two'})

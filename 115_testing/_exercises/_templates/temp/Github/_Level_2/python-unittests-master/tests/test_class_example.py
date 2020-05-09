@@ -1,11 +1,11 @@
-import unittest
-from app import class_example
-import array
+______ unittest
+____ app ______ class_example
+______ array
 
 
 c_ BoardTest(unittest.TestCase):
-    ___ test_is_solved(self):
-        inputs_and_outputs = [
+    ___ test_is_solved
+        inputs_and_outputs _ [
             (
                 [  # input
                     array.array('B', [1, 2, 3, 4]),
@@ -27,18 +27,18 @@ c_ BoardTest(unittest.TestCase):
         ]
 
         for input, expected_output in inputs_and_outputs:
-            with self.subTest(input=input, expected_output=expected_output):
-                board = class_example.Board(input)
-                actual_output = board.is_solved()
-                self.assertEqual(actual_output, expected_output)
+            with subTest(input_input, expected_output_expected_output):
+                board _ class_example.Board(input)
+                actual_output _ board.is_solved()
+                assertEqual(actual_output, expected_output)
 
-    ___ test_check(self):
-        missing_two = [
+    ___ test_check
+        missing_two _ [
             array.array('B', [1, 0, 3, 4]),
             array.array('B', [5, 6, 7, 8]),
             array.array('B', [9, 10, 11, 12]),
             array.array('B', [13, 14, 15, 0])
         ]
 
-        board = class_example.Board(missing_two, check=False)
-        self.assertRaisesRegex(ValueError, 'Number 2 is missing in the input data', board.check)
+        board _ class_example.Board(missing_two, check_False)
+        assertRaisesRegex(ValueError, 'Number 2 is missing in the input data', board.check)

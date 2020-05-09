@@ -6,14 +6,14 @@ c_ IdCreator:
         if value < 0:
             raise ValueError('Only positive values allowed')
         if value == 0:
-            return 1
+            r_ 1
         else:
-            return self.faculty_id(value-1) * value
+            r_ faculty_id(value-1) * value
 
 
 # Testing without using a framework
 if __name__ == '__main__':
-    creator = IdCreator()
+    creator _ IdCreator()
     assert creator.faculty_id(0) == 1
     assert creator.faculty_id(3) == 6
 

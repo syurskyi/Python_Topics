@@ -1,6 +1,6 @@
-from selenium import webdriver
-import unittest
-import time
+____ selenium ______ webdriver
+______ unittest
+______ time
 
 
 c_ Auth(unittest.TestCase):
@@ -8,7 +8,7 @@ c_ Auth(unittest.TestCase):
     @classmethod
     ___ setUpClass(cls):
         global driver
-        driver = webdriver.Chrome()
+        driver _ webdriver.Chrome()
         driver.get("http://the-internet.herokuapp.com")
 
     # def test_A_RadiButton(self):
@@ -17,7 +17,7 @@ c_ Auth(unittest.TestCase):
     #     driver.find_element_by_id("u_0_9").click()
     #     print(driver.find_element_by_id("u_0_9").is_selected())
 
-    ___ test_B_CheckBox(self):
+    ___ test_B_CheckBox
         driver.find_element_by_link_text("Checkboxes").click()
         print(driver.find_element_by_xpath("//div[@class='example']/form/input[1]").is_selected())
         driver.find_element_by_xpath("//div[@class='example']/form/input[1]").click()

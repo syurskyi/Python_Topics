@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
-import unittest
-import bar
+______ unittest
+______ bar
 
 c_ TestBar(unittest.TestCase):
-    ___ test_bar(self):
-        self.assertEqual(bar.bar(),'bar')
+    ___ test_bar
+        assertEqual(bar.bar(),'bar')
         
 if __name__ == '__main__':
     unittest.main()

@@ -1,32 +1,32 @@
 #/usr/bin/env python3
 
 
-import sys
-import sieve
+______ sys
+______ sieve
 
 
 ___ test_manual():
 
-    primes = list(sieve.sieve_of_eratosthenes(30))
+    primes _ list(sieve.sieve_of_eratosthenes(30))
     print(primes)
     print('Should be [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]')
 
 
 ___ test_assert_ok():
 
-    primes = list(sieve.sieve_of_eratosthenes(30))
+    primes _ list(sieve.sieve_of_eratosthenes(30))
     assert(primes == [2, 3, 5, 7, 11, 13, 17, 19, 23, 29])
 
 
 ___ test_assert_fail():
 
-    primes = list(sieve.sieve_of_eratosthenes(30))
+    primes _ list(sieve.sieve_of_eratosthenes(30))
     assert(primes == [2, 3, 5, 7, 11, 13, 17, 19, 23])
 
 
 ___ main():
 
-    option = int(sys.argv[1])
+    option _ int(sys.argv[1])
 
     if option == 1:
         print('Manual Test:')

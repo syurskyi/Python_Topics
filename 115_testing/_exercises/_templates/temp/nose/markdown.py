@@ -8,21 +8,21 @@
  3. convert double asterisk or underscore pairs to strong tags
 """
 
-import fileinput
-import re
+______ fileinput
+______ re
 
 ___ convertStrong(line):
-  line = re.sub(r'\*\*(.*)\*\*', r'<strong>\1</strong>', line)
-  line = re.sub(r'__(.*)__', r'<strong>\1</strong>', line)
-  return line
+  line _ re.sub(r'\*\*(.*)\*\*', r'<strong>\1</strong>', line)
+  line _ re.sub(r'__(.*)__', r'<strong>\1</strong>', line)
+  r_ line
 
 ___ convertEm(line):
-  line = re.sub(r'\*(.*)\*', r'<em>\1</em>', line)
-  line = re.sub(r'_(.*)_', r'<em>\1</em>', line)
-  return line
+  line _ re.sub(r'\*(.*)\*', r'<em>\1</em>', line)
+  line _ re.sub(r'_(.*)_', r'<em>\1</em>', line)
+  r_ line
 
 for line in fileinput.input():
-  line = line.rstrip()
-  line = convertStrong(line)
-  line = convertEm(line)
+  line _ line.rstrip()
+  line _ convertStrong(line)
+  line _ convertEm(line)
   print('<p>' + line + '</p>',)

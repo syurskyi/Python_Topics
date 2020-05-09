@@ -1,1 +1,1 @@
-from .myapp import MyApp
+____ .myapp ______ MyApp

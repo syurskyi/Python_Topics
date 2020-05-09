@@ -1,19 +1,19 @@
-import pytest
+______ pytest
 
 ___ fizzBuzz( value ):
     if isMultiple(value, 3):
         if isMultiple(value, 5):
-            return "FizzBuzz"
-        return "Fizz"
+            r_ "FizzBuzz"
+        r_ "Fizz"
     if isMultiple(value, 5):
-        return "Buzz"
-    return str(value)
+        r_ "Buzz"
+    r_ str(value)
 
 ___ isMultiple( value, mod ):
-    return (value % mod) == 0
+    r_ (value % mod) == 0
 
 ___ checkFizzBuzz( value, expectedRetVal ):
-    retVal = fizzBuzz(value)
+    retVal _ fizzBuzz(value)
     assert retVal == expectedRetVal
 
 ___ test_returns1With1PassedIn():

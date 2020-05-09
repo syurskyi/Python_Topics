@@ -1,40 +1,40 @@
-from base_api import BaseApi
-import xmltodict
-import requests
+____ base_api ______ BaseApi
+______ xmltodict
+______ requests
 
 
 c_ TestGetListOfIssues(BaseApi):
 
-    ___ test_get_list_of_issues(self):
-        url = self.base_url + '/issue'
+    ___ test_get_list_of_issues
+        url _ base_url + '/issue'
 
-        params = {
+        params _ {
             'with': 'Priority',
             'max': '10',
             'after': '20'
         }
 
-        r = self.request(url, 'get', params)
+        r _ request(url, 'get', params)
 
-        response_dict = xmltodict.parse(r.text)
+        response_dict _ xmltodict.parse(r.text)
 
-        self.assert_for_status_code_and_content_type(r, 200)
+        assert_for_status_code_and_content_type(r, 200)
         for x in response_dict['issueCompacts']['issue']:
-            self.assertTrue(x['@id'])
+            assertTrue(x['@id'])
 
-    ___ test_get_list_of_issues_without_credentials(self):
-        url = self.base_url + '/issue'
+    ___ test_get_list_of_issues_without_credentials
+        url _ base_url + '/issue'
 
-        params = {
+        params _ {
             'with': 'Priority',
             'max': '10',
             'after': '20'
         }
 
-        r = requests.get(url, params)
+        r _ requests.get(url, params)
 
-        self.assert_for_status_code_and_content_type(r, 401)
+        assert_for_status_code_and_content_type(r, 401)
 
-        response_dict = xmltodict.parse(r.text)
+        response_dict _ xmltodict.parse(r.text)
 
-        self.assertTrue(response_dict['error'])
+        assertTrue(response_dict['error'])

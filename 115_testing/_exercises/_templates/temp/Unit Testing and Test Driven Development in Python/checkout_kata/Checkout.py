@@ -2,55 +2,55 @@
 c_ Checkout:
     c_ Discount:
         ___  -   nbrItems, price):
-            self.nbrItems = nbrItems
-            self.price = price
+            nbrItems _ nbrItems
+            price _ price
 
-    ___  - (self):
-        self.prices = {}
-        self.discounts = {}
-        self.items = {}
+    ___  - 
+        prices _ {}
+        discounts _ {}
+        items _ {}
 
 
     ___ addDiscount  item, nbrOfItems, price):
-        discount = self.Discount(nbrOfItems, price)
-        self.discounts[item] = discount
+        discount _ Discount(nbrOfItems, price)
+        discounts[item] _ discount
 
 
     ___ addItemPrice  item, price):
-        self.prices[item] = price
+        prices[item] _ price
 
     ___ addItem  item):
-        if item not in self.prices:
+        if item not in prices:
             raise Exception("Bad Item")
 
-        if item in self.items:
-            self.items[item] += 1
+        if item in items:
+            items[item] +_ 1
         else:
-            self.items[item] = 1
+            items[item] _ 1
 
-    ___ calculateTotal(self):
-        total = 0
-        for item, cnt in self.items.items():
-            total += self.calculateItemTotal(item, cnt)
-        return total
+    ___ calculateTotal
+        total _ 0
+        for item, cnt in items.items():
+            total +_ calculateItemTotal(item, cnt)
+        r_ total
 
     ___ calculateItemTotal  item, cnt):
-        total = 0
-        if item in self.discounts:
-            discount = self.discounts[item]
-            if cnt >= discount.nbrItems:
-                total += self.calculateItemDiscountedTotal(item, cnt, discount)
+        total _ 0
+        if item in discounts:
+            discount _ discounts[item]
+            if cnt >_ discount.nbrItems:
+                total +_ calculateItemDiscountedTotal(item, cnt, discount)
             else:
-                total += self.prices[item] * cnt
+                total +_ prices[item] * cnt
         else:
-            total += self.prices[item] * cnt
+            total +_ prices[item] * cnt
 
-        return total
+        r_ total
 
     ___ calculateItemDiscountedTotal  item, cnt, discount):
-        total = 0
-        nbrOfDiscounts = cnt / discount.nbrItems
-        total += nbrOfDiscounts * discount.price
-        remaining = cnt % discount.nbrItems
-        total += remaining * self.prices[item]
-        return total
+        total _ 0
+        nbrOfDiscounts _ cnt / discount.nbrItems
+        total +_ nbrOfDiscounts * discount.price
+        remaining _ cnt % discount.nbrItems
+        total +_ remaining * prices[item]
+        r_ total

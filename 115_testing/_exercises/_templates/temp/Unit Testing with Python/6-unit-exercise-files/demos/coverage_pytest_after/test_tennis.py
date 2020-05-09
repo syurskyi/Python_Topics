@@ -1,9 +1,9 @@
 
-from tennis import tennis_score
-import pytest
+____ tennis ______ tennis_score
+______ pytest
 
 
-examples = (("expected_score", "player1_points", "player2_points", "comment"), 
+examples _ (("expected_score", "player1_points", "player2_points", "comment"), 
 [
 ("Love-All", 0, 0, "early game, scores equal"),
 ("Fifteen-All", 1, 1, "early game, scores equal"),

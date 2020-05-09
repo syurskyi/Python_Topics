@@ -1,12 +1,12 @@
-from distutils.core import setup
+____ distutils.core ______ setup
 
 setup(
-    name='UnitTestingSample',
-    version='1',
-    packages=['Modules', 'Modules.Calculator', 'UnitTests'],
-    url='',
-    license='',
-    author='Trashvin',
-    author_email='m3lles@gmail.com',
-    description='Sampl unit testing using python'
+    name_'UnitTestingSample',
+    version_'1',
+    packages_['Modules', 'Modules.Calculator', 'UnitTests'],
+    url_'',
+    license_'',
+    author_'Trashvin',
+    author_email_'m3lles@gmail.com',
+    description_'Sampl unit testing using python'
 )

@@ -1,5 +1,5 @@
 # Python Unittest
-# unittest.mock — mock object library
+# unittest.mock ï¿½ mock object library
 # unittest.mock is a library for testing in Python.
 # It allows you to replace parts of your system under test with mock objects and make assertions about how they have been used.
 # unittest.mock provides a core Mock class removing the need to create a host of stubs throughout your test suite.
@@ -9,7 +9,7 @@
 # Additionally, mock provides a patch() decorator that handles patching module and class level attributes within the scope of a test, along with sentinel
 # for creating unique objects.
 # 
-# Mock is very easy to use and is designed for use with unittest. Mock is based on the ‘action -> assertion’ pattern instead of ‘record -> replay’ used by
+# Mock is very easy to use and is designed for use with unittest. Mock is based on the ï¿½action -> assertionï¿½ pattern instead of ï¿½record -> replayï¿½ used by
 # many mocking frameworks.
 #
 # The Mock Class
@@ -24,7 +24,7 @@
 # Assert that the mock was called at least once.
 # 
 
-mock = Mock()
+mock _ Mock()
 mock.method()
 
 # OUTPUT: '<Mock name='mock.method()' id='...'>'
@@ -37,7 +37,7 @@ mock.method.assert_called()
 # Assert that the mock was called exactly once.
 # 
 
-mock = Mock()
+mock _ Mock()
 mock.method()
 
 # OUTPUT: '<Mock name='mock.method()' id='...'>'
@@ -54,22 +54,22 @@ mock.method.assert_called_once()
 # This method is a convenient way of asserting that calls are made in a particular way:
 # 
 
-mock = Mock()
-mock.method(1, 2, 3, test='wow')
+mock _ Mock()
+mock.method(1, 2, 3, test_'wow')
 
 # OUTPUT: '<Mock name='mock.method()' id='...'>'
 
-mock.method.assert_called_with(1, 2, 3, test='wow')
+mock.method.assert_called_with(1, 2, 3, test_'wow')
 
 #
 # assert_called_once_with(*args, **kwargs). 
 # Assert that the mock was called exactly once and that that call was with the specified arguments.
 # 
 
-mock = Mock(return_value=None)
-mock('foo', bar='baz')
+mock _ Mock(return_value_None)
+mock('foo', bar_'baz')
 
-mock.assert_called_once_with('foo', bar='baz')
-mock('other', bar='values')
+mock.assert_called_once_with('foo', bar_'baz')
+mock('other', bar_'values')
 
-mock.assert_called_once_with('other', bar='values')
+mock.assert_called_once_with('other', bar_'values')

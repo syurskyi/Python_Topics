@@ -1,86 +1,86 @@
-import unittest
+______ unittest
 
-from stacks import Stack
+____ stacks ______ Stack
 
 c_ StackTestCase(unittest.TestCase):
-    ___ test_is_empty_true(self):
-        test_obj = Stack()
-        self.assertEqual(True, test_obj.is_empty())
+    ___ test_is_empty_true
+        test_obj _ Stack()
+        assertEqual(True, test_obj.is_empty())
 
-    ___ test_is_empty_false(self):
-        test_obj = Stack()
+    ___ test_is_empty_false
+        test_obj _ Stack()
         test_obj.push('data')
-        self.assertEqual(False, test_obj.is_empty())
+        assertEqual(False, test_obj.is_empty())
 
-    ___ test_pop_handles_empty_stack(self):
-        test_obj = Stack()
-        self.assertEqual(None, test_obj.pop())
-        self.assertEqual(True, test_obj.is_empty())
+    ___ test_pop_handles_empty_stack
+        test_obj _ Stack()
+        assertEqual(None, test_obj.pop())
+        assertEqual(True, test_obj.is_empty())
 
-    ___ test_pop_pops_1_item_stack(self):
-        test_obj = Stack()
-        test_data = 'data1'
+    ___ test_pop_pops_1_item_stack
+        test_obj _ Stack()
+        test_data _ 'data1'
         test_obj.push(test_data)
-        self.assertEqual(test_data, test_obj.pop())
-        self.assertEqual(True, test_obj.is_empty())
+        assertEqual(test_data, test_obj.pop())
+        assertEqual(True, test_obj.is_empty())
 
-    ___ test_pop_in_correct_order_from_2_item_stack(self):
-        test_obj = Stack()
-        test_data1 = 'data1'
-        test_data2 = 'data2'
+    ___ test_pop_in_correct_order_from_2_item_stack
+        test_obj _ Stack()
+        test_data1 _ 'data1'
+        test_data2 _ 'data2'
         test_obj.push(test_data1)
         test_obj.push(test_data2)
-        self.assertEqual(test_data2, test_obj.pop())
-        self.assertEqual(False, test_obj.is_empty())
-        self.assertEqual(test_data1, test_obj.pop())
-        self.assertEqual(True, test_obj.is_empty())
+        assertEqual(test_data2, test_obj.pop())
+        assertEqual(False, test_obj.is_empty())
+        assertEqual(test_data1, test_obj.pop())
+        assertEqual(True, test_obj.is_empty())
 
-    ___ test_peek_handles_empty_stack(self):
-        test_obj = Stack()
-        self.assertEqual(None, test_obj.peek())
-        self.assertEqual(True, test_obj.is_empty())
+    ___ test_peek_handles_empty_stack
+        test_obj _ Stack()
+        assertEqual(None, test_obj.peek())
+        assertEqual(True, test_obj.is_empty())
 
-    ___ test_peek_shows_item_in_1_item_stack(self):
-        test_obj = Stack()
-        test_data = 'data1'
+    ___ test_peek_shows_item_in_1_item_stack
+        test_obj _ Stack()
+        test_data _ 'data1'
         test_obj.push(test_data)
-        self.assertEqual(test_data, test_obj.peek())
-        self.assertEqual(False, test_obj.is_empty())
+        assertEqual(test_data, test_obj.peek())
+        assertEqual(False, test_obj.is_empty())
 
-    ___ test_peek_shows_top_of_2_item_stack(self):
-        test_obj = Stack()
-        test_data1 = 'data1'
-        test_data2 = 'data2'
+    ___ test_peek_shows_top_of_2_item_stack
+        test_obj _ Stack()
+        test_data1 _ 'data1'
+        test_data2 _ 'data2'
         test_obj.push(test_data1)
         test_obj.push(test_data2)
-        self.assertEqual(test_data2, test_obj.peek())
-        self.assertEqual(False, test_obj.is_empty())
-        self.assertEqual(test_data2, test_obj.peek())
+        assertEqual(test_data2, test_obj.peek())
+        assertEqual(False, test_obj.is_empty())
+        assertEqual(test_data2, test_obj.peek())
 
-    ___ test_size_handles_empty_stack(self):
-        test_obj = Stack()
-        self.assertEqual(0, test_obj.size())
-        self.assertEqual(True, test_obj.is_empty())
+    ___ test_size_handles_empty_stack
+        test_obj _ Stack()
+        assertEqual(0, test_obj.size())
+        assertEqual(True, test_obj.is_empty())
 
-    ___ test_size_returns_1_for_1_item_stack(self):
-        test_obj = Stack()
-        test_data = 'data1'
+    ___ test_size_returns_1_for_1_item_stack
+        test_obj _ Stack()
+        test_data _ 'data1'
         test_obj.push(test_data)
-        self.assertEqual(1, test_obj.size())
-        self.assertEqual(False, test_obj.is_empty())
+        assertEqual(1, test_obj.size())
+        assertEqual(False, test_obj.is_empty())
 
-    ___ test_size_returns_correct_number_for_many_item_stack(self):
-        test_obj = Stack()
-        test_data0 = 'data0'
-        test_data1 = 'data1'
-        test_data2 = 'data2'
-        test_data3 = 'data3'
-        test_data4 = 'data4'
-        test_data5 = 'data5'
-        test_data6 = 'data6'
-        test_data7 = 'data7'
-        test_data8 = 'data8'
-        test_data9 = 'data9'
+    ___ test_size_returns_correct_number_for_many_item_stack
+        test_obj _ Stack()
+        test_data0 _ 'data0'
+        test_data1 _ 'data1'
+        test_data2 _ 'data2'
+        test_data3 _ 'data3'
+        test_data4 _ 'data4'
+        test_data5 _ 'data5'
+        test_data6 _ 'data6'
+        test_data7 _ 'data7'
+        test_data8 _ 'data8'
+        test_data9 _ 'data9'
         test_obj.push(test_data0)
         test_obj.push(test_data1)
         test_obj.push(test_data2)
@@ -91,7 +91,7 @@ c_ StackTestCase(unittest.TestCase):
         test_obj.push(test_data7)
         test_obj.push(test_data8)
         test_obj.push(test_data9)
-        self.assertEqual(10, test_obj.size())
+        assertEqual(10, test_obj.size())
 
 if __name__ == '__main__':
     unittest.main()
