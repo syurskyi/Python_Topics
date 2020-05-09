@@ -9,15 +9,15 @@ c_ TestInterest?.?
         # Act (use instantiation)
         # Assert (assert method)
         assertRaises(TypeError, Interest().simple_interest, 'init amt', 1, 1)
-        assertRaises(TypeError, Interest().simple_interest, True, .5, 1)
+        assertRaises(TypeError, Interest().simple_interest, T.., .5, 1)
         assertRaises(TypeError, Interest().simple_interest, 1+3j, .5, 1)
 
         assertRaises(TypeError, Interest().simple_interest, 100, 'rate', 1)
-        assertRaises(TypeError, Interest().simple_interest, 100, True, 1)
+        assertRaises(TypeError, Interest().simple_interest, 100, T.., 1)
         assertRaises(TypeError, Interest().simple_interest, 100, 1+3j, 1)
 
         assertRaises(TypeError, Interest().simple_interest, 100, .5, 'time')
-        assertRaises(TypeError, Interest().simple_interest, 100, .5, True)
+        assertRaises(TypeError, Interest().simple_interest, 100, .5, T..)
         assertRaises(TypeError, Interest().simple_interest, 100, .5, 1+3j)
 
     ___ test_simple_interest_value_error
@@ -41,10 +41,10 @@ c_ TestInterest?.?
         assertRaises(TypeError, Interest().compound_interest, 100, .5, 1, 'compound num')
 
 
-        assertRaises(TypeError, Interest().compound_interest, True, .5, 1, 2)
-        assertRaises(TypeError, Interest().compound_interest, 100, True, 1, 2)
-        assertRaises(TypeError, Interest().compound_interest, 100, .5, True, 2)
-        assertRaises(TypeError, Interest().compound_interest, 100, .5, 1, True)
+        assertRaises(TypeError, Interest().compound_interest, T.., .5, 1, 2)
+        assertRaises(TypeError, Interest().compound_interest, 100, T.., 1, 2)
+        assertRaises(TypeError, Interest().compound_interest, 100, .5, T.., 2)
+        assertRaises(TypeError, Interest().compound_interest, 100, .5, 1, T..)
 
         assertRaises(TypeError, Interest().compound_interest, 1+3j, .5, 1, 2)
         assertRaises(TypeError, Interest().compound_interest, 100, 1+3j, 1, 2)

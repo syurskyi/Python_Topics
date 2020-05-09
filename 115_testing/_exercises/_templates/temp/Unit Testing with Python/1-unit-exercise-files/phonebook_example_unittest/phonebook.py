@@ -10,4 +10,4 @@ c_ Phonebook:
         r_ entries[name]
         
     ___ is_consistent
-        r_ True
+        r_ T..

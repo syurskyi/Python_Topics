@@ -37,8 +37,8 @@ print(dir(sys))
 print(help(sys.getsizeof))
 print()
 
-list_eg _ [1, 2, 3, "a", "b", "c", True, 3.14159]
-tuple_eg _ (1, 2, 3, "a", "b", "c", True, 3.14159)
+list_eg _ [1, 2, 3, "a", "b", "c", T.., 3.14159]
+tuple_eg _ (1, 2, 3, "a", "b", "c", T.., 3.14159)
 
 print("List size = ", sys.getsizeof(list_eg))
 print("Tuple size = ", sys.getsizeof(tuple_eg))
@@ -74,7 +74,7 @@ print(test3)
 print()
 
 # (age, country, knows_python)
-survey _ (27, "Vietnam", True)
+survey _ (27, "Vietnam", T..)
 
 age _ survey[0]
 country _ survey[1]
@@ -85,7 +85,7 @@ print("Country =", country)
 print("Knows Python?", knows_python)
 print()
 
-survey2 _ (21, "Switzerland", False)
+survey2 _ (21, "Switzerland", F..)
 age, country, knows_python _ survey2
 print("Age =", age)
 print("Country =", country)

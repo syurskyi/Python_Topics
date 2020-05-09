@@ -1,4 +1,4 @@
-______ random
+______ ra__
 
 c_ Sensor(object
 
@@ -14,5 +14,5 @@ c_ Sensor(object
     @staticmethod
     ___ sample_actual_pressure(
         # placeholder implementation that simulate a real sensor in a real tire
-        pressure_telemetry_value _ 6 * random.random() * random.random()
+        pressure_telemetry_value _ 6 * ra__.ra__() * ra__.ra__()
         r_ pressure_telemetry_value

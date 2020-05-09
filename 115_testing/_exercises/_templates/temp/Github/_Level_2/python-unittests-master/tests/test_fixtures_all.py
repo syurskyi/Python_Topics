@@ -31,4 +31,4 @@ c_ IncrementTest?.?
         logging.info('Test method ends')
 
     ___ test_dummy
-        assertTrue(True)
+        assertTrue(T..)

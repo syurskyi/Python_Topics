@@ -19,7 +19,7 @@
 
 mock _ Mock(spec_3)
 
-isinstance(mock, int)
+isi..(mock, int)
 
 # OUTPUT: 'True'
  
@@ -31,6 +31,6 @@ mock _ Mock()
 
 mock. -c _ dict
 
-isinstance(mock, dict)
+isi..(mock, dict)
 
 # OUTPUT: 'True'

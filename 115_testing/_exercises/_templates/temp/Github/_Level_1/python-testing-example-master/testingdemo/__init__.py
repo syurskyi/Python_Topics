@@ -16,14 +16,14 @@ __ __debug__:
 
     try:
         ______ coverage
-        COVERAGE _ True
+        COVERAGE _ T..
     except ImportError:
-        COVERAGE _ False
+        COVERAGE _ F..
     try:
         ______ pycodestyle
-        STYLECHECK _ True
+        STYLECHECK _ T..
     except ImportError:
-        STYLECHECK _ False
+        STYLECHECK _ F..
 
     __ COVERAGE:
         codecoverage _ coverage.Coverage(omit_'*unittests/*')
@@ -33,7 +33,7 @@ __ __debug__:
         print("Code Coverage Disabled")
 
     __version__ _ '1.0.1'
-    TESTING _ True
+    TESTING _ T..
 
     ____ testingdemo.howto ______ *
 

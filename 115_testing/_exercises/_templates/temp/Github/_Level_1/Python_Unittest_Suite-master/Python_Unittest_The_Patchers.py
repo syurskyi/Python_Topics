@@ -31,7 +31,7 @@
 @patch('__main__.SomeClass')
 
  ___ function(normal_argument, mock_class
-        print(mock_class is SomeClass)
+        print(mock_class __ SomeClass)
 
 function(None)
 
@@ -57,7 +57,7 @@ w__ patch('__main__.Class') __ MockClass:
         instance _ MockClass.return_value
         instance.method.return_value _ 'foo'
 
-        a.. Class() is instance
+        a.. Class() __ instance
 
      a.. Class().method() __ 'foo'
 
@@ -72,7 +72,7 @@ MockClass _ patcher.start()
 
 instance _ MockClass()
 
-a.. isinstance(instance, Original)
+a.. isi..(instance, Original)
 
 patcher.stop()
 
@@ -85,7 +85,7 @@ patcher.stop()
 thing _ object()
 
 w__ patch('__main__.thing', new_callable_NonCallableMock) __ mock_thing:
-        a.. thing is mock_thing
+        a.. thing __ mock_thing
 
         thing()
 

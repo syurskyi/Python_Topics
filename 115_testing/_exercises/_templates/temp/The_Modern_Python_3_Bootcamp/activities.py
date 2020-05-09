@@ -1,8 +1,8 @@
-____ random ______ choice
+____ ra__ ______ ch..
 
 
 ___ eat(food, is_healthy
-	__ not isinstance(is_healthy, bool
+	__ no. isi..(is_healthy, bool
 		r_ V..("is_healthy must be a boolean")
 	ending _ "because YOLO!"
 	__ is_healthy:
@@ -17,9 +17,9 @@ ___ nap(num_hours
 
 
 ___ is_funny(person
-	__ person is 'tim': r_ False
-	r_ True
+	__ person __ 'tim': r_ F..
+	r_ T..
 
 
 ___ laugh(
-	r_ choice(('lol', 'haha', 'tehehe'))
+	r_ ch..(('lol', 'haha', 'tehehe'))

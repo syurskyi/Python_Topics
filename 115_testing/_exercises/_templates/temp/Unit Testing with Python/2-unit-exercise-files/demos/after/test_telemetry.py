@@ -34,12 +34,12 @@ c_ MockTelemetryClient:
 
     ___ send  message
         __ go_offline_on_send:
-            online_status _ False
+            online_status _ F..
 
     ___ connect  connection_string
         attempts +_ 1
         __ go_online_on_third_attempt and attempts __ 2:
-            online_status _ True
+            online_status _ T..
 
     ___ receive
         r_ receive_data

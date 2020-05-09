@@ -14,5 +14,5 @@ c_ TestCircleArea?.?
 
     ___ test_types
         assertRaises(TypeError, circle_area, 3+5j)
-        assertRaises(TypeError, circle_area, True)
+        assertRaises(TypeError, circle_area, T..)
         assertRaises(TypeError, circle_area, "radius")

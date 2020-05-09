@@ -11,11 +11,11 @@ c_ TelemetryDiagnosticControls:
         telemetry_client.disconnect()
 
         retryLeft _ 3
-        while (telemetry_client.get_online_status() __ False and retryLeft > 0
+        while (telemetry_client.get_online_status() __ F.. and retryLeft > 0
             telemetry_client.connect(TelemetryDiagnosticControls.DiagnosticChannelConnectionString)
             retryLeft -_ 1
 
-        __ telemetry_client.get_online_status() __ False:
+        __ telemetry_client.get_online_status() __ F..:
             r_ Exception("Unable to connect.")
 
         telemetry_client.send(TelemetryClient.DIAGNOSTIC_MESSAGE)
@@ -44,22 +44,22 @@ c_ TelemetryClient(object
     DIAGNOSTIC_MESSAGE _ "AT#UD"
 
     ___  -
-        online_status _ False
+        online_status _ F..
         _diagnostic_message_result _ ""
 
     ___ connect  telemetry_server_connection_string
-        __ not telemetry_server_connection_string:
+        __ no. telemetry_server_connection_string:
             r_ Exception()
 
         # simulate the operation on a real modem
-        success _ random.randint(0, 10) <_ 8
+        success _ ra__.randint(0, 10) <_ 8
         online_status _ success
 
     ___ disconnect
-        online_status _ False
+        online_status _ F..
 
     ___ send  message
-        __ not message:
+        __ no. message:
             r_ Exception()
 
         __ message __ TelemetryClient.DIAGNOSTIC_MESSAGE:
@@ -84,13 +84,13 @@ Remote Rtrn Count........... 00"""
         # here should go the real Send operation (not needed for this exercise)
 
     ___ receive
-        __ not _diagnostic_message_result:
+        __ no. _diagnostic_message_result:
             # simulate a received message (just for illustration - not needed for this exercise)
             message _ ""
-            messageLength _ random.randint(0, 50) + 60
+            messageLength _ ra__.randint(0, 50) + 60
             i _ messageLength
             while(i >_ 0
-                message +_ chr((random.randint(0, 40) + 86))
+                message +_ chr((ra__.randint(0, 40) + 86))
                 i -_ 1
         else:
             message _ _diagnostic_message_result

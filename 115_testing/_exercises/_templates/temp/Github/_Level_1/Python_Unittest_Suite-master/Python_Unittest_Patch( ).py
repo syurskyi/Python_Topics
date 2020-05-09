@@ -30,8 +30,8 @@ ___ test(MockClass1, MockClass2
         module.ClassName1()
         module.ClassName2()
 
-        a.. MockClass1 is module.ClassName1
-        a.. MockClass2 is module.ClassName2
+        a.. MockClass1 __ module.ClassName1
+        a.. MockClass2 __ module.ClassName2
 
         a.. MockClass1.called
 

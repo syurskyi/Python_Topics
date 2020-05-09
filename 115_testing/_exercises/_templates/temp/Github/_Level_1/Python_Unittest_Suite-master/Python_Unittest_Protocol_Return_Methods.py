@@ -56,7 +56,7 @@ MagicMock() !_ 3
 # OUTPUT: 'True'
 
 mock _ MagicMock()
-mock.__eq__.return_value _ True
+mock.__eq__.return_value _ T..
 
 mock __ 3
 

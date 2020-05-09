@@ -39,7 +39,7 @@
 ___ testSomething(
     something _ makeSomething()
 
-    a.. something.name is not None
+    a.. something.name __ no. None
 
     # ...
 

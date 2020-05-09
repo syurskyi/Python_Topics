@@ -14,10 +14,10 @@ c_ SearchBySymbolTest?.?
         response _ r.j__()
     
     ___ test_search_by_symbol
-        assertTrue(isinstance(response, dict))
+        assertTrue(isi..(response, dict))
         assertIn("response", response, 'Missing response')
         assertIn("result", response['response'], 'Missing result')
-        assertTrue(isinstance(response['response']['result'], list), "Result is not a list")
+        assertTrue(isi..(response['response']['result'], list), "Result is not a list")
         
         for item in response['response']['result']:
 			assertIn("exchange", item, 'missing exchange')
@@ -35,10 +35,10 @@ c_ SearchbyTermTest?.?
         response _ r.j__()
     
     ___ test_search_by_term
-        assertTrue(isinstance(response, dict))
+        assertTrue(isi..(response, dict))
         assertIn("response", response, 'Missing response')
         assertIn("result", response['response'], 'Missing result')
-        assertTrue(isinstance(response['response']['result'], list), "Result is not a list")
+        assertTrue(isi..(response['response']['result'], list), "Result is not a list")
         
         for item in response['response']['result']:
 			assertIn("exchange", item, 'missing exchange')
@@ -56,10 +56,10 @@ c_ SearchbyTitleTest?.?
         response _ r.j__()
     
     ___ test_search_by_title
-        assertTrue(isinstance(response, dict))
+        assertTrue(isi..(response, dict))
         assertIn("response", response, 'Missing response')
         assertIn("result", response['response'], 'Missing result')
-        assertTrue(isinstance(response['response']['result'], list), "Result is not a list")
+        assertTrue(isi..(response['response']['result'], list), "Result is not a list")
         
         for item in response['response']['result']:
 			assertIn("exchange", item, 'missing exchange')
@@ -77,10 +77,10 @@ c_ GetTagArticlesTest?.?
         response _ r.j__()
     
     ___ test_get_tag_articles
-        assertTrue(isinstance(response, dict))
+        assertTrue(isi..(response, dict))
         assertIn("response", response, 'Missing response')
         assertIn("result", response['response'], 'Missing result')
-        assertTrue(isinstance(response['response']['result'], list), "Result is not a list")
+        assertTrue(isi..(response['response']['result'], list), "Result is not a list")
         
         for articles in response['response']['result']:
             for item in articles['articles']:
@@ -104,10 +104,10 @@ c_ MarketMoversTest?.?
         response _ r.j__()
     
     ___ test_get_market_movers
-        assertTrue(isinstance(response, dict))
+        assertTrue(isi..(response, dict))
         assertIn("response", response, 'Missing response')
         assertIn("result", response['response'], 'Missing result')
-        assertTrue(isinstance(response['response']['result'], list), "Result is not a list")
+        assertTrue(isi..(response['response']['result'], list), "Result is not a list")
         
         for item in response['response']['result']:
 			assertIn("c", item, 'missin c')
@@ -130,10 +130,10 @@ c_ GetChartDataTest?.?
         response _ r.j__()
     
     ___ test_get_chart_data
-        assertTrue(isinstance(response, dict))
+        assertTrue(isi..(response, dict))
         assertIn("response", response, 'Missing response')
         assertIn("result", response['response'], 'Missing result')
-        assertTrue(isinstance(response['response']['result'], dict), "Result is not a list")
+        assertTrue(isi..(response['response']['result'], dict), "Result is not a list")
         assertEquals(u'success', response['response']['status']['message'], 'no success message')
         for item in response['response']['result']['5yr']:
             assertIn("label", item, 'missin label')

@@ -19,7 +19,7 @@ ___ this_is_a_test(
 # note this test won't pass if you use py.test
 @nottest
 ___ test_this_is_not_a_test(
-    a.. False
+    a.. F..
 
 ___ test_how_debug_works(
-    a.. False
+    a.. F..

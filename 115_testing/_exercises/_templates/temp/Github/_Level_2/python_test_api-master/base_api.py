@@ -156,4 +156,4 @@ c_ BaseApi?.?
                     print 'message: ' + error.message  # a unicode string that lists the message.
                     print 'type: ' + st.(error.type)  # an integer
                     print 'type_name: ' + error.type_name
-            a.. False, "Test failed due to XSD validation error" # otherwise test is marked as passed even when schema failed validation
+            a.. F.., "Test failed due to XSD validation error" # otherwise test is marked as passed even when schema failed validation

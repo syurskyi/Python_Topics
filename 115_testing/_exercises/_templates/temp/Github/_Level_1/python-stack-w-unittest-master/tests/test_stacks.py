@@ -5,24 +5,24 @@ ____ stacks ______ Stack
 c_ StackTestCase?.?
     ___ test_is_empty_true
         test_obj _ Stack()
-        aE..(True, test_obj.is_empty())
+        aE..(T.., test_obj.is_empty())
 
     ___ test_is_empty_false
         test_obj _ Stack()
         test_obj.push('data')
-        aE..(False, test_obj.is_empty())
+        aE..(F.., test_obj.is_empty())
 
     ___ test_pop_handles_empty_stack
         test_obj _ Stack()
         aE..(None, test_obj.pop())
-        aE..(True, test_obj.is_empty())
+        aE..(T.., test_obj.is_empty())
 
     ___ test_pop_pops_1_item_stack
         test_obj _ Stack()
         test_data _ 'data1'
         test_obj.push(test_data)
         aE..(test_data, test_obj.pop())
-        aE..(True, test_obj.is_empty())
+        aE..(T.., test_obj.is_empty())
 
     ___ test_pop_in_correct_order_from_2_item_stack
         test_obj _ Stack()
@@ -31,21 +31,21 @@ c_ StackTestCase?.?
         test_obj.push(test_data1)
         test_obj.push(test_data2)
         aE..(test_data2, test_obj.pop())
-        aE..(False, test_obj.is_empty())
+        aE..(F.., test_obj.is_empty())
         aE..(test_data1, test_obj.pop())
-        aE..(True, test_obj.is_empty())
+        aE..(T.., test_obj.is_empty())
 
     ___ test_peek_handles_empty_stack
         test_obj _ Stack()
         aE..(None, test_obj.peek())
-        aE..(True, test_obj.is_empty())
+        aE..(T.., test_obj.is_empty())
 
     ___ test_peek_shows_item_in_1_item_stack
         test_obj _ Stack()
         test_data _ 'data1'
         test_obj.push(test_data)
         aE..(test_data, test_obj.peek())
-        aE..(False, test_obj.is_empty())
+        aE..(F.., test_obj.is_empty())
 
     ___ test_peek_shows_top_of_2_item_stack
         test_obj _ Stack()
@@ -54,20 +54,20 @@ c_ StackTestCase?.?
         test_obj.push(test_data1)
         test_obj.push(test_data2)
         aE..(test_data2, test_obj.peek())
-        aE..(False, test_obj.is_empty())
+        aE..(F.., test_obj.is_empty())
         aE..(test_data2, test_obj.peek())
 
     ___ test_size_handles_empty_stack
         test_obj _ Stack()
         aE..(0, test_obj.size())
-        aE..(True, test_obj.is_empty())
+        aE..(T.., test_obj.is_empty())
 
     ___ test_size_returns_1_for_1_item_stack
         test_obj _ Stack()
         test_data _ 'data1'
         test_obj.push(test_data)
         aE..(1, test_obj.size())
-        aE..(False, test_obj.is_empty())
+        aE..(F.., test_obj.is_empty())
 
     ___ test_size_returns_correct_number_for_many_item_stack
         test_obj _ Stack()

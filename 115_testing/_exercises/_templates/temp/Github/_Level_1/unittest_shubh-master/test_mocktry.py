@@ -36,7 +36,7 @@ c_ Testmock?.?
         
     ___ test_mylinkedin
         w__ patch('mocktry.requests.get') __ mocked_get:
-            mocked_get.return_value.ok _ True
+            mocked_get.return_value.ok _ T..
             mocked_get.return_value.text _ 'Done'
 
             s _ s1.mylinkedin('in')

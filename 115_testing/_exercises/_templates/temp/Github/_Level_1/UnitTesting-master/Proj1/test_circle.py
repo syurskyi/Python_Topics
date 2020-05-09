@@ -15,7 +15,7 @@ c_ TestCircleArea?.?
     ___ test_area_types
         # Test to make sure the correct type is entered into the function
         assertRaises(TypeError, circle_area, "Text")
-        assertRaises(TypeError, circle_area, True)
+        assertRaises(TypeError, circle_area, T..)
         assertRaises(TypeError, circle_area, 5+3j)
 
     ___ test_area_values
@@ -31,7 +31,7 @@ c_ TestCircleArea?.?
     ___ test_circumfrence_types
         # Test circumfrence input to make sure errors handled
         assertRaises(TypeError, circle_circumfrence, "Text")
-        assertRaises(TypeError, circle_circumfrence, True)
+        assertRaises(TypeError, circle_circumfrence, T..)
         assertRaises(TypeError, circle_circumfrence, 3+4j)
 
     ___ test_circumfrence_values

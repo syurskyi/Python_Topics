@@ -16,8 +16,8 @@ c_ PhoneBook:
                     __ number1 __ number2:
                         continue
                 __ number1.startswith(number2
-                    r_ False
-        r_ True
+                    r_ F..
+        r_ T..
     
     ___ get_names
         r_ numbers.keys()

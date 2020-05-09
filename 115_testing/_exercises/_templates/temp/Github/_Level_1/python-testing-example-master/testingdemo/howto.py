@@ -13,13 +13,13 @@ c_ AnExample(
         ______ time
         rightnow _ time.time()
         yesterdaythistime _ rightnow - 86400
-        r_ True
+        r_ T..
 
     ___ report_something
         report _ descriptiontext + st.(rightnow) + " and " + st.(yesterdaythistime)
         r_ report
 
     ___ should_fail
-        r_ False
+        r_ F..
 
 #notesshouldhaveaspaceafterthehash

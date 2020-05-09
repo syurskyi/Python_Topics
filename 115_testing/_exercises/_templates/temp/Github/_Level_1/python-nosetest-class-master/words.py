@@ -45,9 +45,9 @@ ___ addcounts(existing, new
     
     If either existing or new are not dictionaries, raise ValueError
     '''
-    __ not type(existing) is dict:
+    __ no. type(existing) __ dict:
         r_ V..('existing must be a dictionary')
-    __ not type(new) is dict:
+    __ no. type(new) __ dict:
         r_ V..('new must be a dictionary')
     for word, count in new.viewitems(
         newcount _ count + existing.get(word, 0)

@@ -11,22 +11,22 @@ ______ u__
 c_ TestUnittestMethods?.?
     ___ testAssertTrue
         """Вызывает ошибку, если значение аргумента != True"""
-        assertTrue(True)
+        assertTrue(T..)
 
     ___ testFailUnless
         """
             Устаревшее название для assertTrue().
             Вызывает ошибку, если значение аргумента != True
         """
-        failUnless(True)
+        failUnless(T..)
 
     ___ testFailIf
         """Устаревшая функция, теперь называется assertFalse()"""
-        assertFalse(False)
+        assertFalse(F..)
 
     ___ testAssertFalse
         """Вызывает ошибку, если начение аргумента != False"""
-        assertFalse(False)
+        assertFalse(F..)
 
     ___ testEqual
         """Вызывает ошибку, если значения двух аргументов НЕ равны"""

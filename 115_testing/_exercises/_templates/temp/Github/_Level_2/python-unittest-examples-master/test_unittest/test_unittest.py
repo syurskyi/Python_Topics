@@ -71,8 +71,8 @@ c_ TestUnittest?.?
     ___ test_basic_usage
         aE..(1, 1)
         assertNotEqual(1, 2)
-        assertTrue(True)
-        assertFalse(False)
+        assertTrue(T..)
+        assertFalse(F..)
         assertIs(widget, widget)
         assertIsNot(widget, Widget('new widget'))
         assertIsNone(None)

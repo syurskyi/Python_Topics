@@ -42,14 +42,14 @@ c_ JsonDiffHandler(object
     ___ check  first_json, second_json, path_'', with_values_False
         """Метод, сравнивающий секции этальнного и тестового json-файлов"""
         # Определение типа нового значения
-        __ with_values and second_json is not None:
-            __ not isinstance(first_json, type(second_json)):
+        __ with_values and second_json __ no. None:
+            __ no. isi..(first_json, type(second_json)):
                 message _ '%s --> OLD TYPE: %s ==> NEW TYPE: %s' % \
                           (pa__, type(first_json).__name__, type(second_json).__name__)
                 save_difference(message, TYPE)
 
         # Если проверяемая секция эталонного json словарь
-        __ isinstance(first_json, dict
+        __ isi..(first_json, dict
             for key in first_json:
                 # Формирование вложенности секции через точку
                 __ len(pa__) __ 0:
@@ -57,7 +57,7 @@ c_ JsonDiffHandler(object
                 else:
                     new_path _ "%s.%s" % (pa__, key)
                 # Если проверяемая секция тестового json словарь
-                __ isinstance(second_json, dict
+                __ isi..(second_json, dict
                     __ key in second_json:
                         sec _ second_json[key]
                     else:
@@ -65,7 +65,7 @@ c_ JsonDiffHandler(object
                         save_difference(new_path, PATH)
                         sec _ None
                     # Рекурсивный вызов
-                    __ sec is not None:
+                    __ sec __ no. None:
                         check(first_json[key], sec, path_new_path, with_values_with_values)
                 else:
                     # Если проверяемая секция тестового json НЕ словарь,
@@ -74,11 +74,11 @@ c_ JsonDiffHandler(object
                     check(first_json[key], second_json, path_new_path, with_values_with_values)
 
         # Если проверяемая секция эталонного json список
-        elif isinstance(first_json, list
+        elif isi..(first_json, list
             for (index, item) in enumerate(first_json
                 new_path _ "%s[%s]" % (pa__, index)
                 sec _ None
-                __ second_json is not None:
+                __ second_json __ no. None:
                     try:
                         sec _ second_json[index]
                     except (IndexError, KeyError
@@ -90,7 +90,7 @@ c_ JsonDiffHandler(object
                 check(first_json[index], sec, path_new_path, with_values_with_values)
         # Если разница между тестируемым и эталонным json только в значениях определенных секции
         else:
-            __ with_values and second_json is not None:
+            __ with_values and second_json __ no. None:
                 __ first_json !_ second_json:
                     save_difference('%s --> OLD VALUE: %s ==> NEW VALUE: %s ' %
                                          (pa__, first_json, second_json), VALUE)
@@ -98,7 +98,7 @@ c_ JsonDiffHandler(object
 
     ___ save_difference  diff_message, type_
         """Метод, сохраняющий результ сравнения (ТИП сообщения, СОДЕРЖИМОЕ сообщения)"""
-        __ diff_message not in difference:
+        __ diff_message no. in difference:
             seen.append(diff_message)
             difference.append((type_, diff_message))
 
@@ -107,8 +107,8 @@ ___ assert_json(test_json, ethalon_json
     """ Функция проверки на разность этальнного и тестового json-файлов"""
     test_json _ j__.loads(test_json)
     ethalon_json _ j__.loads(ethalon_json)
-    diff1 _ JsonDiffHandler(test_json, ethalon_json, True).difference
-    diff2 _ JsonDiffHandler(ethalon_json, test_json, False).difference
+    diff1 _ JsonDiffHandler(test_json, ethalon_json, T..).difference
+    diff2 _ JsonDiffHandler(ethalon_json, test_json, F..).difference
     diffs _ []
     # Обработка типов сообщений и их содержимого, формирование результата
     for type, message in diff1:

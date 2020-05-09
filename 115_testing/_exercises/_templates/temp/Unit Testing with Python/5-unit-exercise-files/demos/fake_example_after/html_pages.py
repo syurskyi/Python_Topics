@@ -15,9 +15,9 @@ c_ HtmlPagesConverter:
         file_access _ file_access
         breaks _ [0]
         w__ file_access.o..() __ f:
-            while True:
+            while T..:
                 line _ f.readline()
-                __ not line:
+                __ no. line:
                     break
                 line _ line.rstrip()
                 __ "PAGE_BREAK" in line:

@@ -32,17 +32,17 @@ c_ MockSingleSignOnRegistry:
     ___  -   expected_token, token_is_valid_True
         expected_token _ expected_token
         token_is_valid _ token_is_valid
-        is_valid_was_called _ False
+        is_valid_was_called _ F..
 
     ___ is_valid  token
-        is_valid_was_called _ True
-        __ not token __ expected_token:
+        is_valid_was_called _ T..
+        __ no. token __ expected_token:
             r_ Exception("This mock was given an unexpected argument. Expected {0} got {1}".f..(expected_token, token))
         r_ token_is_valid
 
 c_ SpySingleSignOnRegistry:
 
-    ___  -   accept_all_tokens _ True
+    ___  -   accept_all_tokens _ T..
         accept_all_tokens _ accept_all_tokens
         checked_tokens _ []
 
@@ -56,4 +56,4 @@ c_ SSOToken:
 
 ___ are_valid(credentials
     #check the credentials
-    r_ True
+    r_ T..

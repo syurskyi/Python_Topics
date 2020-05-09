@@ -38,7 +38,7 @@ real.method.return_value _ sentinel.some_object
 
 result _ real.method()
 
-a.. result is sentinel.some_object
+a.. result __ sentinel.some_object
 
 sentinel.some_object
 
@@ -115,11 +115,11 @@ kwargs
 
 # OUTPUT: '{'arg2': 'two', 'arg': 'one'}'
 
-args is kall[0]
+args __ kall[0]
 
 # OUTPUT: 'True'
 
-kwargs is kall[1]
+kwargs __ kall[1]
 
 # OUTPUT: 'True'
  
@@ -143,7 +143,7 @@ kwargs
 
 # OUTPUT: '{'arg2': 'three', 'arg': 'two'}'
 
-name is m.mock_calls[0][0]
+name __ m.mock_calls[0][0]
 
 # OUTPUT: 'True'
  

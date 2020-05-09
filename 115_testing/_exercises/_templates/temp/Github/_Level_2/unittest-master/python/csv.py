@@ -108,16 +108,16 @@ c_ ListIterator:
     ___ next
         __ cur < len(lst) -1:
             cur +_ 1
-            r_ True
+            r_ T..
         else:
-            r_ False
+            r_ F..
 
     ___ prev
         __ cur > 0:
             cur -_ 1
-            r_ True
+            r_ T..
         else:
-            r_ False
+            r_ F..
 
     ___ info
         r_ st.(get())

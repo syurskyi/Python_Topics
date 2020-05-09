@@ -35,9 +35,9 @@ ___ parse_phone_number(element
 		__ x.isdigit(
 			digits +_ x
 	__ len(digits) __ 10:
-		r_ True
+		r_ T..
 	else:
-		r_ False
+		r_ F..
 
 ___ format_phone_number(phone
 	'''output phone numbers in correct format'''
@@ -111,7 +111,7 @@ ___ parse_file(input_file
 		data_list _ split_line(line)
 		contact _ parse_lines(data_list)
 
-		__ contact is not None:
+		__ contact __ no. None:
 			entries.append(contact)
 		else:
 			errors.append(idx)

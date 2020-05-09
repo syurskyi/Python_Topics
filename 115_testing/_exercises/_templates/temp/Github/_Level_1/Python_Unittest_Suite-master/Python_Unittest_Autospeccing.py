@@ -89,7 +89,7 @@ ____ urllib ______ request
 patcher _ patch('__main__.request', autospec_True)
 mock_request _ patcher.start()
 
-request is mock_request
+request __ mock_request
 
 # OUTPUT: 'True'
 

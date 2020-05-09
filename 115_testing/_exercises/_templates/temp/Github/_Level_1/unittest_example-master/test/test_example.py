@@ -60,15 +60,15 @@ c_ TestClassExample?.?
     # Test cases
     ___ test_case01
         print(id())  # Print module, class and method name, to ease test output analysis
-        aE..(True, False)
+        aE..(T.., F..)
 
     ___ test_case02
         print(id())
-        aE..(True, True)
+        aE..(T.., T..)
 
     ___ test_case03
         print(id())
-        assertNotEqual(True, False)
+        assertNotEqual(T.., F..)
 
 __ __name__ __ '__main__':
     u__.main()

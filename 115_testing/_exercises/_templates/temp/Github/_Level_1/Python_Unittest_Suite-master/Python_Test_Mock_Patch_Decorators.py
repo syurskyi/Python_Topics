@@ -52,7 +52,7 @@ original _ SomeClass.attribute
      ___ test(
 
         ____ package.module ______ attribute
-          a.. attribute is sentinel.attribute
+          a.. attribute __ sentinel.attribute
 
      test()
  

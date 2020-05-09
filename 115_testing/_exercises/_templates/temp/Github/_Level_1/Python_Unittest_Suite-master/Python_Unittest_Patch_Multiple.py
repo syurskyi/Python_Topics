@@ -25,8 +25,8 @@ other _ object()
 @patch.multiple('__main__', thing_DEFAULT, other_DEFAULT)
 
     ___ test_function(thing, other
-        a.. isinstance(thing, MagicMock)
-        a.. isinstance(other, MagicMock)
+        a.. isi..(thing, MagicMock)
+        a.. isi..(other, MagicMock)
 
 test_function()
  
@@ -53,5 +53,5 @@ w__ patch.multiple('__main__', thing_DEFAULT, other_DEFAULT) __ values:
         a.. 'other' in repr(values['other'])
         a.. 'thing' in repr(values['thing'])
 
-        a.. values['thing'] is thing
-        a.. values['other'] is other
+        a.. values['thing'] __ thing
+        a.. values['other'] __ other

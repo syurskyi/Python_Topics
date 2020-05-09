@@ -9,4 +9,4 @@ ___ MyFunction(iterable
     :param iterable:
     :rtype: bool
     """
-    r_ isinstance(iterable, collections.Iterable)
+    r_ isi..(iterable, collections.Iterable)

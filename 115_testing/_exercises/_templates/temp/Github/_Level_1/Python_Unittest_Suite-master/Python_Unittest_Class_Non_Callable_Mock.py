@@ -24,13 +24,13 @@
 
 mock _ Mock(spec_SomeClass)
 
-isinstance(mock, SomeClass)
+isi..(mock, SomeClass)
 
 # OUTPUT: 'True'
 
 mock _ Mock(spec_set_SomeClass())
 
-isinstance(mock, SomeClass)
+isi..(mock, SomeClass)
 
 # OUTPUT: 'True'
 

@@ -44,17 +44,17 @@ mock.assert_called_with(Foo(1, 2))
 # 
 
 ___ compare  other
-        __ not type(self) __ type(other
+        __ no. type(self) __ type(other
 
-            r_ False
+            r_ F..
 
         __ a !_ other.a:
-            r_ False
+            r_ F..
 
         __ b !_ other.b:
-            r_ False
+            r_ F..
 
-      r_ True
+      r_ T..
 
 # 
 # And a matcher object that can use comparison functions like this for its equality operation would look something like this:

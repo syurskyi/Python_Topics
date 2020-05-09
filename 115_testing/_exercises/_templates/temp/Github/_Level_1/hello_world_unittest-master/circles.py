@@ -1,7 +1,7 @@
 ____ math ______ pi
 
 ___ circle_area(r
-    __ type(r) not in [int, float]:
+    __ type(r) no. in [int, float]:
         r_ TypeError("The radius must be a non-negative real number.")
 
     __ r < 0:

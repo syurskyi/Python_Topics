@@ -29,7 +29,7 @@ c_ Parser(
             allines +_ 1
             try:
                 L _ list(line.split('\t'))
-                L[index] __ True
+                L[index] __ T..
             except IndexError:
                 p..
             else:

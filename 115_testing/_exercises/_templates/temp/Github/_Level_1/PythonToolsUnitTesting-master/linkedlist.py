@@ -75,12 +75,12 @@ c_ LinkedList (object
 					
 				size -_ 1
 				#Confirmed that node  was removed
-				r_ True
+				r_ T..
 			else:
 				thisNode _ thisNode.getNextNode()
 		
 		#Could not find the specified data - nothing removed
-		r_ False
+		r_ F..
 		
 	___ findNode   dataSet
 		thisNode _ root

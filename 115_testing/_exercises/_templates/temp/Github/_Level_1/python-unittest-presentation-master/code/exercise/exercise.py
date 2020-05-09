@@ -1,11 +1,11 @@
 #/usr/bin/env python3
 
 
-____ random ______ randint
+____ ra__ ______ randint
 
 
 ___ foobar(arg_N..
-    r_ True
+    r_ T..
 
 
 ___ add(a, b

@@ -8,9 +8,9 @@ c_ HtmlPagesConverter:
         filename _ filename
         breaks _ [0]
         w__ o..(filename, "r", encoding_"UTF-8") __ f:
-            while True:
+            while T..:
                 line _ f.readline()
-                __ not line:
+                __ no. line:
                     break
                 line _ line.rstrip()
                 __ "PAGE_BREAK" in line:

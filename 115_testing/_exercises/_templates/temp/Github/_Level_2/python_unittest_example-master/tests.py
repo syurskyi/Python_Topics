@@ -65,11 +65,11 @@ c_ TestSplitLines?.?
 c_ TestParsePhoneNumber?.?
 	___ testFalse
 		aE..(
-			parse_phone_number('123-12-1234'), False)
+			parse_phone_number('123-12-1234'), F..)
 
 	___ testTrue
 		aE..(
-			parse_phone_number('123 456 7890'), True)
+			parse_phone_number('123 456 7890'), T..)
 
 c_ TestFormatPhoneNumber?.?
 	___ test

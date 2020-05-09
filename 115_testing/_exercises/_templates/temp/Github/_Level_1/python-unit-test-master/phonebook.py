@@ -18,5 +18,5 @@ c_ PhoneBook:
                     continue
                 # look at 2 numbers to make sure one doesnt start with the other
                 __ number1.startswith(number2
-                    r_ False
-        r_ True
+                    r_ F..
+        r_ T..

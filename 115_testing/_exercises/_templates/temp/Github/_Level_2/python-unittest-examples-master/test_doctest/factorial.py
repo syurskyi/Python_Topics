@@ -33,7 +33,7 @@ ___ factorial(n
     """
 
     ______ math
-    __ not n >_ 0:
+    __ no. n >_ 0:
         r_ V..("n must be >= 0")
     __ math.floor(n) !_ n:
         r_ V..("n must be exact integer")

@@ -10,7 +10,7 @@ c_ TestShapes?.?
 
     ___ test_type_check
         # Check type of the information entered and raise/catch error
-        assertRaises(TypeError, ShapesArea().value_check, True)
+        assertRaises(TypeError, ShapesArea().value_check, T..)
         assertRaises(TypeError, ShapesArea().value_check, "Text")
         assertRaises(TypeError, ShapesArea().value_check, 3+6j)
 

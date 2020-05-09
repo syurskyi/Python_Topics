@@ -1,5 +1,5 @@
 ____ base_api ______ BaseApi
-______ random
+______ ra__
 ______ xmltodict
 ______ requests
 
@@ -9,7 +9,7 @@ c_ TestGetIssuesInProject(BaseApi
     ___ test_get_issues_in_project
         projects_list _ _get_accessible_projects()
 
-        project_name _ random.choice(projects_list)
+        project_name _ ra__.ch..(projects_list)
 
         url _ base_url + '/issue/byproject/' + project_name
 
@@ -53,7 +53,7 @@ c_ TestGetIssuesInProject(BaseApi
     ___ test_get_issues_in_project_without_credentials
         projects_list _ _get_accessible_projects()
 
-        project_name _ random.choice(projects_list)
+        project_name _ ra__.ch..(projects_list)
 
         url _ base_url + '/issue/byproject/' + project_name
 

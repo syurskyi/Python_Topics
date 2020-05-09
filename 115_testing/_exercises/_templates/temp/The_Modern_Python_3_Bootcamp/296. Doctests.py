@@ -43,7 +43,7 @@ ___ true_that(
 	>>> true_that()
 	True
 	"""
-	r_ True
+	r_ T..
 
 # Order of keys in dicts matters in doctests
 ___ make_dict(keys
@@ -51,4 +51,4 @@ ___ make_dict(keys
 	>>> make_dict(['a','b'])
 	{'b': True, 'a': True}
 	"""
-	r_ {key: True for key in keys}
+	r_ {key: T.. for key in keys}

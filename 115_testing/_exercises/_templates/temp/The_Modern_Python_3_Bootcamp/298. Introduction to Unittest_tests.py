@@ -36,7 +36,7 @@ c_ ActivityTests?.?
         )
 
     ___ test_is_funny_tim
-        aE..(is_funny("tim"), False)
+        aE..(is_funny("tim"), F..)
 
     # self.assertFalse(is_funny("tim"), "tim should not be funny")
 

@@ -10,7 +10,7 @@ c_ ExampleTest?.?
     ___ test_foobar
 
         return_value _ e.foobar('barfoo')
-        aE..(True, return_value)
+        aE..(T.., return_value)
 
 
 __ __name__ __ '__main__':

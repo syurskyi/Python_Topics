@@ -17,6 +17,6 @@ ___ fizzbuzz(n, additional_rules_N..
     for divisor in sorted(rules.keys()):
      __ n % divisor __ 0:
          answer +_ rules[divisor]
-    __ not answer:
+    __ no. answer:
      answer _ st.(n)
     r_ answer

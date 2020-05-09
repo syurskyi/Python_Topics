@@ -10,11 +10,11 @@ ___ test_sum(
 
 ___ test_contains_numbers(
     input_str _ "el12lk3j5mnfadf"
-    a.. sample_functions.contains_numbers(input_str) __ True
+    a.. sample_functions.contains_numbers(input_str) __ T..
 
 ___ test_does_not_contain_numbers(
     input_str _ "lkqwjqlkjlkjed"
-    a.. sample_functions.contains_numbers(input_str) __ False
+    a.. sample_functions.contains_numbers(input_str) __ F..
 
 ___ test_div(
     num1 _ 10

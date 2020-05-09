@@ -5,7 +5,7 @@ c_ Calculator(object
     ___ add  x, y
         number_types _ (int, float, complex)
 
-        __ isinstance(x, number_types) and isinstance(y, number_types
+        __ isi..(x, number_types) and isi..(y, number_types
             print('X is: {}'.f..(x))
             print('Y is: {}'.f..(y))
             result _ x - y

@@ -44,7 +44,7 @@ dir(Mock(spec_request))
 
 ____ u__ ______ mock
 
-mock.FILTER_DIR _ False
+mock.FILTER_DIR _ F..
       dir(mock.Mock())
 
 # ...

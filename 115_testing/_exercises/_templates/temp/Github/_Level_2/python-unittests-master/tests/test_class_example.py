@@ -13,7 +13,7 @@ c_ BoardTest?.?
                     array.array('B', [9, 10, 11, 12]),
                     array.array('B', [13, 14, 15, 0])
                 ],
-                True  # output
+                T..  # output
             ),
             (
                 [  # input
@@ -22,7 +22,7 @@ c_ BoardTest?.?
                     array.array('B', [9, 10, 11, 12]),
                     array.array('B', [13, 14, 15, 0])
                 ],
-                False  # output
+                F..  # output
             ),
         ]
 

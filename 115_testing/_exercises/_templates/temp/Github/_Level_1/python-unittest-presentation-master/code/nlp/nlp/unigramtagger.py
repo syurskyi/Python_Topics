@@ -76,7 +76,7 @@ c_ UnigramTagger:
         :param tag: tag to add to the word
         """
 
-        __ word not in model:
+        __ word no. in model:
             model[word] _ Counter()
 
         model[word][tag] +_ 1

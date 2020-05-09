@@ -9,8 +9,8 @@ c_ Testing?.?
         aE..(a, b)
 
     ___ test_boolean
-        a _ True
-        b _ True
+        a _ T..
+        b _ T..
         aE..(a, b)
 
 __ __name__ __ '__main__':

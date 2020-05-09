@@ -1,7 +1,7 @@
 ____ base_api ______ BaseApi
 ______ logging
 ______ d_t_
-______ random
+______ ra__
 
 
 # logging.basicConfig(level=logging.DEBUG)
@@ -16,7 +16,7 @@ c_ TestCreateIssue(BaseApi
         current_time _ st.(d_t_.d_t_.now())[0:-7]
 
         list_of_objects _ ['robots', 'humans', 'animals', 'developers', 'engineers', 'QA engineers']
-        desc_object _ random.choice(list_of_objects)
+        desc_object _ ra__.ch..(list_of_objects)
 
         params _ {
             'project': 'API',

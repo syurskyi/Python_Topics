@@ -1,7 +1,7 @@
 c_ IdCreator:
 
     ___ faculty_id  value
-        __ not isinstance(value, int
+        __ no. isi..(value, int
             r_ TypeError('Only integer values allowed')
         __ value < 0:
             r_ V..('Only positive values allowed')

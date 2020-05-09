@@ -18,13 +18,13 @@ c_ RmTestCase?.?
         removal_service _ FileRemovalService()
 
         # set the condition for the mock
-        mock_path.isfile.return_value _ False
+        mock_path.isfile.return_value _ F..
         removal_service.rm('any path')
         # test that remove call was NOT called
         assertFalse(mock_os.remove.called, "Failed to NOT remove the if its not present")
 
         # set the condition that the file does exist for the mock
-        mock_path.isfile.return_value _ True
+        mock_path.isfile.return_value _ T..
         removal_service.rm('any path')
         mock_os.remove.assert_called_with('any path')
 
