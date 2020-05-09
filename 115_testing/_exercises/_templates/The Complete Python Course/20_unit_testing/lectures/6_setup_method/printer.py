@@ -3,14 +3,14 @@
 #
 #
 # c_ Printer
-#     ___ - ____ pages_per_s in. capacity in.
-#         p.. _ p...
-#         _c.. _ c..
+#     ___ -  pages_per_s in. capacity in.
+#         ? ?
+#         _? _ ?
 #
-#     ___ print ____ pages
-#         __ ? > ____._c...
+#     ___ print pages
+#         __ ? > _c...
 #             r___ P... Printer does not have enough capacity for all these pages.
 #
 #         _c... -_ p..
 #
-#         r_ _ Printed |pages pages in |pages/____.p... .2_| seconds.'
+#         r_ _*Printed |pages pages in |pages/.p...;.2_| seconds.'
