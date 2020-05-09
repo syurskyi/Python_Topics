@@ -4,20 +4,20 @@
 # f___ u__.mo.. _______ p...
 #
 #
-# c_ TestPageRequester T..
-#     ___ setUp ____
-#         ____.pa.. _ P_R_ https://google.com
+# c_ TestPageRequester ?
+#     ___ setUp
+#         pa.. _ P_R_ https://google.com
 #
-#     ___ test_make_request ____
+#     ___ test_make_request
 #         w___ pa.. requests.get a_ m._g.
-#             ____.pa__.ge_
+#             pa__.ge_
 #             mo.._ge_.a._c...
 #
-#     ___ test_content_returned ____
+#     ___ test_content_returned
 #         c_ FakeResponse:
-#             ___ - ____
-#                 ____.content _ 'Hello'
+#             ___ -
+#                 content _ 'Hello'
 #
 #         w___ pa.. requests.get, return_value _ F..Re.. a_ mo._ge.
-#             result _ ____.pa__.ge.
-#             ____.aE_ ? 'Hello'
+#             result _ pa__.ge.
+#             aE_ ? 'Hello'

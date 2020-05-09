@@ -7,4 +7,4 @@
 #         printer _ P_ pages_per_s=2.0, capacity=300
 #
 #     ___ test_print_within_capacity
-#         printer.print 25
+#         ?.print 25
