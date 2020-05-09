@@ -30,5 +30,5 @@ c_ TestGetIssue?.?
         assertEquals(r_dict['error'], 'Issue not found.')
         assertEquals(r.headers['Content-Type'], 'application/xml;charset=UTF-8')
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     ?.?

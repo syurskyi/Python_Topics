@@ -6,7 +6,7 @@ c_ GildedRose(object
         items _ items
 
     ___ update_quality
-        for item __ items:
+        ___ item __ items:
             __ item.name !_ "Aged Brie" an. item.name !_ "Backstage passes to a TAFKAL80ETC concert":
                 __ item.quality > 0:
                     __ item.name !_ "Sulfuras, Hand of Ragnaros":

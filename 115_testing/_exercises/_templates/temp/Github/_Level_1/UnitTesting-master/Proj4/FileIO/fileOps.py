@@ -3,21 +3,21 @@ outfile _ "outputfile.txt"
 
 # print each line, as read in
 w__ o..(infile) __ f1:
-    for line __ f1:
+    ___ line __ f1:
         print(line)
 
 print("\n**********************")
 
 # print each line, stripping last newline character
 w__ o..(infile) __ f1:
-    for line __ f1:
+    ___ line __ f1:
         print(line[:-1])
 
 print("\n**********************")
 
 # print first word (make) of each car
 w__ o..(infile) __ f1:
-    for line __ f1:
+    ___ line __ f1:
         row _ line.split(",")
         print(row[0])
 
@@ -25,10 +25,10 @@ print("\n**********************")
 
 # print each line as a formatted list
 w__ o..(infile) __ f1:
-    for line __ f1:
+    ___ line __ f1:
         row _ line.split(",")
         print(row[0] + "\n------------")
-        for i __ range(1, len(row)):
+        ___ i __ range(1, len(row)):
             print(row[i])
 
 print("\n**********************")
@@ -36,7 +36,7 @@ print("\n**********************")
 # add each line to a list
 cars _ list()
 w__ o..(infile) __ f1:
-    for line __ f1:
+    ___ line __ f1:
         row _ line.split(",")
         cars.a..(row)
     print(cars[0][0])
@@ -45,10 +45,10 @@ print("\n**********************")
 
 # write makes only to outputfile
 w__ o..(outfile, 'a') __ f2:
-    for car __ cars:
+    ___ car __ cars:
         f2.write(car[0] + "\n")
 
 # print out whole line to file
 w__ o..(outfile, 'a') __ f2:
-    for car __ cars:
+    ___ car __ cars:
         f2.write(st.(car) + "\n")

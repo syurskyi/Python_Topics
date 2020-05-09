@@ -23,5 +23,5 @@ c_ TddInPythonExample?.?
         aR..(V.., calc.add, 2, 'three')
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     ?.?

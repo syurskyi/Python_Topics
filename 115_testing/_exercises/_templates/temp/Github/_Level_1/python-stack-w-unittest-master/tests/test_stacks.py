@@ -93,5 +93,5 @@ c_ StackTestCase?.?
         test_obj.push(test_data9)
         aE..(10, test_obj.size())
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     ?.?

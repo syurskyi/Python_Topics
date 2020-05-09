@@ -33,6 +33,6 @@ c_ TestCalc?.?
     ___ test_fsum_method
         aE..(sum([1.1, 2.2],4.4))
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     ?.?
 

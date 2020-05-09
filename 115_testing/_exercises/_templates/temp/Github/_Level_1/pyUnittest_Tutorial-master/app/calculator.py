@@ -3,7 +3,7 @@ c_ Calculator(object
     """docstring for Calculator"""
 
     ___ add  x, y
-        number_types _ (int, float, complex)
+        number_types _ (in., float, complex)
 
         __ isi..(x, number_types) an. isi..(y, number_types
             print('X is: {}'.f..(x))

@@ -21,7 +21,7 @@ c_ Employee:
         r_ '{} {}'.f..(first, last)
 
     ___ apply_raise
-        pay _ int(pay * raise_amt)
+        pay _ in.(pay * raise_amt)
 
     ___ monthly_schedule  month
         response _ requests.get(f'http://company.com/{last}/{month}')

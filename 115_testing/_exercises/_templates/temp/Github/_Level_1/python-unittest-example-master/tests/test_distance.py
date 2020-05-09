@@ -20,5 +20,5 @@ c_ TestDistance?.?
         aE..(0, dist.distance3d([0, 0, 0], [0, 0, 0]))
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     ?.?

@@ -29,7 +29,7 @@ c_ Product:
     # initialisation
     ___  -   year, geo, guid, category, commodity
         id _ 0
-        year _ int(year)
+        year _ in.(year)
         geo _ geo
         guid _ guid
         category _ category
@@ -45,7 +45,7 @@ ___ read_csv(file_name
     try:
         w__ o..(file_name, newline_'', encoding_'utf-8') __ csvfile:
             reader _ csv.DictReader(csvfile)
-            for row __ reader:
+            ___ row __ reader:
                 product _ Product(1960, row['GEO'], row['DGUID'], row['Food categories'], row['Commodity'])
                 print (product)
                 lst.a..(product)
@@ -55,5 +55,5 @@ ___ read_csv(file_name
 
     r_ lst
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     ?.?

@@ -5,7 +5,7 @@ ___ sortingPositives (l
     and sorts the positive elements.
     '''
     positive _ []
-    for i __ l:
+    ___ i __ l:
         __ i >_ 0:
             positive.a..(i)
     r_ sorted(positive)
@@ -25,5 +25,5 @@ c_ TestingSortingPositives?.?
         aE..(sortingPositives([-3, -1, -9, -8]), [])
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     ?.?

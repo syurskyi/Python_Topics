@@ -26,7 +26,7 @@
 
 mock _ MagicMock()
 
-int(mock)
+in.(mock)
 
 # OUTPUT: '1'
 

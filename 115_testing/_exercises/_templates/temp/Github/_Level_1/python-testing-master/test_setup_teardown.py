@@ -20,5 +20,5 @@ c_ TestSetUpAndTearDown(TestCase
 
 
 # build in main method to run all tests in this class
-__ __name__ __ '__main__':
+__ _____ __ _____
     ?.?

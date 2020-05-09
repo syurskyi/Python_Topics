@@ -58,14 +58,14 @@ aE..(the_exception.error_code, 3)
 # 
 
 assertRaisesRegex(V.., "invalid literal for.*XYZ'$",
-                       int, 'XYZ')
+                       in., 'XYZ')
 
 # 
 # or:
 # 
 
 w__ assertRaisesRegex(V.., 'literal'
-   int('XYZ')
+   in.('XYZ')
 
 #
 # assertWarns(warning, callable, *args, **kwds) assertWarns(warning, *, msg=None):

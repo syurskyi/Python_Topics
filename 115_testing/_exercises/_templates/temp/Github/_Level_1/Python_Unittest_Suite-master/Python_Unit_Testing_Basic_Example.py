@@ -51,7 +51,7 @@ c_ TestStringMethods?.?
         w__ aR..(TypeError
             s.split(2)
 
-__ __name__ __ '__main__':
+__ _____ __ _____
 
     ?.?
 

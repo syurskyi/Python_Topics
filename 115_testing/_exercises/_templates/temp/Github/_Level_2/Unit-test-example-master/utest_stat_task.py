@@ -126,9 +126,9 @@ c_ StatisticsTest?.?
 
     ___ setUp
         """Set up for test"""
-        data1 _ (x for x __ range(1, 1001))
-        data2 _ (x for x __ range(1, 50032, 5))
-        data3 _ (x for x __ range(1, 56, 6))
+        data1 _ (x ___ x __ range(1, 1001))
+        data2 _ (x ___ x __ range(1, 50032, 5))
+        data3 _ (x ___ x __ range(1, 56, 6))
 
         stat1 _ Statistics(data1)
         stat2 _ Statistics(data2)
@@ -223,5 +223,5 @@ c_ StatsResultTest?.?
             'Order2': [(50, 75), (200, 300)]})
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
    ?.?

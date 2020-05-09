@@ -76,9 +76,9 @@ c_ RequestsFunctionTests?.?
         hrefs _ get_hrefs_from_url('some url')
         good_search_string _ 'google'
         bad_search_string _ 'bad'
-        aT..(any(good_search_string __ t for t __ hrefs),
+        aT..(any(good_search_string __ t ___ t __ hrefs),
                         'string {0} not found in list elements'.f..(good_search_string))
-        assertFalse(any(bad_search_string __ t for t __ hrefs),
+        assertFalse(any(bad_search_string __ t ___ t __ hrefs),
                          'found string "{0}" in list element when should NOT have been found'.f..(bad_search_string))
 
 
@@ -93,7 +93,7 @@ c_ RequestsFunctionTests?.?
         yahoo_fqdn_list _ filter_hrefs_by_text(href_list, 'www.yahoo.com')
         filtered_lists _ [yahoo_list, yahoo_fqdn_list, google_list, google_fqdn_list]
         # test the filter results
-        for fl __ filtered_lists:
+        ___ fl __ filtered_lists:
             aT..(len(fl), 1)
 
 __ _____ __ ______

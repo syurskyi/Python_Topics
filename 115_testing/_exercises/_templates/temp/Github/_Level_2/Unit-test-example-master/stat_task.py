@@ -25,7 +25,7 @@ c_ Parser(
         qty _ 0
         allines _ 0
 
-        for line __ fileobj:
+        ___ line __ fileobj:
             allines +_ 1
             try:
                 L _ list(line.split('\t'))
@@ -50,7 +50,7 @@ c_ Parser(
         """
         number _ []
 
-        for head __ heads:
+        ___ head __ heads:
             __ head __ source[0]:
                 number.a..(source[0].index(head))
 
@@ -65,11 +65,11 @@ c_ Parser(
         :return: None
         """
         linecount _ 0
-        for elem __ listobj:
+        ___ elem __ listobj:
             linecount +_ 1
-            for num __ index:
+            ___ num __ index:
                 try:
-                    elem[num] _ int(elem[num])
+                    elem[num] _ in.(elem[num])
                 except (TypeError, V..
                     print('Неверный формат в ' + st.(num+1) + ' столбце, в ' +\
                           st.(linecount) + ' строке данных.')
@@ -86,7 +86,7 @@ c_ Parser(
         """
         keyname _ []
 
-        for elem __ source:
+        ___ elem __ source:
             __ elem[index] __ keyname:
                 p..
             else:
@@ -107,20 +107,20 @@ c_ Parser(
         """
 
         SOURCE _ data_extr(fileobj, index)
-        head_list _ [head for head __ heads]
+        head_list _ [head ___ head __ heads]
         data_pos _ check_pos(SOURCE, *head_list)
 
         SOURCE _ SOURCE[1:]
         int_converter(SOURCE, *data_pos[1:])
         keyname _ key_names(SOURCE, data_pos[0])
 
-        DATAS _ {name: [] for name __ keyname}
+        DATAS _ {name: [] ___ name __ keyname}
 
-        for name __ keyname:
-            for num __ data_pos[1:]:
+        ___ name __ keyname:
+            ___ num __ data_pos[1:]:
                 DATAS[name].a..( \
                     tuple( \
-                        sorted([x[num] for x __ SOURCE __ x[data_pos[0]] __ name])))
+                        sorted([x[num] ___ x __ SOURCE __ x[data_pos[0]] __ name])))
 
         r_ DATAS
 
@@ -251,21 +251,21 @@ c_ Statistics:
         :param denom: integer - число, при делении данных на которое остаток 0.
         :return: {int: [int, float, float]}
         """
-        rdata _ [(x - x% -denom) for x __ data]
+        rdata _ [(x - x% -denom) ___ x __ data]
         lendata _ len(rdata)
-        fdict _ {number: [0] for number __ sorted(set(rdata))}
+        fdict _ {number: [0] ___ number __ sorted(set(rdata))}
 
-        for number __ rdata:
+        ___ number __ rdata:
                 fdict[number][0] +_ 1
 
-        for key __ fdict:
+        ___ key __ fdict:
             fdict[key].a..(f..(fdict[key][0] / lendata * 100, '.2f'))
 
-        rkeys _ list(reversed([x for x __ fdict.keys()]))
+        rkeys _ list(reversed([x ___ x __ fdict.keys()]))
 
         while rkeys:
             sum _ 0
-            for key __ rkeys:
+            ___ key __ rkeys:
                 sum +_ fdict[key][0]
             fdict[rkeys[0]].a..(f..(sum / lendata * 100, '.2f'))
             rkeys _ rkeys[1:]
@@ -291,16 +291,16 @@ c_ StatsResult(Statistics
 
         D _ {}
 
-        for key __ datas:
+        ___ key __ datas:
             D[key] _ []
-            for data __ datas[key]:
+            ___ data __ datas[key]:
                 data _ tuple(sorted(data)) # for not sorted Source_data
-                D[key].a..(tuple(x() for x __ list_funcs))
+                D[key].a..(tuple(x() ___ x __ list_funcs))
 
         r_ D
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
 
     argparser _ argparse.ArgumentParser()
     argparser.add_argument('-f', '--file')
@@ -315,7 +315,7 @@ __ __name__ __ '__main__':
     stdata _ stat.run(*list_funcs)
 
     w__ o..('result_stat.txt',_ __ file:
-        for key __ stdata.keys(
+        ___ key __ stdata.keys(
             print(key, 'min=' + st.(stdata[key][0][0]),
                   '50%=' + st.(stdata[key][0][1]),
                   '90%=' + st.(stdata[key][0][2]),
@@ -326,7 +326,7 @@ __ __name__ __ '__main__':
             print('', 'ExecTime', 'TransNo', 'Weight,%', 'Percent',
                   sep_'\t', end_'\n', file_file)
 
-            for timekey __ stdata[key][0][5]:
+            ___ timekey __ stdata[key][0][5]:
                 print('', timekey,
                       stdata[key][0][5][timekey][0],
                       stdata[key][0][5][timekey][1],

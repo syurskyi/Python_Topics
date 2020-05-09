@@ -111,7 +111,7 @@ c_ TestUnittest?.?
         w__ aR..(Exception
             widget.raise_exception()
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     ?.?
 # Do not use the following way to trigger unit testing if you wanna use
 # nosetests as the test runner.

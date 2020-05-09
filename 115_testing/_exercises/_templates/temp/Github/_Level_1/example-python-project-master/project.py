@@ -1,2 +1,2 @@
-___ sum(a: int, b: int) -> int :
-	r_ a + b;
+# ___ sum a in., b in.  in.
+# 	r_ ? ?

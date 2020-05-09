@@ -67,7 +67,7 @@ This will allow you to run the test using:
 """
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
 	?.?
 
 """

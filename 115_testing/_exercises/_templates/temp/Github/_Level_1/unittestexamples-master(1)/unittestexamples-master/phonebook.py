@@ -10,8 +10,8 @@ c_ PhoneBook:
         r_ numbers[name]
 
     ___ is_consistent
-        for name1, number1 __ numbers.items(
-            for name2, number2 __ numbers.items(
+        ___ name1, number1 __ numbers.items(
+            ___ name2, number2 __ numbers.items(
                 __ name1 __ name2:
                     __ number1 __ number2:
                         continue

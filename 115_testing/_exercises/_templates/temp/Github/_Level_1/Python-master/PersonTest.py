@@ -19,7 +19,7 @@ c_ Test?.?
         """
         Any method which starts with ``test_`` will considered as a test case.
         """
-        for i __ range(4
+        ___ i __ range(4
             # initialize a name
             name _ 'name' + st.(i)
             # store the name into the list variable
@@ -45,7 +45,7 @@ c_ Test?.?
         length _ len(user_id)  # total number of stored user information
         print("user_id length = ", length)
         print("user_name length = ", len(user_name))
-        for i __ range(6
+        ___ i __ range(6
             # if i not exceed total length then verify the returned name
             __ i < length:
                 # if the two name not matches it will fail the test case
@@ -57,6 +57,6 @@ c_ Test?.?
         print("\nFinish get_name test\n")
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     # begin the unittest.main()
     ?.?

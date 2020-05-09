@@ -33,7 +33,7 @@ c_ TestUpdateIssue(BaseApi
         assert_for_status_code_and_content_type(r, 200)
 
         aE..(response_dict['issue']['@id'], issue_id)
-        for field __ response_dict['issue']['field']:
+        ___ field __ response_dict['issue']['field']:
             __ field['@name'] __ 'summary':
                 aE..(field['value'], issue_summary)
             __ field['@name'] __ 'description':

@@ -32,5 +32,5 @@ c_ DerivedTestClassB?.?, BaseTestClass
         aE..(45, 45)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     ?.?

@@ -20,9 +20,9 @@ print("# Primes = ", len(prime_numbers))
 print("# Squares = ", len(perfect_squares))
 
 # Iterate over both sequences
-for p __ prime_numbers:
+___ p __ prime_numbers:
     print("Prime: ", p)
-for n __ perfect_squares:
+___ n __ perfect_squares:
     print("Square: ", n)
 
 print("")

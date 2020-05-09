@@ -14,7 +14,7 @@ ___ numwords(text
 
     Punctuation and word casing are ignored.
     '''
-    words _ set(_normalize(fragment) for fragment __ text.split())
+    words _ set(_normalize(fragment) ___ fragment __ text.split())
     words.discard("")
     r_ len(words)
 
@@ -24,8 +24,8 @@ ___ wordcounts(text
 
     Case is ignored, so each key is the lowercase version of the word.
     '''
-    counts _ defaultdict(int)
-    for fragment __ text.split(
+    counts _ defaultdict(in.)
+    ___ fragment __ text.split(
         word _ _normalize(fragment)
         __ word __ '':
             continue
@@ -49,6 +49,6 @@ ___ addcounts(existing, new
         r_ V..('existing must be a dictionary')
     __ no. type(new) __ dict:
         r_ V..('new must be a dictionary')
-    for word, count __ new.viewitems(
+    ___ word, count __ new.viewitems(
         newcount _ count + existing.get(word, 0)
         existing[word] _ newcount

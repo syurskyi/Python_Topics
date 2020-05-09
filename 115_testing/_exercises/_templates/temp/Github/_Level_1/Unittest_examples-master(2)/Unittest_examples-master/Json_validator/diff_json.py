@@ -50,7 +50,7 @@ c_ JsonDiffHandler(object
 
         # Если проверяемая секция эталонного json словарь
         __ isi..(first_json, dict
-            for key __ first_json:
+            ___ key __ first_json:
                 # Формирование вложенности секции через точку
                 __ len(pa__) __ 0:
                     new_path _ key
@@ -75,7 +75,7 @@ c_ JsonDiffHandler(object
 
         # Если проверяемая секция эталонного json список
         elif isi..(first_json, list
-            for (index, item) __ enumerate(first_json
+            ___ (index, item) __ enumerate(first_json
                 new_path _ "%s[%s]" % (pa__, index)
                 sec _ None
                 __ second_json __ no. None:
@@ -111,17 +111,17 @@ ___ assert_json(test_json, ethalon_json
     diff2 _ JsonDiffHandler(ethalon_json, test_json, F..).difference
     diffs _ []
     # Обработка типов сообщений и их содержимого, формирование результата
-    for type, message __ diff1:
+    ___ type, message __ diff1:
         newType _ 'CHANGED_VALUE'
         __ type __ PATH:
             newType _ 'REMOVED_SECTION'
         diffs.a..({'type': newType, 'message': message})
-    for type, message __ diff2:
+    ___ type, message __ diff2:
         diffs.a..({'type': 'ADDED_SECTION', 'message': message})
     r_ diffs
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     w__ o..(ETHALON_JSON) __ ethalon_json, \
             o..(TEST_JSON) __ test_json:
         diff_res _ assert_json(ethalon_json.read(), test_json.read())
@@ -129,5 +129,5 @@ __ __name__ __ '__main__':
             print '\r\nFound differences between two ' \
                   'files:\r\n{0},\r\n{1}\r\n'.f..(TEST_JSON, ETHALON_JSON)
             print "+++" * 30
-        for diff __ diff_res:
+        ___ diff __ diff_res:
             print diff['type'] + ': ' + diff['message']

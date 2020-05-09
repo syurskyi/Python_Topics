@@ -24,5 +24,5 @@ c_ Internect?.?
         print("Close Application")
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     ?.?

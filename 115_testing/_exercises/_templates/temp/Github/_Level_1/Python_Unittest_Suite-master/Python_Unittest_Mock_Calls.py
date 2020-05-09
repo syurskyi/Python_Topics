@@ -29,7 +29,7 @@ mock.second()
 
 # OUTPUT: '<MagicMock name='mock.second()' id='...'>'
 
-int(mock)
+in.(mock)
 
 # OUTPUT: '1'
 

@@ -16,7 +16,7 @@ c_ Internet?.?
         Links _ driver.find_elements(By.TAG_NAME, "a")
         print("Total Number of Links", len(Links))
 
-        for morelinks __ Links:
+        ___ morelinks __ Links:
             print(morelinks.text)
 
     ??
@@ -25,5 +25,5 @@ c_ Internet?.?
         print("Close Application")
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     ?.?

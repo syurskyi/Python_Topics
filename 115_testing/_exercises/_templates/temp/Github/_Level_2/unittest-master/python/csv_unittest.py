@@ -60,8 +60,8 @@ c_ Database:
         db.query(query)
         r _ db.store_result()
         product _ Product()
-        for i __ r.fetch_row(maxrows_1
-            product.id _ int(i[0])
+        ___ i __ r.fetch_row(maxrows_1
+            product.id _ in.(i[0])
             product.geo _ i[1]
             product.guid _ i[2]
             product.category _ i[3]
@@ -102,7 +102,7 @@ c_ List:
 
     ___ sort
         lst _ sorted(lst, key_cmpFn)
-        lstguid _ [obj.guid for obj __ lst ]
+        lstguid _ [obj.guid ___ obj __ lst ]
 
     ___ find  guid
         r_ bisect.bisect_left(lstguid, guid)
@@ -168,7 +168,7 @@ ___ read_csv(file_name
     try:
         w__ o..(file_name, newline_'', encoding_'utf-8') __ csvfile:
             reader _ csv.DictReader(csvfile)
-            for row __ reader:
+            ___ row __ reader:
                 product _ Product(row['GEO'], row['DGUID'], row['Food categories'], row['Commodity'])
                 # print (product)
                 lst.a..(product)
@@ -185,10 +185,10 @@ ___ main(
     db _ Database()
     db.select_table('products')
 
-    for item __ lst:
+    ___ item __ lst:
         p..
         db.create(item)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     ?.?

@@ -35,7 +35,7 @@ test_cases _ (TestCase1, TestCase2, TestCase3)
 ___ load_tests(loader, tests, pattern
     suite _ TestSuite()
 
-    for test_class __ test_cases:
+    ___ test_class __ test_cases:
         tests _ loader.loadTestsFromTestCase(test_class)
 
         suite.addTests(tests)

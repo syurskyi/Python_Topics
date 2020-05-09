@@ -20,6 +20,6 @@ c_ SingleNodeInsertionTest?.?
         #check if node exists
         aE..(newList.findNode(10), 10)
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     u__.main(verbosity_2)
 

@@ -25,11 +25,11 @@
 # 
 
 a.py
-    -> Defines SomeClass
+     Defines SomeClass
 
 b.py
-    -> ____ a ______ SomeClass
-    -> some_function instantiates SomeClass
+     ____ a ______ SomeClass
+     some_function instantiates SomeClass
 
 #
 # The key is to patch out SomeClass where it is used (or where it is looked up).

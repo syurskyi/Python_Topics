@@ -28,14 +28,14 @@
 # The simplest use for this function is to include the following line at the end of a test script:
 # 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     ?.?
 
 # 
 # You can run tests with more detailed information by passing in the verbosity argument:
 # 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     u__.main(verbosity_2)
 
 #

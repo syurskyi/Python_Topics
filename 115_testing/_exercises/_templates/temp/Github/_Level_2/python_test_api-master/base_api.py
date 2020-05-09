@@ -54,7 +54,7 @@ c_ BaseApi?.?
 
         response_dict _ xmltodict.parse(r.text)
 
-        projects_list _ [p['@shortName'] for p __ response_dict['projects']['project']]
+        projects_list _ [p['@shortName'] ___ p __ response_dict['projects']['project']]
 
         r_ projects_list
 
@@ -86,7 +86,7 @@ c_ BaseApi?.?
         print('{}\n{}\n{}\n\n{}'.f..(
             '-----------REQUEST-----------',
             req.method + ' ' + req.url,
-            '\n'.join('{}: {}'.f..(k, v) for k, v __ req.headers.items()),
+            '\n'.join('{}: {}'.f..(k, v) ___ k, v __ req.headers.items()),
             req.body,
         ))
 
@@ -95,7 +95,7 @@ c_ BaseApi?.?
         print('{}\n{}\n{}\n\n{}'.f..(
             '-----------RESPONSE-----------',
             r.status_code,
-            '\n'.join('{}: {}'.f..(k, v) for k, v __ r.headers.items()),
+            '\n'.join('{}: {}'.f..(k, v) ___ k, v __ r.headers.items()),
             r.text,
         ))
         print ''
@@ -145,7 +145,7 @@ c_ BaseApi?.?
             number_of_errors _ len(schema.error_log)
             # print number_of_errors
             __ number_of_errors > 0:
-                for error __ schema.error_log:
+                ___ error __ schema.error_log:
                     # All the error properties (from libxml2) describing what went wrong
                     print 'domain_name: ' + error.domain_name
                     print 'domain: ' + st.(error.domain)

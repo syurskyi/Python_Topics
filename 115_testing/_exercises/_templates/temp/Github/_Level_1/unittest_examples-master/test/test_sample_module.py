@@ -16,7 +16,7 @@ c_ Testadd2num:
 
 a _ {'a':1, 'b':2}
 
-for k,v __ a.items(
+___ k,v __ a.items(
 	print(k)
 	print(v)
 

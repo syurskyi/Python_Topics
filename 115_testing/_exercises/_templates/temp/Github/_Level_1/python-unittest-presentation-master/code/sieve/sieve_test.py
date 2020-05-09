@@ -18,5 +18,5 @@ c_ SieveTest?.?
         aE..(expect_return_value, actual_return_value)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
         ?.?

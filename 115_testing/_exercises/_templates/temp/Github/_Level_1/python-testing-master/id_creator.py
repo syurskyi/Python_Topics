@@ -1,7 +1,7 @@
 c_ IdCreator:
 
     ___ faculty_id  value
-        __ no. isi..(value, int
+        __ no. isi..(value, in.
             r_ TypeError('Only integer values allowed')
         __ value < 0:
             r_ V..('Only positive values allowed')
@@ -12,7 +12,7 @@ c_ IdCreator:
 
 
 # Testing without using a framework
-__ __name__ __ '__main__':
+__ _____ __ _____
     creator _ IdCreator()
     a.. creator.faculty_id(0) __ 1
     a.. creator.faculty_id(3) __ 6

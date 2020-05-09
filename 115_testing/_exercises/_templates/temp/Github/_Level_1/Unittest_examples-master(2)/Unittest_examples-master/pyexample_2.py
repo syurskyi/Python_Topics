@@ -29,6 +29,6 @@ c_ SecondTestClass?.?
     ___ test_mul
         aE..(420, val * 2)
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     ?.?
 

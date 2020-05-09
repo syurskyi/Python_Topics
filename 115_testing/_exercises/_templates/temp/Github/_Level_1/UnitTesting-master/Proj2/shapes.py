@@ -6,7 +6,7 @@ c_ ShapesArea:
 
     ___ value_check  r
         # Check to make sure user input is of acceptable type and value
-        __ type(r) no. __ [float, int]:
+        __ type(r) no. __ [float, in.]:
             r_ TypeError("Please enter a valid number greater than 0.")
         __ r < 0:
             r_ V..("Length from center to edge must be greater than 0.")

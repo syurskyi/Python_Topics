@@ -10,10 +10,10 @@ ___ sieve_of_eratosthenes(n
     A[0] _ F..
     A[1] _ F..
 
-    for i, isprime __ enumerate(A
+    ___ i, isprime __ enumerate(A
 
         __ isprime:
             yield i
 
-            for x __ range(i * i, n, i
+            ___ x __ range(i * i, n, i
                 A[x] _ F..

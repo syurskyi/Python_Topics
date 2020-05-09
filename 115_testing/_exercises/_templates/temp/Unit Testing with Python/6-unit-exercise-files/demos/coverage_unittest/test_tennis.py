@@ -41,8 +41,8 @@ c_ TennisTest?.?
         aE..(expected_score, tennis_score(player1_points, player2_points))
 
 
-for behaviour, test_cases __ test_case_data.items(
-    for tennis_test_case_data __ test_cases:
+___ behaviour, test_cases __ test_case_data.items(
+    ___ tennis_test_case_data __ test_cases:
         expected_output, player1_score, player2_score _ tennis_test_case_data
         test_name _ "test_{0}_{1}_{2}".f..(behaviour, player1_score, player2_score)
         tennis_test_case _ tennis_test_template(*tennis_test_case_data)

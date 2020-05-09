@@ -13,7 +13,7 @@ c_ Node:
 c_ NodeList:
     ___  -   values_N..
         node_head _ None
-        for value __ values:
+        ___ value __ values:
             add_node(value)
 
     ___ add_node  value
@@ -35,7 +35,7 @@ c_ NodeList:
         checked_node _ node_head
         previous_node _ None
         found _ T..
-        for count __ range(position
+        ___ count __ range(position
             previous_node _ checked_node
             checked_node _ checked_node.get_next_node()
             __(checked_node __ None
@@ -47,7 +47,7 @@ c_ NodeList:
     ___ get_node_value  position
         checked_node _ node_head
         found _ T..
-        for count __ range(position
+        ___ count __ range(position
             checked_node _ checked_node.get_next_node()
             __(checked_node __ None
                 found _ F..

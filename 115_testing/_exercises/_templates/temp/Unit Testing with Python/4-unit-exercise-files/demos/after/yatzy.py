@@ -44,7 +44,7 @@ ___ dice_counts(dice
         ...
     TypeError: Can't convert 'int' object to str implicitly
     """
-    r_ {x: dice.count(x) for x __ range(1, 7)}
+    r_ {x: dice.count(x) ___ x __ range(1, 7)}
          
 ___ yatzy(dice
     """Score the given roll in the 'Yatzy' category
@@ -99,6 +99,6 @@ ___ scores_in_categories(dice, categories_ALL_CATEGORIES
     [(8, 'full_house'), (6, 'twos'), (2, 'ones')]
     """
     scores _ [(category(dice), category) 
-                for category __ categories
+                ___ category __ categories
                     __ category(dice) > 0]
     r_ sorted(scores, reverse_True, key_itemgetter(0))

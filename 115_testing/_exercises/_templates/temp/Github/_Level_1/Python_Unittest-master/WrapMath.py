@@ -42,7 +42,7 @@ c_ test_c_lib?.?
             print("Result of divide is ", result)
             aE..(10.0, result)
 			
-__ __name__ __ '__main__':
+__ _____ __ _____
     u__.main(verbosity_2)
 
     

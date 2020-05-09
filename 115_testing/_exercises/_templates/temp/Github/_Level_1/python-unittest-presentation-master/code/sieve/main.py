@@ -26,7 +26,7 @@ ___ test_assert_fail(
 
 ___ main(
 
-    option _ int(sys.argv[1])
+    option _ in.(sys.argv[1])
 
     __ option __ 1:
         print('Manual Test:')

@@ -54,5 +54,5 @@ c_ TestUnittestMethods?.?
         """
         failUnlessAlmostEqual(1.1, 3.3 - 2.0, places_0)
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     ?.?

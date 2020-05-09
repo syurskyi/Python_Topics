@@ -6,7 +6,7 @@ ____ phonebook ______ PhoneBook
 c_ PhoneBookTest?.?
 
     # setUp method is inherited from TestCase super class and called BEFORE each test method
-    ___ setUp(self) -> None:
+    ___ setUp(self)  None:
         # construct a new phonebook instance before each test case executes
         phonebook _ PhoneBook()
 

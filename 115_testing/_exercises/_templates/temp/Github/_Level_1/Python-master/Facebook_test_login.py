@@ -52,5 +52,5 @@ c_ PruebaLoginBusqueda?.?
         time.sleep(5.0)
         driver.close()
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     ?.?

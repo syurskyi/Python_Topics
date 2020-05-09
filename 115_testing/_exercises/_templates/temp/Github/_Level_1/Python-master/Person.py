@@ -13,7 +13,7 @@ c_ Person:
             r_ name[user_id]
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     person _ Person()
     print('User Abbas has been added with id ', person.set_name('Abbas'))
     print('User associated with id 0 is ', person.get_name(0))

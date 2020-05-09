@@ -14,11 +14,11 @@ c_ Links?.?
         driver.find_element_by_link_text("Add/Remove Elements").click()
         add _ driver.find_element_by_xpath("//button[text()='Add Element']")
 
-        for i __ range(1, 5
+        ___ i __ range(1, 5
             add.click()
 
         Delete _ driver.find_elements_by_xpath("//div[@id='elements']/button")
-        for d __ Delete:
+        ___ d __ Delete:
             d.click()
 
     ??
@@ -27,5 +27,5 @@ c_ Links?.?
         print("Close Application")
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     ?.?

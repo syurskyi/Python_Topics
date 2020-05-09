@@ -114,7 +114,7 @@ ___ suite(
 
     r_ suite
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     runner _ u__.TextTestRunner()
 
     runner.run(suite())

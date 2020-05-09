@@ -7,5 +7,5 @@ c_ TestBar?.?
     ___ test_bar
         aE..(bar.bar(),'bar')
         
-__ __name__ __ '__main__':
+__ _____ __ _____
     ?.?
