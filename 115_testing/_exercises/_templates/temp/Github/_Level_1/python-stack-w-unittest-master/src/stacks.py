@@ -11,7 +11,7 @@ c_ Stack(object
         stack.append(data)
 
     ___ pop
-        if is_empty(
+        __ is_empty(
             r_ None
 
         data _ stack[-1]
@@ -19,7 +19,7 @@ c_ Stack(object
         r_ data
 
     ___ peek
-        if is_empty(
+        __ is_empty(
             r_ None
 
         r_ stack[-1]

@@ -1,5 +1,5 @@
 ____ django.contrib ______ admin
-____ django.urls ______ path, include
+____ django.urls ______ pa__, include
 
 ____ issues.views ______ IssueModelViewSet, AuthView
 
@@ -10,6 +10,6 @@ router.register('issues', IssueModelViewSet, base_name_'issues')
 router.register('auth', AuthView, base_name_'auth')
 
 urlpatterns _ [
-    path('admin/', admin.site.urls),
-    path('api/', include(router.get_urls())),
+    pa__('admin/', admin.site.urls),
+    pa__('api/', include(router.get_urls())),
 ]

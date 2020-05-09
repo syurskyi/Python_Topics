@@ -24,7 +24,7 @@ c_ Student:
     ___ mylinkedin  country
         r _ requests.get(f'https://www.linkedin.com/{country}/{code()}')
 
-        if r.ok:
+        __ r.ok:
             r_ r.text
         else:
             r_ 'Bad Response!'

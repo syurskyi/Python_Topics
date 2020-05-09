@@ -18,13 +18,13 @@ c_ TelemetryDiagnosticControls:
             telemetry_client.connect(address)
             retryLeft -_ 1
 
-        if not telemetry_client.online_status:
+        __ not telemetry_client.online_status:
             raise Exception("Unable to connect.")
         r_ telemetry_client
 
     ___ fetch_diagnostic_info  connected_client
         connected_client.send(TelemetryClient.DIAGNOSTIC_MESSAGE)
-        if not telemetry_client.online_status:
+        __ not telemetry_client.online_status:
             raise Exception("Unable to connect.")
         r_ connected_client.receive()
 
@@ -38,7 +38,7 @@ c_ TelemetryClient(object
         _diagnostic_message_result _ ""
 
     ___ connect  telemetry_server_connection_string
-        if not telemetry_server_connection_string:
+        __ not telemetry_server_connection_string:
             raise Exception()
 
         # simulate the operation on a real modem
@@ -49,10 +49,10 @@ c_ TelemetryClient(object
         online_status _ False
 
     ___ send  message
-        if not message:
+        __ not message:
             raise Exception()
 
-        if message == TelemetryClient.DIAGNOSTIC_MESSAGE:
+        __ message == TelemetryClient.DIAGNOSTIC_MESSAGE:
             # simulate a status report
             _diagnostic_message_result _ """\
 LAST TX rate................ 100 MBPS\r\n
@@ -74,7 +74,7 @@ Remote Rtrn Count........... 00"""
         # here should go the real Send operation (not needed for this exercise)
 
     ___ receive
-        if not _diagnostic_message_result:
+        __ not _diagnostic_message_result:
             # simulate a received message (just for illustration - not needed for this exercise)
             message _ ""
             messageLength _ random.randint(0, 50) + 60

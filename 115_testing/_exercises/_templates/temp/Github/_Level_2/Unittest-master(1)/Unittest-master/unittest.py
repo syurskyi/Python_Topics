@@ -11,7 +11,7 @@ c_ SearchBySymbolTest?.?
     ___ setUp
         r _ requests.get(BASE_URL + "/api/search?symbol=f")
         print BASE_URL + "/api/search?symbol=f"
-        response _ r.json()
+        response _ r.j__()
     
     ___ test_search_by_symbol
         assertTrue(isinstance(response, dict))
@@ -32,7 +32,7 @@ c_ SearchbyTermTest?.?
     ___ setUp
         r _ requests.get(BASE_URL + "/api/search?term=fe")
         print BASE_URL + "/api/search?term=fe"
-        response _ r.json()
+        response _ r.j__()
     
     ___ test_search_by_term
         assertTrue(isinstance(response, dict))
@@ -53,7 +53,7 @@ c_ SearchbyTitleTest?.?
     ___ setUp
         r _ requests.get(BASE_URL + "/api/search?title=fa")
         print BASE_URL + "/api/search?title=fa"
-        response _ r.json()
+        response _ r.j__()
     
     ___ test_search_by_title
         assertTrue(isinstance(response, dict))
@@ -74,7 +74,7 @@ c_ GetTagArticlesTest?.?
     ___ setUp
         r _ requests.get(BASE_URL + "/api/get_tag_articles?tags=Google,Facebook")
         print BASE_URL + "/api/get_tag_articles?tags=Google,Facebook"
-        response _ r.json()
+        response _ r.j__()
     
     ___ test_get_tag_articles
         assertTrue(isinstance(response, dict))
@@ -101,7 +101,7 @@ c_ MarketMoversTest?.?
     ___ setUp
         r _ requests.get(BASE_URL + "/api/market_movers/NYS?callback=")
         print BASE_URL + "/api/market_movers/NYS?callback="
-        response _ r.json()
+        response _ r.j__()
     
     ___ test_get_market_movers
         assertTrue(isinstance(response, dict))
@@ -127,7 +127,7 @@ c_ GetChartDataTest?.?
     ___ setUp
         r _ requests.get(BASE_URL + "/api/get_chart_data?symbol=<removed>&exchange=nys")
         print BASE_URL + "/api/get_chart_data?symbol=<removed>&exchange=nys"
-        response _ r.json()
+        response _ r.j__()
     
     ___ test_get_chart_data
         assertTrue(isinstance(response, dict))
@@ -156,7 +156,7 @@ c_ GetChartDataTest?.?
             assertIn("x", item, 'missing x')
             assertIn("y", item, 'missing y')
             
-if __name__ == "__main__":
+__ __name__ == "__main__":
     #______ sys;sys.argv = ['', 'Test.testName']
     u__.main()
 			

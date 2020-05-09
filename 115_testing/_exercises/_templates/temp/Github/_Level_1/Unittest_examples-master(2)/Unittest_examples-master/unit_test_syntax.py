@@ -54,5 +54,5 @@ c_ TestUnittestMethods?.?
         """
         failUnlessAlmostEqual(1.1, 3.3 - 2.0, places_0)
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     u__.main()

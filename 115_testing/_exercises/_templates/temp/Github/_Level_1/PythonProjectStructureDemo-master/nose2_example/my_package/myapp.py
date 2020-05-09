@@ -7,5 +7,5 @@ c_ MyApp(object
                          'substract': Substract}
 
     ___ do  operation, number1, number2
-        r_ operations[operation.lower()].do(number1, number2)
+        r_ operations[operation.l..].do(number1, number2)
 

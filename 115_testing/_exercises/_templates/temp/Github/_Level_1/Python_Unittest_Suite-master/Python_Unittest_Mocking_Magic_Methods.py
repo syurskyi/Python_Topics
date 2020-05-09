@@ -28,11 +28,11 @@
 # If you are using a function then it must take self as the first argument.
 # 
 
-___ __str__
+___ -s
         r_ 'fooble'
 
 mock _ Mock()
-mock.__str__ _ __str__
+mock.-s _ -s
 
 st.(mock)
 
@@ -40,9 +40,9 @@ st.(mock)
  
 
 mock _ Mock()
-mock.__str__ _ Mock()
+mock.-s _ Mock()
 
-mock.__str__.return_value _ 'fooble'
+mock.-s.return_value _ 'fooble'
 
 st.(mock)
 
@@ -65,7 +65,7 @@ mock.__enter__ _ Mock(return_value_'foo')
 
 mock.__exit__ _ Mock(return_value_False)
 
-with mock as m:
+w__ mock __ m:
         assert m == 'foo'
 
 mock.__enter__.assert_called_with()

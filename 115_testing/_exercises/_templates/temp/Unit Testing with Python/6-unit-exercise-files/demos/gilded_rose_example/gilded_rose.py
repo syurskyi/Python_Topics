@@ -7,32 +7,32 @@ c_ GildedRose(object
 
     ___ update_quality
         for item in items:
-            if item.name !_ "Aged Brie" and item.name !_ "Backstage passes to a TAFKAL80ETC concert":
-                if item.quality > 0:
-                    if item.name !_ "Sulfuras, Hand of Ragnaros":
+            __ item.name !_ "Aged Brie" and item.name !_ "Backstage passes to a TAFKAL80ETC concert":
+                __ item.quality > 0:
+                    __ item.name !_ "Sulfuras, Hand of Ragnaros":
                         item.quality _ item.quality - 1
             else:
-                if item.quality < 50:
+                __ item.quality < 50:
                     item.quality _ item.quality + 1
-                    if item.name == "Backstage passes to a TAFKAL80ETC concert":
-                        if item.sell_in < 11:
-                            if item.quality < 50:
+                    __ item.name == "Backstage passes to a TAFKAL80ETC concert":
+                        __ item.sell_in < 11:
+                            __ item.quality < 50:
                                 item.quality _ item.quality + 1
-                        if item.sell_in < 6:
-                            if item.quality < 50:
+                        __ item.sell_in < 6:
+                            __ item.quality < 50:
                                 item.quality _ item.quality + 1
-            if item.name !_ "Sulfuras, Hand of Ragnaros":
+            __ item.name !_ "Sulfuras, Hand of Ragnaros":
                 item.sell_in _ item.sell_in - 1
-            if item.sell_in < 0:
-                if item.name !_ "Aged Brie":
-                    if item.name !_ "Backstage passes to a TAFKAL80ETC concert":
-                        if item.quality > 0:
-                            if item.name !_ "Sulfuras, Hand of Ragnaros":
+            __ item.sell_in < 0:
+                __ item.name !_ "Aged Brie":
+                    __ item.name !_ "Backstage passes to a TAFKAL80ETC concert":
+                        __ item.quality > 0:
+                            __ item.name !_ "Sulfuras, Hand of Ragnaros":
                                 item.quality _ item.quality - 1
                     else:
                         item.quality _ item.quality - item.quality
                 else:
-                    if item.quality < 50:
+                    __ item.quality < 50:
                         item.quality _ item.quality + 1
 
     

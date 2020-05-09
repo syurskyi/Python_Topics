@@ -1,10 +1,10 @@
 ______ u__
-______ os
-______ json
+______ __
+______ j__
 ____ percolate ______ parse_file, split_line, parse_phone_number, parse_lines, format_one, format_two, format_three, format_phone_number
 
-__location__ _ os.path.realpath(
-    os.path.join(os.getcwd(), os.path.dirname(__file__)))
+__location__ _ __.pa__.realpath(
+    __.pa__.join(__.getcwd(), __.pa__.dirname(__file__)))
 
 c_ TestFormatOne?.?
 	
@@ -162,5 +162,5 @@ c_ TestParseFile?.?
 
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 	u__.main()

@@ -20,5 +20,5 @@ c_ TestAdd?.?
         assertRaises(Exception, sample.add,1,5) 
 
 
-if __name__ == "__main__":
+__ __name__ == "__main__":
     u__.main()

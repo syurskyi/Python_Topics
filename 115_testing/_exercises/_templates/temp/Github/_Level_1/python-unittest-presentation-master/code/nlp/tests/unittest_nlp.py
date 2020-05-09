@@ -82,7 +82,7 @@ c_ UtilTest?.?
         )
 
         ut.save(testfile.name)
-        actual_data _ pickle.load(testfile)
+        actual_data _ pickle.l..(testfile)
 
         aE..(expected_data, actual_data)
 
@@ -106,11 +106,11 @@ c_ UtilTest?.?
 
         expected_model _ {'train': Counter(VERB_2, NOUN_1)}
 
-        ut.load(testfile.name)
+        ut.l..(testfile.name)
 
         aE..(expected_model,ut.model)
         aE..(expected_distribution, ut.tag_distribution)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
         u__.main()

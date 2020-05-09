@@ -23,11 +23,11 @@ c_ MyTest(TestCase
 
         ___ test_foo
 
-            with patch('mymodule.Foo') as mock_foo:
+            w__ patch('mymodule.Foo') __ mock_foo:
 
-                with patch('mymodule.Bar') as mock_bar:
+                w__ patch('mymodule.Bar') __ mock_bar:
 
-                    with patch('mymodule.Spam') as mock_spam:
+                    w__ patch('mymodule.Spam') __ mock_spam:
 
                         assert mymodule.Foo is mock_foo
 

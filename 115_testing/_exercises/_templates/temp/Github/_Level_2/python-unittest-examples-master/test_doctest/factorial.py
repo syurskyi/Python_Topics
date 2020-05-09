@@ -33,11 +33,11 @@ ___ factorial(n
     """
 
     ______ math
-    if not n >_ 0:
+    __ not n >_ 0:
         raise ValueError("n must be >= 0")
-    if math.floor(n) !_ n:
+    __ math.floor(n) !_ n:
         raise ValueError("n must be exact integer")
-    if n+1 == n:  # catch a value like 1e300
+    __ n+1 == n:  # catch a value like 1e300
         raise OverflowError("n too large")
     result _ 1
     factor _ 2
@@ -46,6 +46,6 @@ ___ factorial(n
         factor +_ 1
     r_ result
 
-if __name__ == "__main__":
+__ __name__ == "__main__":
     ______ doctest
     doctest.testmod()

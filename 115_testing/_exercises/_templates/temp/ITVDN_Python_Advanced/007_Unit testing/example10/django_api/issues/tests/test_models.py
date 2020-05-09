@@ -42,24 +42,24 @@ c_ IssueTestCase(TestCase
         aE..(issue.foo(), 'stub')
 
     ___ test_foo_prod_with
-        with settings(DEBUG_True
+        w__ settings(DEBUG_True
             aE..(issue.foo(), issue.name)
 
     ___ test_foo_debug_with
-        with settings(DEBUG_False
+        w__ settings(DEBUG_False
             aE..(issue.foo(), 'stub')
 
     ___ test_modify_settings
         aE..(issue.bar(), issue.name)
 
         modify_rules _ {'remove': settings.ADMINS_NAME}
-        with modify_settings(CUSTOM_LIST_modify_rules
+        w__ modify_settings(CUSTOM_LIST_modify_rules
             aE..(issue.bar(), 'stub')
 
     ___ test_templates
-        with assertTemplateUsed('test_template.html'
+        w__ assertTemplateUsed('test_template.html'
             render_to_string('test_template.html')
-        with assertTemplateNotUsed('test_template.html'
+        w__ assertTemplateNotUsed('test_template.html'
             render_to_string('login.html')
 
     @tag('user')

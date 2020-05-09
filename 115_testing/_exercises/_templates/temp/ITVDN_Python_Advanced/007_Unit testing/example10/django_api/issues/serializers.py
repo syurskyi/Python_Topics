@@ -18,6 +18,6 @@ c_ LoginSerializer(serializers.Serializer
     ___ validate  attrs
         user _ authenticate(username_attrs['username'],
                             password_attrs['password'])
-        if not user:
+        __ not user:
             raise serializers.ValidationError('Incorrect username/password')
         r_ user

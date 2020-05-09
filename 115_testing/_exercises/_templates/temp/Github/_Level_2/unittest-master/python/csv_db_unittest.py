@@ -118,20 +118,20 @@ c_ ListIterator:
         cur _ 0
 
     ___ get
-        if cur >_0 and cur < len(lst
+        __ cur >_0 and cur < len(lst
             r_ lst[cur]
         else:
             r_ None
 
     ___ next
-        if cur < len(lst) -1:
+        __ cur < len(lst) -1:
             cur +_ 1
             r_ True
         else:
             r_ False
 
     ___ prev
-        if cur > 0:
+        __ cur > 0:
             cur -_ 1
             r_ True
         else:
@@ -145,7 +145,7 @@ c_ ListIterator:
 c_ ObjectListIterator(ListIterator
     ___ info
         obj _ get()
-        if obj == None:
+        __ obj == None:
             r_ "None"
         r_ "Current Object: " + ("%d\t%s\t%s\t%s\t%s" % (id, geo, guid, category, commodity))
 
@@ -159,14 +159,14 @@ c_ Product:
         commodity _ commodity
 
     # for print
-    ___ __str__
+    ___ -s
         r_ ("%d\t%s\t%s\t%s\t%s" % (id, geo, guid, category, commodity))
 
 # reads 4 fields from given file
 ___ read_csv(file_name
     lst _ []
     try:
-        with open(file_name, newline_'', encoding_'utf-8') as csvfile:
+        w__ o..(file_name, newline_'', encoding_'utf-8') __ csvfile:
             reader _ csv.DictReader(csvfile)
             for row in reader:
                 product _ Product(row['GEO'], row['DGUID'], row['Food categories'], row['Commodity'])
@@ -190,5 +190,5 @@ ___ main(
         db.create(item)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     u__.main()

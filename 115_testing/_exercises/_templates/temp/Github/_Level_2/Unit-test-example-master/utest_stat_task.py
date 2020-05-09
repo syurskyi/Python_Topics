@@ -223,5 +223,5 @@ c_ StatsResultTest?.?
             'Order2': [(50, 75), (200, 300)]})
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
    u__.main()

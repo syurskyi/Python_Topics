@@ -11,7 +11,7 @@ c_ Alarm(object
 
     ___ check
         psi_pressure_value _ _sensor.sample_pressure()
-        if psi_pressure_value < _low_pressure_threshold o. _high_pressure_threshold < psi_pressure_value:
+        __ psi_pressure_value < _low_pressure_threshold o. _high_pressure_threshold < psi_pressure_value:
             _is_alarm_on _ True
 
     @property

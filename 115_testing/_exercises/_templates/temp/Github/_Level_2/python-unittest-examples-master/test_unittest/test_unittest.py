@@ -108,10 +108,10 @@ c_ TestUnittest?.?
         assertDictEqual({'key1': 1, 'key2': 2}, {'key1': 1, 'key2': 2})
 
     ___ test_raise_exception
-        with assertRaises(Exception
+        w__ assertRaises(Exception
             widget.raise_exception()
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     u__.main()
 # Do not use the following way to trigger unit testing if you wanna use
 # nosetests as the test runner.

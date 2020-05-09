@@ -1,11 +1,11 @@
 ___ is_prime(number
     """Return True if *number* is prime."""
-    if number <_ 1:
+    __ number <_ 1:
         r_ False
 
 
     for element in range(2,number
-        if number % element == 0:
+        __ number % element == 0:
             r_ False
 
     r_ True
@@ -15,5 +15,5 @@ ___ print_next_prime(number
     index _ number
     while True:
         index +_ 1
-        if is_prime(index
+        __ is_prime(index
             print(index)

@@ -51,7 +51,7 @@ c_ Parser(
         number _ []
 
         for head in heads:
-            if head in source[0]:
+            __ head in source[0]:
                 number.append(source[0].index(head))
 
         r_ number
@@ -87,7 +87,7 @@ c_ Parser(
         keyname _ []
 
         for elem in source:
-            if elem[index] in keyname:
+            __ elem[index] in keyname:
                 pass
             else:
                 keyname.append(elem[index])
@@ -120,7 +120,7 @@ c_ Parser(
             for num in data_pos[1:]:
                 DATAS[name].append( \
                     tuple( \
-                        sorted([x[num] for x in SOURCE if x[data_pos[0]] == name])))
+                        sorted([x[num] for x in SOURCE __ x[data_pos[0]] == name])))
 
         r_ DATAS
 
@@ -151,7 +151,7 @@ c_ Statistics:
 
         lendata _ len(data)
 
-        if lendata % 2 == 0:
+        __ lendata % 2 == 0:
             r_ ceil((data[lendata//2 - 1] + data[lendata//2]) /2)
             #округление в большую сторону
 
@@ -175,7 +175,7 @@ c_ Statistics:
         index_plus1 _ floor(lendata * 0.9)
         index _ index_plus1 - 1
 
-        if lendata % 10 == 0:
+        __ lendata % 10 == 0:
             r_ data[index]
 
         else:
@@ -200,7 +200,7 @@ c_ Statistics:
         index_plus1 _ floor(lendata * 0.99)
         index _ index_plus1 - 1
 
-        if lendata % 100 == 0:
+        __ lendata % 100 == 0:
             r_ data[index]
 
         else:
@@ -225,7 +225,7 @@ c_ Statistics:
         index_plus1 _ floor(lendata * 0.999)
         index _ index_plus1 - 1
 
-        if lendata % 1000 == 0:
+        __ lendata % 1000 == 0:
             r_ data[index]
 
         else:
@@ -300,12 +300,12 @@ c_ StatsResult(Statistics
         r_ D
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     argparser _ argparse.ArgumentParser()
     argparser.add_argument('-f', '--file')
 
-    file_source _ open(argparser.parse_args().file, 'r')
+    file_source _ o..(argparser.parse_args().file, _
     datas _ Parser().fin_prep(file_source, 4, 'EVENT', 'AVGTSMR')
     file_source.close()
 
@@ -314,7 +314,7 @@ if __name__ == '__main__':
                       stat.percent99, stat.percent999, stat.fractions]
     stdata _ stat.run(*list_funcs)
 
-    with open('result_stat.txt','w') as file:
+    w__ o..('result_stat.txt',_ __ file:
         for key in stdata.keys(
             print(key, 'min=' + st.(stdata[key][0][0]),
                   '50%=' + st.(stdata[key][0][1]),

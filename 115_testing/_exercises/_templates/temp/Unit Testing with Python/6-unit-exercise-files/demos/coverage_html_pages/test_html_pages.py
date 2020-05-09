@@ -1,5 +1,5 @@
 ______ u__
-______ os
+______ __
 ______ tempfile
 ______ io
 
@@ -7,8 +7,8 @@ ____ html_pages ______ HtmlPagesConverter, FileAccessWrapper
 
 c_ HtmlPagesTest?.?
     ___ test_inserts_br_tags_for_linebreaks
-        filename _ os.path.join(tempfile.gettempdir(), "afile.txt")
-        f _ open(filename, "w", encoding_"UTF-8")
+        filename _ __.pa__.join(tempfile.gettempdir(), "afile.txt")
+        f _ o..(filename, "w", encoding_"UTF-8")
         f.write("plain text\n")
         f.close()
         converter _ HtmlPagesConverter(FileAccessWrapper(filename))
@@ -33,5 +33,5 @@ c_ FakeFileWrapper:
     ___  -   text
         text _ text
         
-    ___ open
+    ___ o..
         r_ io.StringIO(text)

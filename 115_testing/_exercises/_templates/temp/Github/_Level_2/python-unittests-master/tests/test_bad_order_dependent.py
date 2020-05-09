@@ -7,11 +7,11 @@ ______ u__
 c_ OrderDependentExample?.?
     ___ test_foo
         # this is a bad idea anyway, you should use randomized names for temporary files
-        with open('/tmp/bla', 'w') as f:
+        w__ o..('/tmp/bla', _ __ f:
             f.write('bla')
 
     ___ test_bar
-        with open('/tmp/bla') as f:
+        w__ o..('/tmp/bla') __ f:
             f.read()
 
     # you can also skip a test method

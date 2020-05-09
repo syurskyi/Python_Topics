@@ -20,13 +20,13 @@ c_ Board:
     ___  -   rows, check_True
         _rows _ rows
 
-        if check:
+        __ check:
             check()
 
     ___ check
         for i in range(16
             # check number i is at least in one row
-            if not any(map(lambda row: i in row, _rows)):
+            __ not any(map(lambda row: i in row, _rows)):
                 raise ValueError("Number {i} is missing in the input data".f..(**locals()))
 
     ___ is_solved

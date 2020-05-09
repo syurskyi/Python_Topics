@@ -1,4 +1,4 @@
-______ os
+______ __
 ______ u__
 ____ u__ ______ TestCase
 
@@ -16,6 +16,6 @@ c_ TestMyObject(TestCase
         aE..(2, 1)
 
     # can be used to skip test on a specific environment or an certain OS
-    @u__.skipUnless(os.getenv('DEV_STAGE'), 'Only running on dev stage')
+    @u__.skipUnless(__.getenv('DEV_STAGE'), 'Only running on dev stage')
     ___ test_skip_with_condition
         aE..(3, 4)

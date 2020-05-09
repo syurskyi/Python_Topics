@@ -15,7 +15,7 @@
 # The simplest way to start using doctest (but not necessarily the way you�ll continue to do it) is to end each module M with:
 # 
 
-if __name__ == "__main__":
+__ __name__ == "__main__":
     ______ doctest
 
     doctest.testmod()

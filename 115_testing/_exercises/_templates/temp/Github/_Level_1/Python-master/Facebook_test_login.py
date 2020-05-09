@@ -21,7 +21,7 @@ c_ PruebaLoginBusqueda?.?
     #def testTitle(self):
       titulo _ driver.find_element_by_id("pageTitle") #verificamos si estamos en el sitio correcto atraves de su titulo
       #print(str (self.titulo))
-      if titulo == 'Facebook - Connexion ou inscription': 
+      __ titulo == 'Facebook - Connexion ou inscription': 
          print("Estamos en facebook!")
          time.sleep(1)
       else:
@@ -30,7 +30,7 @@ c_ PruebaLoginBusqueda?.?
     ___ testLogin
         try:
             elem _ driver.find_element_by_id("email") #Buscamos el campo para inserir el usuario
-        except NoSuchElementException as exception:
+        except NoSuchElementException __ exception:
             print("No encontramos el elemento:", exception)
         else:
             time.sleep(2.0)
@@ -52,5 +52,5 @@ c_ PruebaLoginBusqueda?.?
         time.sleep(5.0)
         driver.close()
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     u__.main()

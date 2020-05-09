@@ -61,11 +61,11 @@ original _ SomeClass.attribute
 # 
 
 mock _ MagicMock(return_value_sentinel.file_handle)
-       with patch('builtins.open', mock
+       w__ patch('builtins.open', mock
 
-        handle _ open('filename', 'r')
+        handle _ o..('filename', _
 
-mock.assert_called_with('filename', 'r')
+mock.assert_called_with('filename', _
 
 assert handle == sentinel.file_handle, "incorrect file handle returned"
 
@@ -141,7 +141,7 @@ MyTest('test_something').test_something()
 foo _ {'key': 'value'}
 original _ foo.copy()
 
-   with patch.dict(foo, {'newkey': 'newvalue'}, clear_True
+   w__ patch.dict(foo, {'newkey': 'newvalue'}, clear_True
         assert foo == {'newkey': 'newvalue'}
 
 assert foo == original
@@ -158,7 +158,7 @@ c_ ProductionClass:
         ___ method
             pass
 
-    with patch.object(ProductionClass, 'method') as mock_method:
+    w__ patch.object(ProductionClass, 'method') __ mock_method:
         mock_method.return_value _ None
 
         real _ ProductionClass()

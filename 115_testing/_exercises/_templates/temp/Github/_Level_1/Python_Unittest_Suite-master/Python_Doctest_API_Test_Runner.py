@@ -18,15 +18,15 @@
 # Here is a minimal example of such a test runner:
 # 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     ______ doctest
 
     flags _ doctest.REPORT_NDIFF|doctest.FAIL_FAST
 
-    if len(sys.argv) > 1:
+    __ len(sys.argv) > 1:
         name _ sys.argv[1]
 
-        if name in globals(
+        __ name in globals(
             obj _ globals()[name]
 
         else:

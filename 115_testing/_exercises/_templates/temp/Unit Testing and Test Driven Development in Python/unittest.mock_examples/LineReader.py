@@ -1,9 +1,9 @@
-______ os
+______ __
 
 ___ readFromFile(filename
-    if not os.path.exists(filename
+    __ not __.pa__.exists(filename
         raise Exception("Bad File")
-    infile _ open(filename, "r")
+    infile _ o..(filename, "r")
     line _ infile.readline()
     r_ line
 

@@ -21,7 +21,7 @@ foo _ {'key': 'value'}
 
 original _ foo.copy()
 
-with patch.dict(foo, {'newkey': 'newvalue'}, clear_True
+w__ patch.dict(foo, {'newkey': 'newvalue'}, clear_True
         assert foo == {'newkey': 'newvalue'}
    
 assert foo == original

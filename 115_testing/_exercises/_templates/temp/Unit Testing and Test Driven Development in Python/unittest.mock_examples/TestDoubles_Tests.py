@@ -21,5 +21,5 @@ ___ test_returnsCorrectString(mock_open, monkeypatch
 ___ test_throwsExceptionWithBadFile(mock_open, monkeypatch
     mock_exists _ MagicMock(return_value_False)
     monkeypatch.setattr("os.path.exists", mock_exists)
-    with raises(Exception
+    w__ raises(Exception
         result _ readFromFile("blah")

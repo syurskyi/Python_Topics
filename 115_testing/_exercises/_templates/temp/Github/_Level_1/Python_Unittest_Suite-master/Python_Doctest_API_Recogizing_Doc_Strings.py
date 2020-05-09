@@ -25,7 +25,7 @@ x
 
 # OUTPUT: '12'
 
-if x == 13:
+__ x == 13:
         print("yes")
 
     else:

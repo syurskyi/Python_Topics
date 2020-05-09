@@ -12,7 +12,7 @@ ___ sieve_of_eratosthenes(n
 
     for i, isprime in enumerate(A
 
-        if isprime:
+        __ isprime:
             yield i
 
             for x in range(i * i, n, i

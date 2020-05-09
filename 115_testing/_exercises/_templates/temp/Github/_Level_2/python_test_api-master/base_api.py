@@ -1,7 +1,7 @@
 ______ u__
 ______ requests
 ______ xmltodict
-____ yaml ______ load
+____ yaml ______ l..
 ______ lxml
 ____ lxml ______ etree
 
@@ -9,7 +9,7 @@ ____ lxml ______ etree
 c_ BaseApi?.?
 
     ___ setUp
-        settings _ load(open('conf.yaml').read())
+        settings _ l..(o..('conf.yaml').read())
         base_url _ settings['base_url']
         cookies _ _login()
         content_type _ settings['content-type']
@@ -103,7 +103,7 @@ c_ BaseApi?.?
     # Assertion functions
 
     ___ assert_for_status_code_and_content_type  r, code_None, content_type_N..
-        if code:
+        __ code:
             assertEquals(r.status_code, code)
         try:
             validate_content_type(r, content_type)
@@ -111,7 +111,7 @@ c_ BaseApi?.?
             print "Couldn't find Content-type header in response"
 
     ___ validate_content_type  r, content_type_N..
-        if content_type:
+        __ content_type:
             assertEquals(r.headers['Content-Type'], content_type)
         else:
             aE..(r.headers['Content-Type'], content_type)
@@ -144,7 +144,7 @@ c_ BaseApi?.?
             # error = schema.error_log.last_error
             number_of_errors _ len(schema.error_log)
             # print number_of_errors
-            if number_of_errors > 0:
+            __ number_of_errors > 0:
                 for error in schema.error_log:
                     # All the error properties (from libxml2) describing what went wrong
                     print 'domain_name: ' + error.domain_name

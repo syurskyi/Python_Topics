@@ -33,7 +33,7 @@
 # Using open() as a context manager is a great way to ensure your file handles are closed properly and is becoming common:
 # 
 
-with open('/some/path', 'w') as f:
+w__ o..('/some/path', _ __ f:
          f.write('something')
 
 # 
@@ -48,14 +48,14 @@ with open('/some/path', 'w') as f:
 m _ mock_open()
 
 
-with patch('__main__.open', m
-        with open('foo', 'w') as h:
+w__ patch('__main__.open', m
+        w__ o..('foo', _ __ h:
 
             h.write('some stuff')
 
 
 m.mock_calls
-m.assert_called_once_with('foo', 'w')
+m.assert_called_once_with('foo', _
 
 handle _ m()
 handle.write.assert_called_once_with('some stuff')
@@ -64,8 +64,8 @@ handle.write.assert_called_once_with('some stuff')
 # And for reading files:
 # 
 
-with patch('__main__.open', mock_open(read_data_'bibble')) as m:
-         with open('foo') as h:
+w__ patch('__main__.open', mock_open(read_data_'bibble')) __ m:
+         w__ o..('foo') __ h:
               result _ h.read()
 
 m.assert_called_once_with('foo')

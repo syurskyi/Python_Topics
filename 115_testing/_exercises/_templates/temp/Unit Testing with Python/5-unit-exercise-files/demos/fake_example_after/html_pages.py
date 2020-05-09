@@ -1,12 +1,12 @@
 
-______ html as html_converter
+______ html __ html_converter
 
 c_ FileAccessWrapper:
     ___  -   filename
         filename _ filename
         
-    ___ open
-        r_ open(filename, "r", encoding_"UTF-8")
+    ___ o..
+        r_ o..(filename, "r", encoding_"UTF-8")
 
 c_ HtmlPagesConverter:
 
@@ -14,13 +14,13 @@ c_ HtmlPagesConverter:
         """Read the file and note the positions of the page breaks so we can access them quickly"""
         file_access _ file_access
         breaks _ [0]
-        with file_access.open() as f:
+        w__ file_access.o..() __ f:
             while True:
                 line _ f.readline()
-                if not line:
+                __ not line:
                     break
                 line _ line.rstrip()
-                if "PAGE_BREAK" in line:
+                __ "PAGE_BREAK" in line:
                     page_break_position _ f.tell()
                     breaks.append(f.tell())
             breaks.append(f.tell())                
@@ -30,12 +30,12 @@ c_ HtmlPagesConverter:
         page_start _ breaks[page]
         page_end _ breaks[page+1]
         html _ ""
-        with file_access.open() as f:
+        w__ file_access.o..() __ f:
             f.seek(page_start)
             while f.tell() !_ page_end:
                 line _ f.readline()
                 line _ line.rstrip()
-                if "PAGE_BREAK" in line:
+                __ "PAGE_BREAK" in line:
                     continue
                 html +_ html_converter.escape(line, quote_True)
                 html +_ "<br />"

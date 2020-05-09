@@ -2,7 +2,7 @@
 
 ______ u__
 ______ sys
-sys.path.append('app/')
+sys.pa__.append('app/')
 
 ___ test_all(
     loader _ u__.TestLoader()

@@ -29,6 +29,6 @@ c_ SecondTestClass?.?
     ___ test_mul
         aE..(420, val * 2)
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     u__.main()
 

@@ -45,7 +45,7 @@ check_warnings(("", Warning), quiet_True)
 # The context manager is designed to be used like this:
 # 
 
-with check_warnings(("assertion is always true", SyntaxWarning),
+w__ check_warnings(("assertion is always true", SyntaxWarning),
                     ("", UserWarning)):
 
     exec('assert(False, "Hey!")')
@@ -58,7 +58,7 @@ with check_warnings(("assertion is always true", SyntaxWarning),
 # When a test needs to look more deeply into the warnings, rather than just checking whether or not they occurred, code like this can be used:
 # 
 
-with check_warnings(quiet_True) as w:
+w__ check_warnings(quiet_True) __ w:
     warnings.warn("foo")
     assert st.(w.args[0]) == "foo"
 

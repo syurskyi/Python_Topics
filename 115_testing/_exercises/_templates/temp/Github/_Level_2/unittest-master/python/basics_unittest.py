@@ -36,14 +36,14 @@ c_ Product:
         commodity _ commodity
 
     # for print
-    ___ __str__
+    ___ -s
         r_ ("%d\t%d\t%s\t%s\t%s\t%s" % (id, year, geo, guid, category, commodity))
 
 
 ___ read_csv(file_name
     lst _ []
     try:
-        with open(file_name, newline_'', encoding_'utf-8') as csvfile:
+        w__ o..(file_name, newline_'', encoding_'utf-8') __ csvfile:
             reader _ csv.DictReader(csvfile)
             for row in reader:
                 product _ Product(1960, row['GEO'], row['DGUID'], row['Food categories'], row['Commodity'])
@@ -55,5 +55,5 @@ ___ read_csv(file_name
 
     r_ lst
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     u__.main()

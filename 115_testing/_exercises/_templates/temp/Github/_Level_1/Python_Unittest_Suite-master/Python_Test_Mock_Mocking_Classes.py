@@ -30,7 +30,7 @@ ___ some_function(
 
         r_ instance.method()
 
-with patch('module.Foo') as mock:
+w__ patch('module.Foo') __ mock:
         instance _ mock.return_value
         instance.method.return_value _ 'the result'
 

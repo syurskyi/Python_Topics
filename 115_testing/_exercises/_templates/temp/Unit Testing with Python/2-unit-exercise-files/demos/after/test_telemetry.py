@@ -33,12 +33,12 @@ c_ MockTelemetryClient:
         attempts _ 0
 
     ___ send  message
-        if go_offline_on_send:
+        __ go_offline_on_send:
             online_status _ False
 
     ___ connect  connection_string
         attempts +_ 1
-        if go_online_on_third_attempt and attempts == 2:
+        __ go_online_on_third_attempt and attempts == 2:
             online_status _ True
 
     ___ receive

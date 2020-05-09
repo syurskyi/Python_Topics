@@ -12,7 +12,7 @@ ___ multiply(x,y
 	r_ x*y
 
 ___ divide(x,y
-	if y == 0:
+	__ y == 0:
 		raise ValueError('Cannot devide by zero!')
 	else:
 		r_ x/y

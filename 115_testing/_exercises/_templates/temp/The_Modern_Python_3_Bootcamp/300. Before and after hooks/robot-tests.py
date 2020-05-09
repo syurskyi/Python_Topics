@@ -17,5 +17,5 @@ c_ RobotTests?.?
         aE..(mega_man.battery, 49)
 
 
-if __name__ == "__main__":
+__ __name__ == "__main__":
     u__.main()

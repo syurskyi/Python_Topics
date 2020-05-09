@@ -28,7 +28,7 @@
 # Usage:
 # 
 
-with swap_attr(obj, "attr", 5
+w__ swap_attr(obj, "attr", 5
 
 #    ...
  
@@ -45,6 +45,6 @@ with swap_attr(obj, "attr", 5
 # Usage:
 # 
 
-with swap_item(obj, "item", 5
+w__ swap_item(obj, "item", 5
 
 #    ...

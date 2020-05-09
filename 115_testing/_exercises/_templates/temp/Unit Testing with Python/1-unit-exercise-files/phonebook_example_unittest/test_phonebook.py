@@ -13,7 +13,7 @@ c_ PhonebookTest?.?
         aE..("12345", phonebook.lookup("Bob"))
         
     ___ test_missing_entry_raises_KeyError
-        with assertRaises(KeyError
+        w__ assertRaises(KeyError
             phonebook.lookup("missing")
             
     ___ test_empty_phonebook_is_consistent

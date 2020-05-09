@@ -29,7 +29,7 @@ isinstance(mock, int)
 
 mock _ Mock()
 
-mock.__class__ _ dict
+mock. -c _ dict
 
 isinstance(mock, dict)
 

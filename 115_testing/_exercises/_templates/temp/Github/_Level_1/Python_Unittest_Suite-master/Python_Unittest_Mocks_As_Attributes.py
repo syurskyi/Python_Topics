@@ -62,8 +62,8 @@ thing2 _ object()
 
 parent _ MagicMock()
 
-with patch('__main__.thing1', return_value_None) as child1:
-        with patch('__main__.thing2', return_value_None) as child2:
+w__ patch('__main__.thing1', return_value_None) __ child1:
+        w__ patch('__main__.thing2', return_value_None) __ child2:
 
             parent.attach_mock(child1, 'child1')
             parent.attach_mock(child2, 'child2')

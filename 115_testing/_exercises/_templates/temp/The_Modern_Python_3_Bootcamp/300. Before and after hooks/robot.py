@@ -9,13 +9,13 @@ c_ Robot:
 		r_ self
 
 	___ say_name
-		if battery > 0:
+		__ battery > 0:
 			battery -_ 1
 			r_ f"BEEP BOOP BEEP BOOP.  I AM {name.upper()}"
 		r_ "Low power.  Please charge and try again"
 
 	___ learn_skill  new_skill, cost_to_learn
-		if battery >_ cost_to_learn:
+		__ battery >_ cost_to_learn:
 			battery -_ cost_to_learn
 			skills.append(new_skill)
 			r_ f"WOAH. I KNOW {new_skill.upper()}"

@@ -28,7 +28,7 @@ ___ main(
 
     option _ int(sys.argv[1])
 
-    if option == 1:
+    __ option == 1:
         print('Manual Test:')
         test_manual()
 
@@ -42,5 +42,5 @@ ___ main(
         test_assert_fail()
 
 
-if __name__ == "__main__":
+__ __name__ == "__main__":
     main()

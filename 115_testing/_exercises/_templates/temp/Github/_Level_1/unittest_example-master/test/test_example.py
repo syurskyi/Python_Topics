@@ -70,5 +70,5 @@ c_ TestClassExample?.?
         print(id())
         assertNotEqual(True, False)
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     u__.main()

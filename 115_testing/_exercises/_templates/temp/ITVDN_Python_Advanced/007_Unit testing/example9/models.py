@@ -1,54 +1,54 @@
-______ json
-______ os
-______ uuid
-____ typing ______ ClassVar
-
-
-c_ Counter:
-    counter: ClassVar[int] _ 0
-
-    ___  -   fixture
-        if fixture:
-            update_counter()
-
-    ___ update_counter
-        __class__.counter +_ 1
-        name _ __class__.__name__.lower()
-        data _ {}
-        if os.path.exists('results.json'
-            with open('results.json', 'r') as f:
-                data _ json.load(f)
-        data.setdefault(name, 0)
-        data[name] +_ 1
-        with open('results.json', 'w') as f:
-            json.dump(data, f)
-
-
-c_ User(Counter
-
-    ___  -   email, first_name, last_name, uid_None, fixture_False
-        super(). - (fixture)
-        email _ email
-        first_name _ first_name
-        last_name _ last_name
-        id _ uid o. uuid.uuid4()
-
-    ___ get_full_name
-        r_ '{first_name} {last_name}'.f..(
-            first_name_first_name,
-            last_name_last_name
-        )
-
-    ___ __str__
-        r_ 'User: <{id}: {name}>'.f..(
-            id_id,
-            name_get_full_name()
-        )
-
-
-c_ Post(Counter
-
-    ___  -   user, comment: st., fixture_False
-        super(). - (fixture)
-        user _ user
-        comment _ comment
+# ______ j__
+# ______ __
+# ______ uu..
+# ____ ty.. ______ CV..
+#
+#
+# c_ Counter
+#     counter CV..|in. _ 0
+#
+#     ___  -   fixture
+#         __ ?
+#             u_c..
+#
+#     ___ update_counter
+#         -c.co.. +_ 1
+#         name _  -c.-n.l..
+#         data _  # dict
+#         __ __.pa__.exists('results.json'
+#             w__ o.. 'results.json' _ __ f
+#                 data _ j__.l.. ?
+#         ?.s_d_ n.. 0
+#         ?|n.. +_ 1
+#         w__ o.. 'results.json' _ __ f
+#             j__.d.. d.. ?
+#
+#
+# c_ User(Counter
+#
+#     ___  -   email first_name last_name uid_None fixture_F..
+#         s... -  f..
+#         ? ?
+#         ? ?
+#         ? ?
+#         id _ uid o. uu__.u4
+#
+#     ___ get_full_name
+#         r_ '|f.. |l..'.f..(
+#             ? ?
+#             ? ?
+#
+#
+#     ___ -s
+#         r_ 'User: <|i.: |n..>'.f..
+#             i._i.
+#             n.._g..
+#         )
+#
+#
+# c_ Post C..
+#
+#     ___  -   user comment st., fixture_F..
+#         s... -  f..
+#         ? ?
+#         ? ?

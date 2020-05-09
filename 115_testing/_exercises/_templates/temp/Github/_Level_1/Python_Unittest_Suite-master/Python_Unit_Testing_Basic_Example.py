@@ -48,10 +48,10 @@ c_ TestStringMethods?.?
 
         # check that s.split fails when the separator is not a string
 
-        with assertRaises(TypeError
+        w__ assertRaises(TypeError
             s.split(2)
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     u__.main()
 

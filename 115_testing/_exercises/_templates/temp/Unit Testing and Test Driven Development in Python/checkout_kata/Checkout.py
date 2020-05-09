@@ -20,10 +20,10 @@ c_ Checkout:
         prices[item] _ price
 
     ___ addItem  item
-        if item not in prices:
+        __ item not in prices:
             raise Exception("Bad Item")
 
-        if item in items:
+        __ item in items:
             items[item] +_ 1
         else:
             items[item] _ 1
@@ -36,9 +36,9 @@ c_ Checkout:
 
     ___ calculateItemTotal  item, cnt
         total _ 0
-        if item in discounts:
+        __ item in discounts:
             discount _ discounts[item]
-            if cnt >_ discount.nbrItems:
+            __ cnt >_ discount.nbrItems:
                 total +_ calculateItemDiscountedTotal(item, cnt, discount)
             else:
                 total +_ prices[item] * cnt

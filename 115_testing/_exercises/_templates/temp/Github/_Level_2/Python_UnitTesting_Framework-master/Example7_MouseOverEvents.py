@@ -50,5 +50,5 @@ c_ MouseOver?.?
         print("Close Application")
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     u__.main()

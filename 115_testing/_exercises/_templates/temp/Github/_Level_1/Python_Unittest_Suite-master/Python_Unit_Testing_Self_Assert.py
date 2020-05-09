@@ -30,7 +30,7 @@
 # a function:
 # 
 
-with assertRaises(SomeException
+w__ assertRaises(SomeException
     do_something()
 
 # 
@@ -42,7 +42,7 @@ with assertRaises(SomeException
 # This can be useful if the intention is to perform additional checks on the exception raised:
 # 
 
-with assertRaises(SomeException) as cm:
+w__ assertRaises(SomeException) __ cm:
     do_something()
 
 the_exception _ cm.exception
@@ -64,7 +64,7 @@ assertRaisesRegex(ValueError, "invalid literal for.*XYZ'$",
 # or:
 # 
 
-with assertRaisesRegex(ValueError, 'literal'
+w__ assertRaisesRegex(ValueError, 'literal'
    int('XYZ')
 
 #
@@ -79,7 +79,7 @@ with assertRaisesRegex(ValueError, 'literal'
 # function:
 # 
 
-with assertWarns(SomeWarning
+w__ assertWarns(SomeWarning
            do_something()
  
 #
@@ -89,7 +89,7 @@ with assertWarns(SomeWarning
 # This can be useful if the intention is to perform additional checks on the warning caught:
 # 
 
-with assertWarns(SomeWarning) as cm:
+w__ assertWarns(SomeWarning) __ cm:
     do_something()
 
 assertIn('myfile.py', cm.filename)
@@ -116,7 +116,7 @@ assertWarnsRegex(DeprecationWarning,
 # or:
 # 
 
-with assertWarnsRegex(RuntimeWarning, 'unsafe frobnicating'
+w__ assertWarnsRegex(RuntimeWarning, 'unsafe frobnicating'
          frobnicate('/etc/passwd')
 
 #
@@ -142,7 +142,7 @@ with assertWarnsRegex(RuntimeWarning, 'unsafe frobnicating'
 # Example:
 # 
 
-with assertLogs('foo', level_'INFO') as cm:
+w__ assertLogs('foo', level_'INFO') __ cm:
    logging.getLogger('foo').info('first message')
 
    logging.getLogger('foo.bar').error('second message')

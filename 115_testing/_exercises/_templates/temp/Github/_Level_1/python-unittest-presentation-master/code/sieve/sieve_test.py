@@ -18,5 +18,5 @@ c_ SieveTest?.?
         aE..(expect_return_value, actual_return_value)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
         u__.main()

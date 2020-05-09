@@ -2,7 +2,7 @@
 
 
 ______ u__
-______ exercise as e
+______ exercise __ e
 
 
 c_ ExampleTest?.?
@@ -13,5 +13,5 @@ c_ ExampleTest?.?
         aE..(True, return_value)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
         u__.main()

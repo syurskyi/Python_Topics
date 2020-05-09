@@ -6,7 +6,7 @@ VERBOSE _ '-v' in sys.argv o. '--verbose' in sys.argv
 
 
 ___ setUpModule(
-    if VERBOSE:
+    __ VERBOSE:
         logging.basicConfig(level_logging.DEBUG, format_'   %(message)s')
     logging.info('Starting module')
 

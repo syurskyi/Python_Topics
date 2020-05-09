@@ -25,7 +25,7 @@
 
 ____ datetime ______ date
 
-    with patch('mymodule.date') as mock_date:
+    w__ patch('mymodule.date') __ mock_date:
         mock_date.today.return_value _ date(2010, 10, 8)
 
         mock_date.side_effect _ lambda *args, **kw: date(*args, **kw)

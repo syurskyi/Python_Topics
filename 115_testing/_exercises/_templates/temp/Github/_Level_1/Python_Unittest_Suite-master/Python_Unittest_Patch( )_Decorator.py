@@ -17,7 +17,7 @@
 # As well as a decorator patch() can be used as a context manager in a with statement:
 # 
 
-with patch.object(ProductionClass, 'method', return_value_None) as mock_method:
+w__ patch.object(ProductionClass, 'method', return_value_None) __ mock_method:
         thing _ ProductionClass()
 
         thing.method(1, 2, 3)

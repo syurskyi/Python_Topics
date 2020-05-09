@@ -34,7 +34,7 @@ c_ TestCalc?.?
 		
 		assertRaises(ValueError, calc.divide,10,0)
 	#	Can also use a context manager to check ValueError:
-		with assertRaises(ValueError
+		w__ assertRaises(ValueError
 			calc.divide(10,0)
 
 	___ test_power
@@ -67,7 +67,7 @@ This will allow you to run the test using:
 """
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 	u__.main()
 
 """

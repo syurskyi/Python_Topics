@@ -37,7 +37,7 @@ c_ TestCurrency?.?
 
         convertor _ CurrencyConvertor()
 
-        with requests_mock.mock() as m:
+        w__ requests_mock.mock() __ m:
             m.get('{currency_conversion_api_url}/latest?base=EUR'.f..(
                 currency_conversion_api_url_CURRENCY_CONVERSION_API_URL), text_mocked_response)
             result _ convertor.convert_currency('EUR', 'CZK', 100)

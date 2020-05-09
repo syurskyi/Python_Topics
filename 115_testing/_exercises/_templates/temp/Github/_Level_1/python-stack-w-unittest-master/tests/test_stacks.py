@@ -93,5 +93,5 @@ c_ StackTestCase?.?
         test_obj.push(test_data9)
         aE..(10, test_obj.size())
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     u__.main()

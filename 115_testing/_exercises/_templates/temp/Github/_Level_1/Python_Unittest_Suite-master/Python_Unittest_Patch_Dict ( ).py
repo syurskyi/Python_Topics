@@ -35,21 +35,21 @@
 
 foo _ {}
 
-with patch.dict(foo, {'newkey': 'newvalue'}
+w__ patch.dict(foo, {'newkey': 'newvalue'}
         assert foo == {'newkey': 'newvalue'}
 
 assert foo == {}
  
 
-______ os
+______ __
 
-with patch.dict('os.environ', {'newkey': 'newvalue'}
-        print(os.environ['newkey'])
+w__ patch.dict('os.environ', {'newkey': 'newvalue'}
+        print(__.environ['newkey'])
 
 
 # OUTPUT: 'newvalue'
 
-assert 'newkey' not in os.environ
+assert 'newkey' not in __.environ
 
 # 
 # Keywords can be used in the patch.dict() call to set values in the dictionary:
@@ -58,7 +58,7 @@ assert 'newkey' not in os.environ
 mymodule _ MagicMock()
 mymodule.function.return_value _ 'fish'
 
-with patch.dict('sys.modules', mymodule_mymodule
+w__ patch.dict('sys.modules', mymodule_mymodule
         ______ mymodule
  
        mymodule.function('some', 'args')
@@ -90,7 +90,7 @@ c_ Container:
 thing _ Container()
 thing['one'] _ 1
 
-with patch.dict(thing, one_2, two_3
+w__ patch.dict(thing, one_2, two_3
         assert thing['one'] == 2
 
        assert thing['two'] == 3

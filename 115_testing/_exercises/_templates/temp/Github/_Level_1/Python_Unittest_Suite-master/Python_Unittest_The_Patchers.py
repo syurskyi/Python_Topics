@@ -53,7 +53,7 @@ c_ Class:
         ___ method
             pass
 
-with patch('__main__.Class') as MockClass:
+w__ patch('__main__.Class') __ MockClass:
         instance _ MockClass.return_value
         instance.method.return_value _ 'foo'
 
@@ -84,7 +84,7 @@ patcher.stop()
 
 thing _ object()
 
-with patch('__main__.thing', new_callable_NonCallableMock) as mock_thing:
+w__ patch('__main__.thing', new_callable_NonCallableMock) __ mock_thing:
         assert thing is mock_thing
 
         thing()

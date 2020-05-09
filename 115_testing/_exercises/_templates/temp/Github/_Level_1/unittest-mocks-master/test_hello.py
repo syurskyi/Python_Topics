@@ -18,5 +18,5 @@ c_ HelloTests?.?
 
         # Make sure it prints the correct string
         aE..(args, ('Hello, World!',))
-if __name__ == '__main__':
+__ __name__ == '__main__':
     unttest.main()

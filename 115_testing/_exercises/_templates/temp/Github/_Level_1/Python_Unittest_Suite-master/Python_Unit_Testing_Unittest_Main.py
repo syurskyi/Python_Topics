@@ -28,14 +28,14 @@
 # The simplest use for this function is to include the following line at the end of a test script:
 # 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     u__.main()
 
 # 
 # You can run tests with more detailed information by passing in the verbosity argument:
 # 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     u__.main(verbosity_2)
 
 #

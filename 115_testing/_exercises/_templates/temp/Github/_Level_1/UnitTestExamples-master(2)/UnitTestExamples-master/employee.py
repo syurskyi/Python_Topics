@@ -25,7 +25,7 @@ c_ Employee:
 
     ___ monthly_schedule  month
         response _ requests.get(f'http://company.com/{last}/{month}')
-        if response.ok:
+        __ response.ok:
             r_ response.text
         else:
             r_ 'Bad Response!'

@@ -44,14 +44,14 @@ mock.assert_called_with(Foo(1, 2))
 # 
 
 ___ compare  other
-        if not type(self) == type(other
+        __ not type(self) == type(other
 
             r_ False
 
-        if a !_ other.a:
+        __ a !_ other.a:
             r_ False
 
-        if b !_ other.b:
+        __ b !_ other.b:
             r_ False
 
       r_ True

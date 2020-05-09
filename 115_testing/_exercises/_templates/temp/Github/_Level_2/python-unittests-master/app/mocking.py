@@ -14,6 +14,6 @@ ___ convert_currency(base_currency, target_currency, base_amount
     resp _ requests.get('{CURRENCY_CONVERSION_API_URL}/latest?base={base}'.f..(
         base_base_currency, CURRENCY_CONVERSION_API_URL_CURRENCY_CONVERSION_API_URL))
     resp.raise_for_status()
-    resp_parsed _ resp.json()
+    resp_parsed _ resp.j__()
     rate _ resp_parsed['rates'][target_currency]
     r_ rate * base_amount

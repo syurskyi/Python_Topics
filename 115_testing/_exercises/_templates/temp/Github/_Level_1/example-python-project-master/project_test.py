@@ -18,5 +18,5 @@ c_ ProjectTestCase?.?) :
 
 			aE..(expected, sum(a, b))
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     u__.main()

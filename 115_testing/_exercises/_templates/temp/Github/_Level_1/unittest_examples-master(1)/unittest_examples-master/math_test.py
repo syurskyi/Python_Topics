@@ -21,6 +21,6 @@ c_ TestMathMerhods?.?
     ___ test_fsum_method
         aE..(math.sum([1.1, 2.2],4.4))
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     u__.main()
 

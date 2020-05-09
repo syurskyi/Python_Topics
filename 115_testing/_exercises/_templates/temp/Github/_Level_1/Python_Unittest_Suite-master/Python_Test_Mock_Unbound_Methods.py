@@ -36,7 +36,7 @@ c_ Foo:
       ___ foo
           pass
 
-with patch.object(Foo, 'foo', autospec_True) as mock_foo:
+w__ patch.object(Foo, 'foo', autospec_True) __ mock_foo:
       mock_foo.return_value _ 'foo'
 
       foo _ Foo()

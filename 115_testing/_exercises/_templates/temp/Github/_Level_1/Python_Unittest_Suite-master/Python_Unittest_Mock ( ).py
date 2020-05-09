@@ -19,7 +19,7 @@
 # 
 
 mock _ Mock()
-mock.__str__ _ Mock(return_value_'wheeeeee')
+mock.-s _ Mock(return_value_'wheeeeee')
 
 st.(mock)
 

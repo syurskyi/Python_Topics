@@ -28,5 +28,5 @@ c_ ClassC?.?
         assertEquals(420, 105 * 4)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     u__.main()

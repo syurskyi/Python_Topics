@@ -55,8 +55,8 @@ manager.mock_calls == expected_calls
 
 manager _ MagicMock()
 
-with patch('mymodule.Class1') as MockClass1:
-        with patch('mymodule.Class2') as MockClass2:
+w__ patch('mymodule.Class1') __ MockClass1:
+        w__ patch('mymodule.Class2') __ MockClass2:
 
             manager.attach_mock(MockClass1, 'MockClass1')
             manager.attach_mock(MockClass2, 'MockClass2')

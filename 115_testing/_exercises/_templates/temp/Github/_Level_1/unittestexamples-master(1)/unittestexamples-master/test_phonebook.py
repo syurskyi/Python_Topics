@@ -21,7 +21,7 @@ c_ PhoneBookTest?.?
         aE..("12345", number) # Assert
 
     ___ test_missing_name
-        with assertRaises(KeyError
+        w__ assertRaises(KeyError
             phonebook.lookup("missing")
 
     ___ test_is_consistent_with_empty_phonebook

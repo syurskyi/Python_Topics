@@ -21,13 +21,13 @@ c_ TestIdCreator(TestCase
         aE..(6, id_creator.faculty_id(3))
 
     ___ test_invalid_value_error
-        with assertRaises(TypeError
+        w__ assertRaises(TypeError
             id_creator.faculty_id('a')
 
     ___ test_invalid_type_error
-        with assertRaises(ValueError
+        w__ assertRaises(ValueError
             id_creator.faculty_id(-1)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     u__.main()

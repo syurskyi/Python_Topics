@@ -9,5 +9,5 @@ ___ main(
     r_ "hello world"
 
 
-if __name__ == "__main__":
+__ __name__ == "__main__":
     main()

@@ -1,7 +1,7 @@
 ____ collections ______ defaultdict
 _punct _ '.,;?:'
 ___ _normalize(fragment
-    fragment _ fragment.lower()
+    fragment _ fragment.l..
     while len(fragment) > 0 and fragment[-1] in _punct:
         fragment _ fragment[:-1]
     while len(fragment) > 0 and fragment[0] in _punct:
@@ -27,7 +27,7 @@ ___ wordcounts(text
     counts _ defaultdict(int)
     for fragment in text.split(
         word _ _normalize(fragment)
-        if word == '':
+        __ word == '':
             continue
         counts[word] +_ 1
     r_ dict(counts)
@@ -45,9 +45,9 @@ ___ addcounts(existing, new
     
     If either existing or new are not dictionaries, raise ValueError
     '''
-    if not type(existing) is dict:
+    __ not type(existing) is dict:
         raise ValueError('existing must be a dictionary')
-    if not type(new) is dict:
+    __ not type(new) is dict:
         raise ValueError('new must be a dictionary')
     for word, count in new.viewitems(
         newcount _ count + existing.get(word, 0)

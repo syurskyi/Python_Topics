@@ -29,5 +29,5 @@ c_ SizeOfLinkedList?.?
         assertNotEqual(newList.getSize(), fullSize)
         aE..(newList.getSize(), reduced)
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     u__.main(verbosity_2)

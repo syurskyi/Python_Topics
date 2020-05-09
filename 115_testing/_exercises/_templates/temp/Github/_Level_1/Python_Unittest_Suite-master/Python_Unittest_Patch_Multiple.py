@@ -49,7 +49,7 @@ test_function()
 # If patch.multiple() is used as a context manager, the value returned by the context manger is a dictionary where created mocks are keyed by name:
 # 
 
-with patch.multiple('__main__', thing_DEFAULT, other_DEFAULT) as values:
+w__ patch.multiple('__main__', thing_DEFAULT, other_DEFAULT) __ values:
         assert 'other' in repr(values['other'])
         assert 'thing' in repr(values['thing'])
 

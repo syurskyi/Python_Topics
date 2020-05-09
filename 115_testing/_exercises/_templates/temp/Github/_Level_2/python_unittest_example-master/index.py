@@ -1,8 +1,8 @@
-______ os
-______ json
+______ __
+______ j__
 
-__location__ _ os.path.realpath(
-    os.path.join(os.getcwd(), os.path.dirname(__file__)))
+__location__ _ __.pa__.realpath(
+    __.pa__.join(__.getcwd(), __.pa__.dirname(__file__)))
 
 ___ format_one(line
 	entry _ dict(color_line[3], firstname_line[1],
@@ -32,9 +32,9 @@ ___ parse_phone_number(element
 	'''
 	digits _ ''
 	for x in element:
-		if x.isdigit(
+		__ x.isdigit(
 			digits +_ x
-	if len(digits) == 10:
+	__ len(digits) == 10:
 		r_ True
 	else:
 		r_ False
@@ -43,7 +43,7 @@ ___ format_phone_number(phone
 	'''output phone numbers in correct format'''
 	digits _ ''
 	for x in phone:
-		if x.isdigit(
+		__ x.isdigit(
 			digits +_ x
 	formatted _ digits[0:3] + '-' + digits[3:6] + '-' + digits[6:]
 	r_ formatted
@@ -61,21 +61,21 @@ ___ parse_lines(line
 	is also added to errors; otherwise, return the 
 	elements like to the appropriate formatting function.
 	'''
-	if len(line) < 4:
+	__ len(line) < 4:
 		r_ None
 
 	elif len(line[4]) == 5 and line[4][0].isdigit(
-		if parse_phone_number(line[2]
+		__ parse_phone_number(line[2]
 			r_ format_one(line)
 
 
 	elif len(line[3]) == 5 and line[3][0].isdigit(
-		if parse_phone_number(line[4]
+		__ parse_phone_number(line[4]
 			r_ format_two(line)
 
 
 	elif len(line[2]) == 5 and line[2][0].isdigit(
-		if parse_phone_number(line[3]
+		__ parse_phone_number(line[3]
 			r_ format_three(line)
 	else:
 		r_ None
@@ -88,7 +88,7 @@ ___ split_line(line
 	on the first space.
 	'''
 	data_list _ line.rstrip().split(', ')
-	if len(data_list) == 4:
+	__ len(data_list) == 4:
 		firstn _ data_list[0].split(' ')[0]
 		lastn _ data_list[0].split(' ')[1]
 		r_ [firstn, lastn] + data_list[1:]
@@ -111,7 +111,7 @@ ___ parse_file(input_file
 		data_list _ split_line(line)
 		contact _ parse_lines(data_list)
 
-		if contact is not None:
+		__ contact is not None:
 			entries.append(contact)
 		else:
 			errors.append(idx)
@@ -123,22 +123,22 @@ ___ parse_file(input_file
 	r_ data
 
 ___ parse_filename(input_filename
-	with open(input_filename) as f:
+	w__ o..(input_filename) __ f:
 		r_ parse_file(f)
 
 ___ write_output(filename, data
-	with open(filename, 'w') as f:
-		json.dump(data, f, sort_keys_True, indent_2)
+	w__ o..(filename, _ __ f:
+		j__.d..(data, f, sort_keys_True, indent_2)
 
 ___ convert_file(input_filename, output_filename
 	data _ parse_filename(input_filename)
 	write_output(output_filename, data)
 
 ___ main(
-	input_filename _ os.path.join(__location__, 'data.in')
-	output_filename _ os.path.join(__location__, 'result.json')
+	input_filename _ __.pa__.join(__location__, 'data.in')
+	output_filename _ __.pa__.join(__location__, 'result.json')
 	convert_file(input_filename, output_filename)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 	main()

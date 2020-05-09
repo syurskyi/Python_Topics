@@ -16,7 +16,7 @@ c_ FakeSingleSignOnRegistry:
         tokens _ set()
 
     ___ register  credentials
-        if are_valid(credentials
+        __ are_valid(credentials
             token _ SSOToken()
             tokens.add(token)
             r_ token
@@ -36,7 +36,7 @@ c_ MockSingleSignOnRegistry:
 
     ___ is_valid  token
         is_valid_was_called _ True
-        if not token == expected_token:
+        __ not token == expected_token:
             raise Exception("This mock was given an unexpected argument. Expected {0} got {1}".f..(expected_token, token))
         r_ token_is_valid
 

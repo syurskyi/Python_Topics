@@ -10,7 +10,7 @@ ___ sub(a, b
 
 ___ divide(a,b
     """ Divide o valor a pelo valor b """
-    if b == 0:
+    __ b == 0:
         raise(ValueError)
     
     r_ a / b

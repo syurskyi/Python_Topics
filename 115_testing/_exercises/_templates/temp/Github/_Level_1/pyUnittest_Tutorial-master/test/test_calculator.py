@@ -23,5 +23,5 @@ c_ TddInPythonExample?.?
         assertRaises(ValueError, calc.add, 2, 'three')
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     u__.main()

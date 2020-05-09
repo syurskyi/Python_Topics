@@ -25,7 +25,7 @@ ___ small_straight(dice
 
     
     """ 
-    if sorted(dice) == [1,2,3,4,5]:
+    __ sorted(dice) == [1,2,3,4,5]:
         r_ sum(dice)
     else:
         r_ 0
@@ -58,7 +58,7 @@ ___ yatzy(dice
 
     """
     counts _ dice_counts(dice)
-    if 5 in counts.values(
+    __ 5 in counts.values(
         r_ 50
     r_ 0
 
@@ -77,7 +77,7 @@ ___ full_house(dice
     """
     
     counts _ dice_counts(dice)
-    if 2 in counts.values() and 3 in counts.values(
+    __ 2 in counts.values() and 3 in counts.values(
         r_ sum(dice)
     r_ 0
 
@@ -95,5 +95,5 @@ ___ scores_in_categories(dice, categories_ALL_CATEGORIES
     """
     scores _ [(category(dice), category)
                 for category in categories 
-                    if category(dice) > 0]
+                    __ category(dice) > 0]
     r_ sorted(scores, reverse_True, key_itemgetter(0))

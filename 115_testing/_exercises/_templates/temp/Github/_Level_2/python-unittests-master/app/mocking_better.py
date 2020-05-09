@@ -17,7 +17,7 @@ c_ CurrencyConvertor:
         resp _ requests.get('{currency_conversion_api_url}/latest?base={base}'.f..(
             base_base_currency, currency_conversion_api_url_CURRENCY_CONVERSION_API_URL))
         resp.raise_for_status()
-        resp_parsed _ resp.json()
+        resp_parsed _ resp.j__()
         r_ resp_parsed['rates'][target_currency]
 
     ___ convert_currency  base_currency, target_currency, base_amount

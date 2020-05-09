@@ -19,5 +19,5 @@ ___ test_phonebook_gives_access_to_names_and_numbers(phonebook
     assert "12345" in phonebook.numbers()
     
 ___ test_missing_entry_raises_KeyError(phonebook
-    with pytest.raises(KeyError
+    w__ pytest.raises(KeyError
         phonebook.lookup("missing")

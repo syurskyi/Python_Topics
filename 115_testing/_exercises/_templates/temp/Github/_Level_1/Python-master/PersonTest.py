@@ -2,7 +2,7 @@
 ______ u__
 
 # This is the class we want to test. So, we need to ______ it
-______ Person as PersonClass
+______ Person __ PersonClass
 
 
 c_ Test?.?
@@ -47,7 +47,7 @@ c_ Test?.?
         print("user_name length = ", len(user_name))
         for i in range(6
             # if i not exceed total length then verify the returned name
-            if i < length:
+            __ i < length:
                 # if the two name not matches it will fail the test case
                 aE..(user_name[i], person.get_name(user_id[i]))
             else:
@@ -57,6 +57,6 @@ c_ Test?.?
         print("\nFinish get_name test\n")
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     # begin the unittest.main()
     u__.main()

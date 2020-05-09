@@ -3,16 +3,16 @@
 """
 
 ______ datetime
-______ os
+______ __
 ______ sys
 ______ u__
 
-if __debug__:
+__ __debug__:
 
     import_dir _ "./libraries/"
-    for d in os.listdir(import_dir
-        if os.path.isdir(import_dir + d
-            sys.path.insert(1, import_dir + d)
+    for d in __.listdir(import_dir
+        __ __.pa__.isdir(import_dir + d
+            sys.pa__.insert(1, import_dir + d)
 
     try:
         ______ coverage
@@ -25,7 +25,7 @@ if __debug__:
     except ImportError:
         STYLECHECK _ False
 
-    if COVERAGE:
+    __ COVERAGE:
         codecoverage _ coverage.Coverage(omit_'*unittests/*')
         # Unittests skew results
         codecoverage.start()
@@ -37,7 +37,7 @@ if __debug__:
 
     ____ testingdemo.howto ______ *
 
-    unittesting_log _ open('unittesting.log', 'a')
+    unittesting_log _ o..('unittesting.log', 'a')
     file_pos _ unittesting_log.tell()
     timestamp _ st.(datetime.datetime.now().isoformat(' ')) + "\n"
     unittesting_log.write("Testing Example - " + timestamp)
@@ -46,7 +46,7 @@ if __debug__:
                             verbosity_3).run(suite)
     unittesting_log.close()
 
-    unittesting_log _ open('unittesting.log')
+    unittesting_log _ o..('unittesting.log')
     unittesting_log.seek(file_pos)
     print(unittesting_log.read())
     unittesting_log.close()
@@ -55,14 +55,14 @@ if __debug__:
     somethinguseful.make_something()
     print(somethinguseful.report_something())
 
-    if COVERAGE:
+    __ COVERAGE:
         codecoverage.stop()
         codecoverage.save()
         codecoverage.html_report(directory_"coverage")
         print("Code coverage report done. See the index.html in: ")
         print("\t" + '/coverage')
 
-    if STYLECHECK:
+    __ STYLECHECK:
         print('Style Check Start')
         checker _ pycodestyle.StyleGuide(exclude_['libraries'], quiet_False)
         result _ checker.check_files('.')

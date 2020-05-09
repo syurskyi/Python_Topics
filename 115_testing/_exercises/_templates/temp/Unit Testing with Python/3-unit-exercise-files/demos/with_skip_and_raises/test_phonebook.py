@@ -17,5 +17,5 @@ ___ test_phonebook_gives_access_to_names_and_numbers(
     
 ___ test_missing_entry_raises_KeyError(
     phonebook _ Phonebook()
-    with pytest.raises(KeyError
+    w__ pytest.raises(KeyError
         phonebook.lookup("missing")

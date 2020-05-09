@@ -91,7 +91,7 @@ c_ ExpectedFailureTestCase?.?
 
 ___ skipUnlessHasattr(obj, attr
 
-    if hasattr(obj, attr
+    __ hasattr(obj, attr
         r_ lambda func: func
 
     r_ u__.skip("{!r} doesn't have {!r}".f..(obj, attr))

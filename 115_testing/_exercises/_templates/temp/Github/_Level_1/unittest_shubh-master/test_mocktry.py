@@ -35,7 +35,7 @@ c_ Testmock?.?
         aE..(s1.code(),'mohuaray')
         
     ___ test_mylinkedin
-        with patch('mocktry.requests.get') as mocked_get:
+        w__ patch('mocktry.requests.get') __ mocked_get:
             mocked_get.return_value.ok _ True
             mocked_get.return_value.text _ 'Done'
 
@@ -53,5 +53,5 @@ c_ Testmock?.?
 
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     u__.main()

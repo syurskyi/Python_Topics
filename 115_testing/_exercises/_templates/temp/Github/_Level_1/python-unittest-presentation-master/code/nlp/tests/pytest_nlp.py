@@ -71,7 +71,7 @@ ___ test_save(corpus
     )
 
     ut.save(testfile.name)
-    actual_data _ pickle.load(testfile)
+    actual_data _ pickle.l..(testfile)
 
     assert expected_data == actual_data
 
@@ -94,7 +94,7 @@ ___ test_load(corpus
 
     expected_model _ {'train': Counter(VERB_2, NOUN_1)}
 
-    ut.load(testfile.name)
+    ut.l..(testfile.name)
 
     assert (
         expected_model == ut.model and

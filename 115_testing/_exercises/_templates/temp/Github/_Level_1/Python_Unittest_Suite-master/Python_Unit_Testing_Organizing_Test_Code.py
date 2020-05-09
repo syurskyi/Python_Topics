@@ -114,7 +114,7 @@ ___ suite(
 
     r_ suite
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     runner _ u__.TextTestRunner()
 
     runner.run(suite())

@@ -8,7 +8,7 @@ c_ Calculator(object
         """Addition Function."""
         number_types _ (int, long, float, complex)
 
-        if isinstance(x, number_types) and isinstance(y, number_types
+        __ isinstance(x, number_types) and isinstance(y, number_types
             r_ x + y
         else:
             raise ValueError

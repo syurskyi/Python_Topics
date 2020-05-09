@@ -31,7 +31,7 @@ c_ PhoneBookTest?.?
         # assertRaises ensures everything in with context manager will throw a KeyError exception
         # KeyError is raised whenever a dictionary object is requested and the key is not present
         # In our case the name Giles was not present in the phonbook
-        with assertRaises(KeyError
+        w__ assertRaises(KeyError
             phonebook.lookup("Giles")
 
     # annotation to skip a unittest

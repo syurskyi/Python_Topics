@@ -1,4 +1,4 @@
-______ os
+______ __
 
 ______ re
 ______ requests
@@ -7,8 +7,8 @@ ____ lxml ______ html
 
 c_ FileRemovalService(object
     ___ rm  filename
-        if os.path.isfile(filename
-            os.remove(filename)
+        __ __.pa__.isfile(filename
+            __.remove(filename)
 
 
 c_ UploadService(object
@@ -21,8 +21,8 @@ c_ UploadService(object
 
 
 ___ rm(filename
-    if os.path.isfile(filename
-        os.remove(filename)
+    __ __.pa__.isfile(filename
+        __.remove(filename)
 
 ___ get_hrefs_from_url(url
     page _ requests.get(url)
@@ -32,11 +32,11 @@ ___ get_hrefs_from_url(url
 
 ___ filter_hrefs_by_text(hrefs_list, filter_string
     regex _ re.compile('^http[s]?://\S*{0}\S*'.f..(filter_string))
-    r_ [h for h in hrefs_list if regex.search(h)]
+    r_ [h for h in hrefs_list __ regex.search(h)]
 
 ___ main(
     pass
 
 
-if __name__ == "__main__":
+__ __name__ == "__main__":
     main()

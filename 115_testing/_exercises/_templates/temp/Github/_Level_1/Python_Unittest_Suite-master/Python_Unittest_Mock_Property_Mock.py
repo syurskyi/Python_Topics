@@ -30,7 +30,7 @@ c_ Foo:
         ___ foo  value
             pass
 
-with patch('__main__.Foo.foo', new_callable_PropertyMock) as mock_foo:
+w__ patch('__main__.Foo.foo', new_callable_PropertyMock) __ mock_foo:
 
         mock_foo.return_value _ 'mockity-mock'
 

@@ -6,7 +6,7 @@ ___ sortingPositives (l
     '''
     positive _ []
     for i in l:
-        if i >_ 0:
+        __ i >_ 0:
             positive.append(i)
     r_ sorted(positive)
 
@@ -25,5 +25,5 @@ c_ TestingSortingPositives?.?
         aE..(sortingPositives([-3, -1, -9, -8]), [])
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     u__.main()

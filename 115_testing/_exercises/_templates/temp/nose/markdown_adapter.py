@@ -6,7 +6,7 @@ since markdown.py only provides a CLI.
 
 ____ subprocess ______ Popen, PIPE, STDOUT
 ____ tempfile ______ NamedTemporaryFile
-______ os
+______ __
 
 # This is here so there's one line to change if I want to swap
 # out a different script, such as markdown.pl
@@ -39,5 +39,5 @@ ___ run_markdown_file(input_text
     pipe _ Popen(interp_script_and_fileName,
             stdout_PIPE, stderr_STDOUT)
     output _ pipe.communicate()[0]
-    os.unlink(temp_file.name)
+    __.unlink(temp_file.name)
     r_ output.rstrip()

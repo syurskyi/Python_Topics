@@ -20,5 +20,5 @@ c_ TestDistance?.?
         aE..(0, dist.distance3d([0, 0, 0], [0, 0, 0]))
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     u__.main()

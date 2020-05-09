@@ -12,10 +12,10 @@ c_ PhoneBook:
     ___ is_consistent
         for name1, number1 in numbers.items(
             for name2, number2 in numbers.items(
-                if name1 == name2:
-                    if number1 == number2:
+                __ name1 == name2:
+                    __ number1 == number2:
                         continue
-                if number1.startswith(number2
+                __ number1.startswith(number2
                     r_ False
         r_ True
     

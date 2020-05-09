@@ -76,7 +76,7 @@ c_ UnigramTagger:
         :param tag: tag to add to the word
         """
 
-        if word not in model:
+        __ word not in model:
             model[word] _ Counter()
 
         model[word][tag] +_ 1
@@ -104,7 +104,7 @@ c_ UnigramTagger:
         result _ list()
 
         for word in words:
-            if word in model:
+            __ word in model:
                 available_tags _ model[word]
                 most_likely_tag _ max(available_tags, key_available_tags.get)
                 result.append((word, most_likely_tag))
@@ -122,17 +122,17 @@ c_ UnigramTagger:
 
         _output _ (model, tag_distribution)
 
-        with open(filename, 'wb') as outfile:
-            pickle.dump(_output, outfile)
+        w__ o..(filename, 'wb') __ outfile:
+            pickle.d..(_output, outfile)
 
 
-    ___ load  filename
+    ___ l..  filename
         """
         Loads a pickled model and tag_distribution
         :params filename: The filename which you wanna load
         """
 
-        with open(filename, 'rb') as infile:
-            data _ pickle.load(infile)
+        w__ o..(filename, 'rb') __ infile:
+            data _ pickle.l..(infile)
             model _ data[0]
             tag_distribution _ data[1]

@@ -40,7 +40,7 @@ ___ grob(val
 # When we try to test that grob calls frob with the correct argument look what happens:
 # 
 
-with patch('mymodule.frob') as mock_frob:
+w__ patch('mymodule.frob') __ mock_frob:
         val _ {6}
 
         mymodule.grob(val)
@@ -85,7 +85,7 @@ ___ copy_call_args(mock
 
         r_ new_mock
 
-with patch('mymodule.frob') as mock_frob:
+w__ patch('mymodule.frob') __ mock_frob:
         new_mock _ copy_call_args(mock_frob)
 
         val _ {6}

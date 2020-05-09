@@ -25,7 +25,7 @@ ___ test_div(
 ___ test_div_by_zero(
     num1 _ 10
     num2 _ 0
-    with pytest.raises(ZeroDivisionError
+    w__ pytest.raises(ZeroDivisionError
         sample_functions.div(num1, num2)
 
 
@@ -37,6 +37,6 @@ ___ test_div2(
     expected _ 2
     assert sample_functions.div(num1, num2) == expected
     num2 _ 0
-    with pytest.raises(ZeroDivisionError
+    w__ pytest.raises(ZeroDivisionError
         sample_functions.div(num1, num2)
 #Two aspects being tested under the same test case. Not a good practice.

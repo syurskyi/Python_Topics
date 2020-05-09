@@ -53,7 +53,7 @@ c_ LinkedList (object
 		
 	___ addNode   dataSet
 		newNode _ Node (dataSet, root)
-		if (root
+		__ (root
 			root.setPrevNode(newNode)
 		root _ newNode
 		size +_ 1
@@ -62,13 +62,13 @@ c_ LinkedList (object
 		thisNode _ root
 		
 		while (thisNode
-			if thisNode.getData() == dataSet:
+			__ thisNode.getData() == dataSet:
 				next _ thisNode.getNextNode()
 				prev _ thisNode.getPrevNode()
 				
-				if (next
+				__ (next
 					next.setPrevNode(prev)
-				if (prev
+				__ (prev
 					prev.setNextNode(next)
 				else:
 					root _ thisNode
@@ -85,7 +85,7 @@ c_ LinkedList (object
 	___ findNode   dataSet
 		thisNode _ root
 		while (thisNode
-			if (thisNode.getData() == dataSet
+			__ (thisNode.getData() == dataSet
 			    r_ dataSet
 			else:
 			    thisNode _ thisNode.getNextNode()
@@ -94,7 +94,7 @@ c_ LinkedList (object
 	___ getAllData
 		dataList _ []
 		thisNode _ root
-		if (root == None
+		__ (root == None
 			dataList.append(None)
 			r_ dataList
 		while (thisNode

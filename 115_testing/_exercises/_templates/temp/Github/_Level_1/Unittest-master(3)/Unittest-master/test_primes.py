@@ -21,5 +21,5 @@ c_ PrimesTestCase?.?
         for index in range(-1, -10, -1
             assertFalse(is_prime(index), msg_'{} should not be determined to be prime'.f..(index))
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     u__.main()

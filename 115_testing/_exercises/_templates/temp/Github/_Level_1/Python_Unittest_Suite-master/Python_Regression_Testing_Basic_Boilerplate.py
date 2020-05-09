@@ -69,5 +69,5 @@ c_ MyTestCase2?.?
 
 # ... more test classes ...
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     u__.main()

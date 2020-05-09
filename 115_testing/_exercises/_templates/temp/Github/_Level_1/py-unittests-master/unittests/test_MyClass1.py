@@ -45,5 +45,5 @@ c_ TestMyClass1?.?
         aE..(obj.getMean(), 10)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     u__.main()

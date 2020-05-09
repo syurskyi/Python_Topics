@@ -34,9 +34,9 @@ c_ TestUpdateIssue(BaseApi
 
         aE..(response_dict['issue']['@id'], issue_id)
         for field in response_dict['issue']['field']:
-            if field['@name'] == 'summary':
+            __ field['@name'] == 'summary':
                 aE..(field['value'], issue_summary)
-            if field['@name'] == 'description':
+            __ field['@name'] == 'description':
                 aE..(field['value'], issue_description)
 
     ___ test_update_not_existing_issue

@@ -30,7 +30,7 @@
 # Example use with output streams:
 # 
 
-with captured_stdout() as stdout, captured_stderr() as stderr:
+w__ captured_stdout() __ stdout, captured_stderr() __ stderr:
     print("hello")
 
     print("error", file_sys.stderr)
@@ -42,7 +42,7 @@ assert stderr.getvalue() == "error\n"
 # Example use with input stream:
 # 
 
-with captured_stdin() as stdin:
+w__ captured_stdin() __ stdin:
     stdin.write('hello\n')
 
     stdin.seek(0)

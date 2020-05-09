@@ -1,11 +1,11 @@
-______ os
+______ __
 
 c_ Phonebook(
     
     ___  - 
         entries _ {}
         filename _ "phonebook.txt"
-        file_cache _ open(filename, "w")
+        file_cache _ o..(filename, "w")
 
     ___ add  name, number
         entries[name] _ number
@@ -22,5 +22,5 @@ c_ Phonebook(
     ___ clear
         entries _ {}
         file_cache.close()
-        os.remove(filename)
+        __.remove(filename)
 

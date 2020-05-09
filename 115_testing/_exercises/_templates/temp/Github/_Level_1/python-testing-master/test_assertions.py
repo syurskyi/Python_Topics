@@ -36,7 +36,7 @@ c_ TestAssertions(TestCase
         assertNotAlmostEqual(2.012, 2.013, 3)
 
     ___ test_exceptions
-        with assertRaises(ZeroDivisionError
+        w__ assertRaises(ZeroDivisionError
             x _ 42 / 0
 
     ___ test_list_comparison

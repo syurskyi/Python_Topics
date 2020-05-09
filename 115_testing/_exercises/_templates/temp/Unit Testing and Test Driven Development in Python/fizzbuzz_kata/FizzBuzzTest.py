@@ -1,11 +1,11 @@
 ______ pytest
 
 ___ fizzBuzz( value
-    if isMultiple(value, 3
-        if isMultiple(value, 5
+    __ isMultiple(value, 3
+        __ isMultiple(value, 5
             r_ "FizzBuzz"
         r_ "Fizz"
-    if isMultiple(value, 5
+    __ isMultiple(value, 5
         r_ "Buzz"
     r_ st.(value)
 

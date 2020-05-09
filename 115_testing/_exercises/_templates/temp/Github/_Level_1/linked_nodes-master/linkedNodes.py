@@ -18,7 +18,7 @@ c_ NodeList:
 
     ___ add_node  value
         checked_node _ node_head
-        if(checked_node is None
+        __(checked_node is None
             node_head _ Node(value)
         else:
             while(checked_node.get_next_node() is not None
@@ -38,10 +38,10 @@ c_ NodeList:
         for count in range(position
             previous_node _ checked_node
             checked_node _ checked_node.get_next_node()
-            if(checked_node == None
+            __(checked_node == None
                 found _ False
                 break
-        if(found and previous_node is not None
+        __(found and previous_node is not None
             previous_node.set_next_node(checked_node.get_next_node())
 
     ___ get_node_value  position
@@ -49,10 +49,10 @@ c_ NodeList:
         found _ True
         for count in range(position
             checked_node _ checked_node.get_next_node()
-            if(checked_node == None
+            __(checked_node == None
                 found _ False
                 break
-        if(found
+        __(found
             r_ checked_node.value
         else:
             r_ None

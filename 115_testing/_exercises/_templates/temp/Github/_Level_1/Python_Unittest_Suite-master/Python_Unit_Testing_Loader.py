@@ -65,7 +65,7 @@ ___ load_tests(loader, standard_tests, pattern
 
     # top level directory cached on loader instance
 
-    this_dir _ os.path.dirname(__file__)
+    this_dir _ __.pa__.dirname(__file__)
 
     package_tests _ loader.discover(start_dir_this_dir, pattern_pattern)
 

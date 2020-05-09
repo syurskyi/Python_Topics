@@ -37,5 +37,5 @@ c_ NodesDeleteTest?.?
         #compare the list data and the sample data
         assertTrue(dataTest, rmItemDataList)
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     u__.main(verbosity_2)

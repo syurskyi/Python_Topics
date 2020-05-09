@@ -19,10 +19,10 @@
 # 
 
 mock _ MagicMock()
-mock.__str__.return_value _ 'foobarbaz'
+mock.-s.return_value _ 'foobarbaz'
 
 st.(mock)
 
 # OUTPUT: 'foobarbaz'
 
-mock.__str__.assert_called_with()
+mock.-s.assert_called_with()

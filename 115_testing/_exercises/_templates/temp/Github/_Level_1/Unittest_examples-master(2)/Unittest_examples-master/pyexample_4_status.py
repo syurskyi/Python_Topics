@@ -51,5 +51,5 @@ c_ BaseTestClass?.?
         aE..(1, 1)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     u__.main()

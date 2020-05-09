@@ -11,18 +11,18 @@ c_ Issue(models.Model
         verbose_name _ 'Заметка'
         verbose_name_plural _ 'Заметки'
 
-    ___ __str__
+    ___ -s
         r_ name
 
     ___ set_due_date  due_date
         due_date _ due_date
 
     ___ foo
-        if settings.DEBUG:
+        __ settings.DEBUG:
             r_ name
         r_ 'stub'
 
     ___ bar
-        if settings.ADMINS_NAME in settings.CUSTOM_LIST:
+        __ settings.ADMINS_NAME in settings.CUSTOM_LIST:
             r_ name
         r_ 'stub'
