@@ -1,7 +1,6 @@
 """Coding Challenge Skeleton #4
 """
 
-
 class EfficiencyAdding:
 
     def adding_two_first_method(self, number_reached):

@@ -1,7 +1,6 @@
 """Coding Challenge #2
 """
 
-
 class Car:
     def __init__(self):
         self._speed = 0
