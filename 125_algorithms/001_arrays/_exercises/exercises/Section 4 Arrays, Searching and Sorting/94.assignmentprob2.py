@@ -1,13 +1,13 @@
-def func(numArray, val, l=0, h=-1):
-    if not numArray: return -1
-    if(h == -1): h = len(numArray) - 1
-    if l == h:
-        if numArray[l] == val: return l
-        else: return -1
-    m = l + (h - l) // 2
-    if numArray[m] > val: return func(numArray, val, l, m - 1)
-    elif numArray[m] < val: return func(numArray, val, m + 1, h)
-    else: return m
-	    
-numArray = [1,2,3,4,5,6,7]
-print(func(numArray, 7))    
+# ___ func(numArray val l_0 h_-1
+#     __ no. ?: r_ -1
+#     __|h __ -1 : ? _ le. ? - 1
+#     __ l __ ?
+#         __ ?|l __ v..: r_ l
+#         ____ r_ -1
+#     m _ l + |? - l // 2
+#     __ ?|? > v..: r_ ?(? v.. l m - 1)
+#     ____ ?|m < val: r_ ?(? v.. m + 1, h)
+#     ____ r_ ?
+#
+# numArray _ [1,2,3,4,5,6,7]
+# print ?? 7

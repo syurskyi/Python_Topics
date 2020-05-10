@@ -1,4 +1,4 @@
-# # Write a method to decide __ two strings are anagrams or not.
+# # Write a method to decide if two strings are anagrams or not.
 #
 # # "abc" "cba" => true
 # # "cinema" "iceman" => true
@@ -7,31 +7,31 @@
 # # O(nlogn)
 #
 # ___ anagram word1 word2
-# 	r_ so..? __ so.. ?
+# 	r_ so.. ? __ so.. ?
 #
 # # O(n) O(n)
 #
 # ___ anagram2 word1 word2
-# 	__ le. ? !_ le. ?
+# 	__ le. ? != le. ?
 # 		r_ F..
 #
-# 	dict1 =
-# 	dict2 =
+# 	dict1
+# 	dict2
 #
 # 	___ i __ ra.. le. _1
-# 		__ ? ? no. __ ?.k..
-# 			? ? ? _ 1
+# 		__ _1|? no. __ _1.k..
+# 			_1|_1|? _ 1
 # 		____
-# 			? ? ? +_ 1
+# 			_1|_1|? +_ 1
 #
-# 	___ i __ ra.. le. w_2
-# 		__ ? ? no. __ ?.k..
-# 			? ? ? _ 1
+# 	___ i __ ra.. le. _2
+# 		__ _2 ? no. __ _2.k..
+# 			_2|_2|? _ 1
 # 		____
-# 			? ? ? += 1
+# 			_2|_2 ? +_ 1
 #
-# 	___ key, value __ ?.i..
-# 		__ ? k.. !_ v..
+# 	___ key, value __ _1.it..
+# 		__ _2|? != ?
 # 			r_ F..
 #
 # 	r_ T..
