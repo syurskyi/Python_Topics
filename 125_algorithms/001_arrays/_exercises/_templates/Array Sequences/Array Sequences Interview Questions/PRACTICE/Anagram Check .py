@@ -22,26 +22,26 @@
 #     :type t: str
 #     :rtype: bool
 #     """
-#     s _ s.re.. ' ', '' .lo__
-#     t _ t.re.. ' ', '' .lo__
+#     s _ ?.re.. ' ', '' .lo__
+#     t _ ?.re.. ' ', '' .lo__
 # 
-#     i_  le. s  !_ le. t
+#     i_  le.?  !_ le.?
 #         r_ F...
 #     counter _      # dict
-#     ___ letter i_ s
-#         i_ l.. i_ c..
-#             c.. l.. +_ 1
-#         e___
-#             c... l.. _ 1
+#     ___ letter __ s
+#         __ ? __ c..
+#             c.. ? +_ 1
+#         ____
+#             c... ? _ 1
 # 
-#     ___ letter i_ t
-#         i_ l.. i_ c...
-#             c... l.. -_ 1
-#         e___
+#     ___ letter __ t
+#         __ ? __ c...
+#             c... ? -_ 1
+#         ____
 #             r_ F...
 # 
-#     ___ k i_ c...
-#         i_ c... k !_ 0
+#     ___ k __ c...
+#         __ ? k !_ 0
 #             r_ F...
 # 
 #     r_ T...
@@ -70,9 +70,9 @@
 # f___ n___.t... _______ a_e
 # 
 # 
-# class AnagramTest object :
+# class AnagramTest o..
 # 
-#     ___ test self, sol :
+#     ___ test  sol
 #         a._e. ? 'go go go', 'gggooo' , T... 
 #         a._e. ? 'abc', 'cba' , T...
 #         a._e. ? 'hi man', 'hi     man' , T..

@@ -16,11 +16,11 @@
 #
 # # %%
 # ___ pair_sum arr k
-#     counter ___ 0
-#     lookup ___ se..
+#     counter _ 0
+#     lookup _ se..
 #     ___ num __ ?
 #         __ ?-? __ l..
-#             c.. +___1
+#             c.. +_ 1
 #         ____
 #             l___.a.. ?
 #     r_ ?
@@ -38,19 +38,19 @@
 # """
 # RUN THIS CELL TO TEST YOUR SOLUTION
 # """
-# from nose.tools import assert_equal
+# ____ n__.t.. _____ a_e..
 #
-# class TestPair(object):
+# c_ TestPair o..
 #
-#     def test(self,sol):
-#         assert_equal(sol([1,9,2,8,3,7,4,6,5,5,13,14,11,13,-1],10),6)
-#         assert_equal(sol([1,2,3,1],3),1)
-#         assert_equal(sol([1,3,2,2],4),2)
+#     ___ test sol
+#         a_e.. ? ([1,9,2,8,3,7,4,6,5,5,13,14,11,13,-1],10),6)
+#         a_e.. ? ([1,2,3,1],3),1)
+#         a_e.. ? ([1,3,2,2],4),2)
 #         print('ALL TEST CASES PASSED')
 #
 # #Run tests
-# t ___ TestPair()
-# t.test(pair_sum)
+# t _ ?
+# ?.t.. p_s..
 #
 #
 # # %%
