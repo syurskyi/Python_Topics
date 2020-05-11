@@ -4,7 +4,7 @@
 #
 # ## Problem
 # Given a string,determine if it is compreised of all unique characters. For example, the string 'abcde' has all unique
-#  characters and should return True. The string 'aabcde' contains duplicate characters and should return false.
+#  characters and should return T... The string 'aabcde' contains duplicate characters and should return false.
 # '''
 #
 # # %%
@@ -50,9 +50,9 @@
 # c_ TestUnique o..
 #
 #     ___ test  sol
-#         a_e.. ? ''), True)
+#         a_e.. ? ''), T..)
 #         a_e.. ? 'goo'), False)
-#         a_e.. ? 'abcdefg'), True)
+#         a_e.. ? 'abcdefg'), T..)
 #         print('ALL TEST CASES PASSED')
 #
 # # Run Tests

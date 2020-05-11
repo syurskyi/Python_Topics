@@ -2,7 +2,7 @@
 # # Problem
 # #
 # # Given a string,determine if it is compreised of all unique characters. For example, the string 'abcde' has all
-# # unique characters and should return True. The string 'aabcde' contains duplicate characters and should return false.
+# # unique characters and should return T... The string 'aabcde' contains duplicate characters and should return false.
 # # Solution
 # #
 # # We'll show two possible solutions, one using a built-in data structure and a built in function, and another using
@@ -32,13 +32,13 @@
 # # c_ TestUnique o..
 # #
 # #     ___ test  sol
-# #         a_e.. ? ''), True)
-# #         a_e.. ? 'goo'), False)
-# #         a_e.. ? 'abcdefg'), True)
+# #         a_e.. ? ''), T..
+# #         a_e.. ? 'goo'), F..
+# #         a_e.. ? 'abcdefg'), T..)
 # #         print('ALL TEST CASES PASSED')
 # #
 # #
 # # # Run Tests
-# # t = TestUnique()
-# # t.test(uni_char)
+# # t _ ?
+# # ?.t.. ?
 #
