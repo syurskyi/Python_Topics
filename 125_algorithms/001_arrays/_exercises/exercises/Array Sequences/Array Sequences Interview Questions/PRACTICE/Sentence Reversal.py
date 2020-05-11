@@ -1,67 +1,67 @@
-# # %%
-# '''
-# # Sentence Reversal
-# ## Problem
-# Given a string of words, reverse all the words. For example:
-# Given:
-#     'This is the best'
-# Return:
-#     'best the is This'
-# As part of this exercise you should remove all leading and trailing whitespace. So that inputs such as:
-#     '  space here'  and 'space here      '
-# both become:
-#     'here space'
-# ## Solution
-# Fill out your solution below:
-# '''
-#
-# # %%
-# ___ rev_word s
-#     r_ " ".j.. re.. ?.s..
-#     p..
-#
-# # %%
-# ? ('Hi John,   are you ready to go?')
-#
-# # %%
-# ? ('    space before')
-#
-# # %%
-# ? ('space after     ')
-#
-# # %%
-# '''
-# ## Learn
-# - " ".join()
-# - reversed()
-# - s.split()
-# '''
-#
-# # %%
-# # reversed()
-# '''
-# Init signature: reversed(self, /, *args, **kwargs)
-# Docstring:
-# reversed(sequence) -> reverse iterator over values of the sequence
-#
-# Return a reverse iterator
-# Type:           type
-# '''
-#
-# # %%
-# '''
-# _____
-# '''
-#
-# # %%
-# '''
-# # Test Your Solution
-# '''
-#
-# # %%
-# """
-# RUN THIS CELL TO TEST YOUR SOLUTION
-# """
+# %%
+'''
+# Sentence Reversal
+## Problem
+Given a string of words, reverse all the words. For example:
+Given:
+    'This is the best'
+Return:
+    'best the is This'
+As part of this exercise you should remove all leading and trailing whitespace. So that inputs such as:
+    '  space here'  and 'space here      '
+both become:
+    'here space'
+## Solution
+Fill out your solution below:
+'''
+
+# %%
+def rev_word(s):
+    return " ".join(reversed(s.split()))
+    pass
+
+# %%
+print(rev_word('Hi John,   are you ready to go?'))
+
+# %%
+print(rev_word('    space before'))
+
+# %%
+print(rev_word('space after     '))
+
+# %%
+'''
+## Learn
+- " ".join()
+- reversed()
+- s.split()
+'''
+
+# %%
+# reversed()
+'''
+Init signature: reversed(self, /, *args, **kwargs)
+Docstring:
+reversed(sequence) -> reverse iterator over values of the sequence
+
+Return a reverse iterator
+Type:           type
+'''
+
+# %%
+'''
+_____
+'''
+
+# %%
+'''
+# Test Your Solution
+'''
+
+# %%
+"""
+RUN THIS CELL TO TEST YOUR SOLUTION
+"""
 #
 # from nose.tools import assert_equal
 #

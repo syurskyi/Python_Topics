@@ -51,14 +51,14 @@
 # """
 # RUN THIS CELL TO TEST YOUR SOLUTION
 # """
-# from nose.tools import assert_equal
+# ____ n__.t.. ____ a_e..
 #
-# class TestCompress(object):
+# c_ TestCompress o..
 #
-#     def test(self, sol):
-#         assert_equal(sol(''), '')
-#         assert_equal(sol('AABBCC'), 'A2B2C2')
-#         assert_equal(sol('AAABCCDDDDD'), 'A3B1C2D5')
+#     ___ test  sol
+#         a_e.. ? ''), '')
+#         a_e.. ? 'AABBCC'), 'A2B2C2')
+#         a_e.. ? 'AAABCCDDDDD'), 'A3B1C2D5')
 #         print ('ALL TEST CASES PASSED')
 #
 # # Run Tests

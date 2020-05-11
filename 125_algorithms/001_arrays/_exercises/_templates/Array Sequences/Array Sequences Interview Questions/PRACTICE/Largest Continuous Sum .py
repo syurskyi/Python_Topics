@@ -38,11 +38,11 @@
 # # %%
 # from nose.tools import assert_equal
 #
-# class LargeContTest(object):
-#     def test(self,sol):
-#         assert_equal(sol([1,2,-1,3,4,-1]),9)
-#         assert_equal(sol([1,2,-1,3,4,10,10,-10,-1]),29)
-#         assert_equal(sol([-1,1]),1)
+# c_ LargeContTest o..
+#     ___ test sol
+#         a_e.. ? [1,2,-1,3,4,-1]),9)
+#         a_e.. ? [1,2,-1,3,4,10,10,-10,-1]),29)
+#         a_e.. ? [-1,1]),1)
 #         print ('ALL TEST CASES PASSED')
 #
 # #Run Test

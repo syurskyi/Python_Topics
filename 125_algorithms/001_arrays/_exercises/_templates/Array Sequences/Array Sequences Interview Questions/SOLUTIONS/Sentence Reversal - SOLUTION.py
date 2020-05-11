@@ -77,16 +77,16 @@
 # # RUN THIS CELL TO TEST YOUR SOLUTION
 # # """
 # #
-# # from nose.tools import assert_equal
+# # ____ n__.t.. ____ a_e..
 # #
 # #
-# # class ReversalTest(object):
+# # c_ ReversalTest o..
 # #
-# #     ___ test(self, sol):
-# #         assert_equal(sol('    space before'), 'before space')
-# #         assert_equal(sol('space after     '), 'after space')
-# #         assert_equal(sol('   Hello John    how are you   '), 'you are how John Hello')
-# #         assert_equal(sol('1'), '1')
+# #     ___ test  sol
+# #         a_e.. ? '    space before'), 'before space')
+# #         a_e.. ? 'space after     '), 'after space')
+# #         a_e.. ? '   Hello John    how are you   '), 'you are how John Hello')
+# #         a_e.. ? '1'), '1')
 # #         print("ALL TEST CASES PASSED")
 # #
 # #

@@ -44,15 +44,15 @@
 # """
 # RUN THIS CELL TO TEST YOUR CODE>
 # """
-# from nose.tools import assert_equal
+# ____ n__.t.. ____ a_e..
 #
 #
-# class TestUnique(object):
+# c_ TestUnique o..
 #
-#     ___ test(self, sol):
-#         assert_equal(sol(''), True)
-#         assert_equal(sol('goo'), False)
-#         assert_equal(sol('abcdefg'), True)
+#     ___ test  sol
+#         a_e.. ? ''), True)
+#         a_e.. ? 'goo'), False)
+#         a_e.. ? 'abcdefg'), True)
 #         print('ALL TEST CASES PASSED')
 #
 # # Run Tests

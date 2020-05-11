@@ -97,16 +97,16 @@
 # """
 # RUN THIS CELL TO TEST YOUR SOLUTION
 # """
-# # from nose.tools import assert_equal
+# # ____ n__.t.. ____ a_e..
 # #
-# # class AnagramTest(object):
+# # c_ AnagramTest o..
 # #
-# #     ___ test(self, sol):
-# #         assert_equal(sol('go go go','gggooo'),True)
-# #         assert_equal(sol('abc','cba'),True)
-# #         assert_equal(sol('hi man','hi     man'),True)
-# #         assert_equal(sol('aabbcc','aabbc'),False)
-# #         assert_equal(sol('123','1 2'),False)
+# #     ___ test  sol
+# #         a_e.. ? 'go go go','gggooo'),True)
+# #         a_e.. ? 'abc','cba'),True)
+# #         a_e.. ? 'hi man','hi     man'),True)
+# #         a_e.. ? 'aabbcc','aabbc'),False)
+# #         a_e.. ? '123','1 2'),False)
 # #         print("ALL TEST CASES PASSED")
 #
 # # # Run Tests

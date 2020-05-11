@@ -70,7 +70,7 @@
 # f___ n___.t... _______ a_e
 # 
 # 
-# class AnagramTest o..
+# c_ AnagramTest o..
 # 
 #     ___ test  sol
 #         a._e. ? 'go go go', 'gggooo' , T... 
