@@ -72,5 +72,5 @@
 # #
 # #
 # # # Run tests
-# # t = TestPair()
-# # t.test(pair_sum)
+# # t _ ?
+# # ?.t.. ?
