@@ -76,8 +76,8 @@ ___ cmpFn(obj
 # This assumes that the list is sorted.
 c_ List:
     ___  -
-        lst _ []
-        lstguid _ []
+        lst _ # list
+        lstguid _ # list
 
     ___ a..  obj
         lst.a..(obj)
@@ -100,13 +100,13 @@ c_ ListIterator:
         cur _ 0
 
     ___ get
-        __ cur >_0 an. cur < len(lst
+        __ cur >_0 an. cur < le.(lst
             r_ lst[cur]
         ____:
             r_ N..
 
     ___ next
-        __ cur < len(lst) -1:
+        __ cur < le.(lst) -1:
             cur +_ 1
             r_ T..
         ____:
@@ -146,7 +146,7 @@ c_ Product:
 
 # reads 4 fields from given file
 ___ read_csv(file_name
-    lst _ []
+    lst _ # list
     ___
         w__ o..(file_name, newline_'', encoding_'utf-8') __ csvfile:
             reader _ csv.DictReader(csvfile)
@@ -162,7 +162,7 @@ ___ read_csv(file_name
 
 ___ main(
     lst _ read_csv('input.csv')
-    n _ len(lst)
+    n _ le.(lst)
 
     db _ Database()
     db.select_table('products')
@@ -171,7 +171,7 @@ ___ main(
         p..
         db.create(item)
 
-    print("Created " + st.(len(lst)) + " items");
+    print("Created " + st.(le.(lst)) + " items");
 
     print("Programmed by " + CONST_AUTHOR)
 

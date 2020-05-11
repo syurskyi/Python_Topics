@@ -10,6 +10,6 @@ c_ Prescription:
         
     ___ days_taken
         all_days _ (dispense_date + timedelta(days_i)
-                    ___ i __ range(days_supply))
+                    ___ i __ ra..(days_supply))
         #return (day for day in all_days if day < date.today())
         r_ all_days

@@ -15,5 +15,5 @@ ___ sieve_of_eratosthenes(n
         __ isprime:
             yield i
 
-            ___ x __ range(i * i, n, i
+            ___ x __ ra..(i * i, n, i
                 A[x] _ F..

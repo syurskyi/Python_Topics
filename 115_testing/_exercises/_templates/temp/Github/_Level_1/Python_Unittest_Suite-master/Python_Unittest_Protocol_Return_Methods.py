@@ -30,7 +30,7 @@ __.(mock)
 
 # OUTPUT: '1'
 
-len(mock)
+le.(mock)
 
 # OUTPUT: '0'
 

@@ -28,7 +28,7 @@ w__ o..(infile) __ f1:
     ___ line __ f1:
         row _ line.split(",")
         print(row[0] + "\n------------")
-        ___ i __ range(1, len(row)):
+        ___ i __ ra..(1, le.(row)):
             print(row[i])
 
 print("\n**********************")

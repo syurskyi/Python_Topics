@@ -11,7 +11,7 @@ c_ TestLinkedNodesListMethods?.?
         test_value _ 5
         my_linked_list.add_node(test_value)
         aE..(test_value,
-                         my_linked_list.get_node_value(len(node_values)))
+                         my_linked_list.get_node_value(le.(node_values)))
 
     ___ test_remove_node
         node_be_removed_index _ 1

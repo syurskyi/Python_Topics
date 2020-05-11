@@ -74,16 +74,16 @@ c_ StockCrossOverSignalTest ?.?
         __ not isinstance(price_list, collections.Iterable):
             r_ date
         ____:
-            delta = 1.0/len(price_list)
-            r_ [date + i*timedelta(delta) ___ i __ range(len(price_list))]
+            delta = 1.0/le.(price_list)
+            r_ [date + i*timedelta(delta) ___ i __ ra..(le.(price_list))]
 
     ___ _generate_timestamps price_list):
         r_ list(_flatten([
             _generate_timestamp_for_date(d_t_(2014, 2, 13) -
                                               timedelta(i),
-                                              price_list[len(price_list)-i-1])
-            ___ i __ range(len(price_list) - 1, -1, -1)
-            __ price_list[len(price_list) - i - 1] is not N..]))
+                                              price_list[le.(price_list)-i-1])
+            ___ i __ ra..(le.(price_list) - 1, -1, -1)
+            __ price_list[le.(price_list) - i - 1] is not N..]))
 
     ___ given_a_series_of_prices price_list):
         timestamps = _generate_timestamps(price_list)

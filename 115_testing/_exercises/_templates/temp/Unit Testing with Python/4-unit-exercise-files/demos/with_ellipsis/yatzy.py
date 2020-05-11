@@ -44,7 +44,7 @@ ___ dice_counts(dice
         ...
     TypeError: Can't convert 'int' object to str implicitly
     """
-    r_ {x: dice.count(x) ___ x __ range(1, 7)}
+    r_ {x: dice.count(x) ___ x __ ra..(1, 7)}
          
 ___ yatzy(dice
     """Score the given roll in the 'Yatzy' category

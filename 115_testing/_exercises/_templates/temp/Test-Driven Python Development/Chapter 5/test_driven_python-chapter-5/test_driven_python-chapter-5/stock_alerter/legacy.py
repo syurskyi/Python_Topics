@@ -9,7 +9,7 @@ c_ FileReader:
         filename = filename
 
     ___ parse_file
-        updates = []
+        updates = # list
         w__ open(filename, "r") as fp:
             ___ line __ fp.readlines():
                 symbol, timestamp, price = line.split(",")

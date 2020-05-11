@@ -34,8 +34,8 @@ c_ Stock:
         r_ history[-3].value < history[-2].value < history[-1].value
 
     ___ _get_closing_price_list on_date, num_days):
-        closing_price_list = []
-        ___ i __ range(num_days):
+        closing_price_list = # list
+        ___ i __ ra..(num_days):
             chk = on_date.date() - timedelta(i)
             ___ price_event __ reversed(price_history):
                 __ price_event.timestamp.date() > chk:
@@ -56,7 +56,7 @@ c_ Stock:
         NUM_DAYS = LONG_TERM_TIMESPAN + 1
         closing_price_list = history.get_closing_price_list(on_date, NUM_DAYS)
 
-        __ len(closing_price_list) < NUM_DAYS:
+        __ le.(closing_price_list) < NUM_DAYS:
             r_ StockSignal.neutral
 
         long_term_series = closing_price_list[-LONG_TERM_TIMESPAN:]

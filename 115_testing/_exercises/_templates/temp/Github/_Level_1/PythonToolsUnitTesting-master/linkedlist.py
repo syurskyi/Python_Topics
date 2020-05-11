@@ -92,7 +92,7 @@ c_ LinkedList  o..
 		r_ N..
 
 	___ getAllData
-		dataList _ []
+		dataList _ # list
 		thisNode _ root
 		__ (root __ N..
 			dataList.a..(N..)

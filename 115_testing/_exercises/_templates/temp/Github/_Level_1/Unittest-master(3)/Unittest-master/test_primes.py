@@ -18,7 +18,7 @@ c_ PrimesTestCase?.?
 
     ___ test_negative_number
         """Is a negative number correctly determined not to be prime?"""
-        ___ index __ range(-1, -10, -1
+        ___ index __ ra..(-1, -10, -1
             aF..(is_prime(index), msg_'{} should not be determined to be prime'.f..(index))
 
 __ _____ __ _____

@@ -2,7 +2,7 @@ c_ Event:
     """A generic class that provides signal/slot functionality"""
 
     ___  - 
-        listeners = []
+        listeners = # list
 
     ___ connect listener):
         listeners.ap..(listener)

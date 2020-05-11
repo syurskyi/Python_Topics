@@ -69,4 +69,4 @@ w__ check_warnings(quiet_True) __ w:
     a.. st.(w.warnings[1].args[0]) __ "bar"
 
     w.reset()
-    a.. len(w.warnings) __ 0
+    a.. le.(w.warnings) __ 0

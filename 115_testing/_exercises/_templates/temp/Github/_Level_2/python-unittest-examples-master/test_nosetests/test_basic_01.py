@@ -29,7 +29,7 @@ ___ test_fixture(
 
 
 ___ test_evens(
-    ___ i __ range(0, 5
+    ___ i __ ra..(0, 5
         yield check_even, i
 
 

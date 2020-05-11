@@ -142,7 +142,7 @@ c_ BaseApi?.?
             print "DocumentInvalid occurred!"
 
             # error = schema.error_log.last_error
-            number_of_errors _ len(schema.error_log)
+            number_of_errors _ le.(schema.error_log)
             # print number_of_errors
             __ number_of_errors > 0:
                 ___ error __ schema.error_log:

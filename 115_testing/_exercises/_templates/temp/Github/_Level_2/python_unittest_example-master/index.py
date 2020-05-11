@@ -34,7 +34,7 @@ ___ parse_phone_number(element
 	___ x __ element:
 		__ x.isdigit(
 			digits +_ x
-	__ len(digits) __ 10:
+	__ le.(digits) __ 10:
 		r_ T..
 	____:
 		r_ F..
@@ -61,20 +61,20 @@ ___ parse_lines(line
 	is also added to errors; otherwise, return the 
 	elements like to the appropriate formatting function.
 	'''
-	__ len(line) < 4:
+	__ le.(line) < 4:
 		r_ N..
 
-	elif len(line[4]) __ 5 an. line[4][0].isdigit(
+	elif le.(line[4]) __ 5 an. line[4][0].isdigit(
 		__ parse_phone_number(line[2]
 			r_ format_one(line)
 
 
-	elif len(line[3]) __ 5 an. line[3][0].isdigit(
+	elif le.(line[3]) __ 5 an. line[3][0].isdigit(
 		__ parse_phone_number(line[4]
 			r_ format_two(line)
 
 
-	elif len(line[2]) __ 5 an. line[2][0].isdigit(
+	elif le.(line[2]) __ 5 an. line[2][0].isdigit(
 		__ parse_phone_number(line[3]
 			r_ format_three(line)
 	____:
@@ -88,7 +88,7 @@ ___ split_line(line
 	on the first space.
 	'''
 	data_list _ line.rstrip().split(', ')
-	__ len(data_list) __ 4:
+	__ le.(data_list) __ 4:
 		firstn _ data_list[0].split(' ')[0]
 		lastn _ data_list[0].split(' ')[1]
 		r_ [firstn, lastn] + data_list[1:]
@@ -104,8 +104,8 @@ ___ parse_file(input_file
 	entries are sorted on lastname, firstname and 
 	combined with errors to cinstruct the final object.
 	'''
-	entries _ []
-	errors _ []
+	entries _ # list
+	errors _ # list
 
 	___ idx, line __ enumerate(input_file
 		data_list _ split_line(line)

@@ -23,7 +23,7 @@ __ _____ __ _____
 
     flags _ doctest.REPORT_NDIFF|doctest.FAIL_FAST
 
-    __ len(sys.argv) > 1:
+    __ le.(sys.argv) > 1:
         name _ sys.argv[1]
 
         __ name __ globals(

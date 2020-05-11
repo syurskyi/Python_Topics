@@ -24,7 +24,7 @@ c_ Product:
 
 
 ___ read_csv(file_name
-    lst _ []
+    lst _ # list
     ___
         w__ o..(file_name, newline_'', encoding_'utf-8') __ csvfile:
             reader _ csv.DictReader(csvfile)
@@ -40,7 +40,7 @@ ___ read_csv(file_name
 
 ___ main(
     lst _ read_csv('input.csv')
-    n _ len(lst)
+    n _ le.(lst)
     print ('Number of records: ', n)
     __ n < 10000:
         print ('There are less than 10000 records')

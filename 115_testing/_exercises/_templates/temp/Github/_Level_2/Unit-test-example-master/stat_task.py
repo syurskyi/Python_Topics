@@ -21,7 +21,7 @@ c_ Parser(
         :return: список со списками данных по каждой строке
         """
 
-        SOURCE _ []
+        SOURCE _ # list
         qty _ 0
         allines _ 0
 
@@ -48,7 +48,7 @@ c_ Parser(
         :return: [int, int...] - список с позиционными номерами данных
         в списках/кортежах, соответствующих заголовкам столбцов
         """
-        number _ []
+        number _ # list
 
         ___ head __ heads:
             __ head __ source[0]:
@@ -84,7 +84,7 @@ c_ Parser(
         :return: list - список неповторяющихся значений для каждого объекта
         списка/кортежа под номером index
         """
-        keyname _ []
+        keyname _ # list
 
         ___ elem __ source:
             __ elem[index] __ keyname:
@@ -149,7 +149,7 @@ c_ Statistics:
         :return: статистические 50% (медиану) данных в self.data
         """
 
-        lendata _ len(data)
+        lendata _ le.(data)
 
         __ lendata % 2 __ 0:
             r_ ceil((data[lendata//2 - 1] + data[lendata//2]) /2)
@@ -171,7 +171,7 @@ c_ Statistics:
         граничного индекса, округленного внииз до целого числа.
         :return: статистические 90% данных в data
         """
-        lendata _ len(data)
+        lendata _ le.(data)
         index_plus1 _ floor(lendata * 0.9)
         index _ index_plus1 - 1
 
@@ -196,7 +196,7 @@ c_ Statistics:
         граничного индекса, округленного внииз до целого числа.
         :return: статистические 99% данных в data
         """
-        lendata _ len(data)
+        lendata _ le.(data)
         index_plus1 _ floor(lendata * 0.99)
         index _ index_plus1 - 1
 
@@ -221,7 +221,7 @@ c_ Statistics:
         граничного индекса, округленного внииз до целого числа.
         :return: статистические 99,9% данных в data
         """
-        lendata _ len(data)
+        lendata _ le.(data)
         index_plus1 _ floor(lendata * 0.999)
         index _ index_plus1 - 1
 
@@ -252,7 +252,7 @@ c_ Statistics:
         :return: {int: [int, float, float]}
         """
         rdata _ [(x - x% -denom) ___ x __ data]
-        lendata _ len(rdata)
+        lendata _ le.(rdata)
         fdict _ {number: [0] ___ number __ sorted(set(rdata))}
 
         ___ number __ rdata:
@@ -292,7 +292,7 @@ c_ StatsResult(Statistics
         D _ {}
 
         ___ key __ datas:
-            D[key] _ []
+            D[key] _ # list
             ___ data __ datas[key]:
                 data _ tuple(sorted(data)) # for not sorted Source_data
                 D[key].a..(tuple(x() ___ x __ list_funcs))

@@ -44,7 +44,7 @@ c_ SpySingleSignOnRegistry:
 
     ___  -   accept_all_tokens _ T..
         accept_all_tokens _ accept_all_tokens
-        checked_tokens _ []
+        checked_tokens _ # list
 
     ___ is_valid  token
         checked_tokens.a..(token)

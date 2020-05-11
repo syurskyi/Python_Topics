@@ -35,7 +35,7 @@ c_ NodeList
         checked_node _ node_head
         previous_node _ N..
         found _ T..
-        ___ count __ range(position
+        ___ count __ ra..(position
             previous_node _ checked_node
             checked_node _ checked_node.get_next_node()
             __(checked_node __ N..
@@ -47,7 +47,7 @@ c_ NodeList
     ___ get_node_value  position
         checked_node _ node_head
         found _ T..
-        ___ count __ range(position
+        ___ count __ ra..(position
             checked_node _ checked_node.get_next_node()
             __(checked_node __ N..
                 found _ F..

@@ -9,7 +9,7 @@ ______ deleting_nodes_unittest
 ______ getting_size_of_linkedlist_unittest
   
 #Load all the test cases
-suiteList _ []
+suiteList _ # list
 suiteList.a..(u__.TestLoader().loadTestsFromTestCase(add_singlenode_unittest.SingleNodeInsertionTest))
 suiteList.a..(u__.TestLoader().loadTestsFromTestCase(deleting_nodes_unittest.NodesDeleteTest))
 suiteList.a..(u__.TestLoader().loadTestsFromTestCase(getting_size_of_linkedlist_unittest.SizeOfLinkedList))

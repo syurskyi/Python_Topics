@@ -16,8 +16,8 @@ prime_numbers _ [2, 3, 5, 7, 11, 13, 17]
 perfect_squares _ (1, 4, 9, 16, 25, 36)
 
 # Display lengths
-print("# Primes = ", len(prime_numbers))
-print("# Squares = ", len(perfect_squares))
+print("# Primes = ", le.(prime_numbers))
+print("# Squares = ", le.(perfect_squares))
 
 # Iterate over both sequences
 ___ p __ prime_numbers:

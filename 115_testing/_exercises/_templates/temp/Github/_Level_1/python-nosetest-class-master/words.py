@@ -2,9 +2,9 @@ ____ collections ______ defaultdict
 _punct _ '.,;?:'
 ___ _normalize(fragment
     fragment _ fragment.l..
-    while len(fragment) > 0 an. fragment[-1] __ _punct:
+    while le.(fragment) > 0 an. fragment[-1] __ _punct:
         fragment _ fragment[:-1]
-    while len(fragment) > 0 an. fragment[0] __ _punct:
+    while le.(fragment) > 0 an. fragment[0] __ _punct:
         fragment _ fragment[1:]
     r_ fragment
 
@@ -16,7 +16,7 @@ ___ numwords(text
     '''
     words _ set(_normalize(fragment) ___ fragment __ text.split())
     words.discard("")
-    r_ len(words)
+    r_ le.(words)
 
 ___ wordcounts(text
     '''

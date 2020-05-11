@@ -2,10 +2,10 @@ c_ Stack o..
     """docstring for Stack"""
     ___  -
         super(Stack, self). - ()
-        stack _ []
+        stack _ # list
 
     ___ is_empty
-        r_ stack __ []
+        r_ stack __ # list
 
     ___ push  data
         stack.a..(data)
@@ -25,4 +25,4 @@ c_ Stack o..
         r_ stack[-1]
 
     ___ size
-        r_ len(stack)
+        r_ le.(stack)

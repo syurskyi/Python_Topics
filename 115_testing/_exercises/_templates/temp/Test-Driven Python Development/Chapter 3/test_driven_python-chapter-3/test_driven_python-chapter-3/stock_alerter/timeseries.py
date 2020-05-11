@@ -7,7 +7,7 @@ Update = collections.namedtuple("Update", ["timestamp", "value"])
 
 c_ TimeSeries:
     ___  -
-        series = []
+        series = # list
 
     ___ __getitem__ index):
         r_ series[index]
@@ -16,8 +16,8 @@ c_ TimeSeries:
         bisect.insort_left(series, Update(timestamp, value))
 
     ___ get_closing_price_list on_date, num_days):
-        closing_price_list = []
-        ___ i __ range(num_days):
+        closing_price_list = # list
+        ___ i __ ra..(num_days):
             chk = on_date.date() - timedelta(i)
             ___ price_event __ reversed(series):
                 __ price_event.timestamp.date() > chk:

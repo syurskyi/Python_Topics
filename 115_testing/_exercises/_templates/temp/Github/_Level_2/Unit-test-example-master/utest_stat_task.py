@@ -126,9 +126,9 @@ c_ StatisticsTest?.?
 
     ___ setUp
         """Set up for test"""
-        data1 _ (x ___ x __ range(1, 1001))
-        data2 _ (x ___ x __ range(1, 50032, 5))
-        data3 _ (x ___ x __ range(1, 56, 6))
+        data1 _ (x ___ x __ ra..(1, 1001))
+        data2 _ (x ___ x __ ra..(1, 50032, 5))
+        data3 _ (x ___ x __ ra..(1, 56, 6))
 
         stat1 _ Statistics(data1)
         stat2 _ Statistics(data2)

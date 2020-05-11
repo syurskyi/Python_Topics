@@ -35,8 +35,8 @@ c_ JsonDiffHandler o..
                 результата сравнения
     """
     ___  -   first_json, second_json, with_values_False
-        difference _ []
-        seen _ []
+        difference _ # list
+        seen _ # list
         check(first_json, second_json, with_values_with_values)
 
     ___ check  first_json, second_json, path_'', with_values_False
@@ -52,7 +52,7 @@ c_ JsonDiffHandler o..
         __ isi..(first_json, dict
             ___ key __ first_json:
                 # Формирование вложенности секции через точку
-                __ len(pa__) __ 0:
+                __ le.(pa__) __ 0:
                     new_path _ key
                 ____:
                     new_path _ "%s.%s" % (pa__, key)
@@ -109,7 +109,7 @@ ___ assert_json(test_json, ethalon_json
     ethalon_json _ j__.loads(ethalon_json)
     diff1 _ JsonDiffHandler(test_json, ethalon_json, T..).difference
     diff2 _ JsonDiffHandler(ethalon_json, test_json, F..).difference
-    diffs _ []
+    diffs _ # list
     # Обработка типов сообщений и их содержимого, формирование результата
     ___ type, message __ diff1:
         newType _ 'CHANGED_VALUE'
@@ -125,7 +125,7 @@ __ _____ __ _____
     w__ o..(ETHALON_JSON) __ ethalon_json, \
             o..(TEST_JSON) __ test_json:
         diff_res _ assert_json(ethalon_json.read(), test_json.read())
-        __ len(diff_res) > 0:
+        __ le.(diff_res) > 0:
             print '\r\nFound differences between two ' \
                   'files:\r\n{0},\r\n{1}\r\n'.f..(TEST_JSON, ETHALON_JSON)
             print "+++" * 30

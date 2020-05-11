@@ -19,7 +19,7 @@ c_ TestFunc?.?
         aE..(author(), CONST_AUTHOR)
 
     ___ testRead
-        aE..(len(read_csv('input.csv')), 30559)
+        aE..(le.(read_csv('input.csv')), 30559)
 
 ___ author(
     print ('Author: ', CONST_AUTHOR)
@@ -41,7 +41,7 @@ c_ Product:
 
 
 ___ read_csv(file_name
-    lst _ []
+    lst _ # list
     ___
         w__ o..(file_name, newline_'', encoding_'utf-8') __ csvfile:
             reader _ csv.DictReader(csvfile)

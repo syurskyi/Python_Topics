@@ -1,7 +1,7 @@
 c_ Patient:
     
     ___  -   prescriptions_N..
-        prescriptions _ prescriptions o. []
+        prescriptions _ prescriptions o. # list
     
     ___ add_prescription  prescription
         prescriptions.a..(prescription)

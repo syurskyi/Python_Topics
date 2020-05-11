@@ -94,7 +94,7 @@ c_ RequestsFunctionTests?.?
         filtered_lists _ [yahoo_list, yahoo_fqdn_list, google_list, google_fqdn_list]
         # test the filter results
         ___ fl __ filtered_lists:
-            aT..(len(fl), 1)
+            aT..(le.(fl), 1)
 
 __ _____ __ ______
     ?.?

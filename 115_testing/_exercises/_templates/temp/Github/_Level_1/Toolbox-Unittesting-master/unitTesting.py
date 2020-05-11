@@ -4,7 +4,7 @@ ___ sortingPositives (l
     Function that takes a list, removes negative numbers from said list
     and sorts the positive elements.
     '''
-    positive _ []
+    positive _ # list
     ___ i __ l:
         __ i >_ 0:
             positive.a..(i)

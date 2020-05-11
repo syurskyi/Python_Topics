@@ -26,7 +26,7 @@ c_ Stock:
 
     ___ get_crossover_signal on_date):
         cpl = []
-        ___ i __ range(11):
+        ___ i __ ra..(11):
             chk = on_date.date() - timedelta(i)
             ___ price_event __ reversed(price_history):
                 __ price_event.timestamp.date() > chk:
@@ -39,7 +39,7 @@ c_ Stock:
                     break
 
         # Return NEUTRAL signal
-        __ len(cpl) < 11:
+        __ le.(cpl) < 11:
             r_ 0
 
         # BUY signal

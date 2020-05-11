@@ -32,7 +32,7 @@ c_ TennisGame:
             ____:
                 result _"Win for " + player2Name
         ____:
-            ___ i __ range(1,3
+            ___ i __ ra..(1,3
                 __ (i__1
                     tempScore _ p1points
                 ____:

@@ -14,14 +14,14 @@ c_ NodesDeleteTest?.?
             #create list
             newList _ LinkedList()
             #populate the list with data 0 to 9
-            ___ i __ range(10
+            ___ i __ ra..(10
                 newList.addNode(i)
         _____:
             print('\nSetup failed: '+ st.(sys.exc_info()[0]))
                    
         #prepare list reflecting example data in list
-        dataList _ list(range(10))
-        rmItemDataList _ list(range(10))
+        dataList _ list(ra..(10))
+        rmItemDataList _ list(ra..(10))
         rmItemDataList.remove(3)
 
     ___ testCompareNodesData

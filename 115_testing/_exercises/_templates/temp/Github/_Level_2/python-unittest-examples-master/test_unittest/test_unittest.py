@@ -76,7 +76,7 @@ c_ TestUnittest?.?
         assertIs(widget, widget)
         assertIsNot(widget, Widget('new widget'))
         aIN..(N..)
-        assertIsNotNone('A value')
+        aINN..('A value')
         aI..(1, (1, 2, 3))
         assertNotIn(1, (2, 3, 4))
         AII..(widget, Widget)
