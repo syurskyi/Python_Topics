@@ -102,19 +102,19 @@
 # # c_ AnagramTest o..
 # #
 # #     ___ test  sol
-# #         a_e.. ? 'go go go','gggooo'),T..)
+# #         a_e.. ? 'go go go','gggooo'),T..
 # #         a_e.. ? 'abc','cba'),T..)
-# #         a_e.. ? 'hi man','hi     man'),T..)
-# #         a_e.. ? 'aabbcc','aabbc'),False)
+# #         a_e.. ? 'hi man','hi     man'),T..
+# #         a_e.. ? 'aabbcc','aabbc'),F..
 # #         a_e.. ? '123','1 2'),False)
 # #         print("ALL TEST CASES PASSED")
 #
 # # # Run Tests
-# # t = AnagramTest()
-# # t.test(?)
+# # t _ ?
+# # ?.t.. ?
 # #
 # # # %%
-# # t.test(anagram2)
+# # ?.t.. ?
 # #
 # # # %%
 # # '''
