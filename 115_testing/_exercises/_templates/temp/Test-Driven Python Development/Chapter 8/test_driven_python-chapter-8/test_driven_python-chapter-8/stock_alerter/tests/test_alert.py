@@ -1,15 +1,15 @@
-import unittest
-from unittest import mock
-from datetime import datetime
+_____ u__
+from u__ _____ mock
+from datetime _____ datetime
 
-from ..alert import Alert
-from ..rule import PriceRule
-from ..stock import Stock
-from ..event import Event
+from ..alert _____ Alert
+from ..rule _____ PriceRule
+from ..stock _____ Stock
+from ..event _____ Event
 
 
-class AlertTest(unittest.TestCase):
-    def test_action_is_executed_when_rule_matches(self):
+c_ AlertTest ?.?
+    ___ test_action_is_executed_when_rule_matches
         goog = mock.MagicMock(spec=Stock)
         goog.updated = Event()
         goog.update.side_effect = lambda date, value: goog.updated.fire(self)

@@ -1,24 +1,24 @@
-import smtplib
-from email.mime.text import MIMEText
+_____ smtplib
+from email.mime.text _____ MIMEText
 
 
-class PrintAction:
-    def execute(self, content):
+c_ PrintAction:
+    ___ execute content):
         print(content)
 
 
-class EmailAction:
+c_ EmailAction:
     """Send an email when a rule is matched"""
     from_email = "alerts@stocks.com"
 
-    def __init__(self, to):
-        self.to_email = to
+    ___  -  to):
+        to_email = to
 
-    def execute(self, content):
+    ___ execute content):
         message = MIMEText(content)
         message["Subject"] = "New Stock Alert"
         message["From"] = "alerts@stocks.com"
-        message["To"] = self.to_email
+        message["To"] = to_email
         smtp = smtplib.SMTP("email.stocks.com")
         try:
             smtp.send_message(message)

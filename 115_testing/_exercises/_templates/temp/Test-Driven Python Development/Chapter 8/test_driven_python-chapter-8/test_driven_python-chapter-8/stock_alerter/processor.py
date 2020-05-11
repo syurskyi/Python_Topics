@@ -1,9 +1,9 @@
-class Processor:
-    def __init__(self, reader, exchange):
-        self.reader = reader
-        self.exchange = exchange
+c_ Processor:
+    ___  -  reader, exchange):
+        reader = reader
+        exchange = exchange
 
-    def process(self):
-        for symbol, timestamp, price in self.reader.get_updates():
-            stock = self.exchange[symbol]
+    ___ process
+        for symbol, timestamp, price in reader.get_updates():
+            stock = exchange[symbol]
             stock.update(timestamp, price)

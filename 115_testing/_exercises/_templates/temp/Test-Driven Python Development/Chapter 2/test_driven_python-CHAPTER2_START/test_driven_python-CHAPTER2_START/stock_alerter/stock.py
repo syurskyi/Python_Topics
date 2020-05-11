@@ -1,4 +1,4 @@
-class Stock:
-    def __init__(self, symbol):
-        self.symbol = symbol
-        self.price = N..
+c_ Stock:
+    ___  -  symbol):
+        symbol = symbol
+        price = N..

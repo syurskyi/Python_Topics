@@ -1,29 +1,29 @@
-import bisect
-import collections
-from datetime import timedelta
+_____ bisect
+_____ collections
+from datetime _____ timedelta
 
 Update = collections.namedtuple("Update", ["timestamp", "value"])
 
 
-class NotEnoughDataException(Exception):
+c_ NotEnoughDataException(Exception):
     pass
 
 
-class TimeSeries:
-    def __init__(self):
-        self.series = []
+c_ TimeSeries:
+    ___  -
+        series = []
 
-    def __getitem__(self, index):
-        return self.series[index]
+    ___ __getitem__ index):
+        return series[index]
 
-    def update(self, timestamp, value):
-        bisect.insort_left(self.series, Update(timestamp, value))
+    ___ update timestamp, value):
+        bisect.insort_left(series, Update(timestamp, value))
 
-    def get_closing_price_list(self, on_date, num_days):
+    ___ get_closing_price_list on_date, num_days):
         closing_price_list = []
         for i in range(num_days):
             chk = on_date.date() - timedelta(i)
-            for price_event in reversed(self.series):
+            for price_event in reversed(series):
                 if price_event.timestamp.date() > chk:
                     pass
                 if price_event.timestamp.date() == chk:
@@ -35,14 +35,14 @@ class TimeSeries:
         return closing_price_list
 
 
-class MovingAverage:
-    def __init__(self, series, timespan):
-        self.series = series
-        self.timespan = timespan
+c_ MovingAverage:
+    ___  -  series, timespan):
+        series = series
+        timespan = timespan
 
-    def value_on(self, end_date):
-        moving_avg_series = self.series.get_closing_price_list(end_date, self.timespan)
-        if len(moving_avg_series) < self.timespan:
+    ___ value_on end_date):
+        moving_avg_series = series.get_closing_price_list(end_date, timespan)
+        if len(moving_avg_series) < timespan:
             raise NotEnoughDataException("Not enough data to calculate moving average")
         price_list = [update.value for update in moving_avg_series]
-        return sum(price_list)/self.timespan
+        return sum(price_list)/timespan

@@ -1,9 +1,9 @@
-import unittest
+_____ u__
 
-from ..stock import Stock
+from ..stock _____ Stock
 
 
-class StockTest(unittest.TestCase):
-    def test_price_of_a_new_stock_class_should_be_None(self):
+c_ StockTest ?.?
+    ___ test_price_of_a_new_stock_class_should_be_None
         stock = Stock("GOOG")
-        self.assertIsNone(stock.price)
+        aIN..(stock.price)

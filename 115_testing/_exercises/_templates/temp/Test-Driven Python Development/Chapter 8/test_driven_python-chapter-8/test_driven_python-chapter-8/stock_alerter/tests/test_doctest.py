@@ -1,15 +1,15 @@
-import doctest
-from datetime import datetime
+_____ doctest
+from datetime _____ datetime
 
-from stock_alerter import stock
+from stock_alerter _____ stock
 
 
-def setup_stock_doctest(doctest):
+___ setup_stock_doctest(doctest):
     s = stock.Stock("GOOG")
     doctest.globs.update({"stock": s})
 
 
-def load_tests(loader, tests, pattern):
+___ load_tests(loader, tests, pattern):
     tests.addTests(doctest.DocTestSuite(stock, globs={
         "datetime": datetime,
         "Stock": stock.Stock

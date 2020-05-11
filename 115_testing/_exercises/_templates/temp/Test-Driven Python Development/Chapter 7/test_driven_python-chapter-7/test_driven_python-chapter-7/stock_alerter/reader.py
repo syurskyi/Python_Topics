@@ -1,24 +1,24 @@
-from datetime import datetime
+from datetime _____ datetime
 
 
-class ListReader:
+c_ ListReader:
     """Reads a series of updates from a list"""
-    def __init__(self, updates):
-        self.updates = updates
+    ___  -  updates):
+        updates = updates
 
-    def get_updates(self):
-        for update in self.updates:
+    ___ get_updates
+        for update in updates:
             yield update
 
 
-class FileReader:
+c_ FileReader:
     """Reads a series of stock updates from a file"""
-    def __init__(self, filename):
-        self.filename = filename
+    ___  -  filename):
+        filename = filename
 
-    def get_updates(self):
+    ___ get_updates
         """Returns the next update everytime the method is called"""
-        with open(self.filename, "r") as fp:
+        with open(filename, "r") as fp:
             data = fp.read()
             lines = data.split()
             for line in lines:

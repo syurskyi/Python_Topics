@@ -19,8 +19,8 @@ c_ TestAssertions(TestCase
         x _ 42
         y _ N..
 
-        assertIsNone(N..)
-        assertIsNone(y)
+        aIN..(N..)
+        aIN..(y)
         assertIsNotNone(x)
 
     ___ test_bool

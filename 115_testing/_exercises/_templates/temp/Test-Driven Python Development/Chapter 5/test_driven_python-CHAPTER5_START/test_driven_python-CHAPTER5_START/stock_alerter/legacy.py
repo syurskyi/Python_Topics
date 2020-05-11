@@ -1,20 +1,20 @@
-from datetime import datetime
+from datetime _____ datetime
 
-from .stock import Stock
-from .rule import PriceRule
+from .stock _____ Stock
+from .rule _____ PriceRule
 
 
-class AlertProcessor:
-    def __init__(self):
-        self.exchange = {"GOOG": Stock("GOOG"), "AAPL": Stock("AAPL")}
+c_ AlertProcessor:
+    ___  -
+        exchange = {"GOOG": Stock("GOOG"), "AAPL": Stock("AAPL")}
         rule_1 = PriceRule("GOOG", lambda stock: stock.price > 10)
         rule_2 = PriceRule("AAPL", lambda stock: stock.price > 5)
-        self.exchange["GOOG"].updated.connect(
+        exchange["GOOG"].updated.connect(
             lambda stock: print(stock.symbol, stock.price) \
-                          if rule_1.matches(self.exchange) else N..)
-        self.exchange["AAPL"].updated.connect(
+                          if rule_1.matches(exchange) else N..)
+        exchange["AAPL"].updated.connect(
             lambda stock: print(stock.symbol, stock.price) \
-                          if rule_2.matches(self.exchange) else N..)
+                          if rule_2.matches(exchange) else N..)
         updates = []
         with open("updates.csv", "r") as fp:
             for line in fp.readlines():
@@ -23,5 +23,5 @@ class AlertProcessor:
                        datetime.strptime(timestamp, "%Y-%m-%dT%H:%M:%S.%f"),
                        int(price)))
         for symbol, timestamp, price in updates:
-            stock = self.exchange[symbol]
+            stock = exchange[symbol]
             stock.update(timestamp, price)

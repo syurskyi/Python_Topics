@@ -1,25 +1,25 @@
-import bisect
-import collections
-from datetime import timedelta
+_____ bisect
+_____ collections
+from datetime _____ timedelta
 
 Update = collections.namedtuple("Update", ["timestamp", "value"])
 
 
-class TimeSeries:
-    def __init__(self):
-        self.series = []
+c_ TimeSeries:
+    ___  -
+        series = []
 
-    def __getitem__(self, index):
-        return self.series[index]
+    ___ __getitem__ index):
+        return series[index]
 
-    def update(self, timestamp, value):
-        bisect.insort_left(self.series, Update(timestamp, value))
+    ___ update timestamp, value):
+        bisect.insort_left(series, Update(timestamp, value))
 
-    def get_closing_price_list(self, on_date, num_days):
+    ___ get_closing_price_list on_date, num_days):
         closing_price_list = []
         for i in range(num_days):
             chk = on_date.date() - timedelta(i)
-            for price_event in reversed(self.series):
+            for price_event in reversed(series):
                 if price_event.timestamp.date() > chk:
                     pass
                 if price_event.timestamp.date() == chk:

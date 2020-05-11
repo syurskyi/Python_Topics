@@ -1,18 +1,18 @@
-import unittest
-from unittest import mock
+_____ u__
+from u__ _____ mock
 
-from ..event import Event
+from ..event _____ Event
 
 
-class EventTest(unittest.TestCase):
-    def test_a_listener_is_notified_when_an_event_is_raised(self):
+c_ EventTest ?.?
+    ___ test_a_listener_is_notified_when_an_event_is_raised
         listener = mock.Mock()
         event = Event()
         event.connect(listener)
         event.fire()
-        self.assertTrue(listener.called)
+        assertTrue(listener.called)
 
-    def test_a_listener_is_passed_right_parameters(self):
+    ___ test_a_listener_is_passed_right_parameters
         listener = mock.Mock()
         event = Event()
         event.connect(listener)
