@@ -85,7 +85,7 @@ c_ TestParseLines?.?
 		'''
 		line _ split_line('Chandler, Kerri, (623)-668-9293, pink, 123123121')
 		aE..(
-			parse_lines(line), None)
+			parse_lines(line), N..)
 
 	___ test_format_one
 		line _ split_line('Chandler, Kerri, (623)-668-9293, pink, 12345')

@@ -32,5 +32,5 @@ ___ print_something(arg
     print(arg)
 
 
-___ rand_int(max
-    r_ randint(0, max)
+___ rand_int(ma.
+    r_ randint(0, ma.)

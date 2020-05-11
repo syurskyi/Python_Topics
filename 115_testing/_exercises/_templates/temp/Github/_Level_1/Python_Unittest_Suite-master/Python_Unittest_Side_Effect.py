@@ -82,7 +82,7 @@ m _ Mock(side_effect_KeyError, return_value_3)
 m()
 
 
-m.side_effect _ None
+m.side_effect _ N..
 m()
 
 # OUTPUT: '3'

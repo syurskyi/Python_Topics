@@ -1,6 +1,6 @@
 ____ .operations ______ Multiply, Add, Substract
 
-c_ MyApp(object
+c_ MyApp o..
     ___  - 
         operations_{'multiply': Multiply,
                          'add': Add,

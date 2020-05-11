@@ -10,7 +10,7 @@ c_ MyService:
         r_ "please enter your login details"
 
     ___ handle_request_wrong_token  request, token
-        __ sso_registry.is_valid(None
+        __ sso_registry.is_valid(N..
             r_ "hello world"
         r_ "please enter your login details"
 

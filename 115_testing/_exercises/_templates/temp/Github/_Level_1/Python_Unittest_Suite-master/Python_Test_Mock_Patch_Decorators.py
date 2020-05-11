@@ -159,7 +159,7 @@ c_ ProductionClass:
             p..
 
     w__ patch.object(ProductionClass, 'method') __ mock_method:
-        mock_method.return_value _ None
+        mock_method.return_value _ N..
 
         real _ ProductionClass()
         real.method(1, 2, 3)

@@ -33,7 +33,7 @@
  ___ function(normal_argument, mock_class
         print(mock_class __ SomeClass)
 
-function(None)
+function(N..)
 
 # OUTPUT: 'True'
  

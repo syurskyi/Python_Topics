@@ -5,8 +5,8 @@
 c_ AnExample(
 
     ___  -
-        rightnow _ None
-        yesterdaythistime _ None
+        rightnow _ N..
+        yesterdaythistime _ N..
         descriptiontext _ "\nCurrently epoch today and 24 hours ago are: "
 
     ___ make_something

@@ -20,9 +20,9 @@ class FileReader:
 
 
 class AlertProcessor:
-    def __init__(self, autorun=True, reader=None, exchange=None):
+    def __init__(self, autorun=True, reader=N.., exchange=N..):
         self.reader = reader if reader else FileReader("updates.csv")
-        if exchange is None:
+        if exchange is N..:
             self.exchange = {"GOOG": Stock("GOOG"), "AAPL": Stock("AAPL")}
         else:
             self.exchange = exchange
@@ -35,7 +35,7 @@ class AlertProcessor:
 
     def print_action(self, stock, rule):
         print(stock.symbol, stock.price) \
-            if rule.matches(self.exchange) else None
+            if rule.matches(self.exchange) else N..
 
     def do_updates(self, updates):
         for symbol, timestamp, price in updates:

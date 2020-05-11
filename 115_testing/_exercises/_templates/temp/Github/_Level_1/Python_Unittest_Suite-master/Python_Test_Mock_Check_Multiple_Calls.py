@@ -20,7 +20,7 @@
 
 mock _ Mock()
 
-mock.foo_bar.return_value _ None
+mock.foo_bar.return_value _ N..
 mock.foo_bar('baz', spam_'eggs')
 
 mock.foo_bar.assert_called_with('baz', spam_'eggs')

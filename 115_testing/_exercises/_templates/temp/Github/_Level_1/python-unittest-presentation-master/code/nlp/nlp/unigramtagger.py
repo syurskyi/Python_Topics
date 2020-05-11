@@ -106,10 +106,10 @@ c_ UnigramTagger:
         ___ word __ words:
             __ word __ model:
                 available_tags _ model[word]
-                most_likely_tag _ max(available_tags, key_available_tags.get)
+                most_likely_tag _ ma.(available_tags, key_available_tags.get)
                 result.a..((word, most_likely_tag))
             else:
-                tag _ max(tag_distribution, key_tag_distribution.get)
+                tag _ ma.(tag_distribution, key_tag_distribution.get)
                 result.a..((word, tag))
 
         r_ result

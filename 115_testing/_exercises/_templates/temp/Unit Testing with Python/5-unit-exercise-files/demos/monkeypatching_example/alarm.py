@@ -1,7 +1,7 @@
 
 ____ sensor ______ Sensor
 
-c_ Alarm(object
+c_ Alarm o..
 
     ___  - 
         _low_pressure_threshold _ 17

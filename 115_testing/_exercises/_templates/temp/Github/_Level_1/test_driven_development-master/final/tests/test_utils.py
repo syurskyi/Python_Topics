@@ -18,7 +18,7 @@ c_ UtilsTest?.?
         assertFalse(utils.MyFunction(42))
         assertFalse(utils.MyFunction(3.14))
 
-    @mock.patch("my_module.utils.sleep", return_value _ None)
+    @mock.patch("my_module.utils.sleep", return_value _ N..)
     ___ test_my_long_func  mocked_sleep
         assertEquals('AAA', utils.MyLongFunction('aaa', 5))
         

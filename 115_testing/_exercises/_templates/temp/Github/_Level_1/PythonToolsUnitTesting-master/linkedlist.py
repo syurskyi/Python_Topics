@@ -7,10 +7,10 @@
 # Name: Node
 # Arguments: (object) - inhereting from object class
 # Purpose: This is a template for a node in a linked list
-c_ Node(object
+c_ Node o..
     
     #Constructor:
-    ___  -   dataSet, next _ None, prev _ None
+    ___  -   dataSet, next _ N.., prev _ N..
         data _ dataSet
         nextNode _ next
         prevNode _ prev
@@ -42,9 +42,9 @@ c_ Node(object
 # Name: LinkedList
 # Arguments: (object) - inhereting from object class
 # Purpose: This class holds methods for LinkedList controls (getSize, addNode, removeNode, findNode, getAllData)
-c_ LinkedList (object
+c_ LinkedList  o..
     	#Constructor:
-	___  -   rootNode _ None
+	___  -   rootNode _ N..
 		root _ rootNode
 		size _ 0
 		
@@ -89,13 +89,13 @@ c_ LinkedList (object
 			    r_ dataSet
 			else:
 			    thisNode _ thisNode.getNextNode()
-		r_ None
+		r_ N..
 
 	___ getAllData
 		dataList _ []
 		thisNode _ root
-		__ (root __ None
-			dataList.a..(None)
+		__ (root __ N..
+			dataList.a..(N..)
 			r_ dataList
 		while (thisNode
 			dataList.a..(thisNode.getData())

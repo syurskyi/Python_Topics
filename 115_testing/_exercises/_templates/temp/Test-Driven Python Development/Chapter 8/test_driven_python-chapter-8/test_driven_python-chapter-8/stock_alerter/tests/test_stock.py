@@ -15,11 +15,11 @@ def setup_test():
 
 def teardown_test():
     global goog
-    goog = None
+    goog = N..
 
 
 def test_price_of_a_new_stock_class_should_be_None():
-    assert goog.price is None
+    assert goog.price is N..
 test_price_of_a_new_stock_class_should_be_None.setup = setup_test
 test_price_of_a_new_stock_class_should_be_None.teardown = teardown_test
 
@@ -162,14 +162,14 @@ class StockCrossOverSignalTest(unittest.TestCase):
                                               timedelta(i),
                                               price_list[len(price_list)-i-1])
             for i in range(len(price_list) - 1, -1, -1)
-            if price_list[len(price_list) - i - 1] is not None]))
+            if price_list[len(price_list) - i - 1] is not N..]))
 
     def given_a_series_of_prices(self, price_list):
         timestamps = self._generate_timestamps(price_list)
         for timestamp, price in zip(timestamps,
                                     list(self._flatten([p
                                                         for p in price_list
-                                                        if p is not None]))):
+                                                        if p is not N..]))):
             self.goog.update(timestamp, price)
 
     def test_generate_timestamp_returns_consecutive_dates(self):
@@ -182,7 +182,7 @@ class StockCrossOverSignalTest(unittest.TestCase):
         self.assertEqual(expected, self._generate_timestamps(price_list))
 
     def test_generate_timestamp_skips_empty_dates(self):
-        price_list = [1, 2, 3, None, 5, 6, 7, 8, 9, 10, 11]
+        price_list = [1, 2, 3, N.., 5, 6, 7, 8, 9, 10, 11]
         expected = [
             datetime(2014, 2, 3), datetime(2014, 2, 4), datetime(2014, 2, 5),
             datetime(2014, 2, 7), datetime(2014, 2, 8),
@@ -254,7 +254,7 @@ class StockCrossOverSignalTest(unittest.TestCase):
     def test_should_pick_up_previous_closing_if_no_updates_for_a_day(self):
         date_to_check = datetime(2014, 2, 13)
         self.given_a_series_of_prices([
-            29, 28, 27, 26, 25, 24, 23, 22, 21, 20, None, None, 46])
+            29, 28, 27, 26, 25, 24, 23, 22, 21, 20, N.., N.., 46])
         self.assertEqual(StockSignal.buy,
                          self.goog.get_crossover_signal(date_to_check))
 
@@ -264,7 +264,7 @@ class StockCrossOverSignalTest(unittest.TestCase):
         previous closing price to fill in the value"""
         date_to_check = datetime(2014, 2, 13)
         self.given_a_series_of_prices([
-            27, 26, 25, 24, 23, 22, 21, 20, None, None, 46])
+            27, 26, 25, 24, 23, 22, 21, 20, N.., N.., 46])
         self.assertEqual(StockSignal.buy,
                          self.goog.get_crossover_signal(date_to_check))
 

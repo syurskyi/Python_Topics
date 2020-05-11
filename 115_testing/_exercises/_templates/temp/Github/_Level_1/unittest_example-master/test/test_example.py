@@ -17,12 +17,12 @@ ______ u__
 
 # Module-level fixtures
 # -----------------------------------------------------------
-___ setUpModule()  None:
+___ setUpModule()  N..:
     """called once, before anything else in this module"""
     print("In SetUpModule()...(module-level fixture)")
 
 
-___ tearDownModule()  None:
+___ tearDownModule()  N..:
     """called once, after everything else in this module"""
     print("In tearDownModule()...(module-level fixture)")
 
@@ -34,22 +34,22 @@ c_ TestClassExample?.?
     # Class-level fixtures. Require the classmethod decorator
     # -----------------------------------------------------------
     ??
-    ___ setUpClass ___)  None:
+    ___ setUpClass ___)  N..:
         """called once, at the beginning of the class testing"""
         print("In setUpClass()...(class-level fixture)")
 
     ??
-    ___ tearDownClass ___)  None:
+    ___ tearDownClass ___)  N..:
         """called once, once all tests have been done, if setUpClass succesfull"""
         print("In tearDownClass")
 
     # Method-level fixtures
     # -----------------------------------------------------------
-    ___ setUp(self)  None:
+    ___ setUp(self)  N..:
         """called before every test method"""
         print("In setUp()...")
 
-    ___ tearDown(self)  None:
+    ___ tearDown(self)  N..:
         """called after every test method"""
 
     # Test case related functions

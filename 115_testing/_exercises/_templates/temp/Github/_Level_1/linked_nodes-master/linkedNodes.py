@@ -1,7 +1,7 @@
-c_ Node:
+c_ Node
     ___  -   value_N..
         value _ value
-        next_node _ None
+        next_node _ N..
 
     ___ set_next_node  next_node
         next_node _ next_node
@@ -10,38 +10,38 @@ c_ Node:
         r_ next_node
 
 
-c_ NodeList:
+c_ NodeList
     ___  -   values_N..
-        node_head _ None
+        node_head _ N..
         ___ value __ values:
             add_node(value)
 
     ___ add_node  value
         checked_node _ node_head
-        __(checked_node __ None
+        __(checked_node __ N..
             node_head _ Node(value)
         else:
-            while(checked_node.get_next_node() __ no. None
+            while(checked_node.get_next_node() __ no. N..
                 checked_node _ checked_node.get_next_node()
             checked_node.set_next_node(Node(value))
 
     ___ print
         checked_node _ node_head
-        while(checked_node __ no. None
+        while(checked_node __ no. N..
             print(checked_node.value)
             checked_node _ checked_node.get_next_node()
 
     ___ remove_node  position
         checked_node _ node_head
-        previous_node _ None
+        previous_node _ N..
         found _ T..
         ___ count __ range(position
             previous_node _ checked_node
             checked_node _ checked_node.get_next_node()
-            __(checked_node __ None
+            __(checked_node __ N..
                 found _ F..
                 break
-        __(found an. previous_node __ no. None
+        __(found an. previous_node __ no. N..
             previous_node.set_next_node(checked_node.get_next_node())
 
     ___ get_node_value  position
@@ -49,13 +49,13 @@ c_ NodeList:
         found _ T..
         ___ count __ range(position
             checked_node _ checked_node.get_next_node()
-            __(checked_node __ None
+            __(checked_node __ N..
                 found _ F..
                 break
         __(found
             r_ checked_node.value
         else:
-            r_ None
+            r_ N..
 
     ___ get_head_node
         r_ node_head

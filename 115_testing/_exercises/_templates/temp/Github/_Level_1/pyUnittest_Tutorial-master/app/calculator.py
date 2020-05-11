@@ -1,5 +1,5 @@
 # calculator.py
-c_ Calculator(object
+c_ Calculator o..
     """docstring for Calculator"""
 
     ___ add  x, y

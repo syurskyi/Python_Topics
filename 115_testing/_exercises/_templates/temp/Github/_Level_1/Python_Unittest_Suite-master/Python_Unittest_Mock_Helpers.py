@@ -186,7 +186,7 @@ m _ MagicMock(return_value_None)
 m(1)
 
 m(1, 2)
-m(object())
+m o..())
 
 m.mock_calls __ [call(1), call(1, 2), ANY]
 

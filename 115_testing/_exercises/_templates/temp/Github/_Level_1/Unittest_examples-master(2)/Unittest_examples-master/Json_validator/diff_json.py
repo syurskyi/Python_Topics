@@ -26,7 +26,7 @@ ETHALON_JSON _ __.pa__.abspath('json_ethalon.json')
 TEST_JSON _ __.pa__.abspath('json_test.json')
 
 
-c_ JsonDiffHandler(object
+c_ JsonDiffHandler o..
     """
         Данный класс включает в себя следующие методы:
             1)  def check(self, first_json, second_json, path='', with_values=False) -
@@ -42,7 +42,7 @@ c_ JsonDiffHandler(object
     ___ check  first_json, second_json, path_'', with_values_False
         """Метод, сравнивающий секции этальнного и тестового json-файлов"""
         # Определение типа нового значения
-        __ with_values an. second_json __ no. None:
+        __ with_values an. second_json __ no. N..:
             __ no. isi..(first_json, type(second_json)):
                 message _ '%s --> OLD TYPE: %s ==> NEW TYPE: %s' % \
                           (pa__, type(first_json).__name__, type(second_json).__name__)
@@ -63,9 +63,9 @@ c_ JsonDiffHandler(object
                     else:
                         #  В тестовом json отсутствует секция
                         save_difference(new_path, PATH)
-                        sec _ None
+                        sec _ N..
                     # Рекурсивный вызов
-                    __ sec __ no. None:
+                    __ sec __ no. N..:
                         check(first_json[key], sec, path_new_path, with_values_with_values)
                 else:
                     # Если проверяемая секция тестового json НЕ словарь,
@@ -77,8 +77,8 @@ c_ JsonDiffHandler(object
         elif isi..(first_json, list
             ___ (index, item) __ enumerate(first_json
                 new_path _ "%s[%s]" % (pa__, index)
-                sec _ None
-                __ second_json __ no. None:
+                sec _ N..
+                __ second_json __ no. N..:
                     try:
                         sec _ second_json[index]
                     except (IndexError, KeyError
@@ -90,7 +90,7 @@ c_ JsonDiffHandler(object
                 check(first_json[index], sec, path_new_path, with_values_with_values)
         # Если разница между тестируемым и эталонным json только в значениях определенных секции
         else:
-            __ with_values an. second_json __ no. None:
+            __ with_values an. second_json __ no. N..:
                 __ first_json !_ second_json:
                     save_difference('%s --> OLD VALUE: %s ==> NEW VALUE: %s ' %
                                          (pa__, first_json, second_json), VALUE)

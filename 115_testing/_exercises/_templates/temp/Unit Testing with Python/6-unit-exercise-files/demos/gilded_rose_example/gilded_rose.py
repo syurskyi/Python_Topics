@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-c_ GildedRose(object
+c_ GildedRose o..
 
     ___  -   items
         items _ items

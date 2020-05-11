@@ -6,7 +6,7 @@ DF_SECTION _ '<removed>'
  
  
 c_ SearchBySymbolTest?.?
-    response _ None
+    response _ N..
     
     ___ setUp
         r _ requests.get(BASE_URL + "/api/search?symbol=f")
@@ -27,7 +27,7 @@ c_ SearchBySymbolTest?.?
 			assertEquals(u'success', response['response']['status']['message'], 'no success message')
  
 c_ SearchbyTermTest?.?
-    response _ None
+    response _ N..
     
     ___ setUp
         r _ requests.get(BASE_URL + "/api/search?term=fe")
@@ -48,7 +48,7 @@ c_ SearchbyTermTest?.?
 			assertEquals(u'success', response['response']['status']['message'], 'no success message')
 			
 c_ SearchbyTitleTest?.?
-    response _ None
+    response _ N..
     
     ___ setUp
         r _ requests.get(BASE_URL + "/api/search?title=fa")
@@ -69,7 +69,7 @@ c_ SearchbyTitleTest?.?
 			assertEquals(u'success', response['response']['status']['message'], 'no success message')
 			
 c_ GetTagArticlesTest?.?
-    response _ None
+    response _ N..
     
     ___ setUp
         r _ requests.get(BASE_URL + "/api/get_tag_articles?tags=Google,Facebook")
@@ -96,7 +96,7 @@ c_ GetTagArticlesTest?.?
                 aI..("url", item, 'missing url')
                 
 c_ MarketMoversTest?.?
-    response _ None
+    response _ N..
     
     ___ setUp
         r _ requests.get(BASE_URL + "/api/market_movers/NYS?callback=")
@@ -122,7 +122,7 @@ c_ MarketMoversTest?.?
 			assertEquals(u'success', response['response']['status']['message'], 'no success message')
 			
 c_ GetChartDataTest?.?
-    response _ None
+    response _ N..
     
     ___ setUp
         r _ requests.get(BASE_URL + "/api/get_chart_data?symbol=<removed>&exchange=nys")

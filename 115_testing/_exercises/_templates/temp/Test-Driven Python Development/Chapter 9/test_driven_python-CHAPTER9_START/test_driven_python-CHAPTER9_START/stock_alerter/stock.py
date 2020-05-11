@@ -53,7 +53,7 @@ class Stock:
         try:
             return self.history[-1].value
         except IndexError:
-            return None
+            return N..
 
     def update(self, timestamp, price):
         """Updates the stock with the price at the given timestamp

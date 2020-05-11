@@ -5,13 +5,13 @@ ______ requests
 ____ selenium ______ webdriver
 ____ lxml ______ html
 
-c_ FileRemovalService(object
+c_ FileRemovalService o..
     ___ rm  filename
         __ __.pa__.isfile(filename
             __.remove(filename)
 
 
-c_ UploadService(object
+c_ UploadService o..
 
     ___  -   removal_service
         removal_service _ removal_service

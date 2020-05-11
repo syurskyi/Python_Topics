@@ -1,7 +1,7 @@
 ______ sys
 
 
-c_ Prova(object
+c_ Prova o..
     """ Class to make some experiments with regard coding style
 
     """

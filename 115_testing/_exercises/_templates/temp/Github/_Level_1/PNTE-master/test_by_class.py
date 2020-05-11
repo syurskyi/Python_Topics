@@ -24,14 +24,14 @@ c_ TestAdd:
     p..
 
   # @raise Error
-  @raises(RuntimeError)
+  @raises(R..)
   ___ test_invalid_arg1
-    actual _ add(None,1)
+    actual _ add(N..,1)
   
   # 未実装
-  @raises(RuntimeError)
+  @raises(R..)
   ___ test_invalid_arg2
-    actual _ add(1,None)
+    actual _ add(1,N..)
  
   # test with assert
   ___ test_add_nums

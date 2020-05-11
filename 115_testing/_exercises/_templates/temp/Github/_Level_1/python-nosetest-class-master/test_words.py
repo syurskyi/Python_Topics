@@ -24,15 +24,15 @@ ___ test_wordcounts(
 # The nose way of checking that a function raises and exception.
 @raises(V..)
 ___ test_addcounts_badarg_existing(
-    addcounts(None, {})
+    addcounts(N.., {})
 
 @raises(V..)
 ___ test_addcounts_badarg_new(
-    addcounts({}, None)
+    addcounts({}, N..)
 
 @raises(V..)
 ___ test_addcounts_badargs(
-    addcounts(None, None)
+    addcounts(N.., N..)
 
 # For setup fixtures, we sometimes need to use unittest.TestCase.
 # nose's @with_setup doesn't let us do the following.
@@ -59,8 +59,8 @@ c_ TestWords_addcounts?.?
         Alternate way to check that ValueError is raised.
         '''
         w__ aR..(V..
-            addcounts(None, {})
+            addcounts(N.., {})
         w__ aR..(V..
-            addcounts({}, None)
+            addcounts({}, N..)
         w__ aR..(V..
-            addcounts(None, None)
+            addcounts(N.., N..)

@@ -62,7 +62,7 @@ ___ parse_lines(line
 	elements like to the appropriate formatting function.
 	'''
 	__ len(line) < 4:
-		r_ None
+		r_ N..
 
 	elif len(line[4]) __ 5 an. line[4][0].isdigit(
 		__ parse_phone_number(line[2]
@@ -78,7 +78,7 @@ ___ parse_lines(line
 		__ parse_phone_number(line[3]
 			r_ format_three(line)
 	else:
-		r_ None
+		r_ N..
 
 ___ split_line(line
 	'''
@@ -111,7 +111,7 @@ ___ parse_file(input_file
 		data_list _ split_line(line)
 		contact _ parse_lines(data_list)
 
-		__ contact __ no. None:
+		__ contact __ no. N..:
 			entries.a..(contact)
 		else:
 			errors.a..(idx)

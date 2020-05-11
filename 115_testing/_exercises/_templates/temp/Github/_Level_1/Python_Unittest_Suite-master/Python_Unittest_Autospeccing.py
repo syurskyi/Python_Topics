@@ -206,7 +206,7 @@ c_ Something:
 # 
 
 c_ Something:
-        member _ None
+        member _ N..
 
 mock _ create_autospec(Something)
 

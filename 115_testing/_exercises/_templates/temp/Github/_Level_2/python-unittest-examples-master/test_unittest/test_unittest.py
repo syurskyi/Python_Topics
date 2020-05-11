@@ -4,7 +4,7 @@ ______ u__
 ____ sets ______ Set
 
 
-c_ Widget(object
+c_ Widget o..
 
     """For running tests"""
 
@@ -41,7 +41,7 @@ c_ TestUnittest?.?
 
     ___ tearDown
         widget.dispose()
-        widget _ None
+        widget _ N..
 
     ___ test_default_size
         aE..(widget.size(), (50, 50),
@@ -75,7 +75,7 @@ c_ TestUnittest?.?
         assertFalse(F..)
         assertIs(widget, widget)
         assertIsNot(widget, Widget('new widget'))
-        assertIsNone(None)
+        assertIsNone(N..)
         assertIsNotNone('A value')
         aI..(1, (1, 2, 3))
         assertNotIn(1, (2, 3, 4))

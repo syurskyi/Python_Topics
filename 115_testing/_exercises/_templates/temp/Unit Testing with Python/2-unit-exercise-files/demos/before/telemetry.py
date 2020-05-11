@@ -40,7 +40,7 @@ c_ TelemetryDiagnosticControls:
 
 
 
-c_ TelemetryClient(object
+c_ TelemetryClient o..
     DIAGNOSTIC_MESSAGE _ "AT#UD"
 
     ___  -

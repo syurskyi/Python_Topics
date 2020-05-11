@@ -39,7 +39,7 @@
 ___ testSomething(
     something _ makeSomething()
 
-    a.. something.name __ no. None
+    a.. something.name __ no. N..
 
     # ...
 

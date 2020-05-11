@@ -9,7 +9,7 @@ c_ Phonebook(
         entries[name] _ number
 
     ___ lookup  name
-        r_ None #self.entries[name]
+        r_ N.. #self.entries[name]
         
     ___ names
         r_ entries.keys()

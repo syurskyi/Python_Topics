@@ -1,7 +1,7 @@
 """This is where we find the Calculator Functionality."""
 
 
-c_ Calculator(object
+c_ Calculator o..
     """Calculator Class."""
 
     ___ add  x, y

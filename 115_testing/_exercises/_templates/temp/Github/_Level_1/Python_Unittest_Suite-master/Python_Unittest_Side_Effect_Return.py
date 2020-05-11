@@ -27,7 +27,7 @@ m()
 
 # OUTPUT: '3'
 
-m.side_effect _ None
+m.side_effect _ N..
 m()
 
 # OUTPUT: '6'

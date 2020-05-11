@@ -14,7 +14,7 @@ c_ StackTestCase?.?
 
     ___ test_pop_handles_empty_stack
         test_obj _ Stack()
-        aE..(None, test_obj.pop())
+        aE..(N.., test_obj.pop())
         aE..(T.., test_obj.is_empty())
 
     ___ test_pop_pops_1_item_stack
@@ -37,7 +37,7 @@ c_ StackTestCase?.?
 
     ___ test_peek_handles_empty_stack
         test_obj _ Stack()
-        aE..(None, test_obj.peek())
+        aE..(N.., test_obj.peek())
         aE..(T.., test_obj.is_empty())
 
     ___ test_peek_shows_item_in_1_item_stack

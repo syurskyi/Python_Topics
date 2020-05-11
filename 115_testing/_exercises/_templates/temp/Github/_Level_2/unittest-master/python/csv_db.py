@@ -107,7 +107,7 @@ c_ ListIterator:
         __ cur >_0 an. cur < len(lst
             r_ lst[cur]
         else:
-            r_ None
+            r_ N..
 
     ___ next
         __ cur < len(lst) -1:
@@ -132,7 +132,7 @@ c_ ListIterator:
 c_ ObjectListIterator(ListIterator
     ___ info
         obj _ get()
-        __ obj __ None:
+        __ obj __ N..:
             r_ "None"
         r_ "Current Object: " + ("%d\t%s\t%s\t%s\t%s" % (id, geo, guid, category, commodity))
 

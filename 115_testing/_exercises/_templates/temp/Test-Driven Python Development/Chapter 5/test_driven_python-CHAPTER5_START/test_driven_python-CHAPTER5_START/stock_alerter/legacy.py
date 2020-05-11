@@ -11,10 +11,10 @@ class AlertProcessor:
         rule_2 = PriceRule("AAPL", lambda stock: stock.price > 5)
         self.exchange["GOOG"].updated.connect(
             lambda stock: print(stock.symbol, stock.price) \
-                          if rule_1.matches(self.exchange) else None)
+                          if rule_1.matches(self.exchange) else N..)
         self.exchange["AAPL"].updated.connect(
             lambda stock: print(stock.symbol, stock.price) \
-                          if rule_2.matches(self.exchange) else None)
+                          if rule_2.matches(self.exchange) else N..)
         updates = []
         with open("updates.csv", "r") as fp:
             for line in fp.readlines():

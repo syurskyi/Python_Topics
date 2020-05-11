@@ -70,4 +70,4 @@ w__ mock __ m:
 
 mock.__enter__.assert_called_with()
 
-mock.__exit__.assert_called_with(None, None, None)
+mock.__exit__.assert_called_with(N.., N.., N..)
