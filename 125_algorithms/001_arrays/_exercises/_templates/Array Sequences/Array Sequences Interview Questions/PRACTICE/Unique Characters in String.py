@@ -50,14 +50,14 @@
 # c_ TestUnique o..
 #
 #     ___ test  sol
-#         a_e.. ? ''), T..)
-#         a_e.. ? 'goo'), False)
+#         a_e.. ? ''), T..
+#         a_e.. ? 'goo'), F..
 #         a_e.. ? 'abcdefg'), T..)
 #         print('ALL TEST CASES PASSED')
 #
 # # Run Tests
-# t = TestUnique()
-# t.test(uni_char)
+# t _ ?
+# ?.t.. ?
 #
 # # %%
 # '''
