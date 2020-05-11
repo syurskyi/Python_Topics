@@ -7,7 +7,7 @@
 #
 #     ___ - value
 #
-#         ?
+#         ? ?
 #         nextnode _ N...
 # #
 # # Now we can build out Linked List with the collection of nodes:
