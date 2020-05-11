@@ -1,3 +1,5 @@
+import unittest
+
 class Solution(object):
   def twoSum(self, nums, target):
     """
@@ -12,3 +14,5 @@ class Solution(object):
       d[num] = i
     # no special case handling because it's assumed that it has only one solution
 
+class TestSolution(unittest.TestCase):
+  def setUp(self):

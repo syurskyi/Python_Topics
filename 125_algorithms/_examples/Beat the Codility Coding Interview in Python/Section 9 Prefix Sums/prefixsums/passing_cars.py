@@ -3,6 +3,7 @@
 # This is marked as PAINLESS difficulty
 
 def solution(A):
+    print(A)
     suffix_sum = [0] * (len(A) + 1)
     for i in range(len(A) - 1, -1, -1):
         suffix_sum[i] = A[i] + suffix_sum[i + 1]
