@@ -1,6 +1,6 @@
 
 def findtworepeatedelesusinghash(myarray):
-        print "Given array:", myarray
+        print("Given array:", myarray)
 	tab = {}  # hash
         #print "Created tab:", tab
 	for ele in myarray:
@@ -15,7 +15,7 @@ def findtworepeatedelesusinghash(myarray):
 	for ele in myarray:
                 #print "repeated eles are:"
 		if tab[ele] == 2:
-			print ele
+			print(ele)
 			
 myarray = [3, 5, 7, 18, 12, 18, 12, 1, 19]
 findtworepeatedelesusinghash(myarray)
