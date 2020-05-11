@@ -16,14 +16,13 @@
 # O(n) + O(n)
 
 def twosum(nums, target):
-	dic = {}    # dcit
+	dic = {}
 
 	for i in range(len(nums)):
-		if nums[i] in dict.keys():
+		if nums[i] in dic.keys():
             return [dic[nums[i]], i]
       else:
-
-			d..|t.. - n..|?|| _ ?
+d..|t.. - n..|?|| _ ?
 
 	r_    # list
 
