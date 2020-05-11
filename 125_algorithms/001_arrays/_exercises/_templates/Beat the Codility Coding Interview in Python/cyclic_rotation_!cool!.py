@@ -6,7 +6,7 @@
 #     result _ |N.. * le. A
 #
 #     ___ i __ ra.. le A
-#         ? || i + K % le. |A _ A|i
+#         ? || i + K| % le.|A|| _ A|i
 #
 #     r_ r..
 #
