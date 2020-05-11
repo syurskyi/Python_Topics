@@ -6,9 +6,9 @@ c_ Calculator o..
 
     ___ add  x, y
         """Addition Function."""
-        number_types _ (in., long, float, complex)
+        number_types _ (__., long, float, complex)
 
         __ isi..(x, number_types) an. isi..(y, number_types
             r_ x + y
-        else:
+        ____:
             r_ V..

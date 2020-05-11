@@ -10,16 +10,16 @@ c_ PrimesTestCase?.?
 
     ___ test_is_four_non_prime
         """Is four correctly determined not to be prime?"""
-        assertFalse(is_prime(4), msg_'Four is not prime!')
+        aF..(is_prime(4), msg_'Four is not prime!')
 
     ___ test_is_zero_not_prime
         """Is zero correctly determined not to be prime?"""
-        assertFalse(is_prime(0))
+        aF..(is_prime(0))
 
     ___ test_negative_number
         """Is a negative number correctly determined not to be prime?"""
         ___ index __ range(-1, -10, -1
-            assertFalse(is_prime(index), msg_'{} should not be determined to be prime'.f..(index))
+            aF..(is_prime(index), msg_'{} should not be determined to be prime'.f..(index))
 
 __ _____ __ _____
     ?.?

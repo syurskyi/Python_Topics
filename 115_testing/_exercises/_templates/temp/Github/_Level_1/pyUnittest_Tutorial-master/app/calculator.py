@@ -3,7 +3,7 @@ c_ Calculator o..
     """docstring for Calculator"""
 
     ___ add  x, y
-        number_types _ (in., float, complex)
+        number_types _ (__., float, complex)
 
         __ isi..(x, number_types) an. isi..(y, number_types
             print('X is: {}'.f..(x))
@@ -11,5 +11,5 @@ c_ Calculator o..
             result _ x - y
             print('Result is:{}'.f..(result))
             r_ result
-        else:
+        ____:
             r_ V..

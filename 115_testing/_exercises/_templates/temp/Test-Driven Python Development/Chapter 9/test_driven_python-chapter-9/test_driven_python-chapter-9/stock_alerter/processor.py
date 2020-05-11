@@ -1,9 +1,9 @@
 c_ Processor:
-    ___  -  reader, exchange):
+    ___  -  reader, ex__):
         reader = reader
-        exchange = exchange
+        ex__ = ex__
 
     ___ process
-        for symbol, timestamp, price in reader.get_updates():
-            stock = exchange[symbol]
-            stock.update(timestamp, price)
+        ___ symbol, timestamp, price __ reader.get_updates():
+            stock = ex__[symbol]
+            stock.u..(timestamp, price)

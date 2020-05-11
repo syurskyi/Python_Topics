@@ -6,26 +6,26 @@ c_ PriceRule:
         symbol = symbol
         condition = condition
 
-    ___ matches exchange):
-        try:
-            stock = exchange[symbol]
-        except KeyError:
-            return False
-        return condition(stock) if stock.price else False
+    ___ matches ex__):
+        ___
+            stock = ex__[symbol]
+        _____ K..
+            r_ F..
+        r_ condition(stock) __ stock.price ____ F..
 
     ___ depends_on
-        return {symbol}
+        r_ {symbol}
 
 
 c_ AndRule:
     ___  -  *args):
         rules = args
 
-    ___ matches exchange):
-        return all([rule.matches(exchange) for rule in rules])
+    ___ matches ex__):
+        r_ all([rule.m..(ex__) ___ rule __ rules])
 
     ___ depends_on
         depends = set()
-        for rule in rules:
+        ___ rule __ rules:
             depends = depends.union(rule.depends_on())
-        return depends
+        r_ depends

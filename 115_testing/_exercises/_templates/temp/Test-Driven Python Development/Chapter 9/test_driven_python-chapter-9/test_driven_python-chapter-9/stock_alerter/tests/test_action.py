@@ -1,8 +1,8 @@
 _____ smtplib
 _____ u__
-from u__ _____ mock
+____ u__ _____ mock
 
-from ..action _____ PrintAction, EmailAction
+____ ..action _____ PrintAction, EmailAction
 
 
 c_ MessageMatcher:
@@ -10,7 +10,7 @@ c_ MessageMatcher:
         expected = expected
 
     ___ __eq__ other):
-        return expected["Subject"] == other["Subject"] and \
+        r_ expected["Subject"] == other["Subject"] and \
             expected["From"] == other["From"] and \
             expected["To"] == other["To"] and \
             expected["Message"] == other._payload
@@ -39,24 +39,24 @@ c_ EmailActionTest ?.?
     ___ test_connection_closed_after_sending_mail
         action.execute("MSFT has crossed $10 price level")
         mock_smtp.send_message.assert_called_with(mock.ANY)
-        assertTrue(mock_smtp.quit.called)
+        aT..(mock_smtp.quit.called)
         mock_smtp.assert_has_calls([
             mock.call.send_message(mock.ANY),
             mock.call.quit()])
 
     ___ test_connection_closed_if_send_gives_error
         mock_smtp.send_message.side_effect = smtplib.SMTPServerDisconnected()
-        try:
+        ___
             action.execute("MSFT has crossed $10 price level")
-        except Exception:
+        _____ Exception:
             pass
-        assertTrue(mock_smtp.quit.called)
+        aT..(mock_smtp.quit.called)
 
     ___ test_email_is_sent_with_the_right_subject
         action.execute("MSFT has crossed $10 price level")
         call_args, _ = mock_smtp.send_message.call_args
         sent_message = call_args[0]
-        assertEqual("New Stock Alert", sent_message["Subject"])
+        aE..("New Stock Alert", sent_message["Subject"])
 
     ___ test_email_is_sent_when_action_is_executed
         expected_message = {

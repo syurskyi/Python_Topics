@@ -18,7 +18,7 @@ c_ BaseTestClass?.?
 
     ___ test_add
         aE..(120, 100+20)
-        assertFalse(10 > 20)
+        aF..(10 > 20)
         assertGreater(120, 100)
 
     ___ test_sub

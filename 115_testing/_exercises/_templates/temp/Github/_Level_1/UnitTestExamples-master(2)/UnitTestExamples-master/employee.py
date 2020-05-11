@@ -21,13 +21,13 @@ c_ Employee:
         r_ '{} {}'.f..(first, last)
 
     ___ apply_raise
-        pay _ in.(pay * raise_amt)
+        pay _ __.(pay * raise_amt)
 
     ___ monthly_schedule  month
         response _ requests.get(f'http://company.com/{last}/{month}')
         __ response.ok:
             r_ response.text
-        else:
+        ____:
             r_ 'Bad Response!'
 
 

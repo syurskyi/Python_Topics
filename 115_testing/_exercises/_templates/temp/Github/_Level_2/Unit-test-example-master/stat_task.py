@@ -27,12 +27,12 @@ c_ Parser(
 
         ___ line __ fileobj:
             allines +_ 1
-            try:
+            ___
                 L _ list(line.split('\t'))
                 L[index] __ T..
-            except IndexError:
+            _____ IndexError:
                 p..
-            else:
+            ____:
                 L[-1] _ L[-1].rstrip()
                 SOURCE.a..(L)
                 qty +_ 1
@@ -68,9 +68,9 @@ c_ Parser(
         ___ elem __ listobj:
             linecount +_ 1
             ___ num __ index:
-                try:
-                    elem[num] _ in.(elem[num])
-                except (TypeError, V..
+                ___
+                    elem[num] _ __.(elem[num])
+                _____ (TypeError, V..
                     print('Неверный формат в ' + st.(num+1) + ' столбце, в ' +\
                           st.(linecount) + ' строке данных.')
                     r_
@@ -89,7 +89,7 @@ c_ Parser(
         ___ elem __ source:
             __ elem[index] __ keyname:
                 p..
-            else:
+            ____:
                 keyname.a..(elem[index])
 
         r_ keyname
@@ -155,7 +155,7 @@ c_ Statistics:
             r_ ceil((data[lendata//2 - 1] + data[lendata//2]) /2)
             #округление в большую сторону
 
-        else:
+        ____:
             r_ (data[lendata//2])
 
     ___ percent90
@@ -178,7 +178,7 @@ c_ Statistics:
         __ lendata % 10 __ 0:
             r_ data[index]
 
-        else:
+        ____:
             r_ (data[index] + ceil( \
                 (data[index_plus1] - data[index]) * \
                 (lendata * 0.9 - index_plus1)))
@@ -203,7 +203,7 @@ c_ Statistics:
         __ lendata % 100 __ 0:
             r_ data[index]
 
-        else:
+        ____:
             r_ (data[index] + ceil( \
                 (data[index_plus1] - data[index]) * \
                 (lendata * 0.99 - index_plus1)))
@@ -228,7 +228,7 @@ c_ Statistics:
         __ lendata % 1000 __ 0:
             r_ data[index]
 
-        else:
+        ____:
             r_ (data[index] + ceil( \
                 (data[index_plus1] - data[index]) *\
                 (lendata * 0.999 - index_plus1)))

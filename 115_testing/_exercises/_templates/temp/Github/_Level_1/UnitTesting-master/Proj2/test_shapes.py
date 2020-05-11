@@ -16,20 +16,20 @@ c_ TestShapes?.?
 
     ___ test_circle_area_value
         # Check and confirm function is calculating the circle area value properly
-        assertAlmostEqual(ShapesArea().circle_area(2), pi*2**2)
-        assertAlmostEqual(ShapesArea().circle_area(0), 0)
-        assertAlmostEqual(ShapesArea().circle_area(100.55343), pi*100.55343**2)
+        aAE..(ShapesArea().circle_area(2), pi*2**2)
+        aAE..(ShapesArea().circle_area(0), 0)
+        aAE..(ShapesArea().circle_area(100.55343), pi*100.55343**2)
 
     ___ test_triangle_area_value
         # Check and confirm function is calculating the triangle area value properly
-        assertAlmostEqual(ShapesArea().triangle_area(2), 1/2*(2*sin(pi/3)+2)*(2*cos(pi/3)))
-        assertAlmostEqual(ShapesArea().triangle_area(0), 0)
-        assertAlmostEqual(ShapesArea().triangle_area(12.2323), 1/2*(12.2323*sin(pi/3)+12.2323)*(12.2323*cos(pi/3)))        
+        aAE..(ShapesArea().triangle_area(2), 1/2*(2*sin(pi/3)+2)*(2*cos(pi/3)))
+        aAE..(ShapesArea().triangle_area(0), 0)
+        aAE..(ShapesArea().triangle_area(12.2323), 1/2*(12.2323*sin(pi/3)+12.2323)*(12.2323*cos(pi/3)))
 
     ___ test_square_area_value
         # Check and confirm function is calculating the square area value properly
-        assertAlmostEqual(ShapesArea().square_area(2), 2*2*sin(pi/4))
-        assertAlmostEqual(ShapesArea().square_area(0), 0)
-        assertAlmostEqual(ShapesArea().square_area(100.23434), 2*100.23434*sin(pi/4))
+        aAE..(ShapesArea().square_area(2), 2*2*sin(pi/4))
+        aAE..(ShapesArea().square_area(0), 0)
+        aAE..(ShapesArea().square_area(100.23434), 2*100.23434*sin(pi/4))
     
         

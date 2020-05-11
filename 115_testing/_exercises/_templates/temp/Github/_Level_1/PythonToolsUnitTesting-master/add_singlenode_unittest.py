@@ -9,9 +9,9 @@ ____ linkedlist ______ LinkedList
 
 c_ SingleNodeInsertionTest?.?
     ___ setUp
-        try:
+        ___
             newList _ LinkedList()
-        except:
+        _____:
             print('\nSetup failed: '+ st.(sys.exc_info()[0]))
 
     ___ testNodeInsertion

@@ -51,10 +51,10 @@ c_ PhoneBookTest?.?
     ___ test_inconsistent_with_duplicate_entries
         phonebook.add("Bob", "12345")
         phonebook.add("Sue", "12345")
-        assertFalse(phonebook.is_consistent())
+        aF..(phonebook.is_consistent())
 
     ___ test_inconsistent_with_duplicate_prefix
         phonebook.add("Bob", "12345")
         phonebook.add("Sue", "123")
-        assertFalse(phonebook.is_consistent())
+        aF..(phonebook.is_consistent())
 

@@ -82,7 +82,7 @@ Remote Rtrn Count........... 00"""
             while(i >_ 0
                 message +_ chr((ra__.randint(0, 40) + 86))
                 i -_ 1
-        else:
+        ____:
             message _ _diagnostic_message_result
             _diagnostic_message_result _ ""
 

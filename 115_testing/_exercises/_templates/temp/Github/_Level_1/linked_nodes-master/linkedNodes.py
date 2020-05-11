@@ -20,7 +20,7 @@ c_ NodeList
         checked_node _ node_head
         __(checked_node __ N..
             node_head _ Node(value)
-        else:
+        ____:
             while(checked_node.get_next_node() __ no. N..
                 checked_node _ checked_node.get_next_node()
             checked_node.set_next_node(Node(value))
@@ -54,7 +54,7 @@ c_ NodeList
                 break
         __(found
             r_ checked_node.value
-        else:
+        ____:
             r_ N..
 
     ___ get_head_node

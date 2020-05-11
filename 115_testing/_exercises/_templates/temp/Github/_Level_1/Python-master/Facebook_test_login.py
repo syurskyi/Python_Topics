@@ -24,15 +24,15 @@ c_ PruebaLoginBusqueda?.?
       __ titulo __ 'Facebook - Connexion ou inscription': 
          print("Estamos en facebook!")
          time.sleep(1)
-      else:
+      ____:
          print("No estamos en facebook, o el titulo esta mal!")
 
     ___ testLogin
-        try:
+        ___
             elem _ driver.find_element_by_id("email") #Buscamos el campo para inserir el usuario
-        except NoSuchElementException __ exception:
+        _____ NoSuchElementException __ exception:
             print("No encontramos el elemento:", exception)
-        else:
+        ____:
             time.sleep(2.0)
             print("Elemento email --> OK!")
         elem.send_keys("email") #Escrebimos el nombre de usuario

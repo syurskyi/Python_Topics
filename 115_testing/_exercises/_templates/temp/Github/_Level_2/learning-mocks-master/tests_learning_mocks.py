@@ -21,7 +21,7 @@ c_ RmTestCase?.?
         mock_path.isfile.return_value _ F..
         removal_service.rm('any path')
         # test that remove call was NOT called
-        assertFalse(mock_os.remove.called, "Failed to NOT remove the if its not present")
+        aF..(mock_os.remove.called, "Failed to NOT remove the if its not present")
 
         # set the condition that the file does exist for the mock
         mock_path.isfile.return_value _ T..
@@ -78,7 +78,7 @@ c_ RequestsFunctionTests?.?
         bad_search_string _ 'bad'
         aT..(any(good_search_string __ t ___ t __ hrefs),
                         'string {0} not found in list elements'.f..(good_search_string))
-        assertFalse(any(bad_search_string __ t ___ t __ hrefs),
+        aF..(any(bad_search_string __ t ___ t __ hrefs),
                          'found string "{0}" in list element when should NOT have been found'.f..(bad_search_string))
 
 

@@ -28,7 +28,7 @@ x
 __ x __ 13:
         print("yes")
 
-    else:
+    ____:
         print("no")
         print("NO")
 

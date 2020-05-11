@@ -21,7 +21,7 @@ ___ convertEm(line
   line _ re.sub(r'_(.*)_', r'<em>\1</em>', line)
   r_ line
 
-___ line __ fileinput.in..(
+___ line __ fileinput.__..(
   line _ line.rstrip()
   line _ convertStrong(line)
   line _ convertEm(line)

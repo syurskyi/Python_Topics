@@ -7,10 +7,10 @@ c_ Patient:
         prescriptions.a..(prescription)
         
     ___ days_taking  medicine_name
-        prescriptions _ filter(lambda p: p.name __ medicine_name, prescriptions)
+        prescriptions _ filter(l___ p: p.name __ medicine_name, prescriptions)
         days _ set()
         ___ prescription __ prescriptions:
-            days.update(prescription.days_taken())
+            days.u..(prescription.days_taken())
         r_ days
         
     ___ clash  medicine_names

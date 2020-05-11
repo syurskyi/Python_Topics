@@ -1,7 +1,7 @@
-from datetime _____ datetime
+____ d_t_ _____ d_t_
 
-from .stock _____ Stock
-from .rule _____ PriceRule
+____ .stock _____ Stock
+____ .rule _____ PriceRule
 
 
 c_ FileReader:
@@ -10,37 +10,37 @@ c_ FileReader:
 
     ___ parse_file
         updates = []
-        with open(filename, "r") as fp:
-            for line in fp.readlines():
+        w__ open(filename, "r") as fp:
+            ___ line __ fp.readlines():
                 symbol, timestamp, price = line.split(",")
-                updates.append((symbol,
-                                datetime.strptime(timestamp, "%Y-%m-%dT%H:%M:%S.%f"),
+                updates.ap..((symbol,
+                                d_t_.strptime(timestamp, "%Y-%m-%dT%H:%M:%S.%f"),
                                 int(price)))
-        return updates
+        r_ updates
 
 
 c_ AlertProcessor:
-    ___  -  autorun=True, reader=N.., exchange=N..):
-        reader = reader if reader else FileReader("updates.csv")
-        if exchange is N..:
-            exchange = {"GOOG": Stock("GOOG"), "AAPL": Stock("AAPL")}
-        else:
-            exchange = exchange
-        rule_1 = PriceRule("GOOG", lambda stock: stock.price > 10)
-        rule_2 = PriceRule("AAPL", lambda stock: stock.price > 5)
-        exchange["GOOG"].updated.connect(lambda stock: print_action(stock, rule_1))
-        exchange["AAPL"].updated.connect(lambda stock: print_action(stock, rule_2))
-        if autorun:
+    ___  -  autorun=True, reader=N.., ex__=N..):
+        reader = reader __ reader ____ FileReader("updates.csv")
+        __ ex__ is N..:
+            ex__ = {"GOOG": Stock("GOOG"), "AAPL": Stock("AAPL")}
+        ____:
+            ex__ = ex__
+        rule_1 = PriceRule("GOOG", l___ stock: stock.price > 10)
+        rule_2 = PriceRule("AAPL", l___ stock: stock.price > 5)
+        ex__["GOOG"].updated.connect(l___ stock: print_action(stock, rule_1))
+        ex__["AAPL"].updated.connect(l___ stock: print_action(stock, rule_2))
+        __ autorun:
             run()
 
     ___ print_action stock, rule):
         print(stock.symbol, stock.price) \
-            if rule.matches(exchange) else N..
+            __ rule.matches(ex__) ____ N..
 
     ___ do_updates updates):
-        for symbol, timestamp, price in updates:
-            stock = exchange[symbol]
-            stock.update(timestamp, price)
+        ___ symbol, timestamp, price __ updates:
+            stock = ex__[symbol]
+            stock.u..(timestamp, price)
 
     ___ run
         updates = reader.parse_file()

@@ -25,14 +25,14 @@ c_ TestAssertions(TestCase
 
     ___ test_bool
         aT..(1 __ 1)
-        assertFalse(1 __ 0)
+        aF..(1 __ 0)
 
     ___ test_comparison
         assertGreater(1337, 42)
         assertGreaterEqual(13, 13)
         assertLess(42, 1337)
         assertLessEqual(13, 13)
-        assertAlmostEqual(2.012, 2.013, 2)
+        aAE..(2.012, 2.013, 2)
         assertNotAlmostEqual(2.012, 2.013, 3)
 
     ___ test_exceptions

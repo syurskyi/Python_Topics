@@ -8,9 +8,9 @@ ____ math ______ pi
 c_ TestCircleArea?.?
     ___ test_area
         # Tests to confirm that it calculates the area as expected
-        assertAlmostEqual(circle_area(0),0)
-        assertAlmostEqual(circle_area(2), pi*(2**2))
-        assertAlmostEqual(circle_area(3.145),pi*(3.145**2))
+        aAE..(circle_area(0),0)
+        aAE..(circle_area(2), pi*(2**2))
+        aAE..(circle_area(3.145),pi*(3.145**2))
     
     ___ test_area_types
         # Test to make sure the correct type is entered into the function
@@ -24,9 +24,9 @@ c_ TestCircleArea?.?
 
     ___ test_circumfrence
         # Tests circumfrence to expected val
-        assertAlmostEqual(circle_circumfrence(0), 0)      
-        assertAlmostEqual(circle_circumfrence(2), 2*pi*2)
-        assertAlmostEqual(circle_circumfrence(3.14556445), 3.14556445*pi*2)
+        aAE..(circle_circumfrence(0), 0)
+        aAE..(circle_circumfrence(2), 2*pi*2)
+        aAE..(circle_circumfrence(3.14556445), 3.14556445*pi*2)
 
     ___ test_circumfrence_types
         # Test circumfrence input to make sure errors handled

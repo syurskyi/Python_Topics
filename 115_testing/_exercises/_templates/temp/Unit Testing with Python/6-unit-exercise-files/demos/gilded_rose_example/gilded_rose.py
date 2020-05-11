@@ -11,7 +11,7 @@ c_ GildedRose o..
                 __ item.quality > 0:
                     __ item.name !_ "Sulfuras, Hand of Ragnaros":
                         item.quality _ item.quality - 1
-            else:
+            ____:
                 __ item.quality < 50:
                     item.quality _ item.quality + 1
                     __ item.name __ "Backstage passes to a TAFKAL80ETC concert":
@@ -29,9 +29,9 @@ c_ GildedRose o..
                         __ item.quality > 0:
                             __ item.name !_ "Sulfuras, Hand of Ragnaros":
                                 item.quality _ item.quality - 1
-                    else:
+                    ____:
                         item.quality _ item.quality - item.quality
-                else:
+                ____:
                     __ item.quality < 50:
                         item.quality _ item.quality + 1
 

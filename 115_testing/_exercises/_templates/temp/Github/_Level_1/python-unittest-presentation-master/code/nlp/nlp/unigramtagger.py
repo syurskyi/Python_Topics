@@ -15,7 +15,7 @@ c_ UnigramTagger:
         _model _ dict()
         _tag_distribution _ dict()
         _tags _ Counter()
-        _N _ in.()
+        _N _ __.()
 
     @property
     ___ N
@@ -108,7 +108,7 @@ c_ UnigramTagger:
                 available_tags _ model[word]
                 most_likely_tag _ ma.(available_tags, key_available_tags.get)
                 result.a..((word, most_likely_tag))
-            else:
+            ____:
                 tag _ ma.(tag_distribution, key_tag_distribution.get)
                 result.a..((word, tag))
 

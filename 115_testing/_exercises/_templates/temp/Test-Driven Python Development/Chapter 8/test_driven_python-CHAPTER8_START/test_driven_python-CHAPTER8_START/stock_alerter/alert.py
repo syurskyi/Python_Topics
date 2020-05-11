@@ -7,12 +7,12 @@ c_ Alert:
         rule = rule
         action = action
 
-    ___ connect exchange):
-        exchange = exchange
+    ___ connect ex__):
+        ex__ = ex__
         dependent_stocks = rule.depends_on()
-        for stock in dependent_stocks:
-            exchange[stock].updated.connect(check_rule)
+        ___ stock __ dependent_stocks:
+            ex__[stock].updated.connect(check_rule)
 
     ___ check_rule stock):
-        if rule.matches(exchange):
+        __ rule.m..(ex__):
             action.execute(description)

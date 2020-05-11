@@ -10,13 +10,13 @@ ____ linkedlist ______ LinkedList
 
 c_ NodesDeleteTest?.?
     ___ setUp
-        try:
+        ___
             #create list
             newList _ LinkedList()
             #populate the list with data 0 to 9
             ___ i __ range(10
                 newList.addNode(i)
-        except:
+        _____:
             print('\nSetup failed: '+ st.(sys.exc_info()[0]))
                    
         #prepare list reflecting example data in list

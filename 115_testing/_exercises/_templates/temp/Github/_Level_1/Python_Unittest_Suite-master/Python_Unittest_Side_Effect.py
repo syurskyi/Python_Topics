@@ -63,7 +63,7 @@ mock()
 # Here�s an example that adds one to the value the mock is called with and returns it:
 # 
 
-side_effect _ lambda value: value + 1
+side_effect _ l___ value: value + 1
 
 mock _ Mock(side_effect_side_effect)
 mock(3)

@@ -29,12 +29,12 @@ __ _____ __ _____
         __ name __ globals(
             obj _ globals()[name]
 
-        else:
+        ____:
             obj _ __test__[name]
 
         doctest.run_docstring_examples(obj, globals(), name_name,
                                        optionflags_flags)
-    else:
+    ____:
         fail, total _ doctest.testmod(optionflags_flags)
 
         print("{} failures out of {} tests".f..(fail, total))

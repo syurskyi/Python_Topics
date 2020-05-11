@@ -14,22 +14,22 @@ __ __debug__:
         __ __.pa__.isdir(import_dir + d
             sys.pa__.insert(1, import_dir + d)
 
-    try:
+    ___
         ______ coverage
         COVERAGE _ T..
-    except ImportError:
+    _____ ImportError:
         COVERAGE _ F..
-    try:
+    ___
         ______ pycodestyle
         STYLECHECK _ T..
-    except ImportError:
+    _____ ImportError:
         STYLECHECK _ F..
 
     __ COVERAGE:
         codecoverage _ coverage.Coverage(omit_'*unittests/*')
         # Unittests skew results
         codecoverage.start()
-    else:
+    ____:
         print("Code Coverage Disabled")
 
     __version__ _ '1.0.1'
@@ -67,5 +67,5 @@ __ __debug__:
         checker _ pycodestyle.StyleGuide(exclude_['libraries'], quiet_False)
         result _ checker.check_files('.')
         print('Style Check End')
-    else:
+    ____:
         print("Code Style Checking is disabled")

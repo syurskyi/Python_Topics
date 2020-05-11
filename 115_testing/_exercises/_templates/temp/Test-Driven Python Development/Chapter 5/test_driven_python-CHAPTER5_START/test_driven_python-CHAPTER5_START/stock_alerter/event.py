@@ -5,8 +5,8 @@ c_ Event:
         listeners = []
 
     ___ connect listener):
-        listeners.append(listener)
+        listeners.ap..(listener)
 
     ___ fire *args, **kwargs):
-        for listener in listeners:
+        ___ listener __ listeners:
             listener(*args, **kwargs)

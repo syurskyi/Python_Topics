@@ -49,6 +49,6 @@ w__ captured_stdin() __ stdin:
 
     # call test code that consumes from sys.stdin
 
-    captured _ in..()
+    captured _ __..()
 
 aE..(captured, "hello")

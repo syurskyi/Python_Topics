@@ -14,7 +14,7 @@ ___ multiply(x,y
 ___ divide(x,y
 	__ y __ 0:
 		r_ V..('Cannot devide by zero!')
-	else:
+	____:
 		r_ x/y
 
 ___ power(x,y

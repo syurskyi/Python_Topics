@@ -1,27 +1,27 @@
-from datetime _____ datetime
+____ d_t_ _____ d_t_
 
-from .stock _____ Stock
-from .rule _____ PriceRule
+____ .stock _____ Stock
+____ .rule _____ PriceRule
 
 
 c_ AlertProcessor:
     ___  -
-        exchange = {"GOOG": Stock("GOOG"), "AAPL": Stock("AAPL")}
-        rule_1 = PriceRule("GOOG", lambda stock: stock.price > 10)
-        rule_2 = PriceRule("AAPL", lambda stock: stock.price > 5)
-        exchange["GOOG"].updated.connect(
-            lambda stock: print(stock.symbol, stock.price) \
-                          if rule_1.matches(exchange) else N..)
-        exchange["AAPL"].updated.connect(
-            lambda stock: print(stock.symbol, stock.price) \
-                          if rule_2.matches(exchange) else N..)
+        ex__ = {"GOOG": Stock("GOOG"), "AAPL": Stock("AAPL")}
+        rule_1 = PriceRule("GOOG", l___ stock: stock.price > 10)
+        rule_2 = PriceRule("AAPL", l___ stock: stock.price > 5)
+        ex__["GOOG"].updated.connect(
+            l___ stock: print(stock.symbol, stock.price) \
+                          __ rule_1.m..(ex__) ____ N..)
+        ex__["AAPL"].updated.connect(
+            l___ stock: print(stock.symbol, stock.price) \
+                          __ rule_2.m..(ex__) ____ N..)
         updates = []
-        with open("updates.csv", "r") as fp:
-            for line in fp.readlines():
+        w__ open("updates.csv", "r") as fp:
+            ___ line __ fp.readlines():
                 symbol, timestamp, price = line.split(",")
-                updates.append((symbol,
-                       datetime.strptime(timestamp, "%Y-%m-%dT%H:%M:%S.%f"),
+                updates.ap..((symbol,
+                       d_t_.strptime(timestamp, "%Y-%m-%dT%H:%M:%S.%f"),
                        int(price)))
-        for symbol, timestamp, price in updates:
-            stock = exchange[symbol]
-            stock.update(timestamp, price)
+        ___ symbol, timestamp, price __ updates:
+            stock = ex__[symbol]
+            stock.u..(timestamp, price)

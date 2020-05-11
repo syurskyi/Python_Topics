@@ -12,7 +12,7 @@ c_ Product:
     # initialisation
     ___  -   year, geo, guid, category, commodity
         id _ 0
-        year _ in.(year)
+        year _ __.(year)
         geo _ geo
         guid _ guid
         category _ category
@@ -25,7 +25,7 @@ c_ Product:
 
 ___ read_csv(file_name
     lst _ []
-    try:
+    ___
         w__ o..(file_name, newline_'', encoding_'utf-8') __ csvfile:
             reader _ csv.DictReader(csvfile)
             ___ row __ reader:
@@ -33,7 +33,7 @@ ___ read_csv(file_name
                 print (product)
                 lst.a..(product)
 
-    except:
+    _____:
         print ('read_csv failed')
 
     r_ lst
@@ -46,7 +46,7 @@ ___ main(
         print ('There are less than 10000 records')
     elif n > 10000:
         print ('There are more than 10000 records')
-    else:
+    ____:
         print ('There are exactly 10000 records')
 
 __ _____ __ _____

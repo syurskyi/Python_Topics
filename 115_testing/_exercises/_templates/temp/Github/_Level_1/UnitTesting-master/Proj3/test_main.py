@@ -29,9 +29,9 @@ c_ TestInterest?.?
     
     ___ test_function_output_correctness
         """ Test and make sure the functions are outputting the expected values """
-        assertAlmostEqual(Interest().simple_interest(100, .5, 1), 100 * (.5 * 1 + 1))
-        assertAlmostEqual(Interest().simple_interest(0, .5, 1), 0 * (.5 * 1 + 1))
-        assertAlmostEqual(Interest().simple_interest(17659, .03, 10), 17659 * (.03 * 10 + 1))
+        aAE..(Interest().simple_interest(100, .5, 1), 100 * (.5 * 1 + 1))
+        aAE..(Interest().simple_interest(0, .5, 1), 0 * (.5 * 1 + 1))
+        aAE..(Interest().simple_interest(17659, .03, 10), 17659 * (.03 * 10 + 1))
 
     ___ test_compound_interest_type_error
         """ Test all arguements of the function to determine that if rouge type is entered that it is caught """
@@ -63,6 +63,6 @@ c_ TestInterest?.?
     
     ___ test_compound_output_correctness
         """ Test and make sure the functions are outputting the expected values """
-        assertAlmostEqual(Interest().compound_interest(100, .5, 1, 2), 100 * (1 + .5 / 2)**(2 * 1))
-        assertAlmostEqual(Interest().compound_interest(0, .5, 1, 2), 0 * (1 + .5 / 2)**(2 * 1))
-        assertAlmostEqual(Interest().compound_interest(17659, .03, 10, 2), 17659 * (1 + .03 / 2)**(2 * 10))
+        aAE..(Interest().compound_interest(100, .5, 1, 2), 100 * (1 + .5 / 2)**(2 * 1))
+        aAE..(Interest().compound_interest(0, .5, 1, 2), 0 * (1 + .5 / 2)**(2 * 1))
+        aAE..(Interest().compound_interest(17659, .03, 10, 2), 17659 * (1 + .03 / 2)**(2 * 10))

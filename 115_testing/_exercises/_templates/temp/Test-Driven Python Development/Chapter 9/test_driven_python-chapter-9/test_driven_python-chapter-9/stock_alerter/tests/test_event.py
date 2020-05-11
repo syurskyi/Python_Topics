@@ -1,7 +1,7 @@
 _____ u__
-from u__ _____ mock
+____ u__ _____ mock
 
-from ..event _____ Event
+____ ..event _____ Event
 
 
 c_ EventTest ?.?
@@ -10,7 +10,7 @@ c_ EventTest ?.?
         event = Event()
         event.connect(listener)
         event.fire()
-        assertTrue(listener.called)
+        aT..(listener.called)
 
     ___ test_a_listener_is_passed_right_parameters
         listener = mock.Mock()

@@ -19,7 +19,7 @@
 
 mock _ Mock(spec_3)
 
-isi..(mock, in.)
+isi..(mock, __.)
 
 # OUTPUT: 'True'
  

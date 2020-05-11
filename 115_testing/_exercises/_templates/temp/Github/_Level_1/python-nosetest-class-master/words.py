@@ -24,7 +24,7 @@ ___ wordcounts(text
 
     Case is ignored, so each key is the lowercase version of the word.
     '''
-    counts _ defaultdict(in.)
+    counts _ defaultdict(__.)
     ___ fragment __ text.split(
         word _ _normalize(fragment)
         __ word __ '':

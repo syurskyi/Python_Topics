@@ -70,13 +70,13 @@ c_ LinkedList  o..
 					next.setPrevNode(prev)
 				__ (prev
 					prev.setNextNode(next)
-				else:
+				____:
 					root _ thisNode
 					
 				size -_ 1
 				#Confirmed that node  was removed
 				r_ T..
-			else:
+			____:
 				thisNode _ thisNode.getNextNode()
 		
 		#Could not find the specified data - nothing removed
@@ -87,7 +87,7 @@ c_ LinkedList  o..
 		while (thisNode
 			__ (thisNode.getData() __ dataSet
 			    r_ dataSet
-			else:
+			____:
 			    thisNode _ thisNode.getNextNode()
 		r_ N..
 

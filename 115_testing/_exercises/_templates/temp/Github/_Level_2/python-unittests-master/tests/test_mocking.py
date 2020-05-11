@@ -31,4 +31,4 @@ c_ TestCurrency?.?
                 CURRENCY_CONVERSION_API_URL_CURRENCY_CONVERSION_API_URL), text_mocked_response)
             result _ convert_currency('EUR', 'CZK', 100)
         AII..(result, float)
-        assertAlmostEqual(result, 2577.7)
+        aAE..(result, 2577.7)

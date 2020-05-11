@@ -29,13 +29,13 @@ c_ TennisGame:
                 result _"Advantage " + player2Name
             elif (minusResult>_2
                 result _ "Win for " + player1Name
-            else:
+            ____:
                 result _"Win for " + player2Name
-        else:
+        ____:
             ___ i __ range(1,3
                 __ (i__1
                     tempScore _ p1points
-                else:
+                ____:
                     result+_"-"
                     tempScore _ p2points
                 result +_ {
@@ -49,5 +49,5 @@ c_ TennisGame:
         ___ won_point  playerName
             __ playerName __ player1Name:
                 p1points +_ 1
-            else:
+            ____:
                 p2points +_ 1

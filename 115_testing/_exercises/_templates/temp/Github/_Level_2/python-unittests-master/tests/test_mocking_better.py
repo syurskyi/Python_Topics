@@ -43,11 +43,11 @@ c_ TestCurrency?.?
             result _ convertor.convert_currency('EUR', 'CZK', 100)
 
         AII..(result, float)
-        assertAlmostEqual(result, 2577.7)
+        aAE..(result, 2577.7)
 
     ___ test_convert_currency__mocking
         convertor _ CurrencyConvertor()
         convertor.get_exchange_rate _ Mock(return_value_25.777)
         result _ convertor.convert_currency('EUR', 'CZK', 100)
         AII..(result, float)
-        assertAlmostEqual(result, 2577.7)
+        aAE..(result, 2577.7)

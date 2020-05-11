@@ -1,5 +1,5 @@
 _____ smtplib
-from email.mime.text _____ MIMEText
+____ email.mime.text _____ MIMEText
 
 
 c_ PrintAction:
@@ -20,7 +20,7 @@ c_ EmailAction:
         message["From"] = "alerts@stocks.com"
         message["To"] = to_email
         smtp = smtplib.SMTP("email.stocks.com")
-        try:
+        ___
             smtp.send_message(message)
         finally:
             smtp.quit()

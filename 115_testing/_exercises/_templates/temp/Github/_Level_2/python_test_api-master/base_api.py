@@ -105,19 +105,19 @@ c_ BaseApi?.?
     ___ assert_for_status_code_and_content_type  r, code_None, content_type_N..
         __ code:
             assertEquals(r.status_code, code)
-        try:
+        ___
             validate_content_type(r, content_type)
-        except KeyError:
+        _____ K..
             print "Couldn't find Content-type header in response"
 
     ___ validate_content_type  r, content_type_N..
         __ content_type:
             assertEquals(r.headers['Content-Type'], content_type)
-        else:
+        ____:
             aE..(r.headers['Content-Type'], content_type)
 
     ___ validate_xml  r, schema_file
-        try:
+        ___
             # Get the XML schema to validate against
             schema _ lxml.etree.XMLSchema(file_schema_file)
             # Parse XML
@@ -127,17 +127,17 @@ c_ BaseApi?.?
             # Validate parsed XML against schema returning boolean value indicating success/failure
             print 'schema.validate() returns "%s".' % schema.validate(xml_doc)
 
-        except lxml.etree.XMLSchemaParseError, xspe:
+        _____ lxml.etree.XMLSchemaParseError, xspe:
             # Something wrong with the schema (getting from URL/parsing)
             print "XMLSchemaParseError occurred!"
             print xspe
 
-        except lxml.etree.XMLSyntaxError, xse:
+        _____ lxml.etree.XMLSyntaxError, xse:
             # XML not well formed
             print "XMLSyntaxError occurred!"
             print xse
 
-        except lxml.etree.DocumentInvalid, di:
+        _____ lxml.etree.DocumentInvalid, di:
             # XML failed to validate against schema
             print "DocumentInvalid occurred!"
 

@@ -22,11 +22,11 @@ c_ TestUnittestMethods?.?
 
     ___ testFailIf
         """Устаревшая функция, теперь называется assertFalse()"""
-        assertFalse(F..)
+        aF..(F..)
 
     ___ testAssertFalse
         """Вызывает ошибку, если начение аргумента != False"""
-        assertFalse(F..)
+        aF..(F..)
 
     ___ testEqual
         """Вызывает ошибку, если значения двух аргументов НЕ равны"""

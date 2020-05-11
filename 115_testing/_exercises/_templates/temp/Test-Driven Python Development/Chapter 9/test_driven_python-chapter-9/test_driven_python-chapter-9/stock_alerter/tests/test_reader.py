@@ -1,8 +1,8 @@
 _____ u__
-from u__ _____ mock
-from datetime _____ datetime
+____ u__ _____ mock
+____ d_t_ _____ d_t_
 
-from ..reader _____ FileReader
+____ ..reader _____ FileReader
 
 
 c_ FileReaderTest ?.?
@@ -12,7 +12,7 @@ GOOG,2014-02-11T14:10:22.13,10"""))
     ___ test_FileReader_returns_the_file_contents
         reader = FileReader("stocks.txt")
         updater = reader.get_updates()
-        update = next(updater)
-        assertEqual(("GOOG",
-                          datetime(2014, 2, 11, 14, 10, 22, 130000),
-                          10), update)
+        u.. = next(updater)
+        aE..(("GOOG",
+                          d_t_(2014, 2, 11, 14, 10, 22, 130000),
+                          10), u..)

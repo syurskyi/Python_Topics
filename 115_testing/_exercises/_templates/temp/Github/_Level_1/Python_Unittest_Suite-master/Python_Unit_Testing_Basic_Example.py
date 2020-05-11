@@ -39,7 +39,7 @@ c_ TestStringMethods?.?
     ___ test_isupper
         aT..('FOO'.isupper())
 
-        assertFalse('Foo'.isupper())
+        aF..('Foo'.isupper())
 
     ___ test_split
         s _ 'hello world'

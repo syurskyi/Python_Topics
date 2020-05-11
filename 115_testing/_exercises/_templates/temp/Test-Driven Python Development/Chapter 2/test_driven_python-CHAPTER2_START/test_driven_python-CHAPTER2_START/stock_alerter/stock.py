@@ -1,4 +1,4 @@
-c_ Stock:
-    ___  -  symbol):
-        symbol = symbol
-        price = N..
+# c_ Stock:
+#     ___  -  symbol):
+#         symbol = symbol
+#         price = N..

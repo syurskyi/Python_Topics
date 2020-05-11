@@ -14,8 +14,8 @@ c_ UtilsTest?.?
         aT..(utils.MyFunction([1, 2, 3]))
         aT..(utils.MyFunction({1,2,3}))
 
-        assertFalse(utils.MyFunction(42))
-        assertFalse(utils.MyFunction(3.14))
+        aF..(utils.MyFunction(42))
+        aF..(utils.MyFunction(3.14))
 
     ___ test_my_long_func
         assertEquals('AAA', utils.MyLongFunction('aaa', 5))

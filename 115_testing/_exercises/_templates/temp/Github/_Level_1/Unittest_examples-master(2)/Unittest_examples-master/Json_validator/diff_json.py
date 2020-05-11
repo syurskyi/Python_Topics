@@ -54,20 +54,20 @@ c_ JsonDiffHandler o..
                 # Формирование вложенности секции через точку
                 __ len(pa__) __ 0:
                     new_path _ key
-                else:
+                ____:
                     new_path _ "%s.%s" % (pa__, key)
                 # Если проверяемая секция тестового json словарь
                 __ isi..(second_json, dict
                     __ key __ second_json:
                         sec _ second_json[key]
-                    else:
+                    ____:
                         #  В тестовом json отсутствует секция
                         save_difference(new_path, PATH)
                         sec _ N..
                     # Рекурсивный вызов
                     __ sec __ no. N..:
                         check(first_json[key], sec, path_new_path, with_values_with_values)
-                else:
+                ____:
                     # Если проверяемая секция тестового json НЕ словарь,
                     # то вся секция эталонного json записывается в результат
                     save_difference(new_path, PATH)
@@ -79,9 +79,9 @@ c_ JsonDiffHandler o..
                 new_path _ "%s[%s]" % (pa__, index)
                 sec _ N..
                 __ second_json __ no. N..:
-                    try:
+                    ___
                         sec _ second_json[index]
-                    except (IndexError, KeyError
+                    _____ (IndexError, KeyError
                         # Если ОШИБКА, значит секция-список эталонного json,
                         # отличается от секции-список тестового json, записываем в результат
                         save_difference('%s - %s' % (new_path, type(item).__name__), TYPE)
@@ -89,7 +89,7 @@ c_ JsonDiffHandler o..
                 # Рекурсивный вызов
                 check(first_json[index], sec, path_new_path, with_values_with_values)
         # Если разница между тестируемым и эталонным json только в значениях определенных секции
-        else:
+        ____:
             __ with_values an. second_json __ no. N..:
                 __ first_json !_ second_json:
                     save_difference('%s --> OLD VALUE: %s ==> NEW VALUE: %s ' %

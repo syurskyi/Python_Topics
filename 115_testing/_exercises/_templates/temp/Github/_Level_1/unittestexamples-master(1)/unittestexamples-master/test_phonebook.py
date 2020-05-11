@@ -37,9 +37,9 @@ c_ PhoneBookTest?.?
         phonebook.add("Anna", "012345")
         aT..(phonebook.is_consistent())
         phonebook.add("Sue", "12345") # identitcal to Bob
-        assertFalse(phonebook.is_consistent())
+        aF..(phonebook.is_consistent())
         phonebook.add("Sue", "123") # prefix of Bob
-        assertFalse(phonebook.is_consistent())
+        aF..(phonebook.is_consistent())
 
     ___ test_is_consistent_with_different_entries
         phonebook.add("Bob", "12345")
@@ -49,12 +49,12 @@ c_ PhoneBookTest?.?
     ___ test_inconsistent_with_duplicate_entries
         phonebook.add("Bob", "12345")
         phonebook.add("Sue", "12345")
-        assertFalse(phonebook.is_consistent())
+        aF..(phonebook.is_consistent())
 
     ___ test_inconsistent_with_duplicate_prefix
         phonebook.add("Bob", "12345")
         phonebook.add("Sue", "123")
-        assertFalse(phonebook.is_consistent())
+        aF..(phonebook.is_consistent())
 
     ___ test_phonebook_adds_names_and_numbers
         phonebook.add("Sue", "123343") # Act

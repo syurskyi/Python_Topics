@@ -36,7 +36,7 @@ ___ parse_phone_number(element
 			digits +_ x
 	__ len(digits) __ 10:
 		r_ T..
-	else:
+	____:
 		r_ F..
 
 ___ format_phone_number(phone
@@ -77,7 +77,7 @@ ___ parse_lines(line
 	elif len(line[2]) __ 5 an. line[2][0].isdigit(
 		__ parse_phone_number(line[3]
 			r_ format_three(line)
-	else:
+	____:
 		r_ N..
 
 ___ split_line(line
@@ -92,7 +92,7 @@ ___ split_line(line
 		firstn _ data_list[0].split(' ')[0]
 		lastn _ data_list[0].split(' ')[1]
 		r_ [firstn, lastn] + data_list[1:]
-	else:
+	____:
 		r_ data_list
 
 ___ parse_file(input_file
@@ -113,7 +113,7 @@ ___ parse_file(input_file
 
 		__ contact __ no. N..:
 			entries.a..(contact)
-		else:
+		____:
 			errors.a..(idx)
 
 	sorted_entries _ sorted(entries, key_lambda x:

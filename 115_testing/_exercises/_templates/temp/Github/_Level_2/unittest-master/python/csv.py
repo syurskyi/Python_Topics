@@ -31,7 +31,7 @@ c_ Database:
         db.query(query)
 
     # update a record based on id
-    ___ update  id, product
+    ___ u..  id, product
         query _ ("UPDATE %s SET geo='%s', guid='%s', category='%s', commodity='%s' WHERE id=%d" %
             (_tablename, product.geo, product.guid, product.category, product.commodity, product.id))
         db.query(query)
@@ -43,7 +43,7 @@ c_ Database:
         r _ db.store_result()
         product _ Product()
         ___ i __ r.fetch_row(maxrows_1
-            product.id _ in.(i[0])
+            product.id _ __.(i[0])
             product.geo _ i[1]
             product.guid _ i[2]
             product.category _ i[3]
@@ -102,21 +102,21 @@ c_ ListIterator:
     ___ get
         __ cur >_0 an. cur < len(lst
             r_ lst[cur]
-        else:
+        ____:
             r_ N..
 
     ___ next
         __ cur < len(lst) -1:
             cur +_ 1
             r_ T..
-        else:
+        ____:
             r_ F..
 
     ___ prev
         __ cur > 0:
             cur -_ 1
             r_ T..
-        else:
+        ____:
             r_ F..
 
     ___ info
@@ -147,7 +147,7 @@ c_ Product:
 # reads 4 fields from given file
 ___ read_csv(file_name
     lst _ []
-    try:
+    ___
         w__ o..(file_name, newline_'', encoding_'utf-8') __ csvfile:
             reader _ csv.DictReader(csvfile)
             ___ row __ reader:
@@ -155,7 +155,7 @@ ___ read_csv(file_name
                 print (product)
                 lst.a..(product)
 
-    except:
+    _____:
         print ('read_csv failed')
 
     r_ lst

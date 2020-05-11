@@ -10,7 +10,7 @@ c_ TestMathMerhods?.?
         aT..(math.sqrt(4) __ 2)
     
     ___ test_absolute_value
-        assertFalse(math.fabs(-4) __ -4)
+        aF..(math.fabs(-4) __ -4)
 
     ___ test_zero_division
         aR..(ZeroDivisionError)
