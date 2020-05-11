@@ -60,9 +60,9 @@ c.nextnode = d
 
 # Now let's check the values of the nodes coming after a, b and c:
 #
-print a.nextnode.value
-print b.nextnode.value
-print c.nextnode.value
+print(a.nextnode.value)
+print(b.nextnode.value)
+print(c.nextnode.value)
 # 2
 # 3
 # 4
@@ -82,14 +82,14 @@ d.nextnode.value
 reverse(a)
 # <__main__.Node at 0x104bd7dd0>
 #
-print d.nextnode.value
-print c.nextnode.value
-print b.nextnode.value
+print(d.nextnode.value)
+print(c.nextnode.value)
+print(b.nextnode.value)
 # 3
 # 2
 # 1
 #
-print a.nextnode.value # This will give an error since it now points to None
+# print(a.nextnode.value) # This will give an error since it now points to None
 #
 # ---------------------------------------------------------------------------
 # AttributeError                            Traceback (most recent call last)
