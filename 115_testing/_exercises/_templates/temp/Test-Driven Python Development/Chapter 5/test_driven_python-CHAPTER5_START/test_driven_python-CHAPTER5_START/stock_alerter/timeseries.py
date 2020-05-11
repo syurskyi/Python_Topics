@@ -1,8 +1,8 @@
 _____ bisect
-_____ collections
+_____ col..
 ____ d_t_ _____ timedelta
 
-Update = collections.namedtuple("Update", ["timestamp", "value"])
+Update = col...namedtuple("Update", ["timestamp", "value"])
 
 
 c_ NotEnoughDataException(Exception):

@@ -1,7 +1,7 @@
-____ nose.tools ______ with_setup
-____ nose.plugins.deprecated ______ DeprecatedTest
-____ nose.plugins.skip ______ SkipTest
-____ nose.tools ______ nottest
+____ n__.tools ______ with_setup
+____ n__.plugins.deprecated ______ DeprecatedTest
+____ n__.plugins.skip ______ SkipTest
+____ n__.tools ______ nottest
 
 
 global_a, global_b _ 0, 0

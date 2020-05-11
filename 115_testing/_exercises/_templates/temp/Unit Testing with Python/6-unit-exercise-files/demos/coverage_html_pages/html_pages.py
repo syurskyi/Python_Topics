@@ -15,7 +15,7 @@ c_ HtmlPagesConverter:
         file_access _ file_access
         breaks _ [0]
         w__ file_access.o..() __ f:
-            while T..:
+            w__ T..:
                 line _ f.readline()
                 __ no. line:
                     break
@@ -32,11 +32,11 @@ c_ HtmlPagesConverter:
         html _ ""
         w__ file_access.o..() __ f:
             f.seek(page_start)
-            while f.tell() !_ page_end:
+            w__ f.tell() !_ page_end:
                 line _ f.readline()
                 line _ line.rstrip()
                 __ "PAGE_BREAK" __ line:
-                    continue
+                    c___
                 html +_ html_converter.escape(line, quote_True)
                 html +_ "<br />"
         r_ html

@@ -1,10 +1,10 @@
 # only be executed with option --all-module
 
-____ nose.tools ______ raises, timed, istest, nottest
+____ n__.tools ______ raises, timed, istest, nottest
 ______ time
 
 
-@raises(TypeError, V..)
+?r..(TypeError, V..)
 ___ test_raises_type_error(
     r_ TypeError("This test passes")
 

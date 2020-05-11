@@ -1,4 +1,4 @@
-____ nose.plugins.attrib ______ attr
+____ n__.plugins.attrib ______ attr
 
 # nosetests -a '!slow'   <= You won't execute this test case
 # nosetests -a 'slow'    <= Execute the test cases with the attribute 'slow'

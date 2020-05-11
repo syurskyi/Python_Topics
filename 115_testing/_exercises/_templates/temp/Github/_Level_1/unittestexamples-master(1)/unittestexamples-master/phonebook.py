@@ -14,7 +14,7 @@ c_ PhoneBook:
             ___ name2, number2 __ numbers.items(
                 __ name1 __ name2:
                     __ number1 __ number2:
-                        continue
+                        c___
                 __ number1.startswith(number2
                     r_ F..
         r_ T..

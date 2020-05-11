@@ -14,7 +14,7 @@ c_ TelemetryDiagnosticControls:
     ___ reconnect  address
         telemetry_client.disconnect()
         retryLeft _ 3
-        while ((no. telemetry_client.online_status) an. retryLeft > 0
+        w__ ((no. telemetry_client.online_status) an. retryLeft > 0
             telemetry_client.connect(address)
             retryLeft -_ 1
 
@@ -79,7 +79,7 @@ Remote Rtrn Count........... 00"""
             message _ ""
             messageLength _ ra__.randint(0, 50) + 60
             i _ messageLength
-            while(i >_ 0
+            w__(i >_ 0
                 message +_ chr((ra__.randint(0, 40) + 86))
                 i -_ 1
         ____:

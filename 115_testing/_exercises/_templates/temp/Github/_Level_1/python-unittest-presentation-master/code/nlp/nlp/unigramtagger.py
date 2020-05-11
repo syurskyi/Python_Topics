@@ -2,7 +2,7 @@
 
 
 ______ pickle
-____ collections ______ Counter
+____ col.. ______ Counter
 
 
 c_ UnigramTagger:

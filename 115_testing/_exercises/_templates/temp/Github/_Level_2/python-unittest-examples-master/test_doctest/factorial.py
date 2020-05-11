@@ -41,7 +41,7 @@ ___ factorial(n
         r_ OverflowError("n too large")
     result _ 1
     factor _ 2
-    while factor <_ n:
+    w__ factor <_ n:
         result *_ factor
         factor +_ 1
     r_ result

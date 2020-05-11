@@ -13,7 +13,7 @@ c_ SingleSignOnRegistry:
 c_ FakeSingleSignOnRegistry:
 
     ___  -
-        tokens _ set()
+        tokens _ se.()
 
     ___ register  credentials
         __ are_valid(credentials

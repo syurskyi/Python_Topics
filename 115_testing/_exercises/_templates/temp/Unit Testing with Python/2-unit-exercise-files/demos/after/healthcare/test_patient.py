@@ -10,11 +10,11 @@ c_ TestPatient:
     
     ___ test_clash_with_no_prescriptions
         patient _ Patient(prescriptions_[])
-        a.. patient.clash([]) __ set()
+        a.. patient.clash([]) __ se.()
         
     ___ test_clash_with_one_irrelevant_prescription
         patient _ Patient(prescriptions_[Prescription("Codeine", dispense_date _ days_ago(days_2), days_supply_2)])
-        a.. patient.clash(["Prozac"]) __ set()
+        a.. patient.clash(["Prozac"]) __ se.()
         
     ___ test_clash_with_one_prescription
         patient _ Patient(prescriptions_[Prescription("Codeine", dispense_date _ days_ago(days_2), days_supply_2)])
@@ -32,7 +32,7 @@ c_ TestPatient:
 
     ___ test_days_taking_for_irrelevant_prescription
         patient _ Patient(prescriptions_[Prescription("Codeine", dispense_date _ days_ago(days_2), days_supply_2)])
-        a.. patient.days_taking("Prozac") __ set()
+        a.. patient.days_taking("Prozac") __ se.()
 
     ___ test_days_taking
         patient _ Patient(prescriptions_[Prescription("Codeine", dispense_date _ days_ago(days_2), days_supply_2),

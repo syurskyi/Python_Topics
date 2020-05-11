@@ -1,4 +1,4 @@
-____ nose ______ with_setup  # optional
+____ n__ ______ with_setup  # optional
 
 ____ unnecessary_math ______ multiply
 

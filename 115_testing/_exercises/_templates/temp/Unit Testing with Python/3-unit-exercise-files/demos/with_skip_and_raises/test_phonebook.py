@@ -12,7 +12,7 @@ ___ test_phonebook_gives_access_to_names_and_numbers(
     phonebook _ Phonebook()
     phonebook.add("Alice", "12345")
     phonebook.add("Bob", "123")
-    a.. set(phonebook.names()) __ {"Alice", "Bob"}
+    a.. se.(phonebook.names()) __ {"Alice", "Bob"}
     a.. "12345" __ phonebook.numbers()
     
 ___ test_missing_entry_raises_KeyError(

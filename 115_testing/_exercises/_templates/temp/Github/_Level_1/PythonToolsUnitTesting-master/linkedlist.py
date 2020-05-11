@@ -61,7 +61,7 @@ c_ LinkedList  o..
 	___ removeNode   dataSet
 		thisNode _ root
 		
-		while (thisNode
+		w__ (thisNode
 			__ thisNode.getData() __ dataSet:
 				next _ thisNode.getNextNode()
 				prev _ thisNode.getPrevNode()
@@ -84,7 +84,7 @@ c_ LinkedList  o..
 		
 	___ findNode   dataSet
 		thisNode _ root
-		while (thisNode
+		w__ (thisNode
 			__ (thisNode.getData() __ dataSet
 			    r_ dataSet
 			____:
@@ -97,7 +97,7 @@ c_ LinkedList  o..
 		__ (root __ N..
 			dataList.a..(N..)
 			r_ dataList
-		while (thisNode
+		w__ (thisNode
 			dataList.a..(thisNode.getData())
 			thisNode _ thisNode.getNextNode()
 		

@@ -44,7 +44,7 @@ mock.assert_called_with(Foo(1, 2))
 # 
 
 ___ compare  other
-        __ no. type(self) __ type(other
+        __ no. ty..(self) __ ty..(other
 
             r_ F..
 

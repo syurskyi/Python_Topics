@@ -1,5 +1,5 @@
 _____ u__
-_____ collections
+_____ col..
 ____ d_t_ _____ d_t_, timedelta
 
 ____ ..stock _____ Stock, StockSignal
@@ -62,14 +62,14 @@ c_ StockCrossOverSignalTest ?.?
 
     ___ _flatten timestamps):
         ___ timestamp __ timestamps:
-            __ not isinstance(timestamp, collections.Iterable):
+            __ not isinstance(timestamp, col...Iterable):
                 yield timestamp
             ____:
                 ___ value __ _flatten(timestamp):
                     yield value
 
     ___ _generate_timestamp_for_date date, price_list):
-        __ not isinstance(price_list, collections.Iterable):
+        __ not isinstance(price_list, col...Iterable):
             r_ date
         ____:
             delta = 1.0/le.(price_list)

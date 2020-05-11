@@ -25,7 +25,7 @@ c_ AndRule:
         r_ all([rule.m..(ex__) ___ rule __ rules])
 
     ___ depends_on
-        depends = set()
+        depends = se.()
         ___ rule __ rules:
             depends = depends.union(rule.depends_on())
         r_ depends

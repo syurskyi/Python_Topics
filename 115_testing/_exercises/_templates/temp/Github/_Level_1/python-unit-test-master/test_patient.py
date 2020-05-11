@@ -9,13 +9,13 @@ c_ TestPatient?.?
     
     ___ test_no_clash_with_no_prescriptions
         patient _ Patient(prescriptions_[])
-        assertSetEqual(set(), patient.clash([]))
+        assertSetEqual(se.(), patient.clash([]))
         
     ___ test_no_clash_with_one_irrelevant_prescription
         patient _ Patient(prescriptions_[Prescription("Codeine",
                                                       dispense_date _ days_ago(days_2),
                                                       days_supply_2)])
-        assertSetEqual(set(), patient.clash(["Prozac"]))
+        assertSetEqual(se.(), patient.clash(["Prozac"]))
         
     ___ test_one_clash_with_one_prescription
         patient _ Patient(prescriptions_[Prescription("Codeine",
@@ -48,7 +48,7 @@ c_ TestPatient?.?
         patient _ Patient(prescriptions_[Prescription("Codeine",
                                                       dispense_date _ days_ago(days_2),
                                                       days_supply_2)])
-        assertSetEqual(set(), patient.days_taking("Prozac"))
+        assertSetEqual(se.(), patient.days_taking("Prozac"))
 
     ___ test_days_taking
         patient _ Patient(prescriptions_[Prescription("Codeine",

@@ -2,11 +2,11 @@
 
 """
 
-______ collections
+______ col..
 
 ___ MyFunction(iterable
     """ Take any object and return if it is iterable or not.
     :param iterable:
     :rtype: bool
     """
-    r_ isi..(iterable, collections.Iterable)
+    r_ isi..(iterable, col...Iterable)

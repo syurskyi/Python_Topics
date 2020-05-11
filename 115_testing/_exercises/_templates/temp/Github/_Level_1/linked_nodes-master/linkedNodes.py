@@ -21,13 +21,13 @@ c_ NodeList
         __(checked_node __ N..
             node_head _ Node(value)
         ____:
-            while(checked_node.get_next_node() __ no. N..
+            w__(checked_node.get_next_node() __ no. N..
                 checked_node _ checked_node.get_next_node()
             checked_node.set_next_node(Node(value))
 
     ___ print
         checked_node _ node_head
-        while(checked_node __ no. N..
+        w__(checked_node __ no. N..
             print(checked_node.value)
             checked_node _ checked_node.get_next_node()
 

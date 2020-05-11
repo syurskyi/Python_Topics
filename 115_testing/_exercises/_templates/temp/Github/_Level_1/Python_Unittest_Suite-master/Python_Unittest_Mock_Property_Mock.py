@@ -55,7 +55,7 @@ m _ MagicMock()
 
 p _ PropertyMock(return_value_3)
 
-type(m).foo _ p
+ty..(m).foo _ p
 
 m.foo
 

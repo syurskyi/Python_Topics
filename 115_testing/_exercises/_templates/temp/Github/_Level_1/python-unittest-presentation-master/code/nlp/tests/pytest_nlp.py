@@ -2,7 +2,7 @@
 
 
 ____ nlp ______ unigramtagger
-____ collections ______ Counter
+____ col.. ______ Counter
 ______ pytest
 ______ pickle
 ______ tempfile

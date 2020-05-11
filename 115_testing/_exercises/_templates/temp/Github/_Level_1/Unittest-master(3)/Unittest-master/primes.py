@@ -13,7 +13,7 @@ ___ is_prime(number
 ___ print_next_prime(number
     """Print the closest prime number larger than *number*."""
     index _ number
-    while T..:
+    w__ T..:
         index +_ 1
         __ is_prime(index
             print(index)

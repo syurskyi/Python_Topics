@@ -1,8 +1,8 @@
 _____ bisect
-_____ collections
+_____ col..
 ____ d_t_ _____ timedelta
 
-PriceEvent = collections.namedtuple("PriceEvent", ["timestamp", "price"])
+PriceEvent = col...namedtuple("PriceEvent", ["timestamp", "price"])
 
 
 c_ Stock:

@@ -43,9 +43,9 @@ c_ JsonDiffHandler o..
         """Метод, сравнивающий секции этальнного и тестового json-файлов"""
         # Определение типа нового значения
         __ with_values an. second_json __ no. N..:
-            __ no. isi..(first_json, type(second_json)):
+            __ no. isi..(first_json, ty..(second_json)):
                 message _ '%s --> OLD TYPE: %s ==> NEW TYPE: %s' % \
-                          (pa__, type(first_json).__name__, type(second_json).__name__)
+                          (pa__, ty..(first_json).__name__, ty..(second_json).__name__)
                 save_difference(message, TYPE)
 
         # Если проверяемая секция эталонного json словарь
@@ -84,7 +84,7 @@ c_ JsonDiffHandler o..
                     _____ (IndexError, KeyError
                         # Если ОШИБКА, значит секция-список эталонного json,
                         # отличается от секции-список тестового json, записываем в результат
-                        save_difference('%s - %s' % (new_path, type(item).__name__), TYPE)
+                        save_difference('%s - %s' % (new_path, ty..(item).__name__), TYPE)
 
                 # Рекурсивный вызов
                 check(first_json[index], sec, path_new_path, with_values_with_values)
@@ -111,12 +111,12 @@ ___ assert_json(test_json, ethalon_json
     diff2 _ JsonDiffHandler(ethalon_json, test_json, F..).difference
     diffs _ # list
     # Обработка типов сообщений и их содержимого, формирование результата
-    ___ type, message __ diff1:
+    ___ ty.., message __ diff1:
         newType _ 'CHANGED_VALUE'
-        __ type __ PATH:
+        __ ty.. __ PATH:
             newType _ 'REMOVED_SECTION'
         diffs.a..({'type': newType, 'message': message})
-    ___ type, message __ diff2:
+    ___ ty.., message __ diff2:
         diffs.a..({'type': 'ADDED_SECTION', 'message': message})
     r_ diffs
 

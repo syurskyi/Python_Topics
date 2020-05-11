@@ -2,7 +2,7 @@
 
 """
 
-______ collections
+______ col..
 ____ time ______ sleep
 
 ___ MyFunction(iterable
@@ -10,7 +10,7 @@ ___ MyFunction(iterable
     :param iterable:
     :rtype: bool
     """
-    r_ isi..(iterable, collections.Iterable)
+    r_ isi..(iterable, col...Iterable)
 
 ___ MyLongFunction(msg, seconds
     """ This is an example function that is computationally heavy.

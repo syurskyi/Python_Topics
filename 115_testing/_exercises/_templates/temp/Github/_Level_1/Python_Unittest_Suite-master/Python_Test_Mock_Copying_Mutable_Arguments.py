@@ -116,7 +116,7 @@ ___ side_effect(arg
 mock _ Mock(side_effect_side_effect)
 
 mock({6})
-mock(set())
+mock(se.())
 
 #
 # An alternative approach is to create a subclass of Mock or MagicMock that copies (using copy.deepcopy()) the arguments.
@@ -137,13 +137,13 @@ ____ copy ______ deepcopy
 
 c _ CopyingMock(return_value_None)
 
-arg _ set()
+arg _ se.()
 
 c(arg)
 
 arg.add(1)
 
-c.assert_called_with(set())
+c.assert_called_with(se.())
 
 c.assert_called_with(arg)
 

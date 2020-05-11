@@ -253,7 +253,7 @@ c_ Statistics:
         """
         rdata _ [(x - x% -denom) ___ x __ data]
         lendata _ le.(rdata)
-        fdict _ {number: [0] ___ number __ sorted(set(rdata))}
+        fdict _ {number: [0] ___ number __ sorted(se.(rdata))}
 
         ___ number __ rdata:
                 fdict[number][0] +_ 1
@@ -263,7 +263,7 @@ c_ Statistics:
 
         rkeys _ list(reversed([x ___ x __ fdict.keys()]))
 
-        while rkeys:
+        w__ rkeys:
             sum _ 0
             ___ key __ rkeys:
                 sum +_ fdict[key][0]
