@@ -1,6 +1,6 @@
 ____ selenium ______ webdriver
 ______ u__
-______ time
+______ t___
 
 ____ selenium.webdriver ______ ActionChains
 
@@ -19,7 +19,7 @@ c_ Auth?.?
 
         action _ ActionChains(driver)
         action.drag_and_drop(source_page, destination_location).perform()
-        time.sleep(5)
+        t___.sleep(5)
 
     ___ test_B_clear
         re _ driver.find_element_by_id("box6")

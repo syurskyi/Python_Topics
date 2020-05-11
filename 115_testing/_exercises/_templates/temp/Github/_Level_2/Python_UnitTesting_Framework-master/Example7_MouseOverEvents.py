@@ -1,6 +1,6 @@
 ____ selenium ______ webdriver
 ______ u__
-______ time
+______ t___
 ____ selenium.webdriver ______ ActionChains
 ____ selenium.webdriver.common.keys ______ Keys
 
@@ -27,7 +27,7 @@ c_ MouseOver?.?
 
         action _ ActionChains(driver)
         action.move_to_element(Admin).move_to_element(UserManagement).move_to_element(Users).click().perform()
-        time.sleep(5)
+        t___.sleep(5)
 
     # This is the example for the double click
 
@@ -35,7 +35,7 @@ c_ MouseOver?.?
         Dashboard _ driver.find_element_by_id("menu_dashboard_index")
         action _ ActionChains(driver)
         action.move_to_element(Dashboard).double_click().perform()
-        time.sleep(4)
+        t___.sleep(4)
 
     # This is the example for the context_click
 

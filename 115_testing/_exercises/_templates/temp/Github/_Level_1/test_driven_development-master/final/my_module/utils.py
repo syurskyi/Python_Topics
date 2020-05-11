@@ -3,7 +3,7 @@
 """
 
 ______ col..
-____ time ______ sleep
+____ t___ ______ sleep
 
 ___ MyFunction(iterable
     """ Take any object and return if it is iterable or not.

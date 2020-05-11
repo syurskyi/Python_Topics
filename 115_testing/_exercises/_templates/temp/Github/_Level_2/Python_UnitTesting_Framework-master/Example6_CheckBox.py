@@ -1,6 +1,6 @@
 ____ selenium ______ webdriver
 ______ u__
-______ time
+______ t___
 
 
 c_ Auth?.?
@@ -21,9 +21,9 @@ c_ Auth?.?
         driver.find_element_by_link_text("Checkboxes").click()
         print(driver.find_element_by_xpath("//div[@class='example']/form/input[1]").is_selected())
         driver.find_element_by_xpath("//div[@class='example']/form/input[1]").click()
-        time.sleep(3)
+        t___.sleep(3)
         driver.find_element_by_xpath("//div[@class='example']/form/input[2]").click()
-        time.sleep(3)
+        t___.sleep(3)
 
     ??
     ___ tearDownClass ___

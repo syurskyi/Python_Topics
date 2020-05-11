@@ -1,5 +1,5 @@
 ____ n__.tools ______ raises, timed, istest, nottest
-______ time
+______ t___
 
 
 ?r..(TypeError, V..)
@@ -8,7 +8,7 @@ ___ test_raises_type_error(
 
 @timed(.3)
 ___ test_timed(
-    time.sleep(.2)
+    t___.sleep(.2)
 
 @istest
 ___ this_is_a_test(
