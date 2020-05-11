@@ -6,7 +6,6 @@
 
 # O(nlogn)
 
-
 def anagram(word1, word2):
 	return sorted(word1) == sorted(word2)
 
