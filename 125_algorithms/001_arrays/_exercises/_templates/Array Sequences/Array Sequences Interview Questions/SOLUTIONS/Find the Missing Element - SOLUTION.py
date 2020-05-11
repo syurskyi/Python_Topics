@@ -109,6 +109,6 @@
 # #
 # #
 # # # Run test
-# # t = TestFinder()
-# # t.test(finder)
+# # t _?
+# # ?.t.. ?
 #
