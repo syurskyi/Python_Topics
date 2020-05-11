@@ -133,7 +133,7 @@ ____ copy ______ deepcopy
 
             kwargs _ deepcopy(kwargs)
 
-            r_ super(CopyingMock, self).__call__(*args, **kwargs)
+            r_ s__(CopyingMock,  __call__(*args, **kwargs)
 
 c _ CopyingMock(return_value_None)
 
