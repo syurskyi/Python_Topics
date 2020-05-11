@@ -91,5 +91,5 @@
 # #
 # #
 # # # Run and test
-# # t = ReversalTest()
-# # t.test(rev_word3)
+# # t _ ?
+# # ?.t.. ?
