@@ -24,7 +24,7 @@
 
 mock _ Mock()
 
-attrs _ {'method.return_value': 3, 'other.side_effect': KeyError}
+attrs _ {'method.return_value': 3, 'other.side_effect': K..}
 
 mock.configure_mock(**attrs)
 mock.method()
@@ -37,7 +37,7 @@ mock.other()
 # The same thing can be achieved in the constructor call to mocks:
 # 
 
-attrs _ {'method.return_value': 3, 'other.side_effect': KeyError}
+attrs _ {'method.return_value': 3, 'other.side_effect': K..}
 mock _ Mock(some_attribute_'eggs', **attrs)
 
 mock.some_attribute

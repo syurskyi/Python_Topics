@@ -10,7 +10,7 @@ c_ Phonebook(
     ___ add  name, number
         entries[name] _ number
 
-    ___ lookup  name
+    ___ l..  name
         r_ entries[name]
         
     ___ names

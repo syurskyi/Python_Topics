@@ -81,7 +81,7 @@ c_ JsonDiffHandler o..
                 __ second_json __ no. N..:
                     ___
                         sec _ second_json[index]
-                    _____ (IndexError, KeyError
+                    _____ (IndexError, K..
                         # Если ОШИБКА, значит секция-список эталонного json,
                         # отличается от секции-список тестового json, записываем в результат
                         save_difference('%s - %s' % (new_path, ty..(item).__name__), TYPE)

@@ -56,7 +56,7 @@ m.other
 # As you can�t use dotted names directly in a call you have to create a dictionary and unpack it using **:
 # 
 
-attrs _ {'method.return_value': 3, 'other.side_effect': KeyError}
+attrs _ {'method.return_value': 3, 'other.side_effect': K..}
 
 mock _ Mock(some_attribute_'eggs', **attrs)
 

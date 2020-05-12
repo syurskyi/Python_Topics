@@ -31,7 +31,7 @@ m.mock_calls
 
 # OUTPUT: '[call(1, 2, 3)]'
 
-m.side_effect _ KeyError('Bang!')
+m.side_effect _ K..('Bang!')
 m('two', 'three', 'four')
 
 m.mock_calls

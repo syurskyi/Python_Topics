@@ -1,13 +1,13 @@
-
-c_ Phonebook:
-    ___  -
-        entries _ {}
-    
-    ___ add  name, number
-        entries[name] _ number
-    
-    ___ lookup  name
-        r_ entries[name]
-        
-    ___ is_consistent
-        r_ T..
+#
+# c_ Phonebook
+#     ___  -
+#         entries _    # dict
+#
+#     ___ add  name, number
+#         e.. ? _ nu..
+#
+#     ___ lookup  name
+#         r_ e.. ?
+#
+#     ___ is_consistent
+#         r_ T..

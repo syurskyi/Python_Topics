@@ -131,7 +131,7 @@ mock_thing.second
 # using **:
 # 
 
-config _ {'method.return_value': 3, 'other.side_effect': KeyError}
+config _ {'method.return_value': 3, 'other.side_effect': K..}
 
 patcher _ patch('__main__.thing', **config)
 

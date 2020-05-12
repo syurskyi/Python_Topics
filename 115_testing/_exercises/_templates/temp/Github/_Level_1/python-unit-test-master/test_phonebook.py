@@ -22,7 +22,7 @@ c_ PhoneBookTest?.?
         # insert new name and number into phonebook
         phonebook.add("Bob", "12345")
         # lookup same name I just added
-        number _ phonebook.lookup("Bob")
+        number _ phonebook.l..("Bob")
         # check that the name i've looked up is associated to the number
         # first value is value were checking against, second argument is actual value from unit test
         aE..("12345", number)
@@ -31,14 +31,14 @@ c_ PhoneBookTest?.?
         # assertRaises ensures everything in with context manager will throw a KeyError exception
         # KeyError is raised whenever a dictionary object is requested and the key is not present
         # In our case the name Giles was not present in the phonbook
-        w__ aR..(KeyError
-            phonebook.lookup("Giles")
+        w__ aR..(K..
+            phonebook.l..("Giles")
 
     # annotation to skip a unittest
     # @unittest.skip("WIP")
     ___ test_empty_phonebook_is_consistent
         # is_consistent method should return true for empty phonebook
-        aT..(phonebook.is_consistent())
+        aT..(phonebook.i_c..())
 
     ___ test_is_consistent_with_different_entries
         # Arrange step to add entries
@@ -46,15 +46,15 @@ c_ PhoneBookTest?.?
         # Assert whether it is or not
         phonebook.add("Bob", "12345")
         phonebook.add("Anna", "012345")
-        aT..(phonebook.is_consistent())
+        aT..(phonebook.i_c..())
 
     ___ test_inconsistent_with_duplicate_entries
         phonebook.add("Bob", "12345")
         phonebook.add("Sue", "12345")
-        aF..(phonebook.is_consistent())
+        aF..(phonebook.i_c..())
 
     ___ test_inconsistent_with_duplicate_prefix
         phonebook.add("Bob", "12345")
         phonebook.add("Sue", "123")
-        aF..(phonebook.is_consistent())
+        aF..(phonebook.i_c..())
 

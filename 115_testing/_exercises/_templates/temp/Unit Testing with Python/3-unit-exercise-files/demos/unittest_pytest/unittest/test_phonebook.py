@@ -8,4 +8,4 @@ c_ PhonebookTest?.?
 
     ___ test_lookup_entry
         phonebook.add("Bob", "12345")
-        aE..("12345", phonebook.lookup("Bob"))
+        aE..("12345", phonebook.l..("Bob"))
