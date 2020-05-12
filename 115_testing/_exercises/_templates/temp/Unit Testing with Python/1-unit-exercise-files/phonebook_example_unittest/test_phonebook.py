@@ -19,7 +19,7 @@
 #     ___ test_empty_phonebook_is_consistent
 #         aT..(?.i_c..
 #
-#     @u__.s.. "poor example"
+#     ??.s.. "poor example"
 #     ___ test_is_consistent
 #         aT.. ?.i_c..
 #         ?.a.. "Bob", "12345"
