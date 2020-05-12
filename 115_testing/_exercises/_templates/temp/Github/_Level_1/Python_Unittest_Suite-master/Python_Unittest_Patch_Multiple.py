@@ -22,7 +22,7 @@ thing _ object()
 other _ object()
  
 
-@patch.multiple('__main__', thing_DEFAULT, other_DEFAULT)
+?p...multiple('__main__', thing_DEFAULT, other_DEFAULT)
 
     ___ test_function(thing, other
         a.. isi..(thing, MagicMock)
@@ -34,8 +34,8 @@ test_function()
 # patch.multiple() can be nested with other patch decorators, but put arguments passed by keyword after any of the standard arguments created by patch():
 # 
 
-@patch('sys.exit')
-@patch.multiple('__main__', thing_DEFAULT, other_DEFAULT)
+?p..('sys.exit')
+?p...multiple('__main__', thing_DEFAULT, other_DEFAULT)
 
 ___ test_function(mock_exit, other, thing
         a.. 'other' __ repr(other)

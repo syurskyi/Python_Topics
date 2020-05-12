@@ -19,7 +19,7 @@
 # right:
 # 
 
-c_ MyTest(TestCase
+c_ MyTest(T..
 
         ___ test_foo
 
@@ -47,7 +47,7 @@ a.. mymodule.Foo __ original
 # A simple helper method, create_patch, puts the patch in place and returns the created mock for us:
 # 
 
-c_ MyTest(TestCase
+c_ MyTest(T..
 
        ___ create_patch  name
             patcher _ patch(name)

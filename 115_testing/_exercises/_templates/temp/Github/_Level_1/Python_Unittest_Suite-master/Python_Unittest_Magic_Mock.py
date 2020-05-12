@@ -27,7 +27,7 @@ thing.method(3, 4, 5, key_'value')
 
 # OUTPUT: '3'
 
-thing.method.assert_called_with(3, 4, 5, key_'value')
+thing.method.a_c_w..(3, 4, 5, key_'value')
 
 # 
 # side_effect allows you to perform side effects, including raising an exception when a mock is called:

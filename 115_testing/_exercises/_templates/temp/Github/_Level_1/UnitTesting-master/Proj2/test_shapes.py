@@ -10,9 +10,9 @@ c_ TestShapes?.?
 
     ___ test_type_check
         # Check type of the information entered and raise/catch error
-        aR..(TypeError, ShapesArea().value_check, T..)
-        aR..(TypeError, ShapesArea().value_check, "Text")
-        aR..(TypeError, ShapesArea().value_check, 3+6j)
+        aR..(T.., ShapesArea().value_check, T..)
+        aR..(T.., ShapesArea().value_check, "Text")
+        aR..(T.., ShapesArea().value_check, 3+6j)
 
     ___ test_circle_area_value
         # Check and confirm function is calculating the circle area value properly

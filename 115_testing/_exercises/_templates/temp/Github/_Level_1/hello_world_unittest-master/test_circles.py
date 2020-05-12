@@ -13,6 +13,6 @@ c_ TestCircleArea?.?
         aR..(V.., circle_area, -2)
 
     ___ test_types
-        aR..(TypeError, circle_area, 3+5j)
-        aR..(TypeError, circle_area, T..)
-        aR..(TypeError, circle_area, "radius")
+        aR..(T.., circle_area, 3+5j)
+        aR..(T.., circle_area, T..)
+        aR..(T.., circle_area, "radius")

@@ -68,6 +68,6 @@ mock.__exit__ _ Mock(return_value_False)
 w__ mock __ m:
         a.. m __ 'foo'
 
-mock.__enter__.assert_called_with()
+mock.__enter__.a_c_w..()
 
-mock.__exit__.assert_called_with(N.., N.., N..)
+mock.__exit__.a_c_w..(N.., N.., N..)

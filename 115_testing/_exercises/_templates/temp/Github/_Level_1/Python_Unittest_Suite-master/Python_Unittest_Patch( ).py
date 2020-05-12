@@ -23,8 +23,8 @@
 
 ____ u__.m.. ______ patch
 
-@patch('module.ClassName2')
-@patch('module.ClassName1')
+?p..('module.ClassName2')
+?p..('module.ClassName1')
 
 ___ test(MockClass1, MockClass2
         module.ClassName1()

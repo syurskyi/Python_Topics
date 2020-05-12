@@ -37,7 +37,7 @@ c_ MockSingleSignOnRegistry:
     ___ is_valid  token
         is_valid_was_called _ T..
         __ no. token __ expected_token:
-            r_ Exception("This mock was given an unexpected argument. Expected {0} got {1}".f..(expected_token, token))
+            r_ E..("This mock was given an unexpected argument. Expected {0} got {1}".f..(expected_token, token))
         r_ token_is_valid
 
 c_ SpySingleSignOnRegistry:

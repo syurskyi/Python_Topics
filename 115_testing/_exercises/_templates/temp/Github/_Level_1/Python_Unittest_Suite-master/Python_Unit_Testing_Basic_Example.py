@@ -48,7 +48,7 @@ c_ TestStringMethods?.?
 
         # check that s.split fails when the separator is not a string
 
-        w__ aR..(TypeError
+        w__ aR..(T..
             s.split(2)
 
 __ _____ __ _____

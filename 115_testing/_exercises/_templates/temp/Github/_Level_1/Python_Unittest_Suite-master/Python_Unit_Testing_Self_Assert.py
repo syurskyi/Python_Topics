@@ -160,6 +160,6 @@ aE..(cm.output, ['INFO:foo:first message',
 #
 # If not, the test will fail:
  
-assertGreaterEqual(3, 4)
+aGE..(3, 4)
 
 # OUTPUT: 'AssertionError: "3" unexpectedly not greater than or equal to "4"'

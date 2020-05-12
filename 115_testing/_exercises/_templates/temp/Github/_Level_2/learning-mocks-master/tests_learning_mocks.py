@@ -26,7 +26,7 @@ c_ RmTestCase?.?
         # set the condition that the file does exist for the mock
         mock_path.isfile.return_value _ T..
         removal_service.rm('any path')
-        mock_os.remove.assert_called_with('any path')
+        mock_os.remove.a_c_w..('any path')
 
 
 c_ UploadServiceTestCase?.?
@@ -35,8 +35,8 @@ c_ UploadServiceTestCase?.?
         removal_service _ FileRemovalService()
         reference _ UploadService(removal_service)
         reference.upload_complete('my uploaded file')
-        mock_rm.assert_called_with('my uploaded file')
-        removal_service.rm.assert_called_with('my uploaded file')
+        mock_rm.a_c_w..('my uploaded file')
+        removal_service.rm.a_c_w..('my uploaded file')
 
 
 c_ UploadServiceMockedTestCase?.?
@@ -44,7 +44,7 @@ c_ UploadServiceMockedTestCase?.?
         mock_removal_service _ mock.create_autospec(FileRemovalService)
         reference _ UploadService(mock_removal_service)
         reference.upload_complete('my uploaded file')
-        mock_removal_service.rm.assert_called_with('my uploaded file')
+        mock_removal_service.rm.a_c_w..('my uploaded file')
 
 
 c_ RequestsFunctionTests?.?
@@ -60,7 +60,7 @@ c_ RequestsFunctionTests?.?
                                content_page_content)
         mock_request.return_value _ m_response
         get_hrefs_from_url('some url')
-        mock_request.assert_called_with('some url')
+        mock_request.a_c_w..('some url')
 
     @mock.patch('learning_mocks.requests.get')
     ___ test_get_hrefs_from_url_returns_list  mock_get

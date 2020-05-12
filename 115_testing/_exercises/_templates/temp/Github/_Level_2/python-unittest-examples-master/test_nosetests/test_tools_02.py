@@ -2,9 +2,9 @@ ____ n__.tools ______ raises, timed, istest, nottest
 ______ t___
 
 
-?r..(TypeError, V..)
+?r..(T.., V..)
 ___ test_raises_type_error(
-    r_ TypeError("This test passes")
+    r_ T..("This test passes")
 
 @timed(.3)
 ___ test_timed(

@@ -19,13 +19,13 @@ c_ TelemetryDiagnosticControls:
             retryLeft -_ 1
 
         __ no. telemetry_client.online_status:
-            r_ Exception("Unable to connect.")
+            r_ E..("Unable to connect.")
         r_ telemetry_client
 
     ___ fetch_diagnostic_info  connected_client
         connected_client.send(TelemetryClient.DIAGNOSTIC_MESSAGE)
         __ no. telemetry_client.online_status:
-            r_ Exception("Unable to connect.")
+            r_ E..("Unable to connect.")
         r_ connected_client.receive()
 
 
@@ -39,10 +39,10 @@ c_ TelemetryClient o..
 
     ___ connect  telemetry_server_connection_string
         __ no. telemetry_server_connection_string:
-            r_ Exception()
+            r_ E..()
 
         # simulate the operation on a real modem
-        success _ ra__.randint(0, 10) <_ 8
+        success _ ra__.r_i..(0, 10) <_ 8
         online_status _ success
 
     ___ disconnect
@@ -50,7 +50,7 @@ c_ TelemetryClient o..
 
     ___ send  message
         __ no. message:
-            r_ Exception()
+            r_ E..()
 
         __ message __ TelemetryClient.DIAGNOSTIC_MESSAGE:
             # simulate a status report
@@ -77,10 +77,10 @@ Remote Rtrn Count........... 00"""
         __ no. _diagnostic_message_result:
             # simulate a received message (just for illustration - not needed for this exercise)
             message _ ""
-            messageLength _ ra__.randint(0, 50) + 60
+            messageLength _ ra__.r_i..(0, 50) + 60
             i _ messageLength
             w__(i >_ 0
-                message +_ chr((ra__.randint(0, 40) + 86))
+                message +_ chr((ra__.r_i..(0, 40) + 86))
                 i -_ 1
         ____:
             message _ _diagnostic_message_result

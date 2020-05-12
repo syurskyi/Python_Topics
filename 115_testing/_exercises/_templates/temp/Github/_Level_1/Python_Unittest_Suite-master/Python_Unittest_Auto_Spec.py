@@ -32,6 +32,6 @@ mock_function(1, 2, 3)
 
 # OUTPUT: 'fishy'
 
-mock_function.assert_called_once_with(1, 2, 3)
+mock_function.a_c_o_w..(1, 2, 3)
 
 mock_function('wrong arguments')

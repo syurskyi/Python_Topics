@@ -10,12 +10,12 @@ c_ TelemetryDiagnosticControlsTest?.?
 
     ___ test_check_transmission_fails_if_telemetry_client_doesnt_connect
         controls _ TelemetryDiagnosticControls(MockTelemetryClient(online_False, receive_data_"foo",))
-        aR..(Exception, controls.check_transmission)
+        aR..(E.., controls.check_transmission)
         aE..("", controls.diagnostic_info)
 
     ___ test_check_transmission_fails_if_telemetry_client_disconnects_before_receive
         controls _ TelemetryDiagnosticControls(MockTelemetryClient(online_True, receive_data_"foo", go_offline_on_send_True))
-        aR..(Exception, controls.check_transmission)
+        aR..(E.., controls.check_transmission)
         aE..("", controls.diagnostic_info)
 
     ___ test_retry_connection_three_times_before_raising_an_exception

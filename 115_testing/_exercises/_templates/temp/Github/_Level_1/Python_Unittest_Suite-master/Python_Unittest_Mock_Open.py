@@ -55,10 +55,10 @@ w__ patch('__main__.open', m
 
 
 m.mock_calls
-m.assert_called_once_with('foo', _
+m.a_c_o_w..('foo', _
 
 handle _ m()
-handle.write.assert_called_once_with('some stuff')
+handle.write.a_c_o_w..('some stuff')
 
 # 
 # And for reading files:
@@ -68,6 +68,6 @@ w__ patch('__main__.open', mock_open(read_data_'bibble')) __ m:
          w__ o..('foo') __ h:
               result _ h.read()
 
-m.assert_called_once_with('foo')
+m.a_c_o_w..('foo')
 
 a.. result __ 'bibble'

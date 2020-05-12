@@ -19,8 +19,8 @@
 # 
 
 m _ Mock()
-m.hello.assert_not_called()
+m.hello.a_n_c..()
 
 obj _ m.hello()
 
-m.hello.assert_not_called()
+m.hello.a_n_c..()

@@ -49,7 +49,7 @@ val
 
 # OUTPUT: 'set()'
 
-mock_frob.assert_called_with({6})
+mock_frob.a_c_w..({6})
 
 #
 # One possibility would be for mock to copy the arguments you pass in.
@@ -92,7 +92,7 @@ w__ patch('mymodule.frob') __ mock_frob:
 
         mymodule.grob(val)
 
-new_mock.assert_called_with({6})
+new_mock.a_c_w..({6})
 
 new_mock.call_args
 
@@ -143,9 +143,9 @@ c(arg)
 
 arg.add(1)
 
-c.assert_called_with(se.())
+c.a_c_w..(se.())
 
-c.assert_called_with(arg)
+c.a_c_w..(arg)
 
 c.foo
 

@@ -1,7 +1,7 @@
 #/usr/bin/env python3
 
 
-____ ra__ ______ randint
+____ ra__ ______ r_i..
 
 
 ___ foobar(arg_N..
@@ -33,4 +33,4 @@ ___ print_something(arg
 
 
 ___ rand_int(ma.
-    r_ randint(0, ma.)
+    r_ r_i..(0, ma.)

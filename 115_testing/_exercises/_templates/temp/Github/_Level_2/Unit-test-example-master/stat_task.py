@@ -70,7 +70,7 @@ c_ Parser(
             ___ num __ index:
                 ___
                     elem[num] _ __.(elem[num])
-                _____ (TypeError, V..
+                _____ (T.., V..
                     print('Неверный формат в ' + st.(num+1) + ' столбце, в ' +\
                           st.(linecount) + ' строке данных.')
                     r_

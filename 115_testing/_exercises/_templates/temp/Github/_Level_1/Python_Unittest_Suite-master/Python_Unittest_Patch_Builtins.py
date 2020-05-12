@@ -25,7 +25,7 @@
 # The following example patches builtin ord():
 # 
 
-@patch('__main__.ord')
+?p..('__main__.ord')
 
 ___ test(mock_ord
         mock_ord.return_value _ 101

@@ -22,4 +22,4 @@ w__ patch.object(ProductionClass, 'method', return_value_None) __ mock_method:
 
         thing.method(1, 2, 3)
 
-mock_method.assert_called_once_with(1, 2, 3)
+mock_method.a_c_o_w..(1, 2, 3)

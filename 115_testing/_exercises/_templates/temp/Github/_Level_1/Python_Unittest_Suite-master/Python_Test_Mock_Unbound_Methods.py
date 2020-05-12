@@ -45,4 +45,4 @@ w__ patch.object(Foo, 'foo', autospec_True) __ mock_foo:
 
 # OUTPUT: 'foo'
 
-mock_foo.assert_called_once_with(foo)
+mock_foo.a_c_o_w..(foo)

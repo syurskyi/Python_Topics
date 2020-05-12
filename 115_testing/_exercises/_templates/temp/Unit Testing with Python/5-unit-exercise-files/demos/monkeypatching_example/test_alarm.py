@@ -14,7 +14,7 @@ c_ AlarmTest?.?
             alarm.check()
             aT..(alarm.is_alarm_on)
 
-    @patch("alarm.Sensor")
+    ?p..("alarm.Sensor")
     ___ test_check_with_too_low_pressure  test_sensor_class
         test_sensor_instance _ Mock()
         test_sensor_instance.sample_pressure.return_value _ 15

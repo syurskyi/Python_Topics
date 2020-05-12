@@ -37,7 +37,7 @@ c_ Foo:
 mock _ Mock(return_value_None)
 mock(Foo(1, 2))
 
-mock.assert_called_with(Foo(1, 2))
+mock.a_c_w..(Foo(1, 2))
 
 #
 # A comparison function for our Foo class might look something like this:
@@ -73,7 +73,7 @@ c_ Matcher:
 # 
 
 match_foo _ Matcher(compare, Foo(1, 2))
-mock.assert_called_with(match_foo)
+mock.a_c_w..(match_foo)
 
 # 
 # The Matcher is instantiated with our compare function and the Foo object we want to compare against.
@@ -84,4 +84,4 @@ mock.assert_called_with(match_foo)
 
 match_wrong _ Matcher(compare, Foo(3, 4))
 
-mock.assert_called_with(match_wrong)
+mock.a_c_w..(match_wrong)

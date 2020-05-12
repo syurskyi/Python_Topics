@@ -44,4 +44,4 @@ real.something _ MagicMock()
 
 real.method()
 
-real.something.assert_called_once_with(1, 2, 3)
+real.something.a_c_o_w..(1, 2, 3)

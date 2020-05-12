@@ -30,10 +30,10 @@
 mock _ Mock(name_'Thing', return_value_None)
 mock(1, 2, 3)
 
-mock.assert_called_once_with(1, 2, 3)
+mock.a_c_o_w..(1, 2, 3)
 mock(1, 2, 3)
 
-mock.assert_called_once_with(1, 2, 3)
+mock.a_c_o_w..(1, 2, 3)
 
 # 
 # Because mocks auto-create attributes on demand, and allow you to call them with arbitrary arguments, if you misspell one of these assert methods then your
@@ -127,7 +127,7 @@ req.add_header('spam', 'eggs')
 
 req.add_header.assret_called_with
 
-req.add_header.assert_called_with('spam', 'eggs')
+req.add_header.a_c_w..('spam', 'eggs')
 
 # 
 # In many cases you will just be able to add autospec=True to your existing patch() calls and then be protected against bugs due to typos and api changes.

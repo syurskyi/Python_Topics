@@ -27,7 +27,7 @@
 patch.TEST_PREFIX _ 'foo'
 value _ 3
 
-@patch('__main__.value', 'not three')
+?p..('__main__.value', 'not three')
 
 c_ Thing:
 

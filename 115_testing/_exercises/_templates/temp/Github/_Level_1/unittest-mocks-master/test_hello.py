@@ -4,7 +4,7 @@ ______ u__
 
 c_ HelloTests?.?
     '''Testing say_hello'''
-    @patch('hello.print')
+    ?p..('hello.print')
     ___ test_say_hello  mock_print
         # call the function
         say_hello()

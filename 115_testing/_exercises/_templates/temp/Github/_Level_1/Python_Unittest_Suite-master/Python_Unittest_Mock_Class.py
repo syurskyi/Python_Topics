@@ -59,7 +59,7 @@ mock.method(1, 2, 3, test_'wow')
 
 # OUTPUT: '<Mock name='mock.method()' id='...'>'
 
-mock.method.assert_called_with(1, 2, 3, test_'wow')
+mock.method.a_c_w..(1, 2, 3, test_'wow')
 
 #
 # assert_called_once_with(*args, **kwargs). 
@@ -69,7 +69,7 @@ mock.method.assert_called_with(1, 2, 3, test_'wow')
 mock _ Mock(return_value_None)
 mock('foo', bar_'baz')
 
-mock.assert_called_once_with('foo', bar_'baz')
+mock.a_c_o_w..('foo', bar_'baz')
 mock('other', bar_'values')
 
-mock.assert_called_once_with('other', bar_'values')
+mock.a_c_o_w..('other', bar_'values')

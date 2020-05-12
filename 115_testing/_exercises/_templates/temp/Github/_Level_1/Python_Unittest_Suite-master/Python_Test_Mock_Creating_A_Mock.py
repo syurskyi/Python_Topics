@@ -43,4 +43,4 @@ mock(1, 2, 3)
 
 # OUTPUT: '<Mock name='mock()' id='140161580456576'>'
 
-mock.assert_called_with(a_1, b_2, c_3)
+mock.a_c_w..(a_1, b_2, c_3)

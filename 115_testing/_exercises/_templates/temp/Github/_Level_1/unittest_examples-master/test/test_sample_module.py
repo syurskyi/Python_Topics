@@ -10,7 +10,7 @@ c_ Testadd2num:
 		a.. add2num(-10,5) __ -5
 
 	___ test_using_raises
-		w__ pytest.raises(TypeError
+		w__ pytest.raises(T..
 			add2num(2, '3') __ 5
 
 

@@ -28,11 +28,11 @@
 # function:
 # 
 
-@patch.object(SomeClass, 'class_method')
+?p...object(SomeClass, 'class_method')
 
 ___ test(mock_method
         SomeClass.class_method(3)
 
-        mock_method.assert_called_with(3)
+        mock_method.a_c_w..(3)
 
 test()

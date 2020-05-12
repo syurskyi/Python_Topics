@@ -21,4 +21,4 @@ c_ AlertTest ?.?
         alert = Alert("sample alert", rule, action)
         alert.connect(ex__)
         ex__["GOOG"].u..(d_t_(2014, 2, 10), 11)
-        action.execute.assert_called_with("sample alert")
+        action.execute.a_c_w..("sample alert")

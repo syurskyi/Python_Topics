@@ -25,7 +25,7 @@ mock().foo(a_2, b_3)
 
 # OUTPUT: '<Mock name='mock().foo()' id='...'>'
 
-mock.return_value.foo.assert_called_with(a_2, b_3)
+mock.return_value.foo.a_c_w..(a_2, b_3)
 
 # 
 # From here it is a simple step to configure and then make assertions about chained calls.

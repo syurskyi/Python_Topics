@@ -61,4 +61,4 @@ m.foo
 
 # OUTPUT: '3'
 
-p.assert_called_once_with()
+p.a_c_o_w..()

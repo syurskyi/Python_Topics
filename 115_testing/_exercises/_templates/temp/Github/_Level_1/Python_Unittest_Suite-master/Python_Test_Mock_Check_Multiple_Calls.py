@@ -23,16 +23,16 @@ mock _ Mock()
 mock.foo_bar.return_value _ N..
 mock.foo_bar('baz', spam_'eggs')
 
-mock.foo_bar.assert_called_with('baz', spam_'eggs')
+mock.foo_bar.a_c_w..('baz', spam_'eggs')
  
 #
 # If your mock is only being called once you can use the assert_called_once_with() method that also asserts that the call_count is one.
 # 
 
-mock.foo_bar.assert_called_once_with('baz', spam_'eggs')
+mock.foo_bar.a_c_o_w..('baz', spam_'eggs')
 
 mock.foo_bar()
-mock.foo_bar.assert_called_once_with('baz', spam_'eggs')
+mock.foo_bar.a_c_o_w..('baz', spam_'eggs')
 
 #
 # Both assert_called_with and assert_called_once_with make assertions about the most recent call.

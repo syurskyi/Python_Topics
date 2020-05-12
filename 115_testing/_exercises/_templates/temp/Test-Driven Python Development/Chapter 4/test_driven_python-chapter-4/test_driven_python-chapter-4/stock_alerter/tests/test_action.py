@@ -21,7 +21,7 @@ c_ PrintActionTest ?.?
     ___ test_executing_action_prints_message mock_print):
         action = PrintAction()
         action.execute("GOOG > $10")
-        mock_print.assert_called_with("GOOG > $10")
+        mock_print.a_c_w..("GOOG > $10")
 
 
 @mock.patch("smtplib.SMTP")
@@ -31,12 +31,12 @@ c_ EmailActionTest ?.?
 
     ___ test_email_is_sent_to_the_right_server mock_smtp_class):
         action.execute("MSFT has crossed $10 price level")
-        mock_smtp_class.assert_called_with("email.stocks.com")
+        mock_smtp_class.a_c_w..("email.stocks.com")
 
     ___ test_connection_closed_after_sending_mail mock_smtp_class):
         mock_smtp = mock_smtp_class.return_value
         action.execute("MSFT has crossed $10 price level")
-        mock_smtp.send_message.assert_called_with(mock.ANY)
+        mock_smtp.send_message.a_c_w..(mock.ANY)
         aT..(mock_smtp.quit.called)
         mock_smtp.assert_has_calls([
             mock.call.send_message(mock.ANY),
@@ -47,7 +47,7 @@ c_ EmailActionTest ?.?
         mock_smtp.send_message.side_effect = smtplib.SMTPServerDisconnected()
         ___
             action.execute("MSFT has crossed $10 price level")
-        _____ Exception:
+        _____ E..:
             pass
         aT..(mock_smtp.quit.called)
 
@@ -67,5 +67,5 @@ c_ EmailActionTest ?.?
         }
         mock_smtp = mock_smtp_class.return_value
         action.execute("MSFT has crossed $10 price level")
-        mock_smtp.send_message.assert_called_with(
+        mock_smtp.send_message.a_c_w..(
             MessageMatcher(expected_message))

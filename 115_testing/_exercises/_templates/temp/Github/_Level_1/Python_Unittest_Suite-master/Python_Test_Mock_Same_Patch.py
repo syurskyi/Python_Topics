@@ -22,9 +22,9 @@
 # A test method is identified by methods whose names start with test:
 # 
 
-@patch('mymodule.SomeClass')
+?p..('mymodule.SomeClass')
 
-    c_ MyTest(TestCase
+    c_ MyTest(T..
 
         ___ test_one  MockSomeClass
             assertIs(mymodule.SomeClass, MockSomeClass)
@@ -47,7 +47,7 @@ MyTest('test_two').not_a_test()
 # These allow you to move the patching into your setUp and tearDown methods.
 # 
 
-c_ MyTest(TestCase
+c_ MyTest(T..
 
         ___ setUp
             patcher _ patch('mymodule.foo')
@@ -68,7 +68,7 @@ MyTest('test_foo').run()
 # makes this easier:
 # 
 
-c_ MyTest(TestCase
+c_ MyTest(T..
 
         ___ setUp
             patcher _ patch('mymodule.foo')

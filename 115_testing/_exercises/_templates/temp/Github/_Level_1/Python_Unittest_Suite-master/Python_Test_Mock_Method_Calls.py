@@ -40,4 +40,4 @@ mock _ Mock()
 
 real.closer(mock)
 
-mock.close.assert_called_with()
+mock.close.a_c_w..()

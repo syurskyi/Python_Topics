@@ -26,7 +26,7 @@ c_ SizeOfLinkedList?.?
     ___ testReduced
         ___ i __ ra..(4
             newList.removeNode(i)
-        assertNotEqual(newList.getSize(), fullSize)
+        aNE..(newList.getSize(), fullSize)
         aE..(newList.getSize(), reduced)
 
 __ _____ __ _____

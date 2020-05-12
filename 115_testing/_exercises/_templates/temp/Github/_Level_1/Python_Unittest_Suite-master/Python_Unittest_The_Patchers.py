@@ -28,7 +28,7 @@
 # patch() as function decorator, creating the mock for you and passing it into the decorated function:
 # 
 
-@patch('__main__.SomeClass')
+?p..('__main__.SomeClass')
 
  ___ function(normal_argument, mock_class
         print(mock_class __ SomeClass)
@@ -98,7 +98,7 @@ ____ io ______ StringIO
     ___ foo(
         print('Something')
 
-@patch('sys.stdout', new_callable_StringIO)
+?p..('sys.stdout', new_callable_StringIO)
 
     ___ test(mock_stdout
 

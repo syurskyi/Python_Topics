@@ -14,9 +14,9 @@ c_ TestCircleArea?.?
     
     ___ test_area_types
         # Test to make sure the correct type is entered into the function
-        aR..(TypeError, circle_area, "Text")
-        aR..(TypeError, circle_area, T..)
-        aR..(TypeError, circle_area, 5+3j)
+        aR..(T.., circle_area, "Text")
+        aR..(T.., circle_area, T..)
+        aR..(T.., circle_area, 5+3j)
 
     ___ test_area_values
         # Test to make sure the incorrect value hasnt been entered
@@ -30,9 +30,9 @@ c_ TestCircleArea?.?
 
     ___ test_circumfrence_types
         # Test circumfrence input to make sure errors handled
-        aR..(TypeError, circle_circumfrence, "Text")
-        aR..(TypeError, circle_circumfrence, T..)
-        aR..(TypeError, circle_circumfrence, 3+4j)
+        aR..(T.., circle_circumfrence, "Text")
+        aR..(T.., circle_circumfrence, T..)
+        aR..(T.., circle_circumfrence, 3+4j)
 
     ___ test_circumfrence_values
         # Test to insure proper type is entered into value

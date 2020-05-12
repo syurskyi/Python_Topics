@@ -36,7 +36,7 @@ mock.return_value()
 
 # OUTPUT: '<Mock name='mock()()' id='...'>'
 
-mock.return_value.assert_called_with()
+mock.return_value.a_c_w..()
 
 # 
 # return_value can also be set in the constructor:

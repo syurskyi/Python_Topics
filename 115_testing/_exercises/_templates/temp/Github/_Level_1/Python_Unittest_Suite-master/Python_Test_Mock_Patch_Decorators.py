@@ -39,7 +39,7 @@
 
 original _ SomeClass.attribute
 
-@patch.object(SomeClass, 'attribute', sentinel.attribute)
+?p...object(SomeClass, 'attribute', sentinel.attribute)
 
       ___ test(
          a.. SomeClass.attribute __ sentinel.attribute
@@ -48,7 +48,7 @@ original _ SomeClass.attribute
          a.. SomeClass.attribute __ original
  
 
-@patch('package.module.attribute', sentinel.attribute)
+?p..('package.module.attribute', sentinel.attribute)
      ___ test(
 
         ____ package.module ______ attribute
@@ -65,7 +65,7 @@ mock _ MagicMock(return_value_sentinel.file_handle)
 
         handle _ o..('filename', _
 
-mock.assert_called_with('filename', _
+mock.a_c_w..('filename', _
 
 a.. handle __ sentinel.file_handle, "incorrect file handle returned"
 
@@ -73,7 +73,7 @@ a.. handle __ sentinel.file_handle, "incorrect file handle returned"
 # The module name can be �dotted�, in the form package.module if needed:
 # 
 
-@patch('package.module.ClassName.attribute', sentinel.attribute)
+?p..('package.module.ClassName.attribute', sentinel.attribute)
 
     ___ test(
         ____ package.module ______ ClassName
@@ -88,7 +88,7 @@ a.. handle __ sentinel.file_handle, "incorrect file handle returned"
 
 c_ MyTest?.?
 
-       @patch.object(SomeClass, 'attribute', sentinel.attribute)
+       ?p...object(SomeClass, 'attribute', sentinel.attribute)
 
         ___ test_something
            aE..(SomeClass.attribute, sentinel.attribute)
@@ -106,12 +106,12 @@ a.. SomeClass.attribute __ original
 
 c_ MyTest?.?
 
-        @patch.object(SomeClass, 'static_method')
+        ?p...object(SomeClass, 'static_method')
 
         ___ test_something  mock_method
             SomeClass.static_method()
 
-           mock_method.assert_called_with()
+           mock_method.a_c_w..()
 
 MyTest('test_something').test_something()
 
@@ -121,8 +121,8 @@ MyTest('test_something').test_something()
 
 c_ MyTest?.?
 
-@patch('package.module.ClassName1')
-@patch('package.module.ClassName2')
+?p..('package.module.ClassName1')
+?p..('package.module.ClassName2')
 
         ___ test_something  MockClass2, MockClass1
             assertIs(package.module.ClassName1, MockClass1)
@@ -164,7 +164,7 @@ c_ ProductionClass:
         real _ ProductionClass()
         real.method(1, 2, 3)
 
-mock_method.assert_called_with(1, 2, 3)
+mock_method.a_c_w..(1, 2, 3)
  
 #
 # As an alternative patch, patch.object and patch.dict can be used as class decorators.

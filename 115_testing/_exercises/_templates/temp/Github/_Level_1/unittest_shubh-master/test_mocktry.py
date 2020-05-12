@@ -40,12 +40,12 @@ c_ Testmock?.?
             mocked_get.return_value.text _ 'Done'
 
             s _ s1.mylinkedin('in')
-            mocked_get.assert_called_with('https://www.linkedin.com/in/shubhabratamukherjee')
+            mocked_get.a_c_w..('https://www.linkedin.com/in/shubhabratamukherjee')
             aE..(s, 'Done')
 
             
             s _ s2.mylinkedin('in')
-            mocked_get.assert_called_with('https://www.linkedin.com/in/sumitradey')
+            mocked_get.a_c_w..('https://www.linkedin.com/in/sumitradey')
             aE..(s, 'Done')
             
             print('this is the mock function\n')

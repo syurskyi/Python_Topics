@@ -42,7 +42,7 @@ a.. module.ClassName __ no. new_mock
 # A typical use case for this might be for doing multiple patches in the setUp method of a TestCase:
 # 
 
-c_ MyTest(TestCase
+c_ MyTest(T..
 
         ___ setUp
             patcher1 _ patch('package.module.Class1')
@@ -68,7 +68,7 @@ MyTest('test_something').run()
 # unittest.TestCase.addCleanup() makes this easier:
 # 
 
-c_ MyTest(TestCase
+c_ MyTest(T..
         ___ setUp
             patcher _ patch('package.module.Class')
 

@@ -68,7 +68,7 @@ c_ TestClassExample?.?
 
     ___ test_case03
         print(id())
-        assertNotEqual(T.., F..)
+        aNE..(T.., F..)
 
 __ _____ __ _____
     ?.?

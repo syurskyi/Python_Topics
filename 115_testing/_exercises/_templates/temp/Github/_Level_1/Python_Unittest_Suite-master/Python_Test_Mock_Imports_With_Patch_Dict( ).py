@@ -39,7 +39,7 @@ w__ patch.dict('sys.modules', {'fooble': mock}
 
 a.. 'fooble' no. __ sys.modules
 
-mock.blob.assert_called_once_with()
+mock.blob.a_c_o_w..()
 
 # 
 # As you can see the ______ fooble succeeds, but on exit there is no �fooble� left in sys.modules.
@@ -56,7 +56,7 @@ w__ patch.dict('sys.modules', {'fooble': mock}
 
 # OUTPUT: '<Mock name='mock.blob.blip()' id='...'>'
 
-mock.blob.blip.assert_called_once_with()
+mock.blob.blip.a_c_o_w..()
 
 # 
 # With slightly more work you can also mock package imports:
@@ -72,4 +72,4 @@ w__ patch.dict('sys.modules', modules
 
 # OUTPUT: '<Mock name='mock.module.fooble()' id='...'>'
 
-mock.module.fooble.assert_called_once_with()
+mock.module.fooble.a_c_o_w..()

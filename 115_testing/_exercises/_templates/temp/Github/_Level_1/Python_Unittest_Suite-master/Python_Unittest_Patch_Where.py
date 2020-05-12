@@ -37,7 +37,7 @@ b.py
 # The patching should look like:
 # 
 
-@patch('b.SomeClass')
+?p..('b.SomeClass')
  
 #
 # However, consider the alternative scenario where instead of from a ______ SomeClass module b does ______ a and some_function uses a.SomeClass.
@@ -45,4 +45,4 @@ b.py
 # In this case the class we want to patch is being looked up in the module and so we have to patch a.SomeClass instead:
 # 
 
-@patch('a.SomeClass')
+?p..('a.SomeClass')

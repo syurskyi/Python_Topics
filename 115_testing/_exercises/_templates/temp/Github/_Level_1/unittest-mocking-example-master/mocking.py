@@ -16,8 +16,8 @@ c_ TestAdd?.?
         aE..(result, 3)
 
     ___ test_exception
-        sample.summation.side_effect _ Exception
-        aR..(Exception, sample.add,1,5)
+        sample.summation.side_effect _ E..
+        aR..(E.., sample.add,1,5)
 
 
 __ _____ __ ______

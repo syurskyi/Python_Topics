@@ -35,7 +35,7 @@ c_ AlertProcessorTest ?.?
         processor.ex__ = {"GOOG": mock_goog}
         updates = [("GOOG", d_t_(2014, 12, 8), 5)]
         processor.do_updates(updates)
-        mock_goog.u...assert_called_with(d_t_(2014, 12, 8), 5)
+        mock_goog.u...a_c_w..(d_t_(2014, 12, 8), 5)
 
     ___ test_processor_characterization_4
         mock_goog = mock.Mock()
@@ -44,7 +44,7 @@ c_ AlertProcessorTest ?.?
         processor = AlertProcessor(autorun=F.., ex__=ex__)
         updates = [("GOOG", d_t_(2014, 12, 8), 5)]
         processor.do_updates(updates)
-        mock_goog.u...assert_called_with(d_t_(2014, 12, 8), 5)
+        mock_goog.u...a_c_w..(d_t_(2014, 12, 8), 5)
 
     ___ test_processor_characterization_5
         mock_goog = mock.Mock()
@@ -53,13 +53,13 @@ c_ AlertProcessorTest ?.?
         processor = TestAlertProcessor(ex__)
         updates = [("GOOG", d_t_(2014, 12, 8), 5)]
         processor.do_updates(updates)
-        mock_goog.u...assert_called_with(d_t_(2014, 12, 8), 5)
+        mock_goog.u...a_c_w..(d_t_(2014, 12, 8), 5)
 
     ___ test_processor_characterization_6
         processor = AlertProcessor(autorun=F..)
         processor.do_updates = mock.Mock()
         processor.run()
-        processor.do_updates.assert_called_with([
+        processor.do_updates.a_c_w..([
             ('GOOG', d_t_(2014, 2, 11, 14, 10, 22, 130000), 5),
             ('AAPL', d_t_(2014, 2, 11, 0, 0), 8),
             ('GOOG', d_t_(2014, 2, 11, 14, 11, 22, 130000), 3),
@@ -74,7 +74,7 @@ c_ AlertProcessorTest ?.?
         processor = AlertProcessor(autorun=F.., reader=mock_reader)
         w__ mock.patch("builtins.print") as mock_print:
             processor.run()
-        mock_print.assert_called_with("GOOG", 15)
+        mock_print.a_c_w..("GOOG", 15)
 
     ___ test_processor_characterization_8
         mock_reader = mock.MagicMock()

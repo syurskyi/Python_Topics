@@ -176,7 +176,7 @@ name __ m.mock_calls[0][0]
 mock _ Mock(return_value_None)
 mock('foo', bar_object())
 
-mock.assert_called_once_with('foo', bar_ANY)
+mock.a_c_o_w..('foo', bar_ANY)
 
 # 
 # ANY can also be used in comparisons with call lists like mock_calls:

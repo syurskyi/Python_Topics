@@ -1,7 +1,7 @@
-____ u__ ______ TestCase
+____ u__ ______ T..
 ____ my_package ______ MyApp
 
-c_ TestOperations(TestCase
+c_ TestOperations(T..
     ___ setUp
         app _ MyApp()
     ___ test_add

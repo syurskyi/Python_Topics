@@ -22,8 +22,8 @@
 # You can stack up multiple patch decorators using this pattern:
 # 
 
-@patch.object(SomeClass, 'class_method')
-@patch.object(SomeClass, 'static_method')
+?p...object(SomeClass, 'class_method')
+?p...object(SomeClass, 'static_method')
 
 ___ test(mock1, mock2
         a.. SomeClass.static_method __ mock1
@@ -35,9 +35,9 @@ ___ test(mock1, mock2
         r_ mock1, mock2
 
 mock1, mock2 _ test()
-mock1.assert_called_once_with('foo')
+mock1.a_c_o_w..('foo')
 
-mock2.assert_called_once_with('bar')
+mock2.a_c_o_w..('bar')
 
 # 
 # Note that the decorators are applied from the bottom upwards.

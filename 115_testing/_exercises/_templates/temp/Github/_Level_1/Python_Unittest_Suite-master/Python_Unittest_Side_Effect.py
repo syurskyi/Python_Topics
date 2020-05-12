@@ -26,7 +26,7 @@
 # 
 
 mock _ Mock()
-mock.side_effect _ Exception('Boom!')
+mock.side_effect _ E..('Boom!')
 
 mock()
 

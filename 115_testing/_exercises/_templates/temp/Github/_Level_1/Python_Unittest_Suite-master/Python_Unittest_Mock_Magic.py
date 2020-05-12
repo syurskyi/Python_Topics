@@ -25,4 +25,4 @@ st.(mock)
 
 # OUTPUT: 'foobarbaz'
 
-mock.-s.assert_called_with()
+mock.-s.a_c_w..()

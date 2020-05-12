@@ -31,13 +31,13 @@ c_ TestFuncAcceptsSequencesMixin:
     ___ test_func
         func(arg)
 
-c_ AcceptLists(TestFuncAcceptsSequencesMixin, u__.TestCase
+c_ AcceptLists(TestFuncAcceptsSequencesMixin, u__.T..
     arg _ [1, 2, 3]
 
-c_ AcceptStrings(TestFuncAcceptsSequencesMixin, u__.TestCase
+c_ AcceptStrings(TestFuncAcceptsSequencesMixin, u__.T..
     arg _ 'abc'
 
-c_ AcceptTuples(TestFuncAcceptsSequencesMixin, u__.TestCase
+c_ AcceptTuples(TestFuncAcceptsSequencesMixin, u__.T..
     arg _ (1, 2, 3)
  
 

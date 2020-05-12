@@ -59,7 +59,7 @@ c_ MyServiceTest?.?
         my_service _ MyService(registry)
 
         response _ my_service.handle_request("do stuff", token_token)
-        registry.is_valid.assert_called_with(token)
+        registry.is_valid.a_c_w..(token)
 
     ___ test_valid_token_with_mocking_fw_as_spy
         token _ SSOToken()
@@ -68,30 +68,30 @@ c_ MyServiceTest?.?
         my_service _ MyService(registry)
 
         response _ my_service.handle_request("do stuff", token)
-        registry.is_valid.assert_called_with(token)
+        registry.is_valid.a_c_w..(token)
 
     ___ test_invalid_token_with_mocking_fw_as_mock
         invalid_token _ SSOToken()
         registry _ Mock(SingleSignOnRegistry)
         ___ is_valid(token
             __ no. token __ invalid_token:
-                r_ Exception("Got the wrong token")
+                r_ E..("Got the wrong token")
             r_ F..
         registry.is_valid _ Mock(side_effect_is_valid)
         my_service _ MyService(registry)
 
         response _ my_service.handle_request("do stuff", token_invalid_token)
-        registry.is_valid.assert_called_with(invalid_token)
+        registry.is_valid.a_c_w..(invalid_token)
 
     ___ test_valid_token_with_mocking_fw_as_mock
         valid_token _ SSOToken()
         registry _ Mock(SingleSignOnRegistry)
         ___ is_valid(token
             __ no. token __ valid_token:
-                r_ Exception("Got the wrong token")
+                r_ E..("Got the wrong token")
             r_ T..
         registry.is_valid _ Mock(side_effect_is_valid)
         my_service _ MyService(registry)
 
         response _ my_service.handle_request("do stuff", token_valid_token)
-        registry.is_valid.assert_called_with(valid_token)
+        registry.is_valid.a_c_w..(valid_token)

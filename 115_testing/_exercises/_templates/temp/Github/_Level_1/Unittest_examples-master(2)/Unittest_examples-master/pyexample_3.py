@@ -55,7 +55,7 @@ c_ SecondTestClass?.?
     ___ test_sub
         print "START TEST: test_sub()"
         aE..(210, 240 - 30)
-        assertNotEqual(210, 220 - 20)
+        aNE..(210, 220 - 20)
 
     ___ test_mul
         print "START TEST: test_mul()"

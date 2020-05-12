@@ -22,7 +22,7 @@ c_ Widget o..
         r_ _size
 
     ___ raise_exception
-        r_ Exception()
+        r_ E..()
 
 
 @u__.skipIf(3 < 2, 'This class will be executed because 3 is greater than 2, which makes the condition false.')
@@ -70,7 +70,7 @@ c_ TestUnittest?.?
 
     ___ test_basic_usage
         aE..(1, 1)
-        assertNotEqual(1, 2)
+        aNE..(1, 2)
         aT..(T..)
         aF..(F..)
         assertIs(widget, widget)
@@ -83,11 +83,11 @@ c_ TestUnittest?.?
         assertNotIsInstance(1, Widget)
         aAE..(2.12345678, 2.12345679)
         aAE..(2.1, 2.2, delta_0.2)
-        assertNotAlmostEqual(2.1, 2, 2)
-        assertGreater(3, 2)
-        assertGreaterEqual(2, 2)
-        assertLess(1, 2)
-        assertLessEqual(1, 1)
+        aNAE..(2.1, 2, 2)
+        aG..(3, 2)
+        aGE..(2, 2)
+        aL..(1, 2)
+        aLE..(1, 1)
         assertRegexpMatches('a string', 'string')
         assertNotRegexpMatches('a string', 'the')
         # assertItemsEqual: sorted(a) == sorted(b)
@@ -102,13 +102,13 @@ c_ TestUnittest?.?
         implement assertListEqual() and assertTupleEqual().
         """
         assertSequenceEqual((1, 2), (1, 2))
-        assertListEqual([1, 2], [1, 2])
+        aLE..([1, 2], [1, 2])
         assertTupleEqual((1, 2), (1, 2))
         assertSetEqual(Set(['a', 'b', 'c']), Set(['b', 'a', 'c']))
         assertDictEqual({'key1': 1, 'key2': 2}, {'key1': 1, 'key2': 2})
 
     ___ test_raise_exception
-        w__ aR..(Exception
+        w__ aR..(E..
             widget.raise_exception()
 
 __ _____ __ _____

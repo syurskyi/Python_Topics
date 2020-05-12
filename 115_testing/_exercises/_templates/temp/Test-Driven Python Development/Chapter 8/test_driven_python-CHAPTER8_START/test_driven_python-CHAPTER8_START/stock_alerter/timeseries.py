@@ -5,7 +5,7 @@ ____ d_t_ _____ timedelta
 Update = col...namedtuple("Update", ["timestamp", "value"])
 
 
-c_ NotEnoughDataException(Exception):
+c_ NotEnoughDataException(E..):
     pass
 
 

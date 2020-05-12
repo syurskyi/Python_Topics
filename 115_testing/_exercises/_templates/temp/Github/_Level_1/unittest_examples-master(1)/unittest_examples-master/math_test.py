@@ -13,7 +13,7 @@ c_ TestMathMerhods?.?
         aF..(math.fabs(-4) __ -4)
 
     ___ test_zero_division
-        aR..(ZeroDivisionError)
+        aR..(Z..)
 
     #Podemos usar o skip para passar teste que sabemos que
     #vão falhar com algum motivo

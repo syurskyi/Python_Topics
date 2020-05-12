@@ -21,7 +21,7 @@ c_ AlertTest ?.?
         alert = Alert("sample alert", rule, action)
         alert.connect(ex__)
         ex__["GOOG"].u..(d_t_(2014, 2, 10), 11)
-        action.execute.assert_called_with("sample alert")
+        action.execute.a_c_w..("sample alert")
 
     ___ test_action_doesnt_fire_if_rule_doesnt_match
         goog = Stock("GOOG")
@@ -32,7 +32,7 @@ c_ AlertTest ?.?
         alert = Alert("sample alert", rule_spy, action)
         alert.connect(ex__)
         alert.check_rule(goog)
-        rule_spy.matches.assert_called_with(ex__)
+        rule_spy.matches.a_c_w..(ex__)
         aF..(action.execute.called)
 
     ___ test_action_fires_when_rule_matches
