@@ -48,7 +48,7 @@ class PhonebookTest(unittest.TestCase):
     def test_phonebook_adds_names_and_numbers(self):
         self.phonebook.add("Sue", "12345")
         self.assertIn("Sue", self.phonebook.get_names())
-        self.assertIn("12345", self.phonebook.get_numbers())
+        self.assertIn("12345", self.phonebook.g
 
 
 
