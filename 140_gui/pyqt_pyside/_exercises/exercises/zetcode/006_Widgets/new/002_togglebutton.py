@@ -1,72 +1,72 @@
-# #!/usr/bin/python3
-# # -*- coding: utf-8 -*-
-#
-#
-# ____ ?.?W.. ______ W.. ?P..
-#                              ?F. ?A..
-# ____ ?.?G__ ______ ?C..
-# ______ ___
-#
-#
-# c_ Example W..
-#
-#     ___ -
-#         s__ .-
-#
-#         ?
-#
-#     ___ initUI
-#
-#         col _ ?C.. 0 0 0
-#
-#         redb _ ?P.. 'Red'
-#         ?.sC.. T..
-#         ?.m.. 10 10
-#
-#         ?.c__|b.. .c.. ?
-#
-#         greenb _ ?P.. 'Green'
-#         ?.sC.. T..
-#         ?.m.. 10 60
-#
-#         ?.c__|b.. .c.. ?
-#
-#         blueb _ ?P.. 'Blue'
-#         ?.sC.. T..
-#         ?.m.. 10 110
-#
-#         ?.c__|b.. .c.. ?
-#
-#         square _ ?F.
-#         ?.sG__ 150 20 100 100
-#         ?.sSS..("QWidget |background-color: @ |"
-#                                   c__.n..
-#
-#         sG__ 300 300 280 170
-#         sWT__('Toggle button')
-#         s..
-#
-#     ___ setColor pressed
-#
-#         source _ se..
-#
-#         __ pressed
-#             val _ 255
-#         ____
-#             val _ 0
-#
-#         __ ?.t..  __ "Red"
-#             ?.sR.. ?
-#         ____ ?.t.. __ "Green"
-#             ?.sG.. ?
-#         ____
-#             ?.sB.. ?
-#
-#         ?.sSS.. "QFrame |background-color: @ |"
-#                                   ?.n..
-#
-#
-# __ _____ __ _______
-#     app _ ?A..
-#     ex _ ?
-#     ___.e.. ?.e..
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
+
+from PyQt5.QtWidgets import (QWidget, QPushButton,
+                             QFrame, QApplication)
+from PyQt5.QtGui import QColor
+import sys
+
+
+class Example(QWidget):
+
+    def __init__(self):
+        super().__init__()
+
+        self.initUI()
+
+    def initUI(self):
+
+        self.col = QColor(0, 0, 0)
+
+        redb = QPushButton('Red', self)
+        redb.setCheckable(True)
+        redb.move(10, 10)
+
+        redb.clicked[bool].connect(self.setColor)
+
+        greenb = QPushButton('Green', self)
+        greenb.setCheckable(True)
+        greenb.move(10, 60)
+
+        greenb.clicked[bool].connect(self.setColor)
+
+        blueb = QPushButton('Blue', self)
+        blueb.setCheckable(True)
+        blueb.move(10, 110)
+
+        blueb.clicked[bool].connect(self.setColor)
+
+        self.square = QFrame(self)
+        self.square.setGeometry(150, 20, 100, 100)
+        self.square.setStyleSheet("QWidget {background-color: %s }"
+                                  % self.col.name())
+
+        self.setGeometry(300, 300, 280, 170)
+        self.setWindowTitle('Toggle button')
+        self.show()
+
+    def setColor(self, pressed):
+
+        source = self.sender()
+
+        if pressed:
+            val = 255
+        else:
+            val = 0
+
+        if source.text()  == "Red":
+            self.col.setRed(val)
+        elif source.text() == "Green":
+            self.col.setGreen(val)
+        else:
+            self.col.setBlue(val)
+
+        self.square.setStyleSheet("QFrame {background-color: %s }"
+                                  % self.col.name())
+
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    ex = Example()
+    sys.exit(app.exec_())

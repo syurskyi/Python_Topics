@@ -2,8 +2,8 @@
 # # -*- coding: utf-8 -*-
 #
 #
-# ____ ?.?W.. ______ W.. ?P..
-#                              ?F. ?A..
+# ____ ?.?W.. ______ W.. ?PB..
+#                              ?Fr. ?A..
 # ____ ?.?G__ ______ ?C..
 # ______ ___
 #
@@ -19,13 +19,13 @@
 #
 #         col _ ?C.. 0 0 0
 #
-#         redb _ ?P.. 'Red'
+#         redb _ ?P.. *Red
 #         ?.sC.. T..
 #         ?.m.. 10 10
 #
 #         ?.c__|b.. .c.. ?
 #
-#         greenb _ ?P.. 'Green'
+#         greenb _ ?P.. *Green
 #         ?.sC.. T..
 #         ?.m.. 10 60
 #
@@ -43,7 +43,7 @@
 #                                   c__.n..
 #
 #         sG__ 300 300 280 170
-#         sWT__('Toggle button')
+#         sWT__ *Toggle button
 #         s..
 #
 #     ___ setColor pressed
