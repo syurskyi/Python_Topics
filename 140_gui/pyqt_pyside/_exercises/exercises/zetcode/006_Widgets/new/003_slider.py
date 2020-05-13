@@ -1,49 +1,49 @@
-# #!/usr/bin/python3
-# # -*- coding: utf-8 -*-
-#
-#
-# ____ ?.?W.. ______ W.. ?S..
-#                              ?L.. ?A..
-# ____ ?.?C.. ______ __
-# ____ ?.?G__ ______ ?P..
-# ______ ___
-#
-#
-# c_ Example W..
-#
-#     ___ -
-#         s__ .-
-#
-#         ?
-#
-#     ___ initUI
-#
-#         sld _ ?S.. __.H..
-#         ?.sFP.. __.NoF..
-#         ?.sG__ 30  40  100  30
-#         ?.vC__|in. .c.. ?
-#
-#         label _ ?L..
-#         ?.sP.. ?P.. 'mute.png'
-#         ?.sG__ 160  40  80  30
-#
-#         sG__ 300  300  280  170
-#         sWT__ '?S..'
-#         s..
-#
-#     ___ changeValue value
-#
-#         __ ? __ 0
-#             ?.sP.. ?P.. 'mute.png'
-#         ____ ? > 0 an. ? <_ 30
-#             ?.sP.. ?P.. 'min.png'
-#         ____ ? > 30 an. ? < 80
-#             ?.sP.. ?P.. 'med.png'
-#         ____
-#             ?.sP.. ?P.. 'max.png'
-#
-#
-# __ _____ __ _______
-#     app _ ?A..
-#     ex _ ?
-#     ___.e.. ?.e..
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
+
+from PyQt5.QtWidgets import (QWidget, QSlider,
+                             QLabel, QApplication)
+from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QPixmap
+import sys
+
+
+class Example(QWidget):
+
+    def __init__(self):
+        super().__init__()
+
+        self.initUI()
+
+    def initUI(self):
+
+        sld = QSlider(Qt.Horizontal, self)
+        sld.setFocusPolicy(Qt.NoFocus)
+        sld.setGeometry(30, 40, 100, 30)
+        sld.valueChanged[int].connect(self.changeValue)
+
+        self.label = QLabel(self)
+        self.label.setPixmap(QPixmap('mute.png'))
+        self.label.setGeometry(160, 40, 80,30)
+
+        self.setGeometry(300, 300, 280, 170)
+        self.setWindowTitle('QSilder')
+        self.show()
+
+    def changeValue(self, value):
+
+        if value == 0:
+            self.label.setPixmap(QPixmap('mute.png'))
+        elif value > 0 and value <= 30:
+            self.label.setPixmap(QPixmap('min.png'))
+        elif value > 30 and value < 80:
+            self.label.setPixmap(QPixmap('med.png'))
+        else:
+            self.label.setPixmap(QPixmap('max.png'))
+
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    ex = Example()
+    sys.exit(app.exec_())

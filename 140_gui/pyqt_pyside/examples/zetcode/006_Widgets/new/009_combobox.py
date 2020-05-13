@@ -35,7 +35,7 @@ class Example(QWidget):
 
     def onActivated(self, text):
         self.lbl.setText(text)
-        self.lbl.aS..()
+        self.lbl.adjustSize()
 
 
 if __name__ == '__main__':
