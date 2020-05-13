@@ -7,7 +7,7 @@
 # ______ ___
 #
 #
-# c_ Example W..
+# c_ Example ?W..
 #
 #     ___ -
 #         s__ .-
@@ -15,7 +15,7 @@
 #         ?
 #
 #     ___ initUI
-#         btn _ ?P.. 'Dialog',
+#         btn _ ?P.. *Dialog
 #         ?.m.. 20 20
 #         ?.c__.c.. sD..
 #
@@ -23,7 +23,7 @@
 #         ?.m.. 130 22
 #
 #         sG__ 300 300 290 150
-#         sWT__('Input dialog')
+#         sWT__*Input dialog
 #         s..
 #
 #     ___ showDialog
