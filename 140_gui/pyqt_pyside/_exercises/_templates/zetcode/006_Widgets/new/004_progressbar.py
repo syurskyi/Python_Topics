@@ -8,7 +8,7 @@
 # ______ ___
 #
 #
-# c_ Example W..
+# c_ Example ?W..
 #
 #     ___ -
 #         s__ .-
@@ -20,7 +20,7 @@
 #         pbar _ ?PB..
 #         ?.sG__ 30  40  200  25
 #
-#         btn _ ?P..'Start'
+#         btn _ ?P.. *Start
 #         ?.m.. 40  80
 #         ?.c__.c.. ?
 #
@@ -28,18 +28,18 @@
 #         step _ 0
 #
 #         sG__ 300  300  280  170
-#         sWT__'QProgressBar'
+#         sWT__ *QProgressBar
 #         s..
 #
 #     ___ timerEvent  e
 #
-#         __ step >_ 100
+#         __ st.. >_ 100
 #             t__.s..
-#             b__.sT..( Finished'
+#             b__.sT.. *Finished
 #             r_
 #
-#         ? _ ? + 1
-#         p__.sV.. ?
+#         s.. _ s.. + 1
+#         p__.sV.. s..
 #
 #     ___ doAction
 #

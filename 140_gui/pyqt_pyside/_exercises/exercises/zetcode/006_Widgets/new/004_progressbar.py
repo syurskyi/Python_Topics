@@ -8,50 +8,49 @@ from PyQt5.QtCore import QBasicTimer
 import sys
 
 
-c_ Example W..
+class Example(QWidget):
 
-    ___ -
-        s__ .-
+    def __init__(self):
+        super().__init__()
 
-        ?
+        self.initUI()
 
-    ___ initUI
+    def initUI(self):
 
-        pbar _ ?PB..
-        ?.sG__ 30  40  200  25
+        self.pbar = QProgressBar(self)
+        self.pbar.setGeometry(30,  40,  200,  25)
 
-        btn _ ?P..'Start'
-        ?.m.. 40  80
-        ?.c__.c.. ?
+        self.btn = QPushButton('Start', self)
+        self.btn.move(40,  80)
+        self.btn.clicked.connect(self.doAction)
 
-        timer _ QBasicTimer
-        step _ 0
+        self.timer = QBasicTimer()
+        self.step = 0
 
-        sG__ 300  300  280  170
-        sWT__'QProgressBar'
-        s..
+        self.setGeometry(300,  300,  280,  170)
+        self.setWindowTitle('QProgressBar')
+        self.show()
 
-    ___ timerEvent  e
+    def timerEvent(self, e):
 
-        __ step >_ 100
-            t__.s..
-            b__.sT..( Finished'
-            r_
+        if self.step >= 100:
+            self.timer.start()
+            self.btn.setText('Finished')
+            return
 
-        ? _ ? + 1
-        p__.sV.. ?
+        self.step = self.step + 1
+        self.pbar.setValue(self.step)
 
-    ___ doAction
+    def doAction(self):
 
-        __ t__.iA..
-            t__.s..
-            b__.sT.. 'Start'
-        ____
-            t__.s.. 100
-            b__.sT.. 'Stop'
+        if self.timer.isActive():
+            self.timer.stop()
+            self.btn.setText('Start')
+        else:
+            self.timer.start(100, self)
+            self.btn.setText('Stop')
 
-
-__ _____ __ _______
-    app _ ?A..
-    ex _ ?
-    ___.e.. ?.e..
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    ex = Example()
+    sys.exit(app.exec_())
