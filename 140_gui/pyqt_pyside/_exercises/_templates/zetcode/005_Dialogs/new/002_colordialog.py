@@ -36,8 +36,8 @@ class Example(QWidget):
         col = QColorDialog.getColor()
 
         if col.isValid():
-            self.frm.setStyleSheet("QWidget { background-color: @s }" %
-                                    col.name())
+            self.frm.setStyleSheet("QWidget { background-color: @s }"
+                                    % col.name())
 
 
 if __name__ == '__main__':
