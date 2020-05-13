@@ -16,7 +16,7 @@
 #     ___ initUI
 #         vbox _ ?VB..
 #
-#         btn _ ?P..('Dialog',
+#         btn _ ?P.. *Dialog
 #         ?.sSP. (?SP...F..
 #                           ?SP...F..
 #
@@ -26,14 +26,14 @@
 #
 #         b__.c__.c.. sD..
 #
-#         lbl _ ?L..('Knowledge only matters',
+#         lbl _ ?L.. *Knowledge only matters
 #         ?.m.. 130, 20
 #
 #         v__.aW.. ?
 #         sL.. ?
 #
 #         sG__ 300 300 250 180
-#         sWT__('Font dialog')
+#         sWT__ *Font dialog
 #         s..
 #
 #     ___ showDialog
