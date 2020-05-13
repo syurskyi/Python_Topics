@@ -37,7 +37,7 @@ class Example(QWidget):
 
         if col.isValid():
             self.frm.setStyleSheet("QWidget { background-color: @s }"
-                                    % col.name())
+                                   % col.name())
 
 
 if __name__ == '__main__':
