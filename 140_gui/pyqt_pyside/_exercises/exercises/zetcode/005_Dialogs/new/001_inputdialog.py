@@ -1,40 +1,39 @@
-# #!/usr/bin/python3
-# # -*- coding: utf-8 -*-
-#
-#
-# ____ ?.?W.. ______ (W.., ?P.., ?L..,
-#                              ?ID.. ?A..
-# ______ ___
-#
-#
-# c_ Example W..
-#
-#     ___ -
-#         s__ .-
-#
-#         ?
-#
-#     ___ initUI
-#         btn _ ?P.. 'Dialog',
-#         ?.m.. 20 20
-#         ?.c__.c.. sD..
-#
-#         le _ ?L..
-#         ?.m.. 130 22
-#
-#         sG__ 300 300 290 150
-#         sWT__('Input dialog')
-#         s..
-#
-#     ___ showDialog
-#         text, ok _ ?ID...gT.  'Input Dialog'
-#                                         'Enter your name:')
-#
-#         __ ok
-#             le.sT.. st. t..
-#
-#
-# __ _____ __ _______
-#     app _ ?A..
-#     ex _ ?
-#     ___.e.. ?.e..
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
+
+from PyQt5.QtWidgets import (QWidget, QPushButton, QLineEdit, QInputDialog, QApplication)
+import sys
+
+
+class Example(QWidget):
+
+    def __init__(self):
+        super().__init__()
+
+        self.initUI()
+
+    def initUI(self):
+        self.btn = QPushButton('Dialog', self)
+        self.btn.move(20, 20)
+        self.btn.clicked.connect(self.showDialog)
+
+        self.le = QLineEdit(self)
+        self.le.move(130, 22)
+
+        self.setGeometry(300, 300, 290, 150)
+        self.setWindowTitle('Input dialog')
+        self.show()
+
+    def showDialog(self):
+        text, ok = QInputDialog.getText(self, 'Input Dialog',
+                                        'Enter your name:')
+
+        if ok:
+            self.le.setText(str(text))
+
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    ex = Example()
+    sys.exit(app.exec_())
