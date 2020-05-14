@@ -16,7 +16,8 @@
 #
 #     ___ initUI
 #         sG__ 300  300  280  270
-#         sWT__ 'Pen styles'
+#         sWT__ *
+#         Pen styles
 #         s..
 #
 #     ___ paintEvent  e

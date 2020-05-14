@@ -15,7 +15,7 @@
 #
 #     ___ initUI
 #         sG__300 300 350 100
-#         sWT__('Colours')
+#         sWT__ *Colours
 #         s..
 #
 #     ___ paintEvent e
@@ -26,7 +26,7 @@
 #
 #     ___ drawRectangles qp
 #         col _ ?C.. 0 0 0
-#         ?.sNC.. '#d4d4d4'
+#         ?.sNC.. *#d4d4d4
 #         ?.setPen(col)
 #
 #         ?.sBr.. ?C.. 200 0 0

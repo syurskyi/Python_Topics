@@ -16,7 +16,7 @@
 #
 #     ___ initUI
 #         sG__ 300  300  380  250
-#         sWT__ 'Bézier curve'
+#         sWT__ *Bézier curve
 #         s..
 #
 #     ___ paintEvent self  e

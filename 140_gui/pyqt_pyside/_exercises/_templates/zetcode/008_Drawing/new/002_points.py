@@ -16,7 +16,7 @@
 #
 #     ___ initUI
 #         sG__ 300 300 300 190
-#         sWT__('Points')
+#         sWT__ *Points
 #         s..
 #
 #     ___ paintEvent e

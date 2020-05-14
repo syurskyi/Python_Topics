@@ -15,10 +15,10 @@
 #         ?
 #
 #     ___ initUI
-#         text _ "Leo Nikolaevich Tolstoy \n Anna Karenina"
+#         text _ *Leo Nikolaevich Tolstoy \n Anna Karenina
 #
 #         sG__ 300 300 280 170
-#         sWT__('Drawing text')
+#         sWT__ *Drawing text
 #         s..0
 #
 #     ___ paintEvent event

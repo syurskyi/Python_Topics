@@ -16,7 +16,7 @@
 #
 #     ___ initUI
 #         sG__ 300, 300, 355, 280
-#         sWT__ 'Brushes'
+#         sWT__ *Brushes
 #         s..
 #
 #     ___ paintEvent  e

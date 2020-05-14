@@ -44,10 +44,10 @@
 #     ___ initUI
 #         sAD.. T..
 #
-#         button _ ? 'Button'
+#         button _ ? *Button
 #         ?.m.. 100 65
 #
-#         sWT__ 'Click or Move'
+#         sWT__ *Click or Move
 #         sG__ 300 300 280 150
 #
 #     ___ dragEnterEvent( e
