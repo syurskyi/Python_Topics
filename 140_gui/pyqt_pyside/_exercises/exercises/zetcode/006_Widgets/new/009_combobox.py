@@ -9,12 +9,12 @@ import sys
 
 class Example(QWidget):
 
-    ___ -
-        s__ .-
+    def __init__(self):
+        super().__init__()
 
-        ?
+        self.initUI()
 
-    ___ initUI
+    def initUI(self):
         lbl _ ?L.. "Ubuntu",
 
         combo _ ?CB..
@@ -33,12 +33,12 @@ class Example(QWidget):
         sWT__ '?CB..'
         s..
 
-    ___ onActivated text
+    def onActivated(self, text):
         l__.sT.. ?
         l__.aS..
 
 
-__ _____ __ _______
-    app _ ?A..
-    ex _ ?
-    ___.e.. ?.e..
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    ex = Example()
+    sys.exit(app.exec_())

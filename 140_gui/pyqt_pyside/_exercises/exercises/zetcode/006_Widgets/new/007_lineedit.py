@@ -7,32 +7,32 @@ from PyQt5.QtWidgets import (QWidget, QLabel,
                              QLineEdit, QApplication)
 
 
-c_ Example W..
+class Example(QWidget):
 
-    ___ -
-        s__ .-
+    def __init__(self):
+        super().__init__()
 
-        ?
+        self.initUI()
 
-    ___ initUI
-        lbl _ ?L..
-        qle _ ?L..
+    def initUI(self):
+        self.lbl = QLabel(self)
+        qle = QLineEdit(self)
 
-        q__.m.. 60 100
-        l__.m.. 60 40
+        qle.move(60, 100)
+        self.lbl.move(60, 40)
 
-        q__.tC..|st. .c.. ?
+        qle.textChanged[str].connect(self.onChanged)
 
-        sG__ 300 300 280 170
-        sWT__ 'QLineEdit'
-        s..
+        self.setGeometry(300, 300, 280, 170)
+        self.setWindowTitle('QLineEdit')
+        self.show()
 
-    ___ onChanged text
-        l__.sT.. ?
-        l__.aS..
+    def onChanged(self, text):
+        self.lbl.setText(text)
+        self.lbl.adjustSize()
 
 
-__ _____ __ _______
-    app _ ?A..
-    ex _ ?
-    ___.e.. ?.e..
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    ex = Example()
+    sys.exit(app.exec_())

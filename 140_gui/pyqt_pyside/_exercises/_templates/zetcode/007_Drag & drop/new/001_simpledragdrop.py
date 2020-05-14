@@ -2,7 +2,7 @@
 # # -*- coding: utf-8 -*-
 #
 #
-# ____ ?.?W.. ______ ?P.. W..
+# ____ ?.?W.. ______ ?P.. ?W..
 #                              ?L.. ?A..
 # ______ ___
 #
@@ -16,7 +16,7 @@
 #
 #     ___ dragEnterEvent e
 #
-#         __ ?.mD__ .hF.. 'text/plain'
+#         __ ?.mD__ .hF.. *text/plain
 #             ?.a...
 #         ____
 #             ?.i..
@@ -38,10 +38,10 @@
 #         ?.sDE.. T..
 #         ?.m.. 30 65
 #
-#         button _ ? "Button"
+#         button _ ? *Button
 #         ?.m.. 190 65
 #
-#         sWT__('Simple drag and drop')
+#         sWT__ *Simple drag and drop
 #         sG__ 300 300 300 150
 #
 #

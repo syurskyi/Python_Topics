@@ -61,8 +61,8 @@ c_ Example W..
         ?.a...
 
 
-__ _____ __ _______
-    app _ ?A..
-    ex _ ?
-    ?.s..
-    ?.e..
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    ex = Example()
+    ex.show()
+    app.exec_()

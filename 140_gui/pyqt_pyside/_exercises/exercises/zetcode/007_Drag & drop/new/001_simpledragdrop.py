@@ -2,15 +2,15 @@
 # -*- coding: utf-8 -*-
 
 
-from PyQt5.QtWidgets import (QWidget,
+from PyQt5.QtWidgets import (QWidget, QPushButton,
                              QLineEdit, QApplication)
 import sys
 
 
-c_ Button ?P..
+class Button(QPushButton):
 
-    ___ -  title parent
-        s__ .- ? ?
+    def __init__(self, title, parent):
+        super().__init__(Button, self)
 
         sAD.. T..
 
@@ -45,8 +45,8 @@ c_ Example W..
         sG__ 300 300 300 150
 
 
-__ _____ __ _______
-    app _ ?A..
-    ex _ ?
-    ?.s..
-    ?.e..
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    ex = Example()
+    ex.show()
+    app.exec_()

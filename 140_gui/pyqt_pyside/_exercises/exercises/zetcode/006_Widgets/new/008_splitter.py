@@ -8,14 +8,14 @@ from PyQt5.QtCore import Qt
 import sys
 
 
-c_ Example W..
+class Example(QWidget):
 
-    ___ -
-        s__ .-
+    def __init__(self):
+        super().__init__
 
-        ?
+        self.initUI()
 
-    ___ initUI
+    def initUI(self)
         hbox _ ?HB..
 
         topleft _ ?F.
@@ -43,7 +43,7 @@ c_ Example W..
         s..
 
 
-__ _____ __ _______
-    app _ ?A..
-    ex _ ?
-    ___.e.. ?.e..
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    ex = Example()
+    sys.exit(app.exec_())
