@@ -27,3 +27,9 @@ class exampleItemClass(QGraphicsItem):
 
         painter.setFont(QFont("Arial", 16))
         painter.drawText(self.boundingRect(), Qt.AlignCenter, self.text)
+
+if __name__ == '__main__':
+    app = QApplication([])
+    w = exampleItemClass()
+    w.show()
+    app.exec_()
