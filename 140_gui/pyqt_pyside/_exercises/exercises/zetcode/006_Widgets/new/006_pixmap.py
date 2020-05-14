@@ -7,29 +7,28 @@ from PyQt5.QtGui import QPixmap
 import sys
 
 
-c_ Example W..
+class Example(QWidget):
 
-    ___ -
-        s__ .-
+    def __init__(self):
+        super().__init__()
 
-        ?
+        self.initUI()
 
-    ___ initUI
-        hbox _ ?HB..
-        pixmap _ ?P.. "redrock.png"
+    def initUI(self):
+        hbox = QHBoxLayout(self)
+        pixmap = QPixmap("redrock.png")
 
-        lbl _ ?L..
-        ?.sP.. p..
+        lbl = QLabel(self)
+        lbl.setPixmap(pixmap)
 
-        h__.aW.. l..
-        sL.. ?
+        hbox.addWidget(lbl)
+        self.setLayout(hbox) 
 
-        m.. 300 200
-        sWT__('Red Rock')
-        s..
+        self.move(300, 200)
+        self.setWindowTitle('Red Rock')
+        self.show()
 
-
-__ _____ __ _______
-    app _ ?A..
-    ex _ ?
-    ___.e.. ?.e..
+if __name__ == '__main__':
+    app =QApplication(sys.argv)
+    ex = Example()
+    sys.exit(app.exec_())
