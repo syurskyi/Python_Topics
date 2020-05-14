@@ -15,14 +15,14 @@ class Example(QWidget):
 
         self.initUI()
 
-    def initUI(self)
-        hbox _ ?HB..
+    def initUI(self):
+        hbox = QHBoxLayout(self)
 
-        topleft _ ?F.
-        ?.sFS.. ?F..aS..
+        topleft = QFrame(self)
+        topleft.setFrameStyle(QFrame.StyledPanel)
 
-        topright _ ?F.
-        ?.sFS.. ?F..aS..
+        topright = QFrame(self)
+        topright.setFrameStyle(QFrame.aS..
 
         bottom _ ?F.
         ?.sFS.. ?F..aS..

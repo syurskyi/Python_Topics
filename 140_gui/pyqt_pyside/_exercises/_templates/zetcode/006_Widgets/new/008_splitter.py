@@ -19,13 +19,13 @@
 #         hbox _ ?HB..
 #
 #         topleft _ ?F.
-#         ?.sFS.. ?F..aS..
+#         ?.sFS.. ?F..SP..
 #
 #         topright _ ?F.
-#         ?.sFS.. ?F..aS..
+#         ?.sFS.. ?F..SP..
 #
 #         bottom _ ?F.
-#         ?.sFS.. ?F..aS..
+#         ?.sFS.. ?F..SP..
 #
 #         splitter1 _ ?S.. __.H..
 #         ?.aW.. t_l..
@@ -39,7 +39,7 @@
 #         sL.. h..
 #
 #         sG__ 300 300 300 200
-#         sWT__('QSplitter')
+#         sWT__ *QSplitter
 #         s..
 #
 #
