@@ -17,7 +17,7 @@ c_ SearchBySymbolTest?.?
         aT..(isi..(response, dict))
         aI..("response", response, 'Missing response')
         aI..("result", response['response'], 'Missing result')
-        aT..(isi..(response['response']['result'], list), "Result is not a list")
+        aT..(isi..(response['response']['result'], li..), "Result is not a list")
         
         ___ item __ response['response']['result']:
 			aI..("exchange", item, 'missing exchange')
@@ -38,7 +38,7 @@ c_ SearchbyTermTest?.?
         aT..(isi..(response, dict))
         aI..("response", response, 'Missing response')
         aI..("result", response['response'], 'Missing result')
-        aT..(isi..(response['response']['result'], list), "Result is not a list")
+        aT..(isi..(response['response']['result'], li..), "Result is not a list")
         
         ___ item __ response['response']['result']:
 			aI..("exchange", item, 'missing exchange')
@@ -59,7 +59,7 @@ c_ SearchbyTitleTest?.?
         aT..(isi..(response, dict))
         aI..("response", response, 'Missing response')
         aI..("result", response['response'], 'Missing result')
-        aT..(isi..(response['response']['result'], list), "Result is not a list")
+        aT..(isi..(response['response']['result'], li..), "Result is not a list")
         
         ___ item __ response['response']['result']:
 			aI..("exchange", item, 'missing exchange')
@@ -80,7 +80,7 @@ c_ GetTagArticlesTest?.?
         aT..(isi..(response, dict))
         aI..("response", response, 'Missing response')
         aI..("result", response['response'], 'Missing result')
-        aT..(isi..(response['response']['result'], list), "Result is not a list")
+        aT..(isi..(response['response']['result'], li..), "Result is not a list")
         
         ___ articles __ response['response']['result']:
             ___ item __ articles['articles']:
@@ -107,7 +107,7 @@ c_ MarketMoversTest?.?
         aT..(isi..(response, dict))
         aI..("response", response, 'Missing response')
         aI..("result", response['response'], 'Missing result')
-        aT..(isi..(response['response']['result'], list), "Result is not a list")
+        aT..(isi..(response['response']['result'], li..), "Result is not a list")
         
         ___ item __ response['response']['result']:
 			aI..("c", item, 'missin c')

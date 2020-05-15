@@ -101,7 +101,7 @@ c_ UnigramTagger:
         :param words: List of words that will be tagged
         """
 
-        result _ list()
+        result _ li..()
 
         ___ word __ words:
             __ word __ model:

@@ -3,7 +3,7 @@
 # Purpose: The purpose of this script is test a getSize() method
 #          of the linkedlist.py 
 
-______ sys
+______ ___
 ______ u__
 ____ linkedlist ______ LinkedList
 
@@ -11,23 +11,23 @@ c_ SizeOfLinkedList?.?
     ___ setUp
         ___
             #create list
-            newList _ LinkedList()
+            newList _ ?
             fullSize _ 10
             reduced _ 6
             #populate the list with data 0 to 9
-            ___ i __ ra..(10
-                newList.addNode(i)
-        _____:
-            print('\nSetup failed: '+ st.(sys.exc_info()[0]))
+            ___ i __ ra.. 10
+                n__.aN.. ?
+        _____
+            print('\nSetup failed: '+ st. ___.e_i.. 0
 
     ___ testFullSize
-        aE..(newList.getSize(), fullSize)
+        aE.. n__.gS... fS..
 
     ___ testReduced
-        ___ i __ ra..(4
-            newList.removeNode(i)
-        aNE..(newList.getSize(), fullSize)
-        aE..(newList.getSize(), reduced)
+        ___ i __ ra.. 4
+            n__.rN.. ?
+        aNE.. n__.gS.. fS..
+        aE.. n__.gS.. r..
 
 __ _____ __ _____
-    u__.main(verbosity_2)
+    u__.m.. v.._2

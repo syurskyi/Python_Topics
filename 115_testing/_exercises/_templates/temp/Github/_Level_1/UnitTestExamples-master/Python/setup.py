@@ -1,7 +1,7 @@
 ____ setuptools ______ setup, find_packages
-______ sys
-sys.pa__.a..('./src')
-sys.pa__.a..('./test')
+______ ___
+___.pa__.a..('./src')
+___.pa__.a..('./test')
 
 setup(
     name _ "Sample",

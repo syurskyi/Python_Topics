@@ -74,7 +74,7 @@ c_ JsonDiffHandler o..
                     check(first_json[key], second_json, path_new_path, with_values_with_values)
 
         # Если проверяемая секция эталонного json список
-        elif isi..(first_json, list
+        elif isi..(first_json, li..
             ___ (index, item) __ enumerate(first_json
                 new_path _ "%s[%s]" % (pa__, index)
                 sec _ N..

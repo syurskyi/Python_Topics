@@ -34,7 +34,7 @@ w__ o..(infile) __ f1:
 print("\n**********************")
 
 # add each line to a list
-cars _ list()
+cars _ li..()
 w__ o..(infile) __ f1:
     ___ line __ f1:
         row _ line.split(",")

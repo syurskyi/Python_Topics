@@ -25,7 +25,7 @@ c_ FakeSingleSignOnRegistry:
         r_ token __ tokens
 
     ___ end_session  token
-        tokens.remove(token)
+        tokens.re..(token)
 
 c_ MockSingleSignOnRegistry:
 

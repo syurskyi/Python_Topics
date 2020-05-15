@@ -13,7 +13,7 @@ c_ SieveTest?.?
         """
 
         expect_return_value _ [2, 3, 5, 7, 11]
-        actual_return_value _ list(sieve.sieve_of_eratosthenes(12))
+        actual_return_value _ li..(sieve.sieve_of_eratosthenes(12))
 
         aE..(expect_return_value, actual_return_value)
 

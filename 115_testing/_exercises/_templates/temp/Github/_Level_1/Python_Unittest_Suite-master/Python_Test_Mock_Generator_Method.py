@@ -35,7 +35,7 @@ c_ Foo:
 
 foo _ Foo()
 
-list(foo.iter())
+li..(foo.iter())
 
 # OUTPUT: '[1, 2, 3]'
 
@@ -50,6 +50,6 @@ list(foo.iter())
 mock_foo _ MagicMock()
 mock_foo.iter.return_value _ iter([1, 2, 3])
 
-list(mock_foo.iter())
+li..(mock_foo.iter())
 
 # OUTPUT: '[1, 2, 3]'

@@ -22,5 +22,5 @@ c_ Phonebook(
     ___ clear
         entries _ {}
         file_cache.close()
-        __.remove(filename)
+        __.re..(filename)
 

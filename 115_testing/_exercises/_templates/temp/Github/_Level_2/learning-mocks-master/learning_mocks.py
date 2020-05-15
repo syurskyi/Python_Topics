@@ -8,7 +8,7 @@ ____ lxml ______ html
 c_ FileRemovalService o..
     ___ rm  filename
         __ __.pa__.isfile(filename
-            __.remove(filename)
+            __.re..(filename)
 
 
 c_ UploadService o..
@@ -22,7 +22,7 @@ c_ UploadService o..
 
 ___ rm(filename
     __ __.pa__.isfile(filename
-        __.remove(filename)
+        __.re..(filename)
 
 ___ get_hrefs_from_url(url
     page _ requests.get(url)

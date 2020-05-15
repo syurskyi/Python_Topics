@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
 ______ u__
-______ sys
-sys.pa__.a..('app/')
+______ ___
+___.pa__.a..('app/')
 
 ___ test_all(
     loader _ u__.TestLoader()

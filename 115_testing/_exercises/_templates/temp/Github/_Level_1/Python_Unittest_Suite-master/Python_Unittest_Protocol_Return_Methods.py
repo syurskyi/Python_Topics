@@ -34,7 +34,7 @@ le.(mock)
 
 # OUTPUT: '0'
 
-list(mock)
+li..(mock)
 
 # OUTPUT: '[]'
 
@@ -69,11 +69,11 @@ mock __ 3
 mock _ MagicMock()
 mock.__iter__.return_value _ ['a', 'b', 'c']
 
-list(mock)
+li..(mock)
 
 # OUTPUT: '['a', 'b', 'c']'
 
-list(mock)
+li..(mock)
 
 # OUTPUT: '['a', 'b', 'c']'
 
@@ -83,10 +83,10 @@ list(mock)
 
 mock.__iter__.return_value _ iter(['a', 'b', 'c'])
 
-list(mock)
+li..(mock)
 
 # OUTPUT: '['a', 'b', 'c']'
 
-list(mock)
+li..(mock)
 
 # OUTPUT: '[]'

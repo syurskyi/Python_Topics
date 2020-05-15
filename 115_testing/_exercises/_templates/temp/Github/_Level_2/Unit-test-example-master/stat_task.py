@@ -28,7 +28,7 @@ c_ Parser(
         ___ line __ fileobj:
             allines +_ 1
             ___
-                L _ list(line.split('\t'))
+                L _ li..(line.split('\t'))
                 L[index] __ T..
             _____ IndexError:
                 p..
@@ -261,7 +261,7 @@ c_ Statistics:
         ___ key __ fdict:
             fdict[key].a..(f..(fdict[key][0] / lendata * 100, '.2f'))
 
-        rkeys _ list(reversed([x ___ x __ fdict.keys()]))
+        rkeys _ li..(reversed([x ___ x __ fdict.keys()]))
 
         w__ rkeys:
             sum _ 0

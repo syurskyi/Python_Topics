@@ -5,7 +5,7 @@
 """
 
 ____ setuptools ______ setup, find_packages
-____ sys ______ version_info, exit
+____ ___ ______ version_info, exit
 ______ testingdemo
 
 setup(

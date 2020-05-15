@@ -78,7 +78,7 @@ c_ StockCrossOverSignalTest ?.?
             r_ [date + i*timedelta(delta) ___ i __ ra..(le.(price_list))]
 
     ___ _generate_timestamps price_list):
-        r_ list(_flatten([
+        r_ li..(_flatten([
             _generate_timestamp_for_date(d_t_(2014, 2, 13) -
                                               timedelta(i),
                                               price_list[le.(price_list)-i-1])
@@ -88,7 +88,7 @@ c_ StockCrossOverSignalTest ?.?
     ___ given_a_series_of_prices price_list):
         timestamps = _generate_timestamps(price_list)
         ___ timestamp, price __ zip(timestamps,
-                                    list(_flatten([p
+                                    li..(_flatten([p
                                                         ___ p __ price_list
                                                         __ p is not N..]))):
             goog.u..(timestamp, price)

@@ -37,7 +37,7 @@ w__ patch.dict('sys.modules', {'fooble': mock}
 
 # OUTPUT: '<Mock name='mock.blob()' id='...'>'
 
-a.. 'fooble' no. __ sys.modules
+a.. 'fooble' no. __ ___.modules
 
 mock.blob.a_c_o_w..()
 

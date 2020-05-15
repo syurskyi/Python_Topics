@@ -15,4 +15,4 @@ c_ TestPrescription?.?
                                     dispense_date _ days_ago(days_2),
                                     days_supply_4)
         aLE..([days_ago(2), days_ago(1)],
-                             list(prescription.days_taken()))
+                             li..(prescription.days_taken()))

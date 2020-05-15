@@ -96,4 +96,4 @@ w__ patch.dict(thing, one_2, two_3
        a.. thing['two'] __ 3
 
 a.. thing['one'] __ 1
-a.. list(thing) __ ['one']
+a.. li..(thing) __ ['one']

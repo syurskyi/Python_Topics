@@ -1,4 +1,4 @@
-______ sys
+______ ___
 ______ timeit
 # https://www.youtube.com/watch?v=NI26dqhs2Rk
 # Tuple is a smaller faster alternative to a list
@@ -33,15 +33,15 @@ print("Tuple methods")
 print(dir(perfect_squares))
 print()
 
-print(dir(sys))
-print(help(sys.getsizeof))
+print(dir(___))
+print(help(___.getsizeof))
 print()
 
 list_eg _ [1, 2, 3, "a", "b", "c", T.., 3.14159]
 tuple_eg _ (1, 2, 3, "a", "b", "c", T.., 3.14159)
 
-print("List size = ", sys.getsizeof(list_eg))
-print("Tuple size = ", sys.getsizeof(tuple_eg))
+print("List size = ", ___.getsizeof(list_eg))
+print("Tuple size = ", ___.getsizeof(tuple_eg))
 print()
 
 list_test _ timeit.timeit(stmt_"[1, 2, 3, 4, 5]", number_1000000)

@@ -21,12 +21,12 @@ c_ RmTestCase?.?
         mock_path.isfile.return_value _ F..
         removal_service.rm('any path')
         # test that remove call was NOT called
-        aF..(mock_os.remove.called, "Failed to NOT remove the if its not present")
+        aF..(mock_os.re...called, "Failed to NOT remove the if its not present")
 
         # set the condition that the file does exist for the mock
         mock_path.isfile.return_value _ T..
         removal_service.rm('any path')
-        mock_os.remove.a_c_w..('any path')
+        mock_os.re...a_c_w..('any path')
 
 
 c_ UploadServiceTestCase?.?

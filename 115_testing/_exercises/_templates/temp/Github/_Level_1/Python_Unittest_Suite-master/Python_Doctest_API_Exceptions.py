@@ -20,7 +20,7 @@
 # Simple example:
 # 
 
-[1, 2, 3].remove(42)
+[1, 2, 3].re..(42)
 
 #
 # The traceback stack is followed by the most interesting part: the line(s) containing the exception type and detail.

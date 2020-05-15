@@ -49,7 +49,7 @@ c_ MyTestCase?.?
 
         p..
 
-    @u__.skipUnless(sys.platform.startswith("win"), "requires Windows")
+    @u__.skipUnless(___.platform.startswith("win"), "requires Windows")
 
     ___ test_windows_support
 

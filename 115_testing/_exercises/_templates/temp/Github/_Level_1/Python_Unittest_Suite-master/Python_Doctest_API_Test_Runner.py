@@ -23,8 +23,8 @@ __ _____ __ _____
 
     flags _ doctest.REPORT_NDIFF|doctest.FAIL_FAST
 
-    __ le.(sys.argv) > 1:
-        name _ sys.argv[1]
+    __ le.(___.argv) > 1:
+        name _ ___.argv[1]
 
         __ name __ globals(
             obj _ globals()[name]

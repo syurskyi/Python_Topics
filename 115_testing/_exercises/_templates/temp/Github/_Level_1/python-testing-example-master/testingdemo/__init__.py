@@ -4,7 +4,7 @@
 
 ______ d_t_
 ______ __
-______ sys
+______ ___
 ______ u__
 
 __ __debug__:
@@ -12,7 +12,7 @@ __ __debug__:
     import_dir _ "./libraries/"
     ___ d __ __.listdir(import_dir
         __ __.pa__.isdir(import_dir + d
-            sys.pa__.insert(1, import_dir + d)
+            ___.pa__.insert(1, import_dir + d)
 
     ___
         ______ coverage

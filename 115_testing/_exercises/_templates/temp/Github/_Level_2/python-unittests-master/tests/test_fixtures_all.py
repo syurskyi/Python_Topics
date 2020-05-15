@@ -1,8 +1,8 @@
 ______ logging
 ______ u__
-______ sys
+______ ___
 
-VERBOSE _ '-v' __ sys.argv o. '--verbose' __ sys.argv
+VERBOSE _ '-v' __ ___.argv o. '--verbose' __ ___.argv
 
 
 ___ setUpModule(

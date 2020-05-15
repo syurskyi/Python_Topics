@@ -1,4 +1,4 @@
-______ sys
+______ ___
 ______ u__
 
 ____ sample ______ Calc
@@ -15,7 +15,7 @@ c_ TestSample?.?
 
     ___ test_pow
         aE..(125, calc.pow(5, 3))
-        aE..(sys.maxsize, calc.pow(2, 31) - 1)
+        aE..(___.maxsize, calc.pow(2, 31) - 1)
 
 
 ___ suite(

@@ -1,4 +1,4 @@
-______ sys, __
+______ ___, __
 
 myPath _ __.pa__.dirname(__.pa__.abspath(__file__))
-sys.pa__.insert(0, myPath + '/../src/')
+___.pa__.insert(0, myPath + '/../src/')

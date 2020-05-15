@@ -52,7 +52,7 @@ st.(mock)
 mock _ Mock()
 mock.__iter__ _ Mock(return_value_iter([]))
 
-list(mock)
+li..(mock)
 
 # OUTPUT: '[]'
 
