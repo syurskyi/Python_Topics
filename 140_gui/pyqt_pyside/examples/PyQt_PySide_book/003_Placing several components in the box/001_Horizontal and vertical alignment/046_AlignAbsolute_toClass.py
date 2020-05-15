@@ -37,8 +37,3 @@ class SampleWindow(QtWidgets.QWidget):
         self.resize(400, 150)
         self.setLayout(vbox)
         self.show()
-
-
-
-
-
