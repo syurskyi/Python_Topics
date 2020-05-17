@@ -1,6 +1,6 @@
-_____ psycopg2
+_____ ?
 
-connection _ psycopg2.c..(database_'learning',
+connection _ ?.c..(database_'learning',
                               user_'syurskyi',
                               password_'1234',
                               host_'localhost')

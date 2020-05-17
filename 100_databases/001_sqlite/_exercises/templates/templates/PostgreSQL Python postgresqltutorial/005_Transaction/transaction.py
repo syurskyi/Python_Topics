@@ -1,6 +1,6 @@
 #!/usr/bin/python
-_____ psycopg2
-from config _____ config
+_____ ?
+____ c.. _____ c..
 
 
 ___ add_part(part_name, vendor_list):
@@ -11,8 +11,8 @@ ___ add_part(part_name, vendor_list):
 
     conn _ w..
     ___
-        params _ config()
-        conn _ psycopg2.c..(**params)
+        params _ c..()
+        conn _ ?.c..(**params)
         cur _ conn.c..
         # insert a new part
         cur.e..(insert_part, (part_name,))
@@ -24,14 +24,14 @@ ___ add_part(part_name, vendor_list):
 
         # commit changes
         conn.c..
-    ______ (E.., psycopg2.DatabaseError) __ error:
-        print(error)
+    ______ (E.., ?.DE..) __ error:
+        print ?
     f__
-        __ conn is not w..:
+        __ conn __ no. w..:
             conn.c..
 
 
-__ __name__ __ '__main__':
+__ _____ __ ______
     add_part('SIM Tray', (1, 2))
     add_part('Speaker', (3, 4))
     add_part('Vibrator', (5, 6))

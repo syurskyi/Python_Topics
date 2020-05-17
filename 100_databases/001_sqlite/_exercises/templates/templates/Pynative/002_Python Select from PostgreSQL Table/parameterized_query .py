@@ -1,8 +1,8 @@
-_____ psycopg2
+_____ ?
 
 ___ getMobileDetails(mobileID):
     ___
-        connection _ psycopg2.c..(user_"syurskyi",
+        connection _ ?.c..(user_"syurskyi",
                                       password_"1234",
                                       host_"127.0.0.1",
                                       port_"5432",
@@ -19,7 +19,7 @@ ___ getMobileDetails(mobileID):
             print("Model = ", row[1])
             print("Price  = ", row[2])
 
-    ______ (E.., psycopg2.Er..) __ error:
+    ______ (E.., ?.Er..) __ error:
         print("Error fetching data from PostgreSQL table", error)
 
     f__

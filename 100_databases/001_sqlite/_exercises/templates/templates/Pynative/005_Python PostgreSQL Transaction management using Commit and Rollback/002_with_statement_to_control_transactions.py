@@ -1,7 +1,7 @@
-_____ psycopg2
-from psycopg2 _____ Er..
+_____ ?
+____ ? _____ Er..
 
-connection _ psycopg2.c..(user_"syurskyi",
+connection _ ?.c..(user_"syurskyi",
                               password_"1234",
                               host_"127.0.0.1",
                               port_"5432",

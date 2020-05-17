@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-_____ psycopg2
+_____ ?
 
 cars _ (
     (1, 'Audi', 52642),
@@ -14,7 +14,7 @@ cars _ (
     (8, 'Volkswagen', 21600)
 )
 
-con _ psycopg2.c..(database_'testdb', user_'syurskyi',
+con _ ?.c..(database_'testdb', user_'syurskyi',
                     password_'1234')
 
 w__ con:

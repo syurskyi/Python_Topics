@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-_____ psycopg2
+_____ ?
 
 
-con _ psycopg2.c..(database_'testdb', user_'syurskyi',
+con _ ?.c..(database_'testdb', user_'syurskyi',
     password_'1234')
 
 w__ con:

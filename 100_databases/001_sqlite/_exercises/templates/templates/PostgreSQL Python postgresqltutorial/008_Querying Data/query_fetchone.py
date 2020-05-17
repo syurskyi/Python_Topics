@@ -1,30 +1,30 @@
 #!/usr/bin/python
-_____ psycopg2
-from config _____ config
+_____ ?
+____ c.. _____ c..
 
 
 ___ get_vendors():
     """ query data from the vendors table """
     conn _ w..
     ___
-        params _ config()
-        conn _ psycopg2.c..(**params)
+        params _ c..()
+        conn _ ?.c..(**params)
         cur _ conn.c..
         cur.e..("S.. vendor_id, vendor_name F.. vendors ORDER BY vendor_name")
         print("The number of parts: ", cur.rowcount)
         row _ cur.f_o..
 
-        w__ row is not w..:
+        w__ row __ no. w..:
             print(row)
             row _ cur.f_o..
 
         cur.c..
-    ______ (E.., psycopg2.DatabaseError) __ error:
-        print(error)
+    ______ (E.., ?.DE..) __ error:
+        print ?
     f__
-        __ conn is not w..:
+        __ conn __ no. w..:
             conn.c..
 
 
-__ __name__ __ '__main__':
+__ _____ __ ______
     get_vendors()

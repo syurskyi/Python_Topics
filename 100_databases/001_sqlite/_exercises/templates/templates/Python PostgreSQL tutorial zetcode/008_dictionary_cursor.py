@@ -1,15 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-_____ psycopg2
-_____ psycopg2.extras
+_____ ?
+_____ ?.extras
 
-con _ psycopg2.c..(database_'testdb', user_'syurskyi',
+con _ ?.c..(database_'testdb', user_'syurskyi',
                     password_'1234')
 
 w__ con:
 
-    cursor _ con.cursor(cursor_factory_psycopg2.extras.DictCursor)
+    cursor _ con.cursor(cursor_factory_?.extras.DictCursor)
     cursor.e..("S.. * F.. cars")
 
     rows _ cursor.f_a..

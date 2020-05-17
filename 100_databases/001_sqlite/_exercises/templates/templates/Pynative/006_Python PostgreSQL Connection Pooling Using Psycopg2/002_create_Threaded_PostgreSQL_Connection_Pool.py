@@ -1,7 +1,7 @@
-_____ psycopg2
-from psycopg2 _____ pool
+_____ ?
+____ ? _____ pool
 ___
-    threaded_postgreSQL_pool _ psycopg2.pool.ThreadedConnectionPool(5, 20,user _ "postgres",
+    threaded_postgreSQL_pool _ ?.pool.ThreadedConnectionPool(5, 20,user _ "postgres",
                                               password _ "pass@#29",
                                               host _ "127.0.0.1",
                                               port _ "5432",
@@ -30,7 +30,7 @@ ___
         threaded_postgreSQL_pool.putconn(ps_connection)
         print("Put away a PostgreSQL connection")
 
-______ (E.., psycopg2.DatabaseError) __ error :
+______ (E.., ?.DE..) __ error :
     print ("Error while connecting to PostgreSQL", error)
 
 f__

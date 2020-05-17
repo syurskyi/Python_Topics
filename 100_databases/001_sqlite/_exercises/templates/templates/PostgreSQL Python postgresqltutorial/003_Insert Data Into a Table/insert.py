@@ -1,5 +1,5 @@
-_____ psycopg2
-from config _____ config
+_____ ?
+____ c.. _____ c..
 
 
 ___ insert_vendor(vendor_name):
@@ -10,9 +10,9 @@ ___ insert_vendor(vendor_name):
     vendor_id _ w..
     ___
         # read database configuration
-        params _ config()
+        params _ c..()
         # connect to the PostgreSQL database
-        conn _ psycopg2.c..(**params)
+        conn _ ?.c..(**params)
         # create a new cursor
         cur _ conn.c..
         # execute the I.. statement
@@ -23,10 +23,10 @@ ___ insert_vendor(vendor_name):
         conn.c..
         # close communication with the database
         cur.c..
-    ______ (E.., psycopg2.DatabaseError) __ error:
-        print(error)
+    ______ (E.., ?.DE..) __ error:
+        print ?
     f__
-        __ conn is not w..:
+        __ conn __ no. w..:
             conn.c..
 
     r_ vendor_id
@@ -38,9 +38,9 @@ ___ insert_vendor_list(vendor_list):
     conn _ w..
     ___
         # read database configuration
-        params _ config()
+        params _ c..()
         # connect to the PostgreSQL database
-        conn _ psycopg2.c..(**params)
+        conn _ ?.c..(**params)
         # create a new cursor
         cur _ conn.c..
         # execute the I.. statement
@@ -49,14 +49,14 @@ ___ insert_vendor_list(vendor_list):
         conn.c..
         # close communication with the database
         cur.c..
-    ______ (E.., psycopg2.DatabaseError) __ error:
-        print(error)
+    ______ (E.., ?.DE..) __ error:
+        print ?
     f__
-        __ conn is not w..:
+        __ conn __ no. w..:
             conn.c..
 
 
-__ __name__ __ '__main__':
+__ _____ __ ______
     # insert one vendor
     insert_vendor("3M Co.")
     # insert multiple vendors

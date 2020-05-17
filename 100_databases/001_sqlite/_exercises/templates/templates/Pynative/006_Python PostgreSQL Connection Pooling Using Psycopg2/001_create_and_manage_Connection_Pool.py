@@ -1,7 +1,7 @@
-_____ psycopg2
-from psycopg2 _____ pool
+_____ ?
+____ ? _____ pool
 ___
-    postgreSQL_pool _ psycopg2.pool.SimpleConnectionPool(1, 20,user _ "syurskyi",
+    postgreSQL_pool _ ?.pool.SimpleConnectionPool(1, 20,user _ "syurskyi",
                                               password _ "1234",
                                               host _ "127.0.0.1",
                                               port _ "5432",
@@ -28,7 +28,7 @@ ___
         postgreSQL_pool.putconn(ps_connection)
         print("Put away a PostgreSQL connection")
 
-______ (E.., psycopg2.DatabaseError) __ error :
+______ (E.., ?.DE..) __ error :
     print ("Error while connecting to PostgreSQL", error)
 
 f__

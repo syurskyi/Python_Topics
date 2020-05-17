@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-_____ psycopg2
+_____ ?
 _____ ___
 
 con _ w..
 
 ___
 
-    con _ psycopg2.c..(database_'testdb', user_'syurskyi',
+    con _ ?.c..(database_'testdb', user_'syurskyi',
         password_'1234')
 
     cur _ con.c..
@@ -17,7 +17,7 @@ ___
     version _ cur.f_o..[0]
     print(version)
 
-______ psycopg2.DatabaseError __ e:
+______ ?.DE.. __ e:
 
     print(f'Error {e}')
     ___.e.. 1)

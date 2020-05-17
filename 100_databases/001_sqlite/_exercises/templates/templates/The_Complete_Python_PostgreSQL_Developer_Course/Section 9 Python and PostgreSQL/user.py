@@ -1,4 +1,4 @@
-from database _____ CursorFromConnectionPool
+____ database _____ CursorFromConnectionPool
 
 class User:
     ___ __init__(self, email, first_name, last_name, id_None):
@@ -17,7 +17,7 @@ class User:
                             (self.email, self.first_name, self.last_name))
 
     @classmethod
-    ___ load_from_db_by_email(cls, email):
+    ___ load______db_by_email(cls, email):
         w__ CursorFromConnectionPool() __ cursor:
             # Note the (email,) to make it a tuple!
             cursor.e..('S.. * F.. users W.. email=%s', (email,))

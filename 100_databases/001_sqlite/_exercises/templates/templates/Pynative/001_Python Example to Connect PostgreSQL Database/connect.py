@@ -1,6 +1,6 @@
-_____ psycopg2
+_____ ?
 ___
-    connection _ psycopg2.c..(user _ "syurskyi",
+    connection _ ?.c..(user _ "syurskyi",
                                   password _ "1234",
                                   host _ "127.0.0.1",
                                   port _ "5432",
@@ -15,7 +15,7 @@ ___
     record _ cursor.f_o..
     print("You are connected to - ", record,"\n")
 
-______ (E.., psycopg2.Er..) __ error :
+______ (E.., ?.Er..) __ error :
     print ("Error while connecting to PostgreSQL", error)
 f__
     #closing database connection.

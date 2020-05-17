@@ -1,5 +1,5 @@
-_____ psycopg2
-from config _____ config
+_____ ?
+____ c.. _____ c..
 
 
 ___ update_vendor(vendor_id, vendor_name):
@@ -11,9 +11,9 @@ ___ update_vendor(vendor_id, vendor_name):
     updated_rows _ 0
     ___
         # read database configuration
-        params _ config()
+        params _ c..()
         # connect to the PostgreSQL database
-        conn _ psycopg2.c..(**params)
+        conn _ ?.c..(**params)
         # create a new cursor
         cur _ conn.c..
         # execute the U..  statement
@@ -24,14 +24,14 @@ ___ update_vendor(vendor_id, vendor_name):
         conn.c..
         # Close communication with the PostgreSQL database
         cur.c..
-    ______ (E.., psycopg2.DatabaseError) __ error:
-        print(error)
+    ______ (E.., ?.DE..) __ error:
+        print ?
     f__
-        __ conn is not w..:
+        __ conn __ no. w..:
             conn.c..
 
     r_ updated_rows
 
 
-__ __name__ __ '__main__':
+__ _____ __ ______
     update_vendor('1', '3M Corp' )

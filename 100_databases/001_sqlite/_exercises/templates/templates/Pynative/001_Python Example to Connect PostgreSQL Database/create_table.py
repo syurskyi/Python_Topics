@@ -1,8 +1,8 @@
-_____ psycopg2
-from psycopg2 _____ Er..
+_____ ?
+____ ? _____ Er..
 
 ___
-    connection _ psycopg2.c..(user_"syurskyi",
+    connection _ ?.c..(user_"syurskyi",
                                   password_"1234",
                                   host_"127.0.0.1",
                                   port_"5432",
@@ -19,7 +19,7 @@ ___
     connection.c..
     print("Table created successfully in PostgreSQL ")
 
-______ (E.., psycopg2.DatabaseError) __ error:
+______ (E.., ?.DE..) __ error:
     print("Error while creating PostgreSQL table", error)
 f__
     # closing database connection.

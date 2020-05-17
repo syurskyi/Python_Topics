@@ -1,8 +1,8 @@
-_____ psycopg2
-from psycopg2 _____ Er..
+_____ ?
+____ ? _____ Er..
 
 ___
-    ps_connection _ psycopg2.c..(user_"syurskyi",
+    ps_connection _ ?.c..(user_"syurskyi",
                                      password_"1234",
                                      host_"127.0.0.1",
                                      port_"5432",
@@ -20,7 +20,7 @@ ___
         print("Name = ", row[1])
         print("Designation  = ", row[2])
 
-______ (E.., psycopg2.DatabaseError) __ error:
+______ (E.., ?.DE..) __ error:
     print("Error while connecting to PostgreSQL", error)
 
 f__

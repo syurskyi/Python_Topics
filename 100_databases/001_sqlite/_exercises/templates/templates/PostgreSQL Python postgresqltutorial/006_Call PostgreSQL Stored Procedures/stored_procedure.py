@@ -1,6 +1,6 @@
 #!/usr/bin/python
-_____ psycopg2
-from config _____ config
+_____ ?
+____ c.. _____ c..
 
 
 ___ get_parts(vendor_id):
@@ -8,9 +8,9 @@ ___ get_parts(vendor_id):
     conn _ w..
     ___
         # read database configuration
-        params _ config()
+        params _ c..()
         # connect to the PostgreSQL database
-        conn _ psycopg2.c..(**params)
+        conn _ ?.c..(**params)
         # create a cursor object for execution
         cur _ conn.c..
         # another way to call a stored procedure
@@ -18,17 +18,17 @@ ___ get_parts(vendor_id):
         cur.callproc('get_parts_by_vendor', (vendor_id,))
         # process the result set
         row _ cur.f_o..
-        w__ row is not w..:
+        w__ row __ no. w..:
             print(row)
             row _ cur.f_o..
         # close the communication with the PostgreSQL database server
         cur.c..
-    ______ (E.., psycopg2.DatabaseError) __ error:
-        print(error)
+    ______ (E.., ?.DE..) __ error:
+        print ?
     f__
-        __ conn is not w..:
+        __ conn __ no. w..:
             conn.c..
 
 
-__ __name__ __ '__main__':
+__ _____ __ ______
     get_parts(1)

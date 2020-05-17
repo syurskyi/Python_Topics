@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-_____ psycopg2
+_____ ?
 _____ ___
 
 ___ writeImage(data):
@@ -24,7 +24,7 @@ ___ writeImage(data):
 
 
 ___
-    con _ psycopg2.c..(database_'testdb', user_'syurskyi',
+    con _ ?.c..(database_'testdb', user_'syurskyi',
                     password_'1234')
 
     cur _ con.c..
@@ -33,7 +33,7 @@ ___
 
     writeImage(data)
 
-______ psycopg2.DatabaseError __ e:
+______ ?.DE.. __ e:
 
     print(f'Error {e}')
     ___.e.. 1)

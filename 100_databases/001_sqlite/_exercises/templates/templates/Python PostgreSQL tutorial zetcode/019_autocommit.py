@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-_____ psycopg2
+_____ ?
 _____ ___
 
 con _ w..
 
 ___
 
-    con _ psycopg2.c..(database_'testdb', user_'syurskyi',
+    con _ ?.c..(database_'testdb', user_'syurskyi',
                     password_'1234')
 
     con.autocommit _ True
@@ -25,7 +25,7 @@ ___
     cur.e..("I.. I.. friends(name) V.. ('Patrick')")
 
 
-______ psycopg2.DatabaseError __ e:
+______ ?.DE.. __ e:
 
     print(f'Error {e}')
     ___.e.. 1)

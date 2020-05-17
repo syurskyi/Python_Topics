@@ -1,7 +1,7 @@
-_____ psycopg2
+_____ ?
 
 ___
-   connection _ psycopg2.c..(user_"syurskyi",
+   connection _ ?.c..(user_"syurskyi",
                                   password_"1234",
                                   host_"127.0.0.1",
                                   port_"5432",
@@ -16,7 +16,7 @@ ___
    count _ cursor.rowcount
    print (count, "Record inserted successfully into mobile table")
 
-______ (E.., psycopg2.Er..) __ error :
+______ (E.., ?.Er..) __ error :
     __(connection):
         print("Failed to insert record into mobile table", error)
 

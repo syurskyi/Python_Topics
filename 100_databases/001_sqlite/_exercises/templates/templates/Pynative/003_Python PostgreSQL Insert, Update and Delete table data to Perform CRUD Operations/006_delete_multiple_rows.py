@@ -1,8 +1,8 @@
-_____ psycopg2
+_____ ?
 
 ___ deleteInBulk(records):
     ___
-        ps_connection _ psycopg2.c..(user_"syurskyi",
+        ps_connection _ ?.c..(user_"syurskyi",
                                          password_"1234",
                                          host_"127.0.0.1",
                                          port_"5432",
@@ -15,7 +15,7 @@ ___ deleteInBulk(records):
         row_count _ cursor.rowcount
         print(row_count, "Record Deleted")
 
-    ______ (E.., psycopg2.Er..) __ error:
+    ______ (E.., ?.Er..) __ error:
         print("Error while connecting to PostgreSQL", error)
 
     f__

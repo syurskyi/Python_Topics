@@ -1,13 +1,13 @@
 #!/usr/bin/python
-_____ psycopg2
-from config _____ config
+_____ ?
+____ c.. _____ c..
 
 ___ get_parts():
     """ query parts from the parts table """
     conn _ w..
     ___
-        params _ config()
-        conn _ psycopg2.c..(**params)
+        params _ c..()
+        conn _ ?.c..(**params)
         cur _ conn.c..
         cur.e..("S.. part_id, part_name F.. parts ORDER BY part_name")
         rows _ cur.f_a..
@@ -15,11 +15,11 @@ ___ get_parts():
         ___ row __ rows:
             print(row)
         cur.c..
-    ______ (E.., psycopg2.DatabaseError) __ error:
-        print(error)
+    ______ (E.., ?.DE..) __ error:
+        print ?
     f__
-        __ conn is not w..:
+        __ conn __ no. w..:
             conn.c..
 
-__ __name__ __ '__main__':
+__ _____ __ ______
     get_parts()

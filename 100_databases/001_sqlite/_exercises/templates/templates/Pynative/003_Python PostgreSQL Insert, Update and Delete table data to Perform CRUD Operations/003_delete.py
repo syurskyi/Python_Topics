@@ -1,9 +1,9 @@
-_____ psycopg2
+_____ ?
 
 
 ___ deleteData(mobileId):
     ___
-        connection _ psycopg2.c..(user_"syurskyi",
+        connection _ ?.c..(user_"syurskyi",
                                       password_"1234",
                                       host_"127.0.0.1",
                                       port_"5432",
@@ -18,7 +18,7 @@ ___ deleteData(mobileId):
         count _ cursor.rowcount
         print(count, "Record deleted successfully ")
 
-    ______ (E.., psycopg2.Er..) __ error:
+    ______ (E.., ?.Er..) __ error:
         print("Error in Delete operation", error)
 
     f__

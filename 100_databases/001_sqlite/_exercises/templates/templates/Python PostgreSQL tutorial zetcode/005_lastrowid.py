@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-_____ psycopg2
+_____ ?
 
-con _ psycopg2.c..(database_'testdb', user_'syurskyi',
+con _ ?.c..(database_'testdb', user_'syurskyi',
                        password_'1234')
 
 w__ con:
@@ -18,7 +18,7 @@ w__ con:
 
     last_row_id _ cur.f_o..[0]
 
-    print _*The last Id of the inserted row is {last_row_id}")
+    print _*The last Id of the inserted row __ {last_row_id}")
 
 
 # $ lastrowid.py

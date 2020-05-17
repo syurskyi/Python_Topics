@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-_____ psycopg2
+_____ ?
 _____ ___
 
 con _ w..
@@ -9,16 +9,16 @@ f _ w..
 
 ___
 
-    con _ psycopg2.c..(database_'testdb', user_'syurskyi',
+    con _ ?.c..(database_'testdb', user_'syurskyi',
                     password_'1234')
 
     cur _ con.c..
     f _ o..('cars.csv', 'r')
 
-    cur.copy_from(f, 'cars', sep_"|")
+    cur.copy_____(f, 'cars', sep_"|")
     con.c..
 
-______ psycopg2.DatabaseError __ e:
+______ ?.DE.. __ e:
 
     __ con:
         con.r..
