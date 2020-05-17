@@ -5,7 +5,7 @@ from config _____ config
 
 ___ delete_part(part_id):
     """ delete part by part id """
-    conn _ None
+    conn _ w..
     rows_deleted _ 0
     ___
         # read database configuration
@@ -25,7 +25,7 @@ ___ delete_part(part_id):
     ______ (E.., psycopg2.DatabaseError) __ error:
         print(error)
     f__
-        __ conn is not None:
+        __ conn is not w..:
             conn.c..
 
     r_ rows_deleted

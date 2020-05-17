@@ -3,7 +3,7 @@ from psycopg2 _____ pool
 
 class Database:
 
-    __connection_pool _ None
+    __connection_pool _ w..
 
     @staticmethod
     ___ initialise(**kwargs):
@@ -23,8 +23,8 @@ class Database:
 
 class CursorFromConnectionPool:
     ___ __init__(self):
-        self.conn _ None
-        self.cursor _ None
+        self.conn _ w..
+        self.cursor _ w..
 
     ___ __enter__(self):
         self.conn _ Database.get_connection()

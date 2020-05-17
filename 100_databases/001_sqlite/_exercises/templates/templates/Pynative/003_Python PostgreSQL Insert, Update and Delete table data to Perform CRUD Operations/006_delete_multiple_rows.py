@@ -15,7 +15,7 @@ ___ deleteInBulk(records):
         row_count _ cursor.rowcount
         print(row_count, "Record Deleted")
 
-    ______ (E.., psycopg2.Error) __ error:
+    ______ (E.., psycopg2.Er..) __ error:
         print("Error while connecting to PostgreSQL", error)
 
     f__

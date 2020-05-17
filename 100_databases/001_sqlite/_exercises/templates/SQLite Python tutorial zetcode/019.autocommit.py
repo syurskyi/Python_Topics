@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-_____ ? __ sqlite
+_____ ? __ ?
 _____ ___
 
-con _ None
+con _ w..
 
 ___
-    con _ sqlite.c..('ydb.db', isolation_level_None)
+    con _ ?.c..('ydb.db', isolation_level_None)
 
     cur _ con.c..
 
@@ -18,10 +18,10 @@ ___
     cur.e..("I.. I.. friends(name) V.. ('Jim')")
     cur.e..("I.. I.. friends(name) V.. ('Robert')")
 
-______ sqlite.Error __ e:
+______ ?.Er.. __ e:
 
     print(e)
-    ___.exit(1)
+    ___.e.. 1)
 
 f__
 

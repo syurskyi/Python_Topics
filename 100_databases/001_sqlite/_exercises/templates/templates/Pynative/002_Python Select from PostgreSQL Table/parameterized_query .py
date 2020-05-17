@@ -19,7 +19,7 @@ ___ getMobileDetails(mobileID):
             print("Model = ", row[1])
             print("Price  = ", row[2])
 
-    ______ (E.., psycopg2.Error) __ error:
+    ______ (E.., psycopg2.Er..) __ error:
         print("Error fetching data from PostgreSQL table", error)
 
     f__

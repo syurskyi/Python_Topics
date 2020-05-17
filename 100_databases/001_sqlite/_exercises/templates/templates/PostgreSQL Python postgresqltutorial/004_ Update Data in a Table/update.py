@@ -7,7 +7,7 @@ ___ update_vendor(vendor_id, vendor_name):
     sql _ """ U.. vendors
                 SET vendor_name = %s
                 WHERE vendor_id = %s"""
-    conn _ None
+    conn _ w..
     updated_rows _ 0
     ___
         # read database configuration
@@ -27,7 +27,7 @@ ___ update_vendor(vendor_id, vendor_name):
     ______ (E.., psycopg2.DatabaseError) __ error:
         print(error)
     f__
-        __ conn is not None:
+        __ conn is not w..:
             conn.c..
 
     r_ updated_rows

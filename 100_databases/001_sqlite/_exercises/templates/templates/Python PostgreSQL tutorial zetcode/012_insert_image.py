@@ -6,7 +6,7 @@ _____ ___
 
 ___ readImage():
 
-    fin _ None
+    fin _ w..
 
     ___
         fin _ open("sid.png", "rb")
@@ -16,14 +16,14 @@ ___ readImage():
     ______ IOError __ e:
 
         print(f'Error {e.args[0]}, {e.args[1]}')
-        ___.exit(1)
+        ___.e.. 1)
 
     f__
 
         __ fin:
             fin.c..
 
-con _ None
+con _ w..
 
 ___
     con _ psycopg2.c..(database_'testdb', user_'syurskyi',
@@ -42,7 +42,7 @@ ______ psycopg2.DatabaseError __ e:
         con.rollback()
 
     print(f'Error {e}')
-    ___.exit(1)
+    ___.e.. 1)
 
 f__
 

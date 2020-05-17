@@ -19,7 +19,7 @@ ___
         print("Model = ", row[1])
         print("Price  = ", row[2], "\n")
 
-______ (E.., psycopg2.Error) __ error:
+______ (E.., psycopg2.Er..) __ error:
     print("Error while fetching data from PostgreSQL", error)
 
 f__

@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-_____ ? __ sqlite
+_____ ? __ ?
 
 uId _ 1
 uPrice _ 62300
 
-con _ sqlite.c..('ydb.db')
+con _ ?.c..('ydb.db')
 
 with con:
 

@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-_____ ? __ sqlite
+_____ ? __ ?
 
-con _ sqlite.c..('ydb.db')
+con _ ?.c..('ydb.db')
 
 with con:   # With the with keyword, the Python interpreter automatically releases the resources.
             # It also provides error handling.

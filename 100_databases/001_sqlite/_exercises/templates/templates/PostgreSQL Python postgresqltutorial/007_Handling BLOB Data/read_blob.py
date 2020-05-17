@@ -4,7 +4,7 @@ from config _____ config
 
 ___ read_blob(part_id, path_to_dir):
     """ read BLOB data from a table """
-    conn _ None
+    conn _ w..
     ___
         # read database configuration
         params _ config()
@@ -26,7 +26,7 @@ ___ read_blob(part_id, path_to_dir):
     ______ (E.., psycopg2.DatabaseError) __ error:
         print(error)
     f__
-        __ conn is not None:
+        __ conn is not w..:
             conn.c..
 
 

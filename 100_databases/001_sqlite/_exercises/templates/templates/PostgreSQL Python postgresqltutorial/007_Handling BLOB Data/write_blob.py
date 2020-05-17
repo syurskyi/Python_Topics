@@ -5,7 +5,7 @@ from config _____ config
 
 ___ write_blob(part_id, path_to_file, file_extension):
     """ insert a BLOB into a table """
-    conn _ None
+    conn _ w..
     ___
         # read data from a picture
         drawing _ open(path_to_file, 'rb').read()
@@ -26,7 +26,7 @@ ___ write_blob(part_id, path_to_file, file_extension):
     ______ (E.., psycopg2.DatabaseError) __ error:
         print(error)
     f__
-        __ conn is not None:
+        __ conn is not w..:
             conn.c..
 
 

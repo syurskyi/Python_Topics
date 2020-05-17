@@ -16,7 +16,7 @@ ___ bulkInsert(records):
         connection.c..
         print(cursor.rowcount, "Record inserted successfully into mobile table")
 
-    ______ (E.., psycopg2.Error) __ error:
+    ______ (E.., psycopg2.Er..) __ error:
         print("Failed inserting record into mobile table {}".f..(error))
 
     f__

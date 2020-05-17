@@ -4,7 +4,7 @@ from config _____ config
 
 ___ get_parts():
     """ query parts from the parts table """
-    conn _ None
+    conn _ w..
     ___
         params _ config()
         conn _ psycopg2.c..(**params)
@@ -18,7 +18,7 @@ ___ get_parts():
     ______ (E.., psycopg2.DatabaseError) __ error:
         print(error)
     f__
-        __ conn is not None:
+        __ conn is not w..:
             conn.c..
 
 __ __name__ == '__main__':

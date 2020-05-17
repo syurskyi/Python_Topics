@@ -18,7 +18,7 @@ ___
    mobile_records_two _ cursor.f_o..
    print("Printing second record", mobile_records_two)
 
-______ (E.., psycopg2.Error) __ error :
+______ (E.., psycopg2.Er..) __ error :
     print ("Error while getting data from PostgreSQL", error)
 
 f__

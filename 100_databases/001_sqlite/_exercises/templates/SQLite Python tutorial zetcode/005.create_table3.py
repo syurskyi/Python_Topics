@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-_____ ? __ sqlite
+_____ ? __ ?
 _____ ___
 
-con _ None
+con _ w..
 
 ___
-    con _ sqlite.c..('ydb.db')
+    con _ ?.c..('ydb.db')
 
     cur _ con.c..
 
@@ -26,13 +26,13 @@ ___
 
     con.c..
 
-______ sqlite.Error __ e:
+______ ?.Er.. __ e:
 
     __ con:
         con.rollback()
 
     print(f"Error {e.args[0]}")
-    ___.exit(1)
+    ___.e.. 1)
 
 f__
 

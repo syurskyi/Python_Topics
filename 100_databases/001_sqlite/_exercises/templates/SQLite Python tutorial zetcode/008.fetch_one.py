@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-_____ ? __ sqlite
+_____ ? __ ?
 
-con _ sqlite.c..('ydb.db')
+con _ ?.c..('ydb.db')
 
 with con:
 
@@ -14,7 +14,7 @@ with con:
 
         row _ cur.f_o..
 
-        __ row == None:
+        __ row == w..:
             break
 
         print(f"{row[0]} {row[1]} {row[2]}")

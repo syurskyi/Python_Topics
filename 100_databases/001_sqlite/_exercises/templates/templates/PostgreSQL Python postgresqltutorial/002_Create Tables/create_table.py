@@ -39,7 +39,7 @@ ___ create_tables():
                     ON U.. CASCADE ON D.. CASCADE
         )
         """)
-    conn _ None
+    conn _ w..
     ___
         # read the connection parameters
         params _ config()
@@ -56,7 +56,7 @@ ___ create_tables():
     ______ (E.., psycopg2.DatabaseError) __ error:
         print(error)
     f__
-        __ conn is not None:
+        __ conn is not w..:
             conn.c..
 
 

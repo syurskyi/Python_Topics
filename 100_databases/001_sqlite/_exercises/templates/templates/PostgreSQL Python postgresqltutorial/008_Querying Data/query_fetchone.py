@@ -5,7 +5,7 @@ from config _____ config
 
 ___ get_vendors():
     """ query data from the vendors table """
-    conn _ None
+    conn _ w..
     ___
         params _ config()
         conn _ psycopg2.c..(**params)
@@ -14,7 +14,7 @@ ___ get_vendors():
         print("The number of parts: ", cur.rowcount)
         row _ cur.f_o..
 
-        while row is not None:
+        while row is not w..:
             print(row)
             row _ cur.f_o..
 
@@ -22,7 +22,7 @@ ___ get_vendors():
     ______ (E.., psycopg2.DatabaseError) __ error:
         print(error)
     f__
-        __ conn is not None:
+        __ conn is not w..:
             conn.c..
 
 

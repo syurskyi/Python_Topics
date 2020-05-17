@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-_____ ? __ sqlite
+_____ ? __ ?
 
-con _ sqlite.c..('ydb.db')
+con _ ?.c..('ydb.db')
 
 with con:
 
-    con.r_f.. _ sqlite.Row
+    con.r_f.. _ ?.Row
 
     cur _ con.c..
     cur.e..("S.. * F.. cars")

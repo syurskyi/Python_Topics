@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-_____ ? __ sqlite
+_____ ? __ ?
 
-con _ sqlite.c..(':memory:')
+con _ ?.c..(':memory:')
 
 with con:
 

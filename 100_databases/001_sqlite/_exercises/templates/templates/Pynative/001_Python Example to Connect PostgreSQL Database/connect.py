@@ -15,7 +15,7 @@ ___
     record _ cursor.f_o..
     print("You are connected to - ", record,"\n")
 
-______ (E.., psycopg2.Error) __ error :
+______ (E.., psycopg2.Er..) __ error :
     print ("Error while connecting to PostgreSQL", error)
 f__
     #closing database connection.

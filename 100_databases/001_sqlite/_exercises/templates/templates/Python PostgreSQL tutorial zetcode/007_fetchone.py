@@ -15,7 +15,7 @@ with con:
 
         row _ cur.f_o..
 
-        __ row == None:
+        __ row == w..:
             break
 
         print(f"{row[0]} {row[1]} {row[2]}")

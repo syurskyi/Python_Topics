@@ -9,7 +9,7 @@ ___ add_part(part_name, vendor_list):
     # statement for inserting a new row into the vendor_parts table
     assign_vendor _ "I.. I.. vendor_parts(vendor_id,part_id) V..(%s,%s)"
 
-    conn _ None
+    conn _ w..
     ___
         params _ config()
         conn _ psycopg2.c..(**params)
@@ -27,7 +27,7 @@ ___ add_part(part_name, vendor_list):
     ______ (E.., psycopg2.DatabaseError) __ error:
         print(error)
     f__
-        __ conn is not None:
+        __ conn is not w..:
             conn.c..
 
 

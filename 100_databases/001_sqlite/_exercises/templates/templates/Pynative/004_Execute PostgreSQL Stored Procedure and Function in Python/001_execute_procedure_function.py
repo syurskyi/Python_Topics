@@ -1,5 +1,5 @@
 _____ psycopg2
-from psycopg2 _____ Error
+from psycopg2 _____ Er..
 
 ___
     ps_connection _ psycopg2.c..(user_"syurskyi",

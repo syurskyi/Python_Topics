@@ -4,8 +4,8 @@
 _____ psycopg2
 _____ ___
 
-con _ None
-f _ None
+con _ w..
+f _ w..
 
 ___
 
@@ -24,7 +24,7 @@ ______ psycopg2.DatabaseError __ e:
         con.rollback()
 
     print(f'Error {e}')
-    ___.exit(1)
+    ___.e.. 1)
 
 ______ IOError __ e:
 
@@ -32,7 +32,7 @@ ______ IOError __ e:
         con.rollback()
 
     print(f'Error {e}')
-    ___.exit(1)
+    ___.e.. 1)
 
 f__
 

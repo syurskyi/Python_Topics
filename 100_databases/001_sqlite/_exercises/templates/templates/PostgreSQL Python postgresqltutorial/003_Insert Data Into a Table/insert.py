@@ -6,8 +6,8 @@ ___ insert_vendor(vendor_name):
     """ insert a new vendor into the vendors table """
     sql _ """I.. I.. vendors(vendor_name)
              V..(%s) RETURNING vendor_id;"""
-    conn _ None
-    vendor_id _ None
+    conn _ w..
+    vendor_id _ w..
     ___
         # read database configuration
         params _ config()
@@ -26,7 +26,7 @@ ___ insert_vendor(vendor_name):
     ______ (E.., psycopg2.DatabaseError) __ error:
         print(error)
     f__
-        __ conn is not None:
+        __ conn is not w..:
             conn.c..
 
     r_ vendor_id
@@ -35,7 +35,7 @@ ___ insert_vendor(vendor_name):
 ___ insert_vendor_list(vendor_list):
     """ insert multiple vendors into the vendors table  """
     sql _ "I.. I.. vendors(vendor_name) V..(%s)"
-    conn _ None
+    conn _ w..
     ___
         # read database configuration
         params _ config()
@@ -52,7 +52,7 @@ ___ insert_vendor_list(vendor_list):
     ______ (E.., psycopg2.DatabaseError) __ error:
         print(error)
     f__
-        __ conn is not None:
+        __ conn is not w..:
             conn.c..
 
 

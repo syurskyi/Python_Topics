@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-_____ ? __ sqlite
+_____ ? __ ?
 
 cars _ (
     (1, 'Audi', 52643),
@@ -22,7 +22,7 @@ ___ writeData(data):
         f.write(data)
 
 
-con _ sqlite.c..(':memory:')
+con _ ?.c..(':memory:')
 
 with con:
 

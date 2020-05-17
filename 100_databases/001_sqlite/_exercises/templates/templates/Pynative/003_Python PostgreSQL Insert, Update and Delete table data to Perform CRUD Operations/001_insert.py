@@ -16,7 +16,7 @@ ___
    count _ cursor.rowcount
    print (count, "Record inserted successfully into mobile table")
 
-______ (E.., psycopg2.Error) __ error :
+______ (E.., psycopg2.Er..) __ error :
     __(connection):
         print("Failed to insert record into mobile table", error)
 

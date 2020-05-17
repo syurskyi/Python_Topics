@@ -13,7 +13,7 @@ ___ iter_row(cursor, size_10):
 
 ___ get_part_vendors():
     """ query part and vendor data from multiple tables"""
-    conn _ None
+    conn _ w..
     ___
         params _ config()
         conn _ psycopg2.c..(**params)
@@ -31,7 +31,7 @@ ___ get_part_vendors():
     ______ (E.., psycopg2.DatabaseError) __ error:
         print(error)
     f__
-        __ conn is not None:
+        __ conn is not w..:
             conn.c..
 
 

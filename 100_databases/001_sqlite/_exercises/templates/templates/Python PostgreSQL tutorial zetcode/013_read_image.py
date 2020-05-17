@@ -6,7 +6,7 @@ _____ ___
 
 ___ writeImage(data):
 
-    fout _ None
+    fout _ w..
 
     ___
         fout _ open('sid2.png', 'wb')
@@ -15,7 +15,7 @@ ___ writeImage(data):
     ______ IOError __ e:
 
         print(f"Error @")
-        ___.exit(1)
+        ___.e.. 1)
 
     f__
 
@@ -36,7 +36,7 @@ ___
 ______ psycopg2.DatabaseError __ e:
 
     print(f'Error {e}')
-    ___.exit(1)
+    ___.e.. 1)
 
 f__
 

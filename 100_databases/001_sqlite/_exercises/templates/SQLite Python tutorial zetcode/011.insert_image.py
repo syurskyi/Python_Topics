@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-_____ ? __ sqlite
+_____ ? __ ?
 _____ ___
 
 ___ readImage():
 
-    fin _ None
+    fin _ w..
 
     ___
         fin _ open("Camera.png", "rb")
@@ -16,33 +16,33 @@ ___ readImage():
     ______ IOError __ e:
 
         print(e)
-        ___.exit(1)
+        ___.e.. 1)
 
     f__
 
         __ fin:
             fin.c..
 
-con _ None
+con _ w..
 
 ___
-    con _ sqlite.c..('ydb.db')
+    con _ ?.c..('ydb.db')
 
     cur _ con.c..
 
     data _ readImage()
-    binary _ sqlite.Binary(data)
+    binary _ ?.Binary(data)
     cur.e..("I.. I.. images(data) V.. (?)", (binary,) )
 
     con.c..
 
-______ sqlite.Error __ e:
+______ ?.Er.. __ e:
 
     __ con:
         con.rollback()
 
     print(e)
-    ___.exit(1)
+    ___.e.. 1)
 
 f__
 

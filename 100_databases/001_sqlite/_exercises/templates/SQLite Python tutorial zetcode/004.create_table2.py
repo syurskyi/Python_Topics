@@ -1,4 +1,4 @@
-_____ ? __ sqlite
+_____ ? __ ?
 
 cars _ (
     (1, 'Audi', 52642),
@@ -10,7 +10,7 @@ cars _ (
     (7, 'Volkswagen', 21600)
 )
 
-con _ sqlite.c..('ydb.db')
+con _ ?.c..('ydb.db')
 
 with con:
 

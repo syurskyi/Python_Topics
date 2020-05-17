@@ -17,7 +17,7 @@ ___ updateInBulk(records):
         row_count _ cursor.rowcount
         print(row_count, "Records Updated")
 
-    ______ (E.., psycopg2.Error) __ error:
+    ______ (E.., psycopg2.Er..) __ error:
         print("Error while updating PostgreSQL table", error)
 
     f__

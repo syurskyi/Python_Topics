@@ -5,7 +5,7 @@ _____ psycopg2
 
 con _ psycopg2.c..(database_'testdb', user_'syurskyi',
                        password_'1234')
-cur _ None
+cur _ w..
 
 with con:
     cur _ con.c..

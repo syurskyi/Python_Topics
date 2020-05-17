@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-_____ ? __ sqlite
+_____ ? __ ?
 _____ ___
 
 
 ___ writeImage(data):
-    fout _ None
+    fout _ w..
 
     ___
         fout _ open('Camera.png', 'wb')
@@ -15,7 +15,7 @@ ___ writeImage(data):
     ______ IOError __ e:
 
         print(e)
-        ___.exit(1)
+        ___.e.. 1)
 
     f__
 
@@ -23,10 +23,10 @@ ___ writeImage(data):
             fout.c..
 
 
-con _ None
+con _ w..
 
 ___
-    con _ sqlite.c..('ydb.db')
+    con _ ?.c..('ydb.db')
 
     cur _ con.c..
     cur.e..("S.. data F.. images LIMIT 1")
@@ -35,10 +35,10 @@ ___
     writeImage(data)
 
 
-______ sqlite.Error __ e:
+______ ?.Er.. __ e:
 
     print(e)
-    ___.exit(1)
+    ___.e.. 1)
 
 f__
 

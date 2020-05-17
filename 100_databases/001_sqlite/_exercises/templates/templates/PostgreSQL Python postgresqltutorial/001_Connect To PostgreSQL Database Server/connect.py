@@ -5,7 +5,7 @@ from config _____ config
 
 ___ c..():
     """ Connect to the PostgreSQL database server """
-    conn _ None
+    conn _ w..
     ___
         # read connection parameters
         params _ config()
@@ -30,7 +30,7 @@ ___ c..():
     ______ (E.., psycopg2.DatabaseError) __ error:
         print(error)
     f__
-        __ conn is not None:
+        __ conn is not w..:
             conn.c..
             print('Database connection closed.')
 

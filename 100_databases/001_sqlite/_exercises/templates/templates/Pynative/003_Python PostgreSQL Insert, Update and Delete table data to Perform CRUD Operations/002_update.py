@@ -29,7 +29,7 @@ ___ updateTable(mobileId, price):
         record _ cursor.f_o..
         print(record)
 
-    ______ (E.., psycopg2.Error) __ error:
+    ______ (E.., psycopg2.Er..) __ error:
         print("Error in update operation", error)
 
     f__

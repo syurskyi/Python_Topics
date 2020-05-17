@@ -18,7 +18,7 @@ ___ deleteData(mobileId):
         count _ cursor.rowcount
         print(count, "Record deleted successfully ")
 
-    ______ (E.., psycopg2.Error) __ error:
+    ______ (E.., psycopg2.Er..) __ error:
         print("Error in Delete operation", error)
 
     f__

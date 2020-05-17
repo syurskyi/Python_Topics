@@ -4,7 +4,7 @@
 _____ psycopg2
 _____ ___
 
-con _ None
+con _ w..
 
 ___
 
@@ -28,7 +28,7 @@ ______ psycopg2.DatabaseError __ e:
         con.rollback()
 
     print('Error {e}')
-    ___.exit(1)
+    ___.e.. 1)
 
 
 f__
