@@ -8,7 +8,7 @@ ___ readData():
 
     f _ open('cars.sql', 'r')
 
-    with f:
+    w__ f:
 
         data _ f.read()
 
@@ -17,7 +17,7 @@ ___ readData():
 
 con _ ?.c..(':memory:')
 
-with con:
+w__ con:
 
     cur _ con.c..
 

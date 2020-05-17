@@ -18,13 +18,13 @@ ___ writeData(data):
 
     f _ open('cars.sql', 'w')
 
-    with f:
+    w__ f:
         f.write(data)
 
 
 con _ ?.c..(':memory:')
 
-with con:
+w__ con:
 
     cur _ con.c..
 

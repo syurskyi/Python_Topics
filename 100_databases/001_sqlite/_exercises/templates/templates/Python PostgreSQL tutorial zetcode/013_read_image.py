@@ -14,7 +14,7 @@ ___ writeImage(data):
 
     ______ IOError __ e:
 
-        print(f"Error @")
+        print _*Error @")
         ___.e.. 1)
 
     f__

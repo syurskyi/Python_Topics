@@ -5,7 +5,7 @@ _____ ? __ ?
 
 con _ ?.c..('ydb.db')
 
-with con:
+w__ con:
 
     cur _ con.c..
 
@@ -14,4 +14,4 @@ with con:
     data _ cur.f_a..
 
     ___ d __ data:
-        print(f"{d[0]} {d[1]} {d[2]}")
+        print _*{d[0]} {d[1]} {d[2]}")

@@ -12,7 +12,7 @@ cars _ (
 
 con _ ?.c..('ydb.db')
 
-with con:
+w__ con:
 
     cur _ con.c..
 

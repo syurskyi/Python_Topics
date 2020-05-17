@@ -5,7 +5,7 @@ _____ ? __ ?
 
 con _ ?.c..(':memory:')
 
-with con:
+w__ con:
 
     cur _ con.c..
     cur.e..("C.. T.. friends(id IN.. P.. K.., name T...);")
@@ -16,4 +16,4 @@ with con:
 
     last_row_id _ cur.lastrowid
 
-    print(f"The last Id of the inserted row is {last_row_id}")
+    print _*The last Id of the inserted row is {last_row_id}")

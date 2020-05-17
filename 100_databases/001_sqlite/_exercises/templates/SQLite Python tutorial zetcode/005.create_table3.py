@@ -31,7 +31,7 @@ ______ ?.Er.. __ e:
     __ con:
         con.rollback()
 
-    print(f"Error {e.args[0]}")
+    print _*Error {e.args[0]}")
     ___.e.. 1)
 
 f__

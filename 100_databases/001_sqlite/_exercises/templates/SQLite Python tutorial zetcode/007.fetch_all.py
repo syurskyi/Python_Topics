@@ -5,7 +5,7 @@ _____ ? __ ?
 
 con _ ?.c..('ydb.db')
 
-with con:
+w__ con:
 
     cur _ con.c..
     cur.e..("S.. * F.. cars")
@@ -13,4 +13,4 @@ with con:
     rows _ cur.f_a..
 
     ___ row __ rows:
-        print(f"{row[0]} {row[1]} {row[2]}")
+        print _*{row[0]} {row[1]} {row[2]}")

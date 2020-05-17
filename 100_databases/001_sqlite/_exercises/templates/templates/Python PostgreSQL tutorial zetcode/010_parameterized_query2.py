@@ -8,7 +8,7 @@ uid _ 3
 con _ psycopg2.c..(database_'testdb', user_'syurskyi',
                     password_'1234')
 
-with con:
+w__ con:
 
     cur _ con.c..
 

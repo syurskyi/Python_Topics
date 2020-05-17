@@ -5,7 +5,7 @@ _____ ? __ ?
 
 con _ ?.c..('ydb.db')
 
-with con:
+w__ con:
 
     cur _ con.c..
     cur.e..("S.. name F.. sqlite_master WHERE type='table'")

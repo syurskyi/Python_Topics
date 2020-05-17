@@ -8,9 +8,9 @@ uPrice _ 62300
 
 con _ ?.c..('ydb.db')
 
-with con:
+w__ con:
 
     cur _ con.c..
     cur.e..("U.. cars SET price=? WHERE id=?", (uPrice, uId))
 
-    print(f"Number of rows updated: {cur.rowcount}")
+    print _*Number of rows updated: {cur.rowcount}")

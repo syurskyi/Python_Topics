@@ -6,7 +6,7 @@ _____ psycopg2
 con _ psycopg2.c..(database_'testdb', user_'syursky',
                     password_'1234')
 
-with con:
+w__ con:
 
     cur _ con.c..
     cur.e..("S.. * F.. cars")
@@ -14,7 +14,7 @@ with con:
     rows _ cur.f_a..
 
     ___ row __ rows:
-        print(f"{row[0]} {row[1]} {row[2]}")
+        print _*{row[0]} {row[1]} {row[2]}")
 
 
 

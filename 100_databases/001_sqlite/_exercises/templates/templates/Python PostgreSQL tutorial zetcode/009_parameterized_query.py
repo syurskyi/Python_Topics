@@ -12,12 +12,12 @@ uPrice _ 62300
 con _ psycopg2.c..(database_'testdb', user_'syurskyi',
                     password_'1234')
 
-with con:
+w__ con:
 
     cur _ con.c..
     cur.e..("U.. cars SET price=%s WHERE id=%s", (uPrice, uId))
 
-    print(f"Number of rows updated: {cur.rowcount}")
+    print _*Number of rows updated: {cur.rowcount}")
 
 
 #$ parameterized_query.py

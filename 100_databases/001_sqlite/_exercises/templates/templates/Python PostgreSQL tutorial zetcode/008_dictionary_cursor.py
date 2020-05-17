@@ -7,7 +7,7 @@ _____ psycopg2.extras
 con _ psycopg2.c..(database_'testdb', user_'syurskyi',
                     password_'1234')
 
-with con:
+w__ con:
 
     cursor _ con.cursor(cursor_factory_psycopg2.extras.DictCursor)
     cursor.e..("S.. * F.. cars")
@@ -15,4 +15,4 @@ with con:
     rows _ cursor.f_a..
 
     ___ row __ rows:
-        print(f"{row['id']} {row['name']} {row['price']}")
+        print _*{row['id']} {row['name']} {row['price']}")

@@ -5,7 +5,7 @@ _____ ? __ ?
 
 con _ ?.c..('ydb.db')
 
-with con:
+w__ con:
 
     con.r_f.. _ ?.Row
 
@@ -15,4 +15,4 @@ with con:
     rows _ cur.f_a..
 
     ___ row __ rows:
-        print(f"{row['id']} {row['name']} {row['price']}")
+        print _*{row['id']} {row['name']} {row['price']}")

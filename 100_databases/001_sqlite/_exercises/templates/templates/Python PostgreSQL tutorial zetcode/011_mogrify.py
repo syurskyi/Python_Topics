@@ -7,7 +7,7 @@ con _ psycopg2.c..(database_'testdb', user_'syurskyi',
                        password_'1234')
 cur _ w..
 
-with con:
+w__ con:
     cur _ con.c..
 
     print(cur.mogrify("S.. name, price F.. cars WHERE id=%s", (2,)))
