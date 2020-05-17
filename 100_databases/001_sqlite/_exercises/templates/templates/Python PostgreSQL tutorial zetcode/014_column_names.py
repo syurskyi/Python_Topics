@@ -12,7 +12,7 @@ w__ con:
 
     cur.e..('S.. * F.. cars')
 
-    col_names _ [cn[0] ___ cn __ cur.description]
+    col_names _ [cn[0] ___ cn __ cur.d..]
     rows _ cur.f_a..
 
     print(f'{col_names[0]} {col_names[1]} {col_names[2]}')
