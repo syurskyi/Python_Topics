@@ -1,17 +1,17 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
-_____ ? __ ?
-
-con _ ?.c..('ydb.db')
-
-w__ con:
-
-    cur _ con.c..
-
-    cur.e..('PRAGMA table_info(cars)')
-
-    data _ cur.f_a..
-
-    ___ d __ data:
-        print _*{d[0]} {d[1]} {d[2]}")
+# #!/usr/bin/env python3
+# # -*- coding: utf-8 -*-
+#
+# _____ ? __ ?
+#
+# con _ ?.c.. ydb.db
+#
+# w__ ?
+#
+#     cur _ ?.c..
+#
+#     ?.e.. 'PRAGMA table_info(cars)'
+#
+#     data _ ?.f_a..
+#
+#     ___ d __ ?
+#         print _* ? 0 ? 1 ? 2
