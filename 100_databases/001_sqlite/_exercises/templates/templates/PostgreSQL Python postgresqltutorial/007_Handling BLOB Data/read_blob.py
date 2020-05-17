@@ -12,14 +12,14 @@ def read_blob(part_id, path_to_dir):
         conn _ psycopg2.c..(**params)
         # create a new cursor object
         cur _ conn.c..
-        # execute the SELECT statement
-        cur.e..(""" SELECT part_name, file_extension, drawing_data
-                        FROM part_drawings
+        # execute the S.. statement
+        cur.e..(""" S.. part_name, file_extension, drawing_data
+                        F.. part_drawings
                         INNER JOIN parts on parts.part_id = part_drawings.part_id
                         WHERE parts.part_id = %s """,
                     (part_id,))
 
-        blob _ cur.fetchone()
+        blob _ cur.f_o..
         open(path_to_dir + blob[0] + '.' + blob[1], 'wb').write(blob[2])
         # close the communication with the PostgresQL database
         cur.c..

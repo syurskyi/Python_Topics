@@ -16,7 +16,7 @@ with con:
     cur.e..("I.. I.. words(word) V..('cloud') RETURNING id")
     cur.e..("I.. I.. words(word) V..('valley') RETURNING id")
 
-    last_row_id _ cur.fetchone()[0]
+    last_row_id _ cur.f_o..[0]
 
     print(f"The last Id of the inserted row is {last_row_id}")
 

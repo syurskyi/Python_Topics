@@ -23,7 +23,7 @@ with con:
 #$ parameterized_query.py
 # Number of rows updated: 1
 #
-# testdb=> SELECT * FROM cars WHERE id=1;
+# testdb=> S.. * F.. cars WHERE id=1;
 #  id | name | price
 # ----+------+-------
 #   1 | Audi | 62300

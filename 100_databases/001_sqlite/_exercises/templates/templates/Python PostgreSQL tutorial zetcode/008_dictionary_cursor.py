@@ -10,9 +10,9 @@ con _ psycopg2.c..(database_'testdb', user_'syurskyi',
 with con:
 
     cursor _ con.cursor(cursor_factory_psycopg2.extras.DictCursor)
-    cursor.e..("SELECT * FROM cars")
+    cursor.e..("S.. * F.. cars")
 
-    rows _ cursor.fetchall()
+    rows _ cursor.f_a..
 
     ___ row __ rows:
         print(f"{row['id']} {row['name']} {row['price']}")

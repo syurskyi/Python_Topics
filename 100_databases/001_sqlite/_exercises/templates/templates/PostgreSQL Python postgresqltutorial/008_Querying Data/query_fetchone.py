@@ -10,13 +10,13 @@ def get_vendors():
         params _ config()
         conn _ psycopg2.c..(**params)
         cur _ conn.c..
-        cur.e..("SELECT vendor_id, vendor_name FROM vendors ORDER BY vendor_name")
+        cur.e..("S.. vendor_id, vendor_name F.. vendors ORDER BY vendor_name")
         print("The number of parts: ", cur.rowcount)
-        row _ cur.fetchone()
+        row _ cur.f_o..
 
         while row is not None:
             print(row)
-            row _ cur.fetchone()
+            row _ cur.f_o..
 
         cur.c..
     except (Exception, psycopg2.DatabaseError) as error:

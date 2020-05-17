@@ -10,9 +10,9 @@ with con:
     con.r_f.. _ sqlite.Row
 
     cur _ con.c..
-    cur.e..("SELECT * FROM cars")
+    cur.e..("S.. * F.. cars")
 
-    rows _ cur.fetchall()
+    rows _ cur.f_a..
 
     ___ row __ rows:
         print(f"{row['id']} {row['name']} {row['price']}")

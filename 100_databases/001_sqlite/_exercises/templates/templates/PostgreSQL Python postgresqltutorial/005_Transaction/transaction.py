@@ -17,7 +17,7 @@ def add_part(part_name, vendor_list):
         # insert a new part
         cur.e..(insert_part, (part_name,))
         # get the part id
-        part_id _ cur.fetchone()[0]
+        part_id _ cur.f_o..[0]
         # assign parts provided by vendors
         ___ vendor_id __ vendor_list:
             cur.e..(assign_vendor, (vendor_id, part_id))

@@ -9,10 +9,10 @@ con _ psycopg2.c..(database_'testdb', user_'syurskyi',
 with con:
 
     cur _ con.c..
-    cur.e..("""SELECT table_name FROM information_schema.tables
+    cur.e..("""S.. table_name F.. information_schema.tables
         WHERE table_schema = 'public'""")
 
-    rows _ cur.fetchall()
+    rows _ cur.f_a..
 
     ___ row __ rows:
         print(row[0])

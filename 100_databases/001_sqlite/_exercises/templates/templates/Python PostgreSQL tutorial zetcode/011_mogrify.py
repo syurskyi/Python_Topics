@@ -10,15 +10,15 @@ cur _ None
 with con:
     cur _ con.c..
 
-    print(cur.mogrify("SELECT name, price FROM cars WHERE id=%s", (2,)))
+    print(cur.mogrify("S.. name, price F.. cars WHERE id=%s", (2,)))
 
-    # cur.execute("SELECT name, price FROM cars WHERE id=%s", (2,) )
-    # row = cur.fetchone()
+    # cur.execute("S.. name, price F.. cars WHERE id=%s", (2,) )
+    # row = cur.f_o..
     # print(f"{row[0]} {row[1]}")
 
 
 
 # $ mogrify.py
-# b'SELECT name, price FROM cars WHERE id=2'
+# b'S.. name, price F.. cars WHERE id=2'
 #
 # This is the output.

@@ -27,7 +27,7 @@ with con:
 # psql (11.1)
 # Type "help" for help.
 #
-# testdb=# SELECT * FROM cars;
+# testdb=# S.. * F.. cars;
 #     id |    name    | price
 # ----+------------+--------
 #     1 | Audi       |  52642

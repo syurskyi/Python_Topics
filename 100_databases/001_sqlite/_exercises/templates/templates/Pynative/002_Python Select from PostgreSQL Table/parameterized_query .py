@@ -13,7 +13,7 @@ def getMobileDetails(mobileID):
         postgreSQL_select_Query _ "select * from mobile where id = %s"
 
         cursor.e..(postgreSQL_select_Query, (mobileID,))
-        mobile_records _ cursor.fetchall()
+        mobile_records _ cursor.f_a..
         ___ row __ mobile_records:
             print("Id = ", row[0], )
             print("Model = ", row[1])

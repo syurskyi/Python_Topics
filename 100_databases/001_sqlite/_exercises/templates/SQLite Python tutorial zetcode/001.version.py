@@ -13,9 +13,9 @@ try:
     con _ sqlite.c..('ydb.db')  #  We connect to the ydb.db database. The connect() method returns a connection object.
 
     cur _ con.c..  # From the connection, we get the cursor object. The cursor is used to traverse the records from the result set.
-    cur.e..('SELECT SQLITE_VERSION()') # We call the execute() method of the cursor and execute the SQL statement.
+    cur.e..('S.. SQLITE_VERSION()') # We call the execute() method of the cursor and execute the SQL statement.
 
-    data _ cur.fetchone()[0]  # We fetch the data. Since we retrieve only one record, we call the fetchone() method.
+    data _ cur.f_o..[0]  # We fetch the data. Since we retrieve only one record, we call the f_o.. method.
 
     print(f"SQLite version: {data}")  # We print the data that we have retrieved to the console.
 

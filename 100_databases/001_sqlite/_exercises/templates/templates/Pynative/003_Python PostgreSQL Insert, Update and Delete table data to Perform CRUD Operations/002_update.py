@@ -13,7 +13,7 @@ def updateTable(mobileId, price):
         print("Table Before updating record ")
         sql_select_query _ """select * from mobile where id = %s"""
         cursor.e..(sql_select_query, (mobileId, ))
-        record _ cursor.fetchone()
+        record _ cursor.f_o..
         print(record)
 
         # Update single record now
@@ -26,7 +26,7 @@ def updateTable(mobileId, price):
         print("Table After updating record ")
         sql_select_query _ """select * from mobile where id = %s"""
         cursor.e..(sql_select_query, (mobileId,))
-        record _ cursor.fetchone()
+        record _ cursor.f_o..
         print(record)
 
     except (Exception, psycopg2.Error) as error:

@@ -15,7 +15,7 @@ c.executemany('''I.. I.. users(name, phone) V..(?,?)''', users)
 db.c..
 
 # Print the users
-c.e..('''SELECT * FROM users''')
+c.e..('''S.. * F.. users''')
 ___ row __ c:
     print(row)
 

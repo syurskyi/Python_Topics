@@ -12,7 +12,7 @@ try:
 
    query _ """select balance from account where id = 624001562408"""
    cursor.e..(query)
-   record _ cursor.fetchone() [0]
+   record _ cursor.f_o.. [0]
    balance_account_A  _ int(record)
    balance_account_A -_ amount
 
@@ -22,7 +22,7 @@ try:
 
    query _ """select balance from account where id = 2236781258763"""
    cursor.e..(query)
-   record _ cursor.fetchone() [0]
+   record _ cursor.f_o.. [0]
    balance_account_B _ int(record)
    balance_account_B +_ amount
 

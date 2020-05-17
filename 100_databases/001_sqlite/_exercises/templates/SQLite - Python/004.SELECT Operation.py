@@ -5,7 +5,7 @@ _____ ?
 conn _ ?.c..('test.db')
 print("Opened database successfully")
 
-cursor _ conn.e..("SELECT id, name, address, salary from COMPANY")
+cursor _ conn.e..("S.. id, name, address, salary from COMPANY")
 ___ row __ cursor:
    print("ID = ", row[0])
    print("NAME = ", row[1])

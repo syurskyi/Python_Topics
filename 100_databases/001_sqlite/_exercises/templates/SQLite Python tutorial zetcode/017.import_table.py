@@ -24,9 +24,9 @@ with con:
     sql _ readData()
     cur.executescript(sql)
 
-    cur.e..("SELECT * FROM cars")
+    cur.e..("S.. * F.. cars")
 
-    rows _ cur.fetchall()
+    rows _ cur.f_a..
 
     ___ row __ rows:
         print(row)

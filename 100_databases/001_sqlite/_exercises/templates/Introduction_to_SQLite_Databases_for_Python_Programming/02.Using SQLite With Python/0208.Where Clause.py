@@ -8,7 +8,7 @@
 # c _ conn.c..
 #
 # # Query The Database
-# # c.execute("SELECT * FROM customers WHERE last_name LIKE 'Br%'")
+# # c.execute("S.. * F.. customers WHERE last_name LIKE 'Br%'")
 # ?.e.. S.. _ F... customers W.. email L.. @codemy.com
 # items _ ?.f...
 #

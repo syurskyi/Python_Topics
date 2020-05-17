@@ -12,10 +12,10 @@ try:
 
    cursor.e..(PostgreSQL_select_Query)
 
-   mobile_records_one _ cursor.fetchone()
+   mobile_records_one _ cursor.f_o..
    print ("Printing first record", mobile_records_one)
 
-   mobile_records_two _ cursor.fetchone()
+   mobile_records_two _ cursor.f_o..
    print("Printing second record", mobile_records_two)
 
 except (Exception, psycopg2.Error) as error :

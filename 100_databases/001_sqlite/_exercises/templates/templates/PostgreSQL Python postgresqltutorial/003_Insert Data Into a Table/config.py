@@ -15,7 +15,7 @@ def config(filename_'database.ini', section_'postgresql'):
         ___ param __ params:
             db[param[0]] _ param[1]
     ____
-        raise Exception('Section {0} not found in the {1} file'.f..(section, filename))
+        raise Exception('Section @ not found in the @ file'.f..(section, filename))
 
     return db
 

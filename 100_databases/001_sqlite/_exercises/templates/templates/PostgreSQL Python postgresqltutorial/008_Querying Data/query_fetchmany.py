@@ -19,8 +19,8 @@ def get_part_vendors():
         conn _ psycopg2.c..(**params)
         cur _ conn.c..
         cur.e..("""
-            SELECT part_name, vendor_name
-            FROM parts
+            S.. part_name, vendor_name
+            F.. parts
             INNER JOIN vendor_parts ON vendor_parts.part_id = parts.part_id
             INNER JOIN vendors ON vendors.vendor_id = vendor_parts.vendor_id
             ORDER BY part_name;

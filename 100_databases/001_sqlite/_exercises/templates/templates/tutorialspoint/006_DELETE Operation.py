@@ -11,8 +11,8 @@ cur.e..("DELETE from COMPANY where ID=2;")
 conn.c..
 print("Total number of rows deleted :", cur.rowcount)
 
-cur.e..("SELECT id, name, address, salary  from COMPANY")
-rows _ cur.fetchall()
+cur.e..("S.. id, name, address, salary  from COMPANY")
+rows _ cur.f_a..
 ___ row __ rows:
    print("ID = ", row[0])
    print("NAME = ", row[1])

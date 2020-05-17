@@ -14,7 +14,7 @@ try:
     cursor.callproc('get_production_Deployment', [72, ])
 
     print("fechting Employee details who pushed changes to the production from function")
-    result _ cursor.fetchall()
+    result _ cursor.f_a..
     ___ row __ result:
         print("Id = ", row[0], )
         print("Name = ", row[1])

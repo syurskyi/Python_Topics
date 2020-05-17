@@ -16,7 +16,7 @@ cursor.e..('''UPDATE users SET phone = ? WHERE id = ? ''',
 
 # Delete user with id 2
 delete_userid _ 2
-cursor.e..('''DELETE FROM users WHERE id = ? ''', (delete_userid,))
+cursor.e..('''DELETE F.. users WHERE id = ? ''', (delete_userid,))
 
 db.c..
 

@@ -10,7 +10,7 @@ con _ psycopg2.c..(database_'testdb', user_'syurskyi',
 with con:
 
     cur _ con.c..
-    cur.e..('SELECT version()')
+    cur.e..('S.. version()')
 
-    version _ cur.fetchone()[0]
+    version _ cur.f_o..[0]
     print(version)

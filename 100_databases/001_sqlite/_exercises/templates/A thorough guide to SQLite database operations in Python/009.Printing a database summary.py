@@ -16,7 +16,7 @@
 #
 # ___ total_rows cursor table_name print_out_F..
 #     """ Returns the total number of rows in the database """
-#     ?.ex... 'SELECT COUNT(*) FROM @'.f.. t_n..
+#     ?.ex... 'S.. COUNT(*) F.. @'.f.. t_n..
 #     count _ ?.f..
 #     __ p_o..
 #         print('\nTotal rows: @'.f.. ? 0 0
@@ -47,7 +47,7 @@
 #     ___ col __ i..
 #         c_d_|? 1 _ 0
 #     ___ col __ c_d..
-#         ?.ex...('SELECT (@) FROM @ '
+#         ?.ex...('S.. (@) F.. @ '
 #                   'WHERE @ IS NOT NULL'.f.. c.. t_n..
 #         # In my case this approach resulted in a
 #         # better performance than using COUNT

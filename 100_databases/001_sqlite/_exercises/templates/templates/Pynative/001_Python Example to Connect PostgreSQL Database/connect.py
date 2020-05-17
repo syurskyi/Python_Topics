@@ -11,8 +11,8 @@ try:
     print ( connection.get_dsn_parameters(),"\n")
 
     # Print PostgreSQL version
-    cursor.e..("SELECT version();")
-    record _ cursor.fetchone()
+    cursor.e..("S.. version();")
+    record _ cursor.f_o..
     print("You are connected to - ", record,"\n")
 
 except (Exception, psycopg2.Error) as error :

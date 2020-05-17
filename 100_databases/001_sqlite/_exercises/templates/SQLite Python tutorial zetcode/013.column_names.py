@@ -11,7 +11,7 @@ with con:
 
     cur.e..('PRAGMA table_info(cars)')
 
-    data _ cur.fetchall()
+    data _ cur.f_a..
 
     ___ d __ data:
         print(f"{d[0]} {d[1]} {d[2]}")

@@ -9,9 +9,9 @@ with con:   # With the with keyword, the Python interpreter automatically releas
             # It also provides error handling.
 
     cur _ con.c..
-    cur.e..('SELECT SQLITE_VERSION()')
+    cur.e..('S.. SQLITE_VERSION()')
 
-    data _ cur.fetchone()[0]
+    data _ cur.f_o..[0]
 
     print(f"SQLite version: {data}")
 

@@ -9,8 +9,8 @@ def get_parts():
         params _ config()
         conn _ psycopg2.c..(**params)
         cur _ conn.c..
-        cur.e..("SELECT part_id, part_name FROM parts ORDER BY part_name")
-        rows _ cur.fetchall()
+        cur.e..("S.. part_id, part_name F.. parts ORDER BY part_name")
+        rows _ cur.f_a..
         print("The number of parts: ", cur.rowcount)
         ___ row __ rows:
             print(row)

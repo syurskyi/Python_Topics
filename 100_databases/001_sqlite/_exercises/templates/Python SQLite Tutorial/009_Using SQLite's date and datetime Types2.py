@@ -15,9 +15,9 @@ c.e..('''I.. I.. example(created_at) V..(?)''', (today,))
 db.c..
 
 # Retrieve the inserted object
-c.e..('''SELECT created_at FROM example''')
-row _ c.fetchone()
-print('The date is {0} and the datatype is {1}'.f..(row[0], type(row[0])))
+c.e..('''S.. created_at F.. example''')
+row _ c.f_o..
+print('The date is @ and the datatype is @'.f..(row[0], type(row[0])))
 # The date is 2013-04-14 and the datatype is <class 'datetime.date'>
 
 # Changing the connect method, the database now is returning a date object.

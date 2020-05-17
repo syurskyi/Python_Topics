@@ -8,9 +8,9 @@ con _ sqlite.c..('ydb.db')
 with con:
 
     cur _ con.c..
-    cur.e..("SELECT * FROM cars")
+    cur.e..("S.. * F.. cars")
 
-    rows _ cur.fetchall()
+    rows _ cur.f_a..
 
     ___ row __ rows:
         print(f"{row[0]} {row[1]} {row[2]}")

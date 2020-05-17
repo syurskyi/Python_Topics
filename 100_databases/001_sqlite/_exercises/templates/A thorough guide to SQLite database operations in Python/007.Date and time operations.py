@@ -48,13 +48,13 @@
 # # "some_id1" "2014-03-06"   "16:42:30"  "2014-03-06 16:42:30"
 #
 # # 4) Retrieve all IDs of entries between 2 date_times
-# ?.ex.. "SELECT @ FROM @ WHERE @ BETWEEN '2013-03-06 10:10:10' AND '2015-03-06 10:10:10'".\
+# ?.ex.. "S.. @ F.. @ WHERE @ BETWEEN '2013-03-06 10:10:10' AND '2015-03-06 10:10:10'".\
 #     f.. idf_? tn_? cn_d_t_c..
 # all_date_times _ ?.f..
 # print('4) all entries between ~2013 - 2015:' ?
 #
 # # 5) Retrieve all IDs of entries between that are older than 1 day and 12 hrs
-# ?.ex.. "SELECT @ FROM @ WHERE DATE('now') - @ >_ 1 AND DATE('now') - @ >_ 12".\
+# ?.ex.. "S.. @ F.. @ WHERE DATE('now') - @ >_ 1 AND DATE('now') - @ >_ 12".\
 #     f.. idf_? tn_? dc_? tc_?
 # all_1day12hrs_entries _ ?.f..
 # print('5) entries older than 1 day:' ?

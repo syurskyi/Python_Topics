@@ -12,9 +12,9 @@ with con:
 
     cur _ con.c..
 
-    cur.e..("SELECT * FROM cars WHERE id=%(id)s", {'id': uid } )
+    cur.e..("S.. * F.. cars WHERE id=%(id)s", {'id': uid } )
 
-    row _ cur.fetchone()
+    row _ cur.f_o..
 
     print(f'{row[0]} {row[1]} {row[2]}')
 

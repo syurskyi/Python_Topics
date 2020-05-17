@@ -12,9 +12,9 @@ try:
         password_'1234')
 
     cur _ con.c..
-    cur.e..('SELECT version()')
+    cur.e..('S.. version()')
 
-    version _ cur.fetchone()[0]
+    version _ cur.f_o..[0]
     print(version)
 
 except psycopg2.DatabaseError as e:

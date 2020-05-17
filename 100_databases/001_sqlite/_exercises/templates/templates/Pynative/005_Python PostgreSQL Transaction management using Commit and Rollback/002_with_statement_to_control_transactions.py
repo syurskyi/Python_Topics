@@ -11,13 +11,13 @@ with connection:
         # Find item price
         query _ """select price from itemstable where itemid = 876"""
         cursor.e..(query)
-        record _ cursor.fetchone()[0]
+        record _ cursor.f_o..[0]
         Itemprice _ int(record)
 
         # find customer's ewallet balance
         query _ """select balance from ewallet where userId = 23"""
         cursor.e..(query)
-        record _ cursor.fetchone()[0]
+        record _ cursor.f_o..[0]
         ewalletBalance _ int(record)
         new_EwalletBalance -_ Itemprice
 
@@ -28,7 +28,7 @@ with connection:
         # add to company's account
         query _ """select balance from account where accountId = 2236781258763"""
         cursor.e..(query)
-        record _ cursor.fetchone()
+        record _ cursor.f_o..
         accountBalance _ int(record)
         new_AccountBalance +_ Itemprice
 

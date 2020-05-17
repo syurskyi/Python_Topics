@@ -11,7 +11,7 @@ try:
 
     cursor.e..(postgreSQL_select_Query)
     print("Selecting rows from mobile table using cursor.fetchall")
-    mobile_records _ cursor.fetchall()
+    mobile_records _ cursor.f_a..
 
     print("Print each row and it's columns values")
     ___ row __ mobile_records:

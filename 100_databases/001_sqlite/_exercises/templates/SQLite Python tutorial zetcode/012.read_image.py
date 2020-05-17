@@ -29,8 +29,8 @@ try:
     con _ sqlite.c..('ydb.db')
 
     cur _ con.c..
-    cur.e..("SELECT data FROM images LIMIT 1")
-    data _ cur.fetchone()[0]
+    cur.e..("S.. data F.. images LIMIT 1")
+    data _ cur.f_o..[0]
 
     writeImage(data)
 

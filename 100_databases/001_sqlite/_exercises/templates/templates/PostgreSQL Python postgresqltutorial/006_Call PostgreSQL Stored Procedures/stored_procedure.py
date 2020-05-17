@@ -14,13 +14,13 @@ def get_parts(vendor_id):
         # create a cursor object for execution
         cur _ conn.c..
         # another way to call a stored procedure
-        # cur.execute("SELECT * FROM get_parts_by_vendor( %s); ",(vendor_id,))
+        # cur.execute("S.. * F.. get_parts_by_vendor( %s); ",(vendor_id,))
         cur.callproc('get_parts_by_vendor', (vendor_id,))
         # process the result set
-        row _ cur.fetchone()
+        row _ cur.f_o..
         while row is not None:
             print(row)
-            row _ cur.fetchone()
+            row _ cur.f_o..
         # close the communication with the PostgreSQL database server
         cur.c..
     except (Exception, psycopg2.DatabaseError) as error:

@@ -14,7 +14,7 @@ def writeImage(data):
 
     except IOError as e:
 
-        print(f"Error {0}")
+        print(f"Error @")
         ___.exit(1)
 
     finally:
@@ -28,8 +28,8 @@ try:
                     password_'1234')
 
     cur _ con.c..
-    cur.e..("SELECT data FROM images LIMIT 1")
-    data _ cur.fetchone()[0]
+    cur.e..("S.. data F.. images LIMIT 1")
+    data _ cur.f_o..[0]
 
     writeImage(data)
 

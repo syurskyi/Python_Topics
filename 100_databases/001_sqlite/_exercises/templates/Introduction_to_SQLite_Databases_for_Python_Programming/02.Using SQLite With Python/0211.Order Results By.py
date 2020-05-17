@@ -8,8 +8,8 @@
 # c _ ?.c..
 #
 # # Query The Database - Order by
-# # c.execute("SELECT rowid, * FROM customers ORDER BY rowid DESC")
-# # c.execute("SELECT rowid, * FROM customers ORDER BY rowid last_name")
+# # c.execute("S.. rowid, * F.. customers ORDER BY rowid DESC")
+# # c.execute("S.. rowid, * F.. customers ORDER BY rowid last_name")
 # ?.execute S.. r..., _ F.. customers O.. B. r.. last_name D..
 #
 # items _ ?.f..

@@ -9,7 +9,7 @@ conn.e..("UPDATE COMPANY set SALARY = 25000.00 where ID = 1")
 conn.c..
 print("Total number of rows updated :", conn.total_changes)
 
-cursor _ conn.e..("SELECT id, name, address, salary from COMPANY")
+cursor _ conn.e..("S.. id, name, address, salary from COMPANY")
 ___ row __ cursor:
    print("ID = ", row[0])
    print("NAME = ", row[1])

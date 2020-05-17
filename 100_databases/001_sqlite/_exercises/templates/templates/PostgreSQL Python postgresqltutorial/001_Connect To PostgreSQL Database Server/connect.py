@@ -19,10 +19,10 @@ def c..():
 
         # execute a statement
         print('PostgreSQL database version:')
-        cur.e..('SELECT version()')
+        cur.e..('S.. version()')
 
         # display the PostgreSQL database server version
-        db_version _ cur.fetchone()
+        db_version _ cur.f_o..
         print(db_version)
 
         # close the communication with the PostgreSQL

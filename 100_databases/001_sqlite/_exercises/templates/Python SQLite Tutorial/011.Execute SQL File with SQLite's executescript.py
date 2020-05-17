@@ -11,7 +11,7 @@ script _ '''C.. T.. users(id IN.. P.. K.., name T..., phone T...);
 c.executescript(script)
 
 # Print the results
-c.e..('''SELECT * FROM users''')
+c.e..('''S.. * F.. users''')
 ___ row __ c:
     print(row)
 

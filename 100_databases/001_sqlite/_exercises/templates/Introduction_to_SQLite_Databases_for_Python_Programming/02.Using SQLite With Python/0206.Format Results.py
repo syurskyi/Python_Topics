@@ -11,7 +11,7 @@
 # ?.e.. S.. _ F.. customers
 # # print(c.fetchall())
 # # print(c.fetchone())
-# # print(c.fetchone()[3])
+# # print(c.f_o..[3])
 # # print(c.fetchmany(3))
 #
 # items ? ?.f..

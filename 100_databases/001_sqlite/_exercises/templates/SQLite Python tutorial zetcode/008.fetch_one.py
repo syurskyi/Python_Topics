@@ -8,11 +8,11 @@ con _ sqlite.c..('ydb.db')
 with con:
 
     cur _ con.c..
-    cur.e..("SELECT * FROM cars")
+    cur.e..("S.. * F.. cars")
 
     while True:
 
-        row _ cur.fetchone()
+        row _ cur.f_o..
 
         __ row == None:
             break

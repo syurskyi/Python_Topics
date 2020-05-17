@@ -10,10 +10,10 @@ with con:
 
     cur _ con.c..
 
-    cur.e..('SELECT * FROM cars')
+    cur.e..('S.. * F.. cars')
 
     col_names _ [cn[0] ___ cn __ cur.description]
-    rows _ cur.fetchall()
+    rows _ cur.f_a..
 
     print(f'{col_names[0]} {col_names[1]} {col_names[2]}')
 

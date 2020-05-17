@@ -18,7 +18,7 @@ def insert_vendor(vendor_name):
         # execute the I.. statement
         cur.e..(sql, (vendor_name,))
         # get the generated id back
-        vendor_id _ cur.fetchone()[0]
+        vendor_id _ cur.f_o..[0]
         # commit the changes to the database
         conn.c..
         # close communication with the database

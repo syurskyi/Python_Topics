@@ -43,7 +43,7 @@ finally:
         f.c..
 
 
-# SELECT * FROM cars;
+# S.. * F.. cars;
 #  id |    name    | price
 # ----+------------+--------
 #   2 | Mercedes   |  57127

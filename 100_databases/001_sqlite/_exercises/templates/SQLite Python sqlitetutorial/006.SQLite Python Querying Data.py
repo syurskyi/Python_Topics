@@ -6,8 +6,8 @@
 # #
 # #     First, establish a connection to the SQLite database by creating a Connection object.
 # #     Next, create a Cursor object using the cursor method of the Connection object.
-# #     Then, execute a  SELECT statement.
-# #     After that, call the fetchall() method of the cursor object to fetch the data.
+# #     Then, execute a  S.. statement.
+# #     After that, call the f_a.. method of the cursor object to fetch the data.
 # #     Finally, loop the cursor and process each row individually.
 # #
 # # In the following example, we will use the tasks table created in the creating tables tutorial.
@@ -44,8 +44,8 @@
 #     ___ row __ ?
 #         print ?
 #
-# # In the select_all_tasks() function, we created a cursor, executed the SELECT statement,
-# # and called the  fetchall() to fetch all tasks from the tasks table.
+# # In the select_all_tasks() function, we created a cursor, executed the S.. statement,
+# # and called the  f_a.. to fetch all tasks from the tasks table.
 # #
 # # This function query tasks by priority:
 #
@@ -65,8 +65,8 @@
 #         print ?
 #
 # # In the select_task_by_priority() function, we selected the tasks based on a particular priority.
-# # The question mark ( ?) in the query is the placeholder. When the cursor executed the SELECT statement,
-# # it substituted the question mark ( ?) by the priority argument. The  fetchall() method fetched all matching tasks
+# # The question mark ( ?) in the query is the placeholder. When the cursor executed the S.. statement,
+# # it substituted the question mark ( ?) by the priority argument. The  f_a.. method fetched all matching tasks
 # # by the priority.
 # #
 # # This main() function creates a connection to the database

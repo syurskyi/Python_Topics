@@ -8,9 +8,9 @@ con _ sqlite.c..('ydb.db')
 with con:
 
     cur _ con.c..
-    cur.e..("SELECT name FROM sqlite_master WHERE type='table'")
+    cur.e..("S.. name F.. sqlite_master WHERE type='table'")
 
-    rows _ cur.fetchall()
+    rows _ cur.f_a..
 
     ___ row __ rows:
         print(row[0])
