@@ -4,7 +4,7 @@
 # table_name_____ 'my_table_2'   # name of the table to be created
 # id_column_____ 'my_1st_column' # name of the P.. K.. column
 # new_column_____ 'unique_names'  # name of the new column
-# column_type_____ 'T...' # E.g., IN.., T..., NULL, REAL, BLOB
+# column_type_____ 'T...' # E.g., IN.., T..., NULL, RE., BLOB
 # index_name_____ 'my_unique_index'  # name for the new unique index
 #
 # # Connecting to the database file

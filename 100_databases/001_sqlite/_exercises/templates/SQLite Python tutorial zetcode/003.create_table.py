@@ -9,7 +9,7 @@ with con:
 
     cur _ con.c..
 
-    cur.e..("C.. T.. cars(id INT, name T..., price INT)")
+    cur.e..("C.. T.. cars(id IN., name T..., price IN.)")
     cur.e..("I.. I.. cars V..(1,'Audi',52642)")
     cur.e..("I.. I.. cars V..(2,'Mercedes',57127)")
     cur.e..("I.. I.. cars V..(3,'Skoda',9000)")

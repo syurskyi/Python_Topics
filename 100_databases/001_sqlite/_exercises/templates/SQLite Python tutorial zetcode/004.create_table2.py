@@ -17,5 +17,5 @@ with con:
     cur _ con.c..
 
     cur.e..("DROP T.. IF EXISTS cars")
-    cur.e..("C.. T.. cars(id INT, name T..., price INT)")
+    cur.e..("C.. T.. cars(id IN., name T..., price IN.)")
     cur.e_m_("I.. I.. cars V..(?, ?, ?)", cars)

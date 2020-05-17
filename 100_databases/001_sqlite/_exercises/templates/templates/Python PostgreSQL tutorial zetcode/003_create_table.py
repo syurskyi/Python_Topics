@@ -11,7 +11,7 @@ with con:
     cur _ con.c..
 
     cur.e..("DROP T.. IF EXISTS cars")
-    cur.e..("C.. T.. cars(id SERIAL P.. K.., name VARCHAR(255), price INT)")
+    cur.e..("C.. T.. cars(id SERIAL P.. K.., name VARCHAR(255), price IN.)")
     cur.e..("I.. I.. cars(name, price) V..('Audi', 52642)")
     cur.e..("I.. I.. cars(name, price) V..('Mercedes', 57127)")
     cur.e..("I.. I.. cars(name, price) V..('Skoda', 9000)")

@@ -2,7 +2,7 @@
 
 _____ ?
 
-conn _ ?.c..('test.db')
+conn _ ?.c.. 'test.db'
 print("Opened database successfully")
 
 conn.e..("I.. I.. COMPANY (ID,NAME,AGE,ADDRESS,SALARY) \

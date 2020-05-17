@@ -5,7 +5,7 @@
 # id_column _ 'my_1st_column' # name of the P.. K.. column
 # new_column1 _ 'my_2nd_column'  # name of the new column
 # new_column2 _ 'my_3nd_column'  # name of the new column
-# column_type _ 'T...' # E.g., IN.., T..., NULL, REAL, BLOB
+# column_type _ 'T...' # E.g., IN.., T..., NULL, RE., BLOB
 # default_val _ 'Hello World' # a default value for the new column rows
 #
 # # Connecting to the database file

@@ -1,16 +1,16 @@
-#!/usr/bin/python
-
-_____ ?
-
-conn _ ?.c..('test.db')
-print("Opened database successfully")
-
-conn.e..('''C.. T.. COMPANY
-         (ID INT P.. K..     NOT NULL,
-         NAME           T...    NOT NULL,
-         AGE            INT     NOT NULL,
-         ADDRESS        CHAR(50),
-         SALARY         REAL);''')
-print("Table created successfully")
-
-conn.c..
+# #!/usr/bin/python
+#
+# _____ ?
+#
+# conn _ ?.c.. 'test.db'
+# print("Opened database successfully")
+#
+# ?.e.. '''C.. T.. COMPANY
+#          (ID IN. P.. K..     N.. N..,
+#          NAME           T...    N.. N..,
+#          AGE            IN.     N.. N..,
+#          ADDRESS        CH..(50),
+#          SALARY         RE.);''')
+# print("Table created successfully")
+#
+# ?.c..

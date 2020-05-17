@@ -7,11 +7,11 @@ print("Opened database successfully")
 
 cur _ conn.c..
 cur.e..('''C.. T.. COMPANY
-      (ID INT P.. K..     NOT NULL,
-      NAME           T...    NOT NULL,
-      AGE            INT     NOT NULL,
-      ADDRESS        CHAR(50),
-      SALARY         REAL);''')
+      (ID IN. P.. K..     N.. N..,
+      NAME           T...    N.. N..,
+      AGE            IN.     N.. N..,
+      ADDRESS        CH..(50),
+      SALARY         RE.);''')
 print("Table created successfully")
 
 conn.c..

@@ -17,7 +17,7 @@
 # # Datatypes:
 # # NULL
 # # IN..
-# # REAL
+# # RE.
 # # T...
 # # BLOB
 #

@@ -11,9 +11,9 @@ ___
     cursor _ connection.c..
 
     create_table_query _ '''C.. T.. mobile
-          (ID INT P.. K..     NOT NULL,
-          MODEL           T...    NOT NULL,
-          PRICE         REAL); '''
+          (ID IN. P.. K..     N.. N..,
+          MODEL           T...    N.. N..,
+          PRICE         RE.); '''
 
     cursor.e..(create_table_query)
     connection.c..

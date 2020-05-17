@@ -13,7 +13,7 @@ ___
 
     cur.e_s_("""
         DROP T.. IF EXISTS cars;
-        C.. T.. cars(id INT, name T..., price INT);
+        C.. T.. cars(id IN., name T..., price IN.);
         I.. I.. cars V..(1,'Audi',52642);
         I.. I.. cars V..(2,'Mercedes',57127);
         I.. I.. cars V..(3,'Skoda',9000);
