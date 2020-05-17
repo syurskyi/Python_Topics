@@ -26,5 +26,5 @@ except sqlite.Error as e:  # In case of an exception, we print an error message 
 
 finally:
 
-    if con:
+    __ con:
         con.close()

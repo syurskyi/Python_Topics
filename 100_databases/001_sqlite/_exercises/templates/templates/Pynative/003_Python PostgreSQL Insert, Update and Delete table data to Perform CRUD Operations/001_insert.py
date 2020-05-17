@@ -17,12 +17,12 @@ try:
    print (count, "Record inserted successfully into mobile table")
 
 except (Exception, psycopg2.Error) as error :
-    if(connection):
+    __(connection):
         print("Failed to insert record into mobile table", error)
 
 finally:
     #closing database connection.
-    if(connection):
+    __(connection):
         cursor.close()
         connection.close()
         print("PostgreSQL connection is closed")

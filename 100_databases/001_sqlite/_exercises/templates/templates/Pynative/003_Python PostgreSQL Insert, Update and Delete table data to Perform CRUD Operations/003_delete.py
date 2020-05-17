@@ -23,7 +23,7 @@ def deleteData(mobileId):
 
     finally:
         # closing database connection.
-        if (connection):
+        __ (connection):
             cursor.close()
             connection.close()
             print("PostgreSQL connection is closed")

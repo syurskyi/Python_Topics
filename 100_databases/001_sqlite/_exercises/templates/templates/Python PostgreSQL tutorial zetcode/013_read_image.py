@@ -19,7 +19,7 @@ def writeImage(data):
 
     finally:
 
-        if fout:
+        __ fout:
             fout.close()
 
 
@@ -40,5 +40,5 @@ except psycopg2.DatabaseError as e:
 
 finally:
 
-    if con:
+    __ con:
         con.close()

@@ -14,7 +14,7 @@ with con:
 
         row _ cur.fetchone()
 
-        if row == None:
+        __ row == None:
             break
 
         print(f"{row[0]} {row[1]} {row[2]}")

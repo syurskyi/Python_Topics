@@ -28,10 +28,10 @@ except IOError as e:
 
 finally:
 
-    if con:
+    __ con:
         con.close()
 
-    if fout:
+    __ fout:
         fout.close()
 
 # $ cat cars.csv

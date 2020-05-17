@@ -27,11 +27,11 @@ def update_vendor(vendor_id, vendor_name):
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
     finally:
-        if conn is not None:
+        __ conn is not None:
             conn.close()
 
     return updated_rows
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     update_vendor('1', '3M Corp' )

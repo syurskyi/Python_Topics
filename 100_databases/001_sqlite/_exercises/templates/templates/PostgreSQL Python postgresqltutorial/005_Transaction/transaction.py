@@ -27,11 +27,11 @@ def add_part(part_name, vendor_list):
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
     finally:
-        if conn is not None:
+        __ conn is not None:
             conn.close()
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     add_part('SIM Tray', (1, 2))
     add_part('Speaker', (3, 4))
     add_part('Vibrator', (5, 6))

@@ -24,7 +24,7 @@ try:
 
 except psycopg2.DatabaseError as e:
 
-    if con:
+    __ con:
         con.rollback()
 
     print('Error {e}')
@@ -33,7 +33,7 @@ except psycopg2.DatabaseError as e:
 
 finally:
 
-    if con:
+    __ con:
         con.close()
 
 # testdb=# \dt

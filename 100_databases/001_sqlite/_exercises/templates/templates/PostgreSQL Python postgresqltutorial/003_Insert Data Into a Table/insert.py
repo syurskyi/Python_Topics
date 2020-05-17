@@ -26,7 +26,7 @@ def insert_vendor(vendor_name):
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
     finally:
-        if conn is not None:
+        __ conn is not None:
             conn.close()
 
     return vendor_id
@@ -52,11 +52,11 @@ def insert_vendor_list(vendor_list):
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
     finally:
-        if conn is not None:
+        __ conn is not None:
             conn.close()
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     # insert one vendor
     insert_vendor("3M Co.")
     # insert multiple vendors

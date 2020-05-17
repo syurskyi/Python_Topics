@@ -26,10 +26,10 @@ def write_blob(part_id, path_to_file, file_extension):
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
     finally:
-        if conn is not None:
+        __ conn is not None:
             conn.close()
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     write_blob(1, 'images/simtray.png', 'png')
     write_blob(2, 'images/speaker.png', 'png')

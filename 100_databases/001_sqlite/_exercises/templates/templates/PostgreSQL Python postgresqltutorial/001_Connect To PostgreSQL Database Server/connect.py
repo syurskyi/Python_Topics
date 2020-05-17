@@ -30,10 +30,10 @@ def c..():
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
     finally:
-        if conn is not None:
+        __ conn is not None:
             conn.close()
             print('Database connection closed.')
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     c..()

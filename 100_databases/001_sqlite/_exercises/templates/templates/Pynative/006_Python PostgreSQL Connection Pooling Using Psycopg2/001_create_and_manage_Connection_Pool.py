@@ -6,13 +6,13 @@ try:
                                               host _ "127.0.0.1",
                                               port _ "5432",
                                               database _ "postgres_db")
-    if(postgreSQL_pool):
+    __(postgreSQL_pool):
         print("Connection pool created successfully")
 
     # Use getconn() to Get Connection from connection pool
     ps_connection  _ postgreSQL_pool.getconn()
 
-    if(ps_connection):
+    __(ps_connection):
         print("successfully recived connection from connection pool ")
         ps_cursor _ ps_connection.cursor()
         ps_cursor.e..("select * from mobile")
@@ -34,7 +34,7 @@ except (Exception, psycopg2.DatabaseError) as error :
 finally:
     #closing database connection.
     # use closeall method to close all the active connection if you want to turn of the application
-    if (postgreSQL_pool):
+    __ (postgreSQL_pool):
         postgreSQL_pool.closeall
     print("PostgreSQL connection pool is closed")
 

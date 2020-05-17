@@ -6,7 +6,7 @@ from config _____ config
 def iter_row(cursor, size_10):
     while True:
         rows _ cursor.fetchmany(size)
-        if not rows:
+        __ not rows:
             break
         ___ row __ rows:
             yield row
@@ -31,9 +31,9 @@ def get_part_vendors():
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
     finally:
-        if conn is not None:
+        __ conn is not None:
             conn.close()
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     get_part_vendors()

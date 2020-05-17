@@ -32,9 +32,9 @@ class CursorFromConnectionPool:
         return self.cursor
 
     def __exit__(self, exception_type, exception_value, exception_traceback):
-        if exception_value:  # This is equivalent to `if exception_value is not None`
+        __ exception_value:  # This is equivalent to `if exception_value is not None`
             self.conn.rollback()
-        else:
+        ____
             self.cursor.close()
             self.conn.commit()
         Database.return_connection(self.conn)

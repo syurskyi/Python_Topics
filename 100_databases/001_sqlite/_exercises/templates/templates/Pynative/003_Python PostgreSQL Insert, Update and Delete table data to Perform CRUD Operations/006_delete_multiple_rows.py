@@ -20,7 +20,7 @@ def deleteInBulk(records):
 
     finally:
         # closing database connection.
-        if (ps_connection):
+        __ (ps_connection):
             cursor.close()
             ps_connection.close()
             print("PostgreSQL connection is closed")

@@ -19,7 +19,7 @@ def writeImage(data):
 
     finally:
 
-        if fout:
+        __ fout:
             fout.close()
 
 
@@ -42,5 +42,5 @@ except sqlite.Error as e:
 
 finally:
 
-    if con:
+    __ con:
         con.close()

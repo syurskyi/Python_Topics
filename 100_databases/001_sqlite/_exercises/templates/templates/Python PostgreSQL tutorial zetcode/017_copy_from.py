@@ -20,7 +20,7 @@ try:
 
 except psycopg2.DatabaseError as e:
 
-    if con:
+    __ con:
         con.rollback()
 
     print(f'Error {e}')
@@ -28,7 +28,7 @@ except psycopg2.DatabaseError as e:
 
 except IOError as e:
 
-    if con:
+    __ con:
         con.rollback()
 
     print(f'Error {e}')
@@ -36,10 +36,10 @@ except IOError as e:
 
 finally:
 
-    if con:
+    __ con:
         con.close()
 
-    if f:
+    __ f:
         f.close()
 
 

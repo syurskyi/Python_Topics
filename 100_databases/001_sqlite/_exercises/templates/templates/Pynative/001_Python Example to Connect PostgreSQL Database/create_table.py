@@ -23,7 +23,7 @@ except (Exception, psycopg2.DatabaseError) as error:
     print("Error while creating PostgreSQL table", error)
 finally:
     # closing database connection.
-    if (connection):
+    __ (connection):
         cursor.close()
         connection.close()
         print("PostgreSQL connection is closed")

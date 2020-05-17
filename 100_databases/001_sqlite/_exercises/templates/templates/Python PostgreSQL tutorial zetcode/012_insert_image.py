@@ -20,7 +20,7 @@ def readImage():
 
     finally:
 
-        if fin:
+        __ fin:
             fin.close()
 
 con _ None
@@ -38,7 +38,7 @@ try:
 
 except psycopg2.DatabaseError as e:
 
-    if con:
+    __ con:
         con.rollback()
 
     print(f'Error {e}')
@@ -46,5 +46,5 @@ except psycopg2.DatabaseError as e:
 
 finally:
 
-    if con:
+    __ con:
         con.close()

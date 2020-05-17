@@ -28,7 +28,7 @@ try:
 
 except sqlite.Error as e:
 
-    if con:
+    __ con:
         con.rollback()
 
     print(f"Error {e.args[0]}")
@@ -36,5 +36,5 @@ except sqlite.Error as e:
 
 finally:
 
-    if con:
+    __ con:
         con.close()

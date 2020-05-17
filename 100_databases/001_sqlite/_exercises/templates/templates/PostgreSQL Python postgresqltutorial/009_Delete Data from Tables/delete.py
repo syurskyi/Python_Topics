@@ -25,11 +25,11 @@ def delete_part(part_id):
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
     finally:
-        if conn is not None:
+        __ conn is not None:
             conn.close()
 
     return rows_deleted
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     deleted_rows _ delete_part(2)
     print('The number of deleted rows: ', deleted_rows)

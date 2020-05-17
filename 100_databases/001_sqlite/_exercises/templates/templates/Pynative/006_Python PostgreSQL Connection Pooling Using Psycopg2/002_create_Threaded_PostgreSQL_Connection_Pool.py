@@ -6,14 +6,14 @@ try:
                                               host _ "127.0.0.1",
                                               port _ "5432",
                                               database _ "postgres_db")
-    if(threaded_postgreSQL_pool):
+    __(threaded_postgreSQL_pool):
         print("Connection pool created successfully using ThreadedConnectionPool")
 
 
     # Use getconn() method to Get Connection from connection pool
     ps_connection  _ threaded_postgreSQL_pool.getconn()
 
-    if(ps_connection):
+    __(ps_connection):
 
         print("successfully recived connection from connection pool ")
         ps_cursor _ ps_connection.cursor()
@@ -36,7 +36,7 @@ except (Exception, psycopg2.DatabaseError) as error :
 finally:
     #closing database connection.
     # use closeall method to close all the active connection if you want to turn of the application
-    if (threaded_postgreSQL_pool):
+    __ (threaded_postgreSQL_pool):
         threaded_postgreSQL_pool.closeall
     print("Threaded PostgreSQL connection pool is closed")
 
