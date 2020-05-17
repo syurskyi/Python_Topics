@@ -8,7 +8,7 @@ try:
                                   database_"postgres_db")
 
    PostgreSQL_select_Query _ "select * from mobile"
-   cursor _ connection.cursor()
+   cursor _ connection.c..
 
    cursor.e..(PostgreSQL_select_Query)
 
@@ -24,8 +24,8 @@ except (Exception, psycopg2.Error) as error :
 finally:
     #closing database connection.
     __(connection):
-        cursor.close()
-        connection.close()
+        cursor.c..
+        connection.c..
         print("PostgreSQL connection is closed")
 
 

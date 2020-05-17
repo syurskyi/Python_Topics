@@ -6,7 +6,7 @@ try:
                                   port _ "5432",
                                   database _ "postgres_db")
 
-    cursor _ connection.cursor()
+    cursor _ connection.c..
     # Print PostgreSQL Connection properties
     print ( connection.get_dsn_parameters(),"\n")
 
@@ -20,8 +20,8 @@ except (Exception, psycopg2.Error) as error :
 finally:
     #closing database connection.
         __(connection):
-            cursor.close()
-            connection.close()
+            cursor.c..
+            connection.c..
             print("PostgreSQL connection is closed")
 
 

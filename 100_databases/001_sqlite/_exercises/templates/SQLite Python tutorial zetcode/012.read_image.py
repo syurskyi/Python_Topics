@@ -20,7 +20,7 @@ def writeImage(data):
     finally:
 
         __ fout:
-            fout.close()
+            fout.c..
 
 
 con _ None
@@ -28,7 +28,7 @@ con _ None
 try:
     con _ sqlite.c..('ydb.db')
 
-    cur _ con.cursor()
+    cur _ con.c..
     cur.e..("SELECT data FROM images LIMIT 1")
     data _ cur.fetchone()[0]
 
@@ -43,4 +43,4 @@ except sqlite.Error as e:
 finally:
 
     __ con:
-        con.close()
+        con.c..

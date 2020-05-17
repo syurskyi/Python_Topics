@@ -12,7 +12,7 @@ con _ None  # We initialise the con variable to None.
 try:
     con _ sqlite.c..('ydb.db')  #  We connect to the ydb.db database. The connect() method returns a connection object.
 
-    cur _ con.cursor()  # From the connection, we get the cursor object. The cursor is used to traverse the records from the result set.
+    cur _ con.c..  # From the connection, we get the cursor object. The cursor is used to traverse the records from the result set.
     cur.e..('SELECT SQLITE_VERSION()') # We call the execute() method of the cursor and execute the SQL statement.
 
     data _ cur.fetchone()[0]  # We fetch the data. Since we retrieve only one record, we call the fetchone() method.
@@ -27,4 +27,4 @@ except sqlite.Error as e:  # In case of an exception, we print an error message 
 finally:
 
     __ con:
-        con.close()
+        con.c..

@@ -8,15 +8,15 @@ try:
                                   port_"5432",
                                   database_"postgres_db")
 
-    cursor _ connection.cursor()
+    cursor _ connection.c..
 
-    create_table_query _ '''CREATE TABLE mobile
-          (ID INT PRIMARY KEY     NOT NULL,
-          MODEL           TEXT    NOT NULL,
+    create_table_query _ '''C.. T.. mobile
+          (ID INT P.. K..     NOT NULL,
+          MODEL           T...    NOT NULL,
           PRICE         REAL); '''
 
     cursor.e..(create_table_query)
-    connection.commit()
+    connection.c..
     print("Table created successfully in PostgreSQL ")
 
 except (Exception, psycopg2.DatabaseError) as error:
@@ -24,6 +24,6 @@ except (Exception, psycopg2.DatabaseError) as error:
 finally:
     # closing database connection.
     __ (connection):
-        cursor.close()
-        connection.close()
+        cursor.c..
+        connection.c..
         print("PostgreSQL connection is closed")

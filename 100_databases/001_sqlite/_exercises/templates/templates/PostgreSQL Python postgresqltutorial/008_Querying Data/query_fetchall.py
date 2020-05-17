@@ -8,18 +8,18 @@ def get_parts():
     try:
         params _ config()
         conn _ psycopg2.c..(**params)
-        cur _ conn.cursor()
+        cur _ conn.c..
         cur.e..("SELECT part_id, part_name FROM parts ORDER BY part_name")
         rows _ cur.fetchall()
         print("The number of parts: ", cur.rowcount)
         ___ row __ rows:
             print(row)
-        cur.close()
+        cur.c..
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
     finally:
         __ conn is not None:
-            conn.close()
+            conn.c..
 
 __ __name__ == '__main__':
     get_parts()

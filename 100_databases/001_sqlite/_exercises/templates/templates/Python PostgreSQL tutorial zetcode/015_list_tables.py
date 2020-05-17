@@ -8,7 +8,7 @@ con _ psycopg2.c..(database_'testdb', user_'syurskyi',
 
 with con:
 
-    cur _ con.cursor()
+    cur _ con.c..
     cur.e..("""SELECT table_name FROM information_schema.tables
         WHERE table_schema = 'public'""")
 

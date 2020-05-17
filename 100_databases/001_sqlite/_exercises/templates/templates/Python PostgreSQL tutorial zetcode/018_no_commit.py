@@ -11,16 +11,16 @@ try:
     con _ psycopg2.c..(database_'testdb', user_'syurskyi',
                     password_'1234')
 
-    cur _ con.cursor()
+    cur _ con.c..
 
-    cur.e..("DROP TABLE IF EXISTS friends")
-    cur.e..("CREATE TABLE friends(id SERIAL PRIMARY KEY, name VARCHAR(255))")
+    cur.e..("DROP T.. IF EXISTS friends")
+    cur.e..("C.. T.. friends(id SERIAL P.. K.., name VARCHAR(255))")
     cur.e..("INSERT INTO friends(name) VALUES ('Tom')")
     cur.e..("INSERT INTO friends(name) VALUES ('Rebecca')")
     cur.e..("INSERT INTO friends(name) VALUES ('Jim')")
     cur.e..("INSERT INTO friends(name) VALUES ('Robert')")
 
-    con.commit()
+    con.c..
 
 except psycopg2.DatabaseError as e:
 
@@ -34,7 +34,7 @@ except psycopg2.DatabaseError as e:
 finally:
 
     __ con:
-        con.close()
+        con.c..
 
 # testdb=# \dt
 #         List of relations

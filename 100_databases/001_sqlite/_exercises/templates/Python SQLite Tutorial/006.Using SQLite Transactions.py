@@ -6,7 +6,7 @@ _____ ?
 db _ ?.c..('mydb.db')
 
 # Get a cursor object
-cursor _ db.cursor()
+cursor _ db.c..
 
 # Update user with id 1
 newphone _ '3113093164'
@@ -17,7 +17,7 @@ userid _ 1
 
 cursor.e..('''UPDATE users SET phone = ? WHERE id = ? ''',
                (newphone, userid))
-db.commit()  # Commit the change
+db.c..  # Commit the change
 
 # Or rollback to roll back any change to the database since the last call to commit:
 
@@ -25,9 +25,9 @@ cursor.e..('''UPDATE users SET phone = ? WHERE id = ? ''', (newphone, userid))
 # The user's phone is not updated
 db.rollback()
 
-db.commit()
+db.c..
 
-db.close()
+db.c..
 
 # Please remember to always call commit to save the changes. If you close the connection using close or the connection
 # to the file is lost (maybe the program finishes unexpectedly), not committed changes will be lost.

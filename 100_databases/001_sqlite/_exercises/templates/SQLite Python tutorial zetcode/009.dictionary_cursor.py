@@ -9,7 +9,7 @@ with con:
 
     con.r_f.. _ sqlite.Row
 
-    cur _ con.cursor()
+    cur _ con.c..
     cur.e..("SELECT * FROM cars")
 
     rows _ cur.fetchall()

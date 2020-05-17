@@ -6,20 +6,20 @@
 # date_col _ 'date' # name of the date column
 # time_col _ 'time'# name of the time column
 # date_time_col _ 'date_time' # name of the date & time column
-# field_type _ 'TEXT'  # column data type
+# field_type _ 'T...'  # column data type
 #
 # # Connecting to the database file
 # conn _ _3.co.. s_f..
 # c _ ?.cu..
 #
 # # Creating a new SQLite table with 1 column
-# ?.ex.. 'CREATE TABLE @ (@ @ PRIMARY KEY)'\
+# ?.ex.. 'C.. T.. @ (@ @ P.. K..)'\
 #         .f..(tn_? fn_i.f.. ft_?
 #
 # # A) Adding a new column to save date insert a row with the current date
 # # in the following format: YYYY-MM-DD
 # # e.g., 2014-03-06
-# ?.ex.. "ALTER TABLE @ ADD COLUMN '@'"\
+# ?.ex.. "ALTER T.. @ ADD COLUMN '@'"\
 #          .f.. tn_? cn_d.c..
 # # insert a new row with the current date and time, e.g., 2014-03-06
 # ?.ex.. "INSERT INTO @ (@, @) VALUES('some_id1', DATE('now'))"\
@@ -28,7 +28,7 @@
 # # B) Adding a new column to save date and time and update with the current time
 # # in the following format: HH:MM:SS
 # # e.g., 16:26:37
-# ?.ex.. "ALTER TABLE @ ADD COLUMN '@'"\
+# ?.ex.. "ALTER T.. @ ADD COLUMN '@'"\
 #          .f.. tn_? cn_t_c..
 # # update row for the new current date and time column, e.g., 2014-03-06 16:26:37
 # ?.ex.. "UPDATE @ SET @_TIME('now') WHERE @_'some_id1'"\
@@ -37,7 +37,7 @@
 # # C) Adding a new column to save date and time and update with current date-time
 # # in the following format: YYYY-MM-DD HH:MM:SS
 # # e.g., 2014-03-06 16:26:37
-# ?.ex.. "ALTER TABLE @ ADD COLUMN '@'"\
+# ?.ex.. "ALTER T.. @ ADD COLUMN '@'"\
 #          .f.. tn_? cn_d_t_c..
 # # update row for the new current date and time column, e.g., 2014-03-06 16:26:37
 # ?.ex.. "UPDATE @ SET @_(CURRENT_TIMESTAMP) WHERE @_'some_id1'"\

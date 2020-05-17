@@ -26,10 +26,10 @@ con _ sqlite.c..(':memory:')
 
 with con:
 
-    cur _ con.cursor()
+    cur _ con.c..
 
-    cur.e..("DROP TABLE IF EXISTS cars")
-    cur.e..("CREATE TABLE cars(id INT, name TEXT, price INT)")
+    cur.e..("DROP T.. IF EXISTS cars")
+    cur.e..("C.. T.. cars(id INT, name T..., price INT)")
     cur.executemany("INSERT INTO cars VALUES(?, ?, ?)", cars)
     cur.e..("DELETE FROM cars WHERE price < 30000")
 

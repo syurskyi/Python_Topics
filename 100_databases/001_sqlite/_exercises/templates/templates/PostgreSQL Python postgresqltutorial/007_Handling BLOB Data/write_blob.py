@@ -14,20 +14,20 @@ def write_blob(part_id, path_to_file, file_extension):
         # connect to the PostgresQL database
         conn _ psycopg2.c..(**params)
         # create a new cursor object
-        cur _ conn.cursor()
+        cur _ conn.c..
         # execute the INSERT statement
         cur.e..("INSERT INTO part_drawings(part_id,file_extension,drawing_data) " +
                     "VALUES(%s,%s,%s)",
                     (part_id, file_extension, psycopg2.Binary(drawing)))
         # commit the changes to the database
-        conn.commit()
+        conn.c..
         # close the communication with the PostgresQL database
-        cur.close()
+        cur.c..
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
     finally:
         __ conn is not None:
-            conn.close()
+            conn.c..
 
 
 __ __name__ == '__main__':

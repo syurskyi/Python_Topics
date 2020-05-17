@@ -7,9 +7,9 @@ con _ sqlite.c..('ydb.db')
 
 with con:
 
-    cur _ con.cursor()
+    cur _ con.c..
 
-    cur.e..("CREATE TABLE cars(id INT, name TEXT, price INT)")
+    cur.e..("C.. T.. cars(id INT, name T..., price INT)")
     cur.e..("INSERT INTO cars VALUES(1,'Audi',52642)")
     cur.e..("INSERT INTO cars VALUES(2,'Mercedes',57127)")
     cur.e..("INSERT INTO cars VALUES(3,'Skoda',9000)")

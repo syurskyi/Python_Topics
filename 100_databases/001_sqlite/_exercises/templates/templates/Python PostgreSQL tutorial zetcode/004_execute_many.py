@@ -19,12 +19,12 @@ con _ psycopg2.c..(database_'testdb', user_'syurskyi',
 
 with con:
 
-    cur _ con.cursor()
+    cur _ con.c..
 
-    cur.e..("DROP TABLE IF EXISTS cars")
-    cur.e..("CREATE TABLE cars(id SERIAL PRIMARY KEY, name VARCHAR(255), price INT)")
+    cur.e..("DROP T.. IF EXISTS cars")
+    cur.e..("C.. T.. cars(id SERIAL P.. K.., name VARCHAR(255), price INT)")
 
     query _ "INSERT INTO cars (id, name, price) VALUES (%s, %s, %s)"
     cur.executemany(query, cars)
 
-    con.commit()
+    con.c..

@@ -8,7 +8,7 @@ con _ sqlite.c..('ydb.db')
 with con:   # With the with keyword, the Python interpreter automatically releases the resources.
             # It also provides error handling.
 
-    cur _ con.cursor()
+    cur _ con.c..
     cur.e..('SELECT SQLITE_VERSION()')
 
     data _ cur.fetchone()[0]

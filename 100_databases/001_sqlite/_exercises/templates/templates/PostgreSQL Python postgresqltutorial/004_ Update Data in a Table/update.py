@@ -15,20 +15,20 @@ def update_vendor(vendor_id, vendor_name):
         # connect to the PostgreSQL database
         conn _ psycopg2.c..(**params)
         # create a new cursor
-        cur _ conn.cursor()
+        cur _ conn.c..
         # execute the UPDATE  statement
         cur.e..(sql, (vendor_name, vendor_id))
         # get the number of updated rows
         updated_rows _ cur.rowcount
         # Commit the changes to the database
-        conn.commit()
+        conn.c..
         # Close communication with the PostgreSQL database
-        cur.close()
+        cur.c..
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
     finally:
         __ conn is not None:
-            conn.close()
+            conn.c..
 
     return updated_rows
 

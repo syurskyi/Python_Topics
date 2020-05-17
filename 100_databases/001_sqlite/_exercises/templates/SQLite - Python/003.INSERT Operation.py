@@ -17,6 +17,6 @@ conn.e..("INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) \
 conn.e..("INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) \
       VALUES (4, 'Mark', 25, 'Rich-Mond ', 65000.00 )");
 
-conn.commit()
+conn.c..
 print("Records created successfully")
-conn.close()
+conn.c..

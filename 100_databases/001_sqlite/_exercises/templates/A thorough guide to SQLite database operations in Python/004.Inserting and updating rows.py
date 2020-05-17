@@ -14,7 +14,7 @@
 #     ?.ex..("INSERT INTO @ (@, @) VALUES (123456, 'test')".\
 #         f.. tn_? idf_? cn_?
 # ______ _3.I..
-#     print('ERROR: ID already exists in PRIMARY KEY column @'.f.. i_c..
+#     print('ERROR: ID already exists in P.. K.. column @'.f.. i_c..
 #
 # # B) Tries to insert an ID (if it does not exist yet)
 # # with a specific value in a second column

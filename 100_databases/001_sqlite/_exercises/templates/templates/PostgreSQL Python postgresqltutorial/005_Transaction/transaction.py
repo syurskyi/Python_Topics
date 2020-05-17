@@ -13,7 +13,7 @@ def add_part(part_name, vendor_list):
     try:
         params _ config()
         conn _ psycopg2.c..(**params)
-        cur _ conn.cursor()
+        cur _ conn.c..
         # insert a new part
         cur.e..(insert_part, (part_name,))
         # get the part id
@@ -23,12 +23,12 @@ def add_part(part_name, vendor_list):
             cur.e..(assign_vendor, (vendor_id, part_id))
 
         # commit changes
-        conn.commit()
+        conn.c..
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
     finally:
         __ conn is not None:
-            conn.close()
+            conn.c..
 
 
 __ __name__ == '__main__':

@@ -3,12 +3,12 @@ try:
     # Creates or opens a file called mydb with a SQLite3 DB
     db _ ?.c..('mydb.db')
     # Get a cursor object
-    cursor _ db.cursor()
+    cursor _ db.c..
     # Check if table users does not exist and create it
-    cursor.e..('''CREATE TABLE IF NOT EXISTS
-                      users(id INTEGER PRIMARY KEY, name TEXT, phone TEXT, email TEXT unique, password TEXT)''')
+    cursor.e..('''C.. T.. IF NOT EXISTS
+                      users(id IN.. P.. K.., name T..., phone T..., email T... unique, password T...)''')
     # Commit the change
-    db.commit()
+    db.c..
 # Catch the exception
 except Exception as e:
     # Roll back any change if something goes wrong
@@ -16,7 +16,7 @@ except Exception as e:
     raise e
 finally:
     # Close the db connection
-    db.close()
+    db.c..
 
 # We can use the Connection object as context manager to automatically commit or rollback transactions:
 

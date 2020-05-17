@@ -14,7 +14,7 @@ try:
 
     __(ps_connection):
         print("successfully recived connection from connection pool ")
-        ps_cursor _ ps_connection.cursor()
+        ps_cursor _ ps_connection.c..
         ps_cursor.e..("select * from mobile")
         mobile_records _ ps_cursor.fetchall()
 
@@ -22,7 +22,7 @@ try:
         ___ row __ mobile_records:
             print (row)
 
-        ps_cursor.close()
+        ps_cursor.c..
 
         #Use this method to release the connection object and send back to connection pool
         postgreSQL_pool.putconn(ps_connection)

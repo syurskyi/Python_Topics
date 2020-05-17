@@ -5,12 +5,12 @@ _____ ?
 conn _ ?.c..('test.db')
 print("Opened database successfully")
 
-conn.e..('''CREATE TABLE COMPANY
-         (ID INT PRIMARY KEY     NOT NULL,
-         NAME           TEXT    NOT NULL,
+conn.e..('''C.. T.. COMPANY
+         (ID INT P.. K..     NOT NULL,
+         NAME           T...    NOT NULL,
          AGE            INT     NOT NULL,
          ADDRESS        CHAR(50),
          SALARY         REAL);''')
 print("Table created successfully")
 
-conn.close()
+conn.c..

@@ -7,13 +7,13 @@ def bulkInsert(records):
                                       host_"127.0.0.1",
                                       port_"5432",
                                       database_"postgres_db")
-        cursor _ connection.cursor()
+        cursor _ connection.c..
         sql_insert_query _ """ INSERT INTO mobile (id, model, price) 
                            VALUES (%s,%s,%s) """
 
         # executemany() to insert multiple rows rows
         result _ cursor.executemany(sql_insert_query, records)
-        connection.commit()
+        connection.c..
         print(cursor.rowcount, "Record inserted successfully into mobile table")
 
     except (Exception, psycopg2.Error) as error:
@@ -22,8 +22,8 @@ def bulkInsert(records):
     finally:
         # closing database connection.
         __ (connection):
-            cursor.close()
-            connection.close()
+            cursor.c..
+            connection.c..
             print("PostgreSQL connection is closed")
 
 records_to_insert _ [ (4,'LG', 800) , (5,'One Plus 6', 950)]

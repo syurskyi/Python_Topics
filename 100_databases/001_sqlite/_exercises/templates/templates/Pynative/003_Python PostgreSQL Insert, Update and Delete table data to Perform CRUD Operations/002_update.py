@@ -8,7 +8,7 @@ def updateTable(mobileId, price):
                                       port_"5432",
                                       database_"postgres_db")
 
-        cursor _ connection.cursor()
+        cursor _ connection.c..
 
         print("Table Before updating record ")
         sql_select_query _ """select * from mobile where id = %s"""
@@ -19,7 +19,7 @@ def updateTable(mobileId, price):
         # Update single record now
         sql_update_query _ """Update mobile set price = %s where id = %s"""
         cursor.e..(sql_update_query, (price, mobileId))
-        connection.commit()
+        connection.c..
         count _ cursor.rowcount
         print(count, "Record Updated successfully ")
 
@@ -35,8 +35,8 @@ def updateTable(mobileId, price):
     finally:
         # closing database connection.
         __ (connection):
-            cursor.close()
-            connection.close()
+            cursor.c..
+            connection.c..
             print("PostgreSQL connection is closed")
 
 id _ 3

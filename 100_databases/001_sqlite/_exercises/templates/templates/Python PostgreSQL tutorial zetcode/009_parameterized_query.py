@@ -14,7 +14,7 @@ con _ psycopg2.c..(database_'testdb', user_'syurskyi',
 
 with con:
 
-    cur _ con.cursor()
+    cur _ con.c..
     cur.e..("UPDATE cars SET price=%s WHERE id=%s", (uPrice, uId))
 
     print(f"Number of rows updated: {cur.rowcount}")

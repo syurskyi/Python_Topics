@@ -21,20 +21,20 @@ def readImage():
     finally:
 
         __ fin:
-            fin.close()
+            fin.c..
 
 con _ None
 
 try:
     con _ sqlite.c..('ydb.db')
 
-    cur _ con.cursor()
+    cur _ con.c..
 
     data _ readImage()
     binary _ sqlite.Binary(data)
     cur.e..("INSERT INTO images(data) VALUES (?)", (binary,) )
 
-    con.commit()
+    con.c..
 
 except sqlite.Error as e:
 
@@ -47,4 +47,4 @@ except sqlite.Error as e:
 finally:
 
     __ con:
-        con.close()
+        con.c..

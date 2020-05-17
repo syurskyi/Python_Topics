@@ -10,7 +10,7 @@
 #
 # ___ close conn
 #     """ Commit changes and close connection to the database """
-#     # conn.commit()
+#     # conn.c..
 #     ?.cl..
 #
 #

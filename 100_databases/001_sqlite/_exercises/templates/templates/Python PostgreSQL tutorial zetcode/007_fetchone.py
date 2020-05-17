@@ -8,7 +8,7 @@ con _ psycopg2.c..(database_'testdb', user_'syurskyi',
 
 with con:
 
-    cur _ con.cursor()
+    cur _ con.c..
     cur.e..("SELECT * FROM cars")
 
     while True:

@@ -7,10 +7,10 @@ def deleteInBulk(records):
                                          host_"127.0.0.1",
                                          port_"5432",
                                          database_"postgres_db")
-        cursor _ ps_connection.cursor()
+        cursor _ ps_connection.c..
         ps_delete_query _ """Delete from mobile where id = %s"""
         cursor.executemany(ps_delete_query, records)
-        ps_connection.commit()
+        ps_connection.c..
 
         row_count _ cursor.rowcount
         print(row_count, "Record Deleted")
@@ -21,8 +21,8 @@ def deleteInBulk(records):
     finally:
         # closing database connection.
         __ (ps_connection):
-            cursor.close()
-            ps_connection.close()
+            cursor.c..
+            ps_connection.c..
             print("PostgreSQL connection is closed")
 
 # list of tuples contains database IDs

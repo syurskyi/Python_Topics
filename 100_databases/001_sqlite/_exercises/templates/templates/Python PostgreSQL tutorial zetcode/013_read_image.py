@@ -20,14 +20,14 @@ def writeImage(data):
     finally:
 
         __ fout:
-            fout.close()
+            fout.c..
 
 
 try:
     con _ psycopg2.c..(database_'testdb', user_'syurskyi',
                     password_'1234')
 
-    cur _ con.cursor()
+    cur _ con.c..
     cur.e..("SELECT data FROM images LIMIT 1")
     data _ cur.fetchone()[0]
 
@@ -41,4 +41,4 @@ except psycopg2.DatabaseError as e:
 finally:
 
     __ con:
-        con.close()
+        con.c..

@@ -16,9 +16,9 @@
 #
 # # Datatypes:
 # # NULL
-# # INTEGER
+# # IN..
 # # REAL
-# # TEXT
+# # T...
 # # BLOB
 #
 # # Commit our command

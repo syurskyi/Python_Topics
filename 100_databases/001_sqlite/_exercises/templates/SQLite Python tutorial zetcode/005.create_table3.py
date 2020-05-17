@@ -9,11 +9,11 @@ con _ None
 try:
     con _ sqlite.c..('ydb.db')
 
-    cur _ con.cursor()
+    cur _ con.c..
 
     cur.executescript("""
-        DROP TABLE IF EXISTS cars;
-        CREATE TABLE cars(id INT, name TEXT, price INT);
+        DROP T.. IF EXISTS cars;
+        C.. T.. cars(id INT, name T..., price INT);
         INSERT INTO cars VALUES(1,'Audi',52642);
         INSERT INTO cars VALUES(2,'Mercedes',57127);
         INSERT INTO cars VALUES(3,'Skoda',9000);
@@ -24,7 +24,7 @@ try:
         INSERT INTO cars VALUES(8,'Volkswagen',21600);
         """)
 
-    con.commit()
+    con.c..
 
 except sqlite.Error as e:
 
@@ -37,4 +37,4 @@ except sqlite.Error as e:
 finally:
 
     __ con:
-        con.close()
+        con.c..

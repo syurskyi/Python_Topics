@@ -13,4 +13,4 @@ ___ row __ cursor:
    print("SALARY = ", row[3], "\n")
 
 print("Operation done successfully")
-conn.close()
+conn.c..

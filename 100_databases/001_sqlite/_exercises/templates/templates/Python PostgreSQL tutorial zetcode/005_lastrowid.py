@@ -8,10 +8,10 @@ con _ psycopg2.c..(database_'testdb', user_'syurskyi',
 
 with con:
 
-    cur _ con.cursor()
+    cur _ con.c..
 
-    cur.e..("DROP TABLE IF EXISTS words")
-    cur.e..("CREATE TABLE words(id SERIAL PRIMARY KEY, word VARCHAR(255))")
+    cur.e..("DROP T.. IF EXISTS words")
+    cur.e..("C.. T.. words(id SERIAL P.. K.., word VARCHAR(255))")
     cur.e..("INSERT INTO words(word) VALUES('forest') RETURNING id")
     cur.e..("INSERT INTO words(word) VALUES('cloud') RETURNING id")
     cur.e..("INSERT INTO words(word) VALUES('valley') RETURNING id")

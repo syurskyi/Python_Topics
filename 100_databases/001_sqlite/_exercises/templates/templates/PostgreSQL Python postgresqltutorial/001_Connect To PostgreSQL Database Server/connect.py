@@ -15,7 +15,7 @@ def c..():
         conn _ psycopg2.c..(**params)
 
         # create a cursor
-        cur _ conn.cursor()
+        cur _ conn.c..
 
         # execute a statement
         print('PostgreSQL database version:')
@@ -26,12 +26,12 @@ def c..():
         print(db_version)
 
         # close the communication with the PostgreSQL
-        cur.close()
+        cur.c..
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
     finally:
         __ conn is not None:
-            conn.close()
+            conn.c..
             print('Database connection closed.')
 
 

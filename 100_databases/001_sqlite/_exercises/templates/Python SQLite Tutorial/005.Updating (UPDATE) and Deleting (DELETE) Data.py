@@ -6,7 +6,7 @@ _____ ?
 db _ ?.c..('mydb.db')
 
 # Get a cursor object
-cursor _ db.cursor()
+cursor _ db.c..
 
 # Update user with id 1
 newphone _ '7113093164'
@@ -18,6 +18,6 @@ cursor.e..('''UPDATE users SET phone = ? WHERE id = ? ''',
 delete_userid _ 2
 cursor.e..('''DELETE FROM users WHERE id = ? ''', (delete_userid,))
 
-db.commit()
+db.c..
 
-db.close()
+db.c..

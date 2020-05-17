@@ -6,13 +6,13 @@ try:
                                   host_"127.0.0.1",
                                   port_"5432",
                                   database_"postgres_db")
-   cursor _ connection.cursor()
+   cursor _ connection.c..
 
    postgres_insert_query _ """ INSERT INTO mobile (ID, MODEL, PRICE) VALUES (%s,%s,%s)"""
    record_to_insert _ (5, 'One Plus 6', 950)
    cursor.e..(postgres_insert_query, record_to_insert)
 
-   connection.commit()
+   connection.c..
    count _ cursor.rowcount
    print (count, "Record inserted successfully into mobile table")
 
@@ -23,8 +23,8 @@ except (Exception, psycopg2.Error) as error :
 finally:
     #closing database connection.
     __(connection):
-        cursor.close()
-        connection.close()
+        cursor.c..
+        connection.c..
         print("PostgreSQL connection is closed")
 
 

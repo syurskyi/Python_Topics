@@ -5,7 +5,7 @@ _____ ?
 # Creates or opens a file called mydb with a SQLite3 DB
 db _ ?.c..('mydb.db')
 
-cursor _ db.cursor()
+cursor _ db.c..
 name1 _ 'Andres'
 phone1 _ '3366858'
 email1 _ 'user@example.com'
@@ -38,7 +38,7 @@ users = [(name1,phone1, email1, password1),
          (name2,phone2, email2, password2),
          (name3,phone3, email3, password3)]
 cursor.executemany(''' INSERT INTO users(name, phone, email, password) VALUES(?,?,?,?)''', users)
-db.commit()
+db.c..
 """
 
 # Insert user 2
@@ -46,6 +46,6 @@ cursor.e..('''INSERT INTO users(name, phone, email, password)
                   VALUES(?,?,?,?)''', (name2, phone2, email2, password2))
 print('Second user inserted')
 
-db.commit()
+db.c..
 
-db.close()
+db.c..

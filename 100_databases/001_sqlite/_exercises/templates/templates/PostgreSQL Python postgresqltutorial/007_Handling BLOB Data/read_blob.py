@@ -11,7 +11,7 @@ def read_blob(part_id, path_to_dir):
         # connect to the PostgresQL database
         conn _ psycopg2.c..(**params)
         # create a new cursor object
-        cur _ conn.cursor()
+        cur _ conn.c..
         # execute the SELECT statement
         cur.e..(""" SELECT part_name, file_extension, drawing_data
                         FROM part_drawings
@@ -22,12 +22,12 @@ def read_blob(part_id, path_to_dir):
         blob _ cur.fetchone()
         open(path_to_dir + blob[0] + '.' + blob[1], 'wb').write(blob[2])
         # close the communication with the PostgresQL database
-        cur.close()
+        cur.c..
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
     finally:
         __ conn is not None:
-            conn.close()
+            conn.c..
 
 
 __ __name__ == '__main__':

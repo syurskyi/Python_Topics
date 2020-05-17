@@ -7,7 +7,7 @@ _____ ?
 db _ ?.c..('mydb.db')
 
 # Get a cursor object
-cursor _ db.cursor()
+cursor _ db.c..
 
 cursor.e..('''SELECT name, email, phone FROM users''')
 user1 _ cursor.fetchone()  # retrieve the first row
@@ -34,4 +34,4 @@ cursor.e..('''SELECT name, email, phone FROM users WHERE id=?''', (user_id,))
 user _ cursor.fetchone()
 
 
-db.close()
+db.c..

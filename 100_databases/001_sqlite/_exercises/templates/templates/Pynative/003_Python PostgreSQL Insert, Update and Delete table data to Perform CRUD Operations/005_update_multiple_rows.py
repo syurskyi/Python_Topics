@@ -7,12 +7,12 @@ def updateInBulk(records):
                                          host_"127.0.0.1",
                                          port_"5432",
                                          database_"postgres_db")
-        cursor _ ps_connection.cursor()
+        cursor _ ps_connection.c..
 
         # Update multiple records
         sql_update_query _ """Update mobile set price = %s where id = %s"""
         cursor.executemany(sql_update_query, records)
-        ps_connection.commit()
+        ps_connection.c..
 
         row_count _ cursor.rowcount
         print(row_count, "Records Updated")
@@ -23,8 +23,8 @@ def updateInBulk(records):
     finally:
         # closing database connection.
         __ (ps_connection):
-            cursor.close()
-            ps_connection.close()
+            cursor.c..
+            ps_connection.c..
             print("PostgreSQL connection is closed")
 
 tuples _ [(750, 4), (950, 5)]

@@ -12,7 +12,7 @@ try:
     con _ psycopg2.c..(database_'testdb', user_'syurskyi',
                     password_'1234')
 
-    cur _ con.cursor()
+    cur _ con.c..
     fout _ open('cars.csv', 'w')
     cur.copy_to(fout, 'cars', sep_"|")
 
@@ -29,10 +29,10 @@ except IOError as e:
 finally:
 
     __ con:
-        con.close()
+        con.c..
 
     __ fout:
-        fout.close()
+        fout.c..
 
 # $ cat cars.csv
 # 2|Mercedes|57127

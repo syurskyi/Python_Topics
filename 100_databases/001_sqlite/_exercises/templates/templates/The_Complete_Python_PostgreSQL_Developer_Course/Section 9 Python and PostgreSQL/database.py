@@ -28,13 +28,13 @@ class CursorFromConnectionPool:
 
     def __enter__(self):
         self.conn _ Database.get_connection()
-        self.cursor _ self.conn.cursor()
+        self.cursor _ self.conn.c..
         return self.cursor
 
     def __exit__(self, exception_type, exception_value, exception_traceback):
         __ exception_value:  # This is equivalent to `if exception_value is not None`
             self.conn.rollback()
         ____
-            self.cursor.close()
-            self.conn.commit()
+            self.cursor.c..
+            self.conn.c..
         Database.return_connection(self.conn)

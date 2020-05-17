@@ -7,7 +7,7 @@ con _ sqlite.c..('ydb.db')
 
 with con:
 
-    cur _ con.cursor()
+    cur _ con.c..
     cur.e..('SELECT * FROM cars')
 
     col_names _ [cn[0] ___ cn __ cur.description]

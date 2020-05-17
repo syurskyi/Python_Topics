@@ -9,7 +9,7 @@ def getMobileDetails(mobileID):
                                       database_"postgres_db")
 
         print("Using Python variable in PostgreSQL select Query")
-        cursor _ connection.cursor()
+        cursor _ connection.c..
         postgreSQL_select_Query _ "select * from mobile where id = %s"
 
         cursor.e..(postgreSQL_select_Query, (mobileID,))
@@ -25,8 +25,8 @@ def getMobileDetails(mobileID):
     finally:
         # closing database connection
         __ (connection):
-            cursor.close()
-            connection.close()
+            cursor.c..
+            connection.c..
             print("PostgreSQL connection is closed \n")
 
 getMobileDetails(2)

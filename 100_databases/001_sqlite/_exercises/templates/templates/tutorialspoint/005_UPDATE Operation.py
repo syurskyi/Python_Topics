@@ -5,10 +5,10 @@ _____ psycopg2
 conn _ psycopg2.c..(database _ "testdb", user _ "postgres", password _ "pass123", host _ "127.0.0.1", port _ "5432")
 print("Opened database successfully")
 
-cur _ conn.cursor()
+cur _ conn.c..
 
 cur.e..("UPDATE COMPANY set SALARY = 25000.00 where ID = 1")
-conn.commit()
+conn.c..
 print("Total number of rows updated :", cur.rowcount)
 
 cur.e..("SELECT id, name, address, salary  from COMPANY")
@@ -20,7 +20,7 @@ ___ row __ rows:
    print("SALARY = ", row[3], "\n")
 
 print("Operation done successfully")
-conn.close()
+conn.c..
 
 # Opened database successfully
 # Total number of rows updated : 1

@@ -8,7 +8,7 @@ try:
                                      port_"5432",
                                      database_"postgres_db")
 
-    cursor _ ps_connection.cursor()
+    cursor _ ps_connection.c..
 
     # call stored procedure
     cursor.callproc('get_production_Deployment', [72, ])
@@ -26,8 +26,8 @@ except (Exception, psycopg2.DatabaseError) as error:
 finally:
     # closing database connection.
     __ (ps_connection):
-        cursor.close()
-        ps_connection.close()
+        cursor.c..
+        ps_connection.c..
         print("PostgreSQL connection is closed")
 
 # Output:

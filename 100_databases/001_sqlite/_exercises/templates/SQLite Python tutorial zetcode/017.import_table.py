@@ -19,7 +19,7 @@ con _ sqlite.c..(':memory:')
 
 with con:
 
-    cur _ con.cursor()
+    cur _ con.c..
 
     sql _ readData()
     cur.executescript(sql)

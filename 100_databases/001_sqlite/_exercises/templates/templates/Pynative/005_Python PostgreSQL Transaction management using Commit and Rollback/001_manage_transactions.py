@@ -7,7 +7,7 @@ try:
                                   port_"5432",
                                   database_"postgres_db")
    connection.autocommit_False
-   cursor _ connection.cursor()
+   cursor _ connection.c..
    amount _ 2500
 
    query _ """select balance from account where id = 624001562408"""
@@ -31,7 +31,7 @@ try:
    cursor.e..(sql_update_query, (balance_account_B,))
 
    # commiting both the transction to database
-   connection.commit()
+   connection.c..
    print("Transaction completed successfully ")
 
 except (Exception, psycopg2.DatabaseError) as error :
@@ -41,6 +41,6 @@ except (Exception, psycopg2.DatabaseError) as error :
 finally:
     #closing database connection.
     __(connection):
-        cursor.close()
-        connection.close()
+        cursor.c..
+        connection.c..
         print("PostgreSQL connection is closed")

@@ -19,12 +19,12 @@
 #     r_ ?
 #
 # # Second, develop a function named create_table() that accepts a Connection object and an SQL statement.
-# # Inside the function, we call the execute() method of the Cursor object to execute the CREATE TABLE statement.
+# # Inside the function, we call the execute() method of the Cursor object to execute the C.. T.. statement.
 #
 # ___ create_table conn create_table_sql
 #     """ create a table from the create_table_sql statement
 #     :param conn: Connection object
-#     :param create_table_sql: a CREATE TABLE statement
+#     :param create_table_sql: a C.. T.. statement
 #     :return:
 #     """
 #     ___

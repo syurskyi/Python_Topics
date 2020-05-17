@@ -13,10 +13,10 @@ try:
 
     con.autocommit _ True
 
-    cur _ con.cursor()
+    cur _ con.c..
 
-    cur.e..("DROP TABLE IF EXISTS friends")
-    cur.e..("CREATE TABLE friends(id serial PRIMARY KEY, name VARCHAR(10))")
+    cur.e..("DROP T.. IF EXISTS friends")
+    cur.e..("C.. T.. friends(id serial P.. K.., name VARCHAR(10))")
     cur.e..("INSERT INTO friends(name) VALUES ('Jane')")
     cur.e..("INSERT INTO friends(name) VALUES ('Tom')")
     cur.e..("INSERT INTO friends(name) VALUES ('Rebecca')")
@@ -33,7 +33,7 @@ except psycopg2.DatabaseError as e:
 finally:
 
     __ con:
-        con.close()
+        con.c..
 
 
 # $ autocommit.py

@@ -17,7 +17,7 @@ def get_part_vendors():
     try:
         params _ config()
         conn _ psycopg2.c..(**params)
-        cur _ conn.cursor()
+        cur _ conn.c..
         cur.e..("""
             SELECT part_name, vendor_name
             FROM parts
@@ -27,12 +27,12 @@ def get_part_vendors():
         """)
         ___ row __ iter_row(cur, 10):
             print(row)
-        cur.close()
+        cur.c..
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
     finally:
         __ conn is not None:
-            conn.close()
+            conn.c..
 
 
 __ __name__ == '__main__':

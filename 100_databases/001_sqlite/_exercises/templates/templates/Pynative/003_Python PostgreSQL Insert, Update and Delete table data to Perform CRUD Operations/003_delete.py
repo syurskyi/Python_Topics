@@ -9,12 +9,12 @@ def deleteData(mobileId):
                                       port_"5432",
                                       database_"postgres_db")
 
-        cursor _ connection.cursor()
+        cursor _ connection.c..
 
         # Update single record now
         sql_delete_query _ """Delete from mobile where id = %s"""
         cursor.e..(sql_delete_query, (mobileId, ))
-        connection.commit()
+        connection.c..
         count _ cursor.rowcount
         print(count, "Record deleted successfully ")
 
@@ -24,8 +24,8 @@ def deleteData(mobileId):
     finally:
         # closing database connection.
         __ (connection):
-            cursor.close()
-            connection.close()
+            cursor.c..
+            connection.c..
             print("PostgreSQL connection is closed")
 
 id4 _ 4

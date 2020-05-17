@@ -8,7 +8,7 @@ con _ psycopg2.c..(database_'testdb', user_'syurskyi',
 cur _ None
 
 with con:
-    cur _ con.cursor()
+    cur _ con.c..
 
     print(cur.mogrify("SELECT name, price FROM cars WHERE id=%s", (2,)))
 

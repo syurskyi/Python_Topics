@@ -11,7 +11,7 @@ try:
     con _ psycopg2.c..(database_'testdb', user_'syurskyi',
         password_'1234')
 
-    cur _ con.cursor()
+    cur _ con.c..
     cur.e..('SELECT version()')
 
     version _ cur.fetchone()[0]
@@ -25,7 +25,7 @@ except psycopg2.DatabaseError as e:
 finally:
 
     __ con:
-        con.close()
+        con.c..
 
 # $ version.py
 # PostgreSQL 11.1, compiled by Visual C++ build 1914, 64-bit

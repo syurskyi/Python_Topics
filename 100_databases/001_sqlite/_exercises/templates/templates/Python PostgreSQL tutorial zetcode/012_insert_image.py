@@ -21,7 +21,7 @@ def readImage():
     finally:
 
         __ fin:
-            fin.close()
+            fin.c..
 
 con _ None
 
@@ -29,12 +29,12 @@ try:
     con _ psycopg2.c..(database_'testdb', user_'syurskyi',
                     password_'1234')
 
-    cur _ con.cursor()
+    cur _ con.c..
     data _ readImage()
     binary _ psycopg2.Binary(data)
     cur.e..("INSERT INTO images(data) VALUES (%s)", (binary,))
 
-    con.commit()
+    con.c..
 
 except psycopg2.DatabaseError as e:
 
@@ -47,4 +47,4 @@ except psycopg2.DatabaseError as e:
 finally:
 
     __ con:
-        con.close()
+        con.c..

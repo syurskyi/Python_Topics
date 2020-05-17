@@ -6,7 +6,7 @@ try:
                                   host_"127.0.0.1",
                                   port_"5432",
                                   database_"postgres_db")
-    cursor _ connection.cursor()
+    cursor _ connection.c..
     postgreSQL_select_Query _ "select * from mobile"
 
     cursor.e..(postgreSQL_select_Query)
@@ -25,8 +25,8 @@ except (Exception, psycopg2.Error) as error:
 finally:
     # closing database connection.
     __ (connection):
-        cursor.close()
-        connection.close()
+        cursor.c..
+        connection.c..
         print("PostgreSQL connection is closed")
 
 

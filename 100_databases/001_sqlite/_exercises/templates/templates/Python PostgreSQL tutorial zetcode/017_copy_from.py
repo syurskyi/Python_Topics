@@ -12,11 +12,11 @@ try:
     con _ psycopg2.c..(database_'testdb', user_'syurskyi',
                     password_'1234')
 
-    cur _ con.cursor()
+    cur _ con.c..
     f _ open('cars.csv', 'r')
 
     cur.copy_from(f, 'cars', sep_"|")
-    con.commit()
+    con.c..
 
 except psycopg2.DatabaseError as e:
 
@@ -37,10 +37,10 @@ except IOError as e:
 finally:
 
     __ con:
-        con.close()
+        con.c..
 
     __ f:
-        f.close()
+        f.c..
 
 
 # SELECT * FROM cars;

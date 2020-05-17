@@ -7,7 +7,7 @@ con _ sqlite.c..('ydb.db')
 
 with con:
 
-    cur _ con.cursor()
+    cur _ con.c..
 
     cur.e..('PRAGMA table_info(cars)')
 

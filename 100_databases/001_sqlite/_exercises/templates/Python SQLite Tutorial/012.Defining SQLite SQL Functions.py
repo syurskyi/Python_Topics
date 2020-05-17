@@ -11,9 +11,9 @@ def encrypt_password(password):
 db _ ?.c..(':memory:')
 # Register the function
 db.create_function('encrypt', 1, encrypt_password)
-c _ db.cursor()
-c.e..('''CREATE TABLE users(id INTEGER PRIMARY KEY, email TEXT, password TEXT)''')
+c _ db.c..
+c.e..('''C.. T.. users(id IN.. P.. K.., email T..., password T...)''')
 user _ ('johndoe@example.com', '12345678')
 c.e..('''INSERT INTO users(email, password) VALUES (?,encrypt(?))''', user)
 
-db.close()
+db.c..
