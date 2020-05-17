@@ -11,20 +11,20 @@ ___ updateTable(mobileId, price):
         cursor _ connection.c..
 
         print("Table Before updating record ")
-        sql_select_query _ """select * from mobile where id = %s"""
+        sql_select_query _ """select * from mobile w.. id = %s"""
         cursor.e..(sql_select_query, (mobileId, ))
         record _ cursor.f_o..
         print(record)
 
         # Update single record now
-        sql_update_query _ """Update mobile set price = %s where id = %s"""
+        sql_update_query _ """Update mobile set price = %s w.. id = %s"""
         cursor.e..(sql_update_query, (price, mobileId))
         connection.c..
         count _ cursor.rowcount
         print(count, "Record Updated successfully ")
 
         print("Table After updating record ")
-        sql_select_query _ """select * from mobile where id = %s"""
+        sql_select_query _ """select * from mobile w.. id = %s"""
         cursor.e..(sql_select_query, (mobileId,))
         record _ cursor.f_o..
         print(record)

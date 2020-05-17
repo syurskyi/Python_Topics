@@ -3,7 +3,7 @@
 # #     First, create a database connection to the SQLite database using the connect() function.
 # #     Once the database connection created, you can access the database using the Connection object.
 # #     Second, create a Cursor object by calling the cursor() method of the Connection object.
-# #     Third, execute the UPDATE statement by calling the execute() method of the Cursor object.
+# #     Third, execute the U.. statement by calling the execute() method of the Cursor object.
 # #
 # # In this example we will update the priority, begin date, and end date of a specific task in the tasks table.
 # #

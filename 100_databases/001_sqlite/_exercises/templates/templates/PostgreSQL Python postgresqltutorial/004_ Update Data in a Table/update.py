@@ -4,7 +4,7 @@ from config _____ config
 
 ___ update_vendor(vendor_id, vendor_name):
     """ update vendor name based on the vendor id """
-    sql _ """ UPDATE vendors
+    sql _ """ U.. vendors
                 SET vendor_name = %s
                 WHERE vendor_id = %s"""
     conn _ None
@@ -16,7 +16,7 @@ ___ update_vendor(vendor_id, vendor_name):
         conn _ psycopg2.c..(**params)
         # create a new cursor
         cur _ conn.c..
-        # execute the UPDATE  statement
+        # execute the U..  statement
         cur.e..(sql, (vendor_name, vendor_id))
         # get the number of updated rows
         updated_rows _ cur.rowcount

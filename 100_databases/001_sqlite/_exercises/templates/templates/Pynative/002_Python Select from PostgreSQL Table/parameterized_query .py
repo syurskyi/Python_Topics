@@ -10,7 +10,7 @@ ___ getMobileDetails(mobileID):
 
         print("Using Python variable in PostgreSQL select Query")
         cursor _ connection.c..
-        postgreSQL_select_Query _ "select * from mobile where id = %s"
+        postgreSQL_select_Query _ "select * from mobile w.. id = %s"
 
         cursor.e..(postgreSQL_select_Query, (mobileID,))
         mobile_records _ cursor.f_a..

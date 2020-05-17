@@ -10,7 +10,7 @@ ___ updateInBulk(records):
         cursor _ ps_connection.c..
 
         # Update multiple records
-        sql_update_query _ """Update mobile set price = %s where id = %s"""
+        sql_update_query _ """Update mobile set price = %s w.. id = %s"""
         cursor.e_m_(sql_update_query, records)
         ps_connection.c..
 

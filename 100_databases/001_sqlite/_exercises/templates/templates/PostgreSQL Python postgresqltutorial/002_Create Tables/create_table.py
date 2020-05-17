@@ -23,7 +23,7 @@ ___ create_tables():
                 drawing_data BYTEA N.. N..,
                 FOREIGN K.. (part_id)
                 REFERENCES parts (part_id)
-                ON UPDATE CASCADE ON DELETE CASCADE
+                ON U.. CASCADE ON D.. CASCADE
         )
         """,
         """
@@ -33,10 +33,10 @@ ___ create_tables():
                 P.. K.. (vendor_id , part_id),
                 FOREIGN K.. (vendor_id)
                     REFERENCES vendors (vendor_id)
-                    ON UPDATE CASCADE ON DELETE CASCADE,
+                    ON U.. CASCADE ON D.. CASCADE,
                 FOREIGN K.. (part_id)
                     REFERENCES parts (part_id)
-                    ON UPDATE CASCADE ON DELETE CASCADE
+                    ON U.. CASCADE ON D.. CASCADE
         )
         """)
     conn _ None

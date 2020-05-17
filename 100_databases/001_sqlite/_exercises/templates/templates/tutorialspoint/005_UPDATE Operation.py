@@ -7,7 +7,7 @@ print("Opened database successfully")
 
 cur _ conn.c..
 
-cur.e..("UPDATE COMPANY set SALARY = 25000.00 where ID = 1")
+cur.e..("U.. COMPANY set SALARY = 25000.00 w.. ID = 1")
 conn.c..
 print("Total number of rows updated :", cur.rowcount)
 

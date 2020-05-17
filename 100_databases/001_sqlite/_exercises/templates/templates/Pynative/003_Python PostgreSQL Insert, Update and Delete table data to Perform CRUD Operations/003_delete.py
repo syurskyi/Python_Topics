@@ -12,7 +12,7 @@ ___ deleteData(mobileId):
         cursor _ connection.c..
 
         # Update single record now
-        sql_delete_query _ """Delete from mobile where id = %s"""
+        sql_delete_query _ """Delete from mobile w.. id = %s"""
         cursor.e..(sql_delete_query, (mobileId, ))
         connection.c..
         count _ cursor.rowcount

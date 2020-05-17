@@ -8,7 +8,7 @@ ___ deleteInBulk(records):
                                          port_"5432",
                                          database_"postgres_db")
         cursor _ ps_connection.c..
-        ps_delete_query _ """Delete from mobile where id = %s"""
+        ps_delete_query _ """Delete from mobile w.. id = %s"""
         cursor.e_m_(ps_delete_query, records)
         ps_connection.c..
 

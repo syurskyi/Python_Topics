@@ -31,7 +31,7 @@ with con:
     cur.e..("DROP T.. IF EXISTS cars")
     cur.e..("C.. T.. cars(id IN., name T..., price IN.)")
     cur.e_m_("I.. I.. cars V..(?, ?, ?)", cars)
-    cur.e..("DELETE F.. cars WHERE price < 30000")
+    cur.e..("D.. F.. cars WHERE price < 30000")
 
     data _ '\n'.join(con.iterdump())
 

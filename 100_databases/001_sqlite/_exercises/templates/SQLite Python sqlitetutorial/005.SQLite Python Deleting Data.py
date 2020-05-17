@@ -4,9 +4,9 @@
 # # In order to delete data in the SQLite database from a Python program, you use the following steps:
 # #
 # #     First, establish a connection the SQLite database by creating a Connection object using the connect() function.
-# #     Second, to execute a DELETE statement, you need to create a Cursor object using the cursor()
+# #     Second, to execute a D.. statement, you need to create a Cursor object using the cursor()
 # #     method of the Connection object.
-# #     Third, execute the  DELETE statement using the execute() method of the Cursor object.
+# #     Third, execute the  D.. statement using the execute() method of the Cursor object.
 # #     In case you want to pass the arguments to the statement, you use a question mark ( ?) for each argument.
 # #
 # # The following  create_connection() function establishes a database connection to an SQLite database

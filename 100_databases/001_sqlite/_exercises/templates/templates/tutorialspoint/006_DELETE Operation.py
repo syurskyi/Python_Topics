@@ -7,7 +7,7 @@ print("Opened database successfully")
 
 cur _ conn.c..
 
-cur.e..("DELETE from COMPANY where ID=2;")
+cur.e..("D.. from COMPANY w.. ID=2;")
 conn.c..
 print("Total number of rows deleted :", cur.rowcount)
 

@@ -10,24 +10,24 @@ ___
    cursor _ connection.c..
    amount _ 2500
 
-   query _ """select balance from account where id = 624001562408"""
+   query _ """select balance from account w.. id = 624001562408"""
    cursor.e..(query)
    record _ cursor.f_o.. [0]
    balance_account_A  _ int(record)
    balance_account_A -_ amount
 
    # Withdraw from account A  now
-   sql_update_query _ """Update account set balance = %s where id = 624001562408"""
+   sql_update_query _ """Update account set balance = %s w.. id = 624001562408"""
    cursor.e..(sql_update_query,(balance_account_A,))
 
-   query _ """select balance from account where id = 2236781258763"""
+   query _ """select balance from account w.. id = 2236781258763"""
    cursor.e..(query)
    record _ cursor.f_o.. [0]
    balance_account_B _ int(record)
    balance_account_B +_ amount
 
    # Credit to  account B  now
-   sql_update_query _ """Update account set balance = %s where id = 2236781258763"""
+   sql_update_query _ """Update account set balance = %s w.. id = 2236781258763"""
    cursor.e..(sql_update_query, (balance_account_B,))
 
    # commiting both the transction to database

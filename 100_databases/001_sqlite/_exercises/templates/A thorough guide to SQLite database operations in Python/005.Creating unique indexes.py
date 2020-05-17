@@ -14,7 +14,7 @@
 # # Adding a new column and update some record
 # ?.ex.. "ALTER T.. @ ADD COLUMN '@' @"\
 #         .f... tn_? cn_? ct_?
-# ?.ex.. "UPDATE @ SET @_'sebastian_r' WHERE {idf}_123456".\
+# ?.ex.. "U.. @ SET @_'sebastian_r' WHERE {idf}_123456".\
 #         f... tn_table_name, idf_id_column, cn_new_column
 #
 # # Creating an unique index
