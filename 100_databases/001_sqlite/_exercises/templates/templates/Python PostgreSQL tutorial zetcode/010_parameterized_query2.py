@@ -12,7 +12,7 @@ w__ con:
 
     cur _ con.c..
 
-    cur.e..("S.. * F.. cars WHERE id=%(id)s", {'id': uid } )
+    cur.e..("S.. * F.. cars W.. id=%(id)s", {'id': uid } )
 
     row _ cur.f_o..
 

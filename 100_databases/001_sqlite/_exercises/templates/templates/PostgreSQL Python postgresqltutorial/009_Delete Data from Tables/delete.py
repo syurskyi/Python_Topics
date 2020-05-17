@@ -15,7 +15,7 @@ ___ delete_part(part_id):
         # create a new cursor
         cur _ conn.c..
         # execute the U..  statement
-        cur.e..("D.. F.. parts WHERE part_id = %s", (part_id,))
+        cur.e..("D.. F.. parts W.. part_id = %s", (part_id,))
         # get the number of updated rows
         rows_deleted _ cur.rowcount
         # Commit the changes to the database

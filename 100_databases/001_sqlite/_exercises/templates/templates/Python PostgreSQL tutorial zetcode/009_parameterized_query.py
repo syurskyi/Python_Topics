@@ -15,7 +15,7 @@ con _ psycopg2.c..(database_'testdb', user_'syurskyi',
 w__ con:
 
     cur _ con.c..
-    cur.e..("U.. cars SET price=%s WHERE id=%s", (uPrice, uId))
+    cur.e..("U.. cars SET price=%s W.. id=%s", (uPrice, uId))
 
     print _*Number of rows updated: {cur.rowcount}")
 
@@ -23,7 +23,7 @@ w__ con:
 #$ parameterized_query.py
 # Number of rows updated: 1
 #
-# testdb=> S.. * F.. cars WHERE id=1;
+# testdb=> S.. * F.. cars W.. id=1;
 #  id | name | price
 # ----+------+-------
 #   1 | Audi | 62300

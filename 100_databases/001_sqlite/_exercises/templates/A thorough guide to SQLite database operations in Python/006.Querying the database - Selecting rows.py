@@ -14,31 +14,31 @@
 # c _ ?.cu..
 #
 # # 1) Contents of all columns for row that match a certain value in 1 column
-# ?.ex.. 'S.. * F.. @ WHERE @_"Hi World"'.\
+# ?.ex.. 'S.. * F.. @ W.. @_"Hi World"'.\
 #         f.. tn_? cn_c_2
 # all_rows _ ?.f..
 # print('1):' ?
 #
 # # 2) Value of a particular column for rows that match a certain value in column_1
-# ?.ex..('S.. (@) F.. @ WHERE @_"Hi World"'.\
+# ?.ex..('S.. (@) F.. @ W.. @_"Hi World"'.\
 #         f.. coi_c_2 tn_? cn_c_2
 # all_rows _ ?.f..
 # print('2):'?
 #
 # # 3) Value of 2 particular columns for rows that match a certain value in 1 column
-# ?.ex..('S.. @,@ F.. @ WHERE @_"Hi World"'.\
+# ?.ex..('S.. @,@ F.. @ W.. @_"Hi World"'.\
 #         f.. coi1_c_2, coi2_c_3 tn_? cn_c_2
 # all_rows _ ?.f..
 # print('3):' ?
 #
 # # 4) Selecting only up to 10 rows that match a certain value in 1 column
-# ?.ex..('S.. * F.. @ WHERE @_"Hi World" LIMIT 10'.\
+# ?.ex..('S.. * F.. @ W.. @_"Hi World" LIMIT 10'.\
 #         f.. tn_? cn_c_2
 # ten_rows _ ?.f..
 # print('4):' ?
 #
 # # 5) Check if a certain ID exists and print its column contents
-# ?.ex..("S.. * F.. @ WHERE @_?".\
+# ?.ex..("S.. * F.. @ W.. @_?".\
 #         f.. tn_?, cn_c_2, idf_i_c.. (123456,
 # id_exists _ ?.f..
 # __ ?

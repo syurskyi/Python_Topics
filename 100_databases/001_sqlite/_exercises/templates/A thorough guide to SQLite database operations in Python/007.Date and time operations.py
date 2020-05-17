@@ -31,7 +31,7 @@
 # ?.ex.. "ALTER T.. @ ADD COLUMN '@'"\
 #          .f.. tn_? cn_t_c..
 # # update row for the new current date and time column, e.g., 2014-03-06 16:26:37
-# ?.ex.. "U.. @ SET @_TIME('now') WHERE @_'some_id1'"\
+# ?.ex.. "U.. @ SET @_TIME('now') W.. @_'some_id1'"\
 #          .f.. tn_? idf_? cn_t_c..
 #
 # # C) Adding a new column to save date and time and update with current date-time
@@ -40,7 +40,7 @@
 # ?.ex.. "ALTER T.. @ ADD COLUMN '@'"\
 #          .f.. tn_? cn_d_t_c..
 # # update row for the new current date and time column, e.g., 2014-03-06 16:26:37
-# ?.ex.. "U.. @ SET @_(CURRENT_TIMESTAMP) WHERE @_'some_id1'"\
+# ?.ex.. "U.. @ SET @_(CURRENT_TIMESTAMP) W.. @_'some_id1'"\
 #          .f.. tn_? idf_? cn_d_t_c..
 #
 # # The database should now look like this:
@@ -48,13 +48,13 @@
 # # "some_id1" "2014-03-06"   "16:42:30"  "2014-03-06 16:42:30"
 #
 # # 4) Retrieve all IDs of entries between 2 date_times
-# ?.ex.. "S.. @ F.. @ WHERE @ BETWEEN '2013-03-06 10:10:10' AND '2015-03-06 10:10:10'".\
+# ?.ex.. "S.. @ F.. @ W.. @ BETWEEN '2013-03-06 10:10:10' AND '2015-03-06 10:10:10'".\
 #     f.. idf_? tn_? cn_d_t_c..
 # all_date_times _ ?.f..
 # print('4) all entries between ~2013 - 2015:' ?
 #
 # # 5) Retrieve all IDs of entries between that are older than 1 day and 12 hrs
-# ?.ex.. "S.. @ F.. @ WHERE DATE('now') - @ >_ 1 AND DATE('now') - @ >_ 12".\
+# ?.ex.. "S.. @ F.. @ W.. DATE('now') - @ >_ 1 AND DATE('now') - @ >_ 12".\
 #     f.. idf_? tn_? dc_? tc_?
 # all_1day12hrs_entries _ ?.f..
 # print('5) entries older than 1 day:' ?

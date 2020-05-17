@@ -30,7 +30,7 @@
 # # To retrive data with conditions, use again the "?" placeholder:
 #
 # user_id _ 3
-# ?.e..('''S.. name, email, phone F.. users WHERE id=?''' ?
+# ?.e..('''S.. name, email, phone F.. users W.. id=?''' ?
 # user _ ?.f_o..
 #
 #

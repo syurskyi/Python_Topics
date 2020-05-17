@@ -16,7 +16,7 @@ ___ read_blob(part_id, path_to_dir):
         cur.e..(""" S.. part_name, file_extension, drawing_data
                         F.. part_drawings
                         INNER JOIN parts on parts.part_id = part_drawings.part_id
-                        WHERE parts.part_id = %s """,
+                        W.. parts.part_id = %s """,
                     (part_id,))
 
         blob _ cur.f_o..

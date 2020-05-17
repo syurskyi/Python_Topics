@@ -11,6 +11,6 @@
 # w__ ?
 #
 #     cur _ con.c..
-#     ?.e.. "U.. cars SET price=? WHERE id=?", _P.. _I..
+#     ?.e.. "U.. cars SET price=? W.. id=?", _P.. _I..
 #
 #     print _*Number of rows updated: ?.r..

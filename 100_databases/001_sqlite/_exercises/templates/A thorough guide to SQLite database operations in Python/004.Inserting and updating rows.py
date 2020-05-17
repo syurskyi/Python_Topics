@@ -22,7 +22,7 @@
 #         f.. tn_? idf_? cn_?
 #
 # # C) Updates the newly inserted or pre-existing entry
-# ?.ex..("U.. @ SET @_('Hi World') WHERE @_(123456)".\
+# ?.ex..("U.. @ SET @_('Hi World') W.. @_(123456)".\
 #         f.. tn_? cn_? idf_?
 #
 # ?.co..

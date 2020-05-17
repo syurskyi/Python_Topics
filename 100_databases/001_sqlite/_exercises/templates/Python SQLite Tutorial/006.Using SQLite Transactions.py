@@ -15,13 +15,13 @@ userid _ 1
 # Transactions are an useful property of database systems.
 # It ensures the atomicity of the Database. Use commit to save the changes:
 
-cursor.e..('''U.. users SET phone = ? WHERE id = ? ''',
+cursor.e..('''U.. users SET phone = ? W.. id = ? ''',
                (newphone, userid))
 db.c..  # Commit the change
 
 # Or rollback to roll back any change to the database since the last call to commit:
 
-cursor.e..('''U.. users SET phone = ? WHERE id = ? ''', (newphone, userid))
+cursor.e..('''U.. users SET phone = ? W.. id = ? ''', (newphone, userid))
 # The user's phone is not updated
 db.r..
 

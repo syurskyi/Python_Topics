@@ -6,7 +6,7 @@ ___ update_vendor(vendor_id, vendor_name):
     """ update vendor name based on the vendor id """
     sql _ """ U.. vendors
                 SET vendor_name = %s
-                WHERE vendor_id = %s"""
+                W.. vendor_id = %s"""
     conn _ w..
     updated_rows _ 0
     ___

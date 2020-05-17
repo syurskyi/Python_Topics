@@ -10,7 +10,7 @@ w__ con:
 
     cur _ con.c..
     cur.e..("""S.. table_name F.. information_schema.tables
-        WHERE table_schema = 'public'""")
+        W.. table_schema = 'public'""")
 
     rows _ cur.f_a..
 

@@ -48,7 +48,7 @@
 #         c_d_|? 1 _ 0
 #     ___ col __ c_d..
 #         ?.ex...('S.. (@) F.. @ '
-#                   'WHERE @ IS N.. N..'.f.. c.. t_n..
+#                   'W.. @ IS N.. N..'.f.. c.. t_n..
 #         # In my case this approach resulted in a
 #         # better performance than using COUNT
 #         number_rows _ le. ?.f..
