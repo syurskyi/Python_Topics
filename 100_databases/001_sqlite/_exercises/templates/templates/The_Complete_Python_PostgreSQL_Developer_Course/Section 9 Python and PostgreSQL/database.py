@@ -6,32 +6,32 @@ class Database:
     __connection_pool _ None
 
     @staticmethod
-    def initialise(**kwargs):
+    ___ initialise(**kwargs):
         Database.__connection_pool _ pool.SimpleConnectionPool(1, 10, **kwargs)
 
     @staticmethod
-    def get_connection():
-        return Database.__connection_pool.getconn()
+    ___ get_connection():
+        r_ Database.__connection_pool.getconn()
 
     @staticmethod
-    def return_connection(connection):
+    ___ return_connection(connection):
         Database.__connection_pool.putconn(connection)
 
     @staticmethod
-    def close_all_connections():
+    ___ close_all_connections():
         Database.__connection_pool.closeall()
 
 class CursorFromConnectionPool:
-    def __init__(self):
+    ___ __init__(self):
         self.conn _ None
         self.cursor _ None
 
-    def __enter__(self):
+    ___ __enter__(self):
         self.conn _ Database.get_connection()
         self.cursor _ self.conn.c..
-        return self.cursor
+        r_ self.cursor
 
-    def __exit__(self, exception_type, exception_value, exception_traceback):
+    ___ __exit__(self, exception_type, exception_value, exception_traceback):
         __ exception_value:  # This is equivalent to `if exception_value is not None`
             self.conn.rollback()
         ____

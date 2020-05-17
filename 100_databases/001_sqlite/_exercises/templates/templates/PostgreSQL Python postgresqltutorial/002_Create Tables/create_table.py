@@ -2,7 +2,7 @@ _____ psycopg2
 from config _____ config
 
 
-def create_tables():
+___ create_tables():
     """ create tables in the PostgreSQL database"""
     commands _ (
         """

@@ -1,7 +1,7 @@
 _____ psycopg2
 
 
-def deleteData(mobileId):
+___ deleteData(mobileId):
     ___
         connection _ psycopg2.c..(user_"syurskyi",
                                       password_"1234",

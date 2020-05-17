@@ -14,7 +14,7 @@ cars _ (
 )
 
 
-def writeData(data):
+___ writeData(data):
 
     f _ open('cars.sql', 'w')
 

@@ -3,7 +3,7 @@ _____ psycopg2
 from config _____ config
 
 
-def write_blob(part_id, path_to_file, file_extension):
+___ write_blob(part_id, path_to_file, file_extension):
     """ insert a BLOB into a table """
     conn _ None
     ___

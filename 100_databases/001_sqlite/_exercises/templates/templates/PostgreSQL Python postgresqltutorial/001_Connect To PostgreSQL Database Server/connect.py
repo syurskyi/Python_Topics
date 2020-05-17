@@ -3,7 +3,7 @@ _____ psycopg2
 from config _____ config
 
 
-def c..():
+___ c..():
     """ Connect to the PostgreSQL database server """
     conn _ None
     ___

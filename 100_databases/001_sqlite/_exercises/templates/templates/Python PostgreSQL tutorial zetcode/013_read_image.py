@@ -4,7 +4,7 @@
 _____ psycopg2
 _____ ___
 
-def writeImage(data):
+___ writeImage(data):
 
     fout _ None
 

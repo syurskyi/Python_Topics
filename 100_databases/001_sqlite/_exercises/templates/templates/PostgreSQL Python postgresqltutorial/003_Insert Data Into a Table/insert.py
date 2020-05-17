@@ -2,7 +2,7 @@ _____ psycopg2
 from config _____ config
 
 
-def insert_vendor(vendor_name):
+___ insert_vendor(vendor_name):
     """ insert a new vendor into the vendors table """
     sql _ """I.. I.. vendors(vendor_name)
              V..(%s) RETURNING vendor_id;"""
@@ -29,10 +29,10 @@ def insert_vendor(vendor_name):
         __ conn is not None:
             conn.c..
 
-    return vendor_id
+    r_ vendor_id
 
 
-def insert_vendor_list(vendor_list):
+___ insert_vendor_list(vendor_list):
     """ insert multiple vendors into the vendors table  """
     sql _ "I.. I.. vendors(vendor_name) V..(%s)"
     conn _ None

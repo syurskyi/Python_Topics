@@ -4,14 +4,14 @@
 _____ ? __ sqlite
 _____ ___
 
-def readImage():
+___ readImage():
 
     fin _ None
 
     ___
         fin _ open("Camera.png", "rb")
         img _ fin.read()
-        return img
+        r_ img
 
     ______ IOError __ e:
 

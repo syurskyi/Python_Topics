@@ -4,14 +4,14 @@
 _____ psycopg2
 _____ ___
 
-def readImage():
+___ readImage():
 
     fin _ None
 
     ___
         fin _ open("sid.png", "rb")
         img _ fin.read()
-        return img
+        r_ img
 
     ______ IOError __ e:
 

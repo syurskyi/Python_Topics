@@ -1,6 +1,6 @@
 _____ psycopg2
 
-def updateTable(mobileId, price):
+___ updateTable(mobileId, price):
     ___
         connection _ psycopg2.c..(user_"syurskyi",
                                       password_"1234",

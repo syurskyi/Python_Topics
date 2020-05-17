@@ -1,6 +1,6 @@
 _____ psycopg2
 
-def updateInBulk(records):
+___ updateInBulk(records):
     ___
         ps_connection _ psycopg2.c..(user_"syurskyi",
                                          password_"1234",

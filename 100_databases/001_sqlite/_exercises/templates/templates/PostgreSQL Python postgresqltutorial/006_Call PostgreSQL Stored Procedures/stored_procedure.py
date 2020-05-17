@@ -3,7 +3,7 @@ _____ psycopg2
 from config _____ config
 
 
-def get_parts(vendor_id):
+___ get_parts(vendor_id):
     """ get parts provided by a vendor specified by the vendor_id """
     conn _ None
     ___

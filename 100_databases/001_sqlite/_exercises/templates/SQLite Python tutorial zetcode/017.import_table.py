@@ -4,7 +4,7 @@
 _____ ? __ sqlite
 
 
-def readData():
+___ readData():
 
     f _ open('cars.sql', 'r')
 
@@ -12,7 +12,7 @@ def readData():
 
         data _ f.read()
 
-        return data
+        r_ data
 
 
 con _ sqlite.c..(':memory:')

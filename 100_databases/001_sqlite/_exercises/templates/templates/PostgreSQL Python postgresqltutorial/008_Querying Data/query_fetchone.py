@@ -3,7 +3,7 @@ _____ psycopg2
 from config _____ config
 
 
-def get_vendors():
+___ get_vendors():
     """ query data from the vendors table """
     conn _ None
     ___

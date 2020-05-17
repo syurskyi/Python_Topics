@@ -5,7 +5,7 @@ _____ ? __ sqlite
 _____ ___
 
 
-def writeImage(data):
+___ writeImage(data):
     fout _ None
 
     ___

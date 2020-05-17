@@ -3,7 +3,7 @@ _____ psycopg2
 from config _____ config
 
 
-def iter_row(cursor, size_10):
+___ iter_row(cursor, size_10):
     while True:
         rows _ cursor.fetchmany(size)
         __ not rows:
@@ -11,7 +11,7 @@ def iter_row(cursor, size_10):
         ___ row __ rows:
             yield row
 
-def get_part_vendors():
+___ get_part_vendors():
     """ query part and vendor data from multiple tables"""
     conn _ None
     ___

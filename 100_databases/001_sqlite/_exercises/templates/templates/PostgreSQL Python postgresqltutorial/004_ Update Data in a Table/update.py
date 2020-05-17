@@ -2,7 +2,7 @@ _____ psycopg2
 from config _____ config
 
 
-def update_vendor(vendor_id, vendor_name):
+___ update_vendor(vendor_id, vendor_name):
     """ update vendor name based on the vendor id """
     sql _ """ UPDATE vendors
                 SET vendor_name = %s
@@ -30,7 +30,7 @@ def update_vendor(vendor_id, vendor_name):
         __ conn is not None:
             conn.c..
 
-    return updated_rows
+    r_ updated_rows
 
 
 __ __name__ == '__main__':

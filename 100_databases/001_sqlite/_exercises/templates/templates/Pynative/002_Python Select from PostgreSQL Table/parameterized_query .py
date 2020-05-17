@@ -1,6 +1,6 @@
 _____ psycopg2
 
-def getMobileDetails(mobileID):
+___ getMobileDetails(mobileID):
     ___
         connection _ psycopg2.c..(user_"syurskyi",
                                       password_"1234",

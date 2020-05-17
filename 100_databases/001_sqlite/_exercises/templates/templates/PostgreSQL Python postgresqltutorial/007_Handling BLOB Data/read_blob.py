@@ -2,7 +2,7 @@
 _____ psycopg2
 from config _____ config
 
-def read_blob(part_id, path_to_dir):
+___ read_blob(part_id, path_to_dir):
     """ read BLOB data from a table """
     conn _ None
     ___

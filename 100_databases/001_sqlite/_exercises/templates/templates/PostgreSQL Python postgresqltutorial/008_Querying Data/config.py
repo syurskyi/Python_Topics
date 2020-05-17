@@ -2,7 +2,7 @@
 from configparser _____ ConfigParser
 
 
-def config(filename_'database.ini', section_'postgresql'):
+___ config(filename_'database.ini', section_'postgresql'):
     # create a parser
     parser _ ConfigParser()
     # read config file
@@ -17,5 +17,5 @@ def config(filename_'database.ini', section_'postgresql'):
     ____
         r_ E..('Section @ not found in the @ file'.f..(section, filename))
 
-    return db
+    r_ db
 

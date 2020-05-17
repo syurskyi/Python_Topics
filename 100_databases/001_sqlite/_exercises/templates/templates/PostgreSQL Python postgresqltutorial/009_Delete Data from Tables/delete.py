@@ -3,7 +3,7 @@
 _____ psycopg2
 from config _____ config
 
-def delete_part(part_id):
+___ delete_part(part_id):
     """ delete part by part id """
     conn _ None
     rows_deleted _ 0
@@ -28,7 +28,7 @@ def delete_part(part_id):
         __ conn is not None:
             conn.c..
 
-    return rows_deleted
+    r_ rows_deleted
 
 __ __name__ == '__main__':
     deleted_rows _ delete_part(2)

@@ -2,7 +2,7 @@
 _____ psycopg2
 from config _____ config
 
-def get_parts():
+___ get_parts():
     """ query parts from the parts table """
     conn _ None
     ___
