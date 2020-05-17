@@ -4,29 +4,29 @@
 _____ ? __ ?
 
 
-___ readData():
+___ readData
 
-    f _ o..('cars.sql', 'r')
+    f _ o.. 'cars.sql' _
 
-    w__ f:
+    w__ ?
 
-        data _ f.r..
+        data _ ?.r..
 
-        r_ data
+        r_ ?
 
 
-con _ ?.c..(':memory:')
+con _ ?.c.. ':memory:'
 
-w__ con:
+w__ ?
 
-    cur _ con.c..
+    cur _ ?.c..
 
-    sql _ readData()
-    cur.e_s_(sql)
+    sql _ r..
+    ?.e_s_ ?
 
-    cur.e..("S.. * F.. cars")
+    ?.e.. "S.. _ F.. cars"
 
-    rows _ cur.f_a..
+    rows _ ?.f_a..
 
-    ___ row __ rows:
-        print(row)
+    ___ row __ ?
+        print ?
