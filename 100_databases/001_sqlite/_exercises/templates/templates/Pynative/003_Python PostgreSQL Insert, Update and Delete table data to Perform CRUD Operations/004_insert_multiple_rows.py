@@ -12,7 +12,7 @@ def bulkInsert(records):
                            V.. (%s,%s,%s) """
 
         # executemany() to insert multiple rows rows
-        result _ cursor.executemany(sql_insert_query, records)
+        result _ cursor.e_m_(sql_insert_query, records)
         connection.c..
         print(cursor.rowcount, "Record inserted successfully into mobile table")
 

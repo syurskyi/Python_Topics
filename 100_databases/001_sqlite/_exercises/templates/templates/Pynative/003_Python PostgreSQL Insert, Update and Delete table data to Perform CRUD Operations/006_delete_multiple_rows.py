@@ -9,7 +9,7 @@ def deleteInBulk(records):
                                          database_"postgres_db")
         cursor _ ps_connection.c..
         ps_delete_query _ """Delete from mobile where id = %s"""
-        cursor.executemany(ps_delete_query, records)
+        cursor.e_m_(ps_delete_query, records)
         ps_connection.c..
 
         row_count _ cursor.rowcount

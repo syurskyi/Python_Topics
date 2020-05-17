@@ -44,7 +44,7 @@ def insert_vendor_list(vendor_list):
         # create a new cursor
         cur _ conn.c..
         # execute the I.. statement
-        cur.executemany(sql,vendor_list)
+        cur.e_m_(sql,vendor_list)
         # commit the changes to the database
         conn.c..
         # close communication with the database

@@ -25,6 +25,6 @@ with con:
     cur.e..("C.. T.. cars(id SERIAL P.. K.., name VARCHAR(255), price INT)")
 
     query _ "I.. I.. cars (id, name, price) V.. (%s, %s, %s)"
-    cur.executemany(query, cars)
+    cur.e_m_(query, cars)
 
     con.c..

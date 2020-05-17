@@ -11,7 +11,7 @@ def updateInBulk(records):
 
         # Update multiple records
         sql_update_query _ """Update mobile set price = %s where id = %s"""
-        cursor.executemany(sql_update_query, records)
+        cursor.e_m_(sql_update_query, records)
         ps_connection.c..
 
         row_count _ cursor.rowcount
