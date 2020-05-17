@@ -1,16 +1,16 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
-_____ ? __ ?
-
-con _ ?.c..('ydb.db')
-
-w__ con:
-
-    cur _ con.c..
-    cur.e..("S.. * F.. cars")
-
-    rows _ cur.f_a..
-
-    ___ row __ rows:
-        print _*{row[0]} {row[1]} {row[2]}")
+# #!/usr/bin/env python3
+# # -*- coding: utf-8 -*-
+#
+# _____ ? __ ?
+#
+# con _ ?.c.. 'ydb.db'
+#
+# w__ ?
+#
+#     cur _ ?.c..
+#     ?.e.. "S.. * F.. cars"
+#
+#     rows _ ?.f_a..
+#
+#     ___ row __ ?
+#         print _* ? 0 ? 1 ? 2
