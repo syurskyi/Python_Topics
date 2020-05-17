@@ -30,6 +30,6 @@ ___ read_blob(part_id, path_to_dir):
             conn.c..
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     read_blob(1, 'images/simtray.png')
     read_blob(2, 'images/speaker.png')

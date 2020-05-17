@@ -31,7 +31,7 @@ ___ add_part(part_name, vendor_list):
             conn.c..
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     add_part('SIM Tray', (1, 2))
     add_part('Speaker', (3, 4))
     add_part('Vibrator', (5, 6))

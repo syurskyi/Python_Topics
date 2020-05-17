@@ -4,10 +4,10 @@ from config _____ config
 
 
 ___ iter_row(cursor, size_10):
-    while True:
+    w__ T..
         rows _ cursor.fetchmany(size)
         __ not rows:
-            break
+            b..
         ___ row __ rows:
             yield row
 
@@ -35,5 +35,5 @@ ___ get_part_vendors():
             conn.c..
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     get_part_vendors()

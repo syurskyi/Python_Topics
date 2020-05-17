@@ -11,11 +11,11 @@ w__ con:
     cur _ con.c..
     cur.e..("S.. * F.. cars")
 
-    while True:
+    w__ T..
 
         row _ cur.f_o..
 
-        __ row == w..:
-            break
+        __ row __ w..:
+            b..
 
         print _*{row[0]} {row[1]} {row[2]}")

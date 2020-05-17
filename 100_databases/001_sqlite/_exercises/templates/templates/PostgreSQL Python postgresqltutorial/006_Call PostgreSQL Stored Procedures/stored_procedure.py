@@ -18,7 +18,7 @@ ___ get_parts(vendor_id):
         cur.callproc('get_parts_by_vendor', (vendor_id,))
         # process the result set
         row _ cur.f_o..
-        while row is not w..:
+        w__ row is not w..:
             print(row)
             row _ cur.f_o..
         # close the communication with the PostgreSQL database server
@@ -30,5 +30,5 @@ ___ get_parts(vendor_id):
             conn.c..
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     get_parts(1)

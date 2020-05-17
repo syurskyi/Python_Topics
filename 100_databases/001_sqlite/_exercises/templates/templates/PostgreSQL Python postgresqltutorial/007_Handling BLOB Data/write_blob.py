@@ -30,6 +30,6 @@ ___ write_blob(part_id, path_to_file, file_extension):
             conn.c..
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     write_blob(1, 'images/simtray.png', 'png')
     write_blob(2, 'images/speaker.png', 'png')

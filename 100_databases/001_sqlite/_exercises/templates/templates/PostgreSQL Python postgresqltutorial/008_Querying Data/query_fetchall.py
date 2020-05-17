@@ -21,5 +21,5 @@ ___ get_parts():
         __ conn is not w..:
             conn.c..
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     get_parts()

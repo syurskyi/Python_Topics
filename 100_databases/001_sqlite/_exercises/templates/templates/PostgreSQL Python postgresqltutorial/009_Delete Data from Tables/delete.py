@@ -30,6 +30,6 @@ ___ delete_part(part_id):
 
     r_ rows_deleted
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     deleted_rows _ delete_part(2)
     print('The number of deleted rows: ', deleted_rows)

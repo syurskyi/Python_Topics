@@ -14,7 +14,7 @@ ___ get_vendors():
         print("The number of parts: ", cur.rowcount)
         row _ cur.f_o..
 
-        while row is not w..:
+        w__ row is not w..:
             print(row)
             row _ cur.f_o..
 
@@ -26,5 +26,5 @@ ___ get_vendors():
             conn.c..
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     get_vendors()

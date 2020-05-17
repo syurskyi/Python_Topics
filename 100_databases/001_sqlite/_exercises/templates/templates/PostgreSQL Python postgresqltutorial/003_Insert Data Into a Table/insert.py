@@ -56,7 +56,7 @@ ___ insert_vendor_list(vendor_list):
             conn.c..
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     # insert one vendor
     insert_vendor("3M Co.")
     # insert multiple vendors

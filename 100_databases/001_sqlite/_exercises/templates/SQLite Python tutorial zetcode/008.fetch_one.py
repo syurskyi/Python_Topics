@@ -5,16 +5,16 @@ _____ ? __ ?
 
 con _ ?.c..('ydb.db')
 
-w__ con:
+w__ ?
 
-    cur _ con.c..
-    cur.e..("S.. * F.. cars")
+    cur _ ?.c..
+    ?.e.. "S.. * F.. cars"
 
-    while True:
+    w__ T..
 
-        row _ cur.f_o..
+        row _ ?.f_o..
 
-        __ row == w..:
-            break
+        __ row __ w..
+            b..
 
-        print _*{row[0]} {row[1]} {row[2]}")
+        print _* ? 0 ? 1 ? 2

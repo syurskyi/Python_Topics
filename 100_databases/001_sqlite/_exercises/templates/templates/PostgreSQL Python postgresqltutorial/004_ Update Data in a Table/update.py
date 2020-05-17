@@ -33,5 +33,5 @@ ___ update_vendor(vendor_id, vendor_name):
     r_ updated_rows
 
 
-__ __name__ == '__main__':
+__ __name__ __ '__main__':
     update_vendor('1', '3M Corp' )
