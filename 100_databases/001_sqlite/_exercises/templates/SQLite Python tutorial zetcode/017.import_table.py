@@ -22,7 +22,7 @@ with con:
     cur _ con.c..
 
     sql _ readData()
-    cur.executescript(sql)
+    cur.e_s_(sql)
 
     cur.e..("S.. * F.. cars")
 

@@ -11,7 +11,7 @@ ___
 
     cur _ con.c..
 
-    cur.executescript("""
+    cur.e_s_("""
         DROP T.. IF EXISTS cars;
         C.. T.. cars(id INT, name T..., price INT);
         I.. I.. cars V..(1,'Audi',52642);
