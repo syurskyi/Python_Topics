@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
-import sqlite3
+_____ ?
 
-conn = sqlite3.connect('test.db')
+conn _ ?.c..('test.db')
 
 print("Opened database successfully")

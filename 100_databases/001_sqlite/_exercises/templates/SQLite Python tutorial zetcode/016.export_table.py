@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import sqlite3 as sqlite
+_____ ? as sqlite
 
-cars = (
+cars _ (
     (1, 'Audi', 52643),
     (2, 'Mercedes', 57642),
     (3, 'Skoda', 9000),
@@ -16,23 +16,23 @@ cars = (
 
 def writeData(data):
 
-    f = open('cars.sql', 'w')
+    f _ open('cars.sql', 'w')
 
     with f:
         f.write(data)
 
 
-con = sqlite.connect(':memory:')
+con _ sqlite.c..(':memory:')
 
 with con:
 
-    cur = con.cursor()
+    cur _ con.cursor()
 
-    cur.execute("DROP TABLE IF EXISTS cars")
-    cur.execute("CREATE TABLE cars(id INT, name TEXT, price INT)")
+    cur.e..("DROP TABLE IF EXISTS cars")
+    cur.e..("CREATE TABLE cars(id INT, name TEXT, price INT)")
     cur.executemany("INSERT INTO cars VALUES(?, ?, ?)", cars)
-    cur.execute("DELETE FROM cars WHERE price < 30000")
+    cur.e..("DELETE FROM cars WHERE price < 30000")
 
-    data = '\n'.join(con.iterdump())
+    data _ '\n'.join(con.iterdump())
 
     writeData(data)

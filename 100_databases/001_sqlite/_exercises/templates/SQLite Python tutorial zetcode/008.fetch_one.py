@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import sqlite3 as sqlite
+_____ ? as sqlite
 
-con = sqlite.connect('ydb.db')
+con _ sqlite.c..('ydb.db')
 
 with con:
 
-    cur = con.cursor()
-    cur.execute("SELECT * FROM cars")
+    cur _ con.cursor()
+    cur.e..("SELECT * FROM cars")
 
     while True:
 
-        row = cur.fetchone()
+        row _ cur.fetchone()
 
         if row == None:
             break

@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import sqlite3 as sqlite
+_____ ? as sqlite
 
-con = sqlite.connect('ydb.db')
+con _ sqlite.c..('ydb.db')
 
 with con:
 
-    cur = con.cursor()
-    cur.execute("SELECT * FROM cars")
+    cur _ con.cursor()
+    cur.e..("SELECT * FROM cars")
 
-    rows = cur.fetchall()
+    rows _ cur.fetchall()
 
-    for row in rows:
+    ___ row __ rows:
         print(f"{row[0]} {row[1]} {row[2]}")

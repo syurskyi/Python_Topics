@@ -1,12 +1,12 @@
 #!/usr/bin/python
 
-import sqlite3
+_____ ?
 
-conn = sqlite3.connect('test.db')
+conn _ ?.c..('test.db')
 print("Opened database successfully")
 
-cursor = conn.execute("SELECT id, name, address, salary from COMPANY")
-for row in cursor:
+cursor _ conn.e..("SELECT id, name, address, salary from COMPANY")
+___ row __ cursor:
    print("ID = ", row[0])
    print("NAME = ", row[1])
    print("ADDRESS = ", row[2])

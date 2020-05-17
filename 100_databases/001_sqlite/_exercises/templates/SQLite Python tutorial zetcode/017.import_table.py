@@ -1,32 +1,32 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import sqlite3 as sqlite
+_____ ? as sqlite
 
 
 def readData():
 
-    f = open('cars.sql', 'r')
+    f _ open('cars.sql', 'r')
 
     with f:
 
-        data = f.read()
+        data _ f.read()
 
         return data
 
 
-con = sqlite.connect(':memory:')
+con _ sqlite.c..(':memory:')
 
 with con:
 
-    cur = con.cursor()
+    cur _ con.cursor()
 
-    sql = readData()
+    sql _ readData()
     cur.executescript(sql)
 
-    cur.execute("SELECT * FROM cars")
+    cur.e..("SELECT * FROM cars")
 
-    rows = cur.fetchall()
+    rows _ cur.fetchall()
 
-    for row in rows:
+    ___ row __ rows:
         print(row)

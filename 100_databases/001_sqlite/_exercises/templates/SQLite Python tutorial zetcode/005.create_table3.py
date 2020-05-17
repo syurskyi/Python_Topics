@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import sqlite3 as sqlite
-import sys
+_____ ? as sqlite
+_____ ___
 
-con = None
+con _ None
 
 try:
-    con = sqlite.connect('ydb.db')
+    con _ sqlite.c..('ydb.db')
 
-    cur = con.cursor()
+    cur _ con.cursor()
 
     cur.executescript("""
         DROP TABLE IF EXISTS cars;
@@ -32,7 +32,7 @@ except sqlite.Error as e:
         con.rollback()
 
     print(f"Error {e.args[0]}")
-    sys.exit(1)
+    ___.exit(1)
 
 finally:
 

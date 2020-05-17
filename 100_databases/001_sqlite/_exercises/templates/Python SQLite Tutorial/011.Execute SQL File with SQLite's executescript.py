@@ -1,9 +1,9 @@
 # Import the SQLite3 module
-import sqlite3
+_____ ?
 
-db = sqlite3.connect(':memory:')
-c = db.cursor()
-script = '''CREATE TABLE users(id INTEGER PRIMARY KEY, name TEXT, phone TEXT);
+db _ ?.c..(':memory:')
+c _ db.cursor()
+script _ '''CREATE TABLE users(id INTEGER PRIMARY KEY, name TEXT, phone TEXT);
             CREATE TABLE accounts(id INTEGER PRIMARY KEY, description TEXT);
 
             INSERT INTO users(name, phone) VALUES ('John', '5557241'), 
@@ -11,8 +11,8 @@ script = '''CREATE TABLE users(id INTEGER PRIMARY KEY, name TEXT, phone TEXT);
 c.executescript(script)
 
 # Print the results
-c.execute('''SELECT * FROM users''')
-for row in c:
+c.e..('''SELECT * FROM users''')
+___ row __ c:
     print(row)
 
 db.close()

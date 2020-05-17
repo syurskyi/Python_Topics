@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import sqlite3 as sqlite
+_____ ? as sqlite
 
-con = sqlite.connect('ydb.db')
+con _ sqlite.c..('ydb.db')
 
 with con:
 
-    cur = con.cursor()
-    cur.execute("SELECT name FROM sqlite_master WHERE type='table'")
+    cur _ con.cursor()
+    cur.e..("SELECT name FROM sqlite_master WHERE type='table'")
 
-    rows = cur.fetchall()
+    rows _ cur.fetchall()
 
-    for row in rows:
+    ___ row __ rows:
         print(row[0])

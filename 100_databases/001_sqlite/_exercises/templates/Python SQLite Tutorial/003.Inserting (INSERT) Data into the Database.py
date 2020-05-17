@@ -1,24 +1,24 @@
-import sqlite3
+_____ ?
 
 # Create a database in RAM
 # db = sqlite3.connect(':memory:')
 # Creates or opens a file called mydb with a SQLite3 DB
-db = sqlite3.connect('mydb.db')
+db _ ?.c..('mydb.db')
 
-cursor = db.cursor()
-name1 = 'Andres'
-phone1 = '3366858'
-email1 = 'user@example.com'
+cursor _ db.cursor()
+name1 _ 'Andres'
+phone1 _ '3366858'
+email1 _ 'user@example.com'
 # A very secure password
-password1 = '12345'
+password1 _ '12345'
 
-name2 = 'John'
-phone2 = '5557241'
-email2 = 'johndoe@example.com'
-password2 = 'abcdef'
+name2 _ 'John'
+phone2 _ '5557241'
+email2 _ 'johndoe@example.com'
+password2 _ 'abcdef'
 
 # Insert user 1
-cursor.execute('''INSERT INTO users(name, phone, email, password)
+cursor.e..('''INSERT INTO users(name, phone, email, password)
                   VALUES(?,?,?,?)''', (name1, phone1, email1, password1))
 print('First user inserted')
 
@@ -42,7 +42,7 @@ db.commit()
 """
 
 # Insert user 2
-cursor.execute('''INSERT INTO users(name, phone, email, password)
+cursor.e..('''INSERT INTO users(name, phone, email, password)
                   VALUES(?,?,?,?)''', (name2, phone2, email2, password2))
 print('Second user inserted')
 

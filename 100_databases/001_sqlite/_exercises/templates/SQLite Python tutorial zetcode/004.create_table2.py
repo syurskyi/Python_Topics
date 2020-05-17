@@ -1,6 +1,6 @@
-import sqlite3 as sqlite
+_____ ? as sqlite
 
-cars = (
+cars _ (
     (1, 'Audi', 52642),
     (2, 'Mercedes', 57127),
     (3, 'Skoda', 9000),
@@ -10,12 +10,12 @@ cars = (
     (7, 'Volkswagen', 21600)
 )
 
-con = sqlite.connect('ydb.db')
+con _ sqlite.c..('ydb.db')
 
 with con:
 
-    cur = con.cursor()
+    cur _ con.cursor()
 
-    cur.execute("DROP TABLE IF EXISTS cars")
-    cur.execute("CREATE TABLE cars(id INT, name TEXT, price INT)")
+    cur.e..("DROP TABLE IF EXISTS cars")
+    cur.e..("CREATE TABLE cars(id INT, name TEXT, price INT)")
     cur.executemany("INSERT INTO cars VALUES(?, ?, ?)", cars)

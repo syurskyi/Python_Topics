@@ -1,32 +1,32 @@
 # -*- coding: utf-8 -*-
-import sqlite3
-import sys
+_____ ?
+_____ ___
 
-db_filename = 'dhcp_snooping.db'
+db_filename _ 'dhcp_snooping.db'
 
-query_dict = {
+query_dict _ {
     'vlan': 'select mac, ip, interface from dhcp where vlan = ?',
     'mac': 'select vlan, ip, interface from dhcp where mac = ?',
     'ip': 'select vlan, mac, interface from dhcp where ip = ?',
     'interface': 'select vlan, mac, ip from dhcp where interface = ?'
 }
 
-key, value = sys.argv[1:]
-keys = query_dict.keys()
+key, value _ ___.ar..[1:]
+keys _ query_dict.keys()
 
-if not key in keys:
-    print('Enter key from {}'.format(', '.join(keys)))
+if not key __ keys:
+    print('Enter key from {}'.f..(', '.join(keys)))
 else:
-    conn = sqlite3.connect(db_filename)
-    conn.row_factory = sqlite3.Row
+    conn _ ?.c..(db_filename)
+    conn.r_f.. _ ?.Row
 
     print('\nDetailed information for host(s) with', key, value)
     print('-' * 40)
 
-    query = query_dict[key]
-    result = conn.execute(query, (value, ))
+    query _ query_dict[key]
+    result _ conn.e..(query, (value, ))
 
-    for row in result:
-        for row_name in row.keys():
-            print('{:12}: {}'.format(row_name, row[row_name]))
+    ___ row __ result:
+        ___ row_name __ row.keys():
+            print('{:12}: {}'.f..(row_name, row[row_name]))
         print('-' * 40)

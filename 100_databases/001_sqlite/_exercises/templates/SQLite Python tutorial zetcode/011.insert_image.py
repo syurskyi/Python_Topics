@@ -1,38 +1,38 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import sqlite3 as sqlite
-import sys
+_____ ? as sqlite
+_____ ___
 
 def readImage():
 
-    fin = None
+    fin _ None
 
     try:
-        fin = open("Camera.png", "rb")
-        img = fin.read()
+        fin _ open("Camera.png", "rb")
+        img _ fin.read()
         return img
 
     except IOError as e:
 
         print(e)
-        sys.exit(1)
+        ___.exit(1)
 
     finally:
 
         if fin:
             fin.close()
 
-con = None
+con _ None
 
 try:
-    con = sqlite.connect('ydb.db')
+    con _ sqlite.c..('ydb.db')
 
-    cur = con.cursor()
+    cur _ con.cursor()
 
-    data = readImage()
-    binary = sqlite.Binary(data)
-    cur.execute("INSERT INTO images(data) VALUES (?)", (binary,) )
+    data _ readImage()
+    binary _ sqlite.Binary(data)
+    cur.e..("INSERT INTO images(data) VALUES (?)", (binary,) )
 
     con.commit()
 
@@ -42,7 +42,7 @@ except sqlite.Error as e:
         con.rollback()
 
     print(e)
-    sys.exit(1)
+    ___.exit(1)
 
 finally:
 

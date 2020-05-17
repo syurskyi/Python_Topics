@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import sqlite3 as sqlite
+_____ ? as sqlite
 
-con = sqlite.connect('ydb.db')
+con _ sqlite.c..('ydb.db')
 
 with con:   # With the with keyword, the Python interpreter automatically releases the resources.
             # It also provides error handling.
 
-    cur = con.cursor()
-    cur.execute('SELECT SQLITE_VERSION()')
+    cur _ con.cursor()
+    cur.e..('SELECT SQLITE_VERSION()')
 
-    data = cur.fetchone()[0]
+    data _ cur.fetchone()[0]
 
     print(f"SQLite version: {data}")
 

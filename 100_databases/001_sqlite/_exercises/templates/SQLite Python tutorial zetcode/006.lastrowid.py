@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import sqlite3 as sqlite
+_____ ? as sqlite
 
-con = sqlite.connect(':memory:')
+con _ sqlite.c..(':memory:')
 
 with con:
 
-    cur = con.cursor()
-    cur.execute("CREATE TABLE friends(id INTEGER PRIMARY KEY, name TEXT);")
-    cur.execute("INSERT INTO friends(name) VALUES ('Tom');")
-    cur.execute("INSERT INTO friends(name) VALUES ('Rebecca');")
-    cur.execute("INSERT INTO friends(name) VALUES ('Jim');")
-    cur.execute("INSERT INTO friends(name) VALUES ('Robert');")
+    cur _ con.cursor()
+    cur.e..("CREATE TABLE friends(id INTEGER PRIMARY KEY, name TEXT);")
+    cur.e..("INSERT INTO friends(name) VALUES ('Tom');")
+    cur.e..("INSERT INTO friends(name) VALUES ('Rebecca');")
+    cur.e..("INSERT INTO friends(name) VALUES ('Jim');")
+    cur.e..("INSERT INTO friends(name) VALUES ('Robert');")
 
-    last_row_id = cur.lastrowid
+    last_row_id _ cur.lastrowid
 
     print(f"The last Id of the inserted row is {last_row_id}")

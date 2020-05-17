@@ -1,27 +1,27 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import sqlite3 as sqlite
-import sys
+_____ ? as sqlite
+_____ ___
 
-con = None
+con _ None
 
 try:
-    con = sqlite.connect('ydb.db', isolation_level=None)
+    con _ sqlite.c..('ydb.db', isolation_level_None)
 
-    cur = con.cursor()
+    cur _ con.cursor()
 
-    cur.execute("DROP TABLE IF EXISTS friends")
-    cur.execute("CREATE TABLE friends(id INTEGER PRIMARY KEY, name TEXT)")
-    cur.execute("INSERT INTO friends(name) VALUES ('Tom')")
-    cur.execute("INSERT INTO friends(name) VALUES ('Rebecca')")
-    cur.execute("INSERT INTO friends(name) VALUES ('Jim')")
-    cur.execute("INSERT INTO friends(name) VALUES ('Robert')")
+    cur.e..("DROP TABLE IF EXISTS friends")
+    cur.e..("CREATE TABLE friends(id INTEGER PRIMARY KEY, name TEXT)")
+    cur.e..("INSERT INTO friends(name) VALUES ('Tom')")
+    cur.e..("INSERT INTO friends(name) VALUES ('Rebecca')")
+    cur.e..("INSERT INTO friends(name) VALUES ('Jim')")
+    cur.e..("INSERT INTO friends(name) VALUES ('Robert')")
 
 except sqlite.Error as e:
 
     print(e)
-    sys.exit(1)
+    ___.exit(1)
 
 finally:
 

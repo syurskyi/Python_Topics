@@ -1,21 +1,21 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import sqlite3 as sqlite
-import sys
+_____ ? as sqlite
+_____ ___
 
-con = None
+con _ None
 
 try:
-    con = sqlite.connect('ydb.db')
+    con _ sqlite.c..('ydb.db')
 
-    cur = con.cursor()
-    cur.execute("DROP TABLE IF EXISTS friends")
-    cur.execute("CREATE TABLE friends(id INTEGER PRIMARY KEY, name TEXT)")
-    cur.execute("INSERT INTO friends(name) VALUES ('Tom')")
-    cur.execute("INSERT INTO friends(name) VALUES ('Rebecca')")
-    cur.execute("INSERT INTO friends(name) VALUES ('Jim')")
-    cur.execute("INSERT INTO friends(name) VALUES ('Robert')")
+    cur _ con.cursor()
+    cur.e..("DROP TABLE IF EXISTS friends")
+    cur.e..("CREATE TABLE friends(id INTEGER PRIMARY KEY, name TEXT)")
+    cur.e..("INSERT INTO friends(name) VALUES ('Tom')")
+    cur.e..("INSERT INTO friends(name) VALUES ('Rebecca')")
+    cur.e..("INSERT INTO friends(name) VALUES ('Jim')")
+    cur.e..("INSERT INTO friends(name) VALUES ('Robert')")
 
     # con.commit()
 
@@ -25,7 +25,7 @@ except sqlite.Error as e:
         con.rollback()
 
     print(e)
-    sys.exit(1)
+    ___.exit(1)
 
 finally:
 
