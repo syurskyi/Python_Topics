@@ -13,7 +13,7 @@ ___
 
     cur _ con.c..
 
-    cur.e..("DROP T.. IF EXISTS friends")
+    cur.e..("D.. T.. I. E.. friends")
     cur.e..("C.. T.. friends(id SERIAL P.. K.., name VARCHAR(255))")
     cur.e..("I.. I.. friends(name) V.. ('Tom')")
     cur.e..("I.. I.. friends(name) V.. ('Rebecca')")
@@ -25,7 +25,7 @@ ___
 ______ psycopg2.DatabaseError __ e:
 
     __ con:
-        con.rollback()
+        con.r..
 
     print('Error {e}')
     ___.e.. 1)

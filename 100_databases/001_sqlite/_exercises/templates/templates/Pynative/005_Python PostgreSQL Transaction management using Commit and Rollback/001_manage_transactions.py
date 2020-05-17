@@ -36,7 +36,7 @@ ___
 
 ______ (E.., psycopg2.DatabaseError) __ error :
     print ("Error in transction Reverting all other operations of a transction ", error)
-    connection.rollback()
+    connection.r..
 
 f__
     #closing database connection.

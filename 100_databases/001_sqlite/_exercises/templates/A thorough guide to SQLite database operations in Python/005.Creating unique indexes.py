@@ -23,7 +23,7 @@
 #
 # # Dropping the unique index
 # # E.g., to avoid future conflicts with update/insert functions
-# ?.ex.. 'DROP INDEX @'.f...(ix_?
+# ?.ex.. 'D.. INDEX @'.f...(ix_?
 #
 # # Committing changes and closing the connection to the database file
 # ?.co..

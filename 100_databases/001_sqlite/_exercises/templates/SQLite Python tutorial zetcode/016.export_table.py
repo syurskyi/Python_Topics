@@ -28,7 +28,7 @@ w__ con:
 
     cur _ con.c..
 
-    cur.e..("DROP T.. IF EXISTS cars")
+    cur.e..("D.. T.. I. E.. cars")
     cur.e..("C.. T.. cars(id IN., name T..., price IN.)")
     cur.e_m_("I.. I.. cars V..(?, ?, ?)", cars)
     cur.e..("D.. F.. cars WHERE price < 30000")

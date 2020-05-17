@@ -11,7 +11,7 @@ ___
 
     cur _ con.c..
 
-    cur.e..("DROP T.. IF EXISTS friends")
+    cur.e..("D.. T.. I. E.. friends")
     cur.e..("C.. T.. friends(id IN.. P.. K.., name T...)")
     cur.e..("I.. I.. friends(name) V.. ('Tom')")
     cur.e..("I.. I.. friends(name) V.. ('Rebecca')")

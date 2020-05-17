@@ -39,7 +39,7 @@ ___
 ______ ?.Er.. __ e:
 
     __ con:
-        con.rollback()
+        con.r..
 
     print(e)
     ___.e.. 1)

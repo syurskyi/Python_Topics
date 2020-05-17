@@ -33,7 +33,7 @@ class CursorFromConnectionPool:
 
     ___ __exit__(self, exception_type, exception_value, exception_traceback):
         __ exception_value:  # This is equivalent to `if exception_value is not None`
-            self.conn.rollback()
+            self.conn.r..
         ____
             self.cursor.c..
             self.conn.c..

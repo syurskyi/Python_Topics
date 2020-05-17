@@ -10,7 +10,7 @@ ___
     con _ ?.c..('ydb.db')
 
     cur _ con.c..
-    cur.e..("DROP T.. IF EXISTS friends")
+    cur.e..("D.. T.. I. E.. friends")
     cur.e..("C.. T.. friends(id IN.. P.. K.., name T...)")
     cur.e..("I.. I.. friends(name) V.. ('Tom')")
     cur.e..("I.. I.. friends(name) V.. ('Rebecca')")
@@ -22,7 +22,7 @@ ___
 ______ ?.Er.. __ e:
 
     __ con:
-        con.rollback()
+        con.r..
 
     print(e)
     ___.e.. 1)

@@ -23,7 +23,7 @@ db.c..  # Commit the change
 
 cursor.e..('''U.. users SET phone = ? WHERE id = ? ''', (newphone, userid))
 # The user's phone is not updated
-db.rollback()
+db.r..
 
 db.c..
 

@@ -39,7 +39,7 @@ ___
 ______ psycopg2.DatabaseError __ e:
 
     __ con:
-        con.rollback()
+        con.r..
 
     print(f'Error {e}')
     ___.e.. 1)
