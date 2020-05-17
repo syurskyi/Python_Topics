@@ -4,7 +4,7 @@
 # This problem can be solved passing PARSE_DECLTYPES and PARSE_COLNAMES to the connect method:
 
 _____ ?
-from datetime _____ date, datetime
+from d_t_ _____ date, d_t_
 
 db _ ?.c..(':memory:', detect_types_?.PARSE_DECLTYPES|?.PARSE_COLNAMES)
 c _ db.c..
