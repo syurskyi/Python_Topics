@@ -13,7 +13,7 @@ ___
                     password_'1234')
 
     cur _ con.c..
-    f _ open('cars.csv', 'r')
+    f _ o..('cars.csv', 'r')
 
     cur.copy_from(f, 'cars', sep_"|")
     con.c..
@@ -26,7 +26,7 @@ ______ psycopg2.DatabaseError __ e:
     print(f'Error {e}')
     ___.e.. 1)
 
-______ IOError __ e:
+______ IO.. __ e:
 
     __ con:
         con.r..

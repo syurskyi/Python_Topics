@@ -8,7 +8,7 @@ ___ write_blob(part_id, path_to_file, file_extension):
     conn _ w..
     ___
         # read data from a picture
-        drawing _ open(path_to_file, 'rb').read()
+        drawing _ o..(path_to_file, 'rb').r..
         # read database configuration
         params _ config()
         # connect to the PostgresQL database

@@ -9,10 +9,10 @@ ___ writeImage(data):
     fout _ w..
 
     ___
-        fout _ open('sid2.png', 'wb')
+        fout _ o..('sid2.png', 'wb')
         fout.write(data)
 
-    ______ IOError __ e:
+    ______ IO.. __ e:
 
         print _*Error @")
         ___.e.. 1)

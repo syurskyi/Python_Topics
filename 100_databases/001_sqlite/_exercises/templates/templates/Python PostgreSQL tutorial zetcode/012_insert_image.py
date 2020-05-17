@@ -9,11 +9,11 @@ ___ readImage():
     fin _ w..
 
     ___
-        fin _ open("sid.png", "rb")
-        img _ fin.read()
+        fin _ o..("sid.png", "rb")
+        img _ fin.r..
         r_ img
 
-    ______ IOError __ e:
+    ______ IO.. __ e:
 
         print(f'Error {e.args[0]}, {e.args[1]}')
         ___.e.. 1)

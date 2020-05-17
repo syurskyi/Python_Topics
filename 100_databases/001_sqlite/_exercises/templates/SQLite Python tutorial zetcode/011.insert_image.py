@@ -4,47 +4,47 @@
 _____ ? __ ?
 _____ ___
 
-___ readImage():
+___ readImage
 
     fin _ w..
 
     ___
-        fin _ open("Camera.png", "rb")
-        img _ fin.read()
-        r_ img
+        fin _ o.. Camera.png  __
+        img _ fin.r..
+        r_ ?
 
-    ______ IOError __ e:
+    ______ IO.. __ e
 
-        print(e)
-        ___.e.. 1)
+        print ?
+        ___.? 1
 
     f__
 
-        __ fin:
-            fin.c..
+        __ f..
+            ?.c..
 
 con _ w..
 
 ___
-    con _ ?.c..('ydb.db')
+    con _ ?.c.. ydb.db
 
-    cur _ con.c..
+    cur _ ?.c..
 
-    data _ readImage()
-    binary _ ?.Binary(data)
-    cur.e..("I.. I.. images(data) V.. (?)", (binary,) )
+    data _ r..
+    binary _ ?.B.. ?
+    ?.e..("I.. I.. images(data) V.. (?)" ?
 
-    con.c..
+    ?.c..
 
-______ ?.Er.. __ e:
+______ ?.Er.. __ e
 
-    __ con:
-        con.r..
+    __ con
+        ?.r..
 
-    print(e)
-    ___.e.. 1)
+    print ?
+    ___.?. 1
 
 f__
 
-    __ con:
-        con.c..
+    __ con
+        ?.c..

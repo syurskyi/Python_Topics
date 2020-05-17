@@ -20,7 +20,7 @@ ___ read_blob(part_id, path_to_dir):
                     (part_id,))
 
         blob _ cur.f_o..
-        open(path_to_dir + blob[0] + '.' + blob[1], 'wb').write(blob[2])
+        o..(path_to_dir + blob[0] + '.' + blob[1], 'wb').write(blob[2])
         # close the communication with the PostgresQL database
         cur.c..
     ______ (E.., psycopg2.DatabaseError) __ error:

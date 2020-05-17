@@ -16,7 +16,7 @@ cars _ (
 
 ___ writeData(data):
 
-    f _ open('cars.sql', 'w')
+    f _ o..('cars.sql', 'w')
 
     w__ f:
         f.write(data)

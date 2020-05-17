@@ -6,11 +6,11 @@ _____ ? __ ?
 
 ___ readData():
 
-    f _ open('cars.sql', 'r')
+    f _ o..('cars.sql', 'r')
 
     w__ f:
 
-        data _ f.read()
+        data _ f.r..
 
         r_ data
 

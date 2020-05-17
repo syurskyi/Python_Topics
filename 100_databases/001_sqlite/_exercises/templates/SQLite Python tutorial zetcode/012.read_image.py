@@ -9,10 +9,10 @@ ___ writeImage(data):
     fout _ w..
 
     ___
-        fout _ open('Camera.png', 'wb')
+        fout _ o..('Camera.png', 'wb')
         fout.write(data)
 
-    ______ IOError __ e:
+    ______ IO.. __ e:
 
         print(e)
         ___.e.. 1)
