@@ -21,8 +21,8 @@ ___ get_part_vendors():
         cur.e..("""
             S.. part_name, vendor_name
             F.. parts
-            INNER JOIN vendor_parts ON vendor_parts.part_id = parts.part_id
-            INNER JOIN vendors ON vendors.vendor_id = vendor_parts.vendor_id
+            I.. J.. vendor_parts ON vendor_parts.part_id = parts.part_id
+            I.. J.. vendors ON vendors.vendor_id = vendor_parts.vendor_id
             ORDER BY part_name;
         """)
         ___ row __ iter_row(cur, 10):
