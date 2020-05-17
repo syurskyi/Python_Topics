@@ -12,7 +12,7 @@ ___ insert_vendor(vendor_name):
         # read database configuration
         params _ c..()
         # connect to the PostgreSQL database
-        conn _ ?.c..(**params)
+        conn _ ?.c.. $$p..
         # create a new cursor
         cur _ conn.c..
         # execute the I.. statement
@@ -40,7 +40,7 @@ ___ insert_vendor_list(vendor_list):
         # read database configuration
         params _ c..()
         # connect to the PostgreSQL database
-        conn _ ?.c..(**params)
+        conn _ ?.c.. $$p..
         # create a new cursor
         cur _ conn.c..
         # execute the I.. statement

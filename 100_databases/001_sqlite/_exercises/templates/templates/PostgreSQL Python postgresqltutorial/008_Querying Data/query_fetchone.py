@@ -8,7 +8,7 @@ ___ get_vendors():
     conn _ w..
     ___
         params _ c..()
-        conn _ ?.c..(**params)
+        conn _ ?.c.. $$p..
         cur _ conn.c..
         cur.e..("S.. vendor_id, vendor_name F.. vendors ORDER BY vendor_name")
         print("The number of parts: ", cur.rowcount)

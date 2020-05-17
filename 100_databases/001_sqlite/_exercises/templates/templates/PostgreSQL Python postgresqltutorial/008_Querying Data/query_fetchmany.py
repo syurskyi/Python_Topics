@@ -16,7 +16,7 @@ ___ get_part_vendors():
     conn _ w..
     ___
         params _ c..()
-        conn _ ?.c..(**params)
+        conn _ ?.c.. $$p..
         cur _ conn.c..
         cur.e..("""
             S.. part_name, vendor_name

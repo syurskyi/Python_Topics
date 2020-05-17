@@ -16,7 +16,7 @@ ___
     cur _ con.c..
 
     cur.e..("D.. T.. I. E.. friends")
-    cur.e..("C.. T.. friends(id serial P.. K.., name VARCHAR(10))")
+    cur.e..("C.. T.. friends(id serial P.. K.., name V..(10))")
     cur.e..("I.. I.. friends(name) V.. ('Jane')")
     cur.e..("I.. I.. friends(name) V.. ('Tom')")
     cur.e..("I.. I.. friends(name) V.. ('Rebecca')")

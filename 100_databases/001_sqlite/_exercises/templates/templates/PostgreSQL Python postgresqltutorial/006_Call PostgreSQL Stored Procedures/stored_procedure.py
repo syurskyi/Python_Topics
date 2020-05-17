@@ -10,7 +10,7 @@ ___ get_parts(vendor_id):
         # read database configuration
         params _ c..()
         # connect to the PostgreSQL database
-        conn _ ?.c..(**params)
+        conn _ ?.c.. $$p..
         # create a cursor object for execution
         cur _ conn.c..
         # another way to call a stored procedure

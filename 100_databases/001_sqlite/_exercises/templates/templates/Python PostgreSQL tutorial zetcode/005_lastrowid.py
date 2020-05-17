@@ -11,7 +11,7 @@ w__ con:
     cur _ con.c..
 
     cur.e..("D.. T.. I. E.. words")
-    cur.e..("C.. T.. words(id SERIAL P.. K.., word VARCHAR(255))")
+    cur.e..("C.. T.. words(id S.. P.. K.., word V..(255))")
     cur.e..("I.. I.. words(word) V..('forest') RETURNING id")
     cur.e..("I.. I.. words(word) V..('cloud') RETURNING id")
     cur.e..("I.. I.. words(word) V..('valley') RETURNING id")

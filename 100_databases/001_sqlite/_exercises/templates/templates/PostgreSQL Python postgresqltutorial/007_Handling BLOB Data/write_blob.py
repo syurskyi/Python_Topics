@@ -12,7 +12,7 @@ ___ write_blob(part_id, path_to_file, file_extension):
         # read database configuration
         params _ c..()
         # connect to the PostgresQL database
-        conn _ ?.c..(**params)
+        conn _ ?.c.. $$p..
         # create a new cursor object
         cur _ conn.c..
         # execute the I.. statement

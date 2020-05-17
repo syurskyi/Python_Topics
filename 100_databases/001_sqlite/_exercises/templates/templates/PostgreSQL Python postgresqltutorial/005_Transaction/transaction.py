@@ -12,7 +12,7 @@ ___ add_part(part_name, vendor_list):
     conn _ w..
     ___
         params _ c..()
-        conn _ ?.c..(**params)
+        conn _ ?.c.. $$p..
         cur _ conn.c..
         # insert a new part
         cur.e..(insert_part, (part_name,))

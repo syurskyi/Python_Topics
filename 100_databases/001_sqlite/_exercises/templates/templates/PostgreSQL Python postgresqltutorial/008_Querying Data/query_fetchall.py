@@ -7,7 +7,7 @@ ___ get_parts():
     conn _ w..
     ___
         params _ c..()
-        conn _ ?.c..(**params)
+        conn _ ?.c.. $$p..
         cur _ conn.c..
         cur.e..("S.. part_id, part_name F.. parts ORDER BY part_name")
         rows _ cur.f_a..

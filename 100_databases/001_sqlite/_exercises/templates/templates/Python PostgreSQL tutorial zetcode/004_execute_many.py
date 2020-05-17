@@ -22,7 +22,7 @@ w__ con:
     cur _ con.c..
 
     cur.e..("D.. T.. I. E.. cars")
-    cur.e..("C.. T.. cars(id SERIAL P.. K.., name VARCHAR(255), price IN.)")
+    cur.e..("C.. T.. cars(id S.. P.. K.., name V..(255), price IN.)")
 
     query _ "I.. I.. cars (id, name, price) V.. (%s, %s, %s)"
     cur.e_m_(query, cars)

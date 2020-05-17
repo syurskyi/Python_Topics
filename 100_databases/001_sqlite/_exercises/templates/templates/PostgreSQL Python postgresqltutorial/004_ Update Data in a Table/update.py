@@ -13,7 +13,7 @@ ___ update_vendor(vendor_id, vendor_name):
         # read database configuration
         params _ c..()
         # connect to the PostgreSQL database
-        conn _ ?.c..(**params)
+        conn _ ?.c.. $$p..
         # create a new cursor
         cur _ conn.c..
         # execute the U..  statement

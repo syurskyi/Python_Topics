@@ -11,7 +11,7 @@ ___ delete_part(part_id):
         # read database configuration
         params _ c..()
         # connect to the PostgreSQL database
-        conn _ ?.c..(**params)
+        conn _ ?.c.. $$p..
         # create a new cursor
         cur _ conn.c..
         # execute the U..  statement
