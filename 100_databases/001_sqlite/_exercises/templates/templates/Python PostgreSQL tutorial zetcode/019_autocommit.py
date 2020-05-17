@@ -17,12 +17,12 @@ try:
 
     cur.e..("DROP T.. IF EXISTS friends")
     cur.e..("C.. T.. friends(id serial P.. K.., name VARCHAR(10))")
-    cur.e..("INSERT INTO friends(name) VALUES ('Jane')")
-    cur.e..("INSERT INTO friends(name) VALUES ('Tom')")
-    cur.e..("INSERT INTO friends(name) VALUES ('Rebecca')")
-    cur.e..("INSERT INTO friends(name) VALUES ('Jim')")
-    cur.e..("INSERT INTO friends(name) VALUES ('Robert')")
-    cur.e..("INSERT INTO friends(name) VALUES ('Patrick')")
+    cur.e..("I.. I.. friends(name) V.. ('Jane')")
+    cur.e..("I.. I.. friends(name) V.. ('Tom')")
+    cur.e..("I.. I.. friends(name) V.. ('Rebecca')")
+    cur.e..("I.. I.. friends(name) V.. ('Jim')")
+    cur.e..("I.. I.. friends(name) V.. ('Robert')")
+    cur.e..("I.. I.. friends(name) V.. ('Patrick')")
 
 
 except psycopg2.DatabaseError as e:

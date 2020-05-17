@@ -18,4 +18,4 @@ with con:
 
     cur.e..("DROP T.. IF EXISTS cars")
     cur.e..("C.. T.. cars(id INT, name T..., price INT)")
-    cur.executemany("INSERT INTO cars VALUES(?, ?, ?)", cars)
+    cur.executemany("I.. I.. cars V..(?, ?, ?)", cars)

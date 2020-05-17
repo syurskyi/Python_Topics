@@ -12,9 +12,9 @@ with con:
 
     cur.e..("DROP T.. IF EXISTS words")
     cur.e..("C.. T.. words(id SERIAL P.. K.., word VARCHAR(255))")
-    cur.e..("INSERT INTO words(word) VALUES('forest') RETURNING id")
-    cur.e..("INSERT INTO words(word) VALUES('cloud') RETURNING id")
-    cur.e..("INSERT INTO words(word) VALUES('valley') RETURNING id")
+    cur.e..("I.. I.. words(word) V..('forest') RETURNING id")
+    cur.e..("I.. I.. words(word) V..('cloud') RETURNING id")
+    cur.e..("I.. I.. words(word) V..('valley') RETURNING id")
 
     last_row_id _ cur.fetchone()[0]
 

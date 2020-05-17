@@ -22,7 +22,7 @@
 # ?.ex.. "ALTER T.. @ ADD COLUMN '@'"\
 #          .f.. tn_? cn_d.c..
 # # insert a new row with the current date and time, e.g., 2014-03-06
-# ?.ex.. "INSERT INTO @ (@, @) VALUES('some_id1', DATE('now'))"\
+# ?.ex.. "I.. I.. @ (@, @) V..('some_id1', DATE('now'))"\
 #          .f.. tn_? idf_? cn_d_c..
 #
 # # B) Adding a new column to save date and time and update with the current time

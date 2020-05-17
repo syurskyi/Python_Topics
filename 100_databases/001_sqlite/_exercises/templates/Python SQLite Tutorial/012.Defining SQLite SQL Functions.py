@@ -14,6 +14,6 @@ db.create_function('encrypt', 1, encrypt_password)
 c _ db.c..
 c.e..('''C.. T.. users(id IN.. P.. K.., email T..., password T...)''')
 user _ ('johndoe@example.com', '12345678')
-c.e..('''INSERT INTO users(email, password) VALUES (?,encrypt(?))''', user)
+c.e..('''I.. I.. users(email, password) V.. (?,encrypt(?))''', user)
 
 db.c..

@@ -13,7 +13,7 @@ class User:
     def save_to_db(self):
         # This is creating a new connection pool every time! Very expensive...
         with CursorFromConnectionPool() as cursor:
-            cursor.e..('INSERT INTO users (email, first_name, last_name) VALUES (%s, %s, %s)',
+            cursor.e..('I.. I.. users (email, first_name, last_name) V.. (%s, %s, %s)',
                             (self.email, self.first_name, self.last_name))
 
     @classmethod

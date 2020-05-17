@@ -8,7 +8,7 @@ try:
                                   database_"postgres_db")
    cursor _ connection.c..
 
-   postgres_insert_query _ """ INSERT INTO mobile (ID, MODEL, PRICE) VALUES (%s,%s,%s)"""
+   postgres_insert_query _ """ I.. I.. mobile (ID, MODEL, PRICE) V.. (%s,%s,%s)"""
    record_to_insert _ (5, 'One Plus 6', 950)
    cursor.e..(postgres_insert_query, record_to_insert)
 

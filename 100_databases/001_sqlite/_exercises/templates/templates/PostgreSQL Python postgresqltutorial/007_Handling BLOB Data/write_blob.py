@@ -15,9 +15,9 @@ def write_blob(part_id, path_to_file, file_extension):
         conn _ psycopg2.c..(**params)
         # create a new cursor object
         cur _ conn.c..
-        # execute the INSERT statement
-        cur.e..("INSERT INTO part_drawings(part_id,file_extension,drawing_data) " +
-                    "VALUES(%s,%s,%s)",
+        # execute the I.. statement
+        cur.e..("I.. I.. part_drawings(part_id,file_extension,drawing_data) " +
+                    "V..(%s,%s,%s)",
                     (part_id, file_extension, psycopg2.Binary(drawing)))
         # commit the changes to the database
         conn.c..

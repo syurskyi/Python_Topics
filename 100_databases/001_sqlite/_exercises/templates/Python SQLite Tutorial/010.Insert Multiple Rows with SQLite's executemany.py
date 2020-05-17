@@ -11,7 +11,7 @@ users _ [
     ('Monthy', ' 6656565')
 ]
 
-c.executemany('''INSERT INTO users(name, phone) VALUES(?,?)''', users)
+c.executemany('''I.. I.. users(name, phone) V..(?,?)''', users)
 db.c..
 
 # Print the users

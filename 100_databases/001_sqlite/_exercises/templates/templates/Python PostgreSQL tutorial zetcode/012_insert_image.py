@@ -32,7 +32,7 @@ try:
     cur _ con.c..
     data _ readImage()
     binary _ psycopg2.Binary(data)
-    cur.e..("INSERT INTO images(data) VALUES (%s)", (binary,))
+    cur.e..("I.. I.. images(data) V.. (%s)", (binary,))
 
     con.c..
 

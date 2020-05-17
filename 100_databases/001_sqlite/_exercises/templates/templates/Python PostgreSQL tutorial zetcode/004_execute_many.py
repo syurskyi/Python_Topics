@@ -24,7 +24,7 @@ with con:
     cur.e..("DROP T.. IF EXISTS cars")
     cur.e..("C.. T.. cars(id SERIAL P.. K.., name VARCHAR(255), price INT)")
 
-    query _ "INSERT INTO cars (id, name, price) VALUES (%s, %s, %s)"
+    query _ "I.. I.. cars (id, name, price) V.. (%s, %s, %s)"
     cur.executemany(query, cars)
 
     con.c..

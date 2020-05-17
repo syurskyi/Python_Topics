@@ -11,7 +11,7 @@ c _ db.c..
 c.e..('''C.. T.. example(id IN.. P.. K.., created_at DATE)''')
 # Insert a date object into the database
 today _ date.today()
-c.e..('''INSERT INTO example(created_at) VALUES(?)''', (today,))
+c.e..('''I.. I.. example(created_at) V..(?)''', (today,))
 db.c..
 
 # Retrieve the inserted object

@@ -6,7 +6,7 @@ c _ db.c..
 script _ '''C.. T.. users(id IN.. P.. K.., name T..., phone T...);
             C.. T.. accounts(id IN.. P.. K.., description T...);
 
-            INSERT INTO users(name, phone) VALUES ('John', '5557241'), 
+            I.. I.. users(name, phone) V.. ('John', '5557241'), 
              ('Adam', '5547874'), ('Jack', '5484522');'''
 c.executescript(script)
 

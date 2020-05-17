@@ -13,10 +13,10 @@ try:
 
     cur.e..("DROP T.. IF EXISTS friends")
     cur.e..("C.. T.. friends(id IN.. P.. K.., name T...)")
-    cur.e..("INSERT INTO friends(name) VALUES ('Tom')")
-    cur.e..("INSERT INTO friends(name) VALUES ('Rebecca')")
-    cur.e..("INSERT INTO friends(name) VALUES ('Jim')")
-    cur.e..("INSERT INTO friends(name) VALUES ('Robert')")
+    cur.e..("I.. I.. friends(name) V.. ('Tom')")
+    cur.e..("I.. I.. friends(name) V.. ('Rebecca')")
+    cur.e..("I.. I.. friends(name) V.. ('Jim')")
+    cur.e..("I.. I.. friends(name) V.. ('Robert')")
 
 except sqlite.Error as e:
 

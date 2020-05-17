@@ -32,7 +32,7 @@ try:
 
     data _ readImage()
     binary _ sqlite.Binary(data)
-    cur.e..("INSERT INTO images(data) VALUES (?)", (binary,) )
+    cur.e..("I.. I.. images(data) V.. (?)", (binary,) )
 
     con.c..
 

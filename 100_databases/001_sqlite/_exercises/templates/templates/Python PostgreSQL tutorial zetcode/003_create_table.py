@@ -12,14 +12,14 @@ with con:
 
     cur.e..("DROP T.. IF EXISTS cars")
     cur.e..("C.. T.. cars(id SERIAL P.. K.., name VARCHAR(255), price INT)")
-    cur.e..("INSERT INTO cars(name, price) VALUES('Audi', 52642)")
-    cur.e..("INSERT INTO cars(name, price) VALUES('Mercedes', 57127)")
-    cur.e..("INSERT INTO cars(name, price) VALUES('Skoda', 9000)")
-    cur.e..("INSERT INTO cars(name, price) VALUES('Volvo', 29000)")
-    cur.e..("INSERT INTO cars(name, price) VALUES('Bentley', 350000)")
-    cur.e..("INSERT INTO cars(name, price) VALUES('Citroen', 21000)")
-    cur.e..("INSERT INTO cars(name, price) VALUES('Hummer', 41400)")
-    cur.e..("INSERT INTO cars(name, price) VALUES('Volkswagen', 21600)")
+    cur.e..("I.. I.. cars(name, price) V..('Audi', 52642)")
+    cur.e..("I.. I.. cars(name, price) V..('Mercedes', 57127)")
+    cur.e..("I.. I.. cars(name, price) V..('Skoda', 9000)")
+    cur.e..("I.. I.. cars(name, price) V..('Volvo', 29000)")
+    cur.e..("I.. I.. cars(name, price) V..('Bentley', 350000)")
+    cur.e..("I.. I.. cars(name, price) V..('Citroen', 21000)")
+    cur.e..("I.. I.. cars(name, price) V..('Hummer', 41400)")
+    cur.e..("I.. I.. cars(name, price) V..('Volkswagen', 21600)")
 
 
 

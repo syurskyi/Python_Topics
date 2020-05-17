@@ -5,9 +5,9 @@ from config _____ config
 
 def add_part(part_name, vendor_list):
     # statement for inserting a new row into the parts table
-    insert_part _ "INSERT INTO parts(part_name) VALUES(%s) RETURNING part_id;"
+    insert_part _ "I.. I.. parts(part_name) V..(%s) RETURNING part_id;"
     # statement for inserting a new row into the vendor_parts table
-    assign_vendor _ "INSERT INTO vendor_parts(vendor_id,part_id) VALUES(%s,%s)"
+    assign_vendor _ "I.. I.. vendor_parts(vendor_id,part_id) V..(%s,%s)"
 
     conn _ None
     try:

@@ -14,14 +14,14 @@ try:
     cur.executescript("""
         DROP T.. IF EXISTS cars;
         C.. T.. cars(id INT, name T..., price INT);
-        INSERT INTO cars VALUES(1,'Audi',52642);
-        INSERT INTO cars VALUES(2,'Mercedes',57127);
-        INSERT INTO cars VALUES(3,'Skoda',9000);
-        INSERT INTO cars VALUES(4,'Volvo',29000);
-        INSERT INTO cars VALUES(5,'Bentley',350000);
-        INSERT INTO cars VALUES(6,'Citroen',21000);
-        INSERT INTO cars VALUES(7,'Hummer',41400);
-        INSERT INTO cars VALUES(8,'Volkswagen',21600);
+        I.. I.. cars V..(1,'Audi',52642);
+        I.. I.. cars V..(2,'Mercedes',57127);
+        I.. I.. cars V..(3,'Skoda',9000);
+        I.. I.. cars V..(4,'Volvo',29000);
+        I.. I.. cars V..(5,'Bentley',350000);
+        I.. I.. cars V..(6,'Citroen',21000);
+        I.. I.. cars V..(7,'Hummer',41400);
+        I.. I.. cars V..(8,'Volkswagen',21600);
         """)
 
     con.c..

@@ -8,8 +8,8 @@ def bulkInsert(records):
                                       port_"5432",
                                       database_"postgres_db")
         cursor _ connection.c..
-        sql_insert_query _ """ INSERT INTO mobile (id, model, price) 
-                           VALUES (%s,%s,%s) """
+        sql_insert_query _ """ I.. I.. mobile (id, model, price) 
+                           V.. (%s,%s,%s) """
 
         # executemany() to insert multiple rows rows
         result _ cursor.executemany(sql_insert_query, records)
