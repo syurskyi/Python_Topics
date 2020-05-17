@@ -8,7 +8,7 @@ def insert_vendor(vendor_name):
              V..(%s) RETURNING vendor_id;"""
     conn _ None
     vendor_id _ None
-    try:
+    ___
         # read database configuration
         params _ config()
         # connect to the PostgreSQL database
@@ -23,9 +23,9 @@ def insert_vendor(vendor_name):
         conn.c..
         # close communication with the database
         cur.c..
-    except (Exception, psycopg2.DatabaseError) as error:
+    ______ (E.., psycopg2.DatabaseError) __ error:
         print(error)
-    finally:
+    f__
         __ conn is not None:
             conn.c..
 
@@ -36,7 +36,7 @@ def insert_vendor_list(vendor_list):
     """ insert multiple vendors into the vendors table  """
     sql _ "I.. I.. vendors(vendor_name) V..(%s)"
     conn _ None
-    try:
+    ___
         # read database configuration
         params _ config()
         # connect to the PostgreSQL database
@@ -49,9 +49,9 @@ def insert_vendor_list(vendor_list):
         conn.c..
         # close communication with the database
         cur.c..
-    except (Exception, psycopg2.DatabaseError) as error:
+    ______ (E.., psycopg2.DatabaseError) __ error:
         print(error)
-    finally:
+    f__
         __ conn is not None:
             conn.c..
 

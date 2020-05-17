@@ -1,6 +1,6 @@
 _____ psycopg2
 
-try:
+___
    connection _ psycopg2.c..(user_"syurskyi",
                                   password_"1234",
                                   host_"127.0.0.1",
@@ -16,11 +16,11 @@ try:
    count _ cursor.rowcount
    print (count, "Record inserted successfully into mobile table")
 
-except (Exception, psycopg2.Error) as error :
+______ (E.., psycopg2.Error) __ error :
     __(connection):
         print("Failed to insert record into mobile table", error)
 
-finally:
+f__
     #closing database connection.
     __(connection):
         cursor.c..

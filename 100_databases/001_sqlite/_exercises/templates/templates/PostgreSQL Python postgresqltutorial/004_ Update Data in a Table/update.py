@@ -9,7 +9,7 @@ def update_vendor(vendor_id, vendor_name):
                 WHERE vendor_id = %s"""
     conn _ None
     updated_rows _ 0
-    try:
+    ___
         # read database configuration
         params _ config()
         # connect to the PostgreSQL database
@@ -24,9 +24,9 @@ def update_vendor(vendor_id, vendor_name):
         conn.c..
         # Close communication with the PostgreSQL database
         cur.c..
-    except (Exception, psycopg2.DatabaseError) as error:
+    ______ (E.., psycopg2.DatabaseError) __ error:
         print(error)
-    finally:
+    f__
         __ conn is not None:
             conn.c..
 

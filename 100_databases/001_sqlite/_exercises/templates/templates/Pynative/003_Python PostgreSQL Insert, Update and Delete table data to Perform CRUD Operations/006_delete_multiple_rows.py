@@ -1,7 +1,7 @@
 _____ psycopg2
 
 def deleteInBulk(records):
-    try:
+    ___
         ps_connection _ psycopg2.c..(user_"syurskyi",
                                          password_"1234",
                                          host_"127.0.0.1",
@@ -15,10 +15,10 @@ def deleteInBulk(records):
         row_count _ cursor.rowcount
         print(row_count, "Record Deleted")
 
-    except (Exception, psycopg2.Error) as error:
+    ______ (E.., psycopg2.Error) __ error:
         print("Error while connecting to PostgreSQL", error)
 
-    finally:
+    f__
         # closing database connection.
         __ (ps_connection):
             cursor.c..

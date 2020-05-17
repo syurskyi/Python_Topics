@@ -6,7 +6,7 @@ from config _____ config
 def write_blob(part_id, path_to_file, file_extension):
     """ insert a BLOB into a table """
     conn _ None
-    try:
+    ___
         # read data from a picture
         drawing _ open(path_to_file, 'rb').read()
         # read database configuration
@@ -23,9 +23,9 @@ def write_blob(part_id, path_to_file, file_extension):
         conn.c..
         # close the communication with the PostgresQL database
         cur.c..
-    except (Exception, psycopg2.DatabaseError) as error:
+    ______ (E.., psycopg2.DatabaseError) __ error:
         print(error)
-    finally:
+    f__
         __ conn is not None:
             conn.c..
 

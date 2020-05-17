@@ -1,31 +1,31 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-_____ ? as sqlite
+_____ ? __ sqlite
 _____ ___
 
 def readImage():
 
     fin _ None
 
-    try:
+    ___
         fin _ open("Camera.png", "rb")
         img _ fin.read()
         return img
 
-    except IOError as e:
+    ______ IOError __ e:
 
         print(e)
         ___.exit(1)
 
-    finally:
+    f__
 
         __ fin:
             fin.c..
 
 con _ None
 
-try:
+___
     con _ sqlite.c..('ydb.db')
 
     cur _ con.c..
@@ -36,7 +36,7 @@ try:
 
     con.c..
 
-except sqlite.Error as e:
+______ sqlite.Error __ e:
 
     __ con:
         con.rollback()
@@ -44,7 +44,7 @@ except sqlite.Error as e:
     print(e)
     ___.exit(1)
 
-finally:
+f__
 
     __ con:
         con.c..

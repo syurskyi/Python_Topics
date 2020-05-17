@@ -6,7 +6,7 @@ _____ ___
 
 con _ None
 
-try:
+___
 
     con _ psycopg2.c..(database_'testdb', user_'syurskyi',
                     password_'1234')
@@ -22,7 +22,7 @@ try:
 
     con.c..
 
-except psycopg2.DatabaseError as e:
+______ psycopg2.DatabaseError __ e:
 
     __ con:
         con.rollback()
@@ -31,7 +31,7 @@ except psycopg2.DatabaseError as e:
     ___.exit(1)
 
 
-finally:
+f__
 
     __ con:
         con.c..

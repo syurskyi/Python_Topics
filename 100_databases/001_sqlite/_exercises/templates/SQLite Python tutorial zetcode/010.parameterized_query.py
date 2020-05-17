@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-_____ ? as sqlite
+_____ ? __ sqlite
 
 uId _ 1
 uPrice _ 62300

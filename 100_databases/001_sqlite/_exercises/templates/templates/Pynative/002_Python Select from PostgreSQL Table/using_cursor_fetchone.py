@@ -1,6 +1,6 @@
 _____ psycopg2
 
-try:
+___
    connection _ psycopg2.c..(user_"syurskyi",
                                   password_"1234",
                                   host_"127.0.0.1",
@@ -18,10 +18,10 @@ try:
    mobile_records_two _ cursor.f_o..
    print("Printing second record", mobile_records_two)
 
-except (Exception, psycopg2.Error) as error :
+______ (E.., psycopg2.Error) __ error :
     print ("Error while getting data from PostgreSQL", error)
 
-finally:
+f__
     #closing database connection.
     __(connection):
         cursor.c..

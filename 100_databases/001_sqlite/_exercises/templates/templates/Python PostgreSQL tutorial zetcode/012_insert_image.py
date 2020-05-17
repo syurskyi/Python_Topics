@@ -8,24 +8,24 @@ def readImage():
 
     fin _ None
 
-    try:
+    ___
         fin _ open("sid.png", "rb")
         img _ fin.read()
         return img
 
-    except IOError as e:
+    ______ IOError __ e:
 
         print(f'Error {e.args[0]}, {e.args[1]}')
         ___.exit(1)
 
-    finally:
+    f__
 
         __ fin:
             fin.c..
 
 con _ None
 
-try:
+___
     con _ psycopg2.c..(database_'testdb', user_'syurskyi',
                     password_'1234')
 
@@ -36,7 +36,7 @@ try:
 
     con.c..
 
-except psycopg2.DatabaseError as e:
+______ psycopg2.DatabaseError __ e:
 
     __ con:
         con.rollback()
@@ -44,7 +44,7 @@ except psycopg2.DatabaseError as e:
     print(f'Error {e}')
     ___.exit(1)
 
-finally:
+f__
 
     __ con:
         con.c..

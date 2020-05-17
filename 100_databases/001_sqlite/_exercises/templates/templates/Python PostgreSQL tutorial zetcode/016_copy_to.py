@@ -7,7 +7,7 @@ _____ ___
 con _ None
 fout _ None
 
-try:
+___
 
     con _ psycopg2.c..(database_'testdb', user_'syurskyi',
                     password_'1234')
@@ -16,17 +16,17 @@ try:
     fout _ open('cars.csv', 'w')
     cur.copy_to(fout, 'cars', sep_"|")
 
-except psycopg2.DatabaseError as e:
+______ psycopg2.DatabaseError __ e:
 
     print(f'Error {e}')
     ___.exit(1)
 
-except IOError as e:
+______ IOError __ e:
 
     print(f'Error {e}')
     ___.exit(1)
 
-finally:
+f__
 
     __ con:
         con.c..

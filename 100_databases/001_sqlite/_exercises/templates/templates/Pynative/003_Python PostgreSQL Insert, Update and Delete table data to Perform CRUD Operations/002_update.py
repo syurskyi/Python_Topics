@@ -1,7 +1,7 @@
 _____ psycopg2
 
 def updateTable(mobileId, price):
-    try:
+    ___
         connection _ psycopg2.c..(user_"syurskyi",
                                       password_"1234",
                                       host_"127.0.0.1",
@@ -29,10 +29,10 @@ def updateTable(mobileId, price):
         record _ cursor.f_o..
         print(record)
 
-    except (Exception, psycopg2.Error) as error:
+    ______ (E.., psycopg2.Error) __ error:
         print("Error in update operation", error)
 
-    finally:
+    f__
         # closing database connection.
         __ (connection):
             cursor.c..

@@ -1,4 +1,4 @@
-_____ ? as sqlite
+_____ ? __ sqlite
 
 cars _ (
     (1, 'Audi', 52642),

@@ -1,7 +1,7 @@
 _____ psycopg2
 
 def bulkInsert(records):
-    try:
+    ___
         connection _ psycopg2.c..(user_"syurskyi",
                                       password_"1234",
                                       host_"127.0.0.1",
@@ -16,10 +16,10 @@ def bulkInsert(records):
         connection.c..
         print(cursor.rowcount, "Record inserted successfully into mobile table")
 
-    except (Exception, psycopg2.Error) as error:
+    ______ (E.., psycopg2.Error) __ error:
         print("Failed inserting record into mobile table {}".f..(error))
 
-    finally:
+    f__
         # closing database connection.
         __ (connection):
             cursor.c..

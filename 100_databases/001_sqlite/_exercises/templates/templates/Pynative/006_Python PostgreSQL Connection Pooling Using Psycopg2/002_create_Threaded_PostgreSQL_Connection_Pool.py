@@ -1,6 +1,6 @@
 _____ psycopg2
 from psycopg2 _____ pool
-try:
+___
     threaded_postgreSQL_pool _ psycopg2.pool.ThreadedConnectionPool(5, 20,user _ "postgres",
                                               password _ "pass@#29",
                                               host _ "127.0.0.1",
@@ -30,10 +30,10 @@ try:
         threaded_postgreSQL_pool.putconn(ps_connection)
         print("Put away a PostgreSQL connection")
 
-except (Exception, psycopg2.DatabaseError) as error :
+______ (E.., psycopg2.DatabaseError) __ error :
     print ("Error while connecting to PostgreSQL", error)
 
-finally:
+f__
     #closing database connection.
     # use closeall method to close all the active connection if you want to turn of the application
     __ (threaded_postgreSQL_pool):

@@ -7,7 +7,7 @@ _____ ___
 con _ None
 f _ None
 
-try:
+___
 
     con _ psycopg2.c..(database_'testdb', user_'syurskyi',
                     password_'1234')
@@ -18,7 +18,7 @@ try:
     cur.copy_from(f, 'cars', sep_"|")
     con.c..
 
-except psycopg2.DatabaseError as e:
+______ psycopg2.DatabaseError __ e:
 
     __ con:
         con.rollback()
@@ -26,7 +26,7 @@ except psycopg2.DatabaseError as e:
     print(f'Error {e}')
     ___.exit(1)
 
-except IOError as e:
+______ IOError __ e:
 
     __ con:
         con.rollback()
@@ -34,7 +34,7 @@ except IOError as e:
     print(f'Error {e}')
     ___.exit(1)
 
-finally:
+f__
 
     __ con:
         con.c..

@@ -1,7 +1,7 @@
 _____ psycopg2
 
 def updateInBulk(records):
-    try:
+    ___
         ps_connection _ psycopg2.c..(user_"syurskyi",
                                          password_"1234",
                                          host_"127.0.0.1",
@@ -17,10 +17,10 @@ def updateInBulk(records):
         row_count _ cursor.rowcount
         print(row_count, "Records Updated")
 
-    except (Exception, psycopg2.Error) as error:
+    ______ (E.., psycopg2.Error) __ error:
         print("Error while updating PostgreSQL table", error)
 
-    finally:
+    f__
         # closing database connection.
         __ (ps_connection):
             cursor.c..

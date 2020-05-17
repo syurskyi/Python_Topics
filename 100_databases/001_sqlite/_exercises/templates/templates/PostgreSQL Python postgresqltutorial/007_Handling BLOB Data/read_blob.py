@@ -5,7 +5,7 @@ from config _____ config
 def read_blob(part_id, path_to_dir):
     """ read BLOB data from a table """
     conn _ None
-    try:
+    ___
         # read database configuration
         params _ config()
         # connect to the PostgresQL database
@@ -23,9 +23,9 @@ def read_blob(part_id, path_to_dir):
         open(path_to_dir + blob[0] + '.' + blob[1], 'wb').write(blob[2])
         # close the communication with the PostgresQL database
         cur.c..
-    except (Exception, psycopg2.DatabaseError) as error:
+    ______ (E.., psycopg2.DatabaseError) __ error:
         print(error)
-    finally:
+    f__
         __ conn is not None:
             conn.c..
 

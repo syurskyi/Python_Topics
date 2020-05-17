@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-_____ ? as sqlite
+_____ ? __ sqlite
 _____ ___
 
 con _ None
 
-try:
+___
     con _ sqlite.c..('ydb.db', isolation_level_None)
 
     cur _ con.c..
@@ -18,12 +18,12 @@ try:
     cur.e..("I.. I.. friends(name) V.. ('Jim')")
     cur.e..("I.. I.. friends(name) V.. ('Robert')")
 
-except sqlite.Error as e:
+______ sqlite.Error __ e:
 
     print(e)
     ___.exit(1)
 
-finally:
+f__
 
     __ con:
         con.c..

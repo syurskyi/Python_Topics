@@ -40,7 +40,7 @@ def create_tables():
         )
         """)
     conn _ None
-    try:
+    ___
         # read the connection parameters
         params _ config()
         # connect to the PostgreSQL server
@@ -53,9 +53,9 @@ def create_tables():
         cur.c..
         # commit the changes
         conn.c..
-    except (Exception, psycopg2.DatabaseError) as error:
+    ______ (E.., psycopg2.DatabaseError) __ error:
         print(error)
-    finally:
+    f__
         __ conn is not None:
             conn.c..
 

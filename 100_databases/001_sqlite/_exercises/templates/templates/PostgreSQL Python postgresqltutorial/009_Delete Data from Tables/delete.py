@@ -7,7 +7,7 @@ def delete_part(part_id):
     """ delete part by part id """
     conn _ None
     rows_deleted _ 0
-    try:
+    ___
         # read database configuration
         params _ config()
         # connect to the PostgreSQL database
@@ -22,9 +22,9 @@ def delete_part(part_id):
         conn.c..
         # Close communication with the PostgreSQL database
         cur.c..
-    except (Exception, psycopg2.DatabaseError) as error:
+    ______ (E.., psycopg2.DatabaseError) __ error:
         print(error)
-    finally:
+    f__
         __ conn is not None:
             conn.c..
 

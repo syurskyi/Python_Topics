@@ -6,7 +6,7 @@ from config _____ config
 def get_parts(vendor_id):
     """ get parts provided by a vendor specified by the vendor_id """
     conn _ None
-    try:
+    ___
         # read database configuration
         params _ config()
         # connect to the PostgreSQL database
@@ -23,9 +23,9 @@ def get_parts(vendor_id):
             row _ cur.f_o..
         # close the communication with the PostgreSQL database server
         cur.c..
-    except (Exception, psycopg2.DatabaseError) as error:
+    ______ (E.., psycopg2.DatabaseError) __ error:
         print(error)
-    finally:
+    f__
         __ conn is not None:
             conn.c..
 

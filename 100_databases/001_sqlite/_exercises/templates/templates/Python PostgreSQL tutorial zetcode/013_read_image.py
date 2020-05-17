@@ -8,22 +8,22 @@ def writeImage(data):
 
     fout _ None
 
-    try:
+    ___
         fout _ open('sid2.png', 'wb')
         fout.write(data)
 
-    except IOError as e:
+    ______ IOError __ e:
 
         print(f"Error @")
         ___.exit(1)
 
-    finally:
+    f__
 
         __ fout:
             fout.c..
 
 
-try:
+___
     con _ psycopg2.c..(database_'testdb', user_'syurskyi',
                     password_'1234')
 
@@ -33,12 +33,12 @@ try:
 
     writeImage(data)
 
-except psycopg2.DatabaseError as e:
+______ psycopg2.DatabaseError __ e:
 
     print(f'Error {e}')
     ___.exit(1)
 
-finally:
+f__
 
     __ con:
         con.c..

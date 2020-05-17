@@ -6,7 +6,7 @@ from config _____ config
 def get_vendors():
     """ query data from the vendors table """
     conn _ None
-    try:
+    ___
         params _ config()
         conn _ psycopg2.c..(**params)
         cur _ conn.c..
@@ -19,9 +19,9 @@ def get_vendors():
             row _ cur.f_o..
 
         cur.c..
-    except (Exception, psycopg2.DatabaseError) as error:
+    ______ (E.., psycopg2.DatabaseError) __ error:
         print(error)
-    finally:
+    f__
         __ conn is not None:
             conn.c..
 

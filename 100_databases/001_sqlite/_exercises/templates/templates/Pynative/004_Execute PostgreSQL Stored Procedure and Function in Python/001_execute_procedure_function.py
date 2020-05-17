@@ -1,7 +1,7 @@
 _____ psycopg2
 from psycopg2 _____ Error
 
-try:
+___
     ps_connection _ psycopg2.c..(user_"syurskyi",
                                      password_"1234",
                                      host_"127.0.0.1",
@@ -20,10 +20,10 @@ try:
         print("Name = ", row[1])
         print("Designation  = ", row[2])
 
-except (Exception, psycopg2.DatabaseError) as error:
+______ (E.., psycopg2.DatabaseError) __ error:
     print("Error while connecting to PostgreSQL", error)
 
-finally:
+f__
     # closing database connection.
     __ (ps_connection):
         cursor.c..

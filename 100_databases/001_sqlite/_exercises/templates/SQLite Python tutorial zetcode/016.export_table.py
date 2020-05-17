@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-_____ ? as sqlite
+_____ ? __ sqlite
 
 cars _ (
     (1, 'Audi', 52643),

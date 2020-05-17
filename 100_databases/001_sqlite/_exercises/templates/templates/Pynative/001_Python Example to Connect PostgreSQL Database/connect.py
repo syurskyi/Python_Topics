@@ -1,5 +1,5 @@
 _____ psycopg2
-try:
+___
     connection _ psycopg2.c..(user _ "syurskyi",
                                   password _ "1234",
                                   host _ "127.0.0.1",
@@ -15,9 +15,9 @@ try:
     record _ cursor.f_o..
     print("You are connected to - ", record,"\n")
 
-except (Exception, psycopg2.Error) as error :
+______ (E.., psycopg2.Error) __ error :
     print ("Error while connecting to PostgreSQL", error)
-finally:
+f__
     #closing database connection.
         __(connection):
             cursor.c..

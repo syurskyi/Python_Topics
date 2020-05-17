@@ -1,7 +1,7 @@
 _____ psycopg2
 
 def getMobileDetails(mobileID):
-    try:
+    ___
         connection _ psycopg2.c..(user_"syurskyi",
                                       password_"1234",
                                       host_"127.0.0.1",
@@ -19,10 +19,10 @@ def getMobileDetails(mobileID):
             print("Model = ", row[1])
             print("Price  = ", row[2])
 
-    except (Exception, psycopg2.Error) as error:
+    ______ (E.., psycopg2.Error) __ error:
         print("Error fetching data from PostgreSQL table", error)
 
-    finally:
+    f__
         # closing database connection
         __ (connection):
             cursor.c..

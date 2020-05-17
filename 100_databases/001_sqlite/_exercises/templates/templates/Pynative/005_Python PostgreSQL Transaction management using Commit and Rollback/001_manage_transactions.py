@@ -1,6 +1,6 @@
 _____ psycopg2
 from psycopg2 _____ Error
-try:
+___
    connection _ psycopg2.c..(user_"syurskyi",
                                   password_"1234",
                                   host_"127.0.0.1",
@@ -34,11 +34,11 @@ try:
    connection.c..
    print("Transaction completed successfully ")
 
-except (Exception, psycopg2.DatabaseError) as error :
+______ (E.., psycopg2.DatabaseError) __ error :
     print ("Error in transction Reverting all other operations of a transction ", error)
     connection.rollback()
 
-finally:
+f__
     #closing database connection.
     __(connection):
         cursor.c..

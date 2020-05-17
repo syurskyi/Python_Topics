@@ -14,7 +14,7 @@ def iter_row(cursor, size_10):
 def get_part_vendors():
     """ query part and vendor data from multiple tables"""
     conn _ None
-    try:
+    ___
         params _ config()
         conn _ psycopg2.c..(**params)
         cur _ conn.c..
@@ -28,9 +28,9 @@ def get_part_vendors():
         ___ row __ iter_row(cur, 10):
             print(row)
         cur.c..
-    except (Exception, psycopg2.DatabaseError) as error:
+    ______ (E.., psycopg2.DatabaseError) __ error:
         print(error)
-    finally:
+    f__
         __ conn is not None:
             conn.c..
 

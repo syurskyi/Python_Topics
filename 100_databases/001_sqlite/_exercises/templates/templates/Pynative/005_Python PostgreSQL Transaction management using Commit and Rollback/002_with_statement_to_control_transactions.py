@@ -7,7 +7,7 @@ connection _ psycopg2.c..(user_"syurskyi",
                               port_"5432",
                               database_"postgres_db")
 with connection:
-    with connection.c.. as cursor:
+    with connection.c.. __ cursor:
         # Find item price
         query _ """select price from itemstable where itemid = 876"""
         cursor.e..(query)

@@ -2,7 +2,7 @@ _____ psycopg2
 
 
 def deleteData(mobileId):
-    try:
+    ___
         connection _ psycopg2.c..(user_"syurskyi",
                                       password_"1234",
                                       host_"127.0.0.1",
@@ -18,10 +18,10 @@ def deleteData(mobileId):
         count _ cursor.rowcount
         print(count, "Record deleted successfully ")
 
-    except (Exception, psycopg2.Error) as error:
+    ______ (E.., psycopg2.Error) __ error:
         print("Error in Delete operation", error)
 
-    finally:
+    f__
         # closing database connection.
         __ (connection):
             cursor.c..

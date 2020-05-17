@@ -5,7 +5,7 @@ from config _____ config
 def get_parts():
     """ query parts from the parts table """
     conn _ None
-    try:
+    ___
         params _ config()
         conn _ psycopg2.c..(**params)
         cur _ conn.c..
@@ -15,9 +15,9 @@ def get_parts():
         ___ row __ rows:
             print(row)
         cur.c..
-    except (Exception, psycopg2.DatabaseError) as error:
+    ______ (E.., psycopg2.DatabaseError) __ error:
         print(error)
-    finally:
+    f__
         __ conn is not None:
             conn.c..
 

@@ -1,23 +1,23 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-_____ ? as sqlite
+_____ ? __ sqlite
 _____ ___
 
 
 def writeImage(data):
     fout _ None
 
-    try:
+    ___
         fout _ open('Camera.png', 'wb')
         fout.write(data)
 
-    except IOError as e:
+    ______ IOError __ e:
 
         print(e)
         ___.exit(1)
 
-    finally:
+    f__
 
         __ fout:
             fout.c..
@@ -25,7 +25,7 @@ def writeImage(data):
 
 con _ None
 
-try:
+___
     con _ sqlite.c..('ydb.db')
 
     cur _ con.c..
@@ -35,12 +35,12 @@ try:
     writeImage(data)
 
 
-except sqlite.Error as e:
+______ sqlite.Error __ e:
 
     print(e)
     ___.exit(1)
 
-finally:
+f__
 
     __ con:
         con.c..

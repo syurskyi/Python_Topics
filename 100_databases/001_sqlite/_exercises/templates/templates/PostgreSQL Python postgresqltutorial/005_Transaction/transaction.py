@@ -10,7 +10,7 @@ def add_part(part_name, vendor_list):
     assign_vendor _ "I.. I.. vendor_parts(vendor_id,part_id) V..(%s,%s)"
 
     conn _ None
-    try:
+    ___
         params _ config()
         conn _ psycopg2.c..(**params)
         cur _ conn.c..
@@ -24,9 +24,9 @@ def add_part(part_name, vendor_list):
 
         # commit changes
         conn.c..
-    except (Exception, psycopg2.DatabaseError) as error:
+    ______ (E.., psycopg2.DatabaseError) __ error:
         print(error)
-    finally:
+    f__
         __ conn is not None:
             conn.c..
 
