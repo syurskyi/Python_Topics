@@ -1,9 +1,9 @@
 ____ u.. _____ User
 ____ database _____ Database
 
-Database.initialise(d.._"learning", user_"syurskyi", p.._"1234", h.._"localhost")
+Database.initialise(d.._"learning" user_"syurskyi" p.._"1234" h.._"localhost")
 
-user _ User('jose@schoolofcode.me', 'Jose', 'Salvatierra')
+user _ User('jose@schoolofcode.me' 'Jose' 'Salvatierra')
 
 user.save_to_db()
 

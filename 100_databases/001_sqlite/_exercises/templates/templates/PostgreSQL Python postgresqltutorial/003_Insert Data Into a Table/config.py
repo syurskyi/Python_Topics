@@ -2,13 +2,13 @@
 # ____ c_p_ _____ ?
 #
 #
-# ___ config filename_'database.ini', section_'postgresql'
+# ___ config filename_'database.ini' section_'postgresql'
 #     # create a parser
 #     parser _ ?
 #     # read config file
 #     ?.r.. f..
 #
-#     # get section, default to postgresql
+#     # get section default to postgresql
 #     db _   # dict
 #     __ ?.has_section s..
 #         params _ ?.i.. s..

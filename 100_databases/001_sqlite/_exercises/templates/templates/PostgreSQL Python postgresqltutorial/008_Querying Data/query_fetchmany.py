@@ -28,7 +28,7 @@
 #         ___ row __ i_r.. cu. 10
 #             print ?
 #         ?.c..
-#     ______  E.., ?.DE.. __ error
+#     ______  E.. ?.DE.. __ error
 #         print ?
 #     f__
 #         __ c.. __ no. w..

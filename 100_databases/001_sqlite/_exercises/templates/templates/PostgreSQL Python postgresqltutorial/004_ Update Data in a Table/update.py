@@ -24,7 +24,7 @@
 #         ?.c..
 #         # Close communication with the PostgreSQL database
 #         ?.c..
-#     ______ E.., ?.DE.. __ error
+#     ______ E.. ?.DE.. __ error
 #         print ?
 #     f__
 #         __ c.. __ no. w..
@@ -34,4 +34,4 @@
 #
 #
 # __ _____ __ ______
-#     ? '1', '3M Corp'
+#     ? '1' '3M Corp'

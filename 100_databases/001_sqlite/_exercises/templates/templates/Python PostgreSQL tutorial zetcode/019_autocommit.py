@@ -11,7 +11,7 @@ ___
     con _ ?.c..(d.._'testdb', u.._'syurskyi',
                     p.._'1234')
 
-    con.autocommit _ True
+    con.a_c_ _ True
 
     cur _ con.c..
 

@@ -7,33 +7,33 @@
 #     commands _ (
 #         """
 #         C.. T.. vendors (
-#             vendor_id S.. P.. K..,
+#             vendor_id S.. P.. K..
 #             vendor_name V..(255) N.. N..
 #         )
 #         """,
 #         """ C.. T.. parts (
-#                 part_id S.. P.. K..,
+#                 part_id S.. P.. K..
 #                 part_name V..(255) N.. N..
 #                 )
 #         """,
 #         """
 #         C.. T.. part_drawings (
-#                 part_id IN.. P.. K..,
-#                 file_extension V..(5) N.. N..,
-#                 drawing_data BYTEA N.. N..,
+#                 part_id IN.. P.. K..
+#                 file_extension V..(5) N.. N..
+#                 drawing_data BYTEA N.. N..
 #                 F.. K.. (part_id)
 #                 R.. parts (part_id)
 #                 O. U.. CA.. O. D.. CA..
 #         )
-#         """,
+#         """
 #         """
 #         C.. T.. vendor_parts (
-#                 vendor_id IN.. N.. N..,
-#                 part_id IN.. N.. N..,
-#                 P.. K.. (vendor_id , part_id),
+#                 vendor_id IN.. N.. N..
+#                 part_id IN.. N.. N..
+#                 P.. K.. (vendor_id  part_id)
 #                 F.. K.. (vendor_id)
 #                     R.. vendors (vendor_id)
-#                     O. U.. CA.. O. D.. CA..,
+#                     O. U.. CA.. O. D.. CA..
 #                 F.. K.. (part_id)
 #                     R.. parts (part_id)
 #                     O. U.. CA.. O. D.. CA..
@@ -53,7 +53,7 @@
 #         ?.c..
 #         # commit the changes
 #         ?.c..
-#     ______ E.., ?.DE.. __ error
+#     ______ E.. ?.DE.. __ error
 #         print ?
 #     f__
 #         __ ? __ no. w..

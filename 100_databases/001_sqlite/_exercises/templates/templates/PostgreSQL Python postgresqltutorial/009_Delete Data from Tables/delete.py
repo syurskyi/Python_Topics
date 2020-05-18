@@ -15,14 +15,14 @@
 #         # create a new cursor
 #         cur _ ?.c..
 #         # execute the U..  statement
-#         ?.e..("D.. F.. parts W.. part_id = @", p_i.
+#         ?.e..("D.. F.. parts W.. part_id = @" p_i.
 #         # get the number of updated rows
 #         rows_deleted _ ?.r..
 #         # Commit the changes to the database
 #         ?.c..
 #         # Close communication with the PostgreSQL database
 #         ?.c..
-#     ______ E.., ?.DE.. __ error
+#     ______ E.. ?.DE.. __ error
 #         print ?
 #     f__
 #         __ c.. __ no. w..

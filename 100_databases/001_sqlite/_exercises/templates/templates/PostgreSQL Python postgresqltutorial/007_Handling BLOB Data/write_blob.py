@@ -3,7 +3,7 @@
 # ____ c.. _____ c..
 #
 #
-# ___ write_blob part_id, path_to_file, file_extension
+# ___ write_blob part_id path_to_file file_extension
 #     """ insert a BLOB into a table """
 #     conn _ w..
 #     ___
@@ -16,14 +16,14 @@
 #         # create a new cursor object
 #         cur _ conn.c..
 #         # execute the I.. statement
-#         ?.e..("I.. I.. part_drawings(part_id,file_extension,drawing_data) " +
-#                     "V.. @ @ @",
+#         ?.e..("I.. I.. part_drawings(part_idfile_extension,drawing_data) " +
+#                     "V.. @ @ @"
 #                     p_i. f_e.. ?.B.. d..
 #         # commit the changes to the database
 #         ?.c..
 #         # close the communication with the PostgresQL database
 #         ?.c..
-#     ______ E.., ?.DE.. __ error
+#     ______ E.. ?.DE.. __ error
 #         print ?
 #     f_
 #         __ c.. __ no. w..:
@@ -31,5 +31,5 @@
 #
 #
 # __ _____ __ ______
-#     ? 1 'images/simtray.png', 'png'
-#     ? 2 'images/speaker.png', 'png'
+#     ? 1 'images/simtray.png' 'png'
+#     ? 2 'images/speaker.png' 'png'

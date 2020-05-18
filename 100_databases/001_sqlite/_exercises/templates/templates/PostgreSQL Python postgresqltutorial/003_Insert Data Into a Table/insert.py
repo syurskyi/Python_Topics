@@ -22,7 +22,7 @@
 #         conn.c..
 #         # close communication with the database
 #         ?.c..
-#     ______ E.., ?.DE.. __ error
+#     ______ E.. ?.DE.. __ error
 #         print ?
 #     f__
 #         __ c_ no. w..
@@ -47,7 +47,7 @@
 #         ?.c..
 #         # close communication with the database
 #         ?.c..
-#     ______ E.., ?.DE.. __ error
+#     ______ E.. ?.DE.. __ error
 #         print ?
 #     f__
 #         __ c.. __ no. w..
@@ -59,7 +59,7 @@
 #     insert_vendor("3M Co.")
 #     # insert multiple vendors
 #     insert_vendor_list([
-#         ('AKM Semiconductor Inc.',),
+#         ('AKM Semiconductor Inc.'),
 #         ('Asahi Glass Co Ltd.',),
 #         ('Daikin Industries Ltd.',),
 #         ('Dynacast International Inc.',),

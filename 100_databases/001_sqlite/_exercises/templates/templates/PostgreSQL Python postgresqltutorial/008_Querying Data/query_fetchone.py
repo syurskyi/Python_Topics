@@ -10,7 +10,7 @@
 #         params _ c..
 #         conn _ ?.c.. $$p..
 #         cur _ ?.c..
-#         ?.e..("S.. vendor_id, vendor_name F.. vendors O.. B. vendor_name")
+#         ?.e..("S.. vendor_id vendor_name F.. vendors O.. B. vendor_name")
 #         print("The number of parts: " ?.r..
 #         row _ ?.f_o..
 #
