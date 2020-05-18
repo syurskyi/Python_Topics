@@ -3,26 +3,26 @@ _____ ?
 def readSingleRow(developerId):
     ___
         sqliteConnection _ ?.c..('SQLite_Python.db')
-        cursor _ sqliteConnection.c..
+        cursor _ ?.c..
         print("Connected to SQLite")
 
         sqlite_select_query _ """SELECT * from SqliteDb_developers where id = ?"""
-        cursor.e..(sqlite_select_query, (developerId, ))
+        ?.e..(sqlite_select_query, (developerId, ))
         print("Reading single row \n")
-        record _ cursor.fetchone()
+        record _ ?.fetchone()
         print("Id: ", record[0])
         print("Name: ", record[1])
         print("Email: ", record[2])
         print("JoiningDate: ", record[3])
         print("Salary: ", record[4])
 
-        cursor.c..
+        ?.c..
 
     _____ ?.E.. __ error:
         print("Failed to read single row from sqlite table", error)
     f..
-        __ (sqliteConnection):
-            sqliteConnection.c..
+        __ (?):
+            ?.c..
             print("The SQLite connection is closed")
 
 readSingleRow(3)

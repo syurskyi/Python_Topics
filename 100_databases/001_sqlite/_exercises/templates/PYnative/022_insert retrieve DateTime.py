@@ -4,7 +4,7 @@ _____ datetime
 def addDeveloper(id, name, joiningDate):
     ___
         sqliteConnection _ ?.c..('SQLite_Python.db')
-        cursor _ sqliteConnection.c..
+        cursor _ ?.c..
         print("Connected to SQLite")
 
         sqlite_create_table_query _ '''C.. T.. new_developers (
@@ -12,23 +12,23 @@ def addDeveloper(id, name, joiningDate):
                                        name T.. N.. N..,
                                        joiningDate timestamp);'''
 
-        cursor _ sqliteConnection.c..
-        cursor.e..(sqlite_create_table_query)
+        ? _ ?.c..
+        ?.e..(sqlite_create_table_query)
 
         # insert developer detail
-        sqlite_insert_with_param _ """INSERT INTO 'new_developers'
+        sqlite_insert_with_param _ """I.. I.. 'new_developers'
                           ('id', 'name', 'joiningDate') 
-                          VALUES (?, ?, ?);"""
+                          V.. (?, ?, ?);"""
 
         data_tuple _ (id, name, joiningDate)
-        cursor.e..(sqlite_insert_with_param, data_tuple)
-        sqliteConnection.c..
+        ?.e..(sqlite_insert_with_param, data_tuple)
+        ?.c..
         print("Developer added successfully \n")
 
         # get developer detail
         sqlite_select_query _ """SELECT name, joiningDate from new_developers where id = ?"""
-        cursor.e..(sqlite_select_query, (1,))
-        records _ cursor.f_a..
+        ?.e..(sqlite_select_query, (1,))
+        records _ ?.f_a..
 
         for row in records:
             developer_ row[0]
@@ -36,13 +36,13 @@ def addDeveloper(id, name, joiningDate):
             print(developer, " joined on", joiningDate)
             print("joining date type is", type(joining_Date))
 
-        cursor.c..
+        ?.c..
 
     _____ ?.E.. __ error:
         print("Error while working with SQLite", error)
     f..
-        __ (sqliteConnection):
-            sqliteConnection.c..
+        __ (?):
+            ?.c..
             print("sqlite connection is closed")
 
 addDeveloper(1, 'Mark', datetime.datetime.now())

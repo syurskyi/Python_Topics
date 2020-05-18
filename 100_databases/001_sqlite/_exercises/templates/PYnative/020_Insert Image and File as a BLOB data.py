@@ -9,25 +9,25 @@ def convertToBinaryData(filename):
 def insertBLOB(empId, name, photo, resumeFile):
     ___
         sqliteConnection _ ?.c..('SQLite_Python.db')
-        cursor _ sqliteConnection.c..
+        cursor _ ?.c..
         print("Connected to SQLite")
-        sqlite_insert_blob_query _ """ INSERT INTO new_employee
-                                  (id, name, photo, resume) VALUES (?, ?, ?, ?)"""
+        sqlite_insert_blob_query _ """ I.. I.. new_employee
+                                  (id, name, photo, resume) V.. (?, ?, ?, ?)"""
 
         empPhoto _ convertToBinaryData(photo)
         resume _ convertToBinaryData(resumeFile)
         # Convert data into tuple format
         data_tuple _ (empId, name, empPhoto, resume)
-        cursor.e..(sqlite_insert_blob_query, data_tuple)
-        sqliteConnection.c..
+        ?.e..(sqlite_insert_blob_query, data_tuple)
+        ?.c..
         print("Image and file inserted successfully as a BLOB into a table")
-        cursor.c..
+        ?.c..
 
     _____ ?.E.. __ error:
         print("Failed to insert blob data into sqlite table", error)
     f..
-        __ (sqliteConnection):
-            sqliteConnection.c..
+        __ (?):
+            ?.c..
             print("the sqlite connection is closed")
 
 insertBLOB(1, "Smith", "E:\pynative\Python\photos\smith.jpg", "E:\pynative\Python\photos\smith_resume.txt")

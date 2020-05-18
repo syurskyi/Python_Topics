@@ -6,21 +6,21 @@ def _toTileCase(string):
 def getDeveloperName(id):
     ___
         sqliteConnection _ ?.c..('SQLite_Python.db')
-        cursor _ sqliteConnection.c..
+        cursor _ ?.c..
         print("Connected to SQLite")
 
-        sqliteConnection.create_function("TOTILECASE", 1, _toTileCase)
+        ?.create_function("TOTILECASE", 1, _toTileCase)
         select_query _ "SELECT TOTILECASE(name) FROM SqliteDb_developers where id = ?"
-        cursor.e..(select_query, (id,))
-        name _ cursor.fetchone()
+        ?.e..(select_query, (id,))
+        name _ ?.fetchone()
         print("Developer Name is", name)
-        cursor.c..
+        ?.c..
 
     _____ ?.E.. __ error:
         print("Failed to read data from sqlite table", error)
     f..
-        __ (sqliteConnection):
-            sqliteConnection.c..
+        __ (?):
+            ?.c..
             print("sqlite connection is closed")
 
 getDeveloperName(2)

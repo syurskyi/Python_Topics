@@ -3,21 +3,21 @@ _____ ?
 def deleteRecord():
     ___
         sqliteConnection _ ?.c..('SQLite_Python.db')
-        cursor _ sqliteConnection.c..
+        cursor _ ?.c..
         print("Connected to SQLite")
 
         # Deleting single record now
         sql_delete_query _ """DELETE from SqliteDb_developers where id = 6"""
-        cursor.e..(sql_delete_query)
-        sqliteConnection.c..
+        ?.e..(sql_delete_query)
+        ?.c..
         print("Record deleted successfully ")
-        cursor.c..
+        ?.c..
 
     _____ ?.E.. __ error:
         print("Failed to delete record from sqlite table", error)
     f..
-        __ (sqliteConnection):
-            sqliteConnection.c..
+        __ (?):
+            ?.c..
             print("the sqlite connection is closed")
 
 deleteRecord()

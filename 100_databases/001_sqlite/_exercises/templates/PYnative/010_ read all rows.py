@@ -3,12 +3,12 @@ _____ ?
 def readSqliteTable():
     ___
         sqliteConnection _ ?.c..('SQLite_Python.db')
-        cursor _ sqliteConnection.c..
+        cursor _ ?.c..
         print("Connected to SQLite")
 
         sqlite_select_query _ """SELECT * from SqliteDb_developers"""
-        cursor.e..(sqlite_select_query)
-        records _ cursor.f_a..
+        ?.e..(sqlite_select_query)
+        records _ ?.f_a..
         print("Total rows are:  ", len(records))
         print("Printing each row")
         for row in records:
@@ -19,13 +19,13 @@ def readSqliteTable():
             print("Salary: ", row[4])
             print("\n")
 
-        cursor.c..
+        ?.c..
 
     _____ ?.E.. __ error:
         print("Failed to read data from sqlite table", error)
     f..
-        __ (sqliteConnection):
-            sqliteConnection.c..
+        __ (?):
+            ?.c..
             print("The SQLite connection is closed")
 
 readSqliteTable()

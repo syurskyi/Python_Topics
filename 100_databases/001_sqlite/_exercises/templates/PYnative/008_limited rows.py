@@ -7,9 +7,9 @@ def readLimitedRows(rowSize):
         print("Connected to SQLite")
 
         sqlite_select_query _ """SELECT * from SqliteDb_developers"""
-        cursor.e..(sqlite_select_query)
+        ?.e..(sqlite_select_query)
         print("Reading ", rowSize, " rows")
-        records _ cursor.fetchmany(rowSize)
+        records _ ?.fetchmany(rowSize)
         print("Printing each row \n")
         for row in records:
             print("Id: ", row[0])
@@ -19,7 +19,7 @@ def readLimitedRows(rowSize):
             print("Salary: ", row[4])
             print("\n")
 
-        cursor.c..
+        ?.c..
 
     _____ ?.E.. __ error:
         print("Failed to read data from sqlite table", error)

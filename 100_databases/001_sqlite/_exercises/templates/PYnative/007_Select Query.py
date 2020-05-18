@@ -7,15 +7,15 @@ def getDeveloperInfo(id):
         print("Connected to SQLite")
 
         sql_select_query _ """select * from SqliteDb_developers where id = ?"""
-        cursor.e..(sql_select_query, (id,))
-        records _ cursor.f_a..
+        ?.e..(sql_select_query, (id,))
+        records _ ?.f_a..
         print("Printing ID ", id)
         for row in records:
             print("Name = ", row[1])
             print("Email  = ", row[2])
             print("JoiningDate  = ", row[3])
             print("Salary  = ", row[4])
-        cursor.c..
+        ?.c..
 
     _____ ?.E.. __ error:
         print("Failed to read data from sqlite table", error)

@@ -6,16 +6,16 @@ def insertVaribleIntoTable(id, name, email, joinDate, salary):
         cursor _ sqliteConnection.c..
         print("Connected to SQLite")
 
-        sqlite_insert_with_param _ """INSERT INTO SqliteDb_developers
+        sqlite_insert_with_param _ """I.. I.. SqliteDb_developers
                           (id, name, email, joining_date, salary) 
-                          VALUES (?, ?, ?, ?, ?);"""
+                          V.. (?, ?, ?, ?, ?);"""
 
         data_tuple _ (id, name, email, joinDate, salary)
-        cursor.e..(sqlite_insert_with_param, data_tuple)
+        ?.e..(sqlite_insert_with_param, data_tuple)
         sqliteConnection.c..
         print("Python Variables inserted successfully into SqliteDb_developers table")
 
-        cursor.c..
+        ?.c..
 
     _____ ?.E.. __ error:
         print("Failed to insert Python variable into sqlite table", error)

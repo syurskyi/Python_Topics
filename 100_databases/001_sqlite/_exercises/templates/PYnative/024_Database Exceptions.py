@@ -4,16 +4,16 @@ _____ sys
 
 ___
     sqliteConnection _ ?.c..('SQLite_Python.db')
-    cursor _ sqliteConnection.c..
+    cursor _ ?.c..
     print("Successfully Connected to SQLite")
 
-    sqlite_insert_query _ """INSERT INTO unknown_table_1
-                          (id, text)  VALUES  (1, 'Demo Text')"""
+    sqlite_insert_query _ """I.. I.. unknown_table_1
+                          (id, text)  V..  (1, 'Demo Text')"""
 
-    count _ cursor.e..(sqlite_insert_query)
-    sqliteConnection.c..
-    print("Record inserted successfully into SqliteDb_developers table ", cursor.rowcount)
-    cursor.c..
+    count _ ?.e..(sqlite_insert_query)
+    ?.c..
+    print("Record inserted successfully into SqliteDb_developers table ", ?.r..
+    ?.c..
 
 _____ ?.E.. __ error:
     print("Failed to insert data into sqlite table")
@@ -23,8 +23,8 @@ _____ ?.E.. __ error:
     exc_type, exc_value, exc_tb _ sys.exc_info()
     print(traceback.format_exception(exc_type, exc_value, exc_tb))
 f..
-    __ (sqliteConnection):
-        sqliteConnection.c..
+    __ (?):
+        ?.c..
         print("The SQLite connection is closed")
 
 

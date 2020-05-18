@@ -9,12 +9,12 @@ def writeTofile(data, filename):
 def readBlobData(empId):
     ___
         sqliteConnection _ ?.c..('SQLite_Python.db')
-        cursor _ sqliteConnection.c..
+        cursor _ ?.c..
         print("Connected to SQLite")
 
         sql_fetch_blob_query _ """SELECT * from new_employee where id = ?"""
-        cursor.e..(sql_fetch_blob_query, (empId,))
-        record _ cursor.f_a..
+        ?.e..(sql_fetch_blob_query, (empId,))
+        record _ ?.f_a..
         for row in record:
             print("Id = ", row[0], "Name = ", row[1])
             name  _ row[1]
@@ -27,13 +27,13 @@ def readBlobData(empId):
             writeTofile(photo, photoPath)
             writeTofile(resumeFile, resumePath)
 
-        cursor.c..
+        ?.c..
 
     _____ ?.E.. __ error:
         print("Failed to read blob data from sqlite table", error)
     f..
-        __ (sqliteConnection):
-            sqliteConnection.c..
+        __ (?):
+            ?.c..
             print("sqlite connection is closed")
 
 readBlobData(1)
