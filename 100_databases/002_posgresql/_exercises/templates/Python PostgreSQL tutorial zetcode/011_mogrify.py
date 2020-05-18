@@ -1,24 +1,24 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-import psycopg2
-
-con = psycopg2.connect(database='testdb', user='syurskyi',
-                       password='1234')
-cur = None
-
-with con:
-    cur = con.cursor()
-
-    print(cur.mogrify("SELECT name, price FROM cars WHERE id=%s", (2,)))
-
-    # cur.execute("SELECT name, price FROM cars WHERE id=%s", (2,) )
-    # row = cur.fetchone()
-    # print(f"{row[0]} {row[1]}")
-
-
-
-# $ mogrify.py
-# b'SELECT name, price FROM cars WHERE id=2'
+# #!/usr/bin/env python
+# # -*- coding: utf-8 -*-
 #
-# This is the output.
+# _____ ?
+#
+# con _ ?.c.. d.._'testdb' u.._'syurskyi'
+#                        p.._'1234'
+# cur _ w..
+#
+# w__ ?
+#     cur _ ?.c..
+#
+#     print ?.m.. "S.. name, price F.. cars W.. id=@" 2
+#
+#     # ?.execute("S.. name, price F.. cars W.. id=%s", (2,) )
+#     # row = ?.f_o..
+#     # print(f"{row[0]} {row[1]}")
+#
+#
+#
+# # $ mogrify.py
+# # b'S.. name, price F.. cars W.. id=2'
+# #
+# # This is the output.

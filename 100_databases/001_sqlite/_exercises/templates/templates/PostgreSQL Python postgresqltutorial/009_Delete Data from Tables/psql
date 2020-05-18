@@ -1,6 +1,0 @@
-1. Open psql
-2. Go to the correct database  # suppliers
-
-\dt
-
-suppliers=# SELECT * FROM parts;

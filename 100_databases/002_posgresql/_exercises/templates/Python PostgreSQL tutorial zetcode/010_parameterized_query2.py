@@ -1,23 +1,23 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-import psycopg2
-
-uid = 3
-
-con = psycopg2.connect(database='testdb', user='syurskyi',
-                    password='1234')
-
-with con:
-
-    cur = con.cursor()
-
-    cur.execute("SELECT * FROM cars WHERE id=%(id)s", {'id': uid } )
-
-    row = cur.fetchone()
-
-    print(f'{row[0]} {row[1]} {row[2]}')
-
-
-# $ parameterized_query2.py
-# 3 Skoda 9000
+# #!/usr/bin/env python
+# # -*- coding: utf-8 -*-
+#
+# _____ ?
+#
+# uid _ 3
+#
+# con _ ?.c.. d.._'testdb' u.._'syurskyi'
+#                     p.._'1234'
+#
+# w__ ?
+#
+#     cur _ ?.c..
+#
+#     ?.e.. "S.. _ F.. cars W.. id=%(id)s", {'id': u..
+#
+#     row _ ?.f_o..
+#
+#     print _* ? 0 ? 1 ? 2
+#
+#
+# # $ parameterized_query2.py
+# # 3 Skoda 9000

@@ -1,39 +1,39 @@
-import psycopg2
-from psycopg2 import Error
-
-try:
-    ps_connection = psycopg2.connect(user="syurskyi",
-                                     password="1234",
-                                     host="127.0.0.1",
-                                     port="5432",
-                                     database="postgres_db")
-
-    cursor = ps_connection.cursor()
-
-    # call stored procedure
-    cursor.callproc('get_production_Deployment', [72, ])
-
-    print("fechting Employee details who pushed changes to the production from function")
-    result = cursor.fetchall()
-    for row in result:
-        print("Id = ", row[0], )
-        print("Name = ", row[1])
-        print("Designation  = ", row[2])
-
-except (Exception, psycopg2.DatabaseError) as error:
-    print("Error while connecting to PostgreSQL", error)
-
-finally:
-    # closing database connection.
-    if (ps_connection):
-        cursor.close()
-        ps_connection.close()
-        print("PostgreSQL connection is closed")
-
-# Output:
+# _____ ?
+# ____ ? _____ Er..
 #
-# fechting Employee details who pushed changes to the production from function
-# Id =  23
-# Name =  Scot
-# Designation =  Application Developer
-# PostgreSQL connection is closed
+# ___
+#     ps_connection _ ?.c.. u.._"syurskyi"
+#                                      p.._"1234"
+#                                      h.._"127.0.0.1"
+#                                      p.._"5432"
+#                                      d.._"postgres_db"
+#
+#     cursor _ ?.c..
+#
+#     # call stored procedure
+#     ?.c_p..('get_production_Deployment', [72, ])
+#
+#     print("fechting Employee details who pushed changes to the production f.. function")
+#     result _ ?.f_a..
+#     ___ row __ ?
+#         print("Id = " ? 0
+#         print("Name = " ? 1
+#         print("Designation  = " ? 2
+#
+# ______ E.., ?.DE.. __ error
+#     print("Error while connecting to PostgreSQL" ?
+#
+# f__
+#     # closing database connection.
+#     __ (p..
+#         ?.c..
+#         ?.c..
+#         print("PostgreSQL connection is closed")
+#
+# # Output:
+# #
+# # fechting Employee details who pushed changes to the production from function
+# # Id =  23
+# # Name =  Scot
+# # Designation =  Application Developer
+# # PostgreSQL connection is closed

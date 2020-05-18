@@ -1,64 +1,64 @@
-import psycopg2
-from config import config
-
-
-def create_tables():
-    """ create tables in the PostgreSQL database"""
-    commands = (
-        """
-        CREATE TABLE vendors (
-            vendor_id SERIAL PRIMARY KEY,
-            vendor_name VARCHAR(255) NOT NULL
-        )
-        """,
-        """ CREATE TABLE parts (
-                part_id SERIAL PRIMARY KEY,
-                part_name VARCHAR(255) NOT NULL
-                )
-        """,
-        """
-        CREATE TABLE part_drawings (
-                part_id INTEGER PRIMARY KEY,
-                file_extension VARCHAR(5) NOT NULL,
-                drawing_data BYTEA NOT NULL,
-                FOREIGN KEY (part_id)
-                REFERENCES parts (part_id)
-                ON UPDATE CASCADE ON DELETE CASCADE
-        )
-        """,
-        """
-        CREATE TABLE vendor_parts (
-                vendor_id INTEGER NOT NULL,
-                part_id INTEGER NOT NULL,
-                PRIMARY KEY (vendor_id , part_id),
-                FOREIGN KEY (vendor_id)
-                    REFERENCES vendors (vendor_id)
-                    ON UPDATE CASCADE ON DELETE CASCADE,
-                FOREIGN KEY (part_id)
-                    REFERENCES parts (part_id)
-                    ON UPDATE CASCADE ON DELETE CASCADE
-        )
-        """)
-    conn = None
-    try:
-        # read the connection parameters
-        params = config()
-        # connect to the PostgreSQL server
-        conn = psycopg2.connect(**params)
-        cur = conn.cursor()
-        # create table one by one
-        for command in commands:
-            cur.execute(command)
-        # close communication with the PostgreSQL database server
-        cur.close()
-        # commit the changes
-        conn.commit()
-    except (Exception, psycopg2.DatabaseError) as error:
-        print(error)
-    finally:
-        if conn is not None:
-            conn.close()
-
-
-if __name__ == '__main__':
-    create_tables()
+# _____ ?
+# ____ c.. _____ c..
+#
+#
+# ___ create_tables
+#     """ create tables in the PostgreSQL database"""
+#     commands _ (
+#         """
+#         C.. T.. vendors (
+#             vendor_id S.. P.. K..
+#             vendor_name V..(255) N.. N..
+#         )
+#         """,
+#         """ C.. T.. parts (
+#                 part_id S.. P.. K..
+#                 part_name V..(255) N.. N..
+#                 )
+#         """,
+#         """
+#         C.. T.. part_drawings (
+#                 part_id IN.. P.. K..
+#                 file_extension V..(5) N.. N..
+#                 drawing_data BYTEA N.. N..
+#                 F.. K.. (part_id)
+#                 R.. parts (part_id)
+#                 O. U.. CA.. O. D.. CA..
+#         )
+#         """
+#         """
+#         C.. T.. vendor_parts (
+#                 vendor_id IN.. N.. N..
+#                 part_id IN.. N.. N..
+#                 P.. K.. (vendor_id  part_id)
+#                 F.. K.. (vendor_id)
+#                     R.. vendors (vendor_id)
+#                     O. U.. CA.. O. D.. CA..
+#                 F.. K.. (part_id)
+#                     R.. parts (part_id)
+#                     O. U.. CA.. O. D.. CA..
+#         )
+#         """)
+#     conn _ w..
+#     ___
+#         # read the connection parameters
+#         params _ c..
+#         # connect to the PostgreSQL server
+#         conn _ ?.c.. $$p..
+#         cur _ ?.c..
+#         # create table one by one
+#         ___ command __ ?
+#             ?.e.. ?
+#         # close communication with the PostgreSQL database server
+#         ?.c..
+#         # commit the changes
+#         ?.c..
+#     ______ E.. ?.DE.. __ error
+#         print ?
+#     f__
+#         __ ? __ no. w..
+#             ?.c..
+#
+#
+# __ _____ __ ______
+#     ?

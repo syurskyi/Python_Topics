@@ -1,48 +1,47 @@
-import psycopg2
-
-def getMobileDetails(mobileID):
-    try:
-        connection = psycopg2.connect(user="syurskyi",
-                                      password="1234",
-                                      host="127.0.0.1",
-                                      port="5432",
-                                      database="postgres_db")
-
-        print("Using Python variable in PostgreSQL select Query")
-        cursor = connection.cursor()
-        postgreSQL_select_Query = "select * from mobile where id = %s"
-
-        cursor.execute(postgreSQL_select_Query, (mobileID,))
-        mobile_records = cursor.fetchall()
-        for row in mobile_records:
-            print("Id = ", row[0], )
-            print("Model = ", row[1])
-            print("Price  = ", row[2])
-
-    except (Exception, psycopg2.Error) as error:
-        print("Error fetching data from PostgreSQL table", error)
-
-    finally:
-        # closing database connection
-        if (connection):
-            cursor.close()
-            connection.close()
-            print("PostgreSQL connection is closed \n")
-
-getMobileDetails(2)
-getMobileDetails(3)
-
-
-# Output:
+# _____ ?
 #
-# Using Python variable in PostgreSQL select Query
-# Id =  2
-# Model =  Samsung Galaxy S9
-# Price  =  900.0
-# PostgreSQL connection is closed
+# ___ getMobileDetails mobileID
+#     ___
+#         connection _ ?.c.. u.._"syurskyi"
+#                                       p.._"1234"
+#                                       h.._"127.0.0.1"
+#                                       p.._"5432"
+#                                       d.._"postgres_db"
 #
-# Using Python variable in PostgreSQL select Query
-# Id =  3
-# Model =  Google Pixel
-# Price  =  700.0
-# PostgreSQL connection is closed
+#         print("Using Python variable in PostgreSQL select Query")
+#         cursor _ ?.c..
+#         postgreSQL_select_Query _ "s.. _ f.. mobile w.. id = @
+#         ?.e.. ? mI..
+#         mobile_records _ ?.f_a..
+#         ___ row __ ?
+#             print("Id = " ? 0
+#             print("Model = " ? 1
+#             print("Price  = " ? 2
+#
+#     ______ E.., ?.Er.. __ error
+#         print("Error fetching data from PostgreSQL table" ?
+#
+#     f__
+#         # closing database connection
+#         __ c..
+#             ?.c..
+#             ?.c..
+#             print("PostgreSQL connection is closed \n")
+#
+# ? 2
+# ? 3
+#
+#
+# # Output:
+# #
+# # Using Python variable in PostgreSQL select Query
+# # Id =  2
+# # Model =  Samsung Galaxy S9
+# # Price  =  900.0
+# # PostgreSQL connection is closed
+# #
+# # Using Python variable in PostgreSQL select Query
+# # Id =  3
+# # Model =  Google Pixel
+# # Price  =  700.0
+# # PostgreSQL connection is closed

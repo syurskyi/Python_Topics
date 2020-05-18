@@ -1,23 +1,23 @@
-#!/usr/bin/python
-
-import psycopg2
-
-conn = psycopg2.connect(database = "testdb", user = "postgres", password = "pass123", host = "127.0.0.1", port = "5432")
-print("Opened database successfully")
-
-cur = conn.cursor()
-cur.execute('''CREATE TABLE COMPANY
-      (ID INT PRIMARY KEY     NOT NULL,
-      NAME           TEXT    NOT NULL,
-      AGE            INT     NOT NULL,
-      ADDRESS        CHAR(50),
-      SALARY         REAL);''')
-print("Table created successfully")
-
-conn.commit()
-conn.close()
-
-# Opened database successfully
-# Table created successfully
-
-
+# #!/usr/bin/python
+#
+# _____ ?
+#
+# conn _ ?.c.. d.. _ "testdb" u.. _ "postgres" p.. _ "pass123" h.. _ "127.0.0.1" p.. _ "5432"
+# print("Opened database successfully")
+#
+# cur _ ?.c..
+# ?.e..('''C.. T.. COMPANY
+#       (ID IN. P.. K..     N.. N..,
+#       NAME           T...    N.. N..,
+#       AGE            IN.     N.. N..,
+#       ADDRESS        CH..(50),
+#       SALARY         RE.);''')
+# print("Table created successfully")
+#
+# ?.c..
+# ?.c..
+#
+# # Opened database successfully
+# # Table created successfully
+#
+#

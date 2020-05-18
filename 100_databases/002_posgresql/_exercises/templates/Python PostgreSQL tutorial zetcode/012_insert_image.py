@@ -1,50 +1,50 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-import psycopg2
-import sys
-
-def readImage():
-
-    fin = None
-
-    try:
-        fin = open("sid.png", "rb")
-        img = fin.read()
-        return img
-
-    except IOError as e:
-
-        print(f'Error {e.args[0]}, {e.args[1]}')
-        sys.exit(1)
-
-    finally:
-
-        if fin:
-            fin.close()
-
-con = None
-
-try:
-    con = psycopg2.connect(database='testdb', user='syurskyi',
-                    password='1234')
-
-    cur = con.cursor()
-    data = readImage()
-    binary = psycopg2.Binary(data)
-    cur.execute("INSERT INTO images(data) VALUES (%s)", (binary,))
-
-    con.commit()
-
-except psycopg2.DatabaseError as e:
-
-    if con:
-        con.rollback()
-
-    print(f'Error {e}')
-    sys.exit(1)
-
-finally:
-
-    if con:
-        con.close()
+# #!/usr/bin/env python
+# # -*- coding: utf-8 -*-
+#
+# _____ ?
+# _____ ___
+#
+# ___ readImage
+#
+#     fin _ w..
+#
+#     ___
+#         fin _ o.. sid.png __
+#         img _ ?.r..
+#         r_ ?
+#
+#     ______ IO.. __ e
+#
+#         print _*Error ?.a.. 0 ?.a.. 1
+#         ___.e.. 1
+#
+#     f__
+#
+#         __ fin
+#             ?.c..
+#
+# con _ w..
+#
+# ___
+#     con _ ?.c.. d.._'testdb' u.._'syurskyi'
+#                     p.._'1234'
+#
+#     cur _ ?.c..
+#     data _ ?
+#     binary _ ?.B.. ?
+#     ?.e.. "I.. I.. images(data) V.. (@)" ?
+#
+#     c__.c..
+#
+# ______ ?.DE.. __ e
+#
+#     __ ?
+#         ?.r..
+#
+#     print _*Error ?
+#     ___.e.. 1
+#
+# f__
+#
+#     __ ?
+#         ?.c..

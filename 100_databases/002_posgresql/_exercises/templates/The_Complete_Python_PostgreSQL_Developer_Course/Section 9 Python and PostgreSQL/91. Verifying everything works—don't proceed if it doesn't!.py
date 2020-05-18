@@ -1,10 +1,10 @@
-import psycopg2
-
-connection = psycopg2.connect(database='learning',
-                              user='syurskyi',
-                              password='1234',
-                              host='localhost')
-cursor = connection.cursor()
-cursor.execute("SELECT * FROM purchases")
-for row in cursor:
-    print(row)
+# _____ ?
+#
+# connection _ ?.c.. d.._'learning'
+#                               u.._'syurskyi'
+#                               p.._'1234'
+#                               h.._'localhost'
+# cursor _ ?.c..
+# ?.e..("S.. _ F.. purchases")
+# ___ row __ ?
+#     print ?

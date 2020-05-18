@@ -1,16 +1,16 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-import psycopg2
-
-
-con = psycopg2.connect(database='testdb', user='syurskyi',
-    password='1234')
-
-with con:
-
-    cur = con.cursor()
-    cur.execute('SELECT version()')
-
-    version = cur.fetchone()[0]
-    print(version)
+# #!/usr/bin/env python
+# # -*- coding: utf-8 -*-
+#
+# _____ ?
+#
+#
+# con _ ?.c.. d.._'testdb' u.._'syurskyi'
+#     p.._'1234'
+#
+# w__ ?
+#
+#     cur _ ?.c..
+#     ?.e.. 'S.. version()'
+#
+#     version _ ?.f_o.. 0
+#     print ?

@@ -1,44 +1,44 @@
-import psycopg2
-
-def updateTable(mobileId, price):
-    try:
-        connection = psycopg2.connect(user="syurskyi",
-                                      password="1234",
-                                      host="127.0.0.1",
-                                      port="5432",
-                                      database="postgres_db")
-
-        cursor = connection.cursor()
-
-        print("Table Before updating record ")
-        sql_select_query = """select * from mobile where id = %s"""
-        cursor.execute(sql_select_query, (mobileId, ))
-        record = cursor.fetchone()
-        print(record)
-
-        # Update single record now
-        sql_update_query = """Update mobile set price = %s where id = %s"""
-        cursor.execute(sql_update_query, (price, mobileId))
-        connection.commit()
-        count = cursor.rowcount
-        print(count, "Record Updated successfully ")
-
-        print("Table After updating record ")
-        sql_select_query = """select * from mobile where id = %s"""
-        cursor.execute(sql_select_query, (mobileId,))
-        record = cursor.fetchone()
-        print(record)
-
-    except (Exception, psycopg2.Error) as error:
-        print("Error in update operation", error)
-
-    finally:
-        # closing database connection.
-        if (connection):
-            cursor.close()
-            connection.close()
-            print("PostgreSQL connection is closed")
-
-id = 3
-price = 970
-updateTable(id, price)
+# _____ ?
+#
+# ___ updateTable(mobileId, price):
+#     ___
+#         connection _ ?.c..(u.._"syurskyi",
+#                                       p.._"1234",
+#                                       h.._"127.0.0.1",
+#                                       p.._"5432",
+#                                       d.._"postgres_db")
+#
+#         cursor _ ?.c..
+#
+#         print("Table Before updating record ")
+#         sql_select_query _ """s.. * f.. mobile w.. id = %s"""
+#         ?.e.. ? mI.
+#         record _ ?.f_o..
+#         print ?
+#
+#         # Update single record now
+#         sql_update_query _ """Update mobile set price = @ w.. id = @"""
+#         ?.e.. ? p.. mI.
+#         ?.c..
+#         count _ ?.r..
+#         print ? "Record Updated successfully ")
+#
+#         print("Table After updating record ")
+#         sql_select_query _ """s.. _ f.. mobile w.. id = @"""
+#         ?.e.. ? mI..
+#         record _ ?.f_o..
+#         print ?
+#
+#     ______ E.., ?.Er.. __ error
+#         print("Error in update operation" ?
+#
+#     f__
+#         # closing database connection.
+#         __ (c..
+#             ?.c..
+#             ?.c..
+#             print("PostgreSQL connection is closed")
+#
+# id _ 3
+# price _ 970
+# ? ? ?

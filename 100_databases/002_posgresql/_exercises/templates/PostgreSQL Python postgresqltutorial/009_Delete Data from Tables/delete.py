@@ -1,35 +1,35 @@
-#!/usr/bin/python
-
-import psycopg2
-from config import config
-
-def delete_part(part_id):
-    """ delete part by part id """
-    conn = None
-    rows_deleted = 0
-    try:
-        # read database configuration
-        params = config()
-        # connect to the PostgreSQL database
-        conn = psycopg2.connect(**params)
-        # create a new cursor
-        cur = conn.cursor()
-        # execute the UPDATE  statement
-        cur.execute("DELETE FROM parts WHERE part_id = %s", (part_id,))
-        # get the number of updated rows
-        rows_deleted = cur.rowcount
-        # Commit the changes to the database
-        conn.commit()
-        # Close communication with the PostgreSQL database
-        cur.close()
-    except (Exception, psycopg2.DatabaseError) as error:
-        print(error)
-    finally:
-        if conn is not None:
-            conn.close()
-
-    return rows_deleted
-
-if __name__ == '__main__':
-    deleted_rows = delete_part(2)
-    print('The number of deleted rows: ', deleted_rows)
+# #!/usr/bin/python
+#
+# _____ ?
+# ____ c.. _____ c..
+#
+# ___ delete_part part_id
+#     """ delete part by part id """
+#     conn _ w..
+#     rows_deleted _ 0
+#     ___
+#         # read database configuration
+#         params _ c..
+#         # connect to the PostgreSQL database
+#         conn _ ?.c.. $$p..
+#         # create a new cursor
+#         cur _ ?.c..
+#         # execute the U..  statement
+#         ?.e..("D.. F.. parts W.. part_id = @" p_i.
+#         # get the number of updated rows
+#         rows_deleted _ ?.r..
+#         # Commit the changes to the database
+#         ?.c..
+#         # Close communication with the PostgreSQL database
+#         ?.c..
+#     ______ E.. ?.DE.. __ error
+#         print ?
+#     f__
+#         __ c.. __ no. w..
+#             ?.c..
+#
+#     r_ ?
+#
+# __ _____ __ ______
+#     deleted_rows _ ? 2
+#     print('The number of deleted rows: ' ?
