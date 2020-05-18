@@ -9,7 +9,7 @@ con _ ?.c..(d.._'testdb', u.._'syurskyi',
 w__ con:
 
     cur _ con.c..
-    cur.e..("S.. * F.. cars")
+    cur.e..("S.. _ F.. cars")
 
     w__ T..
 

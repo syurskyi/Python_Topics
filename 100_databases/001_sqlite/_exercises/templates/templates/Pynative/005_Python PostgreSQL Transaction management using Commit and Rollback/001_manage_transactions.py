@@ -10,7 +10,7 @@ ___
    cursor _ connection.c..
    amount _ 2500
 
-   query _ """select balance from account w.. id = 624001562408"""
+   query _ """s.. balance from account w.. id = 624001562408"""
    cursor.e..(query)
    record _ cursor.f_o.. [0]
    balance_account_A  _ int(record)
@@ -20,7 +20,7 @@ ___
    sql_update_query _ """Update account set balance = %s w.. id = 624001562408"""
    cursor.e..(sql_update_query,(balance_account_A,))
 
-   query _ """select balance from account w.. id = 2236781258763"""
+   query _ """s.. balance from account w.. id = 2236781258763"""
    cursor.e..(query)
    record _ cursor.f_o.. [0]
    balance_account_B _ int(record)

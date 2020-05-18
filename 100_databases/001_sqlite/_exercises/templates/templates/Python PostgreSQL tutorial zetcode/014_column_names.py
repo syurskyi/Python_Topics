@@ -10,7 +10,7 @@ w__ con:
 
     cur _ con.c..
 
-    cur.e..('S.. * F.. cars')
+    cur.e..('S.. _ F.. cars')
 
     col_names _ [cn[0] ___ cn __ cur.d..]
     rows _ cur.f_a..

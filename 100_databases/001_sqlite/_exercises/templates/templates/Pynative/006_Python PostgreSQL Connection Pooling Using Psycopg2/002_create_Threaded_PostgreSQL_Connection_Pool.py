@@ -17,7 +17,7 @@ ___
 
         print("successfully recived connection from connection pool ")
         ps_cursor _ ps_connection.c..
-        ps_cursor.e..("select * from mobile")
+        ps_cursor.e..("s.. * from mobile")
         mobile_records _ ps_cursor.f_m..(2)
 
         print ("Displaying rows from mobile table")

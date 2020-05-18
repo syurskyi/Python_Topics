@@ -12,7 +12,7 @@
 # c.e.. D.. T.. customers
 # ?.c..
 #
-# # c.e.. ("S.. rowid, * F.. customers LIMIT 2")
+# # c.e.. ("S.. rowid, _ F.. customers LIMIT 2")
 # c.e.. S.. r.., _ F... customers
 #
 # items _ c.f..

@@ -5,6 +5,6 @@ connection _ ?.c..(d.._'learning',
                               p.._'1234',
                               h.._'localhost')
 cursor _ connection.c..
-cursor.e..("S.. * F.. purchases")
+cursor.e..("S.. _ F.. purchases")
 ___ row __ cursor:
     print(row)

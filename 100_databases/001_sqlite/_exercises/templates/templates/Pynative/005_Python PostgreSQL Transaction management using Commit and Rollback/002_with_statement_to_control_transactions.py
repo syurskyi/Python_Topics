@@ -9,13 +9,13 @@ connection _ ?.c..(u.._"syurskyi",
 w__ connection:
     w__ connection.c.. __ cursor:
         # Find item price
-        query _ """select price from itemstable w.. itemid = 876"""
+        query _ """s.. price from itemstable w.. itemid = 876"""
         cursor.e..(query)
         record _ cursor.f_o..[0]
         Itemprice _ int(record)
 
         # find customer's ewallet balance
-        query _ """select balance from ewallet w.. userId = 23"""
+        query _ """s.. balance from ewallet w.. userId = 23"""
         cursor.e..(query)
         record _ cursor.f_o..[0]
         ewalletBalance _ int(record)
@@ -26,7 +26,7 @@ w__ connection:
         cursor.e..(sql_update_query, (new_EwalletBalance,))
 
         # add to company's account
-        query _ """select balance from account w.. accountId = 2236781258763"""
+        query _ """s.. balance from account w.. accountId = 2236781258763"""
         cursor.e..(query)
         record _ cursor.f_o..
         accountBalance _ int(record)

@@ -1,10 +1,10 @@
 # _____ ?
 # ___
-#     connection _ ?.c.. u.. _ "syurskyi",
-#                                   p.. _ "1234",
-#                                   h.. _ "127.0.0.1",
-#                                   p.. _ "5432",
-#                                   d.. _ "postgres_db")
+#     connection _ ?.c.. u.. _ "syurskyi"
+#                                   p.. _ "1234"
+#                                   h.. _ "127.0.0.1"
+#                                   p.. _ "5432"
+#                                   d.. _ "postgres_db"
 #
 #     cursor _ ?.c..
 #     # Print PostgreSQL Connection properties

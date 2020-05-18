@@ -10,7 +10,7 @@ con _ ?.c..(d.._'testdb', u.._'syurskyi',
 w__ con:
 
     cursor _ con.cursor(cursor_factory_?.extras.DictCursor)
-    cursor.e..("S.. * F.. cars")
+    cursor.e..("S.. _ F.. cars")
 
     rows _ cursor.f_a..
 
