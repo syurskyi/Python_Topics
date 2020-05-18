@@ -13,7 +13,7 @@ ___
     sql_update_query _ """U.. SqliteDb_developers set salary = 10000 w.. id = 4"""
     ?.e..(sql_update_query)
 
-    sql_delete_query _ """DELETE from SqliteDb_developers w.. id = 4"""
+    sql_delete_query _ """D.. from SqliteDb_developers w.. id = 4"""
     ?.e..(sql_delete_query)
 
     ?.c..

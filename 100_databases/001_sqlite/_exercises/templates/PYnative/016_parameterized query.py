@@ -6,7 +6,7 @@ ___ deleteSqliteRecord(id
         cursor _ ?.c..
         print("Connected to SQLite")
 
-        sql_update_query _ """DELETE f.. SqliteDb_developers w.. id = ?"""
+        sql_update_query _ """D.. f.. SqliteDb_developers w.. id = ?"""
         ?.e..(sql_update_query, (id, ))
         ?.c..
         print("Record deleted successfully")
