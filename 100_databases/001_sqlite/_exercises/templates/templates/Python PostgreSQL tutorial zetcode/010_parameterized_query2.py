@@ -1,23 +1,23 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-_____ ?
-
-uid _ 3
-
-con _ ?.c..(d.._'testdb', u.._'syurskyi',
-                    p.._'1234')
-
-w__ con:
-
-    cur _ con.c..
-
-    ?.e..("S.. _ F.. cars W.. id=%(id)s", {'id': uid } )
-
-    row _ ?.f_o..
-
-    print _*{row[0]} {row[1]} {row[2]}')
-
-
-# $ parameterized_query2.py
-# 3 Skoda 9000
+# #!/usr/bin/env python
+# # -*- coding: utf-8 -*-
+#
+# _____ ?
+#
+# uid _ 3
+#
+# con _ ?.c.. d.._'testdb' u.._'syurskyi'
+#                     p.._'1234'
+#
+# w__ ?
+#
+#     cur _ ?.c..
+#
+#     ?.e.. "S.. _ F.. cars W.. id=%(id)s", {'id': u..
+#
+#     row _ ?.f_o..
+#
+#     print _* ? 0 ? 1 ? 2
+#
+#
+# # $ parameterized_query2.py
+# # 3 Skoda 9000
