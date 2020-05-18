@@ -1,26 +1,26 @@
-import sqlite3
+_____ ?
 
 def lower(string):
     return str(string).upper()
 
 def getDeveloperName(id):
-    try:
-        sqliteConnection = sqlite3.connect('SQLite_Python.db')
-        cursor = sqliteConnection.cursor()
+    ___
+        sqliteConnection _ ?.c..('SQLite_Python.db')
+        cursor _ sqliteConnection.c..
         print("Connected to SQLite")
 
         sqliteConnection.create_function("lower", 1, lower)
-        select_query = "SELECT lower(name) FROM SqliteDb_developers where id = ?"
-        cursor.execute(select_query, (id,))
-        name = cursor.fetchone()
+        select_query _ "SELECT lower(name) FROM SqliteDb_developers where id = ?"
+        cursor.e..(select_query, (id,))
+        name _ cursor.fetchone()
         print("Developer Name is", name)
-        cursor.close()
+        cursor.c..
 
-    except sqlite3.Error as error:
+    _____ ?.E.. __ error:
         print("Failed to read data from sqlite table", error)
-    finally:
-        if (sqliteConnection):
-            sqliteConnection.close()
+    f..
+        __ (sqliteConnection):
+            sqliteConnection.c..
             print("sqlite connection is closed")
 
 getDeveloperName(1)

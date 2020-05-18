@@ -21,7 +21,7 @@
 # # The date is 2013-04-14 and the datatype is <class 'datetime.date'>
 #
 # # Changing the connect method, the database now is returning a date object.
-# # The sqlite3 module uses the column's type to return the correct type of object.
+# # The ? module uses the column's type to return the correct type of object.
 # # So, if we need to work with a datetime object, we must declare the column in the table as a timestamp type:
 #
 # ?.c..

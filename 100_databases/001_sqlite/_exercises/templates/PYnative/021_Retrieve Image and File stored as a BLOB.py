@@ -1,39 +1,39 @@
-import sqlite3
+_____ ?
 
 def writeTofile(data, filename):
     # Convert binary data to proper format and write it on Hard Disk
-    with open(filename, 'wb') as file:
+    with open(filename, 'wb') __ file:
         file.write(data)
     print("Stored blob data into: ", filename, "\n")
 
 def readBlobData(empId):
-    try:
-        sqliteConnection = sqlite3.connect('SQLite_Python.db')
-        cursor = sqliteConnection.cursor()
+    ___
+        sqliteConnection _ ?.c..('SQLite_Python.db')
+        cursor _ sqliteConnection.c..
         print("Connected to SQLite")
 
-        sql_fetch_blob_query = """SELECT * from new_employee where id = ?"""
-        cursor.execute(sql_fetch_blob_query, (empId,))
-        record = cursor.fetchall()
+        sql_fetch_blob_query _ """SELECT * from new_employee where id = ?"""
+        cursor.e..(sql_fetch_blob_query, (empId,))
+        record _ cursor.f_a..
         for row in record:
             print("Id = ", row[0], "Name = ", row[1])
-            name  = row[1]
-            photo = row[2]
-            resumeFile = row[3]
+            name  _ row[1]
+            photo _ row[2]
+            resumeFile _ row[3]
 
             print("Storing employee image and resume on disk \n")
-            photoPath = "E:\pynative\Python\photos\db_data\\" + name + ".jpg"
-            resumePath = "E:\pynative\Python\photos\db_data\\" + name + "_resume.txt"
+            photoPath _ "E:\pynative\Python\photos\db_data\\" + name + ".jpg"
+            resumePath _ "E:\pynative\Python\photos\db_data\\" + name + "_resume.txt"
             writeTofile(photo, photoPath)
             writeTofile(resumeFile, resumePath)
 
-        cursor.close()
+        cursor.c..
 
-    except sqlite3.Error as error:
+    _____ ?.E.. __ error:
         print("Failed to read blob data from sqlite table", error)
-    finally:
-        if (sqliteConnection):
-            sqliteConnection.close()
+    f..
+        __ (sqliteConnection):
+            sqliteConnection.c..
             print("sqlite connection is closed")
 
 readBlobData(1)

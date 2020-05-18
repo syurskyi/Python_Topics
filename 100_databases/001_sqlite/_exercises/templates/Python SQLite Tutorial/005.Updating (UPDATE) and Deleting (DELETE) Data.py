@@ -1,7 +1,7 @@
 # _____ ?
 #
 # # Create a database in RAM
-# # db = sqlite3.connect(':memory:')
+# # db = ?.connect(':memory:')
 # # Creates or opens a file called mydb with a SQLite3 DB
 # db _ ?.c.. mydb.db
 #

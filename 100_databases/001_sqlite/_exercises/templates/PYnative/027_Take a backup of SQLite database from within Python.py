@@ -1,22 +1,22 @@
-import sqlite3
+_____ ?
 
 def progress(status, remaining, total):
     print(f'Copied {total-remaining} of {total} pages...')
 
-try:
+___
     #existing DB
-    sqliteCon = sqlite3.connect('SQLite_Python.db')
+    sqliteCon _ ?.c..('SQLite_Python.db')
     #copy into this DB
-    backupCon = sqlite3.connect('Sqlite_backup.db')
+    backupCon _ ?.c..('Sqlite_backup.db')
     with backupCon:
-        sqliteCon.backup(backupCon, pages=3, progress=progress)
+        sqliteCon.backup(backupCon, pages_3, progress_progress)
     print("backup successful")
-except sqlite3.Error as error:
+_____ ?.E.. __ error:
     print("Error while taking backup: ", error)
-finally:
-    if(backupCon):
-        backupCon.close()
-        sqliteCon.close()
+f..
+    __(backupCon):
+        backupCon.c..
+        sqliteCon.c..
 
 
 # Output:

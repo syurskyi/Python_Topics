@@ -1,7 +1,7 @@
 # ______ _3
 #
 # # connect to database
-# # conn _ sqlite3.connect(':memory:')
+# # conn _ ?.connect(':memory:')
 # conn _ _3.c.. customer.db
 #
 # # Create a cursor

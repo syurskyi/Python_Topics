@@ -1,26 +1,26 @@
-import sqlite3
+_____ ?
 
 def updateMultipleRecords(recordList):
-    try:
-        sqliteConnection = sqlite3.connect('SQLite_Python.db')
-        cursor = sqliteConnection.cursor()
+    ___
+        sqliteConnection _ ?.c..('SQLite_Python.db')
+        cursor _ sqliteConnection.c..
         print("Connected to SQLite")
 
-        sqlite_update_query = """Update SqliteDb_developers set salary = ? where id = ?"""
+        sqlite_update_query _ """Update SqliteDb_developers set salary = ? where id = ?"""
         cursor.executemany(sqlite_update_query, recordList)
         sqliteConnection.commit()
         print("Total", cursor.rowcount, "Records updated successfully")
         sqliteConnection.commit()
-        cursor.close()
+        cursor.c..
 
-    except sqlite3.Error as error:
+    _____ ?.E.. __ error:
         print("Failed to update multiple records of sqlite table", error)
-    finally:
-        if (sqliteConnection):
-            sqliteConnection.close()
+    f..
+        __ (sqliteConnection):
+            sqliteConnection.c..
             print("The SQLite connection is closed")
 
-records_to_update = [ (9700, 4), (7800, 5), (8400, 6) ]
+records_to_update _ [ (9700, 4), (7800, 5), (8400, 6) ]
 updateMultipleRecords(records_to_update)
 
 

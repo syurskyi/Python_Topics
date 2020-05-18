@@ -1,23 +1,23 @@
-import sqlite3
+_____ ?
 
 def deleteSqliteRecord(id):
-    try:
-        sqliteConnection = sqlite3.connect('SQLite_Python.db')
-        cursor = sqliteConnection.cursor()
+    ___
+        sqliteConnection _ ?.c..('SQLite_Python.db')
+        cursor _ sqliteConnection.c..
         print("Connected to SQLite")
 
-        sql_update_query = """DELETE from SqliteDb_developers where id = ?"""
-        cursor.execute(sql_update_query, (id, ))
+        sql_update_query _ """DELETE from SqliteDb_developers where id = ?"""
+        cursor.e..(sql_update_query, (id, ))
         sqliteConnection.commit()
         print("Record deleted successfully")
 
-        cursor.close()
+        cursor.c..
 
-    except sqlite3.Error as error:
+    _____ ?.E.. __ error:
         print("Failed to delete reocord from a sqlite table", error)
-    finally:
-        if (sqliteConnection):
-            sqliteConnection.close()
+    f..
+        __ (sqliteConnection):
+            sqliteConnection.c..
             print("sqlite connection is closed")
 
 deleteSqliteRecord(5)

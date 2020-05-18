@@ -1,28 +1,28 @@
-import sqlite3
+_____ ?
 
 def readSingleRow(developerId):
-    try:
-        sqliteConnection = sqlite3.connect('SQLite_Python.db')
-        cursor = sqliteConnection.cursor()
+    ___
+        sqliteConnection _ ?.c..('SQLite_Python.db')
+        cursor _ sqliteConnection.c..
         print("Connected to SQLite")
 
-        sqlite_select_query = """SELECT * from SqliteDb_developers where id = ?"""
-        cursor.execute(sqlite_select_query, (developerId, ))
+        sqlite_select_query _ """SELECT * from SqliteDb_developers where id = ?"""
+        cursor.e..(sqlite_select_query, (developerId, ))
         print("Reading single row \n")
-        record = cursor.fetchone()
+        record _ cursor.fetchone()
         print("Id: ", record[0])
         print("Name: ", record[1])
         print("Email: ", record[2])
         print("JoiningDate: ", record[3])
         print("Salary: ", record[4])
 
-        cursor.close()
+        cursor.c..
 
-    except sqlite3.Error as error:
+    _____ ?.E.. __ error:
         print("Failed to read single row from sqlite table", error)
-    finally:
-        if (sqliteConnection):
-            sqliteConnection.close()
+    f..
+        __ (sqliteConnection):
+            sqliteConnection.c..
             print("The SQLite connection is closed")
 
 readSingleRow(3)

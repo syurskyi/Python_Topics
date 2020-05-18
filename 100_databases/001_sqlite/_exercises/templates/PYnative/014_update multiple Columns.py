@@ -1,24 +1,24 @@
-import sqlite3
+_____ ?
 
 def updateMultipleColumns(id, salary, email):
-    try:
-        sqliteConnection = sqlite3.connect('SQLite_Python.db')
-        cursor = sqliteConnection.cursor()
+    ___
+        sqliteConnection _ ?.c..('SQLite_Python.db')
+        cursor _ sqliteConnection.c..
         print("Connected to SQLite")
 
-        sqlite_update_query = """Update new_developers set salary = ?, email = ? where id = ?"""
-        columnValues = (salary, email, id)
-        cursor.execute(sqlite_update_query, columnValues)
+        sqlite_update_query _ """Update new_developers set salary = ?, email = ? where id = ?"""
+        columnValues _ (salary, email, id)
+        cursor.e..(sqlite_update_query, columnValues)
         sqliteConnection.commit()
         print("Multiple columns updated successfully")
         sqliteConnection.commit()
-        cursor.close()
+        cursor.c..
 
-    except sqlite3.Error as error:
+    _____ ?.E.. __ error:
         print("Failed to update multiple columns of sqlite table", error)
-    finally:
-        if (sqliteConnection):
-            sqliteConnection.close()
+    f..
+        __ (sqliteConnection):
+            sqliteConnection.c..
             print("sqlite connection is closed")
 
 updateMultipleColumns(3, 6500, 'ben_stokes@gmail.com')

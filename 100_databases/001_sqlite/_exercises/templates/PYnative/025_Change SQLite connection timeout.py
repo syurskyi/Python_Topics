@@ -1,22 +1,22 @@
-import sqlite3
+_____ ?
 
 def readSqliteTable():
-    try:
-        sqliteConnection = sqlite3.connect('SQLite_Python.db', timeout=20)
-        cursor = sqliteConnection.cursor()
+    ___
+        sqliteConnection _ ?.c..('SQLite_Python.db', timeout_20)
+        cursor _ sqliteConnection.c..
         print("Connected to SQLite")
 
-        sqlite_select_query = """SELECT count(*) from SqliteDb_developers"""
-        cursor.execute(sqlite_select_query)
-        totalRows = cursor.fetchone()
+        sqlite_select_query _ """SELECT count(*) from SqliteDb_developers"""
+        cursor.e..(sqlite_select_query)
+        totalRows _ cursor.fetchone()
         print("Total rows are:  ", totalRows)
-        cursor.close()
+        cursor.c..
 
-    except sqlite3.Error as error:
+    _____ ?.E.. __ error:
         print("Failed to read data from sqlite table", error)
-    finally:
-        if (sqliteConnection):
-            sqliteConnection.close()
+    f..
+        __ (sqliteConnection):
+            sqliteConnection.c..
             print("The Sqlite connection is closed")
 
 readSqliteTable()

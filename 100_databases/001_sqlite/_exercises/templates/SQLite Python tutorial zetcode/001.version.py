@@ -1,7 +1,7 @@
 # #!/usr/bin/env python3
 # # -*- coding: utf-8 -*-
 #
-# _____ ? __ ? # _____ the sqlite3 and give it an alias.
+# _____ ? __ ? # _____ the ? and give it an alias.
 # _____ ___
 #
 # con _ w..  # We initialise the con variable to None.

@@ -1,27 +1,27 @@
-import sqlite3
+_____ ?
 
 def getDeveloperInfo(id):
-    try:
-        sqliteConnection = sqlite3.connect('SQLite_Python.db')
-        cursor = sqliteConnection.cursor()
+    ___
+        sqliteConnection _ ?.c..('SQLite_Python.db')
+        cursor _ sqliteConnection.c..
         print("Connected to SQLite")
 
-        sql_select_query = """select * from SqliteDb_developers where id = ?"""
-        cursor.execute(sql_select_query, (id,))
-        records = cursor.fetchall()
+        sql_select_query _ """select * from SqliteDb_developers where id = ?"""
+        cursor.e..(sql_select_query, (id,))
+        records _ cursor.f_a..
         print("Printing ID ", id)
         for row in records:
             print("Name = ", row[1])
             print("Email  = ", row[2])
             print("JoiningDate  = ", row[3])
             print("Salary  = ", row[4])
-        cursor.close()
+        cursor.c..
 
-    except sqlite3.Error as error:
+    _____ ?.E.. __ error:
         print("Failed to read data from sqlite table", error)
-    finally:
-        if (sqliteConnection):
-            sqliteConnection.close()
+    f..
+        __ (sqliteConnection):
+            sqliteConnection.c..
             print("The SQLite connection is closed")
 
 getDeveloperInfo(2)

@@ -1,27 +1,27 @@
-import sqlite3
+_____ ?
 
-try:
-    sqliteConnection = sqlite3.connect('SQLite_Python.db')
-    sqlite_create_table_query = '''CREATE TABLE SqliteDb_developers (
+___
+    sqliteConnection _ ?.c..('SQLite_Python.db')
+    sqlite_create_table_query _ '''CREATE TABLE SqliteDb_developers (
                                 id INTEGER PRIMARY KEY,
                                 name TEXT NOT NULL,
                                 email text NOT NULL UNIQUE,
                                 joining_date datetime,
                                 salary REAL NOT NULL);'''
 
-    cursor = sqliteConnection.cursor()
+    cursor _ sqliteConnection.c..
     print("Successfully Connected to SQLite")
-    cursor.execute(sqlite_create_table_query)
+    cursor.e..(sqlite_create_table_query)
     sqliteConnection.commit()
     print("SQLite table created")
 
-    cursor.close()
+    cursor.c..
 
-except sqlite3.Error as error:
+_____ ?.E.. __ error:
     print("Error while creating a sqlite table", error)
-finally:
-    if (sqliteConnection):
-        sqliteConnection.close()
+f..
+    __ (sqliteConnection):
+        sqliteConnection.c..
         print("sqlite connection is closed")
 
 

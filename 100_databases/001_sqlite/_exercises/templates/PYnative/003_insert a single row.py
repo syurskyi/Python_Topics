@@ -1,25 +1,25 @@
-import sqlite3
+_____ ?
 
-try:
-    sqliteConnection = sqlite3.connect('SQLite_Python.db')
-    cursor = sqliteConnection.cursor()
+___
+    sqliteConnection _ ?.c..('SQLite_Python.db')
+    cursor _ sqliteConnection.c..
     print("Successfully Connected to SQLite")
 
-    sqlite_insert_query = """INSERT INTO SqliteDb_developers
+    sqlite_insert_query _ """INSERT INTO SqliteDb_developers
                           (id, name, email, joining_date, salary) 
                            VALUES 
                           (1,'James','james@pynative.com','2019-03-17',8000)"""
 
-    count = cursor.execute(sqlite_insert_query)
+    count _ cursor.e..(sqlite_insert_query)
     sqliteConnection.commit()
     print("Record inserted successfully into SqliteDb_developers table ", cursor.rowcount)
-    cursor.close()
+    cursor.c..
 
-except sqlite3.Error as error:
+_____ ?.E.. __ error:
     print("Failed to insert data into sqlite table", error)
-finally:
-    if (sqliteConnection):
-        sqliteConnection.close()
+f..
+    __ (sqliteConnection):
+        sqliteConnection.c..
         print("The SQLite connection is closed")
 
 # Successfully Connected to SQLite

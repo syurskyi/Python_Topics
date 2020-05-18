@@ -1,15 +1,15 @@
-import sqlite3
+_____ ?
 
 def readLimitedRows(rowSize):
-    try:
-        sqliteConnection = sqlite3.connect('SQLite_Python.db')
-        cursor = sqliteConnection.cursor()
+    ___
+        sqliteConnection _ ?.c..('SQLite_Python.db')
+        cursor _ sqliteConnection.c..
         print("Connected to SQLite")
 
-        sqlite_select_query = """SELECT * from SqliteDb_developers"""
-        cursor.execute(sqlite_select_query)
+        sqlite_select_query _ """SELECT * from SqliteDb_developers"""
+        cursor.e..(sqlite_select_query)
         print("Reading ", rowSize, " rows")
-        records = cursor.fetchmany(rowSize)
+        records _ cursor.fetchmany(rowSize)
         print("Printing each row \n")
         for row in records:
             print("Id: ", row[0])
@@ -19,13 +19,13 @@ def readLimitedRows(rowSize):
             print("Salary: ", row[4])
             print("\n")
 
-        cursor.close()
+        cursor.c..
 
-    except sqlite3.Error as error:
+    _____ ?.E.. __ error:
         print("Failed to read data from sqlite table", error)
-    finally:
-        if (sqliteConnection):
-            sqliteConnection.close()
+    f..
+        __ (sqliteConnection):
+            sqliteConnection.c..
             print("The SQLite connection is closed")
 
 readLimitedRows(2)

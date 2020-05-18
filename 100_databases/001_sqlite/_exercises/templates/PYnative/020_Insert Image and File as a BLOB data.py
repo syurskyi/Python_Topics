@@ -1,33 +1,33 @@
-import sqlite3
+_____ ?
 
 def convertToBinaryData(filename):
     #Convert digital data to binary format
-    with open(filename, 'rb') as file:
-        blobData = file.read()
+    with open(filename, 'rb') __ file:
+        blobData _ file.read()
     return blobData
 
 def insertBLOB(empId, name, photo, resumeFile):
-    try:
-        sqliteConnection = sqlite3.connect('SQLite_Python.db')
-        cursor = sqliteConnection.cursor()
+    ___
+        sqliteConnection _ ?.c..('SQLite_Python.db')
+        cursor _ sqliteConnection.c..
         print("Connected to SQLite")
-        sqlite_insert_blob_query = """ INSERT INTO new_employee
+        sqlite_insert_blob_query _ """ INSERT INTO new_employee
                                   (id, name, photo, resume) VALUES (?, ?, ?, ?)"""
 
-        empPhoto = convertToBinaryData(photo)
-        resume = convertToBinaryData(resumeFile)
+        empPhoto _ convertToBinaryData(photo)
+        resume _ convertToBinaryData(resumeFile)
         # Convert data into tuple format
-        data_tuple = (empId, name, empPhoto, resume)
-        cursor.execute(sqlite_insert_blob_query, data_tuple)
+        data_tuple _ (empId, name, empPhoto, resume)
+        cursor.e..(sqlite_insert_blob_query, data_tuple)
         sqliteConnection.commit()
         print("Image and file inserted successfully as a BLOB into a table")
-        cursor.close()
+        cursor.c..
 
-    except sqlite3.Error as error:
+    _____ ?.E.. __ error:
         print("Failed to insert blob data into sqlite table", error)
-    finally:
-        if (sqliteConnection):
-            sqliteConnection.close()
+    f..
+        __ (sqliteConnection):
+            sqliteConnection.c..
             print("the sqlite connection is closed")
 
 insertBLOB(1, "Smith", "E:\pynative\Python\photos\smith.jpg", "E:\pynative\Python\photos\smith_resume.txt")

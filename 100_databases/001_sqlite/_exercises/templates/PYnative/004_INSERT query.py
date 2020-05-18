@@ -1,27 +1,27 @@
-import sqlite3
+_____ ?
 
 def insertVaribleIntoTable(id, name, email, joinDate, salary):
-    try:
-        sqliteConnection = sqlite3.connect('SQLite_Python.db')
-        cursor = sqliteConnection.cursor()
+    ___
+        sqliteConnection _ ?.c..('SQLite_Python.db')
+        cursor _ sqliteConnection.c..
         print("Connected to SQLite")
 
-        sqlite_insert_with_param = """INSERT INTO SqliteDb_developers
+        sqlite_insert_with_param _ """INSERT INTO SqliteDb_developers
                           (id, name, email, joining_date, salary) 
                           VALUES (?, ?, ?, ?, ?);"""
 
-        data_tuple = (id, name, email, joinDate, salary)
-        cursor.execute(sqlite_insert_with_param, data_tuple)
+        data_tuple _ (id, name, email, joinDate, salary)
+        cursor.e..(sqlite_insert_with_param, data_tuple)
         sqliteConnection.commit()
         print("Python Variables inserted successfully into SqliteDb_developers table")
 
-        cursor.close()
+        cursor.c..
 
-    except sqlite3.Error as error:
+    _____ ?.E.. __ error:
         print("Failed to insert Python variable into sqlite table", error)
-    finally:
-        if (sqliteConnection):
-            sqliteConnection.close()
+    f..
+        __ (sqliteConnection):
+            sqliteConnection.c..
             print("The SQLite connection is closed")
 
 insertVaribleIntoTable(2, 'Joe', 'joe@pynative.com', '2019-05-19', 9000)

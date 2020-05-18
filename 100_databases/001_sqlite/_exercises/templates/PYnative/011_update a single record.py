@@ -1,22 +1,22 @@
-import sqlite3
+_____ ?
 
 def updateSqliteTable():
-    try:
-        sqliteConnection = sqlite3.connect('SQLite_Python.db')
-        cursor = sqliteConnection.cursor()
+    ___
+        sqliteConnection _ ?.c..('SQLite_Python.db')
+        cursor _ sqliteConnection.c..
         print("Connected to SQLite")
 
-        sql_update_query = """Update SqliteDb_developers set salary = 10000 where id = 4"""
-        cursor.execute(sql_update_query)
+        sql_update_query _ """Update SqliteDb_developers set salary = 10000 where id = 4"""
+        cursor.e..(sql_update_query)
         sqliteConnection.commit()
         print("Record Updated successfully ")
-        cursor.close()
+        cursor.c..
 
-    except sqlite3.Error as error:
+    _____ ?.E.. __ error:
         print("Failed to update sqlite table", error)
-    finally:
-        if (sqliteConnection):
-            sqliteConnection.close()
+    f..
+        __ (sqliteConnection):
+            sqliteConnection.c..
             print("The SQLite connection is closed")
 
 updateSqliteTable()

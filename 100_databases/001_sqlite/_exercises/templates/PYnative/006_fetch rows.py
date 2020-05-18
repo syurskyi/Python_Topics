@@ -1,14 +1,14 @@
-import sqlite3
+_____ ?
 
 def readSqliteTable():
-    try:
-        sqliteConnection = sqlite3.connect('SQLite_Python.db')
-        cursor = sqliteConnection.cursor()
+    ___
+        sqliteConnection _ ?.c..('SQLite_Python.db')
+        cursor _ sqliteConnection.c..
         print("Connected to SQLite")
 
-        sqlite_select_query = """SELECT * from SqliteDb_developers"""
-        cursor.execute(sqlite_select_query)
-        records = cursor.fetchall()
+        sqlite_select_query _ """SELECT * from SqliteDb_developers"""
+        cursor.e..(sqlite_select_query)
+        records _ cursor.f_a..
         print("Total rows are:  ", len(records))
         print("Printing each row")
         for row in records:
@@ -19,13 +19,13 @@ def readSqliteTable():
             print("Salary: ", row[4])
             print("\n")
 
-        cursor.close()
+        cursor.c..
 
-    except sqlite3.Error as error:
+    _____ ?.E.. __ error:
         print("Failed to read data from sqlite table", error)
-    finally:
-        if (sqliteConnection):
-            sqliteConnection.close()
+    f..
+        __ (sqliteConnection):
+            sqliteConnection.c..
             print("The SQLite connection is closed")
 
 readSqliteTable()

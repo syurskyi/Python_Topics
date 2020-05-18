@@ -1,12 +1,12 @@
-import sqlite3
+_____ ?
 
 def insertMultipleRecords(recordList):
-    try:
-        sqliteConnection = sqlite3.connect('SQLite_Python.db')
-        cursor = sqliteConnection.cursor()
+    ___
+        sqliteConnection _ ?.c..('SQLite_Python.db')
+        cursor _ sqliteConnection.c..
         print("Connected to SQLite")
 
-        sqlite_insert_query = """INSERT INTO SqliteDb_developers
+        sqlite_insert_query _ """INSERT INTO SqliteDb_developers
                           (id, name, email, joining_date, salary) 
                           VALUES (?, ?, ?, ?, ?);"""
 
@@ -14,16 +14,16 @@ def insertMultipleRecords(recordList):
         sqliteConnection.commit()
         print("Total", cursor.rowcount, "Records inserted successfully into SqliteDb_developers table")
         sqliteConnection.commit()
-        cursor.close()
+        cursor.c..
 
-    except sqlite3.Error as error:
+    _____ ?.E.. __ error:
         print("Failed to insert multiple records into sqlite table", error)
-    finally:
-        if (sqliteConnection):
-            sqliteConnection.close()
+    f..
+        __ (sqliteConnection):
+            sqliteConnection.c..
             print("The SQLite connection is closed")
 
-recordsToInsert = [(4, 'Jos', 'jos@gmail.com', '2019-01-14', 9500),
+recordsToInsert _ [(4, 'Jos', 'jos@gmail.com', '2019-01-14', 9500),
                    (5, 'Chris', 'chris@gmail.com', '2019-05-15',7600),
                    (6, 'Jonny', 'jonny@gmail.com', '2019-03-27', 8400)]
 

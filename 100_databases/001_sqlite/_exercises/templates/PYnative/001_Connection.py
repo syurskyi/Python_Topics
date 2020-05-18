@@ -1,19 +1,19 @@
-import sqlite3
-
-try:
-    sqliteConnection = sqlite3.connect('SQLite_Python.db')
-    cursor = sqliteConnection.cursor()
-    print("Database created and Successfully Connected to SQLite")
-
-    sqlite_select_Query = "select sqlite_version();"
-    cursor.execute(sqlite_select_Query)
-    record = cursor.fetchall()
-    print("SQLite Database Version is: ", record)
-    cursor.close()
-
-except sqlite3.Error as error:
-    print("Error while connecting to sqlite", error)
-finally:
-    if (sqliteConnection):
-        sqliteConnection.close()
-        print("The SQLite connection is closed")
+# _____ ?
+#
+# ___
+#     sqliteConnection _ ?.c.. 'SQLite_Python.db'
+#     cursor _ ?.c..
+#     print("Database created and Successfully Connected to SQLite")
+#
+#     sqlite_select_Query _ "select sqlite_version();"
+#     ?.e.. ?
+#     record _ ?.f_a..
+#     print("SQLite Database Version is: " ?
+#     ?.c..
+#
+# _____ ?.E.. __ error
+#     print("Error while connecting to sqlite" ?
+# f..
+#     __ (?
+#         ?.c..
+#         print("The SQLite connection is closed")
