@@ -7,9 +7,9 @@ ___ updateMultipleRecords(recordList):
         print("Connected to SQLite")
 
         sqlite_update_query _ """Update SqliteDb_developers set salary = ? where id = ?"""
-        ?.executemany(sqlite_update_query, recordList)
+        ?.e_m..(sqlite_update_query, recordList)
         ?.c..
-        print("Total", ?.rowcount, "Records updated successfully")
+        print("Total", ?.r.., "Records updated successfully")
         ?.c..
         ?.c..
 

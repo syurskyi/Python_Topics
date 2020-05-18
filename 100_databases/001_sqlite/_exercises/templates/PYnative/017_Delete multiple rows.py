@@ -7,9 +7,9 @@ ___ deleteMultipleRecords(idList):
         print("Connected to SQLite")
         sqlite_update_query _ """DELETE from SqliteDb_developers where id = ?"""
 
-        ?.executemany(sqlite_update_query, idList)
+        ?.e_m..(sqlite_update_query, idList)
         ?.c..
-        print("Total", ?.rowcount, "Records deleted successfully")
+        print("Total", ?.r.., "Records deleted successfully")
         ?.c..
         ?.c..
 

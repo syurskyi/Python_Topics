@@ -37,7 +37,7 @@
 # users = [(name1,phone1, email1, password1),
 #          (name2,phone2, email2, password2),
 #          (name3,phone3, email3, password3)]
-# cursor.executemany(''' I.. I.. users(name, phone, email, password) V..(?,?,?,?)''', users)
+# cursor.e_m..(''' I.. I.. users(name, phone, email, password) V..(?,?,?,?)''', users)
 # db.c..
 # """
 #

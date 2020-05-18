@@ -33,7 +33,7 @@
 #     '''
 #     ___
 #         w___ c..
-#             ?.executemany q.. d..
+#             ?.e_m.. q.. d..
 #     ______ _3.I.. __ e
 #         print('Error occured: ' ?
 #         r_ F..
