@@ -23,7 +23,7 @@
 #     r_ ? 0 0
 #
 #
-# ___ table_col_info cursor table_name print_out_F..
+# ___ table_col_info ? table_name print_out_F..
 #     """ Returns a list of tuples with column informations:
 #     (id, name, type, notnull, default_value, primary_key)
 #     """

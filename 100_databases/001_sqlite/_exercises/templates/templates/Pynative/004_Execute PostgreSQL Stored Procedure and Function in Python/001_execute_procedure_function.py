@@ -11,10 +11,10 @@ ___
     cursor _ ps_connection.c..
 
     # call stored procedure
-    cursor.callproc('get_production_Deployment', [72, ])
+    ?.callproc('get_production_Deployment', [72, ])
 
-    print("fechting Employee details who pushed changes to the production from function")
-    result _ cursor.f_a..
+    print("fechting Employee details who pushed changes to the production f.. function")
+    result _ ?.f_a..
     ___ row __ result:
         print("Id = ", row[0], )
         print("Name = ", row[1])
@@ -26,7 +26,7 @@ ______ (E.., ?.DE..) __ error:
 f__
     # closing database connection.
     __ (ps_connection):
-        cursor.c..
+        ?.c..
         ps_connection.c..
         print("PostgreSQL connection is closed")
 

@@ -13,7 +13,7 @@
 #     con _ ?.c.. 'ydb.db'  #  We connect to the ydb.db database. The connect() method returns a connection object.
 #
 #     cur _ ?.c..  # From the connection, we get the cursor object. The cursor is used to traverse the records from the result set.
-#     ?.e..('S.. SQLITE_VERSION()') # We call the execute() method of the cursor and execute the SQL statement.
+#     ?.e..('S.. SQLITE_VERSION()') # We call the execute() method of the ? and execute the SQL statement.
 #
 #     data _ ?.f_o.. 0  # We fetch the data. Since we retrieve only one record, we call the f_o.. method.
 #

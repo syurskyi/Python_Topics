@@ -7,11 +7,11 @@ print("Opened database successfully")
 
 cur _ conn.c..
 
-cur.e..("D.. from COMPANY w.. ID=2;")
+cur.e..("D.. f.. COMPANY w.. ID=2;")
 conn.c..
-print("Total number of rows deleted :", cur.rowcount)
+print("Total number of rows deleted :", cur.r..)
 
-cur.e..("S.. id, name, address, salary  from COMPANY")
+cur.e..("S.. id, name, address, salary  f.. COMPANY")
 rows _ cur.f_a..
 ___ row __ rows:
    print("ID = ", row[0])

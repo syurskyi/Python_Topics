@@ -7,7 +7,7 @@
 #                                   p.._"5432"
 #                                   d.._"postgres_db"
 #
-#    PostgreSQL_select_Query _ "s.. _ from mobile"
+#    PostgreSQL_select_Query _ "s.. _ f.. mobile"
 #    cursor _ ?.c..
 #
 #    ?.e.. ?

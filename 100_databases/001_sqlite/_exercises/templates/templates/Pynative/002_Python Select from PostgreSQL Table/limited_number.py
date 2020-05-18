@@ -11,7 +11,7 @@
 #     cursor _ ?.c..
 #     postgreSQL_s.._Query _ "s.. _ f.. mobile"
 #
-#     cursor.e.. ?
+#     ?.e.. ?
 #     mobile_records _ ?.f_m.. 2
 #
 #     print("Printing 2 rows")

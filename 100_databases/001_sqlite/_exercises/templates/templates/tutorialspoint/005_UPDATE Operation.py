@@ -9,9 +9,9 @@ cur _ conn.c..
 
 cur.e..("U.. COMPANY set SALARY = 25000.00 w.. ID = 1")
 conn.c..
-print("Total number of rows updated :", cur.rowcount)
+print("Total number of rows updated :", cur.r..)
 
-cur.e..("S.. id, name, address, salary  from COMPANY")
+cur.e..("S.. id, name, address, salary  f.. COMPANY")
 rows _ cur.f_a..
 ___ row __ rows:
    print("ID = ", row[0])

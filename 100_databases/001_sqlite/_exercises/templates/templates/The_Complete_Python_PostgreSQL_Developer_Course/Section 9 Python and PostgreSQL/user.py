@@ -20,6 +20,6 @@ class User:
     ___ load______db_by_email(cls, email):
         w__ CursorFromConnectionPool() __ cursor:
             # Note the (email,) to make it a tuple!
-            cursor.e..('S.. * F.. users W.. email=%s', (email,))
+            ?.e..('S.. * F.. users W.. email=%s', (email,))
             u.._data _ cursor.f_o..
             r_ cls(email_user_data[1], first_name_user_data[2], last_name_user_data[3], id_user_data[0])

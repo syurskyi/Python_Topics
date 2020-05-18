@@ -7,7 +7,7 @@ print("Opened database successfully")
 
 cur _ conn.c..
 
-cur.e..("S.. id, name, address, salary  from COMPANY")
+cur.e..("S.. id, name, address, salary  f.. COMPANY")
 rows _ cur.f_a..
 ___ row __ rows:
    print("ID = ", row[0])

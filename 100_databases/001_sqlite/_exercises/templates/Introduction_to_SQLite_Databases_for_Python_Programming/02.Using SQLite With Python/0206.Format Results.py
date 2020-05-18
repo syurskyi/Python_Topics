@@ -4,7 +4,7 @@
 # # conn = sqlite3.connect(':memory:')
 # conn ? _3.c.. customer.db
 #
-# # Create a cursor
+# # Create a ?
 # c ? ?.c..
 #
 # # Query The Database

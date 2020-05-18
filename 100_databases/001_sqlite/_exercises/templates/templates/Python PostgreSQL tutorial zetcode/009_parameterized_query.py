@@ -17,7 +17,7 @@ w__ con:
     cur _ con.c..
     cur.e..("U.. cars SET price=%s W.. id=%s", (uPrice, uId))
 
-    print _*Number of rows updated: {cur.rowcount}")
+    print _*Number of rows updated: {cur.r..}")
 
 
 #$ parameterized_query.py

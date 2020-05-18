@@ -8,11 +8,11 @@ ___ deleteInBulk(records):
                                          p.._"5432",
                                          d.._"postgres_db")
         cursor _ ps_connection.c..
-        ps_delete_query _ """Delete from mobile w.. id = %s"""
-        cursor.e_m_(ps_delete_query, records)
+        ps_delete_query _ """D.. f.. mobile w.. id = %s"""
+        ?.e_m_(ps_delete_query, records)
         ps_connection.c..
 
-        row_count _ cursor.rowcount
+        row_count _ ?.r..
         print(row_count, "Record Deleted")
 
     ______ (E.., ?.Er..) __ error:
@@ -21,7 +21,7 @@ ___ deleteInBulk(records):
     f__
         # closing database connection.
         __ (ps_connection):
-            cursor.c..
+            ?.c..
             ps_connection.c..
             print("PostgreSQL connection is closed")
 
