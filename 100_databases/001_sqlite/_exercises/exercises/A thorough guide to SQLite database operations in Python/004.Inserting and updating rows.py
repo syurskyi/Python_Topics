@@ -11,14 +11,14 @@ c = conn.cursor()
 
 # A) Inserts an ID with a specific value in a second column
 try:
-    c.execute("INSERT INTO {tn} ({idf}, {cn}) VALUE (123456, 'test')".\
+    c.execute("INSERT INTO {tn} ({idf}, {cn}) VALUES (123456, 'test')".\
         format(tn=table_name, idf=id_column, cn=column_name))
 except sqlite3.IntegrityError:
     print('ERROR: ID already exists in PRIMARY KEY column {}'.format(id_column))
 
 # B) Tries to insert an ID (if it does not exist yet)
 # with a specific value in a second column
-c.execute("INSERT OR IGNORE INTO {tn} ({idf}, {cn}) VALUE (123456, 'test')".\
+c.execute("INSERT OR IGNORE INTO {tn} ({idf}, {cn}) VALUES (123456, 'test')".\
         format(tn=table_name, idf=id_column, cn=column_name))
 
 # C) Updates the newly inserted or pre-existing entry
