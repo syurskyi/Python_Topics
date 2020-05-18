@@ -8,7 +8,7 @@ def updateSqliteTable():
 
         sql_update_query _ """Update SqliteDb_developers set salary = 10000 where id = 4"""
         cursor.e..(sql_update_query)
-        sqliteConnection.commit()
+        sqliteConnection.c..
         print("Record Updated successfully ")
         cursor.c..
 

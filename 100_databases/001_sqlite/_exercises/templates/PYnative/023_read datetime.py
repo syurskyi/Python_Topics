@@ -9,9 +9,9 @@ def addDeveloper(id, name, joiningDate):
         cursor _ sqliteConnection.c..
         print("Connected to SQLite")
 
-        sqlite_create_table_query _ '''CREATE TABLE new_developers (
-                                       id INTEGER PRIMARY KEY,
-                                       name TEXT NOT NULL,
+        sqlite_create_table_query _ '''C.. T.. new_developers (
+                                       id I.. P.. K..,
+                                       name T.. N.. N..,
                                        joiningDate timestamp);'''
 
         cursor _ sqliteConnection.c..
@@ -24,7 +24,7 @@ def addDeveloper(id, name, joiningDate):
 
         data_tuple _ (id, name, joiningDate)
         cursor.e..(sqlite_insert_with_param, data_tuple)
-        sqliteConnection.commit()
+        sqliteConnection.c..
         print("Developer added successfully \n")
 
         # get developer detail

@@ -8,9 +8,9 @@ def deleteMultipleRecords(idList):
         sqlite_update_query _ """DELETE from SqliteDb_developers where id = ?"""
 
         cursor.executemany(sqlite_update_query, idList)
-        sqliteConnection.commit()
+        sqliteConnection.c..
         print("Total", cursor.rowcount, "Records deleted successfully")
-        sqliteConnection.commit()
+        sqliteConnection.c..
         cursor.c..
 
     _____ ?.E.. __ error:

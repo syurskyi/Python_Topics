@@ -12,7 +12,7 @@ def insertVaribleIntoTable(id, name, email, joinDate, salary):
 
         data_tuple _ (id, name, email, joinDate, salary)
         cursor.e..(sqlite_insert_with_param, data_tuple)
-        sqliteConnection.commit()
+        sqliteConnection.c..
         print("Python Variables inserted successfully into SqliteDb_developers table")
 
         cursor.c..

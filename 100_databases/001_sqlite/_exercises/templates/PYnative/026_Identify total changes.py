@@ -16,7 +16,7 @@ ___
     sql_delete_query _ """DELETE from SqliteDb_developers where id = 4"""
     cursor.e..(sql_delete_query)
 
-    sqliteConnection.commit()
+    sqliteConnection.c..
     cursor.c..
 
 _____ ?.E.. __ error:

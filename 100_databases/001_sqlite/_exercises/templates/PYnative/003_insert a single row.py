@@ -11,7 +11,7 @@ ___
                           (1,'James','james@pynative.com','2019-03-17',8000)"""
 
     count _ cursor.e..(sqlite_insert_query)
-    sqliteConnection.commit()
+    sqliteConnection.c..
     print("Record inserted successfully into SqliteDb_developers table ", cursor.rowcount)
     cursor.c..
 

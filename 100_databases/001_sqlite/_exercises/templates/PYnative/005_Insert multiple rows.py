@@ -11,9 +11,9 @@ def insertMultipleRecords(recordList):
                           VALUES (?, ?, ?, ?, ?);"""
 
         cursor.executemany(sqlite_insert_query, recordList)
-        sqliteConnection.commit()
+        sqliteConnection.c..
         print("Total", cursor.rowcount, "Records inserted successfully into SqliteDb_developers table")
-        sqliteConnection.commit()
+        sqliteConnection.c..
         cursor.c..
 
     _____ ?.E.. __ error:

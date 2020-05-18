@@ -9,9 +9,9 @@ def updateMultipleColumns(id, salary, email):
         sqlite_update_query _ """Update new_developers set salary = ?, email = ? where id = ?"""
         columnValues _ (salary, email, id)
         cursor.e..(sqlite_update_query, columnValues)
-        sqliteConnection.commit()
+        sqliteConnection.c..
         print("Multiple columns updated successfully")
-        sqliteConnection.commit()
+        sqliteConnection.c..
         cursor.c..
 
     _____ ?.E.. __ error:

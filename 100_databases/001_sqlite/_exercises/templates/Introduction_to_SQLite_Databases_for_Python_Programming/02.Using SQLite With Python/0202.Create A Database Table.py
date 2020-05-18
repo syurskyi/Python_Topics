@@ -15,7 +15,7 @@
 #              )
 #
 # # Datatypes:
-# # NULL
+# # N..
 # # IN..
 # # RE.
 # # T...

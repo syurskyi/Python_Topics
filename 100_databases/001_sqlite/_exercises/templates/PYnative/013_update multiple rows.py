@@ -8,9 +8,9 @@ def updateMultipleRecords(recordList):
 
         sqlite_update_query _ """Update SqliteDb_developers set salary = ? where id = ?"""
         cursor.executemany(sqlite_update_query, recordList)
-        sqliteConnection.commit()
+        sqliteConnection.c..
         print("Total", cursor.rowcount, "Records updated successfully")
-        sqliteConnection.commit()
+        sqliteConnection.c..
         cursor.c..
 
     _____ ?.E.. __ error:

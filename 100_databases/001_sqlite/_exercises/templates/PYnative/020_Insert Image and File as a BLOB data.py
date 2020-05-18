@@ -19,7 +19,7 @@ def insertBLOB(empId, name, photo, resumeFile):
         # Convert data into tuple format
         data_tuple _ (empId, name, empPhoto, resume)
         cursor.e..(sqlite_insert_blob_query, data_tuple)
-        sqliteConnection.commit()
+        sqliteConnection.c..
         print("Image and file inserted successfully as a BLOB into a table")
         cursor.c..
 

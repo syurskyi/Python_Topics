@@ -9,7 +9,7 @@ def updateSqliteTable(id, salary):
         sql_update_query _ """Update SqliteDb_developers set salary = ? where id = ?"""
         data _ (salary, id)
         cursor.e..(sql_update_query, data)
-        sqliteConnection.commit()
+        sqliteConnection.c..
         print("Record Updated successfully")
         cursor.c..
 

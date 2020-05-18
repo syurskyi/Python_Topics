@@ -11,7 +11,7 @@ ___
                           (id, text)  VALUES  (1, 'Demo Text')"""
 
     count _ cursor.e..(sqlite_insert_query)
-    sqliteConnection.commit()
+    sqliteConnection.c..
     print("Record inserted successfully into SqliteDb_developers table ", cursor.rowcount)
     cursor.c..
 

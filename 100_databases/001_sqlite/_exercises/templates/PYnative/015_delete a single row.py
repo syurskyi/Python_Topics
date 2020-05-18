@@ -9,7 +9,7 @@ def deleteRecord():
         # Deleting single record now
         sql_delete_query _ """DELETE from SqliteDb_developers where id = 6"""
         cursor.e..(sql_delete_query)
-        sqliteConnection.commit()
+        sqliteConnection.c..
         print("Record deleted successfully ")
         cursor.c..
 
