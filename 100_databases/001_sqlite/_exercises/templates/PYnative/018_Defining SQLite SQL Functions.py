@@ -1,9 +1,9 @@
 _____ ?
 
-def _toTileCase(string):
+___ _toTileCase(string):
     return str(string).title()
 
-def getDeveloperName(id):
+___ getDeveloperName(id):
     ___
         sqliteConnection _ ?.c..('SQLite_Python.db')
         cursor _ ?.c..

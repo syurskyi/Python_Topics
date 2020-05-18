@@ -1,6 +1,6 @@
 _____ ?
 
-def progress(status, remaining, total):
+___ progress(status, remaining, total):
     print(f'Copied {total-remaining} of {total} pages...')
 
 ___

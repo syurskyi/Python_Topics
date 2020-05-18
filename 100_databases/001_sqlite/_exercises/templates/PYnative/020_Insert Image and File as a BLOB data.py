@@ -1,12 +1,12 @@
 _____ ?
 
-def convertToBinaryData(filename):
+___ convertToBinaryData(filename):
     #Convert digital data to binary format
     with open(filename, 'rb') __ file:
         blobData _ file.read()
     return blobData
 
-def insertBLOB(empId, name, photo, resumeFile):
+___ insertBLOB(empId, name, photo, resumeFile):
     ___
         sqliteConnection _ ?.c..('SQLite_Python.db')
         cursor _ ?.c..

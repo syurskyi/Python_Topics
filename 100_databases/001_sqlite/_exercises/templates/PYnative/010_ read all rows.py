@@ -1,6 +1,6 @@
 _____ ?
 
-def readSqliteTable():
+___ readSqliteTable():
     ___
         sqliteConnection _ ?.c..('SQLite_Python.db')
         cursor _ ?.c..

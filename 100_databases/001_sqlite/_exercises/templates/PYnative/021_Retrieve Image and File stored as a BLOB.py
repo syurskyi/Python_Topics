@@ -1,12 +1,12 @@
 _____ ?
 
-def writeTofile(data, filename):
+___ writeTofile(data, filename):
     # Convert binary data to proper format and write it on Hard Disk
     with open(filename, 'wb') __ file:
         file.write(data)
     print("Stored blob data into: ", filename, "\n")
 
-def readBlobData(empId):
+___ readBlobData(empId):
     ___
         sqliteConnection _ ?.c..('SQLite_Python.db')
         cursor _ ?.c..

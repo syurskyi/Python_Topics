@@ -1,6 +1,6 @@
 _____ ?
 
-def deleteMultipleRecords(idList):
+___ deleteMultipleRecords(idList):
     ___
         sqliteConnection _ ?.c..('SQLite_Python.db')
         cursor _ ?.c..

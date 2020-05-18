@@ -1,6 +1,6 @@
 _____ ?
 
-def readSingleRow(developerId):
+___ readSingleRow(developerId):
     ___
         sqliteConnection _ ?.c..('SQLite_Python.db')
         cursor _ ?.c..

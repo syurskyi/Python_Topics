@@ -1,6 +1,6 @@
 _____ ?
 
-def readLimitedRows(rowSize):
+___ readLimitedRows(rowSize):
     ___
         sqliteConnection _ ?.c..('SQLite_Python.db')
         cursor _ sqliteConnection.c..

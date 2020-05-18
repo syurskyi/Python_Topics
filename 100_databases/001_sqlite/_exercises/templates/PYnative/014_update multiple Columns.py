@@ -1,6 +1,6 @@
 _____ ?
 
-def updateMultipleColumns(id, salary, email):
+___ updateMultipleColumns(id, salary, email):
     ___
         sqliteConnection _ ?.c..('SQLite_Python.db')
         cursor _ ?.c..

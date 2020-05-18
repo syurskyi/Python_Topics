@@ -1,6 +1,6 @@
 _____ ?
 
-def getDeveloperInfo(id):
+___ getDeveloperInfo(id):
     ___
         sqliteConnection _ ?.c..('SQLite_Python.db')
         cursor _ sqliteConnection.c..

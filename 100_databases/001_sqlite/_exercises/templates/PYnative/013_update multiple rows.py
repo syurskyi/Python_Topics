@@ -1,6 +1,6 @@
 _____ ?
 
-def updateMultipleRecords(recordList):
+___ updateMultipleRecords(recordList):
     ___
         sqliteConnection _ ?.c..('SQLite_Python.db')
         cursor _ ?.c..

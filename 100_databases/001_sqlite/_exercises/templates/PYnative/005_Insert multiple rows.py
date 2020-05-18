@@ -1,6 +1,6 @@
 _____ ?
 
-def insertMultipleRecords(recordList):
+___ insertMultipleRecords(recordList):
     ___
         sqliteConnection _ ?.c..('SQLite_Python.db')
         cursor _ ?.c..

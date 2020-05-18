@@ -1,9 +1,9 @@
 _____ ?
 
-def lower(string):
+___ lower(string):
     return str(string).upper()
 
-def getDeveloperName(id):
+___ getDeveloperName(id):
     ___
         sqliteConnection _ ?.c..('SQLite_Python.db')
         cursor _ ?.c..

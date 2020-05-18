@@ -1,6 +1,6 @@
 _____ ?
 
-def updateSqliteTable():
+___ updateSqliteTable():
     ___
         sqliteConnection _ ?.c..('SQLite_Python.db')
         cursor _ ?.c..
