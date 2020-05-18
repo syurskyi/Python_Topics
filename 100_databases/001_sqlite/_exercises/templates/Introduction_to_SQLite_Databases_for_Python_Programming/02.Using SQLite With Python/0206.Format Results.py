@@ -12,7 +12,7 @@
 # # print(c.fetchall())
 # # print(c.fetchone())
 # # print(c.f_o..[3])
-# # print(c.fetchmany(3))
+# # print(c.f_m..(3))
 #
 # items ? ?.f..
 # # print(items)
