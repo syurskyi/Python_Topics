@@ -6,7 +6,7 @@ ___ updateSqliteTable(id, salary
         cursor _ ?.c..
         print("Connected to SQLite")
 
-        sql_update_query _ """Update SqliteDb_developers set salary = ? w.. id = ?"""
+        sql_update_query _ """U.. SqliteDb_developers set salary = ? w.. id = ?"""
         data _ (salary, id)
         ?.e..(sql_update_query, data)
         ?.c..
