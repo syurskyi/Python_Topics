@@ -1,5 +1,5 @@
 _____ ?
-_____ datetime
+_____ d_t_
 
 ___ addDeveloper(id, name, joiningDate
     ___
@@ -47,7 +47,7 @@ ___ addDeveloper(id, name, joiningDate
             ?.c..
             print("sqlite connection is closed")
 
-addDeveloper(1, 'Mark', datetime.datetime.now())
+addDeveloper(1, 'Mark', d_t_.d_t_.now())
 
 
 # Output:
