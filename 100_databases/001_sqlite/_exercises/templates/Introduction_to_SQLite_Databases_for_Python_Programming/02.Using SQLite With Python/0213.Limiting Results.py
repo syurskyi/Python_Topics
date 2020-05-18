@@ -8,7 +8,7 @@
 # c _ ?.c..
 #
 # # Query The Database
-# # c.execute("S.. rowid, * F.. customers LIMIT 2")
+# # c.execute("S.. rowid, _ F.. customers LIMIT 2")
 # ?.e.. S.. r.., _ F.. customers O.. B. r.. D.. L.. 2
 #
 # items _ ?.f..

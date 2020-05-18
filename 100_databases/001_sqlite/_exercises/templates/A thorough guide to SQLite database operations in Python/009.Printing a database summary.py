@@ -16,7 +16,7 @@
 #
 # ___ total_rows cursor table_name print_out_F..
 #     """ Returns the total number of rows in the database """
-#     ?.ex... 'S.. COUNT(*) F.. @'.f.. t_n..
+#     ?.ex... 'S.. COUNT(_) F.. @'.f.. t_n..
 #     count _ ?.f..
 #     __ p_o..
 #         print('\nTotal rows: @'.f.. ? 0 0

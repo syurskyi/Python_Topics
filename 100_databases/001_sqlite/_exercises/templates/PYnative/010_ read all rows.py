@@ -1,17 +1,17 @@
 _____ ?
 
-___ readSqliteTable():
+___ readSqliteTable
     ___
         sqliteConnection _ ?.c..('SQLite_Python.db')
         cursor _ ?.c..
         print("Connected to SQLite")
 
-        sqlite_select_query _ """SELECT * from SqliteDb_developers"""
+        sqlite_select_query _ """S.. _ from SqliteDb_developers"""
         ?.e..(sqlite_select_query)
         records _ ?.f_a..
-        print("Total rows are:  ", len(records))
+        print("Total rows are:  ", le.(records))
         print("Printing each row")
-        for row in records:
+        ___ row __ records:
             print("Id: ", row[0])
             print("Name: ", row[1])
             print("Email: ", row[2])

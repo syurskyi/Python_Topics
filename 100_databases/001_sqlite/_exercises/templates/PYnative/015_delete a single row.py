@@ -1,6 +1,6 @@
 _____ ?
 
-___ deleteRecord():
+___ deleteRecord
     ___
         sqliteConnection _ ?.c..('SQLite_Python.db')
         cursor _ ?.c..

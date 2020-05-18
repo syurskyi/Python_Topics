@@ -6,12 +6,12 @@ ___ readLimitedRows(rowSize):
         cursor _ sqliteConnection.c..
         print("Connected to SQLite")
 
-        sqlite_select_query _ """SELECT * from SqliteDb_developers"""
+        sqlite_select_query _ """S.. _ from SqliteDb_developers"""
         ?.e..(sqlite_select_query)
         print("Reading ", rowSize, " rows")
         records _ ?.fetchmany(rowSize)
         print("Printing each row \n")
-        for row in records:
+        ___ row __ records:
             print("Id: ", row[0])
             print("Name: ", row[1])
             print("Email: ", row[2])

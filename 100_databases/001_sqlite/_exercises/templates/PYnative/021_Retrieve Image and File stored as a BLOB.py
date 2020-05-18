@@ -12,10 +12,10 @@ ___ readBlobData(empId):
         cursor _ ?.c..
         print("Connected to SQLite")
 
-        sql_fetch_blob_query _ """SELECT * from new_employee where id = ?"""
+        sql_fetch_blob_query _ """S.. _ from new_employee where id = ?"""
         ?.e..(sql_fetch_blob_query, (empId,))
         record _ ?.f_a..
-        for row in record:
+        ___ row __ record:
             print("Id = ", row[0], "Name = ", row[1])
             name  _ row[1]
             photo _ row[2]

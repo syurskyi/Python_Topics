@@ -6,11 +6,11 @@ ___ getDeveloperInfo(id):
         cursor _ sqliteConnection.c..
         print("Connected to SQLite")
 
-        sql_select_query _ """select * from SqliteDb_developers where id = ?"""
+        sql_select_query _ """select _ from SqliteDb_developers where id = ?"""
         ?.e..(sql_select_query, (id,))
         records _ ?.f_a..
         print("Printing ID ", id)
-        for row in records:
+        ___ row __ records:
             print("Name = ", row[1])
             print("Email  = ", row[2])
             print("JoiningDate  = ", row[3])

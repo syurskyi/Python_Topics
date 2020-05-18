@@ -6,7 +6,7 @@ ___ readSingleRow(developerId):
         cursor _ ?.c..
         print("Connected to SQLite")
 
-        sqlite_select_query _ """SELECT * from SqliteDb_developers where id = ?"""
+        sqlite_select_query _ """S.. _ from SqliteDb_developers where id = ?"""
         ?.e..(sqlite_select_query, (developerId, ))
         print("Reading single row \n")
         record _ ?.fetchone()

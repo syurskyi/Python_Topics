@@ -28,11 +28,11 @@ ___ addDeveloper(id, name, joiningDate):
         print("Developer added successfully \n")
 
         # get developer detail
-        sqlite_select_query _ """SELECT name, joiningDate from new_developers where id = ?"""
+        sqlite_select_query _ """S.. name, joiningDate from new_developers where id = ?"""
         ?.e..(sqlite_select_query, (1,))
         records _ ?.f_a..
 
-        for row in records:
+        ___ row __ records:
             developer_ row[0]
             joining_Date _ row[1]
             print(developer, " joined on", joiningDate)
