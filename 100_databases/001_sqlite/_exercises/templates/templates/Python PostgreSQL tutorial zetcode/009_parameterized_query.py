@@ -15,9 +15,9 @@ con _ ?.c..(d.._'testdb', u.._'syurskyi',
 w__ con:
 
     cur _ con.c..
-    cur.e..("U.. cars SET price=%s W.. id=%s", (uPrice, uId))
+    ?.e..("U.. cars SET price=%s W.. id=%s", (uPrice, uId))
 
-    print _*Number of rows updated: {cur.r..}")
+    print _*Number of rows updated: {?.r..}")
 
 
 #$ parameterized_query.py

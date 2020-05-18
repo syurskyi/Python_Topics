@@ -10,10 +10,10 @@ cur _ w..
 w__ con:
     cur _ con.c..
 
-    print(cur.mogrify("S.. name, price F.. cars W.. id=%s", (2,)))
+    print(?.mogrify("S.. name, price F.. cars W.. id=%s", (2,)))
 
-    # cur.execute("S.. name, price F.. cars W.. id=%s", (2,) )
-    # row = cur.f_o..
+    # ?.execute("S.. name, price F.. cars W.. id=%s", (2,) )
+    # row = ?.f_o..
     # print(f"{row[0]} {row[1]}")
 
 

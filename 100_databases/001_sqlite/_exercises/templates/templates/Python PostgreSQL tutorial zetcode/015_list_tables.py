@@ -9,10 +9,10 @@ con _ ?.c..(d.._'testdb', u.._'syurskyi',
 w__ con:
 
     cur _ con.c..
-    cur.e..("""S.. table_name F.. information_schema.tables
+    ?.e..("""S.. table_name F.. information_schema.tables
         W.. table_schema = 'public'""")
 
-    rows _ cur.f_a..
+    rows _ ?.f_a..
 
     ___ row __ rows:
         print(row[0])

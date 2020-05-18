@@ -28,8 +28,8 @@ ___
                     p.._'1234')
 
     cur _ con.c..
-    cur.e..("S.. data F.. images LIMIT 1")
-    data _ cur.f_o..[0]
+    ?.e..("S.. data F.. images LIMIT 1")
+    data _ ?.f_o..[0]
 
     writeImage(data)
 

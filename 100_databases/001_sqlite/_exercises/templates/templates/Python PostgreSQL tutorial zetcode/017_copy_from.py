@@ -15,7 +15,7 @@ ___
     cur _ con.c..
     f _ o..('cars.csv', 'r')
 
-    cur.copy_____(f, 'cars', sep_"|")
+    ?.copy_____(f, 'cars', sep_"|")
     con.c..
 
 ______ ?.DE.. __ e:

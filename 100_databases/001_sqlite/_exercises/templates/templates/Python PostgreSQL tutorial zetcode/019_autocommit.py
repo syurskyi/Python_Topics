@@ -15,14 +15,14 @@ ___
 
     cur _ con.c..
 
-    cur.e..("D.. T.. I. E.. friends")
-    cur.e..("C.. T.. friends(id serial P.. K.., name V..(10))")
-    cur.e..("I.. I.. friends(name) V.. ('Jane')")
-    cur.e..("I.. I.. friends(name) V.. ('Tom')")
-    cur.e..("I.. I.. friends(name) V.. ('Rebecca')")
-    cur.e..("I.. I.. friends(name) V.. ('Jim')")
-    cur.e..("I.. I.. friends(name) V.. ('Robert')")
-    cur.e..("I.. I.. friends(name) V.. ('Patrick')")
+    ?.e..("D.. T.. I. E.. friends")
+    ?.e..("C.. T.. friends(id serial P.. K.., name V..(10))")
+    ?.e..("I.. I.. friends(name) V.. ('Jane')")
+    ?.e..("I.. I.. friends(name) V.. ('Tom')")
+    ?.e..("I.. I.. friends(name) V.. ('Rebecca')")
+    ?.e..("I.. I.. friends(name) V.. ('Jim')")
+    ?.e..("I.. I.. friends(name) V.. ('Robert')")
+    ?.e..("I.. I.. friends(name) V.. ('Patrick')")
 
 
 ______ ?.DE.. __ e:

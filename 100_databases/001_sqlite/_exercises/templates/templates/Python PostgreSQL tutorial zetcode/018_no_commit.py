@@ -13,12 +13,12 @@ ___
 
     cur _ con.c..
 
-    cur.e..("D.. T.. I. E.. friends")
-    cur.e..("C.. T.. friends(id S.. P.. K.., name V..(255))")
-    cur.e..("I.. I.. friends(name) V.. ('Tom')")
-    cur.e..("I.. I.. friends(name) V.. ('Rebecca')")
-    cur.e..("I.. I.. friends(name) V.. ('Jim')")
-    cur.e..("I.. I.. friends(name) V.. ('Robert')")
+    ?.e..("D.. T.. I. E.. friends")
+    ?.e..("C.. T.. friends(id S.. P.. K.., name V..(255))")
+    ?.e..("I.. I.. friends(name) V.. ('Tom')")
+    ?.e..("I.. I.. friends(name) V.. ('Rebecca')")
+    ?.e..("I.. I.. friends(name) V.. ('Jim')")
+    ?.e..("I.. I.. friends(name) V.. ('Robert')")
 
     con.c..
 

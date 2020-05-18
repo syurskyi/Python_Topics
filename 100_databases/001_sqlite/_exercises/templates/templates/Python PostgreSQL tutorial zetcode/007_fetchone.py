@@ -8,12 +8,12 @@ con _ ?.c..(d.._'testdb', u.._'syurskyi',
 
 w__ con:
 
-    cur _ con.c..
-    cur.e..("S.. _ F.. cars")
+    ? _ con.c..
+    ?.e..("S.. _ F.. cars")
 
     w__ T..
 
-        row _ cur.f_o..
+        row _ ?.f_o..
 
         __ row __ w..:
             b..

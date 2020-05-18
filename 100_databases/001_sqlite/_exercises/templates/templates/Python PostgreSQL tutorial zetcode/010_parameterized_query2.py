@@ -12,9 +12,9 @@ w__ con:
 
     cur _ con.c..
 
-    cur.e..("S.. _ F.. cars W.. id=%(id)s", {'id': uid } )
+    ?.e..("S.. _ F.. cars W.. id=%(id)s", {'id': uid } )
 
-    row _ cur.f_o..
+    row _ ?.f_o..
 
     print _*{row[0]} {row[1]} {row[2]}')
 

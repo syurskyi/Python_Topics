@@ -32,7 +32,7 @@ ___
     cur _ con.c..
     data _ readImage()
     binary _ ?.Binary(data)
-    cur.e..("I.. I.. images(data) V.. (%s)", (binary,))
+    ?.e..("I.. I.. images(data) V.. (%s)", (binary,))
 
     con.c..
 

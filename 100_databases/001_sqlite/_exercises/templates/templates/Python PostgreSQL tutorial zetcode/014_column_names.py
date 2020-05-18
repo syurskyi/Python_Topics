@@ -10,10 +10,10 @@ w__ con:
 
     cur _ con.c..
 
-    cur.e..('S.. _ F.. cars')
+    ?.e..('S.. _ F.. cars')
 
-    col_names _ [cn[0] ___ cn __ cur.d..]
-    rows _ cur.f_a..
+    col_names _ [cn[0] ___ cn __ ?.d..]
+    rows _ ?.f_a..
 
     print _*{col_names[0]} {col_names[1]} {col_names[2]}')
 
