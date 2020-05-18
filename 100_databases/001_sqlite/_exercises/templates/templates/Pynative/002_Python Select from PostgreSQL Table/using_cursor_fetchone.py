@@ -1,11 +1,11 @@
 _____ ?
 
 ___
-   connection _ ?.c..(user_"syurskyi",
-                                  password_"1234",
-                                  host_"127.0.0.1",
-                                  port_"5432",
-                                  database_"postgres_db")
+   connection _ ?.c..(u.._"syurskyi",
+                                  p.._"1234",
+                                  h.._"127.0.0.1",
+                                  p.._"5432",
+                                  d.._"postgres_db")
 
    PostgreSQL_select_Query _ "select * from mobile"
    cursor _ connection.c..

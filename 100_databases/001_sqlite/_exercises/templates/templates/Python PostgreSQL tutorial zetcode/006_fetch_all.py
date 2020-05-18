@@ -3,8 +3,8 @@
 
 _____ ?
 
-con _ ?.c..(database_'testdb', user_'syursky',
-                    password_'1234')
+con _ ?.c..(d.._'testdb', u.._'syursky',
+                    p.._'1234')
 
 w__ con:
 

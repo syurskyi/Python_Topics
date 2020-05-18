@@ -1,11 +1,11 @@
 _____ ?
 ____ ? _____ pool
 ___
-    postgreSQL_pool _ ?.pool.SimpleConnectionPool(1, 20,user _ "syurskyi",
-                                              password _ "1234",
-                                              host _ "127.0.0.1",
-                                              port _ "5432",
-                                              database _ "postgres_db")
+    postgreSQL_pool _ ?.pool.SimpleConnectionPool(1, 20,u.. _ "syurskyi",
+                                              p.. _ "1234",
+                                              h.. _ "127.0.0.1",
+                                              p.. _ "5432",
+                                              d.. _ "postgres_db")
     __(postgreSQL_pool):
         print("Connection pool created successfully")
 

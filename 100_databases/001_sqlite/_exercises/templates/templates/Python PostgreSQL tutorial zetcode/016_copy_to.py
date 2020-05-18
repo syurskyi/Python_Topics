@@ -9,8 +9,8 @@ fout _ w..
 
 ___
 
-    con _ ?.c..(database_'testdb', user_'syurskyi',
-                    password_'1234')
+    con _ ?.c..(d.._'testdb', u.._'syurskyi',
+                    p.._'1234')
 
     cur _ con.c..
     fout _ o..('cars.csv', 'w')

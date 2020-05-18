@@ -1,11 +1,11 @@
 _____ ?
 ____ ? _____ pool
 ___
-    threaded_postgreSQL_pool _ ?.pool.ThreadedConnectionPool(5, 20,user _ "postgres",
-                                              password _ "pass@#29",
-                                              host _ "127.0.0.1",
-                                              port _ "5432",
-                                              database _ "postgres_db")
+    threaded_postgreSQL_pool _ ?.pool.ThreadedConnectionPool(5, 20,u.. _ "postgres",
+                                              p.. _ "pass@#29",
+                                              h.. _ "127.0.0.1",
+                                              p.. _ "5432",
+                                              d.. _ "postgres_db")
     __(threaded_postgreSQL_pool):
         print("Connection pool created successfully using ThreadedConnectionPool")
 

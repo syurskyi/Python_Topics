@@ -1,7 +1,7 @@
-____ user _____ User
+____ u.. _____ User
 ____ database _____ Database
 
-Database.initialise(database_"learning", user_"syurskyi", password_"1234", host_"localhost")
+Database.initialise(d.._"learning", user_"syurskyi", p.._"1234", h.._"localhost")
 
 user _ User('jose@schoolofcode.me', 'Jose', 'Salvatierra')
 

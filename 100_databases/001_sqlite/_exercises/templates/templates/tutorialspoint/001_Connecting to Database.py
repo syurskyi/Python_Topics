@@ -2,7 +2,7 @@
 
 _____ ?
 
-conn _ ?.c..(database_"testdb2", user _ "postgres", password _ "pass123", host _ "127.0.0.1", port _ "5432")
+conn _ ?.c..(d.._"testdb2", u.. _ "postgres", p.. _ "pass123", h.. _ "127.0.0.1", p.. _ "5432")
 
 print("Opened database successfully")
 
