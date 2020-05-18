@@ -23,7 +23,7 @@ ______ ?.DE.. __ e:
     __ con:
         con.r..
 
-    print(f'Error {e}')
+    print _*Error {e}')
     ___.e.. 1)
 
 ______ IO.. __ e:
@@ -31,7 +31,7 @@ ______ IO.. __ e:
     __ con:
         con.r..
 
-    print(f'Error {e}')
+    print _*Error {e}')
     ___.e.. 1)
 
 f__

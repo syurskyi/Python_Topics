@@ -18,12 +18,12 @@ ___
 
 ______ ?.DE.. __ e:
 
-    print(f'Error {e}')
+    print _*Error {e}')
     ___.e.. 1)
 
 ______ IO.. __ e:
 
-    print(f'Error {e}')
+    print _*Error {e}')
     ___.e.. 1)
 
 f__

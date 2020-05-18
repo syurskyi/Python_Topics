@@ -16,7 +16,7 @@ w__ con:
 
     row _ cur.f_o..
 
-    print(f'{row[0]} {row[1]} {row[2]}')
+    print _*{row[0]} {row[1]} {row[2]}')
 
 
 # $ parameterized_query2.py

@@ -15,7 +15,7 @@ ___ readImage():
 
     ______ IO.. __ e:
 
-        print(f'Error {e.args[0]}, {e.args[1]}')
+        print _*Error {e.args[0]}, {e.args[1]}')
         ___.e.. 1)
 
     f__
@@ -41,7 +41,7 @@ ______ ?.DE.. __ e:
     __ con:
         con.r..
 
-    print(f'Error {e}')
+    print _*Error {e}')
     ___.e.. 1)
 
 f__
