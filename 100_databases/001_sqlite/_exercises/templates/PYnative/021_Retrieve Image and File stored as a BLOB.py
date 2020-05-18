@@ -1,12 +1,12 @@
 _____ ?
 
-___ writeTofile(data, filename):
+___ writeTofile(data, filename
     # Convert binary data to proper format and write it on Hard Disk
     with open(filename, 'wb') __ file:
         file.write(data)
     print("Stored blob data into: ", filename, "\n")
 
-___ readBlobData(empId):
+___ readBlobData(empId
     ___
         sqliteConnection _ ?.c..('SQLite_Python.db')
         cursor _ ?.c..
@@ -30,9 +30,9 @@ ___ readBlobData(empId):
         ?.c..
 
     _____ ?.E.. __ error:
-        print("Failed to read blob data f.. sqlite table", error)
+        print("Failed to read blob data f.. sqlite table" ?
     f..
-        __ (?):
+        __ (?
             ?.c..
             print("sqlite connection is closed")
 

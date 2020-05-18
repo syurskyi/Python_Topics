@@ -1,6 +1,6 @@
 _____ ?
 
-___ updateSqliteTable(id, salary):
+___ updateSqliteTable(id, salary
     ___
         ? _ ?.c..('SQLite_Python.db')
         cursor _ ?.c..
@@ -14,9 +14,9 @@ ___ updateSqliteTable(id, salary):
         ?.c..
 
     _____ ?.E.. __ error:
-        print("Failed to update sqlite table", error)
+        print("Failed to update sqlite table" ?
     f..
-        __ (?):
+        __ (?
             ?.c..
             print("The sqlite connection is closed")
 

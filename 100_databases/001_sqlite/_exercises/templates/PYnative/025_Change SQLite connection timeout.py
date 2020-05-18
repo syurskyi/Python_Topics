@@ -8,14 +8,14 @@ ___ readSqliteTable
 
         sqlite_select_query _ """S.. count(_) f.. SqliteDb_developers"""
         ?.e..(sqlite_select_query)
-        totalRows _ ?.fetchone()
+        totalRows _ ?.f_o..
         print("Total rows are:  ", totalRows)
         ?.c..
 
     _____ ?.E.. __ error:
-        print("Failed to read data from sqlite table", error)
+        print("Failed to read data from sqlite table" ?
     f..
-        __ (?):
+        __ (?
             ?.c..
             print("The Sqlite connection is closed")
 

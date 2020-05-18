@@ -14,9 +14,9 @@ ___ deleteRecord
         ?.c..
 
     _____ ?.E.. __ error:
-        print("Failed to delete record from sqlite table", error)
+        print("Failed to delete record from sqlite table" ?
     f..
-        __ (?):
+        __ (?
             ?.c..
             print("the sqlite connection is closed")
 

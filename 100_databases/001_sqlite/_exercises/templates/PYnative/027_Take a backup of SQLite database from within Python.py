@@ -1,6 +1,6 @@
 _____ ?
 
-___ progress(status, remaining, total):
+___ progress(status, remaining, total
     print(f'Copied {total-remaining} of {total} pages...')
 
 ___
@@ -12,9 +12,9 @@ ___
         sqliteCon.backup(backupCon, pages_3, progress_progress)
     print("backup successful")
 _____ ?.E.. __ error:
-    print("Error while taking backup: ", error)
+    print("Error while taking backup: " ?
 f..
-    __(backupCon):
+    __(backupCon
         backupCon.c..
         sqliteCon.c..
 

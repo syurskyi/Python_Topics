@@ -1,6 +1,6 @@
 _____ ?
 
-___ updateMultipleRecords(recordList):
+___ updateMultipleRecords(recordList
     ___
         sqliteConnection _ ?.c..('SQLite_Python.db')
         cursor _ ?.c..
@@ -14,9 +14,9 @@ ___ updateMultipleRecords(recordList):
         ?.c..
 
     _____ ?.E.. __ error:
-        print("Failed to update multiple records of sqlite table", error)
+        print("Failed to update multiple records of sqlite table" ?
     f..
-        __ (?):
+        __ (?
             ?.c..
             print("The SQLite connection is closed")
 

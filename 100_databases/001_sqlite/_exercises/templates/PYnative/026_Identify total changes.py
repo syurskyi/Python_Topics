@@ -20,9 +20,9 @@ ___
     ?.c..
 
 _____ ?.E.. __ error:
-    print("Error while working with SQLite", error)
+    print("Error while working with SQLite" ?
 f..
-    __ (?):
+    __ (?
         print("Total Rows affected since the database connection was opened: ", ?.total_changes)
         ?.c..
         print("sqlite connection is closed")

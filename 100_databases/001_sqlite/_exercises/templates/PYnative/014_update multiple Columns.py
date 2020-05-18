@@ -1,6 +1,6 @@
 _____ ?
 
-___ updateMultipleColumns(id, salary, email):
+___ updateMultipleColumns(id, salary, email
     ___
         sqliteConnection _ ?.c..('SQLite_Python.db')
         cursor _ ?.c..
@@ -15,9 +15,9 @@ ___ updateMultipleColumns(id, salary, email):
         ?.c..
 
     _____ ?.E.. __ error:
-        print("Failed to update multiple columns of sqlite table", error)
+        print("Failed to update multiple columns of sqlite table" ?
     f..
-        __ (?):
+        __ (?
             ?.c..
             print("sqlite connection is closed")
 

@@ -23,7 +23,7 @@ _____ ?.E.. __ error:
     exc_type, exc_value, exc_tb _ sys.exc_info()
     print(traceback.format_exception(exc_type, exc_value, exc_tb))
 f..
-    __ (?):
+    __ (?
         ?.c..
         print("The SQLite connection is closed")
 
@@ -35,5 +35,5 @@ f..
 # Exception class is:  <class '?.OperationalError'>
 # Exception is ('no such table: unknown_table_1',)
 # Printing detailed SQLite exception traceback:
-# ['Traceback (most recent call last):\n', '  File "E:/demos/sqlite_demos/sqlite_errors.py", line 13, in <module>\n    count = cursor.execute(sqlite_insert_query)\n', '?.OperationalError: no such table: unknown_table_1\n']
+# ['Traceback (most recent call last\n', '  File "E:/demos/sqlite_demos/sqlite_errors.py", line 13, in <module>\n    count = cursor.execute(sqlite_insert_query)\n', '?.OperationalError: no such table: unknown_table_1\n']
 # The SQLite connection is closed

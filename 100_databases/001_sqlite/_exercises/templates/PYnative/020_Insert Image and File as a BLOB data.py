@@ -1,12 +1,12 @@
 _____ ?
 
-___ convertToBinaryData(filename):
+___ convertToBinaryData(filename
     #Convert digital data to binary format
     with open(filename, 'rb') __ file:
         blobData _ file.read()
     return blobData
 
-___ insertBLOB(empId, name, photo, resumeFile):
+___ insertBLOB(empId, name, photo, resumeFile
     ___
         sqliteConnection _ ?.c..('SQLite_Python.db')
         cursor _ ?.c..
@@ -24,9 +24,9 @@ ___ insertBLOB(empId, name, photo, resumeFile):
         ?.c..
 
     _____ ?.E.. __ error:
-        print("Failed to insert blob data into sqlite table", error)
+        print("Failed to insert blob data into sqlite table" ?
     f..
-        __ (?):
+        __ (?
             ?.c..
             print("the sqlite connection is closed")
 

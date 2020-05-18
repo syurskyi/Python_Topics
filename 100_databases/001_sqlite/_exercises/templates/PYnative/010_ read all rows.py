@@ -22,9 +22,9 @@ ___ readSqliteTable
         ?.c..
 
     _____ ?.E.. __ error:
-        print("Failed to read data from sqlite table", error)
+        print("Failed to read data from sqlite table" ?
     f..
-        __ (?):
+        __ (?
             ?.c..
             print("The SQLite connection is closed")
 

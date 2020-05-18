@@ -1,6 +1,6 @@
 _____ ?
 
-___ deleteMultipleRecords(idList):
+___ deleteMultipleRecords(idList
     ___
         sqliteConnection _ ?.c..('SQLite_Python.db')
         cursor _ ?.c..
@@ -14,9 +14,9 @@ ___ deleteMultipleRecords(idList):
         ?.c..
 
     _____ ?.E.. __ error:
-        print("Failed to delete multiple records from sqlite table", error)
+        print("Failed to delete multiple records from sqlite table" ?
     f..
-        __ (?):
+        __ (?
             ?.c..
             print("sqlite connection is closed")
 

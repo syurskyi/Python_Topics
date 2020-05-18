@@ -1,7 +1,7 @@
 _____ ?
 _____ datetime
 
-___ addDeveloper(id, name, joiningDate):
+___ addDeveloper(id, name, joiningDate
     ___
         sqliteConnection _ ?.c..('SQLite_Python.db',
                                            detect_types_?.PARSE_DECLTYPES |
@@ -41,9 +41,9 @@ ___ addDeveloper(id, name, joiningDate):
         ?.c..
 
     _____ ?.E.. __ error:
-        print("Error while working with SQLite", error)
+        print("Error while working with SQLite" ?
     f..
-        __ (?):
+        __ (?
             ?.c..
             print("sqlite connection is closed")
 

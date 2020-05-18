@@ -1,6 +1,6 @@
 _____ ?
 
-___ deleteSqliteRecord(id):
+___ deleteSqliteRecord(id
     ___
         sqliteConnection _ ?.c..('SQLite_Python.db')
         cursor _ ?.c..
@@ -14,9 +14,9 @@ ___ deleteSqliteRecord(id):
         ?.c..
 
     _____ ?.E.. __ error:
-        print("Failed to delete reocord from a sqlite table", error)
+        print("Failed to delete reocord from a sqlite table" ?
     f..
-        __ (?):
+        __ (?
             ?.c..
             print("sqlite connection is closed")
 
