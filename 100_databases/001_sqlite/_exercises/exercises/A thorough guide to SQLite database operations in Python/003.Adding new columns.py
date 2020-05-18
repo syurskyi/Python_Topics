@@ -23,4 +23,3 @@ c.execute("ALTER TABLE {tn} ADD COLUMN '{cn}' {ct} DEFAULT '{df}'"\
 # Committing changes and closing the connection to the database file
 conn.commit()
 conn.close()
-
