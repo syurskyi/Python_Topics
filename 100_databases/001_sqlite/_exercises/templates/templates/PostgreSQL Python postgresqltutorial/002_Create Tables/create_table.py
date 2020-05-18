@@ -23,7 +23,7 @@
 #                 drawing_data BYTEA N.. N..,
 #                 F.. K.. (part_id)
 #                 R.. parts (part_id)
-#                 ON U.. CA.. ON D.. CA..
+#                 O. U.. CA.. O. D.. CA..
 #         )
 #         """,
 #         """
@@ -33,10 +33,10 @@
 #                 P.. K.. (vendor_id , part_id),
 #                 F.. K.. (vendor_id)
 #                     R.. vendors (vendor_id)
-#                     ON U.. CA.. ON D.. CA..,
+#                     O. U.. CA.. O. D.. CA..,
 #                 F.. K.. (part_id)
 #                     R.. parts (part_id)
-#                     ON U.. CA.. ON D.. CA..
+#                     O. U.. CA.. O. D.. CA..
 #         )
 #         """)
 #     conn _ w..

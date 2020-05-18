@@ -12,7 +12,7 @@ ___
     postgreSQL_select_Query _ "select * from mobile"
 
     cursor.e..(postgreSQL_select_Query)
-    mobile_records _ cursor.fetchmany(2)
+    mobile_records _ cursor.f_m..(2)
 
     print("Printing 2 rows")
     ___ row __ mobile_records:
@@ -20,7 +20,7 @@ ___
         print("Model = ", row[1])
         print("Price  = ", row[2], "\n")
 
-    mobile_records _ cursor.fetchmany(2)
+    mobile_records _ cursor.f_m..(2)
 
     print("Printing next 2 rows")
     ___ row __ mobile_records:
