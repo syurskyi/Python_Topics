@@ -13,12 +13,12 @@
 # c _ ?.cu..
 #
 # # A) Adding a new column without a row value
-# ?.ex..("ALTER T.. @ ADD COLUMN '@' @"\
-#         .f..(tn_? cn_? ct_?
+# ?.ex..("A.. T.. @ A.. C.. '@' @"\
+#         .f..(tn_? cn_nc.. ct_?
 #
 # # B) Adding a new column with a default row value
 # ?.ex..("ALTER T.. @ ADD COLUMN '@' @ DEFAULT '@'"\
-#         .f..(tn_? cn_? ct_? df_?
+#         .f..(tn_? cn_nc.. ct_? df_?
 #
 # # Committing changes and closing the connection to the database file
 # ?.co..
