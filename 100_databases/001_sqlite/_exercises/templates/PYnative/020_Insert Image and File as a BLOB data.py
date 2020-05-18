@@ -4,7 +4,7 @@ ___ convertToBinaryData(filename
     #Convert digital data to binary format
     with open(filename, 'rb') __ file:
         blobData _ file.read()
-    return blobData
+    r_ blobData
 
 ___ insertBLOB(empId, name, photo, resumeFile
     ___

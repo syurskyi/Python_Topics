@@ -1,7 +1,7 @@
 _____ ?
 
 ___ lower(string
-    return str(string).upper()
+    r_ st.(string).upper()
 
 ___ getDeveloperName(id
     ___
