@@ -1,40 +1,40 @@
-____ ? _____ pool
-
-
-class Database:
-
-    __connection_pool _ w..
-
-    @staticmethod
-    ___ initialise(**kwargs):
-        Database.__connection_pool _ pool.SimpleConnectionPool(1 10 **kwargs)
-
-    @staticmethod
-    ___ get_connection():
-        r_ Database.__connection_pool.getconn()
-
-    @staticmethod
-    ___ return_connection(connection):
-        Database.__connection_pool.putconn(connection)
-
-    @staticmethod
-    ___ close_all_connections():
-        Database.__connection_pool.closeall()
-
-class CursorFromConnectionPool:
-    ___ __init__(self):
-        self.conn _ w..
-        self.cursor _ w..
-
-    ___ __enter__(self):
-        self.conn _ Database.get_connection()
-        self.cursor _ self.conn.c..
-        r_ self.cursor
-
-    ___ __exit__(self exception_type exception_value, exception_traceback):
-        __ exception_value:  # This is equivalent to `if exception_value is not None`
-            self.conn.r..
-        ____
-            self.cursor.c..
-            self.conn.c..
-        Database.return_connection(self.conn)
+# ____ ? _____ pool
+#
+#
+# c_ Database
+#
+#     __c.. _ w..
+#
+#     ??
+#     ___ initialise $$
+#         D__.__c.. _ p_.SCP.. 1 10 $$
+#
+#     ??
+#     ___ get_connection
+#         r_ ?.__c__.g..
+#
+#     ??
+#     ___ return_connection connection
+#         ?.__c__.p.. ?
+#
+#     ??
+#     ___ close_all_connections(
+#         ?.__c__.c..
+#
+# c_ CursorFromConnectionPool
+#     ___ -
+#         conn _ w..
+#         cursor _ w..
+#
+#     ___ -e
+#         co.. _ ?.g_c..
+#         cu.. _ co__.c..
+#         r_ cu..
+#
+#     ___ -e  exception_type exception_value, exception_traceback):
+#         __ e_v..  # This is equivalent to `if exception_value is not None`
+#             co__.r..
+#         ____
+#             cu__.c..
+#             co__.c..
+#         ?.r_c.. co..

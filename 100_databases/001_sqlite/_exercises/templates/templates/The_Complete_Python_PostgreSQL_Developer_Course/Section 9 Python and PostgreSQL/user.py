@@ -1,25 +1,25 @@
-____ database _____ CursorFromConnectionPool
-
-class User:
-    ___ __init__(self email first_name last_name id_None):
-        self.email _ email
-        self.first_name _ first_name
-        self.last_name _ last_name
-        self.id _ id
-
-    ___ __repr__(self):
-        r_ "<User {}>".f..(self.email)
-
-    ___ save_to_db(self):
-        # This is creating a new connection pool every time! Very expensive...
-        w__ CursorFromConnectionPool() __ cursor:
-            cursor.e..('I.. I.. users (email, first_name, last_name) V.. (%s, %s, %s)'
-                            (self.email self.first_name self.last_name))
-
-    @classmethod
-    ___ load______db_by_email(cls email):
-        w__ CursorFromConnectionPool() __ cursor:
-            # Note the (email,) to make it a tuple!
-            ?.e..('S.. * F.. users W.. email=%s' (email))
-            u.._data _ cursor.f_o..
-            r_ cls(email_user_data[1] first_name_user_data[2] last_name_user_data[3], id_user_data[0])
+# ____ d.. _____ C...
+#
+# c_ U..
+#     ___ __init__(self email first_name last_name id_None):
+#         ? ?
+#         ? ?
+#         ? ?
+#         ? ?
+#
+#     ___ -r
+#         r_ "<User @>".f.. e..
+#
+#     ___ save_to_db
+#         # This is creating a new connection pool every time! Very expensive...
+#         w__ CFCP.. __ cursor
+#             ?.e..('I.. I.. users (email, first_name, last_name) V.. ? ? ?'
+#                             ? ? ?
+#
+#     ??
+#     ___ load______db_by_email ___ email
+#         w__ CFCP.. __ cursor
+#             # Note the (email,) to make it a tuple!
+#             ?.e.. 'S.. _ F.. users W.. email=@' ?
+#             u.._data _ ?.f_o..
+#             r_ ___ e.._u_d.. 1 f.._u_d.. 2 l.._u_d.. 3 i._u_d.. 0
