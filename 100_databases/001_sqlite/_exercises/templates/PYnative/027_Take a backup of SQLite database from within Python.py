@@ -8,7 +8,7 @@ ___
     sqliteCon _ ?.c..('SQLite_Python.db')
     #copy into this DB
     backupCon _ ?.c..('Sqlite_backup.db')
-    with backupCon:
+    w__ backupCon:
         sqliteCon.backup(backupCon, pages_3, progress_progress)
     print("backup successful")
 _____ ?.E.. __ error:

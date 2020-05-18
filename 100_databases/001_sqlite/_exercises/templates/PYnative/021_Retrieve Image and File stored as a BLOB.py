@@ -2,7 +2,7 @@ _____ ?
 
 ___ writeTofile(data, filename
     # Convert binary data to proper format and write it on Hard Disk
-    with open(filename, 'wb') __ file:
+    w__ o..(filename, 'wb') __ file:
         file.write(data)
     print("Stored blob data into: ", filename, "\n")
 
