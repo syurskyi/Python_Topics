@@ -10,10 +10,10 @@ ___
                           V.. (4, 'Jos', 'jos@gmail.com', '2019-01-14', 9500);"""
     ?.e..(sqlite_insert_query)
 
-    sql_update_query _ """Update SqliteDb_developers set salary = 10000 where id = 4"""
+    sql_update_query _ """Update SqliteDb_developers set salary = 10000 w.. id = 4"""
     ?.e..(sql_update_query)
 
-    sql_delete_query _ """DELETE from SqliteDb_developers where id = 4"""
+    sql_delete_query _ """DELETE from SqliteDb_developers w.. id = 4"""
     ?.e..(sql_delete_query)
 
     ?.c..

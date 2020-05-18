@@ -6,7 +6,7 @@
 #         cursor _ ?.c..
 #         print("Connected to SQLite")
 #
-#         sqlite_select_query _ """S.. _ from SqliteDb_developers"""
+#         sqlite_select_query _ """S.. _ f.. SqliteDb_developers"""
 #         ?.e.. ?
 #         records _ ?.f_a..
 #         print("Total rows are:  ", le. ?

@@ -12,14 +12,14 @@ ___ readBlobData(empId):
         cursor _ ?.c..
         print("Connected to SQLite")
 
-        sql_fetch_blob_query _ """S.. _ from new_employee where id = ?"""
+        sql_fetch_blob_query _ """S.. _ f.. new_employee w.. id = ?"""
         ?.e..(sql_fetch_blob_query, (empId,))
         record _ ?.f_a..
         ___ row __ record:
-            print("Id = ", row[0], "Name = ", row[1])
-            name  _ row[1]
-            photo _ row[2]
-            resumeFile _ row[3]
+            print("Id = ", ? 0], "Name = ", ? 1])
+            name  _ ? 1]
+            photo _ ? 2]
+            resumeFile _ ? 3]
 
             print("Storing employee image and resume on disk \n")
             photoPath _ "E:\pynative\Python\photos\db_data\\" + name + ".jpg"
@@ -30,7 +30,7 @@ ___ readBlobData(empId):
         ?.c..
 
     _____ ?.E.. __ error:
-        print("Failed to read blob data from sqlite table", error)
+        print("Failed to read blob data f.. sqlite table", error)
     f..
         __ (?):
             ?.c..

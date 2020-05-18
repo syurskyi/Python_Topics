@@ -3,20 +3,20 @@ _____ ?
 ___ readLimitedRows(rowSize):
     ___
         sqliteConnection _ ?.c..('SQLite_Python.db')
-        cursor _ sqliteConnection.c..
+        cursor _ ?.c..
         print("Connected to SQLite")
 
-        sqlite_select_query _ """S.. _ from SqliteDb_developers"""
+        sqlite_select_query _ """S.. _ f.. SqliteDb_developers"""
         ?.e..(sqlite_select_query)
         print("Reading ", rowSize, " rows")
         records _ ?.fetchmany(rowSize)
         print("Printing each row \n")
         ___ row __ records:
-            print("Id: ", row[0])
-            print("Name: ", row[1])
-            print("Email: ", row[2])
-            print("JoiningDate: ", row[3])
-            print("Salary: ", row[4])
+            print("Id: ", ? 0])
+            print("Name: ", ? 1])
+            print("Email: ", ? 2])
+            print("JoiningDate: ", ? 3])
+            print("Salary: ", ? 4])
             print("\n")
 
         ?.c..
@@ -24,8 +24,8 @@ ___ readLimitedRows(rowSize):
     _____ ?.E.. __ error:
         print("Failed to read data from sqlite table", error)
     f..
-        __ (sqliteConnection):
-            sqliteConnection.c..
+        __ (?):
+            ?.c..
             print("The SQLite connection is closed")
 
 readLimitedRows(2)

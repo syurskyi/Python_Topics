@@ -5,7 +5,7 @@ ___ deleteMultipleRecords(idList):
         sqliteConnection _ ?.c..('SQLite_Python.db')
         cursor _ ?.c..
         print("Connected to SQLite")
-        sqlite_update_query _ """DELETE from SqliteDb_developers where id = ?"""
+        sqlite_update_query _ """DELETE f.. SqliteDb_developers w.. id = ?"""
 
         ?.e_m..(sqlite_update_query, idList)
         ?.c..

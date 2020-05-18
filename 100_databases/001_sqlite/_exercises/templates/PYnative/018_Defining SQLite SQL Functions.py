@@ -10,7 +10,7 @@ ___ getDeveloperName(id):
         print("Connected to SQLite")
 
         ?.create_function("TOTILECASE", 1, _toTileCase)
-        select_query _ "S.. TOTILECASE(name) FROM SqliteDb_developers where id = ?"
+        select_query _ "S.. TOTILECASE(name) FROM SqliteDb_developers w.. id = ?"
         ?.e..(select_query, (id,))
         name _ ?.fetchone()
         print("Developer Name is", name)

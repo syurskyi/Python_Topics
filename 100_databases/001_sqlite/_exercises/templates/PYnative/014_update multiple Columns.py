@@ -6,7 +6,7 @@ ___ updateMultipleColumns(id, salary, email):
         cursor _ ?.c..
         print("Connected to SQLite")
 
-        sqlite_update_query _ """Update new_developers set salary = ?, email = ? where id = ?"""
+        sqlite_update_query _ """Update new_developers set salary = ?, email = ? w.. id = ?"""
         columnValues _ (salary, email, id)
         ?.e..(sqlite_update_query, columnValues)
         ?.c..

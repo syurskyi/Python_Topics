@@ -13,4 +13,4 @@
 #     rows _ cur.f_a..
 #
 #     ___ row __ rows:
-#         print(row[0])
+#         print(? 0])

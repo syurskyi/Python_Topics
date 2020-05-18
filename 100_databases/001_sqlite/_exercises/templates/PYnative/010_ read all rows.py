@@ -6,17 +6,17 @@ ___ readSqliteTable
         cursor _ ?.c..
         print("Connected to SQLite")
 
-        sqlite_select_query _ """S.. _ from SqliteDb_developers"""
+        sqlite_select_query _ """S.. _ f.. SqliteDb_developers"""
         ?.e..(sqlite_select_query)
         records _ ?.f_a..
         print("Total rows are:  ", le.(records))
         print("Printing each row")
         ___ row __ records:
-            print("Id: ", row[0])
-            print("Name: ", row[1])
-            print("Email: ", row[2])
-            print("JoiningDate: ", row[3])
-            print("Salary: ", row[4])
+            print("Id: ", ? 0])
+            print("Name: ", ? 1])
+            print("Email: ", ? 2])
+            print("JoiningDate: ", ? 3])
+            print("Salary: ", ? 4])
             print("\n")
 
         ?.c..

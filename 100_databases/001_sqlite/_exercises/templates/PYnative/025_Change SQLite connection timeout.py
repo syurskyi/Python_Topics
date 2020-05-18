@@ -6,7 +6,7 @@ ___ readSqliteTable
         cursor _ ?.c..
         print("Connected to SQLite")
 
-        sqlite_select_query _ """S.. count(_) from SqliteDb_developers"""
+        sqlite_select_query _ """S.. count(_) f.. SqliteDb_developers"""
         ?.e..(sqlite_select_query)
         totalRows _ ?.fetchone()
         print("Total rows are:  ", totalRows)

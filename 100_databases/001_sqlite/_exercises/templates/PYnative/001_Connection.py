@@ -5,7 +5,7 @@
 #     cursor _ ?.c..
 #     print("Database created and Successfully Connected to SQLite")
 #
-#     sqlite_select_Query _ "select sqlite_version();"
+#     sqlite_select_Query _ "s.. sqlite_version();"
 #     ?.e.. ?
 #     record _ ?.f_a..
 #     print("SQLite Database Version is: " ?

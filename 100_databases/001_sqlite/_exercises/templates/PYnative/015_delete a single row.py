@@ -7,7 +7,7 @@ ___ deleteRecord
         print("Connected to SQLite")
 
         # Deleting single record now
-        sql_delete_query _ """DELETE from SqliteDb_developers where id = 6"""
+        sql_delete_query _ """DELETE f.. SqliteDb_developers w.. id = 6"""
         ?.e..(sql_delete_query)
         ?.c..
         print("Record deleted successfully ")

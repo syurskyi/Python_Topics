@@ -6,7 +6,7 @@ ___ updateSqliteTable
         cursor _ ?.c..
         print("Connected to SQLite")
 
-        sql_update_query _ """Update SqliteDb_developers set salary = 10000 where id = 4"""
+        sql_update_query _ """Update SqliteDb_developers set salary = 10000 w.. id = 4"""
         ?.e..(sql_update_query)
         ?.c..
         print("Record Updated successfully ")

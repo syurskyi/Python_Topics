@@ -3,21 +3,21 @@ _____ ?
 ___ updateSqliteTable(id, salary):
     ___
         ? _ ?.c..('SQLite_Python.db')
-        cursor _ sqliteConnection.c..
+        cursor _ ?.c..
         print("Connected to SQLite")
 
-        sql_update_query _ """Update SqliteDb_developers set salary = ? where id = ?"""
+        sql_update_query _ """Update SqliteDb_developers set salary = ? w.. id = ?"""
         data _ (salary, id)
         ?.e..(sql_update_query, data)
-        sqliteConnection.c..
+        ?.c..
         print("Record Updated successfully")
         ?.c..
 
     _____ ?.E.. __ error:
         print("Failed to update sqlite table", error)
     f..
-        __ (sqliteConnection):
-            sqliteConnection.c..
+        __ (?):
+            ?.c..
             print("The sqlite connection is closed")
 
 updateSqliteTable(3, 7500)
