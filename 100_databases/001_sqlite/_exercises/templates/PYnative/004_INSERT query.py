@@ -8,7 +8,7 @@
 #
 #         sqlite_insert_with_param _ """I.. I.. SqliteDb_developers
 #                           (id, name, email, joining_date, salary)
-#                           V.. (?, ?, ?, ?, ?);"""
+#                           V.. _ _ _ _ _;"""
 #
 #         data_tuple _  ? ? ? ? ?
 #         ?.e.. ? ?
