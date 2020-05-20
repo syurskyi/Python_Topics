@@ -1,33 +1,33 @@
-_____ ?
-
-
-class RowSet:
-
-    ___ __init__(self):
-        self.rows _ set()
-
-    ___ step(self, value):
-        self.rows.add(value)
-
-    ___ finalize(self):
-        r_ ';'.join(self.rows)
-
-
-conn _ ?.c..(':memory:')
-?.create_aggregate('row_set', 1, RowSet)
-
-cur _ ?.c..
-cur.e.. 'C.. T.. users(first_name)')
-cur.e..
-    """I.. I.. users(first_name)
-       V.. ("Dmitry"),
-              ("Eugene"),
-              ("Viktor"),
-              ("Nikita"),
-              ("Eugene")
-     """
-)
-
-cur.e.. 'S.. row_set(first_name) AS result F.. users')
-results _ cur.f_a..
-print(dict())
+# _____ ?
+#
+#
+# c_ RowSet
+#
+#     ___ -
+#         rows _ se.
+#
+#     ___ step value
+#         r__.a.. ?
+#
+#     ___ finalize
+#         r_ ';'.j.. r..
+#
+#
+# conn _ ?.c.. m..
+# ?.c_a.. 'row_set', 1, ?
+#
+# cur _ ?.c..
+# ?.e.. 'C.. T.. users(first_name)'
+# ?.e..
+#     """I.. I.. users(first_name)
+#        V.. ("Dmitry"),
+#               ("Eugene"),
+#               ("Viktor"),
+#               ("Nikita"),
+#               ("Eugene")
+#      """
+# )
+#
+# ?.e.. 'S.. row_set(first_name) AS result F.. users')
+# results _ ?.f_a..
+# print(di..
