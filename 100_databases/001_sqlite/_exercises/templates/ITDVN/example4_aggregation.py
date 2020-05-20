@@ -1,10 +1,10 @@
-import sqlite3
+_____ ?
 
 
 class RowSet:
 
     def __init__(self):
-        self.rows = set()
+        self.rows _ set()
 
     def step(self, value):
         self.rows.add(value)
@@ -13,14 +13,14 @@ class RowSet:
         return ';'.join(self.rows)
 
 
-conn = sqlite3.connect(':memory:')
-conn.create_aggregate('row_set', 1, RowSet)
+conn _ ?.c..(':memory:')
+?.create_aggregate('row_set', 1, RowSet)
 
-cur = conn.cursor()
-cur.execute('CREATE TABLE users(first_name)')
-cur.execute(
-    """INSERT INTO users(first_name)
-       VALUES ("Dmitry"),
+cur _ ?.cursor()
+cur.e.. 'C.. T.. users(first_name)')
+cur.e..
+    """I.. I.. users(first_name)
+       V.. ("Dmitry"),
               ("Eugene"),
               ("Viktor"),
               ("Nikita"),
@@ -28,6 +28,6 @@ cur.execute(
      """
 )
 
-cur.execute('SELECT row_set(first_name) AS result FROM users')
-results = cur.fetchall()
+cur.e.. 'S.. row_set(first_name) AS result F.. users')
+results _ cur.f_a..
 print(dict())

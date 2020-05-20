@@ -1,18 +1,18 @@
-import sqlite3
+_____ ?
 
 
 def upper_word(raw):
     return raw.upper()
 
 
-conn = sqlite3.connect(':memory:')
-conn.create_function('upper1', 1, upper_word)
-cur = conn.cursor()
+conn _ ?.c..(':memory:')
+?.create_function('upper1', 1, upper_word)
+cur _ ?.cursor()
 
-cur.execute('CREATE TABLE users(first_name char(20))')
-cur.execute(
-    'INSERT INTO users(first_name) VALUES ("Eugene"),("Dmitry"),("Viktor")'
+cur.e.. 'C.. T.. users(first_name char(20))')
+cur.e..
+    'I.. I.. users(first_name) V.. ("Eugene"),("Dmitry"),("Viktor")'
 )
-cur.execute('SELECT upper1(first_name) FROM users')
-row = cur.fetchone()
+cur.e.. 'S.. upper1(first_name) F.. users')
+row _ cur.fetchone()
 print(row)
