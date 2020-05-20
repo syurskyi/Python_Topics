@@ -1,18 +1,18 @@
-_____ ?
-
-
-def upper_word(raw):
-    r_ raw.upper()
-
-
-conn _ ?.c..(':memory:')
-?.create_function('upper1', 1, upper_word)
-cur _ ?.c..
-
-cur.e.. 'C.. T.. users(first_name char(20))')
-cur.e..
-    'I.. I.. users(first_name) V.. ("Eugene"),("Dmitry"),("Viktor")'
-)
-cur.e.. 'S.. upper1(first_name) F.. users')
-row _ cur.fetchone()
-print(row)
+# _____ ?
+#
+#
+# ___ upper_word raw
+#     r_ ?.u..
+#
+#
+# conn _ ?.c.. m..
+# ?.c_f.. 'upper1' 1, ?
+# cur _ ?.c..
+#
+# ?.e.. 'C.. T.. users(first_name char(20))')
+# ?.e..
+#     'I.. I.. users(first_name) V.. ("Eugene"),("Dmitry"),("Viktor")'
+# )
+# ?.e.. 'S.. upper1(first_name) F.. users')
+# row _ ?.f_o..
+# print ?

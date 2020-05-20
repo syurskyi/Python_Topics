@@ -3,13 +3,13 @@ _____ ?
 
 class RowSet:
 
-    def __init__(self):
+    ___ __init__(self):
         self.rows _ set()
 
-    def step(self, value):
+    ___ step(self, value):
         self.rows.add(value)
 
-    def finalize(self):
+    ___ finalize(self):
         r_ ';'.join(self.rows)
 
 
