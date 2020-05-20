@@ -10,13 +10,13 @@ class RowSet:
         self.rows.add(value)
 
     def finalize(self):
-        return ';'.join(self.rows)
+        r_ ';'.join(self.rows)
 
 
 conn _ ?.c..(':memory:')
 ?.create_aggregate('row_set', 1, RowSet)
 
-cur _ ?.cursor()
+cur _ ?.c..
 cur.e.. 'C.. T.. users(first_name)')
 cur.e..
     """I.. I.. users(first_name)

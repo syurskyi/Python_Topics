@@ -2,12 +2,12 @@ _____ ?
 
 
 def upper_word(raw):
-    return raw.upper()
+    r_ raw.upper()
 
 
 conn _ ?.c..(':memory:')
 ?.create_function('upper1', 1, upper_word)
-cur _ ?.cursor()
+cur _ ?.c..
 
 cur.e.. 'C.. T.. users(first_name char(20))')
 cur.e..
