@@ -1,39 +1,39 @@
-# #!/usr/bin/python
-# _____ ?
-# ____ c.. _____ c..
-#
-#
-# ___ connect
-#     """ Connect to the PostgreSQL database server """
-#     conn _ w..
-#     ___
-#         # read connection parameters
-#         params _ c..
-#
-#         # connect to the PostgreSQL server
-#         print('Connecting to the PostgreSQL database...')
-#         conn _ ?.c.. $$p..
-#
-#         # create a cursor
-#         cur _ ?.c..
-#
-#         # execute a statement
-#         print('PostgreSQL database version:')
-#         ?.e.. 'S.. version()'
-#
-#         # display the PostgreSQL database server version
-#         db_version _ ?.f_o..
-#         print ?
-#
-#         # close the communication with the PostgreSQL
-#         ?.c..
-#     ______ E.. ?.DE.. __ error
-#         print ?
-#     f__
-#         __ ? __ no. w..
-#             ?.c..
-#             print('Database connection closed.')
-#
-#
-# __ _____ __ ______
-#     c..
+#!/usr/bin/python
+import psycopg2
+from config import config
+
+
+def connect():
+    """ Connect to the PostgreSQL database server """
+    conn = None
+    try:
+        # read connection parameters
+        params = config()
+
+        # connect to the PostgreSQL server
+        print('Connecting to the PostgreSQL database...')
+        conn = psycopg2.connect(**params)
+
+        # create a cursor
+        cur = conn.cursor()
+
+        # execute a statement
+        print('PostgreSQL database version:')
+        cur.execute('SELECT  version()')
+
+        # display the PostgreSQL database server version
+        db_version = cur.fetchone()
+        print(db_version)
+
+        # close the communication with the PostgreSQL
+        cur.close()
+    except (Exception, psycopg2.DatabaseError) as error:
+        print(error)
+    finally:
+        if conn is not None:
+            conn.close()
+            print('Database connection closed.')
+
+
+if __name__ == '__main__':
+    connect()

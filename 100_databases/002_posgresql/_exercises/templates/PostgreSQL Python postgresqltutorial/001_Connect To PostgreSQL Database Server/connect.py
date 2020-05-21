@@ -5,7 +5,7 @@
 #
 # ___ connect
 #     """ Connect to the PostgreSQL database server """
-#     conn _ w..
+#     conn _ N..
 #     ___
 #         # read connection parameters
 #         params _ c..
