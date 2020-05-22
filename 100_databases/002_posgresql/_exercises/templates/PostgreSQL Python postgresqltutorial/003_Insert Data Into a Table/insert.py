@@ -4,7 +4,7 @@
 #
 # ___ insert_vendor vendor_name
 #     """ insert a new vendor into the vendors table """
-#     sql _ """I.. I.. vendors(vendor_name)
+#     sql _ """I.. I.. vendors(?)
 #              V..(%s) RETURNING vendor_id;"""
 #     conn _ N..
 #     vendor_id _ N..
@@ -28,12 +28,12 @@
 #         __ c_ no. w..
 #             ?.c..
 #
-#     r_ vendor_id
+#     r_ v..
 #
 #
-# ___ insert_vendor_list(vendor_list):
+# ___ insert_vendor_list vendor_list
 #     """ insert multiple vendors into the vendors table  """
-#     sql _ "I.. I.. vendors(vendor_name) V..(%s)"
+#     sql _ "I.. I.. vendors(vendor_name) V..(@)"
 #     conn _ N..
 #     ___
 #         # read database configuration

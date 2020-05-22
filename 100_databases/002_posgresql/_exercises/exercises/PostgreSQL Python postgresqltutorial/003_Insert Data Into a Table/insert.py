@@ -5,7 +5,7 @@ from config import config
 def insert_vendor(vendor_name):
     """ insert a new vendor into the vendors table """
     sql = """INSERT INTO vendors(vendor_name)
-             VALUE(%s) RETURNING vendor_id;"""
+             VALUES(%s) RETURNING vendor_id;"""
     conn = None
     vendor_id = None
     try:
@@ -25,36 +25,36 @@ def insert_vendor(vendor_name):
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
     finally:
-        if conn not None:
-            ?.c..
+        if conn is not None:
+            conn.close()
 
-    r_ vendor_id
+    return vendor_id
 
 
-___ insert_vendor_list(vendor_list):
+def insert_vendor_list(vendor_list):
     """ insert multiple vendors into the vendors table  """
-    sql _ "I.. I.. vendors(vendor_name) V..(%s)"
-    conn _ w..
-    ___
+    sql = "INSERT INTO vendors(vendor_name) VALUES(%s)"
+    conn = None
+    try:
         # read database configuration
-        params _ c..
+        params = config()
         # connect to the PostgreSQL database
-        conn _ ?.c.. $$p..
+        conn = psycopg2.connect(**params)
         # create a new cursor
-        cur _ ?.c..
+        cur = conn.cursor()
         # execute the I.. statement
-        ?.e_m_(s.. v_l..       # commit the changes to the database
-        ?.c..
+        cur.executemany(sql, (vendor_list,))       # commit the changes to the database
+        conn.commit()
         # close communication with the database
-        ?.c..
-    ______ E.. ?.DE.. __ error
-        print ?
-    f__
-        __ c.. __ no. w..
-            ?.c..
+        cur.close()
+    except (Exception, psycopg2.DatabaseError) as error:
+        print(error)
+    finally:
+        if conn is not None:
+            conn.close()
 
 
-__ _____ __ ______
+if __name__ == '__main__':
     # insert one vendor
     insert_vendor("3M Co.")
     # insert multiple vendors
