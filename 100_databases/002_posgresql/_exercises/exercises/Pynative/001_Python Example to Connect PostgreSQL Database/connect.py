@@ -1,27 +1,27 @@
-_____ ?
-___
-    connection _ ?.c.. u.. _ "syurskyi"
-                                  p.. _ "1234"
-                                  h.. _ "127.0.0.1"
-                                  p.. _ "5432"
-                                  d.. _ "postgres_db"
+import psycopg2
+try:
+    connection = psycopg2.connect(user = "syurskyi",
+                                  password = "1234",
+                                  host = "127.0.0.1",
+                                  port = "5432",
+                                  database = "postgres_db")
 
-    cursor _ ?.c..
+    cursor = connection.cursor()
     # Print PostgreSQL Connection properties
-    print ( ?.get_dsn_parameters(),"\n")
+    print(cursor.get_dsn_parameters(),"\n")
 
     # Print PostgreSQL version
-    ?.e..("S.. version();")
-    record _ ?.f_o..
-    print("You are connected to - " ? "\n")
+    cursor.execute("SELECT version();")
+    record = cursor.fetchone()
+    print("You are connected to - ", record, "\n")
 
-______  E.., ?.Er.. __ error
-    print ("Error while connecting to PostgreSQL" ?
-f__
+except (Exception, psycopg2.Error) as error:
+    print ("Error while connecting to PostgreSQL", error)
+finally:
     #closing database connection.
-        __(co..
-            cu__.c..
-            co__.c..
+        if(connection):
+            cursor.close()
+            connection.close()
             print("PostgreSQL connection is closed")
 
 
