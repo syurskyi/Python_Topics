@@ -7,7 +7,7 @@
 #     sql _ """ U.. vendors
 #                 SET vendor_name = %s
 #                 W.. vendor_id = %s"""
-#     conn _ w..
+#     conn _ N..
 #     updated_rows _ 0
 #     ___
 #         # read database configuration
@@ -27,7 +27,7 @@
 #     ______ E.. ?.DE.. __ error
 #         print ?
 #     f__
-#         __ c.. __ no. w..
+#         __ c.. __ no. N..
 #             ?.c..
 #
 #     r_ ?

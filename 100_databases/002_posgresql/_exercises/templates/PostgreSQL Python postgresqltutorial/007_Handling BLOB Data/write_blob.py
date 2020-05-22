@@ -5,7 +5,7 @@
 #
 # ___ write_blob part_id path_to_file file_extension
 #     """ insert a BLOB into a table """
-#     conn _ w..
+#     conn _ N..
 #     ___
 #         # read data from a picture
 #         drawing _ o.. p_t_f.. __ .r..
@@ -14,9 +14,9 @@
 #         # connect to the PostgresQL database
 #         conn _ ?.c.. $$p..
 #         # create a new cursor object
-#         cur _ conn.c..
+#         cur _ ?.c..
 #         # execute the I.. statement
-#         ?.e..("I.. I.. part_drawings(part_idfile_extension,drawing_data) " +
+#         ?.e.. "I.. I.. part_drawings(part_idfile_extension,drawing_data) " +
 #                     "V.. @ @ @"
 #                     p_i. f_e.. ?.B.. d..
 #         # commit the changes to the database
@@ -26,7 +26,7 @@
 #     ______ E.. ?.DE.. __ error
 #         print ?
 #     f_
-#         __ c.. __ no. w..:
+#         __ c.. __ no. N..
 #             ?.c..
 #
 #

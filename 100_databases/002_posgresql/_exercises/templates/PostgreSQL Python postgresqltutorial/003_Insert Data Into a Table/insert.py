@@ -6,8 +6,8 @@
 #     """ insert a new vendor into the vendors table """
 #     sql _ """I.. I.. vendors(vendor_name)
 #              V..(%s) RETURNING vendor_id;"""
-#     conn _ w..
-#     vendor_id _ w..
+#     conn _ N..
+#     vendor_id _ N..
 #     ___
 #         # read database configuration
 #         params _ c..
@@ -16,10 +16,10 @@
 #         # create a new cursor
 #         cur _ ?.c..
 #         # execute the I.. statement
-#         ?.e.. s_n       # get the generated id back
+#         ?.e.. ? ?      # get the generated id back
 #         vendor_id _ ?.f_o.. 0
 #         # commit the changes to the database
-#         conn.c..
+#         ?.c..
 #         # close communication with the database
 #         ?.c..
 #     ______ E.. ?.DE.. __ error
@@ -34,7 +34,7 @@
 # ___ insert_vendor_list(vendor_list):
 #     """ insert multiple vendors into the vendors table  """
 #     sql _ "I.. I.. vendors(vendor_name) V..(%s)"
-#     conn _ w..
+#     conn _ N..
 #     ___
 #         # read database configuration
 #         params _ c..
@@ -43,14 +43,14 @@
 #         # create a new cursor
 #         cur _ ?.c..
 #         # execute the I.. statement
-#         ?.e_m_(s.. v_l..       # commit the changes to the database
+#         ?.e_m_ s.. v___      # commit the changes to the database
 #         ?.c..
 #         # close communication with the database
 #         ?.c..
 #     ______ E.. ?.DE.. __ error
 #         print ?
 #     f__
-#         __ c.. __ no. w..
+#         __ c.. __ no. N..
 #             ?.c..
 #
 #

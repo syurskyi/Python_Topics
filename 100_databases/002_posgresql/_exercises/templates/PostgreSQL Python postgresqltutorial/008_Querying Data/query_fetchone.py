@@ -5,7 +5,7 @@
 #
 # ___ get_vendors
 #     """ query data from the vendors table """
-#     conn _ w..
+#     conn _ N..
 #     ___
 #         params _ c..
 #         conn _ ?.c.. $$p..
@@ -22,7 +22,7 @@
 #     ______ E.. ?.DE.. __ error
 #         print ?
 #     f__
-#         __ c.. __ no. w..
+#         __ c.. __ no. N..
 #             ?.c..
 #
 #

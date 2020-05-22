@@ -4,7 +4,7 @@
 #
 # ___ read_blob part_id path_to_dir
 #     """ read BLOB data from a table """
-#     conn _ w..
+#     conn _ N..
 #     ___
 #         # read database configuration
 #         params _ c..
@@ -26,7 +26,7 @@
 #     ______ E.. ?.DE.. __ error
 #         print ?
 #     f__
-#         __ c.. __ no. w..
+#         __ c.. __ no. N..
 #             ?.c..
 #
 #

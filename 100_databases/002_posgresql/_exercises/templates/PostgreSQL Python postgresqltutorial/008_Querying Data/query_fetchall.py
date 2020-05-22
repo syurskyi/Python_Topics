@@ -4,7 +4,7 @@
 #
 # ___ get_parts
 #     """ query parts from the parts table """
-#     conn _ w..
+#     conn _ N..
 #     ___
 #         params _ c..
 #         conn _ ?.c.. $$p..
@@ -18,7 +18,7 @@
 #     ______ E.. ?.DE.. __ error
 #         print ?
 #     f__
-#         __ c.. __ no. w..
+#         __ c.. __ no. N..
 #             ?.c..
 #
 # __ _____ __ ______

@@ -5,7 +5,7 @@
 #
 # ___ delete_part part_id
 #     """ delete part by part id """
-#     conn _ w..
+#     conn _ N..
 #     rows_deleted _ 0
 #     ___
 #         # read database configuration
@@ -25,7 +25,7 @@
 #     ______ E.. ?.DE.. __ error
 #         print ?
 #     f__
-#         __ c.. __ no. w..
+#         __ c.. __ no. N..
 #             ?.c..
 #
 #     r_ ?

@@ -39,7 +39,7 @@
 #                     O. U.. CA.. O. D.. CA..
 #         )
 #         """)
-#     conn _ w..
+#     conn _ N..
 #     ___
 #         # read the connection parameters
 #         params _ c..
@@ -56,7 +56,7 @@
 #     ______ E.. ?.DE.. __ error
 #         print ?
 #     f__
-#         __ ? __ no. w..
+#         __ ? __ no. N..
 #             ?.c..
 #
 #
