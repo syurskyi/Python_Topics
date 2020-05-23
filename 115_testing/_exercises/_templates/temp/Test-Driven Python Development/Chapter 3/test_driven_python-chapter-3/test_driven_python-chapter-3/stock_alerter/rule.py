@@ -1,31 +1,31 @@
-c_ PriceRule:
-    """PriceRule is a rule that triggers when a stock price satisfies a
-    condition (usually greater, equal or lesser than a given value)"""
-
-    ___  -  symbol, condition):
-        symbol = symbol
-        condition = condition
-
-    ___ matches ex__):
-        ___
-            stock = ex__[symbol]
-        _____ K..
-            r_ F..
-        r_ condition(stock) __ stock.price ____ F..
-
-    ___ depends_on
-        r_ {symbol}
-
-
-c_ AndRule:
-    ___  -  *args):
-        rules = args
-
-    ___ matches ex__):
-        r_ all([rule.m..(ex__) ___ rule __ rules])
-
-    ___ depends_on
-        depends = se.()
-        ___ rule __ rules:
-            depends = depends.union(rule.depends_on())
-        r_ depends
+# c_ PriceRule
+#     """PriceRule is a rule that triggers when a stock price satisfies a
+#     condition (usually greater, equal or lesser than a given value)"""
+#
+#     ___  -  symbol condition
+#         ? ?
+#         ? ?
+#
+#     ___ matches ex__
+#         ___
+#             stock _ ex__|s..
+#         _____ K..
+#             r_ F..
+#         r_ c.. s.. __ s__.p.. ____ F..
+#
+#     ___ depends_on
+#         r_ |s..
+#
+#
+# c_ AndRule
+#     ___  -  $
+#         rules _ a..
+#
+#     ___ matches ex__
+#         r_ al.||rule.m.. ex__ ___ r.. __ r..
+#
+#     ___ depends_on
+#         depends _ se.
+#         ___ rule __ r..
+#             depends _ d__.un.. ?.d_o.
+#         r_ ?
