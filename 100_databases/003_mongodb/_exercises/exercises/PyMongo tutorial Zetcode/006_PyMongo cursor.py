@@ -1,20 +1,20 @@
-# ____ ? _____ M..
-#
-# client _ M.. 'mongodb://localhost:27017/'
-#
-# w__ ?
-#     db _ ?.testdb
-#
-#     cars _ ?.c__.f..
-#
-#     print ?.n..
-#     print ?.n..
-#     print ?.n..
-#
-#     ?.r..
-#
-#     print ?.n..
-#     print ?.n..
-#     print ?.n..
-#
-#     print li.. ?
+from pymongo import MongoClient
+
+client = MongoClient('mongodb://localhost:27017/')
+
+with client:
+    db = client.testdb
+
+    cars = db.cars.find()
+
+    print(cars.next())
+    print(cars.next())
+    print(cars.next())
+
+    cars.rewind()
+
+    print(cars.next())
+    print(cars.next())
+    print(cars.next())
+
+    print(list(cars))
