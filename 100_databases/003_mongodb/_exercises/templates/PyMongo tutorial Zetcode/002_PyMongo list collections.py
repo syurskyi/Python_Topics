@@ -4,4 +4,4 @@
 #
 # w__ ?
 #     db _ ?.testdb
-#     print ?.collection_names
+#     print ?.c_n
