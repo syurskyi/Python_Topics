@@ -1,11 +1,11 @@
-# ____ ? _____ M..
-# ____ pp__ _____ pp__
-#
-# client _ M..('mongodb://localhost:27017/')
-#
-# w__ ?
-#     db _ ?.testdb
-#     print ?.c_n..
-#
-#     status _ ?.c.. "dbstats"
-#     pp__ ?
+from pymongo import MongoClient
+from pprint import pprint
+
+client = MongoClient('mongodb://localhost:27017/')
+
+with client:
+    db = client.testdb
+    print(db.collection_names())
+
+    status = db.command("dbstats")
+    pprint(status)
