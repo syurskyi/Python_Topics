@@ -1,11 +1,11 @@
-____ ?.?W.. ______ *
-____ ?.?C.. ______ QStringListModel
+____ ?.?W.. ______ _
+____ ?.?C.. ______ ?StLM..
 
 app _ ?
-model _ QStringListModel([
+model _ ?StLM..
     "An element", "Another element", "Yay! Another one."
-])
-view _ QListView()
-view.sM..(model)
-view.s..
-app.e..
+
+view _ ?LV..
+?.sM.. ?
+?.s..
+?.e..
