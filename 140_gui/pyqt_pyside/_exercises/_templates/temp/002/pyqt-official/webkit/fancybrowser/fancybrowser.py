@@ -42,7 +42,7 @@
 ###########################################################################
 
 
-____ ?.QtCore ______ QFile, QIODevice, Qt, QTextStream, QUrl
+____ ?.?C.. ______ QFile, QIODevice, __, QTextStream, QUrl
 ____ ?.?W.. ______ (?A.., ?A.., QLineEdit, QMainWindow,
         QSizePolicy, QStyle, QTextEdit)
 ____ ?.QtNetwork ______ QNetworkProxyFactory, QNetworkRequest
@@ -119,7 +119,7 @@ c_ MainWindow ?MW..
     ___ slotSourceDownloaded(self):
         reply _ self.sender()
         self.textEdit _ QTextEdit()
-        self.textEdit.setAttribute(Qt.WA_DeleteOnClose)
+        self.textEdit.setAttribute(__.WA_DeleteOnClose)
         self.textEdit.s..
         self.textEdit.sPT..(QTextStream(reply).readAll())
         self.textEdit.resize(600, 400)

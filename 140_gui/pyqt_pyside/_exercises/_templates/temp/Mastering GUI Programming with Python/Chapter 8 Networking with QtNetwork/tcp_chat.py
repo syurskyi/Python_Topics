@@ -1,7 +1,7 @@
 ______ sys
 ____ ? ______ ?W.. __ qtw
 ____ ? ______ QtNetwork __ qtn
-____ ? ______ QtCore __ qtc
+____ ? ______ ?C.. __ qtc
 
 
 c_ TcpChatInterface(qtc.QObject):

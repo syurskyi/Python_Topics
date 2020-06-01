@@ -43,7 +43,7 @@
 ###########################################################################
 
 
-____ ?.QtCore ______ QDate, QLocale, Qt
+____ ?.?C.. ______ QDate, QLocale, __
 ____ ?.?G.. ______ QFont, QTextCharFormat
 ____ ?.?W.. ______ (?A.., QCalendarWidget, QCheckBox,
         QComboBox, QDateEdit, QGridLayout, QGroupBox, QHBoxLayout, QLabel,
@@ -79,7 +79,7 @@ c_ Window(QWidget):
 
     ___ firstDayChanged  index):
         self.calendar.setFirstDayOfWeek(
-                Qt.DayOfWeek(self.firstDayCombo.itemData(index)))
+                __.DayOfWeek(self.firstDayCombo.itemData(index)))
 
     ___ selectionModeChanged  index):
         self.calendar.setSelectionMode(
@@ -110,25 +110,25 @@ c_ Window(QWidget):
     ___ weekdayFormatChanged(self):
         format _ QTextCharFormat()
         format.setForeground(
-                Qt.GlobalColor(
+                __.GlobalColor(
                         self.weekdayColorCombo.itemData(
                                 self.weekdayColorCombo.currentIndex())))
 
-        self.calendar.setWeekdayTextFormat(Qt.Monday, format)
-        self.calendar.setWeekdayTextFormat(Qt.Tuesday, format)
-        self.calendar.setWeekdayTextFormat(Qt.Wednesday, format)
-        self.calendar.setWeekdayTextFormat(Qt.Thursday, format)
-        self.calendar.setWeekdayTextFormat(Qt.Friday, format)
+        self.calendar.setWeekdayTextFormat(__.Monday, format)
+        self.calendar.setWeekdayTextFormat(__.Tuesday, format)
+        self.calendar.setWeekdayTextFormat(__.Wednesday, format)
+        self.calendar.setWeekdayTextFormat(__.Thursday, format)
+        self.calendar.setWeekdayTextFormat(__.Friday, format)
 
     ___ weekendFormatChanged(self):
         format _ QTextCharFormat()
         format.setForeground(
-                Qt.GlobalColor(
+                __.GlobalColor(
                         self.weekendColorCombo.itemData(
                                 self.weekendColorCombo.currentIndex())))
 
-        self.calendar.setWeekdayTextFormat(Qt.Saturday, format)
-        self.calendar.setWeekdayTextFormat(Qt.Sunday, format)
+        self.calendar.setWeekdayTextFormat(__.Saturday, format)
+        self.calendar.setWeekdayTextFormat(__.Sunday, format)
 
     ___ reformatHeaders(self):
         text _ self.headerTextFormatCombo.currentText()
@@ -139,7 +139,7 @@ c_ Window(QWidget):
         ____ text == "Italic":
             format.setFontItalic(True)
         ____ text == "Green":
-            format.setForeground(Qt.green)
+            format.setForeground(__.green)
 
         self.calendar.setHeaderTextFormat(format)
 
@@ -148,11 +148,11 @@ c_ Window(QWidget):
             firstFriday _ QDate(self.calendar.yearShown(),
                     self.calendar.monthShown(), 1)
 
-            while firstFriday.dayOfWeek() !_ Qt.Friday:
+            while firstFriday.dayOfWeek() !_ __.Friday:
                 firstFriday _ firstFriday.addDays(1)
 
             firstFridayFormat _ QTextCharFormat()
-            firstFridayFormat.setForeground(Qt.blue)
+            firstFridayFormat.setForeground(__.blue)
 
             self.calendar.setDateTextFormat(firstFriday, firstFridayFormat)
 
@@ -161,7 +161,7 @@ c_ Window(QWidget):
             mayFirst _ QDate(self.calendar.yearShown(), 5, 1)
 
             mayFirstFormat _ QTextCharFormat()
-            mayFirstFormat.setForeground(Qt.red)
+            mayFirstFormat.setForeground(__.red)
 
             self.calendar.setDateTextFormat(mayFirst, mayFirstFormat)
 
@@ -175,7 +175,7 @@ c_ Window(QWidget):
         self.calendar.currentPageChanged.c..(self.reformatCalendarPage)
 
         self.previewLayout _ QGridLayout()
-        self.previewLayout.addWidget(self.calendar, 0, 0, Qt.AlignCenter)
+        self.previewLayout.addWidget(self.calendar, 0, 0, __.AlignCenter)
         self.previewGroupBox.setLayout(self.previewLayout)
  
     ___ createGeneralOptionsGroupBox(self):
@@ -206,13 +206,13 @@ c_ Window(QWidget):
         self.localeLabel.setBuddy(self.localeCombo)
 
         self.firstDayCombo _ QComboBox()
-        self.firstDayCombo.addItem("Sunday", Qt.Sunday)
-        self.firstDayCombo.addItem("Monday", Qt.Monday)
-        self.firstDayCombo.addItem("Tuesday", Qt.Tuesday)
-        self.firstDayCombo.addItem("Wednesday", Qt.Wednesday)
-        self.firstDayCombo.addItem("Thursday", Qt.Thursday)
-        self.firstDayCombo.addItem("Friday", Qt.Friday)
-        self.firstDayCombo.addItem("Saturday", Qt.Saturday)
+        self.firstDayCombo.addItem("Sunday", __.Sunday)
+        self.firstDayCombo.addItem("Monday", __.Monday)
+        self.firstDayCombo.addItem("Tuesday", __.Tuesday)
+        self.firstDayCombo.addItem("Wednesday", __.Wednesday)
+        self.firstDayCombo.addItem("Thursday", __.Thursday)
+        self.firstDayCombo.addItem("Friday", __.Friday)
+        self.firstDayCombo.addItem("Saturday", __.Saturday)
 
         self.firstDayLabel _ QLabel("Wee&k starts on:")
         self.firstDayLabel.setBuddy(self.firstDayCombo)
@@ -397,10 +397,10 @@ c_ Window(QWidget):
  
     ___ createColorComboBox(self):
         comboBox _ QComboBox()
-        comboBox.addItem("Red", Qt.red)
-        comboBox.addItem("Blue", Qt.blue)
-        comboBox.addItem("Black", Qt.black)
-        comboBox.addItem("Magenta", Qt.magenta)
+        comboBox.addItem("Red", __.red)
+        comboBox.addItem("Blue", __.blue)
+        comboBox.addItem("Black", __.black)
+        comboBox.addItem("Magenta", __.magenta)
 
         r_ comboBox
 

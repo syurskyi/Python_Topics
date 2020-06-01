@@ -46,9 +46,9 @@
 
 ______ math
 
-____ ?.QtCore ______ (pyqtSignal, QBasicTimer, QObject, QPoint, QPointF,
-        QRect, QSize, QStandardPaths, Qt, QUrl)
-____ ?.?G.. ______ (QColor, QDesktopServices, QImage, QPainter,
+____ ?.?C.. ______ (pyqtSignal, QBasicTimer, QObject, QPoint, QPointF,
+        QRect, QSize, QStandardPaths, __, QUrl)
+____ ?.?G.. ______ (?C.., QDesktopServices, QImage, QPainter,
         QPainterPath, QPixmap, QRadialGradient)
 ____ ?.?W.. ______ ?A.., ?A.., QMainWindow, QWidget
 ____ ?.QtNetwork ______ (QNetworkAccessManager, QNetworkDiskCache,
@@ -128,7 +128,7 @@ c_ SlippyMap(QObject):
         self.longitude _ 10.7387413
 
         self._emptyTile _ QPixmap(TDIM, TDIM)
-        self._emptyTile.fill(Qt.lightGray)
+        self._emptyTile.fill(__.lightGray)
 
         cache _ QNetworkDiskCache()
         cache.setCacheDirectory(
@@ -286,8 +286,8 @@ c_ LightMaps(QWidget):
         p _ QPainter()
         p.begin(self)
         self._normalMap.render(p, event.rect())
-        p.setPen(Qt.black)
-        p.drawText(self.rect(), Qt.AlignBottom | Qt.TextWordWrap,
+        p.setPen(__.black)
+        p.drawText(self.rect(), __.AlignBottom | __.TextWordWrap,
                    "Map data CCBYSA 2009 OpenStreetMap.org contributors")
         p.end()
 
@@ -301,20 +301,20 @@ c_ LightMaps(QWidget):
             # reupdate our mask
             __ self.maskPixmap.size() !_ box:
                 self.maskPixmap _ QPixmap(box)
-                self.maskPixmap.fill(Qt.transparent)
+                self.maskPixmap.fill(__.transparent)
                 g _ QRadialGradient()
                 g.setCenter(radius, radius)
                 g.setFocalPoint(radius, radius)
                 g.setRadius(radius)
-                g.setColorAt(1.0, QColor(255, 255, 255, 0))
-                g.setColorAt(0.5, QColor(128, 128, 128, 255))
+                g.setColorAt(1.0, ?C..(255, 255, 255, 0))
+                g.setColorAt(0.5, ?C..(128, 128, 128, 255))
                 mask _ QPainter(self.maskPixmap)
                 mask.setRenderHint(QPainter.Antialiasing)
                 mask.setCompositionMode(QPainter.CompositionMode_Source)
                 mask.setBrush(g)
-                mask.setPen(Qt.NoPen)
+                mask.setPen(__.NoPen)
                 mask.drawRect(self.maskPixmap.rect())
-                mask.setBrush(QColor(Qt.transparent))
+                mask.setBrush(?C..(__.transparent))
                 mask.drawEllipse(g.center(), ring, ring)
                 mask.end()
 
@@ -325,7 +325,7 @@ c_ LightMaps(QWidget):
             # only set the dimension to the magnified portion
             __ self.zoomPixmap.size() !_ box:
                 self.zoomPixmap _ QPixmap(box)
-                self.zoomPixmap.fill(Qt.lightGray)
+                self.zoomPixmap.fill(__.lightGray)
     
             __ True:
                 p _ QPainter(self.zoomPixmap)
@@ -341,13 +341,13 @@ c_ LightMaps(QWidget):
             p.drawPixmap(corner, self.zoomPixmap)
             p.setClipping F..
             p.drawPixmap(corner, self.maskPixmap)
-            p.setPen(Qt.gray)
+            p.setPen(__.gray)
             p.drawPath(clipPath)
 
         __ self.invert:
             p _ QPainter(self)
             p.setCompositionMode(QPainter.CompositionMode_Difference)
-            p.fillRect(event.rect(), Qt.white)
+            p.fillRect(event.rect(), __.white)
             p.end()
 
     ___ timerEvent  event):
@@ -357,7 +357,7 @@ c_ LightMaps(QWidget):
         self.update()
  
     ___ mousePressEvent  event):
-        __ event.buttons() !_ Qt.LeftButton:
+        __ event.buttons() !_ __.LeftButton:
             r_
 
         self.pressed _ self.snapped _ True
@@ -397,30 +397,30 @@ c_ LightMaps(QWidget):
  
     ___ keyPressEvent  event):
         __ no. self.zoomed:
-            __ event.key() == Qt.Key_Left:
+            __ event.key() == __.Key_Left:
                 self._normalMap.pan(QPoint(20, 0))
-            __ event.key() == Qt.Key_Right:
+            __ event.key() == __.Key_Right:
                 self._normalMap.pan(QPoint(-20, 0))
-            __ event.key() == Qt.Key_Up:
+            __ event.key() == __.Key_Up:
                 self._normalMap.pan(QPoint(0, 20))
-            __ event.key() == Qt.Key_Down:
+            __ event.key() == __.Key_Down:
                 self._normalMap.pan(QPoint(0, -20))
-            __ event.key() == Qt.Key_Z or event.key() == Qt.Key_Select:
+            __ event.key() == __.Key_Z or event.key() == __.Key_Select:
                 self.dragPos _ QPoint(self.width() / 2, self.height() / 2)
                 self.activateZoom()
         ____
-            __ event.key() == Qt.Key_Z or event.key() == Qt.Key_Select:
+            __ event.key() == __.Key_Z or event.key() == __.Key_Select:
                 self.zoomed _ False
                 self.update()
 
             delta _ QPoint(0, 0)
-            __ event.key() == Qt.Key_Left:
+            __ event.key() == __.Key_Left:
                 delta _ QPoint(-15, 0)
-            __ event.key() == Qt.Key_Right:
+            __ event.key() == __.Key_Right:
                 delta _ QPoint(15, 0)
-            __ event.key() == Qt.Key_Up:
+            __ event.key() == __.Key_Up:
                 delta _ QPoint(0, -15)
-            __ event.key() == Qt.Key_Down:
+            __ event.key() == __.Key_Down:
                 delta _ QPoint(0, 15)
             __ delta !_ QPoint(0, 0):
                 self.dragPos +_ delta

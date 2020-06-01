@@ -40,8 +40,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QRect
-____ ?.?G.. ______ QColor, QImage, QPainter, QPen
+____ ?.?C.. ______ QRect
+____ ?.?G.. ______ ?C.., QImage, QPainter, QPen
 
 ____ colors ______ Colors
 ____ demoitem ______ DemoItem
@@ -60,18 +60,18 @@ c_ ScanItem(DemoItem):
         scaledRect _ transform.mapRect(QRect(0, 0, ScanItem.ITEM_WIDTH, ScanItem.ITEM_HEIGHT))
         image _ QImage(scaledRect.width(), scaledRect.height(),
                 QImage.Format_ARGB32_Premultiplied)
-        image.fill(QColor(0, 0, 0, 0).rgba())
+        image.fill(?C..(0, 0, 0, 0).rgba())
         painter _ QPainter(image)
         painter.setRenderHint(QPainter.Antialiasing)
 
         __ Colors.useEightBitPalette:
-            painter.setPen(QPen(QColor(100, 100, 100), 2))
-            painter.setBrush(QColor(206, 246, 117))
+            painter.setPen(QPen(?C..(100, 100, 100), 2))
+            painter.setBrush(?C..(206, 246, 117))
             painter.drawEllipse(1, 1, scaledRect.width() - 2,
                     scaledRect.height() - 2)
         ____
-            painter.setPen(QPen(QColor(0, 0, 0, 15), 1))
-            painter.setBrush(QColor(0, 0, 0, 15))
+            painter.setPen(QPen(?C..(0, 0, 0, 15), 1))
+            painter.setBrush(?C..(0, 0, 0, 15))
             painter.drawEllipse(1, 1, scaledRect.width() - 2,
                     scaledRect.height() - 2)
 

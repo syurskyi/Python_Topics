@@ -42,8 +42,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QFileInfo, QRegExp, QSize, Qt
-____ ?.?G.. ______ QIcon, QImage, QPalette, QPixmap
+____ ?.?C.. ______ QFileInfo, QRegExp, QSize, __
+____ ?.?G.. ______ QIcon, QImage, ?P.., QPixmap
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., QActionGroup,
         ?A.., QComboBox, ?FD.., QFrame, QGridLayout, QGroupBox,
         QHBoxLayout, QHeaderView, QItemDelegate, QLabel, QMainWindow,
@@ -87,7 +87,7 @@ c_ ImageDelegate(QItemDelegate):
         __ no. comboBox:
             r_
 
-        pos _ comboBox.findText(index.model().data(index), Qt.MatchExactly)
+        pos _ comboBox.findText(index.model().data(index), __.MatchExactly)
         comboBox.setCurrentIndex(pos)
 
     ___ setModelData  editor, model, index):
@@ -144,16 +144,16 @@ c_ IconPreviewArea(QWidget):
 
     ___ createHeaderLabel  text):
         label _ QLabel("<b>%s</b>" % text)
-        label.setAlignment(Qt.AlignCenter)
+        label.setAlignment(__.AlignCenter)
         r_ label
 
     ___ createPixmapLabel(self):
         label _ QLabel()
         label.setEnabled F..
-        label.setAlignment(Qt.AlignCenter)
+        label.setAlignment(__.AlignCenter)
         label.setFrameShape(QFrame.Box)
         label.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
-        label.setBackgroundRole(QPalette.Base)
+        label.setBackgroundRole(?P...Base)
         label.setAutoFillBackground(True)
         label.setMinimumSize(132, 132)
         r_ label
@@ -273,7 +273,7 @@ c_ MainWindow ?MW..
             item1 _ self.imagesTable.item(row, 1)
             item2 _ self.imagesTable.item(row, 2)
 
-            __ item0.checkState() == Qt.Checked:
+            __ item0.checkState() == __.Checked:
                 __ item1.text() == "Normal":
                     mode _ QIcon.Normal
                 ____ item1.text() == "Active":
@@ -288,7 +288,7 @@ c_ MainWindow ?MW..
                 ____
                     state _ QIcon.Off
 
-                fileName _ item0.data(Qt.UserRole)
+                fileName _ item0.data(__.UserRole)
                 image _ QImage(fileName)
                 __ no. image.isNull
                     icon.addPixmap(QPixmap.fromImage(image), mode, state)
@@ -305,8 +305,8 @@ c_ MainWindow ?MW..
 
             imageName _ QFileInfo(fileName).baseName()
             item0 _ QTableWidgetItem(imageName)
-            item0.setData(Qt.UserRole, fileName)
-            item0.setFlags(item0.flags() & ~Qt.ItemIsEditable)
+            item0.setData(__.UserRole, fileName)
+            item0.setFlags(item0.flags() & ~__.ItemIsEditable)
 
             item1 _ QTableWidgetItem("Normal")
             item2 _ QTableWidgetItem("Off")
@@ -328,7 +328,7 @@ c_ MainWindow ?MW..
             self.imagesTable.openPersistentEditor(item1)
             self.imagesTable.openPersistentEditor(item2)
 
-            item0.setCheckState(Qt.Checked)
+            item0.setCheckState(__.Checked)
 
     ___ removeAllImages(self):
         self.imagesTable.setRowCount(0)
@@ -449,7 +449,7 @@ c_ MainWindow ?MW..
         self.helpMenu.aA..(self.aboutQtAct)
 
     ___ createContextMenu(self):
-        self.imagesTable.setContextMenuPolicy(Qt.ActionsContextMenu)
+        self.imagesTable.setContextMenuPolicy(__.ActionsContextMenu)
         self.imagesTable.aA..(self.addImagesAct)
         self.imagesTable.aA..(self.removeAllImagesAct)
 

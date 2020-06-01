@@ -45,7 +45,7 @@
 
 ______ math
 
-____ ?.QtCore ______ pyqtSignal, QPointF, QSize, Qt
+____ ?.?C.. ______ pyqtSignal, QPointF, QSize, __
 ____ ?.?G.. ______ QPainter, QPolygonF
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., QStyle,
         QStyledItemDelegate, QTableWidget, QTableWidgetItem, QWidget)
@@ -92,7 +92,7 @@ c_ StarRating(object):
         painter.save()
 
         painter.setRenderHint(QPainter.Antialiasing, True)
-        painter.setPen(Qt.NoPen)
+        painter.setPen(__.NoPen)
 
         __ editMode == StarRating.Editable:
             painter.setBrush(palette.highlight())
@@ -105,9 +105,9 @@ c_ StarRating(object):
 
         for i in range(self._maxStarCount):
             __ i < self._starCount:
-                painter.drawPolygon(self.starPolygon, Qt.WindingFill)
+                painter.drawPolygon(self.starPolygon, __.WindingFill)
             ____ editMode == StarRating.Editable:
-                painter.drawPolygon(self.diamondPolygon, Qt.WindingFill)
+                painter.drawPolygon(self.diamondPolygon, __.WindingFill)
 
             painter.translate(1.0, 0.0)
 

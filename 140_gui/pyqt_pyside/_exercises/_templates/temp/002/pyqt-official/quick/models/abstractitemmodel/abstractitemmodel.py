@@ -41,7 +41,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QAbstractListModel, QModelIndex, Qt, QUrl, QVariant
+____ ?.?C.. ______ QAbstractListModel, QModelIndex, __, QUrl, QVariant
 ____ ?.?G.. ______ QGuiApplication
 ____ ?.QtQuick ______ QQuickView
 
@@ -63,8 +63,8 @@ c_ Animal(object):
 
 c_ AnimalModel(QAbstractListModel):
 
-    TypeRole _ Qt.UserRole + 1
-    SizeRole _ Qt.UserRole + 2
+    TypeRole _ __.UserRole + 1
+    SizeRole _ __.UserRole + 2
 
     _roles _ {TypeRole: b"type", SizeRole: b"size"}
 

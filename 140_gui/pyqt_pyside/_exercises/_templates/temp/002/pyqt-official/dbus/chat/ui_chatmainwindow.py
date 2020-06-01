@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, ?G.., ?W..
+____ ? ______ ?C.., ?G.., ?W..
 
 c_ Ui_ChatMainWindow(object):
     ___ setupUi  ChatMainWindow):
@@ -51,7 +51,7 @@ c_ Ui_ChatMainWindow(object):
         self.hboxlayout.addLayout(self.vboxlayout)
         ChatMainWindow.sCW..(self.centralwidget)
         self.menubar _ ?W...QMenuBar(ChatMainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 31))
+        self.menubar.setGeometry(?C...QRect(0, 0, 800, 31))
         self.menubar.setObjectName("menubar")
         self.menuQuit _ ?W...QMenu(self.menubar)
         self.menuQuit.setObjectName("menuQuit")
@@ -78,12 +78,12 @@ c_ Ui_ChatMainWindow(object):
         self.retranslateUi(ChatMainWindow)
         self.messageLineEdit.returnPressed.c..(self.sendButton.animateClick)
         self.actionQuit.t__['bool'].c..(ChatMainWindow.close)
-        QtCore.QMetaObject.connectSlotsByName(ChatMainWindow)
+        ?C...QMetaObject.connectSlotsByName(ChatMainWindow)
         ChatMainWindow.setTabOrder(self.chatHistory, self.messageLineEdit)
         ChatMainWindow.setTabOrder(self.messageLineEdit, self.sendButton)
 
     ___ retranslateUi  ChatMainWindow):
-        _translate _ QtCore.QCoreApplication.translate
+        _translate _ ?C...QCoreApplication.translate
         ChatMainWindow.setWindowTitle(_translate("ChatMainWindow", "Qt D-Bus Chat"))
         self.chatHistory.setToolTip(_translate("ChatMainWindow", "Messages sent and received from other users"))
         self.label.sT..(_translate("ChatMainWindow", "Message:"))

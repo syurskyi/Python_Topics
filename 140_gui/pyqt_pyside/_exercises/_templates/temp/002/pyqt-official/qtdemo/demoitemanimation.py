@@ -40,7 +40,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QPropertyAnimation, QTimer
+____ ?.?C.. ______ QPropertyAnimation, QTimer
 
 ____ colors ______ Colors
 

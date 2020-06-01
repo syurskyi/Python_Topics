@@ -42,8 +42,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QByteArray, qFuzzyCompare, Qt, QTimer
-____ ?.?G.. ______ QPalette, QPixmap
+____ ?.?C.. ______ QByteArray, qFuzzyCompare, __, QTimer
+____ ?.?G.. ______ ?P.., QPixmap
 ____ ?.QtMultimedia ______ (QAudioEncoderSettings, QCamera,
         QCameraImageCapture, QImageEncoderSettings, QMediaMetaData,
         QMediaRecorder, QMultimedia, QVideoEncoderSettings)
@@ -311,11 +311,11 @@ c_ Camera ?MW..
         __ event.isAutoRepeat
             r_
 
-        __ event.key() == Qt.Key_CameraFocus:
+        __ event.key() == __.Key_CameraFocus:
             self.displayViewfinder()
             self.camera.searchAndLock()
             event.accept()
-        ____ event.key() == Qt.Key_Camera:
+        ____ event.key() == __.Key_Camera:
             __ self.camera.captureMode() == QCamera.CaptureStillImage:
                 self.takeImage()
             ____ self.mediaRecorder.state() == QMediaRecorder.RecordingState:
@@ -331,7 +331,7 @@ c_ Camera ?MW..
         __ event.isAutoRepeat
             r_
 
-        __ event.key() == Qt.Key_CameraFocus:
+        __ event.key() == __.Key_CameraFocus:
             self.camera.unlock()
         ____
             super(Camera, self).keyReleaseEvent(event)
@@ -341,8 +341,8 @@ c_ Camera ?MW..
         self.ui.statusbar.showMessage(msg)
 
     ___ processCapturedImage  requestId, img):
-        scaledImage _ img.scaled(self.ui.viewfinder.size(), Qt.KeepAspectRatio,
-                Qt.SmoothTransformation)
+        scaledImage _ img.scaled(self.ui.viewfinder.size(), __.KeepAspectRatio,
+                __.SmoothTransformation)
 
         self.ui.lastImagePreviewLabel.setPixmap(QPixmap.fromImage(scaledImage))
 
@@ -399,26 +399,26 @@ c_ Camera ?MW..
             self.camera.searchAndLock()
 
     ___ updateLockStatus  status, reason):
-        indicationColor _ Qt.black
+        indicationColor _ __.black
 
         __ status == QCamera.Searching:
             self.ui.statusbar.showMessage("Focusing...")
             self.ui.lockButton.sT..("Focusing...")
-            indicationColor _ Qt.yellow
+            indicationColor _ __.yellow
         ____ status == QCamera.Locked:
             self.ui.lockButton.sT..("Unlock")
             self.ui.statusbar.showMessage("Focused", 2000)
-            indicationColor _ Qt.darkGreen
+            indicationColor _ __.darkGreen
         ____ status == QCamera.Unlocked:
             self.ui.lockButton.sT..("Focus")
 
             __ reason == QCamera.LockFailed:
                 self.ui.statusbar.showMessage("Focus Failed", 2000)
-                indicationColor _ Qt.red
+                indicationColor _ __.red
 
         palette _ self.ui.lockButton.palette()
-        palette.setColor(QPalette.ButtonText, indicationColor)
-        self.ui.lockButton.setPalette(palette)
+        palette.sC..(?P...ButtonText, indicationColor)
+        self.ui.lockButton.sP..(palette)
 
     ___ takeImage(self):
         self.isCapturingImage _ True

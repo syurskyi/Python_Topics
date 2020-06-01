@@ -42,9 +42,9 @@
 #############################################################################
 
 
-____ ?.QtCore ______ (pyqtProperty, QEasingCurve, QObject, QPoint, QPointF,
-        QPropertyAnimation, QRect, QRectF, QSize, Qt)
-____ ?.?G.. ______ (QBrush, QColor, QIcon, QLinearGradient, QPainter,
+____ ?.?C.. ______ (pyqtProperty, QEasingCurve, QObject, QPoint, QPointF,
+        QPropertyAnimation, QRect, QRectF, QSize, __)
+____ ?.?G.. ______ (QBrush, ?C.., QIcon, QLinearGradient, QPainter,
         QPainterPath, QPixmap)
 ____ ?.?W.. ______ (?A.., QGraphicsPixmapItem, QGraphicsScene,
         QListWidgetItem, QWidget)
@@ -148,8 +148,8 @@ c_ Window(QWidget):
         painter _ QPainter()
 
         gradient _ QLinearGradient(0, 0, 0, self.m_iconSize.height())
-        gradient.setColorAt(0.0, QColor(240, 240, 240))
-        gradient.setColorAt(1.0, QColor(224, 224, 224))
+        gradient.setColorAt(0.0, ?C..(240, 240, 240))
+        gradient.setColorAt(1.0, ?C..(224, 224, 224))
 
         brush _ QBrush(gradient)
 
@@ -176,7 +176,7 @@ c_ Window(QWidget):
                 curve.addTCBSegment(QPointF(0.7, 0.6), -0.2, 1, 0.2)
                 curve.addTCBSegment(QPointF(1.0, 1.0), 0, 0, 0)
 
-            painter.setPen(QColor(0, 0, 255, 64))
+            painter.setPen(?C..(0, 0, 255, 64))
             xAxis _ self.m_iconSize.height() / 1.5
             yAxis _ self.m_iconSize.width() / 3.0
             painter.drawLine(0, xAxis, self.m_iconSize.width(),  xAxis)
@@ -184,16 +184,16 @@ c_ Window(QWidget):
 
             curveScale _ self.m_iconSize.height() / 2.0;
 
-            painter.setPen(Qt.NoPen)
+            painter.setPen(__.NoPen)
 
             # Start point.
-            painter.setBrush(Qt.red)
+            painter.setBrush(__.red)
             start _ QPoint(yAxis,
                     xAxis - curveScale * curve.valueForProgress(0))
             painter.drawRect(start.x() - 1, start.y() - 1, 3, 3)
 
             # End point.
-            painter.setBrush(Qt.blue)
+            painter.setBrush(__.blue)
             end _ QPoint(yAxis + curveScale,
                     xAxis - curveScale * curve.valueForProgress(1))
             painter.drawRect(end.x() - 1, end.y() - 1, 3, 3)
@@ -208,7 +208,7 @@ c_ Window(QWidget):
                 t +_ 1.0 / curveScale
 
             painter.setRenderHint(QPainter.Antialiasing, True)
-            painter.strokePath(curvePath, QColor(32, 32, 32))
+            painter.strokePath(curvePath, ?C..(32, 32, 32))
             painter.setRenderHint(QPainter.Antialiasing, False)
 
             item _ QListWidgetItem()

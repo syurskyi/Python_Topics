@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, ?G.., ?W..
+____ ? ______ ?C.., ?G.., ?W..
 
 c_ Ui_MainWindow(object):
     ___ setupUi  MainWindow):
@@ -31,18 +31,18 @@ c_ Ui_MainWindow(object):
         self.agreeCheckBox.setObjectName("agreeCheckBox")
         self.gridlayout.addWidget(self.agreeCheckBox, 6, 0, 1, 5)
         self.label _ ?W...QLabel(self.mainFrame)
-        self.label.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTop|QtCore.Qt.AlignTrailing)
+        self.label.setAlignment(?C...__.AlignRight|?C...__.AlignTop|?C...__.AlignTrailing)
         self.label.setObjectName("label")
         self.gridlayout.addWidget(self.label, 5, 0, 1, 1)
         self.nameLabel _ ?W...QLabel(self.mainFrame)
-        self.nameLabel.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.nameLabel.setAlignment(?C...__.AlignRight|?C...__.AlignTrailing|?C...__.AlignVCenter)
         self.nameLabel.setObjectName("nameLabel")
         self.gridlayout.addWidget(self.nameLabel, 0, 0, 1, 1)
         self.maleRadioButton _ ?W...QRadioButton(self.mainFrame)
         self.maleRadioButton.setObjectName("maleRadioButton")
         self.gridlayout.addWidget(self.maleRadioButton, 1, 1, 1, 1)
         self.passwordLabel _ ?W...QLabel(self.mainFrame)
-        self.passwordLabel.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.passwordLabel.setAlignment(?C...__.AlignRight|?C...__.AlignTrailing|?C...__.AlignVCenter)
         self.passwordLabel.setObjectName("passwordLabel")
         self.gridlayout.addWidget(self.passwordLabel, 3, 0, 1, 1)
         self.countryCombo _ ?W...QComboBox(self.mainFrame)
@@ -56,15 +56,15 @@ c_ Ui_MainWindow(object):
         self.countryCombo.addItem("")
         self.gridlayout.addWidget(self.countryCombo, 4, 1, 1, 4)
         self.ageLabel _ ?W...QLabel(self.mainFrame)
-        self.ageLabel.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.ageLabel.setAlignment(?C...__.AlignRight|?C...__.AlignTrailing|?C...__.AlignVCenter)
         self.ageLabel.setObjectName("ageLabel")
         self.gridlayout.addWidget(self.ageLabel, 2, 0, 1, 1)
         self.countryLabel _ ?W...QLabel(self.mainFrame)
-        self.countryLabel.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.countryLabel.setAlignment(?C...__.AlignRight|?C...__.AlignTrailing|?C...__.AlignVCenter)
         self.countryLabel.setObjectName("countryLabel")
         self.gridlayout.addWidget(self.countryLabel, 4, 0, 1, 1)
         self.genderLabel _ ?W...QLabel(self.mainFrame)
-        self.genderLabel.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.genderLabel.setAlignment(?C...__.AlignRight|?C...__.AlignTrailing|?C...__.AlignVCenter)
         self.genderLabel.setObjectName("genderLabel")
         self.gridlayout.addWidget(self.genderLabel, 1, 0, 1, 1)
         self.passwordEdit _ ?W...QLineEdit(self.mainFrame)
@@ -88,7 +88,7 @@ c_ Ui_MainWindow(object):
         spacerItem1 _ ?W...QSpacerItem(61, 20, ?W...QSizePolicy.Expanding, ?W...QSizePolicy.Minimum)
         self.gridlayout.addItem(spacerItem1, 2, 3, 1, 2)
         self.buttonBox _ ?W...QDialogButtonBox(self.mainFrame)
-        self.buttonBox.setOrientation(QtCore.Qt.Horizontal)
+        self.buttonBox.setOrientation(?C...__.Horizontal)
         self.buttonBox.setStandardButtons(?W...QDialogButtonBox.Cancel|?W...QDialogButtonBox.NoButton|?W...QDialogButtonBox.Ok)
         self.buttonBox.setObjectName("buttonBox")
         self.gridlayout.addWidget(self.buttonBox, 7, 3, 1, 2)
@@ -104,7 +104,7 @@ c_ Ui_MainWindow(object):
         self.vboxlayout.addWidget(self.mainFrame)
         MainWindow.sCW..(self.centralwidget)
         self.menubar _ ?W...QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 400, 29))
+        self.menubar.setGeometry(?C...QRect(0, 0, 400, 29))
         self.menubar.setObjectName("menubar")
         self.menu_File _ ?W...QMenu(self.menubar)
         self.menu_File.setObjectName("menu_File")
@@ -138,10 +138,10 @@ c_ Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         self.countryCombo.setCurrentIndex(6)
         self.professionList.setCurrentRow(0)
-        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        ?C...QMetaObject.connectSlotsByName(MainWindow)
 
     ___ retranslateUi  MainWindow):
-        _translate _ QtCore.QCoreApplication.translate
+        _translate _ ?C...QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Style Sheet"))
         self.agreeCheckBox.setToolTip(_translate("MainWindow", "Please read the LICENSE file before checking"))
         self.agreeCheckBox.sT..(_translate("MainWindow", "I accept the terms and &conditions"))

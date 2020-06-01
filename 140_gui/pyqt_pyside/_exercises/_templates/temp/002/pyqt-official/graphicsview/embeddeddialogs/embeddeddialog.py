@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, ?G.., ?W..
+____ ? ______ ?C.., ?G.., ?W..
 
 c_ Ui_embeddedDialog(object):
     ___ setupUi  embeddedDialog):
@@ -39,7 +39,7 @@ c_ Ui_embeddedDialog(object):
         self.label_4.setObjectName("label_4")
         self.formLayout.setWidget(3, ?W...QFormLayout.LabelRole, self.label_4)
         self.spacing _ ?W...QSlider(embeddedDialog)
-        self.spacing.setOrientation(QtCore.Qt.Horizontal)
+        self.spacing.setOrientation(?C...__.Horizontal)
         self.spacing.setObjectName("spacing")
         self.formLayout.setWidget(3, ?W...QFormLayout.FieldRole, self.spacing)
         self.label.setBuddy(self.layoutDirection)
@@ -48,10 +48,10 @@ c_ Ui_embeddedDialog(object):
         self.label_4.setBuddy(self.spacing)
 
         self.retranslateUi(embeddedDialog)
-        QtCore.QMetaObject.connectSlotsByName(embeddedDialog)
+        ?C...QMetaObject.connectSlotsByName(embeddedDialog)
 
     ___ retranslateUi  embeddedDialog):
-        _translate _ QtCore.QCoreApplication.translate
+        _translate _ ?C...QCoreApplication.translate
         embeddedDialog.setWindowTitle(_translate("embeddedDialog", "Embedded Dialog"))
         self.label.sT..(_translate("embeddedDialog", "Layout Direction:"))
         self.layoutDirection.setItemText(0, _translate("embeddedDialog", "Left to Right"))

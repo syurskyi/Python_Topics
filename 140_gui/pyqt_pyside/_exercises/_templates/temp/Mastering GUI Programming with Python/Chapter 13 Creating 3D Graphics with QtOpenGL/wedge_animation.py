@@ -92,9 +92,9 @@ c_ GlWidget(qtw.QOpenGLWidget):
             ]
 
         face_colors _ (
-            qtg.QColor('red'),
-            qtg.QColor('orange'),
-            qtg.QColor('yellow'),
+            qtg.?C..('red'),
+            qtg.?C..('orange'),
+            qtg.?C..('yellow'),
         )
         gl_colors _ [
             self.qcolor_to_glvec(color)
@@ -131,10 +131,10 @@ c_ GlWidget(qtw.QOpenGLWidget):
                 front_vertices[index2]
             ]
         side_colors _ [
-            qtg.QColor('blue'),
-            qtg.QColor('purple'),
-            qtg.QColor('cyan'),
-            qtg.QColor('magenta'),
+            qtg.?C..('blue'),
+            qtg.?C..('purple'),
+            qtg.?C..('cyan'),
+            qtg.?C..('magenta'),
         ]
         gl_colors _ [
             self.qcolor_to_glvec(color)

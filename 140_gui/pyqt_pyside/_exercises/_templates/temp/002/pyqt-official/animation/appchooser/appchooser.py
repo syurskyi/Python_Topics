@@ -42,8 +42,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ (pyqtSignal, QPointF, QPropertyAnimation, QRect,
-        QRectF, QState, QStateMachine, Qt)
+____ ?.?C.. ______ (pyqtSignal, QPointF, QPropertyAnimation, QRect,
+        QRectF, QState, QStateMachine, __)
 ____ ?.?G.. ______ QPixmap
 ____ ?.?W.. ______ (?A.., QGraphicsScene, QGraphicsView,
         QGraphicsWidget)
@@ -105,7 +105,7 @@ __ __name__ == '__main__':
     p4.setGeometry(QRectF(0.0, 236.0, 64.0, 64.0))
 
     scene _ QGraphicsScene(0, 0, 300, 300)
-    scene.setBackgroundBrush(Qt.white)
+    scene.setBackgroundBrush(__.white)
     scene.addItem(p1)
     scene.addItem(p2)
     scene.addItem(p3)
@@ -113,9 +113,9 @@ __ __name__ == '__main__':
 
     window _ QGraphicsView(scene)
     window.setFrameStyle(0)
-    window.setAlignment(Qt.AlignLeft | Qt.AlignTop)
-    window.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
-    window.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+    window.setAlignment(__.AlignLeft | __.AlignTop)
+    window.setHorizontalScrollBarPolicy(__.ScrollBarAlwaysOff)
+    window.setVerticalScrollBarPolicy(__.ScrollBarAlwaysOff)
 
     machine _ QStateMachine()
     machine.setGlobalRestorePolicy(QStateMachine.RestoreProperties)

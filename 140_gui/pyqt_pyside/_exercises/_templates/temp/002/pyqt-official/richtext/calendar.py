@@ -42,8 +42,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QDate, Qt
-____ ?.?G.. ______ (QColor, QFont, QTextCharFormat, QTextLength,
+____ ?.?C.. ______ QDate, __
+____ ?.?G.. ______ (?C.., QFont, QTextCharFormat, QTextLength,
         QTextTableFormat)
 ____ ?.?W.. ______ (?A.., QComboBox, QDateTimeEdit,
         QHBoxLayout, QLabel, QMainWindow, QSpinBox, QTextBrowser, QVBoxLayout,
@@ -108,8 +108,8 @@ c_ MainWindow ?MW..
         date _ QDate(self.selectedDate.year(), self.selectedDate.month(), 1)
 
         tableFormat _ QTextTableFormat()
-        tableFormat.setAlignment(Qt.AlignHCenter)
-        tableFormat.setBackground(QColor('#e0e0e0'))
+        tableFormat.setAlignment(__.AlignHCenter)
+        tableFormat.setBackground(?C..('#e0e0e0'))
         tableFormat.setCellPadding(2)
         tableFormat.setCellSpacing(4)
         constraints _ [QTextLength(QTextLength.PercentageLength, 14),
@@ -136,7 +136,7 @@ c_ MainWindow ?MW..
         boldFormat.setFontWeight(QFont.Bold)
 
         highlightedFormat _ QTextCharFormat(boldFormat)
-        highlightedFormat.setBackground(Qt.yellow)
+        highlightedFormat.setBackground(__.yellow)
 
         for weekDay in range(1, 8):
             cell _ table.cellAt(0, weekDay-1)

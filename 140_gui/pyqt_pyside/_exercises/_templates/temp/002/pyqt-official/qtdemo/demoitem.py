@@ -40,8 +40,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QPointF, QRectF, qRound
-____ ?.?G.. ______ QColor, QPainter, QPixmap, QTransform
+____ ?.?C.. ______ QPointF, QRectF, qRound
+____ ?.?G.. ______ ?C.., QPainter, QPixmap, QTransform
 ____ ?.?W.. ______ QGraphicsObject
 
 ____ colors ______ Colors
@@ -174,7 +174,7 @@ c_ DemoItem(QGraphicsObject):
                 __ Colors.showBoundingRect:
                     # Draw red transparent rect.
                     painter _ QPainter(image)
-                    painter.fillRect(image.rect(), QColor(255, 0, 0, 50))
+                    painter.fillRect(image.rect(), ?C..(255, 0, 0, 50))
                     painter.end()
 
                 self._sharedImage.unscaledBoundingRect _ self._sharedImage.transform.inverted()[0].mapRect(QRectF(image.rect()))
@@ -185,7 +185,7 @@ c_ DemoItem(QGraphicsObject):
                     ____
                         self._sharedImage.pixmap _ QPixmap(image.size())
 
-                    self._sharedImage.pixmap.fill(QColor(0, 0, 0, 0))
+                    self._sharedImage.pixmap.fill(?C..(0, 0, 0, 0))
                     painter _ QPainter(self._sharedImage.pixmap)
                     painter.drawImage(0, 0, image)
                 ____

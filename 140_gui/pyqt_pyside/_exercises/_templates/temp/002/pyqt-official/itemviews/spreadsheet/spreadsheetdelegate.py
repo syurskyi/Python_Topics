@@ -37,7 +37,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QDate, Qt
+____ ?.?C.. ______ QDate, __
 ____ ?.?W.. ______ QCompleter, QDateTimeEdit, QItemDelegate, QLineEdit
 
 
@@ -57,7 +57,7 @@ c_ SpreadSheetDelegate(QItemDelegate):
         # create a completer with the strings in the column as model
         allStrings _ []
         for i in range(1, index.model().rowCount()):
-            strItem _ index.model().data(index.sibling(i, index.column()), Qt.EditRole)
+            strItem _ index.model().data(index.sibling(i, index.column()), __.EditRole)
             __ strItem no. in allStrings:
                 allStrings.append(strItem)
 
@@ -73,10 +73,10 @@ c_ SpreadSheetDelegate(QItemDelegate):
 
     ___ setEditorData  editor, index):
         __ isinstance(editor, QLineEdit):
-            editor.sT..(index.model().data(index, Qt.EditRole))
+            editor.sT..(index.model().data(index, __.EditRole))
         ____ isinstance(editor, QDateTimeEdit):
             editor.setDate(QDate.fromString(
-                index.model().data(index, Qt.EditRole), self.parent().currentDateFormat))
+                index.model().data(index, __.EditRole), self.parent().currentDateFormat))
 
     ___ setModelData  editor, model, index):
         __ isinstance(editor, QLineEdit):

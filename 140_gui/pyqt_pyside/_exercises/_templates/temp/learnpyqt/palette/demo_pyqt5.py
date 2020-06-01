@@ -1,4 +1,4 @@
-____ ? ______ QtCore, ?G.., ?W..
+____ ? ______ ?C.., ?G.., ?W..
 ____ palette ______ PaletteGrid, PaletteHorizontal, PaletteVertical
 
 

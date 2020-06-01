@@ -43,8 +43,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QEvent, QRectF, Qt, QTimeLine
-____ ?.?G.. ______ (QBrush, QColor, QPainter, QPainterPath, QPixmap,
+____ ?.?C.. ______ QEvent, QRectF, __, QTimeLine
+____ ?.?G.. ______ (QBrush, ?C.., QPainter, QPainterPath, QPixmap,
         QTransform)
 ____ ?.?W.. ______ (?A.., QDialog, QGraphicsItem,
         QGraphicsProxyWidget, QGraphicsScene, QGraphicsView, QStyleFactory,
@@ -69,7 +69,7 @@ c_ CustomProxy(QGraphicsProxyWidget):
         r_ QGraphicsProxyWidget.boundingRect(self).adjusted(0, 0, 10, 10)
 
     ___ paintWindowFrame  painter, option, widget):
-        color _ QColor(0, 0, 0, 64)
+        color _ ?C..(0, 0, 0, 64)
 
         r _ self.windowFrameRect()
         right _ QRectF(r.right(), r.top()+10, 10, r.height()-10)
@@ -80,7 +80,7 @@ c_ CustomProxy(QGraphicsProxyWidget):
             path _ QPainterPath()
             path.addRect(right)
             path.addRect(bottom)
-            painter.setPen(Qt.NoPen)
+            painter.setPen(__.NoPen)
             painter.setBrush(color)
             painter.drawPath(path)
         ____ intersectsBottom:
@@ -130,9 +130,9 @@ c_ CustomProxy(QGraphicsProxyWidget):
         r _ self.boundingRect()
         self.setTransform(QTransform() \
                             .translate(r.width() / 2, r.height() / 2)\
-                            .rotate(step * 30, Qt.XAxis)\
-                            .rotate(step * 10, Qt.YAxis)\
-                            .rotate(step * 5, Qt.ZAxis)\
+                            .rotate(step * 30, __.XAxis)\
+                            .rotate(step * 10, __.YAxis)\
+                            .rotate(step * 5, __.ZAxis)\
                             .scale(1 + 1.5 * step, 1 + 1.5 * step)\
                             .translate(-r.width() / 2, -r.height() / 2))
 
@@ -163,7 +163,7 @@ c_ EmbeddedDialog(QDialog):
 
         self.ui _ Ui_embeddedDialog()
         self.ui.setupUi(self)
-        self.ui.layoutDirection.setCurrentIndex(self.layoutDirection() !_ Qt.LeftToRight)
+        self.ui.layoutDirection.setCurrentIndex(self.layoutDirection() !_ __.LeftToRight)
 
         for styleName in QStyleFactory.keys
             self.ui.style.addItem(styleName)
@@ -177,9 +177,9 @@ c_ EmbeddedDialog(QDialog):
 
     ___ layoutDirectionChanged  index):
         __ index == 0:
-            self.setLayoutDirection(Qt.LeftToRight)
+            self.setLayoutDirection(__.LeftToRight)
         ____
-            self.setLayoutDirection(Qt.RightToLeft)
+            self.setLayoutDirection(__.RightToLeft)
 
     ___ spacingChanged  spacing):
         self.layout().setSpacing(spacing)
@@ -190,7 +190,7 @@ c_ EmbeddedDialog(QDialog):
 
     ___ setStyleHelper  widget, style):
         widget.setStyle(style)
-        widget.setPalette(style.standardPalette())
+        widget.sP..(style.standardPalette())
         for child in widget.children
             __ isinstance(child, QWidget):
                 self.setStyleHelper(child, style)
@@ -215,7 +215,7 @@ __ __name__ == '__main__':
 
     for y in range(10):
         for x in range(10):
-            proxy _ CustomProxy(N.., Qt.Window)
+            proxy _ CustomProxy(N.., __.Window)
             proxy.setWidget(EmbeddedDialog())
 
             rect _ proxy.boundingRect()

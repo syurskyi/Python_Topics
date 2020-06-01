@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QDir, Qt, QUrl
+____ ?.?C.. ______ QDir, __, QUrl
 ____ ?.QtMultimedia ______ QMediaContent, QMediaPlayer
 ____ ?.QtMultimediaWidgets ______ QVideoWidget
 ____ ?.?W.. ______ (?A.., ?FD.., QHBoxLayout, QLabel,
@@ -66,7 +66,7 @@ c_ VideoPlayer(QWidget):
         self.playButton.setIcon(self.style().standardIcon(QStyle.SP_MediaPlay))
         self.playButton.c__.c..(self.play)
 
-        self.positionSlider _ QSlider(Qt.Horizontal)
+        self.positionSlider _ QSlider(__.Horizontal)
         self.positionSlider.setRange(0, 0)
         self.positionSlider.sliderMoved.c..(self.setPosition)
 

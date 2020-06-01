@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ Qt
+____ ?.?C.. ______ __
 ____ ?.?W.. ______ ?A.., QTableView
 ____ ?.QtSql ______ QSqlTableModel
 
@@ -55,9 +55,9 @@ ___ initializeModel(model):
     model.setEditStrategy(QSqlTableModel.OnManualSubmit)
     model.select()
 
-    model.setHeaderData(0, Qt.Horizontal, "ID")
-    model.setHeaderData(1, Qt.Horizontal, "First name")
-    model.setHeaderData(2, Qt.Horizontal, "Last name")
+    model.setHeaderData(0, __.Horizontal, "ID")
+    model.setHeaderData(1, __.Horizontal, "First name")
+    model.setHeaderData(2, __.Horizontal, "Last name")
 
 
 ___ createView(title, model):

@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, ?G.., ?W..
+____ ? ______ ?C.., ?G.., ?W..
 
 c_ Ui_MainWindow(object):
     ___ setupUi  MainWindow):
@@ -29,7 +29,7 @@ c_ Ui_MainWindow(object):
         self.vboxlayout.addWidget(self.view)
         MainWindow.sCW..(self.centralwidget)
         self.menubar _ ?W...QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 573, 31))
+        self.menubar.setGeometry(?C...QRect(0, 0, 573, 31))
         self.menubar.setObjectName("menubar")
         self.fileMenu _ ?W...QMenu(self.menubar)
         self.fileMenu.setObjectName("fileMenu")
@@ -63,10 +63,10 @@ c_ Ui_MainWindow(object):
         self.menubar.aA..(self.actionsMenu.menuAction())
 
         self.retranslateUi(MainWindow)
-        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        ?C...QMetaObject.connectSlotsByName(MainWindow)
 
     ___ retranslateUi  MainWindow):
-        _translate _ QtCore.QCoreApplication.translate
+        _translate _ ?C...QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Editable Tree Model"))
         self.fileMenu.setTitle(_translate("MainWindow", "&File"))
         self.actionsMenu.setTitle(_translate("MainWindow", "&Actions"))

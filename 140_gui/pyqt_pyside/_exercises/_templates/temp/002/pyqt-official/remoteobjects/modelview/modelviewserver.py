@@ -53,9 +53,9 @@
 
 ______ sys
 
-____ ?.QtCore ______ (pyqtSlot, QLoggingCategory, QModelIndex, QObject, Qt,
+____ ?.?C.. ______ (pyqtSlot, QLoggingCategory, QModelIndex, QObject, __,
         QTimer, QUrl)
-____ ?.?G.. ______ QColor, QStandardItem, QStandardItemModel
+____ ?.?G.. ______ ?C.., QStandardItem, QStandardItemModel
 ____ ?.QtRemoteObjects ______ QRemoteObjectHost, QRemoteObjectRegistryHost
 ____ ?.?W.. ______ ?A.., QTreeView
 
@@ -70,18 +70,18 @@ c_ TimerHandler(QObject):
     @pyqtSlot()
     ___ changeData(self):
         for i in range(10, 50):
-            self._model.setData(self._model.index(i, 1), QColor(Qt.blue),
-                    Qt.BackgroundRole)
+            self._model.setData(self._model.index(i, 1), ?C..(__.blue),
+                    __.BackgroundRole)
 
     @pyqtSlot()
     ___ insertData(self):
         self._model.insertRows(2, 9)
 
         for i in range(2, 11):
-            self._model.setData(self._model.index(i, 1), QColor(Qt.green),
-                    Qt.BackgroundRole)
+            self._model.setData(self._model.index(i, 1), ?C..(__.green),
+                    __.BackgroundRole)
             self._model.setData(self._model.index(i, 1), "InsertedRow",
-                    Qt.DisplayRole)
+                    __.DisplayRole)
 
     @pyqtSlot()
     ___ removeData(self):
@@ -93,7 +93,7 @@ c_ TimerHandler(QObject):
         item.setEnabled F..
 
         item _ item.child(0, 0)
-        item.setFlags(item.flags() & Qt.ItemIsSelectable)
+        item.setFlags(item.flags() & __.ItemIsSelectable)
 
     @pyqtSlot()
     ___ moveData(self):
@@ -136,18 +136,18 @@ __ __name__ == '__main__':
 
         secondItem _ QStandardItem("FancyRow2TextNumber {}".format(i))
         __ i % 2 == 0:
-            firstItem.setBackground(Qt.red)
+            firstItem.setBackground(__.red)
 
         sourceModel.invisibleRootItem().appendRow([firstItem, secondItem])
 
     # Needed by QMLModelViewClient.
     roleNames _ {
-        Qt.DisplayRole: b'_text',
-        Qt.BackgroundRole: b'_color'
+        __.DisplayRole: b'_text',
+        __.BackgroundRole: b'_color'
     }
     sourceModel.setItemRoleNames(roleNames)
 
-    roles _ [Qt.DisplayRole, Qt.BackgroundRole]
+    roles _ [__.DisplayRole, __.BackgroundRole]
 
     node _ QRemoteObjectRegistryHost(QUrl('local:registry'))
 

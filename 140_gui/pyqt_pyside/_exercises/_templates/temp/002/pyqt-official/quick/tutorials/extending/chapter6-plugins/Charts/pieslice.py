@@ -38,20 +38,20 @@
 #############################################################################
 
 
-____ ?.QtCore ______ pyqtProperty, QRectF
-____ ?.?G.. ______ QColor, QPainter, QPen
+____ ?.?C.. ______ pyqtProperty, QRectF
+____ ?.?G.. ______ ?C.., QPainter, QPen
 ____ ?.QtQuick ______ QQuickPaintedItem
 
 
 c_ PieSlice(QQuickPaintedItem):
 
-    @pyqtProperty(QColor)
+    @pyqtProperty(?C..)
     ___ color(self):
         r_ self._color
 
     @color.setter
     ___ color  color):
-        self._color _ QColor(color)
+        self._color _ ?C..(color)
 
     @pyqtProperty(int)
     ___ fromAngle(self):
@@ -72,7 +72,7 @@ c_ PieSlice(QQuickPaintedItem):
     ___ __init__  parent_None):
         super(PieSlice, self).__init__(parent)
 
-        self._color _ QColor()
+        self._color _ ?C..()
         self._fromAngle _ 0
         self._angleSpan _ 0
 

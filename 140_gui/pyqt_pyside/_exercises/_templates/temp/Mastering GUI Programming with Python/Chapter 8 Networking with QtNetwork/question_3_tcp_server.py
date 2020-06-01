@@ -1,5 +1,5 @@
 ______ sys
-____ ? ______ QtCore __ qtc
+____ ? ______ ?C.. __ qtc
 ____ ? ______ QtNetwork __ qtn
 
 c_ Server(qtn.QTcpServer):

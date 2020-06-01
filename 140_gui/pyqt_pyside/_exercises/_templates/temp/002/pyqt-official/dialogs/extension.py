@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ Qt
+____ ?.?C.. ______ __
 ____ ?.?W.. ______ (?A.., QCheckBox, QDialog,
         QDialogButtonBox, QGridLayout, QHBoxLayout, QLabel, QLayout, QLineEdit,
         ?PB.., QVBoxLayout, QWidget)
@@ -73,7 +73,7 @@ c_ FindDialog(QDialog):
         backwardCheckBox _ QCheckBox("Search &backward")
         searchSelectionCheckBox _ QCheckBox("Search se&lection")
 
-        buttonBox _ QDialogButtonBox(Qt.Vertical)
+        buttonBox _ QDialogButtonBox(__.Vertical)
         buttonBox.addButton(findButton, QDialogButtonBox.ActionRole)
         buttonBox.addButton(moreButton, QDialogButtonBox.ActionRole)
 

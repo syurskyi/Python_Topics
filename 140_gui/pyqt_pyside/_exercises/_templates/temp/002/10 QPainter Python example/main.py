@@ -1,6 +1,6 @@
 ____ ?.?W.. ______ *
 ____ ?.?G.. ______ *
-____ ?.QtCore ______ *
+____ ?.?C.. ______ *
 ____ ?.QtMultimedia ______ QSound
 
 c_ PlainTextEdit(QPlainTextEdit):

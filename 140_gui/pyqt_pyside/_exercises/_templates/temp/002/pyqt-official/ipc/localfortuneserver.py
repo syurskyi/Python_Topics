@@ -46,7 +46,7 @@
 
 ______ random
 
-____ ?.QtCore ______ QByteArray, QDataStream, QIODevice
+____ ?.?C.. ______ QByteArray, QDataStream, QIODevice
 ____ ?.?W.. ______ (?A.., QDialog, QLabel, QHBoxLayout,
         ?MB.., ?PB.., QVBoxLayout)
 ____ ?.QtNetwork ______ QLocalServer

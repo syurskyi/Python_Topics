@@ -44,9 +44,9 @@
 
 ______ sys
 
-____ ?.QtCore ______ (QByteArray, QDate, QDateTime, QEvent, QPoint, QRect,
-        QRegExp, QSettings, QSize, Qt, QTime, QTimer)
-____ ?.?G.. ______ QColor, QIcon, QRegExpValidator, QValidator
+____ ?.?C.. ______ (QByteArray, QDate, QDateTime, QEvent, QPoint, QRect,
+        QRegExp, QSettings, QSize, __, QTime, QTimer)
+____ ?.?G.. ______ ?C.., QIcon, QRegExpValidator, QValidator
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., ?A..,
         QComboBox, QDialog, QDialogButtonBox, ?FD.., QGridLayout,
         QGroupBox, QHeaderView, QInputDialog, QItemDelegate, QLabel, QLineEdit,
@@ -337,8 +337,8 @@ c_ LocationDialog(QDialog):
                     item1.sT..("Read-only fallback")
 
                 __ disable:
-                    item0.setFlags(item0.flags() & ~Qt.ItemIsEnabled)
-                    item1.setFlags(item1.flags() & ~Qt.ItemIsEnabled)
+                    item0.setFlags(item0.flags() & ~__.ItemIsEnabled)
+                    item1.setFlags(item1.flags() & ~__.ItemIsEnabled)
 
                 self.locationsTable.setItem(row, 0, item0)
                 self.locationsTable.setItem(row, 1, item1)
@@ -435,8 +435,8 @@ c_ SettingsTree(QTreeWidget):
             key _ ancestor.text(0) + '/' + key
             ancestor _ ancestor.parent()
 
-        d _ item.data(2, Qt.UserRole)
-        self.settings.setValue(key, item.data(2, Qt.UserRole))
+        d _ item.data(2, __.UserRole)
+        self.settings.setValue(key, item.data(2, __.UserRole))
 
         __ self.autoRefresh:
             self.refresh()
@@ -450,7 +450,7 @@ c_ SettingsTree(QTreeWidget):
                 child _ self.childAt(parent, childIndex)
                 child.sT..(1, '')
                 child.sT..(2, '')
-                child.setData(2, Qt.UserRole, N..)
+                child.setData(2, __.UserRole, N..)
                 self.moveItemForward(parent, childIndex, dividerIndex)
             ____
                 child _ self.createItem(group, parent, dividerIndex)
@@ -483,7 +483,7 @@ c_ SettingsTree(QTreeWidget):
             ____
                 child.sT..(1, value.__class__.__name__)
             child.sT..(2, VariantDelegate.displayText(value))
-            child.setData(2, Qt.UserRole, value)
+            child.setData(2, __.UserRole, value)
 
         while dividerIndex < self.childCount(parent):
             self.deleteItem(parent, dividerIndex)
@@ -500,7 +500,7 @@ c_ SettingsTree(QTreeWidget):
             item _ QTreeWidgetItem  after)
 
         item.sT..(0, text)
-        item.setFlags(item.flags() | Qt.ItemIsEditable)
+        item.setFlags(item.flags() | __.ItemIsEditable)
         r_ item
 
     ___ deleteItem  parent, index):
@@ -539,7 +539,7 @@ c_ VariantDelegate(QItemDelegate):
 
         self.boolExp _ QRegExp()
         self.boolExp.setPattern('true|false')
-        self.boolExp.setCaseSensitivity(Qt.CaseInsensitive)
+        self.boolExp.setCaseSensitivity(__.CaseInsensitive)
 
         self.byteArrayExp _ QRegExp()
         self.byteArrayExp.setPattern('[\\x00-\\xff]*')
@@ -578,7 +578,7 @@ c_ VariantDelegate(QItemDelegate):
 
     ___ paint  painter, option, index):
         __ index.column() == 2:
-            value _ index.model().data(index, Qt.UserRole)
+            value _ index.model().data(index, __.UserRole)
             __ no. self.isSupportedType(value):
                 myOption _ QStyleOptionViewItem(option)
                 myOption.state &_ ~QStyle.State_Enabled
@@ -591,7 +591,7 @@ c_ VariantDelegate(QItemDelegate):
         __ index.column() !_ 2:
             r_ N..
 
-        originalValue _ index.model().data(index, Qt.UserRole)
+        originalValue _ index.model().data(index, __.UserRole)
         __ no. self.isSupportedType(originalValue):
             r_ N..
 
@@ -606,7 +606,7 @@ c_ VariantDelegate(QItemDelegate):
             regExp _ self.signedIntegerExp
         ____ isinstance(originalValue, QByteArray):
             regExp _ self.byteArrayExp
-        ____ isinstance(originalValue, QColor):
+        ____ isinstance(originalValue, ?C..):
             regExp _ self.colorExp
         ____ isinstance(originalValue, QDate):
             regExp _ self.dateExp
@@ -630,7 +630,7 @@ c_ VariantDelegate(QItemDelegate):
         r_ lineEdit
 
     ___ setEditorData  editor, index):
-        value _ index.model().data(index, Qt.UserRole)
+        value _ index.model().data(index, __.UserRole)
         __ editor __ no. N..:
             editor.sT..(self.displayText(value))
 
@@ -645,24 +645,24 @@ c_ VariantDelegate(QItemDelegate):
             __ state !_ QValidator.Acceptable:
                 r_
 
-        originalValue _ index.model().data(index, Qt.UserRole)
+        originalValue _ index.model().data(index, __.UserRole)
 
-        __ isinstance(originalValue, QColor):
+        __ isinstance(originalValue, ?C..):
             self.colorExp.exactMatch(text)
-            value _ QColor(min(int(self.colorExp.cap(1)), 255),
+            value _ ?C..(min(int(self.colorExp.cap(1)), 255),
                            min(int(self.colorExp.cap(2)), 255),
                            min(int(self.colorExp.cap(3)), 255),
                            min(int(self.colorExp.cap(4)), 255))
         ____ isinstance(originalValue, QDate):
-            value _ QDate.fromString(text, Qt.ISODate)
+            value _ QDate.fromString(text, __.ISODate)
             __ no. value.isValid
                 r_
         ____ isinstance(originalValue, QDateTime):
-            value _ QDateTime.fromString(text, Qt.ISODate)
+            value _ QDateTime.fromString(text, __.ISODate)
             __ no. value.isValid
                 r_
         ____ isinstance(originalValue, QTime):
-            value _ QTime.fromString(text, Qt.ISODate)
+            value _ QTime.fromString(text, __.ISODate)
             __ no. value.isValid
                 r_
         ____ isinstance(originalValue, QPoint):
@@ -684,12 +684,12 @@ c_ VariantDelegate(QItemDelegate):
         ____
             value _ type(originalValue)(text)
 
-        model.setData(index, self.displayText(value), Qt.DisplayRole)
-        model.setData(index, value, Qt.UserRole)
+        model.setData(index, self.displayText(value), __.DisplayRole)
+        model.setData(index, value, __.UserRole)
 
     @staticmethod
     ___ isSupportedType(value):
-        r_ isinstance(value, (bool, float, int, QByteArray, str, QColor,
+        r_ isinstance(value, (bool, float, int, QByteArray, str, ?C..,
                 QDate, QDateTime, QTime, QPoint, QRect, QSize, list))
 
     @staticmethod
@@ -700,10 +700,10 @@ c_ VariantDelegate(QItemDelegate):
             r_ value
         ____ isinstance(value, float):
             r_ '%g' % value
-        ____ isinstance(value, QColor):
+        ____ isinstance(value, ?C..):
             r_ '(%u,%u,%u,%u)' % (value.red(), value.green(), value.blue(), value.alpha())
         ____ isinstance(value, (QDate, QDateTime, QTime)):
-            r_ value.toString(Qt.ISODate)
+            r_ value.toString(__.ISODate)
         ____ isinstance(value, QPoint):
             r_ '(%d,%d)' % (value.x(), value.y())
         ____ isinstance(value, QRect):

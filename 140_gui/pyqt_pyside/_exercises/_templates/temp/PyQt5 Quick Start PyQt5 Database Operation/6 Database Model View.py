@@ -1,6 +1,6 @@
 ______ sys
 ____ ?.QtSql ______ QSqlDatabase, QSqlQuery, QSqlTableModel
-____ ?.QtCore ______ *
+____ ?.?C.. ______ *
 ____ ?.?W.. ______ *
 
 c_ MainWindow(QWidget):
@@ -33,9 +33,9 @@ c_ MainWindow(QWidget):
         self.model.setTable("person")
         self.model.setEditStrategy(QSqlTableModel.OnFieldChange)
         self.model.select()
-        self.model.setHeaderData(0, Qt.Horizontal, "ID")
-        self.model.setHeaderData(1, Qt.Horizontal, "Name")
-        self.model.setHeaderData(2, Qt.Horizontal, "Address")
+        self.model.setHeaderData(0, __.Horizontal, "ID")
+        self.model.setHeaderData(1, __.Horizontal, "Name")
+        self.model.setHeaderData(2, __.Horizontal, "Address")
 
     ___ onAddRow(self):
         self.model.insertRows(self.model.rowCount(), 1)

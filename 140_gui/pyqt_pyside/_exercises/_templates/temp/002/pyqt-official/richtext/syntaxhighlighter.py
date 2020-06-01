@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QFile, QRegExp, Qt
+____ ?.?C.. ______ QFile, QRegExp, __
 ____ ?.?G.. ______ QFont, QSyntaxHighlighter, QTextCharFormat
 ____ ?.?W.. ______ (?A.., ?FD.., QMainWindow, QMenu,
         ?MB.., QTextEdit)
@@ -120,7 +120,7 @@ c_ Highlighter(QSyntaxHighlighter):
         super(Highlighter, self).__init__(parent)
 
         keywordFormat _ QTextCharFormat()
-        keywordFormat.setForeground(Qt.darkBlue)
+        keywordFormat.setForeground(__.darkBlue)
         keywordFormat.setFontWeight(QFont.Bold)
 
         keywordPatterns _ ["\\bchar\\b", "\\bclass\\b", "\\bconst\\b",
@@ -138,25 +138,25 @@ c_ Highlighter(QSyntaxHighlighter):
 
         classFormat _ QTextCharFormat()
         classFormat.setFontWeight(QFont.Bold)
-        classFormat.setForeground(Qt.darkMagenta)
+        classFormat.setForeground(__.darkMagenta)
         self.highlightingRules.append((QRegExp("\\bQ[A-Za-z]+\\b"),
                 classFormat))
 
         singleLineCommentFormat _ QTextCharFormat()
-        singleLineCommentFormat.setForeground(Qt.red)
+        singleLineCommentFormat.setForeground(__.red)
         self.highlightingRules.append((QRegExp("//[^\n]*"),
                 singleLineCommentFormat))
 
         self.multiLineCommentFormat _ QTextCharFormat()
-        self.multiLineCommentFormat.setForeground(Qt.red)
+        self.multiLineCommentFormat.setForeground(__.red)
 
         quotationFormat _ QTextCharFormat()
-        quotationFormat.setForeground(Qt.darkGreen)
+        quotationFormat.setForeground(__.darkGreen)
         self.highlightingRules.append((QRegExp("\".*\""), quotationFormat))
 
         functionFormat _ QTextCharFormat()
         functionFormat.setFontItalic(True)
-        functionFormat.setForeground(Qt.blue)
+        functionFormat.setForeground(__.blue)
         self.highlightingRules.append((QRegExp("\\b[A-Za-z0-9_]+(?=\\()"),
                 functionFormat))
 

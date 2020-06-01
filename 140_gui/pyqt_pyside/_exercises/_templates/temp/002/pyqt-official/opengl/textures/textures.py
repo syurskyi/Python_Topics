@@ -44,8 +44,8 @@
 
 ______ sys
 
-____ ?.QtCore ______ pyqtSignal, QFileInfo, QPoint, QSize, Qt, QTimer
-____ ?.?G.. ______ (QColor, QImage, QMatrix4x4, QOpenGLShader,
+____ ?.?C.. ______ pyqtSignal, QFileInfo, QPoint, QSize, __, QTimer
+____ ?.?G.. ______ (?C.., QImage, QMatrix4x4, QOpenGLShader,
         QOpenGLShaderProgram, QOpenGLTexture, QOpenGLVersionProfile,
         QSurfaceFormat)
 ____ ?.?W.. ______ ?A.., QGridLayout, QOpenGLWidget, QWidget
@@ -90,7 +90,7 @@ void main(void)
     ___ __init__  parent_None):
         super(GLWidget, self).__init__(parent)
 
-        self.clearColor _ QColor(Qt.black)
+        self.clearColor _ ?C..(__.black)
         self.xRot _ 0
         self.yRot _ 0
         self.zRot _ 0
@@ -181,9 +181,9 @@ void main(void)
         dx _ event.x() - self.lastPos.x()
         dy _ event.y() - self.lastPos.y()
 
-        __ event.buttons() & Qt.LeftButton:
+        __ event.buttons() & __.LeftButton:
             self.rotateBy(8 * dy, 8 * dx, 0)
-        ____ event.buttons() & Qt.RightButton:
+        ____ event.buttons() & __.RightButton:
             self.rotateBy(8 * dy, 0, 8 * dx)
 
         self.lastPos _ event.pos()
@@ -225,7 +225,7 @@ c_ Window(QWidget):
             row _ []
 
             for j in range(Window.NumColumns):
-                clearColor _ QColor()
+                clearColor _ ?C..()
                 clearColor.setHsv(((i * Window.NumColumns) + j) * 255
                                   / (Window.NumRows * Window.NumColumns - 1),
                                   255, 63)

@@ -1,6 +1,6 @@
 ______ sys
 ____ ? ______ ?W.. __ qtw
-____ ? ______ QtCore __ qtc
+____ ? ______ ?C.. __ qtc
 ____ ? ______ ?G.. __ qtg
 ______ Adafruit_DHT
 ____ RPi ______ GPIO
@@ -71,11 +71,11 @@ c_ MainWindow(qtw.QMainWindow):
         widget.setLayout(qtw.QFormLayout())
         self.sCW..(widget)
         p _ widget.palette()
-        p.setColor(qtg.QPalette.WindowText, qtg.QColor('cyan'))
-        p.setColor(qtg.QPalette.Window, qtg.QColor('navy'))
-        p.setColor(qtg.QPalette.Button, qtg.QColor('#335'))
-        p.setColor(qtg.QPalette.ButtonText, qtg.QColor('cyan'))
-        self.setPalette(p)
+        p.sC..(qtg.?P...WindowText, qtg.?C..('cyan'))
+        p.sC..(qtg.?P...Window, qtg.?C..('navy'))
+        p.sC..(qtg.?P...Button, qtg.?C..('#335'))
+        p.sC..(qtg.?P...ButtonText, qtg.?C..('cyan'))
+        self.sP..(p)
 
         # Create readouts for temperature and humidity
         tempview _ qtw.QLCDNumber()

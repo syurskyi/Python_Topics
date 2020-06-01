@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, ?G.., ?W..
+____ ? ______ ?C.., ?G.., ?W..
 
 c_ Ui_AudioDevicesBase(object):
     ___ setupUi  AudioDevicesBase):
@@ -26,7 +26,7 @@ c_ Ui_AudioDevicesBase(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents _ ?W...QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 659, 558))
+        self.scrollAreaWidgetContents.setGeometry(?C...QRect(0, 0, 659, 558))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.gridLayout_4 _ ?W...QGridLayout(self.scrollAreaWidgetContents)
         self.gridLayout_4.setObjectName("gridLayout_4")
@@ -60,8 +60,8 @@ c_ Ui_AudioDevicesBase(object):
         self.actualLabel.setSizePolicy(sizePolicy)
         self.actualLabel.setFrameShape(?W...QFrame.NoFrame)
         self.actualLabel.setFrameShadow(?W...QFrame.Plain)
-        self.actualLabel.setTextFormat(QtCore.Qt.RichText)
-        self.actualLabel.setAlignment(QtCore.Qt.AlignCenter)
+        self.actualLabel.setTextFormat(?C...__.RichText)
+        self.actualLabel.setAlignment(?C...__.AlignCenter)
         self.actualLabel.setObjectName("actualLabel")
         self.gridLayout.addWidget(self.actualLabel, 0, 1, 1, 1)
         self.nearestLabel _ ?W...QLabel(self.testFormatTab)
@@ -72,8 +72,8 @@ c_ Ui_AudioDevicesBase(object):
         self.nearestLabel.setSizePolicy(sizePolicy)
         self.nearestLabel.setFrameShape(?W...QFrame.NoFrame)
         self.nearestLabel.setFrameShadow(?W...QFrame.Plain)
-        self.nearestLabel.setTextFormat(QtCore.Qt.RichText)
-        self.nearestLabel.setAlignment(QtCore.Qt.AlignCenter)
+        self.nearestLabel.setTextFormat(?C...__.RichText)
+        self.nearestLabel.setAlignment(?C...__.AlignCenter)
         self.nearestLabel.setObjectName("nearestLabel")
         self.gridLayout.addWidget(self.nearestLabel, 0, 2, 1, 1)
         self.sampleRateBox _ ?W...QComboBox(self.testFormatTab)
@@ -170,29 +170,29 @@ c_ Ui_AudioDevicesBase(object):
         self.allFormatsTable.setDragDropOverwriteMode F..
         self.allFormatsTable.setSelectionMode(?W...QAbstractItemView.NoSelection)
         self.allFormatsTable.setSelectionBehavior(?W...QAbstractItemView.SelectItems)
-        self.allFormatsTable.setTextElideMode(QtCore.Qt.ElideNone)
+        self.allFormatsTable.setTextElideMode(?C...__.ElideNone)
         self.allFormatsTable.setWordWrap F..
         self.allFormatsTable.setCornerButtonEnabled F..
         self.allFormatsTable.setObjectName("allFormatsTable")
         self.allFormatsTable.setColumnCount(6)
         self.allFormatsTable.setRowCount(0)
         item _ ?W...QTableWidgetItem()
-        item.setTextAlignment(QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter|QtCore.Qt.AlignCenter)
+        item.setTextAlignment(?C...__.AlignHCenter|?C...__.AlignVCenter|?C...__.AlignCenter)
         self.allFormatsTable.setHorizontalHeaderItem(0, item)
         item _ ?W...QTableWidgetItem()
-        item.setTextAlignment(QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter|QtCore.Qt.AlignCenter)
+        item.setTextAlignment(?C...__.AlignHCenter|?C...__.AlignVCenter|?C...__.AlignCenter)
         self.allFormatsTable.setHorizontalHeaderItem(1, item)
         item _ ?W...QTableWidgetItem()
-        item.setTextAlignment(QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter|QtCore.Qt.AlignCenter)
+        item.setTextAlignment(?C...__.AlignHCenter|?C...__.AlignVCenter|?C...__.AlignCenter)
         self.allFormatsTable.setHorizontalHeaderItem(2, item)
         item _ ?W...QTableWidgetItem()
-        item.setTextAlignment(QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter|QtCore.Qt.AlignCenter)
+        item.setTextAlignment(?C...__.AlignHCenter|?C...__.AlignVCenter|?C...__.AlignCenter)
         self.allFormatsTable.setHorizontalHeaderItem(3, item)
         item _ ?W...QTableWidgetItem()
-        item.setTextAlignment(QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter|QtCore.Qt.AlignCenter)
+        item.setTextAlignment(?C...__.AlignHCenter|?C...__.AlignVCenter|?C...__.AlignCenter)
         self.allFormatsTable.setHorizontalHeaderItem(4, item)
         item _ ?W...QTableWidgetItem()
-        item.setTextAlignment(QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter|QtCore.Qt.AlignCenter)
+        item.setTextAlignment(?C...__.AlignHCenter|?C...__.AlignVCenter|?C...__.AlignCenter)
         self.allFormatsTable.setHorizontalHeaderItem(5, item)
         self.allFormatsTable.horizontalHeader().setHighlightSections F..
         self.allFormatsTable.verticalHeader().setVisible F..
@@ -210,10 +210,10 @@ c_ Ui_AudioDevicesBase(object):
 
         self.retranslateUi(AudioDevicesBase)
         self.tabWidget.setCurrentIndex(0)
-        QtCore.QMetaObject.connectSlotsByName(AudioDevicesBase)
+        ?C...QMetaObject.connectSlotsByName(AudioDevicesBase)
 
     ___ retranslateUi  AudioDevicesBase):
-        _translate _ QtCore.QCoreApplication.translate
+        _translate _ ?C...QCoreApplication.translate
         AudioDevicesBase.setWindowTitle(_translate("AudioDevicesBase", "Audio Devices"))
         self.modeLabel.sT..(_translate("AudioDevicesBase", "Mode"))
         self.deviceLabel.sT..(_translate("AudioDevicesBase", "Device"))

@@ -37,8 +37,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ Qt
-____ ?.?G.. ______ QColor
+____ ?.?C.. ______ __
+____ ?.?G.. ______ ?C..
 ____ ?.?W.. ______ QTableWidgetItem
 
 ____ util ______ decode_pos
@@ -61,28 +61,28 @@ c_ SpreadSheetItem(QTableWidgetItem):
         r_ item
 
     ___ formula(self):
-        r_ super(SpreadSheetItem, self).data(Qt.DisplayRole)
+        r_ super(SpreadSheetItem, self).data(__.DisplayRole)
 
     ___ data  role):
-        __ role in (Qt.EditRole, Qt.StatusTipRole):
+        __ role in (__.EditRole, __.StatusTipRole):
             r_ self.formula()
-        __ role == Qt.DisplayRole:
+        __ role == __.DisplayRole:
             r_ self.display()
         t _ str(self.display())
         try:
             number _ int(t)
         except ValueError:
             number _ N..
-        __ role == Qt.TextColorRole:
+        __ role == __.TextColorRole:
             __ number __ N..:
-                r_ QColor(Qt.black)
+                r_ ?C..(__.black)
             ____ number < 0:
-                r_ QColor(Qt.red)
-            r_ QColor(Qt.blue)
+                r_ ?C..(__.red)
+            r_ ?C..(__.blue)
 
-        __ role == Qt.TextAlignmentRole:
+        __ role == __.TextAlignmentRole:
             __ t and (t[0].isdigit() or t[0] == '-'):
-                r_ Qt.AlignRight | Qt.AlignVCenter
+                r_ __.AlignRight | __.AlignVCenter
         r_ super(SpreadSheetItem, self).data(role)
 
     ___ setData  role, value):

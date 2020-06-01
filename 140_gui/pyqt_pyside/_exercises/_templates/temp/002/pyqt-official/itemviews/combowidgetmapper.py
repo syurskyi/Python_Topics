@@ -43,7 +43,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QStringListModel
+____ ?.?C.. ______ QStringListModel
 ____ ?.?G.. ______ QStandardItem, QStandardItemModel
 ____ ?.?W.. ______ (?A.., QComboBox, QDataWidgetMapper,
         QGridLayout, QLabel, QLineEdit, ?PB.., QTextEdit, QWidget)

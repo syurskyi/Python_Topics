@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QDir, QFile, QFileInfo, QIODevice, QUrl
+____ ?.?C.. ______ QDir, QFile, QFileInfo, QIODevice, QUrl
 ____ ?.?W.. ______ (?A.., QDialog, QDialogButtonBox,
         QHBoxLayout, QLabel, QLineEdit, ?MB.., QProgressDialog,
         ?PB.., QVBoxLayout)

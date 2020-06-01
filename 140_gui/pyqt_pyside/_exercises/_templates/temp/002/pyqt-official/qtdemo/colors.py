@@ -42,24 +42,24 @@
 
 ______ sys
 
-____ ?.?G.. ______ QColor, QFont
+____ ?.?G.. ______ ?C.., QFont
 ____ ?.?W.. ______ ?MB.., QWidget
 
 
 c_ Colors(object):
     # Colors:
-    sceneBg1 _ QColor(91, 91, 91)
-    sceneBg1Line _ QColor(114, 108, 104)
-    sceneBg2 _ QColor(0, 0, 0)
-    sceneLine _ QColor(255, 255, 255)
-    paperBg _ QColor(100, 100, 100)
-    menuTextFg _ QColor(255, 0, 0)
-    buttonBgLow _ QColor(255, 255, 255, 90)
-    buttonBgHigh _ QColor(255, 255, 255, 20)
-    buttonText _ QColor(255, 255, 255)
-    tt_green _ QColor(166, 206, 57)
-    fadeOut _ QColor(206, 246, 117, 0)
-    heading _ QColor(190, 230, 80)
+    sceneBg1 _ ?C..(91, 91, 91)
+    sceneBg1Line _ ?C..(114, 108, 104)
+    sceneBg2 _ ?C..(0, 0, 0)
+    sceneLine _ ?C..(255, 255, 255)
+    paperBg _ ?C..(100, 100, 100)
+    menuTextFg _ ?C..(255, 0, 0)
+    buttonBgLow _ ?C..(255, 255, 255, 90)
+    buttonBgHigh _ ?C..(255, 255, 255, 20)
+    buttonText _ ?C..(255, 255, 255)
+    tt_green _ ?C..(166, 206, 57)
+    fadeOut _ ?C..(206, 246, 117, 0)
+    heading _ ?C..(190, 230, 80)
     contentColor _ "<font color='#eeeeee'>"
     glVersion _ "Not detected!"
 

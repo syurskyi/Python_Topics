@@ -42,9 +42,9 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QPoint, QRect, QSize, Qt
+____ ?.?C.. ______ QPoint, QRect, QSize, __
 ____ ?.?G.. ______ (QBrush, QConicalGradient, QLinearGradient, QPainter,
-        QPainterPath, QPalette, QPen, QPixmap, QPolygon, QRadialGradient)
+        QPainterPath, ?P.., QPen, QPixmap, QPolygon, QRadialGradient)
 ____ ?.?W.. ______ (?A.., QCheckBox, QComboBox, QGridLayout,
         QLabel, QSpinBox, QWidget)
 
@@ -74,7 +74,7 @@ c_ RenderArea(QWidget):
         self.transformed _ False
         self.pixmap.load(':/images/qt-logo.png')
 
-        self.setBackgroundRole(QPalette.Base)
+        self.setBackgroundRole(?P...Base)
         self.setAutoFillBackground(True)
 
     ___ minimumSizeHint(self):
@@ -141,7 +141,7 @@ c_ RenderArea(QWidget):
                 ____ self.shape == RenderArea.Rect:
                     painter.drawRect(rect)
                 ____ self.shape == RenderArea.RoundedRect:
-                    painter.drawRoundedRect(rect, 25, 25, Qt.RelativeSize)
+                    painter.drawRoundedRect(rect, 25, 25, __.RelativeSize)
                 ____ self.shape == RenderArea.Ellipse:
                     painter.drawEllipse(rect)
                 ____ self.shape == RenderArea.Arc:
@@ -153,7 +153,7 @@ c_ RenderArea(QWidget):
                 ____ self.shape == RenderArea.Path:
                     painter.drawPath(path)
                 ____ self.shape == RenderArea.Text:
-                    painter.drawText(rect, Qt.AlignCenter,
+                    painter.drawText(rect, __.AlignCenter,
                             "PyQt by\nRiverbank Computing")
                 ____ self.shape == RenderArea.Pixmap:
                     painter.drawPixmap(10, 10, self.pixmap)
@@ -161,11 +161,11 @@ c_ RenderArea(QWidget):
                 painter.restore()
 
         painter.setPen(self.palette().dark().color())
-        painter.setBrush(Qt.NoBrush)
+        painter.setBrush(__.NoBrush)
         painter.drawRect(QRect(0, 0, self.width() - 1, self.height() - 1))
 
 
-IdRole _ Qt.UserRole
+IdRole _ __.UserRole
 
 c_ Window(QWidget):
     ___ __init__(self):
@@ -199,55 +199,55 @@ c_ Window(QWidget):
         penWidthLabel.setBuddy(self.penWidthSpinBox)
 
         self.penStyleComboBox _ QComboBox()
-        self.penStyleComboBox.addItem("Solid", Qt.SolidLine)
-        self.penStyleComboBox.addItem("Dash", Qt.DashLine)
-        self.penStyleComboBox.addItem("Dot", Qt.DotLine)
-        self.penStyleComboBox.addItem("Dash Dot", Qt.DashDotLine)
-        self.penStyleComboBox.addItem("Dash Dot Dot", Qt.DashDotDotLine)
-        self.penStyleComboBox.addItem("None", Qt.NoPen)
+        self.penStyleComboBox.addItem("Solid", __.SolidLine)
+        self.penStyleComboBox.addItem("Dash", __.DashLine)
+        self.penStyleComboBox.addItem("Dot", __.DotLine)
+        self.penStyleComboBox.addItem("Dash Dot", __.DashDotLine)
+        self.penStyleComboBox.addItem("Dash Dot Dot", __.DashDotDotLine)
+        self.penStyleComboBox.addItem("None", __.NoPen)
 
         penStyleLabel _ QLabel("&Pen Style:")
         penStyleLabel.setBuddy(self.penStyleComboBox)
 
         self.penCapComboBox _ QComboBox()
-        self.penCapComboBox.addItem("Flat", Qt.FlatCap)
-        self.penCapComboBox.addItem("Square", Qt.SquareCap)
-        self.penCapComboBox.addItem("Round", Qt.RoundCap)
+        self.penCapComboBox.addItem("Flat", __.FlatCap)
+        self.penCapComboBox.addItem("Square", __.SquareCap)
+        self.penCapComboBox.addItem("Round", __.RoundCap)
 
         penCapLabel _ QLabel("Pen &Cap:")
         penCapLabel.setBuddy(self.penCapComboBox)
 
         self.penJoinComboBox _ QComboBox()
-        self.penJoinComboBox.addItem("Miter", Qt.MiterJoin)
-        self.penJoinComboBox.addItem("Bevel", Qt.BevelJoin)
-        self.penJoinComboBox.addItem("Round", Qt.RoundJoin)
+        self.penJoinComboBox.addItem("Miter", __.MiterJoin)
+        self.penJoinComboBox.addItem("Bevel", __.BevelJoin)
+        self.penJoinComboBox.addItem("Round", __.RoundJoin)
 
         penJoinLabel _ QLabel("Pen &Join:")
         penJoinLabel.setBuddy(self.penJoinComboBox)
 
         self.brushStyleComboBox _ QComboBox()
         self.brushStyleComboBox.addItem("Linear Gradient",
-                Qt.LinearGradientPattern)
+                __.LinearGradientPattern)
         self.brushStyleComboBox.addItem("Radial Gradient",
-                Qt.RadialGradientPattern)
+                __.RadialGradientPattern)
         self.brushStyleComboBox.addItem("Conical Gradient",
-                Qt.ConicalGradientPattern)
-        self.brushStyleComboBox.addItem("Texture", Qt.TexturePattern)
-        self.brushStyleComboBox.addItem("Solid", Qt.SolidPattern)
-        self.brushStyleComboBox.addItem("Horizontal", Qt.HorPattern)
-        self.brushStyleComboBox.addItem("Vertical", Qt.VerPattern)
-        self.brushStyleComboBox.addItem("Cross", Qt.CrossPattern)
-        self.brushStyleComboBox.addItem("Backward Diagonal", Qt.BDiagPattern)
-        self.brushStyleComboBox.addItem("Forward Diagonal", Qt.FDiagPattern)
-        self.brushStyleComboBox.addItem("Diagonal Cross", Qt.DiagCrossPattern)
-        self.brushStyleComboBox.addItem("Dense 1", Qt.Dense1Pattern)
-        self.brushStyleComboBox.addItem("Dense 2", Qt.Dense2Pattern)
-        self.brushStyleComboBox.addItem("Dense 3", Qt.Dense3Pattern)
-        self.brushStyleComboBox.addItem("Dense 4", Qt.Dense4Pattern)
-        self.brushStyleComboBox.addItem("Dense 5", Qt.Dense5Pattern)
-        self.brushStyleComboBox.addItem("Dense 6", Qt.Dense6Pattern)
-        self.brushStyleComboBox.addItem("Dense 7", Qt.Dense7Pattern)
-        self.brushStyleComboBox.addItem("None", Qt.NoBrush)
+                __.ConicalGradientPattern)
+        self.brushStyleComboBox.addItem("Texture", __.TexturePattern)
+        self.brushStyleComboBox.addItem("Solid", __.SolidPattern)
+        self.brushStyleComboBox.addItem("Horizontal", __.HorPattern)
+        self.brushStyleComboBox.addItem("Vertical", __.VerPattern)
+        self.brushStyleComboBox.addItem("Cross", __.CrossPattern)
+        self.brushStyleComboBox.addItem("Backward Diagonal", __.BDiagPattern)
+        self.brushStyleComboBox.addItem("Forward Diagonal", __.FDiagPattern)
+        self.brushStyleComboBox.addItem("Diagonal Cross", __.DiagCrossPattern)
+        self.brushStyleComboBox.addItem("Dense 1", __.Dense1Pattern)
+        self.brushStyleComboBox.addItem("Dense 2", __.Dense2Pattern)
+        self.brushStyleComboBox.addItem("Dense 3", __.Dense3Pattern)
+        self.brushStyleComboBox.addItem("Dense 4", __.Dense4Pattern)
+        self.brushStyleComboBox.addItem("Dense 5", __.Dense5Pattern)
+        self.brushStyleComboBox.addItem("Dense 6", __.Dense6Pattern)
+        self.brushStyleComboBox.addItem("Dense 7", __.Dense7Pattern)
+        self.brushStyleComboBox.addItem("None", __.NoBrush)
 
         brushStyleLabel _ QLabel("&Brush Style:")
         brushStyleLabel.setBuddy(self.brushStyleComboBox)
@@ -270,20 +270,20 @@ c_ Window(QWidget):
         mainLayout.setColumnStretch(3, 1)
         mainLayout.addWidget(self.renderArea, 0, 0, 1, 4)
         mainLayout.setRowMinimumHeight(1, 6)
-        mainLayout.addWidget(shapeLabel, 2, 1, Qt.AlignRight)
+        mainLayout.addWidget(shapeLabel, 2, 1, __.AlignRight)
         mainLayout.addWidget(self.shapeComboBox, 2, 2)
-        mainLayout.addWidget(penWidthLabel, 3, 1, Qt.AlignRight)
+        mainLayout.addWidget(penWidthLabel, 3, 1, __.AlignRight)
         mainLayout.addWidget(self.penWidthSpinBox, 3, 2)
-        mainLayout.addWidget(penStyleLabel, 4, 1, Qt.AlignRight)
+        mainLayout.addWidget(penStyleLabel, 4, 1, __.AlignRight)
         mainLayout.addWidget(self.penStyleComboBox, 4, 2)
-        mainLayout.addWidget(penCapLabel, 5, 1, Qt.AlignRight)
+        mainLayout.addWidget(penCapLabel, 5, 1, __.AlignRight)
         mainLayout.addWidget(self.penCapComboBox, 5, 2)
-        mainLayout.addWidget(penJoinLabel, 6, 1, Qt.AlignRight)
+        mainLayout.addWidget(penJoinLabel, 6, 1, __.AlignRight)
         mainLayout.addWidget(self.penJoinComboBox, 6, 2)
-        mainLayout.addWidget(brushStyleLabel, 7, 1, Qt.AlignRight)
+        mainLayout.addWidget(brushStyleLabel, 7, 1, __.AlignRight)
         mainLayout.addWidget(self.brushStyleComboBox, 7, 2)
         mainLayout.setRowMinimumHeight(8, 6)
-        mainLayout.addWidget(otherOptionsLabel, 9, 1, Qt.AlignRight)
+        mainLayout.addWidget(otherOptionsLabel, 9, 1, __.AlignRight)
         mainLayout.addWidget(self.antialiasingCheckBox, 9, 2)
         mainLayout.addWidget(self.transformationsCheckBox, 10, 2)
         self.setLayout(mainLayout)
@@ -302,41 +302,41 @@ c_ Window(QWidget):
 
     ___ penChanged(self):
         width _ self.penWidthSpinBox.value()
-        style _ Qt.PenStyle(self.penStyleComboBox.itemData(
+        style _ __.PenStyle(self.penStyleComboBox.itemData(
                 self.penStyleComboBox.currentIndex(), IdRole))
-        cap _ Qt.PenCapStyle(self.penCapComboBox.itemData(
+        cap _ __.PenCapStyle(self.penCapComboBox.itemData(
                 self.penCapComboBox.currentIndex(), IdRole))
-        join _ Qt.PenJoinStyle(self.penJoinComboBox.itemData(
+        join _ __.PenJoinStyle(self.penJoinComboBox.itemData(
                 self.penJoinComboBox.currentIndex(), IdRole))
 
-        self.renderArea.setPen(QPen(Qt.blue, width, style, cap, join))
+        self.renderArea.setPen(QPen(__.blue, width, style, cap, join))
 
     ___ brushChanged(self):
-        style _ Qt.BrushStyle(self.brushStyleComboBox.itemData(
+        style _ __.BrushStyle(self.brushStyleComboBox.itemData(
                 self.brushStyleComboBox.currentIndex(), IdRole))
 
-        __ style == Qt.LinearGradientPattern:
+        __ style == __.LinearGradientPattern:
             linearGradient _ QLinearGradient(0, 0, 100, 100)
-            linearGradient.setColorAt(0.0, Qt.white)
-            linearGradient.setColorAt(0.2, Qt.green)
-            linearGradient.setColorAt(1.0, Qt.black)
+            linearGradient.setColorAt(0.0, __.white)
+            linearGradient.setColorAt(0.2, __.green)
+            linearGradient.setColorAt(1.0, __.black)
             self.renderArea.setBrush(QBrush(linearGradient))
-        ____ style == Qt.RadialGradientPattern:
+        ____ style == __.RadialGradientPattern:
             radialGradient _ QRadialGradient(50, 50, 50, 70, 70)
-            radialGradient.setColorAt(0.0, Qt.white)
-            radialGradient.setColorAt(0.2, Qt.green)
-            radialGradient.setColorAt(1.0, Qt.black)
+            radialGradient.setColorAt(0.0, __.white)
+            radialGradient.setColorAt(0.2, __.green)
+            radialGradient.setColorAt(1.0, __.black)
             self.renderArea.setBrush(QBrush(radialGradient))
-        ____ style == Qt.ConicalGradientPattern:
+        ____ style == __.ConicalGradientPattern:
             conicalGradient _ QConicalGradient(50, 50, 150)
-            conicalGradient.setColorAt(0.0, Qt.white)
-            conicalGradient.setColorAt(0.2, Qt.green)
-            conicalGradient.setColorAt(1.0, Qt.black)
+            conicalGradient.setColorAt(0.0, __.white)
+            conicalGradient.setColorAt(0.2, __.green)
+            conicalGradient.setColorAt(1.0, __.black)
             self.renderArea.setBrush(QBrush(conicalGradient))
-        ____ style == Qt.TexturePattern:
+        ____ style == __.TexturePattern:
             self.renderArea.setBrush(QBrush(QPixmap(':/images/brick.png')))
         ____
-            self.renderArea.setBrush(QBrush(Qt.green, style))
+            self.renderArea.setBrush(QBrush(__.green, style))
 
 
 __ __name__ == '__main__':

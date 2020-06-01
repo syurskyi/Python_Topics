@@ -43,8 +43,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ pyqtProperty, Qt, QVariant
-____ ?.?G.. ______ QColor
+____ ?.?C.. ______ pyqtProperty, __, QVariant
+____ ?.?G.. ______ ?C..
 ____ ?.?W.. ______ (?A.., QComboBox, QGridLayout,
         QItemEditorCreatorBase, QItemEditorFactory, QTableWidget,
         QTableWidgetItem, QWidget)
@@ -57,19 +57,19 @@ c_ ColorListEditor(QComboBox):
         self.populateList()
 
     ___ getColor(self):
-        color _ self.itemData(self.currentIndex(), Qt.DecorationRole)
+        color _ self.itemData(self.currentIndex(), __.DecorationRole)
         r_ color
 
-    ___ setColor  color):
-        self.setCurrentIndex(self.findData(color, Qt.DecorationRole))
+    ___ sC..  color):
+        self.setCurrentIndex(self.findData(color, __.DecorationRole))
 
-    color _ pyqtProperty(QColor, getColor, setColor, user_True)
+    color _ pyqtProperty(?C.., getColor, sC.., user_True)
 
     ___ populateList(self):
-        for i, colorName in enumerate(QColor.colorNames()):
-            color _ QColor(colorName)
+        for i, colorName in enumerate(?C...colorNames()):
+            color _ ?C..(colorName)
             self.insertItem(i, colorName)
-            self.setItemData(i, color, Qt.DecorationRole)
+            self.setItemData(i, color, __.DecorationRole)
 
 
 c_ ColorListItemEditorCreator(QItemEditorCreatorBase):
@@ -89,9 +89,9 @@ c_ Window(QWidget):
 
     ___ createGUI(self):
         tableData _ [
-            ("Alice", QColor('aliceblue')),
-            ("Neptun", QColor('aquamarine')),
-            ("Ferdinand", QColor('springgreen'))
+            ("Alice", ?C..('aliceblue')),
+            ("Neptun", ?C..('aquamarine')),
+            ("Ferdinand", ?C..('springgreen'))
         ]
 
         table _ QTableWidget(3, 2)
@@ -102,7 +102,7 @@ c_ Window(QWidget):
         for i, (name, color) in enumerate(tableData):
             nameItem _ QTableWidgetItem(name)
             colorItem _ QTableWidgetItem()
-            colorItem.setData(Qt.DisplayRole, color)
+            colorItem.setData(__.DisplayRole, color)
             table.setItem(i, 0, nameItem)
             table.setItem(i, 1, colorItem)
 

@@ -25,8 +25,8 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 ______ math
 
-____ ?.QtCore ______ pyqtProperty, pyqtSlot, QPointF, QSize
-____ ?.?G.. ______ QBrush, QColor, QPainter, QPainterPath, QRadialGradient
+____ ?.?C.. ______ pyqtProperty, pyqtSlot, QPointF, QSize
+____ ?.?G.. ______ QBrush, ?C.., QPainter, QPainterPath, QRadialGradient
 ____ ?.?W.. ______ ?A.., QWidget
 
 
@@ -48,8 +48,8 @@ c_ PolygonWidget(QWidget):
         
         self.createPath()
         
-        self._innerColor _ QColor(255, 255, 128)
-        self._outerColor _ QColor(255, 0, 128)
+        self._innerColor _ ?C..(255, 255, 128)
+        self._outerColor _ ?C..(255, 0, 128)
         
         self.createGradient()
     
@@ -58,7 +58,7 @@ c_ PolygonWidget(QWidget):
         painter _ QPainter()
         painter.begin(self)
         painter.setRenderHint(QPainter.Antialiasing)
-        painter.setBrush(QBrush(QColor(192, 192, 255)))
+        painter.setBrush(QBrush(?C..(192, 192, 255)))
         painter.drawRect(event.rect())
         
         painter.translate(self.width()/2.0, self.height()/2.0)
@@ -91,8 +91,8 @@ c_ PolygonWidget(QWidget):
     
         center _ QPointF(0, 0)
         self.gradient _ QRadialGradient(center, self._outerRadius, center)
-        self.gradient.setColorAt(0.5, QColor(self._innerColor))
-        self.gradient.setColorAt(1.0, QColor(self._outerColor))
+        self.gradient.setColorAt(0.5, ?C..(self._innerColor))
+        self.gradient.setColorAt(1.0, ?C..(self._outerColor))
     
     # The angle property is implemented using the getAngle() and setAngle()
     # methods.
@@ -166,7 +166,7 @@ c_ PolygonWidget(QWidget):
         self.createGradient()
         self.update()
     
-    innerColor _ pyqtProperty(QColor, getInnerColor, setInnerColor)
+    innerColor _ pyqtProperty(?C.., getInnerColor, setInnerColor)
     
     # The outerColor property is implemented using the getOuterColor() and
     # setOuterColor() methods.
@@ -179,7 +179,7 @@ c_ PolygonWidget(QWidget):
         self.createGradient()
         self.update()
     
-    outerColor _ pyqtProperty(QColor, getOuterColor, setOuterColor)
+    outerColor _ pyqtProperty(?C.., getOuterColor, setOuterColor)
 
 
 __ __name__ == "__main__":

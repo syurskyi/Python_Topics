@@ -42,8 +42,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QDir, QEvent, Qt, QT_TRANSLATE_NOOP, QTranslator
-____ ?.?G.. ______ QColor, QPalette
+____ ?.?C.. ______ QDir, QEvent, __, QT_TRANSLATE_NOOP, QTranslator
+____ ?.?G.. ______ ?C.., ?P..
 ____ ?.?W.. ______ (?A.., ?A.., QCheckBox, QDialog,
         QDialogButtonBox, QGridLayout, QGroupBox, QListWidget, QMainWindow,
         QRadioButton, QVBoxLayout, QWidget)
@@ -53,7 +53,7 @@ ______ i18n_rc
 
 c_ LanguageChooser(QDialog):
     ___ __init__  parent_None):
-        super(LanguageChooser, self).__init__(parent, Qt.WindowStaysOnTopHint)
+        super(LanguageChooser, self).__init__(parent, __.WindowStaysOnTopHint)
 
         self.qmFileForCheckBoxMap _ {}
         self.mainWindowForCheckBoxMap _ {} 
@@ -122,7 +122,7 @@ c_ LanguageChooser(QDialog):
             # the main window when the program terminates.  We ensure this by
             # making the main window a child of this one.
             window _ MainWindow(self)
-            window.setPalette(QPalette(self.colorForLanguage(checkBox.text())))
+            window.sP..(?P..(self.colorForLanguage(checkBox.text())))
 
             window.installEventFilter(self)
             self.mainWindowForCheckBoxMap[checkBox] _ window
@@ -154,7 +154,7 @@ c_ LanguageChooser(QDialog):
         red _ 156 + (hashValue & 0x3F)
         green _ 156 + ((hashValue >> 6) & 0x3F)
         blue _ 156 + ((hashValue >> 12) & 0x3F)
-        r_ QColor(red, green, blue)
+        r_ ?C..(red, green, blue)
 
 
 c_ MainWindow ?MW..
@@ -184,14 +184,14 @@ c_ MainWindow ?MW..
                 triggered_QApplication.instance().quit)
 
         fileMenu _ self.mB.. .aM..(self.tr("&File"))
-        fileMenu.setPalette(QPalette(Qt.red))
+        fileMenu.sP..(?P..(__.red))
         fileMenu.aA..(exitAction)
 
         self.setWindowTitle(self.tr("Language: %s") % self.tr("English"))
         self.statusBar().showMessage(self.tr("Internationalization Example"))
 
         __ self.tr("LTR") == "RTL":
-            self.setLayoutDirection(Qt.RightToLeft)
+            self.setLayoutDirection(__.RightToLeft)
 
     ___ createGroupBox(self):
         self.groupBox _ QGroupBox(self.tr("View"))

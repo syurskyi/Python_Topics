@@ -42,8 +42,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QFileInfo, QSize, Qt
-____ ?.?G.. ______ QMovie, QPalette
+____ ?.?C.. ______ QFileInfo, QSize, __
+____ ?.?G.. ______ QMovie, ?P..
 ____ ?.?W.. ______ (?A.., QCheckBox, ?FD.., QGridLayout,
         QHBoxLayout, QLabel, QSizePolicy, QSlider, QSpinBox, QStyle,
         QToolButton, QVBoxLayout, QWidget)
@@ -57,9 +57,9 @@ c_ MoviePlayer(QWidget):
         self.movie.setCacheMode(QMovie.CacheAll)
 
         self.movieLabel _ QLabel("No movie loaded")
-        self.movieLabel.setAlignment(Qt.AlignCenter)
+        self.movieLabel.setAlignment(__.AlignCenter)
         self.movieLabel.setSizePolicy(QSizePolicy.Ignored, QSizePolicy.Ignored)
-        self.movieLabel.setBackgroundRole(QPalette.Dark)
+        self.movieLabel.setBackgroundRole(?P...Dark)
         self.movieLabel.setAutoFillBackground(True)
 
         self.currentMovieDirectory _ ''
@@ -139,7 +139,7 @@ c_ MoviePlayer(QWidget):
 
         self.frameLabel _ QLabel("Current frame:")
 
-        self.frameSlider _ QSlider(Qt.Horizontal)
+        self.frameSlider _ QSlider(__.Horizontal)
         self.frameSlider.setTickPosition(QSlider.TicksBelow)
         self.frameSlider.setTickInterval(10)
 

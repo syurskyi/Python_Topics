@@ -44,7 +44,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QBuffer, QDataStream, QSharedMemory
+____ ?.?C.. ______ QBuffer, QDataStream, QSharedMemory
 ____ ?.?G.. ______ QImage, QPixmap
 ____ ?.?W.. ______ ?A.., QDialog, ?FD..
 

@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ Qt
+____ ?.?C.. ______ __
 ____ ?.?W.. ______ (?A.., QCheckBox, QGridLayout, QGroupBox,
         QMenu, ?PB.., QRadioButton, QVBoxLayout, QWidget)
 
@@ -110,7 +110,7 @@ c_ Window(QWidget):
         checkBox2.setChecked(True)
         tristateBox _ QCheckBox("Tri-&state button")
         tristateBox.setTristate(True)
-        tristateBox.setCheckState(Qt.PartiallyChecked)
+        tristateBox.setCheckState(__.PartiallyChecked)
 
         vbox _ QVBoxLayout()
         vbox.addWidget(checkBox1)

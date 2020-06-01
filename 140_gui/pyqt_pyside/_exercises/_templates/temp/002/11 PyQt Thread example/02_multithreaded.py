@@ -1,4 +1,4 @@
-____ ?.QtCore ______ *
+____ ?.?C.. ______ *
 ____ ?.?W.. ______ *
 ____ requests ______ Session
 ____ threading ______ Thread
@@ -11,7 +11,7 @@ server _ Session()
 # GUI:
 app _ ?
 text_area _ ?PTE..
-text_area.setFocusPolicy(Qt.NoFocus)
+text_area.setFocusPolicy(__.NoFocus)
 message _ QLineEdit()
 layout _ QVBoxLayout()
 layout.addWidget(text_area)

@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ pyqtSignal, pyqtSlot, Q_CLASSINFO
+____ ?.?C.. ______ pyqtSignal, pyqtSlot, Q_CLASSINFO
 ____ ?.?W.. ______ ?A.., QDialog, QMainWindow, ?MB..
 ____ ?.QtDBus ______ (QDBusAbstractAdaptor, QDBusAbstractInterface,
         QDBusConnection, QDBusMessage)

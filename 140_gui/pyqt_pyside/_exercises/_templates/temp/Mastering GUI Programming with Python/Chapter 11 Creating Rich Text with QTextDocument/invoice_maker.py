@@ -1,7 +1,7 @@
 ______ sys
 ____ ? ______ ?W.. __ qtw
 ____ ? ______ ?G.. __ qtg
-____ ? ______ QtCore __ qtc
+____ ? ______ ?C.. __ qtc
 
 
 c_ InvoiceForm(qtw.QWidget):
@@ -137,7 +137,7 @@ c_ InvoiceView(qtw.QTextEdit):
         address_format _ qtg.QTextBlockFormat()
         address_format.setLineHeight(
             150, qtg.QTextBlockFormat.ProportionalHeight)
-        address_format.setAlignment(qtc.Qt.AlignRight)
+        address_format.setAlignment(qtc.__.AlignRight)
         address_format.setRightMargin(25)
 
         cursor.insertBlock(address_format)

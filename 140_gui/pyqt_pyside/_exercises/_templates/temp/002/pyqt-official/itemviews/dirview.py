@@ -45,7 +45,7 @@
 
 ______ sys
 
-____ ?.QtCore ______ (QCommandLineOption, QCommandLineParser,
+____ ?.?C.. ______ (QCommandLineOption, QCommandLineParser,
         QCoreApplication, QDir, QT_VERSION_STR)
 ____ ?.?W.. ______ (?A.., QFileIconProvider, QFileSystemModel,
         QTreeView)

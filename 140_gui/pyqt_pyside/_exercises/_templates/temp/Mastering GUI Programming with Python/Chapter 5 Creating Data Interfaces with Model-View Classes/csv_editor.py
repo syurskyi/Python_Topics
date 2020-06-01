@@ -1,6 +1,6 @@
 ______ sys
 ____ ? ______ ?W.. __ qtw
-____ ? ______ QtCore __ qtc
+____ ? ______ ?C.. __ qtc
 
 ______ csv
 
@@ -27,14 +27,14 @@ c_ CsvTableModel(qtc.QAbstractTableModel):
         # original if statement:
         # if role == qtc.Qt.DisplayRole:
         # Add EditRole so that the cell is not cleared when editing
-        __ role in (qtc.Qt.DisplayRole, qtc.Qt.EditRole):
+        __ role in (qtc.__.DisplayRole, qtc.__.EditRole):
             r_ self._data[index.row()][index.column()]
 
     # Additional features methods:
 
     ___ headerData  section, orientation, role):
 
-        __ orientation == qtc.Qt.Horizontal and role == qtc.Qt.DisplayRole:
+        __ orientation == qtc.__.Horizontal and role == qtc.__.DisplayRole:
             r_ self._headers[section]
         ____
             r_ super().headerData(section, orientation, role)
@@ -42,17 +42,17 @@ c_ CsvTableModel(qtc.QAbstractTableModel):
     ___ sort  column, order):
         self.layoutAboutToBeChanged.emit()  # needs to be emitted before a sort
         self._data.sort(key_lambda x: x[column])
-        __ order == qtc.Qt.DescendingOrder:
+        __ order == qtc.__.DescendingOrder:
             self._data.reverse()
         self.layoutChanged.emit()  # needs to be emitted after a sort
 
     # Methods for Read/Write
 
     ___ flags  index):
-        r_ super().flags(index) | qtc.Qt.ItemIsEditable
+        r_ super().flags(index) | qtc.__.ItemIsEditable
 
     ___ setData  index, value, role):
-        __ index.isValid() and role == qtc.Qt.EditRole:
+        __ index.isValid() and role == qtc.__.EditRole:
             self._data[index.row()][index.column()] _ value
             self.dataChanged.emit(index, index, [role])
             r_ True

@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QPoint, QRect, QSize, Qt
+____ ?.?C.. ______ QPoint, QRect, QSize, __
 ____ ?.?W.. ______ (?A.., QLayout, ?PB.., QSizePolicy,
         QWidget)
 
@@ -97,7 +97,7 @@ c_ FlowLayout(QLayout):
         r_ N..
 
     ___ expandingDirections(self):
-        r_ Qt.Orientations(Qt.Orientation(0))
+        r_ __.Orientations(__.Orientation(0))
 
     ___ hasHeightForWidth(self):
         r_ True
@@ -131,8 +131,8 @@ c_ FlowLayout(QLayout):
 
         for item in self.itemList:
             wid _ item.widget()
-            spaceX _ self.spacing() + wid.style().layoutSpacing(QSizePolicy.PushButton, QSizePolicy.PushButton, Qt.Horizontal)
-            spaceY _ self.spacing() + wid.style().layoutSpacing(QSizePolicy.PushButton, QSizePolicy.PushButton, Qt.Vertical)
+            spaceX _ self.spacing() + wid.style().layoutSpacing(QSizePolicy.PushButton, QSizePolicy.PushButton, __.Horizontal)
+            spaceY _ self.spacing() + wid.style().layoutSpacing(QSizePolicy.PushButton, QSizePolicy.PushButton, __.Vertical)
             nextX _ x + item.sizeHint().width() + spaceX
             __ nextX - spaceX > rect.right() and lineHeight > 0:
                 x _ rect.x()

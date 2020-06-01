@@ -42,8 +42,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QDir, Qt
-____ ?.?G.. ______ QImage, QPainter, QPalette, QPixmap
+____ ?.?C.. ______ QDir, __
+____ ?.?G.. ______ QImage, QPainter, ?P.., QPixmap
 ____ ?.?W.. ______ (?A.., ?A.., ?FD.., QLabel,
         QMainWindow, QMenu, ?MB.., QScrollArea, QSizePolicy)
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
@@ -57,12 +57,12 @@ c_ ImageViewer ?MW..
         self.scaleFactor _ 0.0
 
         self.imageLabel _ QLabel()
-        self.imageLabel.setBackgroundRole(QPalette.Base)
+        self.imageLabel.setBackgroundRole(?P...Base)
         self.imageLabel.setSizePolicy(QSizePolicy.Ignored, QSizePolicy.Ignored)
         self.imageLabel.setScaledContents(True)
 
         self.scrollArea _ QScrollArea()
-        self.scrollArea.setBackgroundRole(QPalette.Dark)
+        self.scrollArea.setBackgroundRole(?P...Dark)
         self.scrollArea.setWidget(self.imageLabel)
         self.sCW..(self.scrollArea)
 
@@ -98,7 +98,7 @@ c_ ImageViewer ?MW..
             painter _ QPainter(self.printer)
             rect _ painter.viewport()
             size _ self.imageLabel.pixmap().size()
-            size.scale(rect.size(), Qt.KeepAspectRatio)
+            size.scale(rect.size(), __.KeepAspectRatio)
             painter.setViewport(rect.x(), rect.y(), size.width(), size.height())
             painter.setWindow(self.imageLabel.pixmap().rect())
             painter.drawPixmap(0, 0, self.imageLabel.pixmap())

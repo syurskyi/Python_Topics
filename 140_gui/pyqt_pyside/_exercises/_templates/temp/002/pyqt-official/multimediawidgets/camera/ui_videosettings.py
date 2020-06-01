@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, ?G.., ?W..
+____ ? ______ ?C.., ?G.., ?W..
 
 c_ Ui_VideoSettingsUi(object):
     ___ setupUi  VideoSettingsUi):
@@ -20,7 +20,7 @@ c_ Ui_VideoSettingsUi(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents _ ?W...QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 543, 250))
+        self.scrollAreaWidgetContents.setGeometry(?C...QRect(0, 0, 543, 250))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.gridLayout_3 _ ?W...QGridLayout(self.scrollAreaWidgetContents)
         self.gridLayout_3.setObjectName("gridLayout_3")
@@ -45,7 +45,7 @@ c_ Ui_VideoSettingsUi(object):
         self.gridLayout.addWidget(self.label_3, 4, 0, 1, 1)
         self.audioQualitySlider _ ?W...QSlider(self.groupBox)
         self.audioQualitySlider.setMaximum(4)
-        self.audioQualitySlider.setOrientation(QtCore.Qt.Horizontal)
+        self.audioQualitySlider.setOrientation(?C...__.Horizontal)
         self.audioQualitySlider.setObjectName("audioQualitySlider")
         self.gridLayout.addWidget(self.audioQualitySlider, 4, 1, 1, 1)
         self.gridLayout_3.addWidget(self.groupBox, 0, 0, 1, 1)
@@ -76,7 +76,7 @@ c_ Ui_VideoSettingsUi(object):
         self.gridLayout_2.addWidget(self.label_7, 6, 0, 1, 1)
         self.videoQualitySlider _ ?W...QSlider(self.groupBox_2)
         self.videoQualitySlider.setMaximum(4)
-        self.videoQualitySlider.setOrientation(QtCore.Qt.Horizontal)
+        self.videoQualitySlider.setOrientation(?C...__.Horizontal)
         self.videoQualitySlider.setObjectName("videoQualitySlider")
         self.gridLayout_2.addWidget(self.videoQualitySlider, 6, 1, 1, 1)
         self.gridLayout_3.addWidget(self.groupBox_2, 0, 1, 3, 1)
@@ -91,7 +91,7 @@ c_ Ui_VideoSettingsUi(object):
         spacerItem _ ?W...QSpacerItem(20, 14, ?W...QSizePolicy.Minimum, ?W...QSizePolicy.Expanding)
         self.gridLayout_4.addItem(spacerItem, 1, 0, 1, 1)
         self.buttonBox _ ?W...QDialogButtonBox(VideoSettingsUi)
-        self.buttonBox.setOrientation(QtCore.Qt.Horizontal)
+        self.buttonBox.setOrientation(?C...__.Horizontal)
         self.buttonBox.setStandardButtons(?W...QDialogButtonBox.Cancel|?W...QDialogButtonBox.Ok)
         self.buttonBox.setObjectName("buttonBox")
         self.gridLayout_4.addWidget(self.buttonBox, 2, 0, 1, 1)
@@ -99,10 +99,10 @@ c_ Ui_VideoSettingsUi(object):
         self.retranslateUi(VideoSettingsUi)
         self.buttonBox.accepted.c..(VideoSettingsUi.accept)
         self.buttonBox.rejected.c..(VideoSettingsUi.reject)
-        QtCore.QMetaObject.connectSlotsByName(VideoSettingsUi)
+        ?C...QMetaObject.connectSlotsByName(VideoSettingsUi)
 
     ___ retranslateUi  VideoSettingsUi):
-        _translate _ QtCore.QCoreApplication.translate
+        _translate _ ?C...QCoreApplication.translate
         VideoSettingsUi.setWindowTitle(_translate("VideoSettingsUi", "Dialog"))
         self.groupBox.setTitle(_translate("VideoSettingsUi", "Audio"))
         self.label_2.sT..(_translate("VideoSettingsUi", "Audio Codec:"))

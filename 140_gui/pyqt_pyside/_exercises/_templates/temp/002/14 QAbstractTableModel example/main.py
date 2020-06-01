@@ -1,5 +1,5 @@
 ____ ?.?W.. ______ *
-____ ?.QtCore ______ *
+____ ?.?C.. ______ *
 
 headers _ ["Scientist name", "Birthdate", "Contribution"]
 rows _ [("Newton", "1643-01-04", "Classical mechanics"),
@@ -12,11 +12,11 @@ c_ TableModel(QAbstractTableModel):
     ___ columnCount  parent):
         r_ len(headers)
     ___ data  index, role):
-        __ role !_ Qt.DisplayRole:
+        __ role !_ __.DisplayRole:
             r_ QVariant()
         r_ rows[index.row()][index.column()]
     ___ headerData  section, orientation, role):
-        __ role !_ Qt.DisplayRole or orientation !_ Qt.Horizontal:
+        __ role !_ __.DisplayRole or orientation !_ __.Horizontal:
             r_ QVariant()
         r_ headers[section]
 

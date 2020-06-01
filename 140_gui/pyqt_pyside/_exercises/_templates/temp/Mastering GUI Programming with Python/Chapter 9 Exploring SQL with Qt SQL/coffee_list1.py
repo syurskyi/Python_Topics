@@ -1,6 +1,6 @@
 ______ sys
 ____ ? ______ ?W.. __ qtw
-____ ? ______ QtCore __ qtc
+____ ? ______ ?C.. __ qtc
 ____ ? ______ ?G.. __ qtg
 ____ ? ______ QtSql __ qts
 
@@ -98,8 +98,8 @@ c_ MainWindow(qtw.QMainWindow):
         self.stack.addWidget(self.coffee_list)
         self.stack.setCurrentWidget(self.coffee_list)
 
-        coffees.setHeaderData(1, qtc.Qt.Horizontal, 'Brand')
-        coffees.setHeaderData(2, qtc.Qt.Horizontal, 'Product')
+        coffees.setHeaderData(1, qtc.__.Horizontal, 'Brand')
+        coffees.setHeaderData(2, qtc.__.Horizontal, 'Product')
 
         # Navigation between stacked widgets
         navigation _ self.addToolBar("Navigation")

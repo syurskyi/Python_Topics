@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, ?G.., ?W..
+____ ? ______ ?C.., ?G.., ?W..
 
 c_ Ui_Form(object):
     ___ setupUi  Form):
@@ -22,9 +22,9 @@ c_ Ui_Form(object):
         self.verticalLayout _ ?W...QVBoxLayout()
         self.verticalLayout.setObjectName("verticalLayout")
         self.webView _ QtWebKitWidgets.QWebView(self.webFormGroupBox)
-        self.webView.setMinimumSize(QtCore.QSize(200, 150))
-        self.webView.setMaximumSize(QtCore.QSize(400, 16777215))
-        self.webView.setUrl(QtCore.QUrl("about:blank"))
+        self.webView.setMinimumSize(?C...QSize(200, 150))
+        self.webView.setMaximumSize(?C...QSize(400, 16777215))
+        self.webView.setUrl(?C...QUrl("about:blank"))
         self.webView.setObjectName("webView")
         self.verticalLayout.addWidget(self.webView)
         self.verticalLayout_2.addLayout(self.verticalLayout)
@@ -72,10 +72,10 @@ c_ Ui_Form(object):
         self.horizontalLayout.addWidget(self.dataGroupBox)
 
         self.retranslateUi(Form)
-        QtCore.QMetaObject.connectSlotsByName(Form)
+        ?C...QMetaObject.connectSlotsByName(Form)
 
     ___ retranslateUi  Form):
-        _translate _ QtCore.QCoreApplication.translate
+        _translate _ ?C...QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
         self.webFormGroupBox.setTitle(_translate("Form", "Web Form"))
         self.dataGroupBox.setTitle(_translate("Form", "Extracted Data"))

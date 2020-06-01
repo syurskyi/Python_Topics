@@ -6,7 +6,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, ?G.., ?W..
+____ ? ______ ?C.., ?G.., ?W..
 
 c_ Ui_MainWindow(object):
     ___ setupUi  MainWindow):
@@ -38,17 +38,17 @@ c_ Ui_MainWindow(object):
         self.horizontalLayout_4.setSpacing(6)
         self.horizontalLayout_4.setObjectName("horizontalLayout_4")
         self.currentTimeLabel _ ?W...QLabel(self.centralWidget)
-        self.currentTimeLabel.setMinimumSize(QtCore.QSize(80, 0))
-        self.currentTimeLabel.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.currentTimeLabel.setMinimumSize(?C...QSize(80, 0))
+        self.currentTimeLabel.setAlignment(?C...__.AlignRight|?C...__.AlignTrailing|?C...__.AlignVCenter)
         self.currentTimeLabel.setObjectName("currentTimeLabel")
         self.horizontalLayout_4.addWidget(self.currentTimeLabel)
         self.timeSlider _ ?W...QSlider(self.centralWidget)
-        self.timeSlider.setOrientation(QtCore.Qt.Horizontal)
+        self.timeSlider.setOrientation(?C...__.Horizontal)
         self.timeSlider.setObjectName("timeSlider")
         self.horizontalLayout_4.addWidget(self.timeSlider)
         self.totalTimeLabel _ ?W...QLabel(self.centralWidget)
-        self.totalTimeLabel.setMinimumSize(QtCore.QSize(80, 0))
-        self.totalTimeLabel.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.totalTimeLabel.setMinimumSize(?C...QSize(80, 0))
+        self.totalTimeLabel.setAlignment(?C...__.AlignLeading|?C...__.AlignLeft|?C...__.AlignVCenter)
         self.totalTimeLabel.setObjectName("totalTimeLabel")
         self.horizontalLayout_4.addWidget(self.totalTimeLabel)
         self.verticalLayout.addLayout(self.horizontalLayout_4)
@@ -108,14 +108,14 @@ c_ Ui_MainWindow(object):
         self.volumeSlider _ ?W...QSlider(self.centralWidget)
         self.volumeSlider.setMaximum(100)
         self.volumeSlider.setProperty("value", 100)
-        self.volumeSlider.setOrientation(QtCore.Qt.Horizontal)
+        self.volumeSlider.setOrientation(?C...__.Horizontal)
         self.volumeSlider.setObjectName("volumeSlider")
         self.horizontalLayout_5.addWidget(self.volumeSlider)
         self.verticalLayout.addLayout(self.horizontalLayout_5)
         self.horizontalLayout.addLayout(self.verticalLayout)
         MainWindow.sCW..(self.centralWidget)
         self.menuBar _ ?W...QMenuBar(MainWindow)
-        self.menuBar.setGeometry(QtCore.QRect(0, 0, 484, 22))
+        self.menuBar.setGeometry(?C...QRect(0, 0, 484, 22))
         self.menuBar.setObjectName("menuBar")
         self.menuFIle _ ?W...QMenu(self.menuBar)
         self.menuFIle.setObjectName("menuFIle")
@@ -129,10 +129,10 @@ c_ Ui_MainWindow(object):
         self.menuBar.aA..(self.menuFIle.menuAction())
 
         self.retranslateUi(MainWindow)
-        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        ?C...QMetaObject.connectSlotsByName(MainWindow)
 
     ___ retranslateUi  MainWindow):
-        _translate _ QtCore.QCoreApplication.translate
+        _translate _ ?C...QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Failamp"))
         self.currentTimeLabel.sT..(_translate("MainWindow", "0:00"))
         self.totalTimeLabel.sT..(_translate("MainWindow", "0:00"))

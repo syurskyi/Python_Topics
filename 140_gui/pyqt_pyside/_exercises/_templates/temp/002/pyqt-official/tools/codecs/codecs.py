@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QFile, QRegExp, QTextCodec, QTextStream
+____ ?.?C.. ______ QFile, QRegExp, QTextCodec, QTextStream
 ____ ?.?W.. ______ (?A.., ?A.., QComboBox, QDialog,
         QDialogButtonBox, ?FD.., QGridLayout, QLabel, QMainWindow, QMenu,
         ?MB.., QTextEdit)

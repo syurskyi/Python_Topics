@@ -5,10 +5,10 @@ PyQt tic-tac-to
 ______ sys
 ____ ? ______ ?W.. __ qtw
 ____ ? ______ ?G.. __ qtg
-____ ? ______ QtCore __ qtc
+____ ? ______ ?C.. __ qtc
 ____ ? ______ ?W.. __ qtw
 ____ ? ______ ?G.. __ qtg
-____ ? ______ QtCore __ qtc
+____ ? ______ ?C.. __ qtc
 
 
 c_ TicTacToeEngine(qtc.QObject):
@@ -81,9 +81,9 @@ c_ TTTBoard(qtw.QGraphicsScene):
     ___ __init__(self):
         super().__init__()
         self.setSceneRect(0, 0, 600, 600)
-        self.setBackgroundBrush(qtg.QBrush(qtc.Qt.cyan))
+        self.setBackgroundBrush(qtg.QBrush(qtc.__.cyan))
         for square in self.square_rects:
-            self.addRect(square, brush_qtg.QBrush(qtc.Qt.white))
+            self.addRect(square, brush_qtg.QBrush(qtc.__.white))
         self.mark_pngs _ {
             'X': qtg.QPixmap('X.png'),
             'O': qtg.QPixmap('O.png')
@@ -103,7 +103,7 @@ c_ TTTBoard(qtw.QGraphicsScene):
 
     ___ mousePressEvent  mouse_event):
         """Handle mouse clicks on the board"""
-        position _ mouse_event.buttonDownScenePos(qtc.Qt.LeftButton)
+        position _ mouse_event.buttonDownScenePos(qtc.__.LeftButton)
         for square, qrect in enumerate(self.square_rects):
             __ qrect.contains(position):
                 self.square_clicked.emit(square)

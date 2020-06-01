@@ -41,7 +41,7 @@
 
 ______ sys
 
-____ ?.QtCore ______ pyqtSlot
+____ ?.?C.. ______ pyqtSlot
 ____ ?.?W.. ______ (?A.., QLabel, QLineEdit, QMainWindow,
         ?MB.., QProgressBar)
 

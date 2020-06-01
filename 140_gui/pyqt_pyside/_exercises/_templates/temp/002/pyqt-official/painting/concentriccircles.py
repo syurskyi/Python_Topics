@@ -42,8 +42,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QRect, QRectF, QSize, Qt, QTimer
-____ ?.?G.. ______ QColor, QPainter, QPalette, QPen
+____ ?.?C.. ______ QRect, QRectF, QSize, __, QTimer
+____ ?.?G.. ______ ?C.., QPainter, ?P.., QPen
 ____ ?.?W.. ______ (?A.., QFrame, QGridLayout, QLabel,
         QSizePolicy, QWidget)
 
@@ -56,7 +56,7 @@ c_ CircleWidget(QWidget):
         self.antialiased _ False
         self.frameNo _ 0
 
-        self.setBackgroundRole(QPalette.Base)
+        self.setBackgroundRole(?P...Base)
         self.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
 
     ___ setFloatBased  floatBased):
@@ -86,7 +86,7 @@ c_ CircleWidget(QWidget):
             delta _ abs((self.frameNo % 128) - diameter / 2)
             alpha _ 255 - (delta * delta) / 4 - diameter
             __ alpha > 0:
-                painter.setPen(QPen(QColor(0, diameter / 2, 127, alpha), 3))
+                painter.setPen(QPen(?C..(0, diameter / 2, 127, alpha), 3))
 
                 __ self.floatBased:
                     painter.drawEllipse(QRectF(-diameter / 2.0,
@@ -130,7 +130,7 @@ c_ Window(QWidget):
 
     ___ createLabel  text):
         label _ QLabel(text)
-        label.setAlignment(Qt.AlignCenter)
+        label.setAlignment(__.AlignCenter)
         label.setMargin(2)
         label.setFrameStyle(QFrame.Box | QFrame.Sunken)
         r_ label

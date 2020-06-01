@@ -42,8 +42,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ Qt
-____ ?.?G.. ______ QColor
+____ ?.?C.. ______ __
+____ ?.?G.. ______ ?C..
 ____ ?.?W.. ______ ?A.., QTableView
 ____ ?.QtSql ______ QSqlQuery, QSqlQueryModel
 
@@ -53,14 +53,14 @@ ______ connection
 c_ CustomSqlModel(QSqlQueryModel):
     ___ data  index, role):
         value _ super(CustomSqlModel, self).data(index, role)
-        __ value __ no. N.. and role == Qt.DisplayRole:
+        __ value __ no. N.. and role == __.DisplayRole:
             __ index.column() == 0:
                 r_ '#%d' % value
             ____ index.column() == 2:
                 r_ value.upper()
 
-        __ role == Qt.TextColorRole and index.column() == 1:
-            r_ QColor(Qt.blue)
+        __ role == __.TextColorRole and index.column() == 1:
+            r_ ?C..(__.blue)
 
         r_ value
 
@@ -70,7 +70,7 @@ c_ EditableSqlModel(QSqlQueryModel):
         flags _ super(EditableSqlModel, self).flags(index)
 
         __ index.column() in (1, 2):
-            flags |_ Qt.ItemIsEditable
+            flags |_ __.ItemIsEditable
 
         r_ flags
 
@@ -93,9 +93,9 @@ c_ EditableSqlModel(QSqlQueryModel):
 
     ___ refresh(self):
         self.setQuery('select * from person')
-        self.setHeaderData(0, Qt.Horizontal, "ID")
-        self.setHeaderData(1, Qt.Horizontal, "First name")
-        self.setHeaderData(2, Qt.Horizontal, "Last name")
+        self.setHeaderData(0, __.Horizontal, "ID")
+        self.setHeaderData(1, __.Horizontal, "First name")
+        self.setHeaderData(2, __.Horizontal, "Last name")
 
     ___ setFirstName  personId, firstName):
         query _ QSqlQuery()
@@ -114,9 +114,9 @@ c_ EditableSqlModel(QSqlQueryModel):
 
 ___ initializeModel(model):
     model.setQuery('select * from person')
-    model.setHeaderData(0, Qt.Horizontal, "ID")
-    model.setHeaderData(1, Qt.Horizontal, "First name")
-    model.setHeaderData(2, Qt.Horizontal, "Last name")
+    model.setHeaderData(0, __.Horizontal, "ID")
+    model.setHeaderData(1, __.Horizontal, "First name")
+    model.setHeaderData(2, __.Horizontal, "Last name")
 
 
 offset _ 0

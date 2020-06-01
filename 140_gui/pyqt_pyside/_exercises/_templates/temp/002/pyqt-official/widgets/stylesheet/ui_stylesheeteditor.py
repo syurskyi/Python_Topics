@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, ?G.., ?W..
+____ ? ______ ?C.., ?G.., ?W..
 
 c_ Ui_StyleSheetEditor(object):
     ___ setupUi  StyleSheetEditor):
@@ -73,10 +73,10 @@ c_ Ui_StyleSheetEditor(object):
         self.gridlayout.addWidget(self.label_8, 0, 4, 1, 1)
 
         self.retranslateUi(StyleSheetEditor)
-        QtCore.QMetaObject.connectSlotsByName(StyleSheetEditor)
+        ?C...QMetaObject.connectSlotsByName(StyleSheetEditor)
 
     ___ retranslateUi  StyleSheetEditor):
-        _translate _ QtCore.QCoreApplication.translate
+        _translate _ ?C...QCoreApplication.translate
         StyleSheetEditor.setWindowTitle(_translate("StyleSheetEditor", "Style Editor"))
         self.styleSheetCombo.setItemText(0, _translate("StyleSheetEditor", "Default"))
         self.styleSheetCombo.setItemText(1, _translate("StyleSheetEditor", "Coffee"))

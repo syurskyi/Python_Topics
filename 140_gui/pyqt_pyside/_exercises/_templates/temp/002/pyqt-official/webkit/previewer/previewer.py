@@ -43,7 +43,7 @@
 ###########################################################################
 
 
-____ ?.QtCore ______ QFile, QIODevice, QTextStream, QUrl
+____ ?.?C.. ______ QFile, QIODevice, QTextStream, QUrl
 ____ ?.?G.. ______ ?KS..
 ____ ?.?W.. ______ (?A.., ?A.., ?FD.., QInputDialog,
         QLineEdit, QMainWindow, ?MB.., QWidget)

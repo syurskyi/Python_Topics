@@ -39,7 +39,7 @@
 ###########################################################################
 
 
-____ ?.QtCore ______ pyqtSlot, QFile, QRegExp, Qt, QTextStream
+____ ?.?C.. ______ pyqtSlot, QFile, QRegExp, __, QTextStream
 ____ ?.?W.. ______ (?A.., QDialog, ?FD.., ?MB..,
         QStyleFactory)
 
@@ -60,7 +60,7 @@ c_ StyleSheetEditor(QDialog):
 
         self.ui.styleCombo.addItems(QStyleFactory.keys())
         self.ui.styleCombo.setCurrentIndex(
-                self.ui.styleCombo.findText(defaultStyle, Qt.MatchContains))
+                self.ui.styleCombo.findText(defaultStyle, __.MatchContains))
 
         self.ui.styleSheetCombo.setCurrentIndex(
                 self.ui.styleSheetCombo.findText('Coffee'))

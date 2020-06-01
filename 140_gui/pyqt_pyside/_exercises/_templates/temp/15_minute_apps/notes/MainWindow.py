@@ -6,7 +6,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, ?G.., ?W..
+____ ? ______ ?C.., ?G.., ?W..
 
 c_ Ui_MainWindow(object):
     ___ setupUi  MainWindow):
@@ -30,15 +30,15 @@ c_ Ui_MainWindow(object):
         self.horizontalLayout.setSpacing(6)
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.closeButton _ ?W...?PB..(self.centralWidget)
-        self.closeButton.setMinimumSize(QtCore.QSize(25, 20))
-        self.closeButton.setMaximumSize(QtCore.QSize(25, 20))
-        self.closeButton.setBaseSize(QtCore.QSize(2, 0))
+        self.closeButton.setMinimumSize(?C...QSize(25, 20))
+        self.closeButton.setMaximumSize(?C...QSize(25, 20))
+        self.closeButton.setBaseSize(?C...QSize(2, 0))
         font _ ?G...QFont()
         font.setPointSize(30)
         font.setBold(True)
         font.setWeight(75)
         self.closeButton.setFont(font)
-        self.closeButton.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.closeButton.setLayoutDirection(?C...__.LeftToRight)
         self.closeButton.setStyleSheet("QPushButton {\n"
 "    border: 0px;\n"
 "}")
@@ -47,8 +47,8 @@ c_ Ui_MainWindow(object):
         spacerItem _ ?W...QSpacerItem(40, 20, ?W...QSizePolicy.Expanding, ?W...QSizePolicy.Minimum)
         self.horizontalLayout.addItem(spacerItem)
         self.moreButton _ ?W...?PB..(self.centralWidget)
-        self.moreButton.setMinimumSize(QtCore.QSize(25, 25))
-        self.moreButton.setMaximumSize(QtCore.QSize(25, 25))
+        self.moreButton.setMinimumSize(?C...QSize(25, 25))
+        self.moreButton.setMaximumSize(?C...QSize(25, 25))
         font _ ?G...QFont()
         font.setPointSize(30)
         font.setBold(True)
@@ -73,10 +73,10 @@ c_ Ui_MainWindow(object):
         MainWindow.sCW..(self.centralWidget)
 
         self.retranslateUi(MainWindow)
-        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        ?C...QMetaObject.connectSlotsByName(MainWindow)
 
     ___ retranslateUi  MainWindow):
-        _translate _ QtCore.QCoreApplication.translate
+        _translate _ ?C...QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Failamp"))
         self.closeButton.sT..(_translate("MainWindow", "×"))
         self.moreButton.sT..(_translate("MainWindow", "＋"))

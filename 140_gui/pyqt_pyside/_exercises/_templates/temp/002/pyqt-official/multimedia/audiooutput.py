@@ -45,7 +45,7 @@
 ____ math ______ pi, sin
 ____ struct ______ pack
 
-____ ?.QtCore ______ QByteArray, QIODevice, Qt, QTimer, qWarning
+____ ?.?C.. ______ QByteArray, QIODevice, __, QTimer, qWarning
 ____ ?.QtMultimedia ______ (QAudio, QAudioDeviceInfo, QAudioFormat,
         QAudioOutput)
 ____ ?.?W.. ______ (?A.., QComboBox, QHBoxLayout, QLabel,
@@ -169,7 +169,7 @@ c_ AudioTest ?MW..
 
         volumeBox _ QHBoxLayout()
         volumeLabel _ QLabel("Volume:")
-        self.m_volumeSlider _ QSlider(Qt.Horizontal, minimum_0, maximum_100,
+        self.m_volumeSlider _ QSlider(__.Horizontal, minimum_0, maximum_100,
                 singleStep_10, valueChanged_self.volumeChanged)
         volumeBox.addWidget(volumeLabel)
         volumeBox.addWidget(self.m_volumeSlider)

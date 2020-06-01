@@ -42,8 +42,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QByteArray, QFile, QRegExp, Qt
-____ ?.?G.. ______ (QColor, QFont, QSyntaxHighlighter, QTextCharFormat,
+____ ?.?C.. ______ QByteArray, QFile, QRegExp, __
+____ ?.?G.. ______ (?C.., QFont, QSyntaxHighlighter, QTextCharFormat,
         QTextCursor, QTextFormat)
 ____ ?.?W.. ______ ?A.., QMainWindow, QTextEdit
 ____ ?.QtXmlPatterns ______ (QAbstractMessageHandler, QSourceLocation,
@@ -76,26 +76,26 @@ c_ XmlSyntaxHighlighter(QSyntaxHighlighter):
 
         # Tag format.
         format _ QTextCharFormat()
-        format.setForeground(Qt.darkBlue)
+        format.setForeground(__.darkBlue)
         format.setFontWeight(QFont.Bold)
         pattern _ QRegExp("(<[a-zA-Z:]+\\b|<\\?[a-zA-Z:]+\\b|\\?>|>|/>|</[a-zA-Z:]+>)")
         self.highlightingRules.append((pattern, format))
 
         # Attribute format.
         format _ QTextCharFormat()
-        format.setForeground(Qt.darkGreen)
+        format.setForeground(__.darkGreen)
         pattern _ QRegExp("[a-zA-Z:]+=")
         self.highlightingRules.append((pattern, format))
 
         # Attribute content format.
         format _ QTextCharFormat()
-        format.setForeground(Qt.red)
+        format.setForeground(__.red)
         pattern _ QRegExp("(\"[^\"]*\"|'[^']*')")
         self.highlightingRules.append((pattern, format))
 
         # Comment format.
         self.commentFormat _ QTextCharFormat()
-        self.commentFormat.setForeground(Qt.lightGray)
+        self.commentFormat.setForeground(__.lightGray)
         self.commentFormat.setFontItalic(True)
 
         self.commentStartExpression _ QRegExp("<!--")
@@ -173,7 +173,7 @@ c_ MainWindow(QMainWindow, Ui_SchemaMainWindow):
         self.validateButton.c__.c..(self.validate)
         self.instanceEdit.textChanged.c..(self.textChanged)
 
-        self.validationStatus.setAlignment(Qt.AlignCenter | Qt.AlignVCenter)
+        self.validationStatus.setAlignment(__.AlignCenter | __.AlignVCenter)
 
         self.schemaSelected(0)
         self.instanceSelected(0)
@@ -230,12 +230,12 @@ c_ MainWindow(QMainWindow, Ui_SchemaMainWindow):
         __ errorOccurred:
             self.validationStatus.sT..(messageHandler.statusMessage())
             self.moveCursor(messageHandler.line(), messageHandler.column())
-            background _ Qt.red
+            background _ __.red
         ____
             self.validationStatus.sT..("validation successful")
-            background _ Qt.green
+            background _ __.green
 
-        styleSheet _ 'QLabel {background: %s; padding: 3px}' % QColor(background).lighter(160).name()
+        styleSheet _ 'QLabel {background: %s; padding: 3px}' % ?C..(background).lighter(160).name()
         self.validationStatus.setStyleSheet(styleSheet)
 
     ___ textChanged(self):
@@ -253,7 +253,7 @@ c_ MainWindow(QMainWindow, Ui_SchemaMainWindow):
         extraSelections _ []
         selection _ QTextEdit.ExtraSelection()
 
-        lineColor _ QColor(Qt.red).lighter(160)
+        lineColor _ ?C..(__.red).lighter(160)
         selection.format.setBackground(lineColor)
         selection.format.setProperty(QTextFormat.FullWidthSelection, True)
         selection.cursor _ self.instanceEdit.textCursor()

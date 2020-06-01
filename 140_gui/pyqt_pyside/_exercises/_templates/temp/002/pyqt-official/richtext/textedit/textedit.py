@@ -46,7 +46,7 @@
 
 ______ sys
 
-____ ?.QtCore ______ QFile, QFileInfo, Qt, QTextCodec
+____ ?.?C.. ______ QFile, QFileInfo, __, QTextCodec
 ____ ?.?G.. ______ (QFont, QFontDatabase, QFontInfo, QIcon, ?KS..,
         QPixmap, QTextBlockFormat, QTextCharFormat, QTextCursor,
         QTextDocumentWriter, QTextListFormat)
@@ -69,7 +69,7 @@ c_ TextEdit ?MW..
         super(TextEdit, self).__init__(parent)
 
         self.setWindowIcon(QIcon(':/images/logo.png'))
-        self.setToolButtonStyle(Qt.ToolButtonFollowStyle)
+        self.setToolButtonStyle(__.ToolButtonFollowStyle)
         self.setupFileActions()
         self.setupEditActions()
         self.setupTextActions()
@@ -159,7 +159,7 @@ c_ TextEdit ?MW..
 
         self.actionSaveAs _ ?A..("Save &As...", self,
                 priority_QAction.LowPriority,
-                shortcut_Qt.CTRL + Qt.SHIFT + Qt.Key_S,
+                shortcut_Qt.CTRL + __.SHIFT + __.Key_S,
                 triggered_self.fileSaveAs)
         menu.aA..(self.actionSaveAs)
         menu.addSeparator()
@@ -176,7 +176,7 @@ c_ TextEdit ?MW..
                 QIcon.fromTheme('fileprint',
                         QIcon(rsrcPath + '/fileprint.png')),
                 "Print Preview...", self,
-                shortcut_Qt.CTRL + Qt.SHIFT + Qt.Key_P,
+                shortcut_Qt.CTRL + __.SHIFT + __.Key_P,
                 triggered_self.filePrintPreview)
         menu.aA..(self.actionPrintPreview)
 
@@ -184,7 +184,7 @@ c_ TextEdit ?MW..
                 QIcon.fromTheme('exportpdf',
                         QIcon(rsrcPath + '/exportpdf.png')),
                 "&Export PDF...", self, priority_QAction.LowPriority,
-                shortcut_Qt.CTRL + Qt.Key_D,
+                shortcut_Qt.CTRL + __.Key_D,
                 triggered_self.filePrintPdf)
         tb.aA..(self.actionPrintPdf)
         menu.aA..(self.actionPrintPdf)
@@ -254,7 +254,7 @@ c_ TextEdit ?MW..
                 QIcon.fromTheme('format-text-bold',
                         QIcon(rsrcPath + '/textbold.png')),
                 "&Bold", self, priority_QAction.LowPriority,
-                shortcut_Qt.CTRL + Qt.Key_B, triggered_self.textBold,
+                shortcut_Qt.CTRL + __.Key_B, triggered_self.textBold,
                 checkable_True)
         bold _ QFont()
         bold.setBold(True)
@@ -266,7 +266,7 @@ c_ TextEdit ?MW..
                 QIcon.fromTheme('format-text-italic',
                         QIcon(rsrcPath + '/textitalic.png')),
                 "&Italic", self, priority_QAction.LowPriority,
-                shortcut_Qt.CTRL + Qt.Key_I, triggered_self.textItalic,
+                shortcut_Qt.CTRL + __.Key_I, triggered_self.textItalic,
                 checkable_True)
         italic _ QFont()
         italic.setItalic(True)
@@ -278,7 +278,7 @@ c_ TextEdit ?MW..
                 QIcon.fromTheme('format-text-underline',
                         QIcon(rsrcPath + '/textunder.png')),
                 "&Underline", self, priority_QAction.LowPriority,
-                shortcut_Qt.CTRL + Qt.Key_U, triggered_self.textUnderline,
+                shortcut_Qt.CTRL + __.Key_U, triggered_self.textUnderline,
                 checkable_True)
         underline _ QFont()
         underline.setUnderline(True)
@@ -323,19 +323,19 @@ c_ TextEdit ?MW..
                         QIcon(rsrcPath + '/textjustify.png')),
                 "&Justify", grp)
 
-        self.actionAlignLeft.sS..(Qt.CTRL + Qt.Key_L)
+        self.actionAlignLeft.sS..(__.CTRL + __.Key_L)
         self.actionAlignLeft.setCheckable(True)
         self.actionAlignLeft.setPriority(?A...LowPriority)
 
-        self.actionAlignCenter.sS..(Qt.CTRL + Qt.Key_E)
+        self.actionAlignCenter.sS..(__.CTRL + __.Key_E)
         self.actionAlignCenter.setCheckable(True)
         self.actionAlignCenter.setPriority(?A...LowPriority)
 
-        self.actionAlignRight.sS..(Qt.CTRL + Qt.Key_R)
+        self.actionAlignRight.sS..(__.CTRL + __.Key_R)
         self.actionAlignRight.setCheckable(True)
         self.actionAlignRight.setPriority(?A...LowPriority)
 
-        self.actionAlignJustify.sS..(Qt.CTRL + Qt.Key_J)
+        self.actionAlignJustify.sS..(__.CTRL + __.Key_J)
         self.actionAlignJustify.setCheckable(True)
         self.actionAlignJustify.setPriority(?A...LowPriority)
 
@@ -344,16 +344,16 @@ c_ TextEdit ?MW..
         menu.addSeparator()
 
         pix _ QPixmap(16, 16)
-        pix.fill(Qt.black)
+        pix.fill(__.black)
         self.actionTextColor _ ?A..(QIcon(pix), "&Color...", self,
                 triggered_self.textColor)
         tb.aA..(self.actionTextColor)
         menu.aA..(self.actionTextColor)
 
         tb _ QToolBar(self)
-        tb.setAllowedAreas(Qt.TopToolBarArea | Qt.BottomToolBarArea)
+        tb.setAllowedAreas(__.TopToolBarArea | __.BottomToolBarArea)
         tb.setWindowTitle("Format Actions")
-        self.addToolBarBreak(Qt.TopToolBarArea)
+        self.addToolBarBreak(__.TopToolBarArea)
         self.addToolBar(tb)
 
         comboStyle _ QComboBox(tb)
@@ -399,7 +399,7 @@ c_ TextEdit ?MW..
         codec _ QTextCodec.codecForHtml(data)
         unistr _ codec.toUnicode(data)
 
-        __ Qt.mightBeRichText(unistr):
+        __ __.mightBeRichText(unistr):
             self.textEdit.setHtml(unistr)
         ____
             self.textEdit.sPT..(unistr)
@@ -586,13 +586,13 @@ c_ TextEdit ?MW..
 
     ___ textAlign  action):
         __ action == self.actionAlignLeft:
-            self.textEdit.setAlignment(Qt.AlignLeft | Qt.AlignAbsolute)
+            self.textEdit.setAlignment(__.AlignLeft | __.AlignAbsolute)
         ____ action == self.actionAlignCenter:
-            self.textEdit.setAlignment(Qt.AlignHCenter)
+            self.textEdit.setAlignment(__.AlignHCenter)
         ____ action == self.actionAlignRight:
-            self.textEdit.setAlignment(Qt.AlignRight | Qt.AlignAbsolute)
+            self.textEdit.setAlignment(__.AlignRight | __.AlignAbsolute)
         ____ action == self.actionAlignJustify:
-            self.textEdit.setAlignment(Qt.AlignJustify)
+            self.textEdit.setAlignment(__.AlignJustify)
 
     ___ currentCharFormatChanged  format):
         self.fontChanged(format.font())
@@ -633,13 +633,13 @@ c_ TextEdit ?MW..
         self.actionTextColor.setIcon(QIcon(pix))
 
     ___ alignmentChanged  alignment):
-        __ alignment & Qt.AlignLeft:
+        __ alignment & __.AlignLeft:
             self.actionAlignLeft.setChecked(True)
-        ____ alignment & Qt.AlignHCenter:
+        ____ alignment & __.AlignHCenter:
             self.actionAlignCenter.setChecked(True)
-        ____ alignment & Qt.AlignRight:
+        ____ alignment & __.AlignRight:
             self.actionAlignRight.setChecked(True)
-        ____ alignment & Qt.AlignJustify:
+        ____ alignment & __.AlignJustify:
             self.actionAlignJustify.setChecked(True)
 
 

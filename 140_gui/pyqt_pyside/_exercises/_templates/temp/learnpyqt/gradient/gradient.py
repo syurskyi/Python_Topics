@@ -1,13 +1,13 @@
 ______ sys
 __ 'PyQt5' in sys.modules:
-    ____ ? ______ QtCore, ?G.., ?W..
-    ____ ?.QtCore ______ Qt
-    ____ ?.QtCore ______ pyqtSignal __ Signal
+    ____ ? ______ ?C.., ?G.., ?W..
+    ____ ?.?C.. ______ __
+    ____ ?.?C.. ______ pyqtSignal __ Signal
 
 ____
-    ____ PySide2 ______ QtCore, ?G.., ?W..
-    ____ PySide2.QtCore ______ Qt
-    ____ PySide2.QtCore ______ Signal
+    ____ PySide2 ______ ?C.., ?G.., ?W..
+    ____ PySide2.?C.. ______ __
+    ____ PySide2.?C.. ______ Signal
 
 
 c_ Gradient(?W...QWidget):
@@ -45,9 +45,9 @@ c_ Gradient(?W...QWidget):
         # Draw the linear horizontal gradient.
         gradient _ ?G...QLinearGradient(0, 0, width, 0)
         for stop, color in self._gradient:
-            gradient.setColorAt(stop, ?G...QColor(color))
+            gradient.setColorAt(stop, ?G...?C..(color))
 
-        rect _ QtCore.QRect(0, 0, width, height)
+        rect _ ?C...QRect(0, 0, width, height)
         painter.fillRect(rect, gradient)
 
         pen _ ?G...QPen()
@@ -57,15 +57,15 @@ c_ Gradient(?W...QWidget):
 
         # Draw the stop handles.
         for stop, _ in self._gradient:
-            pen.setColor(?G...QColor('white'))
+            pen.sC..(?G...?C..('white'))
             painter.setPen(pen)
 
             painter.drawLine(stop * width, y - self._handle_h, stop * width, y + self._handle_h)
 
-            pen.setColor(?G...QColor('red'))
+            pen.sC..(?G...?C..('red'))
             painter.setPen(pen)
 
-            rect _ QtCore.QRect(
+            rect _ ?C...QRect(
                 stop * width - self._handle_w/2,
                 y - self._handle_h/2,
                 self._handle_w,
@@ -76,7 +76,7 @@ c_ Gradient(?W...QWidget):
         painter.end()
 
     ___ sizeHint(self):
-        r_ QtCore.QSize(200, 50)
+        r_ ?C...QSize(200, 50)
 
     ___ _sort_gradient(self):
         self._gradient _ sorted(self._gradient, key_lambda g:g[0])
@@ -132,7 +132,7 @@ c_ Gradient(?W...QWidget):
     ___ chooseColorAtPosition  n, current_color_None):
         dlg _ ?W...QColorDialog(self)
         __ current_color:
-            dlg.setCurrentColor(?G...QColor(current_color))
+            dlg.setCurrentColor(?G...?C..(current_color))
 
         __ dlg.exec_
             self.setColorAtPosition(n, dlg.currentColor().name())
@@ -160,13 +160,13 @@ c_ Gradient(?W...QWidget):
 
     ___ mousePressEvent  e):
         # We're in this stop point.
-        __ e.button() == Qt.RightButton:
+        __ e.button() == __.RightButton:
             n _ self._find_stop_handle_for_event(e)
             __ n __ no. N..:
                 _, color _ self._gradient[n]
                 self.chooseColorAtPosition(n, color)
 
-        ____ e.button() == Qt.LeftButton:
+        ____ e.button() == __.LeftButton:
             n _ self._find_stop_handle_for_event(e, to_exclude_self._end_stops)
             __ n __ no. N..:
                 # Activate drag mode.

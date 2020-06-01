@@ -44,7 +44,7 @@
 
 ______ math
 
-____ ?.QtCore ______ Qt
+____ ?.?C.. ______ __
 ____ ?.?W.. ______ (?A.., QGridLayout, QLayout, QLineEdit,
         QSizePolicy, QToolButton, QWidget)
 
@@ -79,7 +79,7 @@ c_ Calculator(QWidget):
 
         self.display _ QLineEdit('0')
         self.display.setReadOnly(True)
-        self.display.setAlignment(Qt.AlignRight)
+        self.display.setAlignment(__.AlignRight)
         self.display.setMaxLength(15)
 
         font _ self.display.font()

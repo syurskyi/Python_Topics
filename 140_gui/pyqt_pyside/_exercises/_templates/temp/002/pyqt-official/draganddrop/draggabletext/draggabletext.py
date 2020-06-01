@@ -42,8 +42,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QFile, QIODevice, QMimeData, QPoint, Qt, QTextStream
-____ ?.?G.. ______ QDrag, QPalette, QPixmap
+____ ?.?C.. ______ QFile, QIODevice, QMimeData, QPoint, __, QTextStream
+____ ?.?G.. ______ QDrag, ?P.., QPixmap
 ____ ?.?W.. ______ ?A.., QFrame, QLabel, QWidget
 
 ______ draggabletext_rc
@@ -73,9 +73,9 @@ c_ DragLabel(QLabel):
         drag.setPixmap(pixmap)
         drag.setHotSpot(hotSpot)
 
-        dropAction _ drag.exec_(Qt.CopyAction | Qt.MoveAction, Qt.CopyAction)
+        dropAction _ drag.exec_(__.CopyAction | __.MoveAction, __.CopyAction)
 
-        __ dropAction == Qt.MoveAction:
+        __ dropAction == __.MoveAction:
             self.close()
             self.update()
 
@@ -100,8 +100,8 @@ c_ DragWidget(QWidget):
                 y +_ wordLabel.height() + 2
 
         newPalette _ self.palette()
-        newPalette.setColor(QPalette.Window, Qt.white)
-        self.setPalette(newPalette)
+        newPalette.sC..(?P...Window, __.white)
+        self.sP..(newPalette)
 
         self.setAcceptDrops(True)
         self.setMinimumSize(400, max(200, y))
@@ -110,7 +110,7 @@ c_ DragWidget(QWidget):
     ___ dragEnterEvent  event):
         __ event.mimeData().hasText
             __ event.source() in self.children
-                event.setDropAction(Qt.MoveAction)
+                event.setDropAction(__.MoveAction)
                 event.accept()
             ____
                 event.acceptProposedAction()
@@ -137,7 +137,7 @@ c_ DragWidget(QWidget):
                 position +_ QPoint(newLabel.width(), 0)
 
             __ event.source() in self.children
-                event.setDropAction(Qt.MoveAction)
+                event.setDropAction(__.MoveAction)
                 event.accept()
             ____
                 event.acceptProposedAction()

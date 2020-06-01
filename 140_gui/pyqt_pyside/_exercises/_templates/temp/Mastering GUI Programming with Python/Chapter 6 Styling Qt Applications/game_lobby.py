@@ -1,7 +1,7 @@
 ______ sys
 ____ ? ______ ?W.. __ qtw
 ____ ? ______ ?G.. __ qtg
-____ ? ______ QtCore __ qtc
+____ ? ______ ?C.. __ qtc
 
 ______ resources
 
@@ -24,7 +24,7 @@ c_ StyleOverrides(qtw.QProxyStyle):
         self, element, option, painter, widget
     ):
         """Outline QLineEdits in Green"""
-        self.green_pen _ qtg.QPen(qtg.QColor('green'))
+        self.green_pen _ qtg.QPen(qtg.?C..('green'))
         self.green_pen.setWidth(4)
         __ element == qtw.QStyle.PE_FrameLineEdit:
             painter.setPen(self.green_pen)
@@ -37,24 +37,24 @@ c_ ColorButton(qtw.?PB..):
     """Button with color and backgroundColor properties for animation"""
 
     ___ _color(self):
-        r_ self.palette().color(qtg.QPalette.ButtonText)
+        r_ self.palette().color(qtg.?P...ButtonText)
 
     ___ _setColor  qcolor):
         palette _ self.palette()
-        palette.setColor(qtg.QPalette.ButtonText, qcolor)
-        self.setPalette(palette)
+        palette.sC..(qtg.?P...ButtonText, qcolor)
+        self.sP..(palette)
 
-    color _ qtc.pyqtProperty(qtg.QColor, _color, _setColor)
+    color _ qtc.pyqtProperty(qtg.?C.., _color, _setColor)
 
-    @qtc.pyqtProperty(qtg.QColor)
+    @qtc.pyqtProperty(qtg.?C..)
     ___ backgroundColor(self):
-        r_ self.palette().color(qtg.QPalette.Button)
+        r_ self.palette().color(qtg.?P...Button)
 
     @backgroundColor.setter
     ___ backgroundColor  qcolor):
         palette _ self.palette()
-        palette.setColor(qtg.QPalette.Button, qcolor)
-        self.setPalette(palette)
+        palette.sC..(qtg.?P...Button, qcolor)
+        self.sP..(palette)
 
 
 c_ MainWindow(qtw.QMainWindow):
@@ -163,15 +163,15 @@ c_ MainWindow(qtw.QMainWindow):
         # Display a simple raster image
         logo _ qtg.QPixmap('logo.png')
         __ logo.width() > 400:
-            logo _ logo.scaledToWidth(400, qtc.Qt.SmoothTransformation)
+            logo _ logo.scaledToWidth(400, qtc.__.SmoothTransformation)
         heading.setPixmap(logo)
 
         # Create images
 
         go_pixmap _ qtg.QPixmap(qtc.QSize(32, 32))
         stop_pixmap _ qtg.QPixmap(qtc.QSize(32, 32))
-        go_pixmap.fill(qtg.QColor('green'))
-        stop_pixmap.fill(qtg.QColor('red'))
+        go_pixmap.fill(qtg.?C..('green'))
+        stop_pixmap.fill(qtg.?C..('red'))
 
         # Creating icons
 
@@ -209,47 +209,47 @@ c_ MainWindow(qtw.QMainWindow):
         ##########
         app _ qtw.?A...instance()
         palette _ app.palette()
-        palette.setColor(
-            qtg.QPalette.Button,
-            qtg.QColor('#333')
+        palette.sC..(
+            qtg.?P...Button,
+            qtg.?C..('#333')
         )
-        palette.setColor(
-            qtg.QPalette.ButtonText,
-            qtg.QColor('#3F3')
+        palette.sC..(
+            qtg.?P...ButtonText,
+            qtg.?C..('#3F3')
         )
-        palette.setColor(
-            qtg.QPalette.Disabled,
-            qtg.QPalette.ButtonText,
-            qtg.QColor('#F88')
+        palette.sC..(
+            qtg.?P...Disabled,
+            qtg.?P...ButtonText,
+            qtg.?C..('#F88')
         )
-        palette.setColor(
-            qtg.QPalette.Disabled,
-            qtg.QPalette.Button,
-            qtg.QColor('#888')
+        palette.sC..(
+            qtg.?P...Disabled,
+            qtg.?P...Button,
+            qtg.?C..('#888')
         )
-        self.submit.setPalette(palette)
-        self.cancel.setPalette(palette)
+        self.submit.sP..(palette)
+        self.cancel.sP..(palette)
 
         # Using Brushes
-        dotted_brush _ qtg.QBrush(qtg.QColor('white'), qtc.Qt.Dense2Pattern)
+        dotted_brush _ qtg.QBrush(qtg.?C..('white'), qtc.__.Dense2Pattern)
 
         gradient _ qtg.QLinearGradient(0, 0, self.width(), self.height())
-        gradient.setColorAt(0, qtg.QColor('navy'))
-        gradient.setColorAt(0.5, qtg.QColor('darkred'))
-        gradient.setColorAt(1, qtg.QColor('orange'))
+        gradient.setColorAt(0, qtg.?C..('navy'))
+        gradient.setColorAt(0.5, qtg.?C..('darkred'))
+        gradient.setColorAt(1, qtg.?C..('orange'))
         gradient_brush _ qtg.QBrush(gradient)
 
         window_palette _ app.palette()
         window_palette.setBrush(
-            qtg.QPalette.Window,
+            qtg.?P...Window,
             gradient_brush
         )
         window_palette.setBrush(
-            qtg.QPalette.Active,
-            qtg.QPalette.WindowText,
+            qtg.?P...Active,
+            qtg.?P...WindowText,
             dotted_brush
         )
-        self.setPalette(window_palette)
+        self.sP..(window_palette)
 
         #self.show()
         #return
@@ -337,8 +337,8 @@ c_ MainWindow(qtw.QMainWindow):
         # you'll have to disable all stylesheets
         self.text_color_animation _ qtc.QPropertyAnimation(
             self.submit, b'color')
-        self.text_color_animation.setStartValue(qtg.QColor('#FFF'))
-        self.text_color_animation.setEndValue(qtg.QColor('#888'))
+        self.text_color_animation.setStartValue(qtg.?C..('#FFF'))
+        self.text_color_animation.setEndValue(qtg.?C..('#888'))
         self.text_color_animation.setLoopCount(-1)
         self.text_color_animation.setEasingCurve(qtc.QEasingCurve.InOutQuad)
         self.text_color_animation.setDuration(2000)
@@ -346,9 +346,9 @@ c_ MainWindow(qtw.QMainWindow):
 
         self.bg_color_animation _ qtc.QPropertyAnimation(
             self.submit, b'backgroundColor')
-        self.bg_color_animation.setStartValue(qtg.QColor('#000'))
-        self.bg_color_animation.setKeyValueAt(0.5, qtg.QColor('darkred'))
-        self.bg_color_animation.setEndValue(qtg.QColor('#000'))
+        self.bg_color_animation.setStartValue(qtg.?C..('#000'))
+        self.bg_color_animation.setKeyValueAt(0.5, qtg.?C..('darkred'))
+        self.bg_color_animation.setEndValue(qtg.?C..('#000'))
         self.bg_color_animation.setLoopCount(-1)
         self.bg_color_animation.setDuration(1500)
         #self.bg_color_animation.start()

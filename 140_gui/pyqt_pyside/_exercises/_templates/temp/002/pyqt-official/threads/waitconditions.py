@@ -45,7 +45,7 @@
 ______ sys
 ______ random
 
-____ ?.QtCore ______ QCoreApplication, QMutex, QThread, QWaitCondition
+____ ?.?C.. ______ QCoreApplication, QMutex, QThread, QWaitCondition
 
 
 DataSize _ 100000

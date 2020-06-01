@@ -1,4 +1,4 @@
-____ ?.QtCore ______ QObject, pyqtSignal
+____ ?.?C.. ______ QObject, pyqtSignal
 
 c_ CurrentThread(QObject):
 

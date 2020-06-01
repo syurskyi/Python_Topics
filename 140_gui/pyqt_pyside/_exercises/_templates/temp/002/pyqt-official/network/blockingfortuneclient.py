@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ (pyqtSignal, QDataStream, QMutex, QMutexLocker,
+____ ?.?C.. ______ (pyqtSignal, QDataStream, QMutex, QMutexLocker,
         QThread, QWaitCondition)
 ____ ?.?G.. ______ QIntValidator
 ____ ?.?W.. ______ (?A.., QDialogButtonBox, QGridLayout,

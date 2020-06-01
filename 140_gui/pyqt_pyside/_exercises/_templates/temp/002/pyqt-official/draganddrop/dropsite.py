@@ -43,8 +43,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ pyqtSignal, QMimeData, Qt
-____ ?.?G.. ______ QPalette, QPixmap
+____ ?.?C.. ______ pyqtSignal, QMimeData, __
+____ ?.?G.. ______ ?P.., QPixmap
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., QDialogButtonBox,
         QFrame, QLabel, ?PB.., QTableWidget, QTableWidgetItem,
         QVBoxLayout, QWidget)
@@ -59,14 +59,14 @@ c_ DropArea(QLabel):
 
         self.setMinimumSize(200, 200)
         self.setFrameStyle(QFrame.Sunken | QFrame.StyledPanel)
-        self.setAlignment(Qt.AlignCenter)
+        self.setAlignment(__.AlignCenter)
         self.setAcceptDrops(True)
         self.setAutoFillBackground(True)
         self.clear()
 
     ___ dragEnterEvent  event):
         self.sT..("<drop content>")
-        self.setBackgroundRole(QPalette.Highlight)
+        self.setBackgroundRole(?P...Highlight)
         event.acceptProposedAction()
         self.changed.emit(event.mimeData())
 
@@ -79,16 +79,16 @@ c_ DropArea(QLabel):
             self.setPixmap(QPixmap(mimeData.imageData()))
         ____ mimeData.hasHtml
             self.sT..(mimeData.html())
-            self.setTextFormat(Qt.RichText)
+            self.setTextFormat(__.RichText)
         ____ mimeData.hasText
             self.sT..(mimeData.text())
-            self.setTextFormat(Qt.PlainText)
+            self.setTextFormat(__.PlainText)
         ____ mimeData.hasUrls
             self.sT..("\n".join([url.path() for url in mimeData.urls()]))
         ____
             self.sT..("Cannot display data")
 
-        self.setBackgroundRole(QPalette.Dark)
+        self.setBackgroundRole(?P...Dark)
         event.acceptProposedAction()
 
     ___ dragLeaveEvent  event):
@@ -97,7 +97,7 @@ c_ DropArea(QLabel):
 
     ___ clear(self):
         self.sT..("<drop content>")
-        self.setBackgroundRole(QPalette.Dark)
+        self.setBackgroundRole(?P...Dark)
         self.changed.emit(N..)
 
 
@@ -149,8 +149,8 @@ c_ DropSiteWindow(QWidget):
 
         for format in mimeData.formats
             formatItem _ QTableWidgetItem(format)
-            formatItem.setFlags(Qt.ItemIsEnabled)
-            formatItem.setTextAlignment(Qt.AlignTop | Qt.AlignLeft)
+            formatItem.setFlags(__.ItemIsEnabled)
+            formatItem.setTextAlignment(__.AlignTop | __.AlignLeft)
 
             __ format == 'text/plain':
                 text _ mimeData.text().strip()

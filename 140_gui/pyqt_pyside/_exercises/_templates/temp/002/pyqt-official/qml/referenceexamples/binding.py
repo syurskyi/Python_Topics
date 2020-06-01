@@ -44,9 +44,9 @@
 
 ______ sys
 
-____ ?.QtCore ______ (pyqtProperty, pyqtSignal, pyqtSlot, Q_CLASSINFO,
+____ ?.?C.. ______ (pyqtProperty, pyqtSignal, pyqtSlot, Q_CLASSINFO,
         QCoreApplication, QDate, QObject, QTime, QTimer, QUrl)
-____ ?.?G.. ______ QColor
+____ ?.?G.. ______ ?C..
 ____ ?.QtQml ______ (qmlAttachedPropertiesObject, qmlRegisterType,
         QQmlComponent, QQmlEngine, QQmlListProperty, QQmlProperty,
         QQmlPropertyValueSource)
@@ -96,7 +96,7 @@ c_ ShoeDescription(QObject):
         super(ShoeDescription, self).__init__(parent)
 
         self._size _ 0
-        self._color _ QColor()
+        self._color _ ?C..()
         self._brand _ ''
         self._price _ 0.0
 
@@ -112,7 +112,7 @@ c_ ShoeDescription(QObject):
             self._size _ size
             self.shoeChanged.emit()
 
-    @pyqtProperty(QColor, notify_shoeChanged)
+    @pyqtProperty(?C.., notify_shoeChanged)
     ___ color(self):
         r_ self._color
 

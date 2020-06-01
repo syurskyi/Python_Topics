@@ -44,11 +44,11 @@
 
 ______ math
 
-____ ?.QtCore ______ (pyqtProperty, pyqtSignal, QDataStream, QDateTime,
+____ ?.?C.. ______ (pyqtProperty, pyqtSignal, QDataStream, QDateTime,
         QEvent, QEventTransition, QFile, QIODevice, QParallelAnimationGroup,
         QPointF, QPropertyAnimation, qrand, QRectF, QSignalTransition, qsrand,
-        QState, QStateMachine, Qt, QTimer)
-____ ?.?G.. ______ QColor, QPen, QPainter, QPainterPath, QPixmap
+        QState, QStateMachine, __, QTimer)
+____ ?.?G.. ______ ?C.., QPen, QPainter, QPainterPath, QPixmap
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsObject,
         QGraphicsScene, QGraphicsTextItem, QGraphicsView)
 
@@ -70,7 +70,7 @@ c_ Node(QGraphicsObject):
         r_ QRectF(-6.0, -6.0, 12.0, 12.0)
 
     ___ paint  painter, option, widget):
-        painter.setPen(Qt.white)
+        painter.setPen(__.white)
         painter.drawEllipse(QPointF(0.0, 0.0), 5.0, 5.0)
 
     ___ itemChange  change, value):
@@ -169,8 +169,8 @@ c_ StickMan(QGraphicsObject):
         self.m_sticks _ True
         self.m_isDead _ False
         self.m_pixmap _ QPixmap('images/head.png')
-        self.m_penColor _ QColor(Qt.white)
-        self.m_fillColor _ QColor(Qt.black)
+        self.m_penColor _ ?C..(__.white)
+        self.m_fillColor _ ?C..(__.black)
 
         # Set up start position of limbs.
         self.m_nodes _ []
@@ -242,21 +242,21 @@ c_ StickMan(QGraphicsObject):
     ___ posFor  idx):
         r_ self.m_nodes[idx].pos()
 
-    @pyqtProperty(QColor)
+    @pyqtProperty(?C..)
     ___ penColor(self):
-        r_ QColor(self.m_penColor)
+        r_ ?C..(self.m_penColor)
 
     @penColor.setter
     ___ penColor  color):
-        self.m_penColor _ QColor(color)
+        self.m_penColor _ ?C..(color)
 
-    @pyqtProperty(QColor)
+    @pyqtProperty(?C..)
     ___ fillColor(self):
-        r_ QColor(self.m_fillColor)
+        r_ ?C..(self.m_fillColor)
 
     @fillColor.setter
     ___ fillColor  color):
-        self.m_fillColor _ QColor(color)
+        self.m_fillColor _ ?C..(color)
 
     @pyqtProperty(bool)
     ___ isDead(self):
@@ -270,7 +270,7 @@ c_ StickMan(QGraphicsObject):
         self.stabilize()
 
         __ self.m_sticks:
-            painter.setPen(Qt.white)
+            painter.setPen(__.white)
 
             for n1, n2 in Bones:
                 node1 _ self.m_nodes[n1]
@@ -313,7 +313,7 @@ c_ StickMan(QGraphicsObject):
             path.lineTo(self.posFor(14))
             path.lineTo(self.posFor(15))
 
-            painter.setPen(QPen(self.m_penColor, 5.0, Qt.SolidLine, Qt.RoundCap))
+            painter.setPen(QPen(self.m_penColor, 5.0, __.SolidLine, __.RoundCap))
             painter.drawPath(path)
 
             n1, n2 _ Bones[0]
@@ -333,7 +333,7 @@ c_ StickMan(QGraphicsObject):
             painter.drawEllipse(QPointF(0, 0), 50.0, 50.0)
 
             painter.setBrush(self.m_penColor)
-            painter.setPen(QPen(self.m_penColor, 2.5, Qt.SolidLine, Qt.RoundCap))
+            painter.setPen(QPen(self.m_penColor, 2.5, __.SolidLine, __.RoundCap))
 
             # Eyes.
             __ self.m_isDead:
@@ -350,12 +350,12 @@ c_ StickMan(QGraphicsObject):
             __ self.m_isDead:
                 painter.drawLine(-28.0, 2.0, 29.0, 2.0)
             ____
-                painter.setBrush(QColor(128, 0, 64 ))
+                painter.setBrush(?C..(128, 0, 64 ))
                 painter.drawChord(QRectF(-28.0, 2.0 - 55.0 / 2.0, 57.0, 55.0), 0.0, -180.0 * 16)
 
             # Pupils.
             __ no. self.m_isDead:
-                painter.setPen(QPen(self.m_fillColor, 1.0, Qt.SolidLine, Qt.RoundCap))
+                painter.setPen(QPen(self.m_fillColor, 1.0, __.SolidLine, __.RoundCap))
                 painter.setBrush(self.m_fillColor)
                 painter.drawEllipse(QPointF(-12.0, -25.0), 5.0, 5.0)
                 painter.drawEllipse(QPointF(22.0, -25.0), 5.0, 5.0)
@@ -365,10 +365,10 @@ c_ GraphicsView(QGraphicsView):
     keyPressed _ pyqtSignal(int)
 
     ___ keyPressEvent  e):
-        __ e.key() == Qt.Key_Escape:
+        __ e.key() == __.Key_Escape:
             self.close()
 
-        self.keyPressed.emit(Qt.Key(e.key()))
+        self.keyPressed.emit(__.Key(e.key()))
 
 
 c_ Frame(object):
@@ -525,9 +525,9 @@ c_ LifeCycle(object):
         # Make it blink when lightning strikes before entering dead animation.
         lightningBlink _ QState(self.m_machine)
         lightningBlink.assignProperty(self.m_stickMan.scene(),
-                'backgroundBrush', Qt.white)
-        lightningBlink.assignProperty(self.m_stickMan, 'penColor', Qt.black)
-        lightningBlink.assignProperty(self.m_stickMan, 'fillColor', Qt.white)
+                'backgroundBrush', __.white)
+        lightningBlink.assignProperty(self.m_stickMan, 'penColor', __.black)
+        lightningBlink.assignProperty(self.m_stickMan, 'fillColor', __.white)
         lightningBlink.assignProperty(self.m_stickMan, 'isDead', True)
 
         timer _ QTimer(lightningBlink)
@@ -538,9 +538,9 @@ c_ LifeCycle(object):
 
         self.m_dead _ QState(self.m_machine)
         self.m_dead.assignProperty(self.m_stickMan.scene(), 'backgroundBrush',
-                Qt.black)
-        self.m_dead.assignProperty(self.m_stickMan, 'penColor', Qt.white)
-        self.m_dead.assignProperty(self.m_stickMan, 'fillColor', Qt.black)
+                __.black)
+        self.m_dead.assignProperty(self.m_stickMan, 'penColor', __.white)
+        self.m_dead.assignProperty(self.m_stickMan, 'fillColor', __.black)
         self.m_dead.setObjectName('dead')
 
         # Idle state (sets no properties).
@@ -632,7 +632,7 @@ __ __name__ == '__main__':
     scene _ QGraphicsScene()
     scene.addItem(stickMan)
     scene.addItem(textItem)
-    scene.setBackgroundBrush(Qt.black)
+    scene.setBackgroundBrush(__.black)
 
     view _ GraphicsView()
     view.setRenderHints(QPainter.Antialiasing)
@@ -649,9 +649,9 @@ __ __name__ == '__main__':
     cycle _ LifeCycle(stickMan, view)
     cycle.setDeathAnimation(':/animations/dead')
 
-    cycle.addActivity(':/animations/jumping', Qt.Key_J)
-    cycle.addActivity(':/animations/dancing', Qt.Key_D)
-    cycle.addActivity(':/animations/chilling', Qt.Key_C)
+    cycle.addActivity(':/animations/jumping', __.Key_J)
+    cycle.addActivity(':/animations/dancing', __.Key_D)
+    cycle.addActivity(':/animations/chilling', __.Key_C)
     cycle.start()
 
     sys.exit(app.exec_())

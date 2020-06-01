@@ -42,8 +42,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ (QAbstractTableModel, QDir, QModelIndex, QRect,
-        QRectF, QSize, Qt)
+____ ?.?C.. ______ (QAbstractTableModel, QDir, QModelIndex, QRect,
+        QRectF, QSize, __)
 ____ ?.?G.. ______ QBrush, qGray, QImage, QPainter
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
 ____ ?.?W.. ______ (QAbstractItemDelegate, ?A.., QDialog,
@@ -68,19 +68,19 @@ c_ PixelDelegate(QAbstractItemDelegate):
             painter.fillRect(option.rect, option.palette.highlight())
 
         size _ min(option.rect.width(), option.rect.height())
-        brightness _ index.model().data(index, Qt.DisplayRole)
+        brightness _ index.model().data(index, __.DisplayRole)
         radius _ (size/2.0) - (brightness/255.0 * size/2.0)
         __ radius == 0.0:
             r_
 
         painter.save()
         painter.setRenderHint(QPainter.Antialiasing)
-        painter.setPen(Qt.NoPen)
+        painter.setPen(__.NoPen)
 
         __ option.state & QStyle.State_Selected:
             painter.setBrush(option.palette.highlightedText())
         ____
-            painter.setBrush(QBrush(Qt.black))
+            painter.setBrush(QBrush(__.black))
 
         painter.drawEllipse(QRectF(
                             option.rect.x() + option.rect.width()/2 - radius,
@@ -114,13 +114,13 @@ c_ ImageModel(QAbstractTableModel):
         r_ self.modelImage.width()
 
     ___ data  index, role):
-        __ no. index.isValid() or role !_ Qt.DisplayRole:
+        __ no. index.isValid() or role !_ __.DisplayRole:
             r_ N..
 
         r_ qGray(self.modelImage.pixel(index.column(), index.row()))
 
     ___ headerData  section, orientation, role):
-        __ role == Qt.SizeHintRole:
+        __ role == __.SizeHintRole:
             r_ QSize(1, 1)
 
         r_ N..
@@ -252,7 +252,7 @@ c_ MainWindow ?MW..
         parent _ QModelIndex()
 
         progress _ QProgressDialog("Printing...", "Cancel", 0, rows, self)
-        progress.setWindowModality(Qt.ApplicationModal)
+        progress.setWindowModality(__.ApplicationModal)
         y _ ItemSize / 2.0
 
         for row in range(rows):

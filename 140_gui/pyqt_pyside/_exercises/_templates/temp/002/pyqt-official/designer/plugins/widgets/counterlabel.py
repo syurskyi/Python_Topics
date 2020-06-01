@@ -23,7 +23,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 """
 
-____ ?.QtCore ______ pyqtProperty, pyqtSignal, pyqtSlot, QRectF, QSize, Qt
+____ ?.?C.. ______ pyqtProperty, pyqtSignal, pyqtSlot, QRectF, QSize, __
 ____ ?.?G.. ______ QFont, QFontMetricsF, QPainter
 ____ ?.?W.. ______ ?A.., QWidget
 
@@ -71,7 +71,7 @@ c_ CounterLabel(QWidget):
     ___ rescale(self):
 
         fm _ QFontMetricsF(self._font, self)
-        maxRect _ fm.boundingRect(QRectF(self.rect()), Qt.AlignCenter,
+        maxRect _ fm.boundingRect(QRectF(self.rect()), __.AlignCenter,
                 str(self._maximum))
         xscale _ float(self.width())/maxRect.width()
         yscale _ float(self.height())/maxRect.height()
@@ -80,7 +80,7 @@ c_ CounterLabel(QWidget):
     ___ reposition(self):
 
         fm _ QFontMetricsF(self._font, self)
-        rect _ fm.boundingRect(QRectF(self.rect()), Qt.AlignCenter,
+        rect _ fm.boundingRect(QRectF(self.rect()), __.AlignCenter,
                 str(self._value))
         self._xpos _ -rect.width()/2.0
         self._ypos _ rect.height()/2.0 - fm.descent()

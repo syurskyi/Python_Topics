@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QFile, QIODevice, QObject, QSizeF
+____ ?.?C.. ______ QFile, QIODevice, QObject, QSizeF
 ____ ?.?G.. ______ QTextCharFormat, QTextFormat, QTextObjectInterface
 ____ ?.?W.. ______ (?A.., QHBoxLayout, QLabel, QLineEdit,
         ?MB.., ?PB.., QTextEdit, QVBoxLayout, QWidget)

@@ -1,7 +1,7 @@
 ______ sys
 ____ ? ______ ?W.. __ qtw
 ____ ? ______ ?G.. __ qtg
-____ ? ______ QtCore __ qtc
+____ ? ______ ?C.. __ qtc
 
 
 c_ ColorButton(qtw.?PB..):
@@ -10,7 +10,7 @@ c_ ColorButton(qtw.?PB..):
 
     ___ __init__  default_color, changed_None):
         super().__init__()
-        self.set_color(qtg.QColor(default_color))
+        self.set_color(qtg.?C..(default_color))
         self.c__.c..(self.on_click)
         __ changed:
             self.changed.c..(changed)
@@ -150,7 +150,7 @@ c_ MainWindow(qtw.QMainWindow):
         self.max_size _ qtc.QSize(800, 600)
         self.image _ qtg.QImage(
             self.max_size, qtg.QImage.Format_ARGB32)
-        self.image.fill(qtg.QColor('black'))
+        self.image.fill(qtg.?C..('black'))
 
         # Container widget
         mainwidget _ qtw.QWidget()
@@ -183,14 +183,14 @@ c_ MainWindow(qtw.QMainWindow):
     ___ build_image  data):
         # Create a QImage file
         __ no. data.get('image_source'):
-            self.image.fill(qtg.QColor('black'))
+            self.image.fill(qtg.?C..('black'))
         ____
             self.image.load(data.get('image_source'))
             # Scale down the image if it's over the max_size
             __ no. (self.max_size - self.image.size()).isValid
                 # isValid returns false if either dimension is negative
                 self.image _ self.image.scaled(
-                    self.max_size, qtc.Qt.KeepAspectRatio)
+                    self.max_size, qtc.__.KeepAspectRatio)
 
         # create the painter
         painter _ qtg.QPainter(self.image)
@@ -213,11 +213,11 @@ c_ MainWindow(qtw.QMainWindow):
         # Paint the text
         painter.setPen(data['text_color'])
         painter.setFont(data['text_font'])
-        flags _ qtc.Qt.AlignHCenter | qtc.Qt.TextWordWrap
+        flags _ qtc.__.AlignHCenter | qtc.__.TextWordWrap
         painter.drawText(
-            self.image.rect(), flags | qtc.Qt.AlignTop, data['top_text'])
+            self.image.rect(), flags | qtc.__.AlignTop, data['top_text'])
         painter.drawText(
-            self.image.rect(), flags | qtc.Qt.AlignBottom,
+            self.image.rect(), flags | qtc.__.AlignBottom,
             data['bottom_text'])
 
         # Deep fry
@@ -238,7 +238,7 @@ c_ MainWindow(qtw.QMainWindow):
             colors _ self.image.colorTable()
             new_colors _ []
             for color in colors:
-                qcolor _ qtg.QColor(color)
+                qcolor _ qtg.?C..(color)
                 qcolor.setHslF(
                     ((qcolor.hueF() * 200) % 100)/100,
                     min(1, qcolor.saturationF() * 2),

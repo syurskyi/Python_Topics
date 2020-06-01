@@ -51,8 +51,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ (QAbstractItemModel, QFileInfo, QItemSelectionModel,
-        QModelIndex, Qt)
+____ ?.?C.. ______ (QAbstractItemModel, QFileInfo, QItemSelectionModel,
+        QModelIndex, __)
 ____ ?.?G.. ______ QIcon
 ____ ?.?W.. ______ (QAbstractItemView, ?A..,
         QFileIconProvider, QListView, QSplitter, QTableView, QTreeView)
@@ -109,18 +109,18 @@ c_ Model(QAbstractItemModel):
     ___ data  index, role):
         __ no. index.isValid
             r_ N..
-        ____ role == Qt.DisplayRole:
+        ____ role == __.DisplayRole:
             r_ "Item %d:%s" % (index.row(), index.column())
-        ____ role == Qt.DecorationRole:
+        ____ role == __.DecorationRole:
             __ index.column() == 0:
                 r_ self.iconProvider.icon(QFileIconProvider.Folder)
             r_ self.iconProvider.icon(QFileIconProvider.File)
         r_ N..
 
     ___ headerData  section, orientation, role):
-        __ role == Qt.DisplayRole:
+        __ role == __.DisplayRole:
             r_ str(section)
-        __ role == Qt.DecorationRole:
+        __ role == __.DecorationRole:
             r_ self.services
         r_ super(Model, self).headerData(section, orientation, role)
 
@@ -132,7 +132,7 @@ c_ Model(QAbstractItemModel):
     ___ flags  index):
         __ no. index.isValid
             r_ 0
-        r_ Qt.ItemIsDragEnabled | super(Model, self).flags(index)
+        r_ __.ItemIsDragEnabled | super(Model, self).flags(index)
 
     ___ node  row, parent):
         __ parent and no. parent.children:
@@ -160,16 +160,16 @@ ___ main(args):
     table.horizontalHeader().setSectionsMovable(True)
     table.verticalHeader().setSectionsMovable(True)
     # Set StaticContents to enable minimal repaints on resizes.
-    table.viewport().setAttribute(Qt.WA_StaticContents)
+    table.viewport().setAttribute(__.WA_StaticContents)
     page.addWidget(table)
     tree _ QTreeView()
     tree.setModel(data)
     tree.setSelectionModel(selections)
     tree.setUniformRowHeights(True)
     tree.header().setStretchLastSection F..
-    tree.viewport().setAttribute(Qt.WA_StaticContents)
+    tree.viewport().setAttribute(__.WA_StaticContents)
     # Disable the focus rect to get minimal repaints when scrolling on Mac.
-    tree.setAttribute(Qt.WA_MacShowFocusRect, False)
+    tree.setAttribute(__.WA_MacShowFocusRect, False)
     page.addWidget(tree)
     list _ QListView()
     list.setModel(data)
@@ -177,8 +177,8 @@ ___ main(args):
     list.setViewMode(QListView.IconMode)
     list.setSelectionMode(QAbstractItemView.ExtendedSelection)
     list.setAlternatingRowColors F..
-    list.viewport().setAttribute(Qt.WA_StaticContents)
-    list.setAttribute(Qt.WA_MacShowFocusRect, False)
+    list.viewport().setAttribute(__.WA_StaticContents)
+    list.setAttribute(__.WA_MacShowFocusRect, False)
     page.addWidget(list)
     page.setWindowIcon(QIcon(images_dir + '/interview.png'))
     page.setWindowTitle("Interview")

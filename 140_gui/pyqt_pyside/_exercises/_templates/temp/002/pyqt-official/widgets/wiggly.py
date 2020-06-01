@@ -42,8 +42,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QBasicTimer
-____ ?.?G.. ______ QColor, QFontMetrics, QPainter, QPalette
+____ ?.?C.. ______ QBasicTimer
+____ ?.?G.. ______ ?C.., QFontMetrics, QPainter, ?P..
 ____ ?.?W.. ______ (?A.., QDialog, QLineEdit, QVBoxLayout,
         QWidget)
 
@@ -52,7 +52,7 @@ c_ WigglyWidget(QWidget):
     ___ __init__  parent_None):
         super(WigglyWidget, self).__init__(parent)
 
-        self.setBackgroundRole(QPalette.Midlight)
+        self.setBackgroundRole(?P...Midlight)
         self.setAutoFillBackground(True)
 
         newFont _ self.font()
@@ -71,7 +71,7 @@ c_ WigglyWidget(QWidget):
         metrics _ QFontMetrics(self.font())
         x _ (self.width() - metrics.width(self.text)) / 2
         y _ (self.height() + metrics.ascent() - metrics.descent()) / 2
-        color _ QColor()
+        color _ ?C..()
 
         painter _ QPainter(self)
 

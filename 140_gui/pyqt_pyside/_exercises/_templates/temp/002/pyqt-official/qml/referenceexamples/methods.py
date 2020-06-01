@@ -44,7 +44,7 @@
 
 ______ sys
 
-____ ?.QtCore ______ (pyqtProperty, pyqtSlot, QCoreApplication, QObject,
+____ ?.?C.. ______ (pyqtProperty, pyqtSlot, QCoreApplication, QObject,
         QUrl)
 ____ ?.QtQml ______ (qmlRegisterType, QQmlComponent, QQmlEngine,
         QQmlListProperty)

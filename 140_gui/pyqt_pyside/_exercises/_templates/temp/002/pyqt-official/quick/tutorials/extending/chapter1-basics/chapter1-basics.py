@@ -41,8 +41,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ pyqtProperty, pyqtSignal, QRectF, QUrl
-____ ?.?G.. ______ QColor, QGuiApplication, QPainter, QPen
+____ ?.?C.. ______ pyqtProperty, pyqtSignal, QRectF, QUrl
+____ ?.?G.. ______ ?C.., QGuiApplication, QPainter, QPen
 ____ ?.QtQml ______ qmlRegisterType
 ____ ?.QtQuick ______ QQuickPaintedItem, QQuickView
 
@@ -62,19 +62,19 @@ c_ PieChart(QQuickPaintedItem):
             self.nameChanged.emit(name)
             self.update()
 
-    @pyqtProperty(QColor)
+    @pyqtProperty(?C..)
     ___ color(self):
         r_ self._color
 
     @color.setter
     ___ color  color):
-        self._color _ QColor(color)
+        self._color _ ?C..(color)
 
     ___ __init__  parent_None):
         super(PieChart, self).__init__(parent)
 
         self._name _ ''
-        self._color _ QColor()
+        self._color _ ?C..()
 
     ___ paint  painter):
         painter.setPen(QPen(self._color, 2))

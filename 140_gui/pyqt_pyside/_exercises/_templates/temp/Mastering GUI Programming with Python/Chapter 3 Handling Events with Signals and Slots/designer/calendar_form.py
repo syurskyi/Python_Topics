@@ -6,7 +6,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, ?G.., ?W..
+____ ? ______ ?C.., ?G.., ?W..
 
 c_ Ui_MainWindow(object):
     ___ setupUi  MainWindow):
@@ -66,10 +66,10 @@ c_ Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
         self.allday_check.toggled['bool'].c..(self.event_time.setDisabled)
-        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        ?C...QMetaObject.connectSlotsByName(MainWindow)
 
     ___ retranslateUi  MainWindow):
-        _translate _ QtCore.QCoreApplication.translate
+        _translate _ ?C...QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "My Calendar App"))
         self.label.sT..(_translate("MainWindow", "Events on Date"))
         self.groupBox.setTitle(_translate("MainWindow", "Event"))

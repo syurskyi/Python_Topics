@@ -1,6 +1,6 @@
 ____ ?.?G.. ______ *
 ____ ?.?W.. ______ *
-____ ?.QtCore ______ *
+____ ?.?C.. ______ *
 ____ ?.QtMultimedia ______ *
 ____ ?.QtMultimediaWidgets ______ *
 
@@ -29,7 +29,7 @@ c_ PlaylistModel(QAbstractListModel):
         self.playlist _ playlist
 
     ___ data  index, role):
-        __ role == Qt.DisplayRole:
+        __ role == __.DisplayRole:
             media _ self.playlist.media(index.row())
             r_ media.canonicalUrl().fileName()
 
@@ -53,7 +53,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
 
         # Add viewer for video playback, separate floating window.
         self.viewer _ ViewerWindow(self)
-        self.viewer.setWindowFlags(self.viewer.windowFlags() | Qt.WindowStaysOnTopHint)
+        self.viewer.setWindowFlags(self.viewer.windowFlags() | __.WindowStaysOnTopHint)
         self.viewer.setMinimumSize(QSize(480,360))
 
         videoWidget _ QVideoWidget()
@@ -164,21 +164,21 @@ __ __name__ == '__main__':
     app.setStyle("Fusion")
 
     # Fusion dark palette from https://gist.github.com/QuantumCD/6245215.
-    palette _ QPalette()
-    palette.setColor(QPalette.Window, QColor(53, 53, 53))
-    palette.setColor(QPalette.WindowText, Qt.white)
-    palette.setColor(QPalette.Base, QColor(25, 25, 25))
-    palette.setColor(QPalette.AlternateBase, QColor(53, 53, 53))
-    palette.setColor(QPalette.ToolTipBase, Qt.white)
-    palette.setColor(QPalette.ToolTipText, Qt.white)
-    palette.setColor(QPalette.Text, Qt.white)
-    palette.setColor(QPalette.Button, QColor(53, 53, 53))
-    palette.setColor(QPalette.ButtonText, Qt.white)
-    palette.setColor(QPalette.BrightText, Qt.red)
-    palette.setColor(QPalette.Link, QColor(42, 130, 218))
-    palette.setColor(QPalette.Highlight, QColor(42, 130, 218))
-    palette.setColor(QPalette.HighlightedText, Qt.black)
-    app.setPalette(palette)
+    palette _ ?P..()
+    palette.sC..(?P...Window, ?C..(53, 53, 53))
+    palette.sC..(?P...WindowText, __.white)
+    palette.sC..(?P...Base, ?C..(25, 25, 25))
+    palette.sC..(?P...AlternateBase, ?C..(53, 53, 53))
+    palette.sC..(?P...ToolTipBase, __.white)
+    palette.sC..(?P...ToolTipText, __.white)
+    palette.sC..(?P...Text, __.white)
+    palette.sC..(?P...Button, ?C..(53, 53, 53))
+    palette.sC..(?P...ButtonText, __.white)
+    palette.sC..(?P...BrightText, __.red)
+    palette.sC..(?P...Link, ?C..(42, 130, 218))
+    palette.sC..(?P...Highlight, ?C..(42, 130, 218))
+    palette.sC..(?P...HighlightedText, __.black)
+    app.sP..(palette)
     app.setStyleSheet("QToolTip { color: #ffffff; background-color: #2a82da; border: 1px solid white; }")
 
     window _ MainWindow()

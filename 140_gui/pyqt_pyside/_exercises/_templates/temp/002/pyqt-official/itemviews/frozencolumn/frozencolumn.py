@@ -51,7 +51,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QFile, QFileInfo, Qt
+____ ?.?C.. ______ QFile, QFileInfo, __
 ____ ?.?G.. ______ QStandardItem, QStandardItemModel
 ____ ?.?W.. ______ ?A.., QHeaderView, QTableView
 
@@ -71,7 +71,7 @@ c_ FreezeTableWidget(QTableView):
 
     ___ init(self):
         self.frozenTableView.setModel(self.model())
-        self.frozenTableView.setFocusPolicy(Qt.NoFocus)
+        self.frozenTableView.setFocusPolicy(__.NoFocus)
         self.frozenTableView.verticalHeader().hide()
         self.frozenTableView.horizontalHeader().setSectionResizeMode(
                 QHeaderView.Fixed)
@@ -87,8 +87,8 @@ c_ FreezeTableWidget(QTableView):
         for col in range(1, self.model().columnCount()):
             self.frozenTableView.setColumnHidden(col, True)
         self.frozenTableView.setColumnWidth(0, self.columnWidth(0))
-        self.frozenTableView.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
-        self.frozenTableView.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        self.frozenTableView.setHorizontalScrollBarPolicy(__.ScrollBarAlwaysOff)
+        self.frozenTableView.setVerticalScrollBarPolicy(__.ScrollBarAlwaysOff)
         self.frozenTableView.s..
         self.updateFrozenTableGeometry()
         self.setHorizontalScrollMode(self.ScrollPerPixel)

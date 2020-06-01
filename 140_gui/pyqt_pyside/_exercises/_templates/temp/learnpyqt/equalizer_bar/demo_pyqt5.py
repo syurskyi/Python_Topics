@@ -1,4 +1,4 @@
-____ ? ______ QtCore, ?W..
+____ ? ______ ?C.., ?W..
 ____ equalizer_bar ______ EqualizerBar
 
 ______ random
@@ -14,7 +14,7 @@ c_ Window(?W...QMainWindow):
 
         self.sCW..(self.equalizer)
 
-        self._timer _ QtCore.QTimer()
+        self._timer _ ?C...QTimer()
         self._timer.setInterval(100)
         self._timer.timeout.c..(self.update_values)
         self._timer.start()

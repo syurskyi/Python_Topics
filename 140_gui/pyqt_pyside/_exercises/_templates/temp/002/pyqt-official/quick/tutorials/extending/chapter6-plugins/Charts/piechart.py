@@ -38,7 +38,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ pyqtProperty
+____ ?.?C.. ______ pyqtProperty
 ____ ?.QtQml ______ QQmlListProperty
 ____ ?.QtQuick ______ QQuickItem
 

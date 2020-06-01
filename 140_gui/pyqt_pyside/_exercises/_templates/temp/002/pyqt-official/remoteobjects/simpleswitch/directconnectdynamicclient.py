@@ -53,7 +53,7 @@
 
 ______ sys
 
-____ ?.QtCore ______ pyqtSignal, pyqtSlot, QCoreApplication, QObject, QUrl
+____ ?.?C.. ______ pyqtSignal, pyqtSlot, QCoreApplication, QObject, QUrl
 ____ ?.QtRemoteObjects ______ QRemoteObjectNode
 
 

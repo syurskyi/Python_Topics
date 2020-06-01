@@ -44,8 +44,8 @@
 
 ______ random
 
-____ ?.QtCore ______ QEvent, QPoint, QPointF, QSize, Qt
-____ ?.?G.. ______ QColor, QIcon, QPainter, QPainterPath, QPalette
+____ ?.?C.. ______ QEvent, QPoint, QPointF, QSize, __
+____ ?.?G.. ______ ?C.., QIcon, QPainter, QPainterPath, ?P..
 ____ ?.?W.. ______ (?A.., QStyle, QToolButton, QToolTip,
         QWidget)
 
@@ -56,7 +56,7 @@ c_ ShapeItem(object):
     ___ __init__(self):    
         self.myPath _ QPainterPath()
         self.myPosition _ QPoint()
-        self.myColor  _ QColor()
+        self.myColor  _ ?C..()
         self.myToolTip _ ''
 
     ___ path(self):
@@ -80,7 +80,7 @@ c_ ShapeItem(object):
     ___ setPosition  position):
         self.myPosition _ position
 
-    ___ setColor  color):
+    ___ sC..  color):
         self.myColor _ color
 
 
@@ -98,7 +98,7 @@ c_ SortingBox(QWidget):
         self.previousPosition _ QPoint()
 
         self.setMouseTracking(True)
-        self.setBackgroundRole(QPalette.Base)
+        self.setBackgroundRole(?P...Base)
 
         self.itemInMotion _ N..
 
@@ -166,7 +166,7 @@ c_ SortingBox(QWidget):
             painter.translate(-shapeItem.position())
 
     ___ mousePressEvent  event):
-        __ event.button() == Qt.LeftButton:
+        __ event.button() == __.LeftButton:
             index _ self.itemAt(event.pos())
             __ index !_ -1:
                 self.itemInMotion _ self.shapeItems[index]
@@ -179,11 +179,11 @@ c_ SortingBox(QWidget):
                 self.update()
 
     ___ mouseMoveEvent  event):
-        __ (event.buttons() & Qt.LeftButton) and self.itemInMotion:
+        __ (event.buttons() & __.LeftButton) and self.itemInMotion:
             self.moveItemTo(event.pos())
 
     ___ mouseReleaseEvent  event):
-        __ (event.button() == Qt.LeftButton) and self.itemInMotion:
+        __ (event.button() == __.LeftButton) and self.itemInMotion:
             self.moveItemTo(event.pos())
             self.itemInMotion _ N..
 
@@ -231,7 +231,7 @@ c_ SortingBox(QWidget):
         shapeItem.setPath(path)
         shapeItem.setToolTip(toolTip)
         shapeItem.setPosition(pos)
-        shapeItem.setColor(color)
+        shapeItem.sC..(color)
         self.shapeItems.append(shapeItem)
         self.update()
 
@@ -262,10 +262,10 @@ c_ SortingBox(QWidget):
 
     ___ initialItemColor(self):
         hue _ ((len(self.shapeItems) + 1) * 85) % 256
-        r_ QColor.fromHsv(hue, 255, 190)
+        r_ ?C...fromHsv(hue, 255, 190)
 
     ___ randomItemColor(self):
-        r_ QColor.fromHsv(random.randint(0, 256), 255, 190)
+        r_ ?C...fromHsv(random.randint(0, 256), 255, 190)
 
 
 __ __name__ == "__main__":

@@ -40,8 +40,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QRect, Qt
-____ ?.?G.. ______ QColor, QImage, QLinearGradient, QPainter
+____ ?.?C.. ______ QRect, __
+____ ?.?G.. ______ ?C.., QImage, QLinearGradient, QPainter
 
 ____ colors ______ Colors
 ____ demoitem ______ DemoItem
@@ -63,23 +63,23 @@ c_ LetterItem(DemoItem):
         painter _ QPainter(image)
         painter.scale(transform.m11(), transform.m22())
         painter.setRenderHints(QPainter.TextAntialiasing | QPainter.Antialiasing | QPainter.SmoothPixmapTransform)
-        painter.setPen(Qt.NoPen)
+        painter.setPen(__.NoPen)
 
         __ Colors.useEightBitPalette:
-            painter.setBrush(QColor(102, 175, 54))
+            painter.setBrush(?C..(102, 175, 54))
             painter.drawEllipse(0, 0, 25, 25)
             painter.setFont(Colors.tickerFont())
-            painter.setPen(QColor(255, 255, 255))
+            painter.setPen(?C..(255, 255, 255))
             painter.drawText(10, 15, self.letter)
         ____
             brush _ QLinearGradient(0, 0, 0, 25)
             brush.setSpread(QLinearGradient.PadSpread)
-            brush.setColorAt(0.0, QColor(102, 175, 54, 200))
-            brush.setColorAt(1.0, QColor(102, 175, 54, 60))
+            brush.setColorAt(0.0, ?C..(102, 175, 54, 200))
+            brush.setColorAt(1.0, ?C..(102, 175, 54, 60))
             painter.setBrush(brush)
             painter.drawEllipse(0, 0, 25, 25)
             painter.setFont(Colors.tickerFont())
-            painter.setPen(QColor(255, 255, 255, 255))
+            painter.setPen(?C..(255, 255, 255, 255))
             painter.drawText(10, 15, self.letter)
 
         r_ image

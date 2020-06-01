@@ -1,6 +1,6 @@
 ______ sys
 ____ ?.QtSql ______ QSqlDatabase, QSqlQuery
-____ ?.QtCore ______ *
+____ ?.?C.. ______ *
 
 ___ createDB
     db _ QSqlDatabase.addDatabase("QSQLITE")

@@ -42,8 +42,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QPoint, QSize, Qt, QTime, QTimer
-____ ?.?G.. ______ QColor, QPainter, QPolygon, QRegion
+____ ?.?C.. ______ QPoint, QSize, __, QTime, QTimer
+____ ?.?G.. ______ ?C.., QPainter, QPolygon, QRegion
 ____ ?.?W.. ______ ?A.., ?A.., QWidget
 
 
@@ -60,12 +60,12 @@ c_ ShapedClock(QWidget):
         QPoint(0, -70)
     ])
 
-    hourColor _ QColor(127, 0, 127)
-    minuteColor _ QColor(0, 127, 127, 191)
+    hourColor _ ?C..(127, 0, 127)
+    minuteColor _ ?C..(0, 127, 127, 191)
 
     ___ __init__  parent_None):
         super(ShapedClock, self).__init__(parent,
-                Qt.FramelessWindowHint | Qt.WindowSystemMenuHint)
+                __.FramelessWindowHint | __.WindowSystemMenuHint)
 
         timer _ QTimer(self)
         timer.timeout.c..(self.update)
@@ -75,18 +75,18 @@ c_ ShapedClock(QWidget):
                 triggered_QApplication.instance().quit)
         self.aA..(quitAction)
 
-        self.setContextMenuPolicy(Qt.ActionsContextMenu)
+        self.setContextMenuPolicy(__.ActionsContextMenu)
         self.setToolTip("Drag the clock with the left mouse button.\n"
                 "Use the right mouse button to open a context menu.")
         self.setWindowTitle(self.tr("Shaped Analog Clock"))
 
     ___ mousePressEvent  event):
-        __ event.button() == Qt.LeftButton:
+        __ event.button() == __.LeftButton:
             self.dragPosition _ event.globalPos() - self.frameGeometry().topLeft()
             event.accept()
 
     ___ mouseMoveEvent  event):
-        __ event.buttons() == Qt.LeftButton:
+        __ event.buttons() == __.LeftButton:
             self.move(event.globalPos() - self.dragPosition)
             event.accept()
 
@@ -99,7 +99,7 @@ c_ ShapedClock(QWidget):
         painter.translate(self.width() / 2, self.height() / 2)
         painter.scale(side / 200.0, side / 200.0)
 
-        painter.setPen(Qt.NoPen)
+        painter.setPen(__.NoPen)
         painter.setBrush(ShapedClock.hourColor)
 
         painter.save()
@@ -113,7 +113,7 @@ c_ ShapedClock(QWidget):
             painter.drawLine(88, 0, 96, 0)
             painter.rotate(30.0)
 
-        painter.setPen(Qt.NoPen)
+        painter.setPen(__.NoPen)
         painter.setBrush(ShapedClock.minuteColor)
 
         painter.save()

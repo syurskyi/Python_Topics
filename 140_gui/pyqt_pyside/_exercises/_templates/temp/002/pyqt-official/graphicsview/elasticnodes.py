@@ -44,9 +44,9 @@
 
 ______ math
 
-____ ?.QtCore ______ (qAbs, QLineF, QPointF, qrand, QRectF, QSizeF, qsrand,
-        Qt, QTime)
-____ ?.?G.. ______ (QBrush, QColor, QLinearGradient, QPainter,
+____ ?.?C.. ______ (qAbs, QLineF, QPointF, qrand, QRectF, QSizeF, qsrand,
+        __, QTime)
+____ ?.?G.. ______ (QBrush, ?C.., QLinearGradient, QPainter,
         QPainterPath, QPen, QPolygonF, QRadialGradient)
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsScene,
         QGraphicsView, QStyle)
@@ -65,7 +65,7 @@ c_ Edge(QGraphicsItem):
         self.sourcePoint _ QPointF()
         self.destPoint _ QPointF()
 
-        self.setAcceptedMouseButtons(Qt.NoButton)
+        self.setAcceptedMouseButtons(__.NoButton)
         self.source _ sourceNode
         self.dest _ destNode
         self.source.addEdge(self)
@@ -130,8 +130,8 @@ c_ Edge(QGraphicsItem):
         __ line.length() == 0.0:
             r_
 
-        painter.setPen(QPen(Qt.black, 1, Qt.SolidLine, Qt.RoundCap,
-                Qt.RoundJoin))
+        painter.setPen(QPen(__.black, 1, __.SolidLine, __.RoundCap,
+                __.RoundJoin))
         painter.drawLine(line)
 
         # Draw the arrows if there's enough room.
@@ -148,7 +148,7 @@ c_ Edge(QGraphicsItem):
         destArrowP2 _ self.destPoint + QPointF(math.sin(angle - Edge.Pi + Edge.Pi / 3) * self.arrowSize,
                                                       math.cos(angle - Edge.Pi + Edge.Pi / 3) * self.arrowSize)
 
-        painter.setBrush(Qt.black)
+        painter.setBrush(__.black)
         painter.drawPolygon(QPolygonF([line.p1(), sourceArrowP1, sourceArrowP2]))
         painter.drawPolygon(QPolygonF([line.p2(), destArrowP1, destArrowP2]))
 
@@ -233,22 +233,22 @@ c_ Node(QGraphicsItem):
         r_ path
 
     ___ paint  painter, option, widget):
-        painter.setPen(Qt.NoPen)
-        painter.setBrush(Qt.darkGray)
+        painter.setPen(__.NoPen)
+        painter.setBrush(__.darkGray)
         painter.drawEllipse(-7, -7, 20, 20)
 
         gradient _ QRadialGradient(-3, -3, 10)
         __ option.state & QStyle.State_Sunken:
             gradient.setCenter(3, 3)
             gradient.setFocalPoint(3, 3)
-            gradient.setColorAt(1, QColor(Qt.yellow).lighter(120))
-            gradient.setColorAt(0, QColor(Qt.darkYellow).lighter(120))
+            gradient.setColorAt(1, ?C..(__.yellow).lighter(120))
+            gradient.setColorAt(0, ?C..(__.darkYellow).lighter(120))
         ____
-            gradient.setColorAt(0, Qt.yellow)
-            gradient.setColorAt(1, Qt.darkYellow)
+            gradient.setColorAt(0, __.yellow)
+            gradient.setColorAt(1, __.darkYellow)
 
         painter.setBrush(QBrush(gradient))
-        painter.setPen(QPen(Qt.black, 0))
+        painter.setPen(QPen(__.black, 0))
         painter.drawEllipse(-10, -10, 20, 20)
 
     ___ itemChange  change, value):
@@ -336,19 +336,19 @@ c_ GraphWidget(QGraphicsView):
     ___ keyPressEvent  event):
         key _ event.key()
 
-        __ key == Qt.Key_Up:
+        __ key == __.Key_Up:
             self.centerNode.moveBy(0, -20)
-        ____ key == Qt.Key_Down:
+        ____ key == __.Key_Down:
             self.centerNode.moveBy(0, 20)
-        ____ key == Qt.Key_Left:
+        ____ key == __.Key_Left:
             self.centerNode.moveBy(-20, 0)
-        ____ key == Qt.Key_Right:
+        ____ key == __.Key_Right:
             self.centerNode.moveBy(20, 0)
-        ____ key == Qt.Key_Plus:
+        ____ key == __.Key_Plus:
             self.scaleView(1.2)
-        ____ key == Qt.Key_Minus:
+        ____ key == __.Key_Minus:
             self.scaleView(1 / 1.2)
-        ____ key == Qt.Key_Space or key == Qt.Key_Enter:
+        ____ key == __.Key_Space or key == __.Key_Enter:
             for item in self.scene().items
                 __ isinstance(item, Node):
                     item.setPos(-150 + qrand() % 300, -150 + qrand() % 300)
@@ -381,16 +381,16 @@ c_ GraphWidget(QGraphicsView):
         bottomShadow _ QRectF(sceneRect.left() + 5, sceneRect.bottom(),
                 sceneRect.width(), 5)
         __ rightShadow.intersects(rect) or rightShadow.contains(rect):
-	        painter.fillRect(rightShadow, Qt.darkGray)
+	        painter.fillRect(rightShadow, __.darkGray)
         __ bottomShadow.intersects(rect) or bottomShadow.contains(rect):
-	        painter.fillRect(bottomShadow, Qt.darkGray)
+	        painter.fillRect(bottomShadow, __.darkGray)
 
         # Fill.
         gradient _ QLinearGradient(sceneRect.topLeft(), sceneRect.bottomRight())
-        gradient.setColorAt(0, Qt.white)
-        gradient.setColorAt(1, Qt.lightGray)
+        gradient.setColorAt(0, __.white)
+        gradient.setColorAt(1, __.lightGray)
         painter.fillRect(rect.intersected(sceneRect), QBrush(gradient))
-        painter.setBrush(Qt.NoBrush)
+        painter.setBrush(__.NoBrush)
         painter.drawRect(sceneRect)
 
         # Text.
@@ -403,9 +403,9 @@ c_ GraphWidget(QGraphicsView):
         font.setBold(True)
         font.setPointSize(14)
         painter.setFont(font)
-        painter.setPen(Qt.lightGray)
+        painter.setPen(__.lightGray)
         painter.drawText(textRect.translated(2, 2), message)
-        painter.setPen(Qt.black)
+        painter.setPen(__.black)
         painter.drawText(textRect, message)
 
     ___ scaleView  scaleFactor):

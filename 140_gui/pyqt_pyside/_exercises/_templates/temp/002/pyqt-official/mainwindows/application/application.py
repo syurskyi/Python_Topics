@@ -42,8 +42,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ (QFile, QFileInfo, QPoint, QRect, QSettings, QSize,
-        Qt, QTextStream)
+____ ?.?C.. ______ (QFile, QFileInfo, QPoint, QRect, QSettings, QSize,
+        __, QTextStream)
 ____ ?.?G.. ______ QIcon, ?KS..
 ____ ?.?W.. ______ (?A.., ?A.., ?FD.., QMainWindow,
         ?MB.., QTextEdit)
@@ -229,7 +229,7 @@ c_ MainWindow ?MW..
             r_
 
         inf _ QTextStream(file)
-        ?A...setOverrideCursor(Qt.WaitCursor)
+        ?A...setOverrideCursor(__.WaitCursor)
         self.textEdit.sPT..(inf.readAll())
         ?A...restoreOverrideCursor()
 
@@ -244,7 +244,7 @@ c_ MainWindow ?MW..
             r_ False
 
         outf _ QTextStream(file)
-        ?A...setOverrideCursor(Qt.WaitCursor)
+        ?A...setOverrideCursor(__.WaitCursor)
         outf << self.textEdit.toPlainText()
         ?A...restoreOverrideCursor()
 

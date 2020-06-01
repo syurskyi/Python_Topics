@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QTimer
+____ ?.?C.. ______ QTimer
 ____ ?.?W.. ______ (?A.., QDialog, QDialogButtonBox, QLabel,
         ?PB.., QVBoxLayout)
 ____ ?.QtNetwork ______ QHostAddress, QUdpSocket

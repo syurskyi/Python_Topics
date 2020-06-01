@@ -1,7 +1,7 @@
 ______ sys
 ____ ? ______ ?W.. __ qtw
 ____ ? ______ ?G.. __ qtg
-____ ? ______ QtCore __ qtc
+____ ? ______ ?C.. __ qtc
 ____ ? ______ QtChart __ qtch
 
 ____ collections ______ deque
@@ -99,12 +99,12 @@ c_ CPUUsageView(qtch.QChartView):
 
     ___ keyPressEvent  event):
         keymap _ {
-            qtc.Qt.Key_Up: lambda: self.chart().scroll(0, -10),
-            qtc.Qt.Key_Down: lambda: self.chart().scroll(0, 10),
-            qtc.Qt.Key_Right: lambda: self.chart().scroll(-10, 0),
-            qtc.Qt.Key_Left: lambda: self.chart().scroll(10, 0),
-            qtc.Qt.Key_Greater: self.chart().zoomIn,
-            qtc.Qt.Key_Less: self.chart().zoomOut,
+            qtc.__.Key_Up: lambda: self.chart().scroll(0, -10),
+            qtc.__.Key_Down: lambda: self.chart().scroll(0, 10),
+            qtc.__.Key_Right: lambda: self.chart().scroll(-10, 0),
+            qtc.__.Key_Left: lambda: self.chart().scroll(10, 0),
+            qtc.__.Key_Greater: self.chart().zoomIn,
+            qtc.__.Key_Less: self.chart().zoomOut,
         }
         callback _ keymap.get(event.key())
         __ callback:
@@ -175,26 +175,26 @@ c_ MemoryChartView(qtch.QChartView):
         # Configure a background brush
         gradient _ qtg.QLinearGradient(
             chart.plotArea().topLeft(), chart.plotArea().bottomRight())
-        gradient.setColorAt(0, qtg.QColor("#333"))
-        gradient.setColorAt(1, qtg.QColor("#660"))
+        gradient.setColorAt(0, qtg.?C..("#333"))
+        gradient.setColorAt(1, qtg.?C..("#660"))
         chart.setBackgroundBrush(qtg.QBrush(gradient))
 
         # Background Pen draws a border around the chart
-        chart.setBackgroundPen(qtg.QPen(qtg.QColor('black'), 5))
+        chart.setBackgroundPen(qtg.QPen(qtg.?C..('black'), 5))
 
         # Set title font and brush
         chart.setTitleBrush(
-            qtg.QBrush(qtc.Qt.white))
+            qtg.QBrush(qtc.__.white))
         chart.setTitleFont(qtg.QFont('Impact', 32, qtg.QFont.Bold))
 
         # Set axes fonts and brushes
         axis_font _ qtg.QFont('Mono', 16)
-        axis_brush _ qtg.QBrush(qtg.QColor('#EEF'))
+        axis_brush _ qtg.QBrush(qtg.?C..('#EEF'))
         y_axis.setLabelsFont(axis_font)
         y_axis.setLabelsBrush(axis_brush)
 
         # Grid lines
-        grid_pen _ qtg.QPen(qtg.QColor('silver'))
+        grid_pen _ qtg.QPen(qtg.?C..('silver'))
         grid_pen.setDashPattern([1, 1, 0, 1])
         x_axis.setGridLinePen(grid_pen)
         y_axis.setGridLinePen(grid_pen)
@@ -202,7 +202,7 @@ c_ MemoryChartView(qtch.QChartView):
 
         #Shades
         y_axis.setShadesVisible(True)
-        y_axis.setShadesColor(qtg.QColor('#884'))
+        y_axis.setShadesColor(qtg.?C..('#884'))
 
         # Styling the legend
         legend _ chart.legend()
@@ -210,11 +210,11 @@ c_ MemoryChartView(qtch.QChartView):
         # Background
         legend.setBackgroundVisible(True)
         legend.setBrush(
-            qtg.QBrush(qtg.QColor('white')))
+            qtg.QBrush(qtg.?C..('white')))
 
         # Font
         legend.setFont(qtg.QFont('Courier', 14))
-        legend.setLabelColor(qtc.Qt.darkRed)
+        legend.setLabelColor(qtc.__.darkRed)
 
         # Markers
         legend.setMarkerShape(qtch.QLegend.MarkerShapeCircle)

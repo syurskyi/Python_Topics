@@ -1,7 +1,7 @@
 ______ sys
 ____ ? ______ ?W.. __ qtw
 ____ ? ______ ?G.. __ qtg
-____ ? ______ QtCore __ qtc
+____ ? ______ ?C.. __ qtc
 
 
 c_ SettingsDialog(qtw.QDialog):
@@ -116,8 +116,8 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
         toolbar.setMovable F..
         toolbar.setFloatable F..
         toolbar.setAllowedAreas(
-            qtc.Qt.TopToolBarArea |
-            qtc.Qt.BottomToolBarArea
+            qtc.__.TopToolBarArea |
+            qtc.__.BottomToolBarArea
         )
 
         # Add with icons
@@ -146,7 +146,7 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
 
         # create a toolbar in another part of the screen:
         toolbar2 _ qtw.QToolBar('Edit')
-        self.addToolBar(qtc.Qt.RightToolBarArea, toolbar2)
+        self.addToolBar(qtc.__.RightToolBarArea, toolbar2)
         toolbar2.aA..('Copy', self.textedit.copy)
         toolbar2.aA..('Cut', self.textedit.cut)
         toolbar2.aA..('Paste', self.textedit.paste)
@@ -157,7 +157,7 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
         ################
 
         dock _ qtw.QDockWidget("Replace")
-        self.addDockWidget(qtc.Qt.LeftDockWidgetArea, dock)
+        self.addDockWidget(qtc.__.LeftDockWidgetArea, dock)
 
         # make it not closable
         dock.setFeatures(
@@ -211,7 +211,7 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
                 'This editor was written for pedagogical '
                 'purposes, and probably is not fit for real work.'
             )
-            splash_screen.setWindowModality(qtc.Qt.WindowModal)
+            splash_screen.setWindowModality(qtc.__.WindowModal)
             splash_screen.addButton(qtw.?MB...Yes)
             splash_screen.addButton(qtw.?MB...Abort)
             response _ splash_screen.e..

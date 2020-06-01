@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QDateTime, Qt, QTimer
+____ ?.?C.. ______ QDateTime, __, QTimer
 ____ ?.?W.. ______ (?A.., QCheckBox, QComboBox, QDateTimeEdit,
         QDial, QDialog, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit,
         QProgressBar, ?PB.., QRadioButton, QScrollBar, QSizePolicy,
@@ -109,9 +109,9 @@ c_ WidgetGallery(QDialog):
 
     ___ changePalette(self):
         __ (self.useStylePaletteCheckBox.isChecked()):
-            ?A...setPalette(?A...style().standardPalette())
+            ?A...sP..(?A...style().standardPalette())
         ____
-            ?A...setPalette(self.originalPalette)
+            ?A...sP..(self.originalPalette)
 
     ___ advanceProgressBar(self):
         curVal _ self.progressBar.value()
@@ -128,7 +128,7 @@ c_ WidgetGallery(QDialog):
 
         checkBox _ QCheckBox("Tri-state check box")
         checkBox.setTristate(True)
-        checkBox.setCheckState(Qt.PartiallyChecked)
+        checkBox.setCheckState(__.PartiallyChecked)
 
         layout _ QVBoxLayout()
         layout.addWidget(radioButton1)
@@ -203,10 +203,10 @@ c_ WidgetGallery(QDialog):
         dateTimeEdit _ QDateTimeEdit(self.bottomRightGroupBox)
         dateTimeEdit.setDateTime(QDateTime.currentDateTime())
 
-        slider _ QSlider(Qt.Horizontal, self.bottomRightGroupBox)
+        slider _ QSlider(__.Horizontal, self.bottomRightGroupBox)
         slider.setValue(40)
 
-        scrollBar _ QScrollBar(Qt.Horizontal, self.bottomRightGroupBox)
+        scrollBar _ QScrollBar(__.Horizontal, self.bottomRightGroupBox)
         scrollBar.setValue(60)
 
         dial _ QDial(self.bottomRightGroupBox)

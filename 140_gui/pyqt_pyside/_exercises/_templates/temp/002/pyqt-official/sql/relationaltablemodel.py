@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ Qt
+____ ?.?C.. ______ __
 ____ ?.?W.. ______ ?A.., QTableView
 ____ ?.QtSql ______ (QSqlQuery, QSqlRelation, QSqlRelationalDelegate,
         QSqlRelationalTableModel, QSqlTableModel)
@@ -57,10 +57,10 @@ ___ initializeModel(model):
     model.setRelation(2, QSqlRelation('city', 'id', 'name'))
     model.setRelation(3, QSqlRelation('country', 'id', 'name'))
 
-    model.setHeaderData(0, Qt.Horizontal, "ID")
-    model.setHeaderData(1, Qt.Horizontal, "Name")
-    model.setHeaderData(2, Qt.Horizontal, "City")
-    model.setHeaderData(3, Qt.Horizontal, "Country")
+    model.setHeaderData(0, __.Horizontal, "ID")
+    model.setHeaderData(1, __.Horizontal, "Name")
+    model.setHeaderData(2, __.Horizontal, "City")
+    model.setHeaderData(3, __.Horizontal, "Country")
 
     model.select()
 

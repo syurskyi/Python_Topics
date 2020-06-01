@@ -41,8 +41,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ pyqtProperty, pyqtSignal, QPointF, QUrl
-____ ?.?G.. ______ QColor, QGuiApplication
+____ ?.?C.. ______ pyqtProperty, pyqtSignal, QPointF, QUrl
+____ ?.?G.. ______ ?C.., QGuiApplication
 ____ ?.QtQml ______ qmlRegisterType
 ____ ?.QtQuick ______ (QQuickItem, QQuickView, QSGFlatColorMaterial,
         QSGGeometry, QSGGeometryNode, QSGNode)
@@ -143,7 +143,7 @@ c_ BezierCurve(QQuickItem):
             self._root_node.setFlag(QSGNode.OwnsGeometry)
 
             material _ QSGFlatColorMaterial()
-            material.setColor(QColor(255, 0, 0))
+            material.sC..(?C..(255, 0, 0))
             self._root_node.setMaterial(material)
             self._root_node.setFlag(QSGNode.OwnsMaterial)
         ____

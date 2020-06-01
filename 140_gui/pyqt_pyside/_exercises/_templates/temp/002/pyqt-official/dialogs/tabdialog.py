@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QFileInfo
+____ ?.?C.. ______ QFileInfo
 ____ ?.?W.. ______ (?A.., QCheckBox, QDialog,
         QDialogButtonBox, QFrame, QGroupBox, QLabel, QLineEdit, QListWidget,
         QTabWidget, QVBoxLayout, QWidget)

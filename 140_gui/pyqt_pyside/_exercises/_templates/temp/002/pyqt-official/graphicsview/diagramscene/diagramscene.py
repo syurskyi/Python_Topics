@@ -44,9 +44,9 @@
 
 ______ math
 
-____ ?.QtCore ______ (pyqtSignal, QLineF, QPointF, QRect, QRectF, QSize,
-        QSizeF, Qt)
-____ ?.?G.. ______ (QBrush, QColor, QFont, QIcon, QIntValidator, QPainter,
+____ ?.?C.. ______ (pyqtSignal, QLineF, QPointF, QRect, QRectF, QSize,
+        QSizeF, __)
+____ ?.?G.. ______ (QBrush, ?C.., QFont, QIcon, QIntValidator, QPainter,
         QPainterPath, QPen, QPixmap, QPolygonF)
 ____ ?.?W.. ______ (?A.., ?A.., QButtonGroup, QComboBox,
         QFontComboBox, QGraphicsItem, QGraphicsLineItem, QGraphicsPolygonItem,
@@ -66,11 +66,11 @@ c_ Arrow(QGraphicsLineItem):
         self.myStartItem _ startItem
         self.myEndItem _ endItem
         self.setFlag(QGraphicsItem.ItemIsSelectable, True)
-        self.myColor _ Qt.black
-        self.setPen(QPen(self.myColor, 2, Qt.SolidLine, Qt.RoundCap,
-                Qt.RoundJoin))
+        self.myColor _ __.black
+        self.setPen(QPen(self.myColor, 2, __.SolidLine, __.RoundCap,
+                __.RoundJoin))
 
-    ___ setColor  color):
+    ___ sC..  color):
         self.myColor _ color
 
     ___ startItem(self):
@@ -102,7 +102,7 @@ c_ Arrow(QGraphicsLineItem):
         myEndItem _ self.myEndItem
         myColor _ self.myColor
         myPen _ self.pen()
-        myPen.setColor(self.myColor)
+        myPen.sC..(self.myColor)
         arrowSize _ 20.0
         painter.setPen(myPen)
         painter.setBrush(self.myColor)
@@ -139,7 +139,7 @@ c_ Arrow(QGraphicsLineItem):
         painter.drawLine(line)
         painter.drawPolygon(self.arrowHead)
         __ self.isSelected
-            painter.setPen(QPen(myColor, 1, Qt.DashLine))
+            painter.setPen(QPen(myColor, 1, __.DashLine))
             myLine _ QLineF(line)
             myLine.translate(0, 4.0)
             painter.drawLine(myLine)
@@ -164,13 +164,13 @@ c_ DiagramTextItem(QGraphicsTextItem):
         r_ value
 
     ___ focusOutEvent  event):
-        self.setTextInteractionFlags(Qt.NoTextInteraction)
+        self.setTextInteractionFlags(__.NoTextInteraction)
         self.lostFocus.emit(self)
         super(DiagramTextItem, self).focusOutEvent(event)
 
     ___ mouseDoubleClickEvent  event):
-        __ self.textInteractionFlags() == Qt.NoTextInteraction:
-            self.setTextInteractionFlags(Qt.TextEditorInteraction)
+        __ self.textInteractionFlags() == __.NoTextInteraction:
+            self.setTextInteractionFlags(__.TextEditorInteraction)
         super(DiagramTextItem, self).mouseDoubleClickEvent(event)
 
 
@@ -231,9 +231,9 @@ c_ DiagramItem(QGraphicsPolygonItem):
 
     ___ image(self):
         pixmap _ QPixmap(250, 250)
-        pixmap.fill(Qt.transparent)
+        pixmap.fill(__.transparent)
         painter _ QPainter(pixmap)
-        painter.setPen(QPen(Qt.black, 8))
+        painter.setPen(QPen(__.black, 8))
         painter.translate(125, 125)
         painter.drawPolyline(self.myPolygon)
         r_ pixmap
@@ -268,16 +268,16 @@ c_ DiagramScene(QGraphicsScene):
         self.myItemType _ DiagramItem.Step
         self.line _ N..
         self.textItem _ N..
-        self.myItemColor _ Qt.white
-        self.myTextColor _ Qt.black
-        self.myLineColor _ Qt.black
+        self.myItemColor _ __.white
+        self.myTextColor _ __.black
+        self.myLineColor _ __.black
         self.myFont _ QFont()
 
     ___ setLineColor  color):
         self.myLineColor _ color
         __ self.isItemChange(Arrow):
             item _ self.selectedItems()[0]
-            item.setColor(self.myLineColor)
+            item.sC..(self.myLineColor)
             self.update()
 
     ___ setTextColor  color):
@@ -314,7 +314,7 @@ c_ DiagramScene(QGraphicsScene):
             item.deleteLater()
 
     ___ mousePressEvent  mouseEvent):
-        __ (mouseEvent.button() !_ Qt.LeftButton):
+        __ (mouseEvent.button() !_ __.LeftButton):
             r_
 
         __ self.myMode == self.InsertItem:
@@ -331,7 +331,7 @@ c_ DiagramScene(QGraphicsScene):
         ____ self.myMode == self.InsertText:
             textItem _ DiagramTextItem()
             textItem.setFont(self.myFont)
-            textItem.setTextInteractionFlags(Qt.TextEditorInteraction)
+            textItem.setTextInteractionFlags(__.TextEditorInteraction)
             textItem.setZValue(1000.0)
             textItem.lostFocus.c..(self.editorLostFocus)
             textItem.selectedChange.c..(self.itemSelected)
@@ -368,7 +368,7 @@ c_ DiagramScene(QGraphicsScene):
                 startItem _ startItems[0]
                 endItem _ endItems[0]
                 arrow _ Arrow(startItem, endItem)
-                arrow.setColor(self.myLineColor)
+                arrow.sC..(self.myLineColor)
                 startItem.addArrow(arrow)
                 endItem.addArrow(arrow)
                 arrow.setZValue(-1000.0)
@@ -506,31 +506,31 @@ c_ MainWindow ?MW..
         self.textAction _ self.sender()
         self.fontColorToolButton.setIcon(
                 self.createColorToolButtonIcon(':/images/textpointer.png',
-                        QColor(self.textAction.data())))
+                        ?C..(self.textAction.data())))
         self.textButtonTriggered()
 
     ___ itemColorChanged(self):
         self.fillAction _ self.sender()
         self.fillColorToolButton.setIcon(
                 self.createColorToolButtonIcon( ':/images/floodfill.png',
-                        QColor(self.fillAction.data())))
+                        ?C..(self.fillAction.data())))
         self.fillButtonTriggered()
 
     ___ lineColorChanged(self):
         self.lineAction _ self.sender()
         self.lineColorToolButton.setIcon(
                 self.createColorToolButtonIcon(':/images/linecolor.png',
-                        QColor(self.lineAction.data())))
+                        ?C..(self.lineAction.data())))
         self.lineButtonTriggered()
 
     ___ textButtonTriggered(self):
-        self.scene.setTextColor(QColor(self.textAction.data()))
+        self.scene.setTextColor(?C..(self.textAction.data()))
 
     ___ fillButtonTriggered(self):
-        self.scene.setItemColor(QColor(self.fillAction.data()))
+        self.scene.setItemColor(?C..(self.fillAction.data()))
 
     ___ lineButtonTriggered(self):
-        self.scene.setLineColor(QColor(self.lineAction.data()))
+        self.scene.setLineColor(?C..(self.lineAction.data()))
 
     ___ handleFontChange(self):
         font _ self.fontCombo.currentFont()
@@ -577,8 +577,8 @@ c_ MainWindow ?MW..
         textButton.setIconSize(QSize(50, 50))
 
         textLayout _ QGridLayout()
-        textLayout.addWidget(textButton, 0, 0, Qt.AlignHCenter)
-        textLayout.addWidget(QLabel("Text"), 1, 0, Qt.AlignCenter)
+        textLayout.addWidget(textButton, 0, 0, __.AlignHCenter)
+        textLayout.addWidget(QLabel("Text"), 1, 0, __.AlignCenter)
         textWidget _ QWidget()
         textWidget.setLayout(textLayout)
         layout.addWidget(textWidget, 1, 1)
@@ -682,32 +682,32 @@ c_ MainWindow ?MW..
         self.fontColorToolButton _ QToolButton()
         self.fontColorToolButton.setPopupMode(QToolButton.MenuButtonPopup)
         self.fontColorToolButton.setMenu(
-                self.createColorMenu(self.textColorChanged, Qt.black))
+                self.createColorMenu(self.textColorChanged, __.black))
         self.textAction _ self.fontColorToolButton.menu().defaultAction()
         self.fontColorToolButton.setIcon(
                 self.createColorToolButtonIcon(':/images/textpointer.png',
-                        Qt.black))
+                        __.black))
         self.fontColorToolButton.setAutoFillBackground(True)
         self.fontColorToolButton.c__.c..(self.textButtonTriggered)
 
         self.fillColorToolButton _ QToolButton()
         self.fillColorToolButton.setPopupMode(QToolButton.MenuButtonPopup)
         self.fillColorToolButton.setMenu(
-                self.createColorMenu(self.itemColorChanged, Qt.white))
+                self.createColorMenu(self.itemColorChanged, __.white))
         self.fillAction _ self.fillColorToolButton.menu().defaultAction()
         self.fillColorToolButton.setIcon(
                 self.createColorToolButtonIcon(':/images/floodfill.png',
-                        Qt.white))
+                        __.white))
         self.fillColorToolButton.c__.c..(self.fillButtonTriggered)
 
         self.lineColorToolButton _ QToolButton()
         self.lineColorToolButton.setPopupMode(QToolButton.MenuButtonPopup)
         self.lineColorToolButton.setMenu(
-                self.createColorMenu(self.lineColorChanged, Qt.black))
+                self.createColorMenu(self.lineColorChanged, __.black))
         self.lineAction _ self.lineColorToolButton.menu().defaultAction()
         self.lineColorToolButton.setIcon(
                 self.createColorToolButtonIcon(':/images/linecolor.png',
-                        Qt.black))
+                        __.black))
         self.lineColorToolButton.c__.c..(self.lineButtonTriggered)
 
         self.textToolBar _ self.addToolBar("Font")
@@ -755,8 +755,8 @@ c_ MainWindow ?MW..
         self.backgroundButtonGroup.addButton(button)
 
         layout _ QGridLayout()
-        layout.addWidget(button, 0, 0, Qt.AlignHCenter)
-        layout.addWidget(QLabel(text), 1, 0, Qt.AlignCenter)
+        layout.addWidget(button, 0, 0, __.AlignHCenter)
+        layout.addWidget(QLabel(text), 1, 0, __.AlignCenter)
 
         widget _ QWidget()
         widget.setLayout(layout)
@@ -774,8 +774,8 @@ c_ MainWindow ?MW..
         self.buttonGroup.addButton(button, diagramType)
 
         layout _ QGridLayout()
-        layout.addWidget(button, 0, 0, Qt.AlignHCenter)
-        layout.addWidget(QLabel(text), 1, 0, Qt.AlignCenter)
+        layout.addWidget(button, 0, 0, __.AlignHCenter)
+        layout.addWidget(QLabel(text), 1, 0, __.AlignCenter)
 
         widget _ QWidget()
         widget.setLayout(layout)
@@ -783,14 +783,14 @@ c_ MainWindow ?MW..
         r_ widget
 
     ___ createColorMenu  slot, defaultColor):
-        colors _ [Qt.black, Qt.white, Qt.red, Qt.blue, Qt.yellow]
+        colors _ [__.black, __.white, __.red, __.blue, __.yellow]
         names _ ["black", "white", "red", "blue", "yellow"]
 
         colorMenu _ QMenu(self)
         for color, name in zip(colors, names):
             action _ ?A..(self.createColorIcon(color), name, self,
                     triggered_slot)
-            action.setData(QColor(color)) 
+            action.setData(?C..(color))
             colorMenu.aA..(action)
             __ color == defaultColor:
                 colorMenu.setDefaultAction(action)
@@ -798,7 +798,7 @@ c_ MainWindow ?MW..
 
     ___ createColorToolButtonIcon  imageFile, color):
         pixmap _ QPixmap(50, 80)
-        pixmap.fill(Qt.transparent)
+        pixmap.fill(__.transparent)
         painter _ QPainter(pixmap)
         image _ QPixmap(imageFile)
         target _ QRect(0, 0, 50, 60)
@@ -812,7 +812,7 @@ c_ MainWindow ?MW..
     ___ createColorIcon  color):
         pixmap _ QPixmap(20, 20)
         painter _ QPainter(pixmap)
-        painter.setPen(Qt.NoPen)
+        painter.setPen(__.NoPen)
         painter.fillRect(QRect(0, 0, 20, 20), color)
         painter.end()
 

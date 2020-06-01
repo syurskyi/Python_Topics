@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore
+____ ? ______ ?C..
 
 qt_resource_data _ b"\
 \x00\x00\x14\x1d\
@@ -354,9 +354,9 @@ qt_resource_struct _ b"\
 "
 
 ___ qInitResources
-    QtCore.qRegisterResourceData(0x01, qt_resource_struct, qt_resource_name, qt_resource_data)
+    ?C...qRegisterResourceData(0x01, qt_resource_struct, qt_resource_name, qt_resource_data)
 
 ___ qCleanupResources
-    QtCore.qUnregisterResourceData(0x01, qt_resource_struct, qt_resource_name, qt_resource_data)
+    ?C...qUnregisterResourceData(0x01, qt_resource_struct, qt_resource_name, qt_resource_data)
 
 qInitResources()

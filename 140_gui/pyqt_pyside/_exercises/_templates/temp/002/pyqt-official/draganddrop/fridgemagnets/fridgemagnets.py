@@ -42,10 +42,10 @@
 #############################################################################
 
 
-____ ?.QtCore ______ (QByteArray, QDataStream, QFile, QIODevice, QMimeData,
-        QPoint, QRect, QRectF, Qt, QTextStream)
+____ ?.?C.. ______ (QByteArray, QDataStream, QFile, QIODevice, QMimeData,
+        QPoint, QRect, QRectF, __, QTextStream)
 ____ ?.?G.. ______ (QDrag, QFont, QFontMetrics, QImage, QPainter,
-        QPalette, QPixmap, qRgba)
+        ?P.., QPixmap, qRgba)
 ____ ?.?W.. ______ ?A.., QLabel, QWidget
 
 ______ fridgemagnets_rc
@@ -56,7 +56,7 @@ c_ DragLabel(QLabel):
         super(DragLabel, self).__init__(parent)
 
         metric _ QFontMetrics(self.font())
-        size _ metric.size(Qt.TextSingleLine, text)
+        size _ metric.size(__.TextSingleLine, text)
 
         image _ QImage(size.width() + 12, size.height() + 12,
                 QImage.Format_ARGB32_Premultiplied)
@@ -68,14 +68,14 @@ c_ DragLabel(QLabel):
         painter _ QPainter()
         painter.begin(image)
         painter.setRenderHint(QPainter.Antialiasing)
-        painter.setBrush(Qt.white)
+        painter.setBrush(__.white)
         painter.drawRoundedRect(
                 QRectF(0.5, 0.5, image.width()-1, image.height()-1),
-                25, 25, Qt.RelativeSize)
+                25, 25, __.RelativeSize)
 
         painter.setFont(font)
-        painter.setBrush(Qt.black)
-        painter.drawText(QRect(QPoint(6, 6), size), Qt.AlignCenter, text)
+        painter.setBrush(__.black)
+        painter.drawText(QRect(QPoint(6, 6), size), __.AlignCenter, text)
         painter.end()
 
         self.setPixmap(QPixmap.fromImage(image))
@@ -97,7 +97,7 @@ c_ DragLabel(QLabel):
 
         self.hide()
 
-        __ drag.exec_(Qt.MoveAction | Qt.CopyAction, Qt.CopyAction) == Qt.MoveAction:
+        __ drag.exec_(__.MoveAction | __.CopyAction, __.CopyAction) == __.MoveAction:
             self.close()
         ____
             self.s..
@@ -123,8 +123,8 @@ c_ DragWidget(QWidget):
                 y +_ wordLabel.height() + 2
 
         newPalette _ self.palette()
-        newPalette.setColor(QPalette.Window, Qt.white)
-        self.setPalette(newPalette)
+        newPalette.sC..(?P...Window, __.white)
+        self.sP..(newPalette)
 
         self.setMinimumSize(400, max(200, y))
         self.setWindowTitle("Fridge Magnets")
@@ -133,7 +133,7 @@ c_ DragWidget(QWidget):
     ___ dragEnterEvent  event):
         __ event.mimeData().hasFormat('application/x-fridgemagnet'):
             __ event.source() in self.children
-                event.setDropAction(Qt.MoveAction)
+                event.setDropAction(__.MoveAction)
                 event.accept()
             ____
                 event.acceptProposedAction()
@@ -166,7 +166,7 @@ c_ DragWidget(QWidget):
             newLabel.s..
 
             __ event.source() in self.children
-                event.setDropAction(Qt.MoveAction)
+                event.setDropAction(__.MoveAction)
                 event.accept()
             ____
                 event.acceptProposedAction()

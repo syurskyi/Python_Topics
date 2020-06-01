@@ -1,7 +1,7 @@
 ______ sys
 ____ ? ______ ?W.. __ qtw
 ____ ? ______ ?G.. __ qtg
-____ ? ______ QtCore __ qtc
+____ ? ______ ?C.. __ qtc
 
 c_ MainWindow(qtw.QWidget):
 
@@ -30,7 +30,7 @@ c_ MainWindow(qtw.QWidget):
         # make the list widget editable
         for i in range(listwidget.count()):
             item _ listwidget.item(i)
-            item.setFlags(item.flags() | qtc.Qt.ItemIsEditable)
+            item.setFlags(item.flags() | qtc.__.ItemIsEditable)
 
 
         # The same, but with a model

@@ -11,7 +11,7 @@ It allows you to receive results from the function invocation:
 """
 
 ____ functools ______ wraps
-____ ?.QtCore ______ pyqtSignal, QObject, QThread
+____ ?.?C.. ______ pyqtSignal, QObject, QThread
 ____ ?.?W.. ______ ?A..
 ____ threading ______ Event, get_ident
 

@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QAbstractItemModel, QFile, QIODevice, QModelIndex, Qt
+____ ?.?C.. ______ QAbstractItemModel, QFile, QIODevice, QModelIndex, __
 ____ ?.?W.. ______ ?A.., QTreeView
 
 ______ simpletreemodel_rc
@@ -99,7 +99,7 @@ c_ TreeModel(QAbstractItemModel):
         __ no. index.isValid
             r_ N..
 
-        __ role !_ Qt.DisplayRole:
+        __ role !_ __.DisplayRole:
             r_ N..
 
         item _ index.internalPointer()
@@ -108,12 +108,12 @@ c_ TreeModel(QAbstractItemModel):
 
     ___ flags  index):
         __ no. index.isValid
-            r_ Qt.NoItemFlags
+            r_ __.NoItemFlags
 
-        r_ Qt.ItemIsEnabled | Qt.ItemIsSelectable
+        r_ __.ItemIsEnabled | __.ItemIsSelectable
 
     ___ headerData  section, orientation, role):
-        __ orientation == Qt.Horizontal and role == Qt.DisplayRole:
+        __ orientation == __.Horizontal and role == __.DisplayRole:
             r_ self.rootItem.data(section)
 
         r_ N..

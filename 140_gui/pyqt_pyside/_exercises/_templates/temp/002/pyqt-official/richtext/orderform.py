@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QDate, Qt
+____ ?.?C.. ______ QDate, __
 ____ ?.?G.. ______ (QFont, QTextCharFormat, QTextCursor, QTextFrameFormat,
         QTextLength, QTextTableFormat)
 ____ ?.?W.. ______ (?A.., QCheckBox, QDialog,
@@ -130,7 +130,7 @@ c_ MainWindow ?MW..
         cursor.insertBlock()
 
         orderTableFormat _ QTextTableFormat()
-        orderTableFormat.setAlignment(Qt.AlignHCenter)
+        orderTableFormat.setAlignment(__.AlignHCenter)
         orderTable _ cursor.insertTable(1, 2, orderTableFormat)
 
         orderFrameFormat _ cursor.currentFrame().frameFormat()
@@ -222,7 +222,7 @@ c_ DetailsDialog(QDialog):
 
         nameLabel _ QLabel("Name:")
         addressLabel _ QLabel("Address:")
-        addressLabel.setAlignment(Qt.AlignLeft | Qt.AlignTop)
+        addressLabel.setAlignment(__.AlignLeft | __.AlignTop)
 
         self.nameEdit _ QLineEdit()
         self.addressEdit _ QTextEdit()
@@ -253,7 +253,7 @@ c_ DetailsDialog(QDialog):
 
         for row, item in enumerate(self.items):
             name _ QTableWidgetItem(item)
-            name.setFlags(Qt.ItemIsEnabled | Qt.ItemIsSelectable)
+            name.setFlags(__.ItemIsEnabled | __.ItemIsSelectable)
             self.itemsTable.setItem(row, 0, name)
             quantity _ QTableWidgetItem('1')
             self.itemsTable.setItem(row, 1, quantity)
@@ -263,7 +263,7 @@ c_ DetailsDialog(QDialog):
 
         for row in range(len(self.items)):
             text _ self.itemsTable.item(row, 0).text()
-            quantity _ int(self.itemsTable.item(row, 1).data(Qt.DisplayRole))
+            quantity _ int(self.itemsTable.item(row, 1).data(__.DisplayRole))
             orderList.append((text, max(0, quantity)))
 
         r_ orderList

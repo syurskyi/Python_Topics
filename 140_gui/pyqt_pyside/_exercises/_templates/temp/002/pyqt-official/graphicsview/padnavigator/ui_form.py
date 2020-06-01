@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, ?G.., ?W..
+____ ? ______ ?C.., ?G.., ?W..
 
 c_ Ui_Form(object):
     ___ setupUi  Form):
@@ -37,7 +37,7 @@ c_ Ui_Form(object):
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.horizontalSlider _ ?W...QSlider(self.groupBox)
         self.horizontalSlider.setProperty("value", 42)
-        self.horizontalSlider.setOrientation(QtCore.Qt.Horizontal)
+        self.horizontalSlider.setOrientation(?C...__.Horizontal)
         self.horizontalSlider.setObjectName("horizontalSlider")
         self.horizontalLayout.addWidget(self.horizontalSlider)
         self.spinBox _ ?W...QSpinBox(self.groupBox)
@@ -74,7 +74,7 @@ c_ Ui_Form(object):
         self.retranslateUi(Form)
         self.horizontalSlider.valueChanged['int'].c..(self.spinBox.setValue)
         self.spinBox.valueChanged['int'].c..(self.horizontalSlider.setValue)
-        QtCore.QMetaObject.connectSlotsByName(Form)
+        ?C...QMetaObject.connectSlotsByName(Form)
         Form.setTabOrder(self.groupBox, self.hostName)
         Form.setTabOrder(self.hostName, self.dateTimeEdit)
         Form.setTabOrder(self.dateTimeEdit, self.horizontalSlider)
@@ -83,7 +83,7 @@ c_ Ui_Form(object):
         Form.setTabOrder(self.groupBox_2, self.treeWidget)
 
     ___ retranslateUi  Form):
-        _translate _ QtCore.QCoreApplication.translate
+        _translate _ ?C...QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "BackSide"))
         self.groupBox.setTitle(_translate("Form", "Settings"))
         self.label.sT..(_translate("Form", "Title:"))

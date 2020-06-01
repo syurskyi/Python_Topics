@@ -52,7 +52,7 @@
 
 ______ sys
 
-____ ?.QtCore ______ QLoggingCategory, QUrl
+____ ?.?C.. ______ QLoggingCategory, QUrl
 ____ ?.QtRemoteObjects ______ QRemoteObjectNode
 ____ ?.?W.. ______ ?A.., QTreeView
 

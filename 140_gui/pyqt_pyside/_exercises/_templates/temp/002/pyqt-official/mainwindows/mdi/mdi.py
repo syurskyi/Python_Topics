@@ -42,8 +42,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ (QFile, QFileInfo, QPoint, QSettings, QSignalMapper,
-        QSize, QTextStream, Qt)
+____ ?.?C.. ______ (QFile, QFileInfo, QPoint, QSettings, QSignalMapper,
+        QSize, QTextStream, __)
 ____ ?.?G.. ______ QIcon, ?KS..
 ____ ?.?W.. ______ (?A.., ?A.., ?FD.., QMainWindow,
         QMdiArea, ?MB.., QTextEdit, QWidget)
@@ -57,7 +57,7 @@ c_ MdiChild(QTextEdit):
     ___ __init__(self):
         super(MdiChild, self).__init__()
 
-        self.setAttribute(Qt.WA_DeleteOnClose)
+        self.setAttribute(__.WA_DeleteOnClose)
         self.isUntitled _ True
 
     ___ newFile(self):
@@ -76,7 +76,7 @@ c_ MdiChild(QTextEdit):
             r_ False
 
         instr _ QTextStream(file)
-        ?A...setOverrideCursor(Qt.WaitCursor)
+        ?A...setOverrideCursor(__.WaitCursor)
         self.sPT..(instr.readAll())
         ?A...restoreOverrideCursor()
 
@@ -108,7 +108,7 @@ c_ MdiChild(QTextEdit):
             r_ False
 
         outstr _ QTextStream(file)
-        ?A...setOverrideCursor(Qt.WaitCursor)
+        ?A...setOverrideCursor(__.WaitCursor)
         outstr << self.toPlainText()
         ?A...restoreOverrideCursor()
 
@@ -161,8 +161,8 @@ c_ MainWindow ?MW..
         super(MainWindow, self).__init__()
 
         self.mdiArea _ QMdiArea()
-        self.mdiArea.setHorizontalScrollBarPolicy(Qt.ScrollBarAsNeeded)
-        self.mdiArea.setVerticalScrollBarPolicy(Qt.ScrollBarAsNeeded)
+        self.mdiArea.setHorizontalScrollBarPolicy(__.ScrollBarAsNeeded)
+        self.mdiArea.setVerticalScrollBarPolicy(__.ScrollBarAsNeeded)
         self.sCW..(self.mdiArea)
 
         self.mdiArea.subWindowActivated.c..(self.updateMenus)
@@ -426,10 +426,10 @@ c_ MainWindow ?MW..
         r_ N..
 
     ___ switchLayoutDirection(self):
-        __ self.layoutDirection() == Qt.LeftToRight:
-            ?A...setLayoutDirection(Qt.RightToLeft)
+        __ self.layoutDirection() == __.LeftToRight:
+            ?A...setLayoutDirection(__.RightToLeft)
         ____
-            ?A...setLayoutDirection(Qt.LeftToRight)
+            ?A...setLayoutDirection(__.LeftToRight)
 
     ___ setActiveSubWindow  window):
         __ window:

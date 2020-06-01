@@ -24,7 +24,7 @@
 # OR PERFORMANCE OF THIS SOFTWARE.                                           #
 #----------------------------------------------------------------------------#
 
-____ ?.QtCore ______ pyqtProperty, Qt
+____ ?.?C.. ______ pyqtProperty, __
 ____ ?.?W.. ______ (?A.., QCalendarWidget, QDateEdit,
         QDateTimeEdit, QHBoxLayout, QWidget)
 
@@ -43,7 +43,7 @@ c_ PyDateEdit(QDateEdit):
 
         self.setCalendarPopup(True)
         self.__cw _ N..
-        self.__firstDayOfWeek _ Qt.Monday
+        self.__firstDayOfWeek _ __.Monday
         self.__gridVisible _ False
         self.__horizontalHeaderFormat _ QCalendarWidget.ShortDayNames
         self.__verticalHeaderFormat _ QCalendarWidget.ISOWeekNumbers
@@ -87,11 +87,11 @@ c_ PyDateEdit(QDateEdit):
             __ self.__cw:
                 self.__cw.setFirstDayOfWeek(dayOfWeek)
     ___ resetFirstDayOfWeek(self):
-        __ self.__firstDayOfWeek !_ Qt.Monday:
-            self.__firstDayOfWeek _ Qt.Monday
+        __ self.__firstDayOfWeek !_ __.Monday:
+            self.__firstDayOfWeek _ __.Monday
             __ self.__cw:
-                self.__cw.setFirstDayOfWeek(Qt.Monday)
-    firstDayOfWeek _ pyqtProperty(Qt.DayOfWeek,
+                self.__cw.setFirstDayOfWeek(__.Monday)
+    firstDayOfWeek _ pyqtProperty(__.DayOfWeek,
                                          fget_getFirstDayOfWeek,
                                          fset_setFirstDayOfWeek,
                                          freset_resetFirstDayOfWeek)
@@ -203,7 +203,7 @@ c_ PyDateTimeEdit(QDateTimeEdit):
 
         self.setCalendarPopup(True)
         self.__cw _ N..
-        self.__firstDayOfWeek _ Qt.Monday
+        self.__firstDayOfWeek _ __.Monday
         self.__gridVisible _ False
         self.__horizontalHeaderFormat _ QCalendarWidget.ShortDayNames
         self.__verticalHeaderFormat _ QCalendarWidget.ISOWeekNumbers
@@ -247,11 +247,11 @@ c_ PyDateTimeEdit(QDateTimeEdit):
             __ self.__cw:
                 self.__cw.setFirstDayOfWeek(dayOfWeek)
     ___ resetFirstDayOfWeek(self):
-        __ self.__firstDayOfWeek !_ Qt.Monday:
-            self.__firstDayOfWeek _ Qt.Monday
+        __ self.__firstDayOfWeek !_ __.Monday:
+            self.__firstDayOfWeek _ __.Monday
             __ self.__cw:
-                self.__cw.setFirstDayOfWeek(Qt.Monday)
-    firstDayOfWeek _ pyqtProperty(Qt.DayOfWeek,
+                self.__cw.setFirstDayOfWeek(__.Monday)
+    firstDayOfWeek _ pyqtProperty(__.DayOfWeek,
                                          fget_getFirstDayOfWeek,
                                          fset_setFirstDayOfWeek,
                                          freset_resetFirstDayOfWeek)

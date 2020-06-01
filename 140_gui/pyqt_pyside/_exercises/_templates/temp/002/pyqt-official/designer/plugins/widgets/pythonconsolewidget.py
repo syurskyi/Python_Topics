@@ -23,7 +23,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 """
 
-____ ?.QtCore ______ pyqtSignal, QEvent, Qt
+____ ?.?C.. ______ pyqtSignal, QEvent, __
 ____ ?.?W.. ______ ?A.., QLineEdit
 
 
@@ -49,7 +49,7 @@ c_ PythonConsoleWidget(QLineEdit):
     
         __ event.type() == QEvent.KeyRelease:
         
-            __ event.key() == Qt.Key_Up:
+            __ event.key() == __.Key_Up:
                 current _ max(0, self.current - 1)
                 __ 0 <_ current < len(self.history):
                     self.sT..(self.history[current])
@@ -57,7 +57,7 @@ c_ PythonConsoleWidget(QLineEdit):
                 
                 event.accept()
             
-            ____ event.key() == Qt.Key_Down:
+            ____ event.key() == __.Key_Down:
                 current _ min(len(self.history), self.current + 1)
                 __ 0 <_ current < len(self.history):
                     self.sT..(self.history[current])

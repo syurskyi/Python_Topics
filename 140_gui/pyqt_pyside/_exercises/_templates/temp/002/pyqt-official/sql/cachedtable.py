@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ Qt
+____ ?.?C.. ______ __
 ____ ?.?W.. ______ (?A.., QDialog, QDialogButtonBox,
         QHBoxLayout, ?MB.., ?PB.., QTableView)
 ____ ?.QtSql ______ QSqlTableModel
@@ -59,9 +59,9 @@ c_ TableEditor(QDialog):
         self.model.setEditStrategy(QSqlTableModel.OnManualSubmit)
         self.model.select()
 
-        self.model.setHeaderData(0, Qt.Horizontal, "ID")
-        self.model.setHeaderData(1, Qt.Horizontal, "First name")
-        self.model.setHeaderData(2, Qt.Horizontal, "Last name")
+        self.model.setHeaderData(0, __.Horizontal, "ID")
+        self.model.setHeaderData(1, __.Horizontal, "First name")
+        self.model.setHeaderData(2, __.Horizontal, "Last name")
 
         view _ QTableView()
         view.setModel(self.model)
@@ -71,7 +71,7 @@ c_ TableEditor(QDialog):
         revertButton _ ?PB..("&Revert")
         quitButton _ ?PB..("Quit")
 
-        buttonBox _ QDialogButtonBox(Qt.Vertical)
+        buttonBox _ QDialogButtonBox(__.Vertical)
         buttonBox.addButton(submitButton, QDialogButtonBox.ActionRole)
         buttonBox.addButton(revertButton, QDialogButtonBox.ActionRole)
         buttonBox.addButton(quitButton, QDialogButtonBox.RejectRole)

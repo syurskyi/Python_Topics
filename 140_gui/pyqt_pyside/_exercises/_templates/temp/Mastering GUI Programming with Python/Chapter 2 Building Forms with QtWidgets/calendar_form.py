@@ -1,6 +1,6 @@
 ______ sys
 ____ ? ______ ?W.. __ qtw
-____ ? ______ QtCore __ qtc
+____ ? ______ ?C.. __ qtc
 
 c_ MainWindow(qtw.QWidget):
 

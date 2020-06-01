@@ -45,9 +45,9 @@
 ______ sys
 ______ math, random
 
-____ ?.QtCore ______ (QPoint, QPointF, QRect, QRectF, QSize, Qt, QTime,
+____ ?.?C.. ______ (QPoint, QPointF, QRect, QRectF, QSize, __, QTime,
         QTimer)
-____ ?.?G.. ______ (QBrush, QColor, QFontMetrics, QImage,
+____ ?.?G.. ______ (QBrush, ?C.., QFontMetrics, QImage,
         QOpenGLVersionProfile, QPainter, QRadialGradient, QSurfaceFormat)
 ____ ?.?W.. ______ ?A.., QOpenGLWidget
 
@@ -66,7 +66,7 @@ c_ Bubble(object):
         gradient _ QRadialGradient(QPointF(self.radius, self.radius),
                 self.radius, QPointF(self.radius*0.5, self.radius*0.5))
 
-        gradient.setColorAt(0, QColor(255, 255, 255, 255))
+        gradient.setColorAt(0, ?C..(255, 255, 255, 255))
         gradient.setColorAt(0.25, self.innerColor)
         gradient.setColorAt(1, self.outerColor)
         self.brush _ QBrush(gradient)
@@ -85,7 +85,7 @@ c_ Bubble(object):
         blue _ random.randrange(205, 256)
         alpha _ random.randrange(91, 192)
 
-        r_ QColor(red, green, blue, alpha)
+        r_ ?C..(red, green, blue, alpha)
 
     ___ move  bbox):
         self.position +_ self.vel
@@ -129,8 +129,8 @@ c_ GLWidget(QOpenGLWidget):
         self.bubbles _ []
         self.lastPos _ QPoint()
 
-        self.trolltechGreen _ QColor.fromCmykF(0.40, 0.0, 1.0, 0.0)
-        self.trolltechPurple _ QColor.fromCmykF(0.39, 0.39, 0.0, 0.0)
+        self.trolltechGreen _ ?C...fromCmykF(0.40, 0.0, 1.0, 0.0)
+        self.trolltechPurple _ ?C...fromCmykF(0.39, 0.39, 0.0, 0.0)
 
         self.animationTimer _ QTimer()
         self.animationTimer.setSingleShot F..
@@ -171,10 +171,10 @@ c_ GLWidget(QOpenGLWidget):
         dx _ event.x() - self.lastPos.x()
         dy _ event.y() - self.lastPos.y()
 
-        __ event.buttons() & Qt.LeftButton:
+        __ event.buttons() & __.LeftButton:
             self.setXRotation(self.xRot + 8 * dy)
             self.setYRotation(self.yRot + 8 * dx)
-        ____ event.buttons() & Qt.RightButton:
+        ____ event.buttons() & __.RightButton:
             self.setXRotation(self.xRot + 8 * dy)
             self.setZRotation(self.zRot + 8 * dx)
 
@@ -300,7 +300,7 @@ c_ GLWidget(QOpenGLWidget):
         self.gl.glVertex3d(x1, y1, +0.05)
 
     ___ extrude  x1, y1, x2, y2):
-        self.setColor(self.trolltechGreen.darker(250 + int(100 * x1)))
+        self.sC..(self.trolltechGreen.darker(250 + int(100 * x1)))
 
         self.gl.glNormal3d((x1 + x2)/2.0, (y1 + y2)/2.0, 0.0)
         self.gl.glVertex3d(x1, y1, +0.05)
@@ -348,21 +348,21 @@ c_ GLWidget(QOpenGLWidget):
         border _ max(4, metrics.leading())
 
         rect _ metrics.boundingRect(0, 0, self.width() - 2*border,
-                int(self.height()*0.125), Qt.AlignCenter | Qt.TextWordWrap,
+                int(self.height()*0.125), __.AlignCenter | __.TextWordWrap,
                 text)
         painter.setRenderHint(QPainter.TextAntialiasing)
         painter.fillRect(QRect(0, 0, self.width(), rect.height() + 2*border),
-                QColor(0, 0, 0, 127))
-        painter.setPen(Qt.white)
+                ?C..(0, 0, 0, 127))
+        painter.setPen(__.white)
         painter.fillRect(QRect(0, 0, self.width(), rect.height() + 2*border),
-                QColor(0, 0, 0, 127))
+                ?C..(0, 0, 0, 127))
         painter.drawText((self.width() - rect.width())/2, border, rect.width(),
-                rect.height(), Qt.AlignCenter | Qt.TextWordWrap, text)
+                rect.height(), __.AlignCenter | __.TextWordWrap, text)
 
     ___ setClearColor  c):
         self.gl.glClearColor(c.redF(), c.greenF(), c.blueF(), c.alphaF())
 
-    ___ setColor  c):
+    ___ sC..  c):
         self.gl.glColor4f(c.redF(), c.greenF(), c.blueF(), c.alphaF())
 
 

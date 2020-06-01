@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QDate, QSize, Qt
+____ ?.?C.. ______ QDate, QSize, __
 ____ ?.?G.. ______ QIcon
 ____ ?.?W.. ______ (?A.., QCheckBox, QComboBox, QDateTimeEdit,
         QDialog, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit,
@@ -217,20 +217,20 @@ c_ ConfigDialog(QDialog):
         configButton _ QListWidgetItem(self.contentsWidget)
         configButton.setIcon(QIcon(':/images/config.png'))
         configButton.sT..("Configuration")
-        configButton.setTextAlignment(Qt.AlignHCenter)
-        configButton.setFlags(Qt.ItemIsSelectable | Qt.ItemIsEnabled)
+        configButton.setTextAlignment(__.AlignHCenter)
+        configButton.setFlags(__.ItemIsSelectable | __.ItemIsEnabled)
 
         updateButton _ QListWidgetItem(self.contentsWidget)
         updateButton.setIcon(QIcon(':/images/update.png'))
         updateButton.sT..("Update")
-        updateButton.setTextAlignment(Qt.AlignHCenter)
-        updateButton.setFlags(Qt.ItemIsSelectable | Qt.ItemIsEnabled)
+        updateButton.setTextAlignment(__.AlignHCenter)
+        updateButton.setFlags(__.ItemIsSelectable | __.ItemIsEnabled)
 
         queryButton _ QListWidgetItem(self.contentsWidget)
         queryButton.setIcon(QIcon(':/images/query.png'))
         queryButton.sT..("Query")
-        queryButton.setTextAlignment(Qt.AlignHCenter)
-        queryButton.setFlags(Qt.ItemIsSelectable | Qt.ItemIsEnabled)
+        queryButton.setTextAlignment(__.AlignHCenter)
+        queryButton.setFlags(__.ItemIsSelectable | __.ItemIsEnabled)
 
         self.contentsWidget.currentItemChanged.c..(self.changePage)
 

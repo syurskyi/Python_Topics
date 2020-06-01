@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QFile, QStringListModel, Qt
+____ ?.?C.. ______ QFile, QStringListModel, __
 ____ ?.?G.. ______ QCursor, ?KS.., QTextCursor
 ____ ?.?W.. ______ (?A.., ?A.., QCompleter, QMainWindow,
         ?MB.., QTextEdit)
@@ -70,7 +70,7 @@ c_ TextEdit(QTextEdit):
 
         c.setWidget(self)
         c.setCompletionMode(QCompleter.PopupCompletion)
-        c.setCaseSensitivity(Qt.CaseInsensitive)
+        c.setCaseSensitivity(__.CaseInsensitive)
         c.activated.c..(self.insertCompletion)
 
     ___ completer(self):
@@ -102,22 +102,22 @@ c_ TextEdit(QTextEdit):
     ___ keyPressEvent  e):
         __ self._completer __ no. N.. and self._completer.popup().isVisible
             # The following keys are forwarded by the completer to the widget.
-            __ e.key() in (Qt.Key_Enter, Qt.Key_Return, Qt.Key_Escape, Qt.Key_Tab, Qt.Key_Backtab):
+            __ e.key() in (__.Key_Enter, __.Key_Return, __.Key_Escape, __.Key_Tab, __.Key_Backtab):
                 e.ignore()
                 # Let the completer do default behavior.
                 r_
 
-        isShortcut _ ((e.modifiers() & Qt.ControlModifier) !_ 0 and e.key() == Qt.Key_E)
+        isShortcut _ ((e.modifiers() & __.ControlModifier) !_ 0 and e.key() == __.Key_E)
         __ self._completer __ N.. or no. isShortcut:
             # Do not process the shortcut when we have a completer.
             super(TextEdit, self).keyPressEvent(e)
 
-        ctrlOrShift _ e.modifiers() & (Qt.ControlModifier | Qt.ShiftModifier)
+        ctrlOrShift _ e.modifiers() & (__.ControlModifier | __.ShiftModifier)
         __ self._completer __ N.. or (ctrlOrShift and len(e.text()) == 0):
             r_
 
         eow _ "~!@#$%^&*()_+{}|:\"<>?,./;'[]\\-="
-        hasModifier _ (e.modifiers() !_ Qt.NoModifier) and no. ctrlOrShift
+        hasModifier _ (e.modifiers() !_ __.NoModifier) and no. ctrlOrShift
         completionPrefix _ self.textUnderCursor()
 
         __ no. isShortcut and (hasModifier or len(e.text()) == 0 or len(completionPrefix) < 3 or e.text()[-1] in eow):
@@ -144,7 +144,7 @@ c_ MainWindow ?MW..
         self.completer _ QCompleter(self)
         self.completer.setModel(self.modelFromFile(':/resources/wordlist.txt'))
         self.completer.setModelSorting(QCompleter.CaseInsensitivelySortedModel)
-        self.completer.setCaseSensitivity(Qt.CaseInsensitive)
+        self.completer.setCaseSensitivity(__.CaseInsensitive)
         self.completer.setWrapAround F..
         self.completingTextEdit.setCompleter(self.completer)
 
@@ -173,7 +173,7 @@ c_ MainWindow ?MW..
         __ no. f.o..(QFile.ReadOnly):
             r_ QStringListModel(self.completer)
 
-        ?A...setOverrideCursor(QCursor(Qt.WaitCursor))
+        ?A...setOverrideCursor(QCursor(__.WaitCursor))
 
         words _ []
         while no. f.atEnd

@@ -1,6 +1,6 @@
 ____ ?.?G.. ______ *
 ____ ?.?W.. ______ *
-____ ?.QtCore ______ *
+____ ?.?C.. ______ *
 ____ ?.QtMultimedia ______ *
 ____ ?.QtMultimediaWidgets ______ *
 
@@ -38,7 +38,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
     ___ __init__  *args, obj_None, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
         self.setupUi(self)
-        self.setWindowFlags(self.windowFlags() | Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint)
+        self.setWindowFlags(self.windowFlags() | __.FramelessWindowHint | __.WindowStaysOnTopHint)
         self.s..
 
         # Load/save note data, store this notes db reference.
@@ -98,14 +98,14 @@ __ __name__ == '__main__':
     app.setStyle("Fusion")
 
     # Custom brown palette.
-    palette _ QPalette()
-    palette.setColor(QPalette.Window, QColor(188,170,164))
-    palette.setColor(QPalette.WindowText, QColor(121,85,72))
-    palette.setColor(QPalette.ButtonText, QColor(121,85,72))
-    palette.setColor(QPalette.Text, QColor(121,85,72))
-    palette.setColor(QPalette.Base, QColor(188,170,164))
-    palette.setColor(QPalette.AlternateBase, QColor(188,170,164))
-    app.setPalette(palette)
+    palette _ ?P..()
+    palette.sC..(?P...Window, ?C..(188,170,164))
+    palette.sC..(?P...WindowText, ?C..(121,85,72))
+    palette.sC..(?P...ButtonText, ?C..(121,85,72))
+    palette.sC..(?P...Text, ?C..(121,85,72))
+    palette.sC..(?P...Base, ?C..(188,170,164))
+    palette.sC..(?P...AlternateBase, ?C..(188,170,164))
+    app.sP..(palette)
 
     existing_notes _ session.query(Note).all()
     __ len(existing_notes) == 0:

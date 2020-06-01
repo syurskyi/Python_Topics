@@ -44,7 +44,7 @@
 
 ______ array
 
-____ ?.QtCore ______ QEvent
+____ ?.?C.. ______ QEvent
 ____ ?.?G.. ______ (QGuiApplication, QMatrix4x4, QOpenGLContext,
         QOpenGLShader, QOpenGLShaderProgram, QOpenGLVersionProfile,
         QSurfaceFormat, QWindow)

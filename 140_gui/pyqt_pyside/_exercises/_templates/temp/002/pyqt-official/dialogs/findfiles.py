@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ (QDir, QIODevice, QFile, QFileInfo, Qt, QTextStream,
+____ ?.?C.. ______ (QDir, QIODevice, QFile, QFileInfo, __, QTextStream,
         QUrl)
 ____ ?.?G.. ______ QDesktopServices
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., QComboBox,
@@ -164,10 +164,10 @@ c_ Window(QDialog):
             size _ QFileInfo(file).size()
 
             fileNameItem _ QTableWidgetItem(fn)
-            fileNameItem.setFlags(fileNameItem.flags() ^ Qt.ItemIsEditable)
+            fileNameItem.setFlags(fileNameItem.flags() ^ __.ItemIsEditable)
             sizeItem _ QTableWidgetItem("%d KB" % (int((size + 1023) / 1024)))
-            sizeItem.setTextAlignment(Qt.AlignVCenter | Qt.AlignRight)
-            sizeItem.setFlags(sizeItem.flags() ^ Qt.ItemIsEditable)
+            sizeItem.setTextAlignment(__.AlignVCenter | __.AlignRight)
+            sizeItem.setFlags(sizeItem.flags() ^ __.ItemIsEditable)
 
             row _ self.filesTable.rowCount()
             self.filesTable.insertRow(row)

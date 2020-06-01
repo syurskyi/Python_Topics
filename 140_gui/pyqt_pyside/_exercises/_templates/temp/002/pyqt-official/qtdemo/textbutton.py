@@ -40,8 +40,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QPointF, QRect, QRectF, QSize, Qt
-____ ?.?G.. ______ (QColor, QImage, QLinearGradient, QPainter,
+____ ?.?C.. ______ QPointF, QRect, QRectF, QSize, __
+____ ?.?G.. ______ (?C.., QImage, QLinearGradient, QPainter,
         QPainterPath, QPen)
 
 ____ colors ______ Colors
@@ -73,41 +73,41 @@ c_ ButtonBackground(DemoItem):
 
         image _ QImage(scaledRect.width(), scaledRect.height(),
                 QImage.Format_ARGB32_Premultiplied)
-        image.fill(QColor(0, 0, 0, 0).rgba())
+        image.fill(?C..(0, 0, 0, 0).rgba())
         painter _ QPainter(image)
         painter.setRenderHint(QPainter.SmoothPixmapTransform)
         painter.setRenderHint(QPainter.Antialiasing)
-        painter.setPen(Qt.NoPen)
+        painter.setPen(__.NoPen)
 
         __ Colors.useEightBitPalette:
-            painter.setPen(QColor(120, 120, 120))
+            painter.setPen(?C..(120, 120, 120))
             __ self.pressed:
-                painter.setBrush(QColor(60, 60, 60))
+                painter.setBrush(?C..(60, 60, 60))
             ____ self.highlighted:
-                painter.setBrush(QColor(100, 100, 100))
+                painter.setBrush(?C..(100, 100, 100))
             ____
-                painter.setBrush(QColor(80, 80, 80))
+                painter.setBrush(?C..(80, 80, 80))
         ____
             outlinebrush _ QLinearGradient(0, 0, 0, scaledRect.height())
             brush _ QLinearGradient(0, 0, 0, scaledRect.height())
 
             brush.setSpread(QLinearGradient.PadSpread)
-            highlight _ QColor(255, 255, 255, 70)
-            shadow _ QColor(0, 0, 0, 70)
-            sunken _ QColor(220, 220, 220, 30)
+            highlight _ ?C..(255, 255, 255, 70)
+            shadow _ ?C..(0, 0, 0, 70)
+            sunken _ ?C..(220, 220, 220, 30)
 
             __ self.type == TextButton.PANEL:
-                normal1 _ QColor(200, 170, 160, 50)
-                normal2 _ QColor(50, 10, 0, 50)
+                normal1 _ ?C..(200, 170, 160, 50)
+                normal2 _ ?C..(50, 10, 0, 50)
             ____
-                normal1 _ QColor(255, 255, 245, 60)
-                normal2 _ QColor(255, 255, 235, 10)
+                normal1 _ ?C..(255, 255, 245, 60)
+                normal2 _ ?C..(255, 255, 235, 10)
 
             __ self.pressed:
                 outlinebrush.setColorAt(0, shadow)
                 outlinebrush.setColorAt(1, highlight)
                 brush.setColorAt(0, sunken)
-                painter.setPen(Qt.NoPen)
+                painter.setPen(__.NoPen)
             ____
                 outlinebrush.setColorAt(1, shadow)
                 outlinebrush.setColorAt(0, highlight)
@@ -122,7 +122,7 @@ c_ ButtonBackground(DemoItem):
             painter.drawRect(0, 0, scaledRect.width(), scaledRect.height())
         ____
             painter.drawRoundedRect(0, 0, scaledRect.width(),
-                    scaledRect.height(), 10, 90, Qt.RelativeSize)
+                    scaledRect.height(), 10, 90, __.RelativeSize)
 
         r_ image
 
@@ -132,36 +132,36 @@ c_ ButtonBackground(DemoItem):
 
         image _ QImage(scaledRect.width(), scaledRect.height(),
                 QImage.Format_ARGB32_Premultiplied)
-        image.fill(QColor(0, 0, 0, 0).rgba())
+        image.fill(?C..(0, 0, 0, 0).rgba())
         painter _ QPainter(image)
         painter.setRenderHint(QPainter.SmoothPixmapTransform)
         painter.setRenderHint(QPainter.Antialiasing)
-        painter.setPen(Qt.NoPen)
+        painter.setPen(__.NoPen)
 
         __ Colors.useEightBitPalette:
-            painter.setPen(QColor(120, 120, 120))
+            painter.setPen(?C..(120, 120, 120))
             __ self.pressed:
-                painter.setBrush(QColor(60, 60, 60))
+                painter.setBrush(?C..(60, 60, 60))
             ____ self.highlighted:
-                painter.setBrush(QColor(100, 100, 100))
+                painter.setBrush(?C..(100, 100, 100))
             ____
-                painter.setBrush(QColor(80, 80, 80))
+                painter.setBrush(?C..(80, 80, 80))
         ____
             outlinebrush _ QLinearGradient(0, 0, 0, scaledRect.height())
             brush _ QLinearGradient(0, 0, 0, scaledRect.height())
 
             brush.setSpread(QLinearGradient.PadSpread)
-            highlight _ QColor(255, 255, 255, 70)
-            shadow _ QColor(0, 0, 0, 70)
-            sunken _ QColor(220, 220, 220, 30)
-            normal1 _ QColor(200, 170, 160, 50)
-            normal2 _ QColor(50, 10, 0, 50)
+            highlight _ ?C..(255, 255, 255, 70)
+            shadow _ ?C..(0, 0, 0, 70)
+            sunken _ ?C..(220, 220, 220, 30)
+            normal1 _ ?C..(200, 170, 160, 50)
+            normal2 _ ?C..(50, 10, 0, 50)
 
             __ self.pressed:
                 outlinebrush.setColorAt(0, shadow)
                 outlinebrush.setColorAt(1, highlight)
                 brush.setColorAt(0, sunken)
-                painter.setPen(Qt.NoPen)
+                painter.setPen(__.NoPen)
             ____
                 outlinebrush.setColorAt(1, shadow)
                 outlinebrush.setColorAt(0, highlight)
@@ -220,7 +220,7 @@ c_ TextButton(DemoItem):
         self.state _ TextButton.OFF
 
         self.setAcceptHoverEvents(True)
-        self.setCursor(Qt.PointingHandCursor)
+        self.setCursor(__.PointingHandCursor)
 
         # Calculate the button size.
         __ type in (TextButton.SIDEBAR, TextButton.PANEL):
@@ -283,9 +283,9 @@ c_ TextButton(DemoItem):
         self.bgHighlight.setRecursiveVisible(state == TextButton.HIGHLIGHT)
         self.bgDisabled.setRecursiveVisible(state == TextButton.DISABLED)
         __ state == TextButton.DISABLED:
-            self.setCursor(Qt.ArrowCursor)
+            self.setCursor(__.ArrowCursor)
         ____
-            self.setCursor(Qt.PointingHandCursor)
+            self.setCursor(__.PointingHandCursor)
 
     ___ setupButtonBg(self):
         self.bgOn _ ButtonBackground(self.buttonType, True, True,

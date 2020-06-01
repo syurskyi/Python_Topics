@@ -7,7 +7,7 @@ Example program for Qt Animation using QGraphicsScene
 ______ sys
 ____ ? ______ ?W.. __ qtw
 ____ ? ______ ?G.. __ qtg
-____ ? ______ QtCore __ qtc
+____ ? ______ ?C.. __ qtc
 
 SCREEN_WIDTH _ 800
 SCREEN_HEIGHT _ 600
@@ -44,7 +44,7 @@ c_ Bullet(qtw.QGraphicsObject):
         r_ qtc.QRectF(0, 0, 10, 10)
 
     ___ paint  painter, options, widget):
-        painter.setBrush(qtg.QBrush(qtg.QColor('yellow')))
+        painter.setBrush(qtg.QBrush(qtg.?C..('yellow')))
         painter.drawRect(0, 0, 10, 10)
 
     ___ shoot  x_pos):
@@ -77,7 +77,7 @@ c_ Tank(qtw.QGraphicsObject):
         __ self.side == self.TOP:  # We're pointing down
             transform.rotate(180)
         self.bitmap _ self.bitmap.transformed(transform)
-        self.pen _ qtg.QPen(qtg.QColor(color))
+        self.pen _ qtg.QPen(qtg.?C..(color))
 
         # Define the tank's position
         __ self.side == self.BOTTOM:
@@ -134,11 +134,11 @@ c_ Scene(qtw.QGraphicsScene):
 
     ___ __init__(self):
         super().__init__()
-        self.setBackgroundBrush(qtg.QBrush(qtg.QColor('black')))
+        self.setBackgroundBrush(qtg.QBrush(qtg.?C..('black')))
         self.setSceneRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)
 
         # add a drawn item
-        wall_brush _ qtg.QBrush(qtg.QColor('blue'), qtc.Qt.Dense5Pattern)
+        wall_brush _ qtg.QBrush(qtg.?C..('blue'), qtc.__.Dense5Pattern)
         floor _ self.addRect(
             qtc.QRectF(0, SCREEN_HEIGHT - BORDER_HEIGHT,
                        SCREEN_WIDTH, BORDER_HEIGHT),
@@ -183,12 +183,12 @@ c_ Scene(qtw.QGraphicsScene):
 
     ___ keyPressEvent  event):
         keymap _ {
-            qtc.Qt.Key_Right: self.bottom_tank.right,
-            qtc.Qt.Key_Left: self.bottom_tank.left,
-            qtc.Qt.Key_Return: self.bottom_tank.shoot,
-            qtc.Qt.Key_A: self.top_tank.left,
-            qtc.Qt.Key_D: self.top_tank.right,
-            qtc.Qt.Key_Space: self.top_tank.shoot
+            qtc.__.Key_Right: self.bottom_tank.right,
+            qtc.__.Key_Left: self.bottom_tank.left,
+            qtc.__.Key_Return: self.bottom_tank.shoot,
+            qtc.__.Key_A: self.top_tank.left,
+            qtc.__.Key_D: self.top_tank.right,
+            qtc.__.Key_Space: self.top_tank.shoot
         }
         callback _ keymap.get(event.key())
         __ callback:

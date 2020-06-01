@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QFile, QFileInfo, QSettings, Qt, QTextStream
+____ ?.?C.. ______ QFile, QFileInfo, QSettings, __, QTextStream
 ____ ?.?G.. ______ ?KS..
 ____ ?.?W.. ______ (?A.., ?A.., ?FD.., QMainWindow,
         ?MB.., QTextEdit)
@@ -57,7 +57,7 @@ c_ MainWindow ?MW..
 
         self.recentFileActs _ []
 
-        self.setAttribute(Qt.WA_DeleteOnClose)
+        self.setAttribute(__.WA_DeleteOnClose)
 
         self.textEdit _ QTextEdit()
         self.sCW..(self.textEdit)
@@ -159,7 +159,7 @@ c_ MainWindow ?MW..
             r_
 
         instr _ QTextStream(file)
-        ?A...setOverrideCursor(Qt.WaitCursor)
+        ?A...setOverrideCursor(__.WaitCursor)
         self.textEdit.sPT..(instr.readAll())
         ?A...restoreOverrideCursor()
 
@@ -174,7 +174,7 @@ c_ MainWindow ?MW..
             r_
 
         outstr _ QTextStream(file)
-        ?A...setOverrideCursor(Qt.WaitCursor)
+        ?A...setOverrideCursor(__.WaitCursor)
         outstr << self.textEdit.toPlainText()
         ?A...restoreOverrideCursor()
 

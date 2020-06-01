@@ -53,7 +53,7 @@
 
 ______ sys
 
-____ ?.QtCore ______ (pyqtProperty, pyqtSignal, pyqtSlot, QCoreApplication,
+____ ?.?C.. ______ (pyqtProperty, pyqtSignal, pyqtSlot, QCoreApplication,
         QObject, QTimer, QUrl)
 ____ ?.QtRemoteObjects ______ QRemoteObjectHost
 

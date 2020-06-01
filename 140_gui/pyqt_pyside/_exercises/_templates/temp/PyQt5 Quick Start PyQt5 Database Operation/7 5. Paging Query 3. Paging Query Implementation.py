@@ -1,6 +1,6 @@
 ______ sys
 ____ ?.QtSql ______ QSqlDatabase, QSqlQuery, QSqlTableModel, QSqlQueryModel
-____ ?.QtCore ______ *
+____ ?.?C.. ______ *
 ____ ?.?W.. ______ *
 ______ re
 
@@ -72,10 +72,10 @@ c_ DataGrid(QWidget):
         self.db.setDatabaseName("/home/user/test.db")
         __ no. self.db.o..
             r_ False
-        self.queryModel.setHeaderData(0, Qt.Horizontal, "ID")
-        self.queryModel.setHeaderData(1, Qt.Horizontal, "Name")
-        self.queryModel.setHeaderData(2, Qt.Horizontal, "Sex")
-        self.queryModel.setHeaderData(3, Qt.Horizontal, "Age")
+        self.queryModel.setHeaderData(0, __.Horizontal, "ID")
+        self.queryModel.setHeaderData(1, __.Horizontal, "Name")
+        self.queryModel.setHeaderData(2, __.Horizontal, "Sex")
+        self.queryModel.setHeaderData(3, __.Horizontal, "Age")
         # Get all the records of the table
         sql _ "SELECT * FROM student"
         self.queryModel.setQuery(sql, self.db)

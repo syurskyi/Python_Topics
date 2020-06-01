@@ -3,7 +3,7 @@ ____ os ______ path
 
 ____ ? ______ ?W.. __ qtw
 ____ ? ______ ?G.. __ qtg
-____ ? ______ QtCore __ qtc
+____ ? ______ ?C.. __ qtc
 
 
 c_ Model(qtc.QObject):

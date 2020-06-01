@@ -40,8 +40,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QPoint
-____ ?.?G.. ______ QColor, QImage, QLinearGradient, QPainter
+____ ?.?C.. ______ QPoint
+____ ?.?G.. ______ ?C.., QImage, QLinearGradient, QPainter
 
 ____ colors ______ Colors
 ____ demoitem ______ DemoItem
@@ -86,7 +86,7 @@ c_ ImageItem(DemoItem):
         # Create a new image with correct size, and draw original on it.
         image _ QImage(int(w + 2), int(h + 2),
                 QImage.Format_ARGB32_Premultiplied)
-        image.fill(QColor(0, 0, 0, 0).rgba())
+        image.fill(?C..(0, 0, 0, 0).rgba())
         painter _ QPainter(image)
         painter.setRenderHints(QPainter.Antialiasing | QPainter.SmoothPixmapTransform)
         __ self.adjustSize:
@@ -102,7 +102,7 @@ c_ ImageItem(DemoItem):
             __ h < original.height
                 brush1 _ QLinearGradient(0, h - blur, 0, h)
                 brush1.setSpread(QLinearGradient.PadSpread)
-                brush1.setColorAt(0.0, QColor(0, 0, 0, 0))
+                brush1.setColorAt(0.0, ?C..(0, 0, 0, 0))
                 brush1.setColorAt(1.0, Colors.sceneBg1)
                 painter.fillRect(0, int(h) - blur, original.width(), int(h),
                         brush1)
@@ -110,7 +110,7 @@ c_ ImageItem(DemoItem):
             __ w < original.width
                 brush2 _ QLinearGradient(w - blur, 0, w, 0)
                 brush2.setSpread(QLinearGradient.PadSpread)
-                brush2.setColorAt(0.0, QColor(0, 0, 0, 0))
+                brush2.setColorAt(0.0, ?C..(0, 0, 0, 0))
                 brush2.setColorAt(1.0, Colors.sceneBg1)
                 painter.fillRect(int(w) - blur, 0, int(w), original.height(),
                         brush2)

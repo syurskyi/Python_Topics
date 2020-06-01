@@ -42,8 +42,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ (QAbstractItemModel, QFile, QIODevice,
-        QItemSelectionModel, QModelIndex, Qt)
+____ ?.?C.. ______ (QAbstractItemModel, QFile, QIODevice,
+        QItemSelectionModel, QModelIndex, __)
 ____ ?.?W.. ______ ?A.., QMainWindow
 
 ______ editabletreemodel_rc
@@ -144,7 +144,7 @@ c_ TreeModel(QAbstractItemModel):
         __ no. index.isValid
             r_ N..
 
-        __ role !_ Qt.DisplayRole and role !_ Qt.EditRole:
+        __ role !_ __.DisplayRole and role !_ __.EditRole:
             r_ N..
 
         item _ self.getItem(index)
@@ -154,7 +154,7 @@ c_ TreeModel(QAbstractItemModel):
         __ no. index.isValid
             r_ 0
 
-        r_ Qt.ItemIsEditable | super(TreeModel, self).flags(index)
+        r_ __.ItemIsEditable | super(TreeModel, self).flags(index)
 
     ___ getItem  index):
         __ index.isValid
@@ -165,7 +165,7 @@ c_ TreeModel(QAbstractItemModel):
         r_ self.rootItem
 
     ___ headerData  section, orientation, role_Qt.DisplayRole):
-        __ orientation == Qt.Horizontal and role == Qt.DisplayRole:
+        __ orientation == __.Horizontal and role == __.DisplayRole:
             r_ self.rootItem.data(section)
 
         r_ N..
@@ -234,7 +234,7 @@ c_ TreeModel(QAbstractItemModel):
         r_ parentItem.childCount()
 
     ___ setData  index, value, role_Qt.EditRole):
-        __ role !_ Qt.EditRole:
+        __ role !_ __.EditRole:
             r_ False
 
         item _ self.getItem(index)
@@ -246,7 +246,7 @@ c_ TreeModel(QAbstractItemModel):
         r_ result
 
     ___ setHeaderData  section, orientation, value, role_Qt.EditRole):
-        __ role !_ Qt.EditRole or orientation !_ Qt.Horizontal:
+        __ role !_ __.EditRole or orientation !_ __.Horizontal:
             r_ False
 
         result _ self.rootItem.setData(section, value)
@@ -340,10 +340,10 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
 
         for column in range(model.columnCount(index)):
             child _ model.index(0, column, index)
-            model.setData(child, "[No data]", Qt.EditRole)
-            __ model.headerData(column, Qt.Horizontal) __ N..:
-                model.setHeaderData(column, Qt.Horizontal, "[No header]",
-                        Qt.EditRole)
+            model.setData(child, "[No data]", __.EditRole)
+            __ model.headerData(column, __.Horizontal) __ N..:
+                model.setHeaderData(column, __.Horizontal, "[No header]",
+                        __.EditRole)
 
         self.view.selectionModel().setCurrentIndex(model.index(0, 0, index),
                 QItemSelectionModel.ClearAndSelect)
@@ -355,8 +355,8 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
 
         changed _ model.insertColumn(column + 1)
         __ changed:
-            model.setHeaderData(column + 1, Qt.Horizontal, "[No header]",
-                    Qt.EditRole)
+            model.setHeaderData(column + 1, __.Horizontal, "[No header]",
+                    __.EditRole)
 
         self.updateActions()
 
@@ -373,7 +373,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
 
         for column in range(model.columnCount(index.parent())):
             child _ model.index(index.row()+1, column, index.parent())
-            model.setData(child, "[No data]", Qt.EditRole)
+            model.setData(child, "[No data]", __.EditRole)
 
     ___ removeColumn(self):
         model _ self.view.model()

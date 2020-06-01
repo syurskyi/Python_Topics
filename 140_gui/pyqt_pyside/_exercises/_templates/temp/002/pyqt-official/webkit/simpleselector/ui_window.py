@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, ?G.., ?W..
+____ ? ______ ?C.., ?G.., ?W..
 
 c_ Ui_Window(object):
     ___ setupUi  Window):
@@ -16,7 +16,7 @@ c_ Ui_Window(object):
         self.verticalLayout _ ?W...QVBoxLayout(Window)
         self.verticalLayout.setObjectName("verticalLayout")
         self.webView _ QtWebKitWidgets.QWebView(Window)
-        self.webView.setUrl(QtCore.QUrl("http://webkit.org/"))
+        self.webView.setUrl(?C...QUrl("http://webkit.org/"))
         self.webView.setObjectName("webView")
         self.verticalLayout.addWidget(self.webView)
         self.horizontalLayout _ ?W...QHBoxLayout()
@@ -38,10 +38,10 @@ c_ Ui_Window(object):
         self.elementLabel.setBuddy(self.elementLineEdit)
 
         self.retranslateUi(Window)
-        QtCore.QMetaObject.connectSlotsByName(Window)
+        ?C...QMetaObject.connectSlotsByName(Window)
 
     ___ retranslateUi  Window):
-        _translate _ QtCore.QCoreApplication.translate
+        _translate _ ?C...QCoreApplication.translate
         Window.setWindowTitle(_translate("Window", "Web Element Selector"))
         self.elementLabel.sT..(_translate("Window", "&Element:"))
         self.elementLineEdit.sT..(_translate("Window", "li a"))

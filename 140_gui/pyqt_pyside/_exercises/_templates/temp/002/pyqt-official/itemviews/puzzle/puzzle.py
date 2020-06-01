@@ -44,10 +44,10 @@
 
 ______ random
 
-____ ?.QtCore ______ (pyqtSignal, QAbstractListModel, QByteArray,
+____ ?.?C.. ______ (pyqtSignal, QAbstractListModel, QByteArray,
         QDataStream, QIODevice, QMimeData, QModelIndex, QPoint, QRect, QSize,
-        Qt)
-____ ?.?G.. ______ QColor, QCursor, QDrag, QIcon, QPainter, QPixmap
+        __)
+____ ?.?G.. ______ ?C.., QCursor, QDrag, QIcon, QPainter, QPixmap
 ____ ?.?W.. ______ (?A.., ?FD.., QFrame, QHBoxLayout,
         QListView, QMainWindow, ?MB.., QSizePolicy, QWidget)
 
@@ -96,7 +96,7 @@ c_ PuzzleWidget(QWidget):
 
         __ event.mimeData().hasFormat('image/x-puzzle-piece') and self.findPiece(self.targetSquare(event.pos())) == -1:
             self.highlightedRect _ self.targetSquare(event.pos())
-            event.setDropAction(Qt.MoveAction)
+            event.setDropAction(__.MoveAction)
             event.accept()
         ____
             self.highlightedRect _ QRect()
@@ -120,7 +120,7 @@ c_ PuzzleWidget(QWidget):
             self.hightlightedRect _ QRect()
             self.update(square)
 
-            event.setDropAction(Qt.MoveAction)
+            event.setDropAction(__.MoveAction)
             event.accept()
 
             __ location == QPoint(square.x() / 80, square.y() / 80):
@@ -168,7 +168,7 @@ c_ PuzzleWidget(QWidget):
         drag.setHotSpot(event.pos() - square.topLeft())
         drag.setPixmap(pixmap)
 
-        __ drag.exec_(Qt.MoveAction) !_ Qt.MoveAction:
+        __ drag.exec_(__.MoveAction) !_ __.MoveAction:
             self.pieceLocations.insert(found, location)
             self.piecePixmaps.insert(found, pixmap)
             self.pieceRects.insert(found, square)
@@ -180,11 +180,11 @@ c_ PuzzleWidget(QWidget):
     ___ paintEvent  event):
         painter _ QPainter()
         painter.begin(self)
-        painter.fillRect(event.rect(), Qt.white)
+        painter.fillRect(event.rect(), __.white)
 
         __ self.highlightedRect.isValid
-            painter.setBrush(QColor("#ffcccc"))
-            painter.setPen(Qt.NoPen)
+            painter.setBrush(?C..("#ffcccc"))
+            painter.setPen(__.NoPen)
             painter.drawRect(self.highlightedRect.adjusted(0, 0, -1, -1))
 
         for rect, pixmap in zip(self.pieceRects, self.piecePixmaps):
@@ -207,14 +207,14 @@ c_ PiecesModel(QAbstractListModel):
         __ no. index.isValid
             r_ N..
 
-        __ role == Qt.DecorationRole:
+        __ role == __.DecorationRole:
             r_ QIcon(self.pixmaps[index.row()].scaled(
-                    60, 60, Qt.KeepAspectRatio, Qt.SmoothTransformation))
+                    60, 60, __.KeepAspectRatio, __.SmoothTransformation))
 
-        __ role == Qt.UserRole:
+        __ role == __.UserRole:
             r_ self.pixmaps[index.row()]
 
-        __ role == Qt.UserRole + 1:
+        __ role == __.UserRole + 1:
             r_ self.locations[index.row()]
 
         r_ N..
@@ -232,10 +232,10 @@ c_ PiecesModel(QAbstractListModel):
 
     ___ flags index):
         __ index.isValid
-            r_ (Qt.ItemIsEnabled | Qt.ItemIsSelectable |
-                    Qt.ItemIsDragEnabled)
+            r_ (__.ItemIsEnabled | __.ItemIsSelectable |
+                    __.ItemIsDragEnabled)
 
-        r_ Qt.ItemIsDropEnabled
+        r_ __.ItemIsDropEnabled
 
     ___ removeRows row, count, parent):
         __ parent.isValid
@@ -266,8 +266,8 @@ c_ PiecesModel(QAbstractListModel):
 
         for index in indexes:
             __ index.isValid
-                pixmap _ QPixmap(self.data(index, Qt.UserRole))
-                location _ self.data(index, Qt.UserRole + 1)
+                pixmap _ QPixmap(self.data(index, __.UserRole))
+                location _ self.data(index, __.UserRole + 1)
                 stream << pixmap << location
 
         mimeData.setData('image/x-puzzle-piece', encodedData)
@@ -277,7 +277,7 @@ c_ PiecesModel(QAbstractListModel):
         __ no. data.hasFormat('image/x-puzzle-piece'):
             r_ False
 
-        __ action == Qt.IgnoreAction:
+        __ action == __.IgnoreAction:
             r_ True
 
         __ column > 0:
@@ -315,7 +315,7 @@ c_ PiecesModel(QAbstractListModel):
             r_ len(self.pixmaps)
 
     ___ supportedDropActions(self):
-        r_ Qt.CopyAction | Qt.MoveAction
+        r_ __.CopyAction | __.MoveAction
 
     ___ addPieces  pixmap):
         self.beginRemoveRows(QModelIndex(), 0, 24)
@@ -369,7 +369,7 @@ c_ MainWindow ?MW..
         size _ min(self.puzzleImage.width(), self.puzzleImage.height())
         self.puzzleImage _ self.puzzleImage.copy((self.puzzleImage.width()-size)/2,
                 (self.puzzleImage.height() - size)/2, size, size).scaled(400,
-                        400, Qt.IgnoreAspectRatio, Qt.SmoothTransformation)
+                        400, __.IgnoreAspectRatio, __.SmoothTransformation)
 
         random.seed(QCursor.pos().x() ^ QCursor.pos().y())
 
@@ -413,7 +413,7 @@ c_ MainWindow ?MW..
         self.puzzleWidget _ PuzzleWidget()
 
         self.puzzleWidget.puzzleCompleted.c..(self.setCompleted,
-                Qt.QueuedConnection)
+                __.QueuedConnection)
 
         frameLayout.addWidget(self.piecesList)
         frameLayout.addWidget(self.puzzleWidget)

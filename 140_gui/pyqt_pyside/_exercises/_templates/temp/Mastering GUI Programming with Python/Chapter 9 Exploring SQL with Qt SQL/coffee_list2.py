@@ -1,6 +1,6 @@
 ______ sys
 ____ ? ______ ?W.. __ qtw
-____ ? ______ QtCore __ qtc
+____ ? ______ ?C.. __ qtc
 ____ ? ______ ?G.. __ qtg
 ____ ? ______ QtSql __ qts
 
@@ -91,7 +91,7 @@ c_ CoffeeForm(qtw.QWidget):
         id_index _ coffee_index.siblingAtColumn(0)
         self.coffee_id _ int(self.coffees_model.data(id_index))
         self.reviews.model().setFilter(f'coffee_id = {self.coffee_id}')
-        self.reviews.model().setSort(3, qtc.Qt.DescendingOrder)
+        self.reviews.model().setSort(3, qtc.__.DescendingOrder)
         self.reviews.model().select()
         self.reviews.resizeRowsToContents()
         self.reviews.resizeColumnsToContents()

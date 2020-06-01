@@ -44,7 +44,7 @@
 
 ______ unicodedata
 
-____ ?.QtCore ______ pyqtSignal, QSize, Qt
+____ ?.?C.. ______ pyqtSignal, QSize, __
 ____ ?.?G.. ______ (QClipboard, QFont, QFontDatabase, QFontMetrics,
         QPainter)
 ____ ?.?W.. ______ (?A.., QCheckBox, QComboBox, QFontComboBox,
@@ -108,7 +108,7 @@ c_ CharacterWidget(QWidget):
         QToolTip.showText(event.globalPos(), text, self)
 
     ___ mousePressEvent  event):
-        __ event.button() == Qt.LeftButton:
+        __ event.button() == __.LeftButton:
             self.lastKey _ (event.y() // self.squareSize) * self.columns + event.x() // self.squareSize
             key_ch _ self._chr(self.lastKey)
 
@@ -120,7 +120,7 @@ c_ CharacterWidget(QWidget):
 
     ___ paintEvent  event):
         painter _ QPainter(self)
-        painter.fillRect(event.rect(), Qt.white)
+        painter.fillRect(event.rect(), __.white)
         painter.setFont(self.displayFont)
 
         redrawRect _ event.rect()
@@ -129,7 +129,7 @@ c_ CharacterWidget(QWidget):
         beginColumn _ redrawRect.left() // self.squareSize
         endColumn _ redrawRect.right() // self.squareSize
 
-        painter.setPen(Qt.gray)
+        painter.setPen(__.gray)
         for row in range(beginRow, endRow + 1):
             for column in range(beginColumn, endColumn + 1):
                 painter.drawRect(column * self.squareSize,
@@ -137,7 +137,7 @@ c_ CharacterWidget(QWidget):
                         self.squareSize)
 
         fontMetrics _ QFontMetrics(self.displayFont)
-        painter.setPen(Qt.black)
+        painter.setPen(__.black)
         for row in range(beginRow, endRow + 1):
             for column in range(beginColumn, endColumn + 1):
                 key _ row * self.columns + column
@@ -148,7 +148,7 @@ c_ CharacterWidget(QWidget):
                 __ key == self.lastKey:
                     painter.fillRect(column * self.squareSize + 1,
                             row * self.squareSize + 1, self.squareSize,
-                            self.squareSize, Qt.red)
+                            self.squareSize, __.red)
 
                 key_ch _ self._chr(key)
                 painter.drawText(column * self.squareSize + (self.squareSize / 2) - fontMetrics.width(key_ch) / 2,

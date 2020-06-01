@@ -45,8 +45,8 @@
 ______ sys
 ______ math
 
-____ ?.QtCore ______ QPointF, QRect, QRectF, Qt, QTimer
-____ ?.?G.. ______ (QBrush, QColor, QFont, QLinearGradient, QPainter,
+____ ?.?C.. ______ QPointF, QRect, QRectF, __, QTimer
+____ ?.?G.. ______ (QBrush, ?C.., QFont, QLinearGradient, QPainter,
         QPen, QSurfaceFormat)
 ____ ?.?W.. ______ (?A.., QGridLayout, QLabel, QOpenGLWidget,
         QWidget)
@@ -55,14 +55,14 @@ ____ ?.?W.. ______ (?A.., QGridLayout, QLabel, QOpenGLWidget,
 c_ Helper(object):
     ___ __init__(self):
         gradient _ QLinearGradient(QPointF(50, -20), QPointF(80, 20))
-        gradient.setColorAt(0.0, Qt.white)
-        gradient.setColorAt(1.0, QColor(0xa6, 0xce, 0x39))
+        gradient.setColorAt(0.0, __.white)
+        gradient.setColorAt(1.0, ?C..(0xa6, 0xce, 0x39))
 
-        self.background _ QBrush(QColor(64, 32, 64))
+        self.background _ QBrush(?C..(64, 32, 64))
         self.circleBrush _ QBrush(gradient)
-        self.circlePen _ QPen(Qt.black)
+        self.circlePen _ QPen(__.black)
         self.circlePen.setWidth(1)
-        self.textPen _ QPen(Qt.white)
+        self.textPen _ QPen(__.white)
         self.textFont _ QFont()
         self.textFont.setPixelSize(50)
 
@@ -88,7 +88,7 @@ c_ Helper(object):
 
         painter.setPen(self.textPen)
         painter.setFont(self.textFont)
-        painter.drawText(QRect(-50, -50, 100, 100), Qt.AlignCenter, "Qt")
+        painter.drawText(QRect(-50, -50, 100, 100), __.AlignCenter, "Qt")
 
 
 c_ Widget(QWidget):
@@ -142,9 +142,9 @@ c_ Window(QWidget):
         native _ Widget(helper, self)
         openGL _ GLWidget(helper, self)
         nativeLabel _ QLabel("Native")
-        nativeLabel.setAlignment(Qt.AlignHCenter)
+        nativeLabel.setAlignment(__.AlignHCenter)
         openGLLabel _ QLabel("OpenGL")
-        openGLLabel.setAlignment(Qt.AlignHCenter)
+        openGLLabel.setAlignment(__.AlignHCenter)
 
         layout _ QGridLayout()
         layout.addWidget(native, 0, 0)

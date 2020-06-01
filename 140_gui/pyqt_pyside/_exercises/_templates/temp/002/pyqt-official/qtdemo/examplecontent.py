@@ -42,7 +42,7 @@
 
 ____ xml.dom.minidom ______ parseString
 
-____ ?.QtCore ______ QRectF, QRegExp, Qt
+____ ?.?C.. ______ QRectF, QRegExp, __
 ____ ?.?G.. ______ QImage
 
 ____ colors ______ Colors
@@ -101,7 +101,7 @@ c_ ExampleContent(DemoItem):
         r_ Colors.contentColor + description
 
     ___ isSummary  text):
-        re _ QRegExp("(In )?((The|This) )?(%s )?.*(tutorial|example|demo|application)" % self.name, Qt.CaseInsensitive)
+        re _ QRegExp("(In )?((The|This) )?(%s )?.*(tutorial|example|demo|application)" % self.name, __.CaseInsensitive)
 
         r_ ('[' no. in text) and (re.indexIn(text) >_ 0)
 

@@ -6,7 +6,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore
+____ ? ______ ?C..
 
 qt_resource_data _ b"\
 \x00\x00\x0b\xfd\
@@ -11908,7 +11908,7 @@ qt_resource_struct_v2 _ b"\
 \x00\x00\x01\x5a\x38\x00\xd4\xd8\
 "
 
-qt_version _ QtCore.qVersion().split('.')
+qt_version _ ?C...qVersion().split('.')
 __ qt_version < ['5', '8', '0']:
     rcc_version _ 1
     qt_resource_struct _ qt_resource_struct_v1
@@ -11917,9 +11917,9 @@ ____
     qt_resource_struct _ qt_resource_struct_v2
 
 ___ qInitResources
-    QtCore.qRegisterResourceData(rcc_version, qt_resource_struct, qt_resource_name, qt_resource_data)
+    ?C...qRegisterResourceData(rcc_version, qt_resource_struct, qt_resource_name, qt_resource_data)
 
 ___ qCleanupResources
-    QtCore.qUnregisterResourceData(rcc_version, qt_resource_struct, qt_resource_name, qt_resource_data)
+    ?C...qUnregisterResourceData(rcc_version, qt_resource_struct, qt_resource_name, qt_resource_data)
 
 qInitResources()

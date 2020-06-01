@@ -1,5 +1,5 @@
 ____ ? ______ ?W.. __ qtw
-____ ? ______ QtCore __ qtc
+____ ? ______ ?C.. __ qtc
 ____ ? ______ QtMultimedia __ qtmm
 ____ ? ______ QtMultimediaWidgets __ qtmmw
 
@@ -27,7 +27,7 @@ c_ MainWindow(qtw.QWidget):
             minimum_1,
             maximum_10,
             sliderMoved_self.on_slider_moved,
-            orientation_qtc.Qt.Horizontal
+            orientation_qtc.__.Horizontal
         )
         form.addRow('Zoom', zoomslider)
 

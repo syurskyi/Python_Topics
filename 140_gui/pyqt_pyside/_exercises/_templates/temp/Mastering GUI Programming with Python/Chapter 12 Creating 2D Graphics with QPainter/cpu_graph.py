@@ -1,6 +1,6 @@
 ______ sys
 ____ ? ______ ?W.. __ qtw
-____ ? ______ QtCore __ qtc
+____ ? ______ ?C.. __ qtc
 ____ ? ______ ?G.. __ qtg
 ____ collections ______ deque
 
@@ -11,9 +11,9 @@ ______ math
 c_ GraphWidget(qtw.QWidget):
     """A widget to display a running graph of information"""
 
-    crit_color _ qtg.QColor(255, 0, 0)  # red
-    warn_color _ qtg.QColor(255, 255, 0)  # yellow
-    good_color _ qtg.QColor(0, 255, 0)  # green
+    crit_color _ qtg.?C..(255, 0, 0)  # red
+    warn_color _ qtg.?C..(255, 255, 0)  # yellow
+    good_color _ qtg.?C..(0, 255, 0)  # green
 
     ___ __init__(
         self, *args, data_width_20,
@@ -47,7 +47,7 @@ c_ GraphWidget(qtw.QWidget):
         painter _ qtg.QPainter(self)
 
         # draw the background
-        brush _ qtg.QBrush(qtg.QColor(48, 48, 48))
+        brush _ qtg.QBrush(qtg.?C..(48, 48, 48))
         painter.setBrush(brush)
         painter.drawRect(0, 0, self.width(), self.height())
 
@@ -57,13 +57,13 @@ c_ GraphWidget(qtw.QWidget):
 
         # warning line
         warn_y _ self.val_to_y(self.warn_val)
-        pen.setColor(self.warn_color)
+        pen.sC..(self.warn_color)
         painter.setPen(pen)
         painter.drawLine(0, warn_y, self.width(), warn_y)
 
         # critical line
         crit_y _ self.val_to_y(self.crit_val)
-        pen.setColor(self.crit_color)
+        pen.sC..(self.crit_color)
         painter.setPen(pen)
         painter.drawLine(0, crit_y, self.width(), crit_y)
 
@@ -79,7 +79,7 @@ c_ GraphWidget(qtw.QWidget):
             self.crit_color)
         brush _ qtg.QBrush(gradient)
         painter.setBrush(brush)
-        painter.setPen(qtc.Qt.NoPen)
+        painter.setPen(qtc.__.NoPen)
 
         # Draw the paths for the chart
         self.start_value _ getattr  'start_value', self.minimum)

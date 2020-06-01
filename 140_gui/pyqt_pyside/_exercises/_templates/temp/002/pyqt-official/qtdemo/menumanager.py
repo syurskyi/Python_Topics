@@ -43,9 +43,9 @@
 ______ sys
 ____ xml.dom.minidom ______ parseString
 
-____ ?.QtCore ______ (QByteArray, QDir, QEasingCurve, QFile, QFileInfo,
+____ ?.?C.. ______ (QByteArray, QDir, QEasingCurve, QFile, QFileInfo,
         QLibraryInfo, QObject, QPointF, QProcess, QProcessEnvironment,
-        QStandardPaths, Qt, QT_VERSION, QT_VERSION_STR, QTextStream, QUrl)
+        QStandardPaths, __, QT_VERSION, QT_VERSION_STR, QTextStream, QUrl)
 ____ ?.?W.. ______ ?A.., ?MB..
 
 ____ colors ______ Colors

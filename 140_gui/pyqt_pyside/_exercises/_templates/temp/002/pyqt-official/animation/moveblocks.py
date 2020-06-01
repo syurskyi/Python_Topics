@@ -42,9 +42,9 @@
 #############################################################################
 
 
-____ ?.QtCore ______ (QAbstractTransition, QEasingCurve, QEvent,
+____ ?.?C.. ______ (QAbstractTransition, QEasingCurve, QEvent,
         QParallelAnimationGroup, QPropertyAnimation, qrand, QRect,
-        QSequentialAnimationGroup, qsrand, QState, QStateMachine, Qt, QTime,
+        QSequentialAnimationGroup, qsrand, QState, QStateMachine, __, QTime,
         QTimer)
 ____ ?.?W.. ______ (?A.., QGraphicsScene, QGraphicsView,
         QGraphicsWidget)
@@ -64,7 +64,7 @@ c_ StateSwitchEvent(QEvent):
 
 c_ QGraphicsRectWidget(QGraphicsWidget):
     ___ paint  painter, option, widget):
-        painter.fillRect(self.rect(), Qt.blue)
+        painter.fillRect(self.rect(), __.blue)
 
 
 c_ StateSwitchTransition(QAbstractTransition):
@@ -134,7 +134,7 @@ __ __name__ == '__main__':
     button4.setZValue(3)
 
     scene _ QGraphicsScene(0, 0, 300, 300)
-    scene.setBackgroundBrush(Qt.black)
+    scene.setBackgroundBrush(__.black)
     scene.addItem(button1)
     scene.addItem(button2)
     scene.addItem(button3)
@@ -142,9 +142,9 @@ __ __name__ == '__main__':
 
     window _ QGraphicsView(scene)
     window.setFrameStyle(0)
-    window.setAlignment(Qt.AlignLeft | Qt.AlignTop)
-    window.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
-    window.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+    window.setAlignment(__.AlignLeft | __.AlignTop)
+    window.setHorizontalScrollBarPolicy(__.ScrollBarAlwaysOff)
+    window.setVerticalScrollBarPolicy(__.ScrollBarAlwaysOff)
 
     machine _ QStateMachine()
 

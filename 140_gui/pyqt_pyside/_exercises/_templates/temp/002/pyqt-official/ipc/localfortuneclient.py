@@ -44,7 +44,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QDataStream, QTimer
+____ ?.?C.. ______ QDataStream, QTimer
 ____ ?.?W.. ______ (?A.., QDialog, QDialogButtonBox,
         QGridLayout, QLabel, QLineEdit, ?MB.., ?PB..)
 ____ ?.QtNetwork ______ QLocalSocket

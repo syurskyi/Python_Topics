@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ Qt
+____ ?.?C.. ______ __
 ____ ?.?G.. ______ QDoubleValidator, QIntValidator
 ____ ?.?W.. ______ (?A.., QComboBox, QGridLayout, QGroupBox,
         QLabel, QLineEdit, QWidget)
@@ -172,11 +172,11 @@ c_ Window(QWidget):
 
     ___ alignmentChanged  index):
         __ index == 0:
-            self.alignmentLineEdit.setAlignment(Qt.AlignLeft)
+            self.alignmentLineEdit.setAlignment(__.AlignLeft)
         ____ index == 1:
-            self.alignmentLineEdit.setAlignment(Qt.AlignCenter)
+            self.alignmentLineEdit.setAlignment(__.AlignCenter)
         ____ index == 2:
-    	    self.alignmentLineEdit.setAlignment(Qt.AlignRight)
+    	    self.alignmentLineEdit.setAlignment(__.AlignRight)
 
     ___ inputMaskChanged  index):
         __ index == 0:

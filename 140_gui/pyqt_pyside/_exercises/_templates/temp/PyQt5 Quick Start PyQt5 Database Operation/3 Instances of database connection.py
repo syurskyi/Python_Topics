@@ -1,6 +1,6 @@
 ______ sys
 ____ ?.QtSql ______ QSqlDatabase
-____ ?.QtCore ______ *
+____ ?.?C.. ______ *
 
 __ __name__ == "__main__":
     app _ QCoreApplication(sys.argv)

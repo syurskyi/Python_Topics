@@ -44,7 +44,7 @@
 
 ______ random
 
-____ ?.QtCore ______ (pyqtSignal, QByteArray, QDataStream, QIODevice,
+____ ?.?C.. ______ (pyqtSignal, QByteArray, QDataStream, QIODevice,
         QThread)
 ____ ?.?W.. ______ (?A.., QDialog, QHBoxLayout, QLabel,
         ?MB.., ?PB.., QVBoxLayout)

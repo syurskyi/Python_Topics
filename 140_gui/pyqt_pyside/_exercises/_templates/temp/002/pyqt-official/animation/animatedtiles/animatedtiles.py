@@ -42,9 +42,9 @@
 #############################################################################
 
 
-____ ?.QtCore ______ (pyqtProperty, pyqtSignal, QEasingCurve, QObject,
+____ ?.?C.. ______ (pyqtProperty, pyqtSignal, QEasingCurve, QObject,
         QParallelAnimationGroup, QPointF, QPropertyAnimation, qrand, QRectF,
-        QState, QStateMachine, Qt, QTimer)
+        QState, QStateMachine, __, QTimer)
 ____ ?.?G.. ______ (QBrush, QLinearGradient, QPainter, QPainterPath,
         QPixmap)
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsPixmapItem,
@@ -95,11 +95,11 @@ c_ Button(QGraphicsWidget):
 
         grad _ QLinearGradient(r.topLeft(), r.bottomRight())
         __ option.state & QStyle.State_MouseOver:
-            color_0 _ Qt.white
+            color_0 _ __.white
         ____
-            color_0 _ Qt.lightGray
+            color_0 _ __.lightGray
 
-        color_1 _ Qt.darkGray
+        color_1 _ __.darkGray
 
         __ down:
             color_0, color_1 _ color_1, color_0
@@ -107,12 +107,12 @@ c_ Button(QGraphicsWidget):
         grad.setColorAt(0, color_0)
         grad.setColorAt(1, color_1)
 
-        painter.setPen(Qt.darkGray)
+        painter.setPen(__.darkGray)
         painter.setBrush(grad)
         painter.drawEllipse(r)
 
-        color_0 _ Qt.darkGray
-        color_1 _ Qt.lightGray
+        color_0 _ __.darkGray
+        color_1 _ __.lightGray
 
         __ down:
             color_0, color_1 _ color_1, color_0
@@ -120,7 +120,7 @@ c_ Button(QGraphicsWidget):
         grad.setColorAt(0, color_0)
         grad.setColorAt(1, color_1)
 
-        painter.setPen(Qt.NoPen)
+        painter.setPen(__.NoPen)
         painter.setBrush(grad)
 
         __ down:
@@ -141,7 +141,7 @@ c_ Button(QGraphicsWidget):
 c_ View(QGraphicsView):
     ___ resizeEvent  event):
         super(View, self).resizeEvent(event)
-        self.fitInView(self.sceneRect(), Qt.KeepAspectRatio)
+        self.fitInView(self.sceneRect(), __.KeepAspectRatio)
 
 
 __ __name__ == '__main__':

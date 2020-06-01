@@ -6,12 +6,12 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, ?G.., ?W..
+____ ? ______ ?C.., ?G.., ?W..
 
 c_ Ui_CategoryWindow(object):
     ___ setupUi  CategoryWindow):
         CategoryWindow.setObjectName("CategoryWindow")
-        CategoryWindow.setWindowModality(QtCore.Qt.WindowModal)
+        CategoryWindow.setWindowModality(?C...__.WindowModal)
         CategoryWindow.resize(409, 120)
         self.verticalLayout _ ?W...QVBoxLayout(CategoryWindow)
         self.verticalLayout.setObjectName("verticalLayout")
@@ -29,10 +29,10 @@ c_ Ui_CategoryWindow(object):
         self.verticalLayout.addWidget(self.cancel_btn)
 
         self.retranslateUi(CategoryWindow)
-        QtCore.QMetaObject.connectSlotsByName(CategoryWindow)
+        ?C...QMetaObject.connectSlotsByName(CategoryWindow)
 
     ___ retranslateUi  CategoryWindow):
-        _translate _ QtCore.QCoreApplication.translate
+        _translate _ ?C...QCoreApplication.translate
         CategoryWindow.setWindowTitle(_translate("CategoryWindow", "Form"))
         self.label.sT..(_translate("CategoryWindow", "Please enter a new category name:"))
         self.submit_btn.sT..(_translate("CategoryWindow", "Submit"))

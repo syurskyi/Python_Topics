@@ -42,9 +42,9 @@
 #############################################################################
 
 
-____ ?.QtCore ______ (pyqtSignal, QMutex, QMutexLocker, QPoint, QSize, Qt,
+____ ?.?C.. ______ (pyqtSignal, QMutex, QMutexLocker, QPoint, QSize, __,
         QThread, QWaitCondition)
-____ ?.?G.. ______ QColor, QImage, QPainter, QPixmap, qRgb
+____ ?.?G.. ______ ?C.., QImage, QPainter, QPixmap, qRgb
 ____ ?.?W.. ______ ?A.., QWidget
 
 
@@ -226,16 +226,16 @@ c_ MandelbrotWidget(QWidget):
         self.thread.renderedImage.c..(self.updatePixmap)
 
         self.setWindowTitle("Mandelbrot")
-        self.setCursor(Qt.CrossCursor)
+        self.setCursor(__.CrossCursor)
         self.resize(550, 400)
 
     ___ paintEvent  event):
         painter _ QPainter(self)
-        painter.fillRect(self.rect(), Qt.black)
+        painter.fillRect(self.rect(), __.black)
 
         __ self.pixmap.isNull
-            painter.setPen(Qt.white)
-            painter.drawText(self.rect(), Qt.AlignCenter,
+            painter.setPen(__.white)
+            painter.drawText(self.rect(), __.AlignCenter,
                     "Rendering initial image, please wait...")
             r_
 
@@ -261,11 +261,11 @@ c_ MandelbrotWidget(QWidget):
         metrics _ painter.fontMetrics()
         textWidth _ metrics.width(text)
 
-        painter.setPen(Qt.NoPen)
-        painter.setBrush(QColor(0, 0, 0, 127))
+        painter.setPen(__.NoPen)
+        painter.setBrush(?C..(0, 0, 0, 127))
         painter.drawRect((self.width() - textWidth) / 2 - 5, 0, textWidth + 10,
                 metrics.lineSpacing() + 5)
-        painter.setPen(Qt.white)
+        painter.setPen(__.white)
         painter.drawText((self.width() - textWidth) / 2,
                 metrics.leading() + metrics.ascent(), text)
 
@@ -274,17 +274,17 @@ c_ MandelbrotWidget(QWidget):
                 self.size())
 
     ___ keyPressEvent  event):
-        __ event.key() == Qt.Key_Plus:
+        __ event.key() == __.Key_Plus:
             self.zoom(ZoomInFactor)
-        ____ event.key() == Qt.Key_Minus:
+        ____ event.key() == __.Key_Minus:
             self.zoom(ZoomOutFactor)
-        ____ event.key() == Qt.Key_Left:
+        ____ event.key() == __.Key_Left:
             self.scroll(-ScrollStep, 0)
-        ____ event.key() == Qt.Key_Right:
+        ____ event.key() == __.Key_Right:
             self.scroll(+ScrollStep, 0)
-        ____ event.key() == Qt.Key_Down:
+        ____ event.key() == __.Key_Down:
             self.scroll(0, -ScrollStep)
-        ____ event.key() == Qt.Key_Up:
+        ____ event.key() == __.Key_Up:
             self.scroll(0, +ScrollStep)
         ____
             super(MandelbrotWidget, self).keyPressEvent(event)
@@ -295,17 +295,17 @@ c_ MandelbrotWidget(QWidget):
         self.zoom(pow(ZoomInFactor, numSteps))
 
     ___ mousePressEvent  event):
-        __ event.buttons() == Qt.LeftButton:
+        __ event.buttons() == __.LeftButton:
             self.lastDragPos _ QPoint(event.pos())
 
     ___ mouseMoveEvent  event):
-        __ event.buttons() & Qt.LeftButton:
+        __ event.buttons() & __.LeftButton:
             self.pixmapOffset +_ event.pos() - self.lastDragPos
             self.lastDragPos _ QPoint(event.pos())
             self.update()
 
     ___ mouseReleaseEvent  event):
-        __ event.button() == Qt.LeftButton:
+        __ event.button() == __.LeftButton:
             self.pixmapOffset +_ event.pos() - self.lastDragPos
             self.lastDragPos _ QPoint()
 

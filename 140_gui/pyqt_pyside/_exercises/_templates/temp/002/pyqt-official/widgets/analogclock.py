@@ -42,8 +42,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QPoint, Qt, QTime, QTimer
-____ ?.?G.. ______ QColor, QPainter, QPolygon
+____ ?.?C.. ______ QPoint, __, QTime, QTimer
+____ ?.?G.. ______ ?C.., QPainter, QPolygon
 ____ ?.?W.. ______ ?A.., QWidget
 
 
@@ -60,8 +60,8 @@ c_ AnalogClock(QWidget):
         QPoint(0, -70)
     ])
 
-    hourColor _ QColor(127, 0, 127)
-    minuteColor _ QColor(0, 127, 127, 191)
+    hourColor _ ?C..(127, 0, 127)
+    minuteColor _ ?C..(0, 127, 127, 191)
 
     ___ __init__  parent_None):
         super(AnalogClock, self).__init__(parent)
@@ -82,7 +82,7 @@ c_ AnalogClock(QWidget):
         painter.translate(self.width() / 2, self.height() / 2)
         painter.scale(side / 200.0, side / 200.0)
 
-        painter.setPen(Qt.NoPen)
+        painter.setPen(__.NoPen)
         painter.setBrush(AnalogClock.hourColor)
 
         painter.save()
@@ -96,7 +96,7 @@ c_ AnalogClock(QWidget):
             painter.drawLine(88, 0, 96, 0)
             painter.rotate(30.0)
 
-        painter.setPen(Qt.NoPen)
+        painter.setPen(__.NoPen)
         painter.setBrush(AnalogClock.minuteColor)
 
         painter.save()

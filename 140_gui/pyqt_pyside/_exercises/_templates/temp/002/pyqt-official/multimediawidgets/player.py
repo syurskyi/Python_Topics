@@ -42,10 +42,10 @@
 #############################################################################
 
 
-____ ?.QtCore ______ (pyqtSignal, pyqtSlot, Q_ARG, QAbstractItemModel,
-        QFileInfo, qFuzzyCompare, QMetaObject, QModelIndex, QObject, Qt,
+____ ?.?C.. ______ (pyqtSignal, pyqtSlot, Q_ARG, QAbstractItemModel,
+        QFileInfo, qFuzzyCompare, QMetaObject, QModelIndex, QObject, __,
         QThread, QTime, QUrl)
-____ ?.?G.. ______ QColor, qGray, QImage, QPainter, QPalette
+____ ?.?G.. ______ ?C.., qGray, QImage, QPainter, ?P..
 ____ ?.QtMultimedia ______ (QAbstractVideoBuffer, QMediaContent,
         QMediaMetaData, QMediaPlayer, QMediaPlaylist, QVideoFrame, QVideoProbe)
 ____ ?.QtMultimediaWidgets ______ QVideoWidget
@@ -62,16 +62,16 @@ c_ VideoWidget(QVideoWidget):
         self.setSizePolicy(QSizePolicy.Ignored, QSizePolicy.Ignored)
 
         p _ self.palette()
-        p.setColor(QPalette.Window, Qt.black)
-        self.setPalette(p)
+        p.sC..(?P...Window, __.black)
+        self.sP..(p)
 
-        self.setAttribute(Qt.WA_OpaquePaintEvent)
+        self.setAttribute(__.WA_OpaquePaintEvent)
 
     ___ keyPressEvent  event):
-        __ event.key() == Qt.Key_Escape and self.isFullScreen
+        __ event.key() == __.Key_Escape and self.isFullScreen
             self.setFullScreen F..
             event.accept()
-        ____ event.key() == Qt.Key_Enter and event.modifiers() & Qt.Key_Alt:
+        ____ event.key() == __.Key_Enter and event.modifiers() & __.Key_Alt:
             self.setFullScreen(no. self.isFullScreen())
             event.accept()
         ____
@@ -104,7 +104,7 @@ c_ PlaylistModel(QAbstractItemModel):
         r_ QModelIndex()
 
     ___ data  index, role_Qt.DisplayRole):
-        __ index.isValid() and role == Qt.DisplayRole:
+        __ index.isValid() and role == __.DisplayRole:
             __ index.column() == self.Title:
                 location _ self.m_playlist.media(index.row()).canonicalUrl()
                 r_ QFileInfo(location.path()).fileName()
@@ -193,7 +193,7 @@ c_ PlayerControls(QWidget):
         self.muteButton.setIcon(
                 self.style().standardIcon(QStyle.SP_MediaVolume))
 
-        self.volumeSlider _ QSlider(Qt.Horizontal,
+        self.volumeSlider _ QSlider(__.Horizontal,
                 sliderMoved_self.changeVolume)
         self.volumeSlider.setRange(0, 100)
 
@@ -346,7 +346,7 @@ c_ HistogramWidget(QWidget):
 
         self.m_isBusy _ True
         QMetaObject.invokeMethod(self.m_processor, 'processFrame',
-                Qt.QueuedConnection, Q_ARG(QVideoFrame, frame),
+                __.QueuedConnection, Q_ARG(QVideoFrame, frame),
                 Q_ARG(int, self.m_levels))
 
     @pyqtSlot(list)
@@ -360,7 +360,7 @@ c_ HistogramWidget(QWidget):
 
         __ len(self.m_histogram) == 0:
             painter.fillRect(0, 0, self.width(), self.height(),
-                    QColor.fromRgb(0, 0, 0))
+                    ?C...fromRgb(0, 0, 0))
             r_
 
         barWidth _ self.width() / float(len(self.m_histogram))
@@ -369,10 +369,10 @@ c_ HistogramWidget(QWidget):
             h _ value * self.height()
             # Draw the level.
             painter.fillRect(barWidth * i, self.height() - h,
-                    barWidth * (i + 1), self.height(), Qt.red)
+                    barWidth * (i + 1), self.height(), __.red)
             # Clear the rest of the control.
             painter.fillRect(barWidth * i, 0, barWidth * (i + 1),
-                    self.height() - h, Qt.black)
+                    self.height() - h, __.black)
 
 
 c_ Player(QWidget):
@@ -413,7 +413,7 @@ c_ Player(QWidget):
 
         self.playlistView.activated.c..(self.jump)
 
-        self.slider _ QSlider(Qt.Horizontal)
+        self.slider _ QSlider(__.Horizontal)
         self.slider.setRange(0, self.player.duration() / 1000)
 
         self.labelDuration _ QLabel()
@@ -571,7 +571,7 @@ c_ Player(QWidget):
 
     ___ handleCursor  status):
         __ status in (QMediaPlayer.LoadingMedia, QMediaPlayer.BufferingMedia, QMediaPlayer.StalledMedia):
-            self.setCursor(Qt.BusyCursor)
+            self.setCursor(__.BusyCursor)
         ____
             self.unsetCursor()
 
@@ -633,7 +633,7 @@ c_ Player(QWidget):
 
     ___ showColorDialog(self):
         __ self.colorDialog __ N..:
-            brightnessSlider _ QSlider(Qt.Horizontal)
+            brightnessSlider _ QSlider(__.Horizontal)
             brightnessSlider.setRange(-100, 100)
             brightnessSlider.setValue(self.videoWidget.brightness())
             brightnessSlider.sliderMoved.c..(
@@ -641,19 +641,19 @@ c_ Player(QWidget):
             self.videoWidget.brightnessChanged.c..(
                     brightnessSlider.setValue)
 
-            contrastSlider _ QSlider(Qt.Horizontal)
+            contrastSlider _ QSlider(__.Horizontal)
             contrastSlider.setRange(-100, 100)
             contrastSlider.setValue(self.videoWidget.contrast())
             contrastSlider.sliderMoved.c..(self.videoWidget.setContrast)
             self.videoWidget.contrastChanged.c..(contrastSlider.setValue)
 
-            hueSlider _ QSlider(Qt.Horizontal)
+            hueSlider _ QSlider(__.Horizontal)
             hueSlider.setRange(-100, 100)
             hueSlider.setValue(self.videoWidget.hue())
             hueSlider.sliderMoved.c..(self.videoWidget.setHue)
             self.videoWidget.hueChanged.c..(hueSlider.setValue)
 
-            saturationSlider _ QSlider(Qt.Horizontal)
+            saturationSlider _ QSlider(__.Horizontal)
             saturationSlider.setRange(-100, 100)
             saturationSlider.setValue(self.videoWidget.saturation())
             saturationSlider.sliderMoved.c..(

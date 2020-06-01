@@ -37,7 +37,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ Qt
+____ ?.?C.. ______ __
 ____ ?.?W.. ______ QTableView
 
 
@@ -45,8 +45,8 @@ c_ PrintView(QTableView):
     ___ __init__(self):
         super(PrintView, self).__init__()
 
-        self.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
-        self.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        self.setVerticalScrollBarPolicy(__.ScrollBarAlwaysOff)
+        self.setHorizontalScrollBarPolicy(__.ScrollBarAlwaysOff)
 
     ___ print_  printer):
         self.resize(printer.width(), printer.height())

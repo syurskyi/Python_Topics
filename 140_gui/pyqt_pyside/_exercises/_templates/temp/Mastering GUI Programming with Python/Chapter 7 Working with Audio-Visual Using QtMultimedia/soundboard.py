@@ -1,7 +1,7 @@
 ______ sys
 ____ ? ______ ?W.. __ qtw
 ____ ? ______ ?G.. __ qtg
-____ ? ______ QtCore __ qtc
+____ ? ______ ?C.. __ qtc
 ____ ? ______ QtMultimedia __ qtmm
 
 
@@ -68,7 +68,7 @@ c_ SoundWidget(qtw.QWidget):
 
         # Slider
         self.position _ qtw.QSlider(
-            minimum_0, orientation_qtc.Qt.Horizontal)
+            minimum_0, orientation_qtc.__.Horizontal)
         self.layout().addWidget(self.position, 1, 0, 1, 2)
 
         self.player.positionChanged.c..(self.position.setSliderPosition)
@@ -88,7 +88,7 @@ c_ SoundWidget(qtw.QWidget):
             minimum_0,
             maximum_100,
             sliderPosition_75,
-            orientation_qtc.Qt.Horizontal,
+            orientation_qtc.__.Horizontal,
             sliderMoved_self.player.setVolume
         )
         self.layout().addWidget(self.volume, 2, 1)
@@ -151,7 +151,7 @@ c_ SoundWidget(qtw.QWidget):
             self.set_file(fn)
 
     ___ on_loop_cb  state):
-        __ state == qtc.Qt.Checked:
+        __ state == qtc.__.Checked:
             self.playlist.setPlaybackMode(
                 qtmm.QMediaPlaylist.CurrentItemInLoop)
         ____

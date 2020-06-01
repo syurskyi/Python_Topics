@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, ?G.., ?W..
+____ ? ______ ?C.., ?G.., ?W..
 
 c_ Ui_Form(object):
     ___ setupUi  Form):
@@ -16,7 +16,7 @@ c_ Ui_Form(object):
         self.horizontalLayout_4 _ ?W...QHBoxLayout(Form)
         self.horizontalLayout_4.setObjectName("horizontalLayout_4")
         self.splitter _ ?W...QSplitter(Form)
-        self.splitter.setOrientation(QtCore.Qt.Horizontal)
+        self.splitter.setOrientation(?C...__.Horizontal)
         self.splitter.setObjectName("splitter")
         self.editorBox _ ?W...QGroupBox(self.splitter)
         self.editorBox.setObjectName("editorBox")
@@ -42,17 +42,17 @@ c_ Ui_Form(object):
         self.horizontalLayout_3 _ ?W...QHBoxLayout(self.previewerBox)
         self.horizontalLayout_3.setObjectName("horizontalLayout_3")
         self.webView _ QtWebKitWidgets.QWebView(self.previewerBox)
-        self.webView.setUrl(QtCore.QUrl("about:blank"))
+        self.webView.setUrl(?C...QUrl("about:blank"))
         self.webView.setObjectName("webView")
         self.horizontalLayout_3.addWidget(self.webView)
         self.horizontalLayout_4.addWidget(self.splitter)
 
         self.retranslateUi(Form)
         self.clearButton.c__.c..(self.plainTextEdit.clear)
-        QtCore.QMetaObject.connectSlotsByName(Form)
+        ?C...QMetaObject.connectSlotsByName(Form)
 
     ___ retranslateUi  Form):
-        _translate _ QtCore.QCoreApplication.translate
+        _translate _ ?C...QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
         self.editorBox.setTitle(_translate("Form", "HTML Editor"))
         self.clearButton.sT..(_translate("Form", "Clear"))

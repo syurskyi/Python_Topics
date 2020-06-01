@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QByteArray, Qt
+____ ?.?C.. ______ QByteArray, __
 ____ ?.?W.. ______ (?A.., QDialog, QDialogButtonBox, QLabel,
         ?MB.., QProgressBar, ?PB.., QVBoxLayout)
 ____ ?.QtNetwork ______ QHostAddress, QTcpServer, QTcpSocket
@@ -95,7 +95,7 @@ c_ Dialog(QDialog):
     ___ start(self):
         self.startButton.setEnabled F..
 
-        ?A...setOverrideCursor(Qt.WaitCursor)
+        ?A...setOverrideCursor(__.WaitCursor)
 
         self.bytesWritten _ 0
         self.bytesReceived _ 0

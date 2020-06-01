@@ -44,8 +44,8 @@
 
 ______ sys
 
-____ ?.QtCore ______ QDir, Qt
-____ ?.?G.. ______ QFont, QPalette
+____ ?.?C.. ______ QDir, __
+____ ?.?G.. ______ QFont, ?P..
 ____ ?.?W.. ______ (?A.., QCheckBox, QColorDialog, QDialog,
         QErrorMessage, ?FD.., QFontDialog, QFrame, QGridLayout,
         QInputDialog, QLabel, QLineEdit, ?MB.., ?PB..)
@@ -130,7 +130,7 @@ c_ Dialog(QDialog):
         self.doubleButton.c__.c..(self.setDouble)
         self.itemButton.c__.c..(self.setItem)
         self.textButton.c__.c..(self.sT..)
-        self.colorButton.c__.c..(self.setColor)
+        self.colorButton.c__.c..(self.sC..)
         self.fontButton.c__.c..(self.setFont)
         self.directoryButton.c__.c..(self.setExistingDirectory)
         self.openFileNameButton.c__.c..(self.setOpenFileName)
@@ -212,11 +212,11 @@ c_ Dialog(QDialog):
         __ ok and text !_ '':
             self.textLabel.sT..(text)
 
-    ___ setColor(self):
-        color _ QColorDialog.getColor(Qt.green, self)
+    ___ sC..(self):
+        color _ QColorDialog.getColor(__.green, self)
         __ color.isValid
             self.colorLabel.sT..(color.name())
-            self.colorLabel.setPalette(QPalette(color))
+            self.colorLabel.sP..(?P..(color))
             self.colorLabel.setAutoFillBackground(True)
 
     ___ setFont(self):

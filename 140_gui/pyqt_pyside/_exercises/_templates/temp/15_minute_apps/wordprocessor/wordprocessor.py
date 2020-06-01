@@ -1,6 +1,6 @@
 ____ ?.?G.. ______ *
 ____ ?.?W.. ______ *
-____ ?.QtCore ______ *
+____ ?.?C.. ______ *
 ____ ?.QtPrintSupport ______ *
 
 ______ os
@@ -222,28 +222,28 @@ c_ MainWindow ?MW..
         self.alignl_action _ ?A..(QIcon(os.path.join('images', 'edit-alignment.png')), "Align left", self)
         self.alignl_action.setStatusTip("Align text left")
         self.alignl_action.setCheckable(True)
-        self.alignl_action.t__.c..(lambda: self.editor.setAlignment(Qt.AlignLeft))
+        self.alignl_action.t__.c..(lambda: self.editor.setAlignment(__.AlignLeft))
         format_toolbar.aA..(self.alignl_action)
         format_menu.aA..(self.alignl_action)
 
         self.alignc_action _ ?A..(QIcon(os.path.join('images', 'edit-alignment-center.png')), "Align center", self)
         self.alignc_action.setStatusTip("Align text center")
         self.alignc_action.setCheckable(True)
-        self.alignc_action.t__.c..(lambda: self.editor.setAlignment(Qt.AlignCenter))
+        self.alignc_action.t__.c..(lambda: self.editor.setAlignment(__.AlignCenter))
         format_toolbar.aA..(self.alignc_action)
         format_menu.aA..(self.alignc_action)
 
         self.alignr_action _ ?A..(QIcon(os.path.join('images', 'edit-alignment-right.png')), "Align right", self)
         self.alignr_action.setStatusTip("Align text right")
         self.alignr_action.setCheckable(True)
-        self.alignr_action.t__.c..(lambda: self.editor.setAlignment(Qt.AlignRight))
+        self.alignr_action.t__.c..(lambda: self.editor.setAlignment(__.AlignRight))
         format_toolbar.aA..(self.alignr_action)
         format_menu.aA..(self.alignr_action)
 
         self.alignj_action _ ?A..(QIcon(os.path.join('images', 'edit-alignment-justify.png')), "Justify", self)
         self.alignj_action.setStatusTip("Justify text")
         self.alignj_action.setCheckable(True)
-        self.alignj_action.t__.c..(lambda: self.editor.setAlignment(Qt.AlignJustify))
+        self.alignj_action.t__.c..(lambda: self.editor.setAlignment(__.AlignJustify))
         format_toolbar.aA..(self.alignj_action)
         format_menu.aA..(self.alignj_action)
 
@@ -292,10 +292,10 @@ c_ MainWindow ?MW..
         self.underline_action.setChecked(self.editor.fontUnderline())
         self.bold_action.setChecked(self.editor.fontWeight() == QFont.Bold)
 
-        self.alignl_action.setChecked(self.editor.alignment() == Qt.AlignLeft)
-        self.alignc_action.setChecked(self.editor.alignment() == Qt.AlignCenter)
-        self.alignr_action.setChecked(self.editor.alignment() == Qt.AlignRight)
-        self.alignj_action.setChecked(self.editor.alignment() == Qt.AlignJustify)
+        self.alignl_action.setChecked(self.editor.alignment() == __.AlignLeft)
+        self.alignc_action.setChecked(self.editor.alignment() == __.AlignCenter)
+        self.alignr_action.setChecked(self.editor.alignment() == __.AlignRight)
+        self.alignj_action.setChecked(self.editor.alignment() == __.AlignJustify)
 
         self.block_signals(self._format_actions, False)
 

@@ -42,8 +42,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QRegExp, Qt
-____ ?.?G.. ______ QPalette
+____ ?.?C.. ______ QRegExp, __
+____ ?.?G.. ______ ?P..
 ____ ?.?W.. ______ (?A.., QCheckBox, QComboBox, QDialog,
         QGridLayout, QHBoxLayout, QLabel, QLineEdit, QSizePolicy)
 
@@ -65,9 +65,9 @@ c_ RegExpDialog(QDialog):
         self.escapedPatternLineEdit _ QLineEdit()
         self.escapedPatternLineEdit.setReadOnly(True)
         palette _ self.escapedPatternLineEdit.palette()
-        palette.setBrush(QPalette.Base,
-                palette.brush(QPalette.Disabled, QPalette.Base))
-        self.escapedPatternLineEdit.setPalette(palette)
+        palette.setBrush(?P...Base,
+                palette.brush(?P...Disabled, ?P...Base))
+        self.escapedPatternLineEdit.sP..(palette)
 
         escapedPatternLabel _ QLabel("&Escaped Pattern:")
         escapedPatternLabel.setBuddy(self.escapedPatternLineEdit)
@@ -159,7 +159,7 @@ c_ RegExpDialog(QDialog):
         self.escapedPatternLineEdit.sT..('"' + escaped + '"')
 
         rx _ QRegExp(pattern)
-        cs _ Qt.CaseSensitive __ self.caseSensitiveCheckBox.isChecked() else Qt.CaseInsensitive
+        cs _ __.CaseSensitive __ self.caseSensitiveCheckBox.isChecked() else __.CaseInsensitive
         rx.setCaseSensitivity(cs)
         rx.setMinimal(self.minimalCheckBox.isChecked())
         syntax _ self.syntaxComboBox.itemData(self.syntaxComboBox.currentIndex())
@@ -167,11 +167,11 @@ c_ RegExpDialog(QDialog):
 
         palette _ self.patternComboBox.palette()
         __ rx.isValid
-            palette.setColor(QPalette.Text,
-                    self.textComboBox.palette().color(QPalette.Text))
+            palette.sC..(?P...Text,
+                    self.textComboBox.palette().color(?P...Text))
         ____
-            palette.setColor(QPalette.Text, Qt.red)
-        self.patternComboBox.setPalette(palette)
+            palette.sC..(?P...Text, __.red)
+        self.patternComboBox.sP..(palette)
 
         self.indexEdit.sT..(str(rx.indexIn(text)))
         self.matchedLengthEdit.sT..(str(rx.matchedLength()))

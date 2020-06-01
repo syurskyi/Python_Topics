@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QDir, QFile, QRegExp
+____ ?.?C.. ______ QDir, QFile, QRegExp
 ____ ?.?G.. ______ QPixmap
 ____ ?.?W.. ______ (?A.., QCheckBox, QGridLayout, QGroupBox,
         QLabel, QLineEdit, ?MB.., QRadioButton, QVBoxLayout, QWizard,

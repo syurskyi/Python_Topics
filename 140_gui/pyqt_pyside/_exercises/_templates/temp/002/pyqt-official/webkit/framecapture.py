@@ -60,7 +60,7 @@ Result:
 
 ______ sys
 
-____ ?.QtCore ______ pyqtSignal, QObject, QSize, Qt, QUrl
+____ ?.?C.. ______ pyqtSignal, QObject, QSize, __, QUrl
 ____ ?.?G.. ______ QImage, QPainter
 ____ ?.?W.. ______ ?A..
 ____ ?.QtWebKitWidgets ______ QWebPage
@@ -85,10 +85,10 @@ c_ FrameCapture(QObject):
 
         self._percent _ 0
         self._page _ QWebPage()
-        self._page.mainFrame().setScrollBarPolicy(Qt.Vertical,
-                Qt.ScrollBarAlwaysOff)
-        self._page.mainFrame().setScrollBarPolicy(Qt.Horizontal,
-                Qt.ScrollBarAlwaysOff)
+        self._page.mainFrame().setScrollBarPolicy(__.Vertical,
+                __.ScrollBarAlwaysOff)
+        self._page.mainFrame().setScrollBarPolicy(__.Horizontal,
+                __.ScrollBarAlwaysOff)
         self._page.loadProgress.c..(self.printProgress)
         self._page.loadFinished.c..(self.saveResult)
  
@@ -127,7 +127,7 @@ c_ FrameCapture(QObject):
             index _ fileName.rfind('.')
             fileName _ "%s_frame%s%s" % (fileName[:index], self._frameCounter, fileName[index:])
         image _ QImage(frame.contentsSize(), QImage.Format_ARGB32_Premultiplied)
-        image.fill(Qt.transparent)
+        image.fill(__.transparent)
         painter _ QPainter(image)
         painter.setRenderHint(QPainter.Antialiasing, True)
         painter.setRenderHint(QPainter.TextAntialiasing, True)

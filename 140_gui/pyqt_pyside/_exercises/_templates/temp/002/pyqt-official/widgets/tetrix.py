@@ -45,8 +45,8 @@
 ______ copy
 ______ random
 
-____ ?.QtCore ______ pyqtSignal, QBasicTimer, QSize, Qt
-____ ?.?G.. ______ QColor, QPainter, QPixmap
+____ ?.?C.. ______ pyqtSignal, QBasicTimer, QSize, __
+____ ?.?G.. ______ ?C.., QPainter, QPixmap
 ____ ?.?W.. ______ (?A.., QFrame, QGridLayout, QLabel,
         QLCDNumber, ?PB.., QWidget)
 
@@ -62,7 +62,7 @@ c_ TetrixWindow(QWidget):
 
         nextPieceLabel _ QLabel()
         nextPieceLabel.setFrameStyle(QFrame.Box | QFrame.Raised)
-        nextPieceLabel.setAlignment(Qt.AlignCenter)
+        nextPieceLabel.setAlignment(__.AlignCenter)
         self.board.setNextPieceLabel(nextPieceLabel)
 
         scoreLcd _ QLCDNumber(5)
@@ -73,11 +73,11 @@ c_ TetrixWindow(QWidget):
         linesLcd.setSegmentStyle(QLCDNumber.Filled)
 
         startButton _ ?PB..("&Start")
-        startButton.setFocusPolicy(Qt.NoFocus)
+        startButton.setFocusPolicy(__.NoFocus)
         quitButton _ ?PB..("&Quit")
-        quitButton.setFocusPolicy(Qt.NoFocus)
+        quitButton.setFocusPolicy(__.NoFocus)
         pauseButton _ ?PB..("&Pause")
-        pauseButton.setFocusPolicy(Qt.NoFocus)
+        pauseButton.setFocusPolicy(__.NoFocus)
 
         startButton.c__.c..(self.board.start)
         pauseButton.c__.c..(self.board.pause)
@@ -106,7 +106,7 @@ c_ TetrixWindow(QWidget):
 
     ___ createLabel  text):
         lbl _ QLabel(text)
-        lbl.setAlignment(Qt.AlignHCenter | Qt.AlignBottom)
+        lbl.setAlignment(__.AlignHCenter | __.AlignBottom)
         r_ lbl
 
 
@@ -137,7 +137,7 @@ c_ TetrixBoard(QFrame):
         self.board _ N..
 
         self.setFrameStyle(QFrame.Panel | QFrame.Sunken)
-        self.setFocusPolicy(Qt.StrongFocus)
+        self.setFocusPolicy(__.StrongFocus)
         self.isStarted _ False
         self.isPaused _ False
         self.clearBoard()
@@ -208,7 +208,7 @@ c_ TetrixBoard(QFrame):
         rect _ self.contentsRect()
 
         __ self.isPaused:
-            painter.drawText(rect, Qt.AlignCenter, "Pause")
+            painter.drawText(rect, __.AlignCenter, "Pause")
             r_
 
         boardTop _ rect.bottom() - TetrixBoard.BoardHeight * self.squareHeight()
@@ -235,17 +235,17 @@ c_ TetrixBoard(QFrame):
             r_
 
         key _ event.key()
-        __ key == Qt.Key_Left:
+        __ key == __.Key_Left:
             self.tryMove(self.curPiece, self.curX - 1, self.curY)
-        ____ key == Qt.Key_Right:
+        ____ key == __.Key_Right:
             self.tryMove(self.curPiece, self.curX + 1, self.curY)
-        ____ key == Qt.Key_Down:
+        ____ key == __.Key_Down:
             self.tryMove(self.curPiece.rotatedRight(), self.curX, self.curY)
-        ____ key == Qt.Key_Up:
+        ____ key == __.Key_Up:
             self.tryMove(self.curPiece.rotatedLeft(), self.curX, self.curY)
-        ____ key == Qt.Key_Space:
+        ____ key == __.Key_Space:
             self.dropDown()
-        ____ key == Qt.Key_D:
+        ____ key == __.Key_D:
             self.oneLineDown()
         ____
             super(TetrixBoard, self).keyPressEvent(event)
@@ -381,7 +381,7 @@ c_ TetrixBoard(QFrame):
         colorTable _ [0x000000, 0xCC6666, 0x66CC66, 0x6666CC,
                       0xCCCC66, 0xCC66CC, 0x66CCCC, 0xDAAA00]
 
-        color _ QColor(colorTable[shape])
+        color _ ?C..(colorTable[shape])
         painter.fillRect(x + 1, y + 1, self.squareWidth() - 2,
                 self.squareHeight() - 2, color)
 

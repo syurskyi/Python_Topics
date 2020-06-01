@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, ?G.., ?W..
+____ ? ______ ?C.., ?G.., ?W..
 
 c_ Ui_NicknameDialog(object):
     ___ setupUi  NicknameDialog):
@@ -57,10 +57,10 @@ c_ Ui_NicknameDialog(object):
         self.retranslateUi(NicknameDialog)
         self.okButton.c__.c..(NicknameDialog.accept)
         self.cancelButton.c__.c..(NicknameDialog.reject)
-        QtCore.QMetaObject.connectSlotsByName(NicknameDialog)
+        ?C...QMetaObject.connectSlotsByName(NicknameDialog)
 
     ___ retranslateUi  NicknameDialog):
-        _translate _ QtCore.QCoreApplication.translate
+        _translate _ ?C...QCoreApplication.translate
         NicknameDialog.setWindowTitle(_translate("NicknameDialog", "Set nickname"))
         self.label.sT..(_translate("NicknameDialog", "New nickname:"))
         self.okButton.sT..(_translate("NicknameDialog", "OK"))

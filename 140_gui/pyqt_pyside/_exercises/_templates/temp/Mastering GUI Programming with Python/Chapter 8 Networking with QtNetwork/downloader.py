@@ -1,7 +1,7 @@
 ______ sys
 ____ os ______ path
 ____ ? ______ QtNetwork __ qtn
-____ ? ______ QtCore __ qtc
+____ ? ______ ?C.. __ qtc
 
 
 c_ Downloader(qtc.QObject):

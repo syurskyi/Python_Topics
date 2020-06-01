@@ -42,8 +42,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QFile, QSize, Qt
-____ ?.?G.. ______ QBrush, QColor, QImage, QPainter, QPixmap, QPen
+____ ?.?C.. ______ QFile, QSize, __
+____ ?.?G.. ______ QBrush, ?C.., QImage, QPainter, QPixmap, QPen
 ____ ?.?W.. ______ (QActionGroup, ?A.., ?FD..,
         QGraphicsItem, QGraphicsRectItem, QGraphicsScene, QGraphicsView,
         QMainWindow, QMenu, ?MB.., QWidget)
@@ -180,9 +180,9 @@ c_ SvgView(QGraphicsView):
 
         # Prepare background check-board pattern.
         tilePixmap _ QPixmap(64, 64)
-        tilePixmap.fill(Qt.white)
+        tilePixmap.fill(__.white)
         tilePainter _ QPainter(tilePixmap)
-        color _ QColor(220, 220, 220)
+        color _ ?C..(220, 220, 220)
         tilePainter.fillRect(0, 0, 32, 32, color)
         tilePainter.fillRect(32, 32, 32, 32, color)
         tilePainter.end()
@@ -221,16 +221,16 @@ c_ SvgView(QGraphicsView):
         self.svgItem.setZValue(0)
 
         self.backgroundItem _ QGraphicsRectItem(self.svgItem.boundingRect())
-        self.backgroundItem.setBrush(Qt.white)
-        self.backgroundItem.setPen(QPen(Qt.NoPen))
+        self.backgroundItem.setBrush(__.white)
+        self.backgroundItem.setPen(QPen(__.NoPen))
         self.backgroundItem.setVisible(drawBackground)
         self.backgroundItem.setZValue(-1)
 
         self.outlineItem _ QGraphicsRectItem(self.svgItem.boundingRect())
-        outline _ QPen(Qt.black, 2, Qt.DashLine)
+        outline _ QPen(__.black, 2, __.DashLine)
         outline.setCosmetic(True)
         self.outlineItem.setPen(outline)
-        self.outlineItem.setBrush(QBrush(Qt.NoBrush))
+        self.outlineItem.setBrush(QBrush(__.NoBrush))
         self.outlineItem.setVisible(drawOutline)
         self.outlineItem.setZValue(1)
 

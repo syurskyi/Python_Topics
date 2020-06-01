@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QDataStream, QSettings, QTimer
+____ ?.?C.. ______ QDataStream, QSettings, QTimer
 ____ ?.?G.. ______ QIntValidator
 ____ ?.?W.. ______ (?A.., QComboBox, QDialog,
         QDialogButtonBox, QGridLayout, QLabel, QLineEdit, ?MB..,

@@ -39,7 +39,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ pyqtProperty, pyqtSignal, pyqtSlot
+____ ?.?C.. ______ pyqtProperty, pyqtSignal, pyqtSlot
 ____ ?.?W.. ______ ?A.., QTextEdit
 
 

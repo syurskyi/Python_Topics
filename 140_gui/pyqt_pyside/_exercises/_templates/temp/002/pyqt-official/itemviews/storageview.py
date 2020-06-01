@@ -54,7 +54,7 @@
 
 ______ math
 
-____ ?.QtCore ______ QAbstractTableModel, QByteArray, QDir, QStorageInfo, Qt
+____ ?.?C.. ______ QAbstractTableModel, QByteArray, QDir, QStorageInfo, __
 ____ ?.?W.. ______ QAbstractItemView, ?A.., QTreeView
 
 
@@ -122,13 +122,13 @@ c_ StorageModel(QAbstractTableModel):
     ___ data  index, role):
         __ no. index.isValid
             r_ N..
-        __ role == Qt.DisplayRole:
+        __ role == __.DisplayRole:
             volume _ self.volumes[index.row()]
             func _ self.columnFuncMap.get(index.column())
             __ func __ no. N..:
                 r_ func(volume)
 
-        ____ role == Qt.ToolTipRole:
+        ____ role == __.ToolTipRole:
             volume _ self.volumes[index.row()]
             tooltip _ []
             for column in range(self.ColumnCount):
@@ -140,9 +140,9 @@ c_ StorageModel(QAbstractTableModel):
             r_ "\n".join(tooltip)
 
     ___ headerData  section, orientation, role):
-        __ orientation !_ Qt.Horizontal:
+        __ orientation !_ __.Horizontal:
             r_ N..
-        __ role !_ Qt.DisplayRole:
+        __ role !_ __.DisplayRole:
             r_ N..
         r_ self.columnNameMap.get(section)
 

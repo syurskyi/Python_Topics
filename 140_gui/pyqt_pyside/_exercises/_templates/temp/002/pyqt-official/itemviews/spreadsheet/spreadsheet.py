@@ -40,8 +40,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QDate, QPoint, Qt
-____ ?.?G.. ______ QColor, QIcon, ?KS.., QPainter, QPixmap
+____ ?.?C.. ______ QDate, QPoint, __
+____ ?.?G.. ______ ?C.., QIcon, ?KS.., QPainter, QPixmap
 ____ ?.?W.. ______ (?A.., QActionGroup, ?A.., QColorDialog,
         QComboBox, QDialog, QFontDialog, QGroupBox, QHBoxLayout, QLabel,
         QLineEdit, QMainWindow, ?MB.., ?PB.., QTableWidget,
@@ -99,30 +99,30 @@ c_ SpreadSheet ?MW..
         self.cell_sumAction.t__.c..(self.actionSum)
 
         self.cell_addAction _ ?A..("&Add", self)
-        self.cell_addAction.sS..(Qt.CTRL | Qt.Key_Plus)
+        self.cell_addAction.sS..(__.CTRL | __.Key_Plus)
         self.cell_addAction.t__.c..(self.actionAdd)
 
         self.cell_subAction _ ?A..("&Subtract", self)
-        self.cell_subAction.sS..(Qt.CTRL | Qt.Key_Minus)
+        self.cell_subAction.sS..(__.CTRL | __.Key_Minus)
         self.cell_subAction.t__.c..(self.actionSubtract)
 
         self.cell_mulAction _ ?A..("&Multiply", self)
-        self.cell_mulAction.sS..(Qt.CTRL | Qt.Key_multiply)
+        self.cell_mulAction.sS..(__.CTRL | __.Key_multiply)
         self.cell_mulAction.t__.c..(self.actionMultiply)
 
         self.cell_divAction _ ?A..("&Divide", self)
-        self.cell_divAction.sS..(Qt.CTRL | Qt.Key_division)
+        self.cell_divAction.sS..(__.CTRL | __.Key_division)
         self.cell_divAction.t__.c..(self.actionDivide)
 
         self.fontAction _ ?A..("Font...", self)
-        self.fontAction.sS..(Qt.CTRL | Qt.Key_F)
+        self.fontAction.sS..(__.CTRL | __.Key_F)
         self.fontAction.t__.c..(self.selectFont)
 
         self.colorAction _ ?A..(QIcon(QPixmap(16, 16)), "Background &Color...", self)
         self.colorAction.t__.c..(self.selectColor)
 
         self.clearAction _ ?A..("Clear", self)
-        self.clearAction.sS..(Qt.Key_Delete)
+        self.clearAction.sS..(__.Key_Delete)
         self.clearAction.t__.c..(self.clear)
 
         self.aboutSpreadSheet _ ?A..("About Spreadsheet", self)
@@ -180,13 +180,13 @@ c_ SpreadSheet ?MW..
 
     ___ updateStatus  item):
         __ item and item == self.table.currentItem
-            self.statusBar().showMessage(item.data(Qt.StatusTipRole), 1000)
+            self.statusBar().showMessage(item.data(__.StatusTipRole), 1000)
             self.cellLabel.sT..("Cell: (%s)" % encode_pos(self.table.row(item),
                                                                      self.table.column(item)))
 
     ___ updateColor  item):
         pixmap _ QPixmap(16, 16)
-        color _ QColor()
+        color _ ?C..()
         __ item:
             color _ item.backgroundColor()
         __ no. color.isValid
@@ -207,7 +207,7 @@ c_ SpreadSheet ?MW..
         __ item !_ self.table.currentItem
             r_
         __ item:
-            self.formulaInput.sT..(item.data(Qt.EditRole))
+            self.formulaInput.sT..(item.data(__.EditRole))
         ____
             self.formulaInput.clear()
 
@@ -219,12 +219,12 @@ c_ SpreadSheet ?MW..
         __ no. item:
             self.table.setItem(row, col, SpreadSheetItem(text))
         ____
-            item.setData(Qt.EditRole, text)
+            item.setData(__.EditRole, text)
         self.table.viewport().update()
 
     ___ selectColor(self):
         item _ self.table.currentItem()
-        color _ item and QColor(item.background()) or self.table.palette().base().color()
+        color _ item and ?C..(item.background()) or self.table.palette().base().color()
         color _ QColorDialog.getColor(color, self)
         __ no. color.isValid
             r_
@@ -266,7 +266,7 @@ c_ SpreadSheet ?MW..
         cell1ColInput.addItems(cols)
         cell1ColInput.setCurrentIndex(c1Col)
         operatorLabel _ QLabel(opText, group)
-        operatorLabel.setAlignment(Qt.AlignHCenter)
+        operatorLabel.setAlignment(__.AlignHCenter)
         cell2Label _ QLabel(c2Text, group)
         cell2RowInput _ QComboBox(group)
         c2Row, c2Col _ decode_pos(cell2)
@@ -276,7 +276,7 @@ c_ SpreadSheet ?MW..
         cell2ColInput.addItems(cols)
         cell2ColInput.setCurrentIndex(c2Col)
         equalsLabel _ QLabel("=", group)
-        equalsLabel.setAlignment(Qt.AlignHCenter)
+        equalsLabel.setAlignment(__.AlignHCenter)
         outLabel _ QLabel(outText, group)
         outRowInput _ QComboBox(group)
         outRow, outCol _ decode_pos(outCell)
@@ -407,10 +407,10 @@ c_ SpreadSheet ?MW..
         self.aA..(self.fontAction)
         self.aA..(self.secondSeparator)
         self.aA..(self.clearAction)
-        self.setContextMenuPolicy(Qt.ActionsContextMenu)
+        self.setContextMenuPolicy(__.ActionsContextMenu)
 
     ___ setupContents(self):
-        titleBackground _ QColor(Qt.lightGray)
+        titleBackground _ ?C..(__.lightGray)
         titleFont _ self.table.font()
         titleFont.setBold(True)
         # column 0
@@ -428,7 +428,7 @@ c_ SpreadSheet ?MW..
         self.table.setItem(8, 0, SpreadSheetItem("Flight (Oslo)"))
         self.table.setItem(9, 0, SpreadSheetItem("Total:"))
         self.table.item(9, 0).setFont(titleFont)
-        self.table.item(9, 0).setBackground(Qt.lightGray)
+        self.table.item(9, 0).setBackground(__.lightGray)
         # column 1
         self.table.setItem(0, 1, SpreadSheetItem("Date"))
         self.table.item(0, 1).setBackground(titleBackground)
@@ -443,7 +443,7 @@ c_ SpreadSheet ?MW..
         self.table.setItem(7, 1, SpreadSheetItem("16/6/2006"))
         self.table.setItem(8, 1, SpreadSheetItem("18/6/2006"))
         self.table.setItem(9, 1, SpreadSheetItem())
-        self.table.item(9, 1).setBackground(Qt.lightGray)
+        self.table.item(9, 1).setBackground(__.lightGray)
         # column 2
         self.table.setItem(0, 2, SpreadSheetItem("Price"))
         self.table.item(0, 2).setBackground(titleBackground)
@@ -458,7 +458,7 @@ c_ SpreadSheet ?MW..
         self.table.setItem(7, 2, SpreadSheetItem("300"))
         self.table.setItem(8, 2, SpreadSheetItem("1240"))
         self.table.setItem(9, 2, SpreadSheetItem())
-        self.table.item(9, 2).setBackground(Qt.lightGray)
+        self.table.item(9, 2).setBackground(__.lightGray)
         # column 3
         self.table.setItem(0, 3, SpreadSheetItem("Currency"))
         self.table.item(0, 3).setBackgroundColor(titleBackground)
@@ -473,7 +473,7 @@ c_ SpreadSheet ?MW..
         self.table.setItem(7, 3, SpreadSheetItem("USD"))
         self.table.setItem(8, 3, SpreadSheetItem("USD"))
         self.table.setItem(9, 3, SpreadSheetItem())
-        self.table.item(9,3).setBackground(Qt.lightGray)
+        self.table.item(9,3).setBackground(__.lightGray)
         # column 4
         self.table.setItem(0, 4, SpreadSheetItem("Ex. Rate"))
         self.table.item(0, 4).setBackground(titleBackground)
@@ -488,7 +488,7 @@ c_ SpreadSheet ?MW..
         self.table.setItem(7, 4, SpreadSheetItem("7"))
         self.table.setItem(8, 4, SpreadSheetItem("7"))
         self.table.setItem(9, 4, SpreadSheetItem())
-        self.table.item(9,4).setBackground(Qt.lightGray)
+        self.table.item(9,4).setBackground(__.lightGray)
         # column 5
         self.table.setItem(0, 5, SpreadSheetItem("NOK"))
         self.table.item(0, 5).setBackground(titleBackground)
@@ -503,7 +503,7 @@ c_ SpreadSheet ?MW..
         self.table.setItem(7, 5, SpreadSheetItem("* C8 E8"))
         self.table.setItem(8, 5, SpreadSheetItem("* C9 E9"))
         self.table.setItem(9, 5, SpreadSheetItem("sum F2 F9"))
-        self.table.item(9,5).setBackground(Qt.lightGray)
+        self.table.item(9,5).setBackground(__.lightGray)
 
     ___ showAbout(self):
         ?MB...about  "About Spreadsheet", """

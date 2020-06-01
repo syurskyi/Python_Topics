@@ -40,7 +40,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QFile, QFileInfo, QRectF, QTextStream
+____ ?.?C.. ______ QFile, QFileInfo, QRectF, QTextStream
 
 ____ colors ______ Colors
 ____ demoitem ______ DemoItem

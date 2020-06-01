@@ -1,7 +1,7 @@
 ______ sys
 ____ ? ______ ?W.. __ qtw
 ____ ? ______ ?G.. __ qtg
-____ ? ______ QtCore __ qtc
+____ ? ______ ?C.. __ qtc
 ____ ? ______ QtWebEngineWidgets __ qtwe
 
 
@@ -59,7 +59,7 @@ c_ MainWindow(qtw.QMainWindow):
 
         # History
         history_dock _ qtw.QDockWidget('History')
-        self.addDockWidget(qtc.Qt.RightDockWidgetArea, history_dock)
+        self.addDockWidget(qtc.__.RightDockWidgetArea, history_dock)
         self.history_list _ qtw.QListWidget()
         history_dock.setWidget(self.history_list)
         self.tabs.currentChanged.c..(self.update_history)
@@ -75,7 +75,7 @@ c_ MainWindow(qtw.QMainWindow):
 
         # Text search feature
         find_dock _ qtw.QDockWidget('Search')
-        self.addDockWidget(qtc.Qt.BottomDockWidgetArea, find_dock)
+        self.addDockWidget(qtc.__.BottomDockWidgetArea, find_dock)
         self.find_text _ qtw.QLineEdit()
         find_dock.setWidget(self.find_text)
         self.find_text.textChanged.c..(self.text_search)
@@ -153,11 +153,11 @@ c_ MainWindow(qtw.QMainWindow):
             history _ webview.history()
             for history_item in reversed(history.items()):
                 list_item _ qtw.QListWidgetItem()
-                list_item.setData(qtc.Qt.DisplayRole, history_item.url())
+                list_item.setData(qtc.__.DisplayRole, history_item.url())
                 self.history_list.addItem(list_item)
 
     ___ navigate_history  item):
-        qurl _ item.data(qtc.Qt.DisplayRole)
+        qurl _ item.data(qtc.__.DisplayRole)
         __ self.tabs.currentWidget
             self.tabs.currentWidget().load(qurl)
 

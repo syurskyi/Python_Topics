@@ -1,4 +1,4 @@
-____ ?.QtCore ______ *
+____ ?.?C.. ______ *
 ____ ?.QtMultimedia ______ *
 
 app _ QCoreApplication([])

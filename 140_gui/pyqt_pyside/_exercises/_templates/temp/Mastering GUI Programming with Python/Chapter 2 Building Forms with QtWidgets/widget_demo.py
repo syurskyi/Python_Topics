@@ -1,7 +1,7 @@
 ______ sys
 ____ ? ______ ?W.. __ qtw
 ____ ? ______ ?G.. __ qtg
-____ ? ______ QtCore __ qtc
+____ ? ______ ?C.. __ qtc
 
 
 c_ ChoiceSpinBox(qtw.QSpinBox):
@@ -230,7 +230,7 @@ c_ MainWindow(qtw.QWidget):
             'Buttons',
             checkable_True,
             checked_True,
-            alignment_qtc.Qt.AlignHCenter,
+            alignment_qtc.__.AlignHCenter,
             flat_True
         )
         groupbox.setLayout(qtw.QHBoxLayout())

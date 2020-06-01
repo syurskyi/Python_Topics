@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QPointF, QSize, Qt
+____ ?.?C.. ______ QPointF, QSize, __
 ____ ?.?G.. ______ QBrush, QFont, QFontMetrics, QPainter, QPainterPath
 ____ ?.?W.. ______ ?A.., QComboBox, QGridLayout, QWidget
 
@@ -80,7 +80,7 @@ c_ RenderArea(QWidget):
     ___ paintEvent  event):
         painter _ QPainter(self)
         painter.setRenderHint(QPainter.Antialiasing)
-        painter.fillRect(event.rect(), QBrush(Qt.white))
+        painter.fillRect(event.rect(), QBrush(__.white))
 
         painter.translate(66, 66)
 
@@ -95,7 +95,7 @@ c_ RenderArea(QWidget):
         self.drawCoordinates(painter)
 
     ___ drawCoordinates  painter):
-        painter.setPen(Qt.red)
+        painter.setPen(__.red)
 
         painter.drawLine(0, 0, 50, 0)
         painter.drawLine(48, -2, 50, 0)
@@ -110,13 +110,13 @@ c_ RenderArea(QWidget):
                          60 + self.yBoundingRect.height() / 2, "y")
 
     ___ drawOutline  painter):
-        painter.setPen(Qt.darkGreen)
-        painter.setPen(Qt.DashLine)
-        painter.setBrush(Qt.NoBrush)
+        painter.setPen(__.darkGreen)
+        painter.setPen(__.DashLine)
+        painter.setBrush(__.NoBrush)
         painter.drawRect(0, 0, 100, 100)
 
     ___ drawShape  painter):
-        painter.fillPath(self.shape, Qt.blue)
+        painter.fillPath(self.shape, __.blue)
 
     ___ transformPainter  painter):
         for operation in self.operations:
@@ -175,7 +175,7 @@ c_ Window(QWidget):
 
     ___ setupShapes(self):
         truck _ QPainterPath()
-        truck.setFillRule(Qt.WindingFill)
+        truck.setFillRule(__.WindingFill)
         truck.moveTo(0.0, 87.0)
         truck.lineTo(0.0, 60.0)
         truck.lineTo(10.0, 60.0)

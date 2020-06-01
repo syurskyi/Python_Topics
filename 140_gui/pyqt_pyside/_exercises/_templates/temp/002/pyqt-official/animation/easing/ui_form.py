@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, ?G.., ?W..
+____ ? ______ ?C.., ?G.., ?W..
 
 c_ Ui_Form(object):
     ___ setupUi  Form):
@@ -21,8 +21,8 @@ c_ Ui_Form(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.easingCurvePicker.sizePolicy().hasHeightForWidth())
         self.easingCurvePicker.setSizePolicy(sizePolicy)
-        self.easingCurvePicker.setMaximumSize(QtCore.QSize(16777215, 120))
-        self.easingCurvePicker.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
+        self.easingCurvePicker.setMaximumSize(?C...QSize(16777215, 120))
+        self.easingCurvePicker.setVerticalScrollBarPolicy(?C...__.ScrollBarAlwaysOff)
         self.easingCurvePicker.setMovement(?W...QListView.Static)
         self.easingCurvePicker.setProperty("isWrapping", False)
         self.easingCurvePicker.setViewMode(?W...QListView.IconMode)
@@ -32,13 +32,13 @@ c_ Ui_Form(object):
         self.verticalLayout _ ?W...QVBoxLayout()
         self.verticalLayout.setObjectName("verticalLayout")
         self.groupBox_2 _ ?W...QGroupBox(Form)
-        self.groupBox_2.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.groupBox_2.setMaximumSize(?C...QSize(16777215, 16777215))
         self.groupBox_2.setObjectName("groupBox_2")
         self.gridLayout_2 _ ?W...QGridLayout(self.groupBox_2)
         self.gridLayout_2.setObjectName("gridLayout_2")
         self.lineRadio _ ?W...QRadioButton(self.groupBox_2)
-        self.lineRadio.setMaximumSize(QtCore.QSize(16777215, 40))
-        self.lineRadio.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.lineRadio.setMaximumSize(?C...QSize(16777215, 40))
+        self.lineRadio.setLayoutDirection(?C...__.LeftToRight)
         self.lineRadio.setChecked(True)
         self.lineRadio.setObjectName("lineRadio")
         self.buttonGroup _ ?W...QButtonGroup(Form)
@@ -46,7 +46,7 @@ c_ Ui_Form(object):
         self.buttonGroup.addButton(self.lineRadio)
         self.gridLayout_2.addWidget(self.lineRadio, 0, 0, 1, 1)
         self.circleRadio _ ?W...QRadioButton(self.groupBox_2)
-        self.circleRadio.setMaximumSize(QtCore.QSize(16777215, 40))
+        self.circleRadio.setMaximumSize(?C...QSize(16777215, 40))
         self.circleRadio.setObjectName("circleRadio")
         self.buttonGroup.addButton(self.circleRadio)
         self.gridLayout_2.addWidget(self.circleRadio, 1, 0, 1, 1)
@@ -67,7 +67,7 @@ c_ Ui_Form(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
         self.label.setSizePolicy(sizePolicy)
-        self.label.setMinimumSize(QtCore.QSize(0, 30))
+        self.label.setMinimumSize(?C...QSize(0, 30))
         self.label.setObjectName("label")
         self.formLayout.setWidget(0, ?W...QFormLayout.LabelRole, self.label)
         self.periodSpinBox _ ?W...QDoubleSpinBox(self.groupBox)
@@ -77,7 +77,7 @@ c_ Ui_Form(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.periodSpinBox.sizePolicy().hasHeightForWidth())
         self.periodSpinBox.setSizePolicy(sizePolicy)
-        self.periodSpinBox.setMinimumSize(QtCore.QSize(0, 30))
+        self.periodSpinBox.setMinimumSize(?C...QSize(0, 30))
         self.periodSpinBox.setMinimum(-1.0)
         self.periodSpinBox.setSingleStep(0.1)
         self.periodSpinBox.setProperty("value", -1.0)
@@ -85,26 +85,26 @@ c_ Ui_Form(object):
         self.formLayout.setWidget(0, ?W...QFormLayout.FieldRole, self.periodSpinBox)
         self.amplitudeSpinBox _ ?W...QDoubleSpinBox(self.groupBox)
         self.amplitudeSpinBox.setEnabled F..
-        self.amplitudeSpinBox.setMinimumSize(QtCore.QSize(0, 30))
+        self.amplitudeSpinBox.setMinimumSize(?C...QSize(0, 30))
         self.amplitudeSpinBox.setMinimum(-1.0)
         self.amplitudeSpinBox.setSingleStep(0.1)
         self.amplitudeSpinBox.setProperty("value", -1.0)
         self.amplitudeSpinBox.setObjectName("amplitudeSpinBox")
         self.formLayout.setWidget(2, ?W...QFormLayout.FieldRole, self.amplitudeSpinBox)
         self.label_3 _ ?W...QLabel(self.groupBox)
-        self.label_3.setMinimumSize(QtCore.QSize(0, 30))
+        self.label_3.setMinimumSize(?C...QSize(0, 30))
         self.label_3.setObjectName("label_3")
         self.formLayout.setWidget(4, ?W...QFormLayout.LabelRole, self.label_3)
         self.overshootSpinBox _ ?W...QDoubleSpinBox(self.groupBox)
         self.overshootSpinBox.setEnabled F..
-        self.overshootSpinBox.setMinimumSize(QtCore.QSize(0, 30))
+        self.overshootSpinBox.setMinimumSize(?C...QSize(0, 30))
         self.overshootSpinBox.setMinimum(-1.0)
         self.overshootSpinBox.setSingleStep(0.1)
         self.overshootSpinBox.setProperty("value", -1.0)
         self.overshootSpinBox.setObjectName("overshootSpinBox")
         self.formLayout.setWidget(4, ?W...QFormLayout.FieldRole, self.overshootSpinBox)
         self.label_2 _ ?W...QLabel(self.groupBox)
-        self.label_2.setMinimumSize(QtCore.QSize(0, 30))
+        self.label_2.setMinimumSize(?C...QSize(0, 30))
         self.label_2.setObjectName("label_2")
         self.formLayout.setWidget(2, ?W...QFormLayout.LabelRole, self.label_2)
         self.verticalLayout.addWidget(self.groupBox)
@@ -121,10 +121,10 @@ c_ Ui_Form(object):
         self.gridLayout.addWidget(self.graphicsView, 1, 1, 1, 1)
 
         self.retranslateUi(Form)
-        QtCore.QMetaObject.connectSlotsByName(Form)
+        ?C...QMetaObject.connectSlotsByName(Form)
 
     ___ retranslateUi  Form):
-        _translate _ QtCore.QCoreApplication.translate
+        _translate _ ?C...QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Easing curves"))
         self.groupBox_2.setTitle(_translate("Form", "Path type"))
         self.lineRadio.sT..(_translate("Form", "Line"))

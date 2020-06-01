@@ -44,7 +44,7 @@
 
 ______ sys
 
-____ ?.QtCore ______ pyqtSlot, QCoreApplication, QMetaObject, QObject
+____ ?.?C.. ______ pyqtSlot, QCoreApplication, QMetaObject, QObject
 ____ ?.QtDBus ______ QDBusConnection
 
 

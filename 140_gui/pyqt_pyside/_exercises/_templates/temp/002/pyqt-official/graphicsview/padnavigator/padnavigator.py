@@ -44,12 +44,12 @@
 
 ______ math
 
-____ ?.QtCore ______ (pyqtProperty, QDirIterator, QEasingCurve, QEvent,
+____ ?.?C.. ______ (pyqtProperty, QDirIterator, QEasingCurve, QEvent,
         QEventTransition, QHistoryState, QParallelAnimationGroup, QPointF,
         QPropertyAnimation, QRectF, QSequentialAnimationGroup, QSize, QState,
-        QStateMachine, Qt)
-____ ?.?G.. ______ (QBrush, QColor, QFont, QLinearGradient, QPainter,
-        QPalette, QPen, QPixmap, QTransform)
+        QStateMachine, __)
+____ ?.?G.. ______ (QBrush, ?C.., QFont, QLinearGradient, QPainter,
+        ?P.., QPen, QPixmap, QTransform)
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsObject,
         QGraphicsProxyWidget, QGraphicsRotation, QGraphicsScene, QGraphicsView,
         QKeyEventTransition, QWidget)
@@ -72,9 +72,9 @@ c_ PadNavigator(QGraphicsView):
         flipRotation _ QGraphicsRotation(pad)
         xRotation _ QGraphicsRotation(pad)
         yRotation _ QGraphicsRotation(pad)
-        flipRotation.setAxis(Qt.YAxis)
-        xRotation.setAxis(Qt.YAxis)
-        yRotation.setAxis(Qt.XAxis)
+        flipRotation.setAxis(__.YAxis)
+        xRotation.setAxis(__.YAxis)
+        yRotation.setAxis(__.XAxis)
         pad.setTransformations([flipRotation, xRotation, yRotation])
 
         backItem _ QGraphicsProxyWidget(pad)
@@ -86,10 +86,10 @@ c_ PadNavigator(QGraphicsView):
         backItem.setFocus()
         backItem.setCacheMode(QGraphicsItem.ItemCoordinateCache)
         r _ backItem.rect()
-        backItem.setTransform(QTransform().rotate(180, Qt.YAxis).translate(-r.width()/2, -r.height()/2))
+        backItem.setTransform(QTransform().rotate(180, __.YAxis).translate(-r.width()/2, -r.height()/2))
 
         selectionItem _ RoundRectItem(QRectF(-60, -60, 120, 120),
-                QColor(Qt.gray), pad)
+                ?C..(__.gray), pad)
         selectionItem.setZValue(0.5)
 
         smoothSplashMove _ QPropertyAnimation(splash, b'y')
@@ -176,13 +176,13 @@ c_ PadNavigator(QGraphicsView):
         anyKeyTransition.addAnimation(smoothSplashOpacity)
 
         enterTransition _ QKeyEventTransition  QEvent.KeyPress,
-                Qt.Key_Enter, backState)
+                __.Key_Enter, backState)
         returnTransition _ QKeyEventTransition  QEvent.KeyPress,
-                Qt.Key_Return, backState)
+                __.Key_Return, backState)
         backEnterTransition _ QKeyEventTransition  QEvent.KeyPress,
-                Qt.Key_Enter, frontState)
+                __.Key_Enter, frontState)
         backReturnTransition _ QKeyEventTransition  QEvent.KeyPress,
-                Qt.Key_Return, frontState)
+                __.Key_Return, frontState)
         enterTransition.setTargetState(historyState)
         returnTransition.setTargetState(historyState)
         backEnterTransition.setTargetState(backState)
@@ -206,13 +206,13 @@ c_ PadNavigator(QGraphicsView):
                 state _ stateGrid[y][x]
 
                 rightTransition _ QKeyEventTransition  QEvent.KeyPress,
-                        Qt.Key_Right, state)
+                        __.Key_Right, state)
                 leftTransition _ QKeyEventTransition  QEvent.KeyPress,
-                        Qt.Key_Left, state)
+                        __.Key_Left, state)
                 downTransition _ QKeyEventTransition  QEvent.KeyPress,
-                        Qt.Key_Down, state)
+                        __.Key_Down, state)
                 upTransition _ QKeyEventTransition  QEvent.KeyPress,
-                        Qt.Key_Up, state)
+                        __.Key_Up, state)
 
                 rightTransition.setTargetState(stateGrid[y][(x + 1) % columns])
                 leftTransition.setTargetState(stateGrid[y][((x - 1) + columns) % columns])
@@ -243,8 +243,8 @@ c_ PadNavigator(QGraphicsView):
         frontState.assignProperty(splash, "y", splash.y() - 100.0)
         scene.addItem(splash)
 
-        self.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
-        self.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        self.setHorizontalScrollBarPolicy(__.ScrollBarAlwaysOff)
+        self.setVerticalScrollBarPolicy(__.ScrollBarAlwaysOff)
         self.setMinimumSize(50, 50)
         self.setViewportUpdateMode(QGraphicsView.FullViewportUpdate)
         self.setCacheMode(QGraphicsView.CacheBackground)
@@ -258,7 +258,7 @@ c_ PadNavigator(QGraphicsView):
 
     ___ resizeEvent  event):
         super(PadNavigator, self).resizeEvent(event)
-        self.fitInView(self.scene().sceneRect(), Qt.KeepAspectRatio)
+        self.fitInView(self.scene().sceneRect(), __.KeepAspectRatio)
 
 
 c_ RoundRectItem(QGraphicsObject):
@@ -287,16 +287,16 @@ c_ RoundRectItem(QGraphicsObject):
     fill _ pyqtProperty(bool, fill, setFill)
 
     ___ paint  painter, option, widget):
-        painter.setPen(Qt.NoPen)
-        painter.setBrush(QColor(0, 0, 0, 64))
+        painter.setPen(__.NoPen)
+        painter.setBrush(?C..(0, 0, 0, 64))
         painter.drawRoundedRect(self.bounds.translated(2, 2), 25.0, 25.0)
 
         __ self.fillRect:
-            painter.setBrush(?A...palette().brush(QPalette.Window))
+            painter.setBrush(?A...palette().brush(?P...Window))
         ____
             painter.setBrush(self.gradient)
 
-        painter.setPen(QPen(Qt.black, 1))
+        painter.setPen(QPen(__.black, 1))
         painter.drawRoundedRect(self.bounds, 25.0, 25.0)
         __ no. self.pix.isNull
             painter.scale(1.95, 1.95)
@@ -316,7 +316,7 @@ c_ RoundRectItem(QGraphicsObject):
 c_ FlippablePad(RoundRectItem):
     ___ __init__  size, parent_None):
         super(FlippablePad, self).__init__(self.boundsFromSize(size),
-                QColor(226, 255, 92, 64), parent)
+                ?C..(226, 255, 92, 64), parent)
 
         numIcons _ size.width() * size.height()
         pixmaps _ []
@@ -325,7 +325,7 @@ c_ FlippablePad(RoundRectItem):
             pixmaps.append(it.next())
 
         iconRect _ QRectF(-54, -54, 108, 108)
-        iconColor _ QColor(214, 240, 110, 128)
+        iconColor _ ?C..(214, 240, 110, 128)
         self.iconGrid _ []
         n _ 0
 
@@ -371,17 +371,17 @@ c_ SplashItem(QGraphicsObject):
         r_ QRectF(0, 0, 400, 175)
 
     ___ paint  painter, option, widget):
-        painter.setPen(QPen(Qt.black, 2))
-        painter.setBrush(QColor(245, 245, 255, 220))
+        painter.setPen(QPen(__.black, 2))
+        painter.setBrush(?C..(245, 245, 255, 220))
         painter.setClipRect(self.boundingRect())
         painter.drawRoundedRect(3, -100 + 3, 400 - 6, 250 - 6, 25.0, 25.0)
 
         textRect _ self.boundingRect().adjusted(10, 10, -10, -10)
-        flags _ int(Qt.AlignTop | Qt.AlignLeft) | Qt.TextWordWrap
+        flags _ int(__.AlignTop | __.AlignLeft) | __.TextWordWrap
 
         font _ QFont()
         font.setPixelSize(18)
-        painter.setPen(Qt.black)
+        painter.setPen(__.black)
         painter.setFont(font)
         painter.drawText(textRect, flags, self.text)
 

@@ -42,9 +42,9 @@
 #############################################################################
 
 
-____ ?.QtCore ______ (QByteArray, QDataStream, QIODevice, QMimeData,
-        QPoint, Qt)
-____ ?.?G.. ______ QColor, QDrag, QPainter, QPixmap
+____ ?.?C.. ______ (QByteArray, QDataStream, QIODevice, QMimeData,
+        QPoint, __)
+____ ?.?G.. ______ ?C.., QDrag, QPainter, QPixmap
 ____ ?.?W.. ______ ?A.., QFrame, QHBoxLayout, QLabel, QWidget
 
 ______ draggableicons_rc
@@ -62,24 +62,24 @@ c_ DragWidget(QFrame):
         boatIcon.setPixmap(QPixmap(':/images/boat.png'))
         boatIcon.move(20, 20)
         boatIcon.s..
-        boatIcon.setAttribute(Qt.WA_DeleteOnClose)
+        boatIcon.setAttribute(__.WA_DeleteOnClose)
 
         carIcon _ QLabel(self)
         carIcon.setPixmap(QPixmap(':/images/car.png'))
         carIcon.move(120, 20)
         carIcon.s..
-        carIcon.setAttribute(Qt.WA_DeleteOnClose)
+        carIcon.setAttribute(__.WA_DeleteOnClose)
 
         houseIcon _ QLabel(self)
         houseIcon.setPixmap(QPixmap(':/images/house.png'))
         houseIcon.move(20, 120)
         houseIcon.s..
-        houseIcon.setAttribute(Qt.WA_DeleteOnClose)
+        houseIcon.setAttribute(__.WA_DeleteOnClose)
 
     ___ dragEnterEvent  event):
         __ event.mimeData().hasFormat('application/x-dnditemdata'):
             __ event.source() == self:
-                event.setDropAction(Qt.MoveAction)
+                event.setDropAction(__.MoveAction)
                 event.accept()
             ____
                 event.acceptProposedAction()
@@ -101,10 +101,10 @@ c_ DragWidget(QFrame):
             newIcon.setPixmap(pixmap)
             newIcon.move(event.pos() - offset)
             newIcon.s..
-            newIcon.setAttribute(Qt.WA_DeleteOnClose)
+            newIcon.setAttribute(__.WA_DeleteOnClose)
 
             __ event.source() == self:
-                event.setDropAction(Qt.MoveAction)
+                event.setDropAction(__.MoveAction)
                 event.accept()
             ____
                 event.acceptProposedAction()
@@ -133,12 +133,12 @@ c_ DragWidget(QFrame):
         tempPixmap _ QPixmap(pixmap)
         painter _ QPainter()
         painter.begin(tempPixmap)
-        painter.fillRect(pixmap.rect(), QColor(127, 127, 127, 127))
+        painter.fillRect(pixmap.rect(), ?C..(127, 127, 127, 127))
         painter.end()
 
         child.setPixmap(tempPixmap)
 
-        __ drag.exec_(Qt.CopyAction | Qt.MoveAction, Qt.CopyAction) == Qt.MoveAction:
+        __ drag.exec_(__.CopyAction | __.MoveAction, __.CopyAction) == __.MoveAction:
             child.close()
         ____
             child.s..

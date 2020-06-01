@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, ?G.., ?W..
+____ ? ______ ?C.., ?G.., ?W..
 
 c_ Ui_ImageSettingsUi(object):
     ___ setupUi  ImageSettingsUi):
@@ -36,14 +36,14 @@ c_ Ui_ImageSettingsUi(object):
         self.gridLayout_2.addWidget(self.label_7, 4, 0, 1, 1)
         self.imageQualitySlider _ ?W...QSlider(self.groupBox_2)
         self.imageQualitySlider.setMaximum(4)
-        self.imageQualitySlider.setOrientation(QtCore.Qt.Horizontal)
+        self.imageQualitySlider.setOrientation(?C...__.Horizontal)
         self.imageQualitySlider.setObjectName("imageQualitySlider")
         self.gridLayout_2.addWidget(self.imageQualitySlider, 4, 1, 1, 1)
         self.gridLayout.addWidget(self.groupBox_2, 0, 0, 1, 1)
         spacerItem _ ?W...QSpacerItem(20, 14, ?W...QSizePolicy.Minimum, ?W...QSizePolicy.Expanding)
         self.gridLayout.addItem(spacerItem, 1, 0, 1, 1)
         self.buttonBox _ ?W...QDialogButtonBox(ImageSettingsUi)
-        self.buttonBox.setOrientation(QtCore.Qt.Horizontal)
+        self.buttonBox.setOrientation(?C...__.Horizontal)
         self.buttonBox.setStandardButtons(?W...QDialogButtonBox.Cancel|?W...QDialogButtonBox.Ok)
         self.buttonBox.setObjectName("buttonBox")
         self.gridLayout.addWidget(self.buttonBox, 2, 0, 1, 1)
@@ -51,10 +51,10 @@ c_ Ui_ImageSettingsUi(object):
         self.retranslateUi(ImageSettingsUi)
         self.buttonBox.accepted.c..(ImageSettingsUi.accept)
         self.buttonBox.rejected.c..(ImageSettingsUi.reject)
-        QtCore.QMetaObject.connectSlotsByName(ImageSettingsUi)
+        ?C...QMetaObject.connectSlotsByName(ImageSettingsUi)
 
     ___ retranslateUi  ImageSettingsUi):
-        _translate _ QtCore.QCoreApplication.translate
+        _translate _ ?C...QCoreApplication.translate
         ImageSettingsUi.setWindowTitle(_translate("ImageSettingsUi", "Dialog"))
         self.groupBox_2.setTitle(_translate("ImageSettingsUi", "Image"))
         self.label_8.sT..(_translate("ImageSettingsUi", "Resolution:"))

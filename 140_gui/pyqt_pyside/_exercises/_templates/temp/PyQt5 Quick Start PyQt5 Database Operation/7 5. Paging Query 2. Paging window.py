@@ -1,6 +1,6 @@
 ______ sys
 ____ ?.QtSql ______ QSqlDatabase, QSqlQuery, QSqlTableModel, QSqlQueryModel
-____ ?.QtCore ______ *
+____ ?.?C.. ______ *
 ____ ?.?W.. ______ *
 
 c_ DataGrid(QWidget):

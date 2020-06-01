@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QModelIndex, Qt
+____ ?.?C.. ______ QModelIndex, __
 ____ ?.?G.. ______ QStandardItemModel
 ____ ?.?W.. ______ (?A.., QSpinBox, QStyledItemDelegate,
         QTableView)
@@ -58,7 +58,7 @@ c_ SpinBoxDelegate(QStyledItemDelegate):
         r_ editor
 
     ___ setEditorData  spinBox, index):
-        value _ index.model().data(index, Qt.EditRole)
+        value _ index.model().data(index, __.EditRole)
 
         spinBox.setValue(value)
 
@@ -66,7 +66,7 @@ c_ SpinBoxDelegate(QStyledItemDelegate):
         spinBox.interpretText()
         value _ spinBox.value()
 
-        model.setData(index, value, Qt.EditRole)
+        model.setData(index, value, __.EditRole)
 
     ___ updateEditorGeometry  editor, option, index):
         editor.setGeometry(option.rect)

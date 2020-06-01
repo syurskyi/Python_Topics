@@ -45,7 +45,7 @@
 ______ sys
 ______ math
 
-____ ?.QtCore ______ pyqtSignal, QSize, Qt, QTimer
+____ ?.?C.. ______ pyqtSignal, QSize, __, QTimer
 ____ ?.?G.. ______ QOpenGLVersionProfile, QPixmap
 ____ ?.?W.. ______ (?A.., ?A.., QGridLayout, QLabel,
         QLineEdit, QMainWindow, ?MB.., QOpenGLWidget, QScrollArea,
@@ -158,10 +158,10 @@ c_ GLWidget(QOpenGLWidget):
         dx _ event.x() - self.lastPos.x()
         dy _ event.y() - self.lastPos.y()
 
-        __ event.buttons() & Qt.LeftButton:
+        __ event.buttons() & __.LeftButton:
             self.setXRotation(self.xRot + 8 * dy)
             self.setYRotation(self.yRot + 8 * dx)
-        ____ event.buttons() & Qt.RightButton:
+        ____ event.buttons() & __.RightButton:
             self.setXRotation(self.xRot + 8 * dy)
             self.setZRotation(self.zRot + 8 * dx)
 
@@ -291,8 +291,8 @@ c_ MainWindow ?MW..
         self.glWidgetArea _ QScrollArea()
         self.glWidgetArea.setWidget(self.glWidget)
         self.glWidgetArea.setWidgetResizable(True)
-        self.glWidgetArea.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
-        self.glWidgetArea.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        self.glWidgetArea.setHorizontalScrollBarPolicy(__.ScrollBarAlwaysOff)
+        self.glWidgetArea.setVerticalScrollBarPolicy(__.ScrollBarAlwaysOff)
         self.glWidgetArea.setSizePolicy(QSizePolicy.Ignored,
                 QSizePolicy.Ignored)
         self.glWidgetArea.setMinimumSize(50, 50)
@@ -367,7 +367,7 @@ c_ MainWindow ?MW..
         self.helpMenu.aA..(self.aboutQtAct)
 
     ___ createSlider  changedSignal, setterSlot):
-        slider _ QSlider(Qt.Horizontal)
+        slider _ QSlider(__.Horizontal)
         slider.setRange(0, 360 * 16)
         slider.setSingleStep(16)
         slider.setPageStep(15 * 16)

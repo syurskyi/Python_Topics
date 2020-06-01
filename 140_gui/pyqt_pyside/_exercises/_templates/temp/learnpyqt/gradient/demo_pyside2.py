@@ -1,4 +1,4 @@
-____ PySide2 ______ QtCore, ?G.., ?W..
+____ PySide2 ______ ?C.., ?G.., ?W..
 ____ gradient ______ Gradient
 
 

@@ -1,13 +1,13 @@
 ______ sys
 __ 'PyQt5' in sys.modules:
-    ____ ? ______ QtCore, ?G.., ?W..
-    ____ ?.QtCore ______ Qt
-    ____ ?.QtCore ______ pyqtSignal __ Signal
+    ____ ? ______ ?C.., ?G.., ?W..
+    ____ ?.?C.. ______ __
+    ____ ?.?C.. ______ pyqtSignal __ Signal
 
 ____
-    ____ PySide2 ______ QtCore, ?G.., ?W..
-    ____ PySide2.QtCore ______ Qt
-    ____ PySide2.QtCore ______ Signal
+    ____ PySide2 ______ ?C.., ?G.., ?W..
+    ____ PySide2.?C.. ______ __
+    ____ PySide2.?C.. ______ Signal
 
 
 c_ EqualizerBar(?W...QWidget):
@@ -37,7 +37,7 @@ c_ EqualizerBar(?W...QWidget):
         self.n_bars _ bars
         self._x_solid_percent _ 0.8
         self._y_solid_percent _ 0.8
-        self._background_color _ ?G...QColor('black')
+        self._background_color _ ?G...?C..('black')
         self._padding _ 25  # n-pixel gap around edge.
 
         # Bar behaviour
@@ -57,9 +57,9 @@ c_ EqualizerBar(?W...QWidget):
         painter _ ?G...QPainter(self)
 
         brush _ ?G...QBrush()
-        brush.setColor(self._background_color)
-        brush.setStyle(Qt.SolidPattern)
-        rect _ QtCore.QRect(0, 0, painter.device().width(), painter.device().height())
+        brush.sC..(self._background_color)
+        brush.setStyle(__.SolidPattern)
+        rect _ ?C...QRect(0, 0, painter.device().width(), painter.device().height())
         painter.fillRect(rect, brush)
 
         # Define our canvas.
@@ -82,8 +82,8 @@ c_ EqualizerBar(?W...QWidget):
             n_steps_to_draw _ int(pc * self.n_steps)
 
             for n in range(n_steps_to_draw):
-                brush.setColor(?G...QColor(self.steps[n]))
-                rect _ QtCore.QRect(
+                brush.sC..(?G...?C..(self.steps[n]))
+                rect _ ?C...QRect(
                     self._padding + (step_x * b) + bar_width_space,
                     self._padding + d_height - ((1 + n) * step_y) + bar_height_space,
                     bar_width,
@@ -94,7 +94,7 @@ c_ EqualizerBar(?W...QWidget):
         painter.end()
 
     ___ sizeHint(self):
-        r_ QtCore.QSize(20, 120)
+        r_ ?C...QSize(20, 120)
 
     ___ _trigger_refresh(self):
         self.update()
@@ -107,7 +107,7 @@ c_ EqualizerBar(?W...QWidget):
             self._timer.stop()
 
         __ ms:
-            self._timer _ QtCore.QTimer()
+            self._timer _ ?C...QTimer()
             self._timer.setInterval(ms)
             self._timer.timeout.c..(self._decay_beat)
             self._timer.start()
@@ -130,7 +130,7 @@ c_ EqualizerBar(?W...QWidget):
         assert float(vmin) < float(vmax)
         self._vmin, self._vmax _ float(vmin), float(vmax)
 
-    ___ setColor  color):
+    ___ sC..  color):
         self.steps _ [color] * self._bar.n_steps
         self.update()
 
@@ -151,6 +151,6 @@ c_ EqualizerBar(?W...QWidget):
 
 
     ___ setBackgroundColor  color):
-        self._background_color _ ?G...QColor(color)
+        self._background_color _ ?G...?C..(color)
         self.update()
 

@@ -44,8 +44,8 @@
 
 ______ math
 
-____ ?.QtCore ______ QPointF, Qt, QTimer
-____ ?.?G.. ______ (QBrush, QColor, QLinearGradient, QPen, QPainter,
+____ ?.?C.. ______ QPointF, __, QTimer
+____ ?.?G.. ______ (QBrush, ?C.., QLinearGradient, QPen, QPainter,
         QPixmap, QRadialGradient)
 ____ ?.?W.. ______ (?A.., QFrame, QGraphicsDropShadowEffect,
         QGraphicsEllipseItem, QGraphicsRectItem, QGraphicsScene, QGraphicsView)
@@ -76,20 +76,20 @@ c_ Lighting(QGraphicsView):
         self.m_scene.setSceneRect(-300, -200, 600, 460)
 
         linearGrad _ QLinearGradient(QPointF(-100, -100), QPointF(100, 100))
-        linearGrad.setColorAt(0, QColor(255, 255, 255))
-        linearGrad.setColorAt(1, QColor(192, 192, 255))
+        linearGrad.setColorAt(0, ?C..(255, 255, 255))
+        linearGrad.setColorAt(1, ?C..(192, 192, 255))
         self.setBackgroundBrush(linearGrad)
 
         radialGrad _ QRadialGradient(30, 30, 30)
-        radialGrad.setColorAt(0, Qt.yellow)
-        radialGrad.setColorAt(0.2, Qt.yellow)
-        radialGrad.setColorAt(1, Qt.transparent)
+        radialGrad.setColorAt(0, __.yellow)
+        radialGrad.setColorAt(0.2, __.yellow)
+        radialGrad.setColorAt(1, __.transparent)
 
         pixmap _ QPixmap(60, 60)
-        pixmap.fill(Qt.transparent)
+        pixmap.fill(__.transparent)
 
         painter _ QPainter(pixmap)
-        painter.setPen(Qt.NoPen)
+        painter.setPen(__.NoPen)
         painter.setBrush(radialGrad)
         painter.drawEllipse(0, 0, 60, 60)
         painter.end()
@@ -104,8 +104,8 @@ c_ Lighting(QGraphicsView):
                 ____
                     item _ QGraphicsRectItem(0, 0, 50, 50)
 
-                item.setPen(QPen(Qt.black, 1))
-                item.setBrush(QBrush(Qt.white))
+                item.setPen(QPen(__.black, 1))
+                item.setBrush(QBrush(__.white))
 
                 effect _ QGraphicsDropShadowEffect(self)
                 effect.setBlurRadius(8)
@@ -130,7 +130,7 @@ c_ Lighting(QGraphicsView):
             dd _ math.hypot(delta.x(), delta.y())
             color _ effect.color()
             color.setAlphaF(max(0.4, min(1 - dd / 200.0, 0.7)))
-            effect.setColor(color)
+            effect.sC..(color)
 
         self.m_scene.update()
 

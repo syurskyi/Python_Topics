@@ -1,5 +1,5 @@
 ______ sys
-____ ? ______ QtCore __ qtc
+____ ? ______ ?C.. __ qtc
 ____ ? ______ ?W.. __ qtw
 ____ ? ______ QtMultimedia __ qtmm
 ____ ? ______ QtMultimediaWidgets __ qtmmw

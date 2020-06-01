@@ -1,4 +1,4 @@
-____ ? ______ QtCore __ qtc
+____ ? ______ ?C.. __ qtc
 
 c_ TicTacToeEngine(qtc.QObject):
     """Engine for the game Tic Tac Toe"""

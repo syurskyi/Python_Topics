@@ -44,7 +44,7 @@
 
 ______ random
 
-____ ?.QtCore ______ QByteArray, QDataStream, QIODevice, QSettings
+____ ?.?C.. ______ QByteArray, QDataStream, QIODevice, QSettings
 ____ ?.?W.. ______ (?A.., QDialog, QHBoxLayout, QLabel,
         ?MB.., ?PB.., QVBoxLayout)
 ____ ?.QtNetwork ______ (QHostAddress, QNetworkConfiguration,

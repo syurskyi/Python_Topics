@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, ?G.., ?W..
+____ ? ______ ?C.., ?G.., ?W..
 
 c_ Ui_MainWindow(object):
     ___ setupUi  MainWindow):
@@ -28,22 +28,22 @@ c_ Ui_MainWindow(object):
         self.vboxlayout.setSpacing(0)
         self.vboxlayout.setObjectName("vboxlayout")
         self.WebBrowser _ QAxContainer.QAxWidget(self.Frame3)
-        self.WebBrowser.setFocusPolicy(QtCore.Qt.StrongFocus)
+        self.WebBrowser.setFocusPolicy(?C...__.StrongFocus)
         self.WebBrowser.setControl("{8856F961-340A-11D0-A96B-00C04FD705A2}")
         self.WebBrowser.setObjectName("WebBrowser")
         self.vboxlayout.addWidget(self.WebBrowser)
         self.hboxlayout.addWidget(self.Frame3)
         MainWindow.sCW..(self.centralWidget)
         self.tbNavigate _ ?W...QToolBar(MainWindow)
-        self.tbNavigate.setOrientation(QtCore.Qt.Horizontal)
+        self.tbNavigate.setOrientation(?C...__.Horizontal)
         self.tbNavigate.setObjectName("tbNavigate")
         MainWindow.addToolBar(4, self.tbNavigate)
         self.tbAddress _ ?W...QToolBar(MainWindow)
-        self.tbAddress.setOrientation(QtCore.Qt.Horizontal)
+        self.tbAddress.setOrientation(?C...__.Horizontal)
         self.tbAddress.setObjectName("tbAddress")
         MainWindow.addToolBar(4, self.tbAddress)
         self.menubar _ ?W...QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 812, 26))
+        self.menubar.setGeometry(?C...QRect(0, 0, 812, 26))
         self.menubar.setObjectName("menubar")
         self.PopupMenu _ ?W...QMenu(self.menubar)
         self.PopupMenu.setObjectName("PopupMenu")
@@ -115,10 +115,10 @@ c_ Ui_MainWindow(object):
         self.menubar.aA..(self.unnamed.menuAction())
 
         self.retranslateUi(MainWindow)
-        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        ?C...QMetaObject.connectSlotsByName(MainWindow)
 
     ___ retranslateUi  MainWindow):
-        _translate _ QtCore.QCoreApplication.translate
+        _translate _ ?C...QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Qt WebBrowser"))
         self.tbNavigate.setWindowTitle(_translate("MainWindow", "Navigation"))
         self.tbAddress.setWindowTitle(_translate("MainWindow", "Address"))

@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, ?G.., ?W..
+____ ? ______ ?C.., ?G.., ?W..
 
 c_ Ui_Controller(object):
     ___ setupUi  Controller):
@@ -18,7 +18,7 @@ c_ Ui_Controller(object):
         self.gridlayout.setSpacing(6)
         self.gridlayout.setObjectName("gridlayout")
         self.label _ ?W...QLabel(Controller)
-        self.label.setAlignment(QtCore.Qt.AlignCenter)
+        self.label.setAlignment(?C...__.AlignCenter)
         self.label.setObjectName("label")
         self.gridlayout.addWidget(self.label, 1, 1, 1, 1)
         self.decelerate _ ?W...?PB..(Controller)
@@ -35,10 +35,10 @@ c_ Ui_Controller(object):
         self.gridlayout.addWidget(self.left, 1, 0, 1, 1)
 
         self.retranslateUi(Controller)
-        QtCore.QMetaObject.connectSlotsByName(Controller)
+        ?C...QMetaObject.connectSlotsByName(Controller)
 
     ___ retranslateUi  Controller):
-        _translate _ QtCore.QCoreApplication.translate
+        _translate _ ?C...QCoreApplication.translate
         Controller.setWindowTitle(_translate("Controller", "Controller"))
         self.label.sT..(_translate("Controller", "Controller"))
         self.decelerate.sT..(_translate("Controller", "Decelerate"))

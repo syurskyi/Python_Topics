@@ -43,7 +43,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ (QDate, QDateTime, QRegExp, QSortFilterProxyModel, Qt,
+____ ?.?C.. ______ (QDate, QDateTime, QRegExp, QSortFilterProxyModel, __,
         QTime)
 ____ ?.?G.. ______ QStandardItemModel
 ____ ?.?W.. ______ (?A.., QCheckBox, QComboBox, QDateEdit,
@@ -152,7 +152,7 @@ c_ Window(QWidget):
         self.proxyView.setAlternatingRowColors(True)
         self.proxyView.setModel(self.proxyModel)
         self.proxyView.setSortingEnabled(True)
-        self.proxyView.sortByColumn(1, Qt.AscendingOrder)
+        self.proxyView.sortByColumn(1, __.AscendingOrder)
 
         self.textFilterChanged()
         self.dateFilterChanged()
@@ -188,7 +188,7 @@ c_ Window(QWidget):
                 self.filterSyntaxComboBox.currentIndex()))
         caseSensitivity _ (
             self.filterCaseSensitivityCheckBox.isChecked()
-            and Qt.CaseSensitive or Qt.CaseInsensitive)
+            and __.CaseSensitive or __.CaseInsensitive)
         regExp _ QRegExp(self.filterPatternLineEdit.text(), caseSensitivity, syntax)
         self.proxyModel.setFilterRegExp(regExp)
 
@@ -207,9 +207,9 @@ ___ addMail(model, subject, sender, date):
 ___ createMailModel(parent):
     model _ QStandardItemModel(0, 3, parent)
 
-    model.setHeaderData(0, Qt.Horizontal, "Subject")
-    model.setHeaderData(1, Qt.Horizontal, "Sender")
-    model.setHeaderData(2, Qt.Horizontal, "Date")
+    model.setHeaderData(0, __.Horizontal, "Subject")
+    model.setHeaderData(1, __.Horizontal, "Sender")
+    model.setHeaderData(2, __.Horizontal, "Date")
 
     addMail(model, "Happy New Year!", "Grace K. <grace@software-inc.com>",
             QDateTime(QDate(2006, 12, 31), QTime(17, 3)))

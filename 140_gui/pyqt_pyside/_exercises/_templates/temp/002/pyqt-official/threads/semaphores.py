@@ -45,7 +45,7 @@
 ______ sys
 ______ random
 
-____ ?.QtCore ______ QCoreApplication, QSemaphore, QThread
+____ ?.?C.. ______ QCoreApplication, QSemaphore, QThread
 
 
 DataSize _ 100000

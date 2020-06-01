@@ -3,7 +3,7 @@
 #============================================================================#
 # PyQt5 port of the designer/containerextension example from Qt v5.x         #
 #----------------------------------------------------------------------------#
-____ ?.QtCore ______ pyqtProperty, pyqtSignal, pyqtSlot, QSize
+____ ?.?C.. ______ pyqtProperty, pyqtSignal, pyqtSlot, QSize
 ____ ?.?W.. ______ (?A.., QComboBox, QLabel, QStackedWidget,
         QVBoxLayout, QWidget)
 

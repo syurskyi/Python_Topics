@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QDir, Qt, QTimer
+____ ?.?C.. ______ QDir, __, QTimer
 ____ ?.?G.. ______ QPixmap
 ____ ?.?W.. ______ (?A.., QCheckBox, ?FD.., QGridLayout,
         QGroupBox, QHBoxLayout, QLabel, ?PB.., QSizePolicy, QSpinBox,
@@ -56,7 +56,7 @@ c_ Screenshot(QWidget):
         self.screenshotLabel _ QLabel()
         self.screenshotLabel.setSizePolicy(QSizePolicy.Expanding,
                 QSizePolicy.Expanding)
-        self.screenshotLabel.setAlignment(Qt.AlignCenter)
+        self.screenshotLabel.setAlignment(__.AlignCenter)
         self.screenshotLabel.setMinimumSize(240, 160)
 
         self.createOptionsGroupBox()
@@ -76,7 +76,7 @@ c_ Screenshot(QWidget):
 
     ___ resizeEvent  event):
         scaledSize _ self.originalPixmap.size()
-        scaledSize.scale(self.screenshotLabel.size(), Qt.KeepAspectRatio)
+        scaledSize.scale(self.screenshotLabel.size(), __.KeepAspectRatio)
         __ no. self.screenshotLabel.pixmap() or scaledSize !_ self.screenshotLabel.pixmap().size
             self.updateScreenshotLabel()
 
@@ -159,8 +159,8 @@ c_ Screenshot(QWidget):
 
     ___ updateScreenshotLabel(self):
         self.screenshotLabel.setPixmap(self.originalPixmap.scaled(
-                self.screenshotLabel.size(), Qt.KeepAspectRatio,
-                Qt.SmoothTransformation))
+                self.screenshotLabel.size(), __.KeepAspectRatio,
+                __.SmoothTransformation))
 
 
 __ __name__ == '__main__':

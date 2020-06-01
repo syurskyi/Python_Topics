@@ -1,6 +1,6 @@
 ______ sys
 ____ ? ______ ?W.. __ qtw
-____ ? ______ QtCore __ qtc
+____ ? ______ ?C.. __ qtc
 #from calendar_form import Ui_MainWindow
 ____ category_window ______ Ui_CategoryWindow
 ____ ? ______ uic

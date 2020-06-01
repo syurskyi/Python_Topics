@@ -42,7 +42,7 @@
 
 ______ math
 
-____ ?.QtCore ______ QPointF
+____ ?.?C.. ______ QPointF
 
 ____ guide ______ Guide
 

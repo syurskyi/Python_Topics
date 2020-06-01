@@ -40,8 +40,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QRectF
-____ ?.?G.. ______ QColor, QImage, QPainter
+____ ?.?C.. ______ QRectF
+____ ?.?G.. ______ ?C.., QImage, QPainter
 ____ ?.?W.. ______ QGraphicsTextItem, QStyleOptionGraphicsItem
 
 ____ demoitem ______ DemoItem
@@ -83,7 +83,7 @@ c_ DemoTextItem(DemoItem):
         h _ textItem.boundingRect().height()
         image _ QImage(int(w * sx), int(h * sy),
                 QImage.Format_ARGB32_Premultiplied)
-        image.fill(QColor(0, 0, 0, 0).rgba())
+        image.fill(?C..(0, 0, 0, 0).rgba())
         painter _ QPainter(image)
         painter.scale(sx, sy)
         style _ QStyleOptionGraphicsItem()

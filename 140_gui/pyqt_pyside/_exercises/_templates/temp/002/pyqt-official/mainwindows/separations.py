@@ -43,10 +43,10 @@
 #############################################################################
 
 
-____ ?.QtCore ______ (pyqtSignal, QBuffer, QByteArray, QFileInfo,
-        QIODevice, QMimeData, QPoint, QSize, Qt)
-____ ?.?G.. ______ (qBlue, QColor, QDrag, qGreen, QImage, ?KS..,
-        QPalette, QPixmap, qRed)
+____ ?.?C.. ______ (pyqtSignal, QBuffer, QByteArray, QFileInfo,
+        QIODevice, QMimeData, QPoint, QSize, __)
+____ ?.?G.. ______ (qBlue, ?C.., QDrag, qGreen, QImage, ?KS..,
+        ?P.., QPixmap, qRed)
 ____ ?.?W.. ______ (?A.., QColorDialog, ?FD.., QFrame,
         QGridLayout, QLabel, QLayout, QMainWindow, QMenu, ?MB..,
         ?PB.., QVBoxLayout)
@@ -75,7 +75,7 @@ c_ FinalWidget(QFrame):
         """ If the mouse moves far enough when the left mouse button is held
             down, start a drag and drop operation.
         """
-        __ no. event.buttons() & Qt.LeftButton:
+        __ no. event.buttons() & __.LeftButton:
             r_
 
         __ (event.pos() - self.dragStartPosition).manhattanLength() \
@@ -96,7 +96,7 @@ c_ FinalWidget(QFrame):
         mimeData.setData('image/png', output)
 
         drag.setMimeData(mimeData)
-        drag.setPixmap(self.imageLabel.pixmap().scaled(64, 64, Qt.KeepAspectRatio))
+        drag.setPixmap(self.imageLabel.pixmap().scaled(64, 64, __.KeepAspectRatio))
         drag.setHotSpot(QPoint(drag.pixmap().width() / 2,
                                       drag.pixmap().height()))
         drag.start()
@@ -105,7 +105,7 @@ c_ FinalWidget(QFrame):
         """ Check for left mouse button presses in order to enable drag and
             drop.
         """
-        __ event.button() == Qt.LeftButton:
+        __ event.button() == __.LeftButton:
             self.dragStartPosition _ event.pos()
 
     ___ pixmap(self):
@@ -149,17 +149,17 @@ c_ ScreenWidget(QFrame):
 
         self.nameLabel _ QLabel(name)
         self.colorButton _ ?PB..("Modify...")
-        self.colorButton.setBackgroundRole(QPalette.Button)
+        self.colorButton.setBackgroundRole(?P...Button)
         self.colorButton.setMinimumSize(32, 32)
 
-        palette _ QPalette(self.colorButton.palette())
-        palette.setColor(QPalette.Button, initialColor)
-        self.colorButton.setPalette(palette)
+        palette _ ?P..(self.colorButton.palette())
+        palette.sC..(?P...Button, initialColor)
+        self.colorButton.sP..(palette)
 
         self.invertButton _ ?PB..("Invert")
         self.invertButton.setEnabled F..
 
-        self.colorButton.c__.c..(self.setColor)
+        self.colorButton.c__.c..(self.sC..)
         self.invertButton.c__.c..(self.invertImage)
 
         gridLayout _ QGridLayout()
@@ -179,9 +179,9 @@ c_ ScreenWidget(QFrame):
         self.newImage _ newImage _ self.originalImage.copy()
 
         # Create CMY components for the ink being used.
-        cyanInk _ float(255 - QColor(self.paintColor).red()) / 255.0
-        magentaInk _ float(255 - QColor(self.paintColor).green()) / 255.0
-        yellowInk _ float(255 - QColor(self.paintColor).blue()) / 255.0
+        cyanInk _ float(255 - ?C..(self.paintColor).red()) / 255.0
+        magentaInk _ float(255 - ?C..(self.paintColor).green()) / 255.0
+        yellowInk _ float(255 - ?C..(self.paintColor).blue()) / 255.0
 
         convert _ self.convertMap[self.maskColor]
 
@@ -195,7 +195,7 @@ c_ ScreenWidget(QFrame):
                 ____
                     amount _ 255 - convert(p)
 
-                newColor _ QColor(
+                newColor _ ?C..(
                     255 - min(int(amount * cyanInk), 255),
                     255 - min(int(amount * magentaInk), 255),
                     255 - min(int(amount * yellowInk), 255))
@@ -217,7 +217,7 @@ c_ ScreenWidget(QFrame):
         self.createImage()
         self.imageChanged.emit()
 
-    ___ setColor(self):
+    ___ sC..(self):
         """ Separate the current image into cyan, magenta, and yellow
             components.  Create a representation of how each component might
             appear when applied to a blank white piece of paper.
@@ -226,9 +226,9 @@ c_ ScreenWidget(QFrame):
 
         __ newColor.isValid
             self.paintColor _ newColor
-            palette _ QPalette(self.colorButton.palette())
-            palette.setColor(QPalette.Button, self.paintColor)
-            self.colorButton.setPalette(palette)
+            palette _ ?P..(self.colorButton.palette())
+            palette.sC..(?P...Button, self.paintColor)
+            self.colorButton.sP..(palette)
             self.createImage()
             self.imageChanged.emit()
 
@@ -335,21 +335,21 @@ c_ Viewer ?MW..
 
         self.finalWidget _ FinalWidget(frame, "Final image", labelSize)
 
-        self.cyanWidget _ ScreenWidget(frame, Qt.cyan, "Cyan",
+        self.cyanWidget _ ScreenWidget(frame, __.cyan, "Cyan",
                 ScreenWidget.Cyan, labelSize)
-        self.magentaWidget _ ScreenWidget(frame, Qt.magenta, "Magenta",
+        self.magentaWidget _ ScreenWidget(frame, __.magenta, "Magenta",
                 ScreenWidget.Magenta, labelSize)
-        self.yellowWidget _ ScreenWidget(frame, Qt.yellow, "Yellow",
+        self.yellowWidget _ ScreenWidget(frame, __.yellow, "Yellow",
                 ScreenWidget.Yellow, labelSize)
 
         self.cyanWidget.imageChanged.c..(self.createImage)
         self.magentaWidget.imageChanged.c..(self.createImage)
         self.yellowWidget.imageChanged.c..(self.createImage)
 
-        grid.addWidget(self.finalWidget, 0, 0, Qt.AlignTop | Qt.AlignHCenter)
-        grid.addWidget(self.cyanWidget, 0, 1, Qt.AlignTop | Qt.AlignHCenter)
-        grid.addWidget(self.magentaWidget, 1, 0, Qt.AlignTop | Qt.AlignHCenter)
-        grid.addWidget(self.yellowWidget, 1, 1, Qt.AlignTop | Qt.AlignHCenter)
+        grid.addWidget(self.finalWidget, 0, 0, __.AlignTop | __.AlignHCenter)
+        grid.addWidget(self.cyanWidget, 0, 1, __.AlignTop | __.AlignHCenter)
+        grid.addWidget(self.magentaWidget, 1, 0, __.AlignTop | __.AlignHCenter)
+        grid.addWidget(self.yellowWidget, 1, 1, __.AlignTop | __.AlignHCenter)
 
         r_ frame
 
@@ -397,7 +397,7 @@ c_ Viewer ?MW..
             self.saveAction.setEnabled(True)
             self.brightnessMenu.setEnabled(True)
 
-            self.scaledImage _ originalImage.scaled(256, 256, Qt.KeepAspectRatio)
+            self.scaledImage _ originalImage.scaled(256, 256, __.KeepAspectRatio)
 
             self.cyanWidget.setImage(self.scaledImage)
             self.magentaWidget.setImage(self.scaledImage)
@@ -444,7 +444,7 @@ c_ Viewer ?MW..
                 magenta3 _ float(255 - qGreen(p3))
                 yellow3 _ float(255 - qBlue(p3))
 
-                newColor _ QColor(
+                newColor _ ?C..(
                     max(255 - int(cyan1 + cyan2 + cyan3) - darkness, 0),
                     max(255 - int(magenta1 + magenta2 + magenta3) - darkness, 0),
                     max(255 - int(yellow1 + yellow2 + yellow3) - darkness, 0))

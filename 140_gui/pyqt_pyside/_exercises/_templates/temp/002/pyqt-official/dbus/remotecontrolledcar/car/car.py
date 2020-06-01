@@ -44,7 +44,7 @@
 
 ______ math
 
-____ ?.QtCore ______ pyqtSlot, Q_CLASSINFO, QRectF, Qt
+____ ?.?C.. ______ pyqtSlot, Q_CLASSINFO, QRectF, __
 ____ ?.?G.. ______ QBrush, QPainter, QTransform
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsObject,
         QGraphicsScene, QGraphicsView)
@@ -56,7 +56,7 @@ c_ Car(QGraphicsObject):
     ___ __init__(self):
         super(Car, self).__init__()
 
-        self.color _ QBrush(Qt.green)
+        self.color _ QBrush(__.green)
         self.wheelsAngle _ 0.0
         self.speed _ 0.0
 
@@ -96,7 +96,7 @@ c_ Car(QGraphicsObject):
         self.update()
 
     ___ paint  painter, option, widget):
-        painter.setBrush(Qt.gray)
+        painter.setBrush(__.gray)
         painter.drawRect(-20, -58, 40, 2)       # Front axel
         painter.drawRect(-20, 7, 40, 2)         # Rear axel
 
@@ -111,7 +111,7 @@ c_ Car(QGraphicsObject):
 
         painter.drawRect(-17, 19, 34, 15)       # Rear wing
 
-        painter.setBrush(Qt.black)
+        painter.setBrush(__.black)
         painter.drawPie(-5, -51, 10, 15, 0, 180 * 16)
         painter.drawRect(-5, -44, 10, 10)       # Cockpit
 
@@ -180,7 +180,7 @@ __ __name__ == '__main__':
 
     view _ QGraphicsView(scene)
     view.setRenderHint(QPainter.Antialiasing)
-    view.setBackgroundBrush(Qt.darkGray)
+    view.setBackgroundBrush(__.darkGray)
     view.setWindowTitle("Qt DBus Controlled Car")
     view.resize(400, 300)
     view.s..

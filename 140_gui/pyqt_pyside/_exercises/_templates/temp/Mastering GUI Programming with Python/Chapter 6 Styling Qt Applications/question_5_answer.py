@@ -7,11 +7,11 @@ app _ qtw.?A..(sys.argv)
 widget _ qtw.QWidget()
 palette _ widget.palette()
 tile_brush _ qtg.QBrush(
-    qtg.QColor('black'),
+    qtg.?C..('black'),
     qtg.QPixmap('tile.png')
 )
-palette.setBrush(qtg.QPalette.Window, tile_brush)
-widget.setPalette(palette)
+palette.setBrush(qtg.?P...Window, tile_brush)
+widget.sP..(palette)
 
 widget.s..
 app.exec()

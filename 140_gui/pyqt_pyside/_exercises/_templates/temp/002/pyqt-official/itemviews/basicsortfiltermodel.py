@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ (QDate, QDateTime, QRegExp, QSortFilterProxyModel, Qt,
+____ ?.?C.. ______ (QDate, QDateTime, QRegExp, QSortFilterProxyModel, __,
         QTime)
 ____ ?.?G.. ______ QStandardItemModel
 ____ ?.?W.. ______ (?A.., QCheckBox, QComboBox, QGridLayout,
@@ -64,7 +64,7 @@ c_ SortFilterProxyModel(QSortFilterProxyModel):
             data _ self.sourceModel().data(index)
 
             # Return, if regExp match in displayed format.
-            r_ (self.filterRegExp().indexIn(data.toString(Qt.DefaultLocaleShortDate)) >_ 0)
+            r_ (self.filterRegExp().indexIn(data.toString(__.DefaultLocaleShortDate)) >_ 0)
 
         # Not our business.
         r_ super(SortFilterProxyModel, self).filterAcceptsRow(sourceRow, sourceParent)
@@ -141,7 +141,7 @@ c_ Window(QWidget):
         self.setWindowTitle("Basic Sort/Filter Model")
         self.resize(500, 450)
 
-        self.proxyView.sortByColumn(SENDER, Qt.AscendingOrder)
+        self.proxyView.sortByColumn(SENDER, __.AscendingOrder)
         self.filterColumnComboBox.setCurrentIndex(SENDER)
 
         self.filterPatternLineEdit.sT..("Andy|Grace")
@@ -157,9 +157,9 @@ c_ Window(QWidget):
         syntax _ QRegExp.PatternSyntax(syntax_nr)
 
         __ self.filterCaseSensitivityCheckBox.isChecked
-            caseSensitivity _ Qt.CaseSensitive
+            caseSensitivity _ __.CaseSensitive
         ____
-            caseSensitivity _ Qt.CaseInsensitive
+            caseSensitivity _ __.CaseInsensitive
 
         regExp _ QRegExp(self.filterPatternLineEdit.text(),
                 caseSensitivity, syntax)
@@ -170,9 +170,9 @@ c_ Window(QWidget):
 
     ___ sortChanged(self):
         __ self.sortCaseSensitivityCheckBox.isChecked
-            caseSensitivity _ Qt.CaseSensitive
+            caseSensitivity _ __.CaseSensitive
         ____
-            caseSensitivity _ Qt.CaseInsensitive
+            caseSensitivity _ __.CaseInsensitive
 
         self.proxyModel.setSortCaseSensitivity(caseSensitivity)
 
@@ -187,9 +187,9 @@ ___ addMail(model, subject, sender, date):
 ___ createMailModel(parent):
     model _ QStandardItemModel(0, 3, parent)
 
-    model.setHeaderData(SUBJECT, Qt.Horizontal, "Subject")
-    model.setHeaderData(SENDER, Qt.Horizontal, "Sender")
-    model.setHeaderData(DATE, Qt.Horizontal, "Date")
+    model.setHeaderData(SUBJECT, __.Horizontal, "Subject")
+    model.setHeaderData(SENDER, __.Horizontal, "Sender")
+    model.setHeaderData(DATE, __.Horizontal, "Date")
 
     addMail(model, "Happy New Year!", "Grace K. <grace@software-inc.com>",
             QDateTime(QDate(2006, 12, 31), QTime(17, 3)))

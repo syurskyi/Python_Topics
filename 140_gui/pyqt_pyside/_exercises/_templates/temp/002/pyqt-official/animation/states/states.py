@@ -42,8 +42,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ (QPointF, QPropertyAnimation, QRect, QRectF,
-        QSequentialAnimationGroup, QSizeF, QState, QStateMachine, Qt)
+____ ?.?C.. ______ (QPointF, QPropertyAnimation, QRect, QRectF,
+        QSequentialAnimationGroup, QSizeF, QState, QStateMachine, __)
 ____ ?.?G.. ______ QPixmap
 ____ ?.?W.. ______ (?A.., QGraphicsLinearLayout,
         QGraphicsObject, QGraphicsProxyWidget, QGraphicsScene, QGraphicsView,
@@ -101,7 +101,7 @@ __ __name__ == '__main__':
 
     # Parent widget.
     widget _ QGraphicsWidget()
-    layout _ QGraphicsLinearLayout(Qt.Vertical, widget)
+    layout _ QGraphicsLinearLayout(__.Vertical, widget)
     layout.addItem(editProxy)
     layout.addItem(buttonProxy)
     widget.setLayout(layout)

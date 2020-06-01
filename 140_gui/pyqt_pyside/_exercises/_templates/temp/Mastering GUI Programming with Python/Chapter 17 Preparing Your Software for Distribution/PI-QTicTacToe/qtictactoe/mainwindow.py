@@ -1,6 +1,6 @@
 ____ ? ______ ?W.. __ qtw
 ____ ? ______ ?G.. __ qtg
-____ ? ______ QtCore __ qtc
+____ ? ______ ?C.. __ qtc
 
 ____ .engine ______ TicTacToeEngine
 ____ .board ______ TTTBoard

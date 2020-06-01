@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, ?G.., ?W..
+____ ? ______ ?C.., ?G.., ?W..
 
 c_ Ui_Camera(object):
     ___ setupUi  Camera):
@@ -23,26 +23,26 @@ c_ Ui_Camera(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.stackedWidget.sizePolicy().hasHeightForWidth())
         self.stackedWidget.setSizePolicy(sizePolicy)
-        palette _ ?G...QPalette()
-        brush _ ?G...QBrush(?G...QColor(255, 255, 255))
-        brush.setStyle(QtCore.Qt.SolidPattern)
-        palette.setBrush(?G...QPalette.Active, ?G...QPalette.Base, brush)
-        brush _ ?G...QBrush(?G...QColor(145, 145, 145))
-        brush.setStyle(QtCore.Qt.SolidPattern)
-        palette.setBrush(?G...QPalette.Active, ?G...QPalette.Window, brush)
-        brush _ ?G...QBrush(?G...QColor(255, 255, 255))
-        brush.setStyle(QtCore.Qt.SolidPattern)
-        palette.setBrush(?G...QPalette.Inactive, ?G...QPalette.Base, brush)
-        brush _ ?G...QBrush(?G...QColor(145, 145, 145))
-        brush.setStyle(QtCore.Qt.SolidPattern)
-        palette.setBrush(?G...QPalette.Inactive, ?G...QPalette.Window, brush)
-        brush _ ?G...QBrush(?G...QColor(145, 145, 145))
-        brush.setStyle(QtCore.Qt.SolidPattern)
-        palette.setBrush(?G...QPalette.Disabled, ?G...QPalette.Base, brush)
-        brush _ ?G...QBrush(?G...QColor(145, 145, 145))
-        brush.setStyle(QtCore.Qt.SolidPattern)
-        palette.setBrush(?G...QPalette.Disabled, ?G...QPalette.Window, brush)
-        self.stackedWidget.setPalette(palette)
+        palette _ ?G...?P..()
+        brush _ ?G...QBrush(?G...?C..(255, 255, 255))
+        brush.setStyle(?C...__.SolidPattern)
+        palette.setBrush(?G...?P...Active, ?G...?P...Base, brush)
+        brush _ ?G...QBrush(?G...?C..(145, 145, 145))
+        brush.setStyle(?C...__.SolidPattern)
+        palette.setBrush(?G...?P...Active, ?G...?P...Window, brush)
+        brush _ ?G...QBrush(?G...?C..(255, 255, 255))
+        brush.setStyle(?C...__.SolidPattern)
+        palette.setBrush(?G...?P...Inactive, ?G...?P...Base, brush)
+        brush _ ?G...QBrush(?G...?C..(145, 145, 145))
+        brush.setStyle(?C...__.SolidPattern)
+        palette.setBrush(?G...?P...Inactive, ?G...?P...Window, brush)
+        brush _ ?G...QBrush(?G...?C..(145, 145, 145))
+        brush.setStyle(?C...__.SolidPattern)
+        palette.setBrush(?G...?P...Disabled, ?G...?P...Base, brush)
+        brush _ ?G...QBrush(?G...?C..(145, 145, 145))
+        brush.setStyle(?C...__.SolidPattern)
+        palette.setBrush(?G...?P...Disabled, ?G...?P...Window, brush)
+        self.stackedWidget.sP..(palette)
         self.stackedWidget.setObjectName("stackedWidget")
         self.viewfinderPage _ ?W...QWidget()
         self.viewfinderPage.setObjectName("viewfinderPage")
@@ -89,7 +89,7 @@ c_ Ui_Camera(object):
         self.exposureCompensation.setMinimum(-4)
         self.exposureCompensation.setMaximum(4)
         self.exposureCompensation.setPageStep(2)
-        self.exposureCompensation.setOrientation(QtCore.Qt.Horizontal)
+        self.exposureCompensation.setOrientation(?C...__.Horizontal)
         self.exposureCompensation.setTickPosition(?W...QSlider.TicksAbove)
         self.exposureCompensation.setObjectName("exposureCompensation")
         self.gridLayout.addWidget(self.exposureCompensation, 3, 0, 1, 1)
@@ -117,7 +117,7 @@ c_ Ui_Camera(object):
         self.gridLayout_3.addWidget(self.captureWidget, 2, 1, 1, 2)
         Camera.sCW..(self.centralwidget)
         self.menubar _ ?W...QMenuBar(Camera)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 668, 29))
+        self.menubar.setGeometry(?C...QRect(0, 0, 668, 29))
         self.menubar.setObjectName("menubar")
         self.menuFile _ ?W...QMenu(self.menubar)
         self.menuFile.setObjectName("menuFile")
@@ -158,10 +158,10 @@ c_ Ui_Camera(object):
         self.actionSettings.t__.c..(Camera.configureCaptureSettings)
         self.actionStartCamera.t__.c..(Camera.startCamera)
         self.actionStopCamera.t__.c..(Camera.stopCamera)
-        QtCore.QMetaObject.connectSlotsByName(Camera)
+        ?C...QMetaObject.connectSlotsByName(Camera)
 
     ___ retranslateUi  Camera):
-        _translate _ QtCore.QCoreApplication.translate
+        _translate _ ?C...QCoreApplication.translate
         Camera.setWindowTitle(_translate("Camera", "Camera"))
         self.lockButton.sT..(_translate("Camera", "Focus"))
         self.takeImageButton.sT..(_translate("Camera", "Capture Photo"))

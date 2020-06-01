@@ -44,9 +44,9 @@
 
 ______ math
 
-____ ?.QtCore ______ (qAbs, QLineF, QPointF, QRectF, qrand, qsrand, Qt,
+____ ?.?C.. ______ (qAbs, QLineF, QPointF, QRectF, qrand, qsrand, __,
         QTime, QTimer)
-____ ?.?G.. ______ (QBrush, QColor, QPainter, QPainterPath, QPixmap,
+____ ?.?G.. ______ (QBrush, ?C.., QPainter, QPainterPath, QPixmap,
         QPolygonF)
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsScene,
         QGraphicsView, QGraphicsWidget)
@@ -68,7 +68,7 @@ c_ Mouse(QGraphicsItem):
         self.angle _ 0.0
         self.speed _ 0.0
         self.mouseEyeDirection _ 0.0
-        self.color _ QColor(qrand() % 256, qrand() % 256, qrand() % 256)
+        self.color _ ?C..(qrand() % 256, qrand() % 256, qrand() % 256)
 
         self.setRotation(qrand() % (360 * 16))
 
@@ -102,12 +102,12 @@ c_ Mouse(QGraphicsItem):
         painter.drawEllipse(-10, -20, 20, 40)
 
         # Eyes.
-        painter.setBrush(Qt.white)
+        painter.setBrush(__.white)
         painter.drawEllipse(-10, -17, 8, 8)
         painter.drawEllipse(2, -17, 8, 8)
 
         # Nose.
-        painter.setBrush(Qt.black)
+        painter.setBrush(__.black)
         painter.drawEllipse(QRectF(-2, -22, 4, 4))
 
         # Pupils.
@@ -116,9 +116,9 @@ c_ Mouse(QGraphicsItem):
 
         # Ears.
         __ self.scene().collidingItems(self):
-            painter.setBrush(Qt.red)
+            painter.setBrush(__.red)
         ____
-            painter.setBrush(Qt.darkYellow)
+            painter.setBrush(__.darkYellow)
 
         painter.drawEllipse(-17, -12, 16, 16)
         painter.drawEllipse(1, -12, 16, 16)
@@ -128,7 +128,7 @@ c_ Mouse(QGraphicsItem):
         path.cubicTo(-5, 22, -5, 22, 0, 25)
         path.cubicTo(5, 27, 5, 32, 0, 30)
         path.cubicTo(-5, 32, -5, 42, 0, 35)
-        painter.setBrush(Qt.NoBrush)
+        painter.setBrush(__.NoBrush)
         painter.drawPath(path)
 
     ___ timerEvent(self):

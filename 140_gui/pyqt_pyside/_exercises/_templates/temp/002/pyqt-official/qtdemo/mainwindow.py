@@ -40,7 +40,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QFileInfo, QPoint, QRect, qRound, Qt, QTime, QTimer
+____ ?.?C.. ______ QFileInfo, QPoint, QRect, qRound, __, QTime, QTimer
 ____ ?.?G.. ______ (QFontMetricsF, QImage, QPainter, QPixmap, QPolygon,
         QRegion)
 ____ ?.?W.. ______ (?A.., QFrame, QGraphicsScene,
@@ -100,8 +100,8 @@ c_ MainWindow(QGraphicsView):
         self.setMinimumSize(80, 60)
 
         self.setWindowTitle("PyQt Examples")
-        self.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
-        self.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        self.setHorizontalScrollBarPolicy(__.ScrollBarAlwaysOff)
+        self.setVerticalScrollBarPolicy(__.ScrollBarAlwaysOff)
         self.setFrameStyle(QFrame.NoFrame)
         self.setRenderingSystem()
         self.updateTimer.timeout.c..(self.tick)
@@ -233,7 +233,7 @@ c_ MainWindow(QGraphicsView):
     ___ setupSceneItems(self):
         __ Colors.showFps:
             self.fpsLabel _ DemoTextItem("FPS: --", Colors.buttonFont(),
-                    Qt.white, -1, N.., DemoTextItem.DYNAMIC_TEXT)
+                    __.white, -1, N.., DemoTextItem.DYNAMIC_TEXT)
             self.fpsLabel.setZValue(1000)
             self.fpsLabel.setPos(Colors.stageStartX,
                     600 - QFontMetricsF(Colors.buttonFont()).height() - 5)
@@ -249,7 +249,7 @@ c_ MainWindow(QGraphicsView):
         self.companyLogo.setZValue(100)
         self.qtLogo.setZValue(100)
         self.pausedLabel _ DemoTextItem("PAUSED", Colors.buttonFont(),
-                Qt.white, -1, N..)
+                __.white, -1, N..)
         self.pausedLabel.setZValue(100)
         fm _ QFontMetricsF(Colors.buttonFont())
         self.pausedLabel.setPos(Colors.stageWidth - fm.width("PAUSED"),
@@ -289,7 +289,7 @@ c_ MainWindow(QGraphicsView):
     ___ drawBackgroundToPixmap(self):
         r _ self.scene.sceneRect()
         self.background _ QPixmap(qRound(r.width()), qRound(r.height()))
-        self.background.fill(Qt.black)
+        self.background.fill(__.black)
         painter _ QPainter(self.background)
 
         bg _ QImage(self.imagesDir + '/demobg.png')
@@ -309,9 +309,9 @@ c_ MainWindow(QGraphicsView):
             self.showFullScreen()
 
     ___ keyPressEvent  event):
-        __ event.key() == Qt.Key_Escape:
+        __ event.key() == __.Key_Escape:
             ?A...quit()
-        ____ event.key() == Qt.Key_F1:
+        ____ event.key() == __.Key_F1:
             s _ ""
             s +_ "\nAdapt: "
             s +_ ["on", "off"][Colors.noAdapt]

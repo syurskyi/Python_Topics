@@ -42,7 +42,7 @@
 ______ sys
 ______ os
 
-____ ?.QtCore ______ QLibraryInfo, QProcess, QProcessEnvironment
+____ ?.?C.. ______ QLibraryInfo, QProcess, QProcessEnvironment
 ____ ?.?W.. ______ ?A.., ?MB..
 
 

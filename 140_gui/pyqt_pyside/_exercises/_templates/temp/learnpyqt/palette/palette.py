@@ -1,11 +1,11 @@
 ______ sys
 __ 'PyQt5' in sys.modules:
-    ____ ? ______ QtCore, ?W..
-    ____ ?.QtCore ______ Qt, pyqtSignal __ Signal
+    ____ ? ______ ?C.., ?W..
+    ____ ?.?C.. ______ __, pyqtSignal __ Signal
 
 ____
-    ____ PySide2 ______ QtCore, ?W..
-    ____ PySide2.QtCore ______ Signal
+    ____ PySide2 ______ ?C.., ?W..
+    ____ PySide2.?C.. ______ Signal
 
 
 PALETTES _ {
@@ -21,7 +21,7 @@ PALETTES _ {
 c_ _PaletteButton(?W...?PB..):
     ___ __init__  color):
         super().__init__()
-        self.setFixedSize(QtCore.QSize(24, 24))
+        self.setFixedSize(?C...QSize(24, 24))
         self.color _ color
         self.setStyleSheet("background-color: %s;" % color)
 

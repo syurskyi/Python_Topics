@@ -25,9 +25,9 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 ______ random
 
-____ ?.QtCore ______ (pyqtProperty, pyqtSignal, pyqtSlot, QPointF, QRectF,
-        QSize, QSizeF, Qt, QTimer)
-____ ?.?G.. ______ QBrush, QColor, QPainter, QPen, QRadialGradient
+____ ?.?C.. ______ (pyqtProperty, pyqtSignal, pyqtSlot, QPointF, QRectF,
+        QSize, QSizeF, __, QTimer)
+____ ?.?G.. ______ QBrush, ?C.., QPainter, QPen, QRadialGradient
 ____ ?.?W.. ______ ?A.., QWidget
 
 
@@ -82,7 +82,7 @@ c_ Bubble:
                 QPointF(self.radius, self.radius), self.radius,
                 QPointF(self.radius*0.5, self.radius*0.5))
 
-        gradient.setColorAt(0, QColor(255, 255, 255, 255))
+        gradient.setColorAt(0, ?C..(255, 255, 255, 255))
         gradient.setColorAt(0.25, self.innerColor)
         gradient.setColorAt(1, self.outerColor)
         self.brush _ QBrush(gradient)
@@ -115,7 +115,7 @@ c_ BubblesWidget(BaseClass):
 
         super(BubblesWidget, self).__init__(parent)
 
-        self.pen _ QPen(QColor("#cccccc"))
+        self.pen _ QPen(?C..("#cccccc"))
         self.bubbles _ []
         self.backgroundColor1 _ self.randomColor()
         self.backgroundColor2 _ self.randomColor().darker(150)
@@ -164,7 +164,7 @@ c_ BubblesWidget(BaseClass):
 
     ___ mousePressEvent  event):
 
-        __ event.button() == Qt.LeftButton and self.newBubble __ N..:
+        __ event.button() == __.LeftButton and self.newBubble __ N..:
 
             self.newBubble _ Bubble(QPointF(event.pos()), 4.0,
                                     1.0 + random.random() * 7,
@@ -221,7 +221,7 @@ c_ BubblesWidget(BaseClass):
         blue _ 205 + random.random() * 50
         alpha _ 91 + random.random() * 100
 
-        r_ QColor(red, green, blue, alpha)
+        r_ ?C..(red, green, blue, alpha)
 
     ___ animate(self):
 
@@ -295,10 +295,10 @@ c_ BubblesWidget(BaseClass):
 
     ___ setColor1  value):
 
-        self.backgroundColor1 _ QColor(value)
+        self.backgroundColor1 _ ?C..(value)
         self.update()
 
-    color1 _ pyqtProperty(QColor, getColor1, setColor1)
+    color1 _ pyqtProperty(?C.., getColor1, setColor1)
 
     ___ getColor2(self):
 
@@ -306,10 +306,10 @@ c_ BubblesWidget(BaseClass):
 
     ___ setColor2  value):
 
-        self.backgroundColor2 _ QColor(value)
+        self.backgroundColor2 _ ?C..(value)
         self.update()
 
-    color2 _ pyqtProperty(QColor, getColor2, setColor2)
+    color2 _ pyqtProperty(?C.., getColor2, setColor2)
 
     # The stop() and start() slots provide simple control over the animation
     # of the bubbles in the widget.

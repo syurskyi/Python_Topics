@@ -41,26 +41,26 @@
 #############################################################################
 
 
-____ ?.QtCore ______ pyqtProperty, QRectF, QUrl
-____ ?.?G.. ______ QColor, QGuiApplication, QPainter, QPen
+____ ?.?C.. ______ pyqtProperty, QRectF, QUrl
+____ ?.?G.. ______ ?C.., QGuiApplication, QPainter, QPen
 ____ ?.QtQml ______ qmlRegisterType
 ____ ?.QtQuick ______ QQuickItem, QQuickPaintedItem, QQuickView
 
 
 c_ PieSlice(QQuickPaintedItem):
 
-    @pyqtProperty(QColor)
+    @pyqtProperty(?C..)
     ___ color(self):
         r_ self._color
 
     @color.setter
     ___ color  color):
-        self._color _ QColor(color)
+        self._color _ ?C..(color)
 
     ___ __init__  parent_None):
         super(PieSlice, self).__init__(parent)
 
-        self._color _ QColor()
+        self._color _ ?C..()
 
     ___ paint  painter):
         painter.setPen(QPen(self._color, 2))

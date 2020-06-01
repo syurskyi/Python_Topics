@@ -44,9 +44,9 @@
 
 ____ math ______ cos, pi, sin
 
-____ ?.QtCore ______ QSize, Qt
-____ ?.?G.. ______ (QBrush, QColor, QFont, QLinearGradient, QPainter,
-        QPainterPath, QPalette, QPen)
+____ ?.?C.. ______ QSize, __
+____ ?.?G.. ______ (QBrush, ?C.., QFont, QLinearGradient, QPainter,
+        QPainterPath, ?P.., QPen)
 ____ ?.?W.. ______ (?A.., QComboBox, QGridLayout, QLabel,
         QSizePolicy, QSpinBox, QWidget)
 
@@ -59,7 +59,7 @@ c_ RenderArea(QWidget):
 
         self.penWidth _ 1
         self.rotationAngle _ 0
-        self.setBackgroundRole(QPalette.Base)
+        self.setBackgroundRole(?P...Base)
 
     ___ minimumSizeHint(self):
         r_ QSize(50, 50)
@@ -97,8 +97,8 @@ c_ RenderArea(QWidget):
         painter.translate(-50.0, -50.0)
 
         painter.setPen(
-                QPen(self.penColor, self.penWidth, Qt.SolidLine, Qt.RoundCap,
-                        Qt.RoundJoin))
+                QPen(self.penColor, self.penWidth, __.SolidLine, __.RoundCap,
+                        __.RoundJoin))
         gradient _ QLinearGradient(0, 0, 0, 100)
         gradient.setColorAt(0.0, self.fillColor1)
         gradient.setColorAt(1.0, self.fillColor2)
@@ -180,8 +180,8 @@ c_ Window(QWidget):
         assert len(self.renderAreas) == 9
 
         self.fillRuleComboBox _ QComboBox()
-        self.fillRuleComboBox.addItem("Odd Even", Qt.OddEvenFill)
-        self.fillRuleComboBox.addItem("Winding", Qt.WindingFill)
+        self.fillRuleComboBox.addItem("Odd Even", __.OddEvenFill)
+        self.fillRuleComboBox.addItem("Winding", __.WindingFill)
 
         fillRuleLabel _ QLabel("Fill &Rule:")
         fillRuleLabel.setBuddy(self.fillRuleComboBox)
@@ -261,26 +261,26 @@ c_ Window(QWidget):
         self.setWindowTitle("Painter Paths")
 
     ___ fillRuleChanged(self):
-        rule _ Qt.FillRule(self.currentItemData(self.fillRuleComboBox))
+        rule _ __.FillRule(self.currentItemData(self.fillRuleComboBox))
 
         for i in range(Window.NumRenderAreas):
             self.renderAreas[i].setFillRule(rule)
 
     ___ fillGradientChanged(self):
-        color1 _ QColor(self.currentItemData(self.fillColor1ComboBox))
-        color2 _ QColor(self.currentItemData(self.fillColor2ComboBox))
+        color1 _ ?C..(self.currentItemData(self.fillColor1ComboBox))
+        color2 _ ?C..(self.currentItemData(self.fillColor2ComboBox))
 
         for i in range(Window.NumRenderAreas):
             self.renderAreas[i].setFillGradient(color1, color2)
 
     ___ penColorChanged(self):
-        color _ QColor(self.currentItemData(self.penColorComboBox))
+        color _ ?C..(self.currentItemData(self.penColorComboBox))
 
         for i in range(Window.NumRenderAreas):
             self.renderAreas[i].setPenColor(color)
 
     ___ populateWithColors  comboBox):
-        colorNames _ QColor.colorNames()
+        colorNames _ ?C...colorNames()
         for name in colorNames:
             comboBox.addItem(name, name)
 

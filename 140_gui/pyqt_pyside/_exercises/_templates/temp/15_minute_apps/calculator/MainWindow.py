@@ -6,7 +6,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, ?G.., ?W..
+____ ? ______ ?C.., ?G.., ?W..
 
 c_ Ui_MainWindow(object):
     ___ setupUi  MainWindow):
@@ -34,7 +34,7 @@ c_ Ui_MainWindow(object):
         self.gridLayout.setSpacing(6)
         self.gridLayout.setObjectName("gridLayout")
         self.pushButton_n4 _ ?W...?PB..(self.centralWidget)
-        self.pushButton_n4.setMinimumSize(QtCore.QSize(0, 50))
+        self.pushButton_n4.setMinimumSize(?C...QSize(0, 50))
         font _ ?G...QFont()
         font.setPointSize(27)
         font.setBold(True)
@@ -46,7 +46,7 @@ c_ Ui_MainWindow(object):
         self.pushButton_n4.setObjectName("pushButton_n4")
         self.gridLayout.addWidget(self.pushButton_n4, 3, 0, 1, 1)
         self.pushButton_n1 _ ?W...?PB..(self.centralWidget)
-        self.pushButton_n1.setMinimumSize(QtCore.QSize(0, 50))
+        self.pushButton_n1.setMinimumSize(?C...QSize(0, 50))
         font _ ?G...QFont()
         font.setPointSize(27)
         font.setBold(True)
@@ -58,7 +58,7 @@ c_ Ui_MainWindow(object):
         self.pushButton_n1.setObjectName("pushButton_n1")
         self.gridLayout.addWidget(self.pushButton_n1, 4, 0, 1, 1)
         self.pushButton_n8 _ ?W...?PB..(self.centralWidget)
-        self.pushButton_n8.setMinimumSize(QtCore.QSize(0, 50))
+        self.pushButton_n8.setMinimumSize(?C...QSize(0, 50))
         font _ ?G...QFont()
         font.setPointSize(27)
         font.setBold(True)
@@ -70,7 +70,7 @@ c_ Ui_MainWindow(object):
         self.pushButton_n8.setObjectName("pushButton_n8")
         self.gridLayout.addWidget(self.pushButton_n8, 2, 1, 1, 1)
         self.pushButton_mul _ ?W...?PB..(self.centralWidget)
-        self.pushButton_mul.setMinimumSize(QtCore.QSize(0, 50))
+        self.pushButton_mul.setMinimumSize(?C...QSize(0, 50))
         font _ ?G...QFont()
         font.setPointSize(27)
         font.setBold F..
@@ -79,7 +79,7 @@ c_ Ui_MainWindow(object):
         self.pushButton_mul.setObjectName("pushButton_mul")
         self.gridLayout.addWidget(self.pushButton_mul, 2, 3, 1, 1)
         self.pushButton_n7 _ ?W...?PB..(self.centralWidget)
-        self.pushButton_n7.setMinimumSize(QtCore.QSize(0, 50))
+        self.pushButton_n7.setMinimumSize(?C...QSize(0, 50))
         font _ ?G...QFont()
         font.setPointSize(27)
         font.setBold(True)
@@ -91,7 +91,7 @@ c_ Ui_MainWindow(object):
         self.pushButton_n7.setObjectName("pushButton_n7")
         self.gridLayout.addWidget(self.pushButton_n7, 2, 0, 1, 1)
         self.pushButton_n6 _ ?W...?PB..(self.centralWidget)
-        self.pushButton_n6.setMinimumSize(QtCore.QSize(0, 50))
+        self.pushButton_n6.setMinimumSize(?C...QSize(0, 50))
         font _ ?G...QFont()
         font.setPointSize(27)
         font.setBold(True)
@@ -103,7 +103,7 @@ c_ Ui_MainWindow(object):
         self.pushButton_n6.setObjectName("pushButton_n6")
         self.gridLayout.addWidget(self.pushButton_n6, 3, 2, 1, 1)
         self.pushButton_n5 _ ?W...?PB..(self.centralWidget)
-        self.pushButton_n5.setMinimumSize(QtCore.QSize(0, 50))
+        self.pushButton_n5.setMinimumSize(?C...QSize(0, 50))
         font _ ?G...QFont()
         font.setPointSize(27)
         font.setBold(True)
@@ -115,7 +115,7 @@ c_ Ui_MainWindow(object):
         self.pushButton_n5.setObjectName("pushButton_n5")
         self.gridLayout.addWidget(self.pushButton_n5, 3, 1, 1, 1)
         self.pushButton_n0 _ ?W...?PB..(self.centralWidget)
-        self.pushButton_n0.setMinimumSize(QtCore.QSize(0, 50))
+        self.pushButton_n0.setMinimumSize(?C...QSize(0, 50))
         font _ ?G...QFont()
         font.setPointSize(27)
         font.setBold(True)
@@ -127,7 +127,7 @@ c_ Ui_MainWindow(object):
         self.pushButton_n0.setObjectName("pushButton_n0")
         self.gridLayout.addWidget(self.pushButton_n0, 5, 0, 1, 1)
         self.pushButton_n2 _ ?W...?PB..(self.centralWidget)
-        self.pushButton_n2.setMinimumSize(QtCore.QSize(0, 50))
+        self.pushButton_n2.setMinimumSize(?C...QSize(0, 50))
         font _ ?G...QFont()
         font.setPointSize(27)
         font.setBold(True)
@@ -139,7 +139,7 @@ c_ Ui_MainWindow(object):
         self.pushButton_n2.setObjectName("pushButton_n2")
         self.gridLayout.addWidget(self.pushButton_n2, 4, 1, 1, 1)
         self.pushButton_n9 _ ?W...?PB..(self.centralWidget)
-        self.pushButton_n9.setMinimumSize(QtCore.QSize(0, 50))
+        self.pushButton_n9.setMinimumSize(?C...QSize(0, 50))
         font _ ?G...QFont()
         font.setPointSize(27)
         font.setBold(True)
@@ -151,7 +151,7 @@ c_ Ui_MainWindow(object):
         self.pushButton_n9.setObjectName("pushButton_n9")
         self.gridLayout.addWidget(self.pushButton_n9, 2, 2, 1, 1)
         self.pushButton_n3 _ ?W...?PB..(self.centralWidget)
-        self.pushButton_n3.setMinimumSize(QtCore.QSize(0, 50))
+        self.pushButton_n3.setMinimumSize(?C...QSize(0, 50))
         font _ ?G...QFont()
         font.setPointSize(27)
         font.setBold(True)
@@ -163,7 +163,7 @@ c_ Ui_MainWindow(object):
         self.pushButton_n3.setObjectName("pushButton_n3")
         self.gridLayout.addWidget(self.pushButton_n3, 4, 2, 1, 1)
         self.pushButton_div _ ?W...?PB..(self.centralWidget)
-        self.pushButton_div.setMinimumSize(QtCore.QSize(0, 50))
+        self.pushButton_div.setMinimumSize(?C...QSize(0, 50))
         font _ ?G...QFont()
         font.setPointSize(27)
         font.setBold F..
@@ -172,7 +172,7 @@ c_ Ui_MainWindow(object):
         self.pushButton_div.setObjectName("pushButton_div")
         self.gridLayout.addWidget(self.pushButton_div, 1, 3, 1, 1)
         self.pushButton_sub _ ?W...?PB..(self.centralWidget)
-        self.pushButton_sub.setMinimumSize(QtCore.QSize(0, 50))
+        self.pushButton_sub.setMinimumSize(?C...QSize(0, 50))
         font _ ?G...QFont()
         font.setPointSize(27)
         font.setBold F..
@@ -181,7 +181,7 @@ c_ Ui_MainWindow(object):
         self.pushButton_sub.setObjectName("pushButton_sub")
         self.gridLayout.addWidget(self.pushButton_sub, 3, 3, 1, 1)
         self.pushButton_add _ ?W...?PB..(self.centralWidget)
-        self.pushButton_add.setMinimumSize(QtCore.QSize(0, 50))
+        self.pushButton_add.setMinimumSize(?C...QSize(0, 50))
         font _ ?G...QFont()
         font.setPointSize(27)
         font.setBold F..
@@ -190,7 +190,7 @@ c_ Ui_MainWindow(object):
         self.pushButton_add.setObjectName("pushButton_add")
         self.gridLayout.addWidget(self.pushButton_add, 4, 3, 1, 1)
         self.pushButton_ac _ ?W...?PB..(self.centralWidget)
-        self.pushButton_ac.setMinimumSize(QtCore.QSize(0, 50))
+        self.pushButton_ac.setMinimumSize(?C...QSize(0, 50))
         font _ ?G...QFont()
         font.setPointSize(27)
         font.setBold F..
@@ -202,7 +202,7 @@ c_ Ui_MainWindow(object):
         self.pushButton_ac.setObjectName("pushButton_ac")
         self.gridLayout.addWidget(self.pushButton_ac, 1, 0, 1, 1)
         self.pushButton_mr _ ?W...?PB..(self.centralWidget)
-        self.pushButton_mr.setMinimumSize(QtCore.QSize(0, 50))
+        self.pushButton_mr.setMinimumSize(?C...QSize(0, 50))
         font _ ?G...QFont()
         font.setPointSize(27)
         font.setBold F..
@@ -214,7 +214,7 @@ c_ Ui_MainWindow(object):
         self.pushButton_mr.setObjectName("pushButton_mr")
         self.gridLayout.addWidget(self.pushButton_mr, 1, 2, 1, 1)
         self.pushButton_m _ ?W...?PB..(self.centralWidget)
-        self.pushButton_m.setMinimumSize(QtCore.QSize(0, 50))
+        self.pushButton_m.setMinimumSize(?C...QSize(0, 50))
         font _ ?G...QFont()
         font.setPointSize(27)
         font.setBold F..
@@ -226,7 +226,7 @@ c_ Ui_MainWindow(object):
         self.pushButton_m.setObjectName("pushButton_m")
         self.gridLayout.addWidget(self.pushButton_m, 1, 1, 1, 1)
         self.pushButton_pc _ ?W...?PB..(self.centralWidget)
-        self.pushButton_pc.setMinimumSize(QtCore.QSize(0, 50))
+        self.pushButton_pc.setMinimumSize(?C...QSize(0, 50))
         font _ ?G...QFont()
         font.setPointSize(27)
         font.setBold F..
@@ -235,7 +235,7 @@ c_ Ui_MainWindow(object):
         self.pushButton_pc.setObjectName("pushButton_pc")
         self.gridLayout.addWidget(self.pushButton_pc, 5, 1, 1, 1)
         self.pushButton_eq _ ?W...?PB..(self.centralWidget)
-        self.pushButton_eq.setMinimumSize(QtCore.QSize(0, 50))
+        self.pushButton_eq.setMinimumSize(?C...QSize(0, 50))
         font _ ?G...QFont()
         font.setPointSize(27)
         font.setBold(True)
@@ -250,7 +250,7 @@ c_ Ui_MainWindow(object):
         self.verticalLayout_2.addLayout(self.verticalLayout)
         MainWindow.sCW..(self.centralWidget)
         self.menuBar _ ?W...QMenuBar(MainWindow)
-        self.menuBar.setGeometry(QtCore.QRect(0, 0, 484, 22))
+        self.menuBar.setGeometry(?C...QRect(0, 0, 484, 22))
         self.menuBar.setObjectName("menuBar")
         self.menuFile _ ?W...QMenu(self.menuBar)
         self.menuFile.setObjectName("menuFile")
@@ -267,10 +267,10 @@ c_ Ui_MainWindow(object):
         self.menuBar.aA..(self.menuFile.menuAction())
 
         self.retranslateUi(MainWindow)
-        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        ?C...QMetaObject.connectSlotsByName(MainWindow)
 
     ___ retranslateUi  MainWindow):
-        _translate _ QtCore.QCoreApplication.translate
+        _translate _ ?C...QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Calculon"))
         self.pushButton_n4.sT..(_translate("MainWindow", "4"))
         self.pushButton_n4.sS..(_translate("MainWindow", "4"))

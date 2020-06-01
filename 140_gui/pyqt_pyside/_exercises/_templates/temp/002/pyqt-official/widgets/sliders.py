@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ pyqtSignal, Qt
+____ ?.?C.. ______ pyqtSignal, __
 ____ ?.?W.. ______ (?A.., QBoxLayout, QCheckBox, QComboBox,
         QDial, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QScrollBar,
         QSlider, QSpinBox, QStackedWidget, QWidget)
@@ -56,23 +56,23 @@ c_ SlidersGroup(QGroupBox):
         super(SlidersGroup, self).__init__(title, parent)
 
         self.slider _ QSlider(orientation)
-        self.slider.setFocusPolicy(Qt.StrongFocus)
+        self.slider.setFocusPolicy(__.StrongFocus)
         self.slider.setTickPosition(QSlider.TicksBothSides)
         self.slider.setTickInterval(10)
         self.slider.setSingleStep(1)
 
         self.scrollBar _ QScrollBar(orientation)
-        self.scrollBar.setFocusPolicy(Qt.StrongFocus)
+        self.scrollBar.setFocusPolicy(__.StrongFocus)
 
         self.dial _ QDial()
-        self.dial.setFocusPolicy(Qt.StrongFocus)
+        self.dial.setFocusPolicy(__.StrongFocus)
 
         self.slider.valueChanged.c..(self.scrollBar.setValue)
         self.scrollBar.valueChanged.c..(self.dial.setValue)
         self.dial.valueChanged.c..(self.slider.setValue)
         self.dial.valueChanged.c..(self.valueChanged)
 
-        __ orientation == Qt.Horizontal:
+        __ orientation == __.Horizontal:
             direction _ QBoxLayout.TopToBottom
         ____
             direction _ QBoxLayout.LeftToRight
@@ -111,9 +111,9 @@ c_ Window(QWidget):
     ___ __init__(self):
         super(Window, self).__init__()
 
-        self.horizontalSliders _ SlidersGroup(Qt.Horizontal,
+        self.horizontalSliders _ SlidersGroup(__.Horizontal,
                 "Horizontal")
-        self.verticalSliders _ SlidersGroup(Qt.Vertical, "Vertical")
+        self.verticalSliders _ SlidersGroup(__.Vertical, "Vertical")
 
         self.stackedWidget _ QStackedWidget()
         self.stackedWidget.addWidget(self.horizontalSliders)

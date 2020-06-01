@@ -41,7 +41,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ pyqtProperty, pyqtSignal, QObject, QUrl
+____ ?.?C.. ______ pyqtProperty, pyqtSignal, QObject, QUrl
 ____ ?.?G.. ______ QGuiApplication
 ____ ?.QtQuick ______ QQuickView
 

@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QRect, QSize, Qt
+____ ?.?C.. ______ QRect, QSize, __
 ____ ?.?W.. ______ (?A.., QFrame, QLabel, QLayout,
         QTextBrowser, QWidget, QWidgetItem)
 
@@ -78,7 +78,7 @@ c_ BorderLayout(QLayout):
         self.add(QWidgetItem(widget), position)
 
     ___ expandingDirections(self):
-        r_ Qt.Horizontal | Qt.Vertical
+        r_ __.Horizontal | __.Vertical
 
     ___ hasHeightForWidth(self):
         r_ False

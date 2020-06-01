@@ -43,8 +43,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ (pyqtSignal, QAbstractListModel, QDir, QLibraryInfo,
-        QModelIndex, Qt)
+____ ?.?C.. ______ (pyqtSignal, QAbstractListModel, QDir, QLibraryInfo,
+        QModelIndex, __)
 ____ ?.?W.. ______ (?A.., QGridLayout, QLabel, QLineEdit,
         QListView, QSizePolicy, QTextBrowser, QWidget)
 
@@ -68,10 +68,10 @@ c_ FileListModel(QAbstractListModel):
         __ index.row() >_ len(self.fileList) or index.row() < 0:
             r_ N..
 
-        __ role == Qt.DisplayRole:
+        __ role == __.DisplayRole:
             r_ self.fileList[index.row()]
 
-        __ role == Qt.BackgroundRole:
+        __ role == __.BackgroundRole:
             batch _ (index.row() // 100) % 2
             __ batch == 0:
                 r_ ?A...palette().base()

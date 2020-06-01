@@ -44,11 +44,11 @@
 
 ______ math
 
-____ ?.QtCore ______ (QByteArray, QFile, QItemSelection,
-        QItemSelectionModel, QModelIndex, QPoint, QRect, QSize, Qt,
+____ ?.?C.. ______ (QByteArray, QFile, QItemSelection,
+        QItemSelectionModel, QModelIndex, QPoint, QRect, QSize, __,
         QTextStream)
-____ ?.?G.. ______ (QBrush, QColor, QFontMetrics, QPainter, QPainterPath,
-        QPalette, QPen, QRegion, QStandardItemModel)
+____ ?.?G.. ______ (QBrush, ?C.., QFontMetrics, QPainter, QPainterPath,
+        ?P.., QPen, QRegion, QStandardItemModel)
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., ?FD..,
         QMainWindow, QMenu, QRubberBand, QSplitter, QStyle, QTableView)
 
@@ -274,9 +274,9 @@ c_ PieView(QAbstractItemView):
         state _ option.state
 
         background _ option.palette.base()
-        foreground _ QPen(option.palette.color(QPalette.WindowText))
-        textPen _ QPen(option.palette.color(QPalette.Text))
-        highlightedPen _ QPen(option.palette.color(QPalette.HighlightedText))
+        foreground _ QPen(option.palette.color(?P...WindowText))
+        textPen _ QPen(option.palette.color(?P...Text))
+        highlightedPen _ QPen(option.palette.color(?P...HighlightedText))
 
         painter _ QPainter(self.viewport())
         painter.setRenderHint(QPainter.Antialiasing)
@@ -306,12 +306,12 @@ c_ PieView(QAbstractItemView):
                     angle _ 360*value/self.totalValue
 
                     colorIndex _ self.model().index(row, 0, self.rootIndex())
-                    color _ self.model().data(colorIndex, Qt.DecorationRole)
+                    color _ self.model().data(colorIndex, __.DecorationRole)
 
                     __ self.currentIndex() == index:
-                        painter.setBrush(QBrush(color, Qt.Dense4Pattern))
+                        painter.setBrush(QBrush(color, __.Dense4Pattern))
                     ____ selections.isSelected(index):
-                        painter.setBrush(QBrush(color, Qt.Dense3Pattern))
+                        painter.setBrush(QBrush(color, __.Dense3Pattern))
                     ____
                         painter.setBrush(QBrush(color))
 
@@ -492,8 +492,8 @@ c_ MainWindow ?MW..
 
     ___ setupModel(self):
         self.model _ QStandardItemModel(8, 2, self)
-        self.model.setHeaderData(0, Qt.Horizontal, "Label")
-        self.model.setHeaderData(1, Qt.Horizontal, "Quantity")
+        self.model.setHeaderData(0, __.Horizontal, "Label")
+        self.model.setHeaderData(1, __.Horizontal, "Quantity")
 
     ___ setupViews(self):
         splitter _ QSplitter()
@@ -540,7 +540,7 @@ c_ MainWindow ?MW..
                     self.model.setData(self.model.index(row, 1, QModelIndex()),
                                 float(pieces[1]))
                     self.model.setData(self.model.index(row, 0, QModelIndex()),
-                                QColor(pieces[2]), Qt.DecorationRole)
+                                ?C..(pieces[2]), __.DecorationRole)
 
                     row +_ 1
                     line _ stream.readLine()
@@ -562,15 +562,15 @@ c_ MainWindow ?MW..
                     pieces.append(
                             self.model.data(
                                     self.model.index(row, 0, QModelIndex()),
-                                    Qt.DisplayRole))
+                                    __.DisplayRole))
                     pieces.append(
                             '%g' % self.model.data(
                                     self.model.index(row, 1, QModelIndex()),
-                                    Qt.DisplayRole))
+                                    __.DisplayRole))
                     pieces.append(
                             self.model.data(
                                     self.model.index(row, 0, QModelIndex()),
-                                    Qt.DecorationRole).name())
+                                    __.DecorationRole).name())
 
                     f.w..(b','.join([p.encode('utf-8') for p in pieces]))
                     f.w..(b'\n')

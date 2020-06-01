@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QDir, QPoint, QRect, QSize, Qt
+____ ?.?C.. ______ QDir, QPoint, QRect, QSize, __
 ____ ?.?G.. ______ QImage, QImageWriter, QPainter, QPen, qRgb
 ____ ?.?W.. ______ (?A.., ?A.., QColorDialog, ?FD..,
         QInputDialog, QMainWindow, QMenu, ?MB.., QWidget)
@@ -53,11 +53,11 @@ c_ ScribbleArea(QWidget):
     ___ __init__  parent_None):
         super(ScribbleArea, self).__init__(parent)
 
-        self.setAttribute(Qt.WA_StaticContents)
+        self.setAttribute(__.WA_StaticContents)
         self.modified _ False
         self.scribbling _ False
         self.myPenWidth _ 1
-        self.myPenColor _ Qt.blue
+        self.myPenColor _ __.blue
         self.image _ QImage()
         self.lastPoint _ QPoint()
 
@@ -95,16 +95,16 @@ c_ ScribbleArea(QWidget):
         self.update()
 
     ___ mousePressEvent  event):
-        __ event.button() == Qt.LeftButton:
+        __ event.button() == __.LeftButton:
             self.lastPoint _ event.pos()
             self.scribbling _ True
 
     ___ mouseMoveEvent  event):
-        __ (event.buttons() & Qt.LeftButton) and self.scribbling:
+        __ (event.buttons() & __.LeftButton) and self.scribbling:
             self.drawLineTo(event.pos())
 
     ___ mouseReleaseEvent  event):
-        __ event.button() == Qt.LeftButton and self.scribbling:
+        __ event.button() == __.LeftButton and self.scribbling:
             self.drawLineTo(event.pos())
             self.scribbling _ False
 
@@ -124,8 +124,8 @@ c_ ScribbleArea(QWidget):
 
     ___ drawLineTo  endPoint):
         painter _ QPainter(self.image)
-        painter.setPen(QPen(self.myPenColor, self.myPenWidth, Qt.SolidLine,
-                Qt.RoundCap, Qt.RoundJoin))
+        painter.setPen(QPen(self.myPenColor, self.myPenWidth, __.SolidLine,
+                __.RoundCap, __.RoundJoin))
         painter.drawLine(self.lastPoint, endPoint)
         self.modified _ True
 
@@ -151,7 +151,7 @@ c_ ScribbleArea(QWidget):
             painter _ QPainter(printer)
             rect _ painter.viewport()
             size _ self.image.size()
-            size.scale(rect.size(), Qt.KeepAspectRatio)
+            size.scale(rect.size(), __.KeepAspectRatio)
             painter.setViewport(rect.x(), rect.y(), size.width(), size.height())
             painter.setWindow(self.image.rect())
             painter.drawImage(0, 0, self.image)

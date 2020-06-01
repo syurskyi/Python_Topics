@@ -1,5 +1,5 @@
 ______ sys
-____ ? ______ QtCore, ?G.., QtSql, ?W..
+____ ? ______ ?C.., ?G.., QtSql, ?W..
 ______ sportsconnection
 
 
@@ -7,9 +7,9 @@ ___ initializeModel(model):
     model.setTable('sportsmen')
     model.setEditStrategy(QtSql.QSqlTableModel.OnFieldChange)
     model.select()
-    model.setHeaderData(0, QtCore.Qt.Horizontal, "ID")
-    model.setHeaderData(1, QtCore.Qt.Horizontal, "First name")
-    model.setHeaderData(2, QtCore.Qt.Horizontal, "Last name")
+    model.setHeaderData(0, ?C...__.Horizontal, "ID")
+    model.setHeaderData(1, ?C...__.Horizontal, "First name")
+    model.setHeaderData(2, ?C...__.Horizontal, "Last name")
 
 
 ___ createView(title, model):

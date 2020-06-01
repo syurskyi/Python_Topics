@@ -43,8 +43,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ (pyqtSignal, QBuffer, QByteArray, QFile, QIODevice,
-        QMimeData, Qt)
+____ ?.?C.. ______ (pyqtSignal, QBuffer, QByteArray, QFile, QIODevice,
+        QMimeData, __)
 ____ ?.?G.. ______ QDrag, QIcon, QImage, QPainter, QPixmap
 ____ ?.?W.. ______ (?A.., QGridLayout, QLabel, ?PB..,
         QScrollArea, QWidget)
@@ -118,12 +118,12 @@ c_ SourceWidget(QWidget):
 
     ___ startDrag(self):
         self.mimeData _ MimeData()
-        self.mimeData.dataRequested.c..(self.createData, Qt.DirectConnection)
+        self.mimeData.dataRequested.c..(self.createData, __.DirectConnection)
 
         drag _ QDrag(self)
         drag.setMimeData(self.mimeData)
         drag.setPixmap(QPixmap(':/images/drag.png'))
-        drag.exec_(Qt.CopyAction)
+        drag.exec_(__.CopyAction)
 
 
 __ __name__ == '__main__':

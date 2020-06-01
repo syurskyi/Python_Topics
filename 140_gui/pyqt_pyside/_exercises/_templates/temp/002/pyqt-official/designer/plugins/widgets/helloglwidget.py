@@ -25,8 +25,8 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 ______ math
 
-____ ?.QtCore ______ pyqtProperty, pyqtSignal, pyqtSlot, QPoint, QSize, Qt
-____ ?.?G.. ______ QColor
+____ ?.?C.. ______ pyqtProperty, pyqtSignal, pyqtSlot, QPoint, QSize, __
+____ ?.?G.. ______ ?C..
 ____ ?.?W.. ______ ?A.., QOpenGLWidget
 
 
@@ -55,8 +55,8 @@ c_ HelloGLWidget(QOpenGLWidget):
 
         self.lastPos _ QPoint()
 
-        self.trolltechGreen _ QColor.fromCmykF(0.40, 0.0, 1.0, 0.0)
-        self.trolltechPurple _ QColor.fromCmykF(0.39, 0.39, 0.0, 0.0)
+        self.trolltechGreen _ ?C...fromCmykF(0.40, 0.0, 1.0, 0.0)
+        self.trolltechPurple _ ?C...fromCmykF(0.39, 0.39, 0.0, 0.0)
 
         self.setWindowTitle("Hello GL")
 
@@ -155,10 +155,10 @@ c_ HelloGLWidget(QOpenGLWidget):
         dx _ event.x() - self.lastPos.x()
         dy _ event.y() - self.lastPos.y()
 
-        __ event.buttons() & Qt.LeftButton:
+        __ event.buttons() & __.LeftButton:
             self.setXRotation(self.xRot + 8 * dy)
             self.setYRotation(self.yRot + 8 * dx)
-        ____ event.buttons() & Qt.RightButton:
+        ____ event.buttons() & __.RightButton:
             self.setXRotation(self.xRot + 8 * dy)
             self.setZRotation(self.zRot + 8 * dx)
 
@@ -217,7 +217,7 @@ c_ HelloGLWidget(QOpenGLWidget):
         r_ genList
 
     ___ quad  x1, y1, x2, y2, x3, y3, x4, y4):
-        self.setColor(self.trolltechGreen)
+        self.sC..(self.trolltechGreen)
 
         self.gl.glVertex3d(x1, y1, -0.05)
         self.gl.glVertex3d(x2, y2, -0.05)
@@ -230,7 +230,7 @@ c_ HelloGLWidget(QOpenGLWidget):
         self.gl.glVertex3d(x1, y1, +0.05)
 
     ___ extrude  x1, y1, x2, y2):
-        self.setColor(self.trolltechGreen.darker(250 + int(100 * x1)))
+        self.sC..(self.trolltechGreen.darker(250 + int(100 * x1)))
 
         self.gl.glVertex3d(x1, y1, +0.05)
         self.gl.glVertex3d(x2, y2, +0.05)
@@ -247,7 +247,7 @@ c_ HelloGLWidget(QOpenGLWidget):
     ___ setClearColor  c):
         self.gl.glClearColor(c.redF(), c.greenF(), c.blueF(), c.alphaF())
 
-    ___ setColor  c):
+    ___ sC..  c):
         self.gl.glColor4f(c.redF(), c.greenF(), c.blueF(), c.alphaF())
 
 

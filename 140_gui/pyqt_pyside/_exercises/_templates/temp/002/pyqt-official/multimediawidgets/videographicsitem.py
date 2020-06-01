@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QDir, QSize, QSizeF, Qt, QUrl
+____ ?.?C.. ______ QDir, QSize, QSizeF, __, QUrl
 ____ ?.?G.. ______ QTransform
 ____ ?.QtMultimedia ______ QMediaContent, QMediaPlayer
 ____ ?.QtMultimediaWidgets ______ QGraphicsVideoItem
@@ -66,7 +66,7 @@ c_ VideoPlayer(QWidget):
 
         scene.addItem(self.videoItem)
 
-        rotateSlider _ QSlider(Qt.Horizontal)
+        rotateSlider _ QSlider(__.Horizontal)
         rotateSlider.setRange(-180,  180)
         rotateSlider.setValue(0)
         rotateSlider.valueChanged.c..(self.rotateVideo)
@@ -79,7 +79,7 @@ c_ VideoPlayer(QWidget):
         self.playButton.setIcon(self.style().standardIcon(QStyle.SP_MediaPlay))
         self.playButton.c__.c..(self.play)
 
-        self.positionSlider _ QSlider(Qt.Horizontal)
+        self.positionSlider _ QSlider(__.Horizontal)
         self.positionSlider.setRange(0, 0)
         self.positionSlider.sliderMoved.c..(self.setPosition)
 

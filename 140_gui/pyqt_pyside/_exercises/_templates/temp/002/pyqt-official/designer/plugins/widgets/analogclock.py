@@ -42,9 +42,9 @@
 #############################################################################
 
 
-____ ?.QtCore ______ (pyqtProperty, pyqtSignal, pyqtSlot, QPoint, QSize,
-        Qt, QTime, QTimer)
-____ ?.?G.. ______ QBrush, QColor, QPainter, QPen, QPolygon
+____ ?.?C.. ______ (pyqtProperty, pyqtSignal, pyqtSlot, QPoint, QSize,
+        __, QTime, QTimer)
+____ ?.?G.. ______ QBrush, ?C.., QPainter, QPen, QPolygon
 ____ ?.?W.. ______ ?A.., QWidget
 
 
@@ -87,8 +87,8 @@ c_ PyAnalogClock(QWidget):
             QPoint(0, -70)
         ])
 
-        self.hourColor _ QColor(0, 127, 0)
-        self.minuteColor _ QColor(0, 127, 127, 191)
+        self.hourColor _ ?C..(0, 127, 0)
+        self.minuteColor _ ?C..(0, 127, 127, 191)
 
     ___ paintEvent  event):
 
@@ -102,7 +102,7 @@ c_ PyAnalogClock(QWidget):
         painter.translate(self.width() / 2, self.height() / 2)
         painter.scale(side / 200.0, side / 200.0)
 
-        painter.setPen(Qt.NoPen)
+        painter.setPen(__.NoPen)
         painter.setBrush(QBrush(self.hourColor))
 
         painter.save()
@@ -116,7 +116,7 @@ c_ PyAnalogClock(QWidget):
             painter.drawLine(88, 0, 96, 0)
             painter.rotate(30.0)
 
-        painter.setPen(Qt.NoPen)
+        painter.setPen(__.NoPen)
         painter.setBrush(QBrush(self.minuteColor))
 
         painter.save()

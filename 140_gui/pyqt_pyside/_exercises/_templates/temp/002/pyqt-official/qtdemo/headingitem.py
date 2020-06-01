@@ -40,8 +40,8 @@
 #############################################################################
 
 
-____ ?.QtCore ______ Qt
-____ ?.?G.. ______ (QColor, QFontMetrics, QImage, QLinearGradient,
+____ ?.?C.. ______ __
+____ ?.?G.. ______ (?C.., QFontMetrics, QImage, QLinearGradient,
         QPainter, QPen)
 
 ____ colors ______ Colors
@@ -67,7 +67,7 @@ c_ HeadingItem(DemoItem):
 
         image _ QImage(int((w + xShadow) * sx), int((h + yShadow) * sy),
                 QImage.Format_ARGB32_Premultiplied)
-        image.fill(QColor(0, 0, 0, 0).rgba())
+        image.fill(?C..(0, 0, 0, 0).rgba())
         painter _ QPainter(image)
         painter.setFont(Colors.headingFont())
         painter.scale(sx, sy)
@@ -76,25 +76,25 @@ c_ HeadingItem(DemoItem):
         brush_shadow _ QLinearGradient(xShadow, yShadow, w, yShadow)
         brush_shadow.setSpread(QLinearGradient.PadSpread)
         __ Colors.useEightBitPalette:
-            brush_shadow.setColorAt(0.0, QColor(0, 0, 0))
+            brush_shadow.setColorAt(0.0, ?C..(0, 0, 0))
         ____
-            brush_shadow.setColorAt(0.0, QColor(0, 0, 0, 100))
+            brush_shadow.setColorAt(0.0, ?C..(0, 0, 0, 100))
         pen_shadow _ QPen()
         pen_shadow.setBrush(brush_shadow)
         painter.setPen(pen_shadow)
         painter.drawText(int(xShadow), int(yShadow), int(w), int(h),
-                Qt.AlignLeft, self.text)
+                __.AlignLeft, self.text)
 
         # Draw text.
         brush_text _ QLinearGradient(0, 0, w, w)
         brush_text.setSpread(QLinearGradient.PadSpread)
-        brush_text.setColorAt(0.0, QColor(255, 255, 255))
-        brush_text.setColorAt(0.2, QColor(255, 255, 255))
-        brush_text.setColorAt(0.5, QColor(190, 190, 190))
+        brush_text.setColorAt(0.0, ?C..(255, 255, 255))
+        brush_text.setColorAt(0.2, ?C..(255, 255, 255))
+        brush_text.setColorAt(0.5, ?C..(190, 190, 190))
         pen_text _ QPen()
         pen_text.setBrush(brush_text)
         painter.setPen(pen_text)
-        painter.drawText(0, 0, int(w), int(h), Qt.AlignLeft, self.text)
+        painter.drawText(0, 0, int(w), int(h), __.AlignLeft, self.text)
 
         r_ image
 

@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ Qt
+____ ?.?C.. ______ __
 ____ ?.?W.. ______ QGridLayout, QLabel, QLineEdit, ?MB.., ?PB.., QTextEdit, QVBoxLayout, QWidget
 
 
@@ -103,7 +103,7 @@ c_ AddressBook(QWidget):
         self.cancelButton.c__.c..(self.cancel)
 
         buttonLayout1 _ QVBoxLayout()
-        buttonLayout1.addWidget(self.addButton, Qt.AlignTop)
+        buttonLayout1.addWidget(self.addButton, __.AlignTop)
         buttonLayout1.addWidget(self.submitButton)
         buttonLayout1.addWidget(self.cancelButton)
         buttonLayout1.addStretch()
@@ -111,7 +111,7 @@ c_ AddressBook(QWidget):
         mainLayout _ QGridLayout()
         mainLayout.addWidget(nameLabel, 0, 0)
         mainLayout.addWidget(self.nameLine, 0, 1)
-        mainLayout.addWidget(addressLabel, 1, 0, Qt.AlignTop)
+        mainLayout.addWidget(addressLabel, 1, 0, __.AlignTop)
         mainLayout.addWidget(self.addressText, 1, 1)
         mainLayout.addLayout(buttonLayout1, 1, 2)
 
@@ -126,7 +126,7 @@ c_ AddressBook(QWidget):
         self.addressText.clear()
 
         self.nameLine.setReadOnly F..
-        self.nameLine.setFocus(Qt.OtherFocusReason)
+        self.nameLine.setFocus(__.OtherFocusReason)
         self.addressText.setReadOnly F..
 
         self.addButton.setEnabled F..

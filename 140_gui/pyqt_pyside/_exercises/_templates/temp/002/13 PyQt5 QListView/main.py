@@ -1,5 +1,5 @@
 ____ ?.?W.. ______ *
-____ ?.QtCore ______ QStringListModel
+____ ?.?C.. ______ QStringListModel
 
 app _ ?
 model _ QStringListModel([

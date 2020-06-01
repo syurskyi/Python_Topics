@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, ?G.., ?W..
+____ ? ______ ?C.., ?G.., ?W..
 
 c_ Ui_SchemaMainWindow(object):
     ___ setupUi  SchemaMainWindow):
@@ -50,10 +50,10 @@ c_ Ui_SchemaMainWindow(object):
         SchemaMainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(SchemaMainWindow)
-        QtCore.QMetaObject.connectSlotsByName(SchemaMainWindow)
+        ?C...QMetaObject.connectSlotsByName(SchemaMainWindow)
 
     ___ retranslateUi  SchemaMainWindow):
-        _translate _ QtCore.QCoreApplication.translate
+        _translate _ ?C...QCoreApplication.translate
         SchemaMainWindow.setWindowTitle(_translate("SchemaMainWindow", "XML Schema Validation"))
         self.schemaLabel.sT..(_translate("SchemaMainWindow", "XML Schema Document:"))
         self.instanceLabel.sT..(_translate("SchemaMainWindow", "XML Instance Document:"))

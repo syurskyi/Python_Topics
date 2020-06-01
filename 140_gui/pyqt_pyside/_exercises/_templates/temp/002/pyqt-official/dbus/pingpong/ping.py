@@ -44,7 +44,7 @@
 
 ______ sys
 
-____ ?.QtCore ______ QCoreApplication
+____ ?.?C.. ______ QCoreApplication
 ____ ?.QtDBus ______ QDBusConnection, QDBusInterface, QDBusReply
 
 

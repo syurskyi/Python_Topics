@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.QtCore ______ QDate, QFile, Qt, QTextStream
+____ ?.?C.. ______ QDate, QFile, __, QTextStream
 ____ ?.?G.. ______ (QFont, QIcon, ?KS.., QTextCharFormat,
         QTextCursor, QTextTableFormat)
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
@@ -88,7 +88,7 @@ c_ MainWindow ?MW..
         tableFormat _ QTextTableFormat()
         tableFormat.setBorder(1)
         tableFormat.setCellPadding(16)
-        tableFormat.setAlignment(Qt.AlignRight)
+        tableFormat.setAlignment(__.AlignRight)
         cursor.insertTable(1, 1, tableFormat)
         cursor.insertText("The Firm", boldFormat)
         cursor.insertBlock()
@@ -139,7 +139,7 @@ c_ MainWindow ?MW..
             r_
 
         out _ QTextStream(file)
-        ?A...setOverrideCursor(Qt.WaitCursor)
+        ?A...setOverrideCursor(__.WaitCursor)
         out << self.textEdit.toHtml()
         ?A...restoreOverrideCursor()
 
@@ -252,7 +252,7 @@ c_ MainWindow ?MW..
 
     ___ createDockWindows(self):
         dock _ QDockWidget("Customers", self)
-        dock.setAllowedAreas(Qt.LeftDockWidgetArea | Qt.RightDockWidgetArea)
+        dock.setAllowedAreas(__.LeftDockWidgetArea | __.RightDockWidgetArea)
         self.customerList _ QListWidget(dock)
         self.customerList.addItems((
             "John Doe, Harmony Enterprises, 12 Lakeside, Ambleton",
@@ -262,7 +262,7 @@ c_ MainWindow ?MW..
             "Sol Harvey, Chicos Coffee, 53 New Springs, Eccleston",
             "Sally Hobart, Tiroli Tea, 67 Long River, Fedula"))
         dock.setWidget(self.customerList)
-        self.addDockWidget(Qt.RightDockWidgetArea, dock)
+        self.addDockWidget(__.RightDockWidgetArea, dock)
         self.viewMenu.aA..(dock.toggleViewAction())
 
         dock _ QDockWidget("Paragraphs", self)
@@ -286,7 +286,7 @@ c_ MainWindow ?MW..
             "You made an overpayment (more than $5). Do you wish to buy more "
                 "items, or should we return the excess to you?"))
         dock.setWidget(self.paragraphsList)
-        self.addDockWidget(Qt.RightDockWidgetArea, dock)
+        self.addDockWidget(__.RightDockWidgetArea, dock)
         self.viewMenu.aA..(dock.toggleViewAction())
 
         self.customerList.currentTextChanged.c..(self.insertCustomer)

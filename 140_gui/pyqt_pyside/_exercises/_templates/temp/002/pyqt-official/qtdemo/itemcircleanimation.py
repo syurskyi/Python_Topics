@@ -43,7 +43,7 @@
 ______ math
 ______ random
 
-____ ?.QtCore ______ QLineF, QPointF, QRectF, Qt, QTime
+____ ?.?C.. ______ QLineF, QPointF, QRectF, __, QTime
 
 ____ colors ______ Colors
 ____ demoitem ______ DemoItem
@@ -203,7 +203,7 @@ c_ ItemCircleAnimation(DemoItem):
         self.paused _ False
         self.doIntroTransitions _ True
         self.setAcceptHoverEvents(True)
-        self.setCursor(Qt.OpenHandCursor)
+        self.setCursor(__.OpenHandCursor)
         self.setupGuides()
         self.setupLetters()
         self.useGuideQt()
@@ -352,14 +352,14 @@ c_ ItemCircleAnimation(DemoItem):
     ___ mousePressEvent  event):
         self.mouseMoveLastPosition _ event.scenePos();
 
-        __ event.button() == Qt.LeftButton:
-            self.setCursor(Qt.ClosedHandCursor)
+        __ event.button() == __.LeftButton:
+            self.setCursor(__.ClosedHandCursor)
         ____
             self.switchToNextEffect()
 
     ___ mouseReleaseEvent  event):
-        __ event.button() == Qt.LeftButton:
-            self.setCursor(Qt.OpenHandCursor)
+        __ event.button() == __.LeftButton:
+            self.setCursor(__.OpenHandCursor)
 
     ___ mouseMoveEvent  event):
         newPosition _ event.scenePos()

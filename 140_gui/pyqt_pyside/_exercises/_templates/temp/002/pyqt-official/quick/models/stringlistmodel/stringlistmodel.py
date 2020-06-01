@@ -44,7 +44,7 @@
 ______ os
 ______ sys
 
-____ ?.QtCore ______ QUrl
+____ ?.?C.. ______ QUrl
 ____ ?.?G.. ______ QGuiApplication
 ____ ?.QtQuick ______ QQuickView
 
