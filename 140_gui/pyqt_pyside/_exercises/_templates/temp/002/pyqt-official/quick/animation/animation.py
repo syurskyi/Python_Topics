@@ -66,4 +66,4 @@ view.engine().quit.c..(app.quit)
 view.setSource(QUrl('qrc:///animation/animation.qml'))
 view.s..
 
-___.exit(app.exec_())
+___.e..(app.exec_())

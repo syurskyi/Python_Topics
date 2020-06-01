@@ -16,10 +16,10 @@ c_ MainWindow(qtw.QMainWindow):
         # Main UI code goes here
 
         widgets _ [
-            qtw.QLabel("I am a label"),
+            ?.?L..("I am a label"),
             ?.?LE..(placeholderText_"I am a line edit"),
             qtw.QSpinBox(),
-            qtw.QCheckBox("I am a checkbox"),
+            ?.?CB..("I am a checkbox"),
             qtw.QComboBox(editable_True)
         ]
         container _ qtw.?W..
@@ -31,8 +31,8 @@ c_ MainWindow(qtw.QMainWindow):
 
         # Style switching combobox
         styles _ qtw.QStyleFactory.keys()
-        style_combo _ qtw.QComboBox()
-        style_combo.addItems(styles)
+        style_combo _ ?.?CB..
+        style_combo.aI..(styles)
         style_combo.currentTextChanged.c..(set_style)
         container.layout().aW..(style_combo)
 
@@ -48,4 +48,4 @@ __ ______ __ ______
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()
-    ___.exit(app.exec())
+    ___.e..(app.e..

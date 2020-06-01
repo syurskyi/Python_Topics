@@ -12,7 +12,7 @@ ____ ? ______ ?C.., ?G.., ?W..
 c_ Ui_SchemaMainWindow(object):
     ___ setupUi  SchemaMainWindow):
         SchemaMainWindow.setObjectName("SchemaMainWindow")
-        SchemaMainWindow.resize(417, 594)
+        SchemaMainWindow.r..(417, 594)
         centralwidget _ ?W...QWidget(SchemaMainWindow)
         centralwidget.setObjectName("centralwidget")
         gridLayout _ ?W...QGridLayout(centralwidget)
@@ -54,7 +54,7 @@ c_ Ui_SchemaMainWindow(object):
 
     ___ retranslateUi  SchemaMainWindow):
         _translate _ ?C...QCoreApplication.translate
-        SchemaMainWindow.setWindowTitle(_translate("SchemaMainWindow", "XML Schema Validation"))
+        SchemaMainWindow.sWT..(_translate("SchemaMainWindow", "XML Schema Validation"))
         schemaLabel.sT..(_translate("SchemaMainWindow", "XML Schema Document:"))
         instanceLabel.sT..(_translate("SchemaMainWindow", "XML Instance Document:"))
         label.sT..(_translate("SchemaMainWindow", "Status:"))

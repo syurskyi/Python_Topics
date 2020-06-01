@@ -119,8 +119,8 @@ c_ SortingBox(QWidget):
         trianglePath.lineTo(120, 100)
         trianglePath.lineTo(x + 120 / 2, y)
 
-        setWindowTitle("Tooltips")
-        resize(500, 300)
+        sWT..("Tooltips")
+        r..(500, 300)
 
         createShapeItem(circlePath, "Circle",
                 initialItemPosition(circlePath),
@@ -275,4 +275,4 @@ __ __name__ == "__main__":
     app _ ?A..(___.a..
     sortingBox _ SortingBox()
     sortingBox.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

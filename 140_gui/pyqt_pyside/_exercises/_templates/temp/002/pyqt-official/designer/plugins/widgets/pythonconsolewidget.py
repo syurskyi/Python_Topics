@@ -95,4 +95,4 @@ __ __name__ == "__main__":
     app _ ?A..(___.a..
     widget _ PythonConsoleWidget()
     widget.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

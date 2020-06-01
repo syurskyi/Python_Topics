@@ -71,8 +71,8 @@ c_ Screenshot(QWidget):
         shootScreen()
         delaySpinBox.setValue(5)
 
-        setWindowTitle("Screenshot")
-        resize(300, 200)
+        sWT..("Screenshot")
+        r..(300, 200)
 
     ___ resizeEvent  event):
         scaledSize _ originalPixmap.size()
@@ -170,4 +170,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     screenshot _ Screenshot()
     screenshot.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

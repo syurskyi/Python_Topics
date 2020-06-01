@@ -175,4 +175,4 @@ __ ______ __ ______
     mainWindow _ MainWindow()
     mainWindow.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

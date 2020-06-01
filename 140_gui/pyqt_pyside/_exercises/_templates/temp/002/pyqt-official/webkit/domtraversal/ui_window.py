@@ -12,7 +12,7 @@ ____ ? ______ ?C.., ?G.., ?W..
 c_ Ui_Window(object):
     ___ setupUi  Window):
         Window.setObjectName("Window")
-        Window.resize(800, 600)
+        Window.r..(800, 600)
         centralwidget _ ?W...QWidget(Window)
         centralwidget.setObjectName("centralwidget")
         verticalLayout_2 _ ?W...QVBoxLayout(centralwidget)
@@ -51,7 +51,7 @@ c_ Ui_Window(object):
 
     ___ retranslateUi  Window):
         _translate _ ?C...QCoreApplication.translate
-        Window.setWindowTitle(_translate("Window", "Web Element DOM Traversal"))
-        dockWidget.setWindowTitle(_translate("Window", "Document Structure"))
+        Window.sWT..(_translate("Window", "Web Element DOM Traversal"))
+        dockWidget.sWT..(_translate("Window", "Document Structure"))
 
 ____ ? ______ QtWebKitWidgets

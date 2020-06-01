@@ -128,7 +128,7 @@ ___ createView(title, model):
     view _ QTableView()
     views.ap..(view)
     view.sM..(model)
-    view.setWindowTitle(title)
+    view.sWT..(title)
     view.move(100 + offset, 100 + offset)
     offset +_ 20
     view.s..
@@ -140,7 +140,7 @@ __ ______ __ ______
 
     app _ ?A..(___.a..
     __ no. connection.createConnection
-        ___.exit(1)
+        ___.e..(1)
 
     plainModel _ QSqlQueryModel()
     editableModel _ EditableSqlModel()
@@ -154,4 +154,4 @@ __ ______ __ ______
     createView("Editable Query Model", editableModel)
     createView("Custom Query Model", customModel)
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

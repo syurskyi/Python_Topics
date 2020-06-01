@@ -11,7 +11,7 @@ ____ ? ______ ?C.., ?G.., ?W..
 c_ Ui_MainWindow(object):
     ___ setupUi  MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(330, 417)
+        MainWindow.r..(330, 417)
         centralwidget _ ?W...QWidget(MainWindow)
         centralwidget.setObjectName("centralwidget")
         horizontalLayout _ ?W...QHBoxLayout(centralwidget)
@@ -263,7 +263,7 @@ c_ Ui_MainWindow(object):
 
     ___ retranslateUi  MainWindow):
         _translate _ ?C...QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Raindar"))
+        MainWindow.sWT..(_translate("MainWindow", "Raindar"))
         lineEdit.sT..(_translate("MainWindow", "Utrecht,the Netherlands"))
         forecastTime1.sT..(_translate("MainWindow", "+3h"))
         forecastTime2.sT..(_translate("MainWindow", "+6h"))

@@ -99,7 +99,7 @@ c_ MainWindow(QGraphicsView):
         setGeometry(windowRect)
         setMinimumSize(80, 60)
 
-        setWindowTitle("PyQt Examples")
+        sWT..("PyQt Examples")
         setHorizontalScrollBarPolicy(__.ScrollBarAlwaysOff)
         setVerticalScrollBarPolicy(__.ScrollBarAlwaysOff)
         setFrameStyle(QFrame.NoFrame)

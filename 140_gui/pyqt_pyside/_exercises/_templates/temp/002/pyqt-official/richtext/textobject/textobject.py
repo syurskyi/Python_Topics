@@ -76,7 +76,7 @@ c_ Window(QWidget):
         setupGui()
         setupTextObject()
 
-        setWindowTitle("Text Object Example")
+        sWT..("Text Object Example")
 
     ___ insertTextObject
         fileName _ fileNameLineEdit.t__()
@@ -136,4 +136,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ Window()
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

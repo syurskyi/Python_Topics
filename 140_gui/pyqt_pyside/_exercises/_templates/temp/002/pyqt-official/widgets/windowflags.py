@@ -64,7 +64,7 @@ c_ PreviewWindow(QWidget):
         layout.aW..(closeButton)
         sL..(layout)
 
-        setWindowTitle("Preview")
+        sWT..("Preview")
 
     ___ setWindowFlags  flags):
         super(PreviewWindow, self).setWindowFlags(flags)
@@ -142,7 +142,7 @@ c_ ControllerWindow(QWidget):
         mainLayout.aL..(bottomLayout)
         sL..(mainLayout)
 
-        setWindowTitle("Window Flags")
+        sWT..("Window Flags")
         updatePreview()
 
     ___ updatePreview
@@ -280,4 +280,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     controller _ ControllerWindow()
     controller.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

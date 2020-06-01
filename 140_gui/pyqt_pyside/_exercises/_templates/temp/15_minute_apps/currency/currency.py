@@ -175,7 +175,7 @@ class MainWindow(QMainWindow):
         toolbar.addWidget(progress)
 
         refresh_historic_rates()
-        setWindowTitle("Doughnut")
+        sWT..("Doughnut")
         show()
 
     def update_currency_list(self, currencies):

@@ -69,8 +69,8 @@ c_ MainWindow ?MW..
         autoRefreshAct.setChecked(True)
         fallbacksAct.setChecked(True)
 
-        setWindowTitle("Settings Editor")
-        resize(500, 600)
+        sWT..("Settings Editor")
+        r..(500, 600)
 
     ___ openSettings
         __ locationDialog __ N..:
@@ -82,7 +82,7 @@ c_ MainWindow ?MW..
                                         locationDialog.organization(),
                                         locationDialog.application())
             setSettingsObject(settings)
-            fallbacksAct.setEnabled(True)
+            fallbacksAct.sE..(True)
 
     ___ openIniFile
         fileName, _ _ ?FD...gOFN..  "Open INI File", '',
@@ -91,7 +91,7 @@ c_ MainWindow ?MW..
         __ fileName:
             settings _ QSettings(fileName, QSettings.IniFormat)
             setSettingsObject(settings)
-            fallbacksAct.setEnabled F..
+            fallbacksAct.sE.. F..
 
     ___ openPropertyList
         fileName, _ _ ?FD...gOFN..  "Open Property List",
@@ -100,7 +100,7 @@ c_ MainWindow ?MW..
         __ fileName:
             settings _ QSettings(fileName, QSettings.NativeFormat)
             setSettingsObject(settings)
-            fallbacksAct.setEnabled F..
+            fallbacksAct.sE.. F..
 
     ___ openRegistryPath
         path, ok _ QInputDialog.getText  "Open Registry Path",
@@ -110,7 +110,7 @@ c_ MainWindow ?MW..
         __ ok and path !_ '':
             settings _ QSettings(path, QSettings.NativeFormat)
             setSettingsObject(settings)
-            fallbacksAct.setEnabled F..
+            fallbacksAct.sE.. F..
 
     ___ about
         ?MB...about  "About Settings Editor",
@@ -127,12 +127,12 @@ c_ MainWindow ?MW..
         openPropertyListAct _ ?A..("Open Mac &Property List...", self,
                 shortcut_"Ctrl+P", triggered_self.openPropertyList)
         __ ___.platform !_ 'darwin':
-            openPropertyListAct.setEnabled F..
+            openPropertyListAct.sE.. F..
 
         openRegistryPathAct _ ?A..("Open Windows &Registry Path...",
                 self, shortcut_"Ctrl+G", triggered_self.openRegistryPath)
         __ ___.platform !_ 'win32':
-            openRegistryPathAct.setEnabled F..
+            openRegistryPathAct.sE.. F..
 
         refreshAct _ ?A..("&Refresh", self, shortcut_"Ctrl+R",
                 enabled_False, triggered_self.settingsTree.refresh)
@@ -179,8 +179,8 @@ c_ MainWindow ?MW..
         settings.setFallbacksEnabled(fallbacksAct.isChecked())
         settingsTree.setSettingsObject(settings)
 
-        refreshAct.setEnabled(True)
-        autoRefreshAct.setEnabled(True)
+        refreshAct.sE..(True)
+        autoRefreshAct.sE..(True)
 
         niceName _ settings.fileName()
         niceName.replace('\\', '/')
@@ -189,7 +189,7 @@ c_ MainWindow ?MW..
         __ no. settings.isWritable
             niceName +_ " (read only)"
 
-        setWindowTitle("%s - Settings Editor" % niceName)
+        sWT..("%s - Settings Editor" % niceName)
 
 
 c_ LocationDialog(QDialog):
@@ -268,8 +268,8 @@ c_ LocationDialog(QDialog):
 
         updateLocationsTable()
 
-        setWindowTitle("Open Application Settings")
-        resize(650, 400)
+        sWT..("Open Application Settings")
+        r..(650, 400)
 
     ___ format
         __ formatComboBox.currentIndex() == 0:
@@ -722,4 +722,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     mainWin _ MainWindow()
     mainWin.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

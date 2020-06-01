@@ -74,10 +74,10 @@ c_ Sender(QDialog):
         mainLayout.aW..(buttonBox)
         sL..(mainLayout)
 
-        setWindowTitle("Broadcast Sender")
+        sWT..("Broadcast Sender")
 
     ___ startBroadcasting 
-        startButton.setEnabled F..
+        startButton.sE.. F..
         timer.start(1000)
 
     ___ broadcastDatagramm 
@@ -94,4 +94,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     sender _ Sender()
     sender.s..
-    ___.exit(sender.exec_())
+    ___.e..(sender.exec_())

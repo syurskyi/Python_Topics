@@ -12,7 +12,7 @@ ____ ? ______ ?C.., ?G.., ?W..
 c_ Ui_VideoSettingsUi(object):
     ___ setupUi  VideoSettingsUi):
         VideoSettingsUi.setObjectName("VideoSettingsUi")
-        VideoSettingsUi.resize(561, 369)
+        VideoSettingsUi.r..(561, 369)
         gridLayout_4 _ ?W...QGridLayout(VideoSettingsUi)
         gridLayout_4.setObjectName("gridLayout_4")
         scrollArea _ ?W...QScrollArea(VideoSettingsUi)
@@ -103,7 +103,7 @@ c_ Ui_VideoSettingsUi(object):
 
     ___ retranslateUi  VideoSettingsUi):
         _translate _ ?C...QCoreApplication.translate
-        VideoSettingsUi.setWindowTitle(_translate("VideoSettingsUi", "Dialog"))
+        VideoSettingsUi.sWT..(_translate("VideoSettingsUi", "Dialog"))
         groupBox.setTitle(_translate("VideoSettingsUi", "Audio"))
         label_2.sT..(_translate("VideoSettingsUi", "Audio Codec:"))
         label_5.sT..(_translate("VideoSettingsUi", "Sample Rate:"))

@@ -487,8 +487,8 @@ c_ MainWindow ?MW..
 
         openFile(':/Charts/qtdata.cht')
 
-        setWindowTitle("Chart")
-        resize(870, 550)
+        sWT..("Chart")
+        r..(870, 550)
 
     ___ setupModel
         model _ QStandardItemModel(8, 2, self)
@@ -586,4 +586,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ MainWindow()
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

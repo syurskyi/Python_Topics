@@ -89,11 +89,11 @@ c_ Client(QDialog):
         mainLayout.aW..(buttonBox, 3, 0, 1, 2)
         sL..(mainLayout)
 
-        setWindowTitle("Fortune Client")
+        sWT..("Fortune Client")
         hostLineEdit.setFocus()
 
     ___ requestNewFortune
-        getFortuneButton.setEnabled F..
+        getFortuneButton.sE.. F..
         blockSize _ 0
         socket.abort()
         socket.connectToServer(hostLineEdit.t__())
@@ -117,7 +117,7 @@ c_ Client(QDialog):
  
         currentFortune _ nextFortune
         statusLabel.sT..(currentFortune)
-        getFortuneButton.setEnabled(True)
+        getFortuneButton.sE..(True)
 
     ___ displayError  socketError):
         errors _ {
@@ -139,10 +139,10 @@ c_ Client(QDialog):
         __ msg __ no. N..:
             ?MB...information  "Fortune Client", msg)
 
-        getFortuneButton.setEnabled(True)
+        getFortuneButton.sE..(True)
 
     ___ enableGetFortuneButton
-        getFortuneButton.setEnabled(hostLineEdit.t__() !_ "")
+        getFortuneButton.sE..(hostLineEdit.t__() !_ "")
 
 
 __ ______ __ ______
@@ -152,4 +152,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     client _ Client()
     client.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

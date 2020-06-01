@@ -12,7 +12,7 @@ ____ ? ______ ?C.., ?G.., ?W..
 c_ Ui_Form(object):
     ___ setupUi  Form):
         Form.setObjectName("Form")
-        Form.resize(680, 218)
+        Form.r..(680, 218)
         horizontalLayout _ ?W...QHBoxLayout(Form)
         horizontalLayout.setObjectName("horizontalLayout")
         webFormGroupBox _ ?W...QGroupBox(Form)
@@ -76,7 +76,7 @@ c_ Ui_Form(object):
 
     ___ retranslateUi  Form):
         _translate _ ?C...QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", "Form"))
+        Form.sWT..(_translate("Form", "Form"))
         webFormGroupBox.setTitle(_translate("Form", "Web Form"))
         dataGroupBox.setTitle(_translate("Form", "Extracted Data"))
         firstNameLabel.sT..(_translate("Form", "First Name"))

@@ -12,7 +12,7 @@ ____ ? ______ ?C.., ?G.., ?W..
 c_ Ui_embeddedDialog(object):
     ___ setupUi  embeddedDialog):
         embeddedDialog.setObjectName("embeddedDialog")
-        embeddedDialog.resize(407, 134)
+        embeddedDialog.r..(407, 134)
         formLayout _ ?W...QFormLayout(embeddedDialog)
         formLayout.setObjectName("formLayout")
         label _ ?W...QLabel(embeddedDialog)
@@ -52,7 +52,7 @@ c_ Ui_embeddedDialog(object):
 
     ___ retranslateUi  embeddedDialog):
         _translate _ ?C...QCoreApplication.translate
-        embeddedDialog.setWindowTitle(_translate("embeddedDialog", "Embedded Dialog"))
+        embeddedDialog.sWT..(_translate("embeddedDialog", "Embedded Dialog"))
         label.sT..(_translate("embeddedDialog", "Layout Direction:"))
         layoutDirection.setItemText(0, _translate("embeddedDialog", "Left to Right"))
         layoutDirection.setItemText(1, _translate("embeddedDialog", "Right to Left"))

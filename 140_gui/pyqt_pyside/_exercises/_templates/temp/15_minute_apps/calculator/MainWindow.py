@@ -11,7 +11,7 @@ ____ ? ______ ?C.., ?G.., ?W..
 c_ Ui_MainWindow(object):
     ___ setupUi  MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(484, 433)
+        MainWindow.r..(484, 433)
         centralWidget _ ?W...QWidget(MainWindow)
         sizePolicy _ ?W...QSizePolicy(?W...QSizePolicy.Maximum, ?W...QSizePolicy.Maximum)
         sizePolicy.setHorizontalStretch(0)
@@ -271,7 +271,7 @@ c_ Ui_MainWindow(object):
 
     ___ retranslateUi  MainWindow):
         _translate _ ?C...QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Calculon"))
+        MainWindow.sWT..(_translate("MainWindow", "Calculon"))
         pushButton_n4.sT..(_translate("MainWindow", "4"))
         pushButton_n4.sS..(_translate("MainWindow", "4"))
         pushButton_n1.sT..(_translate("MainWindow", "1"))

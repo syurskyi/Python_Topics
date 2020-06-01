@@ -246,7 +246,7 @@ __ ______ __ ______
     populateTableWidget(tableWidget)
 
     tableWidget.resizeColumnsToContents()
-    tableWidget.resize(500, 300)
+    tableWidget.r..(500, 300)
     tableWidget.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

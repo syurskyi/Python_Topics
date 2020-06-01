@@ -90,26 +90,26 @@ c_ TextEdit ?MW..
         colorChanged(textEdit.textColor())
         alignmentChanged(textEdit.alignment())
         textEdit.document().modificationChanged.c..(
-                actionSave.setEnabled)
+                actionSave.sE..)
         textEdit.document().modificationChanged.c..(
                 setWindowModified)
         textEdit.document().undoAvailable.c..(
-                actionUndo.setEnabled)
+                actionUndo.sE..)
         textEdit.document().redoAvailable.c..(
-                actionRedo.setEnabled)
+                actionRedo.sE..)
         setWindowModified(textEdit.document().iM..())
-        actionSave.setEnabled(textEdit.document().iM..())
-        actionUndo.setEnabled(textEdit.document().isUndoAvailable())
-        actionRedo.setEnabled(textEdit.document().isRedoAvailable())
+        actionSave.sE..(textEdit.document().iM..())
+        actionUndo.sE..(textEdit.document().isUndoAvailable())
+        actionRedo.sE..(textEdit.document().isRedoAvailable())
         actionUndo.t__.c..(textEdit.undo)
         actionRedo.t__.c..(textEdit.redo)
-        actionCut.setEnabled F..
-        actionCopy.setEnabled F..
+        actionCut.sE.. F..
+        actionCopy.sE.. F..
         actionCut.t__.c..(textEdit.cut)
         actionCopy.t__.c..(textEdit.copy)
         actionPaste.t__.c..(textEdit.paste)
-        textEdit.copyAvailable.c..(actionCut.setEnabled)
-        textEdit.copyAvailable.c..(actionCopy.setEnabled)
+        textEdit.copyAvailable.c..(actionCut.sE..)
+        textEdit.copyAvailable.c..(actionCopy.sE..)
         ?A...clipboard().dataChanged.c..(clipboardDataChanged)
 
         __ fileName __ N..:
@@ -126,7 +126,7 @@ c_ TextEdit ?MW..
 
     ___ setupFileActions 
         tb _ QToolBar
-        tb.setWindowTitle("File Actions")
+        tb.sWT..("File Actions")
         addToolBar(tb)
 
         menu _ QMenu("&File", self)
@@ -196,7 +196,7 @@ c_ TextEdit ?MW..
 
     ___ setupEditActions 
         tb _ QToolBar
-        tb.setWindowTitle("Edit Actions")
+        tb.sWT..("Edit Actions")
         addToolBar(tb)
 
         menu _ QMenu("&Edit", self)
@@ -244,7 +244,7 @@ c_ TextEdit ?MW..
 
     ___ setupTextActions 
         tb _ QToolBar
-        tb.setWindowTitle("Format Actions")
+        tb.sWT..("Format Actions")
         addToolBar(tb)
 
         menu _ QMenu("F&ormat", self)
@@ -352,7 +352,7 @@ c_ TextEdit ?MW..
 
         tb _ QToolBar
         tb.setAllowedAreas(__.TopToolBarArea | __.BottomToolBarArea)
-        tb.setWindowTitle("Format Actions")
+        tb.sWT..("Format Actions")
         addToolBarBreak(__.TopToolBarArea)
         addToolBar(tb)
 
@@ -436,7 +436,7 @@ c_ TextEdit ?MW..
         ____
             shownName _ QFileInfo(fileName).fileName()
 
-        setWindowTitle(tr("%s[*] - %s" % (shownName, "Rich Text")))
+        sWT..(tr("%s[*] - %s" % (shownName, "Rich Text")))
         setWindowModified F..
 
     ___ fileNew 
@@ -484,7 +484,7 @@ c_ TextEdit ?MW..
         __ textEdit.textCursor().hasSelection
             dlg.addEnabledOption(QPrintDialog.PrintSelection)
 
-        dlg.setWindowTitle("Print Document")
+        dlg.sWT..("Print Document")
 
         __ dlg.e.. == QPrintDialog.Accepted:
             textEdit.print_(printer)
@@ -602,7 +602,7 @@ c_ TextEdit ?MW..
         alignmentChanged(textEdit.alignment())
 
     ___ clipboardDataChanged 
-        actionPaste.setEnabled(le.(?A...clipboard().t__()) !_ 0)
+        actionPaste.sE..(le.(?A...clipboard().t__()) !_ 0)
 
     ___ about 
         ?MB...about  "About",
@@ -649,8 +649,8 @@ __ ______ __ ______
     mainWindows _   # list
     ___ fn __ ___.argv[1:] or [N..]:
         textEdit _ TextEdit(fn)
-        textEdit.resize(700, 800)
+        textEdit.r..(700, 800)
         textEdit.s..
         mainWindows.ap..(textEdit)
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

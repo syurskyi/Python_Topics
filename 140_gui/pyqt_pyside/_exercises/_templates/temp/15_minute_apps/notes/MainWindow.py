@@ -11,7 +11,7 @@ ____ ? ______ ?C.., ?G.., ?W..
 c_ Ui_MainWindow(object):
     ___ setupUi  MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(264, 279)
+        MainWindow.r..(264, 279)
         MainWindow.setAutoFillBackground(True)
         centralWidget _ ?W...QWidget(MainWindow)
         sizePolicy _ ?W...QSizePolicy(?W...QSizePolicy.Maximum, ?W...QSizePolicy.Maximum)
@@ -77,7 +77,7 @@ c_ Ui_MainWindow(object):
 
     ___ retranslateUi  MainWindow):
         _translate _ ?C...QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Failamp"))
+        MainWindow.sWT..(_translate("MainWindow", "Failamp"))
         closeButton.sT..(_translate("MainWindow", "×"))
         moreButton.sT..(_translate("MainWindow", "＋"))
 

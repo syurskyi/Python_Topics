@@ -559,7 +559,7 @@ class MainWindow(QMainWindow):
 
         shuffle_and_stack()
 
-        setWindowTitle("Ronery")
+        sWT..("Ronery")
         show()
 
     def restart_game 

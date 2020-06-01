@@ -58,8 +58,8 @@ c_ Window(QWidget):
         grid.aW..(createPushButtonGroup(), 1, 1)
         sL..(grid)
 
-        setWindowTitle("Group Box")
-        resize(480, 320)
+        sWT..("Group Box")
+        r..(480, 320)
 
     ___ createFirstExclusiveGroup 
         groupBox _ QGroupBox("Exclusive Radio Buttons")
@@ -166,4 +166,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     clock _ Window()
     clock.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

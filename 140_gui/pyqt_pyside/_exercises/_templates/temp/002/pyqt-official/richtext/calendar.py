@@ -162,7 +162,7 @@ c_ MainWindow ?MW..
 
         cursor.endEditBlock()
 
-        setWindowTitle("Calendar for %s %d" % (QDate.longMonthName(selectedDate.month()), selectedDate.year()))
+        sWT..("Calendar for %s %d" % (QDate.longMonthName(selectedDate.month()), selectedDate.year()))
 
     ___ setfontSize  size):
         fontSize _ size
@@ -185,6 +185,6 @@ __ ______ __ ______
 
     app _ ?A..(___.a..
     window _ MainWindow()
-    window.resize(640, 256)
+    window.r..(640, 256)
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

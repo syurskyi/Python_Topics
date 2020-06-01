@@ -61,7 +61,7 @@ c_ MainWindow ?MW..
         newAction.sS..("Ctrl+N")
         printAction _ fileMenu.aA..("&Print...", printFile)
         printAction.sS..("Ctrl+P")
-        printAction.setEnabled F..
+        printAction.sE.. F..
         quitAction _ fileMenu.aA..("E&xit")
         quitAction.sS..("Ctrl+Q")
         mB.. .aM..(fileMenu)
@@ -72,7 +72,7 @@ c_ MainWindow ?MW..
         quitAction.t__.c..(close)
 
         sCW..(letters)
-        setWindowTitle("Order Form")
+        sWT..("Order Form")
 
     ___ createLetter  name, address, orderItems, sendOffers):
         editor _ QTextEdit()
@@ -183,7 +183,7 @@ c_ MainWindow ?MW..
         cursor.insertBlock()
         cursor.insertText(name)
 
-        printAction.setEnabled(True)
+        printAction.sE..(True)
 
     ___ createSample
         dialog _ DetailsDialog('Dialog with default values', self)
@@ -203,7 +203,7 @@ c_ MainWindow ?MW..
         printer _ QPrinter()
 
         dialog _ QPrintDialog(printer, self)
-        dialog.setWindowTitle("Print Document")
+        dialog.sWT..("Print Document")
 
         __ editor.textCursor().hasSelection
             dialog.addEnabledOption(QAbstractPrintDialog.PrintSelection)
@@ -246,7 +246,7 @@ c_ DetailsDialog(QDialog):
         mainLayout.aW..(buttonBox, 3, 0, 1, 3)
         sL..(mainLayout)
 
-        setWindowTitle(title)
+        sWT..(title)
 
     ___ setupItemsTable
         itemsTable _ QTableWidget(le.(items), 2)
@@ -297,7 +297,7 @@ __ ______ __ ______
 
     app _ ?A..(___.a..
     window _ MainWindow()
-    window.resize(640, 480)
+    window.r..(640, 480)
     window.s..
     window.createSample()
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

@@ -94,7 +94,7 @@ c_ Server(QDialog):
         mainLayout.aL..(buttonLayout)
         sL..(mainLayout)
 
-        setWindowTitle("Fortune Server")
+        sWT..("Fortune Server")
 
     ___ sendFortune
         block _ QByteArray()
@@ -119,4 +119,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     server _ Server()
     server.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

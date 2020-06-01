@@ -79,7 +79,7 @@ c_ Dialog(QDialog):
         ui.loadFromFileButton.c__.c..(loadFromFile)
         ui.loadFromSharedMemoryButton.c__.c..(loadFromMemory)
 
-        setWindowTitle("SharedMemory Example")
+        sWT..("SharedMemory Example")
 
     ___ loadFromFile 
         """ This slot function is called when the "Load Image From File..."
@@ -178,4 +178,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     dialog _ Dialog()
     dialog.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

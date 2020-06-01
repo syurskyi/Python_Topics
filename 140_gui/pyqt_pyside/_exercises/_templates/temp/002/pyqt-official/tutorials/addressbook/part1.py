@@ -63,7 +63,7 @@ c_ AddressBook(QWidget):
         mainLayout.aW..(addressText, 1, 1)
 
         sL..(mainLayout)
-        setWindowTitle("Simple Address Book")
+        sWT..("Simple Address Book")
 
 
 __ ______ __ ______
@@ -76,4 +76,4 @@ __ ______ __ ______
     addressBook _ AddressBook()
     addressBook.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

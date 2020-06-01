@@ -97,7 +97,7 @@ c_ Window(QWidget):
         table _ QTableWidget(3, 2)
         table.setHorizontalHeaderLabels(["Name", "Hair Color"])
         table.verticalHeader().setVisible F..
-        table.resize(150, 50)
+        table.r..(150, 50)
 
         ___ i, (name, color) __ en..(tableData):
             nameItem _ QTableWidgetItem(name)
@@ -113,7 +113,7 @@ c_ Window(QWidget):
         layout.aW..(table, 0, 0)
         sL..(layout)
 
-        setWindowTitle("Color Editor Factory")
+        sWT..("Color Editor Factory")
 
 
 __ ______ __ ______
@@ -125,4 +125,4 @@ __ ______ __ ______
     window _ Window()
     window.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

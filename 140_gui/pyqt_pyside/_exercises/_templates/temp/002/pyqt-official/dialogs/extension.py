@@ -103,7 +103,7 @@ c_ FindDialog(QDialog):
         mainLayout.setRowStretch(2, 1)
         sL..(mainLayout)
 
-        setWindowTitle("Extension")
+        sWT..("Extension")
         extension.hide()
 
 
@@ -114,4 +114,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     dialog _ FindDialog()
     dialog.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

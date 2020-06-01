@@ -49,8 +49,8 @@ c_ DataGrid(QWidget):
         layout.aL..(hLayout)
         sL..(layout)
 
-        setWindowTitle("DataGrid")
-        resize(600, 300)
+        sWT..("DataGrid")
+        r..(600, 300)
 
     ___ closeEvent  event):
         db.close()
@@ -60,4 +60,4 @@ __ __name__ == "__main__":
     window _ DataGrid()
     window.initUI()
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

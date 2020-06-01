@@ -13,8 +13,8 @@ c_ PlayButton(qtw.?PB..):
         s_. - ('Play')
         setFont(qtg.QFont('Sans', 32, qtg.QFont.Bold))
         sSP..(
-            qtw.QSizePolicy.E..,
-            qtw.QSizePolicy.E..
+            ?.?SP...E..,
+            ?.?SP...E..
         )
         setStyleSheet(play_stylesheet)
 
@@ -51,7 +51,7 @@ c_ SoundWidget ?.?W..
         sL..(qtw.QGridLayout())
 
         # Playback
-        label _ qtw.QLabel("No file loaded")
+        label _ ?.?L..("No file loaded")
         layout().aW..(label, 0, 0, 1, 2)
 
         play_button _ PlayButton()
@@ -77,7 +77,7 @@ c_ SoundWidget ?.?W..
 
 
         # Looping
-        loop_cb _ qtw.QCheckBox(
+        loop_cb _ ?.?CB..(
             'Loop',
             stateChanged_self.on_loop_cb
         )
@@ -194,4 +194,4 @@ __ ______ __ ______
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()
-    ___.exit(app.exec())
+    ___.e..(app.e..

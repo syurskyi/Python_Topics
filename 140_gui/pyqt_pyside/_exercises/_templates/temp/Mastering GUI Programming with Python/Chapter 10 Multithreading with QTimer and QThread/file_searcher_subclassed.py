@@ -55,7 +55,7 @@ c_ SearchForm ?.?W..
             textChanged_self.textChanged,
             returnPressed_self.rP__)
         layout().aW..(search_term_inp)
-        results _ qtw.QListWidget()
+        results _ ?.?LW..
         layout().aW..(results)
         rP__.c..(results.clear)
 
@@ -101,4 +101,4 @@ __ ______ __ ______
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()
-    ___.exit(app.exec())
+    ___.e..(app.e..

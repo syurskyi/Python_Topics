@@ -105,7 +105,7 @@ c_ DragWidget(QWidget):
 
         setAcceptDrops(True)
         setMinimumSize(400, max(200, y))
-        setWindowTitle("Draggable Text")
+        sWT..("Draggable Text")
 
     ___ dragEnterEvent  event):
         __ event.mimeData().hasText
@@ -152,4 +152,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ DragWidget()
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

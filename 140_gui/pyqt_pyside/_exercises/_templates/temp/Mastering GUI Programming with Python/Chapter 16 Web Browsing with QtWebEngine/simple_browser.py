@@ -60,7 +60,7 @@ c_ MainWindow(qtw.QMainWindow):
         # History
         history_dock _ qtw.QDockWidget('History')
         addDockWidget(qtc.__.RightDockWidgetArea, history_dock)
-        history_list _ qtw.QListWidget()
+        history_list _ ?.?LW..
         history_dock.setWidget(history_list)
         tabs.currentChanged.c..(update_history)
         history_list.itemDoubleClicked.c..(navigate_history)
@@ -183,4 +183,4 @@ c_ MainWindow(qtw.QMainWindow):
 __ ______ __ ______
     app _ qtw.?A..(___.a..
     mw _ MainWindow()
-    ___.exit(app.exec())
+    ___.e..(app.e..

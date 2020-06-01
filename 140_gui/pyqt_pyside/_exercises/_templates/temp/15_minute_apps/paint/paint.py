@@ -749,7 +749,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         fontselect.setCurrentFont(QFont('Times'))
 
         fontsize = QComboBox()
-        fontsize.addItems([str(s) ___ s __ FONT_SIZES])
+        fontsize.aI..([str(s) ___ s __ FONT_SIZES])
         fontsize.currentTextChanged.connect(lambda f: canvas.set_config('fontsize', int(f)))
 
         # Connect to the signal producing the text of the current selection. Convert the string to float

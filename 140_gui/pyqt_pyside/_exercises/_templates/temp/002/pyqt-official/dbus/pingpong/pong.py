@@ -64,14 +64,14 @@ __ ______ __ ______
         ___.stderr.w..("Cannot connect to the D-Bus session bus.\n"
                 "To start it, run:\n"
                 "\teval `dbus-launch --auto-syntax`\n");
-        ___.exit(1)
+        ___.e..(1)
 
     __ no. QDBusConnection.sessionBus().registerService('org.example.QtDBus.PingExample'):
         ___.stderr.w..("%s\n" % QDBusConnection.sessionBus().lastError().message())
-        ___.exit(1)
+        ___.e..(1)
 
     pong _ Pong()
     QDBusConnection.sessionBus().registerObject('/', pong,
             QDBusConnection.ExportAllSlots)
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

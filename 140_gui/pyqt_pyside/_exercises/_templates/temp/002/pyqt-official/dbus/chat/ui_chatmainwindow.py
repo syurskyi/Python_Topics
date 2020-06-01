@@ -12,7 +12,7 @@ ____ ? ______ ?C.., ?G.., ?W..
 c_ Ui_ChatMainWindow(object):
     ___ setupUi  ChatMainWindow):
         ChatMainWindow.setObjectName("ChatMainWindow")
-        ChatMainWindow.resize(800, 600)
+        ChatMainWindow.r..(800, 600)
         centralwidget _ ?W...QWidget(ChatMainWindow)
         centralwidget.setObjectName("centralwidget")
         hboxlayout _ ?W...QHBoxLayout(centralwidget)
@@ -84,7 +84,7 @@ c_ Ui_ChatMainWindow(object):
 
     ___ retranslateUi  ChatMainWindow):
         _translate _ ?C...QCoreApplication.translate
-        ChatMainWindow.setWindowTitle(_translate("ChatMainWindow", "Qt D-Bus Chat"))
+        ChatMainWindow.sWT..(_translate("ChatMainWindow", "Qt D-Bus Chat"))
         chatHistory.setToolTip(_translate("ChatMainWindow", "Messages sent and received from other users"))
         label.sT..(_translate("ChatMainWindow", "Message:"))
         sendButton.setToolTip(_translate("ChatMainWindow", "Sends a message to other people"))

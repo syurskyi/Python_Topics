@@ -72,7 +72,7 @@ c_ Window(QWidget):
         previewLayout.setColumnMinimumWidth(0,
                 calendar.sizeHint().width())
 
-        setWindowTitle("Calendar Widget")
+        sWT..("Calendar Widget")
 
     ___ localeChanged  index):
         calendar.setLocale(localeCombo.itemData(index))
@@ -414,4 +414,4 @@ __ ______ __ ______
     window _ Window()
     window.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

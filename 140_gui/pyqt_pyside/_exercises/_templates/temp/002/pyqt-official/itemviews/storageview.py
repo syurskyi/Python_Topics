@@ -151,7 +151,7 @@ ___ main(args):
     app _ ?A.. (args)
     view _ ?TV..
     view.sM..(StorageModel(view))
-    view.resize(640, 480)
+    view.r..(640, 480)
     view.setSelectionBehavior(QAbstractItemView.SelectRows)
     ___ column __ range(view.model().columnCount()):
         view.resizeColumnToContents(column)

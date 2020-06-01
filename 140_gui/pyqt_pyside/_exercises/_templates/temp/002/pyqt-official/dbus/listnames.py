@@ -54,7 +54,7 @@ ___ method1
     reply _ QDBusConnection.sessionBus().interface().registeredServiceNames()
     __ no. reply.isValid
         ___.stdout.w..("Error: %s\n" % reply.error().message())
-        ___.exit(1)
+        ___.e..(1)
 
     # Mimic the output from the C++ version.
     ___ name __ reply.value
@@ -89,7 +89,7 @@ __ ______ __ ______
         ___.stderr.w..("Cannot connect to the D-Bus session bus.\n"
                 "To start it, run:\n"
                 "\teval `dbus-launch --auto-syntax`\n");
-        ___.exit(1)
+        ___.e..(1)
 
     method1()
     method2()

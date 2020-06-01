@@ -412,7 +412,7 @@ c_ MainWindow ?MW..
         widget.sL..(layout)
 
         sCW..(widget)
-        setWindowTitle("Diagramscene")
+        sWT..("Diagramscene")
 
     ___ backgroundButtonGroupClicked  button):
         buttons _ backgroundButtonGroup.buttons()
@@ -737,7 +737,7 @@ c_ MainWindow ?MW..
         pointerTypeGroup.buttonClicked[int].c..(pointerGroupClicked)
 
         sceneScaleCombo _ QComboBox()
-        sceneScaleCombo.addItems(["50%", "75%", "100%", "125%", "150%"])
+        sceneScaleCombo.aI..(["50%", "75%", "100%", "125%", "150%"])
         sceneScaleCombo.setCurrentIndex(2)
         sceneScaleCombo.currentIndexChanged[str].c..(sceneScaleChanged)
 
@@ -829,4 +829,4 @@ __ ______ __ ______
     mainWindow.setGeometry(100, 100, 800, 500)
     mainWindow.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

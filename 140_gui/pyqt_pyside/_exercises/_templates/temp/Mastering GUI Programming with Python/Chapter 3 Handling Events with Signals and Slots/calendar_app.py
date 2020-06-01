@@ -15,7 +15,7 @@ c_ CategoryWindow ?.?W..
 
         sL.. ?.?VBL..
         layout().aW..(
-            qtw.QLabel('Please enter a new catgory name:')
+            ?.?L..('Please enter a new catgory name:')
             )
         category_entry _ qtw.?LE..
         layout().aW..(category_entry)
@@ -47,52 +47,52 @@ c_ MainWindow ?.?W..
         """MainWindow constructor. """
         s_. - ()
         # Configure the window
-        setWindowTitle("My Calendar App")
-        resize(800, 600)
+        sWT..("My Calendar App")
+        r..(800, 600)
 
 
         # Create our widgets
-        calendar _ qtw.QCalendarWidget()
-        event_list _ qtw.QListWidget()
+        calendar _ ?.?CW..
+        event_list _ ?.?LW..
         event_title _ qtw.?LE..
-        event_category _ qtw.QComboBox()
+        event_category _ ?.?CB..
         event_time _ qtw.QTimeEdit(qtc.QTime(8, 0))
-        allday_check _ qtw.QCheckBox('All Day')
-        event_detail _ qtw.QTextEdit()
+        allday_check _ ?.?CB..('All Day')
+        event_detail _ ?.?TE..)
         add_button _ qtw.?PB..('Add/Update')
         del_button _ qtw.?PB..('Delete')
 
         # Configure some widgets
 
         # Add event categories
-        event_category.addItems(
+        event_category.aI..(
             ['Select category…', 'New…', 'Work',
              'Meeting', 'Doctor', 'Family']
             )
         # disable the first category item
-        event_category.model().item(0).setEnabled F..
+        event_category.model().item(0).sE.. F..
 
         # Arrange the widgets
-        main_layout _ qtw.QHBoxLayout()
+        main_layout _ ?.?HBL..
         sL..(main_layout)
         main_layout.aW..(calendar)
         # Calendar expands to fill the window
         calendar.sSP..(
-            qtw.QSizePolicy.E..,
-            qtw.QSizePolicy.E..
+            ?.?SP...E..,
+            ?.?SP...E..
         )
         right_layout _ qtw.?VBL..
         main_layout.aL..(right_layout)
-        right_layout.aW..(qtw.QLabel('Events on Date'))
+        right_layout.aW..(?.?L..('Events on Date'))
         right_layout.aW..(event_list)
         # Event list expands to fill the right area
         event_list.sSP..(
-            qtw.QSizePolicy.E..,
-            qtw.QSizePolicy.E..
+            ?.?SP...E..,
+            ?.?SP...E..
             )
 
         # Create a sub-layout for the event view/add form
-        event_form _ qtw.QGroupBox('Event')
+        event_form _ ?.?GB..('Event')
         right_layout.aW..(event_form)
         event_form_layout _ ?.?GL..
         event_form_layout.aW..(event_title, 1, 1, 1, 3)
@@ -223,4 +223,4 @@ __ ______ __ ______
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()
-    ___.exit(app.exec())
+    ___.e..(app.e..

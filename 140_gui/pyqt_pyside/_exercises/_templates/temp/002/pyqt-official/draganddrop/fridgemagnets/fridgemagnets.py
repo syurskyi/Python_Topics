@@ -127,7 +127,7 @@ c_ DragWidget(QWidget):
         sP..(newPalette)
 
         setMinimumSize(400, max(200, y))
-        setWindowTitle("Fridge Magnets")
+        sWT..("Fridge Magnets")
         setAcceptDrops(True)
 
     ___ dragEnterEvent  event):
@@ -193,4 +193,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ DragWidget()
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

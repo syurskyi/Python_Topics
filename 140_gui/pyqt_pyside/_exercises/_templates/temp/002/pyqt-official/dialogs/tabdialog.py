@@ -69,7 +69,7 @@ c_ TabDialog(QDialog):
         mainLayout.aW..(buttonBox)
         sL..(mainLayout)
 
-        setWindowTitle("Tab Dialog")
+        sWT..("Tab Dialog")
 
 
 c_ GeneralTab(QWidget):
@@ -202,4 +202,4 @@ __ ______ __ ______
 
     tabdialog _ TabDialog(fileName)
     tabdialog.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

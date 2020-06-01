@@ -49,5 +49,5 @@ c_ PrintView(QTableView):
         setHorizontalScrollBarPolicy(__.ScrollBarAlwaysOff)
 
     ___ print_  printer):
-        resize(printer.width(), printer.height())
+        r..(printer.width(), printer.height())
         render(printer)

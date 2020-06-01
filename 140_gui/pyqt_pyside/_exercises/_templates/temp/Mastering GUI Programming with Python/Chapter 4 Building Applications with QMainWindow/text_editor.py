@@ -12,9 +12,9 @@ c_ SettingsDialog(qtw.QDialog):
         sL..(qtw.QFormLayout())
         settings _ settings
         layout().addRow(
-            qtw.QLabel('<h1>Application Settings</h1>'),
+            ?.?L..('<h1>Application Settings</h1>'),
         )
-        show_warnings_cb _ qtw.QCheckBox(
+        show_warnings_cb _ ?.?CB..(
             #checked=settings.get('show_warnings')
             checked_settings.value('show_warnings', type_bool)
         )
@@ -51,7 +51,7 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
         ######################
         # The central widget #
         ######################
-        textedit _ qtw.QTextEdit()
+        textedit _ ?.?TE..)
         sCW..(textedit)
 
         #################
@@ -67,7 +67,7 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
         statusBar().showMessage('Welcome to text_editor.py')
 
         # add widgets to statusbar
-        charcount_label _ qtw.QLabel("chars: 0")
+        charcount_label _ ?.?L..("chars: 0")
         textedit.textChanged.c..(
             lambda: charcount_label.sT..(
                 "chars: " +
@@ -201,7 +201,7 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
             # custom message box
 
             splash_screen _ qtw.?MB..
-            splash_screen.setWindowTitle('My Text Editor')
+            splash_screen.sWT..('My Text Editor')
             splash_screen.sT..('BETA SOFTWARE WARNING!')
             splash_screen.setInformativeText(
                 'This is very, very beta, '
@@ -309,4 +309,4 @@ __ ______ __ ______
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()
-    ___.exit(app.exec())
+    ___.e..(app.e..

@@ -59,8 +59,8 @@ c_ DataGrid(QWidget):
         layout.aL..(hLayout)
         sL..(layout)
 
-        setWindowTitle("DataGrid")
-        resize(600, 300)
+        sWT..("DataGrid")
+        r..(600, 300)
 
     ___ setUpConnect 
         prevButton.c__.c..(onPrevPage)
@@ -130,14 +130,14 @@ c_ DataGrid(QWidget):
         currentPageLabel.sT..(str(currentPage))
         totalPageLabel.sT..(str(totalPage))
         __ currentPage <_ 1:
-            prevButton.setEnabled F..
+            prevButton.sE.. F..
         ____
-            prevButton.setEnabled(True)
+            prevButton.sE..(True)
 
         __ currentPage >_ totalPage:
-            nextButton.setEnabled F..
+            nextButton.sE.. F..
         ____
-            nextButton.setEnabled(True)
+            nextButton.sE..(True)
 
     # Close database connection when interface is closed
     ___ closeEvent  event):
@@ -147,4 +147,4 @@ __ __name__ == "__main__":
     app _ ?A..(___.a..
     window _ DataGrid()
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

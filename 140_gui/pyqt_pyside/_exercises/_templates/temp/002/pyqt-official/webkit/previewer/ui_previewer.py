@@ -12,7 +12,7 @@ ____ ? ______ ?C.., ?G.., ?W..
 c_ Ui_Form(object):
     ___ setupUi  Form):
         Form.setObjectName("Form")
-        Form.resize(911, 688)
+        Form.r..(911, 688)
         horizontalLayout_4 _ ?W...QHBoxLayout(Form)
         horizontalLayout_4.setObjectName("horizontalLayout_4")
         splitter _ ?W...QSplitter(Form)
@@ -53,7 +53,7 @@ c_ Ui_Form(object):
 
     ___ retranslateUi  Form):
         _translate _ ?C...QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", "Form"))
+        Form.sWT..(_translate("Form", "Form"))
         editorBox.setTitle(_translate("Form", "HTML Editor"))
         clearButton.sT..(_translate("Form", "Clear"))
         previewButton.sT..(_translate("Form", "Preview"))

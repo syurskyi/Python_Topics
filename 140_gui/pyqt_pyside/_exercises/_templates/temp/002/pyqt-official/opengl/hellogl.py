@@ -79,7 +79,7 @@ c_ Window(QWidget):
         ySlider.setValue(345 * 16)
         zSlider.setValue(0 * 16)
 
-        setWindowTitle("Hello GL")
+        sWT..("Hello GL")
 
     ___ createSlider
         slider _ QSlider(__.Vertical)
@@ -280,4 +280,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ Window()
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

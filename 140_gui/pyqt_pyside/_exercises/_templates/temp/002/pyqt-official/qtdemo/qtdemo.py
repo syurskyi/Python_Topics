@@ -86,4 +86,4 @@ __ ______ __ ______
     artisticSleep(500)
     mainWindow.start()
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

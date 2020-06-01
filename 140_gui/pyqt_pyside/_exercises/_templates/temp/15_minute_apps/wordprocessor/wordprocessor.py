@@ -186,7 +186,7 @@ c_ MainWindow ?MW..
         format_toolbar.aW..(fonts)
 
         fontsize _ QComboBox()
-        fontsize.addItems([str(s) ___ s __ FONT_SIZES])
+        fontsize.aI..([str(s) ___ s __ FONT_SIZES])
 
         # Connect to the signal producing the text of the current selection. Convert the string to float
         # and set as the pointsize. We could also use the index + retrieve from FONT_SIZES.
@@ -361,7 +361,7 @@ c_ MainWindow ?MW..
             editor.print_(dlg.printer())
 
     ___ update_title
-        setWindowTitle("%s - Megasolid Idiom" % (__.p__ .basename(path) __ path else "Untitled"))
+        sWT..("%s - Megasolid Idiom" % (__.p__ .basename(path) __ path else "Untitled"))
 
     ___ edit_toggle_wrap
         editor.setLineWrapMode( 1 __ editor.lineWrapMode() == 0 else 0 )

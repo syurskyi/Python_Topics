@@ -82,4 +82,4 @@ __ ______ __ ______
     win.setUrl(QUrl('http://www.webkit.org'))
     win.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

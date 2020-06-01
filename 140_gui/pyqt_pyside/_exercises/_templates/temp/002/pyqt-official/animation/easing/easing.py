@@ -233,9 +233,9 @@ c_ Window(QWidget):
         isElastic _ (curveType >_ QEasingCurve.InElastic and curveType <_ QEasingCurve.OutInElastic)
         isBounce _ (curveType >_ QEasingCurve.InBounce and curveType <_ QEasingCurve.OutInBounce)
 
-        m_ui.periodSpinBox.setEnabled(isElastic)
-        m_ui.amplitudeSpinBox.setEnabled(isElastic or isBounce)
-        m_ui.overshootSpinBox.setEnabled(curveType >_ QEasingCurve.InBack and curveType <_ QEasingCurve.OutInBack)
+        m_ui.periodSpinBox.sE..(isElastic)
+        m_ui.amplitudeSpinBox.sE..(isElastic or isBounce)
+        m_ui.overshootSpinBox.sE..(curveType >_ QEasingCurve.InBack and curveType <_ QEasingCurve.OutInBack)
 
     ___ pathChanged  index):
         m_anim.setPathType(index)
@@ -262,6 +262,6 @@ __ ______ __ ______
 
     app _ ?A..(___.a..
     w _ Window()
-    w.resize(400, 400)
+    w.r..(400, 400)
     w.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

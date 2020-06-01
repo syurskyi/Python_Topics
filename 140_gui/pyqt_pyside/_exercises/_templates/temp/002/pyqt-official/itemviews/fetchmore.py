@@ -133,7 +133,7 @@ c_ Window(QWidget):
         layout.aW..(logViewer, 2, 0, 1, 2)
 
         sL..(layout)
-        setWindowTitle("Fetch More Example")
+        sWT..("Fetch More Example")
 
     ___ updateLog  number):
         logViewer.ap..("%d items added." % number)
@@ -148,4 +148,4 @@ __ ______ __ ______
     window _ Window()
     window.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

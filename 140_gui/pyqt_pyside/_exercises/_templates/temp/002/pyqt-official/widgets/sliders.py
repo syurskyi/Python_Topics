@@ -134,7 +134,7 @@ c_ Window(QWidget):
         maximumSpinBox.setValue(20)
         valueSpinBox.setValue(5)
 
-        setWindowTitle("Sliders")
+        sWT..("Sliders")
 
     ___ createControls  title):
         controlsGroup _ QGroupBox(title)
@@ -192,4 +192,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ Window()
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

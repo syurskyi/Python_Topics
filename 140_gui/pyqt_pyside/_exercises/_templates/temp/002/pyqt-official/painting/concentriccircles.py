@@ -126,7 +126,7 @@ c_ Window(QWidget):
         timer.start(100)
         sL..(layout)
 
-        setWindowTitle("Concentric Circles")
+        sWT..("Concentric Circles")
 
     ___ createLabel  t__):
         label _ QLabel(t__)
@@ -143,4 +143,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ Window()
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

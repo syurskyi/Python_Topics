@@ -171,7 +171,7 @@ c_ Window(QWidget):
         setupShapes()
         shapeSelected(0)
 
-        setWindowTitle("Transformations")
+        sWT..("Transformations")
 
     ___ setupShapes
         truck _ QPainterPath()
@@ -246,4 +246,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ Window()
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

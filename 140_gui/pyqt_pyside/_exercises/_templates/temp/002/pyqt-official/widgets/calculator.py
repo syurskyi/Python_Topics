@@ -154,7 +154,7 @@ c_ Calculator(QWidget):
         mainLayout.aW..(equalButton, 5, 5)
         sL..(mainLayout)
 
-        setWindowTitle("Calculator")
+        sWT..("Calculator")
 
     ___ digitClicked
         clickedButton _ sender()
@@ -354,4 +354,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     calc _ Calculator()
     calc.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

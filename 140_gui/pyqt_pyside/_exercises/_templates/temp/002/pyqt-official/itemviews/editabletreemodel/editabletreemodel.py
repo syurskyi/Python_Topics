@@ -394,12 +394,12 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
 
     ___ updateActions
         hasSelection _ no. view.selectionModel().selection().isEmpty()
-        removeRowAction.setEnabled(hasSelection)
-        removeColumnAction.setEnabled(hasSelection)
+        removeRowAction.sE..(hasSelection)
+        removeColumnAction.sE..(hasSelection)
 
         hasCurrent _ view.selectionModel().currentIndex().isValid()
-        insertRowAction.setEnabled(hasCurrent)
-        insertColumnAction.setEnabled(hasCurrent)
+        insertRowAction.sE..(hasCurrent)
+        insertColumnAction.sE..(hasCurrent)
 
         __ hasCurrent:
             view.closePersistentEditor(view.selectionModel().currentIndex())
@@ -419,4 +419,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ MainWindow()
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

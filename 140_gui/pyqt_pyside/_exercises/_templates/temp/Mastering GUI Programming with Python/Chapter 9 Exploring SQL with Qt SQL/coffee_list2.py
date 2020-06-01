@@ -34,7 +34,7 @@ c_ CoffeeForm ?.?W..
         layout().addRow('Brand: ', coffee_brand)
         coffee_name _ qtw.?LE..
         layout().addRow('Name: ', coffee_name)
-        roast _ qtw.QComboBox()
+        roast _ ?.?CB..
         layout().addRow('Roast: ', roast)
 
         # Map the coffee fields
@@ -141,7 +141,7 @@ c_ MainWindow(qtw.QMainWindow):
                 N.., 'DB Connection Error',
                 'Could not open database file: '
                 f'{db.lastError().t__()}')
-            ___.exit(1)
+            ___.e..(1)
 
         # Check for missing tables
         required_tables _ {'roasts', 'coffees', 'reviews'}
@@ -151,7 +151,7 @@ c_ MainWindow(qtw.QMainWindow):
                 N.., 'DB Integrity Error',
                 'Missing tables, please repair DB: '
                 f'{missing_tables}')
-            ___.exit(1)
+            ___.e..(1)
 
         # Create the models
         reviews_model _ qts.?STM..()
@@ -222,4 +222,4 @@ __ ______ __ ______
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()
-    ___.exit(app.exec())
+    ___.e..(app.e..

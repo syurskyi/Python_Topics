@@ -20,10 +20,10 @@ c_ MainWindow ?.?W..
             'Chicken Nuggets', 'Hot Dog', 'Fish Sandwich'
         ]
 
-        listwidget _ qtw.QListWidget()
-        listwidget.addItems(data)
-        combobox _ qtw.QComboBox()
-        combobox.addItems(data)
+        listwidget _ ?.?LW..
+        listwidget.aI..(data)
+        combobox _ ?.?CB..
+        combobox.aI..(data)
         layout().aW..(listwidget)
         layout().aW..(combobox)
 
@@ -39,7 +39,7 @@ c_ MainWindow ?.?W..
 
         listview _ qtw.QListView()
         listview.sM..(model)
-        model_combobox _ qtw.QComboBox()
+        model_combobox _ ?.?CB..
         model_combobox.sM..(model)
 
         layout().aW..(listview)
@@ -55,4 +55,4 @@ __ ______ __ ______
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()
-    ___.exit(app.exec())
+    ___.e..(app.e..

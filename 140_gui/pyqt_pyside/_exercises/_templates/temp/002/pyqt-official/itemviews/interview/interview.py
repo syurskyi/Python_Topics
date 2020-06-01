@@ -181,7 +181,7 @@ ___ main(args):
     list.setAttribute(__.WA_MacShowFocusRect, False)
     page.aW..(list)
     page.setWindowIcon(QIcon(images_dir + '/interview.png'))
-    page.setWindowTitle("Interview")
+    page.sWT..("Interview")
     page.s..
     r_ app.e..
 

@@ -11,7 +11,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(549, 452)
+        MainWindow.r..(549, 452)
         centralWidget = QtWidgets.QWidget(MainWindow)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Maximum)
         sizePolicy.setHorizontalStretch(0)
@@ -712,14 +712,14 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Piecasso"))
+        MainWindow.sWT..(_translate("MainWindow", "Piecasso"))
         menuFIle.setTitle(_translate("MainWindow", "FIle"))
         menuEdit.setTitle(_translate("MainWindow", "Edit"))
         menuImage.setTitle(_translate("MainWindow", "Image"))
         menuHelp.setTitle(_translate("MainWindow", "Help"))
-        fileToolbar.setWindowTitle(_translate("MainWindow", "toolBar"))
-        drawingToolbar.setWindowTitle(_translate("MainWindow", "toolBar"))
-        fontToolbar.setWindowTitle(_translate("MainWindow", "toolBar"))
+        fileToolbar.sWT..(_translate("MainWindow", "toolBar"))
+        drawingToolbar.sWT..(_translate("MainWindow", "toolBar"))
+        fontToolbar.sWT..(_translate("MainWindow", "toolBar"))
         actionCopy.setText(_translate("MainWindow", "Copy"))
         actionCopy.setShortcut(_translate("MainWindow", "Ctrl+C"))
         actionClearImage.setText(_translate("MainWindow", "Clear Image"))

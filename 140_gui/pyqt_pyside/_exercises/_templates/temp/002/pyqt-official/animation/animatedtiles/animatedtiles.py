@@ -218,7 +218,7 @@ __ ______ __ ______
 
     # Ui.
     view _ View(scene)
-    view.setWindowTitle("Animated Tiles")
+    view.sWT..("Animated Tiles")
     view.setViewportUpdateMode(QGraphicsView.BoundingRectViewportUpdate)
     view.setBackgroundBrush(QBrush(bgPix))
     view.setCacheMode(QGraphicsView.CacheBackground)
@@ -260,4 +260,4 @@ __ ______ __ ______
 
     states.start()
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

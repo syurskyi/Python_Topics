@@ -106,8 +106,8 @@ c_ DemoItemAnimation(QPropertyAnimation):
     ___ setCurveShape  shape):
         setEasingCurve(shape)
 
-    ___ setEnabled  enabled):
-        targetObject().setEnabled(enabled)
+    ___ sE..  enabled):
+        targetObject().sE..(enabled)
 
     ___ isVisible 
         r_ targetObject().isVisible()

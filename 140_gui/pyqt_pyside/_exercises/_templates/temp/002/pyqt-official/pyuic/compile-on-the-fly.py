@@ -64,4 +64,4 @@ c_ DemoImpl(QDialog, form_class):
 
 form _ DemoImpl()
 form.s..
-___.exit(app.exec_())
+___.e..(app.exec_())

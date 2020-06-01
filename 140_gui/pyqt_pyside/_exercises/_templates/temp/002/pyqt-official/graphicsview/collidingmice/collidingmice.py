@@ -214,8 +214,8 @@ __ ______ __ ______
     view.setCacheMode(QGraphicsView.CacheBackground)
     view.setViewportUpdateMode(QGraphicsView.BoundingRectViewportUpdate)
     view.setDragMode(QGraphicsView.ScrollHandDrag)
-    view.setWindowTitle("Colliding Mice")
-    view.resize(400, 300)
+    view.sWT..("Colliding Mice")
+    view.r..(400, 300)
     view.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

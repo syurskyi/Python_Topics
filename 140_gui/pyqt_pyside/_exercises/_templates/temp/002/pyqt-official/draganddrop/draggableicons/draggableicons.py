@@ -157,7 +157,7 @@ __ ______ __ ______
     horizontalLayout.aW..(DragWidget())
 
     mainWidget.sL..(horizontalLayout)
-    mainWidget.setWindowTitle("Draggable Icons")
+    mainWidget.sWT..("Draggable Icons")
     mainWidget.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

@@ -175,8 +175,8 @@ c_ Window(QWidget):
         mainLayout.aW..(proxyGroupBox)
         sL..(mainLayout)
 
-        setWindowTitle("Custom Sort/Filter Model")
-        resize(500, 450)
+        sWT..("Custom Sort/Filter Model")
+        r..(500, 450)
 
     ___ setSourceModel  model):
         proxyModel.setSourceModel(model)
@@ -245,4 +245,4 @@ __ __name__ == "__main__":
     window.setSourceModel(createMailModel(window))
     window.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

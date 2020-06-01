@@ -12,7 +12,7 @@ ____ ? ______ ?C.., ?G.., ?W..
 c_ Ui_Form(object):
     ___ setupUi  Form):
         Form.setObjectName("Form")
-        Form.resize(545, 471)
+        Form.r..(545, 471)
         gridLayout _ ?W...QGridLayout(Form)
         gridLayout.setObjectName("gridLayout")
         easingCurvePicker _ ?W...QListWidget(Form)
@@ -71,7 +71,7 @@ c_ Ui_Form(object):
         label.setObjectName("label")
         formLayout.setWidget(0, ?W...QFormLayout.LabelRole, label)
         periodSpinBox _ ?W...QDoubleSpinBox(groupBox)
-        periodSpinBox.setEnabled F..
+        periodSpinBox.sE.. F..
         sizePolicy _ ?W...QSizePolicy(?W...QSizePolicy.Minimum, ?W...QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -84,7 +84,7 @@ c_ Ui_Form(object):
         periodSpinBox.setObjectName("periodSpinBox")
         formLayout.setWidget(0, ?W...QFormLayout.FieldRole, periodSpinBox)
         amplitudeSpinBox _ ?W...QDoubleSpinBox(groupBox)
-        amplitudeSpinBox.setEnabled F..
+        amplitudeSpinBox.sE.. F..
         amplitudeSpinBox.setMinimumSize(?C...QSize(0, 30))
         amplitudeSpinBox.setMinimum(-1.0)
         amplitudeSpinBox.setSingleStep(0.1)
@@ -96,7 +96,7 @@ c_ Ui_Form(object):
         label_3.setObjectName("label_3")
         formLayout.setWidget(4, ?W...QFormLayout.LabelRole, label_3)
         overshootSpinBox _ ?W...QDoubleSpinBox(groupBox)
-        overshootSpinBox.setEnabled F..
+        overshootSpinBox.sE.. F..
         overshootSpinBox.setMinimumSize(?C...QSize(0, 30))
         overshootSpinBox.setMinimum(-1.0)
         overshootSpinBox.setSingleStep(0.1)
@@ -125,7 +125,7 @@ c_ Ui_Form(object):
 
     ___ retranslateUi  Form):
         _translate _ ?C...QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", "Easing curves"))
+        Form.sWT..(_translate("Form", "Easing curves"))
         groupBox_2.setTitle(_translate("Form", "Path type"))
         lineRadio.sT..(_translate("Form", "Line"))
         circleRadio.sT..(_translate("Form", "Circle"))

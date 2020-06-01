@@ -89,7 +89,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
         e.accept()
 
     ___ on_WebBrowser_TitleChange  title):
-        setWindowTitle("Qt WebBrowser - " + title)
+        sWT..("Qt WebBrowser - " + title)
 
     ___ on_WebBrowser_ProgressChange  a, b):
         __ a <_ 0 or b <_ 0:
@@ -102,15 +102,15 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
 
     ___ on_WebBrowser_CommandStateChange  cmd, on):
         __ cmd == 1:
-            actionForward.setEnabled(on)
+            actionForward.sE..(on)
         ____ cmd == 2:
-            actionBack.setEnabled(on)
+            actionBack.sE..(on)
 
     ___ on_WebBrowser_BeforeNavigate
-        actionStop.setEnabled(True)
+        actionStop.sE..(True)
 
     ___ on_WebBrowser_NavigateComplete  _):
-        actionStop.setEnabled F..
+        actionStop.sE.. F..
 
     @pyqtSlot()
     ___ on_actionGo_triggered
@@ -125,7 +125,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
             r_;
 
         window.addressEdit.sT..(addressEdit.t__())
-        window.actionStop.setEnabled(True)
+        window.actionStop.sE..(True)
         window.on_actionGo_triggered()
 
     @pyqtSlot()
@@ -144,4 +144,4 @@ __ __name__ == "__main__":
     a _ ?A..(___.a..
     w _ MainWindow()
     w.s..
-    ___.exit(a.exec_())
+    ___.e..(a.exec_())

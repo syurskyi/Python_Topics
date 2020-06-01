@@ -68,11 +68,11 @@ node _ QRemoteObjectNode(QUrl('local:registry'))
 node.setHeartbeatInterval(1000)
 
 view _ ?TV..
-view.setWindowTitle("RemoteView")
-view.resize(640, 480)
+view.sWT..("RemoteView")
+view.r..(640, 480)
 
 model _ node.acquireModel('RemoteModel')
 view.sM..(model)
 view.s..;
 
-___.exit(app.exec_())
+___.e..(app.exec_())

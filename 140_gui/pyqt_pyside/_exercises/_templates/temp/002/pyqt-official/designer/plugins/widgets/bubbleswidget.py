@@ -134,7 +134,7 @@ c_ BubblesWidget(BaseClass):
 
         setMouseTracking(True)
         setMinimumSize(QSize(200, 200))
-        setWindowTitle("Bubble Maker")
+        sWT..("Bubble Maker")
 
     ___ paintEvent  event):
 
@@ -332,4 +332,4 @@ __ __name__ == "__main__":
     app _ ?A..(___.a..
     widget _ BubblesWidget()
     widget.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

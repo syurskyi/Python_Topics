@@ -325,8 +325,8 @@ c_ MainWindow ?MW..
         ySlider.setValue(345 * 16)
         zSlider.setValue(0 * 16)
 
-        setWindowTitle("Grabber")
-        resize(400, 300)
+        sWT..("Grabber")
+        r..(400, 300)
 
     ___ grabFrameBuffer
         image _ glWidget.grabFramebuffer()
@@ -386,7 +386,7 @@ c_ MainWindow ?MW..
         __ size - QSize(1, 0) == pixmapLabelArea.maximumViewportSize
             size -_ QSize(1, 0)
 
-        pixmapLabel.resize(size)
+        pixmapLabel.r..(size)
 
 
 __ ______ __ ______
@@ -394,4 +394,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     mainWin _ MainWindow()
     mainWin.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

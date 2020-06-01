@@ -155,10 +155,10 @@ c_ MainWindow ?MW..
                 statusTip_"Show the Qt library's About box",
                 triggered_QApplication.instance().aboutQt)
 
-        cutAct.setEnabled F..
-        copyAct.setEnabled F..
-        textEdit.copyAvailable.c..(cutAct.setEnabled)
-        textEdit.copyAvailable.c..(copyAct.setEnabled)
+        cutAct.sE.. F..
+        copyAct.sE.. F..
+        textEdit.copyAvailable.c..(cutAct.sE..)
+        textEdit.copyAvailable.c..(copyAct.sE..)
 
     ___ createMenus 
         fileMenu _ mB.. .aM..("&File")
@@ -198,7 +198,7 @@ c_ MainWindow ?MW..
         settings _ QSettings("Trolltech", "Application Example")
         pos _ settings.value("pos", QPoint(200, 200))
         size _ settings.value("size", QSize(400, 400))
-        resize(size)
+        r..(size)
         move(pos)
 
     ___ writeSettings 
@@ -262,7 +262,7 @@ c_ MainWindow ?MW..
         ____
             shownName _ 'untitled.txt'
 
-        setWindowTitle("%s[*] - Application" % shownName)
+        sWT..("%s[*] - Application" % shownName)
 
     ___ strippedName  fullFileName):
         r_ QFileInfo(fullFileName).fileName()
@@ -275,4 +275,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     mainWin _ MainWindow()
     mainWin.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

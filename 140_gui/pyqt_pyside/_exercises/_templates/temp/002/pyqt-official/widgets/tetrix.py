@@ -101,8 +101,8 @@ c_ TetrixWindow(QWidget):
         layout.aW..(pauseButton, 5, 2)
         sL..(layout)
 
-        setWindowTitle("Tetrix")
-        resize(550, 370)
+        sWT..("Tetrix")
+        r..(550, 370)
 
     ___ createLabel  t__):
         lbl _ QLabel(t__)
@@ -501,4 +501,4 @@ __ ______ __ ______
     window _ TetrixWindow()
     window.s..
     random.seed(N..)
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

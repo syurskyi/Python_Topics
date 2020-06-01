@@ -97,7 +97,7 @@ c_ SourceWidget(QWidget):
         layout.aW..(instructBottomLabel, 3, 0)
         layout.aW..(dragIcon, 3, 1)
         sL..(layout)
-        setWindowTitle("Delayed Encoding")
+        sWT..("Delayed Encoding")
 
     ___ createData  mimeType):
         __ mimeType !_ 'image/png':
@@ -133,4 +133,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ SourceWidget()
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

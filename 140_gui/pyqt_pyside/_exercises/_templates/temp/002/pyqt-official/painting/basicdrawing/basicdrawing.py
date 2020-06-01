@@ -293,7 +293,7 @@ c_ Window(QWidget):
         brushChanged()
         antialiasingCheckBox.setChecked(True)
 
-        setWindowTitle("Basic Drawing")
+        sWT..("Basic Drawing")
 
     ___ shapeChanged
         shape _ shapeComboBox.itemData(shapeComboBox.currentIndex(),
@@ -346,4 +346,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ Window()
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

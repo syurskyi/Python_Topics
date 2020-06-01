@@ -149,7 +149,7 @@ c_ IconPreviewArea(QWidget):
 
     ___ createPixmapLabel 
         label _ QLabel()
-        label.setEnabled F..
+        label.sE.. F..
         label.setAlignment(__.AlignCenter)
         label.setFrameShape(QFrame.Box)
         label.sSP..(QSizePolicy.E.., QSizePolicy.E..)
@@ -173,7 +173,7 @@ c_ IconPreviewArea(QWidget):
                 state _ QIcon.Off __ j == 0 else QIcon.On
                 pixmap _ icon.pixmap(size, mode, state)
                 pixmapLabels[i][j].setPixmap(pixmap)
-                pixmapLabels[i][j].setEnabled(no. pixmap.isNull())
+                pixmapLabels[i][j].sE..(no. pixmap.isNull())
 
 
 c_ MainWindow ?MW..
@@ -197,11 +197,11 @@ c_ MainWindow ?MW..
         mainLayout.aW..(iconSizeGroupBox, 1, 1)
         centralWidget.sL..(mainLayout)
 
-        setWindowTitle("Icons")
+        sWT..("Icons")
         checkCurrentStyle()
         otherRadioButton.click()
 
-        resize(minimumSizeHint())
+        r..(minimumSizeHint())
 
     ___ about 
         ?MB...about  "About Icons",
@@ -263,7 +263,7 @@ c_ MainWindow ?MW..
             extent _ ?A...style().pixelMetric(metric)
 
         previewArea.setSize(QSize(extent, extent))
-        otherSpinBox.setEnabled(otherRadioButton.isChecked())
+        otherSpinBox.sE..(otherRadioButton.isChecked())
 
     ___ changeIcon 
         icon _ QIcon()
@@ -472,4 +472,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     mainWin _ MainWindow()
     mainWin.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

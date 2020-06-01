@@ -108,4 +108,4 @@ __ ______ __ ______
     controller _ Controller()
     controller.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

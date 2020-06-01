@@ -70,7 +70,7 @@ c_ MainWindow ?.?W..
         print(subwidget.toolTip())
 
         # QLabel
-        label _ qtw.QLabel('<b>Hello Widgets!</b>', self, margin_10)
+        label _ ?.?L..('<b>Hello Widgets!</b>', self, margin_10)
 
         # QLineEdit
         line_edit _ ?.?LE..(
@@ -126,7 +126,7 @@ c_ MainWindow ?.?W..
         )
 
         # QTextEdit
-        textedit _ qtw.QTextEdit(
+        textedit _ ?.?TE..
             self,
             acceptRichText_False,
             lineWrapMode_qtw.QTextEdit.FixedColumnWidth,
@@ -146,7 +146,7 @@ c_ MainWindow ?.?W..
         layout.aW..(line_edit)
 
         # Add a layout to a layout
-        sublayout _ qtw.QHBoxLayout()
+        sublayout _ ?.?HBL..
         layout.aL..(sublayout)
 
         sublayout.aW..(button)
@@ -176,7 +176,7 @@ c_ MainWindow ?.?W..
         layout.aL..(form_layout)
         form_layout.addRow('Item 1', ?.?LE..(self))
         form_layout.addRow('Item 2', ?.?LE..(self))
-        form_layout.addRow(qtw.QLabel('<b>This is a label-only row</b>'))
+        form_layout.addRow(?.?L..('<b>This is a label-only row</b>'))
 
         ################
         # Size Control #
@@ -191,18 +191,18 @@ c_ MainWindow ?.?W..
         line_edit.setMaximumSize(300, 30)
 
         # set the spinbox to a fixed width
-        spinbox.sSP..(qtw.QSizePolicy.Fixed, qtw.QSizePolicy.Preferred)
+        spinbox.sSP..(?.?SP...Fixed, ?.?SP...Preferred)
 
         # set the textedit to expand
         textedit.sSP..(
-            qtw.QSizePolicy.MinimumExpanding,
-            qtw.QSizePolicy.MinimumExpanding
+            ?.?SP...MinimumExpanding,
+            ?.?SP...MinimumExpanding
         )
         textedit.sizeHint _ lambda : qtc.QSize(500, 500)
 
         # use stretch factor
 
-        stretch_layout _ qtw.QHBoxLayout()
+        stretch_layout _ ?.?HBL..
         layout.aL..(stretch_layout)
         stretch_layout.aW..(?.?LE..('Short'), 1)
         stretch_layout.aW..(?.?LE..('Long'), 2)
@@ -226,7 +226,7 @@ c_ MainWindow ?.?W..
 
 
         #QGroupBox
-        groupbox _ qtw.QGroupBox(
+        groupbox _ ?.?GB..(
             'Buttons',
             checkable_True,
             checked_True,
@@ -254,4 +254,4 @@ __ ______ __ ______
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()
-    ___.exit(app.exec())
+    ___.e..(app.e..

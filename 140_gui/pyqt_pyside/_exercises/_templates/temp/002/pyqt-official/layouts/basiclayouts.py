@@ -78,7 +78,7 @@ c_ Dialog(QDialog):
         mainLayout.aW..(buttonBox)
         sL..(mainLayout)
 
-        setWindowTitle("Basic Layouts")
+        sWT..("Basic Layouts")
 
     ___ createMenu 
         menuBar _ QMenuBar()
@@ -134,4 +134,4 @@ __ ______ __ ______
 
     app _ ?A..(___.a..
     dialog _ Dialog()
-    ___.exit(dialog.exec_())
+    ___.e..(dialog.exec_())

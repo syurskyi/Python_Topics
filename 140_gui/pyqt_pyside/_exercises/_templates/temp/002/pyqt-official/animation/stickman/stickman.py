@@ -643,7 +643,7 @@ __ ______ __ ______
 
     # Make enough room in the scene for stickman to jump and die.
     sceneRect _ scene.sceneRect()
-    view.resize(sceneRect.width() + 100, sceneRect.height() + 100)
+    view.r..(sceneRect.width() + 100, sceneRect.height() + 100)
     view.setSceneRect(sceneRect)
 
     cycle _ LifeCycle(stickMan, view)
@@ -654,4 +654,4 @@ __ ______ __ ______
     cycle.addActivity(':/animations/chilling', __.Key_C)
     cycle.start()
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

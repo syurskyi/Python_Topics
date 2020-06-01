@@ -16,8 +16,8 @@ c_ CoffeeForm ?.?W..
         layout().addRow('Brand: ', coffee_brand)
         coffee_name _ qtw.?LE..
         layout().addRow('Name: ', coffee_name)
-        roast _ qtw.QComboBox()
-        roast.addItems(roasts)
+        roast _ ?.?CB..
+        roast.aI..(roasts)
         layout().addRow('Roast: ', roast)
         reviews _ qtw.QTableWidget(columnCount_3)
         reviews.horizontalHeader().setSectionResizeMode(
@@ -59,7 +59,7 @@ c_ MainWindow(qtw.QMainWindow):
                 N.., 'DB Connection Error',
                 'Could not open database file: '
                 f'{error}')
-            ___.exit(1)
+            ___.e..(1)
 
         # Check for missing tables
         required_tables _ {'roasts', 'coffees', 'reviews'}
@@ -70,7 +70,7 @@ c_ MainWindow(qtw.QMainWindow):
                 N.., 'DB Integrity Error'
                 'Missing tables, please repair DB: '
                 f'{missing_tables}')
-            ___.exit(1)
+            ___.e..(1)
 
         # Make a query
         query _ db.exec('SELECT count(*) FROM coffees')
@@ -153,4 +153,4 @@ __ ______ __ ______
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()
-    ___.exit(app.exec())
+    ___.e..(app.e..

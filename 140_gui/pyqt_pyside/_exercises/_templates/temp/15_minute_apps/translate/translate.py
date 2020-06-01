@@ -95,7 +95,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         destTextEdit.setReadOnly(True)
 
         if GOOGLE_TRANSLATE_AVAILABLE:
-            srcLanguage.addItems(LANGUAGES.keys())
+            srcLanguage.aI..(LANGUAGES.keys())
             srcLanguage.currentTextChanged[str].connect(update_src_language)
             srcLanguage.setCurrentText('English')
         else:

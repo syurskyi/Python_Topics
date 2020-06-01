@@ -75,7 +75,7 @@ c_ VideoPlayer(QWidget):
         openButton.c__.c..(openFile)
 
         playButton _ ?PB..()
-        playButton.setEnabled F..
+        playButton.sE.. F..
         playButton.setIcon(style().standardIcon(QStyle.SP_MediaPlay))
         playButton.c__.c..(play)
 
@@ -111,7 +111,7 @@ c_ VideoPlayer(QWidget):
         __ fileName !_ '':
             mediaPlayer.setMedia(
                     QMediaContent(QUrl.fromLocalFile(fileName)))
-            playButton.setEnabled(True)
+            playButton.sE..(True)
 
     ___ play
         __ mediaPlayer.state() == QMediaPlayer.PlayingState:
@@ -153,4 +153,4 @@ __ ______ __ ______
     player _ VideoPlayer()
     player.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

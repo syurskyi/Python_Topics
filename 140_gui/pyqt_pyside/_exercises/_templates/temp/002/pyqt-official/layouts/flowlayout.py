@@ -59,7 +59,7 @@ c_ Window(QWidget):
         flowLayout.aW..(?PB..("Even longer button text"))
         sL..(flowLayout)
 
-        setWindowTitle("Flow Layout")
+        sWT..("Flow Layout")
 
 
 c_ FlowLayout(QLayout):
@@ -156,4 +156,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     mainWin _ Window()
     mainWin.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

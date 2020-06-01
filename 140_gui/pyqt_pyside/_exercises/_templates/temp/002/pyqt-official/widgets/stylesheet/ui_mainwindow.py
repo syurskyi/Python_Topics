@@ -12,7 +12,7 @@ ____ ? ______ ?C.., ?G.., ?W..
 c_ Ui_MainWindow(object):
     ___ setupUi  MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(400, 413)
+        MainWindow.r..(400, 413)
         centralwidget _ ?W...QWidget(MainWindow)
         centralwidget.setObjectName("centralwidget")
         vboxlayout _ ?W...QVBoxLayout(centralwidget)
@@ -142,7 +142,7 @@ c_ Ui_MainWindow(object):
 
     ___ retranslateUi  MainWindow):
         _translate _ ?C...QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Style Sheet"))
+        MainWindow.sWT..(_translate("MainWindow", "Style Sheet"))
         agreeCheckBox.setToolTip(_translate("MainWindow", "Please read the LICENSE file before checking"))
         agreeCheckBox.sT..(_translate("MainWindow", "I accept the terms and &conditions"))
         label.sT..(_translate("MainWindow", "Profession:"))

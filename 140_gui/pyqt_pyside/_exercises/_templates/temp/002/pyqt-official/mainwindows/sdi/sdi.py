@@ -184,8 +184,8 @@ c_ MainWindow ?MW..
                 statusTip_"Show the Qt library's About box",
                 triggered_QApplication.instance().aboutQt)
 
-        textEdit.copyAvailable.c..(cutAct.setEnabled)
-        textEdit.copyAvailable.c..(copyAct.setEnabled)
+        textEdit.copyAvailable.c..(cutAct.sE..)
+        textEdit.copyAvailable.c..(copyAct.sE..)
 
     ___ createMenus
         fileMenu _ mB.. .aM..("&File")
@@ -227,7 +227,7 @@ c_ MainWindow ?MW..
         pos _ settings.value('pos', QPoint(200, 200))
         size _ settings.value('size', QSize(400, 400))
         move(pos)
-        resize(size)
+        r..(size)
 
     ___ writeSettings
         settings _ QSettings('Trolltech', 'SDI Example')
@@ -292,7 +292,7 @@ c_ MainWindow ?MW..
         textEdit.document().setModified F..
         setWindowModified F..
 
-        setWindowTitle("%s[*] - SDI" % strippedName(curFile))
+        sWT..("%s[*] - SDI" % strippedName(curFile))
 
     ___ strippedName  fullFileName):
         r_ QFileInfo(fullFileName).fileName()
@@ -314,4 +314,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     mainWin _ MainWindow()
     mainWin.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

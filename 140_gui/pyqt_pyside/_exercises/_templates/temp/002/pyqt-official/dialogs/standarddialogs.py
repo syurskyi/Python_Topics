@@ -184,7 +184,7 @@ c_ Dialog(QDialog):
         layout.aW..(native, 15, 0)
         sL..(layout)
 
-        setWindowTitle("Standard Dialogs")
+        sWT..("Standard Dialogs")
 
     ___ setInteger 
         i, ok _ QInputDialog.getInt  "QInputDialog.getInt()",
@@ -319,4 +319,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     dialog _ Dialog()
     dialog.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

@@ -215,9 +215,9 @@ __ ______ __ ______
 
     window _ TriangleWindow()
     window.setFormat(format)
-    window.resize(640, 480)
+    window.r..(640, 480)
     window.s..
 
     window.setAnimating(True)
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

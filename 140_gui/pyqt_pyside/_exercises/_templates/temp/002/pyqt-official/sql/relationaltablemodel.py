@@ -69,7 +69,7 @@ ___ createView(title, model):
     view _ QTableView()
     view.sM..(model)
     view.setItemDelegate(QSqlRelationalDelegate(view))
-    view.setWindowTitle(title)
+    view.sWT..(title)
 
     r_ view
 
@@ -99,7 +99,7 @@ __ ______ __ ______
 
     app _ ?A..(___.a..
     __ no. connection.createConnection
-        ___.exit(1)
+        ___.e..(1)
 
     createRelationalTables()
 
@@ -111,4 +111,4 @@ __ ______ __ ______
 
     view.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

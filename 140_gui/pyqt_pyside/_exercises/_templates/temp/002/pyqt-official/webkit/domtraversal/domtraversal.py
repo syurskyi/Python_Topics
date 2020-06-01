@@ -86,4 +86,4 @@ __ ______ __ ______
     window.s..
     window.setUrl(QUrl('http://qt-project.org/'))
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

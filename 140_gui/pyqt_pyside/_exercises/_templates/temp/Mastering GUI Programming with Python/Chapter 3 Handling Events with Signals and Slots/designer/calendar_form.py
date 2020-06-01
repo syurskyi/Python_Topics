@@ -11,7 +11,7 @@ ____ ? ______ ?C.., ?G.., ?W..
 c_ Ui_MainWindow(object):
     ___ setupUi  MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(799, 600)
+        MainWindow.r..(799, 600)
         horizontalLayout _ ?W...QHBoxLayout(MainWindow)
         horizontalLayout.setObjectName("horizontalLayout")
         calendar _ ?W...QCalendarWidget(MainWindow)
@@ -70,7 +70,7 @@ c_ Ui_MainWindow(object):
 
     ___ retranslateUi  MainWindow):
         _translate _ ?C...QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "My Calendar App"))
+        MainWindow.sWT..(_translate("MainWindow", "My Calendar App"))
         label.sT..(_translate("MainWindow", "Events on Date"))
         groupBox.setTitle(_translate("MainWindow", "Event"))
         event_category.setItemText(0, _translate("MainWindow", "Select Category…"))

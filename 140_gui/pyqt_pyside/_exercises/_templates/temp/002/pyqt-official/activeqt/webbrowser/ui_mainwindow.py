@@ -12,7 +12,7 @@ ____ ? ______ ?C.., ?G.., ?W..
 c_ Ui_MainWindow(object):
     ___ setupUi  MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(812, 605)
+        MainWindow.r..(812, 605)
         centralWidget _ ?W...QWidget(MainWindow)
         centralWidget.setObjectName("centralWidget")
         hboxlayout _ ?W...QHBoxLayout(centralWidget)
@@ -119,9 +119,9 @@ c_ Ui_MainWindow(object):
 
     ___ retranslateUi  MainWindow):
         _translate _ ?C...QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Qt WebBrowser"))
-        tbNavigate.setWindowTitle(_translate("MainWindow", "Navigation"))
-        tbAddress.setWindowTitle(_translate("MainWindow", "Address"))
+        MainWindow.sWT..(_translate("MainWindow", "Qt WebBrowser"))
+        tbNavigate.sWT..(_translate("MainWindow", "Navigation"))
+        tbAddress.sWT..(_translate("MainWindow", "Address"))
         PopupMenu.setTitle(_translate("MainWindow", "&File"))
         FileNewGroup_2.setTitle(_translate("MainWindow", "New"))
         unnamed.setTitle(_translate("MainWindow", "&Help"))

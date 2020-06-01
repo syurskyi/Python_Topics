@@ -71,13 +71,13 @@ c_ MainWindow ?MW..
 
         viewMenu _ QMenu("&View", self)
         backgroundAction _ viewMenu.aA..("&Background")
-        backgroundAction.setEnabled F..
+        backgroundAction.sE.. F..
         backgroundAction.setCheckable(True)
         backgroundAction.setChecked F..
         backgroundAction.toggled.c..(view.setViewBackground)
 
         outlineAction _ viewMenu.aA..("&Outline")
-        outlineAction.setEnabled F..
+        outlineAction.sE.. F..
         outlineAction.setCheckable(True)
         outlineAction.setChecked(True)
         outlineAction.toggled.c..(view.setViewOutline)
@@ -99,7 +99,7 @@ c_ MainWindow ?MW..
         __ QGLFormat.hasOpenGL
             rendererMenu.addSeparator()
             highQualityAntialiasingAction _ rendererMenu.aA..("&High Quality Antialiasing")
-            highQualityAntialiasingAction.setEnabled F..
+            highQualityAntialiasingAction.sE.. F..
             highQualityAntialiasingAction.setCheckable(True)
             highQualityAntialiasingAction.setChecked F..
             highQualityAntialiasingAction.toggled.c..(view.setHighQualityAntialiasing)
@@ -119,7 +119,7 @@ c_ MainWindow ?MW..
         rendererGroup.t__.c..(setRenderer)
 
         sCW..(view)
-        setWindowTitle("SVG Viewer")
+        sWT..("SVG Viewer")
 
     ___ openFile  path_None):
         __ no. path:
@@ -132,30 +132,30 @@ c_ MainWindow ?MW..
                 ?MB...critical  "Open SVG File",
                         "Could not open file '%s'." % path)
 
-                outlineAction.setEnabled F..
-                backgroundAction.setEnabled F..
+                outlineAction.sE.. F..
+                backgroundAction.sE.. F..
                 r_
 
             view.openFile(svg_file)
 
             __ no. path.startswith(':/'):
                 currentPath _ path
-                setWindowTitle("%s - SVGViewer" % currentPath)
+                sWT..("%s - SVGViewer" % currentPath)
 
-            outlineAction.setEnabled(True)
-            backgroundAction.setEnabled(True)
+            outlineAction.sE..(True)
+            backgroundAction.sE..(True)
 
-            resize(view.sizeHint() + QSize(80, 80 + mB.. .height()))
+            r..(view.sizeHint() + QSize(80, 80 + mB.. .height()))
 
     ___ setRenderer  action):
         __ QGLFormat.hasOpenGL
-            highQualityAntialiasingAction.setEnabled F..
+            highQualityAntialiasingAction.sE.. F..
 
         __ action == nativeAction:
             view.setRenderer(SvgView.Native)
         ____ action == glAction:
             __ QGLFormat.hasOpenGL
-                highQualityAntialiasingAction.setEnabled(True)
+                highQualityAntialiasingAction.sE..(True)
                 view.setRenderer(SvgView.OpenGL)
         ____ action == imageAction:
             view.setRenderer(SvgView.Image)
@@ -295,4 +295,4 @@ __ ______ __ ______
     ____
         window.openFile(':/files/bubbles.svg')
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

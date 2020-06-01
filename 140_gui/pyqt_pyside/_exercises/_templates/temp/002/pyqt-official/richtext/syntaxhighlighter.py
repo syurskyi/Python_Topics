@@ -57,7 +57,7 @@ c_ MainWindow ?MW..
         setupEditor()
 
         sCW..(editor)
-        setWindowTitle("Syntax Highlighter")
+        sWT..("Syntax Highlighter")
 
     ___ about
         ?MB...about  "About Syntax Highlighter",
@@ -199,6 +199,6 @@ __ ______ __ ______
 
     app _ ?A..(___.a..
     window _ MainWindow()
-    window.resize(640, 512)
+    window.r..(640, 512)
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

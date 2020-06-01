@@ -49,13 +49,13 @@ c_ MainWindow ?MW..
 
 
         camera_selector _ QComboBox()
-        camera_selector.addItems([c.description() ___ c __ available_cameras])
+        camera_selector.aI..([c.description() ___ c __ available_cameras])
         camera_selector.currentIndexChanged.c..( select_camera )
 
         camera_toolbar.aW..(camera_selector)
 
 
-        setWindowTitle("NSAViewer")
+        sWT..("NSAViewer")
         s..
 
     ___ select_camera  i):

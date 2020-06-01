@@ -292,4 +292,4 @@ __ ______ __ ______
     audio _ AudioTest()
     audio.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

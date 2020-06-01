@@ -80,9 +80,9 @@ c_ MainWindow ?MW..
         message _ "A context menu is available by right-clicking"
         statusBar().showMessage(message)
 
-        setWindowTitle("Menus")
+        sWT..("Menus")
         setMinimumSize(160,160)
-        resize(480,320)
+        r..(480,320)
 
     ___ contextMenuEvent  event):
         menu _ QMenu
@@ -283,4 +283,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ MainWindow()
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

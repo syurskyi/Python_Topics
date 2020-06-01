@@ -12,7 +12,7 @@ ____ ? ______ ?C.., ?G.., ?W..
 c_ Ui_MainWindow(object):
     ___ setupUi  MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(573, 468)
+        MainWindow.r..(573, 468)
         centralwidget _ ?W...QWidget(MainWindow)
         centralwidget.setObjectName("centralwidget")
         vboxlayout _ ?W...QVBoxLayout(centralwidget)
@@ -67,7 +67,7 @@ c_ Ui_MainWindow(object):
 
     ___ retranslateUi  MainWindow):
         _translate _ ?C...QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Editable Tree Model"))
+        MainWindow.sWT..(_translate("MainWindow", "Editable Tree Model"))
         fileMenu.setTitle(_translate("MainWindow", "&File"))
         actionsMenu.setTitle(_translate("MainWindow", "&Actions"))
         exitAction.sT..(_translate("MainWindow", "E&xit"))

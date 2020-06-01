@@ -11,7 +11,7 @@ ____ ? ______ ?C.., ?G.., ?W..
 c_ Ui_MainWindow(object):
     ___ setupUi  MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(484, 371)
+        MainWindow.r..(484, 371)
         centralWidget _ ?W...QWidget(MainWindow)
         sizePolicy _ ?W...QSizePolicy(?W...QSizePolicy.Maximum, ?W...QSizePolicy.Maximum)
         sizePolicy.setHorizontalStretch(0)
@@ -133,7 +133,7 @@ c_ Ui_MainWindow(object):
 
     ___ retranslateUi  MainWindow):
         _translate _ ?C...QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Failamp"))
+        MainWindow.sWT..(_translate("MainWindow", "Failamp"))
         currentTimeLabel.sT..(_translate("MainWindow", "0:00"))
         totalTimeLabel.sT..(_translate("MainWindow", "0:00"))
         menuFIle.setTitle(_translate("MainWindow", "FIle"))

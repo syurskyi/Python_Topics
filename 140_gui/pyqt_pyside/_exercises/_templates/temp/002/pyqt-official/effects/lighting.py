@@ -142,8 +142,8 @@ __ ______ __ ______
     app _ ?A..(___.a..
 
     lighting _ Lighting()
-    lighting.setWindowTitle("Lighting and Shadows")
-    lighting.resize(640, 480)
+    lighting.sWT..("Lighting and Shadows")
+    lighting.r..(640, 480)
     lighting.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

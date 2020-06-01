@@ -12,7 +12,7 @@ c_ Ui_CategoryWindow(object):
     ___ setupUi  CategoryWindow):
         CategoryWindow.setObjectName("CategoryWindow")
         CategoryWindow.setWindowModality(?C...__.WindowModal)
-        CategoryWindow.resize(409, 120)
+        CategoryWindow.r..(409, 120)
         verticalLayout _ ?W...QVBoxLayout(CategoryWindow)
         verticalLayout.setObjectName("verticalLayout")
         label _ ?W...QLabel(CategoryWindow)
@@ -33,7 +33,7 @@ c_ Ui_CategoryWindow(object):
 
     ___ retranslateUi  CategoryWindow):
         _translate _ ?C...QCoreApplication.translate
-        CategoryWindow.setWindowTitle(_translate("CategoryWindow", "Form"))
+        CategoryWindow.sWT..(_translate("CategoryWindow", "Form"))
         label.sT..(_translate("CategoryWindow", "Please enter a new category name:"))
         submit_btn.sT..(_translate("CategoryWindow", "Submit"))
         cancel_btn.sT..(_translate("CategoryWindow", "Cancel"))

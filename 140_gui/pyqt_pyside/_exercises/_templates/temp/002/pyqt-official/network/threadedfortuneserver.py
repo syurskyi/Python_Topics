@@ -138,7 +138,7 @@ c_ Dialog(QDialog):
         mainLayout.aL..(buttonLayout)
         sL..(mainLayout)
 
-        setWindowTitle("Threaded Fortune Server")
+        sWT..("Threaded Fortune Server")
 
 
 __ ______ __ ______
@@ -148,4 +148,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     dialog _ Dialog()
     dialog.s..
-    ___.exit(dialog.exec_())
+    ___.e..(dialog.exec_())

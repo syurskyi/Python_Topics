@@ -55,7 +55,7 @@ __ ______ __ ______
         ___.stderr.w..("Cannot connect to the D-Bus session bus.\n"
                 "To start it, run:\n"
                 "\teval `dbus-launch --auto-syntax`\n");
-        ___.exit(1)
+        ___.e..(1)
 
     iface _ QDBusInterface('org.example.QtDBus.PingExample', '/', '',
             QDBusConnection.sessionBus())
@@ -69,7 +69,7 @@ __ ______ __ ______
             ___.e..
 
         ___.stderr.w..("Call failed: %s\n" % reply.error().message())
-        ___.exit(1)
+        ___.e..(1)
 
     ___.stderr.w..("%s\n" % QDBusConnection.sessionBus().lastError().message())
-    ___.exit(1)
+    ___.e..(1)

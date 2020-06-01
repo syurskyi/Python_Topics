@@ -64,7 +64,7 @@ c_ MdiChild(QTextEdit):
         isUntitled _ True
         curFile _ "document%d.txt" % MdiChild.sequenceNumber
         MdiChild.sequenceNumber +_ 1
-        setWindowTitle(curFile + '[*]')
+        sWT..(curFile + '[*]')
 
         document().contentsChanged.c..(documentWasModified)
 
@@ -150,7 +150,7 @@ c_ MdiChild(QTextEdit):
         isUntitled _ False
         document().setModified F..
         setWindowModified F..
-        setWindowTitle(userFriendlyCurrentFile() + "[*]")
+        sWT..(userFriendlyCurrentFile() + "[*]")
 
     ___ strippedName  fullFileName):
         r_ QFileInfo(fullFileName).fileName()
@@ -177,7 +177,7 @@ c_ MainWindow ?MW..
 
         readSettings()
 
-        setWindowTitle("MDI")
+        sWT..("MDI")
 
     ___ closeEvent  event):
         mdiArea.closeAllSubWindows()
@@ -234,21 +234,21 @@ c_ MainWindow ?MW..
 
     ___ updateMenus
         hasMdiChild _ (activeMdiChild() __ no. N..)
-        saveAct.setEnabled(hasMdiChild)
-        saveAsAct.setEnabled(hasMdiChild)
-        pasteAct.setEnabled(hasMdiChild)
-        closeAct.setEnabled(hasMdiChild)
-        closeAllAct.setEnabled(hasMdiChild)
-        tileAct.setEnabled(hasMdiChild)
-        cascadeAct.setEnabled(hasMdiChild)
-        nextAct.setEnabled(hasMdiChild)
-        previousAct.setEnabled(hasMdiChild)
+        saveAct.sE..(hasMdiChild)
+        saveAsAct.sE..(hasMdiChild)
+        pasteAct.sE..(hasMdiChild)
+        closeAct.sE..(hasMdiChild)
+        closeAllAct.sE..(hasMdiChild)
+        tileAct.sE..(hasMdiChild)
+        cascadeAct.sE..(hasMdiChild)
+        nextAct.sE..(hasMdiChild)
+        previousAct.sE..(hasMdiChild)
         separatorAct.setVisible(hasMdiChild)
 
         hasSelection _ (activeMdiChild() __ no. N.. and
                         activeMdiChild().textCursor().hasSelection())
-        cutAct.setEnabled(hasSelection)
-        copyAct.setEnabled(hasSelection)
+        cutAct.sE..(hasSelection)
+        copyAct.sE..(hasSelection)
 
     ___ updateWindowMenu
         windowMenu.clear()
@@ -282,8 +282,8 @@ c_ MainWindow ?MW..
         child _ MdiChild()
         mdiArea.addSubWindow(child)
 
-        child.copyAvailable.c..(cutAct.setEnabled)
-        child.copyAvailable.c..(copyAct.setEnabled)
+        child.copyAvailable.c..(cutAct.sE..)
+        child.copyAvailable.c..(copyAct.sE..)
 
         r_ child
 
@@ -404,7 +404,7 @@ c_ MainWindow ?MW..
         pos _ settings.value('pos', QPoint(200, 200))
         size _ settings.value('size', QSize(400, 400))
         move(pos)
-        resize(size)
+        r..(size)
 
     ___ writeSettings
         settings _ QSettings('Trolltech', 'MDI Example')
@@ -443,4 +443,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     mainWin _ MainWindow()
     mainWin.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

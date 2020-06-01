@@ -9,7 +9,7 @@ c_ MainWindow(qtw.QMainWindow):
         s_. - ()
 
         # Your code goes here
-        resize(800, 600)
+        r..(800, 600)
         main _ qtw.?W..
         sCW..(main)
         main.sL.. ?.?VBL..
@@ -17,7 +17,7 @@ c_ MainWindow(qtw.QMainWindow):
         main.layout().aW..(oglw)
 
         # Animation controls
-        btn_layout _ qtw.QHBoxLayout()
+        btn_layout _ ?.?HBL..
         main.layout().aL..(btn_layout)
         ___ direction __ ('none', 'left', 'right', 'up', 'down'):
             button _ qtw.?PB..(
@@ -27,7 +27,7 @@ c_ MainWindow(qtw.QMainWindow):
                 c___getattr(oglw, f'spin_{direction}')
                 )
             btn_layout.aW..(button)
-        zoom_layout _ qtw.QHBoxLayout()
+        zoom_layout _ ?.?HBL..
         main.layout().aL..(zoom_layout)
         zoom_in _ qtw.?PB..('zoom in', c___oglw.zoom_in)
         zoom_layout.aW..(zoom_in)

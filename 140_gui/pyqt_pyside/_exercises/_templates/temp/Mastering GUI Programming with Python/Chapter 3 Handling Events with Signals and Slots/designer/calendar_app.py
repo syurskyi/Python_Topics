@@ -38,7 +38,7 @@ c_ MainWindow(MW_Base, MW_Ui):
         setupUi
 
         # disable the first category item
-        event_category.model().item(0).setEnabled F..
+        event_category.model().item(0).sE.. F..
 
         ##################
         # Connect Events #
@@ -159,4 +159,4 @@ __ ______ __ ______
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()
-    ___.exit(app.exec())
+    ___.e..(app.e..

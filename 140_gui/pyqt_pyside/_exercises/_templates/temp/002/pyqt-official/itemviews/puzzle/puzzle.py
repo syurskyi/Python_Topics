@@ -339,7 +339,7 @@ c_ MainWindow ?MW..
         setupWidgets()
 
         sSP..(QSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed))
-        setWindowTitle("Puzzle")
+        sWT..("Puzzle")
 
     ___ openImage  path_None):
         __ no. path:
@@ -428,4 +428,4 @@ __ ______ __ ______
     window _ MainWindow()
     window.openImage(':/images/example.jpg')
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

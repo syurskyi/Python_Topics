@@ -65,7 +65,7 @@ c_ ClassWizard(QWizard):
         setPixmap(QWizard.BackgroundPixmap,
                 QPixmap(':/images/background.png'))
 
-        setWindowTitle("Class Wizard")
+        sWT..("Class Wizard")
 
     ___ accept
         className _ field('className')
@@ -238,7 +238,7 @@ c_ ClassInfoPage(QWizardPage):
 
         defaultCtorRadioButton.setChecked(True)
 
-        defaultCtorRadioButton.toggled.c..(copyCtorCheckBox.setEnabled)
+        defaultCtorRadioButton.toggled.c..(copyCtorCheckBox.sE..)
 
         registerField('className*', classNameLineEdit)
         registerField('baseClass', baseClassLineEdit)
@@ -289,10 +289,10 @@ c_ CodeStylePage(QWizardPage):
         baseIncludeLineEdit _ ?LE..
         baseIncludeLabel.setBuddy(baseIncludeLineEdit)
 
-        protectCheckBox.toggled.c..(macroNameLabel.setEnabled)
-        protectCheckBox.toggled.c..(macroNameLineEdit.setEnabled)
-        includeBaseCheckBox.toggled.c..(baseIncludeLabel.setEnabled)
-        includeBaseCheckBox.toggled.c..(baseIncludeLineEdit.setEnabled)
+        protectCheckBox.toggled.c..(macroNameLabel.sE..)
+        protectCheckBox.toggled.c..(macroNameLineEdit.sE..)
+        includeBaseCheckBox.toggled.c..(baseIncludeLabel.sE..)
+        includeBaseCheckBox.toggled.c..(baseIncludeLineEdit.sE..)
 
         registerField('comment', commentCheckBox)
         registerField('protect', protectCheckBox)
@@ -319,9 +319,9 @@ c_ CodeStylePage(QWizardPage):
         is_baseClass _ bool(baseClass)
 
         includeBaseCheckBox.setChecked(is_baseClass)
-        includeBaseCheckBox.setEnabled(is_baseClass)
-        baseIncludeLabel.setEnabled(is_baseClass)
-        baseIncludeLineEdit.setEnabled(is_baseClass)
+        includeBaseCheckBox.sE..(is_baseClass)
+        baseIncludeLabel.sE..(is_baseClass)
+        baseIncludeLineEdit.sE..(is_baseClass)
 
         __ no. is_baseClass:
             baseIncludeLineEdit.clear()
@@ -400,4 +400,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     wizard _ ClassWizard()
     wizard.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

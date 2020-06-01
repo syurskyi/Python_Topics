@@ -70,8 +70,8 @@ c_ AnalogClock(QWidget):
         timer.timeout.c..(update)
         timer.start(1000)
 
-        setWindowTitle("Analog Clock")
-        resize(200, 200)
+        sWT..("Analog Clock")
+        r..(200, 200)
 
     ___ paintEvent  event):
         side _ min(width(), height())
@@ -119,4 +119,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     clock _ AnalogClock()
     clock.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

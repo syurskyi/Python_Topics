@@ -65,7 +65,7 @@ c_ MainWindow ?MW..
         createStatusBar()
         createDockWindows()
 
-        setWindowTitle("Dock Widgets")
+        sWT..("Dock Widgets")
 
         newLetter()
 
@@ -254,7 +254,7 @@ c_ MainWindow ?MW..
         dock _ QDockWidget("Customers", self)
         dock.setAllowedAreas(__.LeftDockWidgetArea | __.RightDockWidgetArea)
         customerList _ QListWidget(dock)
-        customerList.addItems((
+        customerList.aI..((
             "John Doe, Harmony Enterprises, 12 Lakeside, Ambleton",
             "Jane Doe, Memorabilia, 23 Watersedge, Beaton",
             "Tammy Shea, Tiblanka, 38 Sea Views, Carlton",
@@ -267,7 +267,7 @@ c_ MainWindow ?MW..
 
         dock _ QDockWidget("Paragraphs", self)
         paragraphsList _ QListWidget(dock)
-        paragraphsList.addItems((
+        paragraphsList.aI..((
             "Thank you for your payment which we have received today.",
             "Your order has been dispatched and should be with you within "
                 "28 days.",
@@ -300,4 +300,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     mainWin _ MainWindow()
     mainWin.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

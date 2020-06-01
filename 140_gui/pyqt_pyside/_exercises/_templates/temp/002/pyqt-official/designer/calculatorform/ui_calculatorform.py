@@ -12,7 +12,7 @@ ____ ? ______ ?C.., ?G.., ?W..
 c_ Ui_CalculatorForm(object):
     ___ setupUi  CalculatorForm):
         CalculatorForm.setObjectName("CalculatorForm")
-        CalculatorForm.resize(400, 300)
+        CalculatorForm.r..(400, 300)
         sizePolicy _ ?W...QSizePolicy(?W...QSizePolicy.Policy(5), ?W...QSizePolicy.Policy(5))
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -84,7 +84,7 @@ c_ Ui_CalculatorForm(object):
 
     ___ retranslateUi  CalculatorForm):
         _translate _ ?C...QCoreApplication.translate
-        CalculatorForm.setWindowTitle(_translate("CalculatorForm", "Calculator Form"))
+        CalculatorForm.sWT..(_translate("CalculatorForm", "Calculator Form"))
         label_3_2.sT..(_translate("CalculatorForm", "="))
         label_2_2_2.sT..(_translate("CalculatorForm", "Output"))
         outputWidget.sT..(_translate("CalculatorForm", "0"))

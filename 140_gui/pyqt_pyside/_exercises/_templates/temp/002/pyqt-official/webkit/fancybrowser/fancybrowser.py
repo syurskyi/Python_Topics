@@ -122,7 +122,7 @@ c_ MainWindow ?MW..
         textEdit.setAttribute(__.WA_DeleteOnClose)
         textEdit.s..
         textEdit.sPT..(QTextStream(reply).readAll())
-        textEdit.resize(600, 400)
+        textEdit.r..(600, 400)
         reply.deleteLater()
 
     ___ adjustLocation 
@@ -135,9 +135,9 @@ c_ MainWindow ?MW..
 
     ___ adjustTitle 
         __ 0 < progress < 100:
-            setWindowTitle("%s (%s%%)" % (view.title(), progress))
+            sWT..("%s (%s%%)" % (view.title(), progress))
         ____
-            setWindowTitle(view.title())
+            sWT..(view.title())
 
     ___ setProgress  p):
         progress _ p
@@ -208,4 +208,4 @@ __ ______ __ ______
     browser _ MainWindow(url)
     browser.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

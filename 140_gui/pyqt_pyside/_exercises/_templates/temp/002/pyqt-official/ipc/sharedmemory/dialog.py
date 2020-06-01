@@ -12,7 +12,7 @@ ____ ? ______ ?C.., ?G.., ?W..
 c_ Ui_Dialog(object):
     ___ setupUi  Dialog):
         Dialog.setObjectName("Dialog")
-        Dialog.resize(451, 322)
+        Dialog.r..(451, 322)
         gridlayout _ ?W...QGridLayout(Dialog)
         gridlayout.setObjectName("gridlayout")
         loadFromFileButton _ ?W...?PB..(Dialog)
@@ -32,7 +32,7 @@ c_ Ui_Dialog(object):
 
     ___ retranslateUi  Dialog):
         _translate _ ?C...QCoreApplication.translate
-        Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
+        Dialog.sWT..(_translate("Dialog", "Dialog"))
         loadFromFileButton.sT..(_translate("Dialog", "Load Image From File..."))
         label.sT..(_translate("Dialog", "Launch two of these dialogs.  In the first, press the top button and load an image from a file.  In the second, press the bottom button and display the loaded image from shared memory."))
         loadFromSharedMemoryButton.sT..(_translate("Dialog", "Display Image From Shared Memory"))

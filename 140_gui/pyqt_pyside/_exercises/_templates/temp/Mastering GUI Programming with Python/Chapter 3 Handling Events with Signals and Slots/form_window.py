@@ -31,7 +31,7 @@ c_ MainWindow ?.?W..
         s_. - ()
         sL.. ?.?VBL..
 
-        label _ qtw.QLabel('Click "change" to change this text.')
+        label _ ?.?L..('Click "change" to change this text.')
         change _ qtw.?PB..("Change", c___self.onChange)
         layout().aW..(label)
         layout().aW..(change)
@@ -60,4 +60,4 @@ __ ______ __ ______
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()
-    ___.exit(app.exec())
+    ___.e..(app.e..

@@ -77,8 +77,8 @@ c_ MainWindow ?MW..
         createActions()
         createMenus()
 
-        setWindowTitle("Codecs")
-        resize(500, 400)
+        sWT..("Codecs")
+        r..(500, 400)
 
     ___ o..
         fileName, _ _ ?FD...gOFN..
@@ -216,8 +216,8 @@ c_ PreviewForm(QDialog):
         mainLayout.aW..(buttonBox, 2, 0, 1, 2)
         sL..(mainLayout)
 
-        setWindowTitle("Choose Encoding")
-        resize(400, 300)
+        sWT..("Choose Encoding")
+        r..(400, 300)
 
     ___ setCodecList  codecs):
         encodingComboBox.clear()
@@ -250,4 +250,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     mainWin _ MainWindow()
     mainWin.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

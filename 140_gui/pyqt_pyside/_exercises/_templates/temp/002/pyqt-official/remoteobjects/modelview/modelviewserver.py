@@ -90,7 +90,7 @@ c_ TimerHandler(QObject):
     @pyqtSlot()
     ___ changeFlags 
         item _ _model.item(0, 0)
-        item.setEnabled F..
+        item.sE.. F..
 
         item _ item.child(0, 0)
         item.setFlags(item.flags() & __.ItemIsSelectable)
@@ -155,7 +155,7 @@ __ ______ __ ______
     node2.enableRemoting(sourceModel, 'RemoteModel', roles)
 
     view _ ?TV..
-    view.setWindowTitle("SourceView")
+    view.sWT..("SourceView")
     view.sM..(sourceModel)
     view.s..
 
@@ -166,4 +166,4 @@ __ ______ __ ______
     QTimer.singleShot(12000, handler.removeData)
     QTimer.singleShot(13000, handler.moveData)
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

@@ -99,9 +99,9 @@ c_ AddressBook(QWidget):
         cancelButton _ ?PB..("&Cancel")
         cancelButton.hide()
         nextButton _ ?PB..("&Next")
-        nextButton.setEnabled F..
+        nextButton.sE.. F..
         previousButton _ ?PB..("&Previous")
-        previousButton.setEnabled F..
+        previousButton.sE.. F..
 
         addButton.c__.c..(addContact)
         submitButton.c__.c..(submitContact)
@@ -128,7 +128,7 @@ c_ AddressBook(QWidget):
         mainLayout.aL..(buttonLayout2, 3, 1)
 
         sL..(mainLayout)
-        setWindowTitle("Simple Address Book")
+        sWT..("Simple Address Book")
 
     ___ addContact 
         oldName _ nameLine.t__()
@@ -141,9 +141,9 @@ c_ AddressBook(QWidget):
         nameLine.setFocus(__.OtherFocusReason)
         addressText.setReadOnly F..
 
-        addButton.setEnabled F..
-        nextButton.setEnabled F..
-        previousButton.setEnabled F..
+        addButton.sE.. F..
+        nextButton.sE.. F..
+        previousButton.sE.. F..
         submitButton.s..
         cancelButton.s..
 
@@ -171,11 +171,11 @@ c_ AddressBook(QWidget):
 
         nameLine.setReadOnly(True)
         addressText.setReadOnly(True)
-        addButton.setEnabled(True)
+        addButton.sE..(True)
 
         number _ le.(contacts)
-        nextButton.setEnabled(number > 1)
-        previousButton.setEnabled(number > 1)
+        nextButton.sE..(number > 1)
+        previousButton.sE..(number > 1)
 
         submitButton.hide()
         cancelButton.hide()
@@ -190,11 +190,11 @@ c_ AddressBook(QWidget):
 
         nameLine.setReadOnly(True)
         addressText.setReadOnly(True)
-        addButton.setEnabled(True)
+        addButton.sE..(True)
 
         number _ le.(contacts)
-        nextButton.setEnabled(number > 1)
-        previousButton.setEnabled(number > 1)
+        nextButton.sE..(number > 1)
+        previousButton.sE..(number > 1)
 
         submitButton.hide()
         cancelButton.hide()
@@ -249,4 +249,4 @@ __ ______ __ ______
     addressBook _ AddressBook()
     addressBook.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

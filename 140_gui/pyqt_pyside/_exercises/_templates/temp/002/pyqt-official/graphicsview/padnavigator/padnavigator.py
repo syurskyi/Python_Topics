@@ -395,4 +395,4 @@ __ ______ __ ______
     navigator _ PadNavigator(QSize(3, 3))
     navigator.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

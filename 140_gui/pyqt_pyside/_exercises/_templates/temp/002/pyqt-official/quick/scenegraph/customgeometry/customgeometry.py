@@ -185,4 +185,4 @@ __ ______ __ ______
     view.setSource(QUrl('qrc:///scenegraph/customgeometry/main.qml'))
     view.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

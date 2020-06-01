@@ -86,4 +86,4 @@ about_action.t__.c..(show_about_dialog)
 window.s..
 
 exit_code _ appctxt.app.e..      # 2. Invoke appctxt.app.exec_()
-___.exit(exit_code)
+___.e..(exit_code)

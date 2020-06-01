@@ -143,7 +143,7 @@ c_ FrameCapture(QObject):
 __ ______ __ ______
     __ le.(___.a.. !_ 3:
         cerr(__doc__)
-        ___.exit(1)
+        ___.e..(1)
 
     url _ QUrl.fromUserInput(___.argv[1])
     fileName _ ___.argv[2]

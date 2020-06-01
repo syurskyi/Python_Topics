@@ -26,4 +26,4 @@ c_ Server(qtn.QTcpServer):
 __ ______ __ ______
     app _ qtc.QCoreApplication(___.a..
     server _ Server()
-    ___.exit(app.exec())
+    ___.e..(app.e..

@@ -11,7 +11,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(207, 503)
+        MainWindow.r..(207, 503)
         centralwidget = QtWidgets.QWidget(MainWindow)
         centralwidget.setObjectName("centralwidget")
         verticalLayout = QtWidgets.QVBoxLayout(centralwidget)
@@ -168,7 +168,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "7Pez"))
+        MainWindow.sWT..(_translate("MainWindow", "7Pez"))
         progress_1.setText(_translate("MainWindow", "7PEZ"))
         progress_2.setText(_translate("MainWindow", "7PEZ"))
         progress_3.setText(_translate("MainWindow", "7PEZ"))

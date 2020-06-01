@@ -476,7 +476,7 @@ __ ______ __ ______
     app _ ?A..(___.a..
     app.sAN..('LightMaps')
     w _ MapZoom()
-    w.setWindowTitle("OpenStreetMap")
-    w.resize(600, 450)
+    w.sWT..("OpenStreetMap")
+    w.r..(600, 450)
     w.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

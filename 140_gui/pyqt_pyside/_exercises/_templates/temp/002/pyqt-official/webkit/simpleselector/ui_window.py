@@ -12,7 +12,7 @@ ____ ? ______ ?C.., ?G.., ?W..
 c_ Ui_Window(object):
     ___ setupUi  Window):
         Window.setObjectName("Window")
-        Window.resize(640, 480)
+        Window.r..(640, 480)
         verticalLayout _ ?W...QVBoxLayout(Window)
         verticalLayout.setObjectName("verticalLayout")
         webView _ QtWebKitWidgets.QWebView(Window)
@@ -42,7 +42,7 @@ c_ Ui_Window(object):
 
     ___ retranslateUi  Window):
         _translate _ ?C...QCoreApplication.translate
-        Window.setWindowTitle(_translate("Window", "Web Element Selector"))
+        Window.sWT..(_translate("Window", "Web Element Selector"))
         elementLabel.sT..(_translate("Window", "&Element:"))
         elementLineEdit.sT..(_translate("Window", "li a"))
         highlightButton.sT..(_translate("Window", "&Highlight"))

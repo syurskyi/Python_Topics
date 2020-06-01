@@ -258,7 +258,7 @@ c_ Window(QWidget):
         penColorChanged()
         penWidthSpinBox.setValue(2)
 
-        setWindowTitle("Painter Paths")
+        sWT..("Painter Paths")
 
     ___ fillRuleChanged
         rule _ __.FillRule(currentItemData(fillRuleComboBox))
@@ -295,4 +295,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ Window()
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

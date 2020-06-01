@@ -73,8 +73,8 @@ c_ PyAnalogClock(QWidget):
         timer.timeout.c..(updateTime)
         timer.start(1000)
 
-        setWindowTitle("Analog Clock")
-        resize(200, 200)
+        sWT..("Analog Clock")
+        r..(200, 200)
 
         hourHand _ QPolygon([
             QPoint(7, 8),
@@ -186,4 +186,4 @@ __ __name__ == "__main__":
     app _ ?A..(___.a..
     clock _ PyAnalogClock()
     clock.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

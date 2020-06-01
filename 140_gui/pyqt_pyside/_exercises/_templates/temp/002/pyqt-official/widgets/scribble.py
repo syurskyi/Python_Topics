@@ -179,8 +179,8 @@ c_ MainWindow ?MW..
         createActions()
         createMenus()
 
-        setWindowTitle("Scribble")
-        resize(500, 500)
+        sWT..("Scribble")
+        r..(500, 500)
 
     ___ closeEvent  event):
         __ maybeSave
@@ -318,4 +318,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ MainWindow()
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

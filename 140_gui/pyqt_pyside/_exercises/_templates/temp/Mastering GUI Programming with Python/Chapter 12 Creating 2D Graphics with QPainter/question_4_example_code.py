@@ -115,7 +115,7 @@ c_ MemeEditForm ?.?W..
         layout().addRow('BG Padding', bg_padding)
 
         # Deep Fryer
-        deep_fry _ qtw.QCheckBox('Deep Fry', stateChanged_self.on_change)
+        deep_fry _ ?.?CB..('Deep Fry', stateChanged_self.on_change)
         layout().addRow(deep_fry)
 
     ___ on_change
@@ -144,7 +144,7 @@ c_ MainWindow(qtw.QMainWindow):
         """
         s_. - ()
         # Main UI code goes here
-        setWindowTitle('Qt Meme Generator')
+        sWT..('Qt Meme Generator')
 
         # define some constants
         max_size _ qtc.QSize(800, 600)
@@ -158,7 +158,7 @@ c_ MainWindow(qtw.QMainWindow):
         mainwidget.sL..(qtw.QHBoxLayout())
 
         # Image Previewer
-        image_display _ qtw.QLabel(pixmap_qtg.QPixmap(image))
+        image_display _ ?.?L..(pixmap_qtg.QPixmap(image))
         mainwidget.layout().aW..(image_display)
 
         # The editing form
@@ -258,4 +258,4 @@ __ ______ __ ______
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()
-    ___.exit(app.exec())
+    ___.e..(app.e..

@@ -149,8 +149,8 @@ c_ MainWindow ?MW..
         completingTextEdit.setCompleter(completer)
 
         sCW..(completingTextEdit)
-        resize(500, 300)
-        setWindowTitle("Completer")
+        r..(500, 300)
+        sWT..("Completer")
 
     ___ createMenu
         exitAction _ ?A..("Exit", self)
@@ -203,4 +203,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ MainWindow()
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

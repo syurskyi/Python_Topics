@@ -12,7 +12,7 @@ ____ ? ______ ?C.., ?G.., ?W..
 c_ Ui_Camera(object):
     ___ setupUi  Camera):
         Camera.setObjectName("Camera")
-        Camera.resize(668, 422)
+        Camera.r..(668, 422)
         centralwidget _ ?W...QWidget(Camera)
         centralwidget.setObjectName("centralwidget")
         gridLayout_3 _ ?W...QGridLayout(centralwidget)
@@ -162,7 +162,7 @@ c_ Ui_Camera(object):
 
     ___ retranslateUi  Camera):
         _translate _ ?C...QCoreApplication.translate
-        Camera.setWindowTitle(_translate("Camera", "Camera"))
+        Camera.sWT..(_translate("Camera", "Camera"))
         lockButton.sT..(_translate("Camera", "Focus"))
         takeImageButton.sT..(_translate("Camera", "Capture Photo"))
         label.sT..(_translate("Camera", "Exposure Compensation:"))

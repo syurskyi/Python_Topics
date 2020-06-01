@@ -98,18 +98,18 @@ c_ AddressBook(QWidget):
         addButton _ ?PB..("&Add")
         addButton.s..
         editButton _ ?PB..("&Edit")
-        editButton.setEnabled F..
+        editButton.sE.. F..
         removeButton _ ?PB..("&Remove")
-        removeButton.setEnabled F..
+        removeButton.sE.. F..
         submitButton _ ?PB..("&Submit")
         submitButton.hide()
         cancelButton _ ?PB..("&Cancel")
         cancelButton.hide()
 
         nextButton _ ?PB..("&Next")
-        nextButton.setEnabled F..
+        nextButton.sE.. F..
         previousButton _ ?PB..("&Previous")
-        previousButton.setEnabled F..
+        previousButton.sE.. F..
 
         addButton.c__.c..(addContact)
         submitButton.c__.c..(submitContact)
@@ -140,7 +140,7 @@ c_ AddressBook(QWidget):
         mainLayout.aL..(buttonLayout2, 3, 1)
 
         sL..(mainLayout)
-        setWindowTitle("Simple Address Book")
+        sWT..("Simple Address Book")
 
     ___ addContact 
         oldName _ nameLine.t__()
@@ -264,12 +264,12 @@ c_ AddressBook(QWidget):
             nameLine.setFocus(__.OtherFocusReason)
             addressText.setReadOnly F..
 
-            addButton.setEnabled F..
-            editButton.setEnabled F..
-            removeButton.setEnabled F..
+            addButton.sE.. F..
+            editButton.sE.. F..
+            removeButton.sE.. F..
 
-            nextButton.setEnabled F..
-            previousButton.setEnabled F..
+            nextButton.sE.. F..
+            previousButton.sE.. F..
 
             submitButton.s..
             cancelButton.s..
@@ -281,13 +281,13 @@ c_ AddressBook(QWidget):
 
             nameLine.setReadOnly(True)
             addressText.setReadOnly(True)
-            addButton.setEnabled(True)
+            addButton.sE..(True)
 
             number _ le.(contacts)
-            editButton.setEnabled(number >_ 1)
-            removeButton.setEnabled(number >_ 1)
-            nextButton.setEnabled(number > 1)
-            previousButton.setEnabled(number >1 )
+            editButton.sE..(number >_ 1)
+            removeButton.sE..(number >_ 1)
+            nextButton.sE..(number > 1)
+            previousButton.sE..(number >1 )
 
             submitButton.hide()
             cancelButton.hide()
@@ -303,4 +303,4 @@ __ ______ __ ______
     addressBook _ AddressBook()
     addressBook.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

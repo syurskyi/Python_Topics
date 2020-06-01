@@ -75,7 +75,7 @@ c_ ChatWindow ?.?W..
     ___  -  
         s_. - ()
         sL..(qtw.QGridLayout())
-        message_view _ qtw.QTextEdit(readOnly_True)
+        message_view _ ?.?TE..readOnly_True)
         layout().aW..(message_view, 1, 1, 1, 2)
         message_entry _ ?.?LE..(returnPressed_self.send)
         layout().aW..(message_entry, 2, 1)
@@ -125,4 +125,4 @@ __ ______ __ ______
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()
-    ___.exit(app.exec())
+    ___.e..(app.e..

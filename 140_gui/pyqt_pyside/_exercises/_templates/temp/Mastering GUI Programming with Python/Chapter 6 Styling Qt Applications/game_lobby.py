@@ -69,12 +69,12 @@ c_ MainWindow(qtw.QMainWindow):
         # Main UI code goes here
 
         # Basic Form Definition
-        setWindowTitle('Fight Fighter Game Lobby')
+        sWT..('Fight Fighter Game Lobby')
         cx_form _ qtw.?W..
         sCW..(cx_form)
         cx_form.sL..(qtw.QFormLayout())
 
-        heading _ qtw.QLabel("Fight Fighter!")
+        heading _ ?.?L..("Fight Fighter!")
         cx_form.layout().addRow(heading)
 
         inputs _ {
@@ -82,8 +82,8 @@ c_ MainWindow(qtw.QMainWindow):
             'Name': qtw.?LE..,
             'Password': ?.?LE..(
                 echoMode_qtw.QLineEdit.Password),
-            'Team': qtw.QComboBox(),
-            'Ready': qtw.QCheckBox('Check when ready')
+            'Team': ?.?CB..,
+            'Ready': ?.?CB..('Check when ready')
         }
         teams _ (
             'Crimson Sharks',
@@ -91,7 +91,7 @@ c_ MainWindow(qtw.QMainWindow):
             'Night Terrors',
             'Blue Crew'
         )
-        inputs['Team'].addItems(teams)
+        inputs['Team'].aI..(teams)
 
         ___ label, widget __ inputs.items
             cx_form.layout().addRow(label, widget)
@@ -377,4 +377,4 @@ __ ______ __ ______
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()
-    ___.exit(app.exec())
+    ___.e..(app.e..

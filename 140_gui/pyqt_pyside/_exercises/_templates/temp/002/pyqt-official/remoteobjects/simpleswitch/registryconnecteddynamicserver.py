@@ -132,4 +132,4 @@ __ ______ __ ______
     # Enable remoting.
     srcNode.enableRemoting(srcSwitch, 'SimpleSwitch')
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

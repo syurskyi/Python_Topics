@@ -34,4 +34,4 @@ c_ MainWindow(qtw.QMainWindow):
 __ ______ __ ______
     app _ qtw.?A..(___.a..
     mw _ MainWindow()
-    ___.exit(app.exec())
+    ___.e..(app.e..

@@ -151,19 +151,19 @@ c_ AudioTest(AudioDevicesBase):
 
         sampleRateBox.clear()
         sampleRatez _ deviceInfo.supportedSampleRates()
-        sampleRateBox.addItems([str(sr) ___ sr __ sampleRatez])
+        sampleRateBox.aI..([str(sr) ___ sr __ sampleRatez])
         __ le.(sampleRatez) !_ 0:
             settings.setSampleRate(sampleRatez[0])
 
         channelsBox.clear()
         chz _ deviceInfo.supportedChannelCounts()
-        channelsBox.addItems([str(ch) ___ ch __ chz])
+        channelsBox.aI..([str(ch) ___ ch __ chz])
         __ le.(chz) !_ 0:
             settings.setChannelCount(chz[0])
 
         codecsBox.clear()
         codecs _ deviceInfo.supportedCodecs()
-        codecsBox.addItems([str(c) ___ c __ codecs])
+        codecsBox.aI..([str(c) ___ c __ codecs])
         __ le.(codecs) !_ 0:
             settings.setCodec(codecs[0])
 
@@ -172,20 +172,20 @@ c_ AudioTest(AudioDevicesBase):
 
         sampleSizesBox.clear()
         sampleSizez _ deviceInfo.supportedSampleSizes()
-        sampleSizesBox.addItems([str(ss) ___ ss __ sampleSizez])
+        sampleSizesBox.aI..([str(ss) ___ ss __ sampleSizez])
         __ le.(sampleSizez) !_ 0:
             settings.setSampleSize(sampleSizez[0])
 
         sampleTypesBox.clear()
         sampleTypez _ deviceInfo.supportedSampleTypes()
-        sampleTypesBox.addItems(
+        sampleTypesBox.aI..(
                 [sampleTypeToString(st) ___ st __ sampleTypez])
         __ le.(sampleTypez) !_ 0:
             settings.setSampleType(sampleTypez[0])
 
         endianBox.clear()
         endianz _ deviceInfo.supportedByteOrders()
-        endianBox.addItems([endianToString(e) ___ e __ endianz])
+        endianBox.aI..([endianToString(e) ___ e __ endianz])
         __ le.(endianz) !_ 0:
             settings.setByteOrder(endianz[0])
 
@@ -276,4 +276,4 @@ __ ______ __ ______
     audio _ AudioTest()
     audio.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

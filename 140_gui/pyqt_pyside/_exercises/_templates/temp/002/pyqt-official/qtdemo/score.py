@@ -59,12 +59,12 @@ c_ Score(object):
         __ lockMode == Score.LOCK_ITEMS:
             ___ item __ movie:
                 __ runMode !_ Score.ONLY_IF_VISIBLE or item.isVisible
-                    item.setEnabled F..
+                    item.sE.. F..
                     item.prepare()
         ____ lockMode == Score.UNLOCK_ITEMS:
             ___ item __ movie:
                 __ runMode !_ Score.ONLY_IF_VISIBLE or item.isVisible
-                    item.setEnabled(True)
+                    item.sE..(True)
                     item.prepare()
         ____
             ___ item __ movie:

@@ -5,7 +5,7 @@ ____ .mainwindow ______ MainWindow
 ___ main
     app _ ?A..(___.a..
     mainwindow _ MainWindow()
-    ___.exit(app.exec())
+    ___.e..(app.e..
 
 __ ______ __ ______
     main()

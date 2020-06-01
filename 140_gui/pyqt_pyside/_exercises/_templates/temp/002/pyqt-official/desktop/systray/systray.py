@@ -77,13 +77,13 @@ c_ Window(QDialog):
         iconComboBox.setCurrentIndex(1)
         trayIcon.s..
 
-        setWindowTitle("Systray")
-        resize(400, 300)
+        sWT..("Systray")
+        r..(400, 300)
 
     ___ setVisible  visible):
-        minimizeAction.setEnabled(visible)
-        maximizeAction.setEnabled(no. isMaximized())
-        restoreAction.setEnabled(isMaximized() or no. visible)
+        minimizeAction.sE..(visible)
+        maximizeAction.sE..(no. isMaximized())
+        restoreAction.sE..(isMaximized() or no. visible)
         super(Window, self).setVisible(visible)
 
     ___ closeEvent  event):
@@ -228,10 +228,10 @@ __ ______ __ ______
     __ no. QSystemTrayIcon.isSystemTrayAvailable
         ?MB...critical(N.., "Systray",
                 "I couldn't detect any system tray on this system.")
-        ___.exit(1)
+        ___.e..(1)
 
     ?A...setQuitOnLastWindowClosed F..
 
     window _ Window()
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

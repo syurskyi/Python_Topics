@@ -221,7 +221,7 @@ c_ Window(QWidget):
 
         sL..(layout)
 
-        setWindowTitle("Border Layout")
+        sWT..("Border Layout")
 
     ___ createLabel  t__):
         label _ QLabel(t__)
@@ -237,4 +237,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ Window()
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

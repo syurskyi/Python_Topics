@@ -225,9 +225,9 @@ c_ MandelbrotWidget(QWidget):
 
         thread.renderedImage.c..(updatePixmap)
 
-        setWindowTitle("Mandelbrot")
+        sWT..("Mandelbrot")
         setCursor(__.CrossCursor)
-        resize(550, 400)
+        r..(550, 400)
 
     ___ paintEvent  event):
         painter _ QPainter
@@ -344,4 +344,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     widget _ MandelbrotWidget()
     widget.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

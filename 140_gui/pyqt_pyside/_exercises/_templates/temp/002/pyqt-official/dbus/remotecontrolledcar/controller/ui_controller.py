@@ -12,7 +12,7 @@ ____ ? ______ ?C.., ?G.., ?W..
 c_ Ui_Controller(object):
     ___ setupUi  Controller):
         Controller.setObjectName("Controller")
-        Controller.resize(255, 111)
+        Controller.r..(255, 111)
         gridlayout _ ?W...QGridLayout(Controller)
         gridlayout.setContentsMargins(9, 9, 9, 9)
         gridlayout.setSpacing(6)
@@ -39,7 +39,7 @@ c_ Ui_Controller(object):
 
     ___ retranslateUi  Controller):
         _translate _ ?C...QCoreApplication.translate
-        Controller.setWindowTitle(_translate("Controller", "Controller"))
+        Controller.sWT..(_translate("Controller", "Controller"))
         label.sT..(_translate("Controller", "Controller"))
         decelerate.sT..(_translate("Controller", "Decelerate"))
         accelerate.sT..(_translate("Controller", "Accelerate"))

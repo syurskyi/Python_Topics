@@ -327,7 +327,7 @@ c_ GraphWidget(QGraphicsView):
 
         scale(0.8, 0.8)
         setMinimumSize(400, 400)
-        setWindowTitle("Elastic Nodes")
+        sWT..("Elastic Nodes")
 
     ___ itemMoved
         __ no. timerId:
@@ -427,4 +427,4 @@ __ ______ __ ______
     widget _ GraphWidget()
     widget.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

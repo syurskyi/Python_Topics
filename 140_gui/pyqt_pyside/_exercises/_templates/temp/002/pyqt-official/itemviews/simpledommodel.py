@@ -193,7 +193,7 @@ c_ MainWindow ?MW..
         view.sM..(model)
 
         sCW..(view)
-        setWindowTitle("Simple DOM Model")
+        sWT..("Simple DOM Model")
 
     ___ openFile
         filePath, _ _ ?FD...gOFN..  "Open File",
@@ -219,6 +219,6 @@ __ ______ __ ______
 
     app _ ?A..(___.a..
     window _ MainWindow()
-    window.resize(640, 480)
+    window.r..(640, 480)
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

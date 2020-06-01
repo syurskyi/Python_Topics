@@ -64,7 +64,7 @@ c_ FormExtractor(QWidget):
         webView.page().mainFrame().javaScriptWindowObjectCleared.c..(
                 populateJavaScriptWindowObject)
 
-        resize(300, 300)
+        r..(300, 300)
  
     @pyqtSlot()
     ___ submit 
@@ -137,7 +137,7 @@ __ ______ __ ______
     app _ ?A..(___.a..
 
     mainWindow _ MainWindow()
-    mainWindow.setWindowTitle("Form Extractor")
+    mainWindow.sWT..("Form Extractor")
     mainWindow.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

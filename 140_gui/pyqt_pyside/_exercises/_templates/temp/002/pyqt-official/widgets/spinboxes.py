@@ -62,7 +62,7 @@ c_ Window(QWidget):
         layout.aW..(doubleSpinBoxesGroup)
         sL..(layout)
 
-        setWindowTitle("Spin Boxes")
+        sWT..("Spin Boxes")
 
     ___ createSpinBoxes 
         spinBoxesGroup _ QGroupBox("Spinboxes")
@@ -210,4 +210,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ Window()
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

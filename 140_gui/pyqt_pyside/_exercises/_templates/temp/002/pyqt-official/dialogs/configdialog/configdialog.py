@@ -205,7 +205,7 @@ c_ ConfigDialog(QDialog):
 
         sL..(mainLayout)
 
-        setWindowTitle("Config Dialog")
+        sWT..("Config Dialog")
 
     ___ changePage  current, previous):
         __ no. current:
@@ -241,4 +241,4 @@ __ ______ __ ______
 
     app _ ?A..(___.a..
     dialog _ ConfigDialog()
-    ___.exit(dialog.exec_())    
+    ___.e..(dialog.exec_())

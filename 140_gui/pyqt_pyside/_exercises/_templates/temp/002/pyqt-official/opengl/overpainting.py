@@ -139,7 +139,7 @@ c_ GLWidget(QOpenGLWidget):
 
         setAutoFillBackground F..
         setMinimumSize(200, 200)
-        setWindowTitle("Overpainting a Scene")
+        sWT..("Overpainting a Scene")
 
     ___ setXRotation  angle):
         angle _ normalizeAngle(angle)
@@ -376,4 +376,4 @@ __ ______ __ ______
 
     window _ GLWidget()
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

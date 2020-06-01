@@ -21,7 +21,7 @@ c_ MainWindow(qtw.QMainWindow):
         sCW..(form)
         form.sL.. ?.?VBL..
         filename _ qtw.?LE..
-        filecontent _ qtw.QTextEdit()
+        filecontent _ ?.?TE..)
         savebutton _ qtw.?PB..(
             'Save',
             c___self.save
@@ -55,4 +55,4 @@ __ ______ __ ______
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()
-    ___.exit(app.exec())
+    ___.e..(app.e..

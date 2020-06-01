@@ -224,7 +224,7 @@ c_ MainWindow ?MW..
         centralWidget.sL..(centralLayout)
 
         sCW..(centralWidget)
-        setWindowTitle("Character Map")
+        sWT..("Character Map")
 
     ___ findStyles  font):
         fontDatabase _ QFontDatabase()
@@ -278,4 +278,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ MainWindow()
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

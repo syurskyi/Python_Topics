@@ -69,8 +69,8 @@ c_ ImageViewer ?MW..
         createActions()
         createMenus()
 
-        setWindowTitle("Image Viewer")
-        resize(500, 400)
+        sWT..("Image Viewer")
+        r..(500, 400)
 
     ___ o..
         fileName, _ _ ?FD...gOFN..  "Open File",
@@ -85,8 +85,8 @@ c_ ImageViewer ?MW..
             imageLabel.setPixmap(QPixmap.fromImage(image))
             scaleFactor _ 1.0
 
-            printAct.setEnabled(True)
-            fitToWindowAct.setEnabled(True)
+            printAct.sE..(True)
+            fitToWindowAct.sE..(True)
             updateActions()
 
             __ no. fitToWindowAct.isChecked
@@ -187,19 +187,19 @@ c_ ImageViewer ?MW..
         mB.. .aM..(helpMenu)
 
     ___ updateActions
-        zoomInAct.setEnabled(no. fitToWindowAct.isChecked())
-        zoomOutAct.setEnabled(no. fitToWindowAct.isChecked())
-        normalSizeAct.setEnabled(no. fitToWindowAct.isChecked())
+        zoomInAct.sE..(no. fitToWindowAct.isChecked())
+        zoomOutAct.sE..(no. fitToWindowAct.isChecked())
+        normalSizeAct.sE..(no. fitToWindowAct.isChecked())
 
     ___ scaleImage  factor):
         scaleFactor *_ factor
-        imageLabel.resize(scaleFactor * imageLabel.pixmap().size())
+        imageLabel.r..(scaleFactor * imageLabel.pixmap().size())
 
         adjustScrollBar(scrollArea.horizontalScrollBar(), factor)
         adjustScrollBar(scrollArea.verticalScrollBar(), factor)
 
-        zoomInAct.setEnabled(scaleFactor < 3.0)
-        zoomOutAct.setEnabled(scaleFactor > 0.333)
+        zoomInAct.sE..(scaleFactor < 3.0)
+        zoomOutAct.sE..(scaleFactor > 0.333)
 
     ___ adjustScrollBar  scrollBar, factor):
         scrollBar.setValue(int(factor * scrollBar.value()
@@ -213,4 +213,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     imageViewer _ ImageViewer()
     imageViewer.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

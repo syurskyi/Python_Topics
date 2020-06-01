@@ -138,8 +138,8 @@ c_ Window(QWidget):
         mainLayout.aW..(proxyGroupBox)
         sL..(mainLayout)
 
-        setWindowTitle("Basic Sort/Filter Model")
-        resize(500, 450)
+        sWT..("Basic Sort/Filter Model")
+        r..(500, 450)
 
         proxyView.sortByColumn(SENDER, __.AscendingOrder)
         filterColumnComboBox.setCurrentIndex(SENDER)
@@ -223,4 +223,4 @@ __ ______ __ ______
     window _ Window()
     window.setSourceModel(createMailModel(window))
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

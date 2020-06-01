@@ -249,7 +249,7 @@ c_ Window(QWidget):
         timer.timeout.c..(rotateOneStep)
         timer.start(20)
 
-        setWindowTitle("Textures")
+        sWT..("Textures")
 
     ___ setCurrentGlWidget
         currentGlWidget _ sender()
@@ -269,4 +269,4 @@ __ ______ __ ______
 
     window _ Window()
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

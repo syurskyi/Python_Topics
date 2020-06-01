@@ -12,7 +12,7 @@ ____ ? ______ ?C.., ?G.., ?W..
 c_ Ui_Form(object):
     ___ setupUi  Form):
         Form.setObjectName("Form")
-        Form.resize(378, 385)
+        Form.r..(378, 385)
         verticalLayout_2 _ ?W...QVBoxLayout(Form)
         verticalLayout_2.setObjectName("verticalLayout_2")
         groupBox _ ?W...QGroupBox(Form)
@@ -84,7 +84,7 @@ c_ Ui_Form(object):
 
     ___ retranslateUi  Form):
         _translate _ ?C...QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", "BackSide"))
+        Form.sWT..(_translate("Form", "BackSide"))
         groupBox.setTitle(_translate("Form", "Settings"))
         label.sT..(_translate("Form", "Title:"))
         hostName.sT..(_translate("Form", "Pad Navigator Example"))

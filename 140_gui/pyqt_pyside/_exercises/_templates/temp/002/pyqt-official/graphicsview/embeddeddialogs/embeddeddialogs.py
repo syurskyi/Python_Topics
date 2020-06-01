@@ -232,6 +232,6 @@ __ ______ __ ______
     view.setBackgroundBrush(QBrush(QPixmap(':/No-Ones-Laughing-3.jpg')))
     view.setViewportUpdateMode(QGraphicsView.BoundingRectViewportUpdate)
     view.s..
-    view.setWindowTitle("Embedded Dialogs Demo")
+    view.sWT..("Embedded Dialogs Demo")
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

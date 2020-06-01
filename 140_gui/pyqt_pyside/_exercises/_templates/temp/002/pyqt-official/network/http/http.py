@@ -97,7 +97,7 @@ c_ HttpWindow(QDialog):
         mainLayout.aW..(buttonBox)
         sL..(mainLayout)
 
-        setWindowTitle("HTTP")
+        sWT..("HTTP")
         urlLineEdit.setFocus()
 
     ___ startRequest  url):
@@ -132,9 +132,9 @@ c_ HttpWindow(QDialog):
             outFile _ N..
             r_
 
-        progressDialog.setWindowTitle("HTTP")
+        progressDialog.sWT..("HTTP")
         progressDialog.setLabelText("Downloading %s." % fileName)
-        downloadButton.setEnabled F..
+        downloadButton.sE.. F..
 
         httpRequestAborted _ False
         startRequest(url)
@@ -144,7 +144,7 @@ c_ HttpWindow(QDialog):
         httpRequestAborted _ True
         __ reply __ no. N..:
             reply.abort()
-        downloadButton.setEnabled(True)
+        downloadButton.sE..(True)
 
     ___ httpFinished 
         __ httpRequestAborted:
@@ -168,7 +168,7 @@ c_ HttpWindow(QDialog):
             outFile.remove()
             ?MB...information  "HTTP",
                     "Download failed: %s." % reply.errorString())
-            downloadButton.setEnabled(True)
+            downloadButton.sE..(True)
         ____ redirectionTarget __ no. N..:
             newUrl _ url.resolved(redirectionTarget)
 
@@ -181,14 +181,14 @@ c_ HttpWindow(QDialog):
                 reply.deleteLater()
                 reply _ N..
                 outFile.o..(QIODevice.WriteOnly)
-                outFile.resize(0)
+                outFile.r..(0)
                 startRequest(url)
                 r_
         ____
             fileName _ QFileInfo(QUrl(urlLineEdit.t__()).path()).fileName()
             statusLabel.sT..("Downloaded %s to %s." % (fileName, QDir.currentPath()))
 
-            downloadButton.setEnabled(True)
+            downloadButton.sE..(True)
 
         reply.deleteLater()
         reply _ N..
@@ -206,7 +206,7 @@ c_ HttpWindow(QDialog):
         progressDialog.setValue(bytesRead)
 
     ___ enableDownloadButton 
-        downloadButton.setEnabled(urlLineEdit.t__() !_ '')
+        downloadButton.sE..(urlLineEdit.t__() !_ '')
 
     ___ slotAuthenticationRequired  authenticator):
         ______ os
@@ -242,4 +242,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     httpWin _ HttpWindow()
     httpWin.s..
-    ___.exit(httpWin.exec_())
+    ___.e..(httpWin.exec_())

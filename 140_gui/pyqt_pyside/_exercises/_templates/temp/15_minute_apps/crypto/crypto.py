@@ -198,7 +198,7 @@ class MainWindow(QMainWindow):
         toolbar.addWidget(progress)
 
         refresh_historic_rates()
-        setWindowTitle("Goodforbitcoin")
+        sWT..("Goodforbitcoin")
         show()
 
     def update_currency_list(self, currencies):

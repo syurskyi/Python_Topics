@@ -207,6 +207,6 @@ __ ______ __ ______
 
     view _ ?TV..
     view.sM..(model)
-    view.setWindowTitle("Simple Tree Model")
+    view.sWT..("Simple Tree Model")
     view.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

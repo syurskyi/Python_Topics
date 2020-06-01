@@ -109,8 +109,8 @@ c_ Dialog(QDialog):
 
         lineEdit.sT..("Hello world!")
 
-        setWindowTitle("Wiggly")
-        resize(360, 145)
+        sWT..("Wiggly")
+        r..(360, 145)
 
 
 __ ______ __ ______
@@ -120,4 +120,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     dialog _ Dialog()
     dialog.s..;
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

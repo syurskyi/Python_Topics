@@ -152,7 +152,7 @@ c_ BlockingClient(QWidget):
 
         getFortuneButton _ ?PB..("Get Fortune")
         getFortuneButton.setDefault(True)
-        getFortuneButton.setEnabled F..
+        getFortuneButton.sE.. F..
 
         quitButton _ ?PB..("Quit")
 
@@ -176,11 +176,11 @@ c_ BlockingClient(QWidget):
         mainLayout.aW..(buttonBox, 3, 0, 1, 2)
         sL..(mainLayout)
 
-        setWindowTitle("Blocking Fortune Client")
+        sWT..("Blocking Fortune Client")
         portLineEdit.setFocus()
 
     ___ requestNewFortune
-        getFortuneButton.setEnabled F..
+        getFortuneButton.sE.. F..
         thread.requestNewFortune(hostLineEdit.t__(),
                 int(portLineEdit.t__()))
 
@@ -191,7 +191,7 @@ c_ BlockingClient(QWidget):
 
         currentFortune _ nextFortune
         statusLabel.sT..(currentFortune)
-        getFortuneButton.setEnabled(True)
+        getFortuneButton.sE..(True)
 
     ___ displayError  socketError, message):
         __ socketError == QAbstractSocket.HostNotFoundError:
@@ -207,10 +207,10 @@ c_ BlockingClient(QWidget):
             ?MB...information  "Blocking Fortune Client",
                     "The following error occurred: %s." % message)
 
-        getFortuneButton.setEnabled(True)
+        getFortuneButton.sE..(True)
 
     ___ enableGetFortuneButton
-        getFortuneButton.setEnabled(hostLineEdit.t__() !_ '' and
+        getFortuneButton.sE..(hostLineEdit.t__() !_ '' and
                 portLineEdit.t__() !_ '')
 
 
@@ -221,4 +221,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     client _ BlockingClient()
     client.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

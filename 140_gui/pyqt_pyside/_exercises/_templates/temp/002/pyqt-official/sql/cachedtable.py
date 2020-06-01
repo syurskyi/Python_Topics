@@ -85,7 +85,7 @@ c_ TableEditor(QDialog):
         mainLayout.aW..(buttonBox)
         sL..(mainLayout)
 
-        setWindowTitle("Cached Table")
+        sWT..("Cached Table")
 
     ___ submit 
         model.database().transaction()
@@ -103,8 +103,8 @@ __ ______ __ ______
 
     app _ ?A..(___.a..
     __ no. connection.createConnection
-        ___.exit(1)
+        ___.e..(1)
 
     editor _ TableEditor('person')
     editor.s..
-    ___.exit(editor.exec_())
+    ___.e..(editor.exec_())

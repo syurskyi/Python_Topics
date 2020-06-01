@@ -181,8 +181,8 @@ __ ______ __ ______
     view _ QGraphicsView(scene)
     view.setRenderHint(QPainter.Antialiasing)
     view.setBackgroundBrush(__.darkGray)
-    view.setWindowTitle("Qt DBus Controlled Car")
-    view.resize(400, 300)
+    view.sWT..("Qt DBus Controlled Car")
+    view.r..(400, 300)
     view.s..
 
     a _ CarInterfaceAdaptor(car)
@@ -195,4 +195,4 @@ __ ______ __ ______
     # Make sure things get destroyed in the right order.
     del view
 
-    ___.exit(rc)
+    ___.e..(rc)

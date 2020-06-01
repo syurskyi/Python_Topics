@@ -133,7 +133,7 @@ __ ______ __ ______
     machine.setInitialState(group)
     machine.start()
 
-    window.resize(300, 300)
+    window.r..(300, 300)
     window.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

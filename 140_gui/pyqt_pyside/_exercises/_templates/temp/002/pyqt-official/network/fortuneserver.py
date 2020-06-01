@@ -104,7 +104,7 @@ c_ Server(QDialog):
         mainLayout.aL..(buttonLayout)
         sL..(mainLayout)
 
-        setWindowTitle("Fortune Server")
+        sWT..("Fortune Server")
 
     ___ sessionOpened
         __ networkSession __ no. N..:
@@ -163,4 +163,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     server _ Server()
     random.seed(N..)
-    ___.exit(server.exec_())
+    ___.e..(server.exec_())

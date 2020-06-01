@@ -12,7 +12,7 @@ ____ ? ______ ?C.., ?G.., ?W..
 c_ Ui_StyleSheetEditor(object):
     ___ setupUi  StyleSheetEditor):
         StyleSheetEditor.setObjectName("StyleSheetEditor")
-        StyleSheetEditor.resize(445, 289)
+        StyleSheetEditor.r..(445, 289)
         gridlayout _ ?W...QGridLayout(StyleSheetEditor)
         gridlayout.setContentsMargins(9, 9, 9, 9)
         gridlayout.setSpacing(6)
@@ -52,11 +52,11 @@ c_ Ui_StyleSheetEditor(object):
         spacerItem3 _ ?W...QSpacerItem(321, 20, ?W...QSizePolicy.E.., ?W...QSizePolicy.Minimum)
         hboxlayout.addItem(spacerItem3)
         saveButton _ ?W...?PB..(StyleSheetEditor)
-        saveButton.setEnabled(True)
+        saveButton.sE..(True)
         saveButton.setObjectName("saveButton")
         hboxlayout.aW..(saveButton)
         applyButton _ ?W...?PB..(StyleSheetEditor)
-        applyButton.setEnabled F..
+        applyButton.sE.. F..
         applyButton.setObjectName("applyButton")
         hboxlayout.aW..(applyButton)
         gridlayout.aL..(hboxlayout, 2, 0, 1, 7)
@@ -77,7 +77,7 @@ c_ Ui_StyleSheetEditor(object):
 
     ___ retranslateUi  StyleSheetEditor):
         _translate _ ?C...QCoreApplication.translate
-        StyleSheetEditor.setWindowTitle(_translate("StyleSheetEditor", "Style Editor"))
+        StyleSheetEditor.sWT..(_translate("StyleSheetEditor", "Style Editor"))
         styleSheetCombo.setItemText(0, _translate("StyleSheetEditor", "Default"))
         styleSheetCombo.setItemText(1, _translate("StyleSheetEditor", "Coffee"))
         styleSheetCombo.setItemText(2, _translate("StyleSheetEditor", "Pagefold"))

@@ -58,8 +58,8 @@ c_ DigitalClock(QLCDNumber):
 
         showTime()
 
-        setWindowTitle("Digital Clock")
-        resize(150, 60)
+        sWT..("Digital Clock")
+        r..(150, 60)
 
     ___ showTime 
         time _ QTime.currentTime()
@@ -77,4 +77,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     clock _ DigitalClock()
     clock.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

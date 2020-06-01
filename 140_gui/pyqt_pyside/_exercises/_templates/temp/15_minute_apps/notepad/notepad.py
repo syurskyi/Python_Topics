@@ -173,7 +173,7 @@ c_ MainWindow ?MW..
             editor.print_(dlg.printer())
 
     ___ update_title
-        setWindowTitle("%s - No2Pads" % (__.p__ .basename(path) __ path else "Untitled"))
+        sWT..("%s - No2Pads" % (__.p__ .basename(path) __ path else "Untitled"))
 
     ___ edit_toggle_wrap
         editor.setLineWrapMode( 1 __ editor.lineWrapMode() == 0 else 0 )

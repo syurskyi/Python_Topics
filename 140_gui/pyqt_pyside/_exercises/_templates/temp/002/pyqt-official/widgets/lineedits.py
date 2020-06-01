@@ -148,7 +148,7 @@ c_ Window(QWidget):
         layout.aW..(accessGroup, 1, 1)
         sL..(layout)
 
-        setWindowTitle("Line Edits")
+        sWT..("Line Edits")
 
     ___ echoChanged  index):
         __ index == 0:
@@ -204,4 +204,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ Window()
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

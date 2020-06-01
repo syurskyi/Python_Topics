@@ -102,7 +102,7 @@ c_ ChatMainWindow(QMainWindow, Ui_ChatMainWindow):
         m_messages _   # list
 
         setupUi
-        sendButton.setEnabled F..
+        sendButton.sE.. F..
 
         messageLineEdit.textChanged.c..(textChangedSlot)
         sendButton.c__.c..(sendClickedSlot)
@@ -149,7 +149,7 @@ c_ ChatMainWindow(QMainWindow, Ui_ChatMainWindow):
 
     @pyqtSlot(str)
     ___ textChangedSlot  newText):
-        sendButton.setEnabled(newText !_ '')
+        sendButton.sE..(newText !_ '')
 
     @pyqtSlot()
     ___ sendClickedSlot 
@@ -192,9 +192,9 @@ __ ______ __ ______
     __ no. QDBusConnection.sessionBus().isConnected
         ___.stderr.w..("Cannot connect to the D-Bus session bus.\n"
                 "Please check your system settings and try again.\n")
-        ___.exit(1)
+        ___.e..(1)
 
     chat _ ChatMainWindow()
     chat.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

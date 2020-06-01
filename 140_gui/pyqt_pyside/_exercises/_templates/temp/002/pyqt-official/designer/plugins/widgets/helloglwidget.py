@@ -58,7 +58,7 @@ c_ HelloGLWidget(QOpenGLWidget):
         trolltechGreen _ ?C...fromCmykF(0.40, 0.0, 1.0, 0.0)
         trolltechPurple _ ?C...fromCmykF(0.39, 0.39, 0.0, 0.0)
 
-        setWindowTitle("Hello GL")
+        sWT..("Hello GL")
 
     # The rotation of the logo about the x-axis can be controlled using the
     # xRotation property, defined using the following getter and setter
@@ -258,4 +258,4 @@ __ __name__ == "__main__":
     app _ ?A..(___.a..
     widget _ HelloGLWidget()
     widget.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

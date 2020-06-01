@@ -66,8 +66,8 @@ c_ MainWindow ?MW..
         createMenus()
         statusBar()
 
-        setWindowTitle("Recent Files")
-        resize(400, 300)
+        sWT..("Recent Files")
+        r..(400, 300)
 
     ___ newFile 
         other _ MainWindow()
@@ -184,9 +184,9 @@ c_ MainWindow ?MW..
     ___ setCurrentFile  fileName):
         curFile _ fileName
         __ curFile:
-            setWindowTitle("%s - Recent Files" % strippedName(curFile))
+            sWT..("%s - Recent Files" % strippedName(curFile))
         ____
-            setWindowTitle("Recent Files")
+            sWT..("Recent Files")
 
         settings _ QSettings('Trolltech', 'Recent Files Example')
         files _ settings.value('recentFileList',   # list)
@@ -233,4 +233,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     mainWin _ MainWindow()
     mainWin.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

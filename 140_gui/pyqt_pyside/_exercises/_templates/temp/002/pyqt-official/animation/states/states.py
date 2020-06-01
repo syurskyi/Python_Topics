@@ -269,4 +269,4 @@ __ ______ __ ______
     view _ QGraphicsView(scene)
     view.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

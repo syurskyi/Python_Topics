@@ -58,7 +58,7 @@ c_ StyleSheetEditor(QDialog):
         __ regExp.exactMatch(defaultStyle):
             defaultStyle _ regExp.cap(1)
 
-        ui.styleCombo.addItems(QStyleFactory.keys())
+        ui.styleCombo.aI..(QStyleFactory.keys())
         ui.styleCombo.setCurrentIndex(
                 ui.styleCombo.findText(defaultStyle, __.MatchContains))
 
@@ -70,19 +70,19 @@ c_ StyleSheetEditor(QDialog):
     @pyqtSlot(str)
     ___ on_styleCombo_activated  styleName):
         ?A...setStyle(styleName)
-        ui.applyButton.setEnabled F..
+        ui.applyButton.sE.. F..
 
     @pyqtSlot(str)
     ___ on_styleSheetCombo_activated  sheetName):
         loadStyleSheet(sheetName)
 
     ___ on_styleTextEdit_textChanged 
-        ui.applyButton.setEnabled(True)
+        ui.applyButton.sE..(True)
 
     ___ on_applyButton_clicked 
         ?A...instance().setStyleSheet(
                 ui.styleTextEdit.tPT..
-        ui.applyButton.setEnabled F..
+        ui.applyButton.sE.. F..
 
     ___ on_saveButton_clicked 
         fileName, _ _ ?FD...getSaveFileName
@@ -103,7 +103,7 @@ c_ StyleSheetEditor(QDialog):
 
         ui.styleTextEdit.sPT..(styleSheet)
         ?A...instance().setStyleSheet(styleSheet)
-        ui.applyButton.setEnabled F..
+        ui.applyButton.sE.. F..
 
     ___ saveStyleSheet  fileName):
         styleSheet _ ui.styleTextEdit.toPlainText()

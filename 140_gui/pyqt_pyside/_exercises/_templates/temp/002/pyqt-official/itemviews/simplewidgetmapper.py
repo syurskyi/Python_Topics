@@ -91,7 +91,7 @@ c_ Window(QWidget):
         layout.aW..(ageSpinBox, 3, 1, 1, 1)
         sL..(layout)
 
-        setWindowTitle("Simple Widget Mapper")
+        sWT..("Simple Widget Mapper")
         mapper.toFirst()
  
     ___ setupModel 
@@ -114,8 +114,8 @@ c_ Window(QWidget):
             model.setItem(row, 2, item)
  
     ___ updateButtons  row):
-        previousButton.setEnabled(row > 0)
-        nextButton.setEnabled(row < model.rowCount() - 1)
+        previousButton.sE..(row > 0)
+        nextButton.sE..(row < model.rowCount() - 1)
 
 
 __ ______ __ ______
@@ -127,4 +127,4 @@ __ ______ __ ______
     window _ Window()
     window.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

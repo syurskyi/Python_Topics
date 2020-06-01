@@ -15,12 +15,12 @@ c_ MainWindow(qtw.QMainWindow):
         """
         s_. - ()
         # Main framework
-        resize(qtc.QSize(800, 600))
+        r..(qtc.QSize(800, 600))
         base_widget _ qtw.?W..
         base_widget.sL..(qtw.QHBoxLayout())
         notebook _ qtw.QTabWidget()
         base_widget.layout().aW..(notebook)
-        file_list _ qtw.QListWidget()
+        file_list _ ?.?LW..
         base_widget.layout().aW..(file_list)
 
         sCW..(base_widget)
@@ -158,4 +158,4 @@ __ ______ __ ______
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()
-    ___.exit(app.exec())
+    ___.e..(app.e..

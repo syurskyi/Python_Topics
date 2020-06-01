@@ -236,7 +236,7 @@ c_ Colors(object):
                         "[-fps<int>] [-low] [-ticker-letters<int>] "
                         "[-ticker-speed<float>] [-no-ticker-morph] "
                         "[-ticker-morph-speed<float>] [-ticker-text<string>]")
-                ___.exit(0)
+                ___.e..(0)
 
         cls.postConfigure()
 
@@ -274,6 +274,6 @@ ___ parseText(argument, name):
         ?MB...warning(N.., "Arguments",
                 "No argument number found for %s. Remember to put name and "
                 "value adjacent! (e.g. -fps100)")
-        ___.exit(0)
+        ___.e..(0)
 
     r_ argument[le.(name):]

@@ -136,7 +136,7 @@ c_ Window(QWidget):
     ___  -
         super(Window, self). - ()
 
-        setWindowTitle("2D Painting on Native and OpenGL Widgets")
+        sWT..("2D Painting on Native and OpenGL Widgets")
 
         helper _ Helper()
         native _ Widget(helper, self)
@@ -169,4 +169,4 @@ __ ______ __ ______
 
     window _ Window()
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

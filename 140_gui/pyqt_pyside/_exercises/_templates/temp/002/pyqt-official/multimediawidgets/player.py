@@ -179,7 +179,7 @@ c_ PlayerControls(QWidget):
 
         stopButton _ QToolButton(c___self.stop)
         stopButton.setIcon(style().standardIcon(QStyle.SP_MediaStop))
-        stopButton.setEnabled F..
+        stopButton.sE.. F..
 
         nextButton _ QToolButton(c___self.next)
         nextButton.setIcon(
@@ -222,15 +222,15 @@ c_ PlayerControls(QWidget):
             playerState _ state
 
             __ state == QMediaPlayer.StoppedState:
-                stopButton.setEnabled F..
+                stopButton.sE.. F..
                 playButton.setIcon(
                         style().standardIcon(QStyle.SP_MediaPlay))
             ____ state == QMediaPlayer.PlayingState:
-                stopButton.setEnabled(True)
+                stopButton.sE..(True)
                 playButton.setIcon(
                         style().standardIcon(QStyle.SP_MediaPause))
             ____ state == QMediaPlayer.PausedState:
-                stopButton.setEnabled(True)
+                stopButton.sE..(True)
                 playButton.setIcon(
                         style().standardIcon(QStyle.SP_MediaPlay))
 
@@ -455,7 +455,7 @@ c_ Player(QWidget):
         fullScreenButton.setCheckable(True)
 
         colorButton _ ?PB..("Color Options...")
-        colorButton.setEnabled F..
+        colorButton.sE.. F..
         colorButton.c__.c..(showColorDialog)
 
         displayLayout _ QHBoxLayout()
@@ -487,11 +487,11 @@ c_ Player(QWidget):
                     "The QMediaPlayer object does not have a valid service.\n"
                     "Please check the media service plugins are installed.")
 
-            controls.setEnabled F..
-            playlistView.setEnabled F..
-            openButton.setEnabled F..
-            colorButton.setEnabled F..
-            fullScreenButton.setEnabled F..
+            controls.sE.. F..
+            playlistView.sE.. F..
+            openButton.sE.. F..
+            colorButton.sE.. F..
+            fullScreenButton.sE.. F..
 
         metaDataChanged()
 
@@ -595,23 +595,23 @@ c_ Player(QWidget):
 
             videoWidget.setFullScreen F..
 
-        colorButton.setEnabled(available)
+        colorButton.sE..(available)
 
     ___ setTrackInfo  info):
         trackInfo _ info
 
         __ statusInfo !_ "":
-            setWindowTitle("%s | %s" % (trackInfo, statusInfo))
+            sWT..("%s | %s" % (trackInfo, statusInfo))
         ____
-            setWindowTitle(trackInfo)
+            sWT..(trackInfo)
 
     ___ setStatusInfo  info):
         statusInfo _ info
 
         __ statusInfo !_ "":
-            setWindowTitle("%s | %s" % (trackInfo, statusInfo))
+            sWT..("%s | %s" % (trackInfo, statusInfo))
         ____
-            setWindowTitle(trackInfo)
+            sWT..(trackInfo)
 
     ___ displayErrorMessage
         setStatusInfo(player.errorString())
@@ -671,7 +671,7 @@ c_ Player(QWidget):
             layout.addRow(button)
 
             colorDialog _ QDialog
-            colorDialog.setWindowTitle("Color Options")
+            colorDialog.sWT..("Color Options")
             colorDialog.sL..(layout)
 
             button.c__.c..(colorDialog.close)
@@ -688,4 +688,4 @@ __ ______ __ ______
     player _ Player(___.argv[1:])
     player.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

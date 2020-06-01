@@ -138,7 +138,7 @@ c_ DropSiteWindow(QWidget):
         mainLayout.aW..(buttonBox)
         sL..(mainLayout)
 
-        setWindowTitle("Drop Site")
+        sWT..("Drop Site")
         setMinimumSize(350, 500)
 
     ___ updateFormatsTable  mimeData_None):
@@ -176,5 +176,5 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ DropSiteWindow()
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())
 

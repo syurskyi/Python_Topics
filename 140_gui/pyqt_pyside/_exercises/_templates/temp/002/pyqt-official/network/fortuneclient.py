@@ -98,7 +98,7 @@ c_ Client(QDialog):
 
         getFortuneButton _ ?PB..("Get Fortune")
         getFortuneButton.setDefault(True)
-        getFortuneButton.setEnabled F..
+        getFortuneButton.sE.. F..
 
         quitButton _ ?PB..("Quit")
 
@@ -124,7 +124,7 @@ c_ Client(QDialog):
         mainLayout.aW..(buttonBox, 3, 0, 1, 2)
         sL..(mainLayout)
 
-        setWindowTitle("Fortune Client")
+        sWT..("Fortune Client")
         portLineEdit.setFocus()
 
         manager _ QNetworkConfigurationManager()
@@ -141,12 +141,12 @@ c_ Client(QDialog):
             networkSession _ QNetworkSession(config, self)
             networkSession.opened.c..(sessionOpened)
 
-            getFortuneButton.setEnabled F..
+            getFortuneButton.sE.. F..
             statusLabel.sT..("Opening network session.")
             networkSession.o..()
 
     ___ requestNewFortune
-        getFortuneButton.setEnabled F..
+        getFortuneButton.sE.. F..
         blockSize _ 0
         tcpSocket.abort()
         tcpSocket.connectToHost(hostCombo.currentText(),
@@ -172,7 +172,7 @@ c_ Client(QDialog):
 
         currentFortune _ nextFortune
         statusLabel.sT..(currentFortune)
-        getFortuneButton.setEnabled(True)
+        getFortuneButton.sE..(True)
 
     ___ displayError  socketError):
         __ socketError == QAbstractSocket.RemoteHostClosedError:
@@ -190,10 +190,10 @@ c_ Client(QDialog):
             ?MB...information  "Fortune Client",
                     "The following error occurred: %s." % tcpSocket.errorString())
 
-        getFortuneButton.setEnabled(True)
+        getFortuneButton.sE..(True)
 
     ___ enableGetFortuneButton
-        getFortuneButton.setEnabled(
+        getFortuneButton.sE..(
                 (networkSession __ N.. or networkSession.isOpen())
                 and hostCombo.currentText() !_ ''
                 and portLineEdit.t__() !_ '')
@@ -224,4 +224,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     client _ Client()
     client.s..
-    ___.exit(client.exec_())
+    ___.e..(client.exec_())

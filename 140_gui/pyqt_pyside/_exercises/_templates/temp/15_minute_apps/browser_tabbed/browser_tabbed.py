@@ -138,7 +138,7 @@ class MainWindow(QMainWindow):
 
         show()
 
-        setWindowTitle("Mozarella Ashbadger")
+        sWT..("Mozarella Ashbadger")
         setWindowIcon(QIcon(os.path.join('images', 'ma-icon-64.png')))
 
     def add_new_tab(self, qurl=None, label="Blank"):
@@ -181,7 +181,7 @@ class MainWindow(QMainWindow):
             return
 
         title = tabs.currentWidget().page().title()
-        setWindowTitle("%s - Mozarella Ashbadger" % title)
+        sWT..("%s - Mozarella Ashbadger" % title)
 
     def navigate_mozarella
         tabs.currentWidget().setUrl(QUrl("https://www.udemy.com/522076"))

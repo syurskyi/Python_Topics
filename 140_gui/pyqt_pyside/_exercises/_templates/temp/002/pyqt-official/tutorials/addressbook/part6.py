@@ -101,26 +101,26 @@ c_ AddressBook(QWidget):
         addButton _ ?PB..("&Add")
         addButton.s..
         editButton _ ?PB..("&Edit")
-        editButton.setEnabled F..
+        editButton.sE.. F..
         removeButton _ ?PB..("&Remove")
-        removeButton.setEnabled F..
+        removeButton.sE.. F..
         findButton _ ?PB..("&Find")
-        findButton.setEnabled F..
+        findButton.sE.. F..
         submitButton _ ?PB..("&Submit")
         submitButton.hide()
         cancelButton _ ?PB..("&Cancel")
         cancelButton.hide()
 
         nextButton _ ?PB..("&Next")
-        nextButton.setEnabled F..
+        nextButton.sE.. F..
         previousButton _ ?PB..("&Previous")
-        previousButton.setEnabled F..
+        previousButton.sE.. F..
 
         loadButton _ ?PB..("&Load...")
         loadButton.setToolTip("Load contacts from a file")
         saveButton _ ?PB..("Sa&ve...")
         saveButton.setToolTip("Save contacts to a file")
-        saveButton.setEnabled F..
+        saveButton.sE.. F..
 
         dialog _ FindDialog()
 
@@ -159,7 +159,7 @@ c_ AddressBook(QWidget):
         mainLayout.aL..(buttonLayout2, 2, 1)
 
         sL..(mainLayout)
-        setWindowTitle("Simple Address Book")
+        sWT..("Simple Address Book")
 
     ___ addContact 
         oldName _ nameLine.t__()
@@ -299,18 +299,18 @@ c_ AddressBook(QWidget):
             nameLine.setFocus(__.OtherFocusReason)
             addressText.setReadOnly F..
 
-            addButton.setEnabled F..
-            editButton.setEnabled F..
-            removeButton.setEnabled F..
+            addButton.sE.. F..
+            editButton.sE.. F..
+            removeButton.sE.. F..
 
-            nextButton.setEnabled F..
-            previousButton.setEnabled F..
+            nextButton.sE.. F..
+            previousButton.sE.. F..
 
             submitButton.s..
             cancelButton.s..
 
-            loadButton.setEnabled F..
-            saveButton.setEnabled F..
+            loadButton.sE.. F..
+            saveButton.sE.. F..
 
         ____ currentMode == NavigationMode:
             __ no. contacts:
@@ -319,20 +319,20 @@ c_ AddressBook(QWidget):
 
             nameLine.setReadOnly(True)
             addressText.setReadOnly(True)
-            addButton.setEnabled(True)
+            addButton.sE..(True)
 
             number _ le.(contacts)
-            editButton.setEnabled(number >_ 1)
-            removeButton.setEnabled(number >_ 1)
-            findButton.setEnabled(number > 2)
-            nextButton.setEnabled(number > 1)
-            previousButton.setEnabled(number >1 )
+            editButton.sE..(number >_ 1)
+            removeButton.sE..(number >_ 1)
+            findButton.sE..(number > 2)
+            nextButton.sE..(number > 1)
+            previousButton.sE..(number >1 )
 
             submitButton.hide()
             cancelButton.hide()
 
-            loadButton.setEnabled(True)
-            saveButton.setEnabled(number >_ 1)
+            loadButton.sE..(True)
+            saveButton.sE..(number >_ 1)
 
     ___ saveToFile 
         fileName, _ _ ?FD...getSaveFileName  "Save Address Book",
@@ -396,7 +396,7 @@ c_ FindDialog(QDialog):
         layout.aW..(findButton)
 
         sL..(layout)
-        setWindowTitle("Find a Contact")
+        sWT..("Find a Contact")
 
         findButton.c__.c..(findClicked)
         findButton.c__.c..(accept)
@@ -427,4 +427,4 @@ __ ______ __ ______
     addressBook _ AddressBook()
     addressBook.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

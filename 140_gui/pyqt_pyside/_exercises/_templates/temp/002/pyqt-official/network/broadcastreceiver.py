@@ -70,7 +70,7 @@ c_ Receiver(QDialog):
         mainLayout.aL..(buttonLayout)
         sL..(mainLayout)
 
-        setWindowTitle("Broadcast Receiver")
+        sWT..("Broadcast Receiver")
 
     ___ processPendingDatagrams
         w__ udpSocket.hasPendingDatagrams
@@ -93,4 +93,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     receiver _ Receiver()
     receiver.s..
-    ___.exit(receiver.exec_())
+    ___.e..(receiver.exec_())

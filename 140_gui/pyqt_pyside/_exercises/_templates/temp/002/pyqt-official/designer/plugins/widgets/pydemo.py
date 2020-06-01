@@ -88,7 +88,7 @@ c_ PyDemo(PyTextViewer):
     ___  -   parent_None):
         super(PyDemo, self). - (parent)
 
-        setWindowTitle("PyQt Demonstration Widget")
+        sWT..("PyQt Demonstration Widget")
         sT..(_demo_text)
 
         # Initialise the zoom property.  We don't just call the resetter
@@ -153,4 +153,4 @@ __ __name__ == "__main__":
     demo _ PyDemo()
     demo.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

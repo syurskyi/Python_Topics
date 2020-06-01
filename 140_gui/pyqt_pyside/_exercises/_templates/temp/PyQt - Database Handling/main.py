@@ -15,7 +15,7 @@ ___ initializeModel model
 ___ createView(title, model):
     view _ ?W...QTableView()
     view.sM..(model)
-    view.setWindowTitle(title)
+    view.sWT..(title)
     r_ view
 
 
@@ -55,6 +55,6 @@ __ ______ __ ______
     layout.aW..(btn1)
 
     dlg.sL..(layout)
-    dlg.setWindowTitle("Database Demo")
+    dlg.sWT..("Database Demo")
     dlg.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

@@ -108,7 +108,7 @@ __ ______ __ ______
     wizard.addPage(createRegistrationPage())
     wizard.addPage(createConclusionPage())
 
-    wizard.setWindowTitle("Trivial Wizard")
+    wizard.sWT..("Trivial Wizard")
     wizard.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

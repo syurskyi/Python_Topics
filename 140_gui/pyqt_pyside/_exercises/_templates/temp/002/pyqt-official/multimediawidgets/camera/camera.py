@@ -439,29 +439,29 @@ c_ Camera ?MW..
 
     ___ updateCameraState  state):
         __ state == QCamera.ActiveState:
-            ui.actionStartCamera.setEnabled F..
-            ui.actionStopCamera.setEnabled(True)
-            ui.captureWidget.setEnabled(True)
-            ui.actionSettings.setEnabled(True)
+            ui.actionStartCamera.sE.. F..
+            ui.actionStopCamera.sE..(True)
+            ui.captureWidget.sE..(True)
+            ui.actionSettings.sE..(True)
         ____ state __ (QCamera.UnloadedState, QCamera.LoadedState):
-            ui.actionStartCamera.setEnabled(True)
-            ui.actionStopCamera.setEnabled F..
-            ui.captureWidget.setEnabled F..
-            ui.actionSettings.setEnabled F..
+            ui.actionStartCamera.sE..(True)
+            ui.actionStopCamera.sE.. F..
+            ui.captureWidget.sE.. F..
+            ui.actionSettings.sE.. F..
 
     ___ updateRecorderState  state):
         __ state == QMediaRecorder.StoppedState:
-            ui.recordButton.setEnabled(True)
-            ui.pauseButton.setEnabled(True)
-            ui.stopButton.setEnabled F..
+            ui.recordButton.sE..(True)
+            ui.pauseButton.sE..(True)
+            ui.stopButton.sE.. F..
         ____ state == QMediaRecorder.PausedState:
-            ui.recordButton.setEnabled(True)
-            ui.pauseButton.setEnabled F..
-            ui.stopButton.setEnabled(True)
+            ui.recordButton.sE..(True)
+            ui.pauseButton.sE.. F..
+            ui.stopButton.sE..(True)
         ____ state == QMediaRecorder.RecordingState:
-            ui.recordButton.setEnabled F..
-            ui.pauseButton.setEnabled(True)
-            ui.stopButton.setEnabled(True)
+            ui.recordButton.sE.. F..
+            ui.pauseButton.sE..(True)
+            ui.stopButton.sE..(True)
 
     ___ setExposureCompensation  index):
         camera.exposure().setExposureCompensation(index * 0.5)
@@ -483,7 +483,7 @@ c_ Camera ?MW..
         ui.stackedWidget.setCurrentIndex(1)
 
     ___ readyForCapture  ready):
-        ui.takeImageButton.setEnabled(ready)
+        ui.takeImageButton.sE..(ready)
 
     ___ imageSaved  id, fileName):
         isCapturingImage _ False
@@ -493,7 +493,7 @@ c_ Camera ?MW..
 
     ___ closeEvent  event):
         __ isCapturingImage:
-            setEnabled F..
+            sE.. F..
             applicationExiting _ True
             event.ignore()
         ____
@@ -509,4 +509,4 @@ __ ______ __ ______
     camera _ Camera()
     camera.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

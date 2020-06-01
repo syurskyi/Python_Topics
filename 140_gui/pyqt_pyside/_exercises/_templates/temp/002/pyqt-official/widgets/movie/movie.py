@@ -82,8 +82,8 @@ c_ MoviePlayer(QWidget):
         updateFrameSlider()
         updateButtons()
 
-        setWindowTitle("Movie Player")
-        resize(400, 400)
+        sWT..("Movie Player")
+        r..(400, 400)
 
     ___ o..
         fileName, _ _ ?FD...gOFN..  "Open a Movie",
@@ -122,17 +122,17 @@ c_ MoviePlayer(QWidget):
         ____
             frameSlider.setMaximum(0)
 
-        frameLabel.setEnabled(hasFrames)
-        frameSlider.setEnabled(hasFrames)
+        frameLabel.sE..(hasFrames)
+        frameSlider.sE..(hasFrames)
 
     ___ updateButtons
         state _ movie.state()
 
-        playButton.setEnabled(movie.isValid() and
+        playButton.sE..(movie.isValid() and
                 movie.frameCount() !_ 1 and state == QMovie.NotRunning)
-        pauseButton.setEnabled(state !_ QMovie.NotRunning)
+        pauseButton.sE..(state !_ QMovie.NotRunning)
         pauseButton.setChecked(state == QMovie.Paused)
-        stopButton.setEnabled(state !_ QMovie.NotRunning)
+        stopButton.sE..(state !_ QMovie.NotRunning)
 
     ___ createControls
         fitCheckBox _ QCheckBox("Fit to Window")
@@ -208,4 +208,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     player _ MoviePlayer()
     player.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

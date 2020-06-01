@@ -78,7 +78,7 @@ c_ ShapedClock(QWidget):
         setContextMenuPolicy(__.ActionsContextMenu)
         setToolTip("Drag the clock with the left mouse button.\n"
                 "Use the right mouse button to open a context menu.")
-        setWindowTitle(tr("Shaped Analog Clock"))
+        sWT..(tr("Shaped Analog Clock"))
 
     ___ mousePressEvent  event):
         __ event.button() == __.LeftButton:
@@ -146,4 +146,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     clock _ ShapedClock()
     clock.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

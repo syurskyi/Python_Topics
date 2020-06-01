@@ -9,9 +9,9 @@ c_ AutoCloseDialog(qtw.QDialog):
     ___  -   parent, title, message, timeout):
         s_. - (parent)
         setModal F..
-        setWindowTitle(title)
+        sWT..(title)
         sL.. ?.?VBL..
-        layout().aW..(qtw.QLabel(message))
+        layout().aW..(?.?L..(message))
         timeout _ timeout
 
     ___ show
@@ -97,4 +97,4 @@ __ ______ __ ______
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()
-    ___.exit(app.exec())
+    ___.e..(app.e..

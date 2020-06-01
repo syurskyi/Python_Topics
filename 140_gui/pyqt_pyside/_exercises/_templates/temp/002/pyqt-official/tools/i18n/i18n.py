@@ -87,7 +87,7 @@ c_ LanguageChooser(QDialog):
         mainLayout.aW..(buttonBox)
         sL..(mainLayout)
 
-        setWindowTitle("I18N")
+        sWT..("I18N")
 
     ___ eventFilter  object, event):
         __ event.type() == QEvent.Close:
@@ -187,7 +187,7 @@ c_ MainWindow ?MW..
         fileMenu.sP..(?P..(__.red))
         fileMenu.aA..(exitAction)
 
-        setWindowTitle(tr("Language: %s") % tr("English"))
+        sWT..(tr("Language: %s") % tr("English"))
         statusBar().showMessage(tr("Internationalization Example"))
 
         __ tr("LTR") == "RTL":
@@ -214,4 +214,4 @@ __ __name__ == "__main__":
     app _ ?A..(___.a..
     chooser _ LanguageChooser()
     chooser.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

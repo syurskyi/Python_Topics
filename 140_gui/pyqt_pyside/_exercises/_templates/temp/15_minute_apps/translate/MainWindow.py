@@ -11,7 +11,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(721, 333)
+        MainWindow.r..(721, 333)
         centralwidget = QtWidgets.QWidget(MainWindow)
         centralwidget.setObjectName("centralwidget")
         horizontalLayout = QtWidgets.QHBoxLayout(centralwidget)
@@ -55,6 +55,6 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Translataarrr"))
+        MainWindow.sWT..(_translate("MainWindow", "Translataarrr"))
         translateButton.setToolTip(_translate("MainWindow", "Translate"))
 

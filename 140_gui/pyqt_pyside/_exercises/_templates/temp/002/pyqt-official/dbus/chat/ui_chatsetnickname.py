@@ -12,7 +12,7 @@ ____ ? ______ ?C.., ?G.., ?W..
 c_ Ui_NicknameDialog(object):
     ___ setupUi  NicknameDialog):
         NicknameDialog.setObjectName("NicknameDialog")
-        NicknameDialog.resize(396, 105)
+        NicknameDialog.r..(396, 105)
         sizePolicy _ ?W...QSizePolicy(?W...QSizePolicy.Policy(1), ?W...QSizePolicy.Policy(1))
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -61,7 +61,7 @@ c_ Ui_NicknameDialog(object):
 
     ___ retranslateUi  NicknameDialog):
         _translate _ ?C...QCoreApplication.translate
-        NicknameDialog.setWindowTitle(_translate("NicknameDialog", "Set nickname"))
+        NicknameDialog.sWT..(_translate("NicknameDialog", "Set nickname"))
         label.sT..(_translate("NicknameDialog", "New nickname:"))
         okButton.sT..(_translate("NicknameDialog", "OK"))
         cancelButton.sT..(_translate("NicknameDialog", "Cancel"))

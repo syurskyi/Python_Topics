@@ -143,7 +143,7 @@ c_ RegExpDialog(QDialog):
         patternComboBox.addItem("[A-Za-z_]+([A-Za-z_0-9]*)")
         textComboBox.addItem("(10 + delta4)* 32")
 
-        setWindowTitle("RegExp")
+        sWT..("RegExp")
         setFixedHeight(sizeHint().height())
         refresh()
 
@@ -177,8 +177,8 @@ c_ RegExpDialog(QDialog):
         matchedLengthEdit.sT..(str(rx.matchedLength()))
 
         ___ i __ range(MaxCaptures):
-            captureLabels[i].setEnabled(i <_ rx.captureCount())
-            captureEdits[i].setEnabled(i <_ rx.captureCount())
+            captureLabels[i].sE..(i <_ rx.captureCount())
+            captureEdits[i].sE..(i <_ rx.captureCount())
             captureEdits[i].sT..(rx.cap(i))
 
         setUpdatesEnabled(True)
@@ -190,4 +190,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     dialog _ RegExpDialog()
     dialog.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

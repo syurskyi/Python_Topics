@@ -61,4 +61,4 @@ c_ DemoImpl(QDialog):
 app _ ?A..(___.a..
 widget _ DemoImpl()
 widget.s..
-___.exit(app.exec_())
+___.e..(app.exec_())

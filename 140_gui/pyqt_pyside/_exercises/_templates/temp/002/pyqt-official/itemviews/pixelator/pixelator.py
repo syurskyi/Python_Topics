@@ -157,7 +157,7 @@ c_ MainWindow ?MW..
         openAction.sS..("Ctrl+O")
 
         printAction _ fileMenu.aA..("&Print...")
-        printAction.setEnabled F..
+        printAction.sE.. F..
         printAction.sS..("Ctrl+P")
 
         quitAction _ fileMenu.aA..("E&xit")
@@ -189,8 +189,8 @@ c_ MainWindow ?MW..
 
         sCW..(centralWidget)
 
-        setWindowTitle("Pixelator")
-        resize(640, 480)
+        sWT..("Pixelator")
+        r..(640, 480)
 
     ___ chooseImage 
         fileName, _ _ ?FD...gOFN..  "Choose an Image",
@@ -207,9 +207,9 @@ c_ MainWindow ?MW..
 
             __ no. fileName.startswith(':/'):
                 currentPath _ fileName
-                setWindowTitle("%s - Pixelator" % currentPath)
+                sWT..("%s - Pixelator" % currentPath)
 
-            printAction.setEnabled(True)
+            printAction.sE..(True)
             updateView()
 
     ___ printImage 
@@ -224,7 +224,7 @@ c_ MainWindow ?MW..
         printer _ QPrinter(QPrinter.HighResolution)
 
         dlg _ QPrintDialog(printer, self)
-        dlg.setWindowTitle("Print Image")
+        dlg.sWT..("Print Image")
 
         __ dlg.e.. !_ QDialog.Accepted:
             r_
@@ -299,4 +299,4 @@ __ ______ __ ______
     window _ MainWindow()
     window.s..
     window.openImage(':/images/qt.png')
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

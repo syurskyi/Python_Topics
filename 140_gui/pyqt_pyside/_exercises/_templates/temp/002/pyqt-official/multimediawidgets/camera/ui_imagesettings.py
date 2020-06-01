@@ -12,7 +12,7 @@ ____ ? ______ ?C.., ?G.., ?W..
 c_ Ui_ImageSettingsUi(object):
     ___ setupUi  ImageSettingsUi):
         ImageSettingsUi.setObjectName("ImageSettingsUi")
-        ImageSettingsUi.resize(332, 270)
+        ImageSettingsUi.r..(332, 270)
         gridLayout _ ?W...QGridLayout(ImageSettingsUi)
         gridLayout.setObjectName("gridLayout")
         groupBox_2 _ ?W...QGroupBox(ImageSettingsUi)
@@ -55,7 +55,7 @@ c_ Ui_ImageSettingsUi(object):
 
     ___ retranslateUi  ImageSettingsUi):
         _translate _ ?C...QCoreApplication.translate
-        ImageSettingsUi.setWindowTitle(_translate("ImageSettingsUi", "Dialog"))
+        ImageSettingsUi.sWT..(_translate("ImageSettingsUi", "Dialog"))
         groupBox_2.setTitle(_translate("ImageSettingsUi", "Image"))
         label_8.sT..(_translate("ImageSettingsUi", "Resolution:"))
         label_6.sT..(_translate("ImageSettingsUi", "Image Format:"))

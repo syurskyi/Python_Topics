@@ -24,7 +24,7 @@ c_ MainWindow(QWidget):
         layout.aW..(tableView)
         layout.aL..(hLayout)
         sL..(layout)
-        resize(600, 400)
+        r..(600, 400)
 
         addButton.c__.c..(onAddRow)
         deleteButton.c__.c..(onDeleteRow)
@@ -53,4 +53,4 @@ __ __name__ == "__main__":
     app _ ?A..(___.a..
     window _ MainWindow()
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

@@ -107,4 +107,4 @@ __ ______ __ ______
     # Create the client switch object and pass the replica to it.
     rswitch _ DynamicClient(replica)
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

@@ -116,7 +116,7 @@ c_ AddressBook(QWidget):
         mainLayout.aL..(buttonLayout1, 1, 2)
 
         sL..(mainLayout)
-        setWindowTitle("Simple Address Book")
+        sWT..("Simple Address Book")
 
     ___ addContact 
         oldName _ nameLine.t__()
@@ -129,7 +129,7 @@ c_ AddressBook(QWidget):
         nameLine.setFocus(__.OtherFocusReason)
         addressText.setReadOnly F..
 
-        addButton.setEnabled F..
+        addButton.sE.. F..
         submitButton.s..
         cancelButton.s..
 
@@ -157,7 +157,7 @@ c_ AddressBook(QWidget):
 
         nameLine.setReadOnly(True)
         addressText.setReadOnly(True)
-        addButton.setEnabled(True)
+        addButton.sE..(True)
         submitButton.hide()
         cancelButton.hide()
 
@@ -168,7 +168,7 @@ c_ AddressBook(QWidget):
         addressText.sT..(oldAddress)
         addressText.setReadOnly(True)
 
-        addButton.setEnabled(True)
+        addButton.sE..(True)
         submitButton.hide()
         cancelButton.hide()
 
@@ -183,4 +183,4 @@ __ ______ __ ______
     addressBook _ AddressBook()
     addressBook.s..
 
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

@@ -87,10 +87,10 @@ tree.setIndentation(20)
 tree.setSortingEnabled(True)
 
 availableSize _ ?A...desktop().availableGeometry(tree).size()
-tree.resize(availableSize / 2)
+tree.r..(availableSize / 2)
 tree.setColumnWidth(0, tree.width() / 3)
 
-tree.setWindowTitle("Dir View")
+tree.sWT..("Dir View")
 tree.s..
 
-___.exit(app.exec_())
+___.e..(app.exec_())

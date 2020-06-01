@@ -152,8 +152,8 @@ ___ main(args):
                 row +_ 1
     file.close()
     tableView _ FreezeTableWidget(model)
-    tableView.setWindowTitle("Frozen Column Example")
-    tableView.resize(560, 680)
+    tableView.sWT..("Frozen Column Example")
+    tableView.r..(560, 680)
     tableView.s..
     r_ app.e..
 

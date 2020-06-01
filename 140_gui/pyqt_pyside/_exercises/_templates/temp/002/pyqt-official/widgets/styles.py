@@ -57,7 +57,7 @@ c_ WidgetGallery(QDialog):
         originalPalette _ ?A...palette()
 
         styleComboBox _ QComboBox()
-        styleComboBox.addItems(QStyleFactory.keys())
+        styleComboBox.aI..(QStyleFactory.keys())
 
         styleLabel _ QLabel("&Style:")
         styleLabel.setBuddy(styleComboBox)
@@ -100,7 +100,7 @@ c_ WidgetGallery(QDialog):
         mainLayout.setColumnStretch(1, 1)
         sL..(mainLayout)
 
-        setWindowTitle("Styles")
+        sWT..("Styles")
         changeStyle('Windows')
 
     ___ changeStyle  styleName):
@@ -240,4 +240,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     gallery _ WidgetGallery()
     gallery.s..
-    ___.exit(app.exec_()) 
+    ___.e..(app.exec_()) 

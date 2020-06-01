@@ -12,7 +12,7 @@ ____ ? ______ ?C.., ?G.., ?W..
 c_ Ui_AudioDevicesBase(object):
     ___ setupUi  AudioDevicesBase):
         AudioDevicesBase.setObjectName("AudioDevicesBase")
-        AudioDevicesBase.resize(679, 598)
+        AudioDevicesBase.r..(679, 598)
         centralwidget _ ?W...QWidget(AudioDevicesBase)
         centralwidget.setObjectName("centralwidget")
         verticalLayout _ ?W...QVBoxLayout(centralwidget)
@@ -85,28 +85,28 @@ c_ Ui_AudioDevicesBase(object):
         sampleRateBox.setObjectName("sampleRateBox")
         gridLayout.aW..(sampleRateBox, 3, 1, 1, 1)
         nearestSampleRate _ ?W...QLineEdit(testFormatTab)
-        nearestSampleRate.setEnabled F..
+        nearestSampleRate.sE.. F..
         nearestSampleRate.setObjectName("nearestSampleRate")
         gridLayout.aW..(nearestSampleRate, 3, 2, 1, 1)
         channelsBox _ ?W...QComboBox(testFormatTab)
         channelsBox.setObjectName("channelsBox")
         gridLayout.aW..(channelsBox, 5, 1, 1, 1)
         nearestChannel _ ?W...QLineEdit(testFormatTab)
-        nearestChannel.setEnabled F..
+        nearestChannel.sE.. F..
         nearestChannel.setObjectName("nearestChannel")
         gridLayout.aW..(nearestChannel, 5, 2, 1, 1)
         sampleSizesBox _ ?W...QComboBox(testFormatTab)
         sampleSizesBox.setObjectName("sampleSizesBox")
         gridLayout.aW..(sampleSizesBox, 9, 1, 1, 1)
         nearestSampleSize _ ?W...QLineEdit(testFormatTab)
-        nearestSampleSize.setEnabled F..
+        nearestSampleSize.sE.. F..
         nearestSampleSize.setObjectName("nearestSampleSize")
         gridLayout.aW..(nearestSampleSize, 9, 2, 1, 1)
         endianBox _ ?W...QComboBox(testFormatTab)
         endianBox.setObjectName("endianBox")
         gridLayout.aW..(endianBox, 14, 1, 1, 1)
         nearestEndian _ ?W...QLineEdit(testFormatTab)
-        nearestEndian.setEnabled F..
+        nearestEndian.sE.. F..
         nearestEndian.setObjectName("nearestEndian")
         gridLayout.aW..(nearestEndian, 14, 2, 1, 1)
         testButton _ ?W...?PB..(testFormatTab)
@@ -141,7 +141,7 @@ c_ Ui_AudioDevicesBase(object):
         actualCodecLabel.setObjectName("actualCodecLabel")
         gridLayout.aW..(actualCodecLabel, 2, 0, 1, 1)
         nearestCodec _ ?W...QLineEdit(testFormatTab)
-        nearestCodec.setEnabled F..
+        nearestCodec.sE.. F..
         nearestCodec.setObjectName("nearestCodec")
         gridLayout.aW..(nearestCodec, 2, 2, 1, 1)
         codecsBox _ ?W...QComboBox(testFormatTab)
@@ -154,7 +154,7 @@ c_ Ui_AudioDevicesBase(object):
         sampleTypesBox.setObjectName("sampleTypesBox")
         gridLayout.aW..(sampleTypesBox, 6, 1, 1, 1)
         nearestSampleType _ ?W...QLineEdit(testFormatTab)
-        nearestSampleType.setEnabled F..
+        nearestSampleType.sE.. F..
         nearestSampleType.setObjectName("nearestSampleType")
         gridLayout.aW..(nearestSampleType, 6, 2, 1, 1)
         tabWidget.addTab(testFormatTab, "")
@@ -214,7 +214,7 @@ c_ Ui_AudioDevicesBase(object):
 
     ___ retranslateUi  AudioDevicesBase):
         _translate _ ?C...QCoreApplication.translate
-        AudioDevicesBase.setWindowTitle(_translate("AudioDevicesBase", "Audio Devices"))
+        AudioDevicesBase.sWT..(_translate("AudioDevicesBase", "Audio Devices"))
         modeLabel.sT..(_translate("AudioDevicesBase", "Mode"))
         deviceLabel.sT..(_translate("AudioDevicesBase", "Device"))
         modeBox.setItemText(0, _translate("AudioDevicesBase", "Input"))

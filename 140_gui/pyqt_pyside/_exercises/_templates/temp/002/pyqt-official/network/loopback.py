@@ -90,10 +90,10 @@ c_ Dialog(QDialog):
         mainLayout.aW..(buttonBox)
         sL..(mainLayout)
 
-        setWindowTitle("Loopback")
+        sWT..("Loopback")
 
     ___ start
-        startButton.setEnabled F..
+        startButton.sE.. F..
 
         ?A...setOverrideCursor(__.WaitCursor)
 
@@ -134,7 +134,7 @@ c_ Dialog(QDialog):
 
         __ bytesReceived == Dialog.TotalBytes:
             tcpServerConnection.close()
-            startButton.setEnabled(True)
+            startButton.sE..(True)
             ?A...restoreOverrideCursor()
 
     ___ updateClientProgress  numBytes):
@@ -160,7 +160,7 @@ c_ Dialog(QDialog):
         serverProgressBar.reset()
         clientStatusLabel.sT..("Client ready")
         serverStatusLabel.sT..("Server ready")
-        startButton.setEnabled(True)
+        startButton.sE..(True)
         ?A...restoreOverrideCursor()
 
 
@@ -171,4 +171,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     dialog _ Dialog()
     dialog.s..
-    ___.exit(dialog.exec_())
+    ___.e..(dialog.exec_())

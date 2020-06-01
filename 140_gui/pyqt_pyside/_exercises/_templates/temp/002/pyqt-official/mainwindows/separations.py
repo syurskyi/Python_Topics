@@ -157,7 +157,7 @@ c_ ScreenWidget(QFrame):
         colorButton.sP..(palette)
 
         invertButton _ ?PB..("Invert")
-        invertButton.setEnabled F..
+        invertButton.sE.. F..
 
         colorButton.c__.c..(sC..)
         invertButton.c__.c..(invertImage)
@@ -238,7 +238,7 @@ c_ ScreenWidget(QFrame):
         """
         originalImage _ image
         createImage()
-        invertButton.setEnabled(True)
+        invertButton.sE..(True)
 
 
 c_ Viewer ?MW..
@@ -266,7 +266,7 @@ c_ Viewer ?MW..
         path _ ''
         brightness _ 255
 
-        setWindowTitle("QImage Color Separations")
+        sWT..("QImage Color Separations")
 
         createMenus()
         sCW..(createCentralWidget())
@@ -285,7 +285,7 @@ c_ Viewer ?MW..
         openAction.sS..(?KS..('Ctrl+O'))
         saveAction _ fileMenu.aA..("&Save...")
         saveAction.sS..(?KS..('Ctrl+S'))
-        saveAction.setEnabled F..
+        saveAction.sE.. F..
         quitAction _ fileMenu.aA..("E&xit")
         quitAction.sS..(?KS..('Ctrl+Q'))
 
@@ -308,7 +308,7 @@ c_ Viewer ?MW..
 
         currentBrightness _ fullBrightness
         currentBrightness.setChecked(True)
-        brightnessMenu.setEnabled F..
+        brightnessMenu.sE.. F..
 
         mB.. .aM..(fileMenu)
         mB.. .aM..(brightnessMenu)
@@ -393,9 +393,9 @@ c_ Viewer ?MW..
         originalImage _ QImage()
 
         __ originalImage.load(imageFile):
-            setWindowTitle(imageFile)
-            saveAction.setEnabled(True)
-            brightnessMenu.setEnabled(True)
+            sWT..(imageFile)
+            saveAction.sE..(True)
+            brightnessMenu.sE..(True)
 
             scaledImage _ originalImage.scaled(256, 256, __.KeepAspectRatio)
 
@@ -483,4 +483,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ Viewer()
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

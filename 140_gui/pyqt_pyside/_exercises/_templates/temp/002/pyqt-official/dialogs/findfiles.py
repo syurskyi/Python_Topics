@@ -86,8 +86,8 @@ c_ Window(QDialog):
         mainLayout.aL..(buttonsLayout, 5, 0, 1, 3)
         sL..(mainLayout)
 
-        setWindowTitle("Find Files")
-        resize(700, 300)
+        sWT..("Find Files")
+        r..(700, 300)
 
     ___ browse
         directory _ ?FD...getExistingDirectory  "Find Files",
@@ -130,7 +130,7 @@ c_ Window(QDialog):
 
         progressDialog.setCancelButtonText("&Cancel")
         progressDialog.setRange(0, files.count())
-        progressDialog.setWindowTitle("Find Files")
+        progressDialog.sWT..("Find Files")
 
         foundFiles _   # list
 
@@ -212,4 +212,4 @@ __ ______ __ ______
     app _ ?A..(___.a..
     window _ Window()
     window.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())

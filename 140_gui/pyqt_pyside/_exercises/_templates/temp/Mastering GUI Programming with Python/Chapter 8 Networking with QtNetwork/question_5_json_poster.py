@@ -79,7 +79,7 @@ c_ MainWindow(qtw.QMainWindow):
         fname _ qtw.?PB..(
             '(No File)', c___self.on_file_btn)
         submit _ qtw.?PB..('Submit Post', c___self.submit)
-        response _ qtw.QTextEdit(readOnly_True)
+        response _ ?.?TE..readOnly_True)
         ___ w __ (url, table, fname, submit, response):
             widget.layout().aW..(w)
 
@@ -114,4 +114,4 @@ __ ______ __ ______
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()
-    ___.exit(app.exec())
+    ___.e..(app.e..

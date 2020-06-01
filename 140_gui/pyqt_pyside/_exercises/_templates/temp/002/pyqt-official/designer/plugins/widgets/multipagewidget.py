@@ -55,7 +55,7 @@ c_ PyMultiPageWidget(QWidget):
         title _ page.windowTitle()
         __ title == "":
             title _ "Page %d" % (comboBox.count() + 1)
-            page.setWindowTitle(title)
+            page.sWT..(title)
         comboBox.insertItem(index, title)
 
     @pyqtSlot(int)
@@ -73,7 +73,7 @@ c_ PyMultiPageWidget(QWidget):
         cw _ stackWidget.currentWidget()
         __ cw __ no. N..:
             comboBox.setItemText(getCurrentIndex(), newTitle)
-            cw.setWindowTitle(newTitle)
+            cw.sWT..(newTitle)
             pageTitleChanged.emit(newTitle)
 
     ___ getCurrentIndex
@@ -100,7 +100,7 @@ __ __name__ == "__main__":
     widget.addPage(QLabel('This is page #1'))
     widget.addPage(QLabel('This is page #2'))
     widget.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())
 
 #============================================================================#
 # EOF                                                                        #

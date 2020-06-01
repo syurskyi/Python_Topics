@@ -90,6 +90,6 @@ __ ______ __ ______
             index _ model.index(row, column, QModelIndex())
             model.setData(index, (row + 1) * (column + 1))
 
-    tableView.setWindowTitle("Spin Box Delegate")
+    tableView.sWT..("Spin Box Delegate")
     tableView.s..
-    ___.exit(app.exec_())
+    ___.e..(app.exec_())
