@@ -104,8 +104,8 @@ c_ CharacterWidget(QWidget):
         widgetPosition _ self.mapFromGlobal(event.globalPos())
         key _ (widgetPosition.y() // self.squareSize) * self.columns + widgetPosition.x() // self.squareSize
 
-        text _ '<p>Character: <span style="font-size: 24pt; font-family: %s">%s</span><p>Value: 0x%x' % (self.displayFont.family(), self._chr(key), key)
-        QToolTip.showText(event.globalPos(), text, self)
+        t__ _ '<p>Character: <span style="font-size: 24pt; font-family: %s">%s</span><p>Value: 0x%x' % (self.displayFont.family(), self._chr(key), key)
+        QToolTip.showText(event.globalPos(), t__, self)
 
     ___ mousePressEvent  event):
         __ event.button() == __.LeftButton:
@@ -169,7 +169,7 @@ c_ MainWindow ?MW..
     ___ __init__(self):
         super(MainWindow, self).__init__()
 
-        centralWidget _ QWidget()
+        centralWidget _ ?W..
 
         fontLabel _ QLabel("Font:")
         self.fontCombo _ QFontComboBox()
@@ -188,7 +188,7 @@ c_ MainWindow ?MW..
         self.findStyles(self.fontCombo.currentFont())
         self.findSizes(self.fontCombo.currentFont())
 
-        self.lineEdit _ QLineEdit()
+        self.lineEdit _ ?LE..
         clipboardButton _ ?PB..("&To clipboard")
 
         self.clipboard _ ?A...clipboard()
@@ -201,27 +201,27 @@ c_ MainWindow ?MW..
         clipboardButton.c__.c..(self.updateClipboard)
 
         controlsLayout _ QHBoxLayout()
-        controlsLayout.addWidget(fontLabel)
-        controlsLayout.addWidget(self.fontCombo, 1)
-        controlsLayout.addWidget(sizeLabel)
-        controlsLayout.addWidget(self.sizeCombo, 1)
-        controlsLayout.addWidget(styleLabel)
-        controlsLayout.addWidget(self.styleCombo, 1)
-        controlsLayout.addWidget(fontMergingLabel)
-        controlsLayout.addWidget(self.fontMerging, 1)
+        controlsLayout.aW..(fontLabel)
+        controlsLayout.aW..(self.fontCombo, 1)
+        controlsLayout.aW..(sizeLabel)
+        controlsLayout.aW..(self.sizeCombo, 1)
+        controlsLayout.aW..(styleLabel)
+        controlsLayout.aW..(self.styleCombo, 1)
+        controlsLayout.aW..(fontMergingLabel)
+        controlsLayout.aW..(self.fontMerging, 1)
         controlsLayout.addStretch(1)
 
         lineLayout _ QHBoxLayout()
-        lineLayout.addWidget(self.lineEdit, 1)
+        lineLayout.aW..(self.lineEdit, 1)
         lineLayout.addSpacing(12)
-        lineLayout.addWidget(clipboardButton)
+        lineLayout.aW..(clipboardButton)
 
-        centralLayout _ QVBoxLayout()
+        centralLayout _ ?VBL..
         centralLayout.addLayout(controlsLayout)
-        centralLayout.addWidget(self.scrollArea, 1)
+        centralLayout.aW..(self.scrollArea, 1)
         centralLayout.addSpacing(4)
         centralLayout.addLayout(lineLayout)
-        centralWidget.setLayout(centralLayout)
+        centralWidget.sL..(centralLayout)
 
         self.sCW..(centralWidget)
         self.setWindowTitle("Character Map")
@@ -267,8 +267,8 @@ c_ MainWindow ?MW..
         self.lineEdit.insert(character)
 
     ___ updateClipboard(self):
-        self.clipboard.sT..(self.lineEdit.text(), QClipboard.Clipboard)
-        self.clipboard.sT..(self.lineEdit.text(), QClipboard.Selection)
+        self.clipboard.sT..(self.lineEdit.t__(), QClipboard.Clipboard)
+        self.clipboard.sT..(self.lineEdit.t__(), QClipboard.Selection)
 
 
 __ __name__ == '__main__':

@@ -45,19 +45,19 @@ c_ SlowSearcher(qtc.QObject):
 c_ SearchForm(qtw.QWidget):
 
     textChanged _ qtc.pyqtSignal(str)
-    returnPressed _ qtc.pyqtSignal()
+    rP__ _ qtc.pyqtSignal()
 
     ___ __init__(self):
         super().__init__()
-        self.setLayout(qtw.QVBoxLayout())
+        self.sL..(qtw.QVBoxLayout())
         self.search_term_inp _ qtw.QLineEdit(
             placeholderText_'Search Term',
             textChanged_self.textChanged,
-            returnPressed_self.returnPressed)
-        self.layout().addWidget(self.search_term_inp)
+            returnPressed_self.rP__)
+        self.layout().aW..(self.search_term_inp)
         self.results _ qtw.QListWidget()
-        self.layout().addWidget(self.results)
-        self.returnPressed.c..(self.results.clear)
+        self.layout().aW..(self.results)
+        self.rP__.c..(self.results.clear)
 
     ___ addResult  result):
         self.results.addItem(result)
@@ -86,8 +86,8 @@ c_ MainWindow(qtw.QMainWindow):
         self.searcher_thread.start()
         # Connect to search engine
         form.textChanged.c..(self.ss.set_term)
-        form.returnPressed.c..(self.searcher_thread.start)
-        form.returnPressed.c..(self.ss.do_search)
+        form.rP__.c..(self.searcher_thread.start)
+        form.rP__.c..(self.ss.do_search)
 
         # Using a lambda here breaks threading:
         #form.returnPressed.connect(lambda: self.ss.do_search())

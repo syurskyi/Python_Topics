@@ -13,7 +13,7 @@ c_ MainWindow(qtw.QWidget):
         """
         super().__init__()
         # Main UI code goes here
-        self.setLayout(qtw.QVBoxLayout())
+        self.sL..(qtw.QVBoxLayout())
 
         data _ [
             'Hamburger', 'Cheeseburger',
@@ -24,8 +24,8 @@ c_ MainWindow(qtw.QWidget):
         listwidget.addItems(data)
         combobox _ qtw.QComboBox()
         combobox.addItems(data)
-        self.layout().addWidget(listwidget)
-        self.layout().addWidget(combobox)
+        self.layout().aW..(listwidget)
+        self.layout().aW..(combobox)
 
         # make the list widget editable
         for i in range(listwidget.count()):
@@ -42,8 +42,8 @@ c_ MainWindow(qtw.QWidget):
         model_combobox _ qtw.QComboBox()
         model_combobox.setModel(model)
 
-        self.layout().addWidget(listview)
-        self.layout().addWidget(model_combobox)
+        self.layout().aW..(listview)
+        self.layout().aW..(model_combobox)
 
         # End main UI code
         self.s..

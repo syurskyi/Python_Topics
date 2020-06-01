@@ -27,12 +27,12 @@ c_ CoffeeForm(qtw.QWidget):
 
     ___ __init__  coffees_model, reviews_model):
         super().__init__()
-        self.setLayout(qtw.QFormLayout())
+        self.sL..(qtw.QFormLayout())
 
         # Coffee Fields
-        self.coffee_brand _ qtw.QLineEdit()
+        self.coffee_brand _ qtw.?LE..
         self.layout().addRow('Brand: ', self.coffee_brand)
-        self.coffee_name _ qtw.QLineEdit()
+        self.coffee_name _ qtw.?LE..
         self.layout().addRow('Name: ', self.coffee_name)
         self.roast _ qtw.QComboBox()
         self.layout().addRow('Roast: ', self.roast)
@@ -115,7 +115,7 @@ c_ CoffeeForm(qtw.QWidget):
             new_row.setValue(index, value)
         inserted _ reviews_model.insertRecord(-1, new_row)
         __ no. inserted:
-            error _ reviews_model.lastError().text()
+            error _ reviews_model.lastError().t__()
             print(f"Insert Failed: {error}")
         # Select so the new row is editable
         reviews_model.select()
@@ -140,7 +140,7 @@ c_ MainWindow(qtw.QMainWindow):
             qtw.?MB...critical(
                 N.., 'DB Connection Error',
                 'Could not open database file: '
-                f'{db.lastError().text()}')
+                f'{db.lastError().t__()}')
             sys.exit(1)
 
         # Check for missing tables
@@ -167,7 +167,7 @@ c_ MainWindow(qtw.QMainWindow):
         self.coffees_model.dataChanged.c..(print)
         self.coffee_list _ qtw.QTableView()
         self.coffee_list.setModel(self.coffees_model)
-        self.stack.addWidget(self.coffee_list)
+        self.stack.aW..(self.coffee_list)
 
         self.coffees_model.select()
         #self.show()
@@ -189,7 +189,7 @@ c_ MainWindow(qtw.QMainWindow):
             self.coffees_model,
             self.reviews_model
         )
-        self.stack.addWidget(self.coffee_form)
+        self.stack.aW..(self.coffee_form)
         self.coffee_list.doubleClicked.c..(
             self.coffee_form.show_coffee)
         self.coffee_list.doubleClicked.c..(

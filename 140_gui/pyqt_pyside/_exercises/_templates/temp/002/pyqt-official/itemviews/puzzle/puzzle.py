@@ -415,8 +415,8 @@ c_ MainWindow ?MW..
         self.puzzleWidget.puzzleCompleted.c..(self.setCompleted,
                 __.QueuedConnection)
 
-        frameLayout.addWidget(self.piecesList)
-        frameLayout.addWidget(self.puzzleWidget)
+        frameLayout.aW..(self.piecesList)
+        frameLayout.aW..(self.puzzleWidget)
         self.sCW..(frame)
 
 

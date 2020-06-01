@@ -62,13 +62,13 @@ c_ Receiver(QDialog):
 
         buttonLayout _ QHBoxLayout()
         buttonLayout.addStretch(1)
-        buttonLayout.addWidget(quitButton)
+        buttonLayout.aW..(quitButton)
         buttonLayout.addStretch(1)
 
-        mainLayout _ QVBoxLayout()
-        mainLayout.addWidget(self.statusLabel)
+        mainLayout _ ?VBL..
+        mainLayout.aW..(self.statusLabel)
         mainLayout.addLayout(buttonLayout)
-        self.setLayout(mainLayout)
+        self.sL..(mainLayout)
 
         self.setWindowTitle("Broadcast Receiver")
 

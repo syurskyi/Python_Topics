@@ -11,9 +11,9 @@ c_ InvoiceForm(qtw.QWidget):
 
     ___ __init__(self):
         super().__init__()
-        self.setLayout(qtw.QFormLayout())
+        self.sL..(qtw.QFormLayout())
         self.inputs _ dict()
-        self.inputs['Customer Name'] _ qtw.QLineEdit()
+        self.inputs['Customer Name'] _ qtw.?LE..
         self.inputs['Customer Address'] _ qtw.?PTE..
         self.inputs['Invoice Date'] _ qtw.QDateEdit(
             date_qtc.QDate.currentDate(), calendarPopup_True)
@@ -41,7 +41,7 @@ c_ InvoiceForm(qtw.QWidget):
 
     ___ on_submit(self):
         data _ {
-            'c_name': self.inputs['Customer Name'].text(),
+            'c_name': self.inputs['Customer Name'].t__(),
             'c_addr': self.inputs['Customer Address'].toPlainText(),
             'i_date': self.inputs['Invoice Date'].date().toString(),
             'i_due': self.inputs['Invoice Date'].date().addDays(
@@ -52,7 +52,7 @@ c_ InvoiceForm(qtw.QWidget):
         for row in range(self.line_items.rowCount()):
             __ no. self.line_items.item(row, 0):
                 continue
-            job _ self.line_items.item(row, 0).text()
+            job _ self.line_items.item(row, 0).t__()
             rate _ self.line_items.cellWidget(row, 1).value()
             hours _ self.line_items.cellWidget(row, 2).value()
             total _ rate * hours
@@ -197,8 +197,8 @@ c_ InvoiceView(qtw.QTextEdit):
         # write data
         for row in data['line_items']:
             for col, value in enumerate(row):
-                text _ f'${value}' __ col in (1, 3) else f'{value}'
-                cursor.insertText(text, std_format)
+                t__ _ f'${value}' __ col in (1, 3) else f'{value}'
+                cursor.insertText(t__, std_format)
                 cursor.movePosition(qtg.QTextCursor.NextCell)
 
         # Append a row
@@ -215,15 +215,15 @@ c_ MainWindow(qtw.QMainWindow):
         """MainWindow constructor."""
         super().__init__()
         # Main UI code goes here
-        main _ qtw.QWidget()
-        main.setLayout(qtw.QHBoxLayout())
+        main _ qtw.?W..
+        main.sL..(qtw.QHBoxLayout())
         self.sCW..(main)
 
         form _ InvoiceForm()
-        main.layout().addWidget(form)
+        main.layout().aW..(form)
 
         self.preview _ InvoiceView()
-        main.layout().addWidget(self.preview)
+        main.layout().aW..(self.preview)
 
         form.submitted.c..(self.preview.build_invoice)
 

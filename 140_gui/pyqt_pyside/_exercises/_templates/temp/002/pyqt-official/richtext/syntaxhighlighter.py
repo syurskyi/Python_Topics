@@ -77,16 +77,16 @@ c_ MainWindow ?MW..
         __ path:
             inFile _ QFile(path)
             __ inFile.o..(QFile.ReadOnly | QFile.Text):
-                text _ inFile.readAll()
+                t__ _ inFile.readAll()
 
                 try:
                     # Python v3.
-                    text _ str(text, encoding_'ascii')
+                    t__ _ str(t__, encoding_'ascii')
                 except TypeError:
                     # Python v2.
-                    text _ str(text)
+                    t__ _ str(t__)
 
-                self.editor.sPT..(text)
+                self.editor.sPT..(t__)
 
     ___ setupEditor(self):
         font _ QFont()
@@ -163,33 +163,33 @@ c_ Highlighter(QSyntaxHighlighter):
         self.commentStartExpression _ QRegExp("/\\*")
         self.commentEndExpression _ QRegExp("\\*/")
 
-    ___ highlightBlock  text):
+    ___ highlightBlock  t__):
         for pattern, format in self.highlightingRules:
             expression _ QRegExp(pattern)
-            index _ expression.indexIn(text)
+            index _ expression.indexIn(t__)
             while index >_ 0:
                 length _ expression.matchedLength()
                 self.setFormat(index, length, format)
-                index _ expression.indexIn(text, index + length)
+                index _ expression.indexIn(t__, index + length)
 
         self.setCurrentBlockState(0)
 
         startIndex _ 0
         __ self.previousBlockState() !_ 1:
-            startIndex _ self.commentStartExpression.indexIn(text)
+            startIndex _ self.commentStartExpression.indexIn(t__)
 
         while startIndex >_ 0:
-            endIndex _ self.commentEndExpression.indexIn(text, startIndex)
+            endIndex _ self.commentEndExpression.indexIn(t__, startIndex)
 
             __ endIndex == -1:
                 self.setCurrentBlockState(1)
-                commentLength _ len(text) - startIndex
+                commentLength _ len(t__) - startIndex
             ____
                 commentLength _ endIndex - startIndex + self.commentEndExpression.matchedLength()
 
             self.setFormat(startIndex, commentLength,
                     self.multiLineCommentFormat)
-            startIndex _ self.commentStartExpression.indexIn(text,
+            startIndex _ self.commentStartExpression.indexIn(t__,
                     startIndex + commentLength);
 
 

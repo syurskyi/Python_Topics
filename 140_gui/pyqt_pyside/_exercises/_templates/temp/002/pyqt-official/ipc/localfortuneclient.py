@@ -83,11 +83,11 @@ c_ Client(QDialog):
         self.socket.error.c..(self.displayError)
 
         mainLayout _ QGridLayout()
-        mainLayout.addWidget(hostLabel, 0, 0)
-        mainLayout.addWidget(self.hostLineEdit, 0, 1)
-        mainLayout.addWidget(self.statusLabel, 2, 0, 1, 2)
-        mainLayout.addWidget(buttonBox, 3, 0, 1, 2)
-        self.setLayout(mainLayout)
+        mainLayout.aW..(hostLabel, 0, 0)
+        mainLayout.aW..(self.hostLineEdit, 0, 1)
+        mainLayout.aW..(self.statusLabel, 2, 0, 1, 2)
+        mainLayout.aW..(buttonBox, 3, 0, 1, 2)
+        self.sL..(mainLayout)
 
         self.setWindowTitle("Fortune Client")
         self.hostLineEdit.setFocus()
@@ -96,7 +96,7 @@ c_ Client(QDialog):
         self.getFortuneButton.setEnabled F..
         self.blockSize _ 0
         self.socket.abort()
-        self.socket.connectToServer(self.hostLineEdit.text())
+        self.socket.connectToServer(self.hostLineEdit.t__())
 
     ___ readFortune(self):
         ins _ QDataStream(self.socket)
@@ -134,7 +134,7 @@ c_ Client(QDialog):
                 N..,
         }
 
-        msg _ errors.get(socketError,
+        msg _ errors.g..(socketError,
                 "The following error occurred: %s." % self.socket.errorString())
         __ msg __ no. N..:
             ?MB...information  "Fortune Client", msg)
@@ -142,7 +142,7 @@ c_ Client(QDialog):
         self.getFortuneButton.setEnabled(True)
 
     ___ enableGetFortuneButton(self):
-        self.getFortuneButton.setEnabled(self.hostLineEdit.text() !_ "")
+        self.getFortuneButton.setEnabled(self.hostLineEdit.t__() !_ "")
 
 
 __ __name__ == '__main__':

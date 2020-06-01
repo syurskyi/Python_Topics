@@ -8,7 +8,7 @@ c_ MainWindow(qtw.QWidget):
 
     ___ __init__(self):
         super().__init__()
-        self.setLayout(qtw.QVBoxLayout())
+        self.sL..(qtw.QVBoxLayout())
 
         # camera
         self.camera _ qtmm.QCamera()
@@ -16,7 +16,7 @@ c_ MainWindow(qtw.QWidget):
         # viewfinder
         cvf _ qtmmw.QCameraViewfinder()
         self.camera.setViewfinder(cvf)
-        self.layout().addWidget(cvf)
+        self.layout().aW..(cvf)
 
         # Form
         form _ qtw.QFormLayout()

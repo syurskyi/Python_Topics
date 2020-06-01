@@ -117,7 +117,7 @@ c_ MainWindow(qtw.QMainWindow):
         self.graph _ GraphWidget(self)
         self.sCW..(self.graph)
 
-        self.timer _ qtc.QTimer()
+        self.timer _ qtc.?T..
         self.timer.setInterval(1000)
         self.timer.timeout.c..(self.update_graph)
         self.timer.start()

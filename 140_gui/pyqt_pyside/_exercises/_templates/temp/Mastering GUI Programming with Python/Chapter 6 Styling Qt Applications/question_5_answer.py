@@ -4,7 +4,7 @@ ______ sys
 
 app _ qtw.?A..(sys.argv)
 
-widget _ qtw.QWidget()
+widget _ qtw.?W..
 palette _ widget.palette()
 tile_brush _ qtg.QBrush(
     qtg.?C..('black'),

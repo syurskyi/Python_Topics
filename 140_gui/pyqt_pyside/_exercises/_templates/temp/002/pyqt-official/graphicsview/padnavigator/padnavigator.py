@@ -78,7 +78,7 @@ c_ PadNavigator(QGraphicsView):
         pad.setTransformations([flipRotation, xRotation, yRotation])
 
         backItem _ QGraphicsProxyWidget(pad)
-        widget _ QWidget()
+        widget _ ?W..
         self.form.setupUi(widget)
         self.form.hostName.setFocus()
         backItem.setWidget(widget)
@@ -361,7 +361,7 @@ c_ SplashItem(QGraphicsObject):
     ___ __init__  parent_None):
         super(SplashItem, self).__init__(parent)
 
-        self.text _ "Welcome to the Pad Navigator Example. You can use the " \
+        self.t__ _ "Welcome to the Pad Navigator Example. You can use the " \
                 "keyboard arrows to navigate the icons, and press enter to " \
                 "activate an item. Press any key to begin."
 
@@ -383,7 +383,7 @@ c_ SplashItem(QGraphicsObject):
         font.setPixelSize(18)
         painter.setPen(__.black)
         painter.setFont(font)
-        painter.drawText(textRect, flags, self.text)
+        painter.drawText(textRect, flags, self.t__)
 
 
 __ __name__ == '__main__':

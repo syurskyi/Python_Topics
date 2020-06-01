@@ -62,7 +62,7 @@ c_ RegExpDialog(QDialog):
         patternLabel _ QLabel("&Pattern:")
         patternLabel.setBuddy(self.patternComboBox)
 
-        self.escapedPatternLineEdit _ QLineEdit()
+        self.escapedPatternLineEdit _ ?LE..
         self.escapedPatternLineEdit.setReadOnly(True)
         palette _ self.escapedPatternLineEdit.palette()
         palette.setBrush(?P...Base,
@@ -94,11 +94,11 @@ c_ RegExpDialog(QDialog):
         self.minimalCheckBox _ QCheckBox("&Minimal")
 
         indexLabel _ QLabel("Index of Match:")
-        self.indexEdit _ QLineEdit()
+        self.indexEdit _ ?LE..
         self.indexEdit.setReadOnly(True)
 
         matchedLengthLabel _ QLabel("Matched Length:")
-        self.matchedLengthEdit _ QLineEdit()
+        self.matchedLengthEdit _ ?LE..
         self.matchedLengthEdit.setReadOnly(True)
 
         self.captureLabels _ []
@@ -110,29 +110,29 @@ c_ RegExpDialog(QDialog):
         self.captureLabels[0].sT..("Match:")
 
         checkBoxLayout _ QHBoxLayout()
-        checkBoxLayout.addWidget(self.caseSensitiveCheckBox)
-        checkBoxLayout.addWidget(self.minimalCheckBox)
+        checkBoxLayout.aW..(self.caseSensitiveCheckBox)
+        checkBoxLayout.aW..(self.minimalCheckBox)
         checkBoxLayout.addStretch(1)
 
         mainLayout _ QGridLayout()
-        mainLayout.addWidget(patternLabel, 0, 0)
-        mainLayout.addWidget(self.patternComboBox, 0, 1)
-        mainLayout.addWidget(escapedPatternLabel, 1, 0)
-        mainLayout.addWidget(self.escapedPatternLineEdit, 1, 1)
-        mainLayout.addWidget(syntaxLabel, 2, 0)
-        mainLayout.addWidget(self.syntaxComboBox, 2, 1)
+        mainLayout.aW..(patternLabel, 0, 0)
+        mainLayout.aW..(self.patternComboBox, 0, 1)
+        mainLayout.aW..(escapedPatternLabel, 1, 0)
+        mainLayout.aW..(self.escapedPatternLineEdit, 1, 1)
+        mainLayout.aW..(syntaxLabel, 2, 0)
+        mainLayout.aW..(self.syntaxComboBox, 2, 1)
         mainLayout.addLayout(checkBoxLayout, 3, 0, 1, 2)
-        mainLayout.addWidget(textLabel, 4, 0)
-        mainLayout.addWidget(self.textComboBox, 4, 1)
-        mainLayout.addWidget(indexLabel, 5, 0)
-        mainLayout.addWidget(self.indexEdit, 5, 1)
-        mainLayout.addWidget(matchedLengthLabel, 6, 0)
-        mainLayout.addWidget(self.matchedLengthEdit, 6, 1)
+        mainLayout.aW..(textLabel, 4, 0)
+        mainLayout.aW..(self.textComboBox, 4, 1)
+        mainLayout.aW..(indexLabel, 5, 0)
+        mainLayout.aW..(self.indexEdit, 5, 1)
+        mainLayout.aW..(matchedLengthLabel, 6, 0)
+        mainLayout.aW..(self.matchedLengthEdit, 6, 1)
 
         for i in range(self.MaxCaptures):
-            mainLayout.addWidget(self.captureLabels[i], 7 + i, 0)
-            mainLayout.addWidget(self.captureEdits[i], 7 + i, 1)
-        self.setLayout(mainLayout)
+            mainLayout.aW..(self.captureLabels[i], 7 + i, 0)
+            mainLayout.aW..(self.captureEdits[i], 7 + i, 1)
+        self.sL..(mainLayout)
 
         self.patternComboBox.editTextChanged.c..(self.refresh)
         self.textComboBox.editTextChanged.c..(self.refresh)
@@ -151,7 +151,7 @@ c_ RegExpDialog(QDialog):
         self.setUpdatesEnabled F..
 
         pattern _ self.patternComboBox.currentText()
-        text _ self.textComboBox.currentText()
+        t__ _ self.textComboBox.currentText()
 
         escaped _ str(pattern)
         escaped.replace('\\', '\\\\')
@@ -173,7 +173,7 @@ c_ RegExpDialog(QDialog):
             palette.sC..(?P...Text, __.red)
         self.patternComboBox.sP..(palette)
 
-        self.indexEdit.sT..(str(rx.indexIn(text)))
+        self.indexEdit.sT..(str(rx.indexIn(t__)))
         self.matchedLengthEdit.sT..(str(rx.matchedLength()))
 
         for i in range(self.MaxCaptures):

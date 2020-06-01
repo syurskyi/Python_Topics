@@ -50,8 +50,8 @@ ______ draggabletext_rc
 
 
 c_ DragLabel(QLabel):
-    ___ __init__  text, parent):
-        super(DragLabel, self).__init__(text, parent)
+    ___ __init__  t__, parent):
+        super(DragLabel, self).__init__(t__, parent)
 
         self.setAutoFillBackground(True)
         self.setFrameShape(QFrame.Panel)
@@ -61,7 +61,7 @@ c_ DragLabel(QLabel):
         hotSpot _ event.pos()
 
         mimeData _ QMimeData()
-        mimeData.sT..(self.text())
+        mimeData.sT..(self.t__())
         mimeData.setData('application/x-hotspot',
                 '%d %d' % (hotSpot.x(), hotSpot.y()))
 
@@ -120,7 +120,7 @@ c_ DragWidget(QWidget):
     ___ dropEvent  event):
         __ event.mimeData().hasText
             mime _ event.mimeData()
-            pieces _ mime.text().split()
+            pieces _ mime.t__().split()
             position _ event.pos()
             hotSpot _ QPoint()
 

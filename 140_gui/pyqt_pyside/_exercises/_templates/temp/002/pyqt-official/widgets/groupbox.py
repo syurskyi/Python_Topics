@@ -52,11 +52,11 @@ c_ Window(QWidget):
         super(Window, self).__init__(parent)
 
         grid _ QGridLayout()
-        grid.addWidget(self.createFirstExclusiveGroup(), 0, 0)
-        grid.addWidget(self.createSecondExclusiveGroup(), 1, 0)
-        grid.addWidget(self.createNonExclusiveGroup(), 0, 1)
-        grid.addWidget(self.createPushButtonGroup(), 1, 1)
-        self.setLayout(grid)
+        grid.aW..(self.createFirstExclusiveGroup(), 0, 0)
+        grid.aW..(self.createSecondExclusiveGroup(), 1, 0)
+        grid.aW..(self.createNonExclusiveGroup(), 0, 1)
+        grid.aW..(self.createPushButtonGroup(), 1, 1)
+        self.sL..(grid)
 
         self.setWindowTitle("Group Box")
         self.resize(480, 320)
@@ -70,12 +70,12 @@ c_ Window(QWidget):
 
         radio1.setChecked(True)
 
-        vbox _ QVBoxLayout()
-        vbox.addWidget(radio1)
-        vbox.addWidget(radio2)
-        vbox.addWidget(radio3)
+        vbox _ ?VBL..
+        vbox.aW..(radio1)
+        vbox.aW..(radio2)
+        vbox.aW..(radio3)
         vbox.addStretch(1)
-        groupBox.setLayout(vbox)
+        groupBox.sL..(vbox)
 
         r_ groupBox
 
@@ -91,13 +91,13 @@ c_ Window(QWidget):
         checkBox _ QCheckBox("Ind&ependent checkbox")
         checkBox.setChecked(True)
 
-        vbox _ QVBoxLayout()
-        vbox.addWidget(radio1)
-        vbox.addWidget(radio2)
-        vbox.addWidget(radio3)
-        vbox.addWidget(checkBox)
+        vbox _ ?VBL..
+        vbox.aW..(radio1)
+        vbox.aW..(radio2)
+        vbox.aW..(radio3)
+        vbox.aW..(checkBox)
         vbox.addStretch(1)
-        groupBox.setLayout(vbox)
+        groupBox.sL..(vbox)
 
         r_ groupBox
 
@@ -112,12 +112,12 @@ c_ Window(QWidget):
         tristateBox.setTristate(True)
         tristateBox.setCheckState(__.PartiallyChecked)
 
-        vbox _ QVBoxLayout()
-        vbox.addWidget(checkBox1)
-        vbox.addWidget(checkBox2)
-        vbox.addWidget(tristateBox)
+        vbox _ ?VBL..
+        vbox.aW..(checkBox1)
+        vbox.aW..(checkBox2)
+        vbox.aW..(tristateBox)
         vbox.addStretch(1)
-        groupBox.setLayout(vbox)
+        groupBox.sL..(vbox)
 
         r_ groupBox
 
@@ -148,13 +148,13 @@ c_ Window(QWidget):
         subMenu.aA..("Item 3")
         newAction.setMenu(subMenu)
 
-        vbox _ QVBoxLayout()
-        vbox.addWidget(pushButton)
-        vbox.addWidget(toggleButton)
-        vbox.addWidget(flatButton)
-        vbox.addWidget(popupButton)
+        vbox _ ?VBL..
+        vbox.aW..(pushButton)
+        vbox.aW..(toggleButton)
+        vbox.aW..(flatButton)
+        vbox.aW..(popupButton)
         vbox.addStretch(1)
-        groupBox.setLayout(vbox)
+        groupBox.sL..(vbox)
 
         r_ groupBox
 

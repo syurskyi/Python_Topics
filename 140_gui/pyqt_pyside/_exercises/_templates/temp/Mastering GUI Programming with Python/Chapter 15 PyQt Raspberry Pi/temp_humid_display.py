@@ -67,8 +67,8 @@ c_ MainWindow(qtw.QMainWindow):
         super().__init__()
 
         # Create widget and style it
-        widget _ qtw.QWidget()
-        widget.setLayout(qtw.QFormLayout())
+        widget _ qtw.?W..
+        widget.sL..(qtw.QFormLayout())
         self.sCW..(widget)
         p _ widget.palette()
         p.sC..(qtg.?P...WindowText, qtg.?C..('cyan'))

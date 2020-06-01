@@ -122,7 +122,7 @@ c_ ChatMainWindow(QMainWindow, Ui_ChatMainWindow):
         dialog _ NicknameDialog()
         dialog.cancelButton.setVisible F..
         dialog.e..
-        self.m_nickname _ dialog.nickname.text().strip()
+        self.m_nickname _ dialog.nickname.t__().strip()
         self.action.emit(self.m_nickname, "joins the chat")
 
     ___ rebuildHistory(self):
@@ -130,8 +130,8 @@ c_ ChatMainWindow(QMainWindow, Ui_ChatMainWindow):
         self.chatHistory.sPT..(history)
 
     @pyqtSlot(str, str)
-    ___ messageSlot  nickname, text):
-        self.m_messages.append("<%s> %s" % (nickname, text))
+    ___ messageSlot  nickname, t__):
+        self.m_messages.append("<%s> %s" % (nickname, t__))
 
         __ len(self.m_messages) > 100:
             self.m_messages.pop(0)
@@ -139,8 +139,8 @@ c_ ChatMainWindow(QMainWindow, Ui_ChatMainWindow):
         self.rebuildHistory()
 
     @pyqtSlot(str, str)
-    ___ actionSlot  nickname, text):
-        self.m_messages.append("* %s %s" % (nickname, text))
+    ___ actionSlot  nickname, t__):
+        self.m_messages.append("* %s %s" % (nickname, t__))
 
         __ len(self.m_messages) > 100:
             self.m_messages.pop(0)
@@ -154,7 +154,7 @@ c_ ChatMainWindow(QMainWindow, Ui_ChatMainWindow):
     @pyqtSlot()
     ___ sendClickedSlot(self):
         msg _ QDBusMessage.createSignal('/', 'org.example.chat', 'message')
-        msg << self.m_nickname << self.messageLineEdit.text()
+        msg << self.m_nickname << self.messageLineEdit.t__()
         QDBusConnection.sessionBus().send(msg)
         self.messageLineEdit.sT..('')
 
@@ -164,7 +164,7 @@ c_ ChatMainWindow(QMainWindow, Ui_ChatMainWindow):
 
         __ dialog.e.. == QDialog.Accepted:
             old _ self.m_nickname
-            self.m_nickname _ dialog.nickname.text().strip()
+            self.m_nickname _ dialog.nickname.t__().strip()
             self.action.emit(old, "is now known as %s" % self.m_nickname)
 
     @pyqtSlot()

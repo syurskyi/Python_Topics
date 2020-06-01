@@ -13,12 +13,12 @@ c_ MainWindow(qtw.QWidget):
         """
         super().__init__()
         # Main UI code goes here
-        self.setLayout(qtw.QVBoxLayout())
+        self.sL..(qtw.QVBoxLayout())
         lcd _ qtw.QLCDNumber(self)
-        self.layout().addWidget(lcd)
+        self.layout().aW..(lcd)
 
         history _ qtw.QLineEdit  placeholderText_'History')
-        self.layout().addWidget(history)
+        self.layout().aW..(history)
 
         button_texts _ [
             'Clear', 'BackSpace', 'Mem', 'Mem Clear',
@@ -36,7 +36,7 @@ c_ MainWindow(qtw.QWidget):
             buttons.append(button)
             row _ num // 4
             column _ num % 4
-            button_layout.addWidget(button, row, column)
+            button_layout.aW..(button, row, column)
         # End main UI code
         self.s..
 

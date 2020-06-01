@@ -86,13 +86,13 @@ c_ Server(QDialog):
 
         buttonLayout _ QHBoxLayout()
         buttonLayout.addStretch(1)
-        buttonLayout.addWidget(quitButton)
+        buttonLayout.aW..(quitButton)
         buttonLayout.addStretch(1)
 
-        mainLayout _ QVBoxLayout()
-        mainLayout.addWidget(statusLabel)
+        mainLayout _ ?VBL..
+        mainLayout.aW..(statusLabel)
         mainLayout.addLayout(buttonLayout)
-        self.setLayout(mainLayout)
+        self.sL..(mainLayout)
 
         self.setWindowTitle("Fortune Server")
 

@@ -282,7 +282,7 @@ c_ MainWindow ?MW..
     ___ __init__(self):
         super(MainWindow, self).__init__()
 
-        centralWidget _ QWidget()
+        centralWidget _ ?W..
         self.sCW..(centralWidget)
 
         self.glWidget _ GLWidget()
@@ -314,12 +314,12 @@ c_ MainWindow ?MW..
         self.createMenus()
 
         centralLayout _ QGridLayout()
-        centralLayout.addWidget(self.glWidgetArea, 0, 0)
-        centralLayout.addWidget(self.pixmapLabelArea, 0, 1)
-        centralLayout.addWidget(xSlider, 1, 0, 1, 2)
-        centralLayout.addWidget(ySlider, 2, 0, 1, 2)
-        centralLayout.addWidget(zSlider, 3, 0, 1, 2)
-        centralWidget.setLayout(centralLayout)
+        centralLayout.aW..(self.glWidgetArea, 0, 0)
+        centralLayout.aW..(self.pixmapLabelArea, 0, 1)
+        centralLayout.aW..(xSlider, 1, 0, 1, 2)
+        centralLayout.aW..(ySlider, 2, 0, 1, 2)
+        centralLayout.aW..(zSlider, 3, 0, 1, 2)
+        centralWidget.sL..(centralLayout)
 
         xSlider.setValue(15 * 16)
         ySlider.setValue(345 * 16)

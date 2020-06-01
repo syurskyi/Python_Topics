@@ -151,12 +151,12 @@ __ __name__ == '__main__':
 
     app _ ?A..(sys.argv)
 
-    mainWidget _ QWidget()
+    mainWidget _ ?W..
     horizontalLayout _ QHBoxLayout()
-    horizontalLayout.addWidget(DragWidget())
-    horizontalLayout.addWidget(DragWidget())
+    horizontalLayout.aW..(DragWidget())
+    horizontalLayout.aW..(DragWidget())
 
-    mainWidget.setLayout(horizontalLayout)
+    mainWidget.sL..(horizontalLayout)
     mainWidget.setWindowTitle("Draggable Icons")
     mainWidget.s..
 

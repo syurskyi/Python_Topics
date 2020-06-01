@@ -55,9 +55,9 @@ ___ createIntroPage
             "Two.")
     label.setWordWrap(True)
 
-    layout _ QVBoxLayout()
-    layout.addWidget(label)
-    page.setLayout(layout)
+    layout _ ?VBL..
+    layout.aW..(label)
+    page.sL..(layout)
 
     r_ page
 
@@ -68,17 +68,17 @@ ___ createRegistrationPage
     page.setSubTitle("Please fill both fields.")
 
     nameLabel _ QLabel("Name:")
-    nameLineEdit _ QLineEdit()
+    nameLineEdit _ ?LE..
 
     emailLabel _ QLabel("Email address:")
-    emailLineEdit _ QLineEdit()
+    emailLineEdit _ ?LE..
 
     layout _ QGridLayout()
-    layout.addWidget(nameLabel, 0, 0)
-    layout.addWidget(nameLineEdit, 0, 1)
-    layout.addWidget(emailLabel, 1, 0)
-    layout.addWidget(emailLineEdit, 1, 1)
-    page.setLayout(layout)
+    layout.aW..(nameLabel, 0, 0)
+    layout.aW..(nameLineEdit, 0, 1)
+    layout.aW..(emailLabel, 1, 0)
+    layout.aW..(emailLineEdit, 1, 1)
+    page.sL..(layout)
 
     r_ page
 
@@ -90,9 +90,9 @@ ___ createConclusionPage
     label _ QLabel("You are now successfully registered. Have a nice day!")
     label.setWordWrap(True)
 
-    layout _ QVBoxLayout()
-    layout.addWidget(label)
-    page.setLayout(layout)
+    layout _ ?VBL..
+    layout.aW..(label)
+    page.sL..(layout)
 
     r_ page
 

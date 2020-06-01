@@ -106,10 +106,10 @@ c_ Window(QWidget):
         floatLabel _ self.createLabel("Float")
 
         layout _ QGridLayout()
-        layout.addWidget(aliasedLabel, 0, 1)
-        layout.addWidget(antialiasedLabel, 0, 2)
-        layout.addWidget(intLabel, 1, 0)
-        layout.addWidget(floatLabel, 2, 0)
+        layout.aW..(aliasedLabel, 0, 1)
+        layout.aW..(antialiasedLabel, 0, 2)
+        layout.aW..(intLabel, 1, 0)
+        layout.aW..(floatLabel, 2, 0)
 
         timer _ QTimer(self)
 
@@ -121,15 +121,15 @@ c_ Window(QWidget):
 
                 timer.timeout.c..(w.nextAnimationFrame)
 
-                layout.addWidget(w, i + 1, j + 1)
+                layout.aW..(w, i + 1, j + 1)
 
         timer.start(100)
-        self.setLayout(layout)
+        self.sL..(layout)
 
         self.setWindowTitle("Concentric Circles")
 
-    ___ createLabel  text):
-        label _ QLabel(text)
+    ___ createLabel  t__):
+        label _ QLabel(t__)
         label.setAlignment(__.AlignCenter)
         label.setMargin(2)
         label.setFrameStyle(QFrame.Box | QFrame.Sunken)

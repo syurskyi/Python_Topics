@@ -25,7 +25,7 @@ c_ MultiPageWidgetContainerExtension(QPyDesignerContainerExtension):
 
         self._widget _ widget
             
-    ___ addWidget  widget):
+    ___ aW..  widget):
         self._widget.addPage(widget)
     
     ___ count(self):

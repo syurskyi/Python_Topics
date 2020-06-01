@@ -205,14 +205,14 @@ c_ PlayerControls(QWidget):
 
         layout _ QHBoxLayout()
         layout.setContentsMargins(0, 0, 0, 0)
-        layout.addWidget(self.stopButton)
-        layout.addWidget(self.previousButton)
-        layout.addWidget(self.playButton)
-        layout.addWidget(self.nextButton)
-        layout.addWidget(self.muteButton)
-        layout.addWidget(self.volumeSlider)
-        layout.addWidget(self.rateBox)
-        self.setLayout(layout)
+        layout.aW..(self.stopButton)
+        layout.aW..(self.previousButton)
+        layout.aW..(self.playButton)
+        layout.aW..(self.nextButton)
+        layout.aW..(self.muteButton)
+        layout.aW..(self.volumeSlider)
+        layout.aW..(self.rateBox)
+        self.sL..(layout)
 
     ___ state(self):
         r_ self.playerState
@@ -423,8 +423,8 @@ c_ Player(QWidget):
         self.labelHistogram.sT..("Histogram:")
         self.histogram _ HistogramWidget()
         histogramLayout _ QHBoxLayout()
-        histogramLayout.addWidget(self.labelHistogram)
-        histogramLayout.addWidget(self.histogram, 1)
+        histogramLayout.aW..(self.labelHistogram)
+        histogramLayout.aW..(self.histogram, 1)
 
         self.probe _ QVideoProbe()
         self.probe.videoFrameProbed.c..(self.histogram.processFrame)
@@ -459,28 +459,28 @@ c_ Player(QWidget):
         self.colorButton.c__.c..(self.showColorDialog)
 
         displayLayout _ QHBoxLayout()
-        displayLayout.addWidget(self.videoWidget, 2)
-        displayLayout.addWidget(self.playlistView)
+        displayLayout.aW..(self.videoWidget, 2)
+        displayLayout.aW..(self.playlistView)
 
         controlLayout _ QHBoxLayout()
         controlLayout.setContentsMargins(0, 0, 0, 0)
-        controlLayout.addWidget(openButton)
+        controlLayout.aW..(openButton)
         controlLayout.addStretch(1)
-        controlLayout.addWidget(controls)
+        controlLayout.aW..(controls)
         controlLayout.addStretch(1)
-        controlLayout.addWidget(self.fullScreenButton)
-        controlLayout.addWidget(self.colorButton)
+        controlLayout.aW..(self.fullScreenButton)
+        controlLayout.aW..(self.colorButton)
 
-        layout _ QVBoxLayout()
+        layout _ ?VBL..
         layout.addLayout(displayLayout)
         hLayout _ QHBoxLayout()
-        hLayout.addWidget(self.slider)
-        hLayout.addWidget(self.labelDuration)
+        hLayout.aW..(self.slider)
+        hLayout.aW..(self.labelDuration)
         layout.addLayout(hLayout)
         layout.addLayout(controlLayout)
         layout.addLayout(histogramLayout)
 
-        self.setLayout(layout)
+        self.sL..(layout)
 
         __ no. self.player.isAvailable
             ?MB...warning  "Service not available",
@@ -672,7 +672,7 @@ c_ Player(QWidget):
 
             self.colorDialog _ QDialog(self)
             self.colorDialog.setWindowTitle("Color Options")
-            self.colorDialog.setLayout(layout)
+            self.colorDialog.sL..(layout)
 
             button.c__.c..(self.colorDialog.close)
 

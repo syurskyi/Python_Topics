@@ -128,7 +128,7 @@ c_ BubblesWidget(BaseClass):
         self.animation_timer.timeout.c..(self.animate)
         self.animation_timer.start(25)
 
-        self.bubbleTimer _ QTimer()
+        self.bubbleTimer _ ?T..
         self.bubbleTimer.setSingleShot F..
         self.bubbleTimer.timeout.c..(self.expandBubble)
 

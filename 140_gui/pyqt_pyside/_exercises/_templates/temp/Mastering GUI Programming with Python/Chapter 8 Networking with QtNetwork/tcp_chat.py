@@ -74,19 +74,19 @@ c_ ChatWindow(qtw.QWidget):
 
     ___ __init__(self):
         super().__init__()
-        self.setLayout(qtw.QGridLayout())
+        self.sL..(qtw.QGridLayout())
         self.message_view _ qtw.QTextEdit(readOnly_True)
-        self.layout().addWidget(self.message_view, 1, 1, 1, 2)
+        self.layout().aW..(self.message_view, 1, 1, 1, 2)
         self.message_entry _ qtw.QLineEdit(returnPressed_self.send)
-        self.layout().addWidget(self.message_entry, 2, 1)
+        self.layout().aW..(self.message_entry, 2, 1)
         self.send_btn _ qtw.?PB..('Send', c___self.send)
-        self.layout().addWidget(self.send_btn, 2, 2)
+        self.layout().aW..(self.send_btn, 2, 2)
 
     ___ write_message  username, message):
         self.message_view.append(f'<b>{username}: </b> {message}<br>')
 
     ___ send(self):
-        message _ self.message_entry.text().strip()
+        message _ self.message_entry.t__().strip()
         __ message:
             self.submitted.emit(message)
             self.message_entry.clear()

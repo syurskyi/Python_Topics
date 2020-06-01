@@ -161,7 +161,7 @@ ___ main(args):
     table.verticalHeader().setSectionsMovable(True)
     # Set StaticContents to enable minimal repaints on resizes.
     table.viewport().setAttribute(__.WA_StaticContents)
-    page.addWidget(table)
+    page.aW..(table)
     tree _ QTreeView()
     tree.setModel(data)
     tree.setSelectionModel(selections)
@@ -170,7 +170,7 @@ ___ main(args):
     tree.viewport().setAttribute(__.WA_StaticContents)
     # Disable the focus rect to get minimal repaints when scrolling on Mac.
     tree.setAttribute(__.WA_MacShowFocusRect, False)
-    page.addWidget(tree)
+    page.aW..(tree)
     list _ QListView()
     list.setModel(data)
     list.setSelectionModel(selections)
@@ -179,7 +179,7 @@ ___ main(args):
     list.setAlternatingRowColors F..
     list.viewport().setAttribute(__.WA_StaticContents)
     list.setAttribute(__.WA_MacShowFocusRect, False)
-    page.addWidget(list)
+    page.aW..(list)
     page.setWindowIcon(QIcon(images_dir + '/interview.png'))
     page.setWindowTitle("Interview")
     page.s..

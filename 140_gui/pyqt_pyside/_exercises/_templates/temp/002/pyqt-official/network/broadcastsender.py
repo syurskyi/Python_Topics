@@ -69,10 +69,10 @@ c_ Sender(QDialog):
         quitButton.c__.c..(self.close)
         self.timer.timeout.c..(self.broadcastDatagramm)
 
-        mainLayout _ QVBoxLayout()
-        mainLayout.addWidget(self.statusLabel)
-        mainLayout.addWidget(buttonBox)
-        self.setLayout(mainLayout)
+        mainLayout _ ?VBL..
+        mainLayout.aW..(self.statusLabel)
+        mainLayout.aW..(buttonBox)
+        self.sL..(mainLayout)
 
         self.setWindowTitle("Broadcast Sender")
 

@@ -45,19 +45,19 @@ c_ SlowSearcherThread(qtc.QThread):
 c_ SearchForm(qtw.QWidget):
 
     textChanged _ qtc.pyqtSignal(str)
-    returnPressed _ qtc.pyqtSignal()
+    rP__ _ qtc.pyqtSignal()
 
     ___ __init__(self):
         super().__init__()
-        self.setLayout(qtw.QVBoxLayout())
+        self.sL..(qtw.QVBoxLayout())
         self.search_term_inp _ qtw.QLineEdit(
             placeholderText_'Search Term',
             textChanged_self.textChanged,
-            returnPressed_self.returnPressed)
-        self.layout().addWidget(self.search_term_inp)
+            returnPressed_self.rP__)
+        self.layout().aW..(self.search_term_inp)
         self.results _ qtw.QListWidget()
-        self.layout().addWidget(self.results)
-        self.returnPressed.c..(self.results.clear)
+        self.layout().aW..(self.results)
+        self.rP__.c..(self.results.clear)
 
     ___ addResult  result):
         self.results.addItem(result)
@@ -81,7 +81,7 @@ c_ MainWindow(qtw.QMainWindow):
 
         # Connect to search engine
         form.textChanged.c..(self.ss.set_term)
-        form.returnPressed.c..(self.ss.start)
+        form.rP__.c..(self.ss.start)
         self.ss.match_found.c..(form.addResult)
         self.ss.finished.c..(self.on_finished)
         self.ss.directory_changed.c..(self.on_directory_changed)

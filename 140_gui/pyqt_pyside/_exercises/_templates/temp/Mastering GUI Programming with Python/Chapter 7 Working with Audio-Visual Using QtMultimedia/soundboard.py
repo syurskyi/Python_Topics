@@ -48,14 +48,14 @@ c_ SoundWidget(qtw.QWidget):
 
     ___ __init__(self):
         super().__init__()
-        self.setLayout(qtw.QGridLayout())
+        self.sL..(qtw.QGridLayout())
 
         # Playback
         self.label _ qtw.QLabel("No file loaded")
-        self.layout().addWidget(self.label, 0, 0, 1, 2)
+        self.layout().aW..(self.label, 0, 0, 1, 2)
 
         self.play_button _ PlayButton()
-        self.layout().addWidget(self.play_button, 3, 0, 1, 2)
+        self.layout().aW..(self.play_button, 3, 0, 1, 2)
 
         self.player _ qtmm.QMediaPlayer()
         self.play_button.c__.c..(self.on_playbutton)
@@ -64,12 +64,12 @@ c_ SoundWidget(qtw.QWidget):
         # Loading files
         self.file_button _ qtw.?PB..(
             'Load File', c___self.get_file)
-        self.layout().addWidget(self.file_button, 4, 0)
+        self.layout().aW..(self.file_button, 4, 0)
 
         # Slider
         self.position _ qtw.QSlider(
             minimum_0, orientation_qtc.__.Horizontal)
-        self.layout().addWidget(self.position, 1, 0, 1, 2)
+        self.layout().aW..(self.position, 1, 0, 1, 2)
 
         self.player.positionChanged.c..(self.position.setSliderPosition)
         self.player.durationChanged.c..(self.position.setMaximum)
@@ -81,7 +81,7 @@ c_ SoundWidget(qtw.QWidget):
             'Loop',
             stateChanged_self.on_loop_cb
         )
-        self.layout().addWidget(self.loop_cb, 2, 0)
+        self.layout().aW..(self.loop_cb, 2, 0)
 
         # Volume
         self.volume _ qtw.QSlider(
@@ -91,7 +91,7 @@ c_ SoundWidget(qtw.QWidget):
             orientation_qtc.__.Horizontal,
             sliderMoved_self.player.setVolume
         )
-        self.layout().addWidget(self.volume, 2, 1)
+        self.layout().aW..(self.volume, 2, 1)
 
 
         # Recording
@@ -114,7 +114,7 @@ c_ SoundWidget(qtw.QWidget):
         self.record_button _ RecordButton()
         self.recorder.stateChanged.c..(
             self.record_button.on_state_changed)
-        self.layout().addWidget(self.record_button, 4, 1)
+        self.layout().aW..(self.record_button, 4, 1)
 
         self.record_button.c__.c..(self.on_recordbutton)
 
@@ -177,13 +177,13 @@ c_ MainWindow(qtw.QMainWindow):
         super().__init__()
         rows _ 3
         columns _ 3
-        soundboard _ qtw.QWidget()
-        soundboard.setLayout(qtw.QGridLayout())
+        soundboard _ qtw.?W..
+        soundboard.sL..(qtw.QGridLayout())
         self.sCW..(soundboard)
         for c in range(columns):
             for r in range(rows):
                 sw _ SoundWidget()
-                soundboard.layout().addWidget(sw, c, r)
+                soundboard.layout().aW..(sw, c, r)
 
         # Code ends here
         self.s..

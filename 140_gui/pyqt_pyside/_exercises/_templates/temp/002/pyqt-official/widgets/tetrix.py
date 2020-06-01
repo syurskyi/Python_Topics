@@ -73,11 +73,11 @@ c_ TetrixWindow(QWidget):
         linesLcd.setSegmentStyle(QLCDNumber.Filled)
 
         startButton _ ?PB..("&Start")
-        startButton.setFocusPolicy(__.NoFocus)
+        startButton.sFP..(__.NF..)
         quitButton _ ?PB..("&Quit")
-        quitButton.setFocusPolicy(__.NoFocus)
+        quitButton.sFP..(__.NF..)
         pauseButton _ ?PB..("&Pause")
-        pauseButton.setFocusPolicy(__.NoFocus)
+        pauseButton.sFP..(__.NF..)
 
         startButton.c__.c..(self.board.start)
         pauseButton.c__.c..(self.board.pause)
@@ -87,25 +87,25 @@ c_ TetrixWindow(QWidget):
         self.board.linesRemovedChanged.c..(linesLcd.display)
 
         layout _ QGridLayout()
-        layout.addWidget(self.createLabel("NEXT"), 0, 0)
-        layout.addWidget(nextPieceLabel, 1, 0)
-        layout.addWidget(self.createLabel("LEVEL"), 2, 0)
-        layout.addWidget(levelLcd, 3, 0)
-        layout.addWidget(startButton, 4, 0)
-        layout.addWidget(self.board, 0, 1, 6, 1)
-        layout.addWidget(self.createLabel("SCORE"), 0, 2)
-        layout.addWidget(scoreLcd, 1, 2)
-        layout.addWidget(self.createLabel("LINES REMOVED"), 2, 2)
-        layout.addWidget(linesLcd, 3, 2)
-        layout.addWidget(quitButton, 4, 2)
-        layout.addWidget(pauseButton, 5, 2)
-        self.setLayout(layout)
+        layout.aW..(self.createLabel("NEXT"), 0, 0)
+        layout.aW..(nextPieceLabel, 1, 0)
+        layout.aW..(self.createLabel("LEVEL"), 2, 0)
+        layout.aW..(levelLcd, 3, 0)
+        layout.aW..(startButton, 4, 0)
+        layout.aW..(self.board, 0, 1, 6, 1)
+        layout.aW..(self.createLabel("SCORE"), 0, 2)
+        layout.aW..(scoreLcd, 1, 2)
+        layout.aW..(self.createLabel("LINES REMOVED"), 2, 2)
+        layout.aW..(linesLcd, 3, 2)
+        layout.aW..(quitButton, 4, 2)
+        layout.aW..(pauseButton, 5, 2)
+        self.sL..(layout)
 
         self.setWindowTitle("Tetrix")
         self.resize(550, 370)
 
-    ___ createLabel  text):
-        lbl _ QLabel(text)
+    ___ createLabel  t__):
+        lbl _ QLabel(t__)
         lbl.setAlignment(__.AlignHCenter | __.AlignBottom)
         r_ lbl
 
@@ -137,7 +137,7 @@ c_ TetrixBoard(QFrame):
         self.board _ N..
 
         self.setFrameStyle(QFrame.Panel | QFrame.Sunken)
-        self.setFocusPolicy(__.StrongFocus)
+        self.sFP..(__.StrongFocus)
         self.isStarted _ False
         self.isPaused _ False
         self.clearBoard()

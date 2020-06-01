@@ -69,8 +69,8 @@ c_ MainWindow(qtw.QMainWindow):
         # Main UI code goes here
         widget _ qtw.QWidget(minimumWidth_600)
         self.sCW..(widget)
-        widget.setLayout(qtw.QVBoxLayout())
-        self.url _ qtw.QLineEdit()
+        widget.sL..(qtw.QVBoxLayout())
+        self.url _ qtw.?LE..
         self.table _ qtw.QTableWidget(columnCount_2, rowCount_5)
         self.table.horizontalHeader().setSectionResizeMode(
             qtw.QHeaderView.Stretch)
@@ -80,7 +80,7 @@ c_ MainWindow(qtw.QMainWindow):
         submit _ qtw.?PB..('Submit Post', c___self.submit)
         response _ qtw.QTextEdit(readOnly_True)
         for w in (self.url, self.table, self.fname, submit, response):
-            widget.layout().addWidget(w)
+            widget.layout().aW..(w)
 
         # Create the poster object
         self.poster _ Poster()
@@ -95,16 +95,16 @@ c_ MainWindow(qtw.QMainWindow):
             self.fname.sT..(filename)
 
     ___ submit(self):
-        url _ qtc.QUrl(self.url.text())
-        filename _ self.fname.text()
+        url _ qtc.QUrl(self.url.t__())
+        filename _ self.fname.t__()
         __ filename == '(No File)':
             filename _ N..
         data _ {}
         for rownum in range(self.table.rowCount()):
             key_item _ self.table.item(rownum, 0)
-            key _ key_item.text() __ key_item else N..
+            key _ key_item.t__() __ key_item else N..
             __ key:
-                data[key] _ self.table.item(rownum, 1).text()
+                data[key] _ self.table.item(rownum, 1).t__()
         self.poster.make_request(url, data, filename)
 
 

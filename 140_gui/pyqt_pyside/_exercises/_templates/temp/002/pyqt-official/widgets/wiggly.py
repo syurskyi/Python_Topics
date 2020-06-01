@@ -60,7 +60,7 @@ c_ WigglyWidget(QWidget):
         self.setFont(newFont)
 
         self.timer _ QBasicTimer()
-        self.text _ ''
+        self.t__ _ ''
 
         self.step _ 0;
         self.timer.start(60, self)   
@@ -69,13 +69,13 @@ c_ WigglyWidget(QWidget):
         sineTable _ (0, 38, 71, 92, 100, 92, 71, 38, 0, -38, -71, -92, -100, -92, -71, -38)
 
         metrics _ QFontMetrics(self.font())
-        x _ (self.width() - metrics.width(self.text)) / 2
+        x _ (self.width() - metrics.width(self.t__)) / 2
         y _ (self.height() + metrics.ascent() - metrics.descent()) / 2
         color _ ?C..()
 
         painter _ QPainter(self)
 
-        for i, ch in enumerate(self.text):
+        for i, ch in enumerate(self.t__):
             index _ (self.step + i) % 16
             color.setHsv((15 - index) * 16, 255, 191)
             painter.setPen(color)
@@ -83,7 +83,7 @@ c_ WigglyWidget(QWidget):
             x +_ metrics.width(ch)
 
     ___ sT..  newText):
-        self.text _ newText
+        self.t__ _ newText
 
     ___ timerEvent  event):
         __ event.timerId() == self.timer.timerId
@@ -98,12 +98,12 @@ c_ Dialog(QDialog):
         super(Dialog, self).__init__(parent)
 
         wigglyWidget _ WigglyWidget()
-        lineEdit _ QLineEdit()
+        lineEdit _ ?LE..
 
-        layout _ QVBoxLayout()
-        layout.addWidget(wigglyWidget)
-        layout.addWidget(lineEdit)
-        self.setLayout(layout)
+        layout _ ?VBL..
+        layout.aW..(wigglyWidget)
+        layout.aW..(lineEdit)
+        self.sL..(layout)
 
         lineEdit.textChanged.c..(wigglyWidget.sT..)
 

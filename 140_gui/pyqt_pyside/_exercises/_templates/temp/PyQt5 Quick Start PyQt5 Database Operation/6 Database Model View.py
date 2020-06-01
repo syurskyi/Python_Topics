@@ -15,15 +15,15 @@ c_ MainWindow(QWidget):
         self.tableView _ QTableView()
         self.tableView.setModel(self.model)
 
-        self.layout _ QVBoxLayout()
+        self.layout _ ?VBL..
         addButton _ ?PB..("add")
         deleteButton _ ?PB..("delete")
         hLayout _ QHBoxLayout()
-        hLayout.addWidget(addButton)
-        hLayout.addWidget(deleteButton)
-        self.layout.addWidget(self.tableView)
+        hLayout.aW..(addButton)
+        hLayout.aW..(deleteButton)
+        self.layout.aW..(self.tableView)
         self.layout.addLayout(hLayout)
-        self.setLayout(self.layout)
+        self.sL..(self.layout)
         self.resize(600, 400)
 
         addButton.c__.c..(self.onAddRow)

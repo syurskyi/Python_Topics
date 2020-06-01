@@ -50,19 +50,19 @@ ____ demoitem ______ DemoItem
 c_ DemoTextItem(DemoItem):
     STATIC_TEXT, DYNAMIC_TEXT _ range(2)
 
-    ___ __init__  text, font, textColor, textWidth, parent_None, type_STATIC_TEXT, bgColor_QColor()):
+    ___ __init__  t__, font, textColor, textWidth, parent_None, type_STATIC_TEXT, bgColor_QColor()):
         super(DemoTextItem, self).__init__(parent)
 
         self.type _ type
-        self.text _ text
+        self.t__ _ t__
         self.font _ font
         self.textColor _ textColor
         self.bgColor _ bgColor
         self.textWidth _ textWidth
         self.noSubPixeling _ True
 
-    ___ sT..  text):
-        self.text _ text
+    ___ sT..  t__):
+        self.t__ _ t__
         self.update()
 
     ___ createImage  transform):
@@ -73,7 +73,7 @@ c_ DemoTextItem(DemoItem):
         sy _ max(transform.m22(), sx)
 
         textItem _ QGraphicsTextItem()
-        textItem.setHtml(self.text)
+        textItem.setHtml(self.t__)
         textItem.setTextWidth(self.textWidth)
         textItem.setFont(self.font)
         textItem.setDefaultTextColor(self.textColor)
@@ -110,4 +110,4 @@ c_ DemoTextItem(DemoItem):
             r_
 
         painter.setPen(self.textColor)
-        painter.drawText(0, 0, self.text)
+        painter.drawText(0, 0, self.t__)

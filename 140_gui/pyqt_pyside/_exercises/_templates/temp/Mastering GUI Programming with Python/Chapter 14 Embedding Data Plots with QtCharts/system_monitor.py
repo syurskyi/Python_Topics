@@ -106,7 +106,7 @@ c_ CPUUsageView(qtch.QChartView):
             qtc.__.Key_Greater: self.chart().zoomIn,
             qtc.__.Key_Less: self.chart().zoomOut,
         }
-        callback _ keymap.get(event.key())
+        callback _ keymap.g..(event.key())
         __ callback:
             callback()
 

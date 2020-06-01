@@ -9,10 +9,10 @@ c_ TimeForm(qtw.QWidget):
 
     ___ __init__(self):
         super().__init__()
-        self.setLayout(qtw.QHBoxLayout())
+        self.sL..(qtw.QHBoxLayout())
         self.time_inp _ qtw.QTimeEdit(self)
         #self.time_inp = qtw.QTimeEdit(self, objectName='time_inp')
-        self.layout().addWidget(self.time_inp)
+        self.layout().aW..(self.time_inp)
         #qtc.QMetaObject.connectSlotsByName(self)
 
     ___ on_time_inp_editingFinished(self):

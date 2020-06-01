@@ -24,7 +24,7 @@ c_ Ui_MainWindow(object):
         self.verticalLayout_2.setContentsMargins(11, 11, 11, 11)
         self.verticalLayout_2.setSpacing(6)
         self.verticalLayout_2.setObjectName("verticalLayout_2")
-        self.verticalLayout _ ?W...QVBoxLayout()
+        self.verticalLayout _ ?W...?VBL..
         self.verticalLayout.setObjectName("verticalLayout")
         self.horizontalLayout _ ?W...QHBoxLayout()
         self.horizontalLayout.setSpacing(6)
@@ -43,7 +43,7 @@ c_ Ui_MainWindow(object):
 "    border: 0px;\n"
 "}")
         self.closeButton.setObjectName("closeButton")
-        self.horizontalLayout.addWidget(self.closeButton)
+        self.horizontalLayout.aW..(self.closeButton)
         spacerItem _ ?W...QSpacerItem(40, 20, ?W...QSizePolicy.Expanding, ?W...QSizePolicy.Minimum)
         self.horizontalLayout.addItem(spacerItem)
         self.moreButton _ ?W...?PB..(self.centralWidget)
@@ -58,7 +58,7 @@ c_ Ui_MainWindow(object):
 "    border: 0px;\n"
 "}")
         self.moreButton.setObjectName("moreButton")
-        self.horizontalLayout.addWidget(self.moreButton)
+        self.horizontalLayout.aW..(self.moreButton)
         self.verticalLayout.addLayout(self.horizontalLayout)
         self.textEdit _ ?W...QTextEdit(self.centralWidget)
         font _ ?G...QFont()
@@ -68,7 +68,7 @@ c_ Ui_MainWindow(object):
         self.textEdit.setFrameShadow(?W...QFrame.Plain)
         self.textEdit.setLineWidth(0)
         self.textEdit.setObjectName("textEdit")
-        self.verticalLayout.addWidget(self.textEdit)
+        self.verticalLayout.aW..(self.textEdit)
         self.verticalLayout_2.addLayout(self.verticalLayout)
         MainWindow.sCW..(self.centralWidget)
 

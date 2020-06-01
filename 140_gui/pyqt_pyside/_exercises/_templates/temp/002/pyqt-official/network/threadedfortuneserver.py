@@ -59,7 +59,7 @@ c_ FortuneThread(QThread):
         super(FortuneThread, self).__init__(parent)
 
         self.socketDescriptor _ socketDescriptor
-        self.text _ fortune
+        self.t__ _ fortune
 
     ___ run(self):
         tcpSocket _ QTcpSocket()
@@ -71,7 +71,7 @@ c_ FortuneThread(QThread):
         outstr _ QDataStream(block, QIODevice.WriteOnly)
         outstr.setVersion(QDataStream.Qt_4_0)
         outstr.writeUInt16(0)
-        outstr.writeQString(self.text)
+        outstr.writeQString(self.t__)
         outstr.device().seek(0)
         outstr.writeUInt16(block.size() - 2)
 
@@ -130,13 +130,13 @@ c_ Dialog(QDialog):
 
         buttonLayout _ QHBoxLayout()
         buttonLayout.addStretch(1)
-        buttonLayout.addWidget(quitButton)
+        buttonLayout.aW..(quitButton)
         buttonLayout.addStretch(1)
 
-        mainLayout _ QVBoxLayout()
-        mainLayout.addWidget(statusLabel)
+        mainLayout _ ?VBL..
+        mainLayout.aW..(statusLabel)
         mainLayout.addLayout(buttonLayout)
-        self.setLayout(mainLayout)
+        self.sL..(mainLayout)
 
         self.setWindowTitle("Threaded Fortune Server")
 

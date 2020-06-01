@@ -14,7 +14,7 @@ c_ Window(?W...QMainWindow):
 
         self.sCW..(self.equalizer)
 
-        self._timer _ ?C...QTimer()
+        self._timer _ ?C...?T..
         self._timer.setInterval(100)
         self._timer.timeout.c..(self.update_values)
         self._timer.start()

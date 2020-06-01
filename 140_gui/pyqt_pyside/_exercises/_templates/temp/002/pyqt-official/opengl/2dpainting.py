@@ -147,11 +147,11 @@ c_ Window(QWidget):
         openGLLabel.setAlignment(__.AlignHCenter)
 
         layout _ QGridLayout()
-        layout.addWidget(native, 0, 0)
-        layout.addWidget(openGL, 0, 1)
-        layout.addWidget(nativeLabel, 1, 0)
-        layout.addWidget(openGLLabel, 1, 1)
-        self.setLayout(layout)
+        layout.aW..(native, 0, 0)
+        layout.aW..(openGL, 0, 1)
+        layout.aW..(nativeLabel, 1, 0)
+        layout.aW..(openGLLabel, 1, 1)
+        self.sL..(layout)
 
         timer _ QTimer(self)
         timer.timeout.c..(native.animate)

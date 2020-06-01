@@ -69,14 +69,14 @@ c_ Dialog(QDialog):
         buttonBox.accepted.c..(self.accept)
         buttonBox.rejected.c..(self.reject)
 
-        mainLayout _ QVBoxLayout()
+        mainLayout _ ?VBL..
         mainLayout.setMenuBar(self.menuBar)
-        mainLayout.addWidget(self.horizontalGroupBox)
-        mainLayout.addWidget(self.gridGroupBox)
-        mainLayout.addWidget(self.formGroupBox)
-        mainLayout.addWidget(bigEditor)
-        mainLayout.addWidget(buttonBox)
-        self.setLayout(mainLayout)
+        mainLayout.aW..(self.horizontalGroupBox)
+        mainLayout.aW..(self.gridGroupBox)
+        mainLayout.aW..(self.formGroupBox)
+        mainLayout.aW..(bigEditor)
+        mainLayout.aW..(buttonBox)
+        self.sL..(mainLayout)
 
         self.setWindowTitle("Basic Layouts")
 
@@ -95,9 +95,9 @@ c_ Dialog(QDialog):
 
         for i in range(Dialog.NumButtons):
             button _ ?PB..("Button %d" % (i + 1))
-            layout.addWidget(button)
+            layout.aW..(button)
 
-        self.horizontalGroupBox.setLayout(layout)
+        self.horizontalGroupBox.sL..(layout)
 
     ___ createGridGroupBox(self):
         self.gridGroupBox _ QGroupBox("Grid layout")
@@ -105,19 +105,19 @@ c_ Dialog(QDialog):
 
         for i in range(Dialog.NumGridRows):
             label _ QLabel("Line %d:" % (i + 1))
-            lineEdit _ QLineEdit()
-            layout.addWidget(label, i + 1, 0)
-            layout.addWidget(lineEdit, i + 1, 1)
+            lineEdit _ ?LE..
+            layout.aW..(label, i + 1, 0)
+            layout.aW..(lineEdit, i + 1, 1)
 
         self.smallEditor _ QTextEdit()
         self.smallEditor.sPT..("This widget takes up about two thirds "
                 "of the grid layout.")
 
-        layout.addWidget(self.smallEditor, 0, 2, 4, 1)
+        layout.aW..(self.smallEditor, 0, 2, 4, 1)
 
         layout.setColumnStretch(1, 10)
         layout.setColumnStretch(2, 20)
-        self.gridGroupBox.setLayout(layout)
+        self.gridGroupBox.sL..(layout)
 
     ___ createFormGroupBox(self):
         self.formGroupBox _ QGroupBox("Form layout")
@@ -125,7 +125,7 @@ c_ Dialog(QDialog):
         layout.addRow(QLabel("Line 1:"), QLineEdit())
         layout.addRow(QLabel("Line 2, long text:"), QComboBox())
         layout.addRow(QLabel("Line 3:"), QSpinBox())
-        self.formGroupBox.setLayout(layout)
+        self.formGroupBox.sL..(layout)
 
 
 __ __name__ == '__main__':

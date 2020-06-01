@@ -116,13 +116,13 @@ c_ Window(QWidget):
         self.sourceView.setAlternatingRowColors(True)
 
         sourceLayout _ QHBoxLayout()
-        sourceLayout.addWidget(self.sourceView)
+        sourceLayout.aW..(self.sourceView)
         sourceGroupBox _ QGroupBox("Original Model")
-        sourceGroupBox.setLayout(sourceLayout)
+        sourceGroupBox.sL..(sourceLayout)
 
         self.filterCaseSensitivityCheckBox _ QCheckBox("Case sensitive filter")
         self.filterCaseSensitivityCheckBox.setChecked(True)
-        self.filterPatternLineEdit _ QLineEdit()
+        self.filterPatternLineEdit _ ?LE..
         self.filterPatternLineEdit.sT..("Grace|Sports")
         filterPatternLabel _ QLabel("&Filter pattern:")
         filterPatternLabel.setBuddy(self.filterPatternLineEdit)
@@ -158,22 +158,22 @@ c_ Window(QWidget):
         self.dateFilterChanged()
 
         proxyLayout _ QGridLayout()
-        proxyLayout.addWidget(self.proxyView, 0, 0, 1, 3)
-        proxyLayout.addWidget(filterPatternLabel, 1, 0)
-        proxyLayout.addWidget(self.filterPatternLineEdit, 1, 1)
-        proxyLayout.addWidget(self.filterSyntaxComboBox, 1, 2)
-        proxyLayout.addWidget(self.filterCaseSensitivityCheckBox, 2, 0, 1, 3)
-        proxyLayout.addWidget(fromLabel, 3, 0)
-        proxyLayout.addWidget(self.fromDateEdit, 3, 1, 1, 2)
-        proxyLayout.addWidget(toLabel, 4, 0)
-        proxyLayout.addWidget(self.toDateEdit, 4, 1, 1, 2)
+        proxyLayout.aW..(self.proxyView, 0, 0, 1, 3)
+        proxyLayout.aW..(filterPatternLabel, 1, 0)
+        proxyLayout.aW..(self.filterPatternLineEdit, 1, 1)
+        proxyLayout.aW..(self.filterSyntaxComboBox, 1, 2)
+        proxyLayout.aW..(self.filterCaseSensitivityCheckBox, 2, 0, 1, 3)
+        proxyLayout.aW..(fromLabel, 3, 0)
+        proxyLayout.aW..(self.fromDateEdit, 3, 1, 1, 2)
+        proxyLayout.aW..(toLabel, 4, 0)
+        proxyLayout.aW..(self.toDateEdit, 4, 1, 1, 2)
         proxyGroupBox _ QGroupBox("Sorted/Filtered Model")
-        proxyGroupBox.setLayout(proxyLayout)
+        proxyGroupBox.sL..(proxyLayout)
 
-        mainLayout _ QVBoxLayout()
-        mainLayout.addWidget(sourceGroupBox)
-        mainLayout.addWidget(proxyGroupBox)
-        self.setLayout(mainLayout)
+        mainLayout _ ?VBL..
+        mainLayout.aW..(sourceGroupBox)
+        mainLayout.aW..(proxyGroupBox)
+        self.sL..(mainLayout)
 
         self.setWindowTitle("Custom Sort/Filter Model")
         self.resize(500, 450)
@@ -189,7 +189,7 @@ c_ Window(QWidget):
         caseSensitivity _ (
             self.filterCaseSensitivityCheckBox.isChecked()
             and __.CaseSensitive or __.CaseInsensitive)
-        regExp _ QRegExp(self.filterPatternLineEdit.text(), caseSensitivity, syntax)
+        regExp _ QRegExp(self.filterPatternLineEdit.t__(), caseSensitivity, syntax)
         self.proxyModel.setFilterRegExp(regExp)
 
     ___ dateFilterChanged(self):

@@ -151,38 +151,38 @@ c_ Dialog(QDialog):
         layout _ QGridLayout()
         layout.setColumnStretch(1, 1)
         layout.setColumnMinimumWidth(1, 250)
-        layout.addWidget(self.integerButton, 0, 0)
-        layout.addWidget(self.integerLabel, 0, 1)
-        layout.addWidget(self.doubleButton, 1, 0)
-        layout.addWidget(self.doubleLabel, 1, 1)
-        layout.addWidget(self.itemButton, 2, 0)
-        layout.addWidget(self.itemLabel, 2, 1)
-        layout.addWidget(self.textButton, 3, 0)
-        layout.addWidget(self.textLabel, 3, 1)
-        layout.addWidget(self.colorButton, 4, 0)
-        layout.addWidget(self.colorLabel, 4, 1)
-        layout.addWidget(self.fontButton, 5, 0)
-        layout.addWidget(self.fontLabel, 5, 1)
-        layout.addWidget(self.directoryButton, 6, 0)
-        layout.addWidget(self.directoryLabel, 6, 1)
-        layout.addWidget(self.openFileNameButton, 7, 0)
-        layout.addWidget(self.openFileNameLabel, 7, 1)
-        layout.addWidget(self.openFileNamesButton, 8, 0)
-        layout.addWidget(self.openFileNamesLabel, 8, 1)
-        layout.addWidget(self.saveFileNameButton, 9, 0)
-        layout.addWidget(self.saveFileNameLabel, 9, 1)
-        layout.addWidget(self.criticalButton, 10, 0)
-        layout.addWidget(self.criticalLabel, 10, 1)
-        layout.addWidget(self.informationButton, 11, 0)
-        layout.addWidget(self.informationLabel, 11, 1)
-        layout.addWidget(self.questionButton, 12, 0)
-        layout.addWidget(self.questionLabel, 12, 1)
-        layout.addWidget(self.warningButton, 13, 0)
-        layout.addWidget(self.warningLabel, 13, 1)
-        layout.addWidget(self.errorButton, 14, 0)
-        layout.addWidget(self.errorLabel, 14, 1)
-        layout.addWidget(self.native, 15, 0)
-        self.setLayout(layout)
+        layout.aW..(self.integerButton, 0, 0)
+        layout.aW..(self.integerLabel, 0, 1)
+        layout.aW..(self.doubleButton, 1, 0)
+        layout.aW..(self.doubleLabel, 1, 1)
+        layout.aW..(self.itemButton, 2, 0)
+        layout.aW..(self.itemLabel, 2, 1)
+        layout.aW..(self.textButton, 3, 0)
+        layout.aW..(self.textLabel, 3, 1)
+        layout.aW..(self.colorButton, 4, 0)
+        layout.aW..(self.colorLabel, 4, 1)
+        layout.aW..(self.fontButton, 5, 0)
+        layout.aW..(self.fontLabel, 5, 1)
+        layout.aW..(self.directoryButton, 6, 0)
+        layout.aW..(self.directoryLabel, 6, 1)
+        layout.aW..(self.openFileNameButton, 7, 0)
+        layout.aW..(self.openFileNameLabel, 7, 1)
+        layout.aW..(self.openFileNamesButton, 8, 0)
+        layout.aW..(self.openFileNamesLabel, 8, 1)
+        layout.aW..(self.saveFileNameButton, 9, 0)
+        layout.aW..(self.saveFileNameLabel, 9, 1)
+        layout.aW..(self.criticalButton, 10, 0)
+        layout.aW..(self.criticalLabel, 10, 1)
+        layout.aW..(self.informationButton, 11, 0)
+        layout.aW..(self.informationLabel, 11, 1)
+        layout.aW..(self.questionButton, 12, 0)
+        layout.aW..(self.questionLabel, 12, 1)
+        layout.aW..(self.warningButton, 13, 0)
+        layout.aW..(self.warningLabel, 13, 1)
+        layout.aW..(self.errorButton, 14, 0)
+        layout.aW..(self.errorLabel, 14, 1)
+        layout.aW..(self.native, 15, 0)
+        self.sL..(layout)
 
         self.setWindowTitle("Standard Dialogs")
 
@@ -207,10 +207,10 @@ c_ Dialog(QDialog):
             self.itemLabel.sT..(item)
 
     ___ sT..(self):
-        text, ok _ QInputDialog.getText  "QInputDialog.getText()",
+        t__, ok _ QInputDialog.getText  "QInputDialog.getText()",
                 "User name:", QLineEdit.Normal, QDir.home().dirName())
-        __ ok and text !_ '':
-            self.textLabel.sT..(text)
+        __ ok and t__ !_ '':
+            self.textLabel.sT..(t__)
 
     ___ sC..(self):
         color _ QColorDialog.getColor(__.green, self)
@@ -220,7 +220,7 @@ c_ Dialog(QDialog):
             self.colorLabel.setAutoFillBackground(True)
 
     ___ setFont(self):
-        font, ok _ QFontDialog.getFont(QFont(self.fontLabel.text()), self)
+        font, ok _ QFontDialog.getFont(QFont(self.fontLabel.t__()), self)
         __ ok:
             self.fontLabel.sT..(font.key())
             self.fontLabel.setFont(font)
@@ -229,7 +229,7 @@ c_ Dialog(QDialog):
         options _ ?FD...DontResolveSymlinks | ?FD...ShowDirsOnly
         directory _ ?FD...getExistingDirectory
                 "QFileDialog.getExistingDirectory()",
-                self.directoryLabel.text(), options_options)
+                self.directoryLabel.t__(), options_options)
         __ directory:
             self.directoryLabel.sT..(directory)
 
@@ -238,7 +238,7 @@ c_ Dialog(QDialog):
         __ no. self.native.isChecked
             options |_ ?FD...DontUseNativeDialog
         fileName, _ _ ?FD...gOFN..
-                "QFileDialog.getOpenFileName()", self.openFileNameLabel.text(),
+                "QFileDialog.getOpenFileName()", self.openFileNameLabel.t__(),
                 "All Files (*);;Text Files (*.txt)", options_options)
         __ fileName:
             self.openFileNameLabel.sT..(fileName)
@@ -260,7 +260,7 @@ c_ Dialog(QDialog):
             options |_ ?FD...DontUseNativeDialog
         fileName, _ _ ?FD...getSaveFileName
                 "QFileDialog.getSaveFileName()",
-                self.saveFileNameLabel.text(),
+                self.saveFileNameLabel.t__(),
                 "All Files (*);;Text Files (*.txt)", options_options)
         __ fileName:
             self.saveFileNameLabel.sT..(fileName)

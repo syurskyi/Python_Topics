@@ -43,18 +43,18 @@ __ __name__ == '__main__':
     view1.c__.c..(findrow)
 
     dlg _ ?W...QDialog()
-    layout _ ?W...QVBoxLayout()
-    layout.addWidget(view1)
+    layout _ ?W...?VBL..
+    layout.aW..(view1)
 
     button _ ?W...?PB..("Add a row")
     button.c__.c..(addrow)
-    layout.addWidget(button)
+    layout.aW..(button)
 
     btn1 _ ?W...?PB..("del a row")
     btn1.c__.c..(lambda: model.removeRow(view1.currentIndex().row()))
-    layout.addWidget(btn1)
+    layout.aW..(btn1)
 
-    dlg.setLayout(layout)
+    dlg.sL..(layout)
     dlg.setWindowTitle("Database Demo")
     dlg.s..
     sys.exit(app.exec_())

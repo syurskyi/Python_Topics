@@ -63,8 +63,8 @@ c_ Previewer(QWidget, Ui_Form):
 
     ___ on_previewButton_clicked(self):
         # Update the contents in the web viewer.
-        text _ self.plainTextEdit.toPlainText()
-        self.webView.setHtml(text, self.baseUrl)
+        t__ _ self.plainTextEdit.toPlainText()
+        self.webView.setHtml(t__, self.baseUrl)
 
 
 c_ MainWindow ?MW..

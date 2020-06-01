@@ -76,16 +76,16 @@ c_ VideoPlayer(QWidget):
 
         controlLayout _ QHBoxLayout()
         controlLayout.setContentsMargins(0, 0, 0, 0)
-        controlLayout.addWidget(openButton)
-        controlLayout.addWidget(self.playButton)
-        controlLayout.addWidget(self.positionSlider)
+        controlLayout.aW..(openButton)
+        controlLayout.aW..(self.playButton)
+        controlLayout.aW..(self.positionSlider)
 
-        layout _ QVBoxLayout()
-        layout.addWidget(videoWidget)
+        layout _ ?VBL..
+        layout.aW..(videoWidget)
         layout.addLayout(controlLayout)
-        layout.addWidget(self.errorLabel)
+        layout.aW..(self.errorLabel)
 
-        self.setLayout(layout)
+        self.sL..(layout)
 
         self.mediaPlayer.setVideoOutput(videoWidget)
         self.mediaPlayer.stateChanged.c..(self.mediaStateChanged)

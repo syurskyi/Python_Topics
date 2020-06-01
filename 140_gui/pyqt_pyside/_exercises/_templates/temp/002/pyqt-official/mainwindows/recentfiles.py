@@ -212,8 +212,8 @@ c_ MainWindow ?MW..
         numRecentFiles _ min(len(files), MainWindow.MaxRecentFiles)
 
         for i in range(numRecentFiles):
-            text _ "&%d %s" % (i + 1, self.strippedName(files[i]))
-            self.recentFileActs[i].sT..(text)
+            t__ _ "&%d %s" % (i + 1, self.strippedName(files[i]))
+            self.recentFileActs[i].sT..(t__)
             self.recentFileActs[i].setData(files[i])
             self.recentFileActs[i].setVisible(True)
 

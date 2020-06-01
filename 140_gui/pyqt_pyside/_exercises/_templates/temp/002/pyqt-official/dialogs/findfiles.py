@@ -71,20 +71,20 @@ c_ Window(QDialog):
 
         buttonsLayout _ QHBoxLayout()
         buttonsLayout.addStretch()
-        buttonsLayout.addWidget(findButton)
+        buttonsLayout.aW..(findButton)
 
         mainLayout _ QGridLayout()
-        mainLayout.addWidget(fileLabel, 0, 0)
-        mainLayout.addWidget(self.fileComboBox, 0, 1, 1, 2)
-        mainLayout.addWidget(textLabel, 1, 0)
-        mainLayout.addWidget(self.textComboBox, 1, 1, 1, 2)
-        mainLayout.addWidget(directoryLabel, 2, 0)
-        mainLayout.addWidget(self.directoryComboBox, 2, 1)
-        mainLayout.addWidget(browseButton, 2, 2)
-        mainLayout.addWidget(self.filesTable, 3, 0, 1, 3)
-        mainLayout.addWidget(self.filesFoundLabel, 4, 0)
+        mainLayout.aW..(fileLabel, 0, 0)
+        mainLayout.aW..(self.fileComboBox, 0, 1, 1, 2)
+        mainLayout.aW..(textLabel, 1, 0)
+        mainLayout.aW..(self.textComboBox, 1, 1, 1, 2)
+        mainLayout.aW..(directoryLabel, 2, 0)
+        mainLayout.aW..(self.directoryComboBox, 2, 1)
+        mainLayout.aW..(browseButton, 2, 2)
+        mainLayout.aW..(self.filesTable, 3, 0, 1, 3)
+        mainLayout.aW..(self.filesFoundLabel, 4, 0)
         mainLayout.addLayout(buttonsLayout, 5, 0, 1, 3)
-        self.setLayout(mainLayout)
+        self.sL..(mainLayout)
 
         self.setWindowTitle("Find Files")
         self.resize(700, 300)
@@ -108,7 +108,7 @@ c_ Window(QDialog):
         self.filesTable.setRowCount(0)
 
         fileName _ self.fileComboBox.currentText()
-        text _ self.textComboBox.currentText()
+        t__ _ self.textComboBox.currentText()
         path _ self.directoryComboBox.currentText()
 
         self.updateComboBox(self.fileComboBox)
@@ -121,11 +121,11 @@ c_ Window(QDialog):
         files _ self.currentDir.entryList([fileName],
                 QDir.Files | QDir.NoSymLinks)
 
-        __ text:
-            files _ self.findFiles(files, text)
+        __ t__:
+            files _ self.findFiles(files, t__)
         self.showFiles(files)
 
-    ___ findFiles  files, text):
+    ___ findFiles  files, t__):
         progressDialog _ QProgressDialog(self)
 
         progressDialog.setCancelButtonText("&Cancel")
@@ -150,7 +150,7 @@ c_ Window(QDialog):
                     __ progressDialog.wasCanceled
                         break
                     line _ stream.readLine()
-                    __ text in line:
+                    __ t__ in line:
                         foundFiles.append(files[i])
                         break
 
@@ -176,15 +176,15 @@ c_ Window(QDialog):
 
         self.filesFoundLabel.sT..("%d file(s) found (Double click on a file to open it)" % len(files))
 
-    ___ createButton  text, member):
-        button _ ?PB..(text)
+    ___ createButton  t__, member):
+        button _ ?PB..(t__)
         button.c__.c..(member)
         r_ button
 
     ___ createComboBox  text_""):
         comboBox _ QComboBox()
         comboBox.setEditable(True)
-        comboBox.addItem(text)
+        comboBox.addItem(t__)
         comboBox.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Preferred)
         r_ comboBox
 
@@ -202,7 +202,7 @@ c_ Window(QDialog):
     ___ openFileOfItem  row, column):
         item _ self.filesTable.item(row, 0)
 
-        QDesktopServices.openUrl(QUrl(self.currentDir.absoluteFilePath(item.text())))
+        QDesktopServices.openUrl(QUrl(self.currentDir.absoluteFilePath(item.t__())))
 
 
 __ __name__ == '__main__':

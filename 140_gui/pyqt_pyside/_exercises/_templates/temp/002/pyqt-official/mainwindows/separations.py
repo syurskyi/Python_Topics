@@ -66,10 +66,10 @@ c_ FinalWidget(QFrame):
         self.imageLabel.setMinimumSize(labelSize)
         self.nameLabel _ QLabel(name)
 
-        layout _ QVBoxLayout()
-        layout.addWidget(self.imageLabel, 1)
-        layout.addWidget(self.nameLabel, 0)
-        self.setLayout(layout)
+        layout _ ?VBL..
+        layout.aW..(self.imageLabel, 1)
+        layout.aW..(self.nameLabel, 0)
+        self.sL..(layout)
 
     ___ mouseMoveEvent  event):
         """ If the mouse moves far enough when the left mouse button is held
@@ -163,11 +163,11 @@ c_ ScreenWidget(QFrame):
         self.invertButton.c__.c..(self.invertImage)
 
         gridLayout _ QGridLayout()
-        gridLayout.addWidget(self.imageLabel, 0, 0, 1, 2)
-        gridLayout.addWidget(self.nameLabel, 1, 0)
-        gridLayout.addWidget(self.colorButton, 1, 1)
-        gridLayout.addWidget(self.invertButton, 2, 1, 1, 1)
-        self.setLayout(gridLayout)
+        gridLayout.aW..(self.imageLabel, 0, 0, 1, 2)
+        gridLayout.aW..(self.nameLabel, 1, 0)
+        gridLayout.aW..(self.colorButton, 1, 1)
+        gridLayout.aW..(self.invertButton, 2, 1, 1, 1)
+        self.sL..(gridLayout)
 
     ___ createImage(self):
         """ Creates a new image by separating out the cyan, magenta, or yellow
@@ -346,10 +346,10 @@ c_ Viewer ?MW..
         self.magentaWidget.imageChanged.c..(self.createImage)
         self.yellowWidget.imageChanged.c..(self.createImage)
 
-        grid.addWidget(self.finalWidget, 0, 0, __.AlignTop | __.AlignHCenter)
-        grid.addWidget(self.cyanWidget, 0, 1, __.AlignTop | __.AlignHCenter)
-        grid.addWidget(self.magentaWidget, 1, 0, __.AlignTop | __.AlignHCenter)
-        grid.addWidget(self.yellowWidget, 1, 1, __.AlignTop | __.AlignHCenter)
+        grid.aW..(self.finalWidget, 0, 0, __.AlignTop | __.AlignHCenter)
+        grid.aW..(self.cyanWidget, 0, 1, __.AlignTop | __.AlignHCenter)
+        grid.aW..(self.magentaWidget, 1, 0, __.AlignTop | __.AlignHCenter)
+        grid.aW..(self.yellowWidget, 1, 1, __.AlignTop | __.AlignHCenter)
 
         r_ frame
 
@@ -374,7 +374,7 @@ c_ Viewer ?MW..
         __ action no. in self.menuMap or self.scaledImage.isNull
             r_
 
-        self.brightness _ self.brightnessValueMap.get(self.menuMap[action])
+        self.brightness _ self.brightnessValueMap.g..(self.menuMap[action])
         __ self.brightness __ N..:
             r_
 

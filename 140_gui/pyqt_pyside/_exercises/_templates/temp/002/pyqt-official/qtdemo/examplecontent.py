@@ -90,7 +90,7 @@ c_ ExampleContent(DemoItem):
             paragraphs _ exampleDoc.getElementsByTagName('p')
 
         __ len(paragraphs) < 1:
-            Colors.debug("- ExampleContent.loadDescription(): Could not load description:", self._menu_manager.info[self.name].get('docfile'))
+            Colors.debug("- ExampleContent.loadDescription(): Could not load description:", self._menu_manager.info[self.name].g..('docfile'))
 
         description _ Colors.contentColor + "Could not load description. Ensure that the documentation for Qt is built."
         for p in paragraphs:
@@ -100,10 +100,10 @@ c_ ExampleContent(DemoItem):
 
         r_ Colors.contentColor + description
 
-    ___ isSummary  text):
+    ___ isSummary  t__):
         re _ QRegExp("(In )?((The|This) )?(%s )?.*(tutorial|example|demo|application)" % self.name, __.CaseInsensitive)
 
-        r_ ('[' no. in text) and (re.indexIn(text) >_ 0)
+        r_ ('[' no. in t__) and (re.indexIn(t__) >_ 0)
 
     ___ extractTextFromParagraph  parentNode):
         description _ ''

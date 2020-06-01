@@ -53,10 +53,10 @@ ____ ?.?W.. ______ (QAbstractItemView, ?A.., QActionGroup,
 
 c_ IconSizeSpinBox(QSpinBox):
     @staticmethod
-    ___ valueFromText(text):
+    ___ valueFromText(t__):
         regExp _ QRegExp("(\\d+)(\\s*[xx]\\s*\\d+)?")
 
-        __ regExp.exactMatch(text):
+        __ regExp.exactMatch(t__):
             r_ int(regExp.cap(1))
         ____
             r_ 0
@@ -106,7 +106,7 @@ c_ IconPreviewArea(QWidget):
         super(IconPreviewArea, self).__init__(parent)
 
         mainLayout _ QGridLayout()
-        self.setLayout(mainLayout)
+        self.sL..(mainLayout)
 
         self.icon _ QIcon()
         self.size _ QSize()
@@ -123,15 +123,15 @@ c_ IconPreviewArea(QWidget):
         self.modeLabels.append(self.createHeaderLabel("Selected"))
 
         for j, label in enumerate(self.stateLabels):
-            mainLayout.addWidget(label, j + 1, 0)
+            mainLayout.aW..(label, j + 1, 0)
 
         for i, label in enumerate(self.modeLabels):
-            mainLayout.addWidget(label, 0, i + 1)
+            mainLayout.aW..(label, 0, i + 1)
 
             self.pixmapLabels.append([])
             for j in range(len(self.stateLabels)):
                 self.pixmapLabels[i].append(self.createPixmapLabel())
-                mainLayout.addWidget(self.pixmapLabels[i][j], j + 1, i + 1)
+                mainLayout.aW..(self.pixmapLabels[i][j], j + 1, i + 1)
 
     ___ setIcon  icon):
         self.icon _ icon
@@ -142,8 +142,8 @@ c_ IconPreviewArea(QWidget):
             self.size _ size
             self.updatePixmapLabels()
 
-    ___ createHeaderLabel  text):
-        label _ QLabel("<b>%s</b>" % text)
+    ___ createHeaderLabel  t__):
+        label _ QLabel("<b>%s</b>" % t__)
         label.setAlignment(__.AlignCenter)
         r_ label
 
@@ -180,7 +180,7 @@ c_ MainWindow ?MW..
     ___ __init__  parent_None):
         super(MainWindow, self).__init__(parent)
 
-        self.centralWidget _ QWidget()
+        self.centralWidget _ ?W..
         self.sCW..(self.centralWidget)
 
         self.createPreviewGroupBox()
@@ -192,10 +192,10 @@ c_ MainWindow ?MW..
         self.createContextMenu()
 
         mainLayout _ QGridLayout()
-        mainLayout.addWidget(self.previewGroupBox, 0, 0, 1, 2)
-        mainLayout.addWidget(self.imagesGroupBox, 1, 0)
-        mainLayout.addWidget(self.iconSizeGroupBox, 1, 1)
-        self.centralWidget.setLayout(mainLayout)
+        mainLayout.aW..(self.previewGroupBox, 0, 0, 1, 2)
+        mainLayout.aW..(self.imagesGroupBox, 1, 0)
+        mainLayout.aW..(self.iconSizeGroupBox, 1, 1)
+        self.centralWidget.sL..(mainLayout)
 
         self.setWindowTitle("Icons")
         self.checkCurrentStyle()
@@ -274,16 +274,16 @@ c_ MainWindow ?MW..
             item2 _ self.imagesTable.item(row, 2)
 
             __ item0.checkState() == __.Checked:
-                __ item1.text() == "Normal":
+                __ item1.t__() == "Normal":
                     mode _ QIcon.Normal
-                ____ item1.text() == "Active":
+                ____ item1.t__() == "Active":
                     mode _ QIcon.Active
-                ____ item1.text() == "Disabled":
+                ____ item1.t__() == "Disabled":
                     mode _ QIcon.Disabled
                 ____
                     mode _ QIcon.Selected
 
-                __ item2.text() == "On":
+                __ item2.t__() == "On":
                     state _ QIcon.On
                 ____
                     state _ QIcon.Off
@@ -339,9 +339,9 @@ c_ MainWindow ?MW..
 
         self.previewArea _ IconPreviewArea()
 
-        layout _ QVBoxLayout()
-        layout.addWidget(self.previewArea)
-        self.previewGroupBox.setLayout(layout)
+        layout _ ?VBL..
+        layout.aW..(self.previewArea)
+        self.previewGroupBox.sL..(layout)
 
     ___ createImagesGroupBox(self):
         self.imagesGroupBox _ QGroupBox("Images")
@@ -360,9 +360,9 @@ c_ MainWindow ?MW..
 
         self.imagesTable.itemChanged.c..(self.changeIcon)
 
-        layout _ QVBoxLayout()
-        layout.addWidget(self.imagesTable)
-        self.imagesGroupBox.setLayout(layout)
+        layout _ ?VBL..
+        layout.aW..(self.imagesTable)
+        self.imagesGroupBox.sL..(layout)
 
     ___ createIconSizeGroupBox(self):
         self.iconSizeGroupBox _ QGroupBox("Icon Size")
@@ -389,20 +389,20 @@ c_ MainWindow ?MW..
         self.otherSpinBox.valueChanged.c..(self.changeSize)
 
         otherSizeLayout _ QHBoxLayout()
-        otherSizeLayout.addWidget(self.otherRadioButton)
-        otherSizeLayout.addWidget(self.otherSpinBox)
+        otherSizeLayout.aW..(self.otherRadioButton)
+        otherSizeLayout.aW..(self.otherSpinBox)
         otherSizeLayout.addStretch()
 
         layout _ QGridLayout()
-        layout.addWidget(self.smallRadioButton, 0, 0)
-        layout.addWidget(self.largeRadioButton, 1, 0)
-        layout.addWidget(self.toolBarRadioButton, 2, 0)
-        layout.addWidget(self.listViewRadioButton, 0, 1)
-        layout.addWidget(self.iconViewRadioButton, 1, 1)
-        layout.addWidget(self.tabBarRadioButton, 2, 1)
+        layout.aW..(self.smallRadioButton, 0, 0)
+        layout.aW..(self.largeRadioButton, 1, 0)
+        layout.aW..(self.toolBarRadioButton, 2, 0)
+        layout.aW..(self.listViewRadioButton, 0, 1)
+        layout.aW..(self.iconViewRadioButton, 1, 1)
+        layout.aW..(self.tabBarRadioButton, 2, 1)
         layout.addLayout(otherSizeLayout, 3, 0, 1, 2)
         layout.setRowStretch(4, 1)
-        self.iconSizeGroupBox.setLayout(layout)
+        self.iconSizeGroupBox.sL..(layout)
 
     ___ createActions(self):
         self.addImagesAct _ ?A..("&Add Images...", self, shortcut_"Ctrl+A",

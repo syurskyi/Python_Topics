@@ -17,25 +17,25 @@ c_ MainWindow(qtw.QMainWindow):
         super().__init__()
         # Main UI code goes here
 
-        form _ qtw.QWidget()
+        form _ qtw.?W..
         self.sCW..(form)
-        form.setLayout(qtw.QVBoxLayout())
-        self.filename _ qtw.QLineEdit()
+        form.sL..(qtw.QVBoxLayout())
+        self.filename _ qtw.?LE..
         self.filecontent _ qtw.QTextEdit()
         self.savebutton _ qtw.?PB..(
             'Save',
             c___self.save
         )
 
-        form.layout().addWidget(self.filename)
-        form.layout().addWidget(self.filecontent)
-        form.layout().addWidget(self.savebutton)
+        form.layout().aW..(self.filename)
+        form.layout().aW..(self.filecontent)
+        form.layout().aW..(self.savebutton)
 
         # End main UI code
         self.s..
 
     ___ save(self):
-        filename _ self.filename.text()
+        filename _ self.filename.t__()
         error _ ''
         __ no. filename:
             error _ 'Filename empty'

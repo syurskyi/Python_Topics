@@ -53,7 +53,7 @@ c_ FindDialog(QDialog):
         super(FindDialog, self).__init__(parent)
 
         label _ QLabel("Find &what:")
-        lineEdit _ QLineEdit()
+        lineEdit _ ?LE..
         label.setBuddy(lineEdit)
 
         caseCheckBox _ QCheckBox("Match &case")
@@ -67,7 +67,7 @@ c_ FindDialog(QDialog):
         moreButton.setCheckable(True)
         moreButton.setAutoDefault F..
 
-        extension _ QWidget()
+        extension _ ?W..
 
         wholeWordsCheckBox _ QCheckBox("&Whole words")
         backwardCheckBox _ QCheckBox("Search &backward")
@@ -79,29 +79,29 @@ c_ FindDialog(QDialog):
 
         moreButton.toggled.c..(extension.setVisible)
 
-        extensionLayout _ QVBoxLayout()
+        extensionLayout _ ?VBL..
         extensionLayout.setContentsMargins(0, 0, 0, 0)
-        extensionLayout.addWidget(wholeWordsCheckBox)
-        extensionLayout.addWidget(backwardCheckBox)
-        extensionLayout.addWidget(searchSelectionCheckBox)
-        extension.setLayout(extensionLayout)
+        extensionLayout.aW..(wholeWordsCheckBox)
+        extensionLayout.aW..(backwardCheckBox)
+        extensionLayout.aW..(searchSelectionCheckBox)
+        extension.sL..(extensionLayout)
 
         topLeftLayout _ QHBoxLayout()
-        topLeftLayout.addWidget(label)
-        topLeftLayout.addWidget(lineEdit)
+        topLeftLayout.aW..(label)
+        topLeftLayout.aW..(lineEdit)
 
-        leftLayout _ QVBoxLayout()
+        leftLayout _ ?VBL..
         leftLayout.addLayout(topLeftLayout)
-        leftLayout.addWidget(caseCheckBox)
-        leftLayout.addWidget(fromStartCheckBox)
+        leftLayout.aW..(caseCheckBox)
+        leftLayout.aW..(fromStartCheckBox)
 
         mainLayout _ QGridLayout()
         mainLayout.setSizeConstraint(QLayout.SetFixedSize)
         mainLayout.addLayout(leftLayout, 0, 0)
-        mainLayout.addWidget(buttonBox, 0, 1)
-        mainLayout.addWidget(extension, 1, 0, 1, 2)
+        mainLayout.aW..(buttonBox, 0, 1)
+        mainLayout.aW..(extension, 1, 0, 1, 2)
         mainLayout.setRowStretch(2, 1)
-        self.setLayout(mainLayout)
+        self.sL..(mainLayout)
 
         self.setWindowTitle("Extension")
         extension.hide()

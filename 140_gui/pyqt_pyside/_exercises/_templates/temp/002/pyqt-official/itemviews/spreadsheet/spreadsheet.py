@@ -67,11 +67,11 @@ c_ SpreadSheet ?MW..
 
         self.toolBar _ QToolBar()
         self.addToolBar(self.toolBar)
-        self.formulaInput _ QLineEdit()
+        self.formulaInput _ ?LE..
         self.cellLabel _ QLabel(self.toolBar)
         self.cellLabel.setMinimumSize(80, 0)
-        self.toolBar.addWidget(self.cellLabel)
-        self.toolBar.addWidget(self.formulaInput)
+        self.toolBar.aW..(self.cellLabel)
+        self.toolBar.aW..(self.formulaInput)
         self.table _ QTableWidget(rows, cols, self)
         for c in range(cols):
             character _ chr(ord('A') + c)
@@ -90,7 +90,7 @@ c_ SpreadSheet ?MW..
         self.table.currentItemChanged.c..(self.updateColor)
         self.table.currentItemChanged.c..(self.updateLineEdit)
         self.table.itemChanged.c..(self.updateStatus)
-        self.formulaInput.returnPressed.c..(self.returnPressed)
+        self.formulaInput.rP__.c..(self.rP__)
         self.table.itemChanged.c..(self.updateLineEdit)
         self.setWindowTitle("Spreadsheet")
 
@@ -172,10 +172,10 @@ c_ SpreadSheet ?MW..
     ___ changeDateFormat(self):
         action _ self.sender()
         oldFormat _ self.currentDateFormat
-        newFormat _ self.currentDateFormat _ action.text()
+        newFormat _ self.currentDateFormat _ action.t__()
         for row in range(self.table.rowCount()):
             item _ self.table.item(row, 1)
-            date _ QDate.fromString(item.text(), oldFormat)
+            date _ QDate.fromString(item.t__(), oldFormat)
             item.sT..(date.toString(newFormat))
 
     ___ updateStatus  item):
@@ -211,15 +211,15 @@ c_ SpreadSheet ?MW..
         ____
             self.formulaInput.clear()
 
-    ___ returnPressed(self):
-        text _ self.formulaInput.text()
+    ___ rP__(self):
+        t__ _ self.formulaInput.t__()
         row _ self.table.currentRow()
         col _ self.table.currentColumn()
         item _ self.table.item(row, col)
         __ no. item:
-            self.table.setItem(row, col, SpreadSheetItem(text))
+            self.table.setItem(row, col, SpreadSheetItem(t__))
         ____
-            item.setData(__.EditRole, text)
+            item.setData(__.EditRole, t__)
         self.table.viewport().update()
 
     ___ selectColor(self):
@@ -293,39 +293,39 @@ c_ SpreadSheet ?MW..
         okButton.c__.c..(addDialog.accept)
         buttonsLayout _ QHBoxLayout()
         buttonsLayout.addStretch(1)
-        buttonsLayout.addWidget(okButton)
+        buttonsLayout.aW..(okButton)
         buttonsLayout.addSpacing(10)
-        buttonsLayout.addWidget(cancelButton)
+        buttonsLayout.aW..(cancelButton)
 
         dialogLayout _ QVBoxLayout(addDialog)
-        dialogLayout.addWidget(group)
+        dialogLayout.aW..(group)
         dialogLayout.addStretch(1)
         dialogLayout.addItem(buttonsLayout)
 
         cell1Layout _ QHBoxLayout()
-        cell1Layout.addWidget(cell1Label)
+        cell1Layout.aW..(cell1Label)
         cell1Layout.addSpacing(10)
-        cell1Layout.addWidget(cell1ColInput)
+        cell1Layout.aW..(cell1ColInput)
         cell1Layout.addSpacing(10)
-        cell1Layout.addWidget(cell1RowInput)
+        cell1Layout.aW..(cell1RowInput)
 
         cell2Layout _ QHBoxLayout()
-        cell2Layout.addWidget(cell2Label)
+        cell2Layout.aW..(cell2Label)
         cell2Layout.addSpacing(10)
-        cell2Layout.addWidget(cell2ColInput)
+        cell2Layout.aW..(cell2ColInput)
         cell2Layout.addSpacing(10)
-        cell2Layout.addWidget(cell2RowInput)
+        cell2Layout.aW..(cell2RowInput)
         outLayout _ QHBoxLayout()
-        outLayout.addWidget(outLabel)
+        outLayout.aW..(outLabel)
         outLayout.addSpacing(10)
-        outLayout.addWidget(outColInput)
+        outLayout.aW..(outColInput)
         outLayout.addSpacing(10)
-        outLayout.addWidget(outRowInput)
+        outLayout.aW..(outRowInput)
         vLayout _ QVBoxLayout(group)
         vLayout.addItem(cell1Layout)
-        vLayout.addWidget(operatorLabel)
+        vLayout.aW..(operatorLabel)
         vLayout.addItem(cell2Layout)
-        vLayout.addWidget(equalsLabel)
+        vLayout.aW..(equalsLabel)
         vLayout.addStretch(1)
         vLayout.addItem(outLayout)
         __ addDialog.exec_

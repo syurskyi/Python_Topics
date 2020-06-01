@@ -71,7 +71,7 @@ c_ FreezeTableWidget(QTableView):
 
     ___ init(self):
         self.frozenTableView.setModel(self.model())
-        self.frozenTableView.setFocusPolicy(__.NoFocus)
+        self.frozenTableView.sFP..(__.NF..)
         self.frozenTableView.verticalHeader().hide()
         self.frozenTableView.horizontalHeader().setSectionResizeMode(
                 QHeaderView.Fixed)

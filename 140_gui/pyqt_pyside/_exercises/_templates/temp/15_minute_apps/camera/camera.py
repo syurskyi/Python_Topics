@@ -52,7 +52,7 @@ c_ MainWindow ?MW..
         camera_selector.addItems([c.description() for c in self.available_cameras])
         camera_selector.currentIndexChanged.c..( self.select_camera )
 
-        camera_toolbar.addWidget(camera_selector)
+        camera_toolbar.aW..(camera_selector)
 
 
         self.setWindowTitle("NSAViewer")

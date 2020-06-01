@@ -236,12 +236,12 @@ c_ MenuManager(QObject):
                 self.itemSelected(MenuManager.ROOT, Colors.rootMenuName)
 
         # Update back and more buttons.
-        __ self.info.setdefault(self.currentMenu, {}).get('back'):
+        __ self.info.setdefault(self.currentMenu, {}).g..('back'):
             back_state _ TextButton.OFF
         ____
             back_state _ TextButton.DISABLED
 
-        __ self.info[self.currentMenu].get('more'):
+        __ self.info[self.currentMenu].g..('more'):
             more_state _ TextButton.OFF
         ____
             more_state _ TextButton.DISABLED

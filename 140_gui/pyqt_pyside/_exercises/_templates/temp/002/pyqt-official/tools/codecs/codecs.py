@@ -210,11 +210,11 @@ c_ PreviewForm(QDialog):
         buttonBox.rejected.c..(self.reject)
 
         mainLayout _ QGridLayout()
-        mainLayout.addWidget(encodingLabel, 0, 0)
-        mainLayout.addWidget(self.encodingComboBox, 0, 1)
-        mainLayout.addWidget(self.textEdit, 1, 0, 1, 2)
-        mainLayout.addWidget(buttonBox, 2, 0, 1, 2)
-        self.setLayout(mainLayout)
+        mainLayout.aW..(encodingLabel, 0, 0)
+        mainLayout.aW..(self.encodingComboBox, 0, 1)
+        mainLayout.aW..(self.textEdit, 1, 0, 1, 2)
+        mainLayout.aW..(buttonBox, 2, 0, 1, 2)
+        self.sL..(mainLayout)
 
         self.setWindowTitle("Choose Encoding")
         self.resize(400, 300)

@@ -233,7 +233,7 @@ c_ Window(QWidget):
                 widget _ GLWidget()
                 widget.setClearColor(clearColor)
                 widget.rotateBy(+42 * 16, +42 * 16, -21 * 16)
-                mainLayout.addWidget(widget, i, j)
+                mainLayout.aW..(widget, i, j)
 
                 widget.c__.c..(self.setCurrentGlWidget)
 
@@ -241,7 +241,7 @@ c_ Window(QWidget):
 
             self.glWidgets.append(row)
 
-        self.setLayout(mainLayout)
+        self.sL..(mainLayout)
 
         self.currentGlWidget _ self.glWidgets[0][0]
 

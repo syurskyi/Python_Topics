@@ -88,7 +88,7 @@ c_ AddressBook(QWidget):
         self.currentMode _ self.NavigationMode
 
         nameLabel _ QLabel("Name:")
-        self.nameLine _ QLineEdit()
+        self.nameLine _ ?LE..
         self.nameLine.setReadOnly(True)
 
         addressLabel _ QLabel("Address:")
@@ -119,31 +119,31 @@ c_ AddressBook(QWidget):
         self.nextButton.c__.c..(self.next)
         self.previousButton.c__.c..(self.previous)
 
-        buttonLayout1 _ QVBoxLayout()
-        buttonLayout1.addWidget(self.addButton)
-        buttonLayout1.addWidget(self.editButton)
-        buttonLayout1.addWidget(self.removeButton)
-        buttonLayout1.addWidget(self.submitButton)
-        buttonLayout1.addWidget(self.cancelButton)
+        buttonLayout1 _ ?VBL..
+        buttonLayout1.aW..(self.addButton)
+        buttonLayout1.aW..(self.editButton)
+        buttonLayout1.aW..(self.removeButton)
+        buttonLayout1.aW..(self.submitButton)
+        buttonLayout1.aW..(self.cancelButton)
         buttonLayout1.addStretch()
 
         buttonLayout2 _ QHBoxLayout()
-        buttonLayout2.addWidget(self.previousButton)
-        buttonLayout2.addWidget(self.nextButton)
+        buttonLayout2.aW..(self.previousButton)
+        buttonLayout2.aW..(self.nextButton)
 
         mainLayout _ QGridLayout()
-        mainLayout.addWidget(nameLabel, 0, 0)
-        mainLayout.addWidget(self.nameLine, 0, 1)
-        mainLayout.addWidget(addressLabel, 1, 0, __.AlignTop)
-        mainLayout.addWidget(self.addressText, 1, 1)
+        mainLayout.aW..(nameLabel, 0, 0)
+        mainLayout.aW..(self.nameLine, 0, 1)
+        mainLayout.aW..(addressLabel, 1, 0, __.AlignTop)
+        mainLayout.aW..(self.addressText, 1, 1)
         mainLayout.addLayout(buttonLayout1, 1, 2)
         mainLayout.addLayout(buttonLayout2, 3, 1)
 
-        self.setLayout(mainLayout)
+        self.sL..(mainLayout)
         self.setWindowTitle("Simple Address Book")
 
     ___ addContact(self):
-        self.oldName _ self.nameLine.text()
+        self.oldName _ self.nameLine.t__()
         self.oldAddress _ self.addressText.toPlainText()
 
         self.nameLine.clear()
@@ -152,13 +152,13 @@ c_ AddressBook(QWidget):
         self.updateInterface(self.AddingMode)
 
     ___ editContact(self):
-        self.oldName _ self.nameLine.text()
+        self.oldName _ self.nameLine.t__()
         self.oldAddress _ self.addressText.toPlainText()
 
         self.updateInterface(self.EditingMode)
 
     ___ submitContact(self):
-        name _ self.nameLine.text()
+        name _ self.nameLine.t__()
         address _ self.addressText.toPlainText()
 
         __ name == "" or address == "":
@@ -200,7 +200,7 @@ c_ AddressBook(QWidget):
         self.updateInterface(self.NavigationMode)
 
     ___ removeContact(self):
-        name _ self.nameLine.text()
+        name _ self.nameLine.t__()
         address _ self.addressText.toPlainText()
 
         __ name in self.contacts:
@@ -218,7 +218,7 @@ c_ AddressBook(QWidget):
         self.updateInterface(self.NavigationMode)
 
     ___ next(self):
-        name _ self.nameLine.text()
+        name _ self.nameLine.t__()
         it _ iter(self.contacts)
 
         try:
@@ -235,7 +235,7 @@ c_ AddressBook(QWidget):
         self.addressText.sT..(next_address)
 
     ___ previous(self):
-        name _ self.nameLine.text()
+        name _ self.nameLine.t__()
 
         prev_name _ prev_address _ N..
         for this_name, this_address in self.contacts:

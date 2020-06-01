@@ -76,7 +76,7 @@ c_ Mouse(QGraphicsItem):
         # QObject in order to receive timer events.  PyQt does not support
         # deriving from more than one wrapped class so we just create an
         # explicit timer instead.
-        self.timer _ QTimer()
+        self.timer _ ?T..
         self.timer.timeout.c..(self.timerEvent)
         self.timer.start(1000 / 33)
 

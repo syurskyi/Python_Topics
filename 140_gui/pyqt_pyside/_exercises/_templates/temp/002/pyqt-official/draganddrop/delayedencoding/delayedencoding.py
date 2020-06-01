@@ -92,11 +92,11 @@ c_ SourceWidget(QWidget):
         dragIcon.pressed.c..(self.startDrag)
 
         layout _ QGridLayout()
-        layout.addWidget(instructTopLabel, 0, 0, 1, 2)
-        layout.addWidget(imageArea, 1, 0, 2, 2)
-        layout.addWidget(instructBottomLabel, 3, 0)
-        layout.addWidget(dragIcon, 3, 1)
-        self.setLayout(layout)
+        layout.aW..(instructTopLabel, 0, 0, 1, 2)
+        layout.aW..(imageArea, 1, 0, 2, 2)
+        layout.aW..(instructBottomLabel, 3, 0)
+        layout.aW..(dragIcon, 3, 1)
+        self.sL..(layout)
         self.setWindowTitle("Delayed Encoding")
 
     ___ createData  mimeType):

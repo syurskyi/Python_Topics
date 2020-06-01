@@ -249,22 +249,22 @@ c_ LocationDialog(QDialog):
         self.buttonBox.accepted.c..(self.accept)
         self.buttonBox.rejected.c..(self.reject)
 
-        locationsLayout _ QVBoxLayout()
-        locationsLayout.addWidget(self.locationsTable)
-        self.locationsGroupBox.setLayout(locationsLayout)
+        locationsLayout _ ?VBL..
+        locationsLayout.aW..(self.locationsTable)
+        self.locationsGroupBox.sL..(locationsLayout)
 
         mainLayout _ QGridLayout()
-        mainLayout.addWidget(formatLabel, 0, 0)
-        mainLayout.addWidget(self.formatComboBox, 0, 1)
-        mainLayout.addWidget(scopeLabel, 1, 0)
-        mainLayout.addWidget(self.scopeComboBox, 1, 1)
-        mainLayout.addWidget(organizationLabel, 2, 0)
-        mainLayout.addWidget(self.organizationComboBox, 2, 1)
-        mainLayout.addWidget(applicationLabel, 3, 0)
-        mainLayout.addWidget(self.applicationComboBox, 3, 1)
-        mainLayout.addWidget(self.locationsGroupBox, 4, 0, 1, 2)
-        mainLayout.addWidget(self.buttonBox, 5, 0, 1, 2)
-        self.setLayout(mainLayout)
+        mainLayout.aW..(formatLabel, 0, 0)
+        mainLayout.aW..(self.formatComboBox, 0, 1)
+        mainLayout.aW..(scopeLabel, 1, 0)
+        mainLayout.aW..(self.scopeComboBox, 1, 1)
+        mainLayout.aW..(organizationLabel, 2, 0)
+        mainLayout.aW..(self.organizationComboBox, 2, 1)
+        mainLayout.aW..(applicationLabel, 3, 0)
+        mainLayout.aW..(self.applicationComboBox, 3, 1)
+        mainLayout.aW..(self.locationsGroupBox, 4, 0, 1, 2)
+        mainLayout.aW..(self.buttonBox, 5, 0, 1, 2)
+        self.sL..(mainLayout)
 
         self.updateLocationsTable()
 
@@ -357,7 +357,7 @@ c_ SettingsTree(QTreeWidget):
         self.header().setSectionResizeMode(2, QHeaderView.Stretch)
 
         self.settings _ N..
-        self.refreshTimer _ QTimer()
+        self.refreshTimer _ ?T..
         self.refreshTimer.setInterval(2000)
         self.autoRefresh _ False
 
@@ -428,11 +428,11 @@ c_ SettingsTree(QTreeWidget):
         r_ super(SettingsTree, self).event(event)
 
     ___ updateSetting  item):
-        key _ item.text(0)
+        key _ item.t__(0)
         ancestor _ item.parent()
 
         while ancestor:
-            key _ ancestor.text(0) + '/' + key
+            key _ ancestor.t__(0) + '/' + key
             ancestor _ ancestor.parent()
 
         d _ item.data(2, __.UserRole)
@@ -488,7 +488,7 @@ c_ SettingsTree(QTreeWidget):
         while dividerIndex < self.childCount(parent):
             self.deleteItem(parent, dividerIndex)
 
-    ___ createItem  text, parent, index):
+    ___ createItem  t__, parent, index):
         after _ N..
 
         __ index !_ 0:
@@ -499,7 +499,7 @@ c_ SettingsTree(QTreeWidget):
         ____
             item _ QTreeWidgetItem  after)
 
-        item.sT..(0, text)
+        item.sT..(0, t__)
         item.setFlags(item.flags() | __.ItemIsEditable)
         r_ item
 
@@ -522,9 +522,9 @@ c_ SettingsTree(QTreeWidget):
         ____
             r_ self.topLevelItemCount()
 
-    ___ findChild  parent, text, startIndex):
+    ___ findChild  parent, t__, startIndex):
         for i in range(self.childCount(parent)):
-            __ self.childAt(parent, i).text(0) == text:
+            __ self.childAt(parent, i).t__(0) == t__:
                 r_ i
         r_ -1
 
@@ -638,51 +638,51 @@ c_ VariantDelegate(QItemDelegate):
         __ no. editor.iM..
             r_
 
-        text _ editor.text()
+        t__ _ editor.t__()
         validator _ editor.validator()
         __ validator __ no. N..:
-            state, text, _ _ validator.validate(text, 0)
+            state, t__, _ _ validator.validate(t__, 0)
             __ state !_ QValidator.Acceptable:
                 r_
 
         originalValue _ index.model().data(index, __.UserRole)
 
         __ isinstance(originalValue, ?C..):
-            self.colorExp.exactMatch(text)
+            self.colorExp.exactMatch(t__)
             value _ ?C..(min(int(self.colorExp.cap(1)), 255),
                            min(int(self.colorExp.cap(2)), 255),
                            min(int(self.colorExp.cap(3)), 255),
                            min(int(self.colorExp.cap(4)), 255))
         ____ isinstance(originalValue, QDate):
-            value _ QDate.fromString(text, __.ISODate)
+            value _ QDate.fromString(t__, __.ISODate)
             __ no. value.isValid
                 r_
         ____ isinstance(originalValue, QDateTime):
-            value _ QDateTime.fromString(text, __.ISODate)
+            value _ QDateTime.fromString(t__, __.ISODate)
             __ no. value.isValid
                 r_
         ____ isinstance(originalValue, QTime):
-            value _ QTime.fromString(text, __.ISODate)
+            value _ QTime.fromString(t__, __.ISODate)
             __ no. value.isValid
                 r_
         ____ isinstance(originalValue, QPoint):
-            self.pointExp.exactMatch(text)
+            self.pointExp.exactMatch(t__)
             value _ QPoint(int(self.pointExp.cap(1)),
                            int(self.pointExp.cap(2)))
         ____ isinstance(originalValue, QRect):
-            self.rectExp.exactMatch(text)
+            self.rectExp.exactMatch(t__)
             value _ QRect(int(self.rectExp.cap(1)),
                           int(self.rectExp.cap(2)),
                           int(self.rectExp.cap(3)),
                           int(self.rectExp.cap(4)))
         ____ isinstance(originalValue, QSize):
-            self.sizeExp.exactMatch(text)
+            self.sizeExp.exactMatch(t__)
             value _ QSize(int(self.sizeExp.cap(1)),
                           int(self.sizeExp.cap(2)))
         ____ isinstance(originalValue, list):
-            value _ text.split(',')
+            value _ t__.split(',')
         ____
-            value _ type(originalValue)(text)
+            value _ type(originalValue)(t__)
 
         model.setData(index, self.displayText(value), __.DisplayRole)
         model.setData(index, value, __.UserRole)

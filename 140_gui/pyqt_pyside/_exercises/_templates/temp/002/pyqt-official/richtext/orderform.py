@@ -142,12 +142,12 @@ c_ MainWindow ?MW..
         cursor _ orderTable.cellAt(0, 1).firstCursorPosition()
         cursor.insertText("Quantity", boldFormat)
 
-        for text, quantity in orderItems:
+        for t__, quantity in orderItems:
             row _ orderTable.rows()
 
             orderTable.insertRows(row, 1)
             cursor _ orderTable.cellAt(row, 0).firstCursorPosition()
-            cursor.insertText(text, textFormat)
+            cursor.insertText(t__, textFormat)
             cursor _ orderTable.cellAt(row, 1).firstCursorPosition()
             cursor.insertText(str(quantity), textFormat)
 
@@ -224,7 +224,7 @@ c_ DetailsDialog(QDialog):
         addressLabel _ QLabel("Address:")
         addressLabel.setAlignment(__.AlignLeft | __.AlignTop)
 
-        self.nameEdit _ QLineEdit()
+        self.nameEdit _ ?LE..
         self.addressEdit _ QTextEdit()
         self.offersCheckBox _ QCheckBox(
                 "Send information about products and special offers:")
@@ -237,14 +237,14 @@ c_ DetailsDialog(QDialog):
         buttonBox.rejected.c..(self.reject)
 
         mainLayout _ QGridLayout()
-        mainLayout.addWidget(nameLabel, 0, 0)
-        mainLayout.addWidget(self.nameEdit, 0, 1)
-        mainLayout.addWidget(addressLabel, 1, 0)
-        mainLayout.addWidget(self.addressEdit, 1, 1)
-        mainLayout.addWidget(self.itemsTable, 0, 2, 2, 1)
-        mainLayout.addWidget(self.offersCheckBox, 2, 1, 1, 2)
-        mainLayout.addWidget(buttonBox, 3, 0, 1, 3)
-        self.setLayout(mainLayout)
+        mainLayout.aW..(nameLabel, 0, 0)
+        mainLayout.aW..(self.nameEdit, 0, 1)
+        mainLayout.aW..(addressLabel, 1, 0)
+        mainLayout.aW..(self.addressEdit, 1, 1)
+        mainLayout.aW..(self.itemsTable, 0, 2, 2, 1)
+        mainLayout.aW..(self.offersCheckBox, 2, 1, 1, 2)
+        mainLayout.aW..(buttonBox, 3, 0, 1, 3)
+        self.sL..(mainLayout)
 
         self.setWindowTitle(title)
 
@@ -262,14 +262,14 @@ c_ DetailsDialog(QDialog):
         orderList _ []
 
         for row in range(len(self.items)):
-            text _ self.itemsTable.item(row, 0).text()
+            t__ _ self.itemsTable.item(row, 0).t__()
             quantity _ int(self.itemsTable.item(row, 1).data(__.DisplayRole))
-            orderList.append((text, max(0, quantity)))
+            orderList.append((t__, max(0, quantity)))
 
         r_ orderList
 
     ___ senderName(self):
-        r_ self.nameEdit.text()
+        r_ self.nameEdit.t__()
 
     ___ senderAddress(self):
         r_ self.addressEdit.toPlainText()
@@ -278,7 +278,7 @@ c_ DetailsDialog(QDialog):
         r_ self.offersCheckBox.isChecked()
 
     ___ verify(self):
-        __ self.nameEdit.text() and self.addressEdit.toPlainText
+        __ self.nameEdit.t__() and self.addressEdit.toPlainText
             self.accept()
             r_
 

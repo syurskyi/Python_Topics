@@ -30,10 +30,10 @@ c_ PyMultiPageWidget(QWidget):
         self.comboBox.setObjectName('__qt__passive_comboBox')        
         self.stackWidget _ QStackedWidget()
         self.comboBox.activated.c..(self.setCurrentIndex)
-        self.layout _ QVBoxLayout()
-        self.layout.addWidget(self.comboBox)
-        self.layout.addWidget(self.stackWidget)
-        self.setLayout(self.layout)
+        self.layout _ ?VBL..
+        self.layout.aW..(self.comboBox)
+        self.layout.aW..(self.stackWidget)
+        self.sL..(self.layout)
 
     ___ sizeHint(self):
         r_ QSize(200, 150)

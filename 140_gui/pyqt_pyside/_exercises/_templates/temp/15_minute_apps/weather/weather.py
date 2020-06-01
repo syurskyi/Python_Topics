@@ -11,7 +11,7 @@ ______ sys
 ______ requests
 ____ urllib.parse ______ urlencode
 
-OPENWEATHERMAP_API_KEY _ os.environ.get('OPENWEATHERMAP_API_KEY')
+OPENWEATHERMAP_API_KEY _ os.environ.g..('OPENWEATHERMAP_API_KEY')
 
 """
 Get an API key from https://openweathermap.org/ to use with this
@@ -53,16 +53,16 @@ c_ WeatherWorker(QRunnable):
             )
 
             url _ 'http://api.openweathermap.org/data/2.5/weather?%s&units=metric' % urlencode(params)
-            r _ requests.get(url)
-            weather _ json.loads(r.text)
+            r _ requests.g..(url)
+            weather _ json.loads(r.t__)
 
             # Check if we had a failure (the forecast will fail in the same way).
             __ weather['cod'] !_ 200:
                 raise Exception(weather['message'])
 
             url _ 'http://api.openweathermap.org/data/2.5/forecast?%s&units=metric' % urlencode(params)
-            r _ requests.get(url)
-            forecast _ json.loads(r.text)
+            r _ requests.g..(url)
+            forecast _ json.loads(r.t__)
 
             self.signals.result.emit(weather, forecast)
 
@@ -90,7 +90,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
         alert _ ?MB...warning  "Warning", message)
 
     ___ update_weather(self):
-        worker _ WeatherWorker(self.lineEdit.text())
+        worker _ WeatherWorker(self.lineEdit.t__())
         worker.signals.result.c..(self.weather_result)
         worker.signals.error.c..(self.alert)
         self.threadpool.start(worker)

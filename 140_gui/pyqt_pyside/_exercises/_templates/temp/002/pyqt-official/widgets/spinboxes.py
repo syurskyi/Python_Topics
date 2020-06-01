@@ -57,10 +57,10 @@ c_ Window(QWidget):
         self.createDoubleSpinBoxes()
 
         layout _ QHBoxLayout()
-        layout.addWidget(self.spinBoxesGroup)
-        layout.addWidget(self.editsGroup)
-        layout.addWidget(self.doubleSpinBoxesGroup)
-        self.setLayout(layout)
+        layout.aW..(self.spinBoxesGroup)
+        layout.aW..(self.editsGroup)
+        layout.aW..(self.doubleSpinBoxesGroup)
+        self.sL..(layout)
 
         self.setWindowTitle("Spin Boxes")
 
@@ -88,14 +88,14 @@ c_ Window(QWidget):
         priceSpinBox.setPrefix('$')
         priceSpinBox.setValue(99)
 
-        spinBoxLayout _ QVBoxLayout()
-        spinBoxLayout.addWidget(integerLabel)
-        spinBoxLayout.addWidget(integerSpinBox)
-        spinBoxLayout.addWidget(zoomLabel)
-        spinBoxLayout.addWidget(zoomSpinBox)
-        spinBoxLayout.addWidget(priceLabel)
-        spinBoxLayout.addWidget(priceSpinBox)
-        self.spinBoxesGroup.setLayout(spinBoxLayout)
+        spinBoxLayout _ ?VBL..
+        spinBoxLayout.aW..(integerLabel)
+        spinBoxLayout.aW..(integerSpinBox)
+        spinBoxLayout.aW..(zoomLabel)
+        spinBoxLayout.aW..(zoomSpinBox)
+        spinBoxLayout.aW..(priceLabel)
+        spinBoxLayout.aW..(priceSpinBox)
+        self.spinBoxesGroup.sL..(spinBoxLayout)
 
     ___ createDateTimeEdits(self):
         self.editsGroup _ QGroupBox("Date and time spin boxes")
@@ -130,16 +130,16 @@ c_ Window(QWidget):
 
         self.setFormatString(formatComboBox.currentText())
 
-        editsLayout _ QVBoxLayout()
-        editsLayout.addWidget(dateLabel)
-        editsLayout.addWidget(dateEdit)
-        editsLayout.addWidget(timeLabel)
-        editsLayout.addWidget(timeEdit)
-        editsLayout.addWidget(self.meetingLabel)
-        editsLayout.addWidget(self.meetingEdit)
-        editsLayout.addWidget(formatLabel)
-        editsLayout.addWidget(formatComboBox)
-        self.editsGroup.setLayout(editsLayout)
+        editsLayout _ ?VBL..
+        editsLayout.aW..(dateLabel)
+        editsLayout.aW..(dateEdit)
+        editsLayout.aW..(timeLabel)
+        editsLayout.aW..(timeEdit)
+        editsLayout.aW..(self.meetingLabel)
+        editsLayout.aW..(self.meetingEdit)
+        editsLayout.aW..(formatLabel)
+        editsLayout.aW..(formatComboBox)
+        self.editsGroup.sL..(editsLayout)
 
     ___ setFormatString  formatString):
         self.meetingEdit.setDisplayFormat(formatString)
@@ -186,16 +186,16 @@ c_ Window(QWidget):
 
         precisionSpinBox.valueChanged.c..(self.changePrecision)
 
-        spinBoxLayout _ QVBoxLayout()
-        spinBoxLayout.addWidget(precisionLabel)
-        spinBoxLayout.addWidget(precisionSpinBox)
-        spinBoxLayout.addWidget(doubleLabel)
-        spinBoxLayout.addWidget(self.doubleSpinBox)
-        spinBoxLayout.addWidget(scaleLabel)
-        spinBoxLayout.addWidget(self.scaleSpinBox)
-        spinBoxLayout.addWidget(priceLabel)
-        spinBoxLayout.addWidget(self.priceSpinBox)
-        self.doubleSpinBoxesGroup.setLayout(spinBoxLayout)
+        spinBoxLayout _ ?VBL..
+        spinBoxLayout.aW..(precisionLabel)
+        spinBoxLayout.aW..(precisionSpinBox)
+        spinBoxLayout.aW..(doubleLabel)
+        spinBoxLayout.aW..(self.doubleSpinBox)
+        spinBoxLayout.aW..(scaleLabel)
+        spinBoxLayout.aW..(self.scaleSpinBox)
+        spinBoxLayout.aW..(priceLabel)
+        spinBoxLayout.aW..(self.priceSpinBox)
+        self.doubleSpinBoxesGroup.sL..(spinBoxLayout)
 
     ___ changePrecision  decimals):
         self.doubleSpinBox.setDecimals(decimals)

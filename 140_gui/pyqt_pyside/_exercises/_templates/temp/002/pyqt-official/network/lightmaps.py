@@ -175,7 +175,7 @@ c_ SlippyMap(QObject):
                 tp _ Point(x + self._tilesRect.left(), y + self._tilesRect.top())
                 box _ self.tileRect(tp)
                 __ rect.intersects(box):
-                    p.drawPixmap(box, self._tilePixmaps.get(tp, self._emptyTile))
+                    p.drawPixmap(box, self._tilePixmaps.g..(tp, self._emptyTile))
    
     ___ pan  delta):
         dx _ QPointF(delta) / float(TDIM)
@@ -221,7 +221,7 @@ c_ SlippyMap(QObject):
         request.setUrl(self._url)
         request.setRawHeader(b'User-Agent', b'Nokia (PyQt) Graphics Dojo 1.0')
         request.setAttribute(QNetworkRequest.User, grab)
-        self._manager.get(request)
+        self._manager.g..(request)
 
     ___ tileRect  tp):
         t _ tp - self._tilesRect.topLeft()

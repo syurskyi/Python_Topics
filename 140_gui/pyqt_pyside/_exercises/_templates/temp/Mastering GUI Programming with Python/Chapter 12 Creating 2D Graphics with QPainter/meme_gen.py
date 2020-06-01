@@ -80,7 +80,7 @@ c_ MemeEditForm(qtw.QWidget):
 
     ___ __init__(self):
         super().__init__()
-        self.setLayout(qtw.QFormLayout())
+        self.sL..(qtw.QFormLayout())
 
         # Image
         self.image_source _ ImageFileButton(changed_self.on_change)
@@ -148,17 +148,17 @@ c_ MainWindow(qtw.QMainWindow):
         self.image.fill(qtg.?C..('black'))
 
         # Container widget
-        mainwidget _ qtw.QWidget()
+        mainwidget _ qtw.?W..
         self.sCW..(mainwidget)
-        mainwidget.setLayout(qtw.QHBoxLayout())
+        mainwidget.sL..(qtw.QHBoxLayout())
 
         # Image Previewer
         self.image_display _ qtw.QLabel(pixmap_qtg.QPixmap(self.image))
-        mainwidget.layout().addWidget(self.image_display)
+        mainwidget.layout().aW..(self.image_display)
 
         # The editing form
         self.form _ MemeEditForm()
-        mainwidget.layout().addWidget(self.form)
+        mainwidget.layout().aW..(self.form)
         self.form.changed.c..(self.build_image)
 
         # Create file saving
@@ -177,10 +177,10 @@ c_ MainWindow(qtw.QMainWindow):
 
     ___ build_image  data):
         # Create a QImage file
-        __ no. data.get('image_source'):
+        __ no. data.g..('image_source'):
             self.image.fill(qtg.?C..('black'))
         ____
-            self.image.load(data.get('image_source'))
+            self.image.load(data.g..('image_source'))
             # Scale down the image if it's over the max_size
             __ no. (self.max_size - self.image.size()).isValid
                 # isValid returns false if either dimension is negative

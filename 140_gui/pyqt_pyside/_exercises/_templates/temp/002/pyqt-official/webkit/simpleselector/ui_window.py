@@ -18,7 +18,7 @@ c_ Ui_Window(object):
         self.webView _ QtWebKitWidgets.QWebView(Window)
         self.webView.setUrl(?C...QUrl("http://webkit.org/"))
         self.webView.setObjectName("webView")
-        self.verticalLayout.addWidget(self.webView)
+        self.verticalLayout.aW..(self.webView)
         self.horizontalLayout _ ?W...QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.formLayout _ ?W...QFormLayout()
@@ -33,7 +33,7 @@ c_ Ui_Window(object):
         self.horizontalLayout.addLayout(self.formLayout)
         self.highlightButton _ ?W...?PB..(Window)
         self.highlightButton.setObjectName("highlightButton")
-        self.horizontalLayout.addWidget(self.highlightButton)
+        self.horizontalLayout.aW..(self.highlightButton)
         self.verticalLayout.addLayout(self.horizontalLayout)
         self.elementLabel.setBuddy(self.elementLineEdit)
 

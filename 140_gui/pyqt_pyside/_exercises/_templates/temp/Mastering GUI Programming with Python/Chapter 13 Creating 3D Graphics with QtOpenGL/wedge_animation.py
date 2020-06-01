@@ -10,11 +10,11 @@ c_ MainWindow(qtw.QMainWindow):
 
         # Your code goes here
         self.resize(800, 600)
-        main _ qtw.QWidget()
+        main _ qtw.?W..
         self.sCW..(main)
-        main.setLayout(qtw.QVBoxLayout())
+        main.sL..(qtw.QVBoxLayout())
         oglw _ GlWidget()
-        main.layout().addWidget(oglw)
+        main.layout().aW..(oglw)
 
         # Animation controls
         btn_layout _ qtw.QHBoxLayout()
@@ -26,13 +26,13 @@ c_ MainWindow(qtw.QMainWindow):
                 checkable_True,
                 c___getattr(oglw, f'spin_{direction}')
                 )
-            btn_layout.addWidget(button)
+            btn_layout.aW..(button)
         zoom_layout _ qtw.QHBoxLayout()
         main.layout().addLayout(zoom_layout)
         zoom_in _ qtw.?PB..('zoom in', c___oglw.zoom_in)
-        zoom_layout.addWidget(zoom_in)
+        zoom_layout.aW..(zoom_in)
         zoom_out _ qtw.?PB..('zoom out', c___oglw.zoom_out)
-        zoom_layout.addWidget(zoom_out)
+        zoom_layout.aW..(zoom_out)
         self.s..
 
 

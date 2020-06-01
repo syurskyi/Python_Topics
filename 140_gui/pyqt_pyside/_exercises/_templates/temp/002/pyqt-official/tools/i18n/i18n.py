@@ -68,9 +68,9 @@ c_ LanguageChooser(QDialog):
             checkBox _ QCheckBox(self.languageName(qmf))
             self.qmFileForCheckBoxMap[checkBox] _ qmf
             checkBox.toggled.c..(self.checkBoxToggled)
-            groupBoxLayout.addWidget(checkBox, i / 2, i % 2)
+            groupBoxLayout.aW..(checkBox, i / 2, i % 2)
 
-        groupBox.setLayout(groupBoxLayout)
+        groupBox.sL..(groupBoxLayout)
 
         buttonBox _ QDialogButtonBox()
 
@@ -82,10 +82,10 @@ c_ LanguageChooser(QDialog):
         showAllButton.c__.c..(self.showAll)
         hideAllButton.c__.c..(self.hideAll)
 
-        mainLayout _ QVBoxLayout()
-        mainLayout.addWidget(groupBox)
-        mainLayout.addWidget(buttonBox)
-        self.setLayout(mainLayout)
+        mainLayout _ ?VBL..
+        mainLayout.aW..(groupBox)
+        mainLayout.aW..(buttonBox)
+        self.sL..(mainLayout)
 
         self.setWindowTitle("I18N")
 
@@ -110,7 +110,7 @@ c_ LanguageChooser(QDialog):
 
     ___ checkBoxToggled(self):
         checkBox _ self.sender()
-        window _ self.mainWindowForCheckBoxMap.get(checkBox)
+        window _ self.mainWindowForCheckBoxMap.g..(checkBox)
 
         __ no. window:
             translator _ QTranslator()
@@ -122,7 +122,7 @@ c_ LanguageChooser(QDialog):
             # the main window when the program terminates.  We ensure this by
             # making the main window a child of this one.
             window _ MainWindow(self)
-            window.sP..(?P..(self.colorForLanguage(checkBox.text())))
+            window.sP..(?P..(self.colorForLanguage(checkBox.t__())))
 
             window.installEventFilter(self)
             self.mainWindowForCheckBoxMap[checkBox] _ window
@@ -165,7 +165,7 @@ c_ MainWindow ?MW..
     ___ __init__  parent_None):
         super(MainWindow, self).__init__(parent)
 
-        self.centralWidget _ QWidget()
+        self.centralWidget _ ?W..
         self.sCW..(self.centralWidget)
 
         self.createGroupBox()
@@ -175,10 +175,10 @@ c_ MainWindow ?MW..
         for le in MainWindow.listEntries:
             listWidget.addItem(self.tr(le))
 
-        mainLayout _ QVBoxLayout()
-        mainLayout.addWidget(self.groupBox)
-        mainLayout.addWidget(listWidget)
-        self.centralWidget.setLayout(mainLayout)
+        mainLayout _ ?VBL..
+        mainLayout.aW..(self.groupBox)
+        mainLayout.aW..(listWidget)
+        self.centralWidget.sL..(mainLayout)
 
         exitAction _ ?A..(self.tr("E&xit"), self,
                 triggered_QApplication.instance().quit)
@@ -200,11 +200,11 @@ c_ MainWindow ?MW..
         obliqueRadioButton _ QRadioButton(self.tr("Oblique"))
         perspectiveRadioButton.setChecked(True)
 
-        self.groupBoxLayout _ QVBoxLayout()
-        self.groupBoxLayout.addWidget(perspectiveRadioButton)
-        self.groupBoxLayout.addWidget(isometricRadioButton)
-        self.groupBoxLayout.addWidget(obliqueRadioButton)
-        self.groupBox.setLayout(self.groupBoxLayout)
+        self.groupBoxLayout _ ?VBL..
+        self.groupBoxLayout.aW..(perspectiveRadioButton)
+        self.groupBoxLayout.aW..(isometricRadioButton)
+        self.groupBoxLayout.aW..(obliqueRadioButton)
+        self.groupBox.sL..(self.groupBoxLayout)
 
 
 __ __name__ == "__main__":

@@ -52,11 +52,11 @@ ______ fridgemagnets_rc
 
 
 c_ DragLabel(QLabel):
-    ___ __init__  text, parent):
+    ___ __init__  t__, parent):
         super(DragLabel, self).__init__(parent)
 
         metric _ QFontMetrics(self.font())
-        size _ metric.size(__.TextSingleLine, text)
+        size _ metric.size(__.TextSingleLine, t__)
 
         image _ QImage(size.width() + 12, size.height() + 12,
                 QImage.Format_ARGB32_Premultiplied)
@@ -75,11 +75,11 @@ c_ DragLabel(QLabel):
 
         painter.setFont(font)
         painter.setBrush(__.black)
-        painter.drawText(QRect(QPoint(6, 6), size), __.AlignCenter, text)
+        painter.drawText(QRect(QPoint(6, 6), size), __.AlignCenter, t__)
         painter.end()
 
         self.setPixmap(QPixmap.fromImage(image))
-        self.labelText _ text
+        self.labelText _ t__
 
     ___ mousePressEvent  event):
         itemData _ QByteArray()
@@ -150,18 +150,18 @@ c_ DragWidget(QWidget):
             itemData _ mime.data('application/x-fridgemagnet')
             dataStream _ QDataStream(itemData, QIODevice.ReadOnly)
 
-            text _ QByteArray()
+            t__ _ QByteArray()
             offset _ QPoint()
-            dataStream >> text >> offset
+            dataStream >> t__ >> offset
 
             try:
                 # Python v3.
-                text _ str(text, encoding_'latin1')
+                t__ _ str(t__, encoding_'latin1')
             except TypeError:
                 # Python v2.
-                text _ str(text)
+                t__ _ str(t__)
 
-            newLabel _ DragLabel(text, self)
+            newLabel _ DragLabel(t__, self)
             newLabel.move(event.pos() - offset)
             newLabel.s..
 
@@ -171,7 +171,7 @@ c_ DragWidget(QWidget):
             ____
                 event.acceptProposedAction()
         ____ event.mimeData().hasText
-            pieces _ event.mimeData().text().split()
+            pieces _ event.mimeData().t__().split()
             position _ event.pos()
 
             for piece in pieces:

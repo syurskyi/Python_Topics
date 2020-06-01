@@ -81,24 +81,24 @@ c_ WidgetGallery(QDialog):
         disableWidgetsCheckBox.toggled.c..(self.bottomRightGroupBox.setDisabled)
 
         topLayout _ QHBoxLayout()
-        topLayout.addWidget(styleLabel)
-        topLayout.addWidget(styleComboBox)
+        topLayout.aW..(styleLabel)
+        topLayout.aW..(styleComboBox)
         topLayout.addStretch(1)
-        topLayout.addWidget(self.useStylePaletteCheckBox)
-        topLayout.addWidget(disableWidgetsCheckBox)
+        topLayout.aW..(self.useStylePaletteCheckBox)
+        topLayout.aW..(disableWidgetsCheckBox)
 
         mainLayout _ QGridLayout()
         mainLayout.addLayout(topLayout, 0, 0, 1, 2)
-        mainLayout.addWidget(self.topLeftGroupBox, 1, 0)
-        mainLayout.addWidget(self.topRightGroupBox, 1, 1)
-        mainLayout.addWidget(self.bottomLeftTabWidget, 2, 0)
-        mainLayout.addWidget(self.bottomRightGroupBox, 2, 1)
-        mainLayout.addWidget(self.progressBar, 3, 0, 1, 2)
+        mainLayout.aW..(self.topLeftGroupBox, 1, 0)
+        mainLayout.aW..(self.topRightGroupBox, 1, 1)
+        mainLayout.aW..(self.bottomLeftTabWidget, 2, 0)
+        mainLayout.aW..(self.bottomRightGroupBox, 2, 1)
+        mainLayout.aW..(self.progressBar, 3, 0, 1, 2)
         mainLayout.setRowStretch(1, 1)
         mainLayout.setRowStretch(2, 1)
         mainLayout.setColumnStretch(0, 1)
         mainLayout.setColumnStretch(1, 1)
-        self.setLayout(mainLayout)
+        self.sL..(mainLayout)
 
         self.setWindowTitle("Styles")
         self.changeStyle('Windows')
@@ -130,13 +130,13 @@ c_ WidgetGallery(QDialog):
         checkBox.setTristate(True)
         checkBox.setCheckState(__.PartiallyChecked)
 
-        layout _ QVBoxLayout()
-        layout.addWidget(radioButton1)
-        layout.addWidget(radioButton2)
-        layout.addWidget(radioButton3)
-        layout.addWidget(checkBox)
+        layout _ ?VBL..
+        layout.aW..(radioButton1)
+        layout.aW..(radioButton2)
+        layout.aW..(radioButton3)
+        layout.aW..(checkBox)
         layout.addStretch(1)
-        self.topLeftGroupBox.setLayout(layout)    
+        self.topLeftGroupBox.sL..(layout)    
 
     ___ createTopRightGroupBox(self):
         self.topRightGroupBox _ QGroupBox("Group 2")
@@ -151,27 +151,27 @@ c_ WidgetGallery(QDialog):
         flatPushButton _ ?PB..("Flat Push Button")
         flatPushButton.setFlat(True)
 
-        layout _ QVBoxLayout()
-        layout.addWidget(defaultPushButton)
-        layout.addWidget(togglePushButton)
-        layout.addWidget(flatPushButton)
+        layout _ ?VBL..
+        layout.aW..(defaultPushButton)
+        layout.aW..(togglePushButton)
+        layout.aW..(flatPushButton)
         layout.addStretch(1)
-        self.topRightGroupBox.setLayout(layout)
+        self.topRightGroupBox.sL..(layout)
 
     ___ createBottomLeftTabWidget(self):
         self.bottomLeftTabWidget _ QTabWidget()
         self.bottomLeftTabWidget.setSizePolicy(QSizePolicy.Preferred,
                 QSizePolicy.Ignored)
 
-        tab1 _ QWidget()
+        tab1 _ ?W..
         tableWidget _ QTableWidget(10, 10)
 
         tab1hbox _ QHBoxLayout()
         tab1hbox.setContentsMargins(5, 5, 5, 5)
-        tab1hbox.addWidget(tableWidget)
-        tab1.setLayout(tab1hbox)
+        tab1hbox.aW..(tableWidget)
+        tab1.sL..(tab1hbox)
 
-        tab2 _ QWidget()
+        tab2 _ ?W..
         textEdit _ QTextEdit()
 
         textEdit.sPT..("Twinkle, twinkle, little star,\n"
@@ -183,8 +183,8 @@ c_ WidgetGallery(QDialog):
 
         tab2hbox _ QHBoxLayout()
         tab2hbox.setContentsMargins(5, 5, 5, 5)
-        tab2hbox.addWidget(textEdit)
-        tab2.setLayout(tab2hbox)
+        tab2hbox.aW..(textEdit)
+        tab2.sL..(tab2hbox)
 
         self.bottomLeftTabWidget.addTab(tab1, "&Table")
         self.bottomLeftTabWidget.addTab(tab2, "Text &Edit")
@@ -214,14 +214,14 @@ c_ WidgetGallery(QDialog):
         dial.setNotchesVisible(True)
 
         layout _ QGridLayout()
-        layout.addWidget(lineEdit, 0, 0, 1, 2)
-        layout.addWidget(spinBox, 1, 0, 1, 2)
-        layout.addWidget(dateTimeEdit, 2, 0, 1, 2)
-        layout.addWidget(slider, 3, 0)
-        layout.addWidget(scrollBar, 4, 0)
-        layout.addWidget(dial, 3, 1, 2, 1)
+        layout.aW..(lineEdit, 0, 0, 1, 2)
+        layout.aW..(spinBox, 1, 0, 1, 2)
+        layout.aW..(dateTimeEdit, 2, 0, 1, 2)
+        layout.aW..(slider, 3, 0)
+        layout.aW..(scrollBar, 4, 0)
+        layout.aW..(dial, 3, 1, 2, 1)
         layout.setRowStretch(5, 1)
-        self.bottomRightGroupBox.setLayout(layout)
+        self.bottomRightGroupBox.sL..(layout)
 
     ___ createProgressBar(self):
         self.progressBar _ QProgressBar()

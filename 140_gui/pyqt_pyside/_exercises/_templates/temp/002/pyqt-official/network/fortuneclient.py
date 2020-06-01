@@ -87,7 +87,7 @@ c_ Client(QDialog):
             __ ipAddress.isLoopback
                 self.hostCombo.addItem(ipAddress.toString())
 
-        self.portLineEdit _ QLineEdit()
+        self.portLineEdit _ ?LE..
         self.portLineEdit.setValidator(QIntValidator(1, 65535, self))
 
         hostLabel.setBuddy(self.hostCombo)
@@ -116,13 +116,13 @@ c_ Client(QDialog):
         self.tcpSocket.error.c..(self.displayError)
 
         mainLayout _ QGridLayout()
-        mainLayout.addWidget(hostLabel, 0, 0)
-        mainLayout.addWidget(self.hostCombo, 0, 1)
-        mainLayout.addWidget(portLabel, 1, 0)
-        mainLayout.addWidget(self.portLineEdit, 1, 1)
-        mainLayout.addWidget(self.statusLabel, 2, 0, 1, 2)
-        mainLayout.addWidget(buttonBox, 3, 0, 1, 2)
-        self.setLayout(mainLayout)
+        mainLayout.aW..(hostLabel, 0, 0)
+        mainLayout.aW..(self.hostCombo, 0, 1)
+        mainLayout.aW..(portLabel, 1, 0)
+        mainLayout.aW..(self.portLineEdit, 1, 1)
+        mainLayout.aW..(self.statusLabel, 2, 0, 1, 2)
+        mainLayout.aW..(buttonBox, 3, 0, 1, 2)
+        self.sL..(mainLayout)
 
         self.setWindowTitle("Fortune Client")
         self.portLineEdit.setFocus()
@@ -150,7 +150,7 @@ c_ Client(QDialog):
         self.blockSize _ 0
         self.tcpSocket.abort()
         self.tcpSocket.connectToHost(self.hostCombo.currentText(),
-                int(self.portLineEdit.text()))
+                int(self.portLineEdit.t__()))
 
     ___ readFortune(self):
         instr _ QDataStream(self.tcpSocket)
@@ -196,7 +196,7 @@ c_ Client(QDialog):
         self.getFortuneButton.setEnabled(
                 (self.networkSession __ N.. or self.networkSession.isOpen())
                 and self.hostCombo.currentText() !_ ''
-                and self.portLineEdit.text() !_ '')
+                and self.portLineEdit.t__() !_ '')
 
     ___ sessionOpened(self):
         config _ self.networkSession.configuration()

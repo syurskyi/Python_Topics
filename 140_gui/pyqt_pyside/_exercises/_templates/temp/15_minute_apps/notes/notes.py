@@ -16,7 +16,7 @@ Base _ declarative_base()
 c_ Note(Base):
     __tablename__ _ 'note'
     id _ Column(Integer, primary_key_True)
-    text _ Column(String(1000), nullable_False)
+    t__ _ Column(String(1000), nullable_False)
     x _ Column(Integer, nullable_False, default_0)
     y _ Column(Integer, nullable_False, default_0)
 
@@ -58,13 +58,13 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
 
     ___ load(self):
         self.move(self.obj.x, self.obj.y)
-        self.textEdit.setHtml(self.obj.text)
+        self.textEdit.setHtml(self.obj.t__)
         _ACTIVE_NOTES[self.obj.id] _ self
 
     ___ save(self):
         self.obj.x _ self.x()
         self.obj.y _ self.y()
-        self.obj.text _ self.textEdit.toHtml()
+        self.obj.t__ _ self.textEdit.toHtml()
         session.add(self.obj)
         session.commit()
         _ACTIVE_NOTES[self.obj.id] _ self

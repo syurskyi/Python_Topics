@@ -252,7 +252,7 @@ c_ Colors(object):
     @classmethod
     ___ postConfigure(cls):
         __ no. cls.noAdapt:
-            w _ QWidget()
+            w _ ?W..
 
             __ w.depth() < 16:
                 cls.useEightBitPalette _ True

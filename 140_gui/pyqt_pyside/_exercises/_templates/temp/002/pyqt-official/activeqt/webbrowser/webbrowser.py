@@ -69,7 +69,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
         self.addressEdit _ QLineEdit(self.tbAddress)
         self.tbAddress.insertWidget(self.actionGo, self.addressEdit)
 
-        self.addressEdit.returnPressed.c..(self.actionGo.trigger)
+        self.addressEdit.rP__.c..(self.actionGo.trigger)
         self.actionBack.t__.c..(self.WebBrowser.GoBack)
         self.actionForward.t__.c..(self.WebBrowser.GoForward)
         self.actionStop.t__.c..(self.WebBrowser.Stop)
@@ -115,16 +115,16 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
     @pyqtSlot()
     ___ on_actionGo_triggered(self):
         self.WebBrowser.dynamicCall('Navigate(const QString&)',
-                self.addressEdit.text())
+                self.addressEdit.t__())
 
     @pyqtSlot()
     ___ on_actionNewWindow_triggered(self):
         window _ MainWindow()
         window.s..
-        __ self.addressEdit.text().isEmpty
+        __ self.addressEdit.t__().isEmpty
             r_;
 
-        window.addressEdit.sT..(self.addressEdit.text())
+        window.addressEdit.sT..(self.addressEdit.t__())
         window.actionStop.setEnabled(True)
         window.on_actionGo_triggered()
 

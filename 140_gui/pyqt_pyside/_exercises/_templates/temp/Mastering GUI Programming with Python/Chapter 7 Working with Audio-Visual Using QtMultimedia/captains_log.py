@@ -16,12 +16,12 @@ c_ MainWindow(qtw.QMainWindow):
         super().__init__()
         # Main framework
         self.resize(qtc.QSize(800, 600))
-        base_widget _ qtw.QWidget()
-        base_widget.setLayout(qtw.QHBoxLayout())
+        base_widget _ qtw.?W..
+        base_widget.sL..(qtw.QHBoxLayout())
         notebook _ qtw.QTabWidget()
-        base_widget.layout().addWidget(notebook)
+        base_widget.layout().aW..(notebook)
         self.file_list _ qtw.QListWidget()
-        base_widget.layout().addWidget(self.file_list)
+        base_widget.layout().aW..(self.file_list)
 
         self.sCW..(base_widget)
 
@@ -121,7 +121,7 @@ c_ MainWindow(qtw.QMainWindow):
             self.file_list.addItem(fn)
 
     ___ on_file_selected  item):
-        fn _ item.text()
+        fn _ item.t__()
         url _ qtc.QUrl.fromLocalFile(self.video_dir.filePath(fn))
         content _ qtmm.QMediaContent(url)
         self.player.setMedia(content)

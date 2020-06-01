@@ -86,7 +86,7 @@ __ __name__ == '__main__':
 
     w _ QGraphicsWidget(N.., __.Window)
     w.setPos(20, 20)
-    w.setLayout(l)
+    w.sL..(l)
 
     # Vertical.
     l.addAnchor(a, __.AnchorTop, l, __.AnchorTop)

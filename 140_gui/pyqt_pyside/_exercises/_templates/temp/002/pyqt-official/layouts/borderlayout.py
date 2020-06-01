@@ -74,7 +74,7 @@ c_ BorderLayout(QLayout):
     ___ addItem  item):
         self.add(item, self.West)
 
-    ___ addWidget  widget, position):
+    ___ aW..  widget, position):
         self.add(QWidgetItem(widget), position)
 
     ___ expandingDirections(self):
@@ -198,33 +198,33 @@ c_ Window(QWidget):
         centralWidget.sPT..("Central widget")
 
         layout _ BorderLayout()
-        layout.addWidget(centralWidget, BorderLayout.Center)
+        layout.aW..(centralWidget, BorderLayout.Center)
 
         # Because BorderLayout doesn't call its super-class addWidget() it
         # doesn't take ownership of the widgets until setLayout() is called.
         # Therefore we keep a local reference to each label to prevent it being
         # garbage collected too soon.
         label_n _ self.createLabel("North")
-        layout.addWidget(label_n, BorderLayout.North)
+        layout.aW..(label_n, BorderLayout.North)
 
         label_w _ self.createLabel("West")
-        layout.addWidget(label_w, BorderLayout.West)
+        layout.aW..(label_w, BorderLayout.West)
 
         label_e1 _ self.createLabel("East 1")
-        layout.addWidget(label_e1, BorderLayout.East)
+        layout.aW..(label_e1, BorderLayout.East)
 
         label_e2 _ self.createLabel("East 2")
-        layout.addWidget(label_e2, BorderLayout.East)
+        layout.aW..(label_e2, BorderLayout.East)
 
         label_s _ self.createLabel("South")
-        layout.addWidget(label_s, BorderLayout.South)
+        layout.aW..(label_s, BorderLayout.South)
 
-        self.setLayout(layout)
+        self.sL..(layout)
 
         self.setWindowTitle("Border Layout")
 
-    ___ createLabel  text):
-        label _ QLabel(text)
+    ___ createLabel  t__):
+        label _ QLabel(t__)
         label.setFrameStyle(QFrame.Box | QFrame.Raised)
 
         r_ label

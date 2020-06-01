@@ -69,11 +69,11 @@ c_ Window(QWidget):
         self.glWidget.zRotationChanged.c..(self.zSlider.setValue)
 
         mainLayout _ QHBoxLayout()
-        mainLayout.addWidget(self.glWidget)
-        mainLayout.addWidget(self.xSlider)
-        mainLayout.addWidget(self.ySlider)
-        mainLayout.addWidget(self.zSlider)
-        self.setLayout(mainLayout)
+        mainLayout.aW..(self.glWidget)
+        mainLayout.aW..(self.xSlider)
+        mainLayout.aW..(self.ySlider)
+        mainLayout.aW..(self.zSlider)
+        self.sL..(mainLayout)
 
         self.xSlider.setValue(15 * 16)
         self.ySlider.setValue(345 * 16)

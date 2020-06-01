@@ -147,8 +147,8 @@ c_ Window(QWidget):
         self.shapeComboBox.addItem("Truck")
 
         layout _ QGridLayout()
-        layout.addWidget(self.originalRenderArea, 0, 0)
-        layout.addWidget(self.shapeComboBox, 1, 0)
+        layout.aW..(self.originalRenderArea, 0, 0)
+        layout.aW..(self.shapeComboBox, 1, 0)
 
         self.transformedRenderAreas _ list(range(Window.NumTransformedAreas))
         self.operationComboBoxes _ list(range(Window.NumTransformedAreas))
@@ -164,10 +164,10 @@ c_ Window(QWidget):
 
             self.operationComboBoxes[i].activated.c..(self.operationChanged)
 
-            layout.addWidget(self.transformedRenderAreas[i], 0, i + 1)
-            layout.addWidget(self.operationComboBoxes[i], 1, i + 1)
+            layout.aW..(self.transformedRenderAreas[i], 0, i + 1)
+            layout.aW..(self.operationComboBoxes[i], 1, i + 1)
 
-        self.setLayout(layout)
+        self.sL..(layout)
         self.setupShapes()
         self.shapeSelected(0)
 
@@ -215,13 +215,13 @@ c_ Window(QWidget):
         house.addRect(15.0, 5.0, 20.0, 35.0)
         house.addRect(-35.0, -15.0, 25.0, 25.0)
 
-        text _ QPainterPath()
+        t__ _ QPainterPath()
         font _ QFont()
         font.setPixelSize(50)
         fontBoundingRect _ QFontMetrics(font).boundingRect("Qt")
-        text.addText(-QPointF(fontBoundingRect.center()), font, "Qt")
+        t__.addText(-QPointF(fontBoundingRect.center()), font, "Qt")
 
-        self.shapes _ (clock, house, text, truck)
+        self.shapes _ (clock, house, t__, truck)
 
         self.shapeComboBox.activated.c..(self.shapeSelected)
 

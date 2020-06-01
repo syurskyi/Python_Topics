@@ -149,7 +149,7 @@ __ __name__ == '__main__':
     machine _ QStateMachine()
 
     group _ QState()
-    timer _ QTimer()
+    timer _ ?T..
     timer.setInterval(1250)
     timer.setSingleShot(True)
     group.entered.c..(timer.start)

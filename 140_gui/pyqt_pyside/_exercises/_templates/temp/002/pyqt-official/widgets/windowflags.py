@@ -59,10 +59,10 @@ c_ PreviewWindow(QWidget):
         closeButton _ ?PB..("&Close")
         closeButton.c__.c..(self.close)
 
-        layout _ QVBoxLayout()
-        layout.addWidget(self.textEdit)
-        layout.addWidget(closeButton)
-        self.setLayout(layout)
+        layout _ ?VBL..
+        layout.aW..(self.textEdit)
+        layout.aW..(closeButton)
+        self.sL..(layout)
 
         self.setWindowTitle("Preview")
 
@@ -72,52 +72,52 @@ c_ PreviewWindow(QWidget):
         flag_type _ (flags & __.WindowType_Mask)
 
         __ flag_type == __.Window:
-            text _ "Qt.Window"
+            t__ _ "Qt.Window"
         ____ flag_type == __.Dialog:
-            text _ "Qt.Dialog"
+            t__ _ "Qt.Dialog"
         ____ flag_type == __.Sheet:
-            text _ "Qt.Sheet"
+            t__ _ "Qt.Sheet"
         ____ flag_type == __.Drawer:
-            text _ "Qt.Drawer"
+            t__ _ "Qt.Drawer"
         ____ flag_type == __.Popup:
-            text _ "Qt.Popup"
+            t__ _ "Qt.Popup"
         ____ flag_type == __.Tool:
-            text _ "Qt.Tool"
+            t__ _ "Qt.Tool"
         ____ flag_type == __.ToolTip:
-            text _ "Qt.ToolTip"
+            t__ _ "Qt.ToolTip"
         ____ flag_type == __.SplashScreen:
-            text _ "Qt.SplashScreen"
+            t__ _ "Qt.SplashScreen"
         ____
-            text _ ""
+            t__ _ ""
 
         __ flags & __.MSWindowsFixedSizeDialogHint:
-            text +_ "\n| Qt.MSWindowsFixedSizeDialogHint"
+            t__ +_ "\n| Qt.MSWindowsFixedSizeDialogHint"
         __ flags & __.X11BypassWindowManagerHint:
-            text +_ "\n| Qt.X11BypassWindowManagerHint"
+            t__ +_ "\n| Qt.X11BypassWindowManagerHint"
         __ flags & __.FramelessWindowHint:
-            text +_ "\n| Qt.FramelessWindowHint"
+            t__ +_ "\n| Qt.FramelessWindowHint"
         __ flags & __.WindowTitleHint:
-            text +_ "\n| Qt.WindowTitleHint"
+            t__ +_ "\n| Qt.WindowTitleHint"
         __ flags & __.WindowSystemMenuHint:
-            text +_ "\n| Qt.WindowSystemMenuHint"
+            t__ +_ "\n| Qt.WindowSystemMenuHint"
         __ flags & __.WindowMinimizeButtonHint:
-            text +_ "\n| Qt.WindowMinimizeButtonHint"
+            t__ +_ "\n| Qt.WindowMinimizeButtonHint"
         __ flags & __.WindowMaximizeButtonHint:
-            text +_ "\n| Qt.WindowMaximizeButtonHint"
+            t__ +_ "\n| Qt.WindowMaximizeButtonHint"
         __ flags & __.WindowCloseButtonHint:
-            text +_ "\n| Qt.WindowCloseButtonHint"
+            t__ +_ "\n| Qt.WindowCloseButtonHint"
         __ flags & __.WindowContextHelpButtonHint:
-            text +_ "\n| Qt.WindowContextHelpButtonHint"
+            t__ +_ "\n| Qt.WindowContextHelpButtonHint"
         __ flags & __.WindowShadeButtonHint:
-            text +_ "\n| Qt.WindowShadeButtonHint"
+            t__ +_ "\n| Qt.WindowShadeButtonHint"
         __ flags & __.WindowStaysOnTopHint:
-            text +_ "\n| Qt.WindowStaysOnTopHint"
+            t__ +_ "\n| Qt.WindowStaysOnTopHint"
         __ flags & __.WindowStaysOnBottomHint:
-            text +_ "\n| Qt.WindowStaysOnBottomHint"
+            t__ +_ "\n| Qt.WindowStaysOnBottomHint"
         __ flags & __.CustomizeWindowHint:
-            text +_ "\n| Qt.CustomizeWindowHint"
+            t__ +_ "\n| Qt.CustomizeWindowHint"
 
-        self.textEdit.sPT..(text)
+        self.textEdit.sPT..(t__)
 
 
 c_ ControllerWindow(QWidget):
@@ -134,13 +134,13 @@ c_ ControllerWindow(QWidget):
 
         bottomLayout _ QHBoxLayout()
         bottomLayout.addStretch()
-        bottomLayout.addWidget(quitButton)
+        bottomLayout.aW..(quitButton)
 
-        mainLayout _ QVBoxLayout()
-        mainLayout.addWidget(self.typeGroupBox)
-        mainLayout.addWidget(self.hintsGroupBox)
+        mainLayout _ ?VBL..
+        mainLayout.aW..(self.typeGroupBox)
+        mainLayout.aW..(self.hintsGroupBox)
         mainLayout.addLayout(bottomLayout)
-        self.setLayout(mainLayout)
+        self.sL..(mainLayout)
 
         self.setWindowTitle("Window Flags")
         self.updatePreview()
@@ -219,15 +219,15 @@ c_ ControllerWindow(QWidget):
         self.windowRadioButton.setChecked(True)
 
         layout _ QGridLayout()
-        layout.addWidget(self.windowRadioButton, 0, 0)
-        layout.addWidget(self.dialogRadioButton, 1, 0)
-        layout.addWidget(self.sheetRadioButton, 2, 0)
-        layout.addWidget(self.drawerRadioButton, 3, 0)
-        layout.addWidget(self.popupRadioButton, 0, 1)
-        layout.addWidget(self.toolRadioButton, 1, 1)
-        layout.addWidget(self.toolTipRadioButton, 2, 1)
-        layout.addWidget(self.splashScreenRadioButton, 3, 1)
-        self.typeGroupBox.setLayout(layout)
+        layout.aW..(self.windowRadioButton, 0, 0)
+        layout.aW..(self.dialogRadioButton, 1, 0)
+        layout.aW..(self.sheetRadioButton, 2, 0)
+        layout.aW..(self.drawerRadioButton, 3, 0)
+        layout.aW..(self.popupRadioButton, 0, 1)
+        layout.aW..(self.toolRadioButton, 1, 1)
+        layout.aW..(self.toolTipRadioButton, 2, 1)
+        layout.aW..(self.splashScreenRadioButton, 3, 1)
+        self.typeGroupBox.sL..(layout)
 
     ___ createHintsGroupBox(self):
         self.hintsGroupBox _ QGroupBox("Hints")
@@ -247,28 +247,28 @@ c_ ControllerWindow(QWidget):
         self.customizeWindowHintCheckBox _ self.createCheckBox("Customize window")
 
         layout _ QGridLayout()
-        layout.addWidget(self.msWindowsFixedSizeDialogCheckBox, 0, 0)
-        layout.addWidget(self.x11BypassWindowManagerCheckBox, 1, 0)
-        layout.addWidget(self.framelessWindowCheckBox, 2, 0)
-        layout.addWidget(self.windowTitleCheckBox, 3, 0)
-        layout.addWidget(self.windowSystemMenuCheckBox, 4, 0)
-        layout.addWidget(self.windowMinimizeButtonCheckBox, 0, 1)
-        layout.addWidget(self.windowMaximizeButtonCheckBox, 1, 1)
-        layout.addWidget(self.windowCloseButtonCheckBox, 2, 1)
-        layout.addWidget(self.windowContextHelpButtonCheckBox, 3, 1)
-        layout.addWidget(self.windowShadeButtonCheckBox, 4, 1)
-        layout.addWidget(self.windowStaysOnTopCheckBox, 5, 1)
-        layout.addWidget(self.windowStaysOnBottomCheckBox, 6, 1)
-        layout.addWidget(self.customizeWindowHintCheckBox, 5, 0)
-        self.hintsGroupBox.setLayout(layout)
+        layout.aW..(self.msWindowsFixedSizeDialogCheckBox, 0, 0)
+        layout.aW..(self.x11BypassWindowManagerCheckBox, 1, 0)
+        layout.aW..(self.framelessWindowCheckBox, 2, 0)
+        layout.aW..(self.windowTitleCheckBox, 3, 0)
+        layout.aW..(self.windowSystemMenuCheckBox, 4, 0)
+        layout.aW..(self.windowMinimizeButtonCheckBox, 0, 1)
+        layout.aW..(self.windowMaximizeButtonCheckBox, 1, 1)
+        layout.aW..(self.windowCloseButtonCheckBox, 2, 1)
+        layout.aW..(self.windowContextHelpButtonCheckBox, 3, 1)
+        layout.aW..(self.windowShadeButtonCheckBox, 4, 1)
+        layout.aW..(self.windowStaysOnTopCheckBox, 5, 1)
+        layout.aW..(self.windowStaysOnBottomCheckBox, 6, 1)
+        layout.aW..(self.customizeWindowHintCheckBox, 5, 0)
+        self.hintsGroupBox.sL..(layout)
 
-    ___ createCheckBox  text):
-        checkBox _ QCheckBox(text)
+    ___ createCheckBox  t__):
+        checkBox _ QCheckBox(t__)
         checkBox.c__.c..(self.updatePreview)
         r_ checkBox
 
-    ___ createRadioButton  text):
-        button _ QRadioButton(text)
+    ___ createRadioButton  t__):
+        button _ QRadioButton(t__)
         button.c__.c..(self.updatePreview)
         r_ button
 

@@ -12,7 +12,7 @@ c_ MainWindow ?MW..
     ___ __init__  *args, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
 
-        layout _ QVBoxLayout()
+        layout _ ?VBL..
         self.editor _ ?PTE..  # Could also use a QTextEdit and set self.editor.setAcceptRichText(False)
 
 
@@ -25,10 +25,10 @@ c_ MainWindow ?MW..
         # If none, we haven't got a file open yet (or creating new).
         self.path _ N..
 
-        layout.addWidget(self.editor)
+        layout.aW..(self.editor)
 
-        container _ QWidget()
-        container.setLayout(layout)
+        container _ ?W..
+        container.sL..(layout)
         self.sCW..(container)
 
         self.status _ QStatusBar()
@@ -128,14 +128,14 @@ c_ MainWindow ?MW..
         __ path:
             try:
                 w__ o..(path, 'rU') __ f:
-                    text _ f.read()
+                    t__ _ f.read()
 
             except Exception __ e:
                 self.dialog_critical(str(e))
 
             ____
                 self.path _ path
-                self.editor.sPT..(text)
+                self.editor.sPT..(t__)
                 self.update_title()
 
     ___ file_save(self):
@@ -155,10 +155,10 @@ c_ MainWindow ?MW..
         self._save_to_path(path)
 
     ___ _save_to_path  path):
-        text _ self.editor.toPlainText()
+        t__ _ self.editor.toPlainText()
         try:
             w__ o..(path, 'w') __ f:
-                f.w..(text)
+                f.w..(t__)
 
         except Exception __ e:
             self.dialog_critical(str(e))

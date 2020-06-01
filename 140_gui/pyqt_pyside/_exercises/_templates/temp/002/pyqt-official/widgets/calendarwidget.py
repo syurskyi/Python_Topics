@@ -60,12 +60,12 @@ c_ Window(QWidget):
         self.createTextFormatsGroupBox()
 
         layout _ QGridLayout()
-        layout.addWidget(self.previewGroupBox, 0, 0)
-        layout.addWidget(self.generalOptionsGroupBox, 0, 1)
-        layout.addWidget(self.datesGroupBox, 1, 0)
-        layout.addWidget(self.textFormatsGroupBox, 1, 1)
+        layout.aW..(self.previewGroupBox, 0, 0)
+        layout.aW..(self.generalOptionsGroupBox, 0, 1)
+        layout.aW..(self.datesGroupBox, 1, 0)
+        layout.aW..(self.textFormatsGroupBox, 1, 1)
         layout.setSizeConstraint(QLayout.SetFixedSize)
-        self.setLayout(layout)
+        self.sL..(layout)
 
         self.previewLayout.setRowMinimumHeight(0,
                 self.calendar.sizeHint().height())
@@ -131,14 +131,14 @@ c_ Window(QWidget):
         self.calendar.setWeekdayTextFormat(__.Sunday, format)
 
     ___ reformatHeaders(self):
-        text _ self.headerTextFormatCombo.currentText()
+        t__ _ self.headerTextFormatCombo.currentText()
         format _ QTextCharFormat()
 
-        __ text == "Bold":
+        __ t__ == "Bold":
             format.setFontWeight(QFont.Bold)
-        ____ text == "Italic":
+        ____ t__ == "Italic":
             format.setFontItalic(True)
-        ____ text == "Green":
+        ____ t__ == "Green":
             format.setForeground(__.green)
 
         self.calendar.setHeaderTextFormat(format)
@@ -175,8 +175,8 @@ c_ Window(QWidget):
         self.calendar.currentPageChanged.c..(self.reformatCalendarPage)
 
         self.previewLayout _ QGridLayout()
-        self.previewLayout.addWidget(self.calendar, 0, 0, __.AlignCenter)
-        self.previewGroupBox.setLayout(self.previewLayout)
+        self.previewLayout.aW..(self.calendar, 0, 0, __.AlignCenter)
+        self.previewGroupBox.sL..(self.previewLayout)
  
     ___ createGeneralOptionsGroupBox(self):
         self.generalOptionsGroupBox _ QGroupBox("General Options")
@@ -267,23 +267,23 @@ c_ Window(QWidget):
                 self.verticalHeaderChanged)
 
         checkBoxLayout _ QHBoxLayout()
-        checkBoxLayout.addWidget(self.gridCheckBox)
+        checkBoxLayout.aW..(self.gridCheckBox)
         checkBoxLayout.addStretch()
-        checkBoxLayout.addWidget(self.navigationCheckBox)
+        checkBoxLayout.aW..(self.navigationCheckBox)
 
         outerLayout _ QGridLayout()
-        outerLayout.addWidget(self.localeLabel, 0, 0)
-        outerLayout.addWidget(self.localeCombo, 0, 1)
-        outerLayout.addWidget(self.firstDayLabel, 1, 0)
-        outerLayout.addWidget(self.firstDayCombo, 1, 1)
-        outerLayout.addWidget(self.selectionModeLabel, 2, 0)
-        outerLayout.addWidget(self.selectionModeCombo, 2, 1)
+        outerLayout.aW..(self.localeLabel, 0, 0)
+        outerLayout.aW..(self.localeCombo, 0, 1)
+        outerLayout.aW..(self.firstDayLabel, 1, 0)
+        outerLayout.aW..(self.firstDayCombo, 1, 1)
+        outerLayout.aW..(self.selectionModeLabel, 2, 0)
+        outerLayout.aW..(self.selectionModeCombo, 2, 1)
         outerLayout.addLayout(checkBoxLayout, 3, 0, 1, 2)
-        outerLayout.addWidget(self.horizontalHeaderLabel, 4, 0)
-        outerLayout.addWidget(self.horizontalHeaderCombo, 4, 1)
-        outerLayout.addWidget(self.verticalHeaderLabel, 5, 0)
-        outerLayout.addWidget(self.verticalHeaderCombo, 5, 1)
-        self.generalOptionsGroupBox.setLayout(outerLayout)
+        outerLayout.aW..(self.horizontalHeaderLabel, 4, 0)
+        outerLayout.aW..(self.horizontalHeaderCombo, 4, 1)
+        outerLayout.aW..(self.verticalHeaderLabel, 5, 0)
+        outerLayout.aW..(self.verticalHeaderCombo, 5, 1)
+        self.generalOptionsGroupBox.sL..(outerLayout)
 
         self.firstDayChanged(self.firstDayCombo.currentIndex())
         self.selectionModeChanged(self.selectionModeCombo.currentIndex())
@@ -326,15 +326,15 @@ c_ Window(QWidget):
         self.maximumDateEdit.dateChanged.c..(self.maximumDateChanged)
  
         dateBoxLayout _ QGridLayout()
-        dateBoxLayout.addWidget(self.currentDateLabel, 1, 0)
-        dateBoxLayout.addWidget(self.currentDateEdit, 1, 1)
-        dateBoxLayout.addWidget(self.minimumDateLabel, 0, 0)
-        dateBoxLayout.addWidget(self.minimumDateEdit, 0, 1)
-        dateBoxLayout.addWidget(self.maximumDateLabel, 2, 0)
-        dateBoxLayout.addWidget(self.maximumDateEdit, 2, 1)
+        dateBoxLayout.aW..(self.currentDateLabel, 1, 0)
+        dateBoxLayout.aW..(self.currentDateEdit, 1, 1)
+        dateBoxLayout.aW..(self.minimumDateLabel, 0, 0)
+        dateBoxLayout.aW..(self.minimumDateEdit, 0, 1)
+        dateBoxLayout.aW..(self.maximumDateLabel, 2, 0)
+        dateBoxLayout.aW..(self.maximumDateEdit, 2, 1)
         dateBoxLayout.setRowStretch(3, 1)
 
-        self.datesGroupBox.setLayout(dateBoxLayout)
+        self.datesGroupBox.sL..(dateBoxLayout)
 
     ___ createTextFormatsGroupBox(self):
         self.textFormatsGroupBox _ QGroupBox("Text Formats")
@@ -375,19 +375,19 @@ c_ Window(QWidget):
         self.mayFirstCheckBox.toggled.c..(self.reformatCalendarPage)
 
         checkBoxLayout _ QHBoxLayout()
-        checkBoxLayout.addWidget(self.firstFridayCheckBox)
+        checkBoxLayout.aW..(self.firstFridayCheckBox)
         checkBoxLayout.addStretch()
-        checkBoxLayout.addWidget(self.mayFirstCheckBox)
+        checkBoxLayout.aW..(self.mayFirstCheckBox)
 
         outerLayout _ QGridLayout()
-        outerLayout.addWidget(self.weekdayColorLabel, 0, 0)
-        outerLayout.addWidget(self.weekdayColorCombo, 0, 1)
-        outerLayout.addWidget(self.weekendColorLabel, 1, 0)
-        outerLayout.addWidget(self.weekendColorCombo, 1, 1)
-        outerLayout.addWidget(self.headerTextFormatLabel, 2, 0)
-        outerLayout.addWidget(self.headerTextFormatCombo, 2, 1)
+        outerLayout.aW..(self.weekdayColorLabel, 0, 0)
+        outerLayout.aW..(self.weekdayColorCombo, 0, 1)
+        outerLayout.aW..(self.weekendColorLabel, 1, 0)
+        outerLayout.aW..(self.weekendColorCombo, 1, 1)
+        outerLayout.aW..(self.headerTextFormatLabel, 2, 0)
+        outerLayout.aW..(self.headerTextFormatCombo, 2, 1)
         outerLayout.addLayout(checkBoxLayout, 3, 0, 1, 2)
-        self.textFormatsGroupBox.setLayout(outerLayout)
+        self.textFormatsGroupBox.sL..(outerLayout)
 
         self.weekdayFormatChanged()
         self.weekendFormatChanged()

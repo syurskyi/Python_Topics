@@ -47,8 +47,8 @@ ____ util ______ decode_pos
 c_ SpreadSheetItem(QTableWidgetItem):
 
     ___ __init__  text_None):
-        __ text __ no. N..:
-            super(SpreadSheetItem, self).__init__(text)
+        __ t__ __ no. N..:
+            super(SpreadSheetItem, self).__init__(t__)
         ____
             super(SpreadSheetItem, self).__init__()
 
@@ -120,12 +120,12 @@ c_ SpreadSheetItem(QTableWidgetItem):
         end _ widget.item(secondRow, secondCol)
         firstVal _ 0
         try:
-            firstVal _ start and int(start.text()) or 0
+            firstVal _ start and int(start.t__()) or 0
         except ValueError:
             pass
         secondVal _ 0
         try:
-            secondVal _ end and int(end.text()) or 0
+            secondVal _ end and int(end.t__()) or 0
         except ValueError:
             pass
         result _ N..
@@ -136,7 +136,7 @@ c_ SpreadSheetItem(QTableWidgetItem):
                     tableItem _ widget.item(r, c)
                     __ tableItem and tableItem !_ self:
                         try:
-                            sum_ +_ int(tableItem.text())
+                            sum_ +_ int(tableItem.t__())
                         except ValueError:
                             pass
             result _ sum_
@@ -153,7 +153,7 @@ c_ SpreadSheetItem(QTableWidgetItem):
                 result _ (firstVal / secondVal)
         ____ op == "=":
             __ start:
-                result _ start.text()
+                result _ start.t__()
         ____
             result _ formula
         r_ result

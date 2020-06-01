@@ -11,20 +11,20 @@ server _ Session()
 # GUI:
 app _ ?
 text_area _ ?PTE..
-text_area.setFocusPolicy(__.NoFocus)
-message _ QLineEdit()
-layout _ QVBoxLayout()
-layout.addWidget(text_area)
-layout.addWidget(message)
-window _ QWidget()
-window.setLayout(layout)
+text_area.sFP..(__.NF..)
+message _ ?LE..
+layout _ ?VBL..
+layout.aW..(text_area)
+layout.aW..(message)
+window _ ?W..
+window.sL..(layout)
 window.s..
 
 # Event handlers:
 new_messages _ []
 ___ fetch_new_messages
     while True:
-        response _ server.get(chat_url).text
+        response _ server.g..(chat_url).t__
         __ response:
             new_messages.append(response)
         sleep(.5)
@@ -34,15 +34,15 @@ thread.start()
 
 ___ display_new_messages
     while new_messages:
-        text_area.appendPlainText(new_messages.pop(0))
+        text_area.aPT..(new_messages.pop(0))
 
 ___ send_message
-    server.post(chat_url, {"name": name, "message": message.text()})
+    server.post(chat_url, {"name": name, "message": message.t__()})
     message.clear()
 
 # Signals:
-message.returnPressed.c..(send_message)
-timer _ QTimer()
+message.rP__.c..(send_message)
+timer _ ?T..
 timer.timeout.c..(display_new_messages)
 timer.start(1000)
 

@@ -81,7 +81,7 @@ c_ DropArea(QLabel):
             self.sT..(mimeData.html())
             self.setTextFormat(__.RichText)
         ____ mimeData.hasText
-            self.sT..(mimeData.text())
+            self.sT..(mimeData.t__())
             self.setTextFormat(__.PlainText)
         ____ mimeData.hasUrls
             self.sT..("\n".join([url.path() for url in mimeData.urls()]))
@@ -131,12 +131,12 @@ c_ DropSiteWindow(QWidget):
         self.quitButton.pressed.c..(self.close)
         self.clearButton.pressed.c..(self.dropArea.clear)
 
-        mainLayout _ QVBoxLayout()
-        mainLayout.addWidget(self.abstractLabel)
-        mainLayout.addWidget(self.dropArea)
-        mainLayout.addWidget(self.formatsTable)
-        mainLayout.addWidget(self.buttonBox)
-        self.setLayout(mainLayout)
+        mainLayout _ ?VBL..
+        mainLayout.aW..(self.abstractLabel)
+        mainLayout.aW..(self.dropArea)
+        mainLayout.aW..(self.formatsTable)
+        mainLayout.aW..(self.buttonBox)
+        self.sL..(mainLayout)
 
         self.setWindowTitle("Drop Site")
         self.setMinimumSize(350, 500)
@@ -153,18 +153,18 @@ c_ DropSiteWindow(QWidget):
             formatItem.setTextAlignment(__.AlignTop | __.AlignLeft)
 
             __ format == 'text/plain':
-                text _ mimeData.text().strip()
+                t__ _ mimeData.t__().strip()
             ____ format == 'text/html':
-                text _ mimeData.html().strip()
+                t__ _ mimeData.html().strip()
             ____ format == 'text/uri-list':
-                text _ " ".join([url.toString() for url in mimeData.urls()])
+                t__ _ " ".join([url.toString() for url in mimeData.urls()])
             ____
-                text _ " ".join(["%02X" % ord(datum) for datum in mimeData.data(format)])
+                t__ _ " ".join(["%02X" % ord(datum) for datum in mimeData.data(format)])
 
             row _ self.formatsTable.rowCount()
             self.formatsTable.insertRow(row)
             self.formatsTable.setItem(row, 0, QTableWidgetItem(format))
-            self.formatsTable.setItem(row, 1, QTableWidgetItem(text))
+            self.formatsTable.setItem(row, 1, QTableWidgetItem(t__))
 
         self.formatsTable.resizeColumnToContents(0)
 

@@ -26,7 +26,7 @@ c_ Ui_MainWindow(object):
         self.view.setAnimated F..
         self.view.setAllColumnsShowFocus(True)
         self.view.setObjectName("view")
-        self.vboxlayout.addWidget(self.view)
+        self.vboxlayout.aW..(self.view)
         MainWindow.sCW..(self.centralwidget)
         self.menubar _ ?W...QMenuBar(MainWindow)
         self.menubar.setGeometry(?C...QRect(0, 0, 573, 31))

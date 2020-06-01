@@ -256,10 +256,10 @@ c_ MandelbrotWidget(QWidget):
             painter.drawPixmap(exposed, self.pixmap, exposed)
             painter.restore()
 
-        text _ "Use mouse wheel or the '+' and '-' keys to zoom. Press and " \
+        t__ _ "Use mouse wheel or the '+' and '-' keys to zoom. Press and " \
                 "hold left mouse button to scroll."
         metrics _ painter.fontMetrics()
-        textWidth _ metrics.width(text)
+        textWidth _ metrics.width(t__)
 
         painter.setPen(__.NoPen)
         painter.setBrush(?C..(0, 0, 0, 127))
@@ -267,7 +267,7 @@ c_ MandelbrotWidget(QWidget):
                 metrics.lineSpacing() + 5)
         painter.setPen(__.white)
         painter.drawText((self.width() - textWidth) / 2,
-                metrics.leading() + metrics.ascent(), text)
+                metrics.leading() + metrics.ascent(), t__)
 
     ___ resizeEvent  event):
         self.thread.render(self.centerX, self.centerY, self.curScale,

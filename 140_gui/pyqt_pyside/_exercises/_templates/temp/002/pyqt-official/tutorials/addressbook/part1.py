@@ -51,18 +51,18 @@ c_ AddressBook(QWidget):
         super(AddressBook, self).__init__(parent)
 
         nameLabel _ QLabel("Name:")
-        self.nameLine _ QLineEdit()
+        self.nameLine _ ?LE..
 
         addressLabel _ QLabel("Address:")
         self.addressText _ QTextEdit()
 
         mainLayout _ QGridLayout()
-        mainLayout.addWidget(nameLabel, 0, 0)
-        mainLayout.addWidget(self.nameLine, 0, 1)
-        mainLayout.addWidget(addressLabel, 1, 0, __.AlignTop)
-        mainLayout.addWidget(self.addressText, 1, 1)
+        mainLayout.aW..(nameLabel, 0, 0)
+        mainLayout.aW..(self.nameLine, 0, 1)
+        mainLayout.aW..(addressLabel, 1, 0, __.AlignTop)
+        mainLayout.aW..(self.addressText, 1, 1)
 
-        self.setLayout(mainLayout)
+        self.sL..(mainLayout)
         self.setWindowTitle("Simple Address Book")
 
 

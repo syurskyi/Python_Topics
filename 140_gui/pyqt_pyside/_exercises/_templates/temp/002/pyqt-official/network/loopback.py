@@ -80,15 +80,15 @@ c_ Dialog(QDialog):
         self.tcpClient.bytesWritten.c..(self.updateClientProgress)
         self.tcpClient.error.c..(self.displayError)
 
-        mainLayout _ QVBoxLayout()
-        mainLayout.addWidget(self.clientProgressBar)
-        mainLayout.addWidget(self.clientStatusLabel)
-        mainLayout.addWidget(self.serverProgressBar)
-        mainLayout.addWidget(self.serverStatusLabel)
+        mainLayout _ ?VBL..
+        mainLayout.aW..(self.clientProgressBar)
+        mainLayout.aW..(self.clientStatusLabel)
+        mainLayout.aW..(self.serverProgressBar)
+        mainLayout.aW..(self.serverStatusLabel)
         mainLayout.addStretch(1)
         mainLayout.addSpacing(10)
-        mainLayout.addWidget(buttonBox)
-        self.setLayout(mainLayout)
+        mainLayout.aW..(buttonBox)
+        self.sL..(mainLayout)
 
         self.setWindowTitle("Loopback")
 

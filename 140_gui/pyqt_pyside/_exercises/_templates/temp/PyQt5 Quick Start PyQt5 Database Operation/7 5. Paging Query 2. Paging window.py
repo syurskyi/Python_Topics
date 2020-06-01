@@ -9,7 +9,7 @@ c_ DataGrid(QWidget):
         # Database Connection
         self.db _ N..
         # Layout Manager
-        self.layout _ QVBoxLayout()
+        self.layout _ ?VBL..
         # Query Model
         self.queryModel _ QSqlQueryModel()
         # Table View
@@ -18,7 +18,7 @@ c_ DataGrid(QWidget):
         #
         self.totalPageLabel _ QLabel()
         self.currentPageLabel _ QLabel()
-        self.switchPageLineEdit _ QLineEdit()
+        self.switchPageLineEdit _ ?LE..
         self.prevButton _ ?PB..("Prev")
         self.nextButton _ ?PB..("Next")
         self.switchPageButton _ ?PB..("Switch")
@@ -30,24 +30,24 @@ c_ DataGrid(QWidget):
     ___ initUI(self):
         self.tableView.horizontalHeader().setStretchLastSection(True)
         self.tableView.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
-        self.layout.addWidget(self.tableView)
+        self.layout.aW..(self.tableView)
 
         hLayout _ QHBoxLayout()
-        hLayout.addWidget(self.prevButton)
-        hLayout.addWidget(self.nextButton)
-        hLayout.addWidget(QLabel("Jump To"))
+        hLayout.aW..(self.prevButton)
+        hLayout.aW..(self.nextButton)
+        hLayout.aW..(QLabel("Jump To"))
         self.switchPageLineEdit.setFixedWidth(40)
-        hLayout.addWidget(self.switchPageLineEdit)
-        hLayout.addWidget(QLabel("page"))
-        hLayout.addWidget(self.switchPageButton)
-        hLayout.addWidget(QLabel("Current page:"))
-        hLayout.addWidget(self.currentPageLabel)
-        hLayout.addWidget(QLabel("Total pages:"))
-        hLayout.addWidget(self.totalPageLabel)
+        hLayout.aW..(self.switchPageLineEdit)
+        hLayout.aW..(QLabel("page"))
+        hLayout.aW..(self.switchPageButton)
+        hLayout.aW..(QLabel("Current page:"))
+        hLayout.aW..(self.currentPageLabel)
+        hLayout.aW..(QLabel("Total pages:"))
+        hLayout.aW..(self.totalPageLabel)
         hLayout.addStretch(1)
 
         self.layout.addLayout(hLayout)
-        self.setLayout(self.layout)
+        self.sL..(self.layout)
 
         self.setWindowTitle("DataGrid")
         self.resize(600, 300)

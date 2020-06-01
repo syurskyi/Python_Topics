@@ -33,19 +33,19 @@ c_ View(qtw.QWidget):
 
     ___ __init__(self):
         super().__init__()
-        self.setLayout(qtw.QVBoxLayout())
-        self.filename _ qtw.QLineEdit()
+        self.sL..(qtw.QVBoxLayout())
+        self.filename _ qtw.?LE..
         self.filecontent _ qtw.QTextEdit()
         self.savebutton _ qtw.?PB..(
             'Save',
             c___self.submit
         )
-        self.layout().addWidget(self.filename)
-        self.layout().addWidget(self.filecontent)
-        self.layout().addWidget(self.savebutton)
+        self.layout().aW..(self.filename)
+        self.layout().aW..(self.filecontent)
+        self.layout().aW..(self.savebutton)
 
     ___ submit(self):
-        filename _ self.filename.text()
+        filename _ self.filename.t__()
         filecontent _ self.filecontent.toPlainText()
         self.submitted.emit(filename, filecontent)
 

@@ -268,11 +268,11 @@ c_ MainWindow ?MW..
         for i, window in enumerate(windows):
             child _ window.widget()
 
-            text _ "%d %s" % (i + 1, child.userFriendlyCurrentFile())
+            t__ _ "%d %s" % (i + 1, child.userFriendlyCurrentFile())
             __ i < 9:
-                text _ '&' + text
+                t__ _ '&' + t__
 
-            action _ self.windowMenu.aA..(text)
+            action _ self.windowMenu.aA..(t__)
             action.setCheckable(True)
             action.setChecked(child __ self.activeMdiChild())
             action.t__.c..(self.windowMapper.map)

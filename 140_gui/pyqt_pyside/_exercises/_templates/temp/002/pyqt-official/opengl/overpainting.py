@@ -132,7 +132,7 @@ c_ GLWidget(QOpenGLWidget):
         self.trolltechGreen _ ?C...fromCmykF(0.40, 0.0, 1.0, 0.0)
         self.trolltechPurple _ ?C...fromCmykF(0.39, 0.39, 0.0, 0.0)
 
-        self.animationTimer _ QTimer()
+        self.animationTimer _ ?T..
         self.animationTimer.setSingleShot F..
         self.animationTimer.timeout.c..(self.animate)
         self.animationTimer.start(25)
@@ -342,14 +342,14 @@ c_ GLWidget(QOpenGLWidget):
         self.gl.glMatrixMode(self.gl.GL_MODELVIEW)
 
     ___ drawInstructions  painter):
-        text _ "Click and drag with the left mouse button to rotate the Qt " \
+        t__ _ "Click and drag with the left mouse button to rotate the Qt " \
                 "logo."
         metrics _ QFontMetrics(self.font())
         border _ max(4, metrics.leading())
 
         rect _ metrics.boundingRect(0, 0, self.width() - 2*border,
                 int(self.height()*0.125), __.AlignCenter | __.TextWordWrap,
-                text)
+                t__)
         painter.setRenderHint(QPainter.TextAntialiasing)
         painter.fillRect(QRect(0, 0, self.width(), rect.height() + 2*border),
                 ?C..(0, 0, 0, 127))
@@ -357,7 +357,7 @@ c_ GLWidget(QOpenGLWidget):
         painter.fillRect(QRect(0, 0, self.width(), rect.height() + 2*border),
                 ?C..(0, 0, 0, 127))
         painter.drawText((self.width() - rect.width())/2, border, rect.width(),
-                rect.height(), __.AlignCenter | __.TextWordWrap, text)
+                rect.height(), __.AlignCenter | __.TextWordWrap, t__)
 
     ___ setClearColor  c):
         self.gl.glClearColor(c.redF(), c.greenF(), c.blueF(), c.alphaF())

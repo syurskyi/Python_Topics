@@ -77,14 +77,14 @@ c_ MainWindow ?MW..
         self.locationEdit _ QLineEdit(self)
         self.locationEdit.setSizePolicy(QSizePolicy.Expanding,
                 self.locationEdit.sizePolicy().verticalPolicy())
-        self.locationEdit.returnPressed.c..(self.changeLocation)
+        self.locationEdit.rP__.c..(self.changeLocation)
 
         toolBar _ self.addToolBar("Navigation")
         toolBar.aA..(self.view.pageAction(QWebPage.Back))
         toolBar.aA..(self.view.pageAction(QWebPage.Forward))
         toolBar.aA..(self.view.pageAction(QWebPage.Reload))
         toolBar.aA..(self.view.pageAction(QWebPage.Stop))
-        toolBar.addWidget(self.locationEdit)
+        toolBar.aW..(self.locationEdit)
 
         viewMenu _ self.mB.. .aM..("&View")
         viewSourceAction _ ?A..("Page Source", self)
@@ -113,7 +113,7 @@ c_ MainWindow ?MW..
     ___ viewSource(self):
         accessManager _ self.view.page().networkAccessManager()
         request _ QNetworkRequest(self.view.url())
-        reply _ accessManager.get(request)
+        reply _ accessManager.g..(request)
         reply.finished.c..(self.slotSourceDownloaded)
 
     ___ slotSourceDownloaded(self):
@@ -129,7 +129,7 @@ c_ MainWindow ?MW..
         self.locationEdit.sT..(self.view.url().toString())
 
     ___ changeLocation(self):
-        url _ QUrl.fromUserInput(self.locationEdit.text())
+        url _ QUrl.fromUserInput(self.locationEdit.t__())
         self.view.load(url)
         self.view.setFocus()
 

@@ -22,8 +22,8 @@ c_ MainWindow(qtw.QMainWindow):
         self.reload.setIcon(style.standardIcon(style.SP_BrowserReload))
         self.stop _ navigation.aA..('Stop')
         self.stop.setIcon(style.standardIcon(style.SP_BrowserStop))
-        self.urlbar _ qtw.QLineEdit()
-        navigation.addWidget(self.urlbar)
+        self.urlbar _ qtw.?LE..
+        navigation.aW..(self.urlbar)
         self.go _ navigation.aA..('Go')
         self.go.setIcon(style.standardIcon(style.SP_DialogOkButton))
 
@@ -51,7 +51,7 @@ c_ MainWindow(qtw.QMainWindow):
         self.reload.t__.c..(self.on_reload)
         self.stop.t__.c..(self.on_stop)
         self.go.t__.c..(self.on_go)
-        self.urlbar.returnPressed.c..(self.on_go)
+        self.urlbar.rP__.c..(self.on_go)
         self.new.c__.c..(self.add_tab)
 
         # Profile sharing
@@ -76,7 +76,7 @@ c_ MainWindow(qtw.QMainWindow):
         # Text search feature
         find_dock _ qtw.QDockWidget('Search')
         self.addDockWidget(qtc.__.BottomDockWidgetArea, find_dock)
-        self.find_text _ qtw.QLineEdit()
+        self.find_text _ qtw.?LE..
         find_dock.setWidget(self.find_text)
         self.find_text.textChanged.c..(self.text_search)
         # init javascript
@@ -139,7 +139,7 @@ c_ MainWindow(qtw.QMainWindow):
 
     ___ on_go(self):
         self.tabs.currentWidget().load(
-            qtc.QUrl(self.urlbar.text()))
+            qtc.QUrl(self.urlbar.t__()))
 
     ##################
     # History Method #

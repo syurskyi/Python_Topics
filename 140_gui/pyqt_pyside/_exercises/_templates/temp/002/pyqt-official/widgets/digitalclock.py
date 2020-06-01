@@ -63,11 +63,11 @@ c_ DigitalClock(QLCDNumber):
 
     ___ showTime(self):
         time _ QTime.currentTime()
-        text _ time.toString('hh:mm')
+        t__ _ time.toString('hh:mm')
         __ (time.second() % 2) == 0:
-            text _ text[:2] + ' ' + text[3:]
+            t__ _ t__[:2] + ' ' + t__[3:]
 
-        self.display(text)
+        self.display(t__)
 
 
 __ __name__ == '__main__':

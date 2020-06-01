@@ -53,10 +53,10 @@ c_ MainWindow ?MW..
     ___ __init__(self):
         super(MainWindow, self).__init__()
 
-        widget _ QWidget()
+        widget _ ?W..
         self.sCW..(widget)
 
-        topFiller _ QWidget()
+        topFiller _ ?W..
         topFiller.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
 
         self.infoLabel _ QLabel(
@@ -64,15 +64,15 @@ c_ MainWindow ?MW..
                 alignment_Qt.AlignCenter)
         self.infoLabel.setFrameStyle(QFrame.StyledPanel | QFrame.Sunken)
 
-        bottomFiller _ QWidget()
+        bottomFiller _ ?W..
         bottomFiller.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
 
-        vbox _ QVBoxLayout()
+        vbox _ ?VBL..
         vbox.setContentsMargins(5, 5, 5, 5)
-        vbox.addWidget(topFiller)
-        vbox.addWidget(self.infoLabel)
-        vbox.addWidget(bottomFiller)
-        widget.setLayout(vbox)
+        vbox.aW..(topFiller)
+        vbox.aW..(self.infoLabel)
+        vbox.aW..(bottomFiller)
+        widget.sL..(vbox)
 
         self.createActions()
         self.createMenus()

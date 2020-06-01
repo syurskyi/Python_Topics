@@ -50,11 +50,11 @@ ____ ?.?W.. ______ (?A.., QGridLayout, QLayout, QLineEdit,
 
 
 c_ Button(QToolButton):
-    ___ __init__  text, parent_None):
+    ___ __init__  t__, parent_None):
         super(Button, self).__init__(parent)
 
         self.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Preferred)
-        self.sT..(text)
+        self.sT..(t__)
 
     ___ sizeHint(self):
         size _ super(Button, self).sizeHint()
@@ -124,55 +124,55 @@ c_ Calculator(QWidget):
         mainLayout _ QGridLayout()
         mainLayout.setSizeConstraint(QLayout.SetFixedSize)
 
-        mainLayout.addWidget(self.display, 0, 0, 1, 6)
-        mainLayout.addWidget(self.backspaceButton, 1, 0, 1, 2)
-        mainLayout.addWidget(self.clearButton, 1, 2, 1, 2)
-        mainLayout.addWidget(self.clearAllButton, 1, 4, 1, 2)
+        mainLayout.aW..(self.display, 0, 0, 1, 6)
+        mainLayout.aW..(self.backspaceButton, 1, 0, 1, 2)
+        mainLayout.aW..(self.clearButton, 1, 2, 1, 2)
+        mainLayout.aW..(self.clearAllButton, 1, 4, 1, 2)
 
-        mainLayout.addWidget(self.clearMemoryButton, 2, 0)
-        mainLayout.addWidget(self.readMemoryButton, 3, 0)
-        mainLayout.addWidget(self.setMemoryButton, 4, 0)
-        mainLayout.addWidget(self.addToMemoryButton, 5, 0)
+        mainLayout.aW..(self.clearMemoryButton, 2, 0)
+        mainLayout.aW..(self.readMemoryButton, 3, 0)
+        mainLayout.aW..(self.setMemoryButton, 4, 0)
+        mainLayout.aW..(self.addToMemoryButton, 5, 0)
 
         for i in range(1, Calculator.NumDigitButtons):
             row _ ((9 - i) / 3) + 2
             column _ ((i - 1) % 3) + 1
-            mainLayout.addWidget(self.digitButtons[i], row, column)
+            mainLayout.aW..(self.digitButtons[i], row, column)
 
-        mainLayout.addWidget(self.digitButtons[0], 5, 1)
-        mainLayout.addWidget(self.pointButton, 5, 2)
-        mainLayout.addWidget(self.changeSignButton, 5, 3)
+        mainLayout.aW..(self.digitButtons[0], 5, 1)
+        mainLayout.aW..(self.pointButton, 5, 2)
+        mainLayout.aW..(self.changeSignButton, 5, 3)
 
-        mainLayout.addWidget(self.divisionButton, 2, 4)
-        mainLayout.addWidget(self.timesButton, 3, 4)
-        mainLayout.addWidget(self.minusButton, 4, 4)
-        mainLayout.addWidget(self.plusButton, 5, 4)
+        mainLayout.aW..(self.divisionButton, 2, 4)
+        mainLayout.aW..(self.timesButton, 3, 4)
+        mainLayout.aW..(self.minusButton, 4, 4)
+        mainLayout.aW..(self.plusButton, 5, 4)
 
-        mainLayout.addWidget(self.squareRootButton, 2, 5)
-        mainLayout.addWidget(self.powerButton, 3, 5)
-        mainLayout.addWidget(self.reciprocalButton, 4, 5)
-        mainLayout.addWidget(self.equalButton, 5, 5)
-        self.setLayout(mainLayout)
+        mainLayout.aW..(self.squareRootButton, 2, 5)
+        mainLayout.aW..(self.powerButton, 3, 5)
+        mainLayout.aW..(self.reciprocalButton, 4, 5)
+        mainLayout.aW..(self.equalButton, 5, 5)
+        self.sL..(mainLayout)
 
         self.setWindowTitle("Calculator")
 
     ___ digitClicked(self):
         clickedButton _ self.sender()
-        digitValue _ int(clickedButton.text())
+        digitValue _ int(clickedButton.t__())
 
-        __ self.display.text() == '0' and digitValue == 0.0:
+        __ self.display.t__() == '0' and digitValue == 0.0:
             r_
 
         __ self.waitingForOperand:
             self.display.clear()
             self.waitingForOperand _ False
 
-        self.display.sT..(self.display.text() + str(digitValue))
+        self.display.sT..(self.display.t__() + str(digitValue))
 
     ___ unaryOperatorClicked(self):
         clickedButton _ self.sender()
-        clickedOperator _ clickedButton.text()
-        operand _ float(self.display.text())
+        clickedOperator _ clickedButton.t__()
+        operand _ float(self.display.t__())
 
         __ clickedOperator == "Sqrt":
             __ operand < 0.0:
@@ -194,8 +194,8 @@ c_ Calculator(QWidget):
 
     ___ additiveOperatorClicked(self):
         clickedButton _ self.sender()
-        clickedOperator _ clickedButton.text()
-        operand _ float(self.display.text())
+        clickedOperator _ clickedButton.t__()
+        operand _ float(self.display.t__())
 
         __ self.pendingMultiplicativeOperator:
             __ no. self.calculate(operand, self.pendingMultiplicativeOperator):
@@ -221,8 +221,8 @@ c_ Calculator(QWidget):
 
     ___ multiplicativeOperatorClicked(self):
         clickedButton _ self.sender()
-        clickedOperator _ clickedButton.text()
-        operand _ float(self.display.text())
+        clickedOperator _ clickedButton.t__()
+        operand _ float(self.display.t__())
 
         __ self.pendingMultiplicativeOperator:
             __ no. self.calculate(operand, self.pendingMultiplicativeOperator):
@@ -237,7 +237,7 @@ c_ Calculator(QWidget):
         self.waitingForOperand _ True
 
     ___ equalClicked(self):
-        operand _ float(self.display.text())
+        operand _ float(self.display.t__())
 
         __ self.pendingMultiplicativeOperator:
             __ no. self.calculate(operand, self.pendingMultiplicativeOperator):
@@ -265,32 +265,32 @@ c_ Calculator(QWidget):
         __ self.waitingForOperand:
             self.display.sT..('0')
 
-        __ "." no. in self.display.text
-            self.display.sT..(self.display.text() + ".")
+        __ "." no. in self.display.t__
+            self.display.sT..(self.display.t__() + ".")
 
         self.waitingForOperand _ False
 
     ___ changeSignClicked(self):
-        text _ self.display.text()
-        value _ float(text)
+        t__ _ self.display.t__()
+        value _ float(t__)
 
         __ value > 0.0:
-            text _ "-" + text
+            t__ _ "-" + t__
         ____ value < 0.0:
-            text _ text[1:]
+            t__ _ t__[1:]
 
-        self.display.sT..(text)
+        self.display.sT..(t__)
 
     ___ backspaceClicked(self):
         __ self.waitingForOperand:
             r_
 
-        text _ self.display.text()[:-1]
-        __ no. text:
-            text _ '0'
+        t__ _ self.display.t__()[:-1]
+        __ no. t__:
+            t__ _ '0'
             self.waitingForOperand _ True
 
-        self.display.sT..(text)
+        self.display.sT..(t__)
 
     ___ clear(self):
         __ self.waitingForOperand:
@@ -316,14 +316,14 @@ c_ Calculator(QWidget):
 
     ___ setMemory(self):
         self.equalClicked()
-        self.sumInMemory _ float(self.display.text())
+        self.sumInMemory _ float(self.display.t__())
 
     ___ addToMemory(self):
         self.equalClicked()
-        self.sumInMemory +_ float(self.display.text())
+        self.sumInMemory +_ float(self.display.t__())
 
-    ___ createButton  text, member):
-        button _ Button(text)
+    ___ createButton  t__, member):
+        button _ Button(t__)
         button.c__.c..(member)
         r_ button
 

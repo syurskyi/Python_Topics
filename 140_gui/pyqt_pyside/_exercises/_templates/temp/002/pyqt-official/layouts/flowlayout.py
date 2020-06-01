@@ -52,12 +52,12 @@ c_ Window(QWidget):
         super(Window, self).__init__()
 
         flowLayout _ FlowLayout()
-        flowLayout.addWidget(?PB..("Short"))
-        flowLayout.addWidget(?PB..("Longer"))
-        flowLayout.addWidget(?PB..("Different text"))
-        flowLayout.addWidget(?PB..("More text"))
-        flowLayout.addWidget(?PB..("Even longer button text"))
-        self.setLayout(flowLayout)
+        flowLayout.aW..(?PB..("Short"))
+        flowLayout.aW..(?PB..("Longer"))
+        flowLayout.aW..(?PB..("Different text"))
+        flowLayout.aW..(?PB..("More text"))
+        flowLayout.aW..(?PB..("Even longer button text"))
+        self.sL..(flowLayout)
 
         self.setWindowTitle("Flow Layout")
 

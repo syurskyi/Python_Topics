@@ -79,7 +79,7 @@ c_ Window(QWidget):
         self.setWindowTitle("Text Object Example")
 
     ___ insertTextObject(self):
-        fileName _ self.fileNameLineEdit.text()
+        fileName _ self.fileNameLineEdit.t__()
         file _ QFile(fileName)
 
         __ no. file.o..(QIODevice.ReadOnly):
@@ -109,24 +109,24 @@ c_ Window(QWidget):
 
     ___ setupGui(self):
         fileNameLabel _ QLabel("Svg File Name:")
-        self.fileNameLineEdit _ QLineEdit()
+        self.fileNameLineEdit _ ?LE..
         insertTextObjectButton _ ?PB..("Insert Image")
 
         self.fileNameLineEdit.sT..('./files/heart.svg')
         insertTextObjectButton.c__.c..(self.insertTextObject)
 
         bottomLayout _ QHBoxLayout()
-        bottomLayout.addWidget(fileNameLabel)
-        bottomLayout.addWidget(self.fileNameLineEdit)
-        bottomLayout.addWidget(insertTextObjectButton)
+        bottomLayout.aW..(fileNameLabel)
+        bottomLayout.aW..(self.fileNameLineEdit)
+        bottomLayout.aW..(insertTextObjectButton)
 
         self.textEdit _ QTextEdit()
 
-        mainLayout _ QVBoxLayout()
-        mainLayout.addWidget(self.textEdit)
+        mainLayout _ ?VBL..
+        mainLayout.aW..(self.textEdit)
         mainLayout.addLayout(bottomLayout)
 
-        self.setLayout(mainLayout)
+        self.sL..(mainLayout)
 
 
 __ __name__ == '__main__':

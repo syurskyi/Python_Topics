@@ -190,7 +190,7 @@ c_ Scene(qtw.QGraphicsScene):
             qtc.__.Key_D: self.top_tank.right,
             qtc.__.Key_Space: self.top_tank.shoot
         }
-        callback _ keymap.get(event.key())
+        callback _ keymap.g..(event.key())
         __ callback:
             callback()
 

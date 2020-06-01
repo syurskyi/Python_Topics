@@ -61,7 +61,7 @@ c_ Window(QWidget):
         echoComboBox.addItem("PasswordEchoOnEdit")
         echoComboBox.addItem("No Echo")
 
-        self.echoLineEdit _ QLineEdit()
+        self.echoLineEdit _ ?LE..
         self.echoLineEdit.setFocus()
 
         validatorGroup _ QGroupBox("Validator")
@@ -72,7 +72,7 @@ c_ Window(QWidget):
         validatorComboBox.addItem("Integer validator")
         validatorComboBox.addItem("Double validator")
 
-        self.validatorLineEdit _ QLineEdit()
+        self.validatorLineEdit _ ?LE..
 
         alignmentGroup _ QGroupBox("Alignment")
 
@@ -82,7 +82,7 @@ c_ Window(QWidget):
         alignmentComboBox.addItem("Centered")
         alignmentComboBox.addItem("Right")
 
-        self.alignmentLineEdit _ QLineEdit()
+        self.alignmentLineEdit _ ?LE..
 
         inputMaskGroup _ QGroupBox("Input mask")
 
@@ -93,7 +93,7 @@ c_ Window(QWidget):
         inputMaskComboBox.addItem("ISO date")
         inputMaskComboBox.addItem("License key")
 
-        self.inputMaskLineEdit _ QLineEdit()
+        self.inputMaskLineEdit _ ?LE..
 
         accessGroup _ QGroupBox("Access")
 
@@ -102,7 +102,7 @@ c_ Window(QWidget):
         accessComboBox.addItem("False")
         accessComboBox.addItem("True")
 
-        self.accessLineEdit _ QLineEdit()
+        self.accessLineEdit _ ?LE..
 
         echoComboBox.activated.c..(self.echoChanged)
         validatorComboBox.activated.c..(self.validatorChanged)
@@ -111,42 +111,42 @@ c_ Window(QWidget):
         accessComboBox.activated.c..(self.accessChanged)
 
         echoLayout _ QGridLayout()
-        echoLayout.addWidget(echoLabel, 0, 0)
-        echoLayout.addWidget(echoComboBox, 0, 1)
-        echoLayout.addWidget(self.echoLineEdit, 1, 0, 1, 2)
-        echoGroup.setLayout(echoLayout)
+        echoLayout.aW..(echoLabel, 0, 0)
+        echoLayout.aW..(echoComboBox, 0, 1)
+        echoLayout.aW..(self.echoLineEdit, 1, 0, 1, 2)
+        echoGroup.sL..(echoLayout)
 
         validatorLayout _ QGridLayout()
-        validatorLayout.addWidget(validatorLabel, 0, 0)
-        validatorLayout.addWidget(validatorComboBox, 0, 1)
-        validatorLayout.addWidget(self.validatorLineEdit, 1, 0, 1, 2)
-        validatorGroup.setLayout(validatorLayout)
+        validatorLayout.aW..(validatorLabel, 0, 0)
+        validatorLayout.aW..(validatorComboBox, 0, 1)
+        validatorLayout.aW..(self.validatorLineEdit, 1, 0, 1, 2)
+        validatorGroup.sL..(validatorLayout)
 
         alignmentLayout _ QGridLayout()
-        alignmentLayout.addWidget(alignmentLabel, 0, 0)
-        alignmentLayout.addWidget(alignmentComboBox, 0, 1)
-        alignmentLayout.addWidget(self.alignmentLineEdit, 1, 0, 1, 2)
-        alignmentGroup. setLayout(alignmentLayout)
+        alignmentLayout.aW..(alignmentLabel, 0, 0)
+        alignmentLayout.aW..(alignmentComboBox, 0, 1)
+        alignmentLayout.aW..(self.alignmentLineEdit, 1, 0, 1, 2)
+        alignmentGroup. sL..(alignmentLayout)
 
         inputMaskLayout _ QGridLayout()
-        inputMaskLayout.addWidget(inputMaskLabel, 0, 0)
-        inputMaskLayout.addWidget(inputMaskComboBox, 0, 1)
-        inputMaskLayout.addWidget(self.inputMaskLineEdit, 1, 0, 1, 2)
-        inputMaskGroup.setLayout(inputMaskLayout)
+        inputMaskLayout.aW..(inputMaskLabel, 0, 0)
+        inputMaskLayout.aW..(inputMaskComboBox, 0, 1)
+        inputMaskLayout.aW..(self.inputMaskLineEdit, 1, 0, 1, 2)
+        inputMaskGroup.sL..(inputMaskLayout)
 
         accessLayout _ QGridLayout()
-        accessLayout.addWidget(accessLabel, 0, 0)
-        accessLayout.addWidget(accessComboBox, 0, 1)
-        accessLayout.addWidget(self.accessLineEdit, 1, 0, 1, 2)
-        accessGroup.setLayout(accessLayout)
+        accessLayout.aW..(accessLabel, 0, 0)
+        accessLayout.aW..(accessComboBox, 0, 1)
+        accessLayout.aW..(self.accessLineEdit, 1, 0, 1, 2)
+        accessGroup.sL..(accessLayout)
 
         layout _ QGridLayout()
-        layout.addWidget(echoGroup, 0, 0)
-        layout.addWidget(validatorGroup, 1, 0)
-        layout.addWidget(alignmentGroup, 2, 0)
-        layout.addWidget(inputMaskGroup, 0, 1)
-        layout.addWidget(accessGroup, 1, 1)
-        self.setLayout(layout)
+        layout.aW..(echoGroup, 0, 0)
+        layout.aW..(validatorGroup, 1, 0)
+        layout.aW..(alignmentGroup, 2, 0)
+        layout.aW..(inputMaskGroup, 0, 1)
+        layout.aW..(accessGroup, 1, 1)
+        self.sL..(layout)
 
         self.setWindowTitle("Line Edits")
 

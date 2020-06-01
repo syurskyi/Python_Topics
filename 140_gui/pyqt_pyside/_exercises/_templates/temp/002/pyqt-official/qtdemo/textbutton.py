@@ -200,15 +200,15 @@ c_ TextButton(DemoItem):
 
     ON, OFF, HIGHLIGHT, DISABLED _ range(4)
 
-    ___ __init__  text, align_LEFT, userCode_0, parent_None, type_SIDEBAR):
+    ___ __init__  t__, align_LEFT, userCode_0, parent_None, type_SIDEBAR):
         super(TextButton, self).__init__(parent)
 
         # Prevent a circular import.
         ____ menumanager ______ MenuManager
         self._menu_manager _ MenuManager.instance()
 
-        self.menuString _ text
-        self.buttonLabel _ text
+        self.menuString _ t__
+        self.buttonLabel _ t__
         self.alignment _ align
         self.buttonType _ type
         self.userCode _ userCode

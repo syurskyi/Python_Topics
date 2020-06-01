@@ -48,9 +48,9 @@ c_ _PaletteLinearBase(_PaletteBase):
             b.pressed.c..(
                 lambda c_c: self._emit_color(c)
             )
-            palette.addWidget(b)
+            palette.aW..(b)
 
-        self.setLayout(palette)
+        self.sL..(palette)
 
 
 c_ PaletteHorizontal(_PaletteLinearBase):
@@ -78,10 +78,10 @@ c_ PaletteGrid(_PaletteBase):
             b.pressed.c..(
                 lambda c_c: self._emit_color(c)
             )
-            palette.addWidget(b, row, col)
+            palette.aW..(b, row, col)
             col +_ 1
             __ col == n_columns:
                 col _ 0
                 row +_ 1
 
-        self.setLayout(palette)
+        self.sL..(palette)

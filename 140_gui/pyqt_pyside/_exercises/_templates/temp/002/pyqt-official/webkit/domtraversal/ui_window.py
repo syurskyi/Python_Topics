@@ -21,7 +21,7 @@ c_ Ui_Window(object):
         self.webView _ QtWebKitWidgets.QWebView(self.centralwidget)
         self.webView.setUrl(?C...QUrl("http://qt.nokia.com/"))
         self.webView.setObjectName("webView")
-        self.verticalLayout_2.addWidget(self.webView)
+        self.verticalLayout_2.aW..(self.webView)
         Window.sCW..(self.centralwidget)
         self.menubar _ ?W...QMenuBar(Window)
         self.menubar.setGeometry(?C...QRect(0, 0, 800, 27))
@@ -33,7 +33,7 @@ c_ Ui_Window(object):
         self.dockWidget _ ?W...QDockWidget(Window)
         self.dockWidget.setAllowedAreas(?C...__.LeftDockWidgetArea|?C...__.RightDockWidgetArea)
         self.dockWidget.setObjectName("dockWidget")
-        self.dockWidgetContents _ ?W...QWidget()
+        self.dockWidgetContents _ ?W...?W..
         self.dockWidgetContents.setObjectName("dockWidgetContents")
         self.verticalLayout _ ?W...QVBoxLayout(self.dockWidgetContents)
         self.verticalLayout.setContentsMargins(4, 4, 4, 4)
@@ -42,7 +42,7 @@ c_ Ui_Window(object):
         self.treeWidget.setObjectName("treeWidget")
         self.treeWidget.headerItem().sT..(0, "1")
         self.treeWidget.header().setVisible F..
-        self.verticalLayout.addWidget(self.treeWidget)
+        self.verticalLayout.aW..(self.treeWidget)
         self.dockWidget.setWidget(self.dockWidgetContents)
         Window.addDockWidget(?C...__.DockWidgetArea(1), self.dockWidget)
 

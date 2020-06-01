@@ -9,7 +9,7 @@ c_ HashForm(qtw.QWidget):
 
     ___ __init__(self):
         super().__init__()
-        self.setLayout(qtw.QFormLayout())
+        self.sL..(qtw.QFormLayout())
         self.source_path _ qtw.?PB..(
             'Click to select…', c___self.on_source_click)
         self.layout().addRow('Source Path', self.source_path)
@@ -33,8 +33,8 @@ c_ HashForm(qtw.QWidget):
 
     ___ on_submit(self):
         self.submitted.emit(
-            self.source_path.text(),
-            self.destination_file.text(),
+            self.source_path.t__(),
+            self.destination_file.t__(),
             self.threads.value()
         )
 

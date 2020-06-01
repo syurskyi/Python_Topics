@@ -133,7 +133,7 @@ c_ MainWindow ?MW..
         self.currentPath _ QDir.homePath()
         self.model _ ImageModel(self)
 
-        centralWidget _ QWidget()
+        centralWidget _ ?W..
 
         self.view _ QTableView()
         self.view.setShowGrid F..
@@ -178,14 +178,14 @@ c_ MainWindow ?MW..
         pixelSizeSpinBox.valueChanged.c..(self.updateView)
 
         controlsLayout _ QHBoxLayout()
-        controlsLayout.addWidget(pixelSizeLabel)
-        controlsLayout.addWidget(pixelSizeSpinBox)
+        controlsLayout.aW..(pixelSizeLabel)
+        controlsLayout.aW..(pixelSizeSpinBox)
         controlsLayout.addStretch(1)
 
-        mainLayout _ QVBoxLayout()
-        mainLayout.addWidget(self.view)
+        mainLayout _ ?VBL..
+        mainLayout.aW..(self.view)
         mainLayout.addLayout(controlsLayout)
-        centralWidget.setLayout(mainLayout)
+        centralWidget.sL..(mainLayout)
 
         self.sCW..(centralWidget)
 

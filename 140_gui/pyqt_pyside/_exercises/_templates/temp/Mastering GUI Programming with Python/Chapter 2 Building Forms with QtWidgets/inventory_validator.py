@@ -46,10 +46,10 @@ c_ MainWindow(qtw.QWidget):
         """
         super().__init__()
         # Main UI code goes here
-        self.setLayout(qtw.QVBoxLayout())
-        inventory_number _ qtw.QLineEdit()
+        self.sL..(qtw.QVBoxLayout())
+        inventory_number _ qtw.?LE..
         inventory_number.setValidator(InventoryNumberValidator())
-        self.layout().addWidget(inventory_number)
+        self.layout().aW..(inventory_number)
         # End main UI code
         self.s..
 

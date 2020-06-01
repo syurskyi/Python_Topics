@@ -73,11 +73,11 @@ c_ MoviePlayer(QWidget):
         self.frameSlider.valueChanged.c..(self.goToFrame)
         self.speedSpinBox.valueChanged.c..(self.movie.setSpeed)
 
-        mainLayout _ QVBoxLayout()
-        mainLayout.addWidget(self.movieLabel)
+        mainLayout _ ?VBL..
+        mainLayout.aW..(self.movieLabel)
         mainLayout.addLayout(self.controlsLayout)
         mainLayout.addLayout(self.buttonsLayout)
-        self.setLayout(mainLayout)
+        self.sL..(mainLayout)
 
         self.updateFrameSlider()
         self.updateButtons()
@@ -151,11 +151,11 @@ c_ MoviePlayer(QWidget):
         self.speedSpinBox.setSuffix("%")
 
         self.controlsLayout _ QGridLayout()
-        self.controlsLayout.addWidget(self.fitCheckBox, 0, 0, 1, 2)
-        self.controlsLayout.addWidget(self.frameLabel, 1, 0)
-        self.controlsLayout.addWidget(self.frameSlider, 1, 1, 1, 2)
-        self.controlsLayout.addWidget(speedLabel, 2, 0)
-        self.controlsLayout.addWidget(self.speedSpinBox, 2, 1)
+        self.controlsLayout.aW..(self.fitCheckBox, 0, 0, 1, 2)
+        self.controlsLayout.aW..(self.frameLabel, 1, 0)
+        self.controlsLayout.aW..(self.frameSlider, 1, 1, 1, 2)
+        self.controlsLayout.aW..(speedLabel, 2, 0)
+        self.controlsLayout.aW..(self.speedSpinBox, 2, 1)
 
     ___ createButtons(self):
         iconSize _ QSize(36, 36)
@@ -193,11 +193,11 @@ c_ MoviePlayer(QWidget):
 
         self.buttonsLayout _ QHBoxLayout()
         self.buttonsLayout.addStretch()
-        self.buttonsLayout.addWidget(openButton)
-        self.buttonsLayout.addWidget(self.playButton)
-        self.buttonsLayout.addWidget(self.pauseButton)
-        self.buttonsLayout.addWidget(self.stopButton)
-        self.buttonsLayout.addWidget(quitButton)
+        self.buttonsLayout.aW..(openButton)
+        self.buttonsLayout.aW..(self.playButton)
+        self.buttonsLayout.aW..(self.pauseButton)
+        self.buttonsLayout.aW..(self.stopButton)
+        self.buttonsLayout.aW..(quitButton)
         self.buttonsLayout.addStretch()
 
 

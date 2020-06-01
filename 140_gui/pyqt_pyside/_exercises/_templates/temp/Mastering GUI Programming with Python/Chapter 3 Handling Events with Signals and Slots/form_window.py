@@ -9,32 +9,32 @@ c_ FormWindow(qtw.QWidget):
 
     ___ __init__(self):
         super().__init__()
-        self.setLayout(qtw.QVBoxLayout())
+        self.sL..(qtw.QVBoxLayout())
 
-        self.edit _ qtw.QLineEdit()
+        self.edit _ qtw.?LE..
         self.submit _ qtw.?PB..('Submit', c___self.onSubmit)
 
-        self.layout().addWidget(self.edit)
-        self.layout().addWidget(self.submit)
+        self.layout().aW..(self.edit)
+        self.layout().aW..(self.submit)
 
     ___ onSubmit(self):
-        __ self.edit.text().isdigit
-            text _ self.edit.text()
-            self.submitted[int, str].emit(int(text), text)
+        __ self.edit.t__().isdigit
+            t__ _ self.edit.t__()
+            self.submitted[int, str].emit(int(t__), t__)
         ____
-            self.submitted[str].emit(self.edit.text())
+            self.submitted[str].emit(self.edit.t__())
         self.close()
 
 c_ MainWindow(qtw.QWidget):
 
     ___ __init__(self):
         super().__init__()
-        self.setLayout(qtw.QVBoxLayout())
+        self.sL..(qtw.QVBoxLayout())
 
         self.label _ qtw.QLabel('Click "change" to change this text.')
         self.change _ qtw.?PB..("Change", c___self.onChange)
-        self.layout().addWidget(self.label)
-        self.layout().addWidget(self.change)
+        self.layout().aW..(self.label)
+        self.layout().aW..(self.change)
         self.s..
 
     @qtc.pyqtSlot()
@@ -51,8 +51,8 @@ c_ MainWindow(qtw.QWidget):
 
     @qtc.pyqtSlot(int, str)
     ___ onSubmittedIntStr  integer, string):
-        text _ f'The string {string} becomes the number {integer}'
-        self.label.sT..(text)
+        t__ _ f'The string {string} becomes the number {integer}'
+        self.label.sT..(t__)
 
 
 __ __name__ == '__main__':

@@ -26,15 +26,15 @@ c_ MainWindow(qtw.QMainWindow):
         """
         super().__init__()
         # Main UI code goes here
-        dialpad _ qtw.QWidget()
+        dialpad _ qtw.?W..
         self.sCW..(dialpad)
-        dialpad.setLayout(qtw.QGridLayout())
+        dialpad.sL..(qtw.QGridLayout())
 
         for i, symbol in enumerate('123456789*0#'):
             button _ SoundButton(f':/dtmf/{symbol}.wav', symbol)
             row _ i // 3
             column _ i % 3
-            dialpad.layout().addWidget(button, row, column)
+            dialpad.layout().aW..(button, row, column)
 
         # End main UI code
         self.s..

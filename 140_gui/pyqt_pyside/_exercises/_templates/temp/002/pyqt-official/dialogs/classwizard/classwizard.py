@@ -205,9 +205,9 @@ c_ IntroPage(QWizardPage):
                 "class.")
         label.setWordWrap(True)
 
-        layout _ QVBoxLayout()
-        layout.addWidget(label)
-        self.setLayout(layout)
+        layout _ ?VBL..
+        layout.aW..(label)
+        self.sL..(layout)
 
 
 c_ ClassInfoPage(QWizardPage):
@@ -220,11 +220,11 @@ c_ ClassInfoPage(QWizardPage):
         self.setPixmap(QWizard.LogoPixmap, QPixmap(':/images/logo1.png'))
 
         classNameLabel _ QLabel("&Class name:")
-        classNameLineEdit _ QLineEdit()
+        classNameLineEdit _ ?LE..
         classNameLabel.setBuddy(classNameLineEdit)
 
         baseClassLabel _ QLabel("B&ase class:")
-        baseClassLineEdit _ QLineEdit()
+        baseClassLineEdit _ ?LE..
         baseClassLabel.setBuddy(baseClassLineEdit)
 
         qobjectMacroCheckBox _ QCheckBox("Generate Q_OBJECT &macro")
@@ -248,21 +248,21 @@ c_ ClassInfoPage(QWizardPage):
         self.registerField('defaultCtor', defaultCtorRadioButton)
         self.registerField('copyCtor', copyCtorCheckBox)
 
-        groupBoxLayout _ QVBoxLayout()
-        groupBoxLayout.addWidget(qobjectCtorRadioButton)
-        groupBoxLayout.addWidget(qwidgetCtorRadioButton)
-        groupBoxLayout.addWidget(defaultCtorRadioButton)
-        groupBoxLayout.addWidget(copyCtorCheckBox)
-        groupBox.setLayout(groupBoxLayout)
+        groupBoxLayout _ ?VBL..
+        groupBoxLayout.aW..(qobjectCtorRadioButton)
+        groupBoxLayout.aW..(qwidgetCtorRadioButton)
+        groupBoxLayout.aW..(defaultCtorRadioButton)
+        groupBoxLayout.aW..(copyCtorCheckBox)
+        groupBox.sL..(groupBoxLayout)
 
         layout _ QGridLayout()
-        layout.addWidget(classNameLabel, 0, 0)
-        layout.addWidget(classNameLineEdit, 0, 1)
-        layout.addWidget(baseClassLabel, 1, 0)
-        layout.addWidget(baseClassLineEdit, 1, 1)
-        layout.addWidget(qobjectMacroCheckBox, 2, 0, 1, 2)
-        layout.addWidget(groupBox, 3, 0, 1, 2)
-        self.setLayout(layout)
+        layout.aW..(classNameLabel, 0, 0)
+        layout.aW..(classNameLineEdit, 0, 1)
+        layout.aW..(baseClassLabel, 1, 0)
+        layout.aW..(baseClassLineEdit, 1, 1)
+        layout.aW..(qobjectMacroCheckBox, 2, 0, 1, 2)
+        layout.aW..(groupBox, 3, 0, 1, 2)
+        self.sL..(layout)
 
 
 c_ CodeStylePage(QWizardPage):
@@ -281,12 +281,12 @@ c_ CodeStylePage(QWizardPage):
         protectCheckBox.setChecked(True)
 
         macroNameLabel _ QLabel("&Macro name:")
-        self.macroNameLineEdit _ QLineEdit()
+        self.macroNameLineEdit _ ?LE..
         macroNameLabel.setBuddy(self.macroNameLineEdit)
 
         self.includeBaseCheckBox _ QCheckBox("&Include base class definition")
         self.baseIncludeLabel _ QLabel("Base class include:")
-        self.baseIncludeLineEdit _ QLineEdit()
+        self.baseIncludeLineEdit _ ?LE..
         self.baseIncludeLabel.setBuddy(self.baseIncludeLineEdit)
 
         protectCheckBox.toggled.c..(macroNameLabel.setEnabled)
@@ -302,14 +302,14 @@ c_ CodeStylePage(QWizardPage):
 
         layout _ QGridLayout()
         layout.setColumnMinimumWidth(0, 20)
-        layout.addWidget(commentCheckBox, 0, 0, 1, 3)
-        layout.addWidget(protectCheckBox, 1, 0, 1, 3)
-        layout.addWidget(macroNameLabel, 2, 1)
-        layout.addWidget(self.macroNameLineEdit, 2, 2)
-        layout.addWidget(self.includeBaseCheckBox, 3, 0, 1, 3)
-        layout.addWidget(self.baseIncludeLabel, 4, 1)
-        layout.addWidget(self.baseIncludeLineEdit, 4, 2)
-        self.setLayout(layout)
+        layout.aW..(commentCheckBox, 0, 0, 1, 3)
+        layout.aW..(protectCheckBox, 1, 0, 1, 3)
+        layout.aW..(macroNameLabel, 2, 1)
+        layout.aW..(self.macroNameLineEdit, 2, 2)
+        layout.aW..(self.includeBaseCheckBox, 3, 0, 1, 3)
+        layout.aW..(self.baseIncludeLabel, 4, 1)
+        layout.aW..(self.baseIncludeLineEdit, 4, 2)
+        self.sL..(layout)
 
     ___ initializePage(self):
         className _ self.field('className')
@@ -341,15 +341,15 @@ c_ OutputFilesPage(QWizardPage):
         self.setPixmap(QWizard.LogoPixmap, QPixmap(':/images/logo3.png'))
 
         outputDirLabel _ QLabel("&Output directory:")
-        self.outputDirLineEdit _ QLineEdit()
+        self.outputDirLineEdit _ ?LE..
         outputDirLabel.setBuddy(self.outputDirLineEdit)
 
         headerLabel _ QLabel("&Header file name:")
-        self.headerLineEdit _ QLineEdit()
+        self.headerLineEdit _ ?LE..
         headerLabel.setBuddy(self.headerLineEdit)
 
         implementationLabel _ QLabel("&Implementation file name:")
-        self.implementationLineEdit _ QLineEdit()
+        self.implementationLineEdit _ ?LE..
         implementationLabel.setBuddy(self.implementationLineEdit)
 
         self.registerField('outputDir*', self.outputDirLineEdit)
@@ -357,13 +357,13 @@ c_ OutputFilesPage(QWizardPage):
         self.registerField('implementation*', self.implementationLineEdit)
 
         layout _ QGridLayout()
-        layout.addWidget(outputDirLabel, 0, 0)
-        layout.addWidget(self.outputDirLineEdit, 0, 1)
-        layout.addWidget(headerLabel, 1, 0)
-        layout.addWidget(self.headerLineEdit, 1, 1)
-        layout.addWidget(implementationLabel, 2, 0)
-        layout.addWidget(self.implementationLineEdit, 2, 1)
-        self.setLayout(layout)
+        layout.aW..(outputDirLabel, 0, 0)
+        layout.aW..(self.outputDirLineEdit, 0, 1)
+        layout.aW..(headerLabel, 1, 0)
+        layout.aW..(self.headerLineEdit, 1, 1)
+        layout.aW..(implementationLabel, 2, 0)
+        layout.aW..(self.implementationLineEdit, 2, 1)
+        self.sL..(layout)
 
     ___ initializePage(self):
         className _ self.field('className')
@@ -383,9 +383,9 @@ c_ ConclusionPage(QWizardPage):
         self.label _ QLabel()
         self.label.setWordWrap(True)
 
-        layout _ QVBoxLayout()
-        layout.addWidget(self.label)
-        self.setLayout(layout)
+        layout _ ?VBL..
+        layout.aW..(self.label)
+        self.sL..(layout)
 
     ___ initializePage(self):
         finishText _ self.wizard().buttonText(QWizard.FinishButton)

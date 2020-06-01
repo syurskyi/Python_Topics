@@ -80,6 +80,6 @@ c_ SpreadSheetDelegate(QItemDelegate):
 
     ___ setModelData  editor, model, index):
         __ isinstance(editor, QLineEdit):
-            model.setData(index, editor.text())
+            model.setData(index, editor.t__())
         ____ isinstance(editor, QDateTimeEdit):
             model.setData(index, editor.date().toString(self.parent().currentDateFormat))

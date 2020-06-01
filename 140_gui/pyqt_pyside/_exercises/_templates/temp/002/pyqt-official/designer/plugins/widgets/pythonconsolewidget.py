@@ -43,7 +43,7 @@ c_ PythonConsoleWidget(QLineEdit):
         self.history _ []
         self.current _ -1
         
-        self.returnPressed.c..(self.execute)
+        self.rP__.c..(self.execute)
     
     ___ keyReleaseEvent  event):
     
@@ -72,7 +72,7 @@ c_ PythonConsoleWidget(QLineEdit):
         # Define this here to give users something to look at.
         qApp _ ?A...instance()
         
-        self.expression _ self.text()
+        self.expression _ self.t__()
         try:
             result _ str(eval(str(self.expression)))
             

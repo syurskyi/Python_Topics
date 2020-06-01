@@ -10,8 +10,8 @@ c_ AutoCloseDialog(qtw.QDialog):
         super().__init__(parent)
         self.setModal F..
         self.setWindowTitle(title)
-        self.setLayout(qtw.QVBoxLayout())
-        self.layout().addWidget(qtw.QLabel(message))
+        self.sL..(qtw.QVBoxLayout())
+        self.layout().aW..(qtw.QLabel(message))
         self.timeout _ timeout
 
     ___ show(self):
@@ -47,7 +47,7 @@ c_ MainWindow(qtw.QMainWindow):
 
         # Using an interval timer
         interval_seconds _ 10
-        self.timer _ qtc.QTimer()
+        self.timer _ qtc.?T..
         self.timer.setInterval(interval_seconds * 1000)
 
         self.interval_dialog _ AutoCloseDialog(
@@ -61,7 +61,7 @@ c_ MainWindow(qtw.QMainWindow):
         toolbar.aA..('Start Bugging Me', self.timer.start)
 
         # Getting data from a timer
-        self.timer2 _ qtc.QTimer()
+        self.timer2 _ qtc.?T..
         self.timer2.setInterval(1000)
         self.timer2.timeout.c..(self.update_status)
         self.timer2.start()

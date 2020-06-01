@@ -140,7 +140,7 @@ c_ BlockingClient(QWidget):
         ipAddress _ ipAddress.toString()
 
         self.hostLineEdit _ QLineEdit(ipAddress)
-        self.portLineEdit _ QLineEdit()
+        self.portLineEdit _ ?LE..
         self.portLineEdit.setValidator(QIntValidator(1, 65535, self))
 
         hostLabel.setBuddy(self.hostLineEdit)
@@ -168,21 +168,21 @@ c_ BlockingClient(QWidget):
         self.thread.error.c..(self.displayError)
 
         mainLayout _ QGridLayout()
-        mainLayout.addWidget(hostLabel, 0, 0)
-        mainLayout.addWidget(self.hostLineEdit, 0, 1)
-        mainLayout.addWidget(portLabel, 1, 0)
-        mainLayout.addWidget(self.portLineEdit, 1, 1)
-        mainLayout.addWidget(self.statusLabel, 2, 0, 1, 2)
-        mainLayout.addWidget(buttonBox, 3, 0, 1, 2)
-        self.setLayout(mainLayout)
+        mainLayout.aW..(hostLabel, 0, 0)
+        mainLayout.aW..(self.hostLineEdit, 0, 1)
+        mainLayout.aW..(portLabel, 1, 0)
+        mainLayout.aW..(self.portLineEdit, 1, 1)
+        mainLayout.aW..(self.statusLabel, 2, 0, 1, 2)
+        mainLayout.aW..(buttonBox, 3, 0, 1, 2)
+        self.sL..(mainLayout)
 
         self.setWindowTitle("Blocking Fortune Client")
         self.portLineEdit.setFocus()
 
     ___ requestNewFortune(self):
         self.getFortuneButton.setEnabled F..
-        self.thread.requestNewFortune(self.hostLineEdit.text(),
-                int(self.portLineEdit.text()))
+        self.thread.requestNewFortune(self.hostLineEdit.t__(),
+                int(self.portLineEdit.t__()))
 
     ___ showFortune  nextFortune):
         __ nextFortune == self.currentFortune:
@@ -210,8 +210,8 @@ c_ BlockingClient(QWidget):
         self.getFortuneButton.setEnabled(True)
 
     ___ enableGetFortuneButton(self):
-        self.getFortuneButton.setEnabled(self.hostLineEdit.text() !_ '' and
-                self.portLineEdit.text() !_ '')
+        self.getFortuneButton.setEnabled(self.hostLineEdit.t__() !_ '' and
+                self.portLineEdit.t__() !_ '')
 
 
 __ __name__ == '__main__':

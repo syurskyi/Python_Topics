@@ -355,13 +355,13 @@ __ __name__ == "__main__":
 
     app _ ?A..(sys.argv)
 
-    w _ QWidget()
+    w _ ?W..
     lay _ QHBoxLayout()
 
-    lay.addWidget(PyDateEdit())
-    lay.addWidget(PyDateTimeEdit())
+    lay.aW..(PyDateEdit())
+    lay.aW..(PyDateTimeEdit())
 
-    w.setLayout(lay)
+    w.sL..(lay)
     w.s..
 
     sys.exit(app.exec_())

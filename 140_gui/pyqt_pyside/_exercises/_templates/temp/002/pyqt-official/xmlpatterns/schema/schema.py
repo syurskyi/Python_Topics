@@ -101,31 +101,31 @@ c_ XmlSyntaxHighlighter(QSyntaxHighlighter):
         self.commentStartExpression _ QRegExp("<!--")
         self.commentEndExpression _ QRegExp("-->")
 
-    ___ highlightBlock  text):
+    ___ highlightBlock  t__):
         for pattern, format in self.highlightingRules:
             expression _ QRegExp(pattern)
-            index _ expression.indexIn(text)
+            index _ expression.indexIn(t__)
             while index >_ 0:
                 length _ expression.matchedLength()
                 self.setFormat(index, length, format)
-                index _ expression.indexIn(text, index + length)
+                index _ expression.indexIn(t__, index + length)
 
         self.setCurrentBlockState(0)
 
         startIndex _ 0
         __ self.previousBlockState() !_ 1:
-            startIndex _ self.commentStartExpression.indexIn(text)
+            startIndex _ self.commentStartExpression.indexIn(t__)
 
         while startIndex >_ 0:
-            endIndex _ self.commentEndExpression.indexIn(text, startIndex)
+            endIndex _ self.commentEndExpression.indexIn(t__, startIndex)
             __ endIndex == -1:
                 self.setCurrentBlockState(1)
-                commentLength _ text.length() - startIndex
+                commentLength _ t__.length() - startIndex
             ____
                 commentLength _ endIndex - startIndex + self.commentEndExpression.matchedLength()
 
             self.setFormat(startIndex, commentLength, self.commentFormat)
-            startIndex _ self.commentStartExpression.indexIn(text,
+            startIndex _ self.commentStartExpression.indexIn(t__,
                     startIndex + commentLength)
 
 

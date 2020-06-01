@@ -57,7 +57,7 @@ c_ MainWindow ?MW..
         self.selectedDate _ QDate.currentDate()
         self.fontSize _ 10
 
-        centralWidget _ QWidget()
+        centralWidget _ ?W..
 
         dateLabel _ QLabel("Date:")
         monthCombo _ QComboBox()
@@ -85,18 +85,18 @@ c_ MainWindow ?MW..
         self.fontSizeSpinBox.valueChanged.c..(self.setfontSize)
 
         controlsLayout _ QHBoxLayout()
-        controlsLayout.addWidget(dateLabel)
-        controlsLayout.addWidget(monthCombo)
-        controlsLayout.addWidget(yearEdit)
+        controlsLayout.aW..(dateLabel)
+        controlsLayout.aW..(monthCombo)
+        controlsLayout.aW..(yearEdit)
         controlsLayout.addSpacing(24)
-        controlsLayout.addWidget(self.fontSizeLabel)
-        controlsLayout.addWidget(self.fontSizeSpinBox)
+        controlsLayout.aW..(self.fontSizeLabel)
+        controlsLayout.aW..(self.fontSizeSpinBox)
         controlsLayout.addStretch(1)
 
-        centralLayout _ QVBoxLayout()
+        centralLayout _ ?VBL..
         centralLayout.addLayout(controlsLayout)
-        centralLayout.addWidget(self.editor, 1)
-        centralWidget.setLayout(centralLayout)
+        centralLayout.aW..(self.editor, 1)
+        centralWidget.sL..(centralLayout)
 
         self.sCW..(centralWidget)
 

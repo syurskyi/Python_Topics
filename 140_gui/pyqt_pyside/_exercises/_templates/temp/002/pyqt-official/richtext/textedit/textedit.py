@@ -238,7 +238,7 @@ c_ TextEdit ?MW..
                         QIcon(rsrcPath + '/editpaste.png')),
                 "&Paste", self, priority_QAction.LowPriority,
                 shortcut_QKeySequence.Paste,
-                enabled_(len(?A...clipboard().text()) !_ 0))
+                enabled_(len(?A...clipboard().t__()) !_ 0))
         tb.aA..(self.actionPaste)
         menu.aA..(self.actionPaste)
 
@@ -357,7 +357,7 @@ c_ TextEdit ?MW..
         self.addToolBar(tb)
 
         comboStyle _ QComboBox(tb)
-        tb.addWidget(comboStyle)
+        tb.aW..(comboStyle)
         comboStyle.addItem("Standard")
         comboStyle.addItem("Bullet List (Disc)")
         comboStyle.addItem("Bullet List (Circle)")
@@ -370,12 +370,12 @@ c_ TextEdit ?MW..
         comboStyle.activated.c..(self.textStyle)
 
         self.comboFont _ QFontComboBox(tb)
-        tb.addWidget(self.comboFont)
+        tb.aW..(self.comboFont)
         self.comboFont.activated[str].c..(self.textFamily)
 
         self.comboSize _ QComboBox(tb)
         self.comboSize.setObjectName("comboSize")
-        tb.addWidget(self.comboSize)
+        tb.aW..(self.comboSize)
         self.comboSize.setEditable(True)
 
         db _ QFontDatabase()
@@ -554,7 +554,7 @@ c_ TextEdit ?MW..
                 8: QTextListFormat.ListUpperRoman,
             }
 
-            style _ styleDict.get(styleIndex, QTextListFormat.ListDisc)
+            style _ styleDict.g..(styleIndex, QTextListFormat.ListDisc)
             cursor.beginEditBlock()
             blockFmt _ cursor.blockFormat()
             listFmt _ QTextListFormat()
@@ -602,7 +602,7 @@ c_ TextEdit ?MW..
         self.alignmentChanged(self.textEdit.alignment())
 
     ___ clipboardDataChanged(self):
-        self.actionPaste.setEnabled(len(?A...clipboard().text()) !_ 0)
+        self.actionPaste.setEnabled(len(?A...clipboard().t__()) !_ 0)
 
     ___ about(self):
         ?MB...about  "About",

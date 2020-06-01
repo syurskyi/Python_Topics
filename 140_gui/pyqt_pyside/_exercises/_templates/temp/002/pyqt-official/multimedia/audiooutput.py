@@ -148,36 +148,36 @@ c_ AudioTest ?MW..
         self.initializeAudio()
 
     ___ initializeWindow(self):
-        layout _ QVBoxLayout()
+        layout _ ?VBL..
 
         self.m_deviceBox _ QComboBox(activated_self.deviceChanged)
         for deviceInfo in QAudioDeviceInfo.availableDevices(QAudio.AudioOutput):
             self.m_deviceBox.addItem(deviceInfo.deviceName(), deviceInfo)
 
-        layout.addWidget(self.m_deviceBox)
+        layout.aW..(self.m_deviceBox)
 
         self.m_modeButton _ ?PB..(c___self.toggleMode)
         self.m_modeButton.sT..(self.PUSH_MODE_LABEL)
 
-        layout.addWidget(self.m_modeButton)
+        layout.aW..(self.m_modeButton)
 
         self.m_suspendResumeButton _ ?PB..(
                 c___self.toggleSuspendResume)
         self.m_suspendResumeButton.sT..(self.SUSPEND_LABEL)
 
-        layout.addWidget(self.m_suspendResumeButton)
+        layout.aW..(self.m_suspendResumeButton)
 
         volumeBox _ QHBoxLayout()
         volumeLabel _ QLabel("Volume:")
         self.m_volumeSlider _ QSlider(__.Horizontal, minimum_0, maximum_100,
                 singleStep_10, valueChanged_self.volumeChanged)
-        volumeBox.addWidget(volumeLabel)
-        volumeBox.addWidget(self.m_volumeSlider)
+        volumeBox.aW..(volumeLabel)
+        volumeBox.aW..(self.m_volumeSlider)
 
         layout.addLayout(volumeBox)
 
-        window _ QWidget()
-        window.setLayout(layout)
+        window _ ?W..
+        window.sL..(layout)
 
         self.sCW..(window)
 
@@ -279,7 +279,7 @@ c_ AudioTest ?MW..
         QAudio.IdleState: "IdleState"}
 
     ___ handleStateChanged  state):
-        qWarning("state = " + self.stateMap.get(state, "Unknown"))
+        qWarning("state = " + self.stateMap.g..(state, "Unknown"))
 
 
 __ __name__ == '__main__':

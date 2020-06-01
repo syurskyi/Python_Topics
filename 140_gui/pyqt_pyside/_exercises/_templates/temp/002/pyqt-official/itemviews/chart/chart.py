@@ -499,8 +499,8 @@ c_ MainWindow ?MW..
         splitter _ QSplitter()
         table _ QTableView()
         self.pieChart _ PieView()
-        splitter.addWidget(table)
-        splitter.addWidget(self.pieChart)
+        splitter.aW..(table)
+        splitter.aW..(self.pieChart)
         splitter.setStretchFactor(0, 0)
         splitter.setStretchFactor(1, 1)
 

@@ -23,8 +23,8 @@ c_ CategoryWindow(qtw.QWidget):
     ___ on_submit_btn_clicked(self):
         # we can take advantage of connectSlotsByName here
         # to avoid explicit UI connections
-        __ self.ui.category_entry.text
-            self.submitted.emit(self.ui.category_entry.text())
+        __ self.ui.category_entry.t__
+            self.submitted.emit(self.ui.category_entry.t__())
         self.close()
 
 
@@ -81,7 +81,7 @@ c_ MainWindow(MW_Base, MW_Ui):
         self.event_list.clear()
         self.clear_form()
         date _ self.calendar.selectedDate()
-        for event in self.events.get(date, []):
+        for event in self.events.g..(date, []):
             time _ (
                 event['time'].toString('hh:mm')
                 __ event['time']
@@ -96,7 +96,7 @@ c_ MainWindow(MW_Base, MW_Ui):
         __ event_number == -1:
             r_
 
-        event_data _ self.events.get(date)[event_number]
+        event_data _ self.events.g..(date)[event_number]
 
         self.event_category.setCurrentText(event_data['category'])
         __ event_data['time'] __ N..:
@@ -114,12 +114,12 @@ c_ MainWindow(MW_Base, MW_Ui):
                 __ self.allday_check.isChecked()
                 else self.event_time.time()
                 ),
-            'title': self.event_title.text(),
+            'title': self.event_title.t__(),
             'detail': self.event_detail.toPlainText()
             }
 
         date _ self.calendar.selectedDate()
-        event_list _ self.events.get(date, [])
+        event_list _ self.events.g..(date, [])
         event_number _ self.event_list.currentRow()
 
         # if no events are selected, this is a new event
@@ -143,8 +143,8 @@ c_ MainWindow(MW_Base, MW_Ui):
     ___ check_delete_btn(self):
         self.del_button.setDisabled(self.event_list.currentRow() == -1)
 
-    ___ on_category_change  text):
-        __ text == 'New…':
+    ___ on_category_change  t__):
+        __ t__ == 'New…':
             self.dialog _ CategoryWindow()
             self.dialog.submitted.c..(self.add_category)
             self.event_category.setCurrentIndex(0)

@@ -124,7 +124,7 @@ c_ StorageModel(QAbstractTableModel):
             r_ N..
         __ role == __.DisplayRole:
             volume _ self.volumes[index.row()]
-            func _ self.columnFuncMap.get(index.column())
+            func _ self.columnFuncMap.g..(index.column())
             __ func __ no. N..:
                 r_ func(volume)
 
@@ -132,7 +132,7 @@ c_ StorageModel(QAbstractTableModel):
             volume _ self.volumes[index.row()]
             tooltip _ []
             for column in range(self.ColumnCount):
-                label _ self.columnNameMap.get(column)
+                label _ self.columnNameMap.g..(column)
                 value _ self.columnFuncMap[column](volume)
                 __ isinstance(value, QByteArray):
                     value _ str(bytes(value).decode('utf-8'))
@@ -144,7 +144,7 @@ c_ StorageModel(QAbstractTableModel):
             r_ N..
         __ role !_ __.DisplayRole:
             r_ N..
-        r_ self.columnNameMap.get(section)
+        r_ self.columnNameMap.g..(section)
 
 
 ___ main(args):

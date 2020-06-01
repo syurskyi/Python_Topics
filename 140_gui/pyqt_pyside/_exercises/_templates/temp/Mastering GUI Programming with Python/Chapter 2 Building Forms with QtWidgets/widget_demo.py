@@ -16,8 +16,8 @@ c_ ChoiceSpinBox(qtw.QSpinBox):
             **kwargs
         )
 
-    ___ valueFromText  text):
-        r_ self.choices.index(text)
+    ___ valueFromText  t__):
+        r_ self.choices.index(t__)
 
     ___ textFromValue  value):
         try:
@@ -139,18 +139,18 @@ c_ MainWindow(qtw.QWidget):
         ##################
 
         # Add widget objects to a layout
-        layout _ qtw.QVBoxLayout()
-        self.setLayout(layout)
+        layout _ qtw.?VBL..
+        self.sL..(layout)
 
-        layout.addWidget(label)
-        layout.addWidget(line_edit)
+        layout.aW..(label)
+        layout.aW..(line_edit)
 
         # Add a layout to a layout
         sublayout _ qtw.QHBoxLayout()
         layout.addLayout(sublayout)
 
-        sublayout.addWidget(button)
-        sublayout.addWidget(combobox)
+        sublayout.aW..(button)
+        sublayout.aW..(combobox)
 
 
         # create a container widget
@@ -158,11 +158,11 @@ c_ MainWindow(qtw.QWidget):
         container _ qtw.QWidget(self)
         grid_layout _ qtw.QGridLayout()
         #layout.addLayout(grid_layout)
-        container.setLayout(grid_layout)
+        container.sL..(grid_layout)
 
-        grid_layout.addWidget(spinbox, 0, 0)
-        grid_layout.addWidget(datetimebox, 0, 1)
-        grid_layout.addWidget(textedit, 1, 0, 2, 2)
+        grid_layout.aW..(spinbox, 0, 0)
+        grid_layout.aW..(datetimebox, 0, 1)
+        grid_layout.aW..(textedit, 1, 0, 2, 2)
 
 
 #        container.setSizePolicy(
@@ -204,8 +204,8 @@ c_ MainWindow(qtw.QWidget):
 
         stretch_layout _ qtw.QHBoxLayout()
         layout.addLayout(stretch_layout)
-        stretch_layout.addWidget(qtw.QLineEdit('Short'), 1)
-        stretch_layout.addWidget(qtw.QLineEdit('Long'), 2)
+        stretch_layout.aW..(qtw.QLineEdit('Short'), 1)
+        stretch_layout.aW..(qtw.QLineEdit('Long'), 2)
 
         #############################
         # Container Widgets         #
@@ -217,7 +217,7 @@ c_ MainWindow(qtw.QWidget):
             tabPosition_qtw.QTabWidget.West,
             tabShape_qtw.QTabWidget.Triangular
         )
-        layout.addWidget(tab_widget)
+        layout.aW..(tab_widget)
         tab_widget.addTab(container, 'Tab the first')
         tab_widget.addTab(subwidget, 'Tab the second')
 
@@ -233,11 +233,11 @@ c_ MainWindow(qtw.QWidget):
             alignment_qtc.__.AlignHCenter,
             flat_True
         )
-        groupbox.setLayout(qtw.QHBoxLayout())
-        groupbox.layout().addWidget(qtw.?PB..('OK'))
-        groupbox.layout().addWidget(qtw.?PB..('Cancel'))
+        groupbox.sL..(qtw.QHBoxLayout())
+        groupbox.layout().aW..(qtw.?PB..('OK'))
+        groupbox.layout().aW..(qtw.?PB..('Cancel'))
 
-        layout.addWidget(groupbox)
+        layout.aW..(groupbox)
 
         ##############
         # Validation #
@@ -246,7 +246,7 @@ c_ MainWindow(qtw.QWidget):
         line_edit.setValidator(IPv4Validator())
 
         ratingbox _ ChoiceSpinBox(['bad', 'average', 'good', 'awesome'], self)
-        sublayout.addWidget(ratingbox)
+        sublayout.aW..(ratingbox)
         self.s..
 
 __ __name__ == '__main__':

@@ -9,7 +9,7 @@ c_ SettingsDialog(qtw.QDialog):
 
     ___ __init__  settings, parent_None):
         super().__init__(parent, modal_True)
-        self.setLayout(qtw.QFormLayout())
+        self.sL..(qtw.QFormLayout())
         self.settings _ settings
         self.layout().addRow(
             qtw.QLabel('<h1>Application Settings</h1>'),
@@ -165,8 +165,8 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
             qtw.QDockWidget.DockWidgetFloatable
         )
 
-        replace_widget _ qtw.QWidget()
-        replace_widget.setLayout(qtw.QVBoxLayout())
+        replace_widget _ qtw.?W..
+        replace_widget.sL..(qtw.QVBoxLayout())
         dock.setWidget(replace_widget)
 
         self.search_text_inp _ qtw.QLineEdit(placeholderText_'search')
@@ -175,9 +175,9 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
             "Search and Replace",
             c___self.search_and_replace
             )
-        replace_widget.layout().addWidget(self.search_text_inp)
-        replace_widget.layout().addWidget(self.replace_text_inp)
-        replace_widget.layout().addWidget(search_and_replace_btn)
+        replace_widget.layout().aW..(self.search_text_inp)
+        replace_widget.layout().aW..(self.replace_text_inp)
+        replace_widget.layout().aW..(search_and_replace_btn)
         replace_widget.layout().addStretch()
 
         ############################
@@ -239,8 +239,8 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
         self.s..
 
     ___ search_and_replace(self):
-        s_text _ self.search_text_inp.text()
-        r_text _ self.replace_text_inp.text()
+        s_text _ self.search_text_inp.t__()
+        r_text _ self.replace_text_inp.t__()
 
         __ s_text:
             self.textedit.sT..(

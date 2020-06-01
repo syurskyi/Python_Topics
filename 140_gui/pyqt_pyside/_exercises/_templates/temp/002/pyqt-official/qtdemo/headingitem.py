@@ -49,10 +49,10 @@ ____ demoitem ______ DemoItem
 
 
 c_ HeadingItem(DemoItem):
-    ___ __init__  text, parent_None):
+    ___ __init__  t__, parent_None):
         super(HeadingItem, self).__init__(parent)
 
-        self.text _ text
+        self.t__ _ t__
         self.noSubPixeling _ True
 
     ___ createImage  transform):
@@ -60,7 +60,7 @@ c_ HeadingItem(DemoItem):
         sy _ max(transform.m22(), sx)
         fm _ QFontMetrics(Colors.headingFont())
 
-        w _ fm.width(self.text) + 1
+        w _ fm.width(self.t__) + 1
         h _ fm.height()
         xShadow _ 3.0
         yShadow _ 3.0
@@ -83,7 +83,7 @@ c_ HeadingItem(DemoItem):
         pen_shadow.setBrush(brush_shadow)
         painter.setPen(pen_shadow)
         painter.drawText(int(xShadow), int(yShadow), int(w), int(h),
-                __.AlignLeft, self.text)
+                __.AlignLeft, self.t__)
 
         # Draw text.
         brush_text _ QLinearGradient(0, 0, w, w)
@@ -94,7 +94,7 @@ c_ HeadingItem(DemoItem):
         pen_text _ QPen()
         pen_text.setBrush(brush_text)
         painter.setPen(pen_text)
-        painter.drawText(0, 0, int(w), int(h), __.AlignLeft, self.text)
+        painter.drawText(0, 0, int(w), int(h), __.AlignLeft, self.t__)
 
         r_ image
 

@@ -317,7 +317,7 @@ c_ MainWindow(QGraphicsView):
             s +_ ["on", "off"][Colors.noAdapt]
             s +_ "\nAdaption occured: "
             s +_ ["no", "yes"][Colors.adapted]
-            w _ QWidget()
+            w _ ?W..
             s +_ "\nColor bit depth: %d" % w.depth()
             s +_ "\nWanted FPS: %d" % Colors.fps
             s +_ "\nBenchmarked FPS: ";

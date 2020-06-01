@@ -10,11 +10,11 @@ c_ CoffeeForm(qtw.QWidget):
 
     ___ __init__  roasts):
         super().__init__()
-        self.setLayout(qtw.QFormLayout())
+        self.sL..(qtw.QFormLayout())
 
-        self.coffee_brand _ qtw.QLineEdit()
+        self.coffee_brand _ qtw.?LE..
         self.layout().addRow('Brand: ', self.coffee_brand)
-        self.coffee_name _ qtw.QLineEdit()
+        self.coffee_name _ qtw.?LE..
         self.layout().addRow('Name: ', self.coffee_name)
         self.roast _ qtw.QComboBox()
         self.roast.addItems(roasts)
@@ -25,9 +25,9 @@ c_ CoffeeForm(qtw.QWidget):
         self.layout().addRow(self.reviews)
 
     ___ show_coffee  coffee_data, reviews):
-        self.coffee_brand.sT..(coffee_data.get('coffee_brand'))
-        self.coffee_name.sT..(coffee_data.get('coffee_name'))
-        self.roast.setCurrentIndex(coffee_data.get('roast_id'))
+        self.coffee_brand.sT..(coffee_data.g..('coffee_brand'))
+        self.coffee_name.sT..(coffee_data.g..('coffee_name'))
+        self.roast.setCurrentIndex(coffee_data.g..('roast_id'))
         self.reviews.clear()
         self.reviews.setHorizontalHeaderLabels(
             ['Reviewer', 'Date', 'Review'])
@@ -54,7 +54,7 @@ c_ MainWindow(qtw.QMainWindow):
         self.db _ qts.QSqlDatabase.addDatabase('QSQLITE')
         self.db.setDatabaseName('coffee.db')
         __ no. self.db.o..
-            error _ self.db.lastError().text()
+            error _ self.db.lastError().t__()
             qtw.?MB...critical(
                 N.., 'DB Connection Error',
                 'Could not open database file: '
@@ -86,7 +86,7 @@ c_ MainWindow(qtw.QMainWindow):
 
         # create the form
         self.coffee_form _ CoffeeForm(roasts)
-        self.stack.addWidget(self.coffee_form)
+        self.stack.aW..(self.coffee_form)
 
         # Retreive the coffees table using a QSqlQueryModel
         coffees _ qts.QSqlQueryModel()
@@ -95,7 +95,7 @@ c_ MainWindow(qtw.QMainWindow):
             "FROM coffees ORDER BY id")
         self.coffee_list _ qtw.QTableView()
         self.coffee_list.setModel(coffees)
-        self.stack.addWidget(self.coffee_list)
+        self.stack.aW..(self.coffee_list)
         self.stack.setCurrentWidget(self.coffee_list)
 
         coffees.setHeaderData(1, qtc.__.Horizontal, 'Brand')

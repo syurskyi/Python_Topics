@@ -404,12 +404,12 @@ c_ MainWindow ?MW..
         self.createToolbars()
 
         layout _ QHBoxLayout()
-        layout.addWidget(self.toolBox)
+        layout.aW..(self.toolBox)
         self.view _ QGraphicsView(self.scene)
-        layout.addWidget(self.view)
+        layout.aW..(self.view)
 
-        self.widget _ QWidget()
-        self.widget.setLayout(layout)
+        self.widget _ ?W..
+        self.widget.sL..(layout)
 
         self.sCW..(self.widget)
         self.setWindowTitle("Diagramscene")
@@ -420,12 +420,12 @@ c_ MainWindow ?MW..
             __ myButton !_ button:
                 button.setChecked F..
 
-        text _ button.text()
-        __ text == "Blue Grid":
+        t__ _ button.t__()
+        __ t__ == "Blue Grid":
             self.scene.setBackgroundBrush(QBrush(QPixmap(':/images/background1.png')))
-        ____ text == "White Grid":
+        ____ t__ == "White Grid":
             self.scene.setBackgroundBrush(QBrush(QPixmap(':/images/background2.png')))
-        ____ text == "Gray Grid":
+        ____ t__ == "Gray Grid":
             self.scene.setBackgroundBrush(QBrush(QPixmap(':/images/background3.png')))
         ____
             self.scene.setBackgroundBrush(QBrush(QPixmap(':/images/background4.png')))
@@ -563,11 +563,11 @@ c_ MainWindow ?MW..
         self.buttonGroup.buttonClicked[int].c..(self.buttonGroupClicked)
 
         layout _ QGridLayout()
-        layout.addWidget(self.createCellWidget("Conditional", DiagramItem.Conditional),
+        layout.aW..(self.createCellWidget("Conditional", DiagramItem.Conditional),
                 0, 0)
-        layout.addWidget(self.createCellWidget("Process", DiagramItem.Step), 0,
+        layout.aW..(self.createCellWidget("Process", DiagramItem.Step), 0,
                 1)
-        layout.addWidget(self.createCellWidget("Input/Output", DiagramItem.Io),
+        layout.aW..(self.createCellWidget("Input/Output", DiagramItem.Io),
                 1, 0)
 
         textButton _ QToolButton()
@@ -577,36 +577,36 @@ c_ MainWindow ?MW..
         textButton.setIconSize(QSize(50, 50))
 
         textLayout _ QGridLayout()
-        textLayout.addWidget(textButton, 0, 0, __.AlignHCenter)
-        textLayout.addWidget(QLabel("Text"), 1, 0, __.AlignCenter)
-        textWidget _ QWidget()
-        textWidget.setLayout(textLayout)
-        layout.addWidget(textWidget, 1, 1)
+        textLayout.aW..(textButton, 0, 0, __.AlignHCenter)
+        textLayout.aW..(QLabel("Text"), 1, 0, __.AlignCenter)
+        textWidget _ ?W..
+        textWidget.sL..(textLayout)
+        layout.aW..(textWidget, 1, 1)
 
         layout.setRowStretch(3, 10)
         layout.setColumnStretch(2, 10)
 
-        itemWidget _ QWidget()
-        itemWidget.setLayout(layout)
+        itemWidget _ ?W..
+        itemWidget.sL..(layout)
 
         self.backgroundButtonGroup _ QButtonGroup()
         self.backgroundButtonGroup.buttonClicked.c..(self.backgroundButtonGroupClicked)
 
         backgroundLayout _ QGridLayout()
-        backgroundLayout.addWidget(self.createBackgroundCellWidget("Blue Grid",
+        backgroundLayout.aW..(self.createBackgroundCellWidget("Blue Grid",
                 ':/images/background1.png'), 0, 0)
-        backgroundLayout.addWidget(self.createBackgroundCellWidget("White Grid",
+        backgroundLayout.aW..(self.createBackgroundCellWidget("White Grid",
                 ':/images/background2.png'), 0, 1)
-        backgroundLayout.addWidget(self.createBackgroundCellWidget("Gray Grid",
+        backgroundLayout.aW..(self.createBackgroundCellWidget("Gray Grid",
                 ':/images/background3.png'), 1, 0)
-        backgroundLayout.addWidget(self.createBackgroundCellWidget("No Grid",
+        backgroundLayout.aW..(self.createBackgroundCellWidget("No Grid",
                 ':/images/background4.png'), 1, 1)
 
         backgroundLayout.setRowStretch(2, 10)
         backgroundLayout.setColumnStretch(2, 10)
 
-        backgroundWidget _ QWidget()
-        backgroundWidget.setLayout(backgroundLayout)
+        backgroundWidget _ ?W..
+        backgroundWidget.sL..(backgroundLayout)
 
         self.toolBox _ QToolBox()
         self.toolBox.setSizePolicy(QSizePolicy(QSizePolicy.Maximum, QSizePolicy.Ignored))
@@ -711,16 +711,16 @@ c_ MainWindow ?MW..
         self.lineColorToolButton.c__.c..(self.lineButtonTriggered)
 
         self.textToolBar _ self.addToolBar("Font")
-        self.textToolBar.addWidget(self.fontCombo)
-        self.textToolBar.addWidget(self.fontSizeCombo)
+        self.textToolBar.aW..(self.fontCombo)
+        self.textToolBar.aW..(self.fontSizeCombo)
         self.textToolBar.aA..(self.boldAction)
         self.textToolBar.aA..(self.italicAction)
         self.textToolBar.aA..(self.underlineAction)
 
         self.colorToolBar _ self.addToolBar("Color")
-        self.colorToolBar.addWidget(self.fontColorToolButton)
-        self.colorToolBar.addWidget(self.fillColorToolButton)
-        self.colorToolBar.addWidget(self.lineColorToolButton)
+        self.colorToolBar.aW..(self.fontColorToolButton)
+        self.colorToolBar.aW..(self.fillColorToolButton)
+        self.colorToolBar.aW..(self.lineColorToolButton)
 
         pointerButton _ QToolButton()
         pointerButton.setCheckable(True)
@@ -742,28 +742,28 @@ c_ MainWindow ?MW..
         self.sceneScaleCombo.currentIndexChanged[str].c..(self.sceneScaleChanged)
 
         self.pointerToolbar _ self.addToolBar("Pointer type")
-        self.pointerToolbar.addWidget(pointerButton)
-        self.pointerToolbar.addWidget(linePointerButton)
-        self.pointerToolbar.addWidget(self.sceneScaleCombo)
+        self.pointerToolbar.aW..(pointerButton)
+        self.pointerToolbar.aW..(linePointerButton)
+        self.pointerToolbar.aW..(self.sceneScaleCombo)
 
-    ___ createBackgroundCellWidget  text, image):
+    ___ createBackgroundCellWidget  t__, image):
         button _ QToolButton()
-        button.sT..(text)
+        button.sT..(t__)
         button.setIcon(QIcon(image))
         button.setIconSize(QSize(50, 50))
         button.setCheckable(True)
         self.backgroundButtonGroup.addButton(button)
 
         layout _ QGridLayout()
-        layout.addWidget(button, 0, 0, __.AlignHCenter)
-        layout.addWidget(QLabel(text), 1, 0, __.AlignCenter)
+        layout.aW..(button, 0, 0, __.AlignHCenter)
+        layout.aW..(QLabel(t__), 1, 0, __.AlignCenter)
 
-        widget _ QWidget()
-        widget.setLayout(layout)
+        widget _ ?W..
+        widget.sL..(layout)
 
         r_ widget
 
-    ___ createCellWidget  text, diagramType):
+    ___ createCellWidget  t__, diagramType):
         item _ DiagramItem(diagramType, self.itemMenu)
         icon _ QIcon(item.image())
 
@@ -774,11 +774,11 @@ c_ MainWindow ?MW..
         self.buttonGroup.addButton(button, diagramType)
 
         layout _ QGridLayout()
-        layout.addWidget(button, 0, 0, __.AlignHCenter)
-        layout.addWidget(QLabel(text), 1, 0, __.AlignCenter)
+        layout.aW..(button, 0, 0, __.AlignHCenter)
+        layout.aW..(QLabel(t__), 1, 0, __.AlignCenter)
 
-        widget _ QWidget()
-        widget.setLayout(layout)
+        widget _ ?W..
+        widget.sL..(layout)
 
         r_ widget
 

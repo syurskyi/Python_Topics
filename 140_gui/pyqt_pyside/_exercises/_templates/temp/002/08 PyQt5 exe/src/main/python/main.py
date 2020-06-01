@@ -10,7 +10,7 @@ ____ ?.?G.. ______ ?KS..
 
 c_ MainWindow ?MW..
     ___ closeEvent  e):
-        __ no. text.document().iM..
+        __ no. t__.document().iM..
             r_
         answer _ ?MB...q..(
             window, N..,
@@ -22,9 +22,9 @@ c_ MainWindow ?MW..
         ____ answer & ?MB...Cancel:
             e.ignore()
 
-text _ ?PTE..
+t__ _ ?PTE..
 window _ MainWindow()
-window.sCW..(text)
+window.sCW..(t__)
 
 file_path _ N..
 
@@ -34,7 +34,7 @@ ___ open_file
     gl.. file_path
     path _ ?FD...gOFN..(window, "Open")[0]
     __ path:
-        text.sPT..(o..(path).r..
+        t__.sPT..(o..(path).r..
         file_path _ path
 open_action.t__.c..(open_file)
 open_action.sS..(?KS...Open)
@@ -46,8 +46,8 @@ ___ save
         save_as()
     ____
         w__ o..(file_path, _  __ f:
-            f.w..(text.tPT..
-        text.document().setModified F..
+            f.w..(t__.tPT..
+        t__.document().setModified F..
 save_action.t__.c..(save)
 save_action.sS..(?KS...Save)
 menu.aA..(save_action)
@@ -70,7 +70,7 @@ help_menu _ window.mB.. .aM..("&Help")
 about_action _ ?A..("&About")
 help_menu.aA..(about_action)
 ___ show_about_dialog
-    text _ "<center>" \
+    t__ _ "<center>" \
        "<h1>Text Editor</h1>" \
        "&#8291;" \
        "<img src=%r>" \
@@ -79,7 +79,7 @@ ___ show_about_dialog
        "Copyright &copy; Company Inc.</p>" \
        % appctxt.get_resource("icon.svg")
     about_dialog _ ?MB..(window)
-    about_dialog.sT..(text)
+    about_dialog.sT..(t__)
     about_dialog.e..
 about_action.t__.c..(show_about_dialog)
 

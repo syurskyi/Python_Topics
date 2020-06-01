@@ -115,7 +115,7 @@ c_ AudioTest(AudioDevicesBase):
 
     @classmethod
     ___ sampleTypeToString(cls, sampleType):
-        r_ cls.sampleTypeMap.get(sampleType, "Unknown")
+        r_ cls.sampleTypeMap.g..(sampleType, "Unknown")
 
     endianMap _ {
         QAudioFormat.LittleEndian: "LittleEndian",
@@ -124,7 +124,7 @@ c_ AudioTest(AudioDevicesBase):
 
     @classmethod
     ___ endianToString(cls, endian):
-        r_ cls.endianMap.get(endian, "Unknown")
+        r_ cls.endianMap.g..(endian, "Unknown")
 
     ___ modeChanged  idx):
         self.testResult.clear()

@@ -11,7 +11,7 @@ c_ Downloader(qtc.QObject):
         self.manager _ qtn.QNetworkAccessManager(
             finished_self.on_finished)
         self.request _ qtn.QNetworkRequest(qtc.QUrl(url))
-        self.manager.get(self.request)
+        self.manager.g..(self.request)
 
     ___ on_finished  reply):
         filename _ reply.url().fileName() or 'download'

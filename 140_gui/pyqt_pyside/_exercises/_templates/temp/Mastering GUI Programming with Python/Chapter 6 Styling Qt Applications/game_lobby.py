@@ -10,13 +10,13 @@ c_ StyleOverrides(qtw.QProxyStyle):
     ___ drawItemText(
         self, painter, rect,
         flags, palette, enabled,
-        text, textRole
+        t__, textRole
     ):
         """Force uppercase in all text"""
-        text _ text.upper()
+        t__ _ t__.upper()
         super().drawItemText(
             painter, rect, flags,
-            palette, enabled, text,
+            palette, enabled, t__,
             textRole
         )
 
@@ -70,16 +70,16 @@ c_ MainWindow(qtw.QMainWindow):
 
         # Basic Form Definition
         self.setWindowTitle('Fight Fighter Game Lobby')
-        cx_form _ qtw.QWidget()
+        cx_form _ qtw.?W..
         self.sCW..(cx_form)
-        cx_form.setLayout(qtw.QFormLayout())
+        cx_form.sL..(qtw.QFormLayout())
 
         heading _ qtw.QLabel("Fight Fighter!")
         cx_form.layout().addRow(heading)
 
         inputs _ {
-            'Server': qtw.QLineEdit(),
-            'Name': qtw.QLineEdit(),
+            'Server': qtw.?LE..,
+            'Name': qtw.?LE..,
             'Password': qtw.QLineEdit(
                 echoMode_qtw.QLineEdit.Password),
             'Team': qtw.QComboBox(),

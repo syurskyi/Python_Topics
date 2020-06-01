@@ -234,9 +234,9 @@ c_ MainWindow ?MW..
         for format in QImageWriter.supportedImageFormats
             format _ str(format)
 
-            text _ format.upper() + "..."
+            t__ _ format.upper() + "..."
 
-            action _ ?A..(text, self, triggered_self.save)
+            action _ ?A..(t__, self, triggered_self.save)
             action.setData(format)
             self.saveAsActs.append(action)
 

@@ -89,11 +89,11 @@ __ __name__ == '__main__':
     box.setFlat(True)
     box.setTitle("Options")
 
-    layout2 _ QVBoxLayout()
-    box.setLayout(layout2)
-    layout2.addWidget(QRadioButton("Herring"))
-    layout2.addWidget(QRadioButton("Blue Parrot"))
-    layout2.addWidget(QRadioButton("Petunias"))
+    layout2 _ ?VBL..
+    box.sL..(layout2)
+    layout2.aW..(QRadioButton("Herring"))
+    layout2.aW..(QRadioButton("Blue Parrot"))
+    layout2.aW..(QRadioButton("Petunias"))
     layout2.addStretch()
 
     boxProxy _ QGraphicsProxyWidget()
@@ -104,7 +104,7 @@ __ __name__ == '__main__':
     layout _ QGraphicsLinearLayout(__.Vertical, widget)
     layout.addItem(editProxy)
     layout.addItem(buttonProxy)
-    widget.setLayout(layout)
+    widget.sL..(layout)
 
     p1 _ Pixmap(QPixmap(':/digikam.png'))
     p2 _ Pixmap(QPixmap(':/akregator.png'))

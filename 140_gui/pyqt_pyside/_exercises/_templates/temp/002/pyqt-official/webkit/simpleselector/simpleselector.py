@@ -60,7 +60,7 @@ c_ SimpleSelector(QWidget, Ui_Window):
 
         # Select elements.
         document _ frame.documentElement()
-        elements _ document.findAll(self.elementLineEdit.text())
+        elements _ document.findAll(self.elementLineEdit.t__())
 
         for element in elements:
             element.setAttribute('style', 'background-color: #f0f090')

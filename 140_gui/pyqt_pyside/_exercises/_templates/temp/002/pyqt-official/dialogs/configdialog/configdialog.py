@@ -67,18 +67,18 @@ c_ ConfigurationPage(QWidget):
         serverCombo.addItem("Trolltech (USA)")
 
         serverLayout _ QHBoxLayout()
-        serverLayout.addWidget(serverLabel)
-        serverLayout.addWidget(serverCombo)
+        serverLayout.aW..(serverLabel)
+        serverLayout.aW..(serverCombo)
 
-        configLayout _ QVBoxLayout()
+        configLayout _ ?VBL..
         configLayout.addLayout(serverLayout)
-        configGroup.setLayout(configLayout)
+        configGroup.sL..(configLayout)
 
-        mainLayout _ QVBoxLayout()
-        mainLayout.addWidget(configGroup)
+        mainLayout _ ?VBL..
+        mainLayout.aW..(configGroup)
         mainLayout.addStretch(1)
 
-        self.setLayout(mainLayout)
+        self.sL..(mainLayout)
 
 
 c_ UpdatePage(QWidget):
@@ -102,24 +102,24 @@ c_ UpdatePage(QWidget):
 
         startUpdateButton _ ?PB..("Start update")
 
-        updateLayout _ QVBoxLayout()
-        updateLayout.addWidget(systemCheckBox)
-        updateLayout.addWidget(appsCheckBox)
-        updateLayout.addWidget(docsCheckBox)
-        updateGroup.setLayout(updateLayout)
+        updateLayout _ ?VBL..
+        updateLayout.aW..(systemCheckBox)
+        updateLayout.aW..(appsCheckBox)
+        updateLayout.aW..(docsCheckBox)
+        updateGroup.sL..(updateLayout)
 
-        packageLayout _ QVBoxLayout()
-        packageLayout.addWidget(packageList)
-        packageGroup.setLayout(packageLayout)
+        packageLayout _ ?VBL..
+        packageLayout.aW..(packageList)
+        packageGroup.sL..(packageLayout)
 
-        mainLayout _ QVBoxLayout()
-        mainLayout.addWidget(updateGroup)
-        mainLayout.addWidget(packageGroup)
+        mainLayout _ ?VBL..
+        mainLayout.aW..(updateGroup)
+        mainLayout.aW..(packageGroup)
         mainLayout.addSpacing(12)
-        mainLayout.addWidget(startUpdateButton)
+        mainLayout.aW..(startUpdateButton)
         mainLayout.addStretch(1)
 
-        self.setLayout(mainLayout)
+        self.sL..(mainLayout)
 
 
 c_ QueryPage(QWidget):
@@ -129,7 +129,7 @@ c_ QueryPage(QWidget):
         packagesGroup _ QGroupBox("Look for packages")
 
         nameLabel _ QLabel("Name:")
-        nameEdit _ QLineEdit()
+        nameEdit _ ?LE..
 
         dateLabel _ QLabel("Released after:")
         dateEdit _ QDateTimeEdit(QDate.currentDate())
@@ -148,22 +148,22 @@ c_ QueryPage(QWidget):
         startQueryButton _ ?PB..("Start query")
 
         packagesLayout _ QGridLayout()
-        packagesLayout.addWidget(nameLabel, 0, 0)
-        packagesLayout.addWidget(nameEdit, 0, 1)
-        packagesLayout.addWidget(dateLabel, 1, 0)
-        packagesLayout.addWidget(dateEdit, 1, 1)
-        packagesLayout.addWidget(releasesCheckBox, 2, 0)
-        packagesLayout.addWidget(upgradesCheckBox, 3, 0)
-        packagesLayout.addWidget(hitsSpinBox, 4, 0, 1, 2)
-        packagesGroup.setLayout(packagesLayout)
+        packagesLayout.aW..(nameLabel, 0, 0)
+        packagesLayout.aW..(nameEdit, 0, 1)
+        packagesLayout.aW..(dateLabel, 1, 0)
+        packagesLayout.aW..(dateEdit, 1, 1)
+        packagesLayout.aW..(releasesCheckBox, 2, 0)
+        packagesLayout.aW..(upgradesCheckBox, 3, 0)
+        packagesLayout.aW..(hitsSpinBox, 4, 0, 1, 2)
+        packagesGroup.sL..(packagesLayout)
 
-        mainLayout _ QVBoxLayout()
-        mainLayout.addWidget(packagesGroup)
+        mainLayout _ ?VBL..
+        mainLayout.aW..(packagesGroup)
         mainLayout.addSpacing(12)
-        mainLayout.addWidget(startQueryButton)
+        mainLayout.aW..(startQueryButton)
         mainLayout.addStretch(1)
 
-        self.setLayout(mainLayout)
+        self.sL..(mainLayout)
 
 
 c_ ConfigDialog(QDialog):
@@ -178,9 +178,9 @@ c_ ConfigDialog(QDialog):
         self.contentsWidget.setSpacing(12)
 
         self.pagesWidget _ QStackedWidget()
-        self.pagesWidget.addWidget(ConfigurationPage())
-        self.pagesWidget.addWidget(UpdatePage())
-        self.pagesWidget.addWidget(QueryPage())
+        self.pagesWidget.aW..(ConfigurationPage())
+        self.pagesWidget.aW..(UpdatePage())
+        self.pagesWidget.aW..(QueryPage())
 
         closeButton _ ?PB..("Close")
 
@@ -190,20 +190,20 @@ c_ ConfigDialog(QDialog):
         closeButton.c__.c..(self.close)
 
         horizontalLayout _ QHBoxLayout()
-        horizontalLayout.addWidget(self.contentsWidget)
-        horizontalLayout.addWidget(self.pagesWidget, 1)
+        horizontalLayout.aW..(self.contentsWidget)
+        horizontalLayout.aW..(self.pagesWidget, 1)
 
         buttonsLayout _ QHBoxLayout()
         buttonsLayout.addStretch(1)
-        buttonsLayout.addWidget(closeButton)
+        buttonsLayout.aW..(closeButton)
 
-        mainLayout _ QVBoxLayout()
+        mainLayout _ ?VBL..
         mainLayout.addLayout(horizontalLayout)
         mainLayout.addStretch(1)
         mainLayout.addSpacing(12)
         mainLayout.addLayout(buttonsLayout)
 
-        self.setLayout(mainLayout)
+        self.sL..(mainLayout)
 
         self.setWindowTitle("Config Dialog")
 

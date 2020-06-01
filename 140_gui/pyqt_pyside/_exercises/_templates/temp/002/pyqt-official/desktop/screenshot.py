@@ -62,11 +62,11 @@ c_ Screenshot(QWidget):
         self.createOptionsGroupBox()
         self.createButtonsLayout()
 
-        mainLayout _ QVBoxLayout()
-        mainLayout.addWidget(self.screenshotLabel)
-        mainLayout.addWidget(self.optionsGroupBox)
+        mainLayout _ ?VBL..
+        mainLayout.aW..(self.screenshotLabel)
+        mainLayout.aW..(self.optionsGroupBox)
         mainLayout.addLayout(self.buttonsLayout)
-        self.setLayout(mainLayout)
+        self.sL..(mainLayout)
 
         self.shootScreen()
         self.delaySpinBox.setValue(5)
@@ -132,10 +132,10 @@ c_ Screenshot(QWidget):
         self.hideThisWindowCheckBox _ QCheckBox("Hide This Window")
 
         optionsGroupBoxLayout _ QGridLayout()
-        optionsGroupBoxLayout.addWidget(self.delaySpinBoxLabel, 0, 0)
-        optionsGroupBoxLayout.addWidget(self.delaySpinBox, 0, 1)
-        optionsGroupBoxLayout.addWidget(self.hideThisWindowCheckBox, 1, 0, 1, 2)
-        self.optionsGroupBox.setLayout(optionsGroupBoxLayout)
+        optionsGroupBoxLayout.aW..(self.delaySpinBoxLabel, 0, 0)
+        optionsGroupBoxLayout.aW..(self.delaySpinBox, 0, 1)
+        optionsGroupBoxLayout.aW..(self.hideThisWindowCheckBox, 1, 0, 1, 2)
+        self.optionsGroupBox.sL..(optionsGroupBoxLayout)
 
     ___ createButtonsLayout(self):
         self.newScreenshotButton _ self.createButton("New Screenshot",
@@ -148,12 +148,12 @@ c_ Screenshot(QWidget):
 
         self.buttonsLayout _ QHBoxLayout()
         self.buttonsLayout.addStretch()
-        self.buttonsLayout.addWidget(self.newScreenshotButton)
-        self.buttonsLayout.addWidget(self.saveScreenshotButton)
-        self.buttonsLayout.addWidget(self.quitScreenshotButton)
+        self.buttonsLayout.aW..(self.newScreenshotButton)
+        self.buttonsLayout.aW..(self.saveScreenshotButton)
+        self.buttonsLayout.aW..(self.quitScreenshotButton)
 
-    ___ createButton  text, member):
-        button _ ?PB..(text)
+    ___ createButton  t__, member):
+        button _ ?PB..(t__)
         button.c__.c..(member)
         r_ button
 

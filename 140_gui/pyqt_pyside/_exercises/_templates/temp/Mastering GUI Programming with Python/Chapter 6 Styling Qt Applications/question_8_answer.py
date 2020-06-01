@@ -22,19 +22,19 @@ c_ MainWindow(qtw.QMainWindow):
             qtw.QCheckBox("I am a checkbox"),
             qtw.QComboBox(editable_True)
         ]
-        container _ qtw.QWidget()
+        container _ qtw.?W..
         self.sCW..(container)
-        container.setLayout(qtw.QVBoxLayout())
+        container.sL..(qtw.QVBoxLayout())
 
         for widget in widgets:
-            container.layout().addWidget(widget)
+            container.layout().aW..(widget)
 
         # Style switching combobox
         styles _ qtw.QStyleFactory.keys()
         style_combo _ qtw.QComboBox()
         style_combo.addItems(styles)
         style_combo.currentTextChanged.c..(self.set_style)
-        container.layout().addWidget(style_combo)
+        container.layout().aW..(style_combo)
 
         # End main UI code
         self.s..

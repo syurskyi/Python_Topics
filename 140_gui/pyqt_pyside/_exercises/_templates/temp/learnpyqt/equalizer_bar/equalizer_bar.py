@@ -107,7 +107,7 @@ c_ EqualizerBar(?W...QWidget):
             self._timer.stop()
 
         __ ms:
-            self._timer _ ?C...QTimer()
+            self._timer _ ?C...?T..
             self._timer.setInterval(ms)
             self._timer.timeout.c..(self._decay_beat)
             self._timer.start()

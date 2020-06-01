@@ -93,7 +93,7 @@ c_ Window(QWidget):
         self.sortCaseSensitivityCheckBox _ QCheckBox("Case sensitive sorting")
         self.filterCaseSensitivityCheckBox _ QCheckBox("Case sensitive filter")
 
-        self.filterPatternLineEdit _ QLineEdit()
+        self.filterPatternLineEdit _ ?LE..
         self.filterPatternLabel _ QLabel("&Filter pattern:")
         self.filterPatternLabel.setBuddy(self.filterPatternLineEdit)
 
@@ -118,25 +118,25 @@ c_ Window(QWidget):
         self.sortCaseSensitivityCheckBox.toggled.c..(self.sortChanged)
 
         sourceLayout _ QHBoxLayout()
-        sourceLayout.addWidget(self.sourceView)
-        self.sourceGroupBox.setLayout(sourceLayout)
+        sourceLayout.aW..(self.sourceView)
+        self.sourceGroupBox.sL..(sourceLayout)
 
         proxyLayout _ QGridLayout()
-        proxyLayout.addWidget(self.proxyView, 0, 0, 1, 3)
-        proxyLayout.addWidget(self.filterPatternLabel, 1, 0)
-        proxyLayout.addWidget(self.filterPatternLineEdit, 1, 1, 1, 2)
-        proxyLayout.addWidget(self.filterSyntaxLabel, 2, 0)
-        proxyLayout.addWidget(self.filterSyntaxComboBox, 2, 1, 1, 2)
-        proxyLayout.addWidget(self.filterColumnLabel, 3, 0)
-        proxyLayout.addWidget(self.filterColumnComboBox, 3, 1, 1, 2)
-        proxyLayout.addWidget(self.filterCaseSensitivityCheckBox, 4, 0, 1, 2)
-        proxyLayout.addWidget(self.sortCaseSensitivityCheckBox, 4, 2)
-        self.proxyGroupBox.setLayout(proxyLayout)
+        proxyLayout.aW..(self.proxyView, 0, 0, 1, 3)
+        proxyLayout.aW..(self.filterPatternLabel, 1, 0)
+        proxyLayout.aW..(self.filterPatternLineEdit, 1, 1, 1, 2)
+        proxyLayout.aW..(self.filterSyntaxLabel, 2, 0)
+        proxyLayout.aW..(self.filterSyntaxComboBox, 2, 1, 1, 2)
+        proxyLayout.aW..(self.filterColumnLabel, 3, 0)
+        proxyLayout.aW..(self.filterColumnComboBox, 3, 1, 1, 2)
+        proxyLayout.aW..(self.filterCaseSensitivityCheckBox, 4, 0, 1, 2)
+        proxyLayout.aW..(self.sortCaseSensitivityCheckBox, 4, 2)
+        self.proxyGroupBox.sL..(proxyLayout)
 
-        mainLayout _ QVBoxLayout()
-        mainLayout.addWidget(self.sourceGroupBox)
-        mainLayout.addWidget(self.proxyGroupBox)
-        self.setLayout(mainLayout)
+        mainLayout _ ?VBL..
+        mainLayout.aW..(self.sourceGroupBox)
+        mainLayout.aW..(self.proxyGroupBox)
+        self.sL..(mainLayout)
 
         self.setWindowTitle("Basic Sort/Filter Model")
         self.resize(500, 450)
@@ -161,7 +161,7 @@ c_ Window(QWidget):
         ____
             caseSensitivity _ __.CaseInsensitive
 
-        regExp _ QRegExp(self.filterPatternLineEdit.text(),
+        regExp _ QRegExp(self.filterPatternLineEdit.t__(),
                 caseSensitivity, syntax)
         self.proxyModel.setFilterRegExp(regExp)
 

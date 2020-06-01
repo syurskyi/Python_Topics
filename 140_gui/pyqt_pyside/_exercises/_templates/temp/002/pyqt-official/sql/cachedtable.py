@@ -81,9 +81,9 @@ c_ TableEditor(QDialog):
         quitButton.c__.c..(self.close)
 
         mainLayout _ QHBoxLayout()
-        mainLayout.addWidget(view)
-        mainLayout.addWidget(buttonBox)
-        self.setLayout(mainLayout)
+        mainLayout.aW..(view)
+        mainLayout.aW..(buttonBox)
+        self.sL..(mainLayout)
 
         self.setWindowTitle("Cached Table")
 
@@ -94,7 +94,7 @@ c_ TableEditor(QDialog):
         ____
             self.model.database().rollback()
             ?MB...warning  "Cached Table",
-                        "The database reported an error: %s" % self.model.lastError().text())
+                        "The database reported an error: %s" % self.model.lastError().t__())
 
 
 __ __name__ == '__main__':

@@ -252,7 +252,7 @@ __ __name__ == '__main__':
     trans _ rootState.addTransition(centeredButton.pressed, centeredState)
     trans.addAnimation(group)
 
-    timer _ QTimer()
+    timer _ ?T..
     timer.start(125)
     timer.setSingleShot(True)
     trans _ rootState.addTransition(timer.timeout, ellipseState)

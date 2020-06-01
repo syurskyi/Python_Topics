@@ -88,26 +88,26 @@ c_ HttpWindow(QDialog):
         self.quitButton.c__.c..(self.close)
 
         topLayout _ QHBoxLayout()
-        topLayout.addWidget(urlLabel)
-        topLayout.addWidget(self.urlLineEdit)
+        topLayout.aW..(urlLabel)
+        topLayout.aW..(self.urlLineEdit)
 
-        mainLayout _ QVBoxLayout()
+        mainLayout _ ?VBL..
         mainLayout.addLayout(topLayout)
-        mainLayout.addWidget(self.statusLabel)
-        mainLayout.addWidget(buttonBox)
-        self.setLayout(mainLayout)
+        mainLayout.aW..(self.statusLabel)
+        mainLayout.aW..(buttonBox)
+        self.sL..(mainLayout)
 
         self.setWindowTitle("HTTP")
         self.urlLineEdit.setFocus()
 
     ___ startRequest  url):
-        self.reply _ self.qnam.get(QNetworkRequest(url))
+        self.reply _ self.qnam.g..(QNetworkRequest(url))
         self.reply.finished.c..(self.httpFinished)
         self.reply.readyRead.c..(self.httpReadyRead)
         self.reply.downloadProgress.c..(self.updateDataReadProgress)
 
     ___ downloadFile(self):
-        self.url _ QUrl(self.urlLineEdit.text())
+        self.url _ QUrl(self.urlLineEdit.t__())
         fileInfo _ QFileInfo(self.url.path())
         fileName _ fileInfo.fileName()
 
@@ -185,7 +185,7 @@ c_ HttpWindow(QDialog):
                 self.startRequest(self.url)
                 r_
         ____
-            fileName _ QFileInfo(QUrl(self.urlLineEdit.text()).path()).fileName()
+            fileName _ QFileInfo(QUrl(self.urlLineEdit.t__()).path()).fileName()
             self.statusLabel.sT..("Downloaded %s to %s." % (fileName, QDir.currentPath()))
 
             self.downloadButton.setEnabled(True)
@@ -206,7 +206,7 @@ c_ HttpWindow(QDialog):
         self.progressDialog.setValue(bytesRead)
 
     ___ enableDownloadButton(self):
-        self.downloadButton.setEnabled(self.urlLineEdit.text() !_ '')
+        self.downloadButton.setEnabled(self.urlLineEdit.t__() !_ '')
 
     ___ slotAuthenticationRequired  authenticator):
         ______ os
@@ -221,8 +221,8 @@ c_ HttpWindow(QDialog):
         dlg.passwordEdit.sT..(self.url.password())
 
         __ dlg.e.. == QDialog.Accepted:
-            authenticator.setUser(dlg.userEdit.text())
-            authenticator.setPassword(dlg.passwordEdit.text())
+            authenticator.setUser(dlg.userEdit.t__())
+            authenticator.setPassword(dlg.passwordEdit.t__())
 
     ___ sslErrors  reply, errors):
         errorString _ ", ".join([str(error.errorString()) for error in errors])

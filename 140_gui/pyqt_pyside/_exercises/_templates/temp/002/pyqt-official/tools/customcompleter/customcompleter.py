@@ -113,14 +113,14 @@ c_ TextEdit(QTextEdit):
             super(TextEdit, self).keyPressEvent(e)
 
         ctrlOrShift _ e.modifiers() & (__.ControlModifier | __.ShiftModifier)
-        __ self._completer __ N.. or (ctrlOrShift and len(e.text()) == 0):
+        __ self._completer __ N.. or (ctrlOrShift and len(e.t__()) == 0):
             r_
 
         eow _ "~!@#$%^&*()_+{}|:\"<>?,./;'[]\\-="
         hasModifier _ (e.modifiers() !_ __.NoModifier) and no. ctrlOrShift
         completionPrefix _ self.textUnderCursor()
 
-        __ no. isShortcut and (hasModifier or len(e.text()) == 0 or len(completionPrefix) < 3 or e.text()[-1] in eow):
+        __ no. isShortcut and (hasModifier or len(e.t__()) == 0 or len(completionPrefix) < 3 or e.t__()[-1] in eow):
             self._completer.popup().hide()
             r_
 

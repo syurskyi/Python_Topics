@@ -64,10 +64,10 @@ c_ TabDialog(QDialog):
         buttonBox.accepted.c..(self.accept)
         buttonBox.rejected.c..(self.reject)
 
-        mainLayout _ QVBoxLayout()
-        mainLayout.addWidget(tabWidget)
-        mainLayout.addWidget(buttonBox)
-        self.setLayout(mainLayout)
+        mainLayout _ ?VBL..
+        mainLayout.aW..(tabWidget)
+        mainLayout.aW..(buttonBox)
+        self.sL..(mainLayout)
 
         self.setWindowTitle("Tab Dialog")
 
@@ -96,19 +96,19 @@ c_ GeneralTab(QWidget):
         lastModValueLabel _ QLabel(fileInfo.lastModified().toString())
         lastModValueLabel.setFrameStyle(QFrame.Panel | QFrame.Sunken)
 
-        mainLayout _ QVBoxLayout()
-        mainLayout.addWidget(fileNameLabel)
-        mainLayout.addWidget(fileNameEdit)
-        mainLayout.addWidget(pathLabel)
-        mainLayout.addWidget(pathValueLabel)
-        mainLayout.addWidget(sizeLabel)
-        mainLayout.addWidget(sizeValueLabel)
-        mainLayout.addWidget(lastReadLabel)
-        mainLayout.addWidget(lastReadValueLabel)
-        mainLayout.addWidget(lastModLabel)
-        mainLayout.addWidget(lastModValueLabel)
+        mainLayout _ ?VBL..
+        mainLayout.aW..(fileNameLabel)
+        mainLayout.aW..(fileNameEdit)
+        mainLayout.aW..(pathLabel)
+        mainLayout.aW..(pathValueLabel)
+        mainLayout.aW..(sizeLabel)
+        mainLayout.aW..(sizeValueLabel)
+        mainLayout.aW..(lastReadLabel)
+        mainLayout.aW..(lastReadValueLabel)
+        mainLayout.aW..(lastModLabel)
+        mainLayout.aW..(lastModValueLabel)
         mainLayout.addStretch(1)
-        self.setLayout(mainLayout)
+        self.sL..(mainLayout)
 
 
 c_ PermissionsTab(QWidget):
@@ -139,24 +139,24 @@ c_ PermissionsTab(QWidget):
         groupValueLabel _ QLabel(fileInfo.group())
         groupValueLabel.setFrameStyle(QFrame.Panel | QFrame.Sunken)
 
-        permissionsLayout _ QVBoxLayout()
-        permissionsLayout.addWidget(readable)
-        permissionsLayout.addWidget(writable)
-        permissionsLayout.addWidget(executable)
-        permissionsGroup.setLayout(permissionsLayout)
+        permissionsLayout _ ?VBL..
+        permissionsLayout.aW..(readable)
+        permissionsLayout.aW..(writable)
+        permissionsLayout.aW..(executable)
+        permissionsGroup.sL..(permissionsLayout)
 
-        ownerLayout _ QVBoxLayout()
-        ownerLayout.addWidget(ownerLabel)
-        ownerLayout.addWidget(ownerValueLabel)
-        ownerLayout.addWidget(groupLabel)
-        ownerLayout.addWidget(groupValueLabel)
-        ownerGroup.setLayout(ownerLayout)
+        ownerLayout _ ?VBL..
+        ownerLayout.aW..(ownerLabel)
+        ownerLayout.aW..(ownerValueLabel)
+        ownerLayout.aW..(groupLabel)
+        ownerLayout.aW..(groupValueLabel)
+        ownerGroup.sL..(ownerLayout)
 
-        mainLayout _ QVBoxLayout()
-        mainLayout.addWidget(permissionsGroup)
-        mainLayout.addWidget(ownerGroup)
+        mainLayout _ ?VBL..
+        mainLayout.aW..(permissionsGroup)
+        mainLayout.aW..(ownerGroup)
         mainLayout.addStretch(1)
-        self.setLayout(mainLayout)
+        self.sL..(mainLayout)
 
 
 c_ ApplicationsTab(QWidget):
@@ -182,11 +182,11 @@ c_ ApplicationsTab(QWidget):
             alwaysCheckBox _ QCheckBox("Always use this application to open "
                     "this type of file")
 
-        layout _ QVBoxLayout()
-        layout.addWidget(topLabel)
-        layout.addWidget(applicationsListBox)
-        layout.addWidget(alwaysCheckBox)
-        self.setLayout(layout)
+        layout _ ?VBL..
+        layout.aW..(topLabel)
+        layout.aW..(applicationsListBox)
+        layout.aW..(alwaysCheckBox)
+        self.sL..(layout)
 
 
 __ __name__ == '__main__':

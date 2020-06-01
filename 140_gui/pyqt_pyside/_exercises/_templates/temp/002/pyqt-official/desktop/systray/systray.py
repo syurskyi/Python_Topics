@@ -69,10 +69,10 @@ c_ Window(QDialog):
         self.trayIcon.messageClicked.c..(self.messageClicked)
         self.trayIcon.activated.c..(self.iconActivated)
 
-        mainLayout _ QVBoxLayout()
-        mainLayout.addWidget(self.iconGroupBox)
-        mainLayout.addWidget(self.messageGroupBox)
-        self.setLayout(mainLayout)
+        mainLayout _ ?VBL..
+        mainLayout.aW..(self.iconGroupBox)
+        mainLayout.aW..(self.messageGroupBox)
+        self.sL..(mainLayout)
 
         self.iconComboBox.setCurrentIndex(1)
         self.trayIcon.s..
@@ -113,7 +113,7 @@ c_ Window(QDialog):
     ___ showMessage(self):
         icon _ QSystemTrayIcon.MessageIcon(
                 self.typeComboBox.itemData(self.typeComboBox.currentIndex()))
-        self.trayIcon.showMessage(self.titleEdit.text(),
+        self.trayIcon.showMessage(self.titleEdit.t__(),
                 self.bodyEdit.toPlainText(), icon,
                 self.durationSpinBox.value() * 1000)
 
@@ -136,11 +136,11 @@ c_ Window(QDialog):
         self.showIconCheckBox.setChecked(True)
 
         iconLayout _ QHBoxLayout()
-        iconLayout.addWidget(self.iconLabel)
-        iconLayout.addWidget(self.iconComboBox)
+        iconLayout.aW..(self.iconLabel)
+        iconLayout.aW..(self.iconComboBox)
         iconLayout.addStretch()
-        iconLayout.addWidget(self.showIconCheckBox)
-        self.iconGroupBox.setLayout(iconLayout)
+        iconLayout.aW..(self.showIconCheckBox)
+        self.iconGroupBox.sL..(iconLayout)
 
     ___ createMessageGroupBox(self):
         self.messageGroupBox _ QGroupBox("Balloon Message")
@@ -184,19 +184,19 @@ c_ Window(QDialog):
         self.showMessageButton.setDefault(True)
 
         messageLayout _ QGridLayout()
-        messageLayout.addWidget(typeLabel, 0, 0)
-        messageLayout.addWidget(self.typeComboBox, 0, 1, 1, 2)
-        messageLayout.addWidget(self.durationLabel, 1, 0)
-        messageLayout.addWidget(self.durationSpinBox, 1, 1)
-        messageLayout.addWidget(durationWarningLabel, 1, 2, 1, 3)
-        messageLayout.addWidget(titleLabel, 2, 0)
-        messageLayout.addWidget(self.titleEdit, 2, 1, 1, 4)
-        messageLayout.addWidget(bodyLabel, 3, 0)
-        messageLayout.addWidget(self.bodyEdit, 3, 1, 2, 4)
-        messageLayout.addWidget(self.showMessageButton, 5, 4)
+        messageLayout.aW..(typeLabel, 0, 0)
+        messageLayout.aW..(self.typeComboBox, 0, 1, 1, 2)
+        messageLayout.aW..(self.durationLabel, 1, 0)
+        messageLayout.aW..(self.durationSpinBox, 1, 1)
+        messageLayout.aW..(durationWarningLabel, 1, 2, 1, 3)
+        messageLayout.aW..(titleLabel, 2, 0)
+        messageLayout.aW..(self.titleEdit, 2, 1, 1, 4)
+        messageLayout.aW..(bodyLabel, 3, 0)
+        messageLayout.aW..(self.bodyEdit, 3, 1, 2, 4)
+        messageLayout.aW..(self.showMessageButton, 5, 4)
         messageLayout.setColumnStretch(3, 1)
         messageLayout.setRowStretch(4, 1)
-        self.messageGroupBox.setLayout(messageLayout)
+        self.messageGroupBox.sL..(messageLayout)
 
     ___ createActions(self):
         self.minimizeAction _ ?A..("Mi&nimize", self, triggered_self.hide)

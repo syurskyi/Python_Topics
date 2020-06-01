@@ -65,7 +65,7 @@ c_ MainWindow ?MW..
     ___ __init__  *args, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
 
-        layout _ QVBoxLayout()
+        layout _ ?VBL..
         self.editor _ TextEdit()
         # Setup the QTextEdit editor configuration
         self.editor.setAutoFormatting(QTextEdit.AutoAll)
@@ -80,10 +80,10 @@ c_ MainWindow ?MW..
         # If none, we haven't got a file open yet (or creating new).
         self.path _ N..
 
-        layout.addWidget(self.editor)
+        layout.aW..(self.editor)
 
-        container _ QWidget()
-        container.setLayout(layout)
+        container _ ?W..
+        container.sL..(layout)
         self.sCW..(container)
 
         self.status _ QStatusBar()
@@ -183,7 +183,7 @@ c_ MainWindow ?MW..
         # We need references to these actions/settings to update as selection changes, so attach to self.
         self.fonts _ QFontComboBox()
         self.fonts.currentFontChanged.c..(self.editor.setCurrentFont)
-        format_toolbar.addWidget(self.fonts)
+        format_toolbar.aW..(self.fonts)
 
         self.fontsize _ QComboBox()
         self.fontsize.addItems([str(s) for s in FONT_SIZES])
@@ -191,7 +191,7 @@ c_ MainWindow ?MW..
         # Connect to the signal producing the text of the current selection. Convert the string to float
         # and set as the pointsize. We could also use the index + retrieve from FONT_SIZES.
         self.fontsize.currentIndexChanged[str].c..(lambda s: self.editor.setFontPointSize(float(s)) )
-        format_toolbar.addWidget(self.fontsize)
+        format_toolbar.aW..(self.fontsize)
 
         self.bold_action _ ?A..(QIcon(os.path.join('images', 'edit-bold.png')), "Bold", self)
         self.bold_action.setStatusTip("Bold")
@@ -310,7 +310,7 @@ c_ MainWindow ?MW..
 
         try:
             w__ o..(path, 'rU') __ f:
-                text _ f.read()
+                t__ _ f.read()
 
         except Exception __ e:
             self.dialog_critical(str(e))
@@ -318,7 +318,7 @@ c_ MainWindow ?MW..
         ____
             self.path _ path
             # Qt will automatically try and guess the format as txt/html
-            self.editor.sT..(text)
+            self.editor.sT..(t__)
             self.update_title()
 
     ___ file_save(self):
@@ -326,11 +326,11 @@ c_ MainWindow ?MW..
             # If we do not have a path, we need to use Save As.
             r_ self.file_saveas()
 
-        text _ self.editor.toHtml() __ splitext(self.path) in HTML_EXTENSIONS else self.editor.toPlainText()
+        t__ _ self.editor.toHtml() __ splitext(self.path) in HTML_EXTENSIONS else self.editor.toPlainText()
 
         try:
             w__ o..(self.path, 'w') __ f:
-                f.w..(text)
+                f.w..(t__)
 
         except Exception __ e:
             self.dialog_critical(str(e))
@@ -342,11 +342,11 @@ c_ MainWindow ?MW..
             # If dialog is cancelled, will return ''
             r_
 
-        text _ self.editor.toHtml() __ splitext(path) in HTML_EXTENSIONS else self.editor.toPlainText()
+        t__ _ self.editor.toHtml() __ splitext(path) in HTML_EXTENSIONS else self.editor.toPlainText()
 
         try:
             w__ o..(path, 'w') __ f:
-                f.w..(text)
+                f.w..(t__)
 
         except Exception __ e:
             self.dialog_critical(str(e))

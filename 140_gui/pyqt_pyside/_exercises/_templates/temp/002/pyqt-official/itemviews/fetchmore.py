@@ -113,7 +113,7 @@ c_ Window(QWidget):
         model.setDirPath(QLibraryInfo.location(QLibraryInfo.PrefixPath))
 
         label _ QLabel("Directory")
-        lineEdit _ QLineEdit()
+        lineEdit _ ?LE..
         label.setBuddy(lineEdit)
 
         view _ QListView()
@@ -127,12 +127,12 @@ c_ Window(QWidget):
         model.numberPopulated.c..(self.updateLog)
 
         layout _ QGridLayout()
-        layout.addWidget(label, 0, 0)
-        layout.addWidget(lineEdit, 0, 1)
-        layout.addWidget(view, 1, 0, 1, 2)
-        layout.addWidget(self.logViewer, 2, 0, 1, 2)
+        layout.aW..(label, 0, 0)
+        layout.aW..(lineEdit, 0, 1)
+        layout.aW..(view, 1, 0, 1, 2)
+        layout.aW..(self.logViewer, 2, 0, 1, 2)
 
-        self.setLayout(layout)
+        self.sL..(layout)
         self.setWindowTitle("Fetch More Example")
 
     ___ updateLog  number):

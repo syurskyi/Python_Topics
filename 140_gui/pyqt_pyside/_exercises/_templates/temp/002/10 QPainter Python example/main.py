@@ -22,14 +22,14 @@ c_ PlainTextEdit(QPlainTextEdit):
             painter.drawPixmap(hole - self._offset, self._bullet)
 
 app _ ?
-text _ PlainTextEdit()
-text.sPT..("Click with the mouse below to shoot ;-)")
+t__ _ PlainTextEdit()
+t__.sPT..("Click with the mouse below to shoot ;-)")
 
 # The rest of the code is as for the normal version of the text editor.
 
 c_ MainWindow ?MW..
     ___ closeEvent  e):
-        __ no. text.document().iM..
+        __ no. t__.document().iM..
             r_
         answer _ ?MB...q..(
             window, N..,
@@ -43,7 +43,7 @@ c_ MainWindow ?MW..
 
 app.sAN..("Text Editor")
 window _ MainWindow()
-window.sCW..(text)
+window.sCW..(t__)
 
 file_path _ N..
 
@@ -53,7 +53,7 @@ ___ open_file
     gl.. file_path
     path _ ?FD...gOFN..(window, "Open")[0]
     __ path:
-        text.sPT..(o..(path).r..
+        t__.sPT..(o..(path).r..
         file_path _ path
 open_action.t__.c..(open_file)
 open_action.sS..(?KS...Open)
@@ -65,8 +65,8 @@ ___ save
         save_as()
     ____
         w__ o..(file_path, _  __ f:
-            f.w..(text.tPT..
-        text.document().setModified F..
+            f.w..(t__.tPT..
+        t__.document().setModified F..
 save_action.t__.c..(save)
 save_action.sS..(?KS...Save)
 menu.aA..(save_action)
@@ -89,14 +89,14 @@ help_menu _ window.mB.. .aM..("&Help")
 about_action _ ?A..("&About")
 help_menu.aA..(about_action)
 ___ show_about_dialog
-    text _ "<center>" \
+    t__ _ "<center>" \
            "<h1>Text Editor</h1>" \
            "&#8291;" \
            "<img src=icon.svg>" \
            "</center>" \
            "<p>Version 31.4.159.265358<br/>" \
            "Copyright &copy; Company Inc.</p>"
-    ?MB...about(window, "About Text Editor", text)
+    ?MB...about(window, "About Text Editor", t__)
 about_action.t__.c..(show_about_dialog)
 
 window.s..

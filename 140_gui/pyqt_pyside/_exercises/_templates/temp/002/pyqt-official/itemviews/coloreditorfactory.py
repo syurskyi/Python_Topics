@@ -110,8 +110,8 @@ c_ Window(QWidget):
         table.horizontalHeader().setStretchLastSection(True)
 
         layout _ QGridLayout()
-        layout.addWidget(table, 0, 0)
-        self.setLayout(layout)
+        layout.aW..(table, 0, 0)
+        self.sL..(layout)
 
         self.setWindowTitle("Color Editor Factory")
 

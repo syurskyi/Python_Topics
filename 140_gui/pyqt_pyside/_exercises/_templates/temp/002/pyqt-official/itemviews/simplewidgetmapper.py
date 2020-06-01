@@ -57,7 +57,7 @@ c_ Window(QWidget):
 
         # Set up the widgets.
         nameLabel _ QLabel("Na&me:")
-        nameEdit _ QLineEdit()
+        nameEdit _ ?LE..
         addressLabel _ QLabel("&Address:")
         addressEdit _ QTextEdit()
         ageLabel _ QLabel("A&ge (in years):")
@@ -81,15 +81,15 @@ c_ Window(QWidget):
         self.mapper.currentIndexChanged.c..(self.updateButtons)
 
         layout _ QGridLayout()
-        layout.addWidget(nameLabel, 0, 0, 1, 1)
-        layout.addWidget(nameEdit, 0, 1, 1, 1)
-        layout.addWidget(self.previousButton, 0, 2, 1, 1)
-        layout.addWidget(addressLabel, 1, 0, 1, 1)
-        layout.addWidget(addressEdit, 1, 1, 2, 1)
-        layout.addWidget(self.nextButton, 1, 2, 1, 1)
-        layout.addWidget(ageLabel, 3, 0, 1, 1)
-        layout.addWidget(ageSpinBox, 3, 1, 1, 1)
-        self.setLayout(layout)
+        layout.aW..(nameLabel, 0, 0, 1, 1)
+        layout.aW..(nameEdit, 0, 1, 1, 1)
+        layout.aW..(self.previousButton, 0, 2, 1, 1)
+        layout.aW..(addressLabel, 1, 0, 1, 1)
+        layout.aW..(addressEdit, 1, 1, 2, 1)
+        layout.aW..(self.nextButton, 1, 2, 1, 1)
+        layout.aW..(ageLabel, 3, 0, 1, 1)
+        layout.aW..(ageSpinBox, 3, 1, 1, 1)
+        self.sL..(layout)
 
         self.setWindowTitle("Simple Widget Mapper")
         self.mapper.toFirst()

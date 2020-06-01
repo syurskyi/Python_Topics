@@ -13,29 +13,29 @@ c_ CategoryWindow(qtw.QWidget):
     ___ __init__(self):
         super().__init__(N.., modal_True)
 
-        self.setLayout(qtw.QVBoxLayout())
-        self.layout().addWidget(
+        self.sL..(qtw.QVBoxLayout())
+        self.layout().aW..(
             qtw.QLabel('Please enter a new catgory name:')
             )
-        self.category_entry _ qtw.QLineEdit()
-        self.layout().addWidget(self.category_entry)
+        self.category_entry _ qtw.?LE..
+        self.layout().aW..(self.category_entry)
 
         self.submit_btn _ qtw.?PB..(
             'Submit',
             c___self.onSubmit
             )
-        self.layout().addWidget(self.submit_btn)
+        self.layout().aW..(self.submit_btn)
         self.cancel_btn _ qtw.?PB..(
             'Cancel',
             c___self.destroy
             )
-        self.layout().addWidget(self.cancel_btn)
+        self.layout().aW..(self.cancel_btn)
         self.s..
 
     @qtc.pyqtSlot()
     ___ onSubmit(self):
-        __ self.category_entry.text
-            self.submitted.emit(self.category_entry.text())
+        __ self.category_entry.t__
+            self.submitted.emit(self.category_entry.t__())
         self.close()
 
 
@@ -54,7 +54,7 @@ c_ MainWindow(qtw.QWidget):
         # Create our widgets
         self.calendar _ qtw.QCalendarWidget()
         self.event_list _ qtw.QListWidget()
-        self.event_title _ qtw.QLineEdit()
+        self.event_title _ qtw.?LE..
         self.event_category _ qtw.QComboBox()
         self.event_time _ qtw.QTimeEdit(qtc.QTime(8, 0))
         self.allday_check _ qtw.QCheckBox('All Day')
@@ -74,17 +74,17 @@ c_ MainWindow(qtw.QWidget):
 
         # Arrange the widgets
         main_layout _ qtw.QHBoxLayout()
-        self.setLayout(main_layout)
-        main_layout.addWidget(self.calendar)
+        self.sL..(main_layout)
+        main_layout.aW..(self.calendar)
         # Calendar expands to fill the window
         self.calendar.setSizePolicy(
             qtw.QSizePolicy.Expanding,
             qtw.QSizePolicy.Expanding
         )
-        right_layout _ qtw.QVBoxLayout()
+        right_layout _ qtw.?VBL..
         main_layout.addLayout(right_layout)
-        right_layout.addWidget(qtw.QLabel('Events on Date'))
-        right_layout.addWidget(self.event_list)
+        right_layout.aW..(qtw.QLabel('Events on Date'))
+        right_layout.aW..(self.event_list)
         # Event list expands to fill the right area
         self.event_list.setSizePolicy(
             qtw.QSizePolicy.Expanding,
@@ -93,16 +93,16 @@ c_ MainWindow(qtw.QWidget):
 
         # Create a sub-layout for the event view/add form
         event_form _ qtw.QGroupBox('Event')
-        right_layout.addWidget(event_form)
+        right_layout.aW..(event_form)
         event_form_layout _ qtw.QGridLayout()
-        event_form_layout.addWidget(self.event_title, 1, 1, 1, 3)
-        event_form_layout.addWidget(self.event_category, 2, 1)
-        event_form_layout.addWidget(self.event_time, 2, 2,)
-        event_form_layout.addWidget(self.allday_check, 2, 3)
-        event_form_layout.addWidget(self.event_detail, 3, 1, 1, 3)
-        event_form_layout.addWidget(self.add_button, 4, 2)
-        event_form_layout.addWidget(self.del_button, 4, 3)
-        event_form.setLayout(event_form_layout)
+        event_form_layout.aW..(self.event_title, 1, 1, 1, 3)
+        event_form_layout.aW..(self.event_category, 2, 1)
+        event_form_layout.aW..(self.event_time, 2, 2,)
+        event_form_layout.aW..(self.allday_check, 2, 3)
+        event_form_layout.aW..(self.event_detail, 3, 1, 1, 3)
+        event_form_layout.aW..(self.add_button, 4, 2)
+        event_form_layout.aW..(self.del_button, 4, 3)
+        event_form.sL..(event_form_layout)
 
 
 
@@ -146,7 +146,7 @@ c_ MainWindow(qtw.QWidget):
         self.event_list.clear()
         self.clear_form()
         date _ self.calendar.selectedDate()
-        for event in self.events.get(date, []):
+        for event in self.events.g..(date, []):
             time _ (
                 event['time'].toString('hh:mm')
                 __ event['time']
@@ -161,7 +161,7 @@ c_ MainWindow(qtw.QWidget):
         __ event_number == -1:
             r_
 
-        event_data _ self.events.get(date)[event_number]
+        event_data _ self.events.g..(date)[event_number]
 
         self.event_category.setCurrentText(event_data['category'])
         __ event_data['time'] __ N..:
@@ -179,12 +179,12 @@ c_ MainWindow(qtw.QWidget):
                 __ self.allday_check.isChecked()
                 else self.event_time.time()
                 ),
-            'title': self.event_title.text(),
+            'title': self.event_title.t__(),
             'detail': self.event_detail.toPlainText()
             }
 
         date _ self.calendar.selectedDate()
-        event_list _ self.events.get(date, [])
+        event_list _ self.events.g..(date, [])
         event_number _ self.event_list.currentRow()
 
         # if no events are selected, this is a new event
@@ -208,8 +208,8 @@ c_ MainWindow(qtw.QWidget):
     ___ check_delete_btn(self):
         self.del_button.setDisabled(self.event_list.currentRow() == -1)
 
-    ___ on_category_change  text):
-        __ text == 'New…':
+    ___ on_category_change  t__):
+        __ t__ == 'New…':
             self.dialog _ CategoryWindow()
             self.dialog.submitted.c..(self.add_category)
             self.event_category.setCurrentIndex(0)

@@ -1,9 +1,9 @@
 ____ ?.?W.. ______ *
 app _ ?
-window _ QWidget()
-layout _ QVBoxLayout()
-layout.addWidget(?PB..('Top'))
-layout.addWidget(?PB..('Bottom'))
-window.setLayout(layout)
+window _ ?W..
+layout _ ?VBL..
+layout.aW..(?PB..('Top'))
+layout.aW..(?PB..('Bottom'))
+window.sL..(layout)
 window.s..
 app.e..
