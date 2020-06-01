@@ -3,7 +3,7 @@ ____ ? ______ ?C.., ?G.., ?S.., ?W..
 ______ sportsconnection
 
 
-___ initializeModel(model):
+___ initializeModel model
     model.setTable('sportsmen')
     model.setEditStrategy(?S...?STM...OnFieldChange)
     model.select()
