@@ -1,7 +1,7 @@
-____ ?.QtQml ______ QQmlApplicationEngine
-____ ?.?W.. ______ ?A..
-
-app _ ?
-engine _ QQmlApplicationEngine()
-engine.load("main.qml")
-app.e..
+# ____ ?.QtQml ______ QQAE..
+# ____ ?.?W.. ______ ?A..
+#
+# app _ ?
+# engine _ QQAE..
+# ?.l.. main.qml
+# ?.e..
