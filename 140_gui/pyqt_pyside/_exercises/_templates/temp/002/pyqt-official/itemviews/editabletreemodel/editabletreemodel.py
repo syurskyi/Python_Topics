@@ -310,7 +310,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
         model _ TreeModel(headers, file.readAll())
         file.close()
 
-        self.view.setModel(model)
+        self.view.sM..(model)
         for column in range(model.columnCount()):
             self.view.resizeColumnToContents(column)
 

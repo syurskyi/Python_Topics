@@ -154,9 +154,9 @@ __ __name__ == '__main__':
     node2 _ QRemoteObjectHost(QUrl('local:replica'), QUrl('local:registry'))
     node2.enableRemoting(sourceModel, 'RemoteModel', roles)
 
-    view _ QTreeView()
+    view _ ?TV..
     view.setWindowTitle("SourceView")
-    view.setModel(sourceModel)
+    view.sM..(sourceModel)
     view.s..
 
     handler _ TimerHandler(sourceModel)

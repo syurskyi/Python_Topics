@@ -64,7 +64,7 @@ c_ TableEditor(QDialog):
         self.model.setHeaderData(2, __.Horizontal, "Last name")
 
         view _ QTableView()
-        view.setModel(self.model)
+        view.sM..(self.model)
 
         submitButton _ ?PB..("Submit")
         submitButton.setDefault(True)

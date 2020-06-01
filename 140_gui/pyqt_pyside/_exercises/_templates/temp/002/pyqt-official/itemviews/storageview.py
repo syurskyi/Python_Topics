@@ -149,8 +149,8 @@ c_ StorageModel(QAbstractTableModel):
 
 ___ main(args):
     app _ ?A.. (args)
-    view _ QTreeView()
-    view.setModel(StorageModel(view))
+    view _ ?TV..
+    view.sM..(StorageModel(view))
     view.resize(640, 480)
     view.setSelectionBehavior(QAbstractItemView.SelectRows)
     for column in range(view.model().columnCount()):

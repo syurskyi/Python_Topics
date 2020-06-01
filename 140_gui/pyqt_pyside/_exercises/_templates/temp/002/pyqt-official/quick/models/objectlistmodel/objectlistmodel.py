@@ -88,7 +88,7 @@ __ __name__ == '__main__':
     # This is necessary to avoid a possible crash when running from another
     # directory by ensuring the compiled version of the embedded QML file
     # doesn't get mixed up with another of the same name.
-    os.chdir(os.path.dirname(os.path.abspath(__file__)))
+    os.chdir(__.p__ .dirname(__.p__ .abspath(__file__)))
 
     app _ QGuiApplication(sys.argv)
 

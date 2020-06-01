@@ -100,7 +100,7 @@ __ __name__ == '__main__':
     view.setResizeMode(QQuickView.SizeRootObjectToView)
     view.setSource(
             QUrl.fromLocalFile(
-                    os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                    __.p__ .join(__.p__ .dirname(__.p__ .abspath(__file__)),
                             'app.qml')))
     view.s..
 

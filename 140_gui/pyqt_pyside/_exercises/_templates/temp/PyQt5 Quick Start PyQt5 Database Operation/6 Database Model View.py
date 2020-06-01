@@ -13,7 +13,7 @@ c_ MainWindow(QWidget):
         self.initializedModel()
 
         self.tableView _ QTableView()
-        self.tableView.setModel(self.model)
+        self.tableView.sM..(self.model)
 
         self.layout _ ?VBL..
         addButton _ ?PB..("add")

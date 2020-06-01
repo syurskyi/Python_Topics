@@ -67,12 +67,12 @@ app _ ?A..(sys.argv)
 node _ QRemoteObjectNode(QUrl('local:registry'))
 node.setHeartbeatInterval(1000)
 
-view _ QTreeView()
+view _ ?TV..
 view.setWindowTitle("RemoteView")
 view.resize(640, 480)
 
 model _ node.acquireModel('RemoteModel')
-view.setModel(model)
+view.sM..(model)
 view.s..;
 
 sys.exit(app.exec_())

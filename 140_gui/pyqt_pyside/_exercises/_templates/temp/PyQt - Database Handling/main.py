@@ -14,7 +14,7 @@ ___ initializeModel(model):
 
 ___ createView(title, model):
     view _ ?W...QTableView()
-    view.setModel(model)
+    view.sM..(model)
     view.setWindowTitle(title)
     r_ view
 

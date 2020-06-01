@@ -117,7 +117,7 @@ c_ Window(QWidget):
         label.setBuddy(lineEdit)
 
         view _ QListView()
-        view.setModel(model)
+        view.sM..(model)
 
         self.logViewer _ QTextBrowser()
         self.logViewer.setSizePolicy(QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred))

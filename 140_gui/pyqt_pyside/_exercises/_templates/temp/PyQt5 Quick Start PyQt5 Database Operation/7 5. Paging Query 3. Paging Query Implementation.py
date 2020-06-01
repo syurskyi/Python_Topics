@@ -15,7 +15,7 @@ c_ DataGrid(QWidget):
         self.queryModel _ QSqlQueryModel()
         # Table View
         self.tableView _ QTableView()
-        self.tableView.setModel(self.queryModel)
+        self.tableView.sM..(self.queryModel)
         #
         self.totalPageLabel _ QLabel()
         self.currentPageLabel _ QLabel()

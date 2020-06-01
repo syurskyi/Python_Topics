@@ -111,7 +111,7 @@ c_ Window(QWidget):
         self.proxyModel _ MySortFilterProxyModel(self)
         self.proxyModel.setDynamicSortFilter(True)
 
-        self.sourceView _ QTreeView()
+        self.sourceView _ ?TV..
         self.sourceView.setRootIsDecorated F..
         self.sourceView.setAlternatingRowColors(True)
 
@@ -147,10 +147,10 @@ c_ Window(QWidget):
         self.fromDateEdit.dateChanged.c..(self.dateFilterChanged)
         self.toDateEdit.dateChanged.c..(self.dateFilterChanged)
 
-        self.proxyView _ QTreeView()
+        self.proxyView _ ?TV..
         self.proxyView.setRootIsDecorated F..
         self.proxyView.setAlternatingRowColors(True)
-        self.proxyView.setModel(self.proxyModel)
+        self.proxyView.sM..(self.proxyModel)
         self.proxyView.setSortingEnabled(True)
         self.proxyView.sortByColumn(1, __.AscendingOrder)
 
@@ -180,7 +180,7 @@ c_ Window(QWidget):
 
     ___ setSourceModel  model):
         self.proxyModel.setSourceModel(model)
-        self.sourceView.setModel(model)
+        self.sourceView.sM..(model)
 
     ___ textFilterChanged(self):
         syntax _ QRegExp.PatternSyntax(

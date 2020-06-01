@@ -141,7 +141,7 @@ c_ MainWindow ?MW..
         self.view.verticalHeader().hide()
         self.view.horizontalHeader().setMinimumSectionSize(1)
         self.view.verticalHeader().setMinimumSectionSize(1)
-        self.view.setModel(self.model)
+        self.view.sM..(self.model)
 
         delegate _ PixelDelegate(self)
         self.view.setItemDelegate(delegate)

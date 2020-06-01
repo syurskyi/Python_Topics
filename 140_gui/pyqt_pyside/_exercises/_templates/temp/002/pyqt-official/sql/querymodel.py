@@ -127,7 +127,7 @@ ___ createView(title, model):
 
     view _ QTableView()
     views.ap..(view)
-    view.setModel(model)
+    view.sM..(model)
     view.setWindowTitle(title)
     view.move(100 + offset, 100 + offset)
     offset +_ 20

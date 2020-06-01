@@ -1,4 +1,4 @@
-____ os.path ______ exists
+____ __.p__  ______ exists
 ____ ?.?W.. ______ *
 ____ ?.QtSql ______ *
 
@@ -16,6 +16,6 @@ model _ QSqlTableModel(N.., db)
 model.setTable("projects")
 model.select()
 view _ QTableView()
-view.setModel(model)
+view.sM..(model)
 view.s..
 app.e..

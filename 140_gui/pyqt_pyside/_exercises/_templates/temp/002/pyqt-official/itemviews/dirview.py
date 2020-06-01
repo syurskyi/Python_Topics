@@ -74,8 +74,8 @@ model.setRootPath('')
 __ parser.isSet(dontUseCustomDirectoryIconsOption):
     model.iconProvider().setOptions(
             QFileIconProvider.DontUseCustomDirectoryIcons)
-tree _ QTreeView()
-tree.setModel(model)
+tree _ ?TV..
+tree.sM..(model)
 __ rootPath __ no. N..:
     rootIndex _ model.index(QDir.cleanPath(rootPath))
     __ rootIndex.isValid

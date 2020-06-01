@@ -59,7 +59,7 @@ ____ ?.?W.. ______ ?A.., QHeaderView, QTableView
 c_ FreezeTableWidget(QTableView):
     ___ __init__  model):
         super(FreezeTableWidget, self).__init__()
-        self.setModel(model)
+        self.sM..(model)
         self.frozenTableView _ QTableView(self)
         self.init()
         self.horizontalHeader().sectionResized.c..(self.updateSectionWidth)
@@ -70,7 +70,7 @@ c_ FreezeTableWidget(QTableView):
             self.frozenTableView.verticalScrollBar().setValue)
 
     ___ init(self):
-        self.frozenTableView.setModel(self.model())
+        self.frozenTableView.sM..(self.model())
         self.frozenTableView.sFP..(__.NF..)
         self.frozenTableView.verticalHeader().hide()
         self.frozenTableView.horizontalHeader().setSectionResizeMode(

@@ -80,7 +80,7 @@ __ __name__ == '__main__':
 
     model _ QStandardItemModel(4, 2)
     tableView _ QTableView()
-    tableView.setModel(model)
+    tableView.sM..(model)
 
     delegate _ SpinBoxDelegate()
     tableView.setItemDelegate(delegate)

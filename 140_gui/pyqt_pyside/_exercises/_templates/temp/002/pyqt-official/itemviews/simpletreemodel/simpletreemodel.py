@@ -205,8 +205,8 @@ __ __name__ == '__main__':
     model _ TreeModel(f.readAll())
     f.close()
 
-    view _ QTreeView()
-    view.setModel(model)
+    view _ ?TV..
+    view.sM..(model)
     view.setWindowTitle("Simple Tree Model")
     view.s..
     sys.exit(app.exec_())

@@ -23,6 +23,6 @@ c_ TableModel(QAbstractTableModel):
 app _ ?
 model _ TableModel()
 view _ QTableView()
-view.setModel(model)
+view.sM..(model)
 view.s..
 app.e..

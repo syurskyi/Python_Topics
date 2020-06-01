@@ -73,7 +73,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
         self.nextButton.pressed.c..(self.playlist.next)
 
         self.model _ PlaylistModel(self.playlist)
-        self.playlistView.setModel(self.model)
+        self.playlistView.sM..(self.model)
         self.playlist.currentIndexChanged.c..(self.playlist_position_changed)
         selection_model _ self.playlistView.selectionModel()
         selection_model.selectionChanged.c..(self.playlist_selection_changed)

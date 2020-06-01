@@ -38,9 +38,9 @@ c_ MainWindow(qtw.QWidget):
         model _ qtc.QStringListModel(data)
 
         listview _ qtw.QListView()
-        listview.setModel(model)
+        listview.sM..(model)
         model_combobox _ qtw.QComboBox()
-        model_combobox.setModel(model)
+        model_combobox.sM..(model)
 
         self.layout().aW..(listview)
         self.layout().aW..(model_combobox)

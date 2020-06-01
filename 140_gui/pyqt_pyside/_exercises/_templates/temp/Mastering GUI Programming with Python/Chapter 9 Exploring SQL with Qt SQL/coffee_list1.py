@@ -94,7 +94,7 @@ c_ MainWindow(qtw.QMainWindow):
             "SELECT id, coffee_brand, coffee_name AS coffee "
             "FROM coffees ORDER BY id")
         self.coffee_list _ qtw.QTableView()
-        self.coffee_list.setModel(coffees)
+        self.coffee_list.sM..(coffees)
         self.stack.aW..(self.coffee_list)
         self.stack.setCurrentWidget(self.coffee_list)
 

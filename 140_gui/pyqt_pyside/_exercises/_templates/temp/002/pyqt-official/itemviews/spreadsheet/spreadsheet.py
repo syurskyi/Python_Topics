@@ -526,7 +526,7 @@ c_ SpreadSheet ?MW..
         printer _ QPrinter(QPrinter.ScreenResolution)
         dlg _ QPrintPreviewDialog(printer)
         view _ PrintView()
-        view.setModel(self.table.model())
+        view.sM..(self.table.model())
         dlg.paintRequested.c..(view.print_)
         dlg.e..
 

@@ -212,7 +212,7 @@ c_ HttpWindow(QDialog):
         ______ os
         ____ ? ______ uic
 
-        ui _ os.path.join(os.path.dirname(__file__), 'authenticationdialog.ui')
+        ui _ __.p__ .join(__.p__ .dirname(__file__), 'authenticationdialog.ui')
         dlg _ uic.loadUi(ui)
         dlg.adjustSize()
         dlg.siteDescription.sT..("%s at %s" % (authenticator.realm(), self.url.host()))

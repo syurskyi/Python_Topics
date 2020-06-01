@@ -142,7 +142,7 @@ c_ MainWindow ?MW..
 
         self.completingTextEdit _ TextEdit()
         self.completer _ QCompleter(self)
-        self.completer.setModel(self.modelFromFile(':/resources/wordlist.txt'))
+        self.completer.sM..(self.modelFromFile(':/resources/wordlist.txt'))
         self.completer.setModelSorting(QCompleter.CaseInsensitivelySortedModel)
         self.completer.setCaseSensitivity(__.CaseInsensitive)
         self.completer.setWrapAround F..

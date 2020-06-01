@@ -42,7 +42,7 @@
 
 
 ______ sys
-______ os.path
+______ __.p__
 
 ____ ?.?C.. ______ QUrl
 ____ ?.?G.. ______ QGuiApplication
@@ -50,8 +50,8 @@ ____ ?.QtQuick ______ QQuickView
 
 # Access the shared module.
 sys.path.insert(1,
-        os.path.join(
-                os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+        __.p__ .join(
+                __.p__ .dirname(__.p__ .dirname(__.p__ .abspath(__file__))),
                 'shared'))
 ______ shared_rc
 

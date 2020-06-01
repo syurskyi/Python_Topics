@@ -122,7 +122,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
 
     ___ set_weather_icon  label, weather):
         label.setPixmap(
-            QPixmap(os.path.join('images', "%s.png" %
+            QPixmap(__.p__ .join('images', "%s.png" %
                                  weather[0]['icon']
                                  )
                     )

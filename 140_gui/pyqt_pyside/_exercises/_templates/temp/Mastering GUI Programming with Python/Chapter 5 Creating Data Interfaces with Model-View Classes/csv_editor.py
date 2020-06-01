@@ -132,7 +132,7 @@ c_ MainWindow(qtw.QMainWindow):
         )
         __ filename:
             self.model _ CsvTableModel(filename)
-            self.tableview.setModel(self.model)
+            self.tableview.sM..(self.model)
 
     ___ save_file(self):
         __ self.model:

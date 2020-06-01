@@ -504,8 +504,8 @@ c_ MainWindow ?MW..
         splitter.setStretchFactor(0, 0)
         splitter.setStretchFactor(1, 1)
 
-        table.setModel(self.model)
-        self.pieChart.setModel(self.model)
+        table.sM..(self.model)
+        self.pieChart.sM..(self.model)
 
         self.selectionModel _ QItemSelectionModel(self.model)
         table.setSelectionModel(self.selectionModel)

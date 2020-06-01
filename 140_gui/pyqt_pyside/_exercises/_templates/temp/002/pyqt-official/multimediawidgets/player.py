@@ -407,7 +407,7 @@ c_ Player(QWidget):
         self.playlistModel.setPlaylist(self.playlist)
 
         self.playlistView _ QListView()
-        self.playlistView.setModel(self.playlistModel)
+        self.playlistView.sM..(self.playlistModel)
         self.playlistView.setCurrentIndex(
                 self.playlistModel.index(self.playlist.currentIndex(), 0))
 

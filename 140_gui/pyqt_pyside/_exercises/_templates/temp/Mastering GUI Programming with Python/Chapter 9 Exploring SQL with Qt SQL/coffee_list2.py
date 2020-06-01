@@ -40,7 +40,7 @@ c_ CoffeeForm(qtw.QWidget):
         # Map the coffee fields
         self.coffees_model _ coffees_model
         self.mapper _ qtw.QDataWidgetMapper(self)
-        self.mapper.setModel(self.coffees_model)
+        self.mapper.sM..(self.coffees_model)
         self.mapper.setItemDelegate(
             qts.QSqlRelationalDelegate(self))
         self.mapper.addMapping(
@@ -58,14 +58,14 @@ c_ CoffeeForm(qtw.QWidget):
         # retrieve a model for the roasts and setup the combo box
         roasts_model _ coffees_model.relationModel(
             self.coffees_model.fieldIndex('description'))
-        self.roast.setModel(roasts_model)
+        self.roast.sM..(roasts_model)
         self.roast.setModelColumn(1)
         # Cause data to be written when changed
 
         # Reviews
         self.reviews _ qtw.QTableView()
         self.layout().addRow(self.reviews)
-        self.reviews.setModel(reviews_model)
+        self.reviews.sM..(reviews_model)
         self.reviews.hideColumn(0)
         self.reviews.hideColumn(1)
         self.reviews.horizontalHeader().setSectionResizeMode(
@@ -166,7 +166,7 @@ c_ MainWindow(qtw.QMainWindow):
         self.coffees_model.setEditStrategy(0)
         self.coffees_model.dataChanged.c..(print)
         self.coffee_list _ qtw.QTableView()
-        self.coffee_list.setModel(self.coffees_model)
+        self.coffee_list.sM..(self.coffees_model)
         self.stack.aW..(self.coffee_list)
 
         self.coffees_model.select()

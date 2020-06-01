@@ -190,7 +190,7 @@ c_ MainWindow ?MW..
         self.xmlPath _ ""
         self.model _ DomModel(QDomDocument(), self)
         self.view _ QTreeView(self)
-        self.view.setModel(self.model)
+        self.view.sM..(self.model)
 
         self.sCW..(self.view)
         self.setWindowTitle("Simple DOM Model")
@@ -206,7 +206,7 @@ c_ MainWindow ?MW..
                 document _ QDomDocument()
                 __ document.setContent(f):
                     newModel _ DomModel(document, self)
-                    self.view.setModel(newModel)
+                    self.view.sM..(newModel)
                     self.model _ newModel
                     self.xmlPath _ filePath
 

@@ -408,7 +408,7 @@ c_ MainWindow ?MW..
         self.piecesList.setDropIndicatorShown(True)
 
         self.model _ PiecesModel(self)
-        self.piecesList.setModel(self.model)
+        self.piecesList.sM..(self.model)
 
         self.puzzleWidget _ PuzzleWidget()
 

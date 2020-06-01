@@ -70,7 +70,7 @@ c_ Window(QWidget):
 
         # Set up the mapper.
         self.mapper _ QDataWidgetMapper(self)
-        self.mapper.setModel(self.model)
+        self.mapper.sM..(self.model)
         self.mapper.addMapping(nameEdit, 0)
         self.mapper.addMapping(addressEdit, 1)
         self.mapper.addMapping(ageSpinBox, 2)

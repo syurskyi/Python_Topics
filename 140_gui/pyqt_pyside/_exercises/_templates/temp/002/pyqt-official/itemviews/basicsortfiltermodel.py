@@ -80,14 +80,14 @@ c_ Window(QWidget):
         self.sourceGroupBox _ QGroupBox("Original Model")
         self.proxyGroupBox _ QGroupBox("Sorted/Filtered Model")
 
-        self.sourceView _ QTreeView()
+        self.sourceView _ ?TV..
         self.sourceView.setRootIsDecorated F..
         self.sourceView.setAlternatingRowColors(True)
 
-        self.proxyView _ QTreeView()
+        self.proxyView _ ?TV..
         self.proxyView.setRootIsDecorated F..
         self.proxyView.setAlternatingRowColors(True)
-        self.proxyView.setModel(self.proxyModel)
+        self.proxyView.sM..(self.proxyModel)
         self.proxyView.setSortingEnabled(True)
 
         self.sortCaseSensitivityCheckBox _ QCheckBox("Case sensitive sorting")
@@ -150,7 +150,7 @@ c_ Window(QWidget):
 
     ___ setSourceModel  model):
         self.proxyModel.setSourceModel(model)
-        self.sourceView.setModel(model)
+        self.sourceView.sM..(model)
 
     ___ filterRegExpChanged(self):
         syntax_nr _ self.filterSyntaxComboBox.itemData(self.filterSyntaxComboBox.currentIndex())

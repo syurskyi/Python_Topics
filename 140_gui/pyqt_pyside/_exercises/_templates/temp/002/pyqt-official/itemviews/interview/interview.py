@@ -155,15 +155,15 @@ ___ main(args):
     data _ Model(1000, 10, page)
     selections _ QItemSelectionModel(data)
     table _ QTableView()
-    table.setModel(data)
+    table.sM..(data)
     table.setSelectionModel(selections)
     table.horizontalHeader().setSectionsMovable(True)
     table.verticalHeader().setSectionsMovable(True)
     # Set StaticContents to enable minimal repaints on resizes.
     table.viewport().setAttribute(__.WA_StaticContents)
     page.aW..(table)
-    tree _ QTreeView()
-    tree.setModel(data)
+    tree _ ?TV..
+    tree.sM..(data)
     tree.setSelectionModel(selections)
     tree.setUniformRowHeights(True)
     tree.header().setStretchLastSection F..
@@ -172,7 +172,7 @@ ___ main(args):
     tree.setAttribute(__.WA_MacShowFocusRect, False)
     page.aW..(tree)
     list _ QListView()
-    list.setModel(data)
+    list.sM..(data)
     list.setSelectionModel(selections)
     list.setViewMode(QListView.IconMode)
     list.setSelectionMode(QAbstractItemView.ExtendedSelection)

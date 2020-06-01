@@ -64,10 +64,10 @@ app _ ?A..(sys.argv)
 
 # Tell Qt Designer where it can find the directory containing the plugins and
 # Python where it can find the widgets.
-base _ os.path.dirname(__file__)
+base _ __.p__ .dirname(__file__)
 env _ QProcessEnvironment.systemEnvironment()
-env.insert('PYQTDESIGNERPATH', os.path.join(base, 'python'))
-env.insert('PYTHONPATH', os.path.join(base, 'widgets'))
+env.insert('PYQTDESIGNERPATH', __.p__ .join(base, 'python'))
+env.insert('PYTHONPATH', __.p__ .join(base, 'widgets'))
 
 # Start Designer.
 designer _ QProcess()
