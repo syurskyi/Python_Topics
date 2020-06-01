@@ -42,27 +42,27 @@
 #############################################################################
 
 
-______ sys
+______ ___
 
 ____ ?.?C.. ______ QCoreApplication
 ____ ?.QtDBus ______ QDBusConnection, QDBusInterface
 
 
 ___ method1
-    sys.stdout.w..("Method 1:\n")
+    ___.stdout.w..("Method 1:\n")
 
     reply _ QDBusConnection.sessionBus().interface().registeredServiceNames()
     __ no. reply.isValid
-        sys.stdout.w..("Error: %s\n" % reply.error().message())
-        sys.exit(1)
+        ___.stdout.w..("Error: %s\n" % reply.error().message())
+        ___.exit(1)
 
     # Mimic the output from the C++ version.
     for name in reply.value
-        sys.stdout.w..('"%s"\n' % name)
+        ___.stdout.w..('"%s"\n' % name)
 
 
 ___ method2
-    sys.stdout.w..("Method 2:\n")
+    ___.stdout.w..("Method 2:\n")
 
     bus _ QDBusConnection.sessionBus()
     dbus_iface _ QDBusInterface('org.freedesktop.DBus',
@@ -70,29 +70,29 @@ ___ method2
     names _ dbus_iface.call('ListNames').arguments()[0]
 
     # Mimic the output from the C++ version.
-    sys.stdout.w..('QVariant(QStringList, ("%s") )\n' % '", "'.join(names))
+    ___.stdout.w..('QVariant(QStringList, ("%s") )\n' % '", "'.join(names))
 
 
 ___ method3
-    sys.stdout.w..("Method 3:\n")
+    ___.stdout.w..("Method 3:\n")
 
     names _ QDBusConnection.sessionBus().interface().registeredServiceNames().value()
 
     # Mimic the output from the C++ version.
-    sys.stdout.w..('("%s")\n' % '", "'.join(names))
+    ___.stdout.w..('("%s")\n' % '", "'.join(names))
 
 
 __ __name__ == '__main__':
-    app _ QCoreApplication(sys.argv)
+    app _ QCoreApplication(___.argv)
 
     __ no. QDBusConnection.sessionBus().isConnected
-        sys.stderr.w..("Cannot connect to the D-Bus session bus.\n"
+        ___.stderr.w..("Cannot connect to the D-Bus session bus.\n"
                 "To start it, run:\n"
                 "\teval `dbus-launch --auto-syntax`\n");
-        sys.exit(1)
+        ___.exit(1)
 
     method1()
     method2()
     method3()
 
-    sys.exit()
+    ___.e..

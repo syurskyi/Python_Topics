@@ -137,13 +137,13 @@ c_ Lighting(QGraphicsView):
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
 
     lighting _ Lighting()
     lighting.setWindowTitle("Lighting and Shadows")
     lighting.resize(640, 480)
     lighting.s..
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

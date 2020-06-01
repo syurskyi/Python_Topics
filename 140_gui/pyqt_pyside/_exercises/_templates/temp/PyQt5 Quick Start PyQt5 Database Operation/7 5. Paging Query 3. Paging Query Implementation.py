@@ -1,5 +1,5 @@
-______ sys
-____ ?.QtSql ______ QSqlDatabase, QSqlQuery, QSqlTableModel, QSqlQueryModel
+______ ___
+____ ?.?S.. ______ ?SD.., QSqlQuery, ?STM.., QSqlQueryModel
 ____ ?.?C.. ______ *
 ____ ?.?W.. ______ *
 ______ re
@@ -68,8 +68,8 @@ c_ DataGrid(QWidget):
         self.switchPageButton.c__.c..(self.onSwitchPage)
 
     ___ initializedModel(self):
-        self.db _ QSqlDatabase.addDatabase("QSQLITE")
-        self.db.setDatabaseName("/home/user/test.db")
+        self.db _ ?SD...aD..("QSQLITE")
+        self.db.sDN..("/home/user/test.db")
         __ no. self.db.o..
             r_ False
         self.queryModel.setHeaderData(0, __.Horizontal, "ID")
@@ -144,7 +144,7 @@ c_ DataGrid(QWidget):
         self.db.close()
 
 __ __name__ == "__main__":
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
     window _ DataGrid()
     window.s..
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

@@ -39,7 +39,7 @@
 #############################################################################
 
 
-______ sys
+______ ___
 
 ____ ?.?C.. ______ pyqtSlot
 ____ ?.?W.. ______ ?A.., QDialog
@@ -58,7 +58,7 @@ c_ DemoImpl(QDialog):
             self.list.addItem(s)
 
 
-app _ ?A..(sys.argv)
+app _ ?A..(___.argv)
 widget _ DemoImpl()
 widget.s..
-sys.exit(app.exec_())
+___.exit(app.exec_())

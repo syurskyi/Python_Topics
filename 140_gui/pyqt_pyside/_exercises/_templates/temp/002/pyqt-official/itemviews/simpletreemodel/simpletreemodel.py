@@ -196,9 +196,9 @@ c_ TreeModel(QAbstractItemModel):
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
 
     f _ QFile(':/default.txt')
     f.o..(QIODevice.ReadOnly)
@@ -209,4 +209,4 @@ __ __name__ == '__main__':
     view.sM..(model)
     view.setWindowTitle("Simple Tree Model")
     view.s..
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

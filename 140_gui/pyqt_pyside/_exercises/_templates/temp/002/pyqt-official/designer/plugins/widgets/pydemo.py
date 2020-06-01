@@ -146,11 +146,11 @@ _demo_text _ """<h3>PyQt Demonstration Widget</h3>
 # command line.
 __ __name__ == "__main__":
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
 
     demo _ PyDemo()
     demo.s..
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

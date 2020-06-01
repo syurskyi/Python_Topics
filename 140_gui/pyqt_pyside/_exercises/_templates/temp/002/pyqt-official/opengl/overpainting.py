@@ -42,7 +42,7 @@
 #############################################################################
 
 
-______ sys
+______ ___
 ______ math, random
 
 ____ ?.?C.. ______ (QPoint, QPointF, QRect, QRectF, QSize, __, QTime,
@@ -368,7 +368,7 @@ c_ GLWidget(QOpenGLWidget):
 
 __ __name__ == '__main__':
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
 
     fmt _ QSurfaceFormat()
     fmt.setSamples(4)
@@ -376,4 +376,4 @@ __ __name__ == '__main__':
 
     window _ GLWidget()
     window.s..
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

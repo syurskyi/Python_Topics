@@ -42,7 +42,7 @@
 #############################################################################
 
 
-______ sys
+______ ___
 
 ____ ?.?C.. ______ (pyqtProperty, pyqtSignal, pyqtSlot, Q_CLASSINFO,
         QCoreApplication, QDate, QObject, QTime, QTimer, QUrl)
@@ -280,7 +280,7 @@ c_ HappyBirthdaySong(QObject, QQmlPropertyValueSource):
             QCoreApplication.instance().quit()
 
 
-app _ QCoreApplication(sys.argv)
+app _ QCoreApplication(___.argv)
 
 qmlRegisterType(BirthdayPartyAttached)
 qmlRegisterType(BirthdayParty, "People", 1, 0, "BirthdayParty",
@@ -324,4 +324,4 @@ ____
     for e in component.errors
         print("Error:", e.toString());
 
-sys.exit(app.exec_())
+___.exit(app.exec_())

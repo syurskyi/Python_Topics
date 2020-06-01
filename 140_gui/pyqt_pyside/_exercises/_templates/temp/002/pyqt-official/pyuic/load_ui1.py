@@ -39,13 +39,13 @@
 #############################################################################
 
 
-______ sys
+______ ___
 
 ____ ?.?W.. ______ ?A..
 ____ ?.uic ______ loadUi
 
 
-app _ ?A..(sys.argv)
+app _ ?A..(___.argv)
 widget _ loadUi('demo.ui')
 widget.s..
-sys.exit(app.exec_())
+___.exit(app.exec_())

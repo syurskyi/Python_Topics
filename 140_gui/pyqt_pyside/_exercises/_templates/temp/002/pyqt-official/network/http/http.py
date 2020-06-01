@@ -237,9 +237,9 @@ c_ HttpWindow(QDialog):
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
     httpWin _ HttpWindow()
     httpWin.s..
-    sys.exit(httpWin.exec_())
+    ___.exit(httpWin.exec_())

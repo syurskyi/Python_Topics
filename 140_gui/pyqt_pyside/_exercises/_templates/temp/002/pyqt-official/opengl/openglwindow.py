@@ -206,9 +206,9 @@ void main() {
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ QGuiApplication(sys.argv)
+    app _ QGuiApplication(___.argv)
 
     format _ QSurfaceFormat()
     format.setSamples(4)
@@ -220,4 +220,4 @@ __ __name__ == '__main__':
 
     window.setAnimating(True)
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

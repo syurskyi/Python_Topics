@@ -41,7 +41,7 @@
 #############################################################################
 
 
-______ sys
+______ ___
 ______ __.p__
 
 ____ ?.?C.. ______ QUrl
@@ -49,7 +49,7 @@ ____ ?.?G.. ______ QGuiApplication
 ____ ?.QtQuick ______ QQuickView
 
 # Access the shared module.
-sys.path.insert(1,
+___.path.insert(1,
         __.p__ .join(
                 __.p__ .dirname(__.p__ .dirname(__.p__ .abspath(__file__))),
                 'shared'))
@@ -58,7 +58,7 @@ ______ shared_rc
 ______ animation_rc
 
 
-app _ QGuiApplication(sys.argv)
+app _ QGuiApplication(___.argv)
 
 view _ QQuickView()
 view.engine().quit.c..(app.quit)
@@ -66,4 +66,4 @@ view.engine().quit.c..(app.quit)
 view.setSource(QUrl('qrc:///animation/animation.qml'))
 view.s..
 
-sys.exit(app.exec_())
+___.exit(app.exec_())

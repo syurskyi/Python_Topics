@@ -1,6 +1,6 @@
 ____ ? ______ ?W.. __ qtw
 ____ ? ______ ?G.. __ qtg
-______ sys
+______ ___
 
 
 c_ MainWindow(qtw.QMainWindow):
@@ -183,6 +183,6 @@ c_ GlWidget(qtw.QOpenGLWidget):
 
 
 __ __name__ == '__main__':
-    app _ qtw.?A..(sys.argv)
+    app _ qtw.?A..(___.argv)
     mw _ MainWindow()
     app.e..

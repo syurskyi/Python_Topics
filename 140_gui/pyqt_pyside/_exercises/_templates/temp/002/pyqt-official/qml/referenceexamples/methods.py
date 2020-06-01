@@ -42,7 +42,7 @@
 #############################################################################
 
 
-______ sys
+______ ___
 
 ____ ?.?C.. ______ (pyqtProperty, pyqtSlot, QCoreApplication, QObject,
         QUrl)
@@ -121,7 +121,7 @@ c_ BirthdayParty(QObject):
         self._guests.ap..(person)
 
 
-app _ QCoreApplication(sys.argv)
+app _ QCoreApplication(___.argv)
 
 qmlRegisterType(BirthdayParty, "People", 1, 0, "BirthdayParty")
 qmlRegisterType(Person, "People", 1, 0, "Person")

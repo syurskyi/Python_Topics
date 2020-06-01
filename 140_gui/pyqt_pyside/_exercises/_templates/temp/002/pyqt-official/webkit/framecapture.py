@@ -58,7 +58,7 @@ Result:
 ##
 ###########################################################################
 
-______ sys
+______ ___
 
 ____ ?.?C.. ______ pyqtSignal, QObject, QSize, __, QUrl
 ____ ?.?G.. ______ QImage, QPainter
@@ -67,13 +67,13 @@ ____ ?.QtWebKitWidgets ______ QWebPage
 
 
 ___ cout(s):
-    sys.stdout.w..(s)
-    sys.stdout.flush()
+    ___.stdout.w..(s)
+    ___.stdout.flush()
 
 
 ___ cerr(s):
-    sys.stderr.w..(s)
-    sys.stderr.flush()
+    ___.stderr.w..(s)
+    ___.stderr.flush()
 
 
 c_ FrameCapture(QObject):
@@ -141,14 +141,14 @@ c_ FrameCapture(QObject):
 
 
 __ __name__ == '__main__':
-    __ le.(sys.argv) !_ 3:
+    __ le.(___.argv) !_ 3:
         cerr(__doc__)
-        sys.exit(1)
+        ___.exit(1)
 
-    url _ QUrl.fromUserInput(sys.argv[1])
-    fileName _ sys.argv[2]
+    url _ QUrl.fromUserInput(___.argv[1])
+    fileName _ ___.argv[2]
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
 
     capture _ FrameCapture()
     capture.finished.c..(app.quit)

@@ -121,9 +121,9 @@ ___ createGeometryState(w1, rect1, w2, rect2, w3, rect3, w4, rect4, parent):
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
 
     button1 _ QGraphicsRectWidget()
     button2 _ QGraphicsRectWidget()
@@ -230,4 +230,4 @@ __ __name__ == '__main__':
 
     qsrand(QTime(0, 0, 0).secsTo(QTime.currentTime()))
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

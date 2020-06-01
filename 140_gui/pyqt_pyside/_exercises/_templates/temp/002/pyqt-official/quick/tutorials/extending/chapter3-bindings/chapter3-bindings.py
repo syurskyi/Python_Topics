@@ -91,9 +91,9 @@ c_ PieChart(QQuickPaintedItem):
 
 __ __name__ == '__main__':
     ______ os
-    ______ sys
+    ______ ___
 
-    app _ QGuiApplication(sys.argv)
+    app _ QGuiApplication(___.argv)
 
     qmlRegisterType(PieChart, "Charts", 1, 0, "PieChart")
 
@@ -105,4 +105,4 @@ __ __name__ == '__main__':
                             'app.qml')))
     view.s..
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

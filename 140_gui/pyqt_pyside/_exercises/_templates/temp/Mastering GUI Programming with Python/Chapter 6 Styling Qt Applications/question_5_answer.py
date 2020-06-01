@@ -1,8 +1,8 @@
 ____ ? ______ ?W.. __ qtw
 ____ ? ______ ?G.. __ qtg
-______ sys
+______ ___
 
-app _ qtw.?A..(sys.argv)
+app _ qtw.?A..(___.argv)
 
 widget _ qtw.?W..
 palette _ widget.palette()

@@ -68,9 +68,9 @@ c_ Pixmap(QGraphicsObject):
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
 
     # Text edit and button.
     edit _ QTextEdit()
@@ -269,4 +269,4 @@ __ __name__ == '__main__':
     view _ QGraphicsView(scene)
     view.s..
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

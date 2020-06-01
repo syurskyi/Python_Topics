@@ -42,7 +42,7 @@
 #############################################################################
 
 
-______ sys
+______ ___
 
 ____ ?.?C.. ______ pyqtSignal, QFileInfo, QPoint, QSize, __, QTimer
 ____ ?.?G.. ______ (?C.., QImage, QMatrix4x4, QOpenGLShader,
@@ -261,7 +261,7 @@ c_ Window(QWidget):
 
 __ __name__ == '__main__':
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
 
     format _ QSurfaceFormat()
     format.setDepthBufferSize(24)
@@ -269,4 +269,4 @@ __ __name__ == '__main__':
 
     window _ Window()
     window.s..
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

@@ -1,11 +1,11 @@
-______ sys
-____ ? ______ ?C.., ?G.., QtSql, ?W..
+______ ___
+____ ? ______ ?C.., ?G.., ?S.., ?W..
 ______ sportsconnection
 
 
 ___ initializeModel(model):
     model.setTable('sportsmen')
-    model.setEditStrategy(QtSql.QSqlTableModel.OnFieldChange)
+    model.setEditStrategy(?S...?STM...OnFieldChange)
     model.select()
     model.setHeaderData(0, ?C...__.Horizontal, "ID")
     model.setHeaderData(1, ?C...__.Horizontal, "First name")
@@ -32,10 +32,10 @@ ___ findrow(i):
 
 
 __ __name__ == '__main__':
-    app _ ?W...?A..(sys.argv)
-    db _ QtSql.QSqlDatabase.addDatabase('QSQLITE')
-    db.setDatabaseName('sports.db')
-    model _ QtSql.QSqlTableModel()
+    app _ ?W...?A..(___.argv)
+    db _ ?S...?SD...aD..('QSQLITE')
+    db.sDN..('sports.db')
+    model _ ?S...?STM..()
     delrow _ -1
     initializeModel(model)
 
@@ -57,4 +57,4 @@ __ __name__ == '__main__':
     dlg.sL..(layout)
     dlg.setWindowTitle("Database Demo")
     dlg.s..
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

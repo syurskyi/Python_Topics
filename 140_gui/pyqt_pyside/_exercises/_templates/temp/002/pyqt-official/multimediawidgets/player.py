@@ -681,11 +681,11 @@ c_ Player(QWidget):
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
 
-    player _ Player(sys.argv[1:])
+    player _ Player(___.argv[1:])
     player.s..
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

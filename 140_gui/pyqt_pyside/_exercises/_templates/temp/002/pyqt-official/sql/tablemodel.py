@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ __
 ____ ?.?W.. ______ ?A.., QTableView
-____ ?.QtSql ______ QSqlTableModel
+____ ?.?S.. ______ ?STM..
 
 ______ connection
 
@@ -52,7 +52,7 @@ ______ connection
 ___ initializeModel(model):
     model.setTable('person')
 
-    model.setEditStrategy(QSqlTableModel.OnManualSubmit)
+    model.setEditStrategy(?STM...OnManualSubmit)
     model.select()
 
     model.setHeaderData(0, __.Horizontal, "ID")
@@ -69,13 +69,13 @@ ___ createView(title, model):
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
     __ no. connection.createConnection
-        sys.exit(1)
+        ___.exit(1)
 
-    model _ QSqlTableModel()
+    model _ ?STM..()
 
     initializeModel(model)
 
@@ -86,4 +86,4 @@ __ __name__ == '__main__':
     view2.move(view1.x() + view1.width() + 20, view1.y())
     view2.s..
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

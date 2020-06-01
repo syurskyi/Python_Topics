@@ -171,9 +171,9 @@ c_ BezierCurve(QQuickItem):
 
 
 __ __name__ == '__main__':
-    ______ sys
+    ______ ___
 
-    app _ QGuiApplication(sys.argv)
+    app _ QGuiApplication(___.argv)
 
     qmlRegisterType(BezierCurve, "CustomGeometry", 1, 0, "BezierCurve")
 
@@ -185,4 +185,4 @@ __ __name__ == '__main__':
     view.setSource(QUrl('qrc:///scenegraph/customgeometry/main.qml'))
     view.s..
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

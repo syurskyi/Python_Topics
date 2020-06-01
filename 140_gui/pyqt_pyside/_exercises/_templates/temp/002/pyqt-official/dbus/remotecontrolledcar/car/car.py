@@ -167,9 +167,9 @@ c_ CarInterfaceAdaptor(QDBusAbstractAdaptor):
 
 
 __ __name__ == '__main__':
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
 
     scene _ QGraphicsScene()
     scene.setSceneRect(-500, -500, 1000, 1000)
@@ -195,4 +195,4 @@ __ __name__ == '__main__':
     # Make sure things get destroyed in the right order.
     del view
 
-    sys.exit(rc)
+    ___.exit(rc)

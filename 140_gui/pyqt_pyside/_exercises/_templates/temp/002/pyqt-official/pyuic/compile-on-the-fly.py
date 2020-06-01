@@ -39,14 +39,14 @@
 #############################################################################
 
 
-______ sys
+______ ___
 
 ____ ?.?C.. ______ pyqtSlot
 ____ ?.?W.. ______ ?A.., QDialog
 ____ ?.uic ______ lUT..
 
 
-app _ ?A..(sys.argv)
+app _ ?A..(___.argv)
 form_class, base_class _ lUT..('demo.ui')
 
 
@@ -64,4 +64,4 @@ c_ DemoImpl(QDialog, form_class):
 
 form _ DemoImpl()
 form.s..
-sys.exit(app.exec_())
+___.exit(app.exec_())

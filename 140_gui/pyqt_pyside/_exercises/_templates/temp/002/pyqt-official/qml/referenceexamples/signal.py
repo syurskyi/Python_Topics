@@ -42,7 +42,7 @@
 #############################################################################
 
 
-______ sys
+______ ___
 
 ____ ?.?C.. ______ (pyqtProperty, pyqtSignal, Q_CLASSINFO,
         QCoreApplication, QDate, QObject, QTime, QUrl)
@@ -198,7 +198,7 @@ c_ BirthdayParty(QObject):
         self.partyStarted.emit(QTime.currentTime())
 
 
-app _ QCoreApplication(sys.argv)
+app _ QCoreApplication(___.argv)
 
 qmlRegisterType(BirthdayPartyAttached)
 qmlRegisterType(BirthdayParty, "People", 1, 0, "BirthdayParty",

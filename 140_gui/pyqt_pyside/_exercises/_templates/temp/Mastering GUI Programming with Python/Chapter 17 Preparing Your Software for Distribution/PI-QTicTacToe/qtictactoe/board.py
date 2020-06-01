@@ -3,7 +3,7 @@ ____ ? ______ ?G.. __ qtg
 ____ ? ______ ?C.. __ qtc
 
 ____ os ______ path
-______ sys
+______ ___
 
 
 c_ TTTBoard(qtw.QGraphicsScene):
@@ -29,8 +29,8 @@ c_ TTTBoard(qtw.QGraphicsScene):
         for square in self.square_rects:
             self.addRect(square, brush_qtg.QBrush(qtc.__.white))
 
-        __ getattr(sys, 'frozen', False):
-            directory _ sys._MEIPASS
+        __ getattr(___, 'frozen', False):
+            directory _ ___._MEIPASS
         ____  # Not frozen
             directory _ path.dirname(__file__)
         self.mark_pngs _ {

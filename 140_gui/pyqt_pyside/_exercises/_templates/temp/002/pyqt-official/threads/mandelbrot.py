@@ -339,9 +339,9 @@ c_ MandelbrotWidget(QWidget):
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
     widget _ MandelbrotWidget()
     widget.s..
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

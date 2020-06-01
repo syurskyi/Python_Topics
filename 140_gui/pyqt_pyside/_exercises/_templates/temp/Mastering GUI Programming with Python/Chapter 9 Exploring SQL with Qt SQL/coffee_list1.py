@@ -1,8 +1,8 @@
-______ sys
+______ ___
 ____ ? ______ ?W.. __ qtw
 ____ ? ______ ?C.. __ qtc
 ____ ? ______ ?G.. __ qtg
-____ ? ______ QtSql __ qts
+____ ? ______ ?S.. __ qts
 
 
 c_ CoffeeForm(qtw.QWidget):
@@ -51,15 +51,15 @@ c_ MainWindow(qtw.QMainWindow):
         self.sCW..(self.stack)
 
         # Connect to the database
-        self.db _ qts.QSqlDatabase.addDatabase('QSQLITE')
-        self.db.setDatabaseName('coffee.db')
+        self.db _ qts.?SD...aD..('QSQLITE')
+        self.db.sDN..('coffee.db')
         __ no. self.db.o..
             error _ self.db.lastError().t__()
             qtw.?MB...critical(
                 N.., 'DB Connection Error',
                 'Could not open database file: '
                 f'{error}')
-            sys.exit(1)
+            ___.exit(1)
 
         # Check for missing tables
         required_tables _ {'roasts', 'coffees', 'reviews'}
@@ -70,7 +70,7 @@ c_ MainWindow(qtw.QMainWindow):
                 N.., 'DB Integrity Error'
                 'Missing tables, please repair DB: '
                 f'{missing_tables}')
-            sys.exit(1)
+            ___.exit(1)
 
         # Make a query
         query _ self.db.exec('SELECT count(*) FROM coffees')
@@ -149,8 +149,8 @@ c_ MainWindow(qtw.QMainWindow):
 
 
 __ __name__ == '__main__':
-    app _ qtw.?A..(sys.argv)
+    app _ qtw.?A..(___.argv)
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()
-    sys.exit(app.exec())
+    ___.exit(app.exec())

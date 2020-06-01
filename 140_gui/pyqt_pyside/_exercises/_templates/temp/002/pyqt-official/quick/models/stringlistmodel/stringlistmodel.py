@@ -42,7 +42,7 @@
 
 
 ______ os
-______ sys
+______ ___
 
 ____ ?.?C.. ______ QUrl
 ____ ?.?G.. ______ QGuiApplication
@@ -56,7 +56,7 @@ ______ stringlistmodel_rc
 # get mixed up with another of the same name.
 os.chdir(__.p__ .dirname(__.p__ .abspath(__file__)))
 
-app _ QGuiApplication(sys.argv)
+app _ QGuiApplication(___.argv)
 
 dataList _ ["Item 1", "Item 2", "Item 3", "Item 4"]
 
@@ -67,4 +67,4 @@ ctxt.setContextProperty('myModel', dataList)
 view.setSource(QUrl('qrc:view.qml'))
 view.s..
 
-sys.exit(app.exec_())
+___.exit(app.exec_())

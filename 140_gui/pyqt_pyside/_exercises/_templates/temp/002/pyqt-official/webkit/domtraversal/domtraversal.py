@@ -78,12 +78,12 @@ c_ Window(QMainWindow, Ui_Window):
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
 
     window _ Window()
     window.s..
     window.setUrl(QUrl('http://qt-project.org/'))
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

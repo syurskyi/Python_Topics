@@ -240,13 +240,13 @@ c_ AddressBook(QWidget):
 
 
 __ __name__ == '__main__':
-    ______ sys
+    ______ ___
 
     ____ ?.?W.. ______ ?A..
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
 
     addressBook _ AddressBook()
     addressBook.s..
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

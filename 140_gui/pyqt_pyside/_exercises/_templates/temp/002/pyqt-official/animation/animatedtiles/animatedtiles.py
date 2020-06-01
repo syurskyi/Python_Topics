@@ -146,10 +146,10 @@ c_ View(QGraphicsView):
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
     ______ math
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
 
     kineticPix _ QPixmap(':/images/kinetic.png')
     bgPix _ QPixmap(':/images/Time-For-Lunch-2.jpg')
@@ -260,4 +260,4 @@ __ __name__ == '__main__':
 
     states.start()
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

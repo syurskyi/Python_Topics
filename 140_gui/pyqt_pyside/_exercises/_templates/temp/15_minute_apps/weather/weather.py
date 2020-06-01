@@ -7,7 +7,7 @@ ____ MainWindow ______ Ui_MainWindow
 ____ datetime ______ datetime
 ______ json
 ______ os
-______ sys
+______ ___
 ______ requests
 ____ urllib.parse ______ urlencode
 

@@ -94,13 +94,13 @@ c_ PyMultiPageWidget(QWidget):
 # Main for testing the class                                                 #
 #----------------------------------------------------------------------------#
 __ __name__ == "__main__":
-    ______ sys
-    app _ ?A..(sys.argv)
+    ______ ___
+    app _ ?A..(___.argv)
     widget _ PyMultiPageWidget()
     widget.addPage(QLabel('This is page #1'))
     widget.addPage(QLabel('This is page #2'))
     widget.s..
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())
 
 #============================================================================#
 # EOF                                                                        #

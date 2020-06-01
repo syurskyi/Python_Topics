@@ -221,17 +221,17 @@ c_ Window(QDialog):
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
 
     __ no. QSystemTrayIcon.isSystemTrayAvailable
         ?MB...critical(N.., "Systray",
                 "I couldn't detect any system tray on this system.")
-        sys.exit(1)
+        ___.exit(1)
 
     ?A...setQuitOnLastWindowClosed F..
 
     window _ Window()
     window.s..
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

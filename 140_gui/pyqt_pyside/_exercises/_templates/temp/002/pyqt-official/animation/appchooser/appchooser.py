@@ -90,9 +90,9 @@ ___ createAnimations(objects, machine):
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
 
     p1 _ Pixmap(QPixmap(':/digikam.png'))
     p2 _ Pixmap(QPixmap(':/akregator.png'))
@@ -136,4 +136,4 @@ __ __name__ == '__main__':
     window.resize(300, 300)
     window.s..
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

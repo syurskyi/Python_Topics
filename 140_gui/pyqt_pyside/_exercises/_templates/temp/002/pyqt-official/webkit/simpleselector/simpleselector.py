@@ -74,12 +74,12 @@ c_ SimpleSelector(QWidget, Ui_Window):
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
 
     win _ SimpleSelector()
     win.setUrl(QUrl('http://www.webkit.org'))
     win.s..
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

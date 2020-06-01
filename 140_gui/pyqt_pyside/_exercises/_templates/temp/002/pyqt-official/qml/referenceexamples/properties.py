@@ -42,7 +42,7 @@
 #############################################################################
 
 
-______ sys
+______ ___
 
 ____ ?.?C.. ______ pyqtProperty, QCoreApplication, QObject, QUrl
 ____ ?.QtQml ______ (qmlRegisterType, QQmlComponent, QQmlEngine,
@@ -112,7 +112,7 @@ c_ BirthdayParty(QObject):
         r_ QQmlListProperty(Person, self, self._guests)
 
 
-app _ QCoreApplication(sys.argv)
+app _ QCoreApplication(___.argv)
 
 qmlRegisterType(BirthdayParty, "People", 1, 0, "BirthdayParty")
 qmlRegisterType(Person, "People", 1, 0, "Person")

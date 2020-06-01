@@ -1,4 +1,4 @@
-______ sys
+______ ___
 ____ ? ______ ?W.. __ qtw
 ____ ? ______ QtNetwork __ qtn
 ____ ? ______ ?C.. __ qtc
@@ -109,7 +109,7 @@ c_ MainWindow(qtw.QMainWindow):
             N.., 'Recipient',
             'Specify of the IP or hostname of the remote host.')
         __ no. recipient:
-            sys.exit()
+            ___.e..
 
         self.interface _ TcpChatInterface(username, recipient)
         self.cw.submitted.c..(self.interface.send_message)
@@ -121,8 +121,8 @@ c_ MainWindow(qtw.QMainWindow):
 
 
 __ __name__ == '__main__':
-    app _ qtw.?A..(sys.argv)
+    app _ qtw.?A..(___.argv)
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()
-    sys.exit(app.exec())
+    ___.exit(app.exec())

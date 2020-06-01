@@ -351,9 +351,9 @@ c_ PyDateTimeEdit(QDateTimeEdit):
 
 __ __name__ == "__main__":
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
 
     w _ ?W..
     lay _ QHBoxLayout()
@@ -364,7 +364,7 @@ __ __name__ == "__main__":
     w.sL..(lay)
     w.s..
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())
 
 #============================================================================#
 # EOF                                                                        #

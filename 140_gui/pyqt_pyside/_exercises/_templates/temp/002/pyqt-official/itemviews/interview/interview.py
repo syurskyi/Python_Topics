@@ -187,5 +187,5 @@ ___ main(args):
 
 
 __ __name__ == '__main__':
-    ______ sys
-    main(sys.argv)
+    ______ ___
+    main(___.argv)

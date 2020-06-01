@@ -42,7 +42,7 @@
 #############################################################################
 
 
-______ sys
+______ ___
 ______ random
 
 ____ ?.?C.. ______ QCoreApplication, QMutex, QThread, QWaitCondition
@@ -86,18 +86,18 @@ c_ Consumer(QThread):
                 bufferNotEmpty.wait(mutex)
             mutex.unlock()
             
-            sys.stderr.w..(buffer[i % BufferSize])
+            ___.stderr.w..(buffer[i % BufferSize])
 
             mutex.lock()
             numUsedBytes -_ 1
             bufferNotFull.wakeAll()
             mutex.unlock()
             
-        sys.stderr.w..("\n")
+        ___.stderr.w..("\n")
 
 
 __ __name__ == '__main__':
-    app _ QCoreApplication(sys.argv)
+    app _ QCoreApplication(___.argv)
     producer _ Producer()
     consumer _ Consumer()
     producer.start()

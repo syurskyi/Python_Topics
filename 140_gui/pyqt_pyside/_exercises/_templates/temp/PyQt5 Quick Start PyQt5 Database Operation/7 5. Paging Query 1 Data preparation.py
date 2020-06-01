@@ -1,5 +1,5 @@
-db _ QSqlDatabase.addDatabase("QSQLITE")
-db.setDatabaseName("/home/user/test.db")
+db _ ?SD...aD..("QSQLITE")
+db.sDN..("/home/user/test.db")
 __ no. db.o..
     r_ False
 query _ QSqlQuery()

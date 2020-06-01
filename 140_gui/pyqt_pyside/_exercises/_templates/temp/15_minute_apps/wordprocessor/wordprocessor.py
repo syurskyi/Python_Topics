@@ -4,7 +4,7 @@ ____ ?.?C.. ______ *
 ____ ?.QtPrintSupport ______ *
 
 ______ os
-______ sys
+______ ___
 ______ uuid
 
 FONT_SIZES _ [7, 8, 9, 10, 11, 12, 13, 14, 18, 24, 36, 48, 64, 72, 96, 144, 288]
@@ -369,7 +369,7 @@ c_ MainWindow ?MW..
 
 __ __name__ == '__main__':
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
     app.sAN..("Megasolid Idiom")
 
     window _ MainWindow()

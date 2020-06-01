@@ -1,11 +1,11 @@
-______ sys
-____ ?.QtSql ______ QSqlDatabase
+______ ___
+____ ?.?S.. ______ ?SD..
 ____ ?.?C.. ______ *
 
 __ __name__ == "__main__":
-    app _ QCoreApplication(sys.argv)
-    db _ QSqlDatabase.addDatabase("QSQLITE")
-    db.setDatabaseName("test.db")
+    app _ QCoreApplication(___.argv)
+    db _ ?SD...aD..("QSQLITE")
+    db.sDN..("test.db")
     __ db.o..
         print("open DB success.")
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

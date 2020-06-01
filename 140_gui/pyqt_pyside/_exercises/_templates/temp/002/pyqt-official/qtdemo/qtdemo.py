@@ -60,12 +60,12 @@ ___ artisticSleep(sleepTime):
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
-    Colors.parseArgs(sys.argv)
+    app _ ?A..(___.argv)
+    Colors.parseArgs(___.argv)
 
-    __ sys.platform == 'win32':
+    __ ___.platform == 'win32':
         ?MB...information(N.., "Documentation Warning",
                 "If you are using the GPL version of PyQt from the binary "
                 "installer then you will probably see warning messages about "
@@ -86,4 +86,4 @@ __ __name__ == '__main__':
     artisticSleep(500)
     mainWindow.start()
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

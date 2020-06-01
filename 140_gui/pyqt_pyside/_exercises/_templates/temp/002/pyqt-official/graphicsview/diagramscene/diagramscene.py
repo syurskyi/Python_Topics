@@ -821,12 +821,12 @@ c_ MainWindow ?MW..
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
 
     mainWindow _ MainWindow()
     mainWindow.setGeometry(100, 100, 800, 500)
     mainWindow.s..
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

@@ -88,9 +88,9 @@ c_ Receiver(QDialog):
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
     receiver _ Receiver()
     receiver.s..
-    sys.exit(receiver.exec_())
+    ___.exit(receiver.exec_())

@@ -42,7 +42,7 @@
 #############################################################################
 
 
-______ sys
+______ ___
 
 ____ ?.?C.. ______ pyqtProperty, QCoreApplication, QObject, QUrl
 ____ ?.QtQml ______ qmlRegisterType, QQmlComponent, QQmlEngine
@@ -82,7 +82,7 @@ c_ Person(QObject):
         self._shoeSize _ shoeSize
 
 
-app _ QCoreApplication(sys.argv)
+app _ QCoreApplication(___.argv)
 
 qmlRegisterType(Person, "People", 1, 0, "Person")
 

@@ -42,7 +42,7 @@
 #############################################################################
 
 
-______ sys
+______ ___
 ______ math
 
 ____ ?.?C.. ______ QPointF, QRect, QRectF, __, QTimer
@@ -161,7 +161,7 @@ c_ Window(QWidget):
 
 __ __name__ == '__main__':
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
 
     fmt _ QSurfaceFormat()
     fmt.setSamples(4)
@@ -169,4 +169,4 @@ __ __name__ == '__main__':
 
     window _ Window()
     window.s..
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

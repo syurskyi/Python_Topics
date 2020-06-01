@@ -39,7 +39,7 @@
 #############################################################################
 
 
-______ sys
+______ ___
 
 ____ ?.?C.. ______ pyqtSlot
 ____ ?.?W.. ______ (?A.., QLabel, QLineEdit, QMainWindow,
@@ -141,7 +141,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
 
 
 __ __name__ == "__main__":
-    a _ ?A..(sys.argv)
+    a _ ?A..(___.argv)
     w _ MainWindow()
     w.s..
-    sys.exit(a.exec_())
+    ___.exit(a.exec_())

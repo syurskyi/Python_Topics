@@ -62,9 +62,9 @@ ___ createItem(minimum, preferred, maximum, name):
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
 
     scene _ QGraphicsScene()
     scene.setSceneRect(0, 0, 800, 480)
@@ -127,4 +127,4 @@ __ __name__ == '__main__':
     view _ QGraphicsView(scene)
     view.s..
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

@@ -1,7 +1,7 @@
 ____ fbs_runtime.application_context.? ______ ApplicationContext
 ____ ?.?W.. ______ QMainWindow
 
-______ sys
+______ ___
 
 appctxt _ ApplicationContext()       # 1. Instantiate ApplicationContext
 
@@ -86,4 +86,4 @@ about_action.t__.c..(show_about_dialog)
 window.s..
 
 exit_code _ appctxt.app.e..      # 2. Invoke appctxt.app.exec_()
-sys.exit(exit_code)
+___.exit(exit_code)

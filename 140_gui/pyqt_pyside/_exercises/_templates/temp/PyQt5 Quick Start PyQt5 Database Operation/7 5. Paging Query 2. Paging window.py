@@ -1,5 +1,5 @@
-______ sys
-____ ?.QtSql ______ QSqlDatabase, QSqlQuery, QSqlTableModel, QSqlQueryModel
+______ ___
+____ ?.?S.. ______ ?SD.., QSqlQuery, ?STM.., QSqlQueryModel
 ____ ?.?C.. ______ *
 ____ ?.?W.. ______ *
 
@@ -56,8 +56,8 @@ c_ DataGrid(QWidget):
         self.db.close()
 
 __ __name__ == "__main__":
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
     window _ DataGrid()
     window.initUI()
     window.s..
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

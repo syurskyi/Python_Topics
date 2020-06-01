@@ -258,10 +258,10 @@ c_ Window(QWidget):
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
     w _ Window()
     w.resize(400, 400)
     w.s..
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

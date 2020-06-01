@@ -604,9 +604,9 @@ c_ LifeCycle(object):
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
 
     stickMan _ StickMan()
     stickMan.setDrawSticks F..
@@ -654,4 +654,4 @@ __ __name__ == '__main__':
     cycle.addActivity(':/animations/chilling', __.Key_C)
     cycle.start()
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

@@ -51,7 +51,7 @@
 #############################################################################
 
 
-______ sys
+______ ___
 
 ____ ?.?C.. ______ (pyqtSlot, QLoggingCategory, QModelIndex, QObject, __,
         QTimer, QUrl)
@@ -123,7 +123,7 @@ __ __name__ == '__main__':
     QLoggingCategory.setFilterRules('qt.remoteobjects.debug=false\n'
                                     'qt.remoteobjects.warning=false')
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
 
     sourceModel _ QStandardItemModel()
     sourceModel.setHorizontalHeaderLabels(
@@ -166,4 +166,4 @@ __ __name__ == '__main__':
     QTimer.singleShot(12000, handler.removeData)
     QTimer.singleShot(13000, handler.moveData)
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

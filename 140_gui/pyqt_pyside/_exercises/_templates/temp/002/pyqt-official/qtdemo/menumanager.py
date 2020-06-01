@@ -40,7 +40,7 @@
 #############################################################################
 
 
-______ sys
+______ ___
 ____ xml.dom.minidom ______ parseString
 
 ____ ?.?C.. ______ (QByteArray, QDir, QEasingCurve, QFile, QFileInfo,
@@ -263,7 +263,7 @@ c_ MenuManager(QObject):
         __ self.assistantProcess.state() !_ QProcess.Running:
             app _ QLibraryInfo.location(QLibraryInfo.BinariesPath) + QDir.separator()
 
-            __ sys.platform == 'darwin':
+            __ ___.platform == 'darwin':
                 app +_ 'Assistant.app/Contents/MacOS/Assistant'
             ____
                 app +_ 'assistant'
@@ -286,7 +286,7 @@ c_ MenuManager(QObject):
         process _ QProcess(self)
         process.error.c..(self.launchError)
 
-        __ sys.platform == 'win32':
+        __ ___.platform == 'win32':
             # Make sure it finds the DLLs on Windows.
             env _ QProcessEnvironment.systemEnvironment()
             env.insert('PATH',
@@ -300,7 +300,7 @@ c_ MenuManager(QObject):
             Colors.debug("Setting working directory:", workingDirectory)
 
         Colors.debug("Launching:", executable)
-        process.start(sys.executable, [executable])
+        process.start(___.executable, [executable])
 
     ___ launchQml  name):
         import_path _ self.resolveDataDir(name)

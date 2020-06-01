@@ -40,12 +40,12 @@
 
 
 ____ ?.?W.. ______ ?MB..
-____ ?.QtSql ______ QSqlDatabase, QSqlQuery
+____ ?.?S.. ______ ?SD.., QSqlQuery
 
 
 ___ createConnection
-    db _ QSqlDatabase.addDatabase('QSQLITE')
-    db.setDatabaseName(':memory:')
+    db _ ?SD...aD..('QSQLITE')
+    db.sDN..(':memory:')
     __ no. db.o..
         ?MB...critical(N.., "Cannot open database",
                 "Unable to establish a database connection.\n"

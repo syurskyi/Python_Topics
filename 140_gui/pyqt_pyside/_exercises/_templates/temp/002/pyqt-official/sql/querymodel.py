@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ __
 ____ ?.?G.. ______ ?C..
 ____ ?.?W.. ______ ?A.., QTableView
-____ ?.QtSql ______ QSqlQuery, QSqlQueryModel
+____ ?.?S.. ______ QSqlQuery, QSqlQueryModel
 
 ______ connection
 
@@ -136,11 +136,11 @@ ___ createView(title, model):
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
     __ no. connection.createConnection
-        sys.exit(1)
+        ___.exit(1)
 
     plainModel _ QSqlQueryModel()
     editableModel _ EditableSqlModel()
@@ -154,4 +154,4 @@ __ __name__ == '__main__':
     createView("Editable Query Model", editableModel)
     createView("Custom Query Model", customModel)
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

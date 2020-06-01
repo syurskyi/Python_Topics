@@ -51,7 +51,7 @@
 #############################################################################
 
 
-______ sys
+______ ___
 
 ____ ?.?C.. ______ pyqtSignal, pyqtSlot, QCoreApplication, QObject, QUrl
 ____ ?.QtRemoteObjects ______ QRemoteObjectNode
@@ -93,7 +93,7 @@ c_ DynamicClient(QObject):
 
 __ __name__ == '__main__':
 
-    app _ QCoreApplication(sys.argv)
+    app _ QCoreApplication(___.argv)
 
     # Create the remote object node.
     repNode _ QRemoteObjectNode(QUrl('local:registry'))
@@ -104,4 +104,4 @@ __ __name__ == '__main__':
     # Create the client switch object and pass the replica to it.
     rswitch _ DynamicClient(replica)
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

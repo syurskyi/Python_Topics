@@ -42,7 +42,7 @@
 #############################################################################
 
 
-______ sys
+______ ___
 
 ____ ?.?C.. ______ pyqtSlot, QCoreApplication, QMetaObject, QObject
 ____ ?.QtDBus ______ QDBusConnection
@@ -58,20 +58,20 @@ c_ Pong(QObject):
 
 
 __ __name__ == '__main__':
-    app _ QCoreApplication(sys.argv)
+    app _ QCoreApplication(___.argv)
 
     __ no. QDBusConnection.sessionBus().isConnected
-        sys.stderr.w..("Cannot connect to the D-Bus session bus.\n"
+        ___.stderr.w..("Cannot connect to the D-Bus session bus.\n"
                 "To start it, run:\n"
                 "\teval `dbus-launch --auto-syntax`\n");
-        sys.exit(1)
+        ___.exit(1)
 
     __ no. QDBusConnection.sessionBus().registerService('org.example.QtDBus.PingExample'):
-        sys.stderr.w..("%s\n" % QDBusConnection.sessionBus().lastError().message())
-        sys.exit(1)
+        ___.stderr.w..("%s\n" % QDBusConnection.sessionBus().lastError().message())
+        ___.exit(1)
 
     pong _ Pong()
     QDBusConnection.sessionBus().registerObject('/', pong,
             QDBusConnection.ExportAllSlots)
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

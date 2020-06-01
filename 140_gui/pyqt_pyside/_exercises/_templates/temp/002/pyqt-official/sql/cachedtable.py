@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ __
 ____ ?.?W.. ______ (?A.., QDialog, QDialogButtonBox,
         QHBoxLayout, ?MB.., ?PB.., QTableView)
-____ ?.QtSql ______ QSqlTableModel
+____ ?.?S.. ______ ?STM..
 
 ______ connection
 
@@ -54,9 +54,9 @@ c_ TableEditor(QDialog):
     ___ __init__  tableName, parent_None):
         super(TableEditor, self).__init__(parent)
 
-        self.model _ QSqlTableModel(self)
+        self.model _ ?STM..(self)
         self.model.setTable(tableName)
-        self.model.setEditStrategy(QSqlTableModel.OnManualSubmit)
+        self.model.setEditStrategy(?STM...OnManualSubmit)
         self.model.select()
 
         self.model.setHeaderData(0, __.Horizontal, "ID")
@@ -99,12 +99,12 @@ c_ TableEditor(QDialog):
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
     __ no. connection.createConnection
-        sys.exit(1)
+        ___.exit(1)
 
     editor _ TableEditor('person')
     editor.s..
-    sys.exit(editor.exec_())
+    ___.exit(editor.exec_())

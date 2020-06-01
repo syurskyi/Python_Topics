@@ -185,16 +185,16 @@ c_ NicknameDialog(QDialog, Ui_NicknameDialog):
 
 
 __ __name__ == '__main__':
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
 
     __ no. QDBusConnection.sessionBus().isConnected
-        sys.stderr.w..("Cannot connect to the D-Bus session bus.\n"
+        ___.stderr.w..("Cannot connect to the D-Bus session bus.\n"
                 "Please check your system settings and try again.\n")
-        sys.exit(1)
+        ___.exit(1)
 
     chat _ ChatMainWindow()
     chat.s..
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

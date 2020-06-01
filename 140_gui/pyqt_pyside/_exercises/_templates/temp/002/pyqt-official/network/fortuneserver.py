@@ -158,9 +158,9 @@ c_ Server(QDialog):
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
     server _ Server()
     random.seed(N..)
-    sys.exit(server.exec_())
+    ___.exit(server.exec_())

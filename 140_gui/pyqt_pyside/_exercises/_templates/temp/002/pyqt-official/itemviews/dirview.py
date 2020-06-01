@@ -43,7 +43,7 @@
 #############################################################################
 
 
-______ sys
+______ ___
 
 ____ ?.?C.. ______ (QCommandLineOption, QCommandLineParser,
         QCoreApplication, QDir, QT_VERSION_STR)
@@ -51,7 +51,7 @@ ____ ?.?W.. ______ (?A.., QFileIconProvider, QFileSystemModel,
         QTreeView)
 
 
-app _ ?A..(sys.argv)
+app _ ?A..(___.argv)
 
 QCoreApplication.setApplicationVersion(QT_VERSION_STR)
 parser _ QCommandLineParser()
@@ -93,4 +93,4 @@ tree.setColumnWidth(0, tree.width() / 3)
 tree.setWindowTitle("Dir View")
 tree.s..
 
-sys.exit(app.exec_())
+___.exit(app.exec_())

@@ -44,8 +44,8 @@
 
 ____ ?.?C.. ______ __
 ____ ?.?W.. ______ ?A.., QTableView
-____ ?.QtSql ______ (QSqlQuery, QSqlRelation, QSqlRelationalDelegate,
-        QSqlRelationalTableModel, QSqlTableModel)
+____ ?.?S.. ______ (QSqlQuery, QSqlRelation, QSqlRelationalDelegate,
+        QSqlRelationalTableModel, ?STM..)
 
 ______ connection
 
@@ -53,7 +53,7 @@ ______ connection
 ___ initializeModel(model):
     model.setTable('employee')
 
-    model.setEditStrategy(QSqlTableModel.OnManualSubmit)
+    model.setEditStrategy(?STM...OnManualSubmit)
     model.setRelation(2, QSqlRelation('city', 'id', 'name'))
     model.setRelation(3, QSqlRelation('country', 'id', 'name'))
 
@@ -95,11 +95,11 @@ ___ createRelationalTables
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
     __ no. connection.createConnection
-        sys.exit(1)
+        ___.exit(1)
 
     createRelationalTables()
 
@@ -111,4 +111,4 @@ __ __name__ == '__main__':
 
     view.s..
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

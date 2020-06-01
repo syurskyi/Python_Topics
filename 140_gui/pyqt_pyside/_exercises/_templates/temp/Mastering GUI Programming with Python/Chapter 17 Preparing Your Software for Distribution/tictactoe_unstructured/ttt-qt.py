@@ -2,7 +2,7 @@
 PyQt tic-tac-to
 
 """
-______ sys
+______ ___
 ____ ? ______ ?W.. __ qtw
 ____ ? ______ ?G.. __ qtg
 ____ ? ______ ?C.. __ qtc
@@ -150,6 +150,6 @@ c_ MainWindow(qtw.QMainWindow):
         self.start_game()
 
 __ __name__ == '__main__':
-    app _ qtw.?A..(sys.argv)
+    app _ qtw.?A..(___.argv)
     mw _ MainWindow()
-    sys.exit(app.exec())
+    ___.exit(app.exec())

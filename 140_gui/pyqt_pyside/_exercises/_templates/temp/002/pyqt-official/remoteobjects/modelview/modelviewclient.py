@@ -50,7 +50,7 @@
 #############################################################################
 
 
-______ sys
+______ ___
 
 ____ ?.?C.. ______ QLoggingCategory, QUrl
 ____ ?.QtRemoteObjects ______ QRemoteObjectNode
@@ -62,7 +62,7 @@ QLoggingCategory.setFilterRules('qt.remoteobjects.debug=false\n'
                                 'qt.remoteobjects.models.debug=false\n'
                                 'qt.remoteobjects.models.debug=false')
 
-app _ ?A..(sys.argv)
+app _ ?A..(___.argv)
 
 node _ QRemoteObjectNode(QUrl('local:registry'))
 node.setHeartbeatInterval(1000)
@@ -75,4 +75,4 @@ model _ node.acquireModel('RemoteModel')
 view.sM..(model)
 view.s..;
 
-sys.exit(app.exec_())
+___.exit(app.exec_())

@@ -6,7 +6,7 @@ ____ ?.QtMultimedia ______ *
 ____ ?.QtMultimediaWidgets ______ *
 
 ______ os
-______ sys
+______ ___
 ______ time
 
 
@@ -97,7 +97,7 @@ c_ MainWindow ?MW..
 
 __ __name__ == '__main__':
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
     app.sAN..("NSAViewer")
 
     window _ MainWindow()

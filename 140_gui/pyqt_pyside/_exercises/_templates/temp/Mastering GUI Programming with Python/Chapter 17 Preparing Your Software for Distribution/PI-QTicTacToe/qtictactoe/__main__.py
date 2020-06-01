@@ -1,11 +1,11 @@
-______ sys
+______ ___
 ____ ?.?W.. ______ ?A..
 ____ .mainwindow ______ MainWindow
 
 ___ main
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
     mainwindow _ MainWindow()
-    sys.exit(app.exec())
+    ___.exit(app.exec())
 
 __ __name__ == '__main__':
     main()

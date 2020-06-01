@@ -1,9 +1,9 @@
-____ ? ______ QtSql, ?G.., ?W..
+____ ? ______ ?S.., ?G.., ?W..
 
 
 ___ createDB
-    db _ QtSql.QSqlDatabase.addDatabase('QSQLITE')
-    db.setDatabaseName('sports.db')
+    db _ ?S...?SD...aD..('QSQLITE')
+    db.sDN..('sports.db')
 
     __ no. db.o..
         ?G...?MB...critical(N.., ?G...qApp.tr("Cannot open database"),
@@ -15,7 +15,7 @@ ___ createDB
 
         r_ False
 
-    query _ QtSql.QSqlQuery()
+    query _ ?S...QSqlQuery()
 
     query.exec_("create table sportsmen(id int primary key, "
                 "firstname varchar(20), lastname varchar(20))")
@@ -29,7 +29,7 @@ ___ createDB
 
 
 __ __name__ == '__main__':
-    ______ sys
+    ______ ___
 
-    app _ ?W...?A..(sys.argv)
+    app _ ?W...?A..(___.argv)
     createDB()

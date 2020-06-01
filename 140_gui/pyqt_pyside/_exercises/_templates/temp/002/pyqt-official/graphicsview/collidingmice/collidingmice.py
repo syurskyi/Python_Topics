@@ -191,11 +191,11 @@ c_ Mouse(QGraphicsItem):
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
     MouseCount _ 7
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
     qsrand(QTime(0,0,0).secsTo(QTime.currentTime()))
 
     scene _ QGraphicsScene()
@@ -218,4 +218,4 @@ __ __name__ == '__main__':
     view.resize(400, 300)
     view.s..
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

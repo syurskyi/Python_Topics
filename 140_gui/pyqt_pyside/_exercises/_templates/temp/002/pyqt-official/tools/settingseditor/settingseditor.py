@@ -42,7 +42,7 @@
 #############################################################################
 
 
-______ sys
+______ ___
 
 ____ ?.?C.. ______ (QByteArray, QDate, QDateTime, QEvent, QPoint, QRect,
         QRegExp, QSettings, QSize, __, QTime, QTimer)
@@ -126,12 +126,12 @@ c_ MainWindow ?MW..
 
         self.openPropertyListAct _ ?A..("Open Mac &Property List...", self,
                 shortcut_"Ctrl+P", triggered_self.openPropertyList)
-        __ sys.platform !_ 'darwin':
+        __ ___.platform !_ 'darwin':
             self.openPropertyListAct.setEnabled F..
 
         self.openRegistryPathAct _ ?A..("Open Windows &Registry Path...",
                 self, shortcut_"Ctrl+G", triggered_self.openRegistryPath)
-        __ sys.platform !_ 'win32':
+        __ ___.platform !_ 'win32':
             self.openRegistryPathAct.setEnabled F..
 
         self.refreshAct _ ?A..("&Refresh", self, shortcut_"Ctrl+R",
@@ -719,7 +719,7 @@ c_ VariantDelegate(QItemDelegate):
 
 
 __ __name__ == '__main__':
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
     mainWin _ MainWindow()
     mainWin.s..
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

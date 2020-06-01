@@ -191,15 +191,15 @@ c_ ApplicationsTab(QWidget):
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
 
-    __ le.(sys.argv) >_ 2:
-        fileName _ sys.argv[1]
+    __ le.(___.argv) >_ 2:
+        fileName _ ___.argv[1]
     ____
         fileName _ "."
 
     tabdialog _ TabDialog(fileName)
     tabdialog.s..
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

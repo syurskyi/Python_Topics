@@ -230,9 +230,9 @@ ___ populateTableWidget(tableWidget):
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
 
     tableWidget _ QTableWidget(4, 4)
     tableWidget.setItemDelegate(StarDelegate())
@@ -249,4 +249,4 @@ __ __name__ == '__main__':
     tableWidget.resize(500, 300)
     tableWidget.s..
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

@@ -147,9 +147,9 @@ c_ DragWidget(QFrame):
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
 
     mainWidget _ ?W..
     horizontalLayout _ QHBoxLayout()
@@ -160,4 +160,4 @@ __ __name__ == '__main__':
     mainWidget.setWindowTitle("Draggable Icons")
     mainWidget.s..
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

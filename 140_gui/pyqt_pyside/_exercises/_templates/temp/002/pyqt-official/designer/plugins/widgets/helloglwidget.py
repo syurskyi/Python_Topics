@@ -253,9 +253,9 @@ c_ HelloGLWidget(QOpenGLWidget):
 
 __ __name__ == "__main__":
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
     widget _ HelloGLWidget()
     widget.s..
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

@@ -196,16 +196,16 @@ c_ MainWindow ?MW..
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
 
-    __ le.(sys.argv) > 1:
-        url _ QUrl(sys.argv[1])
+    __ le.(___.argv) > 1:
+        url _ QUrl(___.argv[1])
     ____
         url _ QUrl('http://www.google.com/ncr')
 
     browser _ MainWindow(url)
     browser.s..
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

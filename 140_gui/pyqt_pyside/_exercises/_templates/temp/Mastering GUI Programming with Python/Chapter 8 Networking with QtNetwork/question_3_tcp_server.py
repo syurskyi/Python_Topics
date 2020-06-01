@@ -1,4 +1,4 @@
-______ sys
+______ ___
 ____ ? ______ ?C.. __ qtc
 ____ ? ______ QtNetwork __ qtn
 
@@ -24,6 +24,6 @@ c_ Server(qtn.QTcpServer):
             cx.disconnectFromHost()
 
 __ __name__ == '__main__':
-    app _ qtc.QCoreApplication(sys.argv)
+    app _ qtc.QCoreApplication(___.argv)
     server _ Server()
-    sys.exit(app.exec())
+    ___.exit(app.exec())

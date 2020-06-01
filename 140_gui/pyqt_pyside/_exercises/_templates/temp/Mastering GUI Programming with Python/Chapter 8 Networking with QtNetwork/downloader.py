@@ -1,4 +1,4 @@
-______ sys
+______ ___
 ____ os ______ path
 ____ ? ______ QtNetwork __ qtn
 ____ ? ______ ?C.. __ qtc
@@ -17,16 +17,16 @@ c_ Downloader(qtc.QObject):
         filename _ reply.url().fileName() or 'download'
         __ path.exists(filename):
             print('File already exists, not overwriting.')
-            sys.exit(1)
+            ___.exit(1)
         w__ o..(filename, 'wb') __ fh:
             fh.w..(reply.readAll())
         print(f"{filename} written")
-        sys.exit(0)
+        ___.exit(0)
 
 __ __name__ == '__main__':
-    __ le.(sys.argv) < 2:
-        print(f'Usage: {sys.argv[0]} <download url>')
-        sys.exit(1)
-    app _ qtc.QCoreApplication(sys.argv)
-    d _ Downloader(sys.argv[1])
-    sys.exit(app.exec_())
+    __ le.(___.argv) < 2:
+        print(f'Usage: {___.argv[0]} <download url>')
+        ___.exit(1)
+    app _ qtc.QCoreApplication(___.argv)
+    d _ Downloader(___.argv[1])
+    ___.exit(app.exec_())

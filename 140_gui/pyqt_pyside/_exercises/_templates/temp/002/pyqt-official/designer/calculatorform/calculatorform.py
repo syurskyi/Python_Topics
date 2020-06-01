@@ -66,9 +66,9 @@ c_ CalculatorForm(QWidget):
 
 
 __ __name__ == '__main__':
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
     calculator _ CalculatorForm()
     calculator.s..
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

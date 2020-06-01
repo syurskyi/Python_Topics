@@ -42,34 +42,34 @@
 #############################################################################
 
 
-______ sys
+______ ___
 
 ____ ?.?C.. ______ QCoreApplication
 ____ ?.QtDBus ______ QDBusConnection, QDBusInterface, QDBusReply
 
 
 __ __name__ == '__main__':
-    app _ QCoreApplication(sys.argv)
+    app _ QCoreApplication(___.argv)
 
     __ no. QDBusConnection.sessionBus().isConnected
-        sys.stderr.w..("Cannot connect to the D-Bus session bus.\n"
+        ___.stderr.w..("Cannot connect to the D-Bus session bus.\n"
                 "To start it, run:\n"
                 "\teval `dbus-launch --auto-syntax`\n");
-        sys.exit(1)
+        ___.exit(1)
 
     iface _ QDBusInterface('org.example.QtDBus.PingExample', '/', '',
             QDBusConnection.sessionBus())
 
     __ iface.isValid
-        msg _ iface.call('ping', sys.argv[1] __ le.(sys.argv) > 1 else "")
+        msg _ iface.call('ping', ___.argv[1] __ le.(___.argv) > 1 else "")
         reply _ QDBusReply(msg)
 
         __ reply.isValid
-            sys.stdout.w..("Reply was: %s\n" % reply.value())
-            sys.exit()
+            ___.stdout.w..("Reply was: %s\n" % reply.value())
+            ___.e..
 
-        sys.stderr.w..("Call failed: %s\n" % reply.error().message())
-        sys.exit(1)
+        ___.stderr.w..("Call failed: %s\n" % reply.error().message())
+        ___.exit(1)
 
-    sys.stderr.w..("%s\n" % QDBusConnection.sessionBus().lastError().message())
-    sys.exit(1)
+    ___.stderr.w..("%s\n" % QDBusConnection.sessionBus().lastError().message())
+    ___.exit(1)

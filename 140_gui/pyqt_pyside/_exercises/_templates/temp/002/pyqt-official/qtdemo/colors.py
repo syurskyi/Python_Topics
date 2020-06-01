@@ -40,7 +40,7 @@
 #############################################################################
 
 
-______ sys
+______ ___
 
 ____ ?.?G.. ______ ?C.., QFont
 ____ ?.?W.. ______ ?MB.., QWidget
@@ -107,7 +107,7 @@ c_ Colors(object):
         font _ QFont()
         font.setStyleStrategy(QFont.PreferAntialias)
 
-        __ sys.platform == 'darwin':
+        __ ___.platform == 'darwin':
             font.setPixelSize(14)
             font.setFamily('Arial')
         ____
@@ -142,7 +142,7 @@ c_ Colors(object):
         font _ QFont()
         font.setStyleStrategy(QFont.PreferAntialias)
 
-        __ sys.platform == 'darwin':
+        __ ___.platform == 'darwin':
             font.setPixelSize(11)
             font.setBold(True)
             font.setFamily('Arial')
@@ -156,7 +156,7 @@ c_ Colors(object):
     @classmethod
     ___ debug(cls, *args):
         __ cls.verbose:
-            sys.stderr.w..("%s\n" % " ".join([str(arg) for arg in args]))
+            ___.stderr.w..("%s\n" % " ".join([str(arg) for arg in args]))
 
     @classmethod
     ___ parseArgs(cls, argv):
@@ -236,7 +236,7 @@ c_ Colors(object):
                         "[-fps<int>] [-low] [-ticker-letters<int>] "
                         "[-ticker-speed<float>] [-no-ticker-morph] "
                         "[-ticker-morph-speed<float>] [-ticker-text<string>]")
-                sys.exit(0)
+                ___.exit(0)
 
         cls.postConfigure()
 
@@ -274,6 +274,6 @@ ___ parseText(argument, name):
         ?MB...warning(N.., "Arguments",
                 "No argument number found for %s. Remember to put name and "
                 "value adjacent! (e.g. -fps100)")
-        sys.exit(0)
+        ___.exit(0)
 
     r_ argument[le.(name):]

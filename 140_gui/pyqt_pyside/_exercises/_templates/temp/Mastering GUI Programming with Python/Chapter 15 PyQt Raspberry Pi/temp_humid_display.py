@@ -1,4 +1,4 @@
-______ sys
+______ ___
 ____ ? ______ ?W.. __ qtw
 ____ ? ______ ?C.. __ qtc
 ____ ? ______ ?G.. __ qtg
@@ -119,6 +119,6 @@ c_ MainWindow(qtw.QMainWindow):
 
 
 __ __name__ == '__main__':
-    app _ qtw.?A..(sys.argv)
+    app _ qtw.?A..(___.argv)
     mw _ MainWindow()
     app.exec()

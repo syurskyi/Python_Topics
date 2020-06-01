@@ -1,10 +1,10 @@
-______ sys
-____ ?.QtSql ______ QSqlDatabase, QSqlQuery
+______ ___
+____ ?.?S.. ______ ?SD.., QSqlQuery
 ____ ?.?C.. ______ *
 
 ___ createDB
-    db _ QSqlDatabase.addDatabase("QSQLITE")
-    db.setDatabaseName("test.db")
+    db _ ?SD...aD..("QSQLITE")
+    db.sDN..("test.db")
     __ db.o..
         query _ QSqlQuery()
         query.exec_("create table person(id int primary key, name varchar(20), address varchar(30))")
@@ -15,6 +15,6 @@ ___ createDB
         db.close()
 
 __ __name__ == "__main__":
-    app _ QCoreApplication(sys.argv)
+    app _ QCoreApplication(___.argv)
     createDB()
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

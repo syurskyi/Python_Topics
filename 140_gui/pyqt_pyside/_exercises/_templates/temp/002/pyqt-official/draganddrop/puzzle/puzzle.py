@@ -358,10 +358,10 @@ c_ MainWindow ?MW..
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
     window _ MainWindow()
     window.openImage(':/images/example.jpg')
     window.s..
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

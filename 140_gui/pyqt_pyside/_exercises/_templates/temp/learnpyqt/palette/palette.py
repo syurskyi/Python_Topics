@@ -1,5 +1,5 @@
-______ sys
-__ 'PyQt5' in sys.modules:
+______ ___
+__ 'PyQt5' in ___.modules:
     ____ ? ______ ?C.., ?W..
     ____ ?.?C.. ______ __, pyqtSignal __ Signal
 

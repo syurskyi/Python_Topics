@@ -39,14 +39,14 @@
 #############################################################################
 
 
-______ sys
+______ ___
 ______ os
 
 ____ ?.?C.. ______ QLibraryInfo, QProcess, QProcessEnvironment
 ____ ?.?W.. ______ ?A.., ?MB..
 
 
-app _ ?A..(sys.argv)
+app _ ?A..(___.argv)
 
 ?MB...information(N.., "PyQt Designer Plugins",
         "<p>This example will start Qt Designer when you click the <b>OK</b> "
@@ -75,7 +75,7 @@ designer.setProcessEnvironment(env)
 
 designer_bin _ QLibraryInfo.location(QLibraryInfo.BinariesPath)
 
-__ sys.platform == 'darwin':
+__ ___.platform == 'darwin':
     designer_bin +_ '/Designer.app/Contents/MacOS/Designer'
 ____
     designer_bin +_ '/designer'
@@ -83,4 +83,4 @@ ____
 designer.start(designer_bin)
 designer.waitForFinished(-1)
 
-sys.exit(designer.exitCode())
+___.exit(designer.exitCode())

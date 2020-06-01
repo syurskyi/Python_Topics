@@ -42,7 +42,7 @@
 #############################################################################
 
 
-______ sys
+______ ___
 
 ____ ?.?C.. ______ QDir, __
 ____ ?.?G.. ______ QFont, ?P..
@@ -145,7 +145,7 @@ c_ Dialog(QDialog):
         self.native _ QCheckBox()
         self.native.sT..("Use native file dialog.")
         self.native.setChecked(True)
-        __ sys.platform no. in ("win32", "darwin"):
+        __ ___.platform no. in ("win32", "darwin"):
             self.native.hide()
 
         layout _ QGridLayout()
@@ -316,7 +316,7 @@ c_ Dialog(QDialog):
 
 
 __ __name__ == '__main__':
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
     dialog _ Dialog()
     dialog.s..
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

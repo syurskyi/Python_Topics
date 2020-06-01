@@ -219,9 +219,9 @@ c_ Client(QDialog):
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
     client _ Client()
     client.s..
-    sys.exit(client.exec_())
+    ___.exit(client.exec_())

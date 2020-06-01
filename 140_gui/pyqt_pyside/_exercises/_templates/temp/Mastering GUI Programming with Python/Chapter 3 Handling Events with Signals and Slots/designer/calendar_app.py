@@ -1,4 +1,4 @@
-______ sys
+______ ___
 ____ ? ______ ?W.. __ qtw
 ____ ? ______ ?C.. __ qtc
 #from calendar_form import Ui_MainWindow
@@ -154,9 +154,9 @@ c_ MainWindow(MW_Base, MW_Ui):
         self.event_category.setCurrentText(category)
 
 __ __name__ == '__main__':
-    app _ qtw.?A..(sys.argv)
+    app _ qtw.?A..(___.argv)
 
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()
-    sys.exit(app.exec())
+    ___.exit(app.exec())

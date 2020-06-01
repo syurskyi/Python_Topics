@@ -99,9 +99,9 @@ ___ createConclusionPage
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
 
     wizard _ QWizard()
     wizard.addPage(createIntroPage())
@@ -111,4 +111,4 @@ __ __name__ == '__main__':
     wizard.setWindowTitle("Trivial Wizard")
     wizard.s..
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

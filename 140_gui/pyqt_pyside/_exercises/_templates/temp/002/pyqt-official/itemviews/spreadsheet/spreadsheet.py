@@ -533,11 +533,11 @@ c_ SpreadSheet ?MW..
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
     sheet _ SpreadSheet(10, 6)
     sheet.setWindowIcon(QIcon(QPixmap(":/images/interview.png")))
     sheet.resize(640, 420)
     sheet.s..
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

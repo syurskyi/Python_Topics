@@ -74,9 +74,9 @@ c_ SpinBoxDelegate(QStyledItemDelegate):
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
 
     model _ QStandardItemModel(4, 2)
     tableView _ QTableView()
@@ -92,4 +92,4 @@ __ __name__ == '__main__':
 
     tableView.setWindowTitle("Spin Box Delegate")
     tableView.s..
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

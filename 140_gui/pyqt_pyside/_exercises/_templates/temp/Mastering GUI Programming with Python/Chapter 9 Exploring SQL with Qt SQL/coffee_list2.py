@@ -1,8 +1,8 @@
-______ sys
+______ ___
 ____ ? ______ ?W.. __ qtw
 ____ ? ______ ?C.. __ qtc
 ____ ? ______ ?G.. __ qtg
-____ ? ______ QtSql __ qts
+____ ? ______ ?S.. __ qts
 
 
 """
@@ -134,14 +134,14 @@ c_ MainWindow(qtw.QMainWindow):
         self.stack _ qtw.QStackedWidget()
         self.sCW..(self.stack)
         # Connect to the database
-        db _ qts.QSqlDatabase.addDatabase('QSQLITE')
-        db.setDatabaseName('coffee.db')
+        db _ qts.?SD...aD..('QSQLITE')
+        db.sDN..('coffee.db')
         __ no. db.o..
             qtw.?MB...critical(
                 N.., 'DB Connection Error',
                 'Could not open database file: '
                 f'{db.lastError().t__()}')
-            sys.exit(1)
+            ___.exit(1)
 
         # Check for missing tables
         required_tables _ {'roasts', 'coffees', 'reviews'}
@@ -151,10 +151,10 @@ c_ MainWindow(qtw.QMainWindow):
                 N.., 'DB Integrity Error',
                 'Missing tables, please repair DB: '
                 f'{missing_tables}')
-            sys.exit(1)
+            ___.exit(1)
 
         # Create the models
-        self.reviews_model _ qts.QSqlTableModel()
+        self.reviews_model _ qts.?STM..()
         self.reviews_model.setTable('reviews')
 
         self.coffees_model _ qts.QSqlRelationalTableModel()
@@ -218,8 +218,8 @@ c_ MainWindow(qtw.QMainWindow):
 
 
 __ __name__ == '__main__':
-    app _ qtw.?A..(sys.argv)
+    app _ qtw.?A..(___.argv)
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()
-    sys.exit(app.exec())
+    ___.exit(app.exec())

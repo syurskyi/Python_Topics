@@ -51,7 +51,7 @@
 #############################################################################
 
 
-______ sys
+______ ___
 
 ____ ?.?C.. ______ (pyqtProperty, pyqtSignal, pyqtSlot, QCoreApplication,
         QObject, QTimer, QUrl)
@@ -116,7 +116,7 @@ c_ SimpleSwitch(QObject):
 
 __ __name__ == '__main__':
 
-    app _ QCoreApplication(sys.argv)
+    app _ QCoreApplication(___.argv)
 
     # Create the simple switch.
     srcSwitch _ SimpleSwitch()
@@ -127,4 +127,4 @@ __ __name__ == '__main__':
     # Enable remoting.
     srcNode.enableRemoting(srcSwitch, 'SimpleSwitch')
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

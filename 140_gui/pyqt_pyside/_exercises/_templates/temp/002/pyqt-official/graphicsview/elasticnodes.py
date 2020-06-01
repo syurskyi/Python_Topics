@@ -419,12 +419,12 @@ c_ GraphWidget(QGraphicsView):
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
     qsrand(QTime(0,0,0).secsTo(QTime.currentTime()))
 
     widget _ GraphWidget()
     widget.s..
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

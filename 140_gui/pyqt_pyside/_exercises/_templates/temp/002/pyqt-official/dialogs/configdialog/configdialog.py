@@ -237,8 +237,8 @@ c_ ConfigDialog(QDialog):
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
     dialog _ ConfigDialog()
-    sys.exit(dialog.exec_())    
+    ___.exit(dialog.exec_())    

@@ -471,12 +471,12 @@ c_ MapZoom ?MW..
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
     app.sAN..('LightMaps')
     w _ MapZoom()
     w.setWindowTitle("OpenStreetMap")
     w.resize(600, 450)
     w.s..
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

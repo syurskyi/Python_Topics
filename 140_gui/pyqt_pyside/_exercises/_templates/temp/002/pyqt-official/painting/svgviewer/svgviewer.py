@@ -285,14 +285,14 @@ c_ SvgView(QGraphicsView):
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
 
     window _ MainWindow()
-    __ le.(sys.argv) == 2:
-        window.openFile(sys.argv[1])
+    __ le.(___.argv) == 2:
+        window.openFile(___.argv[1])
     ____
         window.openFile(':/files/bubbles.svg')
     window.s..
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

@@ -42,7 +42,7 @@
 #############################################################################
 
 
-______ sys
+______ ___
 ______ random
 
 ____ ?.?C.. ______ QCoreApplication, QSemaphore, QThread
@@ -68,14 +68,14 @@ c_ Consumer(QThread):
     ___ run(self):
         for i in range(DataSize):
             usedBytes.acquire()
-            sys.stderr.w..(buffer[i % BufferSize])
+            ___.stderr.w..(buffer[i % BufferSize])
             freeBytes.release()
 
-        sys.stderr.w..("\n")
+        ___.stderr.w..("\n")
 
 
 __ __name__ == '__main__':
-    app _ QCoreApplication(sys.argv)
+    app _ QCoreApplication(___.argv)
     producer _ Producer()
     consumer _ Consumer()
     producer.start()

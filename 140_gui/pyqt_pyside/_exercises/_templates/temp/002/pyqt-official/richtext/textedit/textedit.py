@@ -44,7 +44,7 @@
 #############################################################################
 
 
-______ sys
+______ ___
 
 ____ ?.?C.. ______ QFile, QFileInfo, __, QTextCodec
 ____ ?.?G.. ______ (QFont, QFontDatabase, QFontInfo, QIcon, ?KS..,
@@ -58,7 +58,7 @@ ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter, QPrintPreviewDialog
 ______ textedit_rc
 
 
-__ sys.platform.startswith('darwin'):
+__ ___.platform.startswith('darwin'):
     rsrcPath _ ":/images/mac"
 ____
     rsrcPath _ ":/images/win"
@@ -644,13 +644,13 @@ c_ TextEdit ?MW..
 
 
 __ __name__ == '__main__':
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
 
     mainWindows _   # list
-    for fn in sys.argv[1:] or [N..]:
+    for fn in ___.argv[1:] or [N..]:
         textEdit _ TextEdit(fn)
         textEdit.resize(700, 800)
         textEdit.s..
         mainWindows.ap..(textEdit)
 
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

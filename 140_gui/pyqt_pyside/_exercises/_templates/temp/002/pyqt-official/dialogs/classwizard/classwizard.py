@@ -395,9 +395,9 @@ c_ ConclusionPage(QWizardPage):
 
 __ __name__ == '__main__':
 
-    ______ sys
+    ______ ___
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
     wizard _ ClassWizard()
     wizard.s..
-    sys.exit(app.exec_())
+    ___.exit(app.exec_())

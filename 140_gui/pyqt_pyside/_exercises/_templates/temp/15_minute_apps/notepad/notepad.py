@@ -4,7 +4,7 @@ ____ ?.?C.. ______ *
 ____ ?.QtPrintSupport ______ *
 
 ______ os
-______ sys
+______ ___
 
 
 c_ MainWindow ?MW..
@@ -181,7 +181,7 @@ c_ MainWindow ?MW..
 
 __ __name__ == '__main__':
 
-    app _ ?A..(sys.argv)
+    app _ ?A..(___.argv)
     app.sAN..("No2Pads")
 
     window _ MainWindow()
