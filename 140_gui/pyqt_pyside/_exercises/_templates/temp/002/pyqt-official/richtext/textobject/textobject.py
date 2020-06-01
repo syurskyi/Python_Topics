@@ -43,28 +43,28 @@
 
 
 ____ ?.QtCore ______ QFile, QIODevice, QObject, QSizeF
-____ ?.QtGui ______ QTextCharFormat, QTextFormat, QTextObjectInterface
+____ ?.?G.. ______ QTextCharFormat, QTextFormat, QTextObjectInterface
 ____ ?.?W.. ______ (?A.., QHBoxLayout, QLabel, QLineEdit,
-        QMessageBox, ?PB.., QTextEdit, QVBoxLayout, QWidget)
+        ?MB.., ?PB.., QTextEdit, QVBoxLayout, QWidget)
 ____ ?.QtSvg ______ QSvgRenderer
 
 
-class SvgTextObject(QObject, QTextObjectInterface):
-    ___ intrinsicSize(self, doc, posInDocument, format):
+c_ SvgTextObject(QObject, QTextObjectInterface):
+    ___ intrinsicSize  doc, posInDocument, format):
         renderer _ QSvgRenderer(format.property(Window.SvgData))
         size _ renderer.defaultSize()
 
-        if size.height() > 25:
+        __ size.height() > 25:
             size *_ 25.0 / size.height()
 
-        return QSizeF(size)
+        r_ QSizeF(size)
 
-    ___ drawObject(self, painter, rect, doc, posInDocument, format):
+    ___ drawObject  painter, rect, doc, posInDocument, format):
         renderer _ QSvgRenderer(format.property(Window.SvgData))
         renderer.render(painter, rect)
 
 
-class Window(QWidget):
+c_ Window(QWidget):
 
     SvgTextFormat _ QTextFormat.UserObject + 1
 
@@ -82,8 +82,8 @@ class Window(QWidget):
         fileName _ self.fileNameLineEdit.text()
         file _ QFile(fileName)
 
-        if not file.open(QIODevice.ReadOnly):
-            QMessageBox.warning(self, "Error Opening File",
+        __ no. file.o..(QIODevice.ReadOnly):
+            ?MB...warning  "Error Opening File",
                     "Could not open '%s'" % fileName)
 
         svgData _ file.readAll()
@@ -129,7 +129,7 @@ class Window(QWidget):
         self.setLayout(mainLayout)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

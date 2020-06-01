@@ -41,7 +41,7 @@
 
 
 ____ ?.QtCore ______ QPointF, QRect, QRectF, QSize, Qt
-____ ?.QtGui ______ (QColor, QImage, QLinearGradient, QPainter,
+____ ?.?G.. ______ (QColor, QImage, QLinearGradient, QPainter,
         QPainterPath, QPen)
 
 ____ colors ______ Colors
@@ -51,8 +51,8 @@ ____ demotextitem ______ DemoTextItem
 ____ scanitem ______ ScanItem
 
 
-class ButtonBackground(DemoItem):
-    ___ __init__(self, type, highlighted, pressed, logicalSize, parent):
+c_ ButtonBackground(DemoItem):
+    ___ __init__  type, highlighted, pressed, logicalSize, parent):
         super(ButtonBackground, self).__init__(parent)
 
         self.type _ type
@@ -61,13 +61,13 @@ class ButtonBackground(DemoItem):
         self.logicalSize _ logicalSize
         self.useSharedImage('%s%d%d%d' % (__file__, type, highlighted, pressed))
 
-    ___ createImage(self, transform):
-        if self.type in (TextButton.SIDEBAR, TextButton.PANEL):
-            return self.createRoundButtonBackground(transform)
-        else:
-            return self.createArrowBackground(transform)
+    ___ createImage  transform):
+        __ self.type in (TextButton.SIDEBAR, TextButton.PANEL):
+            r_ self.createRoundButtonBackground(transform)
+        ____
+            r_ self.createArrowBackground(transform)
 
-    ___ createRoundButtonBackground(self, transform):
+    ___ createRoundButtonBackground  transform):
         scaledRect _ transform.mapRect(QRect(0, 0,
                 self.logicalSize.width(), self.logicalSize.height()))
 
@@ -79,15 +79,15 @@ class ButtonBackground(DemoItem):
         painter.setRenderHint(QPainter.Antialiasing)
         painter.setPen(Qt.NoPen)
 
-        if Colors.useEightBitPalette:
+        __ Colors.useEightBitPalette:
             painter.setPen(QColor(120, 120, 120))
-            if self.pressed:
+            __ self.pressed:
                 painter.setBrush(QColor(60, 60, 60))
-            elif self.highlighted:
+            ____ self.highlighted:
                 painter.setBrush(QColor(100, 100, 100))
-            else:
+            ____
                 painter.setBrush(QColor(80, 80, 80))
-        else:
+        ____
             outlinebrush _ QLinearGradient(0, 0, 0, scaledRect.height())
             brush _ QLinearGradient(0, 0, 0, scaledRect.height())
 
@@ -96,37 +96,37 @@ class ButtonBackground(DemoItem):
             shadow _ QColor(0, 0, 0, 70)
             sunken _ QColor(220, 220, 220, 30)
 
-            if self.type == TextButton.PANEL:
+            __ self.type == TextButton.PANEL:
                 normal1 _ QColor(200, 170, 160, 50)
                 normal2 _ QColor(50, 10, 0, 50)
-            else:
+            ____
                 normal1 _ QColor(255, 255, 245, 60)
                 normal2 _ QColor(255, 255, 235, 10)
 
-            if self.pressed:
+            __ self.pressed:
                 outlinebrush.setColorAt(0, shadow)
                 outlinebrush.setColorAt(1, highlight)
                 brush.setColorAt(0, sunken)
                 painter.setPen(Qt.NoPen)
-            else:
+            ____
                 outlinebrush.setColorAt(1, shadow)
                 outlinebrush.setColorAt(0, highlight)
                 brush.setColorAt(0, normal1)
-                if not self.highlighted:
+                __ no. self.highlighted:
                     brush.setColorAt(1, normal2)
                 painter.setPen(QPen(outlinebrush, 1))
 
             painter.setBrush(brush)
 
-        if self.type == TextButton.PANEL:
+        __ self.type == TextButton.PANEL:
             painter.drawRect(0, 0, scaledRect.width(), scaledRect.height())
-        else:
+        ____
             painter.drawRoundedRect(0, 0, scaledRect.width(),
                     scaledRect.height(), 10, 90, Qt.RelativeSize)
 
-        return image
+        r_ image
 
-    ___ createArrowBackground(self, transform):
+    ___ createArrowBackground  transform):
         scaledRect _ transform.mapRect(QRect(0, 0,
                 self.logicalSize.width(), self.logicalSize.height()))
 
@@ -138,15 +138,15 @@ class ButtonBackground(DemoItem):
         painter.setRenderHint(QPainter.Antialiasing)
         painter.setPen(Qt.NoPen)
 
-        if Colors.useEightBitPalette:
+        __ Colors.useEightBitPalette:
             painter.setPen(QColor(120, 120, 120))
-            if self.pressed:
+            __ self.pressed:
                 painter.setBrush(QColor(60, 60, 60))
-            elif self.highlighted:
+            ____ self.highlighted:
                 painter.setBrush(QColor(100, 100, 100))
-            else:
+            ____
                 painter.setBrush(QColor(80, 80, 80))
-        else:
+        ____
             outlinebrush _ QLinearGradient(0, 0, 0, scaledRect.height())
             brush _ QLinearGradient(0, 0, 0, scaledRect.height())
 
@@ -157,16 +157,16 @@ class ButtonBackground(DemoItem):
             normal1 _ QColor(200, 170, 160, 50)
             normal2 _ QColor(50, 10, 0, 50)
 
-            if self.pressed:
+            __ self.pressed:
                 outlinebrush.setColorAt(0, shadow)
                 outlinebrush.setColorAt(1, highlight)
                 brush.setColorAt(0, sunken)
                 painter.setPen(Qt.NoPen)
-            else:
+            ____
                 outlinebrush.setColorAt(1, shadow)
                 outlinebrush.setColorAt(0, highlight)
                 brush.setColorAt(0, normal1)
-                if not self.highlighted:
+                __ no. self.highlighted:
                     brush.setColorAt(1, normal2)
                 painter.setPen(QPen(outlinebrush, 1))
 
@@ -178,7 +178,7 @@ class ButtonBackground(DemoItem):
         yOff _ scaledRect.height() / 2
         sizex _ 3.0 * transform.m11()
         sizey _ 1.5 * transform.m22()
-        if self.type == TextButton.UP:
+        __ self.type == TextButton.UP:
             sizey *_ -1
         path _ QPainterPath()
         path.moveTo(xOff, yOff + (5 * sizey))
@@ -187,10 +187,10 @@ class ButtonBackground(DemoItem):
         path.lineTo(xOff, yOff + (5 * sizey))
         painter.drawPath(path)
 
-        return image
+        r_ image
 
 
-class TextButton(DemoItem):
+c_ TextButton(DemoItem):
     BUTTON_WIDTH _ 180
     BUTTON_HEIGHT _ 19
 
@@ -200,7 +200,7 @@ class TextButton(DemoItem):
 
     ON, OFF, HIGHLIGHT, DISABLED _ range(4)
 
-    ___ __init__(self, text, align_LEFT, userCode_0, parent_None, type_SIDEBAR):
+    ___ __init__  text, align_LEFT, userCode_0, parent_None, type_SIDEBAR):
         super(TextButton, self).__init__(parent)
 
         # Prevent a circular import.
@@ -212,41 +212,41 @@ class TextButton(DemoItem):
         self.alignment _ align
         self.buttonType _ type
         self.userCode _ userCode
-        self.scanAnim _ None
-        self.bgOn _ None
-        self.bgOff _ None
-        self.bgHighlight _ None
-        self.bgDisabled _ None
+        self.scanAnim _ N..
+        self.bgOn _ N..
+        self.bgOff _ N..
+        self.bgHighlight _ N..
+        self.bgDisabled _ N..
         self.state _ TextButton.OFF
 
         self.setAcceptHoverEvents(True)
         self.setCursor(Qt.PointingHandCursor)
 
         # Calculate the button size.
-        if type in (TextButton.SIDEBAR, TextButton.PANEL):
+        __ type in (TextButton.SIDEBAR, TextButton.PANEL):
             self.logicalSize _ QSize(TextButton.BUTTON_WIDTH, TextButton.BUTTON_HEIGHT)
-        else:
+        ____
             self.logicalSize _ QSize(int((TextButton.BUTTON_WIDTH / 2.0) - 5), int(TextButton.BUTTON_HEIGHT * 1.5))
 
         self._prepared _ False
 
-    ___ setMenuString(self, menu):
+    ___ setMenuString  menu):
         self.menuString _ menu
 
     ___ prepare(self):
-        if not self._prepared:
+        __ no. self._prepared:
             self.setupHoverText()
             self.setupScanItem()
             self.setupButtonBg()
             self._prepared _ True
 
     ___ boundingRect(self):
-        return QRectF(0, 0, self.logicalSize.width(),
+        r_ QRectF(0, 0, self.logicalSize.width(),
                 self.logicalSize.height())
 
     ___ setupHoverText(self):
-        if not self.buttonLabel:
-            return
+        __ no. self.buttonLabel:
+            r_
 
         textItem _ DemoTextItem(self.buttonLabel, Colors.buttonFont(),
                 Colors.buttonText, -1, self)
@@ -254,7 +254,7 @@ class TextButton(DemoItem):
         textItem.setPos(16, 0)
 
     ___ setupScanItem(self):
-        if Colors.useButtonBalls:
+        __ Colors.useButtonBalls:
             scanItem _ ScanItem(self)
             scanItem.setZValue(self.zValue() + 1)
 
@@ -263,28 +263,28 @@ class TextButton(DemoItem):
             x _ 1.0
             y _ 1.5
             stop _ TextButton.BUTTON_WIDTH - scanItem.boundingRect().width() - x
-            if self.alignment == TextButton.LEFT:
+            __ self.alignment == TextButton.LEFT:
                 self.scanAnim.setDuration(2500)
                 self.scanAnim.setKeyValueAt(0.0, QPointF(x, y))
                 self.scanAnim.setKeyValueAt(0.5, QPointF(x, y))
                 self.scanAnim.setKeyValueAt(0.7, QPointF(stop, y))
                 self.scanAnim.setKeyValueAt(1.0, QPointF(x, y))
                 scanItem.setPos(QPointF(x, y))
-            else:
+            ____
                 self.scanAnim.setKeyValueAt(0.0, QPointF(stop, y))
                 self.scanAnim.setKeyValueAt(0.5, QPointF(x, y))
                 self.scanAnim.setKeyValueAt(1.0, QPointF(stop, y))
                 scanItem.setPos(QPointF(stop, y))
 
-    ___ setState(self, state):
+    ___ setState  state):
         self.state _ state
         self.bgOn.setRecursiveVisible(state == TextButton.ON)
         self.bgOff.setRecursiveVisible(state == TextButton.OFF)
         self.bgHighlight.setRecursiveVisible(state == TextButton.HIGHLIGHT)
         self.bgDisabled.setRecursiveVisible(state == TextButton.DISABLED)
-        if state == TextButton.DISABLED:
+        __ state == TextButton.DISABLED:
             self.setCursor(Qt.ArrowCursor)
-        else:
+        ____
             self.setCursor(Qt.PointingHandCursor)
 
     ___ setupButtonBg(self):
@@ -298,48 +298,48 @@ class TextButton(DemoItem):
                 self.logicalSize, self)
         self.setState(TextButton.OFF)
 
-    ___ hoverEnterEvent(self, event):
-        if not self.isEnabled() or self.state == TextButton.DISABLED:
-            return
+    ___ hoverEnterEvent  event):
+        __ no. self.isEnabled() or self.state == TextButton.DISABLED:
+            r_
 
-        if self.state == TextButton.OFF:
+        __ self.state == TextButton.OFF:
             self.setState(TextButton.HIGHLIGHT)
 
-            if Colors.noAnimations and Colors.useButtonBalls:
+            __ Colors.noAnimations and Colors.useButtonBalls:
                 # Wait a bit in the beginning to enhance the effect.  We have
                 # to do this here so that the adaption can be dynamic.
                 self.scanAnim.setDuration(1000)
                 self.scanAnim.setKeyValueAt(0.2, self.scanAnim.posAt(0))
 
-            if (self._menu_manager.window.fpsMedian > 10 or Colors.noAdapt or
+            __ (self._menu_manager.window.fpsMedian > 10 or Colors.noAdapt or
                     Colors.noTimerUpdate):
-                if Colors.useButtonBalls:
+                __ Colors.useButtonBalls:
                     self.scanAnim.play(True, True)
 
-    ___ hoverLeaveEvent(self, event):
-        if self.state == TextButton.DISABLED:
-            return
+    ___ hoverLeaveEvent  event):
+        __ self.state == TextButton.DISABLED:
+            r_
 
         self.setState(TextButton.OFF)
 
-        if Colors.noAnimations and Colors.useButtonBalls:
+        __ Colors.noAnimations and Colors.useButtonBalls:
             self.scanAnim.stop()
 
-    ___ mousePressEvent(self, event):
-        if self.state == TextButton.DISABLED:
-            return
+    ___ mousePressEvent  event):
+        __ self.state == TextButton.DISABLED:
+            r_
 
-        if self.state == TextButton.HIGHLIGHT or self.state == TextButton.OFF:
+        __ self.state == TextButton.HIGHLIGHT or self.state == TextButton.OFF:
             self.setState(TextButton.ON)
 
-    ___ mouseReleaseEvent(self, event):
-        if self.state == TextButton.ON:
+    ___ mouseReleaseEvent  event):
+        __ self.state == TextButton.ON:
             self.setState(TextButton.OFF)
-            if self.isEnabled() and self.boundingRect().contains(event.pos()):
+            __ self.isEnabled() and self.boundingRect().contains(event.pos()):
                 self._menu_manager.itemSelected(self.userCode, self.menuString)
 
-    ___ animationStarted(self, _):
-        if self.state == TextButton.DISABLED:
-            return
+    ___ animationStarted  _):
+        __ self.state == TextButton.DISABLED:
+            r_
 
         self.setState(TextButton.OFF)

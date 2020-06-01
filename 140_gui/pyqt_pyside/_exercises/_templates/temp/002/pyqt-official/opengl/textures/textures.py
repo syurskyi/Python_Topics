@@ -45,13 +45,13 @@
 ______ sys
 
 ____ ?.QtCore ______ pyqtSignal, QFileInfo, QPoint, QSize, Qt, QTimer
-____ ?.QtGui ______ (QColor, QImage, QMatrix4x4, QOpenGLShader,
+____ ?.?G.. ______ (QColor, QImage, QMatrix4x4, QOpenGLShader,
         QOpenGLShaderProgram, QOpenGLTexture, QOpenGLVersionProfile,
         QSurfaceFormat)
 ____ ?.?W.. ______ ?A.., QGridLayout, QOpenGLWidget, QWidget
 
 
-class GLWidget(QOpenGLWidget):
+c_ GLWidget(QOpenGLWidget):
 
     c__ _ pyqtSignal()
 
@@ -87,30 +87,30 @@ void main(void)
         (( -1, -1, +1 ), ( +1, -1, +1 ), ( +1, +1, +1 ), ( -1, +1, +1 ))
     )
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(GLWidget, self).__init__(parent)
 
         self.clearColor _ QColor(Qt.black)
         self.xRot _ 0
         self.yRot _ 0
         self.zRot _ 0
-        self.program _ None
+        self.program _ N..
 
         self.lastPos _ QPoint()
 
     ___ minimumSizeHint(self):
-        return QSize(50, 50)
+        r_ QSize(50, 50)
 
     ___ sizeHint(self):
-        return QSize(200, 200)
+        r_ QSize(200, 200)
 
-    ___ rotateBy(self, xAngle, yAngle, zAngle):
+    ___ rotateBy  xAngle, yAngle, zAngle):
         self.xRot +_ xAngle
         self.yRot +_ yAngle
         self.zRot +_ zAngle
         self.update()
 
-    ___ setClearColor(self, color):
+    ___ setClearColor  color):
         self.clearColor _ color
         self.update()
 
@@ -169,26 +169,26 @@ void main(void)
             texture.bind()
             self.gl.glDrawArrays(self.gl.GL_TRIANGLE_FAN, i * 4, 4)
 
-    ___ resizeGL(self, width, height):
+    ___ resizeGL  width, height):
         side _ min(width, height)
         self.gl.glViewport((width - side) // 2, (height - side) // 2, side,
                 side)
 
-    ___ mousePressEvent(self, event):
+    ___ mousePressEvent  event):
         self.lastPos _ event.pos()
 
-    ___ mouseMoveEvent(self, event):
+    ___ mouseMoveEvent  event):
         dx _ event.x() - self.lastPos.x()
         dy _ event.y() - self.lastPos.y()
 
-        if event.buttons() & Qt.LeftButton:
+        __ event.buttons() & Qt.LeftButton:
             self.rotateBy(8 * dy, 8 * dx, 0)
-        elif event.buttons() & Qt.RightButton:
+        ____ event.buttons() & Qt.RightButton:
             self.rotateBy(8 * dy, 0, 8 * dx)
 
         self.lastPos _ event.pos()
 
-    ___ mouseReleaseEvent(self, event):
+    ___ mouseReleaseEvent  event):
         self.c__.emit()
 
     ___ makeObject(self):
@@ -210,7 +210,7 @@ void main(void)
                 self.vertices.append((0.2 * x, 0.2 * y, 0.2 * z))
 
 
-class Window(QWidget):
+c_ Window(QWidget):
     NumRows _ 2
     NumColumns _ 3
 
@@ -255,11 +255,11 @@ class Window(QWidget):
         self.currentGlWidget _ self.sender()
 
     ___ rotateOneStep(self):
-        if self.currentGlWidget:
+        __ self.currentGlWidget:
             self.currentGlWidget.rotateBy(+2 * 16, +2 * 16, -1 * 16)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     app _ ?A..(sys.argv)
 

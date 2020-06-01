@@ -59,7 +59,7 @@ ___ createIntroPage
     layout.addWidget(label)
     page.setLayout(layout)
 
-    return page
+    r_ page
 
 
 ___ createRegistrationPage
@@ -80,7 +80,7 @@ ___ createRegistrationPage
     layout.addWidget(emailLineEdit, 1, 1)
     page.setLayout(layout)
 
-    return page
+    r_ page
 
 
 ___ createConclusionPage
@@ -94,10 +94,10 @@ ___ createConclusionPage
     layout.addWidget(label)
     page.setLayout(layout)
 
-    return page
+    r_ page
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

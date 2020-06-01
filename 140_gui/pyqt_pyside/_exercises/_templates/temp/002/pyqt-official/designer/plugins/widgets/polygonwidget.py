@@ -26,18 +26,18 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 ______ math
 
 ____ ?.QtCore ______ pyqtProperty, pyqtSlot, QPointF, QSize
-____ ?.QtGui ______ QBrush, QColor, QPainter, QPainterPath, QRadialGradient
+____ ?.?G.. ______ QBrush, QColor, QPainter, QPainterPath, QRadialGradient
 ____ ?.?W.. ______ ?A.., QWidget
 
 
-class PolygonWidget(QWidget):
+c_ PolygonWidget(QWidget):
     """PolygonWidget(QWidget)
     
     Provides a custom widget to display a polygon with properties and slots
     that can be used to customize its appearance.
     """
     
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
     
         super(PolygonWidget, self).__init__(parent)
         
@@ -53,7 +53,7 @@ class PolygonWidget(QWidget):
         
         self.createGradient()
     
-    ___ paintEvent(self, event):
+    ___ paintEvent  event):
     
         painter _ QPainter()
         painter.begin(self)
@@ -69,7 +69,7 @@ class PolygonWidget(QWidget):
     
     ___ sizeHint(self):
     
-        return QSize(2*self._outerRadius + 20, 2*self._outerRadius + 20)
+        r_ QSize(2*self._outerRadius + 20, 2*self._outerRadius + 20)
     
     ___ createPath(self):
     
@@ -98,11 +98,11 @@ class PolygonWidget(QWidget):
     # methods.
     
     ___ getAngle(self):
-        return self._angle
+        r_ self._angle
     
     # The setAngle() setter method is also a slot.
     @pyqtSlot(int)
-    ___ setAngle(self, angle):
+    ___ setAngle  angle):
         self._angle _ min(max(0, angle), 360)
         self.update()
     
@@ -112,11 +112,11 @@ class PolygonWidget(QWidget):
     # setInnerRadius() methods.
     
     ___ getInnerRadius(self):
-        return self._innerRadius
+        r_ self._innerRadius
     
     # The setInnerRadius() setter method is also a slot.
     @pyqtSlot(int)
-    ___ setInnerRadius(self, radius):
+    ___ setInnerRadius  radius):
         self._innerRadius _ radius
         self.createPath()
         self.createGradient()
@@ -128,11 +128,11 @@ class PolygonWidget(QWidget):
     # setOuterRadius() methods.
     
     ___ getOuterRadius(self):
-        return self._outerRadius
+        r_ self._outerRadius
     
     # The setOuterRadius() setter method is also a slot.
     @pyqtSlot(int)
-    ___ setOuterRadius(self, radius):
+    ___ setOuterRadius  radius):
         self._outerRadius _ radius
         self.createPath()
         self.createGradient()
@@ -144,11 +144,11 @@ class PolygonWidget(QWidget):
     # and setNumberOfSides() methods.
     
     ___ getNumberOfSides(self):
-        return self._sides
+        r_ self._sides
     
     # The setNumberOfSides() setter method is also a slot.
     @pyqtSlot(int)
-    ___ setNumberOfSides(self, sides):
+    ___ setNumberOfSides  sides):
         self._sides _ max(3, sides)
         self.createPath()
         self.update()
@@ -159,9 +159,9 @@ class PolygonWidget(QWidget):
     # setInnerColor() methods.
     
     ___ getInnerColor(self):
-        return self._innerColor
+        r_ self._innerColor
     
-    ___ setInnerColor(self, color):
+    ___ setInnerColor  color):
         self._innerColor _ max(3, color)
         self.createGradient()
         self.update()
@@ -172,9 +172,9 @@ class PolygonWidget(QWidget):
     # setOuterColor() methods.
     
     ___ getOuterColor(self):
-        return self._outerColor
+        r_ self._outerColor
     
-    ___ setOuterColor(self, color):
+    ___ setOuterColor  color):
         self._outerColor _ color
         self.createGradient()
         self.update()
@@ -182,7 +182,7 @@ class PolygonWidget(QWidget):
     outerColor _ pyqtProperty(QColor, getOuterColor, setOuterColor)
 
 
-if __name__ == "__main__":
+__ __name__ == "__main__":
 
     ______ sys
 

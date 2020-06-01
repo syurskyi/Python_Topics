@@ -7,10 +7,10 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, QtGui, ?W..
+____ ? ______ QtCore, ?G.., ?W..
 
-class Ui_ChatMainWindow(object):
-    ___ setupUi(self, ChatMainWindow):
+c_ Ui_ChatMainWindow(object):
+    ___ setupUi  ChatMainWindow):
         ChatMainWindow.setObjectName("ChatMainWindow")
         ChatMainWindow.resize(800, 600)
         self.centralwidget _ ?W...QWidget(ChatMainWindow)
@@ -24,7 +24,7 @@ class Ui_ChatMainWindow(object):
         self.vboxlayout.setSpacing(6)
         self.vboxlayout.setObjectName("vboxlayout")
         self.chatHistory _ ?W...QTextBrowser(self.centralwidget)
-        self.chatHistory.setAcceptDrops(False)
+        self.chatHistory.setAcceptDrops F..
         self.chatHistory.setAcceptRichText(True)
         self.chatHistory.setObjectName("chatHistory")
         self.vboxlayout.addWidget(self.chatHistory)
@@ -49,7 +49,7 @@ class Ui_ChatMainWindow(object):
         self.hboxlayout1.addWidget(self.sendButton)
         self.vboxlayout.addLayout(self.hboxlayout1)
         self.hboxlayout.addLayout(self.vboxlayout)
-        ChatMainWindow.setCentralWidget(self.centralwidget)
+        ChatMainWindow.sCW..(self.centralwidget)
         self.menubar _ ?W...QMenuBar(ChatMainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 31))
         self.menubar.setObjectName("menubar")
@@ -61,28 +61,28 @@ class Ui_ChatMainWindow(object):
         self.statusbar _ ?W...QStatusBar(ChatMainWindow)
         self.statusbar.setObjectName("statusbar")
         ChatMainWindow.setStatusBar(self.statusbar)
-        self.actionQuit _ ?W...QAction(ChatMainWindow)
+        self.actionQuit _ ?W...?A..(ChatMainWindow)
         self.actionQuit.setObjectName("actionQuit")
-        self.actionAboutQt _ ?W...QAction(ChatMainWindow)
+        self.actionAboutQt _ ?W...?A..(ChatMainWindow)
         self.actionAboutQt.setObjectName("actionAboutQt")
-        self.actionChangeNickname _ ?W...QAction(ChatMainWindow)
+        self.actionChangeNickname _ ?W...?A..(ChatMainWindow)
         self.actionChangeNickname.setObjectName("actionChangeNickname")
-        self.menuQuit.addAction(self.actionAboutQt)
-        self.menuFile.addAction(self.actionChangeNickname)
+        self.menuQuit.aA..(self.actionAboutQt)
+        self.menuFile.aA..(self.actionChangeNickname)
         self.menuFile.addSeparator()
-        self.menuFile.addAction(self.actionQuit)
-        self.menubar.addAction(self.menuFile.menuAction())
-        self.menubar.addAction(self.menuQuit.menuAction())
+        self.menuFile.aA..(self.actionQuit)
+        self.menubar.aA..(self.menuFile.menuAction())
+        self.menubar.aA..(self.menuQuit.menuAction())
         self.label.setBuddy(self.messageLineEdit)
 
         self.retranslateUi(ChatMainWindow)
         self.messageLineEdit.returnPressed.c..(self.sendButton.animateClick)
-        self.actionQuit.triggered['bool'].c..(ChatMainWindow.close)
+        self.actionQuit.t__['bool'].c..(ChatMainWindow.close)
         QtCore.QMetaObject.connectSlotsByName(ChatMainWindow)
         ChatMainWindow.setTabOrder(self.chatHistory, self.messageLineEdit)
         ChatMainWindow.setTabOrder(self.messageLineEdit, self.sendButton)
 
-    ___ retranslateUi(self, ChatMainWindow):
+    ___ retranslateUi  ChatMainWindow):
         _translate _ QtCore.QCoreApplication.translate
         ChatMainWindow.setWindowTitle(_translate("ChatMainWindow", "Qt D-Bus Chat"))
         self.chatHistory.setToolTip(_translate("ChatMainWindow", "Messages sent and received from other users"))
@@ -92,8 +92,8 @@ class Ui_ChatMainWindow(object):
         self.menuQuit.setTitle(_translate("ChatMainWindow", "Help"))
         self.menuFile.setTitle(_translate("ChatMainWindow", "File"))
         self.actionQuit.sT..(_translate("ChatMainWindow", "Quit"))
-        self.actionQuit.setShortcut(_translate("ChatMainWindow", "Ctrl+Q"))
+        self.actionQuit.sS..(_translate("ChatMainWindow", "Ctrl+Q"))
         self.actionAboutQt.sT..(_translate("ChatMainWindow", "About Qt..."))
         self.actionChangeNickname.sT..(_translate("ChatMainWindow", "Change nickname..."))
-        self.actionChangeNickname.setShortcut(_translate("ChatMainWindow", "Ctrl+N"))
+        self.actionChangeNickname.sS..(_translate("ChatMainWindow", "Ctrl+N"))
 

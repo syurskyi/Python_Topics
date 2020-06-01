@@ -46,16 +46,16 @@
 
 ____ ?.QtCore ______ QDataStream, QTimer
 ____ ?.?W.. ______ (?A.., QDialog, QDialogButtonBox,
-        QGridLayout, QLabel, QLineEdit, QMessageBox, ?PB..)
+        QGridLayout, QLabel, QLineEdit, ?MB.., ?PB..)
 ____ ?.QtNetwork ______ QLocalSocket
 
 
-class Client(QDialog):
-    ___ __init__(self, parent_None):
+c_ Client(QDialog):
+    ___ __init__  parent_None):
         super(Client, self).__init__(parent)
 
         self.blockSize _ 0
-        self.currentFortune _ None
+        self.currentFortune _ N..
 
         hostLabel _ QLabel("&Server name:")
         self.hostLineEdit _ QLineEdit("fortune")
@@ -93,7 +93,7 @@ class Client(QDialog):
         self.hostLineEdit.setFocus()
 
     ___ requestNewFortune(self):
-        self.getFortuneButton.setEnabled(False)
+        self.getFortuneButton.setEnabled F..
         self.blockSize _ 0
         self.socket.abort()
         self.socket.connectToServer(self.hostLineEdit.text())
@@ -102,24 +102,24 @@ class Client(QDialog):
         ins _ QDataStream(self.socket)
         ins.setVersion(QDataStream.Qt_4_0)
 
-        if self.blockSize == 0:
-            if self.socket.bytesAvailable() < 2:
-                return
+        __ self.blockSize == 0:
+            __ self.socket.bytesAvailable() < 2:
+                r_
             self.blockSize _ ins.readUInt16()
 
-        if ins.atEnd
-            return
+        __ ins.atEnd
+            r_
 
         nextFortune _ ins.readQString()
-        if nextFortune == self.currentFortune:
+        __ nextFortune == self.currentFortune:
             QTimer.singleShot(0, self.requestNewFortune)
-            return
+            r_
  
         self.currentFortune _ nextFortune
         self.statusLabel.sT..(self.currentFortune)
         self.getFortuneButton.setEnabled(True)
 
-    ___ displayError(self, socketError):
+    ___ displayError  socketError):
         errors _ {
             QLocalSocket.ServerNotFoundError:
                 "The host was not found. Please check the host name and port "
@@ -131,13 +131,13 @@ class Client(QDialog):
                 "port settings are correct.",
 
             QLocalSocket.PeerClosedError:
-                None,
+                N..,
         }
 
         msg _ errors.get(socketError,
                 "The following error occurred: %s." % self.socket.errorString())
-        if msg is not None:
-            QMessageBox.information(self, "Fortune Client", msg)
+        __ msg __ no. N..:
+            ?MB...information  "Fortune Client", msg)
 
         self.getFortuneButton.setEnabled(True)
 
@@ -145,7 +145,7 @@ class Client(QDialog):
         self.getFortuneButton.setEnabled(self.hostLineEdit.text() !_ "")
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

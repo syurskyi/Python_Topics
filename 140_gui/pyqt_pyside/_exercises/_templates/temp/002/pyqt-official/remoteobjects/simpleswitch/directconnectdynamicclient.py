@@ -57,13 +57,13 @@ ____ ?.QtCore ______ pyqtSignal, pyqtSlot, QCoreApplication, QObject, QUrl
 ____ ?.QtRemoteObjects ______ QRemoteObjectNode
 
 
-class DynamicClient(QObject):
+c_ DynamicClient(QObject):
 
     # This signal is connected with server_slot() slot of the source object and
     # echoes back the switch state received from the source.
     echoSwitchState _ pyqtSignal(bool)
 
-    ___ __init__(self, replica, parent_None):
+    ___ __init__  replica, parent_None):
         super().__init__(parent)
 
         self._replica _ replica
@@ -72,7 +72,7 @@ class DynamicClient(QObject):
         replica.initialized.c..(self.initConnection)
 
     @pyqtSlot(bool)
-    ___ recSwitchState(self, value):
+    ___ recSwitchState  value):
         self._clientSwitchState _ self._replica.property('currState')
 
         print("Received source state", value, self._clientSwitchState)
@@ -91,7 +91,7 @@ class DynamicClient(QObject):
         self.echoSwitchState.c..(self._replica.server_slot)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     app _ QCoreApplication(sys.argv)
 

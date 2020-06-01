@@ -45,13 +45,13 @@
 
 
 ____ ?.QtCore ______ QBuffer, QDataStream, QSharedMemory
-____ ?.QtGui ______ QImage, QPixmap
-____ ?.?W.. ______ ?A.., QDialog, QFileDialog
+____ ?.?G.. ______ QImage, QPixmap
+____ ?.?W.. ______ ?A.., QDialog, ?FD..
 
 ____ dialog ______ Ui_Dialog
 
 
-class Dialog(QDialog):
+c_ Dialog(QDialog):
     """ This class is a simple example of how to use QSharedMemory.  It is a
     simple dialog that presents a few buttons.  Run the executable twice to
     create two processes running the dialog.  In one of the processes, press
@@ -68,7 +68,7 @@ class Dialog(QDialog):
     appropriate for handling each button.
     """
 
-    ___ __init__(self, parent _ None):
+    ___ __init__  parent _ N..):
         super(Dialog, self).__init__(parent)
 
         self.sharedMemory _ QSharedMemory('QSharedMemoryExample')
@@ -100,30 +100,30 @@ class Dialog(QDialog):
         Shared Memory" button on the second Dialog process.
         """
 
-        if self.sharedMemory.isAttached
+        __ self.sharedMemory.isAttached
             self.detach()
 
         self.ui.label.sT..("Select an image file")
-        fileName, _ _ QFileDialog.getOpenFileName(self, None, None,
+        fileName, _ _ ?FD...gOFN..  N.., N..,
                 "Images (*.png *.xpm *.jpg)")
         image _ QImage()
-        if not image.load(fileName):
+        __ no. image.load(fileName):
             self.ui.label.sT..(
                     "Selected file is not an image, please select another.")
-            return
+            r_
 
         self.ui.label.setPixmap(QPixmap.fromImage(image))
 
         # Load into shared memory.
         buf _ QBuffer()
-        buf.open(QBuffer.ReadWrite)
+        buf.o..(QBuffer.ReadWrite)
         out _ QDataStream(buf)
         out << image
         size _ buf.size()
 
-        if not self.sharedMemory.create(size):
+        __ no. self.sharedMemory.create(size):
             self.ui.label.sT..("Unable to create shared memory segment.")
-            return
+            r_
 
         size _ min(self.sharedMemory.size(), size)
         self.sharedMemory.lock()
@@ -142,11 +142,11 @@ class Dialog(QDialog):
         from it, and finally displays the QImage in the Dialog.
         """
 
-        if not self.sharedMemory.attach
+        __ no. self.sharedMemory.attach
             self.ui.label.sT..(
                     "Unable to attach to shared memory segment.\nLoad an "
                     "image first.")
-            return
+            r_
  
         buf _ QBuffer()
         ins _ QDataStream(buf)
@@ -154,7 +154,7 @@ class Dialog(QDialog):
 
         self.sharedMemory.lock()
         buf.setData(self.sharedMemory.constData())
-        buf.open(QBuffer.ReadOnly)
+        buf.o..(QBuffer.ReadOnly)
         ins >> image
         self.sharedMemory.unlock()
         self.sharedMemory.detach()
@@ -167,11 +167,11 @@ class Dialog(QDialog):
         from a shared memory segment, the system releases the shared memory.
         """
 
-        if not self.sharedMemory.detach
+        __ no. self.sharedMemory.detach
             self.ui.label.sT..("Unable to detach from shared memory.")
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

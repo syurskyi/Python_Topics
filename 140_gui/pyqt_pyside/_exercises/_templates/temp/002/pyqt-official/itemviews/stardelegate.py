@@ -46,18 +46,18 @@
 ______ math
 
 ____ ?.QtCore ______ pyqtSignal, QPointF, QSize, Qt
-____ ?.QtGui ______ QPainter, QPolygonF
+____ ?.?G.. ______ QPainter, QPolygonF
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., QStyle,
         QStyledItemDelegate, QTableWidget, QTableWidgetItem, QWidget)
 
 
-class StarRating(object):
+c_ StarRating(object):
     # enum EditMode
     Editable, ReadOnly _ range(2)
 
     PaintingScaleFactor _ 20
 
-    ___ __init__(self, starCount_1, maxStarCount_5):
+    ___ __init__  starCount_1, maxStarCount_5):
         self._starCount _ starCount
         self._maxStarCount _ maxStarCount
 
@@ -74,29 +74,29 @@ class StarRating(object):
                             << QPointF(0.4, 0.5)
 
     ___ starCount(self):
-        return self._starCount
+        r_ self._starCount
 
     ___ maxStarCount(self):
-        return self._maxStarCount
+        r_ self._maxStarCount
 
-    ___ setStarCount(self, starCount):
+    ___ setStarCount  starCount):
         self._starCount _ starCount
 
-    ___ setMaxStarCount(self, maxStarCount):
+    ___ setMaxStarCount  maxStarCount):
         self._maxStarCount _ maxStarCount
 
     ___ sizeHint(self):
-        return self.PaintingScaleFactor * QSize(self._maxStarCount, 1)
+        r_ self.PaintingScaleFactor * QSize(self._maxStarCount, 1)
 
-    ___ paint(self, painter, rect, palette, editMode):
+    ___ paint  painter, rect, palette, editMode):
         painter.save()
 
         painter.setRenderHint(QPainter.Antialiasing, True)
         painter.setPen(Qt.NoPen)
 
-        if editMode == StarRating.Editable:
+        __ editMode == StarRating.Editable:
             painter.setBrush(palette.highlight())
-        else:
+        ____
             painter.setBrush(palette.windowText())
 
         yOffset _ (rect.height() - self.PaintingScaleFactor) / 2
@@ -104,9 +104,9 @@ class StarRating(object):
         painter.scale(self.PaintingScaleFactor, self.PaintingScaleFactor)
 
         for i in range(self._maxStarCount):
-            if i < self._starCount:
+            __ i < self._starCount:
                 painter.drawPolygon(self.starPolygon, Qt.WindingFill)
-            elif editMode == StarRating.Editable:
+            ____ editMode == StarRating.Editable:
                 painter.drawPolygon(self.diamondPolygon, Qt.WindingFill)
 
             painter.translate(1.0, 0.0)
@@ -114,11 +114,11 @@ class StarRating(object):
         painter.restore()
 
 
-class StarEditor(QWidget):
+c_ StarEditor(QWidget):
 
     editingFinished _ pyqtSignal()
 
-    ___ __init__(self, parent _ None):
+    ___ __init__  parent _ N..):
         super(StarEditor, self).__init__(parent)
 
         self._starRating _ StarRating()
@@ -126,80 +126,80 @@ class StarEditor(QWidget):
         self.setMouseTracking(True)
         self.setAutoFillBackground(True)
 
-    ___ setStarRating(self, starRating):
+    ___ setStarRating  starRating):
         self._starRating _ starRating
 
     ___ starRating(self):
-        return self._starRating
+        r_ self._starRating
 
     ___ sizeHint(self):
-        return self._starRating.sizeHint()
+        r_ self._starRating.sizeHint()
 
-    ___ paintEvent(self, event):
+    ___ paintEvent  event):
         painter _ QPainter(self)
         self._starRating.paint(painter, self.rect(), self.palette(),
                 StarRating.Editable)
 
-    ___ mouseMoveEvent(self, event):
+    ___ mouseMoveEvent  event):
         star _ self.starAtPosition(event.x())
 
-        if star !_ self._starRating.starCount() and star !_ -1:
+        __ star !_ self._starRating.starCount() and star !_ -1:
             self._starRating.setStarCount(star)
             self.update()
 
-    ___ mouseReleaseEvent(self, event):
+    ___ mouseReleaseEvent  event):
         self.editingFinished.emit()
 
-    ___ starAtPosition(self, x):
+    ___ starAtPosition  x):
         # Enable a star, if pointer crosses the center horizontally.
         starwidth _ self._starRating.sizeHint().width() // self._starRating.maxStarCount()
         star _ (x + starwidth / 2) // starwidth
-        if 0 <_ star <_ self._starRating.maxStarCount
-            return star
+        __ 0 <_ star <_ self._starRating.maxStarCount
+            r_ star
 
-        return -1
+        r_ -1
 
 
-class StarDelegate(QStyledItemDelegate):
-    ___ paint(self, painter, option, index):
+c_ StarDelegate(QStyledItemDelegate):
+    ___ paint  painter, option, index):
         starRating _ index.data()
-        if isinstance(starRating, StarRating):
-            if option.state & QStyle.State_Selected:
+        __ isinstance(starRating, StarRating):
+            __ option.state & QStyle.State_Selected:
                 painter.fillRect(option.rect, option.palette.highlight())
 
             starRating.paint(painter, option.rect, option.palette,
                     StarRating.ReadOnly)
-        else:
+        ____
             super(StarDelegate, self).paint(painter, option, index)
 
-    ___ sizeHint(self, option, index):
+    ___ sizeHint  option, index):
         starRating _ index.data()
-        if isinstance(starRating, StarRating):
-            return starRating.sizeHint()
-        else:
-            return super(StarDelegate, self).sizeHint(option, index)
+        __ isinstance(starRating, StarRating):
+            r_ starRating.sizeHint()
+        ____
+            r_ super(StarDelegate, self).sizeHint(option, index)
 
-    ___ createEditor(self, parent, option, index):
+    ___ createEditor  parent, option, index):
         starRating _ index.data()
-        if isinstance(starRating, StarRating):
+        __ isinstance(starRating, StarRating):
             editor _ StarEditor(parent)
             editor.editingFinished.c..(self.commitAndCloseEditor)
-            return editor
-        else:
-            return super(StarDelegate, self).createEditor(parent, option, index)
+            r_ editor
+        ____
+            r_ super(StarDelegate, self).createEditor(parent, option, index)
 
-    ___ setEditorData(self, editor, index):
+    ___ setEditorData  editor, index):
         starRating _ index.data()
-        if isinstance(starRating, StarRating):
+        __ isinstance(starRating, StarRating):
             editor.setStarRating(starRating)
-        else:
+        ____
             super(StarDelegate, self).setEditorData(editor, index)
 
-    ___ setModelData(self, editor, model, index):
+    ___ setModelData  editor, model, index):
         starRating _ index.data()
-        if isinstance(starRating, StarRating):
+        __ isinstance(starRating, StarRating):
             model.setData(index, editor.starRating())
-        else:
+        ____
             super(StarDelegate, self).setModelData(editor, model, index)
 
     ___ commitAndCloseEditor(self):
@@ -228,7 +228,7 @@ ___ populateTableWidget(tableWidget):
         tableWidget.setItem(row, 3, item3)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

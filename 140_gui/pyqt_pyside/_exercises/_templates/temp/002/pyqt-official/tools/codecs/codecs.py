@@ -43,9 +43,9 @@
 
 
 ____ ?.QtCore ______ QFile, QRegExp, QTextCodec, QTextStream
-____ ?.?W.. ______ (QAction, ?A.., QComboBox, QDialog,
-        QDialogButtonBox, QFileDialog, QGridLayout, QLabel, QMainWindow, QMenu,
-        QMessageBox, QTextEdit)
+____ ?.?W.. ______ (?A.., ?A.., QComboBox, QDialog,
+        QDialogButtonBox, ?FD.., QGridLayout, QLabel, QMainWindow, QMenu,
+        ?MB.., QTextEdit)
 
 
 ___ codec_name(codec):
@@ -56,16 +56,16 @@ ___ codec_name(codec):
         # Python v2.
         name _ str(codec.name())
 
-    return name
+    r_ name
 
 
-class MainWindow(QMainWindow):
+c_ MainWindow ?MW..
     ___ __init__(self):
         super(MainWindow, self).__init__()
 
         self.textEdit _ QTextEdit()
         self.textEdit.setLineWrapMode(QTextEdit.NoWrap)
-        self.setCentralWidget(self.textEdit)
+        self.sCW..(self.textEdit)
 
         self.codecs _ []
         self.findCodecs()
@@ -80,29 +80,29 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("Codecs")
         self.resize(500, 400)
 
-    ___ open(self):
-        fileName, _ _ QFileDialog.getOpenFileName(self)
-        if fileName:
+    ___ o..(self):
+        fileName, _ _ ?FD...gOFN..(self)
+        __ fileName:
             inFile _ QFile(fileName)
-            if not inFile.open(QFile.ReadOnly):
-                QMessageBox.warning(self, "Codecs",
+            __ no. inFile.o..(QFile.ReadOnly):
+                ?MB...warning  "Codecs",
                         "Cannot read file %s:\n%s" % (fileName, inFile.errorString()))
-                return
+                r_
 
             data _ inFile.readAll()
 
             self.previewForm.setEncodedData(data)
-            if self.previewForm.exec_
-                self.textEdit.setPlainText(self.previewForm.decodedString())
+            __ self.previewForm.exec_
+                self.textEdit.sPT..(self.previewForm.decodedString())
 
     ___ save(self):
-        fileName, _ _ QFileDialog.getSaveFileName(self)
-        if fileName:
+        fileName, _ _ ?FD...getSaveFileName(self)
+        __ fileName:
             outFile _ QFile(fileName)
-            if not outFile.open(QFile.WriteOnly|QFile.Text):
-                QMessageBox.warning(self, "Codecs",
+            __ no. outFile.o..(QFile.WriteOnly|QFile.Text):
+                ?MB...warning  "Codecs",
                         "Cannot write file %s:\n%s" % (fileName, outFile.errorString()))
-                return
+                r_
 
             action _ self.sender()
             codecName _ action.data()
@@ -112,7 +112,7 @@ class MainWindow(QMainWindow):
             out << self.textEdit.toPlainText()
 
     ___ about(self):
-        QMessageBox.about(self, "About Codecs",
+        ?MB...about  "About Codecs",
                 "The <b>Codecs</b> example demonstrates how to read and "
                 "write files using various encodings.")
 
@@ -133,16 +133,16 @@ class MainWindow(QMainWindow):
             sortKey _ codec_name(codec).upper()
             rank _ 0
 
-            if sortKey.startswith('UTF-8'):
+            __ sortKey.startswith('UTF-8'):
                 rank _ 1
-            elif sortKey.startswith('UTF-16'):
+            ____ sortKey.startswith('UTF-16'):
                 rank _ 2
-            elif iso8859RegExp.exactMatch(sortKey):
-                if len(iso8859RegExp.cap(1)) == 1:
+            ____ iso8859RegExp.exactMatch(sortKey):
+                __ len(iso8859RegExp.cap(1)) == 1:
                     rank _ 3
-                else:
+                ____
                     rank _ 4
-            else:
+            ____
                 rank _ 5
 
             codecMap.append((str(rank) + sortKey, codec))
@@ -151,48 +151,48 @@ class MainWindow(QMainWindow):
         self.codecs _ [item[-1] for item in codecMap]
 
     ___ createActions(self):
-        self.openAct _ QAction("&Open...", self, shortcut_"Ctrl+O",
-                triggered_self.open)
+        self.openAct _ ?A..("&Open...", self, shortcut_"Ctrl+O",
+                triggered_self.o..)
 
         for codec in self.codecs:
             name _ codec_name(codec)
 
-            action _ QAction(name + '...', self, triggered_self.save)
+            action _ ?A..(name + '...', self, triggered_self.save)
             action.setData(name)
             self.saveAsActs.append(action)
 
-        self.exitAct _ QAction("E&xit", self, shortcut_"Ctrl+Q",
+        self.exitAct _ ?A..("E&xit", self, shortcut_"Ctrl+Q",
                 triggered_self.close)
 
-        self.aboutAct _ QAction("&About", self, triggered_self.about)
+        self.aboutAct _ ?A..("&About", self, triggered_self.about)
 
-        self.aboutQtAct _ QAction("About &Qt", self,
+        self.aboutQtAct _ ?A..("About &Qt", self,
                 triggered_QApplication.instance().aboutQt)
 
     ___ createMenus(self):
         self.saveAsMenu _ QMenu("&Save As", self)
         for action in self.saveAsActs:
-            self.saveAsMenu.addAction(action)
+            self.saveAsMenu.aA..(action)
 
         self.saveAsMenu.aboutToShow.c..(self.aboutToShowSaveAsMenu)
 
         self.fileMenu _ QMenu("&File", self)
-        self.fileMenu.addAction(self.openAct)
-        self.fileMenu.addMenu(self.saveAsMenu)
+        self.fileMenu.aA..(self.openAct)
+        self.fileMenu.aM..(self.saveAsMenu)
         self.fileMenu.addSeparator()
-        self.fileMenu.addAction(self.exitAct)
+        self.fileMenu.aA..(self.exitAct)
 
         self.helpMenu _ QMenu("&Help", self)
-        self.helpMenu.addAction(self.aboutAct)
-        self.helpMenu.addAction(self.aboutQtAct)
+        self.helpMenu.aA..(self.aboutAct)
+        self.helpMenu.aA..(self.aboutQtAct)
 
-        self.menuBar().addMenu(self.fileMenu)
-        self.menuBar().addSeparator()
-        self.menuBar().addMenu(self.helpMenu)
+        self.mB.. .aM..(self.fileMenu)
+        self.mB.. .addSeparator()
+        self.mB.. .aM..(self.helpMenu)
 
 
-class PreviewForm(QDialog):
-    ___ __init__(self, parent):
+c_ PreviewForm(QDialog):
+    ___ __init__  parent):
         super(PreviewForm, self).__init__(parent)
 
         self.encodingComboBox _ QComboBox()
@@ -219,31 +219,31 @@ class PreviewForm(QDialog):
         self.setWindowTitle("Choose Encoding")
         self.resize(400, 300)
 
-    ___ setCodecList(self, codecs):
+    ___ setCodecList  codecs):
         self.encodingComboBox.clear()
         for codec in codecs:
             self.encodingComboBox.addItem(codec_name(codec), codec.mibEnum())
 
-    ___ setEncodedData(self, data):
+    ___ setEncodedData  data):
         self.encodedData _ data
         self.updateTextEdit()
 
     ___ decodedString(self):
-        return self.decodedStr
+        r_ self.decodedStr
 
     ___ updateTextEdit(self):
         mib _ self.encodingComboBox.itemData(self.encodingComboBox.currentIndex())
         codec _ QTextCodec.codecForMib(mib)
 
         data _ QTextStream(self.encodedData)
-        data.setAutoDetectUnicode(False)
+        data.setAutoDetectUnicode F..
         data.setCodec(codec)
 
         self.decodedStr _ data.readAll()
-        self.textEdit.setPlainText(self.decodedStr)
+        self.textEdit.sPT..(self.decodedStr)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

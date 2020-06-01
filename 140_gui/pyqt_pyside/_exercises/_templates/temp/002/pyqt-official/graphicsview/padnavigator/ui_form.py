@@ -7,10 +7,10 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, QtGui, ?W..
+____ ? ______ QtCore, ?G.., ?W..
 
-class Ui_Form(object):
-    ___ setupUi(self, Form):
+c_ Ui_Form(object):
+    ___ setupUi  Form):
         Form.setObjectName("Form")
         Form.resize(378, 385)
         self.verticalLayout_2 _ ?W...QVBoxLayout(Form)
@@ -82,7 +82,7 @@ class Ui_Form(object):
         Form.setTabOrder(self.spinBox, self.groupBox_2)
         Form.setTabOrder(self.groupBox_2, self.treeWidget)
 
-    ___ retranslateUi(self, Form):
+    ___ retranslateUi  Form):
         _translate _ QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "BackSide"))
         self.groupBox.setTitle(_translate("Form", "Settings"))
@@ -93,7 +93,7 @@ class Ui_Form(object):
         self.groupBox_2.setTitle(_translate("Form", "Other input"))
         self.treeWidget.headerItem().sT..(0, _translate("Form", "Widgets On Graphics View"))
         __sortingEnabled _ self.treeWidget.isSortingEnabled()
-        self.treeWidget.setSortingEnabled(False)
+        self.treeWidget.setSortingEnabled F..
         self.treeWidget.topLevelItem(0).sT..(0, _translate("Form", "QGraphicsProxyWidget"))
         self.treeWidget.topLevelItem(0).child(0).sT..(0, _translate("Form", "QGraphicsWidget"))
         self.treeWidget.topLevelItem(0).child(0).child(0).sT..(0, _translate("Form", "QObject"))

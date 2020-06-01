@@ -45,18 +45,18 @@
 ____ ?.QtCore ______ (pyqtSignal, pyqtSlot, Q_ARG, QAbstractItemModel,
         QFileInfo, qFuzzyCompare, QMetaObject, QModelIndex, QObject, Qt,
         QThread, QTime, QUrl)
-____ ?.QtGui ______ QColor, qGray, QImage, QPainter, QPalette
+____ ?.?G.. ______ QColor, qGray, QImage, QPainter, QPalette
 ____ ?.QtMultimedia ______ (QAbstractVideoBuffer, QMediaContent,
         QMediaMetaData, QMediaPlayer, QMediaPlaylist, QVideoFrame, QVideoProbe)
 ____ ?.QtMultimediaWidgets ______ QVideoWidget
-____ ?.?W.. ______ (?A.., QComboBox, QDialog, QFileDialog,
-        QFormLayout, QHBoxLayout, QLabel, QListView, QMessageBox, ?PB..,
+____ ?.?W.. ______ (?A.., QComboBox, QDialog, ?FD..,
+        QFormLayout, QHBoxLayout, QLabel, QListView, ?MB.., ?PB..,
         QSizePolicy, QSlider, QStyle, QToolButton, QVBoxLayout, QWidget)
 
 
-class VideoWidget(QVideoWidget):
+c_ VideoWidget(QVideoWidget):
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(VideoWidget, self).__init__(parent)
 
         self.setSizePolicy(QSizePolicy.Ignored, QSizePolicy.Ignored)
@@ -67,57 +67,57 @@ class VideoWidget(QVideoWidget):
 
         self.setAttribute(Qt.WA_OpaquePaintEvent)
 
-    ___ keyPressEvent(self, event):
-        if event.key() == Qt.Key_Escape and self.isFullScreen
-            self.setFullScreen(False)
+    ___ keyPressEvent  event):
+        __ event.key() == Qt.Key_Escape and self.isFullScreen
+            self.setFullScreen F..
             event.accept()
-        elif event.key() == Qt.Key_Enter and event.modifiers() & Qt.Key_Alt:
-            self.setFullScreen(not self.isFullScreen())
+        ____ event.key() == Qt.Key_Enter and event.modifiers() & Qt.Key_Alt:
+            self.setFullScreen(no. self.isFullScreen())
             event.accept()
-        else:
+        ____
             super(VideoWidget, self).keyPressEvent(event)
 
-    ___ mouseDoubleClickEvent(self, event):
-        self.setFullScreen(not self.isFullScreen())
+    ___ mouseDoubleClickEvent  event):
+        self.setFullScreen(no. self.isFullScreen())
         event.accept()
 
 
-class PlaylistModel(QAbstractItemModel):
+c_ PlaylistModel(QAbstractItemModel):
 
     Title, ColumnCount _ range(2)
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(PlaylistModel, self).__init__(parent)
 
-        self.m_playlist _ None
+        self.m_playlist _ N..
 
-    ___ rowCount(self, parent_QModelIndex()):
-        return self.m_playlist.mediaCount() if self.m_playlist is not None and not parent.isValid() else 0
+    ___ rowCount  parent_QModelIndex()):
+        r_ self.m_playlist.mediaCount() __ self.m_playlist __ no. N.. and no. parent.isValid() else 0
 
-    ___ columnCount(self, parent_QModelIndex()):
-        return self.ColumnCount if not parent.isValid() else 0
+    ___ columnCount  parent_QModelIndex()):
+        r_ self.ColumnCount __ no. parent.isValid() else 0
 
-    ___ index(self, row, column, parent_QModelIndex()):
-        return self.createIndex(row, column) if self.m_playlist is not None and not parent.isValid() and row >_ 0 and row < self.m_playlist.mediaCount() and column >_ 0 and column < self.ColumnCount else QModelIndex()
+    ___ index  row, column, parent_QModelIndex()):
+        r_ self.createIndex(row, column) __ self.m_playlist __ no. N.. and no. parent.isValid() and row >_ 0 and row < self.m_playlist.mediaCount() and column >_ 0 and column < self.ColumnCount else QModelIndex()
 
-    ___ parent(self, child):
-        return QModelIndex()
+    ___ parent  child):
+        r_ QModelIndex()
 
-    ___ data(self, index, role_Qt.DisplayRole):
-        if index.isValid() and role == Qt.DisplayRole:
-            if index.column() == self.Title:
+    ___ data  index, role_Qt.DisplayRole):
+        __ index.isValid() and role == Qt.DisplayRole:
+            __ index.column() == self.Title:
                 location _ self.m_playlist.media(index.row()).canonicalUrl()
-                return QFileInfo(location.path()).fileName()
+                r_ QFileInfo(location.path()).fileName()
 
-            return self.m_data[index]
+            r_ self.m_data[index]
 
-        return None
+        r_ N..
 
     ___ playlist(self):
-        return self.m_playlist
+        r_ self.m_playlist
 
-    ___ setPlaylist(self, playlist):
-        if self.m_playlist is not None:
+    ___ setPlaylist  playlist):
+        __ self.m_playlist __ no. N..:
             self.m_playlist.mediaAboutToBeInserted.disconnect(
                     self.beginInsertItems)
             self.m_playlist.mediaInserted.disconnect(self.endInsertItems)
@@ -129,7 +129,7 @@ class PlaylistModel(QAbstractItemModel):
         self.beginResetModel()
         self.m_playlist _ playlist
 
-        if self.m_playlist is not None:
+        __ self.m_playlist __ no. N..:
             self.m_playlist.mediaAboutToBeInserted.c..(
                     self.beginInsertItems)
             self.m_playlist.mediaInserted.c..(self.endInsertItems)
@@ -140,24 +140,24 @@ class PlaylistModel(QAbstractItemModel):
 
         self.endResetModel()
 
-    ___ beginInsertItems(self, start, end):
+    ___ beginInsertItems  start, end):
         self.beginInsertRows(QModelIndex(), start, end)
 
     ___ endInsertItems(self):
         self.endInsertRows()
 
-    ___ beginRemoveItems(self, start, end):
+    ___ beginRemoveItems  start, end):
         self.beginRemoveRows(QModelIndex(), start, end)
 
     ___ endRemoveItems(self):
         self.endRemoveRows()
 
-    ___ changeItems(self, start, end):
+    ___ changeItems  start, end):
         self.dataChanged.emit(self.index(start, 0),
                 self.index(end, self.ColumnCount))
 
 
-class PlayerControls(QWidget):
+c_ PlayerControls(QWidget):
 
     play _ pyqtSignal()
     pause _ pyqtSignal()
@@ -168,7 +168,7 @@ class PlayerControls(QWidget):
     changeMuting _ pyqtSignal(bool)
     changeRate _ pyqtSignal(float)
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(PlayerControls, self).__init__(parent)
 
         self.playerState _ QMediaPlayer.StoppedState
@@ -179,7 +179,7 @@ class PlayerControls(QWidget):
 
         self.stopButton _ QToolButton(c___self.stop)
         self.stopButton.setIcon(self.style().standardIcon(QStyle.SP_MediaStop))
-        self.stopButton.setEnabled(False)
+        self.stopButton.setEnabled F..
 
         self.nextButton _ QToolButton(c___self.next)
         self.nextButton.setIcon(
@@ -215,59 +215,59 @@ class PlayerControls(QWidget):
         self.setLayout(layout)
 
     ___ state(self):
-        return self.playerState
+        r_ self.playerState
 
-    ___ setState(self,state):
-        if state !_ self.playerState:
+    ___ setState state):
+        __ state !_ self.playerState:
             self.playerState _ state
 
-            if state == QMediaPlayer.StoppedState:
-                self.stopButton.setEnabled(False)
+            __ state == QMediaPlayer.StoppedState:
+                self.stopButton.setEnabled F..
                 self.playButton.setIcon(
                         self.style().standardIcon(QStyle.SP_MediaPlay))
-            elif state == QMediaPlayer.PlayingState:
+            ____ state == QMediaPlayer.PlayingState:
                 self.stopButton.setEnabled(True)
                 self.playButton.setIcon(
                         self.style().standardIcon(QStyle.SP_MediaPause))
-            elif state == QMediaPlayer.PausedState:
+            ____ state == QMediaPlayer.PausedState:
                 self.stopButton.setEnabled(True)
                 self.playButton.setIcon(
                         self.style().standardIcon(QStyle.SP_MediaPlay))
 
     ___ volume(self):
-        return self.volumeSlider.value()
+        r_ self.volumeSlider.value()
 
-    ___ setVolume(self, volume):
+    ___ setVolume  volume):
         self.volumeSlider.setValue(volume)
 
     ___ isMuted(self):
-        return self.playerMuted
+        r_ self.playerMuted
 
-    ___ setMuted(self, muted):
-        if muted !_ self.playerMuted:
+    ___ setMuted  muted):
+        __ muted !_ self.playerMuted:
             self.playerMuted _ muted
 
             self.muteButton.setIcon(
                     self.style().standardIcon(
-                            QStyle.SP_MediaVolumeMuted if muted else QStyle.SP_MediaVolume))
+                            QStyle.SP_MediaVolumeMuted __ muted else QStyle.SP_MediaVolume))
 
     ___ playClicked(self):
-        if self.playerState in (QMediaPlayer.StoppedState, QMediaPlayer.PausedState):
+        __ self.playerState in (QMediaPlayer.StoppedState, QMediaPlayer.PausedState):
             self.play.emit()
-        elif self.playerState == QMediaPlayer.PlayingState:
+        ____ self.playerState == QMediaPlayer.PlayingState:
             self.pause.emit()
 
     ___ muteClicked(self):
-        self.changeMuting.emit(not self.playerMuted)
+        self.changeMuting.emit(no. self.playerMuted)
 
     ___ playbackRate(self):
-        return self.rateBox.itemData(self.rateBox.currentIndex())
+        r_ self.rateBox.itemData(self.rateBox.currentIndex())
 
-    ___ setPlaybackRate(self, rate):
+    ___ setPlaybackRate  rate):
         for i in range(self.rateBox.count()):
-            if qFuzzyCompare(rate, self.rateBox.itemData(i)):
+            __ qFuzzyCompare(rate, self.rateBox.itemData(i)):
                 self.rateBox.setCurrentIndex(i)
-                return
+                r_
 
         self.rateBox.addItem("%dx" % rate, rate)
         self.rateBox.setCurrentIndex(self.rateBox.count() - 1)
@@ -276,25 +276,25 @@ class PlayerControls(QWidget):
         self.changeRate.emit(self.playbackRate())
 
 
-class FrameProcessor(QObject):
+c_ FrameProcessor(QObject):
 
     histogramReady _ pyqtSignal(list)
 
     @pyqtSlot(QVideoFrame, int)
-    ___ processFrame(self, frame, levels):
+    ___ processFrame  frame, levels):
         histogram _ [0.0] * levels
 
-        if levels and frame.map(QAbstractVideoBuffer.ReadOnly):
+        __ levels and frame.map(QAbstractVideoBuffer.ReadOnly):
             pixelFormat _ frame.pixelFormat()
 
-            if pixelFormat == QVideoFrame.Format_YUV420P or pixelFormat == QVideoFrame.Format_NV12:
+            __ pixelFormat == QVideoFrame.Format_YUV420P or pixelFormat == QVideoFrame.Format_NV12:
                 # Process YUV data.
                 bits _ frame.bits()
                 for idx in range(frame.height() * frame.width()):
                     histogram[(bits[idx] * levels) >> 8] +_ 1.0
-            else:
+            ____
                 imageFormat _ QVideoFrame.imageFormatFromPixelFormat(pixelFormat)
-                if imageFormat !_ QImage.Format_Invalid:
+                __ imageFormat !_ QImage.Format_Invalid:
                     # Process RGB data.
                     image _ QImage(frame.bits(), frame.width(), frame.height(), imageFormat)
 
@@ -306,11 +306,11 @@ class FrameProcessor(QObject):
             # Find the maximum value.
             maxValue _ 0.0
             for value in histogram:
-                if value > maxValue:
+                __ value > maxValue:
                     maxValue _ value
 
             # Normalise the values between 0 and 1.
-            if maxValue > 0.0:
+            __ maxValue > 0.0:
                 for i in range(len(histogram)):
                     histogram[i] /_ maxValue
 
@@ -319,9 +319,9 @@ class FrameProcessor(QObject):
         self.histogramReady.emit(histogram)
 
 
-class HistogramWidget(QWidget):
+c_ HistogramWidget(QWidget):
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(HistogramWidget, self).__init__(parent)
 
         self.m_levels _ 128
@@ -337,12 +337,12 @@ class HistogramWidget(QWidget):
         self.m_processorThread.quit()
         self.m_processorThread.wait(10000)
 
-    ___ setLevels(self, levels):
+    ___ setLevels  levels):
         self.m_levels _ levels
 
-    ___ processFrame(self, frame):
-        if self.m_isBusy:
-            return
+    ___ processFrame  frame):
+        __ self.m_isBusy:
+            r_
 
         self.m_isBusy _ True
         QMetaObject.invokeMethod(self.m_processor, 'processFrame',
@@ -350,18 +350,18 @@ class HistogramWidget(QWidget):
                 Q_ARG(int, self.m_levels))
 
     @pyqtSlot(list)
-    ___ setHistogram(self, histogram):
+    ___ setHistogram  histogram):
         self.m_isBusy _ False
         self.m_histogram _ list(histogram)
         self.update()
 
-    ___ paintEvent(self, event):
+    ___ paintEvent  event):
         painter _ QPainter(self)
 
-        if len(self.m_histogram) == 0:
+        __ len(self.m_histogram) == 0:
             painter.fillRect(0, 0, self.width(), self.height(),
                     QColor.fromRgb(0, 0, 0))
-            return
+            r_
 
         barWidth _ self.width() / float(len(self.m_histogram))
 
@@ -375,14 +375,14 @@ class HistogramWidget(QWidget):
                     self.height() - h, Qt.black)
 
 
-class Player(QWidget):
+c_ Player(QWidget):
 
     fullScreenChanged _ pyqtSignal(bool)
 
-    ___ __init__(self, playlist, parent_None):
+    ___ __init__  playlist, parent_None):
         super(Player, self).__init__(parent)
 
-        self.colorDialog _ None
+        self.colorDialog _ N..
         self.trackInfo _ ""
         self.statusInfo _ ""
         self.duration _ 0
@@ -430,7 +430,7 @@ class Player(QWidget):
         self.probe.videoFrameProbed.c..(self.histogram.processFrame)
         self.probe.setSource(self.player)
 
-        openButton _ ?PB..("Open", c___self.open)
+        openButton _ ?PB..("Open", c___self.o..)
 
         controls _ PlayerControls()
         controls.setState(self.player.state())
@@ -455,7 +455,7 @@ class Player(QWidget):
         self.fullScreenButton.setCheckable(True)
 
         self.colorButton _ ?PB..("Color Options...")
-        self.colorButton.setEnabled(False)
+        self.colorButton.setEnabled F..
         self.colorButton.c__.c..(self.showColorDialog)
 
         displayLayout _ QHBoxLayout()
@@ -482,55 +482,55 @@ class Player(QWidget):
 
         self.setLayout(layout)
 
-        if not self.player.isAvailable
-            QMessageBox.warning(self, "Service not available",
+        __ no. self.player.isAvailable
+            ?MB...warning  "Service not available",
                     "The QMediaPlayer object does not have a valid service.\n"
                     "Please check the media service plugins are installed.")
 
-            controls.setEnabled(False)
-            self.playlistView.setEnabled(False)
-            openButton.setEnabled(False)
-            self.colorButton.setEnabled(False)
-            self.fullScreenButton.setEnabled(False)
+            controls.setEnabled F..
+            self.playlistView.setEnabled F..
+            openButton.setEnabled F..
+            self.colorButton.setEnabled F..
+            self.fullScreenButton.setEnabled F..
 
         self.metaDataChanged()
 
         self.addToPlaylist(playlist)
 
-    ___ open(self):
-        fileNames, _ _ QFileDialog.getOpenFileNames(self, "Open Files")
+    ___ o..(self):
+        fileNames, _ _ ?FD...getOpenFileNames  "Open Files")
         self.addToPlaylist(fileNames)
 
-    ___ addToPlaylist(self, fileNames):
+    ___ addToPlaylist  fileNames):
         for name in fileNames:
             fileInfo _ QFileInfo(name)
-            if fileInfo.exists
+            __ fileInfo.exists
                 url _ QUrl.fromLocalFile(fileInfo.absoluteFilePath())
-                if fileInfo.suffix().lower() == 'm3u':
+                __ fileInfo.suffix().lower() == 'm3u':
                     self.playlist.load(url)
-                else:
+                ____
                     self.playlist.addMedia(QMediaContent(url))
-            else:
+            ____
                 url _ QUrl(name)
-                if url.isValid
+                __ url.isValid
                     self.playlist.addMedia(QMediaContent(url))
 
-    ___ durationChanged(self, duration):
+    ___ durationChanged  duration):
         duration /_ 1000
 
         self.duration _ duration
         self.slider.setMaximum(duration)
 
-    ___ positionChanged(self, progress):
+    ___ positionChanged  progress):
         progress /_ 1000
 
-        if not self.slider.isSliderDown
+        __ no. self.slider.isSliderDown
             self.slider.setValue(progress)
 
         self.updateDurationInfo(progress)
 
     ___ metaDataChanged(self):
-        if self.player.isMetaDataAvailable
+        __ self.player.isMetaDataAvailable
             self.setTrackInfo("%s - %s" % (
                     self.player.metaData(QMediaMetaData.AlbumArtist),
                     self.player.metaData(QMediaMetaData.Title)))
@@ -538,101 +538,101 @@ class Player(QWidget):
     ___ previousClicked(self):
         # Go to the previous track if we are within the first 5 seconds of
         # playback.  Otherwise, seek to the beginning.
-        if self.player.position() <_ 5000:
+        __ self.player.position() <_ 5000:
             self.playlist.previous()
-        else:
+        ____
             self.player.setPosition(0)
 
-    ___ jump(self, index):
-        if index.isValid
+    ___ jump  index):
+        __ index.isValid
             self.playlist.setCurrentIndex(index.row())
             self.player.play()
 
-    ___ playlistPositionChanged(self, position):
+    ___ playlistPositionChanged  position):
         self.playlistView.setCurrentIndex(
                 self.playlistModel.index(position, 0))
 
-    ___ seek(self, seconds):
+    ___ seek  seconds):
         self.player.setPosition(seconds * 1000)
 
-    ___ statusChanged(self, status):
+    ___ statusChanged  status):
         self.handleCursor(status)
 
-        if status == QMediaPlayer.LoadingMedia:
+        __ status == QMediaPlayer.LoadingMedia:
             self.setStatusInfo("Loading...")
-        elif status == QMediaPlayer.StalledMedia:
+        ____ status == QMediaPlayer.StalledMedia:
             self.setStatusInfo("Media Stalled")
-        elif status == QMediaPlayer.EndOfMedia:
+        ____ status == QMediaPlayer.EndOfMedia:
             ?A...alert(self)
-        elif status == QMediaPlayer.InvalidMedia:
+        ____ status == QMediaPlayer.InvalidMedia:
             self.displayErrorMessage()
-        else:
+        ____
             self.setStatusInfo("")
 
-    ___ handleCursor(self, status):
-        if status in (QMediaPlayer.LoadingMedia, QMediaPlayer.BufferingMedia, QMediaPlayer.StalledMedia):
+    ___ handleCursor  status):
+        __ status in (QMediaPlayer.LoadingMedia, QMediaPlayer.BufferingMedia, QMediaPlayer.StalledMedia):
             self.setCursor(Qt.BusyCursor)
-        else:
+        ____
             self.unsetCursor()
 
-    ___ bufferingProgress(self, progress):
+    ___ bufferingProgress  progress):
         self.setStatusInfo("Buffering %d%" % progress)
 
-    ___ videoAvailableChanged(self, available):
-        if available:
+    ___ videoAvailableChanged  available):
+        __ available:
             self.fullScreenButton.c__.c..(
                     self.videoWidget.setFullScreen)
             self.videoWidget.fullScreenChanged.c..(
                     self.fullScreenButton.setChecked)
 
-            if self.fullScreenButton.isChecked
+            __ self.fullScreenButton.isChecked
                 self.videoWidget.setFullScreen(True)
-        else:
+        ____
             self.fullScreenButton.c__.disconnect(
                     self.videoWidget.setFullScreen)
             self.videoWidget.fullScreenChanged.disconnect(
                     self.fullScreenButton.setChecked)
 
-            self.videoWidget.setFullScreen(False)
+            self.videoWidget.setFullScreen F..
 
         self.colorButton.setEnabled(available)
 
-    ___ setTrackInfo(self, info):
+    ___ setTrackInfo  info):
         self.trackInfo _ info
 
-        if self.statusInfo !_ "":
+        __ self.statusInfo !_ "":
             self.setWindowTitle("%s | %s" % (self.trackInfo, self.statusInfo))
-        else:
+        ____
             self.setWindowTitle(self.trackInfo)
 
-    ___ setStatusInfo(self, info):
+    ___ setStatusInfo  info):
         self.statusInfo _ info
 
-        if self.statusInfo !_ "":
+        __ self.statusInfo !_ "":
             self.setWindowTitle("%s | %s" % (self.trackInfo, self.statusInfo))
-        else:
+        ____
             self.setWindowTitle(self.trackInfo)
 
     ___ displayErrorMessage(self):
         self.setStatusInfo(self.player.errorString())
 
-    ___ updateDurationInfo(self, currentInfo):
+    ___ updateDurationInfo  currentInfo):
         duration _ self.duration
-        if currentInfo or duration:
+        __ currentInfo or duration:
             currentTime _ QTime((currentInfo/3600)%60, (currentInfo/60)%60,
                     currentInfo%60, (currentInfo*1000)%1000)
             totalTime _ QTime((duration/3600)%60, (duration/60)%60,
                     duration%60, (duration*1000)%1000);
 
-            format _ 'hh:mm:ss' if duration > 3600 else 'mm:ss'
+            format _ 'hh:mm:ss' __ duration > 3600 else 'mm:ss'
             tStr _ currentTime.toString(format) + " / " + totalTime.toString(format)
-        else:
+        ____
             tStr _ ""
 
         self.labelDuration.sT..(tStr)
 
     ___ showColorDialog(self):
-        if self.colorDialog is None:
+        __ self.colorDialog __ N..:
             brightnessSlider _ QSlider(Qt.Horizontal)
             brightnessSlider.setRange(-100, 100)
             brightnessSlider.setValue(self.videoWidget.brightness())
@@ -679,7 +679,7 @@ class Player(QWidget):
         self.colorDialog.s..
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

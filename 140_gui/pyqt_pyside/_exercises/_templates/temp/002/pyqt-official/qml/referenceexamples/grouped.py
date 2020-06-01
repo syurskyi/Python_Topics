@@ -46,7 +46,7 @@ ______ sys
 
 ____ ?.QtCore ______ (pyqtProperty, Q_CLASSINFO, QCoreApplication, QObject,
         QUrl)
-____ ?.QtGui ______ QColor
+____ ?.?G.. ______ QColor
 ____ ?.QtQml ______ (qmlRegisterType, QQmlComponent, QQmlEngine,
         QQmlListProperty)
 
@@ -87,8 +87,8 @@ BirthdayParty {
 '''
 
 
-class ShoeDescription(QObject):
-    ___ __init__(self, parent_None):
+c_ ShoeDescription(QObject):
+    ___ __init__  parent_None):
         super(ShoeDescription, self).__init__(parent)
 
         self._size _ 0
@@ -98,39 +98,39 @@ class ShoeDescription(QObject):
 
     @pyqtProperty(int)
     ___ size(self):
-        return self._size
+        r_ self._size
 
     @size.setter
-    ___ size(self, size):
+    ___ size  size):
         self._size _ size
 
     @pyqtProperty(QColor)
     ___ color(self):
-        return self._color
+        r_ self._color
 
     @color.setter
-    ___ color(self, color):
+    ___ color  color):
         self._color _ color
 
     @pyqtProperty(str)
     ___ brand(self):
-        return self._brand
+        r_ self._brand
 
     @brand.setter
-    ___ brand(self, brand):
+    ___ brand  brand):
         self._brand _ brand
 
     @pyqtProperty(float)
     ___ price(self):
-        return self._price
+        r_ self._price
 
     @price.setter
-    ___ price(self, price):
+    ___ price  price):
         self._price _ price
 
 
-class Person(QObject):
-    ___ __init__(self, parent_None):
+c_ Person(QObject):
+    ___ __init__  parent_None):
         super(Person, self).__init__(parent)
 
         self._name _ ''
@@ -138,45 +138,45 @@ class Person(QObject):
 
     @pyqtProperty(str)
     ___ name(self):
-        return self._name
+        r_ self._name
 
     @name.setter
-    ___ name(self, name):
+    ___ name  name):
         self._name _ name
 
     @pyqtProperty(ShoeDescription)
     ___ shoe(self):
-        return self._shoe
+        r_ self._shoe
 
 
-class Boy(Person):
+c_ Boy(Person):
     pass
 
 
-class Girl(Person):
+c_ Girl(Person):
     pass
 
 
-class BirthdayParty(QObject):
+c_ BirthdayParty(QObject):
     Q_CLASSINFO('DefaultProperty', 'guests')
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(BirthdayParty, self).__init__(parent)
 
-        self._host _ None
+        self._host _ N..
         self._guests _ []
 
     @pyqtProperty(Person)
     ___ host(self):
-        return self._host
+        r_ self._host
 
     @host.setter
-    ___ host(self, host):
+    ___ host  host):
         self._host _ host
 
     @pyqtProperty(QQmlListProperty)
     ___ guests(self):
-        return QQmlListProperty(Person, self, self._guests)
+        r_ QQmlListProperty(Person, self, self._guests)
 
 
 app _ QCoreApplication(sys.argv)
@@ -194,24 +194,24 @@ component.setData(QML, QUrl())
 
 party _ component.create()
 
-if party is not None and party.host is not None:
+__ party __ no. N.. and party.host __ no. N..:
     print("\"%s\" is having a birthday!" % party.host.name)
 
-    if isinstance(party.host, Boy):
+    __ isinstance(party.host, Boy):
         print("He is inviting:")
-    else:
+    ____
         print("She is inviting:")
 
-    bestShoe _ None
+    bestShoe _ N..
 
     for guest in party.guests:
         print("    \"%s\"" % guest.name)
 
-        if bestShoe is None or bestShoe.shoe.price < guest.shoe.price:
+        __ bestShoe __ N.. or bestShoe.shoe.price < guest.shoe.price:
             bestShoe _ guest
 
-    if bestShoe is not None:
+    __ bestShoe __ no. N..:
         print("\"%s\" is wearing the best shoes!" % bestShoe.name)
-else:
+____
     for e in component.errors
         print("Error:", e.toString());

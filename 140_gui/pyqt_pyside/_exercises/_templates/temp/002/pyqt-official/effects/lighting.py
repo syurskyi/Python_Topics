@@ -45,19 +45,19 @@
 ______ math
 
 ____ ?.QtCore ______ QPointF, Qt, QTimer
-____ ?.QtGui ______ (QBrush, QColor, QLinearGradient, QPen, QPainter,
+____ ?.?G.. ______ (QBrush, QColor, QLinearGradient, QPen, QPainter,
         QPixmap, QRadialGradient)
 ____ ?.?W.. ______ (?A.., QFrame, QGraphicsDropShadowEffect,
         QGraphicsEllipseItem, QGraphicsRectItem, QGraphicsScene, QGraphicsView)
 
 
-class Lighting(QGraphicsView):
-    ___ __init__(self, parent_None):
+c_ Lighting(QGraphicsView):
+    ___ __init__  parent_None):
         super(Lighting, self).__init__(parent)
 
         self.angle _ 0.0
         self.m_scene _ QGraphicsScene()
-        self.m_lightSource _ None
+        self.m_lightSource _ N..
         self.m_items _ []
 
         self.setScene(self.m_scene)
@@ -99,9 +99,9 @@ class Lighting(QGraphicsView):
 
         for i in range(-2, 3):
             for j in range(-2, 3):
-                if (i + j) & 1:
+                __ (i + j) & 1:
                     item _ QGraphicsEllipseItem(0, 0, 50, 50)
-                else:
+                ____
                     item _ QGraphicsRectItem(0, 0, 50, 50)
 
                 item.setPen(QPen(Qt.black, 1))
@@ -135,7 +135,7 @@ class Lighting(QGraphicsView):
         self.m_scene.update()
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

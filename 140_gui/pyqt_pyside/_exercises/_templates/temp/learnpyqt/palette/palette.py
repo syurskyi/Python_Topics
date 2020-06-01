@@ -1,9 +1,9 @@
 ______ sys
-if 'PyQt5' in sys.modules:
+__ 'PyQt5' in sys.modules:
     ____ ? ______ QtCore, ?W..
-    ____ ?.QtCore ______ Qt, pyqtSignal as Signal
+    ____ ?.QtCore ______ Qt, pyqtSignal __ Signal
 
-else:
+____
     ____ PySide2 ______ QtCore, ?W..
     ____ PySide2.QtCore ______ Signal
 
@@ -18,27 +18,27 @@ PALETTES _ {
 }
 
 
-class _PaletteButton(?W...?PB..):
-    ___ __init__(self, color):
+c_ _PaletteButton(?W...?PB..):
+    ___ __init__  color):
         super().__init__()
         self.setFixedSize(QtCore.QSize(24, 24))
         self.color _ color
         self.setStyleSheet("background-color: %s;" % color)
 
-class _PaletteBase(?W...QWidget):
+c_ _PaletteBase(?W...QWidget):
 
     selected _ Signal(object)
 
-    ___ _emit_color(self, color):
+    ___ _emit_color  color):
         self.selected.emit(color)
 
 
-class _PaletteLinearBase(_PaletteBase):
-    ___ __init__(self, colors, *args, **kwargs):
+c_ _PaletteLinearBase(_PaletteBase):
+    ___ __init__  colors, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        if isinstance(colors, str):
-            if colors in PALETTES:
+        __ isinstance(colors, str):
+            __ colors in PALETTES:
                 colors _ PALETTES[colors]
 
         palette _ self.layoutvh()
@@ -53,21 +53,21 @@ class _PaletteLinearBase(_PaletteBase):
         self.setLayout(palette)
 
 
-class PaletteHorizontal(_PaletteLinearBase):
+c_ PaletteHorizontal(_PaletteLinearBase):
     layoutvh _ ?W...QHBoxLayout
 
 
-class PaletteVertical(_PaletteLinearBase):
+c_ PaletteVertical(_PaletteLinearBase):
     layoutvh _ ?W...QVBoxLayout
 
 
-class PaletteGrid(_PaletteBase):
+c_ PaletteGrid(_PaletteBase):
 
-    ___ __init__(self, colors, n_columns_5, *args, **kwargs):
+    ___ __init__  colors, n_columns_5, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        if isinstance(colors, str):
-            if colors in PALETTES:
+        __ isinstance(colors, str):
+            __ colors in PALETTES:
                 colors _ PALETTES[colors]
 
         palette _ ?W...QGridLayout()
@@ -80,7 +80,7 @@ class PaletteGrid(_PaletteBase):
             )
             palette.addWidget(b, row, col)
             col +_ 1
-            if col == n_columns:
+            __ col == n_columns:
                 col _ 0
                 row +_ 1
 

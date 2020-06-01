@@ -67,22 +67,22 @@ parser.process(app)
 try:
     rootPath _ parser.positionalArguments().pop(0)
 except IndexError:
-    rootPath _ None
+    rootPath _ N..
 
 model _ QFileSystemModel()
 model.setRootPath('')
-if parser.isSet(dontUseCustomDirectoryIconsOption):
+__ parser.isSet(dontUseCustomDirectoryIconsOption):
     model.iconProvider().setOptions(
             QFileIconProvider.DontUseCustomDirectoryIcons)
 tree _ QTreeView()
 tree.setModel(model)
-if rootPath is not None:
+__ rootPath __ no. N..:
     rootIndex _ model.index(QDir.cleanPath(rootPath))
-    if rootIndex.isValid
+    __ rootIndex.isValid
         tree.setRootIndex(rootIndex)
 
 # Demonstrating look and feel features.
-tree.setAnimated(False)
+tree.setAnimated F..
 tree.setIndentation(20)
 tree.setSortingEnabled(True)
 

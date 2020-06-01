@@ -11,7 +11,7 @@ server _ Session()
 
 # GUI:
 app _ ?
-text_area _ QPlainTextEdit()
+text_area _ ?PTE..
 text_area.setFocusPolicy(Qt.NoFocus)
 message _ QLineEdit()
 layout _ QVBoxLayout()
@@ -26,7 +26,7 @@ append_message _ run_in_main_thread(text_area.appendPlainText)
 ___ fetch_new_messages
     while True:
         response _ server.get(chat_url).text
-        if response:
+        __ response:
             append_message(response)
         sleep(.5)
 

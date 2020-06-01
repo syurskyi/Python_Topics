@@ -57,10 +57,10 @@ ___ createItem(minimum, preferred, maximum, name):
     w.setMaximumSize(maximum)
     w.setSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
 
-    return w
+    r_ w
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 
@@ -84,7 +84,7 @@ if __name__ == '__main__':
     l _ QGraphicsAnchorLayout()
     l.setSpacing(0)
 
-    w _ QGraphicsWidget(None, Qt.Window)
+    w _ QGraphicsWidget(N.., Qt.Window)
     w.setPos(20, 20)
     w.setLayout(l)
 

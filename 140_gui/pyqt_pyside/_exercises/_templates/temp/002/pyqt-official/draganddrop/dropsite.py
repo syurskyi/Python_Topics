@@ -44,17 +44,17 @@
 
 
 ____ ?.QtCore ______ pyqtSignal, QMimeData, Qt
-____ ?.QtGui ______ QPalette, QPixmap
+____ ?.?G.. ______ QPalette, QPixmap
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., QDialogButtonBox,
         QFrame, QLabel, ?PB.., QTableWidget, QTableWidgetItem,
         QVBoxLayout, QWidget)
 
 
-class DropArea(QLabel):
+c_ DropArea(QLabel):
 
     changed _ pyqtSignal(QMimeData)
 
-    ___ __init__(self, parent _ None):
+    ___ __init__  parent _ N..):
         super(DropArea, self).__init__(parent)
 
         self.setMinimumSize(200, 200)
@@ -64,44 +64,44 @@ class DropArea(QLabel):
         self.setAutoFillBackground(True)
         self.clear()
 
-    ___ dragEnterEvent(self, event):
+    ___ dragEnterEvent  event):
         self.sT..("<drop content>")
         self.setBackgroundRole(QPalette.Highlight)
         event.acceptProposedAction()
         self.changed.emit(event.mimeData())
 
-    ___ dragMoveEvent(self, event):
+    ___ dragMoveEvent  event):
         event.acceptProposedAction()
 
-    ___ dropEvent(self, event):
+    ___ dropEvent  event):
         mimeData _ event.mimeData()
-        if mimeData.hasImage
+        __ mimeData.hasImage
             self.setPixmap(QPixmap(mimeData.imageData()))
-        elif mimeData.hasHtml
+        ____ mimeData.hasHtml
             self.sT..(mimeData.html())
             self.setTextFormat(Qt.RichText)
-        elif mimeData.hasText
+        ____ mimeData.hasText
             self.sT..(mimeData.text())
             self.setTextFormat(Qt.PlainText)
-        elif mimeData.hasUrls
+        ____ mimeData.hasUrls
             self.sT..("\n".join([url.path() for url in mimeData.urls()]))
-        else:
+        ____
             self.sT..("Cannot display data")
 
         self.setBackgroundRole(QPalette.Dark)
         event.acceptProposedAction()
 
-    ___ dragLeaveEvent(self, event):
+    ___ dragLeaveEvent  event):
         self.clear()
         event.accept()
 
     ___ clear(self):
         self.sT..("<drop content>")
         self.setBackgroundRole(QPalette.Dark)
-        self.changed.emit(None)
+        self.changed.emit(N..)
 
 
-class DropSiteWindow(QWidget):
+c_ DropSiteWindow(QWidget):
 
     ___ __init__(self):
         super(DropSiteWindow, self).__init__()
@@ -141,24 +141,24 @@ class DropSiteWindow(QWidget):
         self.setWindowTitle("Drop Site")
         self.setMinimumSize(350, 500)
 
-    ___ updateFormatsTable(self, mimeData_None):
+    ___ updateFormatsTable  mimeData_None):
         self.formatsTable.setRowCount(0)
 
-        if mimeData is None:
-            return
+        __ mimeData __ N..:
+            r_
 
         for format in mimeData.formats
             formatItem _ QTableWidgetItem(format)
             formatItem.setFlags(Qt.ItemIsEnabled)
             formatItem.setTextAlignment(Qt.AlignTop | Qt.AlignLeft)
 
-            if format == 'text/plain':
+            __ format == 'text/plain':
                 text _ mimeData.text().strip()
-            elif format == 'text/html':
+            ____ format == 'text/html':
                 text _ mimeData.html().strip()
-            elif format == 'text/uri-list':
+            ____ format == 'text/uri-list':
                 text _ " ".join([url.toString() for url in mimeData.urls()])
-            else:
+            ____
                 text _ " ".join(["%02X" % ord(datum) for datum in mimeData.data(format)])
 
             row _ self.formatsTable.rowCount()
@@ -169,7 +169,7 @@ class DropSiteWindow(QWidget):
         self.formatsTable.resizeColumnToContents(0)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

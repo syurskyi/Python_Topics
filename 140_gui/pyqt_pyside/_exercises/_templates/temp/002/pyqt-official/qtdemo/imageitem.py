@@ -41,14 +41,14 @@
 
 
 ____ ?.QtCore ______ QPoint
-____ ?.QtGui ______ QColor, QImage, QLinearGradient, QPainter
+____ ?.?G.. ______ QColor, QImage, QLinearGradient, QPainter
 
 ____ colors ______ Colors
 ____ demoitem ______ DemoItem
 
 
-class ImageItem(DemoItem):
-    ___ __init__(self, image, maxWidth, maxHeight, parent_None, adjustSize_False, scale_1.0):
+c_ ImageItem(DemoItem):
+    ___ __init__  image, maxWidth, maxHeight, parent_None, adjustSize_False, scale_1.0):
         super(ImageItem, self).__init__(parent)
 
         self.image _ image
@@ -57,10 +57,10 @@ class ImageItem(DemoItem):
         self.adjustSize _ adjustSize
         self.scale _ scale
 
-    ___ createImage(self, transform):
+    ___ createImage  transform):
         original _ QImage(self.image)
-        if original.isNull
-            return original
+        __ original.isNull
+            r_ original
 
         size _ transform.map(QPoint(self.maxWidth, self.maxHeight))
         w _ size.x()
@@ -68,8 +68,8 @@ class ImageItem(DemoItem):
 
         # Optimization: if image is smaller than maximum allowed size, just
         # return the loaded image.
-        if original.size().height() <_ h and original.size().width() <_ w and not self.adjustSize and self.scale == 1:
-            return original
+        __ original.size().height() <_ h and original.size().width() <_ w and no. self.adjustSize and self.scale == 1:
+            r_ original
 
         # Calculate what the size of the final image will be.
         w _ min(w, float(original.size().width()) * self.scale)
@@ -77,7 +77,7 @@ class ImageItem(DemoItem):
 
         adjustx _ 1.0
         adjusty _ 1.0
-        if self.adjustSize:
+        __ self.adjustSize:
             adjustx _ min(transform.m11(), transform.m22())
             adjusty _ max(transform.m22(), adjustx)
             w *_ adjustx
@@ -89,17 +89,17 @@ class ImageItem(DemoItem):
         image.fill(QColor(0, 0, 0, 0).rgba())
         painter _ QPainter(image)
         painter.setRenderHints(QPainter.Antialiasing | QPainter.SmoothPixmapTransform)
-        if self.adjustSize:
+        __ self.adjustSize:
             painter.scale(adjustx, adjusty)
-        if self.scale !_ 1:
+        __ self.scale !_ 1:
             painter.scale(self.scale, self.scale)
         painter.drawImage(0, 0, original)
 
-        if not self.adjustSize:
+        __ no. self.adjustSize:
             # Blur out edges.
             blur _ 30
 
-            if h < original.height
+            __ h < original.height
                 brush1 _ QLinearGradient(0, h - blur, 0, h)
                 brush1.setSpread(QLinearGradient.PadSpread)
                 brush1.setColorAt(0.0, QColor(0, 0, 0, 0))
@@ -107,7 +107,7 @@ class ImageItem(DemoItem):
                 painter.fillRect(0, int(h) - blur, original.width(), int(h),
                         brush1)
 
-            if w < original.width
+            __ w < original.width
                 brush2 _ QLinearGradient(w - blur, 0, w, 0)
                 brush2.setSpread(QLinearGradient.PadSpread)
                 brush2.setColorAt(0.0, QColor(0, 0, 0, 0))
@@ -115,4 +115,4 @@ class ImageItem(DemoItem):
                 painter.fillRect(int(w) - blur, 0, int(w), original.height(),
                         brush2)
 
-        return image
+        r_ image

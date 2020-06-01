@@ -48,18 +48,18 @@ ______ random
 
 ____ ?.QtCore ______ QByteArray, QDataStream, QIODevice
 ____ ?.?W.. ______ (?A.., QDialog, QLabel, QHBoxLayout,
-        QMessageBox, ?PB.., QVBoxLayout)
+        ?MB.., ?PB.., QVBoxLayout)
 ____ ?.QtNetwork ______ QLocalServer
 
 
-class Server(QDialog):
-    ___ __init__(self, parent_None):
+c_ Server(QDialog):
+    ___ __init__  parent_None):
         super(Server, self).__init__(parent)
 
         statusLabel _ QLabel()
         statusLabel.setWordWrap(True)
         quitButton _ ?PB..("Quit")
-        quitButton.setAutoDefault(False)
+        quitButton.setAutoDefault F..
 
         self.fortunes _ (
             "You've been leading a dog's life. Stay off the furniture.",
@@ -72,11 +72,11 @@ class Server(QDialog):
         )
 
         self.server _ QLocalServer()
-        if not self.server.listen('fortune'):
-            QMessageBox.critical(self, "Fortune Server",
+        __ no. self.server.listen('fortune'):
+            ?MB...critical  "Fortune Server",
                     "Unable to start the server: %s." % self.server.errorString())
             self.close()
-            return
+            r_
 
         statusLabel.sT..("The server is running.\nRun the Fortune Client "
                 "example now.")
@@ -107,12 +107,12 @@ class Server(QDialog):
 
         clientConnection _ self.server.nextPendingConnection()
         clientConnection.disconnected.c..(clientConnection.deleteLater)
-        clientConnection.write(block)
+        clientConnection.w..(block)
         clientConnection.flush()
         clientConnection.disconnectFromServer()
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

@@ -1,9 +1,9 @@
-____ ? ______ ?W.. as qtw
-____ ? ______ QtGui as qtg
+____ ? ______ ?W.. __ qtw
+____ ? ______ ?G.. __ qtg
 ______ sys
 
 
-class MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.QMainWindow):
 
     ___ __init__(self):
         super().__init__()
@@ -11,7 +11,7 @@ class MainWindow(qtw.QMainWindow):
         # Your code goes here
         self.resize(800, 600)
         main _ qtw.QWidget()
-        self.setCentralWidget(main)
+        self.sCW..(main)
         main.setLayout(qtw.QVBoxLayout())
         oglw _ GlWidget()
         main.layout().addWidget(oglw)
@@ -36,7 +36,7 @@ class MainWindow(qtw.QMainWindow):
         self.s..
 
 
-class GlWidget(qtw.QOpenGLWidget):
+c_ GlWidget(qtw.QOpenGLWidget):
     """A widget to display our OpenGL drawing"""
 
     ___ initializeGL(self):
@@ -153,8 +153,8 @@ class GlWidget(qtw.QOpenGLWidget):
         self.view_matrix.rotate(*self.rotation)
         self.update()
 
-    ___ qcolor_to_glvec(self, qcolor):
-        return qtg.QVector3D(
+    ___ qcolor_to_glvec  qcolor):
+        r_ qtg.QVector3D(
             qcolor.red() / 255,
             qcolor.green() / 255,
             qcolor.blue() / 255
@@ -182,7 +182,7 @@ class GlWidget(qtw.QOpenGLWidget):
         self.view_matrix.scale(.9, .9, .9)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtw.?A..(sys.argv)
     mw _ MainWindow()
     app.e..

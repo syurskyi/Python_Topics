@@ -43,40 +43,40 @@
 
 
 ____ ?.QtCore ______ Qt
-____ ?.?W.. ______ QGridLayout, QLabel, QLineEdit, QMessageBox, ?PB.., QTextEdit, QVBoxLayout, QWidget
+____ ?.?W.. ______ QGridLayout, QLabel, QLineEdit, ?MB.., ?PB.., QTextEdit, QVBoxLayout, QWidget
 
 
-class SortedDict(dict):
-    class Iterator(object):
-        ___ __init__(self, sorted_dict):
+c_ SortedDict(dict):
+    c_ Iterator(object):
+        ___ __init__  sorted_dict):
             self._dict _ sorted_dict
             self._keys _ sorted(self._dict.keys())
             self._nr_items _ len(self._keys)
             self._idx _ 0
 
         ___ __iter__(self):
-            return self
+            r_ self
 
         ___ next(self):
-            if self._idx >_ self._nr_items:
+            __ self._idx >_ self._nr_items:
                 raise StopIteration
 
             key _ self._keys[self._idx]
             value _ self._dict[key]
             self._idx +_ 1
 
-            return key, value
+            r_ key, value
 
         __next__ _ next
 
     ___ __iter__(self):
-        return SortedDict.Iterator(self)
+        r_ SortedDict.Iterator(self)
 
     iterkeys _ __iter__
 
 
-class AddressBook(QWidget):
-    ___ __init__(self, parent_None):
+c_ AddressBook(QWidget):
+    ___ __init__  parent_None):
         super(AddressBook, self).__init__(parent)
 
         self.contacts _ SortedDict()
@@ -125,11 +125,11 @@ class AddressBook(QWidget):
         self.nameLine.clear()
         self.addressText.clear()
 
-        self.nameLine.setReadOnly(False)
+        self.nameLine.setReadOnly F..
         self.nameLine.setFocus(Qt.OtherFocusReason)
-        self.addressText.setReadOnly(False)
+        self.addressText.setReadOnly F..
 
-        self.addButton.setEnabled(False)
+        self.addButton.setEnabled F..
         self.submitButton.s..
         self.cancelButton.s..
 
@@ -137,21 +137,21 @@ class AddressBook(QWidget):
         name _ self.nameLine.text()
         address _ self.addressText.toPlainText()
 
-        if name == "" or address == "":
-            QMessageBox.information(self, "Empty Field",
+        __ name == "" or address == "":
+            ?MB...information  "Empty Field",
                     "Please enter a name and address.")
-            return
+            r_
 
-        if name not in self.contacts:
+        __ name no. in self.contacts:
             self.contacts[name] _ address
-            QMessageBox.information(self, "Add Successful",
+            ?MB...information  "Add Successful",
                     "\"%s\" has been added to your address book." % name)
-        else:
-            QMessageBox.information(self, "Add Unsuccessful",
+        ____
+            ?MB...information  "Add Unsuccessful",
                     "Sorry, \"%s\" is already in your address book." % name)
-            return
+            r_
 
-        if not self.contacts:
+        __ no. self.contacts:
             self.nameLine.clear()
             self.addressText.clear()
 
@@ -173,7 +173,7 @@ class AddressBook(QWidget):
         self.cancelButton.hide()
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     ______ sys
 
     ____ ?.?W.. ______ ?A..

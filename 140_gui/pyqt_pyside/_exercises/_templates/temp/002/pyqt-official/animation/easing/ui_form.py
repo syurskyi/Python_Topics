@@ -7,10 +7,10 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, QtGui, ?W..
+____ ? ______ QtCore, ?G.., ?W..
 
-class Ui_Form(object):
-    ___ setupUi(self, Form):
+c_ Ui_Form(object):
+    ___ setupUi  Form):
         Form.setObjectName("Form")
         Form.resize(545, 471)
         self.gridLayout _ ?W...QGridLayout(Form)
@@ -26,7 +26,7 @@ class Ui_Form(object):
         self.easingCurvePicker.setMovement(?W...QListView.Static)
         self.easingCurvePicker.setProperty("isWrapping", False)
         self.easingCurvePicker.setViewMode(?W...QListView.IconMode)
-        self.easingCurvePicker.setSelectionRectVisible(False)
+        self.easingCurvePicker.setSelectionRectVisible F..
         self.easingCurvePicker.setObjectName("easingCurvePicker")
         self.gridLayout.addWidget(self.easingCurvePicker, 0, 0, 1, 2)
         self.verticalLayout _ ?W...QVBoxLayout()
@@ -71,7 +71,7 @@ class Ui_Form(object):
         self.label.setObjectName("label")
         self.formLayout.setWidget(0, ?W...QFormLayout.LabelRole, self.label)
         self.periodSpinBox _ ?W...QDoubleSpinBox(self.groupBox)
-        self.periodSpinBox.setEnabled(False)
+        self.periodSpinBox.setEnabled F..
         sizePolicy _ ?W...QSizePolicy(?W...QSizePolicy.Minimum, ?W...QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -84,7 +84,7 @@ class Ui_Form(object):
         self.periodSpinBox.setObjectName("periodSpinBox")
         self.formLayout.setWidget(0, ?W...QFormLayout.FieldRole, self.periodSpinBox)
         self.amplitudeSpinBox _ ?W...QDoubleSpinBox(self.groupBox)
-        self.amplitudeSpinBox.setEnabled(False)
+        self.amplitudeSpinBox.setEnabled F..
         self.amplitudeSpinBox.setMinimumSize(QtCore.QSize(0, 30))
         self.amplitudeSpinBox.setMinimum(-1.0)
         self.amplitudeSpinBox.setSingleStep(0.1)
@@ -96,7 +96,7 @@ class Ui_Form(object):
         self.label_3.setObjectName("label_3")
         self.formLayout.setWidget(4, ?W...QFormLayout.LabelRole, self.label_3)
         self.overshootSpinBox _ ?W...QDoubleSpinBox(self.groupBox)
-        self.overshootSpinBox.setEnabled(False)
+        self.overshootSpinBox.setEnabled F..
         self.overshootSpinBox.setMinimumSize(QtCore.QSize(0, 30))
         self.overshootSpinBox.setMinimum(-1.0)
         self.overshootSpinBox.setSingleStep(0.1)
@@ -123,7 +123,7 @@ class Ui_Form(object):
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
-    ___ retranslateUi(self, Form):
+    ___ retranslateUi  Form):
         _translate _ QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Easing curves"))
         self.groupBox_2.setTitle(_translate("Form", "Path type"))

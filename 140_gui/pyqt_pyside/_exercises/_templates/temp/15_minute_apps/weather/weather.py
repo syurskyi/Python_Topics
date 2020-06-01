@@ -1,4 +1,4 @@
-____ ?.QtGui ______ *
+____ ?.?G.. ______ *
 ____ ?.?W.. ______ *
 ____ ?.QtCore ______ *
 
@@ -22,10 +22,10 @@ application.
 
 ___ from_ts_to_time_of_day(ts):
     dt _ datetime.fromtimestamp(ts)
-    return dt.strftime("%I%p").lstrip("0")
+    r_ dt.strftime("%I%p").lstrip("0")
 
 
-class WorkerSignals(QObject):
+c_ WorkerSignals(QObject):
     '''
     Defines the signals available from a running worker thread.
     '''
@@ -33,14 +33,14 @@ class WorkerSignals(QObject):
     error _ pyqtSignal(str)
     result _ pyqtSignal(dict, dict)
 
-class WeatherWorker(QRunnable):
+c_ WeatherWorker(QRunnable):
     '''
     Worker thread for weather updates.
     '''
     signals _ WorkerSignals()
     is_interrupted _ False
 
-    ___ __init__(self, location):
+    ___ __init__  location):
         super(WeatherWorker, self).__init__()
         self.location _ location
 
@@ -57,7 +57,7 @@ class WeatherWorker(QRunnable):
             weather _ json.loads(r.text)
 
             # Check if we had a failure (the forecast will fail in the same way).
-            if weather['cod'] !_ 200:
+            __ weather['cod'] !_ 200:
                 raise Exception(weather['message'])
 
             url _ 'http://api.openweathermap.org/data/2.5/forecast?%s&units=metric' % urlencode(params)
@@ -66,16 +66,16 @@ class WeatherWorker(QRunnable):
 
             self.signals.result.emit(weather, forecast)
 
-        except Exception as e:
+        except Exception __ e:
             self.signals.error.emit(str(e))
 
         self.signals.finished.emit()
 
 
 
-class MainWindow(QMainWindow, Ui_MainWindow):
+c_ MainWindow(QMainWindow, Ui_MainWindow):
 
-    ___ __init__(self, *args, **kwargs):
+    ___ __init__  *args, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
         self.setupUi(self)
 
@@ -86,8 +86,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.s..
 
 
-    ___ alert(self, message):
-        alert _ QMessageBox.warning(self, "Warning", message)
+    ___ alert  message):
+        alert _ ?MB...warning  "Warning", message)
 
     ___ update_weather(self):
         worker _ WeatherWorker(self.lineEdit.text())
@@ -95,7 +95,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         worker.signals.error.c..(self.alert)
         self.threadpool.start(worker)
 
-    ___ weather_result(self, weather, forecasts):
+    ___ weather_result  weather, forecasts):
         self.latitudeLabel.sT..("%.2f °" % weather['coord']['lat'])
         self.longitudeLabel.sT..("%.2f °" % weather['coord']['lon'])
 
@@ -116,11 +116,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.set_weather_icon(self.weatherIcon, weather['weather'])
 
         for n, forecast in enumerate(forecasts['list'][:5], 1):
-            getattr(self, 'forecastTime%d' % n).sT..(from_ts_to_time_of_day(forecast['dt']))
-            self.set_weather_icon(getattr(self, 'forecastIcon%d' % n), forecast['weather'])
-            getattr(self, 'forecastTemp%d' % n).sT..("%.1f °C" % forecast['main']['temp'])
+            getattr  'forecastTime%d' % n).sT..(from_ts_to_time_of_day(forecast['dt']))
+            self.set_weather_icon(getattr  'forecastIcon%d' % n), forecast['weather'])
+            getattr  'forecastTemp%d' % n).sT..("%.1f °C" % forecast['main']['temp'])
 
-    ___ set_weather_icon(self, label, weather):
+    ___ set_weather_icon  label, weather):
         label.setPixmap(
             QPixmap(os.path.join('images', "%s.png" %
                                  weather[0]['icon']
@@ -130,7 +130,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         )
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     app _ ?
     window _ MainWindow()

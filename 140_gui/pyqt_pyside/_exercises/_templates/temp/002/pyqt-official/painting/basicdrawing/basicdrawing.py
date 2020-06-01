@@ -43,7 +43,7 @@
 
 
 ____ ?.QtCore ______ QPoint, QRect, QSize, Qt
-____ ?.QtGui ______ (QBrush, QConicalGradient, QLinearGradient, QPainter,
+____ ?.?G.. ______ (QBrush, QConicalGradient, QLinearGradient, QPainter,
         QPainterPath, QPalette, QPen, QPixmap, QPolygon, QRadialGradient)
 ____ ?.?W.. ______ (?A.., QCheckBox, QComboBox, QGridLayout,
         QLabel, QSpinBox, QWidget)
@@ -51,7 +51,7 @@ ____ ?.?W.. ______ (?A.., QCheckBox, QComboBox, QGridLayout,
 ______ basicdrawing_rc
 
 
-class RenderArea(QWidget):
+c_ RenderArea(QWidget):
     points _ QPolygon([
         QPoint(10, 80),
         QPoint(20, 10),
@@ -62,7 +62,7 @@ class RenderArea(QWidget):
     Line, Points, Polyline, Polygon, Rect, RoundedRect, Ellipse, Arc, Chord, \
             Pie, Path, Text, Pixmap _ range(13)
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(RenderArea, self).__init__(parent)
 
         self.pen _ QPen()
@@ -78,32 +78,32 @@ class RenderArea(QWidget):
         self.setAutoFillBackground(True)
 
     ___ minimumSizeHint(self):
-        return QSize(100, 100)
+        r_ QSize(100, 100)
 
     ___ sizeHint(self):
-        return QSize(400, 200)
+        r_ QSize(400, 200)
 
-    ___ setShape(self, shape):
+    ___ setShape  shape):
         self.shape _ shape
         self.update()
 
-    ___ setPen(self, pen):
+    ___ setPen  pen):
         self.pen _ pen
         self.update()
 
-    ___ setBrush(self, brush):
+    ___ setBrush  brush):
         self.brush _ brush
         self.update()
 
-    ___ setAntialiased(self, antialiased):
+    ___ setAntialiased  antialiased):
         self.antialiased _ antialiased
         self.update()
 
-    ___ setTransformed(self, transformed):
+    ___ setTransformed  transformed):
         self.transformed _ transformed
         self.update()
 
-    ___ paintEvent(self, event):
+    ___ paintEvent  event):
         rect _ QRect(10, 20, 80, 60)
 
         path _ QPainterPath()
@@ -117,45 +117,45 @@ class RenderArea(QWidget):
         painter _ QPainter(self)
         painter.setPen(self.pen)
         painter.setBrush(self.brush)
-        if self.antialiased:
+        __ self.antialiased:
             painter.setRenderHint(QPainter.Antialiasing)
 
         for x in range(0, self.width(), 100):
             for y in range(0, self.height(), 100):
                 painter.save()
                 painter.translate(x, y)
-                if self.transformed:
+                __ self.transformed:
                     painter.translate(50, 50)
                     painter.rotate(60.0)
                     painter.scale(0.6, 0.9)
                     painter.translate(-50, -50)
 
-                if self.shape == RenderArea.Line:
+                __ self.shape == RenderArea.Line:
                     painter.drawLine(rect.bottomLeft(), rect.topRight())
-                elif self.shape == RenderArea.Points:
+                ____ self.shape == RenderArea.Points:
                     painter.drawPoints(RenderArea.points)
-                elif self.shape == RenderArea.Polyline:
+                ____ self.shape == RenderArea.Polyline:
                     painter.drawPolyline(RenderArea.points)
-                elif self.shape == RenderArea.Polygon:
+                ____ self.shape == RenderArea.Polygon:
                     painter.drawPolygon(RenderArea.points)
-                elif self.shape == RenderArea.Rect:
+                ____ self.shape == RenderArea.Rect:
                     painter.drawRect(rect)
-                elif self.shape == RenderArea.RoundedRect:
+                ____ self.shape == RenderArea.RoundedRect:
                     painter.drawRoundedRect(rect, 25, 25, Qt.RelativeSize)
-                elif self.shape == RenderArea.Ellipse:
+                ____ self.shape == RenderArea.Ellipse:
                     painter.drawEllipse(rect)
-                elif self.shape == RenderArea.Arc:
+                ____ self.shape == RenderArea.Arc:
                     painter.drawArc(rect, startAngle, arcLength)
-                elif self.shape == RenderArea.Chord:
+                ____ self.shape == RenderArea.Chord:
                     painter.drawChord(rect, startAngle, arcLength)
-                elif self.shape == RenderArea.Pie:
+                ____ self.shape == RenderArea.Pie:
                     painter.drawPie(rect, startAngle, arcLength)
-                elif self.shape == RenderArea.Path:
+                ____ self.shape == RenderArea.Path:
                     painter.drawPath(path)
-                elif self.shape == RenderArea.Text:
+                ____ self.shape == RenderArea.Text:
                     painter.drawText(rect, Qt.AlignCenter,
                             "PyQt by\nRiverbank Computing")
-                elif self.shape == RenderArea.Pixmap:
+                ____ self.shape == RenderArea.Pixmap:
                     painter.drawPixmap(10, 10, self.pixmap)
 
                 painter.restore()
@@ -167,7 +167,7 @@ class RenderArea(QWidget):
 
 IdRole _ Qt.UserRole
 
-class Window(QWidget):
+c_ Window(QWidget):
     ___ __init__(self):
         super(Window, self).__init__()
 
@@ -315,31 +315,31 @@ class Window(QWidget):
         style _ Qt.BrushStyle(self.brushStyleComboBox.itemData(
                 self.brushStyleComboBox.currentIndex(), IdRole))
 
-        if style == Qt.LinearGradientPattern:
+        __ style == Qt.LinearGradientPattern:
             linearGradient _ QLinearGradient(0, 0, 100, 100)
             linearGradient.setColorAt(0.0, Qt.white)
             linearGradient.setColorAt(0.2, Qt.green)
             linearGradient.setColorAt(1.0, Qt.black)
             self.renderArea.setBrush(QBrush(linearGradient))
-        elif style == Qt.RadialGradientPattern:
+        ____ style == Qt.RadialGradientPattern:
             radialGradient _ QRadialGradient(50, 50, 50, 70, 70)
             radialGradient.setColorAt(0.0, Qt.white)
             radialGradient.setColorAt(0.2, Qt.green)
             radialGradient.setColorAt(1.0, Qt.black)
             self.renderArea.setBrush(QBrush(radialGradient))
-        elif style == Qt.ConicalGradientPattern:
+        ____ style == Qt.ConicalGradientPattern:
             conicalGradient _ QConicalGradient(50, 50, 150)
             conicalGradient.setColorAt(0.0, Qt.white)
             conicalGradient.setColorAt(0.2, Qt.green)
             conicalGradient.setColorAt(1.0, Qt.black)
             self.renderArea.setBrush(QBrush(conicalGradient))
-        elif style == Qt.TexturePattern:
+        ____ style == Qt.TexturePattern:
             self.renderArea.setBrush(QBrush(QPixmap(':/images/brick.png')))
-        else:
+        ____
             self.renderArea.setBrush(QBrush(Qt.green, style))
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

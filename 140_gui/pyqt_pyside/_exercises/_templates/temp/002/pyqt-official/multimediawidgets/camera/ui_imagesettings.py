@@ -7,10 +7,10 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, QtGui, ?W..
+____ ? ______ QtCore, ?G.., ?W..
 
-class Ui_ImageSettingsUi(object):
-    ___ setupUi(self, ImageSettingsUi):
+c_ Ui_ImageSettingsUi(object):
+    ___ setupUi  ImageSettingsUi):
         ImageSettingsUi.setObjectName("ImageSettingsUi")
         ImageSettingsUi.resize(332, 270)
         self.gridLayout _ ?W...QGridLayout(ImageSettingsUi)
@@ -53,7 +53,7 @@ class Ui_ImageSettingsUi(object):
         self.buttonBox.rejected.c..(ImageSettingsUi.reject)
         QtCore.QMetaObject.connectSlotsByName(ImageSettingsUi)
 
-    ___ retranslateUi(self, ImageSettingsUi):
+    ___ retranslateUi  ImageSettingsUi):
         _translate _ QtCore.QCoreApplication.translate
         ImageSettingsUi.setWindowTitle(_translate("ImageSettingsUi", "Dialog"))
         self.groupBox_2.setTitle(_translate("ImageSettingsUi", "Image"))

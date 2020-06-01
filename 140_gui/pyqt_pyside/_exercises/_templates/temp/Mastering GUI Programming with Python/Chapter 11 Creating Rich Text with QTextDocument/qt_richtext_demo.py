@@ -1,17 +1,17 @@
 ______ sys
-____ ? ______ ?W.. as qtw
-____ ? ______ QtGui as qtg
-____ ? ______ QtCore as qtc
+____ ? ______ ?W.. __ qtw
+____ ? ______ ?G.. __ qtg
+____ ? ______ QtCore __ qtc
 
 
-class MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.QMainWindow):
 
     ___ __init__(self):
         """MainWindow constructor."""
         super().__init__()
         # Main UI code goes here
         main _ qtw.QTextBrowser(minimumWidth_800, minimumHeight_600)
-        self.setCentralWidget(main)
+        self.sCW..(main)
 
         # Must come before the HTML is inserted
         main.document().setDefaultStyleSheet(
@@ -22,8 +22,8 @@ class MainWindow(qtw.QMainWindow):
 
         # TextBrowser background is a widget style, not a document style
         main.setStyleSheet('background-color: #EEF;')
-        with open('fight_fighter2.html', 'r') as fh:
-            main.insertHtml(fh.read())
+        w__ o..('fight_fighter2.html', 'r') __ fh:
+            main.insertHtml(fh.r..
 
         main.setOpenExternalLinks(True)
 
@@ -31,7 +31,7 @@ class MainWindow(qtw.QMainWindow):
         self.s..
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtw.?A..(sys.argv)
     mw _ MainWindow()
     sys.exit(app.exec())

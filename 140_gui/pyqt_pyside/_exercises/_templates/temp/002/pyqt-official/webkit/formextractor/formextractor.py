@@ -44,16 +44,16 @@
 
 
 ____ ?.QtCore ______ pyqtSlot, QUrl
-____ ?.QtGui ______ QKeySequence
-____ ?.?W.. ______ (QAction, ?A.., QMainWindow, QMessageBox,
+____ ?.?G.. ______ ?KS..
+____ ?.?W.. ______ (?A.., ?A.., QMainWindow, ?MB..,
         QWidget)
 
 ______ formextractor_rc
 ____ ui_formextractor ______ Ui_Form
 
 
-class FormExtractor(QWidget):
-    ___ __init__(self, parent_None):
+c_ FormExtractor(QWidget):
+    ___ __init__  parent_None):
         super(FormExtractor, self).__init__(parent)
 
         self.ui _ Ui_Form()
@@ -78,16 +78,16 @@ class FormExtractor(QWidget):
         self.ui.firstNameEdit.sT..(firstName.evaluateJavaScript('this.value'))
         self.ui.lastNameEdit.sT..(lastName.evaluateJavaScript('this.value'))
 
-        if maleGender.evaluateJavaScript('this.checked'):
+        __ maleGender.evaluateJavaScript('this.checked'):
             self.ui.genderEdit.sT..(
                     maleGender.evaluateJavaScript('this.value'))
-        elif femaleGender.evaluateJavaScript('this.checked'):
+        ____ femaleGender.evaluateJavaScript('this.checked'):
             self.ui.genderEdit.sT..(
                     femaleGender.evaluateJavaScript('this.value'))
 
-        if updates.evaluateJavaScript('this.checked'):
+        __ updates.evaluateJavaScript('this.checked'):
             self.ui.updatesEdit.sT..("Yes")
-        else:
+        ____
             self.ui.updatesEdit.sT..("No")
 
     ___ populateJavaScriptWindowObject(self):
@@ -95,42 +95,42 @@ class FormExtractor(QWidget):
                 'formExtractor', self)
 
 
-class MainWindow(QMainWindow):
+c_ MainWindow ?MW..
     ___ __init__(self):
         super(MainWindow, self).__init__()
 
         self.createActions()
         self.createMenus()
         self.centralWidget _ FormExtractor(self)
-        self.setCentralWidget(self.centralWidget)
+        self.sCW..(self.centralWidget)
     
     ___ createActions(self):
-        self.exitAct _ QAction("E&xit", self, statusTip_"Exit the application",
+        self.exitAct _ ?A..("E&xit", self, statusTip_"Exit the application",
                 shortcut_QKeySequence.Quit, triggered_self.close)
 
-        self.aboutAct _ QAction("&About", self,
+        self.aboutAct _ ?A..("&About", self,
                 statusTip_"Show the application's About box",
                 triggered_self.about)
 
-        self.aboutQtAct _ QAction("About &Qt", self,
+        self.aboutQtAct _ ?A..("About &Qt", self,
                 statusTip_"Show the Qt library's About box",
                 triggered_QApplication.instance().aboutQt)
 
     ___ createMenus(self):
-        fileMenu _ self.menuBar().addMenu("&File")
-        fileMenu.addAction(self.exitAct)
-        self.menuBar().addSeparator()
-        helpMenu _ self.menuBar().addMenu("&Help")
-        helpMenu.addAction(self.aboutAct)
-        helpMenu.addAction(self.aboutQtAct)
+        fileMenu _ self.mB.. .aM..("&File")
+        fileMenu.aA..(self.exitAct)
+        self.mB.. .addSeparator()
+        helpMenu _ self.mB.. .aM..("&Help")
+        helpMenu.aA..(self.aboutAct)
+        helpMenu.aA..(self.aboutQtAct)
 
     ___ about(self):
-        QMessageBox.about(self, "About Form Extractor",
+        ?MB...about  "About Form Extractor",
                 "The <b>Form Extractor</b> example demonstrates how to "
                 "extract data from a web form using QtWebKit.")
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

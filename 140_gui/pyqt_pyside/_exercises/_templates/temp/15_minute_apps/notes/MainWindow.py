@@ -6,10 +6,10 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, QtGui, ?W..
+____ ? ______ QtCore, ?G.., ?W..
 
-class Ui_MainWindow(object):
-    ___ setupUi(self, MainWindow):
+c_ Ui_MainWindow(object):
+    ___ setupUi  MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(264, 279)
         MainWindow.setAutoFillBackground(True)
@@ -33,7 +33,7 @@ class Ui_MainWindow(object):
         self.closeButton.setMinimumSize(QtCore.QSize(25, 20))
         self.closeButton.setMaximumSize(QtCore.QSize(25, 20))
         self.closeButton.setBaseSize(QtCore.QSize(2, 0))
-        font _ QtGui.QFont()
+        font _ ?G...QFont()
         font.setPointSize(30)
         font.setBold(True)
         font.setWeight(75)
@@ -49,7 +49,7 @@ class Ui_MainWindow(object):
         self.moreButton _ ?W...?PB..(self.centralWidget)
         self.moreButton.setMinimumSize(QtCore.QSize(25, 25))
         self.moreButton.setMaximumSize(QtCore.QSize(25, 25))
-        font _ QtGui.QFont()
+        font _ ?G...QFont()
         font.setPointSize(30)
         font.setBold(True)
         font.setWeight(75)
@@ -61,7 +61,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout.addWidget(self.moreButton)
         self.verticalLayout.addLayout(self.horizontalLayout)
         self.textEdit _ ?W...QTextEdit(self.centralWidget)
-        font _ QtGui.QFont()
+        font _ ?G...QFont()
         font.setPointSize(18)
         self.textEdit.setFont(font)
         self.textEdit.setFrameShape(?W...QFrame.NoFrame)
@@ -70,12 +70,12 @@ class Ui_MainWindow(object):
         self.textEdit.setObjectName("textEdit")
         self.verticalLayout.addWidget(self.textEdit)
         self.verticalLayout_2.addLayout(self.verticalLayout)
-        MainWindow.setCentralWidget(self.centralWidget)
+        MainWindow.sCW..(self.centralWidget)
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
-    ___ retranslateUi(self, MainWindow):
+    ___ retranslateUi  MainWindow):
         _translate _ QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Failamp"))
         self.closeButton.sT..(_translate("MainWindow", "×"))

@@ -1,11 +1,11 @@
 ______ sys
-____ ? ______ ?W.. as qtw
-____ ? ______ QtGui as qtg
-____ ? ______ QtCore as qtc
+____ ? ______ ?W.. __ qtw
+____ ? ______ ?G.. __ qtg
+____ ? ______ QtCore __ qtc
 
 ______ resources
 
-class StyleOverrides(qtw.QProxyStyle):
+c_ StyleOverrides(qtw.QProxyStyle):
 
     ___ drawItemText(
         self, painter, rect,
@@ -26,20 +26,20 @@ class StyleOverrides(qtw.QProxyStyle):
         """Outline QLineEdits in Green"""
         self.green_pen _ qtg.QPen(qtg.QColor('green'))
         self.green_pen.setWidth(4)
-        if element == qtw.QStyle.PE_FrameLineEdit:
+        __ element == qtw.QStyle.PE_FrameLineEdit:
             painter.setPen(self.green_pen)
             painter.drawRoundedRect(widget.rect(), 10, 10)
-        else:
+        ____
             super().drawPrimitive(element, option, painter, widget)
 
 
-class ColorButton(qtw.?PB..):
+c_ ColorButton(qtw.?PB..):
     """Button with color and backgroundColor properties for animation"""
 
     ___ _color(self):
-        return self.palette().color(qtg.QPalette.ButtonText)
+        r_ self.palette().color(qtg.QPalette.ButtonText)
 
-    ___ _setColor(self, qcolor):
+    ___ _setColor  qcolor):
         palette _ self.palette()
         palette.setColor(qtg.QPalette.ButtonText, qcolor)
         self.setPalette(palette)
@@ -48,16 +48,16 @@ class ColorButton(qtw.?PB..):
 
     @qtc.pyqtProperty(qtg.QColor)
     ___ backgroundColor(self):
-        return self.palette().color(qtg.QPalette.Button)
+        r_ self.palette().color(qtg.QPalette.Button)
 
     @backgroundColor.setter
-    ___ backgroundColor(self, qcolor):
+    ___ backgroundColor  qcolor):
         palette _ self.palette()
         palette.setColor(qtg.QPalette.Button, qcolor)
         self.setPalette(palette)
 
 
-class MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.QMainWindow):
 
     ___ __init__(self):
         """MainWindow constructor.
@@ -71,7 +71,7 @@ class MainWindow(qtw.QMainWindow):
         # Basic Form Definition
         self.setWindowTitle('Fight Fighter Game Lobby')
         cx_form _ qtw.QWidget()
-        self.setCentralWidget(cx_form)
+        self.sCW..(cx_form)
         cx_form.setLayout(qtw.QFormLayout())
 
         heading _ qtw.QLabel("Fight Fighter!")
@@ -98,8 +98,8 @@ class MainWindow(qtw.QMainWindow):
         #self.submit = qtw.QPushButton(
         self.submit _ ColorButton(
             'Connect',
-            c___lambda: qtw.QMessageBox.information(
-                None,
+            c___lambda: qtw.?MB...information(
+                N..,
                 'Connecting',
                 'Prepare for Battle!'
             )
@@ -162,7 +162,7 @@ class MainWindow(qtw.QMainWindow):
 
         # Display a simple raster image
         logo _ qtg.QPixmap('logo.png')
-        if logo.width() > 400:
+        __ logo.width() > 400:
             logo _ logo.scaledToWidth(400, qtc.Qt.SmoothTransformation)
         heading.setPixmap(logo)
 
@@ -368,7 +368,7 @@ class MainWindow(qtw.QMainWindow):
         self.s..
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtw.?A..(sys.argv)
     windows_style _ qtw.QStyleFactory.create('Windows')
     app.setStyle(windows_style)

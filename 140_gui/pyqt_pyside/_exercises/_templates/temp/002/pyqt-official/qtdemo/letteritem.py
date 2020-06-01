@@ -41,21 +41,21 @@
 
 
 ____ ?.QtCore ______ QRect, Qt
-____ ?.QtGui ______ QColor, QImage, QLinearGradient, QPainter
+____ ?.?G.. ______ QColor, QImage, QLinearGradient, QPainter
 
 ____ colors ______ Colors
 ____ demoitem ______ DemoItem
 
 
-class LetterItem(DemoItem):
-    ___ __init__(self, letter, parent_None):
+c_ LetterItem(DemoItem):
+    ___ __init__  letter, parent_None):
         super(LetterItem, self).__init__(parent)
 
         self.letter _ letter
 
         self.useSharedImage(__file__ + letter)
 
-    ___ createImage(self, transform):
+    ___ createImage  transform):
         scaledRect _ transform.mapRect(QRect(0, 0, 25, 25))
         image _ QImage(scaledRect.width(), scaledRect.height(),
                 QImage.Format_ARGB32_Premultiplied)
@@ -65,13 +65,13 @@ class LetterItem(DemoItem):
         painter.setRenderHints(QPainter.TextAntialiasing | QPainter.Antialiasing | QPainter.SmoothPixmapTransform)
         painter.setPen(Qt.NoPen)
 
-        if Colors.useEightBitPalette:
+        __ Colors.useEightBitPalette:
             painter.setBrush(QColor(102, 175, 54))
             painter.drawEllipse(0, 0, 25, 25)
             painter.setFont(Colors.tickerFont())
             painter.setPen(QColor(255, 255, 255))
             painter.drawText(10, 15, self.letter)
-        else:
+        ____
             brush _ QLinearGradient(0, 0, 0, 25)
             brush.setSpread(QLinearGradient.PadSpread)
             brush.setColorAt(0.0, QColor(102, 175, 54, 200))
@@ -82,4 +82,4 @@ class LetterItem(DemoItem):
             painter.setPen(QColor(255, 255, 255, 255))
             painter.drawText(10, 15, self.letter)
 
-        return image
+        r_ image

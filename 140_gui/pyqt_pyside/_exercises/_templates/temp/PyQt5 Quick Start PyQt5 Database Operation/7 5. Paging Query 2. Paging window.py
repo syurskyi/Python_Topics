@@ -3,11 +3,11 @@ ____ ?.QtSql ______ QSqlDatabase, QSqlQuery, QSqlTableModel, QSqlQueryModel
 ____ ?.QtCore ______ *
 ____ ?.?W.. ______ *
 
-class DataGrid(QWidget):
-    ___ __init__(self, parent_None):
+c_ DataGrid(QWidget):
+    ___ __init__  parent_None):
         super(DataGrid, self).__init__(parent)
         # Database Connection
-        self.db _ None
+        self.db _ N..
         # Layout Manager
         self.layout _ QVBoxLayout()
         # Query Model
@@ -52,10 +52,10 @@ class DataGrid(QWidget):
         self.setWindowTitle("DataGrid")
         self.resize(600, 300)
 
-    ___ closeEvent(self, event):
+    ___ closeEvent  event):
         self.db.close()
 
-if __name__ == "__main__":
+__ __name__ == "__main__":
     app _ ?A..(sys.argv)
     window _ DataGrid()
     window.initUI()

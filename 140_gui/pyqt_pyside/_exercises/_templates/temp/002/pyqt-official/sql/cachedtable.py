@@ -44,14 +44,14 @@
 
 ____ ?.QtCore ______ Qt
 ____ ?.?W.. ______ (?A.., QDialog, QDialogButtonBox,
-        QHBoxLayout, QMessageBox, ?PB.., QTableView)
+        QHBoxLayout, ?MB.., ?PB.., QTableView)
 ____ ?.QtSql ______ QSqlTableModel
 
 ______ connection
 
 
-class TableEditor(QDialog):
-    ___ __init__(self, tableName, parent_None):
+c_ TableEditor(QDialog):
+    ___ __init__  tableName, parent_None):
         super(TableEditor, self).__init__(parent)
 
         self.model _ QSqlTableModel(self)
@@ -89,20 +89,20 @@ class TableEditor(QDialog):
 
     ___ submit(self):
         self.model.database().transaction()
-        if self.model.submitAll
+        __ self.model.submitAll
             self.model.database().commit()
-        else:
+        ____
             self.model.database().rollback()
-            QMessageBox.warning(self, "Cached Table",
+            ?MB...warning  "Cached Table",
                         "The database reported an error: %s" % self.model.lastError().text())
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 
     app _ ?A..(sys.argv)
-    if not connection.createConnection
+    __ no. connection.createConnection
         sys.exit(1)
 
     editor _ TableEditor('person')

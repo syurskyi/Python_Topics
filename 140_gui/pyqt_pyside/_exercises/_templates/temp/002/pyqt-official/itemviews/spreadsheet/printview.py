@@ -41,13 +41,13 @@ ____ ?.QtCore ______ Qt
 ____ ?.?W.. ______ QTableView
 
 
-class PrintView(QTableView):
+c_ PrintView(QTableView):
     ___ __init__(self):
         super(PrintView, self).__init__()
 
         self.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
         self.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
 
-    ___ print_(self, printer):
+    ___ print_  printer):
         self.resize(printer.width(), printer.height())
         self.render(printer)

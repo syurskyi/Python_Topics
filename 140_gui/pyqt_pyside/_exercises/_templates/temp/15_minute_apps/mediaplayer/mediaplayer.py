@@ -1,4 +1,4 @@
-____ ?.QtGui ______ *
+____ ?.?G.. ______ *
 ____ ?.?W.. ______ *
 ____ ?.QtCore ______ *
 ____ ?.QtMultimedia ______ *
@@ -13,32 +13,32 @@ ___ hhmmss(ms):
     h, r _ divmod(ms, 36000)
     m, r _ divmod(r, 60000)
     s, _ _ divmod(r, 1000)
-    return ("%d:%02d:%02d" % (h,m,s)) if h else ("%d:%02d" % (m,s))
+    r_ ("%d:%02d:%02d" % (h,m,s)) __ h else ("%d:%02d" % (m,s))
 
-class ViewerWindow(QMainWindow):
+c_ ViewerWindow ?MW..
     state _ pyqtSignal(bool)
 
-    ___ closeEvent(self, e):
+    ___ closeEvent  e):
         # Emit the window state, to update the viewer toggle button.
-        self.state.emit(False)
+        self.state.emit F..
 
 
-class PlaylistModel(QAbstractListModel):
-    ___ __init__(self, playlist, *args, **kwargs):
+c_ PlaylistModel(QAbstractListModel):
+    ___ __init__  playlist, *args, **kwargs):
         super(PlaylistModel, self).__init__(*args, **kwargs)
         self.playlist _ playlist
 
-    ___ data(self, index, role):
-        if role == Qt.DisplayRole:
+    ___ data  index, role):
+        __ role == Qt.DisplayRole:
             media _ self.playlist.media(index.row())
-            return media.canonicalUrl().fileName()
+            r_ media.canonicalUrl().fileName()
 
-    ___ rowCount(self, index):
-        return self.playlist.mediaCount()
+    ___ rowCount  index):
+        r_ self.playlist.mediaCount()
 
 
-class MainWindow(QMainWindow, Ui_MainWindow):
-    ___ __init__(self, *args, **kwargs):
+c_ MainWindow(QMainWindow, Ui_MainWindow):
+    ___ __init__  *args, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
         self.setupUi(self)
 
@@ -57,7 +57,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.viewer.setMinimumSize(QSize(480,360))
 
         videoWidget _ QVideoWidget()
-        self.viewer.setCentralWidget(videoWidget)
+        self.viewer.sCW..(videoWidget)
         self.player.setVideoOutput(videoWidget)
 
         # Connect control buttons/slides for media player.
@@ -82,17 +82,17 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.player.positionChanged.c..(self.update_position)
         self.timeSlider.valueChanged.c..(self.player.setPosition)
 
-        self.open_file_action.triggered.c..(self.open_file)
+        self.open_file_action.t__.c..(self.open_file)
 
         self.setAcceptDrops(True)
 
         self.s..
 
-    ___ dragEnterEvent(self, e):
-        if e.mimeData().hasUrls
+    ___ dragEnterEvent  e):
+        __ e.mimeData().hasUrls
             e.acceptProposedAction()
 
-    ___ dropEvent(self, e):
+    ___ dropEvent  e):
         for url in e.mimeData().urls
             self.playlist.addMedia(
                 QMediaContent(url)
@@ -101,15 +101,15 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.model.layoutChanged.emit()
 
         # If not playing, seeking to first of newly added + play.
-        if self.player.state() !_ QMediaPlayer.PlayingState:
+        __ self.player.state() !_ QMediaPlayer.PlayingState:
             i _ self.playlist.mediaCount() - len(e.mimeData().urls())
             self.playlist.setCurrentIndex(i)
             self.player.play()
 
     ___ open_file(self):
-        path, _ _ QFileDialog.getOpenFileName(self, "Open file", "", "mp3 Audio (*.mp3);mp4 Video (*.mp4);Movie files (*.mov);All files (*.*)")
+        path, _ _ ?FD...gOFN..  "Open file", "", "mp3 Audio (*.mp3);mp4 Video (*.mp4);Movie files (*.mov);All files (*.*)")
 
-        if path:
+        __ path:
             self.playlist.addMedia(
                 QMediaContent(
                     QUrl.fromLocalFile(path)
@@ -118,49 +118,49 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         self.model.layoutChanged.emit()
 
-    ___ update_duration(self, duration):
+    ___ update_duration  duration):
         print("!", duration)
         print("?", self.player.duration())
         
         self.timeSlider.setMaximum(duration)
 
-        if duration >_ 0:
+        __ duration >_ 0:
             self.totalTimeLabel.sT..(hhmmss(duration))
 
-    ___ update_position(self, position):
-        if position >_ 0:
+    ___ update_position  position):
+        __ position >_ 0:
             self.currentTimeLabel.sT..(hhmmss(position))
 
         # Disable the events to prevent updating triggering a setPosition event (can cause stuttering).
         self.timeSlider.blockSignals(True)
         self.timeSlider.setValue(position)
-        self.timeSlider.blockSignals(False)
+        self.timeSlider.blockSignals F..
 
-    ___ playlist_selection_changed(self, ix):
+    ___ playlist_selection_changed  ix):
         # We receive a QItemSelection from selectionChanged.
         i _ ix.indexes()[0].row()
         self.playlist.setCurrentIndex(i)
 
-    ___ playlist_position_changed(self, i):
-        if i > -1:
+    ___ playlist_position_changed  i):
+        __ i > -1:
             ix _ self.model.index(i)
             self.playlistView.setCurrentIndex(ix)
 
-    ___ toggle_viewer(self, state):
-        if state:
+    ___ toggle_viewer  state):
+        __ state:
             self.viewer.s..
-        else:
+        ____
             self.viewer.hide()
 
-    ___ erroralert(self, *args):
+    ___ erroralert  *args):
         print(args)
 
 
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ ?
-    app.setApplicationName("Failamp")
+    app.sAN..("Failamp")
     app.setStyle("Fusion")
 
     # Fusion dark palette from https://gist.github.com/QuantumCD/6245215.

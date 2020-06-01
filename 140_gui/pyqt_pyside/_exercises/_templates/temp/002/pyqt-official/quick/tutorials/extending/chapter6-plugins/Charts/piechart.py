@@ -45,22 +45,22 @@ ____ ?.QtQuick ______ QQuickItem
 ____ pieslice ______ PieSlice
 
 
-class PieChart(QQuickItem):
+c_ PieChart(QQuickItem):
 
     @pyqtProperty(QQmlListProperty)
     ___ slices(self):
-        return QQmlListProperty(PieSlice, self,
+        r_ QQmlListProperty(PieSlice, self,
                 append_lambda pie_ch, pie_sl: pie_sl.setParentItem(pie_ch))
 
     @pyqtProperty(str)
     ___ name(self):
-        return self._name
+        r_ self._name
 
     @name.setter
-    ___ name(self, name):
+    ___ name  name):
         self._name _ name
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(PieChart, self).__init__(parent)
 
         self._name _ ''

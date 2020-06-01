@@ -1,18 +1,18 @@
 ______ sys
-if 'PyQt5' in sys.modules:
-    ____ ? ______ QtCore, QtGui, ?W..
+__ 'PyQt5' in sys.modules:
+    ____ ? ______ QtCore, ?G.., ?W..
     ____ ?.QtCore ______ Qt
-    ____ ?.QtCore ______ pyqtSignal as Signal
+    ____ ?.QtCore ______ pyqtSignal __ Signal
 
-else:
-    ____ PySide2 ______ QtCore, QtGui, ?W..
+____
+    ____ PySide2 ______ QtCore, ?G.., ?W..
     ____ PySide2.QtCore ______ Qt
     ____ PySide2.QtCore ______ Signal
 
 
-class EqualizerBar(?W...QWidget):
+c_ EqualizerBar(?W...QWidget):
 
-    ___ __init__(self, bars, steps, *args, **kwargs):
+    ___ __init__  bars, steps, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
         self.setSizePolicy(
@@ -20,28 +20,28 @@ class EqualizerBar(?W...QWidget):
             ?W...QSizePolicy.MinimumExpanding
         )
 
-        if isinstance(steps, list):
+        __ isinstance(steps, list):
             # list of colours.
             self.n_steps _ len(steps)
             self.steps _ steps
 
-        elif isinstance(steps, int):
+        ____ isinstance(steps, int):
             # int number of bars, defaults to red.
             self.n_steps _ steps
             self.steps _ ['red'] * steps
 
-        else:
+        ____
             raise TypeError('steps must be a list or int')
 
         # Bar appearance.
         self.n_bars _ bars
         self._x_solid_percent _ 0.8
         self._y_solid_percent _ 0.8
-        self._background_color _ QtGui.QColor('black')
+        self._background_color _ ?G...QColor('black')
         self._padding _ 25  # n-pixel gap around edge.
 
         # Bar behaviour
-        self._timer _ None
+        self._timer _ N..
         self.setDecayFrequencyMs(100)
         self._decay _ 10
 
@@ -53,10 +53,10 @@ class EqualizerBar(?W...QWidget):
         self._values _ [0.0] * bars
 
 
-    ___ paintEvent(self, e):
-        painter _ QtGui.QPainter(self)
+    ___ paintEvent  e):
+        painter _ ?G...QPainter(self)
 
-        brush _ QtGui.QBrush()
+        brush _ ?G...QBrush()
         brush.setColor(self._background_color)
         brush.setStyle(Qt.SolidPattern)
         rect _ QtCore.QRect(0, 0, painter.device().width(), painter.device().height())
@@ -82,7 +82,7 @@ class EqualizerBar(?W...QWidget):
             n_steps_to_draw _ int(pc * self.n_steps)
 
             for n in range(n_steps_to_draw):
-                brush.setColor(QtGui.QColor(self.steps[n]))
+                brush.setColor(?G...QColor(self.steps[n]))
                 rect _ QtCore.QRect(
                     self._padding + (step_x * b) + bar_width_space,
                     self._padding + d_height - ((1 + n) * step_y) + bar_height_space,
@@ -94,19 +94,19 @@ class EqualizerBar(?W...QWidget):
         painter.end()
 
     ___ sizeHint(self):
-        return QtCore.QSize(20, 120)
+        r_ QtCore.QSize(20, 120)
 
     ___ _trigger_refresh(self):
         self.update()
 
-    ___ setDecay(self, f):
+    ___ setDecay  f):
         self._decay _ float(f)
 
-    ___ setDecayFrequencyMs(self, ms):
-        if self._timer:
+    ___ setDecayFrequencyMs  ms):
+        __ self._timer:
             self._timer.stop()
 
-        if ms:
+        __ ms:
             self._timer _ QtCore.QTimer()
             self._timer.setInterval(ms)
             self._timer.timeout.c..(self._decay_beat)
@@ -119,38 +119,38 @@ class EqualizerBar(?W...QWidget):
         ]
         self.update()  # Redraw new position.
 
-    ___ setValues(self, v):
+    ___ setValues  v):
         self._values _ v
         self.update()
 
     ___ values(self):
-        return self._values
+        r_ self._values
 
-    ___ setRange(self, vmin, vmax):
+    ___ setRange  vmin, vmax):
         assert float(vmin) < float(vmax)
         self._vmin, self._vmax _ float(vmin), float(vmax)
 
-    ___ setColor(self, color):
+    ___ setColor  color):
         self.steps _ [color] * self._bar.n_steps
         self.update()
 
-    ___ setColors(self, colors):
+    ___ setColors  colors):
         self.n_steps _ len(colors)
         self.steps _ colors
         self.update()
 
 
-    ___ setBarPadding(self, i):
+    ___ setBarPadding  i):
         self._padding _ int(i)
         self.update()
 
 
-    ___ setBarSolidPercent(self, f):
+    ___ setBarSolidPercent  f):
         self._bar_solid_percent _ float(f)
         self.update()
 
 
-    ___ setBackgroundColor(self, color):
-        self._background_color _ QtGui.QColor(color)
+    ___ setBackgroundColor  color):
+        self._background_color _ ?G...QColor(color)
         self.update()
 

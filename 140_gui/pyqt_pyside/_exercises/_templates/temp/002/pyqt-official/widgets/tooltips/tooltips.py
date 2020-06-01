@@ -45,14 +45,14 @@
 ______ random
 
 ____ ?.QtCore ______ QEvent, QPoint, QPointF, QSize, Qt
-____ ?.QtGui ______ QColor, QIcon, QPainter, QPainterPath, QPalette
+____ ?.?G.. ______ QColor, QIcon, QPainter, QPainterPath, QPalette
 ____ ?.?W.. ______ (?A.., QStyle, QToolButton, QToolTip,
         QWidget)
 
 ______ tooltips_rc
 
 
-class ShapeItem(object):
+c_ ShapeItem(object):
     ___ __init__(self):    
         self.myPath _ QPainterPath()
         self.myPosition _ QPoint()
@@ -60,31 +60,31 @@ class ShapeItem(object):
         self.myToolTip _ ''
 
     ___ path(self):
-        return self.myPath
+        r_ self.myPath
 
     ___ position(self):
-        return self.myPosition
+        r_ self.myPosition
 
     ___ color(self):
-        return self.myColor
+        r_ self.myColor
 
     ___ toolTip(self):
-        return self.myToolTip
+        r_ self.myToolTip
 
-    ___ setPath(self, path):
+    ___ setPath  path):
         self.myPath _ path
 
-    ___ setToolTip(self, toolTip):
+    ___ setToolTip  toolTip):
         self.myToolTip _ toolTip
 
-    ___ setPosition(self, position):
+    ___ setPosition  position):
         self.myPosition _ position
 
-    ___ setColor(self, color):
+    ___ setColor  color):
         self.myColor _ color
 
 
-class SortingBox(QWidget):
+c_ SortingBox(QWidget):
     circle_count _ square_count _ triangle_count _ 1
 
     ___ __init__(self):
@@ -100,7 +100,7 @@ class SortingBox(QWidget):
         self.setMouseTracking(True)
         self.setBackgroundRole(QPalette.Base)
 
-        self.itemInMotion _ None
+        self.itemInMotion _ N..
 
         self.newCircleButton _ self.createToolButton("New Circle",
                 QIcon(':/images/circle.png'), self.createNewCircle)
@@ -132,22 +132,22 @@ class SortingBox(QWidget):
                 self.initialItemPosition(self.trianglePath),
                 self.initialItemColor())
 
-    ___ event(self, event):
-        if event.type() == QEvent.ToolTip:
+    ___ event  event):
+        __ event.type() == QEvent.ToolTip:
             helpEvent _ event
             index _ self.itemAt(helpEvent.pos())
-            if index !_ -1:
+            __ index !_ -1:
                 QToolTip.showText(helpEvent.globalPos(),
                         self.shapeItems[index].toolTip())
-            else:
+            ____
                 QToolTip.hideText()
                 event.ignore()
 
-            return True
+            r_ True
 
-        return super(SortingBox, self).event(event)
+        r_ super(SortingBox, self).event(event)
 
-    ___ resizeEvent(self, event):
+    ___ resizeEvent  event):
         margin _ self.style().pixelMetric(QStyle.PM_DefaultTopLevelMargin)
         x _ self.width() - margin
         y _ self.height() - margin
@@ -156,7 +156,7 @@ class SortingBox(QWidget):
         y _ self.updateButtonGeometry(self.newSquareButton, x, y)
         self.updateButtonGeometry(self.newTriangleButton, x, y)
 
-    ___ paintEvent(self, event):
+    ___ paintEvent  event):
         painter _ QPainter(self)
         painter.setRenderHint(QPainter.Antialiasing)
         for shapeItem in self.shapeItems:
@@ -165,10 +165,10 @@ class SortingBox(QWidget):
             painter.drawPath(shapeItem.path())
             painter.translate(-shapeItem.position())
 
-    ___ mousePressEvent(self, event):
-        if event.button() == Qt.LeftButton:
+    ___ mousePressEvent  event):
+        __ event.button() == Qt.LeftButton:
             index _ self.itemAt(event.pos())
-            if index !_ -1:
+            __ index !_ -1:
                 self.itemInMotion _ self.shapeItems[index]
                 self.previousPosition _ event.pos()
 
@@ -178,14 +178,14 @@ class SortingBox(QWidget):
 
                 self.update()
 
-    ___ mouseMoveEvent(self, event):
-        if (event.buttons() & Qt.LeftButton) and self.itemInMotion:
+    ___ mouseMoveEvent  event):
+        __ (event.buttons() & Qt.LeftButton) and self.itemInMotion:
             self.moveItemTo(event.pos())
 
-    ___ mouseReleaseEvent(self, event):
-        if (event.button() == Qt.LeftButton) and self.itemInMotion:
+    ___ mouseReleaseEvent  event):
+        __ (event.button() == Qt.LeftButton) and self.itemInMotion:
             self.moveItemTo(event.pos())
-            self.itemInMotion _ None
+            self.itemInMotion _ N..
 
     ___ createNewCircle(self):
         SortingBox.circle_count +_ 1
@@ -205,28 +205,28 @@ class SortingBox(QWidget):
                 "Triangle <%d>" % SortingBox.triangle_count,
                 self.randomItemPosition(), self.randomItemColor())
 
-    ___ itemAt(self, pos):
+    ___ itemAt  pos):
         for i in range(len(self.shapeItems) - 1, -1, -1):
             item _ self.shapeItems[i]
-            if item.path().contains(QPointF(pos - item.position())):
-                return i
+            __ item.path().contains(QPointF(pos - item.position())):
+                r_ i
 
-        return -1
+        r_ -1
 
-    ___ moveItemTo(self, pos):
+    ___ moveItemTo  pos):
         offset _ pos - self.previousPosition
         self.itemInMotion.setPosition(self.itemInMotion.position() + offset)
         self.previousPosition _ QPoint(pos)
         self.update()
 
-    ___ updateButtonGeometry(self, button, x, y):
+    ___ updateButtonGeometry  button, x, y):
         size _ button.sizeHint()
         button.setGeometry(x - size.width(), y - size.height(),
                 size.width(), size.height())
 
-        return y - size.height() - self.style().pixelMetric(QStyle.PM_DefaultLayoutSpacing)
+        r_ y - size.height() - self.style().pixelMetric(QStyle.PM_DefaultLayoutSpacing)
 
-    ___ createShapeItem(self, path, toolTip, pos, color):
+    ___ createShapeItem  path, toolTip, pos, color):
         shapeItem _ ShapeItem()
         shapeItem.setPath(path)
         shapeItem.setToolTip(toolTip)
@@ -235,40 +235,40 @@ class SortingBox(QWidget):
         self.shapeItems.append(shapeItem)
         self.update()
 
-    ___ createToolButton(self, toolTip, icon, member):
+    ___ createToolButton  toolTip, icon, member):
         button _ QToolButton(self)
         button.setToolTip(toolTip)
         button.setIcon(icon)
         button.setIconSize(QSize(32, 32))
         button.c__.c..(member)
 
-        return button
+        r_ button
 
-    ___ initialItemPosition(self, path):
+    ___ initialItemPosition  path):
         y _ (self.height() - path.controlPointRect().height()) / 2
 
-        if len(self.shapeItems) == 0:
+        __ len(self.shapeItems) == 0:
             x _ ((3 * self.width()) / 2 - path.controlPointRect().width()) / 2
-        else:
+        ____
             x _ (self.width() / len(self.shapeItems) - path.controlPointRect().width()) / 2
 
-        return QPoint(x, y)
+        r_ QPoint(x, y)
 
     ___ randomItemPosition(self):
         x _ random.randint(0, self.width() - 120)
         y _ random.randint(0, self.height() - 120)
 
-        return QPoint(x, y)
+        r_ QPoint(x, y)
 
     ___ initialItemColor(self):
         hue _ ((len(self.shapeItems) + 1) * 85) % 256
-        return QColor.fromHsv(hue, 255, 190)
+        r_ QColor.fromHsv(hue, 255, 190)
 
     ___ randomItemColor(self):
-        return QColor.fromHsv(random.randint(0, 256), 255, 190)
+        r_ QColor.fromHsv(random.randint(0, 256), 255, 190)
 
 
-if __name__ == "__main__":
+__ __name__ == "__main__":
 
     ______ sys
 

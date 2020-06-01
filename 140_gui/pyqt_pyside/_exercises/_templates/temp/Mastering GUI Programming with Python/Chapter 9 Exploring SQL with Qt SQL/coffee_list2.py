@@ -1,8 +1,8 @@
 ______ sys
-____ ? ______ ?W.. as qtw
-____ ? ______ QtCore as qtc
-____ ? ______ QtGui as qtg
-____ ? ______ QtSql as qts
+____ ? ______ ?W.. __ qtw
+____ ? ______ QtCore __ qtc
+____ ? ______ ?G.. __ qtg
+____ ? ______ QtSql __ qts
 
 
 """
@@ -13,19 +13,19 @@ TODO:
 """
 
 
-class DateDelegate(qtw.QStyledItemDelegate):
+c_ DateDelegate(qtw.QStyledItemDelegate):
 
-    ___ createEditor(self, parent, option, proxyModelIndex):
+    ___ createEditor  parent, option, proxyModelIndex):
         # make sure to explicitly set the parent
         # otherwise it pops up in a top-level window!
         date_inp _ qtw.QDateEdit(parent, calendarPopup_True)
-        return date_inp
+        r_ date_inp
 
 
-class CoffeeForm(qtw.QWidget):
+c_ CoffeeForm(qtw.QWidget):
     """Form to display/edit all info about a coffee"""
 
-    ___ __init__(self, coffees_model, reviews_model):
+    ___ __init__  coffees_model, reviews_model):
         super().__init__()
         self.setLayout(qtw.QFormLayout())
 
@@ -85,7 +85,7 @@ class CoffeeForm(qtw.QWidget):
             'Delete Review', c___self.delete_review)
         self.layout().addRow(self.new_review, self.delete_review)
 
-    ___ show_coffee(self, coffee_index):
+    ___ show_coffee  coffee_index):
         self.mapper.setCurrentIndex(coffee_index.row())
         # show the reviews
         id_index _ coffee_index.siblingAtColumn(0)
@@ -114,14 +114,14 @@ class CoffeeForm(qtw.QWidget):
             index _ reviews_model.fieldIndex(field)
             new_row.setValue(index, value)
         inserted _ reviews_model.insertRecord(-1, new_row)
-        if not inserted:
+        __ no. inserted:
             error _ reviews_model.lastError().text()
             print(f"Insert Failed: {error}")
         # Select so the new row is editable
         reviews_model.select()
 
 
-class MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.QMainWindow):
 
     ___ __init__(self):
         """MainWindow constructor.
@@ -132,13 +132,13 @@ class MainWindow(qtw.QMainWindow):
         super().__init__()
         # Code starts here
         self.stack _ qtw.QStackedWidget()
-        self.setCentralWidget(self.stack)
+        self.sCW..(self.stack)
         # Connect to the database
         db _ qts.QSqlDatabase.addDatabase('QSQLITE')
         db.setDatabaseName('coffee.db')
-        if not db.open
-            qtw.QMessageBox.critical(
-                None, 'DB Connection Error',
+        __ no. db.o..
+            qtw.?MB...critical(
+                N.., 'DB Connection Error',
                 'Could not open database file: '
                 f'{db.lastError().text()}')
             sys.exit(1)
@@ -146,9 +146,9 @@ class MainWindow(qtw.QMainWindow):
         # Check for missing tables
         required_tables _ {'roasts', 'coffees', 'reviews'}
         missing_tables _ required_tables - set(db.tables())
-        if missing_tables:
-            qtw.QMessageBox.critical(
-                None, 'DB Integrity Error',
+        __ missing_tables:
+            qtw.?MB...critical(
+                N.., 'DB Integrity Error',
                 'Missing tables, please repair DB: '
                 f'{missing_tables}')
             sys.exit(1)
@@ -176,8 +176,8 @@ class MainWindow(qtw.QMainWindow):
 
         # Inserting and deleting rows.
         toolbar _ self.addToolBar('Controls')
-        toolbar.addAction('Delete Coffee(s)', self.delete_coffee)
-        toolbar.addAction('Add Coffee', self.add_coffee)
+        toolbar.aA..('Delete Coffee(s)', self.delete_coffee)
+        toolbar.aA..('Add Coffee', self.add_coffee)
 
         self.coffee_list.setItemDelegate(qts.QSqlRelationalDelegate())
 
@@ -195,7 +195,7 @@ class MainWindow(qtw.QMainWindow):
         self.coffee_list.doubleClicked.c..(
             lambda: self.stack.setCurrentWidget(self.coffee_form))
 
-        toolbar.addAction("Back to list", self.show_list)
+        toolbar.aA..("Back to list", self.show_list)
 
         # Code ends here
         self.s..
@@ -217,7 +217,7 @@ class MainWindow(qtw.QMainWindow):
         self.stack.setCurrentWidget(self.coffee_list)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtw.?A..(sys.argv)
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.

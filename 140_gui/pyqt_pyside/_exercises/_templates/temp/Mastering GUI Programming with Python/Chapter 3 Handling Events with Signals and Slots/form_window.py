@@ -1,9 +1,9 @@
 ______ sys
-____ ? ______ ?W.. as qtw
-____ ? ______ QtCore as qtc
+____ ? ______ ?W.. __ qtw
+____ ? ______ QtCore __ qtc
 
 
-class FormWindow(qtw.QWidget):
+c_ FormWindow(qtw.QWidget):
 
     submitted _ qtc.pyqtSignal([str], [int, str])
 
@@ -18,14 +18,14 @@ class FormWindow(qtw.QWidget):
         self.layout().addWidget(self.submit)
 
     ___ onSubmit(self):
-        if self.edit.text().isdigit
+        __ self.edit.text().isdigit
             text _ self.edit.text()
             self.submitted[int, str].emit(int(text), text)
-        else:
+        ____
             self.submitted[str].emit(self.edit.text())
         self.close()
 
-class MainWindow(qtw.QWidget):
+c_ MainWindow(qtw.QWidget):
 
     ___ __init__(self):
         super().__init__()
@@ -46,16 +46,16 @@ class MainWindow(qtw.QWidget):
         self.formwindow.s..
 
     @qtc.pyqtSlot(str)
-    ___ onSubmittedStr(self, string):
+    ___ onSubmittedStr  string):
         self.label.sT..(string)
 
     @qtc.pyqtSlot(int, str)
-    ___ onSubmittedIntStr(self, integer, string):
+    ___ onSubmittedIntStr  integer, string):
         text _ f'The string {string} becomes the number {integer}'
         self.label.sT..(text)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtw.?A..(sys.argv)
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.

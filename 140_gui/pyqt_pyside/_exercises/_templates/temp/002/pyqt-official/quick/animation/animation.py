@@ -45,7 +45,7 @@ ______ sys
 ______ os.path
 
 ____ ?.QtCore ______ QUrl
-____ ?.QtGui ______ QGuiApplication
+____ ?.?G.. ______ QGuiApplication
 ____ ?.QtQuick ______ QQuickView
 
 # Access the shared module.

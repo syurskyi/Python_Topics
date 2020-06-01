@@ -43,16 +43,16 @@
 
 
 ____ ?.QtCore ______ QDir, QFile, QRegExp
-____ ?.QtGui ______ QPixmap
+____ ?.?G.. ______ QPixmap
 ____ ?.?W.. ______ (?A.., QCheckBox, QGridLayout, QGroupBox,
-        QLabel, QLineEdit, QMessageBox, QRadioButton, QVBoxLayout, QWizard,
+        QLabel, QLineEdit, ?MB.., QRadioButton, QVBoxLayout, QWizard,
         QWizardPage)
 
 ______ classwizard_rc
 
 
-class ClassWizard(QWizard):
-    ___ __init__(self, parent_None):
+c_ ClassWizard(QWizard):
+    ___ __init__  parent_None):
         super(ClassWizard, self).__init__(parent)
 
         self.addPage(IntroPage())
@@ -79,64 +79,64 @@ class ClassWizard(QWizard):
 
         block _ ''
 
-        if self.field('comment'):
+        __ self.field('comment'):
             block +_ '/*\n'
             block +_ '    ' + header + '\n'
             block +_ '*/\n'
             block +_ '\n'
 
-        if self.field('protect'):
+        __ self.field('protect'):
             block +_ '#ifndef ' + macroName + '\n'
             block +_ '#define ' + macroName + '\n'
             block +_ '\n'
 
-        if self.field('includeBase'):
+        __ self.field('includeBase'):
             block +_ '#include ' + baseInclude + '\n'
             block +_ '\n'
 
         block +_ 'class ' + className
-        if baseClass:
+        __ baseClass:
             block +_ ' : public ' + baseClass
 
         block +_ '\n'
         block +_ '{\n'
 
-        if self.field('qobjectMacro'):
+        __ self.field('qobjectMacro'):
             block +_ '    Q_OBJECT\n'
             block +_ '\n'
 
         block +_ 'public:\n'
 
-        if self.field('qobjectCtor'):
+        __ self.field('qobjectCtor'):
             block +_ '    ' + className + '(QObject *parent = 0);\n'
-        elif self.field('qwidgetCtor'):
+        ____ self.field('qwidgetCtor'):
             block +_ '    ' + className + '(QWidget *parent = 0);\n'
-        elif self.field('defaultCtor'):
+        ____ self.field('defaultCtor'):
             block +_ '    ' + className + '();\n'
 
-            if self.field('copyCtor'):
+            __ self.field('copyCtor'):
                 block +_ '    ' + className + '(const ' + className + ' &other);\n'
                 block +_ '\n'
                 block +_ '    ' + className + ' &operator=' + '(const ' + className + ' &other);\n'
 
         block +_ '};\n'
 
-        if self.field('protect'):
+        __ self.field('protect'):
             block +_ '\n'
             block +_ '#endif\n'
 
         headerFile _ QFile(outputDir + '/' + header)
 
-        if not headerFile.open(QFile.WriteOnly | QFile.Text):
-            QMessageBox.warning(None, "Class Wizard",
+        __ no. headerFile.o..(QFile.WriteOnly | QFile.Text):
+            ?MB...warning(N.., "Class Wizard",
                     "Cannot write file %s:\n%s" % (headerFile.fileName(), headerFile.errorString()))
-            return
+            r_
 
-        headerFile.write(block)
+        headerFile.w..(block)
 
         block _ ''
 
-        if self.field('comment'):
+        __ self.field('comment'):
             block +_ '/*\n'
             block +_ '    ' + implementation + '\n'
             block +_ '*/\n'
@@ -145,23 +145,23 @@ class ClassWizard(QWizard):
         block +_ '#include "' + header + '"\n'
         block +_ '\n'
 
-        if self.field('qobjectCtor'):
+        __ self.field('qobjectCtor'):
             block +_ className + '::' + className + '(QObject *parent)\n'
             block +_ '    : ' + baseClass + '(parent)\n'
             block +_ '{\n'
             block +_ '}\n'
-        elif self.field('qwidgetCtor'):
+        ____ self.field('qwidgetCtor'):
             block +_ className + '::' + className + '(QWidget *parent)\n'
             block +_ '    : ' + baseClass + '(parent)\n'
             block +_ '{\n'
             block +_ '}\n'
-        elif self.field('defaultCtor'):
+        ____ self.field('defaultCtor'):
             block +_ className + '::' + className + '()\n'
             block +_ '{\n'
             block +_ '    // missing code\n'
             block +_ '}\n'
 
-            if self.field('copyCtor'):
+            __ self.field('copyCtor'):
                 block +_ '\n'
                 block +_ className + '::' + className + '(const ' + className + ' &other)\n'
                 block +_ '{\n'
@@ -171,7 +171,7 @@ class ClassWizard(QWizard):
                 block +_ className + ' &' + className + '::operator=(const ' + className + ' &other)\n'
                 block +_ '{\n'
 
-                if baseClass:
+                __ baseClass:
                     block +_ '    ' + baseClass + '::operator=(other);\n'
 
                 block +_ '    // missing code\n'
@@ -180,18 +180,18 @@ class ClassWizard(QWizard):
 
         implementationFile _ QFile(outputDir + '/' + implementation)
 
-        if not implementationFile.open(QFile.WriteOnly | QFile.Text):
-            QMessageBox.warning(None, "Class Wizard",
+        __ no. implementationFile.o..(QFile.WriteOnly | QFile.Text):
+            ?MB...warning(N.., "Class Wizard",
                     "Cannot write file %s:\n%s" % (implementationFile.fileName(), implementationFile.errorString()))
-            return
+            r_
 
-        implementationFile.write(block)
+        implementationFile.w..(block)
 
         super(ClassWizard, self).accept()
 
 
-class IntroPage(QWizardPage):
-    ___ __init__(self, parent_None):
+c_ IntroPage(QWizardPage):
+    ___ __init__  parent_None):
         super(IntroPage, self).__init__(parent)
 
         self.setTitle("Introduction")
@@ -210,8 +210,8 @@ class IntroPage(QWizardPage):
         self.setLayout(layout)
 
 
-class ClassInfoPage(QWizardPage):
-    ___ __init__(self, parent_None):
+c_ ClassInfoPage(QWizardPage):
+    ___ __init__  parent_None):
         super(ClassInfoPage, self).__init__(parent)
 
         self.setTitle("Class Information")
@@ -265,8 +265,8 @@ class ClassInfoPage(QWizardPage):
         self.setLayout(layout)
 
 
-class CodeStylePage(QWizardPage):
-    ___ __init__(self, parent_None):
+c_ CodeStylePage(QWizardPage):
+    ___ __init__  parent_None):
         super(CodeStylePage, self).__init__(parent)
 
         self.setTitle("Code Style Options")
@@ -323,16 +323,16 @@ class CodeStylePage(QWizardPage):
         self.baseIncludeLabel.setEnabled(is_baseClass)
         self.baseIncludeLineEdit.setEnabled(is_baseClass)
 
-        if not is_baseClass:
+        __ no. is_baseClass:
             self.baseIncludeLineEdit.clear()
-        elif QRegExp('Q[A-Z].*').exactMatch(baseClass):
+        ____ QRegExp('Q[A-Z].*').exactMatch(baseClass):
             self.baseIncludeLineEdit.sT..('<' + baseClass + '>')
-        else:
+        ____
             self.baseIncludeLineEdit.sT..('"' + baseClass.lower() + '.h"')
 
 
-class OutputFilesPage(QWizardPage):
-    ___ __init__(self, parent_None):
+c_ OutputFilesPage(QWizardPage):
+    ___ __init__  parent_None):
         super(OutputFilesPage, self).__init__(parent)
 
         self.setTitle("Output Files")
@@ -372,8 +372,8 @@ class OutputFilesPage(QWizardPage):
         self.outputDirLineEdit.sT..(QDir.toNativeSeparators(QDir.tempPath()))
 
 
-class ConclusionPage(QWizardPage):
-    ___ __init__(self, parent_None):
+c_ ConclusionPage(QWizardPage):
+    ___ __init__  parent_None):
         super(ConclusionPage, self).__init__(parent)
 
         self.setTitle("Conclusion")
@@ -393,7 +393,7 @@ class ConclusionPage(QWizardPage):
         self.label.sT..("Click %s to generate the class skeleton." % finishText)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

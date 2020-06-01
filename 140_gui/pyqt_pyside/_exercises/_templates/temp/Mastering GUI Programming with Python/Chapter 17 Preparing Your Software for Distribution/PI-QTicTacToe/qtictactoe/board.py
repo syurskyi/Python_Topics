@@ -1,12 +1,12 @@
-____ ? ______ ?W.. as qtw
-____ ? ______ QtGui as qtg
-____ ? ______ QtCore as qtc
+____ ? ______ ?W.. __ qtw
+____ ? ______ ?G.. __ qtg
+____ ? ______ QtCore __ qtc
 
 ____ os ______ path
 ______ sys
 
 
-class TTTBoard(qtw.QGraphicsScene):
+c_ TTTBoard(qtw.QGraphicsScene):
 
     square_rects _ (
         qtc.QRectF(5, 5, 190, 190),
@@ -29,9 +29,9 @@ class TTTBoard(qtw.QGraphicsScene):
         for square in self.square_rects:
             self.addRect(square, brush_qtg.QBrush(qtc.Qt.white))
 
-        if getattr(sys, 'frozen', False):
+        __ getattr(sys, 'frozen', False):
             directory _ sys._MEIPASS
-        else:  # Not frozen
+        ____  # Not frozen
             directory _ path.dirname(__file__)
         self.mark_pngs _ {
             'X': qtg.QPixmap(path.join(directory, 'images', 'X.png')),
@@ -39,9 +39,9 @@ class TTTBoard(qtw.QGraphicsScene):
         }
         self.marks _ []
 
-    ___ set_board(self, marks):
+    ___ set_board  marks):
         for i, square in enumerate(marks):
-            if square in self.mark_pngs:
+            __ square in self.mark_pngs:
                 mark _ self.addPixmap(self.mark_pngs[square])
                 mark.setPos(self.square_rects[i].topLeft())
                 self.marks.append(mark)
@@ -50,10 +50,10 @@ class TTTBoard(qtw.QGraphicsScene):
         for mark in self.marks:
             self.removeItem(mark)
 
-    ___ mousePressEvent(self, mouse_event):
+    ___ mousePressEvent  mouse_event):
         """Handle mouse clicks on the board"""
         position _ mouse_event.buttonDownScenePos(qtc.Qt.LeftButton)
         for square, qrect in enumerate(self.square_rects):
-            if qrect.contains(position):
+            __ qrect.contains(position):
                 self.square_clicked.emit(square)
                 break

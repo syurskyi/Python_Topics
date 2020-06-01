@@ -44,7 +44,7 @@
 
 ____ ?.QtCore ______ (QDate, QDateTime, QRegExp, QSortFilterProxyModel, Qt,
         QTime)
-____ ?.QtGui ______ QStandardItemModel
+____ ?.?G.. ______ QStandardItemModel
 ____ ?.?W.. ______ (?A.., QCheckBox, QComboBox, QGridLayout,
         QGroupBox, QHBoxLayout, QLabel, QLineEdit, QTreeView, QVBoxLayout,
         QWidget)
@@ -55,22 +55,22 @@ SUBJECT, SENDER, DATE _ range(3)
 # Work around the fact that QSortFilterProxyModel always filters datetime
 # values in QtCore.Qt.ISODate format, but the tree views display using
 # QtCore.Qt.DefaultLocaleShortDate format.
-class SortFilterProxyModel(QSortFilterProxyModel):
-    ___ filterAcceptsRow(self, sourceRow, sourceParent):
+c_ SortFilterProxyModel(QSortFilterProxyModel):
+    ___ filterAcceptsRow  sourceRow, sourceParent):
         # Do we filter for the date column?
-        if self.filterKeyColumn() == DATE:
+        __ self.filterKeyColumn() == DATE:
             # Fetch datetime value.
             index _ self.sourceModel().index(sourceRow, DATE, sourceParent)
             data _ self.sourceModel().data(index)
 
             # Return, if regExp match in displayed format.
-            return (self.filterRegExp().indexIn(data.toString(Qt.DefaultLocaleShortDate)) >_ 0)
+            r_ (self.filterRegExp().indexIn(data.toString(Qt.DefaultLocaleShortDate)) >_ 0)
 
         # Not our business.
-        return super(SortFilterProxyModel, self).filterAcceptsRow(sourceRow, sourceParent)
+        r_ super(SortFilterProxyModel, self).filterAcceptsRow(sourceRow, sourceParent)
 
 
-class Window(QWidget):
+c_ Window(QWidget):
     ___ __init__(self):
         super(Window, self).__init__()
 
@@ -81,11 +81,11 @@ class Window(QWidget):
         self.proxyGroupBox _ QGroupBox("Sorted/Filtered Model")
 
         self.sourceView _ QTreeView()
-        self.sourceView.setRootIsDecorated(False)
+        self.sourceView.setRootIsDecorated F..
         self.sourceView.setAlternatingRowColors(True)
 
         self.proxyView _ QTreeView()
-        self.proxyView.setRootIsDecorated(False)
+        self.proxyView.setRootIsDecorated F..
         self.proxyView.setAlternatingRowColors(True)
         self.proxyView.setModel(self.proxyModel)
         self.proxyView.setSortingEnabled(True)
@@ -148,7 +148,7 @@ class Window(QWidget):
         self.filterCaseSensitivityCheckBox.setChecked(True)
         self.sortCaseSensitivityCheckBox.setChecked(True)
 
-    ___ setSourceModel(self, model):
+    ___ setSourceModel  model):
         self.proxyModel.setSourceModel(model)
         self.sourceView.setModel(model)
 
@@ -156,9 +156,9 @@ class Window(QWidget):
         syntax_nr _ self.filterSyntaxComboBox.itemData(self.filterSyntaxComboBox.currentIndex())
         syntax _ QRegExp.PatternSyntax(syntax_nr)
 
-        if self.filterCaseSensitivityCheckBox.isChecked
+        __ self.filterCaseSensitivityCheckBox.isChecked
             caseSensitivity _ Qt.CaseSensitive
-        else:
+        ____
             caseSensitivity _ Qt.CaseInsensitive
 
         regExp _ QRegExp(self.filterPatternLineEdit.text(),
@@ -169,9 +169,9 @@ class Window(QWidget):
         self.proxyModel.setFilterKeyColumn(self.filterColumnComboBox.currentIndex())
 
     ___ sortChanged(self):
-        if self.sortCaseSensitivityCheckBox.isChecked
+        __ self.sortCaseSensitivityCheckBox.isChecked
             caseSensitivity _ Qt.CaseSensitive
-        else:
+        ____
             caseSensitivity _ Qt.CaseInsensitive
 
         self.proxyModel.setSortCaseSensitivity(caseSensitivity)
@@ -212,10 +212,10 @@ ___ createMailModel(parent):
     addMail(model, "RE: Sports", "Petra Schmidt <petras@nospam.com>",
             QDateTime(QDate(2007, 1, 5), QTime(12, 1)))
 
-    return model
+    r_ model
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

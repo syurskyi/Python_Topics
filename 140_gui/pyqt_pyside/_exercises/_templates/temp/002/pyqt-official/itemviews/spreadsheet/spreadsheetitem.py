@@ -38,18 +38,18 @@
 
 
 ____ ?.QtCore ______ Qt
-____ ?.QtGui ______ QColor
+____ ?.?G.. ______ QColor
 ____ ?.?W.. ______ QTableWidgetItem
 
 ____ util ______ decode_pos
 
 
-class SpreadSheetItem(QTableWidgetItem):
+c_ SpreadSheetItem(QTableWidgetItem):
 
-    ___ __init__(self, text_None):
-        if text is not None:
+    ___ __init__  text_None):
+        __ text __ no. N..:
             super(SpreadSheetItem, self).__init__(text)
-        else:
+        ____
             super(SpreadSheetItem, self).__init__()
 
         self.isResolving _ False
@@ -58,63 +58,63 @@ class SpreadSheetItem(QTableWidgetItem):
         item _ super(SpreadSheetItem, self).clone()
         item.isResolving _ self.isResolving
 
-        return item
+        r_ item
 
     ___ formula(self):
-        return super(SpreadSheetItem, self).data(Qt.DisplayRole)
+        r_ super(SpreadSheetItem, self).data(Qt.DisplayRole)
 
-    ___ data(self, role):
-        if role in (Qt.EditRole, Qt.StatusTipRole):
-            return self.formula()
-        if role == Qt.DisplayRole:
-            return self.display()
+    ___ data  role):
+        __ role in (Qt.EditRole, Qt.StatusTipRole):
+            r_ self.formula()
+        __ role == Qt.DisplayRole:
+            r_ self.display()
         t _ str(self.display())
         try:
             number _ int(t)
         except ValueError:
-            number _ None
-        if role == Qt.TextColorRole:
-            if number is None:
-                return QColor(Qt.black)
-            elif number < 0:
-                return QColor(Qt.red)
-            return QColor(Qt.blue)
+            number _ N..
+        __ role == Qt.TextColorRole:
+            __ number __ N..:
+                r_ QColor(Qt.black)
+            ____ number < 0:
+                r_ QColor(Qt.red)
+            r_ QColor(Qt.blue)
 
-        if role == Qt.TextAlignmentRole:
-            if t and (t[0].isdigit() or t[0] == '-'):
-                return Qt.AlignRight | Qt.AlignVCenter
-        return super(SpreadSheetItem, self).data(role)
+        __ role == Qt.TextAlignmentRole:
+            __ t and (t[0].isdigit() or t[0] == '-'):
+                r_ Qt.AlignRight | Qt.AlignVCenter
+        r_ super(SpreadSheetItem, self).data(role)
 
-    ___ setData(self, role, value):
+    ___ setData  role, value):
         super(SpreadSheetItem, self).setData(role, value)
-        if self.tableWidget
+        __ self.tableWidget
             self.tableWidget().viewport().update()
 
     ___ display(self):
         # avoid circular dependencies
-        if self.isResolving:
-            return None
+        __ self.isResolving:
+            r_ N..
         self.isResolving _ True
         result _ self.computeFormula(self.formula(), self.tableWidget())
         self.isResolving _ False
-        return result
+        r_ result
 
-    ___ computeFormula(self, formula, widget):
-        if formula is None:
-            return None
+    ___ computeFormula  formula, widget):
+        __ formula __ N..:
+            r_ N..
         # check if the string is actually a formula or not
         slist _ formula.split(' ')
-        if not slist or not widget:
+        __ no. slist or no. widget:
             # it is a normal string
-            return formula
+            r_ formula
         op _ slist[0].lower()
         firstRow _ -1
         firstCol _ -1
         secondRow _ -1
         secondCol _ -1
-        if len(slist) > 1:
+        __ len(slist) > 1:
             firstRow, firstCol _ decode_pos(slist[1])
-        if len(slist) > 2:
+        __ len(slist) > 2:
             secondRow, secondCol _ decode_pos(slist[2])
         start _ widget.item(firstRow, firstCol)
         end _ widget.item(secondRow, secondCol)
@@ -128,32 +128,32 @@ class SpreadSheetItem(QTableWidgetItem):
             secondVal _ end and int(end.text()) or 0
         except ValueError:
             pass
-        result _ None
-        if op == "sum":
+        result _ N..
+        __ op == "sum":
             sum_ _ 0
             for r in range(firstRow, secondRow + 1):
                 for c in range(firstCol, secondCol + 1):
                     tableItem _ widget.item(r, c)
-                    if tableItem and tableItem !_ self:
+                    __ tableItem and tableItem !_ self:
                         try:
                             sum_ +_ int(tableItem.text())
                         except ValueError:
                             pass
             result _ sum_
-        elif op == "+":
+        ____ op == "+":
             result _ (firstVal + secondVal)
-        elif op == "-":
+        ____ op == "-":
             result _ (firstVal - secondVal)
-        elif op == "*":
+        ____ op == "*":
             result _ (firstVal * secondVal)
-        elif op == "/":
-            if secondVal == 0:
+        ____ op == "/":
+            __ secondVal == 0:
                 result _ "nan"
-            else:
+            ____
                 result _ (firstVal / secondVal)
-        elif op == "=":
-            if start:
+        ____ op == "=":
+            __ start:
                 result _ start.text()
-        else:
+        ____
             result _ formula
-        return result
+        r_ result

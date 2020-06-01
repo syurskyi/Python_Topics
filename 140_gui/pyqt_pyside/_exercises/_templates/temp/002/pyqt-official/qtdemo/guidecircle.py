@@ -50,11 +50,11 @@ ____ guide ______ Guide
 PI2 _ 2 * math.pi
 
 
-class GuideCircle(Guide):
+c_ GuideCircle(Guide):
     CW _ 1
     CCW _ -1
 
-    ___ __init__(self, rect, startAngle_0.0, span_360.0, dir_CCW, follows_None):
+    ___ __init__  rect, startAngle_0.0, span_360.0, dir_CCW, follows_None):
         super(GuideCircle, self).__init__(follows)
 
         self.radiusX _ rect.width() / 2.0
@@ -63,27 +63,27 @@ class GuideCircle(Guide):
         self.posY _ rect.topLeft().y()
         self.spanRad _ span * PI2 / -360.0
 
-        if dir == GuideCircle.CCW:
+        __ dir == GuideCircle.CCW:
             self.startAngleRad _ startAngle * PI2 / -360.0
             self.endAngleRad _ self.startAngleRad + self.spanRad
             self.stepAngleRad _ self.spanRad / self.length()
-        else:
+        ____
             self.startAngleRad _ self.spanRad + (startAngle * PI2 / -360.0)
             self.endAngleRad _ startAngle * PI2 / -360.0
             self.stepAngleRad _ -self.spanRad / self.length()
 
     ___ length(self):
-        return abs(self.radiusX * self.spanRad)
+        r_ abs(self.radiusX * self.spanRad)
 
     ___ startPos(self):
-        return QPointF((self.posX + self.radiusX + self.radiusX * math.cos(self.startAngleRad)) * self.scaleX,
+        r_ QPointF((self.posX + self.radiusX + self.radiusX * math.cos(self.startAngleRad)) * self.scaleX,
                 (self.posY + self.radiusY + self.radiusY * math.sin(self.startAngleRad)) * self.scaleY)
 
     ___ endPos(self):
-        return QPointF((self.posX + self.radiusX + self.radiusX * math.cos(self.endAngleRad)) * self.scaleX,
+        r_ QPointF((self.posX + self.radiusX + self.radiusX * math.cos(self.endAngleRad)) * self.scaleX,
                 (self.posY + self.radiusY + self.radiusY * math.sin(self.endAngleRad)) * self.scaleY)
 
-    ___ guide(self, item, moveSpeed):
+    ___ guide  item, moveSpeed):
         frame _ item.guideFrame - self.startLength
         end _ QPointF((self.posX + self.radiusX + self.radiusX * math.cos(self.startAngleRad + (frame * self.stepAngleRad))) * self.scaleX,
                 (self.posY + self.radiusY + self.radiusY * math.sin(self.startAngleRad + (frame * self.stepAngleRad))) * self.scaleY)

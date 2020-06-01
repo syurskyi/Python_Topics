@@ -1,14 +1,14 @@
 ______ sys
-____ ? ______ ?W.. as qtw
-____ ? ______ QtCore as qtc
-____ ? ______ QtGui as qtg
-____ ? ______ QtSql as qts
+____ ? ______ ?W.. __ qtw
+____ ? ______ QtCore __ qtc
+____ ? ______ ?G.. __ qtg
+____ ? ______ QtSql __ qts
 
 
-class CoffeeForm(qtw.QWidget):
+c_ CoffeeForm(qtw.QWidget):
     """Form to display/edit all info about a coffee"""
 
-    ___ __init__(self, roasts):
+    ___ __init__  roasts):
         super().__init__()
         self.setLayout(qtw.QFormLayout())
 
@@ -24,7 +24,7 @@ class CoffeeForm(qtw.QWidget):
             2, qtw.QHeaderView.Stretch)
         self.layout().addRow(self.reviews)
 
-    ___ show_coffee(self, coffee_data, reviews):
+    ___ show_coffee  coffee_data, reviews):
         self.coffee_brand.sT..(coffee_data.get('coffee_brand'))
         self.coffee_name.sT..(coffee_data.get('coffee_name'))
         self.roast.setCurrentIndex(coffee_data.get('roast_id'))
@@ -37,7 +37,7 @@ class CoffeeForm(qtw.QWidget):
                 self.reviews.setItem(i, j, qtw.QTableWidgetItem(value))
 
 
-class MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.QMainWindow):
 
     ___ __init__(self):
         """MainWindow constructor.
@@ -48,15 +48,15 @@ class MainWindow(qtw.QMainWindow):
         super().__init__()
         # Code starts here
         self.stack _ qtw.QStackedWidget()
-        self.setCentralWidget(self.stack)
+        self.sCW..(self.stack)
 
         # Connect to the database
         self.db _ qts.QSqlDatabase.addDatabase('QSQLITE')
         self.db.setDatabaseName('coffee.db')
-        if not self.db.open
+        __ no. self.db.o..
             error _ self.db.lastError().text()
-            qtw.QMessageBox.critical(
-                None, 'DB Connection Error',
+            qtw.?MB...critical(
+                N.., 'DB Connection Error',
                 'Could not open database file: '
                 f'{error}')
             sys.exit(1)
@@ -65,9 +65,9 @@ class MainWindow(qtw.QMainWindow):
         required_tables _ {'roasts', 'coffees', 'reviews'}
         tables _ self.db.tables()
         missing_tables _ required_tables - set(tables)
-        if missing_tables:
-            qtw.QMessageBox.critica(
-                None, 'DB Integrity Error'
+        __ missing_tables:
+            qtw.?MB...critica(
+                N.., 'DB Integrity Error'
                 'Missing tables, please repair DB: '
                 f'{missing_tables}')
             sys.exit(1)
@@ -103,7 +103,7 @@ class MainWindow(qtw.QMainWindow):
 
         # Navigation between stacked widgets
         navigation _ self.addToolBar("Navigation")
-        navigation.addAction(
+        navigation.aA..(
             "Back to list",
             lambda: self.stack.setCurrentWidget(self.coffee_list))
 
@@ -113,12 +113,12 @@ class MainWindow(qtw.QMainWindow):
         # Code ends here
         self.s..
 
-    ___ get_id_for_row(self, index):
+    ___ get_id_for_row  index):
         index _ index.siblingAtColumn(0)
         coffee_id _ self.coffee_list.model().data(index)
-        return coffee_id
+        r_ coffee_id
 
-    ___ show_coffee(self, coffee_id):
+    ___ show_coffee  coffee_id):
         # get the basic coffee information
         query1 _ qts.QSqlQuery(self.db)
         query1.prepare('SELECT * FROM coffees WHERE id=:id')
@@ -148,7 +148,7 @@ class MainWindow(qtw.QMainWindow):
         self.stack.setCurrentWidget(self.coffee_form)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtw.?A..(sys.argv)
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.

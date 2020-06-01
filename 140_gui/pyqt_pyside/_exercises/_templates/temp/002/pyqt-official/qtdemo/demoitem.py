@@ -41,32 +41,32 @@
 
 
 ____ ?.QtCore ______ QPointF, QRectF, qRound
-____ ?.QtGui ______ QColor, QPainter, QPixmap, QTransform
+____ ?.?G.. ______ QColor, QPainter, QPixmap, QTransform
 ____ ?.?W.. ______ QGraphicsObject
 
 ____ colors ______ Colors
 
 
-class SharedImage(object):
+c_ SharedImage(object):
     ___ __init__(self):
         self.refCount _ 0
-        self.image _ None
-        self.pixmap _ None
+        self.image _ N..
+        self.pixmap _ N..
         self.transform _ QTransform()
         self.unscaledBoundingRect _ QRectF()
 
 
-class DemoItem(QGraphicsObject):
+c_ DemoItem(QGraphicsObject):
     _sharedImageHash _ {}
 
     _transform _ QTransform()
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(DemoItem, self).__init__(parent)
 
         self.noSubPixeling _ False
-        self.currentAnimation _ None
-        self.currGuide _ None
+        self.currentAnimation _ N..
+        self.currGuide _ N..
         self.guideFrame _ 0.0
 
         self._sharedImage _ SharedImage()
@@ -75,103 +75,103 @@ class DemoItem(QGraphicsObject):
 
     ___ __del__(self):
         self._sharedImage.refCount -_ 1
-        if self._sharedImage.refCount == 0:
-            if self._hashKey:
+        __ self._sharedImage.refCount == 0:
+            __ self._hashKey:
                 del DemoItem._sharedImageHash[self._hashKey]
 
-    ___ animationStarted(self, id_0):
+    ___ animationStarted  id_0):
         pass
 
-    ___ animationStopped(self, id_0):
+    ___ animationStopped  id_0):
         pass
 
-    ___ setRecursiveVisible(self, visible):
+    ___ setRecursiveVisible  visible):
         self.setVisible(visible)
         for c in self.childItems
             c.setVisible(visible)
 
-    ___ useGuide(self, guide, startFrame):
+    ___ useGuide  guide, startFrame):
         self.guideFrame _ startFrame
         while self.guideFrame > guide.startLength + guide.length
-            if guide.nextGuide == guide.firstGuide:
+            __ guide.nextGuide == guide.firstGuide:
                 break
 
             guide _ guide.nextGuide
 
         self.currGuide _ guide
 
-    ___ guideAdvance(self, distance):
+    ___ guideAdvance  distance):
         self.guideFrame +_ distance
         while self.guideFrame > self.currGuide.startLength + self.currGuide.length
             self.currGuide _ self.currGuide.nextGuide
-            if self.currGuide == self.currGuide.firstGuide:
+            __ self.currGuide == self.currGuide.firstGuide:
                 self.guideFrame -_ self.currGuide.lengthAll()
 
-    ___ guideMove(self, moveSpeed):
-        self.currGuide.guide(self, moveSpeed)
+    ___ guideMove  moveSpeed):
+        self.currGuide.guide  moveSpeed)
 
-    ___ setPosUsingSheepDog(self, dest, sceneFence):
+    ___ setPosUsingSheepDog  dest, sceneFence):
         self.setPos(dest)
-        if sceneFence.isNull
-            return
+        __ sceneFence.isNull
+            r_
 
         itemWidth _ self.boundingRect().width()
         itemHeight _ self.boundingRect().height()
         fenceRight _ sceneFence.x() + sceneFence.width()
         fenceBottom _ sceneFence.y() + sceneFence.height()
 
-        if self.scenePos().x() < sceneFence.x
+        __ self.scenePos().x() < sceneFence.x
             self.moveBy(self.mapFromScene(QPointF(sceneFence.x(), 0)).x(), 0)
 
-        if self.scenePos().x() > fenceRight - itemWidth:
+        __ self.scenePos().x() > fenceRight - itemWidth:
             self.moveBy(self.mapFromScene(QPointF(fenceRight - itemWidth, 0)).x(), 0)
 
-        if self.scenePos().y() < sceneFence.y
+        __ self.scenePos().y() < sceneFence.y
             self.moveBy(0, self.mapFromScene(QPointF(0, sceneFence.y())).y())
 
-        if self.scenePos().y() > fenceBottom - itemHeight:
+        __ self.scenePos().y() > fenceBottom - itemHeight:
             self.moveBy(0, self.mapFromScene(QPointF(0, fenceBottom - itemHeight)).y())
 
-    ___ setGuidedPos(self, pos):
+    ___ setGuidedPos  pos):
         # Make sure we have a copy.
         self.guidedPos _ QPointF(pos)
 
     ___ getGuidedPos(self):
         # Return a copy so that it can be changed.
-        return QPointF(self.guidedPos)
+        r_ QPointF(self.guidedPos)
 
     @staticmethod
     ___ setTransform(transform):
         DemoItem._transform _ transform
 
-    ___ useSharedImage(self, hashKey):
+    ___ useSharedImage  hashKey):
         self._hashKey _ hashKey
-        if hashKey not in DemoItem._sharedImageHash:
+        __ hashKey no. in DemoItem._sharedImageHash:
             DemoItem._sharedImageHash[hashKey] _ self._sharedImage
-        else:
+        ____
             self._sharedImage.refCount -_ 1
             self._sharedImage _ DemoItem._sharedImageHash[hashKey]
             self._sharedImage.refCount +_ 1
 
-    ___ createImage(self, transform):
-        return None
+    ___ createImage  transform):
+        r_ N..
 
     ___ _validateImage(self):
-        if (self._sharedImage.transform !_ DemoItem._transform and not Colors.noRescale) or (self._sharedImage.image is None and self._sharedImage.pixmap is None):
+        __ (self._sharedImage.transform !_ DemoItem._transform and no. Colors.noRescale) or (self._sharedImage.image __ N.. and self._sharedImage.pixmap __ N..):
             # (Re)create image according to new transform.
-            self._sharedImage.image _ None
-            self._sharedImage.pixmap _ None
+            self._sharedImage.image _ N..
+            self._sharedImage.pixmap _ N..
             self._sharedImage.transform _ DemoItem._transform
 
             # Let subclass create and draw a new image according to the new
             # transform.
-            if Colors.noRescale:
+            __ Colors.noRescale:
                 transform _ QTransform()
-            else:
+            ____
                 transform _ DemoItem._transform
             image _ self.createImage(transform)
-            if image is not None:
-                if Colors.showBoundingRect:
+            __ image __ no. N..:
+                __ Colors.showBoundingRect:
                     # Draw red transparent rect.
                     painter _ QPainter(image)
                     painter.fillRect(image.rect(), QColor(255, 0, 0, 50))
@@ -179,58 +179,58 @@ class DemoItem(QGraphicsObject):
 
                 self._sharedImage.unscaledBoundingRect _ self._sharedImage.transform.inverted()[0].mapRect(QRectF(image.rect()))
 
-                if Colors.usePixmaps:
-                    if image.isNull
+                __ Colors.usePixmaps:
+                    __ image.isNull
                         self._sharedImage.pixmap _ QPixmap(1, 1)
-                    else:
+                    ____
                         self._sharedImage.pixmap _ QPixmap(image.size())
 
                     self._sharedImage.pixmap.fill(QColor(0, 0, 0, 0))
                     painter _ QPainter(self._sharedImage.pixmap)
                     painter.drawImage(0, 0, image)
-                else:
+                ____
                     self._sharedImage.image _ image
 
-                return True
-            else:
-                return False
+                r_ True
+            ____
+                r_ False
 
-        return True
+        r_ True
 
     ___ boundingRect(self):
         self._validateImage()
-        return self._sharedImage.unscaledBoundingRect
+        r_ self._sharedImage.unscaledBoundingRect
 
-    ___ paint(self, painter, option_None, widget_None):
-        if self._validateImage
+    ___ paint  painter, option_None, widget_None):
+        __ self._validateImage
             wasSmoothPixmapTransform _ painter.testRenderHint(QPainter.SmoothPixmapTransform)
             painter.setRenderHint(QPainter.SmoothPixmapTransform)
 
-            if Colors.noRescale:
+            __ Colors.noRescale:
                 # Let the painter scale the image for us.  This may degrade
                 # both quality and performance.
-                if self._sharedImage.image is not None:
+                __ self._sharedImage.image __ no. N..:
                     painter.drawImage(self.pos(), self._sharedImage.image)
-                else:
+                ____
                     painter.drawPixmap(self.pos(), self._sharedImage.pixmap)
-            else:
+            ____
                 m _ painter.worldTransform()
                 painter.setWorldTransform(QTransform())
 
                 x _ m.dx()
                 y _ m.dy()
-                if self.noSubPixeling:
+                __ self.noSubPixeling:
                     x _ qRound(x)
                     y _ qRound(y)
 
-                if self._sharedImage.image is not None:
+                __ self._sharedImage.image __ no. N..:
                     painter.drawImage(QPointF(x, y), self._sharedImage.image)
-                else:
+                ____
                     painter.drawPixmap(QPointF(x, y), self._sharedImage.pixmap)
 
-            if not wasSmoothPixmapTransform:
+            __ no. wasSmoothPixmapTransform:
                 painter.setRenderHint(QPainter.SmoothPixmapTransform,
                         False)
 
-    ___ collidesWithItem(self, item, mode):
-        return False
+    ___ collidesWithItem  item, mode):
+        r_ False

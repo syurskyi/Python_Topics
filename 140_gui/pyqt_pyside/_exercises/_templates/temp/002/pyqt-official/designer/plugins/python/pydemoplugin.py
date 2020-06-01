@@ -3,7 +3,7 @@
 # Copyright (c) 2013 Riverbank Computing Limited
 
 
-____ ?.QtGui ______ QIcon, QPixmap
+____ ?.?G.. ______ QIcon, QPixmap
 ____ ?.QtDesigner ______ QPyDesignerCustomWidgetPlugin
 
 ____ pydemo ______ PyDemo
@@ -12,63 +12,63 @@ ____ pydemo ______ PyDemo
 # This class implements the interface expected by Qt Designer to access the
 # custom widget.  See the description of the QDesignerCustomWidgetInterface
 # class for full details.
-class PyDemoPlugin(QPyDesignerCustomWidgetPlugin):
+c_ PyDemoPlugin(QPyDesignerCustomWidgetPlugin):
 
     # Initialise the instance.
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(PyDemoPlugin, self).__init__(parent)
 
         self._initialized _ False
 
     # Initialise the custom widget for use with the specified formEditor
     # interface.
-    ___ initialize(self, formEditor):
-        if self._initialized:
-            return
+    ___ initialize  formEditor):
+        __ self._initialized:
+            r_
 
         self._initialized _ True
 
     # Return True if the custom widget has been intialised.
     ___ isInitialized(self):
-        return self._initialized
+        r_ self._initialized
 
     # Return a new instance of the custom widget with the given parent.
-    ___ createWidget(self, parent):
-        return PyDemo(parent)
+    ___ createWidget  parent):
+        r_ PyDemo(parent)
 
     # Return the name of the class that implements the custom widget.
     ___ name(self):
-        return "PyDemo"
+        r_ "PyDemo"
 
     # Return the name of the group to which the custom widget belongs.  A new
     # group will be created if it doesn't already exist.
     ___ group(self):
-        return "PyQt Examples"
+        r_ "PyQt Examples"
 
     # Return the icon used to represent the custom widget in Designer's widget
     # box.
     ___ icon(self):
-        return QIcon(_logo_pixmap)
+        r_ QIcon(_logo_pixmap)
 
     # Return a short description of the custom widget used by Designer in a
     # tool tip.
     ___ toolTip(self):
-        return "PyQt demonstration widget"
+        r_ "PyQt demonstration widget"
 
     # Return a full description of the custom widget used by Designer in
     # "What's This?" help for the widget.
     ___ whatsThis(self):
-        return "PyDemo is a demonstration custom widget written in Python " \
+        r_ "PyDemo is a demonstration custom widget written in Python " \
                "using PyQt."
 
     # Return True if the custom widget acts as a container for other widgets.
     ___ isContainer(self):
-        return False
+        r_ False
 
     # Return an XML fragment that allows the default values of the custom
     # widget's properties to be overridden.
     ___ domXml(self):
-        return '<widget class="PyDemo" name="pyDemo">\n' \
+        r_ '<widget class="PyDemo" name="pyDemo">\n' \
                ' <property name="toolTip" >\n' \
                '  <string>PyQt demonstration widget</string>\n' \
                ' </property>\n' \
@@ -81,7 +81,7 @@ class PyDemoPlugin(QPyDesignerCustomWidgetPlugin):
     # Return the name of the module containing the class that implements the
     # custom widget.  It may include a module path.
     ___ includeFile(self):
-        return "pydemo"
+        r_ "pydemo"
 
 
 # Define the image used for the icon.

@@ -46,12 +46,12 @@ ______ sys
 ______ math
 
 ____ ?.QtCore ______ pyqtSignal, QPoint, QSize, Qt
-____ ?.QtGui ______ QColor, QOpenGLVersionProfile
+____ ?.?G.. ______ QColor, QOpenGLVersionProfile
 ____ ?.?W.. ______ (?A.., QHBoxLayout, QOpenGLWidget, QSlider,
         QWidget)
 
 
-class Window(QWidget):
+c_ Window(QWidget):
     ___ __init__(self):
         super(Window, self).__init__()
 
@@ -90,15 +90,15 @@ class Window(QWidget):
         slider.setTickInterval(15 * 16)
         slider.setTickPosition(QSlider.TicksRight)
 
-        return slider
+        r_ slider
 
 
-class GLWidget(QOpenGLWidget):
+c_ GLWidget(QOpenGLWidget):
     xRotationChanged _ pyqtSignal(int)
     yRotationChanged _ pyqtSignal(int)
     zRotationChanged _ pyqtSignal(int)
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(GLWidget, self).__init__(parent)
 
         self.object _ 0
@@ -112,28 +112,28 @@ class GLWidget(QOpenGLWidget):
         self.trolltechPurple _ QColor.fromCmykF(0.39, 0.39, 0.0, 0.0)
 
     ___ minimumSizeHint(self):
-        return QSize(50, 50)
+        r_ QSize(50, 50)
 
     ___ sizeHint(self):
-        return QSize(400, 400)
+        r_ QSize(400, 400)
 
-    ___ setXRotation(self, angle):
+    ___ setXRotation  angle):
         angle _ self.normalizeAngle(angle)
-        if angle !_ self.xRot:
+        __ angle !_ self.xRot:
             self.xRot _ angle
             self.xRotationChanged.emit(angle)
             self.update()
 
-    ___ setYRotation(self, angle):
+    ___ setYRotation  angle):
         angle _ self.normalizeAngle(angle)
-        if angle !_ self.yRot:
+        __ angle !_ self.yRot:
             self.yRot _ angle
             self.yRotationChanged.emit(angle)
             self.update()
 
-    ___ setZRotation(self, angle):
+    ___ setZRotation  angle):
         angle _ self.normalizeAngle(angle)
-        if angle !_ self.zRot:
+        __ angle !_ self.zRot:
             self.zRot _ angle
             self.zRotationChanged.emit(angle)
             self.update()
@@ -160,10 +160,10 @@ class GLWidget(QOpenGLWidget):
         self.gl.glRotated(self.zRot / 16.0, 0.0, 0.0, 1.0)
         self.gl.glCallList(self.object)
 
-    ___ resizeGL(self, width, height):
+    ___ resizeGL  width, height):
         side _ min(width, height)
-        if side < 0:
-            return
+        __ side < 0:
+            r_
 
         self.gl.glViewport((width - side) // 2, (height - side) // 2, side,
                 side)
@@ -173,17 +173,17 @@ class GLWidget(QOpenGLWidget):
         self.gl.glOrtho(-0.5, +0.5, +0.5, -0.5, 4.0, 15.0)
         self.gl.glMatrixMode(self.gl.GL_MODELVIEW)
 
-    ___ mousePressEvent(self, event):
+    ___ mousePressEvent  event):
         self.lastPos _ event.pos()
 
-    ___ mouseMoveEvent(self, event):
+    ___ mouseMoveEvent  event):
         dx _ event.x() - self.lastPos.x()
         dy _ event.y() - self.lastPos.y()
 
-        if event.buttons() & Qt.LeftButton:
+        __ event.buttons() & Qt.LeftButton:
             self.setXRotation(self.xRot + 8 * dy)
             self.setYRotation(self.yRot + 8 * dx)
-        elif event.buttons() & Qt.RightButton:
+        ____ event.buttons() & Qt.RightButton:
             self.setXRotation(self.xRot + 8 * dy)
             self.setZRotation(self.zRot + 8 * dx)
 
@@ -238,9 +238,9 @@ class GLWidget(QOpenGLWidget):
         self.gl.glEnd()
         self.gl.glEndList()
 
-        return genList
+        r_ genList
 
-    ___ quad(self, x1, y1, x2, y2, x3, y3, x4, y4):
+    ___ quad  x1, y1, x2, y2, x3, y3, x4, y4):
         self.setColor(self.trolltechGreen)
 
         self.gl.glVertex3d(x1, y1, -0.05)
@@ -253,7 +253,7 @@ class GLWidget(QOpenGLWidget):
         self.gl.glVertex3d(x2, y2, +0.05)
         self.gl.glVertex3d(x1, y1, +0.05)
 
-    ___ extrude(self, x1, y1, x2, y2):
+    ___ extrude  x1, y1, x2, y2):
         self.setColor(self.trolltechGreen.darker(250 + int(100 * x1)))
 
         self.gl.glVertex3d(x1, y1, +0.05)
@@ -261,21 +261,21 @@ class GLWidget(QOpenGLWidget):
         self.gl.glVertex3d(x2, y2, -0.05)
         self.gl.glVertex3d(x1, y1, -0.05)
 
-    ___ normalizeAngle(self, angle):
+    ___ normalizeAngle  angle):
         while angle < 0:
             angle +_ 360 * 16
         while angle > 360 * 16:
             angle -_ 360 * 16
-        return angle
+        r_ angle
 
-    ___ setClearColor(self, c):
+    ___ setClearColor  c):
         self.gl.glClearColor(c.redF(), c.greenF(), c.blueF(), c.alphaF())
 
-    ___ setColor(self, c):
+    ___ setColor  c):
         self.gl.glColor4f(c.redF(), c.greenF(), c.blueF(), c.alphaF())
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     app _ ?A..(sys.argv)
     window _ Window()

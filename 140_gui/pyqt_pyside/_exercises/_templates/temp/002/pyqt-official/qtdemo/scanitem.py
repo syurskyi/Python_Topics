@@ -41,22 +41,22 @@
 
 
 ____ ?.QtCore ______ QRect
-____ ?.QtGui ______ QColor, QImage, QPainter, QPen
+____ ?.?G.. ______ QColor, QImage, QPainter, QPen
 
 ____ colors ______ Colors
 ____ demoitem ______ DemoItem
 
 
-class ScanItem(DemoItem):
+c_ ScanItem(DemoItem):
     ITEM_WIDTH _ 16
     ITEM_HEIGHT _ 16
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(ScanItem, self).__init__(parent)
 
         self.useSharedImage(__file__)
 
-    ___ createImage(self, transform):
+    ___ createImage  transform):
         scaledRect _ transform.mapRect(QRect(0, 0, ScanItem.ITEM_WIDTH, ScanItem.ITEM_HEIGHT))
         image _ QImage(scaledRect.width(), scaledRect.height(),
                 QImage.Format_ARGB32_Premultiplied)
@@ -64,15 +64,15 @@ class ScanItem(DemoItem):
         painter _ QPainter(image)
         painter.setRenderHint(QPainter.Antialiasing)
 
-        if Colors.useEightBitPalette:
+        __ Colors.useEightBitPalette:
             painter.setPen(QPen(QColor(100, 100, 100), 2))
             painter.setBrush(QColor(206, 246, 117))
             painter.drawEllipse(1, 1, scaledRect.width() - 2,
                     scaledRect.height() - 2)
-        else:
+        ____
             painter.setPen(QPen(QColor(0, 0, 0, 15), 1))
             painter.setBrush(QColor(0, 0, 0, 15))
             painter.drawEllipse(1, 1, scaledRect.width() - 2,
                     scaledRect.height() - 2)
 
-        return image
+        r_ image

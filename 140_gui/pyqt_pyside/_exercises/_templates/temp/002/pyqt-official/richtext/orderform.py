@@ -43,38 +43,38 @@
 
 
 ____ ?.QtCore ______ QDate, Qt
-____ ?.QtGui ______ (QFont, QTextCharFormat, QTextCursor, QTextFrameFormat,
+____ ?.?G.. ______ (QFont, QTextCharFormat, QTextCursor, QTextFrameFormat,
         QTextLength, QTextTableFormat)
 ____ ?.?W.. ______ (?A.., QCheckBox, QDialog,
         QDialogButtonBox, QGridLayout, QLabel, QLineEdit, QMainWindow,
-        QMessageBox, QMenu, QTableWidget, QTableWidgetItem, QTabWidget,
+        ?MB.., QMenu, QTableWidget, QTableWidgetItem, QTabWidget,
         QTextEdit)
 ____ ?.QtPrintSupport ______ QAbstractPrintDialog, QPrintDialog, QPrinter
 
 
-class MainWindow(QMainWindow):
+c_ MainWindow ?MW..
     ___ __init__(self):
         super(MainWindow, self).__init__()
 
         fileMenu _ QMenu("&File", self)
-        newAction _ fileMenu.addAction("&New...")
-        newAction.setShortcut("Ctrl+N")
-        self.printAction _ fileMenu.addAction("&Print...", self.printFile)
-        self.printAction.setShortcut("Ctrl+P")
-        self.printAction.setEnabled(False)
-        quitAction _ fileMenu.addAction("E&xit")
-        quitAction.setShortcut("Ctrl+Q")
-        self.menuBar().addMenu(fileMenu)
+        newAction _ fileMenu.aA..("&New...")
+        newAction.sS..("Ctrl+N")
+        self.printAction _ fileMenu.aA..("&Print...", self.printFile)
+        self.printAction.sS..("Ctrl+P")
+        self.printAction.setEnabled F..
+        quitAction _ fileMenu.aA..("E&xit")
+        quitAction.sS..("Ctrl+Q")
+        self.mB.. .aM..(fileMenu)
 
         self.letters _ QTabWidget()
 
-        newAction.triggered.c..(self.openDialog)
-        quitAction.triggered.c..(self.close)
+        newAction.t__.c..(self.openDialog)
+        quitAction.t__.c..(self.close)
 
-        self.setCentralWidget(self.letters)
+        self.sCW..(self.letters)
         self.setWindowTitle("Order Form")
 
-    ___ createLetter(self, name, address, orderItems, sendOffers):
+    ___ createLetter  name, address, orderItems, sendOffers):
         editor _ QTextEdit()
         tabIndex _ self.letters.addTab(editor, name)
         self.letters.setCurrentIndex(tabIndex)
@@ -168,9 +168,9 @@ class MainWindow(QMainWindow):
         cursor.insertText("I do not want to receive any promotional "
                 "information from your company.", textFormat)
 
-        if sendOffers:
+        __ sendOffers:
             cursor _ offersTable.cellAt(0, 0).firstCursorPosition()
-        else:
+        ____
             cursor _ offersTable.cellAt(1, 0).firstCursorPosition()
 
         cursor.insertText('X', boldFormat)
@@ -194,7 +194,7 @@ class MainWindow(QMainWindow):
     ___ openDialog(self):
         dialog _ DetailsDialog("Enter Customer Details", self)
 
-        if dialog.e.. == QDialog.Accepted:
+        __ dialog.e.. == QDialog.Accepted:
             self.createLetter(dialog.senderName(), dialog.senderAddress(),
                     dialog.orderItems(), dialog.sendOffers())
 
@@ -205,17 +205,17 @@ class MainWindow(QMainWindow):
         dialog _ QPrintDialog(printer, self)
         dialog.setWindowTitle("Print Document")
 
-        if editor.textCursor().hasSelection
+        __ editor.textCursor().hasSelection
             dialog.addEnabledOption(QAbstractPrintDialog.PrintSelection)
 
-        if dialog.e.. !_ QDialog.Accepted:
-            return
+        __ dialog.e.. !_ QDialog.Accepted:
+            r_
 
         editor.print_(printer)
 
 
-class DetailsDialog(QDialog):
-    ___ __init__(self, title, parent):
+c_ DetailsDialog(QDialog):
+    ___ __init__  title, parent):
         super(DetailsDialog, self).__init__(parent)
 
         self.items _ ("T-shirt", "Badge", "Reference book", "Coffee cup")
@@ -266,32 +266,32 @@ class DetailsDialog(QDialog):
             quantity _ int(self.itemsTable.item(row, 1).data(Qt.DisplayRole))
             orderList.append((text, max(0, quantity)))
 
-        return orderList
+        r_ orderList
 
     ___ senderName(self):
-        return self.nameEdit.text()
+        r_ self.nameEdit.text()
 
     ___ senderAddress(self):
-        return self.addressEdit.toPlainText()
+        r_ self.addressEdit.toPlainText()
 
     ___ sendOffers(self):
-        return self.offersCheckBox.isChecked()
+        r_ self.offersCheckBox.isChecked()
 
     ___ verify(self):
-        if self.nameEdit.text() and self.addressEdit.toPlainText
+        __ self.nameEdit.text() and self.addressEdit.toPlainText
             self.accept()
-            return
+            r_
 
-        answer _ QMessageBox.warning(self, "Incomplete Form",
+        answer _ ?MB...warning  "Incomplete Form",
                 "The form does not contain all the necessary information.\n"
                 "Do you want to discard it?",
-                QMessageBox.Yes, QMessageBox.No)
+                ?MB...Yes, ?MB...No)
 
-        if answer == QMessageBox.Yes:
+        __ answer == ?MB...Yes:
             self.reject()
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

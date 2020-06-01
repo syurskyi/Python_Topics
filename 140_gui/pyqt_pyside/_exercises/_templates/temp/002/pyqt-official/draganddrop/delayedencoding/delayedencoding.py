@@ -45,7 +45,7 @@
 
 ____ ?.QtCore ______ (pyqtSignal, QBuffer, QByteArray, QFile, QIODevice,
         QMimeData, Qt)
-____ ?.QtGui ______ QDrag, QIcon, QImage, QPainter, QPixmap
+____ ?.?G.. ______ QDrag, QIcon, QImage, QPainter, QPixmap
 ____ ?.?W.. ______ (?A.., QGridLayout, QLabel, ?PB..,
         QScrollArea, QWidget)
 ____ ?.QtSvg ______ QSvgWidget
@@ -53,7 +53,7 @@ ____ ?.QtSvg ______ QSvgWidget
 ______ delayedencoding_rc
 
 
-class MimeData(QMimeData):
+c_ MimeData(QMimeData):
 
     dataRequested _ pyqtSignal(str)
 
@@ -61,22 +61,22 @@ class MimeData(QMimeData):
         formats _ QMimeData.formats(self)
         formats.append('image/png')
 
-        return formats
+        r_ formats
 
-    ___ retrieveData(self, mimeType, qvtype):
+    ___ retrieveData  mimeType, qvtype):
         self.dataRequested.emit(mimeType)
 
-        return QMimeData.retrieveData(self, mimeType, qvtype)
+        r_ QMimeData.retrieveData  mimeType, qvtype)
 
 
-class SourceWidget(QWidget):
-    ___ __init__(self, parent_None):
+c_ SourceWidget(QWidget):
+    ___ __init__  parent_None):
         super(SourceWidget, self).__init__(parent)
 
-        self.mimeData _ None
+        self.mimeData _ N..
 
         imageFile _ QFile(':/images/example.svg')
-        imageFile.open(QIODevice.ReadOnly)
+        imageFile.o..(QIODevice.ReadOnly)
         self.imageData _ imageFile.readAll()
         imageFile.close()
 
@@ -99,9 +99,9 @@ class SourceWidget(QWidget):
         self.setLayout(layout)
         self.setWindowTitle("Delayed Encoding")
 
-    ___ createData(self, mimeType):
-        if mimeType !_ 'image/png':
-            return
+    ___ createData  mimeType):
+        __ mimeType !_ 'image/png':
+            r_
 
         image _ QImage(self.imageLabel.size(), QImage.Format_RGB32)
         painter _ QPainter()
@@ -111,7 +111,7 @@ class SourceWidget(QWidget):
 
         data _ QByteArray()
         buffer _ QBuffer(data)
-        buffer.open(QIODevice.WriteOnly)
+        buffer.o..(QIODevice.WriteOnly)
         image.save(buffer, 'PNG')
         buffer.close()
         self.mimeData.setData('image/png', data)
@@ -126,7 +126,7 @@ class SourceWidget(QWidget):
         drag.exec_(Qt.CopyAction)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

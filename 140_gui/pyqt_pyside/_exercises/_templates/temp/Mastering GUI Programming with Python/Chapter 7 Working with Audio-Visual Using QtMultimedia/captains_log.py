@@ -1,11 +1,11 @@
 ______ sys
-____ ? ______ QtCore as qtc
-____ ? ______ ?W.. as qtw
-____ ? ______ QtMultimedia as qtmm
-____ ? ______ QtMultimediaWidgets as qtmmw
+____ ? ______ QtCore __ qtc
+____ ? ______ ?W.. __ qtw
+____ ? ______ QtMultimedia __ qtmm
+____ ? ______ QtMultimediaWidgets __ qtmmw
 
 
-class MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.QMainWindow):
 
     ___ __init__(self):
         """MainWindow constructor.
@@ -23,18 +23,18 @@ class MainWindow(qtw.QMainWindow):
         self.file_list _ qtw.QListWidget()
         base_widget.layout().addWidget(self.file_list)
 
-        self.setCentralWidget(base_widget)
+        self.sCW..(base_widget)
 
         # transport controls
         toolbar _ self.addToolBar("Transport")
-        record_act _ toolbar.addAction('Rec')
-        stop_act _ toolbar.addAction('Stop')
-        play_act _ toolbar.addAction('Play')
-        pause_act _ toolbar.addAction('Pause')
+        record_act _ toolbar.aA..('Rec')
+        stop_act _ toolbar.aA..('Stop')
+        play_act _ toolbar.aA..('Play')
+        pause_act _ toolbar.aA..('Pause')
 
         # define the video directory
         self.video_dir _ qtc.QDir.home()
-        if not self.video_dir.cd('captains_log'):
+        __ no. self.video_dir.cd('captains_log'):
             qtc.QDir.home().mkdir('captains_log')
             self.video_dir.cd('captains_log')
 
@@ -52,10 +52,10 @@ class MainWindow(qtw.QMainWindow):
         notebook.addTab(self.video_widget, "Play")
 
         # connect the transport
-        play_act.triggered.c..(self.player.play)
-        pause_act.triggered.c..(self.player.pause)
-        stop_act.triggered.c..(self.player.stop)
-        play_act.triggered.c..(
+        play_act.t__.c..(self.player.play)
+        pause_act.t__.c..(self.player.pause)
+        stop_act.t__.c..(self.player.stop)
+        play_act.t__.c..(
             lambda: notebook.setCurrentWidget(self.video_widget))
 
         # connect file list
@@ -72,9 +72,9 @@ class MainWindow(qtw.QMainWindow):
 
         # set up camera
         self.camera _ self.camera_check()
-        if not self.camera:
+        __ no. self.camera:
             self.s..
-            return
+            r_
         self.camera.setCaptureMode(qtmm.QCamera.CaptureVideo)
 
         # Create the viewfinder widget for recording
@@ -94,15 +94,15 @@ class MainWindow(qtw.QMainWindow):
         #self.recorder.setVideoSettings(settings)
 
         # connect the transport
-        record_act.triggered.c..(self.record)
-        record_act.triggered.c..(
+        record_act.t__.c..(self.record)
+        record_act.t__.c..(
             lambda: notebook.setCurrentWidget(self.cvf)
         )
-        pause_act.triggered.c..(self.recorder.pause)
-        stop_act.triggered.c..(self.recorder.stop)
+        pause_act.t__.c..(self.recorder.pause)
+        stop_act.t__.c..(self.recorder.stop)
 
         # refresh the files when the recording is made
-        stop_act.triggered.c..(self.refresh_video_list)
+        stop_act.t__.c..(self.refresh_video_list)
 
 
         self.s..
@@ -120,7 +120,7 @@ class MainWindow(qtw.QMainWindow):
         for fn in sorted(video_files):
             self.file_list.addItem(fn)
 
-    ___ on_file_selected(self, item):
+    ___ on_file_selected  item):
         fn _ item.text()
         url _ qtc.QUrl.fromLocalFile(self.video_dir.filePath(fn))
         content _ qtmm.QMediaContent(url)
@@ -134,14 +134,14 @@ class MainWindow(qtw.QMainWindow):
     ___ camera_check(self):
         cameras _ qtmm.QCameraInfo.availableCameras()
         print(cameras)
-        if not cameras:
-            qtw.QMessageBox.critical(
+        __ no. cameras:
+            qtw.?MB...critical(
                 self,
                 'No cameras',
                 'No cameras were found, recording disabled.'
             )
-        else:
-            return qtmm.QCamera(cameras[0])
+        ____
+            r_ qtmm.QCamera(cameras[0])
 
     ___ record(self):
         # create a filename
@@ -153,7 +153,7 @@ class MainWindow(qtw.QMainWindow):
         # start recording
         self.recorder.record()
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtw.?A..(sys.argv)
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.

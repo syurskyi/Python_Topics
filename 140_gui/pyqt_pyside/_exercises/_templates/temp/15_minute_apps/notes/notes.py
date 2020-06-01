@@ -1,4 +1,4 @@
-____ ?.QtGui ______ *
+____ ?.?G.. ______ *
 ____ ?.?W.. ______ *
 ____ ?.QtCore ______ *
 ____ ?.QtMultimedia ______ *
@@ -13,7 +13,7 @@ ____ sqlalchemy ______ create_engine
 
 Base _ declarative_base()
 
-class Note(Base):
+c_ Note(Base):
     __tablename__ _ 'note'
     id _ Column(Integer, primary_key_True)
     text _ Column(String(1000), nullable_False)
@@ -34,18 +34,18 @@ _ACTIVE_NOTES _ {}
 ___ create_new_note
     MainWindow()
 
-class MainWindow(QMainWindow, Ui_MainWindow):
-    ___ __init__(self, *args, obj_None, **kwargs):
+c_ MainWindow(QMainWindow, Ui_MainWindow):
+    ___ __init__  *args, obj_None, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
         self.setupUi(self)
         self.setWindowFlags(self.windowFlags() | Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint)
         self.s..
 
         # Load/save note data, store this notes db reference.
-        if obj:
+        __ obj:
             self.obj _ obj
             self.load()
-        else:
+        ____
             self.obj _ Note()
             self.save()
 
@@ -69,32 +69,32 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         session.commit()
         _ACTIVE_NOTES[self.obj.id] _ self
 
-    ___ mousePressEvent(self, e):
+    ___ mousePressEvent  e):
         self.previous_pos _ e.globalPos()
 
-    ___ mouseMoveEvent(self, e):
+    ___ mouseMoveEvent  e):
         delta _ e.globalPos() - self.previous_pos
         self.move(self.x() + delta.x(), self.y()+delta.y())
         self.previous_pos _ e.globalPos()
 
         self._drag_active _ True
 
-    ___ mouseReleaseEvent(self, e):
-        if self._drag_active:
+    ___ mouseReleaseEvent  e):
+        __ self._drag_active:
             self.save()
             self._drag_active _ False
 
     ___ delete_window(self):
-        result _ QMessageBox.question(self, "Confirm delete", "Are you sure you want to delete this note?")
-        if result == QMessageBox.Yes:
+        result _ ?MB...q..  "Confirm delete", "Are you sure you want to delete this note?")
+        __ result == ?MB...Yes:
             session.delete(self.obj)
             session.commit()
             self.close()
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ ?
-    app.setApplicationName("Brown Note")
+    app.sAN..("Brown Note")
     app.setStyle("Fusion")
 
     # Custom brown palette.
@@ -108,9 +108,9 @@ if __name__ == '__main__':
     app.setPalette(palette)
 
     existing_notes _ session.query(Note).all()
-    if len(existing_notes) == 0:
+    __ len(existing_notes) == 0:
         MainWindow()
-    else:
+    ____
         for note in existing_notes:
             MainWindow(obj_note)
 

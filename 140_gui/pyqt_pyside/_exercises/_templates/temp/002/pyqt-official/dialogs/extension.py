@@ -48,8 +48,8 @@ ____ ?.?W.. ______ (?A.., QCheckBox, QDialog,
         ?PB.., QVBoxLayout, QWidget)
 
 
-class FindDialog(QDialog):
-    ___ __init__(self, parent_None):
+c_ FindDialog(QDialog):
+    ___ __init__  parent_None):
         super(FindDialog, self).__init__(parent)
 
         label _ QLabel("Find &what:")
@@ -65,7 +65,7 @@ class FindDialog(QDialog):
 
         moreButton _ ?PB..("&More")
         moreButton.setCheckable(True)
-        moreButton.setAutoDefault(False)
+        moreButton.setAutoDefault F..
 
         extension _ QWidget()
 
@@ -107,7 +107,7 @@ class FindDialog(QDialog):
         extension.hide()
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

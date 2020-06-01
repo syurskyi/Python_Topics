@@ -50,8 +50,8 @@ ____ ?.?W.. ______ (?A.., QCheckBox, QComboBox, QDateTimeEdit,
         QVBoxLayout, QWidget)
 
 
-class WidgetGallery(QDialog):
-    ___ __init__(self, parent_None):
+c_ WidgetGallery(QDialog):
+    ___ __init__  parent_None):
         super(WidgetGallery, self).__init__(parent)
 
         self.originalPalette _ ?A...palette()
@@ -103,14 +103,14 @@ class WidgetGallery(QDialog):
         self.setWindowTitle("Styles")
         self.changeStyle('Windows')
 
-    ___ changeStyle(self, styleName):
+    ___ changeStyle  styleName):
         ?A...setStyle(QStyleFactory.create(styleName))
         self.changePalette()
 
     ___ changePalette(self):
-        if (self.useStylePaletteCheckBox.isChecked()):
+        __ (self.useStylePaletteCheckBox.isChecked()):
             ?A...setPalette(?A...style().standardPalette())
-        else:
+        ____
             ?A...setPalette(self.originalPalette)
 
     ___ advanceProgressBar(self):
@@ -174,7 +174,7 @@ class WidgetGallery(QDialog):
         tab2 _ QWidget()
         textEdit _ QTextEdit()
 
-        textEdit.setPlainText("Twinkle, twinkle, little star,\n"
+        textEdit.sPT..("Twinkle, twinkle, little star,\n"
                               "How I wonder what you are.\n" 
                               "Up above the world so high,\n"
                               "Like a diamond in the sky.\n"
@@ -233,7 +233,7 @@ class WidgetGallery(QDialog):
         timer.start(1000)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

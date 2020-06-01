@@ -47,13 +47,13 @@ ______ math, random
 
 ____ ?.QtCore ______ (QPoint, QPointF, QRect, QRectF, QSize, Qt, QTime,
         QTimer)
-____ ?.QtGui ______ (QBrush, QColor, QFontMetrics, QImage,
+____ ?.?G.. ______ (QBrush, QColor, QFontMetrics, QImage,
         QOpenGLVersionProfile, QPainter, QRadialGradient, QSurfaceFormat)
 ____ ?.?W.. ______ ?A.., QOpenGLWidget
 
 
-class Bubble(object):
-    ___ __init__(self, position, radius, velocity):
+c_ Bubble(object):
+    ___ __init__  position, radius, velocity):
         self.position _ position
         self.vel _ velocity
         self.radius _ radius
@@ -71,7 +71,7 @@ class Bubble(object):
         gradient.setColorAt(1, self.outerColor)
         self.brush _ QBrush(gradient)
 
-    ___ drawBubble(self, painter):
+    ___ drawBubble  painter):
         painter.save()
         painter.translate(self.position.x() - self.radius,
                 self.position.y() - self.radius)
@@ -85,37 +85,37 @@ class Bubble(object):
         blue _ random.randrange(205, 256)
         alpha _ random.randrange(91, 192)
 
-        return QColor(red, green, blue, alpha)
+        r_ QColor(red, green, blue, alpha)
 
-    ___ move(self, bbox):
+    ___ move  bbox):
         self.position +_ self.vel
         leftOverflow _ self.position.x() - self.radius - bbox.left()
         rightOverflow _ self.position.x() + self.radius - bbox.right()
         topOverflow _ self.position.y() - self.radius - bbox.top()
         bottomOverflow _ self.position.y() + self.radius - bbox.bottom()
 
-        if leftOverflow < 0.0:
+        __ leftOverflow < 0.0:
             self.position.setX(self.position.x() - 2 * leftOverflow)
             self.vel.setX(-self.vel.x())
-        elif rightOverflow > 0.0:
+        ____ rightOverflow > 0.0:
             self.position.setX(self.position.x() - 2 * rightOverflow)
             self.vel.setX(-self.vel.x())
 
-        if topOverflow < 0.0:
+        __ topOverflow < 0.0:
             self.position.setY(self.position.y() - 2 * topOverflow)
             self.vel.setY(-self.vel.y())
-        elif bottomOverflow > 0.0:
+        ____ bottomOverflow > 0.0:
             self.position.setY(self.position.y() - 2 * bottomOverflow)
             self.vel.setY(-self.vel.y())
 
     ___ rect(self):
-        return QRectF(self.position.x() - self.radius,
+        r_ QRectF(self.position.x() - self.radius,
                 self.position.y() - self.radius, 2 * self.radius,
                 2 * self.radius)
 
 
-class GLWidget(QOpenGLWidget):
-    ___ __init__(self, parent_None):
+c_ GLWidget(QOpenGLWidget):
+    ___ __init__  parent_None):
         super(GLWidget, self).__init__(parent)
 
         midnight _ QTime(0, 0, 0)
@@ -133,27 +133,27 @@ class GLWidget(QOpenGLWidget):
         self.trolltechPurple _ QColor.fromCmykF(0.39, 0.39, 0.0, 0.0)
 
         self.animationTimer _ QTimer()
-        self.animationTimer.setSingleShot(False)
+        self.animationTimer.setSingleShot F..
         self.animationTimer.timeout.c..(self.animate)
         self.animationTimer.start(25)
 
-        self.setAutoFillBackground(False)
+        self.setAutoFillBackground F..
         self.setMinimumSize(200, 200)
         self.setWindowTitle("Overpainting a Scene")
 
-    ___ setXRotation(self, angle):
+    ___ setXRotation  angle):
         angle _ self.normalizeAngle(angle)
-        if angle !_ self.xRot:
+        __ angle !_ self.xRot:
             self.xRot _ angle
 
-    ___ setYRotation(self, angle):
+    ___ setYRotation  angle):
         angle _ self.normalizeAngle(angle)
-        if angle !_ self.yRot:
+        __ angle !_ self.yRot:
             self.yRot _ angle
 
-    ___ setZRotation(self, angle):
+    ___ setZRotation  angle):
         angle _ self.normalizeAngle(angle)
-        if angle !_ self.zRot:
+        __ angle !_ self.zRot:
             self.zRot _ angle
 
     ___ initializeGL(self):
@@ -164,23 +164,23 @@ class GLWidget(QOpenGLWidget):
 
         self.object _ self.makeObject()
 
-    ___ mousePressEvent(self, event):
+    ___ mousePressEvent  event):
         self.lastPos _ event.pos()
 
-    ___ mouseMoveEvent(self, event):
+    ___ mouseMoveEvent  event):
         dx _ event.x() - self.lastPos.x()
         dy _ event.y() - self.lastPos.y()
 
-        if event.buttons() & Qt.LeftButton:
+        __ event.buttons() & Qt.LeftButton:
             self.setXRotation(self.xRot + 8 * dy)
             self.setYRotation(self.yRot + 8 * dx)
-        elif event.buttons() & Qt.RightButton:
+        ____ event.buttons() & Qt.RightButton:
             self.setXRotation(self.xRot + 8 * dy)
             self.setZRotation(self.zRot + 8 * dx)
 
         self.lastPos _ event.pos()
 
-    ___ paintEvent(self, event):
+    ___ paintEvent  event):
         self.makeCurrent()
 
         self.gl.glMatrixMode(self.gl.GL_MODELVIEW)
@@ -214,20 +214,20 @@ class GLWidget(QOpenGLWidget):
         painter.setRenderHint(QPainter.Antialiasing)
 
         for bubble in self.bubbles:
-            if bubble.rect().intersects(QRectF(event.rect())):
+            __ bubble.rect().intersects(QRectF(event.rect())):
                 bubble.drawBubble(painter)
 
         self.drawInstructions(painter)
         painter.end()
 
-    ___ resizeGL(self, width, height):
+    ___ resizeGL  width, height):
         self.setupViewport(width, height)
 
-    ___ showEvent(self, event):
+    ___ showEvent  event):
         self.createBubbles(20 - len(self.bubbles))
 
     ___ sizeHint(self):
-        return QSize(400, 400)
+        r_ QSize(400, 400)
 
     ___ makeObject(self):
         list _ self.gl.glGenLists(1)
@@ -284,9 +284,9 @@ class GLWidget(QOpenGLWidget):
         self.gl.glEnd()
 
         self.gl.glEndList()
-        return list
+        r_ list
 
-    ___ quad(self, x1, y1, x2, y2, x3, y3, x4, y4):
+    ___ quad  x1, y1, x2, y2, x3, y3, x4, y4):
         self.gl.glNormal3d(0.0, 0.0, -1.0)
         self.gl.glVertex3d(x1, y1, -0.05)
         self.gl.glVertex3d(x2, y2, -0.05)
@@ -299,7 +299,7 @@ class GLWidget(QOpenGLWidget):
         self.gl.glVertex3d(x2, y2, +0.05)
         self.gl.glVertex3d(x1, y1, +0.05)
 
-    ___ extrude(self, x1, y1, x2, y2):
+    ___ extrude  x1, y1, x2, y2):
         self.setColor(self.trolltechGreen.darker(250 + int(100 * x1)))
 
         self.gl.glNormal3d((x1 + x2)/2.0, (y1 + y2)/2.0, 0.0)
@@ -308,14 +308,14 @@ class GLWidget(QOpenGLWidget):
         self.gl.glVertex3d(x2, y2, -0.05)
         self.gl.glVertex3d(x1, y1, -0.05)
 
-    ___ normalizeAngle(self, angle):
+    ___ normalizeAngle  angle):
         while angle < 0:
             angle +_ 360 * 16
         while angle > 360 * 16:
             angle -_ 360 * 16
-        return angle
+        r_ angle
 
-    ___ createBubbles(self, number):
+    ___ createBubbles  number):
         for i in range(number):
             position _ QPointF(self.width()*(0.1 + 0.8*random.random()),
                                self.height()*(0.1 + 0.8*random.random()))
@@ -331,7 +331,7 @@ class GLWidget(QOpenGLWidget):
 
         self.update()
 
-    ___ setupViewport(self, width, height):
+    ___ setupViewport  width, height):
         side _ min(width, height)
         self.gl.glViewport((width - side) // 2, (height - side) // 2, side,
                 side)
@@ -341,7 +341,7 @@ class GLWidget(QOpenGLWidget):
         self.gl.glOrtho(-0.5, +0.5, +0.5, -0.5, 4.0, 15.0)
         self.gl.glMatrixMode(self.gl.GL_MODELVIEW)
 
-    ___ drawInstructions(self, painter):
+    ___ drawInstructions  painter):
         text _ "Click and drag with the left mouse button to rotate the Qt " \
                 "logo."
         metrics _ QFontMetrics(self.font())
@@ -359,14 +359,14 @@ class GLWidget(QOpenGLWidget):
         painter.drawText((self.width() - rect.width())/2, border, rect.width(),
                 rect.height(), Qt.AlignCenter | Qt.TextWordWrap, text)
 
-    ___ setClearColor(self, c):
+    ___ setClearColor  c):
         self.gl.glClearColor(c.redF(), c.greenF(), c.blueF(), c.alphaF())
 
-    ___ setColor(self, c):
+    ___ setColor  c):
         self.gl.glColor4f(c.redF(), c.greenF(), c.blueF(), c.alphaF())
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     app _ ?A..(sys.argv)
 

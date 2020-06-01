@@ -43,18 +43,18 @@
 
 
 ____ ?.QtCore ______ Qt
-____ ?.QtGui ______ QKeySequence
-____ ?.?W.. ______ (QAction, QActionGroup, ?A.., QFrame,
-        QLabel, QMainWindow, QMenu, QMessageBox, QSizePolicy, QVBoxLayout,
+____ ?.?G.. ______ ?KS..
+____ ?.?W.. ______ (?A.., QActionGroup, ?A.., QFrame,
+        QLabel, QMainWindow, QMenu, ?MB.., QSizePolicy, QVBoxLayout,
         QWidget)
 
 
-class MainWindow(QMainWindow):
+c_ MainWindow ?MW..
     ___ __init__(self):
         super(MainWindow, self).__init__()
 
         widget _ QWidget()
-        self.setCentralWidget(widget)
+        self.sCW..(widget)
 
         topFiller _ QWidget()
         topFiller.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
@@ -84,17 +84,17 @@ class MainWindow(QMainWindow):
         self.setMinimumSize(160,160)
         self.resize(480,320)
 
-    ___ contextMenuEvent(self, event):
+    ___ contextMenuEvent  event):
         menu _ QMenu(self)
-        menu.addAction(self.cutAct)
-        menu.addAction(self.copyAct)
-        menu.addAction(self.pasteAct)
+        menu.aA..(self.cutAct)
+        menu.aA..(self.copyAct)
+        menu.aA..(self.pasteAct)
         menu.exec_(event.globalPos())
 
     ___ newFile(self):
         self.infoLabel.sT..("Invoked <b>File|New</b>")
 
-    ___ open(self):
+    ___ o..(self):
         self.infoLabel.sT..("Invoked <b>File|Open</b>")
         	
     ___ save(self):
@@ -144,7 +144,7 @@ class MainWindow(QMainWindow):
 
     ___ about(self):
         self.infoLabel.sT..("Invoked <b>Help|About</b>")
-        QMessageBox.about(self, "About Menu",
+        ?MB...about  "About Menu",
                 "The <b>Menu</b> example shows how to create menu-bar menus "
                 "and context menus.")
 
@@ -152,40 +152,40 @@ class MainWindow(QMainWindow):
         self.infoLabel.sT..("Invoked <b>Help|About Qt</b>")
 
     ___ createActions(self):
-        self.newAct _ QAction("&New", self, shortcut_QKeySequence.New,
+        self.newAct _ ?A..("&New", self, shortcut_QKeySequence.New,
                 statusTip_"Create a new file", triggered_self.newFile)
 
-        self.openAct _ QAction("&Open...", self, shortcut_QKeySequence.Open,
-                statusTip_"Open an existing file", triggered_self.open)
+        self.openAct _ ?A..("&Open...", self, shortcut_QKeySequence.Open,
+                statusTip_"Open an existing file", triggered_self.o..)
 
-        self.saveAct _ QAction("&Save", self, shortcut_QKeySequence.Save,
+        self.saveAct _ ?A..("&Save", self, shortcut_QKeySequence.Save,
                 statusTip_"Save the document to disk", triggered_self.save)
 
-        self.printAct _ QAction("&Print...", self, shortcut_QKeySequence.Print,
+        self.printAct _ ?A..("&Print...", self, shortcut_QKeySequence.Print,
                 statusTip_"Print the document", triggered_self.print_)
 
-        self.exitAct _ QAction("E&xit", self, shortcut_"Ctrl+Q",
+        self.exitAct _ ?A..("E&xit", self, shortcut_"Ctrl+Q",
                 statusTip_"Exit the application", triggered_self.close)
 
-        self.undoAct _ QAction("&Undo", self, shortcut_QKeySequence.Undo,
+        self.undoAct _ ?A..("&Undo", self, shortcut_QKeySequence.Undo,
                 statusTip_"Undo the last operation", triggered_self.undo)
 
-        self.redoAct _ QAction("&Redo", self, shortcut_QKeySequence.Redo,
+        self.redoAct _ ?A..("&Redo", self, shortcut_QKeySequence.Redo,
                 statusTip_"Redo the last operation", triggered_self.redo)
 
-        self.cutAct _ QAction("Cu&t", self, shortcut_QKeySequence.Cut,
+        self.cutAct _ ?A..("Cu&t", self, shortcut_QKeySequence.Cut,
                 statusTip_"Cut the current selection's contents to the clipboard",
                 triggered_self.cut)
 
-        self.copyAct _ QAction("&Copy", self, shortcut_QKeySequence.Copy,
+        self.copyAct _ ?A..("&Copy", self, shortcut_QKeySequence.Copy,
                 statusTip_"Copy the current selection's contents to the clipboard",
                 triggered_self.copy)
 
-        self.pasteAct _ QAction("&Paste", self, shortcut_QKeySequence.Paste,
+        self.pasteAct _ ?A..("&Paste", self, shortcut_QKeySequence.Paste,
                 statusTip_"Paste the clipboard's contents into the current selection",
                 triggered_self.paste)
 
-        self.boldAct _ QAction("&Bold", self, checkable_True,
+        self.boldAct _ ?A..("&Bold", self, checkable_True,
                 shortcut_"Ctrl+B", statusTip_"Make the text bold",
                 triggered_self.bold)
 
@@ -193,7 +193,7 @@ class MainWindow(QMainWindow):
         boldFont.setBold(True)
         self.boldAct.setFont(boldFont)
 
-        self.italicAct _ QAction("&Italic", self, checkable_True,
+        self.italicAct _ ?A..("&Italic", self, checkable_True,
                 shortcut_"Ctrl+I", statusTip_"Make the text italic",
                 triggered_self.italic)
 
@@ -201,82 +201,82 @@ class MainWindow(QMainWindow):
         italicFont.setItalic(True)
         self.italicAct.setFont(italicFont)
 
-        self.setLineSpacingAct _ QAction("Set &Line Spacing...", self,
+        self.setLineSpacingAct _ ?A..("Set &Line Spacing...", self,
                 statusTip_"Change the gap between the lines of a paragraph",
                 triggered_self.setLineSpacing)
 
-        self.setParagraphSpacingAct _ QAction("Set &Paragraph Spacing...",
+        self.setParagraphSpacingAct _ ?A..("Set &Paragraph Spacing...",
                 self, statusTip_"Change the gap between paragraphs",
                 triggered_self.setParagraphSpacing)
 
-        self.aboutAct _ QAction("&About", self,
+        self.aboutAct _ ?A..("&About", self,
                 statusTip_"Show the application's About box",
                 triggered_self.about)
 
-        self.aboutQtAct _ QAction("About &Qt", self,
+        self.aboutQtAct _ ?A..("About &Qt", self,
                 statusTip_"Show the Qt library's About box",
                 triggered_self.aboutQt)
-        self.aboutQtAct.triggered.c..(?A...instance().aboutQt)
+        self.aboutQtAct.t__.c..(?A...instance().aboutQt)
 
-        self.leftAlignAct _ QAction("&Left Align", self, checkable_True,
+        self.leftAlignAct _ ?A..("&Left Align", self, checkable_True,
                 shortcut_"Ctrl+L", statusTip_"Left align the selected text",
                 triggered_self.leftAlign)
 
-        self.rightAlignAct _ QAction("&Right Align", self, checkable_True,
+        self.rightAlignAct _ ?A..("&Right Align", self, checkable_True,
                 shortcut_"Ctrl+R", statusTip_"Right align the selected text",
                 triggered_self.rightAlign)
 
-        self.justifyAct _ QAction("&Justify", self, checkable_True,
+        self.justifyAct _ ?A..("&Justify", self, checkable_True,
                 shortcut_"Ctrl+J", statusTip_"Justify the selected text",
                 triggered_self.justify)
 
-        self.centerAct _ QAction("&Center", self, checkable_True,
+        self.centerAct _ ?A..("&Center", self, checkable_True,
                 shortcut_"Ctrl+C", statusTip_"Center the selected text",
                 triggered_self.center)
 
         self.alignmentGroup _ QActionGroup(self)
-        self.alignmentGroup.addAction(self.leftAlignAct)
-        self.alignmentGroup.addAction(self.rightAlignAct)
-        self.alignmentGroup.addAction(self.justifyAct)
-        self.alignmentGroup.addAction(self.centerAct)
+        self.alignmentGroup.aA..(self.leftAlignAct)
+        self.alignmentGroup.aA..(self.rightAlignAct)
+        self.alignmentGroup.aA..(self.justifyAct)
+        self.alignmentGroup.aA..(self.centerAct)
         self.leftAlignAct.setChecked(True)
 
     ___ createMenus(self):
-        self.fileMenu _ self.menuBar().addMenu("&File")
-        self.fileMenu.addAction(self.newAct)
-        self.fileMenu.addAction(self.openAct)
-        self.fileMenu.addAction(self.saveAct)
-        self.fileMenu.addAction(self.printAct)
+        self.fileMenu _ self.mB.. .aM..("&File")
+        self.fileMenu.aA..(self.newAct)
+        self.fileMenu.aA..(self.openAct)
+        self.fileMenu.aA..(self.saveAct)
+        self.fileMenu.aA..(self.printAct)
         self.fileMenu.addSeparator()
-        self.fileMenu.addAction(self.exitAct)
+        self.fileMenu.aA..(self.exitAct)
 
-        self.editMenu _ self.menuBar().addMenu("&Edit")
-        self.editMenu.addAction(self.undoAct)
-        self.editMenu.addAction(self.redoAct)
+        self.editMenu _ self.mB.. .aM..("&Edit")
+        self.editMenu.aA..(self.undoAct)
+        self.editMenu.aA..(self.redoAct)
         self.editMenu.addSeparator()
-        self.editMenu.addAction(self.cutAct)
-        self.editMenu.addAction(self.copyAct)
-        self.editMenu.addAction(self.pasteAct)
+        self.editMenu.aA..(self.cutAct)
+        self.editMenu.aA..(self.copyAct)
+        self.editMenu.aA..(self.pasteAct)
         self.editMenu.addSeparator()
 
-        self.helpMenu _ self.menuBar().addMenu("&Help")
-        self.helpMenu.addAction(self.aboutAct)
-        self.helpMenu.addAction(self.aboutQtAct)
+        self.helpMenu _ self.mB.. .aM..("&Help")
+        self.helpMenu.aA..(self.aboutAct)
+        self.helpMenu.aA..(self.aboutQtAct)
 
-        self.formatMenu _ self.editMenu.addMenu("&Format")
-        self.formatMenu.addAction(self.boldAct)
-        self.formatMenu.addAction(self.italicAct)
+        self.formatMenu _ self.editMenu.aM..("&Format")
+        self.formatMenu.aA..(self.boldAct)
+        self.formatMenu.aA..(self.italicAct)
         self.formatMenu.addSeparator().sT..("Alignment")
-        self.formatMenu.addAction(self.leftAlignAct)
-        self.formatMenu.addAction(self.rightAlignAct)
-        self.formatMenu.addAction(self.justifyAct)
-        self.formatMenu.addAction(self.centerAct)
+        self.formatMenu.aA..(self.leftAlignAct)
+        self.formatMenu.aA..(self.rightAlignAct)
+        self.formatMenu.aA..(self.justifyAct)
+        self.formatMenu.aA..(self.centerAct)
         self.formatMenu.addSeparator()
-        self.formatMenu.addAction(self.setLineSpacingAct)
-        self.formatMenu.addAction(self.setParagraphSpacingAct)
+        self.formatMenu.aA..(self.setLineSpacingAct)
+        self.formatMenu.aA..(self.setParagraphSpacingAct)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

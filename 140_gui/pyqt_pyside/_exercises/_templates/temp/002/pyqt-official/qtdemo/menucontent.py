@@ -49,14 +49,14 @@ ____ demotextitem ______ DemoTextItem
 ____ headingitem ______ HeadingItem
 
 
-class MenuContentItem(DemoItem):
-    ___ __init__(self, el, parent_None):
+c_ MenuContentItem(DemoItem):
+    ___ __init__  el, parent_None):
         super(MenuContentItem, self).__init__(parent)
 
         self.name _ el.getAttribute('name')
-        self.heading _ None
-        self.description1 _ None
-        self.description2 _ None
+        self.heading _ N..
+        self.description1 _ N..
+        self.description2 _ N..
 
         readme_dir _ QFileInfo(__file__).dir()
         readme_dir.cdUp()
@@ -67,32 +67,32 @@ class MenuContentItem(DemoItem):
         self._prepared _ False
 
     ___ prepare(self):
-        if not self._prepared:
+        __ no. self._prepared:
             self.createContent()
             self._prepared_ True
 
-    ___ animationStopped(self, id):
-        if self.name == Colors.rootMenuName:
+    ___ animationStopped  id):
+        __ self.name == Colors.rootMenuName:
             # Optimization hack.
-            return
+            r_
 
-        if id == DemoItemAnimation.ANIM_OUT:
+        __ id == DemoItemAnimation.ANIM_OUT:
             # Free up some memory
-            self.heading _ None
-            self.description1 _ None
-            self.description2 _ None
+            self.heading _ N..
+            self.description1 _ N..
+            self.description2 _ N..
             self._prepared _ False
 
-    ___ loadDescription(self, startPara, nrPara):
+    ___ loadDescription  startPara, nrPara):
         readme _ QFile(self.readmePath)
-        if not readme.open(QFile.ReadOnly):
+        __ no. readme.o..(QFile.ReadOnly):
             Colors.debug("- MenuContentItem.loadDescription: Could not load:", self.readmePath)
-            return ""
+            r_ ""
 
         in_str _ QTextStream(readme)
         # Skip a certain number of paragraphs.
         while startPara:
-            if not in_str.readLine
+            __ no. in_str.readLine
                 startPara -_ 1
 
         # Read in the number of wanted paragraphs.
@@ -101,20 +101,20 @@ class MenuContentItem(DemoItem):
         while True:
             result +_ line + " "
             line _ in_str.readLine()
-            if not line:
+            __ no. line:
                 nrPara -_ 1
                 line _ "<br><br>" + in_str.readLine()
 
-            if nrPara == 0 or in_str.atEnd
+            __ nrPara == 0 or in_str.atEnd
                 break
 
-        return Colors.contentColor + result
+        r_ Colors.contentColor + result
 
     ___ createContent(self):
         # Create the items.
         self.heading _ HeadingItem(self.name, self)
         para1 _ self.loadDescription(0, 1)
-        if not para1:
+        __ no. para1:
             para1 _ Colors.contentColor + "Could not load description. Ensure that the documentation for Qt is built."
         bgcolor _ Colors.sceneBg1.darker(200)
         bgcolor.setAlpha(100)
@@ -130,4 +130,4 @@ class MenuContentItem(DemoItem):
         self.description2.setPos(0, self.description1.pos().y() + self.description1.boundingRect().height() + 15)
 
     ___ boundingRect(self):
-        return QRectF(0, 0, 500, 350)
+        r_ QRectF(0, 0, 500, 350)

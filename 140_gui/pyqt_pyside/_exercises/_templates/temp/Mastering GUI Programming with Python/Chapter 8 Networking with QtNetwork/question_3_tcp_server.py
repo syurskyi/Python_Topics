@@ -1,8 +1,8 @@
 ______ sys
-____ ? ______ QtCore as qtc
-____ ? ______ QtNetwork as qtn
+____ ? ______ QtCore __ qtc
+____ ? ______ QtNetwork __ qtn
 
-class Server(qtn.QTcpServer):
+c_ Server(qtn.QTcpServer):
 
     ___ __init__(self):
         super().__init__()
@@ -23,7 +23,7 @@ class Server(qtn.QTcpServer):
             self.datastream.writeRawData(b'PyQt5 Rocks!')
             cx.disconnectFromHost()
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtc.QCoreApplication(sys.argv)
     server _ Server()
     sys.exit(app.exec())

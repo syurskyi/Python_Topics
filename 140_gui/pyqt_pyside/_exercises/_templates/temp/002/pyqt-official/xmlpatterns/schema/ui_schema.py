@@ -7,10 +7,10 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, QtGui, ?W..
+____ ? ______ QtCore, ?G.., ?W..
 
-class Ui_SchemaMainWindow(object):
-    ___ setupUi(self, SchemaMainWindow):
+c_ Ui_SchemaMainWindow(object):
+    ___ setupUi  SchemaMainWindow):
         SchemaMainWindow.setObjectName("SchemaMainWindow")
         SchemaMainWindow.resize(417, 594)
         self.centralwidget _ ?W...QWidget(SchemaMainWindow)
@@ -44,7 +44,7 @@ class Ui_SchemaMainWindow(object):
         self.validateButton _ ?W...?PB..(self.centralwidget)
         self.validateButton.setObjectName("validateButton")
         self.gridLayout.addWidget(self.validateButton, 4, 3, 1, 1)
-        SchemaMainWindow.setCentralWidget(self.centralwidget)
+        SchemaMainWindow.sCW..(self.centralwidget)
         self.statusbar _ ?W...QStatusBar(SchemaMainWindow)
         self.statusbar.setObjectName("statusbar")
         SchemaMainWindow.setStatusBar(self.statusbar)
@@ -52,7 +52,7 @@ class Ui_SchemaMainWindow(object):
         self.retranslateUi(SchemaMainWindow)
         QtCore.QMetaObject.connectSlotsByName(SchemaMainWindow)
 
-    ___ retranslateUi(self, SchemaMainWindow):
+    ___ retranslateUi  SchemaMainWindow):
         _translate _ QtCore.QCoreApplication.translate
         SchemaMainWindow.setWindowTitle(_translate("SchemaMainWindow", "XML Schema Validation"))
         self.schemaLabel.sT..(_translate("SchemaMainWindow", "XML Schema Document:"))

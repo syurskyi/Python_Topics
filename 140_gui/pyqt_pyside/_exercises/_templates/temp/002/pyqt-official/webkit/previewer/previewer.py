@@ -44,21 +44,21 @@
 
 
 ____ ?.QtCore ______ QFile, QIODevice, QTextStream, QUrl
-____ ?.QtGui ______ QKeySequence
-____ ?.?W.. ______ (QAction, ?A.., QFileDialog, QInputDialog,
-        QLineEdit, QMainWindow, QMessageBox, QWidget)
+____ ?.?G.. ______ ?KS..
+____ ?.?W.. ______ (?A.., ?A.., ?FD.., QInputDialog,
+        QLineEdit, QMainWindow, ?MB.., QWidget)
 
 ____ ui_previewer ______ Ui_Form
 
 
-class Previewer(QWidget, Ui_Form):
-    ___ __init__(self, parent_None):
+c_ Previewer(QWidget, Ui_Form):
+    ___ __init__  parent_None):
         super(Previewer, self).__init__(parent)
 
         self.setupUi(self)
         self.baseUrl _ QUrl()
  
-    ___ setBaseUrl(self, url):
+    ___ setBaseUrl  url):
         self.baseUrl _ url
 
     ___ on_previewButton_clicked(self):
@@ -67,94 +67,94 @@ class Previewer(QWidget, Ui_Form):
         self.webView.setHtml(text, self.baseUrl)
 
 
-class MainWindow(QMainWindow):
+c_ MainWindow ?MW..
     ___ __init__(self):
         super(MainWindow, self).__init__()
 
         self.createActions()
         self.createMenus()
         self.centralWidget _ Previewer(self)
-        self.setCentralWidget(self.centralWidget)
+        self.sCW..(self.centralWidget)
         self.centralWidget.webView.loadFinished.c..(self.updateTextEdit)
         self.setStartupText()
 
     ___ createActions(self):
-        self.openAct _ QAction("&Open...", self, shortcut_QKeySequence.Open,
-                statusTip_"Open an existing HTML file", triggered_self.open)
+        self.openAct _ ?A..("&Open...", self, shortcut_QKeySequence.Open,
+                statusTip_"Open an existing HTML file", triggered_self.o..)
 
-        self.openUrlAct _ QAction("&Open URL...", self, shortcut_"Ctrl+U",
+        self.openUrlAct _ ?A..("&Open URL...", self, shortcut_"Ctrl+U",
                 statusTip_"Open a URL", triggered_self.openUrl)
 
-        self.saveAct _ QAction("&Save", self, shortcut_QKeySequence.Save,
+        self.saveAct _ ?A..("&Save", self, shortcut_QKeySequence.Save,
                 statusTip_"Save the HTML file to disk", triggered_self.save)
 
-        self.exitAct _ QAction("E&xit", self, shortcut_QKeySequence.Quit,
+        self.exitAct _ ?A..("E&xit", self, shortcut_QKeySequence.Quit,
                 statusTip_"Exit the application", triggered_self.close)
 
-        self.aboutAct _ QAction("&About", self,
+        self.aboutAct _ ?A..("&About", self,
                 statusTip_"Show the application's About box",
                 triggered_self.about)
 
-        self.aboutQtAct _ QAction("About &Qt", self,
+        self.aboutQtAct _ ?A..("About &Qt", self,
                 statusTip_"Show the Qt library's About box",
                 triggered_QApplication.instance().aboutQt)
 
     ___ createMenus(self):
-        self.fileMenu _ self.menuBar().addMenu("&File")
-        self.fileMenu.addAction(self.openAct)
-        self.fileMenu.addAction(self.openUrlAct)
-        self.fileMenu.addAction(self.saveAct)
+        self.fileMenu _ self.mB.. .aM..("&File")
+        self.fileMenu.aA..(self.openAct)
+        self.fileMenu.aA..(self.openUrlAct)
+        self.fileMenu.aA..(self.saveAct)
         self.fileMenu.addSeparator()
-        self.fileMenu.addAction(self.exitAct)
-        self.menuBar().addSeparator()
-        self.helpMenu _ self.menuBar().addMenu("&Help")
-        self.helpMenu.addAction(self.aboutAct)
-        self.helpMenu.addAction(self.aboutQtAct)
+        self.fileMenu.aA..(self.exitAct)
+        self.mB.. .addSeparator()
+        self.helpMenu _ self.mB.. .aM..("&Help")
+        self.helpMenu.aA..(self.aboutAct)
+        self.helpMenu.aA..(self.aboutQtAct)
 
     ___ about(self):
-        QMessageBox.about(self, "About Previewer",
+        ?MB...about  "About Previewer",
                 "The <b>Previewer</b> example demonstrates how to view HTML "
                 "documents using a QtWebKitWidgets.QWebView.")
 
-    ___ open(self):
-        fileName, _ _ QFileDialog.getOpenFileName(self)
-        if fileName:
+    ___ o..(self):
+        fileName, _ _ ?FD...gOFN..(self)
+        __ fileName:
             fd _ QFile(fileName)
-            if not fd.open(QIODevice.ReadOnly):
-                QMessageBox.information(self, "Unable to open file",
+            __ no. fd.o..(QIODevice.ReadOnly):
+                ?MB...information  "Unable to open file",
                         fd.errorString())
-                return
+                r_
 
             output _ QTextStream(fd).readAll()
 
             # Display contents.
-            self.centralWidget.plainTextEdit.setPlainText(output)
+            self.centralWidget.plainTextEdit.sPT..(output)
             self.centralWidget.setBaseUrl(QUrl.fromLocalFile(fileName))
 
     ___ openUrl(self):
-        url, ok _ QInputDialog.getText(self, "Enter a URL", "URL:",
+        url, ok _ QInputDialog.getText  "Enter a URL", "URL:",
                 QLineEdit.Normal, "http://")
 
-        if ok and url:
+        __ ok and url:
             url _ QUrl(url)
             self.centralWidget.webView.setUrl(url)
 
     ___ save(self):
         content _ self.centralWidget.plainTextEdit.toPlainText()
-        fileName, _ _ QFileDialog.getSaveFileName(self)
-        if fileName:
+        fileName, _ _ ?FD...getSaveFileName(self)
+        __ fileName:
             fd _ QFile(fileName)
-            if not fd.open(QIODevice.WriteOnly):
-                QMessageBox.information(self, "Unable to open file",
+            __ no. fd.o..(QIODevice.WriteOnly):
+                ?MB...information  "Unable to open file",
                         fd.errorString())
-                return
+                r_
 
             QTextStream(fd) << content
  
     ___ updateTextEdit(self):
         mainFrame _ self.centralWidget.webView.page().mainFrame()
         frameText _ mainFrame.toHtml()
-        self.centralWidget.plainTextEdit.setPlainText(frameText)
+        self.centralWidget.plainTextEdit.sPT..(frameText)
 
     ___ setStartupText(self):
         self.centralWidget.webView.setHtml("""
@@ -166,7 +166,7 @@ class MainWindow(QMainWindow):
 </body></html>""")
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

@@ -1,12 +1,12 @@
 ______ sys
 ______ json
-____ ? ______ ?W.. as qtw
-____ ? ______ QtGui as qtg
-____ ? ______ QtCore as qtc
-____ ? ______ QtNetwork as qtn
+____ ? ______ ?W.. __ qtw
+____ ? ______ ?G.. __ qtg
+____ ? ______ QtCore __ qtc
+____ ? ______ QtNetwork __ qtn
 
 
-class Poster(qtc.QObject):
+c_ Poster(qtc.QObject):
 
     # emit body of reply
     replyReceived _ qtc.pyqtSignal(str)
@@ -16,7 +16,7 @@ class Poster(qtc.QObject):
         self.nam _ qtn.QNetworkAccessManager()
         self.nam.finished.c..(self.on_reply)
 
-    ___ make_request(self, url, data, filename):
+    ___ make_request  url, data, filename):
         print(f"Making request to {url}")
         # Create the request object
         self.request _ qtn.QNetworkRequest(url)
@@ -35,9 +35,9 @@ class Poster(qtc.QObject):
         self.multipart.append(http_part)
 
         # Write the file data to the multipart
-        if filename:
+        __ filename:
             file_part _ qtn.QHttpPart()
-            filedata _ open(filename, 'rb').read()
+            filedata _ o..(filename, 'rb').read()
             file_part.setHeader(
                 qtn.QNetworkRequest.ContentDispositionHeader,
                 f'form-data; name="attachment"; filename="{filename}"'
@@ -48,7 +48,7 @@ class Poster(qtc.QObject):
         # Post the request with the form data
         self.nam.post(self.request, self.multipart)
 
-    ___ on_reply(self, reply):
+    ___ on_reply  reply):
         # reply.readAll() returns a QByteArray
         reply_bytes _ reply.readAll()
         reply_string _ bytes(reply_bytes).decode('utf-8')
@@ -58,7 +58,7 @@ class Poster(qtc.QObject):
 
 
 
-class MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.QMainWindow):
 
     ___ __init__(self):
         """MainWindow constructor.
@@ -69,7 +69,7 @@ class MainWindow(qtw.QMainWindow):
         super().__init__()
         # Main UI code goes here
         widget _ qtw.QWidget(minimumWidth_600)
-        self.setCentralWidget(widget)
+        self.sCW..(widget)
         widget.setLayout(qtw.QVBoxLayout())
         self.url _ qtw.QLineEdit()
         self.table _ qtw.QTableWidget(columnCount_2, rowCount_5)
@@ -91,25 +91,25 @@ class MainWindow(qtw.QMainWindow):
         self.s..
 
     ___ on_file_btn(self):
-        filename, accepted _ qtw.QFileDialog.getOpenFileName()
-        if accepted:
+        filename, accepted _ qtw.?FD...gOFN..()
+        __ accepted:
             self.fname.sT..(filename)
 
     ___ submit(self):
         url _ qtc.QUrl(self.url.text())
         filename _ self.fname.text()
-        if filename == '(No File)':
-            filename _ None
+        __ filename == '(No File)':
+            filename _ N..
         data _ {}
         for rownum in range(self.table.rowCount()):
             key_item _ self.table.item(rownum, 0)
-            key _ key_item.text() if key_item else None
-            if key:
+            key _ key_item.text() __ key_item else N..
+            __ key:
                 data[key] _ self.table.item(rownum, 1).text()
         self.poster.make_request(url, data, filename)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtw.?A..(sys.argv)
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.

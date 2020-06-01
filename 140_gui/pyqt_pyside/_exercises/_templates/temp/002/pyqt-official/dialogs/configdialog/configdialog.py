@@ -43,7 +43,7 @@
 
 
 ____ ?.QtCore ______ QDate, QSize, Qt
-____ ?.QtGui ______ QIcon
+____ ?.?G.. ______ QIcon
 ____ ?.?W.. ______ (?A.., QCheckBox, QComboBox, QDateTimeEdit,
         QDialog, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit,
         QListView, QListWidget, QListWidgetItem, ?PB.., QSpinBox,
@@ -52,8 +52,8 @@ ____ ?.?W.. ______ (?A.., QCheckBox, QComboBox, QDateTimeEdit,
 ______ configdialog_rc
 
 
-class ConfigurationPage(QWidget):
-    ___ __init__(self, parent_None):
+c_ ConfigurationPage(QWidget):
+    ___ __init__  parent_None):
         super(ConfigurationPage, self).__init__(parent)
 
         configGroup _ QGroupBox("Server configuration")
@@ -81,8 +81,8 @@ class ConfigurationPage(QWidget):
         self.setLayout(mainLayout)
 
 
-class UpdatePage(QWidget):
-    ___ __init__(self, parent_None):
+c_ UpdatePage(QWidget):
+    ___ __init__  parent_None):
         super(UpdatePage, self).__init__(parent)
 
         updateGroup _ QGroupBox("Package selection")
@@ -122,8 +122,8 @@ class UpdatePage(QWidget):
         self.setLayout(mainLayout)
 
 
-class QueryPage(QWidget):
-    ___ __init__(self, parent_None):
+c_ QueryPage(QWidget):
+    ___ __init__  parent_None):
         super(QueryPage, self).__init__(parent)
 
         packagesGroup _ QGroupBox("Look for packages")
@@ -166,8 +166,8 @@ class QueryPage(QWidget):
         self.setLayout(mainLayout)
 
 
-class ConfigDialog(QDialog):
-    ___ __init__(self, parent_None):
+c_ ConfigDialog(QDialog):
+    ___ __init__  parent_None):
         super(ConfigDialog, self).__init__(parent)
 
         self.contentsWidget _ QListWidget()
@@ -207,8 +207,8 @@ class ConfigDialog(QDialog):
 
         self.setWindowTitle("Config Dialog")
 
-    ___ changePage(self, current, previous):
-        if not current:
+    ___ changePage  current, previous):
+        __ no. current:
             current _ previous
 
         self.pagesWidget.setCurrentIndex(self.contentsWidget.row(current))
@@ -235,7 +235,7 @@ class ConfigDialog(QDialog):
         self.contentsWidget.currentItemChanged.c..(self.changePage)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

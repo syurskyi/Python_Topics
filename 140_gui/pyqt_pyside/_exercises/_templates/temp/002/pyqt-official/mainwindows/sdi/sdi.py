@@ -44,31 +44,31 @@
 
 ____ ?.QtCore ______ (QFile, QFileInfo, QPoint, QSettings, QSize, Qt,
         QTextStream)
-____ ?.QtGui ______ QIcon, QKeySequence
-____ ?.?W.. ______ (QAction, ?A.., QFileDialog, QMainWindow,
-        QMessageBox, QTextEdit)
+____ ?.?G.. ______ QIcon, ?KS..
+____ ?.?W.. ______ (?A.., ?A.., ?FD.., QMainWindow,
+        ?MB.., QTextEdit)
 
 ______ sdi_rc
 
 
-class MainWindow(QMainWindow):
+c_ MainWindow ?MW..
     sequenceNumber _ 1
     windowList _ []
 
-    ___ __init__(self, fileName_None):
+    ___ __init__  fileName_None):
         super(MainWindow, self).__init__()
 
         self.init()
-        if fileName:
+        __ fileName:
             self.loadFile(fileName)
-        else:
+        ____
             self.setCurrentFile('')
 
-    ___ closeEvent(self, event):
-        if self.maybeSave
+    ___ closeEvent  event):
+        __ self.maybeSave
             self.writeSettings()
             event.accept()
-        else:
+        ____
             event.ignore()
 
     ___ newFile(self):
@@ -77,44 +77,44 @@ class MainWindow(QMainWindow):
         other.move(self.x() + 40, self.y() + 40)
         other.s..
 
-    ___ open(self):
-        fileName, _ _ QFileDialog.getOpenFileName(self)
-        if fileName:
+    ___ o..(self):
+        fileName, _ _ ?FD...gOFN..(self)
+        __ fileName:
             existing _ self.findMainWindow(fileName)
-            if existing:
+            __ existing:
                 existing.s..
                 existing.raise_()
                 existing.activateWindow()
-                return
+                r_
 
-            if self.isUntitled and self.textEdit.document().isEmpty() and not self.isWindowModified
+            __ self.isUntitled and self.textEdit.document().isEmpty() and no. self.isWindowModified
                 self.loadFile(fileName)
-            else:
+            ____
                 other _ MainWindow(fileName)
-                if other.isUntitled:
+                __ other.isUntitled:
                     del other
-                    return
+                    r_
 
                 MainWindow.windowList.append(other)
                 other.move(self.x() + 40, self.y() + 40)
                 other.s..
 
     ___ save(self):
-        if self.isUntitled:
-            return self.saveAs()
-        else:
-            return self.saveFile(self.curFile)
+        __ self.isUntitled:
+            r_ self.saveAs()
+        ____
+            r_ self.saveFile(self.curFile)
 
     ___ saveAs(self):
-        fileName, _ _ QFileDialog.getSaveFileName(self, "Save As",
+        fileName, _ _ ?FD...getSaveFileName  "Save As",
                 self.curFile)
-        if not fileName:
-            return False
+        __ no. fileName:
+            r_ False
 
-        return self.saveFile(fileName)
+        r_ self.saveFile(fileName)
 
     ___ about(self):
-        QMessageBox.about(self, "About SDI",
+        ?MB...about  "About SDI",
                 "The <b>SDI</b> example demonstrates how to write single "
                 "document interface applications using Qt.")
 
@@ -125,7 +125,7 @@ class MainWindow(QMainWindow):
         self.setAttribute(Qt.WA_DeleteOnClose)
         self.isUntitled _ True
         self.textEdit _ QTextEdit()
-        self.setCentralWidget(self.textEdit)
+        self.sCW..(self.textEdit)
 
         self.createActions()
         self.createMenus()
@@ -137,50 +137,50 @@ class MainWindow(QMainWindow):
         self.textEdit.document().contentsChanged.c..(self.documentWasModified)
 
     ___ createActions(self):
-        self.newAct _ QAction(QIcon(':/images/new.png'), "&New", self,
+        self.newAct _ ?A..(QIcon(':/images/new.png'), "&New", self,
                 shortcut_QKeySequence.New, statusTip_"Create a new file",
                 triggered_self.newFile)
 
-        self.openAct _ QAction(QIcon(':/images/open.png'), "&Open...", self,
+        self.openAct _ ?A..(QIcon(':/images/open.png'), "&Open...", self,
                 shortcut_QKeySequence.Open, statusTip_"Open an existing file",
-                triggered_self.open)
+                triggered_self.o..)
 
-        self.saveAct _ QAction(QIcon(':/images/save.png'), "&Save", self,
+        self.saveAct _ ?A..(QIcon(':/images/save.png'), "&Save", self,
                 shortcut_QKeySequence.Save,
                 statusTip_"Save the document to disk", triggered_self.save)
 
-        self.saveAsAct _ QAction("Save &As...", self,
+        self.saveAsAct _ ?A..("Save &As...", self,
                 shortcut_QKeySequence.SaveAs,
                 statusTip_"Save the document under a new name",
                 triggered_self.saveAs)
 
-        self.closeAct _ QAction("&Close", self, shortcut_"Ctrl+W",
+        self.closeAct _ ?A..("&Close", self, shortcut_"Ctrl+W",
                 statusTip_"Close this window", triggered_self.close)
 
-        self.exitAct _ QAction("E&xit", self, shortcut_"Ctrl+Q",
+        self.exitAct _ ?A..("E&xit", self, shortcut_"Ctrl+Q",
                 statusTip_"Exit the application",
                 triggered_QApplication.instance().closeAllWindows)
 
-        self.cutAct _ QAction(QIcon(':/images/cut.png'), "Cu&t", self,
+        self.cutAct _ ?A..(QIcon(':/images/cut.png'), "Cu&t", self,
                 enabled_False, shortcut_QKeySequence.Cut,
                 statusTip_"Cut the current selection's contents to the clipboard",
                 triggered_self.textEdit.cut)
 
-        self.copyAct _ QAction(QIcon(':/images/copy.png'), "&Copy", self,
+        self.copyAct _ ?A..(QIcon(':/images/copy.png'), "&Copy", self,
                 enabled_False, shortcut_QKeySequence.Copy,
                 statusTip_"Copy the current selection's contents to the clipboard",
                 triggered_self.textEdit.copy)
 
-        self.pasteAct _ QAction(QIcon(':/images/paste.png'), "&Paste", self,
+        self.pasteAct _ ?A..(QIcon(':/images/paste.png'), "&Paste", self,
                 shortcut_QKeySequence.Paste,
                 statusTip_"Paste the clipboard's contents into the current selection",
                 triggered_self.textEdit.paste)
 
-        self.aboutAct _ QAction("&About", self,
+        self.aboutAct _ ?A..("&About", self,
                 statusTip_"Show the application's About box",
                 triggered_self.about)
 
-        self.aboutQtAct _ QAction("About &Qt", self,
+        self.aboutQtAct _ ?A..("About &Qt", self,
                 statusTip_"Show the Qt library's About box",
                 triggered_QApplication.instance().aboutQt)
 
@@ -188,36 +188,36 @@ class MainWindow(QMainWindow):
         self.textEdit.copyAvailable.c..(self.copyAct.setEnabled)
 
     ___ createMenus(self):
-        self.fileMenu _ self.menuBar().addMenu("&File")
-        self.fileMenu.addAction(self.newAct)
-        self.fileMenu.addAction(self.openAct)
-        self.fileMenu.addAction(self.saveAct)
-        self.fileMenu.addAction(self.saveAsAct)
+        self.fileMenu _ self.mB.. .aM..("&File")
+        self.fileMenu.aA..(self.newAct)
+        self.fileMenu.aA..(self.openAct)
+        self.fileMenu.aA..(self.saveAct)
+        self.fileMenu.aA..(self.saveAsAct)
         self.fileMenu.addSeparator()
-        self.fileMenu.addAction(self.closeAct)
-        self.fileMenu.addAction(self.exitAct)
+        self.fileMenu.aA..(self.closeAct)
+        self.fileMenu.aA..(self.exitAct)
 
-        self.editMenu _ self.menuBar().addMenu("&Edit")
-        self.editMenu.addAction(self.cutAct)
-        self.editMenu.addAction(self.copyAct)
-        self.editMenu.addAction(self.pasteAct)
+        self.editMenu _ self.mB.. .aM..("&Edit")
+        self.editMenu.aA..(self.cutAct)
+        self.editMenu.aA..(self.copyAct)
+        self.editMenu.aA..(self.pasteAct)
 
-        self.menuBar().addSeparator()
+        self.mB.. .addSeparator()
 
-        self.helpMenu _ self.menuBar().addMenu("&Help")
-        self.helpMenu.addAction(self.aboutAct)
-        self.helpMenu.addAction(self.aboutQtAct)
+        self.helpMenu _ self.mB.. .aM..("&Help")
+        self.helpMenu.aA..(self.aboutAct)
+        self.helpMenu.aA..(self.aboutQtAct)
 
     ___ createToolBars(self):
         self.fileToolBar _ self.addToolBar("File")
-        self.fileToolBar.addAction(self.newAct)
-        self.fileToolBar.addAction(self.openAct)
-        self.fileToolBar.addAction(self.saveAct)
+        self.fileToolBar.aA..(self.newAct)
+        self.fileToolBar.aA..(self.openAct)
+        self.fileToolBar.aA..(self.saveAct)
 
         self.editToolBar _ self.addToolBar("Edit")
-        self.editToolBar.addAction(self.cutAct)
-        self.editToolBar.addAction(self.copyAct)
-        self.editToolBar.addAction(self.pasteAct)
+        self.editToolBar.aA..(self.cutAct)
+        self.editToolBar.aA..(self.copyAct)
+        self.editToolBar.aA..(self.pasteAct)
 
     ___ createStatusBar(self):
         self.statusBar().showMessage("Ready")
@@ -235,42 +235,42 @@ class MainWindow(QMainWindow):
         settings.setValue('size', self.size())
 
     ___ maybeSave(self):
-        if self.textEdit.document().isModified
-            ret _ QMessageBox.warning(self, "SDI",
+        __ self.textEdit.document().iM..
+            ret _ ?MB...warning  "SDI",
                     "The document has been modified.\nDo you want to save "
                     "your changes?",
-                    QMessageBox.Save | QMessageBox.Discard |
-                    QMessageBox.Cancel)
+                    ?MB...Save | ?MB...Discard |
+                    ?MB...Cancel)
 
-            if ret == QMessageBox.Save:
-                return self.save()
+            __ ret == ?MB...Save:
+                r_ self.save()
 
-            if ret == QMessageBox.Cancel:
-                return False
+            __ ret == ?MB...Cancel:
+                r_ False
 
-        return True
+        r_ True
 
-    ___ loadFile(self, fileName):
+    ___ loadFile  fileName):
         file _ QFile(fileName)
-        if not file.open(QFile.ReadOnly | QFile.Text):
-            QMessageBox.warning(self, "SDI",
+        __ no. file.o..(QFile.ReadOnly | QFile.Text):
+            ?MB...warning  "SDI",
                     "Cannot read file %s:\n%s." % (fileName, file.errorString()))
-            return
+            r_
 
         instr _ QTextStream(file)
         ?A...setOverrideCursor(Qt.WaitCursor)
-        self.textEdit.setPlainText(instr.readAll())
+        self.textEdit.sPT..(instr.readAll())
         ?A...restoreOverrideCursor()
 
         self.setCurrentFile(fileName)
         self.statusBar().showMessage("File loaded", 2000)
 
-    ___ saveFile(self, fileName):
+    ___ saveFile  fileName):
         file _ QFile(fileName)
-        if not file.open(QFile.WriteOnly | QFile.Text):
-            QMessageBox.warning(self, "SDI",
+        __ no. file.o..(QFile.WriteOnly | QFile.Text):
+            ?MB...warning  "SDI",
                     "Cannot write file %s:\n%s." % (fileName, file.errorString()))
-            return False
+            r_ False
 
         outstr _ QTextStream(file)
         ?A...setOverrideCursor(Qt.WaitCursor)
@@ -279,35 +279,35 @@ class MainWindow(QMainWindow):
 
         self.setCurrentFile(fileName)
         self.statusBar().showMessage("File saved", 2000)
-        return True
+        r_ True
 
-    ___ setCurrentFile(self, fileName):
-        self.isUntitled _ not fileName
-        if self.isUntitled:
+    ___ setCurrentFile  fileName):
+        self.isUntitled _ no. fileName
+        __ self.isUntitled:
             self.curFile _ "document%d.txt" % MainWindow.sequenceNumber
             MainWindow.sequenceNumber +_ 1
-        else:
+        ____
             self.curFile _ QFileInfo(fileName).canonicalFilePath()
 
-        self.textEdit.document().setModified(False)
-        self.setWindowModified(False)
+        self.textEdit.document().setModified F..
+        self.setWindowModified F..
 
         self.setWindowTitle("%s[*] - SDI" % self.strippedName(self.curFile))
 
-    ___ strippedName(self, fullFileName):
-        return QFileInfo(fullFileName).fileName()
+    ___ strippedName  fullFileName):
+        r_ QFileInfo(fullFileName).fileName()
 
-    ___ findMainWindow(self, fileName):
+    ___ findMainWindow  fileName):
         canonicalFilePath _ QFileInfo(fileName).canonicalFilePath()
 
         for widget in ?A...instance().topLevelWidgets
-            if isinstance(widget, MainWindow) and widget.curFile == canonicalFilePath:
-                return widget
+            __ isinstance(widget, MainWindow) and widget.curFile == canonicalFilePath:
+                r_ widget
 
-        return None
+        r_ N..
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

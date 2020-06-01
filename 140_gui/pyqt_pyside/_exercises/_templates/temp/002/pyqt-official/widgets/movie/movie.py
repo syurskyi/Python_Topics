@@ -43,14 +43,14 @@
 
 
 ____ ?.QtCore ______ QFileInfo, QSize, Qt
-____ ?.QtGui ______ QMovie, QPalette
-____ ?.?W.. ______ (?A.., QCheckBox, QFileDialog, QGridLayout,
+____ ?.?G.. ______ QMovie, QPalette
+____ ?.?W.. ______ (?A.., QCheckBox, ?FD.., QGridLayout,
         QHBoxLayout, QLabel, QSizePolicy, QSlider, QSpinBox, QStyle,
         QToolButton, QVBoxLayout, QWidget)
 
 
-class MoviePlayer(QWidget):
-    ___ __init__(self, parent_None):
+c_ MoviePlayer(QWidget):
+    ___ __init__  parent_None):
         super(MoviePlayer, self).__init__(parent)
 
         self.movie _ QMovie(self)
@@ -85,14 +85,14 @@ class MoviePlayer(QWidget):
         self.setWindowTitle("Movie Player")
         self.resize(400, 400)
 
-    ___ open(self):
-        fileName, _ _ QFileDialog.getOpenFileName(self, "Open a Movie",
+    ___ o..(self):
+        fileName, _ _ ?FD...gOFN..  "Open a Movie",
                 self.currentMovieDirectory)
 
-        if fileName:
+        __ fileName:
             self.openFile(fileName)
 
-    ___ openFile(self, fileName):
+    ___ openFile  fileName):
         self.currentMovieDirectory _ QFileInfo(fileName).path()
 
         self.movie.stop()
@@ -103,7 +103,7 @@ class MoviePlayer(QWidget):
         self.updateFrameSlider();
         self.updateButtons();
 
-    ___ goToFrame(self, frame):
+    ___ goToFrame  frame):
         self.movie.jumpToFrame(frame)
 
     ___ fitToWindow(self):
@@ -112,14 +112,14 @@ class MoviePlayer(QWidget):
     ___ updateFrameSlider(self):
         hasFrames _ (self.movie.currentFrameNumber() >_ 0)
 
-        if hasFrames:
-            if self.movie.frameCount() > 0:
+        __ hasFrames:
+            __ self.movie.frameCount() > 0:
                 self.frameSlider.setMaximum(self.movie.frameCount() - 1)
-            elif self.movie.currentFrameNumber() > self.frameSlider.maximum
+            ____ self.movie.currentFrameNumber() > self.frameSlider.maximum
                 self.frameSlider.setMaximum(self.movie.currentFrameNumber())
 
             self.frameSlider.setValue(self.movie.currentFrameNumber())
-        else:
+        ____
             self.frameSlider.setMaximum(0)
 
         self.frameLabel.setEnabled(hasFrames)
@@ -164,7 +164,7 @@ class MoviePlayer(QWidget):
         openButton.setIcon(self.style().standardIcon(QStyle.SP_DialogOpenButton))
         openButton.setIconSize(iconSize)
         openButton.setToolTip("Open File")
-        openButton.c__.c..(self.open)
+        openButton.c__.c..(self.o..)
 
         self.playButton _ QToolButton()
         self.playButton.setIcon(self.style().standardIcon(QStyle.SP_MediaPlay))
@@ -201,7 +201,7 @@ class MoviePlayer(QWidget):
         self.buttonsLayout.addStretch()
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

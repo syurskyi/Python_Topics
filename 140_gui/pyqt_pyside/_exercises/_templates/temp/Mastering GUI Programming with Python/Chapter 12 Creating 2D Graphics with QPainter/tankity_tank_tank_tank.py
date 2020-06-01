@@ -5,21 +5,21 @@ Example program for Qt Animation using QGraphicsScene
 """
 
 ______ sys
-____ ? ______ ?W.. as qtw
-____ ? ______ QtGui as qtg
-____ ? ______ QtCore as qtc
+____ ? ______ ?W.. __ qtw
+____ ? ______ ?G.. __ qtg
+____ ? ______ QtCore __ qtc
 
 SCREEN_WIDTH _ 800
 SCREEN_HEIGHT _ 600
 BORDER_HEIGHT _ 100
 
 
-class Bullet(qtw.QGraphicsObject):
+c_ Bullet(qtw.QGraphicsObject):
 
     # arguments are the tank and the bullet
     hit _ qtc.pyqtSignal()
 
-    ___ __init__(self, y_pos, up_True):
+    ___ __init__  y_pos, up_True):
         super().__init__()
         self.up _ up
         self.y_pos _ y_pos
@@ -32,88 +32,88 @@ class Bullet(qtw.QGraphicsObject):
         self.setGraphicsEffect(blur)
 
         # Animate the object
-        self.animation _ qtc.QPropertyAnimation(self, b'y')
+        self.animation _ qtc.QPropertyAnimation  b'y')
         self.animation.setStartValue(y_pos)
-        end _ 0 if up else SCREEN_HEIGHT
+        end _ 0 __ up else SCREEN_HEIGHT
         self.animation.setEndValue(end)
         self.animation.setDuration(1000)
         self.yChanged.c..(self.check_collision)
 
     ___ boundingRect(self):
         # Must be defined for collision detection
-        return qtc.QRectF(0, 0, 10, 10)
+        r_ qtc.QRectF(0, 0, 10, 10)
 
-    ___ paint(self, painter, options, widget):
+    ___ paint  painter, options, widget):
         painter.setBrush(qtg.QBrush(qtg.QColor('yellow')))
         painter.drawRect(0, 0, 10, 10)
 
-    ___ shoot(self, x_pos):
+    ___ shoot  x_pos):
         self.animation.stop()
         self.setPos(x_pos, self.y_pos)
         self.animation.start()
 
     ___ check_collision(self):
         colliding_items _ self.collidingItems()
-        if colliding_items:
+        __ colliding_items:
             self.scene().removeItem(self)
             for item in colliding_items:
-                if type(item).__name__ == 'Tank':
+                __ type(item).__name__ == 'Tank':
                     self.hit.emit()
 
 
-class Tank(qtw.QGraphicsObject):
+c_ Tank(qtw.QGraphicsObject):
 
     #  An 8x8 bitmap of the tank shape
     TANK_BM _ b'\x18\x18\xFF\xFF\xFF\xFF\xFF\x66'
     BOTTOM, TOP _ 0, 1
 
-    ___ __init__(self, color, y_pos, side_TOP):
+    ___ __init__  color, y_pos, side_TOP):
         super().__init__()
         self.side _ side
         # Define the tank's lookp
         self.bitmap _ qtg.QBitmap.fromData(qtc.QSize(8, 8), self.TANK_BM)
         transform _ qtg.QTransform()
         transform.scale(4, 4)  # scale to 32x32
-        if self.side == self.TOP:  # We're pointing down
+        __ self.side == self.TOP:  # We're pointing down
             transform.rotate(180)
         self.bitmap _ self.bitmap.transformed(transform)
         self.pen _ qtg.QPen(qtg.QColor(color))
 
         # Define the tank's position
-        if self.side == self.BOTTOM:
+        __ self.side == self.BOTTOM:
             y_pos -_ self.bitmap.height()
         self.setPos(0, y_pos)
 
         # Move the tank
-        self.animation _ qtc.QPropertyAnimation(self, b'x')
+        self.animation _ qtc.QPropertyAnimation  b'x')
         self.animation.setStartValue(0)
         self.animation.setEndValue(SCREEN_WIDTH - self.bitmap.width())
         self.animation.setDuration(2000)
         self.animation.finished.c..(self.toggle_direction)
-        if self.side == self.TOP:
+        __ self.side == self.TOP:
             self.toggle_direction()
         self.animation.start()
 
         # create a bullet
         bullet_y _ (
             y_pos - self.bitmap.height()
-            if self.side == self.BOTTOM
+            __ self.side == self.BOTTOM
             else y_pos + self.bitmap.height()
         )
         self.bullet _ Bullet(bullet_y, self.side == self.BOTTOM)
 
     ___ boundingRect(self):
         # Must be defined for collision detection
-        return qtc.QRectF(0, 0, self.bitmap.width(), self.bitmap.height())
+        r_ qtc.QRectF(0, 0, self.bitmap.width(), self.bitmap.height())
 
-    ___ paint(self, painter, option, widget):
+    ___ paint  painter, option, widget):
         painter.setPen(self.pen)
         painter.drawPixmap(0, 0, self.bitmap)
 
     ___ toggle_direction(self):
-        if self.animation.direction() == qtc.QPropertyAnimation.Forward:
+        __ self.animation.direction() == qtc.QPropertyAnimation.Forward:
             self.left()
-        else:
+        ____
             self.right()
 
     ___ right(self):
@@ -125,12 +125,12 @@ class Tank(qtw.QGraphicsObject):
         self.animation.start()
 
     ___ shoot(self):
-        if not self.bullet.scene
+        __ no. self.bullet.scene
             self.scene().addItem(self.bullet)
         self.bullet.shoot(self.x())
 
 
-class Scene(qtw.QGraphicsScene):
+c_ Scene(qtw.QGraphicsScene):
 
     ___ __init__(self):
         super().__init__()
@@ -175,13 +175,13 @@ class Scene(qtw.QGraphicsScene):
 
     ___ top_score_increment(self):
         self.top_score +_ 1
-        self.top_score_display.setPlainText(str(self.top_score))
+        self.top_score_display.sPT..(str(self.top_score))
 
     ___ bottom_score_increment(self):
         self.bottom_score +_ 1
-        self.bottom_score_display.setPlainText(str(self.bottom_score))
+        self.bottom_score_display.sPT..(str(self.bottom_score))
 
-    ___ keyPressEvent(self, event):
+    ___ keyPressEvent  event):
         keymap _ {
             qtc.Qt.Key_Right: self.bottom_tank.right,
             qtc.Qt.Key_Left: self.bottom_tank.left,
@@ -191,11 +191,11 @@ class Scene(qtw.QGraphicsScene):
             qtc.Qt.Key_Space: self.top_tank.shoot
         }
         callback _ keymap.get(event.key())
-        if callback:
+        __ callback:
             callback()
 
 
-class MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.QMainWindow):
 
     ___ __init__(self):
         """MainWindow constructor.
@@ -209,12 +209,12 @@ class MainWindow(qtw.QMainWindow):
         # Basic setup
         self.scene _ Scene()
         view _ qtw.QGraphicsView(self.scene)
-        self.setCentralWidget(view)
+        self.sCW..(view)
         # End main UI code
         self.s..
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtw.?A..(sys.argv)
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.

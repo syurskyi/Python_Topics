@@ -39,44 +39,44 @@
 
 
 ____ ?.QtCore ______ pyqtProperty, QRectF
-____ ?.QtGui ______ QColor, QPainter, QPen
+____ ?.?G.. ______ QColor, QPainter, QPen
 ____ ?.QtQuick ______ QQuickPaintedItem
 
 
-class PieSlice(QQuickPaintedItem):
+c_ PieSlice(QQuickPaintedItem):
 
     @pyqtProperty(QColor)
     ___ color(self):
-        return self._color
+        r_ self._color
 
     @color.setter
-    ___ color(self, color):
+    ___ color  color):
         self._color _ QColor(color)
 
     @pyqtProperty(int)
     ___ fromAngle(self):
-        return self._fromAngle
+        r_ self._fromAngle
 
     @fromAngle.setter
-    ___ fromAngle(self, fromAngle):
+    ___ fromAngle  fromAngle):
         self._fromAngle _ fromAngle
 
     @pyqtProperty(int)
     ___ angleSpan(self):
-        return self._angleSpan
+        r_ self._angleSpan
 
     @angleSpan.setter
-    ___ angleSpan(self, angleSpan):
+    ___ angleSpan  angleSpan):
         self._angleSpan _ angleSpan
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(PieSlice, self).__init__(parent)
 
         self._color _ QColor()
         self._fromAngle _ 0
         self._angleSpan _ 0
 
-    ___ paint(self, painter):
+    ___ paint  painter):
         painter.setPen(QPen(self._color, 2))
         painter.setRenderHints(QPainter.Antialiasing, True)
 

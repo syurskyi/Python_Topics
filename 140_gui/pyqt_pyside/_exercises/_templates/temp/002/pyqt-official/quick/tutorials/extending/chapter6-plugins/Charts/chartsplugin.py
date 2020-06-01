@@ -44,8 +44,8 @@ ____ piechart ______ PieChart
 ____ pieslice ______ PieSlice
 
 
-class ChartsPlugin(QQmlExtensionPlugin):
+c_ ChartsPlugin(QQmlExtensionPlugin):
 
-    ___ registerTypes(self, uri):
+    ___ registerTypes  uri):
         qmlRegisterType(PieChart, "Charts", 1, 0, "PieChart")
         qmlRegisterType(PieSlice, "Charts", 1, 0, "PieSlice")

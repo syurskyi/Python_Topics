@@ -1,9 +1,9 @@
 ______ sys
-____ ? ______ ?W.. as qtw
-____ ? ______ QtGui as qtg
+____ ? ______ ?W.. __ qtw
+____ ? ______ ?G.. __ qtg
 
 
-class InventoryNumberValidator(qtg.QValidator):
+c_ InventoryNumberValidator(qtg.QValidator):
     """Validates an inventory number in the format XX-999-9999X
 
     X is an uppercase letter from A to Z excluding O and I.
@@ -11,7 +11,7 @@ class InventoryNumberValidator(qtg.QValidator):
     """
 
     valid_letters _ 'ABCDEFGHJKLMNPQRSTUVWXYZ'
-    ___ validate(self, string, index):
+    ___ validate  string, index):
         # one approach is to break the string into segments
         # and test each segment for proper content
         state _ qtg.QValidator.Acceptable
@@ -22,21 +22,21 @@ class InventoryNumberValidator(qtg.QValidator):
         seg3 _ string[7:11]
         seg4 _ string[11:12]
 
-        if not all([char in self.valid_letters for char in seg1 + seg4]):
+        __ no. all([char in self.valid_letters for char in seg1 + seg4]):
             state _ qtg.QValidator.Invalid
-        elif not all([char.isdigit() for char in seg2 + seg3]):
+        ____ no. all([char.isdigit() for char in seg2 + seg3]):
             state _ qtg.QValidator.Invalid
-        elif not all([char == '-' for char in dash1 + dash2]):
+        ____ no. all([char == '-' for char in dash1 + dash2]):
             state _ qtg.QValidator.Invalid
-        elif len(string) > 12:
+        ____ len(string) > 12:
             state _ qtg.QValidator.Invalid
-        elif not all([seg1, dash1, seg2, dash2, seg3, seg4]):
+        ____ no. all([seg1, dash1, seg2, dash2, seg3, seg4]):
             state _ qtg.QValidator.Intermediate
 
-        return (state, string, index)
+        r_ (state, string, index)
 
 
-class MainWindow(qtw.QWidget):
+c_ MainWindow(qtw.QWidget):
 
     ___ __init__(self):
         """MainWindow constructor.
@@ -54,7 +54,7 @@ class MainWindow(qtw.QWidget):
         self.s..
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtw.?A..(sys.argv)
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.

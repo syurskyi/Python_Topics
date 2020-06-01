@@ -45,66 +45,66 @@
 
 ____ ?.QtCore ______ (QDate, QDateTime, QRegExp, QSortFilterProxyModel, Qt,
         QTime)
-____ ?.QtGui ______ QStandardItemModel
+____ ?.?G.. ______ QStandardItemModel
 ____ ?.?W.. ______ (?A.., QCheckBox, QComboBox, QDateEdit,
         QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit, QTreeView,
         QVBoxLayout, QWidget)
 
 
-class MySortFilterProxyModel(QSortFilterProxyModel):
-    ___ __init__(self, parent_None):
+c_ MySortFilterProxyModel(QSortFilterProxyModel):
+    ___ __init__  parent_None):
         super(MySortFilterProxyModel, self).__init__(parent)
 
         self.minDate _ QDate()
         self.maxDate _ QDate()
 
-    ___ setFilterMinimumDate(self, date):
+    ___ setFilterMinimumDate  date):
         self.minDate _ date
         self.invalidateFilter()
 
     ___ filterMinimumDate(self):
-        return self.minDate
+        r_ self.minDate
 
-    ___ setFilterMaximumDate(self, date):
+    ___ setFilterMaximumDate  date):
         self.maxDate _ date
         self.invalidateFilter()
  
     ___ filterMaximumDate(self):
-        return self.maxDate
+        r_ self.maxDate
 
-    ___ filterAcceptsRow(self, sourceRow, sourceParent):
+    ___ filterAcceptsRow  sourceRow, sourceParent):
         index0 _ self.sourceModel().index(sourceRow, 0, sourceParent)
         index1 _ self.sourceModel().index(sourceRow, 1, sourceParent)
         index2 _ self.sourceModel().index(sourceRow, 2, sourceParent)
 
-        return (   (self.filterRegExp().indexIn(self.sourceModel().data(index0)) >_ 0
+        r_ (   (self.filterRegExp().indexIn(self.sourceModel().data(index0)) >_ 0
                     or self.filterRegExp().indexIn(self.sourceModel().data(index1)) >_ 0)
                 and self.dateInRange(self.sourceModel().data(index2)))
 
-    ___ lessThan(self, left, right):
+    ___ lessThan  left, right):
         leftData _ self.sourceModel().data(left)
         rightData _ self.sourceModel().data(right)
 
-        if not isinstance(leftData, QDate):
+        __ no. isinstance(leftData, QDate):
             emailPattern _ QRegExp("([\\w\\.]*@[\\w\\.]*)")
 
-            if left.column() == 1 and emailPattern.indexIn(leftData) !_ -1:
+            __ left.column() == 1 and emailPattern.indexIn(leftData) !_ -1:
                 leftData _ emailPattern.cap(1)
 
-            if right.column() == 1 and emailPattern.indexIn(rightData) !_ -1:
+            __ right.column() == 1 and emailPattern.indexIn(rightData) !_ -1:
                 rightData _ emailPattern.cap(1)
 
-        return leftData < rightData
+        r_ leftData < rightData
 
-    ___ dateInRange(self, date):
-        if isinstance(date, QDateTime):
+    ___ dateInRange  date):
+        __ isinstance(date, QDateTime):
             date _ date.date()
 
-        return (    (not self.minDate.isValid() or date >_ self.minDate)
-                and (not self.maxDate.isValid() or date <_ self.maxDate))
+        r_ (    (no. self.minDate.isValid() or date >_ self.minDate)
+                and (no. self.maxDate.isValid() or date <_ self.maxDate))
 
 
-class Window(QWidget):
+c_ Window(QWidget):
     ___ __init__(self):
         super(Window, self).__init__()
 
@@ -112,7 +112,7 @@ class Window(QWidget):
         self.proxyModel.setDynamicSortFilter(True)
 
         self.sourceView _ QTreeView()
-        self.sourceView.setRootIsDecorated(False)
+        self.sourceView.setRootIsDecorated F..
         self.sourceView.setAlternatingRowColors(True)
 
         sourceLayout _ QHBoxLayout()
@@ -148,7 +148,7 @@ class Window(QWidget):
         self.toDateEdit.dateChanged.c..(self.dateFilterChanged)
 
         self.proxyView _ QTreeView()
-        self.proxyView.setRootIsDecorated(False)
+        self.proxyView.setRootIsDecorated F..
         self.proxyView.setAlternatingRowColors(True)
         self.proxyView.setModel(self.proxyModel)
         self.proxyView.setSortingEnabled(True)
@@ -178,7 +178,7 @@ class Window(QWidget):
         self.setWindowTitle("Custom Sort/Filter Model")
         self.resize(500, 450)
 
-    ___ setSourceModel(self, model):
+    ___ setSourceModel  model):
         self.proxyModel.setSourceModel(model)
         self.sourceView.setModel(model)
 
@@ -232,10 +232,10 @@ ___ createMailModel(parent):
     addMail(model, "RE: Sports", "Petra Schmidt <petras@nospam.com>",
             QDateTime(QDate(2007, 1, 5), QTime(12, 1)))
 
-    return model
+    r_ model
 
 
-if __name__ == "__main__":
+__ __name__ == "__main__":
 
     ______ sys
 

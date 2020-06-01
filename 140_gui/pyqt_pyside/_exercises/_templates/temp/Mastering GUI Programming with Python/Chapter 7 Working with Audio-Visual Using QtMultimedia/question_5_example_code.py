@@ -1,10 +1,10 @@
-____ ? ______ ?W.. as qtw
-____ ? ______ QtCore as qtc
-____ ? ______ QtMultimedia as qtmm
-____ ? ______ QtMultimediaWidgets as qtmmw
+____ ? ______ ?W.. __ qtw
+____ ? ______ QtCore __ qtc
+____ ? ______ QtMultimedia __ qtmm
+____ ? ______ QtMultimediaWidgets __ qtmmw
 
 
-class MainWindow(qtw.QWidget):
+c_ MainWindow(qtw.QWidget):
 
     ___ __init__(self):
         super().__init__()
@@ -34,13 +34,13 @@ class MainWindow(qtw.QWidget):
         self.camera.start()
         self.s..
 
-    ___ on_slider_moved(self, value):
+    ___ on_slider_moved  value):
 
         focus _ self.camera.focus()
         focus.zoomTo(1, value)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtw.?
     mw _ MainWindow()
     app.exec()

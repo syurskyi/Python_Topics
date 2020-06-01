@@ -43,20 +43,20 @@
 
 
 ____ ?.QtCore ______ QDataStream, QSettings, QTimer
-____ ?.QtGui ______ QIntValidator
+____ ?.?G.. ______ QIntValidator
 ____ ?.?W.. ______ (?A.., QComboBox, QDialog,
-        QDialogButtonBox, QGridLayout, QLabel, QLineEdit, QMessageBox,
+        QDialogButtonBox, QGridLayout, QLabel, QLineEdit, ?MB..,
         ?PB..)
 ____ ?.QtNetwork ______ (QAbstractSocket, QHostInfo, QNetworkConfiguration,
         QNetworkConfigurationManager, QNetworkInterface, QNetworkSession,
         QTcpSocket)
 
 
-class Client(QDialog):
-    ___ __init__(self, parent_None):
+c_ Client(QDialog):
+    ___ __init__  parent_None):
         super(Client, self).__init__(parent)
 
-        self.networkSession _ None
+        self.networkSession _ N..
         self.blockSize _ 0
         self.currentFortune _ ''
 
@@ -67,24 +67,24 @@ class Client(QDialog):
         self.hostCombo.setEditable(True)
 
         name _ QHostInfo.localHostName()
-        if name !_ '':
+        __ name !_ '':
             self.hostCombo.addItem(name)
 
             domain _ QHostInfo.localDomainName()
-            if domain !_ '':
+            __ domain !_ '':
                 self.hostCombo.addItem(name + '.' + domain)
 
-        if name !_ 'localhost':
+        __ name !_ 'localhost':
             self.hostCombo.addItem('localhost')
 
         ipAddressesList _ QNetworkInterface.allAddresses()
 
         for ipAddress in ipAddressesList:
-            if not ipAddress.isLoopback
+            __ no. ipAddress.isLoopback
                 self.hostCombo.addItem(ipAddress.toString())
 
         for ipAddress in ipAddressesList:
-            if ipAddress.isLoopback
+            __ ipAddress.isLoopback
                 self.hostCombo.addItem(ipAddress.toString())
 
         self.portLineEdit _ QLineEdit()
@@ -98,7 +98,7 @@ class Client(QDialog):
 
         self.getFortuneButton _ ?PB..("Get Fortune")
         self.getFortuneButton.setDefault(True)
-        self.getFortuneButton.setEnabled(False)
+        self.getFortuneButton.setEnabled F..
 
         quitButton _ ?PB..("Quit")
 
@@ -128,25 +128,25 @@ class Client(QDialog):
         self.portLineEdit.setFocus()
 
         manager _ QNetworkConfigurationManager()
-        if manager.capabilities() & QNetworkConfigurationManager.NetworkSessionRequired:
+        __ manager.capabilities() & QNetworkConfigurationManager.NetworkSessionRequired:
             settings _ QSettings(QSettings.UserScope, 'QtProject')
             settings.beginGroup('QtNetwork')
             id _ settings.value('DefaultNetworkConfiguration')
             settings.endGroup()
 
             config _ manager.configurationFromIdentifier(id)
-            if config.state() & QNetworkConfiguration.Discovered == 0:
+            __ config.state() & QNetworkConfiguration.Discovered == 0:
                 config _ manager.defaultConfiguration()
 
             self.networkSession _ QNetworkSession(config, self)
             self.networkSession.opened.c..(self.sessionOpened)
 
-            self.getFortuneButton.setEnabled(False)
+            self.getFortuneButton.setEnabled F..
             self.statusLabel.sT..("Opening network session.")
-            self.networkSession.open()
+            self.networkSession.o..()
 
     ___ requestNewFortune(self):
-        self.getFortuneButton.setEnabled(False)
+        self.getFortuneButton.setEnabled F..
         self.blockSize _ 0
         self.tcpSocket.abort()
         self.tcpSocket.connectToHost(self.hostCombo.currentText(),
@@ -156,54 +156,54 @@ class Client(QDialog):
         instr _ QDataStream(self.tcpSocket)
         instr.setVersion(QDataStream.Qt_4_0)
 
-        if self.blockSize == 0:
-            if self.tcpSocket.bytesAvailable() < 2:
-                return
+        __ self.blockSize == 0:
+            __ self.tcpSocket.bytesAvailable() < 2:
+                r_
 
             self.blockSize _ instr.readUInt16()
 
-        if self.tcpSocket.bytesAvailable() < self.blockSize:
-            return
+        __ self.tcpSocket.bytesAvailable() < self.blockSize:
+            r_
 
         nextFortune _ instr.readQString()
-        if nextFortune == self.currentFortune:
+        __ nextFortune == self.currentFortune:
             QTimer.singleShot(0, self.requestNewFortune)
-            return
+            r_
 
         self.currentFortune _ nextFortune
         self.statusLabel.sT..(self.currentFortune)
         self.getFortuneButton.setEnabled(True)
 
-    ___ displayError(self, socketError):
-        if socketError == QAbstractSocket.RemoteHostClosedError:
+    ___ displayError  socketError):
+        __ socketError == QAbstractSocket.RemoteHostClosedError:
             pass
-        elif socketError == QAbstractSocket.HostNotFoundError:
-            QMessageBox.information(self, "Fortune Client",
+        ____ socketError == QAbstractSocket.HostNotFoundError:
+            ?MB...information  "Fortune Client",
                     "The host was not found. Please check the host name and "
                     "port settings.")
-        elif socketError == QAbstractSocket.ConnectionRefusedError:
-            QMessageBox.information(self, "Fortune Client",
+        ____ socketError == QAbstractSocket.ConnectionRefusedError:
+            ?MB...information  "Fortune Client",
                     "The connection was refused by the peer. Make sure the "
                     "fortune server is running, and check that the host name "
                     "and port settings are correct.")
-        else:
-            QMessageBox.information(self, "Fortune Client",
+        ____
+            ?MB...information  "Fortune Client",
                     "The following error occurred: %s." % self.tcpSocket.errorString())
 
         self.getFortuneButton.setEnabled(True)
 
     ___ enableGetFortuneButton(self):
         self.getFortuneButton.setEnabled(
-                (self.networkSession is None or self.networkSession.isOpen())
+                (self.networkSession __ N.. or self.networkSession.isOpen())
                 and self.hostCombo.currentText() !_ ''
                 and self.portLineEdit.text() !_ '')
 
     ___ sessionOpened(self):
         config _ self.networkSession.configuration()
 
-        if config.type() == QNetworkConfiguration.UserChoice:
+        __ config.type() == QNetworkConfiguration.UserChoice:
             id _ self.networkSession.sessionProperty('UserChoiceConfiguration')
-        else:
+        ____
             id _ config.identifier()
 
         settings _ QSettings(QSettings.UserScope, 'QtProject')
@@ -217,7 +217,7 @@ class Client(QDialog):
         self.enableGetFortuneButton()
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

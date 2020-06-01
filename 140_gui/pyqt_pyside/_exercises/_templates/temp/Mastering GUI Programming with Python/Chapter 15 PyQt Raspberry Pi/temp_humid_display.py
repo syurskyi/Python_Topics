@@ -1,7 +1,7 @@
 ______ sys
-____ ? ______ ?W.. as qtw
-____ ? ______ QtCore as qtc
-____ ? ______ QtGui as qtg
+____ ? ______ ?W.. __ qtw
+____ ? ______ QtCore __ qtc
+____ ? ______ ?G.. __ qtg
 ______ Adafruit_DHT
 ____ RPi ______ GPIO
 
@@ -9,11 +9,11 @@ SENSOR_MODEL _ 11
 GPIO.setmode(GPIO.BCM)
 
 
-class HWButton(qtc.QObject):
+c_ HWButton(qtc.QObject):
 
     button_press _ qtc.pyqtSignal()
 
-    ___ __init__(self, pin):
+    ___ __init__  pin):
         super().__init__()
         GPIO.setup(pin, GPIO.IN, pull_up_down_GPIO.PUD_UP)
         self.pin _ pin
@@ -28,24 +28,24 @@ class HWButton(qtc.QObject):
             GPIO.RISING,
             callback_self.on_event_detect)
 
-    ___ on_event_detect(self, *args):
+    ___ on_event_detect  *args):
         self.button_press.emit()
 
     ___ check(self):
         pressed _ GPIO.input(self.pin) == GPIO.LOW
-        if pressed !_ self.pressed:
-            if pressed:
+        __ pressed !_ self.pressed:
+            __ pressed:
                 self.button_press.emit()
             self.pressed _ pressed
 
 
-class SensorInterface(qtc.QObject):
+c_ SensorInterface(qtc.QObject):
 
     temperature _ qtc.pyqtSignal(float)
     humidity _ qtc.pyqtSignal(float)
     read_time _ qtc.pyqtSignal(qtc.QTime)
 
-    ___ __init__(self, pin, sensor_model, fahrenheit_False):
+    ___ __init__  pin, sensor_model, fahrenheit_False):
         super().__init__()
         self.pin _ pin
         self.model _ sensor_model
@@ -54,14 +54,14 @@ class SensorInterface(qtc.QObject):
     @qtc.pyqtSlot()
     ___ take_reading(self):
         h, t _ Adafruit_DHT.read_retry(self.model, self.pin)
-        if self.fahrenheit:
+        __ self.fahrenheit:
             t _ ((9/5) * t) + 32
         self.temperature.emit(t)
         self.humidity.emit(h)
         self.read_time.emit(qtc.QTime.currentTime())
 
 
-class MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.QMainWindow):
 
     ___ __init__(self):
         super().__init__()
@@ -69,7 +69,7 @@ class MainWindow(qtw.QMainWindow):
         # Create widget and style it
         widget _ qtw.QWidget()
         widget.setLayout(qtw.QFormLayout())
-        self.setCentralWidget(widget)
+        self.sCW..(widget)
         p _ widget.palette()
         p.setColor(qtg.QPalette.WindowText, qtg.QColor('cyan'))
         p.setColor(qtg.QPalette.Window, qtg.QColor('navy'))
@@ -112,13 +112,13 @@ class MainWindow(qtw.QMainWindow):
 
         self.s..
 
-    ___ show_time(self, qtime):
+    ___ show_time  qtime):
         self.statusBar().showMessage(
             f'Read at {qtime.toString("HH:mm:ss")}'
             )
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtw.?A..(sys.argv)
     mw _ MainWindow()
     app.exec()

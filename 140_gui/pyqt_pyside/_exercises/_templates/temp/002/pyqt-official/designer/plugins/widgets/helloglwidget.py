@@ -26,11 +26,11 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 ______ math
 
 ____ ?.QtCore ______ pyqtProperty, pyqtSignal, pyqtSlot, QPoint, QSize, Qt
-____ ?.QtGui ______ QColor
+____ ?.?G.. ______ QColor
 ____ ?.?W.. ______ ?A.., QOpenGLWidget
 
 
-class HelloGLWidget(QOpenGLWidget):
+c_ HelloGLWidget(QOpenGLWidget):
     """HelloGLWidget(QOpenGLWidget)
 
     Provides a custom widget to display an OpenGL-rendered Qt logo.
@@ -45,7 +45,7 @@ class HelloGLWidget(QOpenGLWidget):
     yRotationChanged _ pyqtSignal(int)
     zRotationChanged _ pyqtSignal(int)
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(HelloGLWidget, self).__init__(parent)
 
         self.object _ 0
@@ -65,13 +65,13 @@ class HelloGLWidget(QOpenGLWidget):
     # methods.
 
     ___ getXRotation(self):
-        return self.xRot
+        r_ self.xRot
 
     # The setXRotation() setter method is also a slot.
     @pyqtSlot(int)
-    ___ setXRotation(self, angle):
+    ___ setXRotation  angle):
         angle _ self.normalizeAngle(angle)
-        if angle !_ self.xRot:
+        __ angle !_ self.xRot:
             self.xRot _ angle
             self.xRotationChanged.emit(angle)
             self.update()
@@ -83,13 +83,13 @@ class HelloGLWidget(QOpenGLWidget):
     # methods.
 
     ___ getYRotation(self):
-        return self.yRot
+        r_ self.yRot
 
     # The setYRotation() setter method is also a slot.
     @pyqtSlot(int)
-    ___ setYRotation(self, angle):
+    ___ setYRotation  angle):
         angle _ self.normalizeAngle(angle)
-        if angle !_ self.yRot:
+        __ angle !_ self.yRot:
             self.yRot _ angle
             self.yRotationChanged.emit(angle)
             self.update()
@@ -101,13 +101,13 @@ class HelloGLWidget(QOpenGLWidget):
     # methods.
 
     ___ getZRotation(self):
-        return self.zRot
+        r_ self.zRot
 
     # The setZRotation() setter method is also a slot.
     @pyqtSlot(int)
-    ___ setZRotation(self, angle):
+    ___ setZRotation  angle):
         angle _ self.normalizeAngle(angle)
-        if angle !_ self.zRot:
+        __ angle !_ self.zRot:
             self.zRot _ angle
             self.zRotationChanged.emit(angle)
             self.update()
@@ -115,10 +115,10 @@ class HelloGLWidget(QOpenGLWidget):
     zRotation _ pyqtProperty(int, getZRotation, setZRotation)
 
     ___ minimumSizeHint(self):
-        return QSize(50, 50)
+        r_ QSize(50, 50)
 
     ___ sizeHint(self):
-        return QSize(200, 200)
+        r_ QSize(200, 200)
 
     ___ initializeGL(self):
         self.gl _ self.context().versionFunctions()
@@ -139,7 +139,7 @@ class HelloGLWidget(QOpenGLWidget):
         self.gl.glRotated(self.zRot / 16.0, 0.0, 0.0, 1.0)
         self.gl.glCallList(self.object)
 
-    ___ resizeGL(self, width, height):
+    ___ resizeGL  width, height):
         side _ min(width, height)
         self.gl.glViewport((width - side) / 2, (height - side) / 2, side, side)
 
@@ -148,17 +148,17 @@ class HelloGLWidget(QOpenGLWidget):
         self.gl.glOrtho(-0.5, +0.5, +0.5, -0.5, 4.0, 15.0)
         self.gl.glMatrixMode(self.gl.GL_MODELVIEW)
 
-    ___ mousePressEvent(self, event):
+    ___ mousePressEvent  event):
         self.lastPos _ QPoint(event.pos())
 
-    ___ mouseMoveEvent(self, event):
+    ___ mouseMoveEvent  event):
         dx _ event.x() - self.lastPos.x()
         dy _ event.y() - self.lastPos.y()
 
-        if event.buttons() & Qt.LeftButton:
+        __ event.buttons() & Qt.LeftButton:
             self.setXRotation(self.xRot + 8 * dy)
             self.setYRotation(self.yRot + 8 * dx)
-        elif event.buttons() & Qt.RightButton:
+        ____ event.buttons() & Qt.RightButton:
             self.setXRotation(self.xRot + 8 * dy)
             self.setZRotation(self.zRot + 8 * dx)
 
@@ -214,9 +214,9 @@ class HelloGLWidget(QOpenGLWidget):
         self.gl.glEnd()
         self.gl.glEndList()
 
-        return genList
+        r_ genList
 
-    ___ quad(self, x1, y1, x2, y2, x3, y3, x4, y4):
+    ___ quad  x1, y1, x2, y2, x3, y3, x4, y4):
         self.setColor(self.trolltechGreen)
 
         self.gl.glVertex3d(x1, y1, -0.05)
@@ -229,7 +229,7 @@ class HelloGLWidget(QOpenGLWidget):
         self.gl.glVertex3d(x2, y2, +0.05)
         self.gl.glVertex3d(x1, y1, +0.05)
 
-    ___ extrude(self, x1, y1, x2, y2):
+    ___ extrude  x1, y1, x2, y2):
         self.setColor(self.trolltechGreen.darker(250 + int(100 * x1)))
 
         self.gl.glVertex3d(x1, y1, +0.05)
@@ -237,21 +237,21 @@ class HelloGLWidget(QOpenGLWidget):
         self.gl.glVertex3d(x2, y2, -0.05)
         self.gl.glVertex3d(x1, y1, -0.05)
 
-    ___ normalizeAngle(self, angle):
+    ___ normalizeAngle  angle):
         while angle < 0:
             angle +_ 360 * 16
         while angle > 360 * 16:
             angle -_ 360 * 16
-        return angle
+        r_ angle
 
-    ___ setClearColor(self, c):
+    ___ setClearColor  c):
         self.gl.glClearColor(c.redF(), c.greenF(), c.blueF(), c.alphaF())
 
-    ___ setColor(self, c):
+    ___ setColor  c):
         self.gl.glColor4f(c.redF(), c.greenF(), c.blueF(), c.alphaF())
 
 
-if __name__ == "__main__":
+__ __name__ == "__main__":
 
     ______ sys
 

@@ -56,7 +56,7 @@ freeBytes _ QSemaphore(BufferSize)
 usedBytes _ QSemaphore()
 
 
-class Producer(QThread):
+c_ Producer(QThread):
     ___ run(self):
         for i in range(DataSize):
             freeBytes.acquire()
@@ -64,17 +64,17 @@ class Producer(QThread):
             usedBytes.release()
 
 
-class Consumer(QThread):
+c_ Consumer(QThread):
     ___ run(self):
         for i in range(DataSize):
             usedBytes.acquire()
-            sys.stderr.write(buffer[i % BufferSize])
+            sys.stderr.w..(buffer[i % BufferSize])
             freeBytes.release()
 
-        sys.stderr.write("\n")
+        sys.stderr.w..("\n")
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ QCoreApplication(sys.argv)
     producer _ Producer()
     consumer _ Consumer()

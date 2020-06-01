@@ -42,45 +42,45 @@
 
 
 ____ ?.QtCore ______ pyqtProperty, QRectF, QUrl
-____ ?.QtGui ______ QColor, QGuiApplication, QPainter, QPen
+____ ?.?G.. ______ QColor, QGuiApplication, QPainter, QPen
 ____ ?.QtQml ______ qmlRegisterType, QQmlListProperty
 ____ ?.QtQuick ______ QQuickItem, QQuickPaintedItem, QQuickView
 
 
-class PieSlice(QQuickPaintedItem):
+c_ PieSlice(QQuickPaintedItem):
 
     @pyqtProperty(QColor)
     ___ color(self):
-        return self._color
+        r_ self._color
 
     @color.setter
-    ___ color(self, color):
+    ___ color  color):
         self._color _ QColor(color)
 
     @pyqtProperty(int)
     ___ fromAngle(self):
-        return self._fromAngle
+        r_ self._fromAngle
 
     @fromAngle.setter
-    ___ fromAngle(self, fromAngle):
+    ___ fromAngle  fromAngle):
         self._fromAngle _ fromAngle
 
     @pyqtProperty(int)
     ___ angleSpan(self):
-        return self._angleSpan
+        r_ self._angleSpan
 
     @angleSpan.setter
-    ___ angleSpan(self, angleSpan):
+    ___ angleSpan  angleSpan):
         self._angleSpan _ angleSpan
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(PieSlice, self).__init__(parent)
 
         self._color _ QColor()
         self._fromAngle _ 0
         self._angleSpan _ 0
 
-    ___ paint(self, painter):
+    ___ paint  painter):
         painter.setPen(QPen(self._color, 2))
         painter.setRenderHints(QPainter.Antialiasing, True)
 
@@ -88,28 +88,28 @@ class PieSlice(QQuickPaintedItem):
         painter.drawPie(rect, self._fromAngle * 16, self._angleSpan * 16)
 
 
-class PieChart(QQuickItem):
+c_ PieChart(QQuickItem):
 
     @pyqtProperty(QQmlListProperty)
     ___ slices(self):
-        return QQmlListProperty(PieSlice, self,
+        r_ QQmlListProperty(PieSlice, self,
                 append_lambda pie_ch, pie_sl: pie_sl.setParentItem(pie_ch))
 
     @pyqtProperty(str)
     ___ name(self):
-        return self._name
+        r_ self._name
 
     @name.setter
-    ___ name(self, name):
+    ___ name  name):
         self._name _ name
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(PieChart, self).__init__(parent)
 
         self._name _ ''
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     ______ os
     ______ sys
 

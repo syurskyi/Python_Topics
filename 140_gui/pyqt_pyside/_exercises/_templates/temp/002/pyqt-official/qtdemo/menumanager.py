@@ -46,7 +46,7 @@ ____ xml.dom.minidom ______ parseString
 ____ ?.QtCore ______ (QByteArray, QDir, QEasingCurve, QFile, QFileInfo,
         QLibraryInfo, QObject, QPointF, QProcess, QProcessEnvironment,
         QStandardPaths, Qt, QT_VERSION, QT_VERSION_STR, QTextStream, QUrl)
-____ ?.?W.. ______ ?A.., QMessageBox
+____ ?.?W.. ______ ?A.., ?MB..
 
 ____ colors ______ Colors
 ____ demoitemanimation ______ DemoItemAnimation
@@ -57,28 +57,28 @@ ____ score ______ Score
 ____ textbutton ______ TextButton
 
 
-class MenuManager(QObject):
+c_ MenuManager(QObject):
     ROOT, MENU1, MENU2, LAUNCH, DOCUMENTATION, QUIT, FULLSCREEN, UP, DOWN, \
             BACK, LAUNCH_QML _ range(11)
 
-    pInstance _ None
+    pInstance _ N..
 
     ___ __init__(self):
         super(MenuManager, self).__init__()
 
-        self.contentsDoc _ None
+        self.contentsDoc _ N..
         self.assistantProcess _ QProcess()
         self.helpRootUrl _ ''
         self.docDir _ QDir()
         self.imgDir _ QDir()
 
         self.info _ {}
-        self.window _ None
+        self.window _ N..
 
-        self.ticker _ None
-        self.tickerInAnim _ None
-        self.upButton _ None
-        self.downButton _ None
+        self.ticker _ N..
+        self.tickerInAnim _ N..
+        self.upButton _ N..
+        self.downButton _ N..
         self.score _ Score()
         self.currentMenu _ "[no menu visible]"
         self.currentCategory _ "[no category visible]"
@@ -89,35 +89,35 @@ class MenuManager(QObject):
 
     @classmethod
     ___ instance(cls):
-        if cls.pInstance is None:
+        __ cls.pInstance __ N..:
             cls.pInstance _ cls()
 
-        return cls.pInstance
+        r_ cls.pInstance
 
-    ___ getResource(self, name):
-        return QByteArray()
+    ___ getResource  name):
+        r_ QByteArray()
 
     ___ readXmlDocument(self):
         root _ QFileInfo(__file__).absolutePath()
         xml_file _ QFile(root + '/examples.xml')
-        xml_file.open(QFile.ReadOnly | QFile.Text)
+        xml_file.o..(QFile.ReadOnly | QFile.Text)
         contents _ xml_file.readAll().data()
         xml_file.close()
 
         self.contentsDoc _ parseString(contents)
 
-    ___ itemSelected(self, userCode, menuName):
-        if userCode == MenuManager.LAUNCH:
+    ___ itemSelected  userCode, menuName):
+        __ userCode == MenuManager.LAUNCH:
             self.launchExample(self.currentInfo)
-        elif userCode == MenuManager.LAUNCH_QML:
+        ____ userCode == MenuManager.LAUNCH_QML:
             self.launchQml(self.currentInfo)
-        elif userCode == MenuManager.DOCUMENTATION:
+        ____ userCode == MenuManager.DOCUMENTATION:
             self.showDocInAssistant(self.currentInfo)
-        elif userCode == MenuManager.QUIT:
+        ____ userCode == MenuManager.QUIT:
             ?A...quit()
-        elif userCode == MenuManager.FULLSCREEN:
+        ____ userCode == MenuManager.FULLSCREEN:
             self.window.toggleFullscreen()
-        elif userCode == MenuManager.ROOT:
+        ____ userCode == MenuManager.ROOT:
             # Out.
             self.score.queueMovie(self.currentMenu + ' -out', Score.FROM_START,
                     Score.LOCK_ITEMS)
@@ -142,12 +142,12 @@ class MenuManager(QObject):
                     Score.UNLOCK_ITEMS)
             self.score.queueMovie(self.currentInfo)
 
-            if not Colors.noTicker:
+            __ no. Colors.noTicker:
                 self.ticker.doIntroTransitions _ True
                 self.tickerInAnim.setStartDelay(2000)
                 self.ticker.useGuideQt()
                 self.score.queueMovie('ticker', Score.NEW_ANIMATION_ONLY)
-        elif userCode == MenuManager.MENU1:
+        ____ userCode == MenuManager.MENU1:
             # Out.
             self.score.queueMovie(self.currentMenu + ' -out', Score.FROM_START,
                     Score.LOCK_ITEMS)
@@ -168,9 +168,9 @@ class MenuManager(QObject):
                     Score.UNLOCK_ITEMS)
             self.score.queueMovie(self.currentInfo)
 
-            if not Colors.noTicker:
+            __ no. Colors.noTicker:
                 self.ticker.useGuideTt()
-        elif userCode == MenuManager.MENU2:
+        ____ userCode == MenuManager.MENU2:
             # Out.
             self.score.queueMovie(self.currentInfo + ' -out',
                     Score.NEW_ANIMATION_ONLY)
@@ -189,26 +189,26 @@ class MenuManager(QObject):
             self.score.queueMovie(self.currentInfo + ' -buttons',
                     Score.NEW_ANIMATION_ONLY)
 
-            if not Colors.noTicker:
+            __ no. Colors.noTicker:
                 self.score.queueMovie('ticker -out', Score.NEW_ANIMATION_ONLY)
-        elif userCode == MenuManager.UP:
+        ____ userCode == MenuManager.UP:
             backMenu _ self.info[self.currentMenu]['back']
-            if backMenu:
+            __ backMenu:
                 self.score.queueMovie(self.currentMenu + ' -top_out',
                         Score.FROM_START, Score.LOCK_ITEMS)
                 self.score.queueMovie(backMenu + ' -bottom_in',
                         Score.FROM_START, Score.UNLOCK_ITEMS)
                 self.currentMenu _ backMenu
-        elif userCode == MenuManager.DOWN:
+        ____ userCode == MenuManager.DOWN:
             moreMenu _ self.info[self.currentMenu]['more']
-            if moreMenu:
+            __ moreMenu:
                 self.score.queueMovie(self.currentMenu + ' -bottom_out',
                         Score.FROM_START, Score.LOCK_ITEMS)
                 self.score.queueMovie(moreMenu + ' -top_in', Score.FROM_START,
                         Score.UNLOCK_ITEMS)
                 self.currentMenu _ moreMenu
-        elif userCode == MenuManager.BACK:
-            if self.currentMenuCode == MenuManager.MENU2:
+        ____ userCode == MenuManager.BACK:
+            __ self.currentMenuCode == MenuManager.MENU2:
                 # Out.
                 self.score.queueMovie(self.currentInfo + ' -out',
                         Score.NEW_ANIMATION_ONLY)
@@ -228,65 +228,65 @@ class MenuManager(QObject):
                 self.score.queueMovie(self.currentInfo + ' -buttons',
                         Score.NEW_ANIMATION_ONLY)
 
-                if not Colors.noTicker:
+                __ no. Colors.noTicker:
                     self.ticker.doIntroTransitions _ False
                     self.tickerInAnim.setStartDelay(500)
                     self.score.queueMovie('ticker', Score.NEW_ANIMATION_ONLY)
-            elif self.currentMenuCode !_ MenuManager.ROOT:
+            ____ self.currentMenuCode !_ MenuManager.ROOT:
                 self.itemSelected(MenuManager.ROOT, Colors.rootMenuName)
 
         # Update back and more buttons.
-        if self.info.setdefault(self.currentMenu, {}).get('back'):
+        __ self.info.setdefault(self.currentMenu, {}).get('back'):
             back_state _ TextButton.OFF
-        else:
+        ____
             back_state _ TextButton.DISABLED
 
-        if self.info[self.currentMenu].get('more'):
+        __ self.info[self.currentMenu].get('more'):
             more_state _ TextButton.OFF
-        else:
+        ____
             more_state _ TextButton.DISABLED
 
         self.upButton.setState(back_state)
         self.downButton.setState(more_state)
 
-        if self.score.hasQueuedMovies
+        __ self.score.hasQueuedMovies
             self.score.playQue()
             # Playing new movies might include loading etc., so ignore the FPS
             # at this point.
             self.window.fpsHistory _ []
 
-    ___ showDocInAssistant(self, name):
+    ___ showDocInAssistant  name):
         url _ self.resolveDocUrl(name)
         Colors.debug("Sending URL to Assistant:", url)
 
         # Start assistant if it's not already running.
-        if self.assistantProcess.state() !_ QProcess.Running:
+        __ self.assistantProcess.state() !_ QProcess.Running:
             app _ QLibraryInfo.location(QLibraryInfo.BinariesPath) + QDir.separator()
 
-            if sys.platform == 'darwin':
+            __ sys.platform == 'darwin':
                 app +_ 'Assistant.app/Contents/MacOS/Assistant'
-            else:
+            ____
                 app +_ 'assistant'
 
             args _ ['-enableRemoteControl']
             self.assistantProcess.start(app, args)
-            if not self.assistantProcess.waitForStarted
-                QMessageBox.critical(None, "PyQt Demo",
+            __ no. self.assistantProcess.waitForStarted
+                ?MB...critical(N.., "PyQt Demo",
                         "Could not start %s." % app)
-                return
+                r_
 
         # Send command through remote control even if the process was just
         # started to activate assistant and bring it to the front.
         cmd_str _ QTextStream(self.assistantProcess)
         cmd_str << 'SetSource ' << url << '\n'
 
-    ___ launchExample(self, name):
+    ___ launchExample  name):
         executable _ self.resolveExeFile(name)
 
         process _ QProcess(self)
         process.error.c..(self.launchError)
 
-        if sys.platform == 'win32':
+        __ sys.platform == 'win32':
             # Make sure it finds the DLLs on Windows.
             env _ QProcessEnvironment.systemEnvironment()
             env.insert('PATH',
@@ -294,7 +294,7 @@ class MenuManager(QObject):
                             env.value('PATH'))
             process.setProcessEnvironment(env)
 
-        if self.info[name]['changedirectory'] !_ 'false':
+        __ self.info[name]['changedirectory'] !_ 'false':
             workingDirectory _ self.resolveDataDir(name)
             process.setWorkingDirectory(workingDirectory)
             Colors.debug("Setting working directory:", workingDirectory)
@@ -302,7 +302,7 @@ class MenuManager(QObject):
         Colors.debug("Launching:", executable)
         process.start(sys.executable, [executable])
 
-    ___ launchQml(self, name):
+    ___ launchQml  name):
         import_path _ self.resolveDataDir(name)
         qml _ self.resolveQmlFile(name)
 
@@ -317,14 +317,14 @@ class MenuManager(QObject):
         Colors.debug("Launching:", executable)
         process.start(executable, [qml])
 
-    ___ launchError(self, error):
-        if error !_ QProcess.Crashed:
-            QMessageBox.critical(None, "Failed to launch the example",
+    ___ launchError  error):
+        __ error !_ QProcess.Crashed:
+            ?MB...critical(N.., "Failed to launch the example",
                     "Could not launch the example. Ensure that it has been "
                     "built.",
-                    QMessageBox.Cancel)
+                    ?MB...Cancel)
 
-    ___ init(self, window):
+    ___ init  window):
         self.window _ window
 
         # Create div.
@@ -338,12 +338,12 @@ class MenuManager(QObject):
 
         # Create second level menus.
         level2Menu _ self._first_element(rootElement)
-        while level2Menu is not None:
+        while level2Menu __ no. N..:
             self.createSubMenu(level2Menu)
 
             # Create leaf menu and example info.
             example _ self._first_element(level2Menu)
-            while example is not None:
+            while example __ no. N..:
                 self.readInfoAboutExample(example)
                 self.createLeafMenu(example)
                 example _ self._next_element(example)
@@ -352,22 +352,22 @@ class MenuManager(QObject):
 
     @classmethod
     ___ _first_element(cls, node):
-        return cls._skip_nonelements(node.firstChild)
+        r_ cls._skip_nonelements(node.firstChild)
 
     @classmethod
     ___ _next_element(cls, node):
-        return cls._skip_nonelements(node.nextSibling)
+        r_ cls._skip_nonelements(node.nextSibling)
 
     @staticmethod
     ___ _skip_nonelements(node):
-        while node is not None and node.nodeType !_ node.ELEMENT_NODE:
+        while node __ no. N.. and node.nodeType !_ node.ELEMENT_NODE:
             node _ node.nextSibling
 
-        return node
+        r_ node
 
-    ___ readInfoAboutExample(self, example):
+    ___ readInfoAboutExample  example):
         name _ example.getAttribute('name')
-        if name in self.info:
+        __ name in self.info:
             Colors.debug("__WARNING: MenuManager.readInfoAboutExample: "
                          "Demo/example with name", name, "appears twice in "
                          "the xml-file!__")
@@ -378,7 +378,7 @@ class MenuManager(QObject):
         self.info[name]['image'] _ example.getAttribute('image')
         self.info[name]['qml'] _ example.getAttribute('qml')
 
-    ___ resolveDir(self, name):
+    ___ resolveDir  name):
         dirName _ self.info[name]['dirname']
         fileName _ self.info[name]['filename'].split('/')
 
@@ -388,78 +388,78 @@ class MenuManager(QObject):
 
         dir.cd(dirName)
 
-        if len(fileName) > 1:
+        __ len(fileName) > 1:
             dir.cd('/'.join(fileName[:-1]))
 
         # This may legitimately fail if the example is just a simple .py file.
         dir.cd(fileName[-1])
 
-        return dir
+        r_ dir
 
-    ___ resolveDataDir(self, name):
-        return self.resolveDir(name).absolutePath()
+    ___ resolveDataDir  name):
+        r_ self.resolveDir(name).absolutePath()
 
-    ___ resolveExeFile(self, name):
+    ___ resolveExeFile  name):
         dir _ self.resolveDir(name)
 
         fileName _ self.info[name]['filename'].split('/')[-1]
 
         pyFile _ QFile(dir.path() + '/' + fileName + '.py')
-        if pyFile.exists
-            return pyFile.fileName()
+        __ pyFile.exists
+            r_ pyFile.fileName()
 
         pywFile _ QFile(dir.path() + '/' + fileName + '.pyw')
-        if pywFile.exists
-            return pywFile.fileName()
+        __ pywFile.exists
+            r_ pywFile.fileName()
 
         Colors.debug("- WARNING: Could not resolve executable:", dir.path(),
                 fileName)
-        return '__executable not found__'
+        r_ '__executable not found__'
 
-    ___ resolveQmlFile(self, name):
+    ___ resolveQmlFile  name):
         dir _ self.resolveDir(name)
 
         fileName _ self.info[name]['filename'].split('/')[-1]
 
         qmlFile _ QFile(dir.path() + '/' + fileName + '.qml')
-        if qmlFile.exists
-            return qmlFile.fileName()
+        __ qmlFile.exists
+            r_ qmlFile.fileName()
 
         Colors.debug("- WARNING: Could not resolve QML file:", dir.path(),
                 fileName)
-        return '__QML not found__'
+        r_ '__QML not found__'
 
-    ___ resolveDocUrl(self, name):
+    ___ resolveDocUrl  name):
         dirName _ self.info[name]['dirname']
         fileName _ self.info[name]['filename']
 
-        return self.helpRootUrl + dirName.replace('/', '-') + '-' + fileName + '.html'
+        r_ self.helpRootUrl + dirName.replace('/', '-') + '-' + fileName + '.html'
 
-    ___ resolveImageUrl(self, name):
-        return self.helpRootUrl + 'images/' + name
+    ___ resolveImageUrl  name):
+        r_ self.helpRootUrl + 'images/' + name
 
-    ___ getHtml(self, name):
-        return self.getResource(self.resolveDocUrl(name))
+    ___ getHtml  name):
+        r_ self.getResource(self.resolveDocUrl(name))
 
-    ___ getImage(self, name):
+    ___ getImage  name):
         imageName _ self.info[name]['image']
         fileName _ self.info[name]['filename']
 
-        if self.info[name]['qml'] == 'true':
+        __ self.info[name]['qml'] == 'true':
             fileName _ 'qml-' + fileName.split('/')[-1]
 
-        if not imageName:
+        __ no. imageName:
             imageName _ fileName + '-example.png'
 
-            if self.getResource(self.resolveImageUrl(imageName)).isEmpty
+            __ self.getResource(self.resolveImageUrl(imageName)).isEmpty
                 imageName _ fileName + '.png'
 
-            if self.getResource(self.resolveImageUrl(imageName)).isEmpty
+            __ self.getResource(self.resolveImageUrl(imageName)).isEmpty
                 imageName _ fileName + 'example.png'
 
-        return self.getResource(self.resolveImageUrl(imageName))
+        r_ self.getResource(self.resolveImageUrl(imageName))
 
-    ___ createRootMenu(self, el):
+    ___ createRootMenu  el):
         name _ el.getAttribute('name')
         self.createMenu(el, MenuManager.MENU1)
         self.createInfo(
@@ -469,34 +469,34 @@ class MenuManager(QObject):
         menuButtonsIn _ self.score.insertMovie(name + ' -buttons')
         menuButtonsOut _ self.score.insertMovie(name + ' -buttons -out')
         self.createLowLeftButton("Quit", MenuManager.QUIT, menuButtonsIn,
-                menuButtonsOut, None)
+                menuButtonsOut, N..)
         self.createLowRightButton("Toggle fullscreen", MenuManager.FULLSCREEN,
-                menuButtonsIn, menuButtonsOut, None)
+                menuButtonsIn, menuButtonsOut, N..)
 
-    ___ createSubMenu(self, el):
+    ___ createSubMenu  el):
         name _ el.getAttribute('name')
         self.createMenu(el, MenuManager.MENU2)
         self.createInfo(
                 MenuContentItem(el, self.window.mainSceneRoot),
                 name + ' -info')
 
-    ___ createLeafMenu(self, el):
+    ___ createLeafMenu  el):
         name _ el.getAttribute('name')
         self.createInfo(ExampleContent(name, self.window.mainSceneRoot), name)
 
         infoButtonsIn _ self.score.insertMovie(name + ' -buttons')
         infoButtonsOut _ self.score.insertMovie(name + ' -buttons -out')
         self.createLowRightLeafButton("Documentation", 600,
-                MenuManager.DOCUMENTATION, infoButtonsIn, infoButtonsOut, None)
-        if el.getAttribute('executable') !_ 'false':
+                MenuManager.DOCUMENTATION, infoButtonsIn, infoButtonsOut, N..)
+        __ el.getAttribute('executable') !_ 'false':
             self.createLowRightLeafButton("Launch", 405, MenuManager.LAUNCH,
-                    infoButtonsIn, infoButtonsOut, None)
-        elif el.getAttribute('qml') == 'true':
+                    infoButtonsIn, infoButtonsOut, N..)
+        ____ el.getAttribute('qml') == 'true':
             self.createLowRightLeafButton("Display", 405,
                     MenuManager.LAUNCH_QML, infoButtonsIn, infoButtonsOut,
-                    None)
+                    N..)
 
-    ___ createMenu(self, category, type):
+    ___ createMenu  category, type):
         sw _ self.window.scene.sceneRect().width()
         xOffset _ 15
         yOffset _ 10
@@ -506,7 +506,7 @@ class MenuManager(QObject):
         currentNode _ self._first_element(category)
         currentMenu _ '%s -menu%d' % (name, menuIndex)
 
-        while currentNode is not None:
+        while currentNode __ no. N..:
             movieIn _ self.score.insertMovie(currentMenu)
             movieOut _ self.score.insertMovie(currentMenu + ' -out')
             movieNextTopOut _ self.score.insertMovie(currentMenu + ' -top_out')
@@ -516,13 +516,13 @@ class MenuManager(QObject):
             movieShake _ self.score.insertMovie(currentMenu + ' -shake')
 
             i _ 0
-            while currentNode is not None and i < maxExamples:
+            while currentNode __ no. N.. and i < maxExamples:
                 # Create a normal menu button.
                 label _ currentNode.getAttribute('name')
                 item _ TextButton(label, TextButton.LEFT, type,
                         self.window.mainSceneRoot)
 
-                item.setRecursiveVisible(False)
+                item.setRecursiveVisible F..
                 item.setZValue(10)
                 ih _ item.sceneBoundingRect().height()
                 iw _ item.sceneBoundingRect().width()
@@ -600,7 +600,7 @@ class MenuManager(QObject):
                 i +_ 1
                 currentNode _ self._next_element(currentNode)
 
-            if currentNode is not None and i == maxExamples:
+            __ currentNode __ no. N.. and i == maxExamples:
                 # We need another menu, so register for 'more' and 'back'
                 # buttons.
                 menuIndex +_ 1
@@ -608,12 +608,12 @@ class MenuManager(QObject):
                 currentMenu _ '%s -menu%d' % (name, menuIndex)
                 self.info.setdefault(currentMenu, {})['back'] _ '%s -menu%d' % (name, menuIndex - 1)
 
-    ___ createLowLeftButton(self, label, type, movieIn, movieOut, movieShake, menuString_""):
+    ___ createLowLeftButton  label, type, movieIn, movieOut, movieShake, menuString_""):
         button _ TextButton(label, TextButton.RIGHT, type,
                 self.window.mainSceneRoot, TextButton.PANEL)
-        if menuString:
+        __ menuString:
             button.setMenuString(menuString)
-        button.setRecursiveVisible(False)
+        button.setRecursiveVisible F..
         button.setZValue(10)
 
         iw _ button.sceneBoundingRect().width()
@@ -636,7 +636,7 @@ class MenuManager(QObject):
         buttonOut.setEndValue(QPointF(-iw, Colors.contentStartY + Colors.contentHeight - 26))
         movieOut.append(buttonOut)
 
-        if movieShake is not None:
+        __ movieShake __ no. N..:
             shakeAnim _ DemoItemAnimation(button, DemoItemAnimation.ANIM_UNSPECIFIED)
             shakeAnim.setDuration(650)
             shakeAnim.setStartValue(buttonIn.endValue())
@@ -647,10 +647,10 @@ class MenuManager(QObject):
             shakeAnim.setEndValue(buttonIn.endValue())
             movieShake.append(shakeAnim)
 
-    ___ createLowRightButton(self, label, type, movieIn, movieOut, movieShake):
+    ___ createLowRightButton  label, type, movieIn, movieOut, movieShake):
         item _ TextButton(label, TextButton.RIGHT, type,
                 self.window.mainSceneRoot, TextButton.PANEL)
-        item.setRecursiveVisible(False)
+        item.setRecursiveVisible F..
         item.setZValue(10)
 
         sw _ self.window.scene.sceneRect().width()
@@ -673,10 +673,10 @@ class MenuManager(QObject):
         anim.setEndValue(QPointF(sw, Colors.contentStartY + Colors.contentHeight - 26))
         movieOut.append(anim)
 
-    ___ createLowRightLeafButton(self, label, xOffset, type, movieIn, movieOut, movieShake):
+    ___ createLowRightLeafButton  label, xOffset, type, movieIn, movieOut, movieShake):
         item _ TextButton(label, TextButton.RIGHT, type,
                 self.window.mainSceneRoot, TextButton.PANEL)
-        item.setRecursiveVisible(False)
+        item.setRecursiveVisible F..
         item.setZValue(10)
 
         sw _ self.window.scene.sceneRect().width()
@@ -703,11 +703,11 @@ class MenuManager(QObject):
         anim.setEndValue(QPointF(xOffset, sh))
         movieOut.append(anim)
 
-    ___ createInfo(self, item, name):
+    ___ createInfo  item, name):
         movie_in _ self.score.insertMovie(name)
         movie_out _ self.score.insertMovie(name + ' -out')
         item.setZValue(8)
-        item.setRecursiveVisible(False)
+        item.setRecursiveVisible F..
 
         xOffset _ 230.0
         infoIn _ DemoItemAnimation(item, DemoItemAnimation.ANIM_IN)
@@ -729,8 +729,8 @@ class MenuManager(QObject):
         movie_out.append(infoOut)
 
     ___ createTicker(self):
-        if Colors.noTicker:
-            return
+        __ Colors.noTicker:
+            r_
 
         movie_in _ self.score.insertMovie('ticker')
         movie_out _ self.score.insertMovie('ticker -out')

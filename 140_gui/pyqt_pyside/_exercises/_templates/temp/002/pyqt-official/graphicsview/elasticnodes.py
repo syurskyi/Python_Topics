@@ -46,19 +46,19 @@ ______ math
 
 ____ ?.QtCore ______ (qAbs, QLineF, QPointF, qrand, QRectF, QSizeF, qsrand,
         Qt, QTime)
-____ ?.QtGui ______ (QBrush, QColor, QLinearGradient, QPainter,
+____ ?.?G.. ______ (QBrush, QColor, QLinearGradient, QPainter,
         QPainterPath, QPen, QPolygonF, QRadialGradient)
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsScene,
         QGraphicsView, QStyle)
 
 
-class Edge(QGraphicsItem):
+c_ Edge(QGraphicsItem):
     Pi _ math.pi
     TwoPi _ 2.0 * Pi
 
     Type _ QGraphicsItem.UserType + 2
 
-    ___ __init__(self, sourceNode, destNode):
+    ___ __init__  sourceNode, destNode):
         super(Edge, self).__init__()
 
         self.arrowSize _ 10.0
@@ -73,25 +73,25 @@ class Edge(QGraphicsItem):
         self.adjust()
 
     ___ type(self):
-        return Edge.Type
+        r_ Edge.Type
 
     ___ sourceNode(self):
-        return self.source
+        r_ self.source
 
-    ___ setSourceNode(self, node):
+    ___ setSourceNode  node):
         self.source _ node
         self.adjust()
 
     ___ destNode(self):
-        return self.dest
+        r_ self.dest
 
-    ___ setDestNode(self, node):
+    ___ setDestNode  node):
         self.dest _ node
         self.adjust()
 
     ___ adjust(self):
-        if not self.source or not self.dest:
-            return
+        __ no. self.source or no. self.dest:
+            r_
 
         line _ QLineF(self.mapFromItem(self.source, 0, 0),
                 self.mapFromItem(self.dest, 0, 0))
@@ -99,36 +99,36 @@ class Edge(QGraphicsItem):
 
         self.prepareGeometryChange()
 
-        if length > 20.0:
+        __ length > 20.0:
             edgeOffset _ QPointF((line.dx() * 10) / length,
                     (line.dy() * 10) / length)
 
             self.sourcePoint _ line.p1() + edgeOffset
             self.destPoint _ line.p2() - edgeOffset
-        else:
+        ____
             self.sourcePoint _ line.p1()
             self.destPoint _ line.p1()
 
     ___ boundingRect(self):
-        if not self.source or not self.dest:
-            return QRectF()
+        __ no. self.source or no. self.dest:
+            r_ QRectF()
 
         penWidth _ 1.0
         extra _ (penWidth + self.arrowSize) / 2.0
 
-        return QRectF(self.sourcePoint,
+        r_ QRectF(self.sourcePoint,
                 QSizeF(self.destPoint.x() - self.sourcePoint.x(),
                         self.destPoint.y() - self.sourcePoint.y())).normalized().adjusted(-extra, -extra, extra, extra)
 
-    ___ paint(self, painter, option, widget):
-        if not self.source or not self.dest:
-            return
+    ___ paint  painter, option, widget):
+        __ no. self.source or no. self.dest:
+            r_
 
         # Draw the line itself.
         line _ QLineF(self.sourcePoint, self.destPoint)
 
-        if line.length() == 0.0:
-            return
+        __ line.length() == 0.0:
+            r_
 
         painter.setPen(QPen(Qt.black, 1, Qt.SolidLine, Qt.RoundCap,
                 Qt.RoundJoin))
@@ -136,7 +136,7 @@ class Edge(QGraphicsItem):
 
         # Draw the arrows if there's enough room.
         angle _ math.acos(line.dx() / line.length())
-        if line.dy() >_ 0:
+        __ line.dy() >_ 0:
             angle _ Edge.TwoPi - angle
 
         sourceArrowP1 _ self.sourcePoint + QPointF(math.sin(angle + Edge.Pi / 3) * self.arrowSize,
@@ -153,10 +153,10 @@ class Edge(QGraphicsItem):
         painter.drawPolygon(QPolygonF([line.p2(), destArrowP1, destArrowP2]))
 
 
-class Node(QGraphicsItem):
+c_ Node(QGraphicsItem):
     Type _ QGraphicsItem.UserType + 1
 
-    ___ __init__(self, graphWidget):
+    ___ __init__  graphWidget):
         super(Node, self).__init__()
 
         self.graph _ graphWidget
@@ -169,46 +169,46 @@ class Node(QGraphicsItem):
         self.setZValue(1)
 
     ___ type(self):
-        return Node.Type
+        r_ Node.Type
 
-    ___ addEdge(self, edge):
+    ___ addEdge  edge):
         self.edgeList.append(edge)
         edge.adjust()
 
     ___ edges(self):
-        return self.edgeList
+        r_ self.edgeList
 
     ___ calculateForces(self):
-        if not self.scene() or self.scene().mouseGrabberItem() is self:
+        __ no. self.scene() or self.scene().mouseGrabberItem() __ self:
             self.newPos _ self.pos()
-            return
+            r_
     
         # Sum up all forces pushing this item away.
         xvel _ 0.0
         yvel _ 0.0
         for item in self.scene().items
-            if not isinstance(item, Node):
+            __ no. isinstance(item, Node):
                 continue
 
             line _ QLineF(self.mapFromItem(item, 0, 0), QPointF(0, 0))
             dx _ line.dx()
             dy _ line.dy()
             l _ 2.0 * (dx * dx + dy * dy)
-            if l > 0:
+            __ l > 0:
                 xvel +_ (dx * 150.0) / l
                 yvel +_ (dy * 150.0) / l
 
         # Now subtract all forces pulling items together.
         weight _ (len(self.edgeList) + 1) * 10.0
         for edge in self.edgeList:
-            if edge.sourceNode() is self:
+            __ edge.sourceNode() __ self:
                 pos _ self.mapFromItem(edge.destNode(), 0, 0)
-            else:
+            ____
                 pos _ self.mapFromItem(edge.sourceNode(), 0, 0)
             xvel +_ pos.x() / weight
             yvel +_ pos.y() / weight
     
-        if qAbs(xvel) < 0.1 and qAbs(yvel) < 0.1:
+        __ qAbs(xvel) < 0.1 and qAbs(yvel) < 0.1:
             xvel _ yvel _ 0.0
 
         sceneRect _ self.scene().sceneRect()
@@ -217,33 +217,33 @@ class Node(QGraphicsItem):
         self.newPos.setY(min(max(self.newPos.y(), sceneRect.top() + 10), sceneRect.bottom() - 10))
 
     ___ advance(self):
-        if self.newPos == self.pos
-            return False
+        __ self.newPos == self.pos
+            r_ False
 
         self.setPos(self.newPos)
-        return True
+        r_ True
 
     ___ boundingRect(self):
         adjust _ 2.0
-        return QRectF(-10 - adjust, -10 - adjust, 23 + adjust, 23 + adjust)
+        r_ QRectF(-10 - adjust, -10 - adjust, 23 + adjust, 23 + adjust)
 
     ___ shape(self):
         path _ QPainterPath()
         path.addEllipse(-10, -10, 20, 20)
-        return path
+        r_ path
 
-    ___ paint(self, painter, option, widget):
+    ___ paint  painter, option, widget):
         painter.setPen(Qt.NoPen)
         painter.setBrush(Qt.darkGray)
         painter.drawEllipse(-7, -7, 20, 20)
 
         gradient _ QRadialGradient(-3, -3, 10)
-        if option.state & QStyle.State_Sunken:
+        __ option.state & QStyle.State_Sunken:
             gradient.setCenter(3, 3)
             gradient.setFocalPoint(3, 3)
             gradient.setColorAt(1, QColor(Qt.yellow).lighter(120))
             gradient.setColorAt(0, QColor(Qt.darkYellow).lighter(120))
-        else:
+        ____
             gradient.setColorAt(0, Qt.yellow)
             gradient.setColorAt(1, Qt.darkYellow)
 
@@ -251,24 +251,24 @@ class Node(QGraphicsItem):
         painter.setPen(QPen(Qt.black, 0))
         painter.drawEllipse(-10, -10, 20, 20)
 
-    ___ itemChange(self, change, value):
-        if change == QGraphicsItem.ItemPositionHasChanged:
+    ___ itemChange  change, value):
+        __ change == QGraphicsItem.ItemPositionHasChanged:
             for edge in self.edgeList:
                 edge.adjust()
             self.graph.itemMoved()
 
-        return super(Node, self).itemChange(change, value)
+        r_ super(Node, self).itemChange(change, value)
 
-    ___ mousePressEvent(self, event):
+    ___ mousePressEvent  event):
         self.update()
         super(Node, self).mousePressEvent(event)
 
-    ___ mouseReleaseEvent(self, event):
+    ___ mouseReleaseEvent  event):
         self.update()
         super(Node, self).mouseReleaseEvent(event)
 
 
-class GraphWidget(QGraphicsView):
+c_ GraphWidget(QGraphicsView):
     ___ __init__(self):
         super(GraphWidget, self).__init__()
 
@@ -330,59 +330,59 @@ class GraphWidget(QGraphicsView):
         self.setWindowTitle("Elastic Nodes")
 
     ___ itemMoved(self):
-        if not self.timerId:
+        __ no. self.timerId:
             self.timerId _ self.startTimer(1000 / 25)
 
-    ___ keyPressEvent(self, event):
+    ___ keyPressEvent  event):
         key _ event.key()
 
-        if key == Qt.Key_Up:
+        __ key == Qt.Key_Up:
             self.centerNode.moveBy(0, -20)
-        elif key == Qt.Key_Down:
+        ____ key == Qt.Key_Down:
             self.centerNode.moveBy(0, 20)
-        elif key == Qt.Key_Left:
+        ____ key == Qt.Key_Left:
             self.centerNode.moveBy(-20, 0)
-        elif key == Qt.Key_Right:
+        ____ key == Qt.Key_Right:
             self.centerNode.moveBy(20, 0)
-        elif key == Qt.Key_Plus:
+        ____ key == Qt.Key_Plus:
             self.scaleView(1.2)
-        elif key == Qt.Key_Minus:
+        ____ key == Qt.Key_Minus:
             self.scaleView(1 / 1.2)
-        elif key == Qt.Key_Space or key == Qt.Key_Enter:
+        ____ key == Qt.Key_Space or key == Qt.Key_Enter:
             for item in self.scene().items
-                if isinstance(item, Node):
+                __ isinstance(item, Node):
                     item.setPos(-150 + qrand() % 300, -150 + qrand() % 300)
-        else:
+        ____
             super(GraphWidget, self).keyPressEvent(event)
 
-    ___ timerEvent(self, event):
-        nodes _ [item for item in self.scene().items() if isinstance(item, Node)]
+    ___ timerEvent  event):
+        nodes _ [item for item in self.scene().items() __ isinstance(item, Node)]
 
         for node in nodes:
             node.calculateForces()
 
         itemsMoved _ False
         for node in nodes:
-            if node.advance
+            __ node.advance
                 itemsMoved _ True
 
-        if not itemsMoved:
+        __ no. itemsMoved:
             self.killTimer(self.timerId)
             self.timerId _ 0
 
-    ___ wheelEvent(self, event):
+    ___ wheelEvent  event):
         self.scaleView(math.pow(2.0, -event.angleDelta().y() / 240.0))
 
-    ___ drawBackground(self, painter, rect):
+    ___ drawBackground  painter, rect):
         # Shadow.
         sceneRect _ self.sceneRect()
         rightShadow _ QRectF(sceneRect.right(), sceneRect.top() + 5, 5,
                 sceneRect.height())
         bottomShadow _ QRectF(sceneRect.left() + 5, sceneRect.bottom(),
                 sceneRect.width(), 5)
-        if rightShadow.intersects(rect) or rightShadow.contains(rect):
+        __ rightShadow.intersects(rect) or rightShadow.contains(rect):
 	        painter.fillRect(rightShadow, Qt.darkGray)
-        if bottomShadow.intersects(rect) or bottomShadow.contains(rect):
+        __ bottomShadow.intersects(rect) or bottomShadow.contains(rect):
 	        painter.fillRect(bottomShadow, Qt.darkGray)
 
         # Fill.
@@ -408,16 +408,16 @@ class GraphWidget(QGraphicsView):
         painter.setPen(Qt.black)
         painter.drawText(textRect, message)
 
-    ___ scaleView(self, scaleFactor):
+    ___ scaleView  scaleFactor):
         factor _ self.transform().scale(scaleFactor, scaleFactor).mapRect(QRectF(0, 0, 1, 1)).width()
 
-        if factor < 0.07 or factor > 100:
-            return
+        __ factor < 0.07 or factor > 100:
+            r_
 
         self.scale(scaleFactor, scaleFactor)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

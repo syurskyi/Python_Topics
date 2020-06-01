@@ -43,13 +43,13 @@
 ____ ?.QtCore ______ QLineF, QPointF
 
 
-class Guide(object):
-    ___ __init__(self, follows_None):
+c_ Guide(object):
+    ___ __init__  follows_None):
         self.scaleX _ 1.0
         self.scaleY _ 1.0
 
-        if follows is not None:
-            while follows.nextGuide is not follows.firstGuide:
+        __ follows __ no. N..:
+            while follows.nextGuide __ no. follows.firstGuide:
                 follows _ follows.nextGuide
 
             follows.nextGuide _ self
@@ -57,69 +57,69 @@ class Guide(object):
             self.firstGuide _ follows.firstGuide
             self.nextGuide _ follows.firstGuide
             self.startLength _ int(follows.startLength + follows.length()) + 1
-        else:
+        ____
             self.prevGuide _ self
             self.firstGuide _ self
             self.nextGuide _ self
             self.startLength _ 0
 
-    ___ setScale(self, scaleX, scaleY, all_True):
+    ___ setScale  scaleX, scaleY, all_True):
         self.scaleX _ scaleX
         self.scaleY _ scaleY
 
-        if all:
+        __ all:
             next _ self.nextGuide
-            while next is not self:
+            while next __ no. self:
                 next.scaleX _ scaleX
                 next.scaleY _ scaleY
                 next _ next.nextGuide
 
-    ___ setFence(self, fence, all_True):
+    ___ setFence  fence, all_True):
         self.fence _ fence
 
-        if all:
+        __ all:
             next _ self.nextGuide
-            while next is not self:
+            while next __ no. self:
                 next.fence _ fence
                 next _ next.nextGuide
 
     ___ lengthAll(self):
         len _ self.length()
         next _ self.nextGuide
-        while next is not self:
+        while next __ no. self:
             len +_ next.length()
             next _ next.nextGuide
 
-        return len
+        r_ len
 
-    ___ move(self, item, dest, moveSpeed):
+    ___ move  item, dest, moveSpeed):
         walkLine _ QLineF(item.getGuidedPos(), dest)
-        if moveSpeed >_ 0 and walkLine.length() > moveSpeed:
+        __ moveSpeed >_ 0 and walkLine.length() > moveSpeed:
             # The item is too far away from it's destination point so we move
             # it towards it instead.
             dx _ walkLine.dx()
             dy _ walkLine.dy()
 
-            if abs(dx) > abs(dy):
+            __ abs(dx) > abs(dy):
                 # Walk along x-axis.
-                if dx !_ 0:
+                __ dx !_ 0:
                     d _ moveSpeed * dy / abs(dx)
 
-                    if dx > 0:
+                    __ dx > 0:
                         s _ moveSpeed
-                    else:
+                    ____
                         s _ -moveSpeed
 
                     dest.setX(item.getGuidedPos().x() + s)
                     dest.setY(item.getGuidedPos().y() + d)
-            else:
+            ____
                 # Walk along y-axis.
-                if dy !_ 0:
+                __ dy !_ 0:
                     d _ moveSpeed * dx / abs(dy)
 
-                    if dy > 0:
+                    __ dy > 0:
                         s _ moveSpeed
-                    else:
+                    ____
                         s _ -moveSpeed
 
                     dest.setX(item.getGuidedPos().x() + d)
@@ -128,13 +128,13 @@ class Guide(object):
         item.setGuidedPos(dest)
 
     ___ startPos(self):
-        return QPointF(0, 0)
+        r_ QPointF(0, 0)
 
     ___ endPos(self):
-        return QPointF(0, 0)
+        r_ QPointF(0, 0)
 
     ___ length(self):
-        return 1.0
+        r_ 1.0
 
-    ___ guide(self, item, moveSpeed):
+    ___ guide  item, moveSpeed):
         raise NotImplementedError

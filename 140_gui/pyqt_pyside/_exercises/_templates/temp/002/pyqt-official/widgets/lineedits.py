@@ -43,12 +43,12 @@
 
 
 ____ ?.QtCore ______ Qt
-____ ?.QtGui ______ QDoubleValidator, QIntValidator
+____ ?.?G.. ______ QDoubleValidator, QIntValidator
 ____ ?.?W.. ______ (?A.., QComboBox, QGridLayout, QGroupBox,
         QLabel, QLineEdit, QWidget)
 
 
-class Window(QWidget):
+c_ Window(QWidget):
     ___ __init__(self):
         super(Window, self).__init__()
 
@@ -150,54 +150,54 @@ class Window(QWidget):
 
         self.setWindowTitle("Line Edits")
 
-    ___ echoChanged(self, index):
-        if index == 0:
+    ___ echoChanged  index):
+        __ index == 0:
             self.echoLineEdit.setEchoMode(QLineEdit.Normal)
-        elif index == 1:
+        ____ index == 1:
             self.echoLineEdit.setEchoMode(QLineEdit.Password)
-        elif index == 2:
+        ____ index == 2:
             self.echoLineEdit.setEchoMode(QLineEdit.PasswordEchoOnEdit)
-        elif index == 3:
+        ____ index == 3:
     	    self.echoLineEdit.setEchoMode(QLineEdit.NoEcho)
 
-    ___ validatorChanged(self, index):
-        if index == 0:
+    ___ validatorChanged  index):
+        __ index == 0:
             self.validatorLineEdit.setValidator(0)
-        elif index == 1:
+        ____ index == 1:
             self.validatorLineEdit.setValidator(QIntValidator(self.validatorLineEdit))
-        elif index == 2:
+        ____ index == 2:
             self.validatorLineEdit.setValidator(QDoubleValidator(-999.0, 999.0, 2, self.validatorLineEdit))
 
         self.validatorLineEdit.clear()
 
-    ___ alignmentChanged(self, index):
-        if index == 0:
+    ___ alignmentChanged  index):
+        __ index == 0:
             self.alignmentLineEdit.setAlignment(Qt.AlignLeft)
-        elif index == 1:
+        ____ index == 1:
             self.alignmentLineEdit.setAlignment(Qt.AlignCenter)
-        elif index == 2:
+        ____ index == 2:
     	    self.alignmentLineEdit.setAlignment(Qt.AlignRight)
 
-    ___ inputMaskChanged(self, index):
-        if index == 0:
+    ___ inputMaskChanged  index):
+        __ index == 0:
             self.inputMaskLineEdit.setInputMask('')
-        elif index == 1:
+        ____ index == 1:
             self.inputMaskLineEdit.setInputMask('+99 99 99 99 99;_')
-        elif index == 2:
+        ____ index == 2:
             self.inputMaskLineEdit.setInputMask('0000-00-00')
             self.inputMaskLineEdit.sT..('00000000')
             self.inputMaskLineEdit.setCursorPosition(0)
-        elif index == 3:
+        ____ index == 3:
             self.inputMaskLineEdit.setInputMask('>AAAAA-AAAAA-AAAAA-AAAAA-AAAAA;#')
 
-    ___ accessChanged(self, index):
-        if index == 0:
-            self.accessLineEdit.setReadOnly(False)
-        elif index == 1:
+    ___ accessChanged  index):
+        __ index == 0:
+            self.accessLineEdit.setReadOnly F..
+        ____ index == 1:
             self.accessLineEdit.setReadOnly(True)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

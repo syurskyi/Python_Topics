@@ -45,10 +45,10 @@ ____ ?.?W.. ______ ?A.., QTextEdit
 
 # The purpose of this class is to show that Designer's property editor shows
 # all Python classes in the hierarchy that define properties.
-class PyTextViewer(QTextEdit):
+c_ PyTextViewer(QTextEdit):
 
     # Initialise the instance.
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(PyTextViewer, self).__init__(parent)
 
         self.setReadOnly(True)
@@ -60,10 +60,10 @@ class PyTextViewer(QTextEdit):
     # naming convention (ie. by using the naming the getter "author") because
     # it would conflict with the property name.
     ___ getAuthor(self):
-        return self._author
+        r_ self._author
 
     # The setter for the author property.
-    ___ setAuthor(self, name):
+    ___ setAuthor  name):
         self._author _ name
 
     # The resetter for the author property.  Only Qt Designer uses this.  Qt
@@ -77,7 +77,7 @@ class PyTextViewer(QTextEdit):
 
 
 # This is the class that implements the custom widget.
-class PyDemo(PyTextViewer):
+c_ PyDemo(PyTextViewer):
 
     # Define the Qt signals as a sequence of C++ function signatures excluding
     # the return type.  These may be connected to other signals or slots in Qt
@@ -85,7 +85,7 @@ class PyDemo(PyTextViewer):
     zoomChanged _ pyqtSignal(int)
 
     # Initialise the instance.
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(PyDemo, self).__init__(parent)
 
         self.setWindowTitle("PyQt Demonstration Widget")
@@ -97,20 +97,20 @@ class PyDemo(PyTextViewer):
 
     # The getter for the zoom property.
     ___ getZoom(self):
-        return self._zoom
+        r_ self._zoom
 
     # The setter for the zoom property.  We also make define this as a Qt slot
     # which can be connected to Qt signals in Qt Designer.
     @pyqtSlot(int)
-    ___ setZoom(self, zoom):
+    ___ setZoom  zoom):
         # Don't do anything if nothing has changed.
-        if self._zoom == zoom:
-            return
+        __ self._zoom == zoom:
+            r_
 
         # Zoom in or out according to the relative zoom levels.
-        if self._zoom < zoom:
+        __ self._zoom < zoom:
             self.zoomIn(zoom - self._zoom)
-        elif self._zoom > zoom:
+        ____ self._zoom > zoom:
             self.zoomOut(self._zoom - zoom)
 
         # Remember the new zoom level.
@@ -144,7 +144,7 @@ _demo_text _ """<h3>PyQt Demonstration Widget</h3>
 
 # Display the custom widget if the script is being run directly from the
 # command line.
-if __name__ == "__main__":
+__ __name__ == "__main__":
 
     ______ sys
 

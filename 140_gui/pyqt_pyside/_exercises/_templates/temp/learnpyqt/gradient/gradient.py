@@ -1,20 +1,20 @@
 ______ sys
-if 'PyQt5' in sys.modules:
-    ____ ? ______ QtCore, QtGui, ?W..
+__ 'PyQt5' in sys.modules:
+    ____ ? ______ QtCore, ?G.., ?W..
     ____ ?.QtCore ______ Qt
-    ____ ?.QtCore ______ pyqtSignal as Signal
+    ____ ?.QtCore ______ pyqtSignal __ Signal
 
-else:
-    ____ PySide2 ______ QtCore, QtGui, ?W..
+____
+    ____ PySide2 ______ QtCore, ?G.., ?W..
     ____ PySide2.QtCore ______ Qt
     ____ PySide2.QtCore ______ Signal
 
 
-class Gradient(?W...QWidget):
+c_ Gradient(?W...QWidget):
 
     gradientChanged _ Signal()
 
-    ___ __init__(self, gradient_None, *args, **kwargs):
+    ___ __init__  gradient_None, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
         self.setSizePolicy(
@@ -22,10 +22,10 @@ class Gradient(?W...QWidget):
             ?W...QSizePolicy.MinimumExpanding
         )
 
-        if gradient:
+        __ gradient:
             self._gradient _ gradient
 
-        else:
+        ____
             self._gradient _ [
                 (0.0, '#000000'),
                 (1.0, '#ffffff'),
@@ -35,34 +35,34 @@ class Gradient(?W...QWidget):
         self._handle_w _ 10
         self._handle_h _ 10
 
-        self._drag_position _ None
+        self._drag_position _ N..
 
-    ___ paintEvent(self, e):
-        painter _ QtGui.QPainter(self)
+    ___ paintEvent  e):
+        painter _ ?G...QPainter(self)
         width _ painter.device().width()
         height _ painter.device().height()
 
         # Draw the linear horizontal gradient.
-        gradient _ QtGui.QLinearGradient(0, 0, width, 0)
+        gradient _ ?G...QLinearGradient(0, 0, width, 0)
         for stop, color in self._gradient:
-            gradient.setColorAt(stop, QtGui.QColor(color))
+            gradient.setColorAt(stop, ?G...QColor(color))
 
         rect _ QtCore.QRect(0, 0, width, height)
         painter.fillRect(rect, gradient)
 
-        pen _ QtGui.QPen()
+        pen _ ?G...QPen()
 
         y _ painter.device().height() / 2
 
 
         # Draw the stop handles.
         for stop, _ in self._gradient:
-            pen.setColor(QtGui.QColor('white'))
+            pen.setColor(?G...QColor('white'))
             painter.setPen(pen)
 
             painter.drawLine(stop * width, y - self._handle_h, stop * width, y + self._handle_h)
 
-            pen.setColor(QtGui.QColor('red'))
+            pen.setColor(?G...QColor('red'))
             painter.setPen(pen)
 
             rect _ QtCore.QRect(
@@ -76,7 +76,7 @@ class Gradient(?W...QWidget):
         painter.end()
 
     ___ sizeHint(self):
-        return QtCore.QSize(200, 50)
+        r_ QtCore.QSize(200, 50)
 
     ___ _sort_gradient(self):
         self._gradient _ sorted(self._gradient, key_lambda g:g[0])
@@ -88,7 +88,7 @@ class Gradient(?W...QWidget):
             for stop, color in self._gradient
         ]
 
-    ___ setGradient(self, gradient):
+    ___ setGradient  gradient):
         assert all([0.0 <_ stop <_ 1.0 for stop, _ in gradient])
         self._gradient _ gradient
         self._constrain_gradient()
@@ -96,19 +96,19 @@ class Gradient(?W...QWidget):
         self.gradientChanged.emit()
 
     ___ gradient(self):
-        return self._gradient
+        r_ self._gradient
 
     @property
     ___ _end_stops(self):
-        return [0, len(self._gradient)-1]
+        r_ [0, len(self._gradient)-1]
 
-    ___ addStop(self, stop, color_None):
+    ___ addStop  stop, color_None):
         # Stop is a value 0...1, find the point to insert this stop
         # in the list.
         assert 0.0 <_ stop <_ 1.0
 
         for n, g in enumerate(self._gradient):
-            if g[0] > stop:
+            __ g[0] > stop:
                 # Insert before this entry, with specified or next color.
                 self._gradient.insert(n, (stop, color or g[1]))
                 break
@@ -116,86 +116,86 @@ class Gradient(?W...QWidget):
         self.gradientChanged.emit()
         self.update()
 
-    ___ removeStopAtPosition(self, n):
-        if n not in self._end_stops:
+    ___ removeStopAtPosition  n):
+        __ n no. in self._end_stops:
             del self._gradient[n]
             self.gradientChanged.emit()
             self.update()
 
-    ___ setColorAtPosition(self, n, color):
-        if n < len(self._gradient):
+    ___ setColorAtPosition  n, color):
+        __ n < len(self._gradient):
             stop, _ _ self._gradient[n]
             self._gradient[n] _ stop, color
             self.gradientChanged.emit()
             self.update()
 
-    ___ chooseColorAtPosition(self, n, current_color_None):
+    ___ chooseColorAtPosition  n, current_color_None):
         dlg _ ?W...QColorDialog(self)
-        if current_color:
-            dlg.setCurrentColor(QtGui.QColor(current_color))
+        __ current_color:
+            dlg.setCurrentColor(?G...QColor(current_color))
 
-        if dlg.exec_
+        __ dlg.exec_
             self.setColorAtPosition(n, dlg.currentColor().name())
 
-    ___ _find_stop_handle_for_event(self, e, to_exclude_None):
+    ___ _find_stop_handle_for_event  e, to_exclude_None):
         width _ self.width()
         height _ self.height()
         midpoint _ height / 2
 
         # Are we inside a stop point? First check y.
-        if (
+        __ (
             e.y() >_ midpoint - self._handle_h and
             e.y() <_ midpoint + self._handle_h
         ):
 
             for n, (stop, color) in enumerate(self._gradient):
-                if to_exclude and n in to_exclude:
+                __ to_exclude and n in to_exclude:
                     # Allow us to skip the extreme ends of the gradient.
                     continue
-                if (
+                __ (
                     e.x() >_ stop * width - self._handle_w and
                     e.x() <_ stop * width + self._handle_w
                 ):
-                    return n
+                    r_ n
 
-    ___ mousePressEvent(self, e):
+    ___ mousePressEvent  e):
         # We're in this stop point.
-        if e.button() == Qt.RightButton:
+        __ e.button() == Qt.RightButton:
             n _ self._find_stop_handle_for_event(e)
-            if n is not None:
+            __ n __ no. N..:
                 _, color _ self._gradient[n]
                 self.chooseColorAtPosition(n, color)
 
-        elif e.button() == Qt.LeftButton:
+        ____ e.button() == Qt.LeftButton:
             n _ self._find_stop_handle_for_event(e, to_exclude_self._end_stops)
-            if n is not None:
+            __ n __ no. N..:
                 # Activate drag mode.
                 self._drag_position _ n
 
 
-    ___ mouseReleaseEvent(self, e):
-        self._drag_position _ None
+    ___ mouseReleaseEvent  e):
+        self._drag_position _ N..
         self._sort_gradient()
 
-    ___ mouseMoveEvent(self, e):
+    ___ mouseMoveEvent  e):
         # If drag active, move the stop.
-        if self._drag_position:
+        __ self._drag_position:
             stop _ e.x() / self.width()
             _, color _ self._gradient[self._drag_position]
             self._gradient[self._drag_position] _ stop, color
             self._constrain_gradient()
             self.update()
 
-    ___ mouseDoubleClickEvent(self, e):
+    ___ mouseDoubleClickEvent  e):
         # Calculate the position of the click relative 0..1 to the width.
         n _ self._find_stop_handle_for_event(e)
-        if n:
+        __ n:
             self._sort_gradient() # Ensure ordered.
             # Delete existing, if not at the ends.
-            if n > 0 and n < len(self._gradient) - 1:
+            __ n > 0 and n < len(self._gradient) - 1:
                 self.removeStopAtPosition(n)
 
-        else:
+        ____
             stop _ e.x() / self.width()
             self.addStop(stop)
 

@@ -40,14 +40,14 @@
 
 
 ____ ?.QtCore ______ pyqtSlot, QFile, QRegExp, Qt, QTextStream
-____ ?.?W.. ______ (?A.., QDialog, QFileDialog, QMessageBox,
+____ ?.?W.. ______ (?A.., QDialog, ?FD.., ?MB..,
         QStyleFactory)
 
 ____ ui_stylesheeteditor ______ Ui_StyleSheetEditor
 
 
-class StyleSheetEditor(QDialog):
-    ___ __init__(self, parent_None):
+c_ StyleSheetEditor(QDialog):
+    ___ __init__  parent_None):
         super(StyleSheetEditor, self).__init__(parent)
 
         self.ui _ Ui_StyleSheetEditor()
@@ -55,7 +55,7 @@ class StyleSheetEditor(QDialog):
 
         regExp _ QRegExp(r'.(.*)\+?Style')
         defaultStyle _ ?A...style().metaObject().className()
-        if regExp.exactMatch(defaultStyle):
+        __ regExp.exactMatch(defaultStyle):
             defaultStyle _ regExp.cap(1)
 
         self.ui.styleCombo.addItems(QStyleFactory.keys())
@@ -68,12 +68,12 @@ class StyleSheetEditor(QDialog):
         self.loadStyleSheet('Coffee')
 
     @pyqtSlot(str)
-    ___ on_styleCombo_activated(self, styleName):
+    ___ on_styleCombo_activated  styleName):
         ?A...setStyle(styleName)
-        self.ui.applyButton.setEnabled(False)
+        self.ui.applyButton.setEnabled F..
 
     @pyqtSlot(str)
-    ___ on_styleSheetCombo_activated(self, sheetName):
+    ___ on_styleSheetCombo_activated  sheetName):
         self.loadStyleSheet(sheetName)
 
     ___ on_styleTextEdit_textChanged(self):
@@ -81,17 +81,17 @@ class StyleSheetEditor(QDialog):
 
     ___ on_applyButton_clicked(self):
         ?A...instance().setStyleSheet(
-                self.ui.styleTextEdit.toPlainText())
-        self.ui.applyButton.setEnabled(False)
+                self.ui.styleTextEdit.tPT..
+        self.ui.applyButton.setEnabled F..
 
     ___ on_saveButton_clicked(self):
-        fileName, _ _ QFileDialog.getSaveFileName(self)
-        if fileName:
+        fileName, _ _ ?FD...getSaveFileName(self)
+        __ fileName:
             self.saveStyleSheet(fileName)
 
-    ___ loadStyleSheet(self, sheetName):
+    ___ loadStyleSheet  sheetName):
         file _ QFile(':/qss/%s.qss' % sheetName.lower())
-        file.open(QFile.ReadOnly)
+        file.o..(QFile.ReadOnly)
 
         styleSheet _ file.readAll()
         try:
@@ -101,15 +101,15 @@ class StyleSheetEditor(QDialog):
             # Python v3.
             styleSheet _ str(styleSheet, encoding_'utf8')
 
-        self.ui.styleTextEdit.setPlainText(styleSheet)
+        self.ui.styleTextEdit.sPT..(styleSheet)
         ?A...instance().setStyleSheet(styleSheet)
-        self.ui.applyButton.setEnabled(False)
+        self.ui.applyButton.setEnabled F..
 
-    ___ saveStyleSheet(self, fileName):
+    ___ saveStyleSheet  fileName):
         styleSheet _ self.ui.styleTextEdit.toPlainText()
         file _ QFile(fileName)
-        if file.open(QFile.WriteOnly):
+        __ file.o..(QFile.WriteOnly):
             QTextStream(file) << styleSheet
-        else:
-            QMessageBox.information(self, "Unable to open file",
+        ____
+            ?MB...information  "Unable to open file",
                     file.errorString())

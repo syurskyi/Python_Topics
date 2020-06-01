@@ -168,10 +168,10 @@ qt_resource_struct_v2 _ b"\
 "
 
 qt_version _ [int(v) for v in QtCore.qVersion().split('.')]
-if qt_version < [5, 8, 0]:
+__ qt_version < [5, 8, 0]:
     rcc_version _ 1
     qt_resource_struct _ qt_resource_struct_v1
-else:
+____
     rcc_version _ 2
     qt_resource_struct _ qt_resource_struct_v2
 

@@ -53,16 +53,16 @@ ____ guideline ______ GuideLine
 ____ letteritem ______ LetterItem
 
 
-class TickerPostEffect(object):
-    ___ tick(self, adjust):
+c_ TickerPostEffect(object):
+    ___ tick  adjust):
         pass
 
-    ___ transform(self, item, pos):
+    ___ transform  item, pos):
         pass
 
 
-class PostRotateXY(TickerPostEffect):
-    ___ __init__(self, speedx, speedy, curvx, curvy):
+c_ PostRotateXY(TickerPostEffect):
+    ___ __init__  speedx, speedy, curvx, curvy):
         super(PostRotateXY, self).__init__()
 
         self.currRotX _ 0.0
@@ -73,59 +73,59 @@ class PostRotateXY(TickerPostEffect):
         self.curvx _ curvx
         self.curvy _ curvy
 
-    ___ tick(self, adjust):
+    ___ tick  adjust):
         self.currRotX +_ self.speedx * adjust
         self.currRotY +_ self.speedy * adjust
 
-    ___ transform(self, item, pos):
+    ___ transform  item, pos):
         parent _ item.parentItem()
         center _ parent.boundingRect().center()
         pos.setX(center.x() + (pos.x() - center.x()) * math.cos(self.currRotX + pos.x() * self.curvx))
         pos.setY(center.y() + (pos.y() - center.y()) * math.cos(self.currRotY + pos.y() * self.curvy))
 
 
-class PostRotateXYTwist(PostRotateXY):
-    ___ transform(self, item, pos):
+c_ PostRotateXYTwist(PostRotateXY):
+    ___ transform  item, pos):
         parent _ item.parentItem()
         center _ parent.boundingRect().center()
         pos.setX(center.x() + (pos.x() - center.x()) * math.cos(self.currRotX + pos.y() * self.curvx))
         pos.setY(center.y() + (pos.y() - center.y()) * math.cos(self.currRotY + pos.x() * self.curvy))
 
 
-class TickerEffect(object):
+c_ TickerEffect(object):
     Normal, Intro, Outro _ range(3)
 
-    ___ __init__(self, letters):
+    ___ __init__  letters):
         self.postEffect _ TickerPostEffect()
         self.status _ TickerEffect.Intro
         self.letters _ letters
         self.morphSpeed _ self.normalMorphSpeed _ Colors.tickerMorphSpeed
         self.moveSpeed _ self.normalMoveSpeed _ Colors.tickerMoveSpeed
         self.useSheepDog _ True
-        self.morphBetweenModels _ not Colors.noTickerMorph
+        self.morphBetweenModels _ no. Colors.noTickerMorph
 
-    ___ setPostEffect(self, effect):
+    ___ setPostEffect  effect):
         self.postEffect _ effect
 
-    ___ slowDownAfterIntro(self, adjust):
-        if self.morphBetweenModels:
-            if self.status == TickerEffect.Intro:
+    ___ slowDownAfterIntro  adjust):
+        __ self.morphBetweenModels:
+            __ self.status == TickerEffect.Intro:
                 dec _ 0.1 * adjust
                 self.moveSpeed -_ dec
-                if self.moveSpeed < Colors.tickerMoveSpeed:
+                __ self.moveSpeed < Colors.tickerMoveSpeed:
                     self.moveSpeed _ self.normalMoveSpeed
                     self.morphSpeed _ self.normalMorphSpeed
                     self.status _ TickerEffect.Normal
 
-    ___ moveLetters(self, adjust):
+    ___ moveLetters  adjust):
         adaptedMoveSpeed _ self.moveSpeed * adjust
         adaptedMorphSpeed _ self.morphSpeed * adjust
         self.postEffect.tick(adjust)
 
-        if self.morphBetweenModels:
+        __ self.morphBetweenModels:
             move_speed _ adaptedMoveSpeed
             morph_speed _ adaptedMorphSpeed
-        else:
+        ____
             move_speed _ Colors.tickerMoveSpeed
             morph_speed _ -1
 
@@ -136,18 +136,18 @@ class TickerEffect(object):
             pos _ letter.getGuidedPos()
             self.postEffect.transform(letter, pos)
 
-            if self.useSheepDog:
+            __ self.useSheepDog:
                 letter.setPosUsingSheepDog(pos, QRectF(0, 0, 800, 600))
-            else:
+            ____
                 letter.setPos(pos)
 
-    ___ tick(self, adjust):
+    ___ tick  adjust):
         self.slowDownAfterIntro(adjust)
         self.moveLetters(adjust)
 
 
-class EffectWhirlWind(TickerEffect):
-    ___ __init__(self, letters):
+c_ EffectWhirlWind(TickerEffect):
+    ___ __init__  letters):
         super(EffectWhirlWind, self).__init__(letters)
 
         self.moveSpeed _ 50
@@ -156,8 +156,8 @@ class EffectWhirlWind(TickerEffect):
             letter.setGuidedPos(QPointF(0, 100))
 
 
-class EffectSnake(TickerEffect):
-    ___ __init__(self, letters):
+c_ EffectSnake(TickerEffect):
+    ___ __init__  letters):
         super(EffectSnake, self).__init__(letters)
 
         self.moveSpeed _ 40
@@ -166,16 +166,16 @@ class EffectSnake(TickerEffect):
             letter.setGuidedPos(QPointF(0, -250 - (i * 5)))
 
 
-class EffectScan(TickerEffect):
-    ___ __init__(self, letters):
+c_ EffectScan(TickerEffect):
+    ___ __init__  letters):
         super(EffectScan, self).__init__(letters)
 
         for letter in self.letters:
             letter.setGuidedPos(QPointF(100, -300))
 
 
-class EffectRaindrops(TickerEffect):
-    ___ __init__(self, letters):
+c_ EffectRaindrops(TickerEffect):
+    ___ __init__  letters):
         super(EffectRaindrops, self).__init__(letters)
 
         for letter in self.letters:
@@ -183,16 +183,16 @@ class EffectRaindrops(TickerEffect):
                     random.randint(-200, 1100)))
 
 
-class EffectLine(TickerEffect):
-    ___ __init__(self, letters):
+c_ EffectLine(TickerEffect):
+    ___ __init__  letters):
         super(EffectLine, self).__init__(letters)
 
         for i, letter in enumerate(self.letters):
             letter.setGuidedPos(QPointF(100, 500 + i * 20))
 
 
-class ItemCircleAnimation(DemoItem):
-    ___ __init__(self, parent_None):
+c_ ItemCircleAnimation(DemoItem):
+    ___ __init__  parent_None):
         super(ItemCircleAnimation, self).__init__(parent)
 
         self.letterList _ []
@@ -207,12 +207,12 @@ class ItemCircleAnimation(DemoItem):
         self.setupGuides()
         self.setupLetters()
         self.useGuideQt()
-        self.effect _ None
+        self.effect _ N..
 
         self.mouseMoveLastPosition _ QPointF()
         self.tickTimer _ QTime()
 
-    ___ createLetter(self, c):
+    ___ createLetter  c):
         letter _ LetterItem(c, self)
         self.letterList.append(letter)
 
@@ -267,26 +267,26 @@ class ItemCircleAnimation(DemoItem):
         self.qtGuide2.setFence(QRectF(0, 0, 800, 600))
         self.qtGuide3.setFence(QRectF(0, 0, 800, 600))
 
-    ___ useGuide(self, guide, firstLetter, lastLetter):
+    ___ useGuide  guide, firstLetter, lastLetter):
         padding _ guide.lengthAll() / float(lastLetter - firstLetter)
 
         for i, letter in enumerate(self.letterList[firstLetter:lastLetter]):
             letter.useGuide(guide, i * padding)
 
     ___ useGuideQt(self):
-        if self.currGuide is not self.qtGuide1:
+        __ self.currGuide __ no. self.qtGuide1:
             self.useGuide(self.qtGuide1, 0, self.letterCount)
             self.currGuide _ self.qtGuide1
 
     ___ useGuideTt(self):
-        if self.currGuide is not self.qtGuide2:
+        __ self.currGuide __ no. self.qtGuide2:
             split _ int(self.letterCount * 5.0 / 7.0)
             self.useGuide(self.qtGuide2, 0, split)
             self.useGuide(self.qtGuide3, split, self.letterCount)
             self.currGuide _ self.qtGuide2
 
     ___ boundingRect(self):
-        return QRectF(0, 0, 300, 320)
+        r_ QRectF(0, 0, 300, 320)
 
     ___ prepare(self):
         pass
@@ -294,25 +294,25 @@ class ItemCircleAnimation(DemoItem):
     ___ switchToNextEffect(self):
         self.showCount +_ 1
 
-        if self.showCount == 1:
+        __ self.showCount == 1:
             self.effect _ EffectSnake(self.letterList)
-        elif self.showCount == 2:
+        ____ self.showCount == 2:
             self.effect _ EffectLine(self.letterList)
             self.effect.setPostEffect(PostRotateXYTwist(0.01, 0.0, 0.003, 0.0))
-        elif self.showCount == 3:
+        ____ self.showCount == 3:
             self.effect _ EffectRaindrops(self.letterList)
             self.effect.setPostEffect(PostRotateXYTwist(0.01, 0.005, 0.003, 0.003))
-        elif self.showCount == 4:
+        ____ self.showCount == 4:
             self.effect _ EffectScan(self.letterList)
             self.effect.normalMoveSpeed _ 0
             self.effect.setPostEffect(PostRotateXY(0.008, 0.0, 0.005, 0.0))
-        else:
+        ____
             self.showCount _ 0
             self.effect _ EffectWhirlWind(self.letterList)
 
-    ___ animationStarted(self, id):
-        if id == DemoItemAnimation.ANIM_IN:
-            if self.doIntroTransitions:
+    ___ animationStarted  id):
+        __ id == DemoItemAnimation.ANIM_IN:
+            __ self.doIntroTransitions:
                 # Make all letters disappear.
                 for letter in self.letterList:
                     letter.setPos(1000, 0)
@@ -325,68 +325,68 @@ class ItemCircleAnimation(DemoItem):
                 # perform benchmark before the ticker shows.  But now, since we
                 # are showing, use a more appropriate value.
                 self.currentAnimation.setStartDelay(1500)
-        elif self.effect is not None:
+        ____ self.effect __ no. N..:
             self.effect.useSheepDog _ False
 
         self.tickTimer _ QTime.currentTime()
 
     ___ swapModel(self):
-        if self.currGuide is self.qtGuide2:
+        __ self.currGuide __ self.qtGuide2:
             self.useGuideQt()
-        else:
+        ____
             self.useGuideTt()
 
-    ___ hoverEnterEvent(self, event):
+    ___ hoverEnterEvent  event):
         # Skip swap here to enhance ticker dragging.
         pass
 
-    ___ hoverLeaveEvent(self, event):
+    ___ hoverLeaveEvent  event):
         self.swapModel()
 
-    ___ setTickerScale(self, s):
+    ___ setTickerScale  s):
         self.scale _ s
         self.qtGuide1.setScale(self.scale, self.scale)
         self.qtGuide2.setScale(self.scale, self.scale)
         self.qtGuide3.setScale(self.scale, self.scale)
 
-    ___ mousePressEvent(self, event):
+    ___ mousePressEvent  event):
         self.mouseMoveLastPosition _ event.scenePos();
 
-        if event.button() == Qt.LeftButton:
+        __ event.button() == Qt.LeftButton:
             self.setCursor(Qt.ClosedHandCursor)
-        else:
+        ____
             self.switchToNextEffect()
 
-    ___ mouseReleaseEvent(self, event):
-        if event.button() == Qt.LeftButton:
+    ___ mouseReleaseEvent  event):
+        __ event.button() == Qt.LeftButton:
             self.setCursor(Qt.OpenHandCursor)
 
-    ___ mouseMoveEvent(self, event):
+    ___ mouseMoveEvent  event):
         newPosition _ event.scenePos()
         self.setPosUsingSheepDog(self.pos() + newPosition - self.mouseMoveLastPosition, QRectF(-260, -280, 1350, 1160))
         self.mouseMoveLastPosition _ newPosition
 
-    ___ wheelEvent(self, event):
-        if event.angleDelta().y() > 0:
+    ___ wheelEvent  event):
+        __ event.angleDelta().y() > 0:
             self.effect.moveSpeed -_ 0.20
-        else:
+        ____
             self.effect.moveSpeed +_ 0.20
 
-        if self.effect.moveSpeed < 0:
+        __ self.effect.moveSpeed < 0:
             self.effect.moveSpeed _ 0.0
 
-    ___ pause(self, on):
+    ___ pause  on):
         self.paused _ on
         self.tickTimer _ QTime.currentTime()
 
     ___ tick(self):
-        if self.paused or not self.effect:
-            return
+        __ self.paused or no. self.effect:
+            r_
 
         t _ self.tickTimer.msecsTo(QTime.currentTime())
         self.tickTimer _ QTime.currentTime()
         self.effect.tick(t / 10.0)
 
-    ___ paint(self, painter, opt, widget):
-        if self.tickOnPaint:
+    ___ paint  painter, opt, widget):
+        __ self.tickOnPaint:
             self.tick()

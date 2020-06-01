@@ -1,14 +1,14 @@
 ______ sys
-____ ? ______ ?W.. as qtw
-____ ? ______ QtCore as qtc
-____ ? ______ QtMultimedia as qtmm
+____ ? ______ ?W.. __ qtw
+____ ? ______ QtCore __ qtc
+____ ? ______ QtMultimedia __ qtmm
 
 ______ resources
 
 
-class SoundButton(qtw.?PB..):
+c_ SoundButton(qtw.?PB..):
 
-    ___ __init__(self, wav_file, *args, **kwargs):
+    ___ __init__  wav_file, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.wav_file _ wav_file
         self.player _ qtmm.QSoundEffect()
@@ -16,7 +16,7 @@ class SoundButton(qtw.?PB..):
         self.c__.c..(self.player.play)
 
 
-class MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.QMainWindow):
 
     ___ __init__(self):
         """MainWindow constructor.
@@ -27,7 +27,7 @@ class MainWindow(qtw.QMainWindow):
         super().__init__()
         # Main UI code goes here
         dialpad _ qtw.QWidget()
-        self.setCentralWidget(dialpad)
+        self.sCW..(dialpad)
         dialpad.setLayout(qtw.QGridLayout())
 
         for i, symbol in enumerate('123456789*0#'):
@@ -40,7 +40,7 @@ class MainWindow(qtw.QMainWindow):
         self.s..
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtw.?A..(sys.argv)
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.

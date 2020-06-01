@@ -48,115 +48,115 @@ ____ ?.?W.. ______ ?A.., QTreeView
 ______ simpletreemodel_rc
 
 
-class TreeItem(object):
-    ___ __init__(self, data, parent_None):
+c_ TreeItem(object):
+    ___ __init__  data, parent_None):
         self.parentItem _ parent
         self.itemData _ data
         self.childItems _ []
 
-    ___ appendChild(self, item):
+    ___ appendChild  item):
         self.childItems.append(item)
 
-    ___ child(self, row):
-        return self.childItems[row]
+    ___ child  row):
+        r_ self.childItems[row]
 
     ___ childCount(self):
-        return len(self.childItems)
+        r_ len(self.childItems)
 
     ___ columnCount(self):
-        return len(self.itemData)
+        r_ len(self.itemData)
 
-    ___ data(self, column):
+    ___ data  column):
         try:
-            return self.itemData[column]
+            r_ self.itemData[column]
         except IndexError:
-            return None
+            r_ N..
 
     ___ parent(self):
-        return self.parentItem
+        r_ self.parentItem
 
     ___ row(self):
-        if self.parentItem:
-            return self.parentItem.childItems.index(self)
+        __ self.parentItem:
+            r_ self.parentItem.childItems.index(self)
 
-        return 0
+        r_ 0
 
 
-class TreeModel(QAbstractItemModel):
-    ___ __init__(self, data, parent_None):
+c_ TreeModel(QAbstractItemModel):
+    ___ __init__  data, parent_None):
         super(TreeModel, self).__init__(parent)
 
         self.rootItem _ TreeItem(("Title", "Summary"))
         self.setupModelData(data.split('\n'), self.rootItem)
 
-    ___ columnCount(self, parent):
-        if parent.isValid
-            return parent.internalPointer().columnCount()
-        else:
-            return self.rootItem.columnCount()
+    ___ columnCount  parent):
+        __ parent.isValid
+            r_ parent.internalPointer().columnCount()
+        ____
+            r_ self.rootItem.columnCount()
 
-    ___ data(self, index, role):
-        if not index.isValid
-            return None
+    ___ data  index, role):
+        __ no. index.isValid
+            r_ N..
 
-        if role !_ Qt.DisplayRole:
-            return None
+        __ role !_ Qt.DisplayRole:
+            r_ N..
 
         item _ index.internalPointer()
 
-        return item.data(index.column())
+        r_ item.data(index.column())
 
-    ___ flags(self, index):
-        if not index.isValid
-            return Qt.NoItemFlags
+    ___ flags  index):
+        __ no. index.isValid
+            r_ Qt.NoItemFlags
 
-        return Qt.ItemIsEnabled | Qt.ItemIsSelectable
+        r_ Qt.ItemIsEnabled | Qt.ItemIsSelectable
 
-    ___ headerData(self, section, orientation, role):
-        if orientation == Qt.Horizontal and role == Qt.DisplayRole:
-            return self.rootItem.data(section)
+    ___ headerData  section, orientation, role):
+        __ orientation == Qt.Horizontal and role == Qt.DisplayRole:
+            r_ self.rootItem.data(section)
 
-        return None
+        r_ N..
 
-    ___ index(self, row, column, parent):
-        if not self.hasIndex(row, column, parent):
-            return QModelIndex()
+    ___ index  row, column, parent):
+        __ no. self.hasIndex(row, column, parent):
+            r_ QModelIndex()
 
-        if not parent.isValid
+        __ no. parent.isValid
             parentItem _ self.rootItem
-        else:
+        ____
             parentItem _ parent.internalPointer()
 
         childItem _ parentItem.child(row)
-        if childItem:
-            return self.createIndex(row, column, childItem)
-        else:
-            return QModelIndex()
+        __ childItem:
+            r_ self.createIndex(row, column, childItem)
+        ____
+            r_ QModelIndex()
 
-    ___ parent(self, index):
-        if not index.isValid
-            return QModelIndex()
+    ___ parent  index):
+        __ no. index.isValid
+            r_ QModelIndex()
 
         childItem _ index.internalPointer()
         parentItem _ childItem.parent()
 
-        if parentItem == self.rootItem:
-            return QModelIndex()
+        __ parentItem == self.rootItem:
+            r_ QModelIndex()
 
-        return self.createIndex(parentItem.row(), 0, parentItem)
+        r_ self.createIndex(parentItem.row(), 0, parentItem)
 
-    ___ rowCount(self, parent):
-        if parent.column() > 0:
-            return 0
+    ___ rowCount  parent):
+        __ parent.column() > 0:
+            r_ 0
 
-        if not parent.isValid
+        __ no. parent.isValid
             parentItem _ self.rootItem
-        else:
+        ____
             parentItem _ parent.internalPointer()
 
-        return parentItem.childCount()
+        r_ parentItem.childCount()
 
-    ___ setupModelData(self, lines, parent):
+    ___ setupModelData  lines, parent):
         parents _ [parent]
         indentations _ [0]
 
@@ -165,25 +165,25 @@ class TreeModel(QAbstractItemModel):
         while number < len(lines):
             position _ 0
             while position < len(lines[number]):
-                if lines[number][position] !_ ' ':
+                __ lines[number][position] !_ ' ':
                     break
                 position +_ 1
 
             lineData _ lines[number][position:].trimmed()
 
-            if lineData:
+            __ lineData:
                 # Read the column data from the rest of the line.
-                columnData _ [s for s in lineData.split('\t') if s]
+                columnData _ [s for s in lineData.split('\t') __ s]
 
-                if position > indentations[-1]:
+                __ position > indentations[-1]:
                     # The last child of the current parent is now the new
                     # parent unless the current parent has no children.
 
-                    if parents[-1].childCount() > 0:
+                    __ parents[-1].childCount() > 0:
                         parents.append(parents[-1].child(parents[-1].childCount() - 1))
                         indentations.append(position)
 
-                else:
+                ____
                     while position < indentations[-1] and len(parents) > 0:
                         parents.pop()
                         indentations.pop()
@@ -194,14 +194,14 @@ class TreeModel(QAbstractItemModel):
             number +_ 1
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 
     app _ ?A..(sys.argv)
 
     f _ QFile(':/default.txt')
-    f.open(QIODevice.ReadOnly)
+    f.o..(QIODevice.ReadOnly)
     model _ TreeModel(f.readAll())
     f.close()
 

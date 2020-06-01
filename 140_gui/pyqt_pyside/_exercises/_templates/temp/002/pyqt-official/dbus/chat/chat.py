@@ -43,7 +43,7 @@
 
 
 ____ ?.QtCore ______ pyqtSignal, pyqtSlot, Q_CLASSINFO
-____ ?.?W.. ______ ?A.., QDialog, QMainWindow, QMessageBox
+____ ?.?W.. ______ ?A.., QDialog, QMainWindow, ?MB..
 ____ ?.QtDBus ______ (QDBusAbstractAdaptor, QDBusAbstractInterface,
         QDBusConnection, QDBusMessage)
 
@@ -51,7 +51,7 @@ ____ ui_chatmainwindow ______ Ui_ChatMainWindow
 ____ ui_chatsetnickname ______ Ui_NicknameDialog
 
 
-class ChatAdaptor(QDBusAbstractAdaptor):
+c_ ChatAdaptor(QDBusAbstractAdaptor):
 
     Q_CLASSINFO("D-Bus Interface", 'org.example.chat')
 
@@ -72,24 +72,24 @@ class ChatAdaptor(QDBusAbstractAdaptor):
 
     message _ pyqtSignal(str, str)
 
-    ___ __init__(self, parent):
+    ___ __init__  parent):
         super(ChatAdaptor, self).__init__(parent)
 
         self.setAutoRelaySignals(True)
 
 
-class ChatInterface(QDBusAbstractInterface):
+c_ ChatInterface(QDBusAbstractInterface):
 
     action _ pyqtSignal(str, str)
 
     message _ pyqtSignal(str, str)
 
-    ___ __init__(self, service, path, connection, parent_None):
+    ___ __init__  service, path, connection, parent_None):
         super(ChatInterface, self).__init__(service, path, 'org.example.chat',
                 connection, parent)
 
 
-class ChatMainWindow(QMainWindow, Ui_ChatMainWindow):
+c_ ChatMainWindow(QMainWindow, Ui_ChatMainWindow):
 
     action _ pyqtSignal(str, str)
 
@@ -102,12 +102,12 @@ class ChatMainWindow(QMainWindow, Ui_ChatMainWindow):
         self.m_messages _ []
 
         self.setupUi(self)
-        self.sendButton.setEnabled(False)
+        self.sendButton.setEnabled F..
 
         self.messageLineEdit.textChanged.c..(self.textChangedSlot)
         self.sendButton.c__.c..(self.sendClickedSlot)
-        self.actionChangeNickname.triggered.c..(self.changeNickname)
-        self.actionAboutQt.triggered.c..(self.aboutQt)
+        self.actionChangeNickname.t__.c..(self.changeNickname)
+        self.actionAboutQt.t__.c..(self.aboutQt)
         ?A...instance().lastWindowClosed.c..(self.exiting)
 
         # Add our D-Bus interface and connect to D-Bus.
@@ -120,35 +120,35 @@ class ChatMainWindow(QMainWindow, Ui_ChatMainWindow):
         iface.action.c..(self.actionSlot)
 
         dialog _ NicknameDialog()
-        dialog.cancelButton.setVisible(False)
+        dialog.cancelButton.setVisible F..
         dialog.e..
         self.m_nickname _ dialog.nickname.text().strip()
         self.action.emit(self.m_nickname, "joins the chat")
 
     ___ rebuildHistory(self):
         history _ '\n'.join(self.m_messages)
-        self.chatHistory.setPlainText(history)
+        self.chatHistory.sPT..(history)
 
     @pyqtSlot(str, str)
-    ___ messageSlot(self, nickname, text):
+    ___ messageSlot  nickname, text):
         self.m_messages.append("<%s> %s" % (nickname, text))
 
-        if len(self.m_messages) > 100:
+        __ len(self.m_messages) > 100:
             self.m_messages.pop(0)
 
         self.rebuildHistory()
 
     @pyqtSlot(str, str)
-    ___ actionSlot(self, nickname, text):
+    ___ actionSlot  nickname, text):
         self.m_messages.append("* %s %s" % (nickname, text))
 
-        if len(self.m_messages) > 100:
+        __ len(self.m_messages) > 100:
             self.m_messages.pop(0)
 
         self.rebuildHistory()
 
     @pyqtSlot(str)
-    ___ textChangedSlot(self, newText):
+    ___ textChangedSlot  newText):
         self.sendButton.setEnabled(newText !_ '')
 
     @pyqtSlot()
@@ -162,35 +162,35 @@ class ChatMainWindow(QMainWindow, Ui_ChatMainWindow):
     ___ changeNickname(self):
         dialog _ NicknameDialog(self)
 
-        if dialog.e.. == QDialog.Accepted:
+        __ dialog.e.. == QDialog.Accepted:
             old _ self.m_nickname
             self.m_nickname _ dialog.nickname.text().strip()
             self.action.emit(old, "is now known as %s" % self.m_nickname)
 
     @pyqtSlot()
     ___ aboutQt(self):
-        QMessageBox.aboutQt(self)
+        ?MB...aboutQt(self)
 
     @pyqtSlot()
     ___ exiting(self):
         self.action.emit(self.m_nickname, "leaves the chat")
 
 
-class NicknameDialog(QDialog, Ui_NicknameDialog):
+c_ NicknameDialog(QDialog, Ui_NicknameDialog):
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(NicknameDialog, self).__init__(parent)
 
         self.setupUi(self)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     ______ sys
 
     app _ ?A..(sys.argv)
 
-    if not QDBusConnection.sessionBus().isConnected
-        sys.stderr.write("Cannot connect to the D-Bus session bus.\n"
+    __ no. QDBusConnection.sessionBus().isConnected
+        sys.stderr.w..("Cannot connect to the D-Bus session bus.\n"
                 "Please check your system settings and try again.\n")
         sys.exit(1)
 

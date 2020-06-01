@@ -1,10 +1,10 @@
 ______ sys
-____ ? ______ ?W.. as qtw
-____ ? ______ QtGui as qtg
-____ ? ______ QtCore as qtc
+____ ? ______ ?W.. __ qtw
+____ ? ______ ?G.. __ qtg
+____ ? ______ QtCore __ qtc
 
 
-class MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.QMainWindow):
 
     ___ __init__(self):
         """MainWindow constructor.
@@ -23,7 +23,7 @@ class MainWindow(qtw.QMainWindow):
             qtw.QComboBox(editable_True)
         ]
         container _ qtw.QWidget()
-        self.setCentralWidget(container)
+        self.sCW..(container)
         container.setLayout(qtw.QVBoxLayout())
 
         for widget in widgets:
@@ -39,11 +39,11 @@ class MainWindow(qtw.QMainWindow):
         # End main UI code
         self.s..
 
-    ___ set_style(self, style):
+    ___ set_style  style):
         style _ qtw.QStyleFactory.create(style)
         qtw.?A...instance().setStyle(style)
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtw.?A..(sys.argv)
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.

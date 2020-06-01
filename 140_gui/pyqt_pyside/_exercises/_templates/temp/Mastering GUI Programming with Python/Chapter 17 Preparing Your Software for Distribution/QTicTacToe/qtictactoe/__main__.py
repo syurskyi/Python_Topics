@@ -9,5 +9,5 @@ ___ main
     mainwindow _ MainWindow()
     sys.exit(app.exec())
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     main()

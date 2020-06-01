@@ -48,7 +48,7 @@ ____ ?.?W.. ______ (?A.., QComboBox, QDialog,
         QVBoxLayout)
 
 
-class Dialog(QDialog):
+c_ Dialog(QDialog):
     NumGridRows _ 3
     NumButtons _ 4
 
@@ -61,7 +61,7 @@ class Dialog(QDialog):
         self.createFormGroupBox()
 
         bigEditor _ QTextEdit()
-        bigEditor.setPlainText("This widget takes up all the remaining space "
+        bigEditor.sPT..("This widget takes up all the remaining space "
                 "in the top-level layout.")
 
         buttonBox _ QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
@@ -84,10 +84,10 @@ class Dialog(QDialog):
         self.menuBar _ QMenuBar()
 
         self.fileMenu _ QMenu("&File", self)
-        self.exitAction _ self.fileMenu.addAction("E&xit")
-        self.menuBar.addMenu(self.fileMenu)
+        self.exitAction _ self.fileMenu.aA..("E&xit")
+        self.menuBar.aM..(self.fileMenu)
 
-        self.exitAction.triggered.c..(self.accept)
+        self.exitAction.t__.c..(self.accept)
 
     ___ createHorizontalGroupBox(self):
         self.horizontalGroupBox _ QGroupBox("Horizontal layout")
@@ -110,7 +110,7 @@ class Dialog(QDialog):
             layout.addWidget(lineEdit, i + 1, 1)
 
         self.smallEditor _ QTextEdit()
-        self.smallEditor.setPlainText("This widget takes up about two thirds "
+        self.smallEditor.sPT..("This widget takes up about two thirds "
                 "of the grid layout.")
 
         layout.addWidget(self.smallEditor, 0, 2, 4, 1)
@@ -128,7 +128,7 @@ class Dialog(QDialog):
         self.formGroupBox.setLayout(layout)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

@@ -1,10 +1,10 @@
 ______ sys
-____ ? ______ ?W.. as qtw
-____ ? ______ QtGui as qtg
-____ ? ______ QtCore as qtc
+____ ? ______ ?W.. __ qtw
+____ ? ______ ?G.. __ qtg
+____ ? ______ QtCore __ qtc
 
 
-class InvoiceForm(qtw.QWidget):
+c_ InvoiceForm(qtw.QWidget):
 
     submitted _ qtc.pyqtSignal(dict)
 
@@ -13,7 +13,7 @@ class InvoiceForm(qtw.QWidget):
         self.setLayout(qtw.QFormLayout())
         self.inputs _ {}
         self.inputs['Customer Name'] _ qtw.QLineEdit()
-        self.inputs['Customer Address'] _ qtw.QPlainTextEdit()
+        self.inputs['Customer Address'] _ qtw.?PTE..
         self.inputs['Invoice Date'] _ qtw.QDateEdit(
             date_qtc.QDate.currentDate(), calendarPopup_True)
         self.inputs['Days until Due'] _ qtw.QSpinBox(
@@ -30,7 +30,7 @@ class InvoiceForm(qtw.QWidget):
         self.layout().addRow(self.line_items)
         for row in range(self.line_items.rowCount()):
             for col in range(self.line_items.columnCount()):
-                if col > 0:
+                __ col > 0:
                     w _ qtw.QSpinBox(minimum_0, maximum_300)
                     self.line_items.setCellWidget(row, col, w)
         submit _ qtw.?PB..('Create Invoice', c___self.on_submit)
@@ -47,20 +47,20 @@ class InvoiceForm(qtw.QWidget):
         }
         data['line_items'] _ []
         for row in range(self.line_items.rowCount()):
-            if not self.line_items.item(row, 0):
+            __ no. self.line_items.item(row, 0):
                 continue
             job _ self.line_items.item(row, 0).text()
             rate _ self.line_items.cellWidget(row, 1).value()
             hours _ self.line_items.cellWidget(row, 2).value()
             total _ rate * hours
             row_data _ [job, rate, hours, total]
-            if any(row_data):
+            __ any(row_data):
                 data['line_items'].append(row_data)
         data['total_due'] _ sum(x[3] for x in data['line_items'])
         self.submitted.emit(data)
 
 
-class InvoiceView(qtw.QTextEdit):
+c_ InvoiceView(qtw.QTextEdit):
 
     dpi _ 72
     doc_width _ 8.5 * dpi
@@ -71,7 +71,7 @@ class InvoiceView(qtw.QTextEdit):
         self.setFixedSize(qtc.QSize(self.doc_width, self.doc_height))
 
 
-    ___ build_invoice(self, data):
+    ___ build_invoice  data):
         document _ qtg.QTextDocument()
         self.setDocument(document)
         document.setPageSize(qtc.QSizeF(self.doc_width, self.doc_height))
@@ -160,7 +160,7 @@ class InvoiceView(qtw.QTextEdit):
         )
 
         for i, item in enumerate(term_items):
-            if i > 0:
+            __ i > 0:
                 cursor.insertBlock()
             # We can insert HTML too, but not with a textformat
             cursor.insertHtml(item)
@@ -187,7 +187,7 @@ class InvoiceView(qtw.QTextEdit):
         # write data
         for row in data['line_items']:
             for col, value in enumerate(row):
-                text _ f'${value}' if col in (1, 3) else f'{value}'
+                text _ f'${value}' __ col in (1, 3) else f'{value}'
                 cursor.insertText(text, std_format)
                 cursor.movePosition(qtg.QTextCursor.NextCell)
 
@@ -203,7 +203,7 @@ class InvoiceView(qtw.QTextEdit):
 
 
 
-class MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.QMainWindow):
 
     ___ __init__(self):
         """MainWindow constructor."""
@@ -211,7 +211,7 @@ class MainWindow(qtw.QMainWindow):
         # Main UI code goes here
         main _ qtw.QWidget()
         main.setLayout(qtw.QHBoxLayout())
-        self.setCentralWidget(main)
+        self.sCW..(main)
 
         form _ InvoiceForm()
         main.layout().addWidget(form)
@@ -225,7 +225,7 @@ class MainWindow(qtw.QMainWindow):
         self.s..
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtw.?A..(sys.argv)
     mw _ MainWindow()
     sys.exit(app.exec())

@@ -42,23 +42,23 @@
 
 
 ____ ?.QtCore ______ pyqtProperty, pyqtSignal, QObject, QUrl
-____ ?.QtGui ______ QGuiApplication
+____ ?.?G.. ______ QGuiApplication
 ____ ?.QtQuick ______ QQuickView
 
 ______ objectlistmodel_rc
 
 
-class DataObject(QObject):
+c_ DataObject(QObject):
 
     nameChanged _ pyqtSignal()
 
     @pyqtProperty(str, notify_nameChanged)
     ___ name(self):
-        return self._name
+        r_ self._name
 
     @name.setter
-    ___ name(self, name):
-        if self._name !_ name:
+    ___ name  name):
+        __ self._name !_ name:
             self._name _ name
             self.nameChanged.emit()
 
@@ -66,22 +66,22 @@ class DataObject(QObject):
 
     @pyqtProperty(str, notify_colorChanged)
     ___ color(self):
-        return self._color
+        r_ self._color
 
     @color.setter
-    ___ color(self, color):
-        if self._color !_ color:
+    ___ color  color):
+        __ self._color !_ color:
             self._color _ color
             self.colorChanged.emit()
 
-    ___ __init__(self, name_'', color_'', parent_None):
+    ___ __init__  name_'', color_'', parent_None):
         super(DataObject, self).__init__(parent)
 
         self._name _ name
         self._color _ color
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     ______ os
     ______ sys
 

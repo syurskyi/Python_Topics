@@ -7,10 +7,10 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, QtGui, ?W..
+____ ? ______ QtCore, ?G.., ?W..
 
-class Ui_Window(object):
-    ___ setupUi(self, Window):
+c_ Ui_Window(object):
+    ___ setupUi  Window):
         Window.setObjectName("Window")
         Window.resize(640, 480)
         self.verticalLayout _ ?W...QVBoxLayout(Window)
@@ -40,7 +40,7 @@ class Ui_Window(object):
         self.retranslateUi(Window)
         QtCore.QMetaObject.connectSlotsByName(Window)
 
-    ___ retranslateUi(self, Window):
+    ___ retranslateUi  Window):
         _translate _ QtCore.QCoreApplication.translate
         Window.setWindowTitle(_translate("Window", "Web Element Selector"))
         self.elementLabel.sT..(_translate("Window", "&Element:"))

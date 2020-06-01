@@ -42,64 +42,64 @@
 
 
 ____ ?.QtCore ______ QAbstractListModel, QModelIndex, Qt, QUrl, QVariant
-____ ?.QtGui ______ QGuiApplication
+____ ?.?G.. ______ QGuiApplication
 ____ ?.QtQuick ______ QQuickView
 
 ______ abstractitemmodel_rc
 
 
-class Animal(object):
+c_ Animal(object):
 
-    ___ __init__(self, type, size):
+    ___ __init__  type, size):
         self._type _ type
         self._size _ size
 
     ___ type(self):
-        return self._type
+        r_ self._type
 
     ___ size(self):
-        return self._size
+        r_ self._size
 
 
-class AnimalModel(QAbstractListModel):
+c_ AnimalModel(QAbstractListModel):
 
     TypeRole _ Qt.UserRole + 1
     SizeRole _ Qt.UserRole + 2
 
     _roles _ {TypeRole: b"type", SizeRole: b"size"}
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(AnimalModel, self).__init__(parent)
 
         self._animals _ []
 
-    ___ addAnimal(self, animal):
+    ___ addAnimal  animal):
         self.beginInsertRows(QModelIndex(), self.rowCount(), self.rowCount())
         self._animals.append(animal)
         self.endInsertRows()
 
-    ___ rowCount(self, parent_QModelIndex()):
-        return len(self._animals)
+    ___ rowCount  parent_QModelIndex()):
+        r_ len(self._animals)
 
-    ___ data(self, index, role_Qt.DisplayRole):
+    ___ data  index, role_Qt.DisplayRole):
         try:
             animal _ self._animals[index.row()]
         except IndexError:
-            return QVariant()
+            r_ QVariant()
 
-        if role == self.TypeRole:
-            return animal.type()
+        __ role == self.TypeRole:
+            r_ animal.type()
 
-        if role == self.SizeRole:
-            return animal.size()
+        __ role == self.SizeRole:
+            r_ animal.size()
 
-        return QVariant()
+        r_ QVariant()
 
     ___ roleNames(self):
-        return self._roles
+        r_ self._roles
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     ______ os
     ______ sys
 

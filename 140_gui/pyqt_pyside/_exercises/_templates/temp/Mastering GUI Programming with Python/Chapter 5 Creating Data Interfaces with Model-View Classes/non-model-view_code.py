@@ -1,12 +1,12 @@
 ______ sys
 ____ os ______ path
 
-____ ? ______ ?W.. as qtw
-____ ? ______ QtGui as qtg
-____ ? ______ QtCore as qtc
+____ ? ______ ?W.. __ qtw
+____ ? ______ ?G.. __ qtg
+____ ? ______ QtCore __ qtc
 
 
-class MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.QMainWindow):
 
     ___ __init__(self):
         """MainWindow constructor.
@@ -18,7 +18,7 @@ class MainWindow(qtw.QMainWindow):
         # Main UI code goes here
 
         form _ qtw.QWidget()
-        self.setCentralWidget(form)
+        self.sCW..(form)
         form.setLayout(qtw.QVBoxLayout())
         self.filename _ qtw.QLineEdit()
         self.filecontent _ qtw.QTextEdit()
@@ -37,20 +37,20 @@ class MainWindow(qtw.QMainWindow):
     ___ save(self):
         filename _ self.filename.text()
         error _ ''
-        if not filename:
+        __ no. filename:
             error _ 'Filename empty'
-        elif path.exists(filename):
+        ____ path.exists(filename):
             error _ f'Will not overwrite {filename}'
-        else:
+        ____
             try:
-                with open(filename, 'w') as fh:
-                    fh.write(self.filecontent.toPlainText())
-            except Exception as e:
+                w__ o..(filename, 'w') __ fh:
+                    fh.w..(self.filecontent.tPT..
+            except Exception __ e:
                 error _ f'Cannot write file: {e}'
-        if error:
-            qtw.QMessageBox.critical(None, 'Error', error)
+        __ error:
+            qtw.?MB...critical(N.., 'Error', error)
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtw.?A..(sys.argv)
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.

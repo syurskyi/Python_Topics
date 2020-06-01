@@ -43,12 +43,12 @@
 
 
 ____ ?.QtCore ______ QFile, QFileInfo, QSettings, Qt, QTextStream
-____ ?.QtGui ______ QKeySequence
-____ ?.?W.. ______ (QAction, ?A.., QFileDialog, QMainWindow,
-        QMessageBox, QTextEdit)
+____ ?.?G.. ______ ?KS..
+____ ?.?W.. ______ (?A.., ?A.., ?FD.., QMainWindow,
+        ?MB.., QTextEdit)
 
 
-class MainWindow(QMainWindow):
+c_ MainWindow ?MW..
     MaxRecentFiles _ 5
     windowList _ []
 
@@ -60,7 +60,7 @@ class MainWindow(QMainWindow):
         self.setAttribute(Qt.WA_DeleteOnClose)
 
         self.textEdit _ QTextEdit()
-        self.setCentralWidget(self.textEdit)
+        self.sCW..(self.textEdit)
 
         self.createActions()
         self.createMenus()
@@ -74,104 +74,104 @@ class MainWindow(QMainWindow):
         MainWindow.windowList.append(other)
         other.s..
 
-    ___ open(self):
-        fileName, _ _ QFileDialog.getOpenFileName(self)
-        if fileName:
+    ___ o..(self):
+        fileName, _ _ ?FD...gOFN..(self)
+        __ fileName:
             self.loadFile(fileName)
         	
     ___ save(self):
-        if self.curFile:
+        __ self.curFile:
             self.saveFile(self.curFile)
-        else:
+        ____
             self.saveAs()
 
     ___ saveAs(self):
-        fileName, _ _ QFileDialog.getSaveFileName(self)
-        if fileName:
+        fileName, _ _ ?FD...getSaveFileName(self)
+        __ fileName:
             self.saveFile(fileName)
 
     ___ openRecentFile(self):
         action _ self.sender()
-        if action:
+        __ action:
             self.loadFile(action.data())
 
     ___ about(self):
-        QMessageBox.about(self, "About Recent Files",
+        ?MB...about  "About Recent Files",
                 "The <b>Recent Files</b> example demonstrates how to provide "
                 "a recently used file menu in a Qt application.")
 
     ___ createActions(self):
-        self.newAct _ QAction("&New", self, shortcut_QKeySequence.New,
+        self.newAct _ ?A..("&New", self, shortcut_QKeySequence.New,
                 statusTip_"Create a new file", triggered_self.newFile)
 
-        self.openAct _ QAction("&Open...", self, shortcut_QKeySequence.Open,
-                statusTip_"Open an existing file", triggered_self.open)
+        self.openAct _ ?A..("&Open...", self, shortcut_QKeySequence.Open,
+                statusTip_"Open an existing file", triggered_self.o..)
 
-        self.saveAct _ QAction("&Save", self, shortcut_QKeySequence.Save,
+        self.saveAct _ ?A..("&Save", self, shortcut_QKeySequence.Save,
                 statusTip_"Save the document to disk", triggered_self.save)
 
-        self.saveAsAct _ QAction("Save &As...", self,
+        self.saveAsAct _ ?A..("Save &As...", self,
                 shortcut_QKeySequence.SaveAs,
                 statusTip_"Save the document under a new name",
                 triggered_self.saveAs)
 
         for i in range(MainWindow.MaxRecentFiles):
             self.recentFileActs.append(
-                    QAction(self, visible_False,
+                    ?A..  visible_False,
                             triggered_self.openRecentFile))
 
-        self.exitAct _ QAction("E&xit", self, shortcut_"Ctrl+Q",
+        self.exitAct _ ?A..("E&xit", self, shortcut_"Ctrl+Q",
                 statusTip_"Exit the application",
                 triggered_QApplication.instance().closeAllWindows)
 
-        self.aboutAct _ QAction("&About", self,
+        self.aboutAct _ ?A..("&About", self,
                 statusTip_"Show the application's About box",
                 triggered_self.about)
 
-        self.aboutQtAct _ QAction("About &Qt", self,
+        self.aboutQtAct _ ?A..("About &Qt", self,
                 statusTip_"Show the Qt library's About box",
                 triggered_QApplication.instance().aboutQt)
 
     ___ createMenus(self):
-        self.fileMenu _ self.menuBar().addMenu("&File")
-        self.fileMenu.addAction(self.newAct)
-        self.fileMenu.addAction(self.openAct)
-        self.fileMenu.addAction(self.saveAct)
-        self.fileMenu.addAction(self.saveAsAct)
+        self.fileMenu _ self.mB.. .aM..("&File")
+        self.fileMenu.aA..(self.newAct)
+        self.fileMenu.aA..(self.openAct)
+        self.fileMenu.aA..(self.saveAct)
+        self.fileMenu.aA..(self.saveAsAct)
         self.separatorAct _ self.fileMenu.addSeparator()
         for i in range(MainWindow.MaxRecentFiles):
-            self.fileMenu.addAction(self.recentFileActs[i])
+            self.fileMenu.aA..(self.recentFileActs[i])
         self.fileMenu.addSeparator()
-        self.fileMenu.addAction(self.exitAct)
+        self.fileMenu.aA..(self.exitAct)
         self.updateRecentFileActions()
 
-        self.menuBar().addSeparator()
+        self.mB.. .addSeparator()
 
-        self.helpMenu _ self.menuBar().addMenu("&Help")
-        self.helpMenu.addAction(self.aboutAct)
-        self.helpMenu.addAction(self.aboutQtAct)
+        self.helpMenu _ self.mB.. .aM..("&Help")
+        self.helpMenu.aA..(self.aboutAct)
+        self.helpMenu.aA..(self.aboutQtAct)
 
-    ___ loadFile(self, fileName):
+    ___ loadFile  fileName):
         file _ QFile(fileName)
-        if not file.open( QFile.ReadOnly | QFile.Text):
-            QMessageBox.warning(self, "Recent Files",
+        __ no. file.o..( QFile.ReadOnly | QFile.Text):
+            ?MB...warning  "Recent Files",
                     "Cannot read file %s:\n%s." % (fileName, file.errorString()))
-            return
+            r_
 
         instr _ QTextStream(file)
         ?A...setOverrideCursor(Qt.WaitCursor)
-        self.textEdit.setPlainText(instr.readAll())
+        self.textEdit.sPT..(instr.readAll())
         ?A...restoreOverrideCursor()
 
         self.setCurrentFile(fileName)
         self.statusBar().showMessage("File loaded", 2000)
 
-    ___ saveFile(self, fileName):
+    ___ saveFile  fileName):
         file _ QFile(fileName)
-        if not file.open( QFile.WriteOnly | QFile.Text):
-            QMessageBox.warning(self, "Recent Files",
+        __ no. file.o..( QFile.WriteOnly | QFile.Text):
+            ?MB...warning  "Recent Files",
                     "Cannot write file %s:\n%s." % (fileName, file.errorString()))
-            return
+            r_
 
         outstr _ QTextStream(file)
         ?A...setOverrideCursor(Qt.WaitCursor)
@@ -181,11 +181,11 @@ class MainWindow(QMainWindow):
         self.setCurrentFile(fileName)
         self.statusBar().showMessage("File saved", 2000)
 
-    ___ setCurrentFile(self, fileName):
+    ___ setCurrentFile  fileName):
         self.curFile _ fileName
-        if self.curFile:
+        __ self.curFile:
             self.setWindowTitle("%s - Recent Files" % self.strippedName(self.curFile))
-        else:
+        ____
             self.setWindowTitle("Recent Files")
 
         settings _ QSettings('Trolltech', 'Recent Files Example')
@@ -202,7 +202,7 @@ class MainWindow(QMainWindow):
         settings.setValue('recentFileList', files)
 
         for widget in ?A...topLevelWidgets
-            if isinstance(widget, MainWindow):
+            __ isinstance(widget, MainWindow):
                 widget.updateRecentFileActions()
 
     ___ updateRecentFileActions(self):
@@ -218,15 +218,15 @@ class MainWindow(QMainWindow):
             self.recentFileActs[i].setVisible(True)
 
         for j in range(numRecentFiles, MainWindow.MaxRecentFiles):
-            self.recentFileActs[j].setVisible(False)
+            self.recentFileActs[j].setVisible F..
 
         self.separatorAct.setVisible((numRecentFiles > 0))
 
-    ___ strippedName(self, fullFileName):
-        return QFileInfo(fullFileName).fileName()
+    ___ strippedName  fullFileName):
+        r_ QFileInfo(fullFileName).fileName()
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

@@ -55,14 +55,14 @@ ______ sys
 
 ____ ?.QtCore ______ (pyqtSlot, QLoggingCategory, QModelIndex, QObject, Qt,
         QTimer, QUrl)
-____ ?.QtGui ______ QColor, QStandardItem, QStandardItemModel
+____ ?.?G.. ______ QColor, QStandardItem, QStandardItemModel
 ____ ?.QtRemoteObjects ______ QRemoteObjectHost, QRemoteObjectRegistryHost
 ____ ?.?W.. ______ ?A.., QTreeView
 
 
-class TimerHandler(QObject):
+c_ TimerHandler(QObject):
 
-    ___ __init__(self, model, parent_None):
+    ___ __init__  model, parent_None):
         super().__init__(parent)
 
         self._model _ model
@@ -90,7 +90,7 @@ class TimerHandler(QObject):
     @pyqtSlot()
     ___ changeFlags(self):
         item _ self._model.item(0, 0)
-        item.setEnabled(False)
+        item.setEnabled F..
 
         item _ item.child(0, 0)
         item.setFlags(item.flags() & Qt.ItemIsSelectable)
@@ -103,22 +103,22 @@ class TimerHandler(QObject):
 ___ addChild(numChildren, nestingLevel):
     result _ []
 
-    if nestingLevel == 0:
-        return result
+    __ nestingLevel == 0:
+        r_ result
 
     for i in range(numChildren):
         child _ QStandardItem(
                 "Child num {}, nesting level {}".format(i + 1, nestingLevel))
 
-        if i == 0:
+        __ i == 0:
             child.appendRow(addChild(numChildren, nestingLevel - 1))
 
         result.append(child)
 
-    return result
+    r_ result
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     QLoggingCategory.setFilterRules('qt.remoteobjects.debug=false\n'
                                     'qt.remoteobjects.warning=false')
@@ -131,11 +131,11 @@ if __name__ == '__main__':
 
     for i in range(10000):
         firstItem _ QStandardItem("FancyTextNumber {}".format(i))
-        if i == 0:
+        __ i == 0:
             firstItem.appendRow(addChild(2, 2))
 
         secondItem _ QStandardItem("FancyRow2TextNumber {}".format(i))
-        if i % 2 == 0:
+        __ i % 2 == 0:
             firstItem.setBackground(Qt.red)
 
         sourceModel.invisibleRootItem().appendRow([firstItem, secondItem])

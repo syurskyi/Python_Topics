@@ -7,10 +7,10 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, QtGui, ?W..
+____ ? ______ QtCore, ?G.., ?W..
 
-class Ui_MainWindow(object):
-    ___ setupUi(self, MainWindow):
+c_ Ui_MainWindow(object):
+    ___ setupUi  MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(400, 413)
         self.centralwidget _ ?W...QWidget(MainWindow)
@@ -102,7 +102,7 @@ class Ui_MainWindow(object):
         self.professionList.addItem(item)
         self.gridlayout.addWidget(self.professionList, 5, 1, 1, 4)
         self.vboxlayout.addWidget(self.mainFrame)
-        MainWindow.setCentralWidget(self.centralwidget)
+        MainWindow.sCW..(self.centralwidget)
         self.menubar _ ?W...QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 400, 29))
         self.menubar.setObjectName("menubar")
@@ -114,21 +114,21 @@ class Ui_MainWindow(object):
         self.statusbar _ ?W...QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
-        self.exitAction _ ?W...QAction(MainWindow)
+        self.exitAction _ ?W...?A..(MainWindow)
         self.exitAction.setObjectName("exitAction")
-        self.aboutQtAction _ ?W...QAction(MainWindow)
+        self.aboutQtAction _ ?W...?A..(MainWindow)
         self.aboutQtAction.setObjectName("aboutQtAction")
-        self.editStyleAction _ ?W...QAction(MainWindow)
+        self.editStyleAction _ ?W...?A..(MainWindow)
         self.editStyleAction.setObjectName("editStyleAction")
-        self.aboutAction _ ?W...QAction(MainWindow)
+        self.aboutAction _ ?W...?A..(MainWindow)
         self.aboutAction.setObjectName("aboutAction")
-        self.menu_File.addAction(self.editStyleAction)
+        self.menu_File.aA..(self.editStyleAction)
         self.menu_File.addSeparator()
-        self.menu_File.addAction(self.exitAction)
-        self.menu_Help.addAction(self.aboutAction)
-        self.menu_Help.addAction(self.aboutQtAction)
-        self.menubar.addAction(self.menu_File.menuAction())
-        self.menubar.addAction(self.menu_Help.menuAction())
+        self.menu_File.aA..(self.exitAction)
+        self.menu_Help.aA..(self.aboutAction)
+        self.menu_Help.aA..(self.aboutQtAction)
+        self.menubar.aA..(self.menu_File.menuAction())
+        self.menubar.aA..(self.menu_Help.menuAction())
         self.label.setBuddy(self.professionList)
         self.nameLabel.setBuddy(self.nameCombo)
         self.passwordLabel.setBuddy(self.passwordEdit)
@@ -140,7 +140,7 @@ class Ui_MainWindow(object):
         self.professionList.setCurrentRow(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
-    ___ retranslateUi(self, MainWindow):
+    ___ retranslateUi  MainWindow):
         _translate _ QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Style Sheet"))
         self.agreeCheckBox.setToolTip(_translate("MainWindow", "Please read the LICENSE file before checking"))
@@ -174,7 +174,7 @@ class Ui_MainWindow(object):
         self.professionList.setStatusTip(_translate("MainWindow", "Specify your name here"))
         self.professionList.setWhatsThis(_translate("MainWindow", "Specify your name here"))
         __sortingEnabled _ self.professionList.isSortingEnabled()
-        self.professionList.setSortingEnabled(False)
+        self.professionList.setSortingEnabled F..
         item _ self.professionList.item(0)
         item.sT..(_translate("MainWindow", "Developer"))
         item _ self.professionList.item(1)

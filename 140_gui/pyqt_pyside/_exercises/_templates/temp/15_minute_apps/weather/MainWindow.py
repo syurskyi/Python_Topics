@@ -6,10 +6,10 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, QtGui, ?W..
+____ ? ______ QtCore, ?G.., ?W..
 
-class Ui_MainWindow(object):
-    ___ setupUi(self, MainWindow):
+c_ Ui_MainWindow(object):
+    ___ setupUi  MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(330, 417)
         self.centralwidget _ ?W...QWidget(MainWindow)
@@ -25,8 +25,8 @@ class Ui_MainWindow(object):
         self.horizontalLayout_3.addWidget(self.lineEdit)
         self.pushButton _ ?W...?PB..(self.centralwidget)
         self.pushButton.sT..("")
-        icon _ QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("images/arrow-circle-225.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon _ ?G...QIcon()
+        icon.addPixmap(?G...QPixmap("images/arrow-circle-225.png"), ?G...QIcon.Normal, ?G...QIcon.Off)
         self.pushButton.setIcon(icon)
         self.pushButton.setObjectName("pushButton")
         self.horizontalLayout_3.addWidget(self.pushButton)
@@ -162,7 +162,7 @@ class Ui_MainWindow(object):
         self.formLayout _ ?W...QFormLayout()
         self.formLayout.setObjectName("formLayout")
         self.label_5 _ ?W...QLabel(self.centralwidget)
-        font _ QtGui.QFont()
+        font _ ?G...QFont()
         font.setBold(True)
         font.setWeight(75)
         self.label_5.setFont(font)
@@ -194,7 +194,7 @@ class Ui_MainWindow(object):
         self.pressureLabel.setObjectName("pressureLabel")
         self.formLayout.setWidget(5, ?W...QFormLayout.FieldRole, self.pressureLabel)
         self.label _ ?W...QLabel(self.centralwidget)
-        font _ QtGui.QFont()
+        font _ ?G...QFont()
         font.setBold(True)
         font.setWeight(75)
         self.label.setFont(font)
@@ -230,7 +230,7 @@ class Ui_MainWindow(object):
         self.label_9.setObjectName("label_9")
         self.formLayout.setWidget(1, ?W...QFormLayout.LabelRole, self.label_9)
         self.label_10 _ ?W...QLabel(self.centralwidget)
-        font _ QtGui.QFont()
+        font _ ?G...QFont()
         font.setBold(True)
         font.setWeight(75)
         self.label_10.setFont(font)
@@ -256,12 +256,12 @@ class Ui_MainWindow(object):
         self.gridLayout.addLayout(self.formLayout, 1, 0, 1, 1)
         self.verticalLayout.addLayout(self.gridLayout)
         self.horizontalLayout.addLayout(self.verticalLayout)
-        MainWindow.setCentralWidget(self.centralwidget)
+        MainWindow.sCW..(self.centralwidget)
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
-    ___ retranslateUi(self, MainWindow):
+    ___ retranslateUi  MainWindow):
         _translate _ QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Raindar"))
         self.lineEdit.sT..(_translate("MainWindow", "Utrecht,the Netherlands"))

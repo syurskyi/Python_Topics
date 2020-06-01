@@ -45,29 +45,29 @@ ____ ?.QtCore ______ QLineF, QPointF
 ____ guide ______ Guide
 
 
-class GuideLine(Guide):
-    ___ __init__(self, line_or_point, follows_None):
+c_ GuideLine(Guide):
+    ___ __init__  line_or_point, follows_None):
         super(GuideLine, self).__init__(follows)
 
-        if isinstance(line_or_point, QLineF):
+        __ isinstance(line_or_point, QLineF):
             self.line _ line_or_point
-        elif follows is not None:
+        ____ follows __ no. N..:
             self.line _ QLineF(self.prevGuide.endPos(), line_or_point)
-        else:
+        ____
             self.line _ QLineF(QPointF(0, 0), line_or_point)
 
     ___ length(self):
-        return self.line.length()
+        r_ self.line.length()
 
     ___ startPos(self):
-        return QPointF(self.line.p1().x() * self.scaleX,
+        r_ QPointF(self.line.p1().x() * self.scaleX,
                 self.line.p1().y() * self.scaleY)
 
     ___ endPos(self):
-        return QPointF(self.line.p2().x() * self.scaleX,
+        r_ QPointF(self.line.p2().x() * self.scaleX,
                 self.line.p2().y() * self.scaleY)
 
-    ___ guide(self, item, moveSpeed):
+    ___ guide  item, moveSpeed):
         frame _ item.guideFrame - self.startLength
         endX _ (self.line.p1().x() + (frame * self.line.dx() / self.length())) * self.scaleX
         endY _ (self.line.p1().y() + (frame * self.line.dy() / self.length())) * self.scaleY

@@ -7,10 +7,10 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, QtGui, ?W..
+____ ? ______ QtCore, ?G.., ?W..
 
-class Ui_StyleSheetEditor(object):
-    ___ setupUi(self, StyleSheetEditor):
+c_ Ui_StyleSheetEditor(object):
+    ___ setupUi  StyleSheetEditor):
         StyleSheetEditor.setObjectName("StyleSheetEditor")
         StyleSheetEditor.resize(445, 289)
         self.gridlayout _ ?W...QGridLayout(StyleSheetEditor)
@@ -56,7 +56,7 @@ class Ui_StyleSheetEditor(object):
         self.saveButton.setObjectName("saveButton")
         self.hboxlayout.addWidget(self.saveButton)
         self.applyButton _ ?W...?PB..(StyleSheetEditor)
-        self.applyButton.setEnabled(False)
+        self.applyButton.setEnabled F..
         self.applyButton.setObjectName("applyButton")
         self.hboxlayout.addWidget(self.applyButton)
         self.gridlayout.addLayout(self.hboxlayout, 2, 0, 1, 7)
@@ -75,7 +75,7 @@ class Ui_StyleSheetEditor(object):
         self.retranslateUi(StyleSheetEditor)
         QtCore.QMetaObject.connectSlotsByName(StyleSheetEditor)
 
-    ___ retranslateUi(self, StyleSheetEditor):
+    ___ retranslateUi  StyleSheetEditor):
         _translate _ QtCore.QCoreApplication.translate
         StyleSheetEditor.setWindowTitle(_translate("StyleSheetEditor", "Style Editor"))
         self.styleSheetCombo.setItemText(0, _translate("StyleSheetEditor", "Default"))

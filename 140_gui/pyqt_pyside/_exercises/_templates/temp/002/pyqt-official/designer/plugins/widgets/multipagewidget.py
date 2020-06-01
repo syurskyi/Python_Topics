@@ -11,13 +11,13 @@ ____ ?.?W.. ______ (?A.., QComboBox, QLabel, QStackedWidget,
 #============================================================================#
 # Implementation of a MultiPageWidget using a QComboBox and a QStackedWidget #
 #----------------------------------------------------------------------------#
-class PyMultiPageWidget(QWidget):
+c_ PyMultiPageWidget(QWidget):
 
     currentIndexChanged _ pyqtSignal(int)
 
     pageTitleChanged _ pyqtSignal(str)
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(PyMultiPageWidget, self).__init__(parent)
 
         self.comboBox _ QComboBox()
@@ -36,52 +36,52 @@ class PyMultiPageWidget(QWidget):
         self.setLayout(self.layout)
 
     ___ sizeHint(self):
-        return QSize(200, 150)
+        r_ QSize(200, 150)
 
     ___ count(self):
-        return self.stackWidget.count()
+        r_ self.stackWidget.count()
 
-    ___ widget(self, index):
-        return self.stackWidget.widget(index)
+    ___ widget  index):
+        r_ self.stackWidget.widget(index)
 
     @pyqtSlot(QWidget)
-    ___ addPage(self, page):
+    ___ addPage  page):
         self.insertPage(self.count(), page)
 
     @pyqtSlot(int, QWidget)
-    ___ insertPage(self, index, page):
+    ___ insertPage  index, page):
         page.setParent(self.stackWidget)
         self.stackWidget.insertWidget(index, page)
         title _ page.windowTitle()
-        if title == "":
+        __ title == "":
             title _ "Page %d" % (self.comboBox.count() + 1)
             page.setWindowTitle(title)
         self.comboBox.insertItem(index, title)
 
     @pyqtSlot(int)
-    ___ removePage(self, index):
+    ___ removePage  index):
         widget _ self.stackWidget.widget(index)
         self.stackWidget.removeWidget(widget)
         self.comboBox.removeItem(index)
 
     ___ getPageTitle(self):
         cw _ self.stackWidget.currentWidget()
-        return cw.windowTitle() if cw is not None else ''
+        r_ cw.windowTitle() __ cw __ no. N.. else ''
     
     @pyqtSlot(str)
-    ___ setPageTitle(self, newTitle):
+    ___ setPageTitle  newTitle):
         cw _ self.stackWidget.currentWidget()
-        if cw is not None:
+        __ cw __ no. N..:
             self.comboBox.setItemText(self.getCurrentIndex(), newTitle)
             cw.setWindowTitle(newTitle)
             self.pageTitleChanged.emit(newTitle)
 
     ___ getCurrentIndex(self):
-        return self.stackWidget.currentIndex()
+        r_ self.stackWidget.currentIndex()
 
     @pyqtSlot(int)
-    ___ setCurrentIndex(self, index):
-        if index !_ self.getCurrentIndex
+    ___ setCurrentIndex  index):
+        __ index !_ self.getCurrentIndex
             self.stackWidget.setCurrentIndex(index)
             self.comboBox.setCurrentIndex(index)
             self.currentIndexChanged.emit(index)
@@ -93,7 +93,7 @@ class PyMultiPageWidget(QWidget):
 #============================================================================#
 # Main for testing the class                                                 #
 #----------------------------------------------------------------------------#
-if __name__ == "__main__":
+__ __name__ == "__main__":
     ______ sys
     app _ ?A..(sys.argv)
     widget _ PyMultiPageWidget()

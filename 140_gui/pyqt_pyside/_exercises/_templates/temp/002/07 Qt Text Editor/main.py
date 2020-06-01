@@ -1,79 +1,79 @@
-____ ?.?W.. ______ *
-____ ?.QtGui ______ QKeySequence
-
-class MainWindow(QMainWindow):
-    ___ closeEvent(self, e):
-        if not text.document().isModified
-            return
-        answer _ QMessageBox.question(
-            window, None,
-            "You have unsaved changes. Save before closing?",
-            QMessageBox.Save | QMessageBox.Discard | QMessageBox.Cancel
-        )
-        if answer & QMessageBox.Save:
-            save()
-        elif answer & QMessageBox.Cancel:
-            e.ignore()
-
-app _ ?
-app.setApplicationName("Text Editor")
-text _ QPlainTextEdit()
-window _ MainWindow()
-window.setCentralWidget(text)
-
-file_path _ None
-
-menu _ window.menuBar().addMenu("&File")
-open_action _ QAction("&Open")
-___ open_file
-    global file_path
-    path _ QFileDialog.getOpenFileName(window, "Open")[0]
-    if path:
-        text.setPlainText(open(path).read())
-        file_path _ path
-open_action.triggered.c..(open_file)
-open_action.setShortcut(QKeySequence.Open)
-menu.addAction(open_action)
-
-save_action _ QAction("&Save")
-___ save
-    if file_path is None:
-        save_as()
-    else:
-        with open(file_path, "w") as f:
-            f.write(text.toPlainText())
-        text.document().setModified(False)
-save_action.triggered.c..(save)
-save_action.setShortcut(QKeySequence.Save)
-menu.addAction(save_action)
-
-save_as_action _ QAction("Save &As...")
-___ save_as
-    global file_path
-    path _ QFileDialog.getSaveFileName(window, "Save As")[0]
-    if path:
-        file_path _ path
-        save()
-save_as_action.triggered.c..(save_as)
-menu.addAction(save_as_action)
-
-close _ QAction("&Close")
-close.triggered.c..(window.close)
-menu.addAction(close)
-
-help_menu _ window.menuBar().addMenu("&Help")
-about_action _ QAction("&About")
-help_menu.addAction(about_action)
-___ show_about_dialog
-    text _ "<center>" \
-           "<h1>Text Editor</h1>" \
-           "&#8291;" \
-           "<img src=icon.svg>" \
-           "</center>" \
-           "<p>Version 31.4.159.265358<br/>" \
-           "Copyright &copy; Company Inc.</p>"
-    QMessageBox.about(window, "About Text Editor", text)
-about_action.triggered.c..(show_about_dialog)
-
-window.s..
-app.e..
+# ____ ?.?W.. ______ _
+# ____ ?.?G.. ______ ?KS..
+#
+# c_ MainWindow ?MW..
+#     ___ closeEvent  e
+#         __ no. text.document().iM..
+#             r_
+#         answer _ ?MB...q..
+#             w.. N..
+#             "You have unsaved changes. Save before closing?"
+#             ?MB...S.. _ ?MB...D.. | ?MB...C..
+#         )
+#         __ a.. & ?MB...S..
+#             s..
+#         ____ a.. & ?MB...C..
+#             ?.i..
+#
+# app _ ?
+# ?.sAN.. Text Editor
+# text _ ?PTE..
+# window _ MW..
+# ?.sCW.. t..
+#
+# file_path _ N..
+#
+# menu _ w__.mB.. .aM.. &File
+# open_action _ ?A.. &Open
+# ___ open_file
+#     gl.. f_p..
+#     path _ ?FD...gOFN.. w__ Open 0
+#     __ ?
+#         t__.sPT.. o.. ?.r..
+#         file_path _ ?
+# o_a_.t__.c.. o_f..
+# o_a_.sS.. ?KS...O..
+# me__.aA.. o_a_
+#
+# save_action _ ?A.. &Save
+# ___ save
+#     __ file_path __ N..
+#         save_as
+#     ____
+#         w__ o.. f_p.. _  __ f
+#             ?.w.. t__.tPT..
+#         t__.do.. .setModified F..
+# s_a_.t__.c.. s..
+# s_a_.sS.. ?KS...Save
+# m__.aA.. s_a..
+#
+# save_as_action _ ?A.. Save &As..
+# ___ save_as
+#     gl.. f_p..
+#     path _ ?FD...gSFN.. w__ Save As 0
+#     __ ?
+#         file_path _ ?
+#         s..
+# s_a_a.t__.c.. s_a.
+# m__.aA.. s_a_a..
+#
+# close _ ?A.. &Close
+# ?.t__.c.. w__.c..
+# m__.aA.. ?
+#
+# help_menu _ w__.mB.. .aM.. &Help
+# about_action _ ?A.. &About
+# h__.aA.. a_a..
+# ___ show_about_dialog
+#     text _ "<center>" \
+#            "<h1>Text Editor</h1>" \
+#            "&#8291;" \
+#            "<img src=icon.svg>" \
+#            "</center>" \
+#            "<p>Version 31.4.159.265358<br/>" \
+#            "Copyright &copy; Company Inc.</p>"
+#     ?MB...a.. w__  About Text Editor ?
+# a_a_.t__.c.. ?
+#
+# w__.s..
+# ?.e..

@@ -43,13 +43,13 @@
 
 
 ____ ?.QtCore ______ QRect, QRectF, QSize, Qt, QTimer
-____ ?.QtGui ______ QColor, QPainter, QPalette, QPen
+____ ?.?G.. ______ QColor, QPainter, QPalette, QPen
 ____ ?.?W.. ______ (?A.., QFrame, QGridLayout, QLabel,
         QSizePolicy, QWidget)
 
 
-class CircleWidget(QWidget):
-    ___ __init__(self, parent_None):
+c_ CircleWidget(QWidget):
+    ___ __init__  parent_None):
         super(CircleWidget, self).__init__(parent)
 
         self.floatBased _ False
@@ -59,25 +59,25 @@ class CircleWidget(QWidget):
         self.setBackgroundRole(QPalette.Base)
         self.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
 
-    ___ setFloatBased(self, floatBased):
+    ___ setFloatBased  floatBased):
         self.floatBased _ floatBased
         self.update()
 
-    ___ setAntialiased(self, antialiased):
+    ___ setAntialiased  antialiased):
         self.antialiased _ antialiased
         self.update()
 
     ___ minimumSizeHint(self):
-        return QSize(50, 50)
+        r_ QSize(50, 50)
 
     ___ sizeHint(self):
-        return QSize(180, 180)
+        r_ QSize(180, 180)
 
     ___ nextAnimationFrame(self):
         self.frameNo +_ 1
         self.update()
 
-    ___ paintEvent(self, event):
+    ___ paintEvent  event):
         painter _ QPainter(self)
         painter.setRenderHint(QPainter.Antialiasing, self.antialiased)
         painter.translate(self.width() / 2, self.height() / 2)
@@ -85,18 +85,18 @@ class CircleWidget(QWidget):
         for diameter in range(0, 256, 9):
             delta _ abs((self.frameNo % 128) - diameter / 2)
             alpha _ 255 - (delta * delta) / 4 - diameter
-            if alpha > 0:
+            __ alpha > 0:
                 painter.setPen(QPen(QColor(0, diameter / 2, 127, alpha), 3))
 
-                if self.floatBased:
+                __ self.floatBased:
                     painter.drawEllipse(QRectF(-diameter / 2.0,
                             -diameter / 2.0, diameter, diameter))
-                else:
+                ____
                     painter.drawEllipse(QRect(-diameter / 2,
                             -diameter / 2, diameter, diameter))
 
 
-class Window(QWidget):
+c_ Window(QWidget):
     ___ __init__(self):
         super(Window, self).__init__()
 
@@ -128,15 +128,15 @@ class Window(QWidget):
 
         self.setWindowTitle("Concentric Circles")
 
-    ___ createLabel(self, text):
+    ___ createLabel  text):
         label _ QLabel(text)
         label.setAlignment(Qt.AlignCenter)
         label.setMargin(2)
         label.setFrameStyle(QFrame.Box | QFrame.Sunken)
-        return label
+        r_ label
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

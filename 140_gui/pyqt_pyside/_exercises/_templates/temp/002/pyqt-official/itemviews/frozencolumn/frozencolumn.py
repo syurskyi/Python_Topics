@@ -52,12 +52,12 @@
 
 
 ____ ?.QtCore ______ QFile, QFileInfo, Qt
-____ ?.QtGui ______ QStandardItem, QStandardItemModel
+____ ?.?G.. ______ QStandardItem, QStandardItemModel
 ____ ?.?W.. ______ ?A.., QHeaderView, QTableView
 
 
-class FreezeTableWidget(QTableView):
-    ___ __init__(self, model):
+c_ FreezeTableWidget(QTableView):
+    ___ __init__  model):
         super(FreezeTableWidget, self).__init__()
         self.setModel(model)
         self.frozenTableView _ QTableView(self)
@@ -95,21 +95,21 @@ class FreezeTableWidget(QTableView):
         self.setVerticalScrollMode(self.ScrollPerPixel)
         self.frozenTableView.setVerticalScrollMode(self.ScrollPerPixel)
 
-    ___ updateSectionWidth(self, logicalIndex, oldSize, newSize):
-        if self.logicalIndex == 0:
+    ___ updateSectionWidth  logicalIndex, oldSize, newSize):
+        __ self.logicalIndex == 0:
             self.frozenTableView.setColumnWidth(0, newSize)
             self.updateFrozenTableGeometry()
 
-    ___ updateSectionHeight(self, logicalIndex, oldSize, newSize):
+    ___ updateSectionHeight  logicalIndex, oldSize, newSize):
         self.frozenTableView.setRowHeight(logicalIndex, newSize)
 
-    ___ resizeEvent(self, event):
+    ___ resizeEvent  event):
         super(FreezeTableWidget, self).resizeEvent(event)
         self.updateFrozenTableGeometry()
 
-    ___ moveCursor(self, cursorAction, modifiers):
+    ___ moveCursor  cursorAction, modifiers):
         current _ super(FreezeTableWidget, self).moveCursor(cursorAction, modifiers)
-        if (cursorAction == self.MoveLeft and
+        __ (cursorAction == self.MoveLeft and
                 self.current.column() > 0 and
                 self.visualRect(current).topLeft().x() <
                     self.frozenTableView.columnWidth(0)):
@@ -117,10 +117,10 @@ class FreezeTableWidget(QTableView):
                         self.visualRect(current).topLeft().x() -
                         self.frozenTableView.columnWidth(0))
             self.horizontalScrollBar().setValue(newValue)
-        return current
+        r_ current
 
-    ___ scrollTo(self, index, hint):
-        if index.column() > 0:
+    ___ scrollTo  index, hint):
+        __ index.column() > 0:
             super(FreezeTableWidget, self).scrollTo(index, hint)
 
     ___ updateFrozenTableGeometry(self):
@@ -132,19 +132,19 @@ class FreezeTableWidget(QTableView):
 
 ___ main(args):
     ___ split_and_strip(s, splitter):
-        return [s.strip() for s in line.split(splitter)]
+        r_ [s.strip() for s in line.split(splitter)]
 
     app _ ?A..(args)
     model _ QStandardItemModel()
     file _ QFile(QFileInfo(__file__).absolutePath() + '/grades.txt')
-    if file.open(QFile.ReadOnly):
+    __ file.o..(QFile.ReadOnly):
         line _ file.readLine(200).decode('utf-8')
         header _ split_and_strip(line, ',')
         model.setHorizontalHeaderLabels(header)
         row _ 0
         while file.canReadLine
             line _ file.readLine(200).decode('utf-8')
-            if not line.startswith('#') and ',' in line:
+            __ no. line.startswith('#') and ',' in line:
                 fields _ split_and_strip(line, ',')
                 for col, field in enumerate(fields):
                     newItem _ QStandardItem(field)
@@ -155,9 +155,9 @@ ___ main(args):
     tableView.setWindowTitle("Frozen Column Example")
     tableView.resize(560, 680)
     tableView.s..
-    return app.e..
+    r_ app.e..
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     ______ sys
     main(sys.argv)

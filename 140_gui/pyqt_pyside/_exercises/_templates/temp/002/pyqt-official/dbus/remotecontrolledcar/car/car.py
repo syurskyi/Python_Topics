@@ -45,13 +45,13 @@
 ______ math
 
 ____ ?.QtCore ______ pyqtSlot, Q_CLASSINFO, QRectF, Qt
-____ ?.QtGui ______ QBrush, QPainter, QTransform
+____ ?.?G.. ______ QBrush, QPainter, QTransform
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsObject,
         QGraphicsScene, QGraphicsView)
 ____ ?.QtDBus ______ QDBusAbstractAdaptor, QDBusConnection
 
 
-class Car(QGraphicsObject):
+c_ Car(QGraphicsObject):
 
     ___ __init__(self):
         super(Car, self).__init__()
@@ -65,25 +65,25 @@ class Car(QGraphicsObject):
         self.setFlag(QGraphicsItem.ItemIsFocusable, True)
 
     ___ accelerate(self):
-        if self.speed < 10:
+        __ self.speed < 10:
             self.speed +_ 1
 
     ___ decelerate(self):
-        if self.speed > -10:
+        __ self.speed > -10:
             self.speed -_ 1
 
     ___ turnLeft(self):
-        if self.wheelsAngle > -30:
+        __ self.wheelsAngle > -30:
             self.wheelsAngle -_ 5
 
     ___ turnRight(self):
-        if self.wheelsAngle < 30:
+        __ self.wheelsAngle < 30:
             self.wheelsAngle +_ 5
 
     ___ boundingRect(self):
-        return QRectF(-35, -81, 70, 115)
+        r_ QRectF(-35, -81, 70, 115)
 
-    ___ timerEvent(self, event):
+    ___ timerEvent  event):
         axelDistance _ 54.0
         wheelsAngleRads _ (self.wheelsAngle * math.pi) / 180
         turnDistance _ math.cos(wheelsAngleRads) * axelDistance * 2
@@ -95,7 +95,7 @@ class Car(QGraphicsObject):
         self.setTransform(QTransform.fromTranslate(0, -self.speed), True)
         self.update()
 
-    ___ paint(self, painter, option, widget):
+    ___ paint  painter, option, widget):
         painter.setBrush(Qt.gray)
         painter.drawRect(-20, -58, 40, 2)       # Front axel
         painter.drawRect(-20, 7, 40, 2)         # Rear axel
@@ -131,7 +131,7 @@ class Car(QGraphicsObject):
         painter.drawRect(19, 0, 12, 17)         # Rear right
 
 
-class CarInterfaceAdaptor(QDBusAbstractAdaptor):
+c_ CarInterfaceAdaptor(QDBusAbstractAdaptor):
 
     Q_CLASSINFO("D-Bus Interface", 'org.example.Examples.CarInterface')
 
@@ -144,7 +144,7 @@ class CarInterfaceAdaptor(QDBusAbstractAdaptor):
             '  </interface>\n'
             '')
 
-    ___ __init__(self, parent):
+    ___ __init__  parent):
         super(CarInterfaceAdaptor, self).__init__(parent)
 
         self.setAutoRelaySignals(True)
@@ -166,7 +166,7 @@ class CarInterfaceAdaptor(QDBusAbstractAdaptor):
         self.parent().turnRight()
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     ______ sys
 
     app _ ?A..(sys.argv)

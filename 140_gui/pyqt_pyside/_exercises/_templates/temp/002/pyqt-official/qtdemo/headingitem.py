@@ -41,21 +41,21 @@
 
 
 ____ ?.QtCore ______ Qt
-____ ?.QtGui ______ (QColor, QFontMetrics, QImage, QLinearGradient,
+____ ?.?G.. ______ (QColor, QFontMetrics, QImage, QLinearGradient,
         QPainter, QPen)
 
 ____ colors ______ Colors
 ____ demoitem ______ DemoItem
 
 
-class HeadingItem(DemoItem):
-    ___ __init__(self, text, parent_None):
+c_ HeadingItem(DemoItem):
+    ___ __init__  text, parent_None):
         super(HeadingItem, self).__init__(parent)
 
         self.text _ text
         self.noSubPixeling _ True
 
-    ___ createImage(self, transform):
+    ___ createImage  transform):
         sx _ min(transform.m11(), transform.m22())
         sy _ max(transform.m22(), sx)
         fm _ QFontMetrics(Colors.headingFont())
@@ -75,9 +75,9 @@ class HeadingItem(DemoItem):
         # Draw shadow.
         brush_shadow _ QLinearGradient(xShadow, yShadow, w, yShadow)
         brush_shadow.setSpread(QLinearGradient.PadSpread)
-        if Colors.useEightBitPalette:
+        __ Colors.useEightBitPalette:
             brush_shadow.setColorAt(0.0, QColor(0, 0, 0))
-        else:
+        ____
             brush_shadow.setColorAt(0.0, QColor(0, 0, 0, 100))
         pen_shadow _ QPen()
         pen_shadow.setBrush(brush_shadow)
@@ -96,10 +96,10 @@ class HeadingItem(DemoItem):
         painter.setPen(pen_text)
         painter.drawText(0, 0, int(w), int(h), Qt.AlignLeft, self.text)
 
-        return image
+        r_ image
 
-    ___ animationStarted(self, id_0):
+    ___ animationStarted  id_0):
         self.noSubPixeling _ False
 
-    ___ animationStopped(self, id_0):
+    ___ animationStopped  id_0):
         self.noSubPixeling _ True

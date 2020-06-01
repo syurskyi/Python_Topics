@@ -43,7 +43,7 @@
 ____ xml.dom.minidom ______ parseString
 
 ____ ?.QtCore ______ QRectF, QRegExp, Qt
-____ ?.QtGui ______ QImage
+____ ?.?G.. ______ QImage
 
 ____ colors ______ Colors
 ____ demoitem ______ DemoItem
@@ -53,8 +53,8 @@ ____ headingitem ______ HeadingItem
 ____ imageitem ______ ImageItem
 
 
-class ExampleContent(DemoItem):
-    ___ __init__(self, name, parent_None):
+c_ ExampleContent(DemoItem):
+    ___ __init__  name, parent_None):
         super(ExampleContent, self).__init__(parent)
 
         # Prevent a circular import.
@@ -62,77 +62,77 @@ class ExampleContent(DemoItem):
         self._menu_manager _ MenuManager.instance()
 
         self.name _ name
-        self.heading _ None
-        self.description _ None
-        self.screenshot _ None
+        self.heading _ N..
+        self.description _ N..
+        self.screenshot _ N..
 
         self._prepared _ False
 
     ___ prepare(self):
-        if not self._prepared:
+        __ no. self._prepared:
             self.createContent()
             self._prepared _ True
 
-    ___ animationStopped(self, id):
-        if id == DemoItemAnimation.ANIM_OUT:
+    ___ animationStopped  id):
+        __ id == DemoItemAnimation.ANIM_OUT:
             # Free up some memory.
-            self.heading _ None
-            self.description _ None
-            self.screenshot _ None
+            self.heading _ N..
+            self.description _ N..
+            self.screenshot _ N..
             self._prepared _ False
 
     ___ loadDescription(self):
         contents _ self._menu_manager.getHtml(self.name).data().decode('utf8')
-        if contents == '':
+        __ contents == '':
             paragraphs _ []
-        else:
+        ____
             exampleDoc _ parseString(contents)
             paragraphs _ exampleDoc.getElementsByTagName('p')
 
-        if len(paragraphs) < 1:
+        __ len(paragraphs) < 1:
             Colors.debug("- ExampleContent.loadDescription(): Could not load description:", self._menu_manager.info[self.name].get('docfile'))
 
         description _ Colors.contentColor + "Could not load description. Ensure that the documentation for Qt is built."
         for p in paragraphs:
             description _ self.extractTextFromParagraph(p)
-            if self.isSummary(description):
+            __ self.isSummary(description):
                 break
 
-        return Colors.contentColor + description
+        r_ Colors.contentColor + description
 
-    ___ isSummary(self, text):
+    ___ isSummary  text):
         re _ QRegExp("(In )?((The|This) )?(%s )?.*(tutorial|example|demo|application)" % self.name, Qt.CaseInsensitive)
 
-        return ('[' not in text) and (re.indexIn(text) >_ 0)
+        r_ ('[' no. in text) and (re.indexIn(text) >_ 0)
 
-    ___ extractTextFromParagraph(self, parentNode):
+    ___ extractTextFromParagraph  parentNode):
         description _ ''
         node _ parentNode.firstChild
 
-        while node is not None:
-            if node.nodeType == node.TEXT_NODE:
+        while node __ no. N..:
+            __ node.nodeType == node.TEXT_NODE:
                 description +_ Colors.contentColor + node.nodeValue
-            elif node.hasChildNodes
-                if node.nodeName == 'b':
+            ____ node.hasChildNodes
+                __ node.nodeName == 'b':
                     beginTag _ '<b>'
                     endTag _ '</b>'
-                elif node.nodeName == 'a':
+                ____ node.nodeName == 'a':
                     beginTag _ Colors.contentColor
                     endTag _ '</font>'
-                elif node.nodeName == 'i':
+                ____ node.nodeName == 'i':
                     beginTag _ '<i>'
                     endTag _ '</i>'
-                elif node.nodeName == 'tt':
+                ____ node.nodeName == 'tt':
                     beginTag _ '<tt>'
                     endTag _ '</tt>'
-                else:
+                ____
                     beginTag _ endTag _ ''
 
                 description +_ beginTag + self.extractTextFromParagraph(node) + endTag
 
             node _ node.nextSibling
 
-        return description
+        r_ description
 
     ___ createContent(self):
         # Create the items.
@@ -148,4 +148,4 @@ class ExampleContent(DemoItem):
         self.screenshot.setPos(0, self.description.pos().y() + self.description.boundingRect().height() + 10)
 
     ___ boundingRect(self):
-        return QRectF(0, 0, 500, 100)
+        r_ QRectF(0, 0, 500, 100)

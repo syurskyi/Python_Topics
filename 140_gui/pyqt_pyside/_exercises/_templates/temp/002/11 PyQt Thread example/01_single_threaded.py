@@ -8,7 +8,7 @@ server _ Session()
 
 # GUI:
 app _ ?
-text_area _ QPlainTextEdit()
+text_area _ ?PTE..
 text_area.setFocusPolicy(Qt.NoFocus)
 message _ QLineEdit()
 layout _ QVBoxLayout()
@@ -21,7 +21,7 @@ window.s..
 # Event handlers:
 ___ display_new_messages
     new_message _ server.get(chat_url).text
-    if new_message:
+    __ new_message:
         text_area.appendPlainText(new_message)
 
 ___ send_message

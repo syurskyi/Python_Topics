@@ -46,13 +46,13 @@ ______ random
 
 ____ ?.QtCore ______ QByteArray, QDataStream, QIODevice, QSettings
 ____ ?.?W.. ______ (?A.., QDialog, QHBoxLayout, QLabel,
-        QMessageBox, ?PB.., QVBoxLayout)
+        ?MB.., ?PB.., QVBoxLayout)
 ____ ?.QtNetwork ______ (QHostAddress, QNetworkConfiguration,
         QNetworkConfigurationManager, QNetworkInterface, QNetworkSession,
         QTcpServer)
 
 
-class Server(QDialog):
+c_ Server(QDialog):
     FORTUNES _ (
         "You've been leading a dog's life. Stay off the furniture.",
         "You've got to think about tomorrow.",
@@ -62,33 +62,33 @@ class Server(QDialog):
         "You cannot kill time without injuring eternity.",
         "Computers are not intelligent. They only think they are.")
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(Server, self).__init__(parent)
 
-        self.tcpServer _ None
-        self.networkSession _ None
+        self.tcpServer _ N..
+        self.networkSession _ N..
 
         self.statusLabel _ QLabel()
         quitButton _ ?PB..("Quit")
-        quitButton.setAutoDefault(False)
+        quitButton.setAutoDefault F..
 
         manager _ QNetworkConfigurationManager()
-        if manager.capabilities() & QNetworkConfigurationManager.NetworkSessionRequired:
+        __ manager.capabilities() & QNetworkConfigurationManager.NetworkSessionRequired:
             settings _ QSettings(QSettings.UserScope, 'QtProject')
             settings.beginGroup('QtNetwork')
             id _ settings.value('DefaultNetworkConfiguration', '')
             settings.endGroup()
 
             config _ manager.configurationFromIdentifier(id)
-            if config.state() & QNetworkConfiguration.Discovered == 0:
+            __ config.state() & QNetworkConfiguration.Discovered == 0:
                 config _ manager.defaultConfiguration()
 
             self.networkSession _ QNetworkSession(config, self)
             self.networkSession.opened.c..(self.sessionOpened)
 
             self.statusLabel.sT..("Opening network session.")
-            self.networkSession.open()
-        else:
+            self.networkSession.o..()
+        ____
             self.sessionOpened()
 
         quitButton.c__.c..(self.close)
@@ -107,12 +107,12 @@ class Server(QDialog):
         self.setWindowTitle("Fortune Server")
 
     ___ sessionOpened(self):
-        if self.networkSession is not None:
+        __ self.networkSession __ no. N..:
             config _ self.networkSession.configuration()
 
-            if config.type() == QNetworkConfiguration.UserChoice:
+            __ config.type() == QNetworkConfiguration.UserChoice:
                 id _ self.networkSession.sessionProperty('UserChoiceConfiguration')
-            else:
+            ____
                 id _ config.identifier()
 
             settings _ QSettings(QSettings.UserScope, 'QtProject')
@@ -121,16 +121,16 @@ class Server(QDialog):
             settings.endGroup();
 
         self.tcpServer _ QTcpServer(self)
-        if not self.tcpServer.listen
-            QMessageBox.critical(self, "Fortune Server",
+        __ no. self.tcpServer.listen
+            ?MB...critical  "Fortune Server",
                     "Unable to start the server: %s." % self.tcpServer.errorString())
             self.close()
-            return
+            r_
 
         for ipAddress in QNetworkInterface.allAddresses
-            if ipAddress !_ QHostAddress.LocalHost and ipAddress.toIPv4Address() !_ 0:
+            __ ipAddress !_ QHostAddress.LocalHost and ipAddress.toIPv4Address() !_ 0:
                 break
-        else:
+        ____
             ipAddress _ QHostAddress(QHostAddress.LocalHost)
 
         ipAddress _ ipAddress.toString()
@@ -152,15 +152,15 @@ class Server(QDialog):
         clientConnection _ self.tcpServer.nextPendingConnection()
         clientConnection.disconnected.c..(clientConnection.deleteLater)
 
-        clientConnection.write(block)
+        clientConnection.w..(block)
         clientConnection.disconnectFromHost()
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 
     app _ ?A..(sys.argv)
     server _ Server()
-    random.seed(None)
+    random.seed(N..)
     sys.exit(server.exec_())

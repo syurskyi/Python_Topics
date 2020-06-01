@@ -61,22 +61,22 @@ Result:
 ______ sys
 
 ____ ?.QtCore ______ pyqtSignal, QObject, QSize, Qt, QUrl
-____ ?.QtGui ______ QImage, QPainter
+____ ?.?G.. ______ QImage, QPainter
 ____ ?.?W.. ______ ?A..
 ____ ?.QtWebKitWidgets ______ QWebPage
 
 
 ___ cout(s):
-    sys.stdout.write(s)
+    sys.stdout.w..(s)
     sys.stdout.flush()
 
 
 ___ cerr(s):
-    sys.stderr.write(s)
+    sys.stderr.w..(s)
     sys.stderr.flush()
 
 
-class FrameCapture(QObject):
+c_ FrameCapture(QObject):
 
     finished _ pyqtSignal()
 
@@ -92,7 +92,7 @@ class FrameCapture(QObject):
         self._page.loadProgress.c..(self.printProgress)
         self._page.loadFinished.c..(self.saveResult)
  
-    ___ load(self, url, outputFileName):
+    ___ load  url, outputFileName):
         cout("Loading %s\n" % url.toString())
         self._percent _ 0
         index _ outputFileName.rfind('.')
@@ -100,30 +100,30 @@ class FrameCapture(QObject):
         self._page.mainFrame().load(url)
         self._page.setViewportSize(QSize(1024, 768))
  
-    ___ printProgress(self, percent):
-        if self._percent >_ percent:
-            return
+    ___ printProgress  percent):
+        __ self._percent >_ percent:
+            r_
         self._percent +_ 1
         while self._percent < percent:
             self._percent +_ 1
             cout("#")
  
-    ___ saveResult(self, ok):
+    ___ saveResult  ok):
         cout("\n")
         # Crude error-checking.
-        if not ok:
+        __ no. ok:
             cerr("Failed loading %s\n" % self._page.mainFrame().url().toString())
             self.finished.emit()
-            return
+            r_
 
         # Save each frame in different image files.
         self._frameCounter _ 0
         self.saveFrame(self._page.mainFrame())
         self.finished.emit()
  
-    ___ saveFrame(self, frame):
+    ___ saveFrame  frame):
         fileName _ self._fileName
-        if self._frameCounter:
+        __ self._frameCounter:
             index _ fileName.rfind('.')
             fileName _ "%s_frame%s%s" % (fileName[:index], self._frameCounter, fileName[index:])
         image _ QImage(frame.contentsSize(), QImage.Format_ARGB32_Premultiplied)
@@ -140,8 +140,8 @@ class FrameCapture(QObject):
             self.saveFrame(childFrame)
 
 
-if __name__ == '__main__':
-    if len(sys.argv) !_ 3:
+__ __name__ == '__main__':
+    __ len(sys.argv) !_ 3:
         cerr(__doc__)
         sys.exit(1)
 

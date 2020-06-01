@@ -45,7 +45,7 @@
 ____ ?.QtCore ______ (pyqtProperty, pyqtSignal, QEasingCurve, QObject,
         QParallelAnimationGroup, QPointF, QPropertyAnimation, qrand, QRectF,
         QState, QStateMachine, Qt, QTimer)
-____ ?.QtGui ______ (QBrush, QLinearGradient, QPainter, QPainterPath,
+____ ?.?G.. ______ (QBrush, QLinearGradient, QPainter, QPainterPath,
         QPixmap)
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsPixmapItem,
         QGraphicsRectItem, QGraphicsScene, QGraphicsView, QGraphicsWidget,
@@ -56,23 +56,23 @@ ______ animatedtiles_rc
 
 # PyQt doesn't support deriving from more than one wrapped class so we use
 # composition and delegate the property.
-class Pixmap(QObject):
-    ___ __init__(self, pix):
+c_ Pixmap(QObject):
+    ___ __init__  pix):
         super(Pixmap, self).__init__()
 
         self.pixmap_item _ QGraphicsPixmapItem(pix)
         self.pixmap_item.setCacheMode(QGraphicsItem.DeviceCoordinateCache)
 
-    ___ _set_pos(self, pos):
+    ___ _set_pos  pos):
         self.pixmap_item.setPos(pos)
 
     pos _ pyqtProperty(QPointF, fset__set_pos)
 
 
-class Button(QGraphicsWidget):
+c_ Button(QGraphicsWidget):
     pressed _ pyqtSignal()
 
-    ___ __init__(self, pixmap, parent_None):
+    ___ __init__  pixmap, parent_None):
         super(Button, self).__init__(parent)
 
         self._pix _ pixmap
@@ -81,27 +81,27 @@ class Button(QGraphicsWidget):
         self.setCacheMode(QGraphicsItem.DeviceCoordinateCache)
 
     ___ boundingRect(self):
-        return QRectF(-65, -65, 130, 130)
+        r_ QRectF(-65, -65, 130, 130)
 
     ___ shape(self):
         path _ QPainterPath()
         path.addEllipse(self.boundingRect())
 
-        return path
+        r_ path
 
-    ___ paint(self, painter, option, widget):
+    ___ paint  painter, option, widget):
         down _ option.state & QStyle.State_Sunken
         r _ self.boundingRect()
 
         grad _ QLinearGradient(r.topLeft(), r.bottomRight())
-        if option.state & QStyle.State_MouseOver:
+        __ option.state & QStyle.State_MouseOver:
             color_0 _ Qt.white
-        else:
+        ____
             color_0 _ Qt.lightGray
 
         color_1 _ Qt.darkGray
 
-        if down:
+        __ down:
             color_0, color_1 _ color_1, color_0
 
         grad.setColorAt(0, color_0)
@@ -114,7 +114,7 @@ class Button(QGraphicsWidget):
         color_0 _ Qt.darkGray
         color_1 _ Qt.lightGray
 
-        if down:
+        __ down:
             color_0, color_1 _ color_1, color_0
 
         grad.setColorAt(0, color_0)
@@ -123,28 +123,28 @@ class Button(QGraphicsWidget):
         painter.setPen(Qt.NoPen)
         painter.setBrush(grad)
 
-        if down:
+        __ down:
             painter.translate(2, 2)
 
         painter.drawEllipse(r.adjusted(5, 5, -5, -5))
         painter.drawPixmap(-self._pix.width() / 2, -self._pix.height() / 2,
                 self._pix)
 
-    ___ mousePressEvent(self, ev):
+    ___ mousePressEvent  ev):
         self.pressed.emit()
         self.update()
 
-    ___ mouseReleaseEvent(self, ev):
+    ___ mouseReleaseEvent  ev):
         self.update()
 
 
-class View(QGraphicsView):
-    ___ resizeEvent(self, event):
+c_ View(QGraphicsView):
+    ___ resizeEvent  event):
         super(View, self).resizeEvent(event)
         self.fitInView(self.sceneRect(), Qt.KeepAspectRatio)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
     ______ math

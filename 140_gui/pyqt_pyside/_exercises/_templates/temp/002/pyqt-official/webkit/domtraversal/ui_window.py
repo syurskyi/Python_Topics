@@ -7,10 +7,10 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, QtGui, ?W..
+____ ? ______ QtCore, ?G.., ?W..
 
-class Ui_Window(object):
-    ___ setupUi(self, Window):
+c_ Ui_Window(object):
+    ___ setupUi  Window):
         Window.setObjectName("Window")
         Window.resize(800, 600)
         self.centralwidget _ ?W...QWidget(Window)
@@ -22,7 +22,7 @@ class Ui_Window(object):
         self.webView.setUrl(QtCore.QUrl("http://qt.nokia.com/"))
         self.webView.setObjectName("webView")
         self.verticalLayout_2.addWidget(self.webView)
-        Window.setCentralWidget(self.centralwidget)
+        Window.sCW..(self.centralwidget)
         self.menubar _ ?W...QMenuBar(Window)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 27))
         self.menubar.setObjectName("menubar")
@@ -41,7 +41,7 @@ class Ui_Window(object):
         self.treeWidget _ ?W...QTreeWidget(self.dockWidgetContents)
         self.treeWidget.setObjectName("treeWidget")
         self.treeWidget.headerItem().sT..(0, "1")
-        self.treeWidget.header().setVisible(False)
+        self.treeWidget.header().setVisible F..
         self.verticalLayout.addWidget(self.treeWidget)
         self.dockWidget.setWidget(self.dockWidgetContents)
         Window.addDockWidget(QtCore.Qt.DockWidgetArea(1), self.dockWidget)
@@ -49,7 +49,7 @@ class Ui_Window(object):
         self.retranslateUi(Window)
         QtCore.QMetaObject.connectSlotsByName(Window)
 
-    ___ retranslateUi(self, Window):
+    ___ retranslateUi  Window):
         _translate _ QtCore.QCoreApplication.translate
         Window.setWindowTitle(_translate("Window", "Web Element DOM Traversal"))
         self.dockWidget.setWindowTitle(_translate("Window", "Document Structure"))

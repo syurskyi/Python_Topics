@@ -43,12 +43,12 @@
 
 
 ____ ?.QtCore ______ QAbstractItemModel, QFile, QIODevice, QModelIndex, Qt
-____ ?.?W.. ______ ?A.., QFileDialog, QMainWindow, QTreeView
+____ ?.?W.. ______ ?A.., ?FD.., QMainWindow, QTreeView
 ____ ?.QtXml ______ QDomDocument
 
 
-class DomItem(object):
-    ___ __init__(self, node, row, parent_None):
+c_ DomItem(object):
+    ___ __init__  node, row, parent_None):
         self.domNode _ node
         # Record the item's location within its parent.
         self.rowNumber _ row
@@ -56,44 +56,44 @@ class DomItem(object):
         self.childItems _ {}
 
     ___ node(self):
-        return self.domNode
+        r_ self.domNode
 
     ___ parent(self):
-        return self.parentItem
+        r_ self.parentItem
 
-    ___ child(self, i):
-        if i in self.childItems:
-            return self.childItems[i]
+    ___ child  i):
+        __ i in self.childItems:
+            r_ self.childItems[i]
 
-        if i >_ 0 and i < self.domNode.childNodes().count
+        __ i >_ 0 and i < self.domNode.childNodes().count
             childNode _ self.domNode.childNodes().item(i)
             childItem _ DomItem(childNode, i, self)
             self.childItems[i] _ childItem
-            return childItem
+            r_ childItem
 
-        return None
+        r_ N..
 
     ___ row(self):
-        return self.rowNumber
+        r_ self.rowNumber
 
 
-class DomModel(QAbstractItemModel):
-    ___ __init__(self, document, parent_None):
+c_ DomModel(QAbstractItemModel):
+    ___ __init__  document, parent_None):
         super(DomModel, self).__init__(parent)
 
         self.domDocument _ document
 
         self.rootItem _ DomItem(self.domDocument, 0)
 
-    ___ columnCount(self, parent):
-        return 3
+    ___ columnCount  parent):
+        r_ 3
 
-    ___ data(self, index, role):
-        if not index.isValid
-            return None
+    ___ data  index, role):
+        __ no. index.isValid
+            r_ N..
 
-        if role !_ Qt.DisplayRole:
-            return None
+        __ role !_ Qt.DisplayRole:
+            r_ N..
 
         item _ index.internalPointer()
 
@@ -101,110 +101,110 @@ class DomModel(QAbstractItemModel):
         attributes _ []
         attributeMap _ node.attributes()
 
-        if index.column() == 0:
-            return node.nodeName()
+        __ index.column() == 0:
+            r_ node.nodeName()
         
-        elif index.column() == 1:
+        ____ index.column() == 1:
             for i in range(0, attributeMap.count()):
                 attribute _ attributeMap.item(i)
                 attributes.append(attribute.nodeName() + '="' +
                                   attribute.nodeValue() + '"')
 
-            return " ".join(attributes)
+            r_ " ".join(attributes)
 
-        if index.column() == 2:
+        __ index.column() == 2:
             value _ node.nodeValue()
-            if value is None:
-                return ''
+            __ value __ N..:
+                r_ ''
 
-            return ' '.join(node.nodeValue().split('\n'))
+            r_ ' '.join(node.nodeValue().split('\n'))
 
-        return None
+        r_ N..
 
-    ___ flags(self, index):
-        if not index.isValid
-            return Qt.NoItemFlags
+    ___ flags  index):
+        __ no. index.isValid
+            r_ Qt.NoItemFlags
 
-        return Qt.ItemIsEnabled | Qt.ItemIsSelectable
+        r_ Qt.ItemIsEnabled | Qt.ItemIsSelectable
 
-    ___ headerData(self, section, orientation, role):
-        if orientation == Qt.Horizontal and role == Qt.DisplayRole:
-            if section == 0:
-                return "Name"
+    ___ headerData  section, orientation, role):
+        __ orientation == Qt.Horizontal and role == Qt.DisplayRole:
+            __ section == 0:
+                r_ "Name"
 
-            if section == 1:
-                return "Attributes"
+            __ section == 1:
+                r_ "Attributes"
 
-            if section == 2:
-                return "Value"
+            __ section == 2:
+                r_ "Value"
 
-        return None
+        r_ N..
 
-    ___ index(self, row, column, parent):
-        if not self.hasIndex(row, column, parent):
-            return QModelIndex()
+    ___ index  row, column, parent):
+        __ no. self.hasIndex(row, column, parent):
+            r_ QModelIndex()
 
-        if not parent.isValid
+        __ no. parent.isValid
             parentItem _ self.rootItem
-        else:
+        ____
             parentItem _ parent.internalPointer()
 
         childItem _ parentItem.child(row)
-        if childItem:
-            return self.createIndex(row, column, childItem)
-        else:
-            return QModelIndex()
+        __ childItem:
+            r_ self.createIndex(row, column, childItem)
+        ____
+            r_ QModelIndex()
 
-    ___ parent(self, child):
-        if not child.isValid
-            return QModelIndex()
+    ___ parent  child):
+        __ no. child.isValid
+            r_ QModelIndex()
 
         childItem _ child.internalPointer()
         parentItem _ childItem.parent()
 
-        if not parentItem or parentItem == self.rootItem:
-            return QModelIndex()
+        __ no. parentItem or parentItem == self.rootItem:
+            r_ QModelIndex()
 
-        return self.createIndex(parentItem.row(), 0, parentItem)
+        r_ self.createIndex(parentItem.row(), 0, parentItem)
 
-    ___ rowCount(self, parent):
-        if parent.column() > 0:
-            return 0
+    ___ rowCount  parent):
+        __ parent.column() > 0:
+            r_ 0
 
-        if not parent.isValid
+        __ no. parent.isValid
             parentItem _ self.rootItem
-        else:
+        ____
             parentItem _ parent.internalPointer()
 
-        return parentItem.node().childNodes().count()
+        r_ parentItem.node().childNodes().count()
 
 
-class MainWindow(QMainWindow):
+c_ MainWindow ?MW..
     ___ __init__(self):
         super(MainWindow, self).__init__()
 
-        self.fileMenu _ self.menuBar().addMenu("&File")
-        self.fileMenu.addAction("&Open...", self.openFile, "Ctrl+O")
-        self.fileMenu.addAction("E&xit", self.close, "Ctrl+Q")
+        self.fileMenu _ self.mB.. .aM..("&File")
+        self.fileMenu.aA..("&Open...", self.openFile, "Ctrl+O")
+        self.fileMenu.aA..("E&xit", self.close, "Ctrl+Q")
 
         self.xmlPath _ ""
         self.model _ DomModel(QDomDocument(), self)
         self.view _ QTreeView(self)
         self.view.setModel(self.model)
 
-        self.setCentralWidget(self.view)
+        self.sCW..(self.view)
         self.setWindowTitle("Simple DOM Model")
 
     ___ openFile(self):
-        filePath, _ _ QFileDialog.getOpenFileName(self, "Open File",
+        filePath, _ _ ?FD...gOFN..  "Open File",
                 self.xmlPath, "XML files (*.xml);;HTML files (*.html);;"
                 "SVG files (*.svg);;User Interface files (*.ui)")
 
-        if filePath:
+        __ filePath:
             f _ QFile(filePath)
-            if f.open(QIODevice.ReadOnly):
+            __ f.o..(QIODevice.ReadOnly):
                 document _ QDomDocument()
-                if document.setContent(f):
+                __ document.setContent(f):
                     newModel _ DomModel(document, self)
                     self.view.setModel(newModel)
                     self.model _ newModel
@@ -213,7 +213,7 @@ class MainWindow(QMainWindow):
                 f.close()
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

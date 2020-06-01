@@ -45,14 +45,14 @@
 ____ math ______ cos, pi, sin
 
 ____ ?.QtCore ______ QSize, Qt
-____ ?.QtGui ______ (QBrush, QColor, QFont, QLinearGradient, QPainter,
+____ ?.?G.. ______ (QBrush, QColor, QFont, QLinearGradient, QPainter,
         QPainterPath, QPalette, QPen)
 ____ ?.?W.. ______ (?A.., QComboBox, QGridLayout, QLabel,
         QSizePolicy, QSpinBox, QWidget)
 
 
-class RenderArea(QWidget):
-    ___ __init__(self, path, parent_None):
+c_ RenderArea(QWidget):
+    ___ __init__  path, parent_None):
         super(RenderArea, self).__init__(parent)
 
         self.path _ path
@@ -62,33 +62,33 @@ class RenderArea(QWidget):
         self.setBackgroundRole(QPalette.Base)
 
     ___ minimumSizeHint(self):
-        return QSize(50, 50)
+        r_ QSize(50, 50)
 
     ___ sizeHint(self):
-        return QSize(100, 100)
+        r_ QSize(100, 100)
 
-    ___ setFillRule(self, rule):
+    ___ setFillRule  rule):
         self.path.setFillRule(rule)
         self.update()
 
-    ___ setFillGradient(self, color1, color2):
+    ___ setFillGradient  color1, color2):
         self.fillColor1 _ color1
         self.fillColor2 _ color2
         self.update()
 
-    ___ setPenWidth(self, width):
+    ___ setPenWidth  width):
         self.penWidth _ width
         self.update()
 
-    ___ setPenColor(self, color):
+    ___ setPenColor  color):
         self.penColor _ color
         self.update()
 
-    ___ setRotationAngle(self, degrees):
+    ___ setRotationAngle  degrees):
         self.rotationAngle _ degrees
         self.update()
 
-    ___ paintEvent(self, event):
+    ___ paintEvent  event):
         painter _ QPainter(self)
         painter.setRenderHint(QPainter.Antialiasing)
         painter.scale(self.width() / 100.0, self.height() / 100.0)
@@ -106,7 +106,7 @@ class RenderArea(QWidget):
         painter.drawPath(self.path)
 
 
-class Window(QWidget):
+c_ Window(QWidget):
     NumRenderAreas _ 9
 
     ___ __init__(self):
@@ -279,16 +279,16 @@ class Window(QWidget):
         for i in range(Window.NumRenderAreas):
             self.renderAreas[i].setPenColor(color)
 
-    ___ populateWithColors(self, comboBox):
+    ___ populateWithColors  comboBox):
         colorNames _ QColor.colorNames()
         for name in colorNames:
             comboBox.addItem(name, name)
 
-    ___ currentItemData(self, comboBox):
-        return comboBox.itemData(comboBox.currentIndex())
+    ___ currentItemData  comboBox):
+        r_ comboBox.itemData(comboBox.currentIndex())
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

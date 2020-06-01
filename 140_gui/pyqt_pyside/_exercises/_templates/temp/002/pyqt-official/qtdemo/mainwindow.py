@@ -41,10 +41,10 @@
 
 
 ____ ?.QtCore ______ QFileInfo, QPoint, QRect, qRound, Qt, QTime, QTimer
-____ ?.QtGui ______ (QFontMetricsF, QImage, QPainter, QPixmap, QPolygon,
+____ ?.?G.. ______ (QFontMetricsF, QImage, QPainter, QPixmap, QPolygon,
         QRegion)
 ____ ?.?W.. ______ (?A.., QFrame, QGraphicsScene,
-        QGraphicsView, QGraphicsWidget, QMessageBox, QWidget)
+        QGraphicsView, QGraphicsWidget, ?MB.., QWidget)
 
 ____ colors ______ Colors
 ____ demoitem ______ DemoItem
@@ -53,8 +53,8 @@ ____ imageitem ______ ImageItem
 ____ menumanager ______ MenuManager
 
 
-class MainWindow(QGraphicsView):
-    ___ __init__(self, parent_None):
+c_ MainWindow(QGraphicsView):
+    ___ __init__  parent_None):
         super(MainWindow, self).__init__(parent)
 
         self.imagesDir _ QFileInfo(__file__).absolutePath() + '/images'
@@ -64,20 +64,20 @@ class MainWindow(QGraphicsView):
         self.fpsTime _ QTime()
         self.background _ QPixmap()
 
-        self.scene _ None
-        self.mainSceneRoot _ None
+        self.scene _ N..
+        self.mainSceneRoot _ N..
         self.frameTimeList _ []
         self.fpsHistory _ []
 
         self.currentFps _ Colors.fps
         self.fpsMedian _ -1
-        self.fpsLabel _ None
-        self.pausedLabel _ None
+        self.fpsLabel _ N..
+        self.pausedLabel _ N..
         self.doneAdapt _ False
         self.useTimer _ False
         self.updateTimer.setSingleShot(True)
-        self.companyLogo _ None
-        self.qtLogo _ None
+        self.companyLogo _ N..
+        self.qtLogo _ N..
 
         self.setupWidget()
         self.setupScene()
@@ -89,10 +89,10 @@ class MainWindow(QGraphicsView):
         screenRect _ desktop.screenGeometry(desktop.primaryScreen())
         windowRect _ QRect(0, 0, 800, 600)
 
-        if screenRect.width() < 800:
+        __ screenRect.width() < 800:
             windowRect.setWidth(screenRect.width())
 
-        if screenRect.height() < 600:
+        __ screenRect.height() < 600:
             windowRect.setHeight(screenRect.height())
 
         windowRect.moveCenter(screenRect.center())
@@ -117,10 +117,10 @@ class MainWindow(QGraphicsView):
                 Colors.rootMenuName)
         Colors.debug("- starting demo")
 
-    ___ enableMask(self, enable):
-        if not enable or Colors.noWindowMask:
+    ___ enableMask  enable):
+        __ no. enable or Colors.noWindowMask:
             self.clearMask()
-        else:
+        ____
             region _ QPolygon([
                     # North side.
                     0, 0,
@@ -152,23 +152,23 @@ class MainWindow(QGraphicsView):
         self.setScene(self.scene)
         self.scene.setItemIndexMethod(QGraphicsScene.NoIndex)
 
-    ___ switchTimerOnOff(self, on):
+    ___ switchTimerOnOff  on):
         ticker _ MenuManager.instance().ticker
-        if ticker and ticker.scene
-            ticker.tickOnPaint _ not on or Colors.noTimerUpdate
+        __ ticker and ticker.scene
+            ticker.tickOnPaint _ no. on or Colors.noTimerUpdate
 
-        if on and not Colors.noTimerUpdate:
+        __ on and no. Colors.noTimerUpdate:
             self.useTimer _ True
             self.fpsTime _ QTime.currentTime()
             self.updateTimer.start(int(1000 / Colors.fps))
             update_mode _ QGraphicsView.NoViewportUpdate
-        else:
+        ____
             self.useTimer _ False
             self.updateTimer.stop()
 
-            if Colors.noTicker:
+            __ Colors.noTicker:
                 update_mode _ QGraphicsView.MinimalViewportUpdate
-            else:
+            ____
                 update_mode _ QGraphicsView.SmartViewportUpdate
 
         self.setViewportUpdateMode(update_mode)
@@ -176,7 +176,7 @@ class MainWindow(QGraphicsView):
     ___ measureFps(self):
         # Calculate time difference.
         t _ self.fpsTime.msecsTo(QTime.currentTime())
-        if t == 0:
+        __ t == 0:
             t _ 0.01
 
         self.currentFps _ (1000.0 / t)
@@ -186,54 +186,54 @@ class MainWindow(QGraphicsView):
         # Calculate median.
         size _ len(self.fpsHistory)
 
-        if size == 10:
+        __ size == 10:
             self.fpsHistory.sort()
             self.fpsMedian _ self.fpsHistory[int(size / 2)]
-            if self.fpsMedian == 0:
+            __ self.fpsMedian == 0:
                 self.fpsMedian _ 0.01
 
             self.fpsHistory _ []
 
-            return True
+            r_ True
 
-        return False
+        r_ False
 
     ___ forceFpsMedianCalculation(self):
         # Used for adaption in case things are so slow that no median has yet
         # been calculated.
-        if self.fpsMedian !_ -1:
-            return
+        __ self.fpsMedian !_ -1:
+            r_
 
         size _ len(self.fpsHistory)
 
-        if size == 0:
+        __ size == 0:
             self.fpsMedian _ 0.01
-            return
+            r_
 
         self.fpsHistory.sort()
         self.fpsMedian _ self.fpsHistory[size // 2]
-        if self.fpsMedian == 0:
+        __ self.fpsMedian == 0:
             self.fpsMedian _ 0.01
 
     ___ tick(self):
         medianChanged _ self.measureFps()
         self.checkAdapt()
 
-        if medianChanged and self.fpsLabel and Colors.showFps:
+        __ medianChanged and self.fpsLabel and Colors.showFps:
             self.fpsLabel.sT..("FPS: %d" % int(self.currentFps))
 
-        if MenuManager.instance().ticker:
+        __ MenuManager.instance().ticker:
             MenuManager.instance().ticker.tick()
 
         self.viewport().update()
 
-        if self.useTimer:
+        __ self.useTimer:
             self.updateTimer.start(int(1000 / Colors.fps))
 
     ___ setupSceneItems(self):
-        if Colors.showFps:
+        __ Colors.showFps:
             self.fpsLabel _ DemoTextItem("FPS: --", Colors.buttonFont(),
-                    Qt.white, -1, None, DemoTextItem.DYNAMIC_TEXT)
+                    Qt.white, -1, N.., DemoTextItem.DYNAMIC_TEXT)
             self.fpsLabel.setZValue(1000)
             self.fpsLabel.setPos(Colors.stageStartX,
                     600 - QFontMetricsF(Colors.buttonFont()).height() - 5)
@@ -243,44 +243,44 @@ class MainWindow(QGraphicsView):
 
         self.companyLogo _ ImageItem(
                 QImage(self.imagesDir + '/trolltech-logo.png'),
-                1000, 1000, None, True, 0.5)
+                1000, 1000, N.., True, 0.5)
         self.qtLogo _ ImageItem(QImage(self.imagesDir + '/qtlogo_small.png'),
-                1000, 1000, None, True, 0.5)
+                1000, 1000, N.., True, 0.5)
         self.companyLogo.setZValue(100)
         self.qtLogo.setZValue(100)
         self.pausedLabel _ DemoTextItem("PAUSED", Colors.buttonFont(),
-                Qt.white, -1, None)
+                Qt.white, -1, N..)
         self.pausedLabel.setZValue(100)
         fm _ QFontMetricsF(Colors.buttonFont())
         self.pausedLabel.setPos(Colors.stageWidth - fm.width("PAUSED"),
                 590 - fm.height())
-        self.pausedLabel.setRecursiveVisible(False)
+        self.pausedLabel.setRecursiveVisible F..
 
     ___ checkAdapt(self):
-        if self.doneAdapt or Colors.noTimerUpdate or self.demoStartTime.elapsed() < 2000:
-            return
+        __ self.doneAdapt or Colors.noTimerUpdate or self.demoStartTime.elapsed() < 2000:
+            r_
 
         self.doneAdapt _ True
         self.forceFpsMedianCalculation()
         Colors.benchmarkFps _ self.fpsMedian
         Colors.debug("- benchmark: %d FPS" % int(Colors.benchmarkFps))
 
-        if Colors.noAdapt:
-            return
+        __ Colors.noAdapt:
+            r_
 
-        if self.fpsMedian < 30:
+        __ self.fpsMedian < 30:
             ticker _ MenuManager.instance().ticker
-            if ticker and ticker.scene
+            __ ticker and ticker.scene
                 self.scene.removeItem(ticker)
                 Colors.noTimerUpdate _ True
-                self.switchTimerOnOff(False)
+                self.switchTimerOnOff F..
 
-                if self.fpsLabel:
+                __ self.fpsLabel:
                     self.fpsLabel.sT..("FPS: (%d)" % int(self.fpsMedian))
 
                 Colors.debug("- benchmark adaption: removed ticker (fps < 30)")
 
-            if self.fpsMedian < 20:
+            __ self.fpsMedian < 20:
                 Colors.noAnimations _ True
                 Colors.debug("- benchmark adaption: animations switched off (fps < 20)")
 
@@ -295,23 +295,23 @@ class MainWindow(QGraphicsView):
         bg _ QImage(self.imagesDir + '/demobg.png')
         painter.drawImage(0, 0, bg)
 
-    ___ drawBackground(self, painter, rect):
+    ___ drawBackground  painter, rect):
         painter.drawPixmap(QPoint(0, 0), self.background)
 
     ___ toggleFullscreen(self):
-        if self.isFullScreen
+        __ self.isFullScreen
             self.enableMask(True)
             self.showNormal()
-            if MenuManager.instance().ticker:
-                MenuManager.instance().ticker.pause(False)
-        else:
-            self.enableMask(False)
+            __ MenuManager.instance().ticker:
+                MenuManager.instance().ticker.pause F..
+        ____
+            self.enableMask F..
             self.showFullScreen()
 
-    ___ keyPressEvent(self, event):
-        if event.key() == Qt.Key_Escape:
+    ___ keyPressEvent  event):
+        __ event.key() == Qt.Key_Escape:
             ?A...quit()
-        elif event.key() == Qt.Key_F1:
+        ____ event.key() == Qt.Key_F1:
             s _ ""
             s +_ "\nAdapt: "
             s +_ ["on", "off"][Colors.noAdapt]
@@ -321,9 +321,9 @@ class MainWindow(QGraphicsView):
             s +_ "\nColor bit depth: %d" % w.depth()
             s +_ "\nWanted FPS: %d" % Colors.fps
             s +_ "\nBenchmarked FPS: ";
-            if Colors.benchmarkFps !_ -1:
+            __ Colors.benchmarkFps !_ -1:
                 s +_ "%d" % Colors.benchmarkFps
-            else:
+            ____
                 s +_ "not calculated"
             s +_ "\nAnimations: ";
             s +_ ["on", "off"][Colors.noAnimations]
@@ -341,37 +341,37 @@ class MainWindow(QGraphicsView):
             s +_ ["no", "yes"][Colors.useLoop]
             s +_ "\nScreen sync: ";
             s +_ ["yes", "no"][Colors.noScreenSync]
-            QMessageBox.information(None, "Current configuration", s)
+            ?MB...information(N.., "Current configuration", s)
 
         super(MainWindow, self).keyPressEvent(event)
 
-    ___ focusInEvent(self, event):
-        if not Colors.pause:
-            return
+    ___ focusInEvent  event):
+        __ no. Colors.pause:
+            r_
 
-        if MenuManager.instance().ticker:
-            MenuManager.instance().ticker.pause(False)
+        __ MenuManager.instance().ticker:
+            MenuManager.instance().ticker.pause F..
 
         code _ MenuManager.instance().currentMenuCode
-        if code in (MenuManager.ROOT, MenuManager.MENU1):
+        __ code in (MenuManager.ROOT, MenuManager.MENU1):
             self.switchTimerOnOff(True)
 
-        self.pausedLabel.setRecursiveVisible(False)
+        self.pausedLabel.setRecursiveVisible F..
 
-    ___ focusOutEvent(self, event):
-        if not Colors.pause:
-            return
+    ___ focusOutEvent  event):
+        __ no. Colors.pause:
+            r_
 
-        if MenuManager.instance().ticker:
+        __ MenuManager.instance().ticker:
             MenuManager.instance().ticker.pause(True)
 
         code _ MenuManager.instance().currentMenuCode
-        if code in (MenuManager.ROOT, MenuManager.MENU1):
-            self.switchTimerOnOff(False)
+        __ code in (MenuManager.ROOT, MenuManager.MENU1):
+            self.switchTimerOnOff F..
 
         self.pausedLabel.setRecursiveVisible(True)
 
-    ___ resizeEvent(self, event):
+    ___ resizeEvent  event):
         self.resetTransform()
         self.scale(event.size().width() / 800.0, event.size().height() / 600.0)
 
@@ -379,7 +379,7 @@ class MainWindow(QGraphicsView):
 
         DemoItem.setTransform(self.transform())
 
-        if self.companyLogo:
+        __ self.companyLogo:
             r _ self.scene.sceneRect()
             ttb _ self.companyLogo.boundingRect()
             self.companyLogo.setPos(int((r.width() - ttb.width()) / 2),

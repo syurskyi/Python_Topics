@@ -1,11 +1,11 @@
 ______ sys
-____ ? ______ ?W.. as qtw
-____ ? ______ QtGui as qtg
-____ ? ______ QtCore as qtc
-____ ? ______ QtWebEngineWidgets as qtwe
+____ ? ______ ?W.. __ qtw
+____ ? ______ ?G.. __ qtg
+____ ? ______ QtCore __ qtc
+____ ? ______ QtWebEngineWidgets __ qtwe
 
 
-class MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.QMainWindow):
 
     ___ __init__(self):
         """MainWindow constructor."""
@@ -14,17 +14,17 @@ class MainWindow(qtw.QMainWindow):
         # navigation toolbar
         navigation _ self.addToolBar('Navigation')
         style _ self.style()
-        self.back _ navigation.addAction('Back')
+        self.back _ navigation.aA..('Back')
         self.back.setIcon(style.standardIcon(style.SP_ArrowBack))
-        self.forward _ navigation.addAction('Forward')
+        self.forward _ navigation.aA..('Forward')
         self.forward.setIcon(style.standardIcon(style.SP_ArrowForward))
-        self.reload _ navigation.addAction('Reload')
+        self.reload _ navigation.aA..('Reload')
         self.reload.setIcon(style.standardIcon(style.SP_BrowserReload))
-        self.stop _ navigation.addAction('Stop')
+        self.stop _ navigation.aA..('Stop')
         self.stop.setIcon(style.standardIcon(style.SP_BrowserStop))
         self.urlbar _ qtw.QLineEdit()
         navigation.addWidget(self.urlbar)
-        self.go _ navigation.addAction('Go')
+        self.go _ navigation.aA..('Go')
         self.go.setIcon(style.standardIcon(style.SP_DialogOkButton))
 
         # single browser view
@@ -44,13 +44,13 @@ class MainWindow(qtw.QMainWindow):
         self.tabs.tabCloseRequested.c..(self.tabs.removeTab)
         self.new _ qtw.?PB..('New')
         self.tabs.setCornerWidget(self.new)
-        self.setCentralWidget(self.tabs)
+        self.sCW..(self.tabs)
 
-        self.back.triggered.c..(self.on_back)
-        self.forward.triggered.c..(self.on_forward)
-        self.reload.triggered.c..(self.on_reload)
-        self.stop.triggered.c..(self.on_stop)
-        self.go.triggered.c..(self.on_go)
+        self.back.t__.c..(self.on_back)
+        self.forward.t__.c..(self.on_forward)
+        self.reload.t__.c..(self.on_reload)
+        self.stop.t__.c..(self.on_stop)
+        self.go.t__.c..(self.on_go)
         self.urlbar.returnPressed.c..(self.on_go)
         self.new.c__.c..(self.add_tab)
 
@@ -80,7 +80,7 @@ class MainWindow(qtw.QMainWindow):
         find_dock.setWidget(self.find_text)
         self.find_text.textChanged.c..(self.text_search)
         # init javascript
-        with open('finder.js', 'r') as fh:
+        w__ o..('finder.js', 'r') __ fh:
             self.finder_js _ fh.read()
         # using QWebEngineScript
         self.finder_script _ qtwe.QWebEngineScript()
@@ -96,7 +96,7 @@ class MainWindow(qtw.QMainWindow):
     # Browser Tabs Functions #
     ##########################
 
-    ___ add_tab(self, *args):
+    ___ add_tab  *args):
         webview _ qtwe.QWebEngineView()
         tab_index _ self.tabs.addTab(webview, 'New Tab')
 
@@ -123,7 +123,7 @@ class MainWindow(qtw.QMainWindow):
             '<h1>Blank Tab</h1><p>It is a blank tab!</p>',
             qtc.QUrl('about:blank'))
 
-        return webview
+        r_ webview
 
     ___ on_back(self):
         self.tabs.currentWidget().back()
@@ -145,27 +145,27 @@ class MainWindow(qtw.QMainWindow):
     # History Method #
     ##################
 
-    ___ update_history(self, *args):
+    ___ update_history  *args):
         # show history
         self.history_list.clear()
         webview _ self.tabs.currentWidget()
-        if webview:
+        __ webview:
             history _ webview.history()
             for history_item in reversed(history.items()):
                 list_item _ qtw.QListWidgetItem()
                 list_item.setData(qtc.Qt.DisplayRole, history_item.url())
                 self.history_list.addItem(list_item)
 
-    ___ navigate_history(self, item):
+    ___ navigate_history  item):
         qurl _ item.data(qtc.Qt.DisplayRole)
-        if self.tabs.currentWidget
+        __ self.tabs.currentWidget
             self.tabs.currentWidget().load(qurl)
 
     ###############
     # Text Search #
     ###############
 
-    ___ text_search(self, term):
+    ___ text_search  term):
         """Highlight all occurrences of "term" in the page"""
         term _ term.replace('"', '')
         page _ self.tabs.currentWidget().page()
@@ -173,14 +173,14 @@ class MainWindow(qtw.QMainWindow):
         js _ f'highlight_term("{term}");'
         page.runJavaScript(js, self.match_count)
 
-    ___ match_count(self, count):
-        if count:
+    ___ match_count  count):
+        __ count:
             self.statusBar().showMessage(f'{count} matches ')
-        else:
+        ____
             self.statusBar().clearMessage()
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtw.?A..(sys.argv)
     mw _ MainWindow()
     sys.exit(app.exec())

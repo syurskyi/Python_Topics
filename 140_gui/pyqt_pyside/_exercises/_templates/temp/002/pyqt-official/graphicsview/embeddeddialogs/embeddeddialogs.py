@@ -44,7 +44,7 @@
 
 
 ____ ?.QtCore ______ QEvent, QRectF, Qt, QTimeLine
-____ ?.QtGui ______ (QBrush, QColor, QPainter, QPainterPath, QPixmap,
+____ ?.?G.. ______ (QBrush, QColor, QPainter, QPainterPath, QPixmap,
         QTransform)
 ____ ?.?W.. ______ (?A.., QDialog, QGraphicsItem,
         QGraphicsProxyWidget, QGraphicsScene, QGraphicsView, QStyleFactory,
@@ -54,21 +54,21 @@ ______ embeddeddialogs_rc
 ____ embeddeddialog ______ Ui_embeddedDialog
 
 
-class CustomProxy(QGraphicsProxyWidget):
-    ___ __init__(self, parent_None, wFlags_0):
+c_ CustomProxy(QGraphicsProxyWidget):
+    ___ __init__  parent_None, wFlags_0):
         super(CustomProxy, self).__init__(parent, wFlags)
 
         self.popupShown _ False
-        self.currentPopup _ None
+        self.currentPopup _ N..
 
         self.timeLine _ QTimeLine(250, self)
         self.timeLine.valueChanged.c..(self.updateStep)
         self.timeLine.stateChanged.c..(self.stateChanged)
 
     ___ boundingRect(self):
-        return QGraphicsProxyWidget.boundingRect(self).adjusted(0, 0, 10, 10)
+        r_ QGraphicsProxyWidget.boundingRect(self).adjusted(0, 0, 10, 10)
 
-    ___ paintWindowFrame(self, painter, option, widget):
+    ___ paintWindowFrame  painter, option, widget):
         color _ QColor(0, 0, 0, 64)
 
         r _ self.windowFrameRect()
@@ -76,57 +76,57 @@ class CustomProxy(QGraphicsProxyWidget):
         bottom _ QRectF(r.left()+10, r.bottom(), r.width(), 10)
         intersectsRight _ right.intersects(option.exposedRect)
         intersectsBottom _ bottom.intersects(option.exposedRect)
-        if intersectsRight and intersectsBottom:
+        __ intersectsRight and intersectsBottom:
             path _ QPainterPath()
             path.addRect(right)
             path.addRect(bottom)
             painter.setPen(Qt.NoPen)
             painter.setBrush(color)
             painter.drawPath(path)
-        elif intersectsBottom:
+        ____ intersectsBottom:
             painter.fillRect(bottom, color)
-        elif intersectsRight:
+        ____ intersectsRight:
             painter.fillRect(right, color)
 
         super(CustomProxy, self).paintWindowFrame(painter, option, widget)
 
-    ___ hoverEnterEvent(self, event):
+    ___ hoverEnterEvent  event):
         super(CustomProxy, self).hoverEnterEvent(event)
 
         self.scene().setActiveWindow(self)
-        if self.timeLine.currentValue !_ 1:
+        __ self.timeLine.currentValue !_ 1:
             self.zoomIn()
 
-    ___ hoverLeaveEvent(self, event):
+    ___ hoverLeaveEvent  event):
         super(CustomProxy, self).hoverLeaveEvent(event)
 
-        if not self.popupShown and (self.timeLine.direction() !_ QTimeLine.Backward or self.timeLine.currentValue() !_ 0):
+        __ no. self.popupShown and (self.timeLine.direction() !_ QTimeLine.Backward or self.timeLine.currentValue() !_ 0):
             self.zoomOut()
 
-    ___ sceneEventFilter(self, watched, event):
-        if watched.isWindow() and (event.type() == QEvent.UngrabMouse or event.type() == QEvent.GrabMouse):
+    ___ sceneEventFilter  watched, event):
+        __ watched.isWindow() and (event.type() == QEvent.UngrabMouse or event.type() == QEvent.GrabMouse):
             self.popupShown _ watched.isVisible()
-            if not self.popupShown and not self.isUnderMouse
+            __ no. self.popupShown and no. self.isUnderMouse
                 self.zoomOut()
 
-        return super(CustomProxy, self).sceneEventFilter(watched, event)
+        r_ super(CustomProxy, self).sceneEventFilter(watched, event)
 
-    ___ itemChange(self, change, value):
-        if change == self.ItemChildAddedChange or change == self.ItemChildRemovedChange :
-            if change == self.ItemChildAddedChange:
+    ___ itemChange  change, value):
+        __ change == self.ItemChildAddedChange or change == self.ItemChildRemovedChange :
+            __ change == self.ItemChildAddedChange:
                 self.currentPopup _ value
                 self.currentPopup.setCacheMode(self.ItemCoordinateCache)
-                if self.scene() is not None:
+                __ self.scene() __ no. N..:
                     self.currentPopup.installSceneEventFilter(self)
-            elif self.scene() is not None:
+            ____ self.scene() __ no. N..:
                 self.currentPopup.removeSceneEventFilter(self)
-                self.currentPopup _ None
-        elif self.currentPopup is not None and change == self.ItemSceneHasChanged:
+                self.currentPopup _ N..
+        ____ self.currentPopup __ no. N.. and change == self.ItemSceneHasChanged:
                 self.currentPopup.installSceneEventFilter(self)
 
-        return super(CustomProxy, self).itemChange(change, value)
+        r_ super(CustomProxy, self).itemChange(change, value)
 
-    ___ updateStep(self, step):
+    ___ updateStep  step):
         r _ self.boundingRect()
         self.setTransform(QTransform() \
                             .translate(r.width() / 2, r.height() / 2)\
@@ -136,29 +136,29 @@ class CustomProxy(QGraphicsProxyWidget):
                             .scale(1 + 1.5 * step, 1 + 1.5 * step)\
                             .translate(-r.width() / 2, -r.height() / 2))
 
-    ___ stateChanged(self, state):
-        if state == QTimeLine.Running:
-            if self.timeLine.direction() == QTimeLine.Forward:
+    ___ stateChanged  state):
+        __ state == QTimeLine.Running:
+            __ self.timeLine.direction() == QTimeLine.Forward:
                 self.setCacheMode(self.NoCache)
-        elif state == QTimeLine.NotRunning:
-            if self.timeLine.direction() == QTimeLine.Backward:
+        ____ state == QTimeLine.NotRunning:
+            __ self.timeLine.direction() == QTimeLine.Backward:
                 self.setCacheMode(self.DeviceCoordinateCache)
 
     ___ zoomIn(self):
-        if self.timeLine.direction() !_ QTimeLine.Forward:
+        __ self.timeLine.direction() !_ QTimeLine.Forward:
             self.timeLine.setDirection(QTimeLine.Forward)
-        if self.timeLine.state() == QTimeLine.NotRunning:
+        __ self.timeLine.state() == QTimeLine.NotRunning:
             self.timeLine.start()
 
     ___ zoomOut(self):
-        if self.timeLine.direction() !_ QTimeLine.Backward:
+        __ self.timeLine.direction() !_ QTimeLine.Backward:
             self.timeLine.setDirection(QTimeLine.Backward)
-        if self.timeLine.state() == QTimeLine.NotRunning:
+        __ self.timeLine.state() == QTimeLine.NotRunning:
             self.timeLine.start()
 
 
-class EmbeddedDialog(QDialog):
-    ___ __init__(self, parent_None):
+c_ EmbeddedDialog(QDialog):
+    ___ __init__  parent_None):
         super(EmbeddedDialog, self).__init__(parent)
 
         self.ui _ Ui_embeddedDialog()
@@ -167,7 +167,7 @@ class EmbeddedDialog(QDialog):
 
         for styleName in QStyleFactory.keys
             self.ui.style.addItem(styleName)
-            if self.style().objectName().lower() == styleName.lower
+            __ self.style().objectName().lower() == styleName.lower
                 self.ui.style.setCurrentIndex(self.ui.style.count() -1)
 
         self.ui.layoutDirection.activated.c..(self.layoutDirectionChanged)
@@ -175,36 +175,36 @@ class EmbeddedDialog(QDialog):
         self.ui.fontComboBox.currentFontChanged.c..(self.fontChanged)
         self.ui.style.activated[str].c..(self.styleChanged)
 
-    ___ layoutDirectionChanged(self, index):
-        if index == 0:
+    ___ layoutDirectionChanged  index):
+        __ index == 0:
             self.setLayoutDirection(Qt.LeftToRight)
-        else:
+        ____
             self.setLayoutDirection(Qt.RightToLeft)
 
-    ___ spacingChanged(self, spacing):
+    ___ spacingChanged  spacing):
         self.layout().setSpacing(spacing)
         self.adjustSize()
 
-    ___ fontChanged(self, font):
+    ___ fontChanged  font):
         self.setFont(font)
 
-    ___ setStyleHelper(self, widget, style):
+    ___ setStyleHelper  widget, style):
         widget.setStyle(style)
         widget.setPalette(style.standardPalette())
         for child in widget.children
-            if isinstance(child, QWidget):
+            __ isinstance(child, QWidget):
                 self.setStyleHelper(child, style)
     
-    ___ styleChanged(self, styleName):
+    ___ styleChanged  styleName):
         style _ QStyleFactory.create(styleName)
-        if style:
-            self.setStyleHelper(self, style)
+        __ style:
+            self.setStyleHelper  style)
 
         # Keep a reference to the style.
         self._style _ style
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 
@@ -215,7 +215,7 @@ if __name__ == '__main__':
 
     for y in range(10):
         for x in range(10):
-            proxy _ CustomProxy(None, Qt.Window)
+            proxy _ CustomProxy(N.., Qt.Window)
             proxy.setWidget(EmbeddedDialog())
 
             rect _ proxy.boundingRect()

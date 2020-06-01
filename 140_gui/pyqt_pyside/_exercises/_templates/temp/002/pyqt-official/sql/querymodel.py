@@ -43,53 +43,53 @@
 
 
 ____ ?.QtCore ______ Qt
-____ ?.QtGui ______ QColor
+____ ?.?G.. ______ QColor
 ____ ?.?W.. ______ ?A.., QTableView
 ____ ?.QtSql ______ QSqlQuery, QSqlQueryModel
 
 ______ connection
 
 
-class CustomSqlModel(QSqlQueryModel):
-    ___ data(self, index, role):
+c_ CustomSqlModel(QSqlQueryModel):
+    ___ data  index, role):
         value _ super(CustomSqlModel, self).data(index, role)
-        if value is not None and role == Qt.DisplayRole:
-            if index.column() == 0:
-                return '#%d' % value
-            elif index.column() == 2:
-                return value.upper()
+        __ value __ no. N.. and role == Qt.DisplayRole:
+            __ index.column() == 0:
+                r_ '#%d' % value
+            ____ index.column() == 2:
+                r_ value.upper()
 
-        if role == Qt.TextColorRole and index.column() == 1:
-            return QColor(Qt.blue)
+        __ role == Qt.TextColorRole and index.column() == 1:
+            r_ QColor(Qt.blue)
 
-        return value
+        r_ value
 
 
-class EditableSqlModel(QSqlQueryModel):
-    ___ flags(self, index):
+c_ EditableSqlModel(QSqlQueryModel):
+    ___ flags  index):
         flags _ super(EditableSqlModel, self).flags(index)
 
-        if index.column() in (1, 2):
+        __ index.column() in (1, 2):
             flags |_ Qt.ItemIsEditable
 
-        return flags
+        r_ flags
 
-    ___ setData(self, index, value, role):
-        if index.column() not in (1, 2):
-            return False
+    ___ setData  index, value, role):
+        __ index.column() no. in (1, 2):
+            r_ False
 
         primaryKeyIndex _ self.index(index.row(), 0)
         id _ self.data(primaryKeyIndex)
 
         self.clear()
 
-        if index.column() == 1:
+        __ index.column() == 1:
             ok _ self.setFirstName(id, value)
-        else:
+        ____
             ok _ self.setLastName(id, value)
 
         self.refresh()
-        return ok
+        r_ ok
 
     ___ refresh(self):
         self.setQuery('select * from person')
@@ -97,19 +97,19 @@ class EditableSqlModel(QSqlQueryModel):
         self.setHeaderData(1, Qt.Horizontal, "First name")
         self.setHeaderData(2, Qt.Horizontal, "Last name")
 
-    ___ setFirstName(self, personId, firstName):
+    ___ setFirstName  personId, firstName):
         query _ QSqlQuery()
         query.prepare('update person set firstname = ? where id = ?')
         query.addBindValue(firstName)
         query.addBindValue(personId)
-        return query.e..
+        r_ query.e..
 
-    ___ setLastName(self, personId, lastName):
+    ___ setLastName  personId, lastName):
         query _ QSqlQuery()
         query.prepare('update person set lastname = ? where id = ?')
         query.addBindValue(lastName)
         query.addBindValue(personId)
-        return query.e..
+        r_ query.e..
 
 
 ___ initializeModel(model):
@@ -123,7 +123,7 @@ offset _ 0
 views _ []
 
 ___ createView(title, model):
-    global offset, views
+    gl.. offset, views
 
     view _ QTableView()
     views.append(view)
@@ -134,12 +134,12 @@ ___ createView(title, model):
     view.s..
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 
     app _ ?A..(sys.argv)
-    if not connection.createConnection
+    __ no. connection.createConnection
         sys.exit(1)
 
     plainModel _ QSqlQueryModel()

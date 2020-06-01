@@ -48,17 +48,17 @@ ____ ?.QtCore ______ (pyqtProperty, pyqtSignal, QDataStream, QDateTime,
         QEvent, QEventTransition, QFile, QIODevice, QParallelAnimationGroup,
         QPointF, QPropertyAnimation, qrand, QRectF, QSignalTransition, qsrand,
         QState, QStateMachine, Qt, QTimer)
-____ ?.QtGui ______ QColor, QPen, QPainter, QPainterPath, QPixmap
+____ ?.?G.. ______ QColor, QPen, QPainter, QPainterPath, QPixmap
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsObject,
         QGraphicsScene, QGraphicsTextItem, QGraphicsView)
 
 ______ stickman_rc
 
 
-class Node(QGraphicsObject):
+c_ Node(QGraphicsObject):
     positionChanged _ pyqtSignal()
 
-    ___ __init__(self, pos, parent_None):
+    ___ __init__  pos, parent_None):
         super(Node, self).__init__(parent)
 
         self.m_dragging _ False
@@ -67,26 +67,26 @@ class Node(QGraphicsObject):
         self.setFlag(QGraphicsItem.ItemSendsGeometryChanges)
 
     ___ boundingRect(self):
-        return QRectF(-6.0, -6.0, 12.0, 12.0)
+        r_ QRectF(-6.0, -6.0, 12.0, 12.0)
 
-    ___ paint(self, painter, option, widget):
+    ___ paint  painter, option, widget):
         painter.setPen(Qt.white)
         painter.drawEllipse(QPointF(0.0, 0.0), 5.0, 5.0)
 
-    ___ itemChange(self, change, value):
-        if change == QGraphicsItem.ItemPositionChange:
+    ___ itemChange  change, value):
+        __ change == QGraphicsItem.ItemPositionChange:
             self.positionChanged.emit()
 
-        return super(Node, self).itemChange(change, value)
+        r_ super(Node, self).itemChange(change, value)
 
-    ___ mousePressEvent(self, event):
+    ___ mousePressEvent  event):
         self.m_dragging _ True
 
-    ___ mouseMoveEvent(self, event):
-        if self.m_dragging:
+    ___ mouseMoveEvent  event):
+        __ self.m_dragging:
             self.setPos(self.mapToParent(event.pos()))
 
-    ___ mouseReleaseEvent(self, event):
+    ___ mouseReleaseEvent  event):
         self.m_dragging _ False
 
 
@@ -162,7 +162,7 @@ Bones _ (
     (14, 15))
 
 
-class StickMan(QGraphicsObject):
+c_ StickMan(QGraphicsObject):
     ___ __init__(self):
         super(StickMan, self).__init__()
 
@@ -192,29 +192,29 @@ class StickMan(QGraphicsObject):
     ___ childPositionChanged(self):
         self.prepareGeometryChange()
 
-    ___ setDrawSticks(self, on):
+    ___ setDrawSticks  on):
         self.m_sticks _ on
 
         for node in self.m_nodes:
             node.setVisible(on)
 
     ___ drawSticks(self):
-        return self.m_sticks
+        r_ self.m_sticks
 
     ___ boundingRect(self):
         # Account for head radius of 50.0 plus pen which is 5.0.
-        return self.childrenBoundingRect().adjusted(-55.0, -55.0, 55.0, 55.0)
+        r_ self.childrenBoundingRect().adjusted(-55.0, -55.0, 55.0, 55.0)
 
     ___ nodeCount(self):
-        return len(self.m_nodes)
+        r_ len(self.m_nodes)
 
-    ___ node(self, idx):
-        if idx >_ 0 and idx < len(self.m_nodes):
-            return self.m_nodes[idx]
+    ___ node  idx):
+        __ idx >_ 0 and idx < len(self.m_nodes):
+            r_ self.m_nodes[idx]
 
-        return None
+        r_ N..
 
-    ___ timerEvent(self, e):
+    ___ timerEvent  e):
         self.update()
 
     ___ stabilize(self):
@@ -232,44 +232,44 @@ class StickMan(QGraphicsObject):
             diff _ (length - self.m_perfectBoneLengths[i]) / length
 
             p _ dist * (0.5 * diff)
-            if p.x() > threshold and p.y() > threshold:
+            __ p.x() > threshold and p.y() > threshold:
                 pos1 -_ p
                 pos2 +_ p
 
                 node1.setPos(pos1)
                 node2.setPos(pos2)
 
-    ___ posFor(self, idx):
-        return self.m_nodes[idx].pos()
+    ___ posFor  idx):
+        r_ self.m_nodes[idx].pos()
 
     @pyqtProperty(QColor)
     ___ penColor(self):
-        return QColor(self.m_penColor)
+        r_ QColor(self.m_penColor)
 
     @penColor.setter
-    ___ penColor(self, color):
+    ___ penColor  color):
         self.m_penColor _ QColor(color)
 
     @pyqtProperty(QColor)
     ___ fillColor(self):
-        return QColor(self.m_fillColor)
+        r_ QColor(self.m_fillColor)
 
     @fillColor.setter
-    ___ fillColor(self, color):
+    ___ fillColor  color):
         self.m_fillColor _ QColor(color)
 
     @pyqtProperty(bool)
     ___ isDead(self):
-        return self.m_isDead
+        r_ self.m_isDead
 
     @isDead.setter
-    ___ isDead(self, isDead):
+    ___ isDead  isDead):
         self.m_isDead _ isDead
 
-    ___ paint(self, painter, option, widget):
+    ___ paint  painter, option, widget):
         self.stabilize()
 
-        if self.m_sticks:
+        __ self.m_sticks:
             painter.setPen(Qt.white)
 
             for n1, n2 in Bones:
@@ -277,7 +277,7 @@ class StickMan(QGraphicsObject):
                 node2 _ self.m_nodes[n2]
 
                 painter.drawLine(node1.pos(), node2.pos())
-        else:
+        ____
             # First bone is neck and will be used for head.
 
             path _ QPainterPath()
@@ -336,69 +336,69 @@ class StickMan(QGraphicsObject):
             painter.setPen(QPen(self.m_penColor, 2.5, Qt.SolidLine, Qt.RoundCap))
 
             # Eyes.
-            if self.m_isDead:
+            __ self.m_isDead:
                 painter.drawLine(-30.0, -30.0, -20.0, -20.0)
                 painter.drawLine(-20.0, -30.0, -30.0, -20.0)
 
                 painter.drawLine(20.0, -30.0, 30.0, -20.0)
                 painter.drawLine(30.0, -30.0, 20.0, -20.0)
-            else:
+            ____
                 painter.drawChord(QRectF(-30.0, -30.0, 25.0, 70.0), 30.0 * 16, 120.0 * 16)
                 painter.drawChord(QRectF(5.0, -30.0, 25.0, 70.0), 30.0 * 16, 120.0 * 16)
 
             # Mouth.
-            if self.m_isDead:
+            __ self.m_isDead:
                 painter.drawLine(-28.0, 2.0, 29.0, 2.0)
-            else:
+            ____
                 painter.setBrush(QColor(128, 0, 64 ))
                 painter.drawChord(QRectF(-28.0, 2.0 - 55.0 / 2.0, 57.0, 55.0), 0.0, -180.0 * 16)
 
             # Pupils.
-            if not self.m_isDead:
+            __ no. self.m_isDead:
                 painter.setPen(QPen(self.m_fillColor, 1.0, Qt.SolidLine, Qt.RoundCap))
                 painter.setBrush(self.m_fillColor)
                 painter.drawEllipse(QPointF(-12.0, -25.0), 5.0, 5.0)
                 painter.drawEllipse(QPointF(22.0, -25.0), 5.0, 5.0)
 
 
-class GraphicsView(QGraphicsView):
+c_ GraphicsView(QGraphicsView):
     keyPressed _ pyqtSignal(int)
 
-    ___ keyPressEvent(self, e):
-        if e.key() == Qt.Key_Escape:
+    ___ keyPressEvent  e):
+        __ e.key() == Qt.Key_Escape:
             self.close()
 
         self.keyPressed.emit(Qt.Key(e.key()))
 
 
-class Frame(object):
+c_ Frame(object):
     ___ __init__(self):
         self.m_nodePositions _ []
 
     ___ nodeCount(self):
-        return len(self.m_nodePositions)
+        r_ len(self.m_nodePositions)
 
-    ___ setNodeCount(self, nodeCount):
+    ___ setNodeCount  nodeCount):
         while nodeCount > len(self.m_nodePositions):
             self.m_nodePositions.append(QPointF())
 
         while nodeCount < len(self.m_nodePositions):
             self.m_nodePositions.pop()
 
-    ___ nodePos(self, idx):
-        return QPointF(self.m_nodePositions[idx])
+    ___ nodePos  idx):
+        r_ QPointF(self.m_nodePositions[idx])
 
-    ___ setNodePos(self, idx, pos):
+    ___ setNodePos  idx, pos):
         self.m_nodePositions[idx] _ QPointF(pos)
 
 
-class Animation(object):
+c_ Animation(object):
     ___ __init__(self):
         self.m_currentFrame _ 0
         self.m_frames _ [Frame()]
         self.m_name _ ''
 
-    ___ setTotalFrames(self, totalFrames):
+    ___ setTotalFrames  totalFrames):
         while len(self.m_frames) < totalFrames:
             self.m_frames.append(Frame())
 
@@ -406,37 +406,37 @@ class Animation(object):
             self.m_frames.pop()
 
     ___ totalFrames(self):
-        return len(self.m_frames)
+        r_ len(self.m_frames)
 
-    ___ setCurrentFrame(self, currentFrame):
+    ___ setCurrentFrame  currentFrame):
         self.m_currentFrame _ max(min(currentFrame, self.totalFrames() - 1), 0)
 
     ___ currentFrame(self):
-        return self.m_currentFrame
+        r_ self.m_currentFrame
 
-    ___ setNodeCount(self, nodeCount):
+    ___ setNodeCount  nodeCount):
         frame _ self.m_frames[self.m_currentFrame]
         frame.setNodeCount(nodeCount)
 
     ___ nodeCount(self):
         frame _ self.m_frames[self.m_currentFrame]
-        return frame.nodeCount()
+        r_ frame.nodeCount()
 
-    ___ setNodePos(self, idx, pos):
+    ___ setNodePos  idx, pos):
         frame _ self.m_frames[self.m_currentFrame]
         frame.setNodePos(idx, pos)
 
-    ___ nodePos(self, idx):
+    ___ nodePos  idx):
         frame _ self.m_frames[self.m_currentFrame]
-        return frame.nodePos(idx)
+        r_ frame.nodePos(idx)
 
     ___ name(self):
-        return self.m_name
+        r_ self.m_name
 
-    ___ setName(self, name):
+    ___ setName  name):
         self.m_name _ name
 
-    ___ save(self, device):
+    ___ save  device):
         stream _ QDataStream(device)
         stream.writeQString(self.m_name)
         stream.writeInt(len(self.m_frames))
@@ -447,7 +447,7 @@ class Animation(object):
             for i in range(frame.nodeCount()):
                 stream << frame.nodePos(i)
 
-    ___ load(self, device):
+    ___ load  device):
         self.m_frames _ []
 
         stream _ QDataStream(device)
@@ -469,25 +469,25 @@ class Animation(object):
             self.m_frames.append(frame)
 
 
-class KeyPressTransition(QSignalTransition):
-    ___ __init__(self, receiver, key, target_None):
+c_ KeyPressTransition(QSignalTransition):
+    ___ __init__  receiver, key, target_None):
         super(KeyPressTransition, self).__init__(receiver.keyPressed)
 
         self.m_key _ key
 
-        if target is not None:
+        __ target __ no. N..:
             self.setTargetState(target)
 
-    ___ eventTest(self, e):
-        if super(KeyPressTransition, self).eventTest(e):
+    ___ eventTest  e):
+        __ super(KeyPressTransition, self).eventTest(e):
             key _ e.arguments()[0]
-            return key == self.m_key
+            r_ key == self.m_key
 
-        return False
+        r_ False
 
 
-class LightningStrikesTransition(QEventTransition):
-    ___ __init__(self, target):
+c_ LightningStrikesTransition(QEventTransition):
+    ___ __init__  target):
         super(LightningStrikesTransition, self).__init__()
 
         self.setEventSource(self)
@@ -496,13 +496,13 @@ class LightningStrikesTransition(QEventTransition):
         qsrand(QDateTime.currentDateTime().toTime_t())
         self.startTimer(1000)
 
-    ___ eventTest(self, e):
-        return (super(LightningStrikesTransition, self).eventTest(e) and
+    ___ eventTest  e):
+        r_ (super(LightningStrikesTransition, self).eventTest(e) and
                 (qrand() % 50) == 0)
 
 
-class LifeCycle(object):
-    ___ __init__(self, stickMan, keyReceiver):
+c_ LifeCycle(object):
+    ___ __init__  stickMan, keyReceiver):
         self.m_stickMan _ stickMan
         self.m_keyReceiver _ keyReceiver
 
@@ -555,28 +555,28 @@ class LifeCycle(object):
 
         self.m_machine.setInitialState(self.m_alive)
 
-    ___ setDeathAnimation(self, fileName):
+    ___ setDeathAnimation  fileName):
         deathAnimation _ self.makeState(self.m_dead, fileName)
         self.m_dead.setInitialState(deathAnimation)
 
     ___ start(self):
         self.m_machine.start()
 
-    ___ addActivity(self, fileName, key):
+    ___ addActivity  fileName, key):
         state _ self.makeState(self.m_alive, fileName)
         self.m_alive.addTransition(KeyPressTransition(self.m_keyReceiver, key, state))
 
-    ___ makeState(self, parentState, animationFileName):
+    ___ makeState  parentState, animationFileName):
         topLevel _ QState(parentState)
 
         animation _ Animation()
 
         file _ QFile(animationFileName)
-        if file.open(QIODevice.ReadOnly):
+        __ file.o..(QIODevice.ReadOnly):
             animation.load(file)
 
         frameCount _ animation.totalFrames()
-        previousState _ None
+        previousState _ N..
         for i in range(frameCount):
             animation.setCurrentFrame(i)
 
@@ -588,9 +588,9 @@ class LifeCycle(object):
 
             frameState.setObjectName('frame %d' % i)
 
-            if previousState is None:
+            __ previousState __ N..:
                 topLevel.setInitialState(frameState)
-            else:
+            ____
                 previousState.addTransition(previousState.propertiesAssigned,
                         frameState)
 
@@ -599,17 +599,17 @@ class LifeCycle(object):
         previousState.addTransition(previousState.propertiesAssigned,
                 topLevel.initialState())
 
-        return topLevel
+        r_ topLevel
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 
     app _ ?A..(sys.argv)
 
     stickMan _ StickMan()
-    stickMan.setDrawSticks(False)
+    stickMan.setDrawSticks F..
 
     textItem _ QGraphicsTextItem()
     textItem.setHtml("<font color=\"white\"><b>Stickman</b>"

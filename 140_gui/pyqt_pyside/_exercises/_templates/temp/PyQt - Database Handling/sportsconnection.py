@@ -1,19 +1,19 @@
-____ ? ______ QtSql, QtGui, ?W..
+____ ? ______ QtSql, ?G.., ?W..
 
 
 ___ createDB
     db _ QtSql.QSqlDatabase.addDatabase('QSQLITE')
     db.setDatabaseName('sports.db')
 
-    if not db.open
-        QtGui.QMessageBox.critical(None, QtGui.qApp.tr("Cannot open database"),
-                                   QtGui.qApp.tr("Unable to establish a database connection.\n"
+    __ no. db.o..
+        ?G...?MB...critical(N.., ?G...qApp.tr("Cannot open database"),
+                                   ?G...qApp.tr("Unable to establish a database connection.\n"
                                                  "This example needs SQLite support. Please read "
                                                  "the Qt SQL driver documentation for information "
                                                  "how to build it.\n\n" "Click Cancel to exit."),
-                                   QtGui.QMessageBox.Cancel)
+                                   ?G...?MB...Cancel)
 
-        return False
+        r_ False
 
     query _ QtSql.QSqlQuery()
 
@@ -25,10 +25,10 @@ ___ createDB
     query.exec_("insert into sportsmen values(103, 'Ussain', 'Bolt')")
     query.exec_("insert into sportsmen values(104, 'Sachin', 'Tendulkar')")
     query.exec_("insert into sportsmen values(105, 'Saina', 'Nehwal')")
-    return True
+    r_ True
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     ______ sys
 
     app _ ?W...?A..(sys.argv)

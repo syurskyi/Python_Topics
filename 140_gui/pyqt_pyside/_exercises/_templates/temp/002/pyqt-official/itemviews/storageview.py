@@ -59,8 +59,8 @@ ____ ?.?W.. ______ QAbstractItemView, ?A.., QTreeView
 
 
 ___ sizeToString(size):
-    if size <_ 0:
-        return "0 b"
+    __ size <_ 0:
+        r_ "0 b"
     decimals _ 2
     units _ ["b", "kB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"]
     power _ int(math.log(size, 1024))
@@ -69,14 +69,14 @@ ___ sizeToString(size):
     except IndexError:
         unit _ units[-1]
         power _ len(units) - 1
-    if power == 0:
+    __ power == 0:
         decimals _ 0
     normsize _ size / math.pow(1024, power)
     #: this should expand to "1.23 GB"
-    return "%0.*f %s" % (decimals, normsize, unit)
+    r_ "%0.*f %s" % (decimals, normsize, unit)
 
 
-class StorageModel(QAbstractTableModel):
+c_ StorageModel(QAbstractTableModel):
     ColumnRootPath, ColumnName, ColumnDevice, ColumnFileSystemName, \
     ColumnTotal, ColumnFree, ColumnAvailable, ColumnIsReady, \
     ColumnIsReadOnly, ColumnIsValid, ColumnCount _ range(11)
@@ -107,44 +107,44 @@ class StorageModel(QAbstractTableModel):
         ColumnIsValid: "Valid",
     }
 
-    ___ __init__(self, parent _ None):
+    ___ __init__  parent _ N..):
         super(StorageModel, self).__init__(parent)
         self.volumes _ QStorageInfo.mountedVolumes()
 
-    ___ columnCount(self, parent _ None):
-        return self.ColumnCount
+    ___ columnCount  parent _ N..):
+        r_ self.ColumnCount
 
-    ___ rowCount(self, parent):
-        if parent.isValid
-            return 0
-        return len(self.volumes)
+    ___ rowCount  parent):
+        __ parent.isValid
+            r_ 0
+        r_ len(self.volumes)
 
-    ___ data(self, index, role):
-        if not index.isValid
-            return None
-        if role == Qt.DisplayRole:
+    ___ data  index, role):
+        __ no. index.isValid
+            r_ N..
+        __ role == Qt.DisplayRole:
             volume _ self.volumes[index.row()]
             func _ self.columnFuncMap.get(index.column())
-            if func is not None:
-                return func(volume)
+            __ func __ no. N..:
+                r_ func(volume)
 
-        elif role == Qt.ToolTipRole:
+        ____ role == Qt.ToolTipRole:
             volume _ self.volumes[index.row()]
             tooltip _ []
             for column in range(self.ColumnCount):
                 label _ self.columnNameMap.get(column)
                 value _ self.columnFuncMap[column](volume)
-                if isinstance(value, QByteArray):
+                __ isinstance(value, QByteArray):
                     value _ str(bytes(value).decode('utf-8'))
                 tooltip.append("{0}: {1}".format(label, value))
-            return "\n".join(tooltip)
+            r_ "\n".join(tooltip)
 
-    ___ headerData(self, section, orientation, role):
-        if orientation !_ Qt.Horizontal:
-            return None
-        if role !_ Qt.DisplayRole:
-            return None
-        return self.columnNameMap.get(section)
+    ___ headerData  section, orientation, role):
+        __ orientation !_ Qt.Horizontal:
+            r_ N..
+        __ role !_ Qt.DisplayRole:
+            r_ N..
+        r_ self.columnNameMap.get(section)
 
 
 ___ main(args):
@@ -156,9 +156,9 @@ ___ main(args):
     for column in range(view.model().columnCount()):
         view.resizeColumnToContents(column)
     view.s..
-    return app.e..
+    r_ app.e..
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     ______ sys
     main(sys.argv)

@@ -58,9 +58,9 @@ ____ ?.QtCore ______ (pyqtProperty, pyqtSignal, pyqtSlot, QCoreApplication,
 ____ ?.QtRemoteObjects ______ QRemoteObjectHost
 
 
-class SimpleSwitch(QObject):
+c_ SimpleSwitch(QObject):
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super().__init__(parent)
 
         self._currState _ False
@@ -81,15 +81,15 @@ class SimpleSwitch(QObject):
     # It is not necessary when using with clients that use dynamic source types
     # (written using either C++ or Python).
     @pyqtSlot()
-    ___ pushCurrState(self, currState):
+    ___ pushCurrState  currState):
         pass
 
     ___ _get_currState(self):
-        return self._currState
+        r_ self._currState
 
-    ___ _set_currState(self, value):
+    ___ _set_currState  value):
         # If the value has changed then update it and emit the notify signal.
-        if self._currState !_ value:
+        __ self._currState !_ value:
             self._currState _ value
             self.currStateChanged.emit(value)
 
@@ -102,19 +102,19 @@ class SimpleSwitch(QObject):
 
     # The slot exposed to a remote client.
     @pyqtSlot(bool)
-    ___ server_slot(self, clientState):
+    ___ server_slot  clientState):
         # The switch state echoed back by the client.
         print("Replica state is", clientState)
 
     ___ _timeout(self):
         # Note that we don't decorate this callable so that it doesn't get
         # exposed in a replica.
-        self.currState _ not self.currState
+        self.currState _ no. self.currState
 
         print("Source state is", self.currState)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     app _ QCoreApplication(sys.argv)
 

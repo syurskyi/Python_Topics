@@ -47,15 +47,15 @@ ______ random
 ____ ?.QtCore ______ (pyqtSignal, QByteArray, QDataStream, QIODevice,
         QThread)
 ____ ?.?W.. ______ (?A.., QDialog, QHBoxLayout, QLabel,
-        QMessageBox, ?PB.., QVBoxLayout)
+        ?MB.., ?PB.., QVBoxLayout)
 ____ ?.QtNetwork ______ (QHostAddress, QNetworkInterface, QTcpServer,
         QTcpSocket)
 
 
-class FortuneThread(QThread):
+c_ FortuneThread(QThread):
     error _ pyqtSignal(QTcpSocket.SocketError)
 
-    ___ __init__(self, socketDescriptor, fortune, parent):
+    ___ __init__  socketDescriptor, fortune, parent):
         super(FortuneThread, self).__init__(parent)
 
         self.socketDescriptor _ socketDescriptor
@@ -63,9 +63,9 @@ class FortuneThread(QThread):
 
     ___ run(self):
         tcpSocket _ QTcpSocket()
-        if not tcpSocket.setSocketDescriptor(self.socketDescriptor):
+        __ no. tcpSocket.setSocketDescriptor(self.socketDescriptor):
             self.error.emit(tcpSocket.error())
-            return
+            r_
 
         block _ QByteArray()
         outstr _ QDataStream(block, QIODevice.WriteOnly)
@@ -75,12 +75,12 @@ class FortuneThread(QThread):
         outstr.device().seek(0)
         outstr.writeUInt16(block.size() - 2)
 
-        tcpSocket.write(block)
+        tcpSocket.w..(block)
         tcpSocket.disconnectFromHost()
         tcpSocket.waitForDisconnected()
 
 
-class FortuneServer(QTcpServer):
+c_ FortuneServer(QTcpServer):
     FORTUNES _ (
         "You've been leading a dog's life. Stay off the furniture.",
         "You've got to think about tomorrow.",
@@ -90,7 +90,7 @@ class FortuneServer(QTcpServer):
         "You cannot kill time without injuring eternity.",
         "Computers are not intelligent. They only think they are.")
 
-    ___ incomingConnection(self, socketDescriptor):
+    ___ incomingConnection  socketDescriptor):
         fortune _ self.FORTUNES[random.randint(0, len(self.FORTUNES) - 1)]
 
         thread _ FortuneThread(socketDescriptor, fortune, self)
@@ -98,8 +98,8 @@ class FortuneServer(QTcpServer):
         thread.start()
 
 
-class Dialog(QDialog):
-    ___ __init__(self, parent_None):
+c_ Dialog(QDialog):
+    ___ __init__  parent_None):
         super(Dialog, self).__init__(parent)
 
         self.server _ FortuneServer()
@@ -107,18 +107,18 @@ class Dialog(QDialog):
         statusLabel _ QLabel()
         statusLabel.setWordWrap(True)
         quitButton _ ?PB..("Quit")
-        quitButton.setAutoDefault(False)
+        quitButton.setAutoDefault F..
 
-        if not self.server.listen
-            QMessageBox.critical(self, "Threaded Fortune Server",
+        __ no. self.server.listen
+            ?MB...critical  "Threaded Fortune Server",
                     "Unable to start the server: %s." % self.server.errorString())
             self.close()
-            return
+            r_
 
         for ipAddress in QNetworkInterface.allAddresses
-            if ipAddress !_ QHostAddress.LocalHost and ipAddress.toIPv4Address() !_ 0:
+            __ ipAddress !_ QHostAddress.LocalHost and ipAddress.toIPv4Address() !_ 0:
                 break
-        else:
+        ____
             ipAddress _ QHostAddress(QHostAddress.LocalHost)
 
         ipAddress _ ipAddress.toString()
@@ -141,7 +141,7 @@ class Dialog(QDialog):
         self.setWindowTitle("Threaded Fortune Server")
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

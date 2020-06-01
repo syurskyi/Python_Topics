@@ -4,11 +4,11 @@ ____ ?.QtCore ______ *
 ____ ?.?W.. ______ *
 ______ re
 
-class DataGrid(QWidget):
-    ___ __init__(self, parent_None):
+c_ DataGrid(QWidget):
+    ___ __init__  parent_None):
         super(DataGrid, self).__init__(parent)
         # Declare Database Connections
-        self.db _ None
+        self.db _ N..
         # Layout Manager
         self.layout _ QVBoxLayout()
         # Query Model
@@ -26,9 +26,9 @@ class DataGrid(QWidget):
         # Current Page
         self.currentPage _ 1
         # PageCount
-        self.totalPage _ None
+        self.totalPage _ N..
         # Total Records
-        self.totalRecordCount _ None
+        self.totalRecordCount _ N..
         # Number of records per page
         self.pageRecordCount _ 4
 
@@ -70,8 +70,8 @@ class DataGrid(QWidget):
     ___ initializedModel(self):
         self.db _ QSqlDatabase.addDatabase("QSQLITE")
         self.db.setDatabaseName("/home/user/test.db")
-        if not self.db.open
-            return False
+        __ no. self.db.o..
+            r_ False
         self.queryModel.setHeaderData(0, Qt.Horizontal, "ID")
         self.queryModel.setHeaderData(1, Qt.Horizontal, "Name")
         self.queryModel.setHeaderData(2, Qt.Horizontal, "Sex")
@@ -80,9 +80,9 @@ class DataGrid(QWidget):
         sql _ "SELECT * FROM student"
         self.queryModel.setQuery(sql, self.db)
         self.totalRecordCount _ self.queryModel.rowCount()
-        if self.totalRecordCount % self.pageRecordCount == 0:
+        __ self.totalRecordCount % self.pageRecordCount == 0:
             self.totalPage _ self.totalRecordCount / self.pageRecordCount
-        else:
+        ____
             self.totalPage _ int(self.totalRecordCount / self.pageRecordCount) + 1
         # Show Page 1
         sql _ "SELECT * FROM student limit %d,%d" % (0, self.pageRecordCount)
@@ -104,16 +104,16 @@ class DataGrid(QWidget):
         szText _ self.switchPageLineEdit.text()
         pattern _ re.compile('^[0-9]+$')
         match _ pattern.match(szText)
-        if not match:
-            QMessageBox.information(self, "Tips", "please enter a number.")
-            return
-        if szText == "":
-            QMessageBox.information(self, "Tips", "Please enter a jump page.")
-            return
+        __ no. match:
+            ?MB...information  "Tips", "please enter a number.")
+            r_
+        __ szText == "":
+            ?MB...information  "Tips", "Please enter a jump page.")
+            r_
         pageIndex _ int(szText)
-        if pageIndex > self.totalPage or pageIndex < 1:
-            QMessageBox.information(self, "Tips", "No page specified, re-enter.")
-            return
+        __ pageIndex > self.totalPage or pageIndex < 1:
+            ?MB...information  "Tips", "No page specified, re-enter.")
+            r_
 
         limitIndex _ (pageIndex - 1) * self.pageRecordCount
         self.queryRecord(limitIndex)
@@ -121,7 +121,7 @@ class DataGrid(QWidget):
         self.updateStatus()
 
     # Query records based on paging
-    ___ queryRecord(self, limitIndex):
+    ___ queryRecord  limitIndex):
         sql _ "SELECT * FROM student limit %d,%d" % (limitIndex, self.pageRecordCount)
         self.queryModel.setQuery(sql)
 
@@ -129,21 +129,21 @@ class DataGrid(QWidget):
     ___ updateStatus(self):
         self.currentPageLabel.sT..(str(self.currentPage))
         self.totalPageLabel.sT..(str(self.totalPage))
-        if self.currentPage <_ 1:
-            self.prevButton.setEnabled(False)
-        else:
+        __ self.currentPage <_ 1:
+            self.prevButton.setEnabled F..
+        ____
             self.prevButton.setEnabled(True)
 
-        if self.currentPage >_ self.totalPage:
-            self.nextButton.setEnabled(False)
-        else:
+        __ self.currentPage >_ self.totalPage:
+            self.nextButton.setEnabled F..
+        ____
             self.nextButton.setEnabled(True)
 
     # Close database connection when interface is closed
-    ___ closeEvent(self, event):
+    ___ closeEvent  event):
         self.db.close()
 
-if __name__ == "__main__":
+__ __name__ == "__main__":
     app _ ?A..(sys.argv)
     window _ DataGrid()
     window.s..

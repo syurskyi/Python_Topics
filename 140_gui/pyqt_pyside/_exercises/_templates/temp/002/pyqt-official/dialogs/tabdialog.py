@@ -48,8 +48,8 @@ ____ ?.?W.. ______ (?A.., QCheckBox, QDialog,
         QTabWidget, QVBoxLayout, QWidget)
 
 
-class TabDialog(QDialog):
-    ___ __init__(self, fileName, parent_None):
+c_ TabDialog(QDialog):
+    ___ __init__  fileName, parent_None):
         super(TabDialog, self).__init__(parent)
 
         fileInfo _ QFileInfo(fileName)
@@ -72,8 +72,8 @@ class TabDialog(QDialog):
         self.setWindowTitle("Tab Dialog")
 
 
-class GeneralTab(QWidget):
-    ___ __init__(self, fileInfo, parent_None):
+c_ GeneralTab(QWidget):
+    ___ __init__  fileInfo, parent_None):
         super(GeneralTab, self).__init__(parent)
 
         fileNameLabel _ QLabel("File Name:")
@@ -111,22 +111,22 @@ class GeneralTab(QWidget):
         self.setLayout(mainLayout)
 
 
-class PermissionsTab(QWidget):
-    ___ __init__(self, fileInfo, parent_None):
+c_ PermissionsTab(QWidget):
+    ___ __init__  fileInfo, parent_None):
         super(PermissionsTab, self).__init__(parent)
 
         permissionsGroup _ QGroupBox("Permissions")
 
         readable _ QCheckBox("Readable")
-        if fileInfo.isReadable
+        __ fileInfo.isReadable
             readable.setChecked(True)
 
         writable _ QCheckBox("Writable")
-        if fileInfo.isWritable
+        __ fileInfo.isWritable
             writable.setChecked(True)
 
         executable _ QCheckBox("Executable")
-        if fileInfo.isExecutable
+        __ fileInfo.isExecutable
             executable.setChecked(True)
 
         ownerGroup _ QGroupBox("Ownership")
@@ -159,8 +159,8 @@ class PermissionsTab(QWidget):
         self.setLayout(mainLayout)
 
 
-class ApplicationsTab(QWidget):
-    ___ __init__(self, fileInfo, parent_None):
+c_ ApplicationsTab(QWidget):
+    ___ __init__  fileInfo, parent_None):
         super(ApplicationsTab, self).__init__(parent)
 
         topLabel _ QLabel("Open with:")
@@ -175,10 +175,10 @@ class ApplicationsTab(QWidget):
 
         alwaysCheckBox _ QCheckBox()
 
-        if fileInfo.suffix
+        __ fileInfo.suffix
             alwaysCheckBox _ QCheckBox("Always use this application to open "
                     "files with the extension '%s'" % fileInfo.suffix())
-        else:
+        ____
             alwaysCheckBox _ QCheckBox("Always use this application to open "
                     "this type of file")
 
@@ -189,15 +189,15 @@ class ApplicationsTab(QWidget):
         self.setLayout(layout)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 
     app _ ?A..(sys.argv)
 
-    if len(sys.argv) >_ 2:
+    __ len(sys.argv) >_ 2:
         fileName _ sys.argv[1]
-    else:
+    ____
         fileName _ "."
 
     tabdialog _ TabDialog(fileName)

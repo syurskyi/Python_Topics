@@ -1,14 +1,14 @@
 ______ sys
-____ ? ______ ?W.. as qtw
-____ ? ______ QtGui as qtg
-____ ? ______ QtCore as qtc
-____ ? ______ QtChart as qtch
+____ ? ______ ?W.. __ qtw
+____ ? ______ ?G.. __ qtg
+____ ? ______ QtCore __ qtc
+____ ? ______ QtChart __ qtch
 
 ____ collections ______ deque
 ______ psutil
 
 
-class DiskUsageChartView(qtch.QChartView):
+c_ DiskUsageChartView(qtch.QChartView):
 
     chart_title _ 'Disk Usage by Partition'
 
@@ -29,7 +29,7 @@ class DiskUsageChartView(qtch.QChartView):
         # Get the data
         partitions _ []
         for part in psutil.disk_partitions
-            if 'rw' in part.opts.split(','):
+            __ 'rw' in part.opts.split(','):
                 partitions.append(part.device)
                 usage _ psutil.disk_usage(part.mountpoint).percent
                 bar_set.append(usage)
@@ -48,7 +48,7 @@ class DiskUsageChartView(qtch.QChartView):
         series.setLabelsVisible(True)
 
 
-class CPUUsageView(qtch.QChartView):
+c_ CPUUsageView(qtch.QChartView):
 
     num_data_points _ 500
     chart_title _ "CPU Utilization"
@@ -75,7 +75,7 @@ class CPUUsageView(qtch.QChartView):
         # CPU Axes
         x_axis _ qtch.QValueAxis()
         x_axis.setRange(0, self.num_data_points)
-        x_axis.setLabelsVisible(False)
+        x_axis.setLabelsVisible F..
         y_axis _ qtch.QValueAxis()
         y_axis.setRange(0, 100)
         chart.setAxisX(x_axis, self.series)
@@ -97,7 +97,7 @@ class CPUUsageView(qtch.QChartView):
             for x, y in enumerate(self.data)]
         self.series.replace(new_data)
 
-    ___ keyPressEvent(self, event):
+    ___ keyPressEvent  event):
         keymap _ {
             qtc.Qt.Key_Up: lambda: self.chart().scroll(0, -10),
             qtc.Qt.Key_Down: lambda: self.chart().scroll(0, 10),
@@ -107,11 +107,11 @@ class CPUUsageView(qtch.QChartView):
             qtc.Qt.Key_Less: self.chart().zoomOut,
         }
         callback _ keymap.get(event.key())
-        if callback:
+        __ callback:
             callback()
 
 
-class MemoryChartView(qtch.QChartView):
+c_ MemoryChartView(qtch.QChartView):
 
     chart_title _ "Memory Usage"
     num_data_points _ 50
@@ -146,7 +146,7 @@ class MemoryChartView(qtch.QChartView):
         # Setup Axes
         x_axis _ qtch.QValueAxis()
         x_axis.setRange(0, self.num_data_points)
-        x_axis.setLabelsVisible(False)
+        x_axis.setLabelsVisible F..
         y_axis _ qtch.QValueAxis()
         y_axis.setRange(0, 100)
         chart.setAxisX(x_axis, series)
@@ -234,7 +234,7 @@ class MemoryChartView(qtch.QChartView):
             self.swap_set.replace(x, swap)
 
 
-class MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.QMainWindow):
 
     ___ __init__(self):
         """MainWindow constructor.
@@ -245,7 +245,7 @@ class MainWindow(qtw.QMainWindow):
         super().__init__()
         # Main UI code goes here
         tabs _ qtw.QTabWidget()
-        self.setCentralWidget(tabs)
+        self.sCW..(tabs)
 
         #########################################
         # Partition Usage as a static bar chart #
@@ -272,7 +272,7 @@ class MainWindow(qtw.QMainWindow):
 
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtw.?A..(sys.argv)
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.

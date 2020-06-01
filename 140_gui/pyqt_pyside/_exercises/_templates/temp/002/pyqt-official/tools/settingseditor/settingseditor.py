@@ -46,22 +46,22 @@ ______ sys
 
 ____ ?.QtCore ______ (QByteArray, QDate, QDateTime, QEvent, QPoint, QRect,
         QRegExp, QSettings, QSize, Qt, QTime, QTimer)
-____ ?.QtGui ______ QColor, QIcon, QRegExpValidator, QValidator
-____ ?.?W.. ______ (QAbstractItemView, QAction, ?A..,
-        QComboBox, QDialog, QDialogButtonBox, QFileDialog, QGridLayout,
+____ ?.?G.. ______ QColor, QIcon, QRegExpValidator, QValidator
+____ ?.?W.. ______ (QAbstractItemView, ?A.., ?A..,
+        QComboBox, QDialog, QDialogButtonBox, ?FD.., QGridLayout,
         QGroupBox, QHeaderView, QInputDialog, QItemDelegate, QLabel, QLineEdit,
-        QMainWindow, QMessageBox, QStyle, QStyleOptionViewItem, QTableWidget,
+        QMainWindow, ?MB.., QStyle, QStyleOptionViewItem, QTableWidget,
         QTableWidgetItem, QTreeWidget, QTreeWidgetItem, QVBoxLayout)
 
 
-class MainWindow(QMainWindow):
-    ___ __init__(self, parent_None):
+c_ MainWindow ?MW..
+    ___ __init__  parent_None):
         super(MainWindow, self).__init__(parent)
 
         self.settingsTree _ SettingsTree()
-        self.setCentralWidget(self.settingsTree)
+        self.sCW..(self.settingsTree)
 
-        self.locationDialog _ None
+        self.locationDialog _ N..
 
         self.createActions()
         self.createMenus()
@@ -73,10 +73,10 @@ class MainWindow(QMainWindow):
         self.resize(500, 600)
 
     ___ openSettings(self):
-        if self.locationDialog is None:
+        __ self.locationDialog __ N..:
             self.locationDialog _ LocationDialog(self)
 
-        if self.locationDialog.exec_
+        __ self.locationDialog.exec_
             settings _ QSettings(self.locationDialog.format(),
                                         self.locationDialog.scope(),
                                         self.locationDialog.organization(),
@@ -85,97 +85,97 @@ class MainWindow(QMainWindow):
             self.fallbacksAct.setEnabled(True)
 
     ___ openIniFile(self):
-        fileName, _ _ QFileDialog.getOpenFileName(self, "Open INI File", '',
+        fileName, _ _ ?FD...gOFN..  "Open INI File", '',
                 "INI Files (*.ini *.conf)")
 
-        if fileName:
+        __ fileName:
             settings _ QSettings(fileName, QSettings.IniFormat)
             self.setSettingsObject(settings)
-            self.fallbacksAct.setEnabled(False)
+            self.fallbacksAct.setEnabled F..
 
     ___ openPropertyList(self):
-        fileName, _ _ QFileDialog.getOpenFileName(self, "Open Property List",
+        fileName, _ _ ?FD...gOFN..  "Open Property List",
                 '', "Property List Files (*.plist)")
 
-        if fileName:
+        __ fileName:
             settings _ QSettings(fileName, QSettings.NativeFormat)
             self.setSettingsObject(settings)
-            self.fallbacksAct.setEnabled(False)
+            self.fallbacksAct.setEnabled F..
 
     ___ openRegistryPath(self):
-        path, ok _ QInputDialog.getText(self, "Open Registry Path",
+        path, ok _ QInputDialog.getText  "Open Registry Path",
                 "Enter the path in the Windows registry:", QLineEdit.Normal,
                 'HKEY_CURRENT_USER\\')
 
-        if ok and path !_ '':
+        __ ok and path !_ '':
             settings _ QSettings(path, QSettings.NativeFormat)
             self.setSettingsObject(settings)
-            self.fallbacksAct.setEnabled(False)
+            self.fallbacksAct.setEnabled F..
 
     ___ about(self):
-        QMessageBox.about(self, "About Settings Editor",
+        ?MB...about  "About Settings Editor",
                 "The <b>Settings Editor</b> example shows how to access "
                 "application settings using Qt.")
 
     ___ createActions(self):
-        self.openSettingsAct _ QAction("&Open Application Settings...", self,
+        self.openSettingsAct _ ?A..("&Open Application Settings...", self,
                 shortcut_"Ctrl+O", triggered_self.openSettings)
 
-        self.openIniFileAct _ QAction("Open I&NI File...", self,
+        self.openIniFileAct _ ?A..("Open I&NI File...", self,
                 shortcut_"Ctrl+N", triggered_self.openIniFile)
 
-        self.openPropertyListAct _ QAction("Open Mac &Property List...", self,
+        self.openPropertyListAct _ ?A..("Open Mac &Property List...", self,
                 shortcut_"Ctrl+P", triggered_self.openPropertyList)
-        if sys.platform !_ 'darwin':
-            self.openPropertyListAct.setEnabled(False)
+        __ sys.platform !_ 'darwin':
+            self.openPropertyListAct.setEnabled F..
 
-        self.openRegistryPathAct _ QAction("Open Windows &Registry Path...",
+        self.openRegistryPathAct _ ?A..("Open Windows &Registry Path...",
                 self, shortcut_"Ctrl+G", triggered_self.openRegistryPath)
-        if sys.platform !_ 'win32':
-            self.openRegistryPathAct.setEnabled(False)
+        __ sys.platform !_ 'win32':
+            self.openRegistryPathAct.setEnabled F..
 
-        self.refreshAct _ QAction("&Refresh", self, shortcut_"Ctrl+R",
+        self.refreshAct _ ?A..("&Refresh", self, shortcut_"Ctrl+R",
                 enabled_False, triggered_self.settingsTree.refresh)
 
-        self.exitAct _ QAction("E&xit", self, shortcut_"Ctrl+Q",
+        self.exitAct _ ?A..("E&xit", self, shortcut_"Ctrl+Q",
                 triggered_self.close)
 
-        self.autoRefreshAct _ QAction("&Auto-Refresh", self, shortcut_"Ctrl+A",
+        self.autoRefreshAct _ ?A..("&Auto-Refresh", self, shortcut_"Ctrl+A",
                 checkable_True, enabled_False)
-        self.autoRefreshAct.triggered.c..(self.settingsTree.setAutoRefresh)
-        self.autoRefreshAct.triggered.c..(self.refreshAct.setDisabled)
+        self.autoRefreshAct.t__.c..(self.settingsTree.setAutoRefresh)
+        self.autoRefreshAct.t__.c..(self.refreshAct.setDisabled)
 
-        self.fallbacksAct _ QAction("&Fallbacks", self, shortcut_"Ctrl+F",
+        self.fallbacksAct _ ?A..("&Fallbacks", self, shortcut_"Ctrl+F",
                 checkable_True, enabled_False,
                 triggered_self.settingsTree.setFallbacksEnabled)
 
-        self.aboutAct _ QAction("&About", self, triggered_self.about)
+        self.aboutAct _ ?A..("&About", self, triggered_self.about)
 
-        self.aboutQtAct _ QAction("About &Qt", self,
+        self.aboutQtAct _ ?A..("About &Qt", self,
                 triggered_QApplication.instance().aboutQt)
 
     ___ createMenus(self):
-        self.fileMenu _ self.menuBar().addMenu("&File")
-        self.fileMenu.addAction(self.openSettingsAct)
-        self.fileMenu.addAction(self.openIniFileAct)
-        self.fileMenu.addAction(self.openPropertyListAct)
-        self.fileMenu.addAction(self.openRegistryPathAct)
+        self.fileMenu _ self.mB.. .aM..("&File")
+        self.fileMenu.aA..(self.openSettingsAct)
+        self.fileMenu.aA..(self.openIniFileAct)
+        self.fileMenu.aA..(self.openPropertyListAct)
+        self.fileMenu.aA..(self.openRegistryPathAct)
         self.fileMenu.addSeparator()
-        self.fileMenu.addAction(self.refreshAct)
+        self.fileMenu.aA..(self.refreshAct)
         self.fileMenu.addSeparator()
-        self.fileMenu.addAction(self.exitAct)
+        self.fileMenu.aA..(self.exitAct)
 
-        self.optionsMenu _ self.menuBar().addMenu("&Options")
-        self.optionsMenu.addAction(self.autoRefreshAct)
-        self.optionsMenu.addAction(self.fallbacksAct)
+        self.optionsMenu _ self.mB.. .aM..("&Options")
+        self.optionsMenu.aA..(self.autoRefreshAct)
+        self.optionsMenu.aA..(self.fallbacksAct)
 
-        self.menuBar().addSeparator()
+        self.mB.. .addSeparator()
 
-        self.helpMenu _ self.menuBar().addMenu("&Help")
-        self.helpMenu.addAction(self.aboutAct)
-        self.helpMenu.addAction(self.aboutQtAct)
+        self.helpMenu _ self.mB.. .aM..("&Help")
+        self.helpMenu.aA..(self.aboutAct)
+        self.helpMenu.aA..(self.aboutQtAct)
 
-    ___ setSettingsObject(self, settings):
+    ___ setSettingsObject  settings):
         settings.setFallbacksEnabled(self.fallbacksAct.isChecked())
         self.settingsTree.setSettingsObject(settings)
 
@@ -186,14 +186,14 @@ class MainWindow(QMainWindow):
         niceName.replace('\\', '/')
         niceName _ niceName.split('/')[-1]
 
-        if not settings.isWritable
+        __ no. settings.isWritable
             niceName +_ " (read only)"
 
         self.setWindowTitle("%s - Settings Editor" % niceName)
 
 
-class LocationDialog(QDialog):
-    ___ __init__(self, parent_None):
+c_ LocationDialog(QDialog):
+    ___ __init__  parent_None):
         super(LocationDialog, self).__init__(parent)
 
         self.formatComboBox _ QComboBox()
@@ -272,46 +272,46 @@ class LocationDialog(QDialog):
         self.resize(650, 400)
 
     ___ format(self):
-        if self.formatComboBox.currentIndex() == 0:
-            return QSettings.NativeFormat
-        else:
-            return QSettings.IniFormat
+        __ self.formatComboBox.currentIndex() == 0:
+            r_ QSettings.NativeFormat
+        ____
+            r_ QSettings.IniFormat
 
     ___ scope(self):
-        if self.scopeComboBox.currentIndex() == 0:
-            return QSettings.UserScope
-        else:
-            return QSettings.SystemScope
+        __ self.scopeComboBox.currentIndex() == 0:
+            r_ QSettings.UserScope
+        ____
+            r_ QSettings.SystemScope
 
     ___ organization(self):
-        return self.organizationComboBox.currentText()
+        r_ self.organizationComboBox.currentText()
 
     ___ application(self):
-        if self.applicationComboBox.currentText() == "Any":
-            return ''
+        __ self.applicationComboBox.currentText() == "Any":
+            r_ ''
 
-        return self.applicationComboBox.currentText()
+        r_ self.applicationComboBox.currentText()
 
     ___ updateLocationsTable(self):
-        self.locationsTable.setUpdatesEnabled(False)
+        self.locationsTable.setUpdatesEnabled F..
         self.locationsTable.setRowCount(0)
 
         for i in range(2):
-            if i == 0:
-                if self.scope() == QSettings.SystemScope:
+            __ i == 0:
+                __ self.scope() == QSettings.SystemScope:
                     continue
 
                 actualScope _ QSettings.UserScope
-            else:
+            ____
                 actualScope _ QSettings.SystemScope
 
             for j in range(2):
-                if j == 0:
-                    if not self.application
+                __ j == 0:
+                    __ no. self.application
                         continue
 
                     actualApplication _ self.application()
-                else:
+                ____
                     actualApplication _ ''
 
                 settings _ QSettings(self.format(), actualScope,
@@ -324,19 +324,19 @@ class LocationDialog(QDialog):
                 item0.sT..(settings.fileName())
 
                 item1 _ QTableWidgetItem()
-                disable _ not (settings.childKeys() or settings.childGroups())
+                disable _ no. (settings.childKeys() or settings.childGroups())
 
-                if row == 0:
-                    if settings.isWritable
+                __ row == 0:
+                    __ settings.isWritable
                         item1.sT..("Read-write")
                         disable _ False
-                    else:
+                    ____
                         item1.sT..("Read-only")
                     self.buttonBox.button(QDialogButtonBox.Ok).setDisabled(disable)
-                else:
+                ____
                     item1.sT..("Read-only fallback")
 
-                if disable:
+                __ disable:
                     item0.setFlags(item0.flags() & ~Qt.ItemIsEnabled)
                     item1.setFlags(item1.flags() & ~Qt.ItemIsEnabled)
 
@@ -346,8 +346,8 @@ class LocationDialog(QDialog):
         self.locationsTable.setUpdatesEnabled(True)
 
 
-class SettingsTree(QTreeWidget):
-    ___ __init__(self, parent_None):
+c_ SettingsTree(QTreeWidget):
+    ___ __init__  parent_None):
         super(SettingsTree, self).__init__(parent)
 
         self.setItemDelegate(VariantDelegate(self))
@@ -356,7 +356,7 @@ class SettingsTree(QTreeWidget):
         self.header().setSectionResizeMode(0, QHeaderView.Stretch)
         self.header().setSectionResizeMode(2, QHeaderView.Stretch)
 
-        self.settings _ None
+        self.settings _ N..
         self.refreshTimer _ QTimer()
         self.refreshTimer.setInterval(2000)
         self.autoRefresh _ False
@@ -371,43 +371,43 @@ class SettingsTree(QTreeWidget):
 
         self.refreshTimer.timeout.c..(self.maybeRefresh)
 
-    ___ setSettingsObject(self, settings):
+    ___ setSettingsObject  settings):
         self.settings _ settings
         self.clear()
 
-        if self.settings is not None:
+        __ self.settings __ no. N..:
             self.settings.setParent(self)
             self.refresh()
-            if self.autoRefresh:
+            __ self.autoRefresh:
                 self.refreshTimer.start()
-        else:
+        ____
             self.refreshTimer.stop()
 
     ___ sizeHint(self):
-        return QSize(800, 600)
+        r_ QSize(800, 600)
 
-    ___ setAutoRefresh(self, autoRefresh):
+    ___ setAutoRefresh  autoRefresh):
         self.autoRefresh _ autoRefresh
 
-        if self.settings is not None:
-            if self.autoRefresh:
+        __ self.settings __ no. N..:
+            __ self.autoRefresh:
                 self.maybeRefresh()
                 self.refreshTimer.start()
-            else:
+            ____
                 self.refreshTimer.stop()
 
-    ___ setFallbacksEnabled(self, enabled):
-        if self.settings is not None:
+    ___ setFallbacksEnabled  enabled):
+        __ self.settings __ no. N..:
             self.settings.setFallbacksEnabled(enabled)
             self.refresh()
 
     ___ maybeRefresh(self):
-        if self.state() !_ QAbstractItemView.EditingState:
+        __ self.state() !_ QAbstractItemView.EditingState:
             self.refresh()
 
     ___ refresh(self):
-        if self.settings is None:
-            return
+        __ self.settings __ N..:
+            r_
 
         # The signal might not be connected.
         try:
@@ -416,18 +416,18 @@ class SettingsTree(QTreeWidget):
             pass
 
         self.settings.sync()
-        self.updateChildItems(None)
+        self.updateChildItems(N..)
 
         self.itemChanged.c..(self.updateSetting)
 
-    ___ event(self, event):
-        if event.type() == QEvent.WindowActivate:
-            if self.isActiveWindow() and self.autoRefresh:
+    ___ event  event):
+        __ event.type() == QEvent.WindowActivate:
+            __ self.isActiveWindow() and self.autoRefresh:
                 self.maybeRefresh()
 
-        return super(SettingsTree, self).event(event)
+        r_ super(SettingsTree, self).event(event)
 
-    ___ updateSetting(self, item):
+    ___ updateSetting  item):
         key _ item.text(0)
         ancestor _ item.parent()
 
@@ -438,21 +438,21 @@ class SettingsTree(QTreeWidget):
         d _ item.data(2, Qt.UserRole)
         self.settings.setValue(key, item.data(2, Qt.UserRole))
 
-        if self.autoRefresh:
+        __ self.autoRefresh:
             self.refresh()
 
-    ___ updateChildItems(self, parent):
+    ___ updateChildItems  parent):
         dividerIndex _ 0
 
         for group in self.settings.childGroups
             childIndex _ self.findChild(parent, group, dividerIndex)
-            if childIndex !_ -1:
+            __ childIndex !_ -1:
                 child _ self.childAt(parent, childIndex)
                 child.sT..(1, '')
                 child.sT..(2, '')
-                child.setData(2, Qt.UserRole, None)
+                child.setData(2, Qt.UserRole, N..)
                 self.moveItemForward(parent, childIndex, dividerIndex)
-            else:
+            ____
                 child _ self.createItem(group, parent, dividerIndex)
 
             child.setIcon(0, self.groupIcon)
@@ -464,23 +464,23 @@ class SettingsTree(QTreeWidget):
 
         for key in self.settings.childKeys
             childIndex _ self.findChild(parent, key, 0)
-            if childIndex == -1 or childIndex >_ dividerIndex:
-                if childIndex !_ -1:
+            __ childIndex == -1 or childIndex >_ dividerIndex:
+                __ childIndex !_ -1:
                     child _ self.childAt(parent, childIndex)
                     for i in range(child.childCount()):
                         self.deleteItem(child, i)
                     self.moveItemForward(parent, childIndex, dividerIndex)
-                else:
+                ____
                     child _ self.createItem(key, parent, dividerIndex)
                 child.setIcon(0, self.keyIcon)
                 dividerIndex +_ 1
-            else:
+            ____
                 child _ self.childAt(parent, childIndex)
 
             value _ self.settings.value(key)
-            if value is None:
+            __ value __ N..:
                 child.sT..(1, 'Invalid')
-            else:
+            ____
                 child.sT..(1, value.__class__.__name__)
             child.sT..(2, VariantDelegate.displayText(value))
             child.setData(2, Qt.UserRole, value)
@@ -488,53 +488,53 @@ class SettingsTree(QTreeWidget):
         while dividerIndex < self.childCount(parent):
             self.deleteItem(parent, dividerIndex)
 
-    ___ createItem(self, text, parent, index):
-        after _ None
+    ___ createItem  text, parent, index):
+        after _ N..
 
-        if index !_ 0:
+        __ index !_ 0:
             after _ self.childAt(parent, index - 1)
 
-        if parent is not None:
+        __ parent __ no. N..:
             item _ QTreeWidgetItem(parent, after)
-        else:
-            item _ QTreeWidgetItem(self, after)
+        ____
+            item _ QTreeWidgetItem  after)
 
         item.sT..(0, text)
         item.setFlags(item.flags() | Qt.ItemIsEditable)
-        return item
+        r_ item
 
-    ___ deleteItem(self, parent, index):
-        if parent is not None:
+    ___ deleteItem  parent, index):
+        __ parent __ no. N..:
             item _ parent.takeChild(index)
-        else:
+        ____
             item _ self.takeTopLevelItem(index)
         del item
 
-    ___ childAt(self, parent, index):
-        if parent is not None:
-            return parent.child(index)
-        else:
-            return self.topLevelItem(index)
+    ___ childAt  parent, index):
+        __ parent __ no. N..:
+            r_ parent.child(index)
+        ____
+            r_ self.topLevelItem(index)
 
-    ___ childCount(self, parent):
-        if parent is not None:
-            return parent.childCount()
-        else:
-            return self.topLevelItemCount()
+    ___ childCount  parent):
+        __ parent __ no. N..:
+            r_ parent.childCount()
+        ____
+            r_ self.topLevelItemCount()
 
-    ___ findChild(self, parent, text, startIndex):
+    ___ findChild  parent, text, startIndex):
         for i in range(self.childCount(parent)):
-            if self.childAt(parent, i).text(0) == text:
-                return i
-        return -1
+            __ self.childAt(parent, i).text(0) == text:
+                r_ i
+        r_ -1
 
-    ___ moveItemForward(self, parent, oldIndex, newIndex):
+    ___ moveItemForward  parent, oldIndex, newIndex):
         for int in range(oldIndex - newIndex):
             self.deleteItem(parent, newIndex)
 
 
-class VariantDelegate(QItemDelegate):
-    ___ __init__(self, parent_None):
+c_ VariantDelegate(QItemDelegate):
+    ___ __init__  parent_None):
         super(VariantDelegate, self).__init__(parent)
 
         self.boolExp _ QRegExp()
@@ -576,112 +576,112 @@ class VariantDelegate(QItemDelegate):
         self.dateTimeExp _ QRegExp()
         self.dateTimeExp.setPattern(self.dateExp.pattern() + 'T' + self.timeExp.pattern())
 
-    ___ paint(self, painter, option, index):
-        if index.column() == 2:
+    ___ paint  painter, option, index):
+        __ index.column() == 2:
             value _ index.model().data(index, Qt.UserRole)
-            if not self.isSupportedType(value):
+            __ no. self.isSupportedType(value):
                 myOption _ QStyleOptionViewItem(option)
                 myOption.state &_ ~QStyle.State_Enabled
                 super(VariantDelegate, self).paint(painter, myOption, index)
-                return
+                r_
 
         super(VariantDelegate, self).paint(painter, option, index)
 
-    ___ createEditor(self, parent, option, index):
-        if index.column() !_ 2:
-            return None
+    ___ createEditor  parent, option, index):
+        __ index.column() !_ 2:
+            r_ N..
 
         originalValue _ index.model().data(index, Qt.UserRole)
-        if not self.isSupportedType(originalValue):
-            return None
+        __ no. self.isSupportedType(originalValue):
+            r_ N..
 
         lineEdit _ QLineEdit(parent)
-        lineEdit.setFrame(False)
+        lineEdit.setFrame F..
 
-        if isinstance(originalValue, bool):
+        __ isinstance(originalValue, bool):
             regExp _ self.boolExp
-        elif isinstance(originalValue, float):
+        ____ isinstance(originalValue, float):
             regExp _ self.doubleExp
-        elif isinstance(originalValue, int):
+        ____ isinstance(originalValue, int):
             regExp _ self.signedIntegerExp
-        elif isinstance(originalValue, QByteArray):
+        ____ isinstance(originalValue, QByteArray):
             regExp _ self.byteArrayExp
-        elif isinstance(originalValue, QColor):
+        ____ isinstance(originalValue, QColor):
             regExp _ self.colorExp
-        elif isinstance(originalValue, QDate):
+        ____ isinstance(originalValue, QDate):
             regExp _ self.dateExp
-        elif isinstance(originalValue, QDateTime):
+        ____ isinstance(originalValue, QDateTime):
             regExp _ self.dateTimeExp
-        elif isinstance(originalValue, QTime):
+        ____ isinstance(originalValue, QTime):
             regExp _ self.timeExp
-        elif isinstance(originalValue, QPoint):
+        ____ isinstance(originalValue, QPoint):
             regExp _ self.pointExp
-        elif isinstance(originalValue, QRect):
+        ____ isinstance(originalValue, QRect):
             regExp _ self.rectExp
-        elif isinstance(originalValue, QSize):
+        ____ isinstance(originalValue, QSize):
             regExp _ self.sizeExp
-        else:
+        ____
             regExp _ QRegExp()
 
-        if not regExp.isEmpty
+        __ no. regExp.isEmpty
             validator _ QRegExpValidator(regExp, lineEdit)
             lineEdit.setValidator(validator)
 
-        return lineEdit
+        r_ lineEdit
 
-    ___ setEditorData(self, editor, index):
+    ___ setEditorData  editor, index):
         value _ index.model().data(index, Qt.UserRole)
-        if editor is not None:
+        __ editor __ no. N..:
             editor.sT..(self.displayText(value))
 
-    ___ setModelData(self, editor, model, index):
-        if not editor.isModified
-            return
+    ___ setModelData  editor, model, index):
+        __ no. editor.iM..
+            r_
 
         text _ editor.text()
         validator _ editor.validator()
-        if validator is not None:
+        __ validator __ no. N..:
             state, text, _ _ validator.validate(text, 0)
-            if state !_ QValidator.Acceptable:
-                return
+            __ state !_ QValidator.Acceptable:
+                r_
 
         originalValue _ index.model().data(index, Qt.UserRole)
 
-        if isinstance(originalValue, QColor):
+        __ isinstance(originalValue, QColor):
             self.colorExp.exactMatch(text)
             value _ QColor(min(int(self.colorExp.cap(1)), 255),
                            min(int(self.colorExp.cap(2)), 255),
                            min(int(self.colorExp.cap(3)), 255),
                            min(int(self.colorExp.cap(4)), 255))
-        elif isinstance(originalValue, QDate):
+        ____ isinstance(originalValue, QDate):
             value _ QDate.fromString(text, Qt.ISODate)
-            if not value.isValid
-                return
-        elif isinstance(originalValue, QDateTime):
+            __ no. value.isValid
+                r_
+        ____ isinstance(originalValue, QDateTime):
             value _ QDateTime.fromString(text, Qt.ISODate)
-            if not value.isValid
-                return
-        elif isinstance(originalValue, QTime):
+            __ no. value.isValid
+                r_
+        ____ isinstance(originalValue, QTime):
             value _ QTime.fromString(text, Qt.ISODate)
-            if not value.isValid
-                return
-        elif isinstance(originalValue, QPoint):
+            __ no. value.isValid
+                r_
+        ____ isinstance(originalValue, QPoint):
             self.pointExp.exactMatch(text)
             value _ QPoint(int(self.pointExp.cap(1)),
                            int(self.pointExp.cap(2)))
-        elif isinstance(originalValue, QRect):
+        ____ isinstance(originalValue, QRect):
             self.rectExp.exactMatch(text)
             value _ QRect(int(self.rectExp.cap(1)),
                           int(self.rectExp.cap(2)),
                           int(self.rectExp.cap(3)),
                           int(self.rectExp.cap(4)))
-        elif isinstance(originalValue, QSize):
+        ____ isinstance(originalValue, QSize):
             self.sizeExp.exactMatch(text)
             value _ QSize(int(self.sizeExp.cap(1)),
                           int(self.sizeExp.cap(2)))
-        elif isinstance(originalValue, list):
+        ____ isinstance(originalValue, list):
             value _ text.split(',')
-        else:
+        ____
             value _ type(originalValue)(text)
 
         model.setData(index, self.displayText(value), Qt.DisplayRole)
@@ -689,36 +689,36 @@ class VariantDelegate(QItemDelegate):
 
     @staticmethod
     ___ isSupportedType(value):
-        return isinstance(value, (bool, float, int, QByteArray, str, QColor,
+        r_ isinstance(value, (bool, float, int, QByteArray, str, QColor,
                 QDate, QDateTime, QTime, QPoint, QRect, QSize, list))
 
     @staticmethod
     ___ displayText(value):
-        if isinstance(value, (bool, int, QByteArray)):
-            return str(value)
-        if isinstance(value, str):
-            return value
-        elif isinstance(value, float):
-            return '%g' % value
-        elif isinstance(value, QColor):
-            return '(%u,%u,%u,%u)' % (value.red(), value.green(), value.blue(), value.alpha())
-        elif isinstance(value, (QDate, QDateTime, QTime)):
-            return value.toString(Qt.ISODate)
-        elif isinstance(value, QPoint):
-            return '(%d,%d)' % (value.x(), value.y())
-        elif isinstance(value, QRect):
-            return '(%d,%d,%d,%d)' % (value.x(), value.y(), value.width(), value.height())
-        elif isinstance(value, QSize):
-            return '(%d,%d)' % (value.width(), value.height())
-        elif isinstance(value, list):
-            return ','.join(value)
-        elif value is None:
-            return '<Invalid>'
+        __ isinstance(value, (bool, int, QByteArray)):
+            r_ str(value)
+        __ isinstance(value, str):
+            r_ value
+        ____ isinstance(value, float):
+            r_ '%g' % value
+        ____ isinstance(value, QColor):
+            r_ '(%u,%u,%u,%u)' % (value.red(), value.green(), value.blue(), value.alpha())
+        ____ isinstance(value, (QDate, QDateTime, QTime)):
+            r_ value.toString(Qt.ISODate)
+        ____ isinstance(value, QPoint):
+            r_ '(%d,%d)' % (value.x(), value.y())
+        ____ isinstance(value, QRect):
+            r_ '(%d,%d,%d,%d)' % (value.x(), value.y(), value.width(), value.height())
+        ____ isinstance(value, QSize):
+            r_ '(%d,%d)' % (value.width(), value.height())
+        ____ isinstance(value, list):
+            r_ ','.join(value)
+        ____ value __ N..:
+            r_ '<Invalid>'
 
-        return '<%s>' % value
+        r_ '<%s>' % value
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ ?A..(sys.argv)
     mainWin _ MainWindow()
     mainWin.s..

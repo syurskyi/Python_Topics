@@ -7,10 +7,10 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, QtGui, ?W..
+____ ? ______ QtCore, ?G.., ?W..
 
-class Ui_Controller(object):
-    ___ setupUi(self, Controller):
+c_ Ui_Controller(object):
+    ___ setupUi  Controller):
         Controller.setObjectName("Controller")
         Controller.resize(255, 111)
         self.gridlayout _ ?W...QGridLayout(Controller)
@@ -37,7 +37,7 @@ class Ui_Controller(object):
         self.retranslateUi(Controller)
         QtCore.QMetaObject.connectSlotsByName(Controller)
 
-    ___ retranslateUi(self, Controller):
+    ___ retranslateUi  Controller):
         _translate _ QtCore.QCoreApplication.translate
         Controller.setWindowTitle(_translate("Controller", "Controller"))
         self.label.sT..(_translate("Controller", "Controller"))

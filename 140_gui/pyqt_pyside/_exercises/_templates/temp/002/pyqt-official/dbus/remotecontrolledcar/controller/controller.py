@@ -48,9 +48,9 @@ ____ ?.QtDBus ______ QDBusAbstractInterface, QDBusConnection
 ____ ui_controller ______ Ui_Controller
 
 
-class CarInterface(QDBusAbstractInterface):
+c_ CarInterface(QDBusAbstractInterface):
 
-    ___ __init__(self, service, path, connection, parent_None):
+    ___ __init__  service, path, connection, parent_None):
         super(CarInterface, self).__init__(service, path,
                 'org.example.Examples.CarInterface', connection, parent)
 
@@ -67,9 +67,9 @@ class CarInterface(QDBusAbstractInterface):
         self.asyncCall('turnRight')
 
 
-class Controller(QWidget):
+c_ Controller(QWidget):
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(Controller, self).__init__(parent)
 
         self.ui _ Ui_Controller()
@@ -81,10 +81,10 @@ class Controller(QWidget):
 
         self.startTimer(1000)
 
-    ___ timerEvent(self, event):
-        if self.car.isValid
+    ___ timerEvent  event):
+        __ self.car.isValid
             self.ui.label.sT..("connected")
-        else:
+        ____
             self.ui.label.sT..("disconnected")
 
     ___ on_accelerate_clicked(self):
@@ -100,7 +100,7 @@ class Controller(QWidget):
         self.car.turnRight()
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     ______ sys
 
     app _ ?A..(sys.argv)

@@ -44,8 +44,8 @@ ___ decode_pos(pos):
         row _ -1
         col _ -1
 
-    return row, col
+    r_ row, col
 
 
 ___ encode_pos(row, col):
-    return chr(col + ord('A')) + str(row + 1)
+    r_ chr(col + ord('A')) + str(row + 1)

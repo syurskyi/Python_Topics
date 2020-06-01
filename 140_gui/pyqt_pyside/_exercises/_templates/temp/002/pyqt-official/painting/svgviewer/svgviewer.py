@@ -43,17 +43,17 @@
 
 
 ____ ?.QtCore ______ QFile, QSize, Qt
-____ ?.QtGui ______ QBrush, QColor, QImage, QPainter, QPixmap, QPen
-____ ?.?W.. ______ (QActionGroup, ?A.., QFileDialog,
+____ ?.?G.. ______ QBrush, QColor, QImage, QPainter, QPixmap, QPen
+____ ?.?W.. ______ (QActionGroup, ?A.., ?FD..,
         QGraphicsItem, QGraphicsRectItem, QGraphicsScene, QGraphicsView,
-        QMainWindow, QMenu, QMessageBox, QWidget)
+        QMainWindow, QMenu, ?MB.., QWidget)
 ____ ?.QtOpenGL ______ QGL, QGLFormat, QGLWidget
 ____ ?.QtSvg ______ QGraphicsSvgItem
 
 ______ svgviewer_rc
 
 
-class MainWindow(QMainWindow):
+c_ MainWindow ?MW..
     ___ __init__(self):
         super(MainWindow, self).__init__()
 
@@ -62,115 +62,115 @@ class MainWindow(QMainWindow):
         self.view _ SvgView()
 
         fileMenu _ QMenu("&File", self)
-        openAction _ fileMenu.addAction("&Open...")
-        openAction.setShortcut("Ctrl+O")
-        quitAction _ fileMenu.addAction("E&xit")
-        quitAction.setShortcut("Ctrl+Q")
+        openAction _ fileMenu.aA..("&Open...")
+        openAction.sS..("Ctrl+O")
+        quitAction _ fileMenu.aA..("E&xit")
+        quitAction.sS..("Ctrl+Q")
 
-        self.menuBar().addMenu(fileMenu)
+        self.mB.. .aM..(fileMenu)
 
         viewMenu _ QMenu("&View", self)
-        self.backgroundAction _ viewMenu.addAction("&Background")
-        self.backgroundAction.setEnabled(False)
+        self.backgroundAction _ viewMenu.aA..("&Background")
+        self.backgroundAction.setEnabled F..
         self.backgroundAction.setCheckable(True)
-        self.backgroundAction.setChecked(False)
+        self.backgroundAction.setChecked F..
         self.backgroundAction.toggled.c..(self.view.setViewBackground)
 
-        self.outlineAction _ viewMenu.addAction("&Outline")
-        self.outlineAction.setEnabled(False)
+        self.outlineAction _ viewMenu.aA..("&Outline")
+        self.outlineAction.setEnabled F..
         self.outlineAction.setCheckable(True)
         self.outlineAction.setChecked(True)
         self.outlineAction.toggled.c..(self.view.setViewOutline)
 
-        self.menuBar().addMenu(viewMenu)
+        self.mB.. .aM..(viewMenu)
 
         rendererMenu _ QMenu("&Renderer", self)
-        self.nativeAction _ rendererMenu.addAction("&Native")
+        self.nativeAction _ rendererMenu.aA..("&Native")
         self.nativeAction.setCheckable(True)
         self.nativeAction.setChecked(True)
 
-        if QGLFormat.hasOpenGL
-            self.glAction _ rendererMenu.addAction("&OpenGL")
+        __ QGLFormat.hasOpenGL
+            self.glAction _ rendererMenu.aA..("&OpenGL")
             self.glAction.setCheckable(True)
 
-        self.imageAction _ rendererMenu.addAction("&Image")
+        self.imageAction _ rendererMenu.aA..("&Image")
         self.imageAction.setCheckable(True)
 
-        if QGLFormat.hasOpenGL
+        __ QGLFormat.hasOpenGL
             rendererMenu.addSeparator()
-            self.highQualityAntialiasingAction _ rendererMenu.addAction("&High Quality Antialiasing")
-            self.highQualityAntialiasingAction.setEnabled(False)
+            self.highQualityAntialiasingAction _ rendererMenu.aA..("&High Quality Antialiasing")
+            self.highQualityAntialiasingAction.setEnabled F..
             self.highQualityAntialiasingAction.setCheckable(True)
-            self.highQualityAntialiasingAction.setChecked(False)
+            self.highQualityAntialiasingAction.setChecked F..
             self.highQualityAntialiasingAction.toggled.c..(self.view.setHighQualityAntialiasing)
 
         rendererGroup _ QActionGroup(self)
-        rendererGroup.addAction(self.nativeAction)
+        rendererGroup.aA..(self.nativeAction)
 
-        if QGLFormat.hasOpenGL
-            rendererGroup.addAction(self.glAction)
+        __ QGLFormat.hasOpenGL
+            rendererGroup.aA..(self.glAction)
 
-        rendererGroup.addAction(self.imageAction)
+        rendererGroup.aA..(self.imageAction)
 
-        self.menuBar().addMenu(rendererMenu)
+        self.mB.. .aM..(rendererMenu)
 
-        openAction.triggered.c..(self.openFile)
-        quitAction.triggered.c..(?A...instance().quit)
-        rendererGroup.triggered.c..(self.setRenderer)
+        openAction.t__.c..(self.openFile)
+        quitAction.t__.c..(?A...instance().quit)
+        rendererGroup.t__.c..(self.setRenderer)
 
-        self.setCentralWidget(self.view)
+        self.sCW..(self.view)
         self.setWindowTitle("SVG Viewer")
 
-    ___ openFile(self, path_None):
-        if not path:
-            path, _ _ QFileDialog.getOpenFileName(self, "Open SVG File",
+    ___ openFile  path_None):
+        __ no. path:
+            path, _ _ ?FD...gOFN..  "Open SVG File",
                     self.currentPath, "SVG files (*.svg *.svgz *.svg.gz)")
 
-        if path:
+        __ path:
             svg_file _ QFile(path)
-            if not svg_file.exists
-                QMessageBox.critical(self, "Open SVG File",
+            __ no. svg_file.exists
+                ?MB...critical  "Open SVG File",
                         "Could not open file '%s'." % path)
 
-                self.outlineAction.setEnabled(False)
-                self.backgroundAction.setEnabled(False)
-                return
+                self.outlineAction.setEnabled F..
+                self.backgroundAction.setEnabled F..
+                r_
 
             self.view.openFile(svg_file)
 
-            if not path.startswith(':/'):
+            __ no. path.startswith(':/'):
                 self.currentPath _ path
                 self.setWindowTitle("%s - SVGViewer" % self.currentPath)
 
             self.outlineAction.setEnabled(True)
             self.backgroundAction.setEnabled(True)
 
-            self.resize(self.view.sizeHint() + QSize(80, 80 + self.menuBar().height()))
+            self.resize(self.view.sizeHint() + QSize(80, 80 + self.mB.. .height()))
 
-    ___ setRenderer(self, action):
-        if QGLFormat.hasOpenGL
-            self.highQualityAntialiasingAction.setEnabled(False)
+    ___ setRenderer  action):
+        __ QGLFormat.hasOpenGL
+            self.highQualityAntialiasingAction.setEnabled F..
 
-        if action == self.nativeAction:
+        __ action == self.nativeAction:
             self.view.setRenderer(SvgView.Native)
-        elif action == self.glAction:
-            if QGLFormat.hasOpenGL
+        ____ action == self.glAction:
+            __ QGLFormat.hasOpenGL
                 self.highQualityAntialiasingAction.setEnabled(True)
                 self.view.setRenderer(SvgView.OpenGL)
-        elif action == self.imageAction:
+        ____ action == self.imageAction:
             self.view.setRenderer(SvgView.Image)
 
 
-class SvgView(QGraphicsView):
+c_ SvgView(QGraphicsView):
     Native, OpenGL, Image _ range(3)
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(SvgView, self).__init__(parent)
 
         self.renderer _ SvgView.Native
-        self.svgItem _ None
-        self.backgroundItem _ None
-        self.outlineItem _ None
+        self.svgItem _ N..
+        self.backgroundItem _ N..
+        self.outlineItem _ N..
         self.image _ QImage()
 
         self.setScene(QGraphicsScene(self))
@@ -189,27 +189,27 @@ class SvgView(QGraphicsView):
 
         self.setBackgroundBrush(QBrush(tilePixmap))
 
-    ___ drawBackground(self, p, rect):
+    ___ drawBackground  p, rect):
         p.save()
         p.resetTransform()
         p.drawTiledPixmap(self.viewport().rect(),
                 self.backgroundBrush().texture())
         p.restore()
 
-    ___ openFile(self, svg_file):
-        if not svg_file.exists
-            return
+    ___ openFile  svg_file):
+        __ no. svg_file.exists
+            r_
 
         s _ self.scene()
 
-        if self.backgroundItem:
+        __ self.backgroundItem:
             drawBackground _ self.backgroundItem.isVisible()
-        else:
+        ____
             drawBackground _ False
 
-        if self.outlineItem:
+        __ self.outlineItem:
             drawOutline _ self.outlineItem.isVisible()
-        else:
+        ____
             drawOutline _ True
 
         s.clear()
@@ -240,59 +240,59 @@ class SvgView(QGraphicsView):
 
         s.setSceneRect(self.outlineItem.boundingRect().adjusted(-10, -10, 10, 10))
 
-    ___ setRenderer(self, renderer):
+    ___ setRenderer  renderer):
         self.renderer _ renderer
 
-        if self.renderer == SvgView.OpenGL:
-            if QGLFormat.hasOpenGL
+        __ self.renderer == SvgView.OpenGL:
+            __ QGLFormat.hasOpenGL
                 self.setViewport(QGLWidget(QGLFormat(QGL.SampleBuffers)))
-        else:
+        ____
             self.setViewport(QWidget())
 
-    ___ setHighQualityAntialiasing(self, highQualityAntialiasing):
-        if QGLFormat.hasOpenGL
+    ___ setHighQualityAntialiasing  highQualityAntialiasing):
+        __ QGLFormat.hasOpenGL
             self.setRenderHint(QPainter.HighQualityAntialiasing,
                     highQualityAntialiasing)
 
-    ___ setViewBackground(self, enable):
-        if self.backgroundItem:
+    ___ setViewBackground  enable):
+        __ self.backgroundItem:
             self.backgroundItem.setVisible(enable)
 
-    ___ setViewOutline(self, enable):
-        if self.outlineItem:
+    ___ setViewOutline  enable):
+        __ self.outlineItem:
             self.outlineItem.setVisible(enable)
 
-    ___ paintEvent(self, event):
-        if self.renderer == SvgView.Image:
-            if self.image.size() !_ self.viewport().size
+    ___ paintEvent  event):
+        __ self.renderer == SvgView.Image:
+            __ self.image.size() !_ self.viewport().size
                 self.image _ QImage(self.viewport().size(),
                         QImage.Format_ARGB32_Premultiplied)
 
             imagePainter _ QPainter(self.image)
-            QGraphicsView.render(self, imagePainter)
+            QGraphicsView.render  imagePainter)
             imagePainter.end()
 
             p _ QPainter(self.viewport())
             p.drawImage(0, 0, self.image)
-        else:
+        ____
             super(SvgView, self).paintEvent(event)
 
-    ___ wheelEvent(self, event):
+    ___ wheelEvent  event):
         factor _ pow(1.2, event.delta() / 240.0)
         self.scale(factor, factor)
         event.accept()
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 
     app _ ?A..(sys.argv)
 
     window _ MainWindow()
-    if len(sys.argv) == 2:
+    __ len(sys.argv) == 2:
         window.openFile(sys.argv[1])
-    else:
+    ____
         window.openFile(':/files/bubbles.svg')
     window.s..
     sys.exit(app.exec_())

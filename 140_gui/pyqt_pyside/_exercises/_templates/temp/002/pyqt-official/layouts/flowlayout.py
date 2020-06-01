@@ -47,7 +47,7 @@ ____ ?.?W.. ______ (?A.., QLayout, ?PB.., QSizePolicy,
         QWidget)
 
 
-class Window(QWidget):
+c_ Window(QWidget):
     ___ __init__(self):
         super(Window, self).__init__()
 
@@ -62,11 +62,11 @@ class Window(QWidget):
         self.setWindowTitle("Flow Layout")
 
 
-class FlowLayout(QLayout):
-    ___ __init__(self, parent_None, margin_0, spacing_-1):
+c_ FlowLayout(QLayout):
+    ___ __init__  parent_None, margin_0, spacing_-1):
         super(FlowLayout, self).__init__(parent)
 
-        if parent is not None:
+        __ parent __ no. N..:
             self.setContentsMargins(margin, margin, margin, margin)
 
         self.setSpacing(spacing)
@@ -78,40 +78,40 @@ class FlowLayout(QLayout):
         while item:
             item _ self.takeAt(0)
 
-    ___ addItem(self, item):
+    ___ addItem  item):
         self.itemList.append(item)
 
     ___ count(self):
-        return len(self.itemList)
+        r_ len(self.itemList)
 
-    ___ itemAt(self, index):
-        if index >_ 0 and index < len(self.itemList):
-            return self.itemList[index]
+    ___ itemAt  index):
+        __ index >_ 0 and index < len(self.itemList):
+            r_ self.itemList[index]
 
-        return None
+        r_ N..
 
-    ___ takeAt(self, index):
-        if index >_ 0 and index < len(self.itemList):
-            return self.itemList.pop(index)
+    ___ takeAt  index):
+        __ index >_ 0 and index < len(self.itemList):
+            r_ self.itemList.pop(index)
 
-        return None
+        r_ N..
 
     ___ expandingDirections(self):
-        return Qt.Orientations(Qt.Orientation(0))
+        r_ Qt.Orientations(Qt.Orientation(0))
 
     ___ hasHeightForWidth(self):
-        return True
+        r_ True
 
-    ___ heightForWidth(self, width):
+    ___ heightForWidth  width):
         height _ self.doLayout(QRect(0, 0, width, 0), True)
-        return height
+        r_ height
 
-    ___ setGeometry(self, rect):
+    ___ setGeometry  rect):
         super(FlowLayout, self).setGeometry(rect)
         self.doLayout(rect, False)
 
     ___ sizeHint(self):
-        return self.minimumSize()
+        r_ self.minimumSize()
 
     ___ minimumSize(self):
         size _ QSize()
@@ -122,9 +122,9 @@ class FlowLayout(QLayout):
         margin, _, _, _ _ self.getContentsMargins()
 
         size +_ QSize(2 * margin, 2 * margin)
-        return size
+        r_ size
 
-    ___ doLayout(self, rect, testOnly):
+    ___ doLayout  rect, testOnly):
         x _ rect.x()
         y _ rect.y()
         lineHeight _ 0
@@ -134,22 +134,22 @@ class FlowLayout(QLayout):
             spaceX _ self.spacing() + wid.style().layoutSpacing(QSizePolicy.PushButton, QSizePolicy.PushButton, Qt.Horizontal)
             spaceY _ self.spacing() + wid.style().layoutSpacing(QSizePolicy.PushButton, QSizePolicy.PushButton, Qt.Vertical)
             nextX _ x + item.sizeHint().width() + spaceX
-            if nextX - spaceX > rect.right() and lineHeight > 0:
+            __ nextX - spaceX > rect.right() and lineHeight > 0:
                 x _ rect.x()
                 y _ y + lineHeight + spaceY
                 nextX _ x + item.sizeHint().width() + spaceX
                 lineHeight _ 0
 
-            if not testOnly:
+            __ no. testOnly:
                 item.setGeometry(QRect(QPoint(x, y), item.sizeHint()))
 
             x _ nextX
             lineHeight _ max(lineHeight, item.sizeHint().height())
 
-        return y + lineHeight - rect.y()
+        r_ y + lineHeight - rect.y()
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

@@ -43,36 +43,36 @@
 
 
 ____ ?.QtCore ______ QModelIndex, Qt
-____ ?.QtGui ______ QStandardItemModel
+____ ?.?G.. ______ QStandardItemModel
 ____ ?.?W.. ______ (?A.., QSpinBox, QStyledItemDelegate,
         QTableView)
 
 
-class SpinBoxDelegate(QStyledItemDelegate):
-    ___ createEditor(self, parent, option, index):
+c_ SpinBoxDelegate(QStyledItemDelegate):
+    ___ createEditor  parent, option, index):
         editor _ QSpinBox(parent)
-        editor.setFrame(False)
+        editor.setFrame F..
         editor.setMinimum(0)
         editor.setMaximum(100)
 
-        return editor
+        r_ editor
 
-    ___ setEditorData(self, spinBox, index):
+    ___ setEditorData  spinBox, index):
         value _ index.model().data(index, Qt.EditRole)
 
         spinBox.setValue(value)
 
-    ___ setModelData(self, spinBox, model, index):
+    ___ setModelData  spinBox, model, index):
         spinBox.interpretText()
         value _ spinBox.value()
 
         model.setData(index, value, Qt.EditRole)
 
-    ___ updateEditorGeometry(self, editor, option, index):
+    ___ updateEditorGeometry  editor, option, index):
         editor.setGeometry(option.rect)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

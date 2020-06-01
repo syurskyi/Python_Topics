@@ -1,8 +1,8 @@
 ______ sys
-____ ? ______ ?W.. as qtw
-____ ? ______ QtCore as qtc
+____ ? ______ ?W.. __ qtw
+____ ? ______ QtCore __ qtc
 
-class MainWindow(qtw.QWidget):
+c_ MainWindow(qtw.QWidget):
 
     ___ __init__(self):
         """MainWindow constructor."""
@@ -31,7 +31,7 @@ class MainWindow(qtw.QWidget):
              'Meeting', 'Doctor', 'Family']
             )
         # disable the first category item
-        self.event_category.model().item(0).setEnabled(False)
+        self.event_category.model().item(0).setEnabled F..
 
         # Arrange the widgets
         main_layout _ qtw.QHBoxLayout()
@@ -69,7 +69,7 @@ class MainWindow(qtw.QWidget):
         self.s..
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtw.?A..(sys.argv)
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.

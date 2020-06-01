@@ -44,7 +44,7 @@
 
 ____ ?.QtCore ______ (QPointF, QPropertyAnimation, QRect, QRectF,
         QSequentialAnimationGroup, QSizeF, QState, QStateMachine, Qt)
-____ ?.QtGui ______ QPixmap
+____ ?.?G.. ______ QPixmap
 ____ ?.?W.. ______ (?A.., QGraphicsLinearLayout,
         QGraphicsObject, QGraphicsProxyWidget, QGraphicsScene, QGraphicsView,
         QGraphicsWidget, QGroupBox, ?PB.., QRadioButton, QTextEdit,
@@ -53,20 +53,20 @@ ____ ?.?W.. ______ (?A.., QGraphicsLinearLayout,
 ______ states_rc
 
 
-class Pixmap(QGraphicsObject):
-    ___ __init__(self, pix):
+c_ Pixmap(QGraphicsObject):
+    ___ __init__  pix):
         super(Pixmap, self).__init__()
 
         self.p _ QPixmap(pix)
 
-    ___ paint(self, painter, option, widget):
+    ___ paint  painter, option, widget):
         painter.drawPixmap(QPointF(), self.p)
 
     ___ boundingRect(self):
-        return QRectF(QPointF(0, 0), QSizeF(self.p.size()))
+        r_ QRectF(QPointF(0, 0), QSizeF(self.p.size()))
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

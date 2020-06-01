@@ -46,7 +46,7 @@ ______ math
 
 ____ ?.QtCore ______ (qAbs, QLineF, QPointF, QRectF, qrand, qsrand, Qt,
         QTime, QTimer)
-____ ?.QtGui ______ (QBrush, QColor, QPainter, QPainterPath, QPixmap,
+____ ?.?G.. ______ (QBrush, QColor, QPainter, QPainterPath, QPixmap,
         QPolygonF)
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsScene,
         QGraphicsView, QGraphicsWidget)
@@ -54,7 +54,7 @@ ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsScene,
 ______ mice_rc
 
 
-class Mouse(QGraphicsItem):
+c_ Mouse(QGraphicsItem):
     Pi _ math.pi
     TwoPi _ 2.0 * Pi
 
@@ -86,17 +86,17 @@ class Mouse(QGraphicsItem):
             angle +_ Mouse.TwoPi
         while angle > Mouse.TwoPi:
             angle -_ Mouse.TwoPi
-        return angle
+        r_ angle
 
     ___ boundingRect(self):
-        return Mouse.BoundingRect
+        r_ Mouse.BoundingRect
 
     ___ shape(self):
         path _ QPainterPath()
         path.addRect(-10, -20, 20, 40)
-        return path;
+        r_ path;
 
-    ___ paint(self, painter, option, widget):
+    ___ paint  painter, option, widget):
         # Body.
         painter.setBrush(self.color)
         painter.drawEllipse(-10, -20, 20, 40)
@@ -115,9 +115,9 @@ class Mouse(QGraphicsItem):
         painter.drawEllipse(QRectF(4.0 + self.mouseEyeDirection, -17, 4, 4))
 
         # Ears.
-        if self.scene().collidingItems(self):
+        __ self.scene().collidingItems(self):
             painter.setBrush(Qt.red)
-        else:
+        ____
             painter.setBrush(Qt.darkYellow)
 
         painter.drawEllipse(-17, -12, 16, 16)
@@ -134,21 +134,21 @@ class Mouse(QGraphicsItem):
     ___ timerEvent(self):
         # Don't move too far away.
         lineToCenter _ QLineF(QPointF(0, 0), self.mapFromScene(0, 0))
-        if lineToCenter.length() > 150:
+        __ lineToCenter.length() > 150:
             angleToCenter _ math.acos(lineToCenter.dx() / lineToCenter.length())
-            if lineToCenter.dy() < 0:
+            __ lineToCenter.dy() < 0:
                 angleToCenter _ Mouse.TwoPi - angleToCenter;
             angleToCenter _ Mouse.normalizeAngle((Mouse.Pi - angleToCenter) + Mouse.Pi / 2)
 
-            if angleToCenter < Mouse.Pi and angleToCenter > Mouse.Pi / 4:
+            __ angleToCenter < Mouse.Pi and angleToCenter > Mouse.Pi / 4:
                 # Rotate left.
                 self.angle +_ [-0.25, 0.25][self.angle < -Mouse.Pi / 2]
-            elif angleToCenter >_ Mouse.Pi and angleToCenter < (Mouse.Pi + Mouse.Pi / 2 + Mouse.Pi / 4):
+            ____ angleToCenter >_ Mouse.Pi and angleToCenter < (Mouse.Pi + Mouse.Pi / 2 + Mouse.Pi / 4):
                 # Rotate right.
                 self.angle +_ [-0.25, 0.25][self.angle < Mouse.Pi / 2]
-        elif math.sin(self.angle) < 0:
+        ____ math.sin(self.angle) < 0:
             self.angle +_ 0.25
-        elif math.sin(self.angle) > 0:
+        ____ math.sin(self.angle) > 0:
             self.angle -_ 0.25
 
         # Try not to crash with any other mice.
@@ -157,39 +157,39 @@ class Mouse(QGraphicsItem):
                                                          self.mapToScene(30, -50)]))
 
         for item in dangerMice:
-            if item is self:
+            __ item __ self:
                 continue
         
             lineToMouse _ QLineF(QPointF(0, 0), self.mapFromItem(item, 0, 0))
             angleToMouse _ math.acos(lineToMouse.dx() / lineToMouse.length())
-            if lineToMouse.dy() < 0:
+            __ lineToMouse.dy() < 0:
                 angleToMouse _ Mouse.TwoPi - angleToMouse
             angleToMouse _ Mouse.normalizeAngle((Mouse.Pi - angleToMouse) + Mouse.Pi / 2)
 
-            if angleToMouse >_ 0 and angleToMouse < Mouse.Pi / 2:
+            __ angleToMouse >_ 0 and angleToMouse < Mouse.Pi / 2:
                 # Rotate right.
                 self.angle +_ 0.5
-            elif angleToMouse <_ Mouse.TwoPi and angleToMouse > (Mouse.TwoPi - Mouse.Pi / 2):
+            ____ angleToMouse <_ Mouse.TwoPi and angleToMouse > (Mouse.TwoPi - Mouse.Pi / 2):
                 # Rotate left.
                 self.angle -_ 0.5
 
         # Add some random movement.
-        if len(dangerMice) > 1 and (qrand() % 10) == 0:
-            if qrand() % 1:
+        __ len(dangerMice) > 1 and (qrand() % 10) == 0:
+            __ qrand() % 1:
                 self.angle +_ (qrand() % 100) / 500.0
-            else:
+            ____
                 self.angle -_ (qrand() % 100) / 500.0
 
         self.speed +_ (-50 + qrand() % 100) / 100.0
 
         dx _ math.sin(self.angle) * 10
-        self.mouseEyeDirection _ 0.0 if qAbs(dx / 5) < 1 else dx / 5
+        self.mouseEyeDirection _ 0.0 __ qAbs(dx / 5) < 1 else dx / 5
 
         self.setRotation(self.rotation() + dx)
         self.setPos(self.mapToParent(0, -(3 + math.sin(self.speed) * 3)))
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

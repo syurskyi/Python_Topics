@@ -46,8 +46,8 @@ ____ ?.QtCore ______ Qt
 ____ ?.?W.. ______ QGridLayout, QLabel, QLineEdit, QTextEdit, QWidget
 
 
-class AddressBook(QWidget):
-    ___ __init__(self, parent_None):
+c_ AddressBook(QWidget):
+    ___ __init__  parent_None):
         super(AddressBook, self).__init__(parent)
 
         nameLabel _ QLabel("Name:")
@@ -66,7 +66,7 @@ class AddressBook(QWidget):
         self.setWindowTitle("Simple Address Book")
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     ______ sys
 
     ____ ?.?W.. ______ ?A..

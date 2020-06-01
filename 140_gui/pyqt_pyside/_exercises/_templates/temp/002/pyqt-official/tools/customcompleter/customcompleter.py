@@ -43,27 +43,27 @@
 
 
 ____ ?.QtCore ______ QFile, QStringListModel, Qt
-____ ?.QtGui ______ QCursor, QKeySequence, QTextCursor
-____ ?.?W.. ______ (QAction, ?A.., QCompleter, QMainWindow,
-        QMessageBox, QTextEdit)
+____ ?.?G.. ______ QCursor, ?KS.., QTextCursor
+____ ?.?W.. ______ (?A.., ?A.., QCompleter, QMainWindow,
+        ?MB.., QTextEdit)
 
 ______ customcompleter_rc
 
 
-class TextEdit(QTextEdit):
-    ___ __init__(self, parent_None):
+c_ TextEdit(QTextEdit):
+    ___ __init__  parent_None):
         super(TextEdit, self).__init__(parent)
 
-        self._completer _ None
+        self._completer _ N..
 
-        self.setPlainText(
+        self.sPT..(
                 "This TextEdit provides autocompletions for words that have "
                 "more than 3 characters. You can trigger autocompletion "
-                "using %s" % QKeySequence("Ctrl+E").toString(
-                        QKeySequence.NativeText))
+                "using %s" % ?KS..("Ctrl+E").toString(
+                        ?KS...NativeText))
 
-    ___ setCompleter(self, c):
-        if self._completer is not None:
+    ___ setCompleter  c):
+        __ self._completer __ no. N..:
             self._completer.activated.disconnect()
 
         self._completer _ c
@@ -74,11 +74,11 @@ class TextEdit(QTextEdit):
         c.activated.c..(self.insertCompletion)
 
     ___ completer(self):
-        return self._completer
+        r_ self._completer
 
-    ___ insertCompletion(self, completion):
-        if self._completer.widget() is not self:
-            return
+    ___ insertCompletion  completion):
+        __ self._completer.widget() __ no. self:
+            r_
 
         tc _ self.textCursor()
         extra _ len(completion) - len(self._completer.completionPrefix())
@@ -91,40 +91,40 @@ class TextEdit(QTextEdit):
         tc _ self.textCursor()
         tc.select(QTextCursor.WordUnderCursor)
 
-        return tc.selectedText()
+        r_ tc.selectedText()
 
-    ___ focusInEvent(self, e):
-        if self._completer is not None:
+    ___ focusInEvent  e):
+        __ self._completer __ no. N..:
             self._completer.setWidget(self)
 
         super(TextEdit, self).focusInEvent(e)
 
-    ___ keyPressEvent(self, e):
-        if self._completer is not None and self._completer.popup().isVisible
+    ___ keyPressEvent  e):
+        __ self._completer __ no. N.. and self._completer.popup().isVisible
             # The following keys are forwarded by the completer to the widget.
-            if e.key() in (Qt.Key_Enter, Qt.Key_Return, Qt.Key_Escape, Qt.Key_Tab, Qt.Key_Backtab):
+            __ e.key() in (Qt.Key_Enter, Qt.Key_Return, Qt.Key_Escape, Qt.Key_Tab, Qt.Key_Backtab):
                 e.ignore()
                 # Let the completer do default behavior.
-                return
+                r_
 
         isShortcut _ ((e.modifiers() & Qt.ControlModifier) !_ 0 and e.key() == Qt.Key_E)
-        if self._completer is None or not isShortcut:
+        __ self._completer __ N.. or no. isShortcut:
             # Do not process the shortcut when we have a completer.
             super(TextEdit, self).keyPressEvent(e)
 
         ctrlOrShift _ e.modifiers() & (Qt.ControlModifier | Qt.ShiftModifier)
-        if self._completer is None or (ctrlOrShift and len(e.text()) == 0):
-            return
+        __ self._completer __ N.. or (ctrlOrShift and len(e.text()) == 0):
+            r_
 
         eow _ "~!@#$%^&*()_+{}|:\"<>?,./;'[]\\-="
-        hasModifier _ (e.modifiers() !_ Qt.NoModifier) and not ctrlOrShift
+        hasModifier _ (e.modifiers() !_ Qt.NoModifier) and no. ctrlOrShift
         completionPrefix _ self.textUnderCursor()
 
-        if not isShortcut and (hasModifier or len(e.text()) == 0 or len(completionPrefix) < 3 or e.text()[-1] in eow):
+        __ no. isShortcut and (hasModifier or len(e.text()) == 0 or len(completionPrefix) < 3 or e.text()[-1] in eow):
             self._completer.popup().hide()
-            return
+            r_
 
-        if completionPrefix !_ self._completer.completionPrefix
+        __ completionPrefix !_ self._completer.completionPrefix
             self._completer.setCompletionPrefix(completionPrefix)
             self._completer.popup().setCurrentIndex(
                     self._completer.completionModel().index(0, 0))
@@ -134,8 +134,8 @@ class TextEdit(QTextEdit):
         self._completer.complete(cr)
 
 
-class MainWindow(QMainWindow):
-    ___ __init__(self, parent_None):
+c_ MainWindow ?MW..
+    ___ __init__  parent_None):
         super(MainWindow, self).__init__(parent)
 
         self.createMenu()
@@ -145,40 +145,40 @@ class MainWindow(QMainWindow):
         self.completer.setModel(self.modelFromFile(':/resources/wordlist.txt'))
         self.completer.setModelSorting(QCompleter.CaseInsensitivelySortedModel)
         self.completer.setCaseSensitivity(Qt.CaseInsensitive)
-        self.completer.setWrapAround(False)
+        self.completer.setWrapAround F..
         self.completingTextEdit.setCompleter(self.completer)
 
-        self.setCentralWidget(self.completingTextEdit)
+        self.sCW..(self.completingTextEdit)
         self.resize(500, 300)
         self.setWindowTitle("Completer")
 
     ___ createMenu(self):
-        exitAction _ QAction("Exit", self)
-        aboutAct _ QAction("About", self)
-        aboutQtAct _ QAction("About Qt", self)
+        exitAction _ ?A..("Exit", self)
+        aboutAct _ ?A..("About", self)
+        aboutQtAct _ ?A..("About Qt", self)
 
-        exitAction.triggered.c..(?A...instance().quit)
-        aboutAct.triggered.c..(self.about)
-        aboutQtAct.triggered.c..(?A...instance().aboutQt)
+        exitAction.t__.c..(?A...instance().quit)
+        aboutAct.t__.c..(self.about)
+        aboutQtAct.t__.c..(?A...instance().aboutQt)
 
-        fileMenu _ self.menuBar().addMenu("File")
-        fileMenu.addAction(exitAction)
+        fileMenu _ self.mB.. .aM..("File")
+        fileMenu.aA..(exitAction)
 
-        helpMenu _ self.menuBar().addMenu("About")
-        helpMenu.addAction(aboutAct)
-        helpMenu.addAction(aboutQtAct)
+        helpMenu _ self.mB.. .aM..("About")
+        helpMenu.aA..(aboutAct)
+        helpMenu.aA..(aboutQtAct)
 
-    ___ modelFromFile(self, fileName):
+    ___ modelFromFile  fileName):
         f _ QFile(fileName)
-        if not f.open(QFile.ReadOnly):
-            return QStringListModel(self.completer)
+        __ no. f.o..(QFile.ReadOnly):
+            r_ QStringListModel(self.completer)
 
         ?A...setOverrideCursor(QCursor(Qt.WaitCursor))
 
         words _ []
-        while not f.atEnd
+        while no. f.atEnd
             line _ f.readLine().trimmed()
-            if line.length() !_ 0:
+            __ line.length() !_ 0:
                 try:
                     line _ str(line, encoding_'ascii')
                 except TypeError:
@@ -188,15 +188,15 @@ class MainWindow(QMainWindow):
 
         ?A...restoreOverrideCursor()
 
-        return QStringListModel(words, self.completer)
+        r_ QStringListModel(words, self.completer)
 
     ___ about(self):
-        QMessageBox.about(self, "About",
+        ?MB...about  "About",
                 "This example demonstrates the different features of the "
                 "QCompleter class.")
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

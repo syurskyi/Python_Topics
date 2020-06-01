@@ -49,41 +49,41 @@ ____ ?.?W.. ______ (?A.., QGridLayout, QLabel, QLineEdit,
         QListView, QSizePolicy, QTextBrowser, QWidget)
 
 
-class FileListModel(QAbstractListModel):
+c_ FileListModel(QAbstractListModel):
     numberPopulated _ pyqtSignal(int)
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(FileListModel, self).__init__(parent)
 
         self.fileCount _ 0
         self.fileList _ []
 
-    ___ rowCount(self, parent_QModelIndex()):
-        return self.fileCount
+    ___ rowCount  parent_QModelIndex()):
+        r_ self.fileCount
 
-    ___ data(self, index, role_Qt.DisplayRole):
-        if not index.isValid
-            return None
+    ___ data  index, role_Qt.DisplayRole):
+        __ no. index.isValid
+            r_ N..
 
-        if index.row() >_ len(self.fileList) or index.row() < 0:
-            return None
+        __ index.row() >_ len(self.fileList) or index.row() < 0:
+            r_ N..
 
-        if role == Qt.DisplayRole:
-            return self.fileList[index.row()]
+        __ role == Qt.DisplayRole:
+            r_ self.fileList[index.row()]
 
-        if role == Qt.BackgroundRole:
+        __ role == Qt.BackgroundRole:
             batch _ (index.row() // 100) % 2
-            if batch == 0:
-                return ?A...palette().base()
+            __ batch == 0:
+                r_ ?A...palette().base()
 
-            return ?A...palette().alternateBase()
+            r_ ?A...palette().alternateBase()
 
-        return None
+        r_ N..
 
-    ___ canFetchMore(self, index):
-        return self.fileCount < len(self.fileList)
+    ___ canFetchMore  index):
+        r_ self.fileCount < len(self.fileList)
 
-    ___ fetchMore(self, index):
+    ___ fetchMore  index):
         remainder _ len(self.fileList) - self.fileCount
         itemsToFetch _ min(100, remainder)
 
@@ -96,7 +96,7 @@ class FileListModel(QAbstractListModel):
 
         self.numberPopulated.emit(itemsToFetch)
 
-    ___ setDirPath(self, path):
+    ___ setDirPath  path):
         dir _ QDir(path)
 
         self.beginResetModel()
@@ -105,8 +105,8 @@ class FileListModel(QAbstractListModel):
         self.endResetModel()
 
 
-class Window(QWidget):
-    ___ __init__(self, parent_None):
+c_ Window(QWidget):
+    ___ __init__  parent_None):
         super(Window, self).__init__(parent)
 
         model _ FileListModel(self)
@@ -135,11 +135,11 @@ class Window(QWidget):
         self.setLayout(layout)
         self.setWindowTitle("Fetch More Example")
 
-    ___ updateLog(self, number):
+    ___ updateLog  number):
         self.logViewer.append("%d items added." % number)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

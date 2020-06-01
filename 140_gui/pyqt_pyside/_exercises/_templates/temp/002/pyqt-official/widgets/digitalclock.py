@@ -46,8 +46,8 @@ ____ ?.QtCore ______ QTime, QTimer
 ____ ?.?W.. ______ ?A.., QLCDNumber
 
 
-class DigitalClock(QLCDNumber):
-    ___ __init__(self, parent_None):
+c_ DigitalClock(QLCDNumber):
+    ___ __init__  parent_None):
         super(DigitalClock, self).__init__(parent)
 
         self.setSegmentStyle(QLCDNumber.Filled)
@@ -64,13 +64,13 @@ class DigitalClock(QLCDNumber):
     ___ showTime(self):
         time _ QTime.currentTime()
         text _ time.toString('hh:mm')
-        if (time.second() % 2) == 0:
+        __ (time.second() % 2) == 0:
             text _ text[:2] + ' ' + text[3:]
 
         self.display(text)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

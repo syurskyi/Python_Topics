@@ -44,23 +44,23 @@
 
 
 ____ ?.QtCore ______ pyqtProperty, Qt, QVariant
-____ ?.QtGui ______ QColor
+____ ?.?G.. ______ QColor
 ____ ?.?W.. ______ (?A.., QComboBox, QGridLayout,
         QItemEditorCreatorBase, QItemEditorFactory, QTableWidget,
         QTableWidgetItem, QWidget)
 
 
-class ColorListEditor(QComboBox):
-    ___ __init__(self, widget_None):
+c_ ColorListEditor(QComboBox):
+    ___ __init__  widget_None):
         super(ColorListEditor, self).__init__(widget)
 
         self.populateList()
 
     ___ getColor(self):
         color _ self.itemData(self.currentIndex(), Qt.DecorationRole)
-        return color
+        r_ color
 
-    ___ setColor(self, color):
+    ___ setColor  color):
         self.setCurrentIndex(self.findData(color, Qt.DecorationRole))
 
     color _ pyqtProperty(QColor, getColor, setColor, user_True)
@@ -72,13 +72,13 @@ class ColorListEditor(QComboBox):
             self.setItemData(i, color, Qt.DecorationRole)
 
 
-class ColorListItemEditorCreator(QItemEditorCreatorBase):
-    ___ createWidget(self, parent):
-        return ColorListEditor(parent)
+c_ ColorListItemEditorCreator(QItemEditorCreatorBase):
+    ___ createWidget  parent):
+        r_ ColorListEditor(parent)
 
 
-class Window(QWidget):
-    ___ __init__(self, parent_None):
+c_ Window(QWidget):
+    ___ __init__  parent_None):
         super(Window, self).__init__(parent)
 
         factory _ QItemEditorFactory()
@@ -96,7 +96,7 @@ class Window(QWidget):
 
         table _ QTableWidget(3, 2)
         table.setHorizontalHeaderLabels(["Name", "Hair Color"])
-        table.verticalHeader().setVisible(False)
+        table.verticalHeader().setVisible F..
         table.resize(150, 50)
 
         for i, (name, color) in enumerate(tableData):
@@ -116,7 +116,7 @@ class Window(QWidget):
         self.setWindowTitle("Color Editor Factory")
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

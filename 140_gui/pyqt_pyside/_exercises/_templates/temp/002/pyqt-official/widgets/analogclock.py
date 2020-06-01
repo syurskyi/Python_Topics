@@ -43,11 +43,11 @@
 
 
 ____ ?.QtCore ______ QPoint, Qt, QTime, QTimer
-____ ?.QtGui ______ QColor, QPainter, QPolygon
+____ ?.?G.. ______ QColor, QPainter, QPolygon
 ____ ?.?W.. ______ ?A.., QWidget
 
 
-class AnalogClock(QWidget):
+c_ AnalogClock(QWidget):
     hourHand _ QPolygon([
         QPoint(7, 8),
         QPoint(-7, 8),
@@ -63,7 +63,7 @@ class AnalogClock(QWidget):
     hourColor _ QColor(127, 0, 127)
     minuteColor _ QColor(0, 127, 127, 191)
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(AnalogClock, self).__init__(parent)
 
         timer _ QTimer(self)
@@ -73,7 +73,7 @@ class AnalogClock(QWidget):
         self.setWindowTitle("Analog Clock")
         self.resize(200, 200)
 
-    ___ paintEvent(self, event):
+    ___ paintEvent  event):
         side _ min(self.width(), self.height())
         time _ QTime.currentTime()
 
@@ -107,12 +107,12 @@ class AnalogClock(QWidget):
         painter.setPen(AnalogClock.minuteColor)
 
         for j in range(60):
-            if (j % 5) !_ 0:
+            __ (j % 5) !_ 0:
                 painter.drawLine(92, 0, 96, 0)
             painter.rotate(6.0)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

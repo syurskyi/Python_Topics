@@ -45,19 +45,19 @@
 ______ sys
 
 ____ ?.QtCore ______ QDir, Qt
-____ ?.QtGui ______ QFont, QPalette
+____ ?.?G.. ______ QFont, QPalette
 ____ ?.?W.. ______ (?A.., QCheckBox, QColorDialog, QDialog,
-        QErrorMessage, QFileDialog, QFontDialog, QFrame, QGridLayout,
-        QInputDialog, QLabel, QLineEdit, QMessageBox, ?PB..)
+        QErrorMessage, ?FD.., QFontDialog, QFrame, QGridLayout,
+        QInputDialog, QLabel, QLineEdit, ?MB.., ?PB..)
 
 
-class Dialog(QDialog):
+c_ Dialog(QDialog):
     MESSAGE _ "<p>Message boxes have a caption, a text, and up to three " \
             "buttons, each with standard or custom texts.</p>" \
             "<p>Click a button to close the message box. Pressing the Esc " \
             "button will activate the detected escape button (if any).</p>"
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(Dialog, self).__init__(parent)
 
         self.openFilesPath _ ''
@@ -145,7 +145,7 @@ class Dialog(QDialog):
         self.native _ QCheckBox()
         self.native.sT..("Use native file dialog.")
         self.native.setChecked(True)
-        if sys.platform not in ("win32", "darwin"):
+        __ sys.platform no. in ("win32", "darwin"):
             self.native.hide()
 
         layout _ QGridLayout()
@@ -187,122 +187,122 @@ class Dialog(QDialog):
         self.setWindowTitle("Standard Dialogs")
 
     ___ setInteger(self):
-        i, ok _ QInputDialog.getInt(self, "QInputDialog.getInt()",
+        i, ok _ QInputDialog.getInt  "QInputDialog.getInt()",
                 "Percentage:", 25, 0, 100, 1)
-        if ok:
+        __ ok:
             self.integerLabel.sT..("%d%%" % i)
 
     ___ setDouble(self):
-        d, ok _ QInputDialog.getDouble(self, "QInputDialog.getDouble()",
+        d, ok _ QInputDialog.getDouble  "QInputDialog.getDouble()",
                 "Amount:", 37.56, -10000, 10000, 2)
-        if ok:
+        __ ok:
             self.doubleLabel.sT..("$%g" % d)
 
     ___ setItem(self):
         items _ ("Spring", "Summer", "Fall", "Winter")
 
-        item, ok _ QInputDialog.getItem(self, "QInputDialog.getItem()",
+        item, ok _ QInputDialog.getItem  "QInputDialog.getItem()",
                 "Season:", items, 0, False)
-        if ok and item:
+        __ ok and item:
             self.itemLabel.sT..(item)
 
     ___ sT..(self):
-        text, ok _ QInputDialog.getText(self, "QInputDialog.getText()",
+        text, ok _ QInputDialog.getText  "QInputDialog.getText()",
                 "User name:", QLineEdit.Normal, QDir.home().dirName())
-        if ok and text !_ '':
+        __ ok and text !_ '':
             self.textLabel.sT..(text)
 
     ___ setColor(self):
         color _ QColorDialog.getColor(Qt.green, self)
-        if color.isValid
+        __ color.isValid
             self.colorLabel.sT..(color.name())
             self.colorLabel.setPalette(QPalette(color))
             self.colorLabel.setAutoFillBackground(True)
 
     ___ setFont(self):
         font, ok _ QFontDialog.getFont(QFont(self.fontLabel.text()), self)
-        if ok:
+        __ ok:
             self.fontLabel.sT..(font.key())
             self.fontLabel.setFont(font)
 
     ___ setExistingDirectory(self):
-        options _ QFileDialog.DontResolveSymlinks | QFileDialog.ShowDirsOnly
-        directory _ QFileDialog.getExistingDirectory(self,
+        options _ ?FD...DontResolveSymlinks | ?FD...ShowDirsOnly
+        directory _ ?FD...getExistingDirectory
                 "QFileDialog.getExistingDirectory()",
                 self.directoryLabel.text(), options_options)
-        if directory:
+        __ directory:
             self.directoryLabel.sT..(directory)
 
     ___ setOpenFileName(self):
-        options _ QFileDialog.Options()
-        if not self.native.isChecked
-            options |_ QFileDialog.DontUseNativeDialog
-        fileName, _ _ QFileDialog.getOpenFileName(self,
+        options _ ?FD...Options()
+        __ no. self.native.isChecked
+            options |_ ?FD...DontUseNativeDialog
+        fileName, _ _ ?FD...gOFN..
                 "QFileDialog.getOpenFileName()", self.openFileNameLabel.text(),
                 "All Files (*);;Text Files (*.txt)", options_options)
-        if fileName:
+        __ fileName:
             self.openFileNameLabel.sT..(fileName)
 
     ___ setOpenFileNames(self):
-        options _ QFileDialog.Options()
-        if not self.native.isChecked
-            options |_ QFileDialog.DontUseNativeDialog
-        files, _ _ QFileDialog.getOpenFileNames(self,
+        options _ ?FD...Options()
+        __ no. self.native.isChecked
+            options |_ ?FD...DontUseNativeDialog
+        files, _ _ ?FD...getOpenFileNames
                 "QFileDialog.getOpenFileNames()", self.openFilesPath,
                 "All Files (*);;Text Files (*.txt)", options_options)
-        if files:
+        __ files:
             self.openFilesPath _ files[0]
             self.openFileNamesLabel.sT..("[%s]" % ', '.join(files))
 
     ___ setSaveFileName(self):
-        options _ QFileDialog.Options()
-        if not self.native.isChecked
-            options |_ QFileDialog.DontUseNativeDialog
-        fileName, _ _ QFileDialog.getSaveFileName(self,
+        options _ ?FD...Options()
+        __ no. self.native.isChecked
+            options |_ ?FD...DontUseNativeDialog
+        fileName, _ _ ?FD...getSaveFileName
                 "QFileDialog.getSaveFileName()",
                 self.saveFileNameLabel.text(),
                 "All Files (*);;Text Files (*.txt)", options_options)
-        if fileName:
+        __ fileName:
             self.saveFileNameLabel.sT..(fileName)
 
     ___ criticalMessage(self):
-        reply _ QMessageBox.critical(self, "QMessageBox.critical()",
+        reply _ ?MB...critical  "QMessageBox.critical()",
                 Dialog.MESSAGE,
-                QMessageBox.Abort | QMessageBox.Retry | QMessageBox.Ignore)
-        if reply == QMessageBox.Abort:
+                ?MB...Abort | ?MB...Retry | ?MB...Ignore)
+        __ reply == ?MB...Abort:
             self.criticalLabel.sT..("Abort")
-        elif reply == QMessageBox.Retry:
+        ____ reply == ?MB...Retry:
             self.criticalLabel.sT..("Retry")
-        else:
+        ____
             self.criticalLabel.sT..("Ignore")
 
     ___ informationMessage(self):
-        reply _ QMessageBox.information(self,
+        reply _ ?MB...information
                 "QMessageBox.information()", Dialog.MESSAGE)
-        if reply == QMessageBox.Ok:
+        __ reply == ?MB...Ok:
             self.informationLabel.sT..("OK")
-        else:
+        ____
             self.informationLabel.sT..("Escape")
 
     ___ questionMessage(self):
-        reply _ QMessageBox.question(self, "QMessageBox.question()",
+        reply _ ?MB...q..  "QMessageBox.question()",
                 Dialog.MESSAGE,
-                QMessageBox.Yes | QMessageBox.No | QMessageBox.Cancel)
-        if reply == QMessageBox.Yes:
+                ?MB...Yes | ?MB...No | ?MB...Cancel)
+        __ reply == ?MB...Yes:
             self.questionLabel.sT..("Yes")
-        elif reply == QMessageBox.No:
+        ____ reply == ?MB...No:
             self.questionLabel.sT..("No")
-        else:
+        ____
             self.questionLabel.sT..("Cancel")
 
     ___ warningMessage(self):
-        msgBox _ QMessageBox(QMessageBox.Warning, "QMessageBox.warning()",
-                Dialog.MESSAGE, QMessageBox.NoButton, self)
-        msgBox.addButton("Save &Again", QMessageBox.AcceptRole)
-        msgBox.addButton("&Continue", QMessageBox.RejectRole)
-        if msgBox.e.. == QMessageBox.AcceptRole:
+        msgBox _ ?MB..(?MB...Warning, "QMessageBox.warning()",
+                Dialog.MESSAGE, ?MB...NoButton, self)
+        msgBox.addButton("Save &Again", ?MB...AcceptRole)
+        msgBox.addButton("&Continue", ?MB...RejectRole)
+        __ msgBox.e.. == ?MB...AcceptRole:
             self.warningLabel.sT..("Save Again")
-        else:
+        ____
             self.warningLabel.sT..("Continue")
 
     ___ errorMessage(self):
@@ -315,7 +315,7 @@ class Dialog(QDialog):
                 "appear again.")
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ ?A..(sys.argv)
     dialog _ Dialog()
     dialog.s..

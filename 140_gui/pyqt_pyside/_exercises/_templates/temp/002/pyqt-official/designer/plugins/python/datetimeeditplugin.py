@@ -22,7 +22,7 @@
 #----------------------------------------------------------------------------#
 
 
-____ ?.QtGui ______ QIcon
+____ ?.?G.. ______ QIcon
 ____ ?.QtDesigner ______ QPyDesignerCustomWidgetPlugin
 
 ____ datetimeedit ______ PyDateEdit, PyDateTimeEdit
@@ -37,90 +37,90 @@ DESIGNER_GROUP_NAME _ "PyQt Examples"
 #============================================================================#
 # Plugin for PyDateEdit                                                      #
 #----------------------------------------------------------------------------#
-class PyDateEditPlugin(QPyDesignerCustomWidgetPlugin):
+c_ PyDateEditPlugin(QPyDesignerCustomWidgetPlugin):
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(PyDateEditPlugin, self).__init__(parent)
 
         self.initialized _ False
 
-    ___ initialize(self, formEditor):
-        if self.initialized:
-            return
+    ___ initialize  formEditor):
+        __ self.initialized:
+            r_
         self.initialized _ True
 
     ___ isInitialized(self):
-        return self.initialized
+        r_ self.initialized
 
     ___ isContainer(self):
-        return False
+        r_ False
 
     ___ icon(self):
-        return QIcon()
+        r_ QIcon()
 
     ___ domXml(self):
-        return '<widget class="PyDateEdit" name="pyDateEdit">\n</widget>\n'
+        r_ '<widget class="PyDateEdit" name="pyDateEdit">\n</widget>\n'
     
     ___ group(self):
-        return DESIGNER_GROUP_NAME
+        r_ DESIGNER_GROUP_NAME
               
     ___ includeFile(self):
-        return "datetimeedit"
+        r_ "datetimeedit"
 
     ___ name(self):
-        return "PyDateEdit"
+        r_ "PyDateEdit"
 
     ___ toolTip(self):
-        return ""
+        r_ ""
 
     ___ whatsThis(self):
-        return ""
+        r_ ""
 
-    ___ createWidget(self, parent):
-        return PyDateEdit(parent)
+    ___ createWidget  parent):
+        r_ PyDateEdit(parent)
 
 
 #============================================================================#
 # Plugin for PyDateTimeEdit                                                  #
 #----------------------------------------------------------------------------#
-class PyDateTimeEditPlugin(QPyDesignerCustomWidgetPlugin):
+c_ PyDateTimeEditPlugin(QPyDesignerCustomWidgetPlugin):
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(PyDateTimeEditPlugin, self).__init__(parent)
 
         self.initialized _ False
 
-    ___ initialize(self, formEditor):
-        if self.initialized:
-            return
+    ___ initialize  formEditor):
+        __ self.initialized:
+            r_
         self.initialized _ True
 
     ___ isInitialized(self):
-        return self.initialized
+        r_ self.initialized
 
     ___ isContainer(self):
-        return False
+        r_ False
 
     ___ icon(self):
-        return QIcon()
+        r_ QIcon()
 
     ___ domXml(self):
-        return '<widget class="PyDateTimeEdit" name="pyDateTimeEdit">\n</widget>\n'
+        r_ '<widget class="PyDateTimeEdit" name="pyDateTimeEdit">\n</widget>\n'
     
     ___ group(self):
-        return DESIGNER_GROUP_NAME
+        r_ DESIGNER_GROUP_NAME
               
     ___ includeFile(self):
-        return "datetimeedit"
+        r_ "datetimeedit"
 
     ___ name(self):
-        return "PyDateTimeEdit"
+        r_ "PyDateTimeEdit"
 
     ___ toolTip(self):
-        return ""
+        r_ ""
 
     ___ whatsThis(self):
-        return ""
+        r_ ""
 
-    ___ createWidget(self, parent):
-        return PyDateTimeEdit(parent)
+    ___ createWidget  parent):
+        r_ PyDateTimeEdit(parent)

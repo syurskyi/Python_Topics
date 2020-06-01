@@ -67,8 +67,8 @@ BirthdayParty {
 '''
 
 
-class Person(QObject):
-    ___ __init__(self, parent_None):
+c_ Person(QObject):
+    ___ __init__  parent_None):
         super(Person, self).__init__(parent)
 
         self._name _ ''
@@ -76,47 +76,47 @@ class Person(QObject):
 
     @pyqtProperty(str)
     ___ name(self):
-        return self._name
+        r_ self._name
 
     @name.setter
-    ___ name(self, name):
+    ___ name  name):
         self._name _ name
 
     @pyqtProperty(int)
     ___ shoeSize(self):
-        return self._shoeSize
+        r_ self._shoeSize
 
     @shoeSize.setter
-    ___ shoeSize(self, shoeSize):
+    ___ shoeSize  shoeSize):
         self._shoeSize _ shoeSize
 
 
-class Boy(Person):
+c_ Boy(Person):
     pass
 
 
-class Girl(Person):
+c_ Girl(Person):
     pass
 
 
-class BirthdayParty(QObject):
-    ___ __init__(self, parent_None):
+c_ BirthdayParty(QObject):
+    ___ __init__  parent_None):
         super(BirthdayParty, self).__init__(parent)
 
-        self._host _ None
+        self._host _ N..
         self._guests _ []
 
     @pyqtProperty(Person)
     ___ host(self):
-        return self._host
+        r_ self._host
 
     @host.setter
-    ___ host(self, host):
+    ___ host  host):
         self._host _ host
 
     @pyqtProperty(QQmlListProperty)
     ___ guests(self):
-        return QQmlListProperty(Person, self, self._guests)
+        r_ QQmlListProperty(Person, self, self._guests)
 
 
 app _ QCoreApplication(sys.argv)
@@ -133,16 +133,16 @@ component.setData(QML, QUrl())
 
 party _ component.create()
 
-if party is not None and party.host is not None:
+__ party __ no. N.. and party.host __ no. N..:
     print("\"%s\" is having a birthday!" % party.host.name)
 
-    if isinstance(party.host, Boy):
+    __ isinstance(party.host, Boy):
         print("He is inviting:")
-    else:
+    ____
         print("She is inviting:")
 
     for guest in party.guests:
         print("    \"%s\"" % guest.name)
-else:
+____
     for e in component.errors
         print("Error:", e.toString());

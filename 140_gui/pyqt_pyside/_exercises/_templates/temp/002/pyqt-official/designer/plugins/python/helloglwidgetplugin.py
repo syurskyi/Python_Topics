@@ -23,13 +23,13 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 """
 
-____ ?.QtGui ______ QIcon
+____ ?.?G.. ______ QIcon
 ____ ?.QtDesigner ______ QPyDesignerCustomWidgetPlugin
 
 ____ helloglwidget ______ HelloGLWidget
 
 
-class HelloGLWidgetPlugin(QPyDesignerCustomWidgetPlugin):
+c_ HelloGLWidgetPlugin(QPyDesignerCustomWidgetPlugin):
     """HelloGLWidgetPlugin(QPyDesignerCustomWidgetPlugin)
     
     Provides a Python custom plugin for Qt Designer by implementing the
@@ -38,7 +38,7 @@ class HelloGLWidgetPlugin(QPyDesignerCustomWidgetPlugin):
 
     # The __init__() method is only used to set up the plugin and define its
     # initialized variable.
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
     
         super(HelloGLWidgetPlugin, self).__init__(parent)
 
@@ -47,59 +47,59 @@ class HelloGLWidgetPlugin(QPyDesignerCustomWidgetPlugin):
     # The initialize() and isInitialized() methods allow the plugin to set up
     # any required resources, ensuring that this can only happen once for each
     # plugin.
-    ___ initialize(self, core):
+    ___ initialize  core):
 
-        if self.initialized:
-            return
+        __ self.initialized:
+            r_
 
         self.initialized _ True
 
     ___ isInitialized(self):
-        return self.initialized
+        r_ self.initialized
 
     # This factory method creates new instances of our custom widget with the
     # appropriate parent.
-    ___ createWidget(self, parent):
-        return HelloGLWidget(parent)
+    ___ createWidget  parent):
+        r_ HelloGLWidget(parent)
 
     # This method returns the name of the custom widget class that is provided
     # by this plugin.
     ___ name(self):
-        return "HelloGLWidget"
+        r_ "HelloGLWidget"
 
     # Returns the name of the group in Qt Designer's widget box that this
     # widget belongs to.
     ___ group(self):
-        return "PyQt Examples"
+        r_ "PyQt Examples"
 
     # Returns the icon used to represent the custom widget in Qt Designer's
     # widget box.
     ___ icon(self):
-        return QIcon()
+        r_ QIcon()
 
     # Returns a short description of the custom widget for use in a tool tip.
     ___ toolTip(self):
-        return ""
+        r_ ""
 
     # Returns a short description of the custom widget for use in a "What's
     # This?" help message for the widget.
     ___ whatsThis(self):
-        return ""
+        r_ ""
 
     # Returns True if the custom widget acts as a container for other widgets;
     # otherwise returns False. Note that plugins for custom containers also
     # need to provide an implementation of the QDesignerContainerExtension
     # interface if they need to add custom editing support to Qt Designer.
     ___ isContainer(self):
-        return False
+        r_ False
 
     # Returns an XML description of a custom widget instance that describes
     # default values for its properties. Each custom widget created by this
     # plugin will be configured using this description.
     ___ domXml(self):
-        return '<widget class="HelloGLWidget" name="helloGLWidget" />\n'
+        r_ '<widget class="HelloGLWidget" name="helloGLWidget" />\n'
 
     # Returns the module containing the custom widget class. It may include
     # a module path.
     ___ includeFile(self):
-        return "helloglwidget"
+        r_ "helloglwidget"

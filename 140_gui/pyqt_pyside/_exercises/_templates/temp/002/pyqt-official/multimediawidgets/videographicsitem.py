@@ -43,20 +43,20 @@
 
 
 ____ ?.QtCore ______ QDir, QSize, QSizeF, Qt, QUrl
-____ ?.QtGui ______ QTransform
+____ ?.?G.. ______ QTransform
 ____ ?.QtMultimedia ______ QMediaContent, QMediaPlayer
 ____ ?.QtMultimediaWidgets ______ QGraphicsVideoItem
-____ ?.?W.. ______ (?A.., QFileDialog, QGraphicsScene,
+____ ?.?W.. ______ (?A.., ?FD.., QGraphicsScene,
         QGraphicsView, QHBoxLayout, ?PB.., QSlider, QStyle, QVBoxLayout,
         QWidget)
 
 
-class VideoPlayer(QWidget):
+c_ VideoPlayer(QWidget):
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(VideoPlayer, self).__init__(parent)
 
-        self.mediaPlayer _ QMediaPlayer(None, QMediaPlayer.VideoSurface)
+        self.mediaPlayer _ QMediaPlayer(N.., QMediaPlayer.VideoSurface)
 
         self.videoItem _ QGraphicsVideoItem()
         self.videoItem.setSize(QSizeF(640, 480))
@@ -75,7 +75,7 @@ class VideoPlayer(QWidget):
         openButton.c__.c..(self.openFile)
 
         self.playButton _ ?PB..()
-        self.playButton.setEnabled(False)
+        self.playButton.setEnabled F..
         self.playButton.setIcon(self.style().standardIcon(QStyle.SP_MediaPlay))
         self.playButton.c__.c..(self.play)
 
@@ -102,41 +102,41 @@ class VideoPlayer(QWidget):
         self.mediaPlayer.durationChanged.c..(self.durationChanged)
 
     ___ sizeHint(self):
-        return QSize(800, 600)
+        r_ QSize(800, 600)
 
     ___ openFile(self):
-        fileName, _ _ QFileDialog.getOpenFileName(self, "Open Movie",
+        fileName, _ _ ?FD...gOFN..  "Open Movie",
                 QDir.homePath())
 
-        if fileName !_ '':
+        __ fileName !_ '':
             self.mediaPlayer.setMedia(
                     QMediaContent(QUrl.fromLocalFile(fileName)))
             self.playButton.setEnabled(True)
 
     ___ play(self):
-        if self.mediaPlayer.state() == QMediaPlayer.PlayingState:
+        __ self.mediaPlayer.state() == QMediaPlayer.PlayingState:
             self.mediaPlayer.pause()
-        else:
+        ____
             self.mediaPlayer.play()
 
-    ___ mediaStateChanged(self, state):
-        if self.mediaPlayer.state() == QMediaPlayer.PlayingState:
+    ___ mediaStateChanged  state):
+        __ self.mediaPlayer.state() == QMediaPlayer.PlayingState:
             self.playButton.setIcon(
                     self.style().standardIcon(QStyle.SP_MediaPause))
-        else:
+        ____
             self.playButton.setIcon(
                     self.style().standardIcon(QStyle.SP_MediaPlay))
 
-    ___ positionChanged(self, position):
+    ___ positionChanged  position):
         self.positionSlider.setValue(position)
 
-    ___ durationChanged(self, duration):
+    ___ durationChanged  duration):
         self.positionSlider.setRange(0, duration)
 
-    ___ setPosition(self, position):
+    ___ setPosition  position):
         self.mediaPlayer.setPosition(position)
 
-    ___ rotateVideo(self, angle):
+    ___ rotateVideo  angle):
         x _ self.videoItem.boundingRect().width() / 2.0
         y _ self.videoItem.boundingRect().height() / 2.0
 
@@ -144,7 +144,7 @@ class VideoPlayer(QWidget):
                 QTransform().translate(x, y).rotate(angle).translate(-x, -y))
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

@@ -1,5 +1,5 @@
 ______ sys
-____ ? ______ QtCore, QtGui, QtSql, ?W..
+____ ? ______ QtCore, ?G.., QtSql, ?W..
 ______ sportsconnection
 
 
@@ -16,7 +16,7 @@ ___ createView(title, model):
     view _ ?W...QTableView()
     view.setModel(model)
     view.setWindowTitle(title)
-    return view
+    r_ view
 
 
 ___ addrow
@@ -31,7 +31,7 @@ ___ findrow(i):
     delrow _ i.row()
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ ?W...?A..(sys.argv)
     db _ QtSql.QSqlDatabase.addDatabase('QSQLITE')
     db.setDatabaseName('sports.db')

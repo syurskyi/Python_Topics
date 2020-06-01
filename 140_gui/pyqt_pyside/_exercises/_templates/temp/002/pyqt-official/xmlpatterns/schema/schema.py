@@ -43,7 +43,7 @@
 
 
 ____ ?.QtCore ______ QByteArray, QFile, QRegExp, Qt
-____ ?.QtGui ______ (QColor, QFont, QSyntaxHighlighter, QTextCharFormat,
+____ ?.?G.. ______ (QColor, QFont, QSyntaxHighlighter, QTextCharFormat,
         QTextCursor, QTextFormat)
 ____ ?.?W.. ______ ?A.., QMainWindow, QTextEdit
 ____ ?.QtXmlPatterns ______ (QAbstractMessageHandler, QSourceLocation,
@@ -55,21 +55,21 @@ ____ ui_schema ______ Ui_SchemaMainWindow
 
 ___ encode_utf8(ba):
     try:
-        return unicode(ba, encoding_'utf8')
+        r_ unicode(ba, encoding_'utf8')
     except NameError:
-        return str(ba, encoding_'utf8')
+        r_ str(ba, encoding_'utf8')
 
 
 ___ decode_utf8(qs):
     try:
-        return QByteArray(qs.decode(encoding_'utf8'))
+        r_ QByteArray(qs.decode(encoding_'utf8'))
     except AttributeError:
-        return QByteArray(bytes(qs, encoding_'utf8'))
+        r_ QByteArray(bytes(qs, encoding_'utf8'))
 
 
-class XmlSyntaxHighlighter(QSyntaxHighlighter):
+c_ XmlSyntaxHighlighter(QSyntaxHighlighter):
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(XmlSyntaxHighlighter, self).__init__(parent)
 
         self.highlightingRules _ []
@@ -101,7 +101,7 @@ class XmlSyntaxHighlighter(QSyntaxHighlighter):
         self.commentStartExpression _ QRegExp("<!--")
         self.commentEndExpression _ QRegExp("-->")
 
-    ___ highlightBlock(self, text):
+    ___ highlightBlock  text):
         for pattern, format in self.highlightingRules:
             expression _ QRegExp(pattern)
             index _ expression.indexIn(text)
@@ -113,15 +113,15 @@ class XmlSyntaxHighlighter(QSyntaxHighlighter):
         self.setCurrentBlockState(0)
 
         startIndex _ 0
-        if self.previousBlockState() !_ 1:
+        __ self.previousBlockState() !_ 1:
             startIndex _ self.commentStartExpression.indexIn(text)
 
         while startIndex >_ 0:
             endIndex _ self.commentEndExpression.indexIn(text, startIndex)
-            if endIndex == -1:
+            __ endIndex == -1:
                 self.setCurrentBlockState(1)
                 commentLength _ text.length() - startIndex
-            else:
+            ____
                 commentLength _ endIndex - startIndex + self.commentEndExpression.matchedLength()
 
             self.setFormat(startIndex, commentLength, self.commentFormat)
@@ -129,7 +129,7 @@ class XmlSyntaxHighlighter(QSyntaxHighlighter):
                     startIndex + commentLength)
 
 
-class MessageHandler(QAbstractMessageHandler):
+c_ MessageHandler(QAbstractMessageHandler):
 
     ___ __init__(self):
         super(MessageHandler, self).__init__()
@@ -138,20 +138,20 @@ class MessageHandler(QAbstractMessageHandler):
         self.m_sourceLocation _ QSourceLocation()
 
     ___ statusMessage(self):
-        return self.m_description
+        r_ self.m_description
 
     ___ line(self):
-        return self.m_sourceLocation.line()
+        r_ self.m_sourceLocation.line()
 
     ___ column(self):
-        return self.m_sourceLocation.column()
+        r_ self.m_sourceLocation.column()
 
-    ___ handleMessage(self, type, description, identifier, sourceLocation):
+    ___ handleMessage  type, description, identifier, sourceLocation):
         self.m_description _ description
         self.m_sourceLocation _ sourceLocation
 
 
-class MainWindow(QMainWindow, Ui_SchemaMainWindow):
+c_ MainWindow(QMainWindow, Ui_SchemaMainWindow):
 
     ___ __init__(self):
         super(MainWindow, self).__init__()
@@ -178,40 +178,40 @@ class MainWindow(QMainWindow, Ui_SchemaMainWindow):
         self.schemaSelected(0)
         self.instanceSelected(0)
 
-    ___ schemaSelected(self, index):
+    ___ schemaSelected  index):
         self.instanceSelection.clear()
 
-        if index == 0:
+        __ index == 0:
             self.instanceSelection.addItem("Valid Contact Instance")
             self.instanceSelection.addItem("Invalid Contact Instance")
-        elif index == 1:
+        ____ index == 1:
             self.instanceSelection.addItem("Valid Recipe Instance")
             self.instanceSelection.addItem("Invalid Recipe Instance")
-        elif index == 2:
+        ____ index == 2:
             self.instanceSelection.addItem("Valid Order Instance")
             self.instanceSelection.addItem("Invalid Order Instance")
 
         self.textChanged()
 
         schemaFile _ QFile(':/schema_%d.xsd' % index)
-        schemaFile.open(QFile.ReadOnly)
+        schemaFile.o..(QFile.ReadOnly)
         schemaData _ schemaFile.readAll()
-        self.schemaView.setPlainText(encode_utf8(schemaData))
+        self.schemaView.sPT..(encode_utf8(schemaData))
 
         self.validate()
 
-    ___ instanceSelected(self, index):
+    ___ instanceSelected  index):
         index +_ 2 * self.schemaSelection.currentIndex()
         instanceFile _ QFile(':/instance_%d.xml' % index)
-        instanceFile.open(QFile.ReadOnly)
+        instanceFile.o..(QFile.ReadOnly)
         instanceData _ instanceFile.readAll()
-        self.instanceEdit.setPlainText(encode_utf8(instanceData))
+        self.instanceEdit.sPT..(encode_utf8(instanceData))
 
         self.validate()
 
     ___ validate(self):
-        schemaData _ decode_utf8(self.schemaView.toPlainText())
-        instanceData _ decode_utf8(self.instanceEdit.toPlainText())
+        schemaData _ decode_utf8(self.schemaView.tPT..
+        instanceData _ decode_utf8(self.instanceEdit.tPT..
 
         messageHandler _ MessageHandler()
 
@@ -220,18 +220,18 @@ class MainWindow(QMainWindow, Ui_SchemaMainWindow):
         schema.load(schemaData)
 
         errorOccurred _ False
-        if not schema.isValid
+        __ no. schema.isValid
             errorOccurred _ True
-        else:
+        ____
             validator _ QXmlSchemaValidator(schema)
-            if not validator.validate(instanceData):
+            __ no. validator.validate(instanceData):
                 errorOccurred _ True
 
-        if errorOccurred:
+        __ errorOccurred:
             self.validationStatus.sT..(messageHandler.statusMessage())
             self.moveCursor(messageHandler.line(), messageHandler.column())
             background _ Qt.red
-        else:
+        ____
             self.validationStatus.sT..("validation successful")
             background _ Qt.green
 
@@ -241,7 +241,7 @@ class MainWindow(QMainWindow, Ui_SchemaMainWindow):
     ___ textChanged(self):
         self.instanceEdit.setExtraSelections([])
 
-    ___ moveCursor(self, line, column):
+    ___ moveCursor  line, column):
         self.instanceEdit.moveCursor(QTextCursor.Start)
 
         for i in range(1, line):
@@ -265,7 +265,7 @@ class MainWindow(QMainWindow, Ui_SchemaMainWindow):
         self.instanceEdit.setFocus()
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

@@ -1,15 +1,15 @@
-____ PySide2 ______ QtCore, QtGui, ?W..
+____ PySide2 ______ QtCore, ?G.., ?W..
 ____ gradient ______ Gradient
 
 
-class Window(?W...QMainWindow):
+c_ Window(?W...QMainWindow):
 
     ___ __init__(self):
         super().__init__()
 
         gradient _ Gradient()
         gradient.setGradient([(0, 'black'), (1, 'green'), (0.5, 'red')])
-        self.setCentralWidget(gradient)
+        self.sCW..(gradient)
 
 
 app _ ?W...?

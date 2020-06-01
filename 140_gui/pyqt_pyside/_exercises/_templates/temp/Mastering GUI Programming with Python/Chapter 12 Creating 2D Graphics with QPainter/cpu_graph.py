@@ -1,14 +1,14 @@
 ______ sys
-____ ? ______ ?W.. as qtw
-____ ? ______ QtCore as qtc
-____ ? ______ QtGui as qtg
+____ ? ______ ?W.. __ qtw
+____ ? ______ QtCore __ qtc
+____ ? ______ ?G.. __ qtg
 ____ collections ______ deque
 
 # install via pip
 ____ psutil ______ cpu_percent
 ______ math
 
-class GraphWidget(qtw.QWidget):
+c_ GraphWidget(qtw.QWidget):
     """A widget to display a running graph of information"""
 
     crit_color _ qtg.QColor(255, 0, 0)  # red
@@ -30,20 +30,20 @@ class GraphWidget(qtw.QWidget):
         self.values _ deque([self.minimum] * data_width, maxlen_data_width)
         self.setFixedWidth(data_width * scale)
 
-    ___ add_value(self, value):
+    ___ add_value  value):
         value _ max(value, self.minimum)
         value _ min(value, self.maximum)
         self.values.append(value)
         self.update()
 
-    ___ val_to_y(self, value):
+    ___ val_to_y  value):
         data_range _ self.maximum - self.minimum
         value_fraction _ value / data_range
         y_offset _ round(value_fraction * self.height())
         y _ self.height() - y_offset
-        return y
+        r_ y
 
-    ___ paintEvent(self, paint_event):
+    ___ paintEvent  paint_event):
         painter _ qtg.QPainter(self)
 
         # draw the background
@@ -82,7 +82,7 @@ class GraphWidget(qtw.QWidget):
         painter.setPen(qtc.Qt.NoPen)
 
         # Draw the paths for the chart
-        self.start_value _ getattr(self, 'start_value', self.minimum)
+        self.start_value _ getattr  'start_value', self.minimum)
         last_value _ self.start_value
         self.start_value _ self.values[0]
         for indx, value in enumerate(self.values):
@@ -108,14 +108,14 @@ class GraphWidget(qtw.QWidget):
             last_value _ value
 
 
-class MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.QMainWindow):
 
     ___ __init__(self):
         """MainWindow constructor."""
         super().__init__()
         # Code starts here
         self.graph _ GraphWidget(self)
-        self.setCentralWidget(self.graph)
+        self.sCW..(self.graph)
 
         self.timer _ qtc.QTimer()
         self.timer.setInterval(1000)
@@ -133,7 +133,7 @@ class MainWindow(qtw.QMainWindow):
         self.graph.add_value(cpu_usage)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtw.?A..(sys.argv)
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.

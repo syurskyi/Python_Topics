@@ -1,4 +1,4 @@
-____ ?.QtGui ______ *
+____ ?.?G.. ______ *
 ____ ?.?W.. ______ *
 ____ ?.QtCore ______ *
 ____ ?.QtPrintSupport ______ *
@@ -10,13 +10,13 @@ ______ sys
 ______ time
 
 
-class MainWindow(QMainWindow):
+c_ MainWindow ?MW..
 
-    ___ __init__(self, *args, **kwargs):
+    ___ __init__  *args, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
 
         self.available_cameras _ QCameraInfo.availableCameras()
-        if not self.available_cameras:
+        __ no. self.available_cameras:
             pass #quit
 
         self.status _ QStatusBar()
@@ -27,7 +27,7 @@ class MainWindow(QMainWindow):
 
         self.viewfinder _ QCameraViewfinder()
         self.viewfinder.s..
-        self.setCentralWidget(self.viewfinder)
+        self.sCW..(self.viewfinder)
 
         # Set the default camera.
         self.select_camera(0)
@@ -37,15 +37,15 @@ class MainWindow(QMainWindow):
         camera_toolbar.setIconSize(QSize(14, 14))
         self.addToolBar(camera_toolbar)
 
-        photo_action _ QAction(QIcon(os.path.join('images', 'camera-black.png')), "Take photo...", self)
+        photo_action _ ?A..(QIcon(os.path.join('images', 'camera-black.png')), "Take photo...", self)
         photo_action.setStatusTip("Take photo of current view")
-        photo_action.triggered.c..(self.take_photo)
-        camera_toolbar.addAction(photo_action)
+        photo_action.t__.c..(self.take_photo)
+        camera_toolbar.aA..(photo_action)
 
-        change_folder_action _ QAction(QIcon(os.path.join('images', 'blue-folder-horizontal-open.png')), "Change save location...", self)
+        change_folder_action _ ?A..(QIcon(os.path.join('images', 'blue-folder-horizontal-open.png')), "Change save location...", self)
         change_folder_action.setStatusTip("Change folder where photos are saved.")
-        change_folder_action.triggered.c..(self.change_folder)
-        camera_toolbar.addAction(change_folder_action)
+        change_folder_action.t__.c..(self.change_folder)
+        camera_toolbar.aA..(change_folder_action)
 
 
         camera_selector _ QComboBox()
@@ -58,7 +58,7 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("NSAViewer")
         self.s..
 
-    ___ select_camera(self, i):
+    ___ select_camera  i):
         self.camera _ QCamera(self.available_cameras[i])
         self.camera.setViewfinder(self.viewfinder)
         self.camera.setCaptureMode(QCamera.CaptureStillImage)
@@ -82,12 +82,12 @@ class MainWindow(QMainWindow):
         self.save_seq +_ 1
 
     ___ change_folder(self):
-        path _ QFileDialog.getExistingDirectory(self, "Snapshot save location", "")
-        if path:
+        path _ ?FD...getExistingDirectory  "Snapshot save location", "")
+        __ path:
             self.save_path _ path
             self.save_seq _ 0
 
-    ___ alert(self, s):
+    ___ alert  s):
         """
         Handle errors coming from QCamera dn QCameraImageCapture by displaying alerts.
         """
@@ -95,10 +95,10 @@ class MainWindow(QMainWindow):
         err.showMessage(s)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     app _ ?A..(sys.argv)
-    app.setApplicationName("NSAViewer")
+    app.sAN..("NSAViewer")
 
     window _ MainWindow()
     app.e..

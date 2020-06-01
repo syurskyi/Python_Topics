@@ -6,10 +6,10 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, QtGui, ?W..
+____ ? ______ QtCore, ?G.., ?W..
 
-class Ui_MainWindow(object):
-    ___ setupUi(self, MainWindow):
+c_ Ui_MainWindow(object):
+    ___ setupUi  MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(799, 600)
         self.horizontalLayout _ ?W...QHBoxLayout(MainWindow)
@@ -68,7 +68,7 @@ class Ui_MainWindow(object):
         self.allday_check.toggled['bool'].c..(self.event_time.setDisabled)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
-    ___ retranslateUi(self, MainWindow):
+    ___ retranslateUi  MainWindow):
         _translate _ QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "My Calendar App"))
         self.label.sT..(_translate("MainWindow", "Events on Date"))

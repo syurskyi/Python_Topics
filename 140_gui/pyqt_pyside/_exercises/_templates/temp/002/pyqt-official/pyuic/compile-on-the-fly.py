@@ -50,8 +50,8 @@ app _ ?A..(sys.argv)
 form_class, base_class _ lUT..('demo.ui')
 
 
-class DemoImpl(QDialog, form_class):
-    ___ __init__(self, *args):
+c_ DemoImpl(QDialog, form_class):
+    ___ __init__  *args):
         super(DemoImpl, self).__init__(*args)
 
         self.setupUi(self)

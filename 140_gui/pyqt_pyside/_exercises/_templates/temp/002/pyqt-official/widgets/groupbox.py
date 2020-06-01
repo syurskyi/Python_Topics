@@ -47,8 +47,8 @@ ____ ?.?W.. ______ (?A.., QCheckBox, QGridLayout, QGroupBox,
         QMenu, ?PB.., QRadioButton, QVBoxLayout, QWidget)
 
 
-class Window(QWidget):
-    ___ __init__(self, parent_None):
+c_ Window(QWidget):
+    ___ __init__  parent_None):
         super(Window, self).__init__(parent)
 
         grid _ QGridLayout()
@@ -77,12 +77,12 @@ class Window(QWidget):
         vbox.addStretch(1)
         groupBox.setLayout(vbox)
 
-        return groupBox
+        r_ groupBox
 
     ___ createSecondExclusiveGroup(self):
         groupBox _ QGroupBox("E&xclusive Radio Buttons")
         groupBox.setCheckable(True)
-        groupBox.setChecked(False)
+        groupBox.setChecked F..
 
         radio1 _ QRadioButton("Rad&io button 1")
         radio2 _ QRadioButton("Radi&o button 2")
@@ -99,7 +99,7 @@ class Window(QWidget):
         vbox.addStretch(1)
         groupBox.setLayout(vbox)
 
-        return groupBox
+        r_ groupBox
 
     ___ createNonExclusiveGroup(self):
         groupBox _ QGroupBox("Non-Exclusive Checkboxes")
@@ -119,7 +119,7 @@ class Window(QWidget):
         vbox.addStretch(1)
         groupBox.setLayout(vbox)
 
-        return groupBox
+        r_ groupBox
 
     ___ createPushButtonGroup(self):
         groupBox _ QGroupBox("&Push Buttons")
@@ -135,17 +135,17 @@ class Window(QWidget):
 
         popupButton _ ?PB..("Pop&up Button")
         menu _ QMenu(self)
-        menu.addAction("&First Item")
-        menu.addAction("&Second Item")
-        menu.addAction("&Third Item")
-        menu.addAction("F&ourth Item")
+        menu.aA..("&First Item")
+        menu.aA..("&Second Item")
+        menu.aA..("&Third Item")
+        menu.aA..("F&ourth Item")
         popupButton.setMenu(menu)
 
-        newAction _ menu.addAction("Submenu")
+        newAction _ menu.aA..("Submenu")
         subMenu _ QMenu("Popup Submenu", self)
-        subMenu.addAction("Item 1")
-        subMenu.addAction("Item 2")
-        subMenu.addAction("Item 3")
+        subMenu.aA..("Item 1")
+        subMenu.aA..("Item 2")
+        subMenu.aA..("Item 3")
         newAction.setMenu(subMenu)
 
         vbox _ QVBoxLayout()
@@ -156,10 +156,10 @@ class Window(QWidget):
         vbox.addStretch(1)
         groupBox.setLayout(vbox)
 
-        return groupBox
+        r_ groupBox
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

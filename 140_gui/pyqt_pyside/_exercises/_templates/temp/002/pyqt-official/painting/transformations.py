@@ -43,14 +43,14 @@
 
 
 ____ ?.QtCore ______ QPointF, QSize, Qt
-____ ?.QtGui ______ QBrush, QFont, QFontMetrics, QPainter, QPainterPath
+____ ?.?G.. ______ QBrush, QFont, QFontMetrics, QPainter, QPainterPath
 ____ ?.?W.. ______ ?A.., QComboBox, QGridLayout, QWidget
 
 
 NoTransformation, Translate, Rotate, Scale _ range(4)
 
-class RenderArea(QWidget):
-    ___ __init__(self, parent_None):
+c_ RenderArea(QWidget):
+    ___ __init__  parent_None):
         super(RenderArea, self).__init__(parent)
 
         newFont _ self.font()
@@ -63,21 +63,21 @@ class RenderArea(QWidget):
         self.shape _ QPainterPath()
         self.operations _ []
 
-    ___ setOperations(self, operations):
+    ___ setOperations  operations):
         self.operations _ operations
         self.update()
 
-    ___ setShape(self, shape):
+    ___ setShape  shape):
         self.shape _ shape
         self.update()
 
     ___ minimumSizeHint(self):
-        return QSize(182, 182)
+        r_ QSize(182, 182)
 
     ___ sizeHint(self):
-        return QSize(232, 232)
+        r_ QSize(232, 232)
 
-    ___ paintEvent(self, event):
+    ___ paintEvent  event):
         painter _ QPainter(self)
         painter.setRenderHint(QPainter.Antialiasing)
         painter.fillRect(event.rect(), QBrush(Qt.white))
@@ -94,7 +94,7 @@ class RenderArea(QWidget):
         self.transformPainter(painter)
         self.drawCoordinates(painter)
 
-    ___ drawCoordinates(self, painter):
+    ___ drawCoordinates  painter):
         painter.setPen(Qt.red)
 
         painter.drawLine(0, 0, 50, 0)
@@ -109,28 +109,28 @@ class RenderArea(QWidget):
         painter.drawText(0 - self.yBoundingRect.width() / 2,
                          60 + self.yBoundingRect.height() / 2, "y")
 
-    ___ drawOutline(self, painter):
+    ___ drawOutline  painter):
         painter.setPen(Qt.darkGreen)
         painter.setPen(Qt.DashLine)
         painter.setBrush(Qt.NoBrush)
         painter.drawRect(0, 0, 100, 100)
 
-    ___ drawShape(self, painter):
+    ___ drawShape  painter):
         painter.fillPath(self.shape, Qt.blue)
 
-    ___ transformPainter(self, painter):
+    ___ transformPainter  painter):
         for operation in self.operations:
-            if operation == Translate:
+            __ operation == Translate:
                 painter.translate(50, 50)
 
-            elif operation == Scale:
+            ____ operation == Scale:
                 painter.scale(0.75, 0.75)
 
-            elif operation == Rotate:
+            ____ operation == Rotate:
                 painter.rotate(60)
 
 
-class Window(QWidget):
+c_ Window(QWidget):
 
     operationTable _ (NoTransformation, Rotate, Scale, Translate)
     NumTransformedAreas _ 3
@@ -232,14 +232,14 @@ class Window(QWidget):
             operations.append(Window.operationTable[index])
             self.transformedRenderAreas[i].setOperations(operations[:])
 
-    ___ shapeSelected(self, index):
+    ___ shapeSelected  index):
         shape _ self.shapes[index]
         self.originalRenderArea.setShape(shape)
         for i in range(Window.NumTransformedAreas):
             self.transformedRenderAreas[i].setShape(shape)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

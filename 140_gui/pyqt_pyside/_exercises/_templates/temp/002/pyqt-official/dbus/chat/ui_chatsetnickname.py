@@ -7,10 +7,10 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, QtGui, ?W..
+____ ? ______ QtCore, ?G.., ?W..
 
-class Ui_NicknameDialog(object):
-    ___ setupUi(self, NicknameDialog):
+c_ Ui_NicknameDialog(object):
+    ___ setupUi  NicknameDialog):
         NicknameDialog.setObjectName("NicknameDialog")
         NicknameDialog.resize(396, 105)
         sizePolicy _ ?W...QSizePolicy(?W...QSizePolicy.Policy(1), ?W...QSizePolicy.Policy(1))
@@ -59,7 +59,7 @@ class Ui_NicknameDialog(object):
         self.cancelButton.c__.c..(NicknameDialog.reject)
         QtCore.QMetaObject.connectSlotsByName(NicknameDialog)
 
-    ___ retranslateUi(self, NicknameDialog):
+    ___ retranslateUi  NicknameDialog):
         _translate _ QtCore.QCoreApplication.translate
         NicknameDialog.setWindowTitle(_translate("NicknameDialog", "Set nickname"))
         self.label.sT..(_translate("NicknameDialog", "New nickname:"))

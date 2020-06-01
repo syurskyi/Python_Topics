@@ -45,45 +45,45 @@
 ______ array
 
 ____ ?.QtCore ______ QEvent
-____ ?.QtGui ______ (QGuiApplication, QMatrix4x4, QOpenGLContext,
+____ ?.?G.. ______ (QGuiApplication, QMatrix4x4, QOpenGLContext,
         QOpenGLShader, QOpenGLShaderProgram, QOpenGLVersionProfile,
         QSurfaceFormat, QWindow)
 
 
-class OpenGLWindow(QWindow):
-    ___ __init__(self, parent_None):
+c_ OpenGLWindow(QWindow):
+    ___ __init__  parent_None):
         super(OpenGLWindow, self).__init__(parent)
 
         self.m_update_pending _ False
         self.m_animating _ False
-        self.m_context _ None
-        self.m_gl _ None
+        self.m_context _ N..
+        self.m_gl _ N..
 
         self.setSurfaceType(QWindow.OpenGLSurface)
 
     ___ initialize(self):
         pass
 
-    ___ setAnimating(self, animating):
+    ___ setAnimating  animating):
         self.m_animating _ animating
 
-        if animating:
+        __ animating:
             self.renderLater()
 
     ___ renderLater(self):
-        if not self.m_update_pending:
+        __ no. self.m_update_pending:
             self.m_update_pending _ True
-            QGuiApplication.postEvent(self, QEvent(QEvent.UpdateRequest))
+            QGuiApplication.postEvent  QEvent(QEvent.UpdateRequest))
 
     ___ renderNow(self):
-        if not self.isExposed
-            return
+        __ no. self.isExposed
+            r_
 
         self.m_update_pending _ False
 
         needsInitialize _ False
 
-        if self.m_context is None:
+        __ self.m_context __ N..:
             self.m_context _ QOpenGLContext(self)
             self.m_context.setFormat(self.requestedFormat())
             self.m_context.create()
@@ -92,7 +92,7 @@ class OpenGLWindow(QWindow):
 
         self.m_context.makeCurrent(self)
 
-        if needsInitialize:
+        __ needsInitialize:
             version_profile _ QOpenGLVersionProfile()
             version_profile.setVersion(2, 0)
             self.m_gl _ self.m_context.versionFunctions(version_profile)
@@ -104,24 +104,24 @@ class OpenGLWindow(QWindow):
 
         self.m_context.swapBuffers(self)
 
-        if self.m_animating:
+        __ self.m_animating:
             self.renderLater()
 
-    ___ event(self, event):
-        if event.type() == QEvent.UpdateRequest:
+    ___ event  event):
+        __ event.type() == QEvent.UpdateRequest:
             self.renderNow()
-            return True
+            r_ True
 
-        return super(OpenGLWindow, self).event(event)
+        r_ super(OpenGLWindow, self).event(event)
 
-    ___ exposeEvent(self, event):
+    ___ exposeEvent  event):
         self.renderNow()
 
-    ___ resizeEvent(self, event):
+    ___ resizeEvent  event):
         self.renderNow()
 
 
-class TriangleWindow(OpenGLWindow):
+c_ TriangleWindow(OpenGLWindow):
     vertexShaderSource _ '''
 attribute highp vec4 posAttr;
 attribute lowp vec4 colAttr;
@@ -164,7 +164,7 @@ void main() {
         self.m_colAttr _ self.m_program.attributeLocation('colAttr')
         self.m_matrixUniform _ self.m_program.uniformLocation('matrix')
 
-    ___ render(self, gl):
+    ___ render  gl):
         gl.glViewport(0, 0, self.width(), self.height())
 
         gl.glClear(gl.GL_COLOR_BUFFER_BIT)
@@ -204,7 +204,7 @@ void main() {
         self.m_frame +_ 1
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

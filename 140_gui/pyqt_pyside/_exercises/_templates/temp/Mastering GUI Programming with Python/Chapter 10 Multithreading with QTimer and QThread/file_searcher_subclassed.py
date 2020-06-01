@@ -1,10 +1,10 @@
 ______ sys
-____ ? ______ ?W.. as qtw
-____ ? ______ QtGui as qtg
-____ ? ______ QtCore as qtc
+____ ? ______ ?W.. __ qtw
+____ ? ______ ?G.. __ qtg
+____ ? ______ QtCore __ qtc
 
 
-class SlowSearcherThread(qtc.QThread):
+c_ SlowSearcherThread(qtc.QThread):
     """A somewhat deliberately slow searcher."""
 
     match_found _ qtc.pyqtSignal(str)
@@ -13,10 +13,10 @@ class SlowSearcherThread(qtc.QThread):
 
     ___ __init__(self):
         super().__init__()
-        self.term _ None
+        self.term _ N..
 
     @qtc.pyqtSlot(str)
-    ___ set_term(self, term):
+    ___ set_term  term):
         self.term _ term
 
     @qtc.pyqtSlot()
@@ -26,7 +26,7 @@ class SlowSearcherThread(qtc.QThread):
         self._search(self.term, root)
         self.finished.emit()
 
-    ___ _search(self, term, path):
+    ___ _search  term, path):
         self.directory_changed.emit(path)
         directory _ qtc.QDir(path)
         directory.setFilter(
@@ -35,14 +35,14 @@ class SlowSearcherThread(qtc.QThread):
             qtc.QDir.NoSymLinks
         )
         for entry in directory.entryInfoList
-            if term in entry.filePath
+            __ term in entry.filePath
                 print(entry.filePath())
                 self.match_found.emit(entry.filePath())
-            if entry.isDir
+            __ entry.isDir
                 self._search(term, entry.filePath())
 
 
-class SearchForm(qtw.QWidget):
+c_ SearchForm(qtw.QWidget):
 
     textChanged _ qtc.pyqtSignal(str)
     returnPressed _ qtc.pyqtSignal()
@@ -59,12 +59,12 @@ class SearchForm(qtw.QWidget):
         self.layout().addWidget(self.results)
         self.returnPressed.c..(self.results.clear)
 
-    ___ addResult(self, result):
+    ___ addResult  result):
         self.results.addItem(result)
 
 
 
-class MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.QMainWindow):
 
     ___ __init__(self):
         """MainWindow constructor.
@@ -76,7 +76,7 @@ class MainWindow(qtw.QMainWindow):
         # Main UI code goes here
 
         form _ SearchForm()
-        self.setCentralWidget(form)
+        self.sCW..(form)
         self.ss _ SlowSearcherThread()
 
         # Connect to search engine
@@ -92,11 +92,11 @@ class MainWindow(qtw.QMainWindow):
     ___ on_finished(self):
         self.statusBar().showMessage('Search Finished')
 
-    ___ on_directory_changed(self, path):
+    ___ on_directory_changed  path):
         self.statusBar().showMessage(f'Searching in: {path}')
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtw.?A..(sys.argv)
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.

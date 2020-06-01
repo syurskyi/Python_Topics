@@ -46,13 +46,13 @@ ______ sys
 ______ math
 
 ____ ?.QtCore ______ QPointF, QRect, QRectF, Qt, QTimer
-____ ?.QtGui ______ (QBrush, QColor, QFont, QLinearGradient, QPainter,
+____ ?.?G.. ______ (QBrush, QColor, QFont, QLinearGradient, QPainter,
         QPen, QSurfaceFormat)
 ____ ?.?W.. ______ (?A.., QGridLayout, QLabel, QOpenGLWidget,
         QWidget)
 
 
-class Helper(object):
+c_ Helper(object):
     ___ __init__(self):
         gradient _ QLinearGradient(QPointF(50, -20), QPointF(80, 20))
         gradient.setColorAt(0.0, Qt.white)
@@ -66,7 +66,7 @@ class Helper(object):
         self.textFont _ QFont()
         self.textFont.setPixelSize(50)
 
-    ___ paint(self, painter, event, elapsed):
+    ___ paint  painter, event, elapsed):
         painter.fillRect(event.rect(), self.background)
         painter.translate(100, 100)
 
@@ -91,8 +91,8 @@ class Helper(object):
         painter.drawText(QRect(-50, -50, 100, 100), Qt.AlignCenter, "Qt")
 
 
-class Widget(QWidget):
-    ___ __init__(self, helper, parent):
+c_ Widget(QWidget):
+    ___ __init__  helper, parent):
         super(Widget, self).__init__(parent)
 
         self.helper _ helper
@@ -103,7 +103,7 @@ class Widget(QWidget):
         self.elapsed _ (self.elapsed + self.sender().interval()) % 1000
         self.repaint()
 
-    ___ paintEvent(self, event):
+    ___ paintEvent  event):
         painter _ QPainter()
         painter.begin(self)
         painter.setRenderHint(QPainter.Antialiasing)
@@ -111,20 +111,20 @@ class Widget(QWidget):
         painter.end()
 
 
-class GLWidget(QOpenGLWidget):
-    ___ __init__(self, helper, parent):
+c_ GLWidget(QOpenGLWidget):
+    ___ __init__  helper, parent):
         super(GLWidget, self).__init__(parent)
 
         self.helper _ helper
         self.elapsed _ 0
         self.setFixedSize(200, 200)
-        self.setAutoFillBackground(False)
+        self.setAutoFillBackground F..
 
     ___ animate(self):
         self.elapsed _ (self.elapsed + self.sender().interval()) % 1000
         self.update()
 
-    ___ paintEvent(self, event):
+    ___ paintEvent  event):
         painter _ QPainter()
         painter.begin(self)
         painter.setRenderHint(QPainter.Antialiasing)
@@ -132,7 +132,7 @@ class GLWidget(QOpenGLWidget):
         painter.end()
 
 
-class Window(QWidget):
+c_ Window(QWidget):
     ___ __init__(self):
         super(Window, self).__init__()
 
@@ -159,7 +159,7 @@ class Window(QWidget):
         timer.start(50)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     app _ ?A..(sys.argv)
 

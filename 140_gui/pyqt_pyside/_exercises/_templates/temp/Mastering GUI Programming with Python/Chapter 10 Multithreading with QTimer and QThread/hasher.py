@@ -1,9 +1,9 @@
 ______ sys
-____ ? ______ ?W.. as qtw
-____ ? ______ QtCore as qtc
+____ ? ______ ?W.. __ qtw
+____ ? ______ QtCore __ qtc
 
 
-class HashForm(qtw.QWidget):
+c_ HashForm(qtw.QWidget):
 
     submitted _ qtc.pyqtSignal(str, str, int)
 
@@ -22,13 +22,13 @@ class HashForm(qtw.QWidget):
         self.layout().addRow(submit)
 
     ___ on_source_click(self):
-        dirname _ qtw.QFileDialog.getExistingDirectory()
-        if dirname:
+        dirname _ qtw.?FD...getExistingDirectory()
+        __ dirname:
             self.source_path.sT..(dirname)
 
     ___ on_dest_click(self):
-        filename, _ _ qtw.QFileDialog.getSaveFileName()
-        if filename:
+        filename, _ _ qtw.?FD...getSaveFileName()
+        __ filename:
             self.destination_file.sT..(filename)
 
     ___ on_submit(self):
@@ -39,11 +39,11 @@ class HashForm(qtw.QWidget):
         )
 
 
-class HashRunner(qtc.QRunnable):
+c_ HashRunner(qtc.QRunnable):
 
     file_lock _ qtc.QMutex()
 
-    ___ __init__(self, infile, outfile):
+    ___ __init__  infile, outfile):
         super().__init__()
         self.infile _ infile
         self.outfile _ outfile
@@ -54,8 +54,8 @@ class HashRunner(qtc.QRunnable):
     ___ run(self):
         print(f'hashing {self.infile}')
         self.hasher.reset()
-        with open(self.infile, 'rb') as fh:
-            self.hasher.addData(fh.read())
+        w__ o..(self.infile, 'rb') __ fh:
+            self.hasher.addData(fh.r..
         hash_string _ bytes(self.hasher.result().toHex()).decode('UTF-8')
         # Traditional method:
         #try:
@@ -66,12 +66,12 @@ class HashRunner(qtc.QRunnable):
         #    self.file_lock.unlock()
 
         # Better method:
-        with qtc.QMutexLocker(self.file_lock):
-            with open(self.outfile, 'a', encoding_'utf-8') as out:
-                out.write(f'{self.infile}\t{hash_string}\n')
+        w__ qtc.QMutexLocker(self.file_lock):
+            w__ o..(self.outfile, 'a', encoding_'utf-8') __ out:
+                out.w..(f'{self.infile}\t{hash_string}\n')
 
 
-class HashManager(qtc.QObject):
+c_ HashManager(qtc.QObject):
 
     finished _ qtc.pyqtSignal()
 
@@ -80,7 +80,7 @@ class HashManager(qtc.QObject):
         self.pool _ qtc.QThreadPool.globalInstance()
 
     @qtc.pyqtSlot(str, str, int)
-    ___ do_hashing(self, source, destination, threads):
+    ___ do_hashing  source, destination, threads):
         self.pool.setMaxThreadCount(threads)
         qdir _ qtc.QDir(source)
         for filename in qdir.entryList(qtc.QDir.Files):
@@ -95,7 +95,7 @@ class HashManager(qtc.QObject):
         self.finished.emit()
 
 
-class MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.QMainWindow):
 
     ___ __init__(self):
         """MainWindow constructor.
@@ -106,7 +106,7 @@ class MainWindow(qtw.QMainWindow):
         super().__init__()
         # Main UI code goes here
         form _ HashForm()
-        self.setCentralWidget(form)
+        self.sCW..(form)
         self.manager _ HashManager()
 
         # Move it to another thread so we can notify the user when things
@@ -125,7 +125,7 @@ class MainWindow(qtw.QMainWindow):
         self.s..
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtw.?A..(sys.argv)
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.

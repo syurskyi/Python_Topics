@@ -44,11 +44,11 @@
 
 ____ ?.QtCore ______ (pyqtProperty, pyqtSignal, pyqtSlot, QPoint, QSize,
         Qt, QTime, QTimer)
-____ ?.QtGui ______ QBrush, QColor, QPainter, QPen, QPolygon
+____ ?.?G.. ______ QBrush, QColor, QPainter, QPen, QPolygon
 ____ ?.?W.. ______ ?A.., QWidget
 
 
-class PyAnalogClock(QWidget):
+c_ PyAnalogClock(QWidget):
     """PyAnalogClock(QWidget)
 
     Provides an analog clock custom widget with signals, slots and properties.
@@ -62,7 +62,7 @@ class PyAnalogClock(QWidget):
     # Emitted when the clock's time zone changes.
     timeZoneChanged _ pyqtSignal(int)
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
 
         super(PyAnalogClock, self).__init__(parent)
 
@@ -90,7 +90,7 @@ class PyAnalogClock(QWidget):
         self.hourColor _ QColor(0, 127, 0)
         self.minuteColor _ QColor(0, 127, 127, 191)
 
-    ___ paintEvent(self, event):
+    ___ paintEvent  event):
 
         side _ min(self.width(), self.height())
         time _ QTime.currentTime()
@@ -127,7 +127,7 @@ class PyAnalogClock(QWidget):
         painter.setPen(QPen(self.minuteColor))
 
         for j in range(0, 60):
-            if (j % 5) !_ 0:
+            __ (j % 5) !_ 0:
                 painter.drawLine(92, 0, 96, 0)
             painter.rotate(6.0)
 
@@ -135,11 +135,11 @@ class PyAnalogClock(QWidget):
 
     ___ minimumSizeHint(self):
 
-        return QSize(50, 50)
+        r_ QSize(50, 50)
 
     ___ sizeHint(self):
 
-        return QSize(100, 100)
+        r_ QSize(100, 100)
 
     ___ updateTime(self):
 
@@ -151,7 +151,7 @@ class PyAnalogClock(QWidget):
     # The getter just returns the internal time zone value.
     ___ getTimeZone(self):
 
-        return self.timeZoneOffset
+        r_ self.timeZoneOffset
 
     # The setTimeZone() method is also defined to be a slot. The @pyqtSlot
     # decorator is used to tell PyQt which argument type the method expects,
@@ -159,7 +159,7 @@ class PyAnalogClock(QWidget):
     # name that accept different argument types.
 
     @pyqtSlot(int)
-    ___ setTimeZone(self, value):
+    ___ setTimeZone  value):
 
         self.timeZoneOffset _ value
         self.timeZoneChanged.emit(value)
@@ -179,7 +179,7 @@ class PyAnalogClock(QWidget):
     timeZone _ pyqtProperty(int, getTimeZone, setTimeZone, resetTimeZone)
 
 
-if __name__ == "__main__":
+__ __name__ == "__main__":
 
     ______ sys
 

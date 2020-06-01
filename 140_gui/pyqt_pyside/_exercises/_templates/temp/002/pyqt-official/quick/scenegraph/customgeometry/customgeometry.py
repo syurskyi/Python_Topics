@@ -42,7 +42,7 @@
 
 
 ____ ?.QtCore ______ pyqtProperty, pyqtSignal, QPointF, QUrl
-____ ?.QtGui ______ QColor, QGuiApplication
+____ ?.?G.. ______ QColor, QGuiApplication
 ____ ?.QtQml ______ qmlRegisterType
 ____ ?.QtQuick ______ (QQuickItem, QQuickView, QSGFlatColorMaterial,
         QSGGeometry, QSGGeometryNode, QSGNode)
@@ -50,17 +50,17 @@ ____ ?.QtQuick ______ (QQuickItem, QQuickView, QSGFlatColorMaterial,
 ______ customgeometry_rc
 
 
-class BezierCurve(QQuickItem):
+c_ BezierCurve(QQuickItem):
 
     p1Changed _ pyqtSignal(QPointF)
 
     @pyqtProperty(QPointF, notify_p1Changed)
     ___ p1(self):
-        return self._p1
+        r_ self._p1
 
     @p1.setter
-    ___ p1(self, p):
-        if self._p1 !_ p:
+    ___ p1  p):
+        __ self._p1 !_ p:
             self._p1 _ QPointF(p)
             self.p1Changed.emit(p)
             self.update()
@@ -69,11 +69,11 @@ class BezierCurve(QQuickItem):
 
     @pyqtProperty(QPointF, notify_p2Changed)
     ___ p2(self):
-        return self._p2
+        r_ self._p2
 
     @p2.setter
-    ___ p2(self, p):
-        if self._p2 !_ p:
+    ___ p2  p):
+        __ self._p2 !_ p:
             self._p2 _ QPointF(p)
             self.p2Changed.emit(p)
             self.update()
@@ -82,11 +82,11 @@ class BezierCurve(QQuickItem):
 
     @pyqtProperty(QPointF, notify_p3Changed)
     ___ p3(self):
-        return self._p3
+        r_ self._p3
 
     @p3.setter
-    ___ p3(self, p):
-        if self._p3 !_ p:
+    ___ p3  p):
+        __ self._p3 !_ p:
             self._p3 _ QPointF(p)
             self.p3Changed.emit(p)
             self.update()
@@ -95,11 +95,11 @@ class BezierCurve(QQuickItem):
 
     @pyqtProperty(QPointF, notify_p4Changed)
     ___ p4(self):
-        return self._p4
+        r_ self._p4
 
     @p4.setter
-    ___ p4(self, p):
-        if self._p4 !_ p:
+    ___ p4  p):
+        __ self._p4 !_ p:
             self._p4 _ QPointF(p)
             self.p4Changed.emit(p)
             self.update()
@@ -108,16 +108,16 @@ class BezierCurve(QQuickItem):
 
     @pyqtProperty(int, notify_segmentCountChanged)
     ___ segmentCount(self):
-        return self._segmentCount
+        r_ self._segmentCount
 
     @segmentCount.setter
-    ___ segmentCount(self, count):
-        if self._segmentCount !_ count:
+    ___ segmentCount  count):
+        __ self._segmentCount !_ count:
             self._segmentCount _ count
             self.segmentCountChanged.emit(count)
             self.update()
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(BezierCurve, self).__init__(parent)
 
         self._p1 _ QPointF(0, 0)
@@ -127,12 +127,12 @@ class BezierCurve(QQuickItem):
 
         self._segmentCount _ 32
 
-        self._root_node _ None
+        self._root_node _ N..
 
         self.setFlag(QQuickItem.ItemHasContents, True)
 
-    ___ updatePaintNode(self, oldNode, nodeData):
-        if self._root_node is None:
+    ___ updatePaintNode  oldNode, nodeData):
+        __ self._root_node __ N..:
             self._root_node _ QSGGeometryNode()
 
             geometry _ QSGGeometry(QSGGeometry.defaultAttributes_Point2D(),
@@ -146,7 +146,7 @@ class BezierCurve(QQuickItem):
             material.setColor(QColor(255, 0, 0))
             self._root_node.setMaterial(material)
             self._root_node.setFlag(QSGNode.OwnsMaterial)
-        else:
+        ____
             geometry _ self._root_node.geometry()
             geometry.allocate(self._segmentCount)
 
@@ -167,10 +167,10 @@ class BezierCurve(QQuickItem):
 
         self._root_node.markDirty(QSGNode.DirtyGeometry)
 
-        return self._root_node
+        r_ self._root_node
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     ______ sys
 
     app _ QGuiApplication(sys.argv)

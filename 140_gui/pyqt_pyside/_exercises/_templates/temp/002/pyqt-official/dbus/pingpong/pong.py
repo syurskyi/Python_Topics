@@ -48,26 +48,26 @@ ____ ?.QtCore ______ pyqtSlot, QCoreApplication, QMetaObject, QObject
 ____ ?.QtDBus ______ QDBusConnection
 
 
-class Pong(QObject):
+c_ Pong(QObject):
 
     @pyqtSlot(str, result_str)
-    ___ ping(self, arg):
+    ___ ping  arg):
         QMetaObject.invokeMethod(QCoreApplication.instance(), 'quit')
 
-        return "ping(\"%s\") got called" % arg
+        r_ "ping(\"%s\") got called" % arg
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ QCoreApplication(sys.argv)
 
-    if not QDBusConnection.sessionBus().isConnected
-        sys.stderr.write("Cannot connect to the D-Bus session bus.\n"
+    __ no. QDBusConnection.sessionBus().isConnected
+        sys.stderr.w..("Cannot connect to the D-Bus session bus.\n"
                 "To start it, run:\n"
                 "\teval `dbus-launch --auto-syntax`\n");
         sys.exit(1)
 
-    if not QDBusConnection.sessionBus().registerService('org.example.QtDBus.PingExample'):
-        sys.stderr.write("%s\n" % QDBusConnection.sessionBus().lastError().message())
+    __ no. QDBusConnection.sessionBus().registerService('org.example.QtDBus.PingExample'):
+        sys.stderr.w..("%s\n" % QDBusConnection.sessionBus().lastError().message())
         sys.exit(1)
 
     pong _ Pong()

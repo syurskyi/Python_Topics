@@ -1,9 +1,9 @@
 ______ sys
-____ ? ______ ?W.. as qtw
-____ ? ______ QtCore as qtc
+____ ? ______ ?W.. __ qtw
+____ ? ______ QtCore __ qtc
 
 
-class MainWindow(qtw.QWidget):
+c_ MainWindow(qtw.QWidget):
 
     ___ __init__(self):
         super().__init__()
@@ -44,13 +44,13 @@ class MainWindow(qtw.QWidget):
 
         self.s..
 
-    ___ needs_args(self, arg1, arg2, arg3):
+    ___ needs_args  arg1, arg2, arg3):
         pass
 
     ___ no_args(self):
         print('I need no arguments')
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtw.?A..(sys.argv)
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.

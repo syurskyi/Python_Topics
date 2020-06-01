@@ -43,13 +43,13 @@
 #############################################################################
 
 
-____ ?.QtGui ______ QStandardItem, QStandardItemModel
+____ ?.?G.. ______ QStandardItem, QStandardItemModel
 ____ ?.?W.. ______ (?A.., QDataWidgetMapper, QGridLayout,
         QLabel, QLineEdit, ?PB.., QSpinBox, QTextEdit, QWidget)
 
 
-class Window(QWidget):
-    ___ __init__(self, parent_None):
+c_ Window(QWidget):
+    ___ __init__  parent_None):
         super(Window, self).__init__(parent)
 
         # Set up the model.
@@ -113,12 +113,12 @@ class Window(QWidget):
             item _ QStandardItem(ages[row])
             self.model.setItem(row, 2, item)
  
-    ___ updateButtons(self, row):
+    ___ updateButtons  row):
         self.previousButton.setEnabled(row > 0)
         self.nextButton.setEnabled(row < self.model.rowCount() - 1)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

@@ -43,14 +43,14 @@
 ###########################################################################
 
 
-____ ?.?W.. ______ ?A.., QLabel, QMainWindow, QMessageBox
+____ ?.?W.. ______ ?A.., QLabel, QMainWindow, ?MB..
 
 ______ stylesheet_rc
 ____ ui_mainwindow ______ Ui_MainWindow
 ____ stylesheeteditor ______ StyleSheetEditor
 
 
-class MainWindow(QMainWindow):
+c_ MainWindow ?MW..
     ___ __init__(self):
         super(MainWindow, self).__init__()
 
@@ -59,15 +59,15 @@ class MainWindow(QMainWindow):
         self.ui.nameLabel.setProperty('class', 'mandatory QLabel')
         self.styleSheetEditor _ StyleSheetEditor(self)
         self.statusBar().addWidget(QLabel("Ready"))
-        self.ui.exitAction.triggered.c..(?A...instance().quit)
-        self.ui.aboutQtAction.triggered.c..(?A...instance().aboutQt)
+        self.ui.exitAction.t__.c..(?A...instance().quit)
+        self.ui.aboutQtAction.t__.c..(?A...instance().aboutQt)
 
     ___ on_editStyleAction_triggered(self):
         self.styleSheetEditor.s..
         self.styleSheetEditor.activateWindow()
 
     ___ on_aboutAction_triggered(self):
-        QMessageBox.about(self, "About Style sheet",
+        ?MB...about  "About Style sheet",
                 "The <b>Style Sheet</b> example shows how widgets can be "
                 "styled using "
                 "<a href=\"http://doc.qt.digia.com/4.5/stylesheet.html\">Qt "
@@ -76,7 +76,7 @@ class MainWindow(QMainWindow):
                 "sheet or design your own.")
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

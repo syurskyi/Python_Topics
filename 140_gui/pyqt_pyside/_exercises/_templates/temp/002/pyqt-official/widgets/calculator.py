@@ -49,8 +49,8 @@ ____ ?.?W.. ______ (?A.., QGridLayout, QLayout, QLineEdit,
         QSizePolicy, QToolButton, QWidget)
 
 
-class Button(QToolButton):
-    ___ __init__(self, text, parent_None):
+c_ Button(QToolButton):
+    ___ __init__  text, parent_None):
         super(Button, self).__init__(parent)
 
         self.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Preferred)
@@ -60,13 +60,13 @@ class Button(QToolButton):
         size _ super(Button, self).sizeHint()
         size.setHeight(size.height() + 20)
         size.setWidth(max(size.width(), size.height()))
-        return size
+        r_ size
 
 
-class Calculator(QWidget):
+c_ Calculator(QWidget):
     NumDigitButtons _ 10
     
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(Calculator, self).__init__(parent)
 
         self.pendingAdditiveOperator _ ''
@@ -160,10 +160,10 @@ class Calculator(QWidget):
         clickedButton _ self.sender()
         digitValue _ int(clickedButton.text())
 
-        if self.display.text() == '0' and digitValue == 0.0:
-            return
+        __ self.display.text() == '0' and digitValue == 0.0:
+            r_
 
-        if self.waitingForOperand:
+        __ self.waitingForOperand:
             self.display.clear()
             self.waitingForOperand _ False
 
@@ -174,18 +174,18 @@ class Calculator(QWidget):
         clickedOperator _ clickedButton.text()
         operand _ float(self.display.text())
 
-        if clickedOperator == "Sqrt":
-            if operand < 0.0:
+        __ clickedOperator == "Sqrt":
+            __ operand < 0.0:
                 self.abortOperation()
-                return
+                r_
 
             result _ math.sqrt(operand)
-        elif clickedOperator == u"x\N{SUPERSCRIPT TWO}":
+        ____ clickedOperator == u"x\N{SUPERSCRIPT TWO}":
             result _ math.pow(operand, 2.0)
-        elif clickedOperator == "1/x":
-            if operand == 0.0:
+        ____ clickedOperator == "1/x":
+            __ operand == 0.0:
                 self.abortOperation()
-                return
+                r_
 
             result _ 1.0 / operand
 
@@ -197,23 +197,23 @@ class Calculator(QWidget):
         clickedOperator _ clickedButton.text()
         operand _ float(self.display.text())
 
-        if self.pendingMultiplicativeOperator:
-            if not self.calculate(operand, self.pendingMultiplicativeOperator):
+        __ self.pendingMultiplicativeOperator:
+            __ no. self.calculate(operand, self.pendingMultiplicativeOperator):
                 self.abortOperation()
-                return
+                r_
 
             self.display.sT..(str(self.factorSoFar))
             operand _ self.factorSoFar
             self.factorSoFar _ 0.0
             self.pendingMultiplicativeOperator _ ''
 
-        if self.pendingAdditiveOperator:
-            if not self.calculate(operand, self.pendingAdditiveOperator):
+        __ self.pendingAdditiveOperator:
+            __ no. self.calculate(operand, self.pendingAdditiveOperator):
                 self.abortOperation()
-                return
+                r_
 
             self.display.sT..(str(self.sumSoFar))
-        else:
+        ____
             self.sumSoFar _ operand
 
         self.pendingAdditiveOperator _ clickedOperator
@@ -224,13 +224,13 @@ class Calculator(QWidget):
         clickedOperator _ clickedButton.text()
         operand _ float(self.display.text())
 
-        if self.pendingMultiplicativeOperator:
-            if not self.calculate(operand, self.pendingMultiplicativeOperator):
+        __ self.pendingMultiplicativeOperator:
+            __ no. self.calculate(operand, self.pendingMultiplicativeOperator):
                 self.abortOperation()
-                return
+                r_
 
             self.display.sT..(str(self.factorSoFar))
-        else:
+        ____
             self.factorSoFar _ operand
 
         self.pendingMultiplicativeOperator _ clickedOperator
@@ -239,22 +239,22 @@ class Calculator(QWidget):
     ___ equalClicked(self):
         operand _ float(self.display.text())
 
-        if self.pendingMultiplicativeOperator:
-            if not self.calculate(operand, self.pendingMultiplicativeOperator):
+        __ self.pendingMultiplicativeOperator:
+            __ no. self.calculate(operand, self.pendingMultiplicativeOperator):
                 self.abortOperation()
-                return
+                r_
 
             operand _ self.factorSoFar
             self.factorSoFar _ 0.0
             self.pendingMultiplicativeOperator _ ''
 
-        if self.pendingAdditiveOperator:
-            if not self.calculate(operand, self.pendingAdditiveOperator):
+        __ self.pendingAdditiveOperator:
+            __ no. self.calculate(operand, self.pendingAdditiveOperator):
                 self.abortOperation()
-                return
+                r_
 
             self.pendingAdditiveOperator _ ''
-        else:
+        ____
             self.sumSoFar _ operand
 
         self.display.sT..(str(self.sumSoFar))
@@ -262,10 +262,10 @@ class Calculator(QWidget):
         self.waitingForOperand _ True
 
     ___ pointClicked(self):
-        if self.waitingForOperand:
+        __ self.waitingForOperand:
             self.display.sT..('0')
 
-        if "." not in self.display.text
+        __ "." no. in self.display.text
             self.display.sT..(self.display.text() + ".")
 
         self.waitingForOperand _ False
@@ -274,27 +274,27 @@ class Calculator(QWidget):
         text _ self.display.text()
         value _ float(text)
 
-        if value > 0.0:
+        __ value > 0.0:
             text _ "-" + text
-        elif value < 0.0:
+        ____ value < 0.0:
             text _ text[1:]
 
         self.display.sT..(text)
 
     ___ backspaceClicked(self):
-        if self.waitingForOperand:
-            return
+        __ self.waitingForOperand:
+            r_
 
         text _ self.display.text()[:-1]
-        if not text:
+        __ no. text:
             text _ '0'
             self.waitingForOperand _ True
 
         self.display.sT..(text)
 
     ___ clear(self):
-        if self.waitingForOperand:
-            return
+        __ self.waitingForOperand:
+            r_
 
         self.display.sT..('0')
         self.waitingForOperand _ True
@@ -322,32 +322,32 @@ class Calculator(QWidget):
         self.equalClicked()
         self.sumInMemory +_ float(self.display.text())
 
-    ___ createButton(self, text, member):
+    ___ createButton  text, member):
         button _ Button(text)
         button.c__.c..(member)
-        return button
+        r_ button
 
     ___ abortOperation(self):
         self.clearAll()
         self.display.sT..("####")
 
-    ___ calculate(self, rightOperand, pendingOperator):
-        if pendingOperator == "+":
+    ___ calculate  rightOperand, pendingOperator):
+        __ pendingOperator == "+":
             self.sumSoFar +_ rightOperand
-        elif pendingOperator == "-":
+        ____ pendingOperator == "-":
             self.sumSoFar -_ rightOperand
-        elif pendingOperator == u"\N{MULTIPLICATION SIGN}":
+        ____ pendingOperator == u"\N{MULTIPLICATION SIGN}":
             self.factorSoFar *_ rightOperand
-        elif pendingOperator == u"\N{DIVISION SIGN}":
-            if rightOperand == 0.0:
-                return False
+        ____ pendingOperator == u"\N{DIVISION SIGN}":
+            __ rightOperand == 0.0:
+                r_ False
 
             self.factorSoFar /_ rightOperand
 
-        return True
+        r_ True
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

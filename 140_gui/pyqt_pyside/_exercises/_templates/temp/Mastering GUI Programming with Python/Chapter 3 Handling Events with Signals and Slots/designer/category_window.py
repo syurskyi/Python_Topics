@@ -6,10 +6,10 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, QtGui, ?W..
+____ ? ______ QtCore, ?G.., ?W..
 
-class Ui_CategoryWindow(object):
-    ___ setupUi(self, CategoryWindow):
+c_ Ui_CategoryWindow(object):
+    ___ setupUi  CategoryWindow):
         CategoryWindow.setObjectName("CategoryWindow")
         CategoryWindow.setWindowModality(QtCore.Qt.WindowModal)
         CategoryWindow.resize(409, 120)
@@ -31,7 +31,7 @@ class Ui_CategoryWindow(object):
         self.retranslateUi(CategoryWindow)
         QtCore.QMetaObject.connectSlotsByName(CategoryWindow)
 
-    ___ retranslateUi(self, CategoryWindow):
+    ___ retranslateUi  CategoryWindow):
         _translate _ QtCore.QCoreApplication.translate
         CategoryWindow.setWindowTitle(_translate("CategoryWindow", "Form"))
         self.label.sT..(_translate("CategoryWindow", "Please enter a new category name:"))

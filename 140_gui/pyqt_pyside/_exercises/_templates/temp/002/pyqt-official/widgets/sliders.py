@@ -48,11 +48,11 @@ ____ ?.?W.. ______ (?A.., QBoxLayout, QCheckBox, QComboBox,
         QSlider, QSpinBox, QStackedWidget, QWidget)
 
 
-class SlidersGroup(QGroupBox):
+c_ SlidersGroup(QGroupBox):
 
     valueChanged _ pyqtSignal(int)
 
-    ___ __init__(self, orientation, title, parent_None):
+    ___ __init__  orientation, title, parent_None):
         super(SlidersGroup, self).__init__(title, parent)
 
         self.slider _ QSlider(orientation)
@@ -72,9 +72,9 @@ class SlidersGroup(QGroupBox):
         self.dial.valueChanged.c..(self.slider.setValue)
         self.dial.valueChanged.c..(self.valueChanged)
 
-        if orientation == Qt.Horizontal:
+        __ orientation == Qt.Horizontal:
             direction _ QBoxLayout.TopToBottom
-        else:
+        ____
             direction _ QBoxLayout.LeftToRight
 
         slidersLayout _ QBoxLayout(direction)
@@ -83,31 +83,31 @@ class SlidersGroup(QGroupBox):
         slidersLayout.addWidget(self.dial)
         self.setLayout(slidersLayout)    
 
-    ___ setValue(self, value):    
+    ___ setValue  value):    
         self.slider.setValue(value)    
 
-    ___ setMinimum(self, value):    
+    ___ setMinimum  value):    
         self.slider.setMinimum(value)
         self.scrollBar.setMinimum(value)
         self.dial.setMinimum(value)    
 
-    ___ setMaximum(self, value):    
+    ___ setMaximum  value):    
         self.slider.setMaximum(value)
         self.scrollBar.setMaximum(value)
         self.dial.setMaximum(value)    
 
-    ___ invertAppearance(self, invert):
+    ___ invertAppearance  invert):
         self.slider.setInvertedAppearance(invert)
         self.scrollBar.setInvertedAppearance(invert)
         self.dial.setInvertedAppearance(invert)    
 
-    ___ invertKeyBindings(self, invert):
+    ___ invertKeyBindings  invert):
         self.slider.setInvertedControls(invert)
         self.scrollBar.setInvertedControls(invert)
         self.dial.setInvertedControls(invert)
 
 
-class Window(QWidget):
+c_ Window(QWidget):
     ___ __init__(self):
         super(Window, self).__init__()
 
@@ -136,7 +136,7 @@ class Window(QWidget):
 
         self.setWindowTitle("Sliders")
 
-    ___ createControls(self, title):
+    ___ createControls  title):
         self.controlsGroup _ QGroupBox(title)
 
         minimumLabel _ QLabel("Minimum value:")
@@ -185,7 +185,7 @@ class Window(QWidget):
         self.controlsGroup.setLayout(controlsLayout)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

@@ -44,15 +44,15 @@
 
 ____ ?.QtCore ______ (QDir, QIODevice, QFile, QFileInfo, Qt, QTextStream,
         QUrl)
-____ ?.QtGui ______ QDesktopServices
+____ ?.?G.. ______ QDesktopServices
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., QComboBox,
-        QDialog, QFileDialog, QGridLayout, QHBoxLayout, QHeaderView, QLabel,
+        QDialog, ?FD.., QGridLayout, QHBoxLayout, QHeaderView, QLabel,
         QProgressDialog, ?PB.., QSizePolicy, QTableWidget,
         QTableWidgetItem)
 
 
-class Window(QDialog):
-    ___ __init__(self, parent_None):
+c_ Window(QDialog):
+    ___ __init__  parent_None):
         super(Window, self).__init__(parent)
 
         browseButton _ self.createButton("&Browse...", self.browse)
@@ -90,18 +90,18 @@ class Window(QDialog):
         self.resize(700, 300)
 
     ___ browse(self):
-        directory _ QFileDialog.getExistingDirectory(self, "Find Files",
+        directory _ ?FD...getExistingDirectory  "Find Files",
                 QDir.currentPath())
 
-        if directory:
-            if self.directoryComboBox.findText(directory) == -1:
+        __ directory:
+            __ self.directoryComboBox.findText(directory) == -1:
                 self.directoryComboBox.addItem(directory)
 
             self.directoryComboBox.setCurrentIndex(self.directoryComboBox.findText(directory))
 
     @staticmethod
     ___ updateComboBox(comboBox):
-        if comboBox.findText(comboBox.currentText()) == -1:
+        __ comboBox.findText(comboBox.currentText()) == -1:
             comboBox.addItem(comboBox.currentText())
 
     ___ find(self):
@@ -116,16 +116,16 @@ class Window(QDialog):
         self.updateComboBox(self.directoryComboBox)
 
         self.currentDir _ QDir(path)
-        if not fileName:
+        __ no. fileName:
             fileName _ "*"
         files _ self.currentDir.entryList([fileName],
                 QDir.Files | QDir.NoSymLinks)
 
-        if text:
+        __ text:
             files _ self.findFiles(files, text)
         self.showFiles(files)
 
-    ___ findFiles(self, files, text):
+    ___ findFiles  files, text):
         progressDialog _ QProgressDialog(self)
 
         progressDialog.setCancelButtonText("&Cancel")
@@ -139,26 +139,26 @@ class Window(QDialog):
             progressDialog.setLabelText("Searching file number %d of %d..." % (i, files.count()))
             ?A...processEvents()
 
-            if progressDialog.wasCanceled
+            __ progressDialog.wasCanceled
                 break
 
             inFile _ QFile(self.currentDir.absoluteFilePath(files[i]))
 
-            if inFile.open(QIODevice.ReadOnly):
+            __ inFile.o..(QIODevice.ReadOnly):
                 stream _ QTextStream(inFile)
-                while not stream.atEnd
-                    if progressDialog.wasCanceled
+                while no. stream.atEnd
+                    __ progressDialog.wasCanceled
                         break
                     line _ stream.readLine()
-                    if text in line:
+                    __ text in line:
                         foundFiles.append(files[i])
                         break
 
         progressDialog.close()
 
-        return foundFiles
+        r_ foundFiles
 
-    ___ showFiles(self, files):
+    ___ showFiles  files):
         for fn in files:
             file _ QFile(self.currentDir.absoluteFilePath(fn))
             size _ QFileInfo(file).size()
@@ -176,17 +176,17 @@ class Window(QDialog):
 
         self.filesFoundLabel.sT..("%d file(s) found (Double click on a file to open it)" % len(files))
 
-    ___ createButton(self, text, member):
+    ___ createButton  text, member):
         button _ ?PB..(text)
         button.c__.c..(member)
-        return button
+        r_ button
 
-    ___ createComboBox(self, text_""):
+    ___ createComboBox  text_""):
         comboBox _ QComboBox()
         comboBox.setEditable(True)
         comboBox.addItem(text)
         comboBox.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Preferred)
-        return comboBox
+        r_ comboBox
 
     ___ createFilesTable(self):
         self.filesTable _ QTableWidget(0, 2)
@@ -195,17 +195,17 @@ class Window(QDialog):
         self.filesTable.setHorizontalHeaderLabels(("File Name", "Size"))
         self.filesTable.horizontalHeader().setSectionResizeMode(0, QHeaderView.Stretch)
         self.filesTable.verticalHeader().hide()
-        self.filesTable.setShowGrid(False)
+        self.filesTable.setShowGrid F..
 
         self.filesTable.cellActivated.c..(self.openFileOfItem)
 
-    ___ openFileOfItem(self, row, column):
+    ___ openFileOfItem  row, column):
         item _ self.filesTable.item(row, 0)
 
         QDesktopServices.openUrl(QUrl(self.currentDir.absoluteFilePath(item.text())))
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

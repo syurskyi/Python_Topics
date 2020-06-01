@@ -47,20 +47,20 @@ ____ ?.?W.. ______ (?A.., QFrame, QLabel, QLayout,
         QTextBrowser, QWidget, QWidgetItem)
 
 
-class ItemWrapper(object):
-    ___ __init__(self, i, p):
+c_ ItemWrapper(object):
+    ___ __init__  i, p):
         self.item _ i
         self.position _ p
 
 
-class BorderLayout(QLayout):
+c_ BorderLayout(QLayout):
     West, North, South, East, Center _ range(5)
     MinimumSize, SizeHint _ range(2)
 
-    ___ __init__(self, parent_None, margin_None, spacing_-1):
+    ___ __init__  parent_None, margin_None, spacing_-1):
         super(BorderLayout, self).__init__(parent)
 
-        if margin is not None:
+        __ margin __ no. N..:
             self.setContentsMargins(margin, margin, margin, margin)
 
         self.setSpacing(spacing)
@@ -68,35 +68,35 @@ class BorderLayout(QLayout):
 
     ___ __del__(self):
         l _ self.takeAt(0)
-        while l is not None:
+        while l __ no. N..:
             l _ self.takeAt(0)
 
-    ___ addItem(self, item):
+    ___ addItem  item):
         self.add(item, self.West)
 
-    ___ addWidget(self, widget, position):
+    ___ addWidget  widget, position):
         self.add(QWidgetItem(widget), position)
 
     ___ expandingDirections(self):
-        return Qt.Horizontal | Qt.Vertical
+        r_ Qt.Horizontal | Qt.Vertical
 
     ___ hasHeightForWidth(self):
-        return False
+        r_ False
 
     ___ count(self):
-        return len(self.list)
+        r_ len(self.list)
 
-    ___ itemAt(self, index):
-        if index < len(self.list):
-            return self.list[index].item
+    ___ itemAt  index):
+        __ index < len(self.list):
+            r_ self.list[index].item
 
-        return None
+        r_ N..
 
     ___ minimumSize(self):
-        return self.calculateSize(self.MinimumSize)
+        r_ self.calculateSize(self.MinimumSize)
 
-    ___ setGeometry(self, rect):
-        center _ None
+    ___ setGeometry  rect):
+        center _ N..
         eastWidth _ 0
         westWidth _ 0
         northHeight _ 0
@@ -109,13 +109,13 @@ class BorderLayout(QLayout):
             item _ wrapper.item
             position _ wrapper.position
 
-            if position == self.North:
+            __ position == self.North:
                 item.setGeometry(QRect(rect.x(), northHeight,
                         rect.width(), item.sizeHint().height()))    
 
                 northHeight +_ item.geometry().height() + self.spacing()
 
-            elif position == self.South:
+            ____ position == self.South:
                 item.setGeometry(QRect(item.geometry().x(),
                         item.geometry().y(), rect.width(),
                         item.sizeHint().height()))
@@ -126,7 +126,7 @@ class BorderLayout(QLayout):
                         rect.y() + rect.height() - southHeight + self.spacing(),
                         item.geometry().width(), item.geometry().height()))
 
-            elif position == self.Center:
+            ____ position == self.Center:
                 center _ wrapper
 
         centerHeight _ rect.height() - northHeight - southHeight
@@ -135,13 +135,13 @@ class BorderLayout(QLayout):
             item _ wrapper.item
             position _ wrapper.position
 
-            if position == self.West:
+            __ position == self.West:
                 item.setGeometry(QRect(rect.x() + westWidth,
                         northHeight, item.sizeHint().width(), centerHeight))    
 
                 westWidth +_ item.geometry().width() + self.spacing()
 
-            elif position == self.East:
+            ____ position == self.East:
                 item.setGeometry(QRect(item.geometry().x(),
                         item.geometry().y(), item.sizeHint().width(),
                         centerHeight))
@@ -152,50 +152,50 @@ class BorderLayout(QLayout):
                         northHeight, item.geometry().width(),
                         item.geometry().height()))
 
-        if center:
+        __ center:
             center.item.setGeometry(QRect(westWidth, northHeight,
                     rect.width() - eastWidth - westWidth, centerHeight))
 
     ___ sizeHint(self):
-        return self.calculateSize(self.SizeHint)
+        r_ self.calculateSize(self.SizeHint)
 
-    ___ takeAt(self, index):
-        if index >_ 0 and index < len(self.list):
+    ___ takeAt  index):
+        __ index >_ 0 and index < len(self.list):
             layoutStruct _ self.list.pop(index)
-            return layoutStruct.item
+            r_ layoutStruct.item
 
-        return None
+        r_ N..
 
-    ___ add(self, item, position):
+    ___ add  item, position):
         self.list.append(ItemWrapper(item, position))
 
-    ___ calculateSize(self, sizeType):
+    ___ calculateSize  sizeType):
         totalSize _ QSize()
 
         for wrapper in self.list:
             position _ wrapper.position
             itemSize _ QSize()
 
-            if sizeType == self.MinimumSize:
+            __ sizeType == self.MinimumSize:
                 itemSize _ wrapper.item.minimumSize()
-            else: # sizeType == self.SizeHint
+            ____ # sizeType == self.SizeHint
                 itemSize _ wrapper.item.sizeHint()
 
-            if position in (self.North, self.South, self.Center):
+            __ position in (self.North, self.South, self.Center):
                 totalSize.setHeight(totalSize.height() + itemSize.height())
 
-            if position in (self.West, self.East, self.Center):
+            __ position in (self.West, self.East, self.Center):
                 totalSize.setWidth(totalSize.width() + itemSize.width())
 
-        return totalSize
+        r_ totalSize
 
 
-class Window(QWidget):
+c_ Window(QWidget):
     ___ __init__(self):
         super(Window, self).__init__()
 
         centralWidget _ QTextBrowser()
-        centralWidget.setPlainText("Central widget")
+        centralWidget.sPT..("Central widget")
 
         layout _ BorderLayout()
         layout.addWidget(centralWidget, BorderLayout.Center)
@@ -223,14 +223,14 @@ class Window(QWidget):
 
         self.setWindowTitle("Border Layout")
 
-    ___ createLabel(self, text):
+    ___ createLabel  text):
         label _ QLabel(text)
         label.setFrameStyle(QFrame.Box | QFrame.Raised)
 
-        return label
+        r_ label
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

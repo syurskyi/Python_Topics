@@ -43,16 +43,16 @@
 
 
 ____ ?.QtCore ______ QDir, QEvent, Qt, QT_TRANSLATE_NOOP, QTranslator
-____ ?.QtGui ______ QColor, QPalette
-____ ?.?W.. ______ (QAction, ?A.., QCheckBox, QDialog,
+____ ?.?G.. ______ QColor, QPalette
+____ ?.?W.. ______ (?A.., ?A.., QCheckBox, QDialog,
         QDialogButtonBox, QGridLayout, QGroupBox, QListWidget, QMainWindow,
         QRadioButton, QVBoxLayout, QWidget)
 
 ______ i18n_rc
 
 
-class LanguageChooser(QDialog):
-    ___ __init__(self, parent_None):
+c_ LanguageChooser(QDialog):
+    ___ __init__  parent_None):
         super(LanguageChooser, self).__init__(parent, Qt.WindowStaysOnTopHint)
 
         self.qmFileForCheckBoxMap _ {}
@@ -89,30 +89,30 @@ class LanguageChooser(QDialog):
 
         self.setWindowTitle("I18N")
 
-    ___ eventFilter(self, object, event):
-        if event.type() == QEvent.Close:
-            if isinstance(object, MainWindow):
+    ___ eventFilter  object, event):
+        __ event.type() == QEvent.Close:
+            __ isinstance(object, MainWindow):
                 window _ object
 
                 for checkBox, w in self.mainWindowForCheckBoxMap.items
-                    if w is window:
+                    __ w __ window:
                         break
-                else:
-                    checkBox _ None
+                ____
+                    checkBox _ N..
 
-                if checkBox:
-                    checkBox.setChecked(False)
+                __ checkBox:
+                    checkBox.setChecked F..
 
-        return QWidget.eventFilter(self, object, event)
+        r_ QWidget.eventFilter  object, event)
 
-    ___ closeEvent(self, event):
+    ___ closeEvent  event):
         ?A...instance().quit()
 
     ___ checkBoxToggled(self):
         checkBox _ self.sender()
         window _ self.mainWindowForCheckBoxMap.get(checkBox)
 
-        if not window:
+        __ no. window:
             translator _ QTranslator()
             translator.load(self.qmFileForCheckBoxMap[checkBox])
             ?A...installTranslator(translator)
@@ -135,38 +135,38 @@ class LanguageChooser(QDialog):
 
     ___ hideAll(self):
         for checkBox in self.qmFileForCheckBoxMap.keys
-            checkBox.setChecked(False)
+            checkBox.setChecked F..
 
     ___ findQmFiles(self):
         trans_dir _ QDir(':/translations')
         fileNames _ trans_dir.entryList(['*.qm'], QDir.Files, QDir.Name)
 
-        return [trans_dir.filePath(fn) for fn in fileNames]
+        r_ [trans_dir.filePath(fn) for fn in fileNames]
 
-    ___ languageName(self, qmFile):
+    ___ languageName  qmFile):
         translator _ QTranslator() 
         translator.load(qmFile)
 
-        return translator.translate("MainWindow", "English")
+        r_ translator.translate("MainWindow", "English")
 
-    ___ colorForLanguage(self, language):
+    ___ colorForLanguage  language):
         hashValue _ hash(language)
         red _ 156 + (hashValue & 0x3F)
         green _ 156 + ((hashValue >> 6) & 0x3F)
         blue _ 156 + ((hashValue >> 12) & 0x3F)
-        return QColor(red, green, blue)
+        r_ QColor(red, green, blue)
 
 
-class MainWindow(QMainWindow):
+c_ MainWindow ?MW..
     listEntries _ [QT_TRANSLATE_NOOP("MainWindow", "First"),
                    QT_TRANSLATE_NOOP("MainWindow", "Second"),
                    QT_TRANSLATE_NOOP("MainWindow", "Third")]
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(MainWindow, self).__init__(parent)
 
         self.centralWidget _ QWidget()
-        self.setCentralWidget(self.centralWidget)
+        self.sCW..(self.centralWidget)
 
         self.createGroupBox()
 
@@ -180,17 +180,17 @@ class MainWindow(QMainWindow):
         mainLayout.addWidget(listWidget)
         self.centralWidget.setLayout(mainLayout)
 
-        exitAction _ QAction(self.tr("E&xit"), self,
+        exitAction _ ?A..(self.tr("E&xit"), self,
                 triggered_QApplication.instance().quit)
 
-        fileMenu _ self.menuBar().addMenu(self.tr("&File"))
+        fileMenu _ self.mB.. .aM..(self.tr("&File"))
         fileMenu.setPalette(QPalette(Qt.red))
-        fileMenu.addAction(exitAction)
+        fileMenu.aA..(exitAction)
 
         self.setWindowTitle(self.tr("Language: %s") % self.tr("English"))
         self.statusBar().showMessage(self.tr("Internationalization Example"))
 
-        if self.tr("LTR") == "RTL":
+        __ self.tr("LTR") == "RTL":
             self.setLayoutDirection(Qt.RightToLeft)
 
     ___ createGroupBox(self):
@@ -207,7 +207,7 @@ class MainWindow(QMainWindow):
         self.groupBox.setLayout(self.groupBoxLayout)
 
 
-if __name__ == "__main__":
+__ __name__ == "__main__":
 
     ______ sys
 

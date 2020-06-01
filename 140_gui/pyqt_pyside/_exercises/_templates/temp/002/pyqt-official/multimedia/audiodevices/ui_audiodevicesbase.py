@@ -7,10 +7,10 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, QtGui, ?W..
+____ ? ______ QtCore, ?G.., ?W..
 
-class Ui_AudioDevicesBase(object):
-    ___ setupUi(self, AudioDevicesBase):
+c_ Ui_AudioDevicesBase(object):
+    ___ setupUi  AudioDevicesBase):
         AudioDevicesBase.setObjectName("AudioDevicesBase")
         AudioDevicesBase.resize(679, 598)
         self.centralwidget _ ?W...QWidget(AudioDevicesBase)
@@ -85,28 +85,28 @@ class Ui_AudioDevicesBase(object):
         self.sampleRateBox.setObjectName("sampleRateBox")
         self.gridLayout.addWidget(self.sampleRateBox, 3, 1, 1, 1)
         self.nearestSampleRate _ ?W...QLineEdit(self.testFormatTab)
-        self.nearestSampleRate.setEnabled(False)
+        self.nearestSampleRate.setEnabled F..
         self.nearestSampleRate.setObjectName("nearestSampleRate")
         self.gridLayout.addWidget(self.nearestSampleRate, 3, 2, 1, 1)
         self.channelsBox _ ?W...QComboBox(self.testFormatTab)
         self.channelsBox.setObjectName("channelsBox")
         self.gridLayout.addWidget(self.channelsBox, 5, 1, 1, 1)
         self.nearestChannel _ ?W...QLineEdit(self.testFormatTab)
-        self.nearestChannel.setEnabled(False)
+        self.nearestChannel.setEnabled F..
         self.nearestChannel.setObjectName("nearestChannel")
         self.gridLayout.addWidget(self.nearestChannel, 5, 2, 1, 1)
         self.sampleSizesBox _ ?W...QComboBox(self.testFormatTab)
         self.sampleSizesBox.setObjectName("sampleSizesBox")
         self.gridLayout.addWidget(self.sampleSizesBox, 9, 1, 1, 1)
         self.nearestSampleSize _ ?W...QLineEdit(self.testFormatTab)
-        self.nearestSampleSize.setEnabled(False)
+        self.nearestSampleSize.setEnabled F..
         self.nearestSampleSize.setObjectName("nearestSampleSize")
         self.gridLayout.addWidget(self.nearestSampleSize, 9, 2, 1, 1)
         self.endianBox _ ?W...QComboBox(self.testFormatTab)
         self.endianBox.setObjectName("endianBox")
         self.gridLayout.addWidget(self.endianBox, 14, 1, 1, 1)
         self.nearestEndian _ ?W...QLineEdit(self.testFormatTab)
-        self.nearestEndian.setEnabled(False)
+        self.nearestEndian.setEnabled F..
         self.nearestEndian.setObjectName("nearestEndian")
         self.gridLayout.addWidget(self.nearestEndian, 14, 2, 1, 1)
         self.testButton _ ?W...?PB..(self.testFormatTab)
@@ -141,7 +141,7 @@ class Ui_AudioDevicesBase(object):
         self.actualCodecLabel.setObjectName("actualCodecLabel")
         self.gridLayout.addWidget(self.actualCodecLabel, 2, 0, 1, 1)
         self.nearestCodec _ ?W...QLineEdit(self.testFormatTab)
-        self.nearestCodec.setEnabled(False)
+        self.nearestCodec.setEnabled F..
         self.nearestCodec.setObjectName("nearestCodec")
         self.gridLayout.addWidget(self.nearestCodec, 2, 2, 1, 1)
         self.codecsBox _ ?W...QComboBox(self.testFormatTab)
@@ -154,7 +154,7 @@ class Ui_AudioDevicesBase(object):
         self.sampleTypesBox.setObjectName("sampleTypesBox")
         self.gridLayout.addWidget(self.sampleTypesBox, 6, 1, 1, 1)
         self.nearestSampleType _ ?W...QLineEdit(self.testFormatTab)
-        self.nearestSampleType.setEnabled(False)
+        self.nearestSampleType.setEnabled F..
         self.nearestSampleType.setObjectName("nearestSampleType")
         self.gridLayout.addWidget(self.nearestSampleType, 6, 2, 1, 1)
         self.tabWidget.addTab(self.testFormatTab, "")
@@ -167,12 +167,12 @@ class Ui_AudioDevicesBase(object):
         self.verticalLayout_2.addWidget(self.populateTableButton)
         self.allFormatsTable _ ?W...QTableWidget(self.tab)
         self.allFormatsTable.setEditTriggers(?W...QAbstractItemView.NoEditTriggers)
-        self.allFormatsTable.setDragDropOverwriteMode(False)
+        self.allFormatsTable.setDragDropOverwriteMode F..
         self.allFormatsTable.setSelectionMode(?W...QAbstractItemView.NoSelection)
         self.allFormatsTable.setSelectionBehavior(?W...QAbstractItemView.SelectItems)
         self.allFormatsTable.setTextElideMode(QtCore.Qt.ElideNone)
-        self.allFormatsTable.setWordWrap(False)
-        self.allFormatsTable.setCornerButtonEnabled(False)
+        self.allFormatsTable.setWordWrap F..
+        self.allFormatsTable.setCornerButtonEnabled F..
         self.allFormatsTable.setObjectName("allFormatsTable")
         self.allFormatsTable.setColumnCount(6)
         self.allFormatsTable.setRowCount(0)
@@ -194,16 +194,16 @@ class Ui_AudioDevicesBase(object):
         item _ ?W...QTableWidgetItem()
         item.setTextAlignment(QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter|QtCore.Qt.AlignCenter)
         self.allFormatsTable.setHorizontalHeaderItem(5, item)
-        self.allFormatsTable.horizontalHeader().setHighlightSections(False)
-        self.allFormatsTable.verticalHeader().setVisible(False)
-        self.allFormatsTable.verticalHeader().setHighlightSections(False)
+        self.allFormatsTable.horizontalHeader().setHighlightSections F..
+        self.allFormatsTable.verticalHeader().setVisible F..
+        self.allFormatsTable.verticalHeader().setHighlightSections F..
         self.verticalLayout_2.addWidget(self.allFormatsTable)
         self.tabWidget.addTab(self.tab, "")
         self.gridLayout_2.addWidget(self.tabWidget, 2, 0, 1, 2)
         self.gridLayout_4.addLayout(self.gridLayout_2, 0, 0, 1, 1)
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
         self.verticalLayout.addWidget(self.scrollArea)
-        AudioDevicesBase.setCentralWidget(self.centralwidget)
+        AudioDevicesBase.sCW..(self.centralwidget)
         self.statusbar _ ?W...QStatusBar(AudioDevicesBase)
         self.statusbar.setObjectName("statusbar")
         AudioDevicesBase.setStatusBar(self.statusbar)
@@ -212,7 +212,7 @@ class Ui_AudioDevicesBase(object):
         self.tabWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(AudioDevicesBase)
 
-    ___ retranslateUi(self, AudioDevicesBase):
+    ___ retranslateUi  AudioDevicesBase):
         _translate _ QtCore.QCoreApplication.translate
         AudioDevicesBase.setWindowTitle(_translate("AudioDevicesBase", "Audio Devices"))
         self.modeLabel.sT..(_translate("AudioDevicesBase", "Mode"))
@@ -235,7 +235,7 @@ class Ui_AudioDevicesBase(object):
         self.actualSampleTypeLabel.sT..(_translate("AudioDevicesBase", "SampleType"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.testFormatTab), _translate("AudioDevicesBase", "Test format"))
         self.populateTableButton.sT..(_translate("AudioDevicesBase", "Populate table"))
-        self.allFormatsTable.setSortingEnabled(False)
+        self.allFormatsTable.setSortingEnabled F..
         item _ self.allFormatsTable.horizontalHeaderItem(0)
         item.sT..(_translate("AudioDevicesBase", "Codec"))
         item _ self.allFormatsTable.horizontalHeaderItem(1)

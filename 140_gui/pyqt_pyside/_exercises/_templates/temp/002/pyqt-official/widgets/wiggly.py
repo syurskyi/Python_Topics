@@ -43,13 +43,13 @@
 
 
 ____ ?.QtCore ______ QBasicTimer
-____ ?.QtGui ______ QColor, QFontMetrics, QPainter, QPalette
+____ ?.?G.. ______ QColor, QFontMetrics, QPainter, QPalette
 ____ ?.?W.. ______ (?A.., QDialog, QLineEdit, QVBoxLayout,
         QWidget)
 
 
-class WigglyWidget(QWidget):
-    ___ __init__(self, parent_None):
+c_ WigglyWidget(QWidget):
+    ___ __init__  parent_None):
         super(WigglyWidget, self).__init__(parent)
 
         self.setBackgroundRole(QPalette.Midlight)
@@ -65,7 +65,7 @@ class WigglyWidget(QWidget):
         self.step _ 0;
         self.timer.start(60, self)   
 
-    ___ paintEvent(self, event):
+    ___ paintEvent  event):
         sineTable _ (0, 38, 71, 92, 100, 92, 71, 38, 0, -38, -71, -92, -100, -92, -71, -38)
 
         metrics _ QFontMetrics(self.font())
@@ -82,19 +82,19 @@ class WigglyWidget(QWidget):
             painter.drawText(x, y - ((sineTable[index] * metrics.height()) / 400), ch)
             x +_ metrics.width(ch)
 
-    ___ sT..(self, newText):
+    ___ sT..  newText):
         self.text _ newText
 
-    ___ timerEvent(self, event):
-        if event.timerId() == self.timer.timerId
+    ___ timerEvent  event):
+        __ event.timerId() == self.timer.timerId
             self.step +_ 1
             self.update()
-        else:
+        ____
             super(WigglyWidget, self).timerEvent(event)
 
 
-class Dialog(QDialog):
-    ___ __init__(self, parent_None):
+c_ Dialog(QDialog):
+    ___ __init__  parent_None):
         super(Dialog, self).__init__(parent)
 
         wigglyWidget _ WigglyWidget()
@@ -113,7 +113,7 @@ class Dialog(QDialog):
         self.resize(360, 145)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

@@ -7,10 +7,10 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, QtGui, ?W..
+____ ? ______ QtCore, ?G.., ?W..
 
-class Ui_Form(object):
-    ___ setupUi(self, Form):
+c_ Ui_Form(object):
+    ___ setupUi  Form):
         Form.setObjectName("Form")
         Form.resize(911, 688)
         self.horizontalLayout_4 _ ?W...QHBoxLayout(Form)
@@ -51,7 +51,7 @@ class Ui_Form(object):
         self.clearButton.c__.c..(self.plainTextEdit.clear)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
-    ___ retranslateUi(self, Form):
+    ___ retranslateUi  Form):
         _translate _ QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
         self.editorBox.setTitle(_translate("Form", "HTML Editor"))

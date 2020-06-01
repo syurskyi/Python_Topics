@@ -44,7 +44,7 @@
 
 
 ____ ?.QtCore ______ QEventLoop, QTime
-____ ?.?W.. ______ ?A.., QMessageBox
+____ ?.?W.. ______ ?A.., ?MB..
 
 ____ colors ______ Colors
 ____ mainwindow ______ MainWindow
@@ -58,15 +58,15 @@ ___ artisticSleep(sleepTime):
         ?A...processEvents(QEventLoop.AllEvents, 50)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 
     app _ ?A..(sys.argv)
     Colors.parseArgs(sys.argv)
 
-    if sys.platform == 'win32':
-        QMessageBox.information(None, "Documentation Warning",
+    __ sys.platform == 'win32':
+        ?MB...information(N.., "Documentation Warning",
                 "If you are using the GPL version of PyQt from the binary "
                 "installer then you will probably see warning messages about "
                 "missing documentation.  This is because the installer does "
@@ -77,9 +77,9 @@ if __name__ == '__main__':
     MenuManager.instance().init(mainWindow)
     mainWindow.setFocus()
 
-    if Colors.fullscreen:
+    __ Colors.fullscreen:
         mainWindow.showFullScreen()
-    else:
+    ____
         mainWindow.enableMask(True)
         mainWindow.s..
 

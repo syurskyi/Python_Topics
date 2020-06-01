@@ -45,16 +45,16 @@
 ____ ?.QtCore ______ QDir, Qt, QUrl
 ____ ?.QtMultimedia ______ QMediaContent, QMediaPlayer
 ____ ?.QtMultimediaWidgets ______ QVideoWidget
-____ ?.?W.. ______ (?A.., QFileDialog, QHBoxLayout, QLabel,
+____ ?.?W.. ______ (?A.., ?FD.., QHBoxLayout, QLabel,
         ?PB.., QSizePolicy, QSlider, QStyle, QVBoxLayout, QWidget)
 
 
-class VideoPlayer(QWidget):
+c_ VideoPlayer(QWidget):
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(VideoPlayer, self).__init__(parent)
 
-        self.mediaPlayer _ QMediaPlayer(None, QMediaPlayer.VideoSurface)
+        self.mediaPlayer _ QMediaPlayer(N.., QMediaPlayer.VideoSurface)
 
         videoWidget _ QVideoWidget()
 
@@ -62,7 +62,7 @@ class VideoPlayer(QWidget):
         openButton.c__.c..(self.openFile)
 
         self.playButton _ ?PB..()
-        self.playButton.setEnabled(False)
+        self.playButton.setEnabled F..
         self.playButton.setIcon(self.style().standardIcon(QStyle.SP_MediaPlay))
         self.playButton.c__.c..(self.play)
 
@@ -94,43 +94,43 @@ class VideoPlayer(QWidget):
         self.mediaPlayer.error.c..(self.handleError)
 
     ___ openFile(self):
-        fileName, _ _ QFileDialog.getOpenFileName(self, "Open Movie",
+        fileName, _ _ ?FD...gOFN..  "Open Movie",
                 QDir.homePath())
 
-        if fileName !_ '':
+        __ fileName !_ '':
             self.mediaPlayer.setMedia(
                     QMediaContent(QUrl.fromLocalFile(fileName)))
             self.playButton.setEnabled(True)
 
     ___ play(self):
-        if self.mediaPlayer.state() == QMediaPlayer.PlayingState:
+        __ self.mediaPlayer.state() == QMediaPlayer.PlayingState:
             self.mediaPlayer.pause()
-        else:
+        ____
             self.mediaPlayer.play()
 
-    ___ mediaStateChanged(self, state):
-        if self.mediaPlayer.state() == QMediaPlayer.PlayingState:
+    ___ mediaStateChanged  state):
+        __ self.mediaPlayer.state() == QMediaPlayer.PlayingState:
             self.playButton.setIcon(
                     self.style().standardIcon(QStyle.SP_MediaPause))
-        else:
+        ____
             self.playButton.setIcon(
                     self.style().standardIcon(QStyle.SP_MediaPlay))
 
-    ___ positionChanged(self, position):
+    ___ positionChanged  position):
         self.positionSlider.setValue(position)
 
-    ___ durationChanged(self, duration):
+    ___ durationChanged  duration):
         self.positionSlider.setRange(0, duration)
 
-    ___ setPosition(self, position):
+    ___ setPosition  position):
         self.mediaPlayer.setPosition(position)
 
     ___ handleError(self):
-        self.playButton.setEnabled(False)
+        self.playButton.setEnabled F..
         self.errorLabel.sT..("Error: " + self.mediaPlayer.errorString())
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

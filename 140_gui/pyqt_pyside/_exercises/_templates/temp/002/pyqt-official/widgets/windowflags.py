@@ -48,8 +48,8 @@ ____ ?.?W.. ______ (?A.., QCheckBox, QGridLayout, QGroupBox,
         QWidget)
 
 
-class PreviewWindow(QWidget):
-    ___ __init__(self, parent_None):
+c_ PreviewWindow(QWidget):
+    ___ __init__  parent_None):
         super(PreviewWindow, self).__init__(parent)
 
         self.textEdit _ QTextEdit()
@@ -66,61 +66,61 @@ class PreviewWindow(QWidget):
 
         self.setWindowTitle("Preview")
 
-    ___ setWindowFlags(self, flags):
+    ___ setWindowFlags  flags):
         super(PreviewWindow, self).setWindowFlags(flags)
 
         flag_type _ (flags & Qt.WindowType_Mask)
 
-        if flag_type == Qt.Window:
+        __ flag_type == Qt.Window:
             text _ "Qt.Window"
-        elif flag_type == Qt.Dialog:
+        ____ flag_type == Qt.Dialog:
             text _ "Qt.Dialog"
-        elif flag_type == Qt.Sheet:
+        ____ flag_type == Qt.Sheet:
             text _ "Qt.Sheet"
-        elif flag_type == Qt.Drawer:
+        ____ flag_type == Qt.Drawer:
             text _ "Qt.Drawer"
-        elif flag_type == Qt.Popup:
+        ____ flag_type == Qt.Popup:
             text _ "Qt.Popup"
-        elif flag_type == Qt.Tool:
+        ____ flag_type == Qt.Tool:
             text _ "Qt.Tool"
-        elif flag_type == Qt.ToolTip:
+        ____ flag_type == Qt.ToolTip:
             text _ "Qt.ToolTip"
-        elif flag_type == Qt.SplashScreen:
+        ____ flag_type == Qt.SplashScreen:
             text _ "Qt.SplashScreen"
-        else:
+        ____
             text _ ""
 
-        if flags & Qt.MSWindowsFixedSizeDialogHint:
+        __ flags & Qt.MSWindowsFixedSizeDialogHint:
             text +_ "\n| Qt.MSWindowsFixedSizeDialogHint"
-        if flags & Qt.X11BypassWindowManagerHint:
+        __ flags & Qt.X11BypassWindowManagerHint:
             text +_ "\n| Qt.X11BypassWindowManagerHint"
-        if flags & Qt.FramelessWindowHint:
+        __ flags & Qt.FramelessWindowHint:
             text +_ "\n| Qt.FramelessWindowHint"
-        if flags & Qt.WindowTitleHint:
+        __ flags & Qt.WindowTitleHint:
             text +_ "\n| Qt.WindowTitleHint"
-        if flags & Qt.WindowSystemMenuHint:
+        __ flags & Qt.WindowSystemMenuHint:
             text +_ "\n| Qt.WindowSystemMenuHint"
-        if flags & Qt.WindowMinimizeButtonHint:
+        __ flags & Qt.WindowMinimizeButtonHint:
             text +_ "\n| Qt.WindowMinimizeButtonHint"
-        if flags & Qt.WindowMaximizeButtonHint:
+        __ flags & Qt.WindowMaximizeButtonHint:
             text +_ "\n| Qt.WindowMaximizeButtonHint"
-        if flags & Qt.WindowCloseButtonHint:
+        __ flags & Qt.WindowCloseButtonHint:
             text +_ "\n| Qt.WindowCloseButtonHint"
-        if flags & Qt.WindowContextHelpButtonHint:
+        __ flags & Qt.WindowContextHelpButtonHint:
             text +_ "\n| Qt.WindowContextHelpButtonHint"
-        if flags & Qt.WindowShadeButtonHint:
+        __ flags & Qt.WindowShadeButtonHint:
             text +_ "\n| Qt.WindowShadeButtonHint"
-        if flags & Qt.WindowStaysOnTopHint:
+        __ flags & Qt.WindowStaysOnTopHint:
             text +_ "\n| Qt.WindowStaysOnTopHint"
-        if flags & Qt.WindowStaysOnBottomHint:
+        __ flags & Qt.WindowStaysOnBottomHint:
             text +_ "\n| Qt.WindowStaysOnBottomHint"
-        if flags & Qt.CustomizeWindowHint:
+        __ flags & Qt.CustomizeWindowHint:
             text +_ "\n| Qt.CustomizeWindowHint"
 
-        self.textEdit.setPlainText(text)
+        self.textEdit.sPT..(text)
 
 
-class ControllerWindow(QWidget):
+c_ ControllerWindow(QWidget):
     ___ __init__(self):
         super(ControllerWindow, self).__init__()
 
@@ -148,58 +148,58 @@ class ControllerWindow(QWidget):
     ___ updatePreview(self):
         flags _ Qt.WindowFlags()
 
-        if self.windowRadioButton.isChecked
+        __ self.windowRadioButton.isChecked
             flags _ Qt.Window
-        elif self.dialogRadioButton.isChecked
+        ____ self.dialogRadioButton.isChecked
             flags _ Qt.Dialog
-        elif self.sheetRadioButton.isChecked
+        ____ self.sheetRadioButton.isChecked
             flags _ Qt.Sheet
-        elif self.drawerRadioButton.isChecked
+        ____ self.drawerRadioButton.isChecked
             flags _ Qt.Drawer
-        elif self.popupRadioButton.isChecked
+        ____ self.popupRadioButton.isChecked
             flags _ Qt.Popup
-        elif self.toolRadioButton.isChecked
+        ____ self.toolRadioButton.isChecked
             flags _ Qt.Tool
-        elif self.toolTipRadioButton.isChecked
+        ____ self.toolTipRadioButton.isChecked
             flags _ Qt.ToolTip
-        elif self.splashScreenRadioButton.isChecked
+        ____ self.splashScreenRadioButton.isChecked
             flags _ Qt.SplashScreen
 
-        if self.msWindowsFixedSizeDialogCheckBox.isChecked
+        __ self.msWindowsFixedSizeDialogCheckBox.isChecked
             flags |_ Qt.MSWindowsFixedSizeDialogHint
-        if self.x11BypassWindowManagerCheckBox.isChecked
+        __ self.x11BypassWindowManagerCheckBox.isChecked
             flags |_ Qt.X11BypassWindowManagerHint
-        if self.framelessWindowCheckBox.isChecked
+        __ self.framelessWindowCheckBox.isChecked
             flags |_ Qt.FramelessWindowHint
-        if self.windowTitleCheckBox.isChecked
+        __ self.windowTitleCheckBox.isChecked
             flags |_ Qt.WindowTitleHint
-        if self.windowSystemMenuCheckBox.isChecked
+        __ self.windowSystemMenuCheckBox.isChecked
             flags |_ Qt.WindowSystemMenuHint
-        if self.windowMinimizeButtonCheckBox.isChecked
+        __ self.windowMinimizeButtonCheckBox.isChecked
             flags |_ Qt.WindowMinimizeButtonHint
-        if self.windowMaximizeButtonCheckBox.isChecked
+        __ self.windowMaximizeButtonCheckBox.isChecked
             flags |_ Qt.WindowMaximizeButtonHint
-        if self.windowCloseButtonCheckBox.isChecked
+        __ self.windowCloseButtonCheckBox.isChecked
             flags |_ Qt.WindowCloseButtonHint
-        if self.windowContextHelpButtonCheckBox.isChecked
+        __ self.windowContextHelpButtonCheckBox.isChecked
             flags |_ Qt.WindowContextHelpButtonHint
-        if self.windowShadeButtonCheckBox.isChecked
+        __ self.windowShadeButtonCheckBox.isChecked
             flags |_ Qt.WindowShadeButtonHint
-        if self.windowStaysOnTopCheckBox.isChecked
+        __ self.windowStaysOnTopCheckBox.isChecked
             flags |_ Qt.WindowStaysOnTopHint
-        if self.windowStaysOnBottomCheckBox.isChecked
+        __ self.windowStaysOnBottomCheckBox.isChecked
             flags |_ Qt.WindowStaysOnBottomHint
-        if self.customizeWindowHintCheckBox.isChecked
+        __ self.customizeWindowHintCheckBox.isChecked
             flags |_ Qt.CustomizeWindowHint
 
         self.previewWindow.setWindowFlags(flags)
 
         pos _ self.previewWindow.pos()
 
-        if pos.x() < 0:
+        __ pos.x() < 0:
             pos.setX(0)
 
-        if pos.y() < 0:
+        __ pos.y() < 0:
             pos.setY(0)
 
         self.previewWindow.move(pos)
@@ -262,18 +262,18 @@ class ControllerWindow(QWidget):
         layout.addWidget(self.customizeWindowHintCheckBox, 5, 0)
         self.hintsGroupBox.setLayout(layout)
 
-    ___ createCheckBox(self, text):
+    ___ createCheckBox  text):
         checkBox _ QCheckBox(text)
         checkBox.c__.c..(self.updatePreview)
-        return checkBox
+        r_ checkBox
 
-    ___ createRadioButton(self, text):
+    ___ createRadioButton  text):
         button _ QRadioButton(text)
         button.c__.c..(self.updatePreview)
-        return button
+        r_ button
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

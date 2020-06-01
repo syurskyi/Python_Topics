@@ -1,6 +1,6 @@
 ______ sys
-____ ? ______ ?W.. as qtw
-____ ? ______ QtCore as qtc
+____ ? ______ ?W.. __ qtw
+____ ? ______ QtCore __ qtc
 #from calendar_form import Ui_MainWindow
 ____ category_window ______ Ui_CategoryWindow
 ____ ? ______ uic
@@ -8,7 +8,7 @@ ____ ? ______ uic
 MW_Ui, MW_Base _ uic.lUT..('calendar_form.ui')
 
 
-class CategoryWindow(qtw.QWidget):
+c_ CategoryWindow(qtw.QWidget):
 
     submitted _ qtc.pyqtSignal(str)
 
@@ -23,13 +23,13 @@ class CategoryWindow(qtw.QWidget):
     ___ on_submit_btn_clicked(self):
         # we can take advantage of connectSlotsByName here
         # to avoid explicit UI connections
-        if self.ui.category_entry.text
+        __ self.ui.category_entry.text
             self.submitted.emit(self.ui.category_entry.text())
         self.close()
 
 
 #class MainWindow(qtw.QWidget, Ui_MainWindow):
-class MainWindow(MW_Base, MW_Ui):
+c_ MainWindow(MW_Base, MW_Ui):
     events _ {}
 
     ___ __init__(self):
@@ -38,7 +38,7 @@ class MainWindow(MW_Base, MW_Ui):
         self.setupUi(self)
 
         # disable the first category item
-        self.event_category.model().item(0).setEnabled(False)
+        self.event_category.model().item(0).setEnabled F..
 
         ##################
         # Connect Events #
@@ -74,8 +74,8 @@ class MainWindow(MW_Base, MW_Ui):
         self.event_title.clear()
         self.event_category.setCurrentIndex(0)
         self.event_time.setTime(qtc.QTime(8, 0))
-        self.allday_check.setChecked(False)
-        self.event_detail.setPlainText('')
+        self.allday_check.setChecked F..
+        self.event_detail.sPT..('')
 
     ___ populate_list(self):
         self.event_list.clear()
@@ -84,7 +84,7 @@ class MainWindow(MW_Base, MW_Ui):
         for event in self.events.get(date, []):
             time _ (
                 event['time'].toString('hh:mm')
-                if event['time']
+                __ event['time']
                 else 'All Day'
             )
             self.event_list.addItem(f"{time}: {event['title']}")
@@ -93,25 +93,25 @@ class MainWindow(MW_Base, MW_Ui):
         self.clear_form()
         date _ self.calendar.selectedDate()
         event_number _ self.event_list.currentRow()
-        if event_number == -1:
-            return
+        __ event_number == -1:
+            r_
 
         event_data _ self.events.get(date)[event_number]
 
         self.event_category.setCurrentText(event_data['category'])
-        if event_data['time'] is None:
+        __ event_data['time'] __ N..:
             self.allday_check.setChecked(True)
-        else:
+        ____
             self.event_time.setTime(event_data['time'])
         self.event_title.sT..(event_data['title'])
-        self.event_detail.setPlainText(event_data['detail'])
+        self.event_detail.sPT..(event_data['detail'])
 
     ___ save_event(self):
         event _ {
             'category': self.event_category.currentText(),
             'time': (
-                None
-                if self.allday_check.isChecked()
+                N..
+                __ self.allday_check.isChecked()
                 else self.event_time.time()
                 ),
             'title': self.event_title.text(),
@@ -123,9 +123,9 @@ class MainWindow(MW_Base, MW_Ui):
         event_number _ self.event_list.currentRow()
 
         # if no events are selected, this is a new event
-        if event_number == -1:
+        __ event_number == -1:
             event_list.append(event)
-        else:
+        ____
             event_list[event_number] _ event
 
         event_list.sort(key_lambda x: x['time'] or qtc.QTime(0, 0))
@@ -143,17 +143,17 @@ class MainWindow(MW_Base, MW_Ui):
     ___ check_delete_btn(self):
         self.del_button.setDisabled(self.event_list.currentRow() == -1)
 
-    ___ on_category_change(self, text):
-        if text == 'New…':
+    ___ on_category_change  text):
+        __ text == 'New…':
             self.dialog _ CategoryWindow()
             self.dialog.submitted.c..(self.add_category)
             self.event_category.setCurrentIndex(0)
 
-    ___ add_category(self, category):
+    ___ add_category  category):
         self.event_category.addItem(category)
         self.event_category.setCurrentText(category)
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtw.?A..(sys.argv)
 
     # it's required to save a reference to MainWindow.

@@ -7,10 +7,10 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, QtGui, ?W..
+____ ? ______ QtCore, ?G.., ?W..
 
-class Ui_embeddedDialog(object):
-    ___ setupUi(self, embeddedDialog):
+c_ Ui_embeddedDialog(object):
+    ___ setupUi  embeddedDialog):
         embeddedDialog.setObjectName("embeddedDialog")
         embeddedDialog.resize(407, 134)
         self.formLayout _ ?W...QFormLayout(embeddedDialog)
@@ -50,7 +50,7 @@ class Ui_embeddedDialog(object):
         self.retranslateUi(embeddedDialog)
         QtCore.QMetaObject.connectSlotsByName(embeddedDialog)
 
-    ___ retranslateUi(self, embeddedDialog):
+    ___ retranslateUi  embeddedDialog):
         _translate _ QtCore.QCoreApplication.translate
         embeddedDialog.setWindowTitle(_translate("embeddedDialog", "Embedded Dialog"))
         self.label.sT..(_translate("embeddedDialog", "Layout Direction:"))

@@ -1,6 +1,6 @@
-____ ? ______ QtCore as qtc
+____ ? ______ QtCore __ qtc
 
-class TicTacToeEngine(qtc.QObject):
+c_ TicTacToeEngine(qtc.QObject):
     """Engine for the game Tic Tac Toe"""
     winning_sets _ [
         # Across
@@ -17,35 +17,35 @@ class TicTacToeEngine(qtc.QObject):
 
     ___ __init__(self):
         super().__init__()
-        self.board _ [None] * 9
+        self.board _ [N..] * 9
         self.current_player _ self.players[0]
 
     ___ next_player(self):
         self.current_player _ self.players[
-            not self.players.index(self.current_player)]
+            no. self.players.index(self.current_player)]
 
-    ___ mark_square(self, square):
+    ___ mark_square  square):
         """Mark a square for one player or another"""
-        if any([
-                not isinstance(square, int),
-                not (0 <_ square < len(self.board)),
-                self.board[square] is not None
+        __ any([
+                no. isinstance(square, int),
+                no. (0 <_ square < len(self.board)),
+                self.board[square] __ no. N..
         ]):
-            return False
+            r_ False
         self.board[square] _ self.current_player
         self.next_player()
-        return True
+        r_ True
 
     ___ check_board(self):
         """See if the game is won or a draw"""
         for player in self.players:
             plays _ {
                 index for index, value in enumerate(self.board)
-                if value == player
+                __ value == player
             }
             for win in self.winning_sets:
-                if not win - plays:  # player has a winning combo
+                __ no. win - plays:  # player has a winning combo
                     self.game_won.emit(player)
-                    return
-        if None not in self.board:
+                    r_
+        __ N.. no. in self.board:
             self.game_draw.emit()

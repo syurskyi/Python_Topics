@@ -46,18 +46,18 @@ ______ sys
 ______ math
 
 ____ ?.QtCore ______ pyqtSignal, QSize, Qt, QTimer
-____ ?.QtGui ______ QOpenGLVersionProfile, QPixmap
-____ ?.?W.. ______ (QAction, ?A.., QGridLayout, QLabel,
-        QLineEdit, QMainWindow, QMessageBox, QOpenGLWidget, QScrollArea,
+____ ?.?G.. ______ QOpenGLVersionProfile, QPixmap
+____ ?.?W.. ______ (?A.., ?A.., QGridLayout, QLabel,
+        QLineEdit, QMainWindow, ?MB.., QOpenGLWidget, QScrollArea,
         QSizePolicy, QSlider, QWidget)
 
 
-class GLWidget(QOpenGLWidget):
+c_ GLWidget(QOpenGLWidget):
     xRotationChanged _ pyqtSignal(int)
     yRotationChanged _ pyqtSignal(int)
     zRotationChanged _ pyqtSignal(int)
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(GLWidget, self).__init__(parent)
 
         self.gear1 _ 0
@@ -72,26 +72,26 @@ class GLWidget(QOpenGLWidget):
         timer.timeout.c..(self.advanceGears)
         timer.start(20)
 
-    ___ setXRotation(self, angle):
+    ___ setXRotation  angle):
         self.normalizeAngle(angle)
 
-        if angle !_ self.xRot:
+        __ angle !_ self.xRot:
             self.xRot _ angle
             self.xRotationChanged.emit(angle)
             self.update()
 
-    ___ setYRotation(self, angle):
+    ___ setYRotation  angle):
         self.normalizeAngle(angle)
 
-        if angle !_ self.yRot:
+        __ angle !_ self.yRot:
             self.yRot _ angle
             self.yRotationChanged.emit(angle)
             self.update()
 
-    ___ setZRotation(self, angle):
+    ___ setZRotation  angle):
         self.normalizeAngle(angle)
 
-        if angle !_ self.zRot:
+        __ angle !_ self.zRot:
             self.zRot _ angle
             self.zRotationChanged.emit(angle)
             self.update()
@@ -137,10 +137,10 @@ class GLWidget(QOpenGLWidget):
 
         self.gl.glPopMatrix()
 
-    ___ resizeGL(self, width, height):
+    ___ resizeGL  width, height):
         side _ min(width, height)
-        if side < 0:
-            return
+        __ side < 0:
+            r_
 
         self.gl.glViewport((width - side) // 2, (height - side) // 2, side, side)
 
@@ -151,17 +151,17 @@ class GLWidget(QOpenGLWidget):
         self.gl.glLoadIdentity()
         self.gl.glTranslated(0.0, 0.0, -40.0)
 
-    ___ mousePressEvent(self, event):
+    ___ mousePressEvent  event):
         self.lastPos _ event.pos()
 
-    ___ mouseMoveEvent(self, event):
+    ___ mouseMoveEvent  event):
         dx _ event.x() - self.lastPos.x()
         dy _ event.y() - self.lastPos.y()
 
-        if event.buttons() & Qt.LeftButton:
+        __ event.buttons() & Qt.LeftButton:
             self.setXRotation(self.xRot + 8 * dy)
             self.setYRotation(self.yRot + 8 * dx)
-        elif event.buttons() & Qt.RightButton:
+        ____ event.buttons() & Qt.RightButton:
             self.setXRotation(self.xRot + 8 * dy)
             self.setZRotation(self.zRot + 8 * dx)
 
@@ -172,15 +172,15 @@ class GLWidget(QOpenGLWidget):
         self.update()    
 
     ___ xRotation(self):
-        return self.xRot
+        r_ self.xRot
 
     ___ yRotation(self):
-        return self.yRot
+        r_ self.yRot
 
     ___ zRotation(self):
-        return self.zRot
+        r_ self.zRot
 
-    ___ makeGear(self, reflectance, innerRadius, outerRadius, thickness, toothSize, toothCount):
+    ___ makeGear  reflectance, innerRadius, outerRadius, thickness, toothSize, toothCount):
         list _ self.gl.glGenLists(1)
         self.gl.glNewList(list, self.gl.GL_COMPILE)
         self.gl.glMaterialfv(self.gl.GL_FRONT, self.gl.GL_AMBIENT_AND_DIFFUSE,
@@ -195,9 +195,9 @@ class GLWidget(QOpenGLWidget):
         self.gl.glShadeModel(self.gl.GL_FLAT)
 
         for i in range(2):
-            if i == 0:
+            __ i == 0:
                 sign _ +1.0
-            else:
+            ____
                 sign _ -1.0
 
             self.gl.glNormal3d(0.0, 0.0, sign)
@@ -232,7 +232,7 @@ class GLWidget(QOpenGLWidget):
                 s1 _ r1
                 s2 _ r2
 
-                if j == 1:
+                __ j == 1:
                     s1, s2 _ s2, s1
 
                 self.gl.glNormal3d(math.cos(angle), math.sin(angle), 0.0)
@@ -261,16 +261,16 @@ class GLWidget(QOpenGLWidget):
 
         self.gl.glEndList()
 
-        return list    
+        r_ list    
 
-    ___ drawGear(self, gear, dx, dy, dz, angle):
+    ___ drawGear  gear, dx, dy, dz, angle):
         self.gl.glPushMatrix()
         self.gl.glTranslated(dx, dy, dz)
         self.gl.glRotated(angle, 0.0, 0.0, 1.0)
         self.gl.glCallList(gear)
         self.gl.glPopMatrix()
 
-    ___ normalizeAngle(self, angle):
+    ___ normalizeAngle  angle):
         while (angle < 0):
             angle +_ 360 * 16
 
@@ -278,12 +278,12 @@ class GLWidget(QOpenGLWidget):
             angle -_ 360 * 16
 
 
-class MainWindow(QMainWindow):
+c_ MainWindow ?MW..
     ___ __init__(self):
         super(MainWindow, self).__init__()
 
         centralWidget _ QWidget()
-        self.setCentralWidget(centralWidget)
+        self.sCW..(centralWidget)
 
         self.glWidget _ GLWidget()
         self.pixmapLabel _ QLabel()
@@ -336,37 +336,37 @@ class MainWindow(QMainWindow):
         self.setPixmap(QPixmap())
 
     ___ about(self):
-        QMessageBox.about(self, "About Grabber",
+        ?MB...about  "About Grabber",
                 "The <b>Grabber</b> example demonstrates two approaches for "
                 "rendering OpenGL into a Qt pixmap.")
 
     ___ createActions(self):
-        self.grabFrameBufferAct _ QAction("&Grab Frame Buffer", self,
+        self.grabFrameBufferAct _ ?A..("&Grab Frame Buffer", self,
                 shortcut_"Ctrl+G", triggered_self.grabFrameBuffer)
 
-        self.clearPixmapAct _ QAction("&Clear Pixmap", self,
+        self.clearPixmapAct _ ?A..("&Clear Pixmap", self,
                 shortcut_"Ctrl+L", triggered_self.clearPixmap)
 
-        self.exitAct _ QAction("E&xit", self, shortcut_"Ctrl+Q",
+        self.exitAct _ ?A..("E&xit", self, shortcut_"Ctrl+Q",
                 triggered_self.close)
 
-        self.aboutAct _ QAction("&About", self, triggered_self.about)
+        self.aboutAct _ ?A..("&About", self, triggered_self.about)
 
-        self.aboutQtAct _ QAction("About &Qt", self,
+        self.aboutQtAct _ ?A..("About &Qt", self,
                 triggered_QApplication.instance().aboutQt)
 
     ___ createMenus(self):
-        self.fileMenu _ self.menuBar().addMenu("&File")
-        self.fileMenu.addAction(self.grabFrameBufferAct)
-        self.fileMenu.addAction(self.clearPixmapAct)
+        self.fileMenu _ self.mB.. .aM..("&File")
+        self.fileMenu.aA..(self.grabFrameBufferAct)
+        self.fileMenu.aA..(self.clearPixmapAct)
         self.fileMenu.addSeparator()
-        self.fileMenu.addAction(self.exitAct)
+        self.fileMenu.aA..(self.exitAct)
 
-        self.helpMenu _ self.menuBar().addMenu("&Help")
-        self.helpMenu.addAction(self.aboutAct)
-        self.helpMenu.addAction(self.aboutQtAct)
+        self.helpMenu _ self.mB.. .aM..("&Help")
+        self.helpMenu.aA..(self.aboutAct)
+        self.helpMenu.aA..(self.aboutQtAct)
 
-    ___ createSlider(self, changedSignal, setterSlot):
+    ___ createSlider  changedSignal, setterSlot):
         slider _ QSlider(Qt.Horizontal)
         slider.setRange(0, 360 * 16)
         slider.setSingleStep(16)
@@ -377,19 +377,19 @@ class MainWindow(QMainWindow):
         slider.valueChanged.c..(setterSlot)
         changedSignal.c..(slider.setValue)
 
-        return slider
+        r_ slider
 
-    ___ setPixmap(self, pixmap):
+    ___ setPixmap  pixmap):
         self.pixmapLabel.setPixmap(pixmap)
         size _ pixmap.size()
 
-        if size - QSize(1, 0) == self.pixmapLabelArea.maximumViewportSize
+        __ size - QSize(1, 0) == self.pixmapLabelArea.maximumViewportSize
             size -_ QSize(1, 0)
 
         self.pixmapLabel.resize(size)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     app _ ?A..(sys.argv)
     mainWin _ MainWindow()

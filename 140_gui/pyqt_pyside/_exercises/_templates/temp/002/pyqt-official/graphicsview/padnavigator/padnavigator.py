@@ -48,7 +48,7 @@ ____ ?.QtCore ______ (pyqtProperty, QDirIterator, QEasingCurve, QEvent,
         QEventTransition, QHistoryState, QParallelAnimationGroup, QPointF,
         QPropertyAnimation, QRectF, QSequentialAnimationGroup, QSize, QState,
         QStateMachine, Qt)
-____ ?.QtGui ______ (QBrush, QColor, QFont, QLinearGradient, QPainter,
+____ ?.?G.. ______ (QBrush, QColor, QFont, QLinearGradient, QPainter,
         QPalette, QPen, QPixmap, QTransform)
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsObject,
         QGraphicsProxyWidget, QGraphicsRotation, QGraphicsScene, QGraphicsView,
@@ -59,8 +59,8 @@ ______ padnavigator_rc
 ____ ui_form ______ Ui_Form
 
 
-class PadNavigator(QGraphicsView):
-    ___ __init__(self, size, parent_None):
+c_ PadNavigator(QGraphicsView):
+    ___ __init__  size, parent_None):
         super(PadNavigator, self).__init__(parent)
 
         self.form _ Ui_Form()
@@ -82,7 +82,7 @@ class PadNavigator(QGraphicsView):
         self.form.setupUi(widget)
         self.form.hostName.setFocus()
         backItem.setWidget(widget)
-        backItem.setVisible(False)
+        backItem.setVisible F..
         backItem.setFocus()
         backItem.setCacheMode(QGraphicsItem.ItemCoordinateCache)
         r _ backItem.rect()
@@ -170,18 +170,18 @@ class PadNavigator(QGraphicsView):
         stateMachine.addDefaultAnimation(smoothYSelection)
         stateMachine.setInitialState(splashState)
 
-        anyKeyTransition _ QEventTransition(self, QEvent.KeyPress, splashState)
+        anyKeyTransition _ QEventTransition  QEvent.KeyPress, splashState)
         anyKeyTransition.setTargetState(frontState)
         anyKeyTransition.addAnimation(smoothSplashMove)
         anyKeyTransition.addAnimation(smoothSplashOpacity)
 
-        enterTransition _ QKeyEventTransition(self, QEvent.KeyPress,
+        enterTransition _ QKeyEventTransition  QEvent.KeyPress,
                 Qt.Key_Enter, backState)
-        returnTransition _ QKeyEventTransition(self, QEvent.KeyPress,
+        returnTransition _ QKeyEventTransition  QEvent.KeyPress,
                 Qt.Key_Return, backState)
-        backEnterTransition _ QKeyEventTransition(self, QEvent.KeyPress,
+        backEnterTransition _ QKeyEventTransition  QEvent.KeyPress,
                 Qt.Key_Enter, frontState)
-        backReturnTransition _ QKeyEventTransition(self, QEvent.KeyPress,
+        backReturnTransition _ QKeyEventTransition  QEvent.KeyPress,
                 Qt.Key_Return, frontState)
         enterTransition.setTargetState(historyState)
         returnTransition.setTargetState(historyState)
@@ -205,13 +205,13 @@ class PadNavigator(QGraphicsView):
             for x in range(columns):
                 state _ stateGrid[y][x]
 
-                rightTransition _ QKeyEventTransition(self, QEvent.KeyPress,
+                rightTransition _ QKeyEventTransition  QEvent.KeyPress,
                         Qt.Key_Right, state)
-                leftTransition _ QKeyEventTransition(self, QEvent.KeyPress,
+                leftTransition _ QKeyEventTransition  QEvent.KeyPress,
                         Qt.Key_Left, state)
-                downTransition _ QKeyEventTransition(self, QEvent.KeyPress,
+                downTransition _ QKeyEventTransition  QEvent.KeyPress,
                         Qt.Key_Down, state)
-                upTransition _ QKeyEventTransition(self, QEvent.KeyPress,
+                upTransition _ QKeyEventTransition  QEvent.KeyPress,
                         Qt.Key_Up, state)
 
                 rightTransition.setTargetState(stateGrid[y][(x + 1) % columns])
@@ -251,18 +251,18 @@ class PadNavigator(QGraphicsView):
         self.setRenderHints(QPainter.Antialiasing |
                 QPainter.SmoothPixmapTransform | QPainter.TextAntialiasing)
 
-        if QGLFormat.hasOpenGL
+        __ QGLFormat.hasOpenGL
             self.setViewport(QGLWidget(QGLFormat(QGL.SampleBuffers)))
 
         stateMachine.start()
 
-    ___ resizeEvent(self, event):
+    ___ resizeEvent  event):
         super(PadNavigator, self).resizeEvent(event)
         self.fitInView(self.scene().sceneRect(), Qt.KeepAspectRatio)
 
 
-class RoundRectItem(QGraphicsObject):
-    ___ __init__(self, bounds, color, parent_None):
+c_ RoundRectItem(QGraphicsObject):
+    ___ __init__  bounds, color, parent_None):
         super(RoundRectItem, self).__init__(parent)
 
         self.fillRect _ False
@@ -277,44 +277,44 @@ class RoundRectItem(QGraphicsObject):
 
         self.setCacheMode(QGraphicsItem.ItemCoordinateCache)
 
-    ___ setFill(self, fill):
+    ___ setFill  fill):
         self.fillRect _ fill
         self.update()
 
     ___ fill(self):
-        return self.fillRect
+        r_ self.fillRect
 
     fill _ pyqtProperty(bool, fill, setFill)
 
-    ___ paint(self, painter, option, widget):
+    ___ paint  painter, option, widget):
         painter.setPen(Qt.NoPen)
         painter.setBrush(QColor(0, 0, 0, 64))
         painter.drawRoundedRect(self.bounds.translated(2, 2), 25.0, 25.0)
 
-        if self.fillRect:
+        __ self.fillRect:
             painter.setBrush(?A...palette().brush(QPalette.Window))
-        else:
+        ____
             painter.setBrush(self.gradient)
 
         painter.setPen(QPen(Qt.black, 1))
         painter.drawRoundedRect(self.bounds, 25.0, 25.0)
-        if not self.pix.isNull
+        __ no. self.pix.isNull
             painter.scale(1.95, 1.95)
             painter.drawPixmap(-self.pix.width() / 2, -self.pix.height() / 2, self.pix)
 
     ___ boundingRect(self):
-        return self.bounds.adjusted(0, 0, 2, 2)
+        r_ self.bounds.adjusted(0, 0, 2, 2)
 
     ___ pixmap(self):
-        return QPixmap(self.pix)
+        r_ QPixmap(self.pix)
 
-    ___ setPixmap(self, pixmap):
+    ___ setPixmap  pixmap):
         self.pix _ QPixmap(pixmap)
         self.update()
 
 
-class FlippablePad(RoundRectItem):
-    ___ __init__(self, size, parent_None):
+c_ FlippablePad(RoundRectItem):
+    ___ __init__  size, parent_None):
         super(FlippablePad, self).__init__(self.boundsFromSize(size),
                 QColor(226, 255, 92, 64), parent)
 
@@ -343,22 +343,22 @@ class FlippablePad(RoundRectItem):
 
             self.iconGrid.append(row)
 
-    ___ iconAt(self, column, row):
-        return self.iconGrid[row][column]
+    ___ iconAt  column, row):
+        r_ self.iconGrid[row][column]
 
     @staticmethod
     ___ boundsFromSize(size):
-        return QRectF((-size.width() / 2.0) * 150,
+        r_ QRectF((-size.width() / 2.0) * 150,
                 (-size.height() / 2.0) * 150, size.width() * 150,
                 size.height() * 150)
 
     @staticmethod
     ___ posForLocation(column, row, size):
-        return QPointF(column * 150, row * 150) - QPointF((size.width() - 1) * 75, (size.height() - 1) * 75)
+        r_ QPointF(column * 150, row * 150) - QPointF((size.width() - 1) * 75, (size.height() - 1) * 75)
 
 
-class SplashItem(QGraphicsObject):
-    ___ __init__(self, parent_None):
+c_ SplashItem(QGraphicsObject):
+    ___ __init__  parent_None):
         super(SplashItem, self).__init__(parent)
 
         self.text _ "Welcome to the Pad Navigator Example. You can use the " \
@@ -368,9 +368,9 @@ class SplashItem(QGraphicsObject):
         self.setCacheMode(QGraphicsItem.DeviceCoordinateCache)
 
     ___ boundingRect(self):
-        return QRectF(0, 0, 400, 175)
+        r_ QRectF(0, 0, 400, 175)
 
-    ___ paint(self, painter, option, widget):
+    ___ paint  painter, option, widget):
         painter.setPen(QPen(Qt.black, 2))
         painter.setBrush(QColor(245, 245, 255, 220))
         painter.setClipRect(self.boundingRect())
@@ -386,7 +386,7 @@ class SplashItem(QGraphicsObject):
         painter.drawText(textRect, flags, self.text)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

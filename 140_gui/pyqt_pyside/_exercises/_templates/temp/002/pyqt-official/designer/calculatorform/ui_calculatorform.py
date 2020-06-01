@@ -7,10 +7,10 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, QtGui, ?W..
+____ ? ______ QtCore, ?G.., ?W..
 
-class Ui_CalculatorForm(object):
-    ___ setupUi(self, CalculatorForm):
+c_ Ui_CalculatorForm(object):
+    ___ setupUi  CalculatorForm):
         CalculatorForm.setObjectName("CalculatorForm")
         CalculatorForm.resize(400, 300)
         sizePolicy _ ?W...QSizePolicy(?W...QSizePolicy.Policy(5), ?W...QSizePolicy.Policy(5))
@@ -82,7 +82,7 @@ class Ui_CalculatorForm(object):
         self.retranslateUi(CalculatorForm)
         QtCore.QMetaObject.connectSlotsByName(CalculatorForm)
 
-    ___ retranslateUi(self, CalculatorForm):
+    ___ retranslateUi  CalculatorForm):
         _translate _ QtCore.QCoreApplication.translate
         CalculatorForm.setWindowTitle(_translate("CalculatorForm", "Calculator Form"))
         self.label_3_2.sT..(_translate("CalculatorForm", "="))

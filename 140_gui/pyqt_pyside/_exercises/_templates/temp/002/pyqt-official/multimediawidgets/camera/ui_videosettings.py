@@ -7,10 +7,10 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, QtGui, ?W..
+____ ? ______ QtCore, ?G.., ?W..
 
-class Ui_VideoSettingsUi(object):
-    ___ setupUi(self, VideoSettingsUi):
+c_ Ui_VideoSettingsUi(object):
+    ___ setupUi  VideoSettingsUi):
         VideoSettingsUi.setObjectName("VideoSettingsUi")
         VideoSettingsUi.resize(561, 369)
         self.gridLayout_4 _ ?W...QGridLayout(VideoSettingsUi)
@@ -101,7 +101,7 @@ class Ui_VideoSettingsUi(object):
         self.buttonBox.rejected.c..(VideoSettingsUi.reject)
         QtCore.QMetaObject.connectSlotsByName(VideoSettingsUi)
 
-    ___ retranslateUi(self, VideoSettingsUi):
+    ___ retranslateUi  VideoSettingsUi):
         _translate _ QtCore.QCoreApplication.translate
         VideoSettingsUi.setWindowTitle(_translate("VideoSettingsUi", "Dialog"))
         self.groupBox.setTitle(_translate("VideoSettingsUi", "Audio"))

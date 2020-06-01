@@ -48,8 +48,8 @@ ____ ?.?W.. ______ (?A.., QDialog, QDialogButtonBox, QLabel,
 ____ ?.QtNetwork ______ QHostAddress, QUdpSocket
 
 
-class Sender(QDialog):
-    ___ __init__(self, parent_None):
+c_ Sender(QDialog):
+    ___ __init__  parent_None):
         super(Sender, self).__init__(parent)
 
         self.statusLabel _ QLabel("Ready to broadcast datagrams on port 45454")
@@ -77,7 +77,7 @@ class Sender(QDialog):
         self.setWindowTitle("Broadcast Sender")
 
     ___ startBroadcasting(self):
-        self.startButton.setEnabled(False)
+        self.startButton.setEnabled F..
         self.timer.start(1000)
 
     ___ broadcastDatagramm(self):
@@ -87,7 +87,7 @@ class Sender(QDialog):
         self.messageNo +_ 1
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

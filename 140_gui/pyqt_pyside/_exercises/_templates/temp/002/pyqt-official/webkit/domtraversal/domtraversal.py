@@ -49,13 +49,13 @@ ____ ?.?W.. ______ ?A.., QMainWindow, QTreeWidgetItem
 ____ ui_window ______ Ui_Window
 
 
-class Window(QMainWindow, Ui_Window):
-    ___ __init__(self, parent_None):
+c_ Window(QMainWindow, Ui_Window):
+    ___ __init__  parent_None):
         super(Window, self).__init__(parent)
 
         self.setupUi(self)
  
-    ___ setUrl(self, url):
+    ___ setUrl  url):
         self.webView.setUrl(url)
   
     ___ on_webView_loadFinished(self):
@@ -65,10 +65,10 @@ class Window(QMainWindow, Ui_Window):
         document _ frame.documentElement()
         self.examineChildElements(document, self.treeWidget.invisibleRootItem())
  
-    ___ examineChildElements(self, parentElement, parentItem):
+    ___ examineChildElements  parentElement, parentItem):
         # Traverse the document.
         element _ parentElement.firstChild()
-        while not element.isNull
+        while no. element.isNull
             item _ QTreeWidgetItem()
             item.sT..(0, element.tagName())
             parentItem.addChild(item)
@@ -76,7 +76,7 @@ class Window(QMainWindow, Ui_Window):
             element _ element.nextSibling()
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

@@ -48,7 +48,7 @@ ____ ?.?W.. ______ (?A.., QComboBox, QDateEdit, QDateTimeEdit,
         QVBoxLayout, QWidget)
 
 
-class Window(QWidget):
+c_ Window(QWidget):
     ___ __init__(self):
         super(Window, self).__init__()
 
@@ -141,15 +141,15 @@ class Window(QWidget):
         editsLayout.addWidget(formatComboBox)
         self.editsGroup.setLayout(editsLayout)
 
-    ___ setFormatString(self, formatString):
+    ___ setFormatString  formatString):
         self.meetingEdit.setDisplayFormat(formatString)
 
-        if self.meetingEdit.displayedSections() & QDateTimeEdit.DateSections_Mask:
+        __ self.meetingEdit.displayedSections() & QDateTimeEdit.DateSections_Mask:
             self.meetingEdit.setDateRange(QDate(2004, 11, 1), QDate(2005, 11, 30))
             self.meetingLabel.sT..("Meeting date (between %s and %s):" %
                     (self.meetingEdit.minimumDate().toString(Qt.ISODate),
                     self.meetingEdit.maximumDate().toString(Qt.ISODate)))
-        else:
+        ____
             self.meetingEdit.setTimeRange(QTime(0, 7, 20, 0), QTime(21, 0, 0, 0))
             self.meetingLabel.sT..("Meeting time (between %s and %s):" %
                     (self.meetingEdit.minimumTime().toString(Qt.ISODate),
@@ -197,13 +197,13 @@ class Window(QWidget):
         spinBoxLayout.addWidget(self.priceSpinBox)
         self.doubleSpinBoxesGroup.setLayout(spinBoxLayout)
 
-    ___ changePrecision(self, decimals):
+    ___ changePrecision  decimals):
         self.doubleSpinBox.setDecimals(decimals)
         self.scaleSpinBox.setDecimals(decimals)
         self.priceSpinBox.setDecimals(decimals)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

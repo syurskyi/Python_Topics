@@ -45,10 +45,10 @@ ____ ?.QtCore ______ QPropertyAnimation, QTimer
 ____ colors ______ Colors
 
 
-class DemoItemAnimation(QPropertyAnimation):
+c_ DemoItemAnimation(QPropertyAnimation):
     ANIM_IN, ANIM_OUT, ANIM_UNSPECIFIED _ range(3)
 
-    ___ __init__(self, item, inOrOut_ANIM_UNSPECIFIED):
+    ___ __init__  item, inOrOut_ANIM_UNSPECIFIED):
         super(DemoItemAnimation, self).__init__(item, b'pos')
 
         self._startDelay _ 0
@@ -58,67 +58,67 @@ class DemoItemAnimation(QPropertyAnimation):
     ___ prepare(self):
         self.targetObject().prepare()
 
-    ___ setHideOnFinished(self, hide):
+    ___ setHideOnFinished  hide):
         self._hideOnFinshed _ hide
 
-    ___ setStartDelay(self, delay):
+    ___ setStartDelay  delay):
         self._startDelay _ delay
 
-    ___ setDuration(self, duration):
+    ___ setDuration  duration):
         duration _ int(duration * Colors.animSpeed)
         super(DemoItemAnimation, self).setDuration(duration)
 
     ___ notOwnerOfItem(self):
-        return self is not self.targetObject().currentAnimation
+        r_ self __ no. self.targetObject().currentAnimation
 
-    ___ play(self, fromStart_True, force_False):
+    ___ play  fromStart_True, force_False):
         item _ self.targetObject()
 
         # If the item that this animation controls in currently under the
         # control of another animation, stop that animation first.
-        if item.currentAnimation is not None:
+        __ item.currentAnimation __ no. N..:
             item.currentAnimation.stop()
 
         item.currentAnimation _ self
 
-        if Colors.noAnimations and not force:
+        __ Colors.noAnimations and no. force:
             # If animations are disabled just move to the end position.
             item.setPos(self.endValue())
-        else:
-            if self.isVisible
+        ____
+            __ self.isVisible
                 # If the item is already visible, start the animation from the
                 # item's current position rather than from the start.
                 self.setStartValue(item.pos())
 
-            if fromStart:
+            __ fromStart:
                 self.setCurrentTime(0)
                 item.setPos(self.startValue())
 
-        if self._inOrOut == DemoItemAnimation.ANIM_IN:
+        __ self._inOrOut == DemoItemAnimation.ANIM_IN:
             item.setRecursiveVisible(True)
 
-        if not Colors.noAnimations or force:
-            if self._startDelay:
+        __ no. Colors.noAnimations or force:
+            __ self._startDelay:
                 QTimer.singleShot(self._startDelay, self.start)
-            else:
+            ____
                 self.start()
 
-    ___ setCurveShape(self, shape):
+    ___ setCurveShape  shape):
         self.setEasingCurve(shape)
 
-    ___ setEnabled(self, enabled):
+    ___ setEnabled  enabled):
         self.targetObject().setEnabled(enabled)
 
     ___ isVisible(self):
-        return self.targetObject().isVisible()
+        r_ self.targetObject().isVisible()
 
-    ___ updateState(self, new, old):
+    ___ updateState  new, old):
         item _ self.targetObject()
 
-        if new == QPropertyAnimation.Running:
+        __ new == QPropertyAnimation.Running:
             item.animationStarted(self._inOrOut)
-        elif new == QPropertyAnimation.Stopped:
-            if self._hideOnFinished:
-                item.setRecursiveVisible(False)
+        ____ new == QPropertyAnimation.Stopped:
+            __ self._hideOnFinished:
+                item.setRecursiveVisible F..
 
             item.animationStopped(self._inOrOut)

@@ -43,7 +43,7 @@
 
 
 ____ ?.QtCore ______ QFile, QIODevice, Qt, QTextStream, QUrl
-____ ?.?W.. ______ (QAction, ?A.., QLineEdit, QMainWindow,
+____ ?.?W.. ______ (?A.., ?A.., QLineEdit, QMainWindow,
         QSizePolicy, QStyle, QTextEdit)
 ____ ?.QtNetwork ______ QNetworkProxyFactory, QNetworkRequest
 ____ ?.QtWebKitWidgets ______ QWebPage, QWebView
@@ -51,18 +51,18 @@ ____ ?.QtWebKitWidgets ______ QWebPage, QWebView
 ______ jquery_rc
 
 
-class MainWindow(QMainWindow):
-    ___ __init__(self, url):
+c_ MainWindow ?MW..
+    ___ __init__  url):
         super(MainWindow, self).__init__()
 
         self.progress _ 0
 
         fd _ QFile(":/jquery.min.js")
 
-        if fd.open(QIODevice.ReadOnly | QFile.Text):
+        __ fd.o..(QIODevice.ReadOnly | QFile.Text):
             self.jQuery _ QTextStream(fd).readAll()
             fd.close()
-        else:
+        ____
             self.jQuery _ ''
 
         QNetworkProxyFactory.setUseSystemConfiguration(True)
@@ -80,35 +80,35 @@ class MainWindow(QMainWindow):
         self.locationEdit.returnPressed.c..(self.changeLocation)
 
         toolBar _ self.addToolBar("Navigation")
-        toolBar.addAction(self.view.pageAction(QWebPage.Back))
-        toolBar.addAction(self.view.pageAction(QWebPage.Forward))
-        toolBar.addAction(self.view.pageAction(QWebPage.Reload))
-        toolBar.addAction(self.view.pageAction(QWebPage.Stop))
+        toolBar.aA..(self.view.pageAction(QWebPage.Back))
+        toolBar.aA..(self.view.pageAction(QWebPage.Forward))
+        toolBar.aA..(self.view.pageAction(QWebPage.Reload))
+        toolBar.aA..(self.view.pageAction(QWebPage.Stop))
         toolBar.addWidget(self.locationEdit)
 
-        viewMenu _ self.menuBar().addMenu("&View")
-        viewSourceAction _ QAction("Page Source", self)
-        viewSourceAction.triggered.c..(self.viewSource)
-        viewMenu.addAction(viewSourceAction)
+        viewMenu _ self.mB.. .aM..("&View")
+        viewSourceAction _ ?A..("Page Source", self)
+        viewSourceAction.t__.c..(self.viewSource)
+        viewMenu.aA..(viewSourceAction)
 
-        effectMenu _ self.menuBar().addMenu("&Effect")
-        effectMenu.addAction("Highlight all links", self.highlightAllLinks)
+        effectMenu _ self.mB.. .aM..("&Effect")
+        effectMenu.aA..("Highlight all links", self.highlightAllLinks)
 
-        self.rotateAction _ QAction(
+        self.rotateAction _ ?A..(
                 self.style().standardIcon(QStyle.SP_FileDialogDetailedView),
                 "Turn images upside down", self, checkable_True,
                 toggled_self.rotateImages)
-        effectMenu.addAction(self.rotateAction)
+        effectMenu.aA..(self.rotateAction)
 
-        toolsMenu _ self.menuBar().addMenu("&Tools")
-        toolsMenu.addAction("Remove GIF images", self.removeGifImages)
-        toolsMenu.addAction("Remove all inline frames",
+        toolsMenu _ self.mB.. .aM..("&Tools")
+        toolsMenu.aA..("Remove GIF images", self.removeGifImages)
+        toolsMenu.aA..("Remove all inline frames",
                 self.removeInlineFrames)
-        toolsMenu.addAction("Remove all object elements",
+        toolsMenu.aA..("Remove all object elements",
                 self.removeObjectElements)
-        toolsMenu.addAction("Remove all embedded elements",
+        toolsMenu.aA..("Remove all embedded elements",
                 self.removeEmbeddedElements)
-        self.setCentralWidget(self.view)
+        self.sCW..(self.view)
 
     ___ viewSource(self):
         accessManager _ self.view.page().networkAccessManager()
@@ -121,7 +121,7 @@ class MainWindow(QMainWindow):
         self.textEdit _ QTextEdit()
         self.textEdit.setAttribute(Qt.WA_DeleteOnClose)
         self.textEdit.s..
-        self.textEdit.setPlainText(QTextStream(reply).readAll())
+        self.textEdit.sPT..(QTextStream(reply).readAll())
         self.textEdit.resize(600, 400)
         reply.deleteLater()
 
@@ -134,12 +134,12 @@ class MainWindow(QMainWindow):
         self.view.setFocus()
 
     ___ adjustTitle(self):
-        if 0 < self.progress < 100:
+        __ 0 < self.progress < 100:
             self.setWindowTitle("%s (%s%%)" % (self.view.title(), self.progress))
-        else:
+        ____
             self.setWindowTitle(self.view.title())
 
-    ___ setProgress(self, p):
+    ___ setProgress  p):
         self.progress _ p
         self.adjustTitle()
 
@@ -157,8 +157,8 @@ class MainWindow(QMainWindow):
                   )"""
         self.view.page().mainFrame().evaluateJavaScript(code)
 
-    ___ rotateImages(self, invert):
-        if invert:
+    ___ rotateImages  invert):
+        __ invert:
             code _ """
                 $('img').each(
                     function () {
@@ -166,7 +166,7 @@ class MainWindow(QMainWindow):
                         $(this).css('-webkit-transform', 'rotate(180deg)') 
                     } 
                 )"""
-        else:
+        ____
             code _ """
                 $('img').each(
                     function () { 
@@ -194,15 +194,15 @@ class MainWindow(QMainWindow):
         self.view.page().mainFrame().evaluateJavaScript(code)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 
     app _ ?A..(sys.argv)
 
-    if len(sys.argv) > 1:
+    __ len(sys.argv) > 1:
         url _ QUrl(sys.argv[1])
-    else:
+    ____
         url _ QUrl('http://www.google.com/ncr')
 
     browser _ MainWindow(url)

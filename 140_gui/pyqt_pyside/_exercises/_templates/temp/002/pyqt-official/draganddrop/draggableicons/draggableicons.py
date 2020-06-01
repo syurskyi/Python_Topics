@@ -44,14 +44,14 @@
 
 ____ ?.QtCore ______ (QByteArray, QDataStream, QIODevice, QMimeData,
         QPoint, Qt)
-____ ?.QtGui ______ QColor, QDrag, QPainter, QPixmap
+____ ?.?G.. ______ QColor, QDrag, QPainter, QPixmap
 ____ ?.?W.. ______ ?A.., QFrame, QHBoxLayout, QLabel, QWidget
 
 ______ draggableicons_rc
 
 
-class DragWidget(QFrame):
-    ___ __init__(self, parent_None):
+c_ DragWidget(QFrame):
+    ___ __init__  parent_None):
         super(DragWidget, self).__init__(parent)
 
         self.setMinimumSize(200, 200)
@@ -76,20 +76,20 @@ class DragWidget(QFrame):
         houseIcon.s..
         houseIcon.setAttribute(Qt.WA_DeleteOnClose)
 
-    ___ dragEnterEvent(self, event):
-        if event.mimeData().hasFormat('application/x-dnditemdata'):
-            if event.source() == self:
+    ___ dragEnterEvent  event):
+        __ event.mimeData().hasFormat('application/x-dnditemdata'):
+            __ event.source() == self:
                 event.setDropAction(Qt.MoveAction)
                 event.accept()
-            else:
+            ____
                 event.acceptProposedAction()
-        else:
+        ____
             event.ignore()
 
     dragMoveEvent _ dragEnterEvent
 
-    ___ dropEvent(self, event):
-        if event.mimeData().hasFormat('application/x-dnditemdata'):
+    ___ dropEvent  event):
+        __ event.mimeData().hasFormat('application/x-dnditemdata'):
             itemData _ event.mimeData().data('application/x-dnditemdata')
             dataStream _ QDataStream(itemData, QIODevice.ReadOnly)
 
@@ -103,18 +103,18 @@ class DragWidget(QFrame):
             newIcon.s..
             newIcon.setAttribute(Qt.WA_DeleteOnClose)
 
-            if event.source() == self:
+            __ event.source() == self:
                 event.setDropAction(Qt.MoveAction)
                 event.accept()
-            else:
+            ____
                 event.acceptProposedAction()
-        else:
+        ____
             event.ignore()
 
-    ___ mousePressEvent(self, event):
+    ___ mousePressEvent  event):
         child _ self.childAt(event.pos())
-        if not child:
-            return
+        __ no. child:
+            r_
 
         pixmap _ QPixmap(child.pixmap())
 
@@ -138,14 +138,14 @@ class DragWidget(QFrame):
 
         child.setPixmap(tempPixmap)
 
-        if drag.exec_(Qt.CopyAction | Qt.MoveAction, Qt.CopyAction) == Qt.MoveAction:
+        __ drag.exec_(Qt.CopyAction | Qt.MoveAction, Qt.CopyAction) == Qt.MoveAction:
             child.close()
-        else:
+        ____
             child.s..
             child.setPixmap(pixmap)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

@@ -45,16 +45,16 @@
 
 ____ ?.QtCore ______ (pyqtSignal, QBuffer, QByteArray, QFileInfo,
         QIODevice, QMimeData, QPoint, QSize, Qt)
-____ ?.QtGui ______ (qBlue, QColor, QDrag, qGreen, QImage, QKeySequence,
+____ ?.?G.. ______ (qBlue, QColor, QDrag, qGreen, QImage, ?KS..,
         QPalette, QPixmap, qRed)
-____ ?.?W.. ______ (?A.., QColorDialog, QFileDialog, QFrame,
-        QGridLayout, QLabel, QLayout, QMainWindow, QMenu, QMessageBox,
+____ ?.?W.. ______ (?A.., QColorDialog, ?FD.., QFrame,
+        QGridLayout, QLabel, QLayout, QMainWindow, QMenu, ?MB..,
         ?PB.., QVBoxLayout)
 
 
-class FinalWidget(QFrame):
+c_ FinalWidget(QFrame):
 
-    ___ __init__(self, parent, name, labelSize):
+    ___ __init__  parent, name, labelSize):
         super(FinalWidget, self).__init__(parent)
 
         self.dragStartPosition _ QPoint()
@@ -71,26 +71,26 @@ class FinalWidget(QFrame):
         layout.addWidget(self.nameLabel, 0)
         self.setLayout(layout)
 
-    ___ mouseMoveEvent(self, event):
+    ___ mouseMoveEvent  event):
         """ If the mouse moves far enough when the left mouse button is held
             down, start a drag and drop operation.
         """
-        if not event.buttons() & Qt.LeftButton:
-            return
+        __ no. event.buttons() & Qt.LeftButton:
+            r_
 
-        if (event.pos() - self.dragStartPosition).manhattanLength() \
+        __ (event.pos() - self.dragStartPosition).manhattanLength() \
              < ?A...startDragDistance
-            return
+            r_
 
-        if not self.hasImage:
-            return
+        __ no. self.hasImage:
+            r_
 
         drag _ QDrag(self)
         mimeData _ QMimeData()
 
         output _ QByteArray()
         outputBuffer _ QBuffer(output)
-        outputBuffer.open(QIODevice.WriteOnly)
+        outputBuffer.o..(QIODevice.WriteOnly)
         self.imageLabel.pixmap().toImage().save(outputBuffer, 'PNG')
         outputBuffer.close()
         mimeData.setData('image/png', output)
@@ -101,22 +101,22 @@ class FinalWidget(QFrame):
                                       drag.pixmap().height()))
         drag.start()
 
-    ___ mousePressEvent(self, event):
+    ___ mousePressEvent  event):
         """ Check for left mouse button presses in order to enable drag and
             drop.
         """
-        if event.button() == Qt.LeftButton:
+        __ event.button() == Qt.LeftButton:
             self.dragStartPosition _ event.pos()
 
     ___ pixmap(self):
-        return self.imageLabel.pixmap()
+        r_ self.imageLabel.pixmap()
 
-    ___ setPixmap(self, pixmap):
+    ___ setPixmap  pixmap):
         self.imageLabel.setPixmap(pixmap)
         self.hasImage _ True
 
 
-class ScreenWidget(QFrame):
+c_ ScreenWidget(QFrame):
     # Separation.
     Cyan, Magenta, Yellow _ range(3)
 
@@ -128,7 +128,7 @@ class ScreenWidget(QFrame):
 
     imageChanged _ pyqtSignal()
 
-    ___ __init__(self, parent, initialColor, name, mask, labelSize):
+    ___ __init__  parent, initialColor, name, mask, labelSize):
         """ Initializes the paint color, the mask color (cyan, magenta, or
         yellow), connects the color selector and invert checkbox to functions,
         and creates a two-by-two grid layout.
@@ -157,7 +157,7 @@ class ScreenWidget(QFrame):
         self.colorButton.setPalette(palette)
 
         self.invertButton _ ?PB..("Invert")
-        self.invertButton.setEnabled(False)
+        self.invertButton.setEnabled F..
 
         self.colorButton.c__.c..(self.setColor)
         self.invertButton.c__.c..(self.invertImage)
@@ -190,9 +190,9 @@ class ScreenWidget(QFrame):
                 p _ self.originalImage.pixel(x, y)
 
                 # Separate the source pixel into its cyan component.
-                if self.inverted:
+                __ self.inverted:
                     amount _ convert(p)
-                else:
+                ____
                     amount _ 255 - convert(p)
 
                 newColor _ QColor(
@@ -206,14 +206,14 @@ class ScreenWidget(QFrame):
 
     ___ image(self):
         """ Returns a reference to the modified image. """
-        return self.newImage
+        r_ self.newImage
 
     ___ invertImage(self):
         """ Sets whether the amount of ink applied to the canvas is to be
             inverted (subtracted from the maximum value) before the ink is
             applied.
         """
-        self.inverted _ not self.inverted
+        self.inverted _ no. self.inverted
         self.createImage()
         self.imageChanged.emit()
 
@@ -224,7 +224,7 @@ class ScreenWidget(QFrame):
         """
         newColor _ QColorDialog.getColor(self.paintColor)
 
-        if newColor.isValid
+        __ newColor.isValid
             self.paintColor _ newColor
             palette _ QPalette(self.colorButton.palette())
             palette.setColor(QPalette.Button, self.paintColor)
@@ -232,7 +232,7 @@ class ScreenWidget(QFrame):
             self.createImage()
             self.imageChanged.emit()
 
-    ___ setImage(self, image):
+    ___ setImage  image):
         """ Records the original image selected by the user, creates a color
             separation, and enables the invert image checkbox.
         """
@@ -241,7 +241,7 @@ class ScreenWidget(QFrame):
         self.invertButton.setEnabled(True)
 
 
-class Viewer(QMainWindow):
+c_ Viewer ?MW..
     # Brightness.
     Gloom, Quarter, Half, ThreeQuarters, Full _ range(5)
 
@@ -269,7 +269,7 @@ class Viewer(QMainWindow):
         self.setWindowTitle("QImage Color Separations")
 
         self.createMenus()
-        self.setCentralWidget(self.createCentralWidget())
+        self.sCW..(self.createCentralWidget())
 
     ___ createMenus(self):
         """ Creates a main menu with two entries: a File menu, to allow the image
@@ -281,23 +281,23 @@ class Viewer(QMainWindow):
         self.fileMenu _ QMenu("&File", self)
         self.brightnessMenu _ QMenu("&Brightness", self)
 
-        self.openAction _ self.fileMenu.addAction("&Open...")
-        self.openAction.setShortcut(QKeySequence('Ctrl+O'))
-        self.saveAction _ self.fileMenu.addAction("&Save...")
-        self.saveAction.setShortcut(QKeySequence('Ctrl+S'))
-        self.saveAction.setEnabled(False)
-        self.quitAction _ self.fileMenu.addAction("E&xit")
-        self.quitAction.setShortcut(QKeySequence('Ctrl+Q'))
+        self.openAction _ self.fileMenu.aA..("&Open...")
+        self.openAction.sS..(?KS..('Ctrl+O'))
+        self.saveAction _ self.fileMenu.aA..("&Save...")
+        self.saveAction.sS..(?KS..('Ctrl+S'))
+        self.saveAction.setEnabled F..
+        self.quitAction _ self.fileMenu.aA..("E&xit")
+        self.quitAction.sS..(?KS..('Ctrl+Q'))
 
-        self.noBrightness _ self.brightnessMenu.addAction("&0%")
+        self.noBrightness _ self.brightnessMenu.aA..("&0%")
         self.noBrightness.setCheckable(True)
-        self.quarterBrightness _ self.brightnessMenu.addAction("&25%")
+        self.quarterBrightness _ self.brightnessMenu.aA..("&25%")
         self.quarterBrightness.setCheckable(True)
-        self.halfBrightness _ self.brightnessMenu.addAction("&50%")
+        self.halfBrightness _ self.brightnessMenu.aA..("&50%")
         self.halfBrightness.setCheckable(True)
-        self.threeQuartersBrightness _ self.brightnessMenu.addAction("&75%")
+        self.threeQuartersBrightness _ self.brightnessMenu.aA..("&75%")
         self.threeQuartersBrightness.setCheckable(True)
-        self.fullBrightness _ self.brightnessMenu.addAction("&100%")
+        self.fullBrightness _ self.brightnessMenu.aA..("&100%")
         self.fullBrightness.setCheckable(True)
 
         self.menuMap[self.noBrightness] _ self.Gloom
@@ -308,15 +308,15 @@ class Viewer(QMainWindow):
 
         self.currentBrightness _ self.fullBrightness
         self.currentBrightness.setChecked(True)
-        self.brightnessMenu.setEnabled(False)
+        self.brightnessMenu.setEnabled F..
 
-        self.menuBar().addMenu(self.fileMenu)
-        self.menuBar().addMenu(self.brightnessMenu)
+        self.mB.. .aM..(self.fileMenu)
+        self.mB.. .aM..(self.brightnessMenu)
 
-        self.openAction.triggered.c..(self.chooseFile)
-        self.saveAction.triggered.c..(self.saveImage)
-        self.quitAction.triggered.c..(?A...instance().quit)
-        self.brightnessMenu.triggered.c..(self.setBrightness)
+        self.openAction.t__.c..(self.chooseFile)
+        self.saveAction.t__.c..(self.saveImage)
+        self.quitAction.t__.c..(?A...instance().quit)
+        self.brightnessMenu.t__.c..(self.setBrightness)
 
     ___ createCentralWidget(self):
         """ Constructs a central widget for the window consisting of a two-by-two
@@ -351,40 +351,40 @@ class Viewer(QMainWindow):
         grid.addWidget(self.magentaWidget, 1, 0, Qt.AlignTop | Qt.AlignHCenter)
         grid.addWidget(self.yellowWidget, 1, 1, Qt.AlignTop | Qt.AlignHCenter)
 
-        return frame
+        r_ frame
 
     ___ chooseFile(self):
         """ Provides a dialog window to allow the user to specify an image file.
             If a file is selected, the appropriate function is called to process
             and display it.
         """
-        imageFile, _ _ QFileDialog.getOpenFileName(self,
+        imageFile, _ _ ?FD...gOFN..
                 "Choose an image file to open", self.path, "Images (*.*)")
 
-        if imageFile !_ '':
+        __ imageFile !_ '':
             self.openImageFile(imageFile)
             self.path _ imageFile
 
-    ___ setBrightness(self, action):
+    ___ setBrightness  action):
         """ Changes the value of the brightness according to the entry selected in the
             Brightness menu. The selected entry is checked, and the previously selected
             entry is unchecked.
             The color separations are updated to use the new value for the brightness.
         """
-        if action not in self.menuMap or self.scaledImage.isNull
-            return
+        __ action no. in self.menuMap or self.scaledImage.isNull
+            r_
 
         self.brightness _ self.brightnessValueMap.get(self.menuMap[action])
-        if self.brightness is None:
-            return
+        __ self.brightness __ N..:
+            r_
 
-        self.currentBrightness.setChecked(False)
+        self.currentBrightness.setChecked F..
         self.currentBrightness _ action
         self.currentBrightness.setChecked(True)
 
         self.createImage()
 
-    ___ openImageFile(self, imageFile):
+    ___ openImageFile  imageFile):
         """ Load the image from the file given, and create four pixmaps based
             on the original image.
             The window caption is set, and the Brightness menu enabled if the image file
@@ -392,7 +392,7 @@ class Viewer(QMainWindow):
         """
         originalImage _ QImage()
 
-        if originalImage.load(imageFile):
+        __ originalImage.load(imageFile):
             self.setWindowTitle(imageFile)
             self.saveAction.setEnabled(True)
             self.brightnessMenu.setEnabled(True)
@@ -403,11 +403,11 @@ class Viewer(QMainWindow):
             self.magentaWidget.setImage(self.scaledImage)
             self.yellowWidget.setImage(self.scaledImage)
             self.createImage()
-        else:
-            QMessageBox.warning(self, "Cannot open file",
+        ____
+            ?MB...warning  "Cannot open file",
                     "The selected file could not be opened.",
-                    QMessageBox.Cancel, QMessageBox.NoButton,
-                    QMessageBox.NoButton)
+                    ?MB...Cancel, ?MB...NoButton,
+                    ?MB...NoButton)
 
     ___ createImage(self):
         """ Creates an image by combining the contents of the three screens
@@ -456,27 +456,27 @@ class Viewer(QMainWindow):
     ___ saveImage(self):
         """ Provides a dialog window to allow the user to save the image file.
         """
-        imageFile, _ _ QFileDialog.getSaveFileName(self,
+        imageFile, _ _ ?FD...getSaveFileName
                 "Choose a filename to save the image", "", "Images (*.png)")
 
         info _ QFileInfo(imageFile)
 
-        if info.baseName() !_ '':
+        __ info.baseName() !_ '':
             newImageFile _ QFileInfo(info.absoluteDir(),
                     info.baseName() + '.png').absoluteFilePath()
 
-            if not self.finalWidget.pixmap().save(newImageFile, 'PNG'):
-                QMessageBox.warning(self, "Cannot save file",
+            __ no. self.finalWidget.pixmap().save(newImageFile, 'PNG'):
+                ?MB...warning  "Cannot save file",
                         "The file could not be saved.",
-                        QMessageBox.Cancel, QMessageBox.NoButton,
-                        QMessageBox.NoButton)
-        else:
-            QMessageBox.warning(self, "Cannot save file",
-                    "Please enter a valid filename.", QMessageBox.Cancel,
-                    QMessageBox.NoButton, QMessageBox.NoButton)
+                        ?MB...Cancel, ?MB...NoButton,
+                        ?MB...NoButton)
+        ____
+            ?MB...warning  "Cannot save file",
+                    "Please enter a valid filename.", ?MB...Cancel,
+                    ?MB...NoButton, ?MB...NoButton)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

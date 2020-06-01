@@ -49,8 +49,8 @@ ____ ?.?W.. ______ ?A.., QWidget
 ____ ui_window ______ Ui_Window
 
 
-class SimpleSelector(QWidget, Ui_Window):
-    ___ __init__(self, parent_None):
+c_ SimpleSelector(QWidget, Ui_Window):
+    ___ __init__  parent_None):
         super(SimpleSelector, self).__init__(parent)
 
         self.setupUi(self)
@@ -68,11 +68,11 @@ class SimpleSelector(QWidget, Ui_Window):
     ___ on_highlightButton_clicked(self):
         self.on_elementLineEdit_returnPressed()
  
-    ___ setUrl(self, url):
+    ___ setUrl  url):
         self.webView.setUrl(url)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

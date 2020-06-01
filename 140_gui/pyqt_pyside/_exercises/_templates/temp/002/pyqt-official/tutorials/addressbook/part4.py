@@ -44,42 +44,42 @@
 
 ____ ?.QtCore ______ Qt
 ____ ?.?W.. ______ (QGridLayout, QHBoxLayout, QLabel, QLineEdit,
-        QMessageBox, ?PB.., QTextEdit, QVBoxLayout, QWidget)
+        ?MB.., ?PB.., QTextEdit, QVBoxLayout, QWidget)
 
 
-class SortedDict(dict):
-    class Iterator(object):
-        ___ __init__(self, sorted_dict):
+c_ SortedDict(dict):
+    c_ Iterator(object):
+        ___ __init__  sorted_dict):
             self._dict _ sorted_dict
             self._keys _ sorted(self._dict.keys())
             self._nr_items _ len(self._keys)
             self._idx _ 0
 
         ___ __iter__(self):
-            return self
+            r_ self
 
         ___ next(self):
-            if self._idx >_ self._nr_items:
+            __ self._idx >_ self._nr_items:
                 raise StopIteration
 
             key _ self._keys[self._idx]
             value _ self._dict[key]
             self._idx +_ 1
 
-            return key, value
+            r_ key, value
 
         __next__ _ next
 
     ___ __iter__(self):
-        return SortedDict.Iterator(self)
+        r_ SortedDict.Iterator(self)
 
     iterkeys _ __iter__
 
 
-class AddressBook(QWidget):
+c_ AddressBook(QWidget):
     NavigationMode, AddingMode, EditingMode _ range(3)
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(AddressBook, self).__init__(parent)
 
         self.contacts _ SortedDict()
@@ -98,18 +98,18 @@ class AddressBook(QWidget):
         self.addButton _ ?PB..("&Add")
         self.addButton.s..
         self.editButton _ ?PB..("&Edit")
-        self.editButton.setEnabled(False)
+        self.editButton.setEnabled F..
         self.removeButton _ ?PB..("&Remove")
-        self.removeButton.setEnabled(False)
+        self.removeButton.setEnabled F..
         self.submitButton _ ?PB..("&Submit")
         self.submitButton.hide()
         self.cancelButton _ ?PB..("&Cancel")
         self.cancelButton.hide()
 
         self.nextButton _ ?PB..("&Next")
-        self.nextButton.setEnabled(False)
+        self.nextButton.setEnabled F..
         self.previousButton _ ?PB..("&Previous")
-        self.previousButton.setEnabled(False)
+        self.previousButton.setEnabled F..
 
         self.addButton.c__.c..(self.addContact)
         self.submitButton.c__.c..(self.submitContact)
@@ -161,34 +161,34 @@ class AddressBook(QWidget):
         name _ self.nameLine.text()
         address _ self.addressText.toPlainText()
 
-        if name == "" or address == "":
-            QMessageBox.information(self, "Empty Field",
+        __ name == "" or address == "":
+            ?MB...information  "Empty Field",
                     "Please enter a name and address.")
-            return
+            r_
 
-        if self.currentMode == self.AddingMode:
-            if name not in self.contacts:
+        __ self.currentMode == self.AddingMode:
+            __ name no. in self.contacts:
                 self.contacts[name] _ address
-                QMessageBox.information(self, "Add Successful",
+                ?MB...information  "Add Successful",
                         "\"%s\" has been added to your address book." % name)
-            else:
-                QMessageBox.information(self, "Add Unsuccessful",
+            ____
+                ?MB...information  "Add Unsuccessful",
                         "Sorry, \"%s\" is already in your address book." % name)
-                return
+                r_
 
-        elif self.currentMode == self.EditingMode:
-            if self.oldName !_ name:
-                if name not in self.contacts:
-                    QMessageBox.information(self, "Edit Successful",
+        ____ self.currentMode == self.EditingMode:
+            __ self.oldName !_ name:
+                __ name no. in self.contacts:
+                    ?MB...information  "Edit Successful",
                             "\"%s\" has been edited in your address book." % self.oldName)
                     del self.contacts[self.oldName]
                     self.contacts[name] _ address
-                else:
-                    QMessageBox.information(self, "Edit Unsuccessful",
+                ____
+                    ?MB...information  "Edit Unsuccessful",
                             "Sorry, \"%s\" is already in your address book." % name)
-                    return
-            elif self.oldAddress !_ address:
-                QMessageBox.information(self, "Edit Successful",
+                    r_
+            ____ self.oldAddress !_ address:
+                ?MB...information  "Edit Successful",
                         "\"%s\" has been edited in your address book." % name)
                 self.contacts[name] _ address
 
@@ -203,16 +203,16 @@ class AddressBook(QWidget):
         name _ self.nameLine.text()
         address _ self.addressText.toPlainText()
 
-        if name in self.contacts:
-            button _ QMessageBox.question(self, "Confirm Remove",
+        __ name in self.contacts:
+            button _ ?MB...q..  "Confirm Remove",
                     "Are you sure you want to remove \"%s\"?" % name,
-                    QMessageBox.Yes | QMessageBox.No)
+                    ?MB...Yes | ?MB...No)
 
-            if button == QMessageBox.Yes:
+            __ button == ?MB...Yes:
                 self.previous()
                 del self.contacts[name]
 
-                QMessageBox.information(self, "Remove Successful",
+                ?MB...information  "Remove Successful",
                         "\"%s\" has been removed from your address book." % name)
 
         self.updateInterface(self.NavigationMode)
@@ -225,7 +225,7 @@ class AddressBook(QWidget):
             while True:
                 this_name, _ _ it.next()
 
-                if this_name == name:
+                __ this_name == name:
                     next_name, next_address _ it.next()
                     break
         except StopIteration:
@@ -237,45 +237,45 @@ class AddressBook(QWidget):
     ___ previous(self):
         name _ self.nameLine.text()
 
-        prev_name _ prev_address _ None
+        prev_name _ prev_address _ N..
         for this_name, this_address in self.contacts:
-            if this_name == name:
+            __ this_name == name:
                 break
 
             prev_name _ this_name
             prev_address _ this_address
-        else:
+        ____
             self.nameLine.clear()
             self.addressText.clear()
-            return
+            r_
 
-        if prev_name is None:
+        __ prev_name __ N..:
             for prev_name, prev_address in self.contacts:
                 pass
 
         self.nameLine.sT..(prev_name)
         self.addressText.sT..(prev_address)
 
-    ___ updateInterface(self, mode):
+    ___ updateInterface  mode):
         self.currentMode _ mode
 
-        if self.currentMode in (self.AddingMode, self.EditingMode):
-            self.nameLine.setReadOnly(False)
+        __ self.currentMode in (self.AddingMode, self.EditingMode):
+            self.nameLine.setReadOnly F..
             self.nameLine.setFocus(Qt.OtherFocusReason)
-            self.addressText.setReadOnly(False)
+            self.addressText.setReadOnly F..
 
-            self.addButton.setEnabled(False)
-            self.editButton.setEnabled(False)
-            self.removeButton.setEnabled(False)
+            self.addButton.setEnabled F..
+            self.editButton.setEnabled F..
+            self.removeButton.setEnabled F..
 
-            self.nextButton.setEnabled(False)
-            self.previousButton.setEnabled(False)
+            self.nextButton.setEnabled F..
+            self.previousButton.setEnabled F..
 
             self.submitButton.s..
             self.cancelButton.s..
 
-        elif self.currentMode == self.NavigationMode:
-            if not self.contacts:
+        ____ self.currentMode == self.NavigationMode:
+            __ no. self.contacts:
                 self.nameLine.clear()
                 self.addressText.clear()
 
@@ -293,7 +293,7 @@ class AddressBook(QWidget):
             self.cancelButton.hide()
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     ______ sys
 
     ____ ?.?W.. ______ ?A..

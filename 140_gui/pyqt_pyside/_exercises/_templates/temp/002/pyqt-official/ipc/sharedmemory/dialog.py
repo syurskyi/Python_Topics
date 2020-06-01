@@ -7,10 +7,10 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-____ ? ______ QtCore, QtGui, ?W..
+____ ? ______ QtCore, ?G.., ?W..
 
-class Ui_Dialog(object):
-    ___ setupUi(self, Dialog):
+c_ Ui_Dialog(object):
+    ___ setupUi  Dialog):
         Dialog.setObjectName("Dialog")
         Dialog.resize(451, 322)
         self.gridlayout _ ?W...QGridLayout(Dialog)
@@ -30,7 +30,7 @@ class Ui_Dialog(object):
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
 
-    ___ retranslateUi(self, Dialog):
+    ___ retranslateUi  Dialog):
         _translate _ QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
         self.loadFromFileButton.sT..(_translate("Dialog", "Load Image From File..."))

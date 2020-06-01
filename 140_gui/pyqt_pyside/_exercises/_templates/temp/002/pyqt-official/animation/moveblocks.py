@@ -50,45 +50,45 @@ ____ ?.?W.. ______ (?A.., QGraphicsScene, QGraphicsView,
         QGraphicsWidget)
 
 
-class StateSwitchEvent(QEvent):
+c_ StateSwitchEvent(QEvent):
     StateSwitchType _ QEvent.User + 256
 
-    ___ __init__(self, rand_0):
+    ___ __init__  rand_0):
         super(StateSwitchEvent, self).__init__(StateSwitchEvent.StateSwitchType)
 
         self.m_rand _ rand
 
     ___ rand(self):
-        return self.m_rand
+        r_ self.m_rand
 
 
-class QGraphicsRectWidget(QGraphicsWidget):
-    ___ paint(self, painter, option, widget):
+c_ QGraphicsRectWidget(QGraphicsWidget):
+    ___ paint  painter, option, widget):
         painter.fillRect(self.rect(), Qt.blue)
 
 
-class StateSwitchTransition(QAbstractTransition):
-    ___ __init__(self, rand):
+c_ StateSwitchTransition(QAbstractTransition):
+    ___ __init__  rand):
         super(StateSwitchTransition, self).__init__()
 
         self.m_rand _ rand
 
-    ___ eventTest(self, event):
-        return (event.type() == StateSwitchEvent.StateSwitchType and
+    ___ eventTest  event):
+        r_ (event.type() == StateSwitchEvent.StateSwitchType and
                 event.rand() == self.m_rand)
 
-    ___ onTransition(self, event):
+    ___ onTransition  event):
         pass
 
 
-class StateSwitcher(QState):
-    ___ __init__(self, machine):
+c_ StateSwitcher(QState):
+    ___ __init__  machine):
         super(StateSwitcher, self).__init__(machine)
 
         self.m_stateCount _ 0
         self.m_lastIndex _ 0
 
-    ___ onEntry(self, event):
+    ___ onEntry  event):
         n _ qrand() % self.m_stateCount + 1
         while n == self.m_lastIndex:
             n _ qrand() % self.m_stateCount + 1
@@ -96,10 +96,10 @@ class StateSwitcher(QState):
         self.m_lastIndex _ n
         self.machine().postEvent(StateSwitchEvent(n))
 
-    ___ onExit(self, event):
+    ___ onExit  event):
         pass
 
-    ___ addState(self, state, animation):
+    ___ addState  state, animation):
         self.m_stateCount +_ 1
         trans _ StateSwitchTransition(self.m_stateCount)
         trans.setTargetState(state)
@@ -116,10 +116,10 @@ ___ createGeometryState(w1, rect1, w2, rect2, w3, rect3, w4, rect4, parent):
     result.assignProperty(w3, 'geometry', rect3)
     result.assignProperty(w4, 'geometry', rect4)
 
-    return result
+    r_ result
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

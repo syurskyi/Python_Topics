@@ -1,13 +1,13 @@
 ______ sys
-____ ? ______ ?W.. as qtw
-____ ? ______ QtGui as qtg
-____ ? ______ QtCore as qtc
+____ ? ______ ?W.. __ qtw
+____ ? ______ ?G.. __ qtg
+____ ? ______ QtCore __ qtc
 
 
-class SettingsDialog(qtw.QDialog):
+c_ SettingsDialog(qtw.QDialog):
     """Dialog for setting the settings"""
 
-    ___ __init__(self, settings, parent_None):
+    ___ __init__  settings, parent_None):
         super().__init__(parent, modal_True)
         self.setLayout(qtw.QFormLayout())
         self.settings _ settings
@@ -34,7 +34,7 @@ class SettingsDialog(qtw.QDialog):
         super().accept()
 
 
-class MainWindow(qtw.QMainWindow): # change to mainwindow
+c_ MainWindow(qtw.QMainWindow): # change to mainwindow
 
     #settings = {'show_warnings': True}
     settings _ qtc.QSettings('Alan D Moore', 'text editor')
@@ -52,7 +52,7 @@ class MainWindow(qtw.QMainWindow): # change to mainwindow
         # The central widget #
         ######################
         self.textedit _ qtw.QTextEdit()
-        self.setCentralWidget(self.textedit)
+        self.sCW..(self.textedit)
 
         #################
         # The Statusbar #
@@ -79,31 +79,31 @@ class MainWindow(qtw.QMainWindow): # change to mainwindow
         ###############j
         # The menubar #
         ###############
-        menubar _ self.menuBar()
+        menubar _ self.mB..
 
         # add submenus to a menu
-        file_menu _ menubar.addMenu('File')
-        edit_menu _ menubar.addMenu('Edit')
-        help_menu _ menubar.addMenu('Help')
+        file_menu _ menubar.aM..('File')
+        edit_menu _ menubar.aM..('Edit')
+        help_menu _ menubar.aM..('Help')
 
         # add actions
-        open_action _ file_menu.addAction('Open')
-        save_action _ file_menu.addAction('Save')
+        open_action _ file_menu.aA..('Open')
+        save_action _ file_menu.aA..('Save')
 
         # add separator
         file_menu.addSeparator()
 
         # add an action with a callback
-        quit_action _ file_menu.addAction('Quit', self.destroy)
+        quit_action _ file_menu.aA..('Quit', self.destroy)
 
         # connect to a Qt Slot
-        edit_menu.addAction('Undo', self.textedit.undo)
+        edit_menu.aA..('Undo', self.textedit.undo)
 
         # create a QAction manually
 
-        redo_action _ qtw.QAction('Redo', self)
-        redo_action.triggered.c..(self.textedit.redo)
-        edit_menu.addAction(redo_action)
+        redo_action _ qtw.?A..('Redo', self)
+        redo_action.t__.c..(self.textedit.redo)
+        edit_menu.aA..(redo_action)
 
         ############################
         # The Toolbar and QActions #
@@ -113,8 +113,8 @@ class MainWindow(qtw.QMainWindow): # change to mainwindow
         #toolbar.addAction(open_action)
         #toolbar.addAction("Save")
 
-        toolbar.setMovable(False)
-        toolbar.setFloatable(False)
+        toolbar.setMovable F..
+        toolbar.setFloatable F..
         toolbar.setAllowedAreas(
             qtc.Qt.TopToolBarArea |
             qtc.Qt.BottomToolBarArea
@@ -125,8 +125,8 @@ class MainWindow(qtw.QMainWindow): # change to mainwindow
         save_icon _ self.style().standardIcon(qtw.QStyle.SP_DriveHDIcon)
 
         open_action.setIcon(open_icon)
-        toolbar.addAction(open_action)
-        toolbar.addAction(
+        toolbar.aA..(open_action)
+        toolbar.aA..(
             save_icon,
             'Save',
             lambda: self.statusBar().showMessage('File Saved!')
@@ -134,7 +134,7 @@ class MainWindow(qtw.QMainWindow): # change to mainwindow
 
         # create a custom QAction
 
-        help_action _ qtw.QAction(
+        help_action _ qtw.?A..(
             self.style().standardIcon(qtw.QStyle.SP_DialogHelpButton),
             'Help',
             self,  # important to pass the parent!
@@ -142,14 +142,14 @@ class MainWindow(qtw.QMainWindow): # change to mainwindow
                 'Sorry, no help yet!'
             )
         )
-        toolbar.addAction(help_action)
+        toolbar.aA..(help_action)
 
         # create a toolbar in another part of the screen:
         toolbar2 _ qtw.QToolBar('Edit')
         self.addToolBar(qtc.Qt.RightToolBarArea, toolbar2)
-        toolbar2.addAction('Copy', self.textedit.copy)
-        toolbar2.addAction('Cut', self.textedit.cut)
-        toolbar2.addAction('Paste', self.textedit.paste)
+        toolbar2.aA..('Copy', self.textedit.copy)
+        toolbar2.aA..('Cut', self.textedit.cut)
+        toolbar2.aA..('Paste', self.textedit.paste)
 
 
         ################
@@ -185,16 +185,16 @@ class MainWindow(qtw.QMainWindow): # change to mainwindow
         ############################
 
         # QMessageBox
-        help_menu.addAction('About', self.showAboutDialog)
+        help_menu.aA..('About', self.showAboutDialog)
 
-        if self.settings.value('show_warnings', False, type_bool):
-            response _ qtw.QMessageBox.question(
+        __ self.settings.value('show_warnings', False, type_bool):
+            response _ qtw.?MB...q..(
                 self,
                 'My Text Editor',
                 'This is beta software, do you want to continue?',
-                qtw.QMessageBox.Yes | qtw.QMessageBox.Abort
+                qtw.?MB...Yes | qtw.?MB...Abort
             )
-            if response == qtw.QMessageBox.Abort:
+            __ response == qtw.?MB...Abort:
                 self.close()
                 sys.exit()
 
@@ -212,23 +212,23 @@ class MainWindow(qtw.QMainWindow): # change to mainwindow
                 'purposes, and probably is not fit for real work.'
             )
             splash_screen.setWindowModality(qtc.Qt.WindowModal)
-            splash_screen.addButton(qtw.QMessageBox.Yes)
-            splash_screen.addButton(qtw.QMessageBox.Abort)
+            splash_screen.addButton(qtw.?MB...Yes)
+            splash_screen.addButton(qtw.?MB...Abort)
             response _ splash_screen.e..
-            if response == qtw.QMessageBox.Abort:
+            __ response == qtw.?MB...Abort:
                 self.close()
                 sys.exit()
 
         # QFileDialog
-        open_action.triggered.c..(self.openFile)
-        save_action.triggered.c..(self.saveFile)
+        open_action.t__.c..(self.openFile)
+        save_action.t__.c..(self.saveFile)
 
         # QFontDialog
 
-        edit_menu.addAction('Set Font…', self.set_font)
+        edit_menu.aA..('Set Font…', self.set_font)
 
         # Custom dialog
-        edit_menu.addAction('Settings…', self.show_settings)
+        edit_menu.aA..('Settings…', self.show_settings)
 
         ###################
         # Saving Settings #
@@ -242,48 +242,48 @@ class MainWindow(qtw.QMainWindow): # change to mainwindow
         s_text _ self.search_text_inp.text()
         r_text _ self.replace_text_inp.text()
 
-        if s_text:
+        __ s_text:
             self.textedit.sT..(
                 self.textedit.toPlainText().replace(s_text, r_text)
                 )
 
     ___ showAboutDialog(self):
-        qtw.QMessageBox.about(
+        qtw.?MB...about(
             self,
             "About text_editor.py",
             "This is a text editor written in PyQt5."
         )
 
     ___ openFile(self):
-        filename, _ _ qtw.QFileDialog.getOpenFileName(
+        filename, _ _ qtw.?FD...gOFN..(
             self,
             "Select a text file to open…",
             qtc.QDir.homePath(),
             'Text Files (*.txt) ;;Python Files (*.py) ;;All Files (*)',
             'Python Files (*.py)',
-            qtw.QFileDialog.DontUseNativeDialog |
-            qtw.QFileDialog.DontResolveSymlinks
+            qtw.?FD...DontUseNativeDialog |
+            qtw.?FD...DontResolveSymlinks
         )
-        if filename:
+        __ filename:
             try:
-                with open(filename, 'r') as fh:
-                    self.textedit.sT..(fh.read())
-            except Exception as e:
-                qtw.QMessageBox.critical(f"Could not load file: {e}")
+                w__ o..(filename, 'r') __ fh:
+                    self.textedit.sT..(fh.r..
+            except Exception __ e:
+                qtw.?MB...critical(f"Could not load file: {e}")
 
     ___ saveFile(self):
-        filename, _ _ qtw.QFileDialog.getSaveFileName(
+        filename, _ _ qtw.?FD...getSaveFileName(
             self,
             "Select the file to save to…",
             qtc.QDir.homePath(),
             'Text Files (*.txt) ;;Python Files (*.py) ;;All Files (*)'
         )
-        if filename:
+        __ filename:
             try:
-                with open(filename, 'w') as fh:
-                    fh.write(self.textedit.toPlainText())
-            except Exception as e:
-                qtw.QMessageBox.critical(f"Could not save file: {e}")
+                w__ o..(filename, 'w') __ fh:
+                    fh.w..(self.textedit.tPT..
+            except Exception __ e:
+                qtw.?MB...critical(f"Could not save file: {e}")
 
     ___ set_font(self):
         current _ self.textedit.currentFont()
@@ -295,7 +295,7 @@ class MainWindow(qtw.QMainWindow): # change to mainwindow
                 qtw.QFontDialog.MonospacedFonts
             )
         )
-        if accepted:
+        __ accepted:
             self.textedit.setCurrentFont(font)
 
     ___ show_settings(self):
@@ -304,7 +304,7 @@ class MainWindow(qtw.QMainWindow): # change to mainwindow
         settings_dialog.exec()
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtw.?A..(sys.argv)
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.

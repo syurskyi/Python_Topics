@@ -1,11 +1,11 @@
 ______ sys
-____ ? ______ ?W.. as qtw
-____ ? ______ QtGui as qtg
-____ ? ______ QtCore as qtc
-____ ? ______ QtMultimedia as qtmm
+____ ? ______ ?W.. __ qtw
+____ ? ______ ?G.. __ qtg
+____ ? ______ QtCore __ qtc
+____ ? ______ QtMultimedia __ qtmm
 
 
-class PlayButton(qtw.?PB..):
+c_ PlayButton(qtw.?PB..):
     play_stylesheet _ 'background-color: lightgreen; color: black;'
     stop_stylesheet _ 'background-color: darkred; color: white;'
 
@@ -18,16 +18,16 @@ class PlayButton(qtw.?PB..):
         )
         self.setStyleSheet(self.play_stylesheet)
 
-    ___ on_state_changed(self, state):
-        if state == qtmm.QMediaPlayer.PlayingState:
+    ___ on_state_changed  state):
+        __ state == qtmm.QMediaPlayer.PlayingState:
             self.setStyleSheet(self.stop_stylesheet)
             self.sT..('Stop')
-        else:
+        ____
             self.setStyleSheet(self.play_stylesheet)
             self.sT..('Play')
 
 
-class RecordButton(qtw.?PB..):
+c_ RecordButton(qtw.?PB..):
 
     record_stylesheet _ 'background-color: black; color: white;'
     stop_stylesheet _ 'background-color: darkred; color: white;'
@@ -35,16 +35,16 @@ class RecordButton(qtw.?PB..):
     ___ __init__(self):
         super().__init__('Record')
 
-    ___ on_state_changed(self, state):
-        if state == qtmm.QAudioRecorder.RecordingState:
+    ___ on_state_changed  state):
+        __ state == qtmm.QAudioRecorder.RecordingState:
             self.setStyleSheet(self.stop_stylesheet)
             self.sT..('Stop')
-        else:
+        ____
             self.setStyleSheet(self.record_stylesheet)
             self.sT..('Record')
 
 
-class SoundWidget(qtw.QWidget):
+c_ SoundWidget(qtw.QWidget):
 
     ___ __init__(self):
         super().__init__()
@@ -120,14 +120,14 @@ class SoundWidget(qtw.QWidget):
 
 
     ___ on_playbutton(self):
-        if self.player.state() == qtmm.QMediaPlayer.PlayingState:
+        __ self.player.state() == qtmm.QMediaPlayer.PlayingState:
             self.player.stop()
-        else:
+        ____
             self.player.play()
 
-    ___ set_file(self, url):
+    ___ set_file  url):
         self.label.sT..(url.fileName())
-        if url.scheme() == '':
+        __ url.scheme() == '':
             url.setScheme('file')
         content _ qtmm.QMediaContent(url)
         #self.player.setMedia(content)
@@ -138,35 +138,35 @@ class SoundWidget(qtw.QWidget):
         self.playlist.addMedia(content)
         self.playlist.setCurrentIndex(1)
         self.player.setPlaylist(self.playlist)
-        self.loop_cb.setChecked(False)
+        self.loop_cb.setChecked F..
 
     ___ get_file(self):
-        fn, _ _ qtw.QFileDialog.getOpenFileUrl(
+        fn, _ _ qtw.?FD...getOpenFileUrl(
             self,
             "Select File",
             qtc.QDir.homePath(),
             "Audio files (*.wav *.flac *.mp3 *.ogg *.aiff);; All files (*)"
         )
-        if fn:
+        __ fn:
             self.set_file(fn)
 
-    ___ on_loop_cb(self, state):
-        if state == qtc.Qt.Checked:
+    ___ on_loop_cb  state):
+        __ state == qtc.Qt.Checked:
             self.playlist.setPlaybackMode(
                 qtmm.QMediaPlaylist.CurrentItemInLoop)
-        else:
+        ____
             self.playlist.setPlaybackMode(
                 qtmm.QMediaPlaylist.CurrentItemOnce)
 
     ___ on_recordbutton(self):
-        if self.recorder.state() == qtmm.QMediaRecorder.RecordingState:
+        __ self.recorder.state() == qtmm.QMediaRecorder.RecordingState:
             self.recorder.stop()
             url _ self.recorder.actualLocation()
             self.set_file(url)
-        else:
+        ____
             self.recorder.record()
 
-class MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.QMainWindow):
 
     ___ __init__(self):
         """MainWindow constructor.
@@ -179,7 +179,7 @@ class MainWindow(qtw.QMainWindow):
         columns _ 3
         soundboard _ qtw.QWidget()
         soundboard.setLayout(qtw.QGridLayout())
-        self.setCentralWidget(soundboard)
+        self.sCW..(soundboard)
         for c in range(columns):
             for r in range(rows):
                 sw _ SoundWidget()
@@ -189,7 +189,7 @@ class MainWindow(qtw.QMainWindow):
         self.s..
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtw.?A..(sys.argv)
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.

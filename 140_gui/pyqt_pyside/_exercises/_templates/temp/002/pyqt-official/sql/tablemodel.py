@@ -64,15 +64,15 @@ ___ createView(title, model):
     view _ QTableView()
     view.setModel(model)
     view.setWindowTitle(title)
-    return view
+    r_ view
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 
     app _ ?A..(sys.argv)
-    if not connection.createConnection
+    __ no. connection.createConnection
         sys.exit(1)
 
     model _ QSqlTableModel()

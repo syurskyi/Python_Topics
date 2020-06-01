@@ -6,69 +6,69 @@ ______ sys
 appctxt _ ApplicationContext()       # 1. Instantiate ApplicationContext
 
 ____ ?.?W.. ______ _
-____ ?.QtGui ______ QKeySequence
+____ ?.?G.. ______ ?KS..
 
-class MainWindow(QMainWindow):
-    ___ closeEvent(self, e):
-        if not text.document().isModified
-            return
-        answer _ QMessageBox.question(
-            window, None,
+c_ MainWindow ?MW..
+    ___ closeEvent  e):
+        __ no. text.document().iM..
+            r_
+        answer _ ?MB...q..(
+            window, N..,
             "You have unsaved changes. Save before closing?",
-            QMessageBox.Save | QMessageBox.Discard | QMessageBox.Cancel
+            ?MB...Save | ?MB...Discard | ?MB...Cancel
         )
-        if answer & QMessageBox.Save:
+        __ answer & ?MB...Save:
             save()
-        elif answer & QMessageBox.Cancel:
+        ____ answer & ?MB...Cancel:
             e.ignore()
 
-text _ QPlainTextEdit()
+text _ ?PTE..
 window _ MainWindow()
-window.setCentralWidget(text)
+window.sCW..(text)
 
-file_path _ None
+file_path _ N..
 
-menu _ window.menuBar().addMenu("&File")
-open_action _ QAction("&Open")
+menu _ window.mB.. .aM..("&File")
+open_action _ ?A..("&Open")
 ___ open_file
-    global file_path
-    path _ QFileDialog.getOpenFileName(window, "Open")[0]
-    if path:
-        text.setPlainText(open(path).read())
+    gl.. file_path
+    path _ ?FD...gOFN..(window, "Open")[0]
+    __ path:
+        text.sPT..(o..(path).r..
         file_path _ path
-open_action.triggered.c..(open_file)
-open_action.setShortcut(QKeySequence.Open)
-menu.addAction(open_action)
+open_action.t__.c..(open_file)
+open_action.sS..(?KS...Open)
+menu.aA..(open_action)
 
-save_action _ QAction("&Save")
+save_action _ ?A..("&Save")
 ___ save
-    if file_path is None:
+    __ file_path __ N..:
         save_as()
-    else:
-        with open(file_path, "w") as f:
-            f.write(text.toPlainText())
-        text.document().setModified(False)
-save_action.triggered.c..(save)
-save_action.setShortcut(QKeySequence.Save)
-menu.addAction(save_action)
+    ____
+        w__ o..(file_path, _  __ f:
+            f.w..(text.tPT..
+        text.document().setModified F..
+save_action.t__.c..(save)
+save_action.sS..(?KS...Save)
+menu.aA..(save_action)
 
-save_as_action _ QAction("Save &As...")
+save_as_action _ ?A..("Save &As...")
 ___ save_as
-    global file_path
-    path _ QFileDialog.getSaveFileName(window, "Save As")[0]
-    if path:
+    gl.. file_path
+    path _ ?FD...getSaveFileName(window, "Save As")[0]
+    __ path:
         file_path _ path
         save()
-save_as_action.triggered.c..(save_as)
-menu.addAction(save_as_action)
+save_as_action.t__.c..(save_as)
+menu.aA..(save_as_action)
 
-close _ QAction("&Close")
-close.triggered.c..(window.close)
-menu.addAction(close)
+close _ ?A..("&Close")
+close.t__.c..(window.close)
+menu.aA..(close)
 
-help_menu _ window.menuBar().addMenu("&Help")
-about_action _ QAction("&About")
-help_menu.addAction(about_action)
+help_menu _ window.mB.. .aM..("&Help")
+about_action _ ?A..("&About")
+help_menu.aA..(about_action)
 ___ show_about_dialog
     text _ "<center>" \
        "<h1>Text Editor</h1>" \
@@ -78,10 +78,10 @@ ___ show_about_dialog
        "<p>Version 31.4.159.265358<br/>" \
        "Copyright &copy; Company Inc.</p>" \
        % appctxt.get_resource("icon.svg")
-    about_dialog _ QMessageBox(window)
+    about_dialog _ ?MB..(window)
     about_dialog.sT..(text)
     about_dialog.e..
-about_action.triggered.c..(show_about_dialog)
+about_action.t__.c..(show_about_dialog)
 
 window.s..
 

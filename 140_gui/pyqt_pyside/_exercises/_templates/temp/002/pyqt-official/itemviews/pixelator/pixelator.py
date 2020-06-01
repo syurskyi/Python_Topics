@@ -44,10 +44,10 @@
 
 ____ ?.QtCore ______ (QAbstractTableModel, QDir, QModelIndex, QRect,
         QRectF, QSize, Qt)
-____ ?.QtGui ______ QBrush, qGray, QImage, QPainter
+____ ?.?G.. ______ QBrush, qGray, QImage, QPainter
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
 ____ ?.?W.. ______ (QAbstractItemDelegate, ?A.., QDialog,
-        QFileDialog, QHBoxLayout, QLabel, QMainWindow, QMessageBox, QMenu,
+        ?FD.., QHBoxLayout, QLabel, QMainWindow, ?MB.., QMenu,
         QProgressDialog, QSpinBox, QStyle, QStyleOptionViewItem, QTableView,
         QVBoxLayout, QWidget)
 
@@ -57,29 +57,29 @@ ______ pixelator_rc
 ItemSize _ 256
 
 
-class PixelDelegate(QAbstractItemDelegate):
-    ___ __init__(self, parent_None):
+c_ PixelDelegate(QAbstractItemDelegate):
+    ___ __init__  parent_None):
         super(PixelDelegate, self).__init__(parent)
 
         self.pixelSize _ 12
 
-    ___ paint(self, painter, option, index):
-        if option.state & QStyle.State_Selected:
+    ___ paint  painter, option, index):
+        __ option.state & QStyle.State_Selected:
             painter.fillRect(option.rect, option.palette.highlight())
 
         size _ min(option.rect.width(), option.rect.height())
         brightness _ index.model().data(index, Qt.DisplayRole)
         radius _ (size/2.0) - (brightness/255.0 * size/2.0)
-        if radius == 0.0:
-            return
+        __ radius == 0.0:
+            r_
 
         painter.save()
         painter.setRenderHint(QPainter.Antialiasing)
         painter.setPen(Qt.NoPen)
 
-        if option.state & QStyle.State_Selected:
+        __ option.state & QStyle.State_Selected:
             painter.setBrush(option.palette.highlightedText())
-        else:
+        ____
             painter.setBrush(QBrush(Qt.black))
 
         painter.drawEllipse(QRectF(
@@ -89,44 +89,44 @@ class PixelDelegate(QAbstractItemDelegate):
 
         painter.restore()
 
-    ___ sizeHint(self, option, index):
-        return QSize(self.pixelSize, self.pixelSize)
+    ___ sizeHint  option, index):
+        r_ QSize(self.pixelSize, self.pixelSize)
 
-    ___ setPixelSize(self, size):
+    ___ setPixelSize  size):
         self.pixelSize _ size
 
 
-class ImageModel(QAbstractTableModel):
-    ___ __init__(self, parent_None):
+c_ ImageModel(QAbstractTableModel):
+    ___ __init__  parent_None):
         super(ImageModel, self).__init__(parent)
 
         self.modelImage _ QImage()
 
-    ___ setImage(self, image):
+    ___ setImage  image):
         self.beginResetModel()
         self.modelImage _ QImage(image)
         self.endResetModel()
 
-    ___ rowCount(self, parent):
-        return self.modelImage.height()
+    ___ rowCount  parent):
+        r_ self.modelImage.height()
 
-    ___ columnCount(self, parent):
-        return self.modelImage.width()
+    ___ columnCount  parent):
+        r_ self.modelImage.width()
 
-    ___ data(self, index, role):
-        if not index.isValid() or role !_ Qt.DisplayRole:
-            return None
+    ___ data  index, role):
+        __ no. index.isValid() or role !_ Qt.DisplayRole:
+            r_ N..
 
-        return qGray(self.modelImage.pixel(index.column(), index.row()))
+        r_ qGray(self.modelImage.pixel(index.column(), index.row()))
 
-    ___ headerData(self, section, orientation, role):
-        if role == Qt.SizeHintRole:
-            return QSize(1, 1)
+    ___ headerData  section, orientation, role):
+        __ role == Qt.SizeHintRole:
+            r_ QSize(1, 1)
 
-        return None
+        r_ N..
 
 
-class MainWindow(QMainWindow):
+c_ MainWindow ?MW..
     ___ __init__(self):
         super(MainWindow, self).__init__()
 
@@ -136,7 +136,7 @@ class MainWindow(QMainWindow):
         centralWidget _ QWidget()
 
         self.view _ QTableView()
-        self.view.setShowGrid(False)
+        self.view.setShowGrid F..
         self.view.horizontalHeader().hide()
         self.view.verticalHeader().hide()
         self.view.horizontalHeader().setMinimumSectionSize(1)
@@ -153,27 +153,27 @@ class MainWindow(QMainWindow):
         pixelSizeSpinBox.setValue(12)
 
         fileMenu _ QMenu("&File", self)
-        openAction _ fileMenu.addAction("&Open...")
-        openAction.setShortcut("Ctrl+O")
+        openAction _ fileMenu.aA..("&Open...")
+        openAction.sS..("Ctrl+O")
 
-        self.printAction _ fileMenu.addAction("&Print...")
-        self.printAction.setEnabled(False)
-        self.printAction.setShortcut("Ctrl+P")
+        self.printAction _ fileMenu.aA..("&Print...")
+        self.printAction.setEnabled F..
+        self.printAction.sS..("Ctrl+P")
 
-        quitAction _ fileMenu.addAction("E&xit")
-        quitAction.setShortcut("Ctrl+Q")
+        quitAction _ fileMenu.aA..("E&xit")
+        quitAction.sS..("Ctrl+Q")
 
         helpMenu _ QMenu("&Help", self)
-        aboutAction _ helpMenu.addAction("&About")
+        aboutAction _ helpMenu.aA..("&About")
 
-        self.menuBar().addMenu(fileMenu)
-        self.menuBar().addSeparator()
-        self.menuBar().addMenu(helpMenu)
+        self.mB.. .aM..(fileMenu)
+        self.mB.. .addSeparator()
+        self.mB.. .aM..(helpMenu)
 
-        openAction.triggered.c..(self.chooseImage)
-        self.printAction.triggered.c..(self.printImage)
-        quitAction.triggered.c..(?A...instance().quit)
-        aboutAction.triggered.c..(self.showAboutBox)
+        openAction.t__.c..(self.chooseImage)
+        self.printAction.t__.c..(self.printImage)
+        quitAction.t__.c..(?A...instance().quit)
+        aboutAction.t__.c..(self.showAboutBox)
         pixelSizeSpinBox.valueChanged.c..(delegate.setPixelSize)
         pixelSizeSpinBox.valueChanged.c..(self.updateView)
 
@@ -187,25 +187,25 @@ class MainWindow(QMainWindow):
         mainLayout.addLayout(controlsLayout)
         centralWidget.setLayout(mainLayout)
 
-        self.setCentralWidget(centralWidget)
+        self.sCW..(centralWidget)
 
         self.setWindowTitle("Pixelator")
         self.resize(640, 480)
 
     ___ chooseImage(self):
-        fileName, _ _ QFileDialog.getOpenFileName(self, "Choose an Image",
+        fileName, _ _ ?FD...gOFN..  "Choose an Image",
                 self.currentPath, '*')
 
-        if fileName:
+        __ fileName:
             self.openImage(fileName)
 
-    ___ openImage(self, fileName):
+    ___ openImage  fileName):
         image _ QImage()
 
-        if image.load(fileName):
+        __ image.load(fileName):
             self.model.setImage(image)
 
-            if not fileName.startswith(':/'):
+            __ no. fileName.startswith(':/'):
                 self.currentPath _ fileName
                 self.setWindowTitle("%s - Pixelator" % self.currentPath)
 
@@ -213,21 +213,21 @@ class MainWindow(QMainWindow):
             self.updateView()
 
     ___ printImage(self):
-        if self.model.rowCount(QModelIndex()) * self.model.columnCount(QModelIndex()) > 90000:
-            answer _ QMessageBox.question(self, "Large Image Size",
+        __ self.model.rowCount(QModelIndex()) * self.model.columnCount(QModelIndex()) > 90000:
+            answer _ ?MB...q..  "Large Image Size",
                     "The printed image may be very large. Are you sure that "
                     "you want to print it?",
-                    QMessageBox.Yes | QMessageBox.No)
-            if answer == QMessageBox.No:
-                return
+                    ?MB...Yes | ?MB...No)
+            __ answer == ?MB...No:
+                r_
 
         printer _ QPrinter(QPrinter.HighResolution)
 
         dlg _ QPrintDialog(printer, self)
         dlg.setWindowTitle("Print Image")
 
-        if dlg.e.. !_ QDialog.Accepted:
-            return
+        __ dlg.e.. !_ QDialog.Accepted:
+            r_
 
         painter _ QPainter()
         painter.begin(printer)
@@ -258,7 +258,7 @@ class MainWindow(QMainWindow):
         for row in range(rows):
             progress.setValue(row)
             ?A...processEvents()
-            if progress.wasCanceled
+            __ progress.wasCanceled
                 break
 
             x _ ItemSize / 2.0
@@ -276,12 +276,12 @@ class MainWindow(QMainWindow):
         painter.restore()
         painter.end()
 
-        if progress.wasCanceled
-            QMessageBox.information(self, "Printing canceled",
-                    "The printing process was canceled.", QMessageBox.Cancel)
+        __ progress.wasCanceled
+            ?MB...information  "Printing canceled",
+                    "The printing process was canceled.", ?MB...Cancel)
 
     ___ showAboutBox(self):
-        QMessageBox.about(self, "About the Pixelator example",
+        ?MB...about  "About the Pixelator example",
                 "This example demonstrates how a standard view and a custom\n"
                 "delegate can be used to produce a specialized "
                 "representation\nof data in a simple custom model.")
@@ -291,7 +291,7 @@ class MainWindow(QMainWindow):
         self.view.resizeRowsToContents()
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

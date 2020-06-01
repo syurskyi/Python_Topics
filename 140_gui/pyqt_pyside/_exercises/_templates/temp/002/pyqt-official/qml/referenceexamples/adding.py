@@ -58,8 +58,8 @@ Person {
 '''
 
 
-class Person(QObject):
-    ___ __init__(self, parent_None):
+c_ Person(QObject):
+    ___ __init__  parent_None):
         super(Person, self).__init__(parent)
 
         self._name _ ''
@@ -67,18 +67,18 @@ class Person(QObject):
 
     @pyqtProperty(str)
     ___ name(self):
-        return self._name
+        r_ self._name
 
     @name.setter
-    ___ name(self, name):
+    ___ name  name):
         self._name _ name
 
     @pyqtProperty(int)
     ___ shoeSize(self):
-        return self._shoeSize
+        r_ self._shoeSize
 
     @shoeSize.setter
-    ___ shoeSize(self, shoeSize):
+    ___ shoeSize  shoeSize):
         self._shoeSize _ shoeSize
 
 
@@ -93,10 +93,10 @@ component.setData(QML, QUrl())
 
 person _ component.create()
 
-if person is not None:
+__ person __ no. N..:
     print("The person's name is \"%s\"" % person.name)
     print("They wear a %d sized shoe" % person.shoeSize)
-else:
+____
     print("Unable to create component instance")
     for e in component.errors
         print("Error:", e.toString());

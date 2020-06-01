@@ -1,10 +1,10 @@
 ______ sys
-____ ? ______ ?W.. as qtw
-____ ? ______ QtNetwork as qtn
-____ ? ______ QtCore as qtc
+____ ? ______ ?W.. __ qtw
+____ ? ______ QtNetwork __ qtn
+____ ? ______ QtCore __ qtc
 
 
-class UdpChatInterface(qtc.QObject):
+c_ UdpChatInterface(qtc.QObject):
     """Network interface for chat messages."""
 
     port _ 7777
@@ -12,7 +12,7 @@ class UdpChatInterface(qtc.QObject):
     received _ qtc.pyqtSignal(str, str)
     error _ qtc.pyqtSignal(str)
 
-    ___ __init__(self, username):
+    ___ __init__  username):
         super().__init__()
         self.username _ username
 
@@ -28,13 +28,13 @@ class UdpChatInterface(qtc.QObject):
             # cast it to bytes then decode
             raw_message _ bytes(datagram.data()).decode('utf-8')
 
-            if self.delimiter not in raw_message:
+            __ self.delimiter no. in raw_message:
                 # invalid message, ignore
                 continue
             username, message _ raw_message.split(self.delimiter, 1)
             self.received.emit(username, message)
 
-    ___ on_error(self, socket_error):
+    ___ on_error  socket_error):
         # Magic to get the enum name
         error_index _ (qtn.QAbstractSocket
                        .staticMetaObject
@@ -46,7 +46,7 @@ class UdpChatInterface(qtc.QObject):
         message _ f"There was a network error: {error}"
         self.error.emit(message)
 
-    ___ send_message(self, message):
+    ___ send_message  message):
         """Prepare and send a message"""
         msg_bytes _ (
             f'{self.username}{self.delimiter}{message}'
@@ -58,7 +58,7 @@ class UdpChatInterface(qtc.QObject):
             )
 
 
-class ChatWindow(qtw.QWidget):
+c_ ChatWindow(qtw.QWidget):
     """The form to show and enter chats"""
 
     submitted _ qtc.pyqtSignal(str)
@@ -74,17 +74,17 @@ class ChatWindow(qtw.QWidget):
         self.send_btn _ qtw.?PB..('Send', c___self.send)
         self.layout().addWidget(self.send_btn, 2, 2)
 
-    ___ write_message(self, username, message):
+    ___ write_message  username, message):
         self.message_view.append(f'<b>{username}: </b> {message}<br>')
 
     ___ send(self):
         message _ self.message_entry.text().strip()
-        if message:
+        __ message:
             self.submitted.emit(message)
             self.message_entry.clear()
 
 
-class MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.QMainWindow):
 
     ___ __init__(self):
         """MainWindow constructor."""
@@ -92,19 +92,19 @@ class MainWindow(qtw.QMainWindow):
         # Code starts here
 
         self.cw _ ChatWindow()
-        self.setCentralWidget(self.cw)
+        self.sCW..(self.cw)
 
         username _ qtc.QDir.home().dirName()
         self.interface _ UdpChatInterface(username)
         self.cw.submitted.c..(self.interface.send_message)
         self.interface.received.c..(self.cw.write_message)
         self.interface.error.c..(
-            lambda x: qtw.QMessageBox.critical(None, 'Error', x))
+            lambda x: qtw.?MB...critical(N.., 'Error', x))
         # Code ends here
         self.s..
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtw.?A..(sys.argv)
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.

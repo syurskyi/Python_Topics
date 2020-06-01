@@ -44,13 +44,13 @@
 
 
 ____ ?.QtCore ______ QDate, QLocale, Qt
-____ ?.QtGui ______ QFont, QTextCharFormat
+____ ?.?G.. ______ QFont, QTextCharFormat
 ____ ?.?W.. ______ (?A.., QCalendarWidget, QCheckBox,
         QComboBox, QDateEdit, QGridLayout, QGroupBox, QHBoxLayout, QLabel,
         QLayout, QWidget)
 
 
-class Window(QWidget):
+c_ Window(QWidget):
     ___ __init__(self):
         super(Window, self).__init__()
 
@@ -74,24 +74,24 @@ class Window(QWidget):
 
         self.setWindowTitle("Calendar Widget")
 
-    ___ localeChanged(self, index):
+    ___ localeChanged  index):
         self.calendar.setLocale(self.localeCombo.itemData(index))
 
-    ___ firstDayChanged(self, index):
+    ___ firstDayChanged  index):
         self.calendar.setFirstDayOfWeek(
                 Qt.DayOfWeek(self.firstDayCombo.itemData(index)))
 
-    ___ selectionModeChanged(self, index):
+    ___ selectionModeChanged  index):
         self.calendar.setSelectionMode(
                 QCalendarWidget.SelectionMode(
                         self.selectionModeCombo.itemData(index)))
 
-    ___ horizontalHeaderChanged(self, index):
+    ___ horizontalHeaderChanged  index):
         self.calendar.setHorizontalHeaderFormat(
                 QCalendarWidget.HorizontalHeaderFormat(
                         self.horizontalHeaderCombo.itemData(index)))
 
-    ___ verticalHeaderChanged(self, index):
+    ___ verticalHeaderChanged  index):
         self.calendar.setVerticalHeaderFormat(
                 QCalendarWidget.VerticalHeaderFormat(
                         self.verticalHeaderCombo.itemData(index)))
@@ -99,11 +99,11 @@ class Window(QWidget):
     ___ selectedDateChanged(self):
         self.currentDateEdit.setDate(self.calendar.selectedDate())
 
-    ___ minimumDateChanged(self, date):
+    ___ minimumDateChanged  date):
         self.calendar.setMinimumDate(date)
         self.maximumDateEdit.setDate(self.calendar.maximumDate())
 
-    ___ maximumDateChanged(self, date):
+    ___ maximumDateChanged  date):
         self.calendar.setMaximumDate(date)
         self.minimumDateEdit.setDate(self.calendar.minimumDate())
 
@@ -134,17 +134,17 @@ class Window(QWidget):
         text _ self.headerTextFormatCombo.currentText()
         format _ QTextCharFormat()
 
-        if text == "Bold":
+        __ text == "Bold":
             format.setFontWeight(QFont.Bold)
-        elif text == "Italic":
+        ____ text == "Italic":
             format.setFontItalic(True)
-        elif text == "Green":
+        ____ text == "Green":
             format.setForeground(Qt.green)
 
         self.calendar.setHeaderTextFormat(format)
 
     ___ reformatCalendarPage(self):
-        if self.firstFridayCheckBox.isChecked
+        __ self.firstFridayCheckBox.isChecked
             firstFriday _ QDate(self.calendar.yearShown(),
                     self.calendar.monthShown(), 1)
 
@@ -157,7 +157,7 @@ class Window(QWidget):
             self.calendar.setDateTextFormat(firstFriday, firstFridayFormat)
 
         # May 1st in Red takes precedence.
-        if self.mayFirstCheckBox.isChecked
+        __ self.mayFirstCheckBox.isChecked
             mayFirst _ QDate(self.calendar.yearShown(), 5, 1)
 
             mayFirstFormat _ QTextCharFormat()
@@ -193,13 +193,13 @@ class Window(QWidget):
             language _ locale.nativeLanguageName()
             country _ locale.nativeCountryName()
 
-            if language == this_language and country == this_country:
+            __ language == this_language and country == this_country:
                 curLocaleIndex _ index
 
             self.localeCombo.addItem('%s/%s' % (language, country), locale)
             index +_ 1
 
-        if curLocaleIndex !_ -1:
+        __ curLocaleIndex !_ -1:
             self.localeCombo.setCurrentIndex(curLocaleIndex)
 
         self.localeLabel _ QLabel("&Locale")
@@ -402,10 +402,10 @@ class Window(QWidget):
         comboBox.addItem("Black", Qt.black)
         comboBox.addItem("Magenta", Qt.magenta)
 
-        return comboBox
+        r_ comboBox
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

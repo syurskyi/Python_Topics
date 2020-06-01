@@ -43,13 +43,13 @@
 
 
 ____ ?.QtCore ______ QDir, Qt, QTimer
-____ ?.QtGui ______ QPixmap
-____ ?.?W.. ______ (?A.., QCheckBox, QFileDialog, QGridLayout,
+____ ?.?G.. ______ QPixmap
+____ ?.?W.. ______ (?A.., QCheckBox, ?FD.., QGridLayout,
         QGroupBox, QHBoxLayout, QLabel, ?PB.., QSizePolicy, QSpinBox,
         QVBoxLayout, QWidget)
 
 
-class Screenshot(QWidget):
+c_ Screenshot(QWidget):
     ___ __init__(self):
         super(Screenshot, self).__init__()
 
@@ -74,14 +74,14 @@ class Screenshot(QWidget):
         self.setWindowTitle("Screenshot")
         self.resize(300, 200)
 
-    ___ resizeEvent(self, event):
+    ___ resizeEvent  event):
         scaledSize _ self.originalPixmap.size()
         scaledSize.scale(self.screenshotLabel.size(), Qt.KeepAspectRatio)
-        if not self.screenshotLabel.pixmap() or scaledSize !_ self.screenshotLabel.pixmap().size
+        __ no. self.screenshotLabel.pixmap() or scaledSize !_ self.screenshotLabel.pixmap().size
             self.updateScreenshotLabel()
 
     ___ newScreenshot(self):
-        if self.hideThisWindowCheckBox.isChecked
+        __ self.hideThisWindowCheckBox.isChecked
             self.hide()
         self.newScreenshotButton.setDisabled(True)
 
@@ -92,32 +92,32 @@ class Screenshot(QWidget):
         format _ 'png'
         initialPath _ QDir.currentPath() + "/untitled." + format
 
-        fileName, _ _ QFileDialog.getSaveFileName(self, "Save As", initialPath,
+        fileName, _ _ ?FD...getSaveFileName  "Save As", initialPath,
                 "%s Files (*.%s);;All Files (*)" % (format.upper(), format))
-        if fileName:
+        __ fileName:
             self.originalPixmap.save(fileName, format)
 
     ___ shootScreen(self):
-        if self.delaySpinBox.value() !_ 0:
+        __ self.delaySpinBox.value() !_ 0:
             ?A...instance().beep()
 
         screen _ ?A...primaryScreen()
-        if screen is not None:
+        __ screen __ no. N..:
             self.originalPixmap _ screen.grabWindow(0)
-        else:
+        ____
             self.originalPixmap _ QPixmap()
 
         self.updateScreenshotLabel()
 
-        self.newScreenshotButton.setDisabled(False)
-        if self.hideThisWindowCheckBox.isChecked
+        self.newScreenshotButton.setDisabled F..
+        __ self.hideThisWindowCheckBox.isChecked
             self.s..
 
     ___ updateCheckBox(self):
-        if self.delaySpinBox.value() == 0:
+        __ self.delaySpinBox.value() == 0:
             self.hideThisWindowCheckBox.setDisabled(True)
-        else:
-            self.hideThisWindowCheckBox.setDisabled(False)
+        ____
+            self.hideThisWindowCheckBox.setDisabled F..
 
     ___ createOptionsGroupBox(self):
         self.optionsGroupBox _ QGroupBox("Options")
@@ -152,10 +152,10 @@ class Screenshot(QWidget):
         self.buttonsLayout.addWidget(self.saveScreenshotButton)
         self.buttonsLayout.addWidget(self.quitScreenshotButton)
 
-    ___ createButton(self, text, member):
+    ___ createButton  text, member):
         button _ ?PB..(text)
         button.c__.c..(member)
-        return button
+        r_ button
 
     ___ updateScreenshotLabel(self):
         self.screenshotLabel.setPixmap(self.originalPixmap.scaled(
@@ -163,7 +163,7 @@ class Screenshot(QWidget):
                 Qt.SmoothTransformation))
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

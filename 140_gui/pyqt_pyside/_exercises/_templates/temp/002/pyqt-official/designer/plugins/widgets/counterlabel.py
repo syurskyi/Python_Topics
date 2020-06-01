@@ -24,11 +24,11 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 """
 
 ____ ?.QtCore ______ pyqtProperty, pyqtSignal, pyqtSlot, QRectF, QSize, Qt
-____ ?.QtGui ______ QFont, QFontMetricsF, QPainter
+____ ?.?G.. ______ QFont, QFontMetricsF, QPainter
 ____ ?.?W.. ______ ?A.., QWidget
 
 
-class CounterLabel(QWidget):
+c_ CounterLabel(QWidget):
     """CounterLabel(QWidget)
 
     Provides a custom label widget to be used as a counter, with signals
@@ -40,11 +40,11 @@ class CounterLabel(QWidget):
     # of the widget.
     valueChanged _ pyqtSignal((int, ), (str, ))
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
 
         super(CounterLabel, self).__init__(parent)
 
-        self.setAutoFillBackground(False)
+        self.setAutoFillBackground F..
 
         self._font _ QFont()
         self._minimum _ 1
@@ -54,7 +54,7 @@ class CounterLabel(QWidget):
         self.rescale()
         self.reposition()
 
-    ___ paintEvent(self, event):
+    ___ paintEvent  event):
 
         p _ QPainter()
         p.begin(self)
@@ -66,7 +66,7 @@ class CounterLabel(QWidget):
         p.end()
 
     ___ sizeHint(self):
-        return QSize(32, 32)
+        r_ QSize(32, 32)
 
     ___ rescale(self):
 
@@ -89,9 +89,9 @@ class CounterLabel(QWidget):
     # Provide getter and setter methods for the font property.
 
     ___ getFont(self):
-        return self._font
+        r_ self._font
 
-    ___ setFont(self, font):
+    ___ setFont  font):
         self._font _ font
         self.rescale()
         self.reposition()
@@ -101,24 +101,24 @@ class CounterLabel(QWidget):
     # Provide getter and setter methods for the minimum and maximum properties.
 
     ___ getMinimum(self):
-        return self._minimum
+        r_ self._minimum
 
-    ___ setMinimum(self, value):
+    ___ setMinimum  value):
         self._minimum _ value
-        if self._minimum > self._maximum:
+        __ self._minimum > self._maximum:
             self.setMaximum(self._minimum)
-        if self._minimum > self._value:
+        __ self._minimum > self._value:
             self.setValue(self._minimum)
 
     minimum _ pyqtProperty(int, getMinimum, setMinimum)
 
     ___ getMaximum(self):
-        return self._maximum
+        r_ self._maximum
 
-    ___ setMaximum(self, value):
+    ___ setMaximum  value):
         self._maximum _ value
         self._minimum _ min(self._minimum, self._maximum)
-        if self._maximum < self._value:
+        __ self._maximum < self._value:
             self.setValue(self._maximum)
         self.rescale()
         self.reposition()
@@ -129,9 +129,9 @@ class CounterLabel(QWidget):
     # the internal value held by the widget.
 
     ___ getOffset(self):
-        return self._offset
+        r_ self._offset
 
-    ___ setOffset(self, value):
+    ___ setOffset  value):
         self._offset _ value
 
     offset _ pyqtProperty(int, getOffset, setOffset)
@@ -140,13 +140,13 @@ class CounterLabel(QWidget):
     # methods.
 
     ___ getValue(self):
-        return self._value
+        r_ self._value
 
     # The setter method for the value property can also be used as a slot.
     @pyqtSlot(int)
-    ___ setValue(self, value):
-        if not self._minimum <_ value <_ self._maximum:
-            return
+    ___ setValue  value):
+        __ no. self._minimum <_ value <_ self._maximum:
+            r_
         self._value _ value
         self.valueChanged[int].emit(value + self._offset)
         self.valueChanged[str].emit(str(value + self._offset))
@@ -166,7 +166,7 @@ class CounterLabel(QWidget):
         self.setValue(self._value - 1)
 
 
-if __name__ == "__main__":
+__ __name__ == "__main__":
 
     ______ sys
 

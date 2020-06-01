@@ -43,21 +43,21 @@
 
 
 ____ ?.QtCore ______ QFile, QIODevice, QMimeData, QPoint, Qt, QTextStream
-____ ?.QtGui ______ QDrag, QPalette, QPixmap
+____ ?.?G.. ______ QDrag, QPalette, QPixmap
 ____ ?.?W.. ______ ?A.., QFrame, QLabel, QWidget
 
 ______ draggabletext_rc
 
 
-class DragLabel(QLabel):
-    ___ __init__(self, text, parent):
+c_ DragLabel(QLabel):
+    ___ __init__  text, parent):
         super(DragLabel, self).__init__(text, parent)
 
         self.setAutoFillBackground(True)
         self.setFrameShape(QFrame.Panel)
         self.setFrameShadow(QFrame.Raised)
 
-    ___ mousePressEvent(self, event):
+    ___ mousePressEvent  event):
         hotSpot _ event.pos()
 
         mimeData _ QMimeData()
@@ -75,17 +75,17 @@ class DragLabel(QLabel):
 
         dropAction _ drag.exec_(Qt.CopyAction | Qt.MoveAction, Qt.CopyAction)
 
-        if dropAction == Qt.MoveAction:
+        __ dropAction == Qt.MoveAction:
             self.close()
             self.update()
 
 
-class DragWidget(QWidget):
-    ___ __init__(self, parent_None):
+c_ DragWidget(QWidget):
+    ___ __init__  parent_None):
         super(DragWidget, self).__init__(parent)
 
         dictionaryFile _ QFile(':/dictionary/words.txt')
-        dictionaryFile.open(QIODevice.ReadOnly)
+        dictionaryFile.o..(QIODevice.ReadOnly)
 
         x _ 5
         y _ 5
@@ -95,7 +95,7 @@ class DragWidget(QWidget):
             wordLabel.move(x, y)
             wordLabel.s..
             x +_ wordLabel.width() + 2
-            if x >_ 195:
+            __ x >_ 195:
                 x _ 5
                 y +_ wordLabel.height() + 2
 
@@ -107,25 +107,25 @@ class DragWidget(QWidget):
         self.setMinimumSize(400, max(200, y))
         self.setWindowTitle("Draggable Text")
 
-    ___ dragEnterEvent(self, event):
-        if event.mimeData().hasText
-            if event.source() in self.children
+    ___ dragEnterEvent  event):
+        __ event.mimeData().hasText
+            __ event.source() in self.children
                 event.setDropAction(Qt.MoveAction)
                 event.accept()
-            else:
+            ____
                 event.acceptProposedAction()
-        else:
+        ____
             event.ignore()
 
-    ___ dropEvent(self, event):
-        if event.mimeData().hasText
+    ___ dropEvent  event):
+        __ event.mimeData().hasText
             mime _ event.mimeData()
             pieces _ mime.text().split()
             position _ event.pos()
             hotSpot _ QPoint()
 
             hotSpotPos _ mime.data('application/x-hotspot').split(' ')
-            if len(hotSpotPos) == 2:
+            __ len(hotSpotPos) == 2:
                hotSpot.setX(hotSpotPos[0].toInt()[0])
                hotSpot.setY(hotSpotPos[1].toInt()[0])
 
@@ -136,16 +136,16 @@ class DragWidget(QWidget):
 
                 position +_ QPoint(newLabel.width(), 0)
 
-            if event.source() in self.children
+            __ event.source() in self.children
                 event.setDropAction(Qt.MoveAction)
                 event.accept()
-            else:
+            ____
                 event.acceptProposedAction()
-        else:
+        ____
             event.ignore()
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

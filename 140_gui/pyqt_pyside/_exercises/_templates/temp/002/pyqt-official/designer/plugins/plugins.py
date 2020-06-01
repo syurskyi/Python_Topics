@@ -43,12 +43,12 @@ ______ sys
 ______ os
 
 ____ ?.QtCore ______ QLibraryInfo, QProcess, QProcessEnvironment
-____ ?.?W.. ______ ?A.., QMessageBox
+____ ?.?W.. ______ ?A.., ?MB..
 
 
 app _ ?A..(sys.argv)
 
-QMessageBox.information(None, "PyQt Designer Plugins",
+?MB...information(N.., "PyQt Designer Plugins",
         "<p>This example will start Qt Designer when you click the <b>OK</b> "
         "button.</p>"
         "<p>Before doing so it sets the <tt>PYQTDESIGNERPATH</tt> environment "
@@ -75,9 +75,9 @@ designer.setProcessEnvironment(env)
 
 designer_bin _ QLibraryInfo.location(QLibraryInfo.BinariesPath)
 
-if sys.platform == 'darwin':
+__ sys.platform == 'darwin':
     designer_bin +_ '/Designer.app/Contents/MacOS/Designer'
-else:
+____
     designer_bin +_ '/designer'
 
 designer.start(designer_bin)

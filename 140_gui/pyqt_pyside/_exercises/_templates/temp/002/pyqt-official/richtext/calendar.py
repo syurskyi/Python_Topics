@@ -43,14 +43,14 @@
 
 
 ____ ?.QtCore ______ QDate, Qt
-____ ?.QtGui ______ (QColor, QFont, QTextCharFormat, QTextLength,
+____ ?.?G.. ______ (QColor, QFont, QTextCharFormat, QTextLength,
         QTextTableFormat)
 ____ ?.?W.. ______ (?A.., QComboBox, QDateTimeEdit,
         QHBoxLayout, QLabel, QMainWindow, QSpinBox, QTextBrowser, QVBoxLayout,
         QWidget)
 
 
-class MainWindow(QMainWindow):
+c_ MainWindow ?MW..
     ___ __init__(self):
         super(MainWindow, self).__init__()
 
@@ -98,7 +98,7 @@ class MainWindow(QMainWindow):
         centralLayout.addWidget(self.editor, 1)
         centralWidget.setLayout(centralLayout)
 
-        self.setCentralWidget(centralWidget)
+        self.sCW..(centralWidget)
 
     ___ insertCalendar(self):
         self.editor.clear()
@@ -150,36 +150,36 @@ class MainWindow(QMainWindow):
             cell _ table.cellAt(table.rows()-1, weekDay-1)
             cellCursor _ cell.firstCursorPosition()
 
-            if date == QDate.currentDate
+            __ date == QDate.currentDate
                 cellCursor.insertText(str(date.day()), highlightedFormat)
-            else:
+            ____
                 cellCursor.insertText(str(date.day()), format)
 
             date _ date.addDays(1)
 
-            if weekDay == 7 and date.month() == self.selectedDate.month
+            __ weekDay == 7 and date.month() == self.selectedDate.month
                 table.insertRows(table.rows(), 1)
 
         cursor.endEditBlock()
 
         self.setWindowTitle("Calendar for %s %d" % (QDate.longMonthName(self.selectedDate.month()), self.selectedDate.year()))
 
-    ___ setfontSize(self, size):
+    ___ setfontSize  size):
         self.fontSize _ size
         self.insertCalendar()
 
-    ___ setMonth(self, month):
+    ___ setMonth  month):
         self.selectedDate _ QDate(self.selectedDate.year(), month + 1,
                 self.selectedDate.day())
         self.insertCalendar()
 
-    ___ setYear(self, date):
+    ___ setYear  date):
         self.selectedDate _ QDate(date.year(), self.selectedDate.month(),
                 self.selectedDate.day())
         self.insertCalendar()
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

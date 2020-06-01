@@ -1,5 +1,5 @@
-____ ? ______ ?W.. as qtw
-____ ? ______ QtGui as qtg
+____ ? ______ ?W.. __ qtw
+____ ? ______ ?G.. __ qtg
 ______ sys
 
 app _ qtw.?A..(sys.argv)

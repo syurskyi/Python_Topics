@@ -39,21 +39,21 @@
 #############################################################################
 
 
-____ ?.?W.. ______ QMessageBox
+____ ?.?W.. ______ ?MB..
 ____ ?.QtSql ______ QSqlDatabase, QSqlQuery
 
 
 ___ createConnection
     db _ QSqlDatabase.addDatabase('QSQLITE')
     db.setDatabaseName(':memory:')
-    if not db.open
-        QMessageBox.critical(None, "Cannot open database",
+    __ no. db.o..
+        ?MB...critical(N.., "Cannot open database",
                 "Unable to establish a database connection.\n"
                 "This example needs SQLite support. Please read the Qt SQL "
                 "driver documentation for information how to build it.\n\n"
                 "Click Cancel to exit.",
-                QMessageBox.Cancel)
-        return False
+                ?MB...Cancel)
+        r_ False
     
     query _ QSqlQuery()
     query.exec_("create table person(id int primary key, "
@@ -112,4 +112,4 @@ ___ createConnection
     query.exec_("insert into images values(4, 'images/munich.png')")
     query.exec_("insert into images values(5, 'images/beijing.png')")
 
-    return True
+    r_ True

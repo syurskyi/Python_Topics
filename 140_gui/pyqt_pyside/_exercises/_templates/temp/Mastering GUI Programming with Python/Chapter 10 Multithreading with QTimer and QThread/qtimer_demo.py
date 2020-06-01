@@ -1,14 +1,14 @@
 ______ sys
-____ ? ______ ?W.. as qtw
-____ ? ______ QtGui as qtg
-____ ? ______ QtCore as qtc
+____ ? ______ ?W.. __ qtw
+____ ? ______ ?G.. __ qtg
+____ ? ______ QtCore __ qtc
 
 
-class AutoCloseDialog(qtw.QDialog):
+c_ AutoCloseDialog(qtw.QDialog):
 
-    ___ __init__(self, parent, title, message, timeout):
+    ___ __init__  parent, title, message, timeout):
         super().__init__(parent)
-        self.setModal(False)
+        self.setModal F..
         self.setWindowTitle(title)
         self.setLayout(qtw.QVBoxLayout())
         self.layout().addWidget(qtw.QLabel(message))
@@ -24,7 +24,7 @@ class AutoCloseDialog(qtw.QDialog):
         qtc.QTimer.singleShot(self.timeout * 1000, self.hide)
 
 
-class MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.QMainWindow):
 
     ___ __init__(self):
         """MainWindow constructor.
@@ -57,8 +57,8 @@ class MainWindow(qtw.QMainWindow):
         self.timer.timeout.c..(self.interval_dialog.show)
         self.timer.start()
         toolbar _ self.addToolBar('Tools')
-        toolbar.addAction('Stop Bugging Me', self.timer.stop)
-        toolbar.addAction('Start Bugging Me', self.timer.start)
+        toolbar.aA..('Stop Bugging Me', self.timer.stop)
+        toolbar.aA..('Start Bugging Me', self.timer.start)
 
         # Getting data from a timer
         self.timer2 _ qtc.QTimer()
@@ -79,11 +79,11 @@ class MainWindow(qtw.QMainWindow):
         self.s..
 
     ___ update_status(self):
-        if self.timer.isActive
+        __ self.timer.isActive
             time_left _ (self.timer.remainingTime() // 1000) + 1
             self.statusBar().showMessage(
                 f"Next dialog will be shown in {time_left} seconds.")
-        else:
+        ____
             self.statusBar().showMessage('Dialogs are off.')
 
     ___ long_blocking_callback(self):
@@ -92,7 +92,7 @@ class MainWindow(qtw.QMainWindow):
         sleep(30)
         self.statusBar().showMessage('Ending a long blocking function.')
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtw.?A..(sys.argv)
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.

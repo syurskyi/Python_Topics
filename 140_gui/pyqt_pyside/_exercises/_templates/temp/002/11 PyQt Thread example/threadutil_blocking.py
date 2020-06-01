@@ -20,34 +20,34 @@ ___ run_in_thread(thread_fn):
         @wraps(f)
         ___ result(*args, **kwargs):
             thread _ thread_fn()
-            return Executor.instance().run_in_thread(thread, f, args, kwargs)
-        return result
-    return decorator
+            r_ Executor.instance().run_in_thread(thread, f, args, kwargs)
+        r_ result
+    r_ decorator
 
 ___ _main_thread
     app _ ?A...instance()
-    if app:
-        return app.thread()
+    __ app:
+        r_ app.thread()
     # We reach here in tests that don't (want to) create a QApplication.
-    if int(QThread.currentThreadId()) == get_ident
-        return QThread.currentThread()
+    __ int(QThread.currentThreadId()) == get_ident
+        r_ QThread.currentThread()
     raise RuntimeError('Could not determine main thread')
 
 run_in_main_thread _ run_in_thread(_main_thread)
 
 ___ is_in_main_thread
-    return QThread.currentThread() == _main_thread()
+    r_ QThread.currentThread() == _main_thread()
 
-class Executor:
+c_ Executor:
 
-    _INSTANCE _ None
+    _INSTANCE _ N..
 
     @classmethod
     ___ instance(cls):
-        if cls._INSTANCE is None:
+        __ cls._INSTANCE __ N..:
             cls._INSTANCE _ cls(?A...instance())
-        return cls._INSTANCE
-    ___ __init__(self, app):
+        r_ cls._INSTANCE
+    ___ __init__  app):
         self._pending_tasks _ []
         self._app_is_about_to_quit _ False
         app.aboutToQuit.c..(self._about_to_quit)
@@ -56,10 +56,10 @@ class Executor:
         for task in self._pending_tasks:
             task.set_exception(SystemExit())
             task.has_run.set()
-    ___ run_in_thread(self, thread, f, args, kwargs):
-        if QThread.currentThread() == thread:
-            return f(*args, **kwargs)
-        elif self._app_is_about_to_quit:
+    ___ run_in_thread  thread, f, args, kwargs):
+        __ QThread.currentThread() == thread:
+            r_ f(*args, **kwargs)
+        ____ self._app_is_about_to_quit:
             # In this case, the target thread's event loop most likely is not
             # running any more. This would mean that our task (which is
             # submitted to the event loop via signals/slots) is never run.
@@ -73,39 +73,39 @@ class Executor:
             sender.signal.c..(receiver.slot)
             sender.signal.emit()
             task.has_run.wait()
-            return task.result
+            r_ task.result
         finally:
             self._pending_tasks.remove(task)
 
-class Task:
-    ___ __init__(self, fn, args, kwargs):
+c_ Task:
+    ___ __init__  fn, args, kwargs):
         self._fn _ fn
         self._args _ args
         self._kwargs _ kwargs
         self.has_run _ Event()
-        self._result _ self._exception _ None
+        self._result _ self._exception _ N..
     ___ __call__(self):
         try:
             self._result _ self._fn(*self._args, **self._kwargs)
-        except Exception as e:
+        except Exception __ e:
             self._exception _ e
         finally:
             self.has_run.set()
-    ___ set_exception(self, exception):
+    ___ set_exception  exception):
         self._exception _ exception
     @property
     ___ result(self):
-        if not self.has_run.is_set
+        __ no. self.has_run.is_set
             raise ValueError("Hasn't run.")
-        if self._exception:
+        __ self._exception:
             raise self._exception
-        return self._result
+        r_ self._result
 
-class Sender(QObject):
+c_ Sender(QObject):
     signal _ pyqtSignal()
 
-class Receiver(QObject):
-    ___ __init__(self, callback, parent_None):
+c_ Receiver(QObject):
+    ___ __init__  callback, parent_None):
         super().__init__(parent)
         self.callback _ callback
     ___ slot(self):

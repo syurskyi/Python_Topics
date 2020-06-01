@@ -44,15 +44,15 @@
 
 ____ ?.QtCore ______ QByteArray, Qt
 ____ ?.?W.. ______ (?A.., QDialog, QDialogButtonBox, QLabel,
-        QMessageBox, QProgressBar, ?PB.., QVBoxLayout)
+        ?MB.., QProgressBar, ?PB.., QVBoxLayout)
 ____ ?.QtNetwork ______ QHostAddress, QTcpServer, QTcpSocket
 
 
-class Dialog(QDialog):
+c_ Dialog(QDialog):
     TotalBytes _ 50 * 1024 * 1024
     PayloadSize _ 65536
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(Dialog, self).__init__(parent)
 
         self.tcpServer _ QTcpServer()
@@ -93,19 +93,19 @@ class Dialog(QDialog):
         self.setWindowTitle("Loopback")
 
     ___ start(self):
-        self.startButton.setEnabled(False)
+        self.startButton.setEnabled F..
 
         ?A...setOverrideCursor(Qt.WaitCursor)
 
         self.bytesWritten _ 0
         self.bytesReceived _ 0
 
-        while not self.tcpServer.isListening() and not self.tcpServer.listen
-            ret _ QMessageBox.critical(self, "Loopback",
+        while no. self.tcpServer.isListening() and no. self.tcpServer.listen
+            ret _ ?MB...critical  "Loopback",
                     "Unable to start the test: %s." % self.tcpServer.errorString(),
-                    QMessageBox.Retry | QMessageBox.Cancel)
-            if ret == QMessageBox.Cancel:
-                return
+                    ?MB...Retry | ?MB...Cancel)
+            __ ret == ?MB...Cancel:
+                r_
 
         self.serverStatusLabel.sT..("Listening")
         self.clientStatusLabel.sT..("Connecting")
@@ -121,7 +121,7 @@ class Dialog(QDialog):
         self.tcpServer.close()
 
     ___ startTransfer(self):
-        self.bytesToWrite _ Dialog.TotalBytes - self.tcpClient.write(QByteArray(Dialog.PayloadSize, '@'))
+        self.bytesToWrite _ Dialog.TotalBytes - self.tcpClient.w..(QByteArray(Dialog.PayloadSize, '@'))
         self.clientStatusLabel.sT..("Connected")
 
     ___ updateServerProgress(self):
@@ -132,26 +132,26 @@ class Dialog(QDialog):
         self.serverProgressBar.setValue(self.bytesReceived)
         self.serverStatusLabel.sT..("Received %dMB" % (self.bytesReceived / (1024 * 1024)))
 
-        if self.bytesReceived == Dialog.TotalBytes:
+        __ self.bytesReceived == Dialog.TotalBytes:
             self.tcpServerConnection.close()
             self.startButton.setEnabled(True)
             ?A...restoreOverrideCursor()
 
-    ___ updateClientProgress(self, numBytes):
+    ___ updateClientProgress  numBytes):
         self.bytesWritten +_ numBytes
-        if self.bytesToWrite > 0:
-            self.bytesToWrite -_ self.tcpClient.write(QByteArray(
+        __ self.bytesToWrite > 0:
+            self.bytesToWrite -_ self.tcpClient.w..(QByteArray(
                                         min(self.bytesToWrite, Dialog.PayloadSize), '@'))
 
         self.clientProgressBar.setMaximum(Dialog.TotalBytes)
         self.clientProgressBar.setValue(self.bytesWritten)
         self.clientStatusLabel.sT..("Sent %dMB" % (self.bytesWritten / (1024 * 1024)))
 
-    ___ displayError(self, socketError):
-        if socketError == QTcpSocket.RemoteHostClosedError:
-            return
+    ___ displayError  socketError):
+        __ socketError == QTcpSocket.RemoteHostClosedError:
+            r_
 
-        QMessageBox.information(self, "Network error",
+        ?MB...information  "Network error",
                 "The following error occured: %s." % self.tcpClient.errorString())
 
         self.tcpClient.close()
@@ -164,7 +164,7 @@ class Dialog(QDialog):
         ?A...restoreOverrideCursor()
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

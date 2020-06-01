@@ -1,7 +1,7 @@
 db _ QSqlDatabase.addDatabase("QSQLITE")
 db.setDatabaseName("/home/user/test.db")
-if not db.open
-    return False
+__ no. db.o..
+    r_ False
 query _ QSqlQuery()
 query.exec_("create table student(id int primary key, name varchar(20), sex varchar(8), age int);")
 

@@ -42,16 +42,16 @@
 #############################################################################
 
 
-____ ?.QtGui ______ QIcon
-____ ?.?W.. ______ (QAction, ?A.., QCheckBox, QComboBox,
+____ ?.?G.. ______ QIcon
+____ ?.?W.. ______ (?A.., ?A.., QCheckBox, QComboBox,
         QDialog, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit,
-        QMessageBox, QMenu, ?PB.., QSpinBox, QStyle, QSystemTrayIcon,
+        ?MB.., QMenu, ?PB.., QSpinBox, QStyle, QSystemTrayIcon,
         QTextEdit, QVBoxLayout)
 
 ______ systray_rc
 
 
-class Window(QDialog):
+c_ Window(QDialog):
     ___ __init__(self):
         super(Window, self).__init__()
 
@@ -80,34 +80,34 @@ class Window(QDialog):
         self.setWindowTitle("Systray")
         self.resize(400, 300)
 
-    ___ setVisible(self, visible):
+    ___ setVisible  visible):
         self.minimizeAction.setEnabled(visible)
-        self.maximizeAction.setEnabled(not self.isMaximized())
-        self.restoreAction.setEnabled(self.isMaximized() or not visible)
+        self.maximizeAction.setEnabled(no. self.isMaximized())
+        self.restoreAction.setEnabled(self.isMaximized() or no. visible)
         super(Window, self).setVisible(visible)
 
-    ___ closeEvent(self, event):
-        if self.trayIcon.isVisible
-            QMessageBox.information(self, "Systray",
+    ___ closeEvent  event):
+        __ self.trayIcon.isVisible
+            ?MB...information  "Systray",
                     "The program will keep running in the system tray. To "
                     "terminate the program, choose <b>Quit</b> in the "
                     "context menu of the system tray entry.")
             self.hide()
             event.ignore()
 
-    ___ setIcon(self, index):
+    ___ setIcon  index):
         icon _ self.iconComboBox.itemIcon(index)
         self.trayIcon.setIcon(icon)
         self.setWindowIcon(icon)
 
         self.trayIcon.setToolTip(self.iconComboBox.itemText(index))
 
-    ___ iconActivated(self, reason):
-        if reason in (QSystemTrayIcon.Trigger, QSystemTrayIcon.DoubleClick):
+    ___ iconActivated  reason):
+        __ reason in (QSystemTrayIcon.Trigger, QSystemTrayIcon.DoubleClick):
             self.iconComboBox.setCurrentIndex(
                     (self.iconComboBox.currentIndex() + 1)
                     % self.iconComboBox.count())
-        elif reason == QSystemTrayIcon.MiddleClick:
+        ____ reason == QSystemTrayIcon.MiddleClick:
             self.showMessage()
 
     ___ showMessage(self):
@@ -118,7 +118,7 @@ class Window(QDialog):
                 self.durationSpinBox.value() * 1000)
 
     ___ messageClicked(self):
-        QMessageBox.information(None, "Systray",
+        ?MB...information(N.., "Systray",
                 "Sorry, I already gave what help I could.\nMaybe you should "
                 "try asking a human?")
 
@@ -177,7 +177,7 @@ class Window(QDialog):
         bodyLabel _ QLabel("Body:")
 
         self.bodyEdit _ QTextEdit()
-        self.bodyEdit.setPlainText("Don't believe me. Honestly, I don't have "
+        self.bodyEdit.sPT..("Don't believe me. Honestly, I don't have "
                 "a clue.\nClick this balloon for details.")
 
         self.showMessageButton _ ?PB..("Show Message")
@@ -199,38 +199,38 @@ class Window(QDialog):
         self.messageGroupBox.setLayout(messageLayout)
 
     ___ createActions(self):
-        self.minimizeAction _ QAction("Mi&nimize", self, triggered_self.hide)
-        self.maximizeAction _ QAction("Ma&ximize", self,
+        self.minimizeAction _ ?A..("Mi&nimize", self, triggered_self.hide)
+        self.maximizeAction _ ?A..("Ma&ximize", self,
                 triggered_self.showMaximized)
-        self.restoreAction _ QAction("&Restore", self,
+        self.restoreAction _ ?A..("&Restore", self,
                 triggered_self.showNormal)
-        self.quitAction _ QAction("&Quit", self,
+        self.quitAction _ ?A..("&Quit", self,
                 triggered_QApplication.instance().quit)
 
     ___ createTrayIcon(self):
          self.trayIconMenu _ QMenu(self)
-         self.trayIconMenu.addAction(self.minimizeAction)
-         self.trayIconMenu.addAction(self.maximizeAction)
-         self.trayIconMenu.addAction(self.restoreAction)
+         self.trayIconMenu.aA..(self.minimizeAction)
+         self.trayIconMenu.aA..(self.maximizeAction)
+         self.trayIconMenu.aA..(self.restoreAction)
          self.trayIconMenu.addSeparator()
-         self.trayIconMenu.addAction(self.quitAction)
+         self.trayIconMenu.aA..(self.quitAction)
 
          self.trayIcon _ QSystemTrayIcon(self)
          self.trayIcon.setContextMenu(self.trayIconMenu)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 
     app _ ?A..(sys.argv)
 
-    if not QSystemTrayIcon.isSystemTrayAvailable
-        QMessageBox.critical(None, "Systray",
+    __ no. QSystemTrayIcon.isSystemTrayAvailable
+        ?MB...critical(N.., "Systray",
                 "I couldn't detect any system tray on this system.")
         sys.exit(1)
 
-    ?A...setQuitOnLastWindowClosed(False)
+    ?A...setQuitOnLastWindowClosed F..
 
     window _ Window()
     window.s..

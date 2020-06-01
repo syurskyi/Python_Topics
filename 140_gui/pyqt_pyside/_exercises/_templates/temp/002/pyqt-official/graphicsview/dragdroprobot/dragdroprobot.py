@@ -45,13 +45,13 @@
 ____ ?.QtCore ______ (QEasingCurve, QFileInfo, QLineF, QMimeData,
         QParallelAnimationGroup, QPoint, QPointF, QPropertyAnimation, qrand,
         QRectF, qsrand, Qt, QTime)
-____ ?.QtGui ______ (QBrush, QColor, QDrag, QImage, QPainter, QPen,
+____ ?.?G.. ______ (QBrush, QColor, QDrag, QImage, QPainter, QPen,
         QPixmap, QTransform)
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsObject,
         QGraphicsScene, QGraphicsView)
 
 
-class ColorItem(QGraphicsItem):
+c_ ColorItem(QGraphicsItem):
     n _ 0
 
     ___ __init__(self):
@@ -67,9 +67,9 @@ class ColorItem(QGraphicsItem):
         self.setAcceptedMouseButtons(Qt.LeftButton)
     
     ___ boundingRect(self):
-        return QRectF(-15.5, -15.5, 34, 34)
+        r_ QRectF(-15.5, -15.5, 34, 34)
 
-    ___ paint(self, painter, option, widget):
+    ___ paint  painter, option, widget):
         painter.setPen(Qt.NoPen)
         painter.setBrush(Qt.darkGray)
         painter.drawEllipse(-12, -12, 30, 30)
@@ -77,26 +77,26 @@ class ColorItem(QGraphicsItem):
         painter.setBrush(QBrush(self.color))
         painter.drawEllipse(-15, -15, 30, 30)
 
-    ___ mousePressEvent(self, event):
+    ___ mousePressEvent  event):
         self.setCursor(Qt.ClosedHandCursor)
 
-    ___ mouseMoveEvent(self, event):
-        if QLineF(QPointF(event.screenPos()), QPointF(event.buttonDownScreenPos(Qt.LeftButton))).length() < ?A...startDragDistance
-            return
+    ___ mouseMoveEvent  event):
+        __ QLineF(QPointF(event.screenPos()), QPointF(event.buttonDownScreenPos(Qt.LeftButton))).length() < ?A...startDragDistance
+            r_
 
         drag _ QDrag(event.widget())
         mime _ QMimeData()
         drag.setMimeData(mime)
 
         ColorItem.n +_ 1
-        if ColorItem.n > 2 and qrand() % 3 == 0:
+        __ ColorItem.n > 2 and qrand() % 3 == 0:
             root _ QFileInfo(__file__).absolutePath()
 
             image _ QImage(root + '/images/head.png')
             mime.setImageData(image)
             drag.setPixmap(QPixmap.fromImage(image).scaled(30,40))
             drag.setHotSpot(QPoint(15, 30))
-        else:
+        ____
             mime.setColorData(self.color)
             mime.sT..("#%02x%02x%02x" % (self.color.red(), self.color.green(), self.color.blue()))
 
@@ -106,7 +106,7 @@ class ColorItem(QGraphicsItem):
             painter _ QPainter(pixmap)
             painter.translate(15, 15)
             painter.setRenderHint(QPainter.Antialiasing)
-            self.paint(painter, None, None)
+            self.paint(painter, N.., N..)
             painter.end()
 
             pixmap.setMask(pixmap.createHeuristicMask())
@@ -117,12 +117,12 @@ class ColorItem(QGraphicsItem):
         drag.e..
         self.setCursor(Qt.OpenHandCursor)
 
-    ___ mouseReleaseEvent(self, event):
+    ___ mouseReleaseEvent  event):
         self.setCursor(Qt.OpenHandCursor)
 
 
-class RobotPart(QGraphicsObject):
-    ___ __init__(self, parent_None):
+c_ RobotPart(QGraphicsObject):
+    ___ __init__  parent_None):
         super(RobotPart, self).__init__(parent)
 
         self.color _ QColor(Qt.lightGray)
@@ -130,38 +130,38 @@ class RobotPart(QGraphicsObject):
 
         self.setAcceptDrops(True)
 
-    ___ dragEnterEvent(self, event):
-        if event.mimeData().hasColor
+    ___ dragEnterEvent  event):
+        __ event.mimeData().hasColor
             event.setAccepted(True)
             self.dragOver _ True
             self.update()
-        else:
-            event.setAccepted(False)
+        ____
+            event.setAccepted F..
 
-    ___ dragLeaveEvent(self, event):
+    ___ dragLeaveEvent  event):
         self.dragOver _ False
         self.update()
  
-    ___ dropEvent(self, event):
+    ___ dropEvent  event):
         self.dragOver _ False
-        if event.mimeData().hasColor
+        __ event.mimeData().hasColor
             self.color _ QColor(event.mimeData().colorData())
 
         self.update()
 
 
-class RobotHead(RobotPart):
-    ___ __init__(self, parent_None):
+c_ RobotHead(RobotPart):
+    ___ __init__  parent_None):
         super(RobotHead, self).__init__(parent)
 
         self.pixmap _ QPixmap()
 
     ___ boundingRect(self):
-        return QRectF(-15, -50, 30, 50)
+        r_ QRectF(-15, -50, 30, 50)
 
-    ___ paint(self, painter, option, widget_None):
-        if self.pixmap.isNull
-            painter.setBrush(self.color.lighter(130) if self.dragOver else self.color)
+    ___ paint  painter, option, widget_None):
+        __ self.pixmap.isNull
+            painter.setBrush(self.color.lighter(130) __ self.dragOver else self.color)
             painter.drawRoundedRect(-10, -30, 20, 30, 25, 25, Qt.RelativeSize)
             painter.setBrush(Qt.white)
             painter.drawEllipse(-7, -3 - 20, 7, 7)
@@ -172,33 +172,33 @@ class RobotHead(RobotPart):
             painter.setPen(QPen(Qt.black, 2))
             painter.setBrush(Qt.NoBrush)
             painter.drawArc(-6, -2 - 20, 12, 15, 190 * 16, 160 * 16)
-        else:
+        ____
             painter.scale(.2272, .2824)
             painter.drawPixmap(QPointF(-15*4.4, -50*3.54), self.pixmap)
 
-    ___ dragEnterEvent(self, event):
-        if event.mimeData().hasImage
+    ___ dragEnterEvent  event):
+        __ event.mimeData().hasImage
             event.setAccepted(True)
             self.dragOver _ True
             self.update()
-        else:
+        ____
             super(RobotHead, self).dragEnterEvent(event)
 
-    ___ dropEvent(self, event):
-        if event.mimeData().hasImage
+    ___ dropEvent  event):
+        __ event.mimeData().hasImage
             self.dragOver _ False
             self.pixmap _ QPixmap(event.mimeData().imageData())
             self.update()
-        else:
+        ____
             super(RobotHead, self).dropEvent(event)
 
 
-class RobotTorso(RobotPart):
+c_ RobotTorso(RobotPart):
     ___ boundingRect(self):
-        return QRectF(-30, -20, 60, 60)
+        r_ QRectF(-30, -20, 60, 60)
 
-    ___ paint(self, painter, option, widget_None):
-        painter.setBrush(self.color.lighter(130) if self.dragOver else self.color)
+    ___ paint  painter, option, widget_None):
+        painter.setBrush(self.color.lighter(130) __ self.dragOver else self.color)
         painter.drawRoundedRect(-20, -20, 40, 60, 25, 25, Qt.RelativeSize)
         painter.drawEllipse(-25, -20, 20, 20)
         painter.drawEllipse(5, -20, 20, 20)
@@ -206,17 +206,17 @@ class RobotTorso(RobotPart):
         painter.drawEllipse(0, 22, 20, 20)
 
 
-class RobotLimb(RobotPart):
+c_ RobotLimb(RobotPart):
     ___ boundingRect(self):
-        return QRectF(-5, -5, 40, 10)
+        r_ QRectF(-5, -5, 40, 10)
 
-    ___ paint(self, painter, option, widget_None):
-        painter.setBrush(self.color.lighter(130) if self.dragOver else  self.color)
+    ___ paint  painter, option, widget_None):
+        painter.setBrush(self.color.lighter(130) __ self.dragOver else  self.color)
         painter.drawRoundedRect(self.boundingRect(), 50, 50, Qt.RelativeSize)
         painter.drawEllipse(-5, -5, 10, 10)
 
 
-class Robot(RobotPart):
+c_ Robot(RobotPart):
     ___ __init__(self):
         super(Robot, self).__init__()
 
@@ -259,7 +259,7 @@ class Robot(RobotPart):
             rot_animation.setDuration(2000)
             animation.addAnimation(rot_animation)
 
-            if scale > 0:
+            __ scale > 0:
                 scale_animation _ QPropertyAnimation(item, b'scale')
                 scale_animation.setEndValue(scale)
                 scale_animation.setEasingCurve(QEasingCurve.SineCurve)
@@ -270,19 +270,19 @@ class Robot(RobotPart):
         animation.start()
 
     ___ boundingRect(self):
-        return QRectF()
+        r_ QRectF()
 
-    ___ paint(self, painter, option, widget_None):
+    ___ paint  painter, option, widget_None):
         pass
 
 
-class GraphicsView(QGraphicsView):
+c_ GraphicsView(QGraphicsView):
 
-    ___ resizeEvent(self, e):
+    ___ resizeEvent  e):
         pass
 
 
-if __name__== '__main__':
+__ __name__== '__main__':
 
     ______ sys
     ______ math

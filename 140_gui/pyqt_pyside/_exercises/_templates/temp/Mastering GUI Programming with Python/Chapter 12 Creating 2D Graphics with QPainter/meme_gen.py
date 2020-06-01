@@ -1,21 +1,21 @@
 ______ sys
-____ ? ______ ?W.. as qtw
-____ ? ______ QtGui as qtg
-____ ? ______ QtCore as qtc
+____ ? ______ ?W.. __ qtw
+____ ? ______ ?G.. __ qtg
+____ ? ______ QtCore __ qtc
 
 
-class ColorButton(qtw.?PB..):
+c_ ColorButton(qtw.?PB..):
 
     changed _ qtc.pyqtSignal()
 
-    ___ __init__(self, default_color, changed_None):
+    ___ __init__  default_color, changed_None):
         super().__init__()
         self.set_color(qtg.QColor(default_color))
         self.c__.c..(self.on_click)
-        if changed:
+        __ changed:
             self.changed.c..(changed)
 
-    ___ set_color(self, color):
+    ___ set_color  color):
         self._color _ color
         # update icon
         pixmap _ qtg.QPixmap(32, 32)
@@ -24,57 +24,57 @@ class ColorButton(qtw.?PB..):
 
     ___ on_click(self):
         color _ qtw.QColorDialog.getColor(self._color)
-        if color:
+        __ color:
             self.set_color(color)
             self.changed.emit()
 
 
-class FontButton(qtw.?PB..):
+c_ FontButton(qtw.?PB..):
 
     changed _ qtc.pyqtSignal()
 
-    ___ __init__(self, default_family, default_size, changed_None):
+    ___ __init__  default_family, default_size, changed_None):
         super().__init__()
         self.set_font(qtg.QFont(default_family, default_size))
         self.c__.c..(self.on_click)
-        if changed:
+        __ changed:
             self.changed.c..(changed)
 
-    ___ set_font(self, font):
+    ___ set_font  font):
         self._font _ font
         self.setFont(font)
         self.sT..(f'{font.family()} {font.pointSize()}')
 
     ___ on_click(self):
         font, accepted _ qtw.QFontDialog.getFont(self._font)
-        if accepted:
+        __ accepted:
             self.set_font(font)
             self.changed.emit()
 
 
-class ImageFileButton(qtw.?PB..):
+c_ ImageFileButton(qtw.?PB..):
 
     changed _ qtc.pyqtSignal()
 
-    ___ __init__(self, changed_None):
+    ___ __init__  changed_None):
         super().__init__("Click to select…")
-        self._filename _ None
+        self._filename _ N..
         self.c__.c..(self.on_click)
-        if changed:
+        __ changed:
             self.changed.c..(changed)
 
     ___ on_click(self):
-        filename, _ _ qtw.QFileDialog.getOpenFileName(
-            None, "Select an image to use",
+        filename, _ _ qtw.?FD...gOFN..(
+            N.., "Select an image to use",
             qtc.QDir.homePath(), "Images (*.png *.xpm *.jpg)")
-        if filename:
+        __ filename:
             self._filename _ filename
             # set button text to filename without path
             self.sT..(qtc.QFileInfo(filename).fileName())
             self.changed.emit()
 
 
-class MemeEditForm(qtw.QWidget):
+c_ MemeEditForm(qtw.QWidget):
 
     changed _ qtc.pyqtSignal(dict)
 
@@ -129,7 +129,7 @@ class MemeEditForm(qtw.QWidget):
         self.changed.emit(data)
 
 
-class MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.QMainWindow):
 
     ___ __init__(self):
         """MainWindow constructor.
@@ -149,7 +149,7 @@ class MainWindow(qtw.QMainWindow):
 
         # Container widget
         mainwidget _ qtw.QWidget()
-        self.setCentralWidget(mainwidget)
+        self.sCW..(mainwidget)
         mainwidget.setLayout(qtw.QHBoxLayout())
 
         # Image Previewer
@@ -163,26 +163,26 @@ class MainWindow(qtw.QMainWindow):
 
         # Create file saving
         toolbar _ self.addToolBar('File')
-        toolbar.addAction("Save Image", self.save_image)
+        toolbar.aA..("Save Image", self.save_image)
 
         # End main UI code
         self.s..
 
     ___ save_image(self):
-        save_file, _ _ qtw.QFileDialog.getSaveFileName(
-            None, "Save your image",
+        save_file, _ _ qtw.?FD...getSaveFileName(
+            N.., "Save your image",
             qtc.QDir.homePath(), "PNG Images (*.png)")
-        if save_file:
+        __ save_file:
             self.image.save(save_file, "PNG")
 
-    ___ build_image(self, data):
+    ___ build_image  data):
         # Create a QImage file
-        if not data.get('image_source'):
+        __ no. data.get('image_source'):
             self.image.fill(qtg.QColor('black'))
-        else:
+        ____
             self.image.load(data.get('image_source'))
             # Scale down the image if it's over the max_size
-            if not (self.max_size - self.image.size()).isValid
+            __ no. (self.max_size - self.image.size()).isValid
                 # isValid returns false if either dimension is negative
                 self.image _ self.image.scaled(
                     self.max_size, qtc.Qt.KeepAspectRatio)
@@ -219,7 +219,7 @@ class MainWindow(qtw.QMainWindow):
         self.image_display.setPixmap(qtg.QPixmap(self.image))
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtw.?A..(sys.argv)
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.

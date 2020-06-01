@@ -27,11 +27,11 @@ ______ random
 
 ____ ?.QtCore ______ (pyqtProperty, pyqtSignal, pyqtSlot, QPointF, QRectF,
         QSize, QSizeF, Qt, QTimer)
-____ ?.QtGui ______ QBrush, QColor, QPainter, QPen, QRadialGradient
+____ ?.?G.. ______ QBrush, QColor, QPainter, QPen, QRadialGradient
 ____ ?.?W.. ______ ?A.., QWidget
 
 
-class BaseClass(QWidget):
+c_ BaseClass(QWidget):
     """BaseClass(QWidget)
 
     Provides a base custom widget class to show that properties implemented
@@ -39,7 +39,7 @@ class BaseClass(QWidget):
     in Qt Designer's Property Editor.
     """
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
 
         super(BaseClass, self).__init__(parent)
 
@@ -48,9 +48,9 @@ class BaseClass(QWidget):
     # Define getter, setter and resetter methods for the author property.
 
     ___ getAuthor(self):
-        return self._author
+        r_ self._author
 
-    ___ setAuthor(self, name):
+    ___ setAuthor  name):
         self._author _ name
 
     ___ resetAuthor(self):
@@ -59,7 +59,7 @@ class BaseClass(QWidget):
     author _ pyqtProperty(str, getAuthor, setAuthor, resetAuthor)
 
 
-class Bubble:
+c_ Bubble:
     """Bubble
 
     Provides a class to represent individual bubbles in a BubblesWidget.
@@ -67,7 +67,7 @@ class Bubble:
     QPainter passed to its drawBubble() method.
     """
 
-    ___ __init__(self, position, radius, speed, innerColor, outerColor):
+    ___ __init__  position, radius, speed, innerColor, outerColor):
 
         self.position _ position
         self.radius _ radius
@@ -87,7 +87,7 @@ class Bubble:
         gradient.setColorAt(1, self.outerColor)
         self.brush _ QBrush(gradient)
 
-    ___ drawBubble(self, painter):
+    ___ drawBubble  painter):
 
         painter.save()
         painter.translate(self.position.x() - self.radius,
@@ -97,7 +97,7 @@ class Bubble:
         painter.restore()
 
 
-class BubblesWidget(BaseClass):
+c_ BubblesWidget(BaseClass):
     """BubblesWidget(BaseClass)
 
     Provides a custom widget that shows a number of rising bubbles.
@@ -111,7 +111,7 @@ class BubblesWidget(BaseClass):
     bubbleLeft _ pyqtSignal()
     bubblesRemaining _ pyqtSignal(int)
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
 
         super(BubblesWidget, self).__init__(parent)
 
@@ -119,24 +119,24 @@ class BubblesWidget(BaseClass):
         self.bubbles _ []
         self.backgroundColor1 _ self.randomColor()
         self.backgroundColor2 _ self.randomColor().darker(150)
-        self.newBubble _ None
+        self.newBubble _ N..
 
         random.seed()
 
         self.animation_timer _ QTimer(self)
-        self.animation_timer.setSingleShot(False)
+        self.animation_timer.setSingleShot F..
         self.animation_timer.timeout.c..(self.animate)
         self.animation_timer.start(25)
 
         self.bubbleTimer _ QTimer()
-        self.bubbleTimer.setSingleShot(False)
+        self.bubbleTimer.setSingleShot F..
         self.bubbleTimer.timeout.c..(self.expandBubble)
 
         self.setMouseTracking(True)
         self.setMinimumSize(QSize(200, 200))
         self.setWindowTitle("Bubble Maker")
 
-    ___ paintEvent(self, event):
+    ___ paintEvent  event):
 
         background _ QRadialGradient(QPointF(self.rect().topLeft()), 500,
                 QPointF(self.rect().bottomRight()))
@@ -152,19 +152,19 @@ class BubblesWidget(BaseClass):
 
         for bubble in self.bubbles:
 
-            if QRectF(bubble.position - QPointF(bubble.radius, bubble.radius),
+            __ QRectF(bubble.position - QPointF(bubble.radius, bubble.radius),
                       QSizeF(2*bubble.radius, 2*bubble.radius)).intersects(QRectF(event.rect())):
                 bubble.drawBubble(painter)
 
-        if self.newBubble:
+        __ self.newBubble:
 
             self.newBubble.drawBubble(painter)
 
         painter.end()
 
-    ___ mousePressEvent(self, event):
+    ___ mousePressEvent  event):
 
-        if event.button() == Qt.LeftButton and self.newBubble is None:
+        __ event.button() == Qt.LeftButton and self.newBubble __ N..:
 
             self.newBubble _ Bubble(QPointF(event.pos()), 4.0,
                                     1.0 + random.random() * 7,
@@ -172,9 +172,9 @@ class BubblesWidget(BaseClass):
             self.bubbleTimer.start(50)
             event.accept()
 
-    ___ mouseMoveEvent(self, event):
+    ___ mouseMoveEvent  event):
 
-        if self.newBubble:
+        __ self.newBubble:
 
             self.update(
                 QRectF(self.newBubble.position - \
@@ -190,12 +190,12 @@ class BubblesWidget(BaseClass):
 
         event.accept()
 
-    ___ mouseReleaseEvent(self, event):
+    ___ mouseReleaseEvent  event):
 
-        if self.newBubble:
+        __ self.newBubble:
 
             self.bubbles.append(self.newBubble)
-            self.newBubble _ None
+            self.newBubble _ N..
             self.bubbleTimer.stop()
             self.bubblesRemaining.emit(len(self.bubbles))
 
@@ -203,7 +203,7 @@ class BubblesWidget(BaseClass):
 
     ___ expandBubble(self):
 
-        if self.newBubble:
+        __ self.newBubble:
 
             self.newBubble.radius _ min(self.newBubble.radius + 4.0,
                                         self.width()/8.0, self.height()/8.0)
@@ -221,7 +221,7 @@ class BubblesWidget(BaseClass):
         blue _ 205 + random.random() * 50
         alpha _ 91 + random.random() * 100
 
-        return QColor(red, green, blue, alpha)
+        r_ QColor(red, green, blue, alpha)
 
     ___ animate(self):
 
@@ -236,13 +236,13 @@ class BubblesWidget(BaseClass):
                                     bubble.radius + 1),
                             QSizeF(2*bubble.radius + 2, 2*bubble.radius + 2 + bubble.speed)).toRect())
 
-            if bubble.position.y() + bubble.radius > 0:
+            __ bubble.position.y() + bubble.radius > 0:
                 bubbles.append(bubble)
-            else:
+            ____
                 self.bubbleLeft.emit()
                 left _ True
 
-        if self.newBubble:
+        __ self.newBubble:
             self.update(
                     QRectF(self.newBubble.position - QPointF(
                                     self.newBubble.radius + 1,
@@ -250,21 +250,21 @@ class BubblesWidget(BaseClass):
                             QSizeF(2*self.newBubble.radius + 2, 2*self.newBubble.radius + 2)).toRect())
 
         self.bubbles _ bubbles
-        if left:
+        __ left:
             self.bubblesRemaining.emit(len(self.bubbles))
 
     ___ sizeHint(self):
 
-        return QSize(200, 200)
+        r_ QSize(200, 200)
 
     # We provide getter and setter methods for the numberOfBubbles property.
     ___ getBubbles(self):
 
-        return len(self.bubbles)
+        r_ len(self.bubbles)
 
     # The setBubbles() method can also be used as a slot.
     @pyqtSlot(int)
-    ___ setBubbles(self, value):
+    ___ setBubbles  value):
 
         value _ max(0, value)
 
@@ -291,9 +291,9 @@ class BubblesWidget(BaseClass):
 
     ___ getColor1(self):
 
-        return self.backgroundColor1
+        r_ self.backgroundColor1
 
-    ___ setColor1(self, value):
+    ___ setColor1  value):
 
         self.backgroundColor1 _ QColor(value)
         self.update()
@@ -302,9 +302,9 @@ class BubblesWidget(BaseClass):
 
     ___ getColor2(self):
 
-        return self.backgroundColor2
+        r_ self.backgroundColor2
 
-    ___ setColor2(self, value):
+    ___ setColor2  value):
 
         self.backgroundColor2 _ QColor(value)
         self.update()
@@ -325,7 +325,7 @@ class BubblesWidget(BaseClass):
         self.animation_timer.start(25)
 
 
-if __name__ == "__main__":
+__ __name__ == "__main__":
 
     ______ sys
 

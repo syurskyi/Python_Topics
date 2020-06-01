@@ -42,11 +42,11 @@
 
 ______ sys
 
-____ ?.QtGui ______ QColor, QFont
-____ ?.?W.. ______ QMessageBox, QWidget
+____ ?.?G.. ______ QColor, QFont
+____ ?.?W.. ______ ?MB.., QWidget
 
 
-class Colors(object):
+c_ Colors(object):
     # Colors:
     sceneBg1 _ QColor(91, 91, 91)
     sceneBg1Line _ QColor(114, 108, 104)
@@ -107,14 +107,14 @@ class Colors(object):
         font _ QFont()
         font.setStyleStrategy(QFont.PreferAntialias)
 
-        if sys.platform == 'darwin':
+        __ sys.platform == 'darwin':
             font.setPixelSize(14)
             font.setFamily('Arial')
-        else:
+        ____
             font.setPixelSize(13)
             font.setFamily('Verdana')
 
-        return font
+        r_ font
 
     @staticmethod
     ___ headingFont
@@ -125,7 +125,7 @@ class Colors(object):
         font.setBold(True)
         font.setFamily('Verdana')
 
-        return font;
+        r_ font;
 
     @staticmethod
     ___ buttonFont
@@ -135,97 +135,97 @@ class Colors(object):
         font.setPixelSize(11)
         font.setFamily('Verdana')
 
-        return font
+        r_ font
 
     @staticmethod
     ___ tickerFont
         font _ QFont()
         font.setStyleStrategy(QFont.PreferAntialias)
 
-        if sys.platform == 'darwin':
+        __ sys.platform == 'darwin':
             font.setPixelSize(11)
             font.setBold(True)
             font.setFamily('Arial')
-        else:
+        ____
             font.setPixelSize(10)
             font.setBold(True)
             font.setFamily('sans serif')
 
-        return font
+        r_ font
 
     @classmethod
     ___ debug(cls, *args):
-        if cls.verbose:
-            sys.stderr.write("%s\n" % " ".join([str(arg) for arg in args]))
+        __ cls.verbose:
+            sys.stderr.w..("%s\n" % " ".join([str(arg) for arg in args]))
 
     @classmethod
     ___ parseArgs(cls, argv):
         # Some arguments should be processed before others.  Handle them now.
-        if "-verbose" in argv:
+        __ "-verbose" in argv:
             cls.verbose _ True
 
         # Handle the rest of the arguments.  They may override attributes
         # already set.
         for s in argv:
-            if s == "-no-ticker":
+            __ s == "-no-ticker":
                 cls.noTicker _ True
-            elif s.startswith("-ticker"):
-                cls.noTicker _  not bool(parseFloat(s, "-ticker"))
-            elif s == "-no-animations":
+            ____ s.startswith("-ticker"):
+                cls.noTicker _  no. bool(parseFloat(s, "-ticker"))
+            ____ s == "-no-animations":
                 cls.noAnimations _ True
-            elif s.startswith("-animations"):
-                cls.noAnimations _ not bool(parseFloat(s, "-animations"))
-            elif s == "-no-adapt":
+            ____ s.startswith("-animations"):
+                cls.noAnimations _ no. bool(parseFloat(s, "-animations"))
+            ____ s == "-no-adapt":
                 # Don't adapt the animations based on the actual performance.
                 cls.noAdapt _ True
-            elif s == "-low":
+            ____ s == "-low":
                 cls.setLowSettings()
-            elif s == "-no-rescale":
+            ____ s == "-no-rescale":
                 cls.noRescale _ True
-            elif s == "-use-pixmaps":
+            ____ s == "-use-pixmaps":
                 cls.usePixmaps _ True
-            elif s == "-fullscreen":
+            ____ s == "-fullscreen":
                 cls.fullscreen _ True
-            elif s == "-show-br":
+            ____ s == "-show-br":
                 cls.showBoundingRect _ True
-            elif s == "-show-fps":
+            ____ s == "-show-fps":
                 cls.showFps _ True
-            elif s == "-no-blending":
+            ____ s == "-no-blending":
                 cls.noBlending _ True
-            elif s == "-no-sync":
+            ____ s == "-no-sync":
                 cls.noScreenSync _ True
-            elif s.startswith("-menu"):
+            ____ s.startswith("-menu"):
                 cls.menuCount _ int(parseFloat(s, "-menu"))
-            elif s.startswith("-use-timer-update"):
-                cls.noTimerUpdate _ not bool(parseFloat(s, "-use-timer-update"))
-            elif s.startswith("-pause"):
+            ____ s.startswith("-use-timer-update"):
+                cls.noTimerUpdate _ no. bool(parseFloat(s, "-use-timer-update"))
+            ____ s.startswith("-pause"):
                 cls.pause _ bool(parseFloat(s, "-pause"))
-            elif s == "-no-ticker-morph":
+            ____ s == "-no-ticker-morph":
                 cls.noTickerMorph _ True
-            elif s == "-use-window-mask":
+            ____ s == "-use-window-mask":
                 cls.noWindowMask _ False
-            elif s == "-use-loop":
+            ____ s == "-use-loop":
                 cls.useLoop _ True
-            elif s == "-use-8bit":
+            ____ s == "-use-8bit":
                 cls.useEightBitPalette _ True
-            elif s.startswith("-8bit"):
+            ____ s.startswith("-8bit"):
                 cls.useEightBitPalette _ bool(parseFloat(s, "-8bit"))
-            elif s == "-use-balls":
+            ____ s == "-use-balls":
                 cls.useButtonBalls _ True
-            elif s.startswith("-ticker-letters"):
+            ____ s.startswith("-ticker-letters"):
                 cls.tickerLetterCount _ int(parseFloat(s, "-ticker-letters"))
-            elif s.startswith("-ticker-text"):
+            ____ s.startswith("-ticker-text"):
                 cls.tickerText _ parseText(s, "-ticker-text")
-            elif s.startswith("-ticker-speed"):
+            ____ s.startswith("-ticker-speed"):
                 cls.tickerMoveSpeed _ parseFloat(s, "-ticker-speed")
-            elif s.startswith("-ticker-morph-speed"):
+            ____ s.startswith("-ticker-morph-speed"):
                 cls.tickerMorphSpeed _ parseFloat(s, "-ticker-morph-speed")
-            elif s.startswith("-animation-speed"):
+            ____ s.startswith("-animation-speed"):
                 cls.animSpeed _ parseFloat(s, "-animation-speed")
-            elif s.startswith("-fps"):
+            ____ s.startswith("-fps"):
                 cls.fps _ int(parseFloat(s, "-fps"))
-            elif s.startswith("-h") or s.startswith("-help"):
-                QMessageBox.warning(None, "Arguments",
+            ____ s.startswith("-h") or s.startswith("-help"):
+                ?MB...warning(N.., "Arguments",
                         "Usage: qtdemo.py [-verbose] [-no-adapt] "
                         "[-fullscreen] [-ticker[0|1]] "
                         "[-animations[0|1]] [-no-blending] [-no-sync] "
@@ -251,10 +251,10 @@ class Colors(object):
 
     @classmethod
     ___ postConfigure(cls):
-        if not cls.noAdapt:
+        __ no. cls.noAdapt:
             w _ QWidget()
 
-            if w.depth() < 16:
+            __ w.depth() < 16:
                 cls.useEightBitPalette _ True
                 cls.adapted _ True
                 cls.debug("- Adapt: Color depth less than 16 bit. Using 8 bit palette")
@@ -266,14 +266,14 @@ ___ parseFloat(argument, name):
     except ValueError:
         value _ 0.0
 
-    return value
+    r_ value
 
 
 ___ parseText(argument, name):
-    if len(name) == len(argument):
-        QMessageBox.warning(None, "Arguments",
+    __ len(name) == len(argument):
+        ?MB...warning(N.., "Arguments",
                 "No argument number found for %s. Remember to put name and "
                 "value adjacent! (e.g. -fps100)")
         sys.exit(0)
 
-    return argument[len(name):]
+    r_ argument[len(name):]

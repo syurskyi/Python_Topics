@@ -27,7 +27,7 @@ ____ ?.QtCore ______ pyqtSignal, QEvent, Qt
 ____ ?.?W.. ______ ?A.., QLineEdit
 
 
-class PythonConsoleWidget(QLineEdit):
+c_ PythonConsoleWidget(QLineEdit):
     """PythonConsoleWidget(QLineEdit)
     
     Provides a custom widget to accept Python expressions and emit output
@@ -36,7 +36,7 @@ class PythonConsoleWidget(QLineEdit):
     
     pythonOutput _ pyqtSignal(str)
     
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
     
         super(PythonConsoleWidget, self).__init__(parent)
         
@@ -45,23 +45,23 @@ class PythonConsoleWidget(QLineEdit):
         
         self.returnPressed.c..(self.execute)
     
-    ___ keyReleaseEvent(self, event):
+    ___ keyReleaseEvent  event):
     
-        if event.type() == QEvent.KeyRelease:
+        __ event.type() == QEvent.KeyRelease:
         
-            if event.key() == Qt.Key_Up:
+            __ event.key() == Qt.Key_Up:
                 current _ max(0, self.current - 1)
-                if 0 <_ current < len(self.history):
+                __ 0 <_ current < len(self.history):
                     self.sT..(self.history[current])
                     self.current _ current
                 
                 event.accept()
             
-            elif event.key() == Qt.Key_Down:
+            ____ event.key() == Qt.Key_Down:
                 current _ min(len(self.history), self.current + 1)
-                if 0 <_ current < len(self.history):
+                __ 0 <_ current < len(self.history):
                     self.sT..(self.history[current])
-                else:
+                ____
                     self.clear()
                 self.current _ current
                 
@@ -88,7 +88,7 @@ class PythonConsoleWidget(QLineEdit):
             pass
 
 
-if __name__ == "__main__":
+__ __name__ == "__main__":
 
     ______ sys
 

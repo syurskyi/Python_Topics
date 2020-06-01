@@ -41,16 +41,16 @@
 
 
 ____ ?.QtCore ______ QRectF
-____ ?.QtGui ______ QColor, QImage, QPainter
+____ ?.?G.. ______ QColor, QImage, QPainter
 ____ ?.?W.. ______ QGraphicsTextItem, QStyleOptionGraphicsItem
 
 ____ demoitem ______ DemoItem
 
 
-class DemoTextItem(DemoItem):
+c_ DemoTextItem(DemoItem):
     STATIC_TEXT, DYNAMIC_TEXT _ range(2)
 
-    ___ __init__(self, text, font, textColor, textWidth, parent_None, type_STATIC_TEXT, bgColor_QColor()):
+    ___ __init__  text, font, textColor, textWidth, parent_None, type_STATIC_TEXT, bgColor_QColor()):
         super(DemoTextItem, self).__init__(parent)
 
         self.type _ type
@@ -61,13 +61,13 @@ class DemoTextItem(DemoItem):
         self.textWidth _ textWidth
         self.noSubPixeling _ True
 
-    ___ sT..(self, text):
+    ___ sT..  text):
         self.text _ text
         self.update()
 
-    ___ createImage(self, transform):
-        if self.type == DemoTextItem.DYNAMIC_TEXT:
-            return None
+    ___ createImage  transform):
+        __ self.type == DemoTextItem.DYNAMIC_TEXT:
+            r_ N..
 
         sx _ min(transform.m11(), transform.m22())
         sy _ max(transform.m22(), sx)
@@ -87,27 +87,27 @@ class DemoTextItem(DemoItem):
         painter _ QPainter(image)
         painter.scale(sx, sy)
         style _ QStyleOptionGraphicsItem()
-        textItem.paint(painter, style, None)
+        textItem.paint(painter, style, N..)
 
-        return image
+        r_ image
 
-    ___ animationStarted(self, id_0):
+    ___ animationStarted  id_0):
         self.noSubPixeling _ False
 
-    ___ animationStopped(self, id_0):
+    ___ animationStopped  id_0):
         self.noSubPixeling _ True
 
     ___ boundingRect(self):
-        if self.type == DemoTextItem.STATIC_TEXT:
-            return super(DemoTextItem, self).boundingRect()
+        __ self.type == DemoTextItem.STATIC_TEXT:
+            r_ super(DemoTextItem, self).boundingRect()
 
         # Sorry for using magic number.
-        return QRectF(0, 0, 50, 20)
+        r_ QRectF(0, 0, 50, 20)
 
-    ___ paint(self, painter, option, widget):
-        if self.type == DemoTextItem.STATIC_TEXT:
+    ___ paint  painter, option, widget):
+        __ self.type == DemoTextItem.STATIC_TEXT:
             super(DemoTextItem, self).paint(painter, option, widget)
-            return
+            r_
 
         painter.setPen(self.textColor)
         painter.drawText(0, 0, self.text)

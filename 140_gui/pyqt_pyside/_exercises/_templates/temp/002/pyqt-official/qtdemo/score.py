@@ -43,7 +43,7 @@
 ____ colors ______ Colors
 
 
-class Score(object):
+c_ Score(object):
     LOCK_ITEMS, UNLOCK_ITEMS, SKIP_LOCK _ range(3)
 
     FROM_CURRENT, FROM_START, NEW_ANIMATION_ONLY, ONLY_IF_VISIBLE _ range(4)
@@ -53,43 +53,43 @@ class Score(object):
         self._playlist _ []
 
     ___ hasQueuedMovies(self):
-        return len(self._playlist) > 0
+        r_ len(self._playlist) > 0
 
-    ___ prepare(self, movie, runMode, lockMode):
-        if lockMode == Score.LOCK_ITEMS:
+    ___ prepare  movie, runMode, lockMode):
+        __ lockMode == Score.LOCK_ITEMS:
             for item in movie:
-                if runMode !_ Score.ONLY_IF_VISIBLE or item.isVisible
-                    item.setEnabled(False)
+                __ runMode !_ Score.ONLY_IF_VISIBLE or item.isVisible
+                    item.setEnabled F..
                     item.prepare()
-        elif lockMode == Score.UNLOCK_ITEMS:
+        ____ lockMode == Score.UNLOCK_ITEMS:
             for item in movie:
-                if runMode !_ Score.ONLY_IF_VISIBLE or item.isVisible
+                __ runMode !_ Score.ONLY_IF_VISIBLE or item.isVisible
                     item.setEnabled(True)
                     item.prepare()
-        else:
+        ____
             for item in movie:
-                if runMode !_ Score.ONLY_IF_VISIBLE or item.isVisible
+                __ runMode !_ Score.ONLY_IF_VISIBLE or item.isVisible
                     item.prepare()
 
-    ___ _play(self, movie, runMode):
-        if runMode == Score.NEW_ANIMATION_ONLY:
+    ___ _play  movie, runMode):
+        __ runMode == Score.NEW_ANIMATION_ONLY:
             for item in movie:
-                if item.notOwnerOfItem
+                __ item.notOwnerOfItem
                     item.play(True)
-        elif runMode == Score.ONLY_IF_VISIBLE:
+        ____ runMode == Score.ONLY_IF_VISIBLE:
             for item in movie:
-                if item.isVisible
+                __ item.isVisible
                     item.play(runMode == Score.FROM_START)
-        else:
+        ____
             for item in movie:
                 item.play(runMode == Score.FROM_START)
 
-    ___ queueMovie(self, indexName, runMode_FROM_START, lockMode_SKIP_LOCK):
+    ___ queueMovie  indexName, runMode_FROM_START, lockMode_SKIP_LOCK):
         try:
             movie _ self._index[indexName]
         except KeyError:
             Colors.debug("Queuing movie:", indexName, "(does not exist)")
-            return
+            r_
 
         self.prepare(movie, runMode, lockMode)
         self._playlist.append((movie, runMode))
@@ -102,8 +102,8 @@ class Score(object):
         self._playlist _ []
         Colors.debug("********* Playing que *********")
 
-    ___ insertMovie(self, indexName):
+    ___ insertMovie  indexName):
         movie _ []
         self._index[indexName] _ movie
 
-        return movie
+        r_ movie

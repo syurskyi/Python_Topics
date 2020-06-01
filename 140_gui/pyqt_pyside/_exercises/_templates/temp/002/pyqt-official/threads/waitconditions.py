@@ -58,13 +58,13 @@ mutex _ QMutex()
 numUsedBytes _ 0
 
 
-class Producer(QThread):
+c_ Producer(QThread):
     ___ run(self):
-        global numUsedBytes
+        gl.. numUsedBytes
 
         for i in range(DataSize):
             mutex.lock()
-            if numUsedBytes == BufferSize:
+            __ numUsedBytes == BufferSize:
                 bufferNotFull.wait(mutex)
             mutex.unlock()
             
@@ -76,27 +76,27 @@ class Producer(QThread):
             mutex.unlock()
 
 
-class Consumer(QThread):
+c_ Consumer(QThread):
     ___ run(self):
-        global numUsedBytes
+        gl.. numUsedBytes
 
         for i in range(DataSize):
             mutex.lock()
-            if numUsedBytes == 0:
+            __ numUsedBytes == 0:
                 bufferNotEmpty.wait(mutex)
             mutex.unlock()
             
-            sys.stderr.write(buffer[i % BufferSize])
+            sys.stderr.w..(buffer[i % BufferSize])
 
             mutex.lock()
             numUsedBytes -_ 1
             bufferNotFull.wakeAll()
             mutex.unlock()
             
-        sys.stderr.write("\n")
+        sys.stderr.w..("\n")
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ QCoreApplication(sys.argv)
     producer _ Producer()
     consumer _ Consumer()

@@ -42,41 +42,41 @@
 
 
 ____ ?.QtCore ______ pyqtProperty, pyqtSignal, QRectF, QUrl
-____ ?.QtGui ______ QColor, QGuiApplication, QPainter, QPen
+____ ?.?G.. ______ QColor, QGuiApplication, QPainter, QPen
 ____ ?.QtQml ______ qmlRegisterType
 ____ ?.QtQuick ______ QQuickPaintedItem, QQuickView
 
 
-class PieChart(QQuickPaintedItem):
+c_ PieChart(QQuickPaintedItem):
 
     nameChanged _ pyqtSignal(str)
 
     @pyqtProperty(str, notify_nameChanged)
     ___ name(self):
-        return self._name
+        r_ self._name
 
     @name.setter
-    ___ name(self, name):
-        if self._name !_ name:
+    ___ name  name):
+        __ self._name !_ name:
             self._name _ name
             self.nameChanged.emit(name)
             self.update()
 
     @pyqtProperty(QColor)
     ___ color(self):
-        return self._color
+        r_ self._color
 
     @color.setter
-    ___ color(self, color):
+    ___ color  color):
         self._color _ QColor(color)
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(PieChart, self).__init__(parent)
 
         self._name _ ''
         self._color _ QColor()
 
-    ___ paint(self, painter):
+    ___ paint  painter):
         painter.setPen(QPen(self._color, 2))
         painter.setRenderHints(QPainter.Antialiasing, True)
 
@@ -84,7 +84,7 @@ class PieChart(QQuickPaintedItem):
         painter.drawPie(rect, 90 * 16, 290 * 16)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     ______ os
     ______ sys
 

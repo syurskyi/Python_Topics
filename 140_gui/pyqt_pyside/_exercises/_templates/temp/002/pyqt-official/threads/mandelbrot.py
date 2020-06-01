@@ -44,7 +44,7 @@
 
 ____ ?.QtCore ______ (pyqtSignal, QMutex, QMutexLocker, QPoint, QSize, Qt,
         QThread, QWaitCondition)
-____ ?.QtGui ______ QColor, QImage, QPainter, QPixmap, qRgb
+____ ?.?G.. ______ QColor, QImage, QPainter, QPixmap, qRgb
 ____ ?.?W.. ______ ?A.., QWidget
 
 
@@ -57,12 +57,12 @@ ZoomOutFactor _ 1 / ZoomInFactor
 ScrollStep _ 20
 
 
-class RenderThread(QThread):
+c_ RenderThread(QThread):
     ColormapSize _ 512
 
     renderedImage _ pyqtSignal(QImage, float)
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(RenderThread, self).__init__(parent)
 
         self.mutex _ QMutex()
@@ -87,7 +87,7 @@ class RenderThread(QThread):
 
         self.wait()
 
-    ___ render(self, centerX, centerY, scaleFactor, resultSize):
+    ___ render  centerX, centerY, scaleFactor, resultSize):
         locker _ QMutexLocker(self.mutex)
 
         self.centerX _ centerX
@@ -95,9 +95,9 @@ class RenderThread(QThread):
         self.scaleFactor _ scaleFactor
         self.resultSize _ resultSize
 
-        if not self.isRunning
+        __ no. self.isRunning
             self.start(QThread.LowPriority)
-        else:
+        ____
             self.restart _ True
             self.condition.wakeOne()
 
@@ -123,10 +123,10 @@ class RenderThread(QThread):
                 allBlack _ True
 
                 for y in range(-halfHeight, halfHeight):
-                    if self.restart:
+                    __ self.restart:
                         break
-                    if self.abort:
-                        return
+                    __ self.abort:
+                        r_
 
                     ay _ 1j * (centerY + (y * scaleFactor))
 
@@ -138,79 +138,79 @@ class RenderThread(QThread):
                         while numIterations < MaxIterations:
                             numIterations +_ 1
                             c _ c*c + c0
-                            if abs(c) >_ Limit:
+                            __ abs(c) >_ Limit:
                                 break
                             numIterations +_ 1
                             c _ c*c + c0
-                            if abs(c) >_ Limit:
+                            __ abs(c) >_ Limit:
                                 break
                             numIterations +_ 1
                             c _ c*c + c0
-                            if abs(c) >_ Limit:
+                            __ abs(c) >_ Limit:
                                 break
                             numIterations +_ 1
                             c _ c*c + c0
-                            if abs(c) >_ Limit:
+                            __ abs(c) >_ Limit:
                                 break
 
-                        if numIterations < MaxIterations:
+                        __ numIterations < MaxIterations:
                             image.setPixel(x + halfWidth, y + halfHeight,
                                            self.colormap[numIterations % RenderThread.ColormapSize])
                             allBlack _ False
-                        else:
+                        ____
                             image.setPixel(x + halfWidth, y + halfHeight, qRgb(0, 0, 0))
 
-                if allBlack and curpass == 0:
+                __ allBlack and curpass == 0:
                     curpass _ 4
-                else:
-                    if not self.restart:
+                ____
+                    __ no. self.restart:
                         self.renderedImage.emit(image, scaleFactor)
                     curpass +_ 1
 
             self.mutex.lock()
-            if not self.restart:
+            __ no. self.restart:
                 self.condition.wait(self.mutex)
             self.restart _ False
             self.mutex.unlock()
 
-    ___ rgbFromWaveLength(self, wave):
+    ___ rgbFromWaveLength  wave):
         r _ 0.0
         g _ 0.0
         b _ 0.0
 
-        if wave >_ 380.0 and wave <_ 440.0:
+        __ wave >_ 380.0 and wave <_ 440.0:
             r _ -1.0 * (wave - 440.0) / (440.0 - 380.0)
             b _ 1.0
-        elif wave >_ 440.0 and wave <_ 490.0:
+        ____ wave >_ 440.0 and wave <_ 490.0:
             g _ (wave - 440.0) / (490.0 - 440.0)
             b _ 1.0
-        elif wave >_ 490.0 and wave <_ 510.0:
+        ____ wave >_ 490.0 and wave <_ 510.0:
             g _ 1.0
             b _ -1.0 * (wave - 510.0) / (510.0 - 490.0)
-        elif wave >_ 510.0 and wave <_ 580.0:
+        ____ wave >_ 510.0 and wave <_ 580.0:
             r _ (wave - 510.0) / (580.0 - 510.0)
             g _ 1.0
-        elif wave >_ 580.0 and wave <_ 645.0:
+        ____ wave >_ 580.0 and wave <_ 645.0:
             r _ 1.0
             g _ -1.0 * (wave - 645.0) / (645.0 - 580.0)
-        elif wave >_ 645.0 and wave <_ 780.0:
+        ____ wave >_ 645.0 and wave <_ 780.0:
             r _ 1.0
 
         s _ 1.0
-        if wave > 700.0:
+        __ wave > 700.0:
             s _ 0.3 + 0.7 * (780.0 - wave) / (780.0 - 700.0)
-        elif wave < 420.0:
+        ____ wave < 420.0:
             s _ 0.3 + 0.7 * (wave - 380.0) / (420.0 - 380.0)
 
         r _ pow(r * s, 0.8)
         g _ pow(g * s, 0.8)
         b _ pow(b * s, 0.8)
 
-        return qRgb(r*255, g*255, b*255)
+        r_ qRgb(r*255, g*255, b*255)
 
 
-class MandelbrotWidget(QWidget):
-    ___ __init__(self, parent_None):
+c_ MandelbrotWidget(QWidget):
+    ___ __init__  parent_None):
         super(MandelbrotWidget, self).__init__(parent)
 
         self.thread _ RenderThread()
@@ -229,19 +229,19 @@ class MandelbrotWidget(QWidget):
         self.setCursor(Qt.CrossCursor)
         self.resize(550, 400)
 
-    ___ paintEvent(self, event):
+    ___ paintEvent  event):
         painter _ QPainter(self)
         painter.fillRect(self.rect(), Qt.black)
 
-        if self.pixmap.isNull
+        __ self.pixmap.isNull
             painter.setPen(Qt.white)
             painter.drawText(self.rect(), Qt.AlignCenter,
                     "Rendering initial image, please wait...")
-            return
+            r_
 
-        if self.curScale == self.pixmapScale:
+        __ self.curScale == self.pixmapScale:
             painter.drawPixmap(self.pixmapOffset, self.pixmap)
-        else:
+        ____
             scaleFactor _ self.pixmapScale / self.curScale
             newWidth _ int(self.pixmap.width() * scaleFactor)
             newHeight _ int(self.pixmap.height() * scaleFactor)
@@ -269,43 +269,43 @@ class MandelbrotWidget(QWidget):
         painter.drawText((self.width() - textWidth) / 2,
                 metrics.leading() + metrics.ascent(), text)
 
-    ___ resizeEvent(self, event):
+    ___ resizeEvent  event):
         self.thread.render(self.centerX, self.centerY, self.curScale,
                 self.size())
 
-    ___ keyPressEvent(self, event):
-        if event.key() == Qt.Key_Plus:
+    ___ keyPressEvent  event):
+        __ event.key() == Qt.Key_Plus:
             self.zoom(ZoomInFactor)
-        elif event.key() == Qt.Key_Minus:
+        ____ event.key() == Qt.Key_Minus:
             self.zoom(ZoomOutFactor)
-        elif event.key() == Qt.Key_Left:
+        ____ event.key() == Qt.Key_Left:
             self.scroll(-ScrollStep, 0)
-        elif event.key() == Qt.Key_Right:
+        ____ event.key() == Qt.Key_Right:
             self.scroll(+ScrollStep, 0)
-        elif event.key() == Qt.Key_Down:
+        ____ event.key() == Qt.Key_Down:
             self.scroll(0, -ScrollStep)
-        elif event.key() == Qt.Key_Up:
+        ____ event.key() == Qt.Key_Up:
             self.scroll(0, +ScrollStep)
-        else:
+        ____
             super(MandelbrotWidget, self).keyPressEvent(event)
 
-    ___ wheelEvent(self, event):
+    ___ wheelEvent  event):
         numDegrees _ event.angleDelta().y() / 8
         numSteps _ numDegrees / 15.0
         self.zoom(pow(ZoomInFactor, numSteps))
 
-    ___ mousePressEvent(self, event):
-        if event.buttons() == Qt.LeftButton:
+    ___ mousePressEvent  event):
+        __ event.buttons() == Qt.LeftButton:
             self.lastDragPos _ QPoint(event.pos())
 
-    ___ mouseMoveEvent(self, event):
-        if event.buttons() & Qt.LeftButton:
+    ___ mouseMoveEvent  event):
+        __ event.buttons() & Qt.LeftButton:
             self.pixmapOffset +_ event.pos() - self.lastDragPos
             self.lastDragPos _ QPoint(event.pos())
             self.update()
 
-    ___ mouseReleaseEvent(self, event):
-        if event.button() == Qt.LeftButton:
+    ___ mouseReleaseEvent  event):
+        __ event.button() == Qt.LeftButton:
             self.pixmapOffset +_ event.pos() - self.lastDragPos
             self.lastDragPos _ QPoint()
 
@@ -313,9 +313,9 @@ class MandelbrotWidget(QWidget):
             deltaY _ (self.height() - self.pixmap.height()) / 2 - self.pixmapOffset.y()
             self.scroll(deltaX, deltaY)
 
-    ___ updatePixmap(self, image, scaleFactor):
-        if not self.lastDragPos.isNull
-            return
+    ___ updatePixmap  image, scaleFactor):
+        __ no. self.lastDragPos.isNull
+            r_
 
         self.pixmap _ QPixmap.fromImage(image)
         self.pixmapOffset _ QPoint()
@@ -323,13 +323,13 @@ class MandelbrotWidget(QWidget):
         self.pixmapScale _ scaleFactor
         self.update()
 
-    ___ zoom(self, zoomFactor):
+    ___ zoom  zoomFactor):
         self.curScale *_ zoomFactor
         self.update()
         self.thread.render(self.centerX, self.centerY, self.curScale,
                 self.size())
 
-    ___ scroll(self, deltaX, deltaY):
+    ___ scroll  deltaX, deltaY):
         self.centerX +_ deltaX * self.curScale
         self.centerY +_ deltaY * self.curScale
         self.update()
@@ -337,7 +337,7 @@ class MandelbrotWidget(QWidget):
                 self.size())
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

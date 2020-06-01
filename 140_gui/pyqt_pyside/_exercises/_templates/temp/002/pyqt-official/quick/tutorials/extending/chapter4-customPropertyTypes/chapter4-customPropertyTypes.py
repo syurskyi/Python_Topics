@@ -42,27 +42,27 @@
 
 
 ____ ?.QtCore ______ pyqtProperty, QRectF, QUrl
-____ ?.QtGui ______ QColor, QGuiApplication, QPainter, QPen
+____ ?.?G.. ______ QColor, QGuiApplication, QPainter, QPen
 ____ ?.QtQml ______ qmlRegisterType
 ____ ?.QtQuick ______ QQuickItem, QQuickPaintedItem, QQuickView
 
 
-class PieSlice(QQuickPaintedItem):
+c_ PieSlice(QQuickPaintedItem):
 
     @pyqtProperty(QColor)
     ___ color(self):
-        return self._color
+        r_ self._color
 
     @color.setter
-    ___ color(self, color):
+    ___ color  color):
         self._color _ QColor(color)
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(PieSlice, self).__init__(parent)
 
         self._color _ QColor()
 
-    ___ paint(self, painter):
+    ___ paint  painter):
         painter.setPen(QPen(self._color, 2))
         painter.setRenderHints(QPainter.Antialiasing, True)
 
@@ -70,33 +70,33 @@ class PieSlice(QQuickPaintedItem):
         painter.drawPie(rect, 90 * 16, 290 * 16)
 
 
-class PieChart(QQuickItem):
+c_ PieChart(QQuickItem):
 
     @pyqtProperty(PieSlice)
     ___ pieSlice(self):
-        return self._pieSlice
+        r_ self._pieSlice
 
     @pieSlice.setter
-    ___ pieSlice(self, pieSlice):
+    ___ pieSlice  pieSlice):
         self._pieSlice _ pieSlice
         pieSlice.setParentItem(self)
 
     @pyqtProperty(str)
     ___ name(self):
-        return self._name
+        r_ self._name
 
     @name.setter
-    ___ name(self, name):
+    ___ name  name):
         self._name _ name
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(PieChart, self).__init__(parent)
 
-        self._pieSlice _ None
+        self._pieSlice _ N..
         self._name _ ''
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     ______ os
     ______ sys
 

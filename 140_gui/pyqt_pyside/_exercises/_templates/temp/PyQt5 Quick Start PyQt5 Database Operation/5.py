@@ -3,17 +3,17 @@ ____ ?.QtSql ______ QSqlDatabase, QSqlQuery
 ____ ?.QtCore ______ *
 ____ ?.?W.. ______ *
 
-class MainWindow(QWidget):
-    ___ __init__(self, parent_None):
+c_ MainWindow(QWidget):
+    ___ __init__  parent_None):
         super(MainWindow, self).__init__(parent)
         self.db _ QSqlDatabase.addDatabase("QSQLITE")
         self.db.setDatabaseName("test.db")
-        self.db.open()
+        self.db.o..()
 
-    ___ closeEvent(self, event):
+    ___ closeEvent  event):
         self.db.close()
 
-if __name__ == "__main__":
+__ __name__ == "__main__":
     app _ ?A..(sys.argv)
     window _ MainWindow()
     window.s..

@@ -45,7 +45,7 @@ ______ os
 ______ sys
 
 ____ ?.QtCore ______ QUrl
-____ ?.QtGui ______ QGuiApplication
+____ ?.?G.. ______ QGuiApplication
 ____ ?.QtQuick ______ QQuickView
 
 ______ stringlistmodel_rc

@@ -48,9 +48,9 @@ ______ math
 
 ____ ?.QtCore ______ (pyqtSignal, QBasicTimer, QObject, QPoint, QPointF,
         QRect, QSize, QStandardPaths, Qt, QUrl)
-____ ?.QtGui ______ (QColor, QDesktopServices, QImage, QPainter,
+____ ?.?G.. ______ (QColor, QDesktopServices, QImage, QPainter,
         QPainterPath, QPixmap, QRadialGradient)
-____ ?.?W.. ______ QAction, ?A.., QMainWindow, QWidget
+____ ?.?W.. ______ ?A.., ?A.., QMainWindow, QWidget
 ____ ?.QtNetwork ______ (QNetworkAccessManager, QNetworkDiskCache,
         QNetworkRequest)
 
@@ -69,19 +69,19 @@ MAX_MAGNIFIER _ 229
 TDIM _ 256
 
 
-class Point(QPoint):
+c_ Point(QPoint):
     """QPoint, that is fully qualified as a dict key"""
-    ___ __init__(self, *par):
-        if par:
+    ___ __init__  *par):
+        __ par:
             super(Point, self).__init__(*par)
-        else:
+        ____
             super(Point, self).__init__()
 
     ___ __hash__(self):
-        return self.x() * 17 ^ self.y()
+        r_ self.x() * 17 ^ self.y()
 
     ___ __repr__(self):
-        return "Point(%s, %s)" % (self.x(), self.y())
+        r_ "Point(%s, %s)" % (self.x(), self.y())
 
 
 ___ tileForCoordinate(lat, lng, zoom):
@@ -90,14 +90,14 @@ ___ tileForCoordinate(lat, lng, zoom):
     ty _ (1.0 - math.log(math.tan(lat * math.pi / 180.0) +
           1.0 / math.cos(lat * math.pi / 180.0)) / math.pi) / 2.0
 
-    return QPointF(tx * zn, ty * zn)
+    r_ QPointF(tx * zn, ty * zn)
 
 
 ___ longitudeFromTile(tx, zoom):
     zn _ float(1 << zoom)
     lat _ tx / zn * 360.0 - 180.0
 
-    return lat
+    r_ lat
 
 
 ___ latitudeFromTile(ty, zoom):
@@ -105,14 +105,14 @@ ___ latitudeFromTile(ty, zoom):
     n _ math.pi - 2 * math.pi * ty / zn
     lng _ 180.0 / math.pi * math.atan(0.5 * (math.exp(n) - math.exp(-n)))
 
-    return lng
+    r_ lng
 
 
-class SlippyMap(QObject):
+c_ SlippyMap(QObject):
 
     updated _ pyqtSignal(QRect)
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(SlippyMap, self).__init__(parent)
 
         self._offset _ QPoint()
@@ -137,8 +137,8 @@ class SlippyMap(QObject):
         self._manager.finished.c..(self.handleNetworkData)
 
     ___ invalidate(self):
-        if self.width <_ 0 or self.height <_ 0:
-            return
+        __ self.width <_ 0 or self.height <_ 0:
+            r_
 
         ct _ tileForCoordinate(self.latitude, self.longitude, self.zoom)
         tx _ ct.x()
@@ -164,20 +164,20 @@ class SlippyMap(QObject):
         # build a rect
         self._tilesRect _ QRect(xs, ys, xe - xs + 1, ye - ys + 1)
 
-        if self._url.isEmpty
+        __ self._url.isEmpty
             self.download()
 
         self.updated.emit(QRect(0, 0, self.width, self.height))
 
-    ___ render(self, p, rect):
+    ___ render  p, rect):
         for x in range(self._tilesRect.width()):
             for y in range(self._tilesRect.height()):
                 tp _ Point(x + self._tilesRect.left(), y + self._tilesRect.top())
                 box _ self.tileRect(tp)
-                if rect.intersects(box):
+                __ rect.intersects(box):
                     p.drawPixmap(box, self._tilePixmaps.get(tp, self._emptyTile))
    
-    ___ pan(self, delta):
+    ___ pan  delta):
         dx _ QPointF(delta) / float(TDIM)
         center _ tileForCoordinate(self.latitude, self.longitude, self.zoom) - dx
         self.latitude _ latitudeFromTile(center.y(), self.zoom)
@@ -185,12 +185,12 @@ class SlippyMap(QObject):
         self.invalidate()
 
     # slots
-    ___ handleNetworkData(self, reply):
+    ___ handleNetworkData  reply):
         img _ QImage()
         tp _ Point(reply.request().attribute(QNetworkRequest.User))
         url _ reply.url()
-        if not reply.error
-            if img.load(reply, None):
+        __ no. reply.error
+            __ img.load(reply, N..):
                 self._tilePixmaps[tp] _ QPixmap.fromImage(img)
         reply.deleteLater()
         self.updated.emit(self.tileRect(tp))
@@ -198,22 +198,22 @@ class SlippyMap(QObject):
         # purge unused tiles
         bound _ self._tilesRect.adjusted(-2, -2, 2, 2)
         for tp in list(self._tilePixmaps.keys()):
-            if not bound.contains(tp):
+            __ no. bound.contains(tp):
                 del self._tilePixmaps[tp]
         self.download()
 
     ___ download(self):
-        grab _ None
+        grab _ N..
         for x in range(self._tilesRect.width()):
             for y in range(self._tilesRect.height()):
                 tp _ Point(self._tilesRect.topLeft() + QPoint(x, y))
-                if tp not in self._tilePixmaps:
+                __ tp no. in self._tilePixmaps:
                     grab _ QPoint(tp)
                     break
 
-        if grab is None:
+        __ grab __ N..:
             self._url _ QUrl()
-            return
+            r_
 
         path _ 'http://tile.openstreetmap.org/%d/%d/%d.png' % (self.zoom, grab.x(), grab.y())
         self._url _ QUrl(path)
@@ -223,16 +223,16 @@ class SlippyMap(QObject):
         request.setAttribute(QNetworkRequest.User, grab)
         self._manager.get(request)
 
-    ___ tileRect(self, tp):
+    ___ tileRect  tp):
         t _ tp - self._tilesRect.topLeft()
         x _ t.x() * TDIM + self._offset.x()
         y _ t.y() * TDIM + self._offset.y()
 
-        return QRect(x, y, TDIM, TDIM)
+        r_ QRect(x, y, TDIM, TDIM)
 
 
-class LightMaps(QWidget):
-    ___ __init__(self, parent _ None):
+c_ LightMaps(QWidget):
+    ___ __init__  parent _ N..):
         super(LightMaps, self).__init__(parent)
 
         self.pressed _ False
@@ -249,7 +249,7 @@ class LightMaps(QWidget):
         self._normalMap.updated.c..(self.updateMap)
         self._largeMap.updated.c..(self.update)
  
-    ___ setCenter(self, lat, lng):
+    ___ setCenter  lat, lng):
         self._normalMap.latitude _ lat
         self._normalMap.longitude _ lng
         self._normalMap.invalidate()
@@ -257,10 +257,10 @@ class LightMaps(QWidget):
 
     # slots
     ___ toggleNightMode(self):
-        self.invert _ not self.invert
+        self.invert _ no. self.invert
         self.update()
  
-    ___ updateMap(self, r):
+    ___ updateMap  r):
         self.update(r)
 
     ___ activateZoom(self):
@@ -274,7 +274,7 @@ class LightMaps(QWidget):
         self._largeMap.invalidate()
         self.update()
  
-    ___ resizeEvent(self, event):
+    ___ resizeEvent  event):
         self._normalMap.width _ self.width()
         self._normalMap.height _ self.height()
         self._normalMap.invalidate()
@@ -282,7 +282,7 @@ class LightMaps(QWidget):
         self._largeMap.height _ self._normalMap.height * 2
         self._largeMap.invalidate()
 
-    ___ paintEvent(self, event):
+    ___ paintEvent  event):
         p _ QPainter()
         p.begin(self)
         self._normalMap.render(p, event.rect())
@@ -291,7 +291,7 @@ class LightMaps(QWidget):
                    "Map data CCBYSA 2009 OpenStreetMap.org contributors")
         p.end()
 
-        if self.zoomed:
+        __ self.zoomed:
             dim _ min(self.width(), self.height())
             magnifierSize _ min(MAX_MAGNIFIER, dim * 2 / 3)
             radius _ magnifierSize / 2
@@ -299,7 +299,7 @@ class LightMaps(QWidget):
             box _ QSize(magnifierSize, magnifierSize)
 
             # reupdate our mask
-            if self.maskPixmap.size() !_ box:
+            __ self.maskPixmap.size() !_ box:
                 self.maskPixmap _ QPixmap(box)
                 self.maskPixmap.fill(Qt.transparent)
                 g _ QRadialGradient()
@@ -323,11 +323,11 @@ class LightMaps(QWidget):
             corner _ center - QPoint(radius, radius)
             xy _ center * 2 - QPoint(radius, radius)
             # only set the dimension to the magnified portion
-            if self.zoomPixmap.size() !_ box:
+            __ self.zoomPixmap.size() !_ box:
                 self.zoomPixmap _ QPixmap(box)
                 self.zoomPixmap.fill(Qt.lightGray)
     
-            if True:
+            __ True:
                 p _ QPainter(self.zoomPixmap)
                 p.translate(-xy)
                 self._largeMap.render(p, QRect(xy, box))
@@ -339,121 +339,121 @@ class LightMaps(QWidget):
             p.setRenderHint(QPainter.Antialiasing)
             p.setClipPath(clipPath)
             p.drawPixmap(corner, self.zoomPixmap)
-            p.setClipping(False)
+            p.setClipping F..
             p.drawPixmap(corner, self.maskPixmap)
             p.setPen(Qt.gray)
             p.drawPath(clipPath)
 
-        if self.invert:
+        __ self.invert:
             p _ QPainter(self)
             p.setCompositionMode(QPainter.CompositionMode_Difference)
             p.fillRect(event.rect(), Qt.white)
             p.end()
 
-    ___ timerEvent(self, event):
-        if not self.zoomed:
+    ___ timerEvent  event):
+        __ no. self.zoomed:
             self.activateZoom()
 
         self.update()
  
-    ___ mousePressEvent(self, event):
-        if event.buttons() !_ Qt.LeftButton:
-            return
+    ___ mousePressEvent  event):
+        __ event.buttons() !_ Qt.LeftButton:
+            r_
 
         self.pressed _ self.snapped _ True
         self.pressPos _ self.dragPos _ event.pos()
         self.tapTimer.stop()
         self.tapTimer.start(HOLD_TIME, self)
 
-    ___ mouseMoveEvent(self, event):
-        if not event.buttons
-            return
+    ___ mouseMoveEvent  event):
+        __ no. event.buttons
+            r_
 
-        if not self.zoomed:
-            if not self.pressed or not self.snapped:
+        __ no. self.zoomed:
+            __ no. self.pressed or no. self.snapped:
                 delta _ event.pos() - self.pressPos
                 self.pressPos _ event.pos()
                 self._normalMap.pan(delta)
-                return
-            else:
+                r_
+            ____
                 threshold _ 10
                 delta _ event.pos() - self.pressPos
-                if self.snapped:
+                __ self.snapped:
                     self.snapped &_ delta.x() < threshold
                     self.snapped &_ delta.y() < threshold
                     self.snapped &_ delta.x() > -threshold
                     self.snapped &_ delta.y() > -threshold
 
-                if not self.snapped:
+                __ no. self.snapped:
                     self.tapTimer.stop()
 
-        else:
+        ____
             self.dragPos _ event.pos()
             self.update()
 
-    ___ mouseReleaseEvent(self, event):
+    ___ mouseReleaseEvent  event):
         self.zoomed _ False
         self.update()
  
-    ___ keyPressEvent(self, event):
-        if not self.zoomed:
-            if event.key() == Qt.Key_Left:
+    ___ keyPressEvent  event):
+        __ no. self.zoomed:
+            __ event.key() == Qt.Key_Left:
                 self._normalMap.pan(QPoint(20, 0))
-            if event.key() == Qt.Key_Right:
+            __ event.key() == Qt.Key_Right:
                 self._normalMap.pan(QPoint(-20, 0))
-            if event.key() == Qt.Key_Up:
+            __ event.key() == Qt.Key_Up:
                 self._normalMap.pan(QPoint(0, 20))
-            if event.key() == Qt.Key_Down:
+            __ event.key() == Qt.Key_Down:
                 self._normalMap.pan(QPoint(0, -20))
-            if event.key() == Qt.Key_Z or event.key() == Qt.Key_Select:
+            __ event.key() == Qt.Key_Z or event.key() == Qt.Key_Select:
                 self.dragPos _ QPoint(self.width() / 2, self.height() / 2)
                 self.activateZoom()
-        else:
-            if event.key() == Qt.Key_Z or event.key() == Qt.Key_Select:
+        ____
+            __ event.key() == Qt.Key_Z or event.key() == Qt.Key_Select:
                 self.zoomed _ False
                 self.update()
 
             delta _ QPoint(0, 0)
-            if event.key() == Qt.Key_Left:
+            __ event.key() == Qt.Key_Left:
                 delta _ QPoint(-15, 0)
-            if event.key() == Qt.Key_Right:
+            __ event.key() == Qt.Key_Right:
                 delta _ QPoint(15, 0)
-            if event.key() == Qt.Key_Up:
+            __ event.key() == Qt.Key_Up:
                 delta _ QPoint(0, -15)
-            if event.key() == Qt.Key_Down:
+            __ event.key() == Qt.Key_Down:
                 delta _ QPoint(0, 15)
-            if delta !_ QPoint(0, 0):
+            __ delta !_ QPoint(0, 0):
                 self.dragPos +_ delta
                 self.update()
 
 
-class MapZoom(QMainWindow):
+c_ MapZoom ?MW..
     ___ __init__(self):
-        super(MapZoom, self).__init__(None)
+        super(MapZoom, self).__init__(N..)
 
         self.map_ _ LightMaps(self)
-        self.setCentralWidget(self.map_)
+        self.sCW..(self.map_)
         self.map_.setFocus()
-        self.osloAction _ QAction("&Oslo", self)
-        self.berlinAction _ QAction("&Berlin", self)
-        self.jakartaAction _ QAction("&Jakarta", self)
-        self.nightModeAction _ QAction("Night Mode", self)
+        self.osloAction _ ?A..("&Oslo", self)
+        self.berlinAction _ ?A..("&Berlin", self)
+        self.jakartaAction _ ?A..("&Jakarta", self)
+        self.nightModeAction _ ?A..("Night Mode", self)
         self.nightModeAction.setCheckable(True)
-        self.nightModeAction.setChecked(False)
-        self.osmAction _ QAction("About OpenStreetMap", self)
-        self.osloAction.triggered.c..(self.chooseOslo)
-        self.berlinAction.triggered.c..(self.chooseBerlin)
-        self.jakartaAction.triggered.c..(self.chooseJakarta)
-        self.nightModeAction.triggered.c..(self.map_.toggleNightMode)
-        self.osmAction.triggered.c..(self.aboutOsm)
+        self.nightModeAction.setChecked F..
+        self.osmAction _ ?A..("About OpenStreetMap", self)
+        self.osloAction.t__.c..(self.chooseOslo)
+        self.berlinAction.t__.c..(self.chooseBerlin)
+        self.jakartaAction.t__.c..(self.chooseJakarta)
+        self.nightModeAction.t__.c..(self.map_.toggleNightMode)
+        self.osmAction.t__.c..(self.aboutOsm)
 
-        menu _ self.menuBar().addMenu("&Options")
-        menu.addAction(self.osloAction)
-        menu.addAction(self.berlinAction)
-        menu.addAction(self.jakartaAction)
+        menu _ self.mB.. .aM..("&Options")
+        menu.aA..(self.osloAction)
+        menu.aA..(self.berlinAction)
+        menu.aA..(self.jakartaAction)
         menu.addSeparator()
-        menu.addAction(self.nightModeAction)
-        menu.addAction(self.osmAction)
+        menu.aA..(self.nightModeAction)
+        menu.aA..(self.osmAction)
 
     # slots
     ___ chooseOslo(self):
@@ -469,12 +469,12 @@ class MapZoom(QMainWindow):
         QDesktopServices.openUrl(QUrl('http://www.openstreetmap.org'))
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 
     app _ ?A..(sys.argv)
-    app.setApplicationName('LightMaps')
+    app.sAN..('LightMaps')
     w _ MapZoom()
     w.setWindowTitle("OpenStreetMap")
     w.resize(600, 450)

@@ -1,67 +1,67 @@
 ______ sys
-____ ? ______ ?W.. as qtw
-____ ? ______ QtCore as qtc
+____ ? ______ ?W.. __ qtw
+____ ? ______ QtCore __ qtc
 
 ______ csv
 
 
-class CsvTableModel(qtc.QAbstractTableModel):
+c_ CsvTableModel(qtc.QAbstractTableModel):
     """The model for a CSV table."""
 
-    ___ __init__(self, csv_file):
+    ___ __init__  csv_file):
         super().__init__()
         self.filename _ csv_file
-        with open(self.filename) as fh:
+        w__ o..(self.filename) __ fh:
             csvreader _ csv.reader(fh)
             self._headers _ next(csvreader)
             self._data _ list(csvreader)
 
     # Minimum necessary methods:
-    ___ rowCount(self, parent):
-        return len(self._data)
+    ___ rowCount  parent):
+        r_ len(self._data)
 
-    ___ columnCount(self, parent):
-        return len(self._headers)
+    ___ columnCount  parent):
+        r_ len(self._headers)
 
-    ___ data(self, index, role):
+    ___ data  index, role):
         # original if statement:
         # if role == qtc.Qt.DisplayRole:
         # Add EditRole so that the cell is not cleared when editing
-        if role in (qtc.Qt.DisplayRole, qtc.Qt.EditRole):
-            return self._data[index.row()][index.column()]
+        __ role in (qtc.Qt.DisplayRole, qtc.Qt.EditRole):
+            r_ self._data[index.row()][index.column()]
 
     # Additional features methods:
 
-    ___ headerData(self, section, orientation, role):
+    ___ headerData  section, orientation, role):
 
-        if orientation == qtc.Qt.Horizontal and role == qtc.Qt.DisplayRole:
-            return self._headers[section]
-        else:
-            return super().headerData(section, orientation, role)
+        __ orientation == qtc.Qt.Horizontal and role == qtc.Qt.DisplayRole:
+            r_ self._headers[section]
+        ____
+            r_ super().headerData(section, orientation, role)
 
-    ___ sort(self, column, order):
+    ___ sort  column, order):
         self.layoutAboutToBeChanged.emit()  # needs to be emitted before a sort
         self._data.sort(key_lambda x: x[column])
-        if order == qtc.Qt.DescendingOrder:
+        __ order == qtc.Qt.DescendingOrder:
             self._data.reverse()
         self.layoutChanged.emit()  # needs to be emitted after a sort
 
     # Methods for Read/Write
 
-    ___ flags(self, index):
-        return super().flags(index) | qtc.Qt.ItemIsEditable
+    ___ flags  index):
+        r_ super().flags(index) | qtc.Qt.ItemIsEditable
 
-    ___ setData(self, index, value, role):
-        if index.isValid() and role == qtc.Qt.EditRole:
+    ___ setData  index, value, role):
+        __ index.isValid() and role == qtc.Qt.EditRole:
             self._data[index.row()][index.column()] _ value
             self.dataChanged.emit(index, index, [role])
-            return True
-        else:
-            return False
+            r_ True
+        ____
+            r_ False
 
     # Methods for inserting or deleting
 
-    ___ insertRows(self, position, rows, parent):
+    ___ insertRows  position, rows, parent):
         self.beginInsertRows(
             parent or qtc.QModelIndex(),
             position,
@@ -73,7 +73,7 @@ class CsvTableModel(qtc.QAbstractTableModel):
             self._data.insert(position, default_row)
         self.endInsertRows()
 
-    ___ removeRows(self, position, rows, parent):
+    ___ removeRows  position, rows, parent):
         self.beginRemoveRows(
             parent or qtc.QModelIndex(),
             position,
@@ -85,15 +85,15 @@ class CsvTableModel(qtc.QAbstractTableModel):
 
     # method for saving
     ___ save_data(self):
-        with open(self.filename, 'w', encoding_'utf-8') as fh:
+        w__ o..(self.filename, 'w', encoding_'utf-8') __ fh:
             writer _ csv.writer(fh)
             writer.writerow(self._headers)
             writer.writerows(self._data)
 
 
-class MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.QMainWindow):
 
-    model _ None
+    model _ N..
 
     ___ __init__(self):
         """MainWindow constructor.
@@ -106,57 +106,57 @@ class MainWindow(qtw.QMainWindow):
 
         self.tableview _ qtw.QTableView()
         self.tableview.setSortingEnabled(True)
-        self.setCentralWidget(self.tableview)
+        self.sCW..(self.tableview)
 
         # Setup the menu
-        menu _ self.menuBar()
-        file_menu _ menu.addMenu('File')
-        file_menu.addAction('Open', self.select_file)
-        file_menu.addAction('Save', self.save_file)
+        menu _ self.mB..
+        file_menu _ menu.aM..('File')
+        file_menu.aA..('Open', self.select_file)
+        file_menu.aA..('Save', self.save_file)
 
-        edit_menu _ menu.addMenu('Edit')
-        edit_menu.addAction('Insert Above', self.insert_above)
-        edit_menu.addAction('Insert Below', self.insert_below)
-        edit_menu.addAction('Remove Row(s)', self.remove_rows)
+        edit_menu _ menu.aM..('Edit')
+        edit_menu.aA..('Insert Above', self.insert_above)
+        edit_menu.aA..('Insert Below', self.insert_below)
+        edit_menu.aA..('Remove Row(s)', self.remove_rows)
 
         # End main UI code
         self.s..
 
     # File methods
     ___ select_file(self):
-        filename, _ _ qtw.QFileDialog.getOpenFileName(
+        filename, _ _ qtw.?FD...gOFN..(
             self,
             'Select a CSV file to open…',
             qtc.QDir.homePath(),
             'CSV Files (*.csv) ;; All Files (*)'
         )
-        if filename:
+        __ filename:
             self.model _ CsvTableModel(filename)
             self.tableview.setModel(self.model)
 
     ___ save_file(self):
-        if self.model:
+        __ self.model:
             self.model.save_data()
 
     # Methods for insert/remove
 
     ___ insert_above(self):
         selected _ self.tableview.selectedIndexes()
-        row _ selected[0].row() if selected else 0
-        self.model.insertRows(row, 1, None)
+        row _ selected[0].row() __ selected else 0
+        self.model.insertRows(row, 1, N..)
 
     ___ insert_below(self):
         selected _ self.tableview.selectedIndexes()
-        row _ selected[-1].row() if selected else self.model.rowCount(None)
-        self.model.insertRows(row + 1, 1, None)
+        row _ selected[-1].row() __ selected else self.model.rowCount(N..)
+        self.model.insertRows(row + 1, 1, N..)
 
     ___ remove_rows(self):
         selected _ self.tableview.selectedIndexes()
-        if selected:
-            self.model.removeRows(selected[0].row(), len(selected), None)
+        __ selected:
+            self.model.removeRows(selected[0].row(), len(selected), N..)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtw.?A..(sys.argv)
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.

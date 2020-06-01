@@ -43,13 +43,13 @@
 
 
 ____ ?.QtCore ______ QDir, Qt
-____ ?.QtGui ______ QImage, QPainter, QPalette, QPixmap
-____ ?.?W.. ______ (QAction, ?A.., QFileDialog, QLabel,
-        QMainWindow, QMenu, QMessageBox, QScrollArea, QSizePolicy)
+____ ?.?G.. ______ QImage, QPainter, QPalette, QPixmap
+____ ?.?W.. ______ (?A.., ?A.., ?FD.., QLabel,
+        QMainWindow, QMenu, ?MB.., QScrollArea, QSizePolicy)
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
 
 
-class ImageViewer(QMainWindow):
+c_ ImageViewer ?MW..
     ___ __init__(self):
         super(ImageViewer, self).__init__()
 
@@ -64,7 +64,7 @@ class ImageViewer(QMainWindow):
         self.scrollArea _ QScrollArea()
         self.scrollArea.setBackgroundRole(QPalette.Dark)
         self.scrollArea.setWidget(self.imageLabel)
-        self.setCentralWidget(self.scrollArea)
+        self.sCW..(self.scrollArea)
 
         self.createActions()
         self.createMenus()
@@ -72,15 +72,15 @@ class ImageViewer(QMainWindow):
         self.setWindowTitle("Image Viewer")
         self.resize(500, 400)
 
-    ___ open(self):
-        fileName, _ _ QFileDialog.getOpenFileName(self, "Open File",
+    ___ o..(self):
+        fileName, _ _ ?FD...gOFN..  "Open File",
                 QDir.currentPath())
-        if fileName:
+        __ fileName:
             image _ QImage(fileName)
-            if image.isNull
-                QMessageBox.information(self, "Image Viewer",
+            __ image.isNull
+                ?MB...information  "Image Viewer",
                         "Cannot load %s." % fileName)
-                return
+                r_
 
             self.imageLabel.setPixmap(QPixmap.fromImage(image))
             self.scaleFactor _ 1.0
@@ -89,12 +89,12 @@ class ImageViewer(QMainWindow):
             self.fitToWindowAct.setEnabled(True)
             self.updateActions()
 
-            if not self.fitToWindowAct.isChecked
+            __ no. self.fitToWindowAct.isChecked
                 self.imageLabel.adjustSize()
 
     ___ print_(self):
         dialog _ QPrintDialog(self.printer, self)
-        if dialog.exec_
+        __ dialog.exec_
             painter _ QPainter(self.printer)
             rect _ painter.viewport()
             size _ self.imageLabel.pixmap().size()
@@ -116,13 +116,13 @@ class ImageViewer(QMainWindow):
     ___ fitToWindow(self):
         fitToWindow _ self.fitToWindowAct.isChecked()
         self.scrollArea.setWidgetResizable(fitToWindow)
-        if not fitToWindow:
+        __ no. fitToWindow:
             self.normalSize()
 
         self.updateActions()
 
     ___ about(self):
-        QMessageBox.about(self, "About Image Viewer",
+        ?MB...about  "About Image Viewer",
                 "<p>The <b>Image Viewer</b> example shows how to combine "
                 "QLabel and QScrollArea to display an image. QLabel is "
                 "typically used for displaying text, but it can also display "
@@ -138,60 +138,60 @@ class ImageViewer(QMainWindow):
                 "print an image.</p>")
 
     ___ createActions(self):
-        self.openAct _ QAction("&Open...", self, shortcut_"Ctrl+O",
-                triggered_self.open)
+        self.openAct _ ?A..("&Open...", self, shortcut_"Ctrl+O",
+                triggered_self.o..)
 
-        self.printAct _ QAction("&Print...", self, shortcut_"Ctrl+P",
+        self.printAct _ ?A..("&Print...", self, shortcut_"Ctrl+P",
                 enabled_False, triggered_self.print_)
 
-        self.exitAct _ QAction("E&xit", self, shortcut_"Ctrl+Q",
+        self.exitAct _ ?A..("E&xit", self, shortcut_"Ctrl+Q",
                 triggered_self.close)
 
-        self.zoomInAct _ QAction("Zoom &In (25%)", self, shortcut_"Ctrl++",
+        self.zoomInAct _ ?A..("Zoom &In (25%)", self, shortcut_"Ctrl++",
                 enabled_False, triggered_self.zoomIn)
 
-        self.zoomOutAct _ QAction("Zoom &Out (25%)", self, shortcut_"Ctrl+-",
+        self.zoomOutAct _ ?A..("Zoom &Out (25%)", self, shortcut_"Ctrl+-",
                 enabled_False, triggered_self.zoomOut)
 
-        self.normalSizeAct _ QAction("&Normal Size", self, shortcut_"Ctrl+S",
+        self.normalSizeAct _ ?A..("&Normal Size", self, shortcut_"Ctrl+S",
                 enabled_False, triggered_self.normalSize)
 
-        self.fitToWindowAct _ QAction("&Fit to Window", self, enabled_False,
+        self.fitToWindowAct _ ?A..("&Fit to Window", self, enabled_False,
                 checkable_True, shortcut_"Ctrl+F", triggered_self.fitToWindow)
 
-        self.aboutAct _ QAction("&About", self, triggered_self.about)
+        self.aboutAct _ ?A..("&About", self, triggered_self.about)
 
-        self.aboutQtAct _ QAction("About &Qt", self,
+        self.aboutQtAct _ ?A..("About &Qt", self,
                 triggered_QApplication.instance().aboutQt)
 
     ___ createMenus(self):
         self.fileMenu _ QMenu("&File", self)
-        self.fileMenu.addAction(self.openAct)
-        self.fileMenu.addAction(self.printAct)
+        self.fileMenu.aA..(self.openAct)
+        self.fileMenu.aA..(self.printAct)
         self.fileMenu.addSeparator()
-        self.fileMenu.addAction(self.exitAct)
+        self.fileMenu.aA..(self.exitAct)
 
         self.viewMenu _ QMenu("&View", self)
-        self.viewMenu.addAction(self.zoomInAct)
-        self.viewMenu.addAction(self.zoomOutAct)
-        self.viewMenu.addAction(self.normalSizeAct)
+        self.viewMenu.aA..(self.zoomInAct)
+        self.viewMenu.aA..(self.zoomOutAct)
+        self.viewMenu.aA..(self.normalSizeAct)
         self.viewMenu.addSeparator()
-        self.viewMenu.addAction(self.fitToWindowAct)
+        self.viewMenu.aA..(self.fitToWindowAct)
 
         self.helpMenu _ QMenu("&Help", self)
-        self.helpMenu.addAction(self.aboutAct)
-        self.helpMenu.addAction(self.aboutQtAct)
+        self.helpMenu.aA..(self.aboutAct)
+        self.helpMenu.aA..(self.aboutQtAct)
 
-        self.menuBar().addMenu(self.fileMenu)
-        self.menuBar().addMenu(self.viewMenu)
-        self.menuBar().addMenu(self.helpMenu)
+        self.mB.. .aM..(self.fileMenu)
+        self.mB.. .aM..(self.viewMenu)
+        self.mB.. .aM..(self.helpMenu)
 
     ___ updateActions(self):
-        self.zoomInAct.setEnabled(not self.fitToWindowAct.isChecked())
-        self.zoomOutAct.setEnabled(not self.fitToWindowAct.isChecked())
-        self.normalSizeAct.setEnabled(not self.fitToWindowAct.isChecked())
+        self.zoomInAct.setEnabled(no. self.fitToWindowAct.isChecked())
+        self.zoomOutAct.setEnabled(no. self.fitToWindowAct.isChecked())
+        self.normalSizeAct.setEnabled(no. self.fitToWindowAct.isChecked())
 
-    ___ scaleImage(self, factor):
+    ___ scaleImage  factor):
         self.scaleFactor *_ factor
         self.imageLabel.resize(self.scaleFactor * self.imageLabel.pixmap().size())
 
@@ -201,12 +201,12 @@ class ImageViewer(QMainWindow):
         self.zoomInAct.setEnabled(self.scaleFactor < 3.0)
         self.zoomOutAct.setEnabled(self.scaleFactor > 0.333)
 
-    ___ adjustScrollBar(self, scrollBar, factor):
+    ___ adjustScrollBar  scrollBar, factor):
         scrollBar.setValue(int(factor * scrollBar.value()
                                 + ((factor - 1) * scrollBar.pageStep()/2)))
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

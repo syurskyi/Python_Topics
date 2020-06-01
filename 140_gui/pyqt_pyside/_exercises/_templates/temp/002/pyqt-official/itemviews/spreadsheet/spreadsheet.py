@@ -41,10 +41,10 @@
 
 
 ____ ?.QtCore ______ QDate, QPoint, Qt
-____ ?.QtGui ______ QColor, QIcon, QKeySequence, QPainter, QPixmap
-____ ?.?W.. ______ (QAction, QActionGroup, ?A.., QColorDialog,
+____ ?.?G.. ______ QColor, QIcon, ?KS.., QPainter, QPixmap
+____ ?.?W.. ______ (?A.., QActionGroup, ?A.., QColorDialog,
         QComboBox, QDialog, QFontDialog, QGroupBox, QHBoxLayout, QLabel,
-        QLineEdit, QMainWindow, QMessageBox, ?PB.., QTableWidget,
+        QLineEdit, QMainWindow, ?MB.., ?PB.., QTableWidget,
         QTableWidgetItem, QToolBar, QVBoxLayout)
 ____ ?.QtPrintSupport ______ QPrinter, QPrintPreviewDialog
 
@@ -56,13 +56,13 @@ ____ printview ______ PrintView
 ____ util ______ decode_pos, encode_pos
 
 
-class SpreadSheet(QMainWindow):
+c_ SpreadSheet ?MW..
 
     dateFormats _ ["dd/M/yyyy", "yyyy/M/dd", "dd.MM.yyyy"]
 
     currentDateFormat _ dateFormats[0]
 
-    ___ __init__(self, rows, cols, parent _ None):
+    ___ __init__  rows, cols, parent _ N..):
         super(SpreadSheet, self).__init__(parent)
 
         self.toolBar _ QToolBar()
@@ -84,7 +84,7 @@ class SpreadSheet(QMainWindow):
         self.setupMenuBar()
         self.setupContents()
         self.setupContextMenu()
-        self.setCentralWidget(self.table)
+        self.sCW..(self.table)
         self.statusBar()
         self.table.currentItemChanged.c..(self.updateStatus)
         self.table.currentItemChanged.c..(self.updateColor)
@@ -95,79 +95,79 @@ class SpreadSheet(QMainWindow):
         self.setWindowTitle("Spreadsheet")
 
     ___ createActions(self):
-        self.cell_sumAction _ QAction("Sum", self)
-        self.cell_sumAction.triggered.c..(self.actionSum)
+        self.cell_sumAction _ ?A..("Sum", self)
+        self.cell_sumAction.t__.c..(self.actionSum)
 
-        self.cell_addAction _ QAction("&Add", self)
-        self.cell_addAction.setShortcut(Qt.CTRL | Qt.Key_Plus)
-        self.cell_addAction.triggered.c..(self.actionAdd)
+        self.cell_addAction _ ?A..("&Add", self)
+        self.cell_addAction.sS..(Qt.CTRL | Qt.Key_Plus)
+        self.cell_addAction.t__.c..(self.actionAdd)
 
-        self.cell_subAction _ QAction("&Subtract", self)
-        self.cell_subAction.setShortcut(Qt.CTRL | Qt.Key_Minus)
-        self.cell_subAction.triggered.c..(self.actionSubtract)
+        self.cell_subAction _ ?A..("&Subtract", self)
+        self.cell_subAction.sS..(Qt.CTRL | Qt.Key_Minus)
+        self.cell_subAction.t__.c..(self.actionSubtract)
 
-        self.cell_mulAction _ QAction("&Multiply", self)
-        self.cell_mulAction.setShortcut(Qt.CTRL | Qt.Key_multiply)
-        self.cell_mulAction.triggered.c..(self.actionMultiply)
+        self.cell_mulAction _ ?A..("&Multiply", self)
+        self.cell_mulAction.sS..(Qt.CTRL | Qt.Key_multiply)
+        self.cell_mulAction.t__.c..(self.actionMultiply)
 
-        self.cell_divAction _ QAction("&Divide", self)
-        self.cell_divAction.setShortcut(Qt.CTRL | Qt.Key_division)
-        self.cell_divAction.triggered.c..(self.actionDivide)
+        self.cell_divAction _ ?A..("&Divide", self)
+        self.cell_divAction.sS..(Qt.CTRL | Qt.Key_division)
+        self.cell_divAction.t__.c..(self.actionDivide)
 
-        self.fontAction _ QAction("Font...", self)
-        self.fontAction.setShortcut(Qt.CTRL | Qt.Key_F)
-        self.fontAction.triggered.c..(self.selectFont)
+        self.fontAction _ ?A..("Font...", self)
+        self.fontAction.sS..(Qt.CTRL | Qt.Key_F)
+        self.fontAction.t__.c..(self.selectFont)
 
-        self.colorAction _ QAction(QIcon(QPixmap(16, 16)), "Background &Color...", self)
-        self.colorAction.triggered.c..(self.selectColor)
+        self.colorAction _ ?A..(QIcon(QPixmap(16, 16)), "Background &Color...", self)
+        self.colorAction.t__.c..(self.selectColor)
 
-        self.clearAction _ QAction("Clear", self)
-        self.clearAction.setShortcut(Qt.Key_Delete)
-        self.clearAction.triggered.c..(self.clear)
+        self.clearAction _ ?A..("Clear", self)
+        self.clearAction.sS..(Qt.Key_Delete)
+        self.clearAction.t__.c..(self.clear)
 
-        self.aboutSpreadSheet _ QAction("About Spreadsheet", self)
-        self.aboutSpreadSheet.triggered.c..(self.showAbout)
+        self.aboutSpreadSheet _ ?A..("About Spreadsheet", self)
+        self.aboutSpreadSheet.t__.c..(self.showAbout)
 
-        self.exitAction _ QAction("E&xit", self)
-        self.exitAction.setShortcut(QKeySequence.Quit)
-        self.exitAction.triggered.c..(?A...instance().quit)
+        self.exitAction _ ?A..("E&xit", self)
+        self.exitAction.sS..(?KS...Quit)
+        self.exitAction.t__.c..(?A...instance().quit)
 
-        self.printAction _ QAction("&Print", self)
-        self.printAction.setShortcut(QKeySequence.Print)
-        self.printAction.triggered.c..(self.print_)
+        self.printAction _ ?A..("&Print", self)
+        self.printAction.sS..(?KS...Print)
+        self.printAction.t__.c..(self.print_)
 
-        self.firstSeparator _ QAction(self)
+        self.firstSeparator _ ?A..(self)
         self.firstSeparator.setSeparator(True)
 
-        self.secondSeparator _ QAction(self)
+        self.secondSeparator _ ?A..(self)
         self.secondSeparator.setSeparator(True)
 
     ___ setupMenuBar(self):
-        self.fileMenu _ self.menuBar().addMenu("&File")
-        self.dateFormatMenu _ self.fileMenu.addMenu("&Date format")
+        self.fileMenu _ self.mB.. .aM..("&File")
+        self.dateFormatMenu _ self.fileMenu.aM..("&Date format")
         self.dateFormatGroup _ QActionGroup(self)
         for f in self.dateFormats:
-            action _ QAction(f, self, checkable_True,
+            action _ ?A..(f, self, checkable_True,
                     triggered_self.changeDateFormat)
-            self.dateFormatGroup.addAction(action)
-            self.dateFormatMenu.addAction(action)
-            if f == self.currentDateFormat:
+            self.dateFormatGroup.aA..(action)
+            self.dateFormatMenu.aA..(action)
+            __ f == self.currentDateFormat:
                 action.setChecked(True)
                 
-        self.fileMenu.addAction(self.printAction)
-        self.fileMenu.addAction(self.exitAction)
-        self.cellMenu _ self.menuBar().addMenu("&Cell")
-        self.cellMenu.addAction(self.cell_addAction)
-        self.cellMenu.addAction(self.cell_subAction)
-        self.cellMenu.addAction(self.cell_mulAction)
-        self.cellMenu.addAction(self.cell_divAction)
-        self.cellMenu.addAction(self.cell_sumAction)
+        self.fileMenu.aA..(self.printAction)
+        self.fileMenu.aA..(self.exitAction)
+        self.cellMenu _ self.mB.. .aM..("&Cell")
+        self.cellMenu.aA..(self.cell_addAction)
+        self.cellMenu.aA..(self.cell_subAction)
+        self.cellMenu.aA..(self.cell_mulAction)
+        self.cellMenu.aA..(self.cell_divAction)
+        self.cellMenu.aA..(self.cell_sumAction)
         self.cellMenu.addSeparator()
-        self.cellMenu.addAction(self.colorAction)
-        self.cellMenu.addAction(self.fontAction)
-        self.menuBar().addSeparator()
-        self.aboutMenu _ self.menuBar().addMenu("&Help")
-        self.aboutMenu.addAction(self.aboutSpreadSheet)
+        self.cellMenu.aA..(self.colorAction)
+        self.cellMenu.aA..(self.fontAction)
+        self.mB.. .addSeparator()
+        self.aboutMenu _ self.mB.. .aM..("&Help")
+        self.aboutMenu.aA..(self.aboutSpreadSheet)
 
     ___ changeDateFormat(self):
         action _ self.sender()
@@ -178,18 +178,18 @@ class SpreadSheet(QMainWindow):
             date _ QDate.fromString(item.text(), oldFormat)
             item.sT..(date.toString(newFormat))
 
-    ___ updateStatus(self, item):
-        if item and item == self.table.currentItem
+    ___ updateStatus  item):
+        __ item and item == self.table.currentItem
             self.statusBar().showMessage(item.data(Qt.StatusTipRole), 1000)
             self.cellLabel.sT..("Cell: (%s)" % encode_pos(self.table.row(item),
                                                                      self.table.column(item)))
 
-    ___ updateColor(self, item):
+    ___ updateColor  item):
         pixmap _ QPixmap(16, 16)
         color _ QColor()
-        if item:
+        __ item:
             color _ item.backgroundColor()
-        if not color.isValid
+        __ no. color.isValid
             color _ self.palette().base().color()
         painter _ QPainter(pixmap)
         painter.fillRect(0, 0, 16, 16, color)
@@ -203,12 +203,12 @@ class SpreadSheet(QMainWindow):
         painter.end()
         self.colorAction.setIcon(QIcon(pixmap))
 
-    ___ updateLineEdit(self, item):
-        if item !_ self.table.currentItem
-            return
-        if item:
+    ___ updateLineEdit  item):
+        __ item !_ self.table.currentItem
+            r_
+        __ item:
             self.formulaInput.sT..(item.data(Qt.EditRole))
-        else:
+        ____
             self.formulaInput.clear()
 
     ___ returnPressed(self):
@@ -216,9 +216,9 @@ class SpreadSheet(QMainWindow):
         row _ self.table.currentRow()
         col _ self.table.currentColumn()
         item _ self.table.item(row, col)
-        if not item:
+        __ no. item:
             self.table.setItem(row, col, SpreadSheetItem(text))
-        else:
+        ____
             item.setData(Qt.EditRole, text)
         self.table.viewport().update()
 
@@ -226,26 +226,26 @@ class SpreadSheet(QMainWindow):
         item _ self.table.currentItem()
         color _ item and QColor(item.background()) or self.table.palette().base().color()
         color _ QColorDialog.getColor(color, self)
-        if not color.isValid
-            return
+        __ no. color.isValid
+            r_
         selected _ self.table.selectedItems()
-        if not selected:
-            return
+        __ no. selected:
+            r_
         for i in selected:
             i and i.setBackground(color)
         self.updateColor(self.table.currentItem())
 
     ___ selectFont(self):
         selected _ self.table.selectedItems()
-        if not selected:
-            return
+        __ no. selected:
+            r_
         font, ok _ QFontDialog.getFont(self.font(), self)
-        if not ok:
-            return
+        __ no. ok:
+            r_
         for i in selected:
             i and i.setFont(font)
 
-    ___ runInputDialog(self, title, c1Text, c2Text, opText,
+    ___ runInputDialog  title, c1Text, c2Text, opText,
                        outText, cell1, cell2, outCell):
         rows _ []
         cols _ []
@@ -328,13 +328,13 @@ class SpreadSheet(QMainWindow):
         vLayout.addWidget(equalsLabel)
         vLayout.addStretch(1)
         vLayout.addItem(outLayout)
-        if addDialog.exec_
+        __ addDialog.exec_
             cell1 _ cell1ColInput.currentText() + cell1RowInput.currentText()
             cell2 _ cell2ColInput.currentText() + cell2RowInput.currentText()
             outCell _ outColInput.currentText() + outRowInput.currentText()
-            return True, cell1, cell2, outCell
+            r_ True, cell1, cell2, outCell
 
-        return False, None, None, None
+        r_ False, N.., N.., N..
 
     ___ actionSum(self):
         row_first _ 0
@@ -344,7 +344,7 @@ class SpreadSheet(QMainWindow):
         col_last _ 0
         col_cur _ 0
         selected _ self.table.selectedItems()
-        if selected:
+        __ selected:
             first _ selected[0]
             last _ selected[-1]
             row_first _ self.table.row(first)
@@ -353,7 +353,7 @@ class SpreadSheet(QMainWindow):
             col_last _ self.table.column(last)
 
         current _ self.table.currentItem()
-        if current:
+        __ current:
             row_cur _ self.table.row(current)
             col_cur _ self.table.column(current)
 
@@ -363,20 +363,20 @@ class SpreadSheet(QMainWindow):
         ok, cell1, cell2, out _ self.runInputDialog("Sum cells", "First cell:",
                 "Last cell:", u"\N{GREEK CAPITAL LETTER SIGMA}", "Output to:",
                 cell1, cell2, out)
-        if ok:
+        __ ok:
             row, col _ decode_pos(out)
             self.table.item(row, col).sT..("sum %s %s" % (cell1, cell2))
 
-    ___ actionMath_helper(self, title, op):
+    ___ actionMath_helper  title, op):
         cell1 _ "C1"
         cell2 _ "C2"
         out _ "C3"
         current _ self.table.currentItem()
-        if current:
+        __ current:
             out _ encode_pos(self.table.currentRow(), self.table.currentColumn())
         ok, cell1, cell2, out _ self.runInputDialog(title, "Cell 1", "Cell 2",
                 op, "Output to:", cell1, cell2, out)
-        if ok:
+        __ ok:
             row, col _ decode_pos(out)
             self.table.item(row, col).sT..("%s %s %s" % (op, cell1, cell2))
 
@@ -397,16 +397,16 @@ class SpreadSheet(QMainWindow):
             i.sT..("")
 
     ___ setupContextMenu(self):
-        self.addAction(self.cell_addAction)
-        self.addAction(self.cell_subAction)
-        self.addAction(self.cell_mulAction)
-        self.addAction(self.cell_divAction)
-        self.addAction(self.cell_sumAction)
-        self.addAction(self.firstSeparator)
-        self.addAction(self.colorAction)
-        self.addAction(self.fontAction)
-        self.addAction(self.secondSeparator)
-        self.addAction(self.clearAction)
+        self.aA..(self.cell_addAction)
+        self.aA..(self.cell_subAction)
+        self.aA..(self.cell_mulAction)
+        self.aA..(self.cell_divAction)
+        self.aA..(self.cell_sumAction)
+        self.aA..(self.firstSeparator)
+        self.aA..(self.colorAction)
+        self.aA..(self.fontAction)
+        self.aA..(self.secondSeparator)
+        self.aA..(self.clearAction)
         self.setContextMenuPolicy(Qt.ActionsContextMenu)
 
     ___ setupContents(self):
@@ -506,7 +506,7 @@ class SpreadSheet(QMainWindow):
         self.table.item(9,5).setBackground(Qt.lightGray)
 
     ___ showAbout(self):
-        QMessageBox.about(self, "About Spreadsheet", """
+        ?MB...about  "About Spreadsheet", """
             <HTML>
             <p><b>This demo shows use of <c>QTableWidget</c> with custom handling for
              individual cells.</b></p>
@@ -531,7 +531,7 @@ class SpreadSheet(QMainWindow):
         dlg.e..
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

@@ -43,15 +43,15 @@
 
 
 ____ ?.QtCore ______ QRegExp, Qt
-____ ?.QtGui ______ QPalette
+____ ?.?G.. ______ QPalette
 ____ ?.?W.. ______ (?A.., QCheckBox, QComboBox, QDialog,
         QGridLayout, QHBoxLayout, QLabel, QLineEdit, QSizePolicy)
 
 
-class RegExpDialog(QDialog):
+c_ RegExpDialog(QDialog):
     MaxCaptures _ 6
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(RegExpDialog, self).__init__(parent)
 
         self.patternComboBox _ QComboBox()
@@ -148,7 +148,7 @@ class RegExpDialog(QDialog):
         self.refresh()
 
     ___ refresh(self):
-        self.setUpdatesEnabled(False)
+        self.setUpdatesEnabled F..
 
         pattern _ self.patternComboBox.currentText()
         text _ self.textComboBox.currentText()
@@ -159,17 +159,17 @@ class RegExpDialog(QDialog):
         self.escapedPatternLineEdit.sT..('"' + escaped + '"')
 
         rx _ QRegExp(pattern)
-        cs _ Qt.CaseSensitive if self.caseSensitiveCheckBox.isChecked() else Qt.CaseInsensitive
+        cs _ Qt.CaseSensitive __ self.caseSensitiveCheckBox.isChecked() else Qt.CaseInsensitive
         rx.setCaseSensitivity(cs)
         rx.setMinimal(self.minimalCheckBox.isChecked())
         syntax _ self.syntaxComboBox.itemData(self.syntaxComboBox.currentIndex())
         rx.setPatternSyntax(syntax)
 
         palette _ self.patternComboBox.palette()
-        if rx.isValid
+        __ rx.isValid
             palette.setColor(QPalette.Text,
                     self.textComboBox.palette().color(QPalette.Text))
-        else:
+        ____
             palette.setColor(QPalette.Text, Qt.red)
         self.patternComboBox.setPalette(palette)
 
@@ -183,7 +183,7 @@ class RegExpDialog(QDialog):
 
         self.setUpdatesEnabled(True)
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

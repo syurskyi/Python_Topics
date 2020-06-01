@@ -2,7 +2,7 @@
 # PyQt5 port of the designer/containerextension example from Qt v4.x         #
 #----------------------------------------------------------------------------#
 ______ sip
-____ ?.QtGui ______ QIcon
+____ ?.?G.. ______ QIcon
 ____ ?.QtDesigner ______ (QDesignerFormWindowInterface, QExtensionFactory,
         QPyDesignerContainerExtension, QPyDesignerCustomWidgetPlugin,
         QPyDesignerPropertySheetExtension)
@@ -19,116 +19,116 @@ Q_TYPEID _ {
 #============================================================================#
 # ContainerExtension                                                         #
 #----------------------------------------------------------------------------#
-class MultiPageWidgetContainerExtension(QPyDesignerContainerExtension):
-    ___ __init__(self, widget, parent_None):
+c_ MultiPageWidgetContainerExtension(QPyDesignerContainerExtension):
+    ___ __init__  widget, parent_None):
         super(MultiPageWidgetContainerExtension, self).__init__(parent)
 
         self._widget _ widget
             
-    ___ addWidget(self, widget):
+    ___ addWidget  widget):
         self._widget.addPage(widget)
     
     ___ count(self):
-        return self._widget.count()
+        r_ self._widget.count()
     
     ___ currentIndex(self):
-        return self._widget.getCurrentIndex()
+        r_ self._widget.getCurrentIndex()
     
-    ___ insertWidget(self, index, widget):
+    ___ insertWidget  index, widget):
         self._widget.insertPage(index, widget)
     
-    ___ remove(self, index):
+    ___ remove  index):
         self._widget.removePage(index)
     
-    ___ setCurrentIndex(self, index):
+    ___ setCurrentIndex  index):
         self._widget.setCurrentIndex(index)
     
-    ___ widget(self, index):
-        return self._widget.widget(index)
+    ___ widget  index):
+        r_ self._widget.widget(index)
     
 
 #============================================================================#
 # ExtensionFactory                                                           #
 #----------------------------------------------------------------------------#
-class MultiPageWidgetExtensionFactory(QExtensionFactory):
-    ___ __init__(self, parent_None):
+c_ MultiPageWidgetExtensionFactory(QExtensionFactory):
+    ___ __init__  parent_None):
         super(MultiPageWidgetExtensionFactory, self).__init__(parent)
 
-    ___ createExtension(self, obj, iid, parent):
-        if iid !_ Q_TYPEID['QDesignerContainerExtension']:
-            return None
-        if isinstance(obj, PyMultiPageWidget):
-            return MultiPageWidgetContainerExtension(obj, parent)
-        return None
+    ___ createExtension  obj, iid, parent):
+        __ iid !_ Q_TYPEID['QDesignerContainerExtension']:
+            r_ N..
+        __ isinstance(obj, PyMultiPageWidget):
+            r_ MultiPageWidgetContainerExtension(obj, parent)
+        r_ N..
 
 
 #============================================================================#
 # CustomWidgetPlugin                                                         #
 #----------------------------------------------------------------------------#
-class MultiPageWidgetPlugin(QPyDesignerCustomWidgetPlugin):
+c_ MultiPageWidgetPlugin(QPyDesignerCustomWidgetPlugin):
 
-    ___ __init__(self, parent_None):
+    ___ __init__  parent_None):
         super(MultiPageWidgetPlugin, self).__init__(parent)
 
         self.initialized _ False
 
-    ___ initialize(self, formEditor):
-        if self.initialized:
-            return
+    ___ initialize  formEditor):
+        __ self.initialized:
+            r_
         manager _ formEditor.extensionManager()
-        if manager:
+        __ manager:
             self.factory _ MultiPageWidgetExtensionFactory(manager)
             manager.registerExtensions(self.factory, Q_TYPEID['QDesignerContainerExtension'])
         self.initialized _ True
 
     ___ isInitialized(self):
-        return self.initialized
+        r_ self.initialized
 
-    ___ createWidget(self, parent):
+    ___ createWidget  parent):
         widget _ PyMultiPageWidget(parent)
         widget.currentIndexChanged.c..(self.currentIndexChanged)
         widget.pageTitleChanged.c..(self.pageTitleChanged)
-        return widget
+        r_ widget
 
     ___ name(self):
-        return "PyMultiPageWidget"
+        r_ "PyMultiPageWidget"
 
     ___ group(self):
-        return "PyQt Examples"
+        r_ "PyQt Examples"
 
     ___ icon(self):
-        return QIcon()
+        r_ QIcon()
 
     ___ toolTip(self):
-        return ""
+        r_ ""
 
     ___ whatsThis(self):
-        return ""
+        r_ ""
 
     ___ isContainer(self):
-        return True
+        r_ True
 
     ___ domXml(self):
-        return ('<widget class="PyMultiPageWidget" name="multipagewidget">'
+        r_ ('<widget class="PyMultiPageWidget" name="multipagewidget">'
                 '  <widget class="QWidget" name="page" />'
                 '</widget>')
 
     ___ includeFile(self):
-        return "multipagewidget"
+        r_ "multipagewidget"
 
-    ___ currentIndexChanged(self, index):
+    ___ currentIndexChanged  index):
         widget _ self.sender()
-        if widget and isinstance(widget, PyMultiPageWidget):
+        __ widget and isinstance(widget, PyMultiPageWidget):
             form _ QDesignerFormWindowInterface.findFormWindow(widget)
-            if form:
+            __ form:
                 form.emitSelectionChanged()
 
-    ___ pageTitleChanged(self, title):
+    ___ pageTitleChanged  title):
         widget _ self.sender()
-        if widget and isinstance(widget, PyMultiPageWidget):
+        __ widget and isinstance(widget, PyMultiPageWidget):
             page _ widget.widget(widget.getCurrentIndex())
             form _ QDesignerFormWindowInterface.findFormWindow(widget)
-            if form:
+            __ form:
                 editor _ form.core()
                 manager _ editor.extensionManager()
                 sheet _ manager.extension(page, Q_TYPEID['QDesignerPropertySheetExtension'])

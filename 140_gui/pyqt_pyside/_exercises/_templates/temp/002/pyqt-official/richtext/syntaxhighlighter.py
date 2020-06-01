@@ -43,24 +43,24 @@
 
 
 ____ ?.QtCore ______ QFile, QRegExp, Qt
-____ ?.QtGui ______ QFont, QSyntaxHighlighter, QTextCharFormat
-____ ?.?W.. ______ (?A.., QFileDialog, QMainWindow, QMenu,
-        QMessageBox, QTextEdit)
+____ ?.?G.. ______ QFont, QSyntaxHighlighter, QTextCharFormat
+____ ?.?W.. ______ (?A.., ?FD.., QMainWindow, QMenu,
+        ?MB.., QTextEdit)
 
 
-class MainWindow(QMainWindow):
-    ___ __init__(self, parent_None):
+c_ MainWindow ?MW..
+    ___ __init__  parent_None):
         super(MainWindow, self).__init__(parent)
 
         self.setupFileMenu()
         self.setupHelpMenu()
         self.setupEditor()
 
-        self.setCentralWidget(self.editor)
+        self.sCW..(self.editor)
         self.setWindowTitle("Syntax Highlighter")
 
     ___ about(self):
-        QMessageBox.about(self, "About Syntax Highlighter",
+        ?MB...about  "About Syntax Highlighter",
                 "<p>The <b>Syntax Highlighter</b> example shows how to " \
                 "perform simple syntax highlighting by subclassing the " \
                 "QSyntaxHighlighter class and describing highlighting " \
@@ -69,14 +69,14 @@ class MainWindow(QMainWindow):
     ___ newFile(self):
         self.editor.clear()
 
-    ___ openFile(self, path_None):
-        if not path:
-            path, _ _ QFileDialog.getOpenFileName(self, "Open File", '',
+    ___ openFile  path_None):
+        __ no. path:
+            path, _ _ ?FD...gOFN..  "Open File", '',
                     "C++ Files (*.cpp *.h)")
 
-        if path:
+        __ path:
             inFile _ QFile(path)
-            if inFile.open(QFile.ReadOnly | QFile.Text):
+            __ inFile.o..(QFile.ReadOnly | QFile.Text):
                 text _ inFile.readAll()
 
                 try:
@@ -86,7 +86,7 @@ class MainWindow(QMainWindow):
                     # Python v2.
                     text _ str(text)
 
-                self.editor.setPlainText(text)
+                self.editor.sPT..(text)
 
     ___ setupEditor(self):
         font _ QFont()
@@ -101,22 +101,22 @@ class MainWindow(QMainWindow):
 
     ___ setupFileMenu(self):
         fileMenu _ QMenu("&File", self)
-        self.menuBar().addMenu(fileMenu)
+        self.mB.. .aM..(fileMenu)
 
-        fileMenu.addAction("&New...", self.newFile, "Ctrl+N")
-        fileMenu.addAction("&Open...", self.openFile, "Ctrl+O")
-        fileMenu.addAction("E&xit", ?A...instance().quit, "Ctrl+Q")
+        fileMenu.aA..("&New...", self.newFile, "Ctrl+N")
+        fileMenu.aA..("&Open...", self.openFile, "Ctrl+O")
+        fileMenu.aA..("E&xit", ?A...instance().quit, "Ctrl+Q")
 
     ___ setupHelpMenu(self):
         helpMenu _ QMenu("&Help", self)
-        self.menuBar().addMenu(helpMenu)
+        self.mB.. .aM..(helpMenu)
 
-        helpMenu.addAction("&About", self.about)
-        helpMenu.addAction("About &Qt", ?A...instance().aboutQt)
+        helpMenu.aA..("&About", self.about)
+        helpMenu.aA..("About &Qt", ?A...instance().aboutQt)
 
 
-class Highlighter(QSyntaxHighlighter):
-    ___ __init__(self, parent_None):
+c_ Highlighter(QSyntaxHighlighter):
+    ___ __init__  parent_None):
         super(Highlighter, self).__init__(parent)
 
         keywordFormat _ QTextCharFormat()
@@ -163,7 +163,7 @@ class Highlighter(QSyntaxHighlighter):
         self.commentStartExpression _ QRegExp("/\\*")
         self.commentEndExpression _ QRegExp("\\*/")
 
-    ___ highlightBlock(self, text):
+    ___ highlightBlock  text):
         for pattern, format in self.highlightingRules:
             expression _ QRegExp(pattern)
             index _ expression.indexIn(text)
@@ -175,16 +175,16 @@ class Highlighter(QSyntaxHighlighter):
         self.setCurrentBlockState(0)
 
         startIndex _ 0
-        if self.previousBlockState() !_ 1:
+        __ self.previousBlockState() !_ 1:
             startIndex _ self.commentStartExpression.indexIn(text)
 
         while startIndex >_ 0:
             endIndex _ self.commentEndExpression.indexIn(text, startIndex)
 
-            if endIndex == -1:
+            __ endIndex == -1:
                 self.setCurrentBlockState(1)
                 commentLength _ len(text) - startIndex
-            else:
+            ____
                 commentLength _ endIndex - startIndex + self.commentEndExpression.matchedLength()
 
             self.setFormat(startIndex, commentLength,
@@ -193,7 +193,7 @@ class Highlighter(QSyntaxHighlighter):
                     startIndex + commentLength);
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

@@ -1,14 +1,14 @@
 ______ sys
-____ ? ______ ?W.. as qtw
-____ ? ______ QtCore as qtc
-____ ? ______ QtGui as qtg
+____ ? ______ ?W.. __ qtw
+____ ? ______ QtCore __ qtc
+____ ? ______ ?G.. __ qtg
 ____ RPi ______ GPIO
 
 
-class ThreeColorLed
+c_ ThreeColorLed
     """Represents a three color LED circuit"""
 
-    ___ __init__(self, red, green, blue, pinmode_GPIO.BOARD, freq_50):
+    ___ __init__  red, green, blue, pinmode_GPIO.BOARD, freq_50):
         GPIO.setmode(pinmode)
         self.pins _ {
             "red": red,
@@ -39,16 +39,16 @@ class ThreeColorLed
         val _ abs(val)
         val _ val//2.55
         val %_ 101
-        return val
+        r_ val
 
-    ___ set_color(self, red, green, blue):
+    ___ set_color  red, green, blue):
         """Set color using RGB color values of 0-255"""
         self.pwms['red'].ChangeDutyCycle(self.convert(red))
         self.pwms['green'].ChangeDutyCycle(self.convert(green))
         self.pwms['blue'].ChangeDutyCycle(self.convert(blue))
 
 
-class MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.QMainWindow):
 
     ___ __init__(self):
         super().__init__()
@@ -59,15 +59,15 @@ class MainWindow(qtw.QMainWindow):
             qtw.QColorDialog.NoButtons
             | qtw.QColorDialog.DontUseNativeDialog)
         ccd.currentColorChanged.c..(self.set_color)
-        self.setCentralWidget(ccd)
+        self.sCW..(ccd)
 
         self.s..
 
-    ___ set_color(self, color):
+    ___ set_color  color):
         self.tcl.set_color(color.red(), color.green(), color.blue())
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtw.?A..(sys.argv)
     mw _ MainWindow()
     app.exec()

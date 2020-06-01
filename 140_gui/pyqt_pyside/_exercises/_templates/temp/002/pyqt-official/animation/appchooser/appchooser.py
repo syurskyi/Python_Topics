@@ -44,34 +44,34 @@
 
 ____ ?.QtCore ______ (pyqtSignal, QPointF, QPropertyAnimation, QRect,
         QRectF, QState, QStateMachine, Qt)
-____ ?.QtGui ______ QPixmap
+____ ?.?G.. ______ QPixmap
 ____ ?.?W.. ______ (?A.., QGraphicsScene, QGraphicsView,
         QGraphicsWidget)
 
 ______ appchooser_rc
 
 
-class Pixmap(QGraphicsWidget):
+c_ Pixmap(QGraphicsWidget):
     c__ _ pyqtSignal()
 
-    ___ __init__(self, pix, parent_None):
+    ___ __init__  pix, parent_None):
         super(Pixmap, self).__init__(parent)
 
         self.orig _ QPixmap(pix)
         self.p _ QPixmap(pix)
 
-    ___ paint(self, painter, option, widget):
+    ___ paint  painter, option, widget):
         painter.drawPixmap(QPointF(), self.p)
 
-    ___ mousePressEvent(self, ev):
+    ___ mousePressEvent  ev):
         self.c__.emit()
 
-    ___ setGeometry(self, rect):
+    ___ setGeometry  rect):
         super(Pixmap, self).setGeometry(rect)
 
-        if rect.size().width() > self.orig.size().width
+        __ rect.size().width() > self.orig.size().width
             self.p _ self.orig.scaled(rect.size().toSize())
-        else:
+        ____
             self.p _ QPixmap(self.orig)
 
 
@@ -88,7 +88,7 @@ ___ createAnimations(objects, machine):
         machine.addDefaultAnimation(animation)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

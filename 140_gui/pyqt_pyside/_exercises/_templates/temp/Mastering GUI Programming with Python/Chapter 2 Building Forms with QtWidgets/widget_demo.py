@@ -1,13 +1,13 @@
 ______ sys
-____ ? ______ ?W.. as qtw
-____ ? ______ QtGui as qtg
-____ ? ______ QtCore as qtc
+____ ? ______ ?W.. __ qtw
+____ ? ______ ?G.. __ qtg
+____ ? ______ QtCore __ qtc
 
 
-class ChoiceSpinBox(qtw.QSpinBox):
+c_ ChoiceSpinBox(qtw.QSpinBox):
     """A spinbox for selecting choices."""
 
-    ___ __init__(self, choices, *args, **kwargs):
+    ___ __init__  choices, *args, **kwargs):
         self.choices _ choices
         super().__init__(
             *args,
@@ -16,45 +16,45 @@ class ChoiceSpinBox(qtw.QSpinBox):
             **kwargs
         )
 
-    ___ valueFromText(self, text):
-        return self.choices.index(text)
+    ___ valueFromText  text):
+        r_ self.choices.index(text)
 
-    ___ textFromValue(self, value):
+    ___ textFromValue  value):
         try:
-            return self.choices[value]
+            r_ self.choices[value]
         except IndexError:
-            return '!Error!'
+            r_ '!Error!'
 
-    ___ validate(self, string, index):
-        if string in self.choices:
+    ___ validate  string, index):
+        __ string in self.choices:
             state _ qtg.QValidator.Acceptable
-        elif any([v.startswith(string) for v in self.choices]):
+        ____ any([v.startswith(string) for v in self.choices]):
             state _ qtg.QValidator.Intermediate
-        else:
+        ____
             state _ qtg.QValidator.Invalid
-        return (state, string, index)
+        r_ (state, string, index)
 
-class IPv4Validator(qtg.QValidator):
+c_ IPv4Validator(qtg.QValidator):
     """Enforce entry of IPv4 Addresses"""
 
-    ___ validate(self, string, index):
+    ___ validate  string, index):
         octets _ string.split('.')
-        if len(octets) > 4:
+        __ len(octets) > 4:
             state _ qtg.QValidator.Invalid
-        elif not all([x.isdigit() for x in octets if x !_ '']):
+        ____ no. all([x.isdigit() for x in octets __ x !_ '']):
             state _ qtg.QValidator.Invalid
-        elif not all([0 <_ int(x) <_ 255 for x in octets if x !_ '']):
+        ____ no. all([0 <_ int(x) <_ 255 for x in octets __ x !_ '']):
             state _ qtg.QValidator.Invalid
-        elif len(octets) < 4:
+        ____ len(octets) < 4:
             state _ qtg.QValidator.Intermediate
-        elif any([x == '' for x in octets]):
+        ____ any([x == '' for x in octets]):
             state _ qtg.QValidator.Intermediate
-        else:
+        ____
             state _ qtg.QValidator.Acceptable
-        return (state, string, index)
+        r_ (state, string, index)
 
 
-class MainWindow(qtw.QWidget):
+c_ MainWindow(qtw.QWidget):
 
     ___ __init__(self):
         """MainWindow constructor"""
@@ -65,7 +65,7 @@ class MainWindow(qtw.QWidget):
         #########################
 
         # QWidget
-        subwidget _ qtw.QWidget(self, toolTip_'This is my widget')
+        subwidget _ qtw.QWidget  toolTip_'This is my widget')
         subwidget.setToolTip('This is YOUR widget')
         print(subwidget.toolTip())
 
@@ -87,7 +87,7 @@ class MainWindow(qtw.QWidget):
             self,
             checkable_True,
             checked_True,
-            shortcut_qtg.QKeySequence('Ctrl+p')
+            shortcut_qtg.?KS..('Ctrl+p')
         )
 
         # QComboBox
@@ -249,7 +249,7 @@ class MainWindow(qtw.QWidget):
         sublayout.addWidget(ratingbox)
         self.s..
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
     app _ qtw.?A..(sys.argv)
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.

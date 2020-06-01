@@ -43,21 +43,21 @@
 
 
 ____ ?.QtCore ______ QDate, QFile, Qt, QTextStream
-____ ?.QtGui ______ (QFont, QIcon, QKeySequence, QTextCharFormat,
+____ ?.?G.. ______ (QFont, QIcon, ?KS.., QTextCharFormat,
         QTextCursor, QTextTableFormat)
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
-____ ?.?W.. ______ (QAction, ?A.., QDialog, QDockWidget,
-        QFileDialog, QListWidget, QMainWindow, QMessageBox, QTextEdit)
+____ ?.?W.. ______ (?A.., ?A.., QDialog, QDockWidget,
+        ?FD.., QListWidget, QMainWindow, ?MB.., QTextEdit)
 
 ______ dockwidgets_rc
 
 
-class MainWindow(QMainWindow):
+c_ MainWindow ?MW..
     ___ __init__(self):
         super(MainWindow, self).__init__()
 
         self.textEdit _ QTextEdit()
-        self.setCentralWidget(self.textEdit)
+        self.sCW..(self.textEdit)
 
         self.createActions()
         self.createMenus()
@@ -119,24 +119,24 @@ class MainWindow(QMainWindow):
         printer _ QPrinter()
 
         dlg _ QPrintDialog(printer, self)
-        if dlg.e.. !_ QDialog.Accepted:
-            return
+        __ dlg.e.. !_ QDialog.Accepted:
+            r_
 
         document.print_(printer)
 
         self.statusBar().showMessage("Ready", 2000)
 
     ___ save(self):
-        filename, _ _ QFileDialog.getSaveFileName(self,
+        filename, _ _ ?FD...getSaveFileName
                 "Choose a file name", '.', "HTML (*.html *.htm)")
-        if not filename:
-            return
+        __ no. filename:
+            r_
 
         file _ QFile(filename)
-        if not file.open(QFile.WriteOnly | QFile.Text):
-            QMessageBox.warning(self, "Dock Widgets",
+        __ no. file.o..(QFile.WriteOnly | QFile.Text):
+            ?MB...warning  "Dock Widgets",
                     "Cannot write file %s:\n%s." % (filename, file.errorString()))
-            return
+            r_
 
         out _ QTextStream(file)
         ?A...setOverrideCursor(Qt.WaitCursor)
@@ -149,32 +149,32 @@ class MainWindow(QMainWindow):
         document _ self.textEdit.document()
         document.undo()
 
-    ___ insertCustomer(self, customer):
-        if not customer:
-            return
+    ___ insertCustomer  customer):
+        __ no. customer:
+            r_
         customerList _ customer.split(', ')
         document _ self.textEdit.document()
         cursor _ document.find('NAME')
-        if not cursor.isNull
+        __ no. cursor.isNull
             cursor.beginEditBlock()
             cursor.insertText(customerList[0])
             oldcursor _ cursor
             cursor _ document.find('ADDRESS')
-            if not cursor.isNull
+            __ no. cursor.isNull
                 for i in customerList[1:]:
                     cursor.insertBlock()
                     cursor.insertText(i)
                 cursor.endEditBlock()
-            else:
+            ____
                 oldcursor.endEditBlock()
 
-    ___ addParagraph(self, paragraph):
-        if not paragraph:
-            return
+    ___ addParagraph  paragraph):
+        __ no. paragraph:
+            r_
         document _ self.textEdit.document()
         cursor _ document.find("Yours sincerely,")
-        if cursor.isNull
-            return
+        __ cursor.isNull
+            r_
         cursor.beginEditBlock()
         cursor.movePosition(QTextCursor.PreviousBlock, QTextCursor.MoveAnchor,
                 2)
@@ -184,68 +184,68 @@ class MainWindow(QMainWindow):
         cursor.endEditBlock()
 
     ___ about(self):
-        QMessageBox.about(self, "About Dock Widgets",
+        ?MB...about  "About Dock Widgets",
                 "The <b>Dock Widgets</b> example demonstrates how to use "
                 "Qt's dock widgets. You can enter your own text, click a "
                 "customer to add a customer name and address, and click "
                 "standard paragraphs to add them.")
 
     ___ createActions(self):
-        self.newLetterAct _ QAction(QIcon(':/images/new.png'), "&New Letter",
+        self.newLetterAct _ ?A..(QIcon(':/images/new.png'), "&New Letter",
                 self, shortcut_QKeySequence.New,
                 statusTip_"Create a new form letter", triggered_self.newLetter)
 
-        self.saveAct _ QAction(QIcon(':/images/save.png'), "&Save...", self,
+        self.saveAct _ ?A..(QIcon(':/images/save.png'), "&Save...", self,
                 shortcut_QKeySequence.Save,
                 statusTip_"Save the current form letter", triggered_self.save)
 
-        self.printAct _ QAction(QIcon(':/images/print.png'), "&Print...", self,
+        self.printAct _ ?A..(QIcon(':/images/print.png'), "&Print...", self,
                 shortcut_QKeySequence.Print,
                 statusTip_"Print the current form letter",
                 triggered_self.print_)
 
-        self.undoAct _ QAction(QIcon(':/images/undo.png'), "&Undo", self,
+        self.undoAct _ ?A..(QIcon(':/images/undo.png'), "&Undo", self,
                 shortcut_QKeySequence.Undo,
                 statusTip_"Undo the last editing action", triggered_self.undo)
 
-        self.quitAct _ QAction("&Quit", self, shortcut_"Ctrl+Q",
+        self.quitAct _ ?A..("&Quit", self, shortcut_"Ctrl+Q",
                 statusTip_"Quit the application", triggered_self.close)
 
-        self.aboutAct _ QAction("&About", self,
+        self.aboutAct _ ?A..("&About", self,
                 statusTip_"Show the application's About box",
                 triggered_self.about)
 
-        self.aboutQtAct _ QAction("About &Qt", self,
+        self.aboutQtAct _ ?A..("About &Qt", self,
                 statusTip_"Show the Qt library's About box",
                 triggered_QApplication.instance().aboutQt)
 
     ___ createMenus(self):
-        self.fileMenu _ self.menuBar().addMenu("&File")
-        self.fileMenu.addAction(self.newLetterAct)
-        self.fileMenu.addAction(self.saveAct)
-        self.fileMenu.addAction(self.printAct)
+        self.fileMenu _ self.mB.. .aM..("&File")
+        self.fileMenu.aA..(self.newLetterAct)
+        self.fileMenu.aA..(self.saveAct)
+        self.fileMenu.aA..(self.printAct)
         self.fileMenu.addSeparator()
-        self.fileMenu.addAction(self.quitAct)
+        self.fileMenu.aA..(self.quitAct)
 
-        self.editMenu _ self.menuBar().addMenu("&Edit")
-        self.editMenu.addAction(self.undoAct)
+        self.editMenu _ self.mB.. .aM..("&Edit")
+        self.editMenu.aA..(self.undoAct)
 
-        self.viewMenu _ self.menuBar().addMenu("&View")
+        self.viewMenu _ self.mB.. .aM..("&View")
 
-        self.menuBar().addSeparator()
+        self.mB.. .addSeparator()
 
-        self.helpMenu _ self.menuBar().addMenu("&Help")
-        self.helpMenu.addAction(self.aboutAct)
-        self.helpMenu.addAction(self.aboutQtAct)
+        self.helpMenu _ self.mB.. .aM..("&Help")
+        self.helpMenu.aA..(self.aboutAct)
+        self.helpMenu.aA..(self.aboutQtAct)
 
     ___ createToolBars(self):
         self.fileToolBar _ self.addToolBar("File")
-        self.fileToolBar.addAction(self.newLetterAct)
-        self.fileToolBar.addAction(self.saveAct)
-        self.fileToolBar.addAction(self.printAct)
+        self.fileToolBar.aA..(self.newLetterAct)
+        self.fileToolBar.aA..(self.saveAct)
+        self.fileToolBar.aA..(self.printAct)
 
         self.editToolBar _ self.addToolBar("Edit")
-        self.editToolBar.addAction(self.undoAct)
+        self.editToolBar.aA..(self.undoAct)
 
     ___ createStatusBar(self):
         self.statusBar().showMessage("Ready")
@@ -263,7 +263,7 @@ class MainWindow(QMainWindow):
             "Sally Hobart, Tiroli Tea, 67 Long River, Fedula"))
         dock.setWidget(self.customerList)
         self.addDockWidget(Qt.RightDockWidgetArea, dock)
-        self.viewMenu.addAction(dock.toggleViewAction())
+        self.viewMenu.aA..(dock.toggleViewAction())
 
         dock _ QDockWidget("Paragraphs", self)
         self.paragraphsList _ QListWidget(dock)
@@ -287,13 +287,13 @@ class MainWindow(QMainWindow):
                 "items, or should we return the excess to you?"))
         dock.setWidget(self.paragraphsList)
         self.addDockWidget(Qt.RightDockWidgetArea, dock)
-        self.viewMenu.addAction(dock.toggleViewAction())
+        self.viewMenu.aA..(dock.toggleViewAction())
 
         self.customerList.currentTextChanged.c..(self.insertCustomer)
         self.paragraphsList.currentTextChanged.c..(self.addParagraph)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 

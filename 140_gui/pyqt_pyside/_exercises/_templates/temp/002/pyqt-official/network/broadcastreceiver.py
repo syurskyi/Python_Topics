@@ -47,8 +47,8 @@ ____ ?.?W.. ______ (?A.., QDialog, QHBoxLayout, QLabel,
 ____ ?.QtNetwork ______ QUdpSocket
 
 
-class Receiver(QDialog):
-    ___ __init__(self, parent_None):
+c_ Receiver(QDialog):
+    ___ __init__  parent_None):
         super(Receiver, self).__init__(parent)
 
         self.statusLabel _ QLabel("Listening for broadcasted messages")
@@ -86,7 +86,7 @@ class Receiver(QDialog):
             self.statusLabel.sT..("Received datagram: \"%s\"" % datagram)
 
 
-if __name__ == '__main__':
+__ __name__ == '__main__':
 
     ______ sys
 
