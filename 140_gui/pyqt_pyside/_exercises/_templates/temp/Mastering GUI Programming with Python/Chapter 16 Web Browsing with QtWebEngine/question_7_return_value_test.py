@@ -1,0 +1,44 @@
+______ sys
+____ ? ______ ?W.. as qtw
+____ ? ______ QtGui as qtg
+____ ? ______ QtCore as qtc
+____ ? ______ QtWebEngineWidgets as qtwe
+
+
+class WebView(qtwe.QWebEngineView):
+
+    ___ __init__(self):
+        super().__init__()
+        script _ qtwe.QWebEngineScript()
+        script.setSourceCode(
+            'function object(){ return {a: 1, b: 2}; }\n'
+            'function string(){ return "Test String";}\n'
+            'function array() { return ["a", 7, {a: 2}];}\n'
+        )
+        script.setWorldId(qtwe.QWebEngineScript.MainWorld)
+        self.page().scripts().insert(script)
+        self.loadFinished.c..(self.on_load)
+
+    ___ on_load(self, ok):
+        self.page().runJavaScript('object()', print)
+        self.page().runJavaScript('string()', print)
+        self.page().runJavaScript('array()', print)
+
+
+class MainWindow(qtw.QMainWindow):
+
+    ___ __init__(self):
+        """MainWindow constructor."""
+        super().__init__()
+        # Main UI code goes here
+        wv _ WebView()
+        self.setCentralWidget(wv)
+        wv.load(qtc.QUrl('about:blank'))
+        # End main UI code
+        self.s..
+
+
+if __name__ == '__main__':
+    app _ qtw.QApplication(sys.argv)
+    mw _ MainWindow()
+    sys.exit(app.exec())

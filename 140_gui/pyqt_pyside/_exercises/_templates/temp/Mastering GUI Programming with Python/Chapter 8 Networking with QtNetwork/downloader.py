@@ -1,0 +1,32 @@
+______ sys
+____ os ______ path
+____ ? ______ QtNetwork as qtn
+____ ? ______ QtCore as qtc
+
+
+class Downloader(qtc.QObject):
+
+    ___ __init__(self, url):
+        super().__init__()
+        self.manager _ qtn.QNetworkAccessManager(
+            finished_self.on_finished)
+        self.request _ qtn.QNetworkRequest(qtc.QUrl(url))
+        self.manager.get(self.request)
+
+    ___ on_finished(self, reply):
+        filename _ reply.url().fileName() or 'download'
+        if path.exists(filename):
+            print('File already exists, not overwriting.')
+            sys.exit(1)
+        with open(filename, 'wb') as fh:
+            fh.write(reply.readAll())
+        print(f"{filename} written")
+        sys.exit(0)
+
+if __name__ == '__main__':
+    if len(sys.argv) < 2:
+        print(f'Usage: {sys.argv[0]} <download url>')
+        sys.exit(1)
+    app _ qtc.QCoreApplication(sys.argv)
+    d _ Downloader(sys.argv[1])
+    sys.exit(app.exec_())

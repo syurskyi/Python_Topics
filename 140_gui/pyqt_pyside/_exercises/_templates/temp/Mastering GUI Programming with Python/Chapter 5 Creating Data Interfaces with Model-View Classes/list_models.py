@@ -1,0 +1,58 @@
+______ sys
+____ ? ______ ?W.. as qtw
+____ ? ______ QtGui as qtg
+____ ? ______ QtCore as qtc
+
+class MainWindow(qtw.QWidget):
+
+    ___ __init__(self):
+        """MainWindow constructor.
+
+        This widget will be our main window.
+        We'll define all the UI components in here.
+        """
+        super().__init__()
+        # Main UI code goes here
+        self.setLayout(qtw.QVBoxLayout())
+
+        data _ [
+            'Hamburger', 'Cheeseburger',
+            'Chicken Nuggets', 'Hot Dog', 'Fish Sandwich'
+        ]
+
+        listwidget _ qtw.QListWidget()
+        listwidget.addItems(data)
+        combobox _ qtw.QComboBox()
+        combobox.addItems(data)
+        self.layout().addWidget(listwidget)
+        self.layout().addWidget(combobox)
+
+        # make the list widget editable
+        for i in range(listwidget.count()):
+            item _ listwidget.item(i)
+            item.setFlags(item.flags() | qtc.Qt.ItemIsEditable)
+
+
+        # The same, but with a model
+
+        model _ qtc.QStringListModel(data)
+
+        listview _ qtw.QListView()
+        listview.setModel(model)
+        model_combobox _ qtw.QComboBox()
+        model_combobox.setModel(model)
+
+        self.layout().addWidget(listview)
+        self.layout().addWidget(model_combobox)
+
+        # End main UI code
+        self.s..
+
+
+
+if __name__ == '__main__':
+    app _ qtw.QApplication(sys.argv)
+    # it's required to save a reference to MainWindow.
+    # if it goes out of scope, it will be destroyed.
+    mw _ MainWindow()
+    sys.exit(app.exec())
