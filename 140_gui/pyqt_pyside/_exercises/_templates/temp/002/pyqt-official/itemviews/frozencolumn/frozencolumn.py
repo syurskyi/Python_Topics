@@ -142,7 +142,7 @@ ___ main(args):
         header _ split_and_strip(line, ',')
         model.setHorizontalHeaderLabels(header)
         row _ 0
-        while file.canReadLine
+        w__ file.canReadLine
             line _ file.readLine(200).decode('utf-8')
             __ no. line.startswith('#') and ',' in line:
                 fields _ split_and_strip(line, ',')

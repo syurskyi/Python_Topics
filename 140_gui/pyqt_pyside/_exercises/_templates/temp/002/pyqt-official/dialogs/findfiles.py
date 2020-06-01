@@ -132,7 +132,7 @@ c_ Window(QDialog):
         progressDialog.setRange(0, files.count())
         progressDialog.setWindowTitle("Find Files")
 
-        foundFiles _ []
+        foundFiles _   # list
 
         for i in range(files.count()):
             progressDialog.setValue(i)
@@ -146,12 +146,12 @@ c_ Window(QDialog):
 
             __ inFile.o..(QIODevice.ReadOnly):
                 stream _ QTextStream(inFile)
-                while no. stream.atEnd
+                w__ no. stream.atEnd
                     __ progressDialog.wasCanceled
                         break
                     line _ stream.readLine()
                     __ t__ in line:
-                        foundFiles.append(files[i])
+                        foundFiles.ap..(files[i])
                         break
 
         progressDialog.close()

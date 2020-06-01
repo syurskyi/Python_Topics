@@ -130,13 +130,13 @@ c_ StorageModel(QAbstractTableModel):
 
         ____ role == __.ToolTipRole:
             volume _ self.volumes[index.row()]
-            tooltip _ []
+            tooltip _   # list
             for column in range(self.ColumnCount):
                 label _ self.columnNameMap.g..(column)
                 value _ self.columnFuncMap[column](volume)
                 __ isinstance(value, QByteArray):
                     value _ str(bytes(value).decode('utf-8'))
-                tooltip.append("{0}: {1}".format(label, value))
+                tooltip.ap..("{0}: {1}".format(label, value))
             r_ "\n".join(tooltip)
 
     ___ headerData  section, orientation, role):

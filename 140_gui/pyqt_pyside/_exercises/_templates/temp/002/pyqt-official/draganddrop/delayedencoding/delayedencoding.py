@@ -59,7 +59,7 @@ c_ MimeData(QMimeData):
 
     ___ formats(self):
         formats _ QMimeData.formats(self)
-        formats.append('image/png')
+        formats.ap..('image/png')
 
         r_ formats
 

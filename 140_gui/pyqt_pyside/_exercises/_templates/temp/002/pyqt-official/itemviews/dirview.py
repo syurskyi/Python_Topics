@@ -65,7 +65,7 @@ parser.addOption(dontUseCustomDirectoryIconsOption)
 parser.addPositionalArgument('directory', "The directory to start in.")
 parser.process(app)
 try:
-    rootPath _ parser.positionalArguments().pop(0)
+    rootPath _ parser.positionalArguments().p.. 0)
 except IndexError:
     rootPath _ N..
 

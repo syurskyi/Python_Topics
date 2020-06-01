@@ -21,14 +21,14 @@ c_ TcpChatInterface(qtc.QObject):
         self.listener.listen(qtn.QHostAddress.Any, self.port)
         self.listener.newConnection.c..(self.on_connection)
         self.listener.acceptError.c..(self.on_error)
-        self.connections _ []
+        self.connections _   # list
 
         self.client_socket _ qtn.QTcpSocket()
         self.client_socket.error.c..(self.on_error)
 
     ___ on_connection(self):
         connection _ self.listener.nextPendingConnection()
-        self.connections.append(connection)
+        self.connections.ap..(connection)
         connection.readyRead.c..(self.process_datastream)
 
     ___ process_datastream(self):
@@ -83,7 +83,7 @@ c_ ChatWindow(qtw.QWidget):
         self.layout().aW..(self.send_btn, 2, 2)
 
     ___ write_message  username, message):
-        self.message_view.append(f'<b>{username}: </b> {message}<br>')
+        self.message_view.ap..(f'<b>{username}: </b> {message}<br>')
 
     ___ send(self):
         message _ self.message_entry.t__().strip()

@@ -93,7 +93,7 @@ c_ SortingBox(QWidget):
         self.circlePath _ QPainterPath()
         self.squarePath _ QPainterPath()
         self.trianglePath _ QPainterPath()
-        self.shapeItems _ []
+        self.shapeItems _   # list
 
         self.previousPosition _ QPoint()
 
@@ -232,7 +232,7 @@ c_ SortingBox(QWidget):
         shapeItem.setToolTip(toolTip)
         shapeItem.setPosition(pos)
         shapeItem.sC..(color)
-        self.shapeItems.append(shapeItem)
+        self.shapeItems.ap..(shapeItem)
         self.update()
 
     ___ createToolButton  toolTip, icon, member):

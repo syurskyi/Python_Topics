@@ -87,9 +87,9 @@ c_ MainWindow(qtw.QMainWindow):
             self.statusBar().showMessage('Dialogs are off.')
 
     ___ long_blocking_callback(self):
-        ____ time ______ sleep
+        ____ time ______ sl..
         self.statusBar().showMessage('Beginning a long blocking function.')
-        sleep(30)
+        sl..(30)
         self.statusBar().showMessage('Ending a long blocking function.')
 
 __ __name__ == '__main__':

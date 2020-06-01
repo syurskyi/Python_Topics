@@ -148,7 +148,7 @@ c_ Window(QWidget):
             firstFriday _ QDate(self.calendar.yearShown(),
                     self.calendar.monthShown(), 1)
 
-            while firstFriday.dayOfWeek() !_ __.Friday:
+            w__ firstFriday.dayOfWeek() !_ __.Friday:
                 firstFriday _ firstFriday.addDays(1)
 
             firstFridayFormat _ QTextCharFormat()

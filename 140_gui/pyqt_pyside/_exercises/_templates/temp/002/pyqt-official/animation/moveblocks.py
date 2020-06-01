@@ -90,7 +90,7 @@ c_ StateSwitcher(QState):
 
     ___ onEntry  event):
         n _ qrand() % self.m_stateCount + 1
-        while n == self.m_lastIndex:
+        w__ n == self.m_lastIndex:
             n _ qrand() % self.m_stateCount + 1
 
         self.m_lastIndex _ n

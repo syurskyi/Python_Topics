@@ -116,7 +116,7 @@ c_ BubblesWidget(BaseClass):
         super(BubblesWidget, self).__init__(parent)
 
         self.pen _ QPen(?C..("#cccccc"))
-        self.bubbles _ []
+        self.bubbles _   # list
         self.backgroundColor1 _ self.randomColor()
         self.backgroundColor2 _ self.randomColor().darker(150)
         self.newBubble _ N..
@@ -194,7 +194,7 @@ c_ BubblesWidget(BaseClass):
 
         __ self.newBubble:
 
-            self.bubbles.append(self.newBubble)
+            self.bubbles.ap..(self.newBubble)
             self.newBubble _ N..
             self.bubbleTimer.stop()
             self.bubblesRemaining.emit(len(self.bubbles))
@@ -225,7 +225,7 @@ c_ BubblesWidget(BaseClass):
 
     ___ animate(self):
 
-        bubbles _ []
+        bubbles _   # list
         left _ False
         for bubble in self.bubbles:
 
@@ -237,7 +237,7 @@ c_ BubblesWidget(BaseClass):
                             QSizeF(2*bubble.radius + 2, 2*bubble.radius + 2 + bubble.speed)).toRect())
 
             __ bubble.position.y() + bubble.radius > 0:
-                bubbles.append(bubble)
+                bubbles.ap..(bubble)
             ____
                 self.bubbleLeft.emit()
                 left _ True
@@ -268,7 +268,7 @@ c_ BubblesWidget(BaseClass):
 
         value _ max(0, value)
 
-        while len(self.bubbles) < value:
+        w__ len(self.bubbles) < value:
 
             newBubble _ Bubble(QPointF(random.random() * self.width(),
                                        random.random() * self.height()),
@@ -276,7 +276,7 @@ c_ BubblesWidget(BaseClass):
                                1.0 + random.random() * 7,
                                self.randomColor(), self.randomColor())
             newBubble.updateBrush()
-            self.bubbles.append(newBubble)
+            self.bubbles.ap..(newBubble)
 
         self.bubbles _ self.bubbles[:value]
         self.bubblesRemaining.emit(value)

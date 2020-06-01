@@ -92,7 +92,7 @@ c_ DemoItem(QGraphicsObject):
 
     ___ useGuide  guide, startFrame):
         self.guideFrame _ startFrame
-        while self.guideFrame > guide.startLength + guide.length
+        w__ self.guideFrame > guide.startLength + guide.length
             __ guide.nextGuide == guide.firstGuide:
                 break
 
@@ -102,7 +102,7 @@ c_ DemoItem(QGraphicsObject):
 
     ___ guideAdvance  distance):
         self.guideFrame +_ distance
-        while self.guideFrame > self.currGuide.startLength + self.currGuide.length
+        w__ self.guideFrame > self.currGuide.startLength + self.currGuide.length
             self.currGuide _ self.currGuide.nextGuide
             __ self.currGuide == self.currGuide.firstGuide:
                 self.guideFrame -_ self.currGuide.lengthAll()

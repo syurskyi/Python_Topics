@@ -1,7 +1,7 @@
 ____ ?.?C.. ______ *
 ____ ?.QtMultimedia ______ *
 
-app _ QCoreApplication([])
+app _ QCoreApplication(  # list)
 
 r _ QAudioRecorder()
 

@@ -50,7 +50,7 @@ c_ Score(object):
 
     ___ __init__(self):
         self._index _ {}
-        self._playlist _ []
+        self._playlist _   # list
 
     ___ hasQueuedMovies(self):
         r_ len(self._playlist) > 0
@@ -92,18 +92,18 @@ c_ Score(object):
             r_
 
         self.prepare(movie, runMode, lockMode)
-        self._playlist.append((movie, runMode))
+        self._playlist.ap..((movie, runMode))
         Colors.debug("Queuing movie:", indexName)
 
     ___ playQue(self):
         for movie, runMode in self._playlist:
             self._play(movie, runMode)
 
-        self._playlist _ []
+        self._playlist _   # list
         Colors.debug("********* Playing que *********")
 
     ___ insertMovie  indexName):
-        movie _ []
+        movie _   # list
         self._index[indexName] _ movie
 
         r_ movie

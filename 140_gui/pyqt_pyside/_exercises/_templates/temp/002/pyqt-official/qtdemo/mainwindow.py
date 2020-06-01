@@ -66,8 +66,8 @@ c_ MainWindow(QGraphicsView):
 
         self.scene _ N..
         self.mainSceneRoot _ N..
-        self.frameTimeList _ []
-        self.fpsHistory _ []
+        self.frameTimeList _   # list
+        self.fpsHistory _   # list
 
         self.currentFps _ Colors.fps
         self.fpsMedian _ -1
@@ -180,7 +180,7 @@ c_ MainWindow(QGraphicsView):
             t _ 0.01
 
         self.currentFps _ (1000.0 / t)
-        self.fpsHistory.append(self.currentFps)
+        self.fpsHistory.ap..(self.currentFps)
         self.fpsTime _ QTime.currentTime()
 
         # Calculate median.
@@ -192,7 +192,7 @@ c_ MainWindow(QGraphicsView):
             __ self.fpsMedian == 0:
                 self.fpsMedian _ 0.01
 
-            self.fpsHistory _ []
+            self.fpsHistory _   # list
 
             r_ True
 
@@ -389,4 +389,4 @@ c_ MainWindow(QGraphicsView):
 
         # Changing size will almost always hurt FPS during the change so ignore
         # it.
-        self.fpsHistory _ []
+        self.fpsHistory _   # list

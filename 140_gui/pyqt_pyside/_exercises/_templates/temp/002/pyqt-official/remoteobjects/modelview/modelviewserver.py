@@ -101,7 +101,7 @@ c_ TimerHandler(QObject):
 
 
 ___ addChild(numChildren, nestingLevel):
-    result _ []
+    result _   # list
 
     __ nestingLevel == 0:
         r_ result
@@ -113,7 +113,7 @@ ___ addChild(numChildren, nestingLevel):
         __ i == 0:
             child.appendRow(addChild(numChildren, nestingLevel - 1))
 
-        result.append(child)
+        result.ap..(child)
 
     r_ result
 

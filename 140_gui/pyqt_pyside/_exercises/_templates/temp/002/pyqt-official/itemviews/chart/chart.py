@@ -401,14 +401,14 @@ c_ PieView(QAbstractItemView):
 
         rows _ self.model().rowCount(self.rootIndex())
         columns _ self.model().columnCount(self.rootIndex())
-        indexes _ []
+        indexes _   # list
 
         for row in range(rows):
             for column in range(columns):
                 index _ self.model().index(row, column, self.rootIndex())
                 region _ self.itemRegion(index)
                 __ region.intersects(QRegion(contentsRect)):
-                    indexes.append(index)
+                    indexes.ap..(index)
 
         __ len(indexes) > 0:
             firstRow _ indexes[0].row()
@@ -531,7 +531,7 @@ c_ MainWindow ?MW..
 
                 row _ 0
                 line _ stream.readLine()
-                while line:
+                w__ line:
                     self.model.insertRows(row, 1, QModelIndex())
 
                     pieces _ line.split(',')
@@ -557,17 +557,17 @@ c_ MainWindow ?MW..
 
             __ f.o..(QFile.WriteOnly | QFile.Text):
                 for row in range(self.model.rowCount(QModelIndex())):
-                    pieces _ []
+                    pieces _   # list
 
-                    pieces.append(
+                    pieces.ap..(
                             self.model.data(
                                     self.model.index(row, 0, QModelIndex()),
                                     __.DisplayRole))
-                    pieces.append(
+                    pieces.ap..(
                             '%g' % self.model.data(
                                     self.model.index(row, 1, QModelIndex()),
                                     __.DisplayRole))
-                    pieces.append(
+                    pieces.ap..(
                             self.model.data(
                                     self.model.index(row, 0, QModelIndex()),
                                     __.DecorationRole).name())

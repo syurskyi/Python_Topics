@@ -101,11 +101,11 @@ c_ RegExpDialog(QDialog):
         self.matchedLengthEdit _ ?LE..
         self.matchedLengthEdit.setReadOnly(True)
 
-        self.captureLabels _ []
-        self.captureEdits _ []
+        self.captureLabels _   # list
+        self.captureEdits _   # list
         for i in range(self.MaxCaptures):
-            self.captureLabels.append(QLabel("Capture %d:" % i))
-            self.captureEdits.append(QLineEdit())
+            self.captureLabels.ap..(QLabel("Capture %d:" % i))
+            self.captureEdits.ap..(QLineEdit())
             self.captureEdits[i].setReadOnly(True)
         self.captureLabels[0].sT..("Match:")
 

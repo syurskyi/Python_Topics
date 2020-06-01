@@ -64,11 +64,11 @@ c_ BorderLayout(QLayout):
             self.setContentsMargins(margin, margin, margin, margin)
 
         self.setSpacing(spacing)
-        self.list _ []
+        self.list _   # list
 
     ___ __del__(self):
         l _ self.takeAt(0)
-        while l __ no. N..:
+        w__ l __ no. N..:
             l _ self.takeAt(0)
 
     ___ addItem  item):
@@ -161,13 +161,13 @@ c_ BorderLayout(QLayout):
 
     ___ takeAt  index):
         __ index >_ 0 and index < len(self.list):
-            layoutStruct _ self.list.pop(index)
+            layoutStruct _ self.list.p.. index)
             r_ layoutStruct.item
 
         r_ N..
 
     ___ add  item, position):
-        self.list.append(ItemWrapper(item, position))
+        self.list.ap..(ItemWrapper(item, position))
 
     ___ calculateSize  sizeType):
         totalSize _ QSize()

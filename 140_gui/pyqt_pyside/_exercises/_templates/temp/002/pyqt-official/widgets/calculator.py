@@ -86,10 +86,10 @@ c_ Calculator(QWidget):
         font.setPointSize(font.pointSize() + 8)
         self.display.setFont(font)
 
-        self.digitButtons _ []
+        self.digitButtons _   # list
         
         for i in range(Calculator.NumDigitButtons):
-            self.digitButtons.append(self.createButton(str(i),
+            self.digitButtons.ap..(self.createButton(str(i),
                     self.digitClicked))
 
         self.pointButton _ self.createButton(".", self.pointClicked)

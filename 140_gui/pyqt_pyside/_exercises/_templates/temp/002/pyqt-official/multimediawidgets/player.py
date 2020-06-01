@@ -326,7 +326,7 @@ c_ HistogramWidget(QWidget):
 
         self.m_levels _ 128
         self.m_isBusy _ False
-        self.m_histogram _ []
+        self.m_histogram _   # list
         self.m_processor _ FrameProcessor()
         self.m_processorThread _ QThread()
 

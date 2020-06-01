@@ -54,7 +54,7 @@ ____ menumanager ______ MenuManager
 ___ artisticSleep(sleepTime):
     time _ QTime()
     time.restart()
-    while time.elapsed() < sleepTime:
+    w__ time.elapsed() < sleepTime:
         ?A...processEvents(QEventLoop.AllEvents, 50)
 
 

@@ -253,7 +253,7 @@ c_ MenuManager(QObject):
             self.score.playQue()
             # Playing new movies might include loading etc., so ignore the FPS
             # at this point.
-            self.window.fpsHistory _ []
+            self.window.fpsHistory _   # list
 
     ___ showDocInAssistant  name):
         url _ self.resolveDocUrl(name)
@@ -338,12 +338,12 @@ c_ MenuManager(QObject):
 
         # Create second level menus.
         level2Menu _ self._first_element(rootElement)
-        while level2Menu __ no. N..:
+        w__ level2Menu __ no. N..:
             self.createSubMenu(level2Menu)
 
             # Create leaf menu and example info.
             example _ self._first_element(level2Menu)
-            while example __ no. N..:
+            w__ example __ no. N..:
                 self.readInfoAboutExample(example)
                 self.createLeafMenu(example)
                 example _ self._next_element(example)
@@ -360,7 +360,7 @@ c_ MenuManager(QObject):
 
     @staticmethod
     ___ _skip_nonelements(node):
-        while node __ no. N.. and node.nodeType !_ node.ELEMENT_NODE:
+        w__ node __ no. N.. and node.nodeType !_ node.ELEMENT_NODE:
             node _ node.nextSibling
 
         r_ node
@@ -506,7 +506,7 @@ c_ MenuManager(QObject):
         currentNode _ self._first_element(category)
         currentMenu _ '%s -menu%d' % (name, menuIndex)
 
-        while currentNode __ no. N..:
+        w__ currentNode __ no. N..:
             movieIn _ self.score.insertMovie(currentMenu)
             movieOut _ self.score.insertMovie(currentMenu + ' -out')
             movieNextTopOut _ self.score.insertMovie(currentMenu + ' -top_out')
@@ -516,7 +516,7 @@ c_ MenuManager(QObject):
             movieShake _ self.score.insertMovie(currentMenu + ' -shake')
 
             i _ 0
-            while currentNode __ no. N.. and i < maxExamples:
+            w__ currentNode __ no. N.. and i < maxExamples:
                 # Create a normal menu button.
                 label _ currentNode.getAttribute('name')
                 item _ TextButton(label, TextButton.LEFT, type,
@@ -539,7 +539,7 @@ c_ MenuManager(QObject):
                 anim.setKeyValueAt(0.80, QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
                 anim.setKeyValueAt(0.90, QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY + (2 * float(i / 4.0))))
                 anim.setEndValue(QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
-                movieIn.append(anim)
+                movieIn.ap..(anim)
 
                 # Create out-animation.
                 anim _ DemoItemAnimation(item, DemoItemAnimation.ANIM_OUT)
@@ -549,7 +549,7 @@ c_ MenuManager(QObject):
                 anim.setKeyValueAt(0.60, QPointF(xOffset, 600 - ih - ih))
                 anim.setKeyValueAt(0.65, QPointF(xOffset + 20, 600 - ih))
                 anim.setEndValue(QPointF(sw + iw, 600 - ih))
-                movieOut.append(anim)
+                movieOut.ap..(anim)
 
                 # Create shake-animation.
                 anim _ DemoItemAnimation(item)
@@ -560,7 +560,7 @@ c_ MenuManager(QObject):
                 anim.setKeyValueAt(0.80, QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY - i*1.0))
                 anim.setKeyValueAt(0.90, QPointF(xOffset - 2, (i * ihp) + yOffset + Colors.contentStartY - i*0.5))
                 anim.setEndValue(QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
-                movieShake.append(anim)
+                movieShake.ap..(anim)
 
                 # Create next-menu top-out-animation.
                 anim _ DemoItemAnimation(item, DemoItemAnimation.ANIM_OUT)
@@ -569,7 +569,7 @@ c_ MenuManager(QObject):
                 anim.setStartValue(QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
                 anim.setKeyValueAt(0.70, QPointF(xOffset, yOffset + Colors.contentStartY))
                 anim.setEndValue(QPointF(-iw, yOffset + Colors.contentStartY))
-                movieNextTopOut.append(anim)
+                movieNextTopOut.ap..(anim)
 
                 # Create next-menu bottom-out-animation.
                 anim _ DemoItemAnimation(item, DemoItemAnimation.ANIM_OUT)
@@ -578,7 +578,7 @@ c_ MenuManager(QObject):
                 anim.setStartValue(QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
                 anim.setKeyValueAt(0.70, QPointF(xOffset, (maxExamples * ihp) + yOffset + Colors.contentStartY))
                 anim.setEndValue(QPointF(-iw, (maxExamples * ihp) + yOffset + Colors.contentStartY))
-                movieNextBottomOut.append(anim)
+                movieNextBottomOut.ap..(anim)
 
                 # Create next-menu top-in-animation.
                 anim _ DemoItemAnimation(item, DemoItemAnimation.ANIM_IN)
@@ -586,7 +586,7 @@ c_ MenuManager(QObject):
                 anim.setStartValue(QPointF(-iw, yOffset + Colors.contentStartY))
                 anim.setKeyValueAt(0.30, QPointF(xOffset, yOffset + Colors.contentStartY))
                 anim.setEndValue(QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
-                movieNextTopIn.append(anim)
+                movieNextTopIn.ap..(anim)
 
                 # Create next-menu bottom-in-animation.
                 reverse _ maxExamples - i
@@ -595,7 +595,7 @@ c_ MenuManager(QObject):
                 anim.setStartValue(QPointF(-iw, (maxExamples * ihp) + yOffset + Colors.contentStartY))
                 anim.setKeyValueAt(0.30, QPointF(xOffset, (maxExamples * ihp) + yOffset + Colors.contentStartY))
                 anim.setEndValue(QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
-                movieNextBottomIn.append(anim)
+                movieNextBottomIn.ap..(anim)
 
                 i +_ 1
                 currentNode _ self._next_element(currentNode)
@@ -626,7 +626,7 @@ c_ MenuManager(QObject):
         buttonIn.setKeyValueAt(0.5, QPointF(-iw, Colors.contentStartY + Colors.contentHeight - 35))
         buttonIn.setKeyValueAt(0.7, QPointF(xOffset, Colors.contentStartY + Colors.contentHeight - 35))
         buttonIn.setEndValue(QPointF(xOffset, Colors.contentStartY + Colors.contentHeight - 26))
-        movieIn.append(buttonIn)
+        movieIn.ap..(buttonIn)
 
         # Create out-animation.
         buttonOut _ DemoItemAnimation(button, DemoItemAnimation.ANIM_OUT)
@@ -634,7 +634,7 @@ c_ MenuManager(QObject):
         buttonOut.setDuration(400)
         buttonOut.setStartValue(QPointF(xOffset, Colors.contentStartY + Colors.contentHeight - 26))
         buttonOut.setEndValue(QPointF(-iw, Colors.contentStartY + Colors.contentHeight - 26))
-        movieOut.append(buttonOut)
+        movieOut.ap..(buttonOut)
 
         __ movieShake __ no. N..:
             shakeAnim _ DemoItemAnimation(button, DemoItemAnimation.ANIM_UNSPECIFIED)
@@ -645,7 +645,7 @@ c_ MenuManager(QObject):
             shakeAnim.setKeyValueAt(0.80, buttonIn.endValue() + QPointF(2, 0))
             shakeAnim.setKeyValueAt(0.90, buttonIn.endValue() + QPointF(-1, 0))
             shakeAnim.setEndValue(buttonIn.endValue())
-            movieShake.append(shakeAnim)
+            movieShake.ap..(shakeAnim)
 
     ___ createLowRightButton  label, type, movieIn, movieOut, movieShake):
         item _ TextButton(label, TextButton.RIGHT, type,
@@ -663,7 +663,7 @@ c_ MenuManager(QObject):
         anim.setKeyValueAt(0.5, QPointF(sw, Colors.contentStartY + Colors.contentHeight - 35))
         anim.setKeyValueAt(0.7, QPointF(xOffset + 535, Colors.contentStartY + Colors.contentHeight - 35))
         anim.setEndValue(QPointF(xOffset + 535, Colors.contentStartY + Colors.contentHeight - 26))
-        movieIn.append(anim)
+        movieIn.ap..(anim)
 
         # Create out-animation.
         anim _ DemoItemAnimation(item, DemoItemAnimation.ANIM_OUT)
@@ -671,7 +671,7 @@ c_ MenuManager(QObject):
         anim.setDuration(400)
         anim.setStartValue(QPointF(xOffset + 535, Colors.contentStartY + Colors.contentHeight - 26))
         anim.setEndValue(QPointF(sw, Colors.contentStartY + Colors.contentHeight - 26))
-        movieOut.append(anim)
+        movieOut.ap..(anim)
 
     ___ createLowRightLeafButton  label, xOffset, type, movieIn, movieOut, movieShake):
         item _ TextButton(label, TextButton.RIGHT, type,
@@ -693,7 +693,7 @@ c_ MenuManager(QObject):
         anim.setKeyValueAt(0.45, QPointF(xOffset + 5, Colors.contentStartY + Colors.contentHeight - 35))
         anim.setKeyValueAt(0.50, QPointF(xOffset, Colors.contentStartY + Colors.contentHeight - 35))
         anim.setEndValue(QPointF(xOffset, Colors.contentStartY + Colors.contentHeight - 26))
-        movieIn.append(anim)
+        movieIn.ap..(anim)
 
         # Create out-animation.
         anim _ DemoItemAnimation(item, DemoItemAnimation.ANIM_OUT)
@@ -701,7 +701,7 @@ c_ MenuManager(QObject):
         anim.setDuration(300)
         anim.setStartValue(QPointF(xOffset, Colors.contentStartY + Colors.contentHeight - 26))
         anim.setEndValue(QPointF(xOffset, sh))
-        movieOut.append(anim)
+        movieOut.ap..(anim)
 
     ___ createInfo  item, name):
         movie_in _ self.score.insertMovie(name)
@@ -718,7 +718,7 @@ c_ MenuManager(QObject):
         infoIn.setKeyValueAt(0.80, QPointF(xOffset, Colors.contentStartY))
         infoIn.setKeyValueAt(0.90, QPointF(xOffset + 7, Colors.contentStartY))
         infoIn.setEndValue(QPointF(xOffset, Colors.contentStartY))
-        movie_in.append(infoIn)
+        movie_in.ap..(infoIn)
 
         infoOut _ DemoItemAnimation(item, DemoItemAnimation.ANIM_OUT)
         infoOut.setCurveShape(QEasingCurve.InQuad)
@@ -726,7 +726,7 @@ c_ MenuManager(QObject):
         infoOut.setHideOnFinished(True)
         infoOut.setStartValue(QPointF(xOffset, Colors.contentStartY))
         infoOut.setEndValue(QPointF(-600, Colors.contentStartY))
-        movie_out.append(infoOut)
+        movie_out.ap..(infoOut)
 
     ___ createTicker(self):
         __ Colors.noTicker:
@@ -753,7 +753,7 @@ c_ MenuManager(QObject):
         self.tickerInAnim.setKeyValueAt(0.80, QPointF(qtendpos, Colors.contentStartY + qtPosY))
         self.tickerInAnim.setKeyValueAt(0.90, QPointF(qtendpos + 5, Colors.contentStartY + qtPosY))
         self.tickerInAnim.setEndValue(QPointF(qtendpos, Colors.contentStartY + qtPosY))
-        movie_in.append(self.tickerInAnim)
+        movie_in.ap..(self.tickerInAnim)
 
         # Move ticker out.
         qtOut _ DemoItemAnimation(self.ticker, DemoItemAnimation.ANIM_OUT)
@@ -761,7 +761,7 @@ c_ MenuManager(QObject):
         qtOut.setDuration(500)
         qtOut.setStartValue(QPointF(qtendpos, Colors.contentStartY + qtPosY))
         qtOut.setEndValue(QPointF(self.window.scene.sceneRect().width() + 700, Colors.contentStartY + qtPosY))
-        movie_out.append(qtOut)
+        movie_out.ap..(qtOut)
 
         # Move ticker in on activate.
         qtActivate _ DemoItemAnimation(self.ticker)
@@ -772,7 +772,7 @@ c_ MenuManager(QObject):
         qtActivate.setKeyValueAt(0.80, QPointF(qtendpos, Colors.contentStartY + qtPosY))
         qtActivate.setKeyValueAt(0.90, QPointF(qtendpos + 5, Colors.contentStartY + qtPosY))
         qtActivate.setEndValue(QPointF(qtendpos, Colors.contentStartY + qtPosY))
-        movie_activate.append(qtActivate)
+        movie_activate.ap..(qtActivate)
 
         # Move ticker out on deactivate.
         qtDeactivate _ DemoItemAnimation(self.ticker)
@@ -780,7 +780,7 @@ c_ MenuManager(QObject):
         qtDeactivate.setDuration(400)
         qtDeactivate.setStartValue(QPointF(qtendpos, Colors.contentStartY + qtPosY))
         qtDeactivate.setEndValue(QPointF(qtendpos, 800))
-        movie_deactivate.append(qtDeactivate)
+        movie_deactivate.ap..(qtDeactivate)
 
     ___ createUpnDownButtons(self):
         xOffset _ 15.0
@@ -808,7 +808,7 @@ c_ MenuManager(QObject):
         shakeAnim.setKeyValueAt(0.80, self.upButton.pos() + QPointF(1, 0))
         shakeAnim.setKeyValueAt(0.90, self.upButton.pos() + QPointF(-1, 0))
         shakeAnim.setEndValue(self.upButton.pos())
-        movieShake.append(shakeAnim)
+        movieShake.ap..(shakeAnim)
 
         shakeAnim _ DemoItemAnimation(self.downButton,
                 DemoItemAnimation.ANIM_UNSPECIFIED)
@@ -819,7 +819,7 @@ c_ MenuManager(QObject):
         shakeAnim.setKeyValueAt(0.80, self.downButton.pos() + QPointF(-3, 0))
         shakeAnim.setKeyValueAt(0.90, self.downButton.pos() + QPointF(-1, 0))
         shakeAnim.setEndValue(self.downButton.pos())
-        movieShake.append(shakeAnim)
+        movieShake.ap..(shakeAnim)
 
     ___ createBackButton(self):
         backIn _ self.score.insertMovie('back -in')

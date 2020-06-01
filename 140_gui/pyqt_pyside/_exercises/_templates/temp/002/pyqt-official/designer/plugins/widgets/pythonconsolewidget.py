@@ -40,7 +40,7 @@ c_ PythonConsoleWidget(QLineEdit):
     
         super(PythonConsoleWidget, self).__init__(parent)
         
-        self.history _ []
+        self.history _   # list
         self.current _ -1
         
         self.rP__.c..(self.execute)
@@ -82,7 +82,7 @@ c_ PythonConsoleWidget(QLineEdit):
             # Clear the line edit, append the successful expression to the
             # history, and update the current command index.
             self.clear()
-            self.history.append(self.expression)
+            self.history.ap..(self.expression)
             self.current _ len(self.history)
         except:
             pass

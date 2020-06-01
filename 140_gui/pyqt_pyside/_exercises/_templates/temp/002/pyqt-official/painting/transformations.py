@@ -61,7 +61,7 @@ c_ RenderArea(QWidget):
         self.xBoundingRect _ fontMetrics.boundingRect("x")
         self.yBoundingRect _ fontMetrics.boundingRect("y")
         self.shape _ QPainterPath()
-        self.operations _ []
+        self.operations _   # list
 
     ___ setOperations  operations):
         self.operations _ operations
@@ -226,10 +226,10 @@ c_ Window(QWidget):
         self.shapeComboBox.activated.c..(self.shapeSelected)
 
     ___ operationChanged(self):
-        operations _ []
+        operations _   # list
         for i in range(Window.NumTransformedAreas):
             index _ self.operationComboBoxes[i].currentIndex()
-            operations.append(Window.operationTable[index])
+            operations.ap..(Window.operationTable[index])
             self.transformedRenderAreas[i].setOperations(operations[:])
 
     ___ shapeSelected  index):

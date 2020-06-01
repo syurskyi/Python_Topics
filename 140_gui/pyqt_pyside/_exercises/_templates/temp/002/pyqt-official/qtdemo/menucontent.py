@@ -91,14 +91,14 @@ c_ MenuContentItem(DemoItem):
 
         in_str _ QTextStream(readme)
         # Skip a certain number of paragraphs.
-        while startPara:
+        w__ startPara:
             __ no. in_str.readLine
                 startPara -_ 1
 
         # Read in the number of wanted paragraphs.
         result _ ''
         line _ in_str.readLine()
-        while True:
+        w__ T..
             result +_ line + " "
             line _ in_str.readLine()
             __ no. line:

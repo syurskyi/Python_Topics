@@ -120,13 +120,13 @@ ___ initializeModel(model):
 
 
 offset _ 0
-views _ []
+views _   # list
 
 ___ createView(title, model):
     gl.. offset, views
 
     view _ QTableView()
-    views.append(view)
+    views.ap..(view)
     view.setModel(model)
     view.setWindowTitle(title)
     view.move(100 + offset, 100 + offset)

@@ -99,7 +99,7 @@ c_ ChatMainWindow(QMainWindow, Ui_ChatMainWindow):
         super(ChatMainWindow, self).__init__()
 
         self.m_nickname _ "nickname"
-        self.m_messages _ []
+        self.m_messages _   # list
 
         self.setupUi(self)
         self.sendButton.setEnabled F..
@@ -131,19 +131,19 @@ c_ ChatMainWindow(QMainWindow, Ui_ChatMainWindow):
 
     @pyqtSlot(str, str)
     ___ messageSlot  nickname, t__):
-        self.m_messages.append("<%s> %s" % (nickname, t__))
+        self.m_messages.ap..("<%s> %s" % (nickname, t__))
 
         __ len(self.m_messages) > 100:
-            self.m_messages.pop(0)
+            self.m_messages.p.. 0)
 
         self.rebuildHistory()
 
     @pyqtSlot(str, str)
     ___ actionSlot  nickname, t__):
-        self.m_messages.append("* %s %s" % (nickname, t__))
+        self.m_messages.ap..("* %s %s" % (nickname, t__))
 
         __ len(self.m_messages) > 100:
-            self.m_messages.pop(0)
+            self.m_messages.p.. 0)
 
         self.rebuildHistory()
 

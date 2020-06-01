@@ -267,7 +267,7 @@ c_ TetrixBoard(QFrame):
     ___ dropDown(self):
         dropHeight _ 0
         newY _ self.curY
-        while newY > 0:
+        w__ newY > 0:
             __ no. self.tryMove(self.curPiece, self.curX, newY - 1):
                 break
             newY -_ 1

@@ -97,7 +97,7 @@ c_ CoffeeForm(qtw.QWidget):
         self.reviews.resizeColumnsToContents()
 
     ___ delete_review(self):
-        for index in self.reviews.selectedIndexes() or []:
+        for index in self.reviews.selectedIndexes() or   # list:
             self.reviews.model().removeRow(index.row())
         self.reviews.model().select()
 
@@ -202,7 +202,7 @@ c_ MainWindow(qtw.QMainWindow):
 
     ___ delete_coffee(self):
         selected _ self.coffee_list.selectedIndexes()
-        for index in selected or []:
+        for index in selected or   # list:
             self.coffees_model.removeRow(index.row())
         self.coffees_model.select()
 

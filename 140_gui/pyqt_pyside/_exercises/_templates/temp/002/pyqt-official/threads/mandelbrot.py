@@ -71,13 +71,13 @@ c_ RenderThread(QThread):
         self.centerY _ 0.0
         self.scaleFactor _ 0.0
         self.resultSize _ QSize()
-        self.colormap _ []
+        self.colormap _   # list
 
         self.restart _ False
         self.abort _ False
 
         for i in range(RenderThread.ColormapSize):
-            self.colormap.append(self.rgbFromWaveLength(380.0 + (i * 400.0 / RenderThread.ColormapSize)))
+            self.colormap.ap..(self.rgbFromWaveLength(380.0 + (i * 400.0 / RenderThread.ColormapSize)))
 
     ___ __del__(self):
         self.mutex.lock()
@@ -102,7 +102,7 @@ c_ RenderThread(QThread):
             self.condition.wakeOne()
 
     ___ run(self):
-        while True:
+        w__ T..
             self.mutex.lock()
             resultSize _ self.resultSize
             scaleFactor _ self.scaleFactor
@@ -117,7 +117,7 @@ c_ RenderThread(QThread):
             NumPasses _ 8
             curpass _ 0
 
-            while curpass < NumPasses:
+            w__ curpass < NumPasses:
                 MaxIterations _ (1 << (2 * curpass + 6)) + 32
                 Limit _ 4
                 allBlack _ True
@@ -135,7 +135,7 @@ c_ RenderThread(QThread):
                         c _ c0
                         numIterations _ 0
 
-                        while numIterations < MaxIterations:
+                        w__ numIterations < MaxIterations:
                             numIterations +_ 1
                             c _ c*c + c0
                             __ abs(c) >_ Limit:

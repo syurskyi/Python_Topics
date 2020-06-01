@@ -7,13 +7,13 @@ c_ Server(qtn.QTcpServer):
     ___ __init__(self):
         super().__init__()
         self.newConnection.c..(self.on_new_connection)
-        self.connections _ []
+        self.connections _   # list
         self.listen(qtn.QHostAddress.Any, 8080)
 
     ___ on_new_connection(self):
-        while self.hasPendingConnections
+        w__ self.hasPendingConnections
             cx _ self.nextPendingConnection()
-            self.connections.append(cx)
+            self.connections.ap..(cx)
             cx.readyRead.c..(self.process_datastream)
 
     ___ process_datastream(self):

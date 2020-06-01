@@ -68,7 +68,7 @@ c_ Window(QMainWindow, Ui_Window):
     ___ examineChildElements  parentElement, parentItem):
         # Traverse the document.
         element _ parentElement.firstChild()
-        while no. element.isNull
+        w__ no. element.isNull
             item _ QTreeWidgetItem()
             item.sT..(0, element.tagName())
             parentItem.addChild(item)

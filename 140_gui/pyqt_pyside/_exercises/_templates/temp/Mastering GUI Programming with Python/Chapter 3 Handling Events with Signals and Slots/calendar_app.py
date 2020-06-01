@@ -146,7 +146,7 @@ c_ MainWindow(qtw.QWidget):
         self.event_list.clear()
         self.clear_form()
         date _ self.calendar.selectedDate()
-        for event in self.events.g..(date, []):
+        for event in self.events.g..(date,   # list):
             time _ (
                 event['time'].toString('hh:mm')
                 __ event['time']
@@ -184,12 +184,12 @@ c_ MainWindow(qtw.QWidget):
             }
 
         date _ self.calendar.selectedDate()
-        event_list _ self.events.g..(date, [])
+        event_list _ self.events.g..(date,   # list)
         event_number _ self.event_list.currentRow()
 
         # if no events are selected, this is a new event
         __ event_number == -1:
-            event_list.append(event)
+            event_list.ap..(event)
         ____
             event_list[event_number] _ event
 

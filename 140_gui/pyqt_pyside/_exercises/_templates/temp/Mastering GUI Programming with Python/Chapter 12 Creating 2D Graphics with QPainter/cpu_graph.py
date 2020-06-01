@@ -33,7 +33,7 @@ c_ GraphWidget(qtw.QWidget):
     ___ add_value  value):
         value _ max(value, self.minimum)
         value _ min(value, self.maximum)
-        self.values.append(value)
+        self.values.ap..(value)
         self.update()
 
     ___ val_to_y  value):

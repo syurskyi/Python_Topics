@@ -247,12 +247,12 @@ c_ SpreadSheet ?MW..
 
     ___ runInputDialog  title, c1Text, c2Text, opText,
                        outText, cell1, cell2, outCell):
-        rows _ []
-        cols _ []
+        rows _   # list
+        cols _   # list
         for r in range(self.table.rowCount()):
-            rows.append(str(r + 1))
+            rows.ap..(str(r + 1))
         for c in range(self.table.columnCount()):
-            cols.append(chr(ord('A') + c))
+            cols.ap..(chr(ord('A') + c))
         addDialog _ QDialog(self)
         addDialog.setWindowTitle(title)
         group _ QGroupBox(title, addDialog)

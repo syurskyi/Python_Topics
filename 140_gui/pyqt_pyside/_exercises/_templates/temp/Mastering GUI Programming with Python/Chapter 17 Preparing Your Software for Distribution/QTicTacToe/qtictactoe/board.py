@@ -31,14 +31,14 @@ c_ TTTBoard(qtw.QGraphicsScene):
             'X': qtg.QPixmap(path.join(directory, 'images', 'X.png')),
             'O': qtg.QPixmap(path.join(directory, 'images', 'O.png'))
         }
-        self.marks _ []
+        self.marks _   # list
 
     ___ set_board  marks):
         for i, square in enumerate(marks):
             __ square in self.mark_pngs:
                 mark _ self.addPixmap(self.mark_pngs[square])
                 mark.setPos(self.square_rects[i].topLeft())
-                self.marks.append(mark)
+                self.marks.ap..(mark)
 
     ___ clear_board(self):
         for mark in self.marks:

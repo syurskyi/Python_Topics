@@ -72,26 +72,26 @@ c_ XmlSyntaxHighlighter(QSyntaxHighlighter):
     ___ __init__  parent_None):
         super(XmlSyntaxHighlighter, self).__init__(parent)
 
-        self.highlightingRules _ []
+        self.highlightingRules _   # list
 
         # Tag format.
         format _ QTextCharFormat()
         format.setForeground(__.darkBlue)
         format.setFontWeight(QFont.Bold)
         pattern _ QRegExp("(<[a-zA-Z:]+\\b|<\\?[a-zA-Z:]+\\b|\\?>|>|/>|</[a-zA-Z:]+>)")
-        self.highlightingRules.append((pattern, format))
+        self.highlightingRules.ap..((pattern, format))
 
         # Attribute format.
         format _ QTextCharFormat()
         format.setForeground(__.darkGreen)
         pattern _ QRegExp("[a-zA-Z:]+=")
-        self.highlightingRules.append((pattern, format))
+        self.highlightingRules.ap..((pattern, format))
 
         # Attribute content format.
         format _ QTextCharFormat()
         format.setForeground(__.red)
         pattern _ QRegExp("(\"[^\"]*\"|'[^']*')")
-        self.highlightingRules.append((pattern, format))
+        self.highlightingRules.ap..((pattern, format))
 
         # Comment format.
         self.commentFormat _ QTextCharFormat()
@@ -105,7 +105,7 @@ c_ XmlSyntaxHighlighter(QSyntaxHighlighter):
         for pattern, format in self.highlightingRules:
             expression _ QRegExp(pattern)
             index _ expression.indexIn(t__)
-            while index >_ 0:
+            w__ index >_ 0:
                 length _ expression.matchedLength()
                 self.setFormat(index, length, format)
                 index _ expression.indexIn(t__, index + length)
@@ -116,7 +116,7 @@ c_ XmlSyntaxHighlighter(QSyntaxHighlighter):
         __ self.previousBlockState() !_ 1:
             startIndex _ self.commentStartExpression.indexIn(t__)
 
-        while startIndex >_ 0:
+        w__ startIndex >_ 0:
             endIndex _ self.commentEndExpression.indexIn(t__, startIndex)
             __ endIndex == -1:
                 self.setCurrentBlockState(1)
@@ -239,7 +239,7 @@ c_ MainWindow(QMainWindow, Ui_SchemaMainWindow):
         self.validationStatus.setStyleSheet(styleSheet)
 
     ___ textChanged(self):
-        self.instanceEdit.setExtraSelections([])
+        self.instanceEdit.setExtraSelections(  # list)
 
     ___ moveCursor  line, column):
         self.instanceEdit.moveCursor(QTextCursor.Start)
@@ -250,7 +250,7 @@ c_ MainWindow(QMainWindow, Ui_SchemaMainWindow):
         for i in range(1, column):
             self.instanceEdit.moveCursor(QTextCursor.Right)
 
-        extraSelections _ []
+        extraSelections _   # list
         selection _ QTextEdit.ExtraSelection()
 
         lineColor _ ?C..(__.red).lighter(160)
@@ -258,7 +258,7 @@ c_ MainWindow(QMainWindow, Ui_SchemaMainWindow):
         selection.format.setProperty(QTextFormat.FullWidthSelection, True)
         selection.cursor _ self.instanceEdit.textCursor()
         selection.cursor.clearSelection()
-        extraSelections.append(selection)
+        extraSelections.ap..(selection)
 
         self.instanceEdit.setExtraSelections(extraSelections)
 

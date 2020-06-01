@@ -262,9 +262,9 @@ c_ GLWidget(QOpenGLWidget):
         self.gl.glVertex3d(x1, y1, -0.05)
 
     ___ normalizeAngle  angle):
-        while angle < 0:
+        w__ angle < 0:
             angle +_ 360 * 16
-        while angle > 360 * 16:
+        w__ angle > 360 * 16:
             angle -_ 360 * 16
         r_ angle
 

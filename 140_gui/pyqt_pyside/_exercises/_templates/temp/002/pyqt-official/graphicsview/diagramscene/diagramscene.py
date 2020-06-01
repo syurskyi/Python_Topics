@@ -134,7 +134,7 @@ c_ Arrow(QGraphicsLineItem):
 
         self.arrowHead.clear()
         for point in [line.p1(), arrowP1, arrowP2]:
-            self.arrowHead.append(point)
+            self.arrowHead.ap..(point)
 
         painter.drawLine(line)
         painter.drawPolygon(self.arrowHead)
@@ -180,7 +180,7 @@ c_ DiagramItem(QGraphicsPolygonItem):
     ___ __init__  diagramType, contextMenu, parent_None):
         super(DiagramItem, self).__init__(parent)
 
-        self.arrows _ []
+        self.arrows _   # list
 
         self.diagramType _ diagramType
         self.contextMenu _ contextMenu
@@ -227,7 +227,7 @@ c_ DiagramItem(QGraphicsPolygonItem):
             self.scene().removeItem(arrow)
 
     ___ addArrow  arrow):
-        self.arrows.append(arrow)
+        self.arrows.ap..(arrow)
 
     ___ image(self):
         pixmap _ QPixmap(250, 250)
@@ -353,10 +353,10 @@ c_ DiagramScene(QGraphicsScene):
         __ self.line and self.myMode == self.InsertLine:
             startItems _ self.items(self.line.line().p1())
             __ len(startItems) and startItems[0] == self.line:
-                startItems.pop(0)
+                startItems.p.. 0)
             endItems _ self.items(self.line.line().p2())
             __ len(endItems) and endItems[0] == self.line:
-                endItems.pop(0)
+                endItems.p.. 0)
 
             self.removeItem(self.line)
             self.line _ N..

@@ -50,12 +50,12 @@ ____ ?.?W.. ______ (?A.., ?A.., ?FD.., QMainWindow,
 
 c_ MainWindow ?MW..
     MaxRecentFiles _ 5
-    windowList _ []
+    windowList _   # list
 
     ___ __init__(self):
         super(MainWindow, self).__init__()
 
-        self.recentFileActs _ []
+        self.recentFileActs _   # list
 
         self.setAttribute(__.WA_DeleteOnClose)
 
@@ -71,7 +71,7 @@ c_ MainWindow ?MW..
 
     ___ newFile(self):
         other _ MainWindow()
-        MainWindow.windowList.append(other)
+        MainWindow.windowList.ap..(other)
         other.s..
 
     ___ o..(self):
@@ -116,7 +116,7 @@ c_ MainWindow ?MW..
                 triggered_self.saveAs)
 
         for i in range(MainWindow.MaxRecentFiles):
-            self.recentFileActs.append(
+            self.recentFileActs.ap..(
                     ?A..  visible_False,
                             triggered_self.openRecentFile))
 
@@ -189,7 +189,7 @@ c_ MainWindow ?MW..
             self.setWindowTitle("Recent Files")
 
         settings _ QSettings('Trolltech', 'Recent Files Example')
-        files _ settings.value('recentFileList', [])
+        files _ settings.value('recentFileList',   # list)
 
         try:
             files.remove(fileName)
@@ -207,7 +207,7 @@ c_ MainWindow ?MW..
 
     ___ updateRecentFileActions(self):
         settings _ QSettings('Trolltech', 'Recent Files Example')
-        files _ settings.value('recentFileList', [])
+        files _ settings.value('recentFileList',   # list)
 
         numRecentFiles _ min(len(files), MainWindow.MaxRecentFiles)
 

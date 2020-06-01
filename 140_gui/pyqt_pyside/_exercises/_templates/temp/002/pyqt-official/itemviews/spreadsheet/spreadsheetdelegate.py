@@ -55,11 +55,11 @@ c_ SpreadSheetDelegate(QItemDelegate):
 
         editor _ QLineEdit(parent)
         # create a completer with the strings in the column as model
-        allStrings _ []
+        allStrings _   # list
         for i in range(1, index.model().rowCount()):
             strItem _ index.model().data(index.sibling(i, index.column()), __.EditRole)
             __ strItem no. in allStrings:
-                allStrings.append(strItem)
+                allStrings.ap..(strItem)
 
         autoComplete _ QCompleter(allStrings)
         editor.setCompleter(autoComplete)

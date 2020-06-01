@@ -53,7 +53,7 @@ ______ sdi_rc
 
 c_ MainWindow ?MW..
     sequenceNumber _ 1
-    windowList _ []
+    windowList _   # list
 
     ___ __init__  fileName_None):
         super(MainWindow, self).__init__()
@@ -73,7 +73,7 @@ c_ MainWindow ?MW..
 
     ___ newFile(self):
         other _ MainWindow()
-        MainWindow.windowList.append(other)
+        MainWindow.windowList.ap..(other)
         other.move(self.x() + 40, self.y() + 40)
         other.s..
 
@@ -95,7 +95,7 @@ c_ MainWindow ?MW..
                     del other
                     r_
 
-                MainWindow.windowList.append(other)
+                MainWindow.windowList.ap..(other)
                 other.move(self.x() + 40, self.y() + 40)
                 other.s..
 

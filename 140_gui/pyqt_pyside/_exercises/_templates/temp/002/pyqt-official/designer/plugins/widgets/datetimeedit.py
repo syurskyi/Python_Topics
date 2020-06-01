@@ -179,7 +179,7 @@ c_ PyDateEdit(QDateEdit):
             __ self.__cw:
                 self.__cw.setNavigationBarVisible(visible)
     ___ resetNavigationBarVisible(self):
-        __ self.__navigationBarVisible !_ True:
+        __ self.__navigationBarVisible !_ T..
             self.__navigationBarVisible _ True
             __ self.__cw:
                 self.__cw.setNavigationBarVisible(True)
@@ -339,7 +339,7 @@ c_ PyDateTimeEdit(QDateTimeEdit):
             __ self.__cw:
                 self.__cw.setNavigationBarVisible(visible)
     ___ resetNavigationBarVisible(self):
-        __ self.__navigationBarVisible !_ True:
+        __ self.__navigationBarVisible !_ T..
             self.__navigationBarVisible _ True
             __ self.__cw:
                 self.__cw.setNavigationBarVisible(True)

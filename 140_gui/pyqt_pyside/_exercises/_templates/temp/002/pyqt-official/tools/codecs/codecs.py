@@ -67,13 +67,13 @@ c_ MainWindow ?MW..
         self.textEdit.setLineWrapMode(QTextEdit.NoWrap)
         self.sCW..(self.textEdit)
 
-        self.codecs _ []
+        self.codecs _   # list
         self.findCodecs()
 
         self.previewForm _ PreviewForm(self)
         self.previewForm.setCodecList(self.codecs)
 
-        self.saveAsActs _ []
+        self.saveAsActs _   # list
         self.createActions()
         self.createMenus()
 
@@ -125,7 +125,7 @@ c_ MainWindow ?MW..
             action.setVisible(codec and codec.canEncode(currentText))
 
     ___ findCodecs(self):
-        codecMap _ []
+        codecMap _   # list
         iso8859RegExp _ QRegExp('ISO[- ]8859-([0-9]+).*')
 
         for mib in QTextCodec.availableMibs
@@ -145,7 +145,7 @@ c_ MainWindow ?MW..
             ____
                 rank _ 5
 
-            codecMap.append((str(rank) + sortKey, codec))
+            codecMap.ap..((str(rank) + sortKey, codec))
 
         codecMap.sort()
         self.codecs _ [item[-1] for item in codecMap]
@@ -159,7 +159,7 @@ c_ MainWindow ?MW..
 
             action _ ?A..(name + '...', self, triggered_self.save)
             action.setData(name)
-            self.saveAsActs.append(action)
+            self.saveAsActs.ap..(action)
 
         self.exitAct _ ?A..("E&xit", self, shortcut_"Ctrl+Q",
                 triggered_self.close)

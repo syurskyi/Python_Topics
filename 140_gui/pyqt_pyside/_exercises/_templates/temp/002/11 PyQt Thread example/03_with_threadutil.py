@@ -1,11 +1,11 @@
 ____ ?.?C.. ______ *
 ____ ?.?W.. ______ *
 ____ requests ______ Session
-____ threading ______ Thread
+____ th.. ______ Thread
 ____ threadutil ______ run_in_main_thread
-____ time ______ sleep
+____ time ______ sl..
 
-name _ input("Please enter your name: ")
+name _ in.. ("Please enter your name: ")
 chat_url _ "https://build-system.fman.io/chat"
 server _ Session()
 
@@ -24,11 +24,11 @@ window.s..
 append_message _ run_in_main_thread(text_area.aPT..)
 
 ___ fetch_new_messages
-    while True:
+    w__ T..
         response _ server.g..(chat_url).t__
         __ response:
             append_message(response)
-        sleep(.5)
+        sl..(.5)
 
 ___ send_message
     server.post(chat_url, {"name": name, "message": message.t__()})
@@ -37,7 +37,7 @@ ___ send_message
 # Signals:
 message.rP__.c..(send_message)
 
-thread _ Thread(target_fetch_new_messages, daemon_True)
+thread _ Thread(target_fetch_new_messages, d.._T..
 thread.start()
 
 app.e..

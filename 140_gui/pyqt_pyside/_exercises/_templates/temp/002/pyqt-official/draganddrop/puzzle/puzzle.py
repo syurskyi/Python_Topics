@@ -61,9 +61,9 @@ c_ PuzzleWidget(QWidget):
     ___ __init__  parent_None):
         super(PuzzleWidget, self).__init__(parent)
 
-        self.piecePixmaps _ []
-        self.pieceRects _ []
-        self.pieceLocations _ []
+        self.piecePixmaps _   # list
+        self.pieceRects _   # list
+        self.pieceLocations _   # list
         self.highlightedRect _ QRect()
         self.inPlace _ 0
 
@@ -72,9 +72,9 @@ c_ PuzzleWidget(QWidget):
         self.setMaximumSize(400, 400)
 
     ___ clear(self):
-        self.pieceLocations _ []
-        self.piecePixmaps _ []
-        self.pieceRects _ []
+        self.pieceLocations _   # list
+        self.piecePixmaps _   # list
+        self.pieceRects _   # list
         self.highlightedRect _ QRect()
         self.inPlace _ 0
         self.update()
@@ -113,9 +113,9 @@ c_ PuzzleWidget(QWidget):
             location _ QPoint()
             dataStream >> pixmap >> location
 
-            self.pieceLocations.append(location)
-            self.piecePixmaps.append(pixmap)
-            self.pieceRects.append(square)
+            self.pieceLocations.ap..(location)
+            self.piecePixmaps.ap..(pixmap)
+            self.pieceRects.ap..(square)
 
             self.hightlightedRect _ QRect()
             self.update(square)

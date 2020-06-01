@@ -431,7 +431,7 @@ c_ SettingsTree(QTreeWidget):
         key _ item.t__(0)
         ancestor _ item.parent()
 
-        while ancestor:
+        w__ ancestor:
             key _ ancestor.t__(0) + '/' + key
             ancestor _ ancestor.parent()
 
@@ -485,7 +485,7 @@ c_ SettingsTree(QTreeWidget):
             child.sT..(2, VariantDelegate.displayText(value))
             child.setData(2, __.UserRole, value)
 
-        while dividerIndex < self.childCount(parent):
+        w__ dividerIndex < self.childCount(parent):
             self.deleteItem(parent, dividerIndex)
 
     ___ createItem  t__, parent, index):

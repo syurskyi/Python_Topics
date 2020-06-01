@@ -192,22 +192,22 @@ void main(void)
         self.c__.emit()
 
     ___ makeObject(self):
-        self.textures _ []
-        self.texCoords _ []
-        self.vertices _ []
+        self.textures _   # list
+        self.texCoords _   # list
+        self.vertices _   # list
 
         root _ QFileInfo(__file__).absolutePath()
 
         for i in range(6):
-            self.textures.append(
+            self.textures.ap..(
                     QOpenGLTexture(
                             QImage(root + ('/images/side%d.png' % (i + 1))).mirrored()))
 
             for j in range(4):
-                self.texCoords.append(((j == 0 or j == 3), (j == 0 or j == 1)))
+                self.texCoords.ap..(((j == 0 or j == 3), (j == 0 or j == 1)))
 
                 x, y, z _ self.coords[i][j]
-                self.vertices.append((0.2 * x, 0.2 * y, 0.2 * z))
+                self.vertices.ap..((0.2 * x, 0.2 * y, 0.2 * z))
 
 
 c_ Window(QWidget):
@@ -217,12 +217,12 @@ c_ Window(QWidget):
     ___ __init__(self):
         super(Window, self).__init__()
 
-        self.glWidgets _ []
+        self.glWidgets _   # list
 
         mainLayout _ QGridLayout()
 
         for i in range(Window.NumRows):
-            row _ []
+            row _   # list
 
             for j in range(Window.NumColumns):
                 clearColor _ ?C..()
@@ -237,9 +237,9 @@ c_ Window(QWidget):
 
                 widget.c__.c..(self.setCurrentGlWidget)
 
-                row.append(widget)
+                row.ap..(widget)
 
-            self.glWidgets.append(row)
+            self.glWidgets.ap..(row)
 
         self.sL..(mainLayout)
 

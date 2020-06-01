@@ -327,7 +327,7 @@ c_ LightMaps(QWidget):
                 self.zoomPixmap _ QPixmap(box)
                 self.zoomPixmap.fill(__.lightGray)
     
-            __ True:
+            __ T..
                 p _ QPainter(self.zoomPixmap)
                 p.translate(-xy)
                 self._largeMap.render(p, QRect(xy, box))

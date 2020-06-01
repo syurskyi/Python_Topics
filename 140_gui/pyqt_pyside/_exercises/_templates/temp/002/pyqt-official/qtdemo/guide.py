@@ -49,7 +49,7 @@ c_ Guide(object):
         self.scaleY _ 1.0
 
         __ follows __ no. N..:
-            while follows.nextGuide __ no. follows.firstGuide:
+            w__ follows.nextGuide __ no. follows.firstGuide:
                 follows _ follows.nextGuide
 
             follows.nextGuide _ self
@@ -69,7 +69,7 @@ c_ Guide(object):
 
         __ all:
             next _ self.nextGuide
-            while next __ no. self:
+            w__ next __ no. self:
                 next.scaleX _ scaleX
                 next.scaleY _ scaleY
                 next _ next.nextGuide
@@ -79,14 +79,14 @@ c_ Guide(object):
 
         __ all:
             next _ self.nextGuide
-            while next __ no. self:
+            w__ next __ no. self:
                 next.fence _ fence
                 next _ next.nextGuide
 
     ___ lengthAll(self):
         len _ self.length()
         next _ self.nextGuide
-        while next __ no. self:
+        w__ next __ no. self:
             len +_ next.length()
             next _ next.nextGuide
 

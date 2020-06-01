@@ -87,7 +87,7 @@ c_ FortuneThread(QThread):
         serverPort _ self.port
         self.mutex.unlock()
 
-        while no. self.quit:
+        w__ no. self.quit:
             Timeout _ 5 * 1000
 
             socket _ QTcpSocket()
@@ -97,7 +97,7 @@ c_ FortuneThread(QThread):
                 self.error.emit(socket.error(), socket.errorString())
                 r_
 
-            while socket.bytesAvailable() < 2:
+            w__ socket.bytesAvailable() < 2:
                 __ no. socket.waitForReadyRead(Timeout):
                     self.error.emit(socket.error(), socket.errorString())
                     r_
@@ -106,7 +106,7 @@ c_ FortuneThread(QThread):
             instr.setVersion(QDataStream.Qt_4_0)
             blockSize _ instr.readUInt16()
 
-            while socket.bytesAvailable() < blockSize:
+            w__ socket.bytesAvailable() < blockSize:
                 __ no. socket.waitForReadyRead(Timeout):
                     self.error.emit(socket.error(), socket.errorString())
                     r_

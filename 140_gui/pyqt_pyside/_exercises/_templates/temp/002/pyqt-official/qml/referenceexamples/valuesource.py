@@ -201,7 +201,7 @@ c_ BirthdayParty(QObject):
         super(BirthdayParty, self).__init__(parent)
 
         self._host _ N..
-        self._guests _ []
+        self._guests _   # list
 
     hostChanged _ pyqtSignal()
 
@@ -236,7 +236,7 @@ c_ HappyBirthdaySong(QObject, QQmlPropertyValueSource):
         super(HappyBirthdaySong, self).__init__(parent)
 
         self._line _ -1
-        self._lyrics _ []
+        self._lyrics _   # list
         self._target _ QQmlProperty()
         self._name _ ''
 

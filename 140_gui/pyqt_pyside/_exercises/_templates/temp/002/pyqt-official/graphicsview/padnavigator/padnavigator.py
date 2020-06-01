@@ -194,9 +194,9 @@ c_ PadNavigator(QGraphicsView):
 
         columns _ size.width()
         rows _ size.height()
-        stateGrid _ []
+        stateGrid _   # list
         for y in range(rows):
-            stateGrid.append([QState(frontState) for _ in range(columns)])
+            stateGrid.ap..([QState(frontState) for _ in range(columns)])
 
         frontState.setInitialState(stateGrid[0][0])
         selectionItem.setPos(pad.iconAt(0, 0).pos())
@@ -319,18 +319,18 @@ c_ FlippablePad(RoundRectItem):
                 ?C..(226, 255, 92, 64), parent)
 
         numIcons _ size.width() * size.height()
-        pixmaps _ []
+        pixmaps _   # list
         it _ QDirIterator(":/images", ["*.png"])
-        while it.hasNext() and len(pixmaps) < numIcons:
-            pixmaps.append(it.next())
+        w__ it.hasNext() and len(pixmaps) < numIcons:
+            pixmaps.ap..(it.next())
 
         iconRect _ QRectF(-54, -54, 108, 108)
         iconColor _ ?C..(214, 240, 110, 128)
-        self.iconGrid _ []
+        self.iconGrid _   # list
         n _ 0
 
         for y in range(size.height()):
-            row _ []
+            row _   # list
 
             for x in range(size.width()):
                 rect _ RoundRectItem(iconRect, iconColor, self)
@@ -339,9 +339,9 @@ c_ FlippablePad(RoundRectItem):
                 rect.setPixmap(pixmaps[n % len(pixmaps)])
                 n +_ 1
 
-                row.append(rect)
+                row.ap..(rect)
 
-            self.iconGrid.append(row)
+            self.iconGrid.ap..(row)
 
     ___ iconAt  column, row):
         r_ self.iconGrid[row][column]

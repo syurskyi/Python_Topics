@@ -175,8 +175,8 @@ c_ MainWindow ?MW..
 
         ?A...setOverrideCursor(QCursor(__.WaitCursor))
 
-        words _ []
-        while no. f.atEnd
+        words _   # list
+        w__ no. f.atEnd
             line _ f.readLine().trimmed()
             __ line.length() !_ 0:
                 try:
@@ -184,7 +184,7 @@ c_ MainWindow ?MW..
                 except TypeError:
                     line _ str(line)
 
-                words.append(line)
+                words.ap..(line)
 
         ?A...restoreOverrideCursor()
 

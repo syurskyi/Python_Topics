@@ -98,12 +98,12 @@ c_ Generator(QIODevice):
         sampleIndex _ 0
         factor _ 2 * pi * sampleRate / format.sampleRate()
 
-        while length !_ 0:
+        w__ length !_ 0:
             x _ sin((sampleIndex % format.sampleRate()) * factor)
             packed _ pack(pack_format, int(scaler(x)))
 
             for _ in range(format.channelCount()):
-                self.m_buffer.append(packed)
+                self.m_buffer.ap..(packed)
                 length -_ channelBytes
 
             sampleIndex +_ 1
@@ -112,9 +112,9 @@ c_ Generator(QIODevice):
         data _ QByteArray()
         total _ 0
 
-        while maxlen > total:
+        w__ maxlen > total:
             chunk _ min(self.m_buffer.size() - self.m_pos, maxlen - total)
-            data.append(self.m_buffer.mid(self.m_pos, chunk))
+            data.ap..(self.m_buffer.mid(self.m_pos, chunk))
             self.m_pos _ (self.m_pos + chunk) % self.m_buffer.size()
             total +_ chunk
 

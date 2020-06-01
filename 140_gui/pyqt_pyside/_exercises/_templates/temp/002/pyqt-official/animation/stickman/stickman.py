@@ -173,19 +173,19 @@ c_ StickMan(QGraphicsObject):
         self.m_fillColor _ ?C..(__.black)
 
         # Set up start position of limbs.
-        self.m_nodes _ []
+        self.m_nodes _   # list
         for x, y in Coords:
             node _ Node(QPointF(x, y), self)
             node.positionChanged.c..(self.childPositionChanged)
-            self.m_nodes.append(node)
+            self.m_nodes.ap..(node)
 
-        self.m_perfectBoneLengths _ []
+        self.m_perfectBoneLengths _   # list
         for n1, n2 in Bones:
             node1 _ self.m_nodes[n1]
             node2 _ self.m_nodes[n2]
 
             dist _ node1.pos() - node2.pos()
-            self.m_perfectBoneLengths.append(math.hypot(dist.x(), dist.y()))
+            self.m_perfectBoneLengths.ap..(math.hypot(dist.x(), dist.y()))
 
         self.startTimer(10)
 
@@ -373,17 +373,17 @@ c_ GraphicsView(QGraphicsView):
 
 c_ Frame(object):
     ___ __init__(self):
-        self.m_nodePositions _ []
+        self.m_nodePositions _   # list
 
     ___ nodeCount(self):
         r_ len(self.m_nodePositions)
 
     ___ setNodeCount  nodeCount):
-        while nodeCount > len(self.m_nodePositions):
-            self.m_nodePositions.append(QPointF())
+        w__ nodeCount > len(self.m_nodePositions):
+            self.m_nodePositions.ap..(QPointF())
 
-        while nodeCount < len(self.m_nodePositions):
-            self.m_nodePositions.pop()
+        w__ nodeCount < len(self.m_nodePositions):
+            self.m_nodePositions.p.. )
 
     ___ nodePos  idx):
         r_ QPointF(self.m_nodePositions[idx])
@@ -399,11 +399,11 @@ c_ Animation(object):
         self.m_name _ ''
 
     ___ setTotalFrames  totalFrames):
-        while len(self.m_frames) < totalFrames:
-            self.m_frames.append(Frame())
+        w__ len(self.m_frames) < totalFrames:
+            self.m_frames.ap..(Frame())
 
-        while totalFrames < len(self.m_frames):
-            self.m_frames.pop()
+        w__ totalFrames < len(self.m_frames):
+            self.m_frames.p.. )
 
     ___ totalFrames(self):
         r_ len(self.m_frames)
@@ -448,7 +448,7 @@ c_ Animation(object):
                 stream << frame.nodePos(i)
 
     ___ load  device):
-        self.m_frames _ []
+        self.m_frames _   # list
 
         stream _ QDataStream(device)
         self.m_name _ stream.readQString()
@@ -466,7 +466,7 @@ c_ Animation(object):
 
                 frame.setNodePos(j, pos)
 
-            self.m_frames.append(frame)
+            self.m_frames.ap..(frame)
 
 
 c_ KeyPressTransition(QSignalTransition):
@@ -509,10 +509,10 @@ c_ LifeCycle(object):
         # Create animation group to be used for all transitions.
         self.m_animationGroup _ QParallelAnimationGroup()
         stickManNodeCount _ self.m_stickMan.nodeCount()
-        self._pas _ []
+        self._pas _   # list
         for i in range(stickManNodeCount):
             pa _ QPropertyAnimation(self.m_stickMan.node(i), b'pos')
-            self._pas.append(pa)
+            self._pas.ap..(pa)
             self.m_animationGroup.addAnimation(pa)
 
         # Set up intial state graph.

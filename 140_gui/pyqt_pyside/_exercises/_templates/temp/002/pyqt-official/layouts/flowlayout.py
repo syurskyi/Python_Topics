@@ -71,15 +71,15 @@ c_ FlowLayout(QLayout):
 
         self.setSpacing(spacing)
 
-        self.itemList _ []
+        self.itemList _   # list
 
     ___ __del__(self):
         item _ self.takeAt(0)
-        while item:
+        w__ item:
             item _ self.takeAt(0)
 
     ___ addItem  item):
-        self.itemList.append(item)
+        self.itemList.ap..(item)
 
     ___ count(self):
         r_ len(self.itemList)
@@ -92,7 +92,7 @@ c_ FlowLayout(QLayout):
 
     ___ takeAt  index):
         __ index >_ 0 and index < len(self.itemList):
-            r_ self.itemList.pop(index)
+            r_ self.itemList.p.. index)
 
         r_ N..
 

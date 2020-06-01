@@ -73,7 +73,7 @@ c_ Receiver(QDialog):
         self.setWindowTitle("Broadcast Receiver")
 
     ___ processPendingDatagrams(self):
-        while self.udpSocket.hasPendingDatagrams
+        w__ self.udpSocket.hasPendingDatagrams
             datagram, host, port _ self.udpSocket.readDatagram(self.udpSocket.pendingDatagramSize())
 
             try:

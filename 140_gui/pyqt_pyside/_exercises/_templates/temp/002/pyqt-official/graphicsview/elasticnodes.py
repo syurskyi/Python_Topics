@@ -160,7 +160,7 @@ c_ Node(QGraphicsItem):
         super(Node, self).__init__()
 
         self.graph _ graphWidget
-        self.edgeList _ []
+        self.edgeList _   # list
         self.newPos _ QPointF()
 
         self.setFlag(QGraphicsItem.ItemIsMovable)
@@ -172,7 +172,7 @@ c_ Node(QGraphicsItem):
         r_ Node.Type
 
     ___ addEdge  edge):
-        self.edgeList.append(edge)
+        self.edgeList.ap..(edge)
         edge.adjust()
 
     ___ edges(self):

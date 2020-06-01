@@ -58,7 +58,7 @@ c_ InvoiceForm(qtw.QWidget):
             total _ rate * hours
             row_data _ [job, rate, hours, total]
             __ any(row_data):
-                data['line_items'].append(row_data)
+                data['line_items'].ap..(row_data)
         data['total_due'] _ sum(x[3] for x in data['line_items'])
         self.submitted.emit(data)
 

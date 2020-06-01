@@ -24,19 +24,19 @@ c_ DiskUsageChartView(qtch.QChartView):
 
         # add bar sets
         bar_set _ qtch.QBarSet('Percent Used')
-        series.append(bar_set)
+        series.ap..(bar_set)
 
         # Get the data
-        partitions _ []
+        partitions _   # list
         for part in psutil.disk_partitions
             __ 'rw' in part.opts.split(','):
-                partitions.append(part.device)
+                partitions.ap..(part.device)
                 usage _ psutil.disk_usage(part.mountpoint).percent
-                bar_set.append(usage)
+                bar_set.ap..(usage)
 
         # Create Axis
         x_axis _ qtch.QBarCategoryAxis()
-        x_axis.append(partitions)
+        x_axis.ap..(partitions)
         chart.setAxisX(x_axis)
         series.attachAxis(x_axis)
         y_axis _ qtch.QValueAxis()
@@ -67,7 +67,7 @@ c_ CPUUsageView(qtch.QChartView):
         # Create data container
         self.data _ deque(
             [0] * self.num_data_points, maxlen_self.num_data_points)
-        self.series.append([
+        self.series.ap..([
             qtc.QPoint(x, y)
             for x, y in enumerate(self.data)
         ])
@@ -91,7 +91,7 @@ c_ CPUUsageView(qtch.QChartView):
 
     ___ refresh_stats(self):
         usage _ psutil.cpu_percent()
-        self.data.append(usage)
+        self.data.ap..(usage)
         new_data _ [
             qtc.QPoint(x, y)
             for x, y in enumerate(self.data)]
@@ -132,16 +132,16 @@ c_ MemoryChartView(qtch.QChartView):
         chart.addSeries(series)
         self.phys_set _ qtch.QBarSet("Physical")
         self.swap_set _ qtch.QBarSet("Swap")
-        series.append(self.phys_set)
-        series.append(self.swap_set)
+        series.ap..(self.phys_set)
+        series.ap..(self.swap_set)
 
         # Setup Data
         self.data _ deque(
             [(0, 0)] * self.num_data_points,
             maxlen_self.num_data_points)
         for phys, swap in self.data:
-            self.phys_set.append(phys)
-            self.swap_set.append(swap)
+            self.phys_set.ap..(phys)
+            self.swap_set.ap..(swap)
 
         # Setup Axes
         x_axis _ qtch.QValueAxis()
@@ -227,7 +227,7 @@ c_ MemoryChartView(qtch.QChartView):
         phys_pct _ (phys.used / total_mem) * 100
         swap_pct _ (swap.used / total_mem) * 100
 
-        self.data.append(
+        self.data.ap..(
             (phys_pct, swap_pct))
         for x, (phys, swap) in enumerate(self.data):
             self.phys_set.replace(x, phys)

@@ -13,7 +13,7 @@ It allows you to receive results from the function invocation:
 ____ functools ______ wraps
 ____ ?.?C.. ______ pyqtSignal, QObject, QThread
 ____ ?.?W.. ______ ?A..
-____ threading ______ Event, get_ident
+____ th.. ______ Event, get_ident
 
 ___ run_in_thread(thread_fn):
     ___ decorator(f):
@@ -48,7 +48,7 @@ c_ Executor:
             cls._INSTANCE _ cls(?A...instance())
         r_ cls._INSTANCE
     ___ __init__  app):
-        self._pending_tasks _ []
+        self._pending_tasks _   # list
         self._app_is_about_to_quit _ False
         app.aboutToQuit.c..(self._about_to_quit)
     ___ _about_to_quit(self):
@@ -65,7 +65,7 @@ c_ Executor:
             # submitted to the event loop via signals/slots) is never run.
             raise SystemExit()
         task _ Task(f, args, kwargs)
-        self._pending_tasks.append(task)
+        self._pending_tasks.ap..(task)
         try:
             receiver _ Receiver(task)
             receiver.moveToThread(thread)

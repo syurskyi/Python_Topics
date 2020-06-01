@@ -22,7 +22,7 @@ c_ UdpChatInterface(qtc.QObject):
         self.socket.error.c..(self.on_error)
 
     ___ process_datagrams(self):
-        while self.socket.hasPendingDatagrams
+        w__ self.socket.hasPendingDatagrams
             datagram _ self.socket.receiveDatagram()
             # to convert QByteArray to a string,
             # cast it to bytes then decode
@@ -75,7 +75,7 @@ c_ ChatWindow(qtw.QWidget):
         self.layout().aW..(self.send_btn, 2, 2)
 
     ___ write_message  username, message):
-        self.message_view.append(f'<b>{username}: </b> {message}<br>')
+        self.message_view.ap..(f'<b>{username}: </b> {message}<br>')
 
     ___ send(self):
         message _ self.message_entry.t__().strip()

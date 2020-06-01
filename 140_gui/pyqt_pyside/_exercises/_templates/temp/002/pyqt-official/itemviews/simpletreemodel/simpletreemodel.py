@@ -52,10 +52,10 @@ c_ TreeItem(object):
     ___ __init__  data, parent_None):
         self.parentItem _ parent
         self.itemData _ data
-        self.childItems _ []
+        self.childItems _   # list
 
     ___ appendChild  item):
-        self.childItems.append(item)
+        self.childItems.ap..(item)
 
     ___ child  row):
         r_ self.childItems[row]
@@ -162,9 +162,9 @@ c_ TreeModel(QAbstractItemModel):
 
         number _ 0
 
-        while number < len(lines):
+        w__ number < len(lines):
             position _ 0
-            while position < len(lines[number]):
+            w__ position < len(lines[number]):
                 __ lines[number][position] !_ ' ':
                     break
                 position +_ 1
@@ -180,13 +180,13 @@ c_ TreeModel(QAbstractItemModel):
                     # parent unless the current parent has no children.
 
                     __ parents[-1].childCount() > 0:
-                        parents.append(parents[-1].child(parents[-1].childCount() - 1))
-                        indentations.append(position)
+                        parents.ap..(parents[-1].child(parents[-1].childCount() - 1))
+                        indentations.ap..(position)
 
                 ____
-                    while position < indentations[-1] and len(parents) > 0:
-                        parents.pop()
-                        indentations.pop()
+                    w__ position < indentations[-1] and len(parents) > 0:
+                        parents.p.. )
+                        indentations.p.. )
 
                 # Append a new item to the current parent's list of children.
                 parents[-1].appendChild(TreeItem(columnData, parents[-1]))

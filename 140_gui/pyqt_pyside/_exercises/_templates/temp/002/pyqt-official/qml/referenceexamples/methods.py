@@ -100,7 +100,7 @@ c_ BirthdayParty(QObject):
         super(BirthdayParty, self).__init__(parent)
 
         self._host _ N..
-        self._guests _ []
+        self._guests _   # list
 
     @pyqtProperty(Person)
     ___ host(self):
@@ -118,7 +118,7 @@ c_ BirthdayParty(QObject):
     ___ invite  name):
         person _ Person(self)
         person.name _ name
-        self._guests.append(person)
+        self._guests.ap..(person)
 
 
 app _ QCoreApplication(sys.argv)

@@ -236,14 +236,14 @@ c_ MainWindow(qtw.QMainWindow):
             # We're going to grab all the colors from the color table
             # then alter the hue and saturation of each color
             colors _ self.image.colorTable()
-            new_colors _ []
+            new_colors _   # list
             for color in colors:
                 qcolor _ qtg.?C..(color)
                 qcolor.setHslF(
                     ((qcolor.hueF() * 200) % 100)/100,
                     min(1, qcolor.saturationF() * 2),
                     qcolor.lightnessF())
-                new_colors.append(qcolor.rgba())
+                new_colors.ap..(qcolor.rgba())
             self.image.setColorTable(new_colors)
 
             # Convert back to the original format

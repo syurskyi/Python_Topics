@@ -6,12 +6,12 @@ ____ ?.QtMultimedia ______ QSound
 c_ PlainTextEdit(QPlainTextEdit):
     ___ __init__(self):
         super().__init__()
-        self._holes _ []
+        self._holes _   # list
         self._bullet _ QPixmap("bullet.png")
         size _ self._bullet.size()
         self._offset _ QPoint(size.width() / 2, size.height() / 2)
     ___ mousePressEvent  e):
-        self._holes.append(e.pos())
+        self._holes.ap..(e.pos())
         super().mousePressEvent(e)
         self.viewport().update()
         QSound.play("shot.wav")

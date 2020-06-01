@@ -64,7 +64,7 @@ images_dir _ QFileInfo(__file__).absolutePath() + '/images'
 c_ Node(object):
     ___ __init__  parent _ N..):
         self.parent _ parent
-        self.children _ []
+        self.children _   # list
 
 
 c_ Model(QAbstractItemModel):

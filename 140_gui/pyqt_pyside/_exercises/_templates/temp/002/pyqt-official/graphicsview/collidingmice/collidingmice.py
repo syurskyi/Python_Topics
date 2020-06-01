@@ -82,9 +82,9 @@ c_ Mouse(QGraphicsItem):
 
     @staticmethod
     ___ normalizeAngle(angle):
-        while angle < 0:
+        w__ angle < 0:
             angle +_ Mouse.TwoPi
-        while angle > Mouse.TwoPi:
+        w__ angle > Mouse.TwoPi:
             angle -_ Mouse.TwoPi
         r_ angle
 

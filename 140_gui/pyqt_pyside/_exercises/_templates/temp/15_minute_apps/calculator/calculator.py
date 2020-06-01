@@ -74,7 +74,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
         __ self.current_op:  # Complete the current operation
             self.equals()
 
-        self.stack.append(0)
+        self.stack.ap..(0)
         self.state _ INPUT
         self.current_op _ op
 
@@ -88,7 +88,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
         # if no further input has been added.
         __ self.state == READY and self.last_operation:
             s, self.current_op _ self.last_operation
-            self.stack.append(s)
+            self.stack.ap..(s)
 
         __ self.current_op:
             self.last_operation _ self.stack[-1], self.current_op

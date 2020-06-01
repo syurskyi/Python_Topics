@@ -25,7 +25,7 @@
 #         text_area.aPT.. ?
 #
 # ___ send_message
-#     s__.p.. c_u.. {"name" ? "message" ?.t__
+#     s__.p.. c_u.. |"name" ? "message" ?.t__
 #     m__.c..
 #
 # # Signals:

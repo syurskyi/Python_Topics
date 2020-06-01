@@ -80,9 +80,9 @@ c_ MainWindow(qtw.QMainWindow):
 
         # Retreive the roasts table
         query _ self.db.exec('SELECT * FROM roasts ORDER BY id')
-        roasts _ []
-        while query.next
-            roasts.append(query.value(1))
+        roasts _   # list
+        w__ query.next
+            roasts.ap..(query.value(1))
 
         # create the form
         self.coffee_form _ CoffeeForm(roasts)
@@ -136,9 +136,9 @@ c_ MainWindow(qtw.QMainWindow):
         query2.prepare('SELECT * FROM reviews WHERE coffee_id=:id')
         query2.bindValue(':id', coffee_id)
         query2.exec()
-        reviews _ []
-        while query2.next
-            reviews.append((
+        reviews _   # list
+        w__ query2.next
+            reviews.ap..((
                 query2.value('reviewer'),
                 query2.value('review_date'),
                 query2.value('review')

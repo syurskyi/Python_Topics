@@ -156,13 +156,13 @@ __ __name__ == '__main__':
 
     scene _ QGraphicsScene(-350, -350, 700, 700)
 
-    items _ []
+    items _   # list
     for i in range(64):
         item _ Pixmap(kineticPix)
         item.pixmap_item.setOffset(-kineticPix.width() / 2,
                 -kineticPix.height() / 2)
         item.pixmap_item.setZValue(i)
-        items.append(item)
+        items.ap..(item)
         scene.addItem(item.pixmap_item)
 
     # Buttons.

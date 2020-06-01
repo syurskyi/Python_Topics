@@ -259,12 +259,12 @@ c_ DetailsDialog(QDialog):
             self.itemsTable.setItem(row, 1, quantity)
 
     ___ orderItems(self):
-        orderList _ []
+        orderList _   # list
 
         for row in range(len(self.items)):
             t__ _ self.itemsTable.item(row, 0).t__()
             quantity _ int(self.itemsTable.item(row, 1).data(__.DisplayRole))
-            orderList.append((t__, max(0, quantity)))
+            orderList.ap..((t__, max(0, quantity)))
 
         r_ orderList
 

@@ -98,7 +98,7 @@ c_ DomModel(QAbstractItemModel):
         item _ index.internalPointer()
 
         node _ item.node()
-        attributes _ []
+        attributes _   # list
         attributeMap _ node.attributes()
 
         __ index.column() == 0:
@@ -107,7 +107,7 @@ c_ DomModel(QAbstractItemModel):
         ____ index.column() == 1:
             for i in range(0, attributeMap.count()):
                 attribute _ attributeMap.item(i)
-                attributes.append(attribute.nodeName() + '="' +
+                attributes.ap..(attribute.nodeName() + '="' +
                                   attribute.nodeValue() + '"')
 
             r_ " ".join(attributes)

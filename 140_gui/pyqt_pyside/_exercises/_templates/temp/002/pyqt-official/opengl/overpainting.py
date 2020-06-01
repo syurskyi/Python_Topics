@@ -126,7 +126,7 @@ c_ GLWidget(QOpenGLWidget):
         self.yRot _ 0
         self.zRot _ 0
         self.image _ QImage()
-        self.bubbles _ []
+        self.bubbles _   # list
         self.lastPos _ QPoint()
 
         self.trolltechGreen _ ?C...fromCmykF(0.40, 0.0, 1.0, 0.0)
@@ -309,9 +309,9 @@ c_ GLWidget(QOpenGLWidget):
         self.gl.glVertex3d(x1, y1, -0.05)
 
     ___ normalizeAngle  angle):
-        while angle < 0:
+        w__ angle < 0:
             angle +_ 360 * 16
-        while angle > 360 * 16:
+        w__ angle > 360 * 16:
             angle -_ 360 * 16
         r_ angle
 
@@ -323,7 +323,7 @@ c_ GLWidget(QOpenGLWidget):
             velocity _ QPointF(self.width()*0.0125*(-0.5 + random.random()),
                                self.height()*0.0125*(-0.5 + random.random()))
 
-            self.bubbles.append(Bubble(position, radius, velocity))
+            self.bubbles.ap..(Bubble(position, radius, velocity))
 
     ___ animate(self):
         for bubble in self.bubbles:

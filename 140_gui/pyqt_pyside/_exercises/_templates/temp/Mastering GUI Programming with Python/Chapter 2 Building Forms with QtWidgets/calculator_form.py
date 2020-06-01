@@ -29,11 +29,11 @@ c_ MainWindow(qtw.QWidget):
         ]
         button_layout _ qtw.QGridLayout()
         self.layout().addLayout(button_layout)
-        buttons _ []
+        buttons _   # list
         for num, button_text in enumerate(button_texts):
             button _ qtw.?PB..(button_text, self)
             button.setSizePolicy(qtw.QSizePolicy.Expanding, qtw.QSizePolicy.Expanding)
-            buttons.append(button)
+            buttons.ap..(button)
             row _ num // 4
             column _ num % 4
             button_layout.aW..(button, row, column)

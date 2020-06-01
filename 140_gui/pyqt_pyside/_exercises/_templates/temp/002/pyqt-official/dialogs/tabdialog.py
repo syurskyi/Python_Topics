@@ -166,10 +166,10 @@ c_ ApplicationsTab(QWidget):
         topLabel _ QLabel("Open with:")
 
         applicationsListBox _ QListWidget()
-        applications _ []
+        applications _   # list
 
         for i in range(1, 31):
-            applications.append("Application %d" % i)
+            applications.ap..("Application %d" % i)
 
         applicationsListBox.insertItems(0, applications)
 

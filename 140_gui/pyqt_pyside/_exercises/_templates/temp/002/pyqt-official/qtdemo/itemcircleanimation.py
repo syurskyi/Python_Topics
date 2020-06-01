@@ -195,7 +195,7 @@ c_ ItemCircleAnimation(DemoItem):
     ___ __init__  parent_None):
         super(ItemCircleAnimation, self).__init__(parent)
 
-        self.letterList _ []
+        self.letterList _   # list
         self.letterCount _ Colors.tickerLetterCount
         self.scale _ 1.0
         self.showCount _ -1
@@ -214,22 +214,22 @@ c_ ItemCircleAnimation(DemoItem):
 
     ___ createLetter  c):
         letter _ LetterItem(c, self)
-        self.letterList.append(letter)
+        self.letterList.ap..(letter)
 
     ___ setupLetters(self):
-        self.letterList _ []
+        self.letterList _   # list
 
         s _ Colors.tickerText
         tlen _ len(s)
         room _ self.letterCount
-        while room >_ tlen:
+        w__ room >_ tlen:
             for c in s:
                 self.createLetter(c)
 
             room -_ tlen
 
         # Fill in with blanks.
-        while room > 0:
+        w__ room > 0:
             self.createLetter(' ')
             room -_ 1
 

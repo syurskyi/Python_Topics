@@ -110,17 +110,17 @@ c_ IconPreviewArea(QWidget):
 
         self.icon _ QIcon()
         self.size _ QSize()
-        self.stateLabels _ []
-        self.modeLabels _ []
-        self.pixmapLabels _ []
+        self.stateLabels _   # list
+        self.modeLabels _   # list
+        self.pixmapLabels _   # list
 
-        self.stateLabels.append(self.createHeaderLabel("Off"))
-        self.stateLabels.append(self.createHeaderLabel("On"))
+        self.stateLabels.ap..(self.createHeaderLabel("Off"))
+        self.stateLabels.ap..(self.createHeaderLabel("On"))
 
-        self.modeLabels.append(self.createHeaderLabel("Normal"))
-        self.modeLabels.append(self.createHeaderLabel("Active"))
-        self.modeLabels.append(self.createHeaderLabel("Disabled"))
-        self.modeLabels.append(self.createHeaderLabel("Selected"))
+        self.modeLabels.ap..(self.createHeaderLabel("Normal"))
+        self.modeLabels.ap..(self.createHeaderLabel("Active"))
+        self.modeLabels.ap..(self.createHeaderLabel("Disabled"))
+        self.modeLabels.ap..(self.createHeaderLabel("Selected"))
 
         for j, label in enumerate(self.stateLabels):
             mainLayout.aW..(label, j + 1, 0)
@@ -128,9 +128,9 @@ c_ IconPreviewArea(QWidget):
         for i, label in enumerate(self.modeLabels):
             mainLayout.aW..(label, 0, i + 1)
 
-            self.pixmapLabels.append([])
+            self.pixmapLabels.ap..(  # list)
             for j in range(len(self.stateLabels)):
-                self.pixmapLabels[i].append(self.createPixmapLabel())
+                self.pixmapLabels[i].ap..(self.createPixmapLabel())
                 mainLayout.aW..(self.pixmapLabels[i][j], j + 1, i + 1)
 
     ___ setIcon  icon):

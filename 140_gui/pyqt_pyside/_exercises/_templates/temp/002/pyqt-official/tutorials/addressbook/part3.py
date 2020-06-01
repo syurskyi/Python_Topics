@@ -204,7 +204,7 @@ c_ AddressBook(QWidget):
         it _ iter(self.contacts)
 
         try:
-            while True:
+            w__ T..
                 this_name, _ _ it.next()
 
                 __ this_name == name:

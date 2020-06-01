@@ -646,11 +646,11 @@ c_ TextEdit ?MW..
 __ __name__ == '__main__':
     app _ ?A..(sys.argv)
 
-    mainWindows _ []
+    mainWindows _   # list
     for fn in sys.argv[1:] or [N..]:
         textEdit _ TextEdit(fn)
         textEdit.resize(700, 800)
         textEdit.s..
-        mainWindows.append(textEdit)
+        mainWindows.ap..(textEdit)
 
     sys.exit(app.exec_())

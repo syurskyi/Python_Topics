@@ -201,7 +201,7 @@ c_ Window(QWidget):
             curvePath _ QPainterPath()
             curvePath.moveTo(QPointF(start))
             t _ 0.0
-            while t <_ 1.0:
+            w__ t <_ 1.0:
                 to _ QPointF(yAxis + curveScale * t,
                         xAxis - curveScale * curve.valueForProgress(t))
                 curvePath.lineTo(to)

@@ -58,7 +58,7 @@ c_ Lighting(QGraphicsView):
         self.angle _ 0.0
         self.m_scene _ QGraphicsScene()
         self.m_lightSource _ N..
-        self.m_items _ []
+        self.m_items _   # list
 
         self.setScene(self.m_scene)
 
@@ -113,7 +113,7 @@ c_ Lighting(QGraphicsView):
                 item.setZValue(1)
                 item.setPos(i * 80, j * 80)
                 self.m_scene.addItem(item)
-                self.m_items.append(item)
+                self.m_items.ap..(item)
 
     ___ animate(self):
         self.angle +_ (math.pi / 30)

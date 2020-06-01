@@ -139,12 +139,12 @@ c_ Highlighter(QSyntaxHighlighter):
         classFormat _ QTextCharFormat()
         classFormat.setFontWeight(QFont.Bold)
         classFormat.setForeground(__.darkMagenta)
-        self.highlightingRules.append((QRegExp("\\bQ[A-Za-z]+\\b"),
+        self.highlightingRules.ap..((QRegExp("\\bQ[A-Za-z]+\\b"),
                 classFormat))
 
         singleLineCommentFormat _ QTextCharFormat()
         singleLineCommentFormat.setForeground(__.red)
-        self.highlightingRules.append((QRegExp("//[^\n]*"),
+        self.highlightingRules.ap..((QRegExp("//[^\n]*"),
                 singleLineCommentFormat))
 
         self.multiLineCommentFormat _ QTextCharFormat()
@@ -152,12 +152,12 @@ c_ Highlighter(QSyntaxHighlighter):
 
         quotationFormat _ QTextCharFormat()
         quotationFormat.setForeground(__.darkGreen)
-        self.highlightingRules.append((QRegExp("\".*\""), quotationFormat))
+        self.highlightingRules.ap..((QRegExp("\".*\""), quotationFormat))
 
         functionFormat _ QTextCharFormat()
         functionFormat.setFontItalic(True)
         functionFormat.setForeground(__.blue)
-        self.highlightingRules.append((QRegExp("\\b[A-Za-z0-9_]+(?=\\()"),
+        self.highlightingRules.ap..((QRegExp("\\b[A-Za-z0-9_]+(?=\\()"),
                 functionFormat))
 
         self.commentStartExpression _ QRegExp("/\\*")
@@ -167,7 +167,7 @@ c_ Highlighter(QSyntaxHighlighter):
         for pattern, format in self.highlightingRules:
             expression _ QRegExp(pattern)
             index _ expression.indexIn(t__)
-            while index >_ 0:
+            w__ index >_ 0:
                 length _ expression.matchedLength()
                 self.setFormat(index, length, format)
                 index _ expression.indexIn(t__, index + length)
@@ -178,7 +178,7 @@ c_ Highlighter(QSyntaxHighlighter):
         __ self.previousBlockState() !_ 1:
             startIndex _ self.commentStartExpression.indexIn(t__)
 
-        while startIndex >_ 0:
+        w__ startIndex >_ 0:
             endIndex _ self.commentEndExpression.indexIn(t__, startIndex)
 
             __ endIndex == -1:

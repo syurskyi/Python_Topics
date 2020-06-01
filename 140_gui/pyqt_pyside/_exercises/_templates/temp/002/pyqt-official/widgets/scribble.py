@@ -171,7 +171,7 @@ c_ MainWindow ?MW..
     ___ __init__(self):
         super(MainWindow, self).__init__()
 
-        self.saveAsActs _ []
+        self.saveAsActs _   # list
 
         self.scribbleArea _ ScribbleArea()
         self.sCW..(self.scribbleArea)
@@ -238,7 +238,7 @@ c_ MainWindow ?MW..
 
             action _ ?A..(t__, self, triggered_self.save)
             action.setData(format)
-            self.saveAsActs.append(action)
+            self.saveAsActs.ap..(action)
 
         self.printAct _ ?A..("&Print...", self,
                 triggered_self.scribbleArea.print_)

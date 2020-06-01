@@ -56,7 +56,7 @@ c_ FileListModel(QAbstractListModel):
         super(FileListModel, self).__init__(parent)
 
         self.fileCount _ 0
-        self.fileList _ []
+        self.fileList _   # list
 
     ___ rowCount  parent_QModelIndex()):
         r_ self.fileCount
@@ -136,7 +136,7 @@ c_ Window(QWidget):
         self.setWindowTitle("Fetch More Example")
 
     ___ updateLog  number):
-        self.logViewer.append("%d items added." % number)
+        self.logViewer.ap..("%d items added." % number)
 
 
 __ __name__ == '__main__':

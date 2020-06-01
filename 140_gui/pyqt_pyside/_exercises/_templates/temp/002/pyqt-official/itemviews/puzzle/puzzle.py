@@ -61,9 +61,9 @@ c_ PuzzleWidget(QWidget):
     ___ __init__  parent_None):
         super(PuzzleWidget, self).__init__(parent)
 
-        self.piecePixmaps _ []
-        self.pieceRects _ []
-        self.pieceLocations _ []
+        self.piecePixmaps _   # list
+        self.pieceRects _   # list
+        self.pieceLocations _   # list
         self.highlightedRect _ QRect()
         self.inPlace _ 0
 
@@ -72,9 +72,9 @@ c_ PuzzleWidget(QWidget):
         self.setMaximumSize(400, 400)
 
     ___ clear(self):
-        self.pieceLocations _ []
-        self.piecePixmaps _ []
-        self.pieceRects _ []
+        self.pieceLocations _   # list
+        self.piecePixmaps _   # list
+        self.pieceRects _   # list
         self.highlightedRect _ QRect()
         self.inPlace _ 0
         self.update()
@@ -113,9 +113,9 @@ c_ PuzzleWidget(QWidget):
             location _ QPoint()
             stream >> pixmap >> location
 
-            self.pieceLocations.append(location)
-            self.piecePixmaps.append(pixmap)
-            self.pieceRects.append(square)
+            self.pieceLocations.ap..(location)
+            self.piecePixmaps.ap..(pixmap)
+            self.pieceRects.ap..(square)
 
             self.hightlightedRect _ QRect()
             self.update(square)
@@ -200,8 +200,8 @@ c_ PiecesModel(QAbstractListModel):
     ___ __init__  parent_None):
         super(PiecesModel, self).__init__(parent)
 
-        self.locations _ []
-        self.pixmaps _ []
+        self.locations _   # list
+        self.pixmaps _   # list
 
     ___ data  index, role_Qt.DisplayRole):
         __ no. index.isValid
@@ -294,7 +294,7 @@ c_ PiecesModel(QAbstractListModel):
         encodedData _ data.data('image/x-puzzle-piece')
         stream _ QDataStream(encodedData, QIODevice.ReadOnly)
 
-        while no. stream.atEnd
+        w__ no. stream.atEnd
             pixmap _ QPixmap()
             location _ QPoint()
             stream >> pixmap >> location
@@ -319,8 +319,8 @@ c_ PiecesModel(QAbstractListModel):
 
     ___ addPieces  pixmap):
         self.beginRemoveRows(QModelIndex(), 0, 24)
-        self.pixmaps _ []
-        self.locations _ []
+        self.pixmaps _   # list
+        self.locations _   # list
         self.endRemoveRows()
 
         for y in range(5):

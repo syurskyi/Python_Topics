@@ -104,7 +104,7 @@ c_ FrameCapture(QObject):
         __ self._percent >_ percent:
             r_
         self._percent +_ 1
-        while self._percent < percent:
+        w__ self._percent < percent:
             self._percent +_ 1
             cout("#")
  

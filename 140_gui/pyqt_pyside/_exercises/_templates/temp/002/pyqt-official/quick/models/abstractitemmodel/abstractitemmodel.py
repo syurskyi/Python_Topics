@@ -71,11 +71,11 @@ c_ AnimalModel(QAbstractListModel):
     ___ __init__  parent_None):
         super(AnimalModel, self).__init__(parent)
 
-        self._animals _ []
+        self._animals _   # list
 
     ___ addAnimal  animal):
         self.beginInsertRows(QModelIndex(), self.rowCount(), self.rowCount())
-        self._animals.append(animal)
+        self._animals.ap..(animal)
         self.endInsertRows()
 
     ___ rowCount  parent_QModelIndex()):

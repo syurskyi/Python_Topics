@@ -84,7 +84,7 @@ c_ ExampleContent(DemoItem):
     ___ loadDescription(self):
         contents _ self._menu_manager.getHtml(self.name).data().decode('utf8')
         __ contents == '':
-            paragraphs _ []
+            paragraphs _   # list
         ____
             exampleDoc _ parseString(contents)
             paragraphs _ exampleDoc.getElementsByTagName('p')
@@ -109,7 +109,7 @@ c_ ExampleContent(DemoItem):
         description _ ''
         node _ parentNode.firstChild
 
-        while node __ no. N..:
+        w__ node __ no. N..:
             __ node.nodeType == node.TEXT_NODE:
                 description +_ Colors.contentColor + node.nodeValue
             ____ node.hasChildNodes

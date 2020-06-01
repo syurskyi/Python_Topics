@@ -52,12 +52,12 @@ ____ ui_mainwindow ______ Ui_MainWindow
 c_ MainWindow(QMainWindow, Ui_MainWindow):
     # Maintain the list of browser windows so that they do not get garbage
     # collected.
-    _window_list _ []
+    _window_list _   # list
 
     ___ __init__(self):
         super(MainWindow, self).__init__()
 
-        MainWindow._window_list.append(self)
+        MainWindow._window_list.ap..(self)
 
         self.setupUi(self)
 

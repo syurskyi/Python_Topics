@@ -145,7 +145,7 @@ c_ MainWindow ?MW..
 
         table.insertRows(table.rows(), 1)
 
-        while date.month() == self.selectedDate.month
+        w__ date.month() == self.selectedDate.month
             weekDay _ date.dayOfWeek()
             cell _ table.cellAt(table.rows()-1, weekDay-1)
             cellCursor _ cell.firstCursorPosition()

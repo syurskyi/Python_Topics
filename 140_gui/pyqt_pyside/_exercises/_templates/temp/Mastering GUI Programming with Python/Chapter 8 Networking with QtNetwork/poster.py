@@ -31,7 +31,7 @@ c_ Poster(qtc.QObject):
                 f'form-data; name="{key}"'
             )
             http_part.setBody(value.encode('utf-8'))
-            self.multipart.append(http_part)
+            self.multipart.ap..(http_part)
 
         # Write the file data to the multipart
         __ filename:
@@ -42,7 +42,7 @@ c_ Poster(qtc.QObject):
                 f'form-data; name="attachment"; filename="{filename}"'
             )
             file_part.setBody(filedata)
-            self.multipart.append(file_part)
+            self.multipart.ap..(file_part)
 
         # Post the request with the form data
         self.nam.post(self.request, self.multipart)
