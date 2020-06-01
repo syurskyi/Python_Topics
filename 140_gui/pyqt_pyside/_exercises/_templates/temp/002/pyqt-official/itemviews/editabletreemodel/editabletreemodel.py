@@ -44,7 +44,7 @@
 
 ____ ?.QtCore ______ (QAbstractItemModel, QFile, QIODevice,
         QItemSelectionModel, QModelIndex, Qt)
-____ ?.?W.. ______ QApplication, QMainWindow
+____ ?.?W.. ______ ?A.., QMainWindow
 
 ______ editabletreemodel_rc
 ____ ui_mainwindow ______ Ui_MainWindow
@@ -314,7 +314,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         for column in range(model.columnCount()):
             self.view.resizeColumnToContents(column)
 
-        self.exitAction.triggered.c..(QApplication.instance().quit)
+        self.exitAction.triggered.c..(?A...instance().quit)
 
         self.view.selectionModel().selectionChanged.c..(self.updateActions)
 
@@ -416,7 +416,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ MainWindow()
     window.s..
     sys.exit(app.exec_())

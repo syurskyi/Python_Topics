@@ -45,7 +45,7 @@
 ____ ?.QtCore ______ (pyqtSignal, QPointF, QPropertyAnimation, QRect,
         QRectF, QState, QStateMachine, Qt)
 ____ ?.QtGui ______ QPixmap
-____ ?.?W.. ______ (QApplication, QGraphicsScene, QGraphicsView,
+____ ?.?W.. ______ (?A.., QGraphicsScene, QGraphicsView,
         QGraphicsWidget)
 
 ______ appchooser_rc
@@ -92,7 +92,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     p1 _ Pixmap(QPixmap(':/digikam.png'))
     p2 _ Pixmap(QPixmap(':/akregator.png'))

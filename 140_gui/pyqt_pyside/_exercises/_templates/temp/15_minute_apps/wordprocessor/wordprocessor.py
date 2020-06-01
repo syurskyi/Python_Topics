@@ -369,7 +369,7 @@ class MainWindow(QMainWindow):
 
 if __name__ == '__main__':
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     app.setApplicationName("Megasolid Idiom")
 
     window _ MainWindow()

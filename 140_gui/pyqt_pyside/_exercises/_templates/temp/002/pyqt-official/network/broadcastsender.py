@@ -43,7 +43,7 @@
 
 
 ____ ?.QtCore ______ QTimer
-____ ?.?W.. ______ (QApplication, QDialog, QDialogButtonBox, QLabel,
+____ ?.?W.. ______ (?A.., QDialog, QDialogButtonBox, QLabel,
         ?PB.., QVBoxLayout)
 ____ ?.QtNetwork ______ QHostAddress, QUdpSocket
 
@@ -91,7 +91,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     sender _ Sender()
     sender.s..
     sys.exit(sender.exec_())

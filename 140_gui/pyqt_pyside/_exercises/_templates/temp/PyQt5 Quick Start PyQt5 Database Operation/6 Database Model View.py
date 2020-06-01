@@ -50,7 +50,7 @@ class MainWindow(QWidget):
         self.db.close()
 
 if __name__ == "__main__":
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ MainWindow()
     window.s..
     sys.exit(app.exec_())

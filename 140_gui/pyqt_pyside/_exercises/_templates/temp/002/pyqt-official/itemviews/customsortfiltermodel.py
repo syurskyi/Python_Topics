@@ -46,7 +46,7 @@
 ____ ?.QtCore ______ (QDate, QDateTime, QRegExp, QSortFilterProxyModel, Qt,
         QTime)
 ____ ?.QtGui ______ QStandardItemModel
-____ ?.?W.. ______ (QApplication, QCheckBox, QComboBox, QDateEdit,
+____ ?.?W.. ______ (?A.., QCheckBox, QComboBox, QDateEdit,
         QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit, QTreeView,
         QVBoxLayout, QWidget)
 
@@ -239,7 +239,7 @@ if __name__ == "__main__":
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     window _ Window()
     window.setSourceModel(createMailModel(window))

@@ -45,7 +45,7 @@
 ____ ?.QtCore ______ QDate, Qt
 ____ ?.QtGui ______ (QFont, QTextCharFormat, QTextCursor, QTextFrameFormat,
         QTextLength, QTextTableFormat)
-____ ?.?W.. ______ (QApplication, QCheckBox, QDialog,
+____ ?.?W.. ______ (?A.., QCheckBox, QDialog,
         QDialogButtonBox, QGridLayout, QLabel, QLineEdit, QMainWindow,
         QMessageBox, QMenu, QTableWidget, QTableWidgetItem, QTabWidget,
         QTextEdit)
@@ -295,7 +295,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ MainWindow()
     window.resize(640, 480)
     window.s..

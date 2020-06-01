@@ -48,7 +48,7 @@ ____ ?.QtCore ______ (qAbs, QLineF, QPointF, QRectF, qrand, qsrand, Qt,
         QTime, QTimer)
 ____ ?.QtGui ______ (QBrush, QColor, QPainter, QPainterPath, QPixmap,
         QPolygonF)
-____ ?.?W.. ______ (QApplication, QGraphicsItem, QGraphicsScene,
+____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsScene,
         QGraphicsView, QGraphicsWidget)
 
 ______ mice_rc
@@ -195,7 +195,7 @@ if __name__ == '__main__':
 
     MouseCount _ 7
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     qsrand(QTime(0,0,0).secsTo(QTime.currentTime()))
 
     scene _ QGraphicsScene()

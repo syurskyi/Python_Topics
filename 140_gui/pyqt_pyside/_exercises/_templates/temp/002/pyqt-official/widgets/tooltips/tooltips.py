@@ -46,7 +46,7 @@ ______ random
 
 ____ ?.QtCore ______ QEvent, QPoint, QPointF, QSize, Qt
 ____ ?.QtGui ______ QColor, QIcon, QPainter, QPainterPath, QPalette
-____ ?.?W.. ______ (QApplication, QStyle, QToolButton, QToolTip,
+____ ?.?W.. ______ (?A.., QStyle, QToolButton, QToolTip,
         QWidget)
 
 ______ tooltips_rc
@@ -272,7 +272,7 @@ if __name__ == "__main__":
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     sortingBox _ SortingBox()
     sortingBox.s..
     sys.exit(app.exec_())

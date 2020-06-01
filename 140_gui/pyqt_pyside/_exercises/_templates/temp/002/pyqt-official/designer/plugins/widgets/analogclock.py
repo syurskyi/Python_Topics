@@ -45,7 +45,7 @@
 ____ ?.QtCore ______ (pyqtProperty, pyqtSignal, pyqtSlot, QPoint, QSize,
         Qt, QTime, QTimer)
 ____ ?.QtGui ______ QBrush, QColor, QPainter, QPen, QPolygon
-____ ?.?W.. ______ QApplication, QWidget
+____ ?.?W.. ______ ?A.., QWidget
 
 
 class PyAnalogClock(QWidget):
@@ -183,7 +183,7 @@ if __name__ == "__main__":
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     clock _ PyAnalogClock()
     clock.s..
     sys.exit(app.exec_())

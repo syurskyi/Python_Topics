@@ -44,7 +44,7 @@
 
 ____ ?.QtCore ______ QFile, QSize, Qt
 ____ ?.QtGui ______ QBrush, QColor, QImage, QPainter, QPixmap, QPen
-____ ?.?W.. ______ (QActionGroup, QApplication, QFileDialog,
+____ ?.?W.. ______ (QActionGroup, ?A.., QFileDialog,
         QGraphicsItem, QGraphicsRectItem, QGraphicsScene, QGraphicsView,
         QMainWindow, QMenu, QMessageBox, QWidget)
 ____ ?.QtOpenGL ______ QGL, QGLFormat, QGLWidget
@@ -115,7 +115,7 @@ class MainWindow(QMainWindow):
         self.menuBar().addMenu(rendererMenu)
 
         openAction.triggered.c..(self.openFile)
-        quitAction.triggered.c..(QApplication.instance().quit)
+        quitAction.triggered.c..(?A...instance().quit)
         rendererGroup.triggered.c..(self.setRenderer)
 
         self.setCentralWidget(self.view)
@@ -287,7 +287,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     window _ MainWindow()
     if len(sys.argv) == 2:

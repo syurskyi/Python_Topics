@@ -47,7 +47,7 @@ ______ sys
 ____ ?.QtCore ______ (QByteArray, QDate, QDateTime, QEvent, QPoint, QRect,
         QRegExp, QSettings, QSize, Qt, QTime, QTimer)
 ____ ?.QtGui ______ QColor, QIcon, QRegExpValidator, QValidator
-____ ?.?W.. ______ (QAbstractItemView, QAction, QApplication,
+____ ?.?W.. ______ (QAbstractItemView, QAction, ?A..,
         QComboBox, QDialog, QDialogButtonBox, QFileDialog, QGridLayout,
         QGroupBox, QHeaderView, QInputDialog, QItemDelegate, QLabel, QLineEdit,
         QMainWindow, QMessageBox, QStyle, QStyleOptionViewItem, QTableWidget,
@@ -719,7 +719,7 @@ class VariantDelegate(QItemDelegate):
 
 
 if __name__ == '__main__':
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     mainWin _ MainWindow()
     mainWin.s..
     sys.exit(app.exec_())

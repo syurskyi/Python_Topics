@@ -47,7 +47,7 @@
 ______ random
 
 ____ ?.QtCore ______ QByteArray, QDataStream, QIODevice
-____ ?.?W.. ______ (QApplication, QDialog, QLabel, QHBoxLayout,
+____ ?.?W.. ______ (?A.., QDialog, QLabel, QHBoxLayout,
         QMessageBox, ?PB.., QVBoxLayout)
 ____ ?.QtNetwork ______ QLocalServer
 
@@ -116,7 +116,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     server _ Server()
     server.s..
     sys.exit(app.exec_())

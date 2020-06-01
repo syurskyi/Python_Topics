@@ -46,7 +46,7 @@ ____ ?.QtCore ______ QDate, QFile, Qt, QTextStream
 ____ ?.QtGui ______ (QFont, QIcon, QKeySequence, QTextCharFormat,
         QTextCursor, QTextTableFormat)
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
-____ ?.?W.. ______ (QAction, QApplication, QDialog, QDockWidget,
+____ ?.?W.. ______ (QAction, ?A.., QDialog, QDockWidget,
         QFileDialog, QListWidget, QMainWindow, QMessageBox, QTextEdit)
 
 ______ dockwidgets_rc
@@ -139,9 +139,9 @@ class MainWindow(QMainWindow):
             return
 
         out _ QTextStream(file)
-        QApplication.setOverrideCursor(Qt.WaitCursor)
+        ?A...setOverrideCursor(Qt.WaitCursor)
         out << self.textEdit.toHtml()
-        QApplication.restoreOverrideCursor()
+        ?A...restoreOverrideCursor()
 
         self.statusBar().showMessage("Saved '%s'" % filename, 2000)
 
@@ -297,7 +297,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     mainWin _ MainWindow()
     mainWin.s..
     sys.exit(app.exec_())

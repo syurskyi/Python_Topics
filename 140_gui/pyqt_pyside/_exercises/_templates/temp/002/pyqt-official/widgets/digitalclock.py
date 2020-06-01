@@ -43,7 +43,7 @@
 
 
 ____ ?.QtCore ______ QTime, QTimer
-____ ?.?W.. ______ QApplication, QLCDNumber
+____ ?.?W.. ______ ?A.., QLCDNumber
 
 
 class DigitalClock(QLCDNumber):
@@ -74,7 +74,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     clock _ DigitalClock()
     clock.s..
     sys.exit(app.exec_())

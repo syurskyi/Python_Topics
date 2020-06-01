@@ -45,7 +45,7 @@
 ____ ?.QtCore ______ QDate, Qt
 ____ ?.QtGui ______ (QColor, QFont, QTextCharFormat, QTextLength,
         QTextTableFormat)
-____ ?.?W.. ______ (QApplication, QComboBox, QDateTimeEdit,
+____ ?.?W.. ______ (?A.., QComboBox, QDateTimeEdit,
         QHBoxLayout, QLabel, QMainWindow, QSpinBox, QTextBrowser, QVBoxLayout,
         QWidget)
 
@@ -183,7 +183,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ MainWindow()
     window.resize(640, 256)
     window.s..

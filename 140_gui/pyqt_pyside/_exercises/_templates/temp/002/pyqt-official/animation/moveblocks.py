@@ -46,7 +46,7 @@ ____ ?.QtCore ______ (QAbstractTransition, QEasingCurve, QEvent,
         QParallelAnimationGroup, QPropertyAnimation, qrand, QRect,
         QSequentialAnimationGroup, qsrand, QState, QStateMachine, Qt, QTime,
         QTimer)
-____ ?.?W.. ______ (QApplication, QGraphicsScene, QGraphicsView,
+____ ?.?W.. ______ (?A.., QGraphicsScene, QGraphicsView,
         QGraphicsWidget)
 
 
@@ -123,7 +123,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     button1 _ QGraphicsRectWidget()
     button2 _ QGraphicsRectWidget()

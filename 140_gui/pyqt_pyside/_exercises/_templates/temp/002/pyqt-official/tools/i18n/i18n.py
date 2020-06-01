@@ -44,7 +44,7 @@
 
 ____ ?.QtCore ______ QDir, QEvent, Qt, QT_TRANSLATE_NOOP, QTranslator
 ____ ?.QtGui ______ QColor, QPalette
-____ ?.?W.. ______ (QAction, QApplication, QCheckBox, QDialog,
+____ ?.?W.. ______ (QAction, ?A.., QCheckBox, QDialog,
         QDialogButtonBox, QGridLayout, QGroupBox, QListWidget, QMainWindow,
         QRadioButton, QVBoxLayout, QWidget)
 
@@ -106,7 +106,7 @@ class LanguageChooser(QDialog):
         return QWidget.eventFilter(self, object, event)
 
     ___ closeEvent(self, event):
-        QApplication.instance().quit()
+        ?A...instance().quit()
 
     ___ checkBoxToggled(self):
         checkBox _ self.sender()
@@ -115,7 +115,7 @@ class LanguageChooser(QDialog):
         if not window:
             translator _ QTranslator()
             translator.load(self.qmFileForCheckBoxMap[checkBox])
-            QApplication.installTranslator(translator)
+            ?A...installTranslator(translator)
 
             # Because we will be installing an event filter for the main window
             # it is important that this instance isn't garbage collected before
@@ -211,7 +211,7 @@ if __name__ == "__main__":
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     chooser _ LanguageChooser()
     chooser.s..
     sys.exit(app.exec_())

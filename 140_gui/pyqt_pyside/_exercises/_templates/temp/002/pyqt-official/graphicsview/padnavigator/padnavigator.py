@@ -50,7 +50,7 @@ ____ ?.QtCore ______ (pyqtProperty, QDirIterator, QEasingCurve, QEvent,
         QStateMachine, Qt)
 ____ ?.QtGui ______ (QBrush, QColor, QFont, QLinearGradient, QPainter,
         QPalette, QPen, QPixmap, QTransform)
-____ ?.?W.. ______ (QApplication, QGraphicsItem, QGraphicsObject,
+____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsObject,
         QGraphicsProxyWidget, QGraphicsRotation, QGraphicsScene, QGraphicsView,
         QKeyEventTransition, QWidget)
 ____ ?.QtOpenGL ______ QGL, QGLFormat, QGLWidget
@@ -292,7 +292,7 @@ class RoundRectItem(QGraphicsObject):
         painter.drawRoundedRect(self.bounds.translated(2, 2), 25.0, 25.0)
 
         if self.fillRect:
-            painter.setBrush(QApplication.palette().brush(QPalette.Window))
+            painter.setBrush(?A...palette().brush(QPalette.Window))
         else:
             painter.setBrush(self.gradient)
 
@@ -390,7 +390,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     navigator _ PadNavigator(QSize(3, 3))
     navigator.s..

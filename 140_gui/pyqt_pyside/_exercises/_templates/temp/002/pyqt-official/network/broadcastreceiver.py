@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?W.. ______ (QApplication, QDialog, QHBoxLayout, QLabel,
+____ ?.?W.. ______ (?A.., QDialog, QHBoxLayout, QLabel,
         ?PB.., QVBoxLayout)
 ____ ?.QtNetwork ______ QUdpSocket
 
@@ -90,7 +90,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     receiver _ Receiver()
     receiver.s..
     sys.exit(receiver.exec_())

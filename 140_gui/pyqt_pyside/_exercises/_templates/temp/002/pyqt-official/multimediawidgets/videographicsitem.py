@@ -46,7 +46,7 @@ ____ ?.QtCore ______ QDir, QSize, QSizeF, Qt, QUrl
 ____ ?.QtGui ______ QTransform
 ____ ?.QtMultimedia ______ QMediaContent, QMediaPlayer
 ____ ?.QtMultimediaWidgets ______ QGraphicsVideoItem
-____ ?.?W.. ______ (QApplication, QFileDialog, QGraphicsScene,
+____ ?.?W.. ______ (?A.., QFileDialog, QGraphicsScene,
         QGraphicsView, QHBoxLayout, ?PB.., QSlider, QStyle, QVBoxLayout,
         QWidget)
 
@@ -148,7 +148,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     player _ VideoPlayer()
     player.s..

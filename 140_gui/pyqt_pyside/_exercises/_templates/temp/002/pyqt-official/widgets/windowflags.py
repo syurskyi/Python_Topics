@@ -43,7 +43,7 @@
 
 
 ____ ?.QtCore ______ Qt
-____ ?.?W.. ______ (QApplication, QCheckBox, QGridLayout, QGroupBox,
+____ ?.?W.. ______ (?A.., QCheckBox, QGridLayout, QGroupBox,
         QHBoxLayout, ?PB.., QRadioButton, QTextEdit, QVBoxLayout,
         QWidget)
 
@@ -277,7 +277,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     controller _ ControllerWindow()
     controller.s..
     sys.exit(app.exec_())

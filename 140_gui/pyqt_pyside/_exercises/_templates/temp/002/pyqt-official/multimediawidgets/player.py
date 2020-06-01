@@ -49,7 +49,7 @@ ____ ?.QtGui ______ QColor, qGray, QImage, QPainter, QPalette
 ____ ?.QtMultimedia ______ (QAbstractVideoBuffer, QMediaContent,
         QMediaMetaData, QMediaPlayer, QMediaPlaylist, QVideoFrame, QVideoProbe)
 ____ ?.QtMultimediaWidgets ______ QVideoWidget
-____ ?.?W.. ______ (QApplication, QComboBox, QDialog, QFileDialog,
+____ ?.?W.. ______ (?A.., QComboBox, QDialog, QFileDialog,
         QFormLayout, QHBoxLayout, QLabel, QListView, QMessageBox, ?PB..,
         QSizePolicy, QSlider, QStyle, QToolButton, QVBoxLayout, QWidget)
 
@@ -563,7 +563,7 @@ class Player(QWidget):
         elif status == QMediaPlayer.StalledMedia:
             self.setStatusInfo("Media Stalled")
         elif status == QMediaPlayer.EndOfMedia:
-            QApplication.alert(self)
+            ?A...alert(self)
         elif status == QMediaPlayer.InvalidMedia:
             self.displayErrorMessage()
         else:
@@ -683,7 +683,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     player _ Player(sys.argv[1:])
     player.s..

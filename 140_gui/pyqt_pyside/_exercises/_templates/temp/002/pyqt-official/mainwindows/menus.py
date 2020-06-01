@@ -44,7 +44,7 @@
 
 ____ ?.QtCore ______ Qt
 ____ ?.QtGui ______ QKeySequence
-____ ?.?W.. ______ (QAction, QActionGroup, QApplication, QFrame,
+____ ?.?W.. ______ (QAction, QActionGroup, ?A.., QFrame,
         QLabel, QMainWindow, QMenu, QMessageBox, QSizePolicy, QVBoxLayout,
         QWidget)
 
@@ -216,7 +216,7 @@ class MainWindow(QMainWindow):
         self.aboutQtAct _ QAction("About &Qt", self,
                 statusTip_"Show the Qt library's About box",
                 triggered_self.aboutQt)
-        self.aboutQtAct.triggered.c..(QApplication.instance().aboutQt)
+        self.aboutQtAct.triggered.c..(?A...instance().aboutQt)
 
         self.leftAlignAct _ QAction("&Left Align", self, checkable_True,
                 shortcut_"Ctrl+L", statusTip_"Left align the selected text",
@@ -280,7 +280,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ MainWindow()
     window.s..
     sys.exit(app.exec_())

@@ -44,7 +44,7 @@
 
 
 ____ ?.QtCore ______ QUrl
-____ ?.?W.. ______ QApplication, QWidget
+____ ?.?W.. ______ ?A.., QWidget
 
 ____ ui_window ______ Ui_Window
 
@@ -76,7 +76,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     win _ SimpleSelector()
     win.setUrl(QUrl('http://www.webkit.org'))

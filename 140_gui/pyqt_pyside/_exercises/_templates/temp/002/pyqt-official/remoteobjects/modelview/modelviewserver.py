@@ -57,7 +57,7 @@ ____ ?.QtCore ______ (pyqtSlot, QLoggingCategory, QModelIndex, QObject, Qt,
         QTimer, QUrl)
 ____ ?.QtGui ______ QColor, QStandardItem, QStandardItemModel
 ____ ?.QtRemoteObjects ______ QRemoteObjectHost, QRemoteObjectRegistryHost
-____ ?.?W.. ______ QApplication, QTreeView
+____ ?.?W.. ______ ?A.., QTreeView
 
 
 class TimerHandler(QObject):
@@ -123,7 +123,7 @@ if __name__ == '__main__':
     QLoggingCategory.setFilterRules('qt.remoteobjects.debug=false\n'
                                     'qt.remoteobjects.warning=false')
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     sourceModel _ QStandardItemModel()
     sourceModel.setHorizontalHeaderLabels(

@@ -46,7 +46,7 @@ ____ xml.dom.minidom ______ parseString
 ____ ?.QtCore ______ (QByteArray, QDir, QEasingCurve, QFile, QFileInfo,
         QLibraryInfo, QObject, QPointF, QProcess, QProcessEnvironment,
         QStandardPaths, Qt, QT_VERSION, QT_VERSION_STR, QTextStream, QUrl)
-____ ?.?W.. ______ QApplication, QMessageBox
+____ ?.?W.. ______ ?A.., QMessageBox
 
 ____ colors ______ Colors
 ____ demoitemanimation ______ DemoItemAnimation
@@ -114,7 +114,7 @@ class MenuManager(QObject):
         elif userCode == MenuManager.DOCUMENTATION:
             self.showDocInAssistant(self.currentInfo)
         elif userCode == MenuManager.QUIT:
-            QApplication.quit()
+            ?A...quit()
         elif userCode == MenuManager.FULLSCREEN:
             self.window.toggleFullscreen()
         elif userCode == MenuManager.ROOT:

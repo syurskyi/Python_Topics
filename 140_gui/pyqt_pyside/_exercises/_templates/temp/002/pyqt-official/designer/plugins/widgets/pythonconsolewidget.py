@@ -24,7 +24,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 """
 
 ____ ?.QtCore ______ pyqtSignal, QEvent, Qt
-____ ?.?W.. ______ QApplication, QLineEdit
+____ ?.?W.. ______ ?A.., QLineEdit
 
 
 class PythonConsoleWidget(QLineEdit):
@@ -70,7 +70,7 @@ class PythonConsoleWidget(QLineEdit):
     ___ execute(self):
     
         # Define this here to give users something to look at.
-        qApp _ QApplication.instance()
+        qApp _ ?A...instance()
         
         self.expression _ self.text()
         try:
@@ -92,7 +92,7 @@ if __name__ == "__main__":
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     widget _ PythonConsoleWidget()
     widget.s..
     sys.exit(app.exec_())

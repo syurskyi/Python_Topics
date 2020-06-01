@@ -1,5 +1,5 @@
 ____ ?.QtQml ______ QQmlApplicationEngine
-____ ?.?W.. ______ QApplication
+____ ?.?W.. ______ ?A..
 
 app _ ?
 engine _ QQmlApplicationEngine()

@@ -54,7 +54,7 @@
 ____ ?.QtCore ______ (QAbstractItemModel, QFileInfo, QItemSelectionModel,
         QModelIndex, Qt)
 ____ ?.QtGui ______ QIcon
-____ ?.?W.. ______ (QAbstractItemView, QApplication,
+____ ?.?W.. ______ (QAbstractItemView, ?A..,
         QFileIconProvider, QListView, QSplitter, QTableView, QTreeView)
 
 
@@ -150,7 +150,7 @@ class Model(QAbstractItemModel):
 
 
 ___ main(args):
-    app _ QApplication(args)
+    app _ ?A..(args)
     page _ QSplitter()
     data _ Model(1000, 10, page)
     selections _ QItemSelectionModel(data)

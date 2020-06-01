@@ -45,7 +45,7 @@
 
 ____ ?.QtCore ______ QFile, QIODevice, QTextStream, QUrl
 ____ ?.QtGui ______ QKeySequence
-____ ?.?W.. ______ (QAction, QApplication, QFileDialog, QInputDialog,
+____ ?.?W.. ______ (QAction, ?A.., QFileDialog, QInputDialog,
         QLineEdit, QMainWindow, QMessageBox, QWidget)
 
 ____ ui_previewer ______ Ui_Form
@@ -170,7 +170,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     mainWindow _ MainWindow()
     mainWindow.s..

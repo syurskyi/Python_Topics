@@ -25,7 +25,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 ____ ?.QtCore ______ pyqtProperty, pyqtSignal, pyqtSlot, QRectF, QSize, Qt
 ____ ?.QtGui ______ QFont, QFontMetricsF, QPainter
-____ ?.?W.. ______ QApplication, QWidget
+____ ?.?W.. ______ ?A.., QWidget
 
 
 class CounterLabel(QWidget):
@@ -170,7 +170,7 @@ if __name__ == "__main__":
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     widget _ CounterLabel()
     widget.setValue(123)
     widget.s..

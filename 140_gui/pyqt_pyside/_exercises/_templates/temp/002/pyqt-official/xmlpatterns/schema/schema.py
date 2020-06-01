@@ -45,7 +45,7 @@
 ____ ?.QtCore ______ QByteArray, QFile, QRegExp, Qt
 ____ ?.QtGui ______ (QColor, QFont, QSyntaxHighlighter, QTextCharFormat,
         QTextCursor, QTextFormat)
-____ ?.?W.. ______ QApplication, QMainWindow, QTextEdit
+____ ?.?W.. ______ ?A.., QMainWindow, QTextEdit
 ____ ?.QtXmlPatterns ______ (QAbstractMessageHandler, QSourceLocation,
         QXmlSchema, QXmlSchemaValidator)
 
@@ -269,7 +269,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ MainWindow()
     window.s..
     sys.exit(app.exec_())

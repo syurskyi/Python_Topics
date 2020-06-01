@@ -43,7 +43,7 @@
 
 
 ____ ?.QtCore ______ QFileInfo
-____ ?.?W.. ______ (QApplication, QCheckBox, QDialog,
+____ ?.?W.. ______ (?A.., QCheckBox, QDialog,
         QDialogButtonBox, QFrame, QGroupBox, QLabel, QLineEdit, QListWidget,
         QTabWidget, QVBoxLayout, QWidget)
 
@@ -193,7 +193,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     if len(sys.argv) >_ 2:
         fileName _ sys.argv[1]

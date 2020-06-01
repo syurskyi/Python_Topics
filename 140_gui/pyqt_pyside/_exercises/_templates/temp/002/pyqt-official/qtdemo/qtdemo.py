@@ -44,7 +44,7 @@
 
 
 ____ ?.QtCore ______ QEventLoop, QTime
-____ ?.?W.. ______ QApplication, QMessageBox
+____ ?.?W.. ______ ?A.., QMessageBox
 
 ____ colors ______ Colors
 ____ mainwindow ______ MainWindow
@@ -55,14 +55,14 @@ ___ artisticSleep(sleepTime):
     time _ QTime()
     time.restart()
     while time.elapsed() < sleepTime:
-        QApplication.processEvents(QEventLoop.AllEvents, 50)
+        ?A...processEvents(QEventLoop.AllEvents, 50)
 
 
 if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     Colors.parseArgs(sys.argv)
 
     if sys.platform == 'win32':

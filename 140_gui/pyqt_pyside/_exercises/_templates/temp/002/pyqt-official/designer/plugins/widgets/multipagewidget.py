@@ -4,7 +4,7 @@
 # PyQt5 port of the designer/containerextension example from Qt v5.x         #
 #----------------------------------------------------------------------------#
 ____ ?.QtCore ______ pyqtProperty, pyqtSignal, pyqtSlot, QSize
-____ ?.?W.. ______ (QApplication, QComboBox, QLabel, QStackedWidget,
+____ ?.?W.. ______ (?A.., QComboBox, QLabel, QStackedWidget,
         QVBoxLayout, QWidget)
 
 
@@ -95,7 +95,7 @@ class PyMultiPageWidget(QWidget):
 #----------------------------------------------------------------------------#
 if __name__ == "__main__":
     ______ sys
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     widget _ PyMultiPageWidget()
     widget.addPage(QLabel('This is page #1'))
     widget.addPage(QLabel('This is page #2'))

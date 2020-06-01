@@ -44,7 +44,7 @@
 
 ____ ?.QtCore ______ QPoint, Qt, QTime, QTimer
 ____ ?.QtGui ______ QColor, QPainter, QPolygon
-____ ?.?W.. ______ QApplication, QWidget
+____ ?.?W.. ______ ?A.., QWidget
 
 
 class AnalogClock(QWidget):
@@ -116,7 +116,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     clock _ AnalogClock()
     clock.s..
     sys.exit(app.exec_())

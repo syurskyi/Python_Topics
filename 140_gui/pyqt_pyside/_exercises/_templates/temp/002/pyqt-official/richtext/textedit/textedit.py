@@ -50,7 +50,7 @@ ____ ?.QtCore ______ QFile, QFileInfo, Qt, QTextCodec
 ____ ?.QtGui ______ (QFont, QFontDatabase, QFontInfo, QIcon, QKeySequence,
         QPixmap, QTextBlockFormat, QTextCharFormat, QTextCursor,
         QTextDocumentWriter, QTextListFormat)
-____ ?.?W.. ______ (QAction, QActionGroup, QApplication, QColorDialog,
+____ ?.?W.. ______ (QAction, QActionGroup, ?A.., QColorDialog,
         QComboBox, QFileDialog, QFontComboBox, QMainWindow, QMenu, QMessageBox,
         QTextEdit, QToolBar)
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter, QPrintPreviewDialog
@@ -77,7 +77,7 @@ class TextEdit(QMainWindow):
         helpMenu _ QMenu("Help", self)
         self.menuBar().addMenu(helpMenu)
         helpMenu.addAction("About", self.about)
-        helpMenu.addAction("About &Qt", QApplication.instance().aboutQt)
+        helpMenu.addAction("About &Qt", ?A...instance().aboutQt)
  
         self.textEdit _ QTextEdit(self)
         self.textEdit.currentCharFormatChanged.c..(
@@ -110,7 +110,7 @@ class TextEdit(QMainWindow):
         self.actionPaste.triggered.c..(self.textEdit.paste)
         self.textEdit.copyAvailable.c..(self.actionCut.setEnabled)
         self.textEdit.copyAvailable.c..(self.actionCopy.setEnabled)
-        QApplication.clipboard().dataChanged.c..(self.clipboardDataChanged)
+        ?A...clipboard().dataChanged.c..(self.clipboardDataChanged)
 
         if fileName is None:
             fileName _ ':/example.html'
@@ -238,7 +238,7 @@ class TextEdit(QMainWindow):
                         QIcon(rsrcPath + '/editpaste.png')),
                 "&Paste", self, priority_QAction.LowPriority,
                 shortcut_QKeySequence.Paste,
-                enabled_(len(QApplication.clipboard().text()) !_ 0))
+                enabled_(len(?A...clipboard().text()) !_ 0))
         tb.addAction(self.actionPaste)
         menu.addAction(self.actionPaste)
 
@@ -291,7 +291,7 @@ class TextEdit(QMainWindow):
         grp _ QActionGroup(self, triggered_self.textAlign)
 
         # Make sure the alignLeft is always left of the alignRight.
-        if QApplication.isLeftToRight
+        if ?A...isLeftToRight
             self.actionAlignLeft _ QAction(
                     QIcon.fromTheme('format-justify-left',
                             QIcon(rsrcPath + '/textleft.png')),
@@ -385,7 +385,7 @@ class TextEdit(QMainWindow):
         self.comboSize.activated[str].c..(self.textSize)
         self.comboSize.setCurrentIndex(
                 self.comboSize.findText(
-                        "%s" % (QApplication.font().pointSize())))
+                        "%s" % (?A...font().pointSize())))
 
     ___ load(self, f):
         if not QFile.exists(f):
@@ -602,7 +602,7 @@ class TextEdit(QMainWindow):
         self.alignmentChanged(self.textEdit.alignment())
 
     ___ clipboardDataChanged(self):
-        self.actionPaste.setEnabled(len(QApplication.clipboard().text()) !_ 0)
+        self.actionPaste.setEnabled(len(?A...clipboard().text()) !_ 0)
 
     ___ about(self):
         QMessageBox.about(self, "About", 
@@ -644,7 +644,7 @@ class TextEdit(QMainWindow):
 
 
 if __name__ == '__main__':
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     mainWindows _ []
     for fn in sys.argv[1:] or [None]:

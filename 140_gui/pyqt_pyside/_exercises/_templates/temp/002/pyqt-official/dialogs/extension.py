@@ -43,7 +43,7 @@
 
 
 ____ ?.QtCore ______ Qt
-____ ?.?W.. ______ (QApplication, QCheckBox, QDialog,
+____ ?.?W.. ______ (?A.., QCheckBox, QDialog,
         QDialogButtonBox, QGridLayout, QHBoxLayout, QLabel, QLayout, QLineEdit,
         ?PB.., QVBoxLayout, QWidget)
 
@@ -111,7 +111,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     dialog _ FindDialog()
     dialog.s..
     sys.exit(app.exec_())

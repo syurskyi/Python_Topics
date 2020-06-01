@@ -45,7 +45,7 @@
 ____ ?.QtCore ______ (QByteArray, QDataStream, QIODevice, QMimeData,
         QPoint, Qt)
 ____ ?.QtGui ______ QColor, QDrag, QPainter, QPixmap
-____ ?.?W.. ______ QApplication, QFrame, QHBoxLayout, QLabel, QWidget
+____ ?.?W.. ______ ?A.., QFrame, QHBoxLayout, QLabel, QWidget
 
 ______ draggableicons_rc
 
@@ -149,7 +149,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     mainWidget _ QWidget()
     horizontalLayout _ QHBoxLayout()

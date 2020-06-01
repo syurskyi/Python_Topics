@@ -43,7 +43,7 @@
 
 
 ____ ?.QtMultimedia ______ QAudio, QAudioDeviceInfo, QAudioFormat
-____ ?.?W.. ______ QApplication, QTableWidgetItem, QMainWindow
+____ ?.?W.. ______ ?A.., QTableWidgetItem, QMainWindow
 
 ____ ui_audiodevicesbase ______ Ui_AudioDevicesBase
 
@@ -270,7 +270,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     app.setApplicationName("Audio Device Test")
 
     audio _ AudioTest()

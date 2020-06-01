@@ -43,7 +43,7 @@
 
 
 ____ ?.QtCore ______ QFile, QIODevice, Qt, QTextStream, QUrl
-____ ?.?W.. ______ (QAction, QApplication, QLineEdit, QMainWindow,
+____ ?.?W.. ______ (QAction, ?A.., QLineEdit, QMainWindow,
         QSizePolicy, QStyle, QTextEdit)
 ____ ?.QtNetwork ______ QNetworkProxyFactory, QNetworkRequest
 ____ ?.QtWebKitWidgets ______ QWebPage, QWebView
@@ -198,7 +198,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     if len(sys.argv) > 1:
         url _ QUrl(sys.argv[1])

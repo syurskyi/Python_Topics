@@ -44,7 +44,7 @@
 
 ____ ?.QtCore ______ Qt
 ____ ?.QtGui ______ QColor
-____ ?.?W.. ______ QApplication, QTableView
+____ ?.?W.. ______ ?A.., QTableView
 ____ ?.QtSql ______ QSqlQuery, QSqlQueryModel
 
 ______ connection
@@ -138,7 +138,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     if not connection.createConnection
         sys.exit(1)
 

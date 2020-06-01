@@ -42,7 +42,7 @@
 ______ sys
 
 ____ ?.QtCore ______ pyqtSlot
-____ ?.?W.. ______ QApplication, QDialog
+____ ?.?W.. ______ ?A.., QDialog
 ____ ?.uic ______ loadUi
 
 
@@ -58,7 +58,7 @@ class DemoImpl(QDialog):
             self.list.addItem(s)
 
 
-app _ QApplication(sys.argv)
+app _ ?A..(sys.argv)
 widget _ DemoImpl()
 widget.s..
 sys.exit(app.exec_())

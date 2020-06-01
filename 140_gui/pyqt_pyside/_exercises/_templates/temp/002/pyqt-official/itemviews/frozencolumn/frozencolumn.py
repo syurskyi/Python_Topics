@@ -53,7 +53,7 @@
 
 ____ ?.QtCore ______ QFile, QFileInfo, Qt
 ____ ?.QtGui ______ QStandardItem, QStandardItemModel
-____ ?.?W.. ______ QApplication, QHeaderView, QTableView
+____ ?.?W.. ______ ?A.., QHeaderView, QTableView
 
 
 class FreezeTableWidget(QTableView):
@@ -134,7 +134,7 @@ ___ main(args):
     ___ split_and_strip(s, splitter):
         return [s.strip() for s in line.split(splitter)]
 
-    app _ QApplication(args)
+    app _ ?A..(args)
     model _ QStandardItemModel()
     file _ QFile(QFileInfo(__file__).absolutePath() + '/grades.txt')
     if file.open(QFile.ReadOnly):

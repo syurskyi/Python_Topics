@@ -43,7 +43,7 @@
 
 
 ____ ?.QtCore ______ QSizeF, Qt
-____ ?.?W.. ______ (QApplication, QGraphicsAnchorLayout,
+____ ?.?W.. ______ (?A.., QGraphicsAnchorLayout,
         QGraphicsProxyWidget, QGraphicsScene, QGraphicsView, QGraphicsWidget,
         ?PB.., QSizePolicy)
 
@@ -64,7 +64,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     scene _ QGraphicsScene()
     scene.setSceneRect(0, 0, 800, 480)

@@ -47,7 +47,7 @@ ______ math
 
 ____ ?.QtCore ______ pyqtSignal, QPointF, QSize, Qt
 ____ ?.QtGui ______ QPainter, QPolygonF
-____ ?.?W.. ______ (QAbstractItemView, QApplication, QStyle,
+____ ?.?W.. ______ (QAbstractItemView, ?A.., QStyle,
         QStyledItemDelegate, QTableWidget, QTableWidgetItem, QWidget)
 
 
@@ -232,7 +232,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     tableWidget _ QTableWidget(4, 4)
     tableWidget.setItemDelegate(StarDelegate())

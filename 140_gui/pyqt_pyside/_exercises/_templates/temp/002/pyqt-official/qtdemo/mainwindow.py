@@ -43,7 +43,7 @@
 ____ ?.QtCore ______ QFileInfo, QPoint, QRect, qRound, Qt, QTime, QTimer
 ____ ?.QtGui ______ (QFontMetricsF, QImage, QPainter, QPixmap, QPolygon,
         QRegion)
-____ ?.?W.. ______ (QApplication, QFrame, QGraphicsScene,
+____ ?.?W.. ______ (?A.., QFrame, QGraphicsScene,
         QGraphicsView, QGraphicsWidget, QMessageBox, QWidget)
 
 ____ colors ______ Colors
@@ -85,7 +85,7 @@ class MainWindow(QGraphicsView):
         self.drawBackgroundToPixmap()
 
     ___ setupWidget(self):
-        desktop _ QApplication.desktop()
+        desktop _ ?A...desktop()
         screenRect _ desktop.screenGeometry(desktop.primaryScreen())
         windowRect _ QRect(0, 0, 800, 600)
 
@@ -310,7 +310,7 @@ class MainWindow(QGraphicsView):
 
     ___ keyPressEvent(self, event):
         if event.key() == Qt.Key_Escape:
-            QApplication.quit()
+            ?A...quit()
         elif event.key() == Qt.Key_F1:
             s _ ""
             s +_ "\nAdapt: "

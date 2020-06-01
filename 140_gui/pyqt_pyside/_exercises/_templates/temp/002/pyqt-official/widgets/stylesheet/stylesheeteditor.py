@@ -40,7 +40,7 @@
 
 
 ____ ?.QtCore ______ pyqtSlot, QFile, QRegExp, Qt, QTextStream
-____ ?.?W.. ______ (QApplication, QDialog, QFileDialog, QMessageBox,
+____ ?.?W.. ______ (?A.., QDialog, QFileDialog, QMessageBox,
         QStyleFactory)
 
 ____ ui_stylesheeteditor ______ Ui_StyleSheetEditor
@@ -54,7 +54,7 @@ class StyleSheetEditor(QDialog):
         self.ui.setupUi(self)
 
         regExp _ QRegExp(r'.(.*)\+?Style')
-        defaultStyle _ QApplication.style().metaObject().className()
+        defaultStyle _ ?A...style().metaObject().className()
         if regExp.exactMatch(defaultStyle):
             defaultStyle _ regExp.cap(1)
 
@@ -69,7 +69,7 @@ class StyleSheetEditor(QDialog):
 
     @pyqtSlot(str)
     ___ on_styleCombo_activated(self, styleName):
-        QApplication.setStyle(styleName)
+        ?A...setStyle(styleName)
         self.ui.applyButton.setEnabled(False)
 
     @pyqtSlot(str)
@@ -80,7 +80,7 @@ class StyleSheetEditor(QDialog):
         self.ui.applyButton.setEnabled(True)
 
     ___ on_applyButton_clicked(self):
-        QApplication.instance().setStyleSheet(
+        ?A...instance().setStyleSheet(
                 self.ui.styleTextEdit.toPlainText())
         self.ui.applyButton.setEnabled(False)
 
@@ -102,7 +102,7 @@ class StyleSheetEditor(QDialog):
             styleSheet _ str(styleSheet, encoding_'utf8')
 
         self.ui.styleTextEdit.setPlainText(styleSheet)
-        QApplication.instance().setStyleSheet(styleSheet)
+        ?A...instance().setStyleSheet(styleSheet)
         self.ui.applyButton.setEnabled(False)
 
     ___ saveStyleSheet(self, fileName):

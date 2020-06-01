@@ -46,7 +46,7 @@
 ____ ?.QtCore ______ (pyqtSignal, QBuffer, QByteArray, QFile, QIODevice,
         QMimeData, Qt)
 ____ ?.QtGui ______ QDrag, QIcon, QImage, QPainter, QPixmap
-____ ?.?W.. ______ (QApplication, QGridLayout, QLabel, ?PB..,
+____ ?.?W.. ______ (?A.., QGridLayout, QLabel, ?PB..,
         QScrollArea, QWidget)
 ____ ?.QtSvg ______ QSvgWidget
 
@@ -130,7 +130,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ SourceWidget()
     window.s..
     sys.exit(app.exec_())

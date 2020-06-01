@@ -45,7 +45,7 @@
 
 ____ ?.QtCore ______ pyqtProperty, Qt, QVariant
 ____ ?.QtGui ______ QColor
-____ ?.?W.. ______ (QApplication, QComboBox, QGridLayout,
+____ ?.?W.. ______ (?A.., QComboBox, QGridLayout,
         QItemEditorCreatorBase, QItemEditorFactory, QTableWidget,
         QTableWidgetItem, QWidget)
 
@@ -120,7 +120,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     window _ Window()
     window.s..

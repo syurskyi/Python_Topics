@@ -45,7 +45,7 @@
 
 
 ____ ?.QtCore ______ QDataStream, QTimer
-____ ?.?W.. ______ (QApplication, QDialog, QDialogButtonBox,
+____ ?.?W.. ______ (?A.., QDialog, QDialogButtonBox,
         QGridLayout, QLabel, QLineEdit, QMessageBox, ?PB..)
 ____ ?.QtNetwork ______ QLocalSocket
 
@@ -149,7 +149,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     client _ Client()
     client.s..
     sys.exit(app.exec_())

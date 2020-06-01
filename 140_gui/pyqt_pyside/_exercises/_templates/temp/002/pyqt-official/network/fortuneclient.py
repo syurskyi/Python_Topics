@@ -44,7 +44,7 @@
 
 ____ ?.QtCore ______ QDataStream, QSettings, QTimer
 ____ ?.QtGui ______ QIntValidator
-____ ?.?W.. ______ (QApplication, QComboBox, QDialog,
+____ ?.?W.. ______ (?A.., QComboBox, QDialog,
         QDialogButtonBox, QGridLayout, QLabel, QLineEdit, QMessageBox,
         ?PB..)
 ____ ?.QtNetwork ______ (QAbstractSocket, QHostInfo, QNetworkConfiguration,
@@ -221,7 +221,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     client _ Client()
     client.s..
     sys.exit(client.exec_())

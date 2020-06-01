@@ -48,7 +48,7 @@ ____ ?.QtCore ______ pyqtSignal, QFileInfo, QPoint, QSize, Qt, QTimer
 ____ ?.QtGui ______ (QColor, QImage, QMatrix4x4, QOpenGLShader,
         QOpenGLShaderProgram, QOpenGLTexture, QOpenGLVersionProfile,
         QSurfaceFormat)
-____ ?.?W.. ______ QApplication, QGridLayout, QOpenGLWidget, QWidget
+____ ?.?W.. ______ ?A.., QGridLayout, QOpenGLWidget, QWidget
 
 
 class GLWidget(QOpenGLWidget):
@@ -261,7 +261,7 @@ class Window(QWidget):
 
 if __name__ == '__main__':
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     format _ QSurfaceFormat()
     format.setDepthBufferSize(24)

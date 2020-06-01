@@ -45,7 +45,7 @@
 ____ ?.QtCore ______ (QFile, QFileInfo, QPoint, QSettings, QSignalMapper,
         QSize, QTextStream, Qt)
 ____ ?.QtGui ______ QIcon, QKeySequence
-____ ?.?W.. ______ (QAction, QApplication, QFileDialog, QMainWindow,
+____ ?.?W.. ______ (QAction, ?A.., QFileDialog, QMainWindow,
         QMdiArea, QMessageBox, QTextEdit, QWidget)
 
 ______ mdi_rc
@@ -76,9 +76,9 @@ class MdiChild(QTextEdit):
             return False
 
         instr _ QTextStream(file)
-        QApplication.setOverrideCursor(Qt.WaitCursor)
+        ?A...setOverrideCursor(Qt.WaitCursor)
         self.setPlainText(instr.readAll())
-        QApplication.restoreOverrideCursor()
+        ?A...restoreOverrideCursor()
 
         self.setCurrentFile(fileName)
 
@@ -108,9 +108,9 @@ class MdiChild(QTextEdit):
             return False
 
         outstr _ QTextStream(file)
-        QApplication.setOverrideCursor(Qt.WaitCursor)
+        ?A...setOverrideCursor(Qt.WaitCursor)
         outstr << self.toPlainText()
-        QApplication.restoreOverrideCursor()
+        ?A...restoreOverrideCursor()
 
         self.setCurrentFile(fileName)
         return True
@@ -427,9 +427,9 @@ class MainWindow(QMainWindow):
 
     ___ switchLayoutDirection(self):
         if self.layoutDirection() == Qt.LeftToRight:
-            QApplication.setLayoutDirection(Qt.RightToLeft)
+            ?A...setLayoutDirection(Qt.RightToLeft)
         else:
-            QApplication.setLayoutDirection(Qt.LeftToRight)
+            ?A...setLayoutDirection(Qt.LeftToRight)
 
     ___ setActiveSubWindow(self, window):
         if window:
@@ -440,7 +440,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     mainWin _ MainWindow()
     mainWin.s..
     sys.exit(app.exec_())

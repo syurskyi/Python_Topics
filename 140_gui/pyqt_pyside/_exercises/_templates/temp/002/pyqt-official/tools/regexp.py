@@ -44,7 +44,7 @@
 
 ____ ?.QtCore ______ QRegExp, Qt
 ____ ?.QtGui ______ QPalette
-____ ?.?W.. ______ (QApplication, QCheckBox, QComboBox, QDialog,
+____ ?.?W.. ______ (?A.., QCheckBox, QComboBox, QDialog,
         QGridLayout, QHBoxLayout, QLabel, QLineEdit, QSizePolicy)
 
 
@@ -187,7 +187,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     dialog _ RegExpDialog()
     dialog.s..
     sys.exit(app.exec_())

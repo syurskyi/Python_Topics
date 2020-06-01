@@ -46,7 +46,7 @@ ____ ?.QtCore ______ (pyqtProperty, QEasingCurve, QObject, QPoint, QPointF,
         QPropertyAnimation, QRect, QRectF, QSize, Qt)
 ____ ?.QtGui ______ (QBrush, QColor, QIcon, QLinearGradient, QPainter,
         QPainterPath, QPixmap)
-____ ?.?W.. ______ (QApplication, QGraphicsPixmapItem, QGraphicsScene,
+____ ?.?W.. ______ (?A.., QGraphicsPixmapItem, QGraphicsScene,
         QListWidgetItem, QWidget)
 
 ______ easing_rc
@@ -260,7 +260,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     w _ Window()
     w.resize(400, 400)
     w.s..

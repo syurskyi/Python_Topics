@@ -25,7 +25,7 @@
 #----------------------------------------------------------------------------#
 
 ____ ?.QtCore ______ pyqtProperty, Qt
-____ ?.?W.. ______ (QApplication, QCalendarWidget, QDateEdit,
+____ ?.?W.. ______ (?A.., QCalendarWidget, QDateEdit,
         QDateTimeEdit, QHBoxLayout, QWidget)
 
 
@@ -353,7 +353,7 @@ if __name__ == "__main__":
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     w _ QWidget()
     lay _ QHBoxLayout()

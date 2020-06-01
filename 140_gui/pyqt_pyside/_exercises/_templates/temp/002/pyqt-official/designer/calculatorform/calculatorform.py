@@ -43,7 +43,7 @@
 
 
 ____ ?.QtCore ______ pyqtSlot
-____ ?.?W.. ______ QApplication, QWidget
+____ ?.?W.. ______ ?A.., QWidget
 
 ____ ui_calculatorform ______ Ui_CalculatorForm
 
@@ -68,7 +68,7 @@ class CalculatorForm(QWidget):
 if __name__ == '__main__':
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     calculator _ CalculatorForm()
     calculator.s..
     sys.exit(app.exec_())

@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?W.. ______ (QApplication, QGridLayout, QLabel, QLineEdit,
+____ ?.?W.. ______ (?A.., QGridLayout, QLabel, QLineEdit,
         QVBoxLayout, QWizard, QWizardPage)
 
 
@@ -101,7 +101,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     wizard _ QWizard()
     wizard.addPage(createIntroPage())

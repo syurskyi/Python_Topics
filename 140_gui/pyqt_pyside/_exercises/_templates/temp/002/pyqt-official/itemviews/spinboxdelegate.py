@@ -44,7 +44,7 @@
 
 ____ ?.QtCore ______ QModelIndex, Qt
 ____ ?.QtGui ______ QStandardItemModel
-____ ?.?W.. ______ (QApplication, QSpinBox, QStyledItemDelegate,
+____ ?.?W.. ______ (?A.., QSpinBox, QStyledItemDelegate,
         QTableView)
 
 
@@ -76,7 +76,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     model _ QStandardItemModel(4, 2)
     tableView _ QTableView()

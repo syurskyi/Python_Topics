@@ -31,5 +31,5 @@ ___ createDB
 if __name__ == '__main__':
     ______ sys
 
-    app _ ?W...QApplication(sys.argv)
+    app _ ?W...?A..(sys.argv)
     createDB()

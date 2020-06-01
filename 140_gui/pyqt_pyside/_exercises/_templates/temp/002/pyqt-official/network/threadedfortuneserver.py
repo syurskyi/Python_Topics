@@ -46,7 +46,7 @@ ______ random
 
 ____ ?.QtCore ______ (pyqtSignal, QByteArray, QDataStream, QIODevice,
         QThread)
-____ ?.?W.. ______ (QApplication, QDialog, QHBoxLayout, QLabel,
+____ ?.?W.. ______ (?A.., QDialog, QHBoxLayout, QLabel,
         QMessageBox, ?PB.., QVBoxLayout)
 ____ ?.QtNetwork ______ (QHostAddress, QNetworkInterface, QTcpServer,
         QTcpSocket)
@@ -145,7 +145,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     dialog _ Dialog()
     dialog.s..
     sys.exit(dialog.exec_())

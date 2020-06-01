@@ -45,7 +45,7 @@
 ______ math
 
 ____ ?.QtCore ______ Qt
-____ ?.?W.. ______ (QApplication, QGridLayout, QLayout, QLineEdit,
+____ ?.?W.. ______ (?A.., QGridLayout, QLayout, QLineEdit,
         QSizePolicy, QToolButton, QWidget)
 
 
@@ -351,7 +351,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     calc _ Calculator()
     calc.s..
     sys.exit(app.exec_())

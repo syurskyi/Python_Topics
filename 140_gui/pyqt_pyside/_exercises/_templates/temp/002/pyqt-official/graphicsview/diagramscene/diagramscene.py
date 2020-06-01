@@ -48,7 +48,7 @@ ____ ?.QtCore ______ (pyqtSignal, QLineF, QPointF, QRect, QRectF, QSize,
         QSizeF, Qt)
 ____ ?.QtGui ______ (QBrush, QColor, QFont, QIcon, QIntValidator, QPainter,
         QPainterPath, QPen, QPixmap, QPolygonF)
-____ ?.?W.. ______ (QAction, QApplication, QButtonGroup, QComboBox,
+____ ?.?W.. ______ (QAction, ?A.., QButtonGroup, QComboBox,
         QFontComboBox, QGraphicsItem, QGraphicsLineItem, QGraphicsPolygonItem,
         QGraphicsScene, QGraphicsTextItem, QGraphicsView, QGridLayout,
         QHBoxLayout, QLabel, QMainWindow, QMenu, QMessageBox, QSizePolicy,
@@ -823,7 +823,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     mainWindow _ MainWindow()
     mainWindow.setGeometry(100, 100, 800, 500)

@@ -44,7 +44,7 @@
 
 
 ____ ?.QtCore ______ QUrl
-____ ?.?W.. ______ QApplication, QMainWindow, QTreeWidgetItem
+____ ?.?W.. ______ ?A.., QMainWindow, QTreeWidgetItem
 
 ____ ui_window ______ Ui_Window
 
@@ -80,7 +80,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     window _ Window()
     window.s..

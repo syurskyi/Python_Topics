@@ -44,7 +44,7 @@
 
 ____ ?.QtCore ______ QFile, QIODevice, QMimeData, QPoint, Qt, QTextStream
 ____ ?.QtGui ______ QDrag, QPalette, QPixmap
-____ ?.?W.. ______ QApplication, QFrame, QLabel, QWidget
+____ ?.?W.. ______ ?A.., QFrame, QLabel, QWidget
 
 ______ draggabletext_rc
 
@@ -149,7 +149,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ DragWidget()
     window.s..
     sys.exit(app.exec_())

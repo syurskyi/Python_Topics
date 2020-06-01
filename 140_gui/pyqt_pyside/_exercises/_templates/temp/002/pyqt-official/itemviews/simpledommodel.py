@@ -43,7 +43,7 @@
 
 
 ____ ?.QtCore ______ QAbstractItemModel, QFile, QIODevice, QModelIndex, Qt
-____ ?.?W.. ______ QApplication, QFileDialog, QMainWindow, QTreeView
+____ ?.?W.. ______ ?A.., QFileDialog, QMainWindow, QTreeView
 ____ ?.QtXml ______ QDomDocument
 
 
@@ -217,7 +217,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ MainWindow()
     window.resize(640, 480)
     window.s..

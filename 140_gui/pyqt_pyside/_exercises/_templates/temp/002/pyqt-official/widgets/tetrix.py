@@ -47,7 +47,7 @@ ______ random
 
 ____ ?.QtCore ______ pyqtSignal, QBasicTimer, QSize, Qt
 ____ ?.QtGui ______ QColor, QPainter, QPixmap
-____ ?.?W.. ______ (QApplication, QFrame, QGridLayout, QLabel,
+____ ?.?W.. ______ (?A.., QFrame, QGridLayout, QLabel,
         QLCDNumber, ?PB.., QWidget)
 
 
@@ -81,7 +81,7 @@ class TetrixWindow(QWidget):
 
         startButton.c__.c..(self.board.start)
         pauseButton.c__.c..(self.board.pause)
-        quitButton.c__.c..(QApplication.instance().quit)
+        quitButton.c__.c..(?A...instance().quit)
         self.board.scoreChanged.c..(scoreLcd.display)
         self.board.levelChanged.c..(levelLcd.display)
         self.board.linesRemovedChanged.c..(linesLcd.display)
@@ -497,7 +497,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ TetrixWindow()
     window.s..
     random.seed(None)

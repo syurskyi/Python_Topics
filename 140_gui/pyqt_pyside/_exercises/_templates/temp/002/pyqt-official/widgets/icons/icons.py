@@ -45,7 +45,7 @@
 ____ ?.QtCore ______ QFileInfo, QRegExp, QSize, Qt
 ____ ?.QtGui ______ QIcon, QImage, QPalette, QPixmap
 ____ ?.?W.. ______ (QAbstractItemView, QAction, QActionGroup,
-        QApplication, QComboBox, QFileDialog, QFrame, QGridLayout, QGroupBox,
+        ?A.., QComboBox, QFileDialog, QFrame, QGridLayout, QGroupBox,
         QHBoxLayout, QHeaderView, QItemDelegate, QLabel, QMainWindow,
         QMessageBox, QRadioButton, QSizePolicy, QSpinBox, QStyle,
         QStyleFactory, QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget)
@@ -218,7 +218,7 @@ class MainWindow(QMainWindow):
         if not style:
             return
 
-        QApplication.setStyle(style)
+        ?A...setStyle(style)
 
         self.setButtonText(self.smallRadioButton, "Small (%d x %d)",
                 style, QStyle.PM_SmallIconSize)
@@ -260,7 +260,7 @@ class MainWindow(QMainWindow):
             else:
                 metric _ QStyle.PM_TabBarIconSize
 
-            extent _ QApplication.style().pixelMetric(metric)
+            extent _ ?A...style().pixelMetric(metric)
 
         self.previewArea.setSize(QSize(extent, extent))
         self.otherSpinBox.setEnabled(self.otherRadioButton.isChecked())
@@ -461,7 +461,7 @@ class MainWindow(QMainWindow):
             if candidate is None:
                 return
 
-            if candidate.metaObject().className() == QApplication.style().metaObject().className
+            if candidate.metaObject().className() == ?A...style().metaObject().className
                 action.trigger()
 
 
@@ -469,7 +469,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     mainWin _ MainWindow()
     mainWin.s..
     sys.exit(app.exec_())

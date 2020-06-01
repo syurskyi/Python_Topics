@@ -27,7 +27,7 @@ ______ math
 
 ____ ?.QtCore ______ pyqtProperty, pyqtSlot, QPointF, QSize
 ____ ?.QtGui ______ QBrush, QColor, QPainter, QPainterPath, QRadialGradient
-____ ?.?W.. ______ QApplication, QWidget
+____ ?.?W.. ______ ?A.., QWidget
 
 
 class PolygonWidget(QWidget):
@@ -186,7 +186,7 @@ if __name__ == "__main__":
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ PolygonWidget()
     window.s..
     sys.exit(app.exec_())

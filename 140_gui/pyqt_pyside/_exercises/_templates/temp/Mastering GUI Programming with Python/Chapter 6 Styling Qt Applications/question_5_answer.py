@@ -2,7 +2,7 @@ ____ ? ______ ?W.. as qtw
 ____ ? ______ QtGui as qtg
 ______ sys
 
-app _ qtw.QApplication(sys.argv)
+app _ qtw.?A..(sys.argv)
 
 widget _ qtw.QWidget()
 palette _ widget.palette()

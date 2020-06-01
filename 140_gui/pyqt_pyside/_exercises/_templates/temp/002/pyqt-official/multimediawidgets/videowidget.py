@@ -45,7 +45,7 @@
 ____ ?.QtCore ______ QDir, Qt, QUrl
 ____ ?.QtMultimedia ______ QMediaContent, QMediaPlayer
 ____ ?.QtMultimediaWidgets ______ QVideoWidget
-____ ?.?W.. ______ (QApplication, QFileDialog, QHBoxLayout, QLabel,
+____ ?.?W.. ______ (?A.., QFileDialog, QHBoxLayout, QLabel,
         ?PB.., QSizePolicy, QSlider, QStyle, QVBoxLayout, QWidget)
 
 
@@ -134,7 +134,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     player _ VideoPlayer()
     player.resize(320, 240)

@@ -50,7 +50,7 @@ ____ ?.QtCore ______ (pyqtSignal, QBasicTimer, QObject, QPoint, QPointF,
         QRect, QSize, QStandardPaths, Qt, QUrl)
 ____ ?.QtGui ______ (QColor, QDesktopServices, QImage, QPainter,
         QPainterPath, QPixmap, QRadialGradient)
-____ ?.?W.. ______ QAction, QApplication, QMainWindow, QWidget
+____ ?.?W.. ______ QAction, ?A.., QMainWindow, QWidget
 ____ ?.QtNetwork ______ (QNetworkAccessManager, QNetworkDiskCache,
         QNetworkRequest)
 
@@ -473,7 +473,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     app.setApplicationName('LightMaps')
     w _ MapZoom()
     w.setWindowTitle("OpenStreetMap")

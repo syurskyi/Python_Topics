@@ -62,7 +62,7 @@ ______ sys
 
 ____ ?.QtCore ______ pyqtSignal, QObject, QSize, Qt, QUrl
 ____ ?.QtGui ______ QImage, QPainter
-____ ?.?W.. ______ QApplication
+____ ?.?W.. ______ ?A..
 ____ ?.QtWebKitWidgets ______ QWebPage
 
 
@@ -148,7 +148,7 @@ if __name__ == '__main__':
     url _ QUrl.fromUserInput(sys.argv[1])
     fileName _ sys.argv[2]
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     capture _ FrameCapture()
     capture.finished.c..(app.quit)

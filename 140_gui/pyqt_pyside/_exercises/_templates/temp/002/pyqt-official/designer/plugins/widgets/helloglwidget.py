@@ -27,7 +27,7 @@ ______ math
 
 ____ ?.QtCore ______ pyqtProperty, pyqtSignal, pyqtSlot, QPoint, QSize, Qt
 ____ ?.QtGui ______ QColor
-____ ?.?W.. ______ QApplication, QOpenGLWidget
+____ ?.?W.. ______ ?A.., QOpenGLWidget
 
 
 class HelloGLWidget(QOpenGLWidget):
@@ -255,7 +255,7 @@ if __name__ == "__main__":
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     widget _ HelloGLWidget()
     widget.s..
     sys.exit(app.exec_())

@@ -45,7 +45,7 @@
 ____ ?.QtCore ______ (pyqtSignal, QMutex, QMutexLocker, QPoint, QSize, Qt,
         QThread, QWaitCondition)
 ____ ?.QtGui ______ QColor, QImage, QPainter, QPixmap, qRgb
-____ ?.?W.. ______ QApplication, QWidget
+____ ?.?W.. ______ ?A.., QWidget
 
 
 DefaultCenterX _ -0.647011
@@ -341,7 +341,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     widget _ MandelbrotWidget()
     widget.s..
     sys.exit(app.exec_())

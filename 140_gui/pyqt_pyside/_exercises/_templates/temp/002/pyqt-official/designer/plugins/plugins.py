@@ -43,10 +43,10 @@ ______ sys
 ______ os
 
 ____ ?.QtCore ______ QLibraryInfo, QProcess, QProcessEnvironment
-____ ?.?W.. ______ QApplication, QMessageBox
+____ ?.?W.. ______ ?A.., QMessageBox
 
 
-app _ QApplication(sys.argv)
+app _ ?A..(sys.argv)
 
 QMessageBox.information(None, "PyQt Designer Plugins",
         "<p>This example will start Qt Designer when you click the <b>OK</b> "

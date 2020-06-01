@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?W.. ______ QApplication, QWidget
+____ ?.?W.. ______ ?A.., QWidget
 ____ ?.QtDBus ______ QDBusAbstractInterface, QDBusConnection
 
 ____ ui_controller ______ Ui_Controller
@@ -103,7 +103,7 @@ class Controller(QWidget):
 if __name__ == '__main__':
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     controller _ Controller()
     controller.s..

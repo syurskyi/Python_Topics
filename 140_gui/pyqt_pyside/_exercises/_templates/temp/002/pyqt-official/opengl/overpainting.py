@@ -49,7 +49,7 @@ ____ ?.QtCore ______ (QPoint, QPointF, QRect, QRectF, QSize, Qt, QTime,
         QTimer)
 ____ ?.QtGui ______ (QBrush, QColor, QFontMetrics, QImage,
         QOpenGLVersionProfile, QPainter, QRadialGradient, QSurfaceFormat)
-____ ?.?W.. ______ QApplication, QOpenGLWidget
+____ ?.?W.. ______ ?A.., QOpenGLWidget
 
 
 class Bubble(object):
@@ -368,7 +368,7 @@ class GLWidget(QOpenGLWidget):
 
 if __name__ == '__main__':
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     fmt _ QSurfaceFormat()
     fmt.setSamples(4)

@@ -1,11 +1,11 @@
-____ ? ______ uic
-____ ?.?W.. ______ QApplication
-
-Form, Window _ uic.loadUiType("dialog.ui")
-
-app _ ?
-window _ Window()
-form _ Form()
-form.setupUi(window)
-window.s..
-app.e..
+# ____ ? ______ uic
+# ____ ?.?W.. ______ ?A..
+#
+# Form, Window _ ?.lUT.. dialog.ui
+#
+# app _ ?
+# window _ ?
+# form _ ?
+# ?.sU. ?
+# ?.s..
+# ?.e..

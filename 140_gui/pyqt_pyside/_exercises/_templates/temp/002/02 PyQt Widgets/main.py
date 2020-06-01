@@ -43,7 +43,7 @@
 
 
 ____ ?.QtCore ______ QDateTime, Qt, QTimer
-____ ?.?W.. ______ (QApplication, QCheckBox, QComboBox, QDateTimeEdit,
+____ ?.?W.. ______ (?A.., QCheckBox, QComboBox, QDateTimeEdit,
         QDial, QDialog, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit,
         QProgressBar, ?PB.., QRadioButton, QScrollBar, QSizePolicy,
         QSlider, QSpinBox, QStyleFactory, QTableWidget, QTabWidget, QTextEdit,
@@ -54,7 +54,7 @@ class WidgetGallery(QDialog):
     ___ __init__(self, parent_None):
         super(WidgetGallery, self).__init__(parent)
 
-        self.originalPalette _ QApplication.palette()
+        self.originalPalette _ ?A...palette()
 
         styleComboBox _ QComboBox()
         styleComboBox.addItems(QStyleFactory.keys())
@@ -104,14 +104,14 @@ class WidgetGallery(QDialog):
         self.changeStyle('Windows')
 
     ___ changeStyle(self, styleName):
-        QApplication.setStyle(QStyleFactory.create(styleName))
+        ?A...setStyle(QStyleFactory.create(styleName))
         self.changePalette()
 
     ___ changePalette(self):
         if (self.useStylePaletteCheckBox.isChecked()):
-            QApplication.setPalette(QApplication.style().standardPalette())
+            ?A...setPalette(?A...style().standardPalette())
         else:
-            QApplication.setPalette(self.originalPalette)
+            ?A...setPalette(self.originalPalette)
 
     ___ advanceProgressBar(self):
         curVal _ self.progressBar.value()
@@ -237,7 +237,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     gallery _ WidgetGallery()
     gallery.s..
     sys.exit(app.exec_()) 

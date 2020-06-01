@@ -44,7 +44,7 @@
 
 ____ ?.QtCore ______ QDir, Qt, QTimer
 ____ ?.QtGui ______ QPixmap
-____ ?.?W.. ______ (QApplication, QCheckBox, QFileDialog, QGridLayout,
+____ ?.?W.. ______ (?A.., QCheckBox, QFileDialog, QGridLayout,
         QGroupBox, QHBoxLayout, QLabel, ?PB.., QSizePolicy, QSpinBox,
         QVBoxLayout, QWidget)
 
@@ -99,9 +99,9 @@ class Screenshot(QWidget):
 
     ___ shootScreen(self):
         if self.delaySpinBox.value() !_ 0:
-            QApplication.instance().beep()
+            ?A...instance().beep()
 
-        screen _ QApplication.primaryScreen()
+        screen _ ?A...primaryScreen()
         if screen is not None:
             self.originalPixmap _ screen.grabWindow(0)
         else:
@@ -167,7 +167,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     screenshot _ Screenshot()
     screenshot.s..
     sys.exit(app.exec_())

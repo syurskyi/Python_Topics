@@ -43,7 +43,7 @@
 
 
 ____ ?.QtCore ______ QRect, QSize, Qt
-____ ?.?W.. ______ (QApplication, QFrame, QLabel, QLayout,
+____ ?.?W.. ______ (?A.., QFrame, QLabel, QLayout,
         QTextBrowser, QWidget, QWidgetItem)
 
 
@@ -234,7 +234,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ Window()
     window.s..
     sys.exit(app.exec_())    

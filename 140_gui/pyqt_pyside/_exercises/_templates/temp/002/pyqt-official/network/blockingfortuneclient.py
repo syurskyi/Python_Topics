@@ -45,7 +45,7 @@
 ____ ?.QtCore ______ (pyqtSignal, QDataStream, QMutex, QMutexLocker,
         QThread, QWaitCondition)
 ____ ?.QtGui ______ QIntValidator
-____ ?.?W.. ______ (QApplication, QDialogButtonBox, QGridLayout,
+____ ?.?W.. ______ (?A.., QDialogButtonBox, QGridLayout,
         QLabel, QLineEdit, QMessageBox, ?PB.., QWidget)
 ____ ?.QtNetwork ______ (QAbstractSocket, QHostAddress, QNetworkInterface,
         QTcpSocket)
@@ -218,7 +218,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     client _ BlockingClient()
     client.s..
     sys.exit(app.exec_())

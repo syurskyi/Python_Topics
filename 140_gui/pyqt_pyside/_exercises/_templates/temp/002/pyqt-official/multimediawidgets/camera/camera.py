@@ -47,7 +47,7 @@ ____ ?.QtGui ______ QPalette, QPixmap
 ____ ?.QtMultimedia ______ (QAudioEncoderSettings, QCamera,
         QCameraImageCapture, QImageEncoderSettings, QMediaMetaData,
         QMediaRecorder, QMultimedia, QVideoEncoderSettings)
-____ ?.?W.. ______ (QAction, QActionGroup, QApplication, QDialog,
+____ ?.?W.. ______ (QAction, QActionGroup, ?A.., QDialog,
         QMainWindow, QMessageBox)
 
 ____ ui_camera ______ Ui_Camera
@@ -504,7 +504,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     camera _ Camera()
     camera.s..

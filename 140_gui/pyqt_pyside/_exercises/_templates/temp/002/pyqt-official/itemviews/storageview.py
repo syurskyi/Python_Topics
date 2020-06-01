@@ -55,7 +55,7 @@
 ______ math
 
 ____ ?.QtCore ______ QAbstractTableModel, QByteArray, QDir, QStorageInfo, Qt
-____ ?.?W.. ______ QAbstractItemView, QApplication, QTreeView
+____ ?.?W.. ______ QAbstractItemView, ?A.., QTreeView
 
 
 ___ sizeToString(size):
@@ -148,7 +148,7 @@ class StorageModel(QAbstractTableModel):
 
 
 ___ main(args):
-    app _ QApplication (args)
+    app _ ?A.. (args)
     view _ QTreeView()
     view.setModel(StorageModel(view))
     view.resize(640, 480)

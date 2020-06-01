@@ -45,7 +45,7 @@
 
 ____ ?.QtCore ______ QStringListModel
 ____ ?.QtGui ______ QStandardItem, QStandardItemModel
-____ ?.?W.. ______ (QApplication, QComboBox, QDataWidgetMapper,
+____ ?.?W.. ______ (?A.., QComboBox, QDataWidgetMapper,
         QGridLayout, QLabel, QLineEdit, ?PB.., QTextEdit, QWidget)
 
 
@@ -127,7 +127,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     window _ Window()
     window.s..

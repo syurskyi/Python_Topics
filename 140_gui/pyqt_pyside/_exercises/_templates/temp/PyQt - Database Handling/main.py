@@ -32,7 +32,7 @@ ___ findrow(i):
 
 
 if __name__ == '__main__':
-    app _ ?W...QApplication(sys.argv)
+    app _ ?W...?A..(sys.argv)
     db _ QtSql.QSqlDatabase.addDatabase('QSQLITE')
     db.setDatabaseName('sports.db')
     model _ QtSql.QSqlTableModel()

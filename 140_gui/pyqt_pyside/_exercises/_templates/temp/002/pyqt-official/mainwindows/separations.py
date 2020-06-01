@@ -47,7 +47,7 @@ ____ ?.QtCore ______ (pyqtSignal, QBuffer, QByteArray, QFileInfo,
         QIODevice, QMimeData, QPoint, QSize, Qt)
 ____ ?.QtGui ______ (qBlue, QColor, QDrag, qGreen, QImage, QKeySequence,
         QPalette, QPixmap, qRed)
-____ ?.?W.. ______ (QApplication, QColorDialog, QFileDialog, QFrame,
+____ ?.?W.. ______ (?A.., QColorDialog, QFileDialog, QFrame,
         QGridLayout, QLabel, QLayout, QMainWindow, QMenu, QMessageBox,
         ?PB.., QVBoxLayout)
 
@@ -79,7 +79,7 @@ class FinalWidget(QFrame):
             return
 
         if (event.pos() - self.dragStartPosition).manhattanLength() \
-             < QApplication.startDragDistance
+             < ?A...startDragDistance
             return
 
         if not self.hasImage:
@@ -315,7 +315,7 @@ class Viewer(QMainWindow):
 
         self.openAction.triggered.c..(self.chooseFile)
         self.saveAction.triggered.c..(self.saveImage)
-        self.quitAction.triggered.c..(QApplication.instance().quit)
+        self.quitAction.triggered.c..(?A...instance().quit)
         self.brightnessMenu.triggered.c..(self.setBrightness)
 
     ___ createCentralWidget(self):
@@ -480,7 +480,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ Viewer()
     window.s..
     sys.exit(app.exec_())

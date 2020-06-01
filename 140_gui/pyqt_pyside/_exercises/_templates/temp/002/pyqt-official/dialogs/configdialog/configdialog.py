@@ -44,7 +44,7 @@
 
 ____ ?.QtCore ______ QDate, QSize, Qt
 ____ ?.QtGui ______ QIcon
-____ ?.?W.. ______ (QApplication, QCheckBox, QComboBox, QDateTimeEdit,
+____ ?.?W.. ______ (?A.., QCheckBox, QComboBox, QDateTimeEdit,
         QDialog, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit,
         QListView, QListWidget, QListWidgetItem, ?PB.., QSpinBox,
         QStackedWidget, QVBoxLayout, QWidget)
@@ -239,6 +239,6 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     dialog _ ConfigDialog()
     sys.exit(dialog.exec_())    

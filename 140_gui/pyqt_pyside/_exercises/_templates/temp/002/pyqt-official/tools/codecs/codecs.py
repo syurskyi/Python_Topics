@@ -43,7 +43,7 @@
 
 
 ____ ?.QtCore ______ QFile, QRegExp, QTextCodec, QTextStream
-____ ?.?W.. ______ (QAction, QApplication, QComboBox, QDialog,
+____ ?.?W.. ______ (QAction, ?A.., QComboBox, QDialog,
         QDialogButtonBox, QFileDialog, QGridLayout, QLabel, QMainWindow, QMenu,
         QMessageBox, QTextEdit)
 
@@ -247,7 +247,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     mainWin _ MainWindow()
     mainWin.s..
     sys.exit(app.exec_())

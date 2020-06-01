@@ -150,6 +150,6 @@ class MainWindow(qtw.QMainWindow):
         self.start_game()
 
 if __name__ == '__main__':
-    app _ qtw.QApplication(sys.argv)
+    app _ qtw.?A..(sys.argv)
     mw _ MainWindow()
     sys.exit(app.exec())

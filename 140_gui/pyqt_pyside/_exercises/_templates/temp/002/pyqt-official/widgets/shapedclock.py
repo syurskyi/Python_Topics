@@ -44,7 +44,7 @@
 
 ____ ?.QtCore ______ QPoint, QSize, Qt, QTime, QTimer
 ____ ?.QtGui ______ QColor, QPainter, QPolygon, QRegion
-____ ?.?W.. ______ QAction, QApplication, QWidget
+____ ?.?W.. ______ QAction, ?A.., QWidget
 
 
 class ShapedClock(QWidget):
@@ -143,7 +143,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     clock _ ShapedClock()
     clock.s..
     sys.exit(app.exec_())    

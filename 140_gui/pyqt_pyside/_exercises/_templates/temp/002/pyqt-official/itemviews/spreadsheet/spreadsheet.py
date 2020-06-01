@@ -42,7 +42,7 @@
 
 ____ ?.QtCore ______ QDate, QPoint, Qt
 ____ ?.QtGui ______ QColor, QIcon, QKeySequence, QPainter, QPixmap
-____ ?.?W.. ______ (QAction, QActionGroup, QApplication, QColorDialog,
+____ ?.?W.. ______ (QAction, QActionGroup, ?A.., QColorDialog,
         QComboBox, QDialog, QFontDialog, QGroupBox, QHBoxLayout, QLabel,
         QLineEdit, QMainWindow, QMessageBox, ?PB.., QTableWidget,
         QTableWidgetItem, QToolBar, QVBoxLayout)
@@ -130,7 +130,7 @@ class SpreadSheet(QMainWindow):
 
         self.exitAction _ QAction("E&xit", self)
         self.exitAction.setShortcut(QKeySequence.Quit)
-        self.exitAction.triggered.c..(QApplication.instance().quit)
+        self.exitAction.triggered.c..(?A...instance().quit)
 
         self.printAction _ QAction("&Print", self)
         self.printAction.setShortcut(QKeySequence.Print)
@@ -535,7 +535,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     sheet _ SpreadSheet(10, 6)
     sheet.setWindowIcon(QIcon(QPixmap(":/images/interview.png")))
     sheet.resize(640, 420)

@@ -44,7 +44,7 @@
 
 ____ ?.QtCore ______ QDir, Qt
 ____ ?.QtGui ______ QImage, QPainter, QPalette, QPixmap
-____ ?.?W.. ______ (QAction, QApplication, QFileDialog, QLabel,
+____ ?.?W.. ______ (QAction, ?A.., QFileDialog, QLabel,
         QMainWindow, QMenu, QMessageBox, QScrollArea, QSizePolicy)
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
 
@@ -210,7 +210,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     imageViewer _ ImageViewer()
     imageViewer.s..
     sys.exit(app.exec_())

@@ -49,7 +49,7 @@ ____ ?.QtCore ______ (QByteArray, QFile, QItemSelection,
         QTextStream)
 ____ ?.QtGui ______ (QBrush, QColor, QFontMetrics, QPainter, QPainterPath,
         QPalette, QPen, QRegion, QStandardItemModel)
-____ ?.?W.. ______ (QAbstractItemView, QApplication, QFileDialog,
+____ ?.?W.. ______ (QAbstractItemView, ?A.., QFileDialog,
         QMainWindow, QMenu, QRubberBand, QSplitter, QStyle, QTableView)
 
 ______ chart_rc
@@ -480,7 +480,7 @@ class MainWindow(QMainWindow):
 
         openAction.triggered.c..(self.openFile)
         saveAction.triggered.c..(self.saveFile)
-        quitAction.triggered.c..(QApplication.instance().quit)
+        quitAction.triggered.c..(?A...instance().quit)
 
         self.menuBar().addMenu(fileMenu)
         self.statusBar()
@@ -583,7 +583,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ MainWindow()
     window.s..
     sys.exit(app.exec_())

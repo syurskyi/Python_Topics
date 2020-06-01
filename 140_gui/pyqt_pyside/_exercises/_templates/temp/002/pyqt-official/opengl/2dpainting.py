@@ -48,7 +48,7 @@ ______ math
 ____ ?.QtCore ______ QPointF, QRect, QRectF, Qt, QTimer
 ____ ?.QtGui ______ (QBrush, QColor, QFont, QLinearGradient, QPainter,
         QPen, QSurfaceFormat)
-____ ?.?W.. ______ (QApplication, QGridLayout, QLabel, QOpenGLWidget,
+____ ?.?W.. ______ (?A.., QGridLayout, QLabel, QOpenGLWidget,
         QWidget)
 
 
@@ -161,7 +161,7 @@ class Window(QWidget):
 
 if __name__ == '__main__':
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     fmt _ QSurfaceFormat()
     fmt.setSamples(4)

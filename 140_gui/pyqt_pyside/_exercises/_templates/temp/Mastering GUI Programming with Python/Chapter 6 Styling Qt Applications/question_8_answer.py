@@ -41,10 +41,10 @@ class MainWindow(qtw.QMainWindow):
 
     ___ set_style(self, style):
         style _ qtw.QStyleFactory.create(style)
-        qtw.QApplication.instance().setStyle(style)
+        qtw.?A...instance().setStyle(style)
 
 if __name__ == '__main__':
-    app _ qtw.QApplication(sys.argv)
+    app _ qtw.?A..(sys.argv)
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()

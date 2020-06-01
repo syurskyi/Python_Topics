@@ -47,7 +47,7 @@ ______ math
 
 ____ ?.QtCore ______ pyqtSignal, QPoint, QSize, Qt
 ____ ?.QtGui ______ QColor, QOpenGLVersionProfile
-____ ?.?W.. ______ (QApplication, QHBoxLayout, QOpenGLWidget, QSlider,
+____ ?.?W.. ______ (?A.., QHBoxLayout, QOpenGLWidget, QSlider,
         QWidget)
 
 
@@ -277,7 +277,7 @@ class GLWidget(QOpenGLWidget):
 
 if __name__ == '__main__':
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ Window()
     window.s..
     sys.exit(app.exec_())

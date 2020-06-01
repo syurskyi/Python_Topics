@@ -43,7 +43,7 @@
 
 
 ____ ?.QtCore ______ QPoint, QRect, QSize, Qt
-____ ?.?W.. ______ (QApplication, QLayout, ?PB.., QSizePolicy,
+____ ?.?W.. ______ (?A.., QLayout, ?PB.., QSizePolicy,
         QWidget)
 
 
@@ -153,7 +153,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     mainWin _ Window()
     mainWin.s..
     sys.exit(app.exec_())

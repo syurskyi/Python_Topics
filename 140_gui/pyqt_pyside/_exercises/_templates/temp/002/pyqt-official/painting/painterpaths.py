@@ -47,7 +47,7 @@ ____ math ______ cos, pi, sin
 ____ ?.QtCore ______ QSize, Qt
 ____ ?.QtGui ______ (QBrush, QColor, QFont, QLinearGradient, QPainter,
         QPainterPath, QPalette, QPen)
-____ ?.?W.. ______ (QApplication, QComboBox, QGridLayout, QLabel,
+____ ?.?W.. ______ (?A.., QComboBox, QGridLayout, QLabel,
         QSizePolicy, QSpinBox, QWidget)
 
 
@@ -292,7 +292,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ Window()
     window.s..
     sys.exit(app.exec_())

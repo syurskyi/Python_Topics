@@ -45,7 +45,7 @@
 
 ____ ?.QtCore ______ QDate, QLocale, Qt
 ____ ?.QtGui ______ QFont, QTextCharFormat
-____ ?.?W.. ______ (QApplication, QCalendarWidget, QCheckBox,
+____ ?.?W.. ______ (?A.., QCalendarWidget, QCheckBox,
         QComboBox, QDateEdit, QGridLayout, QGroupBox, QHBoxLayout, QLabel,
         QLayout, QWidget)
 
@@ -409,7 +409,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     window _ Window()
     window.s..

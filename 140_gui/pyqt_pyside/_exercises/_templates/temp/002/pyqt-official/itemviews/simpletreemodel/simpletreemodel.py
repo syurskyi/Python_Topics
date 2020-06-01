@@ -43,7 +43,7 @@
 
 
 ____ ?.QtCore ______ QAbstractItemModel, QFile, QIODevice, QModelIndex, Qt
-____ ?.?W.. ______ QApplication, QTreeView
+____ ?.?W.. ______ ?A.., QTreeView
 
 ______ simpletreemodel_rc
 
@@ -198,7 +198,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     f _ QFile(':/default.txt')
     f.open(QIODevice.ReadOnly)

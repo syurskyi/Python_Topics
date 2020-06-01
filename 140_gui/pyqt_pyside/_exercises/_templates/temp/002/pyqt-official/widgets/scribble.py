@@ -44,7 +44,7 @@
 
 ____ ?.QtCore ______ QDir, QPoint, QRect, QSize, Qt
 ____ ?.QtGui ______ QImage, QImageWriter, QPainter, QPen, qRgb
-____ ?.?W.. ______ (QAction, QApplication, QColorDialog, QFileDialog,
+____ ?.?W.. ______ (QAction, ?A.., QColorDialog, QFileDialog,
         QInputDialog, QMainWindow, QMenu, QMessageBox, QWidget)
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
 
@@ -315,7 +315,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ MainWindow()
     window.s..
     sys.exit(app.exec_())

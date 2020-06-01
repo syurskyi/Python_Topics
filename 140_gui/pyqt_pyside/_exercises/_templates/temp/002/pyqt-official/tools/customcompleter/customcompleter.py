@@ -44,7 +44,7 @@
 
 ____ ?.QtCore ______ QFile, QStringListModel, Qt
 ____ ?.QtGui ______ QCursor, QKeySequence, QTextCursor
-____ ?.?W.. ______ (QAction, QApplication, QCompleter, QMainWindow,
+____ ?.?W.. ______ (QAction, ?A.., QCompleter, QMainWindow,
         QMessageBox, QTextEdit)
 
 ______ customcompleter_rc
@@ -157,9 +157,9 @@ class MainWindow(QMainWindow):
         aboutAct _ QAction("About", self)
         aboutQtAct _ QAction("About Qt", self)
 
-        exitAction.triggered.c..(QApplication.instance().quit)
+        exitAction.triggered.c..(?A...instance().quit)
         aboutAct.triggered.c..(self.about)
-        aboutQtAct.triggered.c..(QApplication.instance().aboutQt)
+        aboutQtAct.triggered.c..(?A...instance().aboutQt)
 
         fileMenu _ self.menuBar().addMenu("File")
         fileMenu.addAction(exitAction)
@@ -173,7 +173,7 @@ class MainWindow(QMainWindow):
         if not f.open(QFile.ReadOnly):
             return QStringListModel(self.completer)
 
-        QApplication.setOverrideCursor(QCursor(Qt.WaitCursor))
+        ?A...setOverrideCursor(QCursor(Qt.WaitCursor))
 
         words _ []
         while not f.atEnd
@@ -186,7 +186,7 @@ class MainWindow(QMainWindow):
 
                 words.append(line)
 
-        QApplication.restoreOverrideCursor()
+        ?A...restoreOverrideCursor()
 
         return QStringListModel(words, self.completer)
 
@@ -200,7 +200,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ MainWindow()
     window.s..
     sys.exit(app.exec_())

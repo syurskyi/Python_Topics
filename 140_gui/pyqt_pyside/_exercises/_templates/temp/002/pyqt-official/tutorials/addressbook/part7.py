@@ -472,9 +472,9 @@ class FindDialog(QDialog):
 if __name__ == '__main__':
     ______ sys
 
-    ____ ?.?W.. ______ QApplication
+    ____ ?.?W.. ______ ?A..
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     addressBook _ AddressBook()
     addressBook.s..

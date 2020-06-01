@@ -47,7 +47,7 @@ ______ unicodedata
 ____ ?.QtCore ______ pyqtSignal, QSize, Qt
 ____ ?.QtGui ______ (QClipboard, QFont, QFontDatabase, QFontMetrics,
         QPainter)
-____ ?.?W.. ______ (QApplication, QCheckBox, QComboBox, QFontComboBox,
+____ ?.?W.. ______ (?A.., QCheckBox, QComboBox, QFontComboBox,
         QHBoxLayout, QLabel, QLineEdit, QMainWindow, ?PB.., QScrollArea,
         QToolTip, QVBoxLayout, QWidget)
 
@@ -191,7 +191,7 @@ class MainWindow(QMainWindow):
         self.lineEdit _ QLineEdit()
         clipboardButton _ ?PB..("&To clipboard")
 
-        self.clipboard _ QApplication.clipboard()
+        self.clipboard _ ?A...clipboard()
 
         self.fontCombo.currentFontChanged.c..(self.findStyles)
         self.fontCombo.activated[str].c..(self.characterWidget.updateFont)
@@ -275,7 +275,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ MainWindow()
     window.s..
     sys.exit(app.exec_())

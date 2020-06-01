@@ -45,7 +45,7 @@
 ____ ?.QtCore ______ (QFile, QFileInfo, QPoint, QSettings, QSize, Qt,
         QTextStream)
 ____ ?.QtGui ______ QIcon, QKeySequence
-____ ?.?W.. ______ (QAction, QApplication, QFileDialog, QMainWindow,
+____ ?.?W.. ______ (QAction, ?A.., QFileDialog, QMainWindow,
         QMessageBox, QTextEdit)
 
 ______ sdi_rc
@@ -258,9 +258,9 @@ class MainWindow(QMainWindow):
             return
 
         instr _ QTextStream(file)
-        QApplication.setOverrideCursor(Qt.WaitCursor)
+        ?A...setOverrideCursor(Qt.WaitCursor)
         self.textEdit.setPlainText(instr.readAll())
-        QApplication.restoreOverrideCursor()
+        ?A...restoreOverrideCursor()
 
         self.setCurrentFile(fileName)
         self.statusBar().showMessage("File loaded", 2000)
@@ -273,9 +273,9 @@ class MainWindow(QMainWindow):
             return False
 
         outstr _ QTextStream(file)
-        QApplication.setOverrideCursor(Qt.WaitCursor)
+        ?A...setOverrideCursor(Qt.WaitCursor)
         outstr << self.textEdit.toPlainText()
-        QApplication.restoreOverrideCursor()
+        ?A...restoreOverrideCursor()
 
         self.setCurrentFile(fileName)
         self.statusBar().showMessage("File saved", 2000)
@@ -300,7 +300,7 @@ class MainWindow(QMainWindow):
     ___ findMainWindow(self, fileName):
         canonicalFilePath _ QFileInfo(fileName).canonicalFilePath()
 
-        for widget in QApplication.instance().topLevelWidgets
+        for widget in ?A...instance().topLevelWidgets
             if isinstance(widget, MainWindow) and widget.curFile == canonicalFilePath:
                 return widget
 
@@ -311,7 +311,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     mainWin _ MainWindow()
     mainWin.s..
     sys.exit(app.exec_())

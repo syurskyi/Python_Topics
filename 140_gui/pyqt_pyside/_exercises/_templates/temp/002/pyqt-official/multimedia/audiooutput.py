@@ -48,7 +48,7 @@ ____ struct ______ pack
 ____ ?.QtCore ______ QByteArray, QIODevice, Qt, QTimer, qWarning
 ____ ?.QtMultimedia ______ (QAudio, QAudioDeviceInfo, QAudioFormat,
         QAudioOutput)
-____ ?.?W.. ______ (QApplication, QComboBox, QHBoxLayout, QLabel,
+____ ?.?W.. ______ (?A.., QComboBox, QHBoxLayout, QLabel,
         QMainWindow, ?PB.., QSlider, QVBoxLayout, QWidget)
 
 
@@ -286,7 +286,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     app.setApplicationName("Audio Output Test")
 
     audio _ AudioTest()

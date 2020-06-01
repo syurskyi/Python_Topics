@@ -41,11 +41,11 @@
 
 ______ sys
 
-____ ?.?W.. ______ QApplication
+____ ?.?W.. ______ ?A..
 ____ ?.uic ______ loadUi
 
 
-app _ QApplication(sys.argv)
+app _ ?A..(sys.argv)
 widget _ loadUi('demo.ui')
 widget.s..
 sys.exit(app.exec_())

@@ -44,7 +44,7 @@
 
 ____ ?.QtCore ______ QFile, QFileInfo, QSettings, Qt, QTextStream
 ____ ?.QtGui ______ QKeySequence
-____ ?.?W.. ______ (QAction, QApplication, QFileDialog, QMainWindow,
+____ ?.?W.. ______ (QAction, ?A.., QFileDialog, QMainWindow,
         QMessageBox, QTextEdit)
 
 
@@ -159,9 +159,9 @@ class MainWindow(QMainWindow):
             return
 
         instr _ QTextStream(file)
-        QApplication.setOverrideCursor(Qt.WaitCursor)
+        ?A...setOverrideCursor(Qt.WaitCursor)
         self.textEdit.setPlainText(instr.readAll())
-        QApplication.restoreOverrideCursor()
+        ?A...restoreOverrideCursor()
 
         self.setCurrentFile(fileName)
         self.statusBar().showMessage("File loaded", 2000)
@@ -174,9 +174,9 @@ class MainWindow(QMainWindow):
             return
 
         outstr _ QTextStream(file)
-        QApplication.setOverrideCursor(Qt.WaitCursor)
+        ?A...setOverrideCursor(Qt.WaitCursor)
         outstr << self.textEdit.toPlainText()
-        QApplication.restoreOverrideCursor()
+        ?A...restoreOverrideCursor()
 
         self.setCurrentFile(fileName)
         self.statusBar().showMessage("File saved", 2000)
@@ -201,7 +201,7 @@ class MainWindow(QMainWindow):
 
         settings.setValue('recentFileList', files)
 
-        for widget in QApplication.topLevelWidgets
+        for widget in ?A...topLevelWidgets
             if isinstance(widget, MainWindow):
                 widget.updateRecentFileActions()
 
@@ -230,7 +230,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     mainWin _ MainWindow()
     mainWin.s..
     sys.exit(app.exec_())

@@ -44,7 +44,7 @@
 
 ____ ?.QtCore ______ Qt
 ____ ?.QtGui ______ QDoubleValidator, QIntValidator
-____ ?.?W.. ______ (QApplication, QComboBox, QGridLayout, QGroupBox,
+____ ?.?W.. ______ (?A.., QComboBox, QGridLayout, QGroupBox,
         QLabel, QLineEdit, QWidget)
 
 
@@ -201,7 +201,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ Window()
     window.s..
     sys.exit(app.exec_())

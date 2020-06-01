@@ -219,7 +219,7 @@ class MainWindow(qtw.QWidget):
         self.event_category.setCurrentText(category)
 
 if __name__ == '__main__':
-    app _ qtw.QApplication(sys.argv)
+    app _ qtw.?A..(sys.argv)
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()

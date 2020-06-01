@@ -43,7 +43,7 @@
 
 
 ____ ?.QtGui ______ QIcon
-____ ?.?W.. ______ (QAction, QApplication, QCheckBox, QComboBox,
+____ ?.?W.. ______ (QAction, ?A.., QCheckBox, QComboBox,
         QDialog, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit,
         QMessageBox, QMenu, ?PB.., QSpinBox, QStyle, QSystemTrayIcon,
         QTextEdit, QVBoxLayout)
@@ -223,14 +223,14 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     if not QSystemTrayIcon.isSystemTrayAvailable
         QMessageBox.critical(None, "Systray",
                 "I couldn't detect any system tray on this system.")
         sys.exit(1)
 
-    QApplication.setQuitOnLastWindowClosed(False)
+    ?A...setQuitOnLastWindowClosed(False)
 
     window _ Window()
     window.s..

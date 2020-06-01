@@ -47,7 +47,7 @@ ____ ?.QtCore ______ (QEasingCurve, QFileInfo, QLineF, QMimeData,
         QRectF, qsrand, Qt, QTime)
 ____ ?.QtGui ______ (QBrush, QColor, QDrag, QImage, QPainter, QPen,
         QPixmap, QTransform)
-____ ?.?W.. ______ (QApplication, QGraphicsItem, QGraphicsObject,
+____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsObject,
         QGraphicsScene, QGraphicsView)
 
 
@@ -81,7 +81,7 @@ class ColorItem(QGraphicsItem):
         self.setCursor(Qt.ClosedHandCursor)
 
     ___ mouseMoveEvent(self, event):
-        if QLineF(QPointF(event.screenPos()), QPointF(event.buttonDownScreenPos(Qt.LeftButton))).length() < QApplication.startDragDistance
+        if QLineF(QPointF(event.screenPos()), QPointF(event.buttonDownScreenPos(Qt.LeftButton))).length() < ?A...startDragDistance
             return
 
         drag _ QDrag(event.widget())
@@ -287,7 +287,7 @@ if __name__== '__main__':
     ______ sys
     ______ math
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     qsrand(QTime(0, 0, 0).secsTo(QTime.currentTime()))
 

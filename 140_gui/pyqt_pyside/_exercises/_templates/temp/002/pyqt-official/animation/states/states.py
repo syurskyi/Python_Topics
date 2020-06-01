@@ -45,7 +45,7 @@
 ____ ?.QtCore ______ (QPointF, QPropertyAnimation, QRect, QRectF,
         QSequentialAnimationGroup, QSizeF, QState, QStateMachine, Qt)
 ____ ?.QtGui ______ QPixmap
-____ ?.?W.. ______ (QApplication, QGraphicsLinearLayout,
+____ ?.?W.. ______ (?A.., QGraphicsLinearLayout,
         QGraphicsObject, QGraphicsProxyWidget, QGraphicsScene, QGraphicsView,
         QGraphicsWidget, QGroupBox, ?PB.., QRadioButton, QTextEdit,
         QVBoxLayout)
@@ -70,7 +70,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     # Text edit and button.
     edit _ QTextEdit()

@@ -47,7 +47,7 @@ ____ ?.QtCore ______ (pyqtProperty, pyqtSignal, QEasingCurve, QObject,
         QState, QStateMachine, Qt, QTimer)
 ____ ?.QtGui ______ (QBrush, QLinearGradient, QPainter, QPainterPath,
         QPixmap)
-____ ?.?W.. ______ (QApplication, QGraphicsItem, QGraphicsPixmapItem,
+____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsPixmapItem,
         QGraphicsRectItem, QGraphicsScene, QGraphicsView, QGraphicsWidget,
         QStyle)
 
@@ -149,7 +149,7 @@ if __name__ == '__main__':
     ______ sys
     ______ math
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     kineticPix _ QPixmap(':/images/kinetic.png')
     bgPix _ QPixmap(':/images/Time-For-Lunch-2.jpg')

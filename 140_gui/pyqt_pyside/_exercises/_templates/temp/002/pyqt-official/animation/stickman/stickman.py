@@ -49,7 +49,7 @@ ____ ?.QtCore ______ (pyqtProperty, pyqtSignal, QDataStream, QDateTime,
         QPointF, QPropertyAnimation, qrand, QRectF, QSignalTransition, qsrand,
         QState, QStateMachine, Qt, QTimer)
 ____ ?.QtGui ______ QColor, QPen, QPainter, QPainterPath, QPixmap
-____ ?.?W.. ______ (QApplication, QGraphicsItem, QGraphicsObject,
+____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsObject,
         QGraphicsScene, QGraphicsTextItem, QGraphicsView)
 
 ______ stickman_rc
@@ -606,7 +606,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     stickMan _ StickMan()
     stickMan.setDrawSticks(False)

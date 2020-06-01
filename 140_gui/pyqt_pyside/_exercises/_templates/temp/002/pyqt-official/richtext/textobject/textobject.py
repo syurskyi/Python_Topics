@@ -44,7 +44,7 @@
 
 ____ ?.QtCore ______ QFile, QIODevice, QObject, QSizeF
 ____ ?.QtGui ______ QTextCharFormat, QTextFormat, QTextObjectInterface
-____ ?.?W.. ______ (QApplication, QHBoxLayout, QLabel, QLineEdit,
+____ ?.?W.. ______ (?A.., QHBoxLayout, QLabel, QLineEdit,
         QMessageBox, ?PB.., QTextEdit, QVBoxLayout, QWidget)
 ____ ?.QtSvg ______ QSvgRenderer
 
@@ -133,7 +133,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ Window()
     window.s..
     sys.exit(app.exec_())

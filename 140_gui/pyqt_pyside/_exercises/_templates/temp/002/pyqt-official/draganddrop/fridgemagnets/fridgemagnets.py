@@ -46,7 +46,7 @@ ____ ?.QtCore ______ (QByteArray, QDataStream, QFile, QIODevice, QMimeData,
         QPoint, QRect, QRectF, Qt, QTextStream)
 ____ ?.QtGui ______ (QDrag, QFont, QFontMetrics, QImage, QPainter,
         QPalette, QPixmap, qRgba)
-____ ?.?W.. ______ QApplication, QLabel, QWidget
+____ ?.?W.. ______ ?A.., QLabel, QWidget
 
 ______ fridgemagnets_rc
 
@@ -190,7 +190,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ DragWidget()
     window.s..
     sys.exit(app.exec_())

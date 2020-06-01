@@ -43,7 +43,7 @@
 
 
 ____ ?.QtCore ______ QDate, QDateTime, Qt, QTime
-____ ?.?W.. ______ (QApplication, QComboBox, QDateEdit, QDateTimeEdit,
+____ ?.?W.. ______ (?A.., QComboBox, QDateEdit, QDateTimeEdit,
         QDoubleSpinBox, QGroupBox, QHBoxLayout, QLabel, QSpinBox, QTimeEdit,
         QVBoxLayout, QWidget)
 
@@ -207,7 +207,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ Window()
     window.s..
     sys.exit(app.exec_())

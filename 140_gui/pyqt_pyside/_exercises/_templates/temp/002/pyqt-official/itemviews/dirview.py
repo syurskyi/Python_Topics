@@ -47,11 +47,11 @@ ______ sys
 
 ____ ?.QtCore ______ (QCommandLineOption, QCommandLineParser,
         QCoreApplication, QDir, QT_VERSION_STR)
-____ ?.?W.. ______ (QApplication, QFileIconProvider, QFileSystemModel,
+____ ?.?W.. ______ (?A.., QFileIconProvider, QFileSystemModel,
         QTreeView)
 
 
-app _ QApplication(sys.argv)
+app _ ?A..(sys.argv)
 
 QCoreApplication.setApplicationVersion(QT_VERSION_STR)
 parser _ QCommandLineParser()
@@ -86,7 +86,7 @@ tree.setAnimated(False)
 tree.setIndentation(20)
 tree.setSortingEnabled(True)
 
-availableSize _ QApplication.desktop().availableGeometry(tree).size()
+availableSize _ ?A...desktop().availableGeometry(tree).size()
 tree.resize(availableSize / 2)
 tree.setColumnWidth(0, tree.width() / 3)
 

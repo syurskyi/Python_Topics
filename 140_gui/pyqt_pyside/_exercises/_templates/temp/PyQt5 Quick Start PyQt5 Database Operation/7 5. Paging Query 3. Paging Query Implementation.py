@@ -144,7 +144,7 @@ class DataGrid(QWidget):
         self.db.close()
 
 if __name__ == "__main__":
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ DataGrid()
     window.s..
     sys.exit(app.exec_())

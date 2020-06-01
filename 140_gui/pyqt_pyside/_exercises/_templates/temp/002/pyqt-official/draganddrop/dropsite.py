@@ -45,7 +45,7 @@
 
 ____ ?.QtCore ______ pyqtSignal, QMimeData, Qt
 ____ ?.QtGui ______ QPalette, QPixmap
-____ ?.?W.. ______ (QAbstractItemView, QApplication, QDialogButtonBox,
+____ ?.?W.. ______ (QAbstractItemView, ?A.., QDialogButtonBox,
         QFrame, QLabel, ?PB.., QTableWidget, QTableWidgetItem,
         QVBoxLayout, QWidget)
 
@@ -173,7 +173,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ DropSiteWindow()
     window.s..
     sys.exit(app.exec_())

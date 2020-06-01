@@ -54,7 +54,7 @@ ______ sys
 
 ____ ?.QtCore ______ QLoggingCategory, QUrl
 ____ ?.QtRemoteObjects ______ QRemoteObjectNode
-____ ?.?W.. ______ QApplication, QTreeView
+____ ?.?W.. ______ ?A.., QTreeView
 
 
 QLoggingCategory.setFilterRules('qt.remoteobjects.debug=false\n'
@@ -62,7 +62,7 @@ QLoggingCategory.setFilterRules('qt.remoteobjects.debug=false\n'
                                 'qt.remoteobjects.models.debug=false\n'
                                 'qt.remoteobjects.models.debug=false')
 
-app _ QApplication(sys.argv)
+app _ ?A..(sys.argv)
 
 node _ QRemoteObjectNode(QUrl('local:registry'))
 node.setHeartbeatInterval(1000)

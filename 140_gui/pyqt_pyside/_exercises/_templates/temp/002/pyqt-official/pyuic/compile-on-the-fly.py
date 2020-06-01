@@ -42,12 +42,12 @@
 ______ sys
 
 ____ ?.QtCore ______ pyqtSlot
-____ ?.?W.. ______ QApplication, QDialog
-____ ?.uic ______ loadUiType
+____ ?.?W.. ______ ?A.., QDialog
+____ ?.uic ______ lUT..
 
 
-app _ QApplication(sys.argv)
-form_class, base_class _ loadUiType('demo.ui')
+app _ ?A..(sys.argv)
+form_class, base_class _ lUT..('demo.ui')
 
 
 class DemoImpl(QDialog, form_class):

@@ -44,7 +44,7 @@
 
 ____ ?.QtCore ______ QDir, QFile, QRegExp
 ____ ?.QtGui ______ QPixmap
-____ ?.?W.. ______ (QApplication, QCheckBox, QGridLayout, QGroupBox,
+____ ?.?W.. ______ (?A.., QCheckBox, QGridLayout, QGroupBox,
         QLabel, QLineEdit, QMessageBox, QRadioButton, QVBoxLayout, QWizard,
         QWizardPage)
 
@@ -397,7 +397,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     wizard _ ClassWizard()
     wizard.s..
     sys.exit(app.exec_())

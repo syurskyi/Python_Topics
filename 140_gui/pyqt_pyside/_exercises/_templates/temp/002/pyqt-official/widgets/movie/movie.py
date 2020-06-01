@@ -44,7 +44,7 @@
 
 ____ ?.QtCore ______ QFileInfo, QSize, Qt
 ____ ?.QtGui ______ QMovie, QPalette
-____ ?.?W.. ______ (QApplication, QCheckBox, QFileDialog, QGridLayout,
+____ ?.?W.. ______ (?A.., QCheckBox, QFileDialog, QGridLayout,
         QHBoxLayout, QLabel, QSizePolicy, QSlider, QSpinBox, QStyle,
         QToolButton, QVBoxLayout, QWidget)
 
@@ -205,7 +205,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     player _ MoviePlayer()
     player.s..
     sys.exit(app.exec_())

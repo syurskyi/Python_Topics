@@ -47,7 +47,7 @@ ______ math
 ____ ?.QtCore ______ QPointF, Qt, QTimer
 ____ ?.QtGui ______ (QBrush, QColor, QLinearGradient, QPen, QPainter,
         QPixmap, QRadialGradient)
-____ ?.?W.. ______ (QApplication, QFrame, QGraphicsDropShadowEffect,
+____ ?.?W.. ______ (?A.., QFrame, QGraphicsDropShadowEffect,
         QGraphicsEllipseItem, QGraphicsRectItem, QGraphicsScene, QGraphicsView)
 
 
@@ -139,7 +139,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     lighting _ Lighting()
     lighting.setWindowTitle("Lighting and Shadows")

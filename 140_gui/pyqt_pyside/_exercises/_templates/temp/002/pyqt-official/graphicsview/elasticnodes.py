@@ -48,7 +48,7 @@ ____ ?.QtCore ______ (qAbs, QLineF, QPointF, qrand, QRectF, QSizeF, qsrand,
         Qt, QTime)
 ____ ?.QtGui ______ (QBrush, QColor, QLinearGradient, QPainter,
         QPainterPath, QPen, QPolygonF, QRadialGradient)
-____ ?.?W.. ______ (QApplication, QGraphicsItem, QGraphicsScene,
+____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsScene,
         QGraphicsView, QStyle)
 
 
@@ -421,7 +421,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     qsrand(QTime(0,0,0).secsTo(QTime.currentTime()))
 
     widget _ GraphWidget()

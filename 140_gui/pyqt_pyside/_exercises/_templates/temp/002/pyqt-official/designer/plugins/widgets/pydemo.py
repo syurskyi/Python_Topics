@@ -40,7 +40,7 @@
 
 
 ____ ?.QtCore ______ pyqtProperty, pyqtSignal, pyqtSlot
-____ ?.?W.. ______ QApplication, QTextEdit
+____ ?.?W.. ______ ?A.., QTextEdit
 
 
 # The purpose of this class is to show that Designer's property editor shows
@@ -148,7 +148,7 @@ if __name__ == "__main__":
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     demo _ PyDemo()
     demo.s..

@@ -46,7 +46,7 @@
 ____ ?.QtCore ______ QEvent, QRectF, Qt, QTimeLine
 ____ ?.QtGui ______ (QBrush, QColor, QPainter, QPainterPath, QPixmap,
         QTransform)
-____ ?.?W.. ______ (QApplication, QDialog, QGraphicsItem,
+____ ?.?W.. ______ (?A.., QDialog, QGraphicsItem,
         QGraphicsProxyWidget, QGraphicsScene, QGraphicsView, QStyleFactory,
         QWidget)
 
@@ -208,7 +208,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     scene _ QGraphicsScene()
     scene.setStickyFocus(True)

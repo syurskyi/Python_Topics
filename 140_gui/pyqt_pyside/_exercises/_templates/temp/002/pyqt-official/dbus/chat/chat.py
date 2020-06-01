@@ -43,7 +43,7 @@
 
 
 ____ ?.QtCore ______ pyqtSignal, pyqtSlot, Q_CLASSINFO
-____ ?.?W.. ______ QApplication, QDialog, QMainWindow, QMessageBox
+____ ?.?W.. ______ ?A.., QDialog, QMainWindow, QMessageBox
 ____ ?.QtDBus ______ (QDBusAbstractAdaptor, QDBusAbstractInterface,
         QDBusConnection, QDBusMessage)
 
@@ -108,7 +108,7 @@ class ChatMainWindow(QMainWindow, Ui_ChatMainWindow):
         self.sendButton.c__.c..(self.sendClickedSlot)
         self.actionChangeNickname.triggered.c..(self.changeNickname)
         self.actionAboutQt.triggered.c..(self.aboutQt)
-        QApplication.instance().lastWindowClosed.c..(self.exiting)
+        ?A...instance().lastWindowClosed.c..(self.exiting)
 
         # Add our D-Bus interface and connect to D-Bus.
         ChatAdaptor(self)
@@ -187,7 +187,7 @@ class NicknameDialog(QDialog, Ui_NicknameDialog):
 if __name__ == '__main__':
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     if not QDBusConnection.sessionBus().isConnected
         sys.stderr.write("Cannot connect to the D-Bus session bus.\n"

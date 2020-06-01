@@ -42,7 +42,7 @@
 ______ sys
 
 ____ ?.QtCore ______ pyqtSlot
-____ ?.?W.. ______ (QApplication, QLabel, QLineEdit, QMainWindow,
+____ ?.?W.. ______ (?A.., QLabel, QLineEdit, QMainWindow,
         QMessageBox, QProgressBar)
 
 ______ mainwindow_rc
@@ -141,7 +141,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
 
 if __name__ == "__main__":
-    a _ QApplication(sys.argv)
+    a _ ?A..(sys.argv)
     w _ MainWindow()
     w.s..
     sys.exit(a.exec_())

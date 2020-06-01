@@ -46,7 +46,7 @@ ______ math
 
 ____ ?.QtCore ______ pyqtSlot, Q_CLASSINFO, QRectF, Qt
 ____ ?.QtGui ______ QBrush, QPainter, QTransform
-____ ?.?W.. ______ (QApplication, QGraphicsItem, QGraphicsObject,
+____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsObject,
         QGraphicsScene, QGraphicsView)
 ____ ?.QtDBus ______ QDBusAbstractAdaptor, QDBusConnection
 
@@ -169,7 +169,7 @@ class CarInterfaceAdaptor(QDBusAbstractAdaptor):
 if __name__ == '__main__':
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     scene _ QGraphicsScene()
     scene.setSceneRect(-500, -500, 1000, 1000)

@@ -43,7 +43,7 @@
 
 
 ____ ?.QtCore ______ Qt
-____ ?.?W.. ______ QApplication, QTableView
+____ ?.?W.. ______ ?A.., QTableView
 ____ ?.QtSql ______ (QSqlQuery, QSqlRelation, QSqlRelationalDelegate,
         QSqlRelationalTableModel, QSqlTableModel)
 
@@ -97,7 +97,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     if not connection.createConnection
         sys.exit(1)
 

@@ -45,7 +45,7 @@
 ____ ?.QtCore ______ (QDir, QIODevice, QFile, QFileInfo, Qt, QTextStream,
         QUrl)
 ____ ?.QtGui ______ QDesktopServices
-____ ?.?W.. ______ (QAbstractItemView, QApplication, QComboBox,
+____ ?.?W.. ______ (QAbstractItemView, ?A.., QComboBox,
         QDialog, QFileDialog, QGridLayout, QHBoxLayout, QHeaderView, QLabel,
         QProgressDialog, ?PB.., QSizePolicy, QTableWidget,
         QTableWidgetItem)
@@ -137,7 +137,7 @@ class Window(QDialog):
         for i in range(files.count()):
             progressDialog.setValue(i)
             progressDialog.setLabelText("Searching file number %d of %d..." % (i, files.count()))
-            QApplication.processEvents()
+            ?A...processEvents()
 
             if progressDialog.wasCanceled
                 break
@@ -209,7 +209,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ Window()
     window.s..
     sys.exit(app.exec_())

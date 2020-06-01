@@ -43,7 +43,7 @@
 
 
 ____ ?.QtCore ______ pyqtSignal, Qt
-____ ?.?W.. ______ (QApplication, QBoxLayout, QCheckBox, QComboBox,
+____ ?.?W.. ______ (?A.., QBoxLayout, QCheckBox, QComboBox,
         QDial, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QScrollBar,
         QSlider, QSpinBox, QStackedWidget, QWidget)
 
@@ -189,7 +189,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ Window()
     window.s..
     sys.exit(app.exec_())

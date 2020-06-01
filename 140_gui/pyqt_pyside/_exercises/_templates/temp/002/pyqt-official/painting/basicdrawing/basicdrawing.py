@@ -45,7 +45,7 @@
 ____ ?.QtCore ______ QPoint, QRect, QSize, Qt
 ____ ?.QtGui ______ (QBrush, QConicalGradient, QLinearGradient, QPainter,
         QPainterPath, QPalette, QPen, QPixmap, QPolygon, QRadialGradient)
-____ ?.?W.. ______ (QApplication, QCheckBox, QComboBox, QGridLayout,
+____ ?.?W.. ______ (?A.., QCheckBox, QComboBox, QGridLayout,
         QLabel, QSpinBox, QWidget)
 
 ______ basicdrawing_rc
@@ -343,7 +343,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ Window()
     window.s..
     sys.exit(app.exec_())

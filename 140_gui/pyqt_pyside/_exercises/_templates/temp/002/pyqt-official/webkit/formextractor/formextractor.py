@@ -45,7 +45,7 @@
 
 ____ ?.QtCore ______ pyqtSlot, QUrl
 ____ ?.QtGui ______ QKeySequence
-____ ?.?W.. ______ (QAction, QApplication, QMainWindow, QMessageBox,
+____ ?.?W.. ______ (QAction, ?A.., QMainWindow, QMessageBox,
         QWidget)
 
 ______ formextractor_rc
@@ -134,7 +134,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     mainWindow _ MainWindow()
     mainWindow.setWindowTitle("Form Extractor")

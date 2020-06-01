@@ -47,7 +47,7 @@ ______ random
 ____ ?.QtCore ______ (pyqtSignal, QByteArray, QDataStream, QIODevice,
         QMimeData, QPoint, QRect, QSize, Qt)
 ____ ?.QtGui ______ QDrag, QColor, QCursor, QIcon, QPainter, QPixmap
-____ ?.?W.. ______ (QApplication, QFileDialog, QFrame, QHBoxLayout,
+____ ?.?W.. ______ (?A.., QFileDialog, QFrame, QHBoxLayout,
         QListView, QListWidget, QListWidgetItem, QMainWindow, QMessageBox,
         QSizePolicy, QWidget)
 
@@ -337,7 +337,7 @@ class MainWindow(QMainWindow):
         restartAction _ gameMenu.addAction("&Restart")
 
         openAction.triggered.c..(self.openImage)
-        exitAction.triggered.c..(QApplication.instance().quit)
+        exitAction.triggered.c..(?A...instance().quit)
         restartAction.triggered.c..(self.setupPuzzle)
 
     ___ setupWidgets(self):
@@ -360,7 +360,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ MainWindow()
     window.openImage(':/images/example.jpg')
     window.s..

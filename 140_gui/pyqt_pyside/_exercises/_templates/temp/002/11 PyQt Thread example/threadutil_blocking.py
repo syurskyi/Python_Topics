@@ -12,7 +12,7 @@ It allows you to receive results from the function invocation:
 
 ____ functools ______ wraps
 ____ ?.QtCore ______ pyqtSignal, QObject, QThread
-____ ?.?W.. ______ QApplication
+____ ?.?W.. ______ ?A..
 ____ threading ______ Event, get_ident
 
 ___ run_in_thread(thread_fn):
@@ -25,7 +25,7 @@ ___ run_in_thread(thread_fn):
     return decorator
 
 ___ _main_thread
-    app _ QApplication.instance()
+    app _ ?A...instance()
     if app:
         return app.thread()
     # We reach here in tests that don't (want to) create a QApplication.
@@ -45,7 +45,7 @@ class Executor:
     @classmethod
     ___ instance(cls):
         if cls._INSTANCE is None:
-            cls._INSTANCE _ cls(QApplication.instance())
+            cls._INSTANCE _ cls(?A...instance())
         return cls._INSTANCE
     ___ __init__(self, app):
         self._pending_tasks _ []

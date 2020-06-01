@@ -46,7 +46,7 @@ ____ ?.QtCore ______ (QAbstractTableModel, QDir, QModelIndex, QRect,
         QRectF, QSize, Qt)
 ____ ?.QtGui ______ QBrush, qGray, QImage, QPainter
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
-____ ?.?W.. ______ (QAbstractItemDelegate, QApplication, QDialog,
+____ ?.?W.. ______ (QAbstractItemDelegate, ?A.., QDialog,
         QFileDialog, QHBoxLayout, QLabel, QMainWindow, QMessageBox, QMenu,
         QProgressDialog, QSpinBox, QStyle, QStyleOptionViewItem, QTableView,
         QVBoxLayout, QWidget)
@@ -172,7 +172,7 @@ class MainWindow(QMainWindow):
 
         openAction.triggered.c..(self.chooseImage)
         self.printAction.triggered.c..(self.printImage)
-        quitAction.triggered.c..(QApplication.instance().quit)
+        quitAction.triggered.c..(?A...instance().quit)
         aboutAction.triggered.c..(self.showAboutBox)
         pixelSizeSpinBox.valueChanged.c..(delegate.setPixelSize)
         pixelSizeSpinBox.valueChanged.c..(self.updateView)
@@ -257,7 +257,7 @@ class MainWindow(QMainWindow):
 
         for row in range(rows):
             progress.setValue(row)
-            QApplication.processEvents()
+            ?A...processEvents()
             if progress.wasCanceled
                 break
 
@@ -295,7 +295,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ MainWindow()
     window.s..
     window.openImage(':/images/qt.png')

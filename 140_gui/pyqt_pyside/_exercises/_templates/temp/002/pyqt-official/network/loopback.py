@@ -43,7 +43,7 @@
 
 
 ____ ?.QtCore ______ QByteArray, Qt
-____ ?.?W.. ______ (QApplication, QDialog, QDialogButtonBox, QLabel,
+____ ?.?W.. ______ (?A.., QDialog, QDialogButtonBox, QLabel,
         QMessageBox, QProgressBar, ?PB.., QVBoxLayout)
 ____ ?.QtNetwork ______ QHostAddress, QTcpServer, QTcpSocket
 
@@ -95,7 +95,7 @@ class Dialog(QDialog):
     ___ start(self):
         self.startButton.setEnabled(False)
 
-        QApplication.setOverrideCursor(Qt.WaitCursor)
+        ?A...setOverrideCursor(Qt.WaitCursor)
 
         self.bytesWritten _ 0
         self.bytesReceived _ 0
@@ -135,7 +135,7 @@ class Dialog(QDialog):
         if self.bytesReceived == Dialog.TotalBytes:
             self.tcpServerConnection.close()
             self.startButton.setEnabled(True)
-            QApplication.restoreOverrideCursor()
+            ?A...restoreOverrideCursor()
 
     ___ updateClientProgress(self, numBytes):
         self.bytesWritten +_ numBytes
@@ -161,14 +161,14 @@ class Dialog(QDialog):
         self.clientStatusLabel.sT..("Client ready")
         self.serverStatusLabel.sT..("Server ready")
         self.startButton.setEnabled(True)
-        QApplication.restoreOverrideCursor()
+        ?A...restoreOverrideCursor()
 
 
 if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     dialog _ Dialog()
     dialog.s..
     sys.exit(dialog.exec_())

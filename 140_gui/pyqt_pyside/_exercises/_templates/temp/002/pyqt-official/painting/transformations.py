@@ -44,7 +44,7 @@
 
 ____ ?.QtCore ______ QPointF, QSize, Qt
 ____ ?.QtGui ______ QBrush, QFont, QFontMetrics, QPainter, QPainterPath
-____ ?.?W.. ______ QApplication, QComboBox, QGridLayout, QWidget
+____ ?.?W.. ______ ?A.., QComboBox, QGridLayout, QWidget
 
 
 NoTransformation, Translate, Rotate, Scale _ range(4)
@@ -243,7 +243,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ Window()
     window.s..
     sys.exit(app.exec_())

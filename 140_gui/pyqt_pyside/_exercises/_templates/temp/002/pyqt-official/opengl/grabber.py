@@ -47,7 +47,7 @@ ______ math
 
 ____ ?.QtCore ______ pyqtSignal, QSize, Qt, QTimer
 ____ ?.QtGui ______ QOpenGLVersionProfile, QPixmap
-____ ?.?W.. ______ (QAction, QApplication, QGridLayout, QLabel,
+____ ?.?W.. ______ (QAction, ?A.., QGridLayout, QLabel,
         QLineEdit, QMainWindow, QMessageBox, QOpenGLWidget, QScrollArea,
         QSizePolicy, QSlider, QWidget)
 
@@ -391,7 +391,7 @@ class MainWindow(QMainWindow):
 
 if __name__ == '__main__':
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     mainWin _ MainWindow()
     mainWin.s..
     sys.exit(app.exec_())    

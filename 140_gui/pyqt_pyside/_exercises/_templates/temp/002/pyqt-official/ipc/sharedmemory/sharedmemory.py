@@ -46,7 +46,7 @@
 
 ____ ?.QtCore ______ QBuffer, QDataStream, QSharedMemory
 ____ ?.QtGui ______ QImage, QPixmap
-____ ?.?W.. ______ QApplication, QDialog, QFileDialog
+____ ?.?W.. ______ ?A.., QDialog, QFileDialog
 
 ____ dialog ______ Ui_Dialog
 
@@ -175,7 +175,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     dialog _ Dialog()
     dialog.s..
     sys.exit(app.exec_())

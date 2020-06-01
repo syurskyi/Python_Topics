@@ -44,7 +44,7 @@
 
 
 ____ ?.QtGui ______ QStandardItem, QStandardItemModel
-____ ?.?W.. ______ (QApplication, QDataWidgetMapper, QGridLayout,
+____ ?.?W.. ______ (?A.., QDataWidgetMapper, QGridLayout,
         QLabel, QLineEdit, ?PB.., QSpinBox, QTextEdit, QWidget)
 
 
@@ -122,7 +122,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     window _ Window()
     window.s..

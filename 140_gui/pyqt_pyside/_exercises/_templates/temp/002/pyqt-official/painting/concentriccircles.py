@@ -44,7 +44,7 @@
 
 ____ ?.QtCore ______ QRect, QRectF, QSize, Qt, QTimer
 ____ ?.QtGui ______ QColor, QPainter, QPalette, QPen
-____ ?.?W.. ______ (QApplication, QFrame, QGridLayout, QLabel,
+____ ?.?W.. ______ (?A.., QFrame, QGridLayout, QLabel,
         QSizePolicy, QWidget)
 
 
@@ -140,7 +140,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ Window()
     window.s..
     sys.exit(app.exec_())

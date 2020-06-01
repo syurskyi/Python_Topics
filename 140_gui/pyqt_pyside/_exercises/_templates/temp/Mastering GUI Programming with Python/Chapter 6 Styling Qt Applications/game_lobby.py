@@ -207,7 +207,7 @@ class MainWindow(qtw.QMainWindow):
         ##########
         # Colors #
         ##########
-        app _ qtw.QApplication.instance()
+        app _ qtw.?A...instance()
         palette _ app.palette()
         palette.setColor(
             qtg.QPalette.Button,
@@ -369,7 +369,7 @@ class MainWindow(qtw.QMainWindow):
 
 
 if __name__ == '__main__':
-    app _ qtw.QApplication(sys.argv)
+    app _ qtw.?A..(sys.argv)
     windows_style _ qtw.QStyleFactory.create('Windows')
     app.setStyle(windows_style)
     proxy_style _ StyleOverrides()

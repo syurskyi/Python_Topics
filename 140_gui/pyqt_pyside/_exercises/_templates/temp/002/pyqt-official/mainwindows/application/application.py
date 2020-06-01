@@ -45,7 +45,7 @@
 ____ ?.QtCore ______ (QFile, QFileInfo, QPoint, QRect, QSettings, QSize,
         Qt, QTextStream)
 ____ ?.QtGui ______ QIcon, QKeySequence
-____ ?.?W.. ______ (QAction, QApplication, QFileDialog, QMainWindow,
+____ ?.?W.. ______ (QAction, ?A.., QFileDialog, QMainWindow,
         QMessageBox, QTextEdit)
 
 
@@ -229,9 +229,9 @@ class MainWindow(QMainWindow):
             return
 
         inf _ QTextStream(file)
-        QApplication.setOverrideCursor(Qt.WaitCursor)
+        ?A...setOverrideCursor(Qt.WaitCursor)
         self.textEdit.setPlainText(inf.readAll())
-        QApplication.restoreOverrideCursor()
+        ?A...restoreOverrideCursor()
 
         self.setCurrentFile(fileName)
         self.statusBar().showMessage("File loaded", 2000)
@@ -244,9 +244,9 @@ class MainWindow(QMainWindow):
             return False
 
         outf _ QTextStream(file)
-        QApplication.setOverrideCursor(Qt.WaitCursor)
+        ?A...setOverrideCursor(Qt.WaitCursor)
         outf << self.textEdit.toPlainText()
-        QApplication.restoreOverrideCursor()
+        ?A...restoreOverrideCursor()
 
         self.setCurrentFile(fileName);
         self.statusBar().showMessage("File saved", 2000)
@@ -272,7 +272,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     mainWin _ MainWindow()
     mainWin.s..
     sys.exit(app.exec_())

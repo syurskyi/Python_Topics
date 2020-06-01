@@ -45,7 +45,7 @@
 
 ____ ?.QtCore ______ (pyqtSignal, QAbstractListModel, QDir, QLibraryInfo,
         QModelIndex, Qt)
-____ ?.?W.. ______ (QApplication, QGridLayout, QLabel, QLineEdit,
+____ ?.?W.. ______ (?A.., QGridLayout, QLabel, QLineEdit,
         QListView, QSizePolicy, QTextBrowser, QWidget)
 
 
@@ -74,9 +74,9 @@ class FileListModel(QAbstractListModel):
         if role == Qt.BackgroundRole:
             batch _ (index.row() // 100) % 2
             if batch == 0:
-                return QApplication.palette().base()
+                return ?A...palette().base()
 
-            return QApplication.palette().alternateBase()
+            return ?A...palette().alternateBase()
 
         return None
 
@@ -143,7 +143,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     window _ Window()
     window.s..

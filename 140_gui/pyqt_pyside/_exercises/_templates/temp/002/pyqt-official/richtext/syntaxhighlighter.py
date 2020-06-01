@@ -44,7 +44,7 @@
 
 ____ ?.QtCore ______ QFile, QRegExp, Qt
 ____ ?.QtGui ______ QFont, QSyntaxHighlighter, QTextCharFormat
-____ ?.?W.. ______ (QApplication, QFileDialog, QMainWindow, QMenu,
+____ ?.?W.. ______ (?A.., QFileDialog, QMainWindow, QMenu,
         QMessageBox, QTextEdit)
 
 
@@ -105,14 +105,14 @@ class MainWindow(QMainWindow):
 
         fileMenu.addAction("&New...", self.newFile, "Ctrl+N")
         fileMenu.addAction("&Open...", self.openFile, "Ctrl+O")
-        fileMenu.addAction("E&xit", QApplication.instance().quit, "Ctrl+Q")
+        fileMenu.addAction("E&xit", ?A...instance().quit, "Ctrl+Q")
 
     ___ setupHelpMenu(self):
         helpMenu _ QMenu("&Help", self)
         self.menuBar().addMenu(helpMenu)
 
         helpMenu.addAction("&About", self.about)
-        helpMenu.addAction("About &Qt", QApplication.instance().aboutQt)
+        helpMenu.addAction("About &Qt", ?A...instance().aboutQt)
 
 
 class Highlighter(QSyntaxHighlighter):
@@ -197,7 +197,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     window _ MainWindow()
     window.resize(640, 512)
     window.s..

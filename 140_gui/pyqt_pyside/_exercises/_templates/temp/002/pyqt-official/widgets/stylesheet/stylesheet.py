@@ -43,7 +43,7 @@
 ###########################################################################
 
 
-____ ?.?W.. ______ QApplication, QLabel, QMainWindow, QMessageBox
+____ ?.?W.. ______ ?A.., QLabel, QMainWindow, QMessageBox
 
 ______ stylesheet_rc
 ____ ui_mainwindow ______ Ui_MainWindow
@@ -59,8 +59,8 @@ class MainWindow(QMainWindow):
         self.ui.nameLabel.setProperty('class', 'mandatory QLabel')
         self.styleSheetEditor _ StyleSheetEditor(self)
         self.statusBar().addWidget(QLabel("Ready"))
-        self.ui.exitAction.triggered.c..(QApplication.instance().quit)
-        self.ui.aboutQtAction.triggered.c..(QApplication.instance().aboutQt)
+        self.ui.exitAction.triggered.c..(?A...instance().quit)
+        self.ui.aboutQtAction.triggered.c..(?A...instance().aboutQt)
 
     ___ on_editStyleAction_triggered(self):
         self.styleSheetEditor.s..
@@ -80,7 +80,7 @@ if __name__ == '__main__':
 
     ______ sys
 
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
 
     window _ MainWindow()
     window.s..

@@ -46,7 +46,7 @@ ______ sys
 
 ____ ?.QtCore ______ QDir, Qt
 ____ ?.QtGui ______ QFont, QPalette
-____ ?.?W.. ______ (QApplication, QCheckBox, QColorDialog, QDialog,
+____ ?.?W.. ______ (?A.., QCheckBox, QColorDialog, QDialog,
         QErrorMessage, QFileDialog, QFontDialog, QFrame, QGridLayout,
         QInputDialog, QLabel, QLineEdit, QMessageBox, ?PB..)
 
@@ -316,7 +316,7 @@ class Dialog(QDialog):
 
 
 if __name__ == '__main__':
-    app _ QApplication(sys.argv)
+    app _ ?A..(sys.argv)
     dialog _ Dialog()
     dialog.s..
     sys.exit(app.exec_())
