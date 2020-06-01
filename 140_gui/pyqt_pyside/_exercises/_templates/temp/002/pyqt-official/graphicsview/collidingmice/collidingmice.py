@@ -174,7 +174,7 @@ c_ Mouse(QGraphicsItem):
                 self.angle -_ 0.5
 
         # Add some random movement.
-        __ len(dangerMice) > 1 and (qrand() % 10) == 0:
+        __ le.(dangerMice) > 1 and (qrand() % 10) == 0:
             __ qrand() % 1:
                 self.angle +_ (qrand() % 100) / 500.0
             ____

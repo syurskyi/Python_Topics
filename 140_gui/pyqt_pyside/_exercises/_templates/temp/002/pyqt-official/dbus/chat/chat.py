@@ -133,7 +133,7 @@ c_ ChatMainWindow(QMainWindow, Ui_ChatMainWindow):
     ___ messageSlot  nickname, t__):
         self.m_messages.ap..("<%s> %s" % (nickname, t__))
 
-        __ len(self.m_messages) > 100:
+        __ le.(self.m_messages) > 100:
             self.m_messages.p.. 0)
 
         self.rebuildHistory()
@@ -142,7 +142,7 @@ c_ ChatMainWindow(QMainWindow, Ui_ChatMainWindow):
     ___ actionSlot  nickname, t__):
         self.m_messages.ap..("* %s %s" % (nickname, t__))
 
-        __ len(self.m_messages) > 100:
+        __ le.(self.m_messages) > 100:
             self.m_messages.p.. 0)
 
         self.rebuildHistory()

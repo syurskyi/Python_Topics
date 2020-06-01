@@ -199,7 +199,7 @@ c_ Node(QGraphicsItem):
                 yvel +_ (dy * 150.0) / l
 
         # Now subtract all forces pulling items together.
-        weight _ (len(self.edgeList) + 1) * 10.0
+        weight _ (le.(self.edgeList) + 1) * 10.0
         for edge in self.edgeList:
             __ edge.sourceNode() __ self:
                 pos _ self.mapFromItem(edge.destNode(), 0, 0)

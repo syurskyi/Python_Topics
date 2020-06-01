@@ -79,13 +79,13 @@ c_ AnimalModel(QAbstractListModel):
         self.endInsertRows()
 
     ___ rowCount  parent_QModelIndex()):
-        r_ len(self._animals)
+        r_ le.(self._animals)
 
     ___ data  index, role_Qt.DisplayRole):
         try:
             animal _ self._animals[index.row()]
         except IndexError:
-            r_ QVariant()
+            r_ ?V..
 
         __ role == self.TypeRole:
             r_ animal.type()
@@ -93,7 +93,7 @@ c_ AnimalModel(QAbstractListModel):
         __ role == self.SizeRole:
             r_ animal.size()
 
-        r_ QVariant()
+        r_ ?V..
 
     ___ roleNames(self):
         r_ self._roles

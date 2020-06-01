@@ -96,7 +96,7 @@ c_ PixelDelegate(QAbstractItemDelegate):
         self.pixelSize _ size
 
 
-c_ ImageModel(QAbstractTableModel):
+c_ ImageModel ?ATM..
     ___ __init__  parent_None):
         super(ImageModel, self).__init__(parent)
 

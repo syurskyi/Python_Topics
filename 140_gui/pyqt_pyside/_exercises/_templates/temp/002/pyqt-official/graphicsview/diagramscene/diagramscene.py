@@ -352,16 +352,16 @@ c_ DiagramScene(QGraphicsScene):
     ___ mouseReleaseEvent  mouseEvent):
         __ self.line and self.myMode == self.InsertLine:
             startItems _ self.items(self.line.line().p1())
-            __ len(startItems) and startItems[0] == self.line:
+            __ le.(startItems) and startItems[0] == self.line:
                 startItems.p.. 0)
             endItems _ self.items(self.line.line().p2())
-            __ len(endItems) and endItems[0] == self.line:
+            __ le.(endItems) and endItems[0] == self.line:
                 endItems.p.. 0)
 
             self.removeItem(self.line)
             self.line _ N..
 
-            __ len(startItems) and len(endItems) and \
+            __ le.(startItems) and le.(endItems) and \
                     isinstance(startItems[0], DiagramItem) and \
                     isinstance(endItems[0], DiagramItem) and \
                     startItems[0] !_ endItems[0]:

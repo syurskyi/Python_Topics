@@ -321,7 +321,7 @@ c_ FlippablePad(RoundRectItem):
         numIcons _ size.width() * size.height()
         pixmaps _   # list
         it _ QDirIterator(":/images", ["*.png"])
-        w__ it.hasNext() and len(pixmaps) < numIcons:
+        w__ it.hasNext() and le.(pixmaps) < numIcons:
             pixmaps.ap..(it.next())
 
         iconRect _ QRectF(-54, -54, 108, 108)
@@ -336,7 +336,7 @@ c_ FlippablePad(RoundRectItem):
                 rect _ RoundRectItem(iconRect, iconColor, self)
                 rect.setZValue(1)
                 rect.setPos(self.posForLocation(x, y, size))
-                rect.setPixmap(pixmaps[n % len(pixmaps)])
+                rect.setPixmap(pixmaps[n % le.(pixmaps)])
                 n +_ 1
 
                 row.ap..(rect)

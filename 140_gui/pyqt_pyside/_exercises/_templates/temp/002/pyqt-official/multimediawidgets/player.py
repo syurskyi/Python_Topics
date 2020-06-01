@@ -311,7 +311,7 @@ c_ FrameProcessor(QObject):
 
             # Normalise the values between 0 and 1.
             __ maxValue > 0.0:
-                for i in range(len(histogram)):
+                for i in range(le.(histogram)):
                     histogram[i] /_ maxValue
 
             frame.unmap()
@@ -358,12 +358,12 @@ c_ HistogramWidget(QWidget):
     ___ paintEvent  event):
         painter _ QPainter(self)
 
-        __ len(self.m_histogram) == 0:
+        __ le.(self.m_histogram) == 0:
             painter.fillRect(0, 0, self.width(), self.height(),
                     ?C...fromRgb(0, 0, 0))
             r_
 
-        barWidth _ self.width() / float(len(self.m_histogram))
+        barWidth _ self.width() / float(le.(self.m_histogram))
 
         for i, value in enumerate(self.m_histogram):
             h _ value * self.height()

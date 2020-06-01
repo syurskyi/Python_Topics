@@ -152,19 +152,19 @@ c_ AudioTest(AudioDevicesBase):
         self.sampleRateBox.clear()
         sampleRatez _ self.deviceInfo.supportedSampleRates()
         self.sampleRateBox.addItems([str(sr) for sr in sampleRatez])
-        __ len(sampleRatez) !_ 0:
+        __ le.(sampleRatez) !_ 0:
             self.settings.setSampleRate(sampleRatez[0])
 
         self.channelsBox.clear()
         chz _ self.deviceInfo.supportedChannelCounts()
         self.channelsBox.addItems([str(ch) for ch in chz])
-        __ len(chz) !_ 0:
+        __ le.(chz) !_ 0:
             self.settings.setChannelCount(chz[0])
 
         self.codecsBox.clear()
         codecs _ self.deviceInfo.supportedCodecs()
         self.codecsBox.addItems([str(c) for c in codecs])
-        __ len(codecs) !_ 0:
+        __ le.(codecs) !_ 0:
             self.settings.setCodec(codecs[0])
 
         # Create a failed condition.
@@ -173,20 +173,20 @@ c_ AudioTest(AudioDevicesBase):
         self.sampleSizesBox.clear()
         sampleSizez _ self.deviceInfo.supportedSampleSizes()
         self.sampleSizesBox.addItems([str(ss) for ss in sampleSizez])
-        __ len(sampleSizez) !_ 0:
+        __ le.(sampleSizez) !_ 0:
             self.settings.setSampleSize(sampleSizez[0])
 
         self.sampleTypesBox.clear()
         sampleTypez _ self.deviceInfo.supportedSampleTypes()
         self.sampleTypesBox.addItems(
                 [self.sampleTypeToString(st) for st in sampleTypez])
-        __ len(sampleTypez) !_ 0:
+        __ le.(sampleTypez) !_ 0:
             self.settings.setSampleType(sampleTypez[0])
 
         self.endianBox.clear()
         endianz _ self.deviceInfo.supportedByteOrders()
         self.endianBox.addItems([self.endianToString(e) for e in endianz])
-        __ len(endianz) !_ 0:
+        __ le.(endianz) !_ 0:
             self.settings.setByteOrder(endianz[0])
 
         self.allFormatsTable.clearContents()

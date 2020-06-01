@@ -183,7 +183,7 @@ c_ Highlighter(QSyntaxHighlighter):
 
             __ endIndex == -1:
                 self.setCurrentBlockState(1)
-                commentLength _ len(t__) - startIndex
+                commentLength _ le.(t__) - startIndex
             ____
                 commentLength _ endIndex - startIndex + self.commentEndExpression.matchedLength()
 

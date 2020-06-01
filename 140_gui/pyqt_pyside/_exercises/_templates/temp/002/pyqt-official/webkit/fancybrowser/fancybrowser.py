@@ -200,7 +200,7 @@ __ __name__ == '__main__':
 
     app _ ?A..(sys.argv)
 
-    __ len(sys.argv) > 1:
+    __ le.(sys.argv) > 1:
         url _ QUrl(sys.argv[1])
     ____
         url _ QUrl('http://www.google.com/ncr')

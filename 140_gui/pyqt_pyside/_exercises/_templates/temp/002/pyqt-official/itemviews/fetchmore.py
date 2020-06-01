@@ -65,7 +65,7 @@ c_ FileListModel(QAbstractListModel):
         __ no. index.isValid
             r_ N..
 
-        __ index.row() >_ len(self.fileList) or index.row() < 0:
+        __ index.row() >_ le.(self.fileList) or index.row() < 0:
             r_ N..
 
         __ role == __.DisplayRole:
@@ -81,10 +81,10 @@ c_ FileListModel(QAbstractListModel):
         r_ N..
 
     ___ canFetchMore  index):
-        r_ self.fileCount < len(self.fileList)
+        r_ self.fileCount < le.(self.fileList)
 
     ___ fetchMore  index):
-        remainder _ len(self.fileList) - self.fileCount
+        remainder _ le.(self.fileList) - self.fileCount
         itemsToFetch _ min(100, remainder)
 
         self.beginInsertRows(QModelIndex(), self.fileCount,

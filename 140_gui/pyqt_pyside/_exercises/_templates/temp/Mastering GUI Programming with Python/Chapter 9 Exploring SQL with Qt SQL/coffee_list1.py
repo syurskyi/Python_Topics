@@ -31,7 +31,7 @@ c_ CoffeeForm(qtw.QWidget):
         self.reviews.clear()
         self.reviews.setHorizontalHeaderLabels(
             ['Reviewer', 'Date', 'Review'])
-        self.reviews.setRowCount(len(reviews))
+        self.reviews.setRowCount(le.(reviews))
         for i, review in enumerate(reviews):
             for j, value in enumerate(review):
                 self.reviews.setItem(i, j, qtw.QTableWidgetItem(value))

@@ -102,7 +102,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
 
         # If not playing, seeking to first of newly added + play.
         __ self.player.state() !_ QMediaPlayer.PlayingState:
-            i _ self.playlist.mediaCount() - len(e.mimeData().urls())
+            i _ self.playlist.mediaCount() - le.(e.mimeData().urls())
             self.playlist.setCurrentIndex(i)
             self.player.play()
 

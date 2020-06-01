@@ -108,7 +108,7 @@ __ __name__ == '__main__':
     app.sP..(palette)
 
     existing_notes _ session.query(Note).all()
-    __ len(existing_notes) == 0:
+    __ le.(existing_notes) == 0:
         MainWindow()
     ____
         for note in existing_notes:

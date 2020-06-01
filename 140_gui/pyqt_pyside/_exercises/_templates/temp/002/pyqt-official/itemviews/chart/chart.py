@@ -410,13 +410,13 @@ c_ PieView(QAbstractItemView):
                 __ region.intersects(QRegion(contentsRect)):
                     indexes.ap..(index)
 
-        __ len(indexes) > 0:
+        __ le.(indexes) > 0:
             firstRow _ indexes[0].row()
             lastRow _ indexes[0].row()
             firstColumn _ indexes[0].column()
             lastColumn _ indexes[0].column()
 
-            for i in range(1, len(indexes)):
+            for i in range(1, le.(indexes)):
                 firstRow _ min(firstRow, indexes[i].row())
                 lastRow _ max(lastRow, indexes[i].row())
                 firstColumn _ min(firstColumn, indexes[i].column())

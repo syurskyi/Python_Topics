@@ -249,7 +249,7 @@ c_ DetailsDialog(QDialog):
         self.setWindowTitle(title)
 
     ___ setupItemsTable(self):
-        self.itemsTable _ QTableWidget(len(self.items), 2)
+        self.itemsTable _ QTableWidget(le.(self.items), 2)
 
         for row, item in enumerate(self.items):
             name _ QTableWidgetItem(item)
@@ -261,7 +261,7 @@ c_ DetailsDialog(QDialog):
     ___ orderItems(self):
         orderList _   # list
 
-        for row in range(len(self.items)):
+        for row in range(le.(self.items)):
             t__ _ self.itemsTable.item(row, 0).t__()
             quantity _ int(self.itemsTable.item(row, 1).data(__.DisplayRole))
             orderList.ap..((t__, max(0, quantity)))

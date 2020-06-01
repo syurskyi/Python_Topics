@@ -138,7 +138,7 @@ c_ MainWindow ?MW..
             ____ sortKey.startswith('UTF-16'):
                 rank _ 2
             ____ iso8859RegExp.exactMatch(sortKey):
-                __ len(iso8859RegExp.cap(1)) == 1:
+                __ le.(iso8859RegExp.cap(1)) == 1:
                     rank _ 3
                 ____
                     rank _ 4

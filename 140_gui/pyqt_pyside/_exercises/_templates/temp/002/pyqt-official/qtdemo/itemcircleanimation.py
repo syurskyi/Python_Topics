@@ -220,7 +220,7 @@ c_ ItemCircleAnimation(DemoItem):
         self.letterList _   # list
 
         s _ Colors.tickerText
-        tlen _ len(s)
+        tlen _ le.(s)
         room _ self.letterCount
         w__ room >_ tlen:
             for c in s:

@@ -224,7 +224,7 @@ c_ GLWidget(QOpenGLWidget):
         self.setupViewport(width, height)
 
     ___ showEvent  event):
-        self.createBubbles(20 - len(self.bubbles))
+        self.createBubbles(20 - le.(self.bubbles))
 
     ___ sizeHint(self):
         r_ QSize(400, 400)

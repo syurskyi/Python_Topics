@@ -18,10 +18,10 @@ c_ CsvTableModel(qtc.QAbstractTableModel):
 
     # Minimum necessary methods:
     ___ rowCount  parent):
-        r_ len(self._data)
+        r_ le.(self._data)
 
     ___ columnCount  parent):
-        r_ len(self._headers)
+        r_ le.(self._headers)
 
     ___ data  index, role):
         # original if statement:
@@ -69,7 +69,7 @@ c_ CsvTableModel(qtc.QAbstractTableModel):
         )
 
         for i in range(rows):
-            default_row _ [''] * len(self._headers)
+            default_row _ [''] * le.(self._headers)
             self._data.insert(position, default_row)
         self.endInsertRows()
 
@@ -153,7 +153,7 @@ c_ MainWindow(qtw.QMainWindow):
     ___ remove_rows(self):
         selected _ self.tableview.selectedIndexes()
         __ selected:
-            self.model.removeRows(selected[0].row(), len(selected), N..)
+            self.model.removeRows(selected[0].row(), le.(selected), N..)
 
 
 __ __name__ == '__main__':

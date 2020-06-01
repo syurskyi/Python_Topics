@@ -238,7 +238,7 @@ c_ TextEdit ?MW..
                         QIcon(rsrcPath + '/editpaste.png')),
                 "&Paste", self, priority_QAction.LowPriority,
                 shortcut_QKeySequence.Paste,
-                enabled_(len(?A...clipboard().t__()) !_ 0))
+                enabled_(le.(?A...clipboard().t__()) !_ 0))
         tb.aA..(self.actionPaste)
         menu.aA..(self.actionPaste)
 
@@ -602,7 +602,7 @@ c_ TextEdit ?MW..
         self.alignmentChanged(self.textEdit.alignment())
 
     ___ clipboardDataChanged(self):
-        self.actionPaste.setEnabled(len(?A...clipboard().t__()) !_ 0)
+        self.actionPaste.setEnabled(le.(?A...clipboard().t__()) !_ 0)
 
     ___ about(self):
         ?MB...about  "About",

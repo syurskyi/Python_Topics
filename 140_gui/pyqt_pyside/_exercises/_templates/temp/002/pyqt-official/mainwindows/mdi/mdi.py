@@ -263,7 +263,7 @@ c_ MainWindow ?MW..
         self.windowMenu.aA..(self.separatorAct)
 
         windows _ self.mdiArea.subWindowList()
-        self.separatorAct.setVisible(len(windows) !_ 0)
+        self.separatorAct.setVisible(le.(windows) !_ 0)
 
         for i, window in enumerate(windows):
             child _ window.widget()

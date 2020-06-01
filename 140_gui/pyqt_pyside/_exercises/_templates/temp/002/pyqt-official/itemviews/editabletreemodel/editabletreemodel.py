@@ -60,7 +60,7 @@ c_ TreeItem(object):
         r_ self.childItems[row]
 
     ___ childCount(self):
-        r_ len(self.childItems)
+        r_ le.(self.childItems)
 
     ___ childNumber(self):
         __ self.parentItem !_ N..:
@@ -68,13 +68,13 @@ c_ TreeItem(object):
         r_ 0
 
     ___ columnCount(self):
-        r_ len(self.itemData)
+        r_ le.(self.itemData)
 
     ___ data  column):
         r_ self.itemData[column]
 
     ___ insertChildren  position, count, columns):
-        __ position < 0 or position > len(self.childItems):
+        __ position < 0 or position > le.(self.childItems):
             r_ False
 
         for row in range(count):
@@ -85,7 +85,7 @@ c_ TreeItem(object):
         r_ True
 
     ___ insertColumns  position, columns):
-        __ position < 0 or position > len(self.itemData):
+        __ position < 0 or position > le.(self.itemData):
             r_ False
 
         for column in range(columns):
@@ -100,7 +100,7 @@ c_ TreeItem(object):
         r_ self.parentItem
 
     ___ removeChildren  position, count):
-        __ position < 0 or position + count > len(self.childItems):
+        __ position < 0 or position + count > le.(self.childItems):
             r_ False
 
         for row in range(count):
@@ -109,7 +109,7 @@ c_ TreeItem(object):
         r_ True
 
     ___ removeColumns  position, columns):
-        __ position < 0 or position + columns > len(self.itemData):
+        __ position < 0 or position + columns > le.(self.itemData):
             r_ False
 
         for column in range(columns):
@@ -121,7 +121,7 @@ c_ TreeItem(object):
         r_ True
 
     ___ setData  column, value):
-        __ column < 0 or column >_ len(self.itemData):
+        __ column < 0 or column >_ le.(self.itemData):
             r_ False
 
         self.itemData[column] _ value
@@ -261,9 +261,9 @@ c_ TreeModel(QAbstractItemModel):
 
         number _ 0
 
-        w__ number < len(lines):
+        w__ number < le.(lines):
             position _ 0
-            w__ position < len(lines[number]):
+            w__ position < le.(lines[number]):
                 __ lines[number][position] !_ " ":
                     break
                 position +_ 1
@@ -283,7 +283,7 @@ c_ TreeModel(QAbstractItemModel):
                         indentations.ap..(position)
 
                 ____
-                    w__ position < indentations[-1] and len(parents) > 0:
+                    w__ position < indentations[-1] and le.(parents) > 0:
                         parents.p.. )
                         indentations.p.. )
 
@@ -291,7 +291,7 @@ c_ TreeModel(QAbstractItemModel):
                 parent _ parents[-1]
                 parent.insertChildren(parent.childCount(), 1,
                         self.rootItem.columnCount())
-                for column in range(len(columnData)):
+                for column in range(le.(columnData)):
                     parent.child(parent.childCount() -1).setData(column, columnData[column])
 
             number +_ 1

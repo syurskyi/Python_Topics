@@ -223,7 +223,7 @@ c_ PiecesModel(QAbstractListModel):
         __ random.random() < 0.5:
             row _ 0
         ____
-            row _ len(self.pixmaps)
+            row _ le.(self.pixmaps)
 
         self.beginInsertRows(QModelIndex(), row, row)
         self.pixmaps.insert(row, pixmap)
@@ -241,11 +241,11 @@ c_ PiecesModel(QAbstractListModel):
         __ parent.isValid
             r_ False
 
-        __ row >_ len(self.pixmaps) or row + count <_ 0:
+        __ row >_ le.(self.pixmaps) or row + count <_ 0:
             r_ False
 
         beginRow _ max(0, row)
-        endRow _ min(row + count - 1, len(self.pixmaps) - 1)
+        endRow _ min(row + count - 1, le.(self.pixmaps) - 1)
 
         self.beginRemoveRows(parent, beginRow, endRow)
 
@@ -285,9 +285,9 @@ c_ PiecesModel(QAbstractListModel):
 
         __ no. parent.isValid
             __ row < 0:
-                endRow _ len(self.pixmaps)
+                endRow _ le.(self.pixmaps)
             ____
-                endRow _ min(row, len(self.pixmaps))
+                endRow _ min(row, le.(self.pixmaps))
         ____
             endRow _ parent.row()
 
@@ -312,7 +312,7 @@ c_ PiecesModel(QAbstractListModel):
         __ parent.isValid
             r_ 0
         ____
-            r_ len(self.pixmaps)
+            r_ le.(self.pixmaps)
 
     ___ supportedDropActions(self):
         r_ __.CopyAction | __.MoveAction

@@ -53,7 +53,7 @@ c_ Score(object):
         self._playlist _   # list
 
     ___ hasQueuedMovies(self):
-        r_ len(self._playlist) > 0
+        r_ le.(self._playlist) > 0
 
     ___ prepare  movie, runMode, lockMode):
         __ lockMode == Score.LOCK_ITEMS:

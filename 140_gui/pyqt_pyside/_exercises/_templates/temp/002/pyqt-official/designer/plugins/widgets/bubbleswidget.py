@@ -197,7 +197,7 @@ c_ BubblesWidget(BaseClass):
             self.bubbles.ap..(self.newBubble)
             self.newBubble _ N..
             self.bubbleTimer.stop()
-            self.bubblesRemaining.emit(len(self.bubbles))
+            self.bubblesRemaining.emit(le.(self.bubbles))
 
         event.accept()
 
@@ -251,7 +251,7 @@ c_ BubblesWidget(BaseClass):
 
         self.bubbles _ bubbles
         __ left:
-            self.bubblesRemaining.emit(len(self.bubbles))
+            self.bubblesRemaining.emit(le.(self.bubbles))
 
     ___ sizeHint(self):
 
@@ -260,7 +260,7 @@ c_ BubblesWidget(BaseClass):
     # We provide getter and setter methods for the numberOfBubbles property.
     ___ getBubbles(self):
 
-        r_ len(self.bubbles)
+        r_ le.(self.bubbles)
 
     # The setBubbles() method can also be used as a slot.
     @pyqtSlot(int)
@@ -268,7 +268,7 @@ c_ BubblesWidget(BaseClass):
 
         value _ max(0, value)
 
-        w__ len(self.bubbles) < value:
+        w__ le.(self.bubbles) < value:
 
             newBubble _ Bubble(QPointF(random.random() * self.width(),
                                        random.random() * self.height()),

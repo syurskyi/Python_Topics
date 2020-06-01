@@ -182,8 +182,8 @@ c_ InvoiceView(qtw.QTextEdit):
             qtg.QTextLength(qtg.QTextLength.PercentageLength, 100))
 
         headings _ ('Job', 'Rate', 'Hours', 'Cost')
-        num_rows _ len(data['line_items']) + 1
-        num_cols _ len(headings)
+        num_rows _ le.(data['line_items']) + 1
+        num_cols _ le.(headings)
 
         cursor.setPosition(line_items_frame.lastPosition())
         table _ cursor.insertTable(num_rows, num_cols, table_format)

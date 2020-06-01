@@ -274,7 +274,7 @@ c_ HappyBirthdaySong(QObject, QQmlPropertyValueSource):
     ___ advance(self):
         self._line +_ 1
 
-        __ self._line < len(self._lyrics):
+        __ self._line < le.(self._lyrics):
             self._target.w..(self._lyrics[self._line])
         ____
             QCoreApplication.instance().quit()

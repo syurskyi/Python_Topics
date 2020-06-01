@@ -61,7 +61,7 @@ __ __name__ == '__main__':
             QDBusConnection.sessionBus())
 
     __ iface.isValid
-        msg _ iface.call('ping', sys.argv[1] __ len(sys.argv) > 1 else "")
+        msg _ iface.call('ping', sys.argv[1] __ le.(sys.argv) > 1 else "")
         reply _ QDBusReply(msg)
 
         __ reply.isValid

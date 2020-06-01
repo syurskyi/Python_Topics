@@ -39,13 +39,13 @@ c_ IPv4Validator(qtg.QValidator):
 
     ___ validate  string, index):
         octets _ string.split('.')
-        __ len(octets) > 4:
+        __ le.(octets) > 4:
             state _ qtg.QValidator.Invalid
         ____ no. all([x.isdigit() for x in octets __ x !_ '']):
             state _ qtg.QValidator.Invalid
         ____ no. all([0 <_ int(x) <_ 255 for x in octets __ x !_ '']):
             state _ qtg.QValidator.Invalid
-        ____ len(octets) < 4:
+        ____ le.(octets) < 4:
             state _ qtg.QValidator.Intermediate
         ____ any([x == '' for x in octets]):
             state _ qtg.QValidator.Intermediate

@@ -139,7 +139,7 @@ c_ Server(QDialog):
                 "Run the Fortune Client example now." % (ipAddress, self.tcpServer.serverPort()))
 
     ___ sendFortune(self):
-        fortune _ self.FORTUNES[random.randint(0, len(self.FORTUNES) - 1)]
+        fortune _ self.FORTUNES[random.randint(0, le.(self.FORTUNES) - 1)]
 
         block _ QByteArray()
         out _ QDataStream(block, QIODevice.WriteOnly)

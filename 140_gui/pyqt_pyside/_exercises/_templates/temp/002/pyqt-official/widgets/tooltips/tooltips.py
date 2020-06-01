@@ -174,7 +174,7 @@ c_ SortingBox(QWidget):
 
                 value _ self.shapeItems[index]
                 del self.shapeItems[index]
-                self.shapeItems.insert(len(self.shapeItems) - 1, value)
+                self.shapeItems.insert(le.(self.shapeItems) - 1, value)
 
                 self.update()
 
@@ -206,7 +206,7 @@ c_ SortingBox(QWidget):
                 self.randomItemPosition(), self.randomItemColor())
 
     ___ itemAt  pos):
-        for i in range(len(self.shapeItems) - 1, -1, -1):
+        for i in range(le.(self.shapeItems) - 1, -1, -1):
             item _ self.shapeItems[i]
             __ item.path().contains(QPointF(pos - item.position())):
                 r_ i
@@ -247,10 +247,10 @@ c_ SortingBox(QWidget):
     ___ initialItemPosition  path):
         y _ (self.height() - path.controlPointRect().height()) / 2
 
-        __ len(self.shapeItems) == 0:
+        __ le.(self.shapeItems) == 0:
             x _ ((3 * self.width()) / 2 - path.controlPointRect().width()) / 2
         ____
-            x _ (self.width() / len(self.shapeItems) - path.controlPointRect().width()) / 2
+            x _ (self.width() / le.(self.shapeItems) - path.controlPointRect().width()) / 2
 
         r_ QPoint(x, y)
 
@@ -261,7 +261,7 @@ c_ SortingBox(QWidget):
         r_ QPoint(x, y)
 
     ___ initialItemColor(self):
-        hue _ ((len(self.shapeItems) + 1) * 85) % 256
+        hue _ ((le.(self.shapeItems) + 1) * 85) % 256
         r_ ?C...fromHsv(hue, 255, 190)
 
     ___ randomItemColor(self):

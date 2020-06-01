@@ -125,7 +125,7 @@ c_ DragWidget(QWidget):
             hotSpot _ QPoint()
 
             hotSpotPos _ mime.data('application/x-hotspot').split(' ')
-            __ len(hotSpotPos) == 2:
+            __ le.(hotSpotPos) == 2:
                hotSpot.setX(hotSpotPos[0].toInt()[0])
                hotSpot.setY(hotSpotPos[1].toInt()[0])
 

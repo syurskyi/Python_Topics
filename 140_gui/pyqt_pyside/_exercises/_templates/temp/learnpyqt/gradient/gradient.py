@@ -100,7 +100,7 @@ c_ Gradient(?W...QWidget):
 
     @property
     ___ _end_stops(self):
-        r_ [0, len(self._gradient)-1]
+        r_ [0, le.(self._gradient)-1]
 
     ___ addStop  stop, color_None):
         # Stop is a value 0...1, find the point to insert this stop
@@ -123,7 +123,7 @@ c_ Gradient(?W...QWidget):
             self.update()
 
     ___ setColorAtPosition  n, color):
-        __ n < len(self._gradient):
+        __ n < le.(self._gradient):
             stop, _ _ self._gradient[n]
             self._gradient[n] _ stop, color
             self.gradientChanged.emit()
@@ -192,7 +192,7 @@ c_ Gradient(?W...QWidget):
         __ n:
             self._sort_gradient() # Ensure ordered.
             # Delete existing, if not at the ends.
-            __ n > 0 and n < len(self._gradient) - 1:
+            __ n > 0 and n < le.(self._gradient) - 1:
                 self.removeStopAtPosition(n)
 
         ____

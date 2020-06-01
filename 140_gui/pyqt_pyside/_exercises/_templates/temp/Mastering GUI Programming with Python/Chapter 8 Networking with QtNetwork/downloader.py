@@ -24,7 +24,7 @@ c_ Downloader(qtc.QObject):
         sys.exit(0)
 
 __ __name__ == '__main__':
-    __ len(sys.argv) < 2:
+    __ le.(sys.argv) < 2:
         print(f'Usage: {sys.argv[0]} <download url>')
         sys.exit(1)
     app _ qtc.QCoreApplication(sys.argv)

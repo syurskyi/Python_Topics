@@ -89,7 +89,7 @@ c_ ExampleContent(DemoItem):
             exampleDoc _ parseString(contents)
             paragraphs _ exampleDoc.getElementsByTagName('p')
 
-        __ len(paragraphs) < 1:
+        __ le.(paragraphs) < 1:
             Colors.debug("- ExampleContent.loadDescription(): Could not load description:", self._menu_manager.info[self.name].g..('docfile'))
 
         description _ Colors.contentColor + "Could not load description. Ensure that the documentation for Qt is built."

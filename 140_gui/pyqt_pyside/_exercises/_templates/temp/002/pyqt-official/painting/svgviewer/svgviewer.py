@@ -290,7 +290,7 @@ __ __name__ == '__main__':
     app _ ?A..(sys.argv)
 
     window _ MainWindow()
-    __ len(sys.argv) == 2:
+    __ le.(sys.argv) == 2:
         window.openFile(sys.argv[1])
     ____
         window.openFile(':/files/bubbles.svg')

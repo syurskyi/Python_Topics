@@ -71,7 +71,7 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
         self.textedit.textChanged.c..(
             lambda: charcount_label.sT..(
                 "chars: " +
-                str(len(self.textedit.toPlainText()))
+                str(le.(self.textedit.toPlainText()))
                 )
             )
         self.statusBar().addPermanentWidget(charcount_label)

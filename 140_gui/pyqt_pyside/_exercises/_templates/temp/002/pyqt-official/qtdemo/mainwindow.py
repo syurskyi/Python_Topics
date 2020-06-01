@@ -184,7 +184,7 @@ c_ MainWindow(QGraphicsView):
         self.fpsTime _ QTime.currentTime()
 
         # Calculate median.
-        size _ len(self.fpsHistory)
+        size _ le.(self.fpsHistory)
 
         __ size == 10:
             self.fpsHistory.sort()
@@ -204,7 +204,7 @@ c_ MainWindow(QGraphicsView):
         __ self.fpsMedian !_ -1:
             r_
 
-        size _ len(self.fpsHistory)
+        size _ le.(self.fpsHistory)
 
         __ size == 0:
             self.fpsMedian _ 0.01

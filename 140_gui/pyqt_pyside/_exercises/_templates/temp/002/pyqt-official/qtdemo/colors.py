@@ -270,10 +270,10 @@ ___ parseFloat(argument, name):
 
 
 ___ parseText(argument, name):
-    __ len(name) == len(argument):
+    __ le.(name) == le.(argument):
         ?MB...warning(N.., "Arguments",
                 "No argument number found for %s. Remember to put name and "
                 "value adjacent! (e.g. -fps100)")
         sys.exit(0)
 
-    r_ argument[len(name):]
+    r_ argument[le.(name):]

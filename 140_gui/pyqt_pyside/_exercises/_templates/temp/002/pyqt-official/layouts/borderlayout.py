@@ -84,10 +84,10 @@ c_ BorderLayout(QLayout):
         r_ False
 
     ___ count(self):
-        r_ len(self.list)
+        r_ le.(self.list)
 
     ___ itemAt  index):
-        __ index < len(self.list):
+        __ index < le.(self.list):
             r_ self.list[index].item
 
         r_ N..
@@ -160,7 +160,7 @@ c_ BorderLayout(QLayout):
         r_ self.calculateSize(self.SizeHint)
 
     ___ takeAt  index):
-        __ index >_ 0 and index < len(self.list):
+        __ index >_ 0 and index < le.(self.list):
             layoutStruct _ self.list.p.. index)
             r_ layoutStruct.item
 

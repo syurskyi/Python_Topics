@@ -28,7 +28,7 @@ c_ InventoryNumberValidator(qtg.QValidator):
             state _ qtg.QValidator.Invalid
         ____ no. all([char == '-' for char in dash1 + dash2]):
             state _ qtg.QValidator.Invalid
-        ____ len(string) > 12:
+        ____ le.(string) > 12:
             state _ qtg.QValidator.Invalid
         ____ no. all([seg1, dash1, seg2, dash2, seg3, seg4]):
             state _ qtg.QValidator.Intermediate

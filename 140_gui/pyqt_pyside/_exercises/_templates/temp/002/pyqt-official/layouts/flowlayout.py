@@ -82,16 +82,16 @@ c_ FlowLayout(QLayout):
         self.itemList.ap..(item)
 
     ___ count(self):
-        r_ len(self.itemList)
+        r_ le.(self.itemList)
 
     ___ itemAt  index):
-        __ index >_ 0 and index < len(self.itemList):
+        __ index >_ 0 and index < le.(self.itemList):
             r_ self.itemList[index]
 
         r_ N..
 
     ___ takeAt  index):
-        __ index >_ 0 and index < len(self.itemList):
+        __ index >_ 0 and index < le.(self.itemList):
             r_ self.itemList.p.. index)
 
         r_ N..

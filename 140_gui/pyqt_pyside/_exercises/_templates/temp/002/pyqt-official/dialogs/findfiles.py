@@ -174,7 +174,7 @@ c_ Window(QDialog):
             self.filesTable.setItem(row, 0, fileNameItem)
             self.filesTable.setItem(row, 1, sizeItem)
 
-        self.filesFoundLabel.sT..("%d file(s) found (Double click on a file to open it)" % len(files))
+        self.filesFoundLabel.sT..("%d file(s) found (Double click on a file to open it)" % le.(files))
 
     ___ createButton  t__, member):
         button _ ?PB..(t__)

@@ -143,7 +143,7 @@ c_ GlWidget(qtw.QOpenGLWidget):
 
         self.program.setAttributeArray(self.color_location, gl_colors)
         self.program.setAttributeArray(self.vertex_location, side_vertices)
-        self.gl.glDrawArrays(self.gl.GL_QUADS, 0, len(side_vertices))
+        self.gl.glDrawArrays(self.gl.GL_QUADS, 0, le.(side_vertices))
         self.program.disableAttributeArray(self.vertex_location)
         self.program.disableAttributeArray(self.color_location)
         self.program.release()

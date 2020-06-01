@@ -141,7 +141,7 @@ c_ FrameCapture(QObject):
 
 
 __ __name__ == '__main__':
-    __ len(sys.argv) !_ 3:
+    __ le.(sys.argv) !_ 3:
         cerr(__doc__)
         sys.exit(1)
 

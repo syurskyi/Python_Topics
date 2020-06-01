@@ -52,7 +52,7 @@ c_ SortedDict(dict):
         ___ __init__  sorted_dict):
             self._dict _ sorted_dict
             self._keys _ sorted(self._dict.keys())
-            self._nr_items _ len(self._keys)
+            self._nr_items _ le.(self._keys)
             self._idx _ 0
 
         ___ __iter__(self):
@@ -173,7 +173,7 @@ c_ AddressBook(QWidget):
         self.addressText.setReadOnly(True)
         self.addButton.setEnabled(True)
 
-        number _ len(self.contacts)
+        number _ le.(self.contacts)
         self.nextButton.setEnabled(number > 1)
         self.previousButton.setEnabled(number > 1)
 
@@ -192,7 +192,7 @@ c_ AddressBook(QWidget):
         self.addressText.setReadOnly(True)
         self.addButton.setEnabled(True)
 
-        number _ len(self.contacts)
+        number _ le.(self.contacts)
         self.nextButton.setEnabled(number > 1)
         self.previousButton.setEnabled(number > 1)
 

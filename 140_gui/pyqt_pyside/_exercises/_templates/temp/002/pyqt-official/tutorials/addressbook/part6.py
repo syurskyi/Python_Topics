@@ -55,7 +55,7 @@ c_ SortedDict(dict):
         ___ __init__  sorted_dict):
             self._dict _ sorted_dict
             self._keys _ sorted(self._dict.keys())
-            self._nr_items _ len(self._keys)
+            self._nr_items _ le.(self._keys)
             self._idx _ 0
 
         ___ __iter__(self):
@@ -321,7 +321,7 @@ c_ AddressBook(QWidget):
             self.addressText.setReadOnly(True)
             self.addButton.setEnabled(True)
 
-            number _ len(self.contacts)
+            number _ le.(self.contacts)
             self.editButton.setEnabled(number >_ 1)
             self.removeButton.setEnabled(number >_ 1)
             self.findButton.setEnabled(number > 2)
@@ -368,7 +368,7 @@ c_ AddressBook(QWidget):
         self.contacts _ pickle.load(in_file)
         in_file.close()
 
-        __ len(self.contacts) == 0:
+        __ le.(self.contacts) == 0:
             ?MB...information  "No contacts in file",
                     "The file you are attempting to open contains no "
                     "contacts.")

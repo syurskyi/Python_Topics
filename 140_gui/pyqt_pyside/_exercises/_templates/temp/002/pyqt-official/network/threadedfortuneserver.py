@@ -91,7 +91,7 @@ c_ FortuneServer(QTcpServer):
         "Computers are not intelligent. They only think they are.")
 
     ___ incomingConnection  socketDescriptor):
-        fortune _ self.FORTUNES[random.randint(0, len(self.FORTUNES) - 1)]
+        fortune _ self.FORTUNES[random.randint(0, le.(self.FORTUNES) - 1)]
 
         thread _ FortuneThread(socketDescriptor, fortune, self)
         thread.finished.c..(thread.deleteLater)

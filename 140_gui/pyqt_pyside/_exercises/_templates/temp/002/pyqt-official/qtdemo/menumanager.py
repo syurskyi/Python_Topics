@@ -388,7 +388,7 @@ c_ MenuManager(QObject):
 
         dir.cd(dirName)
 
-        __ len(fileName) > 1:
+        __ le.(fileName) > 1:
             dir.cd('/'.join(fileName[:-1]))
 
         # This may legitimately fail if the example is just a simple .py file.

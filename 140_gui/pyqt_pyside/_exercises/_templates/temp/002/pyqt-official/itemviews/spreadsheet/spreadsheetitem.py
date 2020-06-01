@@ -112,9 +112,9 @@ c_ SpreadSheetItem(QTableWidgetItem):
         firstCol _ -1
         secondRow _ -1
         secondCol _ -1
-        __ len(slist) > 1:
+        __ le.(slist) > 1:
             firstRow, firstCol _ decode_pos(slist[1])
-        __ len(slist) > 2:
+        __ le.(slist) > 2:
             secondRow, secondCol _ decode_pos(slist[2])
         start _ widget.item(firstRow, firstCol)
         end _ widget.item(secondRow, secondCol)

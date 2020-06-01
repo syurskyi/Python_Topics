@@ -235,7 +235,7 @@ c_ AudioTest ?MW..
             chunks _ self.m_audioOutput.bytesFree() // self.m_audioOutput.periodSize()
             for _ in range(chunks):
                 data _ self.m_generator.read(self.m_audioOutput.periodSize())
-                __ data __ N.. or len(data) !_ self.m_audioOutput.periodSize
+                __ data __ N.. or le.(data) !_ self.m_audioOutput.periodSize
                     break
 
                 self.m_output.w..(data)

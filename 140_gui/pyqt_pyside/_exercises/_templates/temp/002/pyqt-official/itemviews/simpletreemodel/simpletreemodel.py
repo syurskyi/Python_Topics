@@ -61,10 +61,10 @@ c_ TreeItem(object):
         r_ self.childItems[row]
 
     ___ childCount(self):
-        r_ len(self.childItems)
+        r_ le.(self.childItems)
 
     ___ columnCount(self):
-        r_ len(self.itemData)
+        r_ le.(self.itemData)
 
     ___ data  column):
         try:
@@ -162,9 +162,9 @@ c_ TreeModel(QAbstractItemModel):
 
         number _ 0
 
-        w__ number < len(lines):
+        w__ number < le.(lines):
             position _ 0
-            w__ position < len(lines[number]):
+            w__ position < le.(lines[number]):
                 __ lines[number][position] !_ ' ':
                     break
                 position +_ 1
@@ -184,7 +184,7 @@ c_ TreeModel(QAbstractItemModel):
                         indentations.ap..(position)
 
                 ____
-                    w__ position < indentations[-1] and len(parents) > 0:
+                    w__ position < indentations[-1] and le.(parents) > 0:
                         parents.p.. )
                         indentations.p.. )
 

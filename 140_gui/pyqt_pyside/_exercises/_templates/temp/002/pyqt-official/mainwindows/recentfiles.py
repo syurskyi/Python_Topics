@@ -209,7 +209,7 @@ c_ MainWindow ?MW..
         settings _ QSettings('Trolltech', 'Recent Files Example')
         files _ settings.value('recentFileList',   # list)
 
-        numRecentFiles _ min(len(files), MainWindow.MaxRecentFiles)
+        numRecentFiles _ min(le.(files), MainWindow.MaxRecentFiles)
 
         for i in range(numRecentFiles):
             t__ _ "&%d %s" % (i + 1, self.strippedName(files[i]))

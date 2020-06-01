@@ -68,7 +68,7 @@ ___ sizeToString(size):
         unit _ units[power]
     except IndexError:
         unit _ units[-1]
-        power _ len(units) - 1
+        power _ le.(units) - 1
     __ power == 0:
         decimals _ 0
     normsize _ size / math.pow(1024, power)
@@ -76,7 +76,7 @@ ___ sizeToString(size):
     r_ "%0.*f %s" % (decimals, normsize, unit)
 
 
-c_ StorageModel(QAbstractTableModel):
+c_ StorageModel ?ATM..
     ColumnRootPath, ColumnName, ColumnDevice, ColumnFileSystemName, \
     ColumnTotal, ColumnFree, ColumnAvailable, ColumnIsReady, \
     ColumnIsReadOnly, ColumnIsValid, ColumnCount _ range(11)
@@ -117,7 +117,7 @@ c_ StorageModel(QAbstractTableModel):
     ___ rowCount  parent):
         __ parent.isValid
             r_ 0
-        r_ len(self.volumes)
+        r_ le.(self.volumes)
 
     ___ data  index, role):
         __ no. index.isValid

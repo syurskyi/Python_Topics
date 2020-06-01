@@ -51,15 +51,15 @@ c_ PythonConsoleWidget(QLineEdit):
         
             __ event.key() == __.Key_Up:
                 current _ max(0, self.current - 1)
-                __ 0 <_ current < len(self.history):
+                __ 0 <_ current < le.(self.history):
                     self.sT..(self.history[current])
                     self.current _ current
                 
                 event.accept()
             
             ____ event.key() == __.Key_Down:
-                current _ min(len(self.history), self.current + 1)
-                __ 0 <_ current < len(self.history):
+                current _ min(le.(self.history), self.current + 1)
+                __ 0 <_ current < le.(self.history):
                     self.sT..(self.history[current])
                 ____
                     self.clear()
@@ -83,7 +83,7 @@ c_ PythonConsoleWidget(QLineEdit):
             # history, and update the current command index.
             self.clear()
             self.history.ap..(self.expression)
-            self.current _ len(self.history)
+            self.current _ le.(self.history)
         except:
             pass
 

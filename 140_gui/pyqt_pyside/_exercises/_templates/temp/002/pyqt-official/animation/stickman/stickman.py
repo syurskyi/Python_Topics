@@ -206,10 +206,10 @@ c_ StickMan(QGraphicsObject):
         r_ self.childrenBoundingRect().adjusted(-55.0, -55.0, 55.0, 55.0)
 
     ___ nodeCount(self):
-        r_ len(self.m_nodes)
+        r_ le.(self.m_nodes)
 
     ___ node  idx):
-        __ idx >_ 0 and idx < len(self.m_nodes):
+        __ idx >_ 0 and idx < le.(self.m_nodes):
             r_ self.m_nodes[idx]
 
         r_ N..
@@ -376,13 +376,13 @@ c_ Frame(object):
         self.m_nodePositions _   # list
 
     ___ nodeCount(self):
-        r_ len(self.m_nodePositions)
+        r_ le.(self.m_nodePositions)
 
     ___ setNodeCount  nodeCount):
-        w__ nodeCount > len(self.m_nodePositions):
+        w__ nodeCount > le.(self.m_nodePositions):
             self.m_nodePositions.ap..(QPointF())
 
-        w__ nodeCount < len(self.m_nodePositions):
+        w__ nodeCount < le.(self.m_nodePositions):
             self.m_nodePositions.p.. )
 
     ___ nodePos  idx):
@@ -399,14 +399,14 @@ c_ Animation(object):
         self.m_name _ ''
 
     ___ setTotalFrames  totalFrames):
-        w__ len(self.m_frames) < totalFrames:
+        w__ le.(self.m_frames) < totalFrames:
             self.m_frames.ap..(Frame())
 
-        w__ totalFrames < len(self.m_frames):
+        w__ totalFrames < le.(self.m_frames):
             self.m_frames.p.. )
 
     ___ totalFrames(self):
-        r_ len(self.m_frames)
+        r_ le.(self.m_frames)
 
     ___ setCurrentFrame  currentFrame):
         self.m_currentFrame _ max(min(currentFrame, self.totalFrames() - 1), 0)
@@ -439,7 +439,7 @@ c_ Animation(object):
     ___ save  device):
         stream _ QDataStream(device)
         stream.writeQString(self.m_name)
-        stream.writeInt(len(self.m_frames))
+        stream.writeInt(le.(self.m_frames))
 
         for frame in self.m_frames:
             stream.writeInt(frame.nodeCount())

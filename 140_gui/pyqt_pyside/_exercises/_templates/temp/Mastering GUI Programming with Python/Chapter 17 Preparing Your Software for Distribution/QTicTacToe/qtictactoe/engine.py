@@ -28,7 +28,7 @@ c_ TicTacToeEngine(qtc.QObject):
         """Mark a square for one player or another"""
         __ any([
                 no. isinstance(square, int),
-                no. (0 <_ square < len(self.board)),
+                no. (0 <_ square < le.(self.board)),
                 self.board[square] __ no. N..
         ]):
             r_ False

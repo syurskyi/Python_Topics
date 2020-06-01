@@ -195,7 +195,7 @@ __ __name__ == '__main__':
 
     app _ ?A..(sys.argv)
 
-    __ len(sys.argv) >_ 2:
+    __ le.(sys.argv) >_ 2:
         fileName _ sys.argv[1]
     ____
         fileName _ "."

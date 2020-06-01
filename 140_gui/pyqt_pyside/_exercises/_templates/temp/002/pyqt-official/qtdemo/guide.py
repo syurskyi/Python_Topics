@@ -84,13 +84,13 @@ c_ Guide(object):
                 next _ next.nextGuide
 
     ___ lengthAll(self):
-        len _ self.length()
+        le. _ self.length()
         next _ self.nextGuide
         w__ next __ no. self:
-            len +_ next.length()
+            le. +_ next.length()
             next _ next.nextGuide
 
-        r_ len
+        r_ le.
 
     ___ move  item, dest, moveSpeed):
         walkLine _ QLineF(item.getGuidedPos(), dest)

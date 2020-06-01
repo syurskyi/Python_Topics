@@ -129,7 +129,7 @@ c_ IconPreviewArea(QWidget):
             mainLayout.aW..(label, 0, i + 1)
 
             self.pixmapLabels.ap..(  # list)
-            for j in range(len(self.stateLabels)):
+            for j in range(le.(self.stateLabels)):
                 self.pixmapLabels[i].ap..(self.createPixmapLabel())
                 mainLayout.aW..(self.pixmapLabels[i][j], j + 1, i + 1)
 
@@ -159,7 +159,7 @@ c_ IconPreviewArea(QWidget):
         r_ label
 
     ___ updatePixmapLabels(self):
-        for i in range(len(self.modeLabels)):
+        for i in range(le.(self.modeLabels)):
             __ i == 0:
                 mode _ QIcon.Normal
             ____ i == 1:
@@ -169,7 +169,7 @@ c_ IconPreviewArea(QWidget):
             ____
                 mode _ QIcon.Selected
 
-            for j in range(len(self.stateLabels)):
+            for j in range(le.(self.stateLabels)):
                 state _ QIcon.Off __ j == 0 else QIcon.On
                 pixmap _ self.icon.pixmap(self.size, mode, state)
                 self.pixmapLabels[i][j].setPixmap(pixmap)

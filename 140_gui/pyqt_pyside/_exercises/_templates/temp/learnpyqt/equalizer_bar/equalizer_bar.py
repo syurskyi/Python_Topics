@@ -22,7 +22,7 @@ c_ EqualizerBar(?W...QWidget):
 
         __ isinstance(steps, list):
             # list of colours.
-            self.n_steps _ len(steps)
+            self.n_steps _ le.(steps)
             self.steps _ steps
 
         ____ isinstance(steps, int):
@@ -135,7 +135,7 @@ c_ EqualizerBar(?W...QWidget):
         self.update()
 
     ___ setColors  colors):
-        self.n_steps _ len(colors)
+        self.n_steps _ le.(colors)
         self.steps _ colors
         self.update()
 
