@@ -7,62 +7,62 @@ ____ ? ______ QtMultimediaWidgets __ qtmmw
 
 c_ MainWindow(qtw.QMainWindow):
 
-    ___ __init__(self):
+    ___  -
         """MainWindow constructor.
 
         Code in this method should define window properties,
         create backend resources, etc.
         """
-        super().__init__()
+        s_. - ()
         # Main framework
-        self.resize(qtc.QSize(800, 600))
+        resize(qtc.QSize(800, 600))
         base_widget _ qtw.?W..
         base_widget.sL..(qtw.QHBoxLayout())
         notebook _ qtw.QTabWidget()
         base_widget.layout().aW..(notebook)
-        self.file_list _ qtw.QListWidget()
-        base_widget.layout().aW..(self.file_list)
+        file_list _ qtw.QListWidget()
+        base_widget.layout().aW..(file_list)
 
-        self.sCW..(base_widget)
+        sCW..(base_widget)
 
         # transport controls
-        toolbar _ self.addToolBar("Transport")
+        toolbar _ addToolBar("Transport")
         record_act _ toolbar.aA..('Rec')
         stop_act _ toolbar.aA..('Stop')
         play_act _ toolbar.aA..('Play')
         pause_act _ toolbar.aA..('Pause')
 
         # define the video directory
-        self.video_dir _ qtc.QDir.home()
-        __ no. self.video_dir.cd('captains_log'):
+        video_dir _ qtc.QDir.home()
+        __ no. video_dir.cd('captains_log'):
             qtc.QDir.home().mkdir('captains_log')
-            self.video_dir.cd('captains_log')
+            video_dir.cd('captains_log')
 
         # Read the files in the directory
-        self.refresh_video_list()
+        refresh_video_list()
 
         ############
         # Playback #
         ############
 
         # setup the player and video widget
-        self.player _ qtmm.QMediaPlayer()
-        self.video_widget _ qtmmw.QVideoWidget()
-        self.player.setVideoOutput(self.video_widget)
-        notebook.addTab(self.video_widget, "Play")
+        player _ qtmm.QMediaPlayer()
+        video_widget _ qtmmw.QVideoWidget()
+        player.setVideoOutput(video_widget)
+        notebook.addTab(video_widget, "Play")
 
         # connect the transport
-        play_act.t__.c..(self.player.play)
-        pause_act.t__.c..(self.player.pause)
-        stop_act.t__.c..(self.player.stop)
+        play_act.t__.c..(player.play)
+        pause_act.t__.c..(player.pause)
+        stop_act.t__.c..(player.stop)
         play_act.t__.c..(
-            lambda: notebook.setCurrentWidget(self.video_widget))
+            lambda: notebook.setCurrentWidget(video_widget))
 
         # connect file list
-        self.file_list.itemDoubleClicked.c..(
-            self.on_file_selected)
-        self.file_list.itemDoubleClicked.c..(
-            lambda: notebook.setCurrentWidget(self.video_widget))
+        file_list.itemDoubleClicked.c..(
+            on_file_selected)
+        file_list.itemDoubleClicked.c..(
+            lambda: notebook.setCurrentWidget(video_widget))
 
 
 
@@ -71,22 +71,22 @@ c_ MainWindow(qtw.QMainWindow):
         #############
 
         # set up camera
-        self.camera _ self.camera_check()
-        __ no. self.camera:
-            self.s..
+        camera _ camera_check()
+        __ no. camera:
+            s..
             r_
-        self.camera.setCaptureMode(qtmm.QCamera.CaptureVideo)
+        camera.setCaptureMode(qtmm.QCamera.CaptureVideo)
 
         # Create the viewfinder widget for recording
-        self.cvf _ qtmmw.QCameraViewfinder()
-        self.camera.setViewfinder(self.cvf)
-        notebook.addTab(self.cvf, 'Record')
+        cvf _ qtmmw.QCameraViewfinder()
+        camera.setViewfinder(cvf)
+        notebook.addTab(cvf, 'Record')
 
         # start the camera
-        self.camera.start()
+        camera.start()
 
         # Configure recorder
-        self.recorder _ qtmm.QMediaRecorder(self.camera)
+        recorder _ qtmm.QMediaRecorder(camera)
         #settings = self.recorder.videoSettings()
         #settings.setResolution(640, 480)
         #settings.setFrameRate(24.0)
@@ -94,44 +94,44 @@ c_ MainWindow(qtw.QMainWindow):
         #self.recorder.setVideoSettings(settings)
 
         # connect the transport
-        record_act.t__.c..(self.record)
+        record_act.t__.c..(record)
         record_act.t__.c..(
-            lambda: notebook.setCurrentWidget(self.cvf)
+            lambda: notebook.setCurrentWidget(cvf)
         )
-        pause_act.t__.c..(self.recorder.pause)
-        stop_act.t__.c..(self.recorder.stop)
+        pause_act.t__.c..(recorder.pause)
+        stop_act.t__.c..(recorder.stop)
 
         # refresh the files when the recording is made
-        stop_act.t__.c..(self.refresh_video_list)
+        stop_act.t__.c..(refresh_video_list)
 
 
-        self.s..
+        s..
 
     ######################
     # Playback callbacks #
     ######################
 
-    ___ refresh_video_list(self):
-        self.file_list.clear()
-        video_files _ self.video_dir.entryList(
+    ___ refresh_video_list
+        file_list.clear()
+        video_files _ video_dir.entryList(
             ["*.ogg", "*.avi", "*.mov", "*.mp4", "*.mkv"],
             qtc.QDir.Files | qtc.QDir.Readable
         )
-        for fn in sorted(video_files):
-            self.file_list.addItem(fn)
+        ___ fn __ sorted(video_files):
+            file_list.addItem(fn)
 
     ___ on_file_selected  item):
         fn _ item.t__()
-        url _ qtc.QUrl.fromLocalFile(self.video_dir.filePath(fn))
+        url _ qtc.QUrl.fromLocalFile(video_dir.filePath(fn))
         content _ qtmm.QMediaContent(url)
-        self.player.setMedia(content)
-        self.player.play()
+        player.setMedia(content)
+        player.play()
 
     #######################
     # Recording callbacks #
     #######################
 
-    ___ camera_check(self):
+    ___ camera_check
         cameras _ qtmm.QCameraInfo.availableCameras()
         print(cameras)
         __ no. cameras:
@@ -143,18 +143,18 @@ c_ MainWindow(qtw.QMainWindow):
         ____
             r_ qtmm.QCamera(cameras[0])
 
-    ___ record(self):
+    ___ record
         # create a filename
         datestamp _ qtc.QDateTime.currentDateTime().toString()
-        self.mediafile _ qtc.QUrl.fromLocalFile(
-            self.video_dir.filePath('log - ' + datestamp)
+        mediafile _ qtc.QUrl.fromLocalFile(
+            video_dir.filePath('log - ' + datestamp)
         )
-        self.recorder.setOutputLocation(self.mediafile)
+        recorder.setOutputLocation(mediafile)
         # start recording
-        self.recorder.record()
+        recorder.record()
 
-__ __name__ == '__main__':
-    app _ qtw.?A..(___.argv)
+__ ______ __ ______
+    app _ qtw.?A..(___.a..
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()

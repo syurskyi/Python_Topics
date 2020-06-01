@@ -48,12 +48,12 @@ ____ demoitem ______ DemoItem
 
 
 c_ LetterItem(DemoItem):
-    ___ __init__  letter, parent_None):
-        super(LetterItem, self).__init__(parent)
+    ___  -   letter, parent_None):
+        super(LetterItem, self). - (parent)
 
-        self.letter _ letter
+        letter _ letter
 
-        self.useSharedImage(__file__ + letter)
+        useSharedImage(__file__ + letter)
 
     ___ createImage  transform):
         scaledRect _ transform.mapRect(QRect(0, 0, 25, 25))
@@ -70,7 +70,7 @@ c_ LetterItem(DemoItem):
             painter.drawEllipse(0, 0, 25, 25)
             painter.setFont(Colors.tickerFont())
             painter.setPen(?C..(255, 255, 255))
-            painter.drawText(10, 15, self.letter)
+            painter.drawText(10, 15, letter)
         ____
             brush _ QLinearGradient(0, 0, 0, 25)
             brush.setSpread(QLinearGradient.PadSpread)
@@ -80,6 +80,6 @@ c_ LetterItem(DemoItem):
             painter.drawEllipse(0, 0, 25, 25)
             painter.setFont(Colors.tickerFont())
             painter.setPen(?C..(255, 255, 255, 255))
-            painter.drawText(10, 15, self.letter)
+            painter.drawText(10, 15, letter)
 
         r_ image

@@ -50,62 +50,62 @@ ____ ui_audiodevicesbase ______ Ui_AudioDevicesBase
 
 c_ AudioDevicesBase(QMainWindow, Ui_AudioDevicesBase):
 
-    ___ __init__  parent_None):
-        super(AudioDevicesBase, self).__init__(parent)
+    ___  -   parent_None):
+        super(AudioDevicesBase, self). - (parent)
 
-        self.setupUi(self)
+        setupUi
 
 
 c_ AudioTest(AudioDevicesBase):
 
-    ___ __init__  parent_None):
-        super(AudioTest, self).__init__(parent)
+    ___  -   parent_None):
+        super(AudioTest, self). - (parent)
 
-        self.deviceInfo _ QAudioDeviceInfo()
-        self.settings _ QAudioFormat()
-        self.mode _ QAudio.AudioOutput
+        deviceInfo _ QAudioDeviceInfo()
+        settings _ QAudioFormat()
+        mode _ QAudio.AudioOutput
 
-        self.testButton.c__.c..(self.test)
-        self.modeBox.activated.c..(self.modeChanged)
-        self.deviceBox.activated.c..(self.deviceChanged)
-        self.sampleRateBox.activated.c..(self.sampleRateChanged)
-        self.channelsBox.activated.c..(self.channelChanged)
-        self.codecsBox.activated.c..(self.codecChanged)
-        self.sampleSizesBox.activated.c..(self.sampleSizeChanged)
-        self.sampleTypesBox.activated.c..(self.sampleTypeChanged)
-        self.endianBox.activated.c..(self.endianChanged)
-        self.populateTableButton.c__.c..(self.populateTable)
+        testButton.c__.c..(test)
+        modeBox.activated.c..(modeChanged)
+        deviceBox.activated.c..(deviceChanged)
+        sampleRateBox.activated.c..(sampleRateChanged)
+        channelsBox.activated.c..(channelChanged)
+        codecsBox.activated.c..(codecChanged)
+        sampleSizesBox.activated.c..(sampleSizeChanged)
+        sampleTypesBox.activated.c..(sampleTypeChanged)
+        endianBox.activated.c..(endianChanged)
+        populateTableButton.c__.c..(populateTable)
 
-        self.modeBox.setCurrentIndex(0)
-        self.modeChanged(0)
-        self.deviceBox.setCurrentIndex(0)
-        self.deviceChanged(0)
+        modeBox.setCurrentIndex(0)
+        modeChanged(0)
+        deviceBox.setCurrentIndex(0)
+        deviceChanged(0)
 
-    ___ test(self):
-        self.testResult.clear()
+    ___ test
+        testResult.clear()
 
-        __ no. self.deviceInfo.isNull
-            __ self.deviceInfo.isFormatSupported(self.settings):
-                self.testResult.sT..("Success")
-                self.nearestSampleRate.sT..("")
-                self.nearestChannel.sT..("")
-                self.nearestCodec.sT..("")
-                self.nearestSampleSize.sT..("")
-                self.nearestSampleType.sT..("")
-                self.nearestEndian.sT..("")
+        __ no. deviceInfo.isNull
+            __ deviceInfo.isFormatSupported(settings):
+                testResult.sT..("Success")
+                nearestSampleRate.sT..("")
+                nearestChannel.sT..("")
+                nearestCodec.sT..("")
+                nearestSampleSize.sT..("")
+                nearestSampleType.sT..("")
+                nearestEndian.sT..("")
             ____
-                nearest _ self.deviceInfo.nearestFormat(self.settings)
-                self.testResult.sT..("Failed")
-                self.nearestSampleRate.sT..(str(nearest.sampleRate()))
-                self.nearestChannel.sT..(str(nearest.channelCount()))
-                self.nearestCodec.sT..(nearest.codec())
-                self.nearestSampleSize.sT..(str(nearest.sampleSize()))
-                self.nearestSampleType.sT..(
-                        self.sampleTypeToString(nearest.sampleType()))
-                self.nearestEndian.sT..(
-                        self.endianToString(nearest.byteOrder()))
+                nearest _ deviceInfo.nearestFormat(settings)
+                testResult.sT..("Failed")
+                nearestSampleRate.sT..(str(nearest.sampleRate()))
+                nearestChannel.sT..(str(nearest.channelCount()))
+                nearestCodec.sT..(nearest.codec())
+                nearestSampleSize.sT..(str(nearest.sampleSize()))
+                nearestSampleType.sT..(
+                        sampleTypeToString(nearest.sampleType()))
+                nearestEndian.sT..(
+                        endianToString(nearest.byteOrder()))
         ____
-            self.testResult.sT..("No Device")
+            testResult.sT..("No Device")
 
     sampleTypeMap _ {
         QAudioFormat.SignedInt: "SignedInt",
@@ -127,150 +127,150 @@ c_ AudioTest(AudioDevicesBase):
         r_ cls.endianMap.g..(endian, "Unknown")
 
     ___ modeChanged  idx):
-        self.testResult.clear()
+        testResult.clear()
 
         __ idx == 0:
-            self.mode _ QAudio.AudioInput
+            mode _ QAudio.AudioInput
         ____
-            self.mode _ QAudio.AudioOutput
+            mode _ QAudio.AudioOutput
 
-        self.deviceBox.clear()
-        for deviceInfo in QAudioDeviceInfo.availableDevices(self.mode):
-            self.deviceBox.addItem(deviceInfo.deviceName(), deviceInfo)
+        deviceBox.clear()
+        ___ deviceInfo __ QAudioDeviceInfo.availableDevices(mode):
+            deviceBox.addItem(deviceInfo.deviceName(), deviceInfo)
 
-        self.deviceBox.setCurrentIndex(0)
-        self.deviceChanged(0)
+        deviceBox.setCurrentIndex(0)
+        deviceChanged(0)
 
     ___ deviceChanged  idx):
-        self.testResult.clear()
+        testResult.clear()
 
-        __ self.deviceBox.count() == 0:
+        __ deviceBox.count() == 0:
             r_
 
-        self.deviceInfo _ self.deviceBox.itemData(idx)
+        deviceInfo _ deviceBox.itemData(idx)
 
-        self.sampleRateBox.clear()
-        sampleRatez _ self.deviceInfo.supportedSampleRates()
-        self.sampleRateBox.addItems([str(sr) for sr in sampleRatez])
+        sampleRateBox.clear()
+        sampleRatez _ deviceInfo.supportedSampleRates()
+        sampleRateBox.addItems([str(sr) ___ sr __ sampleRatez])
         __ le.(sampleRatez) !_ 0:
-            self.settings.setSampleRate(sampleRatez[0])
+            settings.setSampleRate(sampleRatez[0])
 
-        self.channelsBox.clear()
-        chz _ self.deviceInfo.supportedChannelCounts()
-        self.channelsBox.addItems([str(ch) for ch in chz])
+        channelsBox.clear()
+        chz _ deviceInfo.supportedChannelCounts()
+        channelsBox.addItems([str(ch) ___ ch __ chz])
         __ le.(chz) !_ 0:
-            self.settings.setChannelCount(chz[0])
+            settings.setChannelCount(chz[0])
 
-        self.codecsBox.clear()
-        codecs _ self.deviceInfo.supportedCodecs()
-        self.codecsBox.addItems([str(c) for c in codecs])
+        codecsBox.clear()
+        codecs _ deviceInfo.supportedCodecs()
+        codecsBox.addItems([str(c) ___ c __ codecs])
         __ le.(codecs) !_ 0:
-            self.settings.setCodec(codecs[0])
+            settings.setCodec(codecs[0])
 
         # Create a failed condition.
-        self.codecsBox.addItem("audio/test")
+        codecsBox.addItem("audio/test")
 
-        self.sampleSizesBox.clear()
-        sampleSizez _ self.deviceInfo.supportedSampleSizes()
-        self.sampleSizesBox.addItems([str(ss) for ss in sampleSizez])
+        sampleSizesBox.clear()
+        sampleSizez _ deviceInfo.supportedSampleSizes()
+        sampleSizesBox.addItems([str(ss) ___ ss __ sampleSizez])
         __ le.(sampleSizez) !_ 0:
-            self.settings.setSampleSize(sampleSizez[0])
+            settings.setSampleSize(sampleSizez[0])
 
-        self.sampleTypesBox.clear()
-        sampleTypez _ self.deviceInfo.supportedSampleTypes()
-        self.sampleTypesBox.addItems(
-                [self.sampleTypeToString(st) for st in sampleTypez])
+        sampleTypesBox.clear()
+        sampleTypez _ deviceInfo.supportedSampleTypes()
+        sampleTypesBox.addItems(
+                [sampleTypeToString(st) ___ st __ sampleTypez])
         __ le.(sampleTypez) !_ 0:
-            self.settings.setSampleType(sampleTypez[0])
+            settings.setSampleType(sampleTypez[0])
 
-        self.endianBox.clear()
-        endianz _ self.deviceInfo.supportedByteOrders()
-        self.endianBox.addItems([self.endianToString(e) for e in endianz])
+        endianBox.clear()
+        endianz _ deviceInfo.supportedByteOrders()
+        endianBox.addItems([endianToString(e) ___ e __ endianz])
         __ le.(endianz) !_ 0:
-            self.settings.setByteOrder(endianz[0])
+            settings.setByteOrder(endianz[0])
 
-        self.allFormatsTable.clearContents()
+        allFormatsTable.clearContents()
 
-    ___ populateTable(self):
+    ___ populateTable
         row _ 0
         format _ QAudioFormat()
 
-        for codec in self.deviceInfo.supportedCodecs
+        ___ codec __ deviceInfo.supportedCodecs
             format.setCodec(codec)
 
-            for sampleRate in self.deviceInfo.supportedSampleRates
+            ___ sampleRate __ deviceInfo.supportedSampleRates
                 format.setSampleRate(sampleRate)
 
-                for channels in self.deviceInfo.supportedChannelCounts
+                ___ channels __ deviceInfo.supportedChannelCounts
                     format.setChannelCount(channels)
 
-                    for sampleType in self.deviceInfo.supportedSampleTypes
+                    ___ sampleType __ deviceInfo.supportedSampleTypes
                         format.setSampleType(sampleType)
 
-                        for sampleSize in self.deviceInfo.supportedSampleSizes
+                        ___ sampleSize __ deviceInfo.supportedSampleSizes
                             format.setSampleSize(sampleSize)
 
-                            for endian in self.deviceInfo.supportedByteOrders
+                            ___ endian __ deviceInfo.supportedByteOrders
                                 format.setByteOrder(endian)
 
-                                __ self.deviceInfo.isFormatSupported(format):
-                                    self.allFormatsTable.setRowCount(row + 1)
+                                __ deviceInfo.isFormatSupported(format):
+                                    allFormatsTable.setRowCount(row + 1)
 
-                                    self.setFormatValue(row, 0, format.codec())
-                                    self.setFormatValue(row, 1,
+                                    setFormatValue(row, 0, format.codec())
+                                    setFormatValue(row, 1,
                                             str(format.sampleRate()))
-                                    self.setFormatValue(row, 2,
+                                    setFormatValue(row, 2,
                                             str(format.channelCount()))
-                                    self.setFormatValue(row, 3,
-                                            self.sampleTypeToString(
+                                    setFormatValue(row, 3,
+                                            sampleTypeToString(
                                                     format.sampleType()))
-                                    self.setFormatValue(row, 4,
+                                    setFormatValue(row, 4,
                                             str(format.sampleSize()))
-                                    self.setFormatValue(row, 5,
-                                            self.endianToString(
+                                    setFormatValue(row, 5,
+                                            endianToString(
                                                     format.byteOrder()))
 
                                     row +_ 1
 
     ___ setFormatValue  row, column, value):
-        self.allFormatsTable.setItem(row, column, QTableWidgetItem(value))
+        allFormatsTable.setItem(row, column, QTableWidgetItem(value))
 
     ___ sampleRateChanged  idx):
-        self.settings.setSampleRate(int(self.sampleRateBox.itemText(idx)))
+        settings.setSampleRate(int(sampleRateBox.itemText(idx)))
 
     ___ channelChanged  idx):
-        self.settings.setChannelCount(int(self.channelsBox.itemText(idx)))
+        settings.setChannelCount(int(channelsBox.itemText(idx)))
 
     ___ codecChanged  idx):
-        self.settings.setCodec(self.codecsBox.itemText(idx))
+        settings.setCodec(codecsBox.itemText(idx))
 
     ___ sampleSizeChanged  idx):
-        self.settings.setSampleSize(int(self.sampleSizesBox.itemText(idx)))
+        settings.setSampleSize(int(sampleSizesBox.itemText(idx)))
 
     ___ sampleTypeChanged  idx):
-        sampleType _ int(self.sampleTypesBox.itemText(idx))
+        sampleType _ int(sampleTypesBox.itemText(idx))
 
         __ sampleType == QAudioFormat.SignedInt:
-            self.settings.setSampleType(QAudioFormat.SignedInt)
+            settings.setSampleType(QAudioFormat.SignedInt)
         ____ sampleType == QAudioFormat.UnSignedInt:
-            self.settings.setSampleType(QAudioFormat.UnSignedInt)
+            settings.setSampleType(QAudioFormat.UnSignedInt)
         ____ sampleType == QAudioFormat.Float:
-            self.settings.setSampleType(QAudioFormat.Float)
+            settings.setSampleType(QAudioFormat.Float)
 
     ___ endianChanged  idx):
-        endian _ int(self.endianBox.itemText(idx))
+        endian _ int(endianBox.itemText(idx))
 
         __ endian == QAudioFormat.LittleEndian:
-            self.settings.setByteOrder(QAudioFormat.LittleEndian)
+            settings.setByteOrder(QAudioFormat.LittleEndian)
         ____ endian == QAudioFormat.BigEndian:
-            self.settings.setByteOrder(QAudioFormat.BigEndian)
+            settings.setByteOrder(QAudioFormat.BigEndian)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     app.sAN..("Audio Device Test")
 
     audio _ AudioTest()

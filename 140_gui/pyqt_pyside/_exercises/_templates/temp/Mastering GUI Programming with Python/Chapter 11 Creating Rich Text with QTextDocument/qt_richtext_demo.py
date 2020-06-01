@@ -6,12 +6,12 @@ ____ ? ______ ?C.. __ qtc
 
 c_ MainWindow(qtw.QMainWindow):
 
-    ___ __init__(self):
+    ___  -
         """MainWindow constructor."""
-        super().__init__()
+        s_. - ()
         # Main UI code goes here
         main _ qtw.QTextBrowser(minimumWidth_800, minimumHeight_600)
-        self.sCW..(main)
+        sCW..(main)
 
         # Must come before the HTML is inserted
         main.document().setDefaultStyleSheet(
@@ -28,10 +28,10 @@ c_ MainWindow(qtw.QMainWindow):
         main.setOpenExternalLinks(True)
 
         # End main UI code
-        self.s..
+        s..
 
 
-__ __name__ == '__main__':
-    app _ qtw.?A..(___.argv)
+__ ______ __ ______
+    app _ qtw.?A..(___.a..
     mw _ MainWindow()
     ___.exit(app.exec())

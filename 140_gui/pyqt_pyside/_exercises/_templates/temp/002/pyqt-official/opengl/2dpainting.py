@@ -53,31 +53,31 @@ ____ ?.?W.. ______ (?A.., QGridLayout, QLabel, QOpenGLWidget,
 
 
 c_ Helper(object):
-    ___ __init__(self):
+    ___  -
         gradient _ QLinearGradient(QPointF(50, -20), QPointF(80, 20))
         gradient.setColorAt(0.0, __.white)
         gradient.setColorAt(1.0, ?C..(0xa6, 0xce, 0x39))
 
-        self.background _ QBrush(?C..(64, 32, 64))
-        self.circleBrush _ QBrush(gradient)
-        self.circlePen _ QPen(__.black)
-        self.circlePen.setWidth(1)
-        self.textPen _ QPen(__.white)
-        self.textFont _ QFont()
-        self.textFont.setPixelSize(50)
+        background _ QBrush(?C..(64, 32, 64))
+        circleBrush _ QBrush(gradient)
+        circlePen _ QPen(__.black)
+        circlePen.setWidth(1)
+        textPen _ QPen(__.white)
+        textFont _ QFont()
+        textFont.setPixelSize(50)
 
     ___ paint  painter, event, elapsed):
-        painter.fillRect(event.rect(), self.background)
+        painter.fillRect(event.rect(), background)
         painter.translate(100, 100)
 
         painter.save()
-        painter.setBrush(self.circleBrush)
-        painter.setPen(self.circlePen)
+        painter.setBrush(circleBrush)
+        painter.setPen(circlePen)
         painter.rotate(elapsed * 0.030)
 
         r _ elapsed / 1000.0
         n _ 30
-        for i in range(n):
+        ___ i __ range(n):
             painter.rotate(30)
             radius _ 0 + 120.0*((i+r)/n)
             circleRadius _ 1 + ((i+r)/n)*20
@@ -86,57 +86,57 @@ c_ Helper(object):
 
         painter.restore()
 
-        painter.setPen(self.textPen)
-        painter.setFont(self.textFont)
+        painter.setPen(textPen)
+        painter.setFont(textFont)
         painter.drawText(QRect(-50, -50, 100, 100), __.AlignCenter, "Qt")
 
 
 c_ Widget(QWidget):
-    ___ __init__  helper, parent):
-        super(Widget, self).__init__(parent)
+    ___  -   helper, parent):
+        super(Widget, self). - (parent)
 
-        self.helper _ helper
-        self.elapsed _ 0
-        self.setFixedSize(200, 200)
+        helper _ helper
+        elapsed _ 0
+        setFixedSize(200, 200)
 
-    ___ animate(self):
-        self.elapsed _ (self.elapsed + self.sender().interval()) % 1000
-        self.repaint()
+    ___ animate 
+        elapsed _ (elapsed + sender().interval()) % 1000
+        repaint()
 
     ___ paintEvent  event):
         painter _ QPainter()
-        painter.begin(self)
+        painter.begin
         painter.setRenderHint(QPainter.Antialiasing)
-        self.helper.paint(painter, event, self.elapsed)
+        helper.paint(painter, event, elapsed)
         painter.end()
 
 
 c_ GLWidget(QOpenGLWidget):
-    ___ __init__  helper, parent):
-        super(GLWidget, self).__init__(parent)
+    ___  -   helper, parent):
+        super(GLWidget, self). - (parent)
 
-        self.helper _ helper
-        self.elapsed _ 0
-        self.setFixedSize(200, 200)
-        self.setAutoFillBackground F..
+        helper _ helper
+        elapsed _ 0
+        setFixedSize(200, 200)
+        setAutoFillBackground F..
 
-    ___ animate(self):
-        self.elapsed _ (self.elapsed + self.sender().interval()) % 1000
-        self.update()
+    ___ animate 
+        elapsed _ (elapsed + sender().interval()) % 1000
+        update()
 
     ___ paintEvent  event):
         painter _ QPainter()
-        painter.begin(self)
+        painter.begin
         painter.setRenderHint(QPainter.Antialiasing)
-        self.helper.paint(painter, event, self.elapsed)
+        helper.paint(painter, event, elapsed)
         painter.end()
 
 
 c_ Window(QWidget):
-    ___ __init__(self):
-        super(Window, self).__init__()
+    ___  -
+        super(Window, self). - ()
 
-        self.setWindowTitle("2D Painting on Native and OpenGL Widgets")
+        setWindowTitle("2D Painting on Native and OpenGL Widgets")
 
         helper _ Helper()
         native _ Widget(helper, self)
@@ -151,17 +151,17 @@ c_ Window(QWidget):
         layout.aW..(openGL, 0, 1)
         layout.aW..(nativeLabel, 1, 0)
         layout.aW..(openGLLabel, 1, 1)
-        self.sL..(layout)
+        sL..(layout)
 
-        timer _ QTimer(self)
+        timer _ QTimer
         timer.timeout.c..(native.animate)
         timer.timeout.c..(openGL.animate)
         timer.start(50)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     fmt _ QSurfaceFormat()
     fmt.setSamples(4)

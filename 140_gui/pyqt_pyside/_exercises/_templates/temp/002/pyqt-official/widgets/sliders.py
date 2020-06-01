@@ -52,25 +52,25 @@ c_ SlidersGroup(QGroupBox):
 
     valueChanged _ pyqtSignal(int)
 
-    ___ __init__  orientation, title, parent_None):
-        super(SlidersGroup, self).__init__(title, parent)
+    ___  -   orientation, title, parent_None):
+        super(SlidersGroup, self). - (title, parent)
 
-        self.slider _ QSlider(orientation)
-        self.slider.sFP..(__.StrongFocus)
-        self.slider.setTickPosition(QSlider.TicksBothSides)
-        self.slider.setTickInterval(10)
-        self.slider.setSingleStep(1)
+        slider _ QSlider(orientation)
+        slider.sFP..(__.StrongFocus)
+        slider.setTickPosition(QSlider.TicksBothSides)
+        slider.setTickInterval(10)
+        slider.setSingleStep(1)
 
-        self.scrollBar _ QScrollBar(orientation)
-        self.scrollBar.sFP..(__.StrongFocus)
+        scrollBar _ QScrollBar(orientation)
+        scrollBar.sFP..(__.StrongFocus)
 
-        self.dial _ QDial()
-        self.dial.sFP..(__.StrongFocus)
+        dial _ QDial()
+        dial.sFP..(__.StrongFocus)
 
-        self.slider.valueChanged.c..(self.scrollBar.setValue)
-        self.scrollBar.valueChanged.c..(self.dial.setValue)
-        self.dial.valueChanged.c..(self.slider.setValue)
-        self.dial.valueChanged.c..(self.valueChanged)
+        slider.valueChanged.c..(scrollBar.setValue)
+        scrollBar.valueChanged.c..(dial.setValue)
+        dial.valueChanged.c..(slider.setValue)
+        dial.valueChanged.c..(valueChanged)
 
         __ orientation == __.Horizontal:
             direction _ QBoxLayout.TopToBottom
@@ -78,66 +78,66 @@ c_ SlidersGroup(QGroupBox):
             direction _ QBoxLayout.LeftToRight
 
         slidersLayout _ QBoxLayout(direction)
-        slidersLayout.aW..(self.slider)
-        slidersLayout.aW..(self.scrollBar)
-        slidersLayout.aW..(self.dial)
-        self.sL..(slidersLayout)    
+        slidersLayout.aW..(slider)
+        slidersLayout.aW..(scrollBar)
+        slidersLayout.aW..(dial)
+        sL..(slidersLayout)
 
     ___ setValue  value):    
-        self.slider.setValue(value)    
+        slider.setValue(value)
 
     ___ setMinimum  value):    
-        self.slider.setMinimum(value)
-        self.scrollBar.setMinimum(value)
-        self.dial.setMinimum(value)    
+        slider.setMinimum(value)
+        scrollBar.setMinimum(value)
+        dial.setMinimum(value)
 
     ___ setMaximum  value):    
-        self.slider.setMaximum(value)
-        self.scrollBar.setMaximum(value)
-        self.dial.setMaximum(value)    
+        slider.setMaximum(value)
+        scrollBar.setMaximum(value)
+        dial.setMaximum(value)
 
     ___ invertAppearance  invert):
-        self.slider.setInvertedAppearance(invert)
-        self.scrollBar.setInvertedAppearance(invert)
-        self.dial.setInvertedAppearance(invert)    
+        slider.setInvertedAppearance(invert)
+        scrollBar.setInvertedAppearance(invert)
+        dial.setInvertedAppearance(invert)
 
     ___ invertKeyBindings  invert):
-        self.slider.setInvertedControls(invert)
-        self.scrollBar.setInvertedControls(invert)
-        self.dial.setInvertedControls(invert)
+        slider.setInvertedControls(invert)
+        scrollBar.setInvertedControls(invert)
+        dial.setInvertedControls(invert)
 
 
 c_ Window(QWidget):
-    ___ __init__(self):
-        super(Window, self).__init__()
+    ___  -
+        super(Window, self). - ()
 
-        self.horizontalSliders _ SlidersGroup(__.Horizontal,
+        horizontalSliders _ SlidersGroup(__.Horizontal,
                 "Horizontal")
-        self.verticalSliders _ SlidersGroup(__.Vertical, "Vertical")
+        verticalSliders _ SlidersGroup(__.Vertical, "Vertical")
 
-        self.stackedWidget _ QStackedWidget()
-        self.stackedWidget.aW..(self.horizontalSliders)
-        self.stackedWidget.aW..(self.verticalSliders)
+        stackedWidget _ QStackedWidget()
+        stackedWidget.aW..(horizontalSliders)
+        stackedWidget.aW..(verticalSliders)
 
-        self.createControls("Controls")
+        createControls("Controls")
 
-        self.horizontalSliders.valueChanged.c..(self.verticalSliders.setValue)
-        self.verticalSliders.valueChanged.c..(self.valueSpinBox.setValue)
-        self.valueSpinBox.valueChanged.c..(self.horizontalSliders.setValue)
+        horizontalSliders.valueChanged.c..(verticalSliders.setValue)
+        verticalSliders.valueChanged.c..(valueSpinBox.setValue)
+        valueSpinBox.valueChanged.c..(horizontalSliders.setValue)
 
         layout _ QHBoxLayout()
-        layout.aW..(self.controlsGroup)
-        layout.aW..(self.stackedWidget)
-        self.sL..(layout)
+        layout.aW..(controlsGroup)
+        layout.aW..(stackedWidget)
+        sL..(layout)
 
-        self.minimumSpinBox.setValue(0)
-        self.maximumSpinBox.setValue(20)
-        self.valueSpinBox.setValue(5)
+        minimumSpinBox.setValue(0)
+        maximumSpinBox.setValue(20)
+        valueSpinBox.setValue(5)
 
-        self.setWindowTitle("Sliders")
+        setWindowTitle("Sliders")
 
     ___ createControls  title):
-        self.controlsGroup _ QGroupBox(title)
+        controlsGroup _ QGroupBox(title)
 
         minimumLabel _ QLabel("Minimum value:")
         maximumLabel _ QLabel("Maximum value:")
@@ -146,50 +146,50 @@ c_ Window(QWidget):
         invertedAppearance _ QCheckBox("Inverted appearance")
         invertedKeyBindings _ QCheckBox("Inverted key bindings")
 
-        self.minimumSpinBox _ QSpinBox()
-        self.minimumSpinBox.setRange(-100, 100)
-        self.minimumSpinBox.setSingleStep(1)
+        minimumSpinBox _ QSpinBox()
+        minimumSpinBox.setRange(-100, 100)
+        minimumSpinBox.setSingleStep(1)
 
-        self.maximumSpinBox _ QSpinBox()
-        self.maximumSpinBox.setRange(-100, 100)
-        self.maximumSpinBox.setSingleStep(1)
+        maximumSpinBox _ QSpinBox()
+        maximumSpinBox.setRange(-100, 100)
+        maximumSpinBox.setSingleStep(1)
 
-        self.valueSpinBox _ QSpinBox()
-        self.valueSpinBox.setRange(-100, 100)
-        self.valueSpinBox.setSingleStep(1)
+        valueSpinBox _ QSpinBox()
+        valueSpinBox.setRange(-100, 100)
+        valueSpinBox.setSingleStep(1)
 
         orientationCombo _ QComboBox()
         orientationCombo.addItem("Horizontal slider-like widgets")
         orientationCombo.addItem("Vertical slider-like widgets")
 
-        orientationCombo.activated.c..(self.stackedWidget.setCurrentIndex)
-        self.minimumSpinBox.valueChanged.c..(self.horizontalSliders.setMinimum)
-        self.minimumSpinBox.valueChanged.c..(self.verticalSliders.setMinimum)
-        self.maximumSpinBox.valueChanged.c..(self.horizontalSliders.setMaximum)
-        self.maximumSpinBox.valueChanged.c..(self.verticalSliders.setMaximum)
-        invertedAppearance.toggled.c..(self.horizontalSliders.invertAppearance)
-        invertedAppearance.toggled.c..(self.verticalSliders.invertAppearance)
-        invertedKeyBindings.toggled.c..(self.horizontalSliders.invertKeyBindings)
-        invertedKeyBindings.toggled.c..(self.verticalSliders.invertKeyBindings)
+        orientationCombo.activated.c..(stackedWidget.setCurrentIndex)
+        minimumSpinBox.valueChanged.c..(horizontalSliders.setMinimum)
+        minimumSpinBox.valueChanged.c..(verticalSliders.setMinimum)
+        maximumSpinBox.valueChanged.c..(horizontalSliders.setMaximum)
+        maximumSpinBox.valueChanged.c..(verticalSliders.setMaximum)
+        invertedAppearance.toggled.c..(horizontalSliders.invertAppearance)
+        invertedAppearance.toggled.c..(verticalSliders.invertAppearance)
+        invertedKeyBindings.toggled.c..(horizontalSliders.invertKeyBindings)
+        invertedKeyBindings.toggled.c..(verticalSliders.invertKeyBindings)
 
         controlsLayout _ QGridLayout()
         controlsLayout.aW..(minimumLabel, 0, 0)
         controlsLayout.aW..(maximumLabel, 1, 0)
         controlsLayout.aW..(valueLabel, 2, 0)
-        controlsLayout.aW..(self.minimumSpinBox, 0, 1)
-        controlsLayout.aW..(self.maximumSpinBox, 1, 1)
-        controlsLayout.aW..(self.valueSpinBox, 2, 1)
+        controlsLayout.aW..(minimumSpinBox, 0, 1)
+        controlsLayout.aW..(maximumSpinBox, 1, 1)
+        controlsLayout.aW..(valueSpinBox, 2, 1)
         controlsLayout.aW..(invertedAppearance, 0, 2)
         controlsLayout.aW..(invertedKeyBindings, 1, 2)
         controlsLayout.aW..(orientationCombo, 3, 0, 1, 3)
-        self.controlsGroup.sL..(controlsLayout)
+        controlsGroup.sL..(controlsLayout)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     window _ Window()
     window.s..
     ___.exit(app.exec_())

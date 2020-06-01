@@ -48,28 +48,28 @@ ____ ?.?W.. ______ ?A.., QTextEdit
 c_ PyTextViewer(QTextEdit):
 
     # Initialise the instance.
-    ___ __init__  parent_None):
-        super(PyTextViewer, self).__init__(parent)
+    ___  -   parent_None):
+        super(PyTextViewer, self). - (parent)
 
-        self.setReadOnly(True)
+        setReadOnly(True)
 
         # Initialise the author property by calling it's reset function.
-        self.resetAuthor()
+        resetAuthor()
 
     # The getter for the author property.  Note that we cannot follow the Qt
     # naming convention (ie. by using the naming the getter "author") because
     # it would conflict with the property name.
-    ___ getAuthor(self):
-        r_ self._author
+    ___ getAuthor
+        r_ _author
 
     # The setter for the author property.
     ___ setAuthor  name):
-        self._author _ name
+        _author _ name
 
     # The resetter for the author property.  Only Qt Designer uses this.  Qt
     # Designer does not use the deleter function of the property.
-    ___ resetAuthor(self):
-        self._author _ "David Boddie"
+    ___ resetAuthor
+        _author _ "David Boddie"
 
     # Define the author property.  This will look like a C++ property to Qt
     # Designer and a Python property to Python.
@@ -85,43 +85,43 @@ c_ PyDemo(PyTextViewer):
     zoomChanged _ pyqtSignal(int)
 
     # Initialise the instance.
-    ___ __init__  parent_None):
-        super(PyDemo, self).__init__(parent)
+    ___  -   parent_None):
+        super(PyDemo, self). - (parent)
 
-        self.setWindowTitle("PyQt Demonstration Widget")
-        self.sT..(_demo_text)
+        setWindowTitle("PyQt Demonstration Widget")
+        sT..(_demo_text)
 
         # Initialise the zoom property.  We don't just call the resetter
         # because it assumes that this has already been initialised.
-        self._zoom _ 0
+        _zoom _ 0
 
     # The getter for the zoom property.
-    ___ getZoom(self):
-        r_ self._zoom
+    ___ getZoom
+        r_ _zoom
 
     # The setter for the zoom property.  We also make define this as a Qt slot
     # which can be connected to Qt signals in Qt Designer.
     @pyqtSlot(int)
     ___ setZoom  zoom):
         # Don't do anything if nothing has changed.
-        __ self._zoom == zoom:
+        __ _zoom == zoom:
             r_
 
         # Zoom in or out according to the relative zoom levels.
-        __ self._zoom < zoom:
-            self.zoomIn(zoom - self._zoom)
-        ____ self._zoom > zoom:
-            self.zoomOut(self._zoom - zoom)
+        __ _zoom < zoom:
+            zoomIn(zoom - _zoom)
+        ____ _zoom > zoom:
+            zoomOut(_zoom - zoom)
 
         # Remember the new zoom level.
-        self._zoom _ zoom
+        _zoom _ zoom
 
         # Emit the Qt signal to say that the zoom level has changed.
-        self.zoomChanged.emit(zoom)
+        zoomChanged.emit(zoom)
 
     # The resetter for the zoom property.
-    ___ resetZoom(self):
-        self.setZoom(0)
+    ___ resetZoom
+        setZoom(0)
 
     # Define the zoom property.  Changing the value of this in Qt Designer's
     # property editor causes the zoom level to change dynamically.
@@ -148,7 +148,7 @@ __ __name__ == "__main__":
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     demo _ PyDemo()
     demo.s..

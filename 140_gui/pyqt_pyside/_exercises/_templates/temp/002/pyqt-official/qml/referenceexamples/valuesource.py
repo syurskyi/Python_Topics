@@ -90,79 +90,79 @@ BirthdayParty {
 
 
 c_ ShoeDescription(QObject):
-    ___ __init__  parent_None):
-        super(ShoeDescription, self).__init__(parent)
+    ___  -   parent_None):
+        super(ShoeDescription, self). - (parent)
 
-        self._size _ 0
-        self._color _ ?C..()
-        self._brand _ ''
-        self._price _ 0.0
+        _size _ 0
+        _color _ ?C..()
+        _brand _ ''
+        _price _ 0.0
 
     shoeChanged _ pyqtSignal()
 
     @pyqtProperty(int, notify_shoeChanged)
-    ___ size(self):
-        r_ self._size
+    ___ size 
+        r_ _size
 
     @size.setter
     ___ size  size):
-        __ self._size !_ size:
-            self._size _ size
-            self.shoeChanged.emit()
+        __ _size !_ size:
+            _size _ size
+            shoeChanged.emit()
 
     @pyqtProperty(?C.., notify_shoeChanged)
-    ___ color(self):
-        r_ self._color
+    ___ color 
+        r_ _color
 
     @color.setter
     ___ color  color):
-        __ self._color !_ color:
-            self._color _ color
-            self.shoeChanged.emit()
+        __ _color !_ color:
+            _color _ color
+            shoeChanged.emit()
 
     @pyqtProperty(str, notify_shoeChanged)
-    ___ brand(self):
-        r_ self._brand
+    ___ brand 
+        r_ _brand
 
     @brand.setter
     ___ brand  brand):
-        __ self._brand !_ brand:
-            self._brand _ brand
-            self.shoeChanged.emit()
+        __ _brand !_ brand:
+            _brand _ brand
+            shoeChanged.emit()
 
     @pyqtProperty(float, notify_shoeChanged)
-    ___ price(self):
-        r_ self._price
+    ___ price 
+        r_ _price
 
     @price.setter
     ___ price  price):
-        __ self._price !_ price:
-            self._price _ price
-            self.shoeChanged.emit()
+        __ _price !_ price:
+            _price _ price
+            shoeChanged.emit()
 
 
 c_ Person(QObject):
-    ___ __init__  parent_None):
-        super(Person, self).__init__(parent)
+    ___  -   parent_None):
+        super(Person, self). - (parent)
 
-        self._name _ ''
-        self._shoe _ ShoeDescription()
+        _name _ ''
+        _shoe _ ShoeDescription()
 
     nameChanged _ pyqtSignal()
 
     @pyqtProperty(str, notify_nameChanged)
-    ___ name(self):
-        r_ self._name
+    ___ name 
+        r_ _name
 
     @name.setter
     ___ name  name):
-        __ self._name !_ name:
-            self._name _ name
-            self.nameChanged.emit()
+        __ _name !_ name:
+            _name _ name
+            nameChanged.emit()
 
     @pyqtProperty(ShoeDescription)
-    ___ shoe(self):
-        r_ self._shoe
+    ___ shoe 
+        r_ _shoe
 
 
 c_ Boy(Person):
@@ -174,22 +174,22 @@ c_ Girl(Person):
 
 
 c_ BirthdayPartyAttached(QObject):
-    ___ __init__  parent):
-        super(BirthdayPartyAttached, self).__init__(parent)
+    ___  -   parent):
+        super(BirthdayPartyAttached, self). - (parent)
 
-        self._rsvp _ QDate()
+        _rsvp _ QDate()
 
     rsvpChanged _ pyqtSignal()
 
     @pyqtProperty(QDate, notify_rsvpChanged)
-    ___ rsvp(self):
-        r_ self._rsvp
+    ___ rsvp 
+        r_ _rsvp
 
     @rsvp.setter
     ___ rsvp  rsvp):
-        __ self._rsvp !_ rsvp:
-            self._rsvp _ rsvp
-            self.rsvpChanged.emit()
+        __ _rsvp !_ rsvp:
+            _rsvp _ rsvp
+            rsvpChanged.emit()
 
 
 c_ BirthdayParty(QObject):
@@ -197,88 +197,88 @@ c_ BirthdayParty(QObject):
 
     partyStarted _ pyqtSignal(QTime, arguments_['time'])
 
-    ___ __init__  parent_None):
-        super(BirthdayParty, self).__init__(parent)
+    ___  -   parent_None):
+        super(BirthdayParty, self). - (parent)
 
-        self._host _ N..
-        self._guests _   # list
+        _host _ N..
+        _guests _   # list
 
     hostChanged _ pyqtSignal()
 
     @pyqtProperty(Person, notify_hostChanged)
-    ___ host(self):
-        r_ self._host
+    ___ host 
+        r_ _host
 
     @host.setter
     ___ host  host):
-        __ self._host !_ host:
-            self._host _ host
-            self.hostChanged.emit()
+        __ _host !_ host:
+            _host _ host
+            hostChanged.emit()
 
     @pyqtProperty(QQmlListProperty)
-    ___ guests(self):
-        r_ QQmlListProperty(Person, self, self._guests)
+    ___ guests 
+        r_ QQmlListProperty(Person, self, _guests)
 
     @pyqtProperty(str)
-    ___ announcement(self):
+    ___ announcement 
         r_ ''
 
     @announcement.setter
     ___ announcement  announcement):
         print(announcement)
 
-    ___ startParty(self):
-        self.partyStarted.emit(QTime.currentTime())
+    ___ startParty 
+        partyStarted.emit(QTime.currentTime())
 
 
 c_ HappyBirthdaySong(QObject, QQmlPropertyValueSource):
-    ___ __init__  parent_None):
-        super(HappyBirthdaySong, self).__init__(parent)
+    ___  -   parent_None):
+        super(HappyBirthdaySong, self). - (parent)
 
-        self._line _ -1
-        self._lyrics _   # list
-        self._target _ QQmlProperty()
-        self._name _ ''
+        _line _ -1
+        _lyrics _   # list
+        _target _ QQmlProperty()
+        _name _ ''
 
-        timer _ QTimer(self)
-        timer.timeout.c..(self.advance)
+        timer _ QTimer
+        timer.timeout.c..(advance)
         timer.start(1000)
 
     nameChanged _ pyqtSignal()
 
     @pyqtProperty(str, notify_nameChanged)
-    ___ name(self):
-        r_ self._name
+    ___ name 
+        r_ _name
 
     @name.setter
     ___ name  name):
-        __ self._name !_ name:
-            self._name _ name
+        __ _name !_ name:
+            _name _ name
 
-            self._lyrics _ [
+            _lyrics _ [
                 "",
                 "Happy birthday to you,",
                 "Happy birthday to you,",
-                "Happy birthday dear %s," % self._name,
+                "Happy birthday dear %s," % _name,
                 "Happy birthday to you!"
             ]
 
-            self.nameChanged.emit()
+            nameChanged.emit()
 
     ___ setTarget  target):
-        self._target _ target
+        _target _ target
 
     @pyqtSlot()
-    ___ advance(self):
-        self._line +_ 1
+    ___ advance 
+        _line +_ 1
 
-        __ self._line < le.(self._lyrics):
-            self._target.w..(self._lyrics[self._line])
+        __ _line < le.(_lyrics):
+            _target.w..(_lyrics[_line])
         ____
             QCoreApplication.instance().quit()
 
 
-app _ QCoreApplication(___.argv)
+app _ QCoreApplication(___.a..
 
 qmlRegisterType(BirthdayPartyAttached)
 qmlRegisterType(BirthdayParty, "People", 1, 0, "BirthdayParty",
@@ -304,7 +304,7 @@ __ party __ no. N.. and party.host __ no. N..:
     ____
         print("She is inviting:")
 
-    for guest in party.guests:
+    ___ guest __ party.guests:
         attached _ qmlAttachedPropertiesObject(BirthdayParty, guest, False)
 
         __ attached __ no. N..:
@@ -319,7 +319,7 @@ __ party __ no. N.. and party.host __ no. N..:
 
     party.startParty()
 ____
-    for e in component.errors
+    ___ e __ component.errors
         print("Error:", e.toString());
 
 ___.exit(app.exec_())

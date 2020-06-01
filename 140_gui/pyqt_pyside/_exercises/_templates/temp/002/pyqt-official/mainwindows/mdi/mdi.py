@@ -54,19 +54,19 @@ ______ mdi_rc
 c_ MdiChild(QTextEdit):
     sequenceNumber _ 1
 
-    ___ __init__(self):
-        super(MdiChild, self).__init__()
+    ___  -
+        super(MdiChild, self). - ()
 
-        self.setAttribute(__.WA_DeleteOnClose)
-        self.isUntitled _ True
+        setAttribute(__.WA_DeleteOnClose)
+        isUntitled _ True
 
-    ___ newFile(self):
-        self.isUntitled _ True
-        self.curFile _ "document%d.txt" % MdiChild.sequenceNumber
+    ___ newFile
+        isUntitled _ True
+        curFile _ "document%d.txt" % MdiChild.sequenceNumber
         MdiChild.sequenceNumber +_ 1
-        self.setWindowTitle(self.curFile + '[*]')
+        setWindowTitle(curFile + '[*]')
 
-        self.document().contentsChanged.c..(self.documentWasModified)
+        document().contentsChanged.c..(documentWasModified)
 
     ___ loadFile  fileName):
         file _ QFile(fileName)
@@ -77,27 +77,27 @@ c_ MdiChild(QTextEdit):
 
         instr _ QTextStream(file)
         ?A...setOverrideCursor(__.WaitCursor)
-        self.sPT..(instr.readAll())
+        sPT..(instr.readAll())
         ?A...restoreOverrideCursor()
 
-        self.setCurrentFile(fileName)
+        setCurrentFile(fileName)
 
-        self.document().contentsChanged.c..(self.documentWasModified)
+        document().contentsChanged.c..(documentWasModified)
 
         r_ True
 
-    ___ save(self):
-        __ self.isUntitled:
-            r_ self.saveAs()
+    ___ save
+        __ isUntitled:
+            r_ saveAs()
         ____
-            r_ self.saveFile(self.curFile)
+            r_ saveFile(curFile)
 
-    ___ saveAs(self):
-        fileName, _ _ ?FD...getSaveFileName  "Save As", self.curFile)
+    ___ saveAs
+        fileName, _ _ ?FD...getSaveFileName  "Save As", curFile)
         __ no. fileName:
             r_ False
 
-        r_ self.saveFile(fileName)
+        r_ saveFile(fileName)
 
     ___ saveFile  fileName):
         file _ QFile(fileName)
@@ -109,36 +109,36 @@ c_ MdiChild(QTextEdit):
 
         outstr _ QTextStream(file)
         ?A...setOverrideCursor(__.WaitCursor)
-        outstr << self.toPlainText()
+        outstr << toPlainText()
         ?A...restoreOverrideCursor()
 
-        self.setCurrentFile(fileName)
+        setCurrentFile(fileName)
         r_ True
 
-    ___ userFriendlyCurrentFile(self):
-        r_ self.strippedName(self.curFile)
+    ___ userFriendlyCurrentFile
+        r_ strippedName(curFile)
 
-    ___ currentFile(self):
-        r_ self.curFile
+    ___ currentFile
+        r_ curFile
 
     ___ closeEvent  event):
-        __ self.maybeSave
+        __ maybeSave
             event.accept()
         ____
             event.ignore()
 
-    ___ documentWasModified(self):
-        self.setWindowModified(self.document().iM..())
+    ___ documentWasModified
+        setWindowModified(document().iM..())
 
-    ___ maybeSave(self):
-        __ self.document().iM..
+    ___ maybeSave
+        __ document().iM..
             ret _ ?MB...warning  "MDI",
                     "'%s' has been modified.\nDo you want to save your "
-                    "changes?" % self.userFriendlyCurrentFile(),
+                    "changes?" % userFriendlyCurrentFile(),
                     ?MB...Save | ?MB...Discard | ?MB...Cancel)
 
             __ ret == ?MB...Save:
-                r_ self.save()
+                r_ save()
 
             __ ret == ?MB...Cancel:
                 r_ False
@@ -146,273 +146,273 @@ c_ MdiChild(QTextEdit):
         r_ True
 
     ___ setCurrentFile  fileName):
-        self.curFile _ QFileInfo(fileName).canonicalFilePath()
-        self.isUntitled _ False
-        self.document().setModified F..
-        self.setWindowModified F..
-        self.setWindowTitle(self.userFriendlyCurrentFile() + "[*]")
+        curFile _ QFileInfo(fileName).canonicalFilePath()
+        isUntitled _ False
+        document().setModified F..
+        setWindowModified F..
+        setWindowTitle(userFriendlyCurrentFile() + "[*]")
 
     ___ strippedName  fullFileName):
         r_ QFileInfo(fullFileName).fileName()
 
 
 c_ MainWindow ?MW..
-    ___ __init__(self):
-        super(MainWindow, self).__init__()
+    ___  -
+        super(MainWindow, self). - ()
 
-        self.mdiArea _ QMdiArea()
-        self.mdiArea.setHorizontalScrollBarPolicy(__.ScrollBarAsNeeded)
-        self.mdiArea.setVerticalScrollBarPolicy(__.ScrollBarAsNeeded)
-        self.sCW..(self.mdiArea)
+        mdiArea _ QMdiArea()
+        mdiArea.setHorizontalScrollBarPolicy(__.ScrollBarAsNeeded)
+        mdiArea.setVerticalScrollBarPolicy(__.ScrollBarAsNeeded)
+        sCW..(mdiArea)
 
-        self.mdiArea.subWindowActivated.c..(self.updateMenus)
-        self.windowMapper _ QSignalMapper(self)
-        self.windowMapper.mapped[QWidget].c..(self.setActiveSubWindow)
+        mdiArea.subWindowActivated.c..(updateMenus)
+        windowMapper _ QSignalMapper
+        windowMapper.mapped[QWidget].c..(setActiveSubWindow)
 
-        self.createActions()
-        self.createMenus()
-        self.createToolBars()
-        self.createStatusBar()
-        self.updateMenus()
+        createActions()
+        createMenus()
+        createToolBars()
+        createStatusBar()
+        updateMenus()
 
-        self.readSettings()
+        readSettings()
 
-        self.setWindowTitle("MDI")
+        setWindowTitle("MDI")
 
     ___ closeEvent  event):
-        self.mdiArea.closeAllSubWindows()
-        __ self.mdiArea.currentSubWindow
+        mdiArea.closeAllSubWindows()
+        __ mdiArea.currentSubWindow
             event.ignore()
         ____
-            self.writeSettings()
+            writeSettings()
             event.accept()
 
-    ___ newFile(self):
-        child _ self.createMdiChild()
+    ___ newFile
+        child _ createMdiChild()
         child.newFile()
         child.s..
 
-    ___ o..(self):
-        fileName, _ _ ?FD...gOFN..(self)
+    ___ o..
+        fileName, _ _ ?FD...gOFN..
         __ fileName:
-            existing _ self.findMdiChild(fileName)
+            existing _ findMdiChild(fileName)
             __ existing:
-                self.mdiArea.setActiveSubWindow(existing)
+                mdiArea.setActiveSubWindow(existing)
                 r_
 
-            child _ self.createMdiChild()
+            child _ createMdiChild()
             __ child.loadFile(fileName):
-                self.statusBar().showMessage("File loaded", 2000)
+                statusBar().showMessage("File loaded", 2000)
                 child.s..
             ____
                 child.close()
 
-    ___ save(self):
-        __ self.activeMdiChild() and self.activeMdiChild().save
-            self.statusBar().showMessage("File saved", 2000)
+    ___ save
+        __ activeMdiChild() and activeMdiChild().save
+            statusBar().showMessage("File saved", 2000)
 
-    ___ saveAs(self):
-        __ self.activeMdiChild() and self.activeMdiChild().saveAs
-            self.statusBar().showMessage("File saved", 2000)
+    ___ saveAs
+        __ activeMdiChild() and activeMdiChild().saveAs
+            statusBar().showMessage("File saved", 2000)
 
-    ___ cut(self):
-        __ self.activeMdiChild
-            self.activeMdiChild().cut()
+    ___ cut
+        __ activeMdiChild
+            activeMdiChild().cut()
 
-    ___ copy(self):
-        __ self.activeMdiChild
-            self.activeMdiChild().copy()
+    ___ copy
+        __ activeMdiChild
+            activeMdiChild().copy()
 
-    ___ paste(self):
-        __ self.activeMdiChild
-            self.activeMdiChild().paste()
+    ___ paste
+        __ activeMdiChild
+            activeMdiChild().paste()
 
-    ___ about(self):
+    ___ about
         ?MB...about  "About MDI",
                 "The <b>MDI</b> example demonstrates how to write multiple "
                 "document interface applications using Qt.")
 
-    ___ updateMenus(self):
-        hasMdiChild _ (self.activeMdiChild() __ no. N..)
-        self.saveAct.setEnabled(hasMdiChild)
-        self.saveAsAct.setEnabled(hasMdiChild)
-        self.pasteAct.setEnabled(hasMdiChild)
-        self.closeAct.setEnabled(hasMdiChild)
-        self.closeAllAct.setEnabled(hasMdiChild)
-        self.tileAct.setEnabled(hasMdiChild)
-        self.cascadeAct.setEnabled(hasMdiChild)
-        self.nextAct.setEnabled(hasMdiChild)
-        self.previousAct.setEnabled(hasMdiChild)
-        self.separatorAct.setVisible(hasMdiChild)
+    ___ updateMenus
+        hasMdiChild _ (activeMdiChild() __ no. N..)
+        saveAct.setEnabled(hasMdiChild)
+        saveAsAct.setEnabled(hasMdiChild)
+        pasteAct.setEnabled(hasMdiChild)
+        closeAct.setEnabled(hasMdiChild)
+        closeAllAct.setEnabled(hasMdiChild)
+        tileAct.setEnabled(hasMdiChild)
+        cascadeAct.setEnabled(hasMdiChild)
+        nextAct.setEnabled(hasMdiChild)
+        previousAct.setEnabled(hasMdiChild)
+        separatorAct.setVisible(hasMdiChild)
 
-        hasSelection _ (self.activeMdiChild() __ no. N.. and
-                        self.activeMdiChild().textCursor().hasSelection())
-        self.cutAct.setEnabled(hasSelection)
-        self.copyAct.setEnabled(hasSelection)
+        hasSelection _ (activeMdiChild() __ no. N.. and
+                        activeMdiChild().textCursor().hasSelection())
+        cutAct.setEnabled(hasSelection)
+        copyAct.setEnabled(hasSelection)
 
-    ___ updateWindowMenu(self):
-        self.windowMenu.clear()
-        self.windowMenu.aA..(self.closeAct)
-        self.windowMenu.aA..(self.closeAllAct)
-        self.windowMenu.addSeparator()
-        self.windowMenu.aA..(self.tileAct)
-        self.windowMenu.aA..(self.cascadeAct)
-        self.windowMenu.addSeparator()
-        self.windowMenu.aA..(self.nextAct)
-        self.windowMenu.aA..(self.previousAct)
-        self.windowMenu.aA..(self.separatorAct)
+    ___ updateWindowMenu
+        windowMenu.clear()
+        windowMenu.aA..(closeAct)
+        windowMenu.aA..(closeAllAct)
+        windowMenu.addSeparator()
+        windowMenu.aA..(tileAct)
+        windowMenu.aA..(cascadeAct)
+        windowMenu.addSeparator()
+        windowMenu.aA..(nextAct)
+        windowMenu.aA..(previousAct)
+        windowMenu.aA..(separatorAct)
 
-        windows _ self.mdiArea.subWindowList()
-        self.separatorAct.setVisible(le.(windows) !_ 0)
+        windows _ mdiArea.subWindowList()
+        separatorAct.setVisible(le.(windows) !_ 0)
 
-        for i, window in enumerate(windows):
+        ___ i, window __ en..(windows):
             child _ window.widget()
 
             t__ _ "%d %s" % (i + 1, child.userFriendlyCurrentFile())
             __ i < 9:
                 t__ _ '&' + t__
 
-            action _ self.windowMenu.aA..(t__)
+            action _ windowMenu.aA..(t__)
             action.setCheckable(True)
-            action.setChecked(child __ self.activeMdiChild())
-            action.t__.c..(self.windowMapper.map)
-            self.windowMapper.setMapping(action, window)
+            action.setChecked(child __ activeMdiChild())
+            action.t__.c..(windowMapper.map)
+            windowMapper.setMapping(action, window)
 
-    ___ createMdiChild(self):
+    ___ createMdiChild
         child _ MdiChild()
-        self.mdiArea.addSubWindow(child)
+        mdiArea.addSubWindow(child)
 
-        child.copyAvailable.c..(self.cutAct.setEnabled)
-        child.copyAvailable.c..(self.copyAct.setEnabled)
+        child.copyAvailable.c..(cutAct.setEnabled)
+        child.copyAvailable.c..(copyAct.setEnabled)
 
         r_ child
 
-    ___ createActions(self):
-        self.newAct _ ?A..(QIcon(':/images/new.png'), "&New", self,
+    ___ createActions
+        newAct _ ?A..(QIcon(':/images/new.png'), "&New", self,
                 shortcut_QKeySequence.New, statusTip_"Create a new file",
                 triggered_self.newFile)
 
-        self.openAct _ ?A..(QIcon(':/images/open.png'), "&Open...", self,
+        openAct _ ?A..(QIcon(':/images/open.png'), "&Open...", self,
                 shortcut_QKeySequence.Open, statusTip_"Open an existing file",
                 triggered_self.o..)
 
-        self.saveAct _ ?A..(QIcon(':/images/save.png'), "&Save", self,
+        saveAct _ ?A..(QIcon(':/images/save.png'), "&Save", self,
                 shortcut_QKeySequence.Save,
                 statusTip_"Save the document to disk", triggered_self.save)
 
-        self.saveAsAct _ ?A..("Save &As...", self,
+        saveAsAct _ ?A..("Save &As...", self,
                 shortcut_QKeySequence.SaveAs,
                 statusTip_"Save the document under a new name",
                 triggered_self.saveAs)
 
-        self.exitAct _ ?A..("E&xit", self, shortcut_QKeySequence.Quit,
+        exitAct _ ?A..("E&xit", self, shortcut_QKeySequence.Quit,
                 statusTip_"Exit the application",
                 triggered_QApplication.instance().closeAllWindows)
 
-        self.cutAct _ ?A..(QIcon(':/images/cut.png'), "Cu&t", self,
+        cutAct _ ?A..(QIcon(':/images/cut.png'), "Cu&t", self,
                 shortcut_QKeySequence.Cut,
                 statusTip_"Cut the current selection's contents to the clipboard",
                 triggered_self.cut)
 
-        self.copyAct _ ?A..(QIcon(':/images/copy.png'), "&Copy", self,
+        copyAct _ ?A..(QIcon(':/images/copy.png'), "&Copy", self,
                 shortcut_QKeySequence.Copy,
                 statusTip_"Copy the current selection's contents to the clipboard",
                 triggered_self.copy)
 
-        self.pasteAct _ ?A..(QIcon(':/images/paste.png'), "&Paste", self,
+        pasteAct _ ?A..(QIcon(':/images/paste.png'), "&Paste", self,
                 shortcut_QKeySequence.Paste,
                 statusTip_"Paste the clipboard's contents into the current selection",
                 triggered_self.paste)
 
-        self.closeAct _ ?A..("Cl&ose", self,
+        closeAct _ ?A..("Cl&ose", self,
                 statusTip_"Close the active window",
                 triggered_self.mdiArea.closeActiveSubWindow)
 
-        self.closeAllAct _ ?A..("Close &All", self,
+        closeAllAct _ ?A..("Close &All", self,
                 statusTip_"Close all the windows",
                 triggered_self.mdiArea.closeAllSubWindows)
 
-        self.tileAct _ ?A..("&Tile", self, statusTip_"Tile the windows",
+        tileAct _ ?A..("&Tile", self, statusTip_"Tile the windows",
                 triggered_self.mdiArea.tileSubWindows)
 
-        self.cascadeAct _ ?A..("&Cascade", self,
+        cascadeAct _ ?A..("&Cascade", self,
                 statusTip_"Cascade the windows",
                 triggered_self.mdiArea.cascadeSubWindows)
 
-        self.nextAct _ ?A..("Ne&xt", self, shortcut_QKeySequence.NextChild,
+        nextAct _ ?A..("Ne&xt", self, shortcut_QKeySequence.NextChild,
                 statusTip_"Move the focus to the next window",
                 triggered_self.mdiArea.activateNextSubWindow)
 
-        self.previousAct _ ?A..("Pre&vious", self,
+        previousAct _ ?A..("Pre&vious", self,
                 shortcut_QKeySequence.PreviousChild,
                 statusTip_"Move the focus to the previous window",
                 triggered_self.mdiArea.activatePreviousSubWindow)
 
-        self.separatorAct _ ?A..(self)
-        self.separatorAct.setSeparator(True)
+        separatorAct _ ?A..
+        separatorAct.setSeparator(True)
 
-        self.aboutAct _ ?A..("&About", self,
+        aboutAct _ ?A..("&About", self,
                 statusTip_"Show the application's About box",
                 triggered_self.about)
 
-        self.aboutQtAct _ ?A..("About &Qt", self,
+        aboutQtAct _ ?A..("About &Qt", self,
                 statusTip_"Show the Qt library's About box",
                 triggered_QApplication.instance().aboutQt)
 
-    ___ createMenus(self):
-        self.fileMenu _ self.mB.. .aM..("&File")
-        self.fileMenu.aA..(self.newAct)
-        self.fileMenu.aA..(self.openAct)
-        self.fileMenu.aA..(self.saveAct)
-        self.fileMenu.aA..(self.saveAsAct)
-        self.fileMenu.addSeparator()
-        action _ self.fileMenu.aA..("Switch layout direction")
-        action.t__.c..(self.switchLayoutDirection)
-        self.fileMenu.aA..(self.exitAct)
+    ___ createMenus
+        fileMenu _ mB.. .aM..("&File")
+        fileMenu.aA..(newAct)
+        fileMenu.aA..(openAct)
+        fileMenu.aA..(saveAct)
+        fileMenu.aA..(saveAsAct)
+        fileMenu.addSeparator()
+        action _ fileMenu.aA..("Switch layout direction")
+        action.t__.c..(switchLayoutDirection)
+        fileMenu.aA..(exitAct)
 
-        self.editMenu _ self.mB.. .aM..("&Edit")
-        self.editMenu.aA..(self.cutAct)
-        self.editMenu.aA..(self.copyAct)
-        self.editMenu.aA..(self.pasteAct)
+        editMenu _ mB.. .aM..("&Edit")
+        editMenu.aA..(cutAct)
+        editMenu.aA..(copyAct)
+        editMenu.aA..(pasteAct)
 
-        self.windowMenu _ self.mB.. .aM..("&Window")
-        self.updateWindowMenu()
-        self.windowMenu.aboutToShow.c..(self.updateWindowMenu)
+        windowMenu _ mB.. .aM..("&Window")
+        updateWindowMenu()
+        windowMenu.aboutToShow.c..(updateWindowMenu)
 
-        self.mB.. .addSeparator()
+        mB.. .addSeparator()
 
-        self.helpMenu _ self.mB.. .aM..("&Help")
-        self.helpMenu.aA..(self.aboutAct)
-        self.helpMenu.aA..(self.aboutQtAct)
+        helpMenu _ mB.. .aM..("&Help")
+        helpMenu.aA..(aboutAct)
+        helpMenu.aA..(aboutQtAct)
 
-    ___ createToolBars(self):
-        self.fileToolBar _ self.addToolBar("File")
-        self.fileToolBar.aA..(self.newAct)
-        self.fileToolBar.aA..(self.openAct)
-        self.fileToolBar.aA..(self.saveAct)
+    ___ createToolBars
+        fileToolBar _ addToolBar("File")
+        fileToolBar.aA..(newAct)
+        fileToolBar.aA..(openAct)
+        fileToolBar.aA..(saveAct)
 
-        self.editToolBar _ self.addToolBar("Edit")
-        self.editToolBar.aA..(self.cutAct)
-        self.editToolBar.aA..(self.copyAct)
-        self.editToolBar.aA..(self.pasteAct)
+        editToolBar _ addToolBar("Edit")
+        editToolBar.aA..(cutAct)
+        editToolBar.aA..(copyAct)
+        editToolBar.aA..(pasteAct)
 
-    ___ createStatusBar(self):
-        self.statusBar().showMessage("Ready")
+    ___ createStatusBar
+        statusBar().showMessage("Ready")
 
-    ___ readSettings(self):
+    ___ readSettings
         settings _ QSettings('Trolltech', 'MDI Example')
         pos _ settings.value('pos', QPoint(200, 200))
         size _ settings.value('size', QSize(400, 400))
-        self.move(pos)
-        self.resize(size)
+        move(pos)
+        resize(size)
 
-    ___ writeSettings(self):
+    ___ writeSettings
         settings _ QSettings('Trolltech', 'MDI Example')
-        settings.setValue('pos', self.pos())
-        settings.setValue('size', self.size())
+        settings.setValue('pos', pos())
+        settings.setValue('size', size())
 
-    ___ activeMdiChild(self):
-        activeSubWindow _ self.mdiArea.activeSubWindow()
+    ___ activeMdiChild
+        activeSubWindow _ mdiArea.activeSubWindow()
         __ activeSubWindow:
             r_ activeSubWindow.widget()
         r_ N..
@@ -420,27 +420,27 @@ c_ MainWindow ?MW..
     ___ findMdiChild  fileName):
         canonicalFilePath _ QFileInfo(fileName).canonicalFilePath()
 
-        for window in self.mdiArea.subWindowList
+        ___ window __ mdiArea.subWindowList
             __ window.widget().currentFile() == canonicalFilePath:
                 r_ window
         r_ N..
 
-    ___ switchLayoutDirection(self):
-        __ self.layoutDirection() == __.LeftToRight:
+    ___ switchLayoutDirection
+        __ layoutDirection() == __.LeftToRight:
             ?A...setLayoutDirection(__.RightToLeft)
         ____
             ?A...setLayoutDirection(__.LeftToRight)
 
     ___ setActiveSubWindow  window):
         __ window:
-            self.mdiArea.setActiveSubWindow(window)
+            mdiArea.setActiveSubWindow(window)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     mainWin _ MainWindow()
     mainWin.s..
     ___.exit(app.exec_())

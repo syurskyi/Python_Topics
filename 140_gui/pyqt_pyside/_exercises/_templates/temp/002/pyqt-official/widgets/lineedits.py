@@ -49,8 +49,8 @@ ____ ?.?W.. ______ (?A.., QComboBox, QGridLayout, QGroupBox,
 
 
 c_ Window(QWidget):
-    ___ __init__(self):
-        super(Window, self).__init__()
+    ___  -
+        super(Window, self). - ()
 
         echoGroup _ QGroupBox("Echo")
 
@@ -61,8 +61,8 @@ c_ Window(QWidget):
         echoComboBox.addItem("PasswordEchoOnEdit")
         echoComboBox.addItem("No Echo")
 
-        self.echoLineEdit _ ?LE..
-        self.echoLineEdit.setFocus()
+        echoLineEdit _ ?LE..
+        echoLineEdit.setFocus()
 
         validatorGroup _ QGroupBox("Validator")
 
@@ -72,7 +72,7 @@ c_ Window(QWidget):
         validatorComboBox.addItem("Integer validator")
         validatorComboBox.addItem("Double validator")
 
-        self.validatorLineEdit _ ?LE..
+        validatorLineEdit _ ?LE..
 
         alignmentGroup _ QGroupBox("Alignment")
 
@@ -82,7 +82,7 @@ c_ Window(QWidget):
         alignmentComboBox.addItem("Centered")
         alignmentComboBox.addItem("Right")
 
-        self.alignmentLineEdit _ ?LE..
+        alignmentLineEdit _ ?LE..
 
         inputMaskGroup _ QGroupBox("Input mask")
 
@@ -93,7 +93,7 @@ c_ Window(QWidget):
         inputMaskComboBox.addItem("ISO date")
         inputMaskComboBox.addItem("License key")
 
-        self.inputMaskLineEdit _ ?LE..
+        inputMaskLineEdit _ ?LE..
 
         accessGroup _ QGroupBox("Access")
 
@@ -102,42 +102,42 @@ c_ Window(QWidget):
         accessComboBox.addItem("False")
         accessComboBox.addItem("True")
 
-        self.accessLineEdit _ ?LE..
+        accessLineEdit _ ?LE..
 
-        echoComboBox.activated.c..(self.echoChanged)
-        validatorComboBox.activated.c..(self.validatorChanged)
-        alignmentComboBox.activated.c..(self.alignmentChanged)
-        inputMaskComboBox.activated.c..(self.inputMaskChanged)
-        accessComboBox.activated.c..(self.accessChanged)
+        echoComboBox.activated.c..(echoChanged)
+        validatorComboBox.activated.c..(validatorChanged)
+        alignmentComboBox.activated.c..(alignmentChanged)
+        inputMaskComboBox.activated.c..(inputMaskChanged)
+        accessComboBox.activated.c..(accessChanged)
 
         echoLayout _ QGridLayout()
         echoLayout.aW..(echoLabel, 0, 0)
         echoLayout.aW..(echoComboBox, 0, 1)
-        echoLayout.aW..(self.echoLineEdit, 1, 0, 1, 2)
+        echoLayout.aW..(echoLineEdit, 1, 0, 1, 2)
         echoGroup.sL..(echoLayout)
 
         validatorLayout _ QGridLayout()
         validatorLayout.aW..(validatorLabel, 0, 0)
         validatorLayout.aW..(validatorComboBox, 0, 1)
-        validatorLayout.aW..(self.validatorLineEdit, 1, 0, 1, 2)
+        validatorLayout.aW..(validatorLineEdit, 1, 0, 1, 2)
         validatorGroup.sL..(validatorLayout)
 
         alignmentLayout _ QGridLayout()
         alignmentLayout.aW..(alignmentLabel, 0, 0)
         alignmentLayout.aW..(alignmentComboBox, 0, 1)
-        alignmentLayout.aW..(self.alignmentLineEdit, 1, 0, 1, 2)
+        alignmentLayout.aW..(alignmentLineEdit, 1, 0, 1, 2)
         alignmentGroup. sL..(alignmentLayout)
 
         inputMaskLayout _ QGridLayout()
         inputMaskLayout.aW..(inputMaskLabel, 0, 0)
         inputMaskLayout.aW..(inputMaskComboBox, 0, 1)
-        inputMaskLayout.aW..(self.inputMaskLineEdit, 1, 0, 1, 2)
+        inputMaskLayout.aW..(inputMaskLineEdit, 1, 0, 1, 2)
         inputMaskGroup.sL..(inputMaskLayout)
 
         accessLayout _ QGridLayout()
         accessLayout.aW..(accessLabel, 0, 0)
         accessLayout.aW..(accessComboBox, 0, 1)
-        accessLayout.aW..(self.accessLineEdit, 1, 0, 1, 2)
+        accessLayout.aW..(accessLineEdit, 1, 0, 1, 2)
         accessGroup.sL..(accessLayout)
 
         layout _ QGridLayout()
@@ -146,62 +146,62 @@ c_ Window(QWidget):
         layout.aW..(alignmentGroup, 2, 0)
         layout.aW..(inputMaskGroup, 0, 1)
         layout.aW..(accessGroup, 1, 1)
-        self.sL..(layout)
+        sL..(layout)
 
-        self.setWindowTitle("Line Edits")
+        setWindowTitle("Line Edits")
 
     ___ echoChanged  index):
         __ index == 0:
-            self.echoLineEdit.setEchoMode(QLineEdit.Normal)
+            echoLineEdit.setEchoMode(QLineEdit.Normal)
         ____ index == 1:
-            self.echoLineEdit.setEchoMode(QLineEdit.Password)
+            echoLineEdit.setEchoMode(QLineEdit.Password)
         ____ index == 2:
-            self.echoLineEdit.setEchoMode(QLineEdit.PasswordEchoOnEdit)
+            echoLineEdit.setEchoMode(QLineEdit.PasswordEchoOnEdit)
         ____ index == 3:
-    	    self.echoLineEdit.setEchoMode(QLineEdit.NoEcho)
+    	    echoLineEdit.setEchoMode(QLineEdit.NoEcho)
 
     ___ validatorChanged  index):
         __ index == 0:
-            self.validatorLineEdit.setValidator(0)
+            validatorLineEdit.setValidator(0)
         ____ index == 1:
-            self.validatorLineEdit.setValidator(QIntValidator(self.validatorLineEdit))
+            validatorLineEdit.setValidator(QIntValidator(validatorLineEdit))
         ____ index == 2:
-            self.validatorLineEdit.setValidator(QDoubleValidator(-999.0, 999.0, 2, self.validatorLineEdit))
+            validatorLineEdit.setValidator(QDoubleValidator(-999.0, 999.0, 2, validatorLineEdit))
 
-        self.validatorLineEdit.clear()
+        validatorLineEdit.clear()
 
     ___ alignmentChanged  index):
         __ index == 0:
-            self.alignmentLineEdit.setAlignment(__.AlignLeft)
+            alignmentLineEdit.setAlignment(__.AlignLeft)
         ____ index == 1:
-            self.alignmentLineEdit.setAlignment(__.AlignCenter)
+            alignmentLineEdit.setAlignment(__.AlignCenter)
         ____ index == 2:
-    	    self.alignmentLineEdit.setAlignment(__.AlignRight)
+    	    alignmentLineEdit.setAlignment(__.AlignRight)
 
     ___ inputMaskChanged  index):
         __ index == 0:
-            self.inputMaskLineEdit.setInputMask('')
+            inputMaskLineEdit.setInputMask('')
         ____ index == 1:
-            self.inputMaskLineEdit.setInputMask('+99 99 99 99 99;_')
+            inputMaskLineEdit.setInputMask('+99 99 99 99 99;_')
         ____ index == 2:
-            self.inputMaskLineEdit.setInputMask('0000-00-00')
-            self.inputMaskLineEdit.sT..('00000000')
-            self.inputMaskLineEdit.setCursorPosition(0)
+            inputMaskLineEdit.setInputMask('0000-00-00')
+            inputMaskLineEdit.sT..('00000000')
+            inputMaskLineEdit.setCursorPosition(0)
         ____ index == 3:
-            self.inputMaskLineEdit.setInputMask('>AAAAA-AAAAA-AAAAA-AAAAA-AAAAA;#')
+            inputMaskLineEdit.setInputMask('>AAAAA-AAAAA-AAAAA-AAAAA-AAAAA;#')
 
     ___ accessChanged  index):
         __ index == 0:
-            self.accessLineEdit.setReadOnly F..
+            accessLineEdit.setReadOnly F..
         ____ index == 1:
-            self.accessLineEdit.setReadOnly(True)
+            accessLineEdit.setReadOnly(True)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     window _ Window()
     window.s..
     ___.exit(app.exec_())

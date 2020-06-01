@@ -39,22 +39,22 @@ c_ BaseClass(QWidget):
     in Qt Designer's Property Editor.
     """
 
-    ___ __init__  parent_None):
+    ___  -   parent_None):
 
-        super(BaseClass, self).__init__(parent)
+        super(BaseClass, self). - (parent)
 
-        self.resetAuthor()
+        resetAuthor()
 
     # Define getter, setter and resetter methods for the author property.
 
-    ___ getAuthor(self):
-        r_ self._author
+    ___ getAuthor
+        r_ _author
 
     ___ setAuthor  name):
-        self._author _ name
+        _author _ name
 
-    ___ resetAuthor(self):
-        self._author _ "David Boddie"
+    ___ resetAuthor
+        _author _ "David Boddie"
 
     author _ pyqtProperty(str, getAuthor, setAuthor, resetAuthor)
 
@@ -67,33 +67,33 @@ c_ Bubble:
     QPainter passed to its drawBubble() method.
     """
 
-    ___ __init__  position, radius, speed, innerColor, outerColor):
+    ___  -   position, radius, speed, innerColor, outerColor):
 
-        self.position _ position
-        self.radius _ radius
-        self.speed _ speed
-        self.innerColor _ innerColor
-        self.outerColor _ outerColor
-        self.updateBrush()
+        position _ position
+        radius _ radius
+        speed _ speed
+        innerColor _ innerColor
+        outerColor _ outerColor
+        updateBrush()
 
-    ___ updateBrush(self):
+    ___ updateBrush
 
         gradient _ QRadialGradient(
-                QPointF(self.radius, self.radius), self.radius,
-                QPointF(self.radius*0.5, self.radius*0.5))
+                QPointF(radius, radius), radius,
+                QPointF(radius*0.5, radius*0.5))
 
         gradient.setColorAt(0, ?C..(255, 255, 255, 255))
-        gradient.setColorAt(0.25, self.innerColor)
-        gradient.setColorAt(1, self.outerColor)
-        self.brush _ QBrush(gradient)
+        gradient.setColorAt(0.25, innerColor)
+        gradient.setColorAt(1, outerColor)
+        brush _ QBrush(gradient)
 
     ___ drawBubble  painter):
 
         painter.save()
-        painter.translate(self.position.x() - self.radius,
-                          self.position.y() - self.radius)
-        painter.setBrush(self.brush)
-        painter.drawEllipse(0.0, 0.0, 2*self.radius, 2*self.radius)
+        painter.translate(position.x() - radius,
+                          position.y() - radius)
+        painter.setBrush(brush)
+        painter.drawEllipse(0.0, 0.0, 2*radius, 2*radius)
         painter.restore()
 
 
@@ -111,110 +111,110 @@ c_ BubblesWidget(BaseClass):
     bubbleLeft _ pyqtSignal()
     bubblesRemaining _ pyqtSignal(int)
 
-    ___ __init__  parent_None):
+    ___  -   parent_None):
 
-        super(BubblesWidget, self).__init__(parent)
+        super(BubblesWidget, self). - (parent)
 
-        self.pen _ QPen(?C..("#cccccc"))
-        self.bubbles _   # list
-        self.backgroundColor1 _ self.randomColor()
-        self.backgroundColor2 _ self.randomColor().darker(150)
-        self.newBubble _ N..
+        pen _ QPen(?C..("#cccccc"))
+        bubbles _   # list
+        backgroundColor1 _ randomColor()
+        backgroundColor2 _ randomColor().darker(150)
+        newBubble _ N..
 
         random.seed()
 
-        self.animation_timer _ QTimer(self)
-        self.animation_timer.setSingleShot F..
-        self.animation_timer.timeout.c..(self.animate)
-        self.animation_timer.start(25)
+        animation_timer _ QTimer
+        animation_timer.setSingleShot F..
+        animation_timer.timeout.c..(animate)
+        animation_timer.start(25)
 
-        self.bubbleTimer _ ?T..
-        self.bubbleTimer.setSingleShot F..
-        self.bubbleTimer.timeout.c..(self.expandBubble)
+        bubbleTimer _ ?T..
+        bubbleTimer.setSingleShot F..
+        bubbleTimer.timeout.c..(expandBubble)
 
-        self.setMouseTracking(True)
-        self.setMinimumSize(QSize(200, 200))
-        self.setWindowTitle("Bubble Maker")
+        setMouseTracking(True)
+        setMinimumSize(QSize(200, 200))
+        setWindowTitle("Bubble Maker")
 
     ___ paintEvent  event):
 
-        background _ QRadialGradient(QPointF(self.rect().topLeft()), 500,
-                QPointF(self.rect().bottomRight()))
-        background.setColorAt(0, self.backgroundColor1)
-        background.setColorAt(1, self.backgroundColor2)
+        background _ QRadialGradient(QPointF(rect().topLeft()), 500,
+                QPointF(rect().bottomRight()))
+        background.setColorAt(0, backgroundColor1)
+        background.setColorAt(1, backgroundColor2)
 
         painter _ QPainter()
-        painter.begin(self)
+        painter.begin
         painter.setRenderHint(QPainter.Antialiasing)
         painter.fillRect(event.rect(), QBrush(background))
 
-        painter.setPen(self.pen)
+        painter.setPen(pen)
 
-        for bubble in self.bubbles:
+        ___ bubble __ bubbles:
 
             __ QRectF(bubble.position - QPointF(bubble.radius, bubble.radius),
                       QSizeF(2*bubble.radius, 2*bubble.radius)).intersects(QRectF(event.rect())):
                 bubble.drawBubble(painter)
 
-        __ self.newBubble:
+        __ newBubble:
 
-            self.newBubble.drawBubble(painter)
+            newBubble.drawBubble(painter)
 
         painter.end()
 
     ___ mousePressEvent  event):
 
-        __ event.button() == __.LeftButton and self.newBubble __ N..:
+        __ event.button() == __.LeftButton and newBubble __ N..:
 
-            self.newBubble _ Bubble(QPointF(event.pos()), 4.0,
+            newBubble _ Bubble(QPointF(event.pos()), 4.0,
                                     1.0 + random.random() * 7,
-                                    self.randomColor(), self.randomColor())
-            self.bubbleTimer.start(50)
+                                    randomColor(), randomColor())
+            bubbleTimer.start(50)
             event.accept()
 
     ___ mouseMoveEvent  event):
 
-        __ self.newBubble:
+        __ newBubble:
 
-            self.update(
-                QRectF(self.newBubble.position - \
-                       QPointF(self.newBubble.radius + 1, self.newBubble.radius + 1),
-                       QSizeF(2*self.newBubble.radius + 2, 2*self.newBubble.radius + 2)).toRect()
+            update(
+                QRectF(newBubble.position - \
+                       QPointF(newBubble.radius + 1, newBubble.radius + 1),
+                       QSizeF(2*newBubble.radius + 2, 2*newBubble.radius + 2)).toRect()
                 )
-            self.newBubble.position _ QPointF(event.pos())
-            self.update(
-                QRectF(self.newBubble.position - \
-                       QPointF(self.newBubble.radius + 1, self.newBubble.radius + 1),
-                       QSizeF(2*self.newBubble.radius + 2, 2*self.newBubble.radius + 2)).toRect()
+            newBubble.position _ QPointF(event.pos())
+            update(
+                QRectF(newBubble.position - \
+                       QPointF(newBubble.radius + 1, newBubble.radius + 1),
+                       QSizeF(2*newBubble.radius + 2, 2*newBubble.radius + 2)).toRect()
                 )
 
         event.accept()
 
     ___ mouseReleaseEvent  event):
 
-        __ self.newBubble:
+        __ newBubble:
 
-            self.bubbles.ap..(self.newBubble)
-            self.newBubble _ N..
-            self.bubbleTimer.stop()
-            self.bubblesRemaining.emit(le.(self.bubbles))
+            bubbles.ap..(newBubble)
+            newBubble _ N..
+            bubbleTimer.stop()
+            bubblesRemaining.emit(le.(bubbles))
 
         event.accept()
 
-    ___ expandBubble(self):
+    ___ expandBubble
 
-        __ self.newBubble:
+        __ newBubble:
 
-            self.newBubble.radius _ min(self.newBubble.radius + 4.0,
-                                        self.width()/8.0, self.height()/8.0)
-            self.update(
-                QRectF(self.newBubble.position - \
-                       QPointF(self.newBubble.radius + 1, self.newBubble.radius + 1),
-                       QSizeF(2*self.newBubble.radius + 2, 2*self.newBubble.radius + 2)).toRect()
+            newBubble.radius _ min(newBubble.radius + 4.0,
+                                        width()/8.0, height()/8.0)
+            update(
+                QRectF(newBubble.position - \
+                       QPointF(newBubble.radius + 1, newBubble.radius + 1),
+                       QSizeF(2*newBubble.radius + 2, 2*newBubble.radius + 2)).toRect()
                 )
-            self.newBubble.updateBrush()
+            newBubble.updateBrush()
 
-    ___ randomColor(self):
+    ___ randomColor
 
         red _ 205 + random.random() * 50
         green _ 205 + random.random() * 50
@@ -223,15 +223,15 @@ c_ BubblesWidget(BaseClass):
 
         r_ ?C..(red, green, blue, alpha)
 
-    ___ animate(self):
+    ___ animate
 
         bubbles _   # list
         left _ False
-        for bubble in self.bubbles:
+        ___ bubble __ bubbles:
 
             bubble.position _ bubble.position + QPointF(0, -bubble.speed)
 
-            self.update(
+            update(
                     QRectF(bubble.position - QPointF(bubble.radius + 1,
                                     bubble.radius + 1),
                             QSizeF(2*bubble.radius + 2, 2*bubble.radius + 2 + bubble.speed)).toRect())
@@ -239,28 +239,28 @@ c_ BubblesWidget(BaseClass):
             __ bubble.position.y() + bubble.radius > 0:
                 bubbles.ap..(bubble)
             ____
-                self.bubbleLeft.emit()
+                bubbleLeft.emit()
                 left _ True
 
-        __ self.newBubble:
-            self.update(
-                    QRectF(self.newBubble.position - QPointF(
-                                    self.newBubble.radius + 1,
-                                    self.newBubble.radius + 1),
-                            QSizeF(2*self.newBubble.radius + 2, 2*self.newBubble.radius + 2)).toRect())
+        __ newBubble:
+            update(
+                    QRectF(newBubble.position - QPointF(
+                                    newBubble.radius + 1,
+                                    newBubble.radius + 1),
+                            QSizeF(2*newBubble.radius + 2, 2*newBubble.radius + 2)).toRect())
 
-        self.bubbles _ bubbles
+        bubbles _ bubbles
         __ left:
-            self.bubblesRemaining.emit(le.(self.bubbles))
+            bubblesRemaining.emit(le.(bubbles))
 
-    ___ sizeHint(self):
+    ___ sizeHint
 
         r_ QSize(200, 200)
 
     # We provide getter and setter methods for the numberOfBubbles property.
-    ___ getBubbles(self):
+    ___ getBubbles
 
-        r_ le.(self.bubbles)
+        r_ le.(bubbles)
 
     # The setBubbles() method can also be used as a slot.
     @pyqtSlot(int)
@@ -268,19 +268,19 @@ c_ BubblesWidget(BaseClass):
 
         value _ max(0, value)
 
-        w__ le.(self.bubbles) < value:
+        w__ le.(bubbles) < value:
 
-            newBubble _ Bubble(QPointF(random.random() * self.width(),
-                                       random.random() * self.height()),
+            newBubble _ Bubble(QPointF(random.random() * width(),
+                                       random.random() * height()),
                                4.0 + random.random() * 20,
                                1.0 + random.random() * 7,
-                               self.randomColor(), self.randomColor())
+                               randomColor(), randomColor())
             newBubble.updateBrush()
-            self.bubbles.ap..(newBubble)
+            bubbles.ap..(newBubble)
 
-        self.bubbles _ self.bubbles[:value]
-        self.bubblesRemaining.emit(value)
-        self.update()
+        bubbles _ bubbles[:value]
+        bubblesRemaining.emit(value)
+        update()
 
     numberOfBubbles _ pyqtProperty(int, getBubbles, setBubbles)
 
@@ -289,25 +289,25 @@ c_ BubblesWidget(BaseClass):
     # values stored in these properties can be edited individually in
     # Qt Designer.
 
-    ___ getColor1(self):
+    ___ getColor1
 
-        r_ self.backgroundColor1
+        r_ backgroundColor1
 
     ___ setColor1  value):
 
-        self.backgroundColor1 _ ?C..(value)
-        self.update()
+        backgroundColor1 _ ?C..(value)
+        update()
 
     color1 _ pyqtProperty(?C.., getColor1, setColor1)
 
-    ___ getColor2(self):
+    ___ getColor2
 
-        r_ self.backgroundColor2
+        r_ backgroundColor2
 
     ___ setColor2  value):
 
-        self.backgroundColor2 _ ?C..(value)
-        self.update()
+        backgroundColor2 _ ?C..(value)
+        update()
 
     color2 _ pyqtProperty(?C.., getColor2, setColor2)
 
@@ -315,21 +315,21 @@ c_ BubblesWidget(BaseClass):
     # of the bubbles in the widget.
 
     @pyqtSlot()
-    ___ stop(self):
+    ___ stop
 
-        self.animation_timer.stop()
+        animation_timer.stop()
 
     @pyqtSlot()
-    ___ start(self):
+    ___ start
 
-        self.animation_timer.start(25)
+        animation_timer.start(25)
 
 
 __ __name__ == "__main__":
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     widget _ BubblesWidget()
     widget.s..
     ___.exit(app.exec_())

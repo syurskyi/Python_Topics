@@ -54,20 +54,20 @@ ____ ?.?W.. ______ (?A.., QComboBox, QHBoxLayout, QLabel,
 
 c_ Generator(QIODevice):
 
-    ___ __init__  format, durationUs, sampleRate, parent):
-        super(Generator, self).__init__(parent)
+    ___  -   format, durationUs, sampleRate, parent):
+        super(Generator, self). - (parent)
 
-        self.m_pos _ 0
-        self.m_buffer _ QByteArray()
+        m_pos _ 0
+        m_buffer _ QByteArray()
 
-        self.generateData(format, durationUs, sampleRate)
+        generateData(format, durationUs, sampleRate)
 
-    ___ start(self):
-        self.o..(QIODevice.ReadOnly)
+    ___ start
+        o..(QIODevice.ReadOnly)
 
-    ___ stop(self):
-        self.m_pos _ 0
-        self.close()
+    ___ stop
+        m_pos _ 0
+        close()
 
     ___ generateData  format, durationUs, sampleRate):
         pack_format _ ''
@@ -94,7 +94,7 @@ c_ Generator(QIODevice):
 
         length _ (format.sampleRate() * format.channelCount() * (format.sampleSize() // 8)) * durationUs // 100000
 
-        self.m_buffer.clear()
+        m_buffer.clear()
         sampleIndex _ 0
         factor _ 2 * pi * sampleRate / format.sampleRate()
 
@@ -102,8 +102,8 @@ c_ Generator(QIODevice):
             x _ sin((sampleIndex % format.sampleRate()) * factor)
             packed _ pack(pack_format, int(scaler(x)))
 
-            for _ in range(format.channelCount()):
-                self.m_buffer.ap..(packed)
+            ___ _ __ range(format.channelCount()):
+                m_buffer.ap..(packed)
                 length -_ channelBytes
 
             sampleIndex +_ 1
@@ -113,9 +113,9 @@ c_ Generator(QIODevice):
         total _ 0
 
         w__ maxlen > total:
-            chunk _ min(self.m_buffer.size() - self.m_pos, maxlen - total)
-            data.ap..(self.m_buffer.mid(self.m_pos, chunk))
-            self.m_pos _ (self.m_pos + chunk) % self.m_buffer.size()
+            chunk _ min(m_buffer.size() - m_pos, maxlen - total)
+            data.ap..(m_buffer.mid(m_pos, chunk))
+            m_pos _ (m_pos + chunk) % m_buffer.size()
             total +_ chunk
 
         r_ data.data()
@@ -123,8 +123,8 @@ c_ Generator(QIODevice):
     ___ writeData  data):
         r_ 0
 
-    ___ bytesAvailable(self):
-        r_ self.m_buffer.size() + super(Generator, self).bytesAvailable()
+    ___ bytesAvailable
+        r_ m_buffer.size() + super(Generator, self).bytesAvailable()
 
 
 c_ AudioTest ?MW..
@@ -138,138 +138,138 @@ c_ AudioTest ?MW..
     ToneSampleRateHz _ 600
     DataSampleRateHz _ 44100
 
-    ___ __init__(self):
-        super(AudioTest, self).__init__()
+    ___  - 
+        super(AudioTest, self). - ()
 
-        self.m_device _ QAudioDeviceInfo.defaultOutputDevice()
-        self.m_output _ N..
+        m_device _ QAudioDeviceInfo.defaultOutputDevice()
+        m_output _ N..
 
-        self.initializeWindow()
-        self.initializeAudio()
+        initializeWindow()
+        initializeAudio()
 
-    ___ initializeWindow(self):
+    ___ initializeWindow
         layout _ ?VBL..
 
-        self.m_deviceBox _ QComboBox(activated_self.deviceChanged)
-        for deviceInfo in QAudioDeviceInfo.availableDevices(QAudio.AudioOutput):
-            self.m_deviceBox.addItem(deviceInfo.deviceName(), deviceInfo)
+        m_deviceBox _ QComboBox(activated_self.deviceChanged)
+        ___ deviceInfo __ QAudioDeviceInfo.availableDevices(QAudio.AudioOutput):
+            m_deviceBox.addItem(deviceInfo.deviceName(), deviceInfo)
 
-        layout.aW..(self.m_deviceBox)
+        layout.aW..(m_deviceBox)
 
-        self.m_modeButton _ ?PB..(c___self.toggleMode)
-        self.m_modeButton.sT..(self.PUSH_MODE_LABEL)
+        m_modeButton _ ?PB..(c___self.toggleMode)
+        m_modeButton.sT..(PUSH_MODE_LABEL)
 
-        layout.aW..(self.m_modeButton)
+        layout.aW..(m_modeButton)
 
-        self.m_suspendResumeButton _ ?PB..(
+        m_suspendResumeButton _ ?PB..(
                 c___self.toggleSuspendResume)
-        self.m_suspendResumeButton.sT..(self.SUSPEND_LABEL)
+        m_suspendResumeButton.sT..(SUSPEND_LABEL)
 
-        layout.aW..(self.m_suspendResumeButton)
+        layout.aW..(m_suspendResumeButton)
 
         volumeBox _ QHBoxLayout()
         volumeLabel _ QLabel("Volume:")
-        self.m_volumeSlider _ QSlider(__.Horizontal, minimum_0, maximum_100,
+        m_volumeSlider _ QSlider(__.Horizontal, minimum_0, maximum_100,
                 singleStep_10, valueChanged_self.volumeChanged)
         volumeBox.aW..(volumeLabel)
-        volumeBox.aW..(self.m_volumeSlider)
+        volumeBox.aW..(m_volumeSlider)
 
-        layout.addLayout(volumeBox)
+        layout.aL..(volumeBox)
 
         window _ ?W..
         window.sL..(layout)
 
-        self.sCW..(window)
+        sCW..(window)
 
-    ___ initializeAudio(self):
-        self.m_pullTimer _ QTimer  timeout_self.pullTimerExpired)
-        self.m_pullMode _ True
+    ___ initializeAudio
+        m_pullTimer _ QTimer  timeout_self.pullTimerExpired)
+        m_pullMode _ True
 
-        self.m_format _ QAudioFormat()
-        self.m_format.setSampleRate(self.DataSampleRateHz)
-        self.m_format.setChannelCount(1)
-        self.m_format.setSampleSize(16)
-        self.m_format.setCodec('audio/pcm')
-        self.m_format.setByteOrder(QAudioFormat.LittleEndian)
-        self.m_format.setSampleType(QAudioFormat.SignedInt)
+        m_format _ QAudioFormat()
+        m_format.setSampleRate(DataSampleRateHz)
+        m_format.setChannelCount(1)
+        m_format.setSampleSize(16)
+        m_format.setCodec('audio/pcm')
+        m_format.setByteOrder(QAudioFormat.LittleEndian)
+        m_format.setSampleType(QAudioFormat.SignedInt)
 
         info _ QAudioDeviceInfo(QAudioDeviceInfo.defaultOutputDevice())
-        __ no. info.isFormatSupported(self.m_format):
+        __ no. info.isFormatSupported(m_format):
             qWarning("Default format not supported - trying to use nearest")
-            self.m_format _ info.nearestFormat(self.m_format)
+            m_format _ info.nearestFormat(m_format)
 
-        self.m_generator _ Generator(self.m_format,
-                self.DurationSeconds * 1000000, self.ToneSampleRateHz, self)
+        m_generator _ Generator(m_format,
+                DurationSeconds * 1000000, ToneSampleRateHz, self)
 
-        self.createAudioOutput()
+        createAudioOutput()
 
-    ___ createAudioOutput(self):
-        self.m_audioOutput _ QAudioOutput(self.m_device, self.m_format)
-        self.m_audioOutput.notify.c..(self.notified)
-        self.m_audioOutput.stateChanged.c..(self.handleStateChanged)
+    ___ createAudioOutput
+        m_audioOutput _ QAudioOutput(m_device, m_format)
+        m_audioOutput.notify.c..(notified)
+        m_audioOutput.stateChanged.c..(handleStateChanged)
 
-        self.m_generator.start()
-        self.m_audioOutput.start(self.m_generator)
-        self.m_volumeSlider.setValue(self.m_audioOutput.volume() * 100)
+        m_generator.start()
+        m_audioOutput.start(m_generator)
+        m_volumeSlider.setValue(m_audioOutput.volume() * 100)
 
     ___ deviceChanged  index):
-        self.m_pullTimer.stop()
-        self.m_generator.stop()
-        self.m_audioOutput.stop()
-        self.m_device _ self.m_deviceBox.itemData(index)
+        m_pullTimer.stop()
+        m_generator.stop()
+        m_audioOutput.stop()
+        m_device _ m_deviceBox.itemData(index)
 
-        self.createAudioOutput()
+        createAudioOutput()
 
     ___ volumeChanged  value):
-        __ self.m_audioOutput __ no. N..:
-            self.m_audioOutput.setVolume(value / 100.0)
+        __ m_audioOutput __ no. N..:
+            m_audioOutput.setVolume(value / 100.0)
 
-    ___ notified(self):
+    ___ notified
         qWarning("bytesFree = %d, elapsedUSecs = %d, processedUSecs = %d" % (
-                self.m_audioOutput.bytesFree(),
-                self.m_audioOutput.elapsedUSecs(),
-                self.m_audioOutput.processedUSecs()))
+                m_audioOutput.bytesFree(),
+                m_audioOutput.elapsedUSecs(),
+                m_audioOutput.processedUSecs()))
 
-    ___ pullTimerExpired(self):
-        __ self.m_audioOutput __ no. N.. and self.m_audioOutput.state() !_ QAudio.StoppedState:
-            chunks _ self.m_audioOutput.bytesFree() // self.m_audioOutput.periodSize()
-            for _ in range(chunks):
-                data _ self.m_generator.read(self.m_audioOutput.periodSize())
-                __ data __ N.. or le.(data) !_ self.m_audioOutput.periodSize
+    ___ pullTimerExpired
+        __ m_audioOutput __ no. N.. and m_audioOutput.state() !_ QAudio.StoppedState:
+            chunks _ m_audioOutput.bytesFree() // m_audioOutput.periodSize()
+            ___ _ __ range(chunks):
+                data _ m_generator.read(m_audioOutput.periodSize())
+                __ data __ N.. or le.(data) !_ m_audioOutput.periodSize
                     break
 
-                self.m_output.w..(data)
+                m_output.w..(data)
 
-    ___ toggleMode(self):
-        self.m_pullTimer.stop()
-        self.m_audioOutput.stop()
+    ___ toggleMode
+        m_pullTimer.stop()
+        m_audioOutput.stop()
 
-        __ self.m_pullMode:
-            self.m_modeButton.sT..(self.PULL_MODE_LABEL)
-            self.m_output _ self.m_audioOutput.start()
-            self.m_pullMode _ False
-            self.m_pullTimer.start(20)
+        __ m_pullMode:
+            m_modeButton.sT..(PULL_MODE_LABEL)
+            m_output _ m_audioOutput.start()
+            m_pullMode _ False
+            m_pullTimer.start(20)
         ____
-            self.m_modeButton.sT..(self.PUSH_MODE_LABEL)
-            self.m_pullMode _ True
-            self.m_audioOutput.start(self.m_generator)
+            m_modeButton.sT..(PUSH_MODE_LABEL)
+            m_pullMode _ True
+            m_audioOutput.start(m_generator)
 
-        self.m_suspendResumeButton.sT..(self.SUSPEND_LABEL)
+        m_suspendResumeButton.sT..(SUSPEND_LABEL)
 
-    ___ toggleSuspendResume(self):
-        __ self.m_audioOutput.state() == QAudio.SuspendedState:
+    ___ toggleSuspendResume
+        __ m_audioOutput.state() == QAudio.SuspendedState:
             qWarning("status: Suspended, resume()")
-            self.m_audioOutput.resume()
-            self.m_suspendResumeButton.sT..(self.SUSPEND_LABEL)
-        ____ self.m_audioOutput.state() == QAudio.ActiveState:
+            m_audioOutput.resume()
+            m_suspendResumeButton.sT..(SUSPEND_LABEL)
+        ____ m_audioOutput.state() == QAudio.ActiveState:
             qWarning("status: Active, suspend()")
-            self.m_audioOutput.suspend()
-            self.m_suspendResumeButton.sT..(self.RESUME_LABEL)
-        ____ self.m_audioOutput.state() == QAudio.StoppedState:
+            m_audioOutput.suspend()
+            m_suspendResumeButton.sT..(RESUME_LABEL)
+        ____ m_audioOutput.state() == QAudio.StoppedState:
             qWarning("status: Stopped, resume()")
-            self.m_audioOutput.resume()
-            self.m_suspendResumeButton.sT..(self.SUSPEND_LABEL)
-        ____ self.m_audioOutput.state() == QAudio.IdleState:
+            m_audioOutput.resume()
+            m_suspendResumeButton.sT..(SUSPEND_LABEL)
+        ____ m_audioOutput.state() == QAudio.IdleState:
             qWarning("status: IdleState")
 
     stateMap _ {
@@ -279,14 +279,14 @@ c_ AudioTest ?MW..
         QAudio.IdleState: "IdleState"}
 
     ___ handleStateChanged  state):
-        qWarning("state = " + self.stateMap.g..(state, "Unknown"))
+        qWarning("state = " + stateMap.g..(state, "Unknown"))
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     app.sAN..("Audio Output Test")
 
     audio _ AudioTest()

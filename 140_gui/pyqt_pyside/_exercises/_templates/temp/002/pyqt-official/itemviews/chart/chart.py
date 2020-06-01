@@ -56,36 +56,36 @@ ______ chart_rc
 
 
 c_ PieView(QAbstractItemView):
-    ___ __init__  parent_None):
-        super(PieView, self).__init__(parent)
+    ___  -   parent_None):
+        super(PieView, self). - (parent)
 
-        self.horizontalScrollBar().setRange(0, 0)
-        self.verticalScrollBar().setRange(0, 0)
+        horizontalScrollBar().setRange(0, 0)
+        verticalScrollBar().setRange(0, 0)
 
-        self.margin _ 8
-        self.totalSize _ 300
-        self.pieSize _ self.totalSize - 2*self.margin
-        self.validItems _ 0
-        self.totalValue _ 0.0
-        self.origin _ QPoint()
-        self.rubberBand _ N..
+        margin _ 8
+        totalSize _ 300
+        pieSize _ totalSize - 2*margin
+        validItems _ 0
+        totalValue _ 0.0
+        origin _ QPoint()
+        rubberBand _ N..
 
     ___ dataChanged  topLeft, bottomRight, roles):
         super(PieView, self).dataChanged(topLeft, bottomRight, roles)
 
-        self.validItems _ 0
-        self.totalValue _ 0.0
+        validItems _ 0
+        totalValue _ 0.0
 
-        for row in range(self.model().rowCount(self.rootIndex())):
+        ___ row __ range(model().rowCount(rootIndex())):
 
-            index _ self.model().index(row, 1, self.rootIndex())
-            value _ self.model().data(index)
+            index _ model().index(row, 1, rootIndex())
+            value _ model().data(index)
 
             __ value __ no. N.. and value > 0.0:
-                self.totalValue +_ value
-                self.validItems +_ 1
+                totalValue +_ value
+                validItems +_ 1
 
-        self.viewport().update()
+        viewport().update()
 
     ___ edit  index, trigger, event):
         __ index.column() == 0:
@@ -94,21 +94,21 @@ c_ PieView(QAbstractItemView):
             r_ False
 
     ___ indexAt  point):
-        __ self.validItems == 0:
+        __ validItems == 0:
             r_ QModelIndex()
 
         # Transform the view coordinates into contents widget coordinates.
-        wx _ point.x() + self.horizontalScrollBar().value()
-        wy _ point.y() + self.verticalScrollBar().value()
+        wx _ point.x() + horizontalScrollBar().value()
+        wy _ point.y() + verticalScrollBar().value()
 
-        __ wx < self.totalSize:
-            cx _ wx - self.totalSize/2
-            cy _ self.totalSize/2 - wy; # positive cy for items above the center
+        __ wx < totalSize:
+            cx _ wx - totalSize/2
+            cy _ totalSize/2 - wy; # positive cy for items above the center
 
             # Determine the distance from the center point of the pie chart.
             d _ (cx**2 + cy**2)**0.5
 
-            __ d == 0 or d > self.pieSize/2:
+            __ d == 0 or d > pieSize/2:
                 r_ QModelIndex()
 
             # Determine the angle of the point.
@@ -119,31 +119,31 @@ c_ PieView(QAbstractItemView):
             # Find the relevant slice of the pie.
             startAngle _ 0.0
 
-            for row in range(self.model().rowCount(self.rootIndex())):
+            ___ row __ range(model().rowCount(rootIndex())):
 
-                index _ self.model().index(row, 1, self.rootIndex())
-                value _ self.model().data(index)
+                index _ model().index(row, 1, rootIndex())
+                value _ model().data(index)
 
                 __ value > 0.0:
-                    sliceAngle _ 360*value/self.totalValue
+                    sliceAngle _ 360*value/totalValue
 
                     __ angle >_ startAngle and angle < (startAngle + sliceAngle):
-                        r_ self.model().index(row, 1, self.rootIndex())
+                        r_ model().index(row, 1, rootIndex())
 
                     startAngle +_ sliceAngle
 
         ____
-            itemHeight _ QFontMetrics(self.viewOptions().font).height()
-            listItem _ int((wy - self.margin) / itemHeight)
+            itemHeight _ QFontMetrics(viewOptions().font).height()
+            listItem _ int((wy - margin) / itemHeight)
             validRow _ 0
 
-            for row in range(self.model().rowCount(self.rootIndex())):
+            ___ row __ range(model().rowCount(rootIndex())):
 
-                index _ self.model().index(row, 1, self.rootIndex())
-                __ self.model().data(index) > 0.0:
+                index _ model().index(row, 1, rootIndex())
+                __ model().data(index) > 0.0:
 
                     __ listItem == validRow:
-                        r_ self.model().index(row, 0, self.rootIndex())
+                        r_ model().index(row, 0, rootIndex())
 
                     # Update the list index that corresponds to the next valid
                     # row.
@@ -162,26 +162,26 @@ c_ PieView(QAbstractItemView):
         # by slices.
 
         __ index.column() !_ 1:
-            valueIndex _ self.model().index(index.row(), 1, self.rootIndex())
+            valueIndex _ model().index(index.row(), 1, rootIndex())
         ____
             valueIndex _ index
 
-        value _ self.model().data(valueIndex)
+        value _ model().data(valueIndex)
         __ value __ no. N.. and value > 0.0:
 
             listItem _ 0
-            for row in range(index.row()-1, -1, -1):
-                __ self.model().data(self.model().index(row, 1, self.rootIndex())) > 0.0:
+            ___ row __ range(index.row()-1, -1, -1):
+                __ model().data(model().index(row, 1, rootIndex())) > 0.0:
                     listItem +_ 1
 
             __ index.column() == 0:
             
-                itemHeight _ QFontMetrics(self.viewOptions().font).height()
-                r_ QRect(self.totalSize,
-                             int(self.margin + listItem*itemHeight),
-                             self.totalSize - self.margin, int(itemHeight))
+                itemHeight _ QFontMetrics(viewOptions().font).height()
+                r_ QRect(totalSize,
+                             int(margin + listItem*itemHeight),
+                             totalSize - margin, int(itemHeight))
             ____ index.column() == 1:
-                r_ self.viewport().rect()
+                r_ viewport().rect()
 
         r_ QRect()
 
@@ -190,25 +190,25 @@ c_ PieView(QAbstractItemView):
             r_ QRegion()
 
         __ index.column() !_ 1:
-            r_ QRegion(self.itemRect(index))
+            r_ QRegion(itemRect(index))
 
-        __ self.model().data(index) <_ 0.0:
+        __ model().data(index) <_ 0.0:
             r_ QRegion()
 
         startAngle _ 0.0
-        for row in range(self.model().rowCount(self.rootIndex())):
+        ___ row __ range(model().rowCount(rootIndex())):
 
-            sliceIndex _ self.model().index(row, 1, self.rootIndex())
-            value _ self.model().data(sliceIndex)
+            sliceIndex _ model().index(row, 1, rootIndex())
+            value _ model().data(sliceIndex)
 
             __ value > 0.0:
-                angle _ 360*value/self.totalValue
+                angle _ 360*value/totalValue
 
                 __ sliceIndex == index:
                     slicePath _ QPainterPath()
-                    slicePath.moveTo(self.totalSize/2, self.totalSize/2)
-                    slicePath.arcTo(self.margin, self.margin,
-                            self.margin+self.pieSize, self.margin+self.pieSize,
+                    slicePath.moveTo(totalSize/2, totalSize/2)
+                    slicePath.arcTo(margin, margin,
+                            margin+pieSize, margin+pieSize,
                             startAngle, angle)
                     slicePath.closeSubpath()
 
@@ -218,59 +218,59 @@ c_ PieView(QAbstractItemView):
 
         r_ QRegion()
 
-    ___ horizontalOffset(self):
-        r_ self.horizontalScrollBar().value()
+    ___ horizontalOffset
+        r_ horizontalScrollBar().value()
 
     ___ mousePressEvent  event):
         super(PieView, self).mousePressEvent(event)
 
-        self.origin _ event.pos()
-        __ no. self.rubberBand:
-            self.rubberBand _ QRubberBand(QRubberBand.Rectangle, self)
-        self.rubberBand.setGeometry(QRect(self.origin, QSize()))
-        self.rubberBand.s..
+        origin _ event.pos()
+        __ no. rubberBand:
+            rubberBand _ QRubberBand(QRubberBand.Rectangle, self)
+        rubberBand.setGeometry(QRect(origin, QSize()))
+        rubberBand.s..
 
     ___ mouseMoveEvent  event):
-        __ self.rubberBand:
-            self.rubberBand.setGeometry(QRect(self.origin, event.pos()).normalized())
+        __ rubberBand:
+            rubberBand.setGeometry(QRect(origin, event.pos()).normalized())
 
         super(PieView, self).mouseMoveEvent(event)
 
     ___ mouseReleaseEvent  event):
         super(PieView, self).mouseReleaseEvent(event)
 
-        __ self.rubberBand:
-            self.rubberBand.hide()
+        __ rubberBand:
+            rubberBand.hide()
 
-        self.viewport().update()
+        viewport().update()
 
     ___ moveCursor  cursorAction, modifiers):
-        current _ self.currentIndex()
+        current _ currentIndex()
 
-        __ cursorAction in (QAbstractItemView.MoveLeft, QAbstractItemView.MoveUp):
+        __ cursorAction __ (QAbstractItemView.MoveLeft, QAbstractItemView.MoveUp):
 
             __ current.row() > 0:
-                current _ self.model().index(current.row() - 1,
-                        current.column(), self.rootIndex())
+                current _ model().index(current.row() - 1,
+                        current.column(), rootIndex())
             ____
-                current _ self.model().index(0, current.column(),
-                        self.rootIndex())
+                current _ model().index(0, current.column(),
+                        rootIndex())
 
-        ____ cursorAction in (QAbstractItemView.MoveRight, QAbstractItemView.MoveDown):
+        ____ cursorAction __ (QAbstractItemView.MoveRight, QAbstractItemView.MoveDown):
 
-            __ current.row() < self.rows(current) - 1:
-                current _ self.model().index(current.row() + 1,
-                        current.column(), self.rootIndex())
+            __ current.row() < rows(current) - 1:
+                current _ model().index(current.row() + 1,
+                        current.column(), rootIndex())
             ____
-                current _ self.model().index(self.rows(current) - 1,
-                        current.column(), self.rootIndex())
+                current _ model().index(rows(current) - 1,
+                        current.column(), rootIndex())
 
-        self.viewport().update()
+        viewport().update()
         r_ current
 
     ___ paintEvent  event):
-        selections _ self.selectionModel()
-        option _ self.viewOptions()
+        selections _ selectionModel()
+        option _ viewOptions()
         state _ option.state
 
         background _ option.palette.base()
@@ -278,44 +278,44 @@ c_ PieView(QAbstractItemView):
         textPen _ QPen(option.palette.color(?P...Text))
         highlightedPen _ QPen(option.palette.color(?P...HighlightedText))
 
-        painter _ QPainter(self.viewport())
+        painter _ QPainter(viewport())
         painter.setRenderHint(QPainter.Antialiasing)
 
         painter.fillRect(event.rect(), background)
         painter.setPen(foreground)
 
         # Viewport rectangles
-        pieRect _ QRect(self.margin, self.margin, self.pieSize,
-                self.pieSize)
-        keyPoint _ QPoint(self.totalSize - self.horizontalScrollBar().value(),
-                self.margin - self.verticalScrollBar().value())
+        pieRect _ QRect(margin, margin, pieSize,
+                pieSize)
+        keyPoint _ QPoint(totalSize - horizontalScrollBar().value(),
+                margin - verticalScrollBar().value())
 
-        __ self.validItems > 0:
+        __ validItems > 0:
             painter.save()
-            painter.translate(pieRect.x() - self.horizontalScrollBar().value(),
-                    pieRect.y() - self.verticalScrollBar().value())
-            painter.drawEllipse(0, 0, self.pieSize, self.pieSize)
+            painter.translate(pieRect.x() - horizontalScrollBar().value(),
+                    pieRect.y() - verticalScrollBar().value())
+            painter.drawEllipse(0, 0, pieSize, pieSize)
             startAngle _ 0.0
 
-            for row in range(self.model().rowCount(self.rootIndex())):
+            ___ row __ range(model().rowCount(rootIndex())):
 
-                index _ self.model().index(row, 1, self.rootIndex())
-                value _ self.model().data(index)
+                index _ model().index(row, 1, rootIndex())
+                value _ model().data(index)
 
                 __ value > 0.0:
-                    angle _ 360*value/self.totalValue
+                    angle _ 360*value/totalValue
 
-                    colorIndex _ self.model().index(row, 0, self.rootIndex())
-                    color _ self.model().data(colorIndex, __.DecorationRole)
+                    colorIndex _ model().index(row, 0, rootIndex())
+                    color _ model().data(colorIndex, __.DecorationRole)
 
-                    __ self.currentIndex() == index:
+                    __ currentIndex() == index:
                         painter.setBrush(QBrush(color, __.Dense4Pattern))
                     ____ selections.isSelected(index):
                         painter.setBrush(QBrush(color, __.Dense3Pattern))
                     ____
                         painter.setBrush(QBrush(color))
 
-                    painter.drawPie(0, 0, self.pieSize, self.pieSize,
+                    painter.drawPie(0, 0, pieSize, pieSize,
                             int(startAngle*16), int(angle*16))
 
                     startAngle +_ angle
@@ -324,89 +324,89 @@ c_ PieView(QAbstractItemView):
 
             keyNumber _ 0
 
-            for row in range(self.model().rowCount(self.rootIndex())):
-                index _ self.model().index(row, 1, self.rootIndex())
-                value _ self.model().data(index)
+            ___ row __ range(model().rowCount(rootIndex())):
+                index _ model().index(row, 1, rootIndex())
+                value _ model().data(index)
 
                 __ value > 0.0:
-                    labelIndex _ self.model().index(row, 0, self.rootIndex())
+                    labelIndex _ model().index(row, 0, rootIndex())
 
-                    option _ self.viewOptions()
-                    option.rect _ self.visualRect(labelIndex)
+                    option _ viewOptions()
+                    option.rect _ visualRect(labelIndex)
                     __ selections.isSelected(labelIndex):
                         option.state |_ QStyle.State_Selected
-                    __ self.currentIndex() == labelIndex:
+                    __ currentIndex() == labelIndex:
                         option.state |_ QStyle.State_HasFocus
-                    self.itemDelegate().paint(painter, option, labelIndex)
+                    itemDelegate().paint(painter, option, labelIndex)
 
                     keyNumber +_ 1
 
     ___ resizeEvent  event):
-        self.updateGeometries()
+        updateGeometries()
 
     ___ rows  index):
-        r_ self.model().rowCount(self.model().parent(index))
+        r_ model().rowCount(model().parent(index))
 
     ___ rowsInserted  parent, start, end):
-        for row in range(start, end + 1):
-            index _ self.model().index(row, 1, self.rootIndex())
-            value _ self.model().data(index)
+        ___ row __ range(start, end + 1):
+            index _ model().index(row, 1, rootIndex())
+            value _ model().data(index)
 
             __ value __ no. N.. and value > 0.0:
-                self.totalValue +_ value
-                self.validItems +_ 1
+                totalValue +_ value
+                validItems +_ 1
 
         super(PieView, self).rowsInserted(parent, start, end)
 
     ___ rowsAboutToBeRemoved  parent, start, end):
-        for row in range(start, end + 1):
-            index _ self.model().index(row, 1, self.rootIndex())
-            value _ self.model().data(index)
+        ___ row __ range(start, end + 1):
+            index _ model().index(row, 1, rootIndex())
+            value _ model().data(index)
 
             __ value __ no. N.. and value > 0.0:
-                self.totalValue -_ value
-                self.validItems -_ 1
+                totalValue -_ value
+                validItems -_ 1
 
         super(PieView, self).rowsAboutToBeRemoved(parent, start, end)
 
     ___ scrollContentsBy  dx, dy):
-        self.viewport().scroll(dx, dy)
+        viewport().scroll(dx, dy)
 
     ___ scrollTo  index, ScrollHint):
-        area _ self.viewport().rect()
-        rect _ self.visualRect(index)
+        area _ viewport().rect()
+        rect _ visualRect(index)
 
         __ rect.left() < area.left
-            self.horizontalScrollBar().setValue(
-                self.horizontalScrollBar().value() + rect.left() - area.left())
+            horizontalScrollBar().setValue(
+                horizontalScrollBar().value() + rect.left() - area.left())
         ____ rect.right() > area.right
-            self.horizontalScrollBar().setValue(
-                self.horizontalScrollBar().value() + min(
+            horizontalScrollBar().setValue(
+                horizontalScrollBar().value() + min(
                     rect.right() - area.right(), rect.left() - area.left()))
 
         __ rect.top() < area.top
-            self.verticalScrollBar().setValue(
-                self.verticalScrollBar().value() + rect.top() - area.top())
+            verticalScrollBar().setValue(
+                verticalScrollBar().value() + rect.top() - area.top())
         ____ rect.bottom() > area.bottom
-            self.verticalScrollBar().setValue(
-                self.verticalScrollBar().value() + min(
+            verticalScrollBar().setValue(
+                verticalScrollBar().value() + min(
                     rect.bottom() - area.bottom(), rect.top() - area.top()))
 
     ___ setSelection  rect, command):
         # Use content widget coordinates because we will use the itemRegion()
         # function to check for intersections.
 
-        contentsRect _ rect.translated(self.horizontalScrollBar().value(),
-                self.verticalScrollBar().value()).normalized()
+        contentsRect _ rect.translated(horizontalScrollBar().value(),
+                verticalScrollBar().value()).normalized()
 
-        rows _ self.model().rowCount(self.rootIndex())
-        columns _ self.model().columnCount(self.rootIndex())
+        rows _ model().rowCount(rootIndex())
+        columns _ model().columnCount(rootIndex())
         indexes _   # list
 
-        for row in range(rows):
-            for column in range(columns):
-                index _ self.model().index(row, column, self.rootIndex())
-                region _ self.itemRegion(index)
+        ___ row __ range(rows):
+            ___ column __ range(columns):
+                index _ model().index(row, column, rootIndex())
+                region _ itemRegion(index)
                 __ region.intersects(QRegion(contentsRect)):
                     indexes.ap..(index)
 
@@ -416,37 +416,37 @@ c_ PieView(QAbstractItemView):
             firstColumn _ indexes[0].column()
             lastColumn _ indexes[0].column()
 
-            for i in range(1, le.(indexes)):
+            ___ i __ range(1, le.(indexes)):
                 firstRow _ min(firstRow, indexes[i].row())
                 lastRow _ max(lastRow, indexes[i].row())
                 firstColumn _ min(firstColumn, indexes[i].column())
                 lastColumn _ max(lastColumn, indexes[i].column())
 
             selection _ QItemSelection(
-                self.model().index(firstRow, firstColumn, self.rootIndex()),
-                self.model().index(lastRow, lastColumn, self.rootIndex()))
-            self.selectionModel().select(selection, command)
+                model().index(firstRow, firstColumn, rootIndex()),
+                model().index(lastRow, lastColumn, rootIndex()))
+            selectionModel().select(selection, command)
         ____
             noIndex _ QModelIndex()
             selection _ QItemSelection(noIndex, noIndex)
-            self.selectionModel().select(selection, command)
+            selectionModel().select(selection, command)
 
-        self.update()
+        update()
 
-    ___ updateGeometries(self):
-        self.horizontalScrollBar().setPageStep(self.viewport().width())
-        self.horizontalScrollBar().setRange(0, max(0, 2*self.totalSize - self.viewport().width()))
-        self.verticalScrollBar().setPageStep(self.viewport().height())
-        self.verticalScrollBar().setRange(0, max(0, self.totalSize - self.viewport().height()))
+    ___ updateGeometries
+        horizontalScrollBar().setPageStep(viewport().width())
+        horizontalScrollBar().setRange(0, max(0, 2*totalSize - viewport().width()))
+        verticalScrollBar().setPageStep(viewport().height())
+        verticalScrollBar().setRange(0, max(0, totalSize - viewport().height()))
 
-    ___ verticalOffset(self):
-        r_ self.verticalScrollBar().value()
+    ___ verticalOffset
+        r_ verticalScrollBar().value()
 
     ___ visualRect  index):
-        rect _ self.itemRect(index)
+        rect _ itemRect(index)
         __ rect.isValid
-            r_ QRect(rect.left() - self.horizontalScrollBar().value(),
-                         rect.top() - self.verticalScrollBar().value(),
+            r_ QRect(rect.left() - horizontalScrollBar().value(),
+                         rect.top() - verticalScrollBar().value(),
                          rect.width(), rect.height())
         ____
             r_ rect
@@ -454,18 +454,18 @@ c_ PieView(QAbstractItemView):
     ___ visualRegionForSelection  selection):
         region _ QRegion()
 
-        for span in selection:
-            for row in range(span.top(), span.bottom() + 1):
-                for col in range(span.left(), span.right() + 1):
-                    index _ self.model().index(row, col, self.rootIndex())
-                    region +_ self.visualRect(index)
+        ___ span __ selection:
+            ___ row __ range(span.top(), span.bottom() + 1):
+                ___ col __ range(span.left(), span.right() + 1):
+                    index _ model().index(row, col, rootIndex())
+                    region +_ visualRect(index)
 
         r_ region
 
 
 c_ MainWindow ?MW..
-    ___ __init__(self):
-        super(MainWindow, self).__init__()
+    ___  - 
+        super(MainWindow, self). - ()
 
         fileMenu _ QMenu("&File", self)
         openAction _ fileMenu.aA..("&Open...")
@@ -475,45 +475,45 @@ c_ MainWindow ?MW..
         quitAction _ fileMenu.aA..("E&xit")
         quitAction.sS..("Ctrl+Q")
 
-        self.setupModel()
-        self.setupViews()
+        setupModel()
+        setupViews()
 
-        openAction.t__.c..(self.openFile)
-        saveAction.t__.c..(self.saveFile)
+        openAction.t__.c..(openFile)
+        saveAction.t__.c..(saveFile)
         quitAction.t__.c..(?A...instance().quit)
 
-        self.mB.. .aM..(fileMenu)
-        self.statusBar()
+        mB.. .aM..(fileMenu)
+        statusBar()
 
-        self.openFile(':/Charts/qtdata.cht')
+        openFile(':/Charts/qtdata.cht')
 
-        self.setWindowTitle("Chart")
-        self.resize(870, 550)
+        setWindowTitle("Chart")
+        resize(870, 550)
 
-    ___ setupModel(self):
-        self.model _ QStandardItemModel(8, 2, self)
-        self.model.setHeaderData(0, __.Horizontal, "Label")
-        self.model.setHeaderData(1, __.Horizontal, "Quantity")
+    ___ setupModel
+        model _ QStandardItemModel(8, 2, self)
+        model.setHeaderData(0, __.Horizontal, "Label")
+        model.setHeaderData(1, __.Horizontal, "Quantity")
 
-    ___ setupViews(self):
+    ___ setupViews
         splitter _ QSplitter()
         table _ QTableView()
-        self.pieChart _ PieView()
+        pieChart _ PieView()
         splitter.aW..(table)
-        splitter.aW..(self.pieChart)
+        splitter.aW..(pieChart)
         splitter.setStretchFactor(0, 0)
         splitter.setStretchFactor(1, 1)
 
-        table.sM..(self.model)
-        self.pieChart.sM..(self.model)
+        table.sM..(model)
+        pieChart.sM..(model)
 
-        self.selectionModel _ QItemSelectionModel(self.model)
-        table.setSelectionModel(self.selectionModel)
-        self.pieChart.setSelectionModel(self.selectionModel)
+        selectionModel _ QItemSelectionModel(model)
+        table.setSelectionModel(selectionModel)
+        pieChart.setSelectionModel(selectionModel)
 
         table.horizontalHeader().setStretchLastSection(True)
 
-        self.sCW..(splitter)
+        sCW..(splitter)
 
     ___ openFile  path_None):
         __ no. path:
@@ -526,29 +526,29 @@ c_ MainWindow ?MW..
             __ f.o..(QFile.ReadOnly | QFile.Text):
                 stream _ QTextStream(f)
 
-                self.model.removeRows(0, self.model.rowCount(QModelIndex()),
+                model.removeRows(0, model.rowCount(QModelIndex()),
                         QModelIndex())
 
                 row _ 0
                 line _ stream.readLine()
                 w__ line:
-                    self.model.insertRows(row, 1, QModelIndex())
+                    model.insertRows(row, 1, QModelIndex())
 
                     pieces _ line.split(',')
-                    self.model.setData(self.model.index(row, 0, QModelIndex()),
+                    model.setData(model.index(row, 0, QModelIndex()),
                                 pieces[0])
-                    self.model.setData(self.model.index(row, 1, QModelIndex()),
+                    model.setData(model.index(row, 1, QModelIndex()),
                                 float(pieces[1]))
-                    self.model.setData(self.model.index(row, 0, QModelIndex()),
+                    model.setData(model.index(row, 0, QModelIndex()),
                                 ?C..(pieces[2]), __.DecorationRole)
 
                     row +_ 1
                     line _ stream.readLine()
 
                 f.close()
-                self.statusBar().showMessage("Loaded %s" % path, 2000)
+                statusBar().showMessage("Loaded %s" % path, 2000)
 
-    ___ saveFile(self):
+    ___ saveFile
         fileName, _ _ ?FD...getSaveFileName  "Save file as", '',
                 '*.cht')
 
@@ -556,34 +556,34 @@ c_ MainWindow ?MW..
             f _ QFile(fileName)
 
             __ f.o..(QFile.WriteOnly | QFile.Text):
-                for row in range(self.model.rowCount(QModelIndex())):
+                ___ row __ range(model.rowCount(QModelIndex())):
                     pieces _   # list
 
                     pieces.ap..(
-                            self.model.data(
-                                    self.model.index(row, 0, QModelIndex()),
+                            model.data(
+                                    model.index(row, 0, QModelIndex()),
                                     __.DisplayRole))
                     pieces.ap..(
-                            '%g' % self.model.data(
-                                    self.model.index(row, 1, QModelIndex()),
+                            '%g' % model.data(
+                                    model.index(row, 1, QModelIndex()),
                                     __.DisplayRole))
                     pieces.ap..(
-                            self.model.data(
-                                    self.model.index(row, 0, QModelIndex()),
+                            model.data(
+                                    model.index(row, 0, QModelIndex()),
                                     __.DecorationRole).name())
 
-                    f.w..(b','.join([p.encode('utf-8') for p in pieces]))
+                    f.w..(b','.join([p.encode('utf-8') ___ p __ pieces]))
                     f.w..(b'\n')
 
             f.close()
-            self.statusBar().showMessage("Saved %s" % fileName, 2000)
+            statusBar().showMessage("Saved %s" % fileName, 2000)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     window _ MainWindow()
     window.s..
     ___.exit(app.exec_())

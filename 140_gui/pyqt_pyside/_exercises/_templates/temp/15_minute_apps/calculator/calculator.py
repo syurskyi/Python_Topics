@@ -12,99 +12,99 @@ INPUT _ 1
 
 
 c_ MainWindow(QMainWindow, Ui_MainWindow):
-    ___ __init__  *args, **kwargs):
-        super(MainWindow, self).__init__(*args, **kwargs)
-        self.setupUi(self)
+    ___  -   *args, **kwargs):
+        super(MainWindow, self). - (*args, **kwargs)
+        setupUi
 
         # Setup numbers.
-        for n in range(0, 10):
-            getattr  'pushButton_n%s' % n).pressed.c..(lambda v_n: self.input_number(v))
+        ___ n __ range(0, 10):
+            getattr  'pushButton_n%s' % n).pressed.c..(lambda v_n: input_number(v))
 
         # Setup operations.
-        self.pushButton_add.pressed.c..(lambda: self.operation(operator.add))
-        self.pushButton_sub.pressed.c..(lambda: self.operation(operator.sub))
-        self.pushButton_mul.pressed.c..(lambda: self.operation(operator.mul))
-        self.pushButton_div.pressed.c..(lambda: self.operation(operator.truediv))  # operator.div for Python2.7
+        pushButton_add.pressed.c..(lambda: operation(operator.add))
+        pushButton_sub.pressed.c..(lambda: operation(operator.sub))
+        pushButton_mul.pressed.c..(lambda: operation(operator.mul))
+        pushButton_div.pressed.c..(lambda: operation(operator.truediv))  # operator.div for Python2.7
 
-        self.pushButton_pc.pressed.c..(self.operation_pc)
-        self.pushButton_eq.pressed.c..(self.equals)
+        pushButton_pc.pressed.c..(operation_pc)
+        pushButton_eq.pressed.c..(equals)
 
         # Setup actions
-        self.actionReset.t__.c..(self.reset)
-        self.pushButton_ac.pressed.c..(self.reset)
+        actionReset.t__.c..(reset)
+        pushButton_ac.pressed.c..(reset)
 
-        self.actionExit.t__.c..(self.close)
+        actionExit.t__.c..(close)
 
-        self.pushButton_m.pressed.c..(self.memory_store)
-        self.pushButton_mr.pressed.c..(self.memory_recall)
+        pushButton_m.pressed.c..(memory_store)
+        pushButton_mr.pressed.c..(memory_recall)
 
-        self.memory _ 0
-        self.reset()
+        memory _ 0
+        reset()
 
-        self.s..
+        s..
 
-    ___ display(self):
-        self.lcdNumber.display(self.stack[-1])
+    ___ display
+        lcdNumber.display(stack[-1])
 
-    ___ reset(self):
-        self.state _ READY
-        self.stack _ [0]
-        self.last_operation _ N..
-        self.current_op _ N..
-        self.display()
+    ___ reset
+        state _ READY
+        stack _ [0]
+        last_operation _ N..
+        current_op _ N..
+        display()
 
-    ___ memory_store(self):
-        self.memory _ self.lcdNumber.value()
+    ___ memory_store
+        memory _ lcdNumber.value()
 
-    ___ memory_recall(self):
-        self.state _ INPUT
-        self.stack[-1] _ self.memory
-        self.display()
+    ___ memory_recall
+        state _ INPUT
+        stack[-1] _ memory
+        display()
 
     ___ input_number  v):
-        __ self.state == READY:
-            self.state _ INPUT
-            self.stack[-1] _ v
+        __ state == READY:
+            state _ INPUT
+            stack[-1] _ v
         ____
-            self.stack[-1] _ self.stack[-1] * 10 + v
+            stack[-1] _ stack[-1] * 10 + v
 
-        self.display()
+        display()
 
     ___ operation  op):
-        __ self.current_op:  # Complete the current operation
-            self.equals()
+        __ current_op:  # Complete the current operation
+            equals()
 
-        self.stack.ap..(0)
-        self.state _ INPUT
-        self.current_op _ op
+        stack.ap..(0)
+        state _ INPUT
+        current_op _ op
 
-    ___ operation_pc(self):
-        self.state _ INPUT
-        self.stack[-1] *_ 0.01
-        self.display()
+    ___ operation_pc
+        state _ INPUT
+        stack[-1] *_ 0.01
+        display()
 
-    ___ equals(self):
+    ___ equals
         # Support to allow '=' to repeat previous operation
         # if no further input has been added.
-        __ self.state == READY and self.last_operation:
-            s, self.current_op _ self.last_operation
-            self.stack.ap..(s)
+        __ state == READY and last_operation:
+            s, current_op _ last_operation
+            stack.ap..(s)
 
-        __ self.current_op:
-            self.last_operation _ self.stack[-1], self.current_op
+        __ current_op:
+            last_operation _ stack[-1], current_op
 
             try:
-                self.stack _ [self.current_op(*self.stack)]
+                stack _ [current_op(*stack)]
             except Exception:
-                self.lcdNumber.display('Err')
-                self.stack _ [0]
+                lcdNumber.display('Err')
+                stack _ [0]
             ____
-                self.current_op _ N..
-                self.state _ READY
-                self.display()
+                current_op _ N..
+                state _ READY
+                display()
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
     app _ ?
     app.sAN..("Calculon")
 

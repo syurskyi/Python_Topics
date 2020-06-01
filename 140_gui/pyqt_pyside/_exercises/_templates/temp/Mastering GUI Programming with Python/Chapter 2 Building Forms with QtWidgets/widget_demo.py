@@ -7,28 +7,28 @@ ____ ? ______ ?C.. __ qtc
 c_ ChoiceSpinBox(qtw.QSpinBox):
     """A spinbox for selecting choices."""
 
-    ___ __init__  choices, *args, **kwargs):
-        self.choices _ choices
-        super().__init__(
+    ___  -   choices, *args, **kwargs):
+        choices _ choices
+        s_. - (
             *args,
-            maximum_len(self.choices) - 1,
+            maximum_len(choices) - 1,
             minimum_0,
             **kwargs
         )
 
     ___ valueFromText  t__):
-        r_ self.choices.index(t__)
+        r_ choices.index(t__)
 
     ___ textFromValue  value):
         try:
-            r_ self.choices[value]
+            r_ choices[value]
         except IndexError:
             r_ '!Error!'
 
     ___ validate  string, index):
-        __ string in self.choices:
+        __ string __ choices:
             state _ qtg.QValidator.Acceptable
-        ____ any([v.startswith(string) for v in self.choices]):
+        ____ any([v.startswith(string) ___ v __ choices]):
             state _ qtg.QValidator.Intermediate
         ____
             state _ qtg.QValidator.Invalid
@@ -41,24 +41,24 @@ c_ IPv4Validator(qtg.QValidator):
         octets _ string.split('.')
         __ le.(octets) > 4:
             state _ qtg.QValidator.Invalid
-        ____ no. all([x.isdigit() for x in octets __ x !_ '']):
+        ____ no. all([x.isdigit() ___ x __ octets __ x !_ '']):
             state _ qtg.QValidator.Invalid
-        ____ no. all([0 <_ int(x) <_ 255 for x in octets __ x !_ '']):
+        ____ no. all([0 <_ int(x) <_ 255 ___ x __ octets __ x !_ '']):
             state _ qtg.QValidator.Invalid
         ____ le.(octets) < 4:
             state _ qtg.QValidator.Intermediate
-        ____ any([x == '' for x in octets]):
+        ____ any([x == '' ___ x __ octets]):
             state _ qtg.QValidator.Intermediate
         ____
             state _ qtg.QValidator.Acceptable
         r_ (state, string, index)
 
 
-c_ MainWindow(qtw.QWidget):
+c_ MainWindow ?.?W..
 
-    ___ __init__(self):
+    ___  - 
         """MainWindow constructor"""
-        super().__init__(windowTitle_'Qt Widget demo')
+        s_. - (windowTitle_'Qt Widget demo')
 
         #########################
         # Create widget objects #
@@ -73,7 +73,7 @@ c_ MainWindow(qtw.QWidget):
         label _ qtw.QLabel('<b>Hello Widgets!</b>', self, margin_10)
 
         # QLineEdit
-        line_edit _ qtw.QLineEdit(
+        line_edit _ ?.?LE..(
             'default value',
             self,
             placeholderText_'Type here',
@@ -140,14 +140,14 @@ c_ MainWindow(qtw.QWidget):
 
         # Add widget objects to a layout
         layout _ qtw.?VBL..
-        self.sL..(layout)
+        sL..(layout)
 
         layout.aW..(label)
         layout.aW..(line_edit)
 
         # Add a layout to a layout
         sublayout _ qtw.QHBoxLayout()
-        layout.addLayout(sublayout)
+        layout.aL..(sublayout)
 
         sublayout.aW..(button)
         sublayout.aW..(combobox)
@@ -155,8 +155,8 @@ c_ MainWindow(qtw.QWidget):
 
         # create a container widget
 
-        container _ qtw.QWidget(self)
-        grid_layout _ qtw.QGridLayout()
+        container _ qtw.QWidget
+        grid_layout _ ?.?GL..
         #layout.addLayout(grid_layout)
         container.sL..(grid_layout)
 
@@ -173,9 +173,9 @@ c_ MainWindow(qtw.QWidget):
         # QFormLayout
 
         form_layout _ qtw.QFormLayout()
-        layout.addLayout(form_layout)
-        form_layout.addRow('Item 1', qtw.QLineEdit(self))
-        form_layout.addRow('Item 2', qtw.QLineEdit(self))
+        layout.aL..(form_layout)
+        form_layout.addRow('Item 1', ?.?LE..(self))
+        form_layout.addRow('Item 2', ?.?LE..(self))
         form_layout.addRow(qtw.QLabel('<b>This is a label-only row</b>'))
 
         ################
@@ -191,10 +191,10 @@ c_ MainWindow(qtw.QWidget):
         line_edit.setMaximumSize(300, 30)
 
         # set the spinbox to a fixed width
-        spinbox.setSizePolicy(qtw.QSizePolicy.Fixed, qtw.QSizePolicy.Preferred)
+        spinbox.sSP..(qtw.QSizePolicy.Fixed, qtw.QSizePolicy.Preferred)
 
         # set the textedit to expand
-        textedit.setSizePolicy(
+        textedit.sSP..(
             qtw.QSizePolicy.MinimumExpanding,
             qtw.QSizePolicy.MinimumExpanding
         )
@@ -203,9 +203,9 @@ c_ MainWindow(qtw.QWidget):
         # use stretch factor
 
         stretch_layout _ qtw.QHBoxLayout()
-        layout.addLayout(stretch_layout)
-        stretch_layout.aW..(qtw.QLineEdit('Short'), 1)
-        stretch_layout.aW..(qtw.QLineEdit('Long'), 2)
+        layout.aL..(stretch_layout)
+        stretch_layout.aW..(?.?LE..('Short'), 1)
+        stretch_layout.aW..(?.?LE..('Long'), 2)
 
         #############################
         # Container Widgets         #
@@ -247,10 +247,10 @@ c_ MainWindow(qtw.QWidget):
 
         ratingbox _ ChoiceSpinBox(['bad', 'average', 'good', 'awesome'], self)
         sublayout.aW..(ratingbox)
-        self.s..
+        s..
 
-__ __name__ == '__main__':
-    app _ qtw.?A..(___.argv)
+__ ______ __ ______
+    app _ qtw.?A..(___.a..
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()

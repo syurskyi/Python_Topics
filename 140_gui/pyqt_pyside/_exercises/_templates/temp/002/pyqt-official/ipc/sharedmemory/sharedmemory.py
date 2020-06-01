@@ -68,20 +68,20 @@ c_ Dialog(QDialog):
     appropriate for handling each button.
     """
 
-    ___ __init__  parent _ N..):
-        super(Dialog, self).__init__(parent)
+    ___  -   parent _ N..):
+        super(Dialog, self). - (parent)
 
-        self.sharedMemory _ QSharedMemory('QSharedMemoryExample')
+        sharedMemory _ QSharedMemory('QSharedMemoryExample')
 
-        self.ui _ Ui_Dialog()
-        self.ui.setupUi(self)
+        ui _ Ui_Dialog()
+        ui.setupUi
 
-        self.ui.loadFromFileButton.c__.c..(self.loadFromFile)
-        self.ui.loadFromSharedMemoryButton.c__.c..(self.loadFromMemory)
+        ui.loadFromFileButton.c__.c..(loadFromFile)
+        ui.loadFromSharedMemoryButton.c__.c..(loadFromMemory)
 
-        self.setWindowTitle("SharedMemory Example")
+        setWindowTitle("SharedMemory Example")
 
-    ___ loadFromFile(self):
+    ___ loadFromFile 
         """ This slot function is called when the "Load Image From File..."
         button is pressed on the firs Dialog process.  First, it tests whether
         the process is already connected to a shared memory segment and, if so,
@@ -100,19 +100,19 @@ c_ Dialog(QDialog):
         Shared Memory" button on the second Dialog process.
         """
 
-        __ self.sharedMemory.isAttached
-            self.detach()
+        __ sharedMemory.isAttached
+            detach()
 
-        self.ui.label.sT..("Select an image file")
+        ui.label.sT..("Select an image file")
         fileName, _ _ ?FD...gOFN..  N.., N..,
                 "Images (*.png *.xpm *.jpg)")
         image _ QImage()
         __ no. image.load(fileName):
-            self.ui.label.sT..(
+            ui.label.sT..(
                     "Selected file is not an image, please select another.")
             r_
 
-        self.ui.label.setPixmap(QPixmap.fromImage(image))
+        ui.label.setPixmap(QPixmap.fromImage(image))
 
         # Load into shared memory.
         buf _ QBuffer()
@@ -121,18 +121,18 @@ c_ Dialog(QDialog):
         out << image
         size _ buf.size()
 
-        __ no. self.sharedMemory.create(size):
-            self.ui.label.sT..("Unable to create shared memory segment.")
+        __ no. sharedMemory.create(size):
+            ui.label.sT..("Unable to create shared memory segment.")
             r_
 
-        size _ min(self.sharedMemory.size(), size)
-        self.sharedMemory.lock()
+        size _ min(sharedMemory.size(), size)
+        sharedMemory.lock()
 
         # Copy image data from buf into shared memory area.
-        self.sharedMemory.data()[:size] _ buf.data()[:size]
-        self.sharedMemory.unlock()
+        sharedMemory.data()[:size] _ buf.data()[:size]
+        sharedMemory.unlock()
 
-    ___ loadFromMemory(self):
+    ___ loadFromMemory 
         """ This slot function is called in the second Dialog process, when the
         user presses the "Load Image from Shared Memory" button.  First, it
         attaches the process to the shared memory segment created by the first
@@ -142,8 +142,8 @@ c_ Dialog(QDialog):
         from it, and finally displays the QImage in the Dialog.
         """
 
-        __ no. self.sharedMemory.attach
-            self.ui.label.sT..(
+        __ no. sharedMemory.attach
+            ui.label.sT..(
                     "Unable to attach to shared memory segment.\nLoad an "
                     "image first.")
             r_
@@ -152,30 +152,30 @@ c_ Dialog(QDialog):
         ins _ QDataStream(buf)
         image _ QImage()
 
-        self.sharedMemory.lock()
-        buf.setData(self.sharedMemory.constData())
+        sharedMemory.lock()
+        buf.setData(sharedMemory.constData())
         buf.o..(QBuffer.ReadOnly)
         ins >> image
-        self.sharedMemory.unlock()
-        self.sharedMemory.detach()
+        sharedMemory.unlock()
+        sharedMemory.detach()
 
-        self.ui.label.setPixmap(QPixmap.fromImage(image))
+        ui.label.setPixmap(QPixmap.fromImage(image))
 
-    ___ detach(self):
+    ___ detach 
         """ This private function is called by the destructor to detach the
         process from its shared memory segment.  When the last process detaches
         from a shared memory segment, the system releases the shared memory.
         """
 
-        __ no. self.sharedMemory.detach
-            self.ui.label.sT..("Unable to detach from shared memory.")
+        __ no. sharedMemory.detach
+            ui.label.sT..("Unable to detach from shared memory.")
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     dialog _ Dialog()
     dialog.s..
     ___.exit(app.exec_())

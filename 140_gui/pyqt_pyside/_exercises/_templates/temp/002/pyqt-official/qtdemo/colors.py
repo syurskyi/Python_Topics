@@ -156,17 +156,17 @@ c_ Colors(object):
     @classmethod
     ___ debug(cls, *args):
         __ cls.verbose:
-            ___.stderr.w..("%s\n" % " ".join([str(arg) for arg in args]))
+            ___.stderr.w..("%s\n" % " ".join([str(arg) ___ arg __ args]))
 
     @classmethod
-    ___ parseArgs(cls, argv):
+    ___ parseArgs(cls, a..:
         # Some arguments should be processed before others.  Handle them now.
-        __ "-verbose" in argv:
+        __ "-verbose" __ argv:
             cls.verbose _ True
 
         # Handle the rest of the arguments.  They may override attributes
         # already set.
-        for s in argv:
+        ___ s __ argv:
             __ s == "-no-ticker":
                 cls.noTicker _ True
             ____ s.startswith("-ticker"):

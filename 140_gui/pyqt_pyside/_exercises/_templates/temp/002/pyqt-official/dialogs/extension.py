@@ -49,8 +49,8 @@ ____ ?.?W.. ______ (?A.., QCheckBox, QDialog,
 
 
 c_ FindDialog(QDialog):
-    ___ __init__  parent_None):
-        super(FindDialog, self).__init__(parent)
+    ___  -   parent_None):
+        super(FindDialog, self). - (parent)
 
         label _ QLabel("Find &what:")
         lineEdit _ ?LE..
@@ -91,27 +91,27 @@ c_ FindDialog(QDialog):
         topLeftLayout.aW..(lineEdit)
 
         leftLayout _ ?VBL..
-        leftLayout.addLayout(topLeftLayout)
+        leftLayout.aL..(topLeftLayout)
         leftLayout.aW..(caseCheckBox)
         leftLayout.aW..(fromStartCheckBox)
 
         mainLayout _ QGridLayout()
         mainLayout.setSizeConstraint(QLayout.SetFixedSize)
-        mainLayout.addLayout(leftLayout, 0, 0)
+        mainLayout.aL..(leftLayout, 0, 0)
         mainLayout.aW..(buttonBox, 0, 1)
         mainLayout.aW..(extension, 1, 0, 1, 2)
         mainLayout.setRowStretch(2, 1)
-        self.sL..(mainLayout)
+        sL..(mainLayout)
 
-        self.setWindowTitle("Extension")
+        setWindowTitle("Extension")
         extension.hide()
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     dialog _ FindDialog()
     dialog.s..
     ___.exit(app.exec_())

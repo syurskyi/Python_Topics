@@ -51,73 +51,73 @@ ____ ?.QtNetwork ______ QLocalSocket
 
 
 c_ Client(QDialog):
-    ___ __init__  parent_None):
-        super(Client, self).__init__(parent)
+    ___  -   parent_None):
+        super(Client, self). - (parent)
 
-        self.blockSize _ 0
-        self.currentFortune _ N..
+        blockSize _ 0
+        currentFortune _ N..
 
         hostLabel _ QLabel("&Server name:")
-        self.hostLineEdit _ QLineEdit("fortune")
-        hostLabel.setBuddy(self.hostLineEdit)
+        hostLineEdit _ QLineEdit("fortune")
+        hostLabel.setBuddy(hostLineEdit)
 
-        self.statusLabel _ QLabel(
+        statusLabel _ QLabel(
                 "This examples requires that you run the Fortune Server "
                 "example as well.")
-        self.statusLabel.setWordWrap(True)
+        statusLabel.setWordWrap(True)
 
-        self.getFortuneButton _ ?PB..("Get Fortune")
-        self.getFortuneButton.setDefault(True)
+        getFortuneButton _ ?PB..("Get Fortune")
+        getFortuneButton.setDefault(True)
 
         quitButton _ ?PB..("Quit")
         buttonBox _ QDialogButtonBox()
-        buttonBox.addButton(self.getFortuneButton, QDialogButtonBox.ActionRole)
+        buttonBox.addButton(getFortuneButton, QDialogButtonBox.ActionRole)
         buttonBox.addButton(quitButton, QDialogButtonBox.RejectRole)
 
-        self.socket _ QLocalSocket()
+        socket _ QLocalSocket()
 
-        self.hostLineEdit.textChanged.c..(self.enableGetFortuneButton)
-        self.getFortuneButton.c__.c..(self.requestNewFortune)
-        quitButton.c__.c..(self.close)
-        self.socket.readyRead.c..(self.readFortune)
-        self.socket.error.c..(self.displayError)
+        hostLineEdit.textChanged.c..(enableGetFortuneButton)
+        getFortuneButton.c__.c..(requestNewFortune)
+        quitButton.c__.c..(close)
+        socket.readyRead.c..(readFortune)
+        socket.error.c..(displayError)
 
         mainLayout _ QGridLayout()
         mainLayout.aW..(hostLabel, 0, 0)
-        mainLayout.aW..(self.hostLineEdit, 0, 1)
-        mainLayout.aW..(self.statusLabel, 2, 0, 1, 2)
+        mainLayout.aW..(hostLineEdit, 0, 1)
+        mainLayout.aW..(statusLabel, 2, 0, 1, 2)
         mainLayout.aW..(buttonBox, 3, 0, 1, 2)
-        self.sL..(mainLayout)
+        sL..(mainLayout)
 
-        self.setWindowTitle("Fortune Client")
-        self.hostLineEdit.setFocus()
+        setWindowTitle("Fortune Client")
+        hostLineEdit.setFocus()
 
-    ___ requestNewFortune(self):
-        self.getFortuneButton.setEnabled F..
-        self.blockSize _ 0
-        self.socket.abort()
-        self.socket.connectToServer(self.hostLineEdit.t__())
+    ___ requestNewFortune
+        getFortuneButton.setEnabled F..
+        blockSize _ 0
+        socket.abort()
+        socket.connectToServer(hostLineEdit.t__())
 
-    ___ readFortune(self):
-        ins _ QDataStream(self.socket)
+    ___ readFortune
+        ins _ QDataStream(socket)
         ins.setVersion(QDataStream.Qt_4_0)
 
-        __ self.blockSize == 0:
-            __ self.socket.bytesAvailable() < 2:
+        __ blockSize == 0:
+            __ socket.bytesAvailable() < 2:
                 r_
-            self.blockSize _ ins.readUInt16()
+            blockSize _ ins.readUInt16()
 
         __ ins.atEnd
             r_
 
         nextFortune _ ins.readQString()
-        __ nextFortune == self.currentFortune:
-            QTimer.singleShot(0, self.requestNewFortune)
+        __ nextFortune == currentFortune:
+            QTimer.singleShot(0, requestNewFortune)
             r_
  
-        self.currentFortune _ nextFortune
-        self.statusLabel.sT..(self.currentFortune)
-        self.getFortuneButton.setEnabled(True)
+        currentFortune _ nextFortune
+        statusLabel.sT..(currentFortune)
+        getFortuneButton.setEnabled(True)
 
     ___ displayError  socketError):
         errors _ {
@@ -135,21 +135,21 @@ c_ Client(QDialog):
         }
 
         msg _ errors.g..(socketError,
-                "The following error occurred: %s." % self.socket.errorString())
+                "The following error occurred: %s." % socket.errorString())
         __ msg __ no. N..:
             ?MB...information  "Fortune Client", msg)
 
-        self.getFortuneButton.setEnabled(True)
+        getFortuneButton.setEnabled(True)
 
-    ___ enableGetFortuneButton(self):
-        self.getFortuneButton.setEnabled(self.hostLineEdit.t__() !_ "")
+    ___ enableGetFortuneButton
+        getFortuneButton.setEnabled(hostLineEdit.t__() !_ "")
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     client _ Client()
     client.s..
     ___.exit(app.exec_())

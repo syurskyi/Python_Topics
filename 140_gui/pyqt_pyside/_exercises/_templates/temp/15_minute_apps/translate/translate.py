@@ -86,27 +86,27 @@ LANGUAGES = {
 
 class MainWindow(QMainWindow, Ui_MainWindow):
 
-    def __init__(self, *args, **kwargs):
-        super(MainWindow, self).__init__(*args, **kwargs)
-        self.setupUi(self)
+    def  - (self, *args, **kwargs):
+        super(MainWindow, self). - (*args, **kwargs)
+        setupUi
 
-        self.translator = Translator()
+        translator = Translator()
 
-        self.destTextEdit.setReadOnly(True)
+        destTextEdit.setReadOnly(True)
 
         if GOOGLE_TRANSLATE_AVAILABLE:
-            self.srcLanguage.addItems(LANGUAGES.keys())
-            self.srcLanguage.currentTextChanged[str].connect(self.update_src_language)
-            self.srcLanguage.setCurrentText('English')
+            srcLanguage.addItems(LANGUAGES.keys())
+            srcLanguage.currentTextChanged[str].connect(update_src_language)
+            srcLanguage.setCurrentText('English')
         else:
-            self.srcLanguage.hide()
+            srcLanguage.hide()
 
-        self.translateButton.pressed.connect(self.translate)
+        translateButton.pressed.connect(translate)
 
-        self.show()
+        show()
 
     def update_src_language(self, l):
-        self.language_src = LANGUAGES[l]
+        language_src = LANGUAGES[l]
 
     def google_translate(self, text):
         params = dict(
@@ -114,29 +114,29 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             text=text
         )
 
-        if self.language_src:
-            params['src'] = self.language_src
+        if language_src:
+            params['src'] = language_src
 
         try:
-            tr = self.translator.translate(**params)
+            tr = translator.translate(**params)
 
         except Exception:
-            self.destTextEdit.setPlainText('Google translate error :(. Try translating from English')
+            destTextEdit.setPlainText('Google translate error :(. Try translating from English')
             return False
 
         else:
             return tr.text
 
-    def translate(self):
+    def translate
         # Perform pre-translation to English via Google Translate.
-        if self.language_src != 'en':
-            text = self.google_translate(self.srcTextEdit.toPlainText())
+        if language_src != 'en':
+            text = google_translate(srcTextEdit.toPlainText())
             if not text:
                 return False
 
         # Already in English.
         else:
-            text = self.srcTextEdit.toPlainText()
+            text = srcTextEdit.toPlainText()
 
         # Perform translation to piraat.
         r = requests.get(
@@ -145,10 +145,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         )
 
         data = json.loads(r.text)
-        if 'error' in data:
-            self.destTextEdit.setPlainText("%s\n\n%s" % (data['error']['message'], text))
+        if 'error' __ data:
+            destTextEdit.setPlainText("%s\n\n%s" % (data['error']['message'], text))
         else:
-            self.destTextEdit.setPlainText(data['contents']['translated'])
+            destTextEdit.setPlainText(data['contents']['translated'])
 
 
 

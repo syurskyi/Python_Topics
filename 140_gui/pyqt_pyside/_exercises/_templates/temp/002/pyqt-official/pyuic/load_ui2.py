@@ -47,18 +47,18 @@ ____ ?.uic ______ loadUi
 
 
 c_ DemoImpl(QDialog):
-    ___ __init__  *args):
-        super(DemoImpl, self).__init__(*args)
+    ___  -   *args):
+        super(DemoImpl, self). - (*args)
 
         loadUi('demo.ui', self)
 
     @pyqtSlot()
-    ___ on_button1_clicked(self):
-        for s in "This is a demo".split(" "):
-            self.list.addItem(s)
+    ___ on_button1_clicked 
+        ___ s __ "This is a demo".split(" "):
+            list.addItem(s)
 
 
-app _ ?A..(___.argv)
+app _ ?A..(___.a..
 widget _ DemoImpl()
 widget.s..
 ___.exit(app.exec_())

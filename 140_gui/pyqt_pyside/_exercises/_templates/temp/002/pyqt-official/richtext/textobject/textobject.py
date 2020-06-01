@@ -70,16 +70,16 @@ c_ Window(QWidget):
 
     SvgData _ 1
 
-    ___ __init__(self):
-        super(Window, self).__init__()
+    ___  -
+        super(Window, self). - ()
 
-        self.setupGui()
-        self.setupTextObject()
+        setupGui()
+        setupTextObject()
 
-        self.setWindowTitle("Text Object Example")
+        setWindowTitle("Text Object Example")
 
-    ___ insertTextObject(self):
-        fileName _ self.fileNameLineEdit.t__()
+    ___ insertTextObject
+        fileName _ fileNameLineEdit.t__()
         file _ QFile(fileName)
 
         __ no. file.o..(QIODevice.ReadOnly):
@@ -99,41 +99,41 @@ c_ Window(QWidget):
             # Python v3.
             orc _ chr(0xfffc)
 
-        cursor _ self.textEdit.textCursor()
+        cursor _ textEdit.textCursor()
         cursor.insertText(orc, svgCharFormat)
-        self.textEdit.setTextCursor(cursor)
+        textEdit.setTextCursor(cursor)
 
-    ___ setupTextObject(self):
-        svgInterface _ SvgTextObject(self)
-        self.textEdit.document().documentLayout().registerHandler(Window.SvgTextFormat, svgInterface)
+    ___ setupTextObject
+        svgInterface _ SvgTextObject
+        textEdit.document().documentLayout().registerHandler(Window.SvgTextFormat, svgInterface)
 
-    ___ setupGui(self):
+    ___ setupGui
         fileNameLabel _ QLabel("Svg File Name:")
-        self.fileNameLineEdit _ ?LE..
+        fileNameLineEdit _ ?LE..
         insertTextObjectButton _ ?PB..("Insert Image")
 
-        self.fileNameLineEdit.sT..('./files/heart.svg')
-        insertTextObjectButton.c__.c..(self.insertTextObject)
+        fileNameLineEdit.sT..('./files/heart.svg')
+        insertTextObjectButton.c__.c..(insertTextObject)
 
         bottomLayout _ QHBoxLayout()
         bottomLayout.aW..(fileNameLabel)
-        bottomLayout.aW..(self.fileNameLineEdit)
+        bottomLayout.aW..(fileNameLineEdit)
         bottomLayout.aW..(insertTextObjectButton)
 
-        self.textEdit _ QTextEdit()
+        textEdit _ QTextEdit()
 
         mainLayout _ ?VBL..
-        mainLayout.aW..(self.textEdit)
-        mainLayout.addLayout(bottomLayout)
+        mainLayout.aW..(textEdit)
+        mainLayout.aL..(bottomLayout)
 
-        self.sL..(mainLayout)
+        sL..(mainLayout)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     window _ Window()
     window.s..
     ___.exit(app.exec_())

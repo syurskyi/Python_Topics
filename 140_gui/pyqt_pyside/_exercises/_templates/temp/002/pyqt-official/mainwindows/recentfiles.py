@@ -52,104 +52,104 @@ c_ MainWindow ?MW..
     MaxRecentFiles _ 5
     windowList _   # list
 
-    ___ __init__(self):
-        super(MainWindow, self).__init__()
+    ___  -  
+        super(MainWindow, self). - ()
 
-        self.recentFileActs _   # list
+        recentFileActs _   # list
 
-        self.setAttribute(__.WA_DeleteOnClose)
+        setAttribute(__.WA_DeleteOnClose)
 
-        self.textEdit _ QTextEdit()
-        self.sCW..(self.textEdit)
+        textEdit _ QTextEdit()
+        sCW..(textEdit)
 
-        self.createActions()
-        self.createMenus()
-        self.statusBar()
+        createActions()
+        createMenus()
+        statusBar()
 
-        self.setWindowTitle("Recent Files")
-        self.resize(400, 300)
+        setWindowTitle("Recent Files")
+        resize(400, 300)
 
-    ___ newFile(self):
+    ___ newFile 
         other _ MainWindow()
         MainWindow.windowList.ap..(other)
         other.s..
 
-    ___ o..(self):
-        fileName, _ _ ?FD...gOFN..(self)
+    ___ o.. 
+        fileName, _ _ ?FD...gOFN..
         __ fileName:
-            self.loadFile(fileName)
+            loadFile(fileName)
         	
-    ___ save(self):
-        __ self.curFile:
-            self.saveFile(self.curFile)
+    ___ save 
+        __ curFile:
+            saveFile(curFile)
         ____
-            self.saveAs()
+            saveAs()
 
-    ___ saveAs(self):
-        fileName, _ _ ?FD...getSaveFileName(self)
+    ___ saveAs 
+        fileName, _ _ ?FD...getSaveFileName
         __ fileName:
-            self.saveFile(fileName)
+            saveFile(fileName)
 
-    ___ openRecentFile(self):
-        action _ self.sender()
+    ___ openRecentFile 
+        action _ sender()
         __ action:
-            self.loadFile(action.data())
+            loadFile(action.data())
 
-    ___ about(self):
+    ___ about 
         ?MB...about  "About Recent Files",
                 "The <b>Recent Files</b> example demonstrates how to provide "
                 "a recently used file menu in a Qt application.")
 
-    ___ createActions(self):
-        self.newAct _ ?A..("&New", self, shortcut_QKeySequence.New,
+    ___ createActions 
+        newAct _ ?A..("&New", self, shortcut_QKeySequence.New,
                 statusTip_"Create a new file", triggered_self.newFile)
 
-        self.openAct _ ?A..("&Open...", self, shortcut_QKeySequence.Open,
+        openAct _ ?A..("&Open...", self, shortcut_QKeySequence.Open,
                 statusTip_"Open an existing file", triggered_self.o..)
 
-        self.saveAct _ ?A..("&Save", self, shortcut_QKeySequence.Save,
+        saveAct _ ?A..("&Save", self, shortcut_QKeySequence.Save,
                 statusTip_"Save the document to disk", triggered_self.save)
 
-        self.saveAsAct _ ?A..("Save &As...", self,
+        saveAsAct _ ?A..("Save &As...", self,
                 shortcut_QKeySequence.SaveAs,
                 statusTip_"Save the document under a new name",
                 triggered_self.saveAs)
 
-        for i in range(MainWindow.MaxRecentFiles):
-            self.recentFileActs.ap..(
+        ___ i __ range(MainWindow.MaxRecentFiles):
+            recentFileActs.ap..(
                     ?A..  visible_False,
                             triggered_self.openRecentFile))
 
-        self.exitAct _ ?A..("E&xit", self, shortcut_"Ctrl+Q",
+        exitAct _ ?A..("E&xit", self, shortcut_"Ctrl+Q",
                 statusTip_"Exit the application",
                 triggered_QApplication.instance().closeAllWindows)
 
-        self.aboutAct _ ?A..("&About", self,
+        aboutAct _ ?A..("&About", self,
                 statusTip_"Show the application's About box",
                 triggered_self.about)
 
-        self.aboutQtAct _ ?A..("About &Qt", self,
+        aboutQtAct _ ?A..("About &Qt", self,
                 statusTip_"Show the Qt library's About box",
                 triggered_QApplication.instance().aboutQt)
 
-    ___ createMenus(self):
-        self.fileMenu _ self.mB.. .aM..("&File")
-        self.fileMenu.aA..(self.newAct)
-        self.fileMenu.aA..(self.openAct)
-        self.fileMenu.aA..(self.saveAct)
-        self.fileMenu.aA..(self.saveAsAct)
-        self.separatorAct _ self.fileMenu.addSeparator()
-        for i in range(MainWindow.MaxRecentFiles):
-            self.fileMenu.aA..(self.recentFileActs[i])
-        self.fileMenu.addSeparator()
-        self.fileMenu.aA..(self.exitAct)
-        self.updateRecentFileActions()
+    ___ createMenus 
+        fileMenu _ mB.. .aM..("&File")
+        fileMenu.aA..(newAct)
+        fileMenu.aA..(openAct)
+        fileMenu.aA..(saveAct)
+        fileMenu.aA..(saveAsAct)
+        separatorAct _ fileMenu.addSeparator()
+        ___ i __ range(MainWindow.MaxRecentFiles):
+            fileMenu.aA..(recentFileActs[i])
+        fileMenu.addSeparator()
+        fileMenu.aA..(exitAct)
+        updateRecentFileActions()
 
-        self.mB.. .addSeparator()
+        mB.. .addSeparator()
 
-        self.helpMenu _ self.mB.. .aM..("&Help")
-        self.helpMenu.aA..(self.aboutAct)
-        self.helpMenu.aA..(self.aboutQtAct)
+        helpMenu _ mB.. .aM..("&Help")
+        helpMenu.aA..(aboutAct)
+        helpMenu.aA..(aboutQtAct)
 
     ___ loadFile  fileName):
         file _ QFile(fileName)
@@ -160,11 +160,11 @@ c_ MainWindow ?MW..
 
         instr _ QTextStream(file)
         ?A...setOverrideCursor(__.WaitCursor)
-        self.textEdit.sPT..(instr.readAll())
+        textEdit.sPT..(instr.readAll())
         ?A...restoreOverrideCursor()
 
-        self.setCurrentFile(fileName)
-        self.statusBar().showMessage("File loaded", 2000)
+        setCurrentFile(fileName)
+        statusBar().showMessage("File loaded", 2000)
 
     ___ saveFile  fileName):
         file _ QFile(fileName)
@@ -175,18 +175,18 @@ c_ MainWindow ?MW..
 
         outstr _ QTextStream(file)
         ?A...setOverrideCursor(__.WaitCursor)
-        outstr << self.textEdit.toPlainText()
+        outstr << textEdit.toPlainText()
         ?A...restoreOverrideCursor()
 
-        self.setCurrentFile(fileName)
-        self.statusBar().showMessage("File saved", 2000)
+        setCurrentFile(fileName)
+        statusBar().showMessage("File saved", 2000)
 
     ___ setCurrentFile  fileName):
-        self.curFile _ fileName
-        __ self.curFile:
-            self.setWindowTitle("%s - Recent Files" % self.strippedName(self.curFile))
+        curFile _ fileName
+        __ curFile:
+            setWindowTitle("%s - Recent Files" % strippedName(curFile))
         ____
-            self.setWindowTitle("Recent Files")
+            setWindowTitle("Recent Files")
 
         settings _ QSettings('Trolltech', 'Recent Files Example')
         files _ settings.value('recentFileList',   # list)
@@ -201,36 +201,36 @@ c_ MainWindow ?MW..
 
         settings.setValue('recentFileList', files)
 
-        for widget in ?A...topLevelWidgets
+        ___ widget __ ?A...topLevelWidgets
             __ isinstance(widget, MainWindow):
                 widget.updateRecentFileActions()
 
-    ___ updateRecentFileActions(self):
+    ___ updateRecentFileActions 
         settings _ QSettings('Trolltech', 'Recent Files Example')
         files _ settings.value('recentFileList',   # list)
 
         numRecentFiles _ min(le.(files), MainWindow.MaxRecentFiles)
 
-        for i in range(numRecentFiles):
-            t__ _ "&%d %s" % (i + 1, self.strippedName(files[i]))
-            self.recentFileActs[i].sT..(t__)
-            self.recentFileActs[i].setData(files[i])
-            self.recentFileActs[i].setVisible(True)
+        ___ i __ range(numRecentFiles):
+            t__ _ "&%d %s" % (i + 1, strippedName(files[i]))
+            recentFileActs[i].sT..(t__)
+            recentFileActs[i].setData(files[i])
+            recentFileActs[i].setVisible(True)
 
-        for j in range(numRecentFiles, MainWindow.MaxRecentFiles):
-            self.recentFileActs[j].setVisible F..
+        ___ j __ range(numRecentFiles, MainWindow.MaxRecentFiles):
+            recentFileActs[j].setVisible F..
 
-        self.separatorAct.setVisible((numRecentFiles > 0))
+        separatorAct.setVisible((numRecentFiles > 0))
 
     ___ strippedName  fullFileName):
         r_ QFileInfo(fullFileName).fileName()
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     mainWin _ MainWindow()
     mainWin.s..
     ___.exit(app.exec_())

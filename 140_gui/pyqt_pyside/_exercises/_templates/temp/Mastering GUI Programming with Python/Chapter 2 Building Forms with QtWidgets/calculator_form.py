@@ -1,49 +1,49 @@
-______ ___
-____ ? ______ ?W.. __ qtw
-____ ? ______ ?G.. __ qtg
-____ ? ______ ?C.. __ qtc
-
-c_ MainWindow(qtw.QWidget):
-
-    ___ __init__(self):
-        """MainWindow constructor.
-
-        This widget will be our main window.
-        We'll define all the UI components in here.
-        """
-        super().__init__()
-        # Main UI code goes here
-        self.sL..(qtw.QVBoxLayout())
-        lcd _ qtw.QLCDNumber(self)
-        self.layout().aW..(lcd)
-
-        history _ qtw.QLineEdit  placeholderText_'History')
-        self.layout().aW..(history)
-
-        button_texts _ [
-            'Clear', 'BackSpace', 'Mem', 'Mem Clear',
-            '1', '2', '3', '+',
-            '4', '5', '6', '-',
-            '7', '8', '9', '×',
-            '.', '0', '=', '÷'
-        ]
-        button_layout _ qtw.QGridLayout()
-        self.layout().addLayout(button_layout)
-        buttons _   # list
-        for num, button_text in enumerate(button_texts):
-            button _ qtw.?PB..(button_text, self)
-            button.setSizePolicy(qtw.QSizePolicy.Expanding, qtw.QSizePolicy.Expanding)
-            buttons.ap..(button)
-            row _ num // 4
-            column _ num % 4
-            button_layout.aW..(button, row, column)
-        # End main UI code
-        self.s..
-
-
-__ __name__ == '__main__':
-    app _ qtw.?A..(___.argv)
-    # it's required to save a reference to MainWindow.
-    # if it goes out of scope, it will be destroyed.
-    mw _ MainWindow()
-    ___.exit(app.exec())
+# ______ ___
+# ____ ? ______ ?W.. __ qtw
+# ____ ? ______ ?G.. __ qtg
+# ____ ? ______ ?C.. __ qtc
+#
+# c_ MainWindow ?.?W..
+#
+#     ___  -
+#         """MainWindow constructor.
+#
+#         This widget will be our main window.
+#         We'll define all the UI components in here.
+#         """
+#         s_. -
+#         # Main UI code goes here
+#         sL.. ?.?VBL..
+#         lcd _ ?.?LCDN..
+#         la__ .aW.. ?
+#
+#         history _ ?.?LE..  placeholderText_'History'
+#         la__ .aW.. ?
+#
+#         button_texts _ [
+#             'Clear', 'BackSpace', 'Mem', 'Mem Clear',
+#             '1', '2', '3', '+',
+#             '4', '5', '6', '-',
+#             '7', '8', '9', '×',
+#             '.', '0', '=', '÷'
+#         ]
+#         button_layout _ ?.?GL..
+#         la__ .aL.. ?
+#         buttons _   # list
+#         ___ num, button_text __ en.. b_t..
+#             button _ ?.?PB.. b_t..
+#             ?.sSP.. ?.?SP__.E.. ?.?SP__.E..
+#             ?.ap.. ?
+#             row _ n.. // 4
+#             column _ n.. % 4
+#             b_l__.aW.. ? ? ?
+#         # End main UI code
+#         s..
+#
+#
+# __ ______ __ ______
+#     app _ ?.?A.. ___.a..
+#     # it's required to save a reference to MainWindow.
+#     # if it goes out of scope, it will be destroyed.
+#     mw _ ?
+#     ___.e.. ?.e..

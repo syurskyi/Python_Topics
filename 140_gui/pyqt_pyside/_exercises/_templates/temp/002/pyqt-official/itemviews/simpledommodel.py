@@ -48,42 +48,42 @@ ____ ?.QtXml ______ QDomDocument
 
 
 c_ DomItem(object):
-    ___ __init__  node, row, parent_None):
-        self.domNode _ node
+    ___  -   node, row, parent_None):
+        domNode _ node
         # Record the item's location within its parent.
-        self.rowNumber _ row
-        self.parentItem _ parent
-        self.childItems _ {}
+        rowNumber _ row
+        parentItem _ parent
+        childItems _ {}
 
-    ___ node(self):
-        r_ self.domNode
+    ___ node
+        r_ domNode
 
-    ___ parent(self):
-        r_ self.parentItem
+    ___ parent
+        r_ parentItem
 
     ___ child  i):
-        __ i in self.childItems:
-            r_ self.childItems[i]
+        __ i __ childItems:
+            r_ childItems[i]
 
-        __ i >_ 0 and i < self.domNode.childNodes().count
-            childNode _ self.domNode.childNodes().item(i)
+        __ i >_ 0 and i < domNode.childNodes().count
+            childNode _ domNode.childNodes().item(i)
             childItem _ DomItem(childNode, i, self)
-            self.childItems[i] _ childItem
+            childItems[i] _ childItem
             r_ childItem
 
         r_ N..
 
-    ___ row(self):
-        r_ self.rowNumber
+    ___ row
+        r_ rowNumber
 
 
 c_ DomModel(QAbstractItemModel):
-    ___ __init__  document, parent_None):
-        super(DomModel, self).__init__(parent)
+    ___  -   document, parent_None):
+        super(DomModel, self). - (parent)
 
-        self.domDocument _ document
+        domDocument _ document
 
-        self.rootItem _ DomItem(self.domDocument, 0)
+        rootItem _ DomItem(domDocument, 0)
 
     ___ columnCount  parent):
         r_ 3
@@ -105,7 +105,7 @@ c_ DomModel(QAbstractItemModel):
             r_ node.nodeName()
         
         ____ index.column() == 1:
-            for i in range(0, attributeMap.count()):
+            ___ i __ range(0, attributeMap.count()):
                 attribute _ attributeMap.item(i)
                 attributes.ap..(attribute.nodeName() + '="' +
                                   attribute.nodeValue() + '"')
@@ -141,17 +141,17 @@ c_ DomModel(QAbstractItemModel):
         r_ N..
 
     ___ index  row, column, parent):
-        __ no. self.hasIndex(row, column, parent):
+        __ no. hasIndex(row, column, parent):
             r_ QModelIndex()
 
         __ no. parent.isValid
-            parentItem _ self.rootItem
+            parentItem _ rootItem
         ____
             parentItem _ parent.internalPointer()
 
         childItem _ parentItem.child(row)
         __ childItem:
-            r_ self.createIndex(row, column, childItem)
+            r_ createIndex(row, column, childItem)
         ____
             r_ QModelIndex()
 
@@ -162,17 +162,17 @@ c_ DomModel(QAbstractItemModel):
         childItem _ child.internalPointer()
         parentItem _ childItem.parent()
 
-        __ no. parentItem or parentItem == self.rootItem:
+        __ no. parentItem or parentItem == rootItem:
             r_ QModelIndex()
 
-        r_ self.createIndex(parentItem.row(), 0, parentItem)
+        r_ createIndex(parentItem.row(), 0, parentItem)
 
     ___ rowCount  parent):
         __ parent.column() > 0:
             r_ 0
 
         __ no. parent.isValid
-            parentItem _ self.rootItem
+            parentItem _ rootItem
         ____
             parentItem _ parent.internalPointer()
 
@@ -180,24 +180,24 @@ c_ DomModel(QAbstractItemModel):
 
 
 c_ MainWindow ?MW..
-    ___ __init__(self):
-        super(MainWindow, self).__init__()
+    ___  -
+        super(MainWindow, self). - ()
 
-        self.fileMenu _ self.mB.. .aM..("&File")
-        self.fileMenu.aA..("&Open...", self.openFile, "Ctrl+O")
-        self.fileMenu.aA..("E&xit", self.close, "Ctrl+Q")
+        fileMenu _ mB.. .aM..("&File")
+        fileMenu.aA..("&Open...", openFile, "Ctrl+O")
+        fileMenu.aA..("E&xit", close, "Ctrl+Q")
 
-        self.xmlPath _ ""
-        self.model _ DomModel(QDomDocument(), self)
-        self.view _ QTreeView(self)
-        self.view.sM..(self.model)
+        xmlPath _ ""
+        model _ DomModel(QDomDocument(), self)
+        view _ QTreeView
+        view.sM..(model)
 
-        self.sCW..(self.view)
-        self.setWindowTitle("Simple DOM Model")
+        sCW..(view)
+        setWindowTitle("Simple DOM Model")
 
-    ___ openFile(self):
+    ___ openFile
         filePath, _ _ ?FD...gOFN..  "Open File",
-                self.xmlPath, "XML files (*.xml);;HTML files (*.html);;"
+                xmlPath, "XML files (*.xml);;HTML files (*.html);;"
                 "SVG files (*.svg);;User Interface files (*.ui)")
 
         __ filePath:
@@ -206,18 +206,18 @@ c_ MainWindow ?MW..
                 document _ QDomDocument()
                 __ document.setContent(f):
                     newModel _ DomModel(document, self)
-                    self.view.sM..(newModel)
-                    self.model _ newModel
-                    self.xmlPath _ filePath
+                    view.sM..(newModel)
+                    model _ newModel
+                    xmlPath _ filePath
 
                 f.close()
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     window _ MainWindow()
     window.resize(640, 480)
     window.s..

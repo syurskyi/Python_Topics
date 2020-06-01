@@ -57,82 +57,82 @@ ____ ?.?W.. ______ ?A.., QHeaderView, QTableView
 
 
 c_ FreezeTableWidget(QTableView):
-    ___ __init__  model):
-        super(FreezeTableWidget, self).__init__()
-        self.sM..(model)
-        self.frozenTableView _ QTableView(self)
-        self.init()
-        self.horizontalHeader().sectionResized.c..(self.updateSectionWidth)
-        self.verticalHeader().sectionResized.c..(self.updateSectionHeight)
-        self.frozenTableView.verticalScrollBar().valueChanged.c..(
-            self.verticalScrollBar().setValue)
-        self.verticalScrollBar().valueChanged.c..(
-            self.frozenTableView.verticalScrollBar().setValue)
+    ___  -   model):
+        super(FreezeTableWidget, self). - ()
+        sM..(model)
+        frozenTableView _ QTableView
+        init()
+        horizontalHeader().sectionResized.c..(updateSectionWidth)
+        verticalHeader().sectionResized.c..(updateSectionHeight)
+        frozenTableView.verticalScrollBar().valueChanged.c..(
+            verticalScrollBar().setValue)
+        verticalScrollBar().valueChanged.c..(
+            frozenTableView.verticalScrollBar().setValue)
 
-    ___ init(self):
-        self.frozenTableView.sM..(self.model())
-        self.frozenTableView.sFP..(__.NF..)
-        self.frozenTableView.verticalHeader().hide()
-        self.frozenTableView.horizontalHeader().setSectionResizeMode(
+    ___ init
+        frozenTableView.sM..(model())
+        frozenTableView.sFP..(__.NF..)
+        frozenTableView.verticalHeader().hide()
+        frozenTableView.horizontalHeader().setSectionResizeMode(
                 QHeaderView.Fixed)
-        self.viewport().stackUnder(self.frozenTableView)
+        viewport().stackUnder(frozenTableView)
 
-        self.frozenTableView.setStyleSheet('''
+        frozenTableView.setStyleSheet('''
             QTableView { border: none;
                          background-color: #8EDE21;
                          selection-background-color: #999;
             }''') # for demo purposes
 
-        self.frozenTableView.setSelectionModel(self.selectionModel())
-        for col in range(1, self.model().columnCount()):
-            self.frozenTableView.setColumnHidden(col, True)
-        self.frozenTableView.setColumnWidth(0, self.columnWidth(0))
-        self.frozenTableView.setHorizontalScrollBarPolicy(__.ScrollBarAlwaysOff)
-        self.frozenTableView.setVerticalScrollBarPolicy(__.ScrollBarAlwaysOff)
-        self.frozenTableView.s..
-        self.updateFrozenTableGeometry()
-        self.setHorizontalScrollMode(self.ScrollPerPixel)
-        self.setVerticalScrollMode(self.ScrollPerPixel)
-        self.frozenTableView.setVerticalScrollMode(self.ScrollPerPixel)
+        frozenTableView.setSelectionModel(selectionModel())
+        ___ col __ range(1, model().columnCount()):
+            frozenTableView.setColumnHidden(col, True)
+        frozenTableView.setColumnWidth(0, columnWidth(0))
+        frozenTableView.setHorizontalScrollBarPolicy(__.ScrollBarAlwaysOff)
+        frozenTableView.setVerticalScrollBarPolicy(__.ScrollBarAlwaysOff)
+        frozenTableView.s..
+        updateFrozenTableGeometry()
+        setHorizontalScrollMode(ScrollPerPixel)
+        setVerticalScrollMode(ScrollPerPixel)
+        frozenTableView.setVerticalScrollMode(ScrollPerPixel)
 
     ___ updateSectionWidth  logicalIndex, oldSize, newSize):
-        __ self.logicalIndex == 0:
-            self.frozenTableView.setColumnWidth(0, newSize)
-            self.updateFrozenTableGeometry()
+        __ logicalIndex == 0:
+            frozenTableView.setColumnWidth(0, newSize)
+            updateFrozenTableGeometry()
 
     ___ updateSectionHeight  logicalIndex, oldSize, newSize):
-        self.frozenTableView.setRowHeight(logicalIndex, newSize)
+        frozenTableView.setRowHeight(logicalIndex, newSize)
 
     ___ resizeEvent  event):
         super(FreezeTableWidget, self).resizeEvent(event)
-        self.updateFrozenTableGeometry()
+        updateFrozenTableGeometry()
 
     ___ moveCursor  cursorAction, modifiers):
         current _ super(FreezeTableWidget, self).moveCursor(cursorAction, modifiers)
-        __ (cursorAction == self.MoveLeft and
-                self.current.column() > 0 and
-                self.visualRect(current).topLeft().x() <
-                    self.frozenTableView.columnWidth(0)):
-            newValue _ (self.horizontalScrollBar().value() +
-                        self.visualRect(current).topLeft().x() -
-                        self.frozenTableView.columnWidth(0))
-            self.horizontalScrollBar().setValue(newValue)
+        __ (cursorAction == MoveLeft and
+                current.column() > 0 and
+                visualRect(current).topLeft().x() <
+                    frozenTableView.columnWidth(0)):
+            newValue _ (horizontalScrollBar().value() +
+                        visualRect(current).topLeft().x() -
+                        frozenTableView.columnWidth(0))
+            horizontalScrollBar().setValue(newValue)
         r_ current
 
     ___ scrollTo  index, hint):
         __ index.column() > 0:
             super(FreezeTableWidget, self).scrollTo(index, hint)
 
-    ___ updateFrozenTableGeometry(self):
-        self.frozenTableView.setGeometry(
-                self.verticalHeader().width() + self.frameWidth(),
-                self.frameWidth(), self.columnWidth(0),
-                self.viewport().height() + self.horizontalHeader().height())
+    ___ updateFrozenTableGeometry
+        frozenTableView.setGeometry(
+                verticalHeader().width() + frameWidth(),
+                frameWidth(), columnWidth(0),
+                viewport().height() + horizontalHeader().height())
 
 
 ___ main(args):
     ___ split_and_strip(s, splitter):
-        r_ [s.strip() for s in line.split(splitter)]
+        r_ [s.strip() ___ s __ line.split(splitter)]
 
     app _ ?A..(args)
     model _ QStandardItemModel()
@@ -144,9 +144,9 @@ ___ main(args):
         row _ 0
         w__ file.canReadLine
             line _ file.readLine(200).decode('utf-8')
-            __ no. line.startswith('#') and ',' in line:
+            __ no. line.startswith('#') and ',' __ line:
                 fields _ split_and_strip(line, ',')
-                for col, field in enumerate(fields):
+                ___ col, field __ en..(fields):
                     newItem _ QStandardItem(field)
                     model.setItem(row, col, newItem)
                 row +_ 1
@@ -158,6 +158,6 @@ ___ main(args):
     r_ app.e..
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
     ______ ___
-    main(___.argv)
+    main(___.a..

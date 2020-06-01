@@ -8,40 +8,40 @@ ______ resources
 
 c_ SoundButton(qtw.?PB..):
 
-    ___ __init__  wav_file, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.wav_file _ wav_file
-        self.player _ qtmm.QSoundEffect()
-        self.player.setSource(qtc.QUrl.fromLocalFile(wav_file))
-        self.c__.c..(self.player.play)
+    ___  -   wav_file, *args, **kwargs):
+        s_. - (*args, **kwargs)
+        wav_file _ wav_file
+        player _ qtmm.QSoundEffect()
+        player.setSource(qtc.QUrl.fromLocalFile(wav_file))
+        c__.c..(player.play)
 
 
 c_ MainWindow(qtw.QMainWindow):
 
-    ___ __init__(self):
+    ___  -
         """MainWindow constructor.
 
         This widget will be our main window.
         We'll define all the UI components in here.
         """
-        super().__init__()
+        s_. - ()
         # Main UI code goes here
         dialpad _ qtw.?W..
-        self.sCW..(dialpad)
+        sCW..(dialpad)
         dialpad.sL..(qtw.QGridLayout())
 
-        for i, symbol in enumerate('123456789*0#'):
+        ___ i, symbol __ en..('123456789*0#'):
             button _ SoundButton(f':/dtmf/{symbol}.wav', symbol)
             row _ i // 3
             column _ i % 3
             dialpad.layout().aW..(button, row, column)
 
         # End main UI code
-        self.s..
+        s..
 
 
-__ __name__ == '__main__':
-    app _ qtw.?A..(___.argv)
+__ ______ __ ______
+    app _ qtw.?A..(___.a..
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()

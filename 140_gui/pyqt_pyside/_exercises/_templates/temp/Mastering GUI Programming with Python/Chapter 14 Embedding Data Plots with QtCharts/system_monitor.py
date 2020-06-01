@@ -12,11 +12,11 @@ c_ DiskUsageChartView(qtch.QChartView):
 
     chart_title _ 'Disk Usage by Partition'
 
-    ___ __init__(self):
-        super().__init__()
+    ___  -
+        s_. - ()
         # Create chart
         chart _ qtch.QChart(title_self.chart_title)
-        self.setChart(chart)
+        setChart(chart)
 
         # Create series
         series _ qtch.QBarSeries()
@@ -28,8 +28,8 @@ c_ DiskUsageChartView(qtch.QChartView):
 
         # Get the data
         partitions _   # list
-        for part in psutil.disk_partitions
-            __ 'rw' in part.opts.split(','):
+        ___ part __ psutil.disk_partitions
+            __ 'rw' __ part.opts.split(','):
                 partitions.ap..(part.device)
                 usage _ psutil.disk_usage(part.mountpoint).percent
                 bar_set.ap..(usage)
@@ -53,58 +53,58 @@ c_ CPUUsageView(qtch.QChartView):
     num_data_points _ 500
     chart_title _ "CPU Utilization"
 
-    ___ __init__(self):
-        super().__init__()
+    ___  -
+        s_. - ()
 
         # create chart
         chart _ qtch.QChart(title_self.chart_title)
-        self.setChart(chart)
+        setChart(chart)
 
         # series
-        self.series _ qtch.QSplineSeries(name_"Percentage")
-        chart.addSeries(self.series)
+        series _ qtch.QSplineSeries(name_"Percentage")
+        chart.addSeries(series)
 
         # Create data container
-        self.data _ deque(
-            [0] * self.num_data_points, maxlen_self.num_data_points)
-        self.series.ap..([
+        data _ deque(
+            [0] * num_data_points, maxlen_self.num_data_points)
+        series.ap..([
             qtc.QPoint(x, y)
-            for x, y in enumerate(self.data)
+            ___ x, y __ en..(data)
         ])
 
         # CPU Axes
         x_axis _ qtch.QValueAxis()
-        x_axis.setRange(0, self.num_data_points)
+        x_axis.setRange(0, num_data_points)
         x_axis.setLabelsVisible F..
         y_axis _ qtch.QValueAxis()
         y_axis.setRange(0, 100)
-        chart.setAxisX(x_axis, self.series)
-        chart.setAxisY(y_axis, self.series)
+        chart.setAxisX(x_axis, series)
+        chart.setAxisY(y_axis, series)
 
         # Appearance tweaks
-        self.setRenderHint(qtg.QPainter.Antialiasing)
+        setRenderHint(qtg.QPainter.Antialiasing)
 
         # configure timer
-        self.timer _ qtc.QTimer(
+        timer _ qtc.QTimer(
             interval_200, timeout_self.refresh_stats)
-        self.timer.start()
+        timer.start()
 
-    ___ refresh_stats(self):
+    ___ refresh_stats
         usage _ psutil.cpu_percent()
-        self.data.ap..(usage)
+        data.ap..(usage)
         new_data _ [
             qtc.QPoint(x, y)
-            for x, y in enumerate(self.data)]
-        self.series.replace(new_data)
+            ___ x, y __ en..(data)]
+        series.replace(new_data)
 
     ___ keyPressEvent  event):
         keymap _ {
-            qtc.__.Key_Up: lambda: self.chart().scroll(0, -10),
-            qtc.__.Key_Down: lambda: self.chart().scroll(0, 10),
-            qtc.__.Key_Right: lambda: self.chart().scroll(-10, 0),
-            qtc.__.Key_Left: lambda: self.chart().scroll(10, 0),
-            qtc.__.Key_Greater: self.chart().zoomIn,
-            qtc.__.Key_Less: self.chart().zoomOut,
+            qtc.__.Key_Up: lambda: chart().scroll(0, -10),
+            qtc.__.Key_Down: lambda: chart().scroll(0, 10),
+            qtc.__.Key_Right: lambda: chart().scroll(-10, 0),
+            qtc.__.Key_Left: lambda: chart().scroll(10, 0),
+            qtc.__.Key_Greater: chart().zoomIn,
+            qtc.__.Key_Less: chart().zoomOut,
         }
         callback _ keymap.g..(event.key())
         __ callback:
@@ -116,8 +116,8 @@ c_ MemoryChartView(qtch.QChartView):
     chart_title _ "Memory Usage"
     num_data_points _ 50
 
-    ___ __init__(self):
-        super().__init__()
+    ___  -
+        s_. - ()
 
         ################
         # Create Chart #
@@ -125,27 +125,27 @@ c_ MemoryChartView(qtch.QChartView):
 
         # Create qchart object
         chart _ qtch.QChart(title_self.chart_title)
-        self.setChart(chart)
+        setChart(chart)
 
         # Setup series
         series _ qtch.QStackedBarSeries()
         chart.addSeries(series)
-        self.phys_set _ qtch.QBarSet("Physical")
-        self.swap_set _ qtch.QBarSet("Swap")
-        series.ap..(self.phys_set)
-        series.ap..(self.swap_set)
+        phys_set _ qtch.QBarSet("Physical")
+        swap_set _ qtch.QBarSet("Swap")
+        series.ap..(phys_set)
+        series.ap..(swap_set)
 
         # Setup Data
-        self.data _ deque(
-            [(0, 0)] * self.num_data_points,
+        data _ deque(
+            [(0, 0)] * num_data_points,
             maxlen_self.num_data_points)
-        for phys, swap in self.data:
-            self.phys_set.ap..(phys)
-            self.swap_set.ap..(swap)
+        ___ phys, swap __ data:
+            phys_set.ap..(phys)
+            swap_set.ap..(swap)
 
         # Setup Axes
         x_axis _ qtch.QValueAxis()
-        x_axis.setRange(0, self.num_data_points)
+        x_axis.setRange(0, num_data_points)
         x_axis.setLabelsVisible F..
         y_axis _ qtch.QValueAxis()
         y_axis.setRange(0, 100)
@@ -153,9 +153,9 @@ c_ MemoryChartView(qtch.QChartView):
         chart.setAxisY(y_axis, series)
 
         # Start refresh timer
-        self.timer _ qtc.QTimer(
+        timer _ qtc.QTimer(
             interval_1000, timeout_self.refresh_stats)
-        self.timer.start()
+        timer.start()
 
         ###################
         # Style the chart #
@@ -220,32 +220,32 @@ c_ MemoryChartView(qtch.QChartView):
         legend.setMarkerShape(qtch.QLegend.MarkerShapeCircle)
 
 
-    ___ refresh_stats(self):
+    ___ refresh_stats
         phys _ psutil.virtual_memory()
         swap _ psutil.swap_memory()
         total_mem _ phys.total + swap.total
         phys_pct _ (phys.used / total_mem) * 100
         swap_pct _ (swap.used / total_mem) * 100
 
-        self.data.ap..(
+        data.ap..(
             (phys_pct, swap_pct))
-        for x, (phys, swap) in enumerate(self.data):
-            self.phys_set.replace(x, phys)
-            self.swap_set.replace(x, swap)
+        ___ x, (phys, swap) __ en..(data):
+            phys_set.replace(x, phys)
+            swap_set.replace(x, swap)
 
 
 c_ MainWindow(qtw.QMainWindow):
 
-    ___ __init__(self):
+    ___  -
         """MainWindow constructor.
 
         This widget will be our main window.
         We'll define all the UI components in here.
         """
-        super().__init__()
+        s_. - ()
         # Main UI code goes here
         tabs _ qtw.QTabWidget()
-        self.sCW..(tabs)
+        sCW..(tabs)
 
         #########################################
         # Partition Usage as a static bar chart #
@@ -268,12 +268,12 @@ c_ MainWindow(qtw.QMainWindow):
         tabs.addTab(cpu_time_view, "Memory Usage")
 
         # End main UI code
-        self.s..
+        s..
 
 
 
-__ __name__ == '__main__':
-    app _ qtw.?A..(___.argv)
+__ ______ __ ______
+    app _ qtw.?A..(___.a..
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()

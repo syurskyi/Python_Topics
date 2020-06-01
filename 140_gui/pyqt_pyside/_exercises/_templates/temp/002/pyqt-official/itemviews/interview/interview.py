@@ -62,26 +62,26 @@ images_dir _ QFileInfo(__file__).absolutePath() + '/images'
 
 
 c_ Node(object):
-    ___ __init__  parent _ N..):
-        self.parent _ parent
-        self.children _   # list
+    ___  -   parent _ N..):
+        parent _ parent
+        children _   # list
 
 
 c_ Model(QAbstractItemModel):
-    ___ __init__  rows, columns, parent _ N..):
-        super(Model, self).__init__(parent)
-        self.services _ QIcon(images_dir + '/services.png')
-        self.rc _ rows
-        self.cc _ columns
-        self.tree _ [Node() for node in range(rows)]
-        self.iconProvider _ QFileIconProvider()
+    ___  -   rows, columns, parent _ N..):
+        super(Model, self). - (parent)
+        services _ QIcon(images_dir + '/services.png')
+        rc _ rows
+        cc _ columns
+        tree _ [Node() ___ node __ range(rows)]
+        iconProvider _ QFileIconProvider()
 
     ___ index  row, column, parent):
-        __ row < self.rc and row >_ 0 and column < self.cc and column >_ 0:
+        __ row < rc and row >_ 0 and column < cc and column >_ 0:
             parentNode _ parent.internalPointer()
-            childNode _ self.node(row, parentNode)
+            childNode _ node(row, parentNode)
             __ childNode __ no. N..:
-                r_ self.createIndex(row, column, childNode)
+                r_ createIndex(row, column, childNode)
         r_ QModelIndex()
 
     ___ parent  child):
@@ -89,9 +89,9 @@ c_ Model(QAbstractItemModel):
             # parent of QModelIndex child
             __ child.isValid
                 childNode _ child.internalPointer()
-                parentNode _ self.parent(childNode)
+                parentNode _ parent(childNode)
                 __ parentNode:
-                    r_ self.createIndex(self.row(parentNode), 0, parentNode)
+                    r_ createIndex(row(parentNode), 0, parentNode)
             r_ QModelIndex()
         ____
             # parent of Node
@@ -101,10 +101,10 @@ c_ Model(QAbstractItemModel):
     ___ rowCount  parent):
         __ parent.isValid() and parent.column() !_ 0:
             r_ 0
-        r_ self.rc
+        r_ rc
 
     ___ columnCount  parent):
-        r_ self.cc
+        r_ cc
 
     ___ data  index, role):
         __ no. index.isValid
@@ -113,21 +113,21 @@ c_ Model(QAbstractItemModel):
             r_ "Item %d:%s" % (index.row(), index.column())
         ____ role == __.DecorationRole:
             __ index.column() == 0:
-                r_ self.iconProvider.icon(QFileIconProvider.Folder)
-            r_ self.iconProvider.icon(QFileIconProvider.File)
+                r_ iconProvider.icon(QFileIconProvider.Folder)
+            r_ iconProvider.icon(QFileIconProvider.File)
         r_ N..
 
     ___ headerData  section, orientation, role):
         __ role == __.DisplayRole:
             r_ str(section)
         __ role == __.DecorationRole:
-            r_ self.services
+            r_ services
         r_ super(Model, self).headerData(section, orientation, role)
 
     ___ hasChildren  parent):
         __ parent.isValid() and parent.column() !_ 0:
             r_ False
-        r_ self.rc > 0 and self.cc > 0
+        r_ rc > 0 and cc > 0
 
     ___ flags  index):
         __ no. index.isValid
@@ -136,17 +136,17 @@ c_ Model(QAbstractItemModel):
 
     ___ node  row, parent):
         __ parent and no. parent.children:
-            parent.children _ [Node(parent) for node in range(self.rc)]
+            parent.children _ [Node(parent) ___ node __ range(rc)]
         __ parent:
             r_ parent.children[row]
         ____
-            r_ self.tree[row]
+            r_ tree[row]
 
     ___ row  node):
         __ node.parent:
             r_ node.parent.children.index(node)
         ____
-            r_ self.tree.index(node)
+            r_ tree.index(node)
 
 
 ___ main(args):
@@ -186,6 +186,6 @@ ___ main(args):
     r_ app.e..
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
     ______ ___
-    main(___.argv)
+    main(___.a..

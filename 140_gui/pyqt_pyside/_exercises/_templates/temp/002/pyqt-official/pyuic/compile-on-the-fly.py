@@ -46,20 +46,20 @@ ____ ?.?W.. ______ ?A.., QDialog
 ____ ?.uic ______ lUT..
 
 
-app _ ?A..(___.argv)
+app _ ?A..(___.a..
 form_class, base_class _ lUT..('demo.ui')
 
 
 c_ DemoImpl(QDialog, form_class):
-    ___ __init__  *args):
-        super(DemoImpl, self).__init__(*args)
+    ___  -   *args):
+        super(DemoImpl, self). - (*args)
 
-        self.setupUi(self)
+        setupUi
     
     @pyqtSlot()
-    ___ on_button1_clicked(self):
-        for s in "This is a demo".split(" "):
-            self.list.addItem(s)
+    ___ on_button1_clicked
+        ___ s __ "This is a demo".split(" "):
+            list.addItem(s)
 
 
 form _ DemoImpl()

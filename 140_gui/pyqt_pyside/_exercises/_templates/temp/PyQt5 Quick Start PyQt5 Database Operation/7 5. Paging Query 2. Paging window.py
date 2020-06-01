@@ -4,59 +4,59 @@ ____ ?.?C.. ______ *
 ____ ?.?W.. ______ *
 
 c_ DataGrid(QWidget):
-    ___ __init__  parent_None):
-        super(DataGrid, self).__init__(parent)
+    ___  -   parent_None):
+        super(DataGrid, self). - (parent)
         # Database Connection
-        self.db _ N..
+        db _ N..
         # Layout Manager
-        self.layout _ ?VBL..
+        layout _ ?VBL..
         # Query Model
-        self.queryModel _ QSqlQueryModel()
+        queryModel _ QSqlQueryModel()
         # Table View
-        self.tableView _ QTableView()
-        self.tableView.sM..(self.queryModel)
+        tableView _ QTableView()
+        tableView.sM..(queryModel)
         #
-        self.totalPageLabel _ QLabel()
-        self.currentPageLabel _ QLabel()
-        self.switchPageLineEdit _ ?LE..
-        self.prevButton _ ?PB..("Prev")
-        self.nextButton _ ?PB..("Next")
-        self.switchPageButton _ ?PB..("Switch")
-        self.currentPage _ 0
-        self.totalPage _ 0
-        self.totalRecordCount _ 0
-        self.pageRecordCount _ 5
+        totalPageLabel _ QLabel()
+        currentPageLabel _ QLabel()
+        switchPageLineEdit _ ?LE..
+        prevButton _ ?PB..("Prev")
+        nextButton _ ?PB..("Next")
+        switchPageButton _ ?PB..("Switch")
+        currentPage _ 0
+        totalPage _ 0
+        totalRecordCount _ 0
+        pageRecordCount _ 5
 
-    ___ initUI(self):
-        self.tableView.horizontalHeader().setStretchLastSection(True)
-        self.tableView.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
-        self.layout.aW..(self.tableView)
+    ___ initUI 
+        tableView.horizontalHeader().setStretchLastSection(True)
+        tableView.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+        layout.aW..(tableView)
 
         hLayout _ QHBoxLayout()
-        hLayout.aW..(self.prevButton)
-        hLayout.aW..(self.nextButton)
+        hLayout.aW..(prevButton)
+        hLayout.aW..(nextButton)
         hLayout.aW..(QLabel("Jump To"))
-        self.switchPageLineEdit.setFixedWidth(40)
-        hLayout.aW..(self.switchPageLineEdit)
+        switchPageLineEdit.setFixedWidth(40)
+        hLayout.aW..(switchPageLineEdit)
         hLayout.aW..(QLabel("page"))
-        hLayout.aW..(self.switchPageButton)
+        hLayout.aW..(switchPageButton)
         hLayout.aW..(QLabel("Current page:"))
-        hLayout.aW..(self.currentPageLabel)
+        hLayout.aW..(currentPageLabel)
         hLayout.aW..(QLabel("Total pages:"))
-        hLayout.aW..(self.totalPageLabel)
+        hLayout.aW..(totalPageLabel)
         hLayout.addStretch(1)
 
-        self.layout.addLayout(hLayout)
-        self.sL..(self.layout)
+        layout.aL..(hLayout)
+        sL..(layout)
 
-        self.setWindowTitle("DataGrid")
-        self.resize(600, 300)
+        setWindowTitle("DataGrid")
+        resize(600, 300)
 
     ___ closeEvent  event):
-        self.db.close()
+        db.close()
 
 __ __name__ == "__main__":
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     window _ DataGrid()
     window.initUI()
     window.s..

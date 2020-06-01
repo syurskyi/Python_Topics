@@ -4,22 +4,22 @@ ____ ?.?C.. ______ *
 ____ ?.QtMultimedia ______ QSound
 
 c_ PlainTextEdit(QPlainTextEdit):
-    ___ __init__(self):
-        super().__init__()
-        self._holes _   # list
-        self._bullet _ QPixmap("bullet.png")
-        size _ self._bullet.size()
-        self._offset _ QPoint(size.width() / 2, size.height() / 2)
+    ___  -
+        s_. - ()
+        _holes _   # list
+        _bullet _ QPixmap("bullet.png")
+        size _ _bullet.size()
+        _offset _ QPoint(size.width() / 2, size.height() / 2)
     ___ mousePressEvent  e):
-        self._holes.ap..(e.pos())
-        super().mousePressEvent(e)
-        self.viewport().update()
+        _holes.ap..(e.pos())
+        s_.mousePressEvent(e)
+        viewport().update()
         QSound.play("shot.wav")
     ___ paintEvent  e):
-        super().paintEvent(e)
-        painter _ QPainter(self.viewport())
-        for hole in self._holes:
-            painter.drawPixmap(hole - self._offset, self._bullet)
+        s_.paintEvent(e)
+        painter _ QPainter(viewport())
+        ___ hole __ _holes:
+            painter.drawPixmap(hole - _offset, _bullet)
 
 app _ ?
 t__ _ PlainTextEdit()

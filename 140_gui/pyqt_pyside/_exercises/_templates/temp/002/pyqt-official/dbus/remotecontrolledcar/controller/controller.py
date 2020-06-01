@@ -50,60 +50,60 @@ ____ ui_controller ______ Ui_Controller
 
 c_ CarInterface(QDBusAbstractInterface):
 
-    ___ __init__  service, path, connection, parent_None):
-        super(CarInterface, self).__init__(service, path,
+    ___  -   service, path, connection, parent_None):
+        super(CarInterface, self). - (service, path,
                 'org.example.Examples.CarInterface', connection, parent)
 
-    ___ accelerate(self):
-        self.asyncCall('accelerate')
+    ___ accelerate
+        asyncCall('accelerate')
 
-    ___ decelerate(self):
-        self.asyncCall('decelerate')
+    ___ decelerate
+        asyncCall('decelerate')
 
-    ___ turnLeft(self):
-        self.asyncCall('turnLeft')
+    ___ turnLeft
+        asyncCall('turnLeft')
 
-    ___ turnRight(self):
-        self.asyncCall('turnRight')
+    ___ turnRight
+        asyncCall('turnRight')
 
 
 c_ Controller(QWidget):
 
-    ___ __init__  parent_None):
-        super(Controller, self).__init__(parent)
+    ___  -   parent_None):
+        super(Controller, self). - (parent)
 
-        self.ui _ Ui_Controller()
+        ui _ Ui_Controller()
 
-        self.ui.setupUi(self)
+        ui.setupUi
 
-        self.car _ CarInterface('org.example.CarExample', '/Car',
+        car _ CarInterface('org.example.CarExample', '/Car',
                 QDBusConnection.sessionBus(), self)
 
-        self.startTimer(1000)
+        startTimer(1000)
 
     ___ timerEvent  event):
-        __ self.car.isValid
-            self.ui.label.sT..("connected")
+        __ car.isValid
+            ui.label.sT..("connected")
         ____
-            self.ui.label.sT..("disconnected")
+            ui.label.sT..("disconnected")
 
-    ___ on_accelerate_clicked(self):
-        self.car.accelerate()
+    ___ on_accelerate_clicked
+        car.accelerate()
 
-    ___ on_decelerate_clicked(self):
-        self.car.decelerate()
+    ___ on_decelerate_clicked
+        car.decelerate()
 
-    ___ on_left_clicked(self):
-        self.car.turnLeft()
+    ___ on_left_clicked
+        car.turnLeft()
 
-    ___ on_right_clicked(self):
-        self.car.turnRight()
+    ___ on_right_clicked
+        car.turnRight()
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     controller _ Controller()
     controller.s..

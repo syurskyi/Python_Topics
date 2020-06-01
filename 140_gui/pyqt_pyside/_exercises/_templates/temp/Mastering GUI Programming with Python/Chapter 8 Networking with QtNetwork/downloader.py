@@ -6,12 +6,12 @@ ____ ? ______ ?C.. __ qtc
 
 c_ Downloader(qtc.QObject):
 
-    ___ __init__  url):
-        super().__init__()
-        self.manager _ qtn.QNetworkAccessManager(
+    ___  -   url):
+        s_. - ()
+        manager _ qtn.QNetworkAccessManager(
             finished_self.on_finished)
-        self.request _ qtn.QNetworkRequest(qtc.QUrl(url))
-        self.manager.g..(self.request)
+        request _ qtn.QNetworkRequest(qtc.QUrl(url))
+        manager.g..(request)
 
     ___ on_finished  reply):
         filename _ reply.url().fileName() or 'download'
@@ -23,10 +23,10 @@ c_ Downloader(qtc.QObject):
         print(f"{filename} written")
         ___.exit(0)
 
-__ __name__ == '__main__':
-    __ le.(___.argv) < 2:
+__ ______ __ ______
+    __ le.(___.a.. < 2:
         print(f'Usage: {___.argv[0]} <download url>')
         ___.exit(1)
-    app _ qtc.QCoreApplication(___.argv)
+    app _ qtc.QCoreApplication(___.a..
     d _ Downloader(___.argv[1])
     ___.exit(app.exec_())

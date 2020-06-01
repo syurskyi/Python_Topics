@@ -54,37 +54,37 @@ ____ menumanager ______ MenuManager
 
 
 c_ MainWindow(QGraphicsView):
-    ___ __init__  parent_None):
-        super(MainWindow, self).__init__(parent)
+    ___  -   parent_None):
+        super(MainWindow, self). - (parent)
 
-        self.imagesDir _ QFileInfo(__file__).absolutePath() + '/images'
+        imagesDir _ QFileInfo(__file__).absolutePath() + '/images'
 
-        self.updateTimer _ QTimer(self)
-        self.demoStartTime _ QTime()
-        self.fpsTime _ QTime()
-        self.background _ QPixmap()
+        updateTimer _ QTimer
+        demoStartTime _ QTime()
+        fpsTime _ QTime()
+        background _ QPixmap()
 
-        self.scene _ N..
-        self.mainSceneRoot _ N..
-        self.frameTimeList _   # list
-        self.fpsHistory _   # list
+        scene _ N..
+        mainSceneRoot _ N..
+        frameTimeList _   # list
+        fpsHistory _   # list
 
-        self.currentFps _ Colors.fps
-        self.fpsMedian _ -1
-        self.fpsLabel _ N..
-        self.pausedLabel _ N..
-        self.doneAdapt _ False
-        self.useTimer _ False
-        self.updateTimer.setSingleShot(True)
-        self.companyLogo _ N..
-        self.qtLogo _ N..
+        currentFps _ Colors.fps
+        fpsMedian _ -1
+        fpsLabel _ N..
+        pausedLabel _ N..
+        doneAdapt _ False
+        useTimer _ False
+        updateTimer.setSingleShot(True)
+        companyLogo _ N..
+        qtLogo _ N..
 
-        self.setupWidget()
-        self.setupScene()
-        self.setupSceneItems()
-        self.drawBackgroundToPixmap()
+        setupWidget()
+        setupScene()
+        setupSceneItems()
+        drawBackgroundToPixmap()
 
-    ___ setupWidget(self):
+    ___ setupWidget
         desktop _ ?A...desktop()
         screenRect _ desktop.screenGeometry(desktop.primaryScreen())
         windowRect _ QRect(0, 0, 800, 600)
@@ -96,30 +96,30 @@ c_ MainWindow(QGraphicsView):
             windowRect.setHeight(screenRect.height())
 
         windowRect.moveCenter(screenRect.center())
-        self.setGeometry(windowRect)
-        self.setMinimumSize(80, 60)
+        setGeometry(windowRect)
+        setMinimumSize(80, 60)
 
-        self.setWindowTitle("PyQt Examples")
-        self.setHorizontalScrollBarPolicy(__.ScrollBarAlwaysOff)
-        self.setVerticalScrollBarPolicy(__.ScrollBarAlwaysOff)
-        self.setFrameStyle(QFrame.NoFrame)
-        self.setRenderingSystem()
-        self.updateTimer.timeout.c..(self.tick)
+        setWindowTitle("PyQt Examples")
+        setHorizontalScrollBarPolicy(__.ScrollBarAlwaysOff)
+        setVerticalScrollBarPolicy(__.ScrollBarAlwaysOff)
+        setFrameStyle(QFrame.NoFrame)
+        setRenderingSystem()
+        updateTimer.timeout.c..(tick)
 
-    ___ setRenderingSystem(self):
-        self.setCacheMode(QGraphicsView.CacheBackground)
-        self.setViewport(QWidget())
+    ___ setRenderingSystem
+        setCacheMode(QGraphicsView.CacheBackground)
+        setViewport(QWidget())
 
-    ___ start(self):
-        self.switchTimerOnOff(True)
-        self.demoStartTime.restart()
+    ___ start
+        switchTimerOnOff(True)
+        demoStartTime.restart()
         MenuManager.instance().itemSelected(MenuManager.ROOT,
                 Colors.rootMenuName)
         Colors.debug("- starting demo")
 
     ___ enableMask  enable):
         __ no. enable or Colors.noWindowMask:
-            self.clearMask()
+            clearMask()
         ____
             region _ QPolygon([
                     # North side.
@@ -144,13 +144,13 @@ c_ MainWindow(QGraphicsView):
                     # 0, 520,
                     0, 0])
 
-            self.setMask(QRegion(region))
+            setMask(QRegion(region))
 
-    ___ setupScene(self):
-        self.scene _ QGraphicsScene(self)
-        self.scene.setSceneRect(0, 0, 800, 600)
-        self.setScene(self.scene)
-        self.scene.setItemIndexMethod(QGraphicsScene.NoIndex)
+    ___ setupScene
+        scene _ QGraphicsScene
+        scene.setSceneRect(0, 0, 800, 600)
+        setScene(scene)
+        scene.setItemIndexMethod(QGraphicsScene.NoIndex)
 
     ___ switchTimerOnOff  on):
         ticker _ MenuManager.instance().ticker
@@ -158,155 +158,155 @@ c_ MainWindow(QGraphicsView):
             ticker.tickOnPaint _ no. on or Colors.noTimerUpdate
 
         __ on and no. Colors.noTimerUpdate:
-            self.useTimer _ True
-            self.fpsTime _ QTime.currentTime()
-            self.updateTimer.start(int(1000 / Colors.fps))
+            useTimer _ True
+            fpsTime _ QTime.currentTime()
+            updateTimer.start(int(1000 / Colors.fps))
             update_mode _ QGraphicsView.NoViewportUpdate
         ____
-            self.useTimer _ False
-            self.updateTimer.stop()
+            useTimer _ False
+            updateTimer.stop()
 
             __ Colors.noTicker:
                 update_mode _ QGraphicsView.MinimalViewportUpdate
             ____
                 update_mode _ QGraphicsView.SmartViewportUpdate
 
-        self.setViewportUpdateMode(update_mode)
+        setViewportUpdateMode(update_mode)
 
-    ___ measureFps(self):
+    ___ measureFps
         # Calculate time difference.
-        t _ self.fpsTime.msecsTo(QTime.currentTime())
+        t _ fpsTime.msecsTo(QTime.currentTime())
         __ t == 0:
             t _ 0.01
 
-        self.currentFps _ (1000.0 / t)
-        self.fpsHistory.ap..(self.currentFps)
-        self.fpsTime _ QTime.currentTime()
+        currentFps _ (1000.0 / t)
+        fpsHistory.ap..(currentFps)
+        fpsTime _ QTime.currentTime()
 
         # Calculate median.
-        size _ le.(self.fpsHistory)
+        size _ le.(fpsHistory)
 
         __ size == 10:
-            self.fpsHistory.sort()
-            self.fpsMedian _ self.fpsHistory[int(size / 2)]
-            __ self.fpsMedian == 0:
-                self.fpsMedian _ 0.01
+            fpsHistory.sort()
+            fpsMedian _ fpsHistory[int(size / 2)]
+            __ fpsMedian == 0:
+                fpsMedian _ 0.01
 
-            self.fpsHistory _   # list
+            fpsHistory _   # list
 
             r_ True
 
         r_ False
 
-    ___ forceFpsMedianCalculation(self):
+    ___ forceFpsMedianCalculation
         # Used for adaption in case things are so slow that no median has yet
         # been calculated.
-        __ self.fpsMedian !_ -1:
+        __ fpsMedian !_ -1:
             r_
 
-        size _ le.(self.fpsHistory)
+        size _ le.(fpsHistory)
 
         __ size == 0:
-            self.fpsMedian _ 0.01
+            fpsMedian _ 0.01
             r_
 
-        self.fpsHistory.sort()
-        self.fpsMedian _ self.fpsHistory[size // 2]
-        __ self.fpsMedian == 0:
-            self.fpsMedian _ 0.01
+        fpsHistory.sort()
+        fpsMedian _ fpsHistory[size // 2]
+        __ fpsMedian == 0:
+            fpsMedian _ 0.01
 
-    ___ tick(self):
-        medianChanged _ self.measureFps()
-        self.checkAdapt()
+    ___ tick
+        medianChanged _ measureFps()
+        checkAdapt()
 
-        __ medianChanged and self.fpsLabel and Colors.showFps:
-            self.fpsLabel.sT..("FPS: %d" % int(self.currentFps))
+        __ medianChanged and fpsLabel and Colors.showFps:
+            fpsLabel.sT..("FPS: %d" % int(currentFps))
 
         __ MenuManager.instance().ticker:
             MenuManager.instance().ticker.tick()
 
-        self.viewport().update()
+        viewport().update()
 
-        __ self.useTimer:
-            self.updateTimer.start(int(1000 / Colors.fps))
+        __ useTimer:
+            updateTimer.start(int(1000 / Colors.fps))
 
-    ___ setupSceneItems(self):
+    ___ setupSceneItems
         __ Colors.showFps:
-            self.fpsLabel _ DemoTextItem("FPS: --", Colors.buttonFont(),
+            fpsLabel _ DemoTextItem("FPS: --", Colors.buttonFont(),
                     __.white, -1, N.., DemoTextItem.DYNAMIC_TEXT)
-            self.fpsLabel.setZValue(1000)
-            self.fpsLabel.setPos(Colors.stageStartX,
+            fpsLabel.setZValue(1000)
+            fpsLabel.setPos(Colors.stageStartX,
                     600 - QFontMetricsF(Colors.buttonFont()).height() - 5)
 
-        self.mainSceneRoot _ QGraphicsWidget()
-        self.scene.addItem(self.mainSceneRoot)
+        mainSceneRoot _ QGraphicsWidget()
+        scene.addItem(mainSceneRoot)
 
-        self.companyLogo _ ImageItem(
-                QImage(self.imagesDir + '/trolltech-logo.png'),
+        companyLogo _ ImageItem(
+                QImage(imagesDir + '/trolltech-logo.png'),
                 1000, 1000, N.., True, 0.5)
-        self.qtLogo _ ImageItem(QImage(self.imagesDir + '/qtlogo_small.png'),
+        qtLogo _ ImageItem(QImage(imagesDir + '/qtlogo_small.png'),
                 1000, 1000, N.., True, 0.5)
-        self.companyLogo.setZValue(100)
-        self.qtLogo.setZValue(100)
-        self.pausedLabel _ DemoTextItem("PAUSED", Colors.buttonFont(),
+        companyLogo.setZValue(100)
+        qtLogo.setZValue(100)
+        pausedLabel _ DemoTextItem("PAUSED", Colors.buttonFont(),
                 __.white, -1, N..)
-        self.pausedLabel.setZValue(100)
+        pausedLabel.setZValue(100)
         fm _ QFontMetricsF(Colors.buttonFont())
-        self.pausedLabel.setPos(Colors.stageWidth - fm.width("PAUSED"),
+        pausedLabel.setPos(Colors.stageWidth - fm.width("PAUSED"),
                 590 - fm.height())
-        self.pausedLabel.setRecursiveVisible F..
+        pausedLabel.setRecursiveVisible F..
 
-    ___ checkAdapt(self):
-        __ self.doneAdapt or Colors.noTimerUpdate or self.demoStartTime.elapsed() < 2000:
+    ___ checkAdapt
+        __ doneAdapt or Colors.noTimerUpdate or demoStartTime.elapsed() < 2000:
             r_
 
-        self.doneAdapt _ True
-        self.forceFpsMedianCalculation()
-        Colors.benchmarkFps _ self.fpsMedian
+        doneAdapt _ True
+        forceFpsMedianCalculation()
+        Colors.benchmarkFps _ fpsMedian
         Colors.debug("- benchmark: %d FPS" % int(Colors.benchmarkFps))
 
         __ Colors.noAdapt:
             r_
 
-        __ self.fpsMedian < 30:
+        __ fpsMedian < 30:
             ticker _ MenuManager.instance().ticker
             __ ticker and ticker.scene
-                self.scene.removeItem(ticker)
+                scene.removeItem(ticker)
                 Colors.noTimerUpdate _ True
-                self.switchTimerOnOff F..
+                switchTimerOnOff F..
 
-                __ self.fpsLabel:
-                    self.fpsLabel.sT..("FPS: (%d)" % int(self.fpsMedian))
+                __ fpsLabel:
+                    fpsLabel.sT..("FPS: (%d)" % int(fpsMedian))
 
                 Colors.debug("- benchmark adaption: removed ticker (fps < 30)")
 
-            __ self.fpsMedian < 20:
+            __ fpsMedian < 20:
                 Colors.noAnimations _ True
                 Colors.debug("- benchmark adaption: animations switched off (fps < 20)")
 
             Colors.adapted _ True
 
-    ___ drawBackgroundToPixmap(self):
-        r _ self.scene.sceneRect()
-        self.background _ QPixmap(qRound(r.width()), qRound(r.height()))
-        self.background.fill(__.black)
-        painter _ QPainter(self.background)
+    ___ drawBackgroundToPixmap
+        r _ scene.sceneRect()
+        background _ QPixmap(qRound(r.width()), qRound(r.height()))
+        background.fill(__.black)
+        painter _ QPainter(background)
 
-        bg _ QImage(self.imagesDir + '/demobg.png')
+        bg _ QImage(imagesDir + '/demobg.png')
         painter.drawImage(0, 0, bg)
 
     ___ drawBackground  painter, rect):
-        painter.drawPixmap(QPoint(0, 0), self.background)
+        painter.drawPixmap(QPoint(0, 0), background)
 
-    ___ toggleFullscreen(self):
-        __ self.isFullScreen
-            self.enableMask(True)
-            self.showNormal()
+    ___ toggleFullscreen
+        __ isFullScreen
+            enableMask(True)
+            showNormal()
             __ MenuManager.instance().ticker:
                 MenuManager.instance().ticker.pause F..
         ____
-            self.enableMask F..
-            self.showFullScreen()
+            enableMask F..
+            showFullScreen()
 
     ___ keyPressEvent  event):
         __ event.key() == __.Key_Escape:
@@ -353,10 +353,10 @@ c_ MainWindow(QGraphicsView):
             MenuManager.instance().ticker.pause F..
 
         code _ MenuManager.instance().currentMenuCode
-        __ code in (MenuManager.ROOT, MenuManager.MENU1):
-            self.switchTimerOnOff(True)
+        __ code __ (MenuManager.ROOT, MenuManager.MENU1):
+            switchTimerOnOff(True)
 
-        self.pausedLabel.setRecursiveVisible F..
+        pausedLabel.setRecursiveVisible F..
 
     ___ focusOutEvent  event):
         __ no. Colors.pause:
@@ -366,27 +366,27 @@ c_ MainWindow(QGraphicsView):
             MenuManager.instance().ticker.pause(True)
 
         code _ MenuManager.instance().currentMenuCode
-        __ code in (MenuManager.ROOT, MenuManager.MENU1):
-            self.switchTimerOnOff F..
+        __ code __ (MenuManager.ROOT, MenuManager.MENU1):
+            switchTimerOnOff F..
 
-        self.pausedLabel.setRecursiveVisible(True)
+        pausedLabel.setRecursiveVisible(True)
 
     ___ resizeEvent  event):
-        self.resetTransform()
-        self.scale(event.size().width() / 800.0, event.size().height() / 600.0)
+        resetTransform()
+        scale(event.size().width() / 800.0, event.size().height() / 600.0)
 
         super(MainWindow, self).resizeEvent(event)
 
-        DemoItem.setTransform(self.transform())
+        DemoItem.setTransform(transform())
 
-        __ self.companyLogo:
-            r _ self.scene.sceneRect()
-            ttb _ self.companyLogo.boundingRect()
-            self.companyLogo.setPos(int((r.width() - ttb.width()) / 2),
+        __ companyLogo:
+            r _ scene.sceneRect()
+            ttb _ companyLogo.boundingRect()
+            companyLogo.setPos(int((r.width() - ttb.width()) / 2),
                     595 - ttb.height())
-            qtb _ self.qtLogo.boundingRect()
-            self.qtLogo.setPos(802 - qtb.width(), 0)
+            qtb _ qtLogo.boundingRect()
+            qtLogo.setPos(802 - qtb.width(), 0)
 
         # Changing size will almost always hurt FPS during the change so ignore
         # it.
-        self.fpsHistory _   # list
+        fpsHistory _   # list

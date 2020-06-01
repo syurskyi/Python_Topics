@@ -46,30 +46,30 @@ ____ guide ______ Guide
 
 
 c_ GuideLine(Guide):
-    ___ __init__  line_or_point, follows_None):
-        super(GuideLine, self).__init__(follows)
+    ___  -   line_or_point, follows_None):
+        super(GuideLine, self). - (follows)
 
         __ isinstance(line_or_point, QLineF):
-            self.line _ line_or_point
+            line _ line_or_point
         ____ follows __ no. N..:
-            self.line _ QLineF(self.prevGuide.endPos(), line_or_point)
+            line _ QLineF(prevGuide.endPos(), line_or_point)
         ____
-            self.line _ QLineF(QPointF(0, 0), line_or_point)
+            line _ QLineF(QPointF(0, 0), line_or_point)
 
-    ___ length(self):
-        r_ self.line.length()
+    ___ length
+        r_ line.length()
 
-    ___ startPos(self):
-        r_ QPointF(self.line.p1().x() * self.scaleX,
-                self.line.p1().y() * self.scaleY)
+    ___ startPos
+        r_ QPointF(line.p1().x() * scaleX,
+                line.p1().y() * scaleY)
 
-    ___ endPos(self):
-        r_ QPointF(self.line.p2().x() * self.scaleX,
-                self.line.p2().y() * self.scaleY)
+    ___ endPos
+        r_ QPointF(line.p2().x() * scaleX,
+                line.p2().y() * scaleY)
 
     ___ guide  item, moveSpeed):
-        frame _ item.guideFrame - self.startLength
-        endX _ (self.line.p1().x() + (frame * self.line.dx() / self.length())) * self.scaleX
-        endY _ (self.line.p1().y() + (frame * self.line.dy() / self.length())) * self.scaleY
+        frame _ item.guideFrame - startLength
+        endX _ (line.p1().x() + (frame * line.dx() / length())) * scaleX
+        endY _ (line.p1().y() + (frame * line.dy() / length())) * scaleY
         pos _ QPointF(endX, endY)
-        self.move(item, pos, moveSpeed)
+        move(item, pos, moveSpeed)

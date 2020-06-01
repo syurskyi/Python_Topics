@@ -72,10 +72,10 @@ c_ ChatAdaptor(QDBusAbstractAdaptor):
 
     message _ pyqtSignal(str, str)
 
-    ___ __init__  parent):
-        super(ChatAdaptor, self).__init__(parent)
+    ___  -   parent):
+        super(ChatAdaptor, self). - (parent)
 
-        self.setAutoRelaySignals(True)
+        setAutoRelaySignals(True)
 
 
 c_ ChatInterface(QDBusAbstractInterface):
@@ -84,8 +84,8 @@ c_ ChatInterface(QDBusAbstractInterface):
 
     message _ pyqtSignal(str, str)
 
-    ___ __init__  service, path, connection, parent_None):
-        super(ChatInterface, self).__init__(service, path, 'org.example.chat',
+    ___  -   service, path, connection, parent_None):
+        super(ChatInterface, self). - (service, path, 'org.example.chat',
                 connection, parent)
 
 
@@ -95,99 +95,99 @@ c_ ChatMainWindow(QMainWindow, Ui_ChatMainWindow):
 
     message _ pyqtSignal(str, str)
 
-    ___ __init__(self):
-        super(ChatMainWindow, self).__init__()
+    ___  -
+        super(ChatMainWindow, self). - ()
 
-        self.m_nickname _ "nickname"
-        self.m_messages _   # list
+        m_nickname _ "nickname"
+        m_messages _   # list
 
-        self.setupUi(self)
-        self.sendButton.setEnabled F..
+        setupUi
+        sendButton.setEnabled F..
 
-        self.messageLineEdit.textChanged.c..(self.textChangedSlot)
-        self.sendButton.c__.c..(self.sendClickedSlot)
-        self.actionChangeNickname.t__.c..(self.changeNickname)
-        self.actionAboutQt.t__.c..(self.aboutQt)
-        ?A...instance().lastWindowClosed.c..(self.exiting)
+        messageLineEdit.textChanged.c..(textChangedSlot)
+        sendButton.c__.c..(sendClickedSlot)
+        actionChangeNickname.t__.c..(changeNickname)
+        actionAboutQt.t__.c..(aboutQt)
+        ?A...instance().lastWindowClosed.c..(exiting)
 
         # Add our D-Bus interface and connect to D-Bus.
-        ChatAdaptor(self)
+        ChatAdaptor
         QDBusConnection.sessionBus().registerObject('/', self)
 
         iface _ ChatInterface('', '', QDBusConnection.sessionBus(), self)
         QDBusConnection.sessionBus().c..('', '', 'org.example.chat',
-                'message', self.messageSlot)
-        iface.action.c..(self.actionSlot)
+                'message', messageSlot)
+        iface.action.c..(actionSlot)
 
         dialog _ NicknameDialog()
         dialog.cancelButton.setVisible F..
         dialog.e..
-        self.m_nickname _ dialog.nickname.t__().strip()
-        self.action.emit(self.m_nickname, "joins the chat")
+        m_nickname _ dialog.nickname.t__().strip()
+        action.emit(m_nickname, "joins the chat")
 
-    ___ rebuildHistory(self):
-        history _ '\n'.join(self.m_messages)
-        self.chatHistory.sPT..(history)
+    ___ rebuildHistory 
+        history _ '\n'.join(m_messages)
+        chatHistory.sPT..(history)
 
     @pyqtSlot(str, str)
     ___ messageSlot  nickname, t__):
-        self.m_messages.ap..("<%s> %s" % (nickname, t__))
+        m_messages.ap..("<%s> %s" % (nickname, t__))
 
-        __ le.(self.m_messages) > 100:
-            self.m_messages.p.. 0)
+        __ le.(m_messages) > 100:
+            m_messages.p.. 0)
 
-        self.rebuildHistory()
+        rebuildHistory()
 
     @pyqtSlot(str, str)
     ___ actionSlot  nickname, t__):
-        self.m_messages.ap..("* %s %s" % (nickname, t__))
+        m_messages.ap..("* %s %s" % (nickname, t__))
 
-        __ le.(self.m_messages) > 100:
-            self.m_messages.p.. 0)
+        __ le.(m_messages) > 100:
+            m_messages.p.. 0)
 
-        self.rebuildHistory()
+        rebuildHistory()
 
     @pyqtSlot(str)
     ___ textChangedSlot  newText):
-        self.sendButton.setEnabled(newText !_ '')
+        sendButton.setEnabled(newText !_ '')
 
     @pyqtSlot()
-    ___ sendClickedSlot(self):
+    ___ sendClickedSlot 
         msg _ QDBusMessage.createSignal('/', 'org.example.chat', 'message')
-        msg << self.m_nickname << self.messageLineEdit.t__()
+        msg << m_nickname << messageLineEdit.t__()
         QDBusConnection.sessionBus().send(msg)
-        self.messageLineEdit.sT..('')
+        messageLineEdit.sT..('')
 
     @pyqtSlot()
-    ___ changeNickname(self):
-        dialog _ NicknameDialog(self)
+    ___ changeNickname 
+        dialog _ NicknameDialog
 
         __ dialog.e.. == QDialog.Accepted:
-            old _ self.m_nickname
-            self.m_nickname _ dialog.nickname.t__().strip()
-            self.action.emit(old, "is now known as %s" % self.m_nickname)
+            old _ m_nickname
+            m_nickname _ dialog.nickname.t__().strip()
+            action.emit(old, "is now known as %s" % m_nickname)
 
     @pyqtSlot()
-    ___ aboutQt(self):
-        ?MB...aboutQt(self)
+    ___ aboutQt 
+        ?MB...aboutQt
 
     @pyqtSlot()
-    ___ exiting(self):
-        self.action.emit(self.m_nickname, "leaves the chat")
+    ___ exiting 
+        action.emit(m_nickname, "leaves the chat")
 
 
 c_ NicknameDialog(QDialog, Ui_NicknameDialog):
 
-    ___ __init__  parent_None):
-        super(NicknameDialog, self).__init__(parent)
+    ___  -   parent_None):
+        super(NicknameDialog, self). - (parent)
 
-        self.setupUi(self)
+        setupUi
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     __ no. QDBusConnection.sessionBus().isConnected
         ___.stderr.w..("Cannot connect to the D-Bus session bus.\n"

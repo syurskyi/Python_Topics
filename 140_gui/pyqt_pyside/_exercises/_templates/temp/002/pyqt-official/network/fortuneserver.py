@@ -62,13 +62,13 @@ c_ Server(QDialog):
         "You cannot kill time without injuring eternity.",
         "Computers are not intelligent. They only think they are.")
 
-    ___ __init__  parent_None):
-        super(Server, self).__init__(parent)
+    ___  -   parent_None):
+        super(Server, self). - (parent)
 
-        self.tcpServer _ N..
-        self.networkSession _ N..
+        tcpServer _ N..
+        networkSession _ N..
 
-        self.statusLabel _ QLabel()
+        statusLabel _ QLabel()
         quitButton _ ?PB..("Quit")
         quitButton.setAutoDefault F..
 
@@ -83,16 +83,16 @@ c_ Server(QDialog):
             __ config.state() & QNetworkConfiguration.Discovered == 0:
                 config _ manager.defaultConfiguration()
 
-            self.networkSession _ QNetworkSession(config, self)
-            self.networkSession.opened.c..(self.sessionOpened)
+            networkSession _ QNetworkSession(config, self)
+            networkSession.opened.c..(sessionOpened)
 
-            self.statusLabel.sT..("Opening network session.")
-            self.networkSession.o..()
+            statusLabel.sT..("Opening network session.")
+            networkSession.o..()
         ____
-            self.sessionOpened()
+            sessionOpened()
 
-        quitButton.c__.c..(self.close)
-        self.tcpServer.newConnection.c..(self.sendFortune)
+        quitButton.c__.c..(close)
+        tcpServer.newConnection.c..(sendFortune)
 
         buttonLayout _ QHBoxLayout()
         buttonLayout.addStretch(1)
@@ -100,18 +100,18 @@ c_ Server(QDialog):
         buttonLayout.addStretch(1)
 
         mainLayout _ ?VBL..
-        mainLayout.aW..(self.statusLabel)
-        mainLayout.addLayout(buttonLayout)
-        self.sL..(mainLayout)
+        mainLayout.aW..(statusLabel)
+        mainLayout.aL..(buttonLayout)
+        sL..(mainLayout)
 
-        self.setWindowTitle("Fortune Server")
+        setWindowTitle("Fortune Server")
 
-    ___ sessionOpened(self):
-        __ self.networkSession __ no. N..:
-            config _ self.networkSession.configuration()
+    ___ sessionOpened
+        __ networkSession __ no. N..:
+            config _ networkSession.configuration()
 
             __ config.type() == QNetworkConfiguration.UserChoice:
-                id _ self.networkSession.sessionProperty('UserChoiceConfiguration')
+                id _ networkSession.sessionProperty('UserChoiceConfiguration')
             ____
                 id _ config.identifier()
 
@@ -120,14 +120,14 @@ c_ Server(QDialog):
             settings.setValue('DefaultNetworkConfiguration', id)
             settings.endGroup();
 
-        self.tcpServer _ QTcpServer(self)
-        __ no. self.tcpServer.listen
+        tcpServer _ QTcpServer
+        __ no. tcpServer.listen
             ?MB...critical  "Fortune Server",
-                    "Unable to start the server: %s." % self.tcpServer.errorString())
-            self.close()
+                    "Unable to start the server: %s." % tcpServer.errorString())
+            close()
             r_
 
-        for ipAddress in QNetworkInterface.allAddresses
+        ___ ipAddress __ QNetworkInterface.allAddresses
             __ ipAddress !_ QHostAddress.LocalHost and ipAddress.toIPv4Address() !_ 0:
                 break
         ____
@@ -135,11 +135,11 @@ c_ Server(QDialog):
 
         ipAddress _ ipAddress.toString()
 
-        self.statusLabel.sT..("The server is running on\n\nIP: %s\nport %d\n\n"
-                "Run the Fortune Client example now." % (ipAddress, self.tcpServer.serverPort()))
+        statusLabel.sT..("The server is running on\n\nIP: %s\nport %d\n\n"
+                "Run the Fortune Client example now." % (ipAddress, tcpServer.serverPort()))
 
-    ___ sendFortune(self):
-        fortune _ self.FORTUNES[random.randint(0, le.(self.FORTUNES) - 1)]
+    ___ sendFortune
+        fortune _ FORTUNES[random.randint(0, le.(FORTUNES) - 1)]
 
         block _ QByteArray()
         out _ QDataStream(block, QIODevice.WriteOnly)
@@ -149,18 +149,18 @@ c_ Server(QDialog):
         out.device().seek(0)
         out.writeUInt16(block.size() - 2)
 
-        clientConnection _ self.tcpServer.nextPendingConnection()
+        clientConnection _ tcpServer.nextPendingConnection()
         clientConnection.disconnected.c..(clientConnection.deleteLater)
 
         clientConnection.w..(block)
         clientConnection.disconnectFromHost()
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     server _ Server()
     random.seed(N..)
     ___.exit(server.exec_())

@@ -51,143 +51,143 @@ ____ ?.?W.. ______ (?A.., QCheckBox, QComboBox, QDialog,
 c_ RegExpDialog(QDialog):
     MaxCaptures _ 6
 
-    ___ __init__  parent_None):
-        super(RegExpDialog, self).__init__(parent)
+    ___  -   parent_None):
+        super(RegExpDialog, self). - (parent)
 
-        self.patternComboBox _ QComboBox()
-        self.patternComboBox.setEditable(True)
-        self.patternComboBox.setSizePolicy(QSizePolicy.Expanding,
+        patternComboBox _ QComboBox()
+        patternComboBox.setEditable(True)
+        patternComboBox.sSP..(QSizePolicy.E..,
                 QSizePolicy.Preferred)
 
         patternLabel _ QLabel("&Pattern:")
-        patternLabel.setBuddy(self.patternComboBox)
+        patternLabel.setBuddy(patternComboBox)
 
-        self.escapedPatternLineEdit _ ?LE..
-        self.escapedPatternLineEdit.setReadOnly(True)
-        palette _ self.escapedPatternLineEdit.palette()
+        escapedPatternLineEdit _ ?LE..
+        escapedPatternLineEdit.setReadOnly(True)
+        palette _ escapedPatternLineEdit.palette()
         palette.setBrush(?P...Base,
                 palette.brush(?P...Disabled, ?P...Base))
-        self.escapedPatternLineEdit.sP..(palette)
+        escapedPatternLineEdit.sP..(palette)
 
         escapedPatternLabel _ QLabel("&Escaped Pattern:")
-        escapedPatternLabel.setBuddy(self.escapedPatternLineEdit)
+        escapedPatternLabel.setBuddy(escapedPatternLineEdit)
 
-        self.syntaxComboBox _ QComboBox()
-        self.syntaxComboBox.addItem("Regular expression v1", QRegExp.RegExp)
-        self.syntaxComboBox.addItem("Regular expression v2", QRegExp.RegExp2)
-        self.syntaxComboBox.addItem("Wildcard", QRegExp.Wildcard)
-        self.syntaxComboBox.addItem("Fixed string", QRegExp.FixedString)
+        syntaxComboBox _ QComboBox()
+        syntaxComboBox.addItem("Regular expression v1", QRegExp.RegExp)
+        syntaxComboBox.addItem("Regular expression v2", QRegExp.RegExp2)
+        syntaxComboBox.addItem("Wildcard", QRegExp.Wildcard)
+        syntaxComboBox.addItem("Fixed string", QRegExp.FixedString)
 
         syntaxLabel _ QLabel("&Pattern Syntax:")
-        syntaxLabel.setBuddy(self.syntaxComboBox)
+        syntaxLabel.setBuddy(syntaxComboBox)
 
-        self.textComboBox _ QComboBox()
-        self.textComboBox.setEditable(True)
-        self.textComboBox.setSizePolicy(QSizePolicy.Expanding,
+        textComboBox _ QComboBox()
+        textComboBox.setEditable(True)
+        textComboBox.sSP..(QSizePolicy.E..,
                 QSizePolicy.Preferred)
 
         textLabel _ QLabel("&Text:")
-        textLabel.setBuddy(self.textComboBox)
+        textLabel.setBuddy(textComboBox)
 
-        self.caseSensitiveCheckBox _ QCheckBox("Case &Sensitive")
-        self.caseSensitiveCheckBox.setChecked(True)
-        self.minimalCheckBox _ QCheckBox("&Minimal")
+        caseSensitiveCheckBox _ QCheckBox("Case &Sensitive")
+        caseSensitiveCheckBox.setChecked(True)
+        minimalCheckBox _ QCheckBox("&Minimal")
 
         indexLabel _ QLabel("Index of Match:")
-        self.indexEdit _ ?LE..
-        self.indexEdit.setReadOnly(True)
+        indexEdit _ ?LE..
+        indexEdit.setReadOnly(True)
 
         matchedLengthLabel _ QLabel("Matched Length:")
-        self.matchedLengthEdit _ ?LE..
-        self.matchedLengthEdit.setReadOnly(True)
+        matchedLengthEdit _ ?LE..
+        matchedLengthEdit.setReadOnly(True)
 
-        self.captureLabels _   # list
-        self.captureEdits _   # list
-        for i in range(self.MaxCaptures):
-            self.captureLabels.ap..(QLabel("Capture %d:" % i))
-            self.captureEdits.ap..(QLineEdit())
-            self.captureEdits[i].setReadOnly(True)
-        self.captureLabels[0].sT..("Match:")
+        captureLabels _   # list
+        captureEdits _   # list
+        ___ i __ range(MaxCaptures):
+            captureLabels.ap..(QLabel("Capture %d:" % i))
+            captureEdits.ap..(QLineEdit())
+            captureEdits[i].setReadOnly(True)
+        captureLabels[0].sT..("Match:")
 
         checkBoxLayout _ QHBoxLayout()
-        checkBoxLayout.aW..(self.caseSensitiveCheckBox)
-        checkBoxLayout.aW..(self.minimalCheckBox)
+        checkBoxLayout.aW..(caseSensitiveCheckBox)
+        checkBoxLayout.aW..(minimalCheckBox)
         checkBoxLayout.addStretch(1)
 
         mainLayout _ QGridLayout()
         mainLayout.aW..(patternLabel, 0, 0)
-        mainLayout.aW..(self.patternComboBox, 0, 1)
+        mainLayout.aW..(patternComboBox, 0, 1)
         mainLayout.aW..(escapedPatternLabel, 1, 0)
-        mainLayout.aW..(self.escapedPatternLineEdit, 1, 1)
+        mainLayout.aW..(escapedPatternLineEdit, 1, 1)
         mainLayout.aW..(syntaxLabel, 2, 0)
-        mainLayout.aW..(self.syntaxComboBox, 2, 1)
-        mainLayout.addLayout(checkBoxLayout, 3, 0, 1, 2)
+        mainLayout.aW..(syntaxComboBox, 2, 1)
+        mainLayout.aL..(checkBoxLayout, 3, 0, 1, 2)
         mainLayout.aW..(textLabel, 4, 0)
-        mainLayout.aW..(self.textComboBox, 4, 1)
+        mainLayout.aW..(textComboBox, 4, 1)
         mainLayout.aW..(indexLabel, 5, 0)
-        mainLayout.aW..(self.indexEdit, 5, 1)
+        mainLayout.aW..(indexEdit, 5, 1)
         mainLayout.aW..(matchedLengthLabel, 6, 0)
-        mainLayout.aW..(self.matchedLengthEdit, 6, 1)
+        mainLayout.aW..(matchedLengthEdit, 6, 1)
 
-        for i in range(self.MaxCaptures):
-            mainLayout.aW..(self.captureLabels[i], 7 + i, 0)
-            mainLayout.aW..(self.captureEdits[i], 7 + i, 1)
-        self.sL..(mainLayout)
+        ___ i __ range(MaxCaptures):
+            mainLayout.aW..(captureLabels[i], 7 + i, 0)
+            mainLayout.aW..(captureEdits[i], 7 + i, 1)
+        sL..(mainLayout)
 
-        self.patternComboBox.editTextChanged.c..(self.refresh)
-        self.textComboBox.editTextChanged.c..(self.refresh)
-        self.caseSensitiveCheckBox.toggled.c..(self.refresh)
-        self.minimalCheckBox.toggled.c..(self.refresh)
-        self.syntaxComboBox.currentIndexChanged.c..(self.refresh)
+        patternComboBox.editTextChanged.c..(refresh)
+        textComboBox.editTextChanged.c..(refresh)
+        caseSensitiveCheckBox.toggled.c..(refresh)
+        minimalCheckBox.toggled.c..(refresh)
+        syntaxComboBox.currentIndexChanged.c..(refresh)
 
-        self.patternComboBox.addItem("[A-Za-z_]+([A-Za-z_0-9]*)")
-        self.textComboBox.addItem("(10 + delta4)* 32")
+        patternComboBox.addItem("[A-Za-z_]+([A-Za-z_0-9]*)")
+        textComboBox.addItem("(10 + delta4)* 32")
 
-        self.setWindowTitle("RegExp")
-        self.setFixedHeight(self.sizeHint().height())
-        self.refresh()
+        setWindowTitle("RegExp")
+        setFixedHeight(sizeHint().height())
+        refresh()
 
-    ___ refresh(self):
-        self.setUpdatesEnabled F..
+    ___ refresh 
+        setUpdatesEnabled F..
 
-        pattern _ self.patternComboBox.currentText()
-        t__ _ self.textComboBox.currentText()
+        pattern _ patternComboBox.currentText()
+        t__ _ textComboBox.currentText()
 
         escaped _ str(pattern)
         escaped.replace('\\', '\\\\')
         escaped.replace('"', '\\"')
-        self.escapedPatternLineEdit.sT..('"' + escaped + '"')
+        escapedPatternLineEdit.sT..('"' + escaped + '"')
 
         rx _ QRegExp(pattern)
-        cs _ __.CaseSensitive __ self.caseSensitiveCheckBox.isChecked() else __.CaseInsensitive
+        cs _ __.CaseSensitive __ caseSensitiveCheckBox.isChecked() else __.CaseInsensitive
         rx.setCaseSensitivity(cs)
-        rx.setMinimal(self.minimalCheckBox.isChecked())
-        syntax _ self.syntaxComboBox.itemData(self.syntaxComboBox.currentIndex())
+        rx.setMinimal(minimalCheckBox.isChecked())
+        syntax _ syntaxComboBox.itemData(syntaxComboBox.currentIndex())
         rx.setPatternSyntax(syntax)
 
-        palette _ self.patternComboBox.palette()
+        palette _ patternComboBox.palette()
         __ rx.isValid
             palette.sC..(?P...Text,
-                    self.textComboBox.palette().color(?P...Text))
+                    textComboBox.palette().color(?P...Text))
         ____
             palette.sC..(?P...Text, __.red)
-        self.patternComboBox.sP..(palette)
+        patternComboBox.sP..(palette)
 
-        self.indexEdit.sT..(str(rx.indexIn(t__)))
-        self.matchedLengthEdit.sT..(str(rx.matchedLength()))
+        indexEdit.sT..(str(rx.indexIn(t__)))
+        matchedLengthEdit.sT..(str(rx.matchedLength()))
 
-        for i in range(self.MaxCaptures):
-            self.captureLabels[i].setEnabled(i <_ rx.captureCount())
-            self.captureEdits[i].setEnabled(i <_ rx.captureCount())
-            self.captureEdits[i].sT..(rx.cap(i))
+        ___ i __ range(MaxCaptures):
+            captureLabels[i].setEnabled(i <_ rx.captureCount())
+            captureEdits[i].setEnabled(i <_ rx.captureCount())
+            captureEdits[i].sT..(rx.cap(i))
 
-        self.setUpdatesEnabled(True)
+        setUpdatesEnabled(True)
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     dialog _ RegExpDialog()
     dialog.s..
     ___.exit(app.exec_())

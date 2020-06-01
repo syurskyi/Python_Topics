@@ -47,31 +47,31 @@ ____ ?.?W.. ______ QGridLayout, QLabel, QLineEdit, QTextEdit, QWidget
 
 
 c_ AddressBook(QWidget):
-    ___ __init__  parent_None):
-        super(AddressBook, self).__init__(parent)
+    ___  -   parent_None):
+        super(AddressBook, self). - (parent)
 
         nameLabel _ QLabel("Name:")
-        self.nameLine _ ?LE..
+        nameLine _ ?LE..
 
         addressLabel _ QLabel("Address:")
-        self.addressText _ QTextEdit()
+        addressText _ QTextEdit()
 
         mainLayout _ QGridLayout()
         mainLayout.aW..(nameLabel, 0, 0)
-        mainLayout.aW..(self.nameLine, 0, 1)
+        mainLayout.aW..(nameLine, 0, 1)
         mainLayout.aW..(addressLabel, 1, 0, __.AlignTop)
-        mainLayout.aW..(self.addressText, 1, 1)
+        mainLayout.aW..(addressText, 1, 1)
 
-        self.sL..(mainLayout)
-        self.setWindowTitle("Simple Address Book")
+        sL..(mainLayout)
+        setWindowTitle("Simple Address Book")
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
     ______ ___
 
     ____ ?.?W.. ______ ?A..
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     addressBook _ AddressBook()
     addressBook.s..

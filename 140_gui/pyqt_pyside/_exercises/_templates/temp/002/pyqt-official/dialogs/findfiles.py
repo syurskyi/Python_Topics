@@ -52,22 +52,22 @@ ____ ?.?W.. ______ (QAbstractItemView, ?A.., QComboBox,
 
 
 c_ Window(QDialog):
-    ___ __init__  parent_None):
-        super(Window, self).__init__(parent)
+    ___  -   parent_None):
+        super(Window, self). - (parent)
 
-        browseButton _ self.createButton("&Browse...", self.browse)
-        findButton _ self.createButton("&Find", self.find)
+        browseButton _ createButton("&Browse...", browse)
+        findButton _ createButton("&Find", find)
 
-        self.fileComboBox _ self.createComboBox("*")
-        self.textComboBox _ self.createComboBox()
-        self.directoryComboBox _ self.createComboBox(QDir.currentPath())
+        fileComboBox _ createComboBox("*")
+        textComboBox _ createComboBox()
+        directoryComboBox _ createComboBox(QDir.currentPath())
 
         fileLabel _ QLabel("Named:")
         textLabel _ QLabel("Containing text:")
         directoryLabel _ QLabel("In directory:")
-        self.filesFoundLabel _ QLabel()
+        filesFoundLabel _ QLabel()
 
-        self.createFilesTable()
+        createFilesTable()
 
         buttonsLayout _ QHBoxLayout()
         buttonsLayout.addStretch()
@@ -75,58 +75,58 @@ c_ Window(QDialog):
 
         mainLayout _ QGridLayout()
         mainLayout.aW..(fileLabel, 0, 0)
-        mainLayout.aW..(self.fileComboBox, 0, 1, 1, 2)
+        mainLayout.aW..(fileComboBox, 0, 1, 1, 2)
         mainLayout.aW..(textLabel, 1, 0)
-        mainLayout.aW..(self.textComboBox, 1, 1, 1, 2)
+        mainLayout.aW..(textComboBox, 1, 1, 1, 2)
         mainLayout.aW..(directoryLabel, 2, 0)
-        mainLayout.aW..(self.directoryComboBox, 2, 1)
+        mainLayout.aW..(directoryComboBox, 2, 1)
         mainLayout.aW..(browseButton, 2, 2)
-        mainLayout.aW..(self.filesTable, 3, 0, 1, 3)
-        mainLayout.aW..(self.filesFoundLabel, 4, 0)
-        mainLayout.addLayout(buttonsLayout, 5, 0, 1, 3)
-        self.sL..(mainLayout)
+        mainLayout.aW..(filesTable, 3, 0, 1, 3)
+        mainLayout.aW..(filesFoundLabel, 4, 0)
+        mainLayout.aL..(buttonsLayout, 5, 0, 1, 3)
+        sL..(mainLayout)
 
-        self.setWindowTitle("Find Files")
-        self.resize(700, 300)
+        setWindowTitle("Find Files")
+        resize(700, 300)
 
-    ___ browse(self):
+    ___ browse
         directory _ ?FD...getExistingDirectory  "Find Files",
                 QDir.currentPath())
 
         __ directory:
-            __ self.directoryComboBox.findText(directory) == -1:
-                self.directoryComboBox.addItem(directory)
+            __ directoryComboBox.findText(directory) == -1:
+                directoryComboBox.addItem(directory)
 
-            self.directoryComboBox.setCurrentIndex(self.directoryComboBox.findText(directory))
+            directoryComboBox.setCurrentIndex(directoryComboBox.findText(directory))
 
     @staticmethod
     ___ updateComboBox(comboBox):
         __ comboBox.findText(comboBox.currentText()) == -1:
             comboBox.addItem(comboBox.currentText())
 
-    ___ find(self):
-        self.filesTable.setRowCount(0)
+    ___ find
+        filesTable.setRowCount(0)
 
-        fileName _ self.fileComboBox.currentText()
-        t__ _ self.textComboBox.currentText()
-        path _ self.directoryComboBox.currentText()
+        fileName _ fileComboBox.currentText()
+        t__ _ textComboBox.currentText()
+        path _ directoryComboBox.currentText()
 
-        self.updateComboBox(self.fileComboBox)
-        self.updateComboBox(self.textComboBox)
-        self.updateComboBox(self.directoryComboBox)
+        updateComboBox(fileComboBox)
+        updateComboBox(textComboBox)
+        updateComboBox(directoryComboBox)
 
-        self.currentDir _ QDir(path)
+        currentDir _ QDir(path)
         __ no. fileName:
             fileName _ "*"
-        files _ self.currentDir.entryList([fileName],
+        files _ currentDir.entryList([fileName],
                 QDir.Files | QDir.NoSymLinks)
 
         __ t__:
-            files _ self.findFiles(files, t__)
-        self.showFiles(files)
+            files _ findFiles(files, t__)
+        showFiles(files)
 
     ___ findFiles  files, t__):
-        progressDialog _ QProgressDialog(self)
+        progressDialog _ QProgressDialog
 
         progressDialog.setCancelButtonText("&Cancel")
         progressDialog.setRange(0, files.count())
@@ -134,7 +134,7 @@ c_ Window(QDialog):
 
         foundFiles _   # list
 
-        for i in range(files.count()):
+        ___ i __ range(files.count()):
             progressDialog.setValue(i)
             progressDialog.setLabelText("Searching file number %d of %d..." % (i, files.count()))
             ?A...processEvents()
@@ -142,7 +142,7 @@ c_ Window(QDialog):
             __ progressDialog.wasCanceled
                 break
 
-            inFile _ QFile(self.currentDir.absoluteFilePath(files[i]))
+            inFile _ QFile(currentDir.absoluteFilePath(files[i]))
 
             __ inFile.o..(QIODevice.ReadOnly):
                 stream _ QTextStream(inFile)
@@ -150,7 +150,7 @@ c_ Window(QDialog):
                     __ progressDialog.wasCanceled
                         break
                     line _ stream.readLine()
-                    __ t__ in line:
+                    __ t__ __ line:
                         foundFiles.ap..(files[i])
                         break
 
@@ -159,8 +159,8 @@ c_ Window(QDialog):
         r_ foundFiles
 
     ___ showFiles  files):
-        for fn in files:
-            file _ QFile(self.currentDir.absoluteFilePath(fn))
+        ___ fn __ files:
+            file _ QFile(currentDir.absoluteFilePath(fn))
             size _ QFileInfo(file).size()
 
             fileNameItem _ QTableWidgetItem(fn)
@@ -169,12 +169,12 @@ c_ Window(QDialog):
             sizeItem.setTextAlignment(__.AlignVCenter | __.AlignRight)
             sizeItem.setFlags(sizeItem.flags() ^ __.ItemIsEditable)
 
-            row _ self.filesTable.rowCount()
-            self.filesTable.insertRow(row)
-            self.filesTable.setItem(row, 0, fileNameItem)
-            self.filesTable.setItem(row, 1, sizeItem)
+            row _ filesTable.rowCount()
+            filesTable.insertRow(row)
+            filesTable.setItem(row, 0, fileNameItem)
+            filesTable.setItem(row, 1, sizeItem)
 
-        self.filesFoundLabel.sT..("%d file(s) found (Double click on a file to open it)" % le.(files))
+        filesFoundLabel.sT..("%d file(s) found (Double click on a file to open it)" % le.(files))
 
     ___ createButton  t__, member):
         button _ ?PB..(t__)
@@ -185,31 +185,31 @@ c_ Window(QDialog):
         comboBox _ QComboBox()
         comboBox.setEditable(True)
         comboBox.addItem(t__)
-        comboBox.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Preferred)
+        comboBox.sSP..(QSizePolicy.E.., QSizePolicy.Preferred)
         r_ comboBox
 
-    ___ createFilesTable(self):
-        self.filesTable _ QTableWidget(0, 2)
-        self.filesTable.setSelectionBehavior(QAbstractItemView.SelectRows)
+    ___ createFilesTable
+        filesTable _ QTableWidget(0, 2)
+        filesTable.setSelectionBehavior(QAbstractItemView.SelectRows)
 
-        self.filesTable.setHorizontalHeaderLabels(("File Name", "Size"))
-        self.filesTable.horizontalHeader().setSectionResizeMode(0, QHeaderView.Stretch)
-        self.filesTable.verticalHeader().hide()
-        self.filesTable.setShowGrid F..
+        filesTable.setHorizontalHeaderLabels(("File Name", "Size"))
+        filesTable.horizontalHeader().setSectionResizeMode(0, QHeaderView.Stretch)
+        filesTable.verticalHeader().hide()
+        filesTable.setShowGrid F..
 
-        self.filesTable.cellActivated.c..(self.openFileOfItem)
+        filesTable.cellActivated.c..(openFileOfItem)
 
     ___ openFileOfItem  row, column):
-        item _ self.filesTable.item(row, 0)
+        item _ filesTable.item(row, 0)
 
-        QDesktopServices.openUrl(QUrl(self.currentDir.absoluteFilePath(item.t__())))
+        QDesktopServices.openUrl(QUrl(currentDir.absoluteFilePath(item.t__())))
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     window _ Window()
     window.s..
     ___.exit(app.exec_())

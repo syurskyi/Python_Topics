@@ -52,65 +52,65 @@ ____ ?.?W.. ______ (?A.., QComboBox, QGridLayout, QLabel,
 
 
 c_ RenderArea(QWidget):
-    ___ __init__  path, parent_None):
-        super(RenderArea, self).__init__(parent)
+    ___  -   path, parent_None):
+        super(RenderArea, self). - (parent)
 
-        self.path _ path
+        path _ path
 
-        self.penWidth _ 1
-        self.rotationAngle _ 0
-        self.setBackgroundRole(?P...Base)
+        penWidth _ 1
+        rotationAngle _ 0
+        setBackgroundRole(?P...Base)
 
-    ___ minimumSizeHint(self):
+    ___ minimumSizeHint
         r_ QSize(50, 50)
 
-    ___ sizeHint(self):
+    ___ sizeHint
         r_ QSize(100, 100)
 
     ___ setFillRule  rule):
-        self.path.setFillRule(rule)
-        self.update()
+        path.setFillRule(rule)
+        update()
 
     ___ setFillGradient  color1, color2):
-        self.fillColor1 _ color1
-        self.fillColor2 _ color2
-        self.update()
+        fillColor1 _ color1
+        fillColor2 _ color2
+        update()
 
     ___ setPenWidth  width):
-        self.penWidth _ width
-        self.update()
+        penWidth _ width
+        update()
 
     ___ setPenColor  color):
-        self.penColor _ color
-        self.update()
+        penColor _ color
+        update()
 
     ___ setRotationAngle  degrees):
-        self.rotationAngle _ degrees
-        self.update()
+        rotationAngle _ degrees
+        update()
 
     ___ paintEvent  event):
-        painter _ QPainter(self)
+        painter _ QPainter
         painter.setRenderHint(QPainter.Antialiasing)
-        painter.scale(self.width() / 100.0, self.height() / 100.0)
+        painter.scale(width() / 100.0, height() / 100.0)
         painter.translate(50.0, 50.0)
-        painter.rotate(-self.rotationAngle)
+        painter.rotate(-rotationAngle)
         painter.translate(-50.0, -50.0)
 
         painter.setPen(
-                QPen(self.penColor, self.penWidth, __.SolidLine, __.RoundCap,
+                QPen(penColor, penWidth, __.SolidLine, __.RoundCap,
                         __.RoundJoin))
         gradient _ QLinearGradient(0, 0, 0, 100)
-        gradient.setColorAt(0.0, self.fillColor1)
-        gradient.setColorAt(1.0, self.fillColor2)
+        gradient.setColorAt(0.0, fillColor1)
+        gradient.setColorAt(1.0, fillColor2)
         painter.setBrush(QBrush(gradient))
-        painter.drawPath(self.path)
+        painter.drawPath(path)
 
 
 c_ Window(QWidget):
     NumRenderAreas _ 9
 
-    ___ __init__(self):
-        super(Window, self).__init__()
+    ___  - 
+        super(Window, self). - ()
 
         rectPath _ QPainterPath()
         rectPath.moveTo(20.0, 30.0)
@@ -167,132 +167,132 @@ c_ Window(QWidget):
 
         starPath _ QPainterPath()
         starPath.moveTo(90, 50)
-        for i in range(1, 5):
+        ___ i __ range(1, 5):
             starPath.lineTo(50 + 40 * cos(0.8 * i * pi),
                     50 + 40 * sin(0.8 * i * pi))
         starPath.closeSubpath()
 
-        self.renderAreas _ [RenderArea(rectPath), RenderArea(roundRectPath),
+        renderAreas _ [RenderArea(rectPath), RenderArea(roundRectPath),
                 RenderArea(ellipsePath), RenderArea(piePath),
                 RenderArea(polygonPath), RenderArea(groupPath),
                 RenderArea(textPath), RenderArea(bezierPath),
                 RenderArea(starPath)]
-        assert le.(self.renderAreas) == 9
+        assert le.(renderAreas) == 9
 
-        self.fillRuleComboBox _ QComboBox()
-        self.fillRuleComboBox.addItem("Odd Even", __.OddEvenFill)
-        self.fillRuleComboBox.addItem("Winding", __.WindingFill)
+        fillRuleComboBox _ QComboBox()
+        fillRuleComboBox.addItem("Odd Even", __.OddEvenFill)
+        fillRuleComboBox.addItem("Winding", __.WindingFill)
 
         fillRuleLabel _ QLabel("Fill &Rule:")
-        fillRuleLabel.setBuddy(self.fillRuleComboBox)
+        fillRuleLabel.setBuddy(fillRuleComboBox)
 
-        self.fillColor1ComboBox _ QComboBox()
-        self.populateWithColors(self.fillColor1ComboBox)
-        self.fillColor1ComboBox.setCurrentIndex(
-                self.fillColor1ComboBox.findText("mediumslateblue"))
+        fillColor1ComboBox _ QComboBox()
+        populateWithColors(fillColor1ComboBox)
+        fillColor1ComboBox.setCurrentIndex(
+                fillColor1ComboBox.findText("mediumslateblue"))
 
-        self.fillColor2ComboBox _ QComboBox()
-        self.populateWithColors(self.fillColor2ComboBox)
-        self.fillColor2ComboBox.setCurrentIndex(
-                self.fillColor2ComboBox.findText("cornsilk"))
+        fillColor2ComboBox _ QComboBox()
+        populateWithColors(fillColor2ComboBox)
+        fillColor2ComboBox.setCurrentIndex(
+                fillColor2ComboBox.findText("cornsilk"))
 
         fillGradientLabel _ QLabel("&Fill Gradient:")
-        fillGradientLabel.setBuddy(self.fillColor1ComboBox)
+        fillGradientLabel.setBuddy(fillColor1ComboBox)
 
         fillToLabel _ QLabel("to")
-        fillToLabel.setSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
+        fillToLabel.sSP..(QSizePolicy.Fixed, QSizePolicy.Fixed)
 
-        self.penWidthSpinBox _ QSpinBox()
-        self.penWidthSpinBox.setRange(0, 20)
+        penWidthSpinBox _ QSpinBox()
+        penWidthSpinBox.setRange(0, 20)
 
         penWidthLabel _ QLabel("&Pen Width:")
-        penWidthLabel.setBuddy(self.penWidthSpinBox)
+        penWidthLabel.setBuddy(penWidthSpinBox)
 
-        self.penColorComboBox _ QComboBox()
-        self.populateWithColors(self.penColorComboBox)
-        self.penColorComboBox.setCurrentIndex(
-                self.penColorComboBox.findText('darkslateblue'))
+        penColorComboBox _ QComboBox()
+        populateWithColors(penColorComboBox)
+        penColorComboBox.setCurrentIndex(
+                penColorComboBox.findText('darkslateblue'))
 
         penColorLabel _ QLabel("Pen &Color:")
-        penColorLabel.setBuddy(self.penColorComboBox)
+        penColorLabel.setBuddy(penColorComboBox)
 
-        self.rotationAngleSpinBox _ QSpinBox()
-        self.rotationAngleSpinBox.setRange(0, 359)
-        self.rotationAngleSpinBox.setWrapping(True)
-        self.rotationAngleSpinBox.setSuffix(u'\N{DEGREE SIGN}')
+        rotationAngleSpinBox _ QSpinBox()
+        rotationAngleSpinBox.setRange(0, 359)
+        rotationAngleSpinBox.setWrapping(True)
+        rotationAngleSpinBox.setSuffix(u'\N{DEGREE SIGN}')
 
         rotationAngleLabel _ QLabel("&Rotation Angle:")
-        rotationAngleLabel.setBuddy(self.rotationAngleSpinBox)
+        rotationAngleLabel.setBuddy(rotationAngleSpinBox)
 
-        self.fillRuleComboBox.activated.c..(self.fillRuleChanged)
-        self.fillColor1ComboBox.activated.c..(self.fillGradientChanged)
-        self.fillColor2ComboBox.activated.c..(self.fillGradientChanged)
-        self.penColorComboBox.activated.c..(self.penColorChanged)
+        fillRuleComboBox.activated.c..(fillRuleChanged)
+        fillColor1ComboBox.activated.c..(fillGradientChanged)
+        fillColor2ComboBox.activated.c..(fillGradientChanged)
+        penColorComboBox.activated.c..(penColorChanged)
 
-        for i in range(Window.NumRenderAreas):
-            self.penWidthSpinBox.valueChanged.c..(self.renderAreas[i].setPenWidth)
-            self.rotationAngleSpinBox.valueChanged.c..(self.renderAreas[i].setRotationAngle)
+        ___ i __ range(Window.NumRenderAreas):
+            penWidthSpinBox.valueChanged.c..(renderAreas[i].setPenWidth)
+            rotationAngleSpinBox.valueChanged.c..(renderAreas[i].setRotationAngle)
 
         topLayout _ QGridLayout()
-        for i in range(Window.NumRenderAreas):
-            topLayout.aW..(self.renderAreas[i], i / 3, i % 3)
+        ___ i __ range(Window.NumRenderAreas):
+            topLayout.aW..(renderAreas[i], i / 3, i % 3)
 
         mainLayout _ QGridLayout()
-        mainLayout.addLayout(topLayout, 0, 0, 1, 4)
+        mainLayout.aL..(topLayout, 0, 0, 1, 4)
         mainLayout.aW..(fillRuleLabel, 1, 0)
-        mainLayout.aW..(self.fillRuleComboBox, 1, 1, 1, 3)
+        mainLayout.aW..(fillRuleComboBox, 1, 1, 1, 3)
         mainLayout.aW..(fillGradientLabel, 2, 0)
-        mainLayout.aW..(self.fillColor1ComboBox, 2, 1)
+        mainLayout.aW..(fillColor1ComboBox, 2, 1)
         mainLayout.aW..(fillToLabel, 2, 2)
-        mainLayout.aW..(self.fillColor2ComboBox, 2, 3)
+        mainLayout.aW..(fillColor2ComboBox, 2, 3)
         mainLayout.aW..(penWidthLabel, 3, 0)
-        mainLayout.aW..(self.penWidthSpinBox, 3, 1, 1, 3)
+        mainLayout.aW..(penWidthSpinBox, 3, 1, 1, 3)
         mainLayout.aW..(penColorLabel, 4, 0)
-        mainLayout.aW..(self.penColorComboBox, 4, 1, 1, 3)
+        mainLayout.aW..(penColorComboBox, 4, 1, 1, 3)
         mainLayout.aW..(rotationAngleLabel, 5, 0)
-        mainLayout.aW..(self.rotationAngleSpinBox, 5, 1, 1, 3)
-        self.sL..(mainLayout)
+        mainLayout.aW..(rotationAngleSpinBox, 5, 1, 1, 3)
+        sL..(mainLayout)
 
-        self.fillRuleChanged()
-        self.fillGradientChanged()
-        self.penColorChanged()
-        self.penWidthSpinBox.setValue(2)
+        fillRuleChanged()
+        fillGradientChanged()
+        penColorChanged()
+        penWidthSpinBox.setValue(2)
 
-        self.setWindowTitle("Painter Paths")
+        setWindowTitle("Painter Paths")
 
-    ___ fillRuleChanged(self):
-        rule _ __.FillRule(self.currentItemData(self.fillRuleComboBox))
+    ___ fillRuleChanged
+        rule _ __.FillRule(currentItemData(fillRuleComboBox))
 
-        for i in range(Window.NumRenderAreas):
-            self.renderAreas[i].setFillRule(rule)
+        ___ i __ range(Window.NumRenderAreas):
+            renderAreas[i].setFillRule(rule)
 
-    ___ fillGradientChanged(self):
-        color1 _ ?C..(self.currentItemData(self.fillColor1ComboBox))
-        color2 _ ?C..(self.currentItemData(self.fillColor2ComboBox))
+    ___ fillGradientChanged
+        color1 _ ?C..(currentItemData(fillColor1ComboBox))
+        color2 _ ?C..(currentItemData(fillColor2ComboBox))
 
-        for i in range(Window.NumRenderAreas):
-            self.renderAreas[i].setFillGradient(color1, color2)
+        ___ i __ range(Window.NumRenderAreas):
+            renderAreas[i].setFillGradient(color1, color2)
 
-    ___ penColorChanged(self):
-        color _ ?C..(self.currentItemData(self.penColorComboBox))
+    ___ penColorChanged
+        color _ ?C..(currentItemData(penColorComboBox))
 
-        for i in range(Window.NumRenderAreas):
-            self.renderAreas[i].setPenColor(color)
+        ___ i __ range(Window.NumRenderAreas):
+            renderAreas[i].setPenColor(color)
 
     ___ populateWithColors  comboBox):
         colorNames _ ?C...colorNames()
-        for name in colorNames:
+        ___ name __ colorNames:
             comboBox.addItem(name, name)
 
     ___ currentItemData  comboBox):
         r_ comboBox.itemData(comboBox.currentIndex())
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     window _ Window()
     window.s..
     ___.exit(app.exec_())

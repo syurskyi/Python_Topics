@@ -2,5 +2,5 @@
 
 ____ qtictactoe.__main__ ______ main
 
-__ __name__ == '__main__':
+__ ______ __ ______
     main()

@@ -49,8 +49,8 @@ ____ ?.?W.. ______ (?A.., QCheckBox, QDialog,
 
 
 c_ TabDialog(QDialog):
-    ___ __init__  fileName, parent_None):
-        super(TabDialog, self).__init__(parent)
+    ___  -   fileName, parent_None):
+        super(TabDialog, self). - (parent)
 
         fileInfo _ QFileInfo(fileName)
 
@@ -61,20 +61,20 @@ c_ TabDialog(QDialog):
 
         buttonBox _ QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
 
-        buttonBox.accepted.c..(self.accept)
-        buttonBox.rejected.c..(self.reject)
+        buttonBox.accepted.c..(accept)
+        buttonBox.rejected.c..(reject)
 
         mainLayout _ ?VBL..
         mainLayout.aW..(tabWidget)
         mainLayout.aW..(buttonBox)
-        self.sL..(mainLayout)
+        sL..(mainLayout)
 
-        self.setWindowTitle("Tab Dialog")
+        setWindowTitle("Tab Dialog")
 
 
 c_ GeneralTab(QWidget):
-    ___ __init__  fileInfo, parent_None):
-        super(GeneralTab, self).__init__(parent)
+    ___  -   fileInfo, parent_None):
+        super(GeneralTab, self). - (parent)
 
         fileNameLabel _ QLabel("File Name:")
         fileNameEdit _ QLineEdit(fileInfo.fileName())
@@ -108,12 +108,12 @@ c_ GeneralTab(QWidget):
         mainLayout.aW..(lastModLabel)
         mainLayout.aW..(lastModValueLabel)
         mainLayout.addStretch(1)
-        self.sL..(mainLayout)
+        sL..(mainLayout)
 
 
 c_ PermissionsTab(QWidget):
-    ___ __init__  fileInfo, parent_None):
-        super(PermissionsTab, self).__init__(parent)
+    ___  -   fileInfo, parent_None):
+        super(PermissionsTab, self). - (parent)
 
         permissionsGroup _ QGroupBox("Permissions")
 
@@ -156,19 +156,19 @@ c_ PermissionsTab(QWidget):
         mainLayout.aW..(permissionsGroup)
         mainLayout.aW..(ownerGroup)
         mainLayout.addStretch(1)
-        self.sL..(mainLayout)
+        sL..(mainLayout)
 
 
 c_ ApplicationsTab(QWidget):
-    ___ __init__  fileInfo, parent_None):
-        super(ApplicationsTab, self).__init__(parent)
+    ___  -   fileInfo, parent_None):
+        super(ApplicationsTab, self). - (parent)
 
         topLabel _ QLabel("Open with:")
 
         applicationsListBox _ QListWidget()
         applications _   # list
 
-        for i in range(1, 31):
+        ___ i __ range(1, 31):
             applications.ap..("Application %d" % i)
 
         applicationsListBox.insertItems(0, applications)
@@ -186,16 +186,16 @@ c_ ApplicationsTab(QWidget):
         layout.aW..(topLabel)
         layout.aW..(applicationsListBox)
         layout.aW..(alwaysCheckBox)
-        self.sL..(layout)
+        sL..(layout)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
-    __ le.(___.argv) >_ 2:
+    __ le.(___.a.. >_ 2:
         fileName _ ___.argv[1]
     ____
         fileName _ "."

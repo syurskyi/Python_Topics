@@ -22,38 +22,38 @@ c_ TTTBoard(qtw.QGraphicsScene):
 
     square_clicked _ qtc.pyqtSignal(int)
 
-    ___ __init__(self):
-        super().__init__()
-        self.setSceneRect(0, 0, 600, 600)
-        self.setBackgroundBrush(qtg.QBrush(qtc.__.cyan))
-        for square in self.square_rects:
-            self.addRect(square, brush_qtg.QBrush(qtc.__.white))
+    ___  -  
+        s_. - ()
+        setSceneRect(0, 0, 600, 600)
+        setBackgroundBrush(qtg.QBrush(qtc.__.cyan))
+        ___ square __ square_rects:
+            addRect(square, brush_qtg.QBrush(qtc.__.white))
 
         __ getattr(___, 'frozen', False):
             directory _ ___._MEIPASS
         ____  # Not frozen
             directory _ path.dirname(__file__)
-        self.mark_pngs _ {
+        mark_pngs _ {
             'X': qtg.QPixmap(path.join(directory, 'images', 'X.png')),
             'O': qtg.QPixmap(path.join(directory, 'images', 'O.png'))
         }
-        self.marks _   # list
+        marks _   # list
 
     ___ set_board  marks):
-        for i, square in enumerate(marks):
-            __ square in self.mark_pngs:
-                mark _ self.addPixmap(self.mark_pngs[square])
-                mark.setPos(self.square_rects[i].topLeft())
-                self.marks.ap..(mark)
+        ___ i, square __ en..(marks):
+            __ square __ mark_pngs:
+                mark _ addPixmap(mark_pngs[square])
+                mark.setPos(square_rects[i].topLeft())
+                marks.ap..(mark)
 
-    ___ clear_board(self):
-        for mark in self.marks:
-            self.removeItem(mark)
+    ___ clear_board 
+        ___ mark __ marks:
+            removeItem(mark)
 
     ___ mousePressEvent  mouse_event):
         """Handle mouse clicks on the board"""
         position _ mouse_event.buttonDownScenePos(qtc.__.LeftButton)
-        for square, qrect in enumerate(self.square_rects):
+        ___ square, qrect __ en..(square_rects):
             __ qrect.contains(position):
-                self.square_clicked.emit(square)
+                square_clicked.emit(square)
                 break

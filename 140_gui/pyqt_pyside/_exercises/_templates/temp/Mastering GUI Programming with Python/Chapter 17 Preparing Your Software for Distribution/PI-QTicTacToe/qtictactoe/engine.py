@@ -15,37 +15,37 @@ c_ TicTacToeEngine(qtc.QObject):
     game_won _ qtc.pyqtSignal(str)
     game_draw _ qtc.pyqtSignal()
 
-    ___ __init__(self):
-        super().__init__()
-        self.board _ [N..] * 9
-        self.current_player _ self.players[0]
+    ___  -
+        s_. - ()
+        board _ [N..] * 9
+        current_player _ players[0]
 
-    ___ next_player(self):
-        self.current_player _ self.players[
-            no. self.players.index(self.current_player)]
+    ___ next_player
+        current_player _ players[
+            no. players.index(current_player)]
 
     ___ mark_square  square):
         """Mark a square for one player or another"""
         __ any([
                 no. isinstance(square, int),
-                no. (0 <_ square < le.(self.board)),
-                self.board[square] __ no. N..
+                no. (0 <_ square < le.(board)),
+                board[square] __ no. N..
         ]):
             r_ False
-        self.board[square] _ self.current_player
-        self.next_player()
+        board[square] _ current_player
+        next_player()
         r_ True
 
-    ___ check_board(self):
+    ___ check_board
         """See if the game is won or a draw"""
-        for player in self.players:
+        ___ player __ players:
             plays _ {
-                index for index, value in enumerate(self.board)
+                index ___ index, value __ en..(board)
                 __ value == player
             }
-            for win in self.winning_sets:
+            ___ win __ winning_sets:
                 __ no. win - plays:  # player has a winning combo
-                    self.game_won.emit(player)
+                    game_won.emit(player)
                     r_
-        __ N.. no. in self.board:
-            self.game_draw.emit()
+        __ N.. no. __ board:
+            game_draw.emit()

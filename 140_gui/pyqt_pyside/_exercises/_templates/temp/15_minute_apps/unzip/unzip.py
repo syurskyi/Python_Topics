@@ -45,120 +45,120 @@ class UnzipWorker(QRunnable):
     '''
     signals = WorkerSignals()
 
-    def __init__(self, path):
-        super(UnzipWorker, self).__init__()
+    def  - (self, path):
+        super(UnzipWorker, self). - ()
         os.chdir(os.path.dirname(path))
-        self.zipfile = zipfile.ZipFile(path)
+        zipfile = zipfile.ZipFile(path)
 
     @pyqtSlot()
-    def run(self):
+    def run
         try:
-            items = self.zipfile.infolist()
+            items = zipfile.infolist()
             total_n = len(items)
 
-            for n, item in enumerate(items, 1):
-                if not any(item.filename.startswith(p) for p in EXCLUDE_PATHS):
-                    self.zipfile.extract(item)
+            ___ n, item __ en..(items, 1):
+                if not any(item.filename.startswith(p) ___ p __ EXCLUDE_PATHS):
+                    zipfile.extract(item)
 
-                self.signals.progress.emit(n / total_n)
+                signals.progress.emit(n / total_n)
 
         except Exception as e:
             exctype, value = sys.exc_info()[:2]
-            self.signals.error.emit((exctype, value, traceback.format_exc()))
+            signals.error.emit((exctype, value, traceback.format_exc()))
             return
 
-        self.signals.finished.emit()
+        signals.finished.emit()
 
 
 
 class MainWindow(QMainWindow, Ui_MainWindow):
 
-    def __init__(self, *args, **kwargs):
-        super(MainWindow, self).__init__(*args, **kwargs)
-        self.setupUi(self)
+    def  - (self, *args, **kwargs):
+        super(MainWindow, self). - (*args, **kwargs)
+        setupUi
 
-        self.setAttribute(Qt.WA_TranslucentBackground )
-        self.setWindowFlags(Qt.FramelessWindowHint)
-        self.setAcceptDrops(True)
+        setAttribute(Qt.WA_TranslucentBackground )
+        setWindowFlags(Qt.FramelessWindowHint)
+        setAcceptDrops(True)
 
-        self.prev_pos = None
+        prev_pos = None
 
         # Create a threadpool to run our unzip worker in.
-        self.threadpool = QThreadPool()
+        threadpool = QThreadPool()
 
-        self.head.raise_()
+        head.raise_()
 
         def patch_mousePressEvent(self_, e):
-            if e.button() == Qt.LeftButton and self.worker is not None:
+            if e.button() == Qt.LeftButton and worker is not None:
                 # Extract the archive.
                 self_.current_rotation = random.randint(-15, +15)
                 self_.current_y = 30
 
                 # Redraw the mainwindow
-                self.update()
+                update()
 
                 # Perform the unzip
-                self.threadpool.start(self.worker)
-                self.worker = None  # Remove the worker so it is not double-triggered.
+                threadpool.start(worker)
+                worker = None  # Remove the worker so it is not double-triggered.
 
             elif e.button() == Qt.RightButton:
                 pass # Open a new zip.
 
         def patch_paintEvent(self, event):
 
-            p = QPainter(self)
+            p = QPainter
             rect = event.rect()
 
             # Translate
             transform = QTransform()
             transform.translate(rect.width()/2, rect.height()/2)
-            transform.rotate(self.current_rotation)
+            transform.rotate(current_rotation)
             transform.translate(-rect.width()/2, -rect.height()/2)
             p.setTransform(transform)
 
 
             # Calculate rect to center the pixmap on the QLabel.
-            prect = self.pixmap().rect()
+            prect = pixmap().rect()
             rect.adjust(
                 (rect.width() - prect.width()) / 2,
-                self.current_y + (rect.height() - prect.height()) / 2,
+                current_y + (rect.height() - prect.height()) / 2,
                 -(rect.width() - prect.width()) / 2,
-                self.current_y + -(rect.height() - prect.height()) / 2,
+                current_y + -(rect.height() - prect.height()) / 2,
             )
-            p.drawPixmap(rect, self.pixmap())
+            p.drawPixmap(rect, pixmap())
 
-        self.head.mousePressEvent = types.MethodType(patch_mousePressEvent, self.head)
-        self.head.paintEvent = types.MethodType(patch_paintEvent, self.head)
+        head.mousePressEvent = types.MethodType(patch_mousePressEvent, head)
+        head.paintEvent = types.MethodType(patch_paintEvent, head)
 
-        self.timer = QTimer()
-        self.timer.timeout.connect(self.timer_triggered)
-        self.timer.start(5)
+        timer = QTimer()
+        timer.timeout.connect(timer_triggered)
+        timer.start(5)
 
         # Initialize
-        self.head.current_rotation = 0
-        self.head.current_y = 0
-        self.head.locked = True
-        self.worker = None
+        head.current_rotation = 0
+        head.current_y = 0
+        head.locked = True
+        worker = None
 
         # Reset bar to complete (empty)
-        self.update_progress(1)
+        update_progress(1)
 
-        self.show()
+        show()
 
-    def timer_triggered(self):
-        if self.head.current_y > 0:
-            self.head.current_y -= 1
+    def timer_triggered
+        if head.current_y > 0:
+            head.current_y -= 1
 
-        if self.head.current_rotation > 0:
-            self.head.current_rotation -= 1
+        if head.current_rotation > 0:
+            head.current_rotation -= 1
 
-        elif self.head.current_rotation < 0:
-            self.head.current_rotation += 1
+        elif head.current_rotation < 0:
+            head.current_rotation += 1
 
-        self.head.update()
+        head.update()
 
-        if self.head.current_y == 0 and self.head.current_rotation == 0:
-            self.head.locked = False
+        if head.current_y == 0 and head.current_rotation == 0:
+            head.locked = False
 
     def dragEnterEvent(self, e):
         data = e.mimeData()
@@ -173,20 +173,20 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         path = data.urls()[0].toLocalFile()
 
         # Load the zipfile and pass to the worker which will extract.
-        self.worker = UnzipWorker(path)
-        self.worker.signals.progress.connect(self.update_progress)
-        self.worker.signals.finished.connect(self.unzip_finished)
-        self.worker.signals.error.connect(self.unzip_error)
-        self.update_progress(0)
+        worker = UnzipWorker(path)
+        worker.signals.progress.connect(update_progress)
+        worker.signals.finished.connect(unzip_finished)
+        worker.signals.error.connect(unzip_error)
+        update_progress(0)
 
     def mousePressEvent(self, e):
-        self.prev_pos = e.globalPos()
+        prev_pos = e.globalPos()
 
     def mouseMoveEvent(self, e):
-        if self.prev_pos:
-            delta = e.globalPos() - self.prev_pos
-            self.move(self.x() + delta.x(), self.y() + delta.y())
-            self.prev_pos = e.globalPos()
+        if prev_pos:
+            delta = e.globalPos() - prev_pos
+            move(x() + delta.x(), y() + delta.y())
+            prev_pos = e.globalPos()
 
     def update_progress(self, pc):
         """
@@ -195,20 +195,20 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         :return:
         """
         current_n = int(pc * 10)
-        for n in range(1, 11):
+        ___ n __ range(1, 11):
             getattr(self, 'progress_%d' % n).setStyleSheet(
                 PROGRESS_ON if n > current_n else PROGRESS_OFF
             )
 
-    def unzip_finished(self):
+    def unzip_finished
         pass
 
     def unzip_error(self, err):
         exctype, value, traceback = err
 
-        self.update_progress(1)  # Reset the Pez bar.
+        update_progress(1)  # Reset the Pez bar.
 
-        dlg = QMessageBox(self)
+        dlg = QMessageBox
         dlg.setText(traceback)
         dlg.setIcon(QMessageBox.Critical)
         dlg.show()

@@ -49,23 +49,23 @@ ____ ?.?W.. ______ (?A.., QComboBox, QDateEdit, QDateTimeEdit,
 
 
 c_ Window(QWidget):
-    ___ __init__(self):
-        super(Window, self).__init__()
+    ___  -  
+        super(Window, self). - ()
 
-        self.createSpinBoxes()
-        self.createDateTimeEdits()
-        self.createDoubleSpinBoxes()
+        createSpinBoxes()
+        createDateTimeEdits()
+        createDoubleSpinBoxes()
 
         layout _ QHBoxLayout()
-        layout.aW..(self.spinBoxesGroup)
-        layout.aW..(self.editsGroup)
-        layout.aW..(self.doubleSpinBoxesGroup)
-        self.sL..(layout)
+        layout.aW..(spinBoxesGroup)
+        layout.aW..(editsGroup)
+        layout.aW..(doubleSpinBoxesGroup)
+        sL..(layout)
 
-        self.setWindowTitle("Spin Boxes")
+        setWindowTitle("Spin Boxes")
 
-    ___ createSpinBoxes(self):
-        self.spinBoxesGroup _ QGroupBox("Spinboxes")
+    ___ createSpinBoxes 
+        spinBoxesGroup _ QGroupBox("Spinboxes")
 
         integerLabel _ QLabel("Enter a value between %d and %d:" % (-20, 20))
         integerSpinBox _ QSpinBox()
@@ -95,10 +95,10 @@ c_ Window(QWidget):
         spinBoxLayout.aW..(zoomSpinBox)
         spinBoxLayout.aW..(priceLabel)
         spinBoxLayout.aW..(priceSpinBox)
-        self.spinBoxesGroup.sL..(spinBoxLayout)
+        spinBoxesGroup.sL..(spinBoxLayout)
 
-    ___ createDateTimeEdits(self):
-        self.editsGroup _ QGroupBox("Date and time spin boxes")
+    ___ createDateTimeEdits 
+        editsGroup _ QGroupBox("Date and time spin boxes")
 
         dateLabel _ QLabel()
         dateEdit _ QDateEdit(QDate.currentDate())
@@ -114,8 +114,8 @@ c_ Window(QWidget):
                     (timeEdit.minimumTime().toString(__.ISODate),
                     timeEdit.maximumTime().toString(__.ISODate)))
 
-        self.meetingLabel _ QLabel()
-        self.meetingEdit _ QDateTimeEdit(QDateTime.currentDateTime())
+        meetingLabel _ QLabel()
+        meetingEdit _ QDateTimeEdit(QDateTime.currentDateTime())
 
         formatLabel _ QLabel("Format string for the meeting date and time:")
 
@@ -126,37 +126,37 @@ c_ Window(QWidget):
         formatComboBox.addItem('hh:mm:ss')
         formatComboBox.addItem('hh:mm ap')
 
-        formatComboBox.activated[str].c..(self.setFormatString)
+        formatComboBox.activated[str].c..(setFormatString)
 
-        self.setFormatString(formatComboBox.currentText())
+        setFormatString(formatComboBox.currentText())
 
         editsLayout _ ?VBL..
         editsLayout.aW..(dateLabel)
         editsLayout.aW..(dateEdit)
         editsLayout.aW..(timeLabel)
         editsLayout.aW..(timeEdit)
-        editsLayout.aW..(self.meetingLabel)
-        editsLayout.aW..(self.meetingEdit)
+        editsLayout.aW..(meetingLabel)
+        editsLayout.aW..(meetingEdit)
         editsLayout.aW..(formatLabel)
         editsLayout.aW..(formatComboBox)
-        self.editsGroup.sL..(editsLayout)
+        editsGroup.sL..(editsLayout)
 
     ___ setFormatString  formatString):
-        self.meetingEdit.setDisplayFormat(formatString)
+        meetingEdit.setDisplayFormat(formatString)
 
-        __ self.meetingEdit.displayedSections() & QDateTimeEdit.DateSections_Mask:
-            self.meetingEdit.setDateRange(QDate(2004, 11, 1), QDate(2005, 11, 30))
-            self.meetingLabel.sT..("Meeting date (between %s and %s):" %
-                    (self.meetingEdit.minimumDate().toString(__.ISODate),
-                    self.meetingEdit.maximumDate().toString(__.ISODate)))
+        __ meetingEdit.displayedSections() & QDateTimeEdit.DateSections_Mask:
+            meetingEdit.setDateRange(QDate(2004, 11, 1), QDate(2005, 11, 30))
+            meetingLabel.sT..("Meeting date (between %s and %s):" %
+                    (meetingEdit.minimumDate().toString(__.ISODate),
+                    meetingEdit.maximumDate().toString(__.ISODate)))
         ____
-            self.meetingEdit.setTimeRange(QTime(0, 7, 20, 0), QTime(21, 0, 0, 0))
-            self.meetingLabel.sT..("Meeting time (between %s and %s):" %
-                    (self.meetingEdit.minimumTime().toString(__.ISODate),
-                    self.meetingEdit.maximumTime().toString(__.ISODate)))
+            meetingEdit.setTimeRange(QTime(0, 7, 20, 0), QTime(21, 0, 0, 0))
+            meetingLabel.sT..("Meeting time (between %s and %s):" %
+                    (meetingEdit.minimumTime().toString(__.ISODate),
+                    meetingEdit.maximumTime().toString(__.ISODate)))
 
-    ___ createDoubleSpinBoxes(self):
-        self.doubleSpinBoxesGroup _ QGroupBox("Double precision spinboxes")
+    ___ createDoubleSpinBoxes 
+        doubleSpinBoxesGroup _ QGroupBox("Double precision spinboxes")
 
         precisionLabel _ QLabel("Number of decimal places to show:")
         precisionSpinBox _ QSpinBox()
@@ -164,50 +164,50 @@ c_ Window(QWidget):
         precisionSpinBox.setValue(2)
 
         doubleLabel _ QLabel("Enter a value between %d and %d:" % (-20, 20))
-        self.doubleSpinBox _ QDoubleSpinBox()
-        self.doubleSpinBox.setRange(-20.0, 20.0)
-        self.doubleSpinBox.setSingleStep(1.0)
-        self.doubleSpinBox.setValue(0.0)
+        doubleSpinBox _ QDoubleSpinBox()
+        doubleSpinBox.setRange(-20.0, 20.0)
+        doubleSpinBox.setSingleStep(1.0)
+        doubleSpinBox.setValue(0.0)
 
         scaleLabel _ QLabel("Enter a scale factor between %d and %d:" % (0, 1000))
-        self.scaleSpinBox _ QDoubleSpinBox()
-        self.scaleSpinBox.setRange(0.0, 1000.0)
-        self.scaleSpinBox.setSingleStep(10.0)
-        self.scaleSpinBox.setSuffix('%')
-        self.scaleSpinBox.setSpecialValueText("No scaling")
-        self.scaleSpinBox.setValue(100.0)
+        scaleSpinBox _ QDoubleSpinBox()
+        scaleSpinBox.setRange(0.0, 1000.0)
+        scaleSpinBox.setSingleStep(10.0)
+        scaleSpinBox.setSuffix('%')
+        scaleSpinBox.setSpecialValueText("No scaling")
+        scaleSpinBox.setValue(100.0)
 
         priceLabel _ QLabel("Enter a price between %d and %d:" % (0, 1000))
-        self.priceSpinBox _ QDoubleSpinBox()
-        self.priceSpinBox.setRange(0.0, 1000.0)
-        self.priceSpinBox.setSingleStep(1.0)
-        self.priceSpinBox.setPrefix('$')
-        self.priceSpinBox.setValue(99.99)
+        priceSpinBox _ QDoubleSpinBox()
+        priceSpinBox.setRange(0.0, 1000.0)
+        priceSpinBox.setSingleStep(1.0)
+        priceSpinBox.setPrefix('$')
+        priceSpinBox.setValue(99.99)
 
-        precisionSpinBox.valueChanged.c..(self.changePrecision)
+        precisionSpinBox.valueChanged.c..(changePrecision)
 
         spinBoxLayout _ ?VBL..
         spinBoxLayout.aW..(precisionLabel)
         spinBoxLayout.aW..(precisionSpinBox)
         spinBoxLayout.aW..(doubleLabel)
-        spinBoxLayout.aW..(self.doubleSpinBox)
+        spinBoxLayout.aW..(doubleSpinBox)
         spinBoxLayout.aW..(scaleLabel)
-        spinBoxLayout.aW..(self.scaleSpinBox)
+        spinBoxLayout.aW..(scaleSpinBox)
         spinBoxLayout.aW..(priceLabel)
-        spinBoxLayout.aW..(self.priceSpinBox)
-        self.doubleSpinBoxesGroup.sL..(spinBoxLayout)
+        spinBoxLayout.aW..(priceSpinBox)
+        doubleSpinBoxesGroup.sL..(spinBoxLayout)
 
     ___ changePrecision  decimals):
-        self.doubleSpinBox.setDecimals(decimals)
-        self.scaleSpinBox.setDecimals(decimals)
-        self.priceSpinBox.setDecimals(decimals)
+        doubleSpinBox.setDecimals(decimals)
+        scaleSpinBox.setDecimals(decimals)
+        priceSpinBox.setDecimals(decimals)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     window _ Window()
     window.s..
     ___.exit(app.exec_())

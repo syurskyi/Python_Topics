@@ -24,30 +24,30 @@ c_ Model(qtc.QObject):
             except Exception __ e:
                 error _ f'Cannot write file: {e}'
         __ error:
-            self.error.emit(error)
+            error.emit(error)
 
 
-c_ View(qtw.QWidget):
+c_ View ?.?W..
 
     submitted _ qtc.pyqtSignal(str, str)
 
-    ___ __init__(self):
-        super().__init__()
-        self.sL..(qtw.QVBoxLayout())
-        self.filename _ qtw.?LE..
-        self.filecontent _ qtw.QTextEdit()
-        self.savebutton _ qtw.?PB..(
+    ___  -
+        s_. - ()
+        sL.. ?.?VBL..
+        filename _ qtw.?LE..
+        filecontent _ qtw.QTextEdit()
+        savebutton _ qtw.?PB..(
             'Save',
             c___self.submit
         )
-        self.layout().aW..(self.filename)
-        self.layout().aW..(self.filecontent)
-        self.layout().aW..(self.savebutton)
+        layout().aW..(filename)
+        layout().aW..(filecontent)
+        layout().aW..(savebutton)
 
-    ___ submit(self):
-        filename _ self.filename.t__()
-        filecontent _ self.filecontent.toPlainText()
-        self.submitted.emit(filename, filecontent)
+    ___ submit 
+        filename _ filename.t__()
+        filecontent _ filecontent.toPlainText()
+        submitted.emit(filename, filecontent)
 
     ___ show_error  error):
         qtw.?MB...critical(N.., 'Error', error)
@@ -55,29 +55,29 @@ c_ View(qtw.QWidget):
 
 c_ MainWindow(qtw.QMainWindow):
 
-    ___ __init__(self):
+    ___  -
         """MainWindow constructor.
 
         This widget will be our main window.
         We'll define all the UI components in here.
         """
-        super().__init__()
+        s_. - ()
         # Main UI code goes here
 
-        self.view _ View()
-        self.sCW..(self.view)
+        view _ View()
+        sCW..(view)
 
-        self.model _ Model()
+        model _ Model()
 
-        self.view.submitted.c..(self.model.save)
-        self.model.error.c..(self.view.show_error)
+        view.submitted.c..(model.save)
+        model.error.c..(view.show_error)
 
         # End main UI code
-        self.s..
+        s..
 
 
-__ __name__ == '__main__':
-    app _ qtw.?A..(___.argv)
+__ ______ __ ______
+    app _ qtw.?A..(___.a..
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()

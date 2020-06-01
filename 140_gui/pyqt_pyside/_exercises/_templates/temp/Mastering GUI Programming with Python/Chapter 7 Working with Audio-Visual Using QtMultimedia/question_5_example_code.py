@@ -4,23 +4,23 @@ ____ ? ______ QtMultimedia __ qtmm
 ____ ? ______ QtMultimediaWidgets __ qtmmw
 
 
-c_ MainWindow(qtw.QWidget):
+c_ MainWindow ?.?W..
 
-    ___ __init__(self):
-        super().__init__()
-        self.sL..(qtw.QVBoxLayout())
+    ___  -  
+        s_. - ()
+        sL.. ?.?VBL..
 
         # camera
-        self.camera _ qtmm.QCamera()
+        camera _ qtmm.QCamera()
 
         # viewfinder
         cvf _ qtmmw.QCameraViewfinder()
-        self.camera.setViewfinder(cvf)
-        self.layout().aW..(cvf)
+        camera.setViewfinder(cvf)
+        layout().aW..(cvf)
 
         # Form
         form _ qtw.QFormLayout()
-        self.layout().addLayout(form)
+        layout().aL..(form)
 
         # zoom
         zoomslider _ qtw.QSlider(
@@ -31,16 +31,16 @@ c_ MainWindow(qtw.QWidget):
         )
         form.addRow('Zoom', zoomslider)
 
-        self.camera.start()
-        self.s..
+        camera.start()
+        s..
 
     ___ on_slider_moved  value):
 
-        focus _ self.camera.focus()
+        focus _ camera.focus()
         focus.zoomTo(1, value)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
     app _ qtw.?
     mw _ MainWindow()
     app.exec()

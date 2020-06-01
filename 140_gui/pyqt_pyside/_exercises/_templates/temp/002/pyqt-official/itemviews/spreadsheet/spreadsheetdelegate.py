@@ -43,43 +43,43 @@ ____ ?.?W.. ______ QCompleter, QDateTimeEdit, QItemDelegate, QLineEdit
 
 c_ SpreadSheetDelegate(QItemDelegate):
 
-    ___ __init__  parent _ N..):
-        super(SpreadSheetDelegate, self).__init__(parent)
+    ___  -   parent _ N..):
+        super(SpreadSheetDelegate, self). - (parent)
 
     ___ createEditor  parent, styleOption, index):
         __ index.column() == 1:
             editor _ QDateTimeEdit(parent)
-            editor.setDisplayFormat(self.parent().currentDateFormat)
+            editor.setDisplayFormat(parent().currentDateFormat)
             editor.setCalendarPopup(True)
             r_ editor
 
         editor _ QLineEdit(parent)
         # create a completer with the strings in the column as model
         allStrings _   # list
-        for i in range(1, index.model().rowCount()):
+        ___ i __ range(1, index.model().rowCount()):
             strItem _ index.model().data(index.sibling(i, index.column()), __.EditRole)
-            __ strItem no. in allStrings:
+            __ strItem no. __ allStrings:
                 allStrings.ap..(strItem)
 
         autoComplete _ QCompleter(allStrings)
         editor.setCompleter(autoComplete)
-        editor.editingFinished.c..(self.commitAndCloseEditor)
+        editor.editingFinished.c..(commitAndCloseEditor)
         r_ editor
 
-    ___ commitAndCloseEditor(self):
-        editor _ self.sender()
-        self.commitData.emit(editor)
-        self.closeEditor.emit(editor, QItemDelegate.NoHint)
+    ___ commitAndCloseEditor
+        editor _ sender()
+        commitData.emit(editor)
+        closeEditor.emit(editor, QItemDelegate.NoHint)
 
     ___ setEditorData  editor, index):
         __ isinstance(editor, QLineEdit):
             editor.sT..(index.model().data(index, __.EditRole))
         ____ isinstance(editor, QDateTimeEdit):
             editor.setDate(QDate.fromString(
-                index.model().data(index, __.EditRole), self.parent().currentDateFormat))
+                index.model().data(index, __.EditRole), parent().currentDateFormat))
 
     ___ setModelData  editor, model, index):
         __ isinstance(editor, QLineEdit):
             model.setData(index, editor.t__())
         ____ isinstance(editor, QDateTimeEdit):
-            model.setData(index, editor.date().toString(self.parent().currentDateFormat))
+            model.setData(index, editor.date().toString(parent().currentDateFormat))

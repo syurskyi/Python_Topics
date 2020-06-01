@@ -50,50 +50,50 @@ ____ ?.QtQuick ______ QQuickPaintedItem, QQuickView
 c_ PieChart(QQuickPaintedItem):
 
     @pyqtProperty(str)
-    ___ name(self):
-        r_ self._name
+    ___ name
+        r_ _name
 
     @name.setter
     ___ name  name):
-        self._name _ name
+        _name _ name
 
     colorChanged _ pyqtSignal()
 
     @pyqtProperty(?C.., notify_colorChanged)
-    ___ color(self):
-        r_ self._color
+    ___ color
+        r_ _color
 
     @color.setter
     ___ color  color):
-        __ self._color !_ color:
-            self._color _ ?C..(color)
-            self.update()
-            self.colorChanged.emit()
+        __ _color !_ color:
+            _color _ ?C..(color)
+            update()
+            colorChanged.emit()
 
-    ___ __init__  parent_None):
-        super(PieChart, self).__init__(parent)
+    ___  -   parent_None):
+        super(PieChart, self). - (parent)
 
-        self._name _ ''
-        self._color _ ?C..()
+        _name _ ''
+        _color _ ?C..()
 
     ___ paint  painter):
-        painter.setPen(QPen(self._color, 2))
+        painter.setPen(QPen(_color, 2))
         painter.setRenderHints(QPainter.Antialiasing, True)
 
-        rect _ QRectF(0, 0, self.width(), self.height()).adjusted(1, 1, -1, -1)
+        rect _ QRectF(0, 0, width(), height()).adjusted(1, 1, -1, -1)
         painter.drawPie(rect, 90 * 16, 290 * 16)
 
     @pyqtSlot()
-    ___ clearChart(self):
-        self.color _ ?C..(__.transparent)
-        self.update()
+    ___ clearChart
+        color _ ?C..(__.transparent)
+        update()
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
     ______ os
     ______ ___
 
-    app _ QGuiApplication(___.argv)
+    app _ QGuiApplication(___.a..
 
     qmlRegisterType(PieChart, "Charts", 1, 0, "PieChart")
 

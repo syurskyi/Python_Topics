@@ -52,72 +52,72 @@ ____ ui_previewer ______ Ui_Form
 
 
 c_ Previewer(QWidget, Ui_Form):
-    ___ __init__  parent_None):
-        super(Previewer, self).__init__(parent)
+    ___  -   parent_None):
+        super(Previewer, self). - (parent)
 
-        self.setupUi(self)
-        self.baseUrl _ QUrl()
+        setupUi
+        baseUrl _ QUrl()
  
     ___ setBaseUrl  url):
-        self.baseUrl _ url
+        baseUrl _ url
 
-    ___ on_previewButton_clicked(self):
+    ___ on_previewButton_clicked
         # Update the contents in the web viewer.
-        t__ _ self.plainTextEdit.toPlainText()
-        self.webView.setHtml(t__, self.baseUrl)
+        t__ _ plainTextEdit.toPlainText()
+        webView.setHtml(t__, baseUrl)
 
 
 c_ MainWindow ?MW..
-    ___ __init__(self):
-        super(MainWindow, self).__init__()
+    ___  -
+        super(MainWindow, self). - ()
 
-        self.createActions()
-        self.createMenus()
-        self.centralWidget _ Previewer(self)
-        self.sCW..(self.centralWidget)
-        self.centralWidget.webView.loadFinished.c..(self.updateTextEdit)
-        self.setStartupText()
+        createActions()
+        createMenus()
+        centralWidget _ Previewer
+        sCW..(centralWidget)
+        centralWidget.webView.loadFinished.c..(updateTextEdit)
+        setStartupText()
 
-    ___ createActions(self):
-        self.openAct _ ?A..("&Open...", self, shortcut_QKeySequence.Open,
+    ___ createActions
+        openAct _ ?A..("&Open...", self, shortcut_QKeySequence.Open,
                 statusTip_"Open an existing HTML file", triggered_self.o..)
 
-        self.openUrlAct _ ?A..("&Open URL...", self, shortcut_"Ctrl+U",
+        openUrlAct _ ?A..("&Open URL...", self, shortcut_"Ctrl+U",
                 statusTip_"Open a URL", triggered_self.openUrl)
 
-        self.saveAct _ ?A..("&Save", self, shortcut_QKeySequence.Save,
+        saveAct _ ?A..("&Save", self, shortcut_QKeySequence.Save,
                 statusTip_"Save the HTML file to disk", triggered_self.save)
 
-        self.exitAct _ ?A..("E&xit", self, shortcut_QKeySequence.Quit,
+        exitAct _ ?A..("E&xit", self, shortcut_QKeySequence.Quit,
                 statusTip_"Exit the application", triggered_self.close)
 
-        self.aboutAct _ ?A..("&About", self,
+        aboutAct _ ?A..("&About", self,
                 statusTip_"Show the application's About box",
                 triggered_self.about)
 
-        self.aboutQtAct _ ?A..("About &Qt", self,
+        aboutQtAct _ ?A..("About &Qt", self,
                 statusTip_"Show the Qt library's About box",
                 triggered_QApplication.instance().aboutQt)
 
-    ___ createMenus(self):
-        self.fileMenu _ self.mB.. .aM..("&File")
-        self.fileMenu.aA..(self.openAct)
-        self.fileMenu.aA..(self.openUrlAct)
-        self.fileMenu.aA..(self.saveAct)
-        self.fileMenu.addSeparator()
-        self.fileMenu.aA..(self.exitAct)
-        self.mB.. .addSeparator()
-        self.helpMenu _ self.mB.. .aM..("&Help")
-        self.helpMenu.aA..(self.aboutAct)
-        self.helpMenu.aA..(self.aboutQtAct)
+    ___ createMenus
+        fileMenu _ mB.. .aM..("&File")
+        fileMenu.aA..(openAct)
+        fileMenu.aA..(openUrlAct)
+        fileMenu.aA..(saveAct)
+        fileMenu.addSeparator()
+        fileMenu.aA..(exitAct)
+        mB.. .addSeparator()
+        helpMenu _ mB.. .aM..("&Help")
+        helpMenu.aA..(aboutAct)
+        helpMenu.aA..(aboutQtAct)
 
-    ___ about(self):
+    ___ about
         ?MB...about  "About Previewer",
                 "The <b>Previewer</b> example demonstrates how to view HTML "
                 "documents using a QtWebKitWidgets.QWebView.")
 
-    ___ o..(self):
-        fileName, _ _ ?FD...gOFN..(self)
+    ___ o..
+        fileName, _ _ ?FD...gOFN..
         __ fileName:
             fd _ QFile(fileName)
             __ no. fd.o..(QIODevice.ReadOnly):
@@ -128,20 +128,20 @@ c_ MainWindow ?MW..
             output _ QTextStream(fd).readAll()
 
             # Display contents.
-            self.centralWidget.plainTextEdit.sPT..(output)
-            self.centralWidget.setBaseUrl(QUrl.fromLocalFile(fileName))
+            centralWidget.plainTextEdit.sPT..(output)
+            centralWidget.setBaseUrl(QUrl.fromLocalFile(fileName))
 
-    ___ openUrl(self):
+    ___ openUrl
         url, ok _ QInputDialog.getText  "Enter a URL", "URL:",
                 QLineEdit.Normal, "http://")
 
         __ ok and url:
             url _ QUrl(url)
-            self.centralWidget.webView.setUrl(url)
+            centralWidget.webView.setUrl(url)
 
-    ___ save(self):
-        content _ self.centralWidget.plainTextEdit.toPlainText()
-        fileName, _ _ ?FD...getSaveFileName(self)
+    ___ save
+        content _ centralWidget.plainTextEdit.toPlainText()
+        fileName, _ _ ?FD...getSaveFileName
         __ fileName:
             fd _ QFile(fileName)
             __ no. fd.o..(QIODevice.WriteOnly):
@@ -151,13 +151,13 @@ c_ MainWindow ?MW..
 
             QTextStream(fd) << content
  
-    ___ updateTextEdit(self):
-        mainFrame _ self.centralWidget.webView.page().mainFrame()
+    ___ updateTextEdit
+        mainFrame _ centralWidget.webView.page().mainFrame()
         frameText _ mainFrame.toHtml()
-        self.centralWidget.plainTextEdit.sPT..(frameText)
+        centralWidget.plainTextEdit.sPT..(frameText)
 
-    ___ setStartupText(self):
-        self.centralWidget.webView.setHtml("""
+    ___ setStartupText
+        centralWidget.webView.setHtml("""
 <html><body>
  <h1>HTML Previewer</h1>
   <p>This example shows you how to use QtWebKitWidgets.QWebView to
@@ -166,11 +166,11 @@ c_ MainWindow ?MW..
 </body></html>""")
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     mainWindow _ MainWindow()
     mainWindow.s..

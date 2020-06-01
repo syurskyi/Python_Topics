@@ -63,23 +63,23 @@ c_ AnalogClock(QWidget):
     hourColor _ ?C..(127, 0, 127)
     minuteColor _ ?C..(0, 127, 127, 191)
 
-    ___ __init__  parent_None):
-        super(AnalogClock, self).__init__(parent)
+    ___  -   parent_None):
+        super(AnalogClock, self). - (parent)
 
-        timer _ QTimer(self)
-        timer.timeout.c..(self.update)
+        timer _ QTimer
+        timer.timeout.c..(update)
         timer.start(1000)
 
-        self.setWindowTitle("Analog Clock")
-        self.resize(200, 200)
+        setWindowTitle("Analog Clock")
+        resize(200, 200)
 
     ___ paintEvent  event):
-        side _ min(self.width(), self.height())
+        side _ min(width(), height())
         time _ QTime.currentTime()
 
-        painter _ QPainter(self)
+        painter _ QPainter
         painter.setRenderHint(QPainter.Antialiasing)
-        painter.translate(self.width() / 2, self.height() / 2)
+        painter.translate(width() / 2, height() / 2)
         painter.scale(side / 200.0, side / 200.0)
 
         painter.setPen(__.NoPen)
@@ -92,7 +92,7 @@ c_ AnalogClock(QWidget):
 
         painter.setPen(AnalogClock.hourColor)
 
-        for i in range(12):
+        ___ i __ range(12):
             painter.drawLine(88, 0, 96, 0)
             painter.rotate(30.0)
 
@@ -106,17 +106,17 @@ c_ AnalogClock(QWidget):
 
         painter.setPen(AnalogClock.minuteColor)
 
-        for j in range(60):
+        ___ j __ range(60):
             __ (j % 5) !_ 0:
                 painter.drawLine(92, 0, 96, 0)
             painter.rotate(6.0)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     clock _ AnalogClock()
     clock.s..
     ___.exit(app.exec_())

@@ -55,16 +55,16 @@ ___ createItem(minimum, preferred, maximum, name):
     w.setMinimumSize(minimum)
     w.setPreferredSize(preferred)
     w.setMaximumSize(maximum)
-    w.setSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
+    w.sSP..(QSizePolicy.Preferred, QSizePolicy.Preferred)
 
     r_ w
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     scene _ QGraphicsScene()
     scene.setSceneRect(0, 0, 800, 480)

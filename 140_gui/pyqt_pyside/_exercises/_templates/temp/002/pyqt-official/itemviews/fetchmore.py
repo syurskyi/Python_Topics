@@ -52,24 +52,24 @@ ____ ?.?W.. ______ (?A.., QGridLayout, QLabel, QLineEdit,
 c_ FileListModel(QAbstractListModel):
     numberPopulated _ pyqtSignal(int)
 
-    ___ __init__  parent_None):
-        super(FileListModel, self).__init__(parent)
+    ___  -   parent_None):
+        super(FileListModel, self). - (parent)
 
-        self.fileCount _ 0
-        self.fileList _   # list
+        fileCount _ 0
+        fileList _   # list
 
     ___ rowCount  parent_QModelIndex()):
-        r_ self.fileCount
+        r_ fileCount
 
     ___ data  index, role_Qt.DisplayRole):
         __ no. index.isValid
             r_ N..
 
-        __ index.row() >_ le.(self.fileList) or index.row() < 0:
+        __ index.row() >_ le.(fileList) or index.row() < 0:
             r_ N..
 
         __ role == __.DisplayRole:
-            r_ self.fileList[index.row()]
+            r_ fileList[index.row()]
 
         __ role == __.BackgroundRole:
             batch _ (index.row() // 100) % 2
@@ -81,35 +81,35 @@ c_ FileListModel(QAbstractListModel):
         r_ N..
 
     ___ canFetchMore  index):
-        r_ self.fileCount < le.(self.fileList)
+        r_ fileCount < le.(fileList)
 
     ___ fetchMore  index):
-        remainder _ le.(self.fileList) - self.fileCount
+        remainder _ le.(fileList) - fileCount
         itemsToFetch _ min(100, remainder)
 
-        self.beginInsertRows(QModelIndex(), self.fileCount,
-                self.fileCount + itemsToFetch)
+        beginInsertRows(QModelIndex(), fileCount,
+                fileCount + itemsToFetch)
 
-        self.fileCount +_ itemsToFetch
+        fileCount +_ itemsToFetch
 
-        self.endInsertRows()
+        endInsertRows()
 
-        self.numberPopulated.emit(itemsToFetch)
+        numberPopulated.emit(itemsToFetch)
 
     ___ setDirPath  path):
         dir _ QDir(path)
 
-        self.beginResetModel()
-        self.fileList _ dir.entryList()
-        self.fileCount _ 0
-        self.endResetModel()
+        beginResetModel()
+        fileList _ dir.entryList()
+        fileCount _ 0
+        endResetModel()
 
 
 c_ Window(QWidget):
-    ___ __init__  parent_None):
-        super(Window, self).__init__(parent)
+    ___  -   parent_None):
+        super(Window, self). - (parent)
 
-        model _ FileListModel(self)
+        model _ FileListModel
         model.setDirPath(QLibraryInfo.location(QLibraryInfo.PrefixPath))
 
         label _ QLabel("Directory")
@@ -119,31 +119,31 @@ c_ Window(QWidget):
         view _ QListView()
         view.sM..(model)
 
-        self.logViewer _ QTextBrowser()
-        self.logViewer.setSizePolicy(QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred))
+        logViewer _ QTextBrowser()
+        logViewer.sSP..(QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred))
 
         lineEdit.textChanged.c..(model.setDirPath)
-        lineEdit.textChanged.c..(self.logViewer.clear)
-        model.numberPopulated.c..(self.updateLog)
+        lineEdit.textChanged.c..(logViewer.clear)
+        model.numberPopulated.c..(updateLog)
 
         layout _ QGridLayout()
         layout.aW..(label, 0, 0)
         layout.aW..(lineEdit, 0, 1)
         layout.aW..(view, 1, 0, 1, 2)
-        layout.aW..(self.logViewer, 2, 0, 1, 2)
+        layout.aW..(logViewer, 2, 0, 1, 2)
 
-        self.sL..(layout)
-        self.setWindowTitle("Fetch More Example")
+        sL..(layout)
+        setWindowTitle("Fetch More Example")
 
     ___ updateLog  number):
-        self.logViewer.ap..("%d items added." % number)
+        logViewer.ap..("%d items added." % number)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     window _ Window()
     window.s..

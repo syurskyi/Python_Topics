@@ -26,40 +26,40 @@ c_ TicTacToeEngine(qtc.QObject):
     game_won _ qtc.pyqtSignal(str)
     game_draw _ qtc.pyqtSignal()
 
-    ___ __init__(self):
-        super().__init__()
-        self.board _ [N..] * 9
-        self.current_player _ self.players[0]
+    ___  -
+        s_. - ()
+        board _ [N..] * 9
+        current_player _ players[0]
 
-    ___ next_player(self):
-        self.current_player _ self.players[
-            no. self.players.index(self.current_player)]
+    ___ next_player 
+        current_player _ players[
+            no. players.index(current_player)]
 
     ___ mark_square  square):
         """Mark a square for one player or another"""
         __ any([
                 no. isinstance(square, int),
-                no. (0 <_ square < le.(self.board)),
-                self.board[square] __ no. N..
+                no. (0 <_ square < le.(board)),
+                board[square] __ no. N..
         ]):
             r_ False
-        self.board[square] _ self.current_player
-        self.next_player()
+        board[square] _ current_player
+        next_player()
         r_ True
 
-    ___ check_board(self):
+    ___ check_board 
         """See if the game is won or a draw"""
-        for player in self.players:
+        ___ player __ players:
             plays _ {
-                index for index, value in enumerate(self.board)
+                index ___ index, value __ en..(board)
                 __ value == player
             }
-            for win in self.winning_sets:
+            ___ win __ winning_sets:
                 __ no. win - plays:  # player has a winning combo
-                    self.game_won.emit(player)
+                    game_won.emit(player)
                     r_
-        __ N.. no. in self.board:
-            self.game_draw.emit()
+        __ N.. no. __ board:
+            game_draw.emit()
 
 
 c_ TTTBoard(qtw.QGraphicsScene):
@@ -78,78 +78,78 @@ c_ TTTBoard(qtw.QGraphicsScene):
 
     square_clicked _ qtc.pyqtSignal(int)
 
-    ___ __init__(self):
-        super().__init__()
-        self.setSceneRect(0, 0, 600, 600)
-        self.setBackgroundBrush(qtg.QBrush(qtc.__.cyan))
-        for square in self.square_rects:
-            self.addRect(square, brush_qtg.QBrush(qtc.__.white))
-        self.mark_pngs _ {
+    ___  -
+        s_. - ()
+        setSceneRect(0, 0, 600, 600)
+        setBackgroundBrush(qtg.QBrush(qtc.__.cyan))
+        ___ square __ square_rects:
+            addRect(square, brush_qtg.QBrush(qtc.__.white))
+        mark_pngs _ {
             'X': qtg.QPixmap('X.png'),
             'O': qtg.QPixmap('O.png')
         }
-        self.marks _   # list
+        marks _   # list
 
     ___ set_board  marks):
-        for i, square in enumerate(marks):
-            __ square in self.mark_pngs:
-                mark _ self.addPixmap(self.mark_pngs[square])
-                mark.setPos(self.square_rects[i].topLeft())
-                self.marks.ap..(mark)
+        ___ i, square __ en..(marks):
+            __ square __ mark_pngs:
+                mark _ addPixmap(mark_pngs[square])
+                mark.setPos(square_rects[i].topLeft())
+                marks.ap..(mark)
 
-    ___ clear_board(self):
-        for mark in self.marks:
-            self.removeItem(mark)
+    ___ clear_board 
+        ___ mark __ marks:
+            removeItem(mark)
 
     ___ mousePressEvent  mouse_event):
         """Handle mouse clicks on the board"""
         position _ mouse_event.buttonDownScenePos(qtc.__.LeftButton)
-        for square, qrect in enumerate(self.square_rects):
+        ___ square, qrect __ en..(square_rects):
             __ qrect.contains(position):
-                self.square_clicked.emit(square)
+                square_clicked.emit(square)
                 break
 
 c_ MainWindow(qtw.QMainWindow):
 
-    ___ __init__(self):
+    ___  -
         """MainWindow constructor."""
-        super().__init__()
+        s_. - ()
         # Main UI code goes here
-        self.board _ TTTBoard()
-        self.board_view _ qtw.QGraphicsView()
-        self.board_view.setScene(self.board)
-        self.sCW..(self.board_view)
-        self.start_game()
-        self.board.square_clicked.c..(self.try_mark)
+        board _ TTTBoard()
+        board_view _ qtw.QGraphicsView()
+        board_view.setScene(board)
+        sCW..(board_view)
+        start_game()
+        board.square_clicked.c..(try_mark)
         # End main UI code
-        self.s..
+        s..
 
-    ___ start_game(self):
+    ___ start_game 
         """Clear the board and begin a new game"""
-        self.board.clear_board()
-        self.game _ TicTacToeEngine()
-        self.game.game_won.c..(self.game_won)
-        self.game.game_draw.c..(self.game_draw)
+        board.clear_board()
+        game _ TicTacToeEngine()
+        game.game_won.c..(game_won)
+        game.game_draw.c..(game_draw)
 
     ___ try_mark  square):
         """Attempt to mark a square"""
-        __ self.game.mark_square(square):
-            self.board.set_board(self.game.board)
-            self.game.check_board()
+        __ game.mark_square(square):
+            board.set_board(game.board)
+            game.check_board()
 
     ___ game_won  player):
         """Display the winner and start a new game"""
         qtw.?MB...information(
             N.., 'Game Won', f'Player {player} Won!')
-        self.start_game()
+        start_game()
 
-    ___ game_draw(self):
+    ___ game_draw 
         """Display the lack of a winner and start a new game"""
         qtw.?MB...information(
             N.., 'Game Over', 'Game Over.  Nobody Won...')
-        self.start_game()
+        start_game()
 
-__ __name__ == '__main__':
-    app _ qtw.?A..(___.argv)
+__ ______ __ ______
+    app _ qtw.?A..(___.a..
     mw _ MainWindow()
     ___.exit(app.exec())

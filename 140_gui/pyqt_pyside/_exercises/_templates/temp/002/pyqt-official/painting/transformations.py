@@ -50,49 +50,49 @@ ____ ?.?W.. ______ ?A.., QComboBox, QGridLayout, QWidget
 NoTransformation, Translate, Rotate, Scale _ range(4)
 
 c_ RenderArea(QWidget):
-    ___ __init__  parent_None):
-        super(RenderArea, self).__init__(parent)
+    ___  -   parent_None):
+        super(RenderArea, self). - (parent)
 
-        newFont _ self.font()
+        newFont _ font()
         newFont.setPixelSize(12)
-        self.setFont(newFont)
+        setFont(newFont)
 
         fontMetrics _ QFontMetrics(newFont)
-        self.xBoundingRect _ fontMetrics.boundingRect("x")
-        self.yBoundingRect _ fontMetrics.boundingRect("y")
-        self.shape _ QPainterPath()
-        self.operations _   # list
+        xBoundingRect _ fontMetrics.boundingRect("x")
+        yBoundingRect _ fontMetrics.boundingRect("y")
+        shape _ QPainterPath()
+        operations _   # list
 
     ___ setOperations  operations):
-        self.operations _ operations
-        self.update()
+        operations _ operations
+        update()
 
     ___ setShape  shape):
-        self.shape _ shape
-        self.update()
+        shape _ shape
+        update()
 
-    ___ minimumSizeHint(self):
+    ___ minimumSizeHint
         r_ QSize(182, 182)
 
-    ___ sizeHint(self):
+    ___ sizeHint
         r_ QSize(232, 232)
 
     ___ paintEvent  event):
-        painter _ QPainter(self)
+        painter _ QPainter
         painter.setRenderHint(QPainter.Antialiasing)
         painter.fillRect(event.rect(), QBrush(__.white))
 
         painter.translate(66, 66)
 
         painter.save()
-        self.transformPainter(painter)
-        self.drawShape(painter)
+        transformPainter(painter)
+        drawShape(painter)
         painter.restore()
 
-        self.drawOutline(painter)
+        drawOutline(painter)
 
-        self.transformPainter(painter)
-        self.drawCoordinates(painter)
+        transformPainter(painter)
+        drawCoordinates(painter)
 
     ___ drawCoordinates  painter):
         painter.setPen(__.red)
@@ -100,14 +100,14 @@ c_ RenderArea(QWidget):
         painter.drawLine(0, 0, 50, 0)
         painter.drawLine(48, -2, 50, 0)
         painter.drawLine(48, 2, 50, 0)
-        painter.drawText(60 - self.xBoundingRect.width() / 2,
-                         0 + self.xBoundingRect.height() / 2, "x")
+        painter.drawText(60 - xBoundingRect.width() / 2,
+                         0 + xBoundingRect.height() / 2, "x")
 
         painter.drawLine(0, 0, 0, 50)
         painter.drawLine(-2, 48, 0, 50)
         painter.drawLine(2, 48, 0, 50)
-        painter.drawText(0 - self.yBoundingRect.width() / 2,
-                         60 + self.yBoundingRect.height() / 2, "y")
+        painter.drawText(0 - yBoundingRect.width() / 2,
+                         60 + yBoundingRect.height() / 2, "y")
 
     ___ drawOutline  painter):
         painter.setPen(__.darkGreen)
@@ -116,10 +116,10 @@ c_ RenderArea(QWidget):
         painter.drawRect(0, 0, 100, 100)
 
     ___ drawShape  painter):
-        painter.fillPath(self.shape, __.blue)
+        painter.fillPath(shape, __.blue)
 
     ___ transformPainter  painter):
-        for operation in self.operations:
+        ___ operation __ operations:
             __ operation == Translate:
                 painter.translate(50, 50)
 
@@ -135,45 +135,45 @@ c_ Window(QWidget):
     operationTable _ (NoTransformation, Rotate, Scale, Translate)
     NumTransformedAreas _ 3
 
-    ___ __init__(self):
-        super(Window, self).__init__()
+    ___  -
+        super(Window, self). - ()
 
-        self.originalRenderArea _ RenderArea()
+        originalRenderArea _ RenderArea()
 
-        self.shapeComboBox _ QComboBox()
-        self.shapeComboBox.addItem("Clock")
-        self.shapeComboBox.addItem("House")
-        self.shapeComboBox.addItem("Text")
-        self.shapeComboBox.addItem("Truck")
+        shapeComboBox _ QComboBox()
+        shapeComboBox.addItem("Clock")
+        shapeComboBox.addItem("House")
+        shapeComboBox.addItem("Text")
+        shapeComboBox.addItem("Truck")
 
         layout _ QGridLayout()
-        layout.aW..(self.originalRenderArea, 0, 0)
-        layout.aW..(self.shapeComboBox, 1, 0)
+        layout.aW..(originalRenderArea, 0, 0)
+        layout.aW..(shapeComboBox, 1, 0)
 
-        self.transformedRenderAreas _ list(range(Window.NumTransformedAreas))
-        self.operationComboBoxes _ list(range(Window.NumTransformedAreas))
+        transformedRenderAreas _ list(range(Window.NumTransformedAreas))
+        operationComboBoxes _ list(range(Window.NumTransformedAreas))
 
-        for i in range(Window.NumTransformedAreas):
-            self.transformedRenderAreas[i] _ RenderArea()
+        ___ i __ range(Window.NumTransformedAreas):
+            transformedRenderAreas[i] _ RenderArea()
 
-            self.operationComboBoxes[i] _ QComboBox()
-            self.operationComboBoxes[i].addItem("No transformation")
-            self.operationComboBoxes[i].addItem(u"Rotate by 60\N{DEGREE SIGN}")
-            self.operationComboBoxes[i].addItem("Scale to 75%")
-            self.operationComboBoxes[i].addItem("Translate by (50, 50)")
+            operationComboBoxes[i] _ QComboBox()
+            operationComboBoxes[i].addItem("No transformation")
+            operationComboBoxes[i].addItem(u"Rotate by 60\N{DEGREE SIGN}")
+            operationComboBoxes[i].addItem("Scale to 75%")
+            operationComboBoxes[i].addItem("Translate by (50, 50)")
 
-            self.operationComboBoxes[i].activated.c..(self.operationChanged)
+            operationComboBoxes[i].activated.c..(operationChanged)
 
-            layout.aW..(self.transformedRenderAreas[i], 0, i + 1)
-            layout.aW..(self.operationComboBoxes[i], 1, i + 1)
+            layout.aW..(transformedRenderAreas[i], 0, i + 1)
+            layout.aW..(operationComboBoxes[i], 1, i + 1)
 
-        self.sL..(layout)
-        self.setupShapes()
-        self.shapeSelected(0)
+        sL..(layout)
+        setupShapes()
+        shapeSelected(0)
 
-        self.setWindowTitle("Transformations")
+        setWindowTitle("Transformations")
 
-    ___ setupShapes(self):
+    ___ setupShapes
         truck _ QPainterPath()
         truck.setFillRule(__.WindingFill)
         truck.moveTo(0.0, 87.0)
@@ -221,29 +221,29 @@ c_ Window(QWidget):
         fontBoundingRect _ QFontMetrics(font).boundingRect("Qt")
         t__.addText(-QPointF(fontBoundingRect.center()), font, "Qt")
 
-        self.shapes _ (clock, house, t__, truck)
+        shapes _ (clock, house, t__, truck)
 
-        self.shapeComboBox.activated.c..(self.shapeSelected)
+        shapeComboBox.activated.c..(shapeSelected)
 
-    ___ operationChanged(self):
+    ___ operationChanged
         operations _   # list
-        for i in range(Window.NumTransformedAreas):
-            index _ self.operationComboBoxes[i].currentIndex()
+        ___ i __ range(Window.NumTransformedAreas):
+            index _ operationComboBoxes[i].currentIndex()
             operations.ap..(Window.operationTable[index])
-            self.transformedRenderAreas[i].setOperations(operations[:])
+            transformedRenderAreas[i].setOperations(operations[:])
 
     ___ shapeSelected  index):
-        shape _ self.shapes[index]
-        self.originalRenderArea.setShape(shape)
-        for i in range(Window.NumTransformedAreas):
-            self.transformedRenderAreas[i].setShape(shape)
+        shape _ shapes[index]
+        originalRenderArea.setShape(shape)
+        ___ i __ range(Window.NumTransformedAreas):
+            transformedRenderAreas[i].setShape(shape)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     window _ Window()
     window.s..
     ___.exit(app.exec_())

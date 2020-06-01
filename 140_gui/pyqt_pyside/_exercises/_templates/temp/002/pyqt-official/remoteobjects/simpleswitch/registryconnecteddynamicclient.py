@@ -63,37 +63,37 @@ c_ DynamicClient(QObject):
     # echoes back the switch state received from the source.
     echoSwitchState _ pyqtSignal(bool)
 
-    ___ __init__  replica, parent_None):
-        super().__init__(parent)
+    ___  -   replica, parent_None):
+        s_. - (parent)
 
-        self._replica _ replica
-        self._clientSwitchState _ False
+        _replica _ replica
+        _clientSwitchState _ False
 
-        replica.initialized.c..(self.initConnection)
+        replica.initialized.c..(initConnection)
 
     @pyqtSlot(bool)
     ___ recSwitchState  value):
-        self._clientSwitchState _ self._replica.property('currState')
+        _clientSwitchState _ _replica.property('currState')
 
-        print("Received source state", value, self._clientSwitchState)
+        print("Received source state", value, _clientSwitchState)
 
         # Emit the signal to echo the received state back to the server.
-        self.echoSwitchState.emit(self._clientSwitchState)
+        echoSwitchState.emit(_clientSwitchState)
 
     @pyqtSlot()
-    ___ initConnection(self):
+    ___ initConnection
         # Connect the replica source signal currStateChanged() with the
         # client's recSwitchState() slot to receive the source's current state.
-        self._replica.currStateChanged.c..(self.recSwitchState)
+        _replica.currStateChanged.c..(recSwitchState)
 
         # Connect the client's echoSwitchState() signal with replica's
         # server_slot() to echo back the received state.
-        self.echoSwitchState.c..(self._replica.server_slot)
+        echoSwitchState.c..(_replica.server_slot)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
-    app _ QCoreApplication(___.argv)
+    app _ QCoreApplication(___.a..
 
     # Create the remote object node.
     repNode _ QRemoteObjectNode(QUrl('local:registry'))

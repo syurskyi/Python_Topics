@@ -15,59 +15,59 @@ ____ pydemo ______ PyDemo
 c_ PyDemoPlugin(QPyDesignerCustomWidgetPlugin):
 
     # Initialise the instance.
-    ___ __init__  parent_None):
-        super(PyDemoPlugin, self).__init__(parent)
+    ___  -   parent_None):
+        super(PyDemoPlugin, self). - (parent)
 
-        self._initialized _ False
+        _initialized _ False
 
     # Initialise the custom widget for use with the specified formEditor
     # interface.
     ___ initialize  formEditor):
-        __ self._initialized:
+        __ _initialized:
             r_
 
-        self._initialized _ True
+        _initialized _ True
 
     # Return True if the custom widget has been intialised.
-    ___ isInitialized(self):
-        r_ self._initialized
+    ___ isInitialized
+        r_ _initialized
 
     # Return a new instance of the custom widget with the given parent.
     ___ createWidget  parent):
         r_ PyDemo(parent)
 
     # Return the name of the class that implements the custom widget.
-    ___ name(self):
+    ___ name
         r_ "PyDemo"
 
     # Return the name of the group to which the custom widget belongs.  A new
     # group will be created if it doesn't already exist.
-    ___ group(self):
+    ___ group
         r_ "PyQt Examples"
 
     # Return the icon used to represent the custom widget in Designer's widget
     # box.
-    ___ icon(self):
+    ___ icon
         r_ QIcon(_logo_pixmap)
 
     # Return a short description of the custom widget used by Designer in a
     # tool tip.
-    ___ toolTip(self):
+    ___ toolTip
         r_ "PyQt demonstration widget"
 
     # Return a full description of the custom widget used by Designer in
     # "What's This?" help for the widget.
-    ___ whatsThis(self):
+    ___ whatsThis
         r_ "PyDemo is a demonstration custom widget written in Python " \
                "using PyQt."
 
     # Return True if the custom widget acts as a container for other widgets.
-    ___ isContainer(self):
+    ___ isContainer
         r_ False
 
     # Return an XML fragment that allows the default values of the custom
     # widget's properties to be overridden.
-    ___ domXml(self):
+    ___ domXml
         r_ '<widget class="PyDemo" name="pyDemo">\n' \
                ' <property name="toolTip" >\n' \
                '  <string>PyQt demonstration widget</string>\n' \
@@ -80,7 +80,7 @@ c_ PyDemoPlugin(QPyDesignerCustomWidgetPlugin):
 
     # Return the name of the module containing the class that implements the
     # custom widget.  It may include a module path.
-    ___ includeFile(self):
+    ___ includeFile
         r_ "pydemo"
 
 

@@ -52,110 +52,110 @@ ______ jquery_rc
 
 
 c_ MainWindow ?MW..
-    ___ __init__  url):
-        super(MainWindow, self).__init__()
+    ___  -   url):
+        super(MainWindow, self). - ()
 
-        self.progress _ 0
+        progress _ 0
 
         fd _ QFile(":/jquery.min.js")
 
         __ fd.o..(QIODevice.ReadOnly | QFile.Text):
-            self.jQuery _ QTextStream(fd).readAll()
+            jQuery _ QTextStream(fd).readAll()
             fd.close()
         ____
-            self.jQuery _ ''
+            jQuery _ ''
 
         QNetworkProxyFactory.setUseSystemConfiguration(True)
 
-        self.view _ QWebView(self)
-        self.view.load(url)
-        self.view.loadFinished.c..(self.adjustLocation)
-        self.view.titleChanged.c..(self.adjustTitle)
-        self.view.loadProgress.c..(self.setProgress)
-        self.view.loadFinished.c..(self.finishLoading)
+        view _ QWebView
+        view.load(url)
+        view.loadFinished.c..(adjustLocation)
+        view.titleChanged.c..(adjustTitle)
+        view.loadProgress.c..(setProgress)
+        view.loadFinished.c..(finishLoading)
 
-        self.locationEdit _ QLineEdit(self)
-        self.locationEdit.setSizePolicy(QSizePolicy.Expanding,
-                self.locationEdit.sizePolicy().verticalPolicy())
-        self.locationEdit.rP__.c..(self.changeLocation)
+        locationEdit _ QLineEdit
+        locationEdit.sSP..(QSizePolicy.E..,
+                locationEdit.sizePolicy().verticalPolicy())
+        locationEdit.rP__.c..(changeLocation)
 
-        toolBar _ self.addToolBar("Navigation")
-        toolBar.aA..(self.view.pageAction(QWebPage.Back))
-        toolBar.aA..(self.view.pageAction(QWebPage.Forward))
-        toolBar.aA..(self.view.pageAction(QWebPage.Reload))
-        toolBar.aA..(self.view.pageAction(QWebPage.Stop))
-        toolBar.aW..(self.locationEdit)
+        toolBar _ addToolBar("Navigation")
+        toolBar.aA..(view.pageAction(QWebPage.Back))
+        toolBar.aA..(view.pageAction(QWebPage.Forward))
+        toolBar.aA..(view.pageAction(QWebPage.Reload))
+        toolBar.aA..(view.pageAction(QWebPage.Stop))
+        toolBar.aW..(locationEdit)
 
-        viewMenu _ self.mB.. .aM..("&View")
+        viewMenu _ mB.. .aM..("&View")
         viewSourceAction _ ?A..("Page Source", self)
-        viewSourceAction.t__.c..(self.viewSource)
+        viewSourceAction.t__.c..(viewSource)
         viewMenu.aA..(viewSourceAction)
 
-        effectMenu _ self.mB.. .aM..("&Effect")
-        effectMenu.aA..("Highlight all links", self.highlightAllLinks)
+        effectMenu _ mB.. .aM..("&Effect")
+        effectMenu.aA..("Highlight all links", highlightAllLinks)
 
-        self.rotateAction _ ?A..(
-                self.style().standardIcon(QStyle.SP_FileDialogDetailedView),
+        rotateAction _ ?A..(
+                style().standardIcon(QStyle.SP_FileDialogDetailedView),
                 "Turn images upside down", self, checkable_True,
                 toggled_self.rotateImages)
-        effectMenu.aA..(self.rotateAction)
+        effectMenu.aA..(rotateAction)
 
-        toolsMenu _ self.mB.. .aM..("&Tools")
-        toolsMenu.aA..("Remove GIF images", self.removeGifImages)
+        toolsMenu _ mB.. .aM..("&Tools")
+        toolsMenu.aA..("Remove GIF images", removeGifImages)
         toolsMenu.aA..("Remove all inline frames",
-                self.removeInlineFrames)
+                removeInlineFrames)
         toolsMenu.aA..("Remove all object elements",
-                self.removeObjectElements)
+                removeObjectElements)
         toolsMenu.aA..("Remove all embedded elements",
-                self.removeEmbeddedElements)
-        self.sCW..(self.view)
+                removeEmbeddedElements)
+        sCW..(view)
 
-    ___ viewSource(self):
-        accessManager _ self.view.page().networkAccessManager()
-        request _ QNetworkRequest(self.view.url())
+    ___ viewSource 
+        accessManager _ view.page().networkAccessManager()
+        request _ QNetworkRequest(view.url())
         reply _ accessManager.g..(request)
-        reply.finished.c..(self.slotSourceDownloaded)
+        reply.finished.c..(slotSourceDownloaded)
 
-    ___ slotSourceDownloaded(self):
-        reply _ self.sender()
-        self.textEdit _ QTextEdit()
-        self.textEdit.setAttribute(__.WA_DeleteOnClose)
-        self.textEdit.s..
-        self.textEdit.sPT..(QTextStream(reply).readAll())
-        self.textEdit.resize(600, 400)
+    ___ slotSourceDownloaded 
+        reply _ sender()
+        textEdit _ QTextEdit()
+        textEdit.setAttribute(__.WA_DeleteOnClose)
+        textEdit.s..
+        textEdit.sPT..(QTextStream(reply).readAll())
+        textEdit.resize(600, 400)
         reply.deleteLater()
 
-    ___ adjustLocation(self):
-        self.locationEdit.sT..(self.view.url().toString())
+    ___ adjustLocation 
+        locationEdit.sT..(view.url().toString())
 
-    ___ changeLocation(self):
-        url _ QUrl.fromUserInput(self.locationEdit.t__())
-        self.view.load(url)
-        self.view.setFocus()
+    ___ changeLocation 
+        url _ QUrl.fromUserInput(locationEdit.t__())
+        view.load(url)
+        view.setFocus()
 
-    ___ adjustTitle(self):
-        __ 0 < self.progress < 100:
-            self.setWindowTitle("%s (%s%%)" % (self.view.title(), self.progress))
+    ___ adjustTitle 
+        __ 0 < progress < 100:
+            setWindowTitle("%s (%s%%)" % (view.title(), progress))
         ____
-            self.setWindowTitle(self.view.title())
+            setWindowTitle(view.title())
 
     ___ setProgress  p):
-        self.progress _ p
-        self.adjustTitle()
+        progress _ p
+        adjustTitle()
 
-    ___ finishLoading(self):
-        self.progress _ 100
-        self.adjustTitle()
-        self.view.page().mainFrame().evaluateJavaScript(self.jQuery)
-        self.rotateImages(self.rotateAction.isChecked())
+    ___ finishLoading 
+        progress _ 100
+        adjustTitle()
+        view.page().mainFrame().evaluateJavaScript(jQuery)
+        rotateImages(rotateAction.isChecked())
 
-    ___ highlightAllLinks(self):
+    ___ highlightAllLinks 
         code _ """$('a').each(
                     function () {
                         $(this).css('background-color', 'yellow') 
                     } 
                   )"""
-        self.view.page().mainFrame().evaluateJavaScript(code)
+        view.page().mainFrame().evaluateJavaScript(code)
 
     ___ rotateImages  invert):
         __ invert:
@@ -175,32 +175,32 @@ c_ MainWindow ?MW..
                     } 
                 )"""
 
-        self.view.page().mainFrame().evaluateJavaScript(code)
+        view.page().mainFrame().evaluateJavaScript(code)
 
-    ___ removeGifImages(self):
+    ___ removeGifImages 
         code _ "$('[src*=gif]').remove()"
-        self.view.page().mainFrame().evaluateJavaScript(code)
+        view.page().mainFrame().evaluateJavaScript(code)
 
-    ___ removeInlineFrames(self):
+    ___ removeInlineFrames 
         code _ "$('iframe').remove()"
-        self.view.page().mainFrame().evaluateJavaScript(code)
+        view.page().mainFrame().evaluateJavaScript(code)
 
-    ___ removeObjectElements(self):
+    ___ removeObjectElements 
         code _ "$('object').remove()"
-        self.view.page().mainFrame().evaluateJavaScript(code)
+        view.page().mainFrame().evaluateJavaScript(code)
 
-    ___ removeEmbeddedElements(self):
+    ___ removeEmbeddedElements 
         code _ "$('embed').remove()"
-        self.view.page().mainFrame().evaluateJavaScript(code)
+        view.page().mainFrame().evaluateJavaScript(code)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
-    __ le.(___.argv) > 1:
+    __ le.(___.a.. > 1:
         url _ QUrl(___.argv[1])
     ____
         url _ QUrl('http://www.google.com/ncr')

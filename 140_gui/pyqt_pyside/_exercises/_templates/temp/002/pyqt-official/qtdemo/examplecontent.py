@@ -54,35 +54,35 @@ ____ imageitem ______ ImageItem
 
 
 c_ ExampleContent(DemoItem):
-    ___ __init__  name, parent_None):
-        super(ExampleContent, self).__init__(parent)
+    ___  -   name, parent_None):
+        super(ExampleContent, self). - (parent)
 
         # Prevent a circular import.
         ____ menumanager ______ MenuManager
-        self._menu_manager _ MenuManager.instance()
+        _menu_manager _ MenuManager.instance()
 
-        self.name _ name
-        self.heading _ N..
-        self.description _ N..
-        self.screenshot _ N..
+        name _ name
+        heading _ N..
+        description _ N..
+        screenshot _ N..
 
-        self._prepared _ False
+        _prepared _ False
 
-    ___ prepare(self):
-        __ no. self._prepared:
-            self.createContent()
-            self._prepared _ True
+    ___ prepare 
+        __ no. _prepared:
+            createContent()
+            _prepared _ True
 
     ___ animationStopped  id):
         __ id == DemoItemAnimation.ANIM_OUT:
             # Free up some memory.
-            self.heading _ N..
-            self.description _ N..
-            self.screenshot _ N..
-            self._prepared _ False
+            heading _ N..
+            description _ N..
+            screenshot _ N..
+            _prepared _ False
 
-    ___ loadDescription(self):
-        contents _ self._menu_manager.getHtml(self.name).data().decode('utf8')
+    ___ loadDescription 
+        contents _ _menu_manager.getHtml(name).data().decode('utf8')
         __ contents == '':
             paragraphs _   # list
         ____
@@ -90,20 +90,20 @@ c_ ExampleContent(DemoItem):
             paragraphs _ exampleDoc.getElementsByTagName('p')
 
         __ le.(paragraphs) < 1:
-            Colors.debug("- ExampleContent.loadDescription(): Could not load description:", self._menu_manager.info[self.name].g..('docfile'))
+            Colors.debug("- ExampleContent.loadDescription(): Could not load description:", _menu_manager.info[name].g..('docfile'))
 
         description _ Colors.contentColor + "Could not load description. Ensure that the documentation for Qt is built."
-        for p in paragraphs:
-            description _ self.extractTextFromParagraph(p)
-            __ self.isSummary(description):
+        ___ p __ paragraphs:
+            description _ extractTextFromParagraph(p)
+            __ isSummary(description):
                 break
 
         r_ Colors.contentColor + description
 
     ___ isSummary  t__):
-        re _ QRegExp("(In )?((The|This) )?(%s )?.*(tutorial|example|demo|application)" % self.name, __.CaseInsensitive)
+        re _ QRegExp("(In )?((The|This) )?(%s )?.*(tutorial|example|demo|application)" % name, __.CaseInsensitive)
 
-        r_ ('[' no. in t__) and (re.indexIn(t__) >_ 0)
+        r_ ('[' no. __ t__) and (re.indexIn(t__) >_ 0)
 
     ___ extractTextFromParagraph  parentNode):
         description _ ''
@@ -128,24 +128,24 @@ c_ ExampleContent(DemoItem):
                 ____
                     beginTag _ endTag _ ''
 
-                description +_ beginTag + self.extractTextFromParagraph(node) + endTag
+                description +_ beginTag + extractTextFromParagraph(node) + endTag
 
             node _ node.nextSibling
 
         r_ description
 
-    ___ createContent(self):
+    ___ createContent 
         # Create the items.
-        self.heading _ HeadingItem(self.name, self)
-        self.description _ DemoTextItem(self.loadDescription(),
+        heading _ HeadingItem(name, self)
+        description _ DemoTextItem(loadDescription(),
                 Colors.contentFont(), Colors.heading, 500, self)
-        imgHeight _ 340 - int(self.description.boundingRect().height()) + 50
-        self.screenshot _ ImageItem(QImage.fromData(self._menu_manager.getImage(self.name)), 550, imgHeight, self)
+        imgHeight _ 340 - int(description.boundingRect().height()) + 50
+        screenshot _ ImageItem(QImage.fromData(_menu_manager.getImage(name)), 550, imgHeight, self)
 
         # Place the items on screen.
-        self.heading.setPos(0, 3)
-        self.description.setPos(0, self.heading.pos().y() + self.heading.boundingRect().height() + 10)
-        self.screenshot.setPos(0, self.description.pos().y() + self.description.boundingRect().height() + 10)
+        heading.setPos(0, 3)
+        description.setPos(0, heading.pos().y() + heading.boundingRect().height() + 10)
+        screenshot.setPos(0, description.pos().y() + description.boundingRect().height() + 10)
 
-    ___ boundingRect(self):
+    ___ boundingRect 
         r_ QRectF(0, 0, 500, 100)

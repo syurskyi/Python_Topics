@@ -87,65 +87,65 @@ BirthdayParty {
 
 
 c_ ShoeDescription(QObject):
-    ___ __init__  parent_None):
-        super(ShoeDescription, self).__init__(parent)
+    ___  -   parent_None):
+        super(ShoeDescription, self). - (parent)
 
-        self._size _ 0
-        self._color _ ?C..()
-        self._brand _ ''
-        self._price _ 0.0
+        _size _ 0
+        _color _ ?C..()
+        _brand _ ''
+        _price _ 0.0
 
     @pyqtProperty(int)
-    ___ size(self):
-        r_ self._size
+    ___ size
+        r_ _size
 
     @size.setter
     ___ size  size):
-        self._size _ size
+        _size _ size
 
     @pyqtProperty(?C..)
-    ___ color(self):
-        r_ self._color
+    ___ color
+        r_ _color
 
     @color.setter
     ___ color  color):
-        self._color _ color
+        _color _ color
 
     @pyqtProperty(str)
-    ___ brand(self):
-        r_ self._brand
+    ___ brand
+        r_ _brand
 
     @brand.setter
     ___ brand  brand):
-        self._brand _ brand
+        _brand _ brand
 
     @pyqtProperty(float)
-    ___ price(self):
-        r_ self._price
+    ___ price
+        r_ _price
 
     @price.setter
     ___ price  price):
-        self._price _ price
+        _price _ price
 
 
 c_ Person(QObject):
-    ___ __init__  parent_None):
-        super(Person, self).__init__(parent)
+    ___  -   parent_None):
+        super(Person, self). - (parent)
 
-        self._name _ ''
-        self._shoe _ ShoeDescription()
+        _name _ ''
+        _shoe _ ShoeDescription()
 
     @pyqtProperty(str)
-    ___ name(self):
-        r_ self._name
+    ___ name
+        r_ _name
 
     @name.setter
     ___ name  name):
-        self._name _ name
+        _name _ name
 
     @pyqtProperty(ShoeDescription)
-    ___ shoe(self):
-        r_ self._shoe
+    ___ shoe
+        r_ _shoe
 
 
 c_ Boy(Person):
@@ -157,18 +157,18 @@ c_ Girl(Person):
 
 
 c_ BirthdayPartyAttached(QObject):
-    ___ __init__  parent):
-        super(BirthdayPartyAttached, self).__init__(parent)
+    ___  -   parent):
+        super(BirthdayPartyAttached, self). - (parent)
 
-        self._rsvp _ QDate()
+        _rsvp _ QDate()
 
     @pyqtProperty(QDate)
-    ___ rsvp(self):
-        r_ self._rsvp
+    ___ rsvp
+        r_ _rsvp
 
     @rsvp.setter
     ___ rsvp  rsvp):
-        self._rsvp _ rsvp
+        _rsvp _ rsvp
 
 
 c_ BirthdayParty(QObject):
@@ -176,29 +176,29 @@ c_ BirthdayParty(QObject):
 
     partyStarted _ pyqtSignal(QTime, arguments_['time'])
 
-    ___ __init__  parent_None):
-        super(BirthdayParty, self).__init__(parent)
+    ___  -   parent_None):
+        super(BirthdayParty, self). - (parent)
 
-        self._host _ N..
-        self._guests _   # list
+        _host _ N..
+        _guests _   # list
 
     @pyqtProperty(Person)
-    ___ host(self):
-        r_ self._host
+    ___ host
+        r_ _host
 
     @host.setter
     ___ host  host):
-        self._host _ host
+        _host _ host
 
     @pyqtProperty(QQmlListProperty)
-    ___ guests(self):
-        r_ QQmlListProperty(Person, self, self._guests)
+    ___ guests
+        r_ QQmlListProperty(Person, self, _guests)
 
-    ___ startParty(self):
-        self.partyStarted.emit(QTime.currentTime())
+    ___ startParty
+        partyStarted.emit(QTime.currentTime())
 
 
-app _ QCoreApplication(___.argv)
+app _ QCoreApplication(___.a..
 
 qmlRegisterType(BirthdayPartyAttached)
 qmlRegisterType(BirthdayParty, "People", 1, 0, "BirthdayParty",
@@ -223,7 +223,7 @@ __ party __ no. N.. and party.host __ no. N..:
     ____
         print("She is inviting:")
 
-    for guest in party.guests:
+    ___ guest __ party.guests:
         attached _ qmlAttachedPropertiesObject(BirthdayParty, guest, False)
 
         __ attached __ no. N..:
@@ -238,5 +238,5 @@ __ party __ no. N.. and party.host __ no. N..:
 
     party.startParty()
 ____
-    for e in component.errors
+    ___ e __ component.errors
         print("Error:", e.toString());

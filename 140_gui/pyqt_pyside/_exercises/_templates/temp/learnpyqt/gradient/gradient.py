@@ -1,5 +1,5 @@
 ______ ___
-__ 'PyQt5' in ___.modules:
+__ 'PyQt5' __ ___.modules:
     ____ ? ______ ?C.., ?G.., ?W..
     ____ ?.?C.. ______ __
     ____ ?.?C.. ______ pyqtSignal __ Signal
@@ -14,37 +14,37 @@ c_ Gradient(?W...QWidget):
 
     gradientChanged _ Signal()
 
-    ___ __init__  gradient_None, *args, **kwargs):
-        super().__init__(*args, **kwargs)
+    ___  -   gradient_None, *args, **kwargs):
+        s_. - (*args, **kwargs)
 
-        self.setSizePolicy(
+        sSP..(
             ?W...QSizePolicy.MinimumExpanding,
             ?W...QSizePolicy.MinimumExpanding
         )
 
         __ gradient:
-            self._gradient _ gradient
+            _gradient _ gradient
 
         ____
-            self._gradient _ [
+            _gradient _ [
                 (0.0, '#000000'),
                 (1.0, '#ffffff'),
             ]
 
         # Stop point handle sizes.
-        self._handle_w _ 10
-        self._handle_h _ 10
+        _handle_w _ 10
+        _handle_h _ 10
 
-        self._drag_position _ N..
+        _drag_position _ N..
 
     ___ paintEvent  e):
-        painter _ ?G...QPainter(self)
+        painter _ ?G...QPainter
         width _ painter.device().width()
         height _ painter.device().height()
 
         # Draw the linear horizontal gradient.
         gradient _ ?G...QLinearGradient(0, 0, width, 0)
-        for stop, color in self._gradient:
+        ___ stop, color __ _gradient:
             gradient.setColorAt(stop, ?G...?C..(color))
 
         rect _ ?C...QRect(0, 0, width, height)
@@ -56,148 +56,148 @@ c_ Gradient(?W...QWidget):
 
 
         # Draw the stop handles.
-        for stop, _ in self._gradient:
+        ___ stop, _ __ _gradient:
             pen.sC..(?G...?C..('white'))
             painter.setPen(pen)
 
-            painter.drawLine(stop * width, y - self._handle_h, stop * width, y + self._handle_h)
+            painter.drawLine(stop * width, y - _handle_h, stop * width, y + _handle_h)
 
             pen.sC..(?G...?C..('red'))
             painter.setPen(pen)
 
             rect _ ?C...QRect(
-                stop * width - self._handle_w/2,
-                y - self._handle_h/2,
-                self._handle_w,
-                self._handle_h
+                stop * width - _handle_w/2,
+                y - _handle_h/2,
+                _handle_w,
+                _handle_h
             )
             painter.drawRect(rect)
 
         painter.end()
 
-    ___ sizeHint(self):
+    ___ sizeHint
         r_ ?C...QSize(200, 50)
 
-    ___ _sort_gradient(self):
-        self._gradient _ sorted(self._gradient, key_lambda g:g[0])
+    ___ _sort_gradient
+        _gradient _ sorted(_gradient, key_lambda g:g[0])
 
-    ___ _constrain_gradient(self):
-        self._gradient _ [
+    ___ _constrain_gradient
+        _gradient _ [
             # Ensure values within valid range.
             (max(0.0, min(1.0, stop)), color)
-            for stop, color in self._gradient
+            ___ stop, color __ _gradient
         ]
 
     ___ setGradient  gradient):
-        assert all([0.0 <_ stop <_ 1.0 for stop, _ in gradient])
-        self._gradient _ gradient
-        self._constrain_gradient()
-        self._sort_gradient()
-        self.gradientChanged.emit()
+        assert all([0.0 <_ stop <_ 1.0 ___ stop, _ __ gradient])
+        _gradient _ gradient
+        _constrain_gradient()
+        _sort_gradient()
+        gradientChanged.emit()
 
-    ___ gradient(self):
-        r_ self._gradient
+    ___ gradient
+        r_ _gradient
 
     @property
-    ___ _end_stops(self):
-        r_ [0, le.(self._gradient)-1]
+    ___ _end_stops
+        r_ [0, le.(_gradient)-1]
 
     ___ addStop  stop, color_None):
         # Stop is a value 0...1, find the point to insert this stop
         # in the list.
         assert 0.0 <_ stop <_ 1.0
 
-        for n, g in enumerate(self._gradient):
+        ___ n, g __ en..(_gradient):
             __ g[0] > stop:
                 # Insert before this entry, with specified or next color.
-                self._gradient.insert(n, (stop, color or g[1]))
+                _gradient.insert(n, (stop, color or g[1]))
                 break
-        self._constrain_gradient()
-        self.gradientChanged.emit()
-        self.update()
+        _constrain_gradient()
+        gradientChanged.emit()
+        update()
 
     ___ removeStopAtPosition  n):
-        __ n no. in self._end_stops:
-            del self._gradient[n]
-            self.gradientChanged.emit()
-            self.update()
+        __ n no. __ _end_stops:
+            del _gradient[n]
+            gradientChanged.emit()
+            update()
 
     ___ setColorAtPosition  n, color):
-        __ n < le.(self._gradient):
-            stop, _ _ self._gradient[n]
-            self._gradient[n] _ stop, color
-            self.gradientChanged.emit()
-            self.update()
+        __ n < le.(_gradient):
+            stop, _ _ _gradient[n]
+            _gradient[n] _ stop, color
+            gradientChanged.emit()
+            update()
 
     ___ chooseColorAtPosition  n, current_color_None):
-        dlg _ ?W...QColorDialog(self)
+        dlg _ ?W...QColorDialog
         __ current_color:
             dlg.setCurrentColor(?G...?C..(current_color))
 
         __ dlg.exec_
-            self.setColorAtPosition(n, dlg.currentColor().name())
+            setColorAtPosition(n, dlg.currentColor().name())
 
     ___ _find_stop_handle_for_event  e, to_exclude_None):
-        width _ self.width()
-        height _ self.height()
+        width _ width()
+        height _ height()
         midpoint _ height / 2
 
         # Are we inside a stop point? First check y.
         __ (
-            e.y() >_ midpoint - self._handle_h and
-            e.y() <_ midpoint + self._handle_h
+            e.y() >_ midpoint - _handle_h and
+            e.y() <_ midpoint + _handle_h
         ):
 
-            for n, (stop, color) in enumerate(self._gradient):
-                __ to_exclude and n in to_exclude:
+            ___ n, (stop, color) __ en..(_gradient):
+                __ to_exclude and n __ to_exclude:
                     # Allow us to skip the extreme ends of the gradient.
                     continue
                 __ (
-                    e.x() >_ stop * width - self._handle_w and
-                    e.x() <_ stop * width + self._handle_w
+                    e.x() >_ stop * width - _handle_w and
+                    e.x() <_ stop * width + _handle_w
                 ):
                     r_ n
 
     ___ mousePressEvent  e):
         # We're in this stop point.
         __ e.button() == __.RightButton:
-            n _ self._find_stop_handle_for_event(e)
+            n _ _find_stop_handle_for_event(e)
             __ n __ no. N..:
-                _, color _ self._gradient[n]
-                self.chooseColorAtPosition(n, color)
+                _, color _ _gradient[n]
+                chooseColorAtPosition(n, color)
 
         ____ e.button() == __.LeftButton:
-            n _ self._find_stop_handle_for_event(e, to_exclude_self._end_stops)
+            n _ _find_stop_handle_for_event(e, to_exclude_self._end_stops)
             __ n __ no. N..:
                 # Activate drag mode.
-                self._drag_position _ n
+                _drag_position _ n
 
 
     ___ mouseReleaseEvent  e):
-        self._drag_position _ N..
-        self._sort_gradient()
+        _drag_position _ N..
+        _sort_gradient()
 
     ___ mouseMoveEvent  e):
         # If drag active, move the stop.
-        __ self._drag_position:
-            stop _ e.x() / self.width()
-            _, color _ self._gradient[self._drag_position]
-            self._gradient[self._drag_position] _ stop, color
-            self._constrain_gradient()
-            self.update()
+        __ _drag_position:
+            stop _ e.x() / width()
+            _, color _ _gradient[_drag_position]
+            _gradient[_drag_position] _ stop, color
+            _constrain_gradient()
+            update()
 
     ___ mouseDoubleClickEvent  e):
         # Calculate the position of the click relative 0..1 to the width.
-        n _ self._find_stop_handle_for_event(e)
+        n _ _find_stop_handle_for_event(e)
         __ n:
-            self._sort_gradient() # Ensure ordered.
+            _sort_gradient() # Ensure ordered.
             # Delete existing, if not at the ends.
-            __ n > 0 and n < le.(self._gradient) - 1:
-                self.removeStopAtPosition(n)
+            __ n > 0 and n < le.(_gradient) - 1:
+                removeStopAtPosition(n)
 
         ____
-            stop _ e.x() / self.width()
-            self.addStop(stop)
+            stop _ e.x() / width()
+            addStop(stop)
 
 
 

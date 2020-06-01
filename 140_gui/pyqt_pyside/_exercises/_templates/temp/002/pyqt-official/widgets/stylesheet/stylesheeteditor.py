@@ -47,47 +47,47 @@ ____ ui_stylesheeteditor ______ Ui_StyleSheetEditor
 
 
 c_ StyleSheetEditor(QDialog):
-    ___ __init__  parent_None):
-        super(StyleSheetEditor, self).__init__(parent)
+    ___  -   parent_None):
+        super(StyleSheetEditor, self). - (parent)
 
-        self.ui _ Ui_StyleSheetEditor()
-        self.ui.setupUi(self)
+        ui _ Ui_StyleSheetEditor()
+        ui.setupUi
 
         regExp _ QRegExp(r'.(.*)\+?Style')
         defaultStyle _ ?A...style().metaObject().className()
         __ regExp.exactMatch(defaultStyle):
             defaultStyle _ regExp.cap(1)
 
-        self.ui.styleCombo.addItems(QStyleFactory.keys())
-        self.ui.styleCombo.setCurrentIndex(
-                self.ui.styleCombo.findText(defaultStyle, __.MatchContains))
+        ui.styleCombo.addItems(QStyleFactory.keys())
+        ui.styleCombo.setCurrentIndex(
+                ui.styleCombo.findText(defaultStyle, __.MatchContains))
 
-        self.ui.styleSheetCombo.setCurrentIndex(
-                self.ui.styleSheetCombo.findText('Coffee'))
+        ui.styleSheetCombo.setCurrentIndex(
+                ui.styleSheetCombo.findText('Coffee'))
 
-        self.loadStyleSheet('Coffee')
+        loadStyleSheet('Coffee')
 
     @pyqtSlot(str)
     ___ on_styleCombo_activated  styleName):
         ?A...setStyle(styleName)
-        self.ui.applyButton.setEnabled F..
+        ui.applyButton.setEnabled F..
 
     @pyqtSlot(str)
     ___ on_styleSheetCombo_activated  sheetName):
-        self.loadStyleSheet(sheetName)
+        loadStyleSheet(sheetName)
 
-    ___ on_styleTextEdit_textChanged(self):
-        self.ui.applyButton.setEnabled(True)
+    ___ on_styleTextEdit_textChanged 
+        ui.applyButton.setEnabled(True)
 
-    ___ on_applyButton_clicked(self):
+    ___ on_applyButton_clicked 
         ?A...instance().setStyleSheet(
-                self.ui.styleTextEdit.tPT..
-        self.ui.applyButton.setEnabled F..
+                ui.styleTextEdit.tPT..
+        ui.applyButton.setEnabled F..
 
-    ___ on_saveButton_clicked(self):
-        fileName, _ _ ?FD...getSaveFileName(self)
+    ___ on_saveButton_clicked 
+        fileName, _ _ ?FD...getSaveFileName
         __ fileName:
-            self.saveStyleSheet(fileName)
+            saveStyleSheet(fileName)
 
     ___ loadStyleSheet  sheetName):
         file _ QFile(':/qss/%s.qss' % sheetName.lower())
@@ -101,12 +101,12 @@ c_ StyleSheetEditor(QDialog):
             # Python v3.
             styleSheet _ str(styleSheet, encoding_'utf8')
 
-        self.ui.styleTextEdit.sPT..(styleSheet)
+        ui.styleTextEdit.sPT..(styleSheet)
         ?A...instance().setStyleSheet(styleSheet)
-        self.ui.applyButton.setEnabled F..
+        ui.applyButton.setEnabled F..
 
     ___ saveStyleSheet  fileName):
-        styleSheet _ self.ui.styleTextEdit.toPlainText()
+        styleSheet _ ui.styleTextEdit.toPlainText()
         file _ QFile(fileName)
         __ file.o..(QFile.WriteOnly):
             QTextStream(file) << styleSheet

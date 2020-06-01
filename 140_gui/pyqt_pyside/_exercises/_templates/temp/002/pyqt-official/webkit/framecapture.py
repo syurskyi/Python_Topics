@@ -80,52 +80,52 @@ c_ FrameCapture(QObject):
 
     finished _ pyqtSignal()
 
-    ___ __init__(self):
-        super(FrameCapture, self).__init__()
+    ___  -
+        super(FrameCapture, self). - ()
 
-        self._percent _ 0
-        self._page _ QWebPage()
-        self._page.mainFrame().setScrollBarPolicy(__.Vertical,
+        _percent _ 0
+        _page _ QWebPage()
+        _page.mainFrame().setScrollBarPolicy(__.Vertical,
                 __.ScrollBarAlwaysOff)
-        self._page.mainFrame().setScrollBarPolicy(__.Horizontal,
+        _page.mainFrame().setScrollBarPolicy(__.Horizontal,
                 __.ScrollBarAlwaysOff)
-        self._page.loadProgress.c..(self.printProgress)
-        self._page.loadFinished.c..(self.saveResult)
+        _page.loadProgress.c..(printProgress)
+        _page.loadFinished.c..(saveResult)
  
     ___ load  url, outputFileName):
         cout("Loading %s\n" % url.toString())
-        self._percent _ 0
+        _percent _ 0
         index _ outputFileName.rfind('.')
-        self._fileName _ index == -1 and outputFileName + ".png" or outputFileName
-        self._page.mainFrame().load(url)
-        self._page.setViewportSize(QSize(1024, 768))
+        _fileName _ index == -1 and outputFileName + ".png" or outputFileName
+        _page.mainFrame().load(url)
+        _page.setViewportSize(QSize(1024, 768))
  
     ___ printProgress  percent):
-        __ self._percent >_ percent:
+        __ _percent >_ percent:
             r_
-        self._percent +_ 1
-        w__ self._percent < percent:
-            self._percent +_ 1
+        _percent +_ 1
+        w__ _percent < percent:
+            _percent +_ 1
             cout("#")
  
     ___ saveResult  ok):
         cout("\n")
         # Crude error-checking.
         __ no. ok:
-            cerr("Failed loading %s\n" % self._page.mainFrame().url().toString())
-            self.finished.emit()
+            cerr("Failed loading %s\n" % _page.mainFrame().url().toString())
+            finished.emit()
             r_
 
         # Save each frame in different image files.
-        self._frameCounter _ 0
-        self.saveFrame(self._page.mainFrame())
-        self.finished.emit()
+        _frameCounter _ 0
+        saveFrame(_page.mainFrame())
+        finished.emit()
  
     ___ saveFrame  frame):
-        fileName _ self._fileName
-        __ self._frameCounter:
+        fileName _ _fileName
+        __ _frameCounter:
             index _ fileName.rfind('.')
-            fileName _ "%s_frame%s%s" % (fileName[:index], self._frameCounter, fileName[index:])
+            fileName _ "%s_frame%s%s" % (fileName[:index], _frameCounter, fileName[index:])
         image _ QImage(frame.contentsSize(), QImage.Format_ARGB32_Premultiplied)
         image.fill(__.transparent)
         painter _ QPainter(image)
@@ -135,20 +135,20 @@ c_ FrameCapture(QObject):
         frame.documentElement().render(painter)
         painter.end()
         image.save(fileName)
-        self._frameCounter +_ 1
-        for childFrame in frame.childFrames
-            self.saveFrame(childFrame)
+        _frameCounter +_ 1
+        ___ childFrame __ frame.childFrames
+            saveFrame(childFrame)
 
 
-__ __name__ == '__main__':
-    __ le.(___.argv) !_ 3:
+__ ______ __ ______
+    __ le.(___.a.. !_ 3:
         cerr(__doc__)
         ___.exit(1)
 
     url _ QUrl.fromUserInput(___.argv[1])
     fileName _ ___.argv[2]
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     capture _ FrameCapture()
     capture.finished.c..(app.quit)

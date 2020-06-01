@@ -57,133 +57,133 @@ c_ GLWidget(QOpenGLWidget):
     yRotationChanged _ pyqtSignal(int)
     zRotationChanged _ pyqtSignal(int)
 
-    ___ __init__  parent_None):
-        super(GLWidget, self).__init__(parent)
+    ___  -   parent_None):
+        super(GLWidget, self). - (parent)
 
-        self.gear1 _ 0
-        self.gear2 _ 0
-        self.gear3 _ 0
-        self.xRot _ 0
-        self.yRot _ 0
-        self.zRot _ 0
-        self.gear1Rot _ 0
+        gear1 _ 0
+        gear2 _ 0
+        gear3 _ 0
+        xRot _ 0
+        yRot _ 0
+        zRot _ 0
+        gear1Rot _ 0
 
-        timer _ QTimer(self)
-        timer.timeout.c..(self.advanceGears)
+        timer _ QTimer
+        timer.timeout.c..(advanceGears)
         timer.start(20)
 
     ___ setXRotation  angle):
-        self.normalizeAngle(angle)
+        normalizeAngle(angle)
 
-        __ angle !_ self.xRot:
-            self.xRot _ angle
-            self.xRotationChanged.emit(angle)
-            self.update()
+        __ angle !_ xRot:
+            xRot _ angle
+            xRotationChanged.emit(angle)
+            update()
 
     ___ setYRotation  angle):
-        self.normalizeAngle(angle)
+        normalizeAngle(angle)
 
-        __ angle !_ self.yRot:
-            self.yRot _ angle
-            self.yRotationChanged.emit(angle)
-            self.update()
+        __ angle !_ yRot:
+            yRot _ angle
+            yRotationChanged.emit(angle)
+            update()
 
     ___ setZRotation  angle):
-        self.normalizeAngle(angle)
+        normalizeAngle(angle)
 
-        __ angle !_ self.zRot:
-            self.zRot _ angle
-            self.zRotationChanged.emit(angle)
-            self.update()
+        __ angle !_ zRot:
+            zRot _ angle
+            zRotationChanged.emit(angle)
+            update()
 
-    ___ initializeGL(self):
+    ___ initializeGL
         version_profile _ QOpenGLVersionProfile()
         version_profile.setVersion(2, 0)
-        self.gl _ self.context().versionFunctions(version_profile)
-        self.gl.initializeOpenGLFunctions()
+        gl _ context().versionFunctions(version_profile)
+        gl.initializeOpenGLFunctions()
 
         lightPos _ (5.0, 5.0, 10.0, 1.0)
         reflectance1 _ (0.8, 0.1, 0.0, 1.0)
         reflectance2 _ (0.0, 0.8, 0.2, 1.0)
         reflectance3 _ (0.2, 0.2, 1.0, 1.0)
 
-        self.gl.glLightfv(self.gl.GL_LIGHT0, self.gl.GL_POSITION, lightPos)
-        self.gl.glEnable(self.gl.GL_LIGHTING)
-        self.gl.glEnable(self.gl.GL_LIGHT0)
-        self.gl.glEnable(self.gl.GL_DEPTH_TEST)
+        gl.glLightfv(gl.GL_LIGHT0, gl.GL_POSITION, lightPos)
+        gl.glEnable(gl.GL_LIGHTING)
+        gl.glEnable(gl.GL_LIGHT0)
+        gl.glEnable(gl.GL_DEPTH_TEST)
 
-        self.gear1 _ self.makeGear(reflectance1, 1.0, 4.0, 1.0, 0.7, 20)
-        self.gear2 _ self.makeGear(reflectance2, 0.5, 2.0, 2.0, 0.7, 10)
-        self.gear3 _ self.makeGear(reflectance3, 1.3, 2.0, 0.5, 0.7, 10)
+        gear1 _ makeGear(reflectance1, 1.0, 4.0, 1.0, 0.7, 20)
+        gear2 _ makeGear(reflectance2, 0.5, 2.0, 2.0, 0.7, 10)
+        gear3 _ makeGear(reflectance3, 1.3, 2.0, 0.5, 0.7, 10)
 
-        self.gl.glEnable(self.gl.GL_NORMALIZE)
-        self.gl.glClearColor(0.0, 0.0, 0.0, 1.0)
+        gl.glEnable(gl.GL_NORMALIZE)
+        gl.glClearColor(0.0, 0.0, 0.0, 1.0)
 
-    ___ paintGL(self):
-        self.gl.glClear(self.gl.GL_COLOR_BUFFER_BIT | self.gl.GL_DEPTH_BUFFER_BIT)
+    ___ paintGL
+        gl.glClear(gl.GL_COLOR_BUFFER_BIT | gl.GL_DEPTH_BUFFER_BIT)
 
-        self.gl.glPushMatrix()
-        self.gl.glRotated(self.xRot / 16.0, 1.0, 0.0, 0.0)
-        self.gl.glRotated(self.yRot / 16.0, 0.0, 1.0, 0.0)
-        self.gl.glRotated(self.zRot / 16.0, 0.0, 0.0, 1.0)
+        gl.glPushMatrix()
+        gl.glRotated(xRot / 16.0, 1.0, 0.0, 0.0)
+        gl.glRotated(yRot / 16.0, 0.0, 1.0, 0.0)
+        gl.glRotated(zRot / 16.0, 0.0, 0.0, 1.0)
 
-        self.drawGear(self.gear1, -3.0, -2.0, 0.0, self.gear1Rot / 16.0)
-        self.drawGear(self.gear2, +3.1, -2.0, 0.0,
-                -2.0 * (self.gear1Rot / 16.0) - 9.0)
+        drawGear(gear1, -3.0, -2.0, 0.0, gear1Rot / 16.0)
+        drawGear(gear2, +3.1, -2.0, 0.0,
+                -2.0 * (gear1Rot / 16.0) - 9.0)
 
-        self.gl.glRotated(+90.0, 1.0, 0.0, 0.0)
-        self.drawGear(self.gear3, -3.1, -1.8, -2.2,
-                +2.0 * (self.gear1Rot / 16.0) - 2.0)
+        gl.glRotated(+90.0, 1.0, 0.0, 0.0)
+        drawGear(gear3, -3.1, -1.8, -2.2,
+                +2.0 * (gear1Rot / 16.0) - 2.0)
 
-        self.gl.glPopMatrix()
+        gl.glPopMatrix()
 
     ___ resizeGL  width, height):
         side _ min(width, height)
         __ side < 0:
             r_
 
-        self.gl.glViewport((width - side) // 2, (height - side) // 2, side, side)
+        gl.glViewport((width - side) // 2, (height - side) // 2, side, side)
 
-        self.gl.glMatrixMode(self.gl.GL_PROJECTION)
-        self.gl.glLoadIdentity()
-        self.gl.glFrustum(-1.0, +1.0, -1.0, 1.0, 5.0, 60.0)
-        self.gl.glMatrixMode(self.gl.GL_MODELVIEW)
-        self.gl.glLoadIdentity()
-        self.gl.glTranslated(0.0, 0.0, -40.0)
+        gl.glMatrixMode(gl.GL_PROJECTION)
+        gl.glLoadIdentity()
+        gl.glFrustum(-1.0, +1.0, -1.0, 1.0, 5.0, 60.0)
+        gl.glMatrixMode(gl.GL_MODELVIEW)
+        gl.glLoadIdentity()
+        gl.glTranslated(0.0, 0.0, -40.0)
 
     ___ mousePressEvent  event):
-        self.lastPos _ event.pos()
+        lastPos _ event.pos()
 
     ___ mouseMoveEvent  event):
-        dx _ event.x() - self.lastPos.x()
-        dy _ event.y() - self.lastPos.y()
+        dx _ event.x() - lastPos.x()
+        dy _ event.y() - lastPos.y()
 
         __ event.buttons() & __.LeftButton:
-            self.setXRotation(self.xRot + 8 * dy)
-            self.setYRotation(self.yRot + 8 * dx)
+            setXRotation(xRot + 8 * dy)
+            setYRotation(yRot + 8 * dx)
         ____ event.buttons() & __.RightButton:
-            self.setXRotation(self.xRot + 8 * dy)
-            self.setZRotation(self.zRot + 8 * dx)
+            setXRotation(xRot + 8 * dy)
+            setZRotation(zRot + 8 * dx)
 
-        self.lastPos _ event.pos()
+        lastPos _ event.pos()
 
-    ___ advanceGears(self):
-        self.gear1Rot +_ 2 * 16
-        self.update()    
+    ___ advanceGears
+        gear1Rot +_ 2 * 16
+        update()
 
-    ___ xRotation(self):
-        r_ self.xRot
+    ___ xRotation
+        r_ xRot
 
-    ___ yRotation(self):
-        r_ self.yRot
+    ___ yRotation
+        r_ yRot
 
-    ___ zRotation(self):
-        r_ self.zRot
+    ___ zRotation
+        r_ zRot
 
     ___ makeGear  reflectance, innerRadius, outerRadius, thickness, toothSize, toothCount):
-        list _ self.gl.glGenLists(1)
-        self.gl.glNewList(list, self.gl.GL_COMPILE)
-        self.gl.glMaterialfv(self.gl.GL_FRONT, self.gl.GL_AMBIENT_AND_DIFFUSE,
+        list _ gl.glGenLists(1)
+        gl.glNewList(list, gl.GL_COMPILE)
+        gl.glMaterialfv(gl.GL_FRONT, gl.GL_AMBIENT_AND_DIFFUSE,
                 reflectance)
 
         r0 _ innerRadius
@@ -192,42 +192,42 @@ c_ GLWidget(QOpenGLWidget):
         delta _ (2.0 * math.pi / toothCount) / 4.0
         z _ thickness / 2.0
 
-        self.gl.glShadeModel(self.gl.GL_FLAT)
+        gl.glShadeModel(gl.GL_FLAT)
 
-        for i in range(2):
+        ___ i __ range(2):
             __ i == 0:
                 sign _ +1.0
             ____
                 sign _ -1.0
 
-            self.gl.glNormal3d(0.0, 0.0, sign)
+            gl.glNormal3d(0.0, 0.0, sign)
 
-            self.gl.glBegin(self.gl.GL_QUAD_STRIP)
+            gl.glBegin(gl.GL_QUAD_STRIP)
 
-            for j in range(toothCount+1):
+            ___ j __ range(toothCount+1):
                 angle _ 2.0 * math.pi * j / toothCount
-                self.gl.glVertex3d(r0 * math.cos(angle), r0 * math.sin(angle), sign * z)
-                self.gl.glVertex3d(r1 * math.cos(angle), r1 * math.sin(angle), sign * z)
-                self.gl.glVertex3d(r0 * math.cos(angle), r0 * math.sin(angle), sign * z)
-                self.gl.glVertex3d(r1 * math.cos(angle + 3 * delta), r1 * math.sin(angle + 3 * delta), sign * z)
+                gl.glVertex3d(r0 * math.cos(angle), r0 * math.sin(angle), sign * z)
+                gl.glVertex3d(r1 * math.cos(angle), r1 * math.sin(angle), sign * z)
+                gl.glVertex3d(r0 * math.cos(angle), r0 * math.sin(angle), sign * z)
+                gl.glVertex3d(r1 * math.cos(angle + 3 * delta), r1 * math.sin(angle + 3 * delta), sign * z)
 
-            self.gl.glEnd()
+            gl.glEnd()
 
-            self.gl.glBegin(self.gl.GL_QUADS)
+            gl.glBegin(gl.GL_QUADS)
 
-            for j in range(toothCount):
+            ___ j __ range(toothCount):
                 angle _ 2.0 * math.pi * j / toothCount
-                self.gl.glVertex3d(r1 * math.cos(angle), r1 * math.sin(angle), sign * z)
-                self.gl.glVertex3d(r2 * math.cos(angle + delta), r2 * math.sin(angle + delta), sign * z)
-                self.gl.glVertex3d(r2 * math.cos(angle + 2 * delta), r2 * math.sin(angle + 2 * delta), sign * z)
-                self.gl.glVertex3d(r1 * math.cos(angle + 3 * delta), r1 * math.sin(angle + 3 * delta), sign * z)
+                gl.glVertex3d(r1 * math.cos(angle), r1 * math.sin(angle), sign * z)
+                gl.glVertex3d(r2 * math.cos(angle + delta), r2 * math.sin(angle + delta), sign * z)
+                gl.glVertex3d(r2 * math.cos(angle + 2 * delta), r2 * math.sin(angle + 2 * delta), sign * z)
+                gl.glVertex3d(r1 * math.cos(angle + 3 * delta), r1 * math.sin(angle + 3 * delta), sign * z)
 
-            self.gl.glEnd()
+            gl.glEnd()
 
-        self.gl.glBegin(self.gl.GL_QUAD_STRIP)
+        gl.glBegin(gl.GL_QUAD_STRIP)
 
-        for i in range(toothCount):
-            for j in range(2):
+        ___ i __ range(toothCount):
+            ___ j __ range(2):
                 angle _ 2.0 * math.pi * (i + (j / 2.0)) / toothCount
                 s1 _ r1
                 s2 _ r2
@@ -235,40 +235,40 @@ c_ GLWidget(QOpenGLWidget):
                 __ j == 1:
                     s1, s2 _ s2, s1
 
-                self.gl.glNormal3d(math.cos(angle), math.sin(angle), 0.0)
-                self.gl.glVertex3d(s1 * math.cos(angle), s1 * math.sin(angle), +z)
-                self.gl.glVertex3d(s1 * math.cos(angle), s1 * math.sin(angle), -z)
+                gl.glNormal3d(math.cos(angle), math.sin(angle), 0.0)
+                gl.glVertex3d(s1 * math.cos(angle), s1 * math.sin(angle), +z)
+                gl.glVertex3d(s1 * math.cos(angle), s1 * math.sin(angle), -z)
 
-                self.gl.glNormal3d(s2 * math.sin(angle + delta) - s1 * math.sin(angle), s1 * math.cos(angle) - s2 * math.cos(angle + delta), 0.0)
-                self.gl.glVertex3d(s2 * math.cos(angle + delta), s2 * math.sin(angle + delta), +z)
-                self.gl.glVertex3d(s2 * math.cos(angle + delta), s2 * math.sin(angle + delta), -z)
+                gl.glNormal3d(s2 * math.sin(angle + delta) - s1 * math.sin(angle), s1 * math.cos(angle) - s2 * math.cos(angle + delta), 0.0)
+                gl.glVertex3d(s2 * math.cos(angle + delta), s2 * math.sin(angle + delta), +z)
+                gl.glVertex3d(s2 * math.cos(angle + delta), s2 * math.sin(angle + delta), -z)
 
-        self.gl.glVertex3d(r1, 0.0, +z)
-        self.gl.glVertex3d(r1, 0.0, -z)
-        self.gl.glEnd()
+        gl.glVertex3d(r1, 0.0, +z)
+        gl.glVertex3d(r1, 0.0, -z)
+        gl.glEnd()
 
-        self.gl.glShadeModel(self.gl.GL_SMOOTH)
+        gl.glShadeModel(gl.GL_SMOOTH)
 
-        self.gl.glBegin(self.gl.GL_QUAD_STRIP)
+        gl.glBegin(gl.GL_QUAD_STRIP)
 
-        for i in range(toothCount+1):
+        ___ i __ range(toothCount+1):
             angle _ i * 2.0 * math.pi / toothCount
-            self.gl.glNormal3d(-math.cos(angle), -math.sin(angle), 0.0)
-            self.gl.glVertex3d(r0 * math.cos(angle), r0 * math.sin(angle), +z)
-            self.gl.glVertex3d(r0 * math.cos(angle), r0 * math.sin(angle), -z)
+            gl.glNormal3d(-math.cos(angle), -math.sin(angle), 0.0)
+            gl.glVertex3d(r0 * math.cos(angle), r0 * math.sin(angle), +z)
+            gl.glVertex3d(r0 * math.cos(angle), r0 * math.sin(angle), -z)
 
-        self.gl.glEnd()
+        gl.glEnd()
 
-        self.gl.glEndList()
+        gl.glEndList()
 
         r_ list    
 
     ___ drawGear  gear, dx, dy, dz, angle):
-        self.gl.glPushMatrix()
-        self.gl.glTranslated(dx, dy, dz)
-        self.gl.glRotated(angle, 0.0, 0.0, 1.0)
-        self.gl.glCallList(gear)
-        self.gl.glPopMatrix()
+        gl.glPushMatrix()
+        gl.glTranslated(dx, dy, dz)
+        gl.glRotated(angle, 0.0, 0.0, 1.0)
+        gl.glCallList(gear)
+        gl.glPopMatrix()
 
     ___ normalizeAngle  angle):
         w__ (angle < 0):
@@ -279,43 +279,43 @@ c_ GLWidget(QOpenGLWidget):
 
 
 c_ MainWindow ?MW..
-    ___ __init__(self):
-        super(MainWindow, self).__init__()
+    ___  -
+        super(MainWindow, self). - ()
 
         centralWidget _ ?W..
-        self.sCW..(centralWidget)
+        sCW..(centralWidget)
 
-        self.glWidget _ GLWidget()
-        self.pixmapLabel _ QLabel()
+        glWidget _ GLWidget()
+        pixmapLabel _ QLabel()
 
-        self.glWidgetArea _ QScrollArea()
-        self.glWidgetArea.setWidget(self.glWidget)
-        self.glWidgetArea.setWidgetResizable(True)
-        self.glWidgetArea.setHorizontalScrollBarPolicy(__.ScrollBarAlwaysOff)
-        self.glWidgetArea.setVerticalScrollBarPolicy(__.ScrollBarAlwaysOff)
-        self.glWidgetArea.setSizePolicy(QSizePolicy.Ignored,
+        glWidgetArea _ QScrollArea()
+        glWidgetArea.setWidget(glWidget)
+        glWidgetArea.setWidgetResizable(True)
+        glWidgetArea.setHorizontalScrollBarPolicy(__.ScrollBarAlwaysOff)
+        glWidgetArea.setVerticalScrollBarPolicy(__.ScrollBarAlwaysOff)
+        glWidgetArea.sSP..(QSizePolicy.Ignored,
                 QSizePolicy.Ignored)
-        self.glWidgetArea.setMinimumSize(50, 50)
+        glWidgetArea.setMinimumSize(50, 50)
 
-        self.pixmapLabelArea _ QScrollArea()
-        self.pixmapLabelArea.setWidget(self.pixmapLabel)
-        self.pixmapLabelArea.setSizePolicy(QSizePolicy.Ignored,
+        pixmapLabelArea _ QScrollArea()
+        pixmapLabelArea.setWidget(pixmapLabel)
+        pixmapLabelArea.sSP..(QSizePolicy.Ignored,
                 QSizePolicy.Ignored)
-        self.pixmapLabelArea.setMinimumSize(50, 50)
+        pixmapLabelArea.setMinimumSize(50, 50)
 
-        xSlider _ self.createSlider(self.glWidget.xRotationChanged,
-                self.glWidget.setXRotation)
-        ySlider _ self.createSlider(self.glWidget.yRotationChanged,
-                self.glWidget.setYRotation)
-        zSlider _ self.createSlider(self.glWidget.zRotationChanged,
-                self.glWidget.setZRotation)
+        xSlider _ createSlider(glWidget.xRotationChanged,
+                glWidget.setXRotation)
+        ySlider _ createSlider(glWidget.yRotationChanged,
+                glWidget.setYRotation)
+        zSlider _ createSlider(glWidget.zRotationChanged,
+                glWidget.setZRotation)
 
-        self.createActions()
-        self.createMenus()
+        createActions()
+        createMenus()
 
         centralLayout _ QGridLayout()
-        centralLayout.aW..(self.glWidgetArea, 0, 0)
-        centralLayout.aW..(self.pixmapLabelArea, 0, 1)
+        centralLayout.aW..(glWidgetArea, 0, 0)
+        centralLayout.aW..(pixmapLabelArea, 0, 1)
         centralLayout.aW..(xSlider, 1, 0, 1, 2)
         centralLayout.aW..(ySlider, 2, 0, 1, 2)
         centralLayout.aW..(zSlider, 3, 0, 1, 2)
@@ -325,46 +325,46 @@ c_ MainWindow ?MW..
         ySlider.setValue(345 * 16)
         zSlider.setValue(0 * 16)
 
-        self.setWindowTitle("Grabber")
-        self.resize(400, 300)
+        setWindowTitle("Grabber")
+        resize(400, 300)
 
-    ___ grabFrameBuffer(self):
-        image _ self.glWidget.grabFramebuffer()
-        self.setPixmap(QPixmap.fromImage(image))
+    ___ grabFrameBuffer
+        image _ glWidget.grabFramebuffer()
+        setPixmap(QPixmap.fromImage(image))
 
-    ___ clearPixmap(self):
-        self.setPixmap(QPixmap())
+    ___ clearPixmap
+        setPixmap(QPixmap())
 
-    ___ about(self):
+    ___ about
         ?MB...about  "About Grabber",
                 "The <b>Grabber</b> example demonstrates two approaches for "
                 "rendering OpenGL into a Qt pixmap.")
 
-    ___ createActions(self):
-        self.grabFrameBufferAct _ ?A..("&Grab Frame Buffer", self,
+    ___ createActions
+        grabFrameBufferAct _ ?A..("&Grab Frame Buffer", self,
                 shortcut_"Ctrl+G", triggered_self.grabFrameBuffer)
 
-        self.clearPixmapAct _ ?A..("&Clear Pixmap", self,
+        clearPixmapAct _ ?A..("&Clear Pixmap", self,
                 shortcut_"Ctrl+L", triggered_self.clearPixmap)
 
-        self.exitAct _ ?A..("E&xit", self, shortcut_"Ctrl+Q",
+        exitAct _ ?A..("E&xit", self, shortcut_"Ctrl+Q",
                 triggered_self.close)
 
-        self.aboutAct _ ?A..("&About", self, triggered_self.about)
+        aboutAct _ ?A..("&About", self, triggered_self.about)
 
-        self.aboutQtAct _ ?A..("About &Qt", self,
+        aboutQtAct _ ?A..("About &Qt", self,
                 triggered_QApplication.instance().aboutQt)
 
-    ___ createMenus(self):
-        self.fileMenu _ self.mB.. .aM..("&File")
-        self.fileMenu.aA..(self.grabFrameBufferAct)
-        self.fileMenu.aA..(self.clearPixmapAct)
-        self.fileMenu.addSeparator()
-        self.fileMenu.aA..(self.exitAct)
+    ___ createMenus
+        fileMenu _ mB.. .aM..("&File")
+        fileMenu.aA..(grabFrameBufferAct)
+        fileMenu.aA..(clearPixmapAct)
+        fileMenu.addSeparator()
+        fileMenu.aA..(exitAct)
 
-        self.helpMenu _ self.mB.. .aM..("&Help")
-        self.helpMenu.aA..(self.aboutAct)
-        self.helpMenu.aA..(self.aboutQtAct)
+        helpMenu _ mB.. .aM..("&Help")
+        helpMenu.aA..(aboutAct)
+        helpMenu.aA..(aboutQtAct)
 
     ___ createSlider  changedSignal, setterSlot):
         slider _ QSlider(__.Horizontal)
@@ -380,18 +380,18 @@ c_ MainWindow ?MW..
         r_ slider
 
     ___ setPixmap  pixmap):
-        self.pixmapLabel.setPixmap(pixmap)
+        pixmapLabel.setPixmap(pixmap)
         size _ pixmap.size()
 
-        __ size - QSize(1, 0) == self.pixmapLabelArea.maximumViewportSize
+        __ size - QSize(1, 0) == pixmapLabelArea.maximumViewportSize
             size -_ QSize(1, 0)
 
-        self.pixmapLabel.resize(size)
+        pixmapLabel.resize(size)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     mainWin _ MainWindow()
     mainWin.s..
     ___.exit(app.exec_())

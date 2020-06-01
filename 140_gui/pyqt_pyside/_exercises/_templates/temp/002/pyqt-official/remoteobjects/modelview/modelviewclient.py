@@ -62,7 +62,7 @@ QLoggingCategory.setFilterRules('qt.remoteobjects.debug=false\n'
                                 'qt.remoteobjects.models.debug=false\n'
                                 'qt.remoteobjects.models.debug=false')
 
-app _ ?A..(___.argv)
+app _ ?A..(___.a..
 
 node _ QRemoteObjectNode(QUrl('local:registry'))
 node.setHeartbeatInterval(1000)

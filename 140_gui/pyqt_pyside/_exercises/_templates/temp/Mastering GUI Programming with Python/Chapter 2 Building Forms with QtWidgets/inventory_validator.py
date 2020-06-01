@@ -22,11 +22,11 @@ c_ InventoryNumberValidator(qtg.QValidator):
         seg3 _ string[7:11]
         seg4 _ string[11:12]
 
-        __ no. all([char in self.valid_letters for char in seg1 + seg4]):
+        __ no. all([char __ valid_letters ___ char __ seg1 + seg4]):
             state _ qtg.QValidator.Invalid
-        ____ no. all([char.isdigit() for char in seg2 + seg3]):
+        ____ no. all([char.isdigit() ___ char __ seg2 + seg3]):
             state _ qtg.QValidator.Invalid
-        ____ no. all([char == '-' for char in dash1 + dash2]):
+        ____ no. all([char == '-' ___ char __ dash1 + dash2]):
             state _ qtg.QValidator.Invalid
         ____ le.(string) > 12:
             state _ qtg.QValidator.Invalid
@@ -36,26 +36,26 @@ c_ InventoryNumberValidator(qtg.QValidator):
         r_ (state, string, index)
 
 
-c_ MainWindow(qtw.QWidget):
+c_ MainWindow ?.?W..
 
-    ___ __init__(self):
+    ___  -
         """MainWindow constructor.
 
         This widget will be our main window.
         We'll define all the UI components in here.
         """
-        super().__init__()
+        s_. - ()
         # Main UI code goes here
-        self.sL..(qtw.QVBoxLayout())
+        sL.. ?.?VBL..
         inventory_number _ qtw.?LE..
         inventory_number.setValidator(InventoryNumberValidator())
-        self.layout().aW..(inventory_number)
+        layout().aW..(inventory_number)
         # End main UI code
-        self.s..
+        s..
 
 
-__ __name__ == '__main__':
-    app _ qtw.?A..(___.argv)
+__ ______ __ ______
+    app _ qtw.?A..(___.a..
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()

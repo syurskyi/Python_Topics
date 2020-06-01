@@ -55,23 +55,23 @@ ____ ?.QtNetwork ______ (QHostAddress, QNetworkInterface, QTcpServer,
 c_ FortuneThread(QThread):
     error _ pyqtSignal(QTcpSocket.SocketError)
 
-    ___ __init__  socketDescriptor, fortune, parent):
-        super(FortuneThread, self).__init__(parent)
+    ___  -   socketDescriptor, fortune, parent):
+        super(FortuneThread, self). - (parent)
 
-        self.socketDescriptor _ socketDescriptor
-        self.t__ _ fortune
+        socketDescriptor _ socketDescriptor
+        t__ _ fortune
 
-    ___ run(self):
+    ___ run
         tcpSocket _ QTcpSocket()
-        __ no. tcpSocket.setSocketDescriptor(self.socketDescriptor):
-            self.error.emit(tcpSocket.error())
+        __ no. tcpSocket.setSocketDescriptor(socketDescriptor):
+            error.emit(tcpSocket.error())
             r_
 
         block _ QByteArray()
         outstr _ QDataStream(block, QIODevice.WriteOnly)
         outstr.setVersion(QDataStream.Qt_4_0)
         outstr.writeUInt16(0)
-        outstr.writeQString(self.t__)
+        outstr.writeQString(t__)
         outstr.device().seek(0)
         outstr.writeUInt16(block.size() - 2)
 
@@ -91,7 +91,7 @@ c_ FortuneServer(QTcpServer):
         "Computers are not intelligent. They only think they are.")
 
     ___ incomingConnection  socketDescriptor):
-        fortune _ self.FORTUNES[random.randint(0, le.(self.FORTUNES) - 1)]
+        fortune _ FORTUNES[random.randint(0, le.(FORTUNES) - 1)]
 
         thread _ FortuneThread(socketDescriptor, fortune, self)
         thread.finished.c..(thread.deleteLater)
@@ -99,23 +99,23 @@ c_ FortuneServer(QTcpServer):
 
 
 c_ Dialog(QDialog):
-    ___ __init__  parent_None):
-        super(Dialog, self).__init__(parent)
+    ___  -   parent_None):
+        super(Dialog, self). - (parent)
 
-        self.server _ FortuneServer()
+        server _ FortuneServer()
 
         statusLabel _ QLabel()
         statusLabel.setWordWrap(True)
         quitButton _ ?PB..("Quit")
         quitButton.setAutoDefault F..
 
-        __ no. self.server.listen
+        __ no. server.listen
             ?MB...critical  "Threaded Fortune Server",
-                    "Unable to start the server: %s." % self.server.errorString())
-            self.close()
+                    "Unable to start the server: %s." % server.errorString())
+            close()
             r_
 
-        for ipAddress in QNetworkInterface.allAddresses
+        ___ ipAddress __ QNetworkInterface.allAddresses
             __ ipAddress !_ QHostAddress.LocalHost and ipAddress.toIPv4Address() !_ 0:
                 break
         ____
@@ -124,9 +124,9 @@ c_ Dialog(QDialog):
         ipAddress _ ipAddress.toString()
 
         statusLabel.sT..("The server is running on\n\nIP: %s\nport: %d\n\n"
-                "Run the Fortune Client example now." % (ipAddress, self.server.serverPort()))
+                "Run the Fortune Client example now." % (ipAddress, server.serverPort()))
 
-        quitButton.c__.c..(self.close)
+        quitButton.c__.c..(close)
 
         buttonLayout _ QHBoxLayout()
         buttonLayout.addStretch(1)
@@ -135,17 +135,17 @@ c_ Dialog(QDialog):
 
         mainLayout _ ?VBL..
         mainLayout.aW..(statusLabel)
-        mainLayout.addLayout(buttonLayout)
-        self.sL..(mainLayout)
+        mainLayout.aL..(buttonLayout)
+        sL..(mainLayout)
 
-        self.setWindowTitle("Threaded Fortune Server")
+        setWindowTitle("Threaded Fortune Server")
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     dialog _ Dialog()
     dialog.s..
     ___.exit(dialog.exec_())

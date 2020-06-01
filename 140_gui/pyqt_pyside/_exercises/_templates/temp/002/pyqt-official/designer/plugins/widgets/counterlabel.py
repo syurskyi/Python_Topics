@@ -40,117 +40,117 @@ c_ CounterLabel(QWidget):
     # of the widget.
     valueChanged _ pyqtSignal((int, ), (str, ))
 
-    ___ __init__  parent_None):
+    ___  -   parent_None):
 
-        super(CounterLabel, self).__init__(parent)
+        super(CounterLabel, self). - (parent)
 
-        self.setAutoFillBackground F..
+        setAutoFillBackground F..
 
-        self._font _ QFont()
-        self._minimum _ 1
-        self._maximum _ 1
-        self._value _ 1
-        self._offset _ 0
-        self.rescale()
-        self.reposition()
+        _font _ QFont()
+        _minimum _ 1
+        _maximum _ 1
+        _value _ 1
+        _offset _ 0
+        rescale()
+        reposition()
 
     ___ paintEvent  event):
 
         p _ QPainter()
-        p.begin(self)
+        p.begin
         p.setRenderHint(QPainter.Antialiasing)
-        p.setFont(self._font)
-        p.translate(self.width()/2.0, self.height()/2.0)
-        p.scale(self._scale, self._scale)
-        p.drawText(self._xpos, self._ypos, str(self._value))
+        p.setFont(_font)
+        p.translate(width()/2.0, height()/2.0)
+        p.scale(_scale, _scale)
+        p.drawText(_xpos, _ypos, str(_value))
         p.end()
 
-    ___ sizeHint(self):
+    ___ sizeHint 
         r_ QSize(32, 32)
 
-    ___ rescale(self):
+    ___ rescale 
 
-        fm _ QFontMetricsF(self._font, self)
-        maxRect _ fm.boundingRect(QRectF(self.rect()), __.AlignCenter,
-                str(self._maximum))
-        xscale _ float(self.width())/maxRect.width()
-        yscale _ float(self.height())/maxRect.height()
-        self._scale _ min(xscale, yscale)
+        fm _ QFontMetricsF(_font, self)
+        maxRect _ fm.boundingRect(QRectF(rect()), __.AlignCenter,
+                str(_maximum))
+        xscale _ float(width())/maxRect.width()
+        yscale _ float(height())/maxRect.height()
+        _scale _ min(xscale, yscale)
 
-    ___ reposition(self):
+    ___ reposition 
 
-        fm _ QFontMetricsF(self._font, self)
-        rect _ fm.boundingRect(QRectF(self.rect()), __.AlignCenter,
-                str(self._value))
-        self._xpos _ -rect.width()/2.0
-        self._ypos _ rect.height()/2.0 - fm.descent()
-        self.update()
+        fm _ QFontMetricsF(_font, self)
+        rect _ fm.boundingRect(QRectF(rect()), __.AlignCenter,
+                str(_value))
+        _xpos _ -rect.width()/2.0
+        _ypos _ rect.height()/2.0 - fm.descent()
+        update()
 
     # Provide getter and setter methods for the font property.
 
-    ___ getFont(self):
-        r_ self._font
+    ___ getFont 
+        r_ _font
 
     ___ setFont  font):
-        self._font _ font
-        self.rescale()
-        self.reposition()
+        _font _ font
+        rescale()
+        reposition()
 
     font _ pyqtProperty(QFont, getFont, setFont)
 
     # Provide getter and setter methods for the minimum and maximum properties.
 
-    ___ getMinimum(self):
-        r_ self._minimum
+    ___ getMinimum 
+        r_ _minimum
 
     ___ setMinimum  value):
-        self._minimum _ value
-        __ self._minimum > self._maximum:
-            self.setMaximum(self._minimum)
-        __ self._minimum > self._value:
-            self.setValue(self._minimum)
+        _minimum _ value
+        __ _minimum > _maximum:
+            setMaximum(_minimum)
+        __ _minimum > _value:
+            setValue(_minimum)
 
     minimum _ pyqtProperty(int, getMinimum, setMinimum)
 
-    ___ getMaximum(self):
-        r_ self._maximum
+    ___ getMaximum 
+        r_ _maximum
 
     ___ setMaximum  value):
-        self._maximum _ value
-        self._minimum _ min(self._minimum, self._maximum)
-        __ self._maximum < self._value:
-            self.setValue(self._maximum)
-        self.rescale()
-        self.reposition()
+        _maximum _ value
+        _minimum _ min(_minimum, _maximum)
+        __ _maximum < _value:
+            setValue(_maximum)
+        rescale()
+        reposition()
 
     maximum _ pyqtProperty(int, getMaximum, setMaximum)
 
     # We provide an offset property to allow the value shown to differ from
     # the internal value held by the widget.
 
-    ___ getOffset(self):
-        r_ self._offset
+    ___ getOffset 
+        r_ _offset
 
     ___ setOffset  value):
-        self._offset _ value
+        _offset _ value
 
     offset _ pyqtProperty(int, getOffset, setOffset)
 
     # The value property is implemented using the getValue() and setValue()
     # methods.
 
-    ___ getValue(self):
-        r_ self._value
+    ___ getValue 
+        r_ _value
 
     # The setter method for the value property can also be used as a slot.
     @pyqtSlot(int)
     ___ setValue  value):
-        __ no. self._minimum <_ value <_ self._maximum:
+        __ no. _minimum <_ value <_ _maximum:
             r_
-        self._value _ value
-        self.valueChanged[int].emit(value + self._offset)
-        self.valueChanged[str].emit(str(value + self._offset))
-        self.reposition()
+        _value _ value
+        valueChanged[int].emit(value + _offset)
+        valueChanged[str].emit(str(value + _offset))
+        reposition()
 
     value _ pyqtProperty(int, getValue, setValue)
 
@@ -158,19 +158,19 @@ c_ CounterLabel(QWidget):
     # enable the value to be incremented and decremented.
 
     @pyqtSlot()
-    ___ stepUp(self):
-        self.setValue(self._value + 1)
+    ___ stepUp 
+        setValue(_value + 1)
 
     @pyqtSlot()
-    ___ stepDown(self):
-        self.setValue(self._value - 1)
+    ___ stepDown 
+        setValue(_value - 1)
 
 
 __ __name__ == "__main__":
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     widget _ CounterLabel()
     widget.setValue(123)
     widget.s..

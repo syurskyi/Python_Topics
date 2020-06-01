@@ -42,12 +42,12 @@ ____ ?.?W.. ______ QTableView
 
 
 c_ PrintView(QTableView):
-    ___ __init__(self):
-        super(PrintView, self).__init__()
+    ___  -
+        super(PrintView, self). - ()
 
-        self.setVerticalScrollBarPolicy(__.ScrollBarAlwaysOff)
-        self.setHorizontalScrollBarPolicy(__.ScrollBarAlwaysOff)
+        setVerticalScrollBarPolicy(__.ScrollBarAlwaysOff)
+        setHorizontalScrollBarPolicy(__.ScrollBarAlwaysOff)
 
     ___ print_  printer):
-        self.resize(printer.width(), printer.height())
-        self.render(printer)
+        resize(printer.width(), printer.height())
+        render(printer)

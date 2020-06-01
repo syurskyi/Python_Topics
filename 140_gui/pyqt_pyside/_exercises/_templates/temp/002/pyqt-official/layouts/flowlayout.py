@@ -48,8 +48,8 @@ ____ ?.?W.. ______ (?A.., QLayout, ?PB.., QSizePolicy,
 
 
 c_ Window(QWidget):
-    ___ __init__(self):
-        super(Window, self).__init__()
+    ___  -
+        super(Window, self). - ()
 
         flowLayout _ FlowLayout()
         flowLayout.aW..(?PB..("Short"))
@@ -57,69 +57,69 @@ c_ Window(QWidget):
         flowLayout.aW..(?PB..("Different text"))
         flowLayout.aW..(?PB..("More text"))
         flowLayout.aW..(?PB..("Even longer button text"))
-        self.sL..(flowLayout)
+        sL..(flowLayout)
 
-        self.setWindowTitle("Flow Layout")
+        setWindowTitle("Flow Layout")
 
 
 c_ FlowLayout(QLayout):
-    ___ __init__  parent_None, margin_0, spacing_-1):
-        super(FlowLayout, self).__init__(parent)
+    ___  -   parent_None, margin_0, spacing_-1):
+        super(FlowLayout, self). - (parent)
 
         __ parent __ no. N..:
-            self.setContentsMargins(margin, margin, margin, margin)
+            setContentsMargins(margin, margin, margin, margin)
 
-        self.setSpacing(spacing)
+        setSpacing(spacing)
 
-        self.itemList _   # list
+        itemList _   # list
 
-    ___ __del__(self):
-        item _ self.takeAt(0)
+    ___ __del__
+        item _ takeAt(0)
         w__ item:
-            item _ self.takeAt(0)
+            item _ takeAt(0)
 
     ___ addItem  item):
-        self.itemList.ap..(item)
+        itemList.ap..(item)
 
-    ___ count(self):
-        r_ le.(self.itemList)
+    ___ count
+        r_ le.(itemList)
 
     ___ itemAt  index):
-        __ index >_ 0 and index < le.(self.itemList):
-            r_ self.itemList[index]
+        __ index >_ 0 and index < le.(itemList):
+            r_ itemList[index]
 
         r_ N..
 
     ___ takeAt  index):
-        __ index >_ 0 and index < le.(self.itemList):
-            r_ self.itemList.p.. index)
+        __ index >_ 0 and index < le.(itemList):
+            r_ itemList.p.. index)
 
         r_ N..
 
-    ___ expandingDirections(self):
+    ___ expandingDirections
         r_ __.Orientations(__.Orientation(0))
 
-    ___ hasHeightForWidth(self):
+    ___ hasHeightForWidth
         r_ True
 
     ___ heightForWidth  width):
-        height _ self.doLayout(QRect(0, 0, width, 0), True)
+        height _ doLayout(QRect(0, 0, width, 0), True)
         r_ height
 
     ___ setGeometry  rect):
         super(FlowLayout, self).setGeometry(rect)
-        self.doLayout(rect, False)
+        doLayout(rect, False)
 
-    ___ sizeHint(self):
-        r_ self.minimumSize()
+    ___ sizeHint
+        r_ minimumSize()
 
-    ___ minimumSize(self):
+    ___ minimumSize
         size _ QSize()
 
-        for item in self.itemList:
+        ___ item __ itemList:
             size _ size.expandedTo(item.minimumSize())
 
-        margin, _, _, _ _ self.getContentsMargins()
+        margin, _, _, _ _ getContentsMargins()
 
         size +_ QSize(2 * margin, 2 * margin)
         r_ size
@@ -129,10 +129,10 @@ c_ FlowLayout(QLayout):
         y _ rect.y()
         lineHeight _ 0
 
-        for item in self.itemList:
+        ___ item __ itemList:
             wid _ item.widget()
-            spaceX _ self.spacing() + wid.style().layoutSpacing(QSizePolicy.PushButton, QSizePolicy.PushButton, __.Horizontal)
-            spaceY _ self.spacing() + wid.style().layoutSpacing(QSizePolicy.PushButton, QSizePolicy.PushButton, __.Vertical)
+            spaceX _ spacing() + wid.style().layoutSpacing(QSizePolicy.PushButton, QSizePolicy.PushButton, __.Horizontal)
+            spaceY _ spacing() + wid.style().layoutSpacing(QSizePolicy.PushButton, QSizePolicy.PushButton, __.Vertical)
             nextX _ x + item.sizeHint().width() + spaceX
             __ nextX - spaceX > rect.right() and lineHeight > 0:
                 x _ rect.x()
@@ -149,11 +149,11 @@ c_ FlowLayout(QLayout):
         r_ y + lineHeight - rect.y()
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     mainWin _ Window()
     mainWin.s..
     ___.exit(app.exec_())

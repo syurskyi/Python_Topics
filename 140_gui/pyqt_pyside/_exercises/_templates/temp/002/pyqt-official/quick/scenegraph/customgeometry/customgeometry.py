@@ -55,125 +55,125 @@ c_ BezierCurve(QQuickItem):
     p1Changed _ pyqtSignal(QPointF)
 
     @pyqtProperty(QPointF, notify_p1Changed)
-    ___ p1(self):
-        r_ self._p1
+    ___ p1
+        r_ _p1
 
     @p1.setter
     ___ p1  p):
-        __ self._p1 !_ p:
-            self._p1 _ QPointF(p)
-            self.p1Changed.emit(p)
-            self.update()
+        __ _p1 !_ p:
+            _p1 _ QPointF(p)
+            p1Changed.emit(p)
+            update()
 
     p2Changed _ pyqtSignal(QPointF)
 
     @pyqtProperty(QPointF, notify_p2Changed)
-    ___ p2(self):
-        r_ self._p2
+    ___ p2
+        r_ _p2
 
     @p2.setter
     ___ p2  p):
-        __ self._p2 !_ p:
-            self._p2 _ QPointF(p)
-            self.p2Changed.emit(p)
-            self.update()
+        __ _p2 !_ p:
+            _p2 _ QPointF(p)
+            p2Changed.emit(p)
+            update()
 
     p3Changed _ pyqtSignal(QPointF)
 
     @pyqtProperty(QPointF, notify_p3Changed)
-    ___ p3(self):
-        r_ self._p3
+    ___ p3
+        r_ _p3
 
     @p3.setter
     ___ p3  p):
-        __ self._p3 !_ p:
-            self._p3 _ QPointF(p)
-            self.p3Changed.emit(p)
-            self.update()
+        __ _p3 !_ p:
+            _p3 _ QPointF(p)
+            p3Changed.emit(p)
+            update()
 
     p4Changed _ pyqtSignal(QPointF)
 
     @pyqtProperty(QPointF, notify_p4Changed)
-    ___ p4(self):
-        r_ self._p4
+    ___ p4
+        r_ _p4
 
     @p4.setter
     ___ p4  p):
-        __ self._p4 !_ p:
-            self._p4 _ QPointF(p)
-            self.p4Changed.emit(p)
-            self.update()
+        __ _p4 !_ p:
+            _p4 _ QPointF(p)
+            p4Changed.emit(p)
+            update()
 
     segmentCountChanged _ pyqtSignal(int)
 
     @pyqtProperty(int, notify_segmentCountChanged)
-    ___ segmentCount(self):
-        r_ self._segmentCount
+    ___ segmentCount
+        r_ _segmentCount
 
     @segmentCount.setter
     ___ segmentCount  count):
-        __ self._segmentCount !_ count:
-            self._segmentCount _ count
-            self.segmentCountChanged.emit(count)
-            self.update()
+        __ _segmentCount !_ count:
+            _segmentCount _ count
+            segmentCountChanged.emit(count)
+            update()
 
-    ___ __init__  parent_None):
-        super(BezierCurve, self).__init__(parent)
+    ___  -   parent_None):
+        super(BezierCurve, self). - (parent)
 
-        self._p1 _ QPointF(0, 0)
-        self._p2 _ QPointF(1, 0)
-        self._p3 _ QPointF(0, 1)
-        self._p4 _ QPointF(1, 1)
+        _p1 _ QPointF(0, 0)
+        _p2 _ QPointF(1, 0)
+        _p3 _ QPointF(0, 1)
+        _p4 _ QPointF(1, 1)
 
-        self._segmentCount _ 32
+        _segmentCount _ 32
 
-        self._root_node _ N..
+        _root_node _ N..
 
-        self.setFlag(QQuickItem.ItemHasContents, True)
+        setFlag(QQuickItem.ItemHasContents, True)
 
     ___ updatePaintNode  oldNode, nodeData):
-        __ self._root_node __ N..:
-            self._root_node _ QSGGeometryNode()
+        __ _root_node __ N..:
+            _root_node _ QSGGeometryNode()
 
             geometry _ QSGGeometry(QSGGeometry.defaultAttributes_Point2D(),
-                    self._segmentCount)
+                    _segmentCount)
             geometry.setLineWidth(2)
             geometry.setDrawingMode(QSGGeometry.GL_LINE_STRIP)
-            self._root_node.setGeometry(geometry)
-            self._root_node.setFlag(QSGNode.OwnsGeometry)
+            _root_node.setGeometry(geometry)
+            _root_node.setFlag(QSGNode.OwnsGeometry)
 
             material _ QSGFlatColorMaterial()
             material.sC..(?C..(255, 0, 0))
-            self._root_node.setMaterial(material)
-            self._root_node.setFlag(QSGNode.OwnsMaterial)
+            _root_node.setMaterial(material)
+            _root_node.setFlag(QSGNode.OwnsMaterial)
         ____
-            geometry _ self._root_node.geometry()
-            geometry.allocate(self._segmentCount)
+            geometry _ _root_node.geometry()
+            geometry.allocate(_segmentCount)
 
-        w _ self.width()
-        h _ self.height()
+        w _ width()
+        h _ height()
         vertices _ geometry.vertexDataAsPoint2D()
 
-        for i in range(self._segmentCount):
-            t _ i / float(self._segmentCount - 1)
+        ___ i __ range(_segmentCount):
+            t _ i / float(_segmentCount - 1)
             invt _ 1 - t
 
-            pos _ invt * invt * invt * self._p1 \
-                    + 3 * invt * invt * t * self._p2 \
-                    + 3 * invt * t * t * self._p3 \
-                    + t * t * t * self._p4
+            pos _ invt * invt * invt * _p1 \
+                    + 3 * invt * invt * t * _p2 \
+                    + 3 * invt * t * t * _p3 \
+                    + t * t * t * _p4
 
             vertices[i].set(pos.x() * w, pos.y() * h)
 
-        self._root_node.markDirty(QSGNode.DirtyGeometry)
+        _root_node.markDirty(QSGNode.DirtyGeometry)
 
-        r_ self._root_node
+        r_ _root_node
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
     ______ ___
 
-    app _ QGuiApplication(___.argv)
+    app _ QGuiApplication(___.a..
 
     qmlRegisterType(BezierCurve, "CustomGeometry", 1, 0, "BezierCurve")
 

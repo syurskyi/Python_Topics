@@ -4,60 +4,60 @@ ____ ? ______ ?G.. __ qtg
 ____ ? ______ ?C.. __ qtc
 
 
-c_ InvoiceForm(qtw.QWidget):
+c_ InvoiceForm ?.?W..
 
     submitted _ qtc.pyqtSignal(dict)
 
-    ___ __init__(self):
-        super().__init__()
-        self.sL..(qtw.QFormLayout())
-        self.inputs _ {}
-        self.inputs['Customer Name'] _ qtw.?LE..
-        self.inputs['Customer Address'] _ qtw.?PTE..
-        self.inputs['Invoice Date'] _ qtw.QDateEdit(
+    ___  -
+        s_. - ()
+        sL..(qtw.QFormLayout())
+        inputs _ {}
+        inputs['Customer Name'] _ qtw.?LE..
+        inputs['Customer Address'] _ qtw.?PTE..
+        inputs['Invoice Date'] _ qtw.QDateEdit(
             date_qtc.QDate.currentDate(), calendarPopup_True)
-        self.inputs['Days until Due'] _ qtw.QSpinBox(
+        inputs['Days until Due'] _ qtw.QSpinBox(
             minimum_0, maximum_60, value_30)
-        for label, widget in self.inputs.items
-            self.layout().addRow(label, widget)
+        ___ label, widget __ inputs.items
+            layout().addRow(label, widget)
 
-        self.line_items _ qtw.QTableWidget(
+        line_items _ qtw.QTableWidget(
             rowCount_10, columnCount_3)
-        self.line_items.setHorizontalHeaderLabels(
+        line_items.setHorizontalHeaderLabels(
             ['Job', 'Rate', 'Hours'])
-        self.line_items.horizontalHeader().setSectionResizeMode(
+        line_items.horizontalHeader().setSectionResizeMode(
             qtw.QHeaderView.Stretch)
-        self.layout().addRow(self.line_items)
-        for row in range(self.line_items.rowCount()):
-            for col in range(self.line_items.columnCount()):
+        layout().addRow(line_items)
+        ___ row __ range(line_items.rowCount()):
+            ___ col __ range(line_items.columnCount()):
                 __ col > 0:
                     w _ qtw.QSpinBox(minimum_0, maximum_300)
-                    self.line_items.setCellWidget(row, col, w)
+                    line_items.setCellWidget(row, col, w)
         submit _ qtw.?PB..('Create Invoice', c___self.on_submit)
-        self.layout().addRow(submit)
+        layout().addRow(submit)
 
-    ___ on_submit(self):
+    ___ on_submit
         data _ {
-            'c_name': self.inputs['Customer Name'].t__(),
-            'c_addr': self.inputs['Customer Address'].toPlainText(),
-            'i_date': self.inputs['Invoice Date'].date().toString(),
-            'i_due': self.inputs['Invoice Date'].date().addDays(
-                self.inputs['Days until Due'].value()).toString(),
-            'i_terms': '{} days'.format(self.inputs['Days until Due'].value())
+            'c_name': inputs['Customer Name'].t__(),
+            'c_addr': inputs['Customer Address'].toPlainText(),
+            'i_date': inputs['Invoice Date'].date().toString(),
+            'i_due': inputs['Invoice Date'].date().addDays(
+                inputs['Days until Due'].value()).toString(),
+            'i_terms': '{} days'.format(inputs['Days until Due'].value())
         }
         data['line_items'] _   # list
-        for row in range(self.line_items.rowCount()):
-            __ no. self.line_items.item(row, 0):
+        ___ row __ range(line_items.rowCount()):
+            __ no. line_items.item(row, 0):
                 continue
-            job _ self.line_items.item(row, 0).t__()
-            rate _ self.line_items.cellWidget(row, 1).value()
-            hours _ self.line_items.cellWidget(row, 2).value()
+            job _ line_items.item(row, 0).t__()
+            rate _ line_items.cellWidget(row, 1).value()
+            hours _ line_items.cellWidget(row, 2).value()
             total _ rate * hours
             row_data _ [job, rate, hours, total]
             __ any(row_data):
                 data['line_items'].ap..(row_data)
-        data['total_due'] _ sum(x[3] for x in data['line_items'])
-        self.submitted.emit(data)
+        data['total_due'] _ sum(x[3] ___ x __ data['line_items'])
+        submitted.emit(data)
 
 
 c_ InvoiceView(qtw.QTextEdit):
@@ -66,15 +66,15 @@ c_ InvoiceView(qtw.QTextEdit):
     doc_width _ 8.5 * dpi
     doc_height _ 11 * dpi
 
-    ___ __init__(self):
-        super().__init__(readOnly_True)
-        self.setFixedSize(qtc.QSize(self.doc_width, self.doc_height))
+    ___  -
+        s_. - (readOnly_True)
+        setFixedSize(qtc.QSize(doc_width, doc_height))
 
 
     ___ build_invoice  data):
         document _ qtg.QTextDocument()
-        self.setDocument(document)
-        document.setPageSize(qtc.QSizeF(self.doc_width, self.doc_height))
+        setDocument(document)
+        document.setPageSize(qtc.QSizeF(doc_width, doc_height))
         cursor _ qtg.QTextCursor(document)
         root _ document.rootFrame()
         cursor.setPosition(root.lastPosition())
@@ -87,13 +87,13 @@ c_ InvoiceView(qtw.QTextEdit):
 
         cursor.setPosition(root.lastPosition())
         cust_addr_frame_fmt _ qtg.QTextFrameFormat()
-        cust_addr_frame_fmt.setWidth(self.doc_width * .3)
+        cust_addr_frame_fmt.setWidth(doc_width * .3)
         cust_addr_frame_fmt.setPosition(qtg.QTextFrameFormat.FloatRight)
         cust_addr_frame _ cursor.insertFrame(cust_addr_frame_fmt)
 
         cursor.setPosition(root.lastPosition())
         terms_frame_fmt _ qtg.QTextFrameFormat()
-        terms_frame_fmt.setWidth(self.doc_width * .5)
+        terms_frame_fmt.setWidth(doc_width * .5)
         terms_frame_fmt.setPosition(qtg.QTextFrameFormat.FloatLeft)
         terms_frame _ cursor.insertFrame(terms_frame_fmt)
 
@@ -159,7 +159,7 @@ c_ InvoiceView(qtw.QTextEdit):
             f'<b>Invoice due:</b> {data["i_due"]}',
         )
 
-        for i, item in enumerate(term_items):
+        ___ i, item __ en..(term_items):
             __ i > 0:
                 cursor.insertBlock()
             # We can insert HTML too, but not with a textformat
@@ -180,14 +180,14 @@ c_ InvoiceView(qtw.QTextEdit):
 
         # now we're in the first cell of the table
         # write headers
-        for heading in headings:
+        ___ heading __ headings:
             cursor.insertText(heading, label_format)
             cursor.movePosition(qtg.QTextCursor.NextCell)
 
         # write data
-        for row in data['line_items']:
-            for col, value in enumerate(row):
-                t__ _ f'${value}' __ col in (1, 3) else f'{value}'
+        ___ row __ data['line_items']:
+            ___ col, value __ en..(row):
+                t__ _ f'${value}' __ col __ (1, 3) else f'{value}'
                 cursor.insertText(t__, std_format)
                 cursor.movePosition(qtg.QTextCursor.NextCell)
 
@@ -205,27 +205,27 @@ c_ InvoiceView(qtw.QTextEdit):
 
 c_ MainWindow(qtw.QMainWindow):
 
-    ___ __init__(self):
+    ___  -
         """MainWindow constructor."""
-        super().__init__()
+        s_. - ()
         # Main UI code goes here
         main _ qtw.?W..
         main.sL..(qtw.QHBoxLayout())
-        self.sCW..(main)
+        sCW..(main)
 
         form _ InvoiceForm()
         main.layout().aW..(form)
 
-        self.preview _ InvoiceView()
-        main.layout().aW..(self.preview)
+        preview _ InvoiceView()
+        main.layout().aW..(preview)
 
-        form.submitted.c..(self.preview.build_invoice)
+        form.submitted.c..(preview.build_invoice)
 
         # End main UI code
-        self.s..
+        s..
 
 
-__ __name__ == '__main__':
-    app _ qtw.?A..(___.argv)
+__ ______ __ ______
+    app _ qtw.?A..(___.a..
     mw _ MainWindow()
     ___.exit(app.exec())

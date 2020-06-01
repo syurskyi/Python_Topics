@@ -49,29 +49,29 @@ ____ ?.?W.. ______ (QGridLayout, QHBoxLayout, QLabel, QLineEdit,
 
 c_ SortedDict(dict):
     c_ Iterator(object):
-        ___ __init__  sorted_dict):
-            self._dict _ sorted_dict
-            self._keys _ sorted(self._dict.keys())
-            self._nr_items _ le.(self._keys)
-            self._idx _ 0
+        ___  -   sorted_dict):
+            _dict _ sorted_dict
+            _keys _ sorted(_dict.keys())
+            _nr_items _ le.(_keys)
+            _idx _ 0
 
-        ___ __iter__(self):
+        ___ __iter__ 
             r_ self
 
-        ___ next(self):
-            __ self._idx >_ self._nr_items:
+        ___ next 
+            __ _idx >_ _nr_items:
                 raise StopIteration
 
-            key _ self._keys[self._idx]
-            value _ self._dict[key]
-            self._idx +_ 1
+            key _ _keys[_idx]
+            value _ _dict[key]
+            _idx +_ 1
 
             r_ key, value
 
         __next__ _ next
 
-    ___ __iter__(self):
-        r_ SortedDict.Iterator(self)
+    ___ __iter__ 
+        r_ SortedDict.Iterator
 
     iterkeys _ __iter__
 
@@ -79,96 +79,96 @@ c_ SortedDict(dict):
 c_ AddressBook(QWidget):
     NavigationMode, AddingMode, EditingMode _ range(3)
 
-    ___ __init__  parent_None):
-        super(AddressBook, self).__init__(parent)
+    ___  -   parent_None):
+        super(AddressBook, self). - (parent)
 
-        self.contacts _ SortedDict()
-        self.oldName _ ''
-        self.oldAddress _ ''
-        self.currentMode _ self.NavigationMode
+        contacts _ SortedDict()
+        oldName _ ''
+        oldAddress _ ''
+        currentMode _ NavigationMode
 
         nameLabel _ QLabel("Name:")
-        self.nameLine _ ?LE..
-        self.nameLine.setReadOnly(True)
+        nameLine _ ?LE..
+        nameLine.setReadOnly(True)
 
         addressLabel _ QLabel("Address:")
-        self.addressText _ QTextEdit()
-        self.addressText.setReadOnly(True)
+        addressText _ QTextEdit()
+        addressText.setReadOnly(True)
 
-        self.addButton _ ?PB..("&Add")
-        self.addButton.s..
-        self.editButton _ ?PB..("&Edit")
-        self.editButton.setEnabled F..
-        self.removeButton _ ?PB..("&Remove")
-        self.removeButton.setEnabled F..
-        self.submitButton _ ?PB..("&Submit")
-        self.submitButton.hide()
-        self.cancelButton _ ?PB..("&Cancel")
-        self.cancelButton.hide()
+        addButton _ ?PB..("&Add")
+        addButton.s..
+        editButton _ ?PB..("&Edit")
+        editButton.setEnabled F..
+        removeButton _ ?PB..("&Remove")
+        removeButton.setEnabled F..
+        submitButton _ ?PB..("&Submit")
+        submitButton.hide()
+        cancelButton _ ?PB..("&Cancel")
+        cancelButton.hide()
 
-        self.nextButton _ ?PB..("&Next")
-        self.nextButton.setEnabled F..
-        self.previousButton _ ?PB..("&Previous")
-        self.previousButton.setEnabled F..
+        nextButton _ ?PB..("&Next")
+        nextButton.setEnabled F..
+        previousButton _ ?PB..("&Previous")
+        previousButton.setEnabled F..
 
-        self.addButton.c__.c..(self.addContact)
-        self.submitButton.c__.c..(self.submitContact)
-        self.editButton.c__.c..(self.editContact)
-        self.removeButton.c__.c..(self.removeContact)
-        self.cancelButton.c__.c..(self.cancel)
-        self.nextButton.c__.c..(self.next)
-        self.previousButton.c__.c..(self.previous)
+        addButton.c__.c..(addContact)
+        submitButton.c__.c..(submitContact)
+        editButton.c__.c..(editContact)
+        removeButton.c__.c..(removeContact)
+        cancelButton.c__.c..(cancel)
+        nextButton.c__.c..(next)
+        previousButton.c__.c..(previous)
 
         buttonLayout1 _ ?VBL..
-        buttonLayout1.aW..(self.addButton)
-        buttonLayout1.aW..(self.editButton)
-        buttonLayout1.aW..(self.removeButton)
-        buttonLayout1.aW..(self.submitButton)
-        buttonLayout1.aW..(self.cancelButton)
+        buttonLayout1.aW..(addButton)
+        buttonLayout1.aW..(editButton)
+        buttonLayout1.aW..(removeButton)
+        buttonLayout1.aW..(submitButton)
+        buttonLayout1.aW..(cancelButton)
         buttonLayout1.addStretch()
 
         buttonLayout2 _ QHBoxLayout()
-        buttonLayout2.aW..(self.previousButton)
-        buttonLayout2.aW..(self.nextButton)
+        buttonLayout2.aW..(previousButton)
+        buttonLayout2.aW..(nextButton)
 
         mainLayout _ QGridLayout()
         mainLayout.aW..(nameLabel, 0, 0)
-        mainLayout.aW..(self.nameLine, 0, 1)
+        mainLayout.aW..(nameLine, 0, 1)
         mainLayout.aW..(addressLabel, 1, 0, __.AlignTop)
-        mainLayout.aW..(self.addressText, 1, 1)
-        mainLayout.addLayout(buttonLayout1, 1, 2)
-        mainLayout.addLayout(buttonLayout2, 3, 1)
+        mainLayout.aW..(addressText, 1, 1)
+        mainLayout.aL..(buttonLayout1, 1, 2)
+        mainLayout.aL..(buttonLayout2, 3, 1)
 
-        self.sL..(mainLayout)
-        self.setWindowTitle("Simple Address Book")
+        sL..(mainLayout)
+        setWindowTitle("Simple Address Book")
 
-    ___ addContact(self):
-        self.oldName _ self.nameLine.t__()
-        self.oldAddress _ self.addressText.toPlainText()
+    ___ addContact 
+        oldName _ nameLine.t__()
+        oldAddress _ addressText.toPlainText()
 
-        self.nameLine.clear()
-        self.addressText.clear()
+        nameLine.clear()
+        addressText.clear()
 
-        self.updateInterface(self.AddingMode)
+        updateInterface(AddingMode)
 
-    ___ editContact(self):
-        self.oldName _ self.nameLine.t__()
-        self.oldAddress _ self.addressText.toPlainText()
+    ___ editContact 
+        oldName _ nameLine.t__()
+        oldAddress _ addressText.toPlainText()
 
-        self.updateInterface(self.EditingMode)
+        updateInterface(EditingMode)
 
-    ___ submitContact(self):
-        name _ self.nameLine.t__()
-        address _ self.addressText.toPlainText()
+    ___ submitContact 
+        name _ nameLine.t__()
+        address _ addressText.toPlainText()
 
         __ name == "" or address == "":
             ?MB...information  "Empty Field",
                     "Please enter a name and address.")
             r_
 
-        __ self.currentMode == self.AddingMode:
-            __ name no. in self.contacts:
-                self.contacts[name] _ address
+        __ currentMode == AddingMode:
+            __ name no. __ contacts:
+                contacts[name] _ address
                 ?MB...information  "Add Successful",
                         "\"%s\" has been added to your address book." % name)
             ____
@@ -176,50 +176,50 @@ c_ AddressBook(QWidget):
                         "Sorry, \"%s\" is already in your address book." % name)
                 r_
 
-        ____ self.currentMode == self.EditingMode:
-            __ self.oldName !_ name:
-                __ name no. in self.contacts:
+        ____ currentMode == EditingMode:
+            __ oldName !_ name:
+                __ name no. __ contacts:
                     ?MB...information  "Edit Successful",
-                            "\"%s\" has been edited in your address book." % self.oldName)
-                    del self.contacts[self.oldName]
-                    self.contacts[name] _ address
+                            "\"%s\" has been edited in your address book." % oldName)
+                    del contacts[oldName]
+                    contacts[name] _ address
                 ____
                     ?MB...information  "Edit Unsuccessful",
                             "Sorry, \"%s\" is already in your address book." % name)
                     r_
-            ____ self.oldAddress !_ address:
+            ____ oldAddress !_ address:
                 ?MB...information  "Edit Successful",
                         "\"%s\" has been edited in your address book." % name)
-                self.contacts[name] _ address
+                contacts[name] _ address
 
-        self.updateInterface(self.NavigationMode)
+        updateInterface(NavigationMode)
 
-    ___ cancel(self):
-        self.nameLine.sT..(self.oldName)
-        self.addressText.sT..(self.oldAddress)
-        self.updateInterface(self.NavigationMode)
+    ___ cancel 
+        nameLine.sT..(oldName)
+        addressText.sT..(oldAddress)
+        updateInterface(NavigationMode)
 
-    ___ removeContact(self):
-        name _ self.nameLine.t__()
-        address _ self.addressText.toPlainText()
+    ___ removeContact 
+        name _ nameLine.t__()
+        address _ addressText.toPlainText()
 
-        __ name in self.contacts:
+        __ name __ contacts:
             button _ ?MB...q..  "Confirm Remove",
                     "Are you sure you want to remove \"%s\"?" % name,
                     ?MB...Yes | ?MB...No)
 
             __ button == ?MB...Yes:
-                self.previous()
-                del self.contacts[name]
+                previous()
+                del contacts[name]
 
                 ?MB...information  "Remove Successful",
                         "\"%s\" has been removed from your address book." % name)
 
-        self.updateInterface(self.NavigationMode)
+        updateInterface(NavigationMode)
 
-    ___ next(self):
-        name _ self.nameLine.t__()
-        it _ iter(self.contacts)
+    ___ next 
+        name _ nameLine.t__()
+        it _ iter(contacts)
 
         try:
             w__ T..
@@ -229,76 +229,76 @@ c_ AddressBook(QWidget):
                     next_name, next_address _ it.next()
                     break
         except StopIteration:
-            next_name, next_address _ iter(self.contacts).next()
+            next_name, next_address _ iter(contacts).next()
 
-        self.nameLine.sT..(next_name)
-        self.addressText.sT..(next_address)
+        nameLine.sT..(next_name)
+        addressText.sT..(next_address)
 
-    ___ previous(self):
-        name _ self.nameLine.t__()
+    ___ previous 
+        name _ nameLine.t__()
 
         prev_name _ prev_address _ N..
-        for this_name, this_address in self.contacts:
+        ___ this_name, this_address __ contacts:
             __ this_name == name:
                 break
 
             prev_name _ this_name
             prev_address _ this_address
         ____
-            self.nameLine.clear()
-            self.addressText.clear()
+            nameLine.clear()
+            addressText.clear()
             r_
 
         __ prev_name __ N..:
-            for prev_name, prev_address in self.contacts:
+            ___ prev_name, prev_address __ contacts:
                 pass
 
-        self.nameLine.sT..(prev_name)
-        self.addressText.sT..(prev_address)
+        nameLine.sT..(prev_name)
+        addressText.sT..(prev_address)
 
     ___ updateInterface  mode):
-        self.currentMode _ mode
+        currentMode _ mode
 
-        __ self.currentMode in (self.AddingMode, self.EditingMode):
-            self.nameLine.setReadOnly F..
-            self.nameLine.setFocus(__.OtherFocusReason)
-            self.addressText.setReadOnly F..
+        __ currentMode __ (AddingMode, EditingMode):
+            nameLine.setReadOnly F..
+            nameLine.setFocus(__.OtherFocusReason)
+            addressText.setReadOnly F..
 
-            self.addButton.setEnabled F..
-            self.editButton.setEnabled F..
-            self.removeButton.setEnabled F..
+            addButton.setEnabled F..
+            editButton.setEnabled F..
+            removeButton.setEnabled F..
 
-            self.nextButton.setEnabled F..
-            self.previousButton.setEnabled F..
+            nextButton.setEnabled F..
+            previousButton.setEnabled F..
 
-            self.submitButton.s..
-            self.cancelButton.s..
+            submitButton.s..
+            cancelButton.s..
 
-        ____ self.currentMode == self.NavigationMode:
-            __ no. self.contacts:
-                self.nameLine.clear()
-                self.addressText.clear()
+        ____ currentMode == NavigationMode:
+            __ no. contacts:
+                nameLine.clear()
+                addressText.clear()
 
-            self.nameLine.setReadOnly(True)
-            self.addressText.setReadOnly(True)
-            self.addButton.setEnabled(True)
+            nameLine.setReadOnly(True)
+            addressText.setReadOnly(True)
+            addButton.setEnabled(True)
 
-            number _ le.(self.contacts)
-            self.editButton.setEnabled(number >_ 1)
-            self.removeButton.setEnabled(number >_ 1)
-            self.nextButton.setEnabled(number > 1)
-            self.previousButton.setEnabled(number >1 )
+            number _ le.(contacts)
+            editButton.setEnabled(number >_ 1)
+            removeButton.setEnabled(number >_ 1)
+            nextButton.setEnabled(number > 1)
+            previousButton.setEnabled(number >1 )
 
-            self.submitButton.hide()
-            self.cancelButton.hide()
+            submitButton.hide()
+            cancelButton.hide()
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
     ______ ___
 
     ____ ?.?W.. ______ ?A..
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     addressBook _ AddressBook()
     addressBook.s..

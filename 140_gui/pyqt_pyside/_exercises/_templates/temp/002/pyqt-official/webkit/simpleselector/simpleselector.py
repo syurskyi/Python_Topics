@@ -50,33 +50,33 @@ ____ ui_window ______ Ui_Window
 
 
 c_ SimpleSelector(QWidget, Ui_Window):
-    ___ __init__  parent_None):
-        super(SimpleSelector, self).__init__(parent)
+    ___  -   parent_None):
+        super(SimpleSelector, self). - (parent)
 
-        self.setupUi(self)
+        setupUi
 
-    ___ on_elementLineEdit_returnPressed(self):
-        frame _ self.webView.page().mainFrame()
+    ___ on_elementLineEdit_returnPressed 
+        frame _ webView.page().mainFrame()
 
         # Select elements.
         document _ frame.documentElement()
-        elements _ document.findAll(self.elementLineEdit.t__())
+        elements _ document.findAll(elementLineEdit.t__())
 
-        for element in elements:
+        ___ element __ elements:
             element.setAttribute('style', 'background-color: #f0f090')
 
-    ___ on_highlightButton_clicked(self):
-        self.on_elementLineEdit_returnPressed()
+    ___ on_highlightButton_clicked 
+        on_elementLineEdit_returnPressed()
  
     ___ setUrl  url):
-        self.webView.setUrl(url)
+        webView.setUrl(url)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     win _ SimpleSelector()
     win.setUrl(QUrl('http://www.webkit.org'))

@@ -62,23 +62,23 @@ c_ Mouse(QGraphicsItem):
     adjust _ 0.5
     BoundingRect _ QRectF(-20 - adjust, -22 - adjust, 40 + adjust, 83 + adjust)
 
-    ___ __init__(self):
-        super(Mouse, self).__init__()
+    ___  -
+        super(Mouse, self). - ()
 
-        self.angle _ 0.0
-        self.speed _ 0.0
-        self.mouseEyeDirection _ 0.0
-        self.color _ ?C..(qrand() % 256, qrand() % 256, qrand() % 256)
+        angle _ 0.0
+        speed _ 0.0
+        mouseEyeDirection _ 0.0
+        color _ ?C..(qrand() % 256, qrand() % 256, qrand() % 256)
 
-        self.setRotation(qrand() % (360 * 16))
+        setRotation(qrand() % (360 * 16))
 
         # In the C++ version of this example, this class is also derived from
         # QObject in order to receive timer events.  PyQt does not support
         # deriving from more than one wrapped class so we just create an
         # explicit timer instead.
-        self.timer _ ?T..
-        self.timer.timeout.c..(self.timerEvent)
-        self.timer.start(1000 / 33)
+        timer _ ?T..
+        timer.timeout.c..(timerEvent)
+        timer.start(1000 / 33)
 
     @staticmethod
     ___ normalizeAngle(angle):
@@ -88,17 +88,17 @@ c_ Mouse(QGraphicsItem):
             angle -_ Mouse.TwoPi
         r_ angle
 
-    ___ boundingRect(self):
+    ___ boundingRect
         r_ Mouse.BoundingRect
 
-    ___ shape(self):
+    ___ shape
         path _ QPainterPath()
         path.addRect(-10, -20, 20, 40)
         r_ path;
 
     ___ paint  painter, option, widget):
         # Body.
-        painter.setBrush(self.color)
+        painter.setBrush(color)
         painter.drawEllipse(-10, -20, 20, 40)
 
         # Eyes.
@@ -111,11 +111,11 @@ c_ Mouse(QGraphicsItem):
         painter.drawEllipse(QRectF(-2, -22, 4, 4))
 
         # Pupils.
-        painter.drawEllipse(QRectF(-8.0 + self.mouseEyeDirection, -17, 4, 4))
-        painter.drawEllipse(QRectF(4.0 + self.mouseEyeDirection, -17, 4, 4))
+        painter.drawEllipse(QRectF(-8.0 + mouseEyeDirection, -17, 4, 4))
+        painter.drawEllipse(QRectF(4.0 + mouseEyeDirection, -17, 4, 4))
 
         # Ears.
-        __ self.scene().collidingItems(self):
+        __ scene().collidingItems
             painter.setBrush(__.red)
         ____
             painter.setBrush(__.darkYellow)
@@ -131,9 +131,9 @@ c_ Mouse(QGraphicsItem):
         painter.setBrush(__.NoBrush)
         painter.drawPath(path)
 
-    ___ timerEvent(self):
+    ___ timerEvent
         # Don't move too far away.
-        lineToCenter _ QLineF(QPointF(0, 0), self.mapFromScene(0, 0))
+        lineToCenter _ QLineF(QPointF(0, 0), mapFromScene(0, 0))
         __ lineToCenter.length() > 150:
             angleToCenter _ math.acos(lineToCenter.dx() / lineToCenter.length())
             __ lineToCenter.dy() < 0:
@@ -142,25 +142,25 @@ c_ Mouse(QGraphicsItem):
 
             __ angleToCenter < Mouse.Pi and angleToCenter > Mouse.Pi / 4:
                 # Rotate left.
-                self.angle +_ [-0.25, 0.25][self.angle < -Mouse.Pi / 2]
+                angle +_ [-0.25, 0.25][angle < -Mouse.Pi / 2]
             ____ angleToCenter >_ Mouse.Pi and angleToCenter < (Mouse.Pi + Mouse.Pi / 2 + Mouse.Pi / 4):
                 # Rotate right.
-                self.angle +_ [-0.25, 0.25][self.angle < Mouse.Pi / 2]
-        ____ math.sin(self.angle) < 0:
-            self.angle +_ 0.25
-        ____ math.sin(self.angle) > 0:
-            self.angle -_ 0.25
+                angle +_ [-0.25, 0.25][angle < Mouse.Pi / 2]
+        ____ math.sin(angle) < 0:
+            angle +_ 0.25
+        ____ math.sin(angle) > 0:
+            angle -_ 0.25
 
         # Try not to crash with any other mice.
-        dangerMice _ self.scene().items(QPolygonF([self.mapToScene(0, 0),
-                                                         self.mapToScene(-30, -50),
-                                                         self.mapToScene(30, -50)]))
+        dangerMice _ scene().items(QPolygonF([mapToScene(0, 0),
+                                                         mapToScene(-30, -50),
+                                                         mapToScene(30, -50)]))
 
-        for item in dangerMice:
+        ___ item __ dangerMice:
             __ item __ self:
                 continue
         
-            lineToMouse _ QLineF(QPointF(0, 0), self.mapFromItem(item, 0, 0))
+            lineToMouse _ QLineF(QPointF(0, 0), mapFromItem(item, 0, 0))
             angleToMouse _ math.acos(lineToMouse.dx() / lineToMouse.length())
             __ lineToMouse.dy() < 0:
                 angleToMouse _ Mouse.TwoPi - angleToMouse
@@ -168,41 +168,41 @@ c_ Mouse(QGraphicsItem):
 
             __ angleToMouse >_ 0 and angleToMouse < Mouse.Pi / 2:
                 # Rotate right.
-                self.angle +_ 0.5
+                angle +_ 0.5
             ____ angleToMouse <_ Mouse.TwoPi and angleToMouse > (Mouse.TwoPi - Mouse.Pi / 2):
                 # Rotate left.
-                self.angle -_ 0.5
+                angle -_ 0.5
 
         # Add some random movement.
         __ le.(dangerMice) > 1 and (qrand() % 10) == 0:
             __ qrand() % 1:
-                self.angle +_ (qrand() % 100) / 500.0
+                angle +_ (qrand() % 100) / 500.0
             ____
-                self.angle -_ (qrand() % 100) / 500.0
+                angle -_ (qrand() % 100) / 500.0
 
-        self.speed +_ (-50 + qrand() % 100) / 100.0
+        speed +_ (-50 + qrand() % 100) / 100.0
 
-        dx _ math.sin(self.angle) * 10
-        self.mouseEyeDirection _ 0.0 __ qAbs(dx / 5) < 1 else dx / 5
+        dx _ math.sin(angle) * 10
+        mouseEyeDirection _ 0.0 __ qAbs(dx / 5) < 1 else dx / 5
 
-        self.setRotation(self.rotation() + dx)
-        self.setPos(self.mapToParent(0, -(3 + math.sin(self.speed) * 3)))
+        setRotation(rotation() + dx)
+        setPos(mapToParent(0, -(3 + math.sin(speed) * 3)))
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
     MouseCount _ 7
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     qsrand(QTime(0,0,0).secsTo(QTime.currentTime()))
 
     scene _ QGraphicsScene()
     scene.setSceneRect(-300, -300, 600, 600)
     scene.setItemIndexMethod(QGraphicsScene.NoIndex)
 
-    for i in range(MouseCount):
+    ___ i __ range(MouseCount):
         mouse _ Mouse()
         mouse.setPos(math.sin((i * 6.28) / MouseCount) * 200,
                      math.cos((i * 6.28) / MouseCount) * 200)

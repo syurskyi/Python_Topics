@@ -87,144 +87,144 @@ void main(void)
         (( -1, -1, +1 ), ( +1, -1, +1 ), ( +1, +1, +1 ), ( -1, +1, +1 ))
     )
 
-    ___ __init__  parent_None):
-        super(GLWidget, self).__init__(parent)
+    ___  -   parent_None):
+        super(GLWidget, self). - (parent)
 
-        self.clearColor _ ?C..(__.black)
-        self.xRot _ 0
-        self.yRot _ 0
-        self.zRot _ 0
-        self.program _ N..
+        clearColor _ ?C..(__.black)
+        xRot _ 0
+        yRot _ 0
+        zRot _ 0
+        program _ N..
 
-        self.lastPos _ QPoint()
+        lastPos _ QPoint()
 
-    ___ minimumSizeHint(self):
+    ___ minimumSizeHint
         r_ QSize(50, 50)
 
-    ___ sizeHint(self):
+    ___ sizeHint
         r_ QSize(200, 200)
 
     ___ rotateBy  xAngle, yAngle, zAngle):
-        self.xRot +_ xAngle
-        self.yRot +_ yAngle
-        self.zRot +_ zAngle
-        self.update()
+        xRot +_ xAngle
+        yRot +_ yAngle
+        zRot +_ zAngle
+        update()
 
     ___ setClearColor  color):
-        self.clearColor _ color
-        self.update()
+        clearColor _ color
+        update()
 
-    ___ initializeGL(self):
+    ___ initializeGL
         version_profile _ QOpenGLVersionProfile()
         version_profile.setVersion(2, 0)
-        self.gl _ self.context().versionFunctions(version_profile)
-        self.gl.initializeOpenGLFunctions()
+        gl _ context().versionFunctions(version_profile)
+        gl.initializeOpenGLFunctions()
 
-        self.makeObject()
+        makeObject()
 
-        self.gl.glEnable(self.gl.GL_DEPTH_TEST)
-        self.gl.glEnable(self.gl.GL_CULL_FACE)
+        gl.glEnable(gl.GL_DEPTH_TEST)
+        gl.glEnable(gl.GL_CULL_FACE)
 
         vshader _ QOpenGLShader(QOpenGLShader.Vertex, self)
-        vshader.compileSourceCode(self.vsrc)
+        vshader.compileSourceCode(vsrc)
 
         fshader _ QOpenGLShader(QOpenGLShader.Fragment, self)
-        fshader.compileSourceCode(self.fsrc)
+        fshader.compileSourceCode(fsrc)
 
-        self.program _ QOpenGLShaderProgram()
-        self.program.addShader(vshader)
-        self.program.addShader(fshader)
-        self.program.bindAttributeLocation('vertex',
-                self.PROGRAM_VERTEX_ATTRIBUTE)
-        self.program.bindAttributeLocation('texCoord',
-                self.PROGRAM_TEXCOORD_ATTRIBUTE)
-        self.program.link()
+        program _ QOpenGLShaderProgram()
+        program.addShader(vshader)
+        program.addShader(fshader)
+        program.bindAttributeLocation('vertex',
+                PROGRAM_VERTEX_ATTRIBUTE)
+        program.bindAttributeLocation('texCoord',
+                PROGRAM_TEXCOORD_ATTRIBUTE)
+        program.link()
 
-        self.program.bind()
-        self.program.setUniformValue('texture', 0)
+        program.bind()
+        program.setUniformValue('texture', 0)
 
-        self.program.enableAttributeArray(self.PROGRAM_VERTEX_ATTRIBUTE)
-        self.program.enableAttributeArray(self.PROGRAM_TEXCOORD_ATTRIBUTE)
-        self.program.setAttributeArray(self.PROGRAM_VERTEX_ATTRIBUTE,
-                self.vertices)
-        self.program.setAttributeArray(self.PROGRAM_TEXCOORD_ATTRIBUTE,
-                self.texCoords)
+        program.enableAttributeArray(PROGRAM_VERTEX_ATTRIBUTE)
+        program.enableAttributeArray(PROGRAM_TEXCOORD_ATTRIBUTE)
+        program.setAttributeArray(PROGRAM_VERTEX_ATTRIBUTE,
+                vertices)
+        program.setAttributeArray(PROGRAM_TEXCOORD_ATTRIBUTE,
+                texCoords)
 
-    ___ paintGL(self):
-        self.gl.glClearColor(self.clearColor.redF(), self.clearColor.greenF(),
-                self.clearColor.blueF(), self.clearColor.alphaF())
-        self.gl.glClear(
-                self.gl.GL_COLOR_BUFFER_BIT | self.gl.GL_DEPTH_BUFFER_BIT)
+    ___ paintGL
+        gl.glClearColor(clearColor.redF(), clearColor.greenF(),
+                clearColor.blueF(), clearColor.alphaF())
+        gl.glClear(
+                gl.GL_COLOR_BUFFER_BIT | gl.GL_DEPTH_BUFFER_BIT)
 
         m _ QMatrix4x4()
         m.ortho(-0.5, 0.5, 0.5, -0.5, 4.0, 15.0)
         m.translate(0.0, 0.0, -10.0)
-        m.rotate(self.xRot / 16.0, 1.0, 0.0, 0.0)
-        m.rotate(self.yRot / 16.0, 0.0, 1.0, 0.0)
-        m.rotate(self.zRot / 16.0, 0.0, 0.0, 1.0)
+        m.rotate(xRot / 16.0, 1.0, 0.0, 0.0)
+        m.rotate(yRot / 16.0, 0.0, 1.0, 0.0)
+        m.rotate(zRot / 16.0, 0.0, 0.0, 1.0)
 
-        self.program.setUniformValue('matrix', m)
+        program.setUniformValue('matrix', m)
 
-        for i, texture in enumerate(self.textures):
+        ___ i, texture __ en..(textures):
             texture.bind()
-            self.gl.glDrawArrays(self.gl.GL_TRIANGLE_FAN, i * 4, 4)
+            gl.glDrawArrays(gl.GL_TRIANGLE_FAN, i * 4, 4)
 
     ___ resizeGL  width, height):
         side _ min(width, height)
-        self.gl.glViewport((width - side) // 2, (height - side) // 2, side,
+        gl.glViewport((width - side) // 2, (height - side) // 2, side,
                 side)
 
     ___ mousePressEvent  event):
-        self.lastPos _ event.pos()
+        lastPos _ event.pos()
 
     ___ mouseMoveEvent  event):
-        dx _ event.x() - self.lastPos.x()
-        dy _ event.y() - self.lastPos.y()
+        dx _ event.x() - lastPos.x()
+        dy _ event.y() - lastPos.y()
 
         __ event.buttons() & __.LeftButton:
-            self.rotateBy(8 * dy, 8 * dx, 0)
+            rotateBy(8 * dy, 8 * dx, 0)
         ____ event.buttons() & __.RightButton:
-            self.rotateBy(8 * dy, 0, 8 * dx)
+            rotateBy(8 * dy, 0, 8 * dx)
 
-        self.lastPos _ event.pos()
+        lastPos _ event.pos()
 
     ___ mouseReleaseEvent  event):
-        self.c__.emit()
+        c__.emit()
 
-    ___ makeObject(self):
-        self.textures _   # list
-        self.texCoords _   # list
-        self.vertices _   # list
+    ___ makeObject
+        textures _   # list
+        texCoords _   # list
+        vertices _   # list
 
         root _ QFileInfo(__file__).absolutePath()
 
-        for i in range(6):
-            self.textures.ap..(
+        ___ i __ range(6):
+            textures.ap..(
                     QOpenGLTexture(
                             QImage(root + ('/images/side%d.png' % (i + 1))).mirrored()))
 
-            for j in range(4):
-                self.texCoords.ap..(((j == 0 or j == 3), (j == 0 or j == 1)))
+            ___ j __ range(4):
+                texCoords.ap..(((j == 0 or j == 3), (j == 0 or j == 1)))
 
-                x, y, z _ self.coords[i][j]
-                self.vertices.ap..((0.2 * x, 0.2 * y, 0.2 * z))
+                x, y, z _ coords[i][j]
+                vertices.ap..((0.2 * x, 0.2 * y, 0.2 * z))
 
 
 c_ Window(QWidget):
     NumRows _ 2
     NumColumns _ 3
 
-    ___ __init__(self):
-        super(Window, self).__init__()
+    ___  -
+        super(Window, self). - ()
 
-        self.glWidgets _   # list
+        glWidgets _   # list
 
         mainLayout _ QGridLayout()
 
-        for i in range(Window.NumRows):
+        ___ i __ range(Window.NumRows):
             row _   # list
 
-            for j in range(Window.NumColumns):
+            ___ j __ range(Window.NumColumns):
                 clearColor _ ?C..()
                 clearColor.setHsv(((i * Window.NumColumns) + j) * 255
                                   / (Window.NumRows * Window.NumColumns - 1),
@@ -235,33 +235,33 @@ c_ Window(QWidget):
                 widget.rotateBy(+42 * 16, +42 * 16, -21 * 16)
                 mainLayout.aW..(widget, i, j)
 
-                widget.c__.c..(self.setCurrentGlWidget)
+                widget.c__.c..(setCurrentGlWidget)
 
                 row.ap..(widget)
 
-            self.glWidgets.ap..(row)
+            glWidgets.ap..(row)
 
-        self.sL..(mainLayout)
+        sL..(mainLayout)
 
-        self.currentGlWidget _ self.glWidgets[0][0]
+        currentGlWidget _ glWidgets[0][0]
 
-        timer _ QTimer(self)
-        timer.timeout.c..(self.rotateOneStep)
+        timer _ QTimer
+        timer.timeout.c..(rotateOneStep)
         timer.start(20)
 
-        self.setWindowTitle("Textures")
+        setWindowTitle("Textures")
 
-    ___ setCurrentGlWidget(self):
-        self.currentGlWidget _ self.sender()
+    ___ setCurrentGlWidget
+        currentGlWidget _ sender()
 
-    ___ rotateOneStep(self):
-        __ self.currentGlWidget:
-            self.currentGlWidget.rotateBy(+2 * 16, +2 * 16, -1 * 16)
+    ___ rotateOneStep
+        __ currentGlWidget:
+            currentGlWidget.rotateBy(+2 * 16, +2 * 16, -1 * 16)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     format _ QSurfaceFormat()
     format.setDepthBufferSize(24)

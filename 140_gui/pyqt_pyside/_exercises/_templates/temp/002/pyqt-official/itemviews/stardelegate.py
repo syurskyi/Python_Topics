@@ -57,36 +57,36 @@ c_ StarRating(object):
 
     PaintingScaleFactor _ 20
 
-    ___ __init__  starCount_1, maxStarCount_5):
-        self._starCount _ starCount
-        self._maxStarCount _ maxStarCount
+    ___  -   starCount_1, maxStarCount_5):
+        _starCount _ starCount
+        _maxStarCount _ maxStarCount
 
-        self.starPolygon _ QPolygonF([QPointF(1.0, 0.5)])
-        for i in range(5):
-            self.starPolygon << QPointF(0.5 + 0.5 * math.cos(0.8 * i * math.pi),
+        starPolygon _ QPolygonF([QPointF(1.0, 0.5)])
+        ___ i __ range(5):
+            starPolygon << QPointF(0.5 + 0.5 * math.cos(0.8 * i * math.pi),
                                         0.5 + 0.5 * math.sin(0.8 * i * math.pi))
 
-        self.diamondPolygon _ QPolygonF()
-        self.diamondPolygon << QPointF(0.4, 0.5) \
+        diamondPolygon _ QPolygonF()
+        diamondPolygon << QPointF(0.4, 0.5) \
                             << QPointF(0.5, 0.4) \
                             << QPointF(0.6, 0.5) \
                             << QPointF(0.5, 0.6) \
                             << QPointF(0.4, 0.5)
 
-    ___ starCount(self):
-        r_ self._starCount
+    ___ starCount
+        r_ _starCount
 
-    ___ maxStarCount(self):
-        r_ self._maxStarCount
+    ___ maxStarCount
+        r_ _maxStarCount
 
     ___ setStarCount  starCount):
-        self._starCount _ starCount
+        _starCount _ starCount
 
     ___ setMaxStarCount  maxStarCount):
-        self._maxStarCount _ maxStarCount
+        _maxStarCount _ maxStarCount
 
-    ___ sizeHint(self):
-        r_ self.PaintingScaleFactor * QSize(self._maxStarCount, 1)
+    ___ sizeHint
+        r_ PaintingScaleFactor * QSize(_maxStarCount, 1)
 
     ___ paint  painter, rect, palette, editMode):
         painter.save()
@@ -99,15 +99,15 @@ c_ StarRating(object):
         ____
             painter.setBrush(palette.windowText())
 
-        yOffset _ (rect.height() - self.PaintingScaleFactor) / 2
+        yOffset _ (rect.height() - PaintingScaleFactor) / 2
         painter.translate(rect.x(), rect.y() + yOffset)
-        painter.scale(self.PaintingScaleFactor, self.PaintingScaleFactor)
+        painter.scale(PaintingScaleFactor, PaintingScaleFactor)
 
-        for i in range(self._maxStarCount):
-            __ i < self._starCount:
-                painter.drawPolygon(self.starPolygon, __.WindingFill)
+        ___ i __ range(_maxStarCount):
+            __ i < _starCount:
+                painter.drawPolygon(starPolygon, __.WindingFill)
             ____ editMode == StarRating.Editable:
-                painter.drawPolygon(self.diamondPolygon, __.WindingFill)
+                painter.drawPolygon(diamondPolygon, __.WindingFill)
 
             painter.translate(1.0, 0.0)
 
@@ -118,43 +118,43 @@ c_ StarEditor(QWidget):
 
     editingFinished _ pyqtSignal()
 
-    ___ __init__  parent _ N..):
-        super(StarEditor, self).__init__(parent)
+    ___  -   parent _ N..):
+        super(StarEditor, self). - (parent)
 
-        self._starRating _ StarRating()
+        _starRating _ StarRating()
 
-        self.setMouseTracking(True)
-        self.setAutoFillBackground(True)
+        setMouseTracking(True)
+        setAutoFillBackground(True)
 
     ___ setStarRating  starRating):
-        self._starRating _ starRating
+        _starRating _ starRating
 
-    ___ starRating(self):
-        r_ self._starRating
+    ___ starRating
+        r_ _starRating
 
-    ___ sizeHint(self):
-        r_ self._starRating.sizeHint()
+    ___ sizeHint
+        r_ _starRating.sizeHint()
 
     ___ paintEvent  event):
-        painter _ QPainter(self)
-        self._starRating.paint(painter, self.rect(), self.palette(),
+        painter _ QPainter
+        _starRating.paint(painter, rect(), palette(),
                 StarRating.Editable)
 
     ___ mouseMoveEvent  event):
-        star _ self.starAtPosition(event.x())
+        star _ starAtPosition(event.x())
 
-        __ star !_ self._starRating.starCount() and star !_ -1:
-            self._starRating.setStarCount(star)
-            self.update()
+        __ star !_ _starRating.starCount() and star !_ -1:
+            _starRating.setStarCount(star)
+            update()
 
     ___ mouseReleaseEvent  event):
-        self.editingFinished.emit()
+        editingFinished.emit()
 
     ___ starAtPosition  x):
         # Enable a star, if pointer crosses the center horizontally.
-        starwidth _ self._starRating.sizeHint().width() // self._starRating.maxStarCount()
+        starwidth _ _starRating.sizeHint().width() // _starRating.maxStarCount()
         star _ (x + starwidth / 2) // starwidth
-        __ 0 <_ star <_ self._starRating.maxStarCount
+        __ 0 <_ star <_ _starRating.maxStarCount
             r_ star
 
         r_ -1
@@ -183,7 +183,7 @@ c_ StarDelegate(QStyledItemDelegate):
         starRating _ index.data()
         __ isinstance(starRating, StarRating):
             editor _ StarEditor(parent)
-            editor.editingFinished.c..(self.commitAndCloseEditor)
+            editor.editingFinished.c..(commitAndCloseEditor)
             r_ editor
         ____
             r_ super(StarDelegate, self).createEditor(parent, option, index)
@@ -202,10 +202,10 @@ c_ StarDelegate(QStyledItemDelegate):
         ____
             super(StarDelegate, self).setModelData(editor, model, index)
 
-    ___ commitAndCloseEditor(self):
-        editor _ self.sender()
-        self.commitData.emit(editor)
-        self.closeEditor.emit(editor)
+    ___ commitAndCloseEditor
+        editor _ sender()
+        commitData.emit(editor)
+        closeEditor.emit(editor)
 
 
 ___ populateTableWidget(tableWidget):
@@ -216,7 +216,7 @@ ___ populateTableWidget(tableWidget):
         ("Barbie Girl", "Pop", "Aqua", 5),
     )
 
-    for row, (title, genre, artist, rating) in enumerate(staticData):
+    ___ row, (title, genre, artist, rating) __ en..(staticData):
         item0 _ QTableWidgetItem(title)
         item1 _ QTableWidgetItem(genre)
         item2 _ QTableWidgetItem(artist)
@@ -228,11 +228,11 @@ ___ populateTableWidget(tableWidget):
         tableWidget.setItem(row, 3, item3)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     tableWidget _ QTableWidget(4, 4)
     tableWidget.setItemDelegate(StarDelegate())

@@ -20,137 +20,137 @@ c_ ViewerWindow ?MW..
 
     ___ closeEvent  e):
         # Emit the window state, to update the viewer toggle button.
-        self.state.emit F..
+        state.emit F..
 
 
 c_ PlaylistModel(QAbstractListModel):
-    ___ __init__  playlist, *args, **kwargs):
-        super(PlaylistModel, self).__init__(*args, **kwargs)
-        self.playlist _ playlist
+    ___  -   playlist, *args, **kwargs):
+        super(PlaylistModel, self). - (*args, **kwargs)
+        playlist _ playlist
 
     ___ data  index, role):
         __ role == __.DisplayRole:
-            media _ self.playlist.media(index.row())
+            media _ playlist.media(index.row())
             r_ media.canonicalUrl().fileName()
 
     ___ rowCount  index):
-        r_ self.playlist.mediaCount()
+        r_ playlist.mediaCount()
 
 
 c_ MainWindow(QMainWindow, Ui_MainWindow):
-    ___ __init__  *args, **kwargs):
-        super(MainWindow, self).__init__(*args, **kwargs)
-        self.setupUi(self)
+    ___  -   *args, **kwargs):
+        super(MainWindow, self). - (*args, **kwargs)
+        setupUi
 
-        self.player _ QMediaPlayer()
+        player _ QMediaPlayer()
 
-        self.player.error.c..(self.erroralert)
-        self.player.play()
+        player.error.c..(erroralert)
+        player.play()
 
         # Setup the playlist.
-        self.playlist _ QMediaPlaylist()
-        self.player.setPlaylist(self.playlist)
+        playlist _ QMediaPlaylist()
+        player.setPlaylist(playlist)
 
         # Add viewer for video playback, separate floating window.
-        self.viewer _ ViewerWindow(self)
-        self.viewer.setWindowFlags(self.viewer.windowFlags() | __.WindowStaysOnTopHint)
-        self.viewer.setMinimumSize(QSize(480,360))
+        viewer _ ViewerWindow
+        viewer.setWindowFlags(viewer.windowFlags() | __.WindowStaysOnTopHint)
+        viewer.setMinimumSize(QSize(480,360))
 
         videoWidget _ QVideoWidget()
-        self.viewer.sCW..(videoWidget)
-        self.player.setVideoOutput(videoWidget)
+        viewer.sCW..(videoWidget)
+        player.setVideoOutput(videoWidget)
 
         # Connect control buttons/slides for media player.
-        self.playButton.pressed.c..(self.player.play)
-        self.pauseButton.pressed.c..(self.player.pause)
-        self.stopButton.pressed.c..(self.player.stop)
-        self.volumeSlider.valueChanged.c..(self.player.setVolume)
+        playButton.pressed.c..(player.play)
+        pauseButton.pressed.c..(player.pause)
+        stopButton.pressed.c..(player.stop)
+        volumeSlider.valueChanged.c..(player.setVolume)
 
-        self.viewButton.toggled.c..(self.toggle_viewer)
-        self.viewer.state.c..(self.viewButton.setChecked)
+        viewButton.toggled.c..(toggle_viewer)
+        viewer.state.c..(viewButton.setChecked)
 
-        self.previousButton.pressed.c..(self.playlist.previous)
-        self.nextButton.pressed.c..(self.playlist.next)
+        previousButton.pressed.c..(playlist.previous)
+        nextButton.pressed.c..(playlist.next)
 
-        self.model _ PlaylistModel(self.playlist)
-        self.playlistView.sM..(self.model)
-        self.playlist.currentIndexChanged.c..(self.playlist_position_changed)
-        selection_model _ self.playlistView.selectionModel()
-        selection_model.selectionChanged.c..(self.playlist_selection_changed)
+        model _ PlaylistModel(playlist)
+        playlistView.sM..(model)
+        playlist.currentIndexChanged.c..(playlist_position_changed)
+        selection_model _ playlistView.selectionModel()
+        selection_model.selectionChanged.c..(playlist_selection_changed)
 
-        self.player.durationChanged.c..(self.update_duration)
-        self.player.positionChanged.c..(self.update_position)
-        self.timeSlider.valueChanged.c..(self.player.setPosition)
+        player.durationChanged.c..(update_duration)
+        player.positionChanged.c..(update_position)
+        timeSlider.valueChanged.c..(player.setPosition)
 
-        self.open_file_action.t__.c..(self.open_file)
+        open_file_action.t__.c..(open_file)
 
-        self.setAcceptDrops(True)
+        setAcceptDrops(True)
 
-        self.s..
+        s..
 
     ___ dragEnterEvent  e):
         __ e.mimeData().hasUrls
             e.acceptProposedAction()
 
     ___ dropEvent  e):
-        for url in e.mimeData().urls
-            self.playlist.addMedia(
+        ___ url __ e.mimeData().urls
+            playlist.addMedia(
                 QMediaContent(url)
             )
 
-        self.model.layoutChanged.emit()
+        model.layoutChanged.emit()
 
         # If not playing, seeking to first of newly added + play.
-        __ self.player.state() !_ QMediaPlayer.PlayingState:
-            i _ self.playlist.mediaCount() - le.(e.mimeData().urls())
-            self.playlist.setCurrentIndex(i)
-            self.player.play()
+        __ player.state() !_ QMediaPlayer.PlayingState:
+            i _ playlist.mediaCount() - le.(e.mimeData().urls())
+            playlist.setCurrentIndex(i)
+            player.play()
 
-    ___ open_file(self):
+    ___ open_file
         path, _ _ ?FD...gOFN..  "Open file", "", "mp3 Audio (*.mp3);mp4 Video (*.mp4);Movie files (*.mov);All files (*.*)")
 
         __ path:
-            self.playlist.addMedia(
+            playlist.addMedia(
                 QMediaContent(
                     QUrl.fromLocalFile(path)
                 )
             )
 
-        self.model.layoutChanged.emit()
+        model.layoutChanged.emit()
 
     ___ update_duration  duration):
         print("!", duration)
-        print("?", self.player.duration())
+        print("?", player.duration())
         
-        self.timeSlider.setMaximum(duration)
+        timeSlider.setMaximum(duration)
 
         __ duration >_ 0:
-            self.totalTimeLabel.sT..(hhmmss(duration))
+            totalTimeLabel.sT..(hhmmss(duration))
 
     ___ update_position  position):
         __ position >_ 0:
-            self.currentTimeLabel.sT..(hhmmss(position))
+            currentTimeLabel.sT..(hhmmss(position))
 
         # Disable the events to prevent updating triggering a setPosition event (can cause stuttering).
-        self.timeSlider.blockSignals(True)
-        self.timeSlider.setValue(position)
-        self.timeSlider.blockSignals F..
+        timeSlider.blockSignals(True)
+        timeSlider.setValue(position)
+        timeSlider.blockSignals F..
 
     ___ playlist_selection_changed  ix):
         # We receive a QItemSelection from selectionChanged.
         i _ ix.indexes()[0].row()
-        self.playlist.setCurrentIndex(i)
+        playlist.setCurrentIndex(i)
 
     ___ playlist_position_changed  i):
         __ i > -1:
-            ix _ self.model.index(i)
-            self.playlistView.setCurrentIndex(ix)
+            ix _ model.index(i)
+            playlistView.setCurrentIndex(ix)
 
     ___ toggle_viewer  state):
         __ state:
-            self.viewer.s..
+            viewer.s..
         ____
-            self.viewer.hide()
+            viewer.hide()
 
     ___ erroralert  *args):
         print(args)
@@ -158,7 +158,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
 
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
     app _ ?
     app.sAN..("Failamp")
     app.setStyle("Fusion")

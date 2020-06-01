@@ -53,8 +53,8 @@ ______ configdialog_rc
 
 
 c_ ConfigurationPage(QWidget):
-    ___ __init__  parent_None):
-        super(ConfigurationPage, self).__init__(parent)
+    ___  -   parent_None):
+        super(ConfigurationPage, self). - (parent)
 
         configGroup _ QGroupBox("Server configuration")
 
@@ -71,19 +71,19 @@ c_ ConfigurationPage(QWidget):
         serverLayout.aW..(serverCombo)
 
         configLayout _ ?VBL..
-        configLayout.addLayout(serverLayout)
+        configLayout.aL..(serverLayout)
         configGroup.sL..(configLayout)
 
         mainLayout _ ?VBL..
         mainLayout.aW..(configGroup)
         mainLayout.addStretch(1)
 
-        self.sL..(mainLayout)
+        sL..(mainLayout)
 
 
 c_ UpdatePage(QWidget):
-    ___ __init__  parent_None):
-        super(UpdatePage, self).__init__(parent)
+    ___  -   parent_None):
+        super(UpdatePage, self). - (parent)
 
         updateGroup _ QGroupBox("Package selection")
         systemCheckBox _ QCheckBox("Update system")
@@ -119,12 +119,12 @@ c_ UpdatePage(QWidget):
         mainLayout.aW..(startUpdateButton)
         mainLayout.addStretch(1)
 
-        self.sL..(mainLayout)
+        sL..(mainLayout)
 
 
 c_ QueryPage(QWidget):
-    ___ __init__  parent_None):
-        super(QueryPage, self).__init__(parent)
+    ___  -   parent_None):
+        super(QueryPage, self). - (parent)
 
         packagesGroup _ QGroupBox("Look for packages")
 
@@ -163,82 +163,82 @@ c_ QueryPage(QWidget):
         mainLayout.aW..(startQueryButton)
         mainLayout.addStretch(1)
 
-        self.sL..(mainLayout)
+        sL..(mainLayout)
 
 
 c_ ConfigDialog(QDialog):
-    ___ __init__  parent_None):
-        super(ConfigDialog, self).__init__(parent)
+    ___  -   parent_None):
+        super(ConfigDialog, self). - (parent)
 
-        self.contentsWidget _ QListWidget()
-        self.contentsWidget.setViewMode(QListView.IconMode)
-        self.contentsWidget.setIconSize(QSize(96, 84))
-        self.contentsWidget.setMovement(QListView.Static)
-        self.contentsWidget.setMaximumWidth(128)
-        self.contentsWidget.setSpacing(12)
+        contentsWidget _ QListWidget()
+        contentsWidget.setViewMode(QListView.IconMode)
+        contentsWidget.setIconSize(QSize(96, 84))
+        contentsWidget.setMovement(QListView.Static)
+        contentsWidget.setMaximumWidth(128)
+        contentsWidget.setSpacing(12)
 
-        self.pagesWidget _ QStackedWidget()
-        self.pagesWidget.aW..(ConfigurationPage())
-        self.pagesWidget.aW..(UpdatePage())
-        self.pagesWidget.aW..(QueryPage())
+        pagesWidget _ QStackedWidget()
+        pagesWidget.aW..(ConfigurationPage())
+        pagesWidget.aW..(UpdatePage())
+        pagesWidget.aW..(QueryPage())
 
         closeButton _ ?PB..("Close")
 
-        self.createIcons()
-        self.contentsWidget.setCurrentRow(0)
+        createIcons()
+        contentsWidget.setCurrentRow(0)
 
-        closeButton.c__.c..(self.close)
+        closeButton.c__.c..(close)
 
         horizontalLayout _ QHBoxLayout()
-        horizontalLayout.aW..(self.contentsWidget)
-        horizontalLayout.aW..(self.pagesWidget, 1)
+        horizontalLayout.aW..(contentsWidget)
+        horizontalLayout.aW..(pagesWidget, 1)
 
         buttonsLayout _ QHBoxLayout()
         buttonsLayout.addStretch(1)
         buttonsLayout.aW..(closeButton)
 
         mainLayout _ ?VBL..
-        mainLayout.addLayout(horizontalLayout)
+        mainLayout.aL..(horizontalLayout)
         mainLayout.addStretch(1)
         mainLayout.addSpacing(12)
-        mainLayout.addLayout(buttonsLayout)
+        mainLayout.aL..(buttonsLayout)
 
-        self.sL..(mainLayout)
+        sL..(mainLayout)
 
-        self.setWindowTitle("Config Dialog")
+        setWindowTitle("Config Dialog")
 
     ___ changePage  current, previous):
         __ no. current:
             current _ previous
 
-        self.pagesWidget.setCurrentIndex(self.contentsWidget.row(current))
+        pagesWidget.setCurrentIndex(contentsWidget.row(current))
 
-    ___ createIcons(self):
-        configButton _ QListWidgetItem(self.contentsWidget)
+    ___ createIcons 
+        configButton _ QListWidgetItem(contentsWidget)
         configButton.setIcon(QIcon(':/images/config.png'))
         configButton.sT..("Configuration")
         configButton.setTextAlignment(__.AlignHCenter)
         configButton.setFlags(__.ItemIsSelectable | __.ItemIsEnabled)
 
-        updateButton _ QListWidgetItem(self.contentsWidget)
+        updateButton _ QListWidgetItem(contentsWidget)
         updateButton.setIcon(QIcon(':/images/update.png'))
         updateButton.sT..("Update")
         updateButton.setTextAlignment(__.AlignHCenter)
         updateButton.setFlags(__.ItemIsSelectable | __.ItemIsEnabled)
 
-        queryButton _ QListWidgetItem(self.contentsWidget)
+        queryButton _ QListWidgetItem(contentsWidget)
         queryButton.setIcon(QIcon(':/images/query.png'))
         queryButton.sT..("Query")
         queryButton.setTextAlignment(__.AlignHCenter)
         queryButton.setFlags(__.ItemIsSelectable | __.ItemIsEnabled)
 
-        self.contentsWidget.currentItemChanged.c..(self.changePage)
+        contentsWidget.currentItemChanged.c..(changePage)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     dialog _ ConfigDialog()
     ___.exit(dialog.exec_())    

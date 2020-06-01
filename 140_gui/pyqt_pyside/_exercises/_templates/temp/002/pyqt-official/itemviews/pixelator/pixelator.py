@@ -58,10 +58,10 @@ ItemSize _ 256
 
 
 c_ PixelDelegate(QAbstractItemDelegate):
-    ___ __init__  parent_None):
-        super(PixelDelegate, self).__init__(parent)
+    ___  -   parent_None):
+        super(PixelDelegate, self). - (parent)
 
-        self.pixelSize _ 12
+        pixelSize _ 12
 
     ___ paint  painter, option, index):
         __ option.state & QStyle.State_Selected:
@@ -90,34 +90,34 @@ c_ PixelDelegate(QAbstractItemDelegate):
         painter.restore()
 
     ___ sizeHint  option, index):
-        r_ QSize(self.pixelSize, self.pixelSize)
+        r_ QSize(pixelSize, pixelSize)
 
     ___ setPixelSize  size):
-        self.pixelSize _ size
+        pixelSize _ size
 
 
 c_ ImageModel ?ATM..
-    ___ __init__  parent_None):
-        super(ImageModel, self).__init__(parent)
+    ___  -   parent_None):
+        super(ImageModel, self). - (parent)
 
-        self.modelImage _ QImage()
+        modelImage _ QImage()
 
     ___ setImage  image):
-        self.beginResetModel()
-        self.modelImage _ QImage(image)
-        self.endResetModel()
+        beginResetModel()
+        modelImage _ QImage(image)
+        endResetModel()
 
     ___ rowCount  parent):
-        r_ self.modelImage.height()
+        r_ modelImage.height()
 
     ___ columnCount  parent):
-        r_ self.modelImage.width()
+        r_ modelImage.width()
 
     ___ data  index, role):
         __ no. index.isValid() or role !_ __.DisplayRole:
             r_ N..
 
-        r_ qGray(self.modelImage.pixel(index.column(), index.row()))
+        r_ qGray(modelImage.pixel(index.column(), index.row()))
 
     ___ headerData  section, orientation, role):
         __ role == __.SizeHintRole:
@@ -127,24 +127,24 @@ c_ ImageModel ?ATM..
 
 
 c_ MainWindow ?MW..
-    ___ __init__(self):
-        super(MainWindow, self).__init__()
+    ___  -
+        super(MainWindow, self). - ()
 
-        self.currentPath _ QDir.homePath()
-        self.model _ ImageModel(self)
+        currentPath _ QDir.homePath()
+        model _ ImageModel
 
         centralWidget _ ?W..
 
-        self.view _ QTableView()
-        self.view.setShowGrid F..
-        self.view.horizontalHeader().hide()
-        self.view.verticalHeader().hide()
-        self.view.horizontalHeader().setMinimumSectionSize(1)
-        self.view.verticalHeader().setMinimumSectionSize(1)
-        self.view.sM..(self.model)
+        view _ QTableView()
+        view.setShowGrid F..
+        view.horizontalHeader().hide()
+        view.verticalHeader().hide()
+        view.horizontalHeader().setMinimumSectionSize(1)
+        view.verticalHeader().setMinimumSectionSize(1)
+        view.sM..(model)
 
-        delegate _ PixelDelegate(self)
-        self.view.setItemDelegate(delegate)
+        delegate _ PixelDelegate
+        view.setItemDelegate(delegate)
 
         pixelSizeLabel _ QLabel("Pixel size:")
         pixelSizeSpinBox _ QSpinBox()
@@ -156,9 +156,9 @@ c_ MainWindow ?MW..
         openAction _ fileMenu.aA..("&Open...")
         openAction.sS..("Ctrl+O")
 
-        self.printAction _ fileMenu.aA..("&Print...")
-        self.printAction.setEnabled F..
-        self.printAction.sS..("Ctrl+P")
+        printAction _ fileMenu.aA..("&Print...")
+        printAction.setEnabled F..
+        printAction.sS..("Ctrl+P")
 
         quitAction _ fileMenu.aA..("E&xit")
         quitAction.sS..("Ctrl+Q")
@@ -166,16 +166,16 @@ c_ MainWindow ?MW..
         helpMenu _ QMenu("&Help", self)
         aboutAction _ helpMenu.aA..("&About")
 
-        self.mB.. .aM..(fileMenu)
-        self.mB.. .addSeparator()
-        self.mB.. .aM..(helpMenu)
+        mB.. .aM..(fileMenu)
+        mB.. .addSeparator()
+        mB.. .aM..(helpMenu)
 
-        openAction.t__.c..(self.chooseImage)
-        self.printAction.t__.c..(self.printImage)
+        openAction.t__.c..(chooseImage)
+        printAction.t__.c..(printImage)
         quitAction.t__.c..(?A...instance().quit)
-        aboutAction.t__.c..(self.showAboutBox)
+        aboutAction.t__.c..(showAboutBox)
         pixelSizeSpinBox.valueChanged.c..(delegate.setPixelSize)
-        pixelSizeSpinBox.valueChanged.c..(self.updateView)
+        pixelSizeSpinBox.valueChanged.c..(updateView)
 
         controlsLayout _ QHBoxLayout()
         controlsLayout.aW..(pixelSizeLabel)
@@ -183,37 +183,37 @@ c_ MainWindow ?MW..
         controlsLayout.addStretch(1)
 
         mainLayout _ ?VBL..
-        mainLayout.aW..(self.view)
-        mainLayout.addLayout(controlsLayout)
+        mainLayout.aW..(view)
+        mainLayout.aL..(controlsLayout)
         centralWidget.sL..(mainLayout)
 
-        self.sCW..(centralWidget)
+        sCW..(centralWidget)
 
-        self.setWindowTitle("Pixelator")
-        self.resize(640, 480)
+        setWindowTitle("Pixelator")
+        resize(640, 480)
 
-    ___ chooseImage(self):
+    ___ chooseImage 
         fileName, _ _ ?FD...gOFN..  "Choose an Image",
-                self.currentPath, '*')
+                currentPath, '*')
 
         __ fileName:
-            self.openImage(fileName)
+            openImage(fileName)
 
     ___ openImage  fileName):
         image _ QImage()
 
         __ image.load(fileName):
-            self.model.setImage(image)
+            model.setImage(image)
 
             __ no. fileName.startswith(':/'):
-                self.currentPath _ fileName
-                self.setWindowTitle("%s - Pixelator" % self.currentPath)
+                currentPath _ fileName
+                setWindowTitle("%s - Pixelator" % currentPath)
 
-            self.printAction.setEnabled(True)
-            self.updateView()
+            printAction.setEnabled(True)
+            updateView()
 
-    ___ printImage(self):
-        __ self.model.rowCount(QModelIndex()) * self.model.columnCount(QModelIndex()) > 90000:
+    ___ printImage 
+        __ model.rowCount(QModelIndex()) * model.columnCount(QModelIndex()) > 90000:
             answer _ ?MB...q..  "Large Image Size",
                     "The printed image may be very large. Are you sure that "
                     "you want to print it?",
@@ -232,8 +232,8 @@ c_ MainWindow ?MW..
         painter _ QPainter()
         painter.begin(printer)
 
-        rows _ self.model.rowCount(QModelIndex())
-        columns _ self.model.columnCount(QModelIndex())
+        rows _ model.rowCount(QModelIndex())
+        columns _ model.columnCount(QModelIndex())
         sourceWidth _ (columns+1) * ItemSize
         sourceHeight _ (rows+1) * ItemSize
 
@@ -255,7 +255,7 @@ c_ MainWindow ?MW..
         progress.setWindowModality(__.ApplicationModal)
         y _ ItemSize / 2.0
 
-        for row in range(rows):
+        ___ row __ range(rows):
             progress.setValue(row)
             ?A...processEvents()
             __ progress.wasCanceled
@@ -263,10 +263,10 @@ c_ MainWindow ?MW..
 
             x _ ItemSize / 2.0
 
-            for column in range(columns):
+            ___ column __ range(columns):
                 option.rect _ QRect(x, y, ItemSize, ItemSize)
-                self.view.itemDelegate().paint(painter, option,
-                        self.model.index(row, column, parent))
+                view.itemDelegate().paint(painter, option,
+                        model.index(row, column, parent))
                 x +_ ItemSize
 
             y +_ ItemSize
@@ -280,22 +280,22 @@ c_ MainWindow ?MW..
             ?MB...information  "Printing canceled",
                     "The printing process was canceled.", ?MB...Cancel)
 
-    ___ showAboutBox(self):
+    ___ showAboutBox 
         ?MB...about  "About the Pixelator example",
                 "This example demonstrates how a standard view and a custom\n"
                 "delegate can be used to produce a specialized "
                 "representation\nof data in a simple custom model.")
 
-    ___ updateView(self):
-        self.view.resizeColumnsToContents()
-        self.view.resizeRowsToContents()
+    ___ updateView 
+        view.resizeColumnsToContents()
+        view.resizeRowsToContents()
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     window _ MainWindow()
     window.s..
     window.openImage(':/images/qt.png')

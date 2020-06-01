@@ -56,38 +56,38 @@ ____ ui_form ______ Ui_Form
 c_ Animation(QPropertyAnimation):
     LinearPath, CirclePath _ range(2)
 
-    ___ __init__  target, prop):
-        super(Animation, self).__init__(target, prop)
+    ___  -   target, prop):
+        super(Animation, self). - (target, prop)
 
-        self.setPathType(Animation.LinearPath)
+        setPathType(Animation.LinearPath)
 
     ___ setPathType  pathType):
-        self.m_pathType _ pathType
-        self.m_path _ QPainterPath()
+        m_pathType _ pathType
+        m_path _ QPainterPath()
 
     ___ updateCurrentTime  currentTime):
-        __ self.m_pathType == Animation.CirclePath:
-            __ self.m_path.isEmpty
-                end _ self.endValue()
-                start _ self.startValue()
-                self.m_path.moveTo(start)
-                self.m_path.addEllipse(QRectF(start, end))
+        __ m_pathType == Animation.CirclePath:
+            __ m_path.isEmpty
+                end _ endValue()
+                start _ startValue()
+                m_path.moveTo(start)
+                m_path.addEllipse(QRectF(start, end))
 
-            dura _ self.duration()
+            dura _ duration()
             __ dura == 0:
                 progress _ 1.0
             ____
                 progress _ (((currentTime - 1) % dura) + 1) / float(dura)
 
-            easedProgress _ self.easingCurve().valueForProgress(progress)
+            easedProgress _ easingCurve().valueForProgress(progress)
             __ easedProgress > 1.0:
                 easedProgress -_ 1.0
             ____ easedProgress < 0:
                 easedProgress +_ 1.0
 
-            pt _ self.m_path.pointAtPercent(easedProgress)
-            self.updateCurrentValue(pt)
-            self.valueChanged.emit(pt)
+            pt _ m_path.pointAtPercent(easedProgress)
+            updateCurrentValue(pt)
+            valueChanged.emit(pt)
         ____
             super(Animation, self).updateCurrentTime(currentTime)
 
@@ -95,59 +95,59 @@ c_ Animation(QPropertyAnimation):
 # PyQt doesn't support deriving from more than one wrapped class so we use
 # composition and delegate the property.
 c_ PixmapItem(QObject):
-    ___ __init__  pix):
-        super(PixmapItem, self).__init__()
+    ___  -   pix):
+        super(PixmapItem, self). - ()
 
-        self.pixmap_item _ QGraphicsPixmapItem(pix)
+        pixmap_item _ QGraphicsPixmapItem(pix)
 
     ___ _set_pos  pos):
-        self.pixmap_item.setPos(pos)
+        pixmap_item.setPos(pos)
 
     pos _ pyqtProperty(QPointF, fset__set_pos)
 
 
 c_ Window(QWidget):
-    ___ __init__  parent_None):
-        super(QWidget, self).__init__(parent)
+    ___  -   parent_None):
+        super(QWidget, self). - (parent)
 
-        self.m_iconSize _ QSize(64, 64)
-        self.m_scene _ QGraphicsScene()
-        self.m_ui _ Ui_Form()
+        m_iconSize _ QSize(64, 64)
+        m_scene _ QGraphicsScene()
+        m_ui _ Ui_Form()
 
-        self.m_ui.setupUi(self)
-        self.m_ui.easingCurvePicker.setIconSize(self.m_iconSize)
-        self.m_ui.easingCurvePicker.setMinimumHeight(self.m_iconSize.height() + 50)
-        self.m_ui.buttonGroup.setId(self.m_ui.lineRadio, 0)
-        self.m_ui.buttonGroup.setId(self.m_ui.circleRadio, 1)
+        m_ui.setupUi
+        m_ui.easingCurvePicker.setIconSize(m_iconSize)
+        m_ui.easingCurvePicker.setMinimumHeight(m_iconSize.height() + 50)
+        m_ui.buttonGroup.setId(m_ui.lineRadio, 0)
+        m_ui.buttonGroup.setId(m_ui.circleRadio, 1)
 
         dummy _ QEasingCurve()
-        self.m_ui.periodSpinBox.setValue(dummy.period())
-        self.m_ui.amplitudeSpinBox.setValue(dummy.amplitude())
-        self.m_ui.overshootSpinBox.setValue(dummy.overshoot())
+        m_ui.periodSpinBox.setValue(dummy.period())
+        m_ui.amplitudeSpinBox.setValue(dummy.amplitude())
+        m_ui.overshootSpinBox.setValue(dummy.overshoot())
 
-        self.m_ui.easingCurvePicker.currentRowChanged.c..(self.curveChanged)
-        self.m_ui.buttonGroup.buttonClicked[int].c..(self.pathChanged)
-        self.m_ui.periodSpinBox.valueChanged.c..(self.periodChanged)
-        self.m_ui.amplitudeSpinBox.valueChanged.c..(self.amplitudeChanged)
-        self.m_ui.overshootSpinBox.valueChanged.c..(self.overshootChanged)
-        self.createCurveIcons()
+        m_ui.easingCurvePicker.currentRowChanged.c..(curveChanged)
+        m_ui.buttonGroup.buttonClicked[int].c..(pathChanged)
+        m_ui.periodSpinBox.valueChanged.c..(periodChanged)
+        m_ui.amplitudeSpinBox.valueChanged.c..(amplitudeChanged)
+        m_ui.overshootSpinBox.valueChanged.c..(overshootChanged)
+        createCurveIcons()
 
         pix _ QPixmap(':/images/qt-logo.png')
-        self.m_item _ PixmapItem(pix)
-        self.m_scene.addItem(self.m_item.pixmap_item)
-        self.m_ui.graphicsView.setScene(self.m_scene)
+        m_item _ PixmapItem(pix)
+        m_scene.addItem(m_item.pixmap_item)
+        m_ui.graphicsView.setScene(m_scene)
 
-        self.m_anim _ Animation(self.m_item, b'pos')
-        self.m_anim.setEasingCurve(QEasingCurve.OutBounce)
-        self.m_ui.easingCurvePicker.setCurrentRow(int(QEasingCurve.OutBounce))
+        m_anim _ Animation(m_item, b'pos')
+        m_anim.setEasingCurve(QEasingCurve.OutBounce)
+        m_ui.easingCurvePicker.setCurrentRow(int(QEasingCurve.OutBounce))
 
-        self.startAnimation()
+        startAnimation()
 
-    ___ createCurveIcons(self):
-        pix _ QPixmap(self.m_iconSize)
+    ___ createCurveIcons
+        pix _ QPixmap(m_iconSize)
         painter _ QPainter()
 
-        gradient _ QLinearGradient(0, 0, 0, self.m_iconSize.height())
+        gradient _ QLinearGradient(0, 0, 0, m_iconSize.height())
         gradient.setColorAt(0.0, ?C..(240, 240, 240))
         gradient.setColorAt(1.0, ?C..(224, 224, 224))
 
@@ -156,14 +156,14 @@ c_ Window(QWidget):
         # The original C++ code uses undocumented calls to get the names of the
         # different curve types.  We do the Python equivalant (but without
         # cheating).
-        curve_types _ [(n, c) for n, c in QEasingCurve.__dict__.items()
+        curve_types _ [(n, c) ___ n, c __ QEasingCurve.__dict__.items()
                 __ isinstance(c, QEasingCurve.Type) and c !_ QEasingCurve.Custom]
         curve_types.sort(key_lambda ct: ct[1])
 
         painter.begin(pix)
 
-        for curve_name, curve_type in curve_types:
-            painter.fillRect(QRect(QPoint(0, 0), self.m_iconSize), brush)
+        ___ curve_name, curve_type __ curve_types:
+            painter.fillRect(QRect(QPoint(0, 0), m_iconSize), brush)
 
             curve _ QEasingCurve(curve_type)
 
@@ -177,12 +177,12 @@ c_ Window(QWidget):
                 curve.addTCBSegment(QPointF(1.0, 1.0), 0, 0, 0)
 
             painter.setPen(?C..(0, 0, 255, 64))
-            xAxis _ self.m_iconSize.height() / 1.5
-            yAxis _ self.m_iconSize.width() / 3.0
-            painter.drawLine(0, xAxis, self.m_iconSize.width(),  xAxis)
-            painter.drawLine(yAxis, 0, yAxis, self.m_iconSize.height())
+            xAxis _ m_iconSize.height() / 1.5
+            yAxis _ m_iconSize.width() / 3.0
+            painter.drawLine(0, xAxis, m_iconSize.width(),  xAxis)
+            painter.drawLine(yAxis, 0, yAxis, m_iconSize.height())
 
-            curveScale _ self.m_iconSize.height() / 2.0;
+            curveScale _ m_iconSize.height() / 2.0;
 
             painter.setPen(__.NoPen)
 
@@ -214,53 +214,53 @@ c_ Window(QWidget):
             item _ QListWidgetItem()
             item.setIcon(QIcon(pix))
             item.sT..(curve_name)
-            self.m_ui.easingCurvePicker.addItem(item)
+            m_ui.easingCurvePicker.addItem(item)
 
         painter.end()
 
-    ___ startAnimation(self):
-        self.m_anim.setStartValue(QPointF(0, 0))
-        self.m_anim.setEndValue(QPointF(100, 100))
-        self.m_anim.setDuration(2000)
-        self.m_anim.setLoopCount(-1)
-        self.m_anim.start()
+    ___ startAnimation
+        m_anim.setStartValue(QPointF(0, 0))
+        m_anim.setEndValue(QPointF(100, 100))
+        m_anim.setDuration(2000)
+        m_anim.setLoopCount(-1)
+        m_anim.start()
 
     ___ curveChanged  row):
         curveType _ QEasingCurve.Type(row)
-        self.m_anim.setEasingCurve(curveType)
-        self.m_anim.setCurrentTime(0)
+        m_anim.setEasingCurve(curveType)
+        m_anim.setCurrentTime(0)
 
         isElastic _ (curveType >_ QEasingCurve.InElastic and curveType <_ QEasingCurve.OutInElastic)
         isBounce _ (curveType >_ QEasingCurve.InBounce and curveType <_ QEasingCurve.OutInBounce)
 
-        self.m_ui.periodSpinBox.setEnabled(isElastic)
-        self.m_ui.amplitudeSpinBox.setEnabled(isElastic or isBounce)
-        self.m_ui.overshootSpinBox.setEnabled(curveType >_ QEasingCurve.InBack and curveType <_ QEasingCurve.OutInBack)
+        m_ui.periodSpinBox.setEnabled(isElastic)
+        m_ui.amplitudeSpinBox.setEnabled(isElastic or isBounce)
+        m_ui.overshootSpinBox.setEnabled(curveType >_ QEasingCurve.InBack and curveType <_ QEasingCurve.OutInBack)
 
     ___ pathChanged  index):
-        self.m_anim.setPathType(index)
+        m_anim.setPathType(index)
 
     ___ periodChanged  value):
-        curve _ self.m_anim.easingCurve()
+        curve _ m_anim.easingCurve()
         curve.setPeriod(value)
-        self.m_anim.setEasingCurve(curve)
+        m_anim.setEasingCurve(curve)
 
     ___ amplitudeChanged  value):
-        curve _ self.m_anim.easingCurve()
+        curve _ m_anim.easingCurve()
         curve.setAmplitude(value)
-        self.m_anim.setEasingCurve(curve)
+        m_anim.setEasingCurve(curve)
 
     ___ overshootChanged  value):
-        curve _ self.m_anim.easingCurve()
+        curve _ m_anim.easingCurve()
         curve.setOvershoot(value)
-        self.m_anim.setEasingCurve(curve)
+        m_anim.setEasingCurve(curve)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     w _ Window()
     w.resize(400, 400)
     w.s..

@@ -38,25 +38,25 @@ c_ PythonConsolePlugin(QPyDesignerCustomWidgetPlugin):
 
     # The __init__() method is only used to set up the plugin and define its
     # initialized variable.
-    ___ __init__  parent_None):
+    ___  -   parent_None):
     
-        super(PythonConsolePlugin, self).__init__(parent)
+        super(PythonConsolePlugin, self). - (parent)
 
-        self.initialized _ False
+        initialized _ False
 
     # The initialize() and isInitialized() methods allow the plugin to set up
     # any required resources, ensuring that this can only happen once for each
     # plugin.
     ___ initialize  core):
 
-        __ self.initialized:
+        __ initialized:
             r_
 
-        self.initialized _ True
+        initialized _ True
 
-    ___ isInitialized(self):
+    ___ isInitialized
 
-        r_ self.initialized
+        r_ initialized
 
     # This factory method creates new instances of our custom widget with the
     # appropriate parent.
@@ -65,39 +65,39 @@ c_ PythonConsolePlugin(QPyDesignerCustomWidgetPlugin):
 
     # This method returns the name of the custom widget class that is provided
     # by this plugin.
-    ___ name(self):
+    ___ name
         r_ "PythonConsoleWidget"
 
     # Returns the name of the group in Qt Designer's widget box that this
     # widget belongs to.
-    ___ group(self):
+    ___ group
         r_ "PyQt Examples"
 
     # Returns the icon used to represent the custom widget in Qt Designer's
     # widget box.
-    ___ icon(self):
+    ___ icon
         r_ QIcon(_logo_pixmap)
 
     # Returns a short description of the custom widget for use in a tool tip.
-    ___ toolTip(self):
+    ___ toolTip
         r_ ""
 
     # Returns a short description of the custom widget for use in a "What's
     # This?" help message for the widget.
-    ___ whatsThis(self):
+    ___ whatsThis
         r_ ""
 
     # Returns True if the custom widget acts as a container for other widgets;
     # otherwise returns False. Note that plugins for custom containers also
     # need to provide an implementation of the QDesignerContainerExtension
     # interface if they need to add custom editing support to Qt Designer.
-    ___ isContainer(self):
+    ___ isContainer
         r_ False
 
     # Returns an XML description of a custom widget instance that describes
     # default values for its properties. Each custom widget created by this
     # plugin will be configured using this description.
-    ___ domXml(self):
+    ___ domXml
         r_ '<widget class="PythonConsoleWidget" name="consoleWidget">\n' \
                ' <property name="toolTip" >\n' \
                '  <string>Python console</string>\n' \
@@ -110,7 +110,7 @@ c_ PythonConsolePlugin(QPyDesignerCustomWidgetPlugin):
 
     # Returns the module containing the custom widget class. It may include
     # a module path.
-    ___ includeFile(self):
+    ___ includeFile
         r_ "pythonconsolewidget"
 
 

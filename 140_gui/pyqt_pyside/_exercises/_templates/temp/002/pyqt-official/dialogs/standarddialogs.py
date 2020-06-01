@@ -57,266 +57,266 @@ c_ Dialog(QDialog):
             "<p>Click a button to close the message box. Pressing the Esc " \
             "button will activate the detected escape button (if any).</p>"
 
-    ___ __init__  parent_None):
-        super(Dialog, self).__init__(parent)
+    ___  -   parent_None):
+        super(Dialog, self). - (parent)
 
-        self.openFilesPath _ ''
+        openFilesPath _ ''
 
-        self.errorMessageDialog _ QErrorMessage(self)
+        errorMessageDialog _ QErrorMessage
 
         frameStyle _ QFrame.Sunken | QFrame.Panel
 
-        self.integerLabel _ QLabel()
-        self.integerLabel.setFrameStyle(frameStyle)
-        self.integerButton _ ?PB..("QInputDialog.get&Int()")
+        integerLabel _ QLabel()
+        integerLabel.setFrameStyle(frameStyle)
+        integerButton _ ?PB..("QInputDialog.get&Int()")
 
-        self.doubleLabel _ QLabel()
-        self.doubleLabel.setFrameStyle(frameStyle)
-        self.doubleButton _ ?PB..("QInputDialog.get&Double()")
+        doubleLabel _ QLabel()
+        doubleLabel.setFrameStyle(frameStyle)
+        doubleButton _ ?PB..("QInputDialog.get&Double()")
 
-        self.itemLabel _ QLabel()
-        self.itemLabel.setFrameStyle(frameStyle)
-        self.itemButton _ ?PB..("QInputDialog.getIte&m()")
+        itemLabel _ QLabel()
+        itemLabel.setFrameStyle(frameStyle)
+        itemButton _ ?PB..("QInputDialog.getIte&m()")
 
-        self.textLabel _ QLabel()
-        self.textLabel.setFrameStyle(frameStyle)
-        self.textButton _ ?PB..("QInputDialog.get&Text()")
+        textLabel _ QLabel()
+        textLabel.setFrameStyle(frameStyle)
+        textButton _ ?PB..("QInputDialog.get&Text()")
 
-        self.colorLabel _ QLabel()
-        self.colorLabel.setFrameStyle(frameStyle)
-        self.colorButton _ ?PB..("QColorDialog.get&Color()")
+        colorLabel _ QLabel()
+        colorLabel.setFrameStyle(frameStyle)
+        colorButton _ ?PB..("QColorDialog.get&Color()")
 
-        self.fontLabel _ QLabel()
-        self.fontLabel.setFrameStyle(frameStyle)
-        self.fontButton _ ?PB..("QFontDialog.get&Font()")
+        fontLabel _ QLabel()
+        fontLabel.setFrameStyle(frameStyle)
+        fontButton _ ?PB..("QFontDialog.get&Font()")
 
-        self.directoryLabel _ QLabel()
-        self.directoryLabel.setFrameStyle(frameStyle)
-        self.directoryButton _ ?PB..("QFileDialog.getE&xistingDirectory()")
+        directoryLabel _ QLabel()
+        directoryLabel.setFrameStyle(frameStyle)
+        directoryButton _ ?PB..("QFileDialog.getE&xistingDirectory()")
 
-        self.openFileNameLabel _ QLabel()
-        self.openFileNameLabel.setFrameStyle(frameStyle)
-        self.openFileNameButton _ ?PB..("QFileDialog.get&OpenFileName()")
+        openFileNameLabel _ QLabel()
+        openFileNameLabel.setFrameStyle(frameStyle)
+        openFileNameButton _ ?PB..("QFileDialog.get&OpenFileName()")
 
-        self.openFileNamesLabel _ QLabel()
-        self.openFileNamesLabel.setFrameStyle(frameStyle)
-        self.openFileNamesButton _ ?PB..("QFileDialog.&getOpenFileNames()")
+        openFileNamesLabel _ QLabel()
+        openFileNamesLabel.setFrameStyle(frameStyle)
+        openFileNamesButton _ ?PB..("QFileDialog.&getOpenFileNames()")
 
-        self.saveFileNameLabel _ QLabel()
-        self.saveFileNameLabel.setFrameStyle(frameStyle)
-        self.saveFileNameButton _ ?PB..("QFileDialog.get&SaveFileName()")
+        saveFileNameLabel _ QLabel()
+        saveFileNameLabel.setFrameStyle(frameStyle)
+        saveFileNameButton _ ?PB..("QFileDialog.get&SaveFileName()")
 
-        self.criticalLabel _ QLabel()
-        self.criticalLabel.setFrameStyle(frameStyle)
-        self.criticalButton _ ?PB..("QMessageBox.critica&l()")
+        criticalLabel _ QLabel()
+        criticalLabel.setFrameStyle(frameStyle)
+        criticalButton _ ?PB..("QMessageBox.critica&l()")
 
-        self.informationLabel _ QLabel()
-        self.informationLabel.setFrameStyle(frameStyle)
-        self.informationButton _ ?PB..("QMessageBox.i&nformation()")
+        informationLabel _ QLabel()
+        informationLabel.setFrameStyle(frameStyle)
+        informationButton _ ?PB..("QMessageBox.i&nformation()")
 
-        self.questionLabel _ QLabel()
-        self.questionLabel.setFrameStyle(frameStyle)
-        self.questionButton _ ?PB..("QMessageBox.&question()")
+        questionLabel _ QLabel()
+        questionLabel.setFrameStyle(frameStyle)
+        questionButton _ ?PB..("QMessageBox.&question()")
 
-        self.warningLabel _ QLabel()
-        self.warningLabel.setFrameStyle(frameStyle)
-        self.warningButton _ ?PB..("QMessageBox.&warning()")
+        warningLabel _ QLabel()
+        warningLabel.setFrameStyle(frameStyle)
+        warningButton _ ?PB..("QMessageBox.&warning()")
 
-        self.errorLabel _ QLabel()
-        self.errorLabel.setFrameStyle(frameStyle)
-        self.errorButton _ ?PB..("QErrorMessage.show&M&essage()")
+        errorLabel _ QLabel()
+        errorLabel.setFrameStyle(frameStyle)
+        errorButton _ ?PB..("QErrorMessage.show&M&essage()")
 
-        self.integerButton.c__.c..(self.setInteger)
-        self.doubleButton.c__.c..(self.setDouble)
-        self.itemButton.c__.c..(self.setItem)
-        self.textButton.c__.c..(self.sT..)
-        self.colorButton.c__.c..(self.sC..)
-        self.fontButton.c__.c..(self.setFont)
-        self.directoryButton.c__.c..(self.setExistingDirectory)
-        self.openFileNameButton.c__.c..(self.setOpenFileName)
-        self.openFileNamesButton.c__.c..(self.setOpenFileNames)
-        self.saveFileNameButton.c__.c..(self.setSaveFileName)
-        self.criticalButton.c__.c..(self.criticalMessage)
-        self.informationButton.c__.c..(self.informationMessage)
-        self.questionButton.c__.c..(self.questionMessage)
-        self.warningButton.c__.c..(self.warningMessage)
-        self.errorButton.c__.c..(self.errorMessage)
+        integerButton.c__.c..(setInteger)
+        doubleButton.c__.c..(setDouble)
+        itemButton.c__.c..(setItem)
+        textButton.c__.c..(sT..)
+        colorButton.c__.c..(sC..)
+        fontButton.c__.c..(setFont)
+        directoryButton.c__.c..(setExistingDirectory)
+        openFileNameButton.c__.c..(setOpenFileName)
+        openFileNamesButton.c__.c..(setOpenFileNames)
+        saveFileNameButton.c__.c..(setSaveFileName)
+        criticalButton.c__.c..(criticalMessage)
+        informationButton.c__.c..(informationMessage)
+        questionButton.c__.c..(questionMessage)
+        warningButton.c__.c..(warningMessage)
+        errorButton.c__.c..(errorMessage)
 
-        self.native _ QCheckBox()
-        self.native.sT..("Use native file dialog.")
-        self.native.setChecked(True)
-        __ ___.platform no. in ("win32", "darwin"):
-            self.native.hide()
+        native _ QCheckBox()
+        native.sT..("Use native file dialog.")
+        native.setChecked(True)
+        __ ___.platform no. __ ("win32", "darwin"):
+            native.hide()
 
         layout _ QGridLayout()
         layout.setColumnStretch(1, 1)
         layout.setColumnMinimumWidth(1, 250)
-        layout.aW..(self.integerButton, 0, 0)
-        layout.aW..(self.integerLabel, 0, 1)
-        layout.aW..(self.doubleButton, 1, 0)
-        layout.aW..(self.doubleLabel, 1, 1)
-        layout.aW..(self.itemButton, 2, 0)
-        layout.aW..(self.itemLabel, 2, 1)
-        layout.aW..(self.textButton, 3, 0)
-        layout.aW..(self.textLabel, 3, 1)
-        layout.aW..(self.colorButton, 4, 0)
-        layout.aW..(self.colorLabel, 4, 1)
-        layout.aW..(self.fontButton, 5, 0)
-        layout.aW..(self.fontLabel, 5, 1)
-        layout.aW..(self.directoryButton, 6, 0)
-        layout.aW..(self.directoryLabel, 6, 1)
-        layout.aW..(self.openFileNameButton, 7, 0)
-        layout.aW..(self.openFileNameLabel, 7, 1)
-        layout.aW..(self.openFileNamesButton, 8, 0)
-        layout.aW..(self.openFileNamesLabel, 8, 1)
-        layout.aW..(self.saveFileNameButton, 9, 0)
-        layout.aW..(self.saveFileNameLabel, 9, 1)
-        layout.aW..(self.criticalButton, 10, 0)
-        layout.aW..(self.criticalLabel, 10, 1)
-        layout.aW..(self.informationButton, 11, 0)
-        layout.aW..(self.informationLabel, 11, 1)
-        layout.aW..(self.questionButton, 12, 0)
-        layout.aW..(self.questionLabel, 12, 1)
-        layout.aW..(self.warningButton, 13, 0)
-        layout.aW..(self.warningLabel, 13, 1)
-        layout.aW..(self.errorButton, 14, 0)
-        layout.aW..(self.errorLabel, 14, 1)
-        layout.aW..(self.native, 15, 0)
-        self.sL..(layout)
+        layout.aW..(integerButton, 0, 0)
+        layout.aW..(integerLabel, 0, 1)
+        layout.aW..(doubleButton, 1, 0)
+        layout.aW..(doubleLabel, 1, 1)
+        layout.aW..(itemButton, 2, 0)
+        layout.aW..(itemLabel, 2, 1)
+        layout.aW..(textButton, 3, 0)
+        layout.aW..(textLabel, 3, 1)
+        layout.aW..(colorButton, 4, 0)
+        layout.aW..(colorLabel, 4, 1)
+        layout.aW..(fontButton, 5, 0)
+        layout.aW..(fontLabel, 5, 1)
+        layout.aW..(directoryButton, 6, 0)
+        layout.aW..(directoryLabel, 6, 1)
+        layout.aW..(openFileNameButton, 7, 0)
+        layout.aW..(openFileNameLabel, 7, 1)
+        layout.aW..(openFileNamesButton, 8, 0)
+        layout.aW..(openFileNamesLabel, 8, 1)
+        layout.aW..(saveFileNameButton, 9, 0)
+        layout.aW..(saveFileNameLabel, 9, 1)
+        layout.aW..(criticalButton, 10, 0)
+        layout.aW..(criticalLabel, 10, 1)
+        layout.aW..(informationButton, 11, 0)
+        layout.aW..(informationLabel, 11, 1)
+        layout.aW..(questionButton, 12, 0)
+        layout.aW..(questionLabel, 12, 1)
+        layout.aW..(warningButton, 13, 0)
+        layout.aW..(warningLabel, 13, 1)
+        layout.aW..(errorButton, 14, 0)
+        layout.aW..(errorLabel, 14, 1)
+        layout.aW..(native, 15, 0)
+        sL..(layout)
 
-        self.setWindowTitle("Standard Dialogs")
+        setWindowTitle("Standard Dialogs")
 
-    ___ setInteger(self):
+    ___ setInteger 
         i, ok _ QInputDialog.getInt  "QInputDialog.getInt()",
                 "Percentage:", 25, 0, 100, 1)
         __ ok:
-            self.integerLabel.sT..("%d%%" % i)
+            integerLabel.sT..("%d%%" % i)
 
-    ___ setDouble(self):
+    ___ setDouble 
         d, ok _ QInputDialog.getDouble  "QInputDialog.getDouble()",
                 "Amount:", 37.56, -10000, 10000, 2)
         __ ok:
-            self.doubleLabel.sT..("$%g" % d)
+            doubleLabel.sT..("$%g" % d)
 
-    ___ setItem(self):
+    ___ setItem 
         items _ ("Spring", "Summer", "Fall", "Winter")
 
         item, ok _ QInputDialog.getItem  "QInputDialog.getItem()",
                 "Season:", items, 0, False)
         __ ok and item:
-            self.itemLabel.sT..(item)
+            itemLabel.sT..(item)
 
-    ___ sT..(self):
+    ___ sT.. 
         t__, ok _ QInputDialog.getText  "QInputDialog.getText()",
                 "User name:", QLineEdit.Normal, QDir.home().dirName())
         __ ok and t__ !_ '':
-            self.textLabel.sT..(t__)
+            textLabel.sT..(t__)
 
-    ___ sC..(self):
+    ___ sC.. 
         color _ QColorDialog.getColor(__.green, self)
         __ color.isValid
-            self.colorLabel.sT..(color.name())
-            self.colorLabel.sP..(?P..(color))
-            self.colorLabel.setAutoFillBackground(True)
+            colorLabel.sT..(color.name())
+            colorLabel.sP..(?P..(color))
+            colorLabel.setAutoFillBackground(True)
 
-    ___ setFont(self):
-        font, ok _ QFontDialog.getFont(QFont(self.fontLabel.t__()), self)
+    ___ setFont 
+        font, ok _ QFontDialog.getFont(QFont(fontLabel.t__()), self)
         __ ok:
-            self.fontLabel.sT..(font.key())
-            self.fontLabel.setFont(font)
+            fontLabel.sT..(font.key())
+            fontLabel.setFont(font)
 
-    ___ setExistingDirectory(self):
+    ___ setExistingDirectory 
         options _ ?FD...DontResolveSymlinks | ?FD...ShowDirsOnly
         directory _ ?FD...getExistingDirectory
                 "QFileDialog.getExistingDirectory()",
-                self.directoryLabel.t__(), options_options)
+                directoryLabel.t__(), options_options)
         __ directory:
-            self.directoryLabel.sT..(directory)
+            directoryLabel.sT..(directory)
 
-    ___ setOpenFileName(self):
+    ___ setOpenFileName 
         options _ ?FD...Options()
-        __ no. self.native.isChecked
+        __ no. native.isChecked
             options |_ ?FD...DontUseNativeDialog
         fileName, _ _ ?FD...gOFN..
-                "QFileDialog.getOpenFileName()", self.openFileNameLabel.t__(),
+                "QFileDialog.getOpenFileName()", openFileNameLabel.t__(),
                 "All Files (*);;Text Files (*.txt)", options_options)
         __ fileName:
-            self.openFileNameLabel.sT..(fileName)
+            openFileNameLabel.sT..(fileName)
 
-    ___ setOpenFileNames(self):
+    ___ setOpenFileNames 
         options _ ?FD...Options()
-        __ no. self.native.isChecked
+        __ no. native.isChecked
             options |_ ?FD...DontUseNativeDialog
         files, _ _ ?FD...getOpenFileNames
-                "QFileDialog.getOpenFileNames()", self.openFilesPath,
+                "QFileDialog.getOpenFileNames()", openFilesPath,
                 "All Files (*);;Text Files (*.txt)", options_options)
         __ files:
-            self.openFilesPath _ files[0]
-            self.openFileNamesLabel.sT..("[%s]" % ', '.join(files))
+            openFilesPath _ files[0]
+            openFileNamesLabel.sT..("[%s]" % ', '.join(files))
 
-    ___ setSaveFileName(self):
+    ___ setSaveFileName 
         options _ ?FD...Options()
-        __ no. self.native.isChecked
+        __ no. native.isChecked
             options |_ ?FD...DontUseNativeDialog
         fileName, _ _ ?FD...getSaveFileName
                 "QFileDialog.getSaveFileName()",
-                self.saveFileNameLabel.t__(),
+                saveFileNameLabel.t__(),
                 "All Files (*);;Text Files (*.txt)", options_options)
         __ fileName:
-            self.saveFileNameLabel.sT..(fileName)
+            saveFileNameLabel.sT..(fileName)
 
-    ___ criticalMessage(self):
+    ___ criticalMessage 
         reply _ ?MB...critical  "QMessageBox.critical()",
                 Dialog.MESSAGE,
                 ?MB...Abort | ?MB...Retry | ?MB...Ignore)
         __ reply == ?MB...Abort:
-            self.criticalLabel.sT..("Abort")
+            criticalLabel.sT..("Abort")
         ____ reply == ?MB...Retry:
-            self.criticalLabel.sT..("Retry")
+            criticalLabel.sT..("Retry")
         ____
-            self.criticalLabel.sT..("Ignore")
+            criticalLabel.sT..("Ignore")
 
-    ___ informationMessage(self):
+    ___ informationMessage 
         reply _ ?MB...information
                 "QMessageBox.information()", Dialog.MESSAGE)
         __ reply == ?MB...Ok:
-            self.informationLabel.sT..("OK")
+            informationLabel.sT..("OK")
         ____
-            self.informationLabel.sT..("Escape")
+            informationLabel.sT..("Escape")
 
-    ___ questionMessage(self):
+    ___ questionMessage 
         reply _ ?MB...q..  "QMessageBox.question()",
                 Dialog.MESSAGE,
                 ?MB...Yes | ?MB...No | ?MB...Cancel)
         __ reply == ?MB...Yes:
-            self.questionLabel.sT..("Yes")
+            questionLabel.sT..("Yes")
         ____ reply == ?MB...No:
-            self.questionLabel.sT..("No")
+            questionLabel.sT..("No")
         ____
-            self.questionLabel.sT..("Cancel")
+            questionLabel.sT..("Cancel")
 
-    ___ warningMessage(self):
+    ___ warningMessage 
         msgBox _ ?MB..(?MB...Warning, "QMessageBox.warning()",
                 Dialog.MESSAGE, ?MB...NoButton, self)
         msgBox.addButton("Save &Again", ?MB...AcceptRole)
         msgBox.addButton("&Continue", ?MB...RejectRole)
         __ msgBox.e.. == ?MB...AcceptRole:
-            self.warningLabel.sT..("Save Again")
+            warningLabel.sT..("Save Again")
         ____
-            self.warningLabel.sT..("Continue")
+            warningLabel.sT..("Continue")
 
-    ___ errorMessage(self):
-        self.errorMessageDialog.showMessage("This dialog shows and remembers "
+    ___ errorMessage 
+        errorMessageDialog.showMessage("This dialog shows and remembers "
                 "error messages. If the checkbox is checked (as it is by "
                 "default), the shown message will be shown again, but if the "
                 "user unchecks the box the message will not appear again if "
                 "QErrorMessage.showMessage() is called with the same message.")
-        self.errorLabel.sT..("If the box is unchecked, the message won't "
+        errorLabel.sT..("If the box is unchecked, the message won't "
                 "appear again.")
 
 
-__ __name__ == '__main__':
-    app _ ?A..(___.argv)
+__ ______ __ ______
+    app _ ?A..(___.a..
     dialog _ Dialog()
     dialog.s..
     ___.exit(app.exec_())

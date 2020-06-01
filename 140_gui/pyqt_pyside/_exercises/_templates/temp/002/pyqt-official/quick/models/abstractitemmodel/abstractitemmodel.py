@@ -50,15 +50,15 @@ ______ abstractitemmodel_rc
 
 c_ Animal(object):
 
-    ___ __init__  type, size):
-        self._type _ type
-        self._size _ size
+    ___  -   type, size):
+        _type _ type
+        _size _ size
 
-    ___ type(self):
-        r_ self._type
+    ___ type
+        r_ _type
 
-    ___ size(self):
-        r_ self._size
+    ___ size
+        r_ _size
 
 
 c_ AnimalModel(QAbstractListModel):
@@ -68,38 +68,38 @@ c_ AnimalModel(QAbstractListModel):
 
     _roles _ {TypeRole: b"type", SizeRole: b"size"}
 
-    ___ __init__  parent_None):
-        super(AnimalModel, self).__init__(parent)
+    ___  -   parent_None):
+        super(AnimalModel, self). - (parent)
 
-        self._animals _   # list
+        _animals _   # list
 
     ___ addAnimal  animal):
-        self.beginInsertRows(QModelIndex(), self.rowCount(), self.rowCount())
-        self._animals.ap..(animal)
-        self.endInsertRows()
+        beginInsertRows(QModelIndex(), rowCount(), rowCount())
+        _animals.ap..(animal)
+        endInsertRows()
 
     ___ rowCount  parent_QModelIndex()):
-        r_ le.(self._animals)
+        r_ le.(_animals)
 
     ___ data  index, role_Qt.DisplayRole):
         try:
-            animal _ self._animals[index.row()]
+            animal _ _animals[index.row()]
         except IndexError:
             r_ ?V..
 
-        __ role == self.TypeRole:
+        __ role == TypeRole:
             r_ animal.type()
 
-        __ role == self.SizeRole:
+        __ role == SizeRole:
             r_ animal.size()
 
         r_ ?V..
 
-    ___ roleNames(self):
-        r_ self._roles
+    ___ roleNames
+        r_ _roles
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
     ______ os
     ______ ___
 
@@ -108,7 +108,7 @@ __ __name__ == '__main__':
     # doesn't get mixed up with another of the same name.
     os.chdir(__.p__ .dirname(__.p__ .abspath(__file__)))
 
-    app _ QGuiApplication(___.argv)
+    app _ QGuiApplication(___.a..
 
     model _ AnimalModel()
     model.addAnimal(Animal("Wolf", "Medium"))

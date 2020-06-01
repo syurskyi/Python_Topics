@@ -56,103 +56,103 @@ c_ CharacterWidget(QWidget):
 
     characterSelected _ pyqtSignal(str)
 
-    ___ __init__  parent_None):
-        super(CharacterWidget, self).__init__(parent)
+    ___  -   parent_None):
+        super(CharacterWidget, self). - (parent)
 
-        self.displayFont _ QFont()
-        self.squareSize _ 24
-        self.columns _ 16
-        self.lastKey _ -1
-        self.setMouseTracking(True)
+        displayFont _ QFont()
+        squareSize _ 24
+        columns _ 16
+        lastKey _ -1
+        setMouseTracking(True)
 
     ___ updateFont  fontFamily):
-        self.displayFont.setFamily(fontFamily)
-        self.squareSize _ max(24, QFontMetrics(self.displayFont).xHeight() * 3)
-        self.adjustSize()
-        self.update()
+        displayFont.setFamily(fontFamily)
+        squareSize _ max(24, QFontMetrics(displayFont).xHeight() * 3)
+        adjustSize()
+        update()
 
     ___ updateSize  fontSize):
         fontSize, _ _ fontSize.toInt()
-        self.displayFont.setPointSize(fontSize)
-        self.squareSize _ max(24, QFontMetrics(self.displayFont).xHeight() * 3)
-        self.adjustSize()
-        self.update() 
+        displayFont.setPointSize(fontSize)
+        squareSize _ max(24, QFontMetrics(displayFont).xHeight() * 3)
+        adjustSize()
+        update()
 
     ___ updateStyle  fontStyle):
         fontDatabase _ QFontDatabase()
-        oldStrategy _ self.displayFont.styleStrategy()
-        self.displayFont _ fontDatabase.font(self.displayFont.family(),
-                fontStyle, self.displayFont.pointSize())
-        self.displayFont.setStyleStrategy(oldStrategy)
-        self.squareSize _ max(24, QFontMetrics(self.displayFont).xHeight() * 3)
-        self.adjustSize()
-        self.update()
+        oldStrategy _ displayFont.styleStrategy()
+        displayFont _ fontDatabase.font(displayFont.family(),
+                fontStyle, displayFont.pointSize())
+        displayFont.setStyleStrategy(oldStrategy)
+        squareSize _ max(24, QFontMetrics(displayFont).xHeight() * 3)
+        adjustSize()
+        update()
 
     ___ updateFontMerging  enable):
         __ enable:
-            self.displayFont.setStyleStrategy(QFont.PreferDefault)
+            displayFont.setStyleStrategy(QFont.PreferDefault)
         ____
-            self.displayFont.setStyleStrategy(QFont.NoFontMerging)
-        self.adjustSize()
-        self.update()
+            displayFont.setStyleStrategy(QFont.NoFontMerging)
+        adjustSize()
+        update()
 
-    ___ sizeHint(self):
-        r_ QSize(self.columns * self.squareSize,
-                (65536 / self.columns) * self.squareSize)
+    ___ sizeHint 
+        r_ QSize(columns * squareSize,
+                (65536 / columns) * squareSize)
 
     ___ mouseMoveEvent  event):
-        widgetPosition _ self.mapFromGlobal(event.globalPos())
-        key _ (widgetPosition.y() // self.squareSize) * self.columns + widgetPosition.x() // self.squareSize
+        widgetPosition _ mapFromGlobal(event.globalPos())
+        key _ (widgetPosition.y() // squareSize) * columns + widgetPosition.x() // squareSize
 
-        t__ _ '<p>Character: <span style="font-size: 24pt; font-family: %s">%s</span><p>Value: 0x%x' % (self.displayFont.family(), self._chr(key), key)
+        t__ _ '<p>Character: <span style="font-size: 24pt; font-family: %s">%s</span><p>Value: 0x%x' % (displayFont.family(), _chr(key), key)
         QToolTip.showText(event.globalPos(), t__, self)
 
     ___ mousePressEvent  event):
         __ event.button() == __.LeftButton:
-            self.lastKey _ (event.y() // self.squareSize) * self.columns + event.x() // self.squareSize
-            key_ch _ self._chr(self.lastKey)
+            lastKey _ (event.y() // squareSize) * columns + event.x() // squareSize
+            key_ch _ _chr(lastKey)
 
             __ unicodedata.category(key_ch) !_ 'Cn':
-                self.characterSelected.emit(key_ch)
-            self.update()
+                characterSelected.emit(key_ch)
+            update()
         ____
             super(CharacterWidget, self).mousePressEvent(event)
 
     ___ paintEvent  event):
-        painter _ QPainter(self)
+        painter _ QPainter
         painter.fillRect(event.rect(), __.white)
-        painter.setFont(self.displayFont)
+        painter.setFont(displayFont)
 
         redrawRect _ event.rect()
-        beginRow _ redrawRect.top() // self.squareSize
-        endRow _ redrawRect.bottom() // self.squareSize
-        beginColumn _ redrawRect.left() // self.squareSize
-        endColumn _ redrawRect.right() // self.squareSize
+        beginRow _ redrawRect.top() // squareSize
+        endRow _ redrawRect.bottom() // squareSize
+        beginColumn _ redrawRect.left() // squareSize
+        endColumn _ redrawRect.right() // squareSize
 
         painter.setPen(__.gray)
-        for row in range(beginRow, endRow + 1):
-            for column in range(beginColumn, endColumn + 1):
-                painter.drawRect(column * self.squareSize,
-                        row * self.squareSize, self.squareSize,
-                        self.squareSize)
+        ___ row __ range(beginRow, endRow + 1):
+            ___ column __ range(beginColumn, endColumn + 1):
+                painter.drawRect(column * squareSize,
+                        row * squareSize, squareSize,
+                        squareSize)
 
-        fontMetrics _ QFontMetrics(self.displayFont)
+        fontMetrics _ QFontMetrics(displayFont)
         painter.setPen(__.black)
-        for row in range(beginRow, endRow + 1):
-            for column in range(beginColumn, endColumn + 1):
-                key _ row * self.columns + column
-                painter.setClipRect(column * self.squareSize,
-                        row * self.squareSize, self.squareSize,
-                        self.squareSize)
+        ___ row __ range(beginRow, endRow + 1):
+            ___ column __ range(beginColumn, endColumn + 1):
+                key _ row * columns + column
+                painter.setClipRect(column * squareSize,
+                        row * squareSize, squareSize,
+                        squareSize)
 
-                __ key == self.lastKey:
-                    painter.fillRect(column * self.squareSize + 1,
-                            row * self.squareSize + 1, self.squareSize,
-                            self.squareSize, __.red)
+                __ key == lastKey:
+                    painter.fillRect(column * squareSize + 1,
+                            row * squareSize + 1, squareSize,
+                            squareSize, __.red)
 
-                key_ch _ self._chr(key)
-                painter.drawText(column * self.squareSize + (self.squareSize / 2) - fontMetrics.width(key_ch) / 2,
-                        row * self.squareSize + 4 + fontMetrics.ascent(),
+                key_ch _ _chr(key)
+                painter.drawText(column * squareSize + (squareSize / 2) - fontMetrics.width(key_ch) / 2,
+                        row * squareSize + 4 + fontMetrics.ascent(),
                         key_ch)
 
     @staticmethod
@@ -166,116 +166,116 @@ c_ CharacterWidget(QWidget):
 
 
 c_ MainWindow ?MW..
-    ___ __init__(self):
-        super(MainWindow, self).__init__()
+    ___  -
+        super(MainWindow, self). - ()
 
         centralWidget _ ?W..
 
         fontLabel _ QLabel("Font:")
-        self.fontCombo _ QFontComboBox()
+        fontCombo _ QFontComboBox()
         sizeLabel _ QLabel("Size:")
-        self.sizeCombo _ QComboBox()
+        sizeCombo _ QComboBox()
         styleLabel _ QLabel("Style:")
-        self.styleCombo _ QComboBox()
+        styleCombo _ QComboBox()
         fontMergingLabel _ QLabel("Automatic Font Merging:")
-        self.fontMerging _ QCheckBox()
-        self.fontMerging.setChecked(True)
+        fontMerging _ QCheckBox()
+        fontMerging.setChecked(True)
 
-        self.scrollArea _ QScrollArea()
-        self.characterWidget _ CharacterWidget()
-        self.scrollArea.setWidget(self.characterWidget)
+        scrollArea _ QScrollArea()
+        characterWidget _ CharacterWidget()
+        scrollArea.setWidget(characterWidget)
 
-        self.findStyles(self.fontCombo.currentFont())
-        self.findSizes(self.fontCombo.currentFont())
+        findStyles(fontCombo.currentFont())
+        findSizes(fontCombo.currentFont())
 
-        self.lineEdit _ ?LE..
+        lineEdit _ ?LE..
         clipboardButton _ ?PB..("&To clipboard")
 
-        self.clipboard _ ?A...clipboard()
+        clipboard _ ?A...clipboard()
 
-        self.fontCombo.currentFontChanged.c..(self.findStyles)
-        self.fontCombo.activated[str].c..(self.characterWidget.updateFont)
-        self.styleCombo.activated[str].c..(self.characterWidget.updateStyle)
-        self.sizeCombo.currentIndexChanged[str].c..(self.characterWidget.updateSize)
-        self.characterWidget.characterSelected.c..(self.insertCharacter)
-        clipboardButton.c__.c..(self.updateClipboard)
+        fontCombo.currentFontChanged.c..(findStyles)
+        fontCombo.activated[str].c..(characterWidget.updateFont)
+        styleCombo.activated[str].c..(characterWidget.updateStyle)
+        sizeCombo.currentIndexChanged[str].c..(characterWidget.updateSize)
+        characterWidget.characterSelected.c..(insertCharacter)
+        clipboardButton.c__.c..(updateClipboard)
 
         controlsLayout _ QHBoxLayout()
         controlsLayout.aW..(fontLabel)
-        controlsLayout.aW..(self.fontCombo, 1)
+        controlsLayout.aW..(fontCombo, 1)
         controlsLayout.aW..(sizeLabel)
-        controlsLayout.aW..(self.sizeCombo, 1)
+        controlsLayout.aW..(sizeCombo, 1)
         controlsLayout.aW..(styleLabel)
-        controlsLayout.aW..(self.styleCombo, 1)
+        controlsLayout.aW..(styleCombo, 1)
         controlsLayout.aW..(fontMergingLabel)
-        controlsLayout.aW..(self.fontMerging, 1)
+        controlsLayout.aW..(fontMerging, 1)
         controlsLayout.addStretch(1)
 
         lineLayout _ QHBoxLayout()
-        lineLayout.aW..(self.lineEdit, 1)
+        lineLayout.aW..(lineEdit, 1)
         lineLayout.addSpacing(12)
         lineLayout.aW..(clipboardButton)
 
         centralLayout _ ?VBL..
-        centralLayout.addLayout(controlsLayout)
-        centralLayout.aW..(self.scrollArea, 1)
+        centralLayout.aL..(controlsLayout)
+        centralLayout.aW..(scrollArea, 1)
         centralLayout.addSpacing(4)
-        centralLayout.addLayout(lineLayout)
+        centralLayout.aL..(lineLayout)
         centralWidget.sL..(centralLayout)
 
-        self.sCW..(centralWidget)
-        self.setWindowTitle("Character Map")
+        sCW..(centralWidget)
+        setWindowTitle("Character Map")
 
     ___ findStyles  font):
         fontDatabase _ QFontDatabase()
-        currentItem _ self.styleCombo.currentText()
-        self.styleCombo.clear()
+        currentItem _ styleCombo.currentText()
+        styleCombo.clear()
 
-        for style in fontDatabase.styles(font.family()):
-            self.styleCombo.addItem(style)
+        ___ style __ fontDatabase.styles(font.family()):
+            styleCombo.addItem(style)
 
-        styleIndex _ self.styleCombo.findText(currentItem)
+        styleIndex _ styleCombo.findText(currentItem)
         __ styleIndex == -1:
-            self.styleCombo.setCurrentIndex(0)
+            styleCombo.setCurrentIndex(0)
         ____
-            self.styleCombo.setCurrentIndex(styleIndex)
+            styleCombo.setCurrentIndex(styleIndex)
 
     ___ findSizes  font):
         fontDatabase _ QFontDatabase()
-        currentSize _ self.sizeCombo.currentText()
-        self.sizeCombo.blockSignals(True)
-        self.sizeCombo.clear()
+        currentSize _ sizeCombo.currentText()
+        sizeCombo.blockSignals(True)
+        sizeCombo.clear()
 
         __ fontDatabase.isSmoothlyScalable(font.family(), fontDatabase.styleString(font)):
-            for size in QFontDatabase.standardSizes
-                self.sizeCombo.addItem(str(size))
-                self.sizeCombo.setEditable(True)
+            ___ size __ QFontDatabase.standardSizes
+                sizeCombo.addItem(str(size))
+                sizeCombo.setEditable(True)
         ____
-            for size in fontDatabase.smoothSizes(font.family(), fontDatabase.styleString(font)):
-                self.sizeCombo.addItem(str(size))
-                self.sizeCombo.setEditable F..
+            ___ size __ fontDatabase.smoothSizes(font.family(), fontDatabase.styleString(font)):
+                sizeCombo.addItem(str(size))
+                sizeCombo.setEditable F..
 
-        self.sizeCombo.blockSignals F..
+        sizeCombo.blockSignals F..
 
-        sizeIndex _ self.sizeCombo.findText(currentSize)
+        sizeIndex _ sizeCombo.findText(currentSize)
         __ sizeIndex == -1:
-            self.sizeCombo.setCurrentIndex(max(0, self.sizeCombo.count() / 3))
+            sizeCombo.setCurrentIndex(max(0, sizeCombo.count() / 3))
         ____
-            self.sizeCombo.setCurrentIndex(sizeIndex)
+            sizeCombo.setCurrentIndex(sizeIndex)
 
     ___ insertCharacter  character):
-        self.lineEdit.insert(character)
+        lineEdit.insert(character)
 
-    ___ updateClipboard(self):
-        self.clipboard.sT..(self.lineEdit.t__(), QClipboard.Clipboard)
-        self.clipboard.sT..(self.lineEdit.t__(), QClipboard.Selection)
+    ___ updateClipboard 
+        clipboard.sT..(lineEdit.t__(), QClipboard.Clipboard)
+        clipboard.sT..(lineEdit.t__(), QClipboard.Selection)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     window _ MainWindow()
     window.s..
     ___.exit(app.exec_())

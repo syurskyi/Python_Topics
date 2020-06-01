@@ -39,41 +39,41 @@ DESIGNER_GROUP_NAME _ "PyQt Examples"
 #----------------------------------------------------------------------------#
 c_ PyDateEditPlugin(QPyDesignerCustomWidgetPlugin):
 
-    ___ __init__  parent_None):
-        super(PyDateEditPlugin, self).__init__(parent)
+    ___  -   parent_None):
+        super(PyDateEditPlugin, self). - (parent)
 
-        self.initialized _ False
+        initialized _ False
 
     ___ initialize  formEditor):
-        __ self.initialized:
+        __ initialized:
             r_
-        self.initialized _ True
+        initialized _ True
 
-    ___ isInitialized(self):
-        r_ self.initialized
+    ___ isInitialized 
+        r_ initialized
 
-    ___ isContainer(self):
+    ___ isContainer 
         r_ False
 
-    ___ icon(self):
+    ___ icon 
         r_ QIcon()
 
-    ___ domXml(self):
+    ___ domXml 
         r_ '<widget class="PyDateEdit" name="pyDateEdit">\n</widget>\n'
     
-    ___ group(self):
+    ___ group 
         r_ DESIGNER_GROUP_NAME
               
-    ___ includeFile(self):
+    ___ includeFile 
         r_ "datetimeedit"
 
-    ___ name(self):
+    ___ name 
         r_ "PyDateEdit"
 
-    ___ toolTip(self):
+    ___ toolTip 
         r_ ""
 
-    ___ whatsThis(self):
+    ___ whatsThis 
         r_ ""
 
     ___ createWidget  parent):
@@ -85,41 +85,41 @@ c_ PyDateEditPlugin(QPyDesignerCustomWidgetPlugin):
 #----------------------------------------------------------------------------#
 c_ PyDateTimeEditPlugin(QPyDesignerCustomWidgetPlugin):
 
-    ___ __init__  parent_None):
-        super(PyDateTimeEditPlugin, self).__init__(parent)
+    ___  -   parent_None):
+        super(PyDateTimeEditPlugin, self). - (parent)
 
-        self.initialized _ False
+        initialized _ False
 
     ___ initialize  formEditor):
-        __ self.initialized:
+        __ initialized:
             r_
-        self.initialized _ True
+        initialized _ True
 
-    ___ isInitialized(self):
-        r_ self.initialized
+    ___ isInitialized 
+        r_ initialized
 
-    ___ isContainer(self):
+    ___ isContainer 
         r_ False
 
-    ___ icon(self):
+    ___ icon 
         r_ QIcon()
 
-    ___ domXml(self):
+    ___ domXml 
         r_ '<widget class="PyDateTimeEdit" name="pyDateTimeEdit">\n</widget>\n'
     
-    ___ group(self):
+    ___ group 
         r_ DESIGNER_GROUP_NAME
               
-    ___ includeFile(self):
+    ___ includeFile 
         r_ "datetimeedit"
 
-    ___ name(self):
+    ___ name 
         r_ "PyDateTimeEdit"
 
-    ___ toolTip(self):
+    ___ toolTip 
         r_ ""
 
-    ___ whatsThis(self):
+    ___ whatsThis 
         r_ ""
 
     ___ createWidget  parent):

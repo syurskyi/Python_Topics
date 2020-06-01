@@ -5,56 +5,56 @@ ____ ? ______ ?G.. __ qtg
 ____ ? ______ ?S.. __ qts
 
 
-c_ CoffeeForm(qtw.QWidget):
+c_ CoffeeForm ?.?W..
     """Form to display/edit all info about a coffee"""
 
-    ___ __init__  roasts):
-        super().__init__()
-        self.sL..(qtw.QFormLayout())
+    ___  -   roasts):
+        s_. - ()
+        sL..(qtw.QFormLayout())
 
-        self.coffee_brand _ qtw.?LE..
-        self.layout().addRow('Brand: ', self.coffee_brand)
-        self.coffee_name _ qtw.?LE..
-        self.layout().addRow('Name: ', self.coffee_name)
-        self.roast _ qtw.QComboBox()
-        self.roast.addItems(roasts)
-        self.layout().addRow('Roast: ', self.roast)
-        self.reviews _ qtw.QTableWidget(columnCount_3)
-        self.reviews.horizontalHeader().setSectionResizeMode(
+        coffee_brand _ qtw.?LE..
+        layout().addRow('Brand: ', coffee_brand)
+        coffee_name _ qtw.?LE..
+        layout().addRow('Name: ', coffee_name)
+        roast _ qtw.QComboBox()
+        roast.addItems(roasts)
+        layout().addRow('Roast: ', roast)
+        reviews _ qtw.QTableWidget(columnCount_3)
+        reviews.horizontalHeader().setSectionResizeMode(
             2, qtw.QHeaderView.Stretch)
-        self.layout().addRow(self.reviews)
+        layout().addRow(reviews)
 
     ___ show_coffee  coffee_data, reviews):
-        self.coffee_brand.sT..(coffee_data.g..('coffee_brand'))
-        self.coffee_name.sT..(coffee_data.g..('coffee_name'))
-        self.roast.setCurrentIndex(coffee_data.g..('roast_id'))
-        self.reviews.clear()
-        self.reviews.setHorizontalHeaderLabels(
+        coffee_brand.sT..(coffee_data.g..('coffee_brand'))
+        coffee_name.sT..(coffee_data.g..('coffee_name'))
+        roast.setCurrentIndex(coffee_data.g..('roast_id'))
+        reviews.clear()
+        reviews.setHorizontalHeaderLabels(
             ['Reviewer', 'Date', 'Review'])
-        self.reviews.setRowCount(le.(reviews))
-        for i, review in enumerate(reviews):
-            for j, value in enumerate(review):
-                self.reviews.setItem(i, j, qtw.QTableWidgetItem(value))
+        reviews.setRowCount(le.(reviews))
+        ___ i, review __ en..(reviews):
+            ___ j, value __ en..(review):
+                reviews.setItem(i, j, qtw.QTableWidgetItem(value))
 
 
 c_ MainWindow(qtw.QMainWindow):
 
-    ___ __init__(self):
+    ___  -
         """MainWindow constructor.
 
         Code in this method should define window properties,
         create backend resources, etc.
         """
-        super().__init__()
+        s_. - ()
         # Code starts here
-        self.stack _ qtw.QStackedWidget()
-        self.sCW..(self.stack)
+        stack _ qtw.QStackedWidget()
+        sCW..(stack)
 
         # Connect to the database
-        self.db _ qts.?SD...aD..('QSQLITE')
-        self.db.sDN..('coffee.db')
-        __ no. self.db.o..
-            error _ self.db.lastError().t__()
+        db _ qts.?SD...aD..('QSQLITE')
+        db.sDN..('coffee.db')
+        __ no. db.o..
+            error _ db.lastError().t__()
             qtw.?MB...critical(
                 N.., 'DB Connection Error',
                 'Could not open database file: '
@@ -63,7 +63,7 @@ c_ MainWindow(qtw.QMainWindow):
 
         # Check for missing tables
         required_tables _ {'roasts', 'coffees', 'reviews'}
-        tables _ self.db.tables()
+        tables _ db.tables()
         missing_tables _ required_tables - set(tables)
         __ missing_tables:
             qtw.?MB...critica(
@@ -73,54 +73,54 @@ c_ MainWindow(qtw.QMainWindow):
             ___.exit(1)
 
         # Make a query
-        query _ self.db.exec('SELECT count(*) FROM coffees')
+        query _ db.exec('SELECT count(*) FROM coffees')
         query.next()
         count _ query.value(0)
         print(f'There are {count} coffees in the database.')
 
         # Retreive the roasts table
-        query _ self.db.exec('SELECT * FROM roasts ORDER BY id')
+        query _ db.exec('SELECT * FROM roasts ORDER BY id')
         roasts _   # list
         w__ query.next
             roasts.ap..(query.value(1))
 
         # create the form
-        self.coffee_form _ CoffeeForm(roasts)
-        self.stack.aW..(self.coffee_form)
+        coffee_form _ CoffeeForm(roasts)
+        stack.aW..(coffee_form)
 
         # Retreive the coffees table using a QSqlQueryModel
         coffees _ qts.QSqlQueryModel()
         coffees.setQuery(
             "SELECT id, coffee_brand, coffee_name AS coffee "
             "FROM coffees ORDER BY id")
-        self.coffee_list _ qtw.QTableView()
-        self.coffee_list.sM..(coffees)
-        self.stack.aW..(self.coffee_list)
-        self.stack.setCurrentWidget(self.coffee_list)
+        coffee_list _ qtw.QTableView()
+        coffee_list.sM..(coffees)
+        stack.aW..(coffee_list)
+        stack.setCurrentWidget(coffee_list)
 
         coffees.setHeaderData(1, qtc.__.Horizontal, 'Brand')
         coffees.setHeaderData(2, qtc.__.Horizontal, 'Product')
 
         # Navigation between stacked widgets
-        navigation _ self.addToolBar("Navigation")
+        navigation _ addToolBar("Navigation")
         navigation.aA..(
             "Back to list",
-            lambda: self.stack.setCurrentWidget(self.coffee_list))
+            lambda: stack.setCurrentWidget(coffee_list))
 
-        self.coffee_list.doubleClicked.c..(
-            lambda x: self.show_coffee(self.get_id_for_row(x)))
+        coffee_list.doubleClicked.c..(
+            lambda x: show_coffee(get_id_for_row(x)))
 
         # Code ends here
-        self.s..
+        s..
 
     ___ get_id_for_row  index):
         index _ index.siblingAtColumn(0)
-        coffee_id _ self.coffee_list.model().data(index)
+        coffee_id _ coffee_list.model().data(index)
         r_ coffee_id
 
     ___ show_coffee  coffee_id):
         # get the basic coffee information
-        query1 _ qts.QSqlQuery(self.db)
+        query1 _ qts.QSqlQuery(db)
         query1.prepare('SELECT * FROM coffees WHERE id=:id')
         query1.bindValue(':id', coffee_id)
         query1.exec()
@@ -144,12 +144,12 @@ c_ MainWindow(qtw.QMainWindow):
                 query2.value('review')
             ))
 
-        self.coffee_form.show_coffee(coffee, reviews)
-        self.stack.setCurrentWidget(self.coffee_form)
+        coffee_form.show_coffee(coffee, reviews)
+        stack.setCurrentWidget(coffee_form)
 
 
-__ __name__ == '__main__':
-    app _ qtw.?A..(___.argv)
+__ ______ __ ______
+    app _ qtw.?A..(___.a..
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()

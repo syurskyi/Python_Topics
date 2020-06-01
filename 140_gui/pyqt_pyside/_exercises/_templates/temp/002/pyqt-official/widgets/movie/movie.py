@@ -50,162 +50,162 @@ ____ ?.?W.. ______ (?A.., QCheckBox, ?FD.., QGridLayout,
 
 
 c_ MoviePlayer(QWidget):
-    ___ __init__  parent_None):
-        super(MoviePlayer, self).__init__(parent)
+    ___  -   parent_None):
+        super(MoviePlayer, self). - (parent)
 
-        self.movie _ QMovie(self)
-        self.movie.setCacheMode(QMovie.CacheAll)
+        movie _ QMovie
+        movie.setCacheMode(QMovie.CacheAll)
 
-        self.movieLabel _ QLabel("No movie loaded")
-        self.movieLabel.setAlignment(__.AlignCenter)
-        self.movieLabel.setSizePolicy(QSizePolicy.Ignored, QSizePolicy.Ignored)
-        self.movieLabel.setBackgroundRole(?P...Dark)
-        self.movieLabel.setAutoFillBackground(True)
+        movieLabel _ QLabel("No movie loaded")
+        movieLabel.setAlignment(__.AlignCenter)
+        movieLabel.sSP..(QSizePolicy.Ignored, QSizePolicy.Ignored)
+        movieLabel.setBackgroundRole(?P...Dark)
+        movieLabel.setAutoFillBackground(True)
 
-        self.currentMovieDirectory _ ''
+        currentMovieDirectory _ ''
 
-        self.createControls()
-        self.createButtons()
+        createControls()
+        createButtons()
 
-        self.movie.frameChanged.c..(self.updateFrameSlider)
-        self.movie.stateChanged.c..(self.updateButtons)
-        self.fitCheckBox.c__.c..(self.fitToWindow)
-        self.frameSlider.valueChanged.c..(self.goToFrame)
-        self.speedSpinBox.valueChanged.c..(self.movie.setSpeed)
+        movie.frameChanged.c..(updateFrameSlider)
+        movie.stateChanged.c..(updateButtons)
+        fitCheckBox.c__.c..(fitToWindow)
+        frameSlider.valueChanged.c..(goToFrame)
+        speedSpinBox.valueChanged.c..(movie.setSpeed)
 
         mainLayout _ ?VBL..
-        mainLayout.aW..(self.movieLabel)
-        mainLayout.addLayout(self.controlsLayout)
-        mainLayout.addLayout(self.buttonsLayout)
-        self.sL..(mainLayout)
+        mainLayout.aW..(movieLabel)
+        mainLayout.aL..(controlsLayout)
+        mainLayout.aL..(buttonsLayout)
+        sL..(mainLayout)
 
-        self.updateFrameSlider()
-        self.updateButtons()
+        updateFrameSlider()
+        updateButtons()
 
-        self.setWindowTitle("Movie Player")
-        self.resize(400, 400)
+        setWindowTitle("Movie Player")
+        resize(400, 400)
 
-    ___ o..(self):
+    ___ o..
         fileName, _ _ ?FD...gOFN..  "Open a Movie",
-                self.currentMovieDirectory)
+                currentMovieDirectory)
 
         __ fileName:
-            self.openFile(fileName)
+            openFile(fileName)
 
     ___ openFile  fileName):
-        self.currentMovieDirectory _ QFileInfo(fileName).path()
+        currentMovieDirectory _ QFileInfo(fileName).path()
 
-        self.movie.stop()
-        self.movieLabel.setMovie(self.movie)
-        self.movie.setFileName(fileName)
-        self.movie.start()
+        movie.stop()
+        movieLabel.setMovie(movie)
+        movie.setFileName(fileName)
+        movie.start()
 
-        self.updateFrameSlider();
-        self.updateButtons();
+        updateFrameSlider();
+        updateButtons();
 
     ___ goToFrame  frame):
-        self.movie.jumpToFrame(frame)
+        movie.jumpToFrame(frame)
 
-    ___ fitToWindow(self):
-        self.movieLabel.setScaledContents(self.fitCheckBox.isChecked())
+    ___ fitToWindow
+        movieLabel.setScaledContents(fitCheckBox.isChecked())
 
-    ___ updateFrameSlider(self):
-        hasFrames _ (self.movie.currentFrameNumber() >_ 0)
+    ___ updateFrameSlider
+        hasFrames _ (movie.currentFrameNumber() >_ 0)
 
         __ hasFrames:
-            __ self.movie.frameCount() > 0:
-                self.frameSlider.setMaximum(self.movie.frameCount() - 1)
-            ____ self.movie.currentFrameNumber() > self.frameSlider.maximum
-                self.frameSlider.setMaximum(self.movie.currentFrameNumber())
+            __ movie.frameCount() > 0:
+                frameSlider.setMaximum(movie.frameCount() - 1)
+            ____ movie.currentFrameNumber() > frameSlider.maximum
+                frameSlider.setMaximum(movie.currentFrameNumber())
 
-            self.frameSlider.setValue(self.movie.currentFrameNumber())
+            frameSlider.setValue(movie.currentFrameNumber())
         ____
-            self.frameSlider.setMaximum(0)
+            frameSlider.setMaximum(0)
 
-        self.frameLabel.setEnabled(hasFrames)
-        self.frameSlider.setEnabled(hasFrames)
+        frameLabel.setEnabled(hasFrames)
+        frameSlider.setEnabled(hasFrames)
 
-    ___ updateButtons(self):
-        state _ self.movie.state()
+    ___ updateButtons
+        state _ movie.state()
 
-        self.playButton.setEnabled(self.movie.isValid() and
-                self.movie.frameCount() !_ 1 and state == QMovie.NotRunning)
-        self.pauseButton.setEnabled(state !_ QMovie.NotRunning)
-        self.pauseButton.setChecked(state == QMovie.Paused)
-        self.stopButton.setEnabled(state !_ QMovie.NotRunning)
+        playButton.setEnabled(movie.isValid() and
+                movie.frameCount() !_ 1 and state == QMovie.NotRunning)
+        pauseButton.setEnabled(state !_ QMovie.NotRunning)
+        pauseButton.setChecked(state == QMovie.Paused)
+        stopButton.setEnabled(state !_ QMovie.NotRunning)
 
-    ___ createControls(self):
-        self.fitCheckBox _ QCheckBox("Fit to Window")
+    ___ createControls
+        fitCheckBox _ QCheckBox("Fit to Window")
 
-        self.frameLabel _ QLabel("Current frame:")
+        frameLabel _ QLabel("Current frame:")
 
-        self.frameSlider _ QSlider(__.Horizontal)
-        self.frameSlider.setTickPosition(QSlider.TicksBelow)
-        self.frameSlider.setTickInterval(10)
+        frameSlider _ QSlider(__.Horizontal)
+        frameSlider.setTickPosition(QSlider.TicksBelow)
+        frameSlider.setTickInterval(10)
 
         speedLabel _ QLabel("Speed:")
 
-        self.speedSpinBox _ QSpinBox()
-        self.speedSpinBox.setRange(1, 9999)
-        self.speedSpinBox.setValue(100)
-        self.speedSpinBox.setSuffix("%")
+        speedSpinBox _ QSpinBox()
+        speedSpinBox.setRange(1, 9999)
+        speedSpinBox.setValue(100)
+        speedSpinBox.setSuffix("%")
 
-        self.controlsLayout _ QGridLayout()
-        self.controlsLayout.aW..(self.fitCheckBox, 0, 0, 1, 2)
-        self.controlsLayout.aW..(self.frameLabel, 1, 0)
-        self.controlsLayout.aW..(self.frameSlider, 1, 1, 1, 2)
-        self.controlsLayout.aW..(speedLabel, 2, 0)
-        self.controlsLayout.aW..(self.speedSpinBox, 2, 1)
+        controlsLayout _ QGridLayout()
+        controlsLayout.aW..(fitCheckBox, 0, 0, 1, 2)
+        controlsLayout.aW..(frameLabel, 1, 0)
+        controlsLayout.aW..(frameSlider, 1, 1, 1, 2)
+        controlsLayout.aW..(speedLabel, 2, 0)
+        controlsLayout.aW..(speedSpinBox, 2, 1)
 
-    ___ createButtons(self):
+    ___ createButtons
         iconSize _ QSize(36, 36)
 
         openButton _ QToolButton()
-        openButton.setIcon(self.style().standardIcon(QStyle.SP_DialogOpenButton))
+        openButton.setIcon(style().standardIcon(QStyle.SP_DialogOpenButton))
         openButton.setIconSize(iconSize)
         openButton.setToolTip("Open File")
-        openButton.c__.c..(self.o..)
+        openButton.c__.c..(o..)
 
-        self.playButton _ QToolButton()
-        self.playButton.setIcon(self.style().standardIcon(QStyle.SP_MediaPlay))
-        self.playButton.setIconSize(iconSize)
-        self.playButton.setToolTip("Play")
-        self.playButton.c__.c..(self.movie.start)
+        playButton _ QToolButton()
+        playButton.setIcon(style().standardIcon(QStyle.SP_MediaPlay))
+        playButton.setIconSize(iconSize)
+        playButton.setToolTip("Play")
+        playButton.c__.c..(movie.start)
 
-        self.pauseButton _ QToolButton()
-        self.pauseButton.setCheckable(True)
-        self.pauseButton.setIcon(self.style().standardIcon(QStyle.SP_MediaPause))
-        self.pauseButton.setIconSize(iconSize)
-        self.pauseButton.setToolTip("Pause")
-        self.pauseButton.c__.c..(self.movie.setPaused)
+        pauseButton _ QToolButton()
+        pauseButton.setCheckable(True)
+        pauseButton.setIcon(style().standardIcon(QStyle.SP_MediaPause))
+        pauseButton.setIconSize(iconSize)
+        pauseButton.setToolTip("Pause")
+        pauseButton.c__.c..(movie.setPaused)
 
-        self.stopButton _ QToolButton()
-        self.stopButton.setIcon(self.style().standardIcon(QStyle.SP_MediaStop))
-        self.stopButton.setIconSize(iconSize)
-        self.stopButton.setToolTip("Stop")
-        self.stopButton.c__.c..(self.movie.stop)
+        stopButton _ QToolButton()
+        stopButton.setIcon(style().standardIcon(QStyle.SP_MediaStop))
+        stopButton.setIconSize(iconSize)
+        stopButton.setToolTip("Stop")
+        stopButton.c__.c..(movie.stop)
 
         quitButton _ QToolButton()
-        quitButton.setIcon(self.style().standardIcon(QStyle.SP_DialogCloseButton))
+        quitButton.setIcon(style().standardIcon(QStyle.SP_DialogCloseButton))
         quitButton.setIconSize(iconSize)
         quitButton.setToolTip("Quit")
-        quitButton.c__.c..(self.close)
+        quitButton.c__.c..(close)
 
-        self.buttonsLayout _ QHBoxLayout()
-        self.buttonsLayout.addStretch()
-        self.buttonsLayout.aW..(openButton)
-        self.buttonsLayout.aW..(self.playButton)
-        self.buttonsLayout.aW..(self.pauseButton)
-        self.buttonsLayout.aW..(self.stopButton)
-        self.buttonsLayout.aW..(quitButton)
-        self.buttonsLayout.addStretch()
+        buttonsLayout _ QHBoxLayout()
+        buttonsLayout.addStretch()
+        buttonsLayout.aW..(openButton)
+        buttonsLayout.aW..(playButton)
+        buttonsLayout.aW..(pauseButton)
+        buttonsLayout.aW..(stopButton)
+        buttonsLayout.aW..(quitButton)
+        buttonsLayout.addStretch()
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     player _ MoviePlayer()
     player.s..
     ___.exit(app.exec_())

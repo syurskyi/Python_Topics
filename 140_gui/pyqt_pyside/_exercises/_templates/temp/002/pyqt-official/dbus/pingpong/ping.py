@@ -48,8 +48,8 @@ ____ ?.?C.. ______ QCoreApplication
 ____ ?.QtDBus ______ QDBusConnection, QDBusInterface, QDBusReply
 
 
-__ __name__ == '__main__':
-    app _ QCoreApplication(___.argv)
+__ ______ __ ______
+    app _ QCoreApplication(___.a..
 
     __ no. QDBusConnection.sessionBus().isConnected
         ___.stderr.w..("Cannot connect to the D-Bus session bus.\n"
@@ -61,7 +61,7 @@ __ __name__ == '__main__':
             QDBusConnection.sessionBus())
 
     __ iface.isValid
-        msg _ iface.call('ping', ___.argv[1] __ le.(___.argv) > 1 else "")
+        msg _ iface.call('ping', ___.argv[1] __ le.(___.a.. > 1 else "")
         reply _ QDBusReply(msg)
 
         __ reply.isValid

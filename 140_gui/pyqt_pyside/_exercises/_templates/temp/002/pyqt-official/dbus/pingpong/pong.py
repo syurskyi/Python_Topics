@@ -57,8 +57,8 @@ c_ Pong(QObject):
         r_ "ping(\"%s\") got called" % arg
 
 
-__ __name__ == '__main__':
-    app _ QCoreApplication(___.argv)
+__ ______ __ ______
+    app _ QCoreApplication(___.a..
 
     __ no. QDBusConnection.sessionBus().isConnected
         ___.stderr.w..("Cannot connect to the D-Bus session bus.\n"

@@ -54,19 +54,19 @@ ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsObject,
 c_ ColorItem(QGraphicsItem):
     n _ 0
 
-    ___ __init__(self):
-        super(ColorItem, self).__init__()
+    ___  -
+        super(ColorItem, self). - ()
 
-        self.color _ ?C..(qrand() % 256, qrand() % 256, qrand() % 256)
+        color _ ?C..(qrand() % 256, qrand() % 256, qrand() % 256)
 
-        self.setToolTip(
+        setToolTip(
             "QColor(%d, %d, %d)\nClick and drag this color onto the robot!" % 
-              (self.color.red(), self.color.green(), self.color.blue())
+              (color.red(), color.green(), color.blue())
         )
-        self.setCursor(__.OpenHandCursor)
-        self.setAcceptedMouseButtons(__.LeftButton)
+        setCursor(__.OpenHandCursor)
+        setAcceptedMouseButtons(__.LeftButton)
     
-    ___ boundingRect(self):
+    ___ boundingRect
         r_ QRectF(-15.5, -15.5, 34, 34)
 
     ___ paint  painter, option, widget):
@@ -74,11 +74,11 @@ c_ ColorItem(QGraphicsItem):
         painter.setBrush(__.darkGray)
         painter.drawEllipse(-12, -12, 30, 30)
         painter.setPen(QPen(__.black, 1))
-        painter.setBrush(QBrush(self.color))
+        painter.setBrush(QBrush(color))
         painter.drawEllipse(-15, -15, 30, 30)
 
     ___ mousePressEvent  event):
-        self.setCursor(__.ClosedHandCursor)
+        setCursor(__.ClosedHandCursor)
 
     ___ mouseMoveEvent  event):
         __ QLineF(QPointF(event.screenPos()), QPointF(event.buttonDownScreenPos(__.LeftButton))).length() < ?A...startDragDistance
@@ -97,8 +97,8 @@ c_ ColorItem(QGraphicsItem):
             drag.setPixmap(QPixmap.fromImage(image).scaled(30,40))
             drag.setHotSpot(QPoint(15, 30))
         ____
-            mime.setColorData(self.color)
-            mime.sT..("#%02x%02x%02x" % (self.color.red(), self.color.green(), self.color.blue()))
+            mime.setColorData(color)
+            mime.sT..("#%02x%02x%02x" % (color.red(), color.green(), color.blue()))
 
             pixmap _ QPixmap(34, 34)
             pixmap.fill(__.white)
@@ -106,7 +106,7 @@ c_ ColorItem(QGraphicsItem):
             painter _ QPainter(pixmap)
             painter.translate(15, 15)
             painter.setRenderHint(QPainter.Antialiasing)
-            self.paint(painter, N.., N..)
+            paint(painter, N.., N..)
             painter.end()
 
             pixmap.setMask(pixmap.createHeuristicMask())
@@ -115,53 +115,53 @@ c_ ColorItem(QGraphicsItem):
             drag.setHotSpot(QPoint(15, 20))
 
         drag.e..
-        self.setCursor(__.OpenHandCursor)
+        setCursor(__.OpenHandCursor)
 
     ___ mouseReleaseEvent  event):
-        self.setCursor(__.OpenHandCursor)
+        setCursor(__.OpenHandCursor)
 
 
 c_ RobotPart(QGraphicsObject):
-    ___ __init__  parent_None):
-        super(RobotPart, self).__init__(parent)
+    ___  -   parent_None):
+        super(RobotPart, self). - (parent)
 
-        self.color _ ?C..(__.lightGray)
-        self.dragOver _ False
+        color _ ?C..(__.lightGray)
+        dragOver _ False
 
-        self.setAcceptDrops(True)
+        setAcceptDrops(True)
 
     ___ dragEnterEvent  event):
         __ event.mimeData().hasColor
             event.setAccepted(True)
-            self.dragOver _ True
-            self.update()
+            dragOver _ True
+            update()
         ____
             event.setAccepted F..
 
     ___ dragLeaveEvent  event):
-        self.dragOver _ False
-        self.update()
+        dragOver _ False
+        update()
  
     ___ dropEvent  event):
-        self.dragOver _ False
+        dragOver _ False
         __ event.mimeData().hasColor
-            self.color _ ?C..(event.mimeData().colorData())
+            color _ ?C..(event.mimeData().colorData())
 
-        self.update()
+        update()
 
 
 c_ RobotHead(RobotPart):
-    ___ __init__  parent_None):
-        super(RobotHead, self).__init__(parent)
+    ___  -   parent_None):
+        super(RobotHead, self). - (parent)
 
-        self.pixmap _ QPixmap()
+        pixmap _ QPixmap()
 
-    ___ boundingRect(self):
+    ___ boundingRect
         r_ QRectF(-15, -50, 30, 50)
 
     ___ paint  painter, option, widget_None):
-        __ self.pixmap.isNull
-            painter.setBrush(self.color.lighter(130) __ self.dragOver else self.color)
+        __ pixmap.isNull
+            painter.setBrush(color.lighter(130) __ dragOver else color)
             painter.drawRoundedRect(-10, -30, 20, 30, 25, 25, __.RelativeSize)
             painter.setBrush(__.white)
             painter.drawEllipse(-7, -3 - 20, 7, 7)
@@ -174,31 +174,31 @@ c_ RobotHead(RobotPart):
             painter.drawArc(-6, -2 - 20, 12, 15, 190 * 16, 160 * 16)
         ____
             painter.scale(.2272, .2824)
-            painter.drawPixmap(QPointF(-15*4.4, -50*3.54), self.pixmap)
+            painter.drawPixmap(QPointF(-15*4.4, -50*3.54), pixmap)
 
     ___ dragEnterEvent  event):
         __ event.mimeData().hasImage
             event.setAccepted(True)
-            self.dragOver _ True
-            self.update()
+            dragOver _ True
+            update()
         ____
             super(RobotHead, self).dragEnterEvent(event)
 
     ___ dropEvent  event):
         __ event.mimeData().hasImage
-            self.dragOver _ False
-            self.pixmap _ QPixmap(event.mimeData().imageData())
-            self.update()
+            dragOver _ False
+            pixmap _ QPixmap(event.mimeData().imageData())
+            update()
         ____
             super(RobotHead, self).dropEvent(event)
 
 
 c_ RobotTorso(RobotPart):
-    ___ boundingRect(self):
+    ___ boundingRect
         r_ QRectF(-30, -20, 60, 60)
 
     ___ paint  painter, option, widget_None):
-        painter.setBrush(self.color.lighter(130) __ self.dragOver else self.color)
+        painter.setBrush(color.lighter(130) __ dragOver else color)
         painter.drawRoundedRect(-20, -20, 40, 60, 25, 25, __.RelativeSize)
         painter.drawEllipse(-25, -20, 20, 20)
         painter.drawEllipse(5, -20, 20, 20)
@@ -207,49 +207,49 @@ c_ RobotTorso(RobotPart):
 
 
 c_ RobotLimb(RobotPart):
-    ___ boundingRect(self):
+    ___ boundingRect
         r_ QRectF(-5, -5, 40, 10)
 
     ___ paint  painter, option, widget_None):
-        painter.setBrush(self.color.lighter(130) __ self.dragOver else  self.color)
-        painter.drawRoundedRect(self.boundingRect(), 50, 50, __.RelativeSize)
+        painter.setBrush(color.lighter(130) __ dragOver else  color)
+        painter.drawRoundedRect(boundingRect(), 50, 50, __.RelativeSize)
         painter.drawEllipse(-5, -5, 10, 10)
 
 
 c_ Robot(RobotPart):
-    ___ __init__(self):
-        super(Robot, self).__init__()
+    ___  -
+        super(Robot, self). - ()
 
-        self.setFlag(self.ItemHasNoContents)
+        setFlag(ItemHasNoContents)
 
-        self.torsoItem _ RobotTorso(self)
-        self.headItem _ RobotHead(self.torsoItem)
-        self.upperLeftArmItem _ RobotLimb(self.torsoItem)
-        self.lowerLeftArmItem _ RobotLimb(self.upperLeftArmItem)
-        self.upperRightArmItem _ RobotLimb(self.torsoItem)
-        self.lowerRightArmItem _ RobotLimb(self.upperRightArmItem)
-        self.upperRightLegItem _ RobotLimb(self.torsoItem)
-        self.lowerRightLegItem _ RobotLimb(self.upperRightLegItem)
-        self.upperLeftLegItem _ RobotLimb(self.torsoItem)
-        self.lowerLeftLegItem _ RobotLimb(self.upperLeftLegItem)
+        torsoItem _ RobotTorso
+        headItem _ RobotHead(torsoItem)
+        upperLeftArmItem _ RobotLimb(torsoItem)
+        lowerLeftArmItem _ RobotLimb(upperLeftArmItem)
+        upperRightArmItem _ RobotLimb(torsoItem)
+        lowerRightArmItem _ RobotLimb(upperRightArmItem)
+        upperRightLegItem _ RobotLimb(torsoItem)
+        lowerRightLegItem _ RobotLimb(upperRightLegItem)
+        upperLeftLegItem _ RobotLimb(torsoItem)
+        lowerLeftLegItem _ RobotLimb(upperLeftLegItem)
 
         settings _ (
         #    Item                       Position        Rotation  Scale
         #                                x     y    start    end
-            (self.headItem,              0,  -18,      20,   -20,   1.1),
-            (self.upperLeftArmItem,    -15,  -10,     190,   180,     0),
-            (self.lowerLeftArmItem,     30,    0,      50,    10,     0),
-            (self.upperRightArmItem,    15,  -10,     300,   310,     0),
-            (self.lowerRightArmItem,    30,    0,       0,   -70,     0),
-            (self.upperRightLegItem,    10,   32,      40,   120,     0),
-            (self.lowerRightLegItem,    30,    0,      10,    50,     0),
-            (self.upperLeftLegItem,    -10,   32,     150,    80,     0),
-            (self.lowerLeftLegItem,     30,    0,      70,    10,     0),
-            (self.torsoItem,             0,    0,       5,   -20,     0),
+            (headItem,              0,  -18,      20,   -20,   1.1),
+            (upperLeftArmItem,    -15,  -10,     190,   180,     0),
+            (lowerLeftArmItem,     30,    0,      50,    10,     0),
+            (upperRightArmItem,    15,  -10,     300,   310,     0),
+            (lowerRightArmItem,    30,    0,       0,   -70,     0),
+            (upperRightLegItem,    10,   32,      40,   120,     0),
+            (lowerRightLegItem,    30,    0,      10,    50,     0),
+            (upperLeftLegItem,    -10,   32,     150,    80,     0),
+            (lowerLeftLegItem,     30,    0,      70,    10,     0),
+            (torsoItem,             0,    0,       5,   -20,     0),
         )
 
-        animation _ QParallelAnimationGroup(self)
-        for item, pos_x, pos_y, start_rot, end_rot, scale in settings: 
+        animation _ QParallelAnimationGroup
+        ___ item, pos_x, pos_y, start_rot, end_rot, scale __ settings: 
             item.setPos(pos_x, pos_y)
 
             rot_animation _ QPropertyAnimation(item, b'rotation')
@@ -269,7 +269,7 @@ c_ Robot(RobotPart):
         animation.setLoopCount(-1)
         animation.start()
 
-    ___ boundingRect(self):
+    ___ boundingRect
         r_ QRectF()
 
     ___ paint  painter, option, widget_None):
@@ -287,13 +287,13 @@ __ __name__== '__main__':
     ______ ___
     ______ math
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     qsrand(QTime(0, 0, 0).secsTo(QTime.currentTime()))
 
     scene _ QGraphicsScene(-200, -200, 400, 400)
 
-    for i in range(10):
+    ___ i __ range(10):
         item _ ColorItem()
         angle _ i*6.28 / 10.0
         item.setPos(math.sin(angle)*150, math.cos(angle)*150)

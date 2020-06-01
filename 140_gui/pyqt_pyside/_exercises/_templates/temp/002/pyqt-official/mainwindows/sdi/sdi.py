@@ -55,40 +55,40 @@ c_ MainWindow ?MW..
     sequenceNumber _ 1
     windowList _   # list
 
-    ___ __init__  fileName_None):
-        super(MainWindow, self).__init__()
+    ___  -   fileName_None):
+        super(MainWindow, self). - ()
 
-        self.init()
+        init()
         __ fileName:
-            self.loadFile(fileName)
+            loadFile(fileName)
         ____
-            self.setCurrentFile('')
+            setCurrentFile('')
 
     ___ closeEvent  event):
-        __ self.maybeSave
-            self.writeSettings()
+        __ maybeSave
+            writeSettings()
             event.accept()
         ____
             event.ignore()
 
-    ___ newFile(self):
+    ___ newFile
         other _ MainWindow()
         MainWindow.windowList.ap..(other)
-        other.move(self.x() + 40, self.y() + 40)
+        other.move(x() + 40, y() + 40)
         other.s..
 
-    ___ o..(self):
-        fileName, _ _ ?FD...gOFN..(self)
+    ___ o..
+        fileName, _ _ ?FD...gOFN..
         __ fileName:
-            existing _ self.findMainWindow(fileName)
+            existing _ findMainWindow(fileName)
             __ existing:
                 existing.s..
                 existing.raise_()
                 existing.activateWindow()
                 r_
 
-            __ self.isUntitled and self.textEdit.document().isEmpty() and no. self.isWindowModified
-                self.loadFile(fileName)
+            __ isUntitled and textEdit.document().isEmpty() and no. isWindowModified
+                loadFile(fileName)
             ____
                 other _ MainWindow(fileName)
                 __ other.isUntitled:
@@ -96,146 +96,146 @@ c_ MainWindow ?MW..
                     r_
 
                 MainWindow.windowList.ap..(other)
-                other.move(self.x() + 40, self.y() + 40)
+                other.move(x() + 40, y() + 40)
                 other.s..
 
-    ___ save(self):
-        __ self.isUntitled:
-            r_ self.saveAs()
+    ___ save
+        __ isUntitled:
+            r_ saveAs()
         ____
-            r_ self.saveFile(self.curFile)
+            r_ saveFile(curFile)
 
-    ___ saveAs(self):
+    ___ saveAs
         fileName, _ _ ?FD...getSaveFileName  "Save As",
-                self.curFile)
+                curFile)
         __ no. fileName:
             r_ False
 
-        r_ self.saveFile(fileName)
+        r_ saveFile(fileName)
 
-    ___ about(self):
+    ___ about
         ?MB...about  "About SDI",
                 "The <b>SDI</b> example demonstrates how to write single "
                 "document interface applications using Qt.")
 
-    ___ documentWasModified(self):
-        self.setWindowModified(True)
+    ___ documentWasModified
+        setWindowModified(True)
 
-    ___ init(self):
-        self.setAttribute(__.WA_DeleteOnClose)
-        self.isUntitled _ True
-        self.textEdit _ QTextEdit()
-        self.sCW..(self.textEdit)
+    ___ init
+        setAttribute(__.WA_DeleteOnClose)
+        isUntitled _ True
+        textEdit _ QTextEdit()
+        sCW..(textEdit)
 
-        self.createActions()
-        self.createMenus()
-        self.createToolBars()
-        self.createStatusBar()
+        createActions()
+        createMenus()
+        createToolBars()
+        createStatusBar()
 
-        self.readSettings()
+        readSettings()
 
-        self.textEdit.document().contentsChanged.c..(self.documentWasModified)
+        textEdit.document().contentsChanged.c..(documentWasModified)
 
-    ___ createActions(self):
-        self.newAct _ ?A..(QIcon(':/images/new.png'), "&New", self,
+    ___ createActions
+        newAct _ ?A..(QIcon(':/images/new.png'), "&New", self,
                 shortcut_QKeySequence.New, statusTip_"Create a new file",
                 triggered_self.newFile)
 
-        self.openAct _ ?A..(QIcon(':/images/open.png'), "&Open...", self,
+        openAct _ ?A..(QIcon(':/images/open.png'), "&Open...", self,
                 shortcut_QKeySequence.Open, statusTip_"Open an existing file",
                 triggered_self.o..)
 
-        self.saveAct _ ?A..(QIcon(':/images/save.png'), "&Save", self,
+        saveAct _ ?A..(QIcon(':/images/save.png'), "&Save", self,
                 shortcut_QKeySequence.Save,
                 statusTip_"Save the document to disk", triggered_self.save)
 
-        self.saveAsAct _ ?A..("Save &As...", self,
+        saveAsAct _ ?A..("Save &As...", self,
                 shortcut_QKeySequence.SaveAs,
                 statusTip_"Save the document under a new name",
                 triggered_self.saveAs)
 
-        self.closeAct _ ?A..("&Close", self, shortcut_"Ctrl+W",
+        closeAct _ ?A..("&Close", self, shortcut_"Ctrl+W",
                 statusTip_"Close this window", triggered_self.close)
 
-        self.exitAct _ ?A..("E&xit", self, shortcut_"Ctrl+Q",
+        exitAct _ ?A..("E&xit", self, shortcut_"Ctrl+Q",
                 statusTip_"Exit the application",
                 triggered_QApplication.instance().closeAllWindows)
 
-        self.cutAct _ ?A..(QIcon(':/images/cut.png'), "Cu&t", self,
+        cutAct _ ?A..(QIcon(':/images/cut.png'), "Cu&t", self,
                 enabled_False, shortcut_QKeySequence.Cut,
                 statusTip_"Cut the current selection's contents to the clipboard",
                 triggered_self.textEdit.cut)
 
-        self.copyAct _ ?A..(QIcon(':/images/copy.png'), "&Copy", self,
+        copyAct _ ?A..(QIcon(':/images/copy.png'), "&Copy", self,
                 enabled_False, shortcut_QKeySequence.Copy,
                 statusTip_"Copy the current selection's contents to the clipboard",
                 triggered_self.textEdit.copy)
 
-        self.pasteAct _ ?A..(QIcon(':/images/paste.png'), "&Paste", self,
+        pasteAct _ ?A..(QIcon(':/images/paste.png'), "&Paste", self,
                 shortcut_QKeySequence.Paste,
                 statusTip_"Paste the clipboard's contents into the current selection",
                 triggered_self.textEdit.paste)
 
-        self.aboutAct _ ?A..("&About", self,
+        aboutAct _ ?A..("&About", self,
                 statusTip_"Show the application's About box",
                 triggered_self.about)
 
-        self.aboutQtAct _ ?A..("About &Qt", self,
+        aboutQtAct _ ?A..("About &Qt", self,
                 statusTip_"Show the Qt library's About box",
                 triggered_QApplication.instance().aboutQt)
 
-        self.textEdit.copyAvailable.c..(self.cutAct.setEnabled)
-        self.textEdit.copyAvailable.c..(self.copyAct.setEnabled)
+        textEdit.copyAvailable.c..(cutAct.setEnabled)
+        textEdit.copyAvailable.c..(copyAct.setEnabled)
 
-    ___ createMenus(self):
-        self.fileMenu _ self.mB.. .aM..("&File")
-        self.fileMenu.aA..(self.newAct)
-        self.fileMenu.aA..(self.openAct)
-        self.fileMenu.aA..(self.saveAct)
-        self.fileMenu.aA..(self.saveAsAct)
-        self.fileMenu.addSeparator()
-        self.fileMenu.aA..(self.closeAct)
-        self.fileMenu.aA..(self.exitAct)
+    ___ createMenus
+        fileMenu _ mB.. .aM..("&File")
+        fileMenu.aA..(newAct)
+        fileMenu.aA..(openAct)
+        fileMenu.aA..(saveAct)
+        fileMenu.aA..(saveAsAct)
+        fileMenu.addSeparator()
+        fileMenu.aA..(closeAct)
+        fileMenu.aA..(exitAct)
 
-        self.editMenu _ self.mB.. .aM..("&Edit")
-        self.editMenu.aA..(self.cutAct)
-        self.editMenu.aA..(self.copyAct)
-        self.editMenu.aA..(self.pasteAct)
+        editMenu _ mB.. .aM..("&Edit")
+        editMenu.aA..(cutAct)
+        editMenu.aA..(copyAct)
+        editMenu.aA..(pasteAct)
 
-        self.mB.. .addSeparator()
+        mB.. .addSeparator()
 
-        self.helpMenu _ self.mB.. .aM..("&Help")
-        self.helpMenu.aA..(self.aboutAct)
-        self.helpMenu.aA..(self.aboutQtAct)
+        helpMenu _ mB.. .aM..("&Help")
+        helpMenu.aA..(aboutAct)
+        helpMenu.aA..(aboutQtAct)
 
-    ___ createToolBars(self):
-        self.fileToolBar _ self.addToolBar("File")
-        self.fileToolBar.aA..(self.newAct)
-        self.fileToolBar.aA..(self.openAct)
-        self.fileToolBar.aA..(self.saveAct)
+    ___ createToolBars
+        fileToolBar _ addToolBar("File")
+        fileToolBar.aA..(newAct)
+        fileToolBar.aA..(openAct)
+        fileToolBar.aA..(saveAct)
 
-        self.editToolBar _ self.addToolBar("Edit")
-        self.editToolBar.aA..(self.cutAct)
-        self.editToolBar.aA..(self.copyAct)
-        self.editToolBar.aA..(self.pasteAct)
+        editToolBar _ addToolBar("Edit")
+        editToolBar.aA..(cutAct)
+        editToolBar.aA..(copyAct)
+        editToolBar.aA..(pasteAct)
 
-    ___ createStatusBar(self):
-        self.statusBar().showMessage("Ready")
+    ___ createStatusBar
+        statusBar().showMessage("Ready")
 
-    ___ readSettings(self):
+    ___ readSettings
         settings _ QSettings('Trolltech', 'SDI Example')
         pos _ settings.value('pos', QPoint(200, 200))
         size _ settings.value('size', QSize(400, 400))
-        self.move(pos)
-        self.resize(size)
+        move(pos)
+        resize(size)
 
-    ___ writeSettings(self):
+    ___ writeSettings
         settings _ QSettings('Trolltech', 'SDI Example')
-        settings.setValue('pos', self.pos())
-        settings.setValue('size', self.size())
+        settings.setValue('pos', pos())
+        settings.setValue('size', size())
 
-    ___ maybeSave(self):
-        __ self.textEdit.document().iM..
+    ___ maybeSave
+        __ textEdit.document().iM..
             ret _ ?MB...warning  "SDI",
                     "The document has been modified.\nDo you want to save "
                     "your changes?",
@@ -243,7 +243,7 @@ c_ MainWindow ?MW..
                     ?MB...Cancel)
 
             __ ret == ?MB...Save:
-                r_ self.save()
+                r_ save()
 
             __ ret == ?MB...Cancel:
                 r_ False
@@ -259,11 +259,11 @@ c_ MainWindow ?MW..
 
         instr _ QTextStream(file)
         ?A...setOverrideCursor(__.WaitCursor)
-        self.textEdit.sPT..(instr.readAll())
+        textEdit.sPT..(instr.readAll())
         ?A...restoreOverrideCursor()
 
-        self.setCurrentFile(fileName)
-        self.statusBar().showMessage("File loaded", 2000)
+        setCurrentFile(fileName)
+        statusBar().showMessage("File loaded", 2000)
 
     ___ saveFile  fileName):
         file _ QFile(fileName)
@@ -274,25 +274,25 @@ c_ MainWindow ?MW..
 
         outstr _ QTextStream(file)
         ?A...setOverrideCursor(__.WaitCursor)
-        outstr << self.textEdit.toPlainText()
+        outstr << textEdit.toPlainText()
         ?A...restoreOverrideCursor()
 
-        self.setCurrentFile(fileName)
-        self.statusBar().showMessage("File saved", 2000)
+        setCurrentFile(fileName)
+        statusBar().showMessage("File saved", 2000)
         r_ True
 
     ___ setCurrentFile  fileName):
-        self.isUntitled _ no. fileName
-        __ self.isUntitled:
-            self.curFile _ "document%d.txt" % MainWindow.sequenceNumber
+        isUntitled _ no. fileName
+        __ isUntitled:
+            curFile _ "document%d.txt" % MainWindow.sequenceNumber
             MainWindow.sequenceNumber +_ 1
         ____
-            self.curFile _ QFileInfo(fileName).canonicalFilePath()
+            curFile _ QFileInfo(fileName).canonicalFilePath()
 
-        self.textEdit.document().setModified F..
-        self.setWindowModified F..
+        textEdit.document().setModified F..
+        setWindowModified F..
 
-        self.setWindowTitle("%s[*] - SDI" % self.strippedName(self.curFile))
+        setWindowTitle("%s[*] - SDI" % strippedName(curFile))
 
     ___ strippedName  fullFileName):
         r_ QFileInfo(fullFileName).fileName()
@@ -300,18 +300,18 @@ c_ MainWindow ?MW..
     ___ findMainWindow  fileName):
         canonicalFilePath _ QFileInfo(fileName).canonicalFilePath()
 
-        for widget in ?A...instance().topLevelWidgets
+        ___ widget __ ?A...instance().topLevelWidgets
             __ isinstance(widget, MainWindow) and widget.curFile == canonicalFilePath:
                 r_ widget
 
         r_ N..
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     mainWin _ MainWindow()
     mainWin.s..
     ___.exit(app.exec_())

@@ -48,19 +48,19 @@ ____ pieslice ______ PieSlice
 c_ PieChart(QQuickItem):
 
     @pyqtProperty(QQmlListProperty)
-    ___ slices(self):
+    ___ slices 
         r_ QQmlListProperty(PieSlice, self,
                 append_lambda pie_ch, pie_sl: pie_sl.setParentItem(pie_ch))
 
     @pyqtProperty(str)
-    ___ name(self):
-        r_ self._name
+    ___ name 
+        r_ _name
 
     @name.setter
     ___ name  name):
-        self._name _ name
+        _name _ name
 
-    ___ __init__  parent_None):
-        super(PieChart, self).__init__(parent)
+    ___  -   parent_None):
+        super(PieChart, self). - (parent)
 
-        self._name _ ''
+        _name _ ''

@@ -22,95 +22,95 @@ c_ DateDelegate(qtw.QStyledItemDelegate):
         r_ date_inp
 
 
-c_ CoffeeForm(qtw.QWidget):
+c_ CoffeeForm ?.?W..
     """Form to display/edit all info about a coffee"""
 
-    ___ __init__  coffees_model, reviews_model):
-        super().__init__()
-        self.sL..(qtw.QFormLayout())
+    ___  -   coffees_model, reviews_model):
+        s_. - ()
+        sL..(qtw.QFormLayout())
 
         # Coffee Fields
-        self.coffee_brand _ qtw.?LE..
-        self.layout().addRow('Brand: ', self.coffee_brand)
-        self.coffee_name _ qtw.?LE..
-        self.layout().addRow('Name: ', self.coffee_name)
-        self.roast _ qtw.QComboBox()
-        self.layout().addRow('Roast: ', self.roast)
+        coffee_brand _ qtw.?LE..
+        layout().addRow('Brand: ', coffee_brand)
+        coffee_name _ qtw.?LE..
+        layout().addRow('Name: ', coffee_name)
+        roast _ qtw.QComboBox()
+        layout().addRow('Roast: ', roast)
 
         # Map the coffee fields
-        self.coffees_model _ coffees_model
-        self.mapper _ qtw.QDataWidgetMapper(self)
-        self.mapper.sM..(self.coffees_model)
-        self.mapper.setItemDelegate(
+        coffees_model _ coffees_model
+        mapper _ qtw.QDataWidgetMapper
+        mapper.sM..(coffees_model)
+        mapper.setItemDelegate(
             qts.QSqlRelationalDelegate(self))
-        self.mapper.addMapping(
-            self.coffee_brand,
-            self.coffees_model.fieldIndex('coffee_brand')
+        mapper.addMapping(
+            coffee_brand,
+            coffees_model.fieldIndex('coffee_brand')
         )
-        self.mapper.addMapping(
-            self.coffee_name,
-            self.coffees_model.fieldIndex('coffee_name')
+        mapper.addMapping(
+            coffee_name,
+            coffees_model.fieldIndex('coffee_name')
         )
-        self.mapper.addMapping(
-            self.roast,
-            self.coffees_model.fieldIndex('description')
+        mapper.addMapping(
+            roast,
+            coffees_model.fieldIndex('description')
         )
         # retrieve a model for the roasts and setup the combo box
         roasts_model _ coffees_model.relationModel(
-            self.coffees_model.fieldIndex('description'))
-        self.roast.sM..(roasts_model)
-        self.roast.setModelColumn(1)
+            coffees_model.fieldIndex('description'))
+        roast.sM..(roasts_model)
+        roast.setModelColumn(1)
         # Cause data to be written when changed
 
         # Reviews
-        self.reviews _ qtw.QTableView()
-        self.layout().addRow(self.reviews)
-        self.reviews.sM..(reviews_model)
-        self.reviews.hideColumn(0)
-        self.reviews.hideColumn(1)
-        self.reviews.horizontalHeader().setSectionResizeMode(
+        reviews _ qtw.QTableView()
+        layout().addRow(reviews)
+        reviews.sM..(reviews_model)
+        reviews.hideColumn(0)
+        reviews.hideColumn(1)
+        reviews.horizontalHeader().setSectionResizeMode(
             4, qtw.QHeaderView.Stretch)
 
 
         # Using a custom delegate
-        self.dateDelegate _ DateDelegate()
-        self.reviews.setItemDelegateForColumn(
+        dateDelegate _ DateDelegate()
+        reviews.setItemDelegateForColumn(
             reviews_model.fieldIndex('review_date'),
-            self.dateDelegate)
+            dateDelegate)
 
         # add and delete reviews
-        self.new_review _ qtw.?PB..(
+        new_review _ qtw.?PB..(
             'New Review', c___self.add_review)
-        self.delete_review _ qtw.?PB..(
+        delete_review _ qtw.?PB..(
             'Delete Review', c___self.delete_review)
-        self.layout().addRow(self.new_review, self.delete_review)
+        layout().addRow(new_review, delete_review)
 
     ___ show_coffee  coffee_index):
-        self.mapper.setCurrentIndex(coffee_index.row())
+        mapper.setCurrentIndex(coffee_index.row())
         # show the reviews
         id_index _ coffee_index.siblingAtColumn(0)
-        self.coffee_id _ int(self.coffees_model.data(id_index))
-        self.reviews.model().setFilter(f'coffee_id = {self.coffee_id}')
-        self.reviews.model().setSort(3, qtc.__.DescendingOrder)
-        self.reviews.model().select()
-        self.reviews.resizeRowsToContents()
-        self.reviews.resizeColumnsToContents()
+        coffee_id _ int(coffees_model.data(id_index))
+        reviews.model().setFilter(f'coffee_id = {coffee_id}')
+        reviews.model().setSort(3, qtc.__.DescendingOrder)
+        reviews.model().select()
+        reviews.resizeRowsToContents()
+        reviews.resizeColumnsToContents()
 
-    ___ delete_review(self):
-        for index in self.reviews.selectedIndexes() or   # list:
-            self.reviews.model().removeRow(index.row())
-        self.reviews.model().select()
+    ___ delete_review 
+        ___ index __ reviews.selectedIndexes() or   # list:
+            reviews.model().removeRow(index.row())
+        reviews.model().select()
 
-    ___ add_review(self):
-        reviews_model _ self.reviews.model()
+    ___ add_review 
+        reviews_model _ reviews.model()
         new_row _ reviews_model.record()
         defaults _ {
-            'coffee_id': self.coffee_id,
+            'coffee_id': coffee_id,
             'review_date': qtc.QDate.currentDate(),
             'reviewer': '',
             'review': ''
         }
-        for field, value in defaults.items
+        ___ field, value __ defaults.items
             index _ reviews_model.fieldIndex(field)
             new_row.setValue(index, value)
         inserted _ reviews_model.insertRecord(-1, new_row)
@@ -123,16 +123,16 @@ c_ CoffeeForm(qtw.QWidget):
 
 c_ MainWindow(qtw.QMainWindow):
 
-    ___ __init__(self):
+    ___  -
         """MainWindow constructor.
 
         Code in this method should define window properties,
         create backend resources, etc.
         """
-        super().__init__()
+        s_. - ()
         # Code starts here
-        self.stack _ qtw.QStackedWidget()
-        self.sCW..(self.stack)
+        stack _ qtw.QStackedWidget()
+        sCW..(stack)
         # Connect to the database
         db _ qts.?SD...aD..('QSQLITE')
         db.sDN..('coffee.db')
@@ -154,71 +154,71 @@ c_ MainWindow(qtw.QMainWindow):
             ___.exit(1)
 
         # Create the models
-        self.reviews_model _ qts.?STM..()
-        self.reviews_model.setTable('reviews')
+        reviews_model _ qts.?STM..()
+        reviews_model.setTable('reviews')
 
-        self.coffees_model _ qts.QSqlRelationalTableModel()
-        self.coffees_model.setTable('coffees')
-        self.coffees_model.setRelation(
-            self.coffees_model.fieldIndex('roast_id'),
+        coffees_model _ qts.QSqlRelationalTableModel()
+        coffees_model.setTable('coffees')
+        coffees_model.setRelation(
+            coffees_model.fieldIndex('roast_id'),
             qts.QSqlRelation('roasts', 'id', 'description')
         )
-        self.coffees_model.setEditStrategy(0)
-        self.coffees_model.dataChanged.c..(print)
-        self.coffee_list _ qtw.QTableView()
-        self.coffee_list.sM..(self.coffees_model)
-        self.stack.aW..(self.coffee_list)
+        coffees_model.setEditStrategy(0)
+        coffees_model.dataChanged.c..(print)
+        coffee_list _ qtw.QTableView()
+        coffee_list.sM..(coffees_model)
+        stack.aW..(coffee_list)
 
-        self.coffees_model.select()
+        coffees_model.select()
         #self.show()
         #return
-        self.show_list()
+        show_list()
 
         # Inserting and deleting rows.
-        toolbar _ self.addToolBar('Controls')
-        toolbar.aA..('Delete Coffee(s)', self.delete_coffee)
-        toolbar.aA..('Add Coffee', self.add_coffee)
+        toolbar _ addToolBar('Controls')
+        toolbar.aA..('Delete Coffee(s)', delete_coffee)
+        toolbar.aA..('Add Coffee', add_coffee)
 
-        self.coffee_list.setItemDelegate(qts.QSqlRelationalDelegate())
+        coffee_list.setItemDelegate(qts.QSqlRelationalDelegate())
 
         #self.show()
         #return
 
         # The coffee form
-        self.coffee_form _ CoffeeForm(
-            self.coffees_model,
-            self.reviews_model
+        coffee_form _ CoffeeForm(
+            coffees_model,
+            reviews_model
         )
-        self.stack.aW..(self.coffee_form)
-        self.coffee_list.doubleClicked.c..(
-            self.coffee_form.show_coffee)
-        self.coffee_list.doubleClicked.c..(
-            lambda: self.stack.setCurrentWidget(self.coffee_form))
+        stack.aW..(coffee_form)
+        coffee_list.doubleClicked.c..(
+            coffee_form.show_coffee)
+        coffee_list.doubleClicked.c..(
+            lambda: stack.setCurrentWidget(coffee_form))
 
-        toolbar.aA..("Back to list", self.show_list)
+        toolbar.aA..("Back to list", show_list)
 
         # Code ends here
-        self.s..
+        s..
 
-    ___ delete_coffee(self):
-        selected _ self.coffee_list.selectedIndexes()
-        for index in selected or   # list:
-            self.coffees_model.removeRow(index.row())
-        self.coffees_model.select()
+    ___ delete_coffee 
+        selected _ coffee_list.selectedIndexes()
+        ___ index __ selected or   # list:
+            coffees_model.removeRow(index.row())
+        coffees_model.select()
 
-    ___ add_coffee(self):
-        self.stack.setCurrentWidget(self.coffee_list)
-        self.coffees_model.insertRows(
-            self.coffees_model.rowCount(), 1)
+    ___ add_coffee 
+        stack.setCurrentWidget(coffee_list)
+        coffees_model.insertRows(
+            coffees_model.rowCount(), 1)
 
-    ___ show_list(self):
-        self.coffee_list.resizeColumnsToContents()
-        self.coffee_list.resizeRowsToContents()
-        self.stack.setCurrentWidget(self.coffee_list)
+    ___ show_list 
+        coffee_list.resizeColumnsToContents()
+        coffee_list.resizeRowsToContents()
+        stack.setCurrentWidget(coffee_list)
 
 
-__ __name__ == '__main__':
-    app _ qtw.?A..(___.argv)
+__ ______ __ ______
+    app _ qtw.?A..(___.a..
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()

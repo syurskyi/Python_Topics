@@ -49,49 +49,49 @@ ____ ?.QtNetwork ______ QHostAddress, QUdpSocket
 
 
 c_ Sender(QDialog):
-    ___ __init__  parent_None):
-        super(Sender, self).__init__(parent)
+    ___  -   parent_None):
+        super(Sender, self). - (parent)
 
-        self.statusLabel _ QLabel("Ready to broadcast datagrams on port 45454")
+        statusLabel _ QLabel("Ready to broadcast datagrams on port 45454")
 
-        self.startButton _ ?PB..("&Start")
+        startButton _ ?PB..("&Start")
         quitButton _ ?PB..("&Quit")
 
         buttonBox _ QDialogButtonBox()
-        buttonBox.addButton(self.startButton, QDialogButtonBox.ActionRole)
+        buttonBox.addButton(startButton, QDialogButtonBox.ActionRole)
         buttonBox.addButton(quitButton, QDialogButtonBox.RejectRole)
 
-        self.timer _ QTimer(self)
-        self.udpSocket _ QUdpSocket(self)
-        self.messageNo _ 1
+        timer _ QTimer
+        udpSocket _ QUdpSocket
+        messageNo _ 1
 
-        self.startButton.c__.c..(self.startBroadcasting)
-        quitButton.c__.c..(self.close)
-        self.timer.timeout.c..(self.broadcastDatagramm)
+        startButton.c__.c..(startBroadcasting)
+        quitButton.c__.c..(close)
+        timer.timeout.c..(broadcastDatagramm)
 
         mainLayout _ ?VBL..
-        mainLayout.aW..(self.statusLabel)
+        mainLayout.aW..(statusLabel)
         mainLayout.aW..(buttonBox)
-        self.sL..(mainLayout)
+        sL..(mainLayout)
 
-        self.setWindowTitle("Broadcast Sender")
+        setWindowTitle("Broadcast Sender")
 
-    ___ startBroadcasting(self):
-        self.startButton.setEnabled F..
-        self.timer.start(1000)
+    ___ startBroadcasting 
+        startButton.setEnabled F..
+        timer.start(1000)
 
-    ___ broadcastDatagramm(self):
-        self.statusLabel.sT..("Now broadcasting datagram %d" % self.messageNo)
-        datagram _ "Broadcast message %d" % self.messageNo
-        self.udpSocket.writeDatagram(datagram, QHostAddress(QHostAddress.Broadcast), 45454)
-        self.messageNo +_ 1
+    ___ broadcastDatagramm 
+        statusLabel.sT..("Now broadcasting datagram %d" % messageNo)
+        datagram _ "Broadcast message %d" % messageNo
+        udpSocket.writeDatagram(datagram, QHostAddress(QHostAddress.Broadcast), 45454)
+        messageNo +_ 1
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     sender _ Sender()
     sender.s..
     ___.exit(sender.exec_())

@@ -54,23 +54,23 @@ ______ states_rc
 
 
 c_ Pixmap(QGraphicsObject):
-    ___ __init__  pix):
-        super(Pixmap, self).__init__()
+    ___  -   pix):
+        super(Pixmap, self). - ()
 
-        self.p _ QPixmap(pix)
+        p _ QPixmap(pix)
 
     ___ paint  painter, option, widget):
-        painter.drawPixmap(QPointF(), self.p)
+        painter.drawPixmap(QPointF(), p)
 
-    ___ boundingRect(self):
-        r_ QRectF(QPointF(0, 0), QSizeF(self.p.size()))
+    ___ boundingRect
+        r_ QRectF(QPointF(0, 0), QSizeF(p.size()))
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     # Text edit and button.
     edit _ QTextEdit()

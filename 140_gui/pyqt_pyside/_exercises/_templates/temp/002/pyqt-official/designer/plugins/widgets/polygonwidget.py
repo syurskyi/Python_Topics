@@ -37,147 +37,147 @@ c_ PolygonWidget(QWidget):
     that can be used to customize its appearance.
     """
     
-    ___ __init__  parent_None):
+    ___  -   parent_None):
     
-        super(PolygonWidget, self).__init__(parent)
+        super(PolygonWidget, self). - (parent)
         
-        self._sides _ 5
-        self._innerRadius _ 20
-        self._outerRadius _ 50
-        self._angle _ 0
+        _sides _ 5
+        _innerRadius _ 20
+        _outerRadius _ 50
+        _angle _ 0
         
-        self.createPath()
+        createPath()
         
-        self._innerColor _ ?C..(255, 255, 128)
-        self._outerColor _ ?C..(255, 0, 128)
+        _innerColor _ ?C..(255, 255, 128)
+        _outerColor _ ?C..(255, 0, 128)
         
-        self.createGradient()
+        createGradient()
     
     ___ paintEvent  event):
     
         painter _ QPainter()
-        painter.begin(self)
+        painter.begin
         painter.setRenderHint(QPainter.Antialiasing)
         painter.setBrush(QBrush(?C..(192, 192, 255)))
         painter.drawRect(event.rect())
         
-        painter.translate(self.width()/2.0, self.height()/2.0)
-        painter.rotate(self._angle)
-        painter.setBrush(QBrush(self.gradient))
-        painter.drawPath(self.path)
+        painter.translate(width()/2.0, height()/2.0)
+        painter.rotate(_angle)
+        painter.setBrush(QBrush(gradient))
+        painter.drawPath(path)
         painter.end()
     
-    ___ sizeHint(self):
+    ___ sizeHint
     
-        r_ QSize(2*self._outerRadius + 20, 2*self._outerRadius + 20)
+        r_ QSize(2*_outerRadius + 20, 2*_outerRadius + 20)
     
-    ___ createPath(self):
+    ___ createPath
     
-        self.path _ QPainterPath()
-        angle _ 2*math.pi/self._sides
-        self.path.moveTo(self._outerRadius, 0)
-        for step in range(1, self._sides + 1):
-            self.path.lineTo(
-                self._innerRadius * math.cos((step - 0.5) * angle),
-                self._innerRadius * math.sin((step - 0.5) * angle)
+        path _ QPainterPath()
+        angle _ 2*math.pi/_sides
+        path.moveTo(_outerRadius, 0)
+        ___ step __ range(1, _sides + 1):
+            path.lineTo(
+                _innerRadius * math.cos((step - 0.5) * angle),
+                _innerRadius * math.sin((step - 0.5) * angle)
                 )
-            self.path.lineTo(
-                self._outerRadius * math.cos(step * angle),
-                self._outerRadius * math.sin(step * angle)
+            path.lineTo(
+                _outerRadius * math.cos(step * angle),
+                _outerRadius * math.sin(step * angle)
                 )
-        self.path.closeSubpath()
+        path.closeSubpath()
     
-    ___ createGradient(self):
+    ___ createGradient
     
         center _ QPointF(0, 0)
-        self.gradient _ QRadialGradient(center, self._outerRadius, center)
-        self.gradient.setColorAt(0.5, ?C..(self._innerColor))
-        self.gradient.setColorAt(1.0, ?C..(self._outerColor))
+        gradient _ QRadialGradient(center, _outerRadius, center)
+        gradient.setColorAt(0.5, ?C..(_innerColor))
+        gradient.setColorAt(1.0, ?C..(_outerColor))
     
     # The angle property is implemented using the getAngle() and setAngle()
     # methods.
     
-    ___ getAngle(self):
-        r_ self._angle
+    ___ getAngle
+        r_ _angle
     
     # The setAngle() setter method is also a slot.
     @pyqtSlot(int)
     ___ setAngle  angle):
-        self._angle _ min(max(0, angle), 360)
-        self.update()
+        _angle _ min(max(0, angle), 360)
+        update()
     
     angle _ pyqtProperty(int, getAngle, setAngle)
     
     # The innerRadius property is implemented using the getInnerRadius() and
     # setInnerRadius() methods.
     
-    ___ getInnerRadius(self):
-        r_ self._innerRadius
+    ___ getInnerRadius
+        r_ _innerRadius
     
     # The setInnerRadius() setter method is also a slot.
     @pyqtSlot(int)
     ___ setInnerRadius  radius):
-        self._innerRadius _ radius
-        self.createPath()
-        self.createGradient()
-        self.update()
+        _innerRadius _ radius
+        createPath()
+        createGradient()
+        update()
     
     innerRadius _ pyqtProperty(int, getInnerRadius, setInnerRadius)
     
     # The outerRadius property is implemented using the getOuterRadius() and
     # setOuterRadius() methods.
     
-    ___ getOuterRadius(self):
-        r_ self._outerRadius
+    ___ getOuterRadius
+        r_ _outerRadius
     
     # The setOuterRadius() setter method is also a slot.
     @pyqtSlot(int)
     ___ setOuterRadius  radius):
-        self._outerRadius _ radius
-        self.createPath()
-        self.createGradient()
-        self.update()
+        _outerRadius _ radius
+        createPath()
+        createGradient()
+        update()
     
     outerRadius _ pyqtProperty(int, getOuterRadius, setOuterRadius)
     
     # The numberOfSides property is implemented using the getNumberOfSides()
     # and setNumberOfSides() methods.
     
-    ___ getNumberOfSides(self):
-        r_ self._sides
+    ___ getNumberOfSides
+        r_ _sides
     
     # The setNumberOfSides() setter method is also a slot.
     @pyqtSlot(int)
     ___ setNumberOfSides  sides):
-        self._sides _ max(3, sides)
-        self.createPath()
-        self.update()
+        _sides _ max(3, sides)
+        createPath()
+        update()
     
     numberOfSides _ pyqtProperty(int, getNumberOfSides, setNumberOfSides)
     
     # The innerColor property is implemented using the getInnerColor() and
     # setInnerColor() methods.
     
-    ___ getInnerColor(self):
-        r_ self._innerColor
+    ___ getInnerColor
+        r_ _innerColor
     
     ___ setInnerColor  color):
-        self._innerColor _ max(3, color)
-        self.createGradient()
-        self.update()
+        _innerColor _ max(3, color)
+        createGradient()
+        update()
     
     innerColor _ pyqtProperty(?C.., getInnerColor, setInnerColor)
     
     # The outerColor property is implemented using the getOuterColor() and
     # setOuterColor() methods.
     
-    ___ getOuterColor(self):
-        r_ self._outerColor
+    ___ getOuterColor
+        r_ _outerColor
     
     ___ setOuterColor  color):
-        self._outerColor _ color
-        self.createGradient()
-        self.update()
+        _outerColor _ color
+        createGradient()
+        update()
     
     outerColor _ pyqtProperty(?C.., getOuterColor, setOuterColor)
 
@@ -186,7 +186,7 @@ __ __name__ == "__main__":
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     window _ PolygonWidget()
     window.s..
     ___.exit(app.exec_())

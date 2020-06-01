@@ -7,31 +7,31 @@ ____ ? ______ ?C.. __ qtc
 c_ SettingsDialog(qtw.QDialog):
     """Dialog for setting the settings"""
 
-    ___ __init__  settings, parent_None):
-        super().__init__(parent, modal_True)
-        self.sL..(qtw.QFormLayout())
-        self.settings _ settings
-        self.layout().addRow(
+    ___  -   settings, parent_None):
+        s_. - (parent, modal_True)
+        sL..(qtw.QFormLayout())
+        settings _ settings
+        layout().addRow(
             qtw.QLabel('<h1>Application Settings</h1>'),
         )
-        self.show_warnings_cb _ qtw.QCheckBox(
+        show_warnings_cb _ qtw.QCheckBox(
             #checked=settings.get('show_warnings')
             checked_settings.value('show_warnings', type_bool)
         )
-        self.layout().addRow("Show Warnings", self.show_warnings_cb)
+        layout().addRow("Show Warnings", show_warnings_cb)
 
-        self.accept_btn _ qtw.?PB..('Ok', c___self.accept)
-        self.cancel_btn _ qtw.?PB..('Cancel', c___self.reject)
-        self.layout().addRow(self.accept_btn, self.cancel_btn)
+        accept_btn _ qtw.?PB..('Ok', c___self.accept)
+        cancel_btn _ qtw.?PB..('Cancel', c___self.reject)
+        layout().addRow(accept_btn, cancel_btn)
 
-    ___ accept(self):
+    ___ accept
         #self.settings['show_warnings'] = self.show_warnings_cb.isChecked()
-        self.settings.setValue(
+        settings.setValue(
             'show_warnings',
-            self.show_warnings_cb.isChecked()
+            show_warnings_cb.isChecked()
         )
-        print(self.settings.value('show_warnings'))
-        super().accept()
+        print(settings.value('show_warnings'))
+        s_.accept()
 
 
 c_ MainWindow(qtw.QMainWindow): # change to mainwindow
@@ -39,20 +39,20 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
     #settings = {'show_warnings': True}
     settings _ qtc.QSettings('Alan D Moore', 'text editor')
 
-    ___ __init__(self):
+    ___  - 
         """MainWindow constructor.
 
         This widget will be our main window.
         We'll define all the UI components in here.
         """
-        super().__init__()
+        s_. - ()
         # Main UI code goes here
 
         ######################
         # The central widget #
         ######################
-        self.textedit _ qtw.QTextEdit()
-        self.sCW..(self.textedit)
+        textedit _ qtw.QTextEdit()
+        sCW..(textedit)
 
         #################
         # The Statusbar #
@@ -64,22 +64,22 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
         #status_bar.showMessage('Welcome to text_editor.py')
 
         # The short way 'round
-        self.statusBar().showMessage('Welcome to text_editor.py')
+        statusBar().showMessage('Welcome to text_editor.py')
 
         # add widgets to statusbar
         charcount_label _ qtw.QLabel("chars: 0")
-        self.textedit.textChanged.c..(
+        textedit.textChanged.c..(
             lambda: charcount_label.sT..(
                 "chars: " +
-                str(le.(self.textedit.toPlainText()))
+                str(le.(textedit.toPlainText()))
                 )
             )
-        self.statusBar().addPermanentWidget(charcount_label)
+        statusBar().addPermanentWidget(charcount_label)
 
         ###############j
         # The menubar #
         ###############
-        menubar _ self.mB..
+        menubar _ mB..
 
         # add submenus to a menu
         file_menu _ menubar.aM..('File')
@@ -94,22 +94,22 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
         file_menu.addSeparator()
 
         # add an action with a callback
-        quit_action _ file_menu.aA..('Quit', self.destroy)
+        quit_action _ file_menu.aA..('Quit', destroy)
 
         # connect to a Qt Slot
-        edit_menu.aA..('Undo', self.textedit.undo)
+        edit_menu.aA..('Undo', textedit.undo)
 
         # create a QAction manually
 
         redo_action _ qtw.?A..('Redo', self)
-        redo_action.t__.c..(self.textedit.redo)
+        redo_action.t__.c..(textedit.redo)
         edit_menu.aA..(redo_action)
 
         ############################
         # The Toolbar and QActions #
         ############################
 
-        toolbar _ self.addToolBar('File')
+        toolbar _ addToolBar('File')
         #toolbar.addAction(open_action)
         #toolbar.addAction("Save")
 
@@ -121,24 +121,24 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
         )
 
         # Add with icons
-        open_icon _ self.style().standardIcon(qtw.QStyle.SP_DirOpenIcon)
-        save_icon _ self.style().standardIcon(qtw.QStyle.SP_DriveHDIcon)
+        open_icon _ style().standardIcon(qtw.QStyle.SP_DirOpenIcon)
+        save_icon _ style().standardIcon(qtw.QStyle.SP_DriveHDIcon)
 
         open_action.setIcon(open_icon)
         toolbar.aA..(open_action)
         toolbar.aA..(
             save_icon,
             'Save',
-            lambda: self.statusBar().showMessage('File Saved!')
+            lambda: statusBar().showMessage('File Saved!')
         )
 
         # create a custom QAction
 
         help_action _ qtw.?A..(
-            self.style().standardIcon(qtw.QStyle.SP_DialogHelpButton),
+            style().standardIcon(qtw.QStyle.SP_DialogHelpButton),
             'Help',
             self,  # important to pass the parent!
-            triggered_lambda: self.statusBar().showMessage(
+            triggered_lambda: statusBar().showMessage(
                 'Sorry, no help yet!'
             )
         )
@@ -146,10 +146,10 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
 
         # create a toolbar in another part of the screen:
         toolbar2 _ qtw.QToolBar('Edit')
-        self.addToolBar(qtc.__.RightToolBarArea, toolbar2)
-        toolbar2.aA..('Copy', self.textedit.copy)
-        toolbar2.aA..('Cut', self.textedit.cut)
-        toolbar2.aA..('Paste', self.textedit.paste)
+        addToolBar(qtc.__.RightToolBarArea, toolbar2)
+        toolbar2.aA..('Copy', textedit.copy)
+        toolbar2.aA..('Cut', textedit.cut)
+        toolbar2.aA..('Paste', textedit.paste)
 
 
         ################
@@ -157,7 +157,7 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
         ################
 
         dock _ qtw.QDockWidget("Replace")
-        self.addDockWidget(qtc.__.LeftDockWidgetArea, dock)
+        addDockWidget(qtc.__.LeftDockWidgetArea, dock)
 
         # make it not closable
         dock.setFeatures(
@@ -166,17 +166,17 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
         )
 
         replace_widget _ qtw.?W..
-        replace_widget.sL..(qtw.QVBoxLayout())
+        replace_widget.sL.. ?.?VBL..
         dock.setWidget(replace_widget)
 
-        self.search_text_inp _ qtw.QLineEdit(placeholderText_'search')
-        self.replace_text_inp _ qtw.QLineEdit(placeholderText_'replace')
+        search_text_inp _ ?.?LE..(placeholderText_'search')
+        replace_text_inp _ ?.?LE..(placeholderText_'replace')
         search_and_replace_btn _ qtw.?PB..(
             "Search and Replace",
             c___self.search_and_replace
             )
-        replace_widget.layout().aW..(self.search_text_inp)
-        replace_widget.layout().aW..(self.replace_text_inp)
+        replace_widget.layout().aW..(search_text_inp)
+        replace_widget.layout().aW..(replace_text_inp)
         replace_widget.layout().aW..(search_and_replace_btn)
         replace_widget.layout().addStretch()
 
@@ -185,9 +185,9 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
         ############################
 
         # QMessageBox
-        help_menu.aA..('About', self.showAboutDialog)
+        help_menu.aA..('About', showAboutDialog)
 
-        __ self.settings.value('show_warnings', False, type_bool):
+        __ settings.value('show_warnings', False, type_bool):
             response _ qtw.?MB...q..(
                 self,
                 'My Text Editor',
@@ -195,7 +195,7 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
                 qtw.?MB...Yes | qtw.?MB...Abort
             )
             __ response == qtw.?MB...Abort:
-                self.close()
+                close()
                 ___.e..
 
             # custom message box
@@ -216,19 +216,19 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
             splash_screen.addButton(qtw.?MB...Abort)
             response _ splash_screen.e..
             __ response == qtw.?MB...Abort:
-                self.close()
+                close()
                 ___.e..
 
         # QFileDialog
-        open_action.t__.c..(self.openFile)
-        save_action.t__.c..(self.saveFile)
+        open_action.t__.c..(openFile)
+        save_action.t__.c..(saveFile)
 
         # QFontDialog
 
-        edit_menu.aA..('Set Font…', self.set_font)
+        edit_menu.aA..('Set Font…', set_font)
 
         # Custom dialog
-        edit_menu.aA..('Settings…', self.show_settings)
+        edit_menu.aA..('Settings…', show_settings)
 
         ###################
         # Saving Settings #
@@ -236,25 +236,25 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
 
 
         # End main UI code
-        self.s..
+        s..
 
-    ___ search_and_replace(self):
-        s_text _ self.search_text_inp.t__()
-        r_text _ self.replace_text_inp.t__()
+    ___ search_and_replace
+        s_text _ search_text_inp.t__()
+        r_text _ replace_text_inp.t__()
 
         __ s_text:
-            self.textedit.sT..(
-                self.textedit.toPlainText().replace(s_text, r_text)
+            textedit.sT..(
+                textedit.toPlainText().replace(s_text, r_text)
                 )
 
-    ___ showAboutDialog(self):
+    ___ showAboutDialog
         qtw.?MB...about(
             self,
             "About text_editor.py",
             "This is a text editor written in PyQt5."
         )
 
-    ___ openFile(self):
+    ___ openFile
         filename, _ _ qtw.?FD...gOFN..(
             self,
             "Select a text file to open…",
@@ -267,11 +267,11 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
         __ filename:
             try:
                 w__ o..(filename, 'r') __ fh:
-                    self.textedit.sT..(fh.r..
+                    textedit.sT..(fh.r..
             except Exception __ e:
                 qtw.?MB...critical(f"Could not load file: {e}")
 
-    ___ saveFile(self):
+    ___ saveFile
         filename, _ _ qtw.?FD...getSaveFileName(
             self,
             "Select the file to save to…",
@@ -281,12 +281,12 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
         __ filename:
             try:
                 w__ o..(filename, 'w') __ fh:
-                    fh.w..(self.textedit.tPT..
+                    fh.w..(textedit.tPT..
             except Exception __ e:
                 qtw.?MB...critical(f"Could not save file: {e}")
 
-    ___ set_font(self):
-        current _ self.textedit.currentFont()
+    ___ set_font
+        current _ textedit.currentFont()
         font, accepted _ qtw.QFontDialog.getFont(
             current,
             self,
@@ -296,16 +296,16 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
             )
         )
         __ accepted:
-            self.textedit.setCurrentFont(font)
+            textedit.setCurrentFont(font)
 
-    ___ show_settings(self):
+    ___ show_settings
 
-        settings_dialog _ SettingsDialog(self.settings, self)
+        settings_dialog _ SettingsDialog(settings, self)
         settings_dialog.exec()
 
 
-__ __name__ == '__main__':
-    app _ qtw.?A..(___.argv)
+__ ______ __ ______
+    app _ qtw.?A..(___.a..
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()

@@ -4,26 +4,26 @@ ____ ? ______ QtNetwork __ qtn
 
 c_ Server(qtn.QTcpServer):
 
-    ___ __init__(self):
-        super().__init__()
-        self.newConnection.c..(self.on_new_connection)
-        self.connections _   # list
-        self.listen(qtn.QHostAddress.Any, 8080)
+    ___  -
+        s_. - ()
+        newConnection.c..(on_new_connection)
+        connections _   # list
+        listen(qtn.QHostAddress.Any, 8080)
 
-    ___ on_new_connection(self):
-        w__ self.hasPendingConnections
-            cx _ self.nextPendingConnection()
-            self.connections.ap..(cx)
-            cx.readyRead.c..(self.process_datastream)
+    ___ on_new_connection
+        w__ hasPendingConnections
+            cx _ nextPendingConnection()
+            connections.ap..(cx)
+            cx.readyRead.c..(process_datastream)
 
-    ___ process_datastream(self):
-        for cx in self.connections:
-            self.datastream _ qtc.QDataStream(cx)
-            print(self.datastream.readRawData(cx.bytesAvailable()))
-            self.datastream.writeRawData(b'PyQt5 Rocks!')
+    ___ process_datastream
+        ___ cx __ connections:
+            datastream _ qtc.QDataStream(cx)
+            print(datastream.readRawData(cx.bytesAvailable()))
+            datastream.writeRawData(b'PyQt5 Rocks!')
             cx.disconnectFromHost()
 
-__ __name__ == '__main__':
-    app _ qtc.QCoreApplication(___.argv)
+__ ______ __ ______
+    app _ qtc.QCoreApplication(___.a..
     server _ Server()
     ___.exit(app.exec())

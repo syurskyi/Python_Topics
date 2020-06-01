@@ -49,115 +49,115 @@ ____ ?.?W.. ______ (QGridLayout, QHBoxLayout, QLabel, QLineEdit,
 
 c_ SortedDict(dict):
     c_ Iterator(object):
-        ___ __init__  sorted_dict):
-            self._dict _ sorted_dict
-            self._keys _ sorted(self._dict.keys())
-            self._nr_items _ le.(self._keys)
-            self._idx _ 0
+        ___  -   sorted_dict):
+            _dict _ sorted_dict
+            _keys _ sorted(_dict.keys())
+            _nr_items _ le.(_keys)
+            _idx _ 0
 
-        ___ __iter__(self):
+        ___ __iter__ 
             r_ self
 
-        ___ next(self):
-            __ self._idx >_ self._nr_items:
+        ___ next 
+            __ _idx >_ _nr_items:
                 raise StopIteration
 
-            key _ self._keys[self._idx]
-            value _ self._dict[key]
-            self._idx +_ 1
+            key _ _keys[_idx]
+            value _ _dict[key]
+            _idx +_ 1
 
             r_ key, value
 
         __next__ _ next
 
-    ___ __iter__(self):
-        r_ SortedDict.Iterator(self)
+    ___ __iter__ 
+        r_ SortedDict.Iterator
 
     iterkeys _ __iter__
 
 
 c_ AddressBook(QWidget):
-    ___ __init__  parent_None):
-        super(AddressBook, self).__init__(parent)
+    ___  -   parent_None):
+        super(AddressBook, self). - (parent)
 
-        self.contacts _ SortedDict()
-        self.oldName _ ''
-        self.oldAddress _ ''
+        contacts _ SortedDict()
+        oldName _ ''
+        oldAddress _ ''
 
         nameLabel _ QLabel("Name:")
-        self.nameLine _ ?LE..
-        self.nameLine.setReadOnly(True)
+        nameLine _ ?LE..
+        nameLine.setReadOnly(True)
 
         addressLabel _ QLabel("Address:")
-        self.addressText _ QTextEdit()
-        self.addressText.setReadOnly(True)
+        addressText _ QTextEdit()
+        addressText.setReadOnly(True)
 
-        self.addButton _ ?PB..("&Add")
-        self.addButton.s..
-        self.submitButton _ ?PB..("&Submit")
-        self.submitButton.hide()
-        self.cancelButton _ ?PB..("&Cancel")
-        self.cancelButton.hide()
-        self.nextButton _ ?PB..("&Next")
-        self.nextButton.setEnabled F..
-        self.previousButton _ ?PB..("&Previous")
-        self.previousButton.setEnabled F..
+        addButton _ ?PB..("&Add")
+        addButton.s..
+        submitButton _ ?PB..("&Submit")
+        submitButton.hide()
+        cancelButton _ ?PB..("&Cancel")
+        cancelButton.hide()
+        nextButton _ ?PB..("&Next")
+        nextButton.setEnabled F..
+        previousButton _ ?PB..("&Previous")
+        previousButton.setEnabled F..
 
-        self.addButton.c__.c..(self.addContact)
-        self.submitButton.c__.c..(self.submitContact)
-        self.cancelButton.c__.c..(self.cancel)
-        self.nextButton.c__.c..(self.next)
-        self.previousButton.c__.c..(self.previous)
+        addButton.c__.c..(addContact)
+        submitButton.c__.c..(submitContact)
+        cancelButton.c__.c..(cancel)
+        nextButton.c__.c..(next)
+        previousButton.c__.c..(previous)
 
         buttonLayout1 _ ?VBL..
-        buttonLayout1.aW..(self.addButton, __.AlignTop)
-        buttonLayout1.aW..(self.submitButton)
-        buttonLayout1.aW..(self.cancelButton)
+        buttonLayout1.aW..(addButton, __.AlignTop)
+        buttonLayout1.aW..(submitButton)
+        buttonLayout1.aW..(cancelButton)
         buttonLayout1.addStretch()
 
         buttonLayout2 _ QHBoxLayout()
-        buttonLayout2.aW..(self.previousButton)
-        buttonLayout2.aW..(self.nextButton)
+        buttonLayout2.aW..(previousButton)
+        buttonLayout2.aW..(nextButton)
 
         mainLayout _ QGridLayout()
         mainLayout.aW..(nameLabel, 0, 0)
-        mainLayout.aW..(self.nameLine, 0, 1)
+        mainLayout.aW..(nameLine, 0, 1)
         mainLayout.aW..(addressLabel, 1, 0, __.AlignTop)
-        mainLayout.aW..(self.addressText, 1, 1)
-        mainLayout.addLayout(buttonLayout1, 1, 2)
-        mainLayout.addLayout(buttonLayout2, 3, 1)
+        mainLayout.aW..(addressText, 1, 1)
+        mainLayout.aL..(buttonLayout1, 1, 2)
+        mainLayout.aL..(buttonLayout2, 3, 1)
 
-        self.sL..(mainLayout)
-        self.setWindowTitle("Simple Address Book")
+        sL..(mainLayout)
+        setWindowTitle("Simple Address Book")
 
-    ___ addContact(self):
-        self.oldName _ self.nameLine.t__()
-        self.oldAddress _ self.addressText.toPlainText()
+    ___ addContact 
+        oldName _ nameLine.t__()
+        oldAddress _ addressText.toPlainText()
 
-        self.nameLine.clear()
-        self.addressText.clear()
+        nameLine.clear()
+        addressText.clear()
 
-        self.nameLine.setReadOnly F..
-        self.nameLine.setFocus(__.OtherFocusReason)
-        self.addressText.setReadOnly F..
+        nameLine.setReadOnly F..
+        nameLine.setFocus(__.OtherFocusReason)
+        addressText.setReadOnly F..
 
-        self.addButton.setEnabled F..
-        self.nextButton.setEnabled F..
-        self.previousButton.setEnabled F..
-        self.submitButton.s..
-        self.cancelButton.s..
+        addButton.setEnabled F..
+        nextButton.setEnabled F..
+        previousButton.setEnabled F..
+        submitButton.s..
+        cancelButton.s..
 
-    ___ submitContact(self):
-        name _ self.nameLine.t__()
-        address _ self.addressText.toPlainText()
+    ___ submitContact 
+        name _ nameLine.t__()
+        address _ addressText.toPlainText()
 
         __ name == "" or address == "":
             ?MB...information  "Empty Field",
                     "Please enter a name and address.")
             r_
 
-        __ name no. in self.contacts:
-            self.contacts[name] _ address
+        __ name no. __ contacts:
+            contacts[name] _ address
             ?MB...information  "Add Successful",
                     "\"%s\" has been added to your address book." % name)
         ____
@@ -165,43 +165,43 @@ c_ AddressBook(QWidget):
                     "Sorry, \"%s\" is already in your address book." % name)
             r_
 
-        __ no. self.contacts:
-            self.nameLine.clear()
-            self.addressText.clear()
+        __ no. contacts:
+            nameLine.clear()
+            addressText.clear()
 
-        self.nameLine.setReadOnly(True)
-        self.addressText.setReadOnly(True)
-        self.addButton.setEnabled(True)
+        nameLine.setReadOnly(True)
+        addressText.setReadOnly(True)
+        addButton.setEnabled(True)
 
-        number _ le.(self.contacts)
-        self.nextButton.setEnabled(number > 1)
-        self.previousButton.setEnabled(number > 1)
+        number _ le.(contacts)
+        nextButton.setEnabled(number > 1)
+        previousButton.setEnabled(number > 1)
 
-        self.submitButton.hide()
-        self.cancelButton.hide()
+        submitButton.hide()
+        cancelButton.hide()
 
-    ___ cancel(self):
-        self.nameLine.sT..(self.oldName)
-        self.addressText.sT..(self.oldAddress)
+    ___ cancel 
+        nameLine.sT..(oldName)
+        addressText.sT..(oldAddress)
 
-        __ no. self.contacts:
-            self.nameLine.clear()
-            self.addressText.clear()
+        __ no. contacts:
+            nameLine.clear()
+            addressText.clear()
 
-        self.nameLine.setReadOnly(True)
-        self.addressText.setReadOnly(True)
-        self.addButton.setEnabled(True)
+        nameLine.setReadOnly(True)
+        addressText.setReadOnly(True)
+        addButton.setEnabled(True)
 
-        number _ le.(self.contacts)
-        self.nextButton.setEnabled(number > 1)
-        self.previousButton.setEnabled(number > 1)
+        number _ le.(contacts)
+        nextButton.setEnabled(number > 1)
+        previousButton.setEnabled(number > 1)
 
-        self.submitButton.hide()
-        self.cancelButton.hide()
+        submitButton.hide()
+        cancelButton.hide()
 
-    ___ next(self):
-        name _ self.nameLine.t__()
-        it _ iter(self.contacts)
+    ___ next 
+        name _ nameLine.t__()
+        it _ iter(contacts)
 
         try:
             w__ T..
@@ -211,40 +211,40 @@ c_ AddressBook(QWidget):
                     next_name, next_address _ it.next()
                     break
         except StopIteration:
-            next_name, next_address _ iter(self.contacts).next()
+            next_name, next_address _ iter(contacts).next()
 
-        self.nameLine.sT..(next_name)
-        self.addressText.sT..(next_address)
+        nameLine.sT..(next_name)
+        addressText.sT..(next_address)
 
-    ___ previous(self):
-        name _ self.nameLine.t__()
+    ___ previous 
+        name _ nameLine.t__()
 
         prev_name _ prev_address _ N..
-        for this_name, this_address in self.contacts:
+        ___ this_name, this_address __ contacts:
             __ this_name == name:
                 break
 
             prev_name _ this_name
             prev_address _ this_address
         ____
-            self.nameLine.clear()
-            self.addressText.clear()
+            nameLine.clear()
+            addressText.clear()
             r_
 
         __ prev_name __ N..:
-            for prev_name, prev_address in self.contacts:
+            ___ prev_name, prev_address __ contacts:
                 pass
 
-        self.nameLine.sT..(prev_name)
-        self.addressText.sT..(prev_address)
+        nameLine.sT..(prev_name)
+        addressText.sT..(prev_address)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
     ______ ___
 
     ____ ?.?W.. ______ ?A..
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     addressBook _ AddressBook()
     addressBook.s..

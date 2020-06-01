@@ -48,20 +48,20 @@ ____ ?.?W.. ______ (?A.., QCheckBox, QGridLayout, QGroupBox,
 
 
 c_ Window(QWidget):
-    ___ __init__  parent_None):
-        super(Window, self).__init__(parent)
+    ___  -   parent_None):
+        super(Window, self). - (parent)
 
         grid _ QGridLayout()
-        grid.aW..(self.createFirstExclusiveGroup(), 0, 0)
-        grid.aW..(self.createSecondExclusiveGroup(), 1, 0)
-        grid.aW..(self.createNonExclusiveGroup(), 0, 1)
-        grid.aW..(self.createPushButtonGroup(), 1, 1)
-        self.sL..(grid)
+        grid.aW..(createFirstExclusiveGroup(), 0, 0)
+        grid.aW..(createSecondExclusiveGroup(), 1, 0)
+        grid.aW..(createNonExclusiveGroup(), 0, 1)
+        grid.aW..(createPushButtonGroup(), 1, 1)
+        sL..(grid)
 
-        self.setWindowTitle("Group Box")
-        self.resize(480, 320)
+        setWindowTitle("Group Box")
+        resize(480, 320)
 
-    ___ createFirstExclusiveGroup(self):
+    ___ createFirstExclusiveGroup 
         groupBox _ QGroupBox("Exclusive Radio Buttons")
 
         radio1 _ QRadioButton("&Radio button 1")
@@ -79,7 +79,7 @@ c_ Window(QWidget):
 
         r_ groupBox
 
-    ___ createSecondExclusiveGroup(self):
+    ___ createSecondExclusiveGroup 
         groupBox _ QGroupBox("E&xclusive Radio Buttons")
         groupBox.setCheckable(True)
         groupBox.setChecked F..
@@ -101,7 +101,7 @@ c_ Window(QWidget):
 
         r_ groupBox
 
-    ___ createNonExclusiveGroup(self):
+    ___ createNonExclusiveGroup 
         groupBox _ QGroupBox("Non-Exclusive Checkboxes")
         groupBox.setFlat(True)
 
@@ -121,7 +121,7 @@ c_ Window(QWidget):
 
         r_ groupBox
 
-    ___ createPushButtonGroup(self):
+    ___ createPushButtonGroup 
         groupBox _ QGroupBox("&Push Buttons")
         groupBox.setCheckable(True)
         groupBox.setChecked(True)
@@ -134,7 +134,7 @@ c_ Window(QWidget):
         flatButton.setFlat(True)
 
         popupButton _ ?PB..("Pop&up Button")
-        menu _ QMenu(self)
+        menu _ QMenu
         menu.aA..("&First Item")
         menu.aA..("&Second Item")
         menu.aA..("&Third Item")
@@ -159,11 +159,11 @@ c_ Window(QWidget):
         r_ groupBox
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     clock _ Window()
     clock.s..
     ___.exit(app.exec_())

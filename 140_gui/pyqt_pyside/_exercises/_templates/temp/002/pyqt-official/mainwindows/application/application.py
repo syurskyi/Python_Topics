@@ -50,171 +50,171 @@ ____ ?.?W.. ______ (?A.., ?A.., ?FD.., QMainWindow,
 
 
 c_ MainWindow ?MW..
-    ___ __init__(self):
-        super(MainWindow, self).__init__()
+    ___  -  
+        super(MainWindow, self). - ()
 
-        self.curFile _ ''
+        curFile _ ''
 
-        self.textEdit _ QTextEdit()
-        self.sCW..(self.textEdit)
+        textEdit _ QTextEdit()
+        sCW..(textEdit)
 
-        self.createActions()
-        self.createMenus()
-        self.createToolBars()
-        self.createStatusBar()
+        createActions()
+        createMenus()
+        createToolBars()
+        createStatusBar()
 
-        self.readSettings()
+        readSettings()
 
-        self.textEdit.document().contentsChanged.c..(self.documentWasModified)
+        textEdit.document().contentsChanged.c..(documentWasModified)
 
-        self.setCurrentFile('')
+        setCurrentFile('')
 
     ___ closeEvent  event):
-        __ self.maybeSave
-            self.writeSettings()
+        __ maybeSave
+            writeSettings()
             event.accept()
         ____
             event.ignore()
 
-    ___ newFile(self):
-        __ self.maybeSave
-            self.textEdit.clear()
-            self.setCurrentFile('')
+    ___ newFile 
+        __ maybeSave
+            textEdit.clear()
+            setCurrentFile('')
 
-    ___ o..(self):
-        __ self.maybeSave
-            fileName, _ _ ?FD...gOFN..(self)
+    ___ o.. 
+        __ maybeSave
+            fileName, _ _ ?FD...gOFN..
             __ fileName:
-                self.loadFile(fileName)
+                loadFile(fileName)
 
-    ___ save(self):
-        __ self.curFile:
-            r_ self.saveFile(self.curFile)
+    ___ save 
+        __ curFile:
+            r_ saveFile(curFile)
 
-        r_ self.saveAs()
+        r_ saveAs()
 
-    ___ saveAs(self):
-        fileName, _ _ ?FD...getSaveFileName(self)
+    ___ saveAs 
+        fileName, _ _ ?FD...getSaveFileName
         __ fileName:
-            r_ self.saveFile(fileName)
+            r_ saveFile(fileName)
 
         r_ False
 
-    ___ about(self):
+    ___ about 
         ?MB...about  "About Application",
                 "The <b>Application</b> example demonstrates how to write "
                 "modern GUI applications using Qt, with a menu bar, "
                 "toolbars, and a status bar.")
 
-    ___ documentWasModified(self):
-        self.setWindowModified(self.textEdit.document().iM..())
+    ___ documentWasModified 
+        setWindowModified(textEdit.document().iM..())
 
-    ___ createActions(self):
+    ___ createActions 
         root _ QFileInfo(__file__).absolutePath()
 
-        self.newAct _ ?A..(QIcon(root + '/images/new.png'), "&New", self,
+        newAct _ ?A..(QIcon(root + '/images/new.png'), "&New", self,
                 shortcut_QKeySequence.New, statusTip_"Create a new file",
                 triggered_self.newFile)
 
-        self.openAct _ ?A..(QIcon(root + '/images/open.png'), "&Open...",
+        openAct _ ?A..(QIcon(root + '/images/open.png'), "&Open...",
                 self, shortcut_QKeySequence.Open,
                 statusTip_"Open an existing file", triggered_self.o..)
 
-        self.saveAct _ ?A..(QIcon(root + '/images/save.png'), "&Save", self,
+        saveAct _ ?A..(QIcon(root + '/images/save.png'), "&Save", self,
                 shortcut_QKeySequence.Save,
                 statusTip_"Save the document to disk", triggered_self.save)
 
-        self.saveAsAct _ ?A..("Save &As...", self,
+        saveAsAct _ ?A..("Save &As...", self,
                 shortcut_QKeySequence.SaveAs,
                 statusTip_"Save the document under a new name",
                 triggered_self.saveAs)
 
-        self.exitAct _ ?A..("E&xit", self, shortcut_"Ctrl+Q",
+        exitAct _ ?A..("E&xit", self, shortcut_"Ctrl+Q",
                 statusTip_"Exit the application", triggered_self.close)
 
-        self.cutAct _ ?A..(QIcon(root + '/images/cut.png'), "Cu&t", self,
+        cutAct _ ?A..(QIcon(root + '/images/cut.png'), "Cu&t", self,
                 shortcut_QKeySequence.Cut,
                 statusTip_"Cut the current selection's contents to the clipboard",
                 triggered_self.textEdit.cut)
 
-        self.copyAct _ ?A..(QIcon(root + '/images/copy.png'), "&Copy", self,
+        copyAct _ ?A..(QIcon(root + '/images/copy.png'), "&Copy", self,
                 shortcut_QKeySequence.Copy,
                 statusTip_"Copy the current selection's contents to the clipboard",
                 triggered_self.textEdit.copy)
 
-        self.pasteAct _ ?A..(QIcon(root + '/images/paste.png'), "&Paste",
+        pasteAct _ ?A..(QIcon(root + '/images/paste.png'), "&Paste",
                 self, shortcut_QKeySequence.Paste,
                 statusTip_"Paste the clipboard's contents into the current selection",
                 triggered_self.textEdit.paste)
 
-        self.aboutAct _ ?A..("&About", self,
+        aboutAct _ ?A..("&About", self,
                 statusTip_"Show the application's About box",
                 triggered_self.about)
 
-        self.aboutQtAct _ ?A..("About &Qt", self,
+        aboutQtAct _ ?A..("About &Qt", self,
                 statusTip_"Show the Qt library's About box",
                 triggered_QApplication.instance().aboutQt)
 
-        self.cutAct.setEnabled F..
-        self.copyAct.setEnabled F..
-        self.textEdit.copyAvailable.c..(self.cutAct.setEnabled)
-        self.textEdit.copyAvailable.c..(self.copyAct.setEnabled)
+        cutAct.setEnabled F..
+        copyAct.setEnabled F..
+        textEdit.copyAvailable.c..(cutAct.setEnabled)
+        textEdit.copyAvailable.c..(copyAct.setEnabled)
 
-    ___ createMenus(self):
-        self.fileMenu _ self.mB.. .aM..("&File")
-        self.fileMenu.aA..(self.newAct)
-        self.fileMenu.aA..(self.openAct)
-        self.fileMenu.aA..(self.saveAct)
-        self.fileMenu.aA..(self.saveAsAct)
-        self.fileMenu.addSeparator();
-        self.fileMenu.aA..(self.exitAct)
+    ___ createMenus 
+        fileMenu _ mB.. .aM..("&File")
+        fileMenu.aA..(newAct)
+        fileMenu.aA..(openAct)
+        fileMenu.aA..(saveAct)
+        fileMenu.aA..(saveAsAct)
+        fileMenu.addSeparator();
+        fileMenu.aA..(exitAct)
 
-        self.editMenu _ self.mB.. .aM..("&Edit")
-        self.editMenu.aA..(self.cutAct)
-        self.editMenu.aA..(self.copyAct)
-        self.editMenu.aA..(self.pasteAct)
+        editMenu _ mB.. .aM..("&Edit")
+        editMenu.aA..(cutAct)
+        editMenu.aA..(copyAct)
+        editMenu.aA..(pasteAct)
 
-        self.mB.. .addSeparator()
+        mB.. .addSeparator()
 
-        self.helpMenu _ self.mB.. .aM..("&Help")
-        self.helpMenu.aA..(self.aboutAct)
-        self.helpMenu.aA..(self.aboutQtAct)
+        helpMenu _ mB.. .aM..("&Help")
+        helpMenu.aA..(aboutAct)
+        helpMenu.aA..(aboutQtAct)
 
-    ___ createToolBars(self):
-        self.fileToolBar _ self.addToolBar("File")
-        self.fileToolBar.aA..(self.newAct)
-        self.fileToolBar.aA..(self.openAct)
-        self.fileToolBar.aA..(self.saveAct)
+    ___ createToolBars 
+        fileToolBar _ addToolBar("File")
+        fileToolBar.aA..(newAct)
+        fileToolBar.aA..(openAct)
+        fileToolBar.aA..(saveAct)
 
-        self.editToolBar _ self.addToolBar("Edit")
-        self.editToolBar.aA..(self.cutAct)
-        self.editToolBar.aA..(self.copyAct)
-        self.editToolBar.aA..(self.pasteAct)
+        editToolBar _ addToolBar("Edit")
+        editToolBar.aA..(cutAct)
+        editToolBar.aA..(copyAct)
+        editToolBar.aA..(pasteAct)
 
-    ___ createStatusBar(self):
-        self.statusBar().showMessage("Ready")
+    ___ createStatusBar 
+        statusBar().showMessage("Ready")
 
-    ___ readSettings(self):
+    ___ readSettings 
         settings _ QSettings("Trolltech", "Application Example")
         pos _ settings.value("pos", QPoint(200, 200))
         size _ settings.value("size", QSize(400, 400))
-        self.resize(size)
-        self.move(pos)
+        resize(size)
+        move(pos)
 
-    ___ writeSettings(self):
+    ___ writeSettings 
         settings _ QSettings("Trolltech", "Application Example")
-        settings.setValue("pos", self.pos())
-        settings.setValue("size", self.size())
+        settings.setValue("pos", pos())
+        settings.setValue("size", size())
 
-    ___ maybeSave(self):
-        __ self.textEdit.document().iM..
+    ___ maybeSave 
+        __ textEdit.document().iM..
             ret _ ?MB...warning  "Application",
                     "The document has been modified.\nDo you want to save "
                     "your changes?",
                     ?MB...Save | ?MB...Discard | ?MB...Cancel)
 
             __ ret == ?MB...Save:
-                r_ self.save()
+                r_ save()
 
             __ ret == ?MB...Cancel:
                 r_ False
@@ -230,11 +230,11 @@ c_ MainWindow ?MW..
 
         inf _ QTextStream(file)
         ?A...setOverrideCursor(__.WaitCursor)
-        self.textEdit.sPT..(inf.readAll())
+        textEdit.sPT..(inf.readAll())
         ?A...restoreOverrideCursor()
 
-        self.setCurrentFile(fileName)
-        self.statusBar().showMessage("File loaded", 2000)
+        setCurrentFile(fileName)
+        statusBar().showMessage("File loaded", 2000)
 
     ___ saveFile  fileName):
         file _ QFile(fileName)
@@ -245,34 +245,34 @@ c_ MainWindow ?MW..
 
         outf _ QTextStream(file)
         ?A...setOverrideCursor(__.WaitCursor)
-        outf << self.textEdit.toPlainText()
+        outf << textEdit.toPlainText()
         ?A...restoreOverrideCursor()
 
-        self.setCurrentFile(fileName);
-        self.statusBar().showMessage("File saved", 2000)
+        setCurrentFile(fileName);
+        statusBar().showMessage("File saved", 2000)
         r_ True
 
     ___ setCurrentFile  fileName):
-        self.curFile _ fileName
-        self.textEdit.document().setModified F..
-        self.setWindowModified F..
+        curFile _ fileName
+        textEdit.document().setModified F..
+        setWindowModified F..
 
-        __ self.curFile:
-            shownName _ self.strippedName(self.curFile)
+        __ curFile:
+            shownName _ strippedName(curFile)
         ____
             shownName _ 'untitled.txt'
 
-        self.setWindowTitle("%s[*] - Application" % shownName)
+        setWindowTitle("%s[*] - Application" % shownName)
 
     ___ strippedName  fullFileName):
         r_ QFileInfo(fullFileName).fileName()
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     mainWin _ MainWindow()
     mainWin.s..
     ___.exit(app.exec_())

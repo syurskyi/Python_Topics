@@ -97,11 +97,11 @@ ___ createConclusionPage
     r_ page
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     wizard _ QWizard()
     wizard.addPage(createIntroPage())

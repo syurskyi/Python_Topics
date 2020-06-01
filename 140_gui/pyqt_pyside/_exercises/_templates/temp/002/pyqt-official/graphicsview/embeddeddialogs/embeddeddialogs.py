@@ -55,23 +55,23 @@ ____ embeddeddialog ______ Ui_embeddedDialog
 
 
 c_ CustomProxy(QGraphicsProxyWidget):
-    ___ __init__  parent_None, wFlags_0):
-        super(CustomProxy, self).__init__(parent, wFlags)
+    ___  -   parent_None, wFlags_0):
+        super(CustomProxy, self). - (parent, wFlags)
 
-        self.popupShown _ False
-        self.currentPopup _ N..
+        popupShown _ False
+        currentPopup _ N..
 
-        self.timeLine _ QTimeLine(250, self)
-        self.timeLine.valueChanged.c..(self.updateStep)
-        self.timeLine.stateChanged.c..(self.stateChanged)
+        timeLine _ QTimeLine(250, self)
+        timeLine.valueChanged.c..(updateStep)
+        timeLine.stateChanged.c..(stateChanged)
 
-    ___ boundingRect(self):
-        r_ QGraphicsProxyWidget.boundingRect(self).adjusted(0, 0, 10, 10)
+    ___ boundingRect
+        r_ QGraphicsProxyWidget.boundingRect.adjusted(0, 0, 10, 10)
 
     ___ paintWindowFrame  painter, option, widget):
         color _ ?C..(0, 0, 0, 64)
 
-        r _ self.windowFrameRect()
+        r _ windowFrameRect()
         right _ QRectF(r.right(), r.top()+10, 10, r.height()-10)
         bottom _ QRectF(r.left()+10, r.bottom(), r.width(), 10)
         intersectsRight _ right.intersects(option.exposedRect)
@@ -93,42 +93,42 @@ c_ CustomProxy(QGraphicsProxyWidget):
     ___ hoverEnterEvent  event):
         super(CustomProxy, self).hoverEnterEvent(event)
 
-        self.scene().setActiveWindow(self)
-        __ self.timeLine.currentValue !_ 1:
-            self.zoomIn()
+        scene().setActiveWindow
+        __ timeLine.currentValue !_ 1:
+            zoomIn()
 
     ___ hoverLeaveEvent  event):
         super(CustomProxy, self).hoverLeaveEvent(event)
 
-        __ no. self.popupShown and (self.timeLine.direction() !_ QTimeLine.Backward or self.timeLine.currentValue() !_ 0):
-            self.zoomOut()
+        __ no. popupShown and (timeLine.direction() !_ QTimeLine.Backward or timeLine.currentValue() !_ 0):
+            zoomOut()
 
     ___ sceneEventFilter  watched, event):
         __ watched.isWindow() and (event.type() == QEvent.UngrabMouse or event.type() == QEvent.GrabMouse):
-            self.popupShown _ watched.isVisible()
-            __ no. self.popupShown and no. self.isUnderMouse
-                self.zoomOut()
+            popupShown _ watched.isVisible()
+            __ no. popupShown and no. isUnderMouse
+                zoomOut()
 
         r_ super(CustomProxy, self).sceneEventFilter(watched, event)
 
     ___ itemChange  change, value):
-        __ change == self.ItemChildAddedChange or change == self.ItemChildRemovedChange :
-            __ change == self.ItemChildAddedChange:
-                self.currentPopup _ value
-                self.currentPopup.setCacheMode(self.ItemCoordinateCache)
-                __ self.scene() __ no. N..:
-                    self.currentPopup.installSceneEventFilter(self)
-            ____ self.scene() __ no. N..:
-                self.currentPopup.removeSceneEventFilter(self)
-                self.currentPopup _ N..
-        ____ self.currentPopup __ no. N.. and change == self.ItemSceneHasChanged:
-                self.currentPopup.installSceneEventFilter(self)
+        __ change == ItemChildAddedChange or change == ItemChildRemovedChange :
+            __ change == ItemChildAddedChange:
+                currentPopup _ value
+                currentPopup.setCacheMode(ItemCoordinateCache)
+                __ scene() __ no. N..:
+                    currentPopup.installSceneEventFilter
+            ____ scene() __ no. N..:
+                currentPopup.removeSceneEventFilter
+                currentPopup _ N..
+        ____ currentPopup __ no. N.. and change == ItemSceneHasChanged:
+                currentPopup.installSceneEventFilter
 
         r_ super(CustomProxy, self).itemChange(change, value)
 
     ___ updateStep  step):
-        r _ self.boundingRect()
-        self.setTransform(QTransform() \
+        r _ boundingRect()
+        setTransform(QTransform() \
                             .translate(r.width() / 2, r.height() / 2)\
                             .rotate(step * 30, __.XAxis)\
                             .rotate(step * 10, __.YAxis)\
@@ -138,83 +138,83 @@ c_ CustomProxy(QGraphicsProxyWidget):
 
     ___ stateChanged  state):
         __ state == QTimeLine.Running:
-            __ self.timeLine.direction() == QTimeLine.Forward:
-                self.setCacheMode(self.NoCache)
+            __ timeLine.direction() == QTimeLine.Forward:
+                setCacheMode(NoCache)
         ____ state == QTimeLine.NotRunning:
-            __ self.timeLine.direction() == QTimeLine.Backward:
-                self.setCacheMode(self.DeviceCoordinateCache)
+            __ timeLine.direction() == QTimeLine.Backward:
+                setCacheMode(DeviceCoordinateCache)
 
-    ___ zoomIn(self):
-        __ self.timeLine.direction() !_ QTimeLine.Forward:
-            self.timeLine.setDirection(QTimeLine.Forward)
-        __ self.timeLine.state() == QTimeLine.NotRunning:
-            self.timeLine.start()
+    ___ zoomIn
+        __ timeLine.direction() !_ QTimeLine.Forward:
+            timeLine.setDirection(QTimeLine.Forward)
+        __ timeLine.state() == QTimeLine.NotRunning:
+            timeLine.start()
 
-    ___ zoomOut(self):
-        __ self.timeLine.direction() !_ QTimeLine.Backward:
-            self.timeLine.setDirection(QTimeLine.Backward)
-        __ self.timeLine.state() == QTimeLine.NotRunning:
-            self.timeLine.start()
+    ___ zoomOut
+        __ timeLine.direction() !_ QTimeLine.Backward:
+            timeLine.setDirection(QTimeLine.Backward)
+        __ timeLine.state() == QTimeLine.NotRunning:
+            timeLine.start()
 
 
 c_ EmbeddedDialog(QDialog):
-    ___ __init__  parent_None):
-        super(EmbeddedDialog, self).__init__(parent)
+    ___  -   parent_None):
+        super(EmbeddedDialog, self). - (parent)
 
-        self.ui _ Ui_embeddedDialog()
-        self.ui.setupUi(self)
-        self.ui.layoutDirection.setCurrentIndex(self.layoutDirection() !_ __.LeftToRight)
+        ui _ Ui_embeddedDialog()
+        ui.setupUi
+        ui.layoutDirection.setCurrentIndex(layoutDirection() !_ __.LeftToRight)
 
-        for styleName in QStyleFactory.keys
-            self.ui.style.addItem(styleName)
-            __ self.style().objectName().lower() == styleName.lower
-                self.ui.style.setCurrentIndex(self.ui.style.count() -1)
+        ___ styleName __ QStyleFactory.keys
+            ui.style.addItem(styleName)
+            __ style().objectName().lower() == styleName.lower
+                ui.style.setCurrentIndex(ui.style.count() -1)
 
-        self.ui.layoutDirection.activated.c..(self.layoutDirectionChanged)
-        self.ui.spacing.valueChanged.c..(self.spacingChanged)
-        self.ui.fontComboBox.currentFontChanged.c..(self.fontChanged)
-        self.ui.style.activated[str].c..(self.styleChanged)
+        ui.layoutDirection.activated.c..(layoutDirectionChanged)
+        ui.spacing.valueChanged.c..(spacingChanged)
+        ui.fontComboBox.currentFontChanged.c..(fontChanged)
+        ui.style.activated[str].c..(styleChanged)
 
     ___ layoutDirectionChanged  index):
         __ index == 0:
-            self.setLayoutDirection(__.LeftToRight)
+            setLayoutDirection(__.LeftToRight)
         ____
-            self.setLayoutDirection(__.RightToLeft)
+            setLayoutDirection(__.RightToLeft)
 
     ___ spacingChanged  spacing):
-        self.layout().setSpacing(spacing)
-        self.adjustSize()
+        layout().setSpacing(spacing)
+        adjustSize()
 
     ___ fontChanged  font):
-        self.setFont(font)
+        setFont(font)
 
     ___ setStyleHelper  widget, style):
         widget.setStyle(style)
         widget.sP..(style.standardPalette())
-        for child in widget.children
+        ___ child __ widget.children
             __ isinstance(child, QWidget):
-                self.setStyleHelper(child, style)
+                setStyleHelper(child, style)
     
     ___ styleChanged  styleName):
         style _ QStyleFactory.create(styleName)
         __ style:
-            self.setStyleHelper  style)
+            setStyleHelper  style)
 
         # Keep a reference to the style.
-        self._style _ style
+        _style _ style
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     scene _ QGraphicsScene()
     scene.setStickyFocus(True)
 
-    for y in range(10):
-        for x in range(10):
+    ___ y __ range(10):
+        ___ x __ range(10):
             proxy _ CustomProxy(N.., __.Window)
             proxy.setWidget(EmbeddedDialog())
 

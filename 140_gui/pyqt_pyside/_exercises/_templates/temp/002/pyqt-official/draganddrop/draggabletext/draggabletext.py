@@ -50,25 +50,25 @@ ______ draggabletext_rc
 
 
 c_ DragLabel(QLabel):
-    ___ __init__  t__, parent):
-        super(DragLabel, self).__init__(t__, parent)
+    ___  -   t__, parent):
+        super(DragLabel, self). - (t__, parent)
 
-        self.setAutoFillBackground(True)
-        self.setFrameShape(QFrame.Panel)
-        self.setFrameShadow(QFrame.Raised)
+        setAutoFillBackground(True)
+        setFrameShape(QFrame.Panel)
+        setFrameShadow(QFrame.Raised)
 
     ___ mousePressEvent  event):
         hotSpot _ event.pos()
 
         mimeData _ QMimeData()
-        mimeData.sT..(self.t__())
+        mimeData.sT..(t__())
         mimeData.setData('application/x-hotspot',
                 '%d %d' % (hotSpot.x(), hotSpot.y()))
 
-        pixmap _ QPixmap(self.size())
-        self.render(pixmap)
+        pixmap _ QPixmap(size())
+        render(pixmap)
 
-        drag _ QDrag(self)
+        drag _ QDrag
         drag.setMimeData(mimeData)
         drag.setPixmap(pixmap)
         drag.setHotSpot(hotSpot)
@@ -76,13 +76,13 @@ c_ DragLabel(QLabel):
         dropAction _ drag.exec_(__.CopyAction | __.MoveAction, __.CopyAction)
 
         __ dropAction == __.MoveAction:
-            self.close()
-            self.update()
+            close()
+            update()
 
 
 c_ DragWidget(QWidget):
-    ___ __init__  parent_None):
-        super(DragWidget, self).__init__(parent)
+    ___  -   parent_None):
+        super(DragWidget, self). - (parent)
 
         dictionaryFile _ QFile(':/dictionary/words.txt')
         dictionaryFile.o..(QIODevice.ReadOnly)
@@ -90,7 +90,7 @@ c_ DragWidget(QWidget):
         x _ 5
         y _ 5
 
-        for word in QTextStream(dictionaryFile).readAll().split
+        ___ word __ QTextStream(dictionaryFile).readAll().split
             wordLabel _ DragLabel(word, self)
             wordLabel.move(x, y)
             wordLabel.s..
@@ -99,17 +99,17 @@ c_ DragWidget(QWidget):
                 x _ 5
                 y +_ wordLabel.height() + 2
 
-        newPalette _ self.palette()
+        newPalette _ palette()
         newPalette.sC..(?P...Window, __.white)
-        self.sP..(newPalette)
+        sP..(newPalette)
 
-        self.setAcceptDrops(True)
-        self.setMinimumSize(400, max(200, y))
-        self.setWindowTitle("Draggable Text")
+        setAcceptDrops(True)
+        setMinimumSize(400, max(200, y))
+        setWindowTitle("Draggable Text")
 
     ___ dragEnterEvent  event):
         __ event.mimeData().hasText
-            __ event.source() in self.children
+            __ event.source() __ children
                 event.setDropAction(__.MoveAction)
                 event.accept()
             ____
@@ -129,14 +129,14 @@ c_ DragWidget(QWidget):
                hotSpot.setX(hotSpotPos[0].toInt()[0])
                hotSpot.setY(hotSpotPos[1].toInt()[0])
 
-            for piece in pieces:
+            ___ piece __ pieces:
                 newLabel _ DragLabel(piece, self)
                 newLabel.move(position - hotSpot)
                 newLabel.s..
 
                 position +_ QPoint(newLabel.width(), 0)
 
-            __ event.source() in self.children
+            __ event.source() __ children
                 event.setDropAction(__.MoveAction)
                 event.accept()
             ____
@@ -145,11 +145,11 @@ c_ DragWidget(QWidget):
             event.ignore()
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     window _ DragWidget()
     window.s..
     ___.exit(app.exec_())

@@ -69,149 +69,149 @@ ___ decode_utf8(qs):
 
 c_ XmlSyntaxHighlighter(QSyntaxHighlighter):
 
-    ___ __init__  parent_None):
-        super(XmlSyntaxHighlighter, self).__init__(parent)
+    ___  -   parent_None):
+        super(XmlSyntaxHighlighter, self). - (parent)
 
-        self.highlightingRules _   # list
+        highlightingRules _   # list
 
         # Tag format.
         format _ QTextCharFormat()
         format.setForeground(__.darkBlue)
         format.setFontWeight(QFont.Bold)
         pattern _ QRegExp("(<[a-zA-Z:]+\\b|<\\?[a-zA-Z:]+\\b|\\?>|>|/>|</[a-zA-Z:]+>)")
-        self.highlightingRules.ap..((pattern, format))
+        highlightingRules.ap..((pattern, format))
 
         # Attribute format.
         format _ QTextCharFormat()
         format.setForeground(__.darkGreen)
         pattern _ QRegExp("[a-zA-Z:]+=")
-        self.highlightingRules.ap..((pattern, format))
+        highlightingRules.ap..((pattern, format))
 
         # Attribute content format.
         format _ QTextCharFormat()
         format.setForeground(__.red)
         pattern _ QRegExp("(\"[^\"]*\"|'[^']*')")
-        self.highlightingRules.ap..((pattern, format))
+        highlightingRules.ap..((pattern, format))
 
         # Comment format.
-        self.commentFormat _ QTextCharFormat()
-        self.commentFormat.setForeground(__.lightGray)
-        self.commentFormat.setFontItalic(True)
+        commentFormat _ QTextCharFormat()
+        commentFormat.setForeground(__.lightGray)
+        commentFormat.setFontItalic(True)
 
-        self.commentStartExpression _ QRegExp("<!--")
-        self.commentEndExpression _ QRegExp("-->")
+        commentStartExpression _ QRegExp("<!--")
+        commentEndExpression _ QRegExp("-->")
 
     ___ highlightBlock  t__):
-        for pattern, format in self.highlightingRules:
+        ___ pattern, format __ highlightingRules:
             expression _ QRegExp(pattern)
             index _ expression.indexIn(t__)
             w__ index >_ 0:
                 length _ expression.matchedLength()
-                self.setFormat(index, length, format)
+                setFormat(index, length, format)
                 index _ expression.indexIn(t__, index + length)
 
-        self.setCurrentBlockState(0)
+        setCurrentBlockState(0)
 
         startIndex _ 0
-        __ self.previousBlockState() !_ 1:
-            startIndex _ self.commentStartExpression.indexIn(t__)
+        __ previousBlockState() !_ 1:
+            startIndex _ commentStartExpression.indexIn(t__)
 
         w__ startIndex >_ 0:
-            endIndex _ self.commentEndExpression.indexIn(t__, startIndex)
+            endIndex _ commentEndExpression.indexIn(t__, startIndex)
             __ endIndex == -1:
-                self.setCurrentBlockState(1)
+                setCurrentBlockState(1)
                 commentLength _ t__.length() - startIndex
             ____
-                commentLength _ endIndex - startIndex + self.commentEndExpression.matchedLength()
+                commentLength _ endIndex - startIndex + commentEndExpression.matchedLength()
 
-            self.setFormat(startIndex, commentLength, self.commentFormat)
-            startIndex _ self.commentStartExpression.indexIn(t__,
+            setFormat(startIndex, commentLength, commentFormat)
+            startIndex _ commentStartExpression.indexIn(t__,
                     startIndex + commentLength)
 
 
 c_ MessageHandler(QAbstractMessageHandler):
 
-    ___ __init__(self):
-        super(MessageHandler, self).__init__()
+    ___  -
+        super(MessageHandler, self). - ()
 
-        self.m_description _ ""
-        self.m_sourceLocation _ QSourceLocation()
+        m_description _ ""
+        m_sourceLocation _ QSourceLocation()
 
-    ___ statusMessage(self):
-        r_ self.m_description
+    ___ statusMessage
+        r_ m_description
 
-    ___ line(self):
-        r_ self.m_sourceLocation.line()
+    ___ line
+        r_ m_sourceLocation.line()
 
-    ___ column(self):
-        r_ self.m_sourceLocation.column()
+    ___ column
+        r_ m_sourceLocation.column()
 
     ___ handleMessage  type, description, identifier, sourceLocation):
-        self.m_description _ description
-        self.m_sourceLocation _ sourceLocation
+        m_description _ description
+        m_sourceLocation _ sourceLocation
 
 
 c_ MainWindow(QMainWindow, Ui_SchemaMainWindow):
 
-    ___ __init__(self):
-        super(MainWindow, self).__init__()
+    ___  -
+        super(MainWindow, self). - ()
 
-        self.setupUi(self)
+        setupUi
 
-        XmlSyntaxHighlighter(self.schemaView.document())
-        XmlSyntaxHighlighter(self.instanceEdit.document())
+        XmlSyntaxHighlighter(schemaView.document())
+        XmlSyntaxHighlighter(instanceEdit.document())
 
-        self.schemaSelection.addItem("Contact Schema")
-        self.schemaSelection.addItem("Recipe Schema")
-        self.schemaSelection.addItem("Order Schema")
+        schemaSelection.addItem("Contact Schema")
+        schemaSelection.addItem("Recipe Schema")
+        schemaSelection.addItem("Order Schema")
 
-        self.instanceSelection.addItem("Valid Contact Instance")
-        self.instanceSelection.addItem("Invalid Contact Instance")
+        instanceSelection.addItem("Valid Contact Instance")
+        instanceSelection.addItem("Invalid Contact Instance")
 
-        self.schemaSelection.currentIndexChanged.c..(self.schemaSelected)
-        self.instanceSelection.currentIndexChanged.c..(self.instanceSelected)
-        self.validateButton.c__.c..(self.validate)
-        self.instanceEdit.textChanged.c..(self.textChanged)
+        schemaSelection.currentIndexChanged.c..(schemaSelected)
+        instanceSelection.currentIndexChanged.c..(instanceSelected)
+        validateButton.c__.c..(validate)
+        instanceEdit.textChanged.c..(textChanged)
 
-        self.validationStatus.setAlignment(__.AlignCenter | __.AlignVCenter)
+        validationStatus.setAlignment(__.AlignCenter | __.AlignVCenter)
 
-        self.schemaSelected(0)
-        self.instanceSelected(0)
+        schemaSelected(0)
+        instanceSelected(0)
 
     ___ schemaSelected  index):
-        self.instanceSelection.clear()
+        instanceSelection.clear()
 
         __ index == 0:
-            self.instanceSelection.addItem("Valid Contact Instance")
-            self.instanceSelection.addItem("Invalid Contact Instance")
+            instanceSelection.addItem("Valid Contact Instance")
+            instanceSelection.addItem("Invalid Contact Instance")
         ____ index == 1:
-            self.instanceSelection.addItem("Valid Recipe Instance")
-            self.instanceSelection.addItem("Invalid Recipe Instance")
+            instanceSelection.addItem("Valid Recipe Instance")
+            instanceSelection.addItem("Invalid Recipe Instance")
         ____ index == 2:
-            self.instanceSelection.addItem("Valid Order Instance")
-            self.instanceSelection.addItem("Invalid Order Instance")
+            instanceSelection.addItem("Valid Order Instance")
+            instanceSelection.addItem("Invalid Order Instance")
 
-        self.textChanged()
+        textChanged()
 
         schemaFile _ QFile(':/schema_%d.xsd' % index)
         schemaFile.o..(QFile.ReadOnly)
         schemaData _ schemaFile.readAll()
-        self.schemaView.sPT..(encode_utf8(schemaData))
+        schemaView.sPT..(encode_utf8(schemaData))
 
-        self.validate()
+        validate()
 
     ___ instanceSelected  index):
-        index +_ 2 * self.schemaSelection.currentIndex()
+        index +_ 2 * schemaSelection.currentIndex()
         instanceFile _ QFile(':/instance_%d.xml' % index)
         instanceFile.o..(QFile.ReadOnly)
         instanceData _ instanceFile.readAll()
-        self.instanceEdit.sPT..(encode_utf8(instanceData))
+        instanceEdit.sPT..(encode_utf8(instanceData))
 
-        self.validate()
+        validate()
 
-    ___ validate(self):
-        schemaData _ decode_utf8(self.schemaView.tPT..
-        instanceData _ decode_utf8(self.instanceEdit.tPT..
+    ___ validate
+        schemaData _ decode_utf8(schemaView.tPT..
+        instanceData _ decode_utf8(instanceEdit.tPT..
 
         messageHandler _ MessageHandler()
 
@@ -228,27 +228,27 @@ c_ MainWindow(QMainWindow, Ui_SchemaMainWindow):
                 errorOccurred _ True
 
         __ errorOccurred:
-            self.validationStatus.sT..(messageHandler.statusMessage())
-            self.moveCursor(messageHandler.line(), messageHandler.column())
+            validationStatus.sT..(messageHandler.statusMessage())
+            moveCursor(messageHandler.line(), messageHandler.column())
             background _ __.red
         ____
-            self.validationStatus.sT..("validation successful")
+            validationStatus.sT..("validation successful")
             background _ __.green
 
         styleSheet _ 'QLabel {background: %s; padding: 3px}' % ?C..(background).lighter(160).name()
-        self.validationStatus.setStyleSheet(styleSheet)
+        validationStatus.setStyleSheet(styleSheet)
 
-    ___ textChanged(self):
-        self.instanceEdit.setExtraSelections(  # list)
+    ___ textChanged
+        instanceEdit.setExtraSelections(  # list)
 
     ___ moveCursor  line, column):
-        self.instanceEdit.moveCursor(QTextCursor.Start)
+        instanceEdit.moveCursor(QTextCursor.Start)
 
-        for i in range(1, line):
-            self.instanceEdit.moveCursor(QTextCursor.Down)
+        ___ i __ range(1, line):
+            instanceEdit.moveCursor(QTextCursor.Down)
 
-        for i in range(1, column):
-            self.instanceEdit.moveCursor(QTextCursor.Right)
+        ___ i __ range(1, column):
+            instanceEdit.moveCursor(QTextCursor.Right)
 
         extraSelections _   # list
         selection _ QTextEdit.ExtraSelection()
@@ -256,20 +256,20 @@ c_ MainWindow(QMainWindow, Ui_SchemaMainWindow):
         lineColor _ ?C..(__.red).lighter(160)
         selection.format.setBackground(lineColor)
         selection.format.setProperty(QTextFormat.FullWidthSelection, True)
-        selection.cursor _ self.instanceEdit.textCursor()
+        selection.cursor _ instanceEdit.textCursor()
         selection.cursor.clearSelection()
         extraSelections.ap..(selection)
 
-        self.instanceEdit.setExtraSelections(extraSelections)
+        instanceEdit.setExtraSelections(extraSelections)
 
-        self.instanceEdit.setFocus()
+        instanceEdit.setFocus()
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     window _ MainWindow()
     window.s..
     ___.exit(app.exec_())

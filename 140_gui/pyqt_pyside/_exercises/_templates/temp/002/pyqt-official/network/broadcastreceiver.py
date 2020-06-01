@@ -48,17 +48,17 @@ ____ ?.QtNetwork ______ QUdpSocket
 
 
 c_ Receiver(QDialog):
-    ___ __init__  parent_None):
-        super(Receiver, self).__init__(parent)
+    ___  -   parent_None):
+        super(Receiver, self). - (parent)
 
-        self.statusLabel _ QLabel("Listening for broadcasted messages")
+        statusLabel _ QLabel("Listening for broadcasted messages")
         quitButton _ ?PB..("&Quit")
 
-        self.udpSocket _ QUdpSocket(self)
-        self.udpSocket.bind(45454)
+        udpSocket _ QUdpSocket
+        udpSocket.bind(45454)
 
-        self.udpSocket.readyRead.c..(self.processPendingDatagrams)
-        quitButton.c__.c..(self.close)
+        udpSocket.readyRead.c..(processPendingDatagrams)
+        quitButton.c__.c..(close)
 
         buttonLayout _ QHBoxLayout()
         buttonLayout.addStretch(1)
@@ -66,15 +66,15 @@ c_ Receiver(QDialog):
         buttonLayout.addStretch(1)
 
         mainLayout _ ?VBL..
-        mainLayout.aW..(self.statusLabel)
-        mainLayout.addLayout(buttonLayout)
-        self.sL..(mainLayout)
+        mainLayout.aW..(statusLabel)
+        mainLayout.aL..(buttonLayout)
+        sL..(mainLayout)
 
-        self.setWindowTitle("Broadcast Receiver")
+        setWindowTitle("Broadcast Receiver")
 
-    ___ processPendingDatagrams(self):
-        w__ self.udpSocket.hasPendingDatagrams
-            datagram, host, port _ self.udpSocket.readDatagram(self.udpSocket.pendingDatagramSize())
+    ___ processPendingDatagrams
+        w__ udpSocket.hasPendingDatagrams
+            datagram, host, port _ udpSocket.readDatagram(udpSocket.pendingDatagramSize())
 
             try:
                 # Python v3.
@@ -83,14 +83,14 @@ c_ Receiver(QDialog):
                 # Python v2.
                 pass
 
-            self.statusLabel.sT..("Received datagram: \"%s\"" % datagram)
+            statusLabel.sT..("Received datagram: \"%s\"" % datagram)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     receiver _ Receiver()
     receiver.s..
     ___.exit(receiver.exec_())

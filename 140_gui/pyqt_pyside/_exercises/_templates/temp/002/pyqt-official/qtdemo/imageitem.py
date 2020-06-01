@@ -48,36 +48,36 @@ ____ demoitem ______ DemoItem
 
 
 c_ ImageItem(DemoItem):
-    ___ __init__  image, maxWidth, maxHeight, parent_None, adjustSize_False, scale_1.0):
-        super(ImageItem, self).__init__(parent)
+    ___  -   image, maxWidth, maxHeight, parent_None, adjustSize_False, scale_1.0):
+        super(ImageItem, self). - (parent)
 
-        self.image _ image
-        self.maxWidth _ maxWidth
-        self.maxHeight _ maxHeight
-        self.adjustSize _ adjustSize
-        self.scale _ scale
+        image _ image
+        maxWidth _ maxWidth
+        maxHeight _ maxHeight
+        adjustSize _ adjustSize
+        scale _ scale
 
     ___ createImage  transform):
-        original _ QImage(self.image)
+        original _ QImage(image)
         __ original.isNull
             r_ original
 
-        size _ transform.map(QPoint(self.maxWidth, self.maxHeight))
+        size _ transform.map(QPoint(maxWidth, maxHeight))
         w _ size.x()
         h _ size.y()
 
         # Optimization: if image is smaller than maximum allowed size, just
         # return the loaded image.
-        __ original.size().height() <_ h and original.size().width() <_ w and no. self.adjustSize and self.scale == 1:
+        __ original.size().height() <_ h and original.size().width() <_ w and no. adjustSize and scale == 1:
             r_ original
 
         # Calculate what the size of the final image will be.
-        w _ min(w, float(original.size().width()) * self.scale)
-        h _ min(h, float(original.size().height()) * self.scale)
+        w _ min(w, float(original.size().width()) * scale)
+        h _ min(h, float(original.size().height()) * scale)
 
         adjustx _ 1.0
         adjusty _ 1.0
-        __ self.adjustSize:
+        __ adjustSize:
             adjustx _ min(transform.m11(), transform.m22())
             adjusty _ max(transform.m22(), adjustx)
             w *_ adjustx
@@ -89,13 +89,13 @@ c_ ImageItem(DemoItem):
         image.fill(?C..(0, 0, 0, 0).rgba())
         painter _ QPainter(image)
         painter.setRenderHints(QPainter.Antialiasing | QPainter.SmoothPixmapTransform)
-        __ self.adjustSize:
+        __ adjustSize:
             painter.scale(adjustx, adjusty)
-        __ self.scale !_ 1:
-            painter.scale(self.scale, self.scale)
+        __ scale !_ 1:
+            painter.scale(scale, scale)
         painter.drawImage(0, 0, original)
 
-        __ no. self.adjustSize:
+        __ no. adjustSize:
             # Blur out edges.
             blur _ 30
 

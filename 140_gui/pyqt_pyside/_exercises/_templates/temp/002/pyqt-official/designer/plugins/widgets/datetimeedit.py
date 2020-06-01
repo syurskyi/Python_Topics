@@ -38,16 +38,16 @@ c_ PyDateEdit(QDateEdit):
     # Force use of the calendar popup
     # Set default values for calendar properties
     #
-    ___ __init__  *args):
-        super(PyDateEdit, self).__init__(*args)
+    ___  -   *args):
+        super(PyDateEdit, self). - (*args)
 
-        self.setCalendarPopup(True)
-        self.__cw _ N..
-        self.__firstDayOfWeek _ __.Monday
-        self.__gridVisible _ False
-        self.__horizontalHeaderFormat _ QCalendarWidget.ShortDayNames
-        self.__verticalHeaderFormat _ QCalendarWidget.ISOWeekNumbers
-        self.__navigationBarVisible _ True
+        setCalendarPopup(True)
+        __cw _ N..
+        __firstDayOfWeek _ __.Monday
+        __gridVisible _ False
+        __horizontalHeaderFormat _ QCalendarWidget.ShortDayNames
+        __verticalHeaderFormat _ QCalendarWidget.ISOWeekNumbers
+        __navigationBarVisible _ True
 
     #
     # Call event handler of base class
@@ -57,19 +57,19 @@ c_ PyDateEdit(QDateEdit):
     ___ mousePressEvent  event):
         super(PyDateEdit, self).mousePressEvent(event)
 
-        __ no. self.__cw:
-            self.__cw _ self.findChild(QCalendarWidget)
-            __ self.__cw:
-                self.__cw.setFirstDayOfWeek(self.__firstDayOfWeek)
-                self.__cw.setGridVisible(self.__gridVisible)
-                self.__cw.setHorizontalHeaderFormat(self.__horizontalHeaderFormat)
-                self.__cw.setVerticalHeaderFormat(self.__verticalHeaderFormat)
-                self.__cw.setNavigationBarVisible(self.__navigationBarVisible)
+        __ no. __cw:
+            __cw _ findChild(QCalendarWidget)
+            __ __cw:
+                __cw.setFirstDayOfWeek(__firstDayOfWeek)
+                __cw.setGridVisible(__gridVisible)
+                __cw.setHorizontalHeaderFormat(__horizontalHeaderFormat)
+                __cw.setVerticalHeaderFormat(__verticalHeaderFormat)
+                __cw.setNavigationBarVisible(__navigationBarVisible)
 
     #
     # Make sure, the calendarPopup property is invisible in Designer
     #
-    ___ getCalendarPopup(self):
+    ___ getCalendarPopup
         r_ True
     calendarPopup _ pyqtProperty(bool, fget_getCalendarPopup)
 
@@ -79,18 +79,18 @@ c_ PyDateEdit(QDateEdit):
     # Set: setFirstDayOfWeek()
     # Reset: resetFirstDayOfWeek()
     #
-    ___ getFirstDayOfWeek(self):
-        r_ self.__firstDayOfWeek
+    ___ getFirstDayOfWeek
+        r_ __firstDayOfWeek
     ___ setFirstDayOfWeek  dayOfWeek):
-        __ dayOfWeek !_ self.__firstDayOfWeek:
-            self.__firstDayOfWeek _ dayOfWeek
-            __ self.__cw:
-                self.__cw.setFirstDayOfWeek(dayOfWeek)
-    ___ resetFirstDayOfWeek(self):
-        __ self.__firstDayOfWeek !_ __.Monday:
-            self.__firstDayOfWeek _ __.Monday
-            __ self.__cw:
-                self.__cw.setFirstDayOfWeek(__.Monday)
+        __ dayOfWeek !_ __firstDayOfWeek:
+            __firstDayOfWeek _ dayOfWeek
+            __ __cw:
+                __cw.setFirstDayOfWeek(dayOfWeek)
+    ___ resetFirstDayOfWeek
+        __ __firstDayOfWeek !_ __.Monday:
+            __firstDayOfWeek _ __.Monday
+            __ __cw:
+                __cw.setFirstDayOfWeek(__.Monday)
     firstDayOfWeek _ pyqtProperty(__.DayOfWeek,
                                          fget_getFirstDayOfWeek,
                                          fset_setFirstDayOfWeek,
@@ -102,18 +102,18 @@ c_ PyDateEdit(QDateEdit):
     # Set: setGridVisible()
     # Reset: resetGridVisible()
     #
-    ___ isGridVisible(self):
-        r_ self.__gridVisible
+    ___ isGridVisible
+        r_ __gridVisible
     ___ setGridVisible  show):
-        __ show !_ self.__gridVisible:
-            self.__gridVisible _ show
-            __ self.__cw:
-                self.__cw.setGridVisible(show)
-    ___ resetGridVisible(self):
-        __ self.__gridVisible !_ False:
-            self.__gridVisible _ False
-            __ self.__cw:
-                self.__cw.setGridVisible F..
+        __ show !_ __gridVisible:
+            __gridVisible _ show
+            __ __cw:
+                __cw.setGridVisible(show)
+    ___ resetGridVisible
+        __ __gridVisible !_ False:
+            __gridVisible _ False
+            __ __cw:
+                __cw.setGridVisible F..
     gridVisible _ pyqtProperty(bool,
                                       fget_isGridVisible,
                                       fset_setGridVisible,
@@ -125,18 +125,18 @@ c_ PyDateEdit(QDateEdit):
     # Set: setHorizontalHeaderFormat()
     # Reset: resetHorizontalHeaderFormat()
     #
-    ___ getHorizontalHeaderFormat(self):
-        r_ self.__horizontalHeaderFormat
+    ___ getHorizontalHeaderFormat
+        r_ __horizontalHeaderFormat
     ___ setHorizontalHeaderFormat  format):
-        __ format !_ self.__horizontalHeaderFormat:
-            self.__horizontalHeaderFormat _ format
-            __ self.__cw:
-                self.__cw.setHorizontalHeaderFormat(format)
-    ___ resetHorizontalHeaderFormat(self):
-        __ self.__horizontalHeaderFormat !_ QCalendarWidget.ShortDayNames:
-            self.__horizontalHeaderFormat _ QCalendarWidget.ShortDayNames
-            __ self.__cw:
-                self.__cw.setHorizontalHeaderFormat(QCalendarWidget.ShortDayNames)
+        __ format !_ __horizontalHeaderFormat:
+            __horizontalHeaderFormat _ format
+            __ __cw:
+                __cw.setHorizontalHeaderFormat(format)
+    ___ resetHorizontalHeaderFormat
+        __ __horizontalHeaderFormat !_ QCalendarWidget.ShortDayNames:
+            __horizontalHeaderFormat _ QCalendarWidget.ShortDayNames
+            __ __cw:
+                __cw.setHorizontalHeaderFormat(QCalendarWidget.ShortDayNames)
     horizontalHeaderFormat _ pyqtProperty(QCalendarWidget.HorizontalHeaderFormat,
                                                  fget_getHorizontalHeaderFormat,
                                                  fset_setHorizontalHeaderFormat,
@@ -148,18 +148,18 @@ c_ PyDateEdit(QDateEdit):
     # Set: setVerticalHeaderFormat()
     # Reset: resetVerticalHeaderFormat()
     #
-    ___ getVerticalHeaderFormat(self):
-        r_ self.__verticalHeaderFormat
+    ___ getVerticalHeaderFormat
+        r_ __verticalHeaderFormat
     ___ setVerticalHeaderFormat  format):
-        __ format !_ self.__verticalHeaderFormat:
-            self.__verticalHeaderFormat _ format
-            __ self.__cw:
-                self.__cw.setVerticalHeaderFormat(format)
-    ___ resetVerticalHeaderFormat(self):
-        __ self.__verticalHeaderFormat !_ QCalendarWidget.ISOWeekNumbers:
-            self.__verticalHeaderFormat _ QCalendarWidget.ISOWeekNumbers
-            __ self.__cw:
-                self.__cw.setVerticalHeaderFormat(QCalendarWidget.ISOWeekNumbers)
+        __ format !_ __verticalHeaderFormat:
+            __verticalHeaderFormat _ format
+            __ __cw:
+                __cw.setVerticalHeaderFormat(format)
+    ___ resetVerticalHeaderFormat
+        __ __verticalHeaderFormat !_ QCalendarWidget.ISOWeekNumbers:
+            __verticalHeaderFormat _ QCalendarWidget.ISOWeekNumbers
+            __ __cw:
+                __cw.setVerticalHeaderFormat(QCalendarWidget.ISOWeekNumbers)
     verticalHeaderFormat _ pyqtProperty(QCalendarWidget.VerticalHeaderFormat,
                                                fget_getVerticalHeaderFormat,
                                                fset_setVerticalHeaderFormat,
@@ -171,18 +171,18 @@ c_ PyDateEdit(QDateEdit):
     # Set: setNavigationBarVisible()
     # Reset: resetNavigationBarVisible()
     #
-    ___ isNavigationBarVisible(self):
-        r_ self.__navigationBarVisible
+    ___ isNavigationBarVisible
+        r_ __navigationBarVisible
     ___ setNavigationBarVisible  visible):
-        __ visible !_ self.__navigationBarVisible:
-            self.__navigationBarVisible _ visible
-            __ self.__cw:
-                self.__cw.setNavigationBarVisible(visible)
-    ___ resetNavigationBarVisible(self):
-        __ self.__navigationBarVisible !_ T..
-            self.__navigationBarVisible _ True
-            __ self.__cw:
-                self.__cw.setNavigationBarVisible(True)
+        __ visible !_ __navigationBarVisible:
+            __navigationBarVisible _ visible
+            __ __cw:
+                __cw.setNavigationBarVisible(visible)
+    ___ resetNavigationBarVisible
+        __ __navigationBarVisible !_ T..
+            __navigationBarVisible _ True
+            __ __cw:
+                __cw.setNavigationBarVisible(True)
     navigationBarVisible _ pyqtProperty(bool,
                                                fget_isNavigationBarVisible,
                                                fset_setNavigationBarVisible,
@@ -198,16 +198,16 @@ c_ PyDateTimeEdit(QDateTimeEdit):
     # Force use of the calendar popup
     # Set default values for calendar properties
     #
-    ___ __init__  *args):
-        super(PyDateTimeEdit, self).__init__(*args)
+    ___  -   *args):
+        super(PyDateTimeEdit, self). - (*args)
 
-        self.setCalendarPopup(True)
-        self.__cw _ N..
-        self.__firstDayOfWeek _ __.Monday
-        self.__gridVisible _ False
-        self.__horizontalHeaderFormat _ QCalendarWidget.ShortDayNames
-        self.__verticalHeaderFormat _ QCalendarWidget.ISOWeekNumbers
-        self.__navigationBarVisible _ True
+        setCalendarPopup(True)
+        __cw _ N..
+        __firstDayOfWeek _ __.Monday
+        __gridVisible _ False
+        __horizontalHeaderFormat _ QCalendarWidget.ShortDayNames
+        __verticalHeaderFormat _ QCalendarWidget.ISOWeekNumbers
+        __navigationBarVisible _ True
 
     #
     # Call event handler of base class
@@ -217,19 +217,19 @@ c_ PyDateTimeEdit(QDateTimeEdit):
     ___ mousePressEvent  event):
         super(PyDateTimeEdit, self).mousePressEvent(event)
 
-        __ no. self.__cw:
-            self.__cw _ self.findChild(QCalendarWidget)
-            __ self.__cw:
-                self.__cw.setFirstDayOfWeek(self.__firstDayOfWeek)
-                self.__cw.setGridVisible(self.__gridVisible)
-                self.__cw.setHorizontalHeaderFormat(self.__horizontalHeaderFormat)
-                self.__cw.setVerticalHeaderFormat(self.__verticalHeaderFormat)
-                self.__cw.setNavigationBarVisible(self.__navigationBarVisible)
+        __ no. __cw:
+            __cw _ findChild(QCalendarWidget)
+            __ __cw:
+                __cw.setFirstDayOfWeek(__firstDayOfWeek)
+                __cw.setGridVisible(__gridVisible)
+                __cw.setHorizontalHeaderFormat(__horizontalHeaderFormat)
+                __cw.setVerticalHeaderFormat(__verticalHeaderFormat)
+                __cw.setNavigationBarVisible(__navigationBarVisible)
 
     #
     # Make sure, the calendarPopup property is invisible in Designer
     #
-    ___ getCalendarPopup(self):
+    ___ getCalendarPopup
         r_ True
     calendarPopup _ pyqtProperty(bool, fget_getCalendarPopup)
 
@@ -239,18 +239,18 @@ c_ PyDateTimeEdit(QDateTimeEdit):
     # Set: setFirstDayOfWeek()
     # Reset: resetFirstDayOfWeek()
     #
-    ___ getFirstDayOfWeek(self):
-        r_ self.__firstDayOfWeek
+    ___ getFirstDayOfWeek
+        r_ __firstDayOfWeek
     ___ setFirstDayOfWeek  dayOfWeek):
-        __ dayOfWeek !_ self.__firstDayOfWeek:
-            self.__firstDayOfWeek _ dayOfWeek
-            __ self.__cw:
-                self.__cw.setFirstDayOfWeek(dayOfWeek)
-    ___ resetFirstDayOfWeek(self):
-        __ self.__firstDayOfWeek !_ __.Monday:
-            self.__firstDayOfWeek _ __.Monday
-            __ self.__cw:
-                self.__cw.setFirstDayOfWeek(__.Monday)
+        __ dayOfWeek !_ __firstDayOfWeek:
+            __firstDayOfWeek _ dayOfWeek
+            __ __cw:
+                __cw.setFirstDayOfWeek(dayOfWeek)
+    ___ resetFirstDayOfWeek
+        __ __firstDayOfWeek !_ __.Monday:
+            __firstDayOfWeek _ __.Monday
+            __ __cw:
+                __cw.setFirstDayOfWeek(__.Monday)
     firstDayOfWeek _ pyqtProperty(__.DayOfWeek,
                                          fget_getFirstDayOfWeek,
                                          fset_setFirstDayOfWeek,
@@ -262,18 +262,18 @@ c_ PyDateTimeEdit(QDateTimeEdit):
     # Set: setGridVisible()
     # Reset: resetGridVisible()
     #
-    ___ isGridVisible(self):
-        r_ self.__gridVisible
+    ___ isGridVisible
+        r_ __gridVisible
     ___ setGridVisible  show):
-        __ show !_ self.__gridVisible:
-            self.__gridVisible _ show
-            __ self.__cw:
-                self.__cw.setGridVisible(show)
-    ___ resetGridVisible(self):
-        __ self.__gridVisible !_ False:
-            self.__gridVisible _ False
-            __ self.__cw:
-                self.__cw.setGridVisible F..
+        __ show !_ __gridVisible:
+            __gridVisible _ show
+            __ __cw:
+                __cw.setGridVisible(show)
+    ___ resetGridVisible
+        __ __gridVisible !_ False:
+            __gridVisible _ False
+            __ __cw:
+                __cw.setGridVisible F..
     gridVisible _ pyqtProperty(bool,
                                       fget_isGridVisible,
                                       fset_setGridVisible,
@@ -285,18 +285,18 @@ c_ PyDateTimeEdit(QDateTimeEdit):
     # Set: setHorizontalHeaderFormat()
     # Reset: resetHorizontalHeaderFormat()
     #
-    ___ getHorizontalHeaderFormat(self):
-        r_ self.__horizontalHeaderFormat
+    ___ getHorizontalHeaderFormat
+        r_ __horizontalHeaderFormat
     ___ setHorizontalHeaderFormat  format):
-        __ format !_ self.__horizontalHeaderFormat:
-            self.__horizontalHeaderFormat _ format
-            __ self.__cw:
-                self.__cw.setHorizontalHeaderFormat(format)
-    ___ resetHorizontalHeaderFormat(self):
-        __ self.__horizontalHeaderFormat !_ QCalendarWidget.ShortDayNames:
-            self.__horizontalHeaderFormat _ QCalendarWidget.ShortDayNames
-            __ self.__cw:
-                self.__cw.setHorizontalHeaderFormat(QCalendarWidget.ShortDayNames)
+        __ format !_ __horizontalHeaderFormat:
+            __horizontalHeaderFormat _ format
+            __ __cw:
+                __cw.setHorizontalHeaderFormat(format)
+    ___ resetHorizontalHeaderFormat
+        __ __horizontalHeaderFormat !_ QCalendarWidget.ShortDayNames:
+            __horizontalHeaderFormat _ QCalendarWidget.ShortDayNames
+            __ __cw:
+                __cw.setHorizontalHeaderFormat(QCalendarWidget.ShortDayNames)
     horizontalHeaderFormat _ pyqtProperty(QCalendarWidget.HorizontalHeaderFormat,
                                                  fget_getHorizontalHeaderFormat,
                                                  fset_setHorizontalHeaderFormat,
@@ -308,18 +308,18 @@ c_ PyDateTimeEdit(QDateTimeEdit):
     # Set: setVerticalHeaderFormat()
     # Reset: resetVerticalHeaderFormat()
     #
-    ___ getVerticalHeaderFormat(self):
-        r_ self.__verticalHeaderFormat
+    ___ getVerticalHeaderFormat
+        r_ __verticalHeaderFormat
     ___ setVerticalHeaderFormat  format):
-        __ format !_ self.__verticalHeaderFormat:
-            self.__verticalHeaderFormat _ format
-            __ self.__cw:
-                self.__cw.setVerticalHeaderFormat(format)
-    ___ resetVerticalHeaderFormat(self):
-        __ self.__verticalHeaderFormat !_ QCalendarWidget.ISOWeekNumbers:
-            self.__verticalHeaderFormat _ QCalendarWidget.ISOWeekNumbers
-            __ self.__cw:
-                self.__cw.setVerticalHeaderFormat(QCalendarWidget.ISOWeekNumbers)
+        __ format !_ __verticalHeaderFormat:
+            __verticalHeaderFormat _ format
+            __ __cw:
+                __cw.setVerticalHeaderFormat(format)
+    ___ resetVerticalHeaderFormat
+        __ __verticalHeaderFormat !_ QCalendarWidget.ISOWeekNumbers:
+            __verticalHeaderFormat _ QCalendarWidget.ISOWeekNumbers
+            __ __cw:
+                __cw.setVerticalHeaderFormat(QCalendarWidget.ISOWeekNumbers)
     verticalHeaderFormat _ pyqtProperty(QCalendarWidget.VerticalHeaderFormat,
                                                fget_getVerticalHeaderFormat,
                                                fset_setVerticalHeaderFormat,
@@ -331,18 +331,18 @@ c_ PyDateTimeEdit(QDateTimeEdit):
     # Set: setNavigationBarVisible()
     # Reset: resetNavigationBarVisible()
     #
-    ___ isNavigationBarVisible(self):
-        r_ self.__navigationBarVisible
+    ___ isNavigationBarVisible
+        r_ __navigationBarVisible
     ___ setNavigationBarVisible  visible):
-        __ visible !_ self.__navigationBarVisible:
-            self.__navigationBarVisible _ visible
-            __ self.__cw:
-                self.__cw.setNavigationBarVisible(visible)
-    ___ resetNavigationBarVisible(self):
-        __ self.__navigationBarVisible !_ T..
-            self.__navigationBarVisible _ True
-            __ self.__cw:
-                self.__cw.setNavigationBarVisible(True)
+        __ visible !_ __navigationBarVisible:
+            __navigationBarVisible _ visible
+            __ __cw:
+                __cw.setNavigationBarVisible(visible)
+    ___ resetNavigationBarVisible
+        __ __navigationBarVisible !_ T..
+            __navigationBarVisible _ True
+            __ __cw:
+                __cw.setNavigationBarVisible(True)
     navigationBarVisible _ pyqtProperty(bool,
                                                fget_isNavigationBarVisible,
                                                fset_setNavigationBarVisible,
@@ -353,7 +353,7 @@ __ __name__ == "__main__":
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     w _ ?W..
     lay _ QHBoxLayout()

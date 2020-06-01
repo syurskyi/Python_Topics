@@ -9,13 +9,13 @@ import sys
 
 
 class AboutDialog(QDialog):
-    def __init__(self, *args, **kwargs):
-        super(AboutDialog, self).__init__(*args, **kwargs)
+    def  - (self, *args, **kwargs):
+        super(AboutDialog, self). - (*args, **kwargs)
 
         QBtn = QDialogButtonBox.Ok  # No cancel
-        self.buttonBox = QDialogButtonBox(QBtn)
-        self.buttonBox.accepted.connect(self.accept)
-        self.buttonBox.rejected.connect(self.reject)
+        buttonBox = QDialogButtonBox(QBtn)
+        buttonBox.accepted.connect(accept)
+        buttonBox.rejected.connect(reject)
 
         layout = QVBoxLayout()
 
@@ -33,115 +33,115 @@ class AboutDialog(QDialog):
         layout.addWidget(QLabel("Version 23.35.211.233232"))
         layout.addWidget(QLabel("Copyright 2015 MooseAche Inc."))
 
-        for i in range(0, layout.count()):
+        ___ i __ range(0, layout.count()):
             layout.itemAt(i).setAlignment(Qt.AlignHCenter)
 
-        layout.addWidget(self.buttonBox)
+        layout.addWidget(buttonBox)
 
-        self.setLayout(layout)
+        setLayout(layout)
 
 
 class MainWindow(QMainWindow):
-    def __init__(self, *args, **kwargs):
-        super(MainWindow, self).__init__(*args, **kwargs)
+    def  - (self, *args, **kwargs):
+        super(MainWindow, self). - (*args, **kwargs)
 
-        self.browser = QWebEngineView()
-        self.browser.setUrl(QUrl("http://google.com"))
+        browser = QWebEngineView()
+        browser.setUrl(QUrl("http://google.com"))
 
-        self.browser.urlChanged.connect(self.update_urlbar)
-        self.browser.loadFinished.connect(self.update_title)
-        self.setCentralWidget(self.browser)
+        browser.urlChanged.connect(update_urlbar)
+        browser.loadFinished.connect(update_title)
+        setCentralWidget(browser)
 
-        self.status = QStatusBar()
-        self.setStatusBar(self.status)
+        status = QStatusBar()
+        setStatusBar(status)
 
         navtb = QToolBar("Navigation")
         navtb.setIconSize(QSize(16, 16))
-        self.addToolBar(navtb)
+        addToolBar(navtb)
 
         back_btn = QAction(QIcon(os.path.join('images', 'arrow-180.png')), "Back", self)
         back_btn.setStatusTip("Back to previous page")
-        back_btn.triggered.connect(self.browser.back)
+        back_btn.triggered.connect(browser.back)
         navtb.addAction(back_btn)
 
         next_btn = QAction(QIcon(os.path.join('images', 'arrow-000.png')), "Forward", self)
         next_btn.setStatusTip("Forward to next page")
-        next_btn.triggered.connect(self.browser.forward)
+        next_btn.triggered.connect(browser.forward)
         navtb.addAction(next_btn)
 
         reload_btn = QAction(QIcon(os.path.join('images', 'arrow-circle-315.png')), "Reload", self)
         reload_btn.setStatusTip("Reload page")
-        reload_btn.triggered.connect(self.browser.reload)
+        reload_btn.triggered.connect(browser.reload)
         navtb.addAction(reload_btn)
 
         home_btn = QAction(QIcon(os.path.join('images', 'home.png')), "Home", self)
         home_btn.setStatusTip("Go home")
-        home_btn.triggered.connect(self.navigate_home)
+        home_btn.triggered.connect(navigate_home)
         navtb.addAction(home_btn)
 
         navtb.addSeparator()
 
-        self.httpsicon = QLabel()  # Yes, really!
-        self.httpsicon.setPixmap(QPixmap(os.path.join('images', 'lock-nossl.png')))
-        navtb.addWidget(self.httpsicon)
+        httpsicon = QLabel()  # Yes, really!
+        httpsicon.setPixmap(QPixmap(os.path.join('images', 'lock-nossl.png')))
+        navtb.addWidget(httpsicon)
 
-        self.urlbar = QLineEdit()
-        self.urlbar.returnPressed.connect(self.navigate_to_url)
-        navtb.addWidget(self.urlbar)
+        urlbar = QLineEdit()
+        urlbar.returnPressed.connect(navigate_to_url)
+        navtb.addWidget(urlbar)
 
         stop_btn = QAction(QIcon(os.path.join('images', 'cross-circle.png')), "Stop", self)
         stop_btn.setStatusTip("Stop loading current page")
-        stop_btn.triggered.connect(self.browser.stop)
+        stop_btn.triggered.connect(browser.stop)
         navtb.addAction(stop_btn)
 
         # Uncomment to disable native menubar on Mac
         # self.menuBar().setNativeMenuBar(False)
 
-        file_menu = self.menuBar().addMenu("&File")
+        file_menu = menuBar().addMenu("&File")
 
         open_file_action = QAction(QIcon(os.path.join('images', 'disk--arrow.png')), "Open file...", self)
         open_file_action.setStatusTip("Open from file")
-        open_file_action.triggered.connect(self.open_file)
+        open_file_action.triggered.connect(open_file)
         file_menu.addAction(open_file_action)
 
         save_file_action = QAction(QIcon(os.path.join('images', 'disk--pencil.png')), "Save Page As...", self)
         save_file_action.setStatusTip("Save current page to file")
-        save_file_action.triggered.connect(self.save_file)
+        save_file_action.triggered.connect(save_file)
         file_menu.addAction(save_file_action)
 
         print_action = QAction(QIcon(os.path.join('images', 'printer.png')), "Print...", self)
         print_action.setStatusTip("Print current page")
-        print_action.triggered.connect(self.print_page)
+        print_action.triggered.connect(print_page)
         file_menu.addAction(print_action)
 
-        help_menu = self.menuBar().addMenu("&Help")
+        help_menu = menuBar().addMenu("&Help")
 
         about_action = QAction(QIcon(os.path.join('images', 'question.png')), "About MooseAche", self)
         about_action.setStatusTip("Find out more about MooseAche")  # Hungry!
-        about_action.triggered.connect(self.about)
+        about_action.triggered.connect(about)
         help_menu.addAction(about_action)
 
         navigate_mozarella_action = QAction(QIcon(os.path.join('images', 'lifebuoy.png')), "MooseAche Homepage", self)
         navigate_mozarella_action.setStatusTip("Go to MooseAche Homepage")
-        navigate_mozarella_action.triggered.connect(self.navigate_mozarella)
+        navigate_mozarella_action.triggered.connect(navigate_mozarella)
         help_menu.addAction(navigate_mozarella_action)
 
-        self.show()
+        show()
 
-        self.setWindowIcon(QIcon(os.path.join('images', 'ma-icon-64.png')))
+        setWindowIcon(QIcon(os.path.join('images', 'ma-icon-64.png')))
 
-    def update_title(self):
-        title = self.browser.page().title()
-        self.setWindowTitle("%s - MooseAche" % title)
+    def update_title
+        title = browser.page().title()
+        setWindowTitle("%s - MooseAche" % title)
 
-    def navigate_mozarella(self):
-        self.browser.setUrl(QUrl("https://www.udemy.com/522076"))
+    def navigate_mozarella
+        browser.setUrl(QUrl("https://www.udemy.com/522076"))
 
-    def about(self):
+    def about
         dlg = AboutDialog()
         dlg.exec_()
 
-    def open_file(self):
+    def open_file
         filename, _ = QFileDialog.getOpenFileName(self, "Open file", "",
                                                   "Hypertext Markup Language (*.htm *.html);;"
                                                   "All files (*.*)")
@@ -150,49 +150,49 @@ class MainWindow(QMainWindow):
             with open(filename, 'r') as f:
                 html = f.read()
 
-            self.browser.setHtml(html)
-            self.urlbar.setText(filename)
+            browser.setHtml(html)
+            urlbar.setText(filename)
 
-    def save_file(self):
+    def save_file
         filename, _ = QFileDialog.getSaveFileName(self, "Save Page As", "",
                                                   "Hypertext Markup Language (*.htm *html);;"
                                                   "All files (*.*)")
 
         if filename:
-            html = self.browser.page().toHtml()
+            html = browser.page().toHtml()
             with open(filename, 'w') as f:
                 f.write(html)
 
-    def print_page(self):
+    def print_page
         dlg = QPrintPreviewDialog()
-        dlg.paintRequested.connect(self.browser.print_)
+        dlg.paintRequested.connect(browser.print_)
         dlg.exec_()
 
-    def navigate_home(self):
-        self.browser.setUrl(QUrl("http://www.google.com"))
+    def navigate_home
+        browser.setUrl(QUrl("http://www.google.com"))
 
-    def navigate_to_url(self):  # Does not receive the Url
-        q = QUrl(self.urlbar.text())
+    def navigate_to_url   # Does not receive the Url
+        q = QUrl(urlbar.text())
         if q.scheme() == "":
             q.setScheme("http")
 
-        self.browser.setUrl(q)
+        browser.setUrl(q)
 
     def update_urlbar(self, q):
 
         if q.scheme() == 'https':
             # Secure padlock icon
-            self.httpsicon.setPixmap(QPixmap(os.path.join('images', 'lock-ssl.png')))
+            httpsicon.setPixmap(QPixmap(os.path.join('images', 'lock-ssl.png')))
 
         else:
             # Insecure padlock icon
-            self.httpsicon.setPixmap(QPixmap(os.path.join('images', 'lock-nossl.png')))
+            httpsicon.setPixmap(QPixmap(os.path.join('images', 'lock-nossl.png')))
 
-        self.urlbar.setText(q.toString())
-        self.urlbar.setCursorPosition(0)
+        urlbar.setText(q.toString())
+        urlbar.setCursorPosition(0)
 
 
-app = QApplication(sys.argv)
+app = QApplication(sys.a..
 app.setApplicationName("MooseAche")
 app.setOrganizationName("MooseAche")
 app.setOrganizationDomain("MooseAche.org")

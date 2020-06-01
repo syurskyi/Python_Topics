@@ -54,94 +54,94 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
     # collected.
     _window_list _   # list
 
-    ___ __init__(self):
-        super(MainWindow, self).__init__()
+    ___  -
+        super(MainWindow, self). - ()
 
-        MainWindow._window_list.ap..(self)
+        MainWindow._window_list.ap..
 
-        self.setupUi(self)
+        setupUi
 
         # Qt Designer (at least to v4.2.1) can't handle arbitrary widgets in a
         # QToolBar - even though uic can, and they are in the original .ui
         # file.  Therefore we manually add the problematic widgets.
-        self.lblAddress _ QLabel("Address", self.tbAddress)
-        self.tbAddress.insertWidget(self.actionGo, self.lblAddress)
-        self.addressEdit _ QLineEdit(self.tbAddress)
-        self.tbAddress.insertWidget(self.actionGo, self.addressEdit)
+        lblAddress _ QLabel("Address", tbAddress)
+        tbAddress.insertWidget(actionGo, lblAddress)
+        addressEdit _ QLineEdit(tbAddress)
+        tbAddress.insertWidget(actionGo, addressEdit)
 
-        self.addressEdit.rP__.c..(self.actionGo.trigger)
-        self.actionBack.t__.c..(self.WebBrowser.GoBack)
-        self.actionForward.t__.c..(self.WebBrowser.GoForward)
-        self.actionStop.t__.c..(self.WebBrowser.Stop)
-        self.actionRefresh.t__.c..(self.WebBrowser.Refresh)
-        self.actionHome.t__.c..(self.WebBrowser.GoHome)
-        self.actionSearch.t__.c..(self.WebBrowser.GoSearch)
+        addressEdit.rP__.c..(actionGo.trigger)
+        actionBack.t__.c..(WebBrowser.GoBack)
+        actionForward.t__.c..(WebBrowser.GoForward)
+        actionStop.t__.c..(WebBrowser.Stop)
+        actionRefresh.t__.c..(WebBrowser.Refresh)
+        actionHome.t__.c..(WebBrowser.GoHome)
+        actionSearch.t__.c..(WebBrowser.GoSearch)
 
-        self.pb _ QProgressBar(self.statusBar())
-        self.pb.setTextVisible F..
-        self.pb.hide()
-        self.statusBar().addPermanentWidget(self.pb)
+        pb _ QProgressBar(statusBar())
+        pb.setTextVisible F..
+        pb.hide()
+        statusBar().addPermanentWidget(pb)
 
-        self.WebBrowser.dynamicCall('GoHome()')
+        WebBrowser.dynamicCall('GoHome()')
 
     ___ closeEvent  e):
-        MainWindow._window_list.remove(self)
+        MainWindow._window_list.remove
         e.accept()
 
     ___ on_WebBrowser_TitleChange  title):
-        self.setWindowTitle("Qt WebBrowser - " + title)
+        setWindowTitle("Qt WebBrowser - " + title)
 
     ___ on_WebBrowser_ProgressChange  a, b):
         __ a <_ 0 or b <_ 0:
-            self.pb.hide()
+            pb.hide()
             r_
 
-        self.pb.s..
-        self.pb.setRange(0, b)
-        self.pb.setValue(a)
+        pb.s..
+        pb.setRange(0, b)
+        pb.setValue(a)
 
     ___ on_WebBrowser_CommandStateChange  cmd, on):
         __ cmd == 1:
-            self.actionForward.setEnabled(on)
+            actionForward.setEnabled(on)
         ____ cmd == 2:
-            self.actionBack.setEnabled(on)
+            actionBack.setEnabled(on)
 
-    ___ on_WebBrowser_BeforeNavigate(self):
-        self.actionStop.setEnabled(True)
+    ___ on_WebBrowser_BeforeNavigate
+        actionStop.setEnabled(True)
 
     ___ on_WebBrowser_NavigateComplete  _):
-        self.actionStop.setEnabled F..
+        actionStop.setEnabled F..
 
     @pyqtSlot()
-    ___ on_actionGo_triggered(self):
-        self.WebBrowser.dynamicCall('Navigate(const QString&)',
-                self.addressEdit.t__())
+    ___ on_actionGo_triggered
+        WebBrowser.dynamicCall('Navigate(const QString&)',
+                addressEdit.t__())
 
     @pyqtSlot()
-    ___ on_actionNewWindow_triggered(self):
+    ___ on_actionNewWindow_triggered
         window _ MainWindow()
         window.s..
-        __ self.addressEdit.t__().isEmpty
+        __ addressEdit.t__().isEmpty
             r_;
 
-        window.addressEdit.sT..(self.addressEdit.t__())
+        window.addressEdit.sT..(addressEdit.t__())
         window.actionStop.setEnabled(True)
         window.on_actionGo_triggered()
 
     @pyqtSlot()
-    ___ on_actionAbout_triggered(self):
+    ___ on_actionAbout_triggered
         ?MB...about  "About WebBrowser",
                 "This Example has been created using the ActiveQt integration into Qt Designer.\n"
                 "It demonstrates the use of QAxWidget to embed the Internet Explorer ActiveX\n"
                 "control into a Qt application.")
 
     @pyqtSlot()
-    ___ on_actionAboutQt_triggered(self):
+    ___ on_actionAboutQt_triggered
         ?MB...aboutQt  "About Qt")
 
 
 __ __name__ == "__main__":
-    a _ ?A..(___.argv)
+    a _ ?A..(___.a..
     w _ MainWindow()
     w.s..
     ___.exit(a.exec_())

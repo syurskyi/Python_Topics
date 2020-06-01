@@ -51,25 +51,25 @@ ____ ?.?W.. ______ (?A.., QComboBox, QGridLayout,
 
 
 c_ ColorListEditor(QComboBox):
-    ___ __init__  widget_None):
-        super(ColorListEditor, self).__init__(widget)
+    ___  -   widget_None):
+        super(ColorListEditor, self). - (widget)
 
-        self.populateList()
+        populateList()
 
-    ___ getColor(self):
-        color _ self.itemData(self.currentIndex(), __.DecorationRole)
+    ___ getColor
+        color _ itemData(currentIndex(), __.DecorationRole)
         r_ color
 
     ___ sC..  color):
-        self.setCurrentIndex(self.findData(color, __.DecorationRole))
+        setCurrentIndex(findData(color, __.DecorationRole))
 
     color _ pyqtProperty(?C.., getColor, sC.., user_True)
 
-    ___ populateList(self):
-        for i, colorName in enumerate(?C...colorNames()):
+    ___ populateList
+        ___ i, colorName __ en..(?C...colorNames()):
             color _ ?C..(colorName)
-            self.insertItem(i, colorName)
-            self.setItemData(i, color, __.DecorationRole)
+            insertItem(i, colorName)
+            setItemData(i, color, __.DecorationRole)
 
 
 c_ ColorListItemEditorCreator(QItemEditorCreatorBase):
@@ -78,16 +78,16 @@ c_ ColorListItemEditorCreator(QItemEditorCreatorBase):
 
 
 c_ Window(QWidget):
-    ___ __init__  parent_None):
-        super(Window, self).__init__(parent)
+    ___  -   parent_None):
+        super(Window, self). - (parent)
 
         factory _ QItemEditorFactory()
         factory.registerEditor(QVariant.Color, ColorListItemEditorCreator())
         QItemEditorFactory.setDefaultFactory(factory)
 
-        self.createGUI()
+        createGUI()
 
-    ___ createGUI(self):
+    ___ createGUI
         tableData _ [
             ("Alice", ?C..('aliceblue')),
             ("Neptun", ?C..('aquamarine')),
@@ -99,7 +99,7 @@ c_ Window(QWidget):
         table.verticalHeader().setVisible F..
         table.resize(150, 50)
 
-        for i, (name, color) in enumerate(tableData):
+        ___ i, (name, color) __ en..(tableData):
             nameItem _ QTableWidgetItem(name)
             colorItem _ QTableWidgetItem()
             colorItem.setData(__.DisplayRole, color)
@@ -111,16 +111,16 @@ c_ Window(QWidget):
 
         layout _ QGridLayout()
         layout.aW..(table, 0, 0)
-        self.sL..(layout)
+        sL..(layout)
 
-        self.setWindowTitle("Color Editor Factory")
+        setWindowTitle("Color Editor Factory")
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     window _ Window()
     window.s..

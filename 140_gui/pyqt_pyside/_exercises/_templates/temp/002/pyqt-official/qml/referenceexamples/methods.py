@@ -72,56 +72,56 @@ BirthdayParty {
 
 
 c_ Person(QObject):
-    ___ __init__  parent_None):
-        super(Person, self).__init__(parent)
+    ___  -   parent_None):
+        super(Person, self). - (parent)
 
-        self._name _ ''
-        self._shoeSize _ 0
+        _name _ ''
+        _shoeSize _ 0
 
     @pyqtProperty(str)
-    ___ name(self):
-        r_ self._name
+    ___ name
+        r_ _name
 
     @name.setter
     ___ name  name):
-        self._name _ name
+        _name _ name
 
     @pyqtProperty(int)
-    ___ shoeSize(self):
-        r_ self._shoeSize
+    ___ shoeSize
+        r_ _shoeSize
 
     @shoeSize.setter
     ___ shoeSize  shoeSize):
-        self._shoeSize _ shoeSize
+        _shoeSize _ shoeSize
 
 
 c_ BirthdayParty(QObject):
-    ___ __init__  parent_None):
-        super(BirthdayParty, self).__init__(parent)
+    ___  -   parent_None):
+        super(BirthdayParty, self). - (parent)
 
-        self._host _ N..
-        self._guests _   # list
+        _host _ N..
+        _guests _   # list
 
     @pyqtProperty(Person)
-    ___ host(self):
-        r_ self._host
+    ___ host
+        r_ _host
 
     @host.setter
     ___ host  host):
-        self._host _ host
+        _host _ host
 
     @pyqtProperty(QQmlListProperty)
-    ___ guests(self):
-        r_ QQmlListProperty(Person, self, self._guests)
+    ___ guests
+        r_ QQmlListProperty(Person, self, _guests)
 
     @pyqtSlot(str)
     ___ invite  name):
-        person _ Person(self)
+        person _ Person
         person.name _ name
-        self._guests.ap..(person)
+        _guests.ap..(person)
 
 
-app _ QCoreApplication(___.argv)
+app _ QCoreApplication(___.a..
 
 qmlRegisterType(BirthdayParty, "People", 1, 0, "BirthdayParty")
 qmlRegisterType(Person, "People", 1, 0, "Person")
@@ -137,8 +137,8 @@ __ party __ no. N.. and party.host __ no. N..:
     print("\"%s\" is having a birthday!" % party.host.name)
     print("They are inviting:")
 
-    for guest in party.guests:
+    ___ guest __ party.guests:
         print("    \"%s\"" % guest.name)
 ____
-    for e in component.errors
+    ___ e __ component.errors
         print("Error:", e.toString());

@@ -51,94 +51,94 @@ ____ ui_mainwindow ______ Ui_MainWindow
 
 
 c_ TreeItem(object):
-    ___ __init__  data, parent_None):
-        self.parentItem _ parent
-        self.itemData _ data
-        self.childItems _   # list
+    ___  -   data, parent_None):
+        parentItem _ parent
+        itemData _ data
+        childItems _   # list
 
     ___ child  row):
-        r_ self.childItems[row]
+        r_ childItems[row]
 
-    ___ childCount(self):
-        r_ le.(self.childItems)
+    ___ childCount
+        r_ le.(childItems)
 
-    ___ childNumber(self):
-        __ self.parentItem !_ N..:
-            r_ self.parentItem.childItems.index(self)
+    ___ childNumber
+        __ parentItem !_ N..:
+            r_ parentItem.childItems.index
         r_ 0
 
-    ___ columnCount(self):
-        r_ le.(self.itemData)
+    ___ columnCount
+        r_ le.(itemData)
 
     ___ data  column):
-        r_ self.itemData[column]
+        r_ itemData[column]
 
     ___ insertChildren  position, count, columns):
-        __ position < 0 or position > le.(self.childItems):
+        __ position < 0 or position > le.(childItems):
             r_ False
 
-        for row in range(count):
-            data _ [N.. for v in range(columns)]
+        ___ row __ range(count):
+            data _ [N.. ___ v __ range(columns)]
             item _ TreeItem(data, self)
-            self.childItems.insert(position, item)
+            childItems.insert(position, item)
 
         r_ True
 
     ___ insertColumns  position, columns):
-        __ position < 0 or position > le.(self.itemData):
+        __ position < 0 or position > le.(itemData):
             r_ False
 
-        for column in range(columns):
-            self.itemData.insert(position, N..)
+        ___ column __ range(columns):
+            itemData.insert(position, N..)
 
-        for child in self.childItems:
+        ___ child __ childItems:
             child.insertColumns(position, columns)
 
         r_ True
 
-    ___ parent(self):
-        r_ self.parentItem
+    ___ parent
+        r_ parentItem
 
     ___ removeChildren  position, count):
-        __ position < 0 or position + count > le.(self.childItems):
+        __ position < 0 or position + count > le.(childItems):
             r_ False
 
-        for row in range(count):
-            self.childItems.p.. position)
+        ___ row __ range(count):
+            childItems.p.. position)
 
         r_ True
 
     ___ removeColumns  position, columns):
-        __ position < 0 or position + columns > le.(self.itemData):
+        __ position < 0 or position + columns > le.(itemData):
             r_ False
 
-        for column in range(columns):
-            self.itemData.p.. position)
+        ___ column __ range(columns):
+            itemData.p.. position)
 
-        for child in self.childItems:
+        ___ child __ childItems:
             child.removeColumns(position, columns)
 
         r_ True
 
     ___ setData  column, value):
-        __ column < 0 or column >_ le.(self.itemData):
+        __ column < 0 or column >_ le.(itemData):
             r_ False
 
-        self.itemData[column] _ value
+        itemData[column] _ value
 
         r_ True
 
 
 c_ TreeModel(QAbstractItemModel):
-    ___ __init__  headers, data, parent_None):
-        super(TreeModel, self).__init__(parent)
+    ___  -   headers, data, parent_None):
+        super(TreeModel, self). - (parent)
 
-        rootData _ [header for header in headers]
-        self.rootItem _ TreeItem(rootData)
-        self.setupModelData(data.split("\n"), self.rootItem)
+        rootData _ [header ___ header __ headers]
+        rootItem _ TreeItem(rootData)
+        setupModelData(data.split("\n"), rootItem)
 
     ___ columnCount  parent_QModelIndex()):
-        r_ self.rootItem.columnCount()
+        r_ rootItem.columnCount()
 
     ___ data  index, role):
         __ no. index.isValid
@@ -147,7 +147,7 @@ c_ TreeModel(QAbstractItemModel):
         __ role !_ __.DisplayRole and role !_ __.EditRole:
             r_ N..
 
-        item _ self.getItem(index)
+        item _ getItem(index)
         r_ item.data(index.column())
 
     ___ flags  index):
@@ -162,11 +162,11 @@ c_ TreeModel(QAbstractItemModel):
             __ item:
                 r_ item
 
-        r_ self.rootItem
+        r_ rootItem
 
     ___ headerData  section, orientation, role_Qt.DisplayRole):
         __ orientation == __.Horizontal and role == __.DisplayRole:
-            r_ self.rootItem.data(section)
+            r_ rootItem.data(section)
 
         r_ N..
 
@@ -174,26 +174,26 @@ c_ TreeModel(QAbstractItemModel):
         __ parent.isValid() and parent.column() !_ 0:
             r_ QModelIndex()
 
-        parentItem _ self.getItem(parent)
+        parentItem _ getItem(parent)
         childItem _ parentItem.child(row)
         __ childItem:
-            r_ self.createIndex(row, column, childItem)
+            r_ createIndex(row, column, childItem)
         ____
             r_ QModelIndex()
 
     ___ insertColumns  position, columns, parent_QModelIndex()):
-        self.beginInsertColumns(parent, position, position + columns - 1)
-        success _ self.rootItem.insertColumns(position, columns)
-        self.endInsertColumns()
+        beginInsertColumns(parent, position, position + columns - 1)
+        success _ rootItem.insertColumns(position, columns)
+        endInsertColumns()
 
         r_ success
 
     ___ insertRows  position, rows, parent_QModelIndex()):
-        parentItem _ self.getItem(parent)
-        self.beginInsertRows(parent, position, position + rows - 1)
+        parentItem _ getItem(parent)
+        beginInsertRows(parent, position, position + rows - 1)
         success _ parentItem.insertChildren(position, rows,
-                self.rootItem.columnCount())
-        self.endInsertRows()
+                rootItem.columnCount())
+        endInsertRows()
 
         r_ success
 
@@ -201,35 +201,35 @@ c_ TreeModel(QAbstractItemModel):
         __ no. index.isValid
             r_ QModelIndex()
 
-        childItem _ self.getItem(index)
+        childItem _ getItem(index)
         parentItem _ childItem.parent()
 
-        __ parentItem == self.rootItem:
+        __ parentItem == rootItem:
             r_ QModelIndex()
 
-        r_ self.createIndex(parentItem.childNumber(), 0, parentItem)
+        r_ createIndex(parentItem.childNumber(), 0, parentItem)
 
     ___ removeColumns  position, columns, parent_QModelIndex()):
-        self.beginRemoveColumns(parent, position, position + columns - 1)
-        success _ self.rootItem.removeColumns(position, columns)
-        self.endRemoveColumns()
+        beginRemoveColumns(parent, position, position + columns - 1)
+        success _ rootItem.removeColumns(position, columns)
+        endRemoveColumns()
 
-        __ self.rootItem.columnCount() == 0:
-            self.removeRows(0, self.rowCount())
+        __ rootItem.columnCount() == 0:
+            removeRows(0, rowCount())
 
         r_ success
 
     ___ removeRows  position, rows, parent_QModelIndex()):
-        parentItem _ self.getItem(parent)
+        parentItem _ getItem(parent)
 
-        self.beginRemoveRows(parent, position, position + rows - 1)
+        beginRemoveRows(parent, position, position + rows - 1)
         success _ parentItem.removeChildren(position, rows)
-        self.endRemoveRows()
+        endRemoveRows()
 
         r_ success
 
     ___ rowCount  parent_QModelIndex()):
-        parentItem _ self.getItem(parent)
+        parentItem _ getItem(parent)
 
         r_ parentItem.childCount()
 
@@ -237,11 +237,11 @@ c_ TreeModel(QAbstractItemModel):
         __ role !_ __.EditRole:
             r_ False
 
-        item _ self.getItem(index)
+        item _ getItem(index)
         result _ item.setData(index.column(), value)
 
         __ result:
-            self.dataChanged.emit(index, index)
+            dataChanged.emit(index, index)
 
         r_ result
 
@@ -249,9 +249,9 @@ c_ TreeModel(QAbstractItemModel):
         __ role !_ __.EditRole or orientation !_ __.Horizontal:
             r_ False
 
-        result _ self.rootItem.setData(section, value)
+        result _ rootItem.setData(section, value)
         __ result:
-            self.headerDataChanged.emit(orientation, section, section)
+            headerDataChanged.emit(orientation, section, section)
 
         r_ result
 
@@ -272,7 +272,7 @@ c_ TreeModel(QAbstractItemModel):
 
             __ lineData:
                 # Read the column data from the rest of the line.
-                columnData _ [s for s in lineData.split('\t') __ s]
+                columnData _ [s ___ s __ lineData.split('\t') __ s]
 
                 __ position > indentations[-1]:
                     # The last child of the current parent is now the new
@@ -290,18 +290,18 @@ c_ TreeModel(QAbstractItemModel):
                 # Append a new item to the current parent's list of children.
                 parent _ parents[-1]
                 parent.insertChildren(parent.childCount(), 1,
-                        self.rootItem.columnCount())
-                for column in range(le.(columnData)):
+                        rootItem.columnCount())
+                ___ column __ range(le.(columnData)):
                     parent.child(parent.childCount() -1).setData(column, columnData[column])
 
             number +_ 1
 
 
 c_ MainWindow(QMainWindow, Ui_MainWindow):
-    ___ __init__  parent_None):
-        super(MainWindow, self).__init__(parent)
+    ___  -   parent_None):
+        super(MainWindow, self). - (parent)
 
-        self.setupUi(self)
+        setupUi
 
         headers _ ("Title", "Description")
 
@@ -310,26 +310,26 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
         model _ TreeModel(headers, file.readAll())
         file.close()
 
-        self.view.sM..(model)
-        for column in range(model.columnCount()):
-            self.view.resizeColumnToContents(column)
+        view.sM..(model)
+        ___ column __ range(model.columnCount()):
+            view.resizeColumnToContents(column)
 
-        self.exitAction.t__.c..(?A...instance().quit)
+        exitAction.t__.c..(?A...instance().quit)
 
-        self.view.selectionModel().selectionChanged.c..(self.updateActions)
+        view.selectionModel().selectionChanged.c..(updateActions)
 
-        self.actionsMenu.aboutToShow.c..(self.updateActions)
-        self.insertRowAction.t__.c..(self.insertRow)
-        self.insertColumnAction.t__.c..(self.insertColumn)
-        self.removeRowAction.t__.c..(self.removeRow)
-        self.removeColumnAction.t__.c..(self.removeColumn)
-        self.insertChildAction.t__.c..(self.insertChild)
+        actionsMenu.aboutToShow.c..(updateActions)
+        insertRowAction.t__.c..(insertRow)
+        insertColumnAction.t__.c..(insertColumn)
+        removeRowAction.t__.c..(removeRow)
+        removeColumnAction.t__.c..(removeColumn)
+        insertChildAction.t__.c..(insertChild)
 
-        self.updateActions()
+        updateActions()
 
-    ___ insertChild(self):
-        index _ self.view.selectionModel().currentIndex()
-        model _ self.view.model()
+    ___ insertChild
+        index _ view.selectionModel().currentIndex()
+        model _ view.model()
 
         __ model.columnCount(index) == 0:
             __ no. model.insertColumn(0, index):
@@ -338,85 +338,85 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
         __ no. model.insertRow(0, index):
             r_
 
-        for column in range(model.columnCount(index)):
+        ___ column __ range(model.columnCount(index)):
             child _ model.index(0, column, index)
             model.setData(child, "[No data]", __.EditRole)
             __ model.headerData(column, __.Horizontal) __ N..:
                 model.setHeaderData(column, __.Horizontal, "[No header]",
                         __.EditRole)
 
-        self.view.selectionModel().setCurrentIndex(model.index(0, 0, index),
+        view.selectionModel().setCurrentIndex(model.index(0, 0, index),
                 QItemSelectionModel.ClearAndSelect)
-        self.updateActions()
+        updateActions()
 
-    ___ insertColumn(self):
-        model _ self.view.model()
-        column _ self.view.selectionModel().currentIndex().column()
+    ___ insertColumn
+        model _ view.model()
+        column _ view.selectionModel().currentIndex().column()
 
         changed _ model.insertColumn(column + 1)
         __ changed:
             model.setHeaderData(column + 1, __.Horizontal, "[No header]",
                     __.EditRole)
 
-        self.updateActions()
+        updateActions()
 
         r_ changed
 
-    ___ insertRow(self):
-        index _ self.view.selectionModel().currentIndex()
-        model _ self.view.model()
+    ___ insertRow
+        index _ view.selectionModel().currentIndex()
+        model _ view.model()
 
         __ no. model.insertRow(index.row()+1, index.parent()):
             r_
 
-        self.updateActions()
+        updateActions()
 
-        for column in range(model.columnCount(index.parent())):
+        ___ column __ range(model.columnCount(index.parent())):
             child _ model.index(index.row()+1, column, index.parent())
             model.setData(child, "[No data]", __.EditRole)
 
-    ___ removeColumn(self):
-        model _ self.view.model()
-        column _ self.view.selectionModel().currentIndex().column()
+    ___ removeColumn
+        model _ view.model()
+        column _ view.selectionModel().currentIndex().column()
 
         changed _ model.removeColumn(column)
         __ changed:
-            self.updateActions()
+            updateActions()
 
         r_ changed
 
-    ___ removeRow(self):
-        index _ self.view.selectionModel().currentIndex()
-        model _ self.view.model()
+    ___ removeRow
+        index _ view.selectionModel().currentIndex()
+        model _ view.model()
 
         __ (model.removeRow(index.row(), index.parent())):
-            self.updateActions()
+            updateActions()
 
-    ___ updateActions(self):
-        hasSelection _ no. self.view.selectionModel().selection().isEmpty()
-        self.removeRowAction.setEnabled(hasSelection)
-        self.removeColumnAction.setEnabled(hasSelection)
+    ___ updateActions
+        hasSelection _ no. view.selectionModel().selection().isEmpty()
+        removeRowAction.setEnabled(hasSelection)
+        removeColumnAction.setEnabled(hasSelection)
 
-        hasCurrent _ self.view.selectionModel().currentIndex().isValid()
-        self.insertRowAction.setEnabled(hasCurrent)
-        self.insertColumnAction.setEnabled(hasCurrent)
+        hasCurrent _ view.selectionModel().currentIndex().isValid()
+        insertRowAction.setEnabled(hasCurrent)
+        insertColumnAction.setEnabled(hasCurrent)
 
         __ hasCurrent:
-            self.view.closePersistentEditor(self.view.selectionModel().currentIndex())
+            view.closePersistentEditor(view.selectionModel().currentIndex())
 
-            row _ self.view.selectionModel().currentIndex().row()
-            column _ self.view.selectionModel().currentIndex().column()
-            __ self.view.selectionModel().currentIndex().parent().isValid
-                self.statusBar().showMessage("Position: (%d,%d)" % (row, column))
+            row _ view.selectionModel().currentIndex().row()
+            column _ view.selectionModel().currentIndex().column()
+            __ view.selectionModel().currentIndex().parent().isValid
+                statusBar().showMessage("Position: (%d,%d)" % (row, column))
             ____
-                self.statusBar().showMessage("Position: (%d,%d) in top level" % (row, column))
+                statusBar().showMessage("Position: (%d,%d) in top level" % (row, column))
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     window _ MainWindow()
     window.s..
     ___.exit(app.exec_())

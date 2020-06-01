@@ -8,29 +8,29 @@ ____ RPi ______ GPIO
 c_ ThreeColorLed
     """Represents a three color LED circuit"""
 
-    ___ __init__  red, green, blue, pinmode_GPIO.BOARD, freq_50):
+    ___  -   red, green, blue, pinmode_GPIO.BOARD, freq_50):
         GPIO.setmode(pinmode)
-        self.pins _ {
+        pins _ {
             "red": red,
             "green": green,
             "blue": blue
             }
-        for pin in self.pins.values
+        ___ pin __ pins.values
             GPIO.setup(pin, GPIO.OUT)
 
         # Turn all on and all off
-        for pin in self.pins.values
+        ___ pin __ pins.values
             GPIO.output(pin, GPIO.HIGH)
             GPIO.output(pin, GPIO.LOW)
 
-        self.pwms _ dict([
+        pwms _ dict([
              (name, GPIO.PWM(pin, freq))
-             for name, pin in self.pins.items()
+             ___ name, pin __ pins.items()
             ])
-        for pwm in self.pwms.values
+        ___ pwm __ pwms.values
             pwm.start(0)
 
-    ___ cleanup(self):
+    ___ cleanup
         GPIO.cleanup()
 
     @staticmethod
@@ -43,32 +43,32 @@ c_ ThreeColorLed
 
     ___ set_color  red, green, blue):
         """Set color using RGB color values of 0-255"""
-        self.pwms['red'].ChangeDutyCycle(self.convert(red))
-        self.pwms['green'].ChangeDutyCycle(self.convert(green))
-        self.pwms['blue'].ChangeDutyCycle(self.convert(blue))
+        pwms['red'].ChangeDutyCycle(convert(red))
+        pwms['green'].ChangeDutyCycle(convert(green))
+        pwms['blue'].ChangeDutyCycle(convert(blue))
 
 
 c_ MainWindow(qtw.QMainWindow):
 
-    ___ __init__(self):
-        super().__init__()
+    ___  -
+        s_. - ()
 
-        self.tcl _ ThreeColorLed(8, 10, 12)
+        tcl _ ThreeColorLed(8, 10, 12)
         ccd _ qtw.QColorDialog()
         ccd.setOptions(
             qtw.QColorDialog.NoButtons
             | qtw.QColorDialog.DontUseNativeDialog)
-        ccd.currentColorChanged.c..(self.set_color)
-        self.sCW..(ccd)
+        ccd.currentColorChanged.c..(set_color)
+        sCW..(ccd)
 
-        self.s..
+        s..
 
     ___ set_color  color):
-        self.tcl.set_color(color.red(), color.green(), color.blue())
+        tcl.set_color(color.red(), color.green(), color.blue())
 
 
-__ __name__ == '__main__':
-    app _ qtw.?A..(___.argv)
+__ ______ __ ______
+    app _ qtw.?A..(___.a..
     mw _ MainWindow()
     app.exec()
     mw.tcl.cleanup()

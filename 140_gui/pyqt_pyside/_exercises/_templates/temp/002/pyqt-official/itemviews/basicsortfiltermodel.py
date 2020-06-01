@@ -58,123 +58,123 @@ SUBJECT, SENDER, DATE _ range(3)
 c_ SortFilterProxyModel(QSortFilterProxyModel):
     ___ filterAcceptsRow  sourceRow, sourceParent):
         # Do we filter for the date column?
-        __ self.filterKeyColumn() == DATE:
+        __ filterKeyColumn() == DATE:
             # Fetch datetime value.
-            index _ self.sourceModel().index(sourceRow, DATE, sourceParent)
-            data _ self.sourceModel().data(index)
+            index _ sourceModel().index(sourceRow, DATE, sourceParent)
+            data _ sourceModel().data(index)
 
             # Return, if regExp match in displayed format.
-            r_ (self.filterRegExp().indexIn(data.toString(__.DefaultLocaleShortDate)) >_ 0)
+            r_ (filterRegExp().indexIn(data.toString(__.DefaultLocaleShortDate)) >_ 0)
 
         # Not our business.
         r_ super(SortFilterProxyModel, self).filterAcceptsRow(sourceRow, sourceParent)
 
 
 c_ Window(QWidget):
-    ___ __init__(self):
-        super(Window, self).__init__()
+    ___  -
+        super(Window, self). - ()
 
-        self.proxyModel _ SortFilterProxyModel()
-        self.proxyModel.setDynamicSortFilter(True)
+        proxyModel _ SortFilterProxyModel()
+        proxyModel.setDynamicSortFilter(True)
 
-        self.sourceGroupBox _ QGroupBox("Original Model")
-        self.proxyGroupBox _ QGroupBox("Sorted/Filtered Model")
+        sourceGroupBox _ QGroupBox("Original Model")
+        proxyGroupBox _ QGroupBox("Sorted/Filtered Model")
 
-        self.sourceView _ ?TV..
-        self.sourceView.setRootIsDecorated F..
-        self.sourceView.setAlternatingRowColors(True)
+        sourceView _ ?TV..
+        sourceView.setRootIsDecorated F..
+        sourceView.setAlternatingRowColors(True)
 
-        self.proxyView _ ?TV..
-        self.proxyView.setRootIsDecorated F..
-        self.proxyView.setAlternatingRowColors(True)
-        self.proxyView.sM..(self.proxyModel)
-        self.proxyView.setSortingEnabled(True)
+        proxyView _ ?TV..
+        proxyView.setRootIsDecorated F..
+        proxyView.setAlternatingRowColors(True)
+        proxyView.sM..(proxyModel)
+        proxyView.setSortingEnabled(True)
 
-        self.sortCaseSensitivityCheckBox _ QCheckBox("Case sensitive sorting")
-        self.filterCaseSensitivityCheckBox _ QCheckBox("Case sensitive filter")
+        sortCaseSensitivityCheckBox _ QCheckBox("Case sensitive sorting")
+        filterCaseSensitivityCheckBox _ QCheckBox("Case sensitive filter")
 
-        self.filterPatternLineEdit _ ?LE..
-        self.filterPatternLabel _ QLabel("&Filter pattern:")
-        self.filterPatternLabel.setBuddy(self.filterPatternLineEdit)
+        filterPatternLineEdit _ ?LE..
+        filterPatternLabel _ QLabel("&Filter pattern:")
+        filterPatternLabel.setBuddy(filterPatternLineEdit)
 
-        self.filterSyntaxComboBox _ QComboBox()
-        self.filterSyntaxComboBox.addItem("Regular expression", QRegExp.RegExp)
-        self.filterSyntaxComboBox.addItem("Wildcard", QRegExp.Wildcard)
-        self.filterSyntaxComboBox.addItem("Fixed string", QRegExp.FixedString)
-        self.filterSyntaxLabel _ QLabel("Filter &syntax:")
-        self.filterSyntaxLabel.setBuddy(self.filterSyntaxComboBox)
+        filterSyntaxComboBox _ QComboBox()
+        filterSyntaxComboBox.addItem("Regular expression", QRegExp.RegExp)
+        filterSyntaxComboBox.addItem("Wildcard", QRegExp.Wildcard)
+        filterSyntaxComboBox.addItem("Fixed string", QRegExp.FixedString)
+        filterSyntaxLabel _ QLabel("Filter &syntax:")
+        filterSyntaxLabel.setBuddy(filterSyntaxComboBox)
 
-        self.filterColumnComboBox _ QComboBox()
-        self.filterColumnComboBox.addItem("Subject")
-        self.filterColumnComboBox.addItem("Sender")
-        self.filterColumnComboBox.addItem("Date")
-        self.filterColumnLabel _ QLabel("Filter &column:")
-        self.filterColumnLabel.setBuddy(self.filterColumnComboBox)
+        filterColumnComboBox _ QComboBox()
+        filterColumnComboBox.addItem("Subject")
+        filterColumnComboBox.addItem("Sender")
+        filterColumnComboBox.addItem("Date")
+        filterColumnLabel _ QLabel("Filter &column:")
+        filterColumnLabel.setBuddy(filterColumnComboBox)
 
-        self.filterPatternLineEdit.textChanged.c..(self.filterRegExpChanged)
-        self.filterSyntaxComboBox.currentIndexChanged.c..(self.filterRegExpChanged)
-        self.filterColumnComboBox.currentIndexChanged.c..(self.filterColumnChanged)
-        self.filterCaseSensitivityCheckBox.toggled.c..(self.filterRegExpChanged)
-        self.sortCaseSensitivityCheckBox.toggled.c..(self.sortChanged)
+        filterPatternLineEdit.textChanged.c..(filterRegExpChanged)
+        filterSyntaxComboBox.currentIndexChanged.c..(filterRegExpChanged)
+        filterColumnComboBox.currentIndexChanged.c..(filterColumnChanged)
+        filterCaseSensitivityCheckBox.toggled.c..(filterRegExpChanged)
+        sortCaseSensitivityCheckBox.toggled.c..(sortChanged)
 
         sourceLayout _ QHBoxLayout()
-        sourceLayout.aW..(self.sourceView)
-        self.sourceGroupBox.sL..(sourceLayout)
+        sourceLayout.aW..(sourceView)
+        sourceGroupBox.sL..(sourceLayout)
 
         proxyLayout _ QGridLayout()
-        proxyLayout.aW..(self.proxyView, 0, 0, 1, 3)
-        proxyLayout.aW..(self.filterPatternLabel, 1, 0)
-        proxyLayout.aW..(self.filterPatternLineEdit, 1, 1, 1, 2)
-        proxyLayout.aW..(self.filterSyntaxLabel, 2, 0)
-        proxyLayout.aW..(self.filterSyntaxComboBox, 2, 1, 1, 2)
-        proxyLayout.aW..(self.filterColumnLabel, 3, 0)
-        proxyLayout.aW..(self.filterColumnComboBox, 3, 1, 1, 2)
-        proxyLayout.aW..(self.filterCaseSensitivityCheckBox, 4, 0, 1, 2)
-        proxyLayout.aW..(self.sortCaseSensitivityCheckBox, 4, 2)
-        self.proxyGroupBox.sL..(proxyLayout)
+        proxyLayout.aW..(proxyView, 0, 0, 1, 3)
+        proxyLayout.aW..(filterPatternLabel, 1, 0)
+        proxyLayout.aW..(filterPatternLineEdit, 1, 1, 1, 2)
+        proxyLayout.aW..(filterSyntaxLabel, 2, 0)
+        proxyLayout.aW..(filterSyntaxComboBox, 2, 1, 1, 2)
+        proxyLayout.aW..(filterColumnLabel, 3, 0)
+        proxyLayout.aW..(filterColumnComboBox, 3, 1, 1, 2)
+        proxyLayout.aW..(filterCaseSensitivityCheckBox, 4, 0, 1, 2)
+        proxyLayout.aW..(sortCaseSensitivityCheckBox, 4, 2)
+        proxyGroupBox.sL..(proxyLayout)
 
         mainLayout _ ?VBL..
-        mainLayout.aW..(self.sourceGroupBox)
-        mainLayout.aW..(self.proxyGroupBox)
-        self.sL..(mainLayout)
+        mainLayout.aW..(sourceGroupBox)
+        mainLayout.aW..(proxyGroupBox)
+        sL..(mainLayout)
 
-        self.setWindowTitle("Basic Sort/Filter Model")
-        self.resize(500, 450)
+        setWindowTitle("Basic Sort/Filter Model")
+        resize(500, 450)
 
-        self.proxyView.sortByColumn(SENDER, __.AscendingOrder)
-        self.filterColumnComboBox.setCurrentIndex(SENDER)
+        proxyView.sortByColumn(SENDER, __.AscendingOrder)
+        filterColumnComboBox.setCurrentIndex(SENDER)
 
-        self.filterPatternLineEdit.sT..("Andy|Grace")
-        self.filterCaseSensitivityCheckBox.setChecked(True)
-        self.sortCaseSensitivityCheckBox.setChecked(True)
+        filterPatternLineEdit.sT..("Andy|Grace")
+        filterCaseSensitivityCheckBox.setChecked(True)
+        sortCaseSensitivityCheckBox.setChecked(True)
 
     ___ setSourceModel  model):
-        self.proxyModel.setSourceModel(model)
-        self.sourceView.sM..(model)
+        proxyModel.setSourceModel(model)
+        sourceView.sM..(model)
 
-    ___ filterRegExpChanged(self):
-        syntax_nr _ self.filterSyntaxComboBox.itemData(self.filterSyntaxComboBox.currentIndex())
+    ___ filterRegExpChanged
+        syntax_nr _ filterSyntaxComboBox.itemData(filterSyntaxComboBox.currentIndex())
         syntax _ QRegExp.PatternSyntax(syntax_nr)
 
-        __ self.filterCaseSensitivityCheckBox.isChecked
+        __ filterCaseSensitivityCheckBox.isChecked
             caseSensitivity _ __.CaseSensitive
         ____
             caseSensitivity _ __.CaseInsensitive
 
-        regExp _ QRegExp(self.filterPatternLineEdit.t__(),
+        regExp _ QRegExp(filterPatternLineEdit.t__(),
                 caseSensitivity, syntax)
-        self.proxyModel.setFilterRegExp(regExp)
+        proxyModel.setFilterRegExp(regExp)
 
-    ___ filterColumnChanged(self):
-        self.proxyModel.setFilterKeyColumn(self.filterColumnComboBox.currentIndex())
+    ___ filterColumnChanged
+        proxyModel.setFilterKeyColumn(filterColumnComboBox.currentIndex())
 
-    ___ sortChanged(self):
-        __ self.sortCaseSensitivityCheckBox.isChecked
+    ___ sortChanged
+        __ sortCaseSensitivityCheckBox.isChecked
             caseSensitivity _ __.CaseSensitive
         ____
             caseSensitivity _ __.CaseInsensitive
 
-        self.proxyModel.setSortCaseSensitivity(caseSensitivity)
+        proxyModel.setSortCaseSensitivity(caseSensitivity)
 
 
 ___ addMail(model, subject, sender, date):
@@ -215,11 +215,11 @@ ___ createMailModel(parent):
     r_ model
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     window _ Window()
     window.setSourceModel(createMailModel(window))
     window.s..

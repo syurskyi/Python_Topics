@@ -51,20 +51,20 @@ ______ connection
 
 
 c_ TableEditor(QDialog):
-    ___ __init__  tableName, parent_None):
-        super(TableEditor, self).__init__(parent)
+    ___  -   tableName, parent_None):
+        super(TableEditor, self). - (parent)
 
-        self.model _ ?STM..(self)
-        self.model.setTable(tableName)
-        self.model.setEditStrategy(?STM...OnManualSubmit)
-        self.model.select()
+        model _ ?STM..
+        model.setTable(tableName)
+        model.setEditStrategy(?STM...OnManualSubmit)
+        model.select()
 
-        self.model.setHeaderData(0, __.Horizontal, "ID")
-        self.model.setHeaderData(1, __.Horizontal, "First name")
-        self.model.setHeaderData(2, __.Horizontal, "Last name")
+        model.setHeaderData(0, __.Horizontal, "ID")
+        model.setHeaderData(1, __.Horizontal, "First name")
+        model.setHeaderData(2, __.Horizontal, "Last name")
 
         view _ QTableView()
-        view.sM..(self.model)
+        view.sM..(model)
 
         submitButton _ ?PB..("Submit")
         submitButton.setDefault(True)
@@ -76,32 +76,32 @@ c_ TableEditor(QDialog):
         buttonBox.addButton(revertButton, QDialogButtonBox.ActionRole)
         buttonBox.addButton(quitButton, QDialogButtonBox.RejectRole)
 
-        submitButton.c__.c..(self.submit)
-        revertButton.c__.c..(self.model.revertAll)
-        quitButton.c__.c..(self.close)
+        submitButton.c__.c..(submit)
+        revertButton.c__.c..(model.revertAll)
+        quitButton.c__.c..(close)
 
         mainLayout _ QHBoxLayout()
         mainLayout.aW..(view)
         mainLayout.aW..(buttonBox)
-        self.sL..(mainLayout)
+        sL..(mainLayout)
 
-        self.setWindowTitle("Cached Table")
+        setWindowTitle("Cached Table")
 
-    ___ submit(self):
-        self.model.database().transaction()
-        __ self.model.submitAll
-            self.model.database().commit()
+    ___ submit 
+        model.database().transaction()
+        __ model.submitAll
+            model.database().commit()
         ____
-            self.model.database().rollback()
+            model.database().rollback()
             ?MB...warning  "Cached Table",
-                        "The database reported an error: %s" % self.model.lastError().t__())
+                        "The database reported an error: %s" % model.lastError().t__())
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     __ no. connection.createConnection
         ___.exit(1)
 

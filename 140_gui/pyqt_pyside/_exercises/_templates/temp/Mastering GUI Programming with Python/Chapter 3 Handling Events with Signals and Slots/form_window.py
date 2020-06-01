@@ -3,60 +3,60 @@ ____ ? ______ ?W.. __ qtw
 ____ ? ______ ?C.. __ qtc
 
 
-c_ FormWindow(qtw.QWidget):
+c_ FormWindow ?.?W..
 
     submitted _ qtc.pyqtSignal([str], [int, str])
 
-    ___ __init__(self):
-        super().__init__()
-        self.sL..(qtw.QVBoxLayout())
+    ___  -
+        s_. - ()
+        sL.. ?.?VBL..
 
-        self.edit _ qtw.?LE..
-        self.submit _ qtw.?PB..('Submit', c___self.onSubmit)
+        edit _ qtw.?LE..
+        submit _ qtw.?PB..('Submit', c___self.onSubmit)
 
-        self.layout().aW..(self.edit)
-        self.layout().aW..(self.submit)
+        layout().aW..(edit)
+        layout().aW..(submit)
 
-    ___ onSubmit(self):
-        __ self.edit.t__().isdigit
-            t__ _ self.edit.t__()
-            self.submitted[int, str].emit(int(t__), t__)
+    ___ onSubmit
+        __ edit.t__().isdigit
+            t__ _ edit.t__()
+            submitted[int, str].emit(int(t__), t__)
         ____
-            self.submitted[str].emit(self.edit.t__())
-        self.close()
+            submitted[str].emit(edit.t__())
+        close()
 
-c_ MainWindow(qtw.QWidget):
+c_ MainWindow ?.?W..
 
-    ___ __init__(self):
-        super().__init__()
-        self.sL..(qtw.QVBoxLayout())
+    ___  -
+        s_. - ()
+        sL.. ?.?VBL..
 
-        self.label _ qtw.QLabel('Click "change" to change this text.')
-        self.change _ qtw.?PB..("Change", c___self.onChange)
-        self.layout().aW..(self.label)
-        self.layout().aW..(self.change)
-        self.s..
+        label _ qtw.QLabel('Click "change" to change this text.')
+        change _ qtw.?PB..("Change", c___self.onChange)
+        layout().aW..(label)
+        layout().aW..(change)
+        s..
 
     @qtc.pyqtSlot()
-    ___ onChange(self):
-        self.formwindow _ FormWindow()
+    ___ onChange
+        formwindow _ FormWindow()
         #self.formwindow.submitted.connect(self.label.setText)
-        self.formwindow.submitted[str].c..(self.onSubmittedStr)
-        self.formwindow.submitted[int, str].c..(self.onSubmittedIntStr)
-        self.formwindow.s..
+        formwindow.submitted[str].c..(onSubmittedStr)
+        formwindow.submitted[int, str].c..(onSubmittedIntStr)
+        formwindow.s..
 
     @qtc.pyqtSlot(str)
     ___ onSubmittedStr  string):
-        self.label.sT..(string)
+        label.sT..(string)
 
     @qtc.pyqtSlot(int, str)
     ___ onSubmittedIntStr  integer, string):
         t__ _ f'The string {string} becomes the number {integer}'
-        self.label.sT..(t__)
+        label.sT..(t__)
 
 
-__ __name__ == '__main__':
-    app _ qtw.?A..(___.argv)
+__ ______ __ ______
+    app _ qtw.?A..(___.a..
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()

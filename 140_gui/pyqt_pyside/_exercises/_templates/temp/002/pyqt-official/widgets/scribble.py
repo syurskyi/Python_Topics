@@ -50,88 +50,88 @@ ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
 
 
 c_ ScribbleArea(QWidget):
-    ___ __init__  parent_None):
-        super(ScribbleArea, self).__init__(parent)
+    ___  -   parent_None):
+        super(ScribbleArea, self). - (parent)
 
-        self.setAttribute(__.WA_StaticContents)
-        self.modified _ False
-        self.scribbling _ False
-        self.myPenWidth _ 1
-        self.myPenColor _ __.blue
-        self.image _ QImage()
-        self.lastPoint _ QPoint()
+        setAttribute(__.WA_StaticContents)
+        modified _ False
+        scribbling _ False
+        myPenWidth _ 1
+        myPenColor _ __.blue
+        image _ QImage()
+        lastPoint _ QPoint()
 
     ___ openImage  fileName):
         loadedImage _ QImage()
         __ no. loadedImage.load(fileName):
             r_ False
 
-        newSize _ loadedImage.size().expandedTo(self.size())
-        self.resizeImage(loadedImage, newSize)
-        self.image _ loadedImage
-        self.modified _ False
-        self.update()
+        newSize _ loadedImage.size().expandedTo(size())
+        resizeImage(loadedImage, newSize)
+        image _ loadedImage
+        modified _ False
+        update()
         r_ True
 
     ___ saveImage  fileName, fileFormat):
-        visibleImage _ self.image
-        self.resizeImage(visibleImage, self.size())
+        visibleImage _ image
+        resizeImage(visibleImage, size())
 
         __ visibleImage.save(fileName, fileFormat):
-            self.modified _ False
+            modified _ False
             r_ True
         ____
             r_ False
 
     ___ setPenColor  newColor):
-        self.myPenColor _ newColor
+        myPenColor _ newColor
 
     ___ setPenWidth  newWidth):
-        self.myPenWidth _ newWidth
+        myPenWidth _ newWidth
 
-    ___ clearImage(self):
-        self.image.fill(qRgb(255, 255, 255))
-        self.modified _ True
-        self.update()
+    ___ clearImage
+        image.fill(qRgb(255, 255, 255))
+        modified _ True
+        update()
 
     ___ mousePressEvent  event):
         __ event.button() == __.LeftButton:
-            self.lastPoint _ event.pos()
-            self.scribbling _ True
+            lastPoint _ event.pos()
+            scribbling _ True
 
     ___ mouseMoveEvent  event):
-        __ (event.buttons() & __.LeftButton) and self.scribbling:
-            self.drawLineTo(event.pos())
+        __ (event.buttons() & __.LeftButton) and scribbling:
+            drawLineTo(event.pos())
 
     ___ mouseReleaseEvent  event):
-        __ event.button() == __.LeftButton and self.scribbling:
-            self.drawLineTo(event.pos())
-            self.scribbling _ False
+        __ event.button() == __.LeftButton and scribbling:
+            drawLineTo(event.pos())
+            scribbling _ False
 
     ___ paintEvent  event):
-        painter _ QPainter(self)
+        painter _ QPainter
         dirtyRect _ event.rect()
-        painter.drawImage(dirtyRect, self.image, dirtyRect)
+        painter.drawImage(dirtyRect, image, dirtyRect)
 
     ___ resizeEvent  event):
-        __ self.width() > self.image.width() or self.height() > self.image.height
-            newWidth _ max(self.width() + 128, self.image.width())
-            newHeight _ max(self.height() + 128, self.image.height())
-            self.resizeImage(self.image, QSize(newWidth, newHeight))
-            self.update()
+        __ width() > image.width() or height() > image.height
+            newWidth _ max(width() + 128, image.width())
+            newHeight _ max(height() + 128, image.height())
+            resizeImage(image, QSize(newWidth, newHeight))
+            update()
 
         super(ScribbleArea, self).resizeEvent(event)
 
     ___ drawLineTo  endPoint):
-        painter _ QPainter(self.image)
-        painter.setPen(QPen(self.myPenColor, self.myPenWidth, __.SolidLine,
+        painter _ QPainter(image)
+        painter.setPen(QPen(myPenColor, myPenWidth, __.SolidLine,
                 __.RoundCap, __.RoundJoin))
-        painter.drawLine(self.lastPoint, endPoint)
-        self.modified _ True
+        painter.drawLine(lastPoint, endPoint)
+        modified _ True
 
-        rad _ self.myPenWidth / 2 + 2
-        self.update(QRect(self.lastPoint, endPoint).normalized().adjusted(-rad, -rad, +rad, +rad))
-        self.lastPoint _ QPoint(endPoint)
+        rad _ myPenWidth / 2 + 2
+        update(QRect(lastPoint, endPoint).normalized().adjusted(-rad, -rad, +rad, +rad))
+        lastPoint _ QPoint(endPoint)
 
     ___ resizeImage  image, newSize):
         __ image.size() == newSize:
@@ -141,77 +141,77 @@ c_ ScribbleArea(QWidget):
         newImage.fill(qRgb(255, 255, 255))
         painter _ QPainter(newImage)
         painter.drawImage(QPoint(0, 0), image)
-        self.image _ newImage
+        image _ newImage
 
-    ___ print_(self):
+    ___ print_
         printer _ QPrinter(QPrinter.HighResolution)
 
         printDialog _ QPrintDialog(printer, self)
         __ printDialog.e.. == QPrintDialog.Accepted:
             painter _ QPainter(printer)
             rect _ painter.viewport()
-            size _ self.image.size()
+            size _ image.size()
             size.scale(rect.size(), __.KeepAspectRatio)
             painter.setViewport(rect.x(), rect.y(), size.width(), size.height())
-            painter.setWindow(self.image.rect())
-            painter.drawImage(0, 0, self.image)
+            painter.setWindow(image.rect())
+            painter.drawImage(0, 0, image)
             painter.end()
 
-    ___ iM..(self):
-        r_ self.modified
+    ___ iM..
+        r_ modified
 
-    ___ penColor(self):
-        r_ self.myPenColor
+    ___ penColor
+        r_ myPenColor
 
-    ___ penWidth(self):
-        r_ self.myPenWidth
+    ___ penWidth
+        r_ myPenWidth
 
 
 c_ MainWindow ?MW..
-    ___ __init__(self):
-        super(MainWindow, self).__init__()
+    ___  -
+        super(MainWindow, self). - ()
 
-        self.saveAsActs _   # list
+        saveAsActs _   # list
 
-        self.scribbleArea _ ScribbleArea()
-        self.sCW..(self.scribbleArea)
+        scribbleArea _ ScribbleArea()
+        sCW..(scribbleArea)
 
-        self.createActions()
-        self.createMenus()
+        createActions()
+        createMenus()
 
-        self.setWindowTitle("Scribble")
-        self.resize(500, 500)
+        setWindowTitle("Scribble")
+        resize(500, 500)
 
     ___ closeEvent  event):
-        __ self.maybeSave
+        __ maybeSave
             event.accept()
         ____
             event.ignore()
 
-    ___ o..(self):
-        __ self.maybeSave
+    ___ o..
+        __ maybeSave
             fileName, _ _ ?FD...gOFN..  "Open File",
                     QDir.currentPath())
             __ fileName:
-                self.scribbleArea.openImage(fileName)
+                scribbleArea.openImage(fileName)
 
-    ___ save(self):
-        action _ self.sender()
+    ___ save
+        action _ sender()
         fileFormat _ action.data()
-        self.saveFile(fileFormat)
+        saveFile(fileFormat)
 
-    ___ penColor(self):
-        newColor _ QColorDialog.getColor(self.scribbleArea.penColor())
+    ___ penColor
+        newColor _ QColorDialog.getColor(scribbleArea.penColor())
         __ newColor.isValid
-            self.scribbleArea.setPenColor(newColor)
+            scribbleArea.setPenColor(newColor)
 
-    ___ penWidth(self):
+    ___ penWidth
         newWidth, ok _ QInputDialog.getInt  "Scribble",
-                "Select pen width:", self.scribbleArea.penWidth(), 1, 50, 1)
+                "Select pen width:", scribbleArea.penWidth(), 1, 50, 1)
         __ ok:
-            self.scribbleArea.setPenWidth(newWidth)
+            scribbleArea.setPenWidth(newWidth)
 
-    ___ about(self):
+    ___ about
         ?MB...about  "About Scribble",
                 "<p>The <b>Scribble</b> example shows how to use "
                 "QMainWindow as the base widget for an application, and how "
@@ -227,74 +227,74 @@ c_ MainWindow ?MW..
                 "draw an image in real time, as well as to repaint "
                 "widgets.</p>")
 
-    ___ createActions(self):
-        self.openAct _ ?A..("&Open...", self, shortcut_"Ctrl+O",
+    ___ createActions
+        openAct _ ?A..("&Open...", self, shortcut_"Ctrl+O",
                 triggered_self.o..)
 
-        for format in QImageWriter.supportedImageFormats
+        ___ format __ QImageWriter.supportedImageFormats
             format _ str(format)
 
             t__ _ format.upper() + "..."
 
             action _ ?A..(t__, self, triggered_self.save)
             action.setData(format)
-            self.saveAsActs.ap..(action)
+            saveAsActs.ap..(action)
 
-        self.printAct _ ?A..("&Print...", self,
+        printAct _ ?A..("&Print...", self,
                 triggered_self.scribbleArea.print_)
 
-        self.exitAct _ ?A..("E&xit", self, shortcut_"Ctrl+Q",
+        exitAct _ ?A..("E&xit", self, shortcut_"Ctrl+Q",
                 triggered_self.close)
 
-        self.penColorAct _ ?A..("&Pen Color...", self,
+        penColorAct _ ?A..("&Pen Color...", self,
                 triggered_self.penColor)
 
-        self.penWidthAct _ ?A..("Pen &Width...", self,
+        penWidthAct _ ?A..("Pen &Width...", self,
                 triggered_self.penWidth)
 
-        self.clearScreenAct _ ?A..("&Clear Screen", self, shortcut_"Ctrl+L",
+        clearScreenAct _ ?A..("&Clear Screen", self, shortcut_"Ctrl+L",
                 triggered_self.scribbleArea.clearImage)
 
-        self.aboutAct _ ?A..("&About", self, triggered_self.about)
+        aboutAct _ ?A..("&About", self, triggered_self.about)
 
-        self.aboutQtAct _ ?A..("About &Qt", self,
+        aboutQtAct _ ?A..("About &Qt", self,
                 triggered_QApplication.instance().aboutQt)
 
-    ___ createMenus(self):
-        self.saveAsMenu _ QMenu("&Save As", self)
-        for action in self.saveAsActs:
-            self.saveAsMenu.aA..(action)
+    ___ createMenus
+        saveAsMenu _ QMenu("&Save As", self)
+        ___ action __ saveAsActs:
+            saveAsMenu.aA..(action)
 
         fileMenu _ QMenu("&File", self)
-        fileMenu.aA..(self.openAct)
-        fileMenu.aM..(self.saveAsMenu)
-        fileMenu.aA..(self.printAct)
+        fileMenu.aA..(openAct)
+        fileMenu.aM..(saveAsMenu)
+        fileMenu.aA..(printAct)
         fileMenu.addSeparator()
-        fileMenu.aA..(self.exitAct)
+        fileMenu.aA..(exitAct)
 
         optionMenu _ QMenu("&Options", self)
-        optionMenu.aA..(self.penColorAct)
-        optionMenu.aA..(self.penWidthAct)
+        optionMenu.aA..(penColorAct)
+        optionMenu.aA..(penWidthAct)
         optionMenu.addSeparator()
-        optionMenu.aA..(self.clearScreenAct)
+        optionMenu.aA..(clearScreenAct)
 
         helpMenu _ QMenu("&Help", self)
-        helpMenu.aA..(self.aboutAct)
-        helpMenu.aA..(self.aboutQtAct)
+        helpMenu.aA..(aboutAct)
+        helpMenu.aA..(aboutQtAct)
 
-        self.mB.. .aM..(fileMenu)
-        self.mB.. .aM..(optionMenu)
-        self.mB.. .aM..(helpMenu)
+        mB.. .aM..(fileMenu)
+        mB.. .aM..(optionMenu)
+        mB.. .aM..(helpMenu)
 
-    ___ maybeSave(self):
-        __ self.scribbleArea.iM..
+    ___ maybeSave
+        __ scribbleArea.iM..
             ret _ ?MB...warning  "Scribble",
                         "The image has been modified.\n"
                         "Do you want to save your changes?",
                         ?MB...Save | ?MB...Discard |
                         ?MB...Cancel)
             __ ret == ?MB...Save:
-                r_ self.saveFile('png')
+                r_ saveFile('png')
             ____ ret == ?MB...Cancel:
                 r_ False
 
@@ -306,16 +306,16 @@ c_ MainWindow ?MW..
         fileName, _ _ ?FD...getSaveFileName  "Save As", initialPath,
                 "%s Files (*.%s);;All Files (*)" % (fileFormat.upper(), fileFormat))
         __ fileName:
-            r_ self.scribbleArea.saveImage(fileName, fileFormat)
+            r_ scribbleArea.saveImage(fileName, fileFormat)
 
         r_ False
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     window _ MainWindow()
     window.s..
     ___.exit(app.exec_())

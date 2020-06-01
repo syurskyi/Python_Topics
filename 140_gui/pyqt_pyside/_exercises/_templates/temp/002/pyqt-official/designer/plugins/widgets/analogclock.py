@@ -62,96 +62,96 @@ c_ PyAnalogClock(QWidget):
     # Emitted when the clock's time zone changes.
     timeZoneChanged _ pyqtSignal(int)
 
-    ___ __init__  parent_None):
+    ___  -   parent_None):
 
-        super(PyAnalogClock, self).__init__(parent)
+        super(PyAnalogClock, self). - (parent)
 
-        self.timeZoneOffset _ 0
+        timeZoneOffset _ 0
 
-        timer _ QTimer(self)
-        timer.timeout.c..(self.update)
-        timer.timeout.c..(self.updateTime)
+        timer _ QTimer
+        timer.timeout.c..(update)
+        timer.timeout.c..(updateTime)
         timer.start(1000)
 
-        self.setWindowTitle("Analog Clock")
-        self.resize(200, 200)
+        setWindowTitle("Analog Clock")
+        resize(200, 200)
 
-        self.hourHand _ QPolygon([
+        hourHand _ QPolygon([
             QPoint(7, 8),
             QPoint(-7, 8),
             QPoint(0, -40)
         ])
-        self.minuteHand _ QPolygon([
+        minuteHand _ QPolygon([
             QPoint(7, 8),
             QPoint(-7, 8),
             QPoint(0, -70)
         ])
 
-        self.hourColor _ ?C..(0, 127, 0)
-        self.minuteColor _ ?C..(0, 127, 127, 191)
+        hourColor _ ?C..(0, 127, 0)
+        minuteColor _ ?C..(0, 127, 127, 191)
 
     ___ paintEvent  event):
 
-        side _ min(self.width(), self.height())
+        side _ min(width(), height())
         time _ QTime.currentTime()
-        time _ time.addSecs(self.timeZoneOffset * 3600)
+        time _ time.addSecs(timeZoneOffset * 3600)
 
         painter _ QPainter()
-        painter.begin(self)
+        painter.begin
         painter.setRenderHint(QPainter.Antialiasing)
-        painter.translate(self.width() / 2, self.height() / 2)
+        painter.translate(width() / 2, height() / 2)
         painter.scale(side / 200.0, side / 200.0)
 
         painter.setPen(__.NoPen)
-        painter.setBrush(QBrush(self.hourColor))
+        painter.setBrush(QBrush(hourColor))
 
         painter.save()
         painter.rotate(30.0 * ((time.hour() + time.minute() / 60.0)))
-        painter.drawConvexPolygon(self.hourHand)
+        painter.drawConvexPolygon(hourHand)
         painter.restore()
 
-        painter.setPen(self.hourColor)
+        painter.setPen(hourColor)
 
-        for i in range(0, 12):
+        ___ i __ range(0, 12):
             painter.drawLine(88, 0, 96, 0)
             painter.rotate(30.0)
 
         painter.setPen(__.NoPen)
-        painter.setBrush(QBrush(self.minuteColor))
+        painter.setBrush(QBrush(minuteColor))
 
         painter.save()
         painter.rotate(6.0 * (time.minute() + time.second() / 60.0))
-        painter.drawConvexPolygon(self.minuteHand)
+        painter.drawConvexPolygon(minuteHand)
         painter.restore()
 
-        painter.setPen(QPen(self.minuteColor))
+        painter.setPen(QPen(minuteColor))
 
-        for j in range(0, 60):
+        ___ j __ range(0, 60):
             __ (j % 5) !_ 0:
                 painter.drawLine(92, 0, 96, 0)
             painter.rotate(6.0)
 
         painter.end()
 
-    ___ minimumSizeHint(self):
+    ___ minimumSizeHint
 
         r_ QSize(50, 50)
 
-    ___ sizeHint(self):
+    ___ sizeHint
 
         r_ QSize(100, 100)
 
-    ___ updateTime(self):
+    ___ updateTime
 
-        self.timeChanged.emit(QTime.currentTime())
+        timeChanged.emit(QTime.currentTime())
 
     # The timeZone property is implemented using the getTimeZone() getter
     # method, the setTimeZone() setter method, and the resetTimeZone() method.
 
     # The getter just returns the internal time zone value.
-    ___ getTimeZone(self):
+    ___ getTimeZone
 
-        r_ self.timeZoneOffset
+        r_ timeZoneOffset
 
     # The setTimeZone() method is also defined to be a slot. The @pyqtSlot
     # decorator is used to tell PyQt which argument type the method expects,
@@ -161,17 +161,17 @@ c_ PyAnalogClock(QWidget):
     @pyqtSlot(int)
     ___ setTimeZone  value):
 
-        self.timeZoneOffset _ value
-        self.timeZoneChanged.emit(value)
-        self.update()
+        timeZoneOffset _ value
+        timeZoneChanged.emit(value)
+        update()
 
     # Qt's property system supports properties that can be reset to their
     # original values. This method enables the timeZone property to be reset.
-    ___ resetTimeZone(self):
+    ___ resetTimeZone
 
-        self.timeZoneOffset _ 0
-        self.timeZoneChanged.emit(0)
-        self.update()
+        timeZoneOffset _ 0
+        timeZoneChanged.emit(0)
+        update()
 
     # Qt-style properties are defined differently to Python's properties.
     # To declare a property, we call pyqtProperty() to specify the type and,
@@ -183,7 +183,7 @@ __ __name__ == "__main__":
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     clock _ PyAnalogClock()
     clock.s..
     ___.exit(app.exec_())

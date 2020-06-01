@@ -49,46 +49,46 @@ ____ ?.?W.. ______ (?A.., QFrame, QGridLayout, QLabel,
 
 
 c_ CircleWidget(QWidget):
-    ___ __init__  parent_None):
-        super(CircleWidget, self).__init__(parent)
+    ___  -   parent_None):
+        super(CircleWidget, self). - (parent)
 
-        self.floatBased _ False
-        self.antialiased _ False
-        self.frameNo _ 0
+        floatBased _ False
+        antialiased _ False
+        frameNo _ 0
 
-        self.setBackgroundRole(?P...Base)
-        self.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
+        setBackgroundRole(?P...Base)
+        sSP..(QSizePolicy.E.., QSizePolicy.E..)
 
     ___ setFloatBased  floatBased):
-        self.floatBased _ floatBased
-        self.update()
+        floatBased _ floatBased
+        update()
 
     ___ setAntialiased  antialiased):
-        self.antialiased _ antialiased
-        self.update()
+        antialiased _ antialiased
+        update()
 
-    ___ minimumSizeHint(self):
+    ___ minimumSizeHint
         r_ QSize(50, 50)
 
-    ___ sizeHint(self):
+    ___ sizeHint
         r_ QSize(180, 180)
 
-    ___ nextAnimationFrame(self):
-        self.frameNo +_ 1
-        self.update()
+    ___ nextAnimationFrame
+        frameNo +_ 1
+        update()
 
     ___ paintEvent  event):
-        painter _ QPainter(self)
-        painter.setRenderHint(QPainter.Antialiasing, self.antialiased)
-        painter.translate(self.width() / 2, self.height() / 2)
+        painter _ QPainter
+        painter.setRenderHint(QPainter.Antialiasing, antialiased)
+        painter.translate(width() / 2, height() / 2)
 
-        for diameter in range(0, 256, 9):
-            delta _ abs((self.frameNo % 128) - diameter / 2)
+        ___ diameter __ range(0, 256, 9):
+            delta _ abs((frameNo % 128) - diameter / 2)
             alpha _ 255 - (delta * delta) / 4 - diameter
             __ alpha > 0:
                 painter.setPen(QPen(?C..(0, diameter / 2, 127, alpha), 3))
 
-                __ self.floatBased:
+                __ floatBased:
                     painter.drawEllipse(QRectF(-diameter / 2.0,
                             -diameter / 2.0, diameter, diameter))
                 ____
@@ -97,13 +97,13 @@ c_ CircleWidget(QWidget):
 
 
 c_ Window(QWidget):
-    ___ __init__(self):
-        super(Window, self).__init__()
+    ___  -
+        super(Window, self). - ()
 
-        aliasedLabel _ self.createLabel("Aliased")
-        antialiasedLabel _ self.createLabel("Antialiased")
-        intLabel _ self.createLabel("Int")
-        floatLabel _ self.createLabel("Float")
+        aliasedLabel _ createLabel("Aliased")
+        antialiasedLabel _ createLabel("Antialiased")
+        intLabel _ createLabel("Int")
+        floatLabel _ createLabel("Float")
 
         layout _ QGridLayout()
         layout.aW..(aliasedLabel, 0, 1)
@@ -111,10 +111,10 @@ c_ Window(QWidget):
         layout.aW..(intLabel, 1, 0)
         layout.aW..(floatLabel, 2, 0)
 
-        timer _ QTimer(self)
+        timer _ QTimer
 
-        for i in range(2):
-            for j in range(2):
+        ___ i __ range(2):
+            ___ j __ range(2):
                 w _ CircleWidget()
                 w.setAntialiased(j !_ 0)
                 w.setFloatBased(i !_ 0)
@@ -124,9 +124,9 @@ c_ Window(QWidget):
                 layout.aW..(w, i + 1, j + 1)
 
         timer.start(100)
-        self.sL..(layout)
+        sL..(layout)
 
-        self.setWindowTitle("Concentric Circles")
+        setWindowTitle("Concentric Circles")
 
     ___ createLabel  t__):
         label _ QLabel(t__)
@@ -136,11 +136,11 @@ c_ Window(QWidget):
         r_ label
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     window _ Window()
     window.s..
     ___.exit(app.exec_())

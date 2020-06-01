@@ -53,31 +53,31 @@ ____ ?.QtPrintSupport ______ QAbstractPrintDialog, QPrintDialog, QPrinter
 
 
 c_ MainWindow ?MW..
-    ___ __init__(self):
-        super(MainWindow, self).__init__()
+    ___  -
+        super(MainWindow, self). - ()
 
         fileMenu _ QMenu("&File", self)
         newAction _ fileMenu.aA..("&New...")
         newAction.sS..("Ctrl+N")
-        self.printAction _ fileMenu.aA..("&Print...", self.printFile)
-        self.printAction.sS..("Ctrl+P")
-        self.printAction.setEnabled F..
+        printAction _ fileMenu.aA..("&Print...", printFile)
+        printAction.sS..("Ctrl+P")
+        printAction.setEnabled F..
         quitAction _ fileMenu.aA..("E&xit")
         quitAction.sS..("Ctrl+Q")
-        self.mB.. .aM..(fileMenu)
+        mB.. .aM..(fileMenu)
 
-        self.letters _ QTabWidget()
+        letters _ QTabWidget()
 
-        newAction.t__.c..(self.openDialog)
-        quitAction.t__.c..(self.close)
+        newAction.t__.c..(openDialog)
+        quitAction.t__.c..(close)
 
-        self.sCW..(self.letters)
-        self.setWindowTitle("Order Form")
+        sCW..(letters)
+        setWindowTitle("Order Form")
 
     ___ createLetter  name, address, orderItems, sendOffers):
         editor _ QTextEdit()
-        tabIndex _ self.letters.addTab(editor, name)
-        self.letters.setCurrentIndex(tabIndex)
+        tabIndex _ letters.addTab(editor, name)
+        letters.setCurrentIndex(tabIndex)
 
         cursor _ editor.textCursor()
         cursor.movePosition(QTextCursor.Start)
@@ -108,7 +108,7 @@ c_ MainWindow ?MW..
         cursor.setPosition(topFrame.lastPosition())
 
         cursor.insertText(name, textFormat)
-        for line in address.split("\n"):
+        ___ line __ address.split("\n"):
             cursor.insertBlock()
             cursor.insertText(line)
 
@@ -142,7 +142,7 @@ c_ MainWindow ?MW..
         cursor _ orderTable.cellAt(0, 1).firstCursorPosition()
         cursor.insertText("Quantity", boldFormat)
 
-        for t__, quantity in orderItems:
+        ___ t__, quantity __ orderItems:
             row _ orderTable.rows()
 
             orderTable.insertRows(row, 1)
@@ -183,23 +183,23 @@ c_ MainWindow ?MW..
         cursor.insertBlock()
         cursor.insertText(name)
 
-        self.printAction.setEnabled(True)
+        printAction.setEnabled(True)
 
-    ___ createSample(self):
+    ___ createSample
         dialog _ DetailsDialog('Dialog with default values', self)
-        self.createLetter('Mr Smith',
+        createLetter('Mr Smith',
                 '12 High Street\nSmall Town\nThis country',
                 dialog.orderItems(), True)
 
-    ___ openDialog(self):
+    ___ openDialog
         dialog _ DetailsDialog("Enter Customer Details", self)
 
         __ dialog.e.. == QDialog.Accepted:
-            self.createLetter(dialog.senderName(), dialog.senderAddress(),
+            createLetter(dialog.senderName(), dialog.senderAddress(),
                     dialog.orderItems(), dialog.sendOffers())
 
-    ___ printFile(self):
-        editor _ self.letters.currentWidget()
+    ___ printFile
+        editor _ letters.currentWidget()
         printer _ QPrinter()
 
         dialog _ QPrintDialog(printer, self)
@@ -215,71 +215,71 @@ c_ MainWindow ?MW..
 
 
 c_ DetailsDialog(QDialog):
-    ___ __init__  title, parent):
-        super(DetailsDialog, self).__init__(parent)
+    ___  -   title, parent):
+        super(DetailsDialog, self). - (parent)
 
-        self.items _ ("T-shirt", "Badge", "Reference book", "Coffee cup")
+        items _ ("T-shirt", "Badge", "Reference book", "Coffee cup")
 
         nameLabel _ QLabel("Name:")
         addressLabel _ QLabel("Address:")
         addressLabel.setAlignment(__.AlignLeft | __.AlignTop)
 
-        self.nameEdit _ ?LE..
-        self.addressEdit _ QTextEdit()
-        self.offersCheckBox _ QCheckBox(
+        nameEdit _ ?LE..
+        addressEdit _ QTextEdit()
+        offersCheckBox _ QCheckBox(
                 "Send information about products and special offers:")
 
-        self.setupItemsTable()
+        setupItemsTable()
 
         buttonBox _ QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
 
-        buttonBox.accepted.c..(self.verify)
-        buttonBox.rejected.c..(self.reject)
+        buttonBox.accepted.c..(verify)
+        buttonBox.rejected.c..(reject)
 
         mainLayout _ QGridLayout()
         mainLayout.aW..(nameLabel, 0, 0)
-        mainLayout.aW..(self.nameEdit, 0, 1)
+        mainLayout.aW..(nameEdit, 0, 1)
         mainLayout.aW..(addressLabel, 1, 0)
-        mainLayout.aW..(self.addressEdit, 1, 1)
-        mainLayout.aW..(self.itemsTable, 0, 2, 2, 1)
-        mainLayout.aW..(self.offersCheckBox, 2, 1, 1, 2)
+        mainLayout.aW..(addressEdit, 1, 1)
+        mainLayout.aW..(itemsTable, 0, 2, 2, 1)
+        mainLayout.aW..(offersCheckBox, 2, 1, 1, 2)
         mainLayout.aW..(buttonBox, 3, 0, 1, 3)
-        self.sL..(mainLayout)
+        sL..(mainLayout)
 
-        self.setWindowTitle(title)
+        setWindowTitle(title)
 
-    ___ setupItemsTable(self):
-        self.itemsTable _ QTableWidget(le.(self.items), 2)
+    ___ setupItemsTable
+        itemsTable _ QTableWidget(le.(items), 2)
 
-        for row, item in enumerate(self.items):
+        ___ row, item __ en..(items):
             name _ QTableWidgetItem(item)
             name.setFlags(__.ItemIsEnabled | __.ItemIsSelectable)
-            self.itemsTable.setItem(row, 0, name)
+            itemsTable.setItem(row, 0, name)
             quantity _ QTableWidgetItem('1')
-            self.itemsTable.setItem(row, 1, quantity)
+            itemsTable.setItem(row, 1, quantity)
 
-    ___ orderItems(self):
+    ___ orderItems
         orderList _   # list
 
-        for row in range(le.(self.items)):
-            t__ _ self.itemsTable.item(row, 0).t__()
-            quantity _ int(self.itemsTable.item(row, 1).data(__.DisplayRole))
+        ___ row __ range(le.(items)):
+            t__ _ itemsTable.item(row, 0).t__()
+            quantity _ int(itemsTable.item(row, 1).data(__.DisplayRole))
             orderList.ap..((t__, max(0, quantity)))
 
         r_ orderList
 
-    ___ senderName(self):
-        r_ self.nameEdit.t__()
+    ___ senderName
+        r_ nameEdit.t__()
 
-    ___ senderAddress(self):
-        r_ self.addressEdit.toPlainText()
+    ___ senderAddress
+        r_ addressEdit.toPlainText()
 
-    ___ sendOffers(self):
-        r_ self.offersCheckBox.isChecked()
+    ___ sendOffers
+        r_ offersCheckBox.isChecked()
 
-    ___ verify(self):
-        __ self.nameEdit.t__() and self.addressEdit.toPlainText
-            self.accept()
+    ___ verify
+        __ nameEdit.t__() and addressEdit.toPlainText
+            accept()
             r_
 
         answer _ ?MB...warning  "Incomplete Form",
@@ -288,14 +288,14 @@ c_ DetailsDialog(QDialog):
                 ?MB...Yes, ?MB...No)
 
         __ answer == ?MB...Yes:
-            self.reject()
+            reject()
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     window _ MainWindow()
     window.resize(640, 480)
     window.s..

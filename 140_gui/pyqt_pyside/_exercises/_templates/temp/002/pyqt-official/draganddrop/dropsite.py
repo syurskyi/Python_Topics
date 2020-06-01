@@ -54,21 +54,21 @@ c_ DropArea(QLabel):
 
     changed _ pyqtSignal(QMimeData)
 
-    ___ __init__  parent _ N..):
-        super(DropArea, self).__init__(parent)
+    ___  -   parent _ N..):
+        super(DropArea, self). - (parent)
 
-        self.setMinimumSize(200, 200)
-        self.setFrameStyle(QFrame.Sunken | QFrame.StyledPanel)
-        self.setAlignment(__.AlignCenter)
-        self.setAcceptDrops(True)
-        self.setAutoFillBackground(True)
-        self.clear()
+        setMinimumSize(200, 200)
+        setFrameStyle(QFrame.Sunken | QFrame.StyledPanel)
+        setAlignment(__.AlignCenter)
+        setAcceptDrops(True)
+        setAutoFillBackground(True)
+        clear()
 
     ___ dragEnterEvent  event):
-        self.sT..("<drop content>")
-        self.setBackgroundRole(?P...Highlight)
+        sT..("<drop content>")
+        setBackgroundRole(?P...Highlight)
         event.acceptProposedAction()
-        self.changed.emit(event.mimeData())
+        changed.emit(event.mimeData())
 
     ___ dragMoveEvent  event):
         event.acceptProposedAction()
@@ -76,78 +76,78 @@ c_ DropArea(QLabel):
     ___ dropEvent  event):
         mimeData _ event.mimeData()
         __ mimeData.hasImage
-            self.setPixmap(QPixmap(mimeData.imageData()))
+            setPixmap(QPixmap(mimeData.imageData()))
         ____ mimeData.hasHtml
-            self.sT..(mimeData.html())
-            self.setTextFormat(__.RichText)
+            sT..(mimeData.html())
+            setTextFormat(__.RichText)
         ____ mimeData.hasText
-            self.sT..(mimeData.t__())
-            self.setTextFormat(__.PlainText)
+            sT..(mimeData.t__())
+            setTextFormat(__.PlainText)
         ____ mimeData.hasUrls
-            self.sT..("\n".join([url.path() for url in mimeData.urls()]))
+            sT..("\n".join([url.path() ___ url __ mimeData.urls()]))
         ____
-            self.sT..("Cannot display data")
+            sT..("Cannot display data")
 
-        self.setBackgroundRole(?P...Dark)
+        setBackgroundRole(?P...Dark)
         event.acceptProposedAction()
 
     ___ dragLeaveEvent  event):
-        self.clear()
+        clear()
         event.accept()
 
-    ___ clear(self):
-        self.sT..("<drop content>")
-        self.setBackgroundRole(?P...Dark)
-        self.changed.emit(N..)
+    ___ clear
+        sT..("<drop content>")
+        setBackgroundRole(?P...Dark)
+        changed.emit(N..)
 
 
 c_ DropSiteWindow(QWidget):
 
-    ___ __init__(self):
-        super(DropSiteWindow, self).__init__()
+    ___  - 
+        super(DropSiteWindow, self). - ()
 
-        self.abstractLabel _ QLabel(
+        abstractLabel _ QLabel(
                 "This example accepts drags from other applications and "
                 "displays the MIME types provided by the drag object.")
-        self.abstractLabel.setWordWrap(True)
-        self.abstractLabel.adjustSize()
+        abstractLabel.setWordWrap(True)
+        abstractLabel.adjustSize()
 
-        self.dropArea _ DropArea()
-        self.dropArea.changed.c..(self.updateFormatsTable)
+        dropArea _ DropArea()
+        dropArea.changed.c..(updateFormatsTable)
 
-        self.formatsTable _ QTableWidget()
-        self.formatsTable.setColumnCount(2)
-        self.formatsTable.setEditTriggers(QAbstractItemView.NoEditTriggers)
-        self.formatsTable.setHorizontalHeaderLabels(["Format", "Content"])
-        self.formatsTable.horizontalHeader().setStretchLastSection(True)
+        formatsTable _ QTableWidget()
+        formatsTable.setColumnCount(2)
+        formatsTable.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        formatsTable.setHorizontalHeaderLabels(["Format", "Content"])
+        formatsTable.horizontalHeader().setStretchLastSection(True)
 
-        self.clearButton _ ?PB..("Clear")
-        self.quitButton _ ?PB..("Quit")
+        clearButton _ ?PB..("Clear")
+        quitButton _ ?PB..("Quit")
 
-        self.buttonBox _ QDialogButtonBox()
-        self.buttonBox.addButton(self.clearButton, QDialogButtonBox.ActionRole)
-        self.buttonBox.addButton(self.quitButton, QDialogButtonBox.RejectRole)
+        buttonBox _ QDialogButtonBox()
+        buttonBox.addButton(clearButton, QDialogButtonBox.ActionRole)
+        buttonBox.addButton(quitButton, QDialogButtonBox.RejectRole)
 
-        self.quitButton.pressed.c..(self.close)
-        self.clearButton.pressed.c..(self.dropArea.clear)
+        quitButton.pressed.c..(close)
+        clearButton.pressed.c..(dropArea.clear)
 
         mainLayout _ ?VBL..
-        mainLayout.aW..(self.abstractLabel)
-        mainLayout.aW..(self.dropArea)
-        mainLayout.aW..(self.formatsTable)
-        mainLayout.aW..(self.buttonBox)
-        self.sL..(mainLayout)
+        mainLayout.aW..(abstractLabel)
+        mainLayout.aW..(dropArea)
+        mainLayout.aW..(formatsTable)
+        mainLayout.aW..(buttonBox)
+        sL..(mainLayout)
 
-        self.setWindowTitle("Drop Site")
-        self.setMinimumSize(350, 500)
+        setWindowTitle("Drop Site")
+        setMinimumSize(350, 500)
 
     ___ updateFormatsTable  mimeData_None):
-        self.formatsTable.setRowCount(0)
+        formatsTable.setRowCount(0)
 
         __ mimeData __ N..:
             r_
 
-        for format in mimeData.formats
+        ___ format __ mimeData.formats
             formatItem _ QTableWidgetItem(format)
             formatItem.setFlags(__.ItemIsEnabled)
             formatItem.setTextAlignment(__.AlignTop | __.AlignLeft)
@@ -157,23 +157,23 @@ c_ DropSiteWindow(QWidget):
             ____ format == 'text/html':
                 t__ _ mimeData.html().strip()
             ____ format == 'text/uri-list':
-                t__ _ " ".join([url.toString() for url in mimeData.urls()])
+                t__ _ " ".join([url.toString() ___ url __ mimeData.urls()])
             ____
-                t__ _ " ".join(["%02X" % ord(datum) for datum in mimeData.data(format)])
+                t__ _ " ".join(["%02X" % ord(datum) ___ datum __ mimeData.data(format)])
 
-            row _ self.formatsTable.rowCount()
-            self.formatsTable.insertRow(row)
-            self.formatsTable.setItem(row, 0, QTableWidgetItem(format))
-            self.formatsTable.setItem(row, 1, QTableWidgetItem(t__))
+            row _ formatsTable.rowCount()
+            formatsTable.insertRow(row)
+            formatsTable.setItem(row, 0, QTableWidgetItem(format))
+            formatsTable.setItem(row, 1, QTableWidgetItem(t__))
 
-        self.formatsTable.resizeColumnToContents(0)
+        formatsTable.resizeColumnToContents(0)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     window _ DropSiteWindow()
     window.s..
     ___.exit(app.exec_())

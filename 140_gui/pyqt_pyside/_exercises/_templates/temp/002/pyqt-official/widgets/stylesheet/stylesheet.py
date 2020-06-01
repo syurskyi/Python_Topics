@@ -51,22 +51,22 @@ ____ stylesheeteditor ______ StyleSheetEditor
 
 
 c_ MainWindow ?MW..
-    ___ __init__(self):
-        super(MainWindow, self).__init__()
+    ___  -
+        super(MainWindow, self). - ()
 
-        self.ui _ Ui_MainWindow()
-        self.ui.setupUi(self)
-        self.ui.nameLabel.setProperty('class', 'mandatory QLabel')
-        self.styleSheetEditor _ StyleSheetEditor(self)
-        self.statusBar().aW..(QLabel("Ready"))
-        self.ui.exitAction.t__.c..(?A...instance().quit)
-        self.ui.aboutQtAction.t__.c..(?A...instance().aboutQt)
+        ui _ Ui_MainWindow()
+        ui.setupUi
+        ui.nameLabel.setProperty('class', 'mandatory QLabel')
+        styleSheetEditor _ StyleSheetEditor
+        statusBar().aW..(QLabel("Ready"))
+        ui.exitAction.t__.c..(?A...instance().quit)
+        ui.aboutQtAction.t__.c..(?A...instance().aboutQt)
 
-    ___ on_editStyleAction_triggered(self):
-        self.styleSheetEditor.s..
-        self.styleSheetEditor.activateWindow()
+    ___ on_editStyleAction_triggered
+        styleSheetEditor.s..
+        styleSheetEditor.activateWindow()
 
-    ___ on_aboutAction_triggered(self):
+    ___ on_aboutAction_triggered
         ?MB...about  "About Style sheet",
                 "The <b>Style Sheet</b> example shows how widgets can be "
                 "styled using "
@@ -76,11 +76,11 @@ c_ MainWindow ?MW..
                 "sheet or design your own.")
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     window _ MainWindow()
     window.s..

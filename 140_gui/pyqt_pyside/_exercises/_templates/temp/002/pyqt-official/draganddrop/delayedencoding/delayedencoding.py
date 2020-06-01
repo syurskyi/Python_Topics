@@ -57,56 +57,56 @@ c_ MimeData(QMimeData):
 
     dataRequested _ pyqtSignal(str)
 
-    ___ formats(self):
-        formats _ QMimeData.formats(self)
+    ___ formats
+        formats _ QMimeData.formats
         formats.ap..('image/png')
 
         r_ formats
 
     ___ retrieveData  mimeType, qvtype):
-        self.dataRequested.emit(mimeType)
+        dataRequested.emit(mimeType)
 
         r_ QMimeData.retrieveData  mimeType, qvtype)
 
 
 c_ SourceWidget(QWidget):
-    ___ __init__  parent_None):
-        super(SourceWidget, self).__init__(parent)
+    ___  -   parent_None):
+        super(SourceWidget, self). - (parent)
 
-        self.mimeData _ N..
+        mimeData _ N..
 
         imageFile _ QFile(':/images/example.svg')
         imageFile.o..(QIODevice.ReadOnly)
-        self.imageData _ imageFile.readAll()
+        imageData _ imageFile.readAll()
         imageFile.close()
 
         imageArea _ QScrollArea()
-        self.imageLabel _ QSvgWidget()
-        self.imageLabel.renderer().load(self.imageData)
-        imageArea.setWidget(self.imageLabel)
+        imageLabel _ QSvgWidget()
+        imageLabel.renderer().load(imageData)
+        imageArea.setWidget(imageLabel)
 
         instructTopLabel _ QLabel("This is an SVG drawing:")
         instructBottomLabel _ QLabel("Drag the icon to copy the drawing as a PNG file:")
         dragIcon _ ?PB..("Export")
         dragIcon.setIcon(QIcon(':/images/drag.png'))
-        dragIcon.pressed.c..(self.startDrag)
+        dragIcon.pressed.c..(startDrag)
 
         layout _ QGridLayout()
         layout.aW..(instructTopLabel, 0, 0, 1, 2)
         layout.aW..(imageArea, 1, 0, 2, 2)
         layout.aW..(instructBottomLabel, 3, 0)
         layout.aW..(dragIcon, 3, 1)
-        self.sL..(layout)
-        self.setWindowTitle("Delayed Encoding")
+        sL..(layout)
+        setWindowTitle("Delayed Encoding")
 
     ___ createData  mimeType):
         __ mimeType !_ 'image/png':
             r_
 
-        image _ QImage(self.imageLabel.size(), QImage.Format_RGB32)
+        image _ QImage(imageLabel.size(), QImage.Format_RGB32)
         painter _ QPainter()
         painter.begin(image)
-        self.imageLabel.renderer().render(painter)
+        imageLabel.renderer().render(painter)
         painter.end()
 
         data _ QByteArray()
@@ -114,23 +114,23 @@ c_ SourceWidget(QWidget):
         buffer.o..(QIODevice.WriteOnly)
         image.save(buffer, 'PNG')
         buffer.close()
-        self.mimeData.setData('image/png', data)
+        mimeData.setData('image/png', data)
 
-    ___ startDrag(self):
-        self.mimeData _ MimeData()
-        self.mimeData.dataRequested.c..(self.createData, __.DirectConnection)
+    ___ startDrag
+        mimeData _ MimeData()
+        mimeData.dataRequested.c..(createData, __.DirectConnection)
 
-        drag _ QDrag(self)
-        drag.setMimeData(self.mimeData)
+        drag _ QDrag
+        drag.setMimeData(mimeData)
         drag.setPixmap(QPixmap(':/images/drag.png'))
         drag.exec_(__.CopyAction)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     window _ SourceWidget()
     window.s..
     ___.exit(app.exec_())

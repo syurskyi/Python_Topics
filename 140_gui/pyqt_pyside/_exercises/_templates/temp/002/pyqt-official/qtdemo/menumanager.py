@@ -63,29 +63,29 @@ c_ MenuManager(QObject):
 
     pInstance _ N..
 
-    ___ __init__(self):
-        super(MenuManager, self).__init__()
+    ___  - 
+        super(MenuManager, self). - ()
 
-        self.contentsDoc _ N..
-        self.assistantProcess _ QProcess()
-        self.helpRootUrl _ ''
-        self.docDir _ QDir()
-        self.imgDir _ QDir()
+        contentsDoc _ N..
+        assistantProcess _ QProcess()
+        helpRootUrl _ ''
+        docDir _ QDir()
+        imgDir _ QDir()
 
-        self.info _ {}
-        self.window _ N..
+        info _ {}
+        window _ N..
 
-        self.ticker _ N..
-        self.tickerInAnim _ N..
-        self.upButton _ N..
-        self.downButton _ N..
-        self.score _ Score()
-        self.currentMenu _ "[no menu visible]"
-        self.currentCategory _ "[no category visible]"
-        self.currentMenuButtons _ "[no menu buttons visible]"
-        self.currentInfo _ "[no info visible]"
-        self.currentMenuCode _ -1
-        self.readXmlDocument()
+        ticker _ N..
+        tickerInAnim _ N..
+        upButton _ N..
+        downButton _ N..
+        score _ Score()
+        currentMenu _ "[no menu visible]"
+        currentCategory _ "[no category visible]"
+        currentMenuButtons _ "[no menu buttons visible]"
+        currentInfo _ "[no info visible]"
+        currentMenuCode _ -1
+        readXmlDocument()
 
     @classmethod
     ___ instance(cls):
@@ -97,170 +97,170 @@ c_ MenuManager(QObject):
     ___ getResource  name):
         r_ QByteArray()
 
-    ___ readXmlDocument(self):
+    ___ readXmlDocument
         root _ QFileInfo(__file__).absolutePath()
         xml_file _ QFile(root + '/examples.xml')
         xml_file.o..(QFile.ReadOnly | QFile.Text)
         contents _ xml_file.readAll().data()
         xml_file.close()
 
-        self.contentsDoc _ parseString(contents)
+        contentsDoc _ parseString(contents)
 
     ___ itemSelected  userCode, menuName):
         __ userCode == MenuManager.LAUNCH:
-            self.launchExample(self.currentInfo)
+            launchExample(currentInfo)
         ____ userCode == MenuManager.LAUNCH_QML:
-            self.launchQml(self.currentInfo)
+            launchQml(currentInfo)
         ____ userCode == MenuManager.DOCUMENTATION:
-            self.showDocInAssistant(self.currentInfo)
+            showDocInAssistant(currentInfo)
         ____ userCode == MenuManager.QUIT:
             ?A...quit()
         ____ userCode == MenuManager.FULLSCREEN:
-            self.window.toggleFullscreen()
+            window.toggleFullscreen()
         ____ userCode == MenuManager.ROOT:
             # Out.
-            self.score.queueMovie(self.currentMenu + ' -out', Score.FROM_START,
+            score.queueMovie(currentMenu + ' -out', Score.FROM_START,
                     Score.LOCK_ITEMS)
-            self.score.queueMovie(self.currentMenuButtons + ' -out',
+            score.queueMovie(currentMenuButtons + ' -out',
                     Score.FROM_START, Score.LOCK_ITEMS)
-            self.score.queueMovie(self.currentInfo + ' -out')
-            self.score.queueMovie(self.currentInfo + ' -buttons -out',
+            score.queueMovie(currentInfo + ' -out')
+            score.queueMovie(currentInfo + ' -buttons -out',
                     Score.NEW_ANIMATION_ONLY)
-            self.score.queueMovie('back -out', Score.ONLY_IF_VISIBLE)
+            score.queueMovie('back -out', Score.ONLY_IF_VISIBLE)
 
             # Book-keeping.
-            self.currentMenuCode _ MenuManager.ROOT
-            self.currentMenu _ menuName + ' -menu1'
-            self.currentMenuButtons _ menuName + ' -buttons'
-            self.currentInfo _ menuName + ' -info'
+            currentMenuCode _ MenuManager.ROOT
+            currentMenu _ menuName + ' -menu1'
+            currentMenuButtons _ menuName + ' -buttons'
+            currentInfo _ menuName + ' -info'
 
             # In.
-            self.score.queueMovie('upndown -shake')
-            self.score.queueMovie(self.currentMenu, Score.FROM_START,
+            score.queueMovie('upndown -shake')
+            score.queueMovie(currentMenu, Score.FROM_START,
                     Score.UNLOCK_ITEMS)
-            self.score.queueMovie(self.currentMenuButtons, Score.FROM_START,
+            score.queueMovie(currentMenuButtons, Score.FROM_START,
                     Score.UNLOCK_ITEMS)
-            self.score.queueMovie(self.currentInfo)
+            score.queueMovie(currentInfo)
 
             __ no. Colors.noTicker:
-                self.ticker.doIntroTransitions _ True
-                self.tickerInAnim.setStartDelay(2000)
-                self.ticker.useGuideQt()
-                self.score.queueMovie('ticker', Score.NEW_ANIMATION_ONLY)
+                ticker.doIntroTransitions _ True
+                tickerInAnim.setStartDelay(2000)
+                ticker.useGuideQt()
+                score.queueMovie('ticker', Score.NEW_ANIMATION_ONLY)
         ____ userCode == MenuManager.MENU1:
             # Out.
-            self.score.queueMovie(self.currentMenu + ' -out', Score.FROM_START,
+            score.queueMovie(currentMenu + ' -out', Score.FROM_START,
                     Score.LOCK_ITEMS)
-            self.score.queueMovie(self.currentMenuButtons + ' -out',
+            score.queueMovie(currentMenuButtons + ' -out',
                     Score.FROM_START, Score.LOCK_ITEMS)
-            self.score.queueMovie(self.currentInfo + ' -out')
+            score.queueMovie(currentInfo + ' -out')
 
             # Book-keeping.
-            self.currentMenuCode _ MenuManager.MENU1
-            self.currentCategory _ menuName
-            self.currentMenu _ menuName + ' -menu1'
-            self.currentInfo _ menuName + ' -info'
+            currentMenuCode _ MenuManager.MENU1
+            currentCategory _ menuName
+            currentMenu _ menuName + ' -menu1'
+            currentInfo _ menuName + ' -info'
 
             # In.
-            self.score.queueMovie('upndown -shake')
-            self.score.queueMovie('back -in')
-            self.score.queueMovie(self.currentMenu, Score.FROM_START,
+            score.queueMovie('upndown -shake')
+            score.queueMovie('back -in')
+            score.queueMovie(currentMenu, Score.FROM_START,
                     Score.UNLOCK_ITEMS)
-            self.score.queueMovie(self.currentInfo)
+            score.queueMovie(currentInfo)
 
             __ no. Colors.noTicker:
-                self.ticker.useGuideTt()
+                ticker.useGuideTt()
         ____ userCode == MenuManager.MENU2:
             # Out.
-            self.score.queueMovie(self.currentInfo + ' -out',
+            score.queueMovie(currentInfo + ' -out',
                     Score.NEW_ANIMATION_ONLY)
-            self.score.queueMovie(self.currentInfo + ' -buttons -out',
+            score.queueMovie(currentInfo + ' -buttons -out',
                     Score.NEW_ANIMATION_ONLY)
 
             # Book-keeping.
-            self.currentMenuCode _ MenuManager.MENU2
-            self.currentInfo _ menuName
+            currentMenuCode _ MenuManager.MENU2
+            currentInfo _ menuName
 
             # In/shake.
-            self.score.queueMovie('upndown -shake')
-            self.score.queueMovie('back -shake')
-            self.score.queueMovie(self.currentMenu + ' -shake')
-            self.score.queueMovie(self.currentInfo, Score.NEW_ANIMATION_ONLY)
-            self.score.queueMovie(self.currentInfo + ' -buttons',
+            score.queueMovie('upndown -shake')
+            score.queueMovie('back -shake')
+            score.queueMovie(currentMenu + ' -shake')
+            score.queueMovie(currentInfo, Score.NEW_ANIMATION_ONLY)
+            score.queueMovie(currentInfo + ' -buttons',
                     Score.NEW_ANIMATION_ONLY)
 
             __ no. Colors.noTicker:
-                self.score.queueMovie('ticker -out', Score.NEW_ANIMATION_ONLY)
+                score.queueMovie('ticker -out', Score.NEW_ANIMATION_ONLY)
         ____ userCode == MenuManager.UP:
-            backMenu _ self.info[self.currentMenu]['back']
+            backMenu _ info[currentMenu]['back']
             __ backMenu:
-                self.score.queueMovie(self.currentMenu + ' -top_out',
+                score.queueMovie(currentMenu + ' -top_out',
                         Score.FROM_START, Score.LOCK_ITEMS)
-                self.score.queueMovie(backMenu + ' -bottom_in',
+                score.queueMovie(backMenu + ' -bottom_in',
                         Score.FROM_START, Score.UNLOCK_ITEMS)
-                self.currentMenu _ backMenu
+                currentMenu _ backMenu
         ____ userCode == MenuManager.DOWN:
-            moreMenu _ self.info[self.currentMenu]['more']
+            moreMenu _ info[currentMenu]['more']
             __ moreMenu:
-                self.score.queueMovie(self.currentMenu + ' -bottom_out',
+                score.queueMovie(currentMenu + ' -bottom_out',
                         Score.FROM_START, Score.LOCK_ITEMS)
-                self.score.queueMovie(moreMenu + ' -top_in', Score.FROM_START,
+                score.queueMovie(moreMenu + ' -top_in', Score.FROM_START,
                         Score.UNLOCK_ITEMS)
-                self.currentMenu _ moreMenu
+                currentMenu _ moreMenu
         ____ userCode == MenuManager.BACK:
-            __ self.currentMenuCode == MenuManager.MENU2:
+            __ currentMenuCode == MenuManager.MENU2:
                 # Out.
-                self.score.queueMovie(self.currentInfo + ' -out',
+                score.queueMovie(currentInfo + ' -out',
                         Score.NEW_ANIMATION_ONLY)
-                self.score.queueMovie(self.currentInfo + ' -buttons -out',
+                score.queueMovie(currentInfo + ' -buttons -out',
                         Score.NEW_ANIMATION_ONLY)
 
                 # Book-keeping.
-                self.currentMenuCode _ MenuManager.MENU1
-                self.currentMenuButtons _ self.currentCategory + ' -buttons'
-                self.currentInfo _ self.currentCategory + ' -info'
+                currentMenuCode _ MenuManager.MENU1
+                currentMenuButtons _ currentCategory + ' -buttons'
+                currentInfo _ currentCategory + ' -info'
 
                 # In/shake.
-                self.score.queueMovie('upndown -shake')
-                self.score.queueMovie(self.currentMenu + ' -shake')
-                self.score.queueMovie(self.currentInfo,
+                score.queueMovie('upndown -shake')
+                score.queueMovie(currentMenu + ' -shake')
+                score.queueMovie(currentInfo,
                         Score.NEW_ANIMATION_ONLY)
-                self.score.queueMovie(self.currentInfo + ' -buttons',
+                score.queueMovie(currentInfo + ' -buttons',
                         Score.NEW_ANIMATION_ONLY)
 
                 __ no. Colors.noTicker:
-                    self.ticker.doIntroTransitions _ False
-                    self.tickerInAnim.setStartDelay(500)
-                    self.score.queueMovie('ticker', Score.NEW_ANIMATION_ONLY)
-            ____ self.currentMenuCode !_ MenuManager.ROOT:
-                self.itemSelected(MenuManager.ROOT, Colors.rootMenuName)
+                    ticker.doIntroTransitions _ False
+                    tickerInAnim.setStartDelay(500)
+                    score.queueMovie('ticker', Score.NEW_ANIMATION_ONLY)
+            ____ currentMenuCode !_ MenuManager.ROOT:
+                itemSelected(MenuManager.ROOT, Colors.rootMenuName)
 
         # Update back and more buttons.
-        __ self.info.setdefault(self.currentMenu, {}).g..('back'):
+        __ info.setdefault(currentMenu, {}).g..('back'):
             back_state _ TextButton.OFF
         ____
             back_state _ TextButton.DISABLED
 
-        __ self.info[self.currentMenu].g..('more'):
+        __ info[currentMenu].g..('more'):
             more_state _ TextButton.OFF
         ____
             more_state _ TextButton.DISABLED
 
-        self.upButton.setState(back_state)
-        self.downButton.setState(more_state)
+        upButton.setState(back_state)
+        downButton.setState(more_state)
 
-        __ self.score.hasQueuedMovies
-            self.score.playQue()
+        __ score.hasQueuedMovies
+            score.playQue()
             # Playing new movies might include loading etc., so ignore the FPS
             # at this point.
-            self.window.fpsHistory _   # list
+            window.fpsHistory _   # list
 
     ___ showDocInAssistant  name):
-        url _ self.resolveDocUrl(name)
+        url _ resolveDocUrl(name)
         Colors.debug("Sending URL to Assistant:", url)
 
         # Start assistant if it's not already running.
-        __ self.assistantProcess.state() !_ QProcess.Running:
+        __ assistantProcess.state() !_ QProcess.Running:
             app _ QLibraryInfo.location(QLibraryInfo.BinariesPath) + QDir.separator()
 
             __ ___.platform == 'darwin':
@@ -269,22 +269,22 @@ c_ MenuManager(QObject):
                 app +_ 'assistant'
 
             args _ ['-enableRemoteControl']
-            self.assistantProcess.start(app, args)
-            __ no. self.assistantProcess.waitForStarted
+            assistantProcess.start(app, args)
+            __ no. assistantProcess.waitForStarted
                 ?MB...critical(N.., "PyQt Demo",
                         "Could not start %s." % app)
                 r_
 
         # Send command through remote control even if the process was just
         # started to activate assistant and bring it to the front.
-        cmd_str _ QTextStream(self.assistantProcess)
+        cmd_str _ QTextStream(assistantProcess)
         cmd_str << 'SetSource ' << url << '\n'
 
     ___ launchExample  name):
-        executable _ self.resolveExeFile(name)
+        executable _ resolveExeFile(name)
 
-        process _ QProcess(self)
-        process.error.c..(self.launchError)
+        process _ QProcess
+        process.error.c..(launchError)
 
         __ ___.platform == 'win32':
             # Make sure it finds the DLLs on Windows.
@@ -294,8 +294,8 @@ c_ MenuManager(QObject):
                             env.value('PATH'))
             process.setProcessEnvironment(env)
 
-        __ self.info[name]['changedirectory'] !_ 'false':
-            workingDirectory _ self.resolveDataDir(name)
+        __ info[name]['changedirectory'] !_ 'false':
+            workingDirectory _ resolveDataDir(name)
             process.setWorkingDirectory(workingDirectory)
             Colors.debug("Setting working directory:", workingDirectory)
 
@@ -303,11 +303,11 @@ c_ MenuManager(QObject):
         process.start(___.executable, [executable])
 
     ___ launchQml  name):
-        import_path _ self.resolveDataDir(name)
-        qml _ self.resolveQmlFile(name)
+        import_path _ resolveDataDir(name)
+        qml _ resolveQmlFile(name)
 
-        process _ QProcess(self)
-        process.error.c..(self.launchError)
+        process _ QProcess
+        process.error.c..(launchError)
 
         env _ QProcessEnvironment.systemEnvironment()
         env.insert('QML2_IMPORT_PATH', import_path)
@@ -325,30 +325,30 @@ c_ MenuManager(QObject):
                     ?MB...Cancel)
 
     ___ init  window):
-        self.window _ window
+        window _ window
 
         # Create div.
-        self.createTicker()
-        self.createUpnDownButtons()
-        self.createBackButton()
+        createTicker()
+        createUpnDownButtons()
+        createBackButton()
 
         # Create first level menu.
-        rootElement _ self.contentsDoc.documentElement
-        self.createRootMenu(rootElement)
+        rootElement _ contentsDoc.documentElement
+        createRootMenu(rootElement)
 
         # Create second level menus.
-        level2Menu _ self._first_element(rootElement)
+        level2Menu _ _first_element(rootElement)
         w__ level2Menu __ no. N..:
-            self.createSubMenu(level2Menu)
+            createSubMenu(level2Menu)
 
             # Create leaf menu and example info.
-            example _ self._first_element(level2Menu)
+            example _ _first_element(level2Menu)
             w__ example __ no. N..:
-                self.readInfoAboutExample(example)
-                self.createLeafMenu(example)
-                example _ self._next_element(example)
+                readInfoAboutExample(example)
+                createLeafMenu(example)
+                example _ _next_element(example)
 
-            level2Menu _ self._next_element(level2Menu)
+            level2Menu _ _next_element(level2Menu)
 
     @classmethod
     ___ _first_element(cls, node):
@@ -367,20 +367,20 @@ c_ MenuManager(QObject):
 
     ___ readInfoAboutExample  example):
         name _ example.getAttribute('name')
-        __ name in self.info:
+        __ name __ info:
             Colors.debug("__WARNING: MenuManager.readInfoAboutExample: "
                          "Demo/example with name", name, "appears twice in "
                          "the xml-file!__")
 
-        self.info.setdefault(name, {})['filename'] _ example.getAttribute('filename')
-        self.info[name]['dirname'] _ example.parentNode.getAttribute('dirname')
-        self.info[name]['changedirectory'] _ example.getAttribute('changedirectory')
-        self.info[name]['image'] _ example.getAttribute('image')
-        self.info[name]['qml'] _ example.getAttribute('qml')
+        info.setdefault(name, {})['filename'] _ example.getAttribute('filename')
+        info[name]['dirname'] _ example.parentNode.getAttribute('dirname')
+        info[name]['changedirectory'] _ example.getAttribute('changedirectory')
+        info[name]['image'] _ example.getAttribute('image')
+        info[name]['qml'] _ example.getAttribute('qml')
 
     ___ resolveDir  name):
-        dirName _ self.info[name]['dirname']
-        fileName _ self.info[name]['filename'].split('/')
+        dirName _ info[name]['dirname']
+        fileName _ info[name]['filename'].split('/')
 
         dir _ QFileInfo(__file__).dir()
         # To the 'examples' directory.
@@ -397,12 +397,12 @@ c_ MenuManager(QObject):
         r_ dir
 
     ___ resolveDataDir  name):
-        r_ self.resolveDir(name).absolutePath()
+        r_ resolveDir(name).absolutePath()
 
     ___ resolveExeFile  name):
-        dir _ self.resolveDir(name)
+        dir _ resolveDir(name)
 
-        fileName _ self.info[name]['filename'].split('/')[-1]
+        fileName _ info[name]['filename'].split('/')[-1]
 
         pyFile _ QFile(dir.path() + '/' + fileName + '.py')
         __ pyFile.exists
@@ -417,9 +417,9 @@ c_ MenuManager(QObject):
         r_ '__executable not found__'
 
     ___ resolveQmlFile  name):
-        dir _ self.resolveDir(name)
+        dir _ resolveDir(name)
 
-        fileName _ self.info[name]['filename'].split('/')[-1]
+        fileName _ info[name]['filename'].split('/')[-1]
 
         qmlFile _ QFile(dir.path() + '/' + fileName + '.qml')
         __ qmlFile.exists
@@ -430,97 +430,97 @@ c_ MenuManager(QObject):
         r_ '__QML not found__'
 
     ___ resolveDocUrl  name):
-        dirName _ self.info[name]['dirname']
-        fileName _ self.info[name]['filename']
+        dirName _ info[name]['dirname']
+        fileName _ info[name]['filename']
 
-        r_ self.helpRootUrl + dirName.replace('/', '-') + '-' + fileName + '.html'
+        r_ helpRootUrl + dirName.replace('/', '-') + '-' + fileName + '.html'
 
     ___ resolveImageUrl  name):
-        r_ self.helpRootUrl + 'images/' + name
+        r_ helpRootUrl + 'images/' + name
 
     ___ getHtml  name):
-        r_ self.getResource(self.resolveDocUrl(name))
+        r_ getResource(resolveDocUrl(name))
 
     ___ getImage  name):
-        imageName _ self.info[name]['image']
-        fileName _ self.info[name]['filename']
+        imageName _ info[name]['image']
+        fileName _ info[name]['filename']
 
-        __ self.info[name]['qml'] == 'true':
+        __ info[name]['qml'] == 'true':
             fileName _ 'qml-' + fileName.split('/')[-1]
 
         __ no. imageName:
             imageName _ fileName + '-example.png'
 
-            __ self.getResource(self.resolveImageUrl(imageName)).isEmpty
+            __ getResource(resolveImageUrl(imageName)).isEmpty
                 imageName _ fileName + '.png'
 
-            __ self.getResource(self.resolveImageUrl(imageName)).isEmpty
+            __ getResource(resolveImageUrl(imageName)).isEmpty
                 imageName _ fileName + 'example.png'
 
-        r_ self.getResource(self.resolveImageUrl(imageName))
+        r_ getResource(resolveImageUrl(imageName))
 
     ___ createRootMenu  el):
         name _ el.getAttribute('name')
-        self.createMenu(el, MenuManager.MENU1)
-        self.createInfo(
-                MenuContentItem(el, self.window.mainSceneRoot),
+        createMenu(el, MenuManager.MENU1)
+        createInfo(
+                MenuContentItem(el, window.mainSceneRoot),
                 name + ' -info')
 
-        menuButtonsIn _ self.score.insertMovie(name + ' -buttons')
-        menuButtonsOut _ self.score.insertMovie(name + ' -buttons -out')
-        self.createLowLeftButton("Quit", MenuManager.QUIT, menuButtonsIn,
+        menuButtonsIn _ score.insertMovie(name + ' -buttons')
+        menuButtonsOut _ score.insertMovie(name + ' -buttons -out')
+        createLowLeftButton("Quit", MenuManager.QUIT, menuButtonsIn,
                 menuButtonsOut, N..)
-        self.createLowRightButton("Toggle fullscreen", MenuManager.FULLSCREEN,
+        createLowRightButton("Toggle fullscreen", MenuManager.FULLSCREEN,
                 menuButtonsIn, menuButtonsOut, N..)
 
     ___ createSubMenu  el):
         name _ el.getAttribute('name')
-        self.createMenu(el, MenuManager.MENU2)
-        self.createInfo(
-                MenuContentItem(el, self.window.mainSceneRoot),
+        createMenu(el, MenuManager.MENU2)
+        createInfo(
+                MenuContentItem(el, window.mainSceneRoot),
                 name + ' -info')
 
     ___ createLeafMenu  el):
         name _ el.getAttribute('name')
-        self.createInfo(ExampleContent(name, self.window.mainSceneRoot), name)
+        createInfo(ExampleContent(name, window.mainSceneRoot), name)
 
-        infoButtonsIn _ self.score.insertMovie(name + ' -buttons')
-        infoButtonsOut _ self.score.insertMovie(name + ' -buttons -out')
-        self.createLowRightLeafButton("Documentation", 600,
+        infoButtonsIn _ score.insertMovie(name + ' -buttons')
+        infoButtonsOut _ score.insertMovie(name + ' -buttons -out')
+        createLowRightLeafButton("Documentation", 600,
                 MenuManager.DOCUMENTATION, infoButtonsIn, infoButtonsOut, N..)
         __ el.getAttribute('executable') !_ 'false':
-            self.createLowRightLeafButton("Launch", 405, MenuManager.LAUNCH,
+            createLowRightLeafButton("Launch", 405, MenuManager.LAUNCH,
                     infoButtonsIn, infoButtonsOut, N..)
         ____ el.getAttribute('qml') == 'true':
-            self.createLowRightLeafButton("Display", 405,
+            createLowRightLeafButton("Display", 405,
                     MenuManager.LAUNCH_QML, infoButtonsIn, infoButtonsOut,
                     N..)
 
     ___ createMenu  category, type):
-        sw _ self.window.scene.sceneRect().width()
+        sw _ window.scene.sceneRect().width()
         xOffset _ 15
         yOffset _ 10
         maxExamples _ Colors.menuCount
         menuIndex _ 1
         name _ category.getAttribute('name')
-        currentNode _ self._first_element(category)
+        currentNode _ _first_element(category)
         currentMenu _ '%s -menu%d' % (name, menuIndex)
 
         w__ currentNode __ no. N..:
-            movieIn _ self.score.insertMovie(currentMenu)
-            movieOut _ self.score.insertMovie(currentMenu + ' -out')
-            movieNextTopOut _ self.score.insertMovie(currentMenu + ' -top_out')
-            movieNextBottomOut _ self.score.insertMovie(currentMenu + ' -bottom_out')
-            movieNextTopIn _ self.score.insertMovie(currentMenu + ' -top_in')
-            movieNextBottomIn _ self.score.insertMovie(currentMenu + ' -bottom_in')
-            movieShake _ self.score.insertMovie(currentMenu + ' -shake')
+            movieIn _ score.insertMovie(currentMenu)
+            movieOut _ score.insertMovie(currentMenu + ' -out')
+            movieNextTopOut _ score.insertMovie(currentMenu + ' -top_out')
+            movieNextBottomOut _ score.insertMovie(currentMenu + ' -bottom_out')
+            movieNextTopIn _ score.insertMovie(currentMenu + ' -top_in')
+            movieNextBottomIn _ score.insertMovie(currentMenu + ' -bottom_in')
+            movieShake _ score.insertMovie(currentMenu + ' -shake')
 
             i _ 0
             w__ currentNode __ no. N.. and i < maxExamples:
                 # Create a normal menu button.
                 label _ currentNode.getAttribute('name')
                 item _ TextButton(label, TextButton.LEFT, type,
-                        self.window.mainSceneRoot)
+                        window.mainSceneRoot)
 
                 item.setRecursiveVisible F..
                 item.setZValue(10)
@@ -598,19 +598,19 @@ c_ MenuManager(QObject):
                 movieNextBottomIn.ap..(anim)
 
                 i +_ 1
-                currentNode _ self._next_element(currentNode)
+                currentNode _ _next_element(currentNode)
 
             __ currentNode __ no. N.. and i == maxExamples:
                 # We need another menu, so register for 'more' and 'back'
                 # buttons.
                 menuIndex +_ 1
-                self.info.setdefault(currentMenu, {})['more'] _ '%s -menu%d' % (name, menuIndex)
+                info.setdefault(currentMenu, {})['more'] _ '%s -menu%d' % (name, menuIndex)
                 currentMenu _ '%s -menu%d' % (name, menuIndex)
-                self.info.setdefault(currentMenu, {})['back'] _ '%s -menu%d' % (name, menuIndex - 1)
+                info.setdefault(currentMenu, {})['back'] _ '%s -menu%d' % (name, menuIndex - 1)
 
     ___ createLowLeftButton  label, type, movieIn, movieOut, movieShake, menuString_""):
         button _ TextButton(label, TextButton.RIGHT, type,
-                self.window.mainSceneRoot, TextButton.PANEL)
+                window.mainSceneRoot, TextButton.PANEL)
         __ menuString:
             button.setMenuString(menuString)
         button.setRecursiveVisible F..
@@ -649,11 +649,11 @@ c_ MenuManager(QObject):
 
     ___ createLowRightButton  label, type, movieIn, movieOut, movieShake):
         item _ TextButton(label, TextButton.RIGHT, type,
-                self.window.mainSceneRoot, TextButton.PANEL)
+                window.mainSceneRoot, TextButton.PANEL)
         item.setRecursiveVisible F..
         item.setZValue(10)
 
-        sw _ self.window.scene.sceneRect().width()
+        sw _ window.scene.sceneRect().width()
         xOffset _ 70
 
         # Create in-animation.
@@ -675,12 +675,12 @@ c_ MenuManager(QObject):
 
     ___ createLowRightLeafButton  label, xOffset, type, movieIn, movieOut, movieShake):
         item _ TextButton(label, TextButton.RIGHT, type,
-                self.window.mainSceneRoot, TextButton.PANEL)
+                window.mainSceneRoot, TextButton.PANEL)
         item.setRecursiveVisible F..
         item.setZValue(10)
 
-        sw _ self.window.scene.sceneRect().width()
-        sh _ self.window.scene.sceneRect().height()
+        sw _ window.scene.sceneRect().width()
+        sh _ window.scene.sceneRect().height()
 
         # Create in-animation.
         anim _ DemoItemAnimation(item, DemoItemAnimation.ANIM_IN)
@@ -704,15 +704,15 @@ c_ MenuManager(QObject):
         movieOut.ap..(anim)
 
     ___ createInfo  item, name):
-        movie_in _ self.score.insertMovie(name)
-        movie_out _ self.score.insertMovie(name + ' -out')
+        movie_in _ score.insertMovie(name)
+        movie_out _ score.insertMovie(name + ' -out')
         item.setZValue(8)
         item.setRecursiveVisible F..
 
         xOffset _ 230.0
         infoIn _ DemoItemAnimation(item, DemoItemAnimation.ANIM_IN)
         infoIn.setDuration(650)
-        infoIn.setStartValue(QPointF(self.window.scene.sceneRect().width(), Colors.contentStartY))
+        infoIn.setStartValue(QPointF(window.scene.sceneRect().width(), Colors.contentStartY))
         infoIn.setKeyValueAt(0.60, QPointF(xOffset, Colors.contentStartY))
         infoIn.setKeyValueAt(0.70, QPointF(xOffset + 20, Colors.contentStartY))
         infoIn.setKeyValueAt(0.80, QPointF(xOffset, Colors.contentStartY))
@@ -728,45 +728,45 @@ c_ MenuManager(QObject):
         infoOut.setEndValue(QPointF(-600, Colors.contentStartY))
         movie_out.ap..(infoOut)
 
-    ___ createTicker(self):
+    ___ createTicker
         __ Colors.noTicker:
             r_
 
-        movie_in _ self.score.insertMovie('ticker')
-        movie_out _ self.score.insertMovie('ticker -out')
-        movie_activate _ self.score.insertMovie('ticker -activate')
-        movie_deactivate _ self.score.insertMovie('ticker -deactivate')
+        movie_in _ score.insertMovie('ticker')
+        movie_out _ score.insertMovie('ticker -out')
+        movie_activate _ score.insertMovie('ticker -activate')
+        movie_deactivate _ score.insertMovie('ticker -deactivate')
 
-        self.ticker _ ItemCircleAnimation()
-        self.ticker.setZValue(50)
-        self.ticker.hide()
+        ticker _ ItemCircleAnimation()
+        ticker.setZValue(50)
+        ticker.hide()
 
         # Move ticker in.
         qtendpos _ 485
         qtPosY _ 120
-        self.tickerInAnim _ DemoItemAnimation(self.ticker,
+        tickerInAnim _ DemoItemAnimation(ticker,
                 DemoItemAnimation.ANIM_IN)
-        self.tickerInAnim.setDuration(500)
-        self.tickerInAnim.setStartValue(QPointF(self.window.scene.sceneRect().width(), Colors.contentStartY + qtPosY))
-        self.tickerInAnim.setKeyValueAt(0.60, QPointF(qtendpos, Colors.contentStartY + qtPosY))
-        self.tickerInAnim.setKeyValueAt(0.70, QPointF(qtendpos + 30, Colors.contentStartY + qtPosY))
-        self.tickerInAnim.setKeyValueAt(0.80, QPointF(qtendpos, Colors.contentStartY + qtPosY))
-        self.tickerInAnim.setKeyValueAt(0.90, QPointF(qtendpos + 5, Colors.contentStartY + qtPosY))
-        self.tickerInAnim.setEndValue(QPointF(qtendpos, Colors.contentStartY + qtPosY))
-        movie_in.ap..(self.tickerInAnim)
+        tickerInAnim.setDuration(500)
+        tickerInAnim.setStartValue(QPointF(window.scene.sceneRect().width(), Colors.contentStartY + qtPosY))
+        tickerInAnim.setKeyValueAt(0.60, QPointF(qtendpos, Colors.contentStartY + qtPosY))
+        tickerInAnim.setKeyValueAt(0.70, QPointF(qtendpos + 30, Colors.contentStartY + qtPosY))
+        tickerInAnim.setKeyValueAt(0.80, QPointF(qtendpos, Colors.contentStartY + qtPosY))
+        tickerInAnim.setKeyValueAt(0.90, QPointF(qtendpos + 5, Colors.contentStartY + qtPosY))
+        tickerInAnim.setEndValue(QPointF(qtendpos, Colors.contentStartY + qtPosY))
+        movie_in.ap..(tickerInAnim)
 
         # Move ticker out.
-        qtOut _ DemoItemAnimation(self.ticker, DemoItemAnimation.ANIM_OUT)
+        qtOut _ DemoItemAnimation(ticker, DemoItemAnimation.ANIM_OUT)
         qtOut.setHideOnFinished(True)
         qtOut.setDuration(500)
         qtOut.setStartValue(QPointF(qtendpos, Colors.contentStartY + qtPosY))
-        qtOut.setEndValue(QPointF(self.window.scene.sceneRect().width() + 700, Colors.contentStartY + qtPosY))
+        qtOut.setEndValue(QPointF(window.scene.sceneRect().width() + 700, Colors.contentStartY + qtPosY))
         movie_out.ap..(qtOut)
 
         # Move ticker in on activate.
-        qtActivate _ DemoItemAnimation(self.ticker)
+        qtActivate _ DemoItemAnimation(ticker)
         qtActivate.setDuration(400)
-        qtActivate.setStartValue(QPointF(self.window.scene.sceneRect().width(), Colors.contentStartY + qtPosY))
+        qtActivate.setStartValue(QPointF(window.scene.sceneRect().width(), Colors.contentStartY + qtPosY))
         qtActivate.setKeyValueAt(0.60, QPointF(qtendpos, Colors.contentStartY + qtPosY))
         qtActivate.setKeyValueAt(0.70, QPointF(qtendpos + 30, Colors.contentStartY + qtPosY))
         qtActivate.setKeyValueAt(0.80, QPointF(qtendpos, Colors.contentStartY + qtPosY))
@@ -775,55 +775,55 @@ c_ MenuManager(QObject):
         movie_activate.ap..(qtActivate)
 
         # Move ticker out on deactivate.
-        qtDeactivate _ DemoItemAnimation(self.ticker)
+        qtDeactivate _ DemoItemAnimation(ticker)
         qtDeactivate.setHideOnFinished(True)
         qtDeactivate.setDuration(400)
         qtDeactivate.setStartValue(QPointF(qtendpos, Colors.contentStartY + qtPosY))
         qtDeactivate.setEndValue(QPointF(qtendpos, 800))
         movie_deactivate.ap..(qtDeactivate)
 
-    ___ createUpnDownButtons(self):
+    ___ createUpnDownButtons
         xOffset _ 15.0
         yOffset _ 450.0
 
-        self.upButton _ TextButton("", TextButton.LEFT, MenuManager.UP,
-                self.window.mainSceneRoot, TextButton.UP)
-        self.upButton.prepare()
-        self.upButton.setPos(xOffset, yOffset)
-        self.upButton.setState(TextButton.DISABLED)
+        upButton _ TextButton("", TextButton.LEFT, MenuManager.UP,
+                window.mainSceneRoot, TextButton.UP)
+        upButton.prepare()
+        upButton.setPos(xOffset, yOffset)
+        upButton.setState(TextButton.DISABLED)
 
-        self.downButton _ TextButton("", TextButton.LEFT, MenuManager.DOWN,
-                self.window.mainSceneRoot, TextButton.DOWN)
-        self.downButton.prepare()
-        self.downButton.setPos(xOffset + 10 + self.downButton.sceneBoundingRect().width(), yOffset)
+        downButton _ TextButton("", TextButton.LEFT, MenuManager.DOWN,
+                window.mainSceneRoot, TextButton.DOWN)
+        downButton.prepare()
+        downButton.setPos(xOffset + 10 + downButton.sceneBoundingRect().width(), yOffset)
 
-        movieShake _ self.score.insertMovie('upndown -shake')
+        movieShake _ score.insertMovie('upndown -shake')
 
-        shakeAnim _ DemoItemAnimation(self.upButton,
+        shakeAnim _ DemoItemAnimation(upButton,
                 DemoItemAnimation.ANIM_UNSPECIFIED)
         shakeAnim.setDuration(650)
-        shakeAnim.setStartValue(self.upButton.pos())
-        shakeAnim.setKeyValueAt(0.60, self.upButton.pos())
-        shakeAnim.setKeyValueAt(0.70, self.upButton.pos() + QPointF(-2, 0))
-        shakeAnim.setKeyValueAt(0.80, self.upButton.pos() + QPointF(1, 0))
-        shakeAnim.setKeyValueAt(0.90, self.upButton.pos() + QPointF(-1, 0))
-        shakeAnim.setEndValue(self.upButton.pos())
+        shakeAnim.setStartValue(upButton.pos())
+        shakeAnim.setKeyValueAt(0.60, upButton.pos())
+        shakeAnim.setKeyValueAt(0.70, upButton.pos() + QPointF(-2, 0))
+        shakeAnim.setKeyValueAt(0.80, upButton.pos() + QPointF(1, 0))
+        shakeAnim.setKeyValueAt(0.90, upButton.pos() + QPointF(-1, 0))
+        shakeAnim.setEndValue(upButton.pos())
         movieShake.ap..(shakeAnim)
 
-        shakeAnim _ DemoItemAnimation(self.downButton,
+        shakeAnim _ DemoItemAnimation(downButton,
                 DemoItemAnimation.ANIM_UNSPECIFIED)
         shakeAnim.setDuration(650)
-        shakeAnim.setStartValue(self.downButton.pos())
-        shakeAnim.setKeyValueAt(0.60, self.downButton.pos())
-        shakeAnim.setKeyValueAt(0.70, self.downButton.pos() + QPointF(-5, 0))
-        shakeAnim.setKeyValueAt(0.80, self.downButton.pos() + QPointF(-3, 0))
-        shakeAnim.setKeyValueAt(0.90, self.downButton.pos() + QPointF(-1, 0))
-        shakeAnim.setEndValue(self.downButton.pos())
+        shakeAnim.setStartValue(downButton.pos())
+        shakeAnim.setKeyValueAt(0.60, downButton.pos())
+        shakeAnim.setKeyValueAt(0.70, downButton.pos() + QPointF(-5, 0))
+        shakeAnim.setKeyValueAt(0.80, downButton.pos() + QPointF(-3, 0))
+        shakeAnim.setKeyValueAt(0.90, downButton.pos() + QPointF(-1, 0))
+        shakeAnim.setEndValue(downButton.pos())
         movieShake.ap..(shakeAnim)
 
-    ___ createBackButton(self):
-        backIn _ self.score.insertMovie('back -in')
-        backOut _ self.score.insertMovie('back -out')
-        backShake _ self.score.insertMovie('back -shake')
-        self.createLowLeftButton("Back", MenuManager.ROOT, backIn, backOut,
+    ___ createBackButton
+        backIn _ score.insertMovie('back -in')
+        backOut _ score.insertMovie('back -out')
+        backShake _ score.insertMovie('back -shake')
+        createLowLeftButton("Back", MenuManager.ROOT, backIn, backOut,
                 backShake, Colors.rootMenuName)

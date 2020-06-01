@@ -4,17 +4,17 @@ ____ ?.?C.. ______ *
 ____ ?.?W.. ______ *
 
 c_ MainWindow(QWidget):
-    ___ __init__  parent_None):
-        super(MainWindow, self).__init__(parent)
-        self.db _ ?SD...aD..("QSQLITE")
-        self.db.sDN..("test.db")
-        self.db.o..()
+    ___  -   parent_None):
+        super(MainWindow, self). - (parent)
+        db _ ?SD...aD..("QSQLITE")
+        db.sDN..("test.db")
+        db.o..()
 
     ___ closeEvent  event):
-        self.db.close()
+        db.close()
 
 __ __name__ == "__main__":
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     window _ MainWindow()
     window.s..
     ___.exit(app.exec_())

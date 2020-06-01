@@ -51,7 +51,7 @@ ____ ?.?W.. ______ (?A.., QFileIconProvider, QFileSystemModel,
         QTreeView)
 
 
-app _ ?A..(___.argv)
+app _ ?A..(___.a..
 
 QCoreApplication.setApplicationVersion(QT_VERSION_STR)
 parser _ QCommandLineParser()

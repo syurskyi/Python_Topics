@@ -46,29 +46,29 @@ ____ util ______ decode_pos
 
 c_ SpreadSheetItem(QTableWidgetItem):
 
-    ___ __init__  text_None):
+    ___  -   text_None):
         __ t__ __ no. N..:
-            super(SpreadSheetItem, self).__init__(t__)
+            super(SpreadSheetItem, self). - (t__)
         ____
-            super(SpreadSheetItem, self).__init__()
+            super(SpreadSheetItem, self). - ()
 
-        self.isResolving _ False
+        isResolving _ False
 
-    ___ clone(self):
+    ___ clone
         item _ super(SpreadSheetItem, self).clone()
-        item.isResolving _ self.isResolving
+        item.isResolving _ isResolving
 
         r_ item
 
-    ___ formula(self):
+    ___ formula
         r_ super(SpreadSheetItem, self).data(__.DisplayRole)
 
     ___ data  role):
-        __ role in (__.EditRole, __.StatusTipRole):
-            r_ self.formula()
+        __ role __ (__.EditRole, __.StatusTipRole):
+            r_ formula()
         __ role == __.DisplayRole:
-            r_ self.display()
-        t _ str(self.display())
+            r_ display()
+        t _ str(display())
         try:
             number _ int(t)
         except ValueError:
@@ -87,16 +87,16 @@ c_ SpreadSheetItem(QTableWidgetItem):
 
     ___ setData  role, value):
         super(SpreadSheetItem, self).setData(role, value)
-        __ self.tableWidget
-            self.tableWidget().viewport().update()
+        __ tableWidget
+            tableWidget().viewport().update()
 
-    ___ display(self):
+    ___ display
         # avoid circular dependencies
-        __ self.isResolving:
+        __ isResolving:
             r_ N..
-        self.isResolving _ True
-        result _ self.computeFormula(self.formula(), self.tableWidget())
-        self.isResolving _ False
+        isResolving _ True
+        result _ computeFormula(formula(), tableWidget())
+        isResolving _ False
         r_ result
 
     ___ computeFormula  formula, widget):
@@ -131,8 +131,8 @@ c_ SpreadSheetItem(QTableWidgetItem):
         result _ N..
         __ op == "sum":
             sum_ _ 0
-            for r in range(firstRow, secondRow + 1):
-                for c in range(firstCol, secondCol + 1):
+            ___ r __ range(firstRow, secondRow + 1):
+                ___ c __ range(firstCol, secondCol + 1):
                     tableItem _ widget.item(r, c)
                     __ tableItem and tableItem !_ self:
                         try:

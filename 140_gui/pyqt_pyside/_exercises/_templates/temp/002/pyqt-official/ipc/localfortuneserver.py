@@ -53,15 +53,15 @@ ____ ?.QtNetwork ______ QLocalServer
 
 
 c_ Server(QDialog):
-    ___ __init__  parent_None):
-        super(Server, self).__init__(parent)
+    ___  -   parent_None):
+        super(Server, self). - (parent)
 
         statusLabel _ QLabel()
         statusLabel.setWordWrap(True)
         quitButton _ ?PB..("Quit")
         quitButton.setAutoDefault F..
 
-        self.fortunes _ (
+        fortunes _ (
             "You've been leading a dog's life. Stay off the furniture.",
             "You've got to think about tomorrow.",
             "You will be surprised by a loud noise.",
@@ -71,18 +71,18 @@ c_ Server(QDialog):
             "Computers are not intelligent. They only think they are.",
         )
 
-        self.server _ QLocalServer()
-        __ no. self.server.listen('fortune'):
+        server _ QLocalServer()
+        __ no. server.listen('fortune'):
             ?MB...critical  "Fortune Server",
-                    "Unable to start the server: %s." % self.server.errorString())
-            self.close()
+                    "Unable to start the server: %s." % server.errorString())
+            close()
             r_
 
         statusLabel.sT..("The server is running.\nRun the Fortune Client "
                 "example now.")
 
-        quitButton.c__.c..(self.close)
-        self.server.newConnection.c..(self.sendFortune)
+        quitButton.c__.c..(close)
+        server.newConnection.c..(sendFortune)
 
         buttonLayout _ QHBoxLayout()
         buttonLayout.addStretch(1)
@@ -91,32 +91,32 @@ c_ Server(QDialog):
 
         mainLayout _ ?VBL..
         mainLayout.aW..(statusLabel)
-        mainLayout.addLayout(buttonLayout)
-        self.sL..(mainLayout)
+        mainLayout.aL..(buttonLayout)
+        sL..(mainLayout)
 
-        self.setWindowTitle("Fortune Server")
+        setWindowTitle("Fortune Server")
 
-    ___ sendFortune(self):
+    ___ sendFortune
         block _ QByteArray()
         out _ QDataStream(block, QIODevice.WriteOnly)
         out.setVersion(QDataStream.Qt_4_0)
         out.writeUInt16(0)
-        out.writeQString(random.choice(self.fortunes))
+        out.writeQString(random.choice(fortunes))
         out.device().seek(0)
         out.writeUInt16(block.size() - 2)
 
-        clientConnection _ self.server.nextPendingConnection()
+        clientConnection _ server.nextPendingConnection()
         clientConnection.disconnected.c..(clientConnection.deleteLater)
         clientConnection.w..(block)
         clientConnection.flush()
         clientConnection.disconnectFromServer()
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     server _ Server()
     server.s..
     ___.exit(app.exec_())

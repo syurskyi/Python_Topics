@@ -67,11 +67,11 @@ ___ createView(title, model):
     r_ view
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     __ no. connection.createConnection
         ___.exit(1)
 

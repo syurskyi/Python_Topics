@@ -5,23 +5,23 @@ PORT _ 8000
 
 c_ TestHandler(BaseHTTPRequestHandler):
 
-    ___ _print_request_data(self):
+    ___ _print_request_data 
         print('POST request received')
-        print("Content-length: {}".format(self.content_length))
-        print(self.data.decode('utf-8'))
+        print("Content-length: {}".format(content_length))
+        print(data.decode('utf-8'))
 
-    ___ _send_200(self):
-        self.send_response(200)
-        self.send_header('Content-type', 'text/html')
-        self.end_headers()
+    ___ _send_200 
+        send_response(200)
+        send_header('Content-type', 'text/html')
+        end_headers()
 
     ___ do_POST  *args, **kwargs):
-        self.content_length _ self.headers['Content-Length']
-        self.data _ self.rfile.read(int(self.content_length))
-        self._print_request_data()
-        self._send_200()
-        self.wfile.w..('POST successful; received this: \n'.encode('utf-8'))
-        self.wfile.w..(self.data)
+        content_length _ headers['Content-Length']
+        data _ rfile.read(int(content_length))
+        _print_request_data()
+        _send_200()
+        wfile.w..('POST successful; received this: \n'.encode('utf-8'))
+        wfile.w..(data)
 
 
 ___ run(server_class_HTTPServer, handler_class_TestHandler):

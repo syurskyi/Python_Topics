@@ -50,70 +50,70 @@ ____ ?.QtQuick ______ QQuickItem, QQuickPaintedItem, QQuickView
 c_ PieSlice(QQuickPaintedItem):
 
     @pyqtProperty(?C..)
-    ___ color(self):
-        r_ self._color
+    ___ color
+        r_ _color
 
     @color.setter
     ___ color  color):
-        self._color _ ?C..(color)
+        _color _ ?C..(color)
 
     @pyqtProperty(int)
-    ___ fromAngle(self):
-        r_ self._fromAngle
+    ___ fromAngle
+        r_ _fromAngle
 
     @fromAngle.setter
     ___ fromAngle  fromAngle):
-        self._fromAngle _ fromAngle
+        _fromAngle _ fromAngle
 
     @pyqtProperty(int)
-    ___ angleSpan(self):
-        r_ self._angleSpan
+    ___ angleSpan
+        r_ _angleSpan
 
     @angleSpan.setter
     ___ angleSpan  angleSpan):
-        self._angleSpan _ angleSpan
+        _angleSpan _ angleSpan
 
-    ___ __init__  parent_None):
-        super(PieSlice, self).__init__(parent)
+    ___  -   parent_None):
+        super(PieSlice, self). - (parent)
 
-        self._color _ ?C..()
-        self._fromAngle _ 0
-        self._angleSpan _ 0
+        _color _ ?C..()
+        _fromAngle _ 0
+        _angleSpan _ 0
 
     ___ paint  painter):
-        painter.setPen(QPen(self._color, 2))
+        painter.setPen(QPen(_color, 2))
         painter.setRenderHints(QPainter.Antialiasing, True)
 
-        rect _ QRectF(0, 0, self.width(), self.height()).adjusted(1, 1, -1, -1)
-        painter.drawPie(rect, self._fromAngle * 16, self._angleSpan * 16)
+        rect _ QRectF(0, 0, width(), height()).adjusted(1, 1, -1, -1)
+        painter.drawPie(rect, _fromAngle * 16, _angleSpan * 16)
 
 
 c_ PieChart(QQuickItem):
 
     @pyqtProperty(QQmlListProperty)
-    ___ slices(self):
+    ___ slices
         r_ QQmlListProperty(PieSlice, self,
                 append_lambda pie_ch, pie_sl: pie_sl.setParentItem(pie_ch))
 
     @pyqtProperty(str)
-    ___ name(self):
-        r_ self._name
+    ___ name
+        r_ _name
 
     @name.setter
     ___ name  name):
-        self._name _ name
+        _name _ name
 
-    ___ __init__  parent_None):
-        super(PieChart, self).__init__(parent)
+    ___  -   parent_None):
+        super(PieChart, self). - (parent)
 
-        self._name _ ''
+        _name _ ''
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
     ______ os
     ______ ___
 
-    app _ QGuiApplication(___.argv)
+    app _ QGuiApplication(___.a..
 
     qmlRegisterType(PieChart, "Charts", 1, 0, "PieChart")
     qmlRegisterType(PieSlice, "Charts", 1, 0, "PieSlice")

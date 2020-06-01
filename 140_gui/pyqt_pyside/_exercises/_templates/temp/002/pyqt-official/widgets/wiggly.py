@@ -49,53 +49,53 @@ ____ ?.?W.. ______ (?A.., QDialog, QLineEdit, QVBoxLayout,
 
 
 c_ WigglyWidget(QWidget):
-    ___ __init__  parent_None):
-        super(WigglyWidget, self).__init__(parent)
+    ___  -   parent_None):
+        super(WigglyWidget, self). - (parent)
 
-        self.setBackgroundRole(?P...Midlight)
-        self.setAutoFillBackground(True)
+        setBackgroundRole(?P...Midlight)
+        setAutoFillBackground(True)
 
-        newFont _ self.font()
+        newFont _ font()
         newFont.setPointSize(newFont.pointSize() + 20)
-        self.setFont(newFont)
+        setFont(newFont)
 
-        self.timer _ QBasicTimer()
-        self.t__ _ ''
+        timer _ QBasicTimer()
+        t__ _ ''
 
-        self.step _ 0;
-        self.timer.start(60, self)   
+        step _ 0;
+        timer.start(60, self)
 
     ___ paintEvent  event):
         sineTable _ (0, 38, 71, 92, 100, 92, 71, 38, 0, -38, -71, -92, -100, -92, -71, -38)
 
-        metrics _ QFontMetrics(self.font())
-        x _ (self.width() - metrics.width(self.t__)) / 2
-        y _ (self.height() + metrics.ascent() - metrics.descent()) / 2
+        metrics _ QFontMetrics(font())
+        x _ (width() - metrics.width(t__)) / 2
+        y _ (height() + metrics.ascent() - metrics.descent()) / 2
         color _ ?C..()
 
-        painter _ QPainter(self)
+        painter _ QPainter
 
-        for i, ch in enumerate(self.t__):
-            index _ (self.step + i) % 16
+        ___ i, ch __ en..(t__):
+            index _ (step + i) % 16
             color.setHsv((15 - index) * 16, 255, 191)
             painter.setPen(color)
             painter.drawText(x, y - ((sineTable[index] * metrics.height()) / 400), ch)
             x +_ metrics.width(ch)
 
     ___ sT..  newText):
-        self.t__ _ newText
+        t__ _ newText
 
     ___ timerEvent  event):
-        __ event.timerId() == self.timer.timerId
-            self.step +_ 1
-            self.update()
+        __ event.timerId() == timer.timerId
+            step +_ 1
+            update()
         ____
             super(WigglyWidget, self).timerEvent(event)
 
 
 c_ Dialog(QDialog):
-    ___ __init__  parent_None):
-        super(Dialog, self).__init__(parent)
+    ___  -   parent_None):
+        super(Dialog, self). - (parent)
 
         wigglyWidget _ WigglyWidget()
         lineEdit _ ?LE..
@@ -103,21 +103,21 @@ c_ Dialog(QDialog):
         layout _ ?VBL..
         layout.aW..(wigglyWidget)
         layout.aW..(lineEdit)
-        self.sL..(layout)
+        sL..(layout)
 
         lineEdit.textChanged.c..(wigglyWidget.sT..)
 
         lineEdit.sT..("Hello world!")
 
-        self.setWindowTitle("Wiggly")
-        self.resize(360, 145)
+        setWindowTitle("Wiggly")
+        resize(360, 145)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     dialog _ Dialog()
     dialog.s..;
     ___.exit(app.exec_())

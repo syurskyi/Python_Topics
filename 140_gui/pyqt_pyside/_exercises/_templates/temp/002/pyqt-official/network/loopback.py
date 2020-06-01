@@ -52,123 +52,123 @@ c_ Dialog(QDialog):
     TotalBytes _ 50 * 1024 * 1024
     PayloadSize _ 65536
 
-    ___ __init__  parent_None):
-        super(Dialog, self).__init__(parent)
+    ___  -   parent_None):
+        super(Dialog, self). - (parent)
 
-        self.tcpServer _ QTcpServer()
-        self.tcpClient _ QTcpSocket()
-        self.bytesToWrite _ 0
-        self.bytesWritten _ 0
-        self.bytesReceived _ 0
+        tcpServer _ QTcpServer()
+        tcpClient _ QTcpSocket()
+        bytesToWrite _ 0
+        bytesWritten _ 0
+        bytesReceived _ 0
 
-        self.clientProgressBar _ QProgressBar()
-        self.clientStatusLabel _ QLabel("Client ready")
-        self.serverProgressBar _ QProgressBar()
-        self.serverStatusLabel _ QLabel("Server ready")
+        clientProgressBar _ QProgressBar()
+        clientStatusLabel _ QLabel("Client ready")
+        serverProgressBar _ QProgressBar()
+        serverStatusLabel _ QLabel("Server ready")
 
-        self.startButton _ ?PB..("&Start")
-        self.quitButton _ ?PB..("&Quit")
+        startButton _ ?PB..("&Start")
+        quitButton _ ?PB..("&Quit")
 
         buttonBox _ QDialogButtonBox()
-        buttonBox.addButton(self.startButton, QDialogButtonBox.ActionRole)
-        buttonBox.addButton(self.quitButton, QDialogButtonBox.RejectRole)
+        buttonBox.addButton(startButton, QDialogButtonBox.ActionRole)
+        buttonBox.addButton(quitButton, QDialogButtonBox.RejectRole)
 
-        self.startButton.c__.c..(self.start)
-        self.quitButton.c__.c..(self.close)
-        self.tcpServer.newConnection.c..(self.acceptConnection)
-        self.tcpClient.connected.c..(self.startTransfer)
-        self.tcpClient.bytesWritten.c..(self.updateClientProgress)
-        self.tcpClient.error.c..(self.displayError)
+        startButton.c__.c..(start)
+        quitButton.c__.c..(close)
+        tcpServer.newConnection.c..(acceptConnection)
+        tcpClient.connected.c..(startTransfer)
+        tcpClient.bytesWritten.c..(updateClientProgress)
+        tcpClient.error.c..(displayError)
 
         mainLayout _ ?VBL..
-        mainLayout.aW..(self.clientProgressBar)
-        mainLayout.aW..(self.clientStatusLabel)
-        mainLayout.aW..(self.serverProgressBar)
-        mainLayout.aW..(self.serverStatusLabel)
+        mainLayout.aW..(clientProgressBar)
+        mainLayout.aW..(clientStatusLabel)
+        mainLayout.aW..(serverProgressBar)
+        mainLayout.aW..(serverStatusLabel)
         mainLayout.addStretch(1)
         mainLayout.addSpacing(10)
         mainLayout.aW..(buttonBox)
-        self.sL..(mainLayout)
+        sL..(mainLayout)
 
-        self.setWindowTitle("Loopback")
+        setWindowTitle("Loopback")
 
-    ___ start(self):
-        self.startButton.setEnabled F..
+    ___ start
+        startButton.setEnabled F..
 
         ?A...setOverrideCursor(__.WaitCursor)
 
-        self.bytesWritten _ 0
-        self.bytesReceived _ 0
+        bytesWritten _ 0
+        bytesReceived _ 0
 
-        w__ no. self.tcpServer.isListening() and no. self.tcpServer.listen
+        w__ no. tcpServer.isListening() and no. tcpServer.listen
             ret _ ?MB...critical  "Loopback",
-                    "Unable to start the test: %s." % self.tcpServer.errorString(),
+                    "Unable to start the test: %s." % tcpServer.errorString(),
                     ?MB...Retry | ?MB...Cancel)
             __ ret == ?MB...Cancel:
                 r_
 
-        self.serverStatusLabel.sT..("Listening")
-        self.clientStatusLabel.sT..("Connecting")
+        serverStatusLabel.sT..("Listening")
+        clientStatusLabel.sT..("Connecting")
 
-        self.tcpClient.connectToHost(QHostAddress(QHostAddress.LocalHost), self.tcpServer.serverPort())
+        tcpClient.connectToHost(QHostAddress(QHostAddress.LocalHost), tcpServer.serverPort())
 
-    ___ acceptConnection(self):
-        self.tcpServerConnection _ self.tcpServer.nextPendingConnection()
-        self.tcpServerConnection.readyRead.c..(self.updateServerProgress)
-        self.tcpServerConnection.error.c..(self.displayError)
+    ___ acceptConnection
+        tcpServerConnection _ tcpServer.nextPendingConnection()
+        tcpServerConnection.readyRead.c..(updateServerProgress)
+        tcpServerConnection.error.c..(displayError)
 
-        self.serverStatusLabel.sT..("Accepted connection")
-        self.tcpServer.close()
+        serverStatusLabel.sT..("Accepted connection")
+        tcpServer.close()
 
-    ___ startTransfer(self):
-        self.bytesToWrite _ Dialog.TotalBytes - self.tcpClient.w..(QByteArray(Dialog.PayloadSize, '@'))
-        self.clientStatusLabel.sT..("Connected")
+    ___ startTransfer
+        bytesToWrite _ Dialog.TotalBytes - tcpClient.w..(QByteArray(Dialog.PayloadSize, '@'))
+        clientStatusLabel.sT..("Connected")
 
-    ___ updateServerProgress(self):
-        self.bytesReceived +_ self.tcpServerConnection.bytesAvailable()
-        self.tcpServerConnection.readAll()
+    ___ updateServerProgress
+        bytesReceived +_ tcpServerConnection.bytesAvailable()
+        tcpServerConnection.readAll()
 
-        self.serverProgressBar.setMaximum(Dialog.TotalBytes)
-        self.serverProgressBar.setValue(self.bytesReceived)
-        self.serverStatusLabel.sT..("Received %dMB" % (self.bytesReceived / (1024 * 1024)))
+        serverProgressBar.setMaximum(Dialog.TotalBytes)
+        serverProgressBar.setValue(bytesReceived)
+        serverStatusLabel.sT..("Received %dMB" % (bytesReceived / (1024 * 1024)))
 
-        __ self.bytesReceived == Dialog.TotalBytes:
-            self.tcpServerConnection.close()
-            self.startButton.setEnabled(True)
+        __ bytesReceived == Dialog.TotalBytes:
+            tcpServerConnection.close()
+            startButton.setEnabled(True)
             ?A...restoreOverrideCursor()
 
     ___ updateClientProgress  numBytes):
-        self.bytesWritten +_ numBytes
-        __ self.bytesToWrite > 0:
-            self.bytesToWrite -_ self.tcpClient.w..(QByteArray(
-                                        min(self.bytesToWrite, Dialog.PayloadSize), '@'))
+        bytesWritten +_ numBytes
+        __ bytesToWrite > 0:
+            bytesToWrite -_ tcpClient.w..(QByteArray(
+                                        min(bytesToWrite, Dialog.PayloadSize), '@'))
 
-        self.clientProgressBar.setMaximum(Dialog.TotalBytes)
-        self.clientProgressBar.setValue(self.bytesWritten)
-        self.clientStatusLabel.sT..("Sent %dMB" % (self.bytesWritten / (1024 * 1024)))
+        clientProgressBar.setMaximum(Dialog.TotalBytes)
+        clientProgressBar.setValue(bytesWritten)
+        clientStatusLabel.sT..("Sent %dMB" % (bytesWritten / (1024 * 1024)))
 
     ___ displayError  socketError):
         __ socketError == QTcpSocket.RemoteHostClosedError:
             r_
 
         ?MB...information  "Network error",
-                "The following error occured: %s." % self.tcpClient.errorString())
+                "The following error occured: %s." % tcpClient.errorString())
 
-        self.tcpClient.close()
-        self.tcpServer.close()
-        self.clientProgressBar.reset()
-        self.serverProgressBar.reset()
-        self.clientStatusLabel.sT..("Client ready")
-        self.serverStatusLabel.sT..("Server ready")
-        self.startButton.setEnabled(True)
+        tcpClient.close()
+        tcpServer.close()
+        clientProgressBar.reset()
+        serverProgressBar.reset()
+        clientStatusLabel.sT..("Client ready")
+        serverStatusLabel.sT..("Server ready")
+        startButton.setEnabled(True)
         ?A...restoreOverrideCursor()
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     dialog _ Dialog()
     dialog.s..
     ___.exit(dialog.exec_())

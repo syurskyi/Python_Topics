@@ -47,34 +47,34 @@ ____ ?.?W.. ______ ?A.., QLCDNumber
 
 
 c_ DigitalClock(QLCDNumber):
-    ___ __init__  parent_None):
-        super(DigitalClock, self).__init__(parent)
+    ___  -   parent_None):
+        super(DigitalClock, self). - (parent)
 
-        self.setSegmentStyle(QLCDNumber.Filled)
+        setSegmentStyle(QLCDNumber.Filled)
 
-        timer _ QTimer(self)
-        timer.timeout.c..(self.showTime)
+        timer _ QTimer
+        timer.timeout.c..(showTime)
         timer.start(1000)
 
-        self.showTime()
+        showTime()
 
-        self.setWindowTitle("Digital Clock")
-        self.resize(150, 60)
+        setWindowTitle("Digital Clock")
+        resize(150, 60)
 
-    ___ showTime(self):
+    ___ showTime 
         time _ QTime.currentTime()
         t__ _ time.toString('hh:mm')
         __ (time.second() % 2) == 0:
             t__ _ t__[:2] + ' ' + t__[3:]
 
-        self.display(t__)
+        display(t__)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     clock _ DigitalClock()
     clock.s..
     ___.exit(app.exec_())

@@ -68,122 +68,122 @@ class UpdateWorker(QRunnable):
     signals = WorkerSignals()
     is_interrupted = False
 
-    def __init__(self, base_currency):
-        super(UpdateWorker, self).__init__()
-        self.base_currency = base_currency
-        self.signals.cancel.connect(self.cancel)
+    def  - (self, base_currency):
+        super(UpdateWorker, self). - ()
+        base_currency = base_currency
+        signals.cancel.connect(cancel)
 
     @pyqtSlot()
-    def run(self):
+    def run 
         try:
             today = date.today()
             total_requests = len(DATE_REQUEST_OFFSETS)
 
-            for n, offset in enumerate(DATE_REQUEST_OFFSETS, 1):
+            ___ n, offset __ en..(DATE_REQUEST_OFFSETS, 1):
                 when = today - timedelta(days=offset)
                 url = 'http://api.fixer.io/{}'.format(when.isoformat())
-                r = requests.get(url, params={'base': self.base_currency})
+                r = requests.get(url, params={'base': base_currency})
                 r.raise_for_status()
                 data = r.json()
                 rates = data['rates']
-                rates[self.base_currency] = 1.0
+                rates[base_currency] = 1.0
 
-                self.signals.data.emit(offset ,rates)
-                self.signals.progress.emit(int(100 * n / total_requests))
+                signals.data.emit(offset ,rates)
+                signals.progress.emit(int(100 * n / total_requests))
 
                 if not r.from_cache:
                     time.sleep(1)  # Don't be rude.
 
-                if self.is_interrupted:
+                if is_interrupted:
                     break
 
 
         except Exception as e:
             print(e)
             exctype, value = sys.exc_info()[:2]
-            self.signals.error.emit((exctype, value, traceback.format_exc()))
+            signals.error.emit((exctype, value, traceback.format_exc()))
             return
 
-        self.signals.finished.emit()
+        signals.finished.emit()
 
-    def cancel(self):
-        self.is_interrupted = True
+    def cancel 
+        is_interrupted = True
 
 
 
 class MainWindow(QMainWindow):
 
-    def __init__(self, *args, **kwargs):
-        super(MainWindow, self).__init__(*args, **kwargs)
+    def  - (self, *args, **kwargs):
+        super(MainWindow, self). - (*args, **kwargs)
 
         layout = QHBoxLayout()
 
-        self.ax = pg.PlotWidget()
-        self.ax.showGrid(True, True)
+        ax = pg.PlotWidget()
+        ax.showGrid(True, True)
 
-        self.line = pg.InfiniteLine(
+        line = pg.InfiniteLine(
             pos=-20,
             pen=pg.mkPen('k', width=3),
             movable=False  # We have our own code to handle dragless moving.
         )
 
-        self.ax.addItem(self.line)
-        self.ax.setLimits(xMin=-HISTORIC_DAYS_N + 1, xMax=0)
-        self.ax.getPlotItem().scene().sigMouseMoved.connect(self.mouse_move_handler)
+        ax.addItem(line)
+        ax.setLimits(xMin=-HISTORIC_DAYS_N + 1, xMax=0)
+        ax.getPlotItem().scene().sigMouseMoved.connect(mouse_move_handler)
 
-        self.base_currency = DEFAULT_BASE_CURRENCY
+        base_currency = DEFAULT_BASE_CURRENCY
 
         # Store a reference to lines on the plot, and items in our
         # data viewer we can update rather than redraw.
-        self._data_lines = dict()
-        self._data_items = dict()
-        self._data_colors = dict()
-        self._data_visible = DEFAULT_DISPLAY_CURRENCIES
+        _data_lines = dict()
+        _data_items = dict()
+        _data_colors = dict()
+        _data_visible = DEFAULT_DISPLAY_CURRENCIES
 
-        self._last_updated = None
+        _last_updated = None
 
-        self.listView = QTableView()
-        self.model = QStandardItemModel()
-        self.model.setHorizontalHeaderLabels(["Currency", "Rate"])
-        self.model.itemChanged.connect(self.check_check_state)
+        listView = QTableView()
+        model = QStandardItemModel()
+        model.setHorizontalHeaderLabels(["Currency", "Rate"])
+        model.itemChanged.connect(check_check_state)
 
-        self.listView.setModel(self.model)
+        listView.setModel(model)
 
-        self.threadpool = QThreadPool()
-        self.worker = False
+        threadpool = QThreadPool()
+        worker = False
 
-        layout.addWidget(self.ax)
-        layout.addWidget(self.listView)
+        layout.addWidget(ax)
+        layout.addWidget(listView)
 
         widget = QWidget()
         widget.setLayout(layout)
-        self.setCentralWidget(widget)
-        self.listView.setFixedSize(226, 400)
-        self.setFixedSize(650, 400)
+        setCentralWidget(widget)
+        listView.setFixedSize(226, 400)
+        setFixedSize(650, 400)
 
         toolbar = QToolBar("Main")
-        self.addToolBar(toolbar)
-        self.currencyList = QComboBox()
+        addToolBar(toolbar)
+        currencyList = QComboBox()
 
-        toolbar.addWidget(self.currencyList)
-        self.update_currency_list(DEFAULT_DISPLAY_CURRENCIES)
-        self.currencyList.setCurrentText(self.base_currency)
-        self.currencyList.currentTextChanged.connect(self.change_base_currency)
+        toolbar.addWidget(currencyList)
+        update_currency_list(DEFAULT_DISPLAY_CURRENCIES)
+        currencyList.setCurrentText(base_currency)
+        currencyList.currentTextChanged.connect(change_base_currency)
 
-        self.progress = QProgressBar()
-        self.progress.setRange(0, 100)
-        toolbar.addWidget(self.progress)
+        progress = QProgressBar()
+        progress.setRange(0, 100)
+        toolbar.addWidget(progress)
 
-        self.refresh_historic_rates()
-        self.setWindowTitle("Doughnut")
-        self.show()
+        refresh_historic_rates()
+        setWindowTitle("Doughnut")
+        show()
 
     def update_currency_list(self, currencies):
-        for currency in currencies:
-            if self.currencyList.findText(currency) == -1:
-                self.currencyList.addItem(currency)
+        ___ currency __ currencies:
+            if currencyList.findText(currency) == -1:
+                currencyList.addItem(currency)
 
-        self.currencyList.model().sort(0)
+        currencyList.model().sort(0)
 
     def check_check_state(self, i):
         if not i.isCheckable():  # Skip data columns.
@@ -192,105 +192,105 @@ class MainWindow(QMainWindow):
         currency = i.text()
         checked = i.checkState() == Qt.Checked
 
-        if currency in self._data_visible:
+        if currency __ _data_visible:
             if not checked:
-                self._data_visible.remove(currency)
-                self.redraw()
+                _data_visible.remove(currency)
+                redraw()
         else:
             if checked:
-                self._data_visible.append(currency)
-                self.redraw()
+                _data_visible.append(currency)
+                redraw()
 
     def get_currency_color(self, currency):
-        if currency not in self._data_colors:
-            self._data_colors[currency] = next(BREWER12PAIRED)
+        if currency not __ _data_colors:
+            _data_colors[currency] = next(BREWER12PAIRED)
 
-        return self._data_colors[currency]
+        return _data_colors[currency]
 
     def add_data_row(self, currency):
         citem = QStandardItem()
         citem.setText(currency)
         citem.setForeground(QBrush(QColor(
-            self.get_currency_color(currency)
+            get_currency_color(currency)
         )))
         citem.setColumnCount(2)
         citem.setCheckable(True)
-        if currency in DEFAULT_DISPLAY_CURRENCIES:
+        if currency __ DEFAULT_DISPLAY_CURRENCIES:
             citem.setCheckState(Qt.Checked)
 
         vitem = QStandardItem()
 
         vitem.setTextAlignment(Qt.AlignRight | Qt.AlignVCenter)
-        self.model.setColumnCount(2)
-        self.model.appendRow([citem, vitem])
-        self.model.sort(0)
+        model.setColumnCount(2)
+        model.appendRow([citem, vitem])
+        model.sort(0)
         return citem, vitem
 
     def get_or_create_data_row(self, currency):
-        if currency not in self._data_items:
-            self._data_items[currency] = self.add_data_row(currency)
-        return self._data_items[currency]
+        if currency not __ _data_items:
+            _data_items[currency] = add_data_row(currency)
+        return _data_items[currency]
 
     def mouse_move_handler(self, pos):
-        pos = self.ax.getViewBox().mapSceneToView(pos)
-        self.line.setPos(pos.x())
-        self.update_data_viewer(int(pos.x()))
+        pos = ax.getViewBox().mapSceneToView(pos)
+        line.setPos(pos.x())
+        update_data_viewer(int(pos.x()))
 
     def update_data_row(self, currency, value):
-        citem, vitem = self.get_or_create_data_row(currency)
+        citem, vitem = get_or_create_data_row(currency)
         vitem.setText("%.4f" % value)
 
     def update_data_viewer(self, d):
         try:
-            data = self.data[d]
+            data = data[d]
         except IndexError:  # Skip update if out of bounds.
             return
 
         if not data:  # Skip update if we have no data.
             return
 
-        for k, v in data.items():
-            self.update_data_row(k, v)
+        ___ k, v __ data.items():
+            update_data_row(k, v)
 
     def change_base_currency(self, currency):
-        self.base_currency = currency
-        self.refresh_historic_rates()
+        base_currency = currency
+        refresh_historic_rates()
 
-    def refresh_historic_rates(self):
-        if self.worker:
+    def refresh_historic_rates 
+        if worker:
             # If we have a current worker, send a kill signal
-            self.worker.signals.cancel.emit()
+            worker.signals.cancel.emit()
 
         # Prefill our data store with None ('no data')
-        self.data = [None] * HISTORIC_DAYS_N
+        data = [None] * HISTORIC_DAYS_N
 
-        self.worker = UpdateWorker(self.base_currency)
+        worker = UpdateWorker(base_currency)
         # Handle callbacks with data and trigger refresh.
-        self.worker.signals.data.connect(self.result_data_callback)
-        self.worker.signals.finished.connect(self.refresh_finished)
-        self.worker.signals.progress.connect(self.progress_callback)
-        self.threadpool.start(self.worker)
+        worker.signals.data.connect(result_data_callback)
+        worker.signals.finished.connect(refresh_finished)
+        worker.signals.progress.connect(progress_callback)
+        threadpool.start(worker)
 
     def result_data_callback(self, n, rates):
-        self.data[n] = rates
+        data[n] = rates
 
         # Refresh plot if we haven't for >1 second.
-        if (self._last_updated is None or
-            self._last_updated < datetime.now() - timedelta(seconds=1)
+        if (_last_updated is None or
+            _last_updated < datetime.now() - timedelta(seconds=1)
             ):
-            self.redraw()
-            self._last_updated = datetime.now()
+            redraw()
+            _last_updated = datetime.now()
 
     def progress_callback(self, progress):
-        self.progress.setValue(progress)
+        progress.setValue(progress)
 
-    def refresh_finished(self):
-        self.worker = False
-        self.redraw()
+    def refresh_finished 
+        worker = False
+        redraw()
         # Ensure all currencies we know about are in the dropdown list now.
-        self.update_currency_list(self._data_items.keys())
+        update_currency_list(_data_items.keys())
 
-    def redraw(self):
+    def redraw 
         """
         Process data from store and prefer to draw.
         :return:
@@ -301,9 +301,9 @@ class MainWindow(QMainWindow):
 
         tick_step_size = HISTORIC_DAYS_N / 6
         # Pre-process data into lists of x, y values
-        for n, data in enumerate(self.data):
+        ___ n, data __ en..(data):
             if data:
-                for currency, v in data.items():
+                ___ currency, v __ data.items():
                     plotd[currency].append((-n, v))
 
             when = today - timedelta(days=n)
@@ -314,29 +314,29 @@ class MainWindow(QMainWindow):
         keys = sorted(plotd.keys())
         y_min, y_max = sys.maxsize, 0
 
-        for currency in keys:
+        ___ currency __ keys:
             x, y = zip(*plotd[currency])
 
-            if currency in self._data_visible:
+            if currency __ _data_visible:
                 y_min = min(y_min, *y)
                 y_max = max(y_max, *y)
             else:
                 x, y = [], []
 
-            if currency in self._data_lines:
-                self._data_lines[currency].setData(x, y)
+            if currency __ _data_lines:
+                _data_lines[currency].setData(x, y)
             else:
-                self._data_lines[currency] = self.ax.plot(
+                _data_lines[currency] = ax.plot(
                     x, y,  # Unpack a list of tuples into two lists, passed as individual args.
                     pen=pg.mkPen(
-                        self.get_currency_color(currency),
+                        get_currency_color(currency),
                         width=2
                     )
                 )
 
 
-        self.ax.setLimits(yMin=y_min * 0.9, yMax=y_max * 1.1)
-        self.ax.getAxis('bottom').setTicks([x_ticks,[]])
+        ax.setLimits(yMin=y_min * 0.9, yMax=y_max * 1.1)
+        ax.getAxis('bottom').setTicks([x_ticks,[]])
 
 
 if __name__ == '__main__':

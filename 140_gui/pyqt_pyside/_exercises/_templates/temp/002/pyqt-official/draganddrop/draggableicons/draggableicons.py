@@ -51,26 +51,26 @@ ______ draggableicons_rc
 
 
 c_ DragWidget(QFrame):
-    ___ __init__  parent_None):
-        super(DragWidget, self).__init__(parent)
+    ___  -   parent_None):
+        super(DragWidget, self). - (parent)
 
-        self.setMinimumSize(200, 200)
-        self.setFrameStyle(QFrame.Sunken | QFrame.StyledPanel)
-        self.setAcceptDrops(True)
+        setMinimumSize(200, 200)
+        setFrameStyle(QFrame.Sunken | QFrame.StyledPanel)
+        setAcceptDrops(True)
 
-        boatIcon _ QLabel(self)
+        boatIcon _ QLabel
         boatIcon.setPixmap(QPixmap(':/images/boat.png'))
         boatIcon.move(20, 20)
         boatIcon.s..
         boatIcon.setAttribute(__.WA_DeleteOnClose)
 
-        carIcon _ QLabel(self)
+        carIcon _ QLabel
         carIcon.setPixmap(QPixmap(':/images/car.png'))
         carIcon.move(120, 20)
         carIcon.s..
         carIcon.setAttribute(__.WA_DeleteOnClose)
 
-        houseIcon _ QLabel(self)
+        houseIcon _ QLabel
         houseIcon.setPixmap(QPixmap(':/images/house.png'))
         houseIcon.move(20, 120)
         houseIcon.s..
@@ -97,7 +97,7 @@ c_ DragWidget(QFrame):
             offset _ QPoint()
             dataStream >> pixmap >> offset
 
-            newIcon _ QLabel(self)
+            newIcon _ QLabel
             newIcon.setPixmap(pixmap)
             newIcon.move(event.pos() - offset)
             newIcon.s..
@@ -112,7 +112,7 @@ c_ DragWidget(QFrame):
             event.ignore()
 
     ___ mousePressEvent  event):
-        child _ self.childAt(event.pos())
+        child _ childAt(event.pos())
         __ no. child:
             r_
 
@@ -125,7 +125,7 @@ c_ DragWidget(QFrame):
         mimeData _ QMimeData()
         mimeData.setData('application/x-dnditemdata', itemData)
 
-        drag _ QDrag(self)
+        drag _ QDrag
         drag.setMimeData(mimeData)
         drag.setPixmap(pixmap)
         drag.setHotSpot(event.pos() - child.pos())
@@ -145,11 +145,11 @@ c_ DragWidget(QFrame):
             child.setPixmap(pixmap)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     mainWidget _ ?W..
     horizontalLayout _ QHBoxLayout()

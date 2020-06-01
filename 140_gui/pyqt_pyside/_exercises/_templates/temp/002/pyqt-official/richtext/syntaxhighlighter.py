@@ -49,25 +49,25 @@ ____ ?.?W.. ______ (?A.., ?FD.., QMainWindow, QMenu,
 
 
 c_ MainWindow ?MW..
-    ___ __init__  parent_None):
-        super(MainWindow, self).__init__(parent)
+    ___  -   parent_None):
+        super(MainWindow, self). - (parent)
 
-        self.setupFileMenu()
-        self.setupHelpMenu()
-        self.setupEditor()
+        setupFileMenu()
+        setupHelpMenu()
+        setupEditor()
 
-        self.sCW..(self.editor)
-        self.setWindowTitle("Syntax Highlighter")
+        sCW..(editor)
+        setWindowTitle("Syntax Highlighter")
 
-    ___ about(self):
+    ___ about
         ?MB...about  "About Syntax Highlighter",
                 "<p>The <b>Syntax Highlighter</b> example shows how to " \
                 "perform simple syntax highlighting by subclassing the " \
                 "QSyntaxHighlighter class and describing highlighting " \
                 "rules using regular expressions.</p>")
 
-    ___ newFile(self):
-        self.editor.clear()
+    ___ newFile
+        editor.clear()
 
     ___ openFile  path_None):
         __ no. path:
@@ -86,38 +86,38 @@ c_ MainWindow ?MW..
                     # Python v2.
                     t__ _ str(t__)
 
-                self.editor.sPT..(t__)
+                editor.sPT..(t__)
 
-    ___ setupEditor(self):
+    ___ setupEditor
         font _ QFont()
         font.setFamily('Courier')
         font.setFixedPitch(True)
         font.setPointSize(10)
 
-        self.editor _ QTextEdit()
-        self.editor.setFont(font)
+        editor _ QTextEdit()
+        editor.setFont(font)
 
-        self.highlighter _ Highlighter(self.editor.document())
+        highlighter _ Highlighter(editor.document())
 
-    ___ setupFileMenu(self):
+    ___ setupFileMenu
         fileMenu _ QMenu("&File", self)
-        self.mB.. .aM..(fileMenu)
+        mB.. .aM..(fileMenu)
 
-        fileMenu.aA..("&New...", self.newFile, "Ctrl+N")
-        fileMenu.aA..("&Open...", self.openFile, "Ctrl+O")
+        fileMenu.aA..("&New...", newFile, "Ctrl+N")
+        fileMenu.aA..("&Open...", openFile, "Ctrl+O")
         fileMenu.aA..("E&xit", ?A...instance().quit, "Ctrl+Q")
 
-    ___ setupHelpMenu(self):
+    ___ setupHelpMenu
         helpMenu _ QMenu("&Help", self)
-        self.mB.. .aM..(helpMenu)
+        mB.. .aM..(helpMenu)
 
-        helpMenu.aA..("&About", self.about)
+        helpMenu.aA..("&About", about)
         helpMenu.aA..("About &Qt", ?A...instance().aboutQt)
 
 
 c_ Highlighter(QSyntaxHighlighter):
-    ___ __init__  parent_None):
-        super(Highlighter, self).__init__(parent)
+    ___  -   parent_None):
+        super(Highlighter, self). - (parent)
 
         keywordFormat _ QTextCharFormat()
         keywordFormat.setForeground(__.darkBlue)
@@ -133,71 +133,71 @@ c_ Highlighter(QSyntaxHighlighter):
                 "\\bunion\\b", "\\bunsigned\\b", "\\bvirtual\\b", "\\bvoid\\b",
                 "\\bvolatile\\b"]
 
-        self.highlightingRules _ [(QRegExp(pattern), keywordFormat)
-                for pattern in keywordPatterns]
+        highlightingRules _ [(QRegExp(pattern), keywordFormat)
+                ___ pattern __ keywordPatterns]
 
         classFormat _ QTextCharFormat()
         classFormat.setFontWeight(QFont.Bold)
         classFormat.setForeground(__.darkMagenta)
-        self.highlightingRules.ap..((QRegExp("\\bQ[A-Za-z]+\\b"),
+        highlightingRules.ap..((QRegExp("\\bQ[A-Za-z]+\\b"),
                 classFormat))
 
         singleLineCommentFormat _ QTextCharFormat()
         singleLineCommentFormat.setForeground(__.red)
-        self.highlightingRules.ap..((QRegExp("//[^\n]*"),
+        highlightingRules.ap..((QRegExp("//[^\n]*"),
                 singleLineCommentFormat))
 
-        self.multiLineCommentFormat _ QTextCharFormat()
-        self.multiLineCommentFormat.setForeground(__.red)
+        multiLineCommentFormat _ QTextCharFormat()
+        multiLineCommentFormat.setForeground(__.red)
 
         quotationFormat _ QTextCharFormat()
         quotationFormat.setForeground(__.darkGreen)
-        self.highlightingRules.ap..((QRegExp("\".*\""), quotationFormat))
+        highlightingRules.ap..((QRegExp("\".*\""), quotationFormat))
 
         functionFormat _ QTextCharFormat()
         functionFormat.setFontItalic(True)
         functionFormat.setForeground(__.blue)
-        self.highlightingRules.ap..((QRegExp("\\b[A-Za-z0-9_]+(?=\\()"),
+        highlightingRules.ap..((QRegExp("\\b[A-Za-z0-9_]+(?=\\()"),
                 functionFormat))
 
-        self.commentStartExpression _ QRegExp("/\\*")
-        self.commentEndExpression _ QRegExp("\\*/")
+        commentStartExpression _ QRegExp("/\\*")
+        commentEndExpression _ QRegExp("\\*/")
 
     ___ highlightBlock  t__):
-        for pattern, format in self.highlightingRules:
+        ___ pattern, format __ highlightingRules:
             expression _ QRegExp(pattern)
             index _ expression.indexIn(t__)
             w__ index >_ 0:
                 length _ expression.matchedLength()
-                self.setFormat(index, length, format)
+                setFormat(index, length, format)
                 index _ expression.indexIn(t__, index + length)
 
-        self.setCurrentBlockState(0)
+        setCurrentBlockState(0)
 
         startIndex _ 0
-        __ self.previousBlockState() !_ 1:
-            startIndex _ self.commentStartExpression.indexIn(t__)
+        __ previousBlockState() !_ 1:
+            startIndex _ commentStartExpression.indexIn(t__)
 
         w__ startIndex >_ 0:
-            endIndex _ self.commentEndExpression.indexIn(t__, startIndex)
+            endIndex _ commentEndExpression.indexIn(t__, startIndex)
 
             __ endIndex == -1:
-                self.setCurrentBlockState(1)
+                setCurrentBlockState(1)
                 commentLength _ le.(t__) - startIndex
             ____
-                commentLength _ endIndex - startIndex + self.commentEndExpression.matchedLength()
+                commentLength _ endIndex - startIndex + commentEndExpression.matchedLength()
 
-            self.setFormat(startIndex, commentLength,
-                    self.multiLineCommentFormat)
-            startIndex _ self.commentStartExpression.indexIn(t__,
+            setFormat(startIndex, commentLength,
+                    multiLineCommentFormat)
+            startIndex _ commentStartExpression.indexIn(t__,
                     startIndex + commentLength);
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     window _ MainWindow()
     window.resize(640, 512)
     window.s..

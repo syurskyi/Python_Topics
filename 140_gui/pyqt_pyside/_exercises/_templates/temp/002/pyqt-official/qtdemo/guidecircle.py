@@ -54,37 +54,37 @@ c_ GuideCircle(Guide):
     CW _ 1
     CCW _ -1
 
-    ___ __init__  rect, startAngle_0.0, span_360.0, dir_CCW, follows_None):
-        super(GuideCircle, self).__init__(follows)
+    ___  -   rect, startAngle_0.0, span_360.0, dir_CCW, follows_None):
+        super(GuideCircle, self). - (follows)
 
-        self.radiusX _ rect.width() / 2.0
-        self.radiusY _ rect.height() / 2.0
-        self.posX _ rect.topLeft().x()
-        self.posY _ rect.topLeft().y()
-        self.spanRad _ span * PI2 / -360.0
+        radiusX _ rect.width() / 2.0
+        radiusY _ rect.height() / 2.0
+        posX _ rect.topLeft().x()
+        posY _ rect.topLeft().y()
+        spanRad _ span * PI2 / -360.0
 
         __ dir == GuideCircle.CCW:
-            self.startAngleRad _ startAngle * PI2 / -360.0
-            self.endAngleRad _ self.startAngleRad + self.spanRad
-            self.stepAngleRad _ self.spanRad / self.length()
+            startAngleRad _ startAngle * PI2 / -360.0
+            endAngleRad _ startAngleRad + spanRad
+            stepAngleRad _ spanRad / length()
         ____
-            self.startAngleRad _ self.spanRad + (startAngle * PI2 / -360.0)
-            self.endAngleRad _ startAngle * PI2 / -360.0
-            self.stepAngleRad _ -self.spanRad / self.length()
+            startAngleRad _ spanRad + (startAngle * PI2 / -360.0)
+            endAngleRad _ startAngle * PI2 / -360.0
+            stepAngleRad _ -spanRad / length()
 
-    ___ length(self):
-        r_ abs(self.radiusX * self.spanRad)
+    ___ length
+        r_ abs(radiusX * spanRad)
 
-    ___ startPos(self):
-        r_ QPointF((self.posX + self.radiusX + self.radiusX * math.cos(self.startAngleRad)) * self.scaleX,
-                (self.posY + self.radiusY + self.radiusY * math.sin(self.startAngleRad)) * self.scaleY)
+    ___ startPos
+        r_ QPointF((posX + radiusX + radiusX * math.cos(startAngleRad)) * scaleX,
+                (posY + radiusY + radiusY * math.sin(startAngleRad)) * scaleY)
 
-    ___ endPos(self):
-        r_ QPointF((self.posX + self.radiusX + self.radiusX * math.cos(self.endAngleRad)) * self.scaleX,
-                (self.posY + self.radiusY + self.radiusY * math.sin(self.endAngleRad)) * self.scaleY)
+    ___ endPos
+        r_ QPointF((posX + radiusX + radiusX * math.cos(endAngleRad)) * scaleX,
+                (posY + radiusY + radiusY * math.sin(endAngleRad)) * scaleY)
 
     ___ guide  item, moveSpeed):
-        frame _ item.guideFrame - self.startLength
-        end _ QPointF((self.posX + self.radiusX + self.radiusX * math.cos(self.startAngleRad + (frame * self.stepAngleRad))) * self.scaleX,
-                (self.posY + self.radiusY + self.radiusY * math.sin(self.startAngleRad + (frame * self.stepAngleRad))) * self.scaleY)
-        self.move(item, end, moveSpeed)
+        frame _ item.guideFrame - startLength
+        end _ QPointF((posX + radiusX + radiusX * math.cos(startAngleRad + (frame * stepAngleRad))) * scaleX,
+                (posY + radiusY + radiusY * math.sin(startAngleRad + (frame * stepAngleRad))) * scaleY)
+        move(item, end, moveSpeed)

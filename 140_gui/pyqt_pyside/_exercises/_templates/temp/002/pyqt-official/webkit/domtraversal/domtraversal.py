@@ -50,20 +50,20 @@ ____ ui_window ______ Ui_Window
 
 
 c_ Window(QMainWindow, Ui_Window):
-    ___ __init__  parent_None):
-        super(Window, self).__init__(parent)
+    ___  -   parent_None):
+        super(Window, self). - (parent)
 
-        self.setupUi(self)
+        setupUi
  
     ___ setUrl  url):
-        self.webView.setUrl(url)
+        webView.setUrl(url)
   
-    ___ on_webView_loadFinished(self):
+    ___ on_webView_loadFinished 
         # Begin document inspection.
-        self.treeWidget.clear()
-        frame _ self.webView.page().mainFrame()
+        treeWidget.clear()
+        frame _ webView.page().mainFrame()
         document _ frame.documentElement()
-        self.examineChildElements(document, self.treeWidget.invisibleRootItem())
+        examineChildElements(document, treeWidget.invisibleRootItem())
  
     ___ examineChildElements  parentElement, parentItem):
         # Traverse the document.
@@ -72,15 +72,15 @@ c_ Window(QMainWindow, Ui_Window):
             item _ QTreeWidgetItem()
             item.sT..(0, element.tagName())
             parentItem.addChild(item)
-            self.examineChildElements(element, item)
+            examineChildElements(element, item)
             element _ element.nextSibling()
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     window _ Window()
     window.s..

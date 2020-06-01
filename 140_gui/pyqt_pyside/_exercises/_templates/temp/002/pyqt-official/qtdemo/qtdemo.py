@@ -58,12 +58,12 @@ ___ artisticSleep(sleepTime):
         ?A...processEvents(QEventLoop.AllEvents, 50)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
-    Colors.parseArgs(___.argv)
+    app _ ?A..(___.a..
+    Colors.parseArgs(___.a..
 
     __ ___.platform == 'win32':
         ?MB...information(N.., "Documentation Warning",

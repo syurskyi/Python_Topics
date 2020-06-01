@@ -11,93 +11,93 @@ c_ SlowSearcherThread(qtc.QThread):
     directory_changed _ qtc.pyqtSignal(str)
     finished _ qtc.pyqtSignal()
 
-    ___ __init__(self):
-        super().__init__()
-        self.term _ N..
+    ___  -  
+        s_. - ()
+        term _ N..
 
     @qtc.pyqtSlot(str)
     ___ set_term  term):
-        self.term _ term
+        term _ term
 
     @qtc.pyqtSlot()
-    ___ run(self):
+    ___ run 
         #print(f'Beginning search for: {self.term}')
         root _ qtc.QDir.rootPath()
-        self._search(self.term, root)
-        self.finished.emit()
+        _search(term, root)
+        finished.emit()
 
     ___ _search  term, path):
-        self.directory_changed.emit(path)
+        directory_changed.emit(path)
         directory _ qtc.QDir(path)
         directory.setFilter(
             directory.filter() |
             qtc.QDir.NoDotAndDotDot |
             qtc.QDir.NoSymLinks
         )
-        for entry in directory.entryInfoList
-            __ term in entry.filePath
+        ___ entry __ directory.entryInfoList
+            __ term __ entry.filePath
                 print(entry.filePath())
-                self.match_found.emit(entry.filePath())
+                match_found.emit(entry.filePath())
             __ entry.isDir
-                self._search(term, entry.filePath())
+                _search(term, entry.filePath())
 
 
-c_ SearchForm(qtw.QWidget):
+c_ SearchForm ?.?W..
 
     textChanged _ qtc.pyqtSignal(str)
     rP__ _ qtc.pyqtSignal()
 
-    ___ __init__(self):
-        super().__init__()
-        self.sL..(qtw.QVBoxLayout())
-        self.search_term_inp _ qtw.QLineEdit(
+    ___  -  
+        s_. - ()
+        sL.. ?.?VBL..
+        search_term_inp _ ?.?LE..(
             placeholderText_'Search Term',
             textChanged_self.textChanged,
             returnPressed_self.rP__)
-        self.layout().aW..(self.search_term_inp)
-        self.results _ qtw.QListWidget()
-        self.layout().aW..(self.results)
-        self.rP__.c..(self.results.clear)
+        layout().aW..(search_term_inp)
+        results _ qtw.QListWidget()
+        layout().aW..(results)
+        rP__.c..(results.clear)
 
     ___ addResult  result):
-        self.results.addItem(result)
+        results.addItem(result)
 
 
 
 c_ MainWindow(qtw.QMainWindow):
 
-    ___ __init__(self):
+    ___  -  
         """MainWindow constructor.
 
         This widget will be our main window.
         We'll define all the UI components in here.
         """
-        super().__init__()
+        s_. - ()
         # Main UI code goes here
 
         form _ SearchForm()
-        self.sCW..(form)
-        self.ss _ SlowSearcherThread()
+        sCW..(form)
+        ss _ SlowSearcherThread()
 
         # Connect to search engine
-        form.textChanged.c..(self.ss.set_term)
-        form.rP__.c..(self.ss.start)
-        self.ss.match_found.c..(form.addResult)
-        self.ss.finished.c..(self.on_finished)
-        self.ss.directory_changed.c..(self.on_directory_changed)
+        form.textChanged.c..(ss.set_term)
+        form.rP__.c..(ss.start)
+        ss.match_found.c..(form.addResult)
+        ss.finished.c..(on_finished)
+        ss.directory_changed.c..(on_directory_changed)
 
         # End main UI code
-        self.s..
+        s..
 
-    ___ on_finished(self):
-        self.statusBar().showMessage('Search Finished')
+    ___ on_finished 
+        statusBar().showMessage('Search Finished')
 
     ___ on_directory_changed  path):
-        self.statusBar().showMessage(f'Searching in: {path}')
+        statusBar().showMessage(f'Searching in: {path}')
 
 
-__ __name__ == '__main__':
-    app _ qtw.?A..(___.argv)
+__ ______ __ ______
+    app _ qtw.?A..(___.a..
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()

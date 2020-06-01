@@ -50,13 +50,13 @@ ____ ?.?W.. ______ (?A.., QGridLayout, QLayout, QLineEdit,
 
 
 c_ Button(QToolButton):
-    ___ __init__  t__, parent_None):
-        super(Button, self).__init__(parent)
+    ___  -   t__, parent_None):
+        super(Button, self). - (parent)
 
-        self.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Preferred)
-        self.sT..(t__)
+        sSP..(QSizePolicy.E.., QSizePolicy.Preferred)
+        sT..(t__)
 
-    ___ sizeHint(self):
+    ___ sizeHint
         size _ super(Button, self).sizeHint()
         size.setHeight(size.height() + 20)
         size.setWidth(max(size.width(), size.height()))
@@ -66,117 +66,117 @@ c_ Button(QToolButton):
 c_ Calculator(QWidget):
     NumDigitButtons _ 10
     
-    ___ __init__  parent_None):
-        super(Calculator, self).__init__(parent)
+    ___  -   parent_None):
+        super(Calculator, self). - (parent)
 
-        self.pendingAdditiveOperator _ ''
-        self.pendingMultiplicativeOperator _ ''
+        pendingAdditiveOperator _ ''
+        pendingMultiplicativeOperator _ ''
 
-        self.sumInMemory _ 0.0
-        self.sumSoFar _ 0.0
-        self.factorSoFar _ 0.0
-        self.waitingForOperand _ True
+        sumInMemory _ 0.0
+        sumSoFar _ 0.0
+        factorSoFar _ 0.0
+        waitingForOperand _ True
 
-        self.display _ QLineEdit('0')
-        self.display.setReadOnly(True)
-        self.display.setAlignment(__.AlignRight)
-        self.display.setMaxLength(15)
+        display _ QLineEdit('0')
+        display.setReadOnly(True)
+        display.setAlignment(__.AlignRight)
+        display.setMaxLength(15)
 
-        font _ self.display.font()
+        font _ display.font()
         font.setPointSize(font.pointSize() + 8)
-        self.display.setFont(font)
+        display.setFont(font)
 
-        self.digitButtons _   # list
+        digitButtons _   # list
         
-        for i in range(Calculator.NumDigitButtons):
-            self.digitButtons.ap..(self.createButton(str(i),
-                    self.digitClicked))
+        ___ i __ range(Calculator.NumDigitButtons):
+            digitButtons.ap..(createButton(str(i),
+                    digitClicked))
 
-        self.pointButton _ self.createButton(".", self.pointClicked)
-        self.changeSignButton _ self.createButton(u"\N{PLUS-MINUS SIGN}",
-                self.changeSignClicked)
+        pointButton _ createButton(".", pointClicked)
+        changeSignButton _ createButton(u"\N{PLUS-MINUS SIGN}",
+                changeSignClicked)
 
-        self.backspaceButton _ self.createButton("Backspace",
-                self.backspaceClicked)
-        self.clearButton _ self.createButton("Clear", self.clear)
-        self.clearAllButton _ self.createButton("Clear All", self.clearAll)
+        backspaceButton _ createButton("Backspace",
+                backspaceClicked)
+        clearButton _ createButton("Clear", clear)
+        clearAllButton _ createButton("Clear All", clearAll)
 
-        self.clearMemoryButton _ self.createButton("MC", self.clearMemory)
-        self.readMemoryButton _ self.createButton("MR", self.readMemory)
-        self.setMemoryButton _ self.createButton("MS", self.setMemory)
-        self.addToMemoryButton _ self.createButton("M+", self.addToMemory)
+        clearMemoryButton _ createButton("MC", clearMemory)
+        readMemoryButton _ createButton("MR", readMemory)
+        setMemoryButton _ createButton("MS", setMemory)
+        addToMemoryButton _ createButton("M+", addToMemory)
 
-        self.divisionButton _ self.createButton(u"\N{DIVISION SIGN}",
-                self.multiplicativeOperatorClicked)
-        self.timesButton _ self.createButton(u"\N{MULTIPLICATION SIGN}",
-                self.multiplicativeOperatorClicked)
-        self.minusButton _ self.createButton("-", self.additiveOperatorClicked)
-        self.plusButton _ self.createButton("+", self.additiveOperatorClicked)
+        divisionButton _ createButton(u"\N{DIVISION SIGN}",
+                multiplicativeOperatorClicked)
+        timesButton _ createButton(u"\N{MULTIPLICATION SIGN}",
+                multiplicativeOperatorClicked)
+        minusButton _ createButton("-", additiveOperatorClicked)
+        plusButton _ createButton("+", additiveOperatorClicked)
 
-        self.squareRootButton _ self.createButton("Sqrt",
-                self.unaryOperatorClicked)
-        self.powerButton _ self.createButton(u"x\N{SUPERSCRIPT TWO}",
-                self.unaryOperatorClicked)
-        self.reciprocalButton _ self.createButton("1/x",
-                self.unaryOperatorClicked)
-        self.equalButton _ self.createButton("=", self.equalClicked)
+        squareRootButton _ createButton("Sqrt",
+                unaryOperatorClicked)
+        powerButton _ createButton(u"x\N{SUPERSCRIPT TWO}",
+                unaryOperatorClicked)
+        reciprocalButton _ createButton("1/x",
+                unaryOperatorClicked)
+        equalButton _ createButton("=", equalClicked)
 
         mainLayout _ QGridLayout()
         mainLayout.setSizeConstraint(QLayout.SetFixedSize)
 
-        mainLayout.aW..(self.display, 0, 0, 1, 6)
-        mainLayout.aW..(self.backspaceButton, 1, 0, 1, 2)
-        mainLayout.aW..(self.clearButton, 1, 2, 1, 2)
-        mainLayout.aW..(self.clearAllButton, 1, 4, 1, 2)
+        mainLayout.aW..(display, 0, 0, 1, 6)
+        mainLayout.aW..(backspaceButton, 1, 0, 1, 2)
+        mainLayout.aW..(clearButton, 1, 2, 1, 2)
+        mainLayout.aW..(clearAllButton, 1, 4, 1, 2)
 
-        mainLayout.aW..(self.clearMemoryButton, 2, 0)
-        mainLayout.aW..(self.readMemoryButton, 3, 0)
-        mainLayout.aW..(self.setMemoryButton, 4, 0)
-        mainLayout.aW..(self.addToMemoryButton, 5, 0)
+        mainLayout.aW..(clearMemoryButton, 2, 0)
+        mainLayout.aW..(readMemoryButton, 3, 0)
+        mainLayout.aW..(setMemoryButton, 4, 0)
+        mainLayout.aW..(addToMemoryButton, 5, 0)
 
-        for i in range(1, Calculator.NumDigitButtons):
+        ___ i __ range(1, Calculator.NumDigitButtons):
             row _ ((9 - i) / 3) + 2
             column _ ((i - 1) % 3) + 1
-            mainLayout.aW..(self.digitButtons[i], row, column)
+            mainLayout.aW..(digitButtons[i], row, column)
 
-        mainLayout.aW..(self.digitButtons[0], 5, 1)
-        mainLayout.aW..(self.pointButton, 5, 2)
-        mainLayout.aW..(self.changeSignButton, 5, 3)
+        mainLayout.aW..(digitButtons[0], 5, 1)
+        mainLayout.aW..(pointButton, 5, 2)
+        mainLayout.aW..(changeSignButton, 5, 3)
 
-        mainLayout.aW..(self.divisionButton, 2, 4)
-        mainLayout.aW..(self.timesButton, 3, 4)
-        mainLayout.aW..(self.minusButton, 4, 4)
-        mainLayout.aW..(self.plusButton, 5, 4)
+        mainLayout.aW..(divisionButton, 2, 4)
+        mainLayout.aW..(timesButton, 3, 4)
+        mainLayout.aW..(minusButton, 4, 4)
+        mainLayout.aW..(plusButton, 5, 4)
 
-        mainLayout.aW..(self.squareRootButton, 2, 5)
-        mainLayout.aW..(self.powerButton, 3, 5)
-        mainLayout.aW..(self.reciprocalButton, 4, 5)
-        mainLayout.aW..(self.equalButton, 5, 5)
-        self.sL..(mainLayout)
+        mainLayout.aW..(squareRootButton, 2, 5)
+        mainLayout.aW..(powerButton, 3, 5)
+        mainLayout.aW..(reciprocalButton, 4, 5)
+        mainLayout.aW..(equalButton, 5, 5)
+        sL..(mainLayout)
 
-        self.setWindowTitle("Calculator")
+        setWindowTitle("Calculator")
 
-    ___ digitClicked(self):
-        clickedButton _ self.sender()
+    ___ digitClicked
+        clickedButton _ sender()
         digitValue _ int(clickedButton.t__())
 
-        __ self.display.t__() == '0' and digitValue == 0.0:
+        __ display.t__() == '0' and digitValue == 0.0:
             r_
 
-        __ self.waitingForOperand:
-            self.display.clear()
-            self.waitingForOperand _ False
+        __ waitingForOperand:
+            display.clear()
+            waitingForOperand _ False
 
-        self.display.sT..(self.display.t__() + str(digitValue))
+        display.sT..(display.t__() + str(digitValue))
 
-    ___ unaryOperatorClicked(self):
-        clickedButton _ self.sender()
+    ___ unaryOperatorClicked
+        clickedButton _ sender()
         clickedOperator _ clickedButton.t__()
-        operand _ float(self.display.t__())
+        operand _ float(display.t__())
 
         __ clickedOperator == "Sqrt":
             __ operand < 0.0:
-                self.abortOperation()
+                abortOperation()
                 r_
 
             result _ math.sqrt(operand)
@@ -184,94 +184,94 @@ c_ Calculator(QWidget):
             result _ math.pow(operand, 2.0)
         ____ clickedOperator == "1/x":
             __ operand == 0.0:
-                self.abortOperation()
+                abortOperation()
                 r_
 
             result _ 1.0 / operand
 
-        self.display.sT..(str(result))
-        self.waitingForOperand _ True
+        display.sT..(str(result))
+        waitingForOperand _ True
 
-    ___ additiveOperatorClicked(self):
-        clickedButton _ self.sender()
+    ___ additiveOperatorClicked
+        clickedButton _ sender()
         clickedOperator _ clickedButton.t__()
-        operand _ float(self.display.t__())
+        operand _ float(display.t__())
 
-        __ self.pendingMultiplicativeOperator:
-            __ no. self.calculate(operand, self.pendingMultiplicativeOperator):
-                self.abortOperation()
+        __ pendingMultiplicativeOperator:
+            __ no. calculate(operand, pendingMultiplicativeOperator):
+                abortOperation()
                 r_
 
-            self.display.sT..(str(self.factorSoFar))
-            operand _ self.factorSoFar
-            self.factorSoFar _ 0.0
-            self.pendingMultiplicativeOperator _ ''
+            display.sT..(str(factorSoFar))
+            operand _ factorSoFar
+            factorSoFar _ 0.0
+            pendingMultiplicativeOperator _ ''
 
-        __ self.pendingAdditiveOperator:
-            __ no. self.calculate(operand, self.pendingAdditiveOperator):
-                self.abortOperation()
+        __ pendingAdditiveOperator:
+            __ no. calculate(operand, pendingAdditiveOperator):
+                abortOperation()
                 r_
 
-            self.display.sT..(str(self.sumSoFar))
+            display.sT..(str(sumSoFar))
         ____
-            self.sumSoFar _ operand
+            sumSoFar _ operand
 
-        self.pendingAdditiveOperator _ clickedOperator
-        self.waitingForOperand _ True
+        pendingAdditiveOperator _ clickedOperator
+        waitingForOperand _ True
 
-    ___ multiplicativeOperatorClicked(self):
-        clickedButton _ self.sender()
+    ___ multiplicativeOperatorClicked
+        clickedButton _ sender()
         clickedOperator _ clickedButton.t__()
-        operand _ float(self.display.t__())
+        operand _ float(display.t__())
 
-        __ self.pendingMultiplicativeOperator:
-            __ no. self.calculate(operand, self.pendingMultiplicativeOperator):
-                self.abortOperation()
+        __ pendingMultiplicativeOperator:
+            __ no. calculate(operand, pendingMultiplicativeOperator):
+                abortOperation()
                 r_
 
-            self.display.sT..(str(self.factorSoFar))
+            display.sT..(str(factorSoFar))
         ____
-            self.factorSoFar _ operand
+            factorSoFar _ operand
 
-        self.pendingMultiplicativeOperator _ clickedOperator
-        self.waitingForOperand _ True
+        pendingMultiplicativeOperator _ clickedOperator
+        waitingForOperand _ True
 
-    ___ equalClicked(self):
-        operand _ float(self.display.t__())
+    ___ equalClicked
+        operand _ float(display.t__())
 
-        __ self.pendingMultiplicativeOperator:
-            __ no. self.calculate(operand, self.pendingMultiplicativeOperator):
-                self.abortOperation()
+        __ pendingMultiplicativeOperator:
+            __ no. calculate(operand, pendingMultiplicativeOperator):
+                abortOperation()
                 r_
 
-            operand _ self.factorSoFar
-            self.factorSoFar _ 0.0
-            self.pendingMultiplicativeOperator _ ''
+            operand _ factorSoFar
+            factorSoFar _ 0.0
+            pendingMultiplicativeOperator _ ''
 
-        __ self.pendingAdditiveOperator:
-            __ no. self.calculate(operand, self.pendingAdditiveOperator):
-                self.abortOperation()
+        __ pendingAdditiveOperator:
+            __ no. calculate(operand, pendingAdditiveOperator):
+                abortOperation()
                 r_
 
-            self.pendingAdditiveOperator _ ''
+            pendingAdditiveOperator _ ''
         ____
-            self.sumSoFar _ operand
+            sumSoFar _ operand
 
-        self.display.sT..(str(self.sumSoFar))
-        self.sumSoFar _ 0.0
-        self.waitingForOperand _ True
+        display.sT..(str(sumSoFar))
+        sumSoFar _ 0.0
+        waitingForOperand _ True
 
-    ___ pointClicked(self):
-        __ self.waitingForOperand:
-            self.display.sT..('0')
+    ___ pointClicked
+        __ waitingForOperand:
+            display.sT..('0')
 
-        __ "." no. in self.display.t__
-            self.display.sT..(self.display.t__() + ".")
+        __ "." no. __ display.t__
+            display.sT..(display.t__() + ".")
 
-        self.waitingForOperand _ False
+        waitingForOperand _ False
 
-    ___ changeSignClicked(self):
-        t__ _ self.display.t__()
+    ___ changeSignClicked
+        t__ _ display.t__()
         value _ float(t__)
 
         __ value > 0.0:
@@ -279,79 +279,79 @@ c_ Calculator(QWidget):
         ____ value < 0.0:
             t__ _ t__[1:]
 
-        self.display.sT..(t__)
+        display.sT..(t__)
 
-    ___ backspaceClicked(self):
-        __ self.waitingForOperand:
+    ___ backspaceClicked
+        __ waitingForOperand:
             r_
 
-        t__ _ self.display.t__()[:-1]
+        t__ _ display.t__()[:-1]
         __ no. t__:
             t__ _ '0'
-            self.waitingForOperand _ True
+            waitingForOperand _ True
 
-        self.display.sT..(t__)
+        display.sT..(t__)
 
-    ___ clear(self):
-        __ self.waitingForOperand:
+    ___ clear
+        __ waitingForOperand:
             r_
 
-        self.display.sT..('0')
-        self.waitingForOperand _ True
+        display.sT..('0')
+        waitingForOperand _ True
 
-    ___ clearAll(self):
-        self.sumSoFar _ 0.0
-        self.factorSoFar _ 0.0
-        self.pendingAdditiveOperator _ ''
-        self.pendingMultiplicativeOperator _ ''
-        self.display.sT..('0')
-        self.waitingForOperand _ True
+    ___ clearAll
+        sumSoFar _ 0.0
+        factorSoFar _ 0.0
+        pendingAdditiveOperator _ ''
+        pendingMultiplicativeOperator _ ''
+        display.sT..('0')
+        waitingForOperand _ True
 
-    ___ clearMemory(self):
-        self.sumInMemory _ 0.0
+    ___ clearMemory
+        sumInMemory _ 0.0
 
-    ___ readMemory(self):
-        self.display.sT..(str(self.sumInMemory))
-        self.waitingForOperand _ True
+    ___ readMemory
+        display.sT..(str(sumInMemory))
+        waitingForOperand _ True
 
-    ___ setMemory(self):
-        self.equalClicked()
-        self.sumInMemory _ float(self.display.t__())
+    ___ setMemory
+        equalClicked()
+        sumInMemory _ float(display.t__())
 
-    ___ addToMemory(self):
-        self.equalClicked()
-        self.sumInMemory +_ float(self.display.t__())
+    ___ addToMemory
+        equalClicked()
+        sumInMemory +_ float(display.t__())
 
     ___ createButton  t__, member):
         button _ Button(t__)
         button.c__.c..(member)
         r_ button
 
-    ___ abortOperation(self):
-        self.clearAll()
-        self.display.sT..("####")
+    ___ abortOperation
+        clearAll()
+        display.sT..("####")
 
     ___ calculate  rightOperand, pendingOperator):
         __ pendingOperator == "+":
-            self.sumSoFar +_ rightOperand
+            sumSoFar +_ rightOperand
         ____ pendingOperator == "-":
-            self.sumSoFar -_ rightOperand
+            sumSoFar -_ rightOperand
         ____ pendingOperator == u"\N{MULTIPLICATION SIGN}":
-            self.factorSoFar *_ rightOperand
+            factorSoFar *_ rightOperand
         ____ pendingOperator == u"\N{DIVISION SIGN}":
             __ rightOperand == 0.0:
                 r_ False
 
-            self.factorSoFar /_ rightOperand
+            factorSoFar /_ rightOperand
 
         r_ True
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     calc _ Calculator()
     calc.s..
     ___.exit(app.exec_())

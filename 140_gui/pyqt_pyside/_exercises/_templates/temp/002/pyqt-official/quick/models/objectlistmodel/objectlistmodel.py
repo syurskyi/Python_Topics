@@ -53,35 +53,35 @@ c_ DataObject(QObject):
     nameChanged _ pyqtSignal()
 
     @pyqtProperty(str, notify_nameChanged)
-    ___ name(self):
-        r_ self._name
+    ___ name
+        r_ _name
 
     @name.setter
     ___ name  name):
-        __ self._name !_ name:
-            self._name _ name
-            self.nameChanged.emit()
+        __ _name !_ name:
+            _name _ name
+            nameChanged.emit()
 
     colorChanged _ pyqtSignal()
 
     @pyqtProperty(str, notify_colorChanged)
-    ___ color(self):
-        r_ self._color
+    ___ color
+        r_ _color
 
     @color.setter
     ___ color  color):
-        __ self._color !_ color:
-            self._color _ color
-            self.colorChanged.emit()
+        __ _color !_ color:
+            _color _ color
+            colorChanged.emit()
 
-    ___ __init__  name_'', color_'', parent_None):
-        super(DataObject, self).__init__(parent)
+    ___  -   name_'', color_'', parent_None):
+        super(DataObject, self). - (parent)
 
-        self._name _ name
-        self._color _ color
+        _name _ name
+        _color _ color
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
     ______ os
     ______ ___
 
@@ -90,7 +90,7 @@ __ __name__ == '__main__':
     # doesn't get mixed up with another of the same name.
     os.chdir(__.p__ .dirname(__.p__ .abspath(__file__)))
 
-    app _ QGuiApplication(___.argv)
+    app _ QGuiApplication(___.a..
 
     dataList _ [DataObject("Item 1", 'red'),
                 DataObject("Item 2", 'green'),

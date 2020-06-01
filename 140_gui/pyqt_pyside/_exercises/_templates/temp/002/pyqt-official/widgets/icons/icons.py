@@ -78,7 +78,7 @@ c_ ImageDelegate(QItemDelegate):
             comboBox.addItem("Off")
             comboBox.addItem("On")
 
-        comboBox.activated.c..(self.emitCommitData)
+        comboBox.activated.c..(emitCommitData)
 
         r_ comboBox
 
@@ -97,69 +97,69 @@ c_ ImageDelegate(QItemDelegate):
 
         model.setData(index, comboBox.currentText())
 
-    ___ emitCommitData(self):
-        self.commitData.emit(self.sender())
+    ___ emitCommitData 
+        commitData.emit(sender())
 
 
 c_ IconPreviewArea(QWidget):
-    ___ __init__  parent_None):
-        super(IconPreviewArea, self).__init__(parent)
+    ___  -   parent_None):
+        super(IconPreviewArea, self). - (parent)
 
         mainLayout _ QGridLayout()
-        self.sL..(mainLayout)
+        sL..(mainLayout)
 
-        self.icon _ QIcon()
-        self.size _ QSize()
-        self.stateLabels _   # list
-        self.modeLabels _   # list
-        self.pixmapLabels _   # list
+        icon _ QIcon()
+        size _ QSize()
+        stateLabels _   # list
+        modeLabels _   # list
+        pixmapLabels _   # list
 
-        self.stateLabels.ap..(self.createHeaderLabel("Off"))
-        self.stateLabels.ap..(self.createHeaderLabel("On"))
+        stateLabels.ap..(createHeaderLabel("Off"))
+        stateLabels.ap..(createHeaderLabel("On"))
 
-        self.modeLabels.ap..(self.createHeaderLabel("Normal"))
-        self.modeLabels.ap..(self.createHeaderLabel("Active"))
-        self.modeLabels.ap..(self.createHeaderLabel("Disabled"))
-        self.modeLabels.ap..(self.createHeaderLabel("Selected"))
+        modeLabels.ap..(createHeaderLabel("Normal"))
+        modeLabels.ap..(createHeaderLabel("Active"))
+        modeLabels.ap..(createHeaderLabel("Disabled"))
+        modeLabels.ap..(createHeaderLabel("Selected"))
 
-        for j, label in enumerate(self.stateLabels):
+        ___ j, label __ en..(stateLabels):
             mainLayout.aW..(label, j + 1, 0)
 
-        for i, label in enumerate(self.modeLabels):
+        ___ i, label __ en..(modeLabels):
             mainLayout.aW..(label, 0, i + 1)
 
-            self.pixmapLabels.ap..(  # list)
-            for j in range(le.(self.stateLabels)):
-                self.pixmapLabels[i].ap..(self.createPixmapLabel())
-                mainLayout.aW..(self.pixmapLabels[i][j], j + 1, i + 1)
+            pixmapLabels.ap..(  # list)
+            ___ j __ range(le.(stateLabels)):
+                pixmapLabels[i].ap..(createPixmapLabel())
+                mainLayout.aW..(pixmapLabels[i][j], j + 1, i + 1)
 
     ___ setIcon  icon):
-        self.icon _ icon
-        self.updatePixmapLabels()
+        icon _ icon
+        updatePixmapLabels()
 
     ___ setSize  size):
-        __ size !_ self.size:
-            self.size _ size
-            self.updatePixmapLabels()
+        __ size !_ size:
+            size _ size
+            updatePixmapLabels()
 
     ___ createHeaderLabel  t__):
         label _ QLabel("<b>%s</b>" % t__)
         label.setAlignment(__.AlignCenter)
         r_ label
 
-    ___ createPixmapLabel(self):
+    ___ createPixmapLabel 
         label _ QLabel()
         label.setEnabled F..
         label.setAlignment(__.AlignCenter)
         label.setFrameShape(QFrame.Box)
-        label.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
+        label.sSP..(QSizePolicy.E.., QSizePolicy.E..)
         label.setBackgroundRole(?P...Base)
         label.setAutoFillBackground(True)
         label.setMinimumSize(132, 132)
         r_ label
 
-    ___ updatePixmapLabels(self):
-        for i in range(le.(self.modeLabels)):
+    ___ updatePixmapLabels 
+        ___ i __ range(le.(modeLabels)):
             __ i == 0:
                 mode _ QIcon.Normal
             ____ i == 1:
@@ -169,41 +169,41 @@ c_ IconPreviewArea(QWidget):
             ____
                 mode _ QIcon.Selected
 
-            for j in range(le.(self.stateLabels)):
+            ___ j __ range(le.(stateLabels)):
                 state _ QIcon.Off __ j == 0 else QIcon.On
-                pixmap _ self.icon.pixmap(self.size, mode, state)
-                self.pixmapLabels[i][j].setPixmap(pixmap)
-                self.pixmapLabels[i][j].setEnabled(no. pixmap.isNull())
+                pixmap _ icon.pixmap(size, mode, state)
+                pixmapLabels[i][j].setPixmap(pixmap)
+                pixmapLabels[i][j].setEnabled(no. pixmap.isNull())
 
 
 c_ MainWindow ?MW..
-    ___ __init__  parent_None):
-        super(MainWindow, self).__init__(parent)
+    ___  -   parent_None):
+        super(MainWindow, self). - (parent)
 
-        self.centralWidget _ ?W..
-        self.sCW..(self.centralWidget)
+        centralWidget _ ?W..
+        sCW..(centralWidget)
 
-        self.createPreviewGroupBox()
-        self.createImagesGroupBox()
-        self.createIconSizeGroupBox()
+        createPreviewGroupBox()
+        createImagesGroupBox()
+        createIconSizeGroupBox()
 
-        self.createActions()
-        self.createMenus()
-        self.createContextMenu()
+        createActions()
+        createMenus()
+        createContextMenu()
 
         mainLayout _ QGridLayout()
-        mainLayout.aW..(self.previewGroupBox, 0, 0, 1, 2)
-        mainLayout.aW..(self.imagesGroupBox, 1, 0)
-        mainLayout.aW..(self.iconSizeGroupBox, 1, 1)
-        self.centralWidget.sL..(mainLayout)
+        mainLayout.aW..(previewGroupBox, 0, 0, 1, 2)
+        mainLayout.aW..(imagesGroupBox, 1, 0)
+        mainLayout.aW..(iconSizeGroupBox, 1, 1)
+        centralWidget.sL..(mainLayout)
 
-        self.setWindowTitle("Icons")
-        self.checkCurrentStyle()
-        self.otherRadioButton.click()
+        setWindowTitle("Icons")
+        checkCurrentStyle()
+        otherRadioButton.click()
 
-        self.resize(self.minimumSizeHint())
+        resize(minimumSizeHint())
 
-    ___ about(self):
+    ___ about 
         ?MB...about  "About Icons",
                 "The <b>Icons</b> example illustrates how Qt renders an icon "
                 "in different modes (active, normal, disabled and selected) "
@@ -213,27 +213,27 @@ c_ MainWindow ?MW..
         __ no. checked:
             r_
 
-        action _ self.sender()
+        action _ sender()
         style _ QStyleFactory.create(action.data())
         __ no. style:
             r_
 
         ?A...setStyle(style)
 
-        self.setButtonText(self.smallRadioButton, "Small (%d x %d)",
+        setButtonText(smallRadioButton, "Small (%d x %d)",
                 style, QStyle.PM_SmallIconSize)
-        self.setButtonText(self.largeRadioButton, "Large (%d x %d)",
+        setButtonText(largeRadioButton, "Large (%d x %d)",
                 style, QStyle.PM_LargeIconSize)
-        self.setButtonText(self.toolBarRadioButton, "Toolbars (%d x %d)",
+        setButtonText(toolBarRadioButton, "Toolbars (%d x %d)",
                 style, QStyle.PM_ToolBarIconSize)
-        self.setButtonText(self.listViewRadioButton, "List views (%d x %d)",
+        setButtonText(listViewRadioButton, "List views (%d x %d)",
                 style, QStyle.PM_ListViewIconSize)
-        self.setButtonText(self.iconViewRadioButton, "Icon views (%d x %d)",
+        setButtonText(iconViewRadioButton, "Icon views (%d x %d)",
                 style, QStyle.PM_IconViewIconSize)
-        self.setButtonText(self.tabBarRadioButton, "Tab bars (%d x %d)",
+        setButtonText(tabBarRadioButton, "Tab bars (%d x %d)",
                 style, QStyle.PM_TabBarIconSize)
 
-        self.changeSize()
+        changeSize()
 
     @staticmethod
     ___ setButtonText(button, label, style, metric):
@@ -244,34 +244,34 @@ c_ MainWindow ?MW..
         __ no. checked:
             r_
 
-        __ self.otherRadioButton.isChecked
-            extent _ self.otherSpinBox.value()
+        __ otherRadioButton.isChecked
+            extent _ otherSpinBox.value()
         ____
-            __ self.smallRadioButton.isChecked
+            __ smallRadioButton.isChecked
                 metric _ QStyle.PM_SmallIconSize
-            ____ self.largeRadioButton.isChecked
+            ____ largeRadioButton.isChecked
                 metric _ QStyle.PM_LargeIconSize
-            ____ self.toolBarRadioButton.isChecked
+            ____ toolBarRadioButton.isChecked
                 metric _ QStyle.PM_ToolBarIconSize
-            ____ self.listViewRadioButton.isChecked
+            ____ listViewRadioButton.isChecked
                 metric _ QStyle.PM_ListViewIconSize
-            ____ self.iconViewRadioButton.isChecked
+            ____ iconViewRadioButton.isChecked
                 metric _ QStyle.PM_IconViewIconSize
             ____
                 metric _ QStyle.PM_TabBarIconSize
 
             extent _ ?A...style().pixelMetric(metric)
 
-        self.previewArea.setSize(QSize(extent, extent))
-        self.otherSpinBox.setEnabled(self.otherRadioButton.isChecked())
+        previewArea.setSize(QSize(extent, extent))
+        otherSpinBox.setEnabled(otherRadioButton.isChecked())
 
-    ___ changeIcon(self):
+    ___ changeIcon 
         icon _ QIcon()
 
-        for row in range(self.imagesTable.rowCount()):
-            item0 _ self.imagesTable.item(row, 0)
-            item1 _ self.imagesTable.item(row, 1)
-            item2 _ self.imagesTable.item(row, 2)
+        ___ row __ range(imagesTable.rowCount()):
+            item0 _ imagesTable.item(row, 0)
+            item1 _ imagesTable.item(row, 1)
+            item2 _ imagesTable.item(row, 2)
 
             __ item0.checkState() == __.Checked:
                 __ item1.t__() == "Normal":
@@ -293,15 +293,15 @@ c_ MainWindow ?MW..
                 __ no. image.isNull
                     icon.addPixmap(QPixmap.fromImage(image), mode, state)
 
-        self.previewArea.setIcon(icon)
+        previewArea.setIcon(icon)
 
-    ___ addImage(self):
+    ___ addImage 
         fileNames, _ _ ?FD...getOpenFileNames  "Open Images", '',
                 "Images (*.png *.xpm *.jpg);;All Files (*)")
 
-        for fileName in fileNames:
-            row _ self.imagesTable.rowCount()
-            self.imagesTable.setRowCount(row + 1)
+        ___ fileName __ fileNames:
+            row _ imagesTable.rowCount()
+            imagesTable.setRowCount(row + 1)
 
             imageName _ QFileInfo(fileName).baseName()
             item0 _ QTableWidgetItem(imageName)
@@ -311,150 +311,150 @@ c_ MainWindow ?MW..
             item1 _ QTableWidgetItem("Normal")
             item2 _ QTableWidgetItem("Off")
 
-            __ self.guessModeStateAct.isChecked
-                __ '_act' in fileName:
+            __ guessModeStateAct.isChecked
+                __ '_act' __ fileName:
                     item1.sT..("Active")
-                ____ '_dis' in fileName:
+                ____ '_dis' __ fileName:
                     item1.sT..("Disabled")
-                ____ '_sel' in fileName:
+                ____ '_sel' __ fileName:
                     item1.sT..("Selected")
 
-                __ '_on' in fileName:
+                __ '_on' __ fileName:
                     item2.sT..("On")
 
-            self.imagesTable.setItem(row, 0, item0)
-            self.imagesTable.setItem(row, 1, item1)
-            self.imagesTable.setItem(row, 2, item2)
-            self.imagesTable.openPersistentEditor(item1)
-            self.imagesTable.openPersistentEditor(item2)
+            imagesTable.setItem(row, 0, item0)
+            imagesTable.setItem(row, 1, item1)
+            imagesTable.setItem(row, 2, item2)
+            imagesTable.openPersistentEditor(item1)
+            imagesTable.openPersistentEditor(item2)
 
             item0.setCheckState(__.Checked)
 
-    ___ removeAllImages(self):
-        self.imagesTable.setRowCount(0)
-        self.changeIcon()
+    ___ removeAllImages 
+        imagesTable.setRowCount(0)
+        changeIcon()
 
-    ___ createPreviewGroupBox(self):
-        self.previewGroupBox _ QGroupBox("Preview")
+    ___ createPreviewGroupBox 
+        previewGroupBox _ QGroupBox("Preview")
 
-        self.previewArea _ IconPreviewArea()
-
-        layout _ ?VBL..
-        layout.aW..(self.previewArea)
-        self.previewGroupBox.sL..(layout)
-
-    ___ createImagesGroupBox(self):
-        self.imagesGroupBox _ QGroupBox("Images")
-
-        self.imagesTable _ QTableWidget()
-        self.imagesTable.setSelectionMode(QAbstractItemView.NoSelection)
-        self.imagesTable.setItemDelegate(ImageDelegate(self))
-
-        self.imagesTable.horizontalHeader().setDefaultSectionSize(90)
-        self.imagesTable.setColumnCount(3)
-        self.imagesTable.setHorizontalHeaderLabels(("Image", "Mode", "State"))
-        self.imagesTable.horizontalHeader().setSectionResizeMode(0, QHeaderView.Stretch)
-        self.imagesTable.horizontalHeader().setSectionResizeMode(1, QHeaderView.Fixed)
-        self.imagesTable.horizontalHeader().setSectionResizeMode(2, QHeaderView.Fixed)
-        self.imagesTable.verticalHeader().hide()
-
-        self.imagesTable.itemChanged.c..(self.changeIcon)
+        previewArea _ IconPreviewArea()
 
         layout _ ?VBL..
-        layout.aW..(self.imagesTable)
-        self.imagesGroupBox.sL..(layout)
+        layout.aW..(previewArea)
+        previewGroupBox.sL..(layout)
 
-    ___ createIconSizeGroupBox(self):
-        self.iconSizeGroupBox _ QGroupBox("Icon Size")
+    ___ createImagesGroupBox 
+        imagesGroupBox _ QGroupBox("Images")
 
-        self.smallRadioButton _ QRadioButton()
-        self.largeRadioButton _ QRadioButton()
-        self.toolBarRadioButton _ QRadioButton()
-        self.listViewRadioButton _ QRadioButton()
-        self.iconViewRadioButton _ QRadioButton()
-        self.tabBarRadioButton _ QRadioButton()
-        self.otherRadioButton _ QRadioButton("Other:")
+        imagesTable _ QTableWidget()
+        imagesTable.setSelectionMode(QAbstractItemView.NoSelection)
+        imagesTable.setItemDelegate(ImageDelegate(self))
 
-        self.otherSpinBox _ IconSizeSpinBox()
-        self.otherSpinBox.setRange(8, 128)
-        self.otherSpinBox.setValue(64)
+        imagesTable.horizontalHeader().setDefaultSectionSize(90)
+        imagesTable.setColumnCount(3)
+        imagesTable.setHorizontalHeaderLabels(("Image", "Mode", "State"))
+        imagesTable.horizontalHeader().setSectionResizeMode(0, QHeaderView.Stretch)
+        imagesTable.horizontalHeader().setSectionResizeMode(1, QHeaderView.Fixed)
+        imagesTable.horizontalHeader().setSectionResizeMode(2, QHeaderView.Fixed)
+        imagesTable.verticalHeader().hide()
 
-        self.smallRadioButton.toggled.c..(self.changeSize)
-        self.largeRadioButton.toggled.c..(self.changeSize)
-        self.toolBarRadioButton.toggled.c..(self.changeSize)
-        self.listViewRadioButton.toggled.c..(self.changeSize)
-        self.iconViewRadioButton.toggled.c..(self.changeSize)
-        self.tabBarRadioButton.toggled.c..(self.changeSize)
-        self.otherRadioButton.toggled.c..(self.changeSize)
-        self.otherSpinBox.valueChanged.c..(self.changeSize)
+        imagesTable.itemChanged.c..(changeIcon)
+
+        layout _ ?VBL..
+        layout.aW..(imagesTable)
+        imagesGroupBox.sL..(layout)
+
+    ___ createIconSizeGroupBox 
+        iconSizeGroupBox _ QGroupBox("Icon Size")
+
+        smallRadioButton _ QRadioButton()
+        largeRadioButton _ QRadioButton()
+        toolBarRadioButton _ QRadioButton()
+        listViewRadioButton _ QRadioButton()
+        iconViewRadioButton _ QRadioButton()
+        tabBarRadioButton _ QRadioButton()
+        otherRadioButton _ QRadioButton("Other:")
+
+        otherSpinBox _ IconSizeSpinBox()
+        otherSpinBox.setRange(8, 128)
+        otherSpinBox.setValue(64)
+
+        smallRadioButton.toggled.c..(changeSize)
+        largeRadioButton.toggled.c..(changeSize)
+        toolBarRadioButton.toggled.c..(changeSize)
+        listViewRadioButton.toggled.c..(changeSize)
+        iconViewRadioButton.toggled.c..(changeSize)
+        tabBarRadioButton.toggled.c..(changeSize)
+        otherRadioButton.toggled.c..(changeSize)
+        otherSpinBox.valueChanged.c..(changeSize)
 
         otherSizeLayout _ QHBoxLayout()
-        otherSizeLayout.aW..(self.otherRadioButton)
-        otherSizeLayout.aW..(self.otherSpinBox)
+        otherSizeLayout.aW..(otherRadioButton)
+        otherSizeLayout.aW..(otherSpinBox)
         otherSizeLayout.addStretch()
 
         layout _ QGridLayout()
-        layout.aW..(self.smallRadioButton, 0, 0)
-        layout.aW..(self.largeRadioButton, 1, 0)
-        layout.aW..(self.toolBarRadioButton, 2, 0)
-        layout.aW..(self.listViewRadioButton, 0, 1)
-        layout.aW..(self.iconViewRadioButton, 1, 1)
-        layout.aW..(self.tabBarRadioButton, 2, 1)
-        layout.addLayout(otherSizeLayout, 3, 0, 1, 2)
+        layout.aW..(smallRadioButton, 0, 0)
+        layout.aW..(largeRadioButton, 1, 0)
+        layout.aW..(toolBarRadioButton, 2, 0)
+        layout.aW..(listViewRadioButton, 0, 1)
+        layout.aW..(iconViewRadioButton, 1, 1)
+        layout.aW..(tabBarRadioButton, 2, 1)
+        layout.aL..(otherSizeLayout, 3, 0, 1, 2)
         layout.setRowStretch(4, 1)
-        self.iconSizeGroupBox.sL..(layout)
+        iconSizeGroupBox.sL..(layout)
 
-    ___ createActions(self):
-        self.addImagesAct _ ?A..("&Add Images...", self, shortcut_"Ctrl+A",
+    ___ createActions 
+        addImagesAct _ ?A..("&Add Images...", self, shortcut_"Ctrl+A",
                 triggered_self.addImage)
 
-        self.removeAllImagesAct _ ?A..("&Remove All Images", self,
+        removeAllImagesAct _ ?A..("&Remove All Images", self,
                 shortcut_"Ctrl+R", triggered_self.removeAllImages)
 
-        self.exitAct _ ?A..("&Quit", self, shortcut_"Ctrl+Q",
+        exitAct _ ?A..("&Quit", self, shortcut_"Ctrl+Q",
                 triggered_self.close)
 
-        self.styleActionGroup _ QActionGroup(self)
-        for styleName in QStyleFactory.keys
-            action _ ?A..(self.styleActionGroup,
+        styleActionGroup _ QActionGroup
+        ___ styleName __ QStyleFactory.keys
+            action _ ?A..(styleActionGroup,
                     text_"%s Style" % styleName, checkable_True,
                     triggered_self.changeStyle)
             action.setData(styleName)
 
-        self.guessModeStateAct _ ?A..("&Guess Image Mode/State", self,
+        guessModeStateAct _ ?A..("&Guess Image Mode/State", self,
                 checkable_True, checked_True)
 
-        self.aboutAct _ ?A..("&About", self, triggered_self.about)
+        aboutAct _ ?A..("&About", self, triggered_self.about)
 
-        self.aboutQtAct _ ?A..("About &Qt", self,
+        aboutQtAct _ ?A..("About &Qt", self,
                 triggered_QApplication.instance().aboutQt)
 
-    ___ createMenus(self):
-        self.fileMenu _ self.mB.. .aM..("&File")
-        self.fileMenu.aA..(self.addImagesAct)
-        self.fileMenu.aA..(self.removeAllImagesAct)
-        self.fileMenu.addSeparator()
-        self.fileMenu.aA..(self.exitAct)
+    ___ createMenus 
+        fileMenu _ mB.. .aM..("&File")
+        fileMenu.aA..(addImagesAct)
+        fileMenu.aA..(removeAllImagesAct)
+        fileMenu.addSeparator()
+        fileMenu.aA..(exitAct)
 
-        self.viewMenu _ self.mB.. .aM..("&View")
-        for action in self.styleActionGroup.actions
-            self.viewMenu.aA..(action)
-        self.viewMenu.addSeparator()
-        self.viewMenu.aA..(self.guessModeStateAct)
+        viewMenu _ mB.. .aM..("&View")
+        ___ action __ styleActionGroup.actions
+            viewMenu.aA..(action)
+        viewMenu.addSeparator()
+        viewMenu.aA..(guessModeStateAct)
 
-        self.mB.. .addSeparator()
+        mB.. .addSeparator()
 
-        self.helpMenu _ self.mB.. .aM..("&Help")
-        self.helpMenu.aA..(self.aboutAct)
-        self.helpMenu.aA..(self.aboutQtAct)
+        helpMenu _ mB.. .aM..("&Help")
+        helpMenu.aA..(aboutAct)
+        helpMenu.aA..(aboutQtAct)
 
-    ___ createContextMenu(self):
-        self.imagesTable.setContextMenuPolicy(__.ActionsContextMenu)
-        self.imagesTable.aA..(self.addImagesAct)
-        self.imagesTable.aA..(self.removeAllImagesAct)
+    ___ createContextMenu 
+        imagesTable.setContextMenuPolicy(__.ActionsContextMenu)
+        imagesTable.aA..(addImagesAct)
+        imagesTable.aA..(removeAllImagesAct)
 
-    ___ checkCurrentStyle(self):
-        for action in self.styleActionGroup.actions
+    ___ checkCurrentStyle 
+        ___ action __ styleActionGroup.actions
             styleName _ action.data()
             candidate _ QStyleFactory.create(styleName)
 
@@ -465,11 +465,11 @@ c_ MainWindow ?MW..
                 action.trigger()
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     mainWin _ MainWindow()
     mainWin.s..
     ___.exit(app.exec_())

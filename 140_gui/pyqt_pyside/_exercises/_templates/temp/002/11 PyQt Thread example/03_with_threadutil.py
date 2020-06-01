@@ -5,7 +5,7 @@ ____ th.. ______ Thread
 ____ threadutil ______ run_in_main_thread
 ____ time ______ sl..
 
-name _ in.. ("Please enter your name: ")
+name _ __.. ("Please enter your name: ")
 chat_url _ "https://build-system.fman.io/chat"
 server _ Session()
 

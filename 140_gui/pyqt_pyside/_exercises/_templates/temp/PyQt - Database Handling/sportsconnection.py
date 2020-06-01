@@ -28,8 +28,8 @@ ___ createDB
     r_ True
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
     ______ ___
 
-    app _ ?W...?A..(___.argv)
+    app _ ?W...?A..(___.a..
     createDB()

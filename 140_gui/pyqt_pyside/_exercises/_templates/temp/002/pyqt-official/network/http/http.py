@@ -50,65 +50,65 @@ ____ ?.QtNetwork ______ QNetworkAccessManager, QNetworkRequest
 
 
 c_ HttpWindow(QDialog):
-    ___ __init__  parent_None):
-        super(HttpWindow, self).__init__(parent)
+    ___  -   parent_None):
+        super(HttpWindow, self). - (parent)
 
-        self.url _ QUrl()
-        self.qnam _ QNetworkAccessManager()
-        self.reply _ N..
-        self.outFile _ N..
-        self.httpGetId _ 0
-        self.httpRequestAborted _ False
+        url _ QUrl()
+        qnam _ QNetworkAccessManager()
+        reply _ N..
+        outFile _ N..
+        httpGetId _ 0
+        httpRequestAborted _ False
 
-        self.urlLineEdit _ QLineEdit('https://www.qt.io')
+        urlLineEdit _ QLineEdit('https://www.qt.io')
 
         urlLabel _ QLabel("&URL:")
-        urlLabel.setBuddy(self.urlLineEdit)
-        self.statusLabel _ QLabel(
+        urlLabel.setBuddy(urlLineEdit)
+        statusLabel _ QLabel(
                 "Please enter the URL of a file you want to download.")
-        self.statusLabel.setWordWrap(True)
+        statusLabel.setWordWrap(True)
 
-        self.downloadButton _ ?PB..("Download")
-        self.downloadButton.setDefault(True)
-        self.quitButton _ ?PB..("Quit")
-        self.quitButton.setAutoDefault F..
+        downloadButton _ ?PB..("Download")
+        downloadButton.setDefault(True)
+        quitButton _ ?PB..("Quit")
+        quitButton.setAutoDefault F..
 
         buttonBox _ QDialogButtonBox()
-        buttonBox.addButton(self.downloadButton, QDialogButtonBox.ActionRole)
-        buttonBox.addButton(self.quitButton, QDialogButtonBox.RejectRole)
+        buttonBox.addButton(downloadButton, QDialogButtonBox.ActionRole)
+        buttonBox.addButton(quitButton, QDialogButtonBox.RejectRole)
 
-        self.progressDialog _ QProgressDialog(self)
+        progressDialog _ QProgressDialog
 
-        self.urlLineEdit.textChanged.c..(self.enableDownloadButton)
-        self.qnam.authenticationRequired.c..(
-                self.slotAuthenticationRequired)
-        self.qnam.sslErrors.c..(self.sslErrors)
-        self.progressDialog.canceled.c..(self.cancelDownload)
-        self.downloadButton.c__.c..(self.downloadFile)
-        self.quitButton.c__.c..(self.close)
+        urlLineEdit.textChanged.c..(enableDownloadButton)
+        qnam.authenticationRequired.c..(
+                slotAuthenticationRequired)
+        qnam.sslErrors.c..(sslErrors)
+        progressDialog.canceled.c..(cancelDownload)
+        downloadButton.c__.c..(downloadFile)
+        quitButton.c__.c..(close)
 
         topLayout _ QHBoxLayout()
         topLayout.aW..(urlLabel)
-        topLayout.aW..(self.urlLineEdit)
+        topLayout.aW..(urlLineEdit)
 
         mainLayout _ ?VBL..
-        mainLayout.addLayout(topLayout)
-        mainLayout.aW..(self.statusLabel)
+        mainLayout.aL..(topLayout)
+        mainLayout.aW..(statusLabel)
         mainLayout.aW..(buttonBox)
-        self.sL..(mainLayout)
+        sL..(mainLayout)
 
-        self.setWindowTitle("HTTP")
-        self.urlLineEdit.setFocus()
+        setWindowTitle("HTTP")
+        urlLineEdit.setFocus()
 
     ___ startRequest  url):
-        self.reply _ self.qnam.g..(QNetworkRequest(url))
-        self.reply.finished.c..(self.httpFinished)
-        self.reply.readyRead.c..(self.httpReadyRead)
-        self.reply.downloadProgress.c..(self.updateDataReadProgress)
+        reply _ qnam.g..(QNetworkRequest(url))
+        reply.finished.c..(httpFinished)
+        reply.readyRead.c..(httpReadyRead)
+        reply.downloadProgress.c..(updateDataReadProgress)
 
-    ___ downloadFile(self):
-        self.url _ QUrl(self.urlLineEdit.t__())
-        fileInfo _ QFileInfo(self.url.path())
+    ___ downloadFile 
+        url _ QUrl(urlLineEdit.t__())
+        fileInfo _ QFileInfo(url.path())
         fileName _ fileInfo.fileName()
 
         __ no. fileName:
@@ -125,88 +125,88 @@ c_ HttpWindow(QDialog):
 
             QFile.remove(fileName)
 
-        self.outFile _ QFile(fileName)
-        __ no. self.outFile.o..(QIODevice.WriteOnly):
+        outFile _ QFile(fileName)
+        __ no. outFile.o..(QIODevice.WriteOnly):
             ?MB...information  "HTTP",
-                    "Unable to save the file %s: %s." % (fileName, self.outFile.errorString()))
-            self.outFile _ N..
+                    "Unable to save the file %s: %s." % (fileName, outFile.errorString()))
+            outFile _ N..
             r_
 
-        self.progressDialog.setWindowTitle("HTTP")
-        self.progressDialog.setLabelText("Downloading %s." % fileName)
-        self.downloadButton.setEnabled F..
+        progressDialog.setWindowTitle("HTTP")
+        progressDialog.setLabelText("Downloading %s." % fileName)
+        downloadButton.setEnabled F..
 
-        self.httpRequestAborted _ False
-        self.startRequest(self.url)
+        httpRequestAborted _ False
+        startRequest(url)
 
-    ___ cancelDownload(self):
-        self.statusLabel.sT..("Download canceled.")
-        self.httpRequestAborted _ True
-        __ self.reply __ no. N..:
-            self.reply.abort()
-        self.downloadButton.setEnabled(True)
+    ___ cancelDownload 
+        statusLabel.sT..("Download canceled.")
+        httpRequestAborted _ True
+        __ reply __ no. N..:
+            reply.abort()
+        downloadButton.setEnabled(True)
 
-    ___ httpFinished(self):
-        __ self.httpRequestAborted:
-            __ self.outFile __ no. N..:
-                self.outFile.close()
-                self.outFile.remove()
-                self.outFile _ N..
+    ___ httpFinished 
+        __ httpRequestAborted:
+            __ outFile __ no. N..:
+                outFile.close()
+                outFile.remove()
+                outFile _ N..
 
-            self.reply.deleteLater()
-            self.reply _ N..
-            self.progressDialog.hide()
+            reply.deleteLater()
+            reply _ N..
+            progressDialog.hide()
             r_
 
-        self.progressDialog.hide()
-        self.outFile.flush()
-        self.outFile.close()
+        progressDialog.hide()
+        outFile.flush()
+        outFile.close()
 
-        redirectionTarget _ self.reply.attribute(QNetworkRequest.RedirectionTargetAttribute)
+        redirectionTarget _ reply.attribute(QNetworkRequest.RedirectionTargetAttribute)
 
-        __ self.reply.error
-            self.outFile.remove()
+        __ reply.error
+            outFile.remove()
             ?MB...information  "HTTP",
-                    "Download failed: %s." % self.reply.errorString())
-            self.downloadButton.setEnabled(True)
+                    "Download failed: %s." % reply.errorString())
+            downloadButton.setEnabled(True)
         ____ redirectionTarget __ no. N..:
-            newUrl _ self.url.resolved(redirectionTarget)
+            newUrl _ url.resolved(redirectionTarget)
 
             ret _ ?MB...q..  "HTTP",
                     "Redirect to %s?" % newUrl.toString(),
                     ?MB...Yes | ?MB...No)
 
             __ ret == ?MB...Yes:
-                self.url _ newUrl
-                self.reply.deleteLater()
-                self.reply _ N..
-                self.outFile.o..(QIODevice.WriteOnly)
-                self.outFile.resize(0)
-                self.startRequest(self.url)
+                url _ newUrl
+                reply.deleteLater()
+                reply _ N..
+                outFile.o..(QIODevice.WriteOnly)
+                outFile.resize(0)
+                startRequest(url)
                 r_
         ____
-            fileName _ QFileInfo(QUrl(self.urlLineEdit.t__()).path()).fileName()
-            self.statusLabel.sT..("Downloaded %s to %s." % (fileName, QDir.currentPath()))
+            fileName _ QFileInfo(QUrl(urlLineEdit.t__()).path()).fileName()
+            statusLabel.sT..("Downloaded %s to %s." % (fileName, QDir.currentPath()))
 
-            self.downloadButton.setEnabled(True)
+            downloadButton.setEnabled(True)
 
-        self.reply.deleteLater()
-        self.reply _ N..
-        self.outFile _ N..
+        reply.deleteLater()
+        reply _ N..
+        outFile _ N..
 
-    ___ httpReadyRead(self):
-        __ self.outFile __ no. N..:
-            self.outFile.w..(self.reply.readAll())
+    ___ httpReadyRead 
+        __ outFile __ no. N..:
+            outFile.w..(reply.readAll())
 
     ___ updateDataReadProgress  bytesRead, totalBytes):
-        __ self.httpRequestAborted:
+        __ httpRequestAborted:
             r_
 
-        self.progressDialog.setMaximum(totalBytes)
-        self.progressDialog.setValue(bytesRead)
+        progressDialog.setMaximum(totalBytes)
+        progressDialog.setValue(bytesRead)
 
-    ___ enableDownloadButton(self):
-        self.downloadButton.setEnabled(self.urlLineEdit.t__() !_ '')
+    ___ enableDownloadButton 
+        downloadButton.setEnabled(urlLineEdit.t__() !_ '')
 
     ___ slotAuthenticationRequired  authenticator):
         ______ os
@@ -215,31 +215,31 @@ c_ HttpWindow(QDialog):
         ui _ __.p__ .join(__.p__ .dirname(__file__), 'authenticationdialog.ui')
         dlg _ uic.loadUi(ui)
         dlg.adjustSize()
-        dlg.siteDescription.sT..("%s at %s" % (authenticator.realm(), self.url.host()))
+        dlg.siteDescription.sT..("%s at %s" % (authenticator.realm(), url.host()))
 
-        dlg.userEdit.sT..(self.url.userName())
-        dlg.passwordEdit.sT..(self.url.password())
+        dlg.userEdit.sT..(url.userName())
+        dlg.passwordEdit.sT..(url.password())
 
         __ dlg.e.. == QDialog.Accepted:
             authenticator.setUser(dlg.userEdit.t__())
             authenticator.setPassword(dlg.passwordEdit.t__())
 
     ___ sslErrors  reply, errors):
-        errorString _ ", ".join([str(error.errorString()) for error in errors])
+        errorString _ ", ".join([str(error.errorString()) ___ error __ errors])
 
         ret _ ?MB...warning  "HTTP Example",
                 "One or more SSL errors has occurred: %s" % errorString,
                 ?MB...Ignore | ?MB...Abort)
 
         __ ret == ?MB...Ignore:
-            self.reply.ignoreSslErrors()
+            reply.ignoreSslErrors()
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     httpWin _ HttpWindow()
     httpWin.s..
     ___.exit(httpWin.exec_())

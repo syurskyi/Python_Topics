@@ -55,132 +55,132 @@ ____ ?.?W.. ______ (QAbstractItemView, ?A.., ?A..,
 
 
 c_ MainWindow ?MW..
-    ___ __init__  parent_None):
-        super(MainWindow, self).__init__(parent)
+    ___  -   parent_None):
+        super(MainWindow, self). - (parent)
 
-        self.settingsTree _ SettingsTree()
-        self.sCW..(self.settingsTree)
+        settingsTree _ SettingsTree()
+        sCW..(settingsTree)
 
-        self.locationDialog _ N..
+        locationDialog _ N..
 
-        self.createActions()
-        self.createMenus()
+        createActions()
+        createMenus()
 
-        self.autoRefreshAct.setChecked(True)
-        self.fallbacksAct.setChecked(True)
+        autoRefreshAct.setChecked(True)
+        fallbacksAct.setChecked(True)
 
-        self.setWindowTitle("Settings Editor")
-        self.resize(500, 600)
+        setWindowTitle("Settings Editor")
+        resize(500, 600)
 
-    ___ openSettings(self):
-        __ self.locationDialog __ N..:
-            self.locationDialog _ LocationDialog(self)
+    ___ openSettings
+        __ locationDialog __ N..:
+            locationDialog _ LocationDialog
 
-        __ self.locationDialog.exec_
-            settings _ QSettings(self.locationDialog.format(),
-                                        self.locationDialog.scope(),
-                                        self.locationDialog.organization(),
-                                        self.locationDialog.application())
-            self.setSettingsObject(settings)
-            self.fallbacksAct.setEnabled(True)
+        __ locationDialog.exec_
+            settings _ QSettings(locationDialog.format(),
+                                        locationDialog.scope(),
+                                        locationDialog.organization(),
+                                        locationDialog.application())
+            setSettingsObject(settings)
+            fallbacksAct.setEnabled(True)
 
-    ___ openIniFile(self):
+    ___ openIniFile
         fileName, _ _ ?FD...gOFN..  "Open INI File", '',
                 "INI Files (*.ini *.conf)")
 
         __ fileName:
             settings _ QSettings(fileName, QSettings.IniFormat)
-            self.setSettingsObject(settings)
-            self.fallbacksAct.setEnabled F..
+            setSettingsObject(settings)
+            fallbacksAct.setEnabled F..
 
-    ___ openPropertyList(self):
+    ___ openPropertyList
         fileName, _ _ ?FD...gOFN..  "Open Property List",
                 '', "Property List Files (*.plist)")
 
         __ fileName:
             settings _ QSettings(fileName, QSettings.NativeFormat)
-            self.setSettingsObject(settings)
-            self.fallbacksAct.setEnabled F..
+            setSettingsObject(settings)
+            fallbacksAct.setEnabled F..
 
-    ___ openRegistryPath(self):
+    ___ openRegistryPath
         path, ok _ QInputDialog.getText  "Open Registry Path",
                 "Enter the path in the Windows registry:", QLineEdit.Normal,
                 'HKEY_CURRENT_USER\\')
 
         __ ok and path !_ '':
             settings _ QSettings(path, QSettings.NativeFormat)
-            self.setSettingsObject(settings)
-            self.fallbacksAct.setEnabled F..
+            setSettingsObject(settings)
+            fallbacksAct.setEnabled F..
 
-    ___ about(self):
+    ___ about
         ?MB...about  "About Settings Editor",
                 "The <b>Settings Editor</b> example shows how to access "
                 "application settings using Qt.")
 
-    ___ createActions(self):
-        self.openSettingsAct _ ?A..("&Open Application Settings...", self,
+    ___ createActions
+        openSettingsAct _ ?A..("&Open Application Settings...", self,
                 shortcut_"Ctrl+O", triggered_self.openSettings)
 
-        self.openIniFileAct _ ?A..("Open I&NI File...", self,
+        openIniFileAct _ ?A..("Open I&NI File...", self,
                 shortcut_"Ctrl+N", triggered_self.openIniFile)
 
-        self.openPropertyListAct _ ?A..("Open Mac &Property List...", self,
+        openPropertyListAct _ ?A..("Open Mac &Property List...", self,
                 shortcut_"Ctrl+P", triggered_self.openPropertyList)
         __ ___.platform !_ 'darwin':
-            self.openPropertyListAct.setEnabled F..
+            openPropertyListAct.setEnabled F..
 
-        self.openRegistryPathAct _ ?A..("Open Windows &Registry Path...",
+        openRegistryPathAct _ ?A..("Open Windows &Registry Path...",
                 self, shortcut_"Ctrl+G", triggered_self.openRegistryPath)
         __ ___.platform !_ 'win32':
-            self.openRegistryPathAct.setEnabled F..
+            openRegistryPathAct.setEnabled F..
 
-        self.refreshAct _ ?A..("&Refresh", self, shortcut_"Ctrl+R",
+        refreshAct _ ?A..("&Refresh", self, shortcut_"Ctrl+R",
                 enabled_False, triggered_self.settingsTree.refresh)
 
-        self.exitAct _ ?A..("E&xit", self, shortcut_"Ctrl+Q",
+        exitAct _ ?A..("E&xit", self, shortcut_"Ctrl+Q",
                 triggered_self.close)
 
-        self.autoRefreshAct _ ?A..("&Auto-Refresh", self, shortcut_"Ctrl+A",
+        autoRefreshAct _ ?A..("&Auto-Refresh", self, shortcut_"Ctrl+A",
                 checkable_True, enabled_False)
-        self.autoRefreshAct.t__.c..(self.settingsTree.setAutoRefresh)
-        self.autoRefreshAct.t__.c..(self.refreshAct.setDisabled)
+        autoRefreshAct.t__.c..(settingsTree.setAutoRefresh)
+        autoRefreshAct.t__.c..(refreshAct.setDisabled)
 
-        self.fallbacksAct _ ?A..("&Fallbacks", self, shortcut_"Ctrl+F",
+        fallbacksAct _ ?A..("&Fallbacks", self, shortcut_"Ctrl+F",
                 checkable_True, enabled_False,
                 triggered_self.settingsTree.setFallbacksEnabled)
 
-        self.aboutAct _ ?A..("&About", self, triggered_self.about)
+        aboutAct _ ?A..("&About", self, triggered_self.about)
 
-        self.aboutQtAct _ ?A..("About &Qt", self,
+        aboutQtAct _ ?A..("About &Qt", self,
                 triggered_QApplication.instance().aboutQt)
 
-    ___ createMenus(self):
-        self.fileMenu _ self.mB.. .aM..("&File")
-        self.fileMenu.aA..(self.openSettingsAct)
-        self.fileMenu.aA..(self.openIniFileAct)
-        self.fileMenu.aA..(self.openPropertyListAct)
-        self.fileMenu.aA..(self.openRegistryPathAct)
-        self.fileMenu.addSeparator()
-        self.fileMenu.aA..(self.refreshAct)
-        self.fileMenu.addSeparator()
-        self.fileMenu.aA..(self.exitAct)
+    ___ createMenus
+        fileMenu _ mB.. .aM..("&File")
+        fileMenu.aA..(openSettingsAct)
+        fileMenu.aA..(openIniFileAct)
+        fileMenu.aA..(openPropertyListAct)
+        fileMenu.aA..(openRegistryPathAct)
+        fileMenu.addSeparator()
+        fileMenu.aA..(refreshAct)
+        fileMenu.addSeparator()
+        fileMenu.aA..(exitAct)
 
-        self.optionsMenu _ self.mB.. .aM..("&Options")
-        self.optionsMenu.aA..(self.autoRefreshAct)
-        self.optionsMenu.aA..(self.fallbacksAct)
+        optionsMenu _ mB.. .aM..("&Options")
+        optionsMenu.aA..(autoRefreshAct)
+        optionsMenu.aA..(fallbacksAct)
 
-        self.mB.. .addSeparator()
+        mB.. .addSeparator()
 
-        self.helpMenu _ self.mB.. .aM..("&Help")
-        self.helpMenu.aA..(self.aboutAct)
-        self.helpMenu.aA..(self.aboutQtAct)
+        helpMenu _ mB.. .aM..("&Help")
+        helpMenu.aA..(aboutAct)
+        helpMenu.aA..(aboutQtAct)
 
     ___ setSettingsObject  settings):
-        settings.setFallbacksEnabled(self.fallbacksAct.isChecked())
-        self.settingsTree.setSettingsObject(settings)
+        settings.setFallbacksEnabled(fallbacksAct.isChecked())
+        settingsTree.setSettingsObject(settings)
 
-        self.refreshAct.setEnabled(True)
-        self.autoRefreshAct.setEnabled(True)
+        refreshAct.setEnabled(True)
+        autoRefreshAct.setEnabled(True)
 
         niceName _ settings.fileName()
         niceName.replace('\\', '/')
@@ -189,136 +189,136 @@ c_ MainWindow ?MW..
         __ no. settings.isWritable
             niceName +_ " (read only)"
 
-        self.setWindowTitle("%s - Settings Editor" % niceName)
+        setWindowTitle("%s - Settings Editor" % niceName)
 
 
 c_ LocationDialog(QDialog):
-    ___ __init__  parent_None):
-        super(LocationDialog, self).__init__(parent)
+    ___  -   parent_None):
+        super(LocationDialog, self). - (parent)
 
-        self.formatComboBox _ QComboBox()
-        self.formatComboBox.addItem("Native")
-        self.formatComboBox.addItem("INI")
+        formatComboBox _ QComboBox()
+        formatComboBox.addItem("Native")
+        formatComboBox.addItem("INI")
 
-        self.scopeComboBox _ QComboBox()
-        self.scopeComboBox.addItem("User")
-        self.scopeComboBox.addItem("System")
+        scopeComboBox _ QComboBox()
+        scopeComboBox.addItem("User")
+        scopeComboBox.addItem("System")
 
-        self.organizationComboBox _ QComboBox()
-        self.organizationComboBox.addItem("Trolltech")
-        self.organizationComboBox.setEditable(True)
+        organizationComboBox _ QComboBox()
+        organizationComboBox.addItem("Trolltech")
+        organizationComboBox.setEditable(True)
 
-        self.applicationComboBox _ QComboBox()
-        self.applicationComboBox.addItem("Any")
-        self.applicationComboBox.addItem("Application Example")
-        self.applicationComboBox.addItem("Assistant")
-        self.applicationComboBox.addItem("Designer")
-        self.applicationComboBox.addItem("Linguist")
-        self.applicationComboBox.setEditable(True)
-        self.applicationComboBox.setCurrentIndex(3)
+        applicationComboBox _ QComboBox()
+        applicationComboBox.addItem("Any")
+        applicationComboBox.addItem("Application Example")
+        applicationComboBox.addItem("Assistant")
+        applicationComboBox.addItem("Designer")
+        applicationComboBox.addItem("Linguist")
+        applicationComboBox.setEditable(True)
+        applicationComboBox.setCurrentIndex(3)
 
         formatLabel _ QLabel("&Format:")
-        formatLabel.setBuddy(self.formatComboBox)
+        formatLabel.setBuddy(formatComboBox)
 
         scopeLabel _ QLabel("&Scope:")
-        scopeLabel.setBuddy(self.scopeComboBox)
+        scopeLabel.setBuddy(scopeComboBox)
 
         organizationLabel _ QLabel("&Organization:")
-        organizationLabel.setBuddy(self.organizationComboBox)
+        organizationLabel.setBuddy(organizationComboBox)
 
         applicationLabel _ QLabel("&Application:")
-        applicationLabel.setBuddy(self.applicationComboBox)
+        applicationLabel.setBuddy(applicationComboBox)
 
-        self.locationsGroupBox _ QGroupBox("Setting Locations")
+        locationsGroupBox _ QGroupBox("Setting Locations")
 
-        self.locationsTable _ QTableWidget()
-        self.locationsTable.setSelectionMode(QAbstractItemView.SingleSelection)
-        self.locationsTable.setSelectionBehavior(QAbstractItemView.SelectRows)
-        self.locationsTable.setEditTriggers(QAbstractItemView.NoEditTriggers)
-        self.locationsTable.setColumnCount(2)
-        self.locationsTable.setHorizontalHeaderLabels(("Location", "Access"))
-        self.locationsTable.horizontalHeader().setSectionResizeMode(0, QHeaderView.Stretch)
-        self.locationsTable.horizontalHeader().resizeSection(1, 180)
+        locationsTable _ QTableWidget()
+        locationsTable.setSelectionMode(QAbstractItemView.SingleSelection)
+        locationsTable.setSelectionBehavior(QAbstractItemView.SelectRows)
+        locationsTable.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        locationsTable.setColumnCount(2)
+        locationsTable.setHorizontalHeaderLabels(("Location", "Access"))
+        locationsTable.horizontalHeader().setSectionResizeMode(0, QHeaderView.Stretch)
+        locationsTable.horizontalHeader().resizeSection(1, 180)
 
-        self.buttonBox _ QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
+        buttonBox _ QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
 
-        self.formatComboBox.activated.c..(self.updateLocationsTable)
-        self.scopeComboBox.activated.c..(self.updateLocationsTable)
-        self.organizationComboBox.lineEdit().editingFinished.c..(self.updateLocationsTable)
-        self.applicationComboBox.lineEdit().editingFinished.c..(self.updateLocationsTable)
-        self.buttonBox.accepted.c..(self.accept)
-        self.buttonBox.rejected.c..(self.reject)
+        formatComboBox.activated.c..(updateLocationsTable)
+        scopeComboBox.activated.c..(updateLocationsTable)
+        organizationComboBox.lineEdit().editingFinished.c..(updateLocationsTable)
+        applicationComboBox.lineEdit().editingFinished.c..(updateLocationsTable)
+        buttonBox.accepted.c..(accept)
+        buttonBox.rejected.c..(reject)
 
         locationsLayout _ ?VBL..
-        locationsLayout.aW..(self.locationsTable)
-        self.locationsGroupBox.sL..(locationsLayout)
+        locationsLayout.aW..(locationsTable)
+        locationsGroupBox.sL..(locationsLayout)
 
         mainLayout _ QGridLayout()
         mainLayout.aW..(formatLabel, 0, 0)
-        mainLayout.aW..(self.formatComboBox, 0, 1)
+        mainLayout.aW..(formatComboBox, 0, 1)
         mainLayout.aW..(scopeLabel, 1, 0)
-        mainLayout.aW..(self.scopeComboBox, 1, 1)
+        mainLayout.aW..(scopeComboBox, 1, 1)
         mainLayout.aW..(organizationLabel, 2, 0)
-        mainLayout.aW..(self.organizationComboBox, 2, 1)
+        mainLayout.aW..(organizationComboBox, 2, 1)
         mainLayout.aW..(applicationLabel, 3, 0)
-        mainLayout.aW..(self.applicationComboBox, 3, 1)
-        mainLayout.aW..(self.locationsGroupBox, 4, 0, 1, 2)
-        mainLayout.aW..(self.buttonBox, 5, 0, 1, 2)
-        self.sL..(mainLayout)
+        mainLayout.aW..(applicationComboBox, 3, 1)
+        mainLayout.aW..(locationsGroupBox, 4, 0, 1, 2)
+        mainLayout.aW..(buttonBox, 5, 0, 1, 2)
+        sL..(mainLayout)
 
-        self.updateLocationsTable()
+        updateLocationsTable()
 
-        self.setWindowTitle("Open Application Settings")
-        self.resize(650, 400)
+        setWindowTitle("Open Application Settings")
+        resize(650, 400)
 
-    ___ format(self):
-        __ self.formatComboBox.currentIndex() == 0:
+    ___ format
+        __ formatComboBox.currentIndex() == 0:
             r_ QSettings.NativeFormat
         ____
             r_ QSettings.IniFormat
 
-    ___ scope(self):
-        __ self.scopeComboBox.currentIndex() == 0:
+    ___ scope
+        __ scopeComboBox.currentIndex() == 0:
             r_ QSettings.UserScope
         ____
             r_ QSettings.SystemScope
 
-    ___ organization(self):
-        r_ self.organizationComboBox.currentText()
+    ___ organization
+        r_ organizationComboBox.currentText()
 
-    ___ application(self):
-        __ self.applicationComboBox.currentText() == "Any":
+    ___ application
+        __ applicationComboBox.currentText() == "Any":
             r_ ''
 
-        r_ self.applicationComboBox.currentText()
+        r_ applicationComboBox.currentText()
 
-    ___ updateLocationsTable(self):
-        self.locationsTable.setUpdatesEnabled F..
-        self.locationsTable.setRowCount(0)
+    ___ updateLocationsTable
+        locationsTable.setUpdatesEnabled F..
+        locationsTable.setRowCount(0)
 
-        for i in range(2):
+        ___ i __ range(2):
             __ i == 0:
-                __ self.scope() == QSettings.SystemScope:
+                __ scope() == QSettings.SystemScope:
                     continue
 
                 actualScope _ QSettings.UserScope
             ____
                 actualScope _ QSettings.SystemScope
 
-            for j in range(2):
+            ___ j __ range(2):
                 __ j == 0:
-                    __ no. self.application
+                    __ no. application
                         continue
 
-                    actualApplication _ self.application()
+                    actualApplication _ application()
                 ____
                     actualApplication _ ''
 
-                settings _ QSettings(self.format(), actualScope,
-                        self.organization(), actualApplication)
+                settings _ QSettings(format(), actualScope,
+                        organization(), actualApplication)
 
-                row _ self.locationsTable.rowCount()
-                self.locationsTable.setRowCount(row + 1)
+                row _ locationsTable.rowCount()
+                locationsTable.setRowCount(row + 1)
 
                 item0 _ QTableWidgetItem()
                 item0.sT..(settings.fileName())
@@ -332,7 +332,7 @@ c_ LocationDialog(QDialog):
                         disable _ False
                     ____
                         item1.sT..("Read-only")
-                    self.buttonBox.button(QDialogButtonBox.Ok).setDisabled(disable)
+                    buttonBox.button(QDialogButtonBox.Ok).setDisabled(disable)
                 ____
                     item1.sT..("Read-only fallback")
 
@@ -340,90 +340,90 @@ c_ LocationDialog(QDialog):
                     item0.setFlags(item0.flags() & ~__.ItemIsEnabled)
                     item1.setFlags(item1.flags() & ~__.ItemIsEnabled)
 
-                self.locationsTable.setItem(row, 0, item0)
-                self.locationsTable.setItem(row, 1, item1)
+                locationsTable.setItem(row, 0, item0)
+                locationsTable.setItem(row, 1, item1)
 
-        self.locationsTable.setUpdatesEnabled(True)
+        locationsTable.setUpdatesEnabled(True)
 
 
 c_ SettingsTree(QTreeWidget):
-    ___ __init__  parent_None):
-        super(SettingsTree, self).__init__(parent)
+    ___  -   parent_None):
+        super(SettingsTree, self). - (parent)
 
-        self.setItemDelegate(VariantDelegate(self))
+        setItemDelegate(VariantDelegate(self))
 
-        self.setHeaderLabels(("Setting", "Type", "Value"))
-        self.header().setSectionResizeMode(0, QHeaderView.Stretch)
-        self.header().setSectionResizeMode(2, QHeaderView.Stretch)
+        setHeaderLabels(("Setting", "Type", "Value"))
+        header().setSectionResizeMode(0, QHeaderView.Stretch)
+        header().setSectionResizeMode(2, QHeaderView.Stretch)
 
-        self.settings _ N..
-        self.refreshTimer _ ?T..
-        self.refreshTimer.setInterval(2000)
-        self.autoRefresh _ False
+        settings _ N..
+        refreshTimer _ ?T..
+        refreshTimer.setInterval(2000)
+        autoRefresh _ False
 
-        self.groupIcon _ QIcon()
-        self.groupIcon.addPixmap(self.style().standardPixmap(QStyle.SP_DirClosedIcon),
+        groupIcon _ QIcon()
+        groupIcon.addPixmap(style().standardPixmap(QStyle.SP_DirClosedIcon),
                 QIcon.Normal, QIcon.Off)
-        self.groupIcon.addPixmap(self.style().standardPixmap(QStyle.SP_DirOpenIcon),
+        groupIcon.addPixmap(style().standardPixmap(QStyle.SP_DirOpenIcon),
                 QIcon.Normal, QIcon.On)
-        self.keyIcon _ QIcon()
-        self.keyIcon.addPixmap(self.style().standardPixmap(QStyle.SP_FileIcon))
+        keyIcon _ QIcon()
+        keyIcon.addPixmap(style().standardPixmap(QStyle.SP_FileIcon))
 
-        self.refreshTimer.timeout.c..(self.maybeRefresh)
+        refreshTimer.timeout.c..(maybeRefresh)
 
     ___ setSettingsObject  settings):
-        self.settings _ settings
-        self.clear()
+        settings _ settings
+        clear()
 
-        __ self.settings __ no. N..:
-            self.settings.setParent(self)
-            self.refresh()
-            __ self.autoRefresh:
-                self.refreshTimer.start()
+        __ settings __ no. N..:
+            settings.setParent
+            refresh()
+            __ autoRefresh:
+                refreshTimer.start()
         ____
-            self.refreshTimer.stop()
+            refreshTimer.stop()
 
-    ___ sizeHint(self):
+    ___ sizeHint
         r_ QSize(800, 600)
 
     ___ setAutoRefresh  autoRefresh):
-        self.autoRefresh _ autoRefresh
+        autoRefresh _ autoRefresh
 
-        __ self.settings __ no. N..:
-            __ self.autoRefresh:
-                self.maybeRefresh()
-                self.refreshTimer.start()
+        __ settings __ no. N..:
+            __ autoRefresh:
+                maybeRefresh()
+                refreshTimer.start()
             ____
-                self.refreshTimer.stop()
+                refreshTimer.stop()
 
     ___ setFallbacksEnabled  enabled):
-        __ self.settings __ no. N..:
-            self.settings.setFallbacksEnabled(enabled)
-            self.refresh()
+        __ settings __ no. N..:
+            settings.setFallbacksEnabled(enabled)
+            refresh()
 
-    ___ maybeRefresh(self):
-        __ self.state() !_ QAbstractItemView.EditingState:
-            self.refresh()
+    ___ maybeRefresh
+        __ state() !_ QAbstractItemView.EditingState:
+            refresh()
 
-    ___ refresh(self):
-        __ self.settings __ N..:
+    ___ refresh
+        __ settings __ N..:
             r_
 
         # The signal might not be connected.
         try:
-            self.itemChanged.disconnect(self.updateSetting)
+            itemChanged.disconnect(updateSetting)
         except:
             pass
 
-        self.settings.sync()
-        self.updateChildItems(N..)
+        settings.sync()
+        updateChildItems(N..)
 
-        self.itemChanged.c..(self.updateSetting)
+        itemChanged.c..(updateSetting)
 
     ___ event  event):
         __ event.type() == QEvent.WindowActivate:
-            __ self.isActiveWindow() and self.autoRefresh:
-                self.maybeRefresh()
+            __ isActiveWindow() and autoRefresh:
+                maybeRefresh()
 
         r_ super(SettingsTree, self).event(event)
 
@@ -436,48 +436,48 @@ c_ SettingsTree(QTreeWidget):
             ancestor _ ancestor.parent()
 
         d _ item.data(2, __.UserRole)
-        self.settings.setValue(key, item.data(2, __.UserRole))
+        settings.setValue(key, item.data(2, __.UserRole))
 
-        __ self.autoRefresh:
-            self.refresh()
+        __ autoRefresh:
+            refresh()
 
     ___ updateChildItems  parent):
         dividerIndex _ 0
 
-        for group in self.settings.childGroups
-            childIndex _ self.findChild(parent, group, dividerIndex)
+        ___ group __ settings.childGroups
+            childIndex _ findChild(parent, group, dividerIndex)
             __ childIndex !_ -1:
-                child _ self.childAt(parent, childIndex)
+                child _ childAt(parent, childIndex)
                 child.sT..(1, '')
                 child.sT..(2, '')
                 child.setData(2, __.UserRole, N..)
-                self.moveItemForward(parent, childIndex, dividerIndex)
+                moveItemForward(parent, childIndex, dividerIndex)
             ____
-                child _ self.createItem(group, parent, dividerIndex)
+                child _ createItem(group, parent, dividerIndex)
 
-            child.setIcon(0, self.groupIcon)
+            child.setIcon(0, groupIcon)
             dividerIndex +_ 1
 
-            self.settings.beginGroup(group)
-            self.updateChildItems(child)
-            self.settings.endGroup()
+            settings.beginGroup(group)
+            updateChildItems(child)
+            settings.endGroup()
 
-        for key in self.settings.childKeys
-            childIndex _ self.findChild(parent, key, 0)
+        ___ key __ settings.childKeys
+            childIndex _ findChild(parent, key, 0)
             __ childIndex == -1 or childIndex >_ dividerIndex:
                 __ childIndex !_ -1:
-                    child _ self.childAt(parent, childIndex)
-                    for i in range(child.childCount()):
-                        self.deleteItem(child, i)
-                    self.moveItemForward(parent, childIndex, dividerIndex)
+                    child _ childAt(parent, childIndex)
+                    ___ i __ range(child.childCount()):
+                        deleteItem(child, i)
+                    moveItemForward(parent, childIndex, dividerIndex)
                 ____
-                    child _ self.createItem(key, parent, dividerIndex)
-                child.setIcon(0, self.keyIcon)
+                    child _ createItem(key, parent, dividerIndex)
+                child.setIcon(0, keyIcon)
                 dividerIndex +_ 1
             ____
-                child _ self.childAt(parent, childIndex)
+                child _ childAt(parent, childIndex)
 
-            value _ self.settings.value(key)
+            value _ settings.value(key)
             __ value __ N..:
                 child.sT..(1, 'Invalid')
             ____
@@ -485,14 +485,14 @@ c_ SettingsTree(QTreeWidget):
             child.sT..(2, VariantDelegate.displayText(value))
             child.setData(2, __.UserRole, value)
 
-        w__ dividerIndex < self.childCount(parent):
-            self.deleteItem(parent, dividerIndex)
+        w__ dividerIndex < childCount(parent):
+            deleteItem(parent, dividerIndex)
 
     ___ createItem  t__, parent, index):
         after _ N..
 
         __ index !_ 0:
-            after _ self.childAt(parent, index - 1)
+            after _ childAt(parent, index - 1)
 
         __ parent __ no. N..:
             item _ QTreeWidgetItem(parent, after)
@@ -507,79 +507,79 @@ c_ SettingsTree(QTreeWidget):
         __ parent __ no. N..:
             item _ parent.takeChild(index)
         ____
-            item _ self.takeTopLevelItem(index)
+            item _ takeTopLevelItem(index)
         del item
 
     ___ childAt  parent, index):
         __ parent __ no. N..:
             r_ parent.child(index)
         ____
-            r_ self.topLevelItem(index)
+            r_ topLevelItem(index)
 
     ___ childCount  parent):
         __ parent __ no. N..:
             r_ parent.childCount()
         ____
-            r_ self.topLevelItemCount()
+            r_ topLevelItemCount()
 
     ___ findChild  parent, t__, startIndex):
-        for i in range(self.childCount(parent)):
-            __ self.childAt(parent, i).t__(0) == t__:
+        ___ i __ range(childCount(parent)):
+            __ childAt(parent, i).t__(0) == t__:
                 r_ i
         r_ -1
 
     ___ moveItemForward  parent, oldIndex, newIndex):
-        for int in range(oldIndex - newIndex):
-            self.deleteItem(parent, newIndex)
+        ___ int __ range(oldIndex - newIndex):
+            deleteItem(parent, newIndex)
 
 
 c_ VariantDelegate(QItemDelegate):
-    ___ __init__  parent_None):
-        super(VariantDelegate, self).__init__(parent)
+    ___  -   parent_None):
+        super(VariantDelegate, self). - (parent)
 
-        self.boolExp _ QRegExp()
-        self.boolExp.setPattern('true|false')
-        self.boolExp.setCaseSensitivity(__.CaseInsensitive)
+        boolExp _ QRegExp()
+        boolExp.setPattern('true|false')
+        boolExp.setCaseSensitivity(__.CaseInsensitive)
 
-        self.byteArrayExp _ QRegExp()
-        self.byteArrayExp.setPattern('[\\x00-\\xff]*')
+        byteArrayExp _ QRegExp()
+        byteArrayExp.setPattern('[\\x00-\\xff]*')
 
-        self.charExp _ QRegExp()
-        self.charExp.setPattern('.')
+        charExp _ QRegExp()
+        charExp.setPattern('.')
 
-        self.colorExp _ QRegExp()
-        self.colorExp.setPattern('\\(([0-9]*),([0-9]*),([0-9]*),([0-9]*)\\)')
+        colorExp _ QRegExp()
+        colorExp.setPattern('\\(([0-9]*),([0-9]*),([0-9]*),([0-9]*)\\)')
 
-        self.doubleExp _ QRegExp()
-        self.doubleExp.setPattern('')
+        doubleExp _ QRegExp()
+        doubleExp.setPattern('')
 
-        self.pointExp _ QRegExp()
-        self.pointExp.setPattern('\\((-?[0-9]*),(-?[0-9]*)\\)')
+        pointExp _ QRegExp()
+        pointExp.setPattern('\\((-?[0-9]*),(-?[0-9]*)\\)')
 
-        self.rectExp _ QRegExp()
-        self.rectExp.setPattern('\\((-?[0-9]*),(-?[0-9]*),(-?[0-9]*),(-?[0-9]*)\\)')
+        rectExp _ QRegExp()
+        rectExp.setPattern('\\((-?[0-9]*),(-?[0-9]*),(-?[0-9]*),(-?[0-9]*)\\)')
 
-        self.signedIntegerExp _ QRegExp()
-        self.signedIntegerExp.setPattern('-?[0-9]*')
+        signedIntegerExp _ QRegExp()
+        signedIntegerExp.setPattern('-?[0-9]*')
 
-        self.sizeExp _ QRegExp(self.pointExp)
+        sizeExp _ QRegExp(pointExp)
 
-        self.unsignedIntegerExp _ QRegExp()
-        self.unsignedIntegerExp.setPattern('[0-9]*')
+        unsignedIntegerExp _ QRegExp()
+        unsignedIntegerExp.setPattern('[0-9]*')
 
-        self.dateExp _ QRegExp()
-        self.dateExp.setPattern('([0-9]{,4})-([0-9]{,2})-([0-9]{,2})')
+        dateExp _ QRegExp()
+        dateExp.setPattern('([0-9]{,4})-([0-9]{,2})-([0-9]{,2})')
 
-        self.timeExp _ QRegExp()
-        self.timeExp.setPattern('([0-9]{,2}):([0-9]{,2}):([0-9]{,2})')
+        timeExp _ QRegExp()
+        timeExp.setPattern('([0-9]{,2}):([0-9]{,2}):([0-9]{,2})')
 
-        self.dateTimeExp _ QRegExp()
-        self.dateTimeExp.setPattern(self.dateExp.pattern() + 'T' + self.timeExp.pattern())
+        dateTimeExp _ QRegExp()
+        dateTimeExp.setPattern(dateExp.pattern() + 'T' + timeExp.pattern())
 
     ___ paint  painter, option, index):
         __ index.column() == 2:
             value _ index.model().data(index, __.UserRole)
-            __ no. self.isSupportedType(value):
+            __ no. isSupportedType(value):
                 myOption _ QStyleOptionViewItem(option)
                 myOption.state &_ ~QStyle.State_Enabled
                 super(VariantDelegate, self).paint(painter, myOption, index)
@@ -592,34 +592,34 @@ c_ VariantDelegate(QItemDelegate):
             r_ N..
 
         originalValue _ index.model().data(index, __.UserRole)
-        __ no. self.isSupportedType(originalValue):
+        __ no. isSupportedType(originalValue):
             r_ N..
 
         lineEdit _ QLineEdit(parent)
         lineEdit.setFrame F..
 
         __ isinstance(originalValue, bool):
-            regExp _ self.boolExp
+            regExp _ boolExp
         ____ isinstance(originalValue, float):
-            regExp _ self.doubleExp
+            regExp _ doubleExp
         ____ isinstance(originalValue, int):
-            regExp _ self.signedIntegerExp
+            regExp _ signedIntegerExp
         ____ isinstance(originalValue, QByteArray):
-            regExp _ self.byteArrayExp
+            regExp _ byteArrayExp
         ____ isinstance(originalValue, ?C..):
-            regExp _ self.colorExp
+            regExp _ colorExp
         ____ isinstance(originalValue, QDate):
-            regExp _ self.dateExp
+            regExp _ dateExp
         ____ isinstance(originalValue, QDateTime):
-            regExp _ self.dateTimeExp
+            regExp _ dateTimeExp
         ____ isinstance(originalValue, QTime):
-            regExp _ self.timeExp
+            regExp _ timeExp
         ____ isinstance(originalValue, QPoint):
-            regExp _ self.pointExp
+            regExp _ pointExp
         ____ isinstance(originalValue, QRect):
-            regExp _ self.rectExp
+            regExp _ rectExp
         ____ isinstance(originalValue, QSize):
-            regExp _ self.sizeExp
+            regExp _ sizeExp
         ____
             regExp _ QRegExp()
 
@@ -632,7 +632,7 @@ c_ VariantDelegate(QItemDelegate):
     ___ setEditorData  editor, index):
         value _ index.model().data(index, __.UserRole)
         __ editor __ no. N..:
-            editor.sT..(self.displayText(value))
+            editor.sT..(displayText(value))
 
     ___ setModelData  editor, model, index):
         __ no. editor.iM..
@@ -648,11 +648,11 @@ c_ VariantDelegate(QItemDelegate):
         originalValue _ index.model().data(index, __.UserRole)
 
         __ isinstance(originalValue, ?C..):
-            self.colorExp.exactMatch(t__)
-            value _ ?C..(min(int(self.colorExp.cap(1)), 255),
-                           min(int(self.colorExp.cap(2)), 255),
-                           min(int(self.colorExp.cap(3)), 255),
-                           min(int(self.colorExp.cap(4)), 255))
+            colorExp.exactMatch(t__)
+            value _ ?C..(min(int(colorExp.cap(1)), 255),
+                           min(int(colorExp.cap(2)), 255),
+                           min(int(colorExp.cap(3)), 255),
+                           min(int(colorExp.cap(4)), 255))
         ____ isinstance(originalValue, QDate):
             value _ QDate.fromString(t__, __.ISODate)
             __ no. value.isValid
@@ -666,25 +666,25 @@ c_ VariantDelegate(QItemDelegate):
             __ no. value.isValid
                 r_
         ____ isinstance(originalValue, QPoint):
-            self.pointExp.exactMatch(t__)
-            value _ QPoint(int(self.pointExp.cap(1)),
-                           int(self.pointExp.cap(2)))
+            pointExp.exactMatch(t__)
+            value _ QPoint(int(pointExp.cap(1)),
+                           int(pointExp.cap(2)))
         ____ isinstance(originalValue, QRect):
-            self.rectExp.exactMatch(t__)
-            value _ QRect(int(self.rectExp.cap(1)),
-                          int(self.rectExp.cap(2)),
-                          int(self.rectExp.cap(3)),
-                          int(self.rectExp.cap(4)))
+            rectExp.exactMatch(t__)
+            value _ QRect(int(rectExp.cap(1)),
+                          int(rectExp.cap(2)),
+                          int(rectExp.cap(3)),
+                          int(rectExp.cap(4)))
         ____ isinstance(originalValue, QSize):
-            self.sizeExp.exactMatch(t__)
-            value _ QSize(int(self.sizeExp.cap(1)),
-                          int(self.sizeExp.cap(2)))
+            sizeExp.exactMatch(t__)
+            value _ QSize(int(sizeExp.cap(1)),
+                          int(sizeExp.cap(2)))
         ____ isinstance(originalValue, list):
             value _ t__.split(',')
         ____
             value _ type(originalValue)(t__)
 
-        model.setData(index, self.displayText(value), __.DisplayRole)
+        model.setData(index, displayText(value), __.DisplayRole)
         model.setData(index, value, __.UserRole)
 
     @staticmethod
@@ -718,8 +718,8 @@ c_ VariantDelegate(QItemDelegate):
         r_ '<%s>' % value
 
 
-__ __name__ == '__main__':
-    app _ ?A..(___.argv)
+__ ______ __ ______
+    app _ ?A..(___.a..
     mainWin _ MainWindow()
     mainWin.s..
     ___.exit(app.exec_())

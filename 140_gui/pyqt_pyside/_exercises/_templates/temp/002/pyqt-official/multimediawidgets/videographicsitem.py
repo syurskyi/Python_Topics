@@ -53,102 +53,102 @@ ____ ?.?W.. ______ (?A.., ?FD.., QGraphicsScene,
 
 c_ VideoPlayer(QWidget):
 
-    ___ __init__  parent_None):
-        super(VideoPlayer, self).__init__(parent)
+    ___  -   parent_None):
+        super(VideoPlayer, self). - (parent)
 
-        self.mediaPlayer _ QMediaPlayer(N.., QMediaPlayer.VideoSurface)
+        mediaPlayer _ QMediaPlayer(N.., QMediaPlayer.VideoSurface)
 
-        self.videoItem _ QGraphicsVideoItem()
-        self.videoItem.setSize(QSizeF(640, 480))
+        videoItem _ QGraphicsVideoItem()
+        videoItem.setSize(QSizeF(640, 480))
 
-        scene _ QGraphicsScene(self)
+        scene _ QGraphicsScene
         graphicsView _ QGraphicsView(scene)
 
-        scene.addItem(self.videoItem)
+        scene.addItem(videoItem)
 
         rotateSlider _ QSlider(__.Horizontal)
         rotateSlider.setRange(-180,  180)
         rotateSlider.setValue(0)
-        rotateSlider.valueChanged.c..(self.rotateVideo)
+        rotateSlider.valueChanged.c..(rotateVideo)
 
         openButton _ ?PB..("Open...")
-        openButton.c__.c..(self.openFile)
+        openButton.c__.c..(openFile)
 
-        self.playButton _ ?PB..()
-        self.playButton.setEnabled F..
-        self.playButton.setIcon(self.style().standardIcon(QStyle.SP_MediaPlay))
-        self.playButton.c__.c..(self.play)
+        playButton _ ?PB..()
+        playButton.setEnabled F..
+        playButton.setIcon(style().standardIcon(QStyle.SP_MediaPlay))
+        playButton.c__.c..(play)
 
-        self.positionSlider _ QSlider(__.Horizontal)
-        self.positionSlider.setRange(0, 0)
-        self.positionSlider.sliderMoved.c..(self.setPosition)
+        positionSlider _ QSlider(__.Horizontal)
+        positionSlider.setRange(0, 0)
+        positionSlider.sliderMoved.c..(setPosition)
 
         controlLayout _ QHBoxLayout()
         controlLayout.setContentsMargins(0, 0, 0, 0)
         controlLayout.aW..(openButton)
-        controlLayout.aW..(self.playButton)
-        controlLayout.aW..(self.positionSlider)
+        controlLayout.aW..(playButton)
+        controlLayout.aW..(positionSlider)
 
         layout _ ?VBL..
         layout.aW..(graphicsView)
         layout.aW..(rotateSlider)
-        layout.addLayout(controlLayout)
+        layout.aL..(controlLayout)
 
-        self.sL..(layout)
+        sL..(layout)
 
-        self.mediaPlayer.setVideoOutput(self.videoItem)
-        self.mediaPlayer.stateChanged.c..(self.mediaStateChanged)
-        self.mediaPlayer.positionChanged.c..(self.positionChanged)
-        self.mediaPlayer.durationChanged.c..(self.durationChanged)
+        mediaPlayer.setVideoOutput(videoItem)
+        mediaPlayer.stateChanged.c..(mediaStateChanged)
+        mediaPlayer.positionChanged.c..(positionChanged)
+        mediaPlayer.durationChanged.c..(durationChanged)
 
-    ___ sizeHint(self):
+    ___ sizeHint
         r_ QSize(800, 600)
 
-    ___ openFile(self):
+    ___ openFile
         fileName, _ _ ?FD...gOFN..  "Open Movie",
                 QDir.homePath())
 
         __ fileName !_ '':
-            self.mediaPlayer.setMedia(
+            mediaPlayer.setMedia(
                     QMediaContent(QUrl.fromLocalFile(fileName)))
-            self.playButton.setEnabled(True)
+            playButton.setEnabled(True)
 
-    ___ play(self):
-        __ self.mediaPlayer.state() == QMediaPlayer.PlayingState:
-            self.mediaPlayer.pause()
+    ___ play
+        __ mediaPlayer.state() == QMediaPlayer.PlayingState:
+            mediaPlayer.pause()
         ____
-            self.mediaPlayer.play()
+            mediaPlayer.play()
 
     ___ mediaStateChanged  state):
-        __ self.mediaPlayer.state() == QMediaPlayer.PlayingState:
-            self.playButton.setIcon(
-                    self.style().standardIcon(QStyle.SP_MediaPause))
+        __ mediaPlayer.state() == QMediaPlayer.PlayingState:
+            playButton.setIcon(
+                    style().standardIcon(QStyle.SP_MediaPause))
         ____
-            self.playButton.setIcon(
-                    self.style().standardIcon(QStyle.SP_MediaPlay))
+            playButton.setIcon(
+                    style().standardIcon(QStyle.SP_MediaPlay))
 
     ___ positionChanged  position):
-        self.positionSlider.setValue(position)
+        positionSlider.setValue(position)
 
     ___ durationChanged  duration):
-        self.positionSlider.setRange(0, duration)
+        positionSlider.setRange(0, duration)
 
     ___ setPosition  position):
-        self.mediaPlayer.setPosition(position)
+        mediaPlayer.setPosition(position)
 
     ___ rotateVideo  angle):
-        x _ self.videoItem.boundingRect().width() / 2.0
-        y _ self.videoItem.boundingRect().height() / 2.0
+        x _ videoItem.boundingRect().width() / 2.0
+        y _ videoItem.boundingRect().height() / 2.0
 
-        self.videoItem.setTransform(
+        videoItem.setTransform(
                 QTransform().translate(x, y).rotate(angle).translate(-x, -y))
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     player _ VideoPlayer()
     player.s..

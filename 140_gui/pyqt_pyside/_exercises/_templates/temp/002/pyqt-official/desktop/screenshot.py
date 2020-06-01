@@ -50,124 +50,124 @@ ____ ?.?W.. ______ (?A.., QCheckBox, ?FD.., QGridLayout,
 
 
 c_ Screenshot(QWidget):
-    ___ __init__(self):
-        super(Screenshot, self).__init__()
+    ___  -
+        super(Screenshot, self). - ()
 
-        self.screenshotLabel _ QLabel()
-        self.screenshotLabel.setSizePolicy(QSizePolicy.Expanding,
-                QSizePolicy.Expanding)
-        self.screenshotLabel.setAlignment(__.AlignCenter)
-        self.screenshotLabel.setMinimumSize(240, 160)
+        screenshotLabel _ QLabel()
+        screenshotLabel.sSP..(QSizePolicy.E..,
+                QSizePolicy.E..)
+        screenshotLabel.setAlignment(__.AlignCenter)
+        screenshotLabel.setMinimumSize(240, 160)
 
-        self.createOptionsGroupBox()
-        self.createButtonsLayout()
+        createOptionsGroupBox()
+        createButtonsLayout()
 
         mainLayout _ ?VBL..
-        mainLayout.aW..(self.screenshotLabel)
-        mainLayout.aW..(self.optionsGroupBox)
-        mainLayout.addLayout(self.buttonsLayout)
-        self.sL..(mainLayout)
+        mainLayout.aW..(screenshotLabel)
+        mainLayout.aW..(optionsGroupBox)
+        mainLayout.aL..(buttonsLayout)
+        sL..(mainLayout)
 
-        self.shootScreen()
-        self.delaySpinBox.setValue(5)
+        shootScreen()
+        delaySpinBox.setValue(5)
 
-        self.setWindowTitle("Screenshot")
-        self.resize(300, 200)
+        setWindowTitle("Screenshot")
+        resize(300, 200)
 
     ___ resizeEvent  event):
-        scaledSize _ self.originalPixmap.size()
-        scaledSize.scale(self.screenshotLabel.size(), __.KeepAspectRatio)
-        __ no. self.screenshotLabel.pixmap() or scaledSize !_ self.screenshotLabel.pixmap().size
-            self.updateScreenshotLabel()
+        scaledSize _ originalPixmap.size()
+        scaledSize.scale(screenshotLabel.size(), __.KeepAspectRatio)
+        __ no. screenshotLabel.pixmap() or scaledSize !_ screenshotLabel.pixmap().size
+            updateScreenshotLabel()
 
-    ___ newScreenshot(self):
-        __ self.hideThisWindowCheckBox.isChecked
-            self.hide()
-        self.newScreenshotButton.setDisabled(True)
+    ___ newScreenshot
+        __ hideThisWindowCheckBox.isChecked
+            hide()
+        newScreenshotButton.setDisabled(True)
 
-        QTimer.singleShot(self.delaySpinBox.value() * 1000,
-                self.shootScreen)
+        QTimer.singleShot(delaySpinBox.value() * 1000,
+                shootScreen)
 
-    ___ saveScreenshot(self):
+    ___ saveScreenshot
         format _ 'png'
         initialPath _ QDir.currentPath() + "/untitled." + format
 
         fileName, _ _ ?FD...getSaveFileName  "Save As", initialPath,
                 "%s Files (*.%s);;All Files (*)" % (format.upper(), format))
         __ fileName:
-            self.originalPixmap.save(fileName, format)
+            originalPixmap.save(fileName, format)
 
-    ___ shootScreen(self):
-        __ self.delaySpinBox.value() !_ 0:
+    ___ shootScreen
+        __ delaySpinBox.value() !_ 0:
             ?A...instance().beep()
 
         screen _ ?A...primaryScreen()
         __ screen __ no. N..:
-            self.originalPixmap _ screen.grabWindow(0)
+            originalPixmap _ screen.grabWindow(0)
         ____
-            self.originalPixmap _ QPixmap()
+            originalPixmap _ QPixmap()
 
-        self.updateScreenshotLabel()
+        updateScreenshotLabel()
 
-        self.newScreenshotButton.setDisabled F..
-        __ self.hideThisWindowCheckBox.isChecked
-            self.s..
+        newScreenshotButton.setDisabled F..
+        __ hideThisWindowCheckBox.isChecked
+            s..
 
-    ___ updateCheckBox(self):
-        __ self.delaySpinBox.value() == 0:
-            self.hideThisWindowCheckBox.setDisabled(True)
+    ___ updateCheckBox
+        __ delaySpinBox.value() == 0:
+            hideThisWindowCheckBox.setDisabled(True)
         ____
-            self.hideThisWindowCheckBox.setDisabled F..
+            hideThisWindowCheckBox.setDisabled F..
 
-    ___ createOptionsGroupBox(self):
-        self.optionsGroupBox _ QGroupBox("Options")
+    ___ createOptionsGroupBox
+        optionsGroupBox _ QGroupBox("Options")
 
-        self.delaySpinBox _ QSpinBox()
-        self.delaySpinBox.setSuffix(" s")
-        self.delaySpinBox.setMaximum(60)
-        self.delaySpinBox.valueChanged.c..(self.updateCheckBox)
+        delaySpinBox _ QSpinBox()
+        delaySpinBox.setSuffix(" s")
+        delaySpinBox.setMaximum(60)
+        delaySpinBox.valueChanged.c..(updateCheckBox)
 
-        self.delaySpinBoxLabel _ QLabel("Screenshot Delay:")
+        delaySpinBoxLabel _ QLabel("Screenshot Delay:")
 
-        self.hideThisWindowCheckBox _ QCheckBox("Hide This Window")
+        hideThisWindowCheckBox _ QCheckBox("Hide This Window")
 
         optionsGroupBoxLayout _ QGridLayout()
-        optionsGroupBoxLayout.aW..(self.delaySpinBoxLabel, 0, 0)
-        optionsGroupBoxLayout.aW..(self.delaySpinBox, 0, 1)
-        optionsGroupBoxLayout.aW..(self.hideThisWindowCheckBox, 1, 0, 1, 2)
-        self.optionsGroupBox.sL..(optionsGroupBoxLayout)
+        optionsGroupBoxLayout.aW..(delaySpinBoxLabel, 0, 0)
+        optionsGroupBoxLayout.aW..(delaySpinBox, 0, 1)
+        optionsGroupBoxLayout.aW..(hideThisWindowCheckBox, 1, 0, 1, 2)
+        optionsGroupBox.sL..(optionsGroupBoxLayout)
 
-    ___ createButtonsLayout(self):
-        self.newScreenshotButton _ self.createButton("New Screenshot",
-                self.newScreenshot)
+    ___ createButtonsLayout
+        newScreenshotButton _ createButton("New Screenshot",
+                newScreenshot)
 
-        self.saveScreenshotButton _ self.createButton("Save Screenshot",
-                self.saveScreenshot)
+        saveScreenshotButton _ createButton("Save Screenshot",
+                saveScreenshot)
 
-        self.quitScreenshotButton _ self.createButton("Quit", self.close)
+        quitScreenshotButton _ createButton("Quit", close)
 
-        self.buttonsLayout _ QHBoxLayout()
-        self.buttonsLayout.addStretch()
-        self.buttonsLayout.aW..(self.newScreenshotButton)
-        self.buttonsLayout.aW..(self.saveScreenshotButton)
-        self.buttonsLayout.aW..(self.quitScreenshotButton)
+        buttonsLayout _ QHBoxLayout()
+        buttonsLayout.addStretch()
+        buttonsLayout.aW..(newScreenshotButton)
+        buttonsLayout.aW..(saveScreenshotButton)
+        buttonsLayout.aW..(quitScreenshotButton)
 
     ___ createButton  t__, member):
         button _ ?PB..(t__)
         button.c__.c..(member)
         r_ button
 
-    ___ updateScreenshotLabel(self):
-        self.screenshotLabel.setPixmap(self.originalPixmap.scaled(
-                self.screenshotLabel.size(), __.KeepAspectRatio,
+    ___ updateScreenshotLabel
+        screenshotLabel.setPixmap(originalPixmap.scaled(
+                screenshotLabel.size(), __.KeepAspectRatio,
                 __.SmoothTransformation))
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     screenshot _ Screenshot()
     screenshot.s..
     ___.exit(app.exec_())

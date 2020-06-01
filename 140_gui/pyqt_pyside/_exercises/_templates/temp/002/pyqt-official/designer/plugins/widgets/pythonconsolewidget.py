@@ -36,54 +36,54 @@ c_ PythonConsoleWidget(QLineEdit):
     
     pythonOutput _ pyqtSignal(str)
     
-    ___ __init__  parent_None):
+    ___  -   parent_None):
     
-        super(PythonConsoleWidget, self).__init__(parent)
+        super(PythonConsoleWidget, self). - (parent)
         
-        self.history _   # list
-        self.current _ -1
+        history _   # list
+        current _ -1
         
-        self.rP__.c..(self.execute)
+        rP__.c..(execute)
     
     ___ keyReleaseEvent  event):
     
         __ event.type() == QEvent.KeyRelease:
         
             __ event.key() == __.Key_Up:
-                current _ max(0, self.current - 1)
-                __ 0 <_ current < le.(self.history):
-                    self.sT..(self.history[current])
-                    self.current _ current
+                current _ max(0, current - 1)
+                __ 0 <_ current < le.(history):
+                    sT..(history[current])
+                    current _ current
                 
                 event.accept()
             
             ____ event.key() == __.Key_Down:
-                current _ min(le.(self.history), self.current + 1)
-                __ 0 <_ current < le.(self.history):
-                    self.sT..(self.history[current])
+                current _ min(le.(history), current + 1)
+                __ 0 <_ current < le.(history):
+                    sT..(history[current])
                 ____
-                    self.clear()
-                self.current _ current
+                    clear()
+                current _ current
                 
                 event.accept()
     
-    ___ execute(self):
+    ___ execute 
     
         # Define this here to give users something to look at.
         qApp _ ?A...instance()
         
-        self.expression _ self.t__()
+        expression _ t__()
         try:
-            result _ str(eval(str(self.expression)))
+            result _ str(eval(str(expression)))
             
             # Emit the result of the evaluated expression.
-            self.pythonOutput.emit(result)
+            pythonOutput.emit(result)
 
             # Clear the line edit, append the successful expression to the
             # history, and update the current command index.
-            self.clear()
-            self.history.ap..(self.expression)
-            self.current _ le.(self.history)
+            clear()
+            history.ap..(expression)
+            current _ le.(history)
         except:
             pass
 
@@ -92,7 +92,7 @@ __ __name__ == "__main__":
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     widget _ PythonConsoleWidget()
     widget.s..
     ___.exit(app.exec_())

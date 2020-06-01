@@ -46,7 +46,7 @@ ____ ?.?C.. ______ QLibraryInfo, QProcess, QProcessEnvironment
 ____ ?.?W.. ______ ?A.., ?MB..
 
 
-app _ ?A..(___.argv)
+app _ ?A..(___.a..
 
 ?MB...information(N.., "PyQt Designer Plugins",
         "<p>This example will start Qt Designer when you click the <b>OK</b> "

@@ -54,22 +54,22 @@ ____ ?.?W.. ______ (?A.., QColorDialog, ?FD.., QFrame,
 
 c_ FinalWidget(QFrame):
 
-    ___ __init__  parent, name, labelSize):
-        super(FinalWidget, self).__init__(parent)
+    ___  -   parent, name, labelSize):
+        super(FinalWidget, self). - (parent)
 
-        self.dragStartPosition _ QPoint()
+        dragStartPosition _ QPoint()
 
-        self.hasImage _ False
-        self.imageLabel _ QLabel()
-        self.imageLabel.setFrameShadow(QFrame.Sunken)
-        self.imageLabel.setFrameShape(QFrame.StyledPanel)
-        self.imageLabel.setMinimumSize(labelSize)
-        self.nameLabel _ QLabel(name)
+        hasImage _ False
+        imageLabel _ QLabel()
+        imageLabel.setFrameShadow(QFrame.Sunken)
+        imageLabel.setFrameShape(QFrame.StyledPanel)
+        imageLabel.setMinimumSize(labelSize)
+        nameLabel _ QLabel(name)
 
         layout _ ?VBL..
-        layout.aW..(self.imageLabel, 1)
-        layout.aW..(self.nameLabel, 0)
-        self.sL..(layout)
+        layout.aW..(imageLabel, 1)
+        layout.aW..(nameLabel, 0)
+        sL..(layout)
 
     ___ mouseMoveEvent  event):
         """ If the mouse moves far enough when the left mouse button is held
@@ -78,25 +78,25 @@ c_ FinalWidget(QFrame):
         __ no. event.buttons() & __.LeftButton:
             r_
 
-        __ (event.pos() - self.dragStartPosition).manhattanLength() \
+        __ (event.pos() - dragStartPosition).manhattanLength() \
              < ?A...startDragDistance
             r_
 
-        __ no. self.hasImage:
+        __ no. hasImage:
             r_
 
-        drag _ QDrag(self)
+        drag _ QDrag
         mimeData _ QMimeData()
 
         output _ QByteArray()
         outputBuffer _ QBuffer(output)
         outputBuffer.o..(QIODevice.WriteOnly)
-        self.imageLabel.pixmap().toImage().save(outputBuffer, 'PNG')
+        imageLabel.pixmap().toImage().save(outputBuffer, 'PNG')
         outputBuffer.close()
         mimeData.setData('image/png', output)
 
         drag.setMimeData(mimeData)
-        drag.setPixmap(self.imageLabel.pixmap().scaled(64, 64, __.KeepAspectRatio))
+        drag.setPixmap(imageLabel.pixmap().scaled(64, 64, __.KeepAspectRatio))
         drag.setHotSpot(QPoint(drag.pixmap().width() / 2,
                                       drag.pixmap().height()))
         drag.start()
@@ -106,14 +106,14 @@ c_ FinalWidget(QFrame):
             drop.
         """
         __ event.button() == __.LeftButton:
-            self.dragStartPosition _ event.pos()
+            dragStartPosition _ event.pos()
 
-    ___ pixmap(self):
-        r_ self.imageLabel.pixmap()
+    ___ pixmap 
+        r_ imageLabel.pixmap()
 
     ___ setPixmap  pixmap):
-        self.imageLabel.setPixmap(pixmap)
-        self.hasImage _ True
+        imageLabel.setPixmap(pixmap)
+        hasImage _ True
 
 
 c_ ScreenWidget(QFrame):
@@ -128,69 +128,69 @@ c_ ScreenWidget(QFrame):
 
     imageChanged _ pyqtSignal()
 
-    ___ __init__  parent, initialColor, name, mask, labelSize):
+    ___  -   parent, initialColor, name, mask, labelSize):
         """ Initializes the paint color, the mask color (cyan, magenta, or
         yellow), connects the color selector and invert checkbox to functions,
         and creates a two-by-two grid layout.
         """
-        super(ScreenWidget, self).__init__(parent)
+        super(ScreenWidget, self). - (parent)
 
-        self.originalImage _ QImage()
-        self.newImage _ QImage()
+        originalImage _ QImage()
+        newImage _ QImage()
 
-        self.paintColor _ initialColor
-        self.maskColor _ mask
-        self.inverted _ False
+        paintColor _ initialColor
+        maskColor _ mask
+        inverted _ False
 
-        self.imageLabel _ QLabel()
-        self.imageLabel.setFrameShadow(QFrame.Sunken)
-        self.imageLabel.setFrameShape(QFrame.StyledPanel)
-        self.imageLabel.setMinimumSize(labelSize)
+        imageLabel _ QLabel()
+        imageLabel.setFrameShadow(QFrame.Sunken)
+        imageLabel.setFrameShape(QFrame.StyledPanel)
+        imageLabel.setMinimumSize(labelSize)
 
-        self.nameLabel _ QLabel(name)
-        self.colorButton _ ?PB..("Modify...")
-        self.colorButton.setBackgroundRole(?P...Button)
-        self.colorButton.setMinimumSize(32, 32)
+        nameLabel _ QLabel(name)
+        colorButton _ ?PB..("Modify...")
+        colorButton.setBackgroundRole(?P...Button)
+        colorButton.setMinimumSize(32, 32)
 
-        palette _ ?P..(self.colorButton.palette())
+        palette _ ?P..(colorButton.palette())
         palette.sC..(?P...Button, initialColor)
-        self.colorButton.sP..(palette)
+        colorButton.sP..(palette)
 
-        self.invertButton _ ?PB..("Invert")
-        self.invertButton.setEnabled F..
+        invertButton _ ?PB..("Invert")
+        invertButton.setEnabled F..
 
-        self.colorButton.c__.c..(self.sC..)
-        self.invertButton.c__.c..(self.invertImage)
+        colorButton.c__.c..(sC..)
+        invertButton.c__.c..(invertImage)
 
         gridLayout _ QGridLayout()
-        gridLayout.aW..(self.imageLabel, 0, 0, 1, 2)
-        gridLayout.aW..(self.nameLabel, 1, 0)
-        gridLayout.aW..(self.colorButton, 1, 1)
-        gridLayout.aW..(self.invertButton, 2, 1, 1, 1)
-        self.sL..(gridLayout)
+        gridLayout.aW..(imageLabel, 0, 0, 1, 2)
+        gridLayout.aW..(nameLabel, 1, 0)
+        gridLayout.aW..(colorButton, 1, 1)
+        gridLayout.aW..(invertButton, 2, 1, 1, 1)
+        sL..(gridLayout)
 
-    ___ createImage(self):
+    ___ createImage 
         """ Creates a new image by separating out the cyan, magenta, or yellow
             component, depending on the mask color specified in the constructor.
             The amount of the component found in each pixel of the image is used
             to determine how much of a user-selected ink is used for each pixel
             in the new image for the label widget.
         """
-        self.newImage _ newImage _ self.originalImage.copy()
+        newImage _ newImage _ originalImage.copy()
 
         # Create CMY components for the ink being used.
-        cyanInk _ float(255 - ?C..(self.paintColor).red()) / 255.0
-        magentaInk _ float(255 - ?C..(self.paintColor).green()) / 255.0
-        yellowInk _ float(255 - ?C..(self.paintColor).blue()) / 255.0
+        cyanInk _ float(255 - ?C..(paintColor).red()) / 255.0
+        magentaInk _ float(255 - ?C..(paintColor).green()) / 255.0
+        yellowInk _ float(255 - ?C..(paintColor).blue()) / 255.0
 
-        convert _ self.convertMap[self.maskColor]
+        convert _ convertMap[maskColor]
 
-        for y in range(newImage.height()):
-            for x in range(newImage.width()):
-                p _ self.originalImage.pixel(x, y)
+        ___ y __ range(newImage.height()):
+            ___ x __ range(newImage.width()):
+                p _ originalImage.pixel(x, y)
 
                 # Separate the source pixel into its cyan component.
-                __ self.inverted:
+                __ inverted:
                     amount _ convert(p)
                 ____
                     amount _ 255 - convert(p)
@@ -202,43 +202,43 @@ c_ ScreenWidget(QFrame):
 
                 newImage.setPixel(x, y, newColor.rgb())
 
-        self.imageLabel.setPixmap(QPixmap.fromImage(newImage))
+        imageLabel.setPixmap(QPixmap.fromImage(newImage))
 
-    ___ image(self):
+    ___ image 
         """ Returns a reference to the modified image. """
-        r_ self.newImage
+        r_ newImage
 
-    ___ invertImage(self):
+    ___ invertImage 
         """ Sets whether the amount of ink applied to the canvas is to be
             inverted (subtracted from the maximum value) before the ink is
             applied.
         """
-        self.inverted _ no. self.inverted
-        self.createImage()
-        self.imageChanged.emit()
+        inverted _ no. inverted
+        createImage()
+        imageChanged.emit()
 
-    ___ sC..(self):
+    ___ sC.. 
         """ Separate the current image into cyan, magenta, and yellow
             components.  Create a representation of how each component might
             appear when applied to a blank white piece of paper.
         """
-        newColor _ QColorDialog.getColor(self.paintColor)
+        newColor _ QColorDialog.getColor(paintColor)
 
         __ newColor.isValid
-            self.paintColor _ newColor
-            palette _ ?P..(self.colorButton.palette())
-            palette.sC..(?P...Button, self.paintColor)
-            self.colorButton.sP..(palette)
-            self.createImage()
-            self.imageChanged.emit()
+            paintColor _ newColor
+            palette _ ?P..(colorButton.palette())
+            palette.sC..(?P...Button, paintColor)
+            colorButton.sP..(palette)
+            createImage()
+            imageChanged.emit()
 
     ___ setImage  image):
         """ Records the original image selected by the user, creates a color
             separation, and enables the invert image checkbox.
         """
-        self.originalImage _ image
-        self.createImage()
-        self.invertButton.setEnabled(True)
+        originalImage _ image
+        createImage()
+        invertButton.setEnabled(True)
 
 
 c_ Viewer ?MW..
@@ -254,116 +254,116 @@ c_ Viewer ?MW..
         Full: 255,
     }
 
-    ___ __init__(self):
+    ___  -
         """ Constructor initializes a default value for the brightness, creates
             the main menu entries, and constructs a central widget that contains
             enough space for images to be displayed.
         """
-        super(Viewer, self).__init__()
+        super(Viewer, self). - ()
 
-        self.scaledImage _ QImage()
-        self.menuMap _ {}
-        self.path _ ''
-        self.brightness _ 255
+        scaledImage _ QImage()
+        menuMap _ {}
+        path _ ''
+        brightness _ 255
 
-        self.setWindowTitle("QImage Color Separations")
+        setWindowTitle("QImage Color Separations")
 
-        self.createMenus()
-        self.sCW..(self.createCentralWidget())
+        createMenus()
+        sCW..(createCentralWidget())
 
-    ___ createMenus(self):
+    ___ createMenus 
         """ Creates a main menu with two entries: a File menu, to allow the image
             to be selected, and a Brightness menu to allow the brightness of the
             separations to be changed.
             Initially, the Brightness menu items are disabled, but the first entry in
             the menu is checked to reflect the default brightness.
         """
-        self.fileMenu _ QMenu("&File", self)
-        self.brightnessMenu _ QMenu("&Brightness", self)
+        fileMenu _ QMenu("&File", self)
+        brightnessMenu _ QMenu("&Brightness", self)
 
-        self.openAction _ self.fileMenu.aA..("&Open...")
-        self.openAction.sS..(?KS..('Ctrl+O'))
-        self.saveAction _ self.fileMenu.aA..("&Save...")
-        self.saveAction.sS..(?KS..('Ctrl+S'))
-        self.saveAction.setEnabled F..
-        self.quitAction _ self.fileMenu.aA..("E&xit")
-        self.quitAction.sS..(?KS..('Ctrl+Q'))
+        openAction _ fileMenu.aA..("&Open...")
+        openAction.sS..(?KS..('Ctrl+O'))
+        saveAction _ fileMenu.aA..("&Save...")
+        saveAction.sS..(?KS..('Ctrl+S'))
+        saveAction.setEnabled F..
+        quitAction _ fileMenu.aA..("E&xit")
+        quitAction.sS..(?KS..('Ctrl+Q'))
 
-        self.noBrightness _ self.brightnessMenu.aA..("&0%")
-        self.noBrightness.setCheckable(True)
-        self.quarterBrightness _ self.brightnessMenu.aA..("&25%")
-        self.quarterBrightness.setCheckable(True)
-        self.halfBrightness _ self.brightnessMenu.aA..("&50%")
-        self.halfBrightness.setCheckable(True)
-        self.threeQuartersBrightness _ self.brightnessMenu.aA..("&75%")
-        self.threeQuartersBrightness.setCheckable(True)
-        self.fullBrightness _ self.brightnessMenu.aA..("&100%")
-        self.fullBrightness.setCheckable(True)
+        noBrightness _ brightnessMenu.aA..("&0%")
+        noBrightness.setCheckable(True)
+        quarterBrightness _ brightnessMenu.aA..("&25%")
+        quarterBrightness.setCheckable(True)
+        halfBrightness _ brightnessMenu.aA..("&50%")
+        halfBrightness.setCheckable(True)
+        threeQuartersBrightness _ brightnessMenu.aA..("&75%")
+        threeQuartersBrightness.setCheckable(True)
+        fullBrightness _ brightnessMenu.aA..("&100%")
+        fullBrightness.setCheckable(True)
 
-        self.menuMap[self.noBrightness] _ self.Gloom
-        self.menuMap[self.quarterBrightness] _ self.Quarter
-        self.menuMap[self.halfBrightness] _ self.Half
-        self.menuMap[self.threeQuartersBrightness] _ self.ThreeQuarters
-        self.menuMap[self.fullBrightness] _ self.Full
+        menuMap[noBrightness] _ Gloom
+        menuMap[quarterBrightness] _ Quarter
+        menuMap[halfBrightness] _ Half
+        menuMap[threeQuartersBrightness] _ ThreeQuarters
+        menuMap[fullBrightness] _ Full
 
-        self.currentBrightness _ self.fullBrightness
-        self.currentBrightness.setChecked(True)
-        self.brightnessMenu.setEnabled F..
+        currentBrightness _ fullBrightness
+        currentBrightness.setChecked(True)
+        brightnessMenu.setEnabled F..
 
-        self.mB.. .aM..(self.fileMenu)
-        self.mB.. .aM..(self.brightnessMenu)
+        mB.. .aM..(fileMenu)
+        mB.. .aM..(brightnessMenu)
 
-        self.openAction.t__.c..(self.chooseFile)
-        self.saveAction.t__.c..(self.saveImage)
-        self.quitAction.t__.c..(?A...instance().quit)
-        self.brightnessMenu.t__.c..(self.setBrightness)
+        openAction.t__.c..(chooseFile)
+        saveAction.t__.c..(saveImage)
+        quitAction.t__.c..(?A...instance().quit)
+        brightnessMenu.t__.c..(setBrightness)
 
-    ___ createCentralWidget(self):
+    ___ createCentralWidget 
         """ Constructs a central widget for the window consisting of a two-by-two
             grid of labels, each of which will contain an image. We restrict the
             size of the labels to 256 pixels, and ensure that the window cannot
             be resized.
         """
-        frame _ QFrame(self)
+        frame _ QFrame
         grid _ QGridLayout(frame)
         grid.setSpacing(8)
         grid.setContentsMargins(4, 4, 4, 4)
 
-        self.layout().setSizeConstraint(QLayout.SetFixedSize)
+        layout().setSizeConstraint(QLayout.SetFixedSize)
 
         labelSize _ QSize(256, 256)
 
-        self.finalWidget _ FinalWidget(frame, "Final image", labelSize)
+        finalWidget _ FinalWidget(frame, "Final image", labelSize)
 
-        self.cyanWidget _ ScreenWidget(frame, __.cyan, "Cyan",
+        cyanWidget _ ScreenWidget(frame, __.cyan, "Cyan",
                 ScreenWidget.Cyan, labelSize)
-        self.magentaWidget _ ScreenWidget(frame, __.magenta, "Magenta",
+        magentaWidget _ ScreenWidget(frame, __.magenta, "Magenta",
                 ScreenWidget.Magenta, labelSize)
-        self.yellowWidget _ ScreenWidget(frame, __.yellow, "Yellow",
+        yellowWidget _ ScreenWidget(frame, __.yellow, "Yellow",
                 ScreenWidget.Yellow, labelSize)
 
-        self.cyanWidget.imageChanged.c..(self.createImage)
-        self.magentaWidget.imageChanged.c..(self.createImage)
-        self.yellowWidget.imageChanged.c..(self.createImage)
+        cyanWidget.imageChanged.c..(createImage)
+        magentaWidget.imageChanged.c..(createImage)
+        yellowWidget.imageChanged.c..(createImage)
 
-        grid.aW..(self.finalWidget, 0, 0, __.AlignTop | __.AlignHCenter)
-        grid.aW..(self.cyanWidget, 0, 1, __.AlignTop | __.AlignHCenter)
-        grid.aW..(self.magentaWidget, 1, 0, __.AlignTop | __.AlignHCenter)
-        grid.aW..(self.yellowWidget, 1, 1, __.AlignTop | __.AlignHCenter)
+        grid.aW..(finalWidget, 0, 0, __.AlignTop | __.AlignHCenter)
+        grid.aW..(cyanWidget, 0, 1, __.AlignTop | __.AlignHCenter)
+        grid.aW..(magentaWidget, 1, 0, __.AlignTop | __.AlignHCenter)
+        grid.aW..(yellowWidget, 1, 1, __.AlignTop | __.AlignHCenter)
 
         r_ frame
 
-    ___ chooseFile(self):
+    ___ chooseFile 
         """ Provides a dialog window to allow the user to specify an image file.
             If a file is selected, the appropriate function is called to process
             and display it.
         """
         imageFile, _ _ ?FD...gOFN..
-                "Choose an image file to open", self.path, "Images (*.*)")
+                "Choose an image file to open", path, "Images (*.*)")
 
         __ imageFile !_ '':
-            self.openImageFile(imageFile)
-            self.path _ imageFile
+            openImageFile(imageFile)
+            path _ imageFile
 
     ___ setBrightness  action):
         """ Changes the value of the brightness according to the entry selected in the
@@ -371,18 +371,18 @@ c_ Viewer ?MW..
             entry is unchecked.
             The color separations are updated to use the new value for the brightness.
         """
-        __ action no. in self.menuMap or self.scaledImage.isNull
+        __ action no. __ menuMap or scaledImage.isNull
             r_
 
-        self.brightness _ self.brightnessValueMap.g..(self.menuMap[action])
-        __ self.brightness __ N..:
+        brightness _ brightnessValueMap.g..(menuMap[action])
+        __ brightness __ N..:
             r_
 
-        self.currentBrightness.setChecked F..
-        self.currentBrightness _ action
-        self.currentBrightness.setChecked(True)
+        currentBrightness.setChecked F..
+        currentBrightness _ action
+        currentBrightness.setChecked(True)
 
-        self.createImage()
+        createImage()
 
     ___ openImageFile  imageFile):
         """ Load the image from the file given, and create four pixmaps based
@@ -393,23 +393,23 @@ c_ Viewer ?MW..
         originalImage _ QImage()
 
         __ originalImage.load(imageFile):
-            self.setWindowTitle(imageFile)
-            self.saveAction.setEnabled(True)
-            self.brightnessMenu.setEnabled(True)
+            setWindowTitle(imageFile)
+            saveAction.setEnabled(True)
+            brightnessMenu.setEnabled(True)
 
-            self.scaledImage _ originalImage.scaled(256, 256, __.KeepAspectRatio)
+            scaledImage _ originalImage.scaled(256, 256, __.KeepAspectRatio)
 
-            self.cyanWidget.setImage(self.scaledImage)
-            self.magentaWidget.setImage(self.scaledImage)
-            self.yellowWidget.setImage(self.scaledImage)
-            self.createImage()
+            cyanWidget.setImage(scaledImage)
+            magentaWidget.setImage(scaledImage)
+            yellowWidget.setImage(scaledImage)
+            createImage()
         ____
             ?MB...warning  "Cannot open file",
                     "The selected file could not be opened.",
                     ?MB...Cancel, ?MB...NoButton,
                     ?MB...NoButton)
 
-    ___ createImage(self):
+    ___ createImage 
         """ Creates an image by combining the contents of the three screens
             to present a page preview.
             The image associated with each screen is separated into cyan,
@@ -417,15 +417,15 @@ c_ Viewer ?MW..
             component from the three screen images, and subtract the totals
             from the maximum value for each corresponding primary color.
         """
-        newImage _ self.scaledImage.copy()
+        newImage _ scaledImage.copy()
 
-        image1 _ self.cyanWidget.image()
-        image2 _ self.magentaWidget.image()
-        image3 _ self.yellowWidget.image()
-        darkness _ 255 - self.brightness
+        image1 _ cyanWidget.image()
+        image2 _ magentaWidget.image()
+        image3 _ yellowWidget.image()
+        darkness _ 255 - brightness
 
-        for y in range(newImage.height()):
-            for x in range(newImage.width()):
+        ___ y __ range(newImage.height()):
+            ___ x __ range(newImage.width()):
                 # Create three screens, using the quantities of the source CMY
                 # components to determine how much of each of the inks are to
                 # be put on each screen.
@@ -451,9 +451,9 @@ c_ Viewer ?MW..
 
                 newImage.setPixel(x, y, newColor.rgb())
 
-        self.finalWidget.setPixmap(QPixmap.fromImage(newImage))
+        finalWidget.setPixmap(QPixmap.fromImage(newImage))
 
-    ___ saveImage(self):
+    ___ saveImage 
         """ Provides a dialog window to allow the user to save the image file.
         """
         imageFile, _ _ ?FD...getSaveFileName
@@ -465,7 +465,7 @@ c_ Viewer ?MW..
             newImageFile _ QFileInfo(info.absoluteDir(),
                     info.baseName() + '.png').absoluteFilePath()
 
-            __ no. self.finalWidget.pixmap().save(newImageFile, 'PNG'):
+            __ no. finalWidget.pixmap().save(newImageFile, 'PNG'):
                 ?MB...warning  "Cannot save file",
                         "The file could not be saved.",
                         ?MB...Cancel, ?MB...NoButton,
@@ -476,11 +476,11 @@ c_ Viewer ?MW..
                     ?MB...NoButton, ?MB...NoButton)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     window _ Viewer()
     window.s..
     ___.exit(app.exec_())

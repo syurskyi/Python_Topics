@@ -3,7 +3,7 @@ ____ ?.QtMultimedia ______ *
 
 app _ QCoreApplication(  # list)
 
-for camera_info in QCameraInfo.availableCameras
+___ camera_info __ QCameraInfo.availableCameras
     print('Camera: ', camera_info.deviceName())
     camera _ QCamera(camera_info)
     r _ QMediaRecorder(camera)

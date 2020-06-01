@@ -50,43 +50,43 @@ ____ headingitem ______ HeadingItem
 
 
 c_ MenuContentItem(DemoItem):
-    ___ __init__  el, parent_None):
-        super(MenuContentItem, self).__init__(parent)
+    ___  -   el, parent_None):
+        super(MenuContentItem, self). - (parent)
 
-        self.name _ el.getAttribute('name')
-        self.heading _ N..
-        self.description1 _ N..
-        self.description2 _ N..
+        name _ el.getAttribute('name')
+        heading _ N..
+        description1 _ N..
+        description2 _ N..
 
         readme_dir _ QFileInfo(__file__).dir()
         readme_dir.cdUp()
         readme_dir.cd(el.getAttribute('dirname'))
 
-        self.readmePath _ readme_dir.absoluteFilePath('README')
+        readmePath _ readme_dir.absoluteFilePath('README')
 
-        self._prepared _ False
+        _prepared _ False
 
-    ___ prepare(self):
-        __ no. self._prepared:
-            self.createContent()
-            self._prepared_ True
+    ___ prepare 
+        __ no. _prepared:
+            createContent()
+            _prepared_ True
 
     ___ animationStopped  id):
-        __ self.name == Colors.rootMenuName:
+        __ name == Colors.rootMenuName:
             # Optimization hack.
             r_
 
         __ id == DemoItemAnimation.ANIM_OUT:
             # Free up some memory
-            self.heading _ N..
-            self.description1 _ N..
-            self.description2 _ N..
-            self._prepared _ False
+            heading _ N..
+            description1 _ N..
+            description2 _ N..
+            _prepared _ False
 
     ___ loadDescription  startPara, nrPara):
-        readme _ QFile(self.readmePath)
+        readme _ QFile(readmePath)
         __ no. readme.o..(QFile.ReadOnly):
-            Colors.debug("- MenuContentItem.loadDescription: Could not load:", self.readmePath)
+            Colors.debug("- MenuContentItem.loadDescription: Could not load:", readmePath)
             r_ ""
 
         in_str _ QTextStream(readme)
@@ -110,24 +110,24 @@ c_ MenuContentItem(DemoItem):
 
         r_ Colors.contentColor + result
 
-    ___ createContent(self):
+    ___ createContent 
         # Create the items.
-        self.heading _ HeadingItem(self.name, self)
-        para1 _ self.loadDescription(0, 1)
+        heading _ HeadingItem(name, self)
+        para1 _ loadDescription(0, 1)
         __ no. para1:
             para1 _ Colors.contentColor + "Could not load description. Ensure that the documentation for Qt is built."
         bgcolor _ Colors.sceneBg1.darker(200)
         bgcolor.setAlpha(100)
-        self.description1 _ DemoTextItem(para1, Colors.contentFont(),
+        description1 _ DemoTextItem(para1, Colors.contentFont(),
                 Colors.heading, 500, self, DemoTextItem.STATIC_TEXT)
-        self.description2 _ DemoTextItem(self.loadDescription(1, 2),
+        description2 _ DemoTextItem(loadDescription(1, 2),
                 Colors.contentFont(), Colors.heading, 250, self,
                 DemoTextItem.STATIC_TEXT)
 
         # Place the items on screen.
-        self.heading.setPos(0, 3)
-        self.description1.setPos(0, self.heading.pos().y() + self.heading.boundingRect().height() + 10)
-        self.description2.setPos(0, self.description1.pos().y() + self.description1.boundingRect().height() + 15)
+        heading.setPos(0, 3)
+        description1.setPos(0, heading.pos().y() + heading.boundingRect().height() + 10)
+        description2.setPos(0, description1.pos().y() + description1.boundingRect().height() + 15)
 
-    ___ boundingRect(self):
+    ___ boundingRect 
         r_ QRectF(0, 0, 500, 350)

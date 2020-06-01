@@ -49,11 +49,11 @@ ____ ?.?W.. ______ (?A.., QDataWidgetMapper, QGridLayout,
 
 
 c_ Window(QWidget):
-    ___ __init__  parent_None):
-        super(Window, self).__init__(parent)
+    ___  -   parent_None):
+        super(Window, self). - (parent)
 
         # Set up the model.
-        self.setupModel()
+        setupModel()
 
         # Set up the widgets.
         nameLabel _ QLabel("Na&me:")
@@ -62,40 +62,40 @@ c_ Window(QWidget):
         addressEdit _ QTextEdit()
         ageLabel _ QLabel("A&ge (in years):")
         ageSpinBox _ QSpinBox()
-        self.nextButton _ ?PB..("&Next")
-        self.previousButton _ ?PB..("&Previous")
+        nextButton _ ?PB..("&Next")
+        previousButton _ ?PB..("&Previous")
         nameLabel.setBuddy(nameEdit)
         addressLabel.setBuddy(addressEdit)
         ageLabel.setBuddy(ageSpinBox)
 
         # Set up the mapper.
-        self.mapper _ QDataWidgetMapper(self)
-        self.mapper.sM..(self.model)
-        self.mapper.addMapping(nameEdit, 0)
-        self.mapper.addMapping(addressEdit, 1)
-        self.mapper.addMapping(ageSpinBox, 2)
+        mapper _ QDataWidgetMapper
+        mapper.sM..(model)
+        mapper.addMapping(nameEdit, 0)
+        mapper.addMapping(addressEdit, 1)
+        mapper.addMapping(ageSpinBox, 2)
 
         # Set up connections and layouts.
-        self.previousButton.c__.c..(self.mapper.toPrevious)
-        self.nextButton.c__.c..(self.mapper.toNext)
-        self.mapper.currentIndexChanged.c..(self.updateButtons)
+        previousButton.c__.c..(mapper.toPrevious)
+        nextButton.c__.c..(mapper.toNext)
+        mapper.currentIndexChanged.c..(updateButtons)
 
         layout _ QGridLayout()
         layout.aW..(nameLabel, 0, 0, 1, 1)
         layout.aW..(nameEdit, 0, 1, 1, 1)
-        layout.aW..(self.previousButton, 0, 2, 1, 1)
+        layout.aW..(previousButton, 0, 2, 1, 1)
         layout.aW..(addressLabel, 1, 0, 1, 1)
         layout.aW..(addressEdit, 1, 1, 2, 1)
-        layout.aW..(self.nextButton, 1, 2, 1, 1)
+        layout.aW..(nextButton, 1, 2, 1, 1)
         layout.aW..(ageLabel, 3, 0, 1, 1)
         layout.aW..(ageSpinBox, 3, 1, 1, 1)
-        self.sL..(layout)
+        sL..(layout)
 
-        self.setWindowTitle("Simple Widget Mapper")
-        self.mapper.toFirst()
+        setWindowTitle("Simple Widget Mapper")
+        mapper.toFirst()
  
-    ___ setupModel(self):
-        self.model _ QStandardItemModel(5, 3, self)
+    ___ setupModel 
+        model _ QStandardItemModel(5, 3, self)
         names _ ("Alice", "Bob", "Carol", "Donald", "Emma")
         addresses _ ("<qt>123 Main Street<br/>Market Town</qt>",
                      "<qt>PO Box 32<br/>Mail Handling Service"
@@ -105,24 +105,24 @@ c_ Window(QWidget):
                      "<qt>Research Station<br/>Base Camp<br/>Big Mountain</qt>")
         ages _ ("20", "31", "32", "19", "26")
         
-        for row, name in enumerate(names):
+        ___ row, name __ en..(names):
             item _ QStandardItem(name)
-            self.model.setItem(row, 0, item)
+            model.setItem(row, 0, item)
             item _ QStandardItem(addresses[row])
-            self.model.setItem(row, 1, item)
+            model.setItem(row, 1, item)
             item _ QStandardItem(ages[row])
-            self.model.setItem(row, 2, item)
+            model.setItem(row, 2, item)
  
     ___ updateButtons  row):
-        self.previousButton.setEnabled(row > 0)
-        self.nextButton.setEnabled(row < self.model.rowCount() - 1)
+        previousButton.setEnabled(row > 0)
+        nextButton.setEnabled(row < model.rowCount() - 1)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     window _ Window()
     window.s..

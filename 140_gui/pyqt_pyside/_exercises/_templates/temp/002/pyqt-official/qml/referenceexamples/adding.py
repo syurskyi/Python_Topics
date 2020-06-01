@@ -59,30 +59,30 @@ Person {
 
 
 c_ Person(QObject):
-    ___ __init__  parent_None):
-        super(Person, self).__init__(parent)
+    ___  -   parent_None):
+        super(Person, self). - (parent)
 
-        self._name _ ''
-        self._shoeSize _ 0
+        _name _ ''
+        _shoeSize _ 0
 
     @pyqtProperty(str)
-    ___ name(self):
-        r_ self._name
+    ___ name
+        r_ _name
 
     @name.setter
     ___ name  name):
-        self._name _ name
+        _name _ name
 
     @pyqtProperty(int)
-    ___ shoeSize(self):
-        r_ self._shoeSize
+    ___ shoeSize
+        r_ _shoeSize
 
     @shoeSize.setter
     ___ shoeSize  shoeSize):
-        self._shoeSize _ shoeSize
+        _shoeSize _ shoeSize
 
 
-app _ QCoreApplication(___.argv)
+app _ QCoreApplication(___.a..
 
 qmlRegisterType(Person, "People", 1, 0, "Person")
 
@@ -98,5 +98,5 @@ __ person __ no. N..:
     print("They wear a %d sized shoe" % person.shoeSize)
 ____
     print("Unable to create component instance")
-    for e in component.errors
+    ___ e __ component.errors
         print("Error:", e.toString());

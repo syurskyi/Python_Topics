@@ -57,16 +57,16 @@ usedBytes _ QSemaphore()
 
 
 c_ Producer(QThread):
-    ___ run(self):
-        for i in range(DataSize):
+    ___ run 
+        ___ i __ range(DataSize):
             freeBytes.acquire()
             buffer[i % BufferSize] _ "ACGT"[random.randint(0, 3)]
             usedBytes.release()
 
 
 c_ Consumer(QThread):
-    ___ run(self):
-        for i in range(DataSize):
+    ___ run 
+        ___ i __ range(DataSize):
             usedBytes.acquire()
             ___.stderr.w..(buffer[i % BufferSize])
             freeBytes.release()
@@ -74,8 +74,8 @@ c_ Consumer(QThread):
         ___.stderr.w..("\n")
 
 
-__ __name__ == '__main__':
-    app _ QCoreApplication(___.argv)
+__ ______ __ ______
+    app _ QCoreApplication(___.a..
     producer _ Producer()
     consumer _ Consumer()
     producer.start()

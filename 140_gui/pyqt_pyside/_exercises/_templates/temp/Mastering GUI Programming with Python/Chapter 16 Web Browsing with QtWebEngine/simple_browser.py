@@ -7,25 +7,25 @@ ____ ? ______ QtWebEngineWidgets __ qtwe
 
 c_ MainWindow(qtw.QMainWindow):
 
-    ___ __init__(self):
+    ___  -  
         """MainWindow constructor."""
-        super().__init__()
+        s_. - ()
         # Main UI code goes here
         # navigation toolbar
-        navigation _ self.addToolBar('Navigation')
-        style _ self.style()
-        self.back _ navigation.aA..('Back')
-        self.back.setIcon(style.standardIcon(style.SP_ArrowBack))
-        self.forward _ navigation.aA..('Forward')
-        self.forward.setIcon(style.standardIcon(style.SP_ArrowForward))
-        self.reload _ navigation.aA..('Reload')
-        self.reload.setIcon(style.standardIcon(style.SP_BrowserReload))
-        self.stop _ navigation.aA..('Stop')
-        self.stop.setIcon(style.standardIcon(style.SP_BrowserStop))
-        self.urlbar _ qtw.?LE..
-        navigation.aW..(self.urlbar)
-        self.go _ navigation.aA..('Go')
-        self.go.setIcon(style.standardIcon(style.SP_DialogOkButton))
+        navigation _ addToolBar('Navigation')
+        style _ style()
+        back _ navigation.aA..('Back')
+        back.setIcon(style.standardIcon(style.SP_ArrowBack))
+        forward _ navigation.aA..('Forward')
+        forward.setIcon(style.standardIcon(style.SP_ArrowForward))
+        reload _ navigation.aA..('Reload')
+        reload.setIcon(style.standardIcon(style.SP_BrowserReload))
+        stop _ navigation.aA..('Stop')
+        stop.setIcon(style.standardIcon(style.SP_BrowserStop))
+        urlbar _ qtw.?LE..
+        navigation.aW..(urlbar)
+        go _ navigation.aA..('Go')
+        go.setIcon(style.standardIcon(style.SP_DialogOkButton))
 
         # single browser view
         #webview = qtwe.QWebEngineView()
@@ -39,31 +39,31 @@ c_ MainWindow(qtw.QMainWindow):
         #self.stop.triggered.connect(webview.stop)
 
         # browser tabs
-        self.tabs _ qtw.QTabWidget(
+        tabs _ qtw.QTabWidget(
             tabsClosable_True, movable_True)
-        self.tabs.tabCloseRequested.c..(self.tabs.removeTab)
-        self.new _ qtw.?PB..('New')
-        self.tabs.setCornerWidget(self.new)
-        self.sCW..(self.tabs)
+        tabs.tabCloseRequested.c..(tabs.removeTab)
+        new _ qtw.?PB..('New')
+        tabs.setCornerWidget(new)
+        sCW..(tabs)
 
-        self.back.t__.c..(self.on_back)
-        self.forward.t__.c..(self.on_forward)
-        self.reload.t__.c..(self.on_reload)
-        self.stop.t__.c..(self.on_stop)
-        self.go.t__.c..(self.on_go)
-        self.urlbar.rP__.c..(self.on_go)
-        self.new.c__.c..(self.add_tab)
+        back.t__.c..(on_back)
+        forward.t__.c..(on_forward)
+        reload.t__.c..(on_reload)
+        stop.t__.c..(on_stop)
+        go.t__.c..(on_go)
+        urlbar.rP__.c..(on_go)
+        new.c__.c..(add_tab)
 
         # Profile sharing
-        self.profile _ qtwe.QWebEngineProfile()
+        profile _ qtwe.QWebEngineProfile()
 
         # History
         history_dock _ qtw.QDockWidget('History')
-        self.addDockWidget(qtc.__.RightDockWidgetArea, history_dock)
-        self.history_list _ qtw.QListWidget()
-        history_dock.setWidget(self.history_list)
-        self.tabs.currentChanged.c..(self.update_history)
-        self.history_list.itemDoubleClicked.c..(self.navigate_history)
+        addDockWidget(qtc.__.RightDockWidgetArea, history_dock)
+        history_list _ qtw.QListWidget()
+        history_dock.setWidget(history_list)
+        tabs.currentChanged.c..(update_history)
+        history_list.itemDoubleClicked.c..(navigate_history)
 
         # Altering Settings
         settings _ qtwe.QWebEngineSettings.defaultSettings()
@@ -75,22 +75,22 @@ c_ MainWindow(qtw.QMainWindow):
 
         # Text search feature
         find_dock _ qtw.QDockWidget('Search')
-        self.addDockWidget(qtc.__.BottomDockWidgetArea, find_dock)
-        self.find_text _ qtw.?LE..
-        find_dock.setWidget(self.find_text)
-        self.find_text.textChanged.c..(self.text_search)
+        addDockWidget(qtc.__.BottomDockWidgetArea, find_dock)
+        find_text _ qtw.?LE..
+        find_dock.setWidget(find_text)
+        find_text.textChanged.c..(text_search)
         # init javascript
         w__ o..('finder.js', 'r') __ fh:
-            self.finder_js _ fh.read()
+            finder_js _ fh.read()
         # using QWebEngineScript
-        self.finder_script _ qtwe.QWebEngineScript()
-        self.finder_script.setSourceCode(self.finder_js)
+        finder_script _ qtwe.QWebEngineScript()
+        finder_script.setSourceCode(finder_js)
         # Ensure that our created functions exist within the main JS environment
-        self.finder_script.setWorldId(qtwe.QWebEngineScript.MainWorld)
+        finder_script.setWorldId(qtwe.QWebEngineScript.MainWorld)
 
-        self.add_tab()
+        add_tab()
         # End main UI code
-        self.s..
+        s..
 
     ##########################
     # Browser Tabs Functions #
@@ -98,25 +98,25 @@ c_ MainWindow(qtw.QMainWindow):
 
     ___ add_tab  *args):
         webview _ qtwe.QWebEngineView()
-        tab_index _ self.tabs.addTab(webview, 'New Tab')
+        tab_index _ tabs.addTab(webview, 'New Tab')
 
         webview.urlChanged.c..(
-            lambda x: self.tabs.setTabText(tab_index, x.toString()))
+            lambda x: tabs.setTabText(tab_index, x.toString()))
         webview.urlChanged.c..(
-            lambda x: self.urlbar.sT..(x.toString()))
+            lambda x: urlbar.sT..(x.toString()))
 
         # make it so pop-up windows call this method
-        webview.createWindow _ self.add_tab
+        webview.createWindow _ add_tab
 
         # History
-        webview.urlChanged.c..(self.update_history)
+        webview.urlChanged.c..(update_history)
 
         # Profile
-        page _ qtwe.QWebEnginePage(self.profile)
+        page _ qtwe.QWebEnginePage(profile)
         webview.setPage(page)
 
         # Add the finder script
-        page.scripts().insert(self.finder_script)
+        page.scripts().insert(finder_script)
 
         # set default content
         webview.setHtml(
@@ -125,21 +125,21 @@ c_ MainWindow(qtw.QMainWindow):
 
         r_ webview
 
-    ___ on_back(self):
-        self.tabs.currentWidget().back()
+    ___ on_back 
+        tabs.currentWidget().back()
 
-    ___ on_forward(self):
-        self.tabs.currentWidget().forward()
+    ___ on_forward 
+        tabs.currentWidget().forward()
 
-    ___ on_reload(self):
-        self.tabs.currentWidget().reload()
+    ___ on_reload 
+        tabs.currentWidget().reload()
 
-    ___ on_stop(self):
-        self.tabs.currentWidget().stop()
+    ___ on_stop 
+        tabs.currentWidget().stop()
 
-    ___ on_go(self):
-        self.tabs.currentWidget().load(
-            qtc.QUrl(self.urlbar.t__()))
+    ___ on_go 
+        tabs.currentWidget().load(
+            qtc.QUrl(urlbar.t__()))
 
     ##################
     # History Method #
@@ -147,19 +147,19 @@ c_ MainWindow(qtw.QMainWindow):
 
     ___ update_history  *args):
         # show history
-        self.history_list.clear()
-        webview _ self.tabs.currentWidget()
+        history_list.clear()
+        webview _ tabs.currentWidget()
         __ webview:
             history _ webview.history()
-            for history_item in reversed(history.items()):
+            ___ history_item __ reversed(history.items()):
                 list_item _ qtw.QListWidgetItem()
                 list_item.setData(qtc.__.DisplayRole, history_item.url())
-                self.history_list.addItem(list_item)
+                history_list.addItem(list_item)
 
     ___ navigate_history  item):
         qurl _ item.data(qtc.__.DisplayRole)
-        __ self.tabs.currentWidget
-            self.tabs.currentWidget().load(qurl)
+        __ tabs.currentWidget
+            tabs.currentWidget().load(qurl)
 
     ###############
     # Text Search #
@@ -168,19 +168,19 @@ c_ MainWindow(qtw.QMainWindow):
     ___ text_search  term):
         """Highlight all occurrences of "term" in the page"""
         term _ term.replace('"', '')
-        page _ self.tabs.currentWidget().page()
+        page _ tabs.currentWidget().page()
         #page.runJavaScript(self.finder_js)
         js _ f'highlight_term("{term}");'
-        page.runJavaScript(js, self.match_count)
+        page.runJavaScript(js, match_count)
 
     ___ match_count  count):
         __ count:
-            self.statusBar().showMessage(f'{count} matches ')
+            statusBar().showMessage(f'{count} matches ')
         ____
-            self.statusBar().clearMessage()
+            statusBar().clearMessage()
 
 
-__ __name__ == '__main__':
-    app _ qtw.?A..(___.argv)
+__ ______ __ ______
+    app _ qtw.?A..(___.a..
     mw _ MainWindow()
     ___.exit(app.exec())

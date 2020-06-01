@@ -53,54 +53,54 @@ ____ ?.QtDBus ______ QDBusAbstractAdaptor, QDBusConnection
 
 c_ Car(QGraphicsObject):
 
-    ___ __init__(self):
-        super(Car, self).__init__()
+    ___  -
+        super(Car, self). - ()
 
-        self.color _ QBrush(__.green)
-        self.wheelsAngle _ 0.0
-        self.speed _ 0.0
+        color _ QBrush(__.green)
+        wheelsAngle _ 0.0
+        speed _ 0.0
 
-        self.startTimer(1000 // 33)
-        self.setFlag(QGraphicsItem.ItemIsMovable, True)
-        self.setFlag(QGraphicsItem.ItemIsFocusable, True)
+        startTimer(1000 // 33)
+        setFlag(QGraphicsItem.ItemIsMovable, True)
+        setFlag(QGraphicsItem.ItemIsFocusable, True)
 
-    ___ accelerate(self):
-        __ self.speed < 10:
-            self.speed +_ 1
+    ___ accelerate 
+        __ speed < 10:
+            speed +_ 1
 
-    ___ decelerate(self):
-        __ self.speed > -10:
-            self.speed -_ 1
+    ___ decelerate 
+        __ speed > -10:
+            speed -_ 1
 
-    ___ turnLeft(self):
-        __ self.wheelsAngle > -30:
-            self.wheelsAngle -_ 5
+    ___ turnLeft 
+        __ wheelsAngle > -30:
+            wheelsAngle -_ 5
 
-    ___ turnRight(self):
-        __ self.wheelsAngle < 30:
-            self.wheelsAngle +_ 5
+    ___ turnRight 
+        __ wheelsAngle < 30:
+            wheelsAngle +_ 5
 
-    ___ boundingRect(self):
+    ___ boundingRect 
         r_ QRectF(-35, -81, 70, 115)
 
     ___ timerEvent  event):
         axelDistance _ 54.0
-        wheelsAngleRads _ (self.wheelsAngle * math.pi) / 180
+        wheelsAngleRads _ (wheelsAngle * math.pi) / 180
         turnDistance _ math.cos(wheelsAngleRads) * axelDistance * 2
         turnRateRads _ wheelsAngleRads / turnDistance
         turnRate _ (turnRateRads * 180) / math.pi
-        rotation _ self.speed * turnRate
+        rotation _ speed * turnRate
 
-        self.setTransform(QTransform().rotate(rotation), True)
-        self.setTransform(QTransform.fromTranslate(0, -self.speed), True)
-        self.update()
+        setTransform(QTransform().rotate(rotation), True)
+        setTransform(QTransform.fromTranslate(0, -speed), True)
+        update()
 
     ___ paint  painter, option, widget):
         painter.setBrush(__.gray)
         painter.drawRect(-20, -58, 40, 2)       # Front axel
         painter.drawRect(-20, 7, 40, 2)         # Rear axel
 
-        painter.setBrush(self.color)
+        painter.setBrush(color)
         painter.drawRect(-25, -79, 50, 10)      # Front wing
 
         painter.drawEllipse(-25, -48, 50, 20)   # Side pods
@@ -117,13 +117,13 @@ c_ Car(QGraphicsObject):
 
         painter.save()
         painter.translate(-20, -58)
-        painter.rotate(self.wheelsAngle)
+        painter.rotate(wheelsAngle)
         painter.drawRect(-10, -7, 10, 15)       # Front left
         painter.restore()
 
         painter.save()
         painter.translate(20, -58)
-        painter.rotate(self.wheelsAngle)
+        painter.rotate(wheelsAngle)
         painter.drawRect(0, -7, 10, 15)         # Front right
         painter.restore()
 
@@ -144,32 +144,32 @@ c_ CarInterfaceAdaptor(QDBusAbstractAdaptor):
             '  </interface>\n'
             '')
 
-    ___ __init__  parent):
-        super(CarInterfaceAdaptor, self).__init__(parent)
+    ___  -   parent):
+        super(CarInterfaceAdaptor, self). - (parent)
 
-        self.setAutoRelaySignals(True)
-
-    @pyqtSlot()
-    ___ accelerate(self):
-        self.parent().accelerate()
+        setAutoRelaySignals(True)
 
     @pyqtSlot()
-    ___ decelerate(self):
-        self.parent().decelerate()
+    ___ accelerate 
+        parent().accelerate()
 
     @pyqtSlot()
-    ___ turnLeft(self):
-        self.parent().turnLeft()
+    ___ decelerate 
+        parent().decelerate()
 
     @pyqtSlot()
-    ___ turnRight(self):
-        self.parent().turnRight()
+    ___ turnLeft 
+        parent().turnLeft()
+
+    @pyqtSlot()
+    ___ turnRight 
+        parent().turnRight()
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     scene _ QGraphicsScene()
     scene.setSceneRect(-500, -500, 1000, 1000)

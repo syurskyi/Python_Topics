@@ -4,12 +4,12 @@ ____ palette ______ PaletteGrid, PaletteHorizontal, PaletteVertical
 
 c_ Window(?W...QMainWindow):
 
-    ___ __init__(self):
-        super().__init__()
+    ___  -  
+        s_. - ()
 
         palette _ PaletteGrid('17undertones') # or PaletteHorizontal, or PaletteVertical
-        palette.selected.c..(self.show_selected_color)
-        self.sCW..(palette)
+        palette.selected.c..(show_selected_color)
+        sCW..(palette)
 
     ___ show_selected_color  c):
         print("Selected: {}".format(c))

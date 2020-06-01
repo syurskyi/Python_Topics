@@ -59,10 +59,10 @@ numUsedBytes _ 0
 
 
 c_ Producer(QThread):
-    ___ run(self):
+    ___ run 
         gl.. numUsedBytes
 
-        for i in range(DataSize):
+        ___ i __ range(DataSize):
             mutex.lock()
             __ numUsedBytes == BufferSize:
                 bufferNotFull.wait(mutex)
@@ -77,10 +77,10 @@ c_ Producer(QThread):
 
 
 c_ Consumer(QThread):
-    ___ run(self):
+    ___ run 
         gl.. numUsedBytes
 
-        for i in range(DataSize):
+        ___ i __ range(DataSize):
             mutex.lock()
             __ numUsedBytes == 0:
                 bufferNotEmpty.wait(mutex)
@@ -96,8 +96,8 @@ c_ Consumer(QThread):
         ___.stderr.w..("\n")
 
 
-__ __name__ == '__main__':
-    app _ QCoreApplication(___.argv)
+__ ______ __ ______
+    app _ QCoreApplication(___.a..
     producer _ Producer()
     consumer _ Consumer()
     producer.start()

@@ -52,33 +52,33 @@ ____ ?.?W.. ______ (?A.., QFrame, QGraphicsDropShadowEffect,
 
 
 c_ Lighting(QGraphicsView):
-    ___ __init__  parent_None):
-        super(Lighting, self).__init__(parent)
+    ___  -   parent_None):
+        super(Lighting, self). - (parent)
 
-        self.angle _ 0.0
-        self.m_scene _ QGraphicsScene()
-        self.m_lightSource _ N..
-        self.m_items _   # list
+        angle _ 0.0
+        m_scene _ QGraphicsScene()
+        m_lightSource _ N..
+        m_items _   # list
 
-        self.setScene(self.m_scene)
+        setScene(m_scene)
 
-        self.setupScene()
+        setupScene()
 
-        timer _ QTimer(self)
-        timer.timeout.c..(self.animate)
+        timer _ QTimer
+        timer.timeout.c..(animate)
         timer.setInterval(30)
         timer.start()
 
-        self.setRenderHint(QPainter.Antialiasing)
-        self.setFrameStyle(QFrame.NoFrame)
+        setRenderHint(QPainter.Antialiasing)
+        setFrameStyle(QFrame.NoFrame)
 
-    ___ setupScene(self):
-        self.m_scene.setSceneRect(-300, -200, 600, 460)
+    ___ setupScene 
+        m_scene.setSceneRect(-300, -200, 600, 460)
 
         linearGrad _ QLinearGradient(QPointF(-100, -100), QPointF(100, 100))
         linearGrad.setColorAt(0, ?C..(255, 255, 255))
         linearGrad.setColorAt(1, ?C..(192, 192, 255))
-        self.setBackgroundBrush(linearGrad)
+        setBackgroundBrush(linearGrad)
 
         radialGrad _ QRadialGradient(30, 30, 30)
         radialGrad.setColorAt(0, __.yellow)
@@ -94,11 +94,11 @@ c_ Lighting(QGraphicsView):
         painter.drawEllipse(0, 0, 60, 60)
         painter.end()
 
-        self.m_lightSource _ self.m_scene.addPixmap(pixmap)
-        self.m_lightSource.setZValue(2)
+        m_lightSource _ m_scene.addPixmap(pixmap)
+        m_lightSource.setZValue(2)
 
-        for i in range(-2, 3):
-            for j in range(-2, 3):
+        ___ i __ range(-2, 3):
+            ___ j __ range(-2, 3):
                 __ (i + j) & 1:
                     item _ QGraphicsEllipseItem(0, 0, 50, 50)
                 ____
@@ -107,21 +107,21 @@ c_ Lighting(QGraphicsView):
                 item.setPen(QPen(__.black, 1))
                 item.setBrush(QBrush(__.white))
 
-                effect _ QGraphicsDropShadowEffect(self)
+                effect _ QGraphicsDropShadowEffect
                 effect.setBlurRadius(8)
                 item.setGraphicsEffect(effect)
                 item.setZValue(1)
                 item.setPos(i * 80, j * 80)
-                self.m_scene.addItem(item)
-                self.m_items.ap..(item)
+                m_scene.addItem(item)
+                m_items.ap..(item)
 
-    ___ animate(self):
-        self.angle +_ (math.pi / 30)
-        xs _ 200 * math.sin(self.angle) - 40 + 25
-        ys _ 200 * math.cos(self.angle) - 40 + 25
-        self.m_lightSource.setPos(xs, ys)
+    ___ animate 
+        angle +_ (math.pi / 30)
+        xs _ 200 * math.sin(angle) - 40 + 25
+        ys _ 200 * math.cos(angle) - 40 + 25
+        m_lightSource.setPos(xs, ys)
 
-        for item in self.m_items:
+        ___ item __ m_items:
             effect _ item.graphicsEffect()
 
             delta _ QPointF(item.x() - xs, item.y() - ys)
@@ -132,14 +132,14 @@ c_ Lighting(QGraphicsView):
             color.setAlphaF(max(0.4, min(1 - dd / 200.0, 0.7)))
             effect.sC..(color)
 
-        self.m_scene.update()
+        m_scene.update()
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     lighting _ Lighting()
     lighting.setWindowTitle("Lighting and Shadows")

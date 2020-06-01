@@ -49,26 +49,26 @@ ____ ui_calculatorform ______ Ui_CalculatorForm
 
 
 c_ CalculatorForm(QWidget):
-    ___ __init__  parent_None):
-        super(CalculatorForm, self).__init__(parent)
+    ___  -   parent_None):
+        super(CalculatorForm, self). - (parent)
 
-        self.ui _ Ui_CalculatorForm()
+        ui _ Ui_CalculatorForm()
 
-        self.ui.setupUi(self)
+        ui.setupUi
 
     @pyqtSlot(int)
     ___ on_inputSpinBox1_valueChanged  value):
-        self.ui.outputWidget.sT..(str(value + self.ui.inputSpinBox2.value()))
+        ui.outputWidget.sT..(str(value + ui.inputSpinBox2.value()))
 
     @pyqtSlot(int)
     ___ on_inputSpinBox2_valueChanged  value):
-        self.ui.outputWidget.sT..(str(value + self.ui.inputSpinBox1.value()))
+        ui.outputWidget.sT..(str(value + ui.inputSpinBox1.value()))
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     calculator _ CalculatorForm()
     calculator.s..
     ___.exit(app.exec_())

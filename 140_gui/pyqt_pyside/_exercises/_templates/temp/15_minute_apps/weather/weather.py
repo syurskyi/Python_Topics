@@ -40,12 +40,12 @@ c_ WeatherWorker(QRunnable):
     signals _ WorkerSignals()
     is_interrupted _ False
 
-    ___ __init__  location):
-        super(WeatherWorker, self).__init__()
-        self.location _ location
+    ___  -   location):
+        super(WeatherWorker, self). - ()
+        location _ location
 
     @pyqtSlot()
-    ___ run(self):
+    ___ run 
         try:
             params _ dict(
                 q_self.location,
@@ -64,60 +64,60 @@ c_ WeatherWorker(QRunnable):
             r _ requests.g..(url)
             forecast _ json.loads(r.t__)
 
-            self.signals.result.emit(weather, forecast)
+            signals.result.emit(weather, forecast)
 
         except Exception __ e:
-            self.signals.error.emit(str(e))
+            signals.error.emit(str(e))
 
-        self.signals.finished.emit()
+        signals.finished.emit()
 
 
 
 c_ MainWindow(QMainWindow, Ui_MainWindow):
 
-    ___ __init__  *args, **kwargs):
-        super(MainWindow, self).__init__(*args, **kwargs)
-        self.setupUi(self)
+    ___  -   *args, **kwargs):
+        super(MainWindow, self). - (*args, **kwargs)
+        setupUi
 
-        self.pushButton.pressed.c..(self.update_weather)
+        pushButton.pressed.c..(update_weather)
 
-        self.threadpool _ QThreadPool()
+        threadpool _ QThreadPool()
 
-        self.s..
+        s..
 
 
     ___ alert  message):
         alert _ ?MB...warning  "Warning", message)
 
-    ___ update_weather(self):
-        worker _ WeatherWorker(self.lineEdit.t__())
-        worker.signals.result.c..(self.weather_result)
-        worker.signals.error.c..(self.alert)
-        self.threadpool.start(worker)
+    ___ update_weather 
+        worker _ WeatherWorker(lineEdit.t__())
+        worker.signals.result.c..(weather_result)
+        worker.signals.error.c..(alert)
+        threadpool.start(worker)
 
     ___ weather_result  weather, forecasts):
-        self.latitudeLabel.sT..("%.2f °" % weather['coord']['lat'])
-        self.longitudeLabel.sT..("%.2f °" % weather['coord']['lon'])
+        latitudeLabel.sT..("%.2f °" % weather['coord']['lat'])
+        longitudeLabel.sT..("%.2f °" % weather['coord']['lon'])
 
-        self.windLabel.sT..("%.2f m/s" % weather['wind']['speed'])
+        windLabel.sT..("%.2f m/s" % weather['wind']['speed'])
 
-        self.temperatureLabel.sT..("%.1f °C" % weather['main']['temp'])
-        self.pressureLabel.sT..("%d" % weather['main']['pressure'])
-        self.humidityLabel.sT..("%d" % weather['main']['humidity'])
+        temperatureLabel.sT..("%.1f °C" % weather['main']['temp'])
+        pressureLabel.sT..("%d" % weather['main']['pressure'])
+        humidityLabel.sT..("%d" % weather['main']['humidity'])
 
-        self.sunriseLabel.sT..(from_ts_to_time_of_day(weather['sys']['sunrise']))
+        sunriseLabel.sT..(from_ts_to_time_of_day(weather['sys']['sunrise']))
 
-        self.weatherLabel.sT..("%s (%s)" % (
+        weatherLabel.sT..("%s (%s)" % (
             weather['weather'][0]['main'],
             weather['weather'][0]['description']
         )
                                   )
 
-        self.set_weather_icon(self.weatherIcon, weather['weather'])
+        set_weather_icon(weatherIcon, weather['weather'])
 
-        for n, forecast in enumerate(forecasts['list'][:5], 1):
+        ___ n, forecast __ en..(forecasts['list'][:5], 1):
             getattr  'forecastTime%d' % n).sT..(from_ts_to_time_of_day(forecast['dt']))
-            self.set_weather_icon(getattr  'forecastIcon%d' % n), forecast['weather'])
+            set_weather_icon(getattr  'forecastIcon%d' % n), forecast['weather'])
             getattr  'forecastTemp%d' % n).sT..("%.1f °C" % forecast['main']['temp'])
 
     ___ set_weather_icon  label, weather):
@@ -130,7 +130,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
         )
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     app _ ?
     window _ MainWindow()

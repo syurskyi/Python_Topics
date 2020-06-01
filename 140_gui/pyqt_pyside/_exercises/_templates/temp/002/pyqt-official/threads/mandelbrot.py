@@ -62,53 +62,53 @@ c_ RenderThread(QThread):
 
     renderedImage _ pyqtSignal(QImage, float)
 
-    ___ __init__  parent_None):
-        super(RenderThread, self).__init__(parent)
+    ___  -   parent_None):
+        super(RenderThread, self). - (parent)
 
-        self.mutex _ QMutex()
-        self.condition _ QWaitCondition()
-        self.centerX _ 0.0
-        self.centerY _ 0.0
-        self.scaleFactor _ 0.0
-        self.resultSize _ QSize()
-        self.colormap _   # list
+        mutex _ QMutex()
+        condition _ QWaitCondition()
+        centerX _ 0.0
+        centerY _ 0.0
+        scaleFactor _ 0.0
+        resultSize _ QSize()
+        colormap _   # list
 
-        self.restart _ False
-        self.abort _ False
+        restart _ False
+        abort _ False
 
-        for i in range(RenderThread.ColormapSize):
-            self.colormap.ap..(self.rgbFromWaveLength(380.0 + (i * 400.0 / RenderThread.ColormapSize)))
+        ___ i __ range(RenderThread.ColormapSize):
+            colormap.ap..(rgbFromWaveLength(380.0 + (i * 400.0 / RenderThread.ColormapSize)))
 
-    ___ __del__(self):
-        self.mutex.lock()
-        self.abort _ True
-        self.condition.wakeOne()
-        self.mutex.unlock()
+    ___ __del__ 
+        mutex.lock()
+        abort _ True
+        condition.wakeOne()
+        mutex.unlock()
 
-        self.wait()
+        wait()
 
     ___ render  centerX, centerY, scaleFactor, resultSize):
-        locker _ QMutexLocker(self.mutex)
+        locker _ QMutexLocker(mutex)
 
-        self.centerX _ centerX
-        self.centerY _ centerY
-        self.scaleFactor _ scaleFactor
-        self.resultSize _ resultSize
+        centerX _ centerX
+        centerY _ centerY
+        scaleFactor _ scaleFactor
+        resultSize _ resultSize
 
-        __ no. self.isRunning
-            self.start(QThread.LowPriority)
+        __ no. isRunning
+            start(QThread.LowPriority)
         ____
-            self.restart _ True
-            self.condition.wakeOne()
+            restart _ True
+            condition.wakeOne()
 
-    ___ run(self):
+    ___ run 
         w__ T..
-            self.mutex.lock()
-            resultSize _ self.resultSize
-            scaleFactor _ self.scaleFactor
-            centerX _ self.centerX
-            centerY _ self.centerY
-            self.mutex.unlock()
+            mutex.lock()
+            resultSize _ resultSize
+            scaleFactor _ scaleFactor
+            centerX _ centerX
+            centerY _ centerY
+            mutex.unlock()
 
             halfWidth _ resultSize.width() // 2
             halfHeight _ resultSize.height() // 2
@@ -122,15 +122,15 @@ c_ RenderThread(QThread):
                 Limit _ 4
                 allBlack _ True
 
-                for y in range(-halfHeight, halfHeight):
-                    __ self.restart:
+                ___ y __ range(-halfHeight, halfHeight):
+                    __ restart:
                         break
-                    __ self.abort:
+                    __ abort:
                         r_
 
                     ay _ 1j * (centerY + (y * scaleFactor))
 
-                    for x in range(-halfWidth, halfWidth):
+                    ___ x __ range(-halfWidth, halfWidth):
                         c0 _ centerX + (x * scaleFactor) + ay
                         c _ c0
                         numIterations _ 0
@@ -155,7 +155,7 @@ c_ RenderThread(QThread):
 
                         __ numIterations < MaxIterations:
                             image.setPixel(x + halfWidth, y + halfHeight,
-                                           self.colormap[numIterations % RenderThread.ColormapSize])
+                                           colormap[numIterations % RenderThread.ColormapSize])
                             allBlack _ False
                         ____
                             image.setPixel(x + halfWidth, y + halfHeight, qRgb(0, 0, 0))
@@ -163,15 +163,15 @@ c_ RenderThread(QThread):
                 __ allBlack and curpass == 0:
                     curpass _ 4
                 ____
-                    __ no. self.restart:
-                        self.renderedImage.emit(image, scaleFactor)
+                    __ no. restart:
+                        renderedImage.emit(image, scaleFactor)
                     curpass +_ 1
 
-            self.mutex.lock()
-            __ no. self.restart:
-                self.condition.wait(self.mutex)
-            self.restart _ False
-            self.mutex.unlock()
+            mutex.lock()
+            __ no. restart:
+                condition.wait(mutex)
+            restart _ False
+            mutex.unlock()
 
     ___ rgbFromWaveLength  wave):
         r _ 0.0
@@ -210,50 +210,50 @@ c_ RenderThread(QThread):
 
 
 c_ MandelbrotWidget(QWidget):
-    ___ __init__  parent_None):
-        super(MandelbrotWidget, self).__init__(parent)
+    ___  -   parent_None):
+        super(MandelbrotWidget, self). - (parent)
 
-        self.thread _ RenderThread()
-        self.pixmap _ QPixmap()
-        self.pixmapOffset _ QPoint()
-        self.lastDragPos _ QPoint()
+        thread _ RenderThread()
+        pixmap _ QPixmap()
+        pixmapOffset _ QPoint()
+        lastDragPos _ QPoint()
 
-        self.centerX _ DefaultCenterX
-        self.centerY _ DefaultCenterY
-        self.pixmapScale _ DefaultScale
-        self.curScale _ DefaultScale
+        centerX _ DefaultCenterX
+        centerY _ DefaultCenterY
+        pixmapScale _ DefaultScale
+        curScale _ DefaultScale
 
-        self.thread.renderedImage.c..(self.updatePixmap)
+        thread.renderedImage.c..(updatePixmap)
 
-        self.setWindowTitle("Mandelbrot")
-        self.setCursor(__.CrossCursor)
-        self.resize(550, 400)
+        setWindowTitle("Mandelbrot")
+        setCursor(__.CrossCursor)
+        resize(550, 400)
 
     ___ paintEvent  event):
-        painter _ QPainter(self)
-        painter.fillRect(self.rect(), __.black)
+        painter _ QPainter
+        painter.fillRect(rect(), __.black)
 
-        __ self.pixmap.isNull
+        __ pixmap.isNull
             painter.setPen(__.white)
-            painter.drawText(self.rect(), __.AlignCenter,
+            painter.drawText(rect(), __.AlignCenter,
                     "Rendering initial image, please wait...")
             r_
 
-        __ self.curScale == self.pixmapScale:
-            painter.drawPixmap(self.pixmapOffset, self.pixmap)
+        __ curScale == pixmapScale:
+            painter.drawPixmap(pixmapOffset, pixmap)
         ____
-            scaleFactor _ self.pixmapScale / self.curScale
-            newWidth _ int(self.pixmap.width() * scaleFactor)
-            newHeight _ int(self.pixmap.height() * scaleFactor)
-            newX _ self.pixmapOffset.x() + (self.pixmap.width() - newWidth) / 2
-            newY _ self.pixmapOffset.y() + (self.pixmap.height() - newHeight) / 2
+            scaleFactor _ pixmapScale / curScale
+            newWidth _ int(pixmap.width() * scaleFactor)
+            newHeight _ int(pixmap.height() * scaleFactor)
+            newX _ pixmapOffset.x() + (pixmap.width() - newWidth) / 2
+            newY _ pixmapOffset.y() + (pixmap.height() - newHeight) / 2
 
             painter.save()
             painter.translate(newX, newY)
             painter.scale(scaleFactor, scaleFactor)
             exposed, _ _ painter.matrix().inverted()
-            exposed _ exposed.mapRect(self.rect()).adjusted(-1, -1, 1, 1)
-            painter.drawPixmap(exposed, self.pixmap, exposed)
+            exposed _ exposed.mapRect(rect()).adjusted(-1, -1, 1, 1)
+            painter.drawPixmap(exposed, pixmap, exposed)
             painter.restore()
 
         t__ _ "Use mouse wheel or the '+' and '-' keys to zoom. Press and " \
@@ -263,85 +263,85 @@ c_ MandelbrotWidget(QWidget):
 
         painter.setPen(__.NoPen)
         painter.setBrush(?C..(0, 0, 0, 127))
-        painter.drawRect((self.width() - textWidth) / 2 - 5, 0, textWidth + 10,
+        painter.drawRect((width() - textWidth) / 2 - 5, 0, textWidth + 10,
                 metrics.lineSpacing() + 5)
         painter.setPen(__.white)
-        painter.drawText((self.width() - textWidth) / 2,
+        painter.drawText((width() - textWidth) / 2,
                 metrics.leading() + metrics.ascent(), t__)
 
     ___ resizeEvent  event):
-        self.thread.render(self.centerX, self.centerY, self.curScale,
-                self.size())
+        thread.render(centerX, centerY, curScale,
+                size())
 
     ___ keyPressEvent  event):
         __ event.key() == __.Key_Plus:
-            self.zoom(ZoomInFactor)
+            zoom(ZoomInFactor)
         ____ event.key() == __.Key_Minus:
-            self.zoom(ZoomOutFactor)
+            zoom(ZoomOutFactor)
         ____ event.key() == __.Key_Left:
-            self.scroll(-ScrollStep, 0)
+            scroll(-ScrollStep, 0)
         ____ event.key() == __.Key_Right:
-            self.scroll(+ScrollStep, 0)
+            scroll(+ScrollStep, 0)
         ____ event.key() == __.Key_Down:
-            self.scroll(0, -ScrollStep)
+            scroll(0, -ScrollStep)
         ____ event.key() == __.Key_Up:
-            self.scroll(0, +ScrollStep)
+            scroll(0, +ScrollStep)
         ____
             super(MandelbrotWidget, self).keyPressEvent(event)
 
     ___ wheelEvent  event):
         numDegrees _ event.angleDelta().y() / 8
         numSteps _ numDegrees / 15.0
-        self.zoom(pow(ZoomInFactor, numSteps))
+        zoom(pow(ZoomInFactor, numSteps))
 
     ___ mousePressEvent  event):
         __ event.buttons() == __.LeftButton:
-            self.lastDragPos _ QPoint(event.pos())
+            lastDragPos _ QPoint(event.pos())
 
     ___ mouseMoveEvent  event):
         __ event.buttons() & __.LeftButton:
-            self.pixmapOffset +_ event.pos() - self.lastDragPos
-            self.lastDragPos _ QPoint(event.pos())
-            self.update()
+            pixmapOffset +_ event.pos() - lastDragPos
+            lastDragPos _ QPoint(event.pos())
+            update()
 
     ___ mouseReleaseEvent  event):
         __ event.button() == __.LeftButton:
-            self.pixmapOffset +_ event.pos() - self.lastDragPos
-            self.lastDragPos _ QPoint()
+            pixmapOffset +_ event.pos() - lastDragPos
+            lastDragPos _ QPoint()
 
-            deltaX _ (self.width() - self.pixmap.width()) / 2 - self.pixmapOffset.x()
-            deltaY _ (self.height() - self.pixmap.height()) / 2 - self.pixmapOffset.y()
-            self.scroll(deltaX, deltaY)
+            deltaX _ (width() - pixmap.width()) / 2 - pixmapOffset.x()
+            deltaY _ (height() - pixmap.height()) / 2 - pixmapOffset.y()
+            scroll(deltaX, deltaY)
 
     ___ updatePixmap  image, scaleFactor):
-        __ no. self.lastDragPos.isNull
+        __ no. lastDragPos.isNull
             r_
 
-        self.pixmap _ QPixmap.fromImage(image)
-        self.pixmapOffset _ QPoint()
-        self.lastDragPosition _ QPoint()
-        self.pixmapScale _ scaleFactor
-        self.update()
+        pixmap _ QPixmap.fromImage(image)
+        pixmapOffset _ QPoint()
+        lastDragPosition _ QPoint()
+        pixmapScale _ scaleFactor
+        update()
 
     ___ zoom  zoomFactor):
-        self.curScale *_ zoomFactor
-        self.update()
-        self.thread.render(self.centerX, self.centerY, self.curScale,
-                self.size())
+        curScale *_ zoomFactor
+        update()
+        thread.render(centerX, centerY, curScale,
+                size())
 
     ___ scroll  deltaX, deltaY):
-        self.centerX +_ deltaX * self.curScale
-        self.centerY +_ deltaY * self.curScale
-        self.update()
-        self.thread.render(self.centerX, self.centerY, self.curScale,
-                self.size())
+        centerX +_ deltaX * curScale
+        centerY +_ deltaY * curScale
+        update()
+        thread.render(centerX, centerY, curScale,
+                size())
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     widget _ MandelbrotWidget()
     widget.s..
     ___.exit(app.exec_())

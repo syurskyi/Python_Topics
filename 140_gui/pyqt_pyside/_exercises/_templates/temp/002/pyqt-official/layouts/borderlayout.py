@@ -48,52 +48,52 @@ ____ ?.?W.. ______ (?A.., QFrame, QLabel, QLayout,
 
 
 c_ ItemWrapper(object):
-    ___ __init__  i, p):
-        self.item _ i
-        self.position _ p
+    ___  -   i, p):
+        item _ i
+        position _ p
 
 
 c_ BorderLayout(QLayout):
     West, North, South, East, Center _ range(5)
     MinimumSize, SizeHint _ range(2)
 
-    ___ __init__  parent_None, margin_None, spacing_-1):
-        super(BorderLayout, self).__init__(parent)
+    ___  -   parent_None, margin_None, spacing_-1):
+        super(BorderLayout, self). - (parent)
 
         __ margin __ no. N..:
-            self.setContentsMargins(margin, margin, margin, margin)
+            setContentsMargins(margin, margin, margin, margin)
 
-        self.setSpacing(spacing)
-        self.list _   # list
+        setSpacing(spacing)
+        list _   # list
 
-    ___ __del__(self):
-        l _ self.takeAt(0)
+    ___ __del__
+        l _ takeAt(0)
         w__ l __ no. N..:
-            l _ self.takeAt(0)
+            l _ takeAt(0)
 
     ___ addItem  item):
-        self.add(item, self.West)
+        add(item, West)
 
     ___ aW..  widget, position):
-        self.add(QWidgetItem(widget), position)
+        add(QWidgetItem(widget), position)
 
-    ___ expandingDirections(self):
+    ___ expandingDirections
         r_ __.Horizontal | __.Vertical
 
-    ___ hasHeightForWidth(self):
+    ___ hasHeightForWidth
         r_ False
 
-    ___ count(self):
-        r_ le.(self.list)
+    ___ count
+        r_ le.(list)
 
     ___ itemAt  index):
-        __ index < le.(self.list):
-            r_ self.list[index].item
+        __ index < le.(list):
+            r_ list[index].item
 
         r_ N..
 
-    ___ minimumSize(self):
-        r_ self.calculateSize(self.MinimumSize)
+    ___ minimumSize
+        r_ calculateSize(MinimumSize)
 
     ___ setGeometry  rect):
         center _ N..
@@ -105,50 +105,50 @@ c_ BorderLayout(QLayout):
 
         super(BorderLayout, self).setGeometry(rect)
 
-        for wrapper in self.list:
+        ___ wrapper __ list:
             item _ wrapper.item
             position _ wrapper.position
 
-            __ position == self.North:
+            __ position == North:
                 item.setGeometry(QRect(rect.x(), northHeight,
                         rect.width(), item.sizeHint().height()))    
 
-                northHeight +_ item.geometry().height() + self.spacing()
+                northHeight +_ item.geometry().height() + spacing()
 
-            ____ position == self.South:
+            ____ position == South:
                 item.setGeometry(QRect(item.geometry().x(),
                         item.geometry().y(), rect.width(),
                         item.sizeHint().height()))
 
-                southHeight +_ item.geometry().height() + self.spacing()
+                southHeight +_ item.geometry().height() + spacing()
 
                 item.setGeometry(QRect(rect.x(),
-                        rect.y() + rect.height() - southHeight + self.spacing(),
+                        rect.y() + rect.height() - southHeight + spacing(),
                         item.geometry().width(), item.geometry().height()))
 
-            ____ position == self.Center:
+            ____ position == Center:
                 center _ wrapper
 
         centerHeight _ rect.height() - northHeight - southHeight
 
-        for wrapper in self.list:
+        ___ wrapper __ list:
             item _ wrapper.item
             position _ wrapper.position
 
-            __ position == self.West:
+            __ position == West:
                 item.setGeometry(QRect(rect.x() + westWidth,
                         northHeight, item.sizeHint().width(), centerHeight))    
 
-                westWidth +_ item.geometry().width() + self.spacing()
+                westWidth +_ item.geometry().width() + spacing()
 
-            ____ position == self.East:
+            ____ position == East:
                 item.setGeometry(QRect(item.geometry().x(),
                         item.geometry().y(), item.sizeHint().width(),
                         centerHeight))
 
-                eastWidth +_ item.geometry().width() + self.spacing()
+                eastWidth +_ item.geometry().width() + spacing()
 
-                item.setGeometry(QRect(rect.x() + rect.width() - eastWidth + self.spacing(),
+                item.setGeometry(QRect(rect.x() + rect.width() - eastWidth + spacing(),
                         northHeight, item.geometry().width(),
                         item.geometry().height()))
 
@@ -156,43 +156,43 @@ c_ BorderLayout(QLayout):
             center.item.setGeometry(QRect(westWidth, northHeight,
                     rect.width() - eastWidth - westWidth, centerHeight))
 
-    ___ sizeHint(self):
-        r_ self.calculateSize(self.SizeHint)
+    ___ sizeHint
+        r_ calculateSize(SizeHint)
 
     ___ takeAt  index):
-        __ index >_ 0 and index < le.(self.list):
-            layoutStruct _ self.list.p.. index)
+        __ index >_ 0 and index < le.(list):
+            layoutStruct _ list.p.. index)
             r_ layoutStruct.item
 
         r_ N..
 
     ___ add  item, position):
-        self.list.ap..(ItemWrapper(item, position))
+        list.ap..(ItemWrapper(item, position))
 
     ___ calculateSize  sizeType):
         totalSize _ QSize()
 
-        for wrapper in self.list:
+        ___ wrapper __ list:
             position _ wrapper.position
             itemSize _ QSize()
 
-            __ sizeType == self.MinimumSize:
+            __ sizeType == MinimumSize:
                 itemSize _ wrapper.item.minimumSize()
             ____ # sizeType == self.SizeHint
                 itemSize _ wrapper.item.sizeHint()
 
-            __ position in (self.North, self.South, self.Center):
+            __ position __ (North, South, Center):
                 totalSize.setHeight(totalSize.height() + itemSize.height())
 
-            __ position in (self.West, self.East, self.Center):
+            __ position __ (West, East, Center):
                 totalSize.setWidth(totalSize.width() + itemSize.width())
 
         r_ totalSize
 
 
 c_ Window(QWidget):
-    ___ __init__(self):
-        super(Window, self).__init__()
+    ___  -
+        super(Window, self). - ()
 
         centralWidget _ QTextBrowser()
         centralWidget.sPT..("Central widget")
@@ -204,24 +204,24 @@ c_ Window(QWidget):
         # doesn't take ownership of the widgets until setLayout() is called.
         # Therefore we keep a local reference to each label to prevent it being
         # garbage collected too soon.
-        label_n _ self.createLabel("North")
+        label_n _ createLabel("North")
         layout.aW..(label_n, BorderLayout.North)
 
-        label_w _ self.createLabel("West")
+        label_w _ createLabel("West")
         layout.aW..(label_w, BorderLayout.West)
 
-        label_e1 _ self.createLabel("East 1")
+        label_e1 _ createLabel("East 1")
         layout.aW..(label_e1, BorderLayout.East)
 
-        label_e2 _ self.createLabel("East 2")
+        label_e2 _ createLabel("East 2")
         layout.aW..(label_e2, BorderLayout.East)
 
-        label_s _ self.createLabel("South")
+        label_s _ createLabel("South")
         layout.aW..(label_s, BorderLayout.South)
 
-        self.sL..(layout)
+        sL..(layout)
 
-        self.setWindowTitle("Border Layout")
+        setWindowTitle("Border Layout")
 
     ___ createLabel  t__):
         label _ QLabel(t__)
@@ -230,11 +230,11 @@ c_ Window(QWidget):
         r_ label
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     window _ Window()
     window.s..
     ___.exit(app.exec_())

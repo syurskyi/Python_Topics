@@ -31,8 +31,8 @@ ___ findrow(i):
     delrow _ i.row()
 
 
-__ __name__ == '__main__':
-    app _ ?W...?A..(___.argv)
+__ ______ __ ______
+    app _ ?W...?A..(___.a..
     db _ ?S...?SD...aD..('QSQLITE')
     db.sDN..('sports.db')
     model _ ?S...?STM..()

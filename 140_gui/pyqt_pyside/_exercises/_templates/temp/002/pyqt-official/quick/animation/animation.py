@@ -58,7 +58,7 @@ ______ shared_rc
 ______ animation_rc
 
 
-app _ QGuiApplication(___.argv)
+app _ QGuiApplication(___.a..
 
 view _ QQuickView()
 view.engine().quit.c..(app.quit)

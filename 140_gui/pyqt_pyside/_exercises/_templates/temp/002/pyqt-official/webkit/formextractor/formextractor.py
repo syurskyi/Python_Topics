@@ -53,88 +53,88 @@ ____ ui_formextractor ______ Ui_Form
 
 
 c_ FormExtractor(QWidget):
-    ___ __init__  parent_None):
-        super(FormExtractor, self).__init__(parent)
+    ___  -   parent_None):
+        super(FormExtractor, self). - (parent)
 
-        self.ui _ Ui_Form()
-        self.ui.setupUi(self)
+        ui _ Ui_Form()
+        ui.setupUi
 
-        webView _ self.ui.webView
+        webView _ ui.webView
         webView.setUrl(QUrl('qrc:/form.html'))
         webView.page().mainFrame().javaScriptWindowObjectCleared.c..(
-                self.populateJavaScriptWindowObject)
+                populateJavaScriptWindowObject)
 
-        self.resize(300, 300)
+        resize(300, 300)
  
     @pyqtSlot()
-    ___ submit(self):
-        frame _ self.ui.webView.page().mainFrame()
+    ___ submit 
+        frame _ ui.webView.page().mainFrame()
         firstName _ frame.findFirstElement('#firstname')
         lastName _ frame.findFirstElement('#lastname')
         maleGender _ frame.findFirstElement('#genderMale')
         femaleGender _ frame.findFirstElement('#genderFemale')
         updates _ frame.findFirstElement('#updates')
 
-        self.ui.firstNameEdit.sT..(firstName.evaluateJavaScript('this.value'))
-        self.ui.lastNameEdit.sT..(lastName.evaluateJavaScript('this.value'))
+        ui.firstNameEdit.sT..(firstName.evaluateJavaScript('this.value'))
+        ui.lastNameEdit.sT..(lastName.evaluateJavaScript('this.value'))
 
         __ maleGender.evaluateJavaScript('this.checked'):
-            self.ui.genderEdit.sT..(
+            ui.genderEdit.sT..(
                     maleGender.evaluateJavaScript('this.value'))
         ____ femaleGender.evaluateJavaScript('this.checked'):
-            self.ui.genderEdit.sT..(
+            ui.genderEdit.sT..(
                     femaleGender.evaluateJavaScript('this.value'))
 
         __ updates.evaluateJavaScript('this.checked'):
-            self.ui.updatesEdit.sT..("Yes")
+            ui.updatesEdit.sT..("Yes")
         ____
-            self.ui.updatesEdit.sT..("No")
+            ui.updatesEdit.sT..("No")
 
-    ___ populateJavaScriptWindowObject(self):
-        self.ui.webView.page().mainFrame().addToJavaScriptWindowObject(
+    ___ populateJavaScriptWindowObject 
+        ui.webView.page().mainFrame().addToJavaScriptWindowObject(
                 'formExtractor', self)
 
 
 c_ MainWindow ?MW..
-    ___ __init__(self):
-        super(MainWindow, self).__init__()
+    ___  -
+        super(MainWindow, self). - ()
 
-        self.createActions()
-        self.createMenus()
-        self.centralWidget _ FormExtractor(self)
-        self.sCW..(self.centralWidget)
+        createActions()
+        createMenus()
+        centralWidget _ FormExtractor
+        sCW..(centralWidget)
     
-    ___ createActions(self):
-        self.exitAct _ ?A..("E&xit", self, statusTip_"Exit the application",
+    ___ createActions 
+        exitAct _ ?A..("E&xit", self, statusTip_"Exit the application",
                 shortcut_QKeySequence.Quit, triggered_self.close)
 
-        self.aboutAct _ ?A..("&About", self,
+        aboutAct _ ?A..("&About", self,
                 statusTip_"Show the application's About box",
                 triggered_self.about)
 
-        self.aboutQtAct _ ?A..("About &Qt", self,
+        aboutQtAct _ ?A..("About &Qt", self,
                 statusTip_"Show the Qt library's About box",
                 triggered_QApplication.instance().aboutQt)
 
-    ___ createMenus(self):
-        fileMenu _ self.mB.. .aM..("&File")
-        fileMenu.aA..(self.exitAct)
-        self.mB.. .addSeparator()
-        helpMenu _ self.mB.. .aM..("&Help")
-        helpMenu.aA..(self.aboutAct)
-        helpMenu.aA..(self.aboutQtAct)
+    ___ createMenus 
+        fileMenu _ mB.. .aM..("&File")
+        fileMenu.aA..(exitAct)
+        mB.. .addSeparator()
+        helpMenu _ mB.. .aM..("&Help")
+        helpMenu.aA..(aboutAct)
+        helpMenu.aA..(aboutQtAct)
 
-    ___ about(self):
+    ___ about 
         ?MB...about  "About Form Extractor",
                 "The <b>Form Extractor</b> example demonstrates how to "
                 "extract data from a web form using QtWebKit.")
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     mainWindow _ MainWindow()
     mainWindow.setWindowTitle("Form Extractor")

@@ -56,7 +56,7 @@ ______ stringlistmodel_rc
 # get mixed up with another of the same name.
 os.chdir(__.p__ .dirname(__.p__ .abspath(__file__)))
 
-app _ QGuiApplication(___.argv)
+app _ QGuiApplication(___.a..
 
 dataList _ ["Item 1", "Item 2", "Item 3", "Item 4"]
 

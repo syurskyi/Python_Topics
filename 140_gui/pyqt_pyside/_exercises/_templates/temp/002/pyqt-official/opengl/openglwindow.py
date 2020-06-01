@@ -51,74 +51,74 @@ ____ ?.?G.. ______ (QGuiApplication, QMatrix4x4, QOpenGLContext,
 
 
 c_ OpenGLWindow(QWindow):
-    ___ __init__  parent_None):
-        super(OpenGLWindow, self).__init__(parent)
+    ___  -   parent_None):
+        super(OpenGLWindow, self). - (parent)
 
-        self.m_update_pending _ False
-        self.m_animating _ False
-        self.m_context _ N..
-        self.m_gl _ N..
+        m_update_pending _ False
+        m_animating _ False
+        m_context _ N..
+        m_gl _ N..
 
-        self.setSurfaceType(QWindow.OpenGLSurface)
+        setSurfaceType(QWindow.OpenGLSurface)
 
-    ___ initialize(self):
+    ___ initialize 
         pass
 
     ___ setAnimating  animating):
-        self.m_animating _ animating
+        m_animating _ animating
 
         __ animating:
-            self.renderLater()
+            renderLater()
 
-    ___ renderLater(self):
-        __ no. self.m_update_pending:
-            self.m_update_pending _ True
+    ___ renderLater 
+        __ no. m_update_pending:
+            m_update_pending _ True
             QGuiApplication.postEvent  QEvent(QEvent.UpdateRequest))
 
-    ___ renderNow(self):
-        __ no. self.isExposed
+    ___ renderNow 
+        __ no. isExposed
             r_
 
-        self.m_update_pending _ False
+        m_update_pending _ False
 
         needsInitialize _ False
 
-        __ self.m_context __ N..:
-            self.m_context _ QOpenGLContext(self)
-            self.m_context.setFormat(self.requestedFormat())
-            self.m_context.create()
+        __ m_context __ N..:
+            m_context _ QOpenGLContext
+            m_context.setFormat(requestedFormat())
+            m_context.create()
 
             needsInitialize _ True
 
-        self.m_context.makeCurrent(self)
+        m_context.makeCurrent
 
         __ needsInitialize:
             version_profile _ QOpenGLVersionProfile()
             version_profile.setVersion(2, 0)
-            self.m_gl _ self.m_context.versionFunctions(version_profile)
-            self.m_gl.initializeOpenGLFunctions()
+            m_gl _ m_context.versionFunctions(version_profile)
+            m_gl.initializeOpenGLFunctions()
 
-            self.initialize()
+            initialize()
 
-        self.render(self.m_gl)
+        render(m_gl)
 
-        self.m_context.swapBuffers(self)
+        m_context.swapBuffers
 
-        __ self.m_animating:
-            self.renderLater()
+        __ m_animating:
+            renderLater()
 
     ___ event  event):
         __ event.type() == QEvent.UpdateRequest:
-            self.renderNow()
+            renderNow()
             r_ True
 
         r_ super(OpenGLWindow, self).event(event)
 
     ___ exposeEvent  event):
-        self.renderNow()
+        renderNow()
 
     ___ resizeEvent  event):
-        self.renderNow()
+        renderNow()
 
 
 c_ TriangleWindow(OpenGLWindow):
@@ -140,75 +140,75 @@ void main() {
 }
 '''
 
-    ___ __init__(self):
-        super(TriangleWindow, self).__init__()
+    ___  -
+        super(TriangleWindow, self). - ()
 
-        self.m_program _ 0
-        self.m_frame _ 0
+        m_program _ 0
+        m_frame _ 0
 
-        self.m_posAttr _ 0
-        self.m_colAttr _ 0
-        self.m_matrixUniform _ 0
+        m_posAttr _ 0
+        m_colAttr _ 0
+        m_matrixUniform _ 0
 
-    ___ initialize(self):
-        self.m_program _ QOpenGLShaderProgram(self)
+    ___ initialize 
+        m_program _ QOpenGLShaderProgram
 
-        self.m_program.addShaderFromSourceCode(QOpenGLShader.Vertex,
-                self.vertexShaderSource)
-        self.m_program.addShaderFromSourceCode(QOpenGLShader.Fragment,
-                self.fragmentShaderSource)
+        m_program.addShaderFromSourceCode(QOpenGLShader.Vertex,
+                vertexShaderSource)
+        m_program.addShaderFromSourceCode(QOpenGLShader.Fragment,
+                fragmentShaderSource)
 
-        self.m_program.link()
+        m_program.link()
 
-        self.m_posAttr _ self.m_program.attributeLocation('posAttr')
-        self.m_colAttr _ self.m_program.attributeLocation('colAttr')
-        self.m_matrixUniform _ self.m_program.uniformLocation('matrix')
+        m_posAttr _ m_program.attributeLocation('posAttr')
+        m_colAttr _ m_program.attributeLocation('colAttr')
+        m_matrixUniform _ m_program.uniformLocation('matrix')
 
     ___ render  gl):
-        gl.glViewport(0, 0, self.width(), self.height())
+        gl.glViewport(0, 0, width(), height())
 
         gl.glClear(gl.GL_COLOR_BUFFER_BIT)
 
-        self.m_program.bind()
+        m_program.bind()
 
         matrix _ QMatrix4x4()
         matrix.perspective(60, 4.0/3.0, 0.1, 100.0)
         matrix.translate(0, 0, -2)
-        matrix.rotate(100.0 * self.m_frame / self.screen().refreshRate(),
+        matrix.rotate(100.0 * m_frame / screen().refreshRate(),
                 0, 1, 0)
 
-        self.m_program.setUniformValue(self.m_matrixUniform, matrix)
+        m_program.setUniformValue(m_matrixUniform, matrix)
 
         vertices _ array.array('f', [
                  0.0,  0.707,
                 -0.5, -0.5,
                  0.5, -0.5])
 
-        gl.glVertexAttribPointer(self.m_posAttr, 2, gl.GL_FLOAT, False, 0,
+        gl.glVertexAttribPointer(m_posAttr, 2, gl.GL_FLOAT, False, 0,
                 vertices)
-        gl.glEnableVertexAttribArray(self.m_posAttr)
+        gl.glEnableVertexAttribArray(m_posAttr)
 
         colors _ array.array('f', [
                 1.0, 0.0, 0.0,
                 0.0, 1.0, 0.0,
                 0.0, 0.0, 1.0])
 
-        gl.glVertexAttribPointer(self.m_colAttr, 3, gl.GL_FLOAT, False, 0,
+        gl.glVertexAttribPointer(m_colAttr, 3, gl.GL_FLOAT, False, 0,
                 colors)
-        gl.glEnableVertexAttribArray(self.m_colAttr)
+        gl.glEnableVertexAttribArray(m_colAttr)
 
         gl.glDrawArrays(gl.GL_TRIANGLES, 0, 3)
 
-        self.m_program.release()
+        m_program.release()
 
-        self.m_frame +_ 1
+        m_frame +_ 1
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ QGuiApplication(___.argv)
+    app _ QGuiApplication(___.a..
 
     format _ QSurfaceFormat()
     format.setSamples(4)

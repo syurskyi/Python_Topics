@@ -50,57 +50,57 @@ ____ ?.QtQuick ______ QQuickItem, QQuickPaintedItem, QQuickView
 c_ PieSlice(QQuickPaintedItem):
 
     @pyqtProperty(?C..)
-    ___ color(self):
-        r_ self._color
+    ___ color
+        r_ _color
 
     @color.setter
     ___ color  color):
-        self._color _ ?C..(color)
+        _color _ ?C..(color)
 
-    ___ __init__  parent_None):
-        super(PieSlice, self).__init__(parent)
+    ___  -   parent_None):
+        super(PieSlice, self). - (parent)
 
-        self._color _ ?C..()
+        _color _ ?C..()
 
     ___ paint  painter):
-        painter.setPen(QPen(self._color, 2))
+        painter.setPen(QPen(_color, 2))
         painter.setRenderHints(QPainter.Antialiasing, True)
 
-        rect _ QRectF(0, 0, self.width(), self.height()).adjusted(1, 1, -1, -1)
+        rect _ QRectF(0, 0, width(), height()).adjusted(1, 1, -1, -1)
         painter.drawPie(rect, 90 * 16, 290 * 16)
 
 
 c_ PieChart(QQuickItem):
 
     @pyqtProperty(PieSlice)
-    ___ pieSlice(self):
-        r_ self._pieSlice
+    ___ pieSlice
+        r_ _pieSlice
 
     @pieSlice.setter
     ___ pieSlice  pieSlice):
-        self._pieSlice _ pieSlice
-        pieSlice.setParentItem(self)
+        _pieSlice _ pieSlice
+        pieSlice.setParentItem
 
     @pyqtProperty(str)
-    ___ name(self):
-        r_ self._name
+    ___ name
+        r_ _name
 
     @name.setter
     ___ name  name):
-        self._name _ name
+        _name _ name
 
-    ___ __init__  parent_None):
-        super(PieChart, self).__init__(parent)
+    ___  -   parent_None):
+        super(PieChart, self). - (parent)
 
-        self._pieSlice _ N..
-        self._name _ ''
+        _pieSlice _ N..
+        _name _ ''
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
     ______ os
     ______ ___
 
-    app _ QGuiApplication(___.argv)
+    app _ QGuiApplication(___.a..
 
     qmlRegisterType(PieChart, "Charts", 1, 0, "PieChart")
     qmlRegisterType(PieSlice, "Charts", 1, 0, "PieSlice")

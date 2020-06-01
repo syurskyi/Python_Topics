@@ -52,45 +52,45 @@ ______ classwizard_rc
 
 
 c_ ClassWizard(QWizard):
-    ___ __init__  parent_None):
-        super(ClassWizard, self).__init__(parent)
+    ___  -   parent_None):
+        super(ClassWizard, self). - (parent)
 
-        self.addPage(IntroPage())
-        self.addPage(ClassInfoPage())
-        self.addPage(CodeStylePage())
-        self.addPage(OutputFilesPage())
-        self.addPage(ConclusionPage())
+        addPage(IntroPage())
+        addPage(ClassInfoPage())
+        addPage(CodeStylePage())
+        addPage(OutputFilesPage())
+        addPage(ConclusionPage())
 
-        self.setPixmap(QWizard.BannerPixmap, QPixmap(':/images/banner.png'))
-        self.setPixmap(QWizard.BackgroundPixmap,
+        setPixmap(QWizard.BannerPixmap, QPixmap(':/images/banner.png'))
+        setPixmap(QWizard.BackgroundPixmap,
                 QPixmap(':/images/background.png'))
 
-        self.setWindowTitle("Class Wizard")
+        setWindowTitle("Class Wizard")
 
-    ___ accept(self):
-        className _ self.field('className')
-        baseClass _ self.field('baseClass')
-        macroName _ self.field('macroName')
-        baseInclude _ self.field('baseInclude')
+    ___ accept
+        className _ field('className')
+        baseClass _ field('baseClass')
+        macroName _ field('macroName')
+        baseInclude _ field('baseInclude')
 
-        outputDir _ self.field('outputDir')
-        header _ self.field('header')
-        implementation _ self.field('implementation')
+        outputDir _ field('outputDir')
+        header _ field('header')
+        implementation _ field('implementation')
 
         block _ ''
 
-        __ self.field('comment'):
+        __ field('comment'):
             block +_ '/*\n'
             block +_ '    ' + header + '\n'
             block +_ '*/\n'
             block +_ '\n'
 
-        __ self.field('protect'):
+        __ field('protect'):
             block +_ '#ifndef ' + macroName + '\n'
             block +_ '#define ' + macroName + '\n'
             block +_ '\n'
 
-        __ self.field('includeBase'):
+        __ field('includeBase'):
             block +_ '#include ' + baseInclude + '\n'
             block +_ '\n'
 
@@ -101,27 +101,27 @@ c_ ClassWizard(QWizard):
         block +_ '\n'
         block +_ '{\n'
 
-        __ self.field('qobjectMacro'):
+        __ field('qobjectMacro'):
             block +_ '    Q_OBJECT\n'
             block +_ '\n'
 
         block +_ 'public:\n'
 
-        __ self.field('qobjectCtor'):
+        __ field('qobjectCtor'):
             block +_ '    ' + className + '(QObject *parent = 0);\n'
-        ____ self.field('qwidgetCtor'):
+        ____ field('qwidgetCtor'):
             block +_ '    ' + className + '(QWidget *parent = 0);\n'
-        ____ self.field('defaultCtor'):
+        ____ field('defaultCtor'):
             block +_ '    ' + className + '();\n'
 
-            __ self.field('copyCtor'):
+            __ field('copyCtor'):
                 block +_ '    ' + className + '(const ' + className + ' &other);\n'
                 block +_ '\n'
                 block +_ '    ' + className + ' &operator=' + '(const ' + className + ' &other);\n'
 
         block +_ '};\n'
 
-        __ self.field('protect'):
+        __ field('protect'):
             block +_ '\n'
             block +_ '#endif\n'
 
@@ -136,7 +136,7 @@ c_ ClassWizard(QWizard):
 
         block _ ''
 
-        __ self.field('comment'):
+        __ field('comment'):
             block +_ '/*\n'
             block +_ '    ' + implementation + '\n'
             block +_ '*/\n'
@@ -145,23 +145,23 @@ c_ ClassWizard(QWizard):
         block +_ '#include "' + header + '"\n'
         block +_ '\n'
 
-        __ self.field('qobjectCtor'):
+        __ field('qobjectCtor'):
             block +_ className + '::' + className + '(QObject *parent)\n'
             block +_ '    : ' + baseClass + '(parent)\n'
             block +_ '{\n'
             block +_ '}\n'
-        ____ self.field('qwidgetCtor'):
+        ____ field('qwidgetCtor'):
             block +_ className + '::' + className + '(QWidget *parent)\n'
             block +_ '    : ' + baseClass + '(parent)\n'
             block +_ '{\n'
             block +_ '}\n'
-        ____ self.field('defaultCtor'):
+        ____ field('defaultCtor'):
             block +_ className + '::' + className + '()\n'
             block +_ '{\n'
             block +_ '    // missing code\n'
             block +_ '}\n'
 
-            __ self.field('copyCtor'):
+            __ field('copyCtor'):
                 block +_ '\n'
                 block +_ className + '::' + className + '(const ' + className + ' &other)\n'
                 block +_ '{\n'
@@ -191,11 +191,11 @@ c_ ClassWizard(QWizard):
 
 
 c_ IntroPage(QWizardPage):
-    ___ __init__  parent_None):
-        super(IntroPage, self).__init__(parent)
+    ___  -   parent_None):
+        super(IntroPage, self). - (parent)
 
-        self.setTitle("Introduction")
-        self.setPixmap(QWizard.WatermarkPixmap,
+        setTitle("Introduction")
+        setPixmap(QWizard.WatermarkPixmap,
                 QPixmap(':/images/watermark1.png'))
 
         label _ QLabel("This wizard will generate a skeleton C++ class "
@@ -207,17 +207,17 @@ c_ IntroPage(QWizardPage):
 
         layout _ ?VBL..
         layout.aW..(label)
-        self.sL..(layout)
+        sL..(layout)
 
 
 c_ ClassInfoPage(QWizardPage):
-    ___ __init__  parent_None):
-        super(ClassInfoPage, self).__init__(parent)
+    ___  -   parent_None):
+        super(ClassInfoPage, self). - (parent)
 
-        self.setTitle("Class Information")
-        self.setSubTitle("Specify basic information about the class for "
+        setTitle("Class Information")
+        setSubTitle("Specify basic information about the class for "
                 "which you want to generate skeleton source code files.")
-        self.setPixmap(QWizard.LogoPixmap, QPixmap(':/images/logo1.png'))
+        setPixmap(QWizard.LogoPixmap, QPixmap(':/images/logo1.png'))
 
         classNameLabel _ QLabel("&Class name:")
         classNameLineEdit _ ?LE..
@@ -240,13 +240,13 @@ c_ ClassInfoPage(QWizardPage):
 
         defaultCtorRadioButton.toggled.c..(copyCtorCheckBox.setEnabled)
 
-        self.registerField('className*', classNameLineEdit)
-        self.registerField('baseClass', baseClassLineEdit)
-        self.registerField('qobjectMacro', qobjectMacroCheckBox)
-        self.registerField('qobjectCtor', qobjectCtorRadioButton)
-        self.registerField('qwidgetCtor', qwidgetCtorRadioButton)
-        self.registerField('defaultCtor', defaultCtorRadioButton)
-        self.registerField('copyCtor', copyCtorCheckBox)
+        registerField('className*', classNameLineEdit)
+        registerField('baseClass', baseClassLineEdit)
+        registerField('qobjectMacro', qobjectMacroCheckBox)
+        registerField('qobjectCtor', qobjectCtorRadioButton)
+        registerField('qwidgetCtor', qwidgetCtorRadioButton)
+        registerField('defaultCtor', defaultCtorRadioButton)
+        registerField('copyCtor', copyCtorCheckBox)
 
         groupBoxLayout _ ?VBL..
         groupBoxLayout.aW..(qobjectCtorRadioButton)
@@ -262,16 +262,16 @@ c_ ClassInfoPage(QWizardPage):
         layout.aW..(baseClassLineEdit, 1, 1)
         layout.aW..(qobjectMacroCheckBox, 2, 0, 1, 2)
         layout.aW..(groupBox, 3, 0, 1, 2)
-        self.sL..(layout)
+        sL..(layout)
 
 
 c_ CodeStylePage(QWizardPage):
-    ___ __init__  parent_None):
-        super(CodeStylePage, self).__init__(parent)
+    ___  -   parent_None):
+        super(CodeStylePage, self). - (parent)
 
-        self.setTitle("Code Style Options")
-        self.setSubTitle("Choose the formatting of the generated code.")
-        self.setPixmap(QWizard.LogoPixmap, QPixmap(':/images/logo2.png'))
+        setTitle("Code Style Options")
+        setSubTitle("Choose the formatting of the generated code.")
+        setPixmap(QWizard.LogoPixmap, QPixmap(':/images/logo2.png'))
 
         commentCheckBox _ QCheckBox("&Start generated files with a comment")
         commentCheckBox.setChecked(True)
@@ -281,123 +281,123 @@ c_ CodeStylePage(QWizardPage):
         protectCheckBox.setChecked(True)
 
         macroNameLabel _ QLabel("&Macro name:")
-        self.macroNameLineEdit _ ?LE..
-        macroNameLabel.setBuddy(self.macroNameLineEdit)
+        macroNameLineEdit _ ?LE..
+        macroNameLabel.setBuddy(macroNameLineEdit)
 
-        self.includeBaseCheckBox _ QCheckBox("&Include base class definition")
-        self.baseIncludeLabel _ QLabel("Base class include:")
-        self.baseIncludeLineEdit _ ?LE..
-        self.baseIncludeLabel.setBuddy(self.baseIncludeLineEdit)
+        includeBaseCheckBox _ QCheckBox("&Include base class definition")
+        baseIncludeLabel _ QLabel("Base class include:")
+        baseIncludeLineEdit _ ?LE..
+        baseIncludeLabel.setBuddy(baseIncludeLineEdit)
 
         protectCheckBox.toggled.c..(macroNameLabel.setEnabled)
-        protectCheckBox.toggled.c..(self.macroNameLineEdit.setEnabled)
-        self.includeBaseCheckBox.toggled.c..(self.baseIncludeLabel.setEnabled)
-        self.includeBaseCheckBox.toggled.c..(self.baseIncludeLineEdit.setEnabled)
+        protectCheckBox.toggled.c..(macroNameLineEdit.setEnabled)
+        includeBaseCheckBox.toggled.c..(baseIncludeLabel.setEnabled)
+        includeBaseCheckBox.toggled.c..(baseIncludeLineEdit.setEnabled)
 
-        self.registerField('comment', commentCheckBox)
-        self.registerField('protect', protectCheckBox)
-        self.registerField('macroName', self.macroNameLineEdit)
-        self.registerField('includeBase', self.includeBaseCheckBox)
-        self.registerField('baseInclude', self.baseIncludeLineEdit)
+        registerField('comment', commentCheckBox)
+        registerField('protect', protectCheckBox)
+        registerField('macroName', macroNameLineEdit)
+        registerField('includeBase', includeBaseCheckBox)
+        registerField('baseInclude', baseIncludeLineEdit)
 
         layout _ QGridLayout()
         layout.setColumnMinimumWidth(0, 20)
         layout.aW..(commentCheckBox, 0, 0, 1, 3)
         layout.aW..(protectCheckBox, 1, 0, 1, 3)
         layout.aW..(macroNameLabel, 2, 1)
-        layout.aW..(self.macroNameLineEdit, 2, 2)
-        layout.aW..(self.includeBaseCheckBox, 3, 0, 1, 3)
-        layout.aW..(self.baseIncludeLabel, 4, 1)
-        layout.aW..(self.baseIncludeLineEdit, 4, 2)
-        self.sL..(layout)
+        layout.aW..(macroNameLineEdit, 2, 2)
+        layout.aW..(includeBaseCheckBox, 3, 0, 1, 3)
+        layout.aW..(baseIncludeLabel, 4, 1)
+        layout.aW..(baseIncludeLineEdit, 4, 2)
+        sL..(layout)
 
-    ___ initializePage(self):
-        className _ self.field('className')
-        self.macroNameLineEdit.sT..(className.upper() + "_H")
+    ___ initializePage
+        className _ field('className')
+        macroNameLineEdit.sT..(className.upper() + "_H")
 
-        baseClass _ self.field('baseClass')
+        baseClass _ field('baseClass')
         is_baseClass _ bool(baseClass)
 
-        self.includeBaseCheckBox.setChecked(is_baseClass)
-        self.includeBaseCheckBox.setEnabled(is_baseClass)
-        self.baseIncludeLabel.setEnabled(is_baseClass)
-        self.baseIncludeLineEdit.setEnabled(is_baseClass)
+        includeBaseCheckBox.setChecked(is_baseClass)
+        includeBaseCheckBox.setEnabled(is_baseClass)
+        baseIncludeLabel.setEnabled(is_baseClass)
+        baseIncludeLineEdit.setEnabled(is_baseClass)
 
         __ no. is_baseClass:
-            self.baseIncludeLineEdit.clear()
+            baseIncludeLineEdit.clear()
         ____ QRegExp('Q[A-Z].*').exactMatch(baseClass):
-            self.baseIncludeLineEdit.sT..('<' + baseClass + '>')
+            baseIncludeLineEdit.sT..('<' + baseClass + '>')
         ____
-            self.baseIncludeLineEdit.sT..('"' + baseClass.lower() + '.h"')
+            baseIncludeLineEdit.sT..('"' + baseClass.lower() + '.h"')
 
 
 c_ OutputFilesPage(QWizardPage):
-    ___ __init__  parent_None):
-        super(OutputFilesPage, self).__init__(parent)
+    ___  -   parent_None):
+        super(OutputFilesPage, self). - (parent)
 
-        self.setTitle("Output Files")
-        self.setSubTitle("Specify where you want the wizard to put the "
+        setTitle("Output Files")
+        setSubTitle("Specify where you want the wizard to put the "
                 "generated skeleton code.")
-        self.setPixmap(QWizard.LogoPixmap, QPixmap(':/images/logo3.png'))
+        setPixmap(QWizard.LogoPixmap, QPixmap(':/images/logo3.png'))
 
         outputDirLabel _ QLabel("&Output directory:")
-        self.outputDirLineEdit _ ?LE..
-        outputDirLabel.setBuddy(self.outputDirLineEdit)
+        outputDirLineEdit _ ?LE..
+        outputDirLabel.setBuddy(outputDirLineEdit)
 
         headerLabel _ QLabel("&Header file name:")
-        self.headerLineEdit _ ?LE..
-        headerLabel.setBuddy(self.headerLineEdit)
+        headerLineEdit _ ?LE..
+        headerLabel.setBuddy(headerLineEdit)
 
         implementationLabel _ QLabel("&Implementation file name:")
-        self.implementationLineEdit _ ?LE..
-        implementationLabel.setBuddy(self.implementationLineEdit)
+        implementationLineEdit _ ?LE..
+        implementationLabel.setBuddy(implementationLineEdit)
 
-        self.registerField('outputDir*', self.outputDirLineEdit)
-        self.registerField('header*', self.headerLineEdit)
-        self.registerField('implementation*', self.implementationLineEdit)
+        registerField('outputDir*', outputDirLineEdit)
+        registerField('header*', headerLineEdit)
+        registerField('implementation*', implementationLineEdit)
 
         layout _ QGridLayout()
         layout.aW..(outputDirLabel, 0, 0)
-        layout.aW..(self.outputDirLineEdit, 0, 1)
+        layout.aW..(outputDirLineEdit, 0, 1)
         layout.aW..(headerLabel, 1, 0)
-        layout.aW..(self.headerLineEdit, 1, 1)
+        layout.aW..(headerLineEdit, 1, 1)
         layout.aW..(implementationLabel, 2, 0)
-        layout.aW..(self.implementationLineEdit, 2, 1)
-        self.sL..(layout)
+        layout.aW..(implementationLineEdit, 2, 1)
+        sL..(layout)
 
-    ___ initializePage(self):
-        className _ self.field('className')
-        self.headerLineEdit.sT..(className.lower() + '.h')
-        self.implementationLineEdit.sT..(className.lower() + '.cpp')
-        self.outputDirLineEdit.sT..(QDir.toNativeSeparators(QDir.tempPath()))
+    ___ initializePage
+        className _ field('className')
+        headerLineEdit.sT..(className.lower() + '.h')
+        implementationLineEdit.sT..(className.lower() + '.cpp')
+        outputDirLineEdit.sT..(QDir.toNativeSeparators(QDir.tempPath()))
 
 
 c_ ConclusionPage(QWizardPage):
-    ___ __init__  parent_None):
-        super(ConclusionPage, self).__init__(parent)
+    ___  -   parent_None):
+        super(ConclusionPage, self). - (parent)
 
-        self.setTitle("Conclusion")
-        self.setPixmap(QWizard.WatermarkPixmap,
+        setTitle("Conclusion")
+        setPixmap(QWizard.WatermarkPixmap,
                 QPixmap(':/images/watermark2.png'))
 
-        self.label _ QLabel()
-        self.label.setWordWrap(True)
+        label _ QLabel()
+        label.setWordWrap(True)
 
         layout _ ?VBL..
-        layout.aW..(self.label)
-        self.sL..(layout)
+        layout.aW..(label)
+        sL..(layout)
 
-    ___ initializePage(self):
-        finishText _ self.wizard().buttonText(QWizard.FinishButton)
+    ___ initializePage
+        finishText _ wizard().buttonText(QWizard.FinishButton)
         finishText.replace('&', '')
-        self.label.sT..("Click %s to generate the class skeleton." % finishText)
+        label.sT..("Click %s to generate the class skeleton." % finishText)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     wizard _ ClassWizard()
     wizard.s..
     ___.exit(app.exec_())

@@ -50,33 +50,33 @@ ____ demoitem ______ DemoItem
 c_ DemoTextItem(DemoItem):
     STATIC_TEXT, DYNAMIC_TEXT _ range(2)
 
-    ___ __init__  t__, font, textColor, textWidth, parent_None, type_STATIC_TEXT, bgColor_QColor()):
-        super(DemoTextItem, self).__init__(parent)
+    ___  -   t__, font, textColor, textWidth, parent_None, type_STATIC_TEXT, bgColor_QColor()):
+        super(DemoTextItem, self). - (parent)
 
-        self.type _ type
-        self.t__ _ t__
-        self.font _ font
-        self.textColor _ textColor
-        self.bgColor _ bgColor
-        self.textWidth _ textWidth
-        self.noSubPixeling _ True
+        type _ type
+        t__ _ t__
+        font _ font
+        textColor _ textColor
+        bgColor _ bgColor
+        textWidth _ textWidth
+        noSubPixeling _ True
 
     ___ sT..  t__):
-        self.t__ _ t__
-        self.update()
+        t__ _ t__
+        update()
 
     ___ createImage  transform):
-        __ self.type == DemoTextItem.DYNAMIC_TEXT:
+        __ type == DemoTextItem.DYNAMIC_TEXT:
             r_ N..
 
         sx _ min(transform.m11(), transform.m22())
         sy _ max(transform.m22(), sx)
 
         textItem _ QGraphicsTextItem()
-        textItem.setHtml(self.t__)
-        textItem.setTextWidth(self.textWidth)
-        textItem.setFont(self.font)
-        textItem.setDefaultTextColor(self.textColor)
+        textItem.setHtml(t__)
+        textItem.setTextWidth(textWidth)
+        textItem.setFont(font)
+        textItem.setDefaultTextColor(textColor)
         textItem.document().setDocumentMargin(2)
 
         w _ textItem.boundingRect().width()
@@ -92,22 +92,22 @@ c_ DemoTextItem(DemoItem):
         r_ image
 
     ___ animationStarted  id_0):
-        self.noSubPixeling _ False
+        noSubPixeling _ False
 
     ___ animationStopped  id_0):
-        self.noSubPixeling _ True
+        noSubPixeling _ True
 
-    ___ boundingRect(self):
-        __ self.type == DemoTextItem.STATIC_TEXT:
+    ___ boundingRect
+        __ type == DemoTextItem.STATIC_TEXT:
             r_ super(DemoTextItem, self).boundingRect()
 
         # Sorry for using magic number.
         r_ QRectF(0, 0, 50, 20)
 
     ___ paint  painter, option, widget):
-        __ self.type == DemoTextItem.STATIC_TEXT:
+        __ type == DemoTextItem.STATIC_TEXT:
             super(DemoTextItem, self).paint(painter, option, widget)
             r_
 
-        painter.setPen(self.textColor)
-        painter.drawText(0, 0, self.t__)
+        painter.setPen(textColor)
+        painter.drawText(0, 0, t__)

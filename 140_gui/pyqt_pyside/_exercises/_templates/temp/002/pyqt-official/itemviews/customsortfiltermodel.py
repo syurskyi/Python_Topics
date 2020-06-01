@@ -52,38 +52,38 @@ ____ ?.?W.. ______ (?A.., QCheckBox, QComboBox, QDateEdit,
 
 
 c_ MySortFilterProxyModel(QSortFilterProxyModel):
-    ___ __init__  parent_None):
-        super(MySortFilterProxyModel, self).__init__(parent)
+    ___  -   parent_None):
+        super(MySortFilterProxyModel, self). - (parent)
 
-        self.minDate _ QDate()
-        self.maxDate _ QDate()
+        minDate _ QDate()
+        maxDate _ QDate()
 
     ___ setFilterMinimumDate  date):
-        self.minDate _ date
-        self.invalidateFilter()
+        minDate _ date
+        invalidateFilter()
 
-    ___ filterMinimumDate(self):
-        r_ self.minDate
+    ___ filterMinimumDate
+        r_ minDate
 
     ___ setFilterMaximumDate  date):
-        self.maxDate _ date
-        self.invalidateFilter()
+        maxDate _ date
+        invalidateFilter()
  
-    ___ filterMaximumDate(self):
-        r_ self.maxDate
+    ___ filterMaximumDate
+        r_ maxDate
 
     ___ filterAcceptsRow  sourceRow, sourceParent):
-        index0 _ self.sourceModel().index(sourceRow, 0, sourceParent)
-        index1 _ self.sourceModel().index(sourceRow, 1, sourceParent)
-        index2 _ self.sourceModel().index(sourceRow, 2, sourceParent)
+        index0 _ sourceModel().index(sourceRow, 0, sourceParent)
+        index1 _ sourceModel().index(sourceRow, 1, sourceParent)
+        index2 _ sourceModel().index(sourceRow, 2, sourceParent)
 
-        r_ (   (self.filterRegExp().indexIn(self.sourceModel().data(index0)) >_ 0
-                    or self.filterRegExp().indexIn(self.sourceModel().data(index1)) >_ 0)
-                and self.dateInRange(self.sourceModel().data(index2)))
+        r_ (   (filterRegExp().indexIn(sourceModel().data(index0)) >_ 0
+                    or filterRegExp().indexIn(sourceModel().data(index1)) >_ 0)
+                and dateInRange(sourceModel().data(index2)))
 
     ___ lessThan  left, right):
-        leftData _ self.sourceModel().data(left)
-        rightData _ self.sourceModel().data(right)
+        leftData _ sourceModel().data(left)
+        rightData _ sourceModel().data(right)
 
         __ no. isinstance(leftData, QDate):
             emailPattern _ QRegExp("([\\w\\.]*@[\\w\\.]*)")
@@ -100,101 +100,101 @@ c_ MySortFilterProxyModel(QSortFilterProxyModel):
         __ isinstance(date, QDateTime):
             date _ date.date()
 
-        r_ (    (no. self.minDate.isValid() or date >_ self.minDate)
-                and (no. self.maxDate.isValid() or date <_ self.maxDate))
+        r_ (    (no. minDate.isValid() or date >_ minDate)
+                and (no. maxDate.isValid() or date <_ maxDate))
 
 
 c_ Window(QWidget):
-    ___ __init__(self):
-        super(Window, self).__init__()
+    ___  -
+        super(Window, self). - ()
 
-        self.proxyModel _ MySortFilterProxyModel(self)
-        self.proxyModel.setDynamicSortFilter(True)
+        proxyModel _ MySortFilterProxyModel
+        proxyModel.setDynamicSortFilter(True)
 
-        self.sourceView _ ?TV..
-        self.sourceView.setRootIsDecorated F..
-        self.sourceView.setAlternatingRowColors(True)
+        sourceView _ ?TV..
+        sourceView.setRootIsDecorated F..
+        sourceView.setAlternatingRowColors(True)
 
         sourceLayout _ QHBoxLayout()
-        sourceLayout.aW..(self.sourceView)
+        sourceLayout.aW..(sourceView)
         sourceGroupBox _ QGroupBox("Original Model")
         sourceGroupBox.sL..(sourceLayout)
 
-        self.filterCaseSensitivityCheckBox _ QCheckBox("Case sensitive filter")
-        self.filterCaseSensitivityCheckBox.setChecked(True)
-        self.filterPatternLineEdit _ ?LE..
-        self.filterPatternLineEdit.sT..("Grace|Sports")
+        filterCaseSensitivityCheckBox _ QCheckBox("Case sensitive filter")
+        filterCaseSensitivityCheckBox.setChecked(True)
+        filterPatternLineEdit _ ?LE..
+        filterPatternLineEdit.sT..("Grace|Sports")
         filterPatternLabel _ QLabel("&Filter pattern:")
-        filterPatternLabel.setBuddy(self.filterPatternLineEdit)
-        self.filterSyntaxComboBox _ QComboBox()
-        self.filterSyntaxComboBox.addItem("Regular expression", QRegExp.RegExp)
-        self.filterSyntaxComboBox.addItem("Wildcard", QRegExp.Wildcard)
-        self.filterSyntaxComboBox.addItem("Fixed string", QRegExp.FixedString)
-        self.fromDateEdit _ QDateEdit()
-        self.fromDateEdit.setDate(QDate(2006, 12, 22))
-        self.fromDateEdit.setCalendarPopup(True)
+        filterPatternLabel.setBuddy(filterPatternLineEdit)
+        filterSyntaxComboBox _ QComboBox()
+        filterSyntaxComboBox.addItem("Regular expression", QRegExp.RegExp)
+        filterSyntaxComboBox.addItem("Wildcard", QRegExp.Wildcard)
+        filterSyntaxComboBox.addItem("Fixed string", QRegExp.FixedString)
+        fromDateEdit _ QDateEdit()
+        fromDateEdit.setDate(QDate(2006, 12, 22))
+        fromDateEdit.setCalendarPopup(True)
         fromLabel _ QLabel("F&rom:")
-        fromLabel.setBuddy(self.fromDateEdit)
-        self.toDateEdit _ QDateEdit()
-        self.toDateEdit.setDate(QDate(2007, 1, 5))
-        self.toDateEdit.setCalendarPopup(True)
+        fromLabel.setBuddy(fromDateEdit)
+        toDateEdit _ QDateEdit()
+        toDateEdit.setDate(QDate(2007, 1, 5))
+        toDateEdit.setCalendarPopup(True)
         toLabel _ QLabel("&To:")
-        toLabel.setBuddy(self.toDateEdit)
+        toLabel.setBuddy(toDateEdit)
 
-        self.filterPatternLineEdit.textChanged.c..(self.textFilterChanged)
-        self.filterSyntaxComboBox.currentIndexChanged.c..(self.textFilterChanged)
-        self.filterCaseSensitivityCheckBox.toggled.c..(self.textFilterChanged)
-        self.fromDateEdit.dateChanged.c..(self.dateFilterChanged)
-        self.toDateEdit.dateChanged.c..(self.dateFilterChanged)
+        filterPatternLineEdit.textChanged.c..(textFilterChanged)
+        filterSyntaxComboBox.currentIndexChanged.c..(textFilterChanged)
+        filterCaseSensitivityCheckBox.toggled.c..(textFilterChanged)
+        fromDateEdit.dateChanged.c..(dateFilterChanged)
+        toDateEdit.dateChanged.c..(dateFilterChanged)
 
-        self.proxyView _ ?TV..
-        self.proxyView.setRootIsDecorated F..
-        self.proxyView.setAlternatingRowColors(True)
-        self.proxyView.sM..(self.proxyModel)
-        self.proxyView.setSortingEnabled(True)
-        self.proxyView.sortByColumn(1, __.AscendingOrder)
+        proxyView _ ?TV..
+        proxyView.setRootIsDecorated F..
+        proxyView.setAlternatingRowColors(True)
+        proxyView.sM..(proxyModel)
+        proxyView.setSortingEnabled(True)
+        proxyView.sortByColumn(1, __.AscendingOrder)
 
-        self.textFilterChanged()
-        self.dateFilterChanged()
+        textFilterChanged()
+        dateFilterChanged()
 
         proxyLayout _ QGridLayout()
-        proxyLayout.aW..(self.proxyView, 0, 0, 1, 3)
+        proxyLayout.aW..(proxyView, 0, 0, 1, 3)
         proxyLayout.aW..(filterPatternLabel, 1, 0)
-        proxyLayout.aW..(self.filterPatternLineEdit, 1, 1)
-        proxyLayout.aW..(self.filterSyntaxComboBox, 1, 2)
-        proxyLayout.aW..(self.filterCaseSensitivityCheckBox, 2, 0, 1, 3)
+        proxyLayout.aW..(filterPatternLineEdit, 1, 1)
+        proxyLayout.aW..(filterSyntaxComboBox, 1, 2)
+        proxyLayout.aW..(filterCaseSensitivityCheckBox, 2, 0, 1, 3)
         proxyLayout.aW..(fromLabel, 3, 0)
-        proxyLayout.aW..(self.fromDateEdit, 3, 1, 1, 2)
+        proxyLayout.aW..(fromDateEdit, 3, 1, 1, 2)
         proxyLayout.aW..(toLabel, 4, 0)
-        proxyLayout.aW..(self.toDateEdit, 4, 1, 1, 2)
+        proxyLayout.aW..(toDateEdit, 4, 1, 1, 2)
         proxyGroupBox _ QGroupBox("Sorted/Filtered Model")
         proxyGroupBox.sL..(proxyLayout)
 
         mainLayout _ ?VBL..
         mainLayout.aW..(sourceGroupBox)
         mainLayout.aW..(proxyGroupBox)
-        self.sL..(mainLayout)
+        sL..(mainLayout)
 
-        self.setWindowTitle("Custom Sort/Filter Model")
-        self.resize(500, 450)
+        setWindowTitle("Custom Sort/Filter Model")
+        resize(500, 450)
 
     ___ setSourceModel  model):
-        self.proxyModel.setSourceModel(model)
-        self.sourceView.sM..(model)
+        proxyModel.setSourceModel(model)
+        sourceView.sM..(model)
 
-    ___ textFilterChanged(self):
+    ___ textFilterChanged
         syntax _ QRegExp.PatternSyntax(
-            self.filterSyntaxComboBox.itemData(
-                self.filterSyntaxComboBox.currentIndex()))
+            filterSyntaxComboBox.itemData(
+                filterSyntaxComboBox.currentIndex()))
         caseSensitivity _ (
-            self.filterCaseSensitivityCheckBox.isChecked()
+            filterCaseSensitivityCheckBox.isChecked()
             and __.CaseSensitive or __.CaseInsensitive)
-        regExp _ QRegExp(self.filterPatternLineEdit.t__(), caseSensitivity, syntax)
-        self.proxyModel.setFilterRegExp(regExp)
+        regExp _ QRegExp(filterPatternLineEdit.t__(), caseSensitivity, syntax)
+        proxyModel.setFilterRegExp(regExp)
 
-    ___ dateFilterChanged(self):
-        self.proxyModel.setFilterMinimumDate(self.fromDateEdit.date())
-        self.proxyModel.setFilterMaximumDate(self.toDateEdit.date())
+    ___ dateFilterChanged
+        proxyModel.setFilterMinimumDate(fromDateEdit.date())
+        proxyModel.setFilterMaximumDate(toDateEdit.date())
 
 
 ___ addMail(model, subject, sender, date):
@@ -239,7 +239,7 @@ __ __name__ == "__main__":
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     window _ Window()
     window.setSourceModel(createMailModel(window))

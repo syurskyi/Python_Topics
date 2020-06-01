@@ -53,79 +53,79 @@ ____ ?.QtNetwork ______ (QAbstractSocket, QHostInfo, QNetworkConfiguration,
 
 
 c_ Client(QDialog):
-    ___ __init__  parent_None):
-        super(Client, self).__init__(parent)
+    ___  -   parent_None):
+        super(Client, self). - (parent)
 
-        self.networkSession _ N..
-        self.blockSize _ 0
-        self.currentFortune _ ''
+        networkSession _ N..
+        blockSize _ 0
+        currentFortune _ ''
 
         hostLabel _ QLabel("&Server name:")
         portLabel _ QLabel("S&erver port:")
 
-        self.hostCombo _ QComboBox()
-        self.hostCombo.setEditable(True)
+        hostCombo _ QComboBox()
+        hostCombo.setEditable(True)
 
         name _ QHostInfo.localHostName()
         __ name !_ '':
-            self.hostCombo.addItem(name)
+            hostCombo.addItem(name)
 
             domain _ QHostInfo.localDomainName()
             __ domain !_ '':
-                self.hostCombo.addItem(name + '.' + domain)
+                hostCombo.addItem(name + '.' + domain)
 
         __ name !_ 'localhost':
-            self.hostCombo.addItem('localhost')
+            hostCombo.addItem('localhost')
 
         ipAddressesList _ QNetworkInterface.allAddresses()
 
-        for ipAddress in ipAddressesList:
+        ___ ipAddress __ ipAddressesList:
             __ no. ipAddress.isLoopback
-                self.hostCombo.addItem(ipAddress.toString())
+                hostCombo.addItem(ipAddress.toString())
 
-        for ipAddress in ipAddressesList:
+        ___ ipAddress __ ipAddressesList:
             __ ipAddress.isLoopback
-                self.hostCombo.addItem(ipAddress.toString())
+                hostCombo.addItem(ipAddress.toString())
 
-        self.portLineEdit _ ?LE..
-        self.portLineEdit.setValidator(QIntValidator(1, 65535, self))
+        portLineEdit _ ?LE..
+        portLineEdit.setValidator(QIntValidator(1, 65535, self))
 
-        hostLabel.setBuddy(self.hostCombo)
-        portLabel.setBuddy(self.portLineEdit)
+        hostLabel.setBuddy(hostCombo)
+        portLabel.setBuddy(portLineEdit)
 
-        self.statusLabel _ QLabel("This examples requires that you run "
+        statusLabel _ QLabel("This examples requires that you run "
                 "the Fortune Server example as well.")
 
-        self.getFortuneButton _ ?PB..("Get Fortune")
-        self.getFortuneButton.setDefault(True)
-        self.getFortuneButton.setEnabled F..
+        getFortuneButton _ ?PB..("Get Fortune")
+        getFortuneButton.setDefault(True)
+        getFortuneButton.setEnabled F..
 
         quitButton _ ?PB..("Quit")
 
         buttonBox _ QDialogButtonBox()
-        buttonBox.addButton(self.getFortuneButton, QDialogButtonBox.ActionRole)
+        buttonBox.addButton(getFortuneButton, QDialogButtonBox.ActionRole)
         buttonBox.addButton(quitButton, QDialogButtonBox.RejectRole)
 
-        self.tcpSocket _ QTcpSocket(self)
+        tcpSocket _ QTcpSocket
 
-        self.hostCombo.editTextChanged.c..(self.enableGetFortuneButton)
-        self.portLineEdit.textChanged.c..(self.enableGetFortuneButton)
-        self.getFortuneButton.c__.c..(self.requestNewFortune)
-        quitButton.c__.c..(self.close)
-        self.tcpSocket.readyRead.c..(self.readFortune)
-        self.tcpSocket.error.c..(self.displayError)
+        hostCombo.editTextChanged.c..(enableGetFortuneButton)
+        portLineEdit.textChanged.c..(enableGetFortuneButton)
+        getFortuneButton.c__.c..(requestNewFortune)
+        quitButton.c__.c..(close)
+        tcpSocket.readyRead.c..(readFortune)
+        tcpSocket.error.c..(displayError)
 
         mainLayout _ QGridLayout()
         mainLayout.aW..(hostLabel, 0, 0)
-        mainLayout.aW..(self.hostCombo, 0, 1)
+        mainLayout.aW..(hostCombo, 0, 1)
         mainLayout.aW..(portLabel, 1, 0)
-        mainLayout.aW..(self.portLineEdit, 1, 1)
-        mainLayout.aW..(self.statusLabel, 2, 0, 1, 2)
+        mainLayout.aW..(portLineEdit, 1, 1)
+        mainLayout.aW..(statusLabel, 2, 0, 1, 2)
         mainLayout.aW..(buttonBox, 3, 0, 1, 2)
-        self.sL..(mainLayout)
+        sL..(mainLayout)
 
-        self.setWindowTitle("Fortune Client")
-        self.portLineEdit.setFocus()
+        setWindowTitle("Fortune Client")
+        portLineEdit.setFocus()
 
         manager _ QNetworkConfigurationManager()
         __ manager.capabilities() & QNetworkConfigurationManager.NetworkSessionRequired:
@@ -138,41 +138,41 @@ c_ Client(QDialog):
             __ config.state() & QNetworkConfiguration.Discovered == 0:
                 config _ manager.defaultConfiguration()
 
-            self.networkSession _ QNetworkSession(config, self)
-            self.networkSession.opened.c..(self.sessionOpened)
+            networkSession _ QNetworkSession(config, self)
+            networkSession.opened.c..(sessionOpened)
 
-            self.getFortuneButton.setEnabled F..
-            self.statusLabel.sT..("Opening network session.")
-            self.networkSession.o..()
+            getFortuneButton.setEnabled F..
+            statusLabel.sT..("Opening network session.")
+            networkSession.o..()
 
-    ___ requestNewFortune(self):
-        self.getFortuneButton.setEnabled F..
-        self.blockSize _ 0
-        self.tcpSocket.abort()
-        self.tcpSocket.connectToHost(self.hostCombo.currentText(),
-                int(self.portLineEdit.t__()))
+    ___ requestNewFortune
+        getFortuneButton.setEnabled F..
+        blockSize _ 0
+        tcpSocket.abort()
+        tcpSocket.connectToHost(hostCombo.currentText(),
+                int(portLineEdit.t__()))
 
-    ___ readFortune(self):
-        instr _ QDataStream(self.tcpSocket)
+    ___ readFortune
+        instr _ QDataStream(tcpSocket)
         instr.setVersion(QDataStream.Qt_4_0)
 
-        __ self.blockSize == 0:
-            __ self.tcpSocket.bytesAvailable() < 2:
+        __ blockSize == 0:
+            __ tcpSocket.bytesAvailable() < 2:
                 r_
 
-            self.blockSize _ instr.readUInt16()
+            blockSize _ instr.readUInt16()
 
-        __ self.tcpSocket.bytesAvailable() < self.blockSize:
+        __ tcpSocket.bytesAvailable() < blockSize:
             r_
 
         nextFortune _ instr.readQString()
-        __ nextFortune == self.currentFortune:
-            QTimer.singleShot(0, self.requestNewFortune)
+        __ nextFortune == currentFortune:
+            QTimer.singleShot(0, requestNewFortune)
             r_
 
-        self.currentFortune _ nextFortune
-        self.statusLabel.sT..(self.currentFortune)
-        self.getFortuneButton.setEnabled(True)
+        currentFortune _ nextFortune
+        statusLabel.sT..(currentFortune)
+        getFortuneButton.setEnabled(True)
 
     ___ displayError  socketError):
         __ socketError == QAbstractSocket.RemoteHostClosedError:
@@ -188,21 +188,21 @@ c_ Client(QDialog):
                     "and port settings are correct.")
         ____
             ?MB...information  "Fortune Client",
-                    "The following error occurred: %s." % self.tcpSocket.errorString())
+                    "The following error occurred: %s." % tcpSocket.errorString())
 
-        self.getFortuneButton.setEnabled(True)
+        getFortuneButton.setEnabled(True)
 
-    ___ enableGetFortuneButton(self):
-        self.getFortuneButton.setEnabled(
-                (self.networkSession __ N.. or self.networkSession.isOpen())
-                and self.hostCombo.currentText() !_ ''
-                and self.portLineEdit.t__() !_ '')
+    ___ enableGetFortuneButton
+        getFortuneButton.setEnabled(
+                (networkSession __ N.. or networkSession.isOpen())
+                and hostCombo.currentText() !_ ''
+                and portLineEdit.t__() !_ '')
 
-    ___ sessionOpened(self):
-        config _ self.networkSession.configuration()
+    ___ sessionOpened
+        config _ networkSession.configuration()
 
         __ config.type() == QNetworkConfiguration.UserChoice:
-            id _ self.networkSession.sessionProperty('UserChoiceConfiguration')
+            id _ networkSession.sessionProperty('UserChoiceConfiguration')
         ____
             id _ config.identifier()
 
@@ -211,17 +211,17 @@ c_ Client(QDialog):
         settings.setValue('DefaultNetworkConfiguration', id)
         settings.endGroup()
 
-        self.statusLabel.sT..("This examples requires that you run the "
+        statusLabel.sT..("This examples requires that you run the "
                             "Fortune Server example as well.")
 
-        self.enableGetFortuneButton()
+        enableGetFortuneButton()
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     client _ Client()
     client.s..
     ___.exit(client.exec_())

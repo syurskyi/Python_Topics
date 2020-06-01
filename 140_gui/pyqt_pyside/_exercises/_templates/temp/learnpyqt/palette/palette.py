@@ -1,5 +1,5 @@
 ______ ___
-__ 'PyQt5' in ___.modules:
+__ 'PyQt5' __ ___.modules:
     ____ ? ______ ?C.., ?W..
     ____ ?.?C.. ______ __, pyqtSignal __ Signal
 
@@ -19,38 +19,38 @@ PALETTES _ {
 
 
 c_ _PaletteButton(?W...?PB..):
-    ___ __init__  color):
-        super().__init__()
-        self.setFixedSize(?C...QSize(24, 24))
-        self.color _ color
-        self.setStyleSheet("background-color: %s;" % color)
+    ___  -   color):
+        s_. - ()
+        setFixedSize(?C...QSize(24, 24))
+        color _ color
+        setStyleSheet("background-color: %s;" % color)
 
 c_ _PaletteBase(?W...QWidget):
 
     selected _ Signal(object)
 
     ___ _emit_color  color):
-        self.selected.emit(color)
+        selected.emit(color)
 
 
 c_ _PaletteLinearBase(_PaletteBase):
-    ___ __init__  colors, *args, **kwargs):
-        super().__init__(*args, **kwargs)
+    ___  -   colors, *args, **kwargs):
+        s_. - (*args, **kwargs)
 
         __ isinstance(colors, str):
-            __ colors in PALETTES:
+            __ colors __ PALETTES:
                 colors _ PALETTES[colors]
 
-        palette _ self.layoutvh()
+        palette _ layoutvh()
 
-        for c in colors:
+        ___ c __ colors:
             b _ _PaletteButton(c)
             b.pressed.c..(
-                lambda c_c: self._emit_color(c)
+                lambda c_c: _emit_color(c)
             )
             palette.aW..(b)
 
-        self.sL..(palette)
+        sL..(palette)
 
 
 c_ PaletteHorizontal(_PaletteLinearBase):
@@ -63,20 +63,20 @@ c_ PaletteVertical(_PaletteLinearBase):
 
 c_ PaletteGrid(_PaletteBase):
 
-    ___ __init__  colors, n_columns_5, *args, **kwargs):
-        super().__init__(*args, **kwargs)
+    ___  -   colors, n_columns_5, *args, **kwargs):
+        s_. - (*args, **kwargs)
 
         __ isinstance(colors, str):
-            __ colors in PALETTES:
+            __ colors __ PALETTES:
                 colors _ PALETTES[colors]
 
         palette _ ?W...QGridLayout()
         row, col _ 0, 0
 
-        for c in colors:
+        ___ c __ colors:
             b _ _PaletteButton(c)
             b.pressed.c..(
-                lambda c_c: self._emit_color(c)
+                lambda c_c: _emit_color(c)
             )
             palette.aW..(b, row, col)
             col +_ 1
@@ -84,4 +84,4 @@ c_ PaletteGrid(_PaletteBase):
                 col _ 0
                 row +_ 1
 
-        self.sL..(palette)
+        sL..(palette)

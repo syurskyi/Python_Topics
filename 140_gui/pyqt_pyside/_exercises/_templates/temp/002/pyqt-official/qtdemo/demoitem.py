@@ -48,12 +48,12 @@ ____ colors ______ Colors
 
 
 c_ SharedImage(object):
-    ___ __init__(self):
-        self.refCount _ 0
-        self.image _ N..
-        self.pixmap _ N..
-        self.transform _ QTransform()
-        self.unscaledBoundingRect _ QRectF()
+    ___  -
+        refCount _ 0
+        image _ N..
+        pixmap _ N..
+        transform _ QTransform()
+        unscaledBoundingRect _ QRectF()
 
 
 c_ DemoItem(QGraphicsObject):
@@ -61,23 +61,23 @@ c_ DemoItem(QGraphicsObject):
 
     _transform _ QTransform()
 
-    ___ __init__  parent_None):
-        super(DemoItem, self).__init__(parent)
+    ___  -   parent_None):
+        super(DemoItem, self). - (parent)
 
-        self.noSubPixeling _ False
-        self.currentAnimation _ N..
-        self.currGuide _ N..
-        self.guideFrame _ 0.0
+        noSubPixeling _ False
+        currentAnimation _ N..
+        currGuide _ N..
+        guideFrame _ 0.0
 
-        self._sharedImage _ SharedImage()
-        self._sharedImage.refCount +_ 1
-        self._hashKey _ ''
+        _sharedImage _ SharedImage()
+        _sharedImage.refCount +_ 1
+        _hashKey _ ''
 
-    ___ __del__(self):
-        self._sharedImage.refCount -_ 1
-        __ self._sharedImage.refCount == 0:
-            __ self._hashKey:
-                del DemoItem._sharedImageHash[self._hashKey]
+    ___ __del__
+        _sharedImage.refCount -_ 1
+        __ _sharedImage.refCount == 0:
+            __ _hashKey:
+                del DemoItem._sharedImageHash[_hashKey]
 
     ___ animationStarted  id_0):
         pass
@@ -86,82 +86,82 @@ c_ DemoItem(QGraphicsObject):
         pass
 
     ___ setRecursiveVisible  visible):
-        self.setVisible(visible)
-        for c in self.childItems
+        setVisible(visible)
+        ___ c __ childItems
             c.setVisible(visible)
 
     ___ useGuide  guide, startFrame):
-        self.guideFrame _ startFrame
-        w__ self.guideFrame > guide.startLength + guide.length
+        guideFrame _ startFrame
+        w__ guideFrame > guide.startLength + guide.length
             __ guide.nextGuide == guide.firstGuide:
                 break
 
             guide _ guide.nextGuide
 
-        self.currGuide _ guide
+        currGuide _ guide
 
     ___ guideAdvance  distance):
-        self.guideFrame +_ distance
-        w__ self.guideFrame > self.currGuide.startLength + self.currGuide.length
-            self.currGuide _ self.currGuide.nextGuide
-            __ self.currGuide == self.currGuide.firstGuide:
-                self.guideFrame -_ self.currGuide.lengthAll()
+        guideFrame +_ distance
+        w__ guideFrame > currGuide.startLength + currGuide.length
+            currGuide _ currGuide.nextGuide
+            __ currGuide == currGuide.firstGuide:
+                guideFrame -_ currGuide.lengthAll()
 
     ___ guideMove  moveSpeed):
-        self.currGuide.guide  moveSpeed)
+        currGuide.guide  moveSpeed)
 
     ___ setPosUsingSheepDog  dest, sceneFence):
-        self.setPos(dest)
+        setPos(dest)
         __ sceneFence.isNull
             r_
 
-        itemWidth _ self.boundingRect().width()
-        itemHeight _ self.boundingRect().height()
+        itemWidth _ boundingRect().width()
+        itemHeight _ boundingRect().height()
         fenceRight _ sceneFence.x() + sceneFence.width()
         fenceBottom _ sceneFence.y() + sceneFence.height()
 
-        __ self.scenePos().x() < sceneFence.x
-            self.moveBy(self.mapFromScene(QPointF(sceneFence.x(), 0)).x(), 0)
+        __ scenePos().x() < sceneFence.x
+            moveBy(mapFromScene(QPointF(sceneFence.x(), 0)).x(), 0)
 
-        __ self.scenePos().x() > fenceRight - itemWidth:
-            self.moveBy(self.mapFromScene(QPointF(fenceRight - itemWidth, 0)).x(), 0)
+        __ scenePos().x() > fenceRight - itemWidth:
+            moveBy(mapFromScene(QPointF(fenceRight - itemWidth, 0)).x(), 0)
 
-        __ self.scenePos().y() < sceneFence.y
-            self.moveBy(0, self.mapFromScene(QPointF(0, sceneFence.y())).y())
+        __ scenePos().y() < sceneFence.y
+            moveBy(0, mapFromScene(QPointF(0, sceneFence.y())).y())
 
-        __ self.scenePos().y() > fenceBottom - itemHeight:
-            self.moveBy(0, self.mapFromScene(QPointF(0, fenceBottom - itemHeight)).y())
+        __ scenePos().y() > fenceBottom - itemHeight:
+            moveBy(0, mapFromScene(QPointF(0, fenceBottom - itemHeight)).y())
 
     ___ setGuidedPos  pos):
         # Make sure we have a copy.
-        self.guidedPos _ QPointF(pos)
+        guidedPos _ QPointF(pos)
 
-    ___ getGuidedPos(self):
+    ___ getGuidedPos
         # Return a copy so that it can be changed.
-        r_ QPointF(self.guidedPos)
+        r_ QPointF(guidedPos)
 
     @staticmethod
     ___ setTransform(transform):
         DemoItem._transform _ transform
 
     ___ useSharedImage  hashKey):
-        self._hashKey _ hashKey
-        __ hashKey no. in DemoItem._sharedImageHash:
-            DemoItem._sharedImageHash[hashKey] _ self._sharedImage
+        _hashKey _ hashKey
+        __ hashKey no. __ DemoItem._sharedImageHash:
+            DemoItem._sharedImageHash[hashKey] _ _sharedImage
         ____
-            self._sharedImage.refCount -_ 1
-            self._sharedImage _ DemoItem._sharedImageHash[hashKey]
-            self._sharedImage.refCount +_ 1
+            _sharedImage.refCount -_ 1
+            _sharedImage _ DemoItem._sharedImageHash[hashKey]
+            _sharedImage.refCount +_ 1
 
     ___ createImage  transform):
         r_ N..
 
-    ___ _validateImage(self):
-        __ (self._sharedImage.transform !_ DemoItem._transform and no. Colors.noRescale) or (self._sharedImage.image __ N.. and self._sharedImage.pixmap __ N..):
+    ___ _validateImage
+        __ (_sharedImage.transform !_ DemoItem._transform and no. Colors.noRescale) or (_sharedImage.image __ N.. and _sharedImage.pixmap __ N..):
             # (Re)create image according to new transform.
-            self._sharedImage.image _ N..
-            self._sharedImage.pixmap _ N..
-            self._sharedImage.transform _ DemoItem._transform
+            _sharedImage.image _ N..
+            _sharedImage.pixmap _ N..
+            _sharedImage.transform _ DemoItem._transform
 
             # Let subclass create and draw a new image according to the new
             # transform.
@@ -169,7 +169,7 @@ c_ DemoItem(QGraphicsObject):
                 transform _ QTransform()
             ____
                 transform _ DemoItem._transform
-            image _ self.createImage(transform)
+            image _ createImage(transform)
             __ image __ no. N..:
                 __ Colors.showBoundingRect:
                     # Draw red transparent rect.
@@ -177,19 +177,19 @@ c_ DemoItem(QGraphicsObject):
                     painter.fillRect(image.rect(), ?C..(255, 0, 0, 50))
                     painter.end()
 
-                self._sharedImage.unscaledBoundingRect _ self._sharedImage.transform.inverted()[0].mapRect(QRectF(image.rect()))
+                _sharedImage.unscaledBoundingRect _ _sharedImage.transform.inverted()[0].mapRect(QRectF(image.rect()))
 
                 __ Colors.usePixmaps:
                     __ image.isNull
-                        self._sharedImage.pixmap _ QPixmap(1, 1)
+                        _sharedImage.pixmap _ QPixmap(1, 1)
                     ____
-                        self._sharedImage.pixmap _ QPixmap(image.size())
+                        _sharedImage.pixmap _ QPixmap(image.size())
 
-                    self._sharedImage.pixmap.fill(?C..(0, 0, 0, 0))
-                    painter _ QPainter(self._sharedImage.pixmap)
+                    _sharedImage.pixmap.fill(?C..(0, 0, 0, 0))
+                    painter _ QPainter(_sharedImage.pixmap)
                     painter.drawImage(0, 0, image)
                 ____
-                    self._sharedImage.image _ image
+                    _sharedImage.image _ image
 
                 r_ True
             ____
@@ -197,36 +197,36 @@ c_ DemoItem(QGraphicsObject):
 
         r_ True
 
-    ___ boundingRect(self):
-        self._validateImage()
-        r_ self._sharedImage.unscaledBoundingRect
+    ___ boundingRect
+        _validateImage()
+        r_ _sharedImage.unscaledBoundingRect
 
     ___ paint  painter, option_None, widget_None):
-        __ self._validateImage
+        __ _validateImage
             wasSmoothPixmapTransform _ painter.testRenderHint(QPainter.SmoothPixmapTransform)
             painter.setRenderHint(QPainter.SmoothPixmapTransform)
 
             __ Colors.noRescale:
                 # Let the painter scale the image for us.  This may degrade
                 # both quality and performance.
-                __ self._sharedImage.image __ no. N..:
-                    painter.drawImage(self.pos(), self._sharedImage.image)
+                __ _sharedImage.image __ no. N..:
+                    painter.drawImage(pos(), _sharedImage.image)
                 ____
-                    painter.drawPixmap(self.pos(), self._sharedImage.pixmap)
+                    painter.drawPixmap(pos(), _sharedImage.pixmap)
             ____
                 m _ painter.worldTransform()
                 painter.setWorldTransform(QTransform())
 
                 x _ m.dx()
                 y _ m.dy()
-                __ self.noSubPixeling:
+                __ noSubPixeling:
                     x _ qRound(x)
                     y _ qRound(y)
 
-                __ self._sharedImage.image __ no. N..:
-                    painter.drawImage(QPointF(x, y), self._sharedImage.image)
+                __ _sharedImage.image __ no. N..:
+                    painter.drawImage(QPointF(x, y), _sharedImage.image)
                 ____
-                    painter.drawPixmap(QPointF(x, y), self._sharedImage.pixmap)
+                    painter.drawPixmap(QPointF(x, y), _sharedImage.pixmap)
 
             __ no. wasSmoothPixmapTransform:
                 painter.setRenderHint(QPainter.SmoothPixmapTransform,

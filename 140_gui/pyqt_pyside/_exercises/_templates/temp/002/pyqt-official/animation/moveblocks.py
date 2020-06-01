@@ -53,57 +53,57 @@ ____ ?.?W.. ______ (?A.., QGraphicsScene, QGraphicsView,
 c_ StateSwitchEvent(QEvent):
     StateSwitchType _ QEvent.User + 256
 
-    ___ __init__  rand_0):
-        super(StateSwitchEvent, self).__init__(StateSwitchEvent.StateSwitchType)
+    ___  -   rand_0):
+        super(StateSwitchEvent, self). - (StateSwitchEvent.StateSwitchType)
 
-        self.m_rand _ rand
+        m_rand _ rand
 
-    ___ rand(self):
-        r_ self.m_rand
+    ___ rand 
+        r_ m_rand
 
 
 c_ QGraphicsRectWidget(QGraphicsWidget):
     ___ paint  painter, option, widget):
-        painter.fillRect(self.rect(), __.blue)
+        painter.fillRect(rect(), __.blue)
 
 
 c_ StateSwitchTransition(QAbstractTransition):
-    ___ __init__  rand):
-        super(StateSwitchTransition, self).__init__()
+    ___  -   rand):
+        super(StateSwitchTransition, self). - ()
 
-        self.m_rand _ rand
+        m_rand _ rand
 
     ___ eventTest  event):
         r_ (event.type() == StateSwitchEvent.StateSwitchType and
-                event.rand() == self.m_rand)
+                event.rand() == m_rand)
 
     ___ onTransition  event):
         pass
 
 
 c_ StateSwitcher(QState):
-    ___ __init__  machine):
-        super(StateSwitcher, self).__init__(machine)
+    ___  -   machine):
+        super(StateSwitcher, self). - (machine)
 
-        self.m_stateCount _ 0
-        self.m_lastIndex _ 0
+        m_stateCount _ 0
+        m_lastIndex _ 0
 
     ___ onEntry  event):
-        n _ qrand() % self.m_stateCount + 1
-        w__ n == self.m_lastIndex:
-            n _ qrand() % self.m_stateCount + 1
+        n _ qrand() % m_stateCount + 1
+        w__ n == m_lastIndex:
+            n _ qrand() % m_stateCount + 1
 
-        self.m_lastIndex _ n
-        self.machine().postEvent(StateSwitchEvent(n))
+        m_lastIndex _ n
+        machine().postEvent(StateSwitchEvent(n))
 
     ___ onExit  event):
         pass
 
     ___ addState  state, animation):
-        self.m_stateCount +_ 1
-        trans _ StateSwitchTransition(self.m_stateCount)
+        m_stateCount +_ 1
+        trans _ StateSwitchTransition(m_stateCount)
         trans.setTargetState(state)
-        self.addTransition(trans)
+        addTransition(trans)
         trans.addAnimation(animation)
 
 
@@ -119,11 +119,11 @@ ___ createGeometryState(w1, rect1, w2, rect2, w3, rect3, w4, rect4, parent):
     r_ result
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     button1 _ QGraphicsRectWidget()
     button2 _ QGraphicsRectWidget()

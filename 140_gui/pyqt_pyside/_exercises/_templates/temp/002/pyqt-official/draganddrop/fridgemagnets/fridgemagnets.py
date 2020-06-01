@@ -52,10 +52,10 @@ ______ fridgemagnets_rc
 
 
 c_ DragLabel(QLabel):
-    ___ __init__  t__, parent):
-        super(DragLabel, self).__init__(parent)
+    ___  -   t__, parent):
+        super(DragLabel, self). - (parent)
 
-        metric _ QFontMetrics(self.font())
+        metric _ QFontMetrics(font())
         size _ metric.size(__.TextSingleLine, t__)
 
         image _ QImage(size.width() + 12, size.height() + 12,
@@ -78,34 +78,34 @@ c_ DragLabel(QLabel):
         painter.drawText(QRect(QPoint(6, 6), size), __.AlignCenter, t__)
         painter.end()
 
-        self.setPixmap(QPixmap.fromImage(image))
-        self.labelText _ t__
+        setPixmap(QPixmap.fromImage(image))
+        labelText _ t__
 
     ___ mousePressEvent  event):
         itemData _ QByteArray()
         dataStream _ QDataStream(itemData, QIODevice.WriteOnly)
-        dataStream << QByteArray(self.labelText) << QPoint(event.pos() - self.rect().topLeft())
+        dataStream << QByteArray(labelText) << QPoint(event.pos() - rect().topLeft())
 
         mimeData _ QMimeData()
         mimeData.setData('application/x-fridgemagnet', itemData)
-        mimeData.sT..(self.labelText)
+        mimeData.sT..(labelText)
 
-        drag _ QDrag(self)
+        drag _ QDrag
         drag.setMimeData(mimeData)
-        drag.setHotSpot(event.pos() - self.rect().topLeft())
-        drag.setPixmap(self.pixmap())
+        drag.setHotSpot(event.pos() - rect().topLeft())
+        drag.setPixmap(pixmap())
 
-        self.hide()
+        hide()
 
         __ drag.exec_(__.MoveAction | __.CopyAction, __.CopyAction) == __.MoveAction:
-            self.close()
+            close()
         ____
-            self.s..
+            s..
 
 
 c_ DragWidget(QWidget):
-    ___ __init__  parent_None):
-        super(DragWidget, self).__init__(parent)
+    ___  -   parent_None):
+        super(DragWidget, self). - (parent)
 
         dictionaryFile _ QFile(':/dictionary/words.txt')
         dictionaryFile.o..(QFile.ReadOnly)
@@ -113,7 +113,7 @@ c_ DragWidget(QWidget):
         x _ 5
         y _ 5
 
-        for word in QTextStream(dictionaryFile).readAll().split
+        ___ word __ QTextStream(dictionaryFile).readAll().split
             wordLabel _ DragLabel(word, self)
             wordLabel.move(x, y)
             wordLabel.s..
@@ -122,17 +122,17 @@ c_ DragWidget(QWidget):
                 x _ 5
                 y +_ wordLabel.height() + 2
 
-        newPalette _ self.palette()
+        newPalette _ palette()
         newPalette.sC..(?P...Window, __.white)
-        self.sP..(newPalette)
+        sP..(newPalette)
 
-        self.setMinimumSize(400, max(200, y))
-        self.setWindowTitle("Fridge Magnets")
-        self.setAcceptDrops(True)
+        setMinimumSize(400, max(200, y))
+        setWindowTitle("Fridge Magnets")
+        setAcceptDrops(True)
 
     ___ dragEnterEvent  event):
         __ event.mimeData().hasFormat('application/x-fridgemagnet'):
-            __ event.source() in self.children
+            __ event.source() __ children
                 event.setDropAction(__.MoveAction)
                 event.accept()
             ____
@@ -165,7 +165,7 @@ c_ DragWidget(QWidget):
             newLabel.move(event.pos() - offset)
             newLabel.s..
 
-            __ event.source() in self.children
+            __ event.source() __ children
                 event.setDropAction(__.MoveAction)
                 event.accept()
             ____
@@ -174,7 +174,7 @@ c_ DragWidget(QWidget):
             pieces _ event.mimeData().t__().split()
             position _ event.pos()
 
-            for piece in pieces:
+            ___ piece __ pieces:
                 newLabel _ DragLabel(piece, self)
                 newLabel.move(position)
                 newLabel.s..
@@ -186,11 +186,11 @@ c_ DragWidget(QWidget):
             event.ignore()
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     window _ DragWidget()
     window.s..
     ___.exit(app.exec_())

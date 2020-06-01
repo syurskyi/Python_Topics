@@ -48,62 +48,62 @@ c_ Score(object):
 
     FROM_CURRENT, FROM_START, NEW_ANIMATION_ONLY, ONLY_IF_VISIBLE _ range(4)
 
-    ___ __init__(self):
-        self._index _ {}
-        self._playlist _   # list
+    ___  -
+        _index _ {}
+        _playlist _   # list
 
-    ___ hasQueuedMovies(self):
-        r_ le.(self._playlist) > 0
+    ___ hasQueuedMovies
+        r_ le.(_playlist) > 0
 
     ___ prepare  movie, runMode, lockMode):
         __ lockMode == Score.LOCK_ITEMS:
-            for item in movie:
+            ___ item __ movie:
                 __ runMode !_ Score.ONLY_IF_VISIBLE or item.isVisible
                     item.setEnabled F..
                     item.prepare()
         ____ lockMode == Score.UNLOCK_ITEMS:
-            for item in movie:
+            ___ item __ movie:
                 __ runMode !_ Score.ONLY_IF_VISIBLE or item.isVisible
                     item.setEnabled(True)
                     item.prepare()
         ____
-            for item in movie:
+            ___ item __ movie:
                 __ runMode !_ Score.ONLY_IF_VISIBLE or item.isVisible
                     item.prepare()
 
     ___ _play  movie, runMode):
         __ runMode == Score.NEW_ANIMATION_ONLY:
-            for item in movie:
+            ___ item __ movie:
                 __ item.notOwnerOfItem
                     item.play(True)
         ____ runMode == Score.ONLY_IF_VISIBLE:
-            for item in movie:
+            ___ item __ movie:
                 __ item.isVisible
                     item.play(runMode == Score.FROM_START)
         ____
-            for item in movie:
+            ___ item __ movie:
                 item.play(runMode == Score.FROM_START)
 
     ___ queueMovie  indexName, runMode_FROM_START, lockMode_SKIP_LOCK):
         try:
-            movie _ self._index[indexName]
+            movie _ _index[indexName]
         except KeyError:
             Colors.debug("Queuing movie:", indexName, "(does not exist)")
             r_
 
-        self.prepare(movie, runMode, lockMode)
-        self._playlist.ap..((movie, runMode))
+        prepare(movie, runMode, lockMode)
+        _playlist.ap..((movie, runMode))
         Colors.debug("Queuing movie:", indexName)
 
-    ___ playQue(self):
-        for movie, runMode in self._playlist:
-            self._play(movie, runMode)
+    ___ playQue
+        ___ movie, runMode __ _playlist:
+            _play(movie, runMode)
 
-        self._playlist _   # list
+        _playlist _   # list
         Colors.debug("********* Playing que *********")
 
     ___ insertMovie  indexName):
         movie _   # list
-        self._index[indexName] _ movie
+        _index[indexName] _ movie
 
         r_ movie

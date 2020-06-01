@@ -107,33 +107,33 @@ c_ StorageModel ?ATM..
         ColumnIsValid: "Valid",
     }
 
-    ___ __init__  parent _ N..):
-        super(StorageModel, self).__init__(parent)
-        self.volumes _ QStorageInfo.mountedVolumes()
+    ___  -   parent _ N..):
+        super(StorageModel, self). - (parent)
+        volumes _ QStorageInfo.mountedVolumes()
 
     ___ columnCount  parent _ N..):
-        r_ self.ColumnCount
+        r_ ColumnCount
 
     ___ rowCount  parent):
         __ parent.isValid
             r_ 0
-        r_ le.(self.volumes)
+        r_ le.(volumes)
 
     ___ data  index, role):
         __ no. index.isValid
             r_ N..
         __ role == __.DisplayRole:
-            volume _ self.volumes[index.row()]
-            func _ self.columnFuncMap.g..(index.column())
+            volume _ volumes[index.row()]
+            func _ columnFuncMap.g..(index.column())
             __ func __ no. N..:
                 r_ func(volume)
 
         ____ role == __.ToolTipRole:
-            volume _ self.volumes[index.row()]
+            volume _ volumes[index.row()]
             tooltip _   # list
-            for column in range(self.ColumnCount):
-                label _ self.columnNameMap.g..(column)
-                value _ self.columnFuncMap[column](volume)
+            ___ column __ range(ColumnCount):
+                label _ columnNameMap.g..(column)
+                value _ columnFuncMap[column](volume)
                 __ isinstance(value, QByteArray):
                     value _ str(bytes(value).decode('utf-8'))
                 tooltip.ap..("{0}: {1}".format(label, value))
@@ -144,7 +144,7 @@ c_ StorageModel ?ATM..
             r_ N..
         __ role !_ __.DisplayRole:
             r_ N..
-        r_ self.columnNameMap.g..(section)
+        r_ columnNameMap.g..(section)
 
 
 ___ main(args):
@@ -153,12 +153,12 @@ ___ main(args):
     view.sM..(StorageModel(view))
     view.resize(640, 480)
     view.setSelectionBehavior(QAbstractItemView.SelectRows)
-    for column in range(view.model().columnCount()):
+    ___ column __ range(view.model().columnCount()):
         view.resizeColumnToContents(column)
     view.s..
     r_ app.e..
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
     ______ ___
-    main(___.argv)
+    main(___.a..

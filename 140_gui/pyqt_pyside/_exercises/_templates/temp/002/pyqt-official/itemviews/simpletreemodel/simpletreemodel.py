@@ -49,51 +49,51 @@ ______ simpletreemodel_rc
 
 
 c_ TreeItem(object):
-    ___ __init__  data, parent_None):
-        self.parentItem _ parent
-        self.itemData _ data
-        self.childItems _   # list
+    ___  -   data, parent_None):
+        parentItem _ parent
+        itemData _ data
+        childItems _   # list
 
     ___ appendChild  item):
-        self.childItems.ap..(item)
+        childItems.ap..(item)
 
     ___ child  row):
-        r_ self.childItems[row]
+        r_ childItems[row]
 
-    ___ childCount(self):
-        r_ le.(self.childItems)
+    ___ childCount 
+        r_ le.(childItems)
 
-    ___ columnCount(self):
-        r_ le.(self.itemData)
+    ___ columnCount 
+        r_ le.(itemData)
 
     ___ data  column):
         try:
-            r_ self.itemData[column]
+            r_ itemData[column]
         except IndexError:
             r_ N..
 
-    ___ parent(self):
-        r_ self.parentItem
+    ___ parent 
+        r_ parentItem
 
-    ___ row(self):
-        __ self.parentItem:
-            r_ self.parentItem.childItems.index(self)
+    ___ row 
+        __ parentItem:
+            r_ parentItem.childItems.index
 
         r_ 0
 
 
 c_ TreeModel(QAbstractItemModel):
-    ___ __init__  data, parent_None):
-        super(TreeModel, self).__init__(parent)
+    ___  -   data, parent_None):
+        super(TreeModel, self). - (parent)
 
-        self.rootItem _ TreeItem(("Title", "Summary"))
-        self.setupModelData(data.split('\n'), self.rootItem)
+        rootItem _ TreeItem(("Title", "Summary"))
+        setupModelData(data.split('\n'), rootItem)
 
     ___ columnCount  parent):
         __ parent.isValid
             r_ parent.internalPointer().columnCount()
         ____
-            r_ self.rootItem.columnCount()
+            r_ rootItem.columnCount()
 
     ___ data  index, role):
         __ no. index.isValid
@@ -114,22 +114,22 @@ c_ TreeModel(QAbstractItemModel):
 
     ___ headerData  section, orientation, role):
         __ orientation == __.Horizontal and role == __.DisplayRole:
-            r_ self.rootItem.data(section)
+            r_ rootItem.data(section)
 
         r_ N..
 
     ___ index  row, column, parent):
-        __ no. self.hasIndex(row, column, parent):
+        __ no. hasIndex(row, column, parent):
             r_ QModelIndex()
 
         __ no. parent.isValid
-            parentItem _ self.rootItem
+            parentItem _ rootItem
         ____
             parentItem _ parent.internalPointer()
 
         childItem _ parentItem.child(row)
         __ childItem:
-            r_ self.createIndex(row, column, childItem)
+            r_ createIndex(row, column, childItem)
         ____
             r_ QModelIndex()
 
@@ -140,17 +140,17 @@ c_ TreeModel(QAbstractItemModel):
         childItem _ index.internalPointer()
         parentItem _ childItem.parent()
 
-        __ parentItem == self.rootItem:
+        __ parentItem == rootItem:
             r_ QModelIndex()
 
-        r_ self.createIndex(parentItem.row(), 0, parentItem)
+        r_ createIndex(parentItem.row(), 0, parentItem)
 
     ___ rowCount  parent):
         __ parent.column() > 0:
             r_ 0
 
         __ no. parent.isValid
-            parentItem _ self.rootItem
+            parentItem _ rootItem
         ____
             parentItem _ parent.internalPointer()
 
@@ -173,7 +173,7 @@ c_ TreeModel(QAbstractItemModel):
 
             __ lineData:
                 # Read the column data from the rest of the line.
-                columnData _ [s for s in lineData.split('\t') __ s]
+                columnData _ [s ___ s __ lineData.split('\t') __ s]
 
                 __ position > indentations[-1]:
                     # The last child of the current parent is now the new
@@ -194,11 +194,11 @@ c_ TreeModel(QAbstractItemModel):
             number +_ 1
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     f _ QFile(':/default.txt')
     f.o..(QIODevice.ReadOnly)

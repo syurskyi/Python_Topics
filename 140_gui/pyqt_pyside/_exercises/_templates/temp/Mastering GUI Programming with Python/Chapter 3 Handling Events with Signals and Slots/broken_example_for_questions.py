@@ -3,43 +3,43 @@ ____ ? ______ ?W.. __ qtw
 ____ ? ______ ?G.. __ qtg
 ____ ? ______ ?C.. __ qtc
 
-c_ TimeForm(qtw.QWidget):
+c_ TimeForm ?.?W..
 
     submitted _ qtc.pyqtSignal(qtc.QTime)
 
-    ___ __init__(self):
-        super().__init__()
-        self.sL..(qtw.QHBoxLayout())
-        self.time_inp _ qtw.QTimeEdit(self)
+    ___  -  
+        s_. - ()
+        sL..(qtw.QHBoxLayout())
+        time_inp _ qtw.QTimeEdit
         #self.time_inp = qtw.QTimeEdit(self, objectName='time_inp')
-        self.layout().aW..(self.time_inp)
+        layout().aW..(time_inp)
         #qtc.QMetaObject.connectSlotsByName(self)
 
-    ___ on_time_inp_editingFinished(self):
-        self.submitted.emit(self.time_inp.time())
-        self.destroy()
+    ___ on_time_inp_editingFinished 
+        submitted.emit(time_inp.time())
+        destroy()
 
-c_ MainWindow(qtw.QWidget):
+c_ MainWindow ?.?W..
 
-    ___ __init__(self):
+    ___  -  
         """MainWindow constructor.
 
         This widget will be our main window.
         We'll define all the UI components in here.
         """
-        super().__init__()
+        s_. - ()
         # Main UI code goes here
-        self.tf _ TimeForm()
-        self.tf.s..
+        tf _ TimeForm()
+        tf.s..
 
-        self.tf.submitted.c..(lambda x: print(x))
+        tf.submitted.c..(lambda x: print(x))
 
         # End main UI code
-        self.s..
+        s..
 
 
-__ __name__ == '__main__':
-    app _ qtw.?A..(___.argv)
+__ ______ __ ______
+    app _ qtw.?A..(___.a..
     # it's required to save a reference to MainWindow.
     # if it goes out of scope, it will be destroyed.
     mw _ MainWindow()

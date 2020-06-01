@@ -8,40 +8,40 @@ ____ .board ______ TTTBoard
 
 c_ MainWindow(qtw.QMainWindow):
 
-    ___ __init__(self):
+    ___  -
         """MainWindow constructor."""
-        super().__init__()
+        s_. - ()
         # Main UI code goes here
-        self.board _ TTTBoard()
-        self.board_view _ qtw.QGraphicsView()
-        self.board_view.setScene(self.board)
-        self.sCW..(self.board_view)
-        self.start_game()
-        self.board.square_clicked.c..(self.try_mark)
+        board _ TTTBoard()
+        board_view _ qtw.QGraphicsView()
+        board_view.setScene(board)
+        sCW..(board_view)
+        start_game()
+        board.square_clicked.c..(try_mark)
         # End main UI code
-        self.s..
+        s..
 
-    ___ start_game(self):
+    ___ start_game 
         """Clear the board and begin a new game"""
-        self.board.clear_board()
-        self.game _ TicTacToeEngine()
-        self.game.game_won.c..(self.game_won)
-        self.game.game_draw.c..(self.game_draw)
+        board.clear_board()
+        game _ TicTacToeEngine()
+        game.game_won.c..(game_won)
+        game.game_draw.c..(game_draw)
 
     ___ try_mark  square):
         """Attempt to mark a square"""
-        __ self.game.mark_square(square):
-            self.board.set_board(self.game.board)
-            self.game.check_board()
+        __ game.mark_square(square):
+            board.set_board(game.board)
+            game.check_board()
 
     ___ game_won  player):
         """Display the winner and start a new game"""
         qtw.?MB...information(
             N.., 'Game Won', f'Player {player} Won!')
-        self.start_game()
+        start_game()
 
-    ___ game_draw(self):
+    ___ game_draw 
         """Display the lack of a winner and start a new game"""
         qtw.?MB...information(
             N.., 'Game Over', 'Game Over.  Nobody Won...')
-        self.start_game()
+        start_game()

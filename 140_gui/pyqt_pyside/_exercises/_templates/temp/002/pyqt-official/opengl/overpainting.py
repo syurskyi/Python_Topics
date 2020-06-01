@@ -53,33 +53,33 @@ ____ ?.?W.. ______ ?A.., QOpenGLWidget
 
 
 c_ Bubble(object):
-    ___ __init__  position, radius, velocity):
-        self.position _ position
-        self.vel _ velocity
-        self.radius _ radius
+    ___  -   position, radius, velocity):
+        position _ position
+        vel _ velocity
+        radius _ radius
 
-        self.innerColor _ self.randomColor()
-        self.outerColor _ self.randomColor()
-        self.updateBrush()
+        innerColor _ randomColor()
+        outerColor _ randomColor()
+        updateBrush()
 
-    ___ updateBrush(self):
-        gradient _ QRadialGradient(QPointF(self.radius, self.radius),
-                self.radius, QPointF(self.radius*0.5, self.radius*0.5))
+    ___ updateBrush 
+        gradient _ QRadialGradient(QPointF(radius, radius),
+                radius, QPointF(radius*0.5, radius*0.5))
 
         gradient.setColorAt(0, ?C..(255, 255, 255, 255))
-        gradient.setColorAt(0.25, self.innerColor)
-        gradient.setColorAt(1, self.outerColor)
-        self.brush _ QBrush(gradient)
+        gradient.setColorAt(0.25, innerColor)
+        gradient.setColorAt(1, outerColor)
+        brush _ QBrush(gradient)
 
     ___ drawBubble  painter):
         painter.save()
-        painter.translate(self.position.x() - self.radius,
-                self.position.y() - self.radius)
-        painter.setBrush(self.brush)
-        painter.drawEllipse(0, 0, int(2*self.radius), int(2*self.radius))
+        painter.translate(position.x() - radius,
+                position.y() - radius)
+        painter.setBrush(brush)
+        painter.drawEllipse(0, 0, int(2*radius), int(2*radius))
         painter.restore()
 
-    ___ randomColor(self):
+    ___ randomColor 
         red _ random.randrange(205, 256)
         green _ random.randrange(205, 256)
         blue _ random.randrange(205, 256)
@@ -88,158 +88,158 @@ c_ Bubble(object):
         r_ ?C..(red, green, blue, alpha)
 
     ___ move  bbox):
-        self.position +_ self.vel
-        leftOverflow _ self.position.x() - self.radius - bbox.left()
-        rightOverflow _ self.position.x() + self.radius - bbox.right()
-        topOverflow _ self.position.y() - self.radius - bbox.top()
-        bottomOverflow _ self.position.y() + self.radius - bbox.bottom()
+        position +_ vel
+        leftOverflow _ position.x() - radius - bbox.left()
+        rightOverflow _ position.x() + radius - bbox.right()
+        topOverflow _ position.y() - radius - bbox.top()
+        bottomOverflow _ position.y() + radius - bbox.bottom()
 
         __ leftOverflow < 0.0:
-            self.position.setX(self.position.x() - 2 * leftOverflow)
-            self.vel.setX(-self.vel.x())
+            position.setX(position.x() - 2 * leftOverflow)
+            vel.setX(-vel.x())
         ____ rightOverflow > 0.0:
-            self.position.setX(self.position.x() - 2 * rightOverflow)
-            self.vel.setX(-self.vel.x())
+            position.setX(position.x() - 2 * rightOverflow)
+            vel.setX(-vel.x())
 
         __ topOverflow < 0.0:
-            self.position.setY(self.position.y() - 2 * topOverflow)
-            self.vel.setY(-self.vel.y())
+            position.setY(position.y() - 2 * topOverflow)
+            vel.setY(-vel.y())
         ____ bottomOverflow > 0.0:
-            self.position.setY(self.position.y() - 2 * bottomOverflow)
-            self.vel.setY(-self.vel.y())
+            position.setY(position.y() - 2 * bottomOverflow)
+            vel.setY(-vel.y())
 
-    ___ rect(self):
-        r_ QRectF(self.position.x() - self.radius,
-                self.position.y() - self.radius, 2 * self.radius,
-                2 * self.radius)
+    ___ rect 
+        r_ QRectF(position.x() - radius,
+                position.y() - radius, 2 * radius,
+                2 * radius)
 
 
 c_ GLWidget(QOpenGLWidget):
-    ___ __init__  parent_None):
-        super(GLWidget, self).__init__(parent)
+    ___  -   parent_None):
+        super(GLWidget, self). - (parent)
 
         midnight _ QTime(0, 0, 0)
         random.seed(midnight.secsTo(QTime.currentTime()))
 
-        self.object _ 0
-        self.xRot _ 0
-        self.yRot _ 0
-        self.zRot _ 0
-        self.image _ QImage()
-        self.bubbles _   # list
-        self.lastPos _ QPoint()
+        object _ 0
+        xRot _ 0
+        yRot _ 0
+        zRot _ 0
+        image _ QImage()
+        bubbles _   # list
+        lastPos _ QPoint()
 
-        self.trolltechGreen _ ?C...fromCmykF(0.40, 0.0, 1.0, 0.0)
-        self.trolltechPurple _ ?C...fromCmykF(0.39, 0.39, 0.0, 0.0)
+        trolltechGreen _ ?C...fromCmykF(0.40, 0.0, 1.0, 0.0)
+        trolltechPurple _ ?C...fromCmykF(0.39, 0.39, 0.0, 0.0)
 
-        self.animationTimer _ ?T..
-        self.animationTimer.setSingleShot F..
-        self.animationTimer.timeout.c..(self.animate)
-        self.animationTimer.start(25)
+        animationTimer _ ?T..
+        animationTimer.setSingleShot F..
+        animationTimer.timeout.c..(animate)
+        animationTimer.start(25)
 
-        self.setAutoFillBackground F..
-        self.setMinimumSize(200, 200)
-        self.setWindowTitle("Overpainting a Scene")
+        setAutoFillBackground F..
+        setMinimumSize(200, 200)
+        setWindowTitle("Overpainting a Scene")
 
     ___ setXRotation  angle):
-        angle _ self.normalizeAngle(angle)
-        __ angle !_ self.xRot:
-            self.xRot _ angle
+        angle _ normalizeAngle(angle)
+        __ angle !_ xRot:
+            xRot _ angle
 
     ___ setYRotation  angle):
-        angle _ self.normalizeAngle(angle)
-        __ angle !_ self.yRot:
-            self.yRot _ angle
+        angle _ normalizeAngle(angle)
+        __ angle !_ yRot:
+            yRot _ angle
 
     ___ setZRotation  angle):
-        angle _ self.normalizeAngle(angle)
-        __ angle !_ self.zRot:
-            self.zRot _ angle
+        angle _ normalizeAngle(angle)
+        __ angle !_ zRot:
+            zRot _ angle
 
-    ___ initializeGL(self):
+    ___ initializeGL 
         version_profile _ QOpenGLVersionProfile()
         version_profile.setVersion(2, 0)
-        self.gl _ self.context().versionFunctions(version_profile)
-        self.gl.initializeOpenGLFunctions()
+        gl _ context().versionFunctions(version_profile)
+        gl.initializeOpenGLFunctions()
 
-        self.object _ self.makeObject()
+        object _ makeObject()
 
     ___ mousePressEvent  event):
-        self.lastPos _ event.pos()
+        lastPos _ event.pos()
 
     ___ mouseMoveEvent  event):
-        dx _ event.x() - self.lastPos.x()
-        dy _ event.y() - self.lastPos.y()
+        dx _ event.x() - lastPos.x()
+        dy _ event.y() - lastPos.y()
 
         __ event.buttons() & __.LeftButton:
-            self.setXRotation(self.xRot + 8 * dy)
-            self.setYRotation(self.yRot + 8 * dx)
+            setXRotation(xRot + 8 * dy)
+            setYRotation(yRot + 8 * dx)
         ____ event.buttons() & __.RightButton:
-            self.setXRotation(self.xRot + 8 * dy)
-            self.setZRotation(self.zRot + 8 * dx)
+            setXRotation(xRot + 8 * dy)
+            setZRotation(zRot + 8 * dx)
 
-        self.lastPos _ event.pos()
+        lastPos _ event.pos()
 
     ___ paintEvent  event):
-        self.makeCurrent()
+        makeCurrent()
 
-        self.gl.glMatrixMode(self.gl.GL_MODELVIEW)
-        self.gl.glPushMatrix()
+        gl.glMatrixMode(gl.GL_MODELVIEW)
+        gl.glPushMatrix()
 
-        self.setClearColor(self.trolltechPurple.darker())
-        self.gl.glShadeModel(self.gl.GL_SMOOTH)
-        self.gl.glEnable(self.gl.GL_DEPTH_TEST)
+        setClearColor(trolltechPurple.darker())
+        gl.glShadeModel(gl.GL_SMOOTH)
+        gl.glEnable(gl.GL_DEPTH_TEST)
         #self.gl.glEnable(self.gl.GL_CULL_FACE)
-        self.gl.glEnable(self.gl.GL_LIGHTING)
-        self.gl.glEnable(self.gl.GL_LIGHT0)
-        self.gl.glEnable(self.gl.GL_MULTISAMPLE)
-        self.gl.glLightfv(self.gl.GL_LIGHT0, self.gl.GL_POSITION,
+        gl.glEnable(gl.GL_LIGHTING)
+        gl.glEnable(gl.GL_LIGHT0)
+        gl.glEnable(gl.GL_MULTISAMPLE)
+        gl.glLightfv(gl.GL_LIGHT0, gl.GL_POSITION,
                 (0.5, 5.0, 7.0, 1.0))
 
-        self.setupViewport(self.width(), self.height())
+        setupViewport(width(), height())
 
-        self.gl.glClear(
-                self.gl.GL_COLOR_BUFFER_BIT | self.gl.GL_DEPTH_BUFFER_BIT)
-        self.gl.glLoadIdentity()
-        self.gl.glTranslated(0.0, 0.0, -10.0)
-        self.gl.glRotated(self.xRot / 16.0, 1.0, 0.0, 0.0)
-        self.gl.glRotated(self.yRot / 16.0, 0.0, 1.0, 0.0)
-        self.gl.glRotated(self.zRot / 16.0, 0.0, 0.0, 1.0)
-        self.gl.glCallList(self.object)
+        gl.glClear(
+                gl.GL_COLOR_BUFFER_BIT | gl.GL_DEPTH_BUFFER_BIT)
+        gl.glLoadIdentity()
+        gl.glTranslated(0.0, 0.0, -10.0)
+        gl.glRotated(xRot / 16.0, 1.0, 0.0, 0.0)
+        gl.glRotated(yRot / 16.0, 0.0, 1.0, 0.0)
+        gl.glRotated(zRot / 16.0, 0.0, 0.0, 1.0)
+        gl.glCallList(object)
 
-        self.gl.glMatrixMode(self.gl.GL_MODELVIEW)
-        self.gl.glPopMatrix()
+        gl.glMatrixMode(gl.GL_MODELVIEW)
+        gl.glPopMatrix()
 
-        painter _ QPainter(self)
+        painter _ QPainter
         painter.setRenderHint(QPainter.Antialiasing)
 
-        for bubble in self.bubbles:
+        ___ bubble __ bubbles:
             __ bubble.rect().intersects(QRectF(event.rect())):
                 bubble.drawBubble(painter)
 
-        self.drawInstructions(painter)
+        drawInstructions(painter)
         painter.end()
 
     ___ resizeGL  width, height):
-        self.setupViewport(width, height)
+        setupViewport(width, height)
 
     ___ showEvent  event):
-        self.createBubbles(20 - le.(self.bubbles))
+        createBubbles(20 - le.(bubbles))
 
-    ___ sizeHint(self):
+    ___ sizeHint 
         r_ QSize(400, 400)
 
-    ___ makeObject(self):
-        list _ self.gl.glGenLists(1)
-        self.gl.glNewList(list, self.gl.GL_COMPILE)
+    ___ makeObject 
+        list _ gl.glGenLists(1)
+        gl.glNewList(list, gl.GL_COMPILE)
 
-        self.gl.glEnable(self.gl.GL_NORMALIZE)
-        self.gl.glBegin(self.gl.GL_QUADS)
+        gl.glEnable(gl.GL_NORMALIZE)
+        gl.glBegin(gl.GL_QUADS)
 
-        self.gl.glMaterialfv(self.gl.GL_FRONT, self.gl.GL_DIFFUSE,
-                (self.trolltechGreen.red()/255.0,
-                 self.trolltechGreen.green()/255.0,
-                 self.trolltechGreen.blue()/255.0, 1.0))
+        gl.glMaterialfv(gl.GL_FRONT, gl.GL_DIFFUSE,
+                (trolltechGreen.red()/255.0,
+                 trolltechGreen.green()/255.0,
+                 trolltechGreen.blue()/255.0, 1.0))
 
         x1 _ +0.06
         y1 _ -0.14
@@ -250,20 +250,20 @@ c_ GLWidget(QOpenGLWidget):
         x4 _ +0.30
         y4 _ +0.22
 
-        self.quad(x1, y1, x2, y2, y2, x2, y1, x1)
-        self.quad(x3, y3, x4, y4, y4, x4, y3, x3)
+        quad(x1, y1, x2, y2, y2, x2, y1, x1)
+        quad(x3, y3, x4, y4, y4, x4, y3, x3)
 
-        self.extrude(x1, y1, x2, y2)
-        self.extrude(x2, y2, y2, x2)
-        self.extrude(y2, x2, y1, x1)
-        self.extrude(y1, x1, x1, y1)
-        self.extrude(x3, y3, x4, y4)
-        self.extrude(x4, y4, y4, x4)
-        self.extrude(y4, x4, y3, x3)
+        extrude(x1, y1, x2, y2)
+        extrude(x2, y2, y2, x2)
+        extrude(y2, x2, y1, x1)
+        extrude(y1, x1, x1, y1)
+        extrude(x3, y3, x4, y4)
+        extrude(x4, y4, y4, x4)
+        extrude(y4, x4, y3, x3)
 
         NumSectors _ 200
 
-        for i in range(NumSectors):
+        ___ i __ range(NumSectors):
             angle1 _ (i * 2 * math.pi) / NumSectors
             x5 _ 0.30 * math.sin(angle1)
             y5 _ 0.30 * math.cos(angle1)
@@ -276,37 +276,37 @@ c_ GLWidget(QOpenGLWidget):
             x8 _ 0.30 * math.sin(angle2)
             y8 _ 0.30 * math.cos(angle2)
 
-            self.quad(x5, y5, x6, y6, x7, y7, x8, y8)
+            quad(x5, y5, x6, y6, x7, y7, x8, y8)
 
-            self.extrude(x6, y6, x7, y7)
-            self.extrude(x8, y8, x5, y5)
+            extrude(x6, y6, x7, y7)
+            extrude(x8, y8, x5, y5)
 
-        self.gl.glEnd()
+        gl.glEnd()
 
-        self.gl.glEndList()
+        gl.glEndList()
         r_ list
 
     ___ quad  x1, y1, x2, y2, x3, y3, x4, y4):
-        self.gl.glNormal3d(0.0, 0.0, -1.0)
-        self.gl.glVertex3d(x1, y1, -0.05)
-        self.gl.glVertex3d(x2, y2, -0.05)
-        self.gl.glVertex3d(x3, y3, -0.05)
-        self.gl.glVertex3d(x4, y4, -0.05)
+        gl.glNormal3d(0.0, 0.0, -1.0)
+        gl.glVertex3d(x1, y1, -0.05)
+        gl.glVertex3d(x2, y2, -0.05)
+        gl.glVertex3d(x3, y3, -0.05)
+        gl.glVertex3d(x4, y4, -0.05)
 
-        self.gl.glNormal3d(0.0, 0.0, 1.0)
-        self.gl.glVertex3d(x4, y4, +0.05)
-        self.gl.glVertex3d(x3, y3, +0.05)
-        self.gl.glVertex3d(x2, y2, +0.05)
-        self.gl.glVertex3d(x1, y1, +0.05)
+        gl.glNormal3d(0.0, 0.0, 1.0)
+        gl.glVertex3d(x4, y4, +0.05)
+        gl.glVertex3d(x3, y3, +0.05)
+        gl.glVertex3d(x2, y2, +0.05)
+        gl.glVertex3d(x1, y1, +0.05)
 
     ___ extrude  x1, y1, x2, y2):
-        self.sC..(self.trolltechGreen.darker(250 + int(100 * x1)))
+        sC..(trolltechGreen.darker(250 + int(100 * x1)))
 
-        self.gl.glNormal3d((x1 + x2)/2.0, (y1 + y2)/2.0, 0.0)
-        self.gl.glVertex3d(x1, y1, +0.05)
-        self.gl.glVertex3d(x2, y2, +0.05)
-        self.gl.glVertex3d(x2, y2, -0.05)
-        self.gl.glVertex3d(x1, y1, -0.05)
+        gl.glNormal3d((x1 + x2)/2.0, (y1 + y2)/2.0, 0.0)
+        gl.glVertex3d(x1, y1, +0.05)
+        gl.glVertex3d(x2, y2, +0.05)
+        gl.glVertex3d(x2, y2, -0.05)
+        gl.glVertex3d(x1, y1, -0.05)
 
     ___ normalizeAngle  angle):
         w__ angle < 0:
@@ -316,59 +316,59 @@ c_ GLWidget(QOpenGLWidget):
         r_ angle
 
     ___ createBubbles  number):
-        for i in range(number):
-            position _ QPointF(self.width()*(0.1 + 0.8*random.random()),
-                               self.height()*(0.1 + 0.8*random.random()))
-            radius _ min(self.width(), self.height())*(0.0125 + 0.0875*random.random())
-            velocity _ QPointF(self.width()*0.0125*(-0.5 + random.random()),
-                               self.height()*0.0125*(-0.5 + random.random()))
+        ___ i __ range(number):
+            position _ QPointF(width()*(0.1 + 0.8*random.random()),
+                               height()*(0.1 + 0.8*random.random()))
+            radius _ min(width(), height())*(0.0125 + 0.0875*random.random())
+            velocity _ QPointF(width()*0.0125*(-0.5 + random.random()),
+                               height()*0.0125*(-0.5 + random.random()))
 
-            self.bubbles.ap..(Bubble(position, radius, velocity))
+            bubbles.ap..(Bubble(position, radius, velocity))
 
-    ___ animate(self):
-        for bubble in self.bubbles:
-            bubble.move(self.rect())
+    ___ animate 
+        ___ bubble __ bubbles:
+            bubble.move(rect())
 
-        self.update()
+        update()
 
     ___ setupViewport  width, height):
         side _ min(width, height)
-        self.gl.glViewport((width - side) // 2, (height - side) // 2, side,
+        gl.glViewport((width - side) // 2, (height - side) // 2, side,
                 side)
 
-        self.gl.glMatrixMode(self.gl.GL_PROJECTION)
-        self.gl.glLoadIdentity()
-        self.gl.glOrtho(-0.5, +0.5, +0.5, -0.5, 4.0, 15.0)
-        self.gl.glMatrixMode(self.gl.GL_MODELVIEW)
+        gl.glMatrixMode(gl.GL_PROJECTION)
+        gl.glLoadIdentity()
+        gl.glOrtho(-0.5, +0.5, +0.5, -0.5, 4.0, 15.0)
+        gl.glMatrixMode(gl.GL_MODELVIEW)
 
     ___ drawInstructions  painter):
         t__ _ "Click and drag with the left mouse button to rotate the Qt " \
                 "logo."
-        metrics _ QFontMetrics(self.font())
+        metrics _ QFontMetrics(font())
         border _ max(4, metrics.leading())
 
-        rect _ metrics.boundingRect(0, 0, self.width() - 2*border,
-                int(self.height()*0.125), __.AlignCenter | __.TextWordWrap,
+        rect _ metrics.boundingRect(0, 0, width() - 2*border,
+                int(height()*0.125), __.AlignCenter | __.TextWordWrap,
                 t__)
         painter.setRenderHint(QPainter.TextAntialiasing)
-        painter.fillRect(QRect(0, 0, self.width(), rect.height() + 2*border),
+        painter.fillRect(QRect(0, 0, width(), rect.height() + 2*border),
                 ?C..(0, 0, 0, 127))
         painter.setPen(__.white)
-        painter.fillRect(QRect(0, 0, self.width(), rect.height() + 2*border),
+        painter.fillRect(QRect(0, 0, width(), rect.height() + 2*border),
                 ?C..(0, 0, 0, 127))
-        painter.drawText((self.width() - rect.width())/2, border, rect.width(),
+        painter.drawText((width() - rect.width())/2, border, rect.width(),
                 rect.height(), __.AlignCenter | __.TextWordWrap, t__)
 
     ___ setClearColor  c):
-        self.gl.glClearColor(c.redF(), c.greenF(), c.blueF(), c.alphaF())
+        gl.glClearColor(c.redF(), c.greenF(), c.blueF(), c.alphaF())
 
     ___ sC..  c):
-        self.gl.glColor4f(c.redF(), c.greenF(), c.blueF(), c.alphaF())
+        gl.glColor4f(c.redF(), c.greenF(), c.blueF(), c.alphaF())
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     fmt _ QSurfaceFormat()
     fmt.setSamples(4)

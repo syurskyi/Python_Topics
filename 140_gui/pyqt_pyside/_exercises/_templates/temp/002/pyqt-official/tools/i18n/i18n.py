@@ -52,22 +52,22 @@ ______ i18n_rc
 
 
 c_ LanguageChooser(QDialog):
-    ___ __init__  parent_None):
-        super(LanguageChooser, self).__init__(parent, __.WindowStaysOnTopHint)
+    ___  -   parent_None):
+        super(LanguageChooser, self). - (parent, __.WindowStaysOnTopHint)
 
-        self.qmFileForCheckBoxMap _ {}
-        self.mainWindowForCheckBoxMap _ {} 
+        qmFileForCheckBoxMap _ {}
+        mainWindowForCheckBoxMap _ {} 
 
         groupBox _ QGroupBox("Languages")
 
         groupBoxLayout _ QGridLayout()
 
-        qmFiles _ self.findQmFiles()
+        qmFiles _ findQmFiles()
 
-        for i, qmf in enumerate(qmFiles):
-            checkBox _ QCheckBox(self.languageName(qmf))
-            self.qmFileForCheckBoxMap[checkBox] _ qmf
-            checkBox.toggled.c..(self.checkBoxToggled)
+        ___ i, qmf __ en..(qmFiles):
+            checkBox _ QCheckBox(languageName(qmf))
+            qmFileForCheckBoxMap[checkBox] _ qmf
+            checkBox.toggled.c..(checkBoxToggled)
             groupBoxLayout.aW..(checkBox, i / 2, i % 2)
 
         groupBox.sL..(groupBoxLayout)
@@ -79,22 +79,22 @@ c_ LanguageChooser(QDialog):
         hideAllButton _ buttonBox.addButton("Hide All",
                 QDialogButtonBox.ActionRole)
 
-        showAllButton.c__.c..(self.showAll)
-        hideAllButton.c__.c..(self.hideAll)
+        showAllButton.c__.c..(showAll)
+        hideAllButton.c__.c..(hideAll)
 
         mainLayout _ ?VBL..
         mainLayout.aW..(groupBox)
         mainLayout.aW..(buttonBox)
-        self.sL..(mainLayout)
+        sL..(mainLayout)
 
-        self.setWindowTitle("I18N")
+        setWindowTitle("I18N")
 
     ___ eventFilter  object, event):
         __ event.type() == QEvent.Close:
             __ isinstance(object, MainWindow):
                 window _ object
 
-                for checkBox, w in self.mainWindowForCheckBoxMap.items
+                ___ checkBox, w __ mainWindowForCheckBoxMap.items
                     __ w __ window:
                         break
                 ____
@@ -108,40 +108,40 @@ c_ LanguageChooser(QDialog):
     ___ closeEvent  event):
         ?A...instance().quit()
 
-    ___ checkBoxToggled(self):
-        checkBox _ self.sender()
-        window _ self.mainWindowForCheckBoxMap.g..(checkBox)
+    ___ checkBoxToggled 
+        checkBox _ sender()
+        window _ mainWindowForCheckBoxMap.g..(checkBox)
 
         __ no. window:
             translator _ QTranslator()
-            translator.load(self.qmFileForCheckBoxMap[checkBox])
+            translator.load(qmFileForCheckBoxMap[checkBox])
             ?A...installTranslator(translator)
 
             # Because we will be installing an event filter for the main window
             # it is important that this instance isn't garbage collected before
             # the main window when the program terminates.  We ensure this by
             # making the main window a child of this one.
-            window _ MainWindow(self)
-            window.sP..(?P..(self.colorForLanguage(checkBox.t__())))
+            window _ MainWindow
+            window.sP..(?P..(colorForLanguage(checkBox.t__())))
 
-            window.installEventFilter(self)
-            self.mainWindowForCheckBoxMap[checkBox] _ window
+            window.installEventFilter
+            mainWindowForCheckBoxMap[checkBox] _ window
 
         window.setVisible(checkBox.isChecked())
 
-    ___ showAll(self):
-        for checkBox in self.qmFileForCheckBoxMap.keys
+    ___ showAll 
+        ___ checkBox __ qmFileForCheckBoxMap.keys
             checkBox.setChecked(True)
 
-    ___ hideAll(self):
-        for checkBox in self.qmFileForCheckBoxMap.keys
+    ___ hideAll 
+        ___ checkBox __ qmFileForCheckBoxMap.keys
             checkBox.setChecked F..
 
-    ___ findQmFiles(self):
+    ___ findQmFiles 
         trans_dir _ QDir(':/translations')
         fileNames _ trans_dir.entryList(['*.qm'], QDir.Files, QDir.Name)
 
-        r_ [trans_dir.filePath(fn) for fn in fileNames]
+        r_ [trans_dir.filePath(fn) ___ fn __ fileNames]
 
     ___ languageName  qmFile):
         translator _ QTranslator() 
@@ -162,56 +162,56 @@ c_ MainWindow ?MW..
                    QT_TRANSLATE_NOOP("MainWindow", "Second"),
                    QT_TRANSLATE_NOOP("MainWindow", "Third")]
 
-    ___ __init__  parent_None):
-        super(MainWindow, self).__init__(parent)
+    ___  -   parent_None):
+        super(MainWindow, self). - (parent)
 
-        self.centralWidget _ ?W..
-        self.sCW..(self.centralWidget)
+        centralWidget _ ?W..
+        sCW..(centralWidget)
 
-        self.createGroupBox()
+        createGroupBox()
 
         listWidget _ QListWidget()
 
-        for le in MainWindow.listEntries:
-            listWidget.addItem(self.tr(le))
+        ___ le __ MainWindow.listEntries:
+            listWidget.addItem(tr(le))
 
         mainLayout _ ?VBL..
-        mainLayout.aW..(self.groupBox)
+        mainLayout.aW..(groupBox)
         mainLayout.aW..(listWidget)
-        self.centralWidget.sL..(mainLayout)
+        centralWidget.sL..(mainLayout)
 
-        exitAction _ ?A..(self.tr("E&xit"), self,
+        exitAction _ ?A..(tr("E&xit"), self,
                 triggered_QApplication.instance().quit)
 
-        fileMenu _ self.mB.. .aM..(self.tr("&File"))
+        fileMenu _ mB.. .aM..(tr("&File"))
         fileMenu.sP..(?P..(__.red))
         fileMenu.aA..(exitAction)
 
-        self.setWindowTitle(self.tr("Language: %s") % self.tr("English"))
-        self.statusBar().showMessage(self.tr("Internationalization Example"))
+        setWindowTitle(tr("Language: %s") % tr("English"))
+        statusBar().showMessage(tr("Internationalization Example"))
 
-        __ self.tr("LTR") == "RTL":
-            self.setLayoutDirection(__.RightToLeft)
+        __ tr("LTR") == "RTL":
+            setLayoutDirection(__.RightToLeft)
 
-    ___ createGroupBox(self):
-        self.groupBox _ QGroupBox(self.tr("View"))
-        perspectiveRadioButton _ QRadioButton(self.tr("Perspective"))
-        isometricRadioButton _ QRadioButton(self.tr("Isometric"))
-        obliqueRadioButton _ QRadioButton(self.tr("Oblique"))
+    ___ createGroupBox 
+        groupBox _ QGroupBox(tr("View"))
+        perspectiveRadioButton _ QRadioButton(tr("Perspective"))
+        isometricRadioButton _ QRadioButton(tr("Isometric"))
+        obliqueRadioButton _ QRadioButton(tr("Oblique"))
         perspectiveRadioButton.setChecked(True)
 
-        self.groupBoxLayout _ ?VBL..
-        self.groupBoxLayout.aW..(perspectiveRadioButton)
-        self.groupBoxLayout.aW..(isometricRadioButton)
-        self.groupBoxLayout.aW..(obliqueRadioButton)
-        self.groupBox.sL..(self.groupBoxLayout)
+        groupBoxLayout _ ?VBL..
+        groupBoxLayout.aW..(perspectiveRadioButton)
+        groupBoxLayout.aW..(isometricRadioButton)
+        groupBoxLayout.aW..(obliqueRadioButton)
+        groupBox.sL..(groupBoxLayout)
 
 
 __ __name__ == "__main__":
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     chooser _ LanguageChooser()
     chooser.s..
     ___.exit(app.exec_())

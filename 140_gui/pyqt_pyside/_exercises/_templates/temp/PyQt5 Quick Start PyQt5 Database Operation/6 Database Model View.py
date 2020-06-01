@@ -4,53 +4,53 @@ ____ ?.?C.. ______ *
 ____ ?.?W.. ______ *
 
 c_ MainWindow(QWidget):
-    ___ __init__  parent_None):
-        super(MainWindow, self).__init__(parent)
-        self.db _ ?SD...aD..("QSQLITE")
-        self.db.sDN..("test.db")
-        self.db.o..()
-        self.model _ ?STM..()
-        self.initializedModel()
+    ___  -   parent_None):
+        super(MainWindow, self). - (parent)
+        db _ ?SD...aD..("QSQLITE")
+        db.sDN..("test.db")
+        db.o..()
+        model _ ?STM..()
+        initializedModel()
 
-        self.tableView _ QTableView()
-        self.tableView.sM..(self.model)
+        tableView _ QTableView()
+        tableView.sM..(model)
 
-        self.layout _ ?VBL..
+        layout _ ?VBL..
         addButton _ ?PB..("add")
         deleteButton _ ?PB..("delete")
         hLayout _ QHBoxLayout()
         hLayout.aW..(addButton)
         hLayout.aW..(deleteButton)
-        self.layout.aW..(self.tableView)
-        self.layout.addLayout(hLayout)
-        self.sL..(self.layout)
-        self.resize(600, 400)
+        layout.aW..(tableView)
+        layout.aL..(hLayout)
+        sL..(layout)
+        resize(600, 400)
 
-        addButton.c__.c..(self.onAddRow)
-        deleteButton.c__.c..(self.onDeleteRow)
+        addButton.c__.c..(onAddRow)
+        deleteButton.c__.c..(onDeleteRow)
 
-    ___ initializedModel(self):
-        self.model.setTable("person")
-        self.model.setEditStrategy(?STM...OnFieldChange)
-        self.model.select()
-        self.model.setHeaderData(0, __.Horizontal, "ID")
-        self.model.setHeaderData(1, __.Horizontal, "Name")
-        self.model.setHeaderData(2, __.Horizontal, "Address")
+    ___ initializedModel
+        model.setTable("person")
+        model.setEditStrategy(?STM...OnFieldChange)
+        model.select()
+        model.setHeaderData(0, __.Horizontal, "ID")
+        model.setHeaderData(1, __.Horizontal, "Name")
+        model.setHeaderData(2, __.Horizontal, "Address")
 
-    ___ onAddRow(self):
-        self.model.insertRows(self.model.rowCount(), 1)
-        self.model.submit()
+    ___ onAddRow
+        model.insertRows(model.rowCount(), 1)
+        model.submit()
 
-    ___ onDeleteRow(self):
-        self.model.removeRow(self.tableView.currentIndex().row())
-        self.model.submit()
-        self.model.select()
+    ___ onDeleteRow
+        model.removeRow(tableView.currentIndex().row())
+        model.submit()
+        model.select()
 
     ___ closeEvent  event):
-        self.db.close()
+        db.close()
 
 __ __name__ == "__main__":
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     window _ MainWindow()
     window.s..
     ___.exit(app.exec_())

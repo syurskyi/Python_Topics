@@ -57,7 +57,7 @@ ___ method1
         ___.exit(1)
 
     # Mimic the output from the C++ version.
-    for name in reply.value
+    ___ name __ reply.value
         ___.stdout.w..('"%s"\n' % name)
 
 
@@ -82,8 +82,8 @@ ___ method3
     ___.stdout.w..('("%s")\n' % '", "'.join(names))
 
 
-__ __name__ == '__main__':
-    app _ QCoreApplication(___.argv)
+__ ______ __ ______
+    app _ QCoreApplication(___.a..
 
     __ no. QDBusConnection.sessionBus().isConnected
         ___.stderr.w..("Cannot connect to the D-Bus session bus.\n"

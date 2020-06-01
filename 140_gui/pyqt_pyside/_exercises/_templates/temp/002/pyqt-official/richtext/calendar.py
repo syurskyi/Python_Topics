@@ -51,61 +51,61 @@ ____ ?.?W.. ______ (?A.., QComboBox, QDateTimeEdit,
 
 
 c_ MainWindow ?MW..
-    ___ __init__(self):
-        super(MainWindow, self).__init__()
+    ___  - 
+        super(MainWindow, self). - ()
 
-        self.selectedDate _ QDate.currentDate()
-        self.fontSize _ 10
+        selectedDate _ QDate.currentDate()
+        fontSize _ 10
 
         centralWidget _ ?W..
 
         dateLabel _ QLabel("Date:")
         monthCombo _ QComboBox()
 
-        for month in range(1, 13):
+        ___ month __ range(1, 13):
             monthCombo.addItem(QDate.longMonthName(month))
 
         yearEdit _ QDateTimeEdit()
         yearEdit.setDisplayFormat('yyyy')
         yearEdit.setDateRange(QDate(1753, 1, 1), QDate(8000, 1, 1))
 
-        monthCombo.setCurrentIndex(self.selectedDate.month() - 1)
-        yearEdit.setDate(self.selectedDate)
+        monthCombo.setCurrentIndex(selectedDate.month() - 1)
+        yearEdit.setDate(selectedDate)
 
-        self.fontSizeLabel _ QLabel("Font size:")
-        self.fontSizeSpinBox _ QSpinBox()
-        self.fontSizeSpinBox.setRange(1, 64)
-        self.fontSizeSpinBox.setValue(10)
+        fontSizeLabel _ QLabel("Font size:")
+        fontSizeSpinBox _ QSpinBox()
+        fontSizeSpinBox.setRange(1, 64)
+        fontSizeSpinBox.setValue(10)
 
-        self.editor _ QTextBrowser()
-        self.insertCalendar()
+        editor _ QTextBrowser()
+        insertCalendar()
 
-        monthCombo.activated.c..(self.setMonth)
-        yearEdit.dateChanged.c..(self.setYear)
-        self.fontSizeSpinBox.valueChanged.c..(self.setfontSize)
+        monthCombo.activated.c..(setMonth)
+        yearEdit.dateChanged.c..(setYear)
+        fontSizeSpinBox.valueChanged.c..(setfontSize)
 
         controlsLayout _ QHBoxLayout()
         controlsLayout.aW..(dateLabel)
         controlsLayout.aW..(monthCombo)
         controlsLayout.aW..(yearEdit)
         controlsLayout.addSpacing(24)
-        controlsLayout.aW..(self.fontSizeLabel)
-        controlsLayout.aW..(self.fontSizeSpinBox)
+        controlsLayout.aW..(fontSizeLabel)
+        controlsLayout.aW..(fontSizeSpinBox)
         controlsLayout.addStretch(1)
 
         centralLayout _ ?VBL..
-        centralLayout.addLayout(controlsLayout)
-        centralLayout.aW..(self.editor, 1)
+        centralLayout.aL..(controlsLayout)
+        centralLayout.aW..(editor, 1)
         centralWidget.sL..(centralLayout)
 
-        self.sCW..(centralWidget)
+        sCW..(centralWidget)
 
-    ___ insertCalendar(self):
-        self.editor.clear()
-        cursor _ self.editor.textCursor()
+    ___ insertCalendar
+        editor.clear()
+        cursor _ editor.textCursor()
         cursor.beginEditBlock()
 
-        date _ QDate(self.selectedDate.year(), self.selectedDate.month(), 1)
+        date _ QDate(selectedDate.year(), selectedDate.month(), 1)
 
         tableFormat _ QTextTableFormat()
         tableFormat.setAlignment(__.AlignHCenter)
@@ -130,7 +130,7 @@ c_ MainWindow ?MW..
         frame.setFrameFormat(frameFormat)
 
         format _ cursor.charFormat()
-        format.setFontPointSize(self.fontSize)
+        format.setFontPointSize(fontSize)
 
         boldFormat _ QTextCharFormat(format)
         boldFormat.setFontWeight(QFont.Bold)
@@ -138,14 +138,14 @@ c_ MainWindow ?MW..
         highlightedFormat _ QTextCharFormat(boldFormat)
         highlightedFormat.setBackground(__.yellow)
 
-        for weekDay in range(1, 8):
+        ___ weekDay __ range(1, 8):
             cell _ table.cellAt(0, weekDay-1)
             cellCursor _ cell.firstCursorPosition()
             cellCursor.insertText(QDate.longDayName(weekDay), boldFormat)
 
         table.insertRows(table.rows(), 1)
 
-        w__ date.month() == self.selectedDate.month
+        w__ date.month() == selectedDate.month
             weekDay _ date.dayOfWeek()
             cell _ table.cellAt(table.rows()-1, weekDay-1)
             cellCursor _ cell.firstCursorPosition()
@@ -157,33 +157,33 @@ c_ MainWindow ?MW..
 
             date _ date.addDays(1)
 
-            __ weekDay == 7 and date.month() == self.selectedDate.month
+            __ weekDay == 7 and date.month() == selectedDate.month
                 table.insertRows(table.rows(), 1)
 
         cursor.endEditBlock()
 
-        self.setWindowTitle("Calendar for %s %d" % (QDate.longMonthName(self.selectedDate.month()), self.selectedDate.year()))
+        setWindowTitle("Calendar for %s %d" % (QDate.longMonthName(selectedDate.month()), selectedDate.year()))
 
     ___ setfontSize  size):
-        self.fontSize _ size
-        self.insertCalendar()
+        fontSize _ size
+        insertCalendar()
 
     ___ setMonth  month):
-        self.selectedDate _ QDate(self.selectedDate.year(), month + 1,
-                self.selectedDate.day())
-        self.insertCalendar()
+        selectedDate _ QDate(selectedDate.year(), month + 1,
+                selectedDate.day())
+        insertCalendar()
 
     ___ setYear  date):
-        self.selectedDate _ QDate(date.year(), self.selectedDate.month(),
-                self.selectedDate.day())
-        self.insertCalendar()
+        selectedDate _ QDate(date.year(), selectedDate.month(),
+                selectedDate.day())
+        insertCalendar()
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     window _ MainWindow()
     window.resize(640, 256)
     window.s..

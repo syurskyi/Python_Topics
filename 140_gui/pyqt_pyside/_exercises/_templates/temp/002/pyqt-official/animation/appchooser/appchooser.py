@@ -54,45 +54,45 @@ ______ appchooser_rc
 c_ Pixmap(QGraphicsWidget):
     c__ _ pyqtSignal()
 
-    ___ __init__  pix, parent_None):
-        super(Pixmap, self).__init__(parent)
+    ___  -   pix, parent_None):
+        super(Pixmap, self). - (parent)
 
-        self.orig _ QPixmap(pix)
-        self.p _ QPixmap(pix)
+        orig _ QPixmap(pix)
+        p _ QPixmap(pix)
 
     ___ paint  painter, option, widget):
-        painter.drawPixmap(QPointF(), self.p)
+        painter.drawPixmap(QPointF(), p)
 
     ___ mousePressEvent  ev):
-        self.c__.emit()
+        c__.emit()
 
     ___ setGeometry  rect):
         super(Pixmap, self).setGeometry(rect)
 
-        __ rect.size().width() > self.orig.size().width
-            self.p _ self.orig.scaled(rect.size().toSize())
+        __ rect.size().width() > orig.size().width
+            p _ orig.scaled(rect.size().toSize())
         ____
-            self.p _ QPixmap(self.orig)
+            p _ QPixmap(orig)
 
 
 ___ createStates(objects, selectedRect, parent):
-    for obj in objects:
+    ___ obj __ objects:
         state _ QState(parent)
         state.assignProperty(obj, 'geometry', selectedRect)
         parent.addTransition(obj.c__, state)
 
 
 ___ createAnimations(objects, machine):
-    for obj in objects:
+    ___ obj __ objects:
         animation _ QPropertyAnimation(obj, b'geometry', obj)
         machine.addDefaultAnimation(animation)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     p1 _ Pixmap(QPixmap(':/digikam.png'))
     p2 _ Pixmap(QPixmap(':/akregator.png'))

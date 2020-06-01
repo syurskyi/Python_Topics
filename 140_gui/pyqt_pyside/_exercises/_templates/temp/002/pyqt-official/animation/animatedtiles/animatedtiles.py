@@ -57,14 +57,14 @@ ______ animatedtiles_rc
 # PyQt doesn't support deriving from more than one wrapped class so we use
 # composition and delegate the property.
 c_ Pixmap(QObject):
-    ___ __init__  pix):
-        super(Pixmap, self).__init__()
+    ___  -   pix):
+        super(Pixmap, self). - ()
 
-        self.pixmap_item _ QGraphicsPixmapItem(pix)
-        self.pixmap_item.setCacheMode(QGraphicsItem.DeviceCoordinateCache)
+        pixmap_item _ QGraphicsPixmapItem(pix)
+        pixmap_item.setCacheMode(QGraphicsItem.DeviceCoordinateCache)
 
     ___ _set_pos  pos):
-        self.pixmap_item.setPos(pos)
+        pixmap_item.setPos(pos)
 
     pos _ pyqtProperty(QPointF, fset__set_pos)
 
@@ -72,26 +72,26 @@ c_ Pixmap(QObject):
 c_ Button(QGraphicsWidget):
     pressed _ pyqtSignal()
 
-    ___ __init__  pixmap, parent_None):
-        super(Button, self).__init__(parent)
+    ___  -   pixmap, parent_None):
+        super(Button, self). - (parent)
 
-        self._pix _ pixmap
+        _pix _ pixmap
 
-        self.setAcceptHoverEvents(True)
-        self.setCacheMode(QGraphicsItem.DeviceCoordinateCache)
+        setAcceptHoverEvents(True)
+        setCacheMode(QGraphicsItem.DeviceCoordinateCache)
 
-    ___ boundingRect(self):
+    ___ boundingRect
         r_ QRectF(-65, -65, 130, 130)
 
-    ___ shape(self):
+    ___ shape
         path _ QPainterPath()
-        path.addEllipse(self.boundingRect())
+        path.addEllipse(boundingRect())
 
         r_ path
 
     ___ paint  painter, option, widget):
         down _ option.state & QStyle.State_Sunken
-        r _ self.boundingRect()
+        r _ boundingRect()
 
         grad _ QLinearGradient(r.topLeft(), r.bottomRight())
         __ option.state & QStyle.State_MouseOver:
@@ -127,29 +127,29 @@ c_ Button(QGraphicsWidget):
             painter.translate(2, 2)
 
         painter.drawEllipse(r.adjusted(5, 5, -5, -5))
-        painter.drawPixmap(-self._pix.width() / 2, -self._pix.height() / 2,
-                self._pix)
+        painter.drawPixmap(-_pix.width() / 2, -_pix.height() / 2,
+                _pix)
 
     ___ mousePressEvent  ev):
-        self.pressed.emit()
-        self.update()
+        pressed.emit()
+        update()
 
     ___ mouseReleaseEvent  ev):
-        self.update()
+        update()
 
 
 c_ View(QGraphicsView):
     ___ resizeEvent  event):
         super(View, self).resizeEvent(event)
-        self.fitInView(self.sceneRect(), __.KeepAspectRatio)
+        fitInView(sceneRect(), __.KeepAspectRatio)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
     ______ math
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     kineticPix _ QPixmap(':/images/kinetic.png')
     bgPix _ QPixmap(':/images/Time-For-Lunch-2.jpg')
@@ -157,7 +157,7 @@ __ __name__ == '__main__':
     scene _ QGraphicsScene(-350, -350, 700, 700)
 
     items _   # list
-    for i in range(64):
+    ___ i __ range(64):
         item _ Pixmap(kineticPix)
         item.pixmap_item.setOffset(-kineticPix.width() / 2,
                 -kineticPix.height() / 2)
@@ -193,7 +193,7 @@ __ __name__ == '__main__':
     centeredState _ QState(rootState)
 
     # Values.
-    for i, item in enumerate(items):
+    ___ i, item __ en..(items):
         # Ellipse.
         ellipseState.assignProperty(item, 'pos',
                 QPointF(math.cos((i / 63.0) * 6.28) * 250,
@@ -231,7 +231,7 @@ __ __name__ == '__main__':
     rootState.setInitialState(centeredState)
 
     group _ QParallelAnimationGroup()
-    for i, item in enumerate(items):
+    ___ i, item __ en..(items):
         anim _ QPropertyAnimation(item, b'pos')
         anim.setDuration(750 + i * 25)
         anim.setEasingCurve(QEasingCurve.InOutBack)

@@ -58,26 +58,26 @@ c_ PuzzleWidget(QWidget):
 
     puzzleCompleted _ pyqtSignal()
 
-    ___ __init__  parent_None):
-        super(PuzzleWidget, self).__init__(parent)
+    ___  -   parent_None):
+        super(PuzzleWidget, self). - (parent)
 
-        self.piecePixmaps _   # list
-        self.pieceRects _   # list
-        self.pieceLocations _   # list
-        self.highlightedRect _ QRect()
-        self.inPlace _ 0
+        piecePixmaps _   # list
+        pieceRects _   # list
+        pieceLocations _   # list
+        highlightedRect _ QRect()
+        inPlace _ 0
 
-        self.setAcceptDrops(True)
-        self.setMinimumSize(400, 400)
-        self.setMaximumSize(400, 400)
+        setAcceptDrops(True)
+        setMinimumSize(400, 400)
+        setMaximumSize(400, 400)
 
-    ___ clear(self):
-        self.pieceLocations _   # list
-        self.piecePixmaps _   # list
-        self.pieceRects _   # list
-        self.highlightedRect _ QRect()
-        self.inPlace _ 0
-        self.update()
+    ___ clear 
+        pieceLocations _   # list
+        piecePixmaps _   # list
+        pieceRects _   # list
+        highlightedRect _ QRect()
+        inPlace _ 0
+        update()
 
     ___ dragEnterEvent  event):
         __ event.mimeData().hasFormat('image/x-puzzle-piece'):
@@ -86,74 +86,74 @@ c_ PuzzleWidget(QWidget):
             event.ignore()
 
     ___ dragLeaveEvent  event):
-        updateRect _ self.highlightedRect
-        self.highlightedRect _ QRect()
-        self.update(updateRect)
+        updateRect _ highlightedRect
+        highlightedRect _ QRect()
+        update(updateRect)
         event.accept()
 
     ___ dragMoveEvent  event):
-        updateRect _ self.highlightedRect.united(self.targetSquare(event.pos()))
+        updateRect _ highlightedRect.united(targetSquare(event.pos()))
 
-        __ event.mimeData().hasFormat('image/x-puzzle-piece') and self.findPiece(self.targetSquare(event.pos())) == -1:
-            self.highlightedRect _ self.targetSquare(event.pos())
+        __ event.mimeData().hasFormat('image/x-puzzle-piece') and findPiece(targetSquare(event.pos())) == -1:
+            highlightedRect _ targetSquare(event.pos())
             event.setDropAction(__.MoveAction)
             event.accept()
         ____
-            self.highlightedRect _ QRect()
+            highlightedRect _ QRect()
             event.ignore()
 
-        self.update(updateRect)
+        update(updateRect)
 
     ___ dropEvent  event):
-        __ event.mimeData().hasFormat('image/x-puzzle-piece') and self.findPiece(self.targetSquare(event.pos())) == -1:
+        __ event.mimeData().hasFormat('image/x-puzzle-piece') and findPiece(targetSquare(event.pos())) == -1:
             pieceData _ event.mimeData().data('image/x-puzzle-piece')
             stream _ QDataStream(pieceData, QIODevice.ReadOnly)
-            square _ self.targetSquare(event.pos())
+            square _ targetSquare(event.pos())
             pixmap _ QPixmap()
             location _ QPoint()
             stream >> pixmap >> location
 
-            self.pieceLocations.ap..(location)
-            self.piecePixmaps.ap..(pixmap)
-            self.pieceRects.ap..(square)
+            pieceLocations.ap..(location)
+            piecePixmaps.ap..(pixmap)
+            pieceRects.ap..(square)
 
-            self.hightlightedRect _ QRect()
-            self.update(square)
+            hightlightedRect _ QRect()
+            update(square)
 
             event.setDropAction(__.MoveAction)
             event.accept()
 
             __ location == QPoint(square.x() / 80, square.y() / 80):
-                self.inPlace +_ 1
-                __ self.inPlace == 25:
-                    self.puzzleCompleted.emit()
+                inPlace +_ 1
+                __ inPlace == 25:
+                    puzzleCompleted.emit()
         ____
-            self.highlightedRect _ QRect()
+            highlightedRect _ QRect()
             event.ignore()
 
     ___ findPiece  pieceRect):
         try:
-            r_ self.pieceRects.index(pieceRect)
+            r_ pieceRects.index(pieceRect)
         except ValueError:
             r_ -1
 
     ___ mousePressEvent  event):
-        square _ self.targetSquare(event.pos())
-        found _ self.findPiece(square)
+        square _ targetSquare(event.pos())
+        found _ findPiece(square)
 
         __ found == -1:
             r_
 
-        location _ self.pieceLocations[found]
-        pixmap _ self.piecePixmaps[found]
-        del self.pieceLocations[found]
-        del self.piecePixmaps[found]
-        del self.pieceRects[found]
+        location _ pieceLocations[found]
+        pixmap _ piecePixmaps[found]
+        del pieceLocations[found]
+        del piecePixmaps[found]
+        del pieceRects[found]
 
         __ location == QPoint(square.x() + 80, square.y() + 80):
-            self.inPlace -_ 1
+            inPlace -_ 1
 
-        self.update(square)
+        update(square)
 
         itemData _ QByteArray()
         dataStream _ QDataStream(itemData, QIODevice.WriteOnly)
@@ -163,31 +163,31 @@ c_ PuzzleWidget(QWidget):
         mimeData _ QMimeData()
         mimeData.setData('image/x-puzzle-piece', itemData)
 
-        drag _ QDrag(self)
+        drag _ QDrag
         drag.setMimeData(mimeData)
         drag.setHotSpot(event.pos() - square.topLeft())
         drag.setPixmap(pixmap)
 
         __ drag.exec_(__.MoveAction) !_ __.MoveAction:
-            self.pieceLocations.insert(found, location)
-            self.piecePixmaps.insert(found, pixmap)
-            self.pieceRects.insert(found, square)
-            self.update(self.targetSquare(event.pos()))
+            pieceLocations.insert(found, location)
+            piecePixmaps.insert(found, pixmap)
+            pieceRects.insert(found, square)
+            update(targetSquare(event.pos()))
 
             __ location == QPoint(square.x() / 80, square.y() / 80):
-                self.inPlace +_ 1
+                inPlace +_ 1
 
     ___ paintEvent  event):
         painter _ QPainter()
-        painter.begin(self)
+        painter.begin
         painter.fillRect(event.rect(), __.white)
 
-        __ self.highlightedRect.isValid
+        __ highlightedRect.isValid
             painter.setBrush(?C..("#ffcccc"))
             painter.setPen(__.NoPen)
-            painter.drawRect(self.highlightedRect.adjusted(0, 0, -1, -1))
+            painter.drawRect(highlightedRect.adjusted(0, 0, -1, -1))
 
-        for rect, pixmap in zip(self.pieceRects, self.piecePixmaps):
+        ___ rect, pixmap __ zip(pieceRects, piecePixmaps):
             painter.drawPixmap(rect, pixmap)
 
         painter.end()
@@ -197,25 +197,25 @@ c_ PuzzleWidget(QWidget):
 
 
 c_ PiecesModel(QAbstractListModel):
-    ___ __init__  parent_None):
-        super(PiecesModel, self).__init__(parent)
+    ___  -   parent_None):
+        super(PiecesModel, self). - (parent)
 
-        self.locations _   # list
-        self.pixmaps _   # list
+        locations _   # list
+        pixmaps _   # list
 
     ___ data  index, role_Qt.DisplayRole):
         __ no. index.isValid
             r_ N..
 
         __ role == __.DecorationRole:
-            r_ QIcon(self.pixmaps[index.row()].scaled(
+            r_ QIcon(pixmaps[index.row()].scaled(
                     60, 60, __.KeepAspectRatio, __.SmoothTransformation))
 
         __ role == __.UserRole:
-            r_ self.pixmaps[index.row()]
+            r_ pixmaps[index.row()]
 
         __ role == __.UserRole + 1:
-            r_ self.locations[index.row()]
+            r_ locations[index.row()]
 
         r_ N..
 
@@ -223,12 +223,12 @@ c_ PiecesModel(QAbstractListModel):
         __ random.random() < 0.5:
             row _ 0
         ____
-            row _ le.(self.pixmaps)
+            row _ le.(pixmaps)
 
-        self.beginInsertRows(QModelIndex(), row, row)
-        self.pixmaps.insert(row, pixmap)
-        self.locations.insert(row, location)
-        self.endInsertRows()
+        beginInsertRows(QModelIndex(), row, row)
+        pixmaps.insert(row, pixmap)
+        locations.insert(row, location)
+        endInsertRows()
 
     ___ flags index):
         __ index.isValid
@@ -241,21 +241,21 @@ c_ PiecesModel(QAbstractListModel):
         __ parent.isValid
             r_ False
 
-        __ row >_ le.(self.pixmaps) or row + count <_ 0:
+        __ row >_ le.(pixmaps) or row + count <_ 0:
             r_ False
 
         beginRow _ max(0, row)
-        endRow _ min(row + count - 1, le.(self.pixmaps) - 1)
+        endRow _ min(row + count - 1, le.(pixmaps) - 1)
 
-        self.beginRemoveRows(parent, beginRow, endRow)
+        beginRemoveRows(parent, beginRow, endRow)
 
-        del self.pixmaps[beginRow:endRow + 1]
-        del self.locations[beginRow:endRow + 1]
+        del pixmaps[beginRow:endRow + 1]
+        del locations[beginRow:endRow + 1]
 
-        self.endRemoveRows()
+        endRemoveRows()
         r_ True
 
-    ___ mimeTypes(self):
+    ___ mimeTypes 
         r_ ['image/x-puzzle-piece']
 
     ___ mimeData  indexes):
@@ -264,10 +264,10 @@ c_ PiecesModel(QAbstractListModel):
 
         stream _ QDataStream(encodedData, QIODevice.WriteOnly)
 
-        for index in indexes:
+        ___ index __ indexes:
             __ index.isValid
-                pixmap _ QPixmap(self.data(index, __.UserRole))
-                location _ self.data(index, __.UserRole + 1)
+                pixmap _ QPixmap(data(index, __.UserRole))
+                location _ data(index, __.UserRole + 1)
                 stream << pixmap << location
 
         mimeData.setData('image/x-puzzle-piece', encodedData)
@@ -285,9 +285,9 @@ c_ PiecesModel(QAbstractListModel):
 
         __ no. parent.isValid
             __ row < 0:
-                endRow _ le.(self.pixmaps)
+                endRow _ le.(pixmaps)
             ____
-                endRow _ min(row, le.(self.pixmaps))
+                endRow _ min(row, le.(pixmaps))
         ____
             endRow _ parent.row()
 
@@ -299,10 +299,10 @@ c_ PiecesModel(QAbstractListModel):
             location _ QPoint()
             stream >> pixmap >> location
 
-            self.beginInsertRows(QModelIndex(), endRow, endRow)
-            self.pixmaps.insert(endRow, pixmap)
-            self.locations.insert(endRow, location)
-            self.endInsertRows()
+            beginInsertRows(QModelIndex(), endRow, endRow)
+            pixmaps.insert(endRow, pixmap)
+            locations.insert(endRow, location)
+            endInsertRows()
 
             endRow +_ 1
 
@@ -312,34 +312,34 @@ c_ PiecesModel(QAbstractListModel):
         __ parent.isValid
             r_ 0
         ____
-            r_ le.(self.pixmaps)
+            r_ le.(pixmaps)
 
-    ___ supportedDropActions(self):
+    ___ supportedDropActions 
         r_ __.CopyAction | __.MoveAction
 
     ___ addPieces  pixmap):
-        self.beginRemoveRows(QModelIndex(), 0, 24)
-        self.pixmaps _   # list
-        self.locations _   # list
-        self.endRemoveRows()
+        beginRemoveRows(QModelIndex(), 0, 24)
+        pixmaps _   # list
+        locations _   # list
+        endRemoveRows()
 
-        for y in range(5):
-            for x in range(5):
+        ___ y __ range(5):
+            ___ x __ range(5):
                 pieceImage _ pixmap.copy(x*80, y*80, 80, 80)
-                self.addPiece(pieceImage, QPoint(x, y))
+                addPiece(pieceImage, QPoint(x, y))
 
 
 c_ MainWindow ?MW..
-    ___ __init__  parent_None):
-        super(MainWindow, self).__init__(parent)
+    ___  -   parent_None):
+        super(MainWindow, self). - (parent)
 
-        self.puzzleImage _ QPixmap()
+        puzzleImage _ QPixmap()
 
-        self.setupMenus()
-        self.setupWidgets()
+        setupMenus()
+        setupWidgets()
 
-        self.setSizePolicy(QSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed))
-        self.setWindowTitle("Puzzle")
+        sSP..(QSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed))
+        setWindowTitle("Puzzle")
 
     ___ openImage  path_None):
         __ no. path:
@@ -354,30 +354,30 @@ c_ MainWindow ?MW..
                         ?MB...Cancel)
                 r_
 
-            self.puzzleImage _ newImage
-            self.setupPuzzle()
+            puzzleImage _ newImage
+            setupPuzzle()
 
-    ___ setCompleted(self):
+    ___ setCompleted 
         ?MB...information  "Puzzle Completed",
                 "Congratulations! You have completed the puzzle!\nClick OK "
                 "to start again.",
                 ?MB...Ok)
 
-        self.setupPuzzle()
+        setupPuzzle()
 
-    ___ setupPuzzle(self):
-        size _ min(self.puzzleImage.width(), self.puzzleImage.height())
-        self.puzzleImage _ self.puzzleImage.copy((self.puzzleImage.width()-size)/2,
-                (self.puzzleImage.height() - size)/2, size, size).scaled(400,
+    ___ setupPuzzle 
+        size _ min(puzzleImage.width(), puzzleImage.height())
+        puzzleImage _ puzzleImage.copy((puzzleImage.width()-size)/2,
+                (puzzleImage.height() - size)/2, size, size).scaled(400,
                         400, __.IgnoreAspectRatio, __.SmoothTransformation)
 
         random.seed(QCursor.pos().x() ^ QCursor.pos().y())
 
-        self.model.addPieces(self.puzzleImage)
-        self.puzzleWidget.clear()
+        model.addPieces(puzzleImage)
+        puzzleWidget.clear()
 
-    ___ setupMenus(self):
-        fileMenu _ self.mB.. .aM..("&File")
+    ___ setupMenus 
+        fileMenu _ mB.. .aM..("&File")
 
         openAction _ fileMenu.aA..("&Open...")
         openAction.sS..("Ctrl+O")
@@ -385,46 +385,46 @@ c_ MainWindow ?MW..
         exitAction _ fileMenu.aA..("E&xit")
         exitAction.sS..("Ctrl+Q")
 
-        gameMenu _ self.mB.. .aM..("&Game")
+        gameMenu _ mB.. .aM..("&Game")
 
         restartAction _ gameMenu.aA..("&Restart")
 
-        openAction.t__.c..(self.openImage)
+        openAction.t__.c..(openImage)
         exitAction.t__.c..(?A...instance().quit)
-        restartAction.t__.c..(self.setupPuzzle)
+        restartAction.t__.c..(setupPuzzle)
 
-    ___ setupWidgets(self):
+    ___ setupWidgets 
         frame _ QFrame()
         frameLayout _ QHBoxLayout(frame)
 
-        self.piecesList _ QListView()
-        self.piecesList.setDragEnabled(True)
-        self.piecesList.setViewMode(QListView.IconMode)
-        self.piecesList.setIconSize(QSize(60,60))
-        self.piecesList.setGridSize(QSize(80,80))
-        self.piecesList.setSpacing(10)
-        self.piecesList.setMovement(QListView.Snap)
-        self.piecesList.setAcceptDrops(True)
-        self.piecesList.setDropIndicatorShown(True)
+        piecesList _ QListView()
+        piecesList.setDragEnabled(True)
+        piecesList.setViewMode(QListView.IconMode)
+        piecesList.setIconSize(QSize(60,60))
+        piecesList.setGridSize(QSize(80,80))
+        piecesList.setSpacing(10)
+        piecesList.setMovement(QListView.Snap)
+        piecesList.setAcceptDrops(True)
+        piecesList.setDropIndicatorShown(True)
 
-        self.model _ PiecesModel(self)
-        self.piecesList.sM..(self.model)
+        model _ PiecesModel
+        piecesList.sM..(model)
 
-        self.puzzleWidget _ PuzzleWidget()
+        puzzleWidget _ PuzzleWidget()
 
-        self.puzzleWidget.puzzleCompleted.c..(self.setCompleted,
+        puzzleWidget.puzzleCompleted.c..(setCompleted,
                 __.QueuedConnection)
 
-        frameLayout.aW..(self.piecesList)
-        frameLayout.aW..(self.puzzleWidget)
-        self.sCW..(frame)
+        frameLayout.aW..(piecesList)
+        frameLayout.aW..(puzzleWidget)
+        sCW..(frame)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     window _ MainWindow()
     window.openImage(':/images/example.jpg')
     window.s..

@@ -60,10 +60,10 @@ ____ ui_form ______ Ui_Form
 
 
 c_ PadNavigator(QGraphicsView):
-    ___ __init__  size, parent_None):
-        super(PadNavigator, self).__init__(parent)
+    ___  -   size, parent_None):
+        super(PadNavigator, self). - (parent)
 
-        self.form _ Ui_Form()
+        form _ Ui_Form()
 
         splash _ SplashItem()
         splash.setZValue(1)
@@ -79,8 +79,8 @@ c_ PadNavigator(QGraphicsView):
 
         backItem _ QGraphicsProxyWidget(pad)
         widget _ ?W..
-        self.form.setupUi(widget)
-        self.form.hostName.setFocus()
+        form.setupUi(widget)
+        form.hostName.setFocus()
         backItem.setWidget(widget)
         backItem.setVisible F..
         backItem.setFocus()
@@ -115,7 +115,7 @@ c_ PadNavigator(QGraphicsView):
         smoothFlipScale _ QPropertyAnimation(pad, b'scale')
         smoothFlipXRotation _ QPropertyAnimation(xRotation, b'angle')
         smoothFlipYRotation _ QPropertyAnimation(yRotation, b'angle')
-        flipAnimation _ QParallelAnimationGroup(self)
+        flipAnimation _ QParallelAnimationGroup
         smoothFlipScale.setDuration(500)
         smoothFlipRotation.setDuration(500)
         smoothFlipXRotation.setDuration(500)
@@ -145,7 +145,7 @@ c_ PadNavigator(QGraphicsView):
         setVariablesSequence.addAnimation(setFillAnimation)
         flipAnimation.addAnimation(setVariablesSequence)
 
-        stateMachine _ QStateMachine(self)
+        stateMachine _ QStateMachine
         splashState _ QState(stateMachine)
         frontState _ QState(stateMachine)
         historyState _ QHistoryState(frontState)
@@ -195,14 +195,14 @@ c_ PadNavigator(QGraphicsView):
         columns _ size.width()
         rows _ size.height()
         stateGrid _   # list
-        for y in range(rows):
-            stateGrid.ap..([QState(frontState) for _ in range(columns)])
+        ___ y __ range(rows):
+            stateGrid.ap..([QState(frontState) ___ _ __ range(columns)])
 
         frontState.setInitialState(stateGrid[0][0])
         selectionItem.setPos(pad.iconAt(0, 0).pos())
 
-        for y in range(rows):
-            for x in range(columns):
+        ___ y __ range(rows):
+            ___ x __ range(columns):
                 state _ stateGrid[y][x]
 
                 rightTransition _ QKeyEventTransition  QEvent.KeyPress,
@@ -231,91 +231,91 @@ c_ PadNavigator(QGraphicsView):
                 setIconVisibleAnimation.setDuration(0)
                 setVariablesSequence.addAnimation(setIconVisibleAnimation)
 
-        scene _ QGraphicsScene(self)
+        scene _ QGraphicsScene
         scene.setBackgroundBrush(QBrush(QPixmap(":/images/blue_angle_swirl.jpg")))
         scene.setItemIndexMethod(QGraphicsScene.NoIndex)
         scene.addItem(pad)
         scene.setSceneRect(scene.itemsBoundingRect())
-        self.setScene(scene)
+        setScene(scene)
 
         sbr _ splash.boundingRect()
         splash.setPos(-sbr.width() / 2, scene.sceneRect().top() - 2)
         frontState.assignProperty(splash, "y", splash.y() - 100.0)
         scene.addItem(splash)
 
-        self.setHorizontalScrollBarPolicy(__.ScrollBarAlwaysOff)
-        self.setVerticalScrollBarPolicy(__.ScrollBarAlwaysOff)
-        self.setMinimumSize(50, 50)
-        self.setViewportUpdateMode(QGraphicsView.FullViewportUpdate)
-        self.setCacheMode(QGraphicsView.CacheBackground)
-        self.setRenderHints(QPainter.Antialiasing |
+        setHorizontalScrollBarPolicy(__.ScrollBarAlwaysOff)
+        setVerticalScrollBarPolicy(__.ScrollBarAlwaysOff)
+        setMinimumSize(50, 50)
+        setViewportUpdateMode(QGraphicsView.FullViewportUpdate)
+        setCacheMode(QGraphicsView.CacheBackground)
+        setRenderHints(QPainter.Antialiasing |
                 QPainter.SmoothPixmapTransform | QPainter.TextAntialiasing)
 
         __ QGLFormat.hasOpenGL
-            self.setViewport(QGLWidget(QGLFormat(QGL.SampleBuffers)))
+            setViewport(QGLWidget(QGLFormat(QGL.SampleBuffers)))
 
         stateMachine.start()
 
     ___ resizeEvent  event):
         super(PadNavigator, self).resizeEvent(event)
-        self.fitInView(self.scene().sceneRect(), __.KeepAspectRatio)
+        fitInView(scene().sceneRect(), __.KeepAspectRatio)
 
 
 c_ RoundRectItem(QGraphicsObject):
-    ___ __init__  bounds, color, parent_None):
-        super(RoundRectItem, self).__init__(parent)
+    ___  -   bounds, color, parent_None):
+        super(RoundRectItem, self). - (parent)
 
-        self.fillRect _ False
-        self.bounds _ QRectF(bounds)
-        self.pix _ QPixmap()
+        fillRect _ False
+        bounds _ QRectF(bounds)
+        pix _ QPixmap()
 
-        self.gradient _ QLinearGradient()
-        self.gradient.setStart(self.bounds.topLeft())
-        self.gradient.setFinalStop(self.bounds.bottomRight())
-        self.gradient.setColorAt(0, color)
-        self.gradient.setColorAt(1, color.darker(200))
+        gradient _ QLinearGradient()
+        gradient.setStart(bounds.topLeft())
+        gradient.setFinalStop(bounds.bottomRight())
+        gradient.setColorAt(0, color)
+        gradient.setColorAt(1, color.darker(200))
 
-        self.setCacheMode(QGraphicsItem.ItemCoordinateCache)
+        setCacheMode(QGraphicsItem.ItemCoordinateCache)
 
     ___ setFill  fill):
-        self.fillRect _ fill
-        self.update()
+        fillRect _ fill
+        update()
 
-    ___ fill(self):
-        r_ self.fillRect
+    ___ fill
+        r_ fillRect
 
     fill _ pyqtProperty(bool, fill, setFill)
 
     ___ paint  painter, option, widget):
         painter.setPen(__.NoPen)
         painter.setBrush(?C..(0, 0, 0, 64))
-        painter.drawRoundedRect(self.bounds.translated(2, 2), 25.0, 25.0)
+        painter.drawRoundedRect(bounds.translated(2, 2), 25.0, 25.0)
 
-        __ self.fillRect:
+        __ fillRect:
             painter.setBrush(?A...palette().brush(?P...Window))
         ____
-            painter.setBrush(self.gradient)
+            painter.setBrush(gradient)
 
         painter.setPen(QPen(__.black, 1))
-        painter.drawRoundedRect(self.bounds, 25.0, 25.0)
-        __ no. self.pix.isNull
+        painter.drawRoundedRect(bounds, 25.0, 25.0)
+        __ no. pix.isNull
             painter.scale(1.95, 1.95)
-            painter.drawPixmap(-self.pix.width() / 2, -self.pix.height() / 2, self.pix)
+            painter.drawPixmap(-pix.width() / 2, -pix.height() / 2, pix)
 
-    ___ boundingRect(self):
-        r_ self.bounds.adjusted(0, 0, 2, 2)
+    ___ boundingRect
+        r_ bounds.adjusted(0, 0, 2, 2)
 
-    ___ pixmap(self):
-        r_ QPixmap(self.pix)
+    ___ pixmap
+        r_ QPixmap(pix)
 
     ___ setPixmap  pixmap):
-        self.pix _ QPixmap(pixmap)
-        self.update()
+        pix _ QPixmap(pixmap)
+        update()
 
 
 c_ FlippablePad(RoundRectItem):
-    ___ __init__  size, parent_None):
-        super(FlippablePad, self).__init__(self.boundsFromSize(size),
+    ___  -   size, parent_None):
+        super(FlippablePad, self). - (boundsFromSize(size),
                 ?C..(226, 255, 92, 64), parent)
 
         numIcons _ size.width() * size.height()
@@ -326,25 +326,25 @@ c_ FlippablePad(RoundRectItem):
 
         iconRect _ QRectF(-54, -54, 108, 108)
         iconColor _ ?C..(214, 240, 110, 128)
-        self.iconGrid _   # list
+        iconGrid _   # list
         n _ 0
 
-        for y in range(size.height()):
+        ___ y __ range(size.height()):
             row _   # list
 
-            for x in range(size.width()):
+            ___ x __ range(size.width()):
                 rect _ RoundRectItem(iconRect, iconColor, self)
                 rect.setZValue(1)
-                rect.setPos(self.posForLocation(x, y, size))
+                rect.setPos(posForLocation(x, y, size))
                 rect.setPixmap(pixmaps[n % le.(pixmaps)])
                 n +_ 1
 
                 row.ap..(rect)
 
-            self.iconGrid.ap..(row)
+            iconGrid.ap..(row)
 
     ___ iconAt  column, row):
-        r_ self.iconGrid[row][column]
+        r_ iconGrid[row][column]
 
     @staticmethod
     ___ boundsFromSize(size):
@@ -358,39 +358,39 @@ c_ FlippablePad(RoundRectItem):
 
 
 c_ SplashItem(QGraphicsObject):
-    ___ __init__  parent_None):
-        super(SplashItem, self).__init__(parent)
+    ___  -   parent_None):
+        super(SplashItem, self). - (parent)
 
-        self.t__ _ "Welcome to the Pad Navigator Example. You can use the " \
+        t__ _ "Welcome to the Pad Navigator Example. You can use the " \
                 "keyboard arrows to navigate the icons, and press enter to " \
                 "activate an item. Press any key to begin."
 
-        self.setCacheMode(QGraphicsItem.DeviceCoordinateCache)
+        setCacheMode(QGraphicsItem.DeviceCoordinateCache)
 
-    ___ boundingRect(self):
+    ___ boundingRect
         r_ QRectF(0, 0, 400, 175)
 
     ___ paint  painter, option, widget):
         painter.setPen(QPen(__.black, 2))
         painter.setBrush(?C..(245, 245, 255, 220))
-        painter.setClipRect(self.boundingRect())
+        painter.setClipRect(boundingRect())
         painter.drawRoundedRect(3, -100 + 3, 400 - 6, 250 - 6, 25.0, 25.0)
 
-        textRect _ self.boundingRect().adjusted(10, 10, -10, -10)
+        textRect _ boundingRect().adjusted(10, 10, -10, -10)
         flags _ int(__.AlignTop | __.AlignLeft) | __.TextWordWrap
 
         font _ QFont()
         font.setPixelSize(18)
         painter.setPen(__.black)
         painter.setFont(font)
-        painter.drawText(textRect, flags, self.t__)
+        painter.drawText(textRect, flags, t__)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     navigator _ PadNavigator(QSize(3, 3))
     navigator.s..

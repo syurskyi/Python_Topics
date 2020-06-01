@@ -48,102 +48,102 @@ ____ ?.?W.. ______ QGridLayout, QLabel, QLineEdit, ?MB.., ?PB.., QTextEdit, QVBo
 
 c_ SortedDict(dict):
     c_ Iterator(object):
-        ___ __init__  sorted_dict):
-            self._dict _ sorted_dict
-            self._keys _ sorted(self._dict.keys())
-            self._nr_items _ le.(self._keys)
-            self._idx _ 0
+        ___  -   sorted_dict):
+            _dict _ sorted_dict
+            _keys _ sorted(_dict.keys())
+            _nr_items _ le.(_keys)
+            _idx _ 0
 
-        ___ __iter__(self):
+        ___ __iter__ 
             r_ self
 
-        ___ next(self):
-            __ self._idx >_ self._nr_items:
+        ___ next 
+            __ _idx >_ _nr_items:
                 raise StopIteration
 
-            key _ self._keys[self._idx]
-            value _ self._dict[key]
-            self._idx +_ 1
+            key _ _keys[_idx]
+            value _ _dict[key]
+            _idx +_ 1
 
             r_ key, value
 
         __next__ _ next
 
-    ___ __iter__(self):
-        r_ SortedDict.Iterator(self)
+    ___ __iter__ 
+        r_ SortedDict.Iterator
 
     iterkeys _ __iter__
 
 
 c_ AddressBook(QWidget):
-    ___ __init__  parent_None):
-        super(AddressBook, self).__init__(parent)
+    ___  -   parent_None):
+        super(AddressBook, self). - (parent)
 
-        self.contacts _ SortedDict()
-        self.oldName _ ''
-        self.oldAddress _ ''
+        contacts _ SortedDict()
+        oldName _ ''
+        oldAddress _ ''
 
         nameLabel _ QLabel("Name:")
-        self.nameLine _ ?LE..
-        self.nameLine.setReadOnly(True)
+        nameLine _ ?LE..
+        nameLine.setReadOnly(True)
 
         addressLabel _ QLabel("Address:")
-        self.addressText _ QTextEdit()
-        self.addressText.setReadOnly(True)
+        addressText _ QTextEdit()
+        addressText.setReadOnly(True)
 
-        self.addButton _ ?PB..("&Add")
-        self.addButton.s..
-        self.submitButton _ ?PB..("&Submit")
-        self.submitButton.hide()
-        self.cancelButton _ ?PB..("&Cancel")
-        self.cancelButton.hide()
+        addButton _ ?PB..("&Add")
+        addButton.s..
+        submitButton _ ?PB..("&Submit")
+        submitButton.hide()
+        cancelButton _ ?PB..("&Cancel")
+        cancelButton.hide()
 
-        self.addButton.c__.c..(self.addContact)
-        self.submitButton.c__.c..(self.submitContact)
-        self.cancelButton.c__.c..(self.cancel)
+        addButton.c__.c..(addContact)
+        submitButton.c__.c..(submitContact)
+        cancelButton.c__.c..(cancel)
 
         buttonLayout1 _ ?VBL..
-        buttonLayout1.aW..(self.addButton, __.AlignTop)
-        buttonLayout1.aW..(self.submitButton)
-        buttonLayout1.aW..(self.cancelButton)
+        buttonLayout1.aW..(addButton, __.AlignTop)
+        buttonLayout1.aW..(submitButton)
+        buttonLayout1.aW..(cancelButton)
         buttonLayout1.addStretch()
 
         mainLayout _ QGridLayout()
         mainLayout.aW..(nameLabel, 0, 0)
-        mainLayout.aW..(self.nameLine, 0, 1)
+        mainLayout.aW..(nameLine, 0, 1)
         mainLayout.aW..(addressLabel, 1, 0, __.AlignTop)
-        mainLayout.aW..(self.addressText, 1, 1)
-        mainLayout.addLayout(buttonLayout1, 1, 2)
+        mainLayout.aW..(addressText, 1, 1)
+        mainLayout.aL..(buttonLayout1, 1, 2)
 
-        self.sL..(mainLayout)
-        self.setWindowTitle("Simple Address Book")
+        sL..(mainLayout)
+        setWindowTitle("Simple Address Book")
 
-    ___ addContact(self):
-        self.oldName _ self.nameLine.t__()
-        self.oldAddress _ self.addressText.toPlainText()
+    ___ addContact 
+        oldName _ nameLine.t__()
+        oldAddress _ addressText.toPlainText()
 
-        self.nameLine.clear()
-        self.addressText.clear()
+        nameLine.clear()
+        addressText.clear()
 
-        self.nameLine.setReadOnly F..
-        self.nameLine.setFocus(__.OtherFocusReason)
-        self.addressText.setReadOnly F..
+        nameLine.setReadOnly F..
+        nameLine.setFocus(__.OtherFocusReason)
+        addressText.setReadOnly F..
 
-        self.addButton.setEnabled F..
-        self.submitButton.s..
-        self.cancelButton.s..
+        addButton.setEnabled F..
+        submitButton.s..
+        cancelButton.s..
 
-    ___ submitContact(self):
-        name _ self.nameLine.t__()
-        address _ self.addressText.toPlainText()
+    ___ submitContact 
+        name _ nameLine.t__()
+        address _ addressText.toPlainText()
 
         __ name == "" or address == "":
             ?MB...information  "Empty Field",
                     "Please enter a name and address.")
             r_
 
-        __ name no. in self.contacts:
-            self.contacts[name] _ address
+        __ name no. __ contacts:
+            contacts[name] _ address
             ?MB...information  "Add Successful",
                     "\"%s\" has been added to your address book." % name)
         ____
@@ -151,34 +151,34 @@ c_ AddressBook(QWidget):
                     "Sorry, \"%s\" is already in your address book." % name)
             r_
 
-        __ no. self.contacts:
-            self.nameLine.clear()
-            self.addressText.clear()
+        __ no. contacts:
+            nameLine.clear()
+            addressText.clear()
 
-        self.nameLine.setReadOnly(True)
-        self.addressText.setReadOnly(True)
-        self.addButton.setEnabled(True)
-        self.submitButton.hide()
-        self.cancelButton.hide()
+        nameLine.setReadOnly(True)
+        addressText.setReadOnly(True)
+        addButton.setEnabled(True)
+        submitButton.hide()
+        cancelButton.hide()
 
-    ___ cancel(self):
-        self.nameLine.sT..(self.oldName)
-        self.nameLine.setReadOnly(True)
+    ___ cancel 
+        nameLine.sT..(oldName)
+        nameLine.setReadOnly(True)
 
-        self.addressText.sT..(self.oldAddress)
-        self.addressText.setReadOnly(True)
+        addressText.sT..(oldAddress)
+        addressText.setReadOnly(True)
 
-        self.addButton.setEnabled(True)
-        self.submitButton.hide()
-        self.cancelButton.hide()
+        addButton.setEnabled(True)
+        submitButton.hide()
+        cancelButton.hide()
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
     ______ ___
 
     ____ ?.?W.. ______ ?A..
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     addressBook _ AddressBook()
     addressBook.s..

@@ -60,14 +60,14 @@ ____ ?.QtRemoteObjects ______ QRemoteObjectHost, QRemoteObjectRegistryHost
 
 c_ SimpleSwitch(QObject):
 
-    ___ __init__  parent_None):
-        super().__init__(parent)
+    ___  -   parent_None):
+        s_. - (parent)
 
-        self._currState _ False
+        _currState _ False
 
-        self._stateChangeTimer _ QTimer(self)
-        self._stateChangeTimer.timeout.c..(self._timeout)
-        self._stateChangeTimer.start(2000)
+        _stateChangeTimer _ QTimer
+        _stateChangeTimer.timeout.c..(_timeout)
+        _stateChangeTimer.start(2000)
 
         print("Source node started")
 
@@ -84,14 +84,14 @@ c_ SimpleSwitch(QObject):
     ___ pushCurrState  currState):
         pass
 
-    ___ _get_currState(self):
-        r_ self._currState
+    ___ _get_currState 
+        r_ _currState
 
     ___ _set_currState  value):
         # If the value has changed then update it and emit the notify signal.
-        __ self._currState !_ value:
-            self._currState _ value
-            self.currStateChanged.emit(value)
+        __ _currState !_ value:
+            _currState _ value
+            currStateChanged.emit(value)
 
     # The property's notify signal.
     currStateChanged _ pyqtSignal(bool)
@@ -106,17 +106,17 @@ c_ SimpleSwitch(QObject):
         # The switch state echoed back by the client.
         print("Replica state is", clientState)
 
-    ___ _timeout(self):
+    ___ _timeout 
         # Note that we don't decorate this callable so that it doesn't get
         # exposed in a replica.
-        self.currState _ no. self.currState
+        currState _ no. currState
 
-        print("Source state is", self.currState)
+        print("Source state is", currState)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
-    app _ QCoreApplication(___.argv)
+    app _ QCoreApplication(___.a..
 
     # Create the simple switch.
     srcSwitch _ SimpleSwitch()

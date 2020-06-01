@@ -4,12 +4,12 @@ ____ gradient ______ Gradient
 
 c_ Window(?W...QMainWindow):
 
-    ___ __init__(self):
-        super().__init__()
+    ___  - 
+        s_. - ()
 
         gradient _ Gradient()
         gradient.setGradient([(0, 'black'), (1, 'green'), (0.5, 'red')])
-        self.sCW..(gradient)
+        sCW..(gradient)
 
 
 app _ ?W...?

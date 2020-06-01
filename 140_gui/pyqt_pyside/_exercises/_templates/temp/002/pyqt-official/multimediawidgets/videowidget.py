@@ -51,90 +51,90 @@ ____ ?.?W.. ______ (?A.., ?FD.., QHBoxLayout, QLabel,
 
 c_ VideoPlayer(QWidget):
 
-    ___ __init__  parent_None):
-        super(VideoPlayer, self).__init__(parent)
+    ___  -   parent_None):
+        super(VideoPlayer, self). - (parent)
 
-        self.mediaPlayer _ QMediaPlayer(N.., QMediaPlayer.VideoSurface)
+        mediaPlayer _ QMediaPlayer(N.., QMediaPlayer.VideoSurface)
 
         videoWidget _ QVideoWidget()
 
         openButton _ ?PB..("Open...")
-        openButton.c__.c..(self.openFile)
+        openButton.c__.c..(openFile)
 
-        self.playButton _ ?PB..()
-        self.playButton.setEnabled F..
-        self.playButton.setIcon(self.style().standardIcon(QStyle.SP_MediaPlay))
-        self.playButton.c__.c..(self.play)
+        playButton _ ?PB..()
+        playButton.setEnabled F..
+        playButton.setIcon(style().standardIcon(QStyle.SP_MediaPlay))
+        playButton.c__.c..(play)
 
-        self.positionSlider _ QSlider(__.Horizontal)
-        self.positionSlider.setRange(0, 0)
-        self.positionSlider.sliderMoved.c..(self.setPosition)
+        positionSlider _ QSlider(__.Horizontal)
+        positionSlider.setRange(0, 0)
+        positionSlider.sliderMoved.c..(setPosition)
 
-        self.errorLabel _ QLabel()
-        self.errorLabel.setSizePolicy(QSizePolicy.Preferred,
+        errorLabel _ QLabel()
+        errorLabel.sSP..(QSizePolicy.Preferred,
                 QSizePolicy.Maximum)
 
         controlLayout _ QHBoxLayout()
         controlLayout.setContentsMargins(0, 0, 0, 0)
         controlLayout.aW..(openButton)
-        controlLayout.aW..(self.playButton)
-        controlLayout.aW..(self.positionSlider)
+        controlLayout.aW..(playButton)
+        controlLayout.aW..(positionSlider)
 
         layout _ ?VBL..
         layout.aW..(videoWidget)
-        layout.addLayout(controlLayout)
-        layout.aW..(self.errorLabel)
+        layout.aL..(controlLayout)
+        layout.aW..(errorLabel)
 
-        self.sL..(layout)
+        sL..(layout)
 
-        self.mediaPlayer.setVideoOutput(videoWidget)
-        self.mediaPlayer.stateChanged.c..(self.mediaStateChanged)
-        self.mediaPlayer.positionChanged.c..(self.positionChanged)
-        self.mediaPlayer.durationChanged.c..(self.durationChanged)
-        self.mediaPlayer.error.c..(self.handleError)
+        mediaPlayer.setVideoOutput(videoWidget)
+        mediaPlayer.stateChanged.c..(mediaStateChanged)
+        mediaPlayer.positionChanged.c..(positionChanged)
+        mediaPlayer.durationChanged.c..(durationChanged)
+        mediaPlayer.error.c..(handleError)
 
-    ___ openFile(self):
+    ___ openFile 
         fileName, _ _ ?FD...gOFN..  "Open Movie",
                 QDir.homePath())
 
         __ fileName !_ '':
-            self.mediaPlayer.setMedia(
+            mediaPlayer.setMedia(
                     QMediaContent(QUrl.fromLocalFile(fileName)))
-            self.playButton.setEnabled(True)
+            playButton.setEnabled(True)
 
-    ___ play(self):
-        __ self.mediaPlayer.state() == QMediaPlayer.PlayingState:
-            self.mediaPlayer.pause()
+    ___ play 
+        __ mediaPlayer.state() == QMediaPlayer.PlayingState:
+            mediaPlayer.pause()
         ____
-            self.mediaPlayer.play()
+            mediaPlayer.play()
 
     ___ mediaStateChanged  state):
-        __ self.mediaPlayer.state() == QMediaPlayer.PlayingState:
-            self.playButton.setIcon(
-                    self.style().standardIcon(QStyle.SP_MediaPause))
+        __ mediaPlayer.state() == QMediaPlayer.PlayingState:
+            playButton.setIcon(
+                    style().standardIcon(QStyle.SP_MediaPause))
         ____
-            self.playButton.setIcon(
-                    self.style().standardIcon(QStyle.SP_MediaPlay))
+            playButton.setIcon(
+                    style().standardIcon(QStyle.SP_MediaPlay))
 
     ___ positionChanged  position):
-        self.positionSlider.setValue(position)
+        positionSlider.setValue(position)
 
     ___ durationChanged  duration):
-        self.positionSlider.setRange(0, duration)
+        positionSlider.setRange(0, duration)
 
     ___ setPosition  position):
-        self.mediaPlayer.setPosition(position)
+        mediaPlayer.setPosition(position)
 
-    ___ handleError(self):
-        self.playButton.setEnabled F..
-        self.errorLabel.sT..("Error: " + self.mediaPlayer.errorString())
+    ___ handleError 
+        playButton.setEnabled F..
+        errorLabel.sT..("Error: " + mediaPlayer.errorString())
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     player _ VideoPlayer()
     player.resize(320, 240)

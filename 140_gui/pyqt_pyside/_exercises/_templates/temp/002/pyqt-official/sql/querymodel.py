@@ -69,33 +69,33 @@ c_ EditableSqlModel(QSqlQueryModel):
     ___ flags  index):
         flags _ super(EditableSqlModel, self).flags(index)
 
-        __ index.column() in (1, 2):
+        __ index.column() __ (1, 2):
             flags |_ __.ItemIsEditable
 
         r_ flags
 
     ___ setData  index, value, role):
-        __ index.column() no. in (1, 2):
+        __ index.column() no. __ (1, 2):
             r_ False
 
-        primaryKeyIndex _ self.index(index.row(), 0)
-        id _ self.data(primaryKeyIndex)
+        primaryKeyIndex _ index(index.row(), 0)
+        id _ data(primaryKeyIndex)
 
-        self.clear()
+        clear()
 
         __ index.column() == 1:
-            ok _ self.setFirstName(id, value)
+            ok _ setFirstName(id, value)
         ____
-            ok _ self.setLastName(id, value)
+            ok _ setLastName(id, value)
 
-        self.refresh()
+        refresh()
         r_ ok
 
-    ___ refresh(self):
-        self.setQuery('select * from person')
-        self.setHeaderData(0, __.Horizontal, "ID")
-        self.setHeaderData(1, __.Horizontal, "First name")
-        self.setHeaderData(2, __.Horizontal, "Last name")
+    ___ refresh
+        setQuery('select * from person')
+        setHeaderData(0, __.Horizontal, "ID")
+        setHeaderData(1, __.Horizontal, "First name")
+        setHeaderData(2, __.Horizontal, "Last name")
 
     ___ setFirstName  personId, firstName):
         query _ QSqlQuery()
@@ -134,11 +134,11 @@ ___ createView(title, model):
     view.s..
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     __ no. connection.createConnection
         ___.exit(1)
 

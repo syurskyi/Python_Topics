@@ -72,11 +72,11 @@ c_ SpinBoxDelegate(QStyledItemDelegate):
         editor.setGeometry(option.rect)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     model _ QStandardItemModel(4, 2)
     tableView _ QTableView()
@@ -85,8 +85,8 @@ __ __name__ == '__main__':
     delegate _ SpinBoxDelegate()
     tableView.setItemDelegate(delegate)
 
-    for row in range(4):
-        for column in range(2):
+    ___ row __ range(4):
+        ___ column __ range(2):
             index _ model.index(row, column, QModelIndex())
             model.setData(index, (row + 1) * (column + 1))
 

@@ -51,10 +51,10 @@ ____ ?.?W.. ______ (?A.., QCheckBox, QComboBox, QDateTimeEdit,
 
 
 c_ WidgetGallery(QDialog):
-    ___ __init__  parent_None):
-        super(WidgetGallery, self).__init__(parent)
+    ___  -   parent_None):
+        super(WidgetGallery, self). - (parent)
 
-        self.originalPalette _ ?A...palette()
+        originalPalette _ ?A...palette()
 
         styleComboBox _ QComboBox()
         styleComboBox.addItems(QStyleFactory.keys())
@@ -62,64 +62,64 @@ c_ WidgetGallery(QDialog):
         styleLabel _ QLabel("&Style:")
         styleLabel.setBuddy(styleComboBox)
 
-        self.useStylePaletteCheckBox _ QCheckBox("&Use style's standard palette")
-        self.useStylePaletteCheckBox.setChecked(True)
+        useStylePaletteCheckBox _ QCheckBox("&Use style's standard palette")
+        useStylePaletteCheckBox.setChecked(True)
 
         disableWidgetsCheckBox _ QCheckBox("&Disable widgets")
 
-        self.createTopLeftGroupBox()
-        self.createTopRightGroupBox()
-        self.createBottomLeftTabWidget()
-        self.createBottomRightGroupBox()
-        self.createProgressBar()
+        createTopLeftGroupBox()
+        createTopRightGroupBox()
+        createBottomLeftTabWidget()
+        createBottomRightGroupBox()
+        createProgressBar()
 
-        styleComboBox.activated[str].c..(self.changeStyle)
-        self.useStylePaletteCheckBox.toggled.c..(self.changePalette)
-        disableWidgetsCheckBox.toggled.c..(self.topLeftGroupBox.setDisabled)
-        disableWidgetsCheckBox.toggled.c..(self.topRightGroupBox.setDisabled)
-        disableWidgetsCheckBox.toggled.c..(self.bottomLeftTabWidget.setDisabled)
-        disableWidgetsCheckBox.toggled.c..(self.bottomRightGroupBox.setDisabled)
+        styleComboBox.activated[str].c..(changeStyle)
+        useStylePaletteCheckBox.toggled.c..(changePalette)
+        disableWidgetsCheckBox.toggled.c..(topLeftGroupBox.setDisabled)
+        disableWidgetsCheckBox.toggled.c..(topRightGroupBox.setDisabled)
+        disableWidgetsCheckBox.toggled.c..(bottomLeftTabWidget.setDisabled)
+        disableWidgetsCheckBox.toggled.c..(bottomRightGroupBox.setDisabled)
 
         topLayout _ QHBoxLayout()
         topLayout.aW..(styleLabel)
         topLayout.aW..(styleComboBox)
         topLayout.addStretch(1)
-        topLayout.aW..(self.useStylePaletteCheckBox)
+        topLayout.aW..(useStylePaletteCheckBox)
         topLayout.aW..(disableWidgetsCheckBox)
 
         mainLayout _ QGridLayout()
-        mainLayout.addLayout(topLayout, 0, 0, 1, 2)
-        mainLayout.aW..(self.topLeftGroupBox, 1, 0)
-        mainLayout.aW..(self.topRightGroupBox, 1, 1)
-        mainLayout.aW..(self.bottomLeftTabWidget, 2, 0)
-        mainLayout.aW..(self.bottomRightGroupBox, 2, 1)
-        mainLayout.aW..(self.progressBar, 3, 0, 1, 2)
+        mainLayout.aL..(topLayout, 0, 0, 1, 2)
+        mainLayout.aW..(topLeftGroupBox, 1, 0)
+        mainLayout.aW..(topRightGroupBox, 1, 1)
+        mainLayout.aW..(bottomLeftTabWidget, 2, 0)
+        mainLayout.aW..(bottomRightGroupBox, 2, 1)
+        mainLayout.aW..(progressBar, 3, 0, 1, 2)
         mainLayout.setRowStretch(1, 1)
         mainLayout.setRowStretch(2, 1)
         mainLayout.setColumnStretch(0, 1)
         mainLayout.setColumnStretch(1, 1)
-        self.sL..(mainLayout)
+        sL..(mainLayout)
 
-        self.setWindowTitle("Styles")
-        self.changeStyle('Windows')
+        setWindowTitle("Styles")
+        changeStyle('Windows')
 
     ___ changeStyle  styleName):
         ?A...setStyle(QStyleFactory.create(styleName))
-        self.changePalette()
+        changePalette()
 
-    ___ changePalette(self):
-        __ (self.useStylePaletteCheckBox.isChecked()):
+    ___ changePalette 
+        __ (useStylePaletteCheckBox.isChecked()):
             ?A...sP..(?A...style().standardPalette())
         ____
-            ?A...sP..(self.originalPalette)
+            ?A...sP..(originalPalette)
 
-    ___ advanceProgressBar(self):
-        curVal _ self.progressBar.value()
-        maxVal _ self.progressBar.maximum()
-        self.progressBar.setValue(curVal + (maxVal - curVal) / 100)
+    ___ advanceProgressBar 
+        curVal _ progressBar.value()
+        maxVal _ progressBar.maximum()
+        progressBar.setValue(curVal + (maxVal - curVal) / 100)
 
-    ___ createTopLeftGroupBox(self):
-        self.topLeftGroupBox _ QGroupBox("Group 1")
+    ___ createTopLeftGroupBox 
+        topLeftGroupBox _ QGroupBox("Group 1")
 
         radioButton1 _ QRadioButton("Radio button 1")
         radioButton2 _ QRadioButton("Radio button 2")
@@ -136,10 +136,10 @@ c_ WidgetGallery(QDialog):
         layout.aW..(radioButton3)
         layout.aW..(checkBox)
         layout.addStretch(1)
-        self.topLeftGroupBox.sL..(layout)    
+        topLeftGroupBox.sL..(layout)    
 
-    ___ createTopRightGroupBox(self):
-        self.topRightGroupBox _ QGroupBox("Group 2")
+    ___ createTopRightGroupBox 
+        topRightGroupBox _ QGroupBox("Group 2")
 
         defaultPushButton _ ?PB..("Default Push Button")
         defaultPushButton.setDefault(True)
@@ -156,11 +156,11 @@ c_ WidgetGallery(QDialog):
         layout.aW..(togglePushButton)
         layout.aW..(flatPushButton)
         layout.addStretch(1)
-        self.topRightGroupBox.sL..(layout)
+        topRightGroupBox.sL..(layout)
 
-    ___ createBottomLeftTabWidget(self):
-        self.bottomLeftTabWidget _ QTabWidget()
-        self.bottomLeftTabWidget.setSizePolicy(QSizePolicy.Preferred,
+    ___ createBottomLeftTabWidget 
+        bottomLeftTabWidget _ QTabWidget()
+        bottomLeftTabWidget.sSP..(QSizePolicy.Preferred,
                 QSizePolicy.Ignored)
 
         tab1 _ ?W..
@@ -186,30 +186,30 @@ c_ WidgetGallery(QDialog):
         tab2hbox.aW..(textEdit)
         tab2.sL..(tab2hbox)
 
-        self.bottomLeftTabWidget.addTab(tab1, "&Table")
-        self.bottomLeftTabWidget.addTab(tab2, "Text &Edit")
+        bottomLeftTabWidget.addTab(tab1, "&Table")
+        bottomLeftTabWidget.addTab(tab2, "Text &Edit")
 
-    ___ createBottomRightGroupBox(self):
-        self.bottomRightGroupBox _ QGroupBox("Group 3")
-        self.bottomRightGroupBox.setCheckable(True)
-        self.bottomRightGroupBox.setChecked(True)
+    ___ createBottomRightGroupBox 
+        bottomRightGroupBox _ QGroupBox("Group 3")
+        bottomRightGroupBox.setCheckable(True)
+        bottomRightGroupBox.setChecked(True)
 
         lineEdit _ QLineEdit('s3cRe7')
         lineEdit.setEchoMode(QLineEdit.Password)
 
-        spinBox _ QSpinBox(self.bottomRightGroupBox)
+        spinBox _ QSpinBox(bottomRightGroupBox)
         spinBox.setValue(50)
 
-        dateTimeEdit _ QDateTimeEdit(self.bottomRightGroupBox)
+        dateTimeEdit _ QDateTimeEdit(bottomRightGroupBox)
         dateTimeEdit.setDateTime(QDateTime.currentDateTime())
 
-        slider _ QSlider(__.Horizontal, self.bottomRightGroupBox)
+        slider _ QSlider(__.Horizontal, bottomRightGroupBox)
         slider.setValue(40)
 
-        scrollBar _ QScrollBar(__.Horizontal, self.bottomRightGroupBox)
+        scrollBar _ QScrollBar(__.Horizontal, bottomRightGroupBox)
         scrollBar.setValue(60)
 
-        dial _ QDial(self.bottomRightGroupBox)
+        dial _ QDial(bottomRightGroupBox)
         dial.setValue(30)
         dial.setNotchesVisible(True)
 
@@ -221,23 +221,23 @@ c_ WidgetGallery(QDialog):
         layout.aW..(scrollBar, 4, 0)
         layout.aW..(dial, 3, 1, 2, 1)
         layout.setRowStretch(5, 1)
-        self.bottomRightGroupBox.sL..(layout)
+        bottomRightGroupBox.sL..(layout)
 
-    ___ createProgressBar(self):
-        self.progressBar _ QProgressBar()
-        self.progressBar.setRange(0, 10000)
-        self.progressBar.setValue(0)
+    ___ createProgressBar 
+        progressBar _ QProgressBar()
+        progressBar.setRange(0, 10000)
+        progressBar.setValue(0)
 
-        timer _ QTimer(self)
-        timer.timeout.c..(self.advanceProgressBar)
+        timer _ QTimer
+        timer.timeout.c..(advanceProgressBar)
         timer.start(1000)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     gallery _ WidgetGallery()
     gallery.s..
     ___.exit(app.exec_()) 

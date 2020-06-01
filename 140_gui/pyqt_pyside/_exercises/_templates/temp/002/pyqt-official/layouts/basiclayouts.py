@@ -52,13 +52,13 @@ c_ Dialog(QDialog):
     NumGridRows _ 3
     NumButtons _ 4
 
-    ___ __init__(self):
-        super(Dialog, self).__init__()
+    ___  -  
+        super(Dialog, self). - ()
 
-        self.createMenu()
-        self.createHorizontalGroupBox()
-        self.createGridGroupBox()
-        self.createFormGroupBox()
+        createMenu()
+        createHorizontalGroupBox()
+        createGridGroupBox()
+        createFormGroupBox()
 
         bigEditor _ QTextEdit()
         bigEditor.sPT..("This widget takes up all the remaining space "
@@ -66,72 +66,72 @@ c_ Dialog(QDialog):
 
         buttonBox _ QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
 
-        buttonBox.accepted.c..(self.accept)
-        buttonBox.rejected.c..(self.reject)
+        buttonBox.accepted.c..(accept)
+        buttonBox.rejected.c..(reject)
 
         mainLayout _ ?VBL..
-        mainLayout.setMenuBar(self.menuBar)
-        mainLayout.aW..(self.horizontalGroupBox)
-        mainLayout.aW..(self.gridGroupBox)
-        mainLayout.aW..(self.formGroupBox)
+        mainLayout.setMenuBar(menuBar)
+        mainLayout.aW..(horizontalGroupBox)
+        mainLayout.aW..(gridGroupBox)
+        mainLayout.aW..(formGroupBox)
         mainLayout.aW..(bigEditor)
         mainLayout.aW..(buttonBox)
-        self.sL..(mainLayout)
+        sL..(mainLayout)
 
-        self.setWindowTitle("Basic Layouts")
+        setWindowTitle("Basic Layouts")
 
-    ___ createMenu(self):
-        self.menuBar _ QMenuBar()
+    ___ createMenu 
+        menuBar _ QMenuBar()
 
-        self.fileMenu _ QMenu("&File", self)
-        self.exitAction _ self.fileMenu.aA..("E&xit")
-        self.menuBar.aM..(self.fileMenu)
+        fileMenu _ QMenu("&File", self)
+        exitAction _ fileMenu.aA..("E&xit")
+        menuBar.aM..(fileMenu)
 
-        self.exitAction.t__.c..(self.accept)
+        exitAction.t__.c..(accept)
 
-    ___ createHorizontalGroupBox(self):
-        self.horizontalGroupBox _ QGroupBox("Horizontal layout")
+    ___ createHorizontalGroupBox 
+        horizontalGroupBox _ QGroupBox("Horizontal layout")
         layout _ QHBoxLayout()
 
-        for i in range(Dialog.NumButtons):
+        ___ i __ range(Dialog.NumButtons):
             button _ ?PB..("Button %d" % (i + 1))
             layout.aW..(button)
 
-        self.horizontalGroupBox.sL..(layout)
+        horizontalGroupBox.sL..(layout)
 
-    ___ createGridGroupBox(self):
-        self.gridGroupBox _ QGroupBox("Grid layout")
+    ___ createGridGroupBox 
+        gridGroupBox _ QGroupBox("Grid layout")
         layout _ QGridLayout()
 
-        for i in range(Dialog.NumGridRows):
+        ___ i __ range(Dialog.NumGridRows):
             label _ QLabel("Line %d:" % (i + 1))
             lineEdit _ ?LE..
             layout.aW..(label, i + 1, 0)
             layout.aW..(lineEdit, i + 1, 1)
 
-        self.smallEditor _ QTextEdit()
-        self.smallEditor.sPT..("This widget takes up about two thirds "
+        smallEditor _ QTextEdit()
+        smallEditor.sPT..("This widget takes up about two thirds "
                 "of the grid layout.")
 
-        layout.aW..(self.smallEditor, 0, 2, 4, 1)
+        layout.aW..(smallEditor, 0, 2, 4, 1)
 
         layout.setColumnStretch(1, 10)
         layout.setColumnStretch(2, 20)
-        self.gridGroupBox.sL..(layout)
+        gridGroupBox.sL..(layout)
 
-    ___ createFormGroupBox(self):
-        self.formGroupBox _ QGroupBox("Form layout")
+    ___ createFormGroupBox 
+        formGroupBox _ QGroupBox("Form layout")
         layout _ QFormLayout()
         layout.addRow(QLabel("Line 1:"), QLineEdit())
         layout.addRow(QLabel("Line 2, long text:"), QComboBox())
         layout.addRow(QLabel("Line 3:"), QSpinBox())
-        self.formGroupBox.sL..(layout)
+        formGroupBox.sL..(layout)
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
     dialog _ Dialog()
     ___.exit(dialog.exec_())

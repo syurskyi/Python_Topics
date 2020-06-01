@@ -2,7 +2,7 @@ ____ ? ______ ?W.. __ qtw
 ____ ? ______ ?G.. __ qtg
 ______ ___
 
-app _ qtw.?A..(___.argv)
+app _ qtw.?A..(___.a..
 
 widget _ qtw.?W..
 palette _ widget.palette()

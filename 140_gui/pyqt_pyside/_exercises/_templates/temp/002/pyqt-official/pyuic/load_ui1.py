@@ -45,7 +45,7 @@ ____ ?.?W.. ______ ?A..
 ____ ?.uic ______ loadUi
 
 
-app _ ?A..(___.argv)
+app _ ?A..(___.a..
 widget _ loadUi('demo.ui')
 widget.s..
 ___.exit(app.exec_())

@@ -62,42 +62,42 @@ ____ ?.?W.. ______ ?A.., QTreeView
 
 c_ TimerHandler(QObject):
 
-    ___ __init__  model, parent_None):
-        super().__init__(parent)
+    ___  -   model, parent_None):
+        s_. - (parent)
 
-        self._model _ model
+        _model _ model
 
     @pyqtSlot()
-    ___ changeData(self):
-        for i in range(10, 50):
-            self._model.setData(self._model.index(i, 1), ?C..(__.blue),
+    ___ changeData 
+        ___ i __ range(10, 50):
+            _model.setData(_model.index(i, 1), ?C..(__.blue),
                     __.BackgroundRole)
 
     @pyqtSlot()
-    ___ insertData(self):
-        self._model.insertRows(2, 9)
+    ___ insertData 
+        _model.insertRows(2, 9)
 
-        for i in range(2, 11):
-            self._model.setData(self._model.index(i, 1), ?C..(__.green),
+        ___ i __ range(2, 11):
+            _model.setData(_model.index(i, 1), ?C..(__.green),
                     __.BackgroundRole)
-            self._model.setData(self._model.index(i, 1), "InsertedRow",
+            _model.setData(_model.index(i, 1), "InsertedRow",
                     __.DisplayRole)
 
     @pyqtSlot()
-    ___ removeData(self):
-        self._model.removeRows(2, 4)
+    ___ removeData 
+        _model.removeRows(2, 4)
 
     @pyqtSlot()
-    ___ changeFlags(self):
-        item _ self._model.item(0, 0)
+    ___ changeFlags 
+        item _ _model.item(0, 0)
         item.setEnabled F..
 
         item _ item.child(0, 0)
         item.setFlags(item.flags() & __.ItemIsSelectable)
 
     @pyqtSlot()
-    ___ moveData(self):
-        self._model.moveRows(QModelIndex(), 2, 4, QModelIndex(), 10)
+    ___ moveData 
+        _model.moveRows(QModelIndex(), 2, 4, QModelIndex(), 10)
 
 
 ___ addChild(numChildren, nestingLevel):
@@ -106,7 +106,7 @@ ___ addChild(numChildren, nestingLevel):
     __ nestingLevel == 0:
         r_ result
 
-    for i in range(numChildren):
+    ___ i __ range(numChildren):
         child _ QStandardItem(
                 "Child num {}, nesting level {}".format(i + 1, nestingLevel))
 
@@ -118,18 +118,18 @@ ___ addChild(numChildren, nestingLevel):
     r_ result
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     QLoggingCategory.setFilterRules('qt.remoteobjects.debug=false\n'
                                     'qt.remoteobjects.warning=false')
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     sourceModel _ QStandardItemModel()
     sourceModel.setHorizontalHeaderLabels(
             ["First Column with spacing", "Second Column with spacing"])
 
-    for i in range(10000):
+    ___ i __ range(10000):
         firstItem _ QStandardItem("FancyTextNumber {}".format(i))
         __ i == 0:
             firstItem.appendRow(addChild(2, 2))

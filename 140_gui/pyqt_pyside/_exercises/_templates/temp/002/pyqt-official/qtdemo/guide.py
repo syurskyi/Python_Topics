@@ -44,48 +44,48 @@ ____ ?.?C.. ______ QLineF, QPointF
 
 
 c_ Guide(object):
-    ___ __init__  follows_None):
-        self.scaleX _ 1.0
-        self.scaleY _ 1.0
+    ___  -   follows_None):
+        scaleX _ 1.0
+        scaleY _ 1.0
 
         __ follows __ no. N..:
             w__ follows.nextGuide __ no. follows.firstGuide:
                 follows _ follows.nextGuide
 
             follows.nextGuide _ self
-            self.prevGuide _ follows
-            self.firstGuide _ follows.firstGuide
-            self.nextGuide _ follows.firstGuide
-            self.startLength _ int(follows.startLength + follows.length()) + 1
+            prevGuide _ follows
+            firstGuide _ follows.firstGuide
+            nextGuide _ follows.firstGuide
+            startLength _ int(follows.startLength + follows.length()) + 1
         ____
-            self.prevGuide _ self
-            self.firstGuide _ self
-            self.nextGuide _ self
-            self.startLength _ 0
+            prevGuide _ self
+            firstGuide _ self
+            nextGuide _ self
+            startLength _ 0
 
     ___ setScale  scaleX, scaleY, all_True):
-        self.scaleX _ scaleX
-        self.scaleY _ scaleY
+        scaleX _ scaleX
+        scaleY _ scaleY
 
         __ all:
-            next _ self.nextGuide
+            next _ nextGuide
             w__ next __ no. self:
                 next.scaleX _ scaleX
                 next.scaleY _ scaleY
                 next _ next.nextGuide
 
     ___ setFence  fence, all_True):
-        self.fence _ fence
+        fence _ fence
 
         __ all:
-            next _ self.nextGuide
+            next _ nextGuide
             w__ next __ no. self:
                 next.fence _ fence
                 next _ next.nextGuide
 
-    ___ lengthAll(self):
-        le. _ self.length()
-        next _ self.nextGuide
+    ___ lengthAll
+        le. _ length()
+        next _ nextGuide
         w__ next __ no. self:
             le. +_ next.length()
             next _ next.nextGuide
@@ -127,13 +127,13 @@ c_ Guide(object):
 
         item.setGuidedPos(dest)
 
-    ___ startPos(self):
+    ___ startPos
         r_ QPointF(0, 0)
 
-    ___ endPos(self):
+    ___ endPos
         r_ QPointF(0, 0)
 
-    ___ length(self):
+    ___ length
         r_ 1.0
 
     ___ guide  item, moveSpeed):

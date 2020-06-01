@@ -56,29 +56,29 @@ ____ ?.?W.. ______ (?A.., QComboBox, QDialog, ?FD..,
 
 c_ VideoWidget(QVideoWidget):
 
-    ___ __init__  parent_None):
-        super(VideoWidget, self).__init__(parent)
+    ___  -   parent_None):
+        super(VideoWidget, self). - (parent)
 
-        self.setSizePolicy(QSizePolicy.Ignored, QSizePolicy.Ignored)
+        sSP..(QSizePolicy.Ignored, QSizePolicy.Ignored)
 
-        p _ self.palette()
+        p _ palette()
         p.sC..(?P...Window, __.black)
-        self.sP..(p)
+        sP..(p)
 
-        self.setAttribute(__.WA_OpaquePaintEvent)
+        setAttribute(__.WA_OpaquePaintEvent)
 
     ___ keyPressEvent  event):
-        __ event.key() == __.Key_Escape and self.isFullScreen
-            self.setFullScreen F..
+        __ event.key() == __.Key_Escape and isFullScreen
+            setFullScreen F..
             event.accept()
         ____ event.key() == __.Key_Enter and event.modifiers() & __.Key_Alt:
-            self.setFullScreen(no. self.isFullScreen())
+            setFullScreen(no. isFullScreen())
             event.accept()
         ____
             super(VideoWidget, self).keyPressEvent(event)
 
     ___ mouseDoubleClickEvent  event):
-        self.setFullScreen(no. self.isFullScreen())
+        setFullScreen(no. isFullScreen())
         event.accept()
 
 
@@ -86,75 +86,75 @@ c_ PlaylistModel(QAbstractItemModel):
 
     Title, ColumnCount _ range(2)
 
-    ___ __init__  parent_None):
-        super(PlaylistModel, self).__init__(parent)
+    ___  -   parent_None):
+        super(PlaylistModel, self). - (parent)
 
-        self.m_playlist _ N..
+        m_playlist _ N..
 
     ___ rowCount  parent_QModelIndex()):
-        r_ self.m_playlist.mediaCount() __ self.m_playlist __ no. N.. and no. parent.isValid() else 0
+        r_ m_playlist.mediaCount() __ m_playlist __ no. N.. and no. parent.isValid() else 0
 
     ___ columnCount  parent_QModelIndex()):
-        r_ self.ColumnCount __ no. parent.isValid() else 0
+        r_ ColumnCount __ no. parent.isValid() else 0
 
     ___ index  row, column, parent_QModelIndex()):
-        r_ self.createIndex(row, column) __ self.m_playlist __ no. N.. and no. parent.isValid() and row >_ 0 and row < self.m_playlist.mediaCount() and column >_ 0 and column < self.ColumnCount else QModelIndex()
+        r_ createIndex(row, column) __ m_playlist __ no. N.. and no. parent.isValid() and row >_ 0 and row < m_playlist.mediaCount() and column >_ 0 and column < ColumnCount else QModelIndex()
 
     ___ parent  child):
         r_ QModelIndex()
 
     ___ data  index, role_Qt.DisplayRole):
         __ index.isValid() and role == __.DisplayRole:
-            __ index.column() == self.Title:
-                location _ self.m_playlist.media(index.row()).canonicalUrl()
+            __ index.column() == Title:
+                location _ m_playlist.media(index.row()).canonicalUrl()
                 r_ QFileInfo(location.path()).fileName()
 
-            r_ self.m_data[index]
+            r_ m_data[index]
 
         r_ N..
 
-    ___ playlist(self):
-        r_ self.m_playlist
+    ___ playlist
+        r_ m_playlist
 
     ___ setPlaylist  playlist):
-        __ self.m_playlist __ no. N..:
-            self.m_playlist.mediaAboutToBeInserted.disconnect(
-                    self.beginInsertItems)
-            self.m_playlist.mediaInserted.disconnect(self.endInsertItems)
-            self.m_playlist.mediaAboutToBeRemoved.disconnect(
-                    self.beginRemoveItems)
-            self.m_playlist.mediaRemoved.disconnect(self.endRemoveItems)
-            self.m_playlist.mediaChanged.disconnect(self.changeItems)
+        __ m_playlist __ no. N..:
+            m_playlist.mediaAboutToBeInserted.disconnect(
+                    beginInsertItems)
+            m_playlist.mediaInserted.disconnect(endInsertItems)
+            m_playlist.mediaAboutToBeRemoved.disconnect(
+                    beginRemoveItems)
+            m_playlist.mediaRemoved.disconnect(endRemoveItems)
+            m_playlist.mediaChanged.disconnect(changeItems)
 
-        self.beginResetModel()
-        self.m_playlist _ playlist
+        beginResetModel()
+        m_playlist _ playlist
 
-        __ self.m_playlist __ no. N..:
-            self.m_playlist.mediaAboutToBeInserted.c..(
-                    self.beginInsertItems)
-            self.m_playlist.mediaInserted.c..(self.endInsertItems)
-            self.m_playlist.mediaAboutToBeRemoved.c..(
-                    self.beginRemoveItems)
-            self.m_playlist.mediaRemoved.c..(self.endRemoveItems)
-            self.m_playlist.mediaChanged.c..(self.changeItems)
+        __ m_playlist __ no. N..:
+            m_playlist.mediaAboutToBeInserted.c..(
+                    beginInsertItems)
+            m_playlist.mediaInserted.c..(endInsertItems)
+            m_playlist.mediaAboutToBeRemoved.c..(
+                    beginRemoveItems)
+            m_playlist.mediaRemoved.c..(endRemoveItems)
+            m_playlist.mediaChanged.c..(changeItems)
 
-        self.endResetModel()
+        endResetModel()
 
     ___ beginInsertItems  start, end):
-        self.beginInsertRows(QModelIndex(), start, end)
+        beginInsertRows(QModelIndex(), start, end)
 
-    ___ endInsertItems(self):
-        self.endInsertRows()
+    ___ endInsertItems
+        endInsertRows()
 
     ___ beginRemoveItems  start, end):
-        self.beginRemoveRows(QModelIndex(), start, end)
+        beginRemoveRows(QModelIndex(), start, end)
 
-    ___ endRemoveItems(self):
-        self.endRemoveRows()
+    ___ endRemoveItems
+        endRemoveRows()
 
     ___ changeItems  start, end):
-        self.dataChanged.emit(self.index(start, 0),
-                self.index(end, self.ColumnCount))
+        dataChanged.emit(index(start, 0),
+                index(end, ColumnCount))
 
 
 c_ PlayerControls(QWidget):
@@ -168,112 +168,112 @@ c_ PlayerControls(QWidget):
     changeMuting _ pyqtSignal(bool)
     changeRate _ pyqtSignal(float)
 
-    ___ __init__  parent_None):
-        super(PlayerControls, self).__init__(parent)
+    ___  -   parent_None):
+        super(PlayerControls, self). - (parent)
 
-        self.playerState _ QMediaPlayer.StoppedState
-        self.playerMuted _ False
+        playerState _ QMediaPlayer.StoppedState
+        playerMuted _ False
 
-        self.playButton _ QToolButton(c___self.playClicked)
-        self.playButton.setIcon(self.style().standardIcon(QStyle.SP_MediaPlay))
+        playButton _ QToolButton(c___self.playClicked)
+        playButton.setIcon(style().standardIcon(QStyle.SP_MediaPlay))
 
-        self.stopButton _ QToolButton(c___self.stop)
-        self.stopButton.setIcon(self.style().standardIcon(QStyle.SP_MediaStop))
-        self.stopButton.setEnabled F..
+        stopButton _ QToolButton(c___self.stop)
+        stopButton.setIcon(style().standardIcon(QStyle.SP_MediaStop))
+        stopButton.setEnabled F..
 
-        self.nextButton _ QToolButton(c___self.next)
-        self.nextButton.setIcon(
-                self.style().standardIcon(QStyle.SP_MediaSkipForward))
+        nextButton _ QToolButton(c___self.next)
+        nextButton.setIcon(
+                style().standardIcon(QStyle.SP_MediaSkipForward))
 
-        self.previousButton _ QToolButton(c___self.previous)
-        self.previousButton.setIcon(
-                self.style().standardIcon(QStyle.SP_MediaSkipBackward))
+        previousButton _ QToolButton(c___self.previous)
+        previousButton.setIcon(
+                style().standardIcon(QStyle.SP_MediaSkipBackward))
 
-        self.muteButton _ QToolButton(c___self.muteClicked)
-        self.muteButton.setIcon(
-                self.style().standardIcon(QStyle.SP_MediaVolume))
+        muteButton _ QToolButton(c___self.muteClicked)
+        muteButton.setIcon(
+                style().standardIcon(QStyle.SP_MediaVolume))
 
-        self.volumeSlider _ QSlider(__.Horizontal,
+        volumeSlider _ QSlider(__.Horizontal,
                 sliderMoved_self.changeVolume)
-        self.volumeSlider.setRange(0, 100)
+        volumeSlider.setRange(0, 100)
 
-        self.rateBox _ QComboBox(activated_self.updateRate)
-        self.rateBox.addItem("0.5x", 0.5)
-        self.rateBox.addItem("1.0x", 1.0)
-        self.rateBox.addItem("2.0x", 2.0)
-        self.rateBox.setCurrentIndex(1)
+        rateBox _ QComboBox(activated_self.updateRate)
+        rateBox.addItem("0.5x", 0.5)
+        rateBox.addItem("1.0x", 1.0)
+        rateBox.addItem("2.0x", 2.0)
+        rateBox.setCurrentIndex(1)
 
         layout _ QHBoxLayout()
         layout.setContentsMargins(0, 0, 0, 0)
-        layout.aW..(self.stopButton)
-        layout.aW..(self.previousButton)
-        layout.aW..(self.playButton)
-        layout.aW..(self.nextButton)
-        layout.aW..(self.muteButton)
-        layout.aW..(self.volumeSlider)
-        layout.aW..(self.rateBox)
-        self.sL..(layout)
+        layout.aW..(stopButton)
+        layout.aW..(previousButton)
+        layout.aW..(playButton)
+        layout.aW..(nextButton)
+        layout.aW..(muteButton)
+        layout.aW..(volumeSlider)
+        layout.aW..(rateBox)
+        sL..(layout)
 
-    ___ state(self):
-        r_ self.playerState
+    ___ state
+        r_ playerState
 
     ___ setState state):
-        __ state !_ self.playerState:
-            self.playerState _ state
+        __ state !_ playerState:
+            playerState _ state
 
             __ state == QMediaPlayer.StoppedState:
-                self.stopButton.setEnabled F..
-                self.playButton.setIcon(
-                        self.style().standardIcon(QStyle.SP_MediaPlay))
+                stopButton.setEnabled F..
+                playButton.setIcon(
+                        style().standardIcon(QStyle.SP_MediaPlay))
             ____ state == QMediaPlayer.PlayingState:
-                self.stopButton.setEnabled(True)
-                self.playButton.setIcon(
-                        self.style().standardIcon(QStyle.SP_MediaPause))
+                stopButton.setEnabled(True)
+                playButton.setIcon(
+                        style().standardIcon(QStyle.SP_MediaPause))
             ____ state == QMediaPlayer.PausedState:
-                self.stopButton.setEnabled(True)
-                self.playButton.setIcon(
-                        self.style().standardIcon(QStyle.SP_MediaPlay))
+                stopButton.setEnabled(True)
+                playButton.setIcon(
+                        style().standardIcon(QStyle.SP_MediaPlay))
 
-    ___ volume(self):
-        r_ self.volumeSlider.value()
+    ___ volume
+        r_ volumeSlider.value()
 
     ___ setVolume  volume):
-        self.volumeSlider.setValue(volume)
+        volumeSlider.setValue(volume)
 
-    ___ isMuted(self):
-        r_ self.playerMuted
+    ___ isMuted
+        r_ playerMuted
 
     ___ setMuted  muted):
-        __ muted !_ self.playerMuted:
-            self.playerMuted _ muted
+        __ muted !_ playerMuted:
+            playerMuted _ muted
 
-            self.muteButton.setIcon(
-                    self.style().standardIcon(
+            muteButton.setIcon(
+                    style().standardIcon(
                             QStyle.SP_MediaVolumeMuted __ muted else QStyle.SP_MediaVolume))
 
-    ___ playClicked(self):
-        __ self.playerState in (QMediaPlayer.StoppedState, QMediaPlayer.PausedState):
-            self.play.emit()
-        ____ self.playerState == QMediaPlayer.PlayingState:
-            self.pause.emit()
+    ___ playClicked
+        __ playerState __ (QMediaPlayer.StoppedState, QMediaPlayer.PausedState):
+            play.emit()
+        ____ playerState == QMediaPlayer.PlayingState:
+            pause.emit()
 
-    ___ muteClicked(self):
-        self.changeMuting.emit(no. self.playerMuted)
+    ___ muteClicked
+        changeMuting.emit(no. playerMuted)
 
-    ___ playbackRate(self):
-        r_ self.rateBox.itemData(self.rateBox.currentIndex())
+    ___ playbackRate
+        r_ rateBox.itemData(rateBox.currentIndex())
 
     ___ setPlaybackRate  rate):
-        for i in range(self.rateBox.count()):
-            __ qFuzzyCompare(rate, self.rateBox.itemData(i)):
-                self.rateBox.setCurrentIndex(i)
+        ___ i __ range(rateBox.count()):
+            __ qFuzzyCompare(rate, rateBox.itemData(i)):
+                rateBox.setCurrentIndex(i)
                 r_
 
-        self.rateBox.addItem("%dx" % rate, rate)
-        self.rateBox.setCurrentIndex(self.rateBox.count() - 1)
+        rateBox.addItem("%dx" % rate, rate)
+        rateBox.setCurrentIndex(rateBox.count() - 1)
 
-    ___ updateRate(self):
-        self.changeRate.emit(self.playbackRate())
+    ___ updateRate
+        changeRate.emit(playbackRate())
 
 
 c_ FrameProcessor(QObject):
@@ -290,7 +290,7 @@ c_ FrameProcessor(QObject):
             __ pixelFormat == QVideoFrame.Format_YUV420P or pixelFormat == QVideoFrame.Format_NV12:
                 # Process YUV data.
                 bits _ frame.bits()
-                for idx in range(frame.height() * frame.width()):
+                ___ idx __ range(frame.height() * frame.width()):
                     histogram[(bits[idx] * levels) >> 8] +_ 1.0
             ____
                 imageFormat _ QVideoFrame.imageFormatFromPixelFormat(pixelFormat)
@@ -298,169 +298,169 @@ c_ FrameProcessor(QObject):
                     # Process RGB data.
                     image _ QImage(frame.bits(), frame.width(), frame.height(), imageFormat)
 
-                    for y in range(image.height()):
-                        for x in range(image.width()):
+                    ___ y __ range(image.height()):
+                        ___ x __ range(image.width()):
                             pixel _ image.pixel(x, y)
                             histogram[(qGray(pixel) * levels) >> 8] +_ 1.0
 
             # Find the maximum value.
             maxValue _ 0.0
-            for value in histogram:
+            ___ value __ histogram:
                 __ value > maxValue:
                     maxValue _ value
 
             # Normalise the values between 0 and 1.
             __ maxValue > 0.0:
-                for i in range(le.(histogram)):
+                ___ i __ range(le.(histogram)):
                     histogram[i] /_ maxValue
 
             frame.unmap()
 
-        self.histogramReady.emit(histogram)
+        histogramReady.emit(histogram)
 
 
 c_ HistogramWidget(QWidget):
 
-    ___ __init__  parent_None):
-        super(HistogramWidget, self).__init__(parent)
+    ___  -   parent_None):
+        super(HistogramWidget, self). - (parent)
 
-        self.m_levels _ 128
-        self.m_isBusy _ False
-        self.m_histogram _   # list
-        self.m_processor _ FrameProcessor()
-        self.m_processorThread _ QThread()
+        m_levels _ 128
+        m_isBusy _ False
+        m_histogram _   # list
+        m_processor _ FrameProcessor()
+        m_processorThread _ QThread()
 
-        self.m_processor.moveToThread(self.m_processorThread)
-        self.m_processor.histogramReady.c..(self.setHistogram)
+        m_processor.moveToThread(m_processorThread)
+        m_processor.histogramReady.c..(setHistogram)
 
-    ___ __del__(self):
-        self.m_processorThread.quit()
-        self.m_processorThread.wait(10000)
+    ___ __del__
+        m_processorThread.quit()
+        m_processorThread.wait(10000)
 
     ___ setLevels  levels):
-        self.m_levels _ levels
+        m_levels _ levels
 
     ___ processFrame  frame):
-        __ self.m_isBusy:
+        __ m_isBusy:
             r_
 
-        self.m_isBusy _ True
-        QMetaObject.invokeMethod(self.m_processor, 'processFrame',
+        m_isBusy _ True
+        QMetaObject.invokeMethod(m_processor, 'processFrame',
                 __.QueuedConnection, Q_ARG(QVideoFrame, frame),
-                Q_ARG(int, self.m_levels))
+                Q_ARG(int, m_levels))
 
     @pyqtSlot(list)
     ___ setHistogram  histogram):
-        self.m_isBusy _ False
-        self.m_histogram _ list(histogram)
-        self.update()
+        m_isBusy _ False
+        m_histogram _ list(histogram)
+        update()
 
     ___ paintEvent  event):
-        painter _ QPainter(self)
+        painter _ QPainter
 
-        __ le.(self.m_histogram) == 0:
-            painter.fillRect(0, 0, self.width(), self.height(),
+        __ le.(m_histogram) == 0:
+            painter.fillRect(0, 0, width(), height(),
                     ?C...fromRgb(0, 0, 0))
             r_
 
-        barWidth _ self.width() / float(le.(self.m_histogram))
+        barWidth _ width() / float(le.(m_histogram))
 
-        for i, value in enumerate(self.m_histogram):
-            h _ value * self.height()
+        ___ i, value __ en..(m_histogram):
+            h _ value * height()
             # Draw the level.
-            painter.fillRect(barWidth * i, self.height() - h,
-                    barWidth * (i + 1), self.height(), __.red)
+            painter.fillRect(barWidth * i, height() - h,
+                    barWidth * (i + 1), height(), __.red)
             # Clear the rest of the control.
             painter.fillRect(barWidth * i, 0, barWidth * (i + 1),
-                    self.height() - h, __.black)
+                    height() - h, __.black)
 
 
 c_ Player(QWidget):
 
     fullScreenChanged _ pyqtSignal(bool)
 
-    ___ __init__  playlist, parent_None):
-        super(Player, self).__init__(parent)
+    ___  -   playlist, parent_None):
+        super(Player, self). - (parent)
 
-        self.colorDialog _ N..
-        self.trackInfo _ ""
-        self.statusInfo _ ""
-        self.duration _ 0
+        colorDialog _ N..
+        trackInfo _ ""
+        statusInfo _ ""
+        duration _ 0
 
-        self.player _ QMediaPlayer()
-        self.playlist _ QMediaPlaylist()
-        self.player.setPlaylist(self.playlist)
+        player _ QMediaPlayer()
+        playlist _ QMediaPlaylist()
+        player.setPlaylist(playlist)
 
-        self.player.durationChanged.c..(self.durationChanged)
-        self.player.positionChanged.c..(self.positionChanged)
-        self.player.metaDataChanged.c..(self.metaDataChanged)
-        self.playlist.currentIndexChanged.c..(self.playlistPositionChanged)
-        self.player.mediaStatusChanged.c..(self.statusChanged)
-        self.player.bufferStatusChanged.c..(self.bufferingProgress)
-        self.player.videoAvailableChanged.c..(self.videoAvailableChanged)
-        self.player.error.c..(self.displayErrorMessage)
+        player.durationChanged.c..(durationChanged)
+        player.positionChanged.c..(positionChanged)
+        player.metaDataChanged.c..(metaDataChanged)
+        playlist.currentIndexChanged.c..(playlistPositionChanged)
+        player.mediaStatusChanged.c..(statusChanged)
+        player.bufferStatusChanged.c..(bufferingProgress)
+        player.videoAvailableChanged.c..(videoAvailableChanged)
+        player.error.c..(displayErrorMessage)
 
-        self.videoWidget _ VideoWidget()
-        self.player.setVideoOutput(self.videoWidget)
+        videoWidget _ VideoWidget()
+        player.setVideoOutput(videoWidget)
 
-        self.playlistModel _ PlaylistModel()
-        self.playlistModel.setPlaylist(self.playlist)
+        playlistModel _ PlaylistModel()
+        playlistModel.setPlaylist(playlist)
 
-        self.playlistView _ QListView()
-        self.playlistView.sM..(self.playlistModel)
-        self.playlistView.setCurrentIndex(
-                self.playlistModel.index(self.playlist.currentIndex(), 0))
+        playlistView _ QListView()
+        playlistView.sM..(playlistModel)
+        playlistView.setCurrentIndex(
+                playlistModel.index(playlist.currentIndex(), 0))
 
-        self.playlistView.activated.c..(self.jump)
+        playlistView.activated.c..(jump)
 
-        self.slider _ QSlider(__.Horizontal)
-        self.slider.setRange(0, self.player.duration() / 1000)
+        slider _ QSlider(__.Horizontal)
+        slider.setRange(0, player.duration() / 1000)
 
-        self.labelDuration _ QLabel()
-        self.slider.sliderMoved.c..(self.seek)
+        labelDuration _ QLabel()
+        slider.sliderMoved.c..(seek)
 
-        self.labelHistogram _ QLabel()
-        self.labelHistogram.sT..("Histogram:")
-        self.histogram _ HistogramWidget()
+        labelHistogram _ QLabel()
+        labelHistogram.sT..("Histogram:")
+        histogram _ HistogramWidget()
         histogramLayout _ QHBoxLayout()
-        histogramLayout.aW..(self.labelHistogram)
-        histogramLayout.aW..(self.histogram, 1)
+        histogramLayout.aW..(labelHistogram)
+        histogramLayout.aW..(histogram, 1)
 
-        self.probe _ QVideoProbe()
-        self.probe.videoFrameProbed.c..(self.histogram.processFrame)
-        self.probe.setSource(self.player)
+        probe _ QVideoProbe()
+        probe.videoFrameProbed.c..(histogram.processFrame)
+        probe.setSource(player)
 
         openButton _ ?PB..("Open", c___self.o..)
 
         controls _ PlayerControls()
-        controls.setState(self.player.state())
-        controls.setVolume(self.player.volume())
+        controls.setState(player.state())
+        controls.setVolume(player.volume())
         controls.setMuted(controls.isMuted())
 
-        controls.play.c..(self.player.play)
-        controls.pause.c..(self.player.pause)
-        controls.stop.c..(self.player.stop)
-        controls.next.c..(self.playlist.next)
-        controls.previous.c..(self.previousClicked)
-        controls.changeVolume.c..(self.player.setVolume)
-        controls.changeMuting.c..(self.player.setMuted)
-        controls.changeRate.c..(self.player.setPlaybackRate)
-        controls.stop.c..(self.videoWidget.update)
+        controls.play.c..(player.play)
+        controls.pause.c..(player.pause)
+        controls.stop.c..(player.stop)
+        controls.next.c..(playlist.next)
+        controls.previous.c..(previousClicked)
+        controls.changeVolume.c..(player.setVolume)
+        controls.changeMuting.c..(player.setMuted)
+        controls.changeRate.c..(player.setPlaybackRate)
+        controls.stop.c..(videoWidget.update)
 
-        self.player.stateChanged.c..(controls.setState)
-        self.player.volumeChanged.c..(controls.setVolume)
-        self.player.mutedChanged.c..(controls.setMuted)
+        player.stateChanged.c..(controls.setState)
+        player.volumeChanged.c..(controls.setVolume)
+        player.mutedChanged.c..(controls.setMuted)
 
-        self.fullScreenButton _ ?PB..("FullScreen")
-        self.fullScreenButton.setCheckable(True)
+        fullScreenButton _ ?PB..("FullScreen")
+        fullScreenButton.setCheckable(True)
 
-        self.colorButton _ ?PB..("Color Options...")
-        self.colorButton.setEnabled F..
-        self.colorButton.c__.c..(self.showColorDialog)
+        colorButton _ ?PB..("Color Options...")
+        colorButton.setEnabled F..
+        colorButton.c__.c..(showColorDialog)
 
         displayLayout _ QHBoxLayout()
-        displayLayout.aW..(self.videoWidget, 2)
-        displayLayout.aW..(self.playlistView)
+        displayLayout.aW..(videoWidget, 2)
+        displayLayout.aW..(playlistView)
 
         controlLayout _ QHBoxLayout()
         controlLayout.setContentsMargins(0, 0, 0, 0)
@@ -468,156 +468,156 @@ c_ Player(QWidget):
         controlLayout.addStretch(1)
         controlLayout.aW..(controls)
         controlLayout.addStretch(1)
-        controlLayout.aW..(self.fullScreenButton)
-        controlLayout.aW..(self.colorButton)
+        controlLayout.aW..(fullScreenButton)
+        controlLayout.aW..(colorButton)
 
         layout _ ?VBL..
-        layout.addLayout(displayLayout)
+        layout.aL..(displayLayout)
         hLayout _ QHBoxLayout()
-        hLayout.aW..(self.slider)
-        hLayout.aW..(self.labelDuration)
-        layout.addLayout(hLayout)
-        layout.addLayout(controlLayout)
-        layout.addLayout(histogramLayout)
+        hLayout.aW..(slider)
+        hLayout.aW..(labelDuration)
+        layout.aL..(hLayout)
+        layout.aL..(controlLayout)
+        layout.aL..(histogramLayout)
 
-        self.sL..(layout)
+        sL..(layout)
 
-        __ no. self.player.isAvailable
+        __ no. player.isAvailable
             ?MB...warning  "Service not available",
                     "The QMediaPlayer object does not have a valid service.\n"
                     "Please check the media service plugins are installed.")
 
             controls.setEnabled F..
-            self.playlistView.setEnabled F..
+            playlistView.setEnabled F..
             openButton.setEnabled F..
-            self.colorButton.setEnabled F..
-            self.fullScreenButton.setEnabled F..
+            colorButton.setEnabled F..
+            fullScreenButton.setEnabled F..
 
-        self.metaDataChanged()
+        metaDataChanged()
 
-        self.addToPlaylist(playlist)
+        addToPlaylist(playlist)
 
-    ___ o..(self):
+    ___ o..
         fileNames, _ _ ?FD...getOpenFileNames  "Open Files")
-        self.addToPlaylist(fileNames)
+        addToPlaylist(fileNames)
 
     ___ addToPlaylist  fileNames):
-        for name in fileNames:
+        ___ name __ fileNames:
             fileInfo _ QFileInfo(name)
             __ fileInfo.exists
                 url _ QUrl.fromLocalFile(fileInfo.absoluteFilePath())
                 __ fileInfo.suffix().lower() == 'm3u':
-                    self.playlist.load(url)
+                    playlist.load(url)
                 ____
-                    self.playlist.addMedia(QMediaContent(url))
+                    playlist.addMedia(QMediaContent(url))
             ____
                 url _ QUrl(name)
                 __ url.isValid
-                    self.playlist.addMedia(QMediaContent(url))
+                    playlist.addMedia(QMediaContent(url))
 
     ___ durationChanged  duration):
         duration /_ 1000
 
-        self.duration _ duration
-        self.slider.setMaximum(duration)
+        duration _ duration
+        slider.setMaximum(duration)
 
     ___ positionChanged  progress):
         progress /_ 1000
 
-        __ no. self.slider.isSliderDown
-            self.slider.setValue(progress)
+        __ no. slider.isSliderDown
+            slider.setValue(progress)
 
-        self.updateDurationInfo(progress)
+        updateDurationInfo(progress)
 
-    ___ metaDataChanged(self):
-        __ self.player.isMetaDataAvailable
-            self.setTrackInfo("%s - %s" % (
-                    self.player.metaData(QMediaMetaData.AlbumArtist),
-                    self.player.metaData(QMediaMetaData.Title)))
+    ___ metaDataChanged
+        __ player.isMetaDataAvailable
+            setTrackInfo("%s - %s" % (
+                    player.metaData(QMediaMetaData.AlbumArtist),
+                    player.metaData(QMediaMetaData.Title)))
 
-    ___ previousClicked(self):
+    ___ previousClicked
         # Go to the previous track if we are within the first 5 seconds of
         # playback.  Otherwise, seek to the beginning.
-        __ self.player.position() <_ 5000:
-            self.playlist.previous()
+        __ player.position() <_ 5000:
+            playlist.previous()
         ____
-            self.player.setPosition(0)
+            player.setPosition(0)
 
     ___ jump  index):
         __ index.isValid
-            self.playlist.setCurrentIndex(index.row())
-            self.player.play()
+            playlist.setCurrentIndex(index.row())
+            player.play()
 
     ___ playlistPositionChanged  position):
-        self.playlistView.setCurrentIndex(
-                self.playlistModel.index(position, 0))
+        playlistView.setCurrentIndex(
+                playlistModel.index(position, 0))
 
     ___ seek  seconds):
-        self.player.setPosition(seconds * 1000)
+        player.setPosition(seconds * 1000)
 
     ___ statusChanged  status):
-        self.handleCursor(status)
+        handleCursor(status)
 
         __ status == QMediaPlayer.LoadingMedia:
-            self.setStatusInfo("Loading...")
+            setStatusInfo("Loading...")
         ____ status == QMediaPlayer.StalledMedia:
-            self.setStatusInfo("Media Stalled")
+            setStatusInfo("Media Stalled")
         ____ status == QMediaPlayer.EndOfMedia:
-            ?A...alert(self)
+            ?A...alert
         ____ status == QMediaPlayer.InvalidMedia:
-            self.displayErrorMessage()
+            displayErrorMessage()
         ____
-            self.setStatusInfo("")
+            setStatusInfo("")
 
     ___ handleCursor  status):
-        __ status in (QMediaPlayer.LoadingMedia, QMediaPlayer.BufferingMedia, QMediaPlayer.StalledMedia):
-            self.setCursor(__.BusyCursor)
+        __ status __ (QMediaPlayer.LoadingMedia, QMediaPlayer.BufferingMedia, QMediaPlayer.StalledMedia):
+            setCursor(__.BusyCursor)
         ____
-            self.unsetCursor()
+            unsetCursor()
 
     ___ bufferingProgress  progress):
-        self.setStatusInfo("Buffering %d%" % progress)
+        setStatusInfo("Buffering %d%" % progress)
 
     ___ videoAvailableChanged  available):
         __ available:
-            self.fullScreenButton.c__.c..(
-                    self.videoWidget.setFullScreen)
-            self.videoWidget.fullScreenChanged.c..(
-                    self.fullScreenButton.setChecked)
+            fullScreenButton.c__.c..(
+                    videoWidget.setFullScreen)
+            videoWidget.fullScreenChanged.c..(
+                    fullScreenButton.setChecked)
 
-            __ self.fullScreenButton.isChecked
-                self.videoWidget.setFullScreen(True)
+            __ fullScreenButton.isChecked
+                videoWidget.setFullScreen(True)
         ____
-            self.fullScreenButton.c__.disconnect(
-                    self.videoWidget.setFullScreen)
-            self.videoWidget.fullScreenChanged.disconnect(
-                    self.fullScreenButton.setChecked)
+            fullScreenButton.c__.disconnect(
+                    videoWidget.setFullScreen)
+            videoWidget.fullScreenChanged.disconnect(
+                    fullScreenButton.setChecked)
 
-            self.videoWidget.setFullScreen F..
+            videoWidget.setFullScreen F..
 
-        self.colorButton.setEnabled(available)
+        colorButton.setEnabled(available)
 
     ___ setTrackInfo  info):
-        self.trackInfo _ info
+        trackInfo _ info
 
-        __ self.statusInfo !_ "":
-            self.setWindowTitle("%s | %s" % (self.trackInfo, self.statusInfo))
+        __ statusInfo !_ "":
+            setWindowTitle("%s | %s" % (trackInfo, statusInfo))
         ____
-            self.setWindowTitle(self.trackInfo)
+            setWindowTitle(trackInfo)
 
     ___ setStatusInfo  info):
-        self.statusInfo _ info
+        statusInfo _ info
 
-        __ self.statusInfo !_ "":
-            self.setWindowTitle("%s | %s" % (self.trackInfo, self.statusInfo))
+        __ statusInfo !_ "":
+            setWindowTitle("%s | %s" % (trackInfo, statusInfo))
         ____
-            self.setWindowTitle(self.trackInfo)
+            setWindowTitle(trackInfo)
 
-    ___ displayErrorMessage(self):
-        self.setStatusInfo(self.player.errorString())
+    ___ displayErrorMessage
+        setStatusInfo(player.errorString())
 
     ___ updateDurationInfo  currentInfo):
-        duration _ self.duration
+        duration _ duration
         __ currentInfo or duration:
             currentTime _ QTime((currentInfo/3600)%60, (currentInfo/60)%60,
                     currentInfo%60, (currentInfo*1000)%1000)
@@ -629,36 +629,36 @@ c_ Player(QWidget):
         ____
             tStr _ ""
 
-        self.labelDuration.sT..(tStr)
+        labelDuration.sT..(tStr)
 
-    ___ showColorDialog(self):
-        __ self.colorDialog __ N..:
+    ___ showColorDialog
+        __ colorDialog __ N..:
             brightnessSlider _ QSlider(__.Horizontal)
             brightnessSlider.setRange(-100, 100)
-            brightnessSlider.setValue(self.videoWidget.brightness())
+            brightnessSlider.setValue(videoWidget.brightness())
             brightnessSlider.sliderMoved.c..(
-                    self.videoWidget.setBrightness)
-            self.videoWidget.brightnessChanged.c..(
+                    videoWidget.setBrightness)
+            videoWidget.brightnessChanged.c..(
                     brightnessSlider.setValue)
 
             contrastSlider _ QSlider(__.Horizontal)
             contrastSlider.setRange(-100, 100)
-            contrastSlider.setValue(self.videoWidget.contrast())
-            contrastSlider.sliderMoved.c..(self.videoWidget.setContrast)
-            self.videoWidget.contrastChanged.c..(contrastSlider.setValue)
+            contrastSlider.setValue(videoWidget.contrast())
+            contrastSlider.sliderMoved.c..(videoWidget.setContrast)
+            videoWidget.contrastChanged.c..(contrastSlider.setValue)
 
             hueSlider _ QSlider(__.Horizontal)
             hueSlider.setRange(-100, 100)
-            hueSlider.setValue(self.videoWidget.hue())
-            hueSlider.sliderMoved.c..(self.videoWidget.setHue)
-            self.videoWidget.hueChanged.c..(hueSlider.setValue)
+            hueSlider.setValue(videoWidget.hue())
+            hueSlider.sliderMoved.c..(videoWidget.setHue)
+            videoWidget.hueChanged.c..(hueSlider.setValue)
 
             saturationSlider _ QSlider(__.Horizontal)
             saturationSlider.setRange(-100, 100)
-            saturationSlider.setValue(self.videoWidget.saturation())
+            saturationSlider.setValue(videoWidget.saturation())
             saturationSlider.sliderMoved.c..(
-                    self.videoWidget.setSaturation)
-            self.videoWidget.saturationChanged.c..(
+                    videoWidget.setSaturation)
+            videoWidget.saturationChanged.c..(
                     saturationSlider.setValue)
 
             layout _ QFormLayout()
@@ -670,20 +670,20 @@ c_ Player(QWidget):
             button _ ?PB..("Close")
             layout.addRow(button)
 
-            self.colorDialog _ QDialog(self)
-            self.colorDialog.setWindowTitle("Color Options")
-            self.colorDialog.sL..(layout)
+            colorDialog _ QDialog
+            colorDialog.setWindowTitle("Color Options")
+            colorDialog.sL..(layout)
 
-            button.c__.c..(self.colorDialog.close)
+            button.c__.c..(colorDialog.close)
 
-        self.colorDialog.s..
+        colorDialog.s..
 
 
-__ __name__ == '__main__':
+__ ______ __ ______
 
     ______ ___
 
-    app _ ?A..(___.argv)
+    app _ ?A..(___.a..
 
     player _ Player(___.argv[1:])
     player.s..

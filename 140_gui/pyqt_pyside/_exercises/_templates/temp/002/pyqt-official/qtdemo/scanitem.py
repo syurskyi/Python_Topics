@@ -51,10 +51,10 @@ c_ ScanItem(DemoItem):
     ITEM_WIDTH _ 16
     ITEM_HEIGHT _ 16
 
-    ___ __init__  parent_None):
-        super(ScanItem, self).__init__(parent)
+    ___  -   parent_None):
+        super(ScanItem, self). - (parent)
 
-        self.useSharedImage(__file__)
+        useSharedImage(__file__)
 
     ___ createImage  transform):
         scaledRect _ transform.mapRect(QRect(0, 0, ScanItem.ITEM_WIDTH, ScanItem.ITEM_HEIGHT))
