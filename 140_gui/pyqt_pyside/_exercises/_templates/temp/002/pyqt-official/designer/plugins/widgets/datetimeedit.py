@@ -26,7 +26,7 @@
 
 ____ ?.?C.. ______ pyqtProperty, __
 ____ ?.?W.. ______ (?A.., QCalendarWidget, QDateEdit,
-        QDateTimeEdit, QHBoxLayout, QWidget)
+        ?DTE.., QHBoxLayout, ?W..)
 
 
 #============================================================================#
@@ -192,7 +192,7 @@ c_ PyDateEdit(QDateEdit):
 #============================================================================#
 # PyDateTimeEdit                                                             #
 #----------------------------------------------------------------------------#
-c_ PyDateTimeEdit(QDateTimeEdit):
+c_ PyDateTimeEdit(?DTE..):
     #
     # Initialize base class
     # Force use of the calendar popup

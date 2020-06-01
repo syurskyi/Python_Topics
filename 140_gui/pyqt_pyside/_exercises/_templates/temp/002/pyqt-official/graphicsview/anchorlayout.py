@@ -52,9 +52,9 @@ ___ createItem(minimum, preferred, maximum, name):
     w _ QGraphicsProxyWidget()
 
     w.setWidget(?PB..(name))
-    w.setMinimumSize(minimum)
+    w.sMS..(minimum)
     w.setPreferredSize(preferred)
-    w.setMaximumSize(maximum)
+    w.sMS..(maximum)
     w.sSP..(QSizePolicy.Preferred, QSizePolicy.Preferred)
 
     r_ w
@@ -121,7 +121,7 @@ __ ______ __ ______
     l.addAnchor(l, __.AnchorLeft, g, __.AnchorLeft)
     l.addAnchor(f, __.AnchorRight, g, __.AnchorRight)
 
-    scene.addItem(w)
+    scene.aI..(w)
     scene.setBackgroundBrush(__.darkGreen)
 
     view _ QGraphicsView(scene)

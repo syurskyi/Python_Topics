@@ -42,10 +42,10 @@
 #############################################################################
 
 
-____ ?.?C.. ______ (pyqtSignal, QMutex, QMutexLocker, QPoint, QSize, __,
+____ ?.?C.. ______ (pyqtSignal, QMutex, QMutexLocker, QPoint, ?S.., __,
         QThread, QWaitCondition)
 ____ ?.?G.. ______ ?C.., QImage, QPainter, QPixmap, qRgb
-____ ?.?W.. ______ ?A.., QWidget
+____ ?.?W.. ______ ?A.., ?W..
 
 
 DefaultCenterX _ -0.647011
@@ -70,7 +70,7 @@ c_ RenderThread(QThread):
         centerX _ 0.0
         centerY _ 0.0
         scaleFactor _ 0.0
-        resultSize _ QSize()
+        resultSize _ ?S..()
         colormap _   # list
 
         restart _ False
@@ -209,7 +209,7 @@ c_ RenderThread(QThread):
         r_ qRgb(r*255, g*255, b*255)
 
 
-c_ MandelbrotWidget(QWidget):
+c_ MandelbrotWidget(?W..):
     ___  -   parent_None):
         super(MandelbrotWidget, self). - (parent)
 

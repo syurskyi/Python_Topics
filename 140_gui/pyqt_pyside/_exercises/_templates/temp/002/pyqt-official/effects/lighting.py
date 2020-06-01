@@ -112,7 +112,7 @@ c_ Lighting(QGraphicsView):
                 item.setGraphicsEffect(effect)
                 item.setZValue(1)
                 item.setPos(i * 80, j * 80)
-                m_scene.addItem(item)
+                m_scene.aI..(item)
                 m_items.ap..(item)
 
     ___ animate 

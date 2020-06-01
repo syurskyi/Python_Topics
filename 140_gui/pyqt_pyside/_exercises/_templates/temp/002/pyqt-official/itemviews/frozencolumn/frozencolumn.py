@@ -132,7 +132,7 @@ c_ FreezeTableWidget(QTableView):
 
 ___ main(args):
     ___ split_and_strip(s, splitter):
-        r_ [s.strip() ___ s __ line.split(splitter)]
+        r_ [s.strip() ___ s __ line.sp..(splitter)]
 
     app _ ?A..(args)
     model _ QStandardItemModel()
@@ -144,7 +144,7 @@ ___ main(args):
         row _ 0
         w__ file.canReadLine
             line _ file.readLine(200).decode('utf-8')
-            __ no. line.startswith('#') and ',' __ line:
+            __ no. line.s_w_('#') and ',' __ line:
                 fields _ split_and_strip(line, ',')
                 ___ col, field __ en..(fields):
                     newItem _ QStandardItem(field)

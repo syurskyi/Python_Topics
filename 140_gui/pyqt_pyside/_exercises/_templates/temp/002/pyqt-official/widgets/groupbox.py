@@ -44,10 +44,10 @@
 
 ____ ?.?C.. ______ __
 ____ ?.?W.. ______ (?A.., QCheckBox, QGridLayout, QGroupBox,
-        QMenu, ?PB.., QRadioButton, QVBoxLayout, QWidget)
+        QMenu, ?PB.., QRadioButton, QVBoxLayout, ?W..)
 
 
-c_ Window(QWidget):
+c_ Window(?W..):
     ___  -   parent_None):
         super(Window, self). - (parent)
 

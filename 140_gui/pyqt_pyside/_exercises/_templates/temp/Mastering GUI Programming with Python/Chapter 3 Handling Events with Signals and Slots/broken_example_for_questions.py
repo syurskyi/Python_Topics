@@ -9,7 +9,7 @@ c_ TimeForm ?.?W..
 
     ___  -  
         s_. - ()
-        sL..(qtw.QHBoxLayout())
+        sL..(qtw.?HBL..
         time_inp _ qtw.QTimeEdit
         #self.time_inp = qtw.QTimeEdit(self, objectName='time_inp')
         layout().aW..(time_inp)
@@ -32,7 +32,7 @@ c_ MainWindow ?.?W..
         tf _ TimeForm()
         tf.s..
 
-        tf.submitted.c..(lambda x: print(x))
+        tf.submitted.c..(l___ x: print(x))
 
         # End main UI code
         s..

@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ (QDir, QIODevice, QFile, QFileInfo, __, QTextStream,
         QUrl)
 ____ ?.?G.. ______ QDesktopServices
-____ ?.?W.. ______ (QAbstractItemView, ?A.., QComboBox,
+____ ?.?W.. ______ (QAbstractItemView, ?A.., ?CB,
         QDialog, ?FD.., QGridLayout, QHBoxLayout, QHeaderView, QLabel,
         QProgressDialog, ?PB.., QSizePolicy, QTableWidget,
         QTableWidgetItem)
@@ -95,14 +95,14 @@ c_ Window(QDialog):
 
         __ directory:
             __ directoryComboBox.findText(directory) == -1:
-                directoryComboBox.addItem(directory)
+                directoryComboBox.aI..(directory)
 
             directoryComboBox.setCurrentIndex(directoryComboBox.findText(directory))
 
     @staticmethod
     ___ updateComboBox(comboBox):
         __ comboBox.findText(comboBox.currentText()) == -1:
-            comboBox.addItem(comboBox.currentText())
+            comboBox.aI..(comboBox.currentText())
 
     ___ find
         filesTable.setRowCount(0)
@@ -182,9 +182,9 @@ c_ Window(QDialog):
         r_ button
 
     ___ createComboBox  text_""):
-        comboBox _ QComboBox()
+        comboBox _ ?CB()
         comboBox.setEditable(True)
-        comboBox.addItem(t__)
+        comboBox.aI..(t__)
         comboBox.sSP..(QSizePolicy.E.., QSizePolicy.Preferred)
         r_ comboBox
 

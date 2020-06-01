@@ -23,12 +23,12 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 """
 
-____ ?.?C.. ______ pyqtProperty, pyqtSignal, pyqtSlot, QRectF, QSize, __
+____ ?.?C.. ______ pyqtProperty, pyqtSignal, pyqtSlot, QRectF, ?S.., __
 ____ ?.?G.. ______ QFont, QFontMetricsF, QPainter
-____ ?.?W.. ______ ?A.., QWidget
+____ ?.?W.. ______ ?A.., ?W..
 
 
-c_ CounterLabel(QWidget):
+c_ CounterLabel(?W..):
     """CounterLabel(QWidget)
 
     Provides a custom label widget to be used as a counter, with signals
@@ -65,8 +65,8 @@ c_ CounterLabel(QWidget):
         p.drawText(_xpos, _ypos, str(_value))
         p.end()
 
-    ___ sizeHint 
-        r_ QSize(32, 32)
+    ___ sH..
+        r_ ?S..(32, 32)
 
     ___ rescale 
 

@@ -16,12 +16,12 @@ c_ GraphWidget ?.?W..
     good_color _ qtg.?C..(0, 255, 0)  # green
 
     ___  - (
-        self, *args, data_width_20,
+        self, $ data_width_20,
         minimum_0, maximum_100,
         warn_val_50, crit_val_75, scale_10,
-        **kwargs
+        $$
     ):
-        s_. - (*args, **kwargs)
+        s_. - ($ $$)
         minimum _ minimum
         maximum _ maximum
         warn_val _ warn_val

@@ -64,9 +64,9 @@ dontUseCustomDirectoryIconsOption _ QCommandLineOption('c',
 parser.addOption(dontUseCustomDirectoryIconsOption)
 parser.addPositionalArgument('directory', "The directory to start in.")
 parser.process(app)
-try:
+___
     rootPath _ parser.positionalArguments().p.. 0)
-except IndexError:
+_____ IE..
     rootPath _ N..
 
 model _ QFileSystemModel()

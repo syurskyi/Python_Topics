@@ -45,10 +45,10 @@
 ____ ?.?C.. ______ QBasicTimer
 ____ ?.?G.. ______ ?C.., QFontMetrics, QPainter, ?P..
 ____ ?.?W.. ______ (?A.., QDialog, QLineEdit, QVBoxLayout,
-        QWidget)
+        ?W..)
 
 
-c_ WigglyWidget(QWidget):
+c_ WigglyWidget(?W..):
     ___  -   parent_None):
         super(WigglyWidget, self). - (parent)
 

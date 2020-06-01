@@ -15,10 +15,10 @@ c_ MainWindow(qtw.QMainWindow):
         """
         s_. - ()
         # Main framework
-        r..(qtc.QSize(800, 600))
+        r..(qtc.?S..(800, 600))
         base_widget _ qtw.?W..
-        base_widget.sL..(qtw.QHBoxLayout())
-        notebook _ qtw.QTabWidget()
+        base_widget.sL..(qtw.?HBL..
+        notebook _ qtw.?TW..()
         base_widget.layout().aW..(notebook)
         file_list _ ?.?LW..
         base_widget.layout().aW..(file_list)
@@ -49,20 +49,20 @@ c_ MainWindow(qtw.QMainWindow):
         player _ qtmm.QMediaPlayer()
         video_widget _ qtmmw.QVideoWidget()
         player.setVideoOutput(video_widget)
-        notebook.addTab(video_widget, "Play")
+        notebook.aT..(video_widget, "Play")
 
         # connect the transport
         play_act.t__.c..(player.play)
         pause_act.t__.c..(player.pause)
         stop_act.t__.c..(player.stop)
         play_act.t__.c..(
-            lambda: notebook.setCurrentWidget(video_widget))
+            l___: notebook.setCurrentWidget(video_widget))
 
         # connect file list
         file_list.itemDoubleClicked.c..(
             on_file_selected)
         file_list.itemDoubleClicked.c..(
-            lambda: notebook.setCurrentWidget(video_widget))
+            l___: notebook.setCurrentWidget(video_widget))
 
 
 
@@ -80,7 +80,7 @@ c_ MainWindow(qtw.QMainWindow):
         # Create the viewfinder widget for recording
         cvf _ qtmmw.QCameraViewfinder()
         camera.setViewfinder(cvf)
-        notebook.addTab(cvf, 'Record')
+        notebook.aT..(cvf, 'Record')
 
         # start the camera
         camera.start()
@@ -96,7 +96,7 @@ c_ MainWindow(qtw.QMainWindow):
         # connect the transport
         record_act.t__.c..(record)
         record_act.t__.c..(
-            lambda: notebook.setCurrentWidget(cvf)
+            l___: notebook.setCurrentWidget(cvf)
         )
         pause_act.t__.c..(recorder.pause)
         stop_act.t__.c..(recorder.stop)
@@ -118,7 +118,7 @@ c_ MainWindow(qtw.QMainWindow):
             qtc.QDir.Files | qtc.QDir.Readable
         )
         ___ fn __ sorted(video_files):
-            file_list.addItem(fn)
+            file_list.aI..(fn)
 
     ___ on_file_selected  item):
         fn _ item.t__()

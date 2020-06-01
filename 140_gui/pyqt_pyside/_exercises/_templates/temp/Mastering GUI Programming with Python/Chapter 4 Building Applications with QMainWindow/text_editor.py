@@ -11,18 +11,18 @@ c_ SettingsDialog(qtw.QDialog):
         s_. - (parent, modal_True)
         sL..(qtw.QFormLayout())
         settings _ settings
-        layout().addRow(
+        layout().aR..(
             ?.?L..('<h1>Application Settings</h1>'),
         )
         show_warnings_cb _ ?.?CB..(
             #checked=settings.get('show_warnings')
             checked_settings.value('show_warnings', type_bool)
         )
-        layout().addRow("Show Warnings", show_warnings_cb)
+        layout().aR..("Show Warnings", show_warnings_cb)
 
         accept_btn _ qtw.?PB..('Ok', c___self.accept)
         cancel_btn _ qtw.?PB..('Cancel', c___self.reject)
-        layout().addRow(accept_btn, cancel_btn)
+        layout().aR..(accept_btn, cancel_btn)
 
     ___ accept
         #self.settings['show_warnings'] = self.show_warnings_cb.isChecked()
@@ -69,7 +69,7 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
         # add widgets to statusbar
         charcount_label _ ?.?L..("chars: 0")
         textedit.textChanged.c..(
-            lambda: charcount_label.sT..(
+            l___: charcount_label.sT..(
                 "chars: " +
                 str(le.(textedit.toPlainText()))
                 )
@@ -113,7 +113,7 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
         #toolbar.addAction(open_action)
         #toolbar.addAction("Save")
 
-        toolbar.setMovable F..
+        toolbar.sM.. F..
         toolbar.setFloatable F..
         toolbar.setAllowedAreas(
             qtc.__.TopToolBarArea |
@@ -129,7 +129,7 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
         toolbar.aA..(
             save_icon,
             'Save',
-            lambda: statusBar().showMessage('File Saved!')
+            l___: statusBar().showMessage('File Saved!')
         )
 
         # create a custom QAction
@@ -265,10 +265,10 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
             qtw.?FD...DontResolveSymlinks
         )
         __ filename:
-            try:
+            ___
                 w__ o..(filename, 'r') __ fh:
                     textedit.sT..(fh.r..
-            except Exception __ e:
+            _____ Exception __ e:
                 qtw.?MB...critical(f"Could not load file: {e}")
 
     ___ saveFile
@@ -279,10 +279,10 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
             'Text Files (*.txt) ;;Python Files (*.py) ;;All Files (*)'
         )
         __ filename:
-            try:
+            ___
                 w__ o..(filename, 'w') __ fh:
                     fh.w..(textedit.tPT..
-            except Exception __ e:
+            _____ Exception __ e:
                 qtw.?MB...critical(f"Could not save file: {e}")
 
     ___ set_font

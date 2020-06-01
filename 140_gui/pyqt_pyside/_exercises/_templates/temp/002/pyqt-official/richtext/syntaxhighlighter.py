@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ QFile, QRegExp, __
 ____ ?.?G.. ______ QFont, QSyntaxHighlighter, QTextCharFormat
 ____ ?.?W.. ______ (?A.., ?FD.., QMainWindow, QMenu,
-        ?MB.., QTextEdit)
+        ?MB.., ?TE..)
 
 
 c_ MainWindow ?MW..
@@ -79,10 +79,10 @@ c_ MainWindow ?MW..
             __ inFile.o..(QFile.ReadOnly | QFile.Text):
                 t__ _ inFile.readAll()
 
-                try:
+                ___
                     # Python v3.
                     t__ _ str(t__, encoding_'ascii')
-                except TypeError:
+                _____ TypeError:
                     # Python v2.
                     t__ _ str(t__)
 
@@ -94,7 +94,7 @@ c_ MainWindow ?MW..
         font.setFixedPitch(True)
         font.setPointSize(10)
 
-        editor _ QTextEdit()
+        editor _ ?TE..()
         editor.setFont(font)
 
         highlighter _ Highlighter(editor.document())

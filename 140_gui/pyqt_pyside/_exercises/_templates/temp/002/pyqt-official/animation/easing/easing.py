@@ -43,11 +43,11 @@
 
 
 ____ ?.?C.. ______ (pyqtProperty, QEasingCurve, QObject, QPoint, QPointF,
-        QPropertyAnimation, QRect, QRectF, QSize, __)
+        QPropertyAnimation, QRect, QRectF, ?S.., __)
 ____ ?.?G.. ______ (QBrush, ?C.., QIcon, QLinearGradient, QPainter,
         QPainterPath, QPixmap)
 ____ ?.?W.. ______ (?A.., QGraphicsPixmapItem, QGraphicsScene,
-        QListWidgetItem, QWidget)
+        QListWidgetItem, ?W..)
 
 ______ easing_rc
 ____ ui_form ______ Ui_Form
@@ -106,11 +106,11 @@ c_ PixmapItem(QObject):
     pos _ pyqtProperty(QPointF, fset__set_pos)
 
 
-c_ Window(QWidget):
+c_ Window(?W..):
     ___  -   parent_None):
-        super(QWidget, self). - (parent)
+        super(?W.., self). - (parent)
 
-        m_iconSize _ QSize(64, 64)
+        m_iconSize _ ?S..(64, 64)
         m_scene _ QGraphicsScene()
         m_ui _ Ui_Form()
 
@@ -134,7 +134,7 @@ c_ Window(QWidget):
 
         pix _ QPixmap(':/images/qt-logo.png')
         m_item _ PixmapItem(pix)
-        m_scene.addItem(m_item.pixmap_item)
+        m_scene.aI..(m_item.pixmap_item)
         m_ui.graphicsView.setScene(m_scene)
 
         m_anim _ Animation(m_item, b'pos')
@@ -214,7 +214,7 @@ c_ Window(QWidget):
             item _ QListWidgetItem()
             item.setIcon(QIcon(pix))
             item.sT..(curve_name)
-            m_ui.easingCurvePicker.addItem(item)
+            m_ui.easingCurvePicker.aI..(item)
 
         painter.end()
 

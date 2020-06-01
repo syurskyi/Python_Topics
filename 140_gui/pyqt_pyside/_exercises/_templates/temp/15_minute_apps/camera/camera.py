@@ -12,8 +12,8 @@ ______ time
 
 c_ MainWindow ?MW..
 
-    ___  -   *args, **kwargs):
-        super(MainWindow, self). - (*args, **kwargs)
+    ___  -   $ $$
+        super(MainWindow, self). - ($ $$)
 
         available_cameras _ QCameraInfo.availableCameras()
         __ no. available_cameras:
@@ -34,7 +34,7 @@ c_ MainWindow ?MW..
 
         # Setup tools
         camera_toolbar _ QToolBar("Camera")
-        camera_toolbar.setIconSize(QSize(14, 14))
+        camera_toolbar.setIconSize(?S..(14, 14))
         addToolBar(camera_toolbar)
 
         photo_action _ ?A..(QIcon(__.p__ .join('images', 'camera-black.png')), "Take photo...", self)
@@ -48,7 +48,7 @@ c_ MainWindow ?MW..
         camera_toolbar.aA..(change_folder_action)
 
 
-        camera_selector _ QComboBox()
+        camera_selector _ ?CB()
         camera_selector.aI..([c.description() ___ c __ available_cameras])
         camera_selector.currentIndexChanged.c..( select_camera )
 
@@ -62,12 +62,12 @@ c_ MainWindow ?MW..
         camera _ QCamera(available_cameras[i])
         camera.setViewfinder(viewfinder)
         camera.setCaptureMode(QCamera.CaptureStillImage)
-        camera.error.c..(lambda: alert(camera.errorString()))
+        camera.error.c..(l___: alert(camera.errorString()))
         camera.start()
 
         capture _ QCameraImageCapture(camera)
-        capture.error.c..(lambda i, e, s: alert(s))
-        capture.imageCaptured.c..(lambda d, i: status.showMessage("Image %04d captured" % save_seq))
+        capture.error.c..(l___ i, e, s: alert(s))
+        capture.imageCaptured.c..(l___ d, i: status.showMessage("Image %04d captured" % save_seq))
 
         current_camera_name _ available_cameras[i].description()
         save_seq _ 0

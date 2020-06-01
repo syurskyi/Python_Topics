@@ -42,9 +42,9 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QRect, QSize, __
+____ ?.?C.. ______ QRect, ?S.., __
 ____ ?.?W.. ______ (?A.., QFrame, QLabel, QLayout,
-        QTextBrowser, QWidget, QWidgetItem)
+        QTextBrowser, ?W.., QWidgetItem)
 
 
 c_ ItemWrapper(object):
@@ -71,7 +71,7 @@ c_ BorderLayout(QLayout):
         w__ l __ no. N..:
             l _ takeAt(0)
 
-    ___ addItem  item):
+    ___ aI..  item):
         add(item, West)
 
     ___ aW..  widget, position):
@@ -111,14 +111,14 @@ c_ BorderLayout(QLayout):
 
             __ position == North:
                 item.setGeometry(QRect(rect.x(), northHeight,
-                        rect.width(), item.sizeHint().height()))    
+                        rect.width(), item.sH..().height()))
 
                 northHeight +_ item.geometry().height() + spacing()
 
             ____ position == South:
                 item.setGeometry(QRect(item.geometry().x(),
                         item.geometry().y(), rect.width(),
-                        item.sizeHint().height()))
+                        item.sH..().height()))
 
                 southHeight +_ item.geometry().height() + spacing()
 
@@ -137,13 +137,13 @@ c_ BorderLayout(QLayout):
 
             __ position == West:
                 item.setGeometry(QRect(rect.x() + westWidth,
-                        northHeight, item.sizeHint().width(), centerHeight))    
+                        northHeight, item.sH..().width(), centerHeight))
 
                 westWidth +_ item.geometry().width() + spacing()
 
             ____ position == East:
                 item.setGeometry(QRect(item.geometry().x(),
-                        item.geometry().y(), item.sizeHint().width(),
+                        item.geometry().y(), item.sH..().width(),
                         centerHeight))
 
                 eastWidth +_ item.geometry().width() + spacing()
@@ -156,7 +156,7 @@ c_ BorderLayout(QLayout):
             center.item.setGeometry(QRect(westWidth, northHeight,
                     rect.width() - eastWidth - westWidth, centerHeight))
 
-    ___ sizeHint
+    ___ sH..
         r_ calculateSize(SizeHint)
 
     ___ takeAt  index):
@@ -170,16 +170,16 @@ c_ BorderLayout(QLayout):
         list.ap..(ItemWrapper(item, position))
 
     ___ calculateSize  sizeType):
-        totalSize _ QSize()
+        totalSize _ ?S..()
 
         ___ wrapper __ list:
             position _ wrapper.position
-            itemSize _ QSize()
+            itemSize _ ?S..()
 
             __ sizeType == MinimumSize:
                 itemSize _ wrapper.item.minimumSize()
             ____ # sizeType == self.SizeHint
-                itemSize _ wrapper.item.sizeHint()
+                itemSize _ wrapper.item.sH..()
 
             __ position __ (North, South, Center):
                 totalSize.setHeight(totalSize.height() + itemSize.height())
@@ -190,7 +190,7 @@ c_ BorderLayout(QLayout):
         r_ totalSize
 
 
-c_ Window(QWidget):
+c_ Window(?W..):
     ___  -
         super(Window, self). - ()
 

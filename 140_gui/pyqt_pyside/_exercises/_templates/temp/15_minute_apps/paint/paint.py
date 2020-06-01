@@ -669,8 +669,8 @@ class Canvas(QLabel):
 
 class MainWindow(QMainWindow, Ui_MainWindow):
 
-    def  - (self, *args, **kwargs):
-        super(MainWindow, self). - (*args, **kwargs)
+    def  - (self, $ $$
+        super(MainWindow, self). - ($ $$)
         setupUi
 
         # Replace canvas placeholder from QtDesigner.
@@ -689,12 +689,12 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         ___ mode __ MODES:
             btn = getattr(self, '%sButton' % mode)
-            btn.pressed.connect(lambda mode=mode: canvas.set_mode(mode))
+            btn.pressed.connect(l___ mode=mode: canvas.set_mode(mode))
             mode_group.addButton(btn)
 
         # Setup the color selection buttons.
-        primaryButton.pressed.connect(lambda: choose_color(set_primary_color))
-        secondaryButton.pressed.connect(lambda: choose_color(set_secondary_color))
+        primaryButton.pressed.connect(l___: choose_color(set_primary_color))
+        secondaryButton.pressed.connect(l___: choose_color(set_secondary_color))
 
         # Initialize button colours.
         ___ n, hex __ en..(COLORS, 1):
@@ -745,23 +745,23 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         # Setup the drawing toolbar.
         fontselect = QFontComboBox()
         fontToolbar.addWidget(fontselect)
-        fontselect.currentFontChanged.connect(lambda f: canvas.set_config('font', f))
+        fontselect.currentFontChanged.connect(l___ f: canvas.set_config('font', f))
         fontselect.setCurrentFont(QFont('Times'))
 
-        fontsize = QComboBox()
+        fontsize = ?CB()
         fontsize.aI..([str(s) ___ s __ FONT_SIZES])
-        fontsize.currentTextChanged.connect(lambda f: canvas.set_config('fontsize', int(f)))
+        fontsize.currentTextChanged.connect(l___ f: canvas.set_config('fontsize', int(f)))
 
         # Connect to the signal producing the text of the current selection. Convert the string to float
         # and set as the pointsize. We could also use the index + retrieve from FONT_SIZES.
         fontToolbar.addWidget(fontsize)
 
         fontToolbar.addAction(actionBold)
-        actionBold.triggered.connect(lambda s: canvas.set_config('bold', s))
+        actionBold.triggered.connect(l___ s: canvas.set_config('bold', s))
         fontToolbar.addAction(actionItalic)
-        actionItalic.triggered.connect(lambda s: canvas.set_config('italic', s))
+        actionItalic.triggered.connect(l___ s: canvas.set_config('italic', s))
         fontToolbar.addAction(actionUnderline)
-        actionUnderline.triggered.connect(lambda s: canvas.set_config('underline', s))
+        actionUnderline.triggered.connect(l___ s: canvas.set_config('underline', s))
 
         sizeicon = QLabel()
         sizeicon.setPixmap(QPixmap(os.path.join('images', 'border-weight.png')))
@@ -769,10 +769,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         sizeselect = QSlider()
         sizeselect.setRange(1,20)
         sizeselect.setOrientation(Qt.Horizontal)
-        sizeselect.valueChanged.connect(lambda s: canvas.set_config('size', s))
+        sizeselect.valueChanged.connect(l___ s: canvas.set_config('size', s))
         drawingToolbar.addWidget(sizeselect)
 
-        actionFillShapes.triggered.connect(lambda s: canvas.set_config('fill', s))
+        actionFillShapes.triggered.connect(l___ s: canvas.set_config('fill', s))
         drawingToolbar.addAction(actionFillShapes)
         actionFillShapes.setChecked(True)
 

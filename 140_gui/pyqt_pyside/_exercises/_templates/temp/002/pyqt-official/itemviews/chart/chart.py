@@ -45,7 +45,7 @@
 ______ math
 
 ____ ?.?C.. ______ (QByteArray, QFile, QItemSelection,
-        QItemSelectionModel, QModelIndex, QPoint, QRect, QSize, __,
+        QItemSelectionModel, QModelIndex, QPoint, QRect, ?S.., __,
         QTextStream)
 ____ ?.?G.. ______ (QBrush, ?C.., QFontMetrics, QPainter, QPainterPath,
         ?P.., QPen, QRegion, QStandardItemModel)
@@ -227,7 +227,7 @@ c_ PieView(QAbstractItemView):
         origin _ event.pos()
         __ no. rubberBand:
             rubberBand _ QRubberBand(QRubberBand.Rectangle, self)
-        rubberBand.setGeometry(QRect(origin, QSize()))
+        rubberBand.setGeometry(QRect(origin, ?S..()))
         rubberBand.s..
 
     ___ mouseMoveEvent  event):
@@ -534,7 +534,7 @@ c_ MainWindow ?MW..
                 w__ line:
                     model.insertRows(row, 1, QModelIndex())
 
-                    pieces _ line.split(',')
+                    pieces _ line.sp..(',')
                     model.setData(model.index(row, 0, QModelIndex()),
                                 pieces[0])
                     model.setData(model.index(row, 1, QModelIndex()),

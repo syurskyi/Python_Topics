@@ -280,9 +280,9 @@ c_ ItemCircleAnimation(DemoItem):
 
     ___ useGuideTt
         __ currGuide __ no. qtGuide2:
-            split _ int(letterCount * 5.0 / 7.0)
-            useGuide(qtGuide2, 0, split)
-            useGuide(qtGuide3, split, letterCount)
+            sp.. _ int(letterCount * 5.0 / 7.0)
+            useGuide(qtGuide2, 0, sp..)
+            useGuide(qtGuide3, sp.., letterCount)
             currGuide _ qtGuide2
 
     ___ boundingRect

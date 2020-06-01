@@ -25,7 +25,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 ______ math
 
-____ ?.?C.. ______ pyqtProperty, pyqtSignal, pyqtSlot, QPoint, QSize, __
+____ ?.?C.. ______ pyqtProperty, pyqtSignal, pyqtSlot, QPoint, ?S.., __
 ____ ?.?G.. ______ ?C..
 ____ ?.?W.. ______ ?A.., QOpenGLWidget
 
@@ -115,10 +115,10 @@ c_ HelloGLWidget(QOpenGLWidget):
     zRotation _ pyqtProperty(int, getZRotation, setZRotation)
 
     ___ minimumSizeHint
-        r_ QSize(50, 50)
+        r_ ?S..(50, 50)
 
-    ___ sizeHint
-        r_ QSize(200, 200)
+    ___ sH..
+        r_ ?S..(200, 200)
 
     ___ initializeGL
         gl _ context().versionFunctions()

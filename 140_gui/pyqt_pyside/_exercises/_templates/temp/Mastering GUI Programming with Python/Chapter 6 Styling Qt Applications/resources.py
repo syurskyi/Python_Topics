@@ -22069,7 +22069,7 @@ qt_resource_struct_v2 _ b"\
 \x00\x00\x01\x68\x5d\x2e\x08\x4e\
 "
 
-qt_version _ [int(v) ___ v __ ?C...qVersion().split('.')]
+qt_version _ [int(v) ___ v __ ?C...qVersion().sp..('.')]
 __ qt_version < [5, 8, 0]:
     rcc_version _ 1
     qt_resource_struct _ qt_resource_struct_v1

@@ -47,7 +47,7 @@ ____ ?.?C.. ______ (pyqtSignal, QBuffer, QByteArray, QFile, QIODevice,
         QMimeData, __)
 ____ ?.?G.. ______ QDrag, QIcon, QImage, QPainter, QPixmap
 ____ ?.?W.. ______ (?A.., QGridLayout, QLabel, ?PB..,
-        QScrollArea, QWidget)
+        QScrollArea, ?W..)
 ____ ?.QtSvg ______ QSvgWidget
 
 ______ delayedencoding_rc
@@ -69,7 +69,7 @@ c_ MimeData(QMimeData):
         r_ QMimeData.retrieveData  mimeType, qvtype)
 
 
-c_ SourceWidget(QWidget):
+c_ SourceWidget(?W..):
     ___  -   parent_None):
         super(SourceWidget, self). - (parent)
 

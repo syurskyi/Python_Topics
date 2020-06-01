@@ -10,16 +10,16 @@ ____
     ____ PySide2.?C.. ______ Signal
 
 
-c_ Gradient(?W...QWidget):
+c_ Gradient(?W...?W..):
 
     gradientChanged _ Signal()
 
-    ___  -   gradient_None, *args, **kwargs):
-        s_. - (*args, **kwargs)
+    ___  -   gradient_None, $ $$
+        s_. - ($ $$)
 
         sSP..(
-            ?W...QSizePolicy.MinimumExpanding,
-            ?W...QSizePolicy.MinimumExpanding
+            ?W...QSizePolicy.ME..,
+            ?W...QSizePolicy.ME..
         )
 
         __ gradient:
@@ -75,8 +75,8 @@ c_ Gradient(?W...QWidget):
 
         painter.end()
 
-    ___ sizeHint
-        r_ ?C...QSize(200, 50)
+    ___ sH..
+        r_ ?C...?S..(200, 50)
 
     ___ _sort_gradient
         _gradient _ sorted(_gradient, key_lambda g:g[0])

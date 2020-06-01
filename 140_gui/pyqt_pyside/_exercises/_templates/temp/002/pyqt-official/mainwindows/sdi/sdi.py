@@ -42,11 +42,11 @@
 #############################################################################
 
 
-____ ?.?C.. ______ (QFile, QFileInfo, QPoint, QSettings, QSize, __,
+____ ?.?C.. ______ (QFile, QFileInfo, QPoint, QSettings, ?S.., __,
         QTextStream)
 ____ ?.?G.. ______ QIcon, ?KS..
 ____ ?.?W.. ______ (?A.., ?A.., ?FD.., QMainWindow,
-        ?MB.., QTextEdit)
+        ?MB.., ?TE..)
 
 ______ sdi_rc
 
@@ -124,7 +124,7 @@ c_ MainWindow ?MW..
     ___ init
         setAttribute(__.WA_DeleteOnClose)
         isUntitled _ True
-        textEdit _ QTextEdit()
+        textEdit _ ?TE..()
         sCW..(textEdit)
 
         createActions()
@@ -225,7 +225,7 @@ c_ MainWindow ?MW..
     ___ readSettings
         settings _ QSettings('Trolltech', 'SDI Example')
         pos _ settings.value('pos', QPoint(200, 200))
-        size _ settings.value('size', QSize(400, 400))
+        size _ settings.value('size', ?S..(400, 400))
         move(pos)
         r..(size)
 

@@ -43,7 +43,7 @@
 ______ ___
 
 ____ ?.?G.. ______ ?C.., QFont
-____ ?.?W.. ______ ?MB.., QWidget
+____ ?.?W.. ______ ?MB.., ?W..
 
 
 c_ Colors(object):
@@ -169,11 +169,11 @@ c_ Colors(object):
         ___ s __ argv:
             __ s == "-no-ticker":
                 cls.noTicker _ True
-            ____ s.startswith("-ticker"):
+            ____ s.s_w_("-ticker"):
                 cls.noTicker _  no. bool(parseFloat(s, "-ticker"))
             ____ s == "-no-animations":
                 cls.noAnimations _ True
-            ____ s.startswith("-animations"):
+            ____ s.s_w_("-animations"):
                 cls.noAnimations _ no. bool(parseFloat(s, "-animations"))
             ____ s == "-no-adapt":
                 # Don't adapt the animations based on the actual performance.
@@ -194,11 +194,11 @@ c_ Colors(object):
                 cls.noBlending _ True
             ____ s == "-no-sync":
                 cls.noScreenSync _ True
-            ____ s.startswith("-menu"):
+            ____ s.s_w_("-menu"):
                 cls.menuCount _ int(parseFloat(s, "-menu"))
-            ____ s.startswith("-use-timer-update"):
+            ____ s.s_w_("-use-timer-update"):
                 cls.noTimerUpdate _ no. bool(parseFloat(s, "-use-timer-update"))
-            ____ s.startswith("-pause"):
+            ____ s.s_w_("-pause"):
                 cls.pause _ bool(parseFloat(s, "-pause"))
             ____ s == "-no-ticker-morph":
                 cls.noTickerMorph _ True
@@ -208,23 +208,23 @@ c_ Colors(object):
                 cls.useLoop _ True
             ____ s == "-use-8bit":
                 cls.useEightBitPalette _ True
-            ____ s.startswith("-8bit"):
+            ____ s.s_w_("-8bit"):
                 cls.useEightBitPalette _ bool(parseFloat(s, "-8bit"))
             ____ s == "-use-balls":
                 cls.useButtonBalls _ True
-            ____ s.startswith("-ticker-letters"):
+            ____ s.s_w_("-ticker-letters"):
                 cls.tickerLetterCount _ int(parseFloat(s, "-ticker-letters"))
-            ____ s.startswith("-ticker-text"):
+            ____ s.s_w_("-ticker-text"):
                 cls.tickerText _ parseText(s, "-ticker-text")
-            ____ s.startswith("-ticker-speed"):
+            ____ s.s_w_("-ticker-speed"):
                 cls.tickerMoveSpeed _ parseFloat(s, "-ticker-speed")
-            ____ s.startswith("-ticker-morph-speed"):
+            ____ s.s_w_("-ticker-morph-speed"):
                 cls.tickerMorphSpeed _ parseFloat(s, "-ticker-morph-speed")
-            ____ s.startswith("-animation-speed"):
+            ____ s.s_w_("-animation-speed"):
                 cls.animSpeed _ parseFloat(s, "-animation-speed")
-            ____ s.startswith("-fps"):
+            ____ s.s_w_("-fps"):
                 cls.fps _ int(parseFloat(s, "-fps"))
-            ____ s.startswith("-h") or s.startswith("-help"):
+            ____ s.s_w_("-h") or s.s_w_("-help"):
                 ?MB...warning(N.., "Arguments",
                         "Usage: qtdemo.py [-verbose] [-no-adapt] "
                         "[-fullscreen] [-ticker[0|1]] "
@@ -261,9 +261,9 @@ c_ Colors(object):
 
 
 ___ parseFloat(argument, name):
-    try:
+    ___
         value _ float(parseText(argument, name))
-    except ValueError:
+    _____ ValueError:
         value _ 0.0
 
     r_ value

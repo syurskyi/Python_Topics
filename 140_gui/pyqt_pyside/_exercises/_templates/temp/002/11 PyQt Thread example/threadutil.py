@@ -12,11 +12,11 @@ c_ CurrentThread(QObject):
         _on_execute.emit(f, args, kwargs)
 
     ___ _execute_in_thread  f, args, kwargs):
-        f(*args, **kwargs)
+        f($ $$)
 
 main_thread _ CurrentThread()
 
 ___ run_in_main_thread(f):
-    ___ result(*args, **kwargs):
+    ___ result($ $$
         main_thread.execute(f, args, kwargs)
     r_ result

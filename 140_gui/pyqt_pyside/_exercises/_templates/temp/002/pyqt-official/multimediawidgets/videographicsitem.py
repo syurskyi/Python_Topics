@@ -42,16 +42,16 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QDir, QSize, QSizeF, __, QUrl
+____ ?.?C.. ______ QDir, ?S.., QSizeF, __, QUrl
 ____ ?.?G.. ______ QTransform
 ____ ?.QtMultimedia ______ QMediaContent, QMediaPlayer
 ____ ?.QtMultimediaWidgets ______ QGraphicsVideoItem
 ____ ?.?W.. ______ (?A.., ?FD.., QGraphicsScene,
         QGraphicsView, QHBoxLayout, ?PB.., QSlider, QStyle, QVBoxLayout,
-        QWidget)
+        ?W..)
 
 
-c_ VideoPlayer(QWidget):
+c_ VideoPlayer(?W..):
 
     ___  -   parent_None):
         super(VideoPlayer, self). - (parent)
@@ -64,7 +64,7 @@ c_ VideoPlayer(QWidget):
         scene _ QGraphicsScene
         graphicsView _ QGraphicsView(scene)
 
-        scene.addItem(videoItem)
+        scene.aI..(videoItem)
 
         rotateSlider _ QSlider(__.Horizontal)
         rotateSlider.setRange(-180,  180)
@@ -101,8 +101,8 @@ c_ VideoPlayer(QWidget):
         mediaPlayer.positionChanged.c..(positionChanged)
         mediaPlayer.durationChanged.c..(durationChanged)
 
-    ___ sizeHint
-        r_ QSize(800, 600)
+    ___ sH..
+        r_ ?S..(800, 600)
 
     ___ openFile
         fileName, _ _ ?FD...gOFN..  "Open Movie",

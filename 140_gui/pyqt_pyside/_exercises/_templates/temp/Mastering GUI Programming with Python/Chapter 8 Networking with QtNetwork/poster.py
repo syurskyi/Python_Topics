@@ -67,7 +67,7 @@ c_ MainWindow(qtw.QMainWindow):
         """
         s_. - ()
         # Main UI code goes here
-        widget _ qtw.QWidget(minimumWidth_600)
+        widget _ qtw.?W..(minimumWidth_600)
         sCW..(widget)
         widget.sL.. ?.?VBL..
         url _ qtw.?LE..

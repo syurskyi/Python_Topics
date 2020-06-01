@@ -206,7 +206,7 @@ __ ______ __ ______
         mouse _ Mouse()
         mouse.setPos(math.sin((i * 6.28) / MouseCount) * 200,
                      math.cos((i * 6.28) / MouseCount) * 200)
-        scene.addItem(mouse)
+        scene.aI..(mouse)
 
     view _ QGraphicsView(scene)
     view.setRenderHint(QPainter.Antialiasing)

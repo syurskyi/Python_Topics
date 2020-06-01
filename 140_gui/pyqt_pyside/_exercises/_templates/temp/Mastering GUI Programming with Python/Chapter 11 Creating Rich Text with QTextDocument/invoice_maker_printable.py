@@ -17,10 +17,10 @@ c_ InvoiceForm ?.?W..
         inputs['Customer Address'] _ qtw.?PTE..
         inputs['Invoice Date'] _ qtw.QDateEdit(
             date_qtc.QDate.currentDate(), calendarPopup_True)
-        inputs['Days until Due'] _ qtw.QSpinBox(
+        inputs['Days until Due'] _ qtw.SB..(
             minimum_0, maximum_60, value_30)
         ___ label, widget __ inputs.items
-            layout().addRow(label, widget)
+            layout().aR..(label, widget)
 
         line_items _ qtw.QTableWidget(
             rowCount_10, columnCount_3)
@@ -28,14 +28,14 @@ c_ InvoiceForm ?.?W..
             ['Job', 'Rate', 'Hours'])
         line_items.horizontalHeader().setSectionResizeMode(
             qtw.QHeaderView.Stretch)
-        layout().addRow(line_items)
+        layout().aR..(line_items)
         ___ row __ range(line_items.rowCount()):
             ___ col __ range(line_items.columnCount()):
                 __ col > 0:
-                    w _ qtw.QSpinBox(minimum_0, maximum_300)
+                    w _ qtw.SB..(minimum_0, maximum_300)
                     line_items.setCellWidget(row, col, w)
         submit _ qtw.?PB..('Create Invoice', c___self.on_submit)
-        layout().addRow(submit)
+        layout().aR..(submit)
 
         on_submit()
 
@@ -57,13 +57,13 @@ c_ InvoiceForm ?.?W..
             hours _ line_items.cellWidget(row, 2).value()
             total _ rate * hours
             row_data _ [job, rate, hours, total]
-            __ any(row_data):
+            __ an.(row_data):
                 data['line_items'].ap..(row_data)
         data['total_due'] _ sum(x[3] ___ x __ data['line_items'])
         submitted.emit(data)
 
 
-c_ InvoiceView(qtw.QTextEdit):
+c_ InvoiceView(qtw.?TE..):
 
     dpi _ 72
     doc_width _ 8.5 * dpi
@@ -71,13 +71,13 @@ c_ InvoiceView(qtw.QTextEdit):
 
     ___  -
         s_. - (readOnly_True)
-        setFixedSize(qtc.QSize(doc_width, doc_height))
+        sFS..(qtc.?S..(doc_width, doc_height))
 
 
     ___ set_page_size  qrect):
         doc_width _ qrect.width()
         doc_height _ qrect.height()
-        setFixedSize(qtc.QSize(doc_width, doc_height))
+        sFS..(qtc.?S..(doc_width, doc_height))
         document().setPageSize(
             qtc.QSizeF(doc_width, doc_height))
 
@@ -216,7 +216,7 @@ c_ MainWindow(qtw.QMainWindow):
         s_. - ()
         # Main UI code goes here
         main _ qtw.?W..
-        main.sL..(qtw.QHBoxLayout())
+        main.sL..(qtw.?HBL..
         sCW..(main)
 
         form _ InvoiceForm()

@@ -47,8 +47,8 @@ ____ ?.?G.. ______ (QFont, QTextCharFormat, QTextCursor, QTextFrameFormat,
         QTextLength, QTextTableFormat)
 ____ ?.?W.. ______ (?A.., QCheckBox, QDialog,
         QDialogButtonBox, QGridLayout, QLabel, QLineEdit, QMainWindow,
-        ?MB.., QMenu, QTableWidget, QTableWidgetItem, QTabWidget,
-        QTextEdit)
+        ?MB.., QMenu, QTableWidget, QTableWidgetItem, ?TW..,
+        ?TE..)
 ____ ?.QtPrintSupport ______ QAbstractPrintDialog, QPrintDialog, QPrinter
 
 
@@ -66,7 +66,7 @@ c_ MainWindow ?MW..
         quitAction.sS..("Ctrl+Q")
         mB.. .aM..(fileMenu)
 
-        letters _ QTabWidget()
+        letters _ ?TW..()
 
         newAction.t__.c..(openDialog)
         quitAction.t__.c..(close)
@@ -75,8 +75,8 @@ c_ MainWindow ?MW..
         sWT..("Order Form")
 
     ___ createLetter  name, address, orderItems, sendOffers):
-        editor _ QTextEdit()
-        tabIndex _ letters.addTab(editor, name)
+        editor _ ?TE..()
+        tabIndex _ letters.aT..(editor, name)
         letters.setCurrentIndex(tabIndex)
 
         cursor _ editor.textCursor()
@@ -108,7 +108,7 @@ c_ MainWindow ?MW..
         cursor.setPosition(topFrame.lastPosition())
 
         cursor.insertText(name, textFormat)
-        ___ line __ address.split("\n"):
+        ___ line __ address.sp..("\n"):
             cursor.insertBlock()
             cursor.insertText(line)
 
@@ -225,7 +225,7 @@ c_ DetailsDialog(QDialog):
         addressLabel.setAlignment(__.AlignLeft | __.AlignTop)
 
         nameEdit _ ?LE..
-        addressEdit _ QTextEdit()
+        addressEdit _ ?TE..()
         offersCheckBox _ QCheckBox(
                 "Send information about products and special offers:")
 

@@ -47,7 +47,7 @@ ____ ?.?C.. ______ (QPointF, QPropertyAnimation, QRect, QRectF,
 ____ ?.?G.. ______ QPixmap
 ____ ?.?W.. ______ (?A.., QGraphicsLinearLayout,
         QGraphicsObject, QGraphicsProxyWidget, QGraphicsScene, QGraphicsView,
-        QGraphicsWidget, QGroupBox, ?PB.., QRadioButton, QTextEdit,
+        QGraphicsWidget, QGroupBox, ?PB.., QRadioButton, ?TE..,
         QVBoxLayout)
 
 ______ states_rc
@@ -73,7 +73,7 @@ __ ______ __ ______
     app _ ?A..(___.a..
 
     # Text edit and button.
-    edit _ QTextEdit()
+    edit _ ?TE..()
     edit.sT..("asdf lkjha yuoiqwe asd iuaysd u iasyd uiy "
                  "asdf lkjha yuoiqwe asd iuaysd u iasyd uiy "
                  "asdf lkjha yuoiqwe asd iuaysd u iasyd uiy "
@@ -102,8 +102,8 @@ __ ______ __ ______
     # Parent widget.
     widget _ QGraphicsWidget()
     layout _ QGraphicsLinearLayout(__.Vertical, widget)
-    layout.addItem(editProxy)
-    layout.addItem(buttonProxy)
+    layout.aI..(editProxy)
+    layout.aI..(buttonProxy)
     widget.sL..(layout)
 
     p1 _ Pixmap(QPixmap(':/digikam.png'))
@@ -115,14 +115,14 @@ __ ______ __ ______
 
     scene _ QGraphicsScene(0, 0, 400, 300)
     scene.setBackgroundBrush(scene.palette().window())
-    scene.addItem(widget)
-    scene.addItem(boxProxy)
-    scene.addItem(p1)
-    scene.addItem(p2)
-    scene.addItem(p3)
-    scene.addItem(p4)
-    scene.addItem(p5)
-    scene.addItem(p6)
+    scene.aI..(widget)
+    scene.aI..(boxProxy)
+    scene.aI..(p1)
+    scene.aI..(p2)
+    scene.aI..(p3)
+    scene.aI..(p4)
+    scene.aI..(p5)
+    scene.aI..(p6)
 
     machine _ QStateMachine()
     state1 _ QState(machine)

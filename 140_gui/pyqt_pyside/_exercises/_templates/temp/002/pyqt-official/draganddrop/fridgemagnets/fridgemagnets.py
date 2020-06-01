@@ -46,7 +46,7 @@ ____ ?.?C.. ______ (QByteArray, QDataStream, QFile, QIODevice, QMimeData,
         QPoint, QRect, QRectF, __, QTextStream)
 ____ ?.?G.. ______ (QDrag, QFont, QFontMetrics, QImage, QPainter,
         ?P.., QPixmap, qRgba)
-____ ?.?W.. ______ ?A.., QLabel, QWidget
+____ ?.?W.. ______ ?A.., QLabel, ?W..
 
 ______ fridgemagnets_rc
 
@@ -103,7 +103,7 @@ c_ DragLabel(QLabel):
             s..
 
 
-c_ DragWidget(QWidget):
+c_ DragWidget(?W..):
     ___  -   parent_None):
         super(DragWidget, self). - (parent)
 
@@ -113,7 +113,7 @@ c_ DragWidget(QWidget):
         x _ 5
         y _ 5
 
-        ___ word __ QTextStream(dictionaryFile).readAll().split
+        ___ word __ QTextStream(dictionaryFile).readAll().sp..
             wordLabel _ DragLabel(word, self)
             wordLabel.move(x, y)
             wordLabel.s..
@@ -126,7 +126,7 @@ c_ DragWidget(QWidget):
         newPalette.sC..(?P...Window, __.white)
         sP..(newPalette)
 
-        setMinimumSize(400, max(200, y))
+        sMS..(400, max(200, y))
         sWT..("Fridge Magnets")
         setAcceptDrops(True)
 
@@ -154,10 +154,10 @@ c_ DragWidget(QWidget):
             offset _ QPoint()
             dataStream >> t__ >> offset
 
-            try:
+            ___
                 # Python v3.
                 t__ _ str(t__, encoding_'latin1')
-            except TypeError:
+            _____ TypeError:
                 # Python v2.
                 t__ _ str(t__)
 
@@ -171,7 +171,7 @@ c_ DragWidget(QWidget):
             ____
                 event.acceptProposedAction()
         ____ event.mimeData().hasText
-            pieces _ event.mimeData().t__().split()
+            pieces _ event.mimeData().t__().sp..()
             position _ event.pos()
 
             ___ piece __ pieces:

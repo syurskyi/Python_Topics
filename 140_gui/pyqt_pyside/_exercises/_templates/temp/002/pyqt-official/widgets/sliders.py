@@ -43,9 +43,9 @@
 
 
 ____ ?.?C.. ______ pyqtSignal, __
-____ ?.?W.. ______ (?A.., QBoxLayout, QCheckBox, QComboBox,
+____ ?.?W.. ______ (?A.., QBoxLayout, QCheckBox, ?CB,
         QDial, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QScrollBar,
-        QSlider, QSpinBox, QStackedWidget, QWidget)
+        QSlider, SB.., QStackedWidget, ?W..)
 
 
 c_ SlidersGroup(QGroupBox):
@@ -107,7 +107,7 @@ c_ SlidersGroup(QGroupBox):
         dial.setInvertedControls(invert)
 
 
-c_ Window(QWidget):
+c_ Window(?W..):
     ___  -
         super(Window, self). - ()
 
@@ -146,21 +146,21 @@ c_ Window(QWidget):
         invertedAppearance _ QCheckBox("Inverted appearance")
         invertedKeyBindings _ QCheckBox("Inverted key bindings")
 
-        minimumSpinBox _ QSpinBox()
+        minimumSpinBox _ SB..()
         minimumSpinBox.setRange(-100, 100)
         minimumSpinBox.setSingleStep(1)
 
-        maximumSpinBox _ QSpinBox()
+        maximumSpinBox _ SB..()
         maximumSpinBox.setRange(-100, 100)
         maximumSpinBox.setSingleStep(1)
 
-        valueSpinBox _ QSpinBox()
+        valueSpinBox _ SB..()
         valueSpinBox.setRange(-100, 100)
         valueSpinBox.setSingleStep(1)
 
-        orientationCombo _ QComboBox()
-        orientationCombo.addItem("Horizontal slider-like widgets")
-        orientationCombo.addItem("Vertical slider-like widgets")
+        orientationCombo _ ?CB()
+        orientationCombo.aI..("Horizontal slider-like widgets")
+        orientationCombo.aI..("Vertical slider-like widgets")
 
         orientationCombo.activated.c..(stackedWidget.setCurrentIndex)
         minimumSpinBox.valueChanged.c..(horizontalSliders.setMinimum)

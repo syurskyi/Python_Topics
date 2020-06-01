@@ -60,7 +60,7 @@ c_ SearchForm ?.?W..
         rP__.c..(results.clear)
 
     ___ addResult  result):
-        results.addItem(result)
+        results.aI..(result)
 
 
 

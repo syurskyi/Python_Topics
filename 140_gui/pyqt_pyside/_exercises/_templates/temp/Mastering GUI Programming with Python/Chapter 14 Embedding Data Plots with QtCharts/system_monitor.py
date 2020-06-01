@@ -29,7 +29,7 @@ c_ DiskUsageChartView(qtch.QChartView):
         # Get the data
         partitions _   # list
         ___ part __ psutil.disk_partitions
-            __ 'rw' __ part.opts.split(','):
+            __ 'rw' __ part.opts.sp..(','):
                 partitions.ap..(part.device)
                 usage _ psutil.disk_usage(part.mountpoint).percent
                 bar_set.ap..(usage)
@@ -99,10 +99,10 @@ c_ CPUUsageView(qtch.QChartView):
 
     ___ keyPressEvent  event):
         keymap _ {
-            qtc.__.Key_Up: lambda: chart().scroll(0, -10),
-            qtc.__.Key_Down: lambda: chart().scroll(0, 10),
-            qtc.__.Key_Right: lambda: chart().scroll(-10, 0),
-            qtc.__.Key_Left: lambda: chart().scroll(10, 0),
+            qtc.__.Key_Up: l___: chart().scroll(0, -10),
+            qtc.__.Key_Down: l___: chart().scroll(0, 10),
+            qtc.__.Key_Right: l___: chart().scroll(-10, 0),
+            qtc.__.Key_Left: l___: chart().scroll(10, 0),
             qtc.__.Key_Greater: chart().zoomIn,
             qtc.__.Key_Less: chart().zoomOut,
         }
@@ -244,7 +244,7 @@ c_ MainWindow(qtw.QMainWindow):
         """
         s_. - ()
         # Main UI code goes here
-        tabs _ qtw.QTabWidget()
+        tabs _ qtw.?TW..()
         sCW..(tabs)
 
         #########################################
@@ -252,20 +252,20 @@ c_ MainWindow(qtw.QMainWindow):
         #########################################
 
         disk_usage_view _ DiskUsageChartView()
-        tabs.addTab(disk_usage_view, "Disk Usage")
+        tabs.aT..(disk_usage_view, "Disk Usage")
 
         #############################
         # CPU usage as a line chart #
         #############################
 
         cpu_view _ CPUUsageView()
-        tabs.addTab(cpu_view, "CPU Usage")
+        tabs.aT..(cpu_view, "CPU Usage")
 
         #####################################
         # CPU Time Percent as a stacked bar #
         #####################################
         cpu_time_view _ MemoryChartView()
-        tabs.addTab(cpu_time_view, "Memory Usage")
+        tabs.aT..(cpu_time_view, "Memory Usage")
 
         # End main UI code
         s..

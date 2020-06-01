@@ -45,12 +45,12 @@
 
 ____ ?.?C.. ______ pyqtProperty, __, QVariant
 ____ ?.?G.. ______ ?C..
-____ ?.?W.. ______ (?A.., QComboBox, QGridLayout,
+____ ?.?W.. ______ (?A.., ?CB, QGridLayout,
         QItemEditorCreatorBase, QItemEditorFactory, QTableWidget,
-        QTableWidgetItem, QWidget)
+        QTableWidgetItem, ?W..)
 
 
-c_ ColorListEditor(QComboBox):
+c_ ColorListEditor(?CB):
     ___  -   widget_None):
         super(ColorListEditor, self). - (widget)
 
@@ -68,7 +68,7 @@ c_ ColorListEditor(QComboBox):
     ___ populateList
         ___ i, colorName __ en..(?C...colorNames()):
             color _ ?C..(colorName)
-            insertItem(i, colorName)
+            iI..(i, colorName)
             setItemData(i, color, __.DecorationRole)
 
 
@@ -77,7 +77,7 @@ c_ ColorListItemEditorCreator(QItemEditorCreatorBase):
         r_ ColorListEditor(parent)
 
 
-c_ Window(QWidget):
+c_ Window(?W..):
     ___  -   parent_None):
         super(Window, self). - (parent)
 

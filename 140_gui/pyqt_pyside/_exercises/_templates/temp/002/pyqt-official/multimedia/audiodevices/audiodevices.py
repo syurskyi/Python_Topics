@@ -136,7 +136,7 @@ c_ AudioTest(AudioDevicesBase):
 
         deviceBox.clear()
         ___ deviceInfo __ QAudioDeviceInfo.availableDevices(mode):
-            deviceBox.addItem(deviceInfo.deviceName(), deviceInfo)
+            deviceBox.aI..(deviceInfo.deviceName(), deviceInfo)
 
         deviceBox.setCurrentIndex(0)
         deviceChanged(0)
@@ -168,7 +168,7 @@ c_ AudioTest(AudioDevicesBase):
             settings.setCodec(codecs[0])
 
         # Create a failed condition.
-        codecsBox.addItem("audio/test")
+        codecsBox.aI..("audio/test")
 
         sampleSizesBox.clear()
         sampleSizez _ deviceInfo.supportedSampleSizes()

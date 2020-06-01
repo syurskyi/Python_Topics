@@ -45,10 +45,10 @@
 ______ ___
 
 ____ ?.?C.. ______ (QByteArray, QDate, QDateTime, QEvent, QPoint, QRect,
-        QRegExp, QSettings, QSize, __, QTime, QTimer)
+        QRegExp, QSettings, ?S.., __, QTime, QTimer)
 ____ ?.?G.. ______ ?C.., QIcon, QRegExpValidator, ?V..
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., ?A..,
-        QComboBox, QDialog, QDialogButtonBox, ?FD.., QGridLayout,
+        ?CB, QDialog, QDialogButtonBox, ?FD.., QGridLayout,
         QGroupBox, QHeaderView, QInputDialog, QItemDelegate, QLabel, QLineEdit,
         QMainWindow, ?MB.., QStyle, QStyleOptionViewItem, QTableWidget,
         QTableWidgetItem, QTreeWidget, QTreeWidgetItem, QVBoxLayout)
@@ -184,7 +184,7 @@ c_ MainWindow ?MW..
 
         niceName _ settings.fileName()
         niceName.replace('\\', '/')
-        niceName _ niceName.split('/')[-1]
+        niceName _ niceName.sp..('/')[-1]
 
         __ no. settings.isWritable
             niceName +_ " (read only)"
@@ -196,24 +196,24 @@ c_ LocationDialog(QDialog):
     ___  -   parent_None):
         super(LocationDialog, self). - (parent)
 
-        formatComboBox _ QComboBox()
-        formatComboBox.addItem("Native")
-        formatComboBox.addItem("INI")
+        formatComboBox _ ?CB()
+        formatComboBox.aI..("Native")
+        formatComboBox.aI..("INI")
 
-        scopeComboBox _ QComboBox()
-        scopeComboBox.addItem("User")
-        scopeComboBox.addItem("System")
+        scopeComboBox _ ?CB()
+        scopeComboBox.aI..("User")
+        scopeComboBox.aI..("System")
 
-        organizationComboBox _ QComboBox()
-        organizationComboBox.addItem("Trolltech")
+        organizationComboBox _ ?CB()
+        organizationComboBox.aI..("Trolltech")
         organizationComboBox.setEditable(True)
 
-        applicationComboBox _ QComboBox()
-        applicationComboBox.addItem("Any")
-        applicationComboBox.addItem("Application Example")
-        applicationComboBox.addItem("Assistant")
-        applicationComboBox.addItem("Designer")
-        applicationComboBox.addItem("Linguist")
+        applicationComboBox _ ?CB()
+        applicationComboBox.aI..("Any")
+        applicationComboBox.aI..("Application Example")
+        applicationComboBox.aI..("Assistant")
+        applicationComboBox.aI..("Designer")
+        applicationComboBox.aI..("Linguist")
         applicationComboBox.setEditable(True)
         applicationComboBox.setCurrentIndex(3)
 
@@ -383,8 +383,8 @@ c_ SettingsTree(QTreeWidget):
         ____
             refreshTimer.stop()
 
-    ___ sizeHint
-        r_ QSize(800, 600)
+    ___ sH..
+        r_ ?S..(800, 600)
 
     ___ setAutoRefresh  autoRefresh):
         autoRefresh _ autoRefresh
@@ -410,9 +410,9 @@ c_ SettingsTree(QTreeWidget):
             r_
 
         # The signal might not be connected.
-        try:
+        ___
             itemChanged.disconnect(updateSetting)
-        except:
+        _____:
             pass
 
         settings.sync()
@@ -618,7 +618,7 @@ c_ VariantDelegate(QItemDelegate):
             regExp _ pointExp
         ____ isinstance(originalValue, QRect):
             regExp _ rectExp
-        ____ isinstance(originalValue, QSize):
+        ____ isinstance(originalValue, ?S..):
             regExp _ sizeExp
         ____
             regExp _ QRegExp()
@@ -675,12 +675,12 @@ c_ VariantDelegate(QItemDelegate):
                           int(rectExp.cap(2)),
                           int(rectExp.cap(3)),
                           int(rectExp.cap(4)))
-        ____ isinstance(originalValue, QSize):
+        ____ isinstance(originalValue, ?S..):
             sizeExp.exactMatch(t__)
-            value _ QSize(int(sizeExp.cap(1)),
+            value _ ?S..(int(sizeExp.cap(1)),
                           int(sizeExp.cap(2)))
         ____ isinstance(originalValue, list):
-            value _ t__.split(',')
+            value _ t__.sp..(',')
         ____
             value _ type(originalValue)(t__)
 
@@ -690,7 +690,7 @@ c_ VariantDelegate(QItemDelegate):
     @staticmethod
     ___ isSupportedType(value):
         r_ isinstance(value, (bool, float, int, QByteArray, str, ?C..,
-                QDate, QDateTime, QTime, QPoint, QRect, QSize, list))
+                QDate, QDateTime, QTime, QPoint, QRect, ?S.., list))
 
     @staticmethod
     ___ displayText(value):
@@ -708,7 +708,7 @@ c_ VariantDelegate(QItemDelegate):
             r_ '(%d,%d)' % (value.x(), value.y())
         ____ isinstance(value, QRect):
             r_ '(%d,%d,%d,%d)' % (value.x(), value.y(), value.width(), value.height())
-        ____ isinstance(value, QSize):
+        ____ isinstance(value, ?S..):
             r_ '(%d,%d)' % (value.width(), value.height())
         ____ isinstance(value, list):
             r_ ','.join(value)

@@ -8,7 +8,7 @@ import requests_cache
 
 
 from collections import defaultdict
-from datetime import datetime, timedelta, date
+from d_t_ import d_t_, timedelta, date
 from itertools import cycle
 import sys
 import time
@@ -75,7 +75,7 @@ class UpdateWorker(QRunnable):
 
     @pyqtSlot()
     def run 
-        try:
+        ___
             today = date.today()
             total_requests = len(DATE_REQUEST_OFFSETS)
 
@@ -98,7 +98,7 @@ class UpdateWorker(QRunnable):
                     break
 
 
-        except Exception as e:
+        _____ Exception as e:
             print(e)
             exctype, value = sys.exc_info()[:2]
             signals.error.emit((exctype, value, traceback.format_exc()))
@@ -113,8 +113,8 @@ class UpdateWorker(QRunnable):
 
 class MainWindow(QMainWindow):
 
-    def  - (self, *args, **kwargs):
-        super(MainWindow, self). - (*args, **kwargs)
+    def  - (self, $ $$
+        super(MainWindow, self). - ($ $$)
 
         layout = QHBoxLayout()
 
@@ -127,7 +127,7 @@ class MainWindow(QMainWindow):
             movable=False  # We have our own code to handle dragless moving.
         )
 
-        ax.addItem(line)
+        ax.aI..(line)
         ax.setLimits(xMin=-HISTORIC_DAYS_N + 1, xMax=0)
         ax.getPlotItem().scene().sigMouseMoved.connect(mouse_move_handler)
 
@@ -155,15 +155,15 @@ class MainWindow(QMainWindow):
         layout.addWidget(ax)
         layout.addWidget(listView)
 
-        widget = QWidget()
+        widget = ?W..()
         widget.setLayout(layout)
         setCentralWidget(widget)
-        listView.setFixedSize(226, 400)
-        setFixedSize(650, 400)
+        listView.sFS..(226, 400)
+        sFS..(650, 400)
 
         toolbar = QToolBar("Main")
         addToolBar(toolbar)
-        currencyList = QComboBox()
+        currencyList = ?CB()
 
         toolbar.addWidget(currencyList)
         update_currency_list(DEFAULT_DISPLAY_CURRENCIES)
@@ -181,7 +181,7 @@ class MainWindow(QMainWindow):
     def update_currency_list(self, currencies):
         ___ currency __ currencies:
             if currencyList.findText(currency) == -1:
-                currencyList.addItem(currency)
+                currencyList.aI..(currency)
 
         currencyList.model().sort(0)
 
@@ -241,9 +241,9 @@ class MainWindow(QMainWindow):
         vitem.setText("%.4f" % value)
 
     def update_data_viewer(self, d):
-        try:
+        ___
             data = data[d]
-        except IndexError:  # Skip update if out of bounds.
+        _____ IE..  # Skip update if out of bounds.
             return
 
         if not data:  # Skip update if we have no data.
@@ -276,10 +276,10 @@ class MainWindow(QMainWindow):
 
         # Refresh plot if we haven't for >1 second.
         if (_last_updated is None or
-            _last_updated < datetime.now() - timedelta(seconds=1)
+            _last_updated < d_t_.now() - timedelta(seconds=1)
             ):
             redraw()
-            _last_updated = datetime.now()
+            _last_updated = d_t_.now()
 
     def progress_callback(self, progress):
         progress.setValue(progress)

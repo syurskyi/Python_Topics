@@ -43,13 +43,13 @@
 
 
 ____ ?.?C.. ______ (QAbstractTableModel, QDir, QModelIndex, QRect,
-        QRectF, QSize, __)
+        QRectF, ?S.., __)
 ____ ?.?G.. ______ QBrush, qGray, QImage, QPainter
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
 ____ ?.?W.. ______ (QAbstractItemDelegate, ?A.., QDialog,
         ?FD.., QHBoxLayout, QLabel, QMainWindow, ?MB.., QMenu,
-        QProgressDialog, QSpinBox, QStyle, QStyleOptionViewItem, QTableView,
-        QVBoxLayout, QWidget)
+        QProgressDialog, SB.., QStyle, QStyleOptionViewItem, QTableView,
+        QVBoxLayout, ?W..)
 
 ______ pixelator_rc
 
@@ -89,8 +89,8 @@ c_ PixelDelegate(QAbstractItemDelegate):
 
         painter.restore()
 
-    ___ sizeHint  option, index):
-        r_ QSize(pixelSize, pixelSize)
+    ___ sH..  option, index):
+        r_ ?S..(pixelSize, pixelSize)
 
     ___ setPixelSize  size):
         pixelSize _ size
@@ -121,7 +121,7 @@ c_ ImageModel ?ATM..
 
     ___ headerData  section, orientation, role):
         __ role == __.SizeHintRole:
-            r_ QSize(1, 1)
+            r_ ?S..(1, 1)
 
         r_ N..
 
@@ -147,7 +147,7 @@ c_ MainWindow ?MW..
         view.setItemDelegate(delegate)
 
         pixelSizeLabel _ QLabel("Pixel size:")
-        pixelSizeSpinBox _ QSpinBox()
+        pixelSizeSpinBox _ SB..()
         pixelSizeSpinBox.setMinimum(4)
         pixelSizeSpinBox.setMaximum(32)
         pixelSizeSpinBox.setValue(12)
@@ -205,7 +205,7 @@ c_ MainWindow ?MW..
         __ image.load(fileName):
             model.setImage(image)
 
-            __ no. fileName.startswith(':/'):
+            __ no. fileName.s_w_(':/'):
                 currentPath _ fileName
                 sWT..("%s - Pixelator" % currentPath)
 

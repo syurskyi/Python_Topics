@@ -135,7 +135,7 @@ c_ TreeModel(QAbstractItemModel):
 
         rootData _ [header ___ header __ headers]
         rootItem _ TreeItem(rootData)
-        setupModelData(data.split("\n"), rootItem)
+        setupModelData(data.sp..("\n"), rootItem)
 
     ___ columnCount  parent_QModelIndex()):
         r_ rootItem.columnCount()
@@ -272,7 +272,7 @@ c_ TreeModel(QAbstractItemModel):
 
             __ lineData:
                 # Read the column data from the rest of the line.
-                columnData _ [s ___ s __ lineData.split('\t') __ s]
+                columnData _ [s ___ s __ lineData.sp..('\t') __ s]
 
                 __ position > indentations[-1]:
                     # The last child of the current parent is now the new

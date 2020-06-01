@@ -12,19 +12,19 @@ INPUT _ 1
 
 
 c_ MainWindow(QMainWindow, Ui_MainWindow):
-    ___  -   *args, **kwargs):
-        super(MainWindow, self). - (*args, **kwargs)
+    ___  -   $ $$
+        super(MainWindow, self). - ($ $$)
         setupUi
 
         # Setup numbers.
         ___ n __ range(0, 10):
-            getattr  'pushButton_n%s' % n).pressed.c..(lambda v_n: input_number(v))
+            getattr  'pushButton_n%s' % n).pressed.c..(l___ v_n: input_number(v))
 
         # Setup operations.
-        pushButton_add.pressed.c..(lambda: operation(operator.add))
-        pushButton_sub.pressed.c..(lambda: operation(operator.sub))
-        pushButton_mul.pressed.c..(lambda: operation(operator.mul))
-        pushButton_div.pressed.c..(lambda: operation(operator.truediv))  # operator.div for Python2.7
+        pushButton_add.pressed.c..(l___: operation(operator.add))
+        pushButton_sub.pressed.c..(l___: operation(operator.sub))
+        pushButton_mul.pressed.c..(l___: operation(operator.mul))
+        pushButton_div.pressed.c..(l___: operation(operator.truediv))  # operator.div for Python2.7
 
         pushButton_pc.pressed.c..(operation_pc)
         pushButton_eq.pressed.c..(equals)
@@ -93,9 +93,9 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
         __ current_op:
             last_operation _ stack[-1], current_op
 
-            try:
+            ___
                 stack _ [current_op(*stack)]
-            except Exception:
+            _____ Exception:
                 lcdNumber.display('Err')
                 stack _ [0]
             ____

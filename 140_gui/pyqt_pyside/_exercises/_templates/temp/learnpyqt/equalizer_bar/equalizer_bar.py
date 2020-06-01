@@ -10,14 +10,14 @@ ____
     ____ PySide2.?C.. ______ Signal
 
 
-c_ EqualizerBar(?W...QWidget):
+c_ EqualizerBar(?W...?W..):
 
-    ___  -   bars, steps, *args, **kwargs):
-        s_. - (*args, **kwargs)
+    ___  -   bars, steps, $ $$
+        s_. - ($ $$)
 
         sSP..(
-            ?W...QSizePolicy.MinimumExpanding,
-            ?W...QSizePolicy.MinimumExpanding
+            ?W...QSizePolicy.ME..,
+            ?W...QSizePolicy.ME..
         )
 
         __ isinstance(steps, list):
@@ -93,8 +93,8 @@ c_ EqualizerBar(?W...QWidget):
 
         painter.end()
 
-    ___ sizeHint
-        r_ ?C...QSize(20, 120)
+    ___ sH..
+        r_ ?C...?S..(20, 120)
 
     ___ _trigger_refresh
         update()

@@ -18,10 +18,10 @@ c_ Model(qtc.QObject):
         ____ path.exists(filename):
             error _ f'Will not overwrite {filename}'
         ____
-            try:
+            ___
                 w__ o..(filename, 'w') __ fh:
                     fh.w..(content)
-            except Exception __ e:
+            _____ Exception __ e:
                 error _ f'Cannot write file: {e}'
         __ error:
             error.emit(error)

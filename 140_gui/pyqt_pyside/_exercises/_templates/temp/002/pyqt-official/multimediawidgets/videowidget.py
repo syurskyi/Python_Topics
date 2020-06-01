@@ -46,10 +46,10 @@ ____ ?.?C.. ______ QDir, __, QUrl
 ____ ?.QtMultimedia ______ QMediaContent, QMediaPlayer
 ____ ?.QtMultimediaWidgets ______ QVideoWidget
 ____ ?.?W.. ______ (?A.., ?FD.., QHBoxLayout, QLabel,
-        ?PB.., QSizePolicy, QSlider, QStyle, QVBoxLayout, QWidget)
+        ?PB.., QSizePolicy, QSlider, QStyle, QVBoxLayout, ?W..)
 
 
-c_ VideoPlayer(QWidget):
+c_ VideoPlayer(?W..):
 
     ___  -   parent_None):
         super(VideoPlayer, self). - (parent)

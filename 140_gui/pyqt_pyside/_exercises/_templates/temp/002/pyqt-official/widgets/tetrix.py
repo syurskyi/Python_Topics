@@ -45,16 +45,16 @@
 ______ copy
 ______ random
 
-____ ?.?C.. ______ pyqtSignal, QBasicTimer, QSize, __
+____ ?.?C.. ______ pyqtSignal, QBasicTimer, ?S.., __
 ____ ?.?G.. ______ ?C.., QPainter, QPixmap
 ____ ?.?W.. ______ (?A.., QFrame, QGridLayout, QLabel,
-        QLCDNumber, ?PB.., QWidget)
+        QLCDNumber, ?PB.., ?W..)
 
 
 NoShape, ZShape, SShape, LineShape, TShape, SquareShape, LShape, MirroredLShape _ range(8)
 
 
-c_ TetrixWindow(QWidget):
+c_ TetrixWindow(?W..):
     ___  -
         super(TetrixWindow, self). - ()
 
@@ -162,12 +162,12 @@ c_ TetrixBoard(QFrame):
     ___ setNextPieceLabel  label):
         nextPieceLabel _ label
 
-    ___ sizeHint 
-        r_ QSize(TetrixBoard.BoardWidth * 15 + frameWidth() * 2,
+    ___ sH..
+        r_ ?S..(TetrixBoard.BoardWidth * 15 + frameWidth() * 2,
                 TetrixBoard.BoardHeight * 15 + frameWidth() * 2)
 
     ___ minimumSizeHint 
-        r_ QSize(TetrixBoard.BoardWidth * 5 + frameWidth() * 2,
+        r_ ?S..(TetrixBoard.BoardWidth * 5 + frameWidth() * 2,
                 TetrixBoard.BoardHeight * 5 + frameWidth() * 2)
 
     ___ start 

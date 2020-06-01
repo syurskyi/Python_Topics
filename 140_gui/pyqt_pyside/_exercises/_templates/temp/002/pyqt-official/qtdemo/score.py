@@ -85,9 +85,9 @@ c_ Score(object):
                 item.play(runMode == Score.FROM_START)
 
     ___ queueMovie  indexName, runMode_FROM_START, lockMode_SKIP_LOCK):
-        try:
+        ___
             movie _ _index[indexName]
-        except KeyError:
+        _____ KeyError:
             Colors.debug("Queuing movie:", indexName, "(does not exist)")
             r_
 

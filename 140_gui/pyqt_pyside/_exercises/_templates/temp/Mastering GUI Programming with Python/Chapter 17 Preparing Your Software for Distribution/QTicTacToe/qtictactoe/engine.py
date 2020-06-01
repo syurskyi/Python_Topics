@@ -26,7 +26,7 @@ c_ TicTacToeEngine(qtc.QObject):
 
     ___ mark_square  square):
         """Mark a square for one player or another"""
-        __ any([
+        __ an.([
                 no. isinstance(square, int),
                 no. (0 <_ square < le.(board)),
                 board[square] __ no. N..

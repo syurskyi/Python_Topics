@@ -73,7 +73,7 @@ c_ PythonConsoleWidget(QLineEdit):
         qApp _ ?A...instance()
         
         expression _ t__()
-        try:
+        ___
             result _ str(eval(str(expression)))
             
             # Emit the result of the evaluated expression.
@@ -84,7 +84,7 @@ c_ PythonConsoleWidget(QLineEdit):
             clear()
             history.ap..(expression)
             current _ le.(history)
-        except:
+        _____:
             pass
 
 

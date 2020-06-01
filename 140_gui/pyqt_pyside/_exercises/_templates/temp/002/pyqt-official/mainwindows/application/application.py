@@ -42,11 +42,11 @@
 #############################################################################
 
 
-____ ?.?C.. ______ (QFile, QFileInfo, QPoint, QRect, QSettings, QSize,
+____ ?.?C.. ______ (QFile, QFileInfo, QPoint, QRect, QSettings, ?S..,
         __, QTextStream)
 ____ ?.?G.. ______ QIcon, ?KS..
 ____ ?.?W.. ______ (?A.., ?A.., ?FD.., QMainWindow,
-        ?MB.., QTextEdit)
+        ?MB.., ?TE..)
 
 
 c_ MainWindow ?MW..
@@ -55,7 +55,7 @@ c_ MainWindow ?MW..
 
         curFile _ ''
 
-        textEdit _ QTextEdit()
+        textEdit _ ?TE..()
         sCW..(textEdit)
 
         createActions()
@@ -197,7 +197,7 @@ c_ MainWindow ?MW..
     ___ readSettings 
         settings _ QSettings("Trolltech", "Application Example")
         pos _ settings.value("pos", QPoint(200, 200))
-        size _ settings.value("size", QSize(400, 400))
+        size _ settings.value("size", ?S..(400, 400))
         r..(size)
         move(pos)
 

@@ -44,22 +44,22 @@
 
 ____ ?.?C.. ______ __
 ____ ?.?G.. ______ QDoubleValidator, QIntValidator
-____ ?.?W.. ______ (?A.., QComboBox, QGridLayout, QGroupBox,
-        QLabel, QLineEdit, QWidget)
+____ ?.?W.. ______ (?A.., ?CB, QGridLayout, QGroupBox,
+        QLabel, QLineEdit, ?W..)
 
 
-c_ Window(QWidget):
+c_ Window(?W..):
     ___  -
         super(Window, self). - ()
 
         echoGroup _ QGroupBox("Echo")
 
         echoLabel _ QLabel("Mode:")
-        echoComboBox _ QComboBox()
-        echoComboBox.addItem("Normal")
-        echoComboBox.addItem("Password")
-        echoComboBox.addItem("PasswordEchoOnEdit")
-        echoComboBox.addItem("No Echo")
+        echoComboBox _ ?CB()
+        echoComboBox.aI..("Normal")
+        echoComboBox.aI..("Password")
+        echoComboBox.aI..("PasswordEchoOnEdit")
+        echoComboBox.aI..("No Echo")
 
         echoLineEdit _ ?LE..
         echoLineEdit.setFocus()
@@ -67,40 +67,40 @@ c_ Window(QWidget):
         validatorGroup _ QGroupBox("Validator")
 
         validatorLabel _ QLabel("Type:")
-        validatorComboBox _ QComboBox()
-        validatorComboBox.addItem("No validator")
-        validatorComboBox.addItem("Integer validator")
-        validatorComboBox.addItem("Double validator")
+        validatorComboBox _ ?CB()
+        validatorComboBox.aI..("No validator")
+        validatorComboBox.aI..("Integer validator")
+        validatorComboBox.aI..("Double validator")
 
         validatorLineEdit _ ?LE..
 
         alignmentGroup _ QGroupBox("Alignment")
 
         alignmentLabel _ QLabel("Type:")
-        alignmentComboBox _ QComboBox()
-        alignmentComboBox.addItem("Left")
-        alignmentComboBox.addItem("Centered")
-        alignmentComboBox.addItem("Right")
+        alignmentComboBox _ ?CB()
+        alignmentComboBox.aI..("Left")
+        alignmentComboBox.aI..("Centered")
+        alignmentComboBox.aI..("Right")
 
         alignmentLineEdit _ ?LE..
 
         inputMaskGroup _ QGroupBox("Input mask")
 
         inputMaskLabel _ QLabel("Type:")
-        inputMaskComboBox _ QComboBox()
-        inputMaskComboBox.addItem("No mask")
-        inputMaskComboBox.addItem("Phone number")
-        inputMaskComboBox.addItem("ISO date")
-        inputMaskComboBox.addItem("License key")
+        inputMaskComboBox _ ?CB()
+        inputMaskComboBox.aI..("No mask")
+        inputMaskComboBox.aI..("Phone number")
+        inputMaskComboBox.aI..("ISO date")
+        inputMaskComboBox.aI..("License key")
 
         inputMaskLineEdit _ ?LE..
 
         accessGroup _ QGroupBox("Access")
 
         accessLabel _ QLabel("Read-only:")
-        accessComboBox _ QComboBox()
-        accessComboBox.addItem("False")
-        accessComboBox.addItem("True")
+        accessComboBox _ ?CB()
+        accessComboBox.aI..("False")
+        accessComboBox.aI..("True")
 
         accessLineEdit _ ?LE..
 

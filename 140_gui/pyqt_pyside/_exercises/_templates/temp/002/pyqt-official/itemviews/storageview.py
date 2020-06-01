@@ -64,9 +64,9 @@ ___ sizeToString(size):
     decimals _ 2
     units _ ["b", "kB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"]
     power _ int(math.log(size, 1024))
-    try:
+    ___
         unit _ units[power]
-    except IndexError:
+    _____ IE..
         unit _ units[-1]
         power _ le.(units) - 1
     __ power == 0:
@@ -82,16 +82,16 @@ c_ StorageModel ?ATM..
     ColumnIsReadOnly, ColumnIsValid, ColumnCount _ range(11)
 
     columnFuncMap _ {
-        ColumnRootPath: lambda volume: QDir.toNativeSeparators(volume.rootPath()),
-        ColumnName: lambda volume: volume.name(),
-        ColumnDevice: lambda volume: volume.device(),
-        ColumnFileSystemName: lambda volume: volume.fileSystemType(),
-        ColumnTotal: lambda volume: sizeToString(volume.bytesTotal()),
-        ColumnFree: lambda volume: sizeToString(volume.bytesFree()),
-        ColumnAvailable: lambda volume: sizeToString(volume.bytesAvailable()),
-        ColumnIsReady: lambda volume: volume.isReady(),
-        ColumnIsReadOnly: lambda volume: volume.isReadOnly(),
-        ColumnIsValid: lambda volume: volume.isValid(),
+        ColumnRootPath: l___ volume: QDir.toNativeSeparators(volume.rootPath()),
+        ColumnName: l___ volume: volume.name(),
+        ColumnDevice: l___ volume: volume.device(),
+        ColumnFileSystemName: l___ volume: volume.fileSystemType(),
+        ColumnTotal: l___ volume: sizeToString(volume.bytesTotal()),
+        ColumnFree: l___ volume: sizeToString(volume.bytesFree()),
+        ColumnAvailable: l___ volume: sizeToString(volume.bytesAvailable()),
+        ColumnIsReady: l___ volume: volume.isReady(),
+        ColumnIsReadOnly: l___ volume: volume.isReadOnly(),
+        ColumnIsValid: l___ volume: volume.isValid(),
     }
 
     columnNameMap _ {

@@ -38,7 +38,7 @@
 
 
 ____ ?.?C.. ______ QDate, __
-____ ?.?W.. ______ QCompleter, QDateTimeEdit, QItemDelegate, QLineEdit
+____ ?.?W.. ______ QCompleter, ?DTE.., QItemDelegate, QLineEdit
 
 
 c_ SpreadSheetDelegate(QItemDelegate):
@@ -48,7 +48,7 @@ c_ SpreadSheetDelegate(QItemDelegate):
 
     ___ createEditor  parent, styleOption, index):
         __ index.column() == 1:
-            editor _ QDateTimeEdit(parent)
+            editor _ ?DTE..(parent)
             editor.setDisplayFormat(parent().currentDateFormat)
             editor.setCalendarPopup(True)
             r_ editor
@@ -74,12 +74,12 @@ c_ SpreadSheetDelegate(QItemDelegate):
     ___ setEditorData  editor, index):
         __ isinstance(editor, QLineEdit):
             editor.sT..(index.model().data(index, __.EditRole))
-        ____ isinstance(editor, QDateTimeEdit):
+        ____ isinstance(editor, ?DTE..):
             editor.setDate(QDate.fromString(
                 index.model().data(index, __.EditRole), parent().currentDateFormat))
 
     ___ setModelData  editor, model, index):
         __ isinstance(editor, QLineEdit):
             model.setData(index, editor.t__())
-        ____ isinstance(editor, QDateTimeEdit):
+        ____ isinstance(editor, ?DTE..):
             model.setData(index, editor.date().toString(parent().currentDateFormat))

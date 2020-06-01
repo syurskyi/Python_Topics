@@ -9,8 +9,8 @@ import sys
 
 
 class AboutDialog(QDialog):
-    def  - (self, *args, **kwargs):
-        super(AboutDialog, self). - (*args, **kwargs)
+    def  - (self, $ $$
+        super(AboutDialog, self). - ($ $$)
 
         QBtn = QDialogButtonBox.Ok  # No cancel
         buttonBox = QDialogButtonBox(QBtn)
@@ -42,10 +42,10 @@ class AboutDialog(QDialog):
 
 
 class MainWindow(QMainWindow):
-    def  - (self, *args, **kwargs):
-        super(MainWindow, self). - (*args, **kwargs)
+    def  - (self, $ $$
+        super(MainWindow, self). - ($ $$)
 
-        tabs = QTabWidget()
+        tabs = ?TW..()
         tabs.setDocumentMode(True)
         tabs.tabBarDoubleClicked.connect(tab_open_doubleclick)
         tabs.currentChanged.connect(current_tab_changed)
@@ -58,22 +58,22 @@ class MainWindow(QMainWindow):
         setStatusBar(status)
 
         navtb = QToolBar("Navigation")
-        navtb.setIconSize(QSize(16, 16))
+        navtb.setIconSize(?S..(16, 16))
         addToolBar(navtb)
 
         back_btn = QAction(QIcon(os.path.join('images', 'arrow-180.png')), "Back", self)
         back_btn.setStatusTip("Back to previous page")
-        back_btn.triggered.connect(lambda: tabs.currentWidget().back())
+        back_btn.triggered.connect(l___: tabs.currentWidget().back())
         navtb.addAction(back_btn)
 
         next_btn = QAction(QIcon(os.path.join('images', 'arrow-000.png')), "Forward", self)
         next_btn.setStatusTip("Forward to next page")
-        next_btn.triggered.connect(lambda: tabs.currentWidget().forward())
+        next_btn.triggered.connect(l___: tabs.currentWidget().forward())
         navtb.addAction(next_btn)
 
         reload_btn = QAction(QIcon(os.path.join('images', 'arrow-circle-315.png')), "Reload", self)
         reload_btn.setStatusTip("Reload page")
-        reload_btn.triggered.connect(lambda: tabs.currentWidget().reload())
+        reload_btn.triggered.connect(l___: tabs.currentWidget().reload())
         navtb.addAction(reload_btn)
 
         home_btn = QAction(QIcon(os.path.join('images', 'home.png')), "Home", self)
@@ -93,7 +93,7 @@ class MainWindow(QMainWindow):
 
         stop_btn = QAction(QIcon(os.path.join('images', 'cross-circle.png')), "Stop", self)
         stop_btn.setStatusTip("Stop loading current page")
-        stop_btn.triggered.connect(lambda: tabs.currentWidget().stop())
+        stop_btn.triggered.connect(l___: tabs.currentWidget().stop())
         navtb.addAction(stop_btn)
 
         # Uncomment to disable native menubar on Mac
@@ -103,7 +103,7 @@ class MainWindow(QMainWindow):
 
         new_tab_action = QAction(QIcon(os.path.join('images', 'ui-tab--plus.png')), "New Tab", self)
         new_tab_action.setStatusTip("Open a new tab")
-        new_tab_action.triggered.connect(lambda _: add_new_tab())
+        new_tab_action.triggered.connect(l___ _: add_new_tab())
         file_menu.addAction(new_tab_action)
 
         open_file_action = QAction(QIcon(os.path.join('images', 'disk--arrow.png')), "Open file...", self)
@@ -148,16 +148,16 @@ class MainWindow(QMainWindow):
 
         browser = QWebEngineView()
         browser.setUrl(qurl)
-        i = tabs.addTab(browser, label)
+        i = tabs.aT..(browser, label)
 
         tabs.setCurrentIndex(i)
 
         # More difficult! We only want to update the url when it's from the
         # correct tab
-        browser.urlChanged.connect(lambda qurl, browser=browser:
+        browser.urlChanged.connect(l___ qurl, browser=browser:
                                    update_urlbar(qurl, browser))
 
-        browser.loadFinished.connect(lambda _, i=i, browser=browser:
+        browser.loadFinished.connect(l___ _, i=i, browser=browser:
                                      tabs.setTabText(i, browser.page().title()))
 
     def tab_open_doubleclick(self, i):

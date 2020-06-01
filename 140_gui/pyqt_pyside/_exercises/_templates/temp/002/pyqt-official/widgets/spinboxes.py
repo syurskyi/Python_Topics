@@ -43,12 +43,12 @@
 
 
 ____ ?.?C.. ______ QDate, QDateTime, __, QTime
-____ ?.?W.. ______ (?A.., QComboBox, QDateEdit, QDateTimeEdit,
-        QDoubleSpinBox, QGroupBox, QHBoxLayout, QLabel, QSpinBox, QTimeEdit,
-        QVBoxLayout, QWidget)
+____ ?.?W.. ______ (?A.., ?CB, QDateEdit, ?DTE..,
+        QDoubleSpinBox, QGroupBox, QHBoxLayout, QLabel, SB.., QTimeEdit,
+        QVBoxLayout, ?W..)
 
 
-c_ Window(QWidget):
+c_ Window(?W..):
     ___  -  
         super(Window, self). - ()
 
@@ -68,13 +68,13 @@ c_ Window(QWidget):
         spinBoxesGroup _ QGroupBox("Spinboxes")
 
         integerLabel _ QLabel("Enter a value between %d and %d:" % (-20, 20))
-        integerSpinBox _ QSpinBox()
+        integerSpinBox _ SB..()
         integerSpinBox.setRange(-20, 20)
         integerSpinBox.setSingleStep(1)
         integerSpinBox.setValue(0)
 
         zoomLabel _ QLabel("Enter a zoom value between %d and %d:" % (0, 1000))
-        zoomSpinBox _ QSpinBox()
+        zoomSpinBox _ SB..()
         zoomSpinBox.setRange(0, 1000)
         zoomSpinBox.setSingleStep(10)
         zoomSpinBox.setSuffix('%')
@@ -82,7 +82,7 @@ c_ Window(QWidget):
         zoomSpinBox.setValue(100)
 
         priceLabel _ QLabel("Enter a price between %d and %d:" % (0, 999))
-        priceSpinBox _ QSpinBox()
+        priceSpinBox _ SB..()
         priceSpinBox.setRange(0, 999)
         priceSpinBox.setSingleStep(1)
         priceSpinBox.setPrefix('$')
@@ -115,16 +115,16 @@ c_ Window(QWidget):
                     timeEdit.maximumTime().toString(__.ISODate)))
 
         meetingLabel _ QLabel()
-        meetingEdit _ QDateTimeEdit(QDateTime.currentDateTime())
+        meetingEdit _ ?DTE..(QDateTime.currentDateTime())
 
         formatLabel _ QLabel("Format string for the meeting date and time:")
 
-        formatComboBox _ QComboBox()
-        formatComboBox.addItem('yyyy-MM-dd hh:mm:ss (zzz \'ms\')')
-        formatComboBox.addItem('hh:mm:ss MM/dd/yyyy')
-        formatComboBox.addItem('hh:mm:ss dd/MM/yyyy')
-        formatComboBox.addItem('hh:mm:ss')
-        formatComboBox.addItem('hh:mm ap')
+        formatComboBox _ ?CB()
+        formatComboBox.aI..('yyyy-MM-dd hh:mm:ss (zzz \'ms\')')
+        formatComboBox.aI..('hh:mm:ss MM/dd/yyyy')
+        formatComboBox.aI..('hh:mm:ss dd/MM/yyyy')
+        formatComboBox.aI..('hh:mm:ss')
+        formatComboBox.aI..('hh:mm ap')
 
         formatComboBox.activated[str].c..(setFormatString)
 
@@ -144,7 +144,7 @@ c_ Window(QWidget):
     ___ setFormatString  formatString):
         meetingEdit.setDisplayFormat(formatString)
 
-        __ meetingEdit.displayedSections() & QDateTimeEdit.DateSections_Mask:
+        __ meetingEdit.displayedSections() & ?DTE...DateSections_Mask:
             meetingEdit.setDateRange(QDate(2004, 11, 1), QDate(2005, 11, 30))
             meetingLabel.sT..("Meeting date (between %s and %s):" %
                     (meetingEdit.minimumDate().toString(__.ISODate),
@@ -159,7 +159,7 @@ c_ Window(QWidget):
         doubleSpinBoxesGroup _ QGroupBox("Double precision spinboxes")
 
         precisionLabel _ QLabel("Number of decimal places to show:")
-        precisionSpinBox _ QSpinBox()
+        precisionSpinBox _ SB..()
         precisionSpinBox.setRange(0, 100)
         precisionSpinBox.setValue(2)
 

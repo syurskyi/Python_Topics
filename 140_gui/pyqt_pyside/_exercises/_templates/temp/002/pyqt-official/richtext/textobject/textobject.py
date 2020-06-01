@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ QFile, QIODevice, QObject, QSizeF
 ____ ?.?G.. ______ QTextCharFormat, QTextFormat, QTextObjectInterface
 ____ ?.?W.. ______ (?A.., QHBoxLayout, QLabel, QLineEdit,
-        ?MB.., ?PB.., QTextEdit, QVBoxLayout, QWidget)
+        ?MB.., ?PB.., ?TE.., QVBoxLayout, ?W..)
 ____ ?.QtSvg ______ QSvgRenderer
 
 
@@ -64,7 +64,7 @@ c_ SvgTextObject(QObject, QTextObjectInterface):
         renderer.render(painter, rect)
 
 
-c_ Window(QWidget):
+c_ Window(?W..):
 
     SvgTextFormat _ QTextFormat.UserObject + 1
 
@@ -92,10 +92,10 @@ c_ Window(QWidget):
         svgCharFormat.setObjectType(Window.SvgTextFormat)
         svgCharFormat.setProperty(Window.SvgData, svgData)
 
-        try:
+        ___
             # Python v2.
             orc _ unichr(0xfffc)
-        except NameError:
+        _____ NameError:
             # Python v3.
             orc _ chr(0xfffc)
 
@@ -120,7 +120,7 @@ c_ Window(QWidget):
         bottomLayout.aW..(fileNameLineEdit)
         bottomLayout.aW..(insertTextObjectButton)
 
-        textEdit _ QTextEdit()
+        textEdit _ ?TE..()
 
         mainLayout _ ?VBL..
         mainLayout.aW..(textEdit)

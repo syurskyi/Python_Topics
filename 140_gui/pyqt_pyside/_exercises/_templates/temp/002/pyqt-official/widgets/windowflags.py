@@ -44,17 +44,17 @@
 
 ____ ?.?C.. ______ __
 ____ ?.?W.. ______ (?A.., QCheckBox, QGridLayout, QGroupBox,
-        QHBoxLayout, ?PB.., QRadioButton, QTextEdit, QVBoxLayout,
-        QWidget)
+        QHBoxLayout, ?PB.., QRadioButton, ?TE.., QVBoxLayout,
+        ?W..)
 
 
-c_ PreviewWindow(QWidget):
+c_ PreviewWindow(?W..):
     ___  -   parent_None):
         super(PreviewWindow, self). - (parent)
 
-        textEdit _ QTextEdit()
+        textEdit _ ?TE..()
         textEdit.setReadOnly(True)
-        textEdit.setLineWrapMode(QTextEdit.NoWrap)
+        textEdit.setLineWrapMode(?TE...NoWrap)
 
         closeButton _ ?PB..("&Close")
         closeButton.c__.c..(close)
@@ -120,7 +120,7 @@ c_ PreviewWindow(QWidget):
         textEdit.sPT..(t__)
 
 
-c_ ControllerWindow(QWidget):
+c_ ControllerWindow(?W..):
     ___  -
         super(ControllerWindow, self). - ()
 

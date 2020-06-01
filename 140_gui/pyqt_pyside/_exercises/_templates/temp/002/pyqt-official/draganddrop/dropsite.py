@@ -47,7 +47,7 @@ ____ ?.?C.. ______ pyqtSignal, QMimeData, __
 ____ ?.?G.. ______ ?P.., QPixmap
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., QDialogButtonBox,
         QFrame, QLabel, ?PB.., QTableWidget, QTableWidgetItem,
-        QVBoxLayout, QWidget)
+        QVBoxLayout, ?W..)
 
 
 c_ DropArea(QLabel):
@@ -57,7 +57,7 @@ c_ DropArea(QLabel):
     ___  -   parent _ N..):
         super(DropArea, self). - (parent)
 
-        setMinimumSize(200, 200)
+        sMS..(200, 200)
         setFrameStyle(QFrame.Sunken | QFrame.StyledPanel)
         setAlignment(__.AlignCenter)
         setAcceptDrops(True)
@@ -101,7 +101,7 @@ c_ DropArea(QLabel):
         changed.emit(N..)
 
 
-c_ DropSiteWindow(QWidget):
+c_ DropSiteWindow(?W..):
 
     ___  - 
         super(DropSiteWindow, self). - ()
@@ -139,7 +139,7 @@ c_ DropSiteWindow(QWidget):
         sL..(mainLayout)
 
         sWT..("Drop Site")
-        setMinimumSize(350, 500)
+        sMS..(350, 500)
 
     ___ updateFormatsTable  mimeData_None):
         formatsTable.setRowCount(0)

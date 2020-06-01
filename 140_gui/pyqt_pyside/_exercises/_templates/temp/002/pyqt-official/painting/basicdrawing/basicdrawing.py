@@ -42,16 +42,16 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QPoint, QRect, QSize, __
+____ ?.?C.. ______ QPoint, QRect, ?S.., __
 ____ ?.?G.. ______ (QBrush, QConicalGradient, QLinearGradient, QPainter,
         QPainterPath, ?P.., QPen, QPixmap, QPolygon, QRadialGradient)
-____ ?.?W.. ______ (?A.., QCheckBox, QComboBox, QGridLayout,
-        QLabel, QSpinBox, QWidget)
+____ ?.?W.. ______ (?A.., QCheckBox, ?CB, QGridLayout,
+        QLabel, SB.., ?W..)
 
 ______ basicdrawing_rc
 
 
-c_ RenderArea(QWidget):
+c_ RenderArea(?W..):
     points _ QPolygon([
         QPoint(10, 80),
         QPoint(20, 10),
@@ -78,10 +78,10 @@ c_ RenderArea(QWidget):
         setAutoFillBackground(True)
 
     ___ minimumSizeHint
-        r_ QSize(100, 100)
+        r_ ?S..(100, 100)
 
-    ___ sizeHint
-        r_ QSize(400, 200)
+    ___ sH..
+        r_ ?S..(400, 200)
 
     ___ setShape  shape):
         shape _ shape
@@ -167,87 +167,87 @@ c_ RenderArea(QWidget):
 
 IdRole _ __.UserRole
 
-c_ Window(QWidget):
+c_ Window(?W..):
     ___  -
         super(Window, self). - ()
 
         renderArea _ RenderArea()
 
-        shapeComboBox _ QComboBox()
-        shapeComboBox.addItem("Polygon", RenderArea.Polygon)
-        shapeComboBox.addItem("Rectangle", RenderArea.Rect)
-        shapeComboBox.addItem("Rounded Rectangle", RenderArea.RoundedRect)
-        shapeComboBox.addItem("Ellipse", RenderArea.Ellipse)
-        shapeComboBox.addItem("Pie", RenderArea.Pie)
-        shapeComboBox.addItem("Chord", RenderArea.Chord)
-        shapeComboBox.addItem("Path", RenderArea.Path)
-        shapeComboBox.addItem("Line", RenderArea.Line)
-        shapeComboBox.addItem("Polyline", RenderArea.Polyline)
-        shapeComboBox.addItem("Arc", RenderArea.Arc)
-        shapeComboBox.addItem("Points", RenderArea.Points)
-        shapeComboBox.addItem("Text", RenderArea.Text)
-        shapeComboBox.addItem("Pixmap", RenderArea.Pixmap)
+        shapeComboBox _ ?CB()
+        shapeComboBox.aI..("Polygon", RenderArea.Polygon)
+        shapeComboBox.aI..("Rectangle", RenderArea.Rect)
+        shapeComboBox.aI..("Rounded Rectangle", RenderArea.RoundedRect)
+        shapeComboBox.aI..("Ellipse", RenderArea.Ellipse)
+        shapeComboBox.aI..("Pie", RenderArea.Pie)
+        shapeComboBox.aI..("Chord", RenderArea.Chord)
+        shapeComboBox.aI..("Path", RenderArea.Path)
+        shapeComboBox.aI..("Line", RenderArea.Line)
+        shapeComboBox.aI..("Polyline", RenderArea.Polyline)
+        shapeComboBox.aI..("Arc", RenderArea.Arc)
+        shapeComboBox.aI..("Points", RenderArea.Points)
+        shapeComboBox.aI..("Text", RenderArea.Text)
+        shapeComboBox.aI..("Pixmap", RenderArea.Pixmap)
 
         shapeLabel _ QLabel("&Shape:")
         shapeLabel.setBuddy(shapeComboBox)
 
-        penWidthSpinBox _ QSpinBox()
+        penWidthSpinBox _ SB..()
         penWidthSpinBox.setRange(0, 20)
         penWidthSpinBox.setSpecialValueText("0 (cosmetic pen)")
 
         penWidthLabel _ QLabel("Pen &Width:")
         penWidthLabel.setBuddy(penWidthSpinBox)
 
-        penStyleComboBox _ QComboBox()
-        penStyleComboBox.addItem("Solid", __.SolidLine)
-        penStyleComboBox.addItem("Dash", __.DashLine)
-        penStyleComboBox.addItem("Dot", __.DotLine)
-        penStyleComboBox.addItem("Dash Dot", __.DashDotLine)
-        penStyleComboBox.addItem("Dash Dot Dot", __.DashDotDotLine)
-        penStyleComboBox.addItem("None", __.NoPen)
+        penStyleComboBox _ ?CB()
+        penStyleComboBox.aI..("Solid", __.SolidLine)
+        penStyleComboBox.aI..("Dash", __.DashLine)
+        penStyleComboBox.aI..("Dot", __.DotLine)
+        penStyleComboBox.aI..("Dash Dot", __.DashDotLine)
+        penStyleComboBox.aI..("Dash Dot Dot", __.DashDotDotLine)
+        penStyleComboBox.aI..("None", __.NoPen)
 
         penStyleLabel _ QLabel("&Pen Style:")
         penStyleLabel.setBuddy(penStyleComboBox)
 
-        penCapComboBox _ QComboBox()
-        penCapComboBox.addItem("Flat", __.FlatCap)
-        penCapComboBox.addItem("Square", __.SquareCap)
-        penCapComboBox.addItem("Round", __.RoundCap)
+        penCapComboBox _ ?CB()
+        penCapComboBox.aI..("Flat", __.FlatCap)
+        penCapComboBox.aI..("Square", __.SquareCap)
+        penCapComboBox.aI..("Round", __.RoundCap)
 
         penCapLabel _ QLabel("Pen &Cap:")
         penCapLabel.setBuddy(penCapComboBox)
 
-        penJoinComboBox _ QComboBox()
-        penJoinComboBox.addItem("Miter", __.MiterJoin)
-        penJoinComboBox.addItem("Bevel", __.BevelJoin)
-        penJoinComboBox.addItem("Round", __.RoundJoin)
+        penJoinComboBox _ ?CB()
+        penJoinComboBox.aI..("Miter", __.MiterJoin)
+        penJoinComboBox.aI..("Bevel", __.BevelJoin)
+        penJoinComboBox.aI..("Round", __.RoundJoin)
 
         penJoinLabel _ QLabel("Pen &Join:")
         penJoinLabel.setBuddy(penJoinComboBox)
 
-        brushStyleComboBox _ QComboBox()
-        brushStyleComboBox.addItem("Linear Gradient",
+        brushStyleComboBox _ ?CB()
+        brushStyleComboBox.aI..("Linear Gradient",
                 __.LinearGradientPattern)
-        brushStyleComboBox.addItem("Radial Gradient",
+        brushStyleComboBox.aI..("Radial Gradient",
                 __.RadialGradientPattern)
-        brushStyleComboBox.addItem("Conical Gradient",
+        brushStyleComboBox.aI..("Conical Gradient",
                 __.ConicalGradientPattern)
-        brushStyleComboBox.addItem("Texture", __.TexturePattern)
-        brushStyleComboBox.addItem("Solid", __.SolidPattern)
-        brushStyleComboBox.addItem("Horizontal", __.HorPattern)
-        brushStyleComboBox.addItem("Vertical", __.VerPattern)
-        brushStyleComboBox.addItem("Cross", __.CrossPattern)
-        brushStyleComboBox.addItem("Backward Diagonal", __.BDiagPattern)
-        brushStyleComboBox.addItem("Forward Diagonal", __.FDiagPattern)
-        brushStyleComboBox.addItem("Diagonal Cross", __.DiagCrossPattern)
-        brushStyleComboBox.addItem("Dense 1", __.Dense1Pattern)
-        brushStyleComboBox.addItem("Dense 2", __.Dense2Pattern)
-        brushStyleComboBox.addItem("Dense 3", __.Dense3Pattern)
-        brushStyleComboBox.addItem("Dense 4", __.Dense4Pattern)
-        brushStyleComboBox.addItem("Dense 5", __.Dense5Pattern)
-        brushStyleComboBox.addItem("Dense 6", __.Dense6Pattern)
-        brushStyleComboBox.addItem("Dense 7", __.Dense7Pattern)
-        brushStyleComboBox.addItem("None", __.NoBrush)
+        brushStyleComboBox.aI..("Texture", __.TexturePattern)
+        brushStyleComboBox.aI..("Solid", __.SolidPattern)
+        brushStyleComboBox.aI..("Horizontal", __.HorPattern)
+        brushStyleComboBox.aI..("Vertical", __.VerPattern)
+        brushStyleComboBox.aI..("Cross", __.CrossPattern)
+        brushStyleComboBox.aI..("Backward Diagonal", __.BDiagPattern)
+        brushStyleComboBox.aI..("Forward Diagonal", __.FDiagPattern)
+        brushStyleComboBox.aI..("Diagonal Cross", __.DiagCrossPattern)
+        brushStyleComboBox.aI..("Dense 1", __.Dense1Pattern)
+        brushStyleComboBox.aI..("Dense 2", __.Dense2Pattern)
+        brushStyleComboBox.aI..("Dense 3", __.Dense3Pattern)
+        brushStyleComboBox.aI..("Dense 4", __.Dense4Pattern)
+        brushStyleComboBox.aI..("Dense 5", __.Dense5Pattern)
+        brushStyleComboBox.aI..("Dense 6", __.Dense6Pattern)
+        brushStyleComboBox.aI..("Dense 7", __.Dense7Pattern)
+        brushStyleComboBox.aI..("None", __.NoBrush)
 
         brushStyleLabel _ QLabel("&Brush Style:")
         brushStyleLabel.setBuddy(brushStyleComboBox)

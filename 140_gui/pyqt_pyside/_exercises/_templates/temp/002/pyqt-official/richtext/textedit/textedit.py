@@ -51,14 +51,14 @@ ____ ?.?G.. ______ (QFont, QFontDatabase, QFontInfo, QIcon, ?KS..,
         QPixmap, QTextBlockFormat, QTextCharFormat, QTextCursor,
         QTextDocumentWriter, QTextListFormat)
 ____ ?.?W.. ______ (?A.., QActionGroup, ?A.., QColorDialog,
-        QComboBox, ?FD.., QFontComboBox, QMainWindow, QMenu, ?MB..,
-        QTextEdit, QToolBar)
+        ?CB, ?FD.., QFontComboBox, QMainWindow, QMenu, ?MB..,
+        ?TE.., QToolBar)
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter, QPrintPreviewDialog
 
 ______ textedit_rc
 
 
-__ ___.platform.startswith('darwin'):
+__ ___.platform.s_w_('darwin'):
     rsrcPath _ ":/images/mac"
 ____
     rsrcPath _ ":/images/win"
@@ -79,7 +79,7 @@ c_ TextEdit ?MW..
         helpMenu.aA..("About", about)
         helpMenu.aA..("About &Qt", ?A...instance().aboutQt)
  
-        textEdit _ QTextEdit
+        textEdit _ ?TE..
         textEdit.currentCharFormatChanged.c..(
                 currentCharFormatChanged)
         textEdit.cursorPositionChanged.c..(cursorPositionChanged)
@@ -356,31 +356,31 @@ c_ TextEdit ?MW..
         addToolBarBreak(__.TopToolBarArea)
         addToolBar(tb)
 
-        comboStyle _ QComboBox(tb)
+        comboStyle _ ?CB(tb)
         tb.aW..(comboStyle)
-        comboStyle.addItem("Standard")
-        comboStyle.addItem("Bullet List (Disc)")
-        comboStyle.addItem("Bullet List (Circle)")
-        comboStyle.addItem("Bullet List (Square)")
-        comboStyle.addItem("Ordered List (Decimal)")
-        comboStyle.addItem("Ordered List (Alpha lower)")
-        comboStyle.addItem("Ordered List (Alpha upper)")
-        comboStyle.addItem("Ordered List (Roman lower)")
-        comboStyle.addItem("Ordered List (Roman upper)")
+        comboStyle.aI..("Standard")
+        comboStyle.aI..("Bullet List (Disc)")
+        comboStyle.aI..("Bullet List (Circle)")
+        comboStyle.aI..("Bullet List (Square)")
+        comboStyle.aI..("Ordered List (Decimal)")
+        comboStyle.aI..("Ordered List (Alpha lower)")
+        comboStyle.aI..("Ordered List (Alpha upper)")
+        comboStyle.aI..("Ordered List (Roman lower)")
+        comboStyle.aI..("Ordered List (Roman upper)")
         comboStyle.activated.c..(textStyle)
 
         comboFont _ QFontComboBox(tb)
         tb.aW..(comboFont)
         comboFont.activated[str].c..(textFamily)
 
-        comboSize _ QComboBox(tb)
+        comboSize _ ?CB(tb)
         comboSize.setObjectName("comboSize")
         tb.aW..(comboSize)
         comboSize.setEditable(True)
 
         db _ QFontDatabase()
         ___ size __ db.standardSizes
-            comboSize.addItem("%s" % (size))
+            comboSize.aI..("%s" % (size))
 
         comboSize.activated[str].c..(textSize)
         comboSize.setCurrentIndex(
@@ -411,7 +411,7 @@ c_ TextEdit ?MW..
         __ no. textEdit.document().iM..
             r_ True
 
-        __ fileName.startswith(':/'):
+        __ fileName.s_w_(':/'):
             r_ True
 
         ret _ ?MB...warning  "Application",

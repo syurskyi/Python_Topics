@@ -106,10 +106,10 @@ __ ______ __ ______
 
     scene _ QGraphicsScene(0, 0, 300, 300)
     scene.setBackgroundBrush(__.white)
-    scene.addItem(p1)
-    scene.addItem(p2)
-    scene.addItem(p3)
-    scene.addItem(p4)
+    scene.aI..(p1)
+    scene.aI..(p2)
+    scene.aI..(p3)
+    scene.aI..(p4)
 
     window _ QGraphicsView(scene)
     window.setFrameStyle(0)

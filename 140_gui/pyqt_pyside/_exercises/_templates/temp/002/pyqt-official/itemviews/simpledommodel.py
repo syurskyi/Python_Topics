@@ -117,7 +117,7 @@ c_ DomModel(QAbstractItemModel):
             __ value __ N..:
                 r_ ''
 
-            r_ ' '.join(node.nodeValue().split('\n'))
+            r_ ' '.join(node.nodeValue().sp..('\n'))
 
         r_ N..
 

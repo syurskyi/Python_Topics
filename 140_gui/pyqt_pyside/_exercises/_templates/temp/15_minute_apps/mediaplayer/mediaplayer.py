@@ -24,8 +24,8 @@ c_ ViewerWindow ?MW..
 
 
 c_ PlaylistModel(QAbstractListModel):
-    ___  -   playlist, *args, **kwargs):
-        super(PlaylistModel, self). - (*args, **kwargs)
+    ___  -   playlist, $ $$
+        super(PlaylistModel, self). - ($ $$)
         playlist _ playlist
 
     ___ data  index, role):
@@ -38,8 +38,8 @@ c_ PlaylistModel(QAbstractListModel):
 
 
 c_ MainWindow(QMainWindow, Ui_MainWindow):
-    ___  -   *args, **kwargs):
-        super(MainWindow, self). - (*args, **kwargs)
+    ___  -   $ $$
+        super(MainWindow, self). - ($ $$)
         setupUi
 
         player _ QMediaPlayer()
@@ -54,7 +54,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
         # Add viewer for video playback, separate floating window.
         viewer _ ViewerWindow
         viewer.setWindowFlags(viewer.windowFlags() | __.WindowStaysOnTopHint)
-        viewer.setMinimumSize(QSize(480,360))
+        viewer.sMS..(?S..(480,360))
 
         videoWidget _ QVideoWidget()
         viewer.sCW..(videoWidget)

@@ -35,8 +35,8 @@ ___ create_new_note
     MainWindow()
 
 c_ MainWindow(QMainWindow, Ui_MainWindow):
-    ___  -   *args, obj_None, **kwargs):
-        super(MainWindow, self). - (*args, **kwargs)
+    ___  -   $ obj_None, $$):
+        super(MainWindow, self). - ($ $$)
         setupUi
         setWindowFlags(windowFlags() | __.FramelessWindowHint | __.WindowStaysOnTopHint)
         s..

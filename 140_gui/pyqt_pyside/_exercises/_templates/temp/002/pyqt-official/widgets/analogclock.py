@@ -44,10 +44,10 @@
 
 ____ ?.?C.. ______ QPoint, __, QTime, QTimer
 ____ ?.?G.. ______ ?C.., QPainter, QPolygon
-____ ?.?W.. ______ ?A.., QWidget
+____ ?.?W.. ______ ?A.., ?W..
 
 
-c_ AnalogClock(QWidget):
+c_ AnalogClock(?W..):
     hourHand _ QPolygon([
         QPoint(7, 8),
         QPoint(-7, 8),

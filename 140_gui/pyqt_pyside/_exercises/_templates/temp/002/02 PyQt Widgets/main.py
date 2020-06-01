@@ -43,11 +43,11 @@
 
 
 ____ ?.?C.. ______ QDateTime, __, QTimer
-____ ?.?W.. ______ (?A.., QCheckBox, QComboBox, QDateTimeEdit,
+____ ?.?W.. ______ (?A.., QCheckBox, ?CB, ?DTE..,
         QDial, QDialog, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit,
         QProgressBar, ?PB.., QRadioButton, QScrollBar, QSizePolicy,
-        QSlider, QSpinBox, QStyleFactory, QTableWidget, QTabWidget, QTextEdit,
-        QVBoxLayout, QWidget)
+        QSlider, SB.., QStyleFactory, QTableWidget, ?TW.., ?TE..,
+        QVBoxLayout, ?W..)
 
 
 c_ WidgetGallery(QDialog):
@@ -56,7 +56,7 @@ c_ WidgetGallery(QDialog):
 
         originalPalette _ ?A...palette()
 
-        styleComboBox _ QComboBox()
+        styleComboBox _ ?CB()
         styleComboBox.aI..(QStyleFactory.keys())
 
         styleLabel _ QLabel("&Style:")
@@ -159,7 +159,7 @@ c_ WidgetGallery(QDialog):
         topRightGroupBox.sL..(layout)
 
     ___ createBottomLeftTabWidget 
-        bottomLeftTabWidget _ QTabWidget()
+        bottomLeftTabWidget _ ?TW..()
         bottomLeftTabWidget.sSP..(QSizePolicy.Preferred,
                 QSizePolicy.Ignored)
 
@@ -172,7 +172,7 @@ c_ WidgetGallery(QDialog):
         tab1.sL..(tab1hbox)
 
         tab2 _ ?W..
-        textEdit _ QTextEdit()
+        textEdit _ ?TE..()
 
         textEdit.sPT..("Twinkle, twinkle, little star,\n"
                               "How I wonder what you are.\n" 
@@ -186,8 +186,8 @@ c_ WidgetGallery(QDialog):
         tab2hbox.aW..(textEdit)
         tab2.sL..(tab2hbox)
 
-        bottomLeftTabWidget.addTab(tab1, "&Table")
-        bottomLeftTabWidget.addTab(tab2, "Text &Edit")
+        bottomLeftTabWidget.aT..(tab1, "&Table")
+        bottomLeftTabWidget.aT..(tab2, "Text &Edit")
 
     ___ createBottomRightGroupBox 
         bottomRightGroupBox _ QGroupBox("Group 3")
@@ -197,10 +197,10 @@ c_ WidgetGallery(QDialog):
         lineEdit _ QLineEdit('s3cRe7')
         lineEdit.setEchoMode(QLineEdit.Password)
 
-        spinBox _ QSpinBox(bottomRightGroupBox)
+        spinBox _ SB..(bottomRightGroupBox)
         spinBox.setValue(50)
 
-        dateTimeEdit _ QDateTimeEdit(bottomRightGroupBox)
+        dateTimeEdit _ ?DTE..(bottomRightGroupBox)
         dateTimeEdit.setDateTime(QDateTime.currentDateTime())
 
         slider _ QSlider(__.Horizontal, bottomRightGroupBox)

@@ -42,10 +42,10 @@ c_ MainWindow(qtw.QMainWindow):
         ____ path.exists(filename):
             error _ f'Will not overwrite {filename}'
         ____
-            try:
+            ___
                 w__ o..(filename, 'w') __ fh:
                     fh.w..(filecontent.tPT..
-            except Exception __ e:
+            _____ Exception __ e:
                 error _ f'Cannot write file: {e}'
         __ error:
             qtw.?MB...critical(N.., 'Error', error)

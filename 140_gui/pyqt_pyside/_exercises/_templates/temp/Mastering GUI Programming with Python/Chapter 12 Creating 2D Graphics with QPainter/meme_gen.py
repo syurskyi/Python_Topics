@@ -84,35 +84,35 @@ c_ MemeEditForm ?.?W..
 
         # Image
         image_source _ ImageFileButton(changed_self.on_change)
-        layout().addRow('Image file', image_source)
+        layout().aR..('Image file', image_source)
 
         # Text entries
         top_text _ qtw.QPlainTextEdit(textChanged_self.on_change)
         bottom_text _ qtw.QPlainTextEdit(textChanged_self.on_change)
-        layout().addRow("Top Text", top_text)
-        layout().addRow("Bottom Text", bottom_text)
+        layout().aR..("Top Text", top_text)
+        layout().aR..("Bottom Text", bottom_text)
 
         # Text color and font
         text_color _ ColorButton('white', changed_self.on_change)
-        layout().addRow("Text Color", text_color)
+        layout().aR..("Text Color", text_color)
         text_font _ FontButton('Impact', 32, changed_self.on_change)
-        layout().addRow("Text Font", text_font)
+        layout().aR..("Text Font", text_font)
 
         # Background Boxes
         text_bg_color _ ColorButton('black', changed_self.on_change)
-        layout().addRow('Text Background', text_bg_color)
-        top_bg_height _ qtw.QSpinBox(
+        layout().aR..('Text Background', text_bg_color)
+        top_bg_height _ qtw.SB..(
             minimum_0, maximum_32,
             valueChanged_self.on_change, suffix_' line(s)')
-        layout().addRow('Top BG height', top_bg_height)
-        bottom_bg_height _ qtw.QSpinBox(
+        layout().aR..('Top BG height', top_bg_height)
+        bottom_bg_height _ qtw.SB..(
             minimum_0, maximum_32,
             valueChanged_self.on_change, suffix_' line(s)')
-        layout().addRow('Bottom BG height', bottom_bg_height)
-        bg_padding _ qtw.QSpinBox(
+        layout().aR..('Bottom BG height', bottom_bg_height)
+        bg_padding _ qtw.SB..(
             minimum_0, maximum_100, value_10,
             valueChanged_self.on_change, suffix_' px')
-        layout().addRow('BG Padding', bg_padding)
+        layout().aR..('BG Padding', bg_padding)
 
     ___ on_change 
         data _ {
@@ -142,7 +142,7 @@ c_ MainWindow(qtw.QMainWindow):
         sWT..('Qt Meme Generator')
 
         # define some constants
-        max_size _ qtc.QSize(800, 600)
+        max_size _ qtc.?S..(800, 600)
         image _ qtg.QImage(
             max_size, qtg.QImage.Format_ARGB32)
         image.fill(qtg.?C..('black'))
@@ -150,7 +150,7 @@ c_ MainWindow(qtw.QMainWindow):
         # Container widget
         mainwidget _ qtw.?W..
         sCW..(mainwidget)
-        mainwidget.sL..(qtw.QHBoxLayout())
+        mainwidget.sL..(qtw.?HBL..
 
         # Image Previewer
         image_display _ ?.?L..(pixmap_qtg.QPixmap(image))

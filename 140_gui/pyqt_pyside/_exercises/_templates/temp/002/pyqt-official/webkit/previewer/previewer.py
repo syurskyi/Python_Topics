@@ -46,12 +46,12 @@
 ____ ?.?C.. ______ QFile, QIODevice, QTextStream, QUrl
 ____ ?.?G.. ______ ?KS..
 ____ ?.?W.. ______ (?A.., ?A.., ?FD.., QInputDialog,
-        QLineEdit, QMainWindow, ?MB.., QWidget)
+        QLineEdit, QMainWindow, ?MB.., ?W..)
 
 ____ ui_previewer ______ Ui_Form
 
 
-c_ Previewer(QWidget, Ui_Form):
+c_ Previewer(?W.., Ui_Form):
     ___  -   parent_None):
         super(Previewer, self). - (parent)
 

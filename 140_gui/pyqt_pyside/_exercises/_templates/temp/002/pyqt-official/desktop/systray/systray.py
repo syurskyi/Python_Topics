@@ -43,10 +43,10 @@
 
 
 ____ ?.?G.. ______ QIcon
-____ ?.?W.. ______ (?A.., ?A.., QCheckBox, QComboBox,
+____ ?.?W.. ______ (?A.., ?A.., QCheckBox, ?CB,
         QDialog, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit,
-        ?MB.., QMenu, ?PB.., QSpinBox, QStyle, QSystemTrayIcon,
-        QTextEdit, QVBoxLayout)
+        ?MB.., QMenu, ?PB.., SB.., QStyle, QSystemTrayIcon,
+        ?TE.., QVBoxLayout)
 
 ______ systray_rc
 
@@ -58,7 +58,7 @@ c_ Window(QDialog):
         createIconGroupBox()
         createMessageGroupBox()
 
-        iconLabel.setMinimumWidth(durationLabel.sizeHint().width())
+        iconLabel.setMinimumWidth(durationLabel.sH..().width())
 
         createActions()
         createTrayIcon()
@@ -100,7 +100,7 @@ c_ Window(QDialog):
         trayIcon.setIcon(icon)
         setWindowIcon(icon)
 
-        trayIcon.setToolTip(iconComboBox.itemText(index))
+        trayIcon.sTT..(iconComboBox.itemText(index))
 
     ___ iconActivated  reason):
         __ reason __ (QSystemTrayIcon.Trigger, QSystemTrayIcon.DoubleClick):
@@ -127,10 +127,10 @@ c_ Window(QDialog):
 
         iconLabel _ QLabel("Icon:")
 
-        iconComboBox _ QComboBox()
-        iconComboBox.addItem(QIcon(':/images/bad.png'), "Bad")
-        iconComboBox.addItem(QIcon(':/images/heart.png'), "Heart")
-        iconComboBox.addItem(QIcon(':/images/trash.png'), "Trash")
+        iconComboBox _ ?CB()
+        iconComboBox.aI..(QIcon(':/images/bad.png'), "Bad")
+        iconComboBox.aI..(QIcon(':/images/heart.png'), "Heart")
+        iconComboBox.aI..(QIcon(':/images/trash.png'), "Trash")
 
         showIconCheckBox _ QCheckBox("Show icon")
         showIconCheckBox.setChecked(True)
@@ -147,22 +147,22 @@ c_ Window(QDialog):
 
         typeLabel _ QLabel("Type:")
 
-        typeComboBox _ QComboBox()
-        typeComboBox.addItem("None", QSystemTrayIcon.NoIcon)
-        typeComboBox.addItem(style().standardIcon(
+        typeComboBox _ ?CB()
+        typeComboBox.aI..("None", QSystemTrayIcon.NoIcon)
+        typeComboBox.aI..(style().standardIcon(
                 QStyle.SP_MessageBoxInformation), "Information",
                 QSystemTrayIcon.Information)
-        typeComboBox.addItem(style().standardIcon(
+        typeComboBox.aI..(style().standardIcon(
                 QStyle.SP_MessageBoxWarning), "Warning",
                 QSystemTrayIcon.Warning)
-        typeComboBox.addItem(style().standardIcon(
+        typeComboBox.aI..(style().standardIcon(
                 QStyle.SP_MessageBoxCritical), "Critical",
                 QSystemTrayIcon.Critical)
         typeComboBox.setCurrentIndex(1)
 
         durationLabel _ QLabel("Duration:")
 
-        durationSpinBox _ QSpinBox()
+        durationSpinBox _ SB..()
         durationSpinBox.setRange(5, 60)
         durationSpinBox.setSuffix(" s")
         durationSpinBox.setValue(15)
@@ -176,7 +176,7 @@ c_ Window(QDialog):
 
         bodyLabel _ QLabel("Body:")
 
-        bodyEdit _ QTextEdit()
+        bodyEdit _ ?TE..()
         bodyEdit.sPT..("Don't believe me. Honestly, I don't have "
                 "a clue.\nClick this balloon for details.")
 

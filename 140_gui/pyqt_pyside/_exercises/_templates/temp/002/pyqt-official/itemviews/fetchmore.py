@@ -46,7 +46,7 @@
 ____ ?.?C.. ______ (pyqtSignal, QAbstractListModel, QDir, QLibraryInfo,
         QModelIndex, __)
 ____ ?.?W.. ______ (?A.., QGridLayout, QLabel, QLineEdit,
-        QListView, QSizePolicy, QTextBrowser, QWidget)
+        QListView, QSizePolicy, QTextBrowser, ?W..)
 
 
 c_ FileListModel(QAbstractListModel):
@@ -105,7 +105,7 @@ c_ FileListModel(QAbstractListModel):
         endResetModel()
 
 
-c_ Window(QWidget):
+c_ Window(?W..):
     ___  -   parent_None):
         super(Window, self). - (parent)
 

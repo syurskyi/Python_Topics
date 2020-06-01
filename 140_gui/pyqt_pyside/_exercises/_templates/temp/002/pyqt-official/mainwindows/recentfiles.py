@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ QFile, QFileInfo, QSettings, __, QTextStream
 ____ ?.?G.. ______ ?KS..
 ____ ?.?W.. ______ (?A.., ?A.., ?FD.., QMainWindow,
-        ?MB.., QTextEdit)
+        ?MB.., ?TE..)
 
 
 c_ MainWindow ?MW..
@@ -59,7 +59,7 @@ c_ MainWindow ?MW..
 
         setAttribute(__.WA_DeleteOnClose)
 
-        textEdit _ QTextEdit()
+        textEdit _ ?TE..()
         sCW..(textEdit)
 
         createActions()
@@ -191,9 +191,9 @@ c_ MainWindow ?MW..
         settings _ QSettings('Trolltech', 'Recent Files Example')
         files _ settings.value('recentFileList',   # list)
 
-        try:
+        ___
             files.remove(fileName)
-        except ValueError:
+        _____ ValueError:
             pass
 
         files.insert(0, fileName)

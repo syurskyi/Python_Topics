@@ -43,15 +43,15 @@
 
 
 ____ ?.?C.. ______ (QFile, QFileInfo, QPoint, QSettings, QSignalMapper,
-        QSize, QTextStream, __)
+        ?S.., QTextStream, __)
 ____ ?.?G.. ______ QIcon, ?KS..
 ____ ?.?W.. ______ (?A.., ?A.., ?FD.., QMainWindow,
-        QMdiArea, ?MB.., QTextEdit, QWidget)
+        QMdiArea, ?MB.., ?TE.., ?W..)
 
 ______ mdi_rc
 
 
-c_ MdiChild(QTextEdit):
+c_ MdiChild(?TE..):
     sequenceNumber _ 1
 
     ___  -
@@ -167,7 +167,7 @@ c_ MainWindow ?MW..
 
         mdiArea.subWindowActivated.c..(updateMenus)
         windowMapper _ QSignalMapper
-        windowMapper.mapped[QWidget].c..(setActiveSubWindow)
+        windowMapper.mapped[?W..].c..(setActiveSubWindow)
 
         createActions()
         createMenus()
@@ -402,7 +402,7 @@ c_ MainWindow ?MW..
     ___ readSettings
         settings _ QSettings('Trolltech', 'MDI Example')
         pos _ settings.value('pos', QPoint(200, 200))
-        size _ settings.value('size', QSize(400, 400))
+        size _ settings.value('size', ?S..(400, 400))
         move(pos)
         r..(size)
 

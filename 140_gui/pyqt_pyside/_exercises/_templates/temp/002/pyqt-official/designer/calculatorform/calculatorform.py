@@ -43,12 +43,12 @@
 
 
 ____ ?.?C.. ______ pyqtSlot
-____ ?.?W.. ______ ?A.., QWidget
+____ ?.?W.. ______ ?A.., ?W..
 
 ____ ui_calculatorform ______ Ui_CalculatorForm
 
 
-c_ CalculatorForm(QWidget):
+c_ CalculatorForm(?W..):
     ___  -   parent_None):
         super(CalculatorForm, self). - (parent)
 

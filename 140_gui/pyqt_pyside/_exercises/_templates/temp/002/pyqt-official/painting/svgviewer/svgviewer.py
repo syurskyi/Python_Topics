@@ -42,11 +42,11 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QFile, QSize, __
+____ ?.?C.. ______ QFile, ?S.., __
 ____ ?.?G.. ______ QBrush, ?C.., QImage, QPainter, QPixmap, QPen
 ____ ?.?W.. ______ (QActionGroup, ?A.., ?FD..,
         QGraphicsItem, QGraphicsRectItem, QGraphicsScene, QGraphicsView,
-        QMainWindow, QMenu, ?MB.., QWidget)
+        QMainWindow, QMenu, ?MB.., ?W..)
 ____ ?.QtOpenGL ______ QGL, QGLFormat, QGLWidget
 ____ ?.QtSvg ______ QGraphicsSvgItem
 
@@ -138,14 +138,14 @@ c_ MainWindow ?MW..
 
             view.openFile(svg_file)
 
-            __ no. path.startswith(':/'):
+            __ no. path.s_w_(':/'):
                 currentPath _ path
                 sWT..("%s - SVGViewer" % currentPath)
 
             outlineAction.sE..(True)
             backgroundAction.sE..(True)
 
-            r..(view.sizeHint() + QSize(80, 80 + mB.. .height()))
+            r..(view.sH..() + ?S..(80, 80 + mB.. .height()))
 
     ___ setRenderer  action):
         __ QGLFormat.hasOpenGL
@@ -234,9 +234,9 @@ c_ SvgView(QGraphicsView):
         outlineItem.setVisible(drawOutline)
         outlineItem.setZValue(1)
 
-        s.addItem(backgroundItem)
-        s.addItem(svgItem)
-        s.addItem(outlineItem)
+        s.aI..(backgroundItem)
+        s.aI..(svgItem)
+        s.aI..(outlineItem)
 
         s.setSceneRect(outlineItem.boundingRect().adjusted(-10, -10, 10, 10))
 
@@ -247,7 +247,7 @@ c_ SvgView(QGraphicsView):
             __ QGLFormat.hasOpenGL
                 setViewport(QGLWidget(QGLFormat(QGL.SampleBuffers)))
         ____
-            setViewport(QWidget())
+            setViewport(?W..())
 
     ___ setHighQualityAntialiasing  highQualityAntialiasing):
         __ QGLFormat.hasOpenGL

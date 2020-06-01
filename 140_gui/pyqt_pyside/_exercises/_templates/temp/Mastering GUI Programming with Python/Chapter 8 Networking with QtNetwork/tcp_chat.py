@@ -39,7 +39,7 @@ c_ TcpChatInterface(qtc.QObject):
             #message_length = self.datastream.readUInt32()
             raw_message _ datastream.readQString()
             __ raw_message and delimiter __ raw_message:
-                username, message _ raw_message.split(delimiter, 1)
+                username, message _ raw_message.sp..(delimiter, 1)
                 received.emit(username, message)
 
     ___ send_message  message):
@@ -115,7 +115,7 @@ c_ MainWindow(qtw.QMainWindow):
         cw.submitted.c..(interface.send_message)
         interface.received.c..(cw.write_message)
         interface.error.c..(
-            lambda x: qtw.?MB...critical(N.., 'Error', x))
+            l___ x: qtw.?MB...critical(N.., 'Error', x))
         # Code ends here
         s..
 

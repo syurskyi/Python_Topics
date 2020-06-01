@@ -44,15 +44,15 @@
 
 ______ math
 
-____ ?.?C.. ______ (pyqtSignal, QLineF, QPointF, QRect, QRectF, QSize,
+____ ?.?C.. ______ (pyqtSignal, QLineF, QPointF, QRect, QRectF, ?S..,
         QSizeF, __)
 ____ ?.?G.. ______ (QBrush, ?C.., QFont, QIcon, QIntValidator, QPainter,
         QPainterPath, QPen, QPixmap, QPolygonF)
-____ ?.?W.. ______ (?A.., ?A.., QButtonGroup, QComboBox,
+____ ?.?W.. ______ (?A.., ?A.., QButtonGroup, ?CB,
         QFontComboBox, QGraphicsItem, QGraphicsLineItem, QGraphicsPolygonItem,
         QGraphicsScene, QGraphicsTextItem, QGraphicsView, QGridLayout,
         QHBoxLayout, QLabel, QMainWindow, QMenu, ?MB.., QSizePolicy,
-        QToolBox, QToolButton, QWidget)
+        QToolBox, QToolButton, ?W..)
 
 ______ diagramscene_rc
 
@@ -215,9 +215,9 @@ c_ DiagramItem(QGraphicsPolygonItem):
         setFlag(QGraphicsItem.ItemIsSelectable, True)
 
     ___ removeArrow  arrow):
-        try:
+        ___
             arrows.remove(arrow)
-        except ValueError:
+        _____ ValueError:
             pass
 
     ___ removeArrows
@@ -320,14 +320,14 @@ c_ DiagramScene(QGraphicsScene):
         __ myMode == InsertItem:
             item _ DiagramItem(myItemType, myItemMenu)
             item.setBrush(myItemColor)
-            addItem(item)
+            aI..(item)
             item.setPos(mouseEvent.scenePos())
             itemInserted.emit(item)
         ____ myMode == InsertLine:
             line _ QGraphicsLineItem(QLineF(mouseEvent.scenePos(),
                     mouseEvent.scenePos()))
             line.setPen(QPen(myLineColor, 2))
-            addItem(line)
+            aI..(line)
         ____ myMode == InsertText:
             textItem _ DiagramTextItem()
             textItem.setFont(myFont)
@@ -335,7 +335,7 @@ c_ DiagramScene(QGraphicsScene):
             textItem.setZValue(1000.0)
             textItem.lostFocus.c..(editorLostFocus)
             textItem.selectedChange.c..(itemSelected)
-            addItem(textItem)
+            aI..(textItem)
             textItem.setDefaultTextColor(myTextColor)
             textItem.setPos(mouseEvent.scenePos())
             textInserted.emit(textItem)
@@ -372,7 +372,7 @@ c_ DiagramScene(QGraphicsScene):
                 startItem.addArrow(arrow)
                 endItem.addArrow(arrow)
                 arrow.setZValue(-1000.0)
-                addItem(arrow)
+                aI..(arrow)
                 arrow.updatePosition()
 
         line _ N..
@@ -574,7 +574,7 @@ c_ MainWindow ?MW..
         textButton.setCheckable(True)
         buttonGroup.addButton(textButton, InsertTextButton)
         textButton.setIcon(QIcon(QPixmap(':/images/textpointer.png').scaled(30, 30)))
-        textButton.setIconSize(QSize(50, 50))
+        textButton.setIconSize(?S..(50, 50))
 
         textLayout _ QGridLayout()
         textLayout.aW..(textButton, 0, 0, __.AlignHCenter)
@@ -610,9 +610,9 @@ c_ MainWindow ?MW..
 
         toolBox _ QToolBox()
         toolBox.sSP..(QSizePolicy(QSizePolicy.Maximum, QSizePolicy.Ignored))
-        toolBox.setMinimumWidth(itemWidget.sizeHint().width())
-        toolBox.addItem(itemWidget, "Basic Flowchart Shapes")
-        toolBox.addItem(backgroundWidget, "Backgrounds")
+        toolBox.setMinimumWidth(itemWidget.sH..().width())
+        toolBox.aI..(itemWidget, "Basic Flowchart Shapes")
+        toolBox.aI..(backgroundWidget, "Backgrounds")
 
     ___ createActions
         toFrontAction _ ?A..(
@@ -671,10 +671,10 @@ c_ MainWindow ?MW..
         fontCombo _ QFontComboBox()
         fontCombo.currentFontChanged.c..(currentFontChanged)
 
-        fontSizeCombo _ QComboBox()
+        fontSizeCombo _ ?CB()
         fontSizeCombo.setEditable(True)
         ___ i __ range(8, 30, 2):
-            fontSizeCombo.addItem(str(i))
+            fontSizeCombo.aI..(str(i))
         validator _ QIntValidator(2, 64, self)
         fontSizeCombo.sV..(validator)
         fontSizeCombo.currentIndexChanged.c..(fontSizeChanged)
@@ -736,7 +736,7 @@ c_ MainWindow ?MW..
                 DiagramScene.InsertLine)
         pointerTypeGroup.buttonClicked[int].c..(pointerGroupClicked)
 
-        sceneScaleCombo _ QComboBox()
+        sceneScaleCombo _ ?CB()
         sceneScaleCombo.aI..(["50%", "75%", "100%", "125%", "150%"])
         sceneScaleCombo.setCurrentIndex(2)
         sceneScaleCombo.currentIndexChanged[str].c..(sceneScaleChanged)
@@ -750,7 +750,7 @@ c_ MainWindow ?MW..
         button _ QToolButton()
         button.sT..(t__)
         button.setIcon(QIcon(image))
-        button.setIconSize(QSize(50, 50))
+        button.setIconSize(?S..(50, 50))
         button.setCheckable(True)
         backgroundButtonGroup.addButton(button)
 
@@ -769,7 +769,7 @@ c_ MainWindow ?MW..
 
         button _ QToolButton()
         button.setIcon(icon)
-        button.setIconSize(QSize(50, 50))
+        button.setIconSize(?S..(50, 50))
         button.setCheckable(True)
         buttonGroup.addButton(button, diagramType)
 

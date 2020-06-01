@@ -4,7 +4,7 @@ ____ ?.?C.. ______ *
 
 ____ MainWindow ______ Ui_MainWindow
 
-____ datetime ______ datetime
+____ d_t_ ______ d_t_
 ______ json
 ______ os
 ______ ___
@@ -21,7 +21,7 @@ application.
 
 
 ___ from_ts_to_time_of_day(ts):
-    dt _ datetime.fromtimestamp(ts)
+    dt _ d_t_.fromtimestamp(ts)
     r_ dt.strftime("%I%p").lstrip("0")
 
 
@@ -46,7 +46,7 @@ c_ WeatherWorker(QRunnable):
 
     @pyqtSlot()
     ___ run 
-        try:
+        ___
             params _ dict(
                 q_self.location,
                 appid_OPENWEATHERMAP_API_KEY
@@ -66,7 +66,7 @@ c_ WeatherWorker(QRunnable):
 
             signals.result.emit(weather, forecast)
 
-        except Exception __ e:
+        _____ Exception __ e:
             signals.error.emit(str(e))
 
         signals.finished.emit()
@@ -75,8 +75,8 @@ c_ WeatherWorker(QRunnable):
 
 c_ MainWindow(QMainWindow, Ui_MainWindow):
 
-    ___  -   *args, **kwargs):
-        super(MainWindow, self). - (*args, **kwargs)
+    ___  -   $ $$
+        super(MainWindow, self). - ($ $$)
         setupUi
 
         pushButton.pressed.c..(update_weather)

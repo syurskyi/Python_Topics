@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ __
 ____ ?.?W.. ______ (QGridLayout, QHBoxLayout, QLabel, QLineEdit,
-        ?MB.., ?PB.., QTextEdit, QVBoxLayout, QWidget)
+        ?MB.., ?PB.., ?TE.., QVBoxLayout, ?W..)
 
 
 c_ SortedDict(dict):
@@ -76,7 +76,7 @@ c_ SortedDict(dict):
     iterkeys _ __iter__
 
 
-c_ AddressBook(QWidget):
+c_ AddressBook(?W..):
     ___  -   parent_None):
         super(AddressBook, self). - (parent)
 
@@ -89,7 +89,7 @@ c_ AddressBook(QWidget):
         nameLine.setReadOnly(True)
 
         addressLabel _ QLabel("Address:")
-        addressText _ QTextEdit()
+        addressText _ ?TE..()
         addressText.setReadOnly(True)
 
         addButton _ ?PB..("&Add")
@@ -203,14 +203,14 @@ c_ AddressBook(QWidget):
         name _ nameLine.t__()
         it _ iter(contacts)
 
-        try:
+        ___
             w__ T..
                 this_name, _ _ it.next()
 
                 __ this_name == name:
                     next_name, next_address _ it.next()
                     break
-        except StopIteration:
+        _____ StopIteration:
             next_name, next_address _ iter(contacts).next()
 
         nameLine.sT..(next_name)

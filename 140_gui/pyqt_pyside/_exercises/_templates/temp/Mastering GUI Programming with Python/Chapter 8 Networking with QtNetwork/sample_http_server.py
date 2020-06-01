@@ -15,7 +15,7 @@ c_ TestHandler(BaseHTTPRequestHandler):
         send_header('Content-type', 'text/html')
         end_headers()
 
-    ___ do_POST  *args, **kwargs):
+    ___ do_POST  $ $$
         content_length _ headers['Content-Length']
         data _ rfile.read(int(content_length))
         _print_request_data()

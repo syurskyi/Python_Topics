@@ -21,7 +21,7 @@ c_ Ui_Window(object):
         verticalLayout.aW..(webView)
         horizontalLayout _ ?W...QHBoxLayout()
         horizontalLayout.setObjectName("horizontalLayout")
-        formLayout _ ?W...QFormLayout()
+        formLayout _ ?W...?FL..
         formLayout.setFieldGrowthPolicy(?W...QFormLayout.ExpandingFieldsGrow)
         formLayout.setObjectName("formLayout")
         elementLabel _ ?W...QLabel(Window)

@@ -43,7 +43,7 @@ c_ Ui_NicknameDialog(object):
         hboxlayout.setSpacing(6)
         hboxlayout.setObjectName("hboxlayout")
         spacerItem _ ?W...QSpacerItem(131, 31, ?W...QSizePolicy.E.., ?W...QSizePolicy.Minimum)
-        hboxlayout.addItem(spacerItem)
+        hboxlayout.aI..(spacerItem)
         okButton _ ?W...?PB..(NicknameDialog)
         okButton.setObjectName("okButton")
         hboxlayout.aW..(okButton)
@@ -51,7 +51,7 @@ c_ Ui_NicknameDialog(object):
         cancelButton.setObjectName("cancelButton")
         hboxlayout.aW..(cancelButton)
         spacerItem1 _ ?W...QSpacerItem(40, 20, ?W...QSizePolicy.E.., ?W...QSizePolicy.Minimum)
-        hboxlayout.addItem(spacerItem1)
+        hboxlayout.aI..(spacerItem1)
         vboxlayout.aL..(hboxlayout)
 
         retranslateUi(NicknameDialog)

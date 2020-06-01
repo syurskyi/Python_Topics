@@ -76,10 +76,10 @@ c_ Receiver(QDialog):
         w__ udpSocket.hasPendingDatagrams
             datagram, host, port _ udpSocket.readDatagram(udpSocket.pendingDatagramSize())
 
-            try:
+            ___
                 # Python v3.
                 datagram _ str(datagram, encoding_'ascii')
-            except TypeError:
+            _____ TypeError:
                 # Python v2.
                 pass
 

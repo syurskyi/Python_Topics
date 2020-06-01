@@ -43,16 +43,16 @@
 
 
 ____ ?.?C.. ______ QFile, QRegExp, QTextCodec, QTextStream
-____ ?.?W.. ______ (?A.., ?A.., QComboBox, QDialog,
+____ ?.?W.. ______ (?A.., ?A.., ?CB, QDialog,
         QDialogButtonBox, ?FD.., QGridLayout, QLabel, QMainWindow, QMenu,
-        ?MB.., QTextEdit)
+        ?MB.., ?TE..)
 
 
 ___ codec_name(codec):
-    try:
+    ___
         # Python v3.
         name _ str(codec.name(), encoding_'ascii')
-    except TypeError:
+    _____ TypeError:
         # Python v2.
         name _ str(codec.name())
 
@@ -63,8 +63,8 @@ c_ MainWindow ?MW..
     ___  -
         super(MainWindow, self). - ()
 
-        textEdit _ QTextEdit()
-        textEdit.setLineWrapMode(QTextEdit.NoWrap)
+        textEdit _ ?TE..()
+        textEdit.setLineWrapMode(?TE...NoWrap)
         sCW..(textEdit)
 
         codecs _   # list
@@ -133,9 +133,9 @@ c_ MainWindow ?MW..
             sortKey _ codec_name(codec).upper()
             rank _ 0
 
-            __ sortKey.startswith('UTF-8'):
+            __ sortKey.s_w_('UTF-8'):
                 rank _ 1
-            ____ sortKey.startswith('UTF-16'):
+            ____ sortKey.s_w_('UTF-16'):
                 rank _ 2
             ____ iso8859RegExp.exactMatch(sortKey):
                 __ le.(iso8859RegExp.cap(1)) == 1:
@@ -195,12 +195,12 @@ c_ PreviewForm(QDialog):
     ___  -   parent):
         super(PreviewForm, self). - (parent)
 
-        encodingComboBox _ QComboBox()
+        encodingComboBox _ ?CB()
         encodingLabel _ QLabel("&Encoding:")
         encodingLabel.setBuddy(encodingComboBox)
 
-        textEdit _ QTextEdit()
-        textEdit.setLineWrapMode(QTextEdit.NoWrap)
+        textEdit _ ?TE..()
+        textEdit.setLineWrapMode(?TE...NoWrap)
         textEdit.setReadOnly(True)
 
         buttonBox _ QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
@@ -222,7 +222,7 @@ c_ PreviewForm(QDialog):
     ___ setCodecList  codecs):
         encodingComboBox.clear()
         ___ codec __ codecs:
-            encodingComboBox.addItem(codec_name(codec), codec.mibEnum())
+            encodingComboBox.aI..(codec_name(codec), codec.mibEnum())
 
     ___ setEncodedData  data):
         encodedData _ data

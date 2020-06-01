@@ -75,7 +75,7 @@ c_ MainWindow(qtw.QMainWindow):
         cx_form.sL..(qtw.QFormLayout())
 
         heading _ ?.?L..("Fight Fighter!")
-        cx_form.layout().addRow(heading)
+        cx_form.layout().aR..(heading)
 
         inputs _ {
             'Server': qtw.?LE..,
@@ -94,7 +94,7 @@ c_ MainWindow(qtw.QMainWindow):
         inputs['Team'].aI..(teams)
 
         ___ label, widget __ inputs.items
-            cx_form.layout().addRow(label, widget)
+            cx_form.layout().aR..(label, widget)
         #self.submit = qtw.QPushButton(
         submit _ ColorButton(
             'Connect',
@@ -110,7 +110,7 @@ c_ MainWindow(qtw.QMainWindow):
             'Cancel',
             c___self.close
         )
-        cx_form.layout().addRow(submit, cancel)
+        cx_form.layout().aR..(submit, cancel)
 
         #self.show()
         #return
@@ -168,8 +168,8 @@ c_ MainWindow(qtw.QMainWindow):
 
         # Create images
 
-        go_pixmap _ qtg.QPixmap(qtc.QSize(32, 32))
-        stop_pixmap _ qtg.QPixmap(qtc.QSize(32, 32))
+        go_pixmap _ qtg.QPixmap(qtc.?S..(32, 32))
+        stop_pixmap _ qtg.QPixmap(qtc.?S..(32, 32))
         go_pixmap.fill(qtg.?C..('green'))
         stop_pixmap.fill(qtg.?C..('red'))
 
@@ -181,7 +181,7 @@ c_ MainWindow(qtw.QMainWindow):
         submit.setIcon(connect_icon)
         submit.setDisabled(True)
         inputs['Server'].textChanged.c..(
-            lambda x: submit.setDisabled(x == '')
+            l___ x: submit.setDisabled(x == '')
         )
 
         # using resources
@@ -327,8 +327,8 @@ c_ MainWindow(qtw.QMainWindow):
         # Simple property animation
         heading_animation _ qtc.QPropertyAnimation(
             heading, b'maximumSize')
-        heading_animation.setStartValue(qtc.QSize(10, logo.height()))
-        heading_animation.setEndValue(qtc.QSize(400, logo.height()))
+        heading_animation.setStartValue(qtc.?S..(10, logo.height()))
+        heading_animation.setEndValue(qtc.?S..(400, logo.height()))
         heading_animation.setDuration(2000)
         #self.heading_animation.start()
 

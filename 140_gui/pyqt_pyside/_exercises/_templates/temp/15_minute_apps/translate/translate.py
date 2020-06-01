@@ -4,11 +4,11 @@ from PyQt5.QtCore import *
 
 from MainWindow import Ui_MainWindow
 
-try:
+___
     from googletrans import Translator
     GOOGLE_TRANSLATE_AVAILABLE = True
 
-except ImportError:
+_____ ImportError:
     GOOGLE_TRANSLATE_AVAILABLE = False
 
 import json
@@ -86,8 +86,8 @@ LANGUAGES = {
 
 class MainWindow(QMainWindow, Ui_MainWindow):
 
-    def  - (self, *args, **kwargs):
-        super(MainWindow, self). - (*args, **kwargs)
+    def  - (self, $ $$
+        super(MainWindow, self). - ($ $$)
         setupUi
 
         translator = Translator()
@@ -117,10 +117,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         if language_src:
             params['src'] = language_src
 
-        try:
+        ___
             tr = translator.translate(**params)
 
-        except Exception:
+        _____ Exception:
             destTextEdit.setPlainText('Google translate error :(. Try translating from English')
             return False
 

@@ -47,7 +47,7 @@ ____ ?.?G.. ______ (QFont, QIcon, ?KS.., QTextCharFormat,
         QTextCursor, QTextTableFormat)
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
 ____ ?.?W.. ______ (?A.., ?A.., QDialog, QDockWidget,
-        ?FD.., QListWidget, QMainWindow, ?MB.., QTextEdit)
+        ?FD.., QListWidget, QMainWindow, ?MB.., ?TE..)
 
 ______ dockwidgets_rc
 
@@ -56,7 +56,7 @@ c_ MainWindow ?MW..
     ___  -
         super(MainWindow, self). - ()
 
-        textEdit _ QTextEdit()
+        textEdit _ ?TE..()
         sCW..(textEdit)
 
         createActions()
@@ -152,7 +152,7 @@ c_ MainWindow ?MW..
     ___ insertCustomer  customer):
         __ no. customer:
             r_
-        customerList _ customer.split(', ')
+        customerList _ customer.sp..(', ')
         document _ textEdit.document()
         cursor _ document.find('NAME')
         __ no. cursor.isNull

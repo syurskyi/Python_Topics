@@ -59,7 +59,7 @@ c_ ColorItem(QGraphicsItem):
 
         color _ ?C..(qrand() % 256, qrand() % 256, qrand() % 256)
 
-        setToolTip(
+        sTT..(
             "QColor(%d, %d, %d)\nClick and drag this color onto the robot!" % 
               (color.red(), color.green(), color.blue())
         )
@@ -297,12 +297,12 @@ __ __name__== '__main__':
         item _ ColorItem()
         angle _ i*6.28 / 10.0
         item.setPos(math.sin(angle)*150, math.cos(angle)*150)
-        scene.addItem(item)
+        scene.aI..(item)
 
     robot _ Robot()
     robot.setTransform(QTransform.fromScale(1.2, 1.2), True)
     robot.setPos(0, -20)
-    scene.addItem(robot)
+    scene.aI..(robot)
 
     view _ GraphicsView(scene)
     view.setRenderHint(QPainter.Antialiasing)

@@ -45,16 +45,16 @@
 ______ random
 
 ____ ?.?C.. ______ (pyqtSignal, QAbstractListModel, QByteArray,
-        QDataStream, QIODevice, QMimeData, QModelIndex, QPoint, QRect, QSize,
+        QDataStream, QIODevice, QMimeData, QModelIndex, QPoint, QRect, ?S..,
         __)
 ____ ?.?G.. ______ ?C.., QCursor, QDrag, QIcon, QPainter, QPixmap
 ____ ?.?W.. ______ (?A.., ?FD.., QFrame, QHBoxLayout,
-        QListView, QMainWindow, ?MB.., QSizePolicy, QWidget)
+        QListView, QMainWindow, ?MB.., QSizePolicy, ?W..)
 
 ______ puzzle_rc
 
 
-c_ PuzzleWidget(QWidget):
+c_ PuzzleWidget(?W..):
 
     puzzleCompleted _ pyqtSignal()
 
@@ -68,8 +68,8 @@ c_ PuzzleWidget(QWidget):
         inPlace _ 0
 
         setAcceptDrops(True)
-        setMinimumSize(400, 400)
-        setMaximumSize(400, 400)
+        sMS..(400, 400)
+        sMS..(400, 400)
 
     ___ clear 
         pieceLocations _   # list
@@ -132,9 +132,9 @@ c_ PuzzleWidget(QWidget):
             event.ignore()
 
     ___ findPiece  pieceRect):
-        try:
+        ___
             r_ pieceRects.index(pieceRect)
-        except ValueError:
+        _____ ValueError:
             r_ -1
 
     ___ mousePressEvent  event):
@@ -400,8 +400,8 @@ c_ MainWindow ?MW..
         piecesList _ QListView()
         piecesList.setDragEnabled(True)
         piecesList.setViewMode(QListView.IconMode)
-        piecesList.setIconSize(QSize(60,60))
-        piecesList.setGridSize(QSize(80,80))
+        piecesList.setIconSize(?S..(60,60))
+        piecesList.setGridSize(?S..(80,80))
         piecesList.setSpacing(10)
         piecesList.setMovement(QListView.Snap)
         piecesList.setAcceptDrops(True)

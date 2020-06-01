@@ -42,14 +42,14 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QFileInfo, QSize, __
+____ ?.?C.. ______ QFileInfo, ?S.., __
 ____ ?.?G.. ______ QMovie, ?P..
 ____ ?.?W.. ______ (?A.., QCheckBox, ?FD.., QGridLayout,
-        QHBoxLayout, QLabel, QSizePolicy, QSlider, QSpinBox, QStyle,
-        QToolButton, QVBoxLayout, QWidget)
+        QHBoxLayout, QLabel, QSizePolicy, QSlider, SB.., QStyle,
+        QToolButton, QVBoxLayout, ?W..)
 
 
-c_ MoviePlayer(QWidget):
+c_ MoviePlayer(?W..):
     ___  -   parent_None):
         super(MoviePlayer, self). - (parent)
 
@@ -145,7 +145,7 @@ c_ MoviePlayer(QWidget):
 
         speedLabel _ QLabel("Speed:")
 
-        speedSpinBox _ QSpinBox()
+        speedSpinBox _ SB..()
         speedSpinBox.setRange(1, 9999)
         speedSpinBox.setValue(100)
         speedSpinBox.setSuffix("%")
@@ -158,37 +158,37 @@ c_ MoviePlayer(QWidget):
         controlsLayout.aW..(speedSpinBox, 2, 1)
 
     ___ createButtons
-        iconSize _ QSize(36, 36)
+        iconSize _ ?S..(36, 36)
 
         openButton _ QToolButton()
         openButton.setIcon(style().standardIcon(QStyle.SP_DialogOpenButton))
         openButton.setIconSize(iconSize)
-        openButton.setToolTip("Open File")
+        openButton.sTT..("Open File")
         openButton.c__.c..(o..)
 
         playButton _ QToolButton()
         playButton.setIcon(style().standardIcon(QStyle.SP_MediaPlay))
         playButton.setIconSize(iconSize)
-        playButton.setToolTip("Play")
+        playButton.sTT..("Play")
         playButton.c__.c..(movie.start)
 
         pauseButton _ QToolButton()
         pauseButton.setCheckable(True)
         pauseButton.setIcon(style().standardIcon(QStyle.SP_MediaPause))
         pauseButton.setIconSize(iconSize)
-        pauseButton.setToolTip("Pause")
+        pauseButton.sTT..("Pause")
         pauseButton.c__.c..(movie.setPaused)
 
         stopButton _ QToolButton()
         stopButton.setIcon(style().standardIcon(QStyle.SP_MediaStop))
         stopButton.setIconSize(iconSize)
-        stopButton.setToolTip("Stop")
+        stopButton.sTT..("Stop")
         stopButton.c__.c..(movie.stop)
 
         quitButton _ QToolButton()
         quitButton.setIcon(style().standardIcon(QStyle.SP_DialogCloseButton))
         quitButton.setIconSize(iconSize)
-        quitButton.setToolTip("Quit")
+        quitButton.sTT..("Quit")
         quitButton.c__.c..(close)
 
         buttonsLayout _ QHBoxLayout()

@@ -42,13 +42,13 @@
 #############################################################################
 
 
-____ ?.?C.. ______ (pyqtProperty, pyqtSignal, pyqtSlot, QPoint, QSize,
+____ ?.?C.. ______ (pyqtProperty, pyqtSignal, pyqtSlot, QPoint, ?S..,
         __, QTime, QTimer)
 ____ ?.?G.. ______ QBrush, ?C.., QPainter, QPen, QPolygon
-____ ?.?W.. ______ ?A.., QWidget
+____ ?.?W.. ______ ?A.., ?W..
 
 
-c_ PyAnalogClock(QWidget):
+c_ PyAnalogClock(?W..):
     """PyAnalogClock(QWidget)
 
     Provides an analog clock custom widget with signals, slots and properties.
@@ -135,11 +135,11 @@ c_ PyAnalogClock(QWidget):
 
     ___ minimumSizeHint
 
-        r_ QSize(50, 50)
+        r_ ?S..(50, 50)
 
-    ___ sizeHint
+    ___ sH..
 
-        r_ QSize(100, 100)
+        r_ ?S..(100, 100)
 
     ___ updateTime
 

@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ QRegExp, __
 ____ ?.?G.. ______ ?P..
-____ ?.?W.. ______ (?A.., QCheckBox, QComboBox, QDialog,
+____ ?.?W.. ______ (?A.., QCheckBox, ?CB, QDialog,
         QGridLayout, QHBoxLayout, QLabel, QLineEdit, QSizePolicy)
 
 
@@ -54,7 +54,7 @@ c_ RegExpDialog(QDialog):
     ___  -   parent_None):
         super(RegExpDialog, self). - (parent)
 
-        patternComboBox _ QComboBox()
+        patternComboBox _ ?CB()
         patternComboBox.setEditable(True)
         patternComboBox.sSP..(QSizePolicy.E..,
                 QSizePolicy.Preferred)
@@ -72,16 +72,16 @@ c_ RegExpDialog(QDialog):
         escapedPatternLabel _ QLabel("&Escaped Pattern:")
         escapedPatternLabel.setBuddy(escapedPatternLineEdit)
 
-        syntaxComboBox _ QComboBox()
-        syntaxComboBox.addItem("Regular expression v1", QRegExp.RegExp)
-        syntaxComboBox.addItem("Regular expression v2", QRegExp.RegExp2)
-        syntaxComboBox.addItem("Wildcard", QRegExp.Wildcard)
-        syntaxComboBox.addItem("Fixed string", QRegExp.FixedString)
+        syntaxComboBox _ ?CB()
+        syntaxComboBox.aI..("Regular expression v1", QRegExp.RegExp)
+        syntaxComboBox.aI..("Regular expression v2", QRegExp.RegExp2)
+        syntaxComboBox.aI..("Wildcard", QRegExp.Wildcard)
+        syntaxComboBox.aI..("Fixed string", QRegExp.FixedString)
 
         syntaxLabel _ QLabel("&Pattern Syntax:")
         syntaxLabel.setBuddy(syntaxComboBox)
 
-        textComboBox _ QComboBox()
+        textComboBox _ ?CB()
         textComboBox.setEditable(True)
         textComboBox.sSP..(QSizePolicy.E..,
                 QSizePolicy.Preferred)
@@ -140,11 +140,11 @@ c_ RegExpDialog(QDialog):
         minimalCheckBox.toggled.c..(refresh)
         syntaxComboBox.currentIndexChanged.c..(refresh)
 
-        patternComboBox.addItem("[A-Za-z_]+([A-Za-z_0-9]*)")
-        textComboBox.addItem("(10 + delta4)* 32")
+        patternComboBox.aI..("[A-Za-z_]+([A-Za-z_0-9]*)")
+        textComboBox.aI..("(10 + delta4)* 32")
 
         sWT..("RegExp")
-        setFixedHeight(sizeHint().height())
+        setFixedHeight(sH..().height())
         refresh()
 
     ___ refresh 

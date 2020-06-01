@@ -45,11 +45,11 @@
 
 ____ ?.?C.. ______ QStringListModel
 ____ ?.?G.. ______ QStandardItem, QStandardItemModel
-____ ?.?W.. ______ (?A.., QComboBox, QDataWidgetMapper,
-        QGridLayout, QLabel, QLineEdit, ?PB.., QTextEdit, QWidget)
+____ ?.?W.. ______ (?A.., ?CB, QDataWidgetMapper,
+        QGridLayout, QLabel, QLineEdit, ?PB.., ?TE.., ?W..)
 
 
-c_ Window(QWidget):
+c_ Window(?W..):
     ___  -   parent_None):
         super(Window, self). - (parent)
 
@@ -60,9 +60,9 @@ c_ Window(QWidget):
         nameLabel _ QLabel("Na&me:")
         nameEdit _ ?LE..
         addressLabel _ QLabel("&Address:")
-        addressEdit _ QTextEdit()
+        addressEdit _ ?TE..()
         typeLabel _ QLabel("&Type:")
-        typeComboBox _ QComboBox()
+        typeComboBox _ ?CB()
         nextButton _ ?PB..("&Next")
         previousButton _ ?PB..("&Previous")
 

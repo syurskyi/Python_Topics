@@ -45,13 +45,13 @@
 ______ ___
 ______ math
 
-____ ?.?C.. ______ pyqtSignal, QPoint, QSize, __
+____ ?.?C.. ______ pyqtSignal, QPoint, ?S.., __
 ____ ?.?G.. ______ ?C.., QOpenGLVersionProfile
 ____ ?.?W.. ______ (?A.., QHBoxLayout, QOpenGLWidget, QSlider,
-        QWidget)
+        ?W..)
 
 
-c_ Window(QWidget):
+c_ Window(?W..):
     ___  -
         super(Window, self). - ()
 
@@ -112,10 +112,10 @@ c_ GLWidget(QOpenGLWidget):
         trolltechPurple _ ?C...fromCmykF(0.39, 0.39, 0.0, 0.0)
 
     ___ minimumSizeHint
-        r_ QSize(50, 50)
+        r_ ?S..(50, 50)
 
-    ___ sizeHint
-        r_ QSize(400, 400)
+    ___ sH..
+        r_ ?S..(400, 400)
 
     ___ setXRotation  angle):
         angle _ normalizeAngle(angle)

@@ -26,12 +26,12 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 ______ random
 
 ____ ?.?C.. ______ (pyqtProperty, pyqtSignal, pyqtSlot, QPointF, QRectF,
-        QSize, QSizeF, __, QTimer)
+        ?S.., QSizeF, __, QTimer)
 ____ ?.?G.. ______ QBrush, ?C.., QPainter, QPen, QRadialGradient
-____ ?.?W.. ______ ?A.., QWidget
+____ ?.?W.. ______ ?A.., ?W..
 
 
-c_ BaseClass(QWidget):
+c_ BaseClass(?W..):
     """BaseClass(QWidget)
 
     Provides a base custom widget class to show that properties implemented
@@ -133,7 +133,7 @@ c_ BubblesWidget(BaseClass):
         bubbleTimer.timeout.c..(expandBubble)
 
         setMouseTracking(True)
-        setMinimumSize(QSize(200, 200))
+        sMS..(?S..(200, 200))
         sWT..("Bubble Maker")
 
     ___ paintEvent  event):
@@ -253,9 +253,9 @@ c_ BubblesWidget(BaseClass):
         __ left:
             bubblesRemaining.emit(le.(bubbles))
 
-    ___ sizeHint
+    ___ sH..
 
-        r_ QSize(200, 200)
+        r_ ?S..(200, 200)
 
     # We provide getter and setter methods for the numberOfBubbles property.
     ___ getBubbles

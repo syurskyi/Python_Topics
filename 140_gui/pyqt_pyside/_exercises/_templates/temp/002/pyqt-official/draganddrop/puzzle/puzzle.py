@@ -45,16 +45,16 @@
 ______ random
 
 ____ ?.?C.. ______ (pyqtSignal, QByteArray, QDataStream, QIODevice,
-        QMimeData, QPoint, QRect, QSize, __)
+        QMimeData, QPoint, QRect, ?S.., __)
 ____ ?.?G.. ______ QDrag, ?C.., QCursor, QIcon, QPainter, QPixmap
 ____ ?.?W.. ______ (?A.., ?FD.., QFrame, QHBoxLayout,
         QListView, QListWidget, QListWidgetItem, QMainWindow, ?MB..,
-        QSizePolicy, QWidget)
+        QSizePolicy, ?W..)
 
 ______ puzzle_rc
 
 
-c_ PuzzleWidget(QWidget):
+c_ PuzzleWidget(?W..):
 
     puzzleCompleted _ pyqtSignal()
 
@@ -68,8 +68,8 @@ c_ PuzzleWidget(QWidget):
         inPlace _ 0
 
         setAcceptDrops(True)
-        setMinimumSize(400, 400)
-        setMaximumSize(400, 400)
+        sMS..(400, 400)
+        sMS..(400, 400)
 
     ___ clear
         pieceLocations _   # list
@@ -132,9 +132,9 @@ c_ PuzzleWidget(QWidget):
             event.ignore()
 
     ___ findPiece  pieceRect):
-        try:
+        ___
             r_ pieceRects.index(pieceRect)
-        except ValueError:
+        _____ ValueError:
             r_ -1
 
     ___ mousePressEvent  event):
@@ -202,7 +202,7 @@ c_ PiecesList(QListWidget):
 
         setDragEnabled(True)
         setViewMode(QListView.IconMode)
-        setIconSize(QSize(60, 60))
+        setIconSize(?S..(60, 60))
         setSpacing(10)
         setAcceptDrops(True)
         setDropIndicatorShown(True)
@@ -319,7 +319,7 @@ c_ MainWindow ?MW..
         ___ i __ range(piecesList.count()):
             __ random.random() < 0.5:
                 item _ piecesList.takeItem(i)
-                piecesList.insertItem(0, item)
+                piecesList.iI..(0, item)
 
         puzzleWidget.clear()
 

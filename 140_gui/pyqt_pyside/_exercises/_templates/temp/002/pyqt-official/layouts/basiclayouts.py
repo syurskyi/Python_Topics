@@ -42,9 +42,9 @@
 #############################################################################
 
 
-____ ?.?W.. ______ (?A.., QComboBox, QDialog,
+____ ?.?W.. ______ (?A.., ?CB, QDialog,
         QDialogButtonBox, QFormLayout, QGridLayout, QGroupBox, QHBoxLayout,
-        QLabel, QLineEdit, QMenu, QMenuBar, ?PB.., QSpinBox, QTextEdit,
+        QLabel, QLineEdit, QMenu, QMenuBar, ?PB.., SB.., ?TE..,
         QVBoxLayout)
 
 
@@ -60,7 +60,7 @@ c_ Dialog(QDialog):
         createGridGroupBox()
         createFormGroupBox()
 
-        bigEditor _ QTextEdit()
+        bigEditor _ ?TE..()
         bigEditor.sPT..("This widget takes up all the remaining space "
                 "in the top-level layout.")
 
@@ -109,7 +109,7 @@ c_ Dialog(QDialog):
             layout.aW..(label, i + 1, 0)
             layout.aW..(lineEdit, i + 1, 1)
 
-        smallEditor _ QTextEdit()
+        smallEditor _ ?TE..()
         smallEditor.sPT..("This widget takes up about two thirds "
                 "of the grid layout.")
 
@@ -121,10 +121,10 @@ c_ Dialog(QDialog):
 
     ___ createFormGroupBox 
         formGroupBox _ QGroupBox("Form layout")
-        layout _ QFormLayout()
-        layout.addRow(QLabel("Line 1:"), QLineEdit())
-        layout.addRow(QLabel("Line 2, long text:"), QComboBox())
-        layout.addRow(QLabel("Line 3:"), QSpinBox())
+        layout _ ?FL..
+        layout.aR..(QLabel("Line 1:"), QLineEdit())
+        layout.aR..(QLabel("Line 2, long text:"), ?CB())
+        layout.aR..(QLabel("Line 3:"), SB..())
         formGroupBox.sL..(layout)
 
 

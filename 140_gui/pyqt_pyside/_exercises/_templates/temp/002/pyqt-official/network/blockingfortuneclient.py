@@ -46,7 +46,7 @@ ____ ?.?C.. ______ (pyqtSignal, QDataStream, QMutex, QMutexLocker,
         QThread, QWaitCondition)
 ____ ?.?G.. ______ QIntValidator
 ____ ?.?W.. ______ (?A.., QDialogButtonBox, QGridLayout,
-        QLabel, QLineEdit, ?MB.., ?PB.., QWidget)
+        QLabel, QLineEdit, ?MB.., ?PB.., ?W..)
 ____ ?.QtNetwork ______ (QAbstractSocket, QHostAddress, QNetworkInterface,
         QTcpSocket)
 
@@ -121,7 +121,7 @@ c_ FortuneThread(QThread):
             mutex.unlock()
 
 
-c_ BlockingClient(QWidget):
+c_ BlockingClient(?W..):
     ___  -   parent_None):
         super(BlockingClient, self). - (parent)
 

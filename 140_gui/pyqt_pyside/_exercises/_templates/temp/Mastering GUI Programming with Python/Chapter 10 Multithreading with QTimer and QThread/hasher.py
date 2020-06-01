@@ -12,14 +12,14 @@ c_ HashForm ?.?W..
         sL..(qtw.QFormLayout())
         source_path _ qtw.?PB..(
             'Click to select…', c___self.on_source_click)
-        layout().addRow('Source Path', source_path)
+        layout().aR..('Source Path', source_path)
         destination_file _ qtw.?PB..(
             'Click to select…', c___self.on_dest_click)
-        layout().addRow('Destination File', destination_file)
-        threads _ qtw.QSpinBox(minimum_1, maximum_7, value_2)
-        layout().addRow('Threads', threads)
+        layout().aR..('Destination File', destination_file)
+        threads _ qtw.SB..(minimum_1, maximum_7, value_2)
+        layout().aR..('Threads', threads)
         submit _ qtw.?PB..('Go', c___self.on_submit)
-        layout().addRow(submit)
+        layout().aR..(submit)
 
     ___ on_source_click
         dirname _ qtw.?FD...getExistingDirectory()
@@ -117,10 +117,10 @@ c_ MainWindow(qtw.QMainWindow):
 
         form.submitted.c..(manager.do_hashing)
         form.submitted.c..(
-            lambda x, y, z: statusBar().showMessage(
+            l___ x, y, z: statusBar().showMessage(
                 f'Processing files in {x} into {y} with {z} threads.'))
         manager.finished.c..(
-            lambda: statusBar().showMessage('Finished'))
+            l___: statusBar().showMessage('Finished'))
         # End main UI code
         s..
 

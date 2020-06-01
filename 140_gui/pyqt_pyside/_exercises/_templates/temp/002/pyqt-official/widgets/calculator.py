@@ -46,7 +46,7 @@ ______ math
 
 ____ ?.?C.. ______ __
 ____ ?.?W.. ______ (?A.., QGridLayout, QLayout, QLineEdit,
-        QSizePolicy, QToolButton, QWidget)
+        QSizePolicy, QToolButton, ?W..)
 
 
 c_ Button(QToolButton):
@@ -56,14 +56,14 @@ c_ Button(QToolButton):
         sSP..(QSizePolicy.E.., QSizePolicy.Preferred)
         sT..(t__)
 
-    ___ sizeHint
-        size _ super(Button, self).sizeHint()
+    ___ sH..
+        size _ super(Button, self).sH..()
         size.setHeight(size.height() + 20)
         size.setWidth(max(size.width(), size.height()))
         r_ size
 
 
-c_ Calculator(QWidget):
+c_ Calculator(?W..):
     NumDigitButtons _ 10
     
     ___  -   parent_None):

@@ -44,7 +44,7 @@ ____ ?.?C.. ______ QFileInfo, QPoint, QRect, qRound, __, QTime, QTimer
 ____ ?.?G.. ______ (QFontMetricsF, QImage, QPainter, QPixmap, QPolygon,
         QRegion)
 ____ ?.?W.. ______ (?A.., QFrame, QGraphicsScene,
-        QGraphicsView, QGraphicsWidget, ?MB.., QWidget)
+        QGraphicsView, QGraphicsWidget, ?MB.., ?W..)
 
 ____ colors ______ Colors
 ____ demoitem ______ DemoItem
@@ -97,7 +97,7 @@ c_ MainWindow(QGraphicsView):
 
         windowRect.moveCenter(screenRect.center())
         setGeometry(windowRect)
-        setMinimumSize(80, 60)
+        sMS..(80, 60)
 
         sWT..("PyQt Examples")
         setHorizontalScrollBarPolicy(__.ScrollBarAlwaysOff)
@@ -108,7 +108,7 @@ c_ MainWindow(QGraphicsView):
 
     ___ setRenderingSystem
         setCacheMode(QGraphicsView.CacheBackground)
-        setViewport(QWidget())
+        setViewport(?W..())
 
     ___ start
         switchTimerOnOff(True)
@@ -239,7 +239,7 @@ c_ MainWindow(QGraphicsView):
                     600 - QFontMetricsF(Colors.buttonFont()).height() - 5)
 
         mainSceneRoot _ QGraphicsWidget()
-        scene.addItem(mainSceneRoot)
+        scene.aI..(mainSceneRoot)
 
         companyLogo _ ImageItem(
                 QImage(imagesDir + '/trolltech-logo.png'),

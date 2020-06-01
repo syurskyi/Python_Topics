@@ -46,13 +46,13 @@
 ____ ?.?C.. ______ pyqtSlot, QUrl
 ____ ?.?G.. ______ ?KS..
 ____ ?.?W.. ______ (?A.., ?A.., QMainWindow, ?MB..,
-        QWidget)
+        ?W..)
 
 ______ formextractor_rc
 ____ ui_formextractor ______ Ui_Form
 
 
-c_ FormExtractor(QWidget):
+c_ FormExtractor(?W..):
     ___  -   parent_None):
         super(FormExtractor, self). - (parent)
 

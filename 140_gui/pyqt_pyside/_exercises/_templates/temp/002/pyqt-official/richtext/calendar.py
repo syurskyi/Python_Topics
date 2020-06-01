@@ -45,9 +45,9 @@
 ____ ?.?C.. ______ QDate, __
 ____ ?.?G.. ______ (?C.., QFont, QTextCharFormat, QTextLength,
         QTextTableFormat)
-____ ?.?W.. ______ (?A.., QComboBox, QDateTimeEdit,
-        QHBoxLayout, QLabel, QMainWindow, QSpinBox, QTextBrowser, QVBoxLayout,
-        QWidget)
+____ ?.?W.. ______ (?A.., ?CB, ?DTE..,
+        QHBoxLayout, QLabel, QMainWindow, SB.., QTextBrowser, QVBoxLayout,
+        ?W..)
 
 
 c_ MainWindow ?MW..
@@ -60,12 +60,12 @@ c_ MainWindow ?MW..
         centralWidget _ ?W..
 
         dateLabel _ QLabel("Date:")
-        monthCombo _ QComboBox()
+        monthCombo _ ?CB()
 
         ___ month __ range(1, 13):
-            monthCombo.addItem(QDate.longMonthName(month))
+            monthCombo.aI..(QDate.longMonthName(month))
 
-        yearEdit _ QDateTimeEdit()
+        yearEdit _ ?DTE..()
         yearEdit.setDisplayFormat('yyyy')
         yearEdit.setDateRange(QDate(1753, 1, 1), QDate(8000, 1, 1))
 
@@ -73,7 +73,7 @@ c_ MainWindow ?MW..
         yearEdit.setDate(selectedDate)
 
         fontSizeLabel _ QLabel("Font size:")
-        fontSizeSpinBox _ QSpinBox()
+        fontSizeSpinBox _ SB..()
         fontSizeSpinBox.setRange(1, 64)
         fontSizeSpinBox.setValue(10)
 

@@ -18,7 +18,7 @@ ____ th.. ______ Event, get_ident
 ___ run_in_thread(thread_fn):
     ___ decorator(f):
         @wraps(f)
-        ___ result(*args, **kwargs):
+        ___ result($ $$
             thread _ thread_fn()
             r_ Executor.instance().run_in_thread(thread, f, args, kwargs)
         r_ result
@@ -58,7 +58,7 @@ c_ Executor:
             task.has_run.set()
     ___ run_in_thread  thread, f, args, kwargs):
         __ QThread.currentThread() == thread:
-            r_ f(*args, **kwargs)
+            r_ f($ $$)
         ____ _app_is_about_to_quit:
             # In this case, the target thread's event loop most likely is not
             # running any more. This would mean that our task (which is
@@ -66,7 +66,7 @@ c_ Executor:
             raise SystemExit()
         task _ Task(f, args, kwargs)
         _pending_tasks.ap..(task)
-        try:
+        ___
             receiver _ Receiver(task)
             receiver.moveToThread(thread)
             sender _ Sender()
@@ -85,9 +85,9 @@ c_ Task:
         has_run _ Event()
         _result _ _exception _ N..
     ___ __call__
-        try:
+        ___
             _result _ _fn(*_args, **_kwargs)
-        except Exception __ e:
+        _____ Exception __ e:
             _exception _ e
         finally:
             has_run.set()

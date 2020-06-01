@@ -17,7 +17,7 @@ ___ hexuuid
 ___ splitext(p):
     r_ __.p__ .splitext(p)[1].lower()
 
-c_ TextEdit(QTextEdit):
+c_ TextEdit(?TE..):
 
     ___ canInsertFromMimeData  source):
 
@@ -62,13 +62,13 @@ c_ TextEdit(QTextEdit):
 
 c_ MainWindow ?MW..
 
-    ___  -   *args, **kwargs):
-        super(MainWindow, self). - (*args, **kwargs)
+    ___  -   $ $$
+        super(MainWindow, self). - ($ $$)
 
         layout _ ?VBL..
         editor _ TextEdit()
         # Setup the QTextEdit editor configuration
-        editor.setAutoFormatting(QTextEdit.AutoAll)
+        editor.setAutoFormatting(?TE...AutoAll)
         editor.selectionChanged.c..(update_format)
         # Initialize default font size.
         font _ QFont('Times', 12)
@@ -93,7 +93,7 @@ c_ MainWindow ?MW..
         # self.menuBar().setNativeMenuBar(False)
 
         file_toolbar _ QToolBar("File")
-        file_toolbar.setIconSize(QSize(14, 14))
+        file_toolbar.setIconSize(?S..(14, 14))
         addToolBar(file_toolbar)
         file_menu _ mB.. .aM..("&File")
 
@@ -122,7 +122,7 @@ c_ MainWindow ?MW..
         file_toolbar.aA..(print_action)
 
         edit_toolbar _ QToolBar("Edit")
-        edit_toolbar.setIconSize(QSize(16, 16))
+        edit_toolbar.setIconSize(?S..(16, 16))
         addToolBar(edit_toolbar)
         edit_menu _ mB.. .aM..("&Edit")
 
@@ -176,7 +176,7 @@ c_ MainWindow ?MW..
         edit_menu.aA..(wrap_action)
 
         format_toolbar _ QToolBar("Format")
-        format_toolbar.setIconSize(QSize(16, 16))
+        format_toolbar.setIconSize(?S..(16, 16))
         addToolBar(format_toolbar)
         format_menu _ mB.. .aM..("&Format")
 
@@ -185,19 +185,19 @@ c_ MainWindow ?MW..
         fonts.currentFontChanged.c..(editor.setCurrentFont)
         format_toolbar.aW..(fonts)
 
-        fontsize _ QComboBox()
+        fontsize _ ?CB()
         fontsize.aI..([str(s) ___ s __ FONT_SIZES])
 
         # Connect to the signal producing the text of the current selection. Convert the string to float
         # and set as the pointsize. We could also use the index + retrieve from FONT_SIZES.
-        fontsize.currentIndexChanged[str].c..(lambda s: editor.setFontPointSize(float(s)) )
+        fontsize.currentIndexChanged[str].c..(l___ s: editor.setFontPointSize(float(s)) )
         format_toolbar.aW..(fontsize)
 
         bold_action _ ?A..(QIcon(__.p__ .join('images', 'edit-bold.png')), "Bold", self)
         bold_action.setStatusTip("Bold")
         bold_action.sS..(?KS...Bold)
         bold_action.setCheckable(True)
-        bold_action.toggled.c..(lambda x: editor.setFontWeight(QFont.Bold __ x else QFont.Normal))
+        bold_action.toggled.c..(l___ x: editor.setFontWeight(QFont.Bold __ x else QFont.Normal))
         format_toolbar.aA..(bold_action)
         format_menu.aA..(bold_action)
 
@@ -222,28 +222,28 @@ c_ MainWindow ?MW..
         alignl_action _ ?A..(QIcon(__.p__ .join('images', 'edit-alignment.png')), "Align left", self)
         alignl_action.setStatusTip("Align text left")
         alignl_action.setCheckable(True)
-        alignl_action.t__.c..(lambda: editor.setAlignment(__.AlignLeft))
+        alignl_action.t__.c..(l___: editor.setAlignment(__.AlignLeft))
         format_toolbar.aA..(alignl_action)
         format_menu.aA..(alignl_action)
 
         alignc_action _ ?A..(QIcon(__.p__ .join('images', 'edit-alignment-center.png')), "Align center", self)
         alignc_action.setStatusTip("Align text center")
         alignc_action.setCheckable(True)
-        alignc_action.t__.c..(lambda: editor.setAlignment(__.AlignCenter))
+        alignc_action.t__.c..(l___: editor.setAlignment(__.AlignCenter))
         format_toolbar.aA..(alignc_action)
         format_menu.aA..(alignc_action)
 
         alignr_action _ ?A..(QIcon(__.p__ .join('images', 'edit-alignment-right.png')), "Align right", self)
         alignr_action.setStatusTip("Align text right")
         alignr_action.setCheckable(True)
-        alignr_action.t__.c..(lambda: editor.setAlignment(__.AlignRight))
+        alignr_action.t__.c..(l___: editor.setAlignment(__.AlignRight))
         format_toolbar.aA..(alignr_action)
         format_menu.aA..(alignr_action)
 
         alignj_action _ ?A..(QIcon(__.p__ .join('images', 'edit-alignment-justify.png')), "Justify", self)
         alignj_action.setStatusTip("Justify text")
         alignj_action.setCheckable(True)
-        alignj_action.t__.c..(lambda: editor.setAlignment(__.AlignJustify))
+        alignj_action.t__.c..(l___: editor.setAlignment(__.AlignJustify))
         format_toolbar.aA..(alignj_action)
         format_menu.aA..(alignj_action)
 
@@ -308,11 +308,11 @@ c_ MainWindow ?MW..
     ___ file_open
         path, _ _ ?FD...gOFN..  "Open file", "", "HTML documents (*.html);Text documents (*.txt);All files (*.*)")
 
-        try:
+        ___
             w__ o..(path, 'rU') __ f:
                 t__ _ f.read()
 
-        except Exception __ e:
+        _____ Exception __ e:
             dialog_critical(str(e))
 
         ____
@@ -328,11 +328,11 @@ c_ MainWindow ?MW..
 
         t__ _ editor.toHtml() __ splitext(path) __ HTML_EXTENSIONS else editor.toPlainText()
 
-        try:
+        ___
             w__ o..(path, 'w') __ f:
                 f.w..(t__)
 
-        except Exception __ e:
+        _____ Exception __ e:
             dialog_critical(str(e))
 
     ___ file_saveas
@@ -344,11 +344,11 @@ c_ MainWindow ?MW..
 
         t__ _ editor.toHtml() __ splitext(path) __ HTML_EXTENSIONS else editor.toPlainText()
 
-        try:
+        ___
             w__ o..(path, 'w') __ f:
                 f.w..(t__)
 
-        except Exception __ e:
+        _____ Exception __ e:
             dialog_critical(str(e))
 
         ____

@@ -39,7 +39,7 @@ c_ MainWindow(qtw.QMainWindow):
         #self.stop.triggered.connect(webview.stop)
 
         # browser tabs
-        tabs _ qtw.QTabWidget(
+        tabs _ qtw.?TW..(
             tabsClosable_True, movable_True)
         tabs.tabCloseRequested.c..(tabs.removeTab)
         new _ qtw.?PB..('New')
@@ -98,12 +98,12 @@ c_ MainWindow(qtw.QMainWindow):
 
     ___ add_tab  *args):
         webview _ qtwe.QWebEngineView()
-        tab_index _ tabs.addTab(webview, 'New Tab')
+        tab_index _ tabs.aT..(webview, 'New Tab')
 
         webview.urlChanged.c..(
-            lambda x: tabs.setTabText(tab_index, x.toString()))
+            l___ x: tabs.setTabText(tab_index, x.toString()))
         webview.urlChanged.c..(
-            lambda x: urlbar.sT..(x.toString()))
+            l___ x: urlbar.sT..(x.toString()))
 
         # make it so pop-up windows call this method
         webview.createWindow _ add_tab
@@ -154,7 +154,7 @@ c_ MainWindow(qtw.QMainWindow):
             ___ history_item __ reversed(history.items()):
                 list_item _ qtw.QListWidgetItem()
                 list_item.setData(qtc.__.DisplayRole, history_item.url())
-                history_list.addItem(list_item)
+                history_list.aI..(list_item)
 
     ___ navigate_history  item):
         qurl _ item.data(qtc.__.DisplayRole)

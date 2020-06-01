@@ -42,12 +42,12 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QPoint, QRect, QSize, __
+____ ?.?C.. ______ QPoint, QRect, ?S.., __
 ____ ?.?W.. ______ (?A.., QLayout, ?PB.., QSizePolicy,
-        QWidget)
+        ?W..)
 
 
-c_ Window(QWidget):
+c_ Window(?W..):
     ___  -
         super(Window, self). - ()
 
@@ -78,7 +78,7 @@ c_ FlowLayout(QLayout):
         w__ item:
             item _ takeAt(0)
 
-    ___ addItem  item):
+    ___ aI..  item):
         itemList.ap..(item)
 
     ___ count
@@ -110,18 +110,18 @@ c_ FlowLayout(QLayout):
         super(FlowLayout, self).setGeometry(rect)
         doLayout(rect, False)
 
-    ___ sizeHint
+    ___ sH..
         r_ minimumSize()
 
     ___ minimumSize
-        size _ QSize()
+        size _ ?S..()
 
         ___ item __ itemList:
             size _ size.expandedTo(item.minimumSize())
 
         margin, _, _, _ _ getContentsMargins()
 
-        size +_ QSize(2 * margin, 2 * margin)
+        size +_ ?S..(2 * margin, 2 * margin)
         r_ size
 
     ___ doLayout  rect, testOnly):
@@ -133,18 +133,18 @@ c_ FlowLayout(QLayout):
             wid _ item.widget()
             spaceX _ spacing() + wid.style().layoutSpacing(QSizePolicy.PushButton, QSizePolicy.PushButton, __.Horizontal)
             spaceY _ spacing() + wid.style().layoutSpacing(QSizePolicy.PushButton, QSizePolicy.PushButton, __.Vertical)
-            nextX _ x + item.sizeHint().width() + spaceX
+            nextX _ x + item.sH..().width() + spaceX
             __ nextX - spaceX > rect.right() and lineHeight > 0:
                 x _ rect.x()
                 y _ y + lineHeight + spaceY
-                nextX _ x + item.sizeHint().width() + spaceX
+                nextX _ x + item.sH..().width() + spaceX
                 lineHeight _ 0
 
             __ no. testOnly:
-                item.setGeometry(QRect(QPoint(x, y), item.sizeHint()))
+                item.setGeometry(QRect(QPoint(x, y), item.sH..()))
 
             x _ nextX
-            lineHeight _ max(lineHeight, item.sizeHint().height())
+            lineHeight _ max(lineHeight, item.sH..().height())
 
         r_ y + lineHeight - rect.y()
 

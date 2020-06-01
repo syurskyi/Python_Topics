@@ -65,18 +65,18 @@ c_ ImageSettings(QDialog):
 
         ui.setupUi
 
-        ui.imageCodecBox.addItem("Default image format", "")
+        ui.imageCodecBox.aI..("Default image format", "")
         ___ codecName __ imagecapture.supportedImageCodecs
             description _ imagecapture.imageCodecDescription(codecName)
-            ui.imageCodecBox.addItem(codecName + ": " + description,
+            ui.imageCodecBox.aI..(codecName + ": " + description,
                     codecName)
 
         ui.imageQualitySlider.setRange(0, QMultimedia.VeryHighQuality)
 
-        ui.imageResolutionBox.addItem("Default resolution")
+        ui.imageResolutionBox.aI..("Default resolution")
         supportedResolutions, _ _ imagecapture.supportedResolutions()
         ___ resolution __ supportedResolutions:
-            ui.imageResolutionBox.addItem(
+            ui.imageResolutionBox.aI..(
                     "%dx%d" % (resolution.width(), resolution.height()),
                     resolution)
 
@@ -122,41 +122,41 @@ c_ VideoSettings(QDialog):
 
         ui.setupUi
 
-        ui.audioCodecBox.addItem("Default audio codec", "")
+        ui.audioCodecBox.aI..("Default audio codec", "")
         ___ codecName __ mediaRecorder.supportedAudioCodecs
             description _ mediaRecorder.audioCodecDescription(codecName)
-            ui.audioCodecBox.addItem(codecName + ": " + description,
+            ui.audioCodecBox.aI..(codecName + ": " + description,
                     codecName)
 
         supportedSampleRates, _ _ mediaRecorder.supportedAudioSampleRates()
         ___ sampleRate __ supportedSampleRates:
-            ui.audioSampleRateBox.addItem(str(sampleRate), sampleRate)
+            ui.audioSampleRateBox.aI..(str(sampleRate), sampleRate)
 
         ui.audioQualitySlider.setRange(0, QMultimedia.VeryHighQuality)
 
-        ui.videoCodecBox.addItem("Default video codec", "")
+        ui.videoCodecBox.aI..("Default video codec", "")
         ___ codecName __ mediaRecorder.supportedVideoCodecs
             description _ mediaRecorder.videoCodecDescription(codecName)
-            ui.videoCodecBox.addItem(codecName + ": " + description,
+            ui.videoCodecBox.aI..(codecName + ": " + description,
                     codecName)
 
         ui.videoQualitySlider.setRange(0, QMultimedia.VeryHighQuality)
 
-        ui.videoResolutionBox.addItem("Default")
+        ui.videoResolutionBox.aI..("Default")
         supportedResolutions, _ _ mediaRecorder.supportedResolutions()
         ___ resolution __ supportedResolutions:
-            ui.videoResolutionBox.addItem(
+            ui.videoResolutionBox.aI..(
                     "%dx%d" % (resolution.width(), resolution.height()),
                     resolution)
 
-        ui.videoFramerateBox.addItem("Default")
+        ui.videoFramerateBox.aI..("Default")
         supportedFrameRates, _ _ mediaRecorder.supportedFrameRates()
         ___ rate __ supportedFrameRates:
-            ui.videoFramerateBox.addItem("%0.2f" % rate, rate)
+            ui.videoFramerateBox.aI..("%0.2f" % rate, rate)
 
-        ui.containerFormatBox.addItem("Default container", "")
+        ui.containerFormatBox.aI..("Default container", "")
         ___ format __ mediaRecorder.supportedContainers
-            ui.containerFormatBox.addItem(
+            ui.containerFormatBox.aI..(
                     format + ":" + mediaRecorder.containerDescription(
                             format),
                     format)

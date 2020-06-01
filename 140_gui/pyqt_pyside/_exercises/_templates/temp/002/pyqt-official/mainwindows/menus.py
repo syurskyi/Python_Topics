@@ -46,7 +46,7 @@ ____ ?.?C.. ______ __
 ____ ?.?G.. ______ ?KS..
 ____ ?.?W.. ______ (?A.., QActionGroup, ?A.., QFrame,
         QLabel, QMainWindow, QMenu, ?MB.., QSizePolicy, QVBoxLayout,
-        QWidget)
+        ?W..)
 
 
 c_ MainWindow ?MW..
@@ -81,7 +81,7 @@ c_ MainWindow ?MW..
         statusBar().showMessage(message)
 
         sWT..("Menus")
-        setMinimumSize(160,160)
+        sMS..(160,160)
         r..(480,320)
 
     ___ contextMenuEvent  event):

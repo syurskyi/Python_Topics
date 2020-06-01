@@ -46,8 +46,8 @@ ______ pickle
 
 ____ ?.?C.. ______ __
 ____ ?.?W.. ______ (QDialog, ?FD.., QGridLayout, QHBoxLayout,
-        QLabel, QLineEdit, ?MB.., ?PB.., QTextEdit, QVBoxLayout,
-        QWidget)
+        QLabel, QLineEdit, ?MB.., ?PB.., ?TE.., QVBoxLayout,
+        ?W..)
 
 
 c_ SortedDict(dict):
@@ -79,7 +79,7 @@ c_ SortedDict(dict):
     iterkeys _ __iter__
 
 
-c_ AddressBook(QWidget):
+c_ AddressBook(?W..):
     NavigationMode, AddingMode, EditingMode _ range(3)
 
     ___  -   parent_None):
@@ -95,7 +95,7 @@ c_ AddressBook(QWidget):
         nameLine.setReadOnly(True)
 
         addressLabel _ QLabel("Address:")
-        addressText _ QTextEdit()
+        addressText _ ?TE..()
         addressText.setReadOnly(True)
 
         addButton _ ?PB..("&Add")
@@ -117,9 +117,9 @@ c_ AddressBook(QWidget):
         previousButton.sE.. F..
 
         loadButton _ ?PB..("&Load...")
-        loadButton.setToolTip("Load contacts from a file")
+        loadButton.sTT..("Load contacts from a file")
         saveButton _ ?PB..("Sa&ve...")
-        saveButton.setToolTip("Save contacts to a file")
+        saveButton.sTT..("Save contacts to a file")
         saveButton.sE.. F..
 
         dialog _ FindDialog()
@@ -240,14 +240,14 @@ c_ AddressBook(QWidget):
         name _ nameLine.t__()
         it _ iter(contacts)
 
-        try:
+        ___
             w__ T..
                 this_name, _ _ it.next()
 
                 __ this_name == name:
                     next_name, next_address _ it.next()
                     break
-        except StopIteration:
+        _____ StopIteration:
             next_name, next_address _ iter(contacts).next()
 
         nameLine.sT..(next_name)
@@ -341,9 +341,9 @@ c_ AddressBook(QWidget):
         __ no. fileName:
             r_
 
-        try:
+        ___
             out_file _ o..(str(fileName), 'wb')
-        except IOError:
+        _____ IOError:
             ?MB...information  "Unable to open file",
                     "There was an error opening \"%s\"" % fileName)
             r_
@@ -358,9 +358,9 @@ c_ AddressBook(QWidget):
         __ no. fileName:
             r_
 
-        try:
+        ___
             in_file _ o..(str(fileName), 'rb')
-        except IOError:
+        _____ IOError:
             ?MB...information  "Unable to open file",
                     "There was an error opening \"%s\"" % fileName)
             r_

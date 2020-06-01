@@ -44,12 +44,12 @@
 
 
 ____ ?.?C.. ______ QUrl
-____ ?.?W.. ______ ?A.., QWidget
+____ ?.?W.. ______ ?A.., ?W..
 
 ____ ui_window ______ Ui_Window
 
 
-c_ SimpleSelector(QWidget, Ui_Window):
+c_ SimpleSelector(?W.., Ui_Window):
     ___  -   parent_None):
         super(SimpleSelector, self). - (parent)
 

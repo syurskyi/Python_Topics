@@ -42,14 +42,14 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QDir, QPoint, QRect, QSize, __
+____ ?.?C.. ______ QDir, QPoint, QRect, ?S.., __
 ____ ?.?G.. ______ QImage, QImageWriter, QPainter, QPen, qRgb
 ____ ?.?W.. ______ (?A.., ?A.., QColorDialog, ?FD..,
-        QInputDialog, QMainWindow, QMenu, ?MB.., QWidget)
+        QInputDialog, QMainWindow, QMenu, ?MB.., ?W..)
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
 
 
-c_ ScribbleArea(QWidget):
+c_ ScribbleArea(?W..):
     ___  -   parent_None):
         super(ScribbleArea, self). - (parent)
 
@@ -117,7 +117,7 @@ c_ ScribbleArea(QWidget):
         __ width() > image.width() or height() > image.height
             newWidth _ max(width() + 128, image.width())
             newHeight _ max(height() + 128, image.height())
-            resizeImage(image, QSize(newWidth, newHeight))
+            resizeImage(image, ?S..(newWidth, newHeight))
             update()
 
         super(ScribbleArea, self).resizeEvent(event)

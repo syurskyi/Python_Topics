@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ QDataStream, QSettings, QTimer
 ____ ?.?G.. ______ QIntValidator
-____ ?.?W.. ______ (?A.., QComboBox, QDialog,
+____ ?.?W.. ______ (?A.., ?CB, QDialog,
         QDialogButtonBox, QGridLayout, QLabel, QLineEdit, ?MB..,
         ?PB..)
 ____ ?.QtNetwork ______ (QAbstractSocket, QHostInfo, QNetworkConfiguration,
@@ -63,29 +63,29 @@ c_ Client(QDialog):
         hostLabel _ QLabel("&Server name:")
         portLabel _ QLabel("S&erver port:")
 
-        hostCombo _ QComboBox()
+        hostCombo _ ?CB()
         hostCombo.setEditable(True)
 
         name _ QHostInfo.localHostName()
         __ name !_ '':
-            hostCombo.addItem(name)
+            hostCombo.aI..(name)
 
             domain _ QHostInfo.localDomainName()
             __ domain !_ '':
-                hostCombo.addItem(name + '.' + domain)
+                hostCombo.aI..(name + '.' + domain)
 
         __ name !_ 'localhost':
-            hostCombo.addItem('localhost')
+            hostCombo.aI..('localhost')
 
         ipAddressesList _ QNetworkInterface.allAddresses()
 
         ___ ipAddress __ ipAddressesList:
             __ no. ipAddress.isLoopback
-                hostCombo.addItem(ipAddress.toString())
+                hostCombo.aI..(ipAddress.toString())
 
         ___ ipAddress __ ipAddressesList:
             __ ipAddress.isLoopback
-                hostCombo.addItem(ipAddress.toString())
+                hostCombo.aI..(ipAddress.toString())
 
         portLineEdit _ ?LE..
         portLineEdit.sV..(QIntValidator(1, 65535, self))

@@ -45,9 +45,9 @@
 ____ ?.?C.. ______ (QDate, QDateTime, QRegExp, QSortFilterProxyModel, __,
         QTime)
 ____ ?.?G.. ______ QStandardItemModel
-____ ?.?W.. ______ (?A.., QCheckBox, QComboBox, QGridLayout,
+____ ?.?W.. ______ (?A.., QCheckBox, ?CB, QGridLayout,
         QGroupBox, QHBoxLayout, QLabel, QLineEdit, QTreeView, QVBoxLayout,
-        QWidget)
+        ?W..)
 
 
 SUBJECT, SENDER, DATE _ range(3)
@@ -70,7 +70,7 @@ c_ SortFilterProxyModel(QSortFilterProxyModel):
         r_ super(SortFilterProxyModel, self).filterAcceptsRow(sourceRow, sourceParent)
 
 
-c_ Window(QWidget):
+c_ Window(?W..):
     ___  -
         super(Window, self). - ()
 
@@ -97,17 +97,17 @@ c_ Window(QWidget):
         filterPatternLabel _ QLabel("&Filter pattern:")
         filterPatternLabel.setBuddy(filterPatternLineEdit)
 
-        filterSyntaxComboBox _ QComboBox()
-        filterSyntaxComboBox.addItem("Regular expression", QRegExp.RegExp)
-        filterSyntaxComboBox.addItem("Wildcard", QRegExp.Wildcard)
-        filterSyntaxComboBox.addItem("Fixed string", QRegExp.FixedString)
+        filterSyntaxComboBox _ ?CB()
+        filterSyntaxComboBox.aI..("Regular expression", QRegExp.RegExp)
+        filterSyntaxComboBox.aI..("Wildcard", QRegExp.Wildcard)
+        filterSyntaxComboBox.aI..("Fixed string", QRegExp.FixedString)
         filterSyntaxLabel _ QLabel("Filter &syntax:")
         filterSyntaxLabel.setBuddy(filterSyntaxComboBox)
 
-        filterColumnComboBox _ QComboBox()
-        filterColumnComboBox.addItem("Subject")
-        filterColumnComboBox.addItem("Sender")
-        filterColumnComboBox.addItem("Date")
+        filterColumnComboBox _ ?CB()
+        filterColumnComboBox.aI..("Subject")
+        filterColumnComboBox.aI..("Sender")
+        filterColumnComboBox.aI..("Date")
         filterColumnLabel _ QLabel("Filter &column:")
         filterColumnLabel.setBuddy(filterColumnComboBox)
 

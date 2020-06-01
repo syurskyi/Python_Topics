@@ -44,11 +44,11 @@
 
 ______ ___
 
-____ ?.?C.. ______ pyqtSignal, QFileInfo, QPoint, QSize, __, QTimer
+____ ?.?C.. ______ pyqtSignal, QFileInfo, QPoint, ?S.., __, QTimer
 ____ ?.?G.. ______ (?C.., QImage, QMatrix4x4, QOpenGLShader,
         QOpenGLShaderProgram, QOpenGLTexture, QOpenGLVersionProfile,
         QSurfaceFormat)
-____ ?.?W.. ______ ?A.., QGridLayout, QOpenGLWidget, QWidget
+____ ?.?W.. ______ ?A.., QGridLayout, QOpenGLWidget, ?W..
 
 
 c_ GLWidget(QOpenGLWidget):
@@ -99,10 +99,10 @@ void main(void)
         lastPos _ QPoint()
 
     ___ minimumSizeHint
-        r_ QSize(50, 50)
+        r_ ?S..(50, 50)
 
-    ___ sizeHint
-        r_ QSize(200, 200)
+    ___ sH..
+        r_ ?S..(200, 200)
 
     ___ rotateBy  xAngle, yAngle, zAngle):
         xRot +_ xAngle
@@ -210,7 +210,7 @@ void main(void)
                 vertices.ap..((0.2 * x, 0.2 * y, 0.2 * z))
 
 
-c_ Window(QWidget):
+c_ Window(?W..):
     NumRows _ 2
     NumColumns _ 3
 

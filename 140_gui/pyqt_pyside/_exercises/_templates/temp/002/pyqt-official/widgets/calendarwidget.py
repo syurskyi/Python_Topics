@@ -46,11 +46,11 @@
 ____ ?.?C.. ______ QDate, QLocale, __
 ____ ?.?G.. ______ QFont, QTextCharFormat
 ____ ?.?W.. ______ (?A.., QCalendarWidget, QCheckBox,
-        QComboBox, QDateEdit, QGridLayout, QGroupBox, QHBoxLayout, QLabel,
-        QLayout, QWidget)
+        ?CB, QDateEdit, QGridLayout, QGroupBox, QHBoxLayout, QLabel,
+        QLayout, ?W..)
 
 
-c_ Window(QWidget):
+c_ Window(?W..):
     ___  -
         super(Window, self). - ()
 
@@ -68,9 +68,9 @@ c_ Window(QWidget):
         sL..(layout)
 
         previewLayout.setRowMinimumHeight(0,
-                calendar.sizeHint().height())
+                calendar.sH..().height())
         previewLayout.setColumnMinimumWidth(0,
-                calendar.sizeHint().width())
+                calendar.sH..().width())
 
         sWT..("Calendar Widget")
 
@@ -181,7 +181,7 @@ c_ Window(QWidget):
     ___ createGeneralOptionsGroupBox
         generalOptionsGroupBox _ QGroupBox("General Options")
 
-        localeCombo _ QComboBox()
+        localeCombo _ ?CB()
 
         curLocaleIndex _ -1
         index _ 0
@@ -196,7 +196,7 @@ c_ Window(QWidget):
             __ language == this_language and country == this_country:
                 curLocaleIndex _ index
 
-            localeCombo.addItem('%s/%s' % (language, country), locale)
+            localeCombo.aI..('%s/%s' % (language, country), locale)
             index +_ 1
 
         __ curLocaleIndex !_ -1:
@@ -205,22 +205,22 @@ c_ Window(QWidget):
         localeLabel _ QLabel("&Locale")
         localeLabel.setBuddy(localeCombo)
 
-        firstDayCombo _ QComboBox()
-        firstDayCombo.addItem("Sunday", __.Sunday)
-        firstDayCombo.addItem("Monday", __.Monday)
-        firstDayCombo.addItem("Tuesday", __.Tuesday)
-        firstDayCombo.addItem("Wednesday", __.Wednesday)
-        firstDayCombo.addItem("Thursday", __.Thursday)
-        firstDayCombo.addItem("Friday", __.Friday)
-        firstDayCombo.addItem("Saturday", __.Saturday)
+        firstDayCombo _ ?CB()
+        firstDayCombo.aI..("Sunday", __.Sunday)
+        firstDayCombo.aI..("Monday", __.Monday)
+        firstDayCombo.aI..("Tuesday", __.Tuesday)
+        firstDayCombo.aI..("Wednesday", __.Wednesday)
+        firstDayCombo.aI..("Thursday", __.Thursday)
+        firstDayCombo.aI..("Friday", __.Friday)
+        firstDayCombo.aI..("Saturday", __.Saturday)
 
         firstDayLabel _ QLabel("Wee&k starts on:")
         firstDayLabel.setBuddy(firstDayCombo)
 
-        selectionModeCombo _ QComboBox()
-        selectionModeCombo.addItem("Single selection",
+        selectionModeCombo _ ?CB()
+        selectionModeCombo.aI..("Single selection",
                 QCalendarWidget.SingleSelection)
-        selectionModeCombo.addItem("None",
+        selectionModeCombo.aI..("None",
                 QCalendarWidget.NoSelection)
         selectionModeLabel _ QLabel("&Selection mode:")
         selectionModeLabel.setBuddy(selectionModeCombo)
@@ -231,24 +231,24 @@ c_ Window(QWidget):
         navigationCheckBox _ QCheckBox("&Navigation bar")
         navigationCheckBox.setChecked(True)
 
-        horizontalHeaderCombo _ QComboBox()
-        horizontalHeaderCombo.addItem("Single letter day names",
+        horizontalHeaderCombo _ ?CB()
+        horizontalHeaderCombo.aI..("Single letter day names",
                 QCalendarWidget.SingleLetterDayNames)
-        horizontalHeaderCombo.addItem("Short day names",
+        horizontalHeaderCombo.aI..("Short day names",
                 QCalendarWidget.ShortDayNames)
-        horizontalHeaderCombo.addItem("Long day names",
+        horizontalHeaderCombo.aI..("Long day names",
                 QCalendarWidget.LongDayNames)
-        horizontalHeaderCombo.addItem("None",
+        horizontalHeaderCombo.aI..("None",
                 QCalendarWidget.NoHorizontalHeader)
         horizontalHeaderCombo.setCurrentIndex(1)
 
         horizontalHeaderLabel _ QLabel("&Horizontal header:")
         horizontalHeaderLabel.setBuddy(horizontalHeaderCombo)
 
-        verticalHeaderCombo _ QComboBox()
-        verticalHeaderCombo.addItem("ISO week numbers",
+        verticalHeaderCombo _ ?CB()
+        verticalHeaderCombo.aI..("ISO week numbers",
                 QCalendarWidget.ISOWeekNumbers)
-        verticalHeaderCombo.addItem("None",
+        verticalHeaderCombo.aI..("None",
                 QCalendarWidget.NoVerticalHeader)
 
         verticalHeaderLabel _ QLabel("&Vertical header:")
@@ -353,10 +353,10 @@ c_ Window(QWidget):
         weekendColorLabel _ QLabel("Week&end color:")
         weekendColorLabel.setBuddy(weekendColorCombo)
 
-        headerTextFormatCombo _ QComboBox()
-        headerTextFormatCombo.addItem("Bold")
-        headerTextFormatCombo.addItem("Italic")
-        headerTextFormatCombo.addItem("Plain")
+        headerTextFormatCombo _ ?CB()
+        headerTextFormatCombo.aI..("Bold")
+        headerTextFormatCombo.aI..("Italic")
+        headerTextFormatCombo.aI..("Plain")
 
         headerTextFormatLabel _ QLabel("&Header text:")
         headerTextFormatLabel.setBuddy(headerTextFormatCombo)
@@ -396,11 +396,11 @@ c_ Window(QWidget):
         reformatCalendarPage()
  
     ___ createColorComboBox
-        comboBox _ QComboBox()
-        comboBox.addItem("Red", __.red)
-        comboBox.addItem("Blue", __.blue)
-        comboBox.addItem("Black", __.black)
-        comboBox.addItem("Magenta", __.magenta)
+        comboBox _ ?CB()
+        comboBox.aI..("Red", __.red)
+        comboBox.aI..("Blue", __.blue)
+        comboBox.aI..("Black", __.black)
+        comboBox.aI..("Magenta", __.magenta)
 
         r_ comboBox
 

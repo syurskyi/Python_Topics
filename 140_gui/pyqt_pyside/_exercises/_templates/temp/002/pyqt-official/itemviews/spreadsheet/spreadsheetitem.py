@@ -69,9 +69,9 @@ c_ SpreadSheetItem(QTableWidgetItem):
         __ role == __.DisplayRole:
             r_ display()
         t _ str(display())
-        try:
+        ___
             number _ int(t)
-        except ValueError:
+        _____ ValueError:
             number _ N..
         __ role == __.TextColorRole:
             __ number __ N..:
@@ -103,7 +103,7 @@ c_ SpreadSheetItem(QTableWidgetItem):
         __ formula __ N..:
             r_ N..
         # check if the string is actually a formula or not
-        slist _ formula.split(' ')
+        slist _ formula.sp..(' ')
         __ no. slist or no. widget:
             # it is a normal string
             r_ formula
@@ -119,14 +119,14 @@ c_ SpreadSheetItem(QTableWidgetItem):
         start _ widget.item(firstRow, firstCol)
         end _ widget.item(secondRow, secondCol)
         firstVal _ 0
-        try:
+        ___
             firstVal _ start and int(start.t__()) or 0
-        except ValueError:
+        _____ ValueError:
             pass
         secondVal _ 0
-        try:
+        ___
             secondVal _ end and int(end.t__()) or 0
-        except ValueError:
+        _____ ValueError:
             pass
         result _ N..
         __ op == "sum":
@@ -135,9 +135,9 @@ c_ SpreadSheetItem(QTableWidgetItem):
                 ___ c __ range(firstCol, secondCol + 1):
                     tableItem _ widget.item(r, c)
                     __ tableItem and tableItem !_ self:
-                        try:
+                        ___
                             sum_ +_ int(tableItem.t__())
-                        except ValueError:
+                        _____ ValueError:
                             pass
             result _ sum_
         ____ op == "+":

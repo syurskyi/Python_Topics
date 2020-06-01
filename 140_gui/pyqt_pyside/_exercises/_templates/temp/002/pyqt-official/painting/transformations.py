@@ -42,14 +42,14 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QPointF, QSize, __
+____ ?.?C.. ______ QPointF, ?S.., __
 ____ ?.?G.. ______ QBrush, QFont, QFontMetrics, QPainter, QPainterPath
-____ ?.?W.. ______ ?A.., QComboBox, QGridLayout, QWidget
+____ ?.?W.. ______ ?A.., ?CB, QGridLayout, ?W..
 
 
 NoTransformation, Translate, Rotate, Scale _ range(4)
 
-c_ RenderArea(QWidget):
+c_ RenderArea(?W..):
     ___  -   parent_None):
         super(RenderArea, self). - (parent)
 
@@ -72,10 +72,10 @@ c_ RenderArea(QWidget):
         update()
 
     ___ minimumSizeHint
-        r_ QSize(182, 182)
+        r_ ?S..(182, 182)
 
-    ___ sizeHint
-        r_ QSize(232, 232)
+    ___ sH..
+        r_ ?S..(232, 232)
 
     ___ paintEvent  event):
         painter _ QPainter
@@ -130,7 +130,7 @@ c_ RenderArea(QWidget):
                 painter.rotate(60)
 
 
-c_ Window(QWidget):
+c_ Window(?W..):
 
     operationTable _ (NoTransformation, Rotate, Scale, Translate)
     NumTransformedAreas _ 3
@@ -140,11 +140,11 @@ c_ Window(QWidget):
 
         originalRenderArea _ RenderArea()
 
-        shapeComboBox _ QComboBox()
-        shapeComboBox.addItem("Clock")
-        shapeComboBox.addItem("House")
-        shapeComboBox.addItem("Text")
-        shapeComboBox.addItem("Truck")
+        shapeComboBox _ ?CB()
+        shapeComboBox.aI..("Clock")
+        shapeComboBox.aI..("House")
+        shapeComboBox.aI..("Text")
+        shapeComboBox.aI..("Truck")
 
         layout _ QGridLayout()
         layout.aW..(originalRenderArea, 0, 0)
@@ -156,11 +156,11 @@ c_ Window(QWidget):
         ___ i __ range(Window.NumTransformedAreas):
             transformedRenderAreas[i] _ RenderArea()
 
-            operationComboBoxes[i] _ QComboBox()
-            operationComboBoxes[i].addItem("No transformation")
-            operationComboBoxes[i].addItem(u"Rotate by 60\N{DEGREE SIGN}")
-            operationComboBoxes[i].addItem("Scale to 75%")
-            operationComboBoxes[i].addItem("Translate by (50, 50)")
+            operationComboBoxes[i] _ ?CB()
+            operationComboBoxes[i].aI..("No transformation")
+            operationComboBoxes[i].aI..(u"Rotate by 60\N{DEGREE SIGN}")
+            operationComboBoxes[i].aI..("Scale to 75%")
+            operationComboBoxes[i].aI..("Translate by (50, 50)")
 
             operationComboBoxes[i].activated.c..(operationChanged)
 

@@ -51,7 +51,7 @@ __ ______ __ ______
     layout.aW..(button)
 
     btn1 _ ?W...?PB..("del a row")
-    btn1.c__.c..(lambda: model.removeRow(view1.currentIndex().row()))
+    btn1.c__.c..(l___: model.removeRow(view1.currentIndex().row()))
     layout.aW..(btn1)
 
     dlg.sL..(layout)

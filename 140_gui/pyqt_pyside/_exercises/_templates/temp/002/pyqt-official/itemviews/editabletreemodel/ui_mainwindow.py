@@ -13,7 +13,7 @@ c_ Ui_MainWindow(object):
     ___ setupUi  MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.r..(573, 468)
-        centralwidget _ ?W...QWidget(MainWindow)
+        centralwidget _ ?W...?W..(MainWindow)
         centralwidget.setObjectName("centralwidget")
         vboxlayout _ ?W...QVBoxLayout(centralwidget)
         vboxlayout.setContentsMargins(0, 0, 0, 0)

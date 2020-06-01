@@ -82,9 +82,9 @@ c_ AnimalModel(QAbstractListModel):
         r_ le.(_animals)
 
     ___ data  index, role_Qt.DisplayRole):
-        try:
+        ___
             animal _ _animals[index.row()]
-        except IndexError:
+        _____ IE..
             r_ ?V..
 
         __ role == TypeRole:

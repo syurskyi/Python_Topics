@@ -49,9 +49,9 @@ ____ ?.?G.. ______ ?C.., qGray, QImage, QPainter, ?P..
 ____ ?.QtMultimedia ______ (QAbstractVideoBuffer, QMediaContent,
         QMediaMetaData, QMediaPlayer, QMediaPlaylist, QVideoFrame, QVideoProbe)
 ____ ?.QtMultimediaWidgets ______ QVideoWidget
-____ ?.?W.. ______ (?A.., QComboBox, QDialog, ?FD..,
+____ ?.?W.. ______ (?A.., ?CB, QDialog, ?FD..,
         QFormLayout, QHBoxLayout, QLabel, QListView, ?MB.., ?PB..,
-        QSizePolicy, QSlider, QStyle, QToolButton, QVBoxLayout, QWidget)
+        QSizePolicy, QSlider, QStyle, QToolButton, QVBoxLayout, ?W..)
 
 
 c_ VideoWidget(QVideoWidget):
@@ -157,7 +157,7 @@ c_ PlaylistModel(QAbstractItemModel):
                 index(end, ColumnCount))
 
 
-c_ PlayerControls(QWidget):
+c_ PlayerControls(?W..):
 
     play _ pyqtSignal()
     pause _ pyqtSignal()
@@ -197,10 +197,10 @@ c_ PlayerControls(QWidget):
                 sliderMoved_self.changeVolume)
         volumeSlider.setRange(0, 100)
 
-        rateBox _ QComboBox(activated_self.updateRate)
-        rateBox.addItem("0.5x", 0.5)
-        rateBox.addItem("1.0x", 1.0)
-        rateBox.addItem("2.0x", 2.0)
+        rateBox _ ?CB(activated_self.updateRate)
+        rateBox.aI..("0.5x", 0.5)
+        rateBox.aI..("1.0x", 1.0)
+        rateBox.aI..("2.0x", 2.0)
         rateBox.setCurrentIndex(1)
 
         layout _ QHBoxLayout()
@@ -269,7 +269,7 @@ c_ PlayerControls(QWidget):
                 rateBox.setCurrentIndex(i)
                 r_
 
-        rateBox.addItem("%dx" % rate, rate)
+        rateBox.aI..("%dx" % rate, rate)
         rateBox.setCurrentIndex(rateBox.count() - 1)
 
     ___ updateRate
@@ -319,7 +319,7 @@ c_ FrameProcessor(QObject):
         histogramReady.emit(histogram)
 
 
-c_ HistogramWidget(QWidget):
+c_ HistogramWidget(?W..):
 
     ___  -   parent_None):
         super(HistogramWidget, self). - (parent)
@@ -375,7 +375,7 @@ c_ HistogramWidget(QWidget):
                     height() - h, __.black)
 
 
-c_ Player(QWidget):
+c_ Player(?W..):
 
     fullScreenChanged _ pyqtSignal(bool)
 
@@ -661,14 +661,14 @@ c_ Player(QWidget):
             videoWidget.saturationChanged.c..(
                     saturationSlider.setValue)
 
-            layout _ QFormLayout()
-            layout.addRow("Brightness", brightnessSlider)
-            layout.addRow("Contrast", contrastSlider)
-            layout.addRow("Hue", hueSlider)
-            layout.addRow("Saturation", saturationSlider)
+            layout _ ?FL..
+            layout.aR..("Brightness", brightnessSlider)
+            layout.aR..("Contrast", contrastSlider)
+            layout.aR..("Hue", hueSlider)
+            layout.aR..("Saturation", saturationSlider)
 
             button _ ?PB..("Close")
-            layout.addRow(button)
+            layout.aR..(button)
 
             colorDialog _ QDialog
             colorDialog.sWT..("Color Options")

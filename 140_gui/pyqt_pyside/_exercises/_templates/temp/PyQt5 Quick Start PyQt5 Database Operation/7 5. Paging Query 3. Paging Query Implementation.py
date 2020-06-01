@@ -4,7 +4,7 @@ ____ ?.?C.. ______ *
 ____ ?.?W.. ______ *
 ______ re
 
-c_ DataGrid(QWidget):
+c_ DataGrid(?W..):
     ___  -   parent_None):
         super(DataGrid, self). - (parent)
         # Declare Database Connections

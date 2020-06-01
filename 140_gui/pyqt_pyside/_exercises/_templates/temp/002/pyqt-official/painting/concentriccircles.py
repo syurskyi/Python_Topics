@@ -42,13 +42,13 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QRect, QRectF, QSize, __, QTimer
+____ ?.?C.. ______ QRect, QRectF, ?S.., __, QTimer
 ____ ?.?G.. ______ ?C.., QPainter, ?P.., QPen
 ____ ?.?W.. ______ (?A.., QFrame, QGridLayout, QLabel,
-        QSizePolicy, QWidget)
+        QSizePolicy, ?W..)
 
 
-c_ CircleWidget(QWidget):
+c_ CircleWidget(?W..):
     ___  -   parent_None):
         super(CircleWidget, self). - (parent)
 
@@ -68,10 +68,10 @@ c_ CircleWidget(QWidget):
         update()
 
     ___ minimumSizeHint
-        r_ QSize(50, 50)
+        r_ ?S..(50, 50)
 
-    ___ sizeHint
-        r_ QSize(180, 180)
+    ___ sH..
+        r_ ?S..(180, 180)
 
     ___ nextAnimationFrame
         frameNo +_ 1
@@ -96,7 +96,7 @@ c_ CircleWidget(QWidget):
                             -diameter / 2, diameter, diameter))
 
 
-c_ Window(QWidget):
+c_ Window(?W..):
     ___  -
         super(Window, self). - ()
 

@@ -94,10 +94,10 @@ c_ StyleSheetEditor(QDialog):
         file.o..(QFile.ReadOnly)
 
         styleSheet _ file.readAll()
-        try:
+        ___
             # Python v2.
             styleSheet _ unicode(styleSheet, encoding_'utf8')
-        except NameError:
+        _____ NameError:
             # Python v3.
             styleSheet _ str(styleSheet, encoding_'utf8')
 

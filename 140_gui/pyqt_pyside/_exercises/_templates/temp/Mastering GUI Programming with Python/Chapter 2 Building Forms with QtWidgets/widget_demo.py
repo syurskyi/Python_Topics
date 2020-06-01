@@ -1,257 +1,256 @@
-______ ___
-____ ? ______ ?W.. __ qtw
-____ ? ______ ?G.. __ qtg
-____ ? ______ ?C.. __ qtc
-
-
-c_ ChoiceSpinBox(qtw.QSpinBox):
-    """A spinbox for selecting choices."""
-
-    ___  -   choices, *args, **kwargs):
-        choices _ choices
-        s_. - (
-            *args,
-            maximum_len(choices) - 1,
-            minimum_0,
-            **kwargs
-        )
-
-    ___ valueFromText  t__):
-        r_ choices.index(t__)
-
-    ___ textFromValue  value):
-        try:
-            r_ choices[value]
-        except IndexError:
-            r_ '!Error!'
-
-    ___ validate  string, index):
-        __ string __ choices:
-            state _ qtg.?V...A..
-        ____ any([v.startswith(string) ___ v __ choices]):
-            state _ qtg.?V...Intermediate
-        ____
-            state _ qtg.?V...Invalid
-        r_ (state, string, index)
-
-c_ IPv4Validator ?.?V..
-    """Enforce entry of IPv4 Addresses"""
-
-    ___ validate  string, index):
-        octets _ string.split('.')
-        __ le.(octets) > 4:
-            state _ qtg.?V...Invalid
-        ____ no. al.([x.i_d.. ___ x __ octets __ x !_ '']):
-            state _ qtg.?V...Invalid
-        ____ no. al.([0 <_ int(x) <_ 255 ___ x __ octets __ x !_ '']):
-            state _ qtg.?V...Invalid
-        ____ le.(octets) < 4:
-            state _ qtg.?V...Intermediate
-        ____ any([x == '' ___ x __ octets]):
-            state _ qtg.?V...Intermediate
-        ____
-            state _ qtg.?V...A..
-        r_ (state, string, index)
-
-
-c_ MainWindow ?.?W..
-
-    ___  - 
-        """MainWindow constructor"""
-        s_. - (windowTitle_'Qt Widget demo')
-
-        #########################
-        # Create widget objects #
-        #########################
-
-        # QWidget
-        subwidget _ qtw.QWidget  toolTip_'This is my widget')
-        subwidget.setToolTip('This is YOUR widget')
-        print(subwidget.toolTip())
-
-        # QLabel
-        label _ ?.?L..('<b>Hello Widgets!</b>', self, margin_10)
-
-        # QLineEdit
-        line_edit _ ?.?LE..(
-            'default value',
-            self,
-            placeholderText_'Type here',
-            clearButtonEnabled_True,
-            maxLength_20
-        )
-
-        # QPushButton
-        button _ qtw.?PB..(
-            "Push Me",
-            self,
-            checkable_True,
-            checked_True,
-            shortcut_qtg.?KS..('Ctrl+p')
-        )
-
-        # QComboBox
-        combobox _ qtw.QComboBox(
-            self,
-            editable_True,
-            insertPolicy_qtw.QComboBox.InsertAtTop
-        )
-        combobox.addItem('Lemon', 1)
-        combobox.addItem('Peach', 'Ohh I like Peaches!')
-        combobox.addItem('Strawberry', qtw.QWidget)
-        combobox.insertItem(1, 'Radish', 2)
-
-        # QSpinBox
-        spinbox _ qtw.QSpinBox(
-            self,
-            value_12,
-            maximum_100,
-            minimum_10,
-            prefix_'$',
-            suffix_' + Tax',
-            singleStep_5
-        )
-
-
-        # QDateTimeEdit
-        ______ datetime
-        datetimebox _ qtw.QDateTimeEdit(
-            self,
-            date_datetime.date.today(),
-            time_datetime.time(12, 30),
-            calendarPopup_True,
-            maximumDate_datetime.date(2020, 1, 1),
-            maximumTime_datetime.time(17, 0),
-            displayFormat_'yyyy-MM-dd HH:mm'
-        )
-
-        # QTextEdit
-        textedit _ ?.?TE..
-            self,
-            acceptRichText_False,
-            lineWrapMode_qtw.QTextEdit.FixedColumnWidth,
-            lineWrapColumnOrWidth_25,
-            placeholderText_'Enter your text here'
-            )
-
-        ##################
-        # Layout Objects #
-        ##################
-
-        # Add widget objects to a layout
-        layout _ qtw.?VBL..
-        sL..(layout)
-
-        layout.aW..(label)
-        layout.aW..(line_edit)
-
-        # Add a layout to a layout
-        sublayout _ ?.?HBL..
-        layout.aL..(sublayout)
-
-        sublayout.aW..(button)
-        sublayout.aW..(combobox)
-
-
-        # create a container widget
-
-        container _ qtw.QWidget
-        grid_layout _ ?.?GL..
-        #layout.addLayout(grid_layout)
-        container.sL..(grid_layout)
-
-        grid_layout.aW..(spinbox, 0, 0)
-        grid_layout.aW..(datetimebox, 0, 1)
-        grid_layout.aW..(textedit, 1, 0, 2, 2)
-
-
-#        container.setSizePolicy(
-#            qtw.QSizePolicy.Expanding,
-#            qtw.QSizePolicy.Expanding
-#            )
-
-        # QFormLayout
-
-        form_layout _ qtw.QFormLayout()
-        layout.aL..(form_layout)
-        form_layout.addRow('Item 1', ?.?LE..(self))
-        form_layout.addRow('Item 2', ?.?LE..(self))
-        form_layout.addRow(?.?L..('<b>This is a label-only row</b>'))
-
-        ################
-        # Size Control #
-        ################
-
-        # setting a fixed size
-        # Fix at 150 pixels wide by 40 pixels high
-        label.setFixedSize(150, 40)
-
-        # setting minimum and maximum sizes
-        line_edit.setMinimumSize(150, 15)
-        line_edit.setMaximumSize(300, 30)
-
-        # set the spinbox to a fixed width
-        spinbox.sSP..(?.?SP...Fixed, ?.?SP...Preferred)
-
-        # set the textedit to expand
-        textedit.sSP..(
-            ?.?SP...MinimumExpanding,
-            ?.?SP...MinimumExpanding
-        )
-        textedit.sizeHint _ lambda : qtc.QSize(500, 500)
-
-        # use stretch factor
-
-        stretch_layout _ ?.?HBL..
-        layout.aL..(stretch_layout)
-        stretch_layout.aW..(?.?LE..('Short'), 1)
-        stretch_layout.aW..(?.?LE..('Long'), 2)
-
-        #############################
-        # Container Widgets         #
-        #############################
-
-        # QTabWidget
-        tab_widget _ qtw.QTabWidget(
-            movable_True,
-            tabPosition_qtw.QTabWidget.West,
-            tabShape_qtw.QTabWidget.Triangular
-        )
-        layout.aW..(tab_widget)
-        tab_widget.addTab(container, 'Tab the first')
-        tab_widget.addTab(subwidget, 'Tab the second')
-
-        tab_widget.setMovable(True)
-
-
-
-        #QGroupBox
-        groupbox _ ?.?GB..(
-            'Buttons',
-            checkable_True,
-            checked_True,
-            alignment_qtc.__.AlignHCenter,
-            flat_True
-        )
-        groupbox.sL..(qtw.QHBoxLayout())
-        groupbox.layout().aW..(qtw.?PB..('OK'))
-        groupbox.layout().aW..(qtw.?PB..('Cancel'))
-
-        layout.aW..(groupbox)
-
-        ##############
-        # Validation #
-        ##############
-        line_edit.sT..('0.0.0.0')
-        line_edit.sV..(IPv4Validator())
-
-        ratingbox _ ChoiceSpinBox(['bad', 'average', 'good', 'awesome'], self)
-        sublayout.aW..(ratingbox)
-        s..
-
-__ ______ __ ______
-    app _ qtw.?A..(___.a..
-    # it's required to save a reference to MainWindow.
-    # if it goes out of scope, it will be destroyed.
-    mw _ MainWindow()
-    ___.e..(app.e..
+# ______ ___
+# ____ ? ______ ?W.. __ qtw
+# ____ ? ______ ?G.. __ qtg
+# ____ ? ______ ?C.. __ qtc
+#
+#
+# c_ ChoiceSpinBox ?.?SB..
+#     """A spinbox for selecting choices."""
+#
+#     ___  -   choices, $ $$
+#         choices _ choices
+#         s_. -
+#             $
+#             maximum_len ? - 1
+#             minimum_0
+#             $$
+#
+#
+#     ___ valueFromText  t__
+#         r_ ch__.i.. t__
+#
+#     ___ textFromValue  value
+#         ___
+#             r_ c..|?
+#         _____ IE..
+#             r_ '!Error!'
+#
+#     ___ validate  string index
+#         __ string __ c..
+#             state _ ?.?V...A..
+#         ____ an. v.s_w_ st.. ___ ? __ c..
+#             state _ qtg.?V...I..
+#         ____
+#             state _ qtg.?V...I..
+#         r_ s.. s.. i..
+#
+# c_ IPv4Validator ?.?V..
+#     """Enforce entry of IPv4 Addresses"""
+#
+#     ___ validate  string index
+#         octets _ st__.sp.. '.'
+#         __ le. ? > 4
+#             state _ ?.?V...I..
+#         ____ no. al. x.i_d.. ___ ? __ octets __ ? !_ ''
+#             state _ ?.?V...I..
+#         ____ no. al.0 <_ in. x <_ 255 ___ ? __ ? __ ? !_ ''
+#             state _ ?.?V...I..
+#         ____ le. ? < 4
+#             state _ ?.?V...I..
+#         ____ an. x == '' ___ ? __ ?
+#             state _ ?.?V...I..
+#         ____
+#             state _ ?.?V...A..
+#         r_ s.. s.. i..
+#
+#
+# c_ MainWindow ?.?W..
+#
+#     ___  -
+#         """MainWindow constructor"""
+#         s_. - windowTitle_'Qt Widget demo'
+#
+#         #########################
+#         # Create widget objects #
+#         #########################
+#
+#         # QWidget
+#         subwidget _ ?.?W..  toolTip_'This is my widget')
+#         ?.sTT.. This is YOUR widget
+#         print ?.tT..
+#
+#         # QLabel
+#         label _ ?.?L..('<b>Hello Widgets!</b>', self, margin_10)
+#
+#         # QLineEdit
+#         line_edit _ ?.?LE..(
+#             'default value'
+#             ____
+#             pT.._'Type here',
+#             cBE.._T...
+#             mL.._20
+#
+#
+#         # QPushButton
+#         button _ ?.?PB..
+#             "Push Me",
+#
+#             c.._T..
+#             c.._T..
+#             sh_?.?KS.. Ctrl+p
+#         )
+#
+#         # QComboBox
+#         combobox _ ?.?CB
+#
+#             e.._T..
+#             iP.._?.?CB.IAT..
+#         )
+#         ?.aI.. 'Lemon', 1
+#         ?.aI.. 'Peach', 'Ohh I like Peaches!'
+#         ?.aI.. 'Strawberry' ?.?W..
+#         ?.iI.. 1, 'Radish', 2
+#
+#         # QSpinBox
+#         spinbox _ qtw.SB..
+#             s
+#             v.._12
+#             m.._100
+#             mi.._10
+#             p.._'$'
+#             s.._' + Tax'
+#             sS.._5
+#
+#
+#
+#         # QDateTimeEdit
+#         ______ d_t_
+#         datetimebox _ qtw.?DTE..
+#             s
+#             date_d_t_.da__.to..
+#             time_d_t_.ti.. 2, 30
+#             calendarPopup_T..
+#             maximumDate_d_t_.d.. 2020, 1, 1
+#             maximumTime_d_t_.ti.. 17, 0
+#             displayFormat_'yyyy-MM-dd HH:mm'
+#         )
+#
+#         # QTextEdit
+#         textedit _ ?.?TE..
+#
+#             aRT.._F..
+#             lWM.._?.?TE...FCW..
+#             lWCOW.._25,
+#             phT.._'Enter your text here'
+#             )
+#
+#         ##################
+#         # Layout Objects #
+#         ##################
+#
+#         # Add widget objects to a layout
+#         layout _ ?.?VBL..
+#         sL.. ?
+#
+#         ?.aW.. l..
+#         ?.aW.. l_e..
+#
+#         # Add a layout to a layout
+#         sublayout _ ?.?HBL..
+#         l__.aL.. ?
+#
+#         ?.aW.. b..
+#         ?.aW.. c..
+#
+#
+#         # create a container widget
+#
+#         container _ ?.?W..
+#         grid_layout _ ?.?GL..
+#         #layout.addLayout(grid_layout)
+#         c__.sL.. ?
+#
+#         ?.aW.. s.. 0, 0
+#         ?.aW.. d.. 0, 1
+#         ?.aW.. t.. 1, 0, 2, 2
+#
+#
+# #        container.setSizePolicy(
+# #            qtw.QSizePolicy.Expanding,
+# #            qtw.QSizePolicy.Expanding
+# #            )
+#
+#         # QFormLayout
+#
+#         form_layout _ ?.?FL..
+#         l__.aL.. ?
+#         ?.aR.. 'Item 1', ?.?LE..
+#         ?.aR.. 'Item 2', ?.?LE..
+#         ?.aR.. ?.?L..('<b>This is a label-only row</b>'))
+#
+#         ################
+#         # Size Control #
+#         ################
+#
+#         # setting a fixed size
+#         # Fix at 150 pixels wide by 40 pixels high
+#         l__.sFS.. 150, 40
+#
+#         # setting minimum and maximum sizes
+#         l_e_.sMS.. 150, 15
+#         l_e_.sMS.. 300, 30
+#
+#         # set the spinbox to a fixed width
+#         s__.sSP.. ?.?SP...F.. ?.?SP...P..
+#
+#         # set the textedit to expand
+#         t__.sSP..
+#             ?.?SP...ME..
+#             ?.?SP...ME..
+#         )
+#         t__.sH.. _ l___  ?.?S.. 500, 500
+#
+#         # use stretch factor
+#
+#         stretch_layout _ ?.?HBL..
+#         l__.aL.. ?
+#         ?.aW.. ?.?LE.. 'Short'), 1
+#         ?.aW.. ?.?LE.. 'Long'), 2)
+#         #############################
+#         # Container Widgets         #
+#         #############################
+#
+#         # QTabWidget
+#         tab_widget _ ?.?TW..
+#             m.._T..
+#             tP.._?.?TW...West,
+#             tS.._?.?TW...Tri..
+#
+#         l__.aW.. ?
+#         ?.aT.. c.. 'Tab the first'
+#         ?.aT.. s.. 'Tab the second'
+#
+#         ?.sM.. T..
+#
+#
+#
+#         #QGroupBox
+#         groupbox _ ?.?GB..
+#             'Buttons'
+#             c.._T..
+#             c.._T..
+#             a.._qtc.__.AHC..
+#             f.._T..
+#
+#         g__.sL.. qtw.?HBL..
+#         g__.l...aW.. ?.?PB.. OK
+#         g__.l...aW.. ?.?PB.. Cancel
+#
+#         l__.aW.. g..
+#
+#         ##############
+#         # Validation #
+#         ##############
+#         l_e_.sT.. '0.0.0.0'
+#         l_e_.sV.. IPv4V..
+#
+#         ratingbox _ CSB.. 'bad', 'average', 'good', 'awesome'|
+#         s__.aW.. ?
+#         s..
+#
+# __ ______ __ ______
+#     app _ ?.?A.. ___.a..
+#     # it's required to save a reference to MainWindow.
+#     # if it goes out of scope, it will be destroyed.
+#     mw _ ?
+#     ___.e.. ?.e..

@@ -44,13 +44,13 @@
 
 ____ ?.?C.. ______ QModelIndex, __
 ____ ?.?G.. ______ QStandardItemModel
-____ ?.?W.. ______ (?A.., QSpinBox, QStyledItemDelegate,
+____ ?.?W.. ______ (?A.., SB.., QStyledItemDelegate,
         QTableView)
 
 
 c_ SpinBoxDelegate(QStyledItemDelegate):
     ___ createEditor  parent, option, index):
-        editor _ QSpinBox(parent)
+        editor _ SB..(parent)
         editor.setFrame F..
         editor.setMinimum(0)
         editor.setMaximum(100)

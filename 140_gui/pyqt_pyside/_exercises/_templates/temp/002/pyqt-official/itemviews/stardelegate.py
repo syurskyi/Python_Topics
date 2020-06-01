@@ -45,10 +45,10 @@
 
 ______ math
 
-____ ?.?C.. ______ pyqtSignal, QPointF, QSize, __
+____ ?.?C.. ______ pyqtSignal, QPointF, ?S.., __
 ____ ?.?G.. ______ QPainter, QPolygonF
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., QStyle,
-        QStyledItemDelegate, QTableWidget, QTableWidgetItem, QWidget)
+        QStyledItemDelegate, QTableWidget, QTableWidgetItem, ?W..)
 
 
 c_ StarRating(object):
@@ -85,8 +85,8 @@ c_ StarRating(object):
     ___ setMaxStarCount  maxStarCount):
         _maxStarCount _ maxStarCount
 
-    ___ sizeHint
-        r_ PaintingScaleFactor * QSize(_maxStarCount, 1)
+    ___ sH..
+        r_ PaintingScaleFactor * ?S..(_maxStarCount, 1)
 
     ___ paint  painter, rect, palette, editMode):
         painter.save()
@@ -114,7 +114,7 @@ c_ StarRating(object):
         painter.restore()
 
 
-c_ StarEditor(QWidget):
+c_ StarEditor(?W..):
 
     editingFinished _ pyqtSignal()
 
@@ -132,8 +132,8 @@ c_ StarEditor(QWidget):
     ___ starRating
         r_ _starRating
 
-    ___ sizeHint
-        r_ _starRating.sizeHint()
+    ___ sH..
+        r_ _starRating.sH..()
 
     ___ paintEvent  event):
         painter _ QPainter
@@ -152,7 +152,7 @@ c_ StarEditor(QWidget):
 
     ___ starAtPosition  x):
         # Enable a star, if pointer crosses the center horizontally.
-        starwidth _ _starRating.sizeHint().width() // _starRating.maxStarCount()
+        starwidth _ _starRating.sH..().width() // _starRating.maxStarCount()
         star _ (x + starwidth / 2) // starwidth
         __ 0 <_ star <_ _starRating.maxStarCount
             r_ star
@@ -172,12 +172,12 @@ c_ StarDelegate(QStyledItemDelegate):
         ____
             super(StarDelegate, self).paint(painter, option, index)
 
-    ___ sizeHint  option, index):
+    ___ sH..  option, index):
         starRating _ index.data()
         __ isinstance(starRating, StarRating):
-            r_ starRating.sizeHint()
+            r_ starRating.sH..()
         ____
-            r_ super(StarDelegate, self).sizeHint(option, index)
+            r_ super(StarDelegate, self).sH..(option, index)
 
     ___ createEditor  parent, option, index):
         starRating _ index.data()

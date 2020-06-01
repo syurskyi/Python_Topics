@@ -5118,7 +5118,7 @@ qt_resource_struct_v2 _ b"\
 \x00\x00\x01\x5a\x38\x00\xd4\xd8\
 "
 
-qt_version _ ?C...qVersion().split('.')
+qt_version _ ?C...qVersion().sp..('.')
 __ qt_version < ['5', '8', '0']:
     rcc_version _ 1
     qt_resource_struct _ qt_resource_struct_v1

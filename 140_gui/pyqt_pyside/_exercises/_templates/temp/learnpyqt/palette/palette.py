@@ -21,11 +21,11 @@ PALETTES _ {
 c_ _PaletteButton(?W...?PB..):
     ___  -   color):
         s_. - ()
-        setFixedSize(?C...QSize(24, 24))
+        sFS..(?C...?S..(24, 24))
         color _ color
         setStyleSheet("background-color: %s;" % color)
 
-c_ _PaletteBase(?W...QWidget):
+c_ _PaletteBase(?W...?W..):
 
     selected _ Signal(object)
 
@@ -34,8 +34,8 @@ c_ _PaletteBase(?W...QWidget):
 
 
 c_ _PaletteLinearBase(_PaletteBase):
-    ___  -   colors, *args, **kwargs):
-        s_. - (*args, **kwargs)
+    ___  -   colors, $ $$
+        s_. - ($ $$)
 
         __ isinstance(colors, str):
             __ colors __ PALETTES:
@@ -46,7 +46,7 @@ c_ _PaletteLinearBase(_PaletteBase):
         ___ c __ colors:
             b _ _PaletteButton(c)
             b.pressed.c..(
-                lambda c_c: _emit_color(c)
+                l___ c_c: _emit_color(c)
             )
             palette.aW..(b)
 
@@ -63,8 +63,8 @@ c_ PaletteVertical(_PaletteLinearBase):
 
 c_ PaletteGrid(_PaletteBase):
 
-    ___  -   colors, n_columns_5, *args, **kwargs):
-        s_. - (*args, **kwargs)
+    ___  -   colors, n_columns_5, $ $$
+        s_. - ($ $$)
 
         __ isinstance(colors, str):
             __ colors __ PALETTES:
@@ -76,7 +76,7 @@ c_ PaletteGrid(_PaletteBase):
         ___ c __ colors:
             b _ _PaletteButton(c)
             b.pressed.c..(
-                lambda c_c: _emit_color(c)
+                l___ c_c: _emit_color(c)
             )
             palette.aW..(b, row, col)
             col +_ 1

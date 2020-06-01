@@ -67,9 +67,9 @@ c_ TreeItem(object):
         r_ le.(itemData)
 
     ___ data  column):
-        try:
+        ___
             r_ itemData[column]
-        except IndexError:
+        _____ IE..
             r_ N..
 
     ___ parent 
@@ -87,7 +87,7 @@ c_ TreeModel(QAbstractItemModel):
         super(TreeModel, self). - (parent)
 
         rootItem _ TreeItem(("Title", "Summary"))
-        setupModelData(data.split('\n'), rootItem)
+        setupModelData(data.sp..('\n'), rootItem)
 
     ___ columnCount  parent):
         __ parent.isValid
@@ -173,7 +173,7 @@ c_ TreeModel(QAbstractItemModel):
 
             __ lineData:
                 # Read the column data from the rest of the line.
-                columnData _ [s ___ s __ lineData.split('\t') __ s]
+                columnData _ [s ___ s __ lineData.sp..('\t') __ s]
 
                 __ position > indentations[-1]:
                     # The last child of the current parent is now the new

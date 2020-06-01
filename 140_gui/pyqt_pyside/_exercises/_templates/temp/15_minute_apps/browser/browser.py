@@ -9,8 +9,8 @@ import sys
 
 
 class AboutDialog(QDialog):
-    def  - (self, *args, **kwargs):
-        super(AboutDialog, self). - (*args, **kwargs)
+    def  - (self, $ $$
+        super(AboutDialog, self). - ($ $$)
 
         QBtn = QDialogButtonBox.Ok  # No cancel
         buttonBox = QDialogButtonBox(QBtn)
@@ -42,8 +42,8 @@ class AboutDialog(QDialog):
 
 
 class MainWindow(QMainWindow):
-    def  - (self, *args, **kwargs):
-        super(MainWindow, self). - (*args, **kwargs)
+    def  - (self, $ $$
+        super(MainWindow, self). - ($ $$)
 
         browser = QWebEngineView()
         browser.setUrl(QUrl("http://google.com"))
@@ -56,7 +56,7 @@ class MainWindow(QMainWindow):
         setStatusBar(status)
 
         navtb = QToolBar("Navigation")
-        navtb.setIconSize(QSize(16, 16))
+        navtb.setIconSize(?S..(16, 16))
         addToolBar(navtb)
 
         back_btn = QAction(QIcon(os.path.join('images', 'arrow-180.png')), "Back", self)

@@ -18,9 +18,9 @@ c_ MainWindow(qtw.QMainWindow):
         widgets _ [
             ?.?L..("I am a label"),
             ?.?LE..(placeholderText_"I am a line edit"),
-            qtw.QSpinBox(),
+            qtw.SB..(),
             ?.?CB..("I am a checkbox"),
-            qtw.QComboBox(editable_True)
+            qtw.?CB(editable_True)
         ]
         container _ qtw.?W..
         sCW..(container)

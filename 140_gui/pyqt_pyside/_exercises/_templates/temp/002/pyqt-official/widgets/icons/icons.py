@@ -42,16 +42,16 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QFileInfo, QRegExp, QSize, __
+____ ?.?C.. ______ QFileInfo, QRegExp, ?S.., __
 ____ ?.?G.. ______ QIcon, QImage, ?P.., QPixmap
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., QActionGroup,
-        ?A.., QComboBox, ?FD.., QFrame, QGridLayout, QGroupBox,
+        ?A.., ?CB, ?FD.., QFrame, QGridLayout, QGroupBox,
         QHBoxLayout, QHeaderView, QItemDelegate, QLabel, QMainWindow,
-        ?MB.., QRadioButton, QSizePolicy, QSpinBox, QStyle,
-        QStyleFactory, QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget)
+        ?MB.., QRadioButton, QSizePolicy, SB.., QStyle,
+        QStyleFactory, QTableWidget, QTableWidgetItem, QVBoxLayout, ?W..)
 
 
-c_ IconSizeSpinBox(QSpinBox):
+c_ IconSizeSpinBox(SB..):
     @staticmethod
     ___ valueFromText(t__):
         regExp _ QRegExp("(\\d+)(\\s*[xx]\\s*\\d+)?")
@@ -68,15 +68,15 @@ c_ IconSizeSpinBox(QSpinBox):
 
 c_ ImageDelegate(QItemDelegate):
     ___ createEditor  parent, option, index):
-        comboBox _ QComboBox(parent)
+        comboBox _ ?CB(parent)
         __ index.column() == 1:
-            comboBox.addItem("Normal")
-            comboBox.addItem("Active")
-            comboBox.addItem("Disabled")
-            comboBox.addItem("Selected")
+            comboBox.aI..("Normal")
+            comboBox.aI..("Active")
+            comboBox.aI..("Disabled")
+            comboBox.aI..("Selected")
         ____ index.column() == 2:
-            comboBox.addItem("Off")
-            comboBox.addItem("On")
+            comboBox.aI..("Off")
+            comboBox.aI..("On")
 
         comboBox.activated.c..(emitCommitData)
 
@@ -101,7 +101,7 @@ c_ ImageDelegate(QItemDelegate):
         commitData.emit(sender())
 
 
-c_ IconPreviewArea(QWidget):
+c_ IconPreviewArea(?W..):
     ___  -   parent_None):
         super(IconPreviewArea, self). - (parent)
 
@@ -109,7 +109,7 @@ c_ IconPreviewArea(QWidget):
         sL..(mainLayout)
 
         icon _ QIcon()
-        size _ QSize()
+        size _ ?S..()
         stateLabels _   # list
         modeLabels _   # list
         pixmapLabels _   # list
@@ -155,7 +155,7 @@ c_ IconPreviewArea(QWidget):
         label.sSP..(QSizePolicy.E.., QSizePolicy.E..)
         label.setBackgroundRole(?P...Base)
         label.setAutoFillBackground(True)
-        label.setMinimumSize(132, 132)
+        label.sMS..(132, 132)
         r_ label
 
     ___ updatePixmapLabels 
@@ -262,7 +262,7 @@ c_ MainWindow ?MW..
 
             extent _ ?A...style().pixelMetric(metric)
 
-        previewArea.setSize(QSize(extent, extent))
+        previewArea.setSize(?S..(extent, extent))
         otherSpinBox.sE..(otherRadioButton.isChecked())
 
     ___ changeIcon 

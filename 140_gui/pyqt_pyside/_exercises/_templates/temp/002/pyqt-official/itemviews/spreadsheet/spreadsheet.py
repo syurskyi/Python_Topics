@@ -43,7 +43,7 @@
 ____ ?.?C.. ______ QDate, QPoint, __
 ____ ?.?G.. ______ ?C.., QIcon, ?KS.., QPainter, QPixmap
 ____ ?.?W.. ______ (?A.., QActionGroup, ?A.., QColorDialog,
-        QComboBox, QDialog, QFontDialog, QGroupBox, QHBoxLayout, QLabel,
+        ?CB, QDialog, QFontDialog, QGroupBox, QHBoxLayout, QLabel,
         QLineEdit, QMainWindow, ?MB.., ?PB.., QTableWidget,
         QTableWidgetItem, QToolBar, QVBoxLayout)
 ____ ?.QtPrintSupport ______ QPrinter, QPrintPreviewDialog
@@ -69,7 +69,7 @@ c_ SpreadSheet ?MW..
         addToolBar(toolBar)
         formulaInput _ ?LE..
         cellLabel _ QLabel(toolBar)
-        cellLabel.setMinimumSize(80, 0)
+        cellLabel.sMS..(80, 0)
         toolBar.aW..(cellLabel)
         toolBar.aW..(formulaInput)
         table _ QTableWidget(rows, cols, self)
@@ -256,33 +256,33 @@ c_ SpreadSheet ?MW..
         addDialog _ QDialog
         addDialog.sWT..(title)
         group _ QGroupBox(title, addDialog)
-        group.setMinimumSize(250, 100)
+        group.sMS..(250, 100)
         cell1Label _ QLabel(c1Text, group)
-        cell1RowInput _ QComboBox(group)
+        cell1RowInput _ ?CB(group)
         c1Row, c1Col _ decode_pos(cell1)
         cell1RowInput.aI..(rows)
         cell1RowInput.setCurrentIndex(c1Row)
-        cell1ColInput _ QComboBox(group)
+        cell1ColInput _ ?CB(group)
         cell1ColInput.aI..(cols)
         cell1ColInput.setCurrentIndex(c1Col)
         operatorLabel _ QLabel(opText, group)
         operatorLabel.setAlignment(__.AlignHCenter)
         cell2Label _ QLabel(c2Text, group)
-        cell2RowInput _ QComboBox(group)
+        cell2RowInput _ ?CB(group)
         c2Row, c2Col _ decode_pos(cell2)
         cell2RowInput.aI..(rows)
         cell2RowInput.setCurrentIndex(c2Row)
-        cell2ColInput _ QComboBox(group)
+        cell2ColInput _ ?CB(group)
         cell2ColInput.aI..(cols)
         cell2ColInput.setCurrentIndex(c2Col)
         equalsLabel _ QLabel("=", group)
         equalsLabel.setAlignment(__.AlignHCenter)
         outLabel _ QLabel(outText, group)
-        outRowInput _ QComboBox(group)
+        outRowInput _ ?CB(group)
         outRow, outCol _ decode_pos(outCell)
         outRowInput.aI..(rows)
         outRowInput.setCurrentIndex(outRow)
-        outColInput _ QComboBox(group)
+        outColInput _ ?CB(group)
         outColInput.aI..(cols)
         outColInput.setCurrentIndex(outCol)
 
@@ -300,7 +300,7 @@ c_ SpreadSheet ?MW..
         dialogLayout _ QVBoxLayout(addDialog)
         dialogLayout.aW..(group)
         dialogLayout.addStretch(1)
-        dialogLayout.addItem(buttonsLayout)
+        dialogLayout.aI..(buttonsLayout)
 
         cell1Layout _ QHBoxLayout()
         cell1Layout.aW..(cell1Label)
@@ -322,12 +322,12 @@ c_ SpreadSheet ?MW..
         outLayout.addSpacing(10)
         outLayout.aW..(outRowInput)
         vLayout _ QVBoxLayout(group)
-        vLayout.addItem(cell1Layout)
+        vLayout.aI..(cell1Layout)
         vLayout.aW..(operatorLabel)
-        vLayout.addItem(cell2Layout)
+        vLayout.aI..(cell2Layout)
         vLayout.aW..(equalsLabel)
         vLayout.addStretch(1)
-        vLayout.addItem(outLayout)
+        vLayout.aI..(outLayout)
         __ addDialog.exec_
             cell1 _ cell1ColInput.currentText() + cell1RowInput.currentText()
             cell2 _ cell2ColInput.currentText() + cell2RowInput.currentText()
@@ -416,7 +416,7 @@ c_ SpreadSheet ?MW..
         # column 0
         table.setItem(0, 0, SpreadSheetItem("Item"))
         table.item(0, 0).setBackground(titleBackground)
-        table.item(0, 0).setToolTip("This column shows the purchased item/service")
+        table.item(0, 0).sTT..("This column shows the purchased item/service")
         table.item(0, 0).setFont(titleFont)
         table.setItem(1, 0, SpreadSheetItem("AirportBus"))
         table.setItem(2, 0, SpreadSheetItem("Flight (Munich)"))
@@ -432,7 +432,7 @@ c_ SpreadSheet ?MW..
         # column 1
         table.setItem(0, 1, SpreadSheetItem("Date"))
         table.item(0, 1).setBackground(titleBackground)
-        table.item(0, 1).setToolTip("This column shows the purchase date, double click to change")
+        table.item(0, 1).sTT..("This column shows the purchase date, double click to change")
         table.item(0, 1).setFont(titleFont)
         table.setItem(1, 1, SpreadSheetItem("15/6/2006"))
         table.setItem(2, 1, SpreadSheetItem("15/6/2006"))
@@ -447,7 +447,7 @@ c_ SpreadSheet ?MW..
         # column 2
         table.setItem(0, 2, SpreadSheetItem("Price"))
         table.item(0, 2).setBackground(titleBackground)
-        table.item(0, 2).setToolTip("This column shows the price of the purchase")
+        table.item(0, 2).sTT..("This column shows the price of the purchase")
         table.item(0, 2).setFont(titleFont)
         table.setItem(1, 2, SpreadSheetItem("150"))
         table.setItem(2, 2, SpreadSheetItem("2350"))
@@ -462,7 +462,7 @@ c_ SpreadSheet ?MW..
         # column 3
         table.setItem(0, 3, SpreadSheetItem("Currency"))
         table.item(0, 3).setBackgroundColor(titleBackground)
-        table.item(0, 3).setToolTip("This column shows the currency")
+        table.item(0, 3).sTT..("This column shows the currency")
         table.item(0, 3).setFont(titleFont)
         table.setItem(1, 3, SpreadSheetItem("NOK"))
         table.setItem(2, 3, SpreadSheetItem("NOK"))
@@ -477,7 +477,7 @@ c_ SpreadSheet ?MW..
         # column 4
         table.setItem(0, 4, SpreadSheetItem("Ex. Rate"))
         table.item(0, 4).setBackground(titleBackground)
-        table.item(0, 4).setToolTip("This column shows the exchange rate to NOK")
+        table.item(0, 4).sTT..("This column shows the exchange rate to NOK")
         table.item(0, 4).setFont(titleFont)
         table.setItem(1, 4, SpreadSheetItem("1"))
         table.setItem(2, 4, SpreadSheetItem("1"))
@@ -492,7 +492,7 @@ c_ SpreadSheet ?MW..
         # column 5
         table.setItem(0, 5, SpreadSheetItem("NOK"))
         table.item(0, 5).setBackground(titleBackground)
-        table.item(0, 5).setToolTip("This column shows the expenses in NOK")
+        table.item(0, 5).sTT..("This column shows the expenses in NOK")
         table.item(0, 5).setFont(titleFont)
         table.setItem(1, 5, SpreadSheetItem("* C2 E2"))
         table.setItem(2, 5, SpreadSheetItem("* C3 E3"))

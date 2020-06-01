@@ -44,15 +44,15 @@
 
 ______ unicodedata
 
-____ ?.?C.. ______ pyqtSignal, QSize, __
+____ ?.?C.. ______ pyqtSignal, ?S.., __
 ____ ?.?G.. ______ (QClipboard, QFont, QFontDatabase, QFontMetrics,
         QPainter)
-____ ?.?W.. ______ (?A.., QCheckBox, QComboBox, QFontComboBox,
+____ ?.?W.. ______ (?A.., QCheckBox, ?CB, QFontComboBox,
         QHBoxLayout, QLabel, QLineEdit, QMainWindow, ?PB.., QScrollArea,
-        QToolTip, QVBoxLayout, QWidget)
+        QToolTip, QVBoxLayout, ?W..)
 
 
-c_ CharacterWidget(QWidget):
+c_ CharacterWidget(?W..):
 
     characterSelected _ pyqtSignal(str)
 
@@ -96,8 +96,8 @@ c_ CharacterWidget(QWidget):
         adjustSize()
         update()
 
-    ___ sizeHint 
-        r_ QSize(columns * squareSize,
+    ___ sH..
+        r_ ?S..(columns * squareSize,
                 (65536 / columns) * squareSize)
 
     ___ mouseMoveEvent  event):
@@ -157,10 +157,10 @@ c_ CharacterWidget(QWidget):
 
     @staticmethod
     ___ _chr(codepoint):
-        try:
+        ___
             # Python v2.
             r_ unichr(codepoint)
-        except NameError:
+        _____ NameError:
             # Python v3.
             r_ chr(codepoint)
 
@@ -174,9 +174,9 @@ c_ MainWindow ?MW..
         fontLabel _ QLabel("Font:")
         fontCombo _ QFontComboBox()
         sizeLabel _ QLabel("Size:")
-        sizeCombo _ QComboBox()
+        sizeCombo _ ?CB()
         styleLabel _ QLabel("Style:")
-        styleCombo _ QComboBox()
+        styleCombo _ ?CB()
         fontMergingLabel _ QLabel("Automatic Font Merging:")
         fontMerging _ QCheckBox()
         fontMerging.setChecked(True)
@@ -232,7 +232,7 @@ c_ MainWindow ?MW..
         styleCombo.clear()
 
         ___ style __ fontDatabase.styles(font.family()):
-            styleCombo.addItem(style)
+            styleCombo.aI..(style)
 
         styleIndex _ styleCombo.findText(currentItem)
         __ styleIndex == -1:
@@ -248,11 +248,11 @@ c_ MainWindow ?MW..
 
         __ fontDatabase.isSmoothlyScalable(font.family(), fontDatabase.styleString(font)):
             ___ size __ QFontDatabase.standardSizes
-                sizeCombo.addItem(str(size))
+                sizeCombo.aI..(str(size))
                 sizeCombo.setEditable(True)
         ____
             ___ size __ fontDatabase.smoothSizes(font.family(), fontDatabase.styleString(font)):
-                sizeCombo.addItem(str(size))
+                sizeCombo.aI..(str(size))
                 sizeCombo.setEditable F..
 
         sizeCombo.blockSignals F..

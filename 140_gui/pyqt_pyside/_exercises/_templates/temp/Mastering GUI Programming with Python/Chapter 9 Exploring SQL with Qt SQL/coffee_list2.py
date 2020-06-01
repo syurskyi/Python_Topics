@@ -31,11 +31,11 @@ c_ CoffeeForm ?.?W..
 
         # Coffee Fields
         coffee_brand _ qtw.?LE..
-        layout().addRow('Brand: ', coffee_brand)
+        layout().aR..('Brand: ', coffee_brand)
         coffee_name _ qtw.?LE..
-        layout().addRow('Name: ', coffee_name)
+        layout().aR..('Name: ', coffee_name)
         roast _ ?.?CB..
-        layout().addRow('Roast: ', roast)
+        layout().aR..('Roast: ', roast)
 
         # Map the coffee fields
         coffees_model _ coffees_model
@@ -64,7 +64,7 @@ c_ CoffeeForm ?.?W..
 
         # Reviews
         reviews _ qtw.QTableView()
-        layout().addRow(reviews)
+        layout().aR..(reviews)
         reviews.sM..(reviews_model)
         reviews.hideColumn(0)
         reviews.hideColumn(1)
@@ -83,7 +83,7 @@ c_ CoffeeForm ?.?W..
             'New Review', c___self.add_review)
         delete_review _ qtw.?PB..(
             'Delete Review', c___self.delete_review)
-        layout().addRow(new_review, delete_review)
+        layout().aR..(new_review, delete_review)
 
     ___ show_coffee  coffee_index):
         mapper.setCurrentIndex(coffee_index.row())
@@ -193,7 +193,7 @@ c_ MainWindow(qtw.QMainWindow):
         coffee_list.doubleClicked.c..(
             coffee_form.show_coffee)
         coffee_list.doubleClicked.c..(
-            lambda: stack.setCurrentWidget(coffee_form))
+            l___: stack.setCurrentWidget(coffee_form))
 
         toolbar.aA..("Back to list", show_list)
 

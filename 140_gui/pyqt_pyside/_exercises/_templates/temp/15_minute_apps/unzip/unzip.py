@@ -52,17 +52,17 @@ class UnzipWorker(QRunnable):
 
     @pyqtSlot()
     def run
-        try:
+        ___
             items = zipfile.infolist()
             total_n = len(items)
 
             ___ n, item __ en..(items, 1):
-                if not any(item.filename.startswith(p) ___ p __ EXCLUDE_PATHS):
+                if not an.(item.filename.s_w_(p) ___ p __ EXCLUDE_PATHS):
                     zipfile.extract(item)
 
                 signals.progress.emit(n / total_n)
 
-        except Exception as e:
+        _____ Exception as e:
             exctype, value = sys.exc_info()[:2]
             signals.error.emit((exctype, value, traceback.format_exc()))
             return
@@ -73,8 +73,8 @@ class UnzipWorker(QRunnable):
 
 class MainWindow(QMainWindow, Ui_MainWindow):
 
-    def  - (self, *args, **kwargs):
-        super(MainWindow, self). - (*args, **kwargs)
+    def  - (self, $ $$
+        super(MainWindow, self). - ($ $$)
         setupUi
 
         setAttribute(Qt.WA_TranslucentBackground )

@@ -45,12 +45,12 @@
 ____ ?.?C.. ______ QFile, QStringListModel, __
 ____ ?.?G.. ______ QCursor, ?KS.., QTextCursor
 ____ ?.?W.. ______ (?A.., ?A.., QCompleter, QMainWindow,
-        ?MB.., QTextEdit)
+        ?MB.., ?TE..)
 
 ______ customcompleter_rc
 
 
-c_ TextEdit(QTextEdit):
+c_ TextEdit(?TE..):
     ___  -   parent_None):
         super(TextEdit, self). - (parent)
 
@@ -130,7 +130,7 @@ c_ TextEdit(QTextEdit):
                     _completer.completionModel().index(0, 0))
 
         cr _ cursorRect()
-        cr.setWidth(_completer.popup().sizeHintForColumn(0) + _completer.popup().verticalScrollBar().sizeHint().width())
+        cr.setWidth(_completer.popup().sizeHintForColumn(0) + _completer.popup().verticalScrollBar().sH..().width())
         _completer.complete(cr)
 
 
@@ -179,9 +179,9 @@ c_ MainWindow ?MW..
         w__ no. f.atEnd
             line _ f.readLine().trimmed()
             __ line.length() !_ 0:
-                try:
+                ___
                     line _ str(line, encoding_'ascii')
-                except TypeError:
+                _____ TypeError:
                     line _ str(line)
 
                 words.ap..(line)

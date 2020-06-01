@@ -3,15 +3,15 @@
 #============================================================================#
 # PyQt5 port of the designer/containerextension example from Qt v5.x         #
 #----------------------------------------------------------------------------#
-____ ?.?C.. ______ pyqtProperty, pyqtSignal, pyqtSlot, QSize
-____ ?.?W.. ______ (?A.., QComboBox, QLabel, QStackedWidget,
-        QVBoxLayout, QWidget)
+____ ?.?C.. ______ pyqtProperty, pyqtSignal, pyqtSlot, ?S..
+____ ?.?W.. ______ (?A.., ?CB, QLabel, QStackedWidget,
+        QVBoxLayout, ?W..)
 
 
 #============================================================================#
 # Implementation of a MultiPageWidget using a QComboBox and a QStackedWidget #
 #----------------------------------------------------------------------------#
-c_ PyMultiPageWidget(QWidget):
+c_ PyMultiPageWidget(?W..):
 
     currentIndexChanged _ pyqtSignal(int)
 
@@ -20,7 +20,7 @@ c_ PyMultiPageWidget(QWidget):
     ___  -   parent_None):
         super(PyMultiPageWidget, self). - (parent)
 
-        comboBox _ QComboBox()
+        comboBox _ ?CB()
         # MAGIC
         # It is important that the combo box has an object name beginning
         # with '__qt__passive_', otherwise, it is inactive in the form editor
@@ -35,8 +35,8 @@ c_ PyMultiPageWidget(QWidget):
         layout.aW..(stackWidget)
         sL..(layout)
 
-    ___ sizeHint
-        r_ QSize(200, 150)
+    ___ sH..
+        r_ ?S..(200, 150)
 
     ___ count
         r_ stackWidget.count()
@@ -44,11 +44,11 @@ c_ PyMultiPageWidget(QWidget):
     ___ widget  index):
         r_ stackWidget.widget(index)
 
-    @pyqtSlot(QWidget)
+    @pyqtSlot(?W..)
     ___ addPage  page):
         insertPage(count(), page)
 
-    @pyqtSlot(int, QWidget)
+    @pyqtSlot(int, ?W..)
     ___ insertPage  index, page):
         page.setParent(stackWidget)
         stackWidget.insertWidget(index, page)
@@ -56,7 +56,7 @@ c_ PyMultiPageWidget(QWidget):
         __ title == "":
             title _ "Page %d" % (comboBox.count() + 1)
             page.sWT..(title)
-        comboBox.insertItem(index, title)
+        comboBox.iI..(index, title)
 
     @pyqtSlot(int)
     ___ removePage  index):

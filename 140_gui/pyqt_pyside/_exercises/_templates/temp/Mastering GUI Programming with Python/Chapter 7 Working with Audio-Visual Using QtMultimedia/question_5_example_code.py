@@ -19,7 +19,7 @@ c_ MainWindow ?.?W..
         layout().aW..(cvf)
 
         # Form
-        form _ qtw.QFormLayout()
+        form _ qtw.?FL..
         layout().aL..(form)
 
         # zoom
@@ -29,7 +29,7 @@ c_ MainWindow ?.?W..
             sliderMoved_self.on_slider_moved,
             orientation_qtc.__.Horizontal
         )
-        form.addRow('Zoom', zoomslider)
+        form.aR..('Zoom', zoomslider)
 
         camera.start()
         s..

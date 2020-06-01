@@ -25,12 +25,12 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 ______ math
 
-____ ?.?C.. ______ pyqtProperty, pyqtSlot, QPointF, QSize
+____ ?.?C.. ______ pyqtProperty, pyqtSlot, QPointF, ?S..
 ____ ?.?G.. ______ QBrush, ?C.., QPainter, QPainterPath, QRadialGradient
-____ ?.?W.. ______ ?A.., QWidget
+____ ?.?W.. ______ ?A.., ?W..
 
 
-c_ PolygonWidget(QWidget):
+c_ PolygonWidget(?W..):
     """PolygonWidget(QWidget)
     
     Provides a custom widget to display a polygon with properties and slots
@@ -67,9 +67,9 @@ c_ PolygonWidget(QWidget):
         painter.drawPath(path)
         painter.end()
     
-    ___ sizeHint
+    ___ sH..
     
-        r_ QSize(2*_outerRadius + 20, 2*_outerRadius + 20)
+        r_ ?S..(2*_outerRadius + 20, 2*_outerRadius + 20)
     
     ___ createPath
     

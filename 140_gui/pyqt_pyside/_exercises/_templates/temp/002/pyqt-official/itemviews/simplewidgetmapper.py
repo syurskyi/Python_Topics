@@ -45,10 +45,10 @@
 
 ____ ?.?G.. ______ QStandardItem, QStandardItemModel
 ____ ?.?W.. ______ (?A.., QDataWidgetMapper, QGridLayout,
-        QLabel, QLineEdit, ?PB.., QSpinBox, QTextEdit, QWidget)
+        QLabel, QLineEdit, ?PB.., SB.., ?TE.., ?W..)
 
 
-c_ Window(QWidget):
+c_ Window(?W..):
     ___  -   parent_None):
         super(Window, self). - (parent)
 
@@ -59,9 +59,9 @@ c_ Window(QWidget):
         nameLabel _ QLabel("Na&me:")
         nameEdit _ ?LE..
         addressLabel _ QLabel("&Address:")
-        addressEdit _ QTextEdit()
+        addressEdit _ ?TE..()
         ageLabel _ QLabel("A&ge (in years):")
-        ageSpinBox _ QSpinBox()
+        ageSpinBox _ SB..()
         nextButton _ ?PB..("&Next")
         previousButton _ ?PB..("&Previous")
         nameLabel.setBuddy(nameEdit)

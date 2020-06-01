@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ (QByteArray, QDataStream, QIODevice, QMimeData,
         QPoint, __)
 ____ ?.?G.. ______ ?C.., QDrag, QPainter, QPixmap
-____ ?.?W.. ______ ?A.., QFrame, QHBoxLayout, QLabel, QWidget
+____ ?.?W.. ______ ?A.., QFrame, QHBoxLayout, QLabel, ?W..
 
 ______ draggableicons_rc
 
@@ -54,7 +54,7 @@ c_ DragWidget(QFrame):
     ___  -   parent_None):
         super(DragWidget, self). - (parent)
 
-        setMinimumSize(200, 200)
+        sMS..(200, 200)
         setFrameStyle(QFrame.Sunken | QFrame.StyledPanel)
         setAcceptDrops(True)
 

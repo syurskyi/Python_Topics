@@ -60,7 +60,7 @@ Result:
 
 ______ ___
 
-____ ?.?C.. ______ pyqtSignal, QObject, QSize, __, QUrl
+____ ?.?C.. ______ pyqtSignal, QObject, ?S.., __, QUrl
 ____ ?.?G.. ______ QImage, QPainter
 ____ ?.?W.. ______ ?A..
 ____ ?.QtWebKitWidgets ______ QWebPage
@@ -98,7 +98,7 @@ c_ FrameCapture(QObject):
         index _ outputFileName.rfind('.')
         _fileName _ index == -1 and outputFileName + ".png" or outputFileName
         _page.mainFrame().load(url)
-        _page.setViewportSize(QSize(1024, 768))
+        _page.setViewportSize(?S..(1024, 768))
  
     ___ printProgress  percent):
         __ _percent >_ percent:

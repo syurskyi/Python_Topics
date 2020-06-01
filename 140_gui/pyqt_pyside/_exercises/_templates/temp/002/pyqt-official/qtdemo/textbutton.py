@@ -40,7 +40,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QPointF, QRect, QRectF, QSize, __
+____ ?.?C.. ______ QPointF, QRect, QRectF, ?S.., __
 ____ ?.?G.. ______ (?C.., QImage, QLinearGradient, QPainter,
         QPainterPath, QPen)
 
@@ -224,9 +224,9 @@ c_ TextButton(DemoItem):
 
         # Calculate the button size.
         __ type __ (TextButton.SIDEBAR, TextButton.PANEL):
-            logicalSize _ QSize(TextButton.BUTTON_WIDTH, TextButton.BUTTON_HEIGHT)
+            logicalSize _ ?S..(TextButton.BUTTON_WIDTH, TextButton.BUTTON_HEIGHT)
         ____
-            logicalSize _ QSize(int((TextButton.BUTTON_WIDTH / 2.0) - 5), int(TextButton.BUTTON_HEIGHT * 1.5))
+            logicalSize _ ?S..(int((TextButton.BUTTON_WIDTH / 2.0) - 5), int(TextButton.BUTTON_HEIGHT * 1.5))
 
         _prepared _ False
 

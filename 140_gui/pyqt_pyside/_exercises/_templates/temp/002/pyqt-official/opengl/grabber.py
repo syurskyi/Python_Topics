@@ -45,11 +45,11 @@
 ______ ___
 ______ math
 
-____ ?.?C.. ______ pyqtSignal, QSize, __, QTimer
+____ ?.?C.. ______ pyqtSignal, ?S.., __, QTimer
 ____ ?.?G.. ______ QOpenGLVersionProfile, QPixmap
 ____ ?.?W.. ______ (?A.., ?A.., QGridLayout, QLabel,
         QLineEdit, QMainWindow, ?MB.., QOpenGLWidget, QScrollArea,
-        QSizePolicy, QSlider, QWidget)
+        QSizePolicy, QSlider, ?W..)
 
 
 c_ GLWidget(QOpenGLWidget):
@@ -295,13 +295,13 @@ c_ MainWindow ?MW..
         glWidgetArea.setVerticalScrollBarPolicy(__.ScrollBarAlwaysOff)
         glWidgetArea.sSP..(QSizePolicy.Ignored,
                 QSizePolicy.Ignored)
-        glWidgetArea.setMinimumSize(50, 50)
+        glWidgetArea.sMS..(50, 50)
 
         pixmapLabelArea _ QScrollArea()
         pixmapLabelArea.setWidget(pixmapLabel)
         pixmapLabelArea.sSP..(QSizePolicy.Ignored,
                 QSizePolicy.Ignored)
-        pixmapLabelArea.setMinimumSize(50, 50)
+        pixmapLabelArea.sMS..(50, 50)
 
         xSlider _ createSlider(glWidget.xRotationChanged,
                 glWidget.setXRotation)
@@ -383,8 +383,8 @@ c_ MainWindow ?MW..
         pixmapLabel.setPixmap(pixmap)
         size _ pixmap.size()
 
-        __ size - QSize(1, 0) == pixmapLabelArea.maximumViewportSize
-            size -_ QSize(1, 0)
+        __ size - ?S..(1, 0) == pixmapLabelArea.maximumViewportSize
+            size -_ ?S..(1, 0)
 
         pixmapLabel.r..(size)
 

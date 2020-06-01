@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ QFileInfo
 ____ ?.?W.. ______ (?A.., QCheckBox, QDialog,
         QDialogButtonBox, QFrame, QGroupBox, QLabel, QLineEdit, QListWidget,
-        QTabWidget, QVBoxLayout, QWidget)
+        ?TW.., QVBoxLayout, ?W..)
 
 
 c_ TabDialog(QDialog):
@@ -54,10 +54,10 @@ c_ TabDialog(QDialog):
 
         fileInfo _ QFileInfo(fileName)
 
-        tabWidget _ QTabWidget()
-        tabWidget.addTab(GeneralTab(fileInfo), "General")
-        tabWidget.addTab(PermissionsTab(fileInfo), "Permissions")
-        tabWidget.addTab(ApplicationsTab(fileInfo), "Applications")
+        tabWidget _ ?TW..()
+        tabWidget.aT..(GeneralTab(fileInfo), "General")
+        tabWidget.aT..(PermissionsTab(fileInfo), "Permissions")
+        tabWidget.aT..(ApplicationsTab(fileInfo), "Applications")
 
         buttonBox _ QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
 
@@ -72,7 +72,7 @@ c_ TabDialog(QDialog):
         sWT..("Tab Dialog")
 
 
-c_ GeneralTab(QWidget):
+c_ GeneralTab(?W..):
     ___  -   fileInfo, parent_None):
         super(GeneralTab, self). - (parent)
 
@@ -111,7 +111,7 @@ c_ GeneralTab(QWidget):
         sL..(mainLayout)
 
 
-c_ PermissionsTab(QWidget):
+c_ PermissionsTab(?W..):
     ___  -   fileInfo, parent_None):
         super(PermissionsTab, self). - (parent)
 
@@ -159,7 +159,7 @@ c_ PermissionsTab(QWidget):
         sL..(mainLayout)
 
 
-c_ ApplicationsTab(QWidget):
+c_ ApplicationsTab(?W..):
     ___  -   fileInfo, parent_None):
         super(ApplicationsTab, self). - (parent)
 

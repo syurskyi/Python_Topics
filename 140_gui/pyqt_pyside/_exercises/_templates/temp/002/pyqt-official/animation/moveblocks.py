@@ -135,10 +135,10 @@ __ ______ __ ______
 
     scene _ QGraphicsScene(0, 0, 300, 300)
     scene.setBackgroundBrush(__.black)
-    scene.addItem(button1)
-    scene.addItem(button2)
-    scene.addItem(button3)
-    scene.addItem(button4)
+    scene.aI..(button1)
+    scene.aI..(button2)
+    scene.aI..(button3)
+    scene.aI..(button4)
 
     window _ QGraphicsView(scene)
     window.setFrameStyle(0)

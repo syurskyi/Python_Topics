@@ -163,7 +163,7 @@ __ ______ __ ______
                 -kineticPix.height() / 2)
         item.pixmap_item.setZValue(i)
         items.ap..(item)
-        scene.addItem(item.pixmap_item)
+        scene.aI..(item.pixmap_item)
 
     # Buttons.
     buttonParent _ QGraphicsRectItem()
@@ -179,7 +179,7 @@ __ ______ __ ______
     tiledButton.setPos(-100, 100)
     centeredButton.setPos(100, 100)
 
-    scene.addItem(buttonParent)
+    scene.aI..(buttonParent)
     buttonParent.setScale(0.75)
     buttonParent.setPos(200, 200)
     buttonParent.setZValue(65)

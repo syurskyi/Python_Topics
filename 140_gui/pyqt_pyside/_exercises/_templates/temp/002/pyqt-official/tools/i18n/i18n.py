@@ -46,7 +46,7 @@ ____ ?.?C.. ______ QDir, QEvent, __, QT_TRANSLATE_NOOP, QTranslator
 ____ ?.?G.. ______ ?C.., ?P..
 ____ ?.?W.. ______ (?A.., ?A.., QCheckBox, QDialog,
         QDialogButtonBox, QGridLayout, QGroupBox, QListWidget, QMainWindow,
-        QRadioButton, QVBoxLayout, QWidget)
+        QRadioButton, QVBoxLayout, ?W..)
 
 ______ i18n_rc
 
@@ -103,7 +103,7 @@ c_ LanguageChooser(QDialog):
                 __ checkBox:
                     checkBox.setChecked F..
 
-        r_ QWidget.eventFilter  object, event)
+        r_ ?W...eventFilter  object, event)
 
     ___ closeEvent  event):
         ?A...instance().quit()
@@ -173,7 +173,7 @@ c_ MainWindow ?MW..
         listWidget _ QListWidget()
 
         ___ le __ MainWindow.listEntries:
-            listWidget.addItem(tr(le))
+            listWidget.aI..(tr(le))
 
         mainLayout _ ?VBL..
         mainLayout.aW..(groupBox)

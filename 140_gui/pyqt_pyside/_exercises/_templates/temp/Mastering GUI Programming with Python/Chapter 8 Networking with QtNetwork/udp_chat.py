@@ -31,7 +31,7 @@ c_ UdpChatInterface(qtc.QObject):
             __ delimiter no. __ raw_message:
                 # invalid message, ignore
                 continue
-            username, message _ raw_message.split(delimiter, 1)
+            username, message _ raw_message.sp..(delimiter, 1)
             received.emit(username, message)
 
     ___ on_error  socket_error):
@@ -99,7 +99,7 @@ c_ MainWindow(qtw.QMainWindow):
         cw.submitted.c..(interface.send_message)
         interface.received.c..(cw.write_message)
         interface.error.c..(
-            lambda x: qtw.?MB...critical(N.., 'Error', x))
+            l___ x: qtw.?MB...critical(N.., 'Error', x))
         # Code ends here
         s..
 

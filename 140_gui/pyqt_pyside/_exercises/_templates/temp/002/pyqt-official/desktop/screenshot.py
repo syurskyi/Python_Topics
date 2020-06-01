@@ -45,11 +45,11 @@
 ____ ?.?C.. ______ QDir, __, QTimer
 ____ ?.?G.. ______ QPixmap
 ____ ?.?W.. ______ (?A.., QCheckBox, ?FD.., QGridLayout,
-        QGroupBox, QHBoxLayout, QLabel, ?PB.., QSizePolicy, QSpinBox,
-        QVBoxLayout, QWidget)
+        QGroupBox, QHBoxLayout, QLabel, ?PB.., QSizePolicy, SB..,
+        QVBoxLayout, ?W..)
 
 
-c_ Screenshot(QWidget):
+c_ Screenshot(?W..):
     ___  -
         super(Screenshot, self). - ()
 
@@ -57,7 +57,7 @@ c_ Screenshot(QWidget):
         screenshotLabel.sSP..(QSizePolicy.E..,
                 QSizePolicy.E..)
         screenshotLabel.setAlignment(__.AlignCenter)
-        screenshotLabel.setMinimumSize(240, 160)
+        screenshotLabel.sMS..(240, 160)
 
         createOptionsGroupBox()
         createButtonsLayout()
@@ -122,7 +122,7 @@ c_ Screenshot(QWidget):
     ___ createOptionsGroupBox
         optionsGroupBox _ QGroupBox("Options")
 
-        delaySpinBox _ QSpinBox()
+        delaySpinBox _ SB..()
         delaySpinBox.setSuffix(" s")
         delaySpinBox.setMaximum(60)
         delaySpinBox.valueChanged.c..(updateCheckBox)

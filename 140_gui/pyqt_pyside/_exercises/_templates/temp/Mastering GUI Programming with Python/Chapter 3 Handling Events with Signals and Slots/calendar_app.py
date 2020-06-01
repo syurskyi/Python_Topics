@@ -152,7 +152,7 @@ c_ MainWindow ?.?W..
                 __ event['time']
                 else 'All Day'
             )
-            event_list.addItem(f"{time}: {event['title']}")
+            event_list.aI..(f"{time}: {event['title']}")
 
     ___ populate_form 
         clear_form()
@@ -215,7 +215,7 @@ c_ MainWindow ?.?W..
             event_category.setCurrentIndex(0)
 
     ___ add_category  category):
-        event_category.addItem(category)
+        event_category.aI..(category)
         event_category.setCurrentText(category)
 
 __ ______ __ ______

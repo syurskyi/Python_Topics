@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ QFile, QIODevice, __, QTextStream, QUrl
 ____ ?.?W.. ______ (?A.., ?A.., QLineEdit, QMainWindow,
-        QSizePolicy, QStyle, QTextEdit)
+        QSizePolicy, QStyle, ?TE..)
 ____ ?.QtNetwork ______ QNetworkProxyFactory, QNetworkRequest
 ____ ?.QtWebKitWidgets ______ QWebPage, QWebView
 
@@ -118,7 +118,7 @@ c_ MainWindow ?MW..
 
     ___ slotSourceDownloaded 
         reply _ sender()
-        textEdit _ QTextEdit()
+        textEdit _ ?TE..()
         textEdit.setAttribute(__.WA_DeleteOnClose)
         textEdit.s..
         textEdit.sPT..(QTextStream(reply).readAll())

@@ -49,7 +49,7 @@ ____ ?.?C.. ______ QPointF, QRect, QRectF, __, QTimer
 ____ ?.?G.. ______ (QBrush, ?C.., QFont, QLinearGradient, QPainter,
         QPen, QSurfaceFormat)
 ____ ?.?W.. ______ (?A.., QGridLayout, QLabel, QOpenGLWidget,
-        QWidget)
+        ?W..)
 
 
 c_ Helper(object):
@@ -91,13 +91,13 @@ c_ Helper(object):
         painter.drawText(QRect(-50, -50, 100, 100), __.AlignCenter, "Qt")
 
 
-c_ Widget(QWidget):
+c_ Widget(?W..):
     ___  -   helper, parent):
         super(Widget, self). - (parent)
 
         helper _ helper
         elapsed _ 0
-        setFixedSize(200, 200)
+        sFS..(200, 200)
 
     ___ animate 
         elapsed _ (elapsed + sender().interval()) % 1000
@@ -117,7 +117,7 @@ c_ GLWidget(QOpenGLWidget):
 
         helper _ helper
         elapsed _ 0
-        setFixedSize(200, 200)
+        sFS..(200, 200)
         setAutoFillBackground F..
 
     ___ animate 
@@ -132,7 +132,7 @@ c_ GLWidget(QOpenGLWidget):
         painter.end()
 
 
-c_ Window(QWidget):
+c_ Window(?W..):
     ___  -
         super(Window, self). - ()
 

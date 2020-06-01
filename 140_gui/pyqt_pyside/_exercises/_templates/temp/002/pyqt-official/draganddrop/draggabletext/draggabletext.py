@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ QFile, QIODevice, QMimeData, QPoint, __, QTextStream
 ____ ?.?G.. ______ QDrag, ?P.., QPixmap
-____ ?.?W.. ______ ?A.., QFrame, QLabel, QWidget
+____ ?.?W.. ______ ?A.., QFrame, QLabel, ?W..
 
 ______ draggabletext_rc
 
@@ -80,7 +80,7 @@ c_ DragLabel(QLabel):
             update()
 
 
-c_ DragWidget(QWidget):
+c_ DragWidget(?W..):
     ___  -   parent_None):
         super(DragWidget, self). - (parent)
 
@@ -90,7 +90,7 @@ c_ DragWidget(QWidget):
         x _ 5
         y _ 5
 
-        ___ word __ QTextStream(dictionaryFile).readAll().split
+        ___ word __ QTextStream(dictionaryFile).readAll().sp..
             wordLabel _ DragLabel(word, self)
             wordLabel.move(x, y)
             wordLabel.s..
@@ -104,7 +104,7 @@ c_ DragWidget(QWidget):
         sP..(newPalette)
 
         setAcceptDrops(True)
-        setMinimumSize(400, max(200, y))
+        sMS..(400, max(200, y))
         sWT..("Draggable Text")
 
     ___ dragEnterEvent  event):
@@ -120,11 +120,11 @@ c_ DragWidget(QWidget):
     ___ dropEvent  event):
         __ event.mimeData().hasText
             mime _ event.mimeData()
-            pieces _ mime.t__().split()
+            pieces _ mime.t__().sp..()
             position _ event.pos()
             hotSpot _ QPoint()
 
-            hotSpotPos _ mime.data('application/x-hotspot').split(' ')
+            hotSpotPos _ mime.data('application/x-hotspot').sp..(' ')
             __ le.(hotSpotPos) == 2:
                hotSpot.setX(hotSpotPos[0].toInt()[0])
                hotSpot.setY(hotSpotPos[1].toInt()[0])

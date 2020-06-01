@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ QByteArray, QFile, QRegExp, __
 ____ ?.?G.. ______ (?C.., QFont, QSyntaxHighlighter, QTextCharFormat,
         QTextCursor, QTextFormat)
-____ ?.?W.. ______ ?A.., QMainWindow, QTextEdit
+____ ?.?W.. ______ ?A.., QMainWindow, ?TE..
 ____ ?.QtXmlPatterns ______ (QAbstractMessageHandler, QSourceLocation,
         QXmlSchema, QXmlSchemaValidator)
 
@@ -54,16 +54,16 @@ ____ ui_schema ______ Ui_SchemaMainWindow
 
 
 ___ encode_utf8(ba):
-    try:
+    ___
         r_ unicode(ba, encoding_'utf8')
-    except NameError:
+    _____ NameError:
         r_ str(ba, encoding_'utf8')
 
 
 ___ decode_utf8(qs):
-    try:
+    ___
         r_ QByteArray(qs.decode(encoding_'utf8'))
-    except AttributeError:
+    _____ AttributeError:
         r_ QByteArray(bytes(qs, encoding_'utf8'))
 
 
@@ -161,12 +161,12 @@ c_ MainWindow(QMainWindow, Ui_SchemaMainWindow):
         XmlSyntaxHighlighter(schemaView.document())
         XmlSyntaxHighlighter(instanceEdit.document())
 
-        schemaSelection.addItem("Contact Schema")
-        schemaSelection.addItem("Recipe Schema")
-        schemaSelection.addItem("Order Schema")
+        schemaSelection.aI..("Contact Schema")
+        schemaSelection.aI..("Recipe Schema")
+        schemaSelection.aI..("Order Schema")
 
-        instanceSelection.addItem("Valid Contact Instance")
-        instanceSelection.addItem("Invalid Contact Instance")
+        instanceSelection.aI..("Valid Contact Instance")
+        instanceSelection.aI..("Invalid Contact Instance")
 
         schemaSelection.currentIndexChanged.c..(schemaSelected)
         instanceSelection.currentIndexChanged.c..(instanceSelected)
@@ -182,14 +182,14 @@ c_ MainWindow(QMainWindow, Ui_SchemaMainWindow):
         instanceSelection.clear()
 
         __ index == 0:
-            instanceSelection.addItem("Valid Contact Instance")
-            instanceSelection.addItem("Invalid Contact Instance")
+            instanceSelection.aI..("Valid Contact Instance")
+            instanceSelection.aI..("Invalid Contact Instance")
         ____ index == 1:
-            instanceSelection.addItem("Valid Recipe Instance")
-            instanceSelection.addItem("Invalid Recipe Instance")
+            instanceSelection.aI..("Valid Recipe Instance")
+            instanceSelection.aI..("Invalid Recipe Instance")
         ____ index == 2:
-            instanceSelection.addItem("Valid Order Instance")
-            instanceSelection.addItem("Invalid Order Instance")
+            instanceSelection.aI..("Valid Order Instance")
+            instanceSelection.aI..("Invalid Order Instance")
 
         textChanged()
 
@@ -251,7 +251,7 @@ c_ MainWindow(QMainWindow, Ui_SchemaMainWindow):
             instanceEdit.moveCursor(QTextCursor.Right)
 
         extraSelections _   # list
-        selection _ QTextEdit.ExtraSelection()
+        selection _ ?TE...ExtraSelection()
 
         lineColor _ ?C..(__.red).lighter(160)
         selection.format.setBackground(lineColor)

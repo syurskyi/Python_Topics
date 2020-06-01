@@ -176,7 +176,7 @@ __ ______ __ ______
     scene.setItemIndexMethod(QGraphicsScene.NoIndex)
 
     car _ Car()
-    scene.addItem(car)
+    scene.aI..(car)
 
     view _ QGraphicsView(scene)
     view.setRenderHint(QPainter.Antialiasing)

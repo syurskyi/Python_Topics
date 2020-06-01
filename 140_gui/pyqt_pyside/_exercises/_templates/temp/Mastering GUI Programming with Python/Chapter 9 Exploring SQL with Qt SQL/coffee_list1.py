@@ -13,16 +13,16 @@ c_ CoffeeForm ?.?W..
         sL..(qtw.QFormLayout())
 
         coffee_brand _ qtw.?LE..
-        layout().addRow('Brand: ', coffee_brand)
+        layout().aR..('Brand: ', coffee_brand)
         coffee_name _ qtw.?LE..
-        layout().addRow('Name: ', coffee_name)
+        layout().aR..('Name: ', coffee_name)
         roast _ ?.?CB..
         roast.aI..(roasts)
-        layout().addRow('Roast: ', roast)
+        layout().aR..('Roast: ', roast)
         reviews _ qtw.QTableWidget(columnCount_3)
         reviews.horizontalHeader().setSectionResizeMode(
             2, qtw.QHeaderView.Stretch)
-        layout().addRow(reviews)
+        layout().aR..(reviews)
 
     ___ show_coffee  coffee_data, reviews):
         coffee_brand.sT..(coffee_data.g..('coffee_brand'))
@@ -105,10 +105,10 @@ c_ MainWindow(qtw.QMainWindow):
         navigation _ addToolBar("Navigation")
         navigation.aA..(
             "Back to list",
-            lambda: stack.setCurrentWidget(coffee_list))
+            l___: stack.setCurrentWidget(coffee_list))
 
         coffee_list.doubleClicked.c..(
-            lambda x: show_coffee(get_id_for_row(x)))
+            l___ x: show_coffee(get_id_for_row(x)))
 
         # Code ends here
         s..

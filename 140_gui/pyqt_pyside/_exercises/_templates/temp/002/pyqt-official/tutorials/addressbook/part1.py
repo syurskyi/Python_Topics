@@ -43,10 +43,10 @@
 
 
 ____ ?.?C.. ______ __
-____ ?.?W.. ______ QGridLayout, QLabel, QLineEdit, QTextEdit, QWidget
+____ ?.?W.. ______ QGridLayout, QLabel, QLineEdit, ?TE.., ?W..
 
 
-c_ AddressBook(QWidget):
+c_ AddressBook(?W..):
     ___  -   parent_None):
         super(AddressBook, self). - (parent)
 
@@ -54,7 +54,7 @@ c_ AddressBook(QWidget):
         nameLine _ ?LE..
 
         addressLabel _ QLabel("Address:")
-        addressText _ QTextEdit()
+        addressText _ ?TE..()
 
         mainLayout _ QGridLayout()
         mainLayout.aW..(nameLabel, 0, 0)

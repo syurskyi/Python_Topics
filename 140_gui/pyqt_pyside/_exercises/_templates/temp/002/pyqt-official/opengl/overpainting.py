@@ -45,7 +45,7 @@
 ______ ___
 ______ math, random
 
-____ ?.?C.. ______ (QPoint, QPointF, QRect, QRectF, QSize, __, QTime,
+____ ?.?C.. ______ (QPoint, QPointF, QRect, QRectF, ?S.., __, QTime,
         QTimer)
 ____ ?.?G.. ______ (QBrush, ?C.., QFontMetrics, QImage,
         QOpenGLVersionProfile, QPainter, QRadialGradient, QSurfaceFormat)
@@ -138,7 +138,7 @@ c_ GLWidget(QOpenGLWidget):
         animationTimer.start(25)
 
         setAutoFillBackground F..
-        setMinimumSize(200, 200)
+        sMS..(200, 200)
         sWT..("Overpainting a Scene")
 
     ___ setXRotation  angle):
@@ -226,8 +226,8 @@ c_ GLWidget(QOpenGLWidget):
     ___ showEvent  event):
         createBubbles(20 - le.(bubbles))
 
-    ___ sizeHint 
-        r_ QSize(400, 400)
+    ___ sH..
+        r_ ?S..(400, 400)
 
     ___ makeObject 
         list _ gl.glGenLists(1)

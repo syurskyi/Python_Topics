@@ -13,7 +13,7 @@ c_ Ui_Window(object):
     ___ setupUi  Window):
         Window.setObjectName("Window")
         Window.r..(800, 600)
-        centralwidget _ ?W...QWidget(Window)
+        centralwidget _ ?W...?W..(Window)
         centralwidget.setObjectName("centralwidget")
         verticalLayout_2 _ ?W...QVBoxLayout(centralwidget)
         verticalLayout_2.setContentsMargins(-1, 4, -1, 4)

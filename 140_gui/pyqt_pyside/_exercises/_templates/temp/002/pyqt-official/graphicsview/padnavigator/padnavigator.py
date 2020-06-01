@@ -46,13 +46,13 @@ ______ math
 
 ____ ?.?C.. ______ (pyqtProperty, QDirIterator, QEasingCurve, QEvent,
         QEventTransition, QHistoryState, QParallelAnimationGroup, QPointF,
-        QPropertyAnimation, QRectF, QSequentialAnimationGroup, QSize, QState,
+        QPropertyAnimation, QRectF, QSequentialAnimationGroup, ?S.., QState,
         QStateMachine, __)
 ____ ?.?G.. ______ (QBrush, ?C.., QFont, QLinearGradient, QPainter,
         ?P.., QPen, QPixmap, QTransform)
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsObject,
         QGraphicsProxyWidget, QGraphicsRotation, QGraphicsScene, QGraphicsView,
-        QKeyEventTransition, QWidget)
+        QKeyEventTransition, ?W..)
 ____ ?.QtOpenGL ______ QGL, QGLFormat, QGLWidget
 
 ______ padnavigator_rc
@@ -234,18 +234,18 @@ c_ PadNavigator(QGraphicsView):
         scene _ QGraphicsScene
         scene.setBackgroundBrush(QBrush(QPixmap(":/images/blue_angle_swirl.jpg")))
         scene.setItemIndexMethod(QGraphicsScene.NoIndex)
-        scene.addItem(pad)
+        scene.aI..(pad)
         scene.setSceneRect(scene.itemsBoundingRect())
         setScene(scene)
 
         sbr _ splash.boundingRect()
         splash.setPos(-sbr.width() / 2, scene.sceneRect().top() - 2)
         frontState.assignProperty(splash, "y", splash.y() - 100.0)
-        scene.addItem(splash)
+        scene.aI..(splash)
 
         setHorizontalScrollBarPolicy(__.ScrollBarAlwaysOff)
         setVerticalScrollBarPolicy(__.ScrollBarAlwaysOff)
-        setMinimumSize(50, 50)
+        sMS..(50, 50)
         setViewportUpdateMode(QGraphicsView.FullViewportUpdate)
         setCacheMode(QGraphicsView.CacheBackground)
         setRenderHints(QPainter.Antialiasing |
@@ -392,7 +392,7 @@ __ ______ __ ______
 
     app _ ?A..(___.a..
 
-    navigator _ PadNavigator(QSize(3, 3))
+    navigator _ PadNavigator(?S..(3, 3))
     navigator.s..
 
     ___.e..(app.exec_())

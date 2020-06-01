@@ -380,7 +380,7 @@ c_ MenuManager(QObject):
 
     ___ resolveDir  name):
         dirName _ info[name]['dirname']
-        fileName _ info[name]['filename'].split('/')
+        fileName _ info[name]['filename'].sp..('/')
 
         dir _ QFileInfo(__file__).dir()
         # To the 'examples' directory.
@@ -402,7 +402,7 @@ c_ MenuManager(QObject):
     ___ resolveExeFile  name):
         dir _ resolveDir(name)
 
-        fileName _ info[name]['filename'].split('/')[-1]
+        fileName _ info[name]['filename'].sp..('/')[-1]
 
         pyFile _ QFile(dir.path() + '/' + fileName + '.py')
         __ pyFile.exists
@@ -419,7 +419,7 @@ c_ MenuManager(QObject):
     ___ resolveQmlFile  name):
         dir _ resolveDir(name)
 
-        fileName _ info[name]['filename'].split('/')[-1]
+        fileName _ info[name]['filename'].sp..('/')[-1]
 
         qmlFile _ QFile(dir.path() + '/' + fileName + '.qml')
         __ qmlFile.exists
@@ -446,7 +446,7 @@ c_ MenuManager(QObject):
         fileName _ info[name]['filename']
 
         __ info[name]['qml'] == 'true':
-            fileName _ 'qml-' + fileName.split('/')[-1]
+            fileName _ 'qml-' + fileName.sp..('/')[-1]
 
         __ no. imageName:
             imageName _ fileName + '-example.png'

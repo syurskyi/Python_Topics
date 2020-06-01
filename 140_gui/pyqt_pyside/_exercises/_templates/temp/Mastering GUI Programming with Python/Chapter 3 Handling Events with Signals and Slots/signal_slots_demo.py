@@ -25,7 +25,7 @@ c_ MainWindow ?.?W..
         entry2.textChanged.c..(print)
 
         # Connecting a signal to another signal
-        entry1.editingFinished.c..(lambda: print('editing finished'))
+        entry1.editingFinished.c..(l___: print('editing finished'))
         entry2.rP__.c..(entry1.editingFinished)
 
         # This call will fail, because the signals have different argument types

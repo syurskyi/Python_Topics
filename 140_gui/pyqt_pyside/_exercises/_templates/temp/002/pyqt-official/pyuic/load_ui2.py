@@ -54,8 +54,8 @@ c_ DemoImpl(QDialog):
 
     @pyqtSlot()
     ___ on_button1_clicked 
-        ___ s __ "This is a demo".split(" "):
-            list.addItem(s)
+        ___ s __ "This is a demo".sp..(" "):
+            list.aI..(s)
 
 
 app _ ?A..(___.a..

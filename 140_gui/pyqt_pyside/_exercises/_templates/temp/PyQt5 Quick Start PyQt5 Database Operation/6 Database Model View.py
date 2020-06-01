@@ -3,7 +3,7 @@ ____ ?.?S.. ______ ?SD.., QSqlQuery, ?STM..
 ____ ?.?C.. ______ *
 ____ ?.?W.. ______ *
 
-c_ MainWindow(QWidget):
+c_ MainWindow(?W..):
     ___  -   parent_None):
         super(MainWindow, self). - (parent)
         db _ ?SD...aD..("QSQLITE")

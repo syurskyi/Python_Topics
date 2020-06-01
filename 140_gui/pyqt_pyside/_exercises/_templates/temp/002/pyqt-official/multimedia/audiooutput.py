@@ -48,8 +48,8 @@ ____ struct ______ pack
 ____ ?.?C.. ______ QByteArray, QIODevice, __, QTimer, qWarning
 ____ ?.QtMultimedia ______ (QAudio, QAudioDeviceInfo, QAudioFormat,
         QAudioOutput)
-____ ?.?W.. ______ (?A.., QComboBox, QHBoxLayout, QLabel,
-        QMainWindow, ?PB.., QSlider, QVBoxLayout, QWidget)
+____ ?.?W.. ______ (?A.., ?CB, QHBoxLayout, QLabel,
+        QMainWindow, ?PB.., QSlider, QVBoxLayout, ?W..)
 
 
 c_ Generator(QIODevice):
@@ -74,17 +74,17 @@ c_ Generator(QIODevice):
 
         __ format.sampleSize() == 8:
             __ format.sampleType() == QAudioFormat.UnSignedInt:
-                scaler _ lambda x: ((1.0 + x) / 2 * 255)
+                scaler _ l___ x: ((1.0 + x) / 2 * 255)
                 pack_format _ 'B'
             ____ format.sampleType() == QAudioFormat.SignedInt:
-                scaler _ lambda x: x * 127
+                scaler _ l___ x: x * 127
                 pack_format _ 'b'
         ____ format.sampleSize() == 16:
             __ format.sampleType() == QAudioFormat.UnSignedInt:
-                scaler _ lambda x: (1.0 + x) / 2 * 65535
+                scaler _ l___ x: (1.0 + x) / 2 * 65535
                 pack_format _ '<H' __ format.byteOrder() == QAudioFormat.LittleEndian else '>H'
             ____ format.sampleType() == QAudioFormat.SignedInt:
-                scaler _ lambda x: x * 32767
+                scaler _ l___ x: x * 32767
                 pack_format _ '<h' __ format.byteOrder() == QAudioFormat.LittleEndian else '>h'
 
         assert(pack_format !_ '')
@@ -150,9 +150,9 @@ c_ AudioTest ?MW..
     ___ initializeWindow
         layout _ ?VBL..
 
-        m_deviceBox _ QComboBox(activated_self.deviceChanged)
+        m_deviceBox _ ?CB(activated_self.deviceChanged)
         ___ deviceInfo __ QAudioDeviceInfo.availableDevices(QAudio.AudioOutput):
-            m_deviceBox.addItem(deviceInfo.deviceName(), deviceInfo)
+            m_deviceBox.aI..(deviceInfo.deviceName(), deviceInfo)
 
         layout.aW..(m_deviceBox)
 

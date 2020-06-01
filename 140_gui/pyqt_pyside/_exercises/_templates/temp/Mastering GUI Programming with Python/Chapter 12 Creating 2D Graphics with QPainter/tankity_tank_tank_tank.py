@@ -71,7 +71,7 @@ c_ Tank(qtw.QGraphicsObject):
         s_. - ()
         side _ side
         # Define the tank's lookp
-        bitmap _ qtg.QBitmap.fromData(qtc.QSize(8, 8), TANK_BM)
+        bitmap _ qtg.QBitmap.fromData(qtc.?S..(8, 8), TANK_BM)
         transform _ qtg.QTransform()
         transform.scale(4, 4)  # scale to 32x32
         __ side == TOP:  # We're pointing down
@@ -126,7 +126,7 @@ c_ Tank(qtw.QGraphicsObject):
 
     ___ shoot
         __ no. bullet.scene
-            scene().addItem(bullet)
+            scene().aI..(bullet)
         bullet.shoot(x())
 
 
@@ -163,11 +163,11 @@ c_ Scene(qtw.QGraphicsScene):
         # Draw the tanks
         bottom_tank _ Tank(
             'red', floor.rect().top(), Tank.BOTTOM)
-        addItem(bottom_tank)
+        aI..(bottom_tank)
 
         top_tank _ Tank(
             'green', ceiling.rect().bottom(), Tank.TOP)
-        addItem(top_tank)
+        aI..(top_tank)
 
         # Connect the bullet hits
         top_tank.bullet.hit.c..(top_score_increment)
@@ -205,7 +205,7 @@ c_ MainWindow(qtw.QMainWindow):
         """
         s_. - ()
         # Main UI code goes here
-        r..(qtc.QSize(SCREEN_WIDTH, SCREEN_HEIGHT))
+        r..(qtc.?S..(SCREEN_WIDTH, SCREEN_HEIGHT))
         # Basic setup
         scene _ Scene()
         view _ qtw.QGraphicsView(scene)

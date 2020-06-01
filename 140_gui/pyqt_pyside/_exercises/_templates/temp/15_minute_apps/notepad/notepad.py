@@ -9,8 +9,8 @@ ______ ___
 
 c_ MainWindow ?MW..
 
-    ___  -   *args, **kwargs):
-        super(MainWindow, self). - (*args, **kwargs)
+    ___  -   $ $$
+        super(MainWindow, self). - ($ $$)
 
         layout _ ?VBL..
         editor _ ?PTE..  # Could also use a QTextEdit and set self.editor.setAcceptRichText(False)
@@ -35,7 +35,7 @@ c_ MainWindow ?MW..
         setStatusBar(status)
 
         file_toolbar _ QToolBar("File")
-        file_toolbar.setIconSize(QSize(14, 14))
+        file_toolbar.setIconSize(?S..(14, 14))
         addToolBar(file_toolbar)
         file_menu _ mB.. .aM..("&File")
 
@@ -64,7 +64,7 @@ c_ MainWindow ?MW..
         file_toolbar.aA..(print_action)
 
         edit_toolbar _ QToolBar("Edit")
-        edit_toolbar.setIconSize(QSize(16, 16))
+        edit_toolbar.setIconSize(?S..(16, 16))
         addToolBar(edit_toolbar)
         edit_menu _ mB.. .aM..("&Edit")
 
@@ -126,11 +126,11 @@ c_ MainWindow ?MW..
         path, _ _ ?FD...gOFN..  "Open file", "", "Text documents (*.txt);All files (*.*)")
 
         __ path:
-            try:
+            ___
                 w__ o..(path, 'rU') __ f:
                     t__ _ f.read()
 
-            except Exception __ e:
+            _____ Exception __ e:
                 dialog_critical(str(e))
 
             ____
@@ -156,11 +156,11 @@ c_ MainWindow ?MW..
 
     ___ _save_to_path  path):
         t__ _ editor.toPlainText()
-        try:
+        ___
             w__ o..(path, 'w') __ f:
                 f.w..(t__)
 
-        except Exception __ e:
+        _____ Exception __ e:
             dialog_critical(str(e))
 
         ____

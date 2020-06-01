@@ -44,14 +44,14 @@
 
 ____ math ______ cos, pi, sin
 
-____ ?.?C.. ______ QSize, __
+____ ?.?C.. ______ ?S.., __
 ____ ?.?G.. ______ (QBrush, ?C.., QFont, QLinearGradient, QPainter,
         QPainterPath, ?P.., QPen)
-____ ?.?W.. ______ (?A.., QComboBox, QGridLayout, QLabel,
-        QSizePolicy, QSpinBox, QWidget)
+____ ?.?W.. ______ (?A.., ?CB, QGridLayout, QLabel,
+        QSizePolicy, SB.., ?W..)
 
 
-c_ RenderArea(QWidget):
+c_ RenderArea(?W..):
     ___  -   path, parent_None):
         super(RenderArea, self). - (parent)
 
@@ -62,10 +62,10 @@ c_ RenderArea(QWidget):
         setBackgroundRole(?P...Base)
 
     ___ minimumSizeHint
-        r_ QSize(50, 50)
+        r_ ?S..(50, 50)
 
-    ___ sizeHint
-        r_ QSize(100, 100)
+    ___ sH..
+        r_ ?S..(100, 100)
 
     ___ setFillRule  rule):
         path.setFillRule(rule)
@@ -106,7 +106,7 @@ c_ RenderArea(QWidget):
         painter.drawPath(path)
 
 
-c_ Window(QWidget):
+c_ Window(?W..):
     NumRenderAreas _ 9
 
     ___  - 
@@ -179,19 +179,19 @@ c_ Window(QWidget):
                 RenderArea(starPath)]
         assert le.(renderAreas) == 9
 
-        fillRuleComboBox _ QComboBox()
-        fillRuleComboBox.addItem("Odd Even", __.OddEvenFill)
-        fillRuleComboBox.addItem("Winding", __.WindingFill)
+        fillRuleComboBox _ ?CB()
+        fillRuleComboBox.aI..("Odd Even", __.OddEvenFill)
+        fillRuleComboBox.aI..("Winding", __.WindingFill)
 
         fillRuleLabel _ QLabel("Fill &Rule:")
         fillRuleLabel.setBuddy(fillRuleComboBox)
 
-        fillColor1ComboBox _ QComboBox()
+        fillColor1ComboBox _ ?CB()
         populateWithColors(fillColor1ComboBox)
         fillColor1ComboBox.setCurrentIndex(
                 fillColor1ComboBox.findText("mediumslateblue"))
 
-        fillColor2ComboBox _ QComboBox()
+        fillColor2ComboBox _ ?CB()
         populateWithColors(fillColor2ComboBox)
         fillColor2ComboBox.setCurrentIndex(
                 fillColor2ComboBox.findText("cornsilk"))
@@ -202,13 +202,13 @@ c_ Window(QWidget):
         fillToLabel _ QLabel("to")
         fillToLabel.sSP..(QSizePolicy.Fixed, QSizePolicy.Fixed)
 
-        penWidthSpinBox _ QSpinBox()
+        penWidthSpinBox _ SB..()
         penWidthSpinBox.setRange(0, 20)
 
         penWidthLabel _ QLabel("&Pen Width:")
         penWidthLabel.setBuddy(penWidthSpinBox)
 
-        penColorComboBox _ QComboBox()
+        penColorComboBox _ ?CB()
         populateWithColors(penColorComboBox)
         penColorComboBox.setCurrentIndex(
                 penColorComboBox.findText('darkslateblue'))
@@ -216,7 +216,7 @@ c_ Window(QWidget):
         penColorLabel _ QLabel("Pen &Color:")
         penColorLabel.setBuddy(penColorComboBox)
 
-        rotationAngleSpinBox _ QSpinBox()
+        rotationAngleSpinBox _ SB..()
         rotationAngleSpinBox.setRange(0, 359)
         rotationAngleSpinBox.setWrapping(True)
         rotationAngleSpinBox.setSuffix(u'\N{DEGREE SIGN}')
@@ -282,7 +282,7 @@ c_ Window(QWidget):
     ___ populateWithColors  comboBox):
         colorNames _ ?C...colorNames()
         ___ name __ colorNames:
-            comboBox.addItem(name, name)
+            comboBox.aI..(name, name)
 
     ___ currentItemData  comboBox):
         r_ comboBox.itemData(comboBox.currentIndex())

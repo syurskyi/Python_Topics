@@ -42,12 +42,12 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QPoint, QSize, __, QTime, QTimer
+____ ?.?C.. ______ QPoint, ?S.., __, QTime, QTimer
 ____ ?.?G.. ______ ?C.., QPainter, QPolygon, QRegion
-____ ?.?W.. ______ ?A.., ?A.., QWidget
+____ ?.?W.. ______ ?A.., ?A.., ?W..
 
 
-c_ ShapedClock(QWidget):
+c_ ShapedClock(?W..):
     hourHand _ QPolygon([
         QPoint(7, 8),
         QPoint(-7, 8),
@@ -76,7 +76,7 @@ c_ ShapedClock(QWidget):
         aA..(quitAction)
 
         setContextMenuPolicy(__.ActionsContextMenu)
-        setToolTip("Drag the clock with the left mouse button.\n"
+        sTT..("Drag the clock with the left mouse button.\n"
                 "Use the right mouse button to open a context menu.")
         sWT..(tr("Shaped Analog Clock"))
 
@@ -135,8 +135,8 @@ c_ ShapedClock(QWidget):
         maskedRegion _ QRegion(width()/2 - side/2, height()/2 - side/2, side, side, QRegion.Ellipse)
         setMask(maskedRegion)
 
-    ___ sizeHint
-        r_ QSize(100, 100)
+    ___ sH..
+        r_ ?S..(100, 100)
 
 
 __ ______ __ ______

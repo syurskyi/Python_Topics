@@ -47,10 +47,10 @@
 ______ math
 
 ____ ?.?C.. ______ (pyqtSignal, QBasicTimer, QObject, QPoint, QPointF,
-        QRect, QSize, QStandardPaths, __, QUrl)
+        QRect, ?S.., QStandardPaths, __, QUrl)
 ____ ?.?G.. ______ (?C.., QDesktopServices, QImage, QPainter,
         QPainterPath, QPixmap, QRadialGradient)
-____ ?.?W.. ______ ?A.., ?A.., QMainWindow, QWidget
+____ ?.?W.. ______ ?A.., ?A.., QMainWindow, ?W..
 ____ ?.QtNetwork ______ (QNetworkAccessManager, QNetworkDiskCache,
         QNetworkRequest)
 
@@ -231,7 +231,7 @@ c_ SlippyMap(QObject):
         r_ QRect(x, y, TDIM, TDIM)
 
 
-c_ LightMaps(QWidget):
+c_ LightMaps(?W..):
     ___  -   parent _ N..):
         super(LightMaps, self). - (parent)
 
@@ -296,7 +296,7 @@ c_ LightMaps(QWidget):
             magnifierSize _ min(MAX_MAGNIFIER, dim * 2 / 3)
             radius _ magnifierSize / 2
             ring _ radius - 15
-            box _ QSize(magnifierSize, magnifierSize)
+            box _ ?S..(magnifierSize, magnifierSize)
 
             # reupdate our mask
             __ maskPixmap.size() !_ box:

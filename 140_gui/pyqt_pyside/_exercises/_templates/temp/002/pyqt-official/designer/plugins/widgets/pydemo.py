@@ -40,12 +40,12 @@
 
 
 ____ ?.?C.. ______ pyqtProperty, pyqtSignal, pyqtSlot
-____ ?.?W.. ______ ?A.., QTextEdit
+____ ?.?W.. ______ ?A.., ?TE..
 
 
 # The purpose of this class is to show that Designer's property editor shows
 # all Python classes in the hierarchy that define properties.
-c_ PyTextViewer(QTextEdit):
+c_ PyTextViewer(?TE..):
 
     # Initialise the instance.
     ___  -   parent_None):

@@ -37,10 +37,10 @@
 
 
 ___ decode_pos(pos):
-    try:
+    ___
         row _ int(pos[1:]) - 1
         col _ ord(pos[0]) - ord('A')
-    except ValueError:
+    _____ ValueError:
         row _ -1
         col _ -1
 

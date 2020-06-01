@@ -46,9 +46,9 @@
 ____ ?.?C.. ______ (QDate, QDateTime, QRegExp, QSortFilterProxyModel, __,
         QTime)
 ____ ?.?G.. ______ QStandardItemModel
-____ ?.?W.. ______ (?A.., QCheckBox, QComboBox, QDateEdit,
+____ ?.?W.. ______ (?A.., QCheckBox, ?CB, QDateEdit,
         QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit, QTreeView,
-        QVBoxLayout, QWidget)
+        QVBoxLayout, ?W..)
 
 
 c_ MySortFilterProxyModel(QSortFilterProxyModel):
@@ -104,7 +104,7 @@ c_ MySortFilterProxyModel(QSortFilterProxyModel):
                 and (no. maxDate.isValid() or date <_ maxDate))
 
 
-c_ Window(QWidget):
+c_ Window(?W..):
     ___  -
         super(Window, self). - ()
 
@@ -126,10 +126,10 @@ c_ Window(QWidget):
         filterPatternLineEdit.sT..("Grace|Sports")
         filterPatternLabel _ QLabel("&Filter pattern:")
         filterPatternLabel.setBuddy(filterPatternLineEdit)
-        filterSyntaxComboBox _ QComboBox()
-        filterSyntaxComboBox.addItem("Regular expression", QRegExp.RegExp)
-        filterSyntaxComboBox.addItem("Wildcard", QRegExp.Wildcard)
-        filterSyntaxComboBox.addItem("Fixed string", QRegExp.FixedString)
+        filterSyntaxComboBox _ ?CB()
+        filterSyntaxComboBox.aI..("Regular expression", QRegExp.RegExp)
+        filterSyntaxComboBox.aI..("Wildcard", QRegExp.Wildcard)
+        filterSyntaxComboBox.aI..("Fixed string", QRegExp.FixedString)
         fromDateEdit _ QDateEdit()
         fromDateEdit.setDate(QDate(2006, 12, 22))
         fromDateEdit.setCalendarPopup(True)

@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta, date
+from d_t_ import d_t_, timedelta, date
 from itertools import cycle
 import os
 import sys
@@ -68,7 +68,7 @@ class UpdateWorker(QRunnable):
         auth_header = {
             'Apikey': CRYPTOCOMPARE_API_KEY
         }
-        try:
+        ___
             rates = {}
             ___ n, crypto __ en..(AVAILABLE_CRYPTO_CURRENCIES, 1):
                 url = 'https://min-api.cryptocompare.com/data/histoday?fsym={fsym}&tsym={tsym}&limit={limit}'
@@ -104,7 +104,7 @@ class UpdateWorker(QRunnable):
             r.raise_for_status()
             volume = [d['volume'] ___ d __ r.json().get('Data')]
 
-        except Exception as e:
+        _____ Exception as e:
             signals.error.emit((e, traceback.format_exc()))
             return
 
@@ -117,8 +117,8 @@ class UpdateWorker(QRunnable):
 
 class MainWindow(QMainWindow):
 
-    def  - (self, *args, **kwargs):
-        super(MainWindow, self). - (*args, **kwargs)
+    def  - (self, $ $$
+        super(MainWindow, self). - ($ $$)
 
         layout = QHBoxLayout()
 
@@ -131,7 +131,7 @@ class MainWindow(QMainWindow):
             movable=False  # We have our own code to handle dragless moving.
         )
 
-        ax.addItem(line)
+        ax.aI..(line)
         ax.setLabel('left', text='Rate')
         p1 = ax.getPlotItem()
         p1.scene().sigMouseMoved.connect(mouse_move_handler)
@@ -140,7 +140,7 @@ class MainWindow(QMainWindow):
         p2 = pg.ViewBox()
         p2.enableAutoRange(axis=pg.ViewBox.XYAxes, enable=True)
         p1.showAxis('right')
-        p1.scene().addItem(p2)
+        p1.scene().aI..(p2)
         p2.setXLink(p1)
         ax2 = p1.getAxis('right')
         ax2.linkToView(p2)
@@ -151,7 +151,7 @@ class MainWindow(QMainWindow):
             np.arange(NUMBER_OF_TIMEPOINTS), np.arange(NUMBER_OF_TIMEPOINTS),
             pen=pg.mkPen('k', style=Qt.DashLine, width=1)
         )
-        p2.addItem(_market_activity)
+        p2.aI..(_market_activity)
 
         # Automatically rescale our twinned Y axis.
         p1.vb.sigResized.connect(update_plot_scale)
@@ -178,15 +178,15 @@ class MainWindow(QMainWindow):
         layout.addWidget(ax)
         layout.addWidget(listView)
 
-        widget = QWidget()
+        widget = ?W..()
         widget.setLayout(layout)
         setCentralWidget(widget)
-        listView.setFixedSize(226, 400)
-        setFixedSize(650, 400)
+        listView.sFS..(226, 400)
+        sFS..(650, 400)
 
         toolbar = QToolBar("Main")
         addToolBar(toolbar)
-        currencyList = QComboBox()
+        currencyList = ?CB()
 
         toolbar.addWidget(currencyList)
         update_currency_list(AVAILABLE_BASE_CURRENCIES)
@@ -203,7 +203,7 @@ class MainWindow(QMainWindow):
 
     def update_currency_list(self, currencies):
         ___ currency __ currencies:
-            currencyList.addItem(currency)
+            currencyList.aI..(currency)
 
         currencyList.model().sort(0)
 

@@ -630,8 +630,8 @@ __ ______ __ ______
     textItem.setPos(-w / 2.0, stickManBoundingRect.bottom() + 25.0)
 
     scene _ QGraphicsScene()
-    scene.addItem(stickMan)
-    scene.addItem(textItem)
+    scene.aI..(stickMan)
+    scene.aI..(textItem)
     scene.setBackgroundBrush(__.black)
 
     view _ GraphicsView()

@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?W.. ______ ?A.., QWidget
+____ ?.?W.. ______ ?A.., ?W..
 ____ ?.QtDBus ______ QDBusAbstractInterface, QDBusConnection
 
 ____ ui_controller ______ Ui_Controller
@@ -67,7 +67,7 @@ c_ CarInterface(QDBusAbstractInterface):
         asyncCall('turnRight')
 
 
-c_ Controller(QWidget):
+c_ Controller(?W..):
 
     ___  -   parent_None):
         super(Controller, self). - (parent)

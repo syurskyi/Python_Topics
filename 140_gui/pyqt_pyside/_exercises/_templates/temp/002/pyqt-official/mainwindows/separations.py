@@ -44,7 +44,7 @@
 
 
 ____ ?.?C.. ______ (pyqtSignal, QBuffer, QByteArray, QFileInfo,
-        QIODevice, QMimeData, QPoint, QSize, __)
+        QIODevice, QMimeData, QPoint, ?S.., __)
 ____ ?.?G.. ______ (qBlue, ?C.., QDrag, qGreen, QImage, ?KS..,
         ?P.., QPixmap, qRed)
 ____ ?.?W.. ______ (?A.., QColorDialog, ?FD.., QFrame,
@@ -63,7 +63,7 @@ c_ FinalWidget(QFrame):
         imageLabel _ QLabel()
         imageLabel.setFrameShadow(QFrame.Sunken)
         imageLabel.setFrameShape(QFrame.StyledPanel)
-        imageLabel.setMinimumSize(labelSize)
+        imageLabel.sMS..(labelSize)
         nameLabel _ QLabel(name)
 
         layout _ ?VBL..
@@ -145,12 +145,12 @@ c_ ScreenWidget(QFrame):
         imageLabel _ QLabel()
         imageLabel.setFrameShadow(QFrame.Sunken)
         imageLabel.setFrameShape(QFrame.StyledPanel)
-        imageLabel.setMinimumSize(labelSize)
+        imageLabel.sMS..(labelSize)
 
         nameLabel _ QLabel(name)
         colorButton _ ?PB..("Modify...")
         colorButton.setBackgroundRole(?P...Button)
-        colorButton.setMinimumSize(32, 32)
+        colorButton.sMS..(32, 32)
 
         palette _ ?P..(colorButton.palette())
         palette.sC..(?P...Button, initialColor)
@@ -331,7 +331,7 @@ c_ Viewer ?MW..
 
         layout().setSizeConstraint(QLayout.SetFixedSize)
 
-        labelSize _ QSize(256, 256)
+        labelSize _ ?S..(256, 256)
 
         finalWidget _ FinalWidget(frame, "Final image", labelSize)
 

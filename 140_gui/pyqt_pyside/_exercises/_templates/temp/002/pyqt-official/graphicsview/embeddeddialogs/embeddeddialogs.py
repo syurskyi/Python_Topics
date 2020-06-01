@@ -48,7 +48,7 @@ ____ ?.?G.. ______ (QBrush, ?C.., QPainter, QPainterPath, QPixmap,
         QTransform)
 ____ ?.?W.. ______ (?A.., QDialog, QGraphicsItem,
         QGraphicsProxyWidget, QGraphicsScene, QGraphicsView, QStyleFactory,
-        QWidget)
+        ?W..)
 
 ______ embeddeddialogs_rc
 ____ embeddeddialog ______ Ui_embeddedDialog
@@ -166,7 +166,7 @@ c_ EmbeddedDialog(QDialog):
         ui.layoutDirection.setCurrentIndex(layoutDirection() !_ __.LeftToRight)
 
         ___ styleName __ QStyleFactory.keys
-            ui.style.addItem(styleName)
+            ui.style.aI..(styleName)
             __ style().objectName().lower() == styleName.lower
                 ui.style.setCurrentIndex(ui.style.count() -1)
 
@@ -192,7 +192,7 @@ c_ EmbeddedDialog(QDialog):
         widget.setStyle(style)
         widget.sP..(style.standardPalette())
         ___ child __ widget.children
-            __ isinstance(child, QWidget):
+            __ isinstance(child, ?W..):
                 setStyleHelper(child, style)
     
     ___ styleChanged  styleName):
@@ -222,7 +222,7 @@ __ ______ __ ______
 
             proxy.setPos( x * rect.width()*1.05, y*rect.height()*1.05 )
             proxy.setCacheMode(QGraphicsItem.DeviceCoordinateCache)
-            scene.addItem(proxy)
+            scene.aI..(proxy)
 
     scene.setSceneRect(scene.itemsBoundingRect())
 

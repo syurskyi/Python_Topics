@@ -44,10 +44,10 @@
 
 ______ random
 
-____ ?.?C.. ______ QEvent, QPoint, QPointF, QSize, __
+____ ?.?C.. ______ QEvent, QPoint, QPointF, ?S.., __
 ____ ?.?G.. ______ ?C.., QIcon, QPainter, QPainterPath, ?P..
 ____ ?.?W.. ______ (?A.., QStyle, QToolButton, QToolTip,
-        QWidget)
+        ?W..)
 
 ______ tooltips_rc
 
@@ -74,7 +74,7 @@ c_ ShapeItem(object):
     ___ setPath  path):
         myPath _ path
 
-    ___ setToolTip  toolTip):
+    ___ sTT..  toolTip):
         myToolTip _ toolTip
 
     ___ setPosition  position):
@@ -84,7 +84,7 @@ c_ ShapeItem(object):
         myColor _ color
 
 
-c_ SortingBox(QWidget):
+c_ SortingBox(?W..):
     circle_count _ square_count _ triangle_count _ 1
 
     ___  -
@@ -220,7 +220,7 @@ c_ SortingBox(QWidget):
         update()
 
     ___ updateButtonGeometry  button, x, y):
-        size _ button.sizeHint()
+        size _ button.sH..()
         button.setGeometry(x - size.width(), y - size.height(),
                 size.width(), size.height())
 
@@ -229,7 +229,7 @@ c_ SortingBox(QWidget):
     ___ createShapeItem  path, toolTip, pos, color):
         shapeItem _ ShapeItem()
         shapeItem.setPath(path)
-        shapeItem.setToolTip(toolTip)
+        shapeItem.sTT..(toolTip)
         shapeItem.setPosition(pos)
         shapeItem.sC..(color)
         shapeItems.ap..(shapeItem)
@@ -237,9 +237,9 @@ c_ SortingBox(QWidget):
 
     ___ createToolButton  toolTip, icon, member):
         button _ QToolButton
-        button.setToolTip(toolTip)
+        button.sTT..(toolTip)
         button.setIcon(icon)
-        button.setIconSize(QSize(32, 32))
+        button.setIconSize(?S..(32, 32))
         button.c__.c..(member)
 
         r_ button

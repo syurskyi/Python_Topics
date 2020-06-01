@@ -42,29 +42,29 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QDate, QSize, __
+____ ?.?C.. ______ QDate, ?S.., __
 ____ ?.?G.. ______ QIcon
-____ ?.?W.. ______ (?A.., QCheckBox, QComboBox, QDateTimeEdit,
+____ ?.?W.. ______ (?A.., QCheckBox, ?CB, ?DTE..,
         QDialog, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit,
-        QListView, QListWidget, QListWidgetItem, ?PB.., QSpinBox,
-        QStackedWidget, QVBoxLayout, QWidget)
+        QListView, QListWidget, QListWidgetItem, ?PB.., SB..,
+        QStackedWidget, QVBoxLayout, ?W..)
 
 ______ configdialog_rc
 
 
-c_ ConfigurationPage(QWidget):
+c_ ConfigurationPage(?W..):
     ___  -   parent_None):
         super(ConfigurationPage, self). - (parent)
 
         configGroup _ QGroupBox("Server configuration")
 
         serverLabel _ QLabel("Server:")
-        serverCombo _ QComboBox()
-        serverCombo.addItem("Trolltech (Australia)")
-        serverCombo.addItem("Trolltech (Germany)")
-        serverCombo.addItem("Trolltech (Norway)")
-        serverCombo.addItem("Trolltech (People's Republic of China)")
-        serverCombo.addItem("Trolltech (USA)")
+        serverCombo _ ?CB()
+        serverCombo.aI..("Trolltech (Australia)")
+        serverCombo.aI..("Trolltech (Germany)")
+        serverCombo.aI..("Trolltech (Norway)")
+        serverCombo.aI..("Trolltech (People's Republic of China)")
+        serverCombo.aI..("Trolltech (USA)")
 
         serverLayout _ QHBoxLayout()
         serverLayout.aW..(serverLabel)
@@ -81,7 +81,7 @@ c_ ConfigurationPage(QWidget):
         sL..(mainLayout)
 
 
-c_ UpdatePage(QWidget):
+c_ UpdatePage(?W..):
     ___  -   parent_None):
         super(UpdatePage, self). - (parent)
 
@@ -122,7 +122,7 @@ c_ UpdatePage(QWidget):
         sL..(mainLayout)
 
 
-c_ QueryPage(QWidget):
+c_ QueryPage(?W..):
     ___  -   parent_None):
         super(QueryPage, self). - (parent)
 
@@ -132,12 +132,12 @@ c_ QueryPage(QWidget):
         nameEdit _ ?LE..
 
         dateLabel _ QLabel("Released after:")
-        dateEdit _ QDateTimeEdit(QDate.currentDate())
+        dateEdit _ ?DTE..(QDate.currentDate())
 
         releasesCheckBox _ QCheckBox("Releases")
         upgradesCheckBox _ QCheckBox("Upgrades")
 
-        hitsSpinBox _ QSpinBox()
+        hitsSpinBox _ SB..()
         hitsSpinBox.setPrefix("Return up to ")
         hitsSpinBox.setSuffix(" results")
         hitsSpinBox.setSpecialValueText("Return only the first result")
@@ -172,7 +172,7 @@ c_ ConfigDialog(QDialog):
 
         contentsWidget _ QListWidget()
         contentsWidget.setViewMode(QListView.IconMode)
-        contentsWidget.setIconSize(QSize(96, 84))
+        contentsWidget.setIconSize(?S..(96, 84))
         contentsWidget.setMovement(QListView.Static)
         contentsWidget.setMaximumWidth(128)
         contentsWidget.setSpacing(12)

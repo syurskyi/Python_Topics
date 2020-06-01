@@ -7,7 +7,7 @@ import random
 
 WINDOW_SIZE = 840, 600
 
-CARD_DIMENSIONS = QSize(80, 116)
+CARD_DIMENSIONS = ?S..(80, 116)
 CARD_RECT = QRect(0, 0, 80, 116)
 CARD_SPACING_X = 110
 CARD_BACK = QImage(os.path.join('images', 'back.png'))
@@ -36,8 +36,8 @@ class Signals(QObject):
 
 class Card(QGraphicsPixmapItem):
 
-    def  - (self, value, suit, *args, **kwargs):
-        super(Card, self). - (*args, **kwargs)
+    def  - (self, value, suit, $ $$
+        super(Card, self). - ($ $$)
 
         signals = Signals()
 
@@ -132,8 +132,8 @@ class Card(QGraphicsPixmapItem):
 
 class StackBase(QGraphicsRectItem):
 
-    def  - (self, *args, **kwargs):
-        super(StackBase, self). - (*args, **kwargs)
+    def  - (self, $ $$
+        super(StackBase, self). - ($ $$)
 
         setRect(QRectF(CARD_RECT))
         setZValue(-1)
@@ -231,11 +231,11 @@ class DeckStack(StackBase):
             card.turn_back_up()
 
     def take_top_card 
-        try:
+        ___
             card = cards[-1]
             remove_card(card)
             return card
-        except IndexError:
+        _____ IE..
             pass
 
     def set_color(self, color):
@@ -403,8 +403,8 @@ class DropStack(StackBase):
 
 class DealTrigger(QGraphicsRectItem):
 
-    def  - (self, *args, **kwargs):
-        super(DealTrigger, self). - (*args, **kwargs)
+    def  - (self, $ $$
+        super(DealTrigger, self). - ($ $$)
         setRect(QRectF(DEAL_RECT))
         setZValue(1000)
 
@@ -418,8 +418,8 @@ class DealTrigger(QGraphicsRectItem):
 
 
 class AnimationCover(QGraphicsRectItem):
-    def  - (self, *args, **kwargs):
-        super(AnimationCover, self). - (*args, **kwargs)
+    def  - (self, $ $$
+        super(AnimationCover, self). - ($ $$)
         setRect(QRectF(0, 0, *WINDOW_SIZE))
         setZValue(5000)
         pen = QPen(Qt.NoPen)
@@ -431,8 +431,8 @@ class AnimationCover(QGraphicsRectItem):
 
 class MainWindow(QMainWindow):
 
-    def  - (self, *args, **kwargs):
-        super(MainWindow, self). - (*args, **kwargs)
+    def  - (self, $ $$
+        super(MainWindow, self). - ($ $$)
 
         view = QGraphicsView()
         scene = QGraphicsScene()
@@ -444,7 +444,7 @@ class MainWindow(QMainWindow):
         name = QGraphicsPixmapItem()
         name.setPixmap(QPixmap(os.path.join('images','ronery.png')))
         name.setPos(QPointF(170, 375))
-        scene.addItem(name)
+        scene.aI..(name)
 
         view.setScene(scene)
 
@@ -454,7 +454,7 @@ class MainWindow(QMainWindow):
         timer.timeout.connect(win_animation)
 
         animation_event_cover = AnimationCover()
-        scene.addItem(animation_event_cover)
+        scene.aI..(animation_event_cover)
 
         menu = menuBar().addMenu("&Game")
 
@@ -466,13 +466,13 @@ class MainWindow(QMainWindow):
 
         deal1_action = QAction("1 card", self)
         deal1_action.setCheckable(True)
-        deal1_action.triggered.connect(lambda: set_deal_n(1))
+        deal1_action.triggered.connect(l___: set_deal_n(1))
         menu.addAction(deal1_action)
 
         deal3_action = QAction("3 card", self)
         deal3_action.setCheckable(True)
         deal3_action.setChecked(True)
-        deal3_action.triggered.connect(lambda: set_deal_n(3))
+        deal3_action.triggered.connect(l___: set_deal_n(3))
 
         menu.addAction(deal3_action)
 
@@ -486,17 +486,17 @@ class MainWindow(QMainWindow):
         rounds3_action = QAction("3 rounds", self)
         rounds3_action.setCheckable(True)
         rounds3_action.setChecked(True)
-        rounds3_action.triggered.connect(lambda: set_rounds_n(3))
+        rounds3_action.triggered.connect(l___: set_rounds_n(3))
         menu.addAction(rounds3_action)
 
         rounds5_action = QAction("5 rounds", self)
         rounds5_action.setCheckable(True)
-        rounds5_action.triggered.connect(lambda: set_rounds_n(5))
+        rounds5_action.triggered.connect(l___: set_rounds_n(5))
         menu.addAction(rounds5_action)
 
         roundsu_action = QAction("Unlimited rounds", self)
         roundsu_action.setCheckable(True)
-        roundsu_action.triggered.connect(lambda: set_rounds_n(None))
+        roundsu_action.triggered.connect(l___: set_rounds_n(None))
         menu.addAction(roundsu_action)
 
         roundgroup = QActionGroup
@@ -519,22 +519,22 @@ class MainWindow(QMainWindow):
             ___ value __ range(1, 14):
                 card = Card(value, suit)
                 deck.append(card)
-                scene.addItem(card)
-                card.signals.doubleclicked.connect(lambda card=card: auto_drop_card(card))
+                scene.aI..(card)
+                card.signals.doubleclicked.connect(l___ card=card: auto_drop_card(card))
 
         setCentralWidget(view)
-        setFixedSize(*WINDOW_SIZE)
+        sFS..(*WINDOW_SIZE)
 
         deckstack = DeckStack()
         deckstack.setPos(OFFSET_X, OFFSET_Y)
-        scene.addItem(deckstack)
+        scene.aI..(deckstack)
 
         # Set up the working locations.
         works = []
         ___ n __ range(7):
             stack = WorkStack()
             stack.setPos(OFFSET_X + CARD_SPACING_X*n, WORK_STACK_Y)
-            scene.addItem(stack)
+            scene.aI..(stack)
             works.append(stack)
 
         drops = []
@@ -544,18 +544,18 @@ class MainWindow(QMainWindow):
             stack.setPos(OFFSET_X + CARD_SPACING_X * (3+n), OFFSET_Y)
             stack.signals.complete.connect(check_win_condition)
 
-            scene.addItem(stack)
+            scene.aI..(stack)
             drops.append(stack)
 
         # Add the deal location.
         dealstack = DealStack()
         dealstack.setPos(OFFSET_X + CARD_SPACING_X, OFFSET_Y)
-        scene.addItem(dealstack)
+        scene.aI..(dealstack)
 
         # Add the deal click-trigger.
         dealtrigger = DealTrigger()
         dealtrigger.signals.clicked.connect(deal)
-        scene.addItem(dealtrigger)
+        scene.aI..(dealtrigger)
 
         shuffle_and_stack()
 
