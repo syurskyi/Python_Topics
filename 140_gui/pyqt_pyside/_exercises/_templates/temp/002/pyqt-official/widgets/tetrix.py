@@ -230,28 +230,28 @@ c_ TetrixBoard(QFrame):
                         curPiece.shape())
 
     ___ keyPressEvent  event):
-        __ no. isStarted or isPaused or curPiece.shape() == NoShape:
+        __ no. isStarted or isPaused or curPiece.shape() __ NoShape:
             super(TetrixBoard, self).keyPressEvent(event)
             r_
 
         key _ event.key()
-        __ key == __.Key_Left:
+        __ key __ __.Key_Left:
             tryMove(curPiece, curX - 1, curY)
-        ____ key == __.Key_Right:
+        ____ key __ __.Key_Right:
             tryMove(curPiece, curX + 1, curY)
-        ____ key == __.Key_Down:
+        ____ key __ __.Key_Down:
             tryMove(curPiece.rotatedRight(), curX, curY)
-        ____ key == __.Key_Up:
+        ____ key __ __.Key_Up:
             tryMove(curPiece.rotatedLeft(), curX, curY)
-        ____ key == __.Key_Space:
+        ____ key __ __.Key_Space:
             dropDown()
-        ____ key == __.Key_D:
+        ____ key __ __.Key_D:
             oneLineDown()
         ____
             super(TetrixBoard, self).keyPressEvent(event)
 
     ___ timerEvent  event):
-        __ event.timerId() == timer.timerId
+        __ event.timerId() __ timer.timerId
             __ isWaitingAfterLine:
                 isWaitingAfterLine _ False
                 newPiece()
@@ -286,7 +286,7 @@ c_ TetrixBoard(QFrame):
             setShapeAt(x, y, curPiece.shape())
 
         numPiecesDropped +_ 1
-        __ numPiecesDropped % 25 == 0:
+        __ numPiecesDropped % 25 __ 0:
             level +_ 1
             timer.start(timeoutTime(), self)
             levelChanged.e..(level)
@@ -305,7 +305,7 @@ c_ TetrixBoard(QFrame):
             lineIsFull _ True
 
             ___ j __ range(TetrixBoard.BoardWidth):
-                __ shapeAt(j, i) == NoShape:
+                __ shapeAt(j, i) __ NoShape:
                     lineIsFull _ False
                     break
 
@@ -469,7 +469,7 @@ c_ TetrixPiece(object):
         r_ m
 
     ___ rotatedLeft 
-        __ pieceShape == SquareShape:
+        __ pieceShape __ SquareShape:
             r_ self
 
         result _ TetrixPiece()
@@ -481,7 +481,7 @@ c_ TetrixPiece(object):
         r_ result
 
     ___ rotatedRight 
-        __ pieceShape == SquareShape:
+        __ pieceShape __ SquareShape:
             r_ self
 
         result _ TetrixPiece()

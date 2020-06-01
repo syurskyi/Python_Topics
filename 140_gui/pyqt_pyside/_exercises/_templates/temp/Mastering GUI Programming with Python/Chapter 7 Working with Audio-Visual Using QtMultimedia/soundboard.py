@@ -19,7 +19,7 @@ c_ PlayButton(qtw.?PB..):
         setStyleSheet(play_stylesheet)
 
     ___ on_state_changed  state):
-        __ state == qtmm.QMediaPlayer.PlayingState:
+        __ state __ qtmm.QMediaPlayer.PlayingState:
             setStyleSheet(stop_stylesheet)
             sT..('Stop')
         ____
@@ -36,7 +36,7 @@ c_ RecordButton(qtw.?PB..):
         s_. - ('Record')
 
     ___ on_state_changed  state):
-        __ state == qtmm.QAudioRecorder.RecordingState:
+        __ state __ qtmm.QAudioRecorder.RecordingState:
             setStyleSheet(stop_stylesheet)
             sT..('Stop')
         ____
@@ -120,14 +120,14 @@ c_ SoundWidget ?.?W..
 
 
     ___ on_playbutton
-        __ player.state() == qtmm.QMediaPlayer.PlayingState:
+        __ player.state() __ qtmm.QMediaPlayer.PlayingState:
             player.stop()
         ____
             player.play()
 
     ___ set_file  url):
         label.sT..(url.fileName())
-        __ url.scheme() == '':
+        __ url.scheme() __ '':
             url.setScheme('file')
         content _ qtmm.QMediaContent(url)
         #self.player.setMedia(content)
@@ -138,7 +138,7 @@ c_ SoundWidget ?.?W..
         playlist.addMedia(content)
         playlist.setCurrentIndex(1)
         player.setPlaylist(playlist)
-        loop_cb.setChecked F..
+        loop_cb.sC__ F..
 
     ___ get_file
         fn, _ _ qtw.?FD...getOpenFileUrl(
@@ -151,7 +151,7 @@ c_ SoundWidget ?.?W..
             set_file(fn)
 
     ___ on_loop_cb  state):
-        __ state == qtc.__.Checked:
+        __ state __ qtc.__.Checked:
             playlist.setPlaybackMode(
                 qtmm.QMediaPlaylist.CurrentItemInLoop)
         ____
@@ -159,7 +159,7 @@ c_ SoundWidget ?.?W..
                 qtmm.QMediaPlaylist.CurrentItemOnce)
 
     ___ on_recordbutton
-        __ recorder.state() == qtmm.QMediaRecorder.RecordingState:
+        __ recorder.state() __ qtmm.QMediaRecorder.RecordingState:
             recorder.stop()
             url _ recorder.actualLocation()
             set_file(url)

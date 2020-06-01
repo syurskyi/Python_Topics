@@ -107,17 +107,17 @@ c_ MenuManager(QObject):
         contentsDoc _ parseString(contents)
 
     ___ itemSelected  userCode, menuName):
-        __ userCode == MenuManager.LAUNCH:
+        __ userCode __ MenuManager.LAUNCH:
             launchExample(currentInfo)
-        ____ userCode == MenuManager.LAUNCH_QML:
+        ____ userCode __ MenuManager.LAUNCH_QML:
             launchQml(currentInfo)
-        ____ userCode == MenuManager.DOCUMENTATION:
+        ____ userCode __ MenuManager.DOCUMENTATION:
             showDocInAssistant(currentInfo)
-        ____ userCode == MenuManager.QUIT:
+        ____ userCode __ MenuManager.QUIT:
             ?A...quit()
-        ____ userCode == MenuManager.FULLSCREEN:
+        ____ userCode __ MenuManager.FULLSCREEN:
             window.toggleFullscreen()
-        ____ userCode == MenuManager.ROOT:
+        ____ userCode __ MenuManager.ROOT:
             # Out.
             score.queueMovie(currentMenu + ' -out', Score.FROM_START,
                     Score.LOCK_ITEMS)
@@ -147,7 +147,7 @@ c_ MenuManager(QObject):
                 tickerInAnim.setStartDelay(2000)
                 ticker.useGuideQt()
                 score.queueMovie('ticker', Score.NEW_ANIMATION_ONLY)
-        ____ userCode == MenuManager.MENU1:
+        ____ userCode __ MenuManager.MENU1:
             # Out.
             score.queueMovie(currentMenu + ' -out', Score.FROM_START,
                     Score.LOCK_ITEMS)
@@ -170,7 +170,7 @@ c_ MenuManager(QObject):
 
             __ no. Colors.noTicker:
                 ticker.useGuideTt()
-        ____ userCode == MenuManager.MENU2:
+        ____ userCode __ MenuManager.MENU2:
             # Out.
             score.queueMovie(currentInfo + ' -out',
                     Score.NEW_ANIMATION_ONLY)
@@ -191,7 +191,7 @@ c_ MenuManager(QObject):
 
             __ no. Colors.noTicker:
                 score.queueMovie('ticker -out', Score.NEW_ANIMATION_ONLY)
-        ____ userCode == MenuManager.UP:
+        ____ userCode __ MenuManager.UP:
             backMenu _ info[currentMenu]['back']
             __ backMenu:
                 score.queueMovie(currentMenu + ' -top_out',
@@ -199,7 +199,7 @@ c_ MenuManager(QObject):
                 score.queueMovie(backMenu + ' -bottom_in',
                         Score.FROM_START, Score.UNLOCK_ITEMS)
                 currentMenu _ backMenu
-        ____ userCode == MenuManager.DOWN:
+        ____ userCode __ MenuManager.DOWN:
             moreMenu _ info[currentMenu]['more']
             __ moreMenu:
                 score.queueMovie(currentMenu + ' -bottom_out',
@@ -207,8 +207,8 @@ c_ MenuManager(QObject):
                 score.queueMovie(moreMenu + ' -top_in', Score.FROM_START,
                         Score.UNLOCK_ITEMS)
                 currentMenu _ moreMenu
-        ____ userCode == MenuManager.BACK:
-            __ currentMenuCode == MenuManager.MENU2:
+        ____ userCode __ MenuManager.BACK:
+            __ currentMenuCode __ MenuManager.MENU2:
                 # Out.
                 score.queueMovie(currentInfo + ' -out',
                         Score.NEW_ANIMATION_ONLY)
@@ -263,7 +263,7 @@ c_ MenuManager(QObject):
         __ assistantProcess.state() !_ QProcess.Running:
             app _ QLibraryInfo.location(QLibraryInfo.BinariesPath) + QDir.separator()
 
-            __ ___.platform == 'darwin':
+            __ ___.platform __ 'darwin':
                 app +_ 'Assistant.app/Contents/MacOS/Assistant'
             ____
                 app +_ 'assistant'
@@ -286,7 +286,7 @@ c_ MenuManager(QObject):
         process _ QProcess
         process.error.c..(launchError)
 
-        __ ___.platform == 'win32':
+        __ ___.platform __ 'win32':
             # Make sure it finds the DLLs on Windows.
             env _ QProcessEnvironment.systemEnvironment()
             env.insert('PATH',
@@ -445,7 +445,7 @@ c_ MenuManager(QObject):
         imageName _ info[name]['image']
         fileName _ info[name]['filename']
 
-        __ info[name]['qml'] == 'true':
+        __ info[name]['qml'] __ 'true':
             fileName _ 'qml-' + fileName.sp..('/')[-1]
 
         __ no. imageName:
@@ -491,7 +491,7 @@ c_ MenuManager(QObject):
         __ el.getAttribute('executable') !_ 'false':
             createLowRightLeafButton("Launch", 405, MenuManager.LAUNCH,
                     infoButtonsIn, infoButtonsOut, N..)
-        ____ el.getAttribute('qml') == 'true':
+        ____ el.getAttribute('qml') __ 'true':
             createLowRightLeafButton("Display", 405,
                     MenuManager.LAUNCH_QML, infoButtonsIn, infoButtonsOut,
                     N..)
@@ -600,7 +600,7 @@ c_ MenuManager(QObject):
                 i +_ 1
                 currentNode _ _next_element(currentNode)
 
-            __ currentNode __ no. N.. and i == maxExamples:
+            __ currentNode __ no. N.. and i __ maxExamples:
                 # We need another menu, so register for 'more' and 'back'
                 # buttons.
                 menuIndex +_ 1

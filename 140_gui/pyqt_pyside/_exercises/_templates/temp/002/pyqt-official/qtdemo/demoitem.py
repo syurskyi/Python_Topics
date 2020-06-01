@@ -75,7 +75,7 @@ c_ DemoItem(QGraphicsObject):
 
     ___ __del__
         _sharedImage.refCount -_ 1
-        __ _sharedImage.refCount == 0:
+        __ _sharedImage.refCount __ 0:
             __ _hashKey:
                 del DemoItem._sharedImageHash[_hashKey]
 
@@ -93,7 +93,7 @@ c_ DemoItem(QGraphicsObject):
     ___ useGuide  guide, startFrame):
         guideFrame _ startFrame
         w__ guideFrame > guide.startLength + guide.length
-            __ guide.nextGuide == guide.firstGuide:
+            __ guide.nextGuide __ guide.firstGuide:
                 break
 
             guide _ guide.nextGuide
@@ -104,7 +104,7 @@ c_ DemoItem(QGraphicsObject):
         guideFrame +_ distance
         w__ guideFrame > currGuide.startLength + currGuide.length
             currGuide _ currGuide.nextGuide
-            __ currGuide == currGuide.firstGuide:
+            __ currGuide __ currGuide.firstGuide:
                 guideFrame -_ currGuide.lengthAll()
 
     ___ guideMove  moveSpeed):

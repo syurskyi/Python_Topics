@@ -14,7 +14,7 @@ ___ createDB
 
         db.c..
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     app _ QCoreApplication(___.a..
     createDB()
     ___.e..(app.exec_())

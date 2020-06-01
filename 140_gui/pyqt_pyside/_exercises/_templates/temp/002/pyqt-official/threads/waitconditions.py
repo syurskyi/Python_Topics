@@ -64,7 +64,7 @@ c_ Producer(QThread):
 
         ___ i __ range(DataSize):
             mutex.lock()
-            __ numUsedBytes == BufferSize:
+            __ numUsedBytes __ BufferSize:
                 bufferNotFull.wait(mutex)
             mutex.unlock()
             
@@ -82,7 +82,7 @@ c_ Consumer(QThread):
 
         ___ i __ range(DataSize):
             mutex.lock()
-            __ numUsedBytes == 0:
+            __ numUsedBytes __ 0:
                 bufferNotEmpty.wait(mutex)
             mutex.unlock()
             

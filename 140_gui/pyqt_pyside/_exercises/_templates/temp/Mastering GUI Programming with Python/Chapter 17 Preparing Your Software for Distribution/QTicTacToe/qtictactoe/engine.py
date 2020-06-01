@@ -41,7 +41,7 @@ c_ TicTacToeEngine(qtc.QObject):
         ___ player __ players:
             plays _ {
                 index ___ index, value __ en..(board)
-                __ value == player
+                __ value __ player
             }
             ___ win __ winning_sets:
                 __ no. win - plays:  # player has a winning combo

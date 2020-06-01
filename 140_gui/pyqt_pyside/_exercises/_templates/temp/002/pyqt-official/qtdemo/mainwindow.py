@@ -176,7 +176,7 @@ c_ MainWindow(QGraphicsView):
     ___ measureFps
         # Calculate time difference.
         t _ fpsTime.msecsTo(?T...currentTime())
-        __ t == 0:
+        __ t __ 0:
             t _ 0.01
 
         currentFps _ (1000.0 / t)
@@ -186,10 +186,10 @@ c_ MainWindow(QGraphicsView):
         # Calculate median.
         size _ le.(fpsHistory)
 
-        __ size == 10:
-            fpsHistory.sort()
+        __ size __ 10:
+            fpsHistory.s..()
             fpsMedian _ fpsHistory[int(size / 2)]
-            __ fpsMedian == 0:
+            __ fpsMedian __ 0:
                 fpsMedian _ 0.01
 
             fpsHistory _   # list
@@ -206,13 +206,13 @@ c_ MainWindow(QGraphicsView):
 
         size _ le.(fpsHistory)
 
-        __ size == 0:
+        __ size __ 0:
             fpsMedian _ 0.01
             r_
 
-        fpsHistory.sort()
+        fpsHistory.s..()
         fpsMedian _ fpsHistory[size // 2]
-        __ fpsMedian == 0:
+        __ fpsMedian __ 0:
             fpsMedian _ 0.01
 
     ___ tick
@@ -309,9 +309,9 @@ c_ MainWindow(QGraphicsView):
             showFullScreen()
 
     ___ keyPressEvent  event):
-        __ event.key() == __.Key_Escape:
+        __ event.key() __ __.Key_Escape:
             ?A...quit()
-        ____ event.key() == __.Key_F1:
+        ____ event.key() __ __.Key_F1:
             s _ ""
             s +_ "\nAdapt: "
             s +_ ["on", "off"][Colors.noAdapt]

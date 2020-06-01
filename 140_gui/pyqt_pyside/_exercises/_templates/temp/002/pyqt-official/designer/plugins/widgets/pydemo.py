@@ -104,7 +104,7 @@ c_ PyDemo(PyTextViewer):
     @pyqtSlot(int)
     ___ setZoom  zoom):
         # Don't do anything if nothing has changed.
-        __ _zoom == zoom:
+        __ _zoom __ zoom:
             r_
 
         # Zoom in or out according to the relative zoom levels.
@@ -144,7 +144,7 @@ _demo_text _ """<h3>PyQt Demonstration Widget</h3>
 
 # Display the custom widget if the script is being run directly from the
 # command line.
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
     ______ ___
 

@@ -94,7 +94,7 @@ c_ StarRating(object):
         painter.setRenderHint(QPainter.Antialiasing,  st.
         painter.setPen(__.NoPen)
 
-        __ editMode == StarRating.Editable:
+        __ editMode __ StarRating.Editable:
             painter.setBrush(palette.highlight())
         ____
             painter.setBrush(palette.windowText())
@@ -106,7 +106,7 @@ c_ StarRating(object):
         ___ i __ range(_maxStarCount):
             __ i < _starCount:
                 painter.drawPolygon(starPolygon, __.WindingFill)
-            ____ editMode == StarRating.Editable:
+            ____ editMode __ StarRating.Editable:
                 painter.drawPolygon(diamondPolygon, __.WindingFill)
 
             painter.translate(1.0, 0.0)

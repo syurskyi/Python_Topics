@@ -94,7 +94,7 @@ c_ DemoItemAnimation(QPropertyAnimation):
                 setCurrentTime(0)
                 item.setPos(startValue())
 
-        __ _inOrOut == DemoItemAnimation.ANIM_IN:
+        __ _inOrOut __ DemoItemAnimation.ANIM_IN:
             item.setRecursiveVisible( st.
 
         __ no. Colors.noAnimations or force:
@@ -115,9 +115,9 @@ c_ DemoItemAnimation(QPropertyAnimation):
     ___ updateState  new, old):
         item _ targetObject()
 
-        __ new == QPropertyAnimation.Running:
+        __ new __ QPropertyAnimation.Running:
             item.animationStarted(_inOrOut)
-        ____ new == QPropertyAnimation.Stopped:
+        ____ new __ QPropertyAnimation.Stopped:
             __ _hideOnFinished:
                 item.setRecursiveVisible F..
 

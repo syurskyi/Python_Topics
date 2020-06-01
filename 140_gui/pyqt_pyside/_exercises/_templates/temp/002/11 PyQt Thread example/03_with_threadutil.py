@@ -32,7 +32,7 @@ ___ fetch_new_messages
 
 ___ send_message
     server.post(chat_url, {"name": name, "message": message.t__()})
-    message.clear()
+    message.c..
 
 # Signals:
 message.rP__.c..(send_message)

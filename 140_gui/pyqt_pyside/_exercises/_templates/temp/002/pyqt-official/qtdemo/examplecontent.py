@@ -74,7 +74,7 @@ c_ ExampleContent(DemoItem):
             _prepared _ True
 
     ___ animationStopped  id):
-        __ id == DemoItemAnimation.ANIM_OUT:
+        __ id __ DemoItemAnimation.ANIM_OUT:
             # Free up some memory.
             heading _ N..
             description _ N..
@@ -83,7 +83,7 @@ c_ ExampleContent(DemoItem):
 
     ___ loadDescription 
         contents _ _menu_manager.getHtml(name).data().decode('utf8')
-        __ contents == '':
+        __ contents __ '':
             paragraphs _   # list
         ____
             exampleDoc _ parseString(contents)
@@ -110,19 +110,19 @@ c_ ExampleContent(DemoItem):
         node _ parentNode.firstChild
 
         w__ node __ no. N..:
-            __ node.nodeType == node.TEXT_NODE:
+            __ node.nodeType __ node.TEXT_NODE:
                 description +_ Colors.contentColor + node.nodeValue
             ____ node.hasChildNodes
-                __ node.nodeName == 'b':
+                __ node.nodeName __ 'b':
                     beginTag _ '<b>'
                     endTag _ '</b>'
-                ____ node.nodeName == 'a':
+                ____ node.nodeName __ 'a':
                     beginTag _ Colors.contentColor
                     endTag _ '</font>'
-                ____ node.nodeName == 'i':
+                ____ node.nodeName __ 'i':
                     beginTag _ '<i>'
                     endTag _ '</i>'
-                ____ node.nodeName == 'tt':
+                ____ node.nodeName __ 'tt':
                     beginTag _ '<tt>'
                     endTag _ '</tt>'
                 ____

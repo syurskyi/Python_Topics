@@ -109,7 +109,7 @@ c_ TickerEffect(object):
 
     ___ slowDownAfterIntro  adjust):
         __ morphBetweenModels:
-            __ status == TickerEffect.Intro:
+            __ status __ TickerEffect.Intro:
                 dec _ 0.1 * adjust
                 moveSpeed -_ dec
                 __ moveSpeed < Colors.tickerMoveSpeed:
@@ -294,15 +294,15 @@ c_ ItemCircleAnimation(DemoItem):
     ___ switchToNextEffect
         showCount +_ 1
 
-        __ showCount == 1:
+        __ showCount __ 1:
             effect _ EffectSnake(letterList)
-        ____ showCount == 2:
+        ____ showCount __ 2:
             effect _ EffectLine(letterList)
             effect.setPostEffect(PostRotateXYTwist(0.01, 0.0, 0.003, 0.0))
-        ____ showCount == 3:
+        ____ showCount __ 3:
             effect _ EffectRaindrops(letterList)
             effect.setPostEffect(PostRotateXYTwist(0.01, 0.005, 0.003, 0.003))
-        ____ showCount == 4:
+        ____ showCount __ 4:
             effect _ EffectScan(letterList)
             effect.normalMoveSpeed _ 0
             effect.setPostEffect(PostRotateXY(0.008, 0.0, 0.005, 0.0))
@@ -311,7 +311,7 @@ c_ ItemCircleAnimation(DemoItem):
             effect _ EffectWhirlWind(letterList)
 
     ___ animationStarted  id):
-        __ id == DemoItemAnimation.ANIM_IN:
+        __ id __ DemoItemAnimation.ANIM_IN:
             __ doIntroTransitions:
                 # Make all letters disappear.
                 ___ letter __ letterList:
@@ -352,13 +352,13 @@ c_ ItemCircleAnimation(DemoItem):
     ___ mousePressEvent  event):
         mouseMoveLastPosition _ event.scenePos();
 
-        __ event.button() == __.LeftButton:
+        __ event.button() __ __.LeftButton:
             setCursor(__.ClosedHandCursor)
         ____
             switchToNextEffect()
 
     ___ mouseReleaseEvent  event):
-        __ event.button() == __.LeftButton:
+        __ event.button() __ __.LeftButton:
             setCursor(__.OpenHandCursor)
 
     ___ mouseMoveEvent  event):

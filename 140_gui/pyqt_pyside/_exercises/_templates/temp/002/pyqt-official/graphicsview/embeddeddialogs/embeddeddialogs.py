@@ -104,7 +104,7 @@ c_ CustomProxy(QGraphicsProxyWidget):
             zoomOut()
 
     ___ sceneEventFilter  watched, event):
-        __ watched.isWindow() and (event.type() == QEvent.UngrabMouse or event.type() == QEvent.GrabMouse):
+        __ watched.isWindow() and (event.type() __ QEvent.UngrabMouse or event.type() __ QEvent.GrabMouse):
             popupShown _ watched.isVisible()
             __ no. popupShown and no. isUnderMouse
                 zoomOut()
@@ -112,8 +112,8 @@ c_ CustomProxy(QGraphicsProxyWidget):
         r_ super(CustomProxy, self).sceneEventFilter(watched, event)
 
     ___ itemChange  change, value):
-        __ change == ItemChildAddedChange or change == ItemChildRemovedChange :
-            __ change == ItemChildAddedChange:
+        __ change __ ItemChildAddedChange or change __ ItemChildRemovedChange :
+            __ change __ ItemChildAddedChange:
                 currentPopup _ value
                 currentPopup.setCacheMode(ItemCoordinateCache)
                 __ scene() __ no. N..:
@@ -121,7 +121,7 @@ c_ CustomProxy(QGraphicsProxyWidget):
             ____ scene() __ no. N..:
                 currentPopup.removeSceneEventFilter
                 currentPopup _ N..
-        ____ currentPopup __ no. N.. and change == ItemSceneHasChanged:
+        ____ currentPopup __ no. N.. and change __ ItemSceneHasChanged:
                 currentPopup.installSceneEventFilter
 
         r_ super(CustomProxy, self).itemChange(change, value)
@@ -137,23 +137,23 @@ c_ CustomProxy(QGraphicsProxyWidget):
                             .translate(-r.width() / 2, -r.height() / 2))
 
     ___ stateChanged  state):
-        __ state == QTimeLine.Running:
-            __ timeLine.direction() == QTimeLine.Forward:
+        __ state __ QTimeLine.Running:
+            __ timeLine.direction() __ QTimeLine.Forward:
                 setCacheMode(NoCache)
-        ____ state == QTimeLine.NotRunning:
-            __ timeLine.direction() == QTimeLine.Backward:
+        ____ state __ QTimeLine.NotRunning:
+            __ timeLine.direction() __ QTimeLine.Backward:
                 setCacheMode(DeviceCoordinateCache)
 
     ___ zoomIn
         __ timeLine.direction() !_ QTimeLine.Forward:
             timeLine.setDirection(QTimeLine.Forward)
-        __ timeLine.state() == QTimeLine.NotRunning:
+        __ timeLine.state() __ QTimeLine.NotRunning:
             timeLine.start()
 
     ___ zoomOut
         __ timeLine.direction() !_ QTimeLine.Backward:
             timeLine.setDirection(QTimeLine.Backward)
-        __ timeLine.state() == QTimeLine.NotRunning:
+        __ timeLine.state() __ QTimeLine.NotRunning:
             timeLine.start()
 
 
@@ -167,7 +167,7 @@ c_ EmbeddedDialog(QDialog):
 
         ___ styleName __ QStyleFactory.keys
             ui.style.aI..(styleName)
-            __ style().objectName().lower() == styleName.lower
+            __ style().objectName().lower() __ styleName.lower
                 ui.style.setCurrentIndex(ui.style.count() -1)
 
         ui.layoutDirection.activated.c..(layoutDirectionChanged)
@@ -176,7 +176,7 @@ c_ EmbeddedDialog(QDialog):
         ui.style.activated[str].c..(styleChanged)
 
     ___ layoutDirectionChanged  index):
-        __ index == 0:
+        __ index __ 0:
             setLayoutDirection(__.LeftToRight)
         ____
             setLayoutDirection(__.RightToLeft)

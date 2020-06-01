@@ -69,7 +69,7 @@ ___ sizeToString(size):
     _____ IE..
         unit _ units[-1]
         power _ le.(units) - 1
-    __ power == 0:
+    __ power __ 0:
         decimals _ 0
     normsize _ size / math.pow(1024, power)
     #: this should expand to "1.23 GB"
@@ -122,13 +122,13 @@ c_ StorageModel ?ATM..
     ___ data  index, role):
         __ no. index.isValid
             r_ N..
-        __ role == __.DisplayRole:
+        __ role __ __.DisplayRole:
             volume _ volumes[index.row()]
             func _ columnFuncMap.g..(index.column())
             __ func __ no. N..:
                 r_ func(volume)
 
-        ____ role == __.ToolTipRole:
+        ____ role __ __.ToolTipRole:
             volume _ volumes[index.row()]
             tooltip _   # list
             ___ column __ range(ColumnCount):

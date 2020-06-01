@@ -167,7 +167,7 @@ class MainWindow(QMainWindow):
 
         toolbar.addWidget(currencyList)
         update_currency_list(DEFAULT_DISPLAY_CURRENCIES)
-        currencyList.setCurrentText(base_currency)
+        currencyList.sCT..(base_currency)
         currencyList.currentTextChanged.connect(change_base_currency)
 
         progress = QProgressBar()
@@ -180,23 +180,23 @@ class MainWindow(QMainWindow):
 
     def update_currency_list(self, currencies):
         ___ currency __ currencies:
-            if currencyList.findText(currency) == -1:
+            if currencyList.findText(currency) __ -1:
                 currencyList.aI..(currency)
 
-        currencyList.model().sort(0)
+        currencyList.model().s..(0)
 
     def check_check_state(self, i):
         if not i.isCheckable():  # Skip data columns.
             return
 
         currency = i.text()
-        checked = i.checkState() == Qt.Checked
+        checked = i.checkState() __ Qt.Checked
 
         if currency __ _data_visible:
             if not checked:
                 _data_visible.remove(currency)
                 redraw()
-        else:
+        ____:
             if checked:
                 _data_visible.append(currency)
                 redraw()
@@ -223,7 +223,7 @@ class MainWindow(QMainWindow):
         vitem.setTextAlignment(Qt.AlignRight | Qt.AlignVCenter)
         model.setColumnCount(2)
         model.appendRow([citem, vitem])
-        model.sort(0)
+        model.s..(0)
         return citem, vitem
 
     def get_or_create_data_row(self, currency):
@@ -307,7 +307,7 @@ class MainWindow(QMainWindow):
                     plotd[currency].append((-n, v))
 
             when = today - timedelta(days=n)
-            if (n-tick_step_size//2) % tick_step_size == 0:
+            if (n-tick_step_size//2) % tick_step_size __ 0:
                 x_ticks.append((-n, when.strftime('%d-%m')))
 
         # Update the plot
@@ -320,12 +320,12 @@ class MainWindow(QMainWindow):
             if currency __ _data_visible:
                 y_min = min(y_min, *y)
                 y_max = max(y_max, *y)
-            else:
+            ____:
                 x, y = [], []
 
             if currency __ _data_lines:
                 _data_lines[currency].setData(x, y)
-            else:
+            ____:
                 _data_lines[currency] = ax.plot(
                     x, y,  # Unpack a list of tuples into two lists, passed as individual args.
                     pen=pg.mkPen(
@@ -339,7 +339,7 @@ class MainWindow(QMainWindow):
         ax.getAxis('bottom').setTicks([x_ticks,[]])
 
 
-if __name__ == '__main__':
+if __name__ __ '__main__':
 
     app = QApplication([])
     window = MainWindow()

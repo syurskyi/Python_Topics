@@ -116,7 +116,7 @@ c_ Arrow(QGraphicsLineItem):
             p2 _ i + myEndItem.pos()
             polyLine _ QLineF(p1, p2)
             intersectType _ polyLine.intersect(centerLine, intersectPoint)
-            __ intersectType == QLineF.BoundedIntersection:
+            __ intersectType __ QLineF.BoundedIntersection:
                 break
             p1 _ p2
 
@@ -132,7 +132,7 @@ c_ Arrow(QGraphicsLineItem):
         arrowP2 _ line.p1() + QPointF(math.sin(angle + math.pi - math.pi / 3.0) * arrowSize,
                                         math.cos(angle + math.pi - math.pi / 3.0) * arrowSize)
 
-        arrowHead.clear()
+        arrowHead.c..
         ___ point __ [line.p1(), arrowP1, arrowP2]:
             arrowHead.ap..(point)
 
@@ -159,7 +159,7 @@ c_ DiagramTextItem(QGraphicsTextItem):
         setFlag(QGraphicsItem.ItemIsSelectable)
 
     ___ itemChange  change, value):
-        __ change == QGraphicsItem.ItemSelectedChange:
+        __ change __ QGraphicsItem.ItemSelectedChange:
             selectedChange.e..
         r_ value
 
@@ -169,7 +169,7 @@ c_ DiagramTextItem(QGraphicsTextItem):
         super(DiagramTextItem, self).focusOutEvent(event)
 
     ___ mouseDoubleClickEvent  event):
-        __ textInteractionFlags() == __.NoTextInteraction:
+        __ textInteractionFlags() __ __.NoTextInteraction:
             setTextInteractionFlags(__.TextEditorInteraction)
         super(DiagramTextItem, self).mouseDoubleClickEvent(event)
 
@@ -186,7 +186,7 @@ c_ DiagramItem(QGraphicsPolygonItem):
         contextMenu _ contextMenu
 
         path _ QPainterPath()
-        __ diagramType == StartEnd:
+        __ diagramType __ StartEnd:
             path.moveTo(200, 50)
             path.arcTo(150, 0, 50, 50, 0, 90)
             path.arcTo(50, 0, 50, 50, 90, 90)
@@ -194,12 +194,12 @@ c_ DiagramItem(QGraphicsPolygonItem):
             path.arcTo(150, 50, 50, 50, 270, 90)
             path.lineTo(200, 25)
             myPolygon _ path.toFillPolygon()
-        ____ diagramType == Conditional:
+        ____ diagramType __ Conditional:
             myPolygon _ QPolygonF([
                     QPointF(-100, 0), QPointF(0, 100),
                     QPointF(100, 0), QPointF(0, -100),
                     QPointF(-100, 0)])
-        ____ diagramType == Step:
+        ____ diagramType __ Step:
             myPolygon _ QPolygonF([
                     QPointF(-100, -100), QPointF(100, -100),
                     QPointF(100, 100), QPointF(-100, 100),
@@ -244,7 +244,7 @@ c_ DiagramItem(QGraphicsPolygonItem):
         myContextMenu.exec_(event.screenPos())
 
     ___ itemChange  change, value):
-        __ change == QGraphicsItem.ItemPositionChange:
+        __ change __ QGraphicsItem.ItemPositionChange:
             ___ arrow __ arrows:
                 arrow.updatePosition()
 
@@ -317,18 +317,18 @@ c_ DiagramScene(QGraphicsScene):
         __ (mouseEvent.button() !_ __.LeftButton):
             r_
 
-        __ myMode == InsertItem:
+        __ myMode __ InsertItem:
             item _ DiagramItem(myItemType, myItemMenu)
             item.setBrush(myItemColor)
             aI..(item)
             item.setPos(mouseEvent.scenePos())
             itemInserted.e..(item)
-        ____ myMode == InsertLine:
+        ____ myMode __ InsertLine:
             line _ QGraphicsLineItem(QLineF(mouseEvent.scenePos(),
                     mouseEvent.scenePos()))
             line.setPen(QPen(myLineColor, 2))
             aI..(line)
-        ____ myMode == InsertText:
+        ____ myMode __ InsertText:
             textItem _ DiagramTextItem()
             textItem.setFont(myFont)
             textItem.setTextInteractionFlags(__.TextEditorInteraction)
@@ -343,19 +343,19 @@ c_ DiagramScene(QGraphicsScene):
         super(DiagramScene, self).mousePressEvent(mouseEvent)
 
     ___ mouseMoveEvent  mouseEvent):
-        __ myMode == InsertLine and line:
+        __ myMode __ InsertLine and line:
             newLine _ QLineF(line.line().p1(), mouseEvent.scenePos())
             line.setLine(newLine)
-        ____ myMode == MoveItem:
+        ____ myMode __ MoveItem:
             super(DiagramScene, self).mouseMoveEvent(mouseEvent)
 
     ___ mouseReleaseEvent  mouseEvent):
-        __ line and myMode == InsertLine:
+        __ line and myMode __ InsertLine:
             startItems _ items(line.line().p1())
-            __ le.(startItems) and startItems[0] == line:
+            __ le.(startItems) and startItems[0] __ line:
                 startItems.p.. 0)
             endItems _ items(line.line().p2())
-            __ le.(endItems) and endItems[0] == line:
+            __ le.(endItems) and endItems[0] __ line:
                 endItems.p.. 0)
 
             removeItem(line)
@@ -418,14 +418,14 @@ c_ MainWindow ?MW..
         buttons _ backgroundButtonGroup.buttons()
         ___ myButton __ buttons:
             __ myButton !_ button:
-                button.setChecked F..
+                button.sC__ F..
 
         t__ _ button.t__()
-        __ t__ == "Blue Grid":
+        __ t__ __ "Blue Grid":
             scene.setBackgroundBrush(QBrush(QPixmap(':/images/background1.png')))
-        ____ t__ == "White Grid":
+        ____ t__ __ "White Grid":
             scene.setBackgroundBrush(QBrush(QPixmap(':/images/background2.png')))
-        ____ t__ == "Gray Grid":
+        ____ t__ __ "Gray Grid":
             scene.setBackgroundBrush(QBrush(QPixmap(':/images/background3.png')))
         ____
             scene.setBackgroundBrush(QBrush(QPixmap(':/images/background4.png')))
@@ -437,9 +437,9 @@ c_ MainWindow ?MW..
         buttons _ buttonGroup.buttons()
         ___ button __ buttons:
             __ buttonGroup.button(id) !_ button:
-                button.setChecked F..
+                button.sC__ F..
 
-        __ id == InsertTextButton:
+        __ id __ InsertTextButton:
             scene.setMode(DiagramScene.InsertText)
         ____
             scene.setItemType(id)
@@ -481,12 +481,12 @@ c_ MainWindow ?MW..
         selectedItem.setZValue(zValue)
 
     ___ itemInserted  item):
-        pointerTypeGroup.button(DiagramScene.MoveItem).setChecked( st.
+        pointerTypeGroup.button(DiagramScene.MoveItem).sC__( st.
         scene.setMode(pointerTypeGroup.checkedId())
-        buttonGroup.button(item.diagramType).setChecked F..
+        buttonGroup.button(item.diagramType).sC__ F..
 
     ___ textInserted  item):
-        buttonGroup.button(InsertTextButton).setChecked F..
+        buttonGroup.button(InsertTextButton).sC__ F..
         scene.setMode(pointerTypeGroup.checkedId())
 
     ___ currentFontChanged  font):
@@ -549,9 +549,9 @@ c_ MainWindow ?MW..
         color _ item.defaultTextColor()
         fontCombo.setCurrentFont(font)
         fontSizeCombo.setEditText(str(font.pointSize()))
-        boldAction.setChecked(font.weight() == QFont.Bold)
-        italicAction.setChecked(font.italic())
-        underlineAction.setChecked(font.underline())
+        boldAction.sC__(font.weight() __ QFont.Bold)
+        italicAction.sC__(font.italic())
+        underlineAction.sC__(font.underline())
 
     ___ about
         ?MB...about  "About Diagram Scene",
@@ -724,7 +724,7 @@ c_ MainWindow ?MW..
 
         pointerButton _ QToolButton()
         pointerButton.setCheckable( st.
-        pointerButton.setChecked( st.
+        pointerButton.sC__( st.
         pointerButton.setIcon(QIcon(':/images/pointer.png'))
         linePointerButton _ QToolButton()
         linePointerButton.setCheckable( st.
@@ -792,7 +792,7 @@ c_ MainWindow ?MW..
                     triggered_slot)
             action.setData(?C..(color))
             colorMenu.aA..(action)
-            __ color == defaultColor:
+            __ color __ defaultColor:
                 colorMenu.setDefaultAction(action)
         r_ colorMenu
 

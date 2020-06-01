@@ -49,7 +49,7 @@ c_ MainWindow(?W..):
     ___ closeEvent  event):
         db.c..
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     app _ ?A..(___.a..
     window _ MainWindow()
     window.s..

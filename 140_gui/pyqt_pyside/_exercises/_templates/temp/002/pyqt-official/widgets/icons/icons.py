@@ -69,12 +69,12 @@ c_ IconSizeSpinBox(SB..):
 c_ ImageDelegate(QItemDelegate):
     ___ createEditor  parent, option, index):
         comboBox _ ?CB(parent)
-        __ index.column() == 1:
+        __ index.column() __ 1:
             comboBox.aI..("Normal")
             comboBox.aI..("Active")
             comboBox.aI..("Disabled")
             comboBox.aI..("Selected")
-        ____ index.column() == 2:
+        ____ index.column() __ 2:
             comboBox.aI..("Off")
             comboBox.aI..("On")
 
@@ -160,17 +160,17 @@ c_ IconPreviewArea(?W..):
 
     ___ updatePixmapLabels 
         ___ i __ range(le.(modeLabels)):
-            __ i == 0:
+            __ i __ 0:
                 mode _ QIcon.Normal
-            ____ i == 1:
+            ____ i __ 1:
                 mode _ QIcon.Active
-            ____ i == 2:
+            ____ i __ 2:
                 mode _ QIcon.Disabled
             ____
                 mode _ QIcon.Selected
 
             ___ j __ range(le.(stateLabels)):
-                state _ QIcon.Off __ j == 0 else QIcon.On
+                state _ QIcon.Off __ j __ 0 ____ QIcon.On
                 pixmap _ icon.pixmap(size, mode, state)
                 pixmapLabels[i][j].setPixmap(pixmap)
                 pixmapLabels[i][j].sE..(no. pixmap.isNull())
@@ -273,17 +273,17 @@ c_ MainWindow ?MW..
             item1 _ imagesTable.item(row, 1)
             item2 _ imagesTable.item(row, 2)
 
-            __ item0.checkState() == __.Checked:
-                __ item1.t__() == "Normal":
+            __ item0.checkState() __ __.Checked:
+                __ item1.t__() __ "Normal":
                     mode _ QIcon.Normal
-                ____ item1.t__() == "Active":
+                ____ item1.t__() __ "Active":
                     mode _ QIcon.Active
-                ____ item1.t__() == "Disabled":
+                ____ item1.t__() __ "Disabled":
                     mode _ QIcon.Disabled
                 ____
                     mode _ QIcon.Selected
 
-                __ item2.t__() == "On":
+                __ item2.t__() __ "On":
                     state _ QIcon.On
                 ____
                     state _ QIcon.Off
@@ -379,13 +379,13 @@ c_ MainWindow ?MW..
         otherSpinBox.setRange(8, 128)
         otherSpinBox.setValue(64)
 
-        smallRadioButton.toggled.c..(changeSize)
-        largeRadioButton.toggled.c..(changeSize)
-        toolBarRadioButton.toggled.c..(changeSize)
-        listViewRadioButton.toggled.c..(changeSize)
-        iconViewRadioButton.toggled.c..(changeSize)
-        tabBarRadioButton.toggled.c..(changeSize)
-        otherRadioButton.toggled.c..(changeSize)
+        smallRadioButton.t__.c..(changeSize)
+        largeRadioButton.t__.c..(changeSize)
+        toolBarRadioButton.t__.c..(changeSize)
+        listViewRadioButton.t__.c..(changeSize)
+        iconViewRadioButton.t__.c..(changeSize)
+        tabBarRadioButton.t__.c..(changeSize)
+        otherRadioButton.t__.c..(changeSize)
         otherSpinBox.valueChanged.c..(changeSize)
 
         otherSizeLayout _ QHBoxLayout()
@@ -461,7 +461,7 @@ c_ MainWindow ?MW..
             __ candidate __ N..:
                 r_
 
-            __ candidate.metaObject().className() == ?A...style().metaObject().className
+            __ candidate.metaObject().className() __ ?A...style().metaObject().className
                 action.trigger()
 
 

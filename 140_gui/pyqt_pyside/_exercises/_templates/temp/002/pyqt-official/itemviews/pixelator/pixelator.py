@@ -70,7 +70,7 @@ c_ PixelDelegate(QAbstractItemDelegate):
         size _ min(option.rect.width(), option.rect.height())
         brightness _ index.model().data(index, __.DisplayRole)
         radius _ (size/2.0) - (brightness/255.0 * size/2.0)
-        __ radius == 0.0:
+        __ radius __ 0.0:
             r_
 
         painter.save()
@@ -120,7 +120,7 @@ c_ ImageModel ?ATM..
         r_ qGray(modelImage.pixel(index.column(), index.row()))
 
     ___ headerData  section, orientation, role):
-        __ role == __.SizeHintRole:
+        __ role __ __.SizeHintRole:
             r_ ?S..(1, 1)
 
         r_ N..
@@ -218,7 +218,7 @@ c_ MainWindow ?MW..
                     "The printed image may be very large. Are you sure that "
                     "you want to print it?",
                     ?MB...Yes | ?MB...No)
-            __ answer == ?MB...No:
+            __ answer __ ?MB...No:
                 r_
 
         printer _ QPrinter(QPrinter.HighResolution)

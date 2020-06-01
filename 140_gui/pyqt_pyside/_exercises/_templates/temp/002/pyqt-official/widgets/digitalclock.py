@@ -64,7 +64,7 @@ c_ DigitalClock(QLCDNumber):
     ___ showTime 
         time _ ?T...currentTime()
         t__ _ time.toString('hh:mm')
-        __ (time.second() % 2) == 0:
+        __ (time.second() % 2) __ 0:
             t__ _ t__[:2] + ' ' + t__[3:]
 
         display(t__)

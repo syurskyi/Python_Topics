@@ -107,7 +107,7 @@ c_ Colors(object):
         font _ QFont()
         font.setStyleStrategy(QFont.PreferAntialias)
 
-        __ ___.platform == 'darwin':
+        __ ___.platform __ 'darwin':
             font.setPixelSize(14)
             font.setFamily('Arial')
         ____
@@ -142,7 +142,7 @@ c_ Colors(object):
         font _ QFont()
         font.setStyleStrategy(QFont.PreferAntialias)
 
-        __ ___.platform == 'darwin':
+        __ ___.platform __ 'darwin':
             font.setPixelSize(11)
             font.setBold( st.
             font.setFamily('Arial')
@@ -167,32 +167,32 @@ c_ Colors(object):
         # Handle the rest of the arguments.  They may override attributes
         # already set.
         ___ s __ argv:
-            __ s == "-no-ticker":
+            __ s __ "-no-ticker":
                 cls.noTicker _ True
             ____ s.s_w_("-ticker"):
                 cls.noTicker _  no. bool(parseFloat(s, "-ticker"))
-            ____ s == "-no-animations":
+            ____ s __ "-no-animations":
                 cls.noAnimations _ True
             ____ s.s_w_("-animations"):
                 cls.noAnimations _ no. bool(parseFloat(s, "-animations"))
-            ____ s == "-no-adapt":
+            ____ s __ "-no-adapt":
                 # Don't adapt the animations based on the actual performance.
                 cls.noAdapt _ True
-            ____ s == "-low":
+            ____ s __ "-low":
                 cls.setLowSettings()
-            ____ s == "-no-rescale":
+            ____ s __ "-no-rescale":
                 cls.noRescale _ True
-            ____ s == "-use-pixmaps":
+            ____ s __ "-use-pixmaps":
                 cls.usePixmaps _ True
-            ____ s == "-fullscreen":
+            ____ s __ "-fullscreen":
                 cls.fullscreen _ True
-            ____ s == "-show-br":
+            ____ s __ "-show-br":
                 cls.showBoundingRect _ True
-            ____ s == "-show-fps":
+            ____ s __ "-show-fps":
                 cls.showFps _ True
-            ____ s == "-no-blending":
+            ____ s __ "-no-blending":
                 cls.noBlending _ True
-            ____ s == "-no-sync":
+            ____ s __ "-no-sync":
                 cls.noScreenSync _ True
             ____ s.s_w_("-menu"):
                 cls.menuCount _ int(parseFloat(s, "-menu"))
@@ -200,17 +200,17 @@ c_ Colors(object):
                 cls.noTimerUpdate _ no. bool(parseFloat(s, "-use-timer-update"))
             ____ s.s_w_("-pause"):
                 cls.pause _ bool(parseFloat(s, "-pause"))
-            ____ s == "-no-ticker-morph":
+            ____ s __ "-no-ticker-morph":
                 cls.noTickerMorph _ True
-            ____ s == "-use-window-mask":
+            ____ s __ "-use-window-mask":
                 cls.noWindowMask _ False
-            ____ s == "-use-loop":
+            ____ s __ "-use-loop":
                 cls.useLoop _ True
-            ____ s == "-use-8bit":
+            ____ s __ "-use-8bit":
                 cls.useEightBitPalette _ True
             ____ s.s_w_("-8bit"):
                 cls.useEightBitPalette _ bool(parseFloat(s, "-8bit"))
-            ____ s == "-use-balls":
+            ____ s __ "-use-balls":
                 cls.useButtonBalls _ True
             ____ s.s_w_("-ticker-letters"):
                 cls.tickerLetterCount _ int(parseFloat(s, "-ticker-letters"))
@@ -270,7 +270,7 @@ ___ parseFloat(argument, name):
 
 
 ___ parseText(argument, name):
-    __ le.(name) == le.(argument):
+    __ le.(name) __ le.(argument):
         ?MB...warning(N.., "Arguments",
                 "No argument number found for %s. Remember to put name and "
                 "value adjacent! (e.g. -fps100)")

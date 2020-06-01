@@ -71,21 +71,21 @@ c_ PreviewWindow(?W..):
 
         flag_type _ (flags & __.WindowType_Mask)
 
-        __ flag_type == __.Window:
+        __ flag_type __ __.Window:
             t__ _ "Qt.Window"
-        ____ flag_type == __.Dialog:
+        ____ flag_type __ __.Dialog:
             t__ _ "Qt.Dialog"
-        ____ flag_type == __.Sheet:
+        ____ flag_type __ __.Sheet:
             t__ _ "Qt.Sheet"
-        ____ flag_type == __.Drawer:
+        ____ flag_type __ __.Drawer:
             t__ _ "Qt.Drawer"
-        ____ flag_type == __.Popup:
+        ____ flag_type __ __.Popup:
             t__ _ "Qt.Popup"
-        ____ flag_type == __.Tool:
+        ____ flag_type __ __.Tool:
             t__ _ "Qt.Tool"
-        ____ flag_type == __.ToolTip:
+        ____ flag_type __ __.ToolTip:
             t__ _ "Qt.ToolTip"
-        ____ flag_type == __.SplashScreen:
+        ____ flag_type __ __.SplashScreen:
             t__ _ "Qt.SplashScreen"
         ____
             t__ _ ""
@@ -216,7 +216,7 @@ c_ ControllerWindow(?W..):
         toolRadioButton _ createRadioButton("Tool")
         toolTipRadioButton _ createRadioButton("Tooltip")
         splashScreenRadioButton _ createRadioButton("Splash screen")
-        windowRadioButton.setChecked( st.
+        windowRadioButton.sC__( st.
 
         layout _ QGridLayout()
         layout.aW..(windowRadioButton, 0, 0)

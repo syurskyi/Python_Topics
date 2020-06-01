@@ -81,12 +81,12 @@ c_ ShapedClock(?W..):
         sWT..(tr("Shaped Analog Clock"))
 
     ___ mousePressEvent  event):
-        __ event.button() == __.LeftButton:
+        __ event.button() __ __.LeftButton:
             dragPosition _ event.globalPos() - frameGeometry().topLeft()
             event.accept()
 
     ___ mouseMoveEvent  event):
-        __ event.buttons() == __.LeftButton:
+        __ event.buttons() __ __.LeftButton:
             move(event.globalPos() - dragPosition)
             event.accept()
 

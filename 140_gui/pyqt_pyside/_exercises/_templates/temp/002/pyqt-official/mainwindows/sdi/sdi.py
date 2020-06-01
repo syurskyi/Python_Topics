@@ -242,10 +242,10 @@ c_ MainWindow ?MW..
                     ?MB...Save | ?MB...Discard |
                     ?MB...Cancel)
 
-            __ ret == ?MB...Save:
+            __ ret __ ?MB...Save:
                 r_ save()
 
-            __ ret == ?MB...Cancel:
+            __ ret __ ?MB...Cancel:
                 r_ False
 
         r_ True
@@ -301,7 +301,7 @@ c_ MainWindow ?MW..
         canonicalFilePath _ QFileInfo(fileName).canonicalFilePath()
 
         ___ widget __ ?A...instance().topLevelWidgets
-            __ isinstance(widget, MainWindow) and widget.curFile == canonicalFilePath:
+            __ isinstance(widget, MainWindow) and widget.curFile __ canonicalFilePath:
                 r_ widget
 
         r_ N..

@@ -185,7 +185,7 @@ c_ BlockingClient(?W..):
                 int(portLineEdit.t__()))
 
     ___ showFortune  nextFortune):
-        __ nextFortune == currentFortune:
+        __ nextFortune __ currentFortune:
             requestNewFortune()
             r_
 
@@ -194,11 +194,11 @@ c_ BlockingClient(?W..):
         getFortuneButton.sE..( st.
 
     ___ displayError  socketError, message):
-        __ socketError == QAbstractSocket.HostNotFoundError:
+        __ socketError __ QAbstractSocket.HostNotFoundError:
             ?MB...information  "Blocking Fortune Client",
                     "The host was not found. Please check the host and port "
                     "settings.")
-        ____ socketError == QAbstractSocket.ConnectionRefusedError:
+        ____ socketError __ QAbstractSocket.ConnectionRefusedError:
             ?MB...information  "Blocking Fortune Client",
                     "The connection was refused by the peer. Make sure the "
                     "fortune server is running, and check that the host name "

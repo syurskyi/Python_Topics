@@ -64,7 +64,7 @@ c_ Window(QDialog):
         createTrayIcon()
 
         showMessageButton.c__.c..(showMessage)
-        showIconCheckBox.toggled.c..(trayIcon.setVisible)
+        showIconCheckBox.t__.c..(trayIcon.setVisible)
         iconComboBox.currentIndexChanged.c..(setIcon)
         trayIcon.messageClicked.c..(messageClicked)
         trayIcon.activated.c..(iconActivated)
@@ -107,7 +107,7 @@ c_ Window(QDialog):
             iconComboBox.setCurrentIndex(
                     (iconComboBox.currentIndex() + 1)
                     % iconComboBox.count())
-        ____ reason == QSystemTrayIcon.MiddleClick:
+        ____ reason __ QSystemTrayIcon.MiddleClick:
             showMessage()
 
     ___ showMessage
@@ -133,7 +133,7 @@ c_ Window(QDialog):
         iconComboBox.aI..(QIcon(':/images/trash.png'), "Trash")
 
         showIconCheckBox _ QCheckBox("Show icon")
-        showIconCheckBox.setChecked( st.
+        showIconCheckBox.sC__( st.
 
         iconLayout _ QHBoxLayout()
         iconLayout.aW..(iconLabel)

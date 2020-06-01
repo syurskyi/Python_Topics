@@ -102,7 +102,7 @@ c_ Client(QDialog):
         ins _ QDataStream(socket)
         ins.setVersion(QDataStream.Qt_4_0)
 
-        __ blockSize == 0:
+        __ blockSize __ 0:
             __ socket.bytesAvailable() < 2:
                 r_
             blockSize _ ins.readUInt16()
@@ -111,7 +111,7 @@ c_ Client(QDialog):
             r_
 
         nextFortune _ ins.readQString()
-        __ nextFortune == currentFortune:
+        __ nextFortune __ currentFortune:
             QTimer.singleShot(0, requestNewFortune)
             r_
  

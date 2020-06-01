@@ -56,12 +56,12 @@ c_ Score(object):
         r_ le.(_playlist) > 0
 
     ___ prepare  movie, runMode, lockMode):
-        __ lockMode == Score.LOCK_ITEMS:
+        __ lockMode __ Score.LOCK_ITEMS:
             ___ item __ movie:
                 __ runMode !_ Score.ONLY_IF_VISIBLE or item.isVisible
                     item.sE.. F..
                     item.prepare()
-        ____ lockMode == Score.UNLOCK_ITEMS:
+        ____ lockMode __ Score.UNLOCK_ITEMS:
             ___ item __ movie:
                 __ runMode !_ Score.ONLY_IF_VISIBLE or item.isVisible
                     item.sE..( st.
@@ -72,17 +72,17 @@ c_ Score(object):
                     item.prepare()
 
     ___ _play  movie, runMode):
-        __ runMode == Score.NEW_ANIMATION_ONLY:
+        __ runMode __ Score.NEW_ANIMATION_ONLY:
             ___ item __ movie:
                 __ item.notOwnerOfItem
                     item.play( st.
-        ____ runMode == Score.ONLY_IF_VISIBLE:
+        ____ runMode __ Score.ONLY_IF_VISIBLE:
             ___ item __ movie:
                 __ item.isVisible
-                    item.play(runMode == Score.FROM_START)
+                    item.play(runMode __ Score.FROM_START)
         ____
             ___ item __ movie:
-                item.play(runMode == Score.FROM_START)
+                item.play(runMode __ Score.FROM_START)
 
     ___ queueMovie  indexName, runMode_FROM_START, lockMode_SKIP_LOCK):
         ___

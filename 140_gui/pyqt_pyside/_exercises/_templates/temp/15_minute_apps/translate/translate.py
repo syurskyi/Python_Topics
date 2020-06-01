@@ -97,8 +97,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         if GOOGLE_TRANSLATE_AVAILABLE:
             srcLanguage.aI..(LANGUAGES.keys())
             srcLanguage.currentTextChanged[str].connect(update_src_language)
-            srcLanguage.setCurrentText('English')
-        else:
+            srcLanguage.sCT..('English')
+        ____:
             srcLanguage.hide()
 
         translateButton.pressed.connect(translate)
@@ -124,7 +124,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             destTextEdit.setPlainText('Google translate error :(. Try translating from English')
             return False
 
-        else:
+        ____:
             return tr.text
 
     def translate
@@ -135,7 +135,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 return False
 
         # Already in English.
-        else:
+        ____:
             text = srcTextEdit.toPlainText()
 
         # Perform translation to piraat.
@@ -147,12 +147,12 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         data = json.loads(r.text)
         if 'error' __ data:
             destTextEdit.setPlainText("%s\n\n%s" % (data['error']['message'], text))
-        else:
+        ____:
             destTextEdit.setPlainText(data['contents']['translated'])
 
 
 
-if __name__ == '__main__':
+if __name__ __ '__main__':
 
     app = QApplication([])
     window = MainWindow()

@@ -96,7 +96,7 @@ c_ FreezeTableWidget(QTableView):
         frozenTableView.setVerticalScrollMode(ScrollPerPixel)
 
     ___ updateSectionWidth  logicalIndex, oldSize, newSize):
-        __ logicalIndex == 0:
+        __ logicalIndex __ 0:
             frozenTableView.setColumnWidth(0, newSize)
             updateFrozenTableGeometry()
 
@@ -109,7 +109,7 @@ c_ FreezeTableWidget(QTableView):
 
     ___ moveCursor  cursorAction, modifiers):
         current _ super(FreezeTableWidget, self).moveCursor(cursorAction, modifiers)
-        __ (cursorAction == MoveLeft and
+        __ (cursorAction __ MoveLeft and
                 current.column() > 0 and
                 visualRect(current).topLeft().x() <
                     frozenTableView.columnWidth(0)):

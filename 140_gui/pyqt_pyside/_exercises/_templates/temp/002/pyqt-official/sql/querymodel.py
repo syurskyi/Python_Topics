@@ -53,13 +53,13 @@ ______ connection
 c_ CustomSqlModel(QSqlQueryModel):
     ___ data  index, role):
         value _ super(CustomSqlModel, self).data(index, role)
-        __ value __ no. N.. and role == __.DisplayRole:
-            __ index.column() == 0:
+        __ value __ no. N.. and role __ __.DisplayRole:
+            __ index.column() __ 0:
                 r_ '#%d' % value
-            ____ index.column() == 2:
+            ____ index.column() __ 2:
                 r_ value.upper()
 
-        __ role == __.TextColorRole and index.column() == 1:
+        __ role __ __.TextColorRole and index.column() __ 1:
             r_ ?C..(__.blue)
 
         r_ value
@@ -81,9 +81,9 @@ c_ EditableSqlModel(QSqlQueryModel):
         primaryKeyIndex _ index(index.row(), 0)
         id _ data(primaryKeyIndex)
 
-        clear()
+        c..
 
-        __ index.column() == 1:
+        __ index.column() __ 1:
             ok _ setFirstName(id, value)
         ____
             ok _ setLastName(id, value)

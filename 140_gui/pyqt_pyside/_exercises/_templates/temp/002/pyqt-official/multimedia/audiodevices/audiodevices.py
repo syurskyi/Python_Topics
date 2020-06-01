@@ -82,7 +82,7 @@ c_ AudioTest(AudioDevicesBase):
         deviceChanged(0)
 
     ___ test
-        testResult.clear()
+        testResult.c..
 
         __ no. deviceInfo.isNull
             __ deviceInfo.isFormatSupported(settings):
@@ -127,14 +127,14 @@ c_ AudioTest(AudioDevicesBase):
         r_ cls.endianMap.g..(endian, "Unknown")
 
     ___ modeChanged  idx):
-        testResult.clear()
+        testResult.c..
 
-        __ idx == 0:
+        __ idx __ 0:
             mode _ QAudio.AudioInput
         ____
             mode _ QAudio.AudioOutput
 
-        deviceBox.clear()
+        deviceBox.c..
         ___ deviceInfo __ QAudioDeviceInfo.availableDevices(mode):
             deviceBox.aI..(deviceInfo.deviceName(), deviceInfo)
 
@@ -142,26 +142,26 @@ c_ AudioTest(AudioDevicesBase):
         deviceChanged(0)
 
     ___ deviceChanged  idx):
-        testResult.clear()
+        testResult.c..
 
-        __ deviceBox.count() == 0:
+        __ deviceBox.count() __ 0:
             r_
 
         deviceInfo _ deviceBox.itemData(idx)
 
-        sampleRateBox.clear()
+        sampleRateBox.c..
         sampleRatez _ deviceInfo.supportedSampleRates()
         sampleRateBox.aI..([str(sr) ___ sr __ sampleRatez])
         __ le.(sampleRatez) !_ 0:
             settings.setSampleRate(sampleRatez[0])
 
-        channelsBox.clear()
+        channelsBox.c..
         chz _ deviceInfo.supportedChannelCounts()
         channelsBox.aI..([str(ch) ___ ch __ chz])
         __ le.(chz) !_ 0:
             settings.setChannelCount(chz[0])
 
-        codecsBox.clear()
+        codecsBox.c..
         codecs _ deviceInfo.supportedCodecs()
         codecsBox.aI..([str(c) ___ c __ codecs])
         __ le.(codecs) !_ 0:
@@ -170,20 +170,20 @@ c_ AudioTest(AudioDevicesBase):
         # Create a failed condition.
         codecsBox.aI..("audio/test")
 
-        sampleSizesBox.clear()
+        sampleSizesBox.c..
         sampleSizez _ deviceInfo.supportedSampleSizes()
         sampleSizesBox.aI..([str(ss) ___ ss __ sampleSizez])
         __ le.(sampleSizez) !_ 0:
             settings.setSampleSize(sampleSizez[0])
 
-        sampleTypesBox.clear()
+        sampleTypesBox.c..
         sampleTypez _ deviceInfo.supportedSampleTypes()
         sampleTypesBox.aI..(
                 [sampleTypeToString(st) ___ st __ sampleTypez])
         __ le.(sampleTypez) !_ 0:
             settings.setSampleType(sampleTypez[0])
 
-        endianBox.clear()
+        endianBox.c..
         endianz _ deviceInfo.supportedByteOrders()
         endianBox.aI..([endianToString(e) ___ e __ endianz])
         __ le.(endianz) !_ 0:
@@ -250,19 +250,19 @@ c_ AudioTest(AudioDevicesBase):
     ___ sampleTypeChanged  idx):
         sampleType _ int(sampleTypesBox.itemText(idx))
 
-        __ sampleType == QAudioFormat.SignedInt:
+        __ sampleType __ QAudioFormat.SignedInt:
             settings.setSampleType(QAudioFormat.SignedInt)
-        ____ sampleType == QAudioFormat.UnSignedInt:
+        ____ sampleType __ QAudioFormat.UnSignedInt:
             settings.setSampleType(QAudioFormat.UnSignedInt)
-        ____ sampleType == QAudioFormat.Float:
+        ____ sampleType __ QAudioFormat.Float:
             settings.setSampleType(QAudioFormat.Float)
 
     ___ endianChanged  idx):
         endian _ int(endianBox.itemText(idx))
 
-        __ endian == QAudioFormat.LittleEndian:
+        __ endian __ QAudioFormat.LittleEndian:
             settings.setByteOrder(QAudioFormat.LittleEndian)
-        ____ endian == QAudioFormat.BigEndian:
+        ____ endian __ QAudioFormat.BigEndian:
             settings.setByteOrder(QAudioFormat.BigEndian)
 
 

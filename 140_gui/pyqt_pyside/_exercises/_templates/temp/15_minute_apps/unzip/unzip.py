@@ -89,7 +89,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         head.raise_()
 
         def patch_mousePressEvent(self_, e):
-            if e.button() == Qt.LeftButton and worker is not None:
+            if e.button() __ Qt.LeftButton and worker is not None:
                 # Extract the archive.
                 self_.current_rotation = random.randint(-15, +15)
                 self_.current_y = 30
@@ -101,7 +101,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 threadpool.start(worker)
                 worker = None  # Remove the worker so it is not double-triggered.
 
-            elif e.button() == Qt.RightButton:
+            elif e.button() __ Qt.RightButton:
                 pass # Open a new zip.
 
         def patch_paintEvent(self, event):
@@ -157,7 +157,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         head.update()
 
-        if head.current_y == 0 and head.current_rotation == 0:
+        if head.current_y __ 0 and head.current_rotation __ 0:
             head.locked = False
 
     def dragEnterEvent(self, e):
@@ -165,7 +165,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         if data.hasUrls():
             # We are passed urls as a list, but only accept one.
             url = data.urls()[0].toLocalFile()
-            if os.path.splitext(url)[1].lower() == '.zip':
+            if os.path.splitext(url)[1].lower() __ '.zip':
                 e.accept()
 
     def dropEvent(self, e):
@@ -197,7 +197,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         current_n = int(pc * 10)
         ___ n __ range(1, 11):
             getattr(self, 'progress_%d' % n).setStyleSheet(
-                PROGRESS_ON if n > current_n else PROGRESS_OFF
+                PROGRESS_ON if n > current_n ____ PROGRESS_OFF
             )
 
     def unzip_finished
@@ -214,7 +214,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         dlg.show()
 
 
-if __name__ == '__main__':
+if __name__ __ '__main__':
 
     app = QApplication([])
     window = MainWindow()

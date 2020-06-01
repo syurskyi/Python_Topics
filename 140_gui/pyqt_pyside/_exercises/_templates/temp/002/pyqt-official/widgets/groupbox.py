@@ -68,7 +68,7 @@ c_ Window(?W..):
         radio2 _ QRadioButton("R&adio button 2")
         radio3 _ QRadioButton("Ra&dio button 3")
 
-        radio1.setChecked( st.
+        radio1.sC__( st.
 
         vbox _ ?VBL..
         vbox.aW..(radio1)
@@ -82,14 +82,14 @@ c_ Window(?W..):
     ___ createSecondExclusiveGroup 
         groupBox _ QGroupBox("E&xclusive Radio Buttons")
         groupBox.setCheckable( st.
-        groupBox.setChecked F..
+        groupBox.sC__ F..
 
         radio1 _ QRadioButton("Rad&io button 1")
         radio2 _ QRadioButton("Radi&o button 2")
         radio3 _ QRadioButton("Radio &button 3")
-        radio1.setChecked( st.
+        radio1.sC__( st.
         checkBox _ QCheckBox("Ind&ependent checkbox")
-        checkBox.setChecked( st.
+        checkBox.sC__( st.
 
         vbox _ ?VBL..
         vbox.aW..(radio1)
@@ -107,7 +107,7 @@ c_ Window(?W..):
 
         checkBox1 _ QCheckBox("&Checkbox 1")
         checkBox2 _ QCheckBox("C&heckbox 2")
-        checkBox2.setChecked( st.
+        checkBox2.sC__( st.
         tristateBox _ QCheckBox("Tri-&state button")
         tristateBox.setTristate( st.
         tristateBox.setCheckState(__.PartiallyChecked)
@@ -124,12 +124,12 @@ c_ Window(?W..):
     ___ createPushButtonGroup 
         groupBox _ QGroupBox("&Push Buttons")
         groupBox.setCheckable( st.
-        groupBox.setChecked( st.
+        groupBox.sC__( st.
 
         pushButton _ ?PB..("&Normal Button")
         toggleButton _ ?PB..("&Toggle Button")
         toggleButton.setCheckable( st.
-        toggleButton.setChecked( st.
+        toggleButton.sC__( st.
         flatButton _ ?PB..("&Flat Button")
         flatButton.setFlat( st.
 

@@ -397,30 +397,30 @@ c_ LightMaps(?W..):
  
     ___ keyPressEvent  event):
         __ no. zoomed:
-            __ event.key() == __.Key_Left:
+            __ event.key() __ __.Key_Left:
                 _normalMap.pan(QPoint(20, 0))
-            __ event.key() == __.Key_Right:
+            __ event.key() __ __.Key_Right:
                 _normalMap.pan(QPoint(-20, 0))
-            __ event.key() == __.Key_Up:
+            __ event.key() __ __.Key_Up:
                 _normalMap.pan(QPoint(0, 20))
-            __ event.key() == __.Key_Down:
+            __ event.key() __ __.Key_Down:
                 _normalMap.pan(QPoint(0, -20))
-            __ event.key() == __.Key_Z or event.key() == __.Key_Select:
+            __ event.key() __ __.Key_Z or event.key() __ __.Key_Select:
                 dragPos _ QPoint(width() / 2, height() / 2)
                 activateZoom()
         ____
-            __ event.key() == __.Key_Z or event.key() == __.Key_Select:
+            __ event.key() __ __.Key_Z or event.key() __ __.Key_Select:
                 zoomed _ False
                 update()
 
             delta _ QPoint(0, 0)
-            __ event.key() == __.Key_Left:
+            __ event.key() __ __.Key_Left:
                 delta _ QPoint(-15, 0)
-            __ event.key() == __.Key_Right:
+            __ event.key() __ __.Key_Right:
                 delta _ QPoint(15, 0)
-            __ event.key() == __.Key_Up:
+            __ event.key() __ __.Key_Up:
                 delta _ QPoint(0, -15)
-            __ event.key() == __.Key_Down:
+            __ event.key() __ __.Key_Down:
                 delta _ QPoint(0, 15)
             __ delta !_ QPoint(0, 0):
                 dragPos +_ delta
@@ -439,7 +439,7 @@ c_ MapZoom ?MW..
         jakartaAction _ ?A..("&Jakarta", self)
         nightModeAction _ ?A..("Night Mode", self)
         nightModeAction.setCheckable( st.
-        nightModeAction.setChecked F..
+        nightModeAction.sC__ F..
         osmAction _ ?A..("About OpenStreetMap", self)
         osloAction.t__.c..(chooseOslo)
         berlinAction.t__.c..(chooseBerlin)

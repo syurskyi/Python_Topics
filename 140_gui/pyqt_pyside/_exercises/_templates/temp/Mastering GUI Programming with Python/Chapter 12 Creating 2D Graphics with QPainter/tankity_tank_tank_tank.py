@@ -34,7 +34,7 @@ c_ Bullet(qtw.QGraphicsObject):
         # Animate the object
         animation _ qtc.QPropertyAnimation  b'y')
         animation.setStartValue(y_pos)
-        end _ 0 __ up else SCREEN_HEIGHT
+        end _ 0 __ up ____ SCREEN_HEIGHT
         animation.setEndValue(end)
         animation.setDuration(1000)
         yChanged.c..(check_collision)
@@ -57,7 +57,7 @@ c_ Bullet(qtw.QGraphicsObject):
         __ colliding_items:
             scene().removeItem
             ___ item __ colliding_items:
-                __ type(item).__name__ == 'Tank':
+                __ type(item).__name__ __ 'Tank':
                     hit.e..()
 
 
@@ -74,13 +74,13 @@ c_ Tank(qtw.QGraphicsObject):
         bitmap _ qtg.QBitmap.fromData(qtc.?S..(8, 8), TANK_BM)
         transform _ qtg.QTransform()
         transform.scale(4, 4)  # scale to 32x32
-        __ side == TOP:  # We're pointing down
+        __ side __ TOP:  # We're pointing down
             transform.rotate(180)
         bitmap _ bitmap.transformed(transform)
         pen _ qtg.QPen(qtg.?C..(color))
 
         # Define the tank's position
-        __ side == BOTTOM:
+        __ side __ BOTTOM:
             y_pos -_ bitmap.height()
         setPos(0, y_pos)
 
@@ -90,17 +90,17 @@ c_ Tank(qtw.QGraphicsObject):
         animation.setEndValue(SCREEN_WIDTH - bitmap.width())
         animation.setDuration(2000)
         animation.finished.c..(toggle_direction)
-        __ side == TOP:
+        __ side __ TOP:
             toggle_direction()
         animation.start()
 
         # create a bullet
         bullet_y _ (
             y_pos - bitmap.height()
-            __ side == BOTTOM
-            else y_pos + bitmap.height()
+            __ side __ BOTTOM
+            ____ y_pos + bitmap.height()
         )
-        bullet _ Bullet(bullet_y, side == BOTTOM)
+        bullet _ Bullet(bullet_y, side __ BOTTOM)
 
     ___ boundingRect
         # Must be defined for collision detection
@@ -111,7 +111,7 @@ c_ Tank(qtw.QGraphicsObject):
         painter.drawPixmap(0, 0, bitmap)
 
     ___ toggle_direction
-        __ animation.direction() == qtc.QPropertyAnimation.Forward:
+        __ animation.direction() __ qtc.QPropertyAnimation.Forward:
             left()
         ____
             right()

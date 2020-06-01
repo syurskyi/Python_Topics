@@ -66,7 +66,7 @@ c_ Animation(QPropertyAnimation):
         m_path _ QPainterPath()
 
     ___ updateCurrentTime  currentTime):
-        __ m_pathType == Animation.CirclePath:
+        __ m_pathType __ Animation.CirclePath:
             __ m_path.isEmpty
                 end _ endValue()
                 start _ startValue()
@@ -74,7 +74,7 @@ c_ Animation(QPropertyAnimation):
                 m_path.addEllipse(QRectF(start, end))
 
             dura _ duration()
-            __ dura == 0:
+            __ dura __ 0:
                 progress _ 1.0
             ____
                 progress _ (((currentTime - 1) % dura) + 1) / float(dura)
@@ -158,7 +158,7 @@ c_ Window(?W..):
         # cheating).
         curve_types _ [(n, c) ___ n, c __ QEasingCurve.__dict__.items()
                 __ isinstance(c, QEasingCurve.Type) and c !_ QEasingCurve.Custom]
-        curve_types.sort(key_lambda ct: ct[1])
+        curve_types.s..(key_lambda ct: ct[1])
 
         painter.begin(pix)
 
@@ -167,10 +167,10 @@ c_ Window(?W..):
 
             curve _ QEasingCurve(curve_type)
 
-            __ curve_type == QEasingCurve.BezierSpline:
+            __ curve_type __ QEasingCurve.BezierSpline:
                 curve.addCubicBezierSegment(QPointF(0.4, 0.1),
                         QPointF(0.6, 0.9), QPointF(1.0, 1.0))
-            ____ curve_type == QEasingCurve.TCBSpline:
+            ____ curve_type __ QEasingCurve.TCBSpline:
                 curve.addTCBSegment(QPointF(0.0, 0.0), 0, 0, 0)
                 curve.addTCBSegment(QPointF(0.3, 0.4), 0.2, 1, -0.2)
                 curve.addTCBSegment(QPointF(0.7, 0.6), -0.2, 1, 0.2)

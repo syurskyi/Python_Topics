@@ -108,7 +108,7 @@ c_ CharacterWidget(?W..):
         QToolTip.showText(event.globalPos(), t__, self)
 
     ___ mousePressEvent  event):
-        __ event.button() == __.LeftButton:
+        __ event.button() __ __.LeftButton:
             lastKey _ (event.y() // squareSize) * columns + event.x() // squareSize
             key_ch _ _chr(lastKey)
 
@@ -145,7 +145,7 @@ c_ CharacterWidget(?W..):
                         row * squareSize, squareSize,
                         squareSize)
 
-                __ key == lastKey:
+                __ key __ lastKey:
                     painter.fillRect(column * squareSize + 1,
                             row * squareSize + 1, squareSize,
                             squareSize, __.red)
@@ -179,7 +179,7 @@ c_ MainWindow ?MW..
         styleCombo _ ?CB()
         fontMergingLabel _ QLabel("Automatic Font Merging:")
         fontMerging _ QCheckBox()
-        fontMerging.setChecked( st.
+        fontMerging.sC__( st.
 
         scrollArea _ QScrollArea()
         characterWidget _ CharacterWidget()
@@ -229,13 +229,13 @@ c_ MainWindow ?MW..
     ___ findStyles  font):
         fontDatabase _ QFontDatabase()
         currentItem _ styleCombo.currentText()
-        styleCombo.clear()
+        styleCombo.c..
 
         ___ style __ fontDatabase.styles(font.family()):
             styleCombo.aI..(style)
 
         styleIndex _ styleCombo.findText(currentItem)
-        __ styleIndex == -1:
+        __ styleIndex __ -1:
             styleCombo.setCurrentIndex(0)
         ____
             styleCombo.setCurrentIndex(styleIndex)
@@ -244,7 +244,7 @@ c_ MainWindow ?MW..
         fontDatabase _ QFontDatabase()
         currentSize _ sizeCombo.currentText()
         sizeCombo.blockSignals( st.
-        sizeCombo.clear()
+        sizeCombo.c..
 
         __ fontDatabase.isSmoothlyScalable(font.family(), fontDatabase.styleString(font)):
             ___ size __ QFontDatabase.standardSizes
@@ -258,7 +258,7 @@ c_ MainWindow ?MW..
         sizeCombo.blockSignals F..
 
         sizeIndex _ sizeCombo.findText(currentSize)
-        __ sizeIndex == -1:
+        __ sizeIndex __ -1:
             sizeCombo.setCurrentIndex(max(0, sizeCombo.count() / 3))
         ____
             sizeCombo.setCurrentIndex(sizeIndex)

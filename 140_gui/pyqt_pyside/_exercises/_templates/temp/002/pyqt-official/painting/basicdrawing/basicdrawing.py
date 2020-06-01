@@ -130,32 +130,32 @@ c_ RenderArea(?W..):
                     painter.scale(0.6, 0.9)
                     painter.translate(-50, -50)
 
-                __ shape == RenderArea.Line:
+                __ shape __ RenderArea.Line:
                     painter.drawLine(rect.bottomLeft(), rect.topRight())
-                ____ shape == RenderArea.Points:
+                ____ shape __ RenderArea.Points:
                     painter.drawPoints(RenderArea.points)
-                ____ shape == RenderArea.Polyline:
+                ____ shape __ RenderArea.Polyline:
                     painter.drawPolyline(RenderArea.points)
-                ____ shape == RenderArea.Polygon:
+                ____ shape __ RenderArea.Polygon:
                     painter.drawPolygon(RenderArea.points)
-                ____ shape == RenderArea.Rect:
+                ____ shape __ RenderArea.Rect:
                     painter.drawRect(rect)
-                ____ shape == RenderArea.RoundedRect:
+                ____ shape __ RenderArea.RoundedRect:
                     painter.drawRoundedRect(rect, 25, 25, __.RelativeSize)
-                ____ shape == RenderArea.Ellipse:
+                ____ shape __ RenderArea.Ellipse:
                     painter.drawEllipse(rect)
-                ____ shape == RenderArea.Arc:
+                ____ shape __ RenderArea.Arc:
                     painter.drawArc(rect, startAngle, arcLength)
-                ____ shape == RenderArea.Chord:
+                ____ shape __ RenderArea.Chord:
                     painter.drawChord(rect, startAngle, arcLength)
-                ____ shape == RenderArea.Pie:
+                ____ shape __ RenderArea.Pie:
                     painter.drawPie(rect, startAngle, arcLength)
-                ____ shape == RenderArea.Path:
+                ____ shape __ RenderArea.Path:
                     painter.drawPath(path)
-                ____ shape == RenderArea.Text:
+                ____ shape __ RenderArea.Text:
                     painter.drawText(rect, __.AlignCenter,
                             "PyQt by\nRiverbank Computing")
-                ____ shape == RenderArea.Pixmap:
+                ____ shape __ RenderArea.Pixmap:
                     painter.drawPixmap(10, 10, pixmap)
 
                 painter.restore()
@@ -262,8 +262,8 @@ c_ Window(?W..):
         penCapComboBox.activated.c..(penChanged)
         penJoinComboBox.activated.c..(penChanged)
         brushStyleComboBox.activated.c..(brushChanged)
-        antialiasingCheckBox.toggled.c..(renderArea.setAntialiased)
-        transformationsCheckBox.toggled.c..(renderArea.setTransformed)
+        antialiasingCheckBox.t__.c..(renderArea.setAntialiased)
+        transformationsCheckBox.t__.c..(renderArea.setTransformed)
 
         mainLayout _ QGridLayout()
         mainLayout.setColumnStretch(0, 1)
@@ -291,7 +291,7 @@ c_ Window(?W..):
         shapeChanged()
         penChanged()
         brushChanged()
-        antialiasingCheckBox.setChecked( st.
+        antialiasingCheckBox.sC__( st.
 
         sWT..("Basic Drawing")
 
@@ -315,25 +315,25 @@ c_ Window(?W..):
         style _ __.BrushStyle(brushStyleComboBox.itemData(
                 brushStyleComboBox.currentIndex(), IdRole))
 
-        __ style == __.LinearGradientPattern:
+        __ style __ __.LinearGradientPattern:
             linearGradient _ QLinearGradient(0, 0, 100, 100)
             linearGradient.setColorAt(0.0, __.white)
             linearGradient.setColorAt(0.2, __.green)
             linearGradient.setColorAt(1.0, __.black)
             renderArea.setBrush(QBrush(linearGradient))
-        ____ style == __.RadialGradientPattern:
+        ____ style __ __.RadialGradientPattern:
             radialGradient _ QRadialGradient(50, 50, 50, 70, 70)
             radialGradient.setColorAt(0.0, __.white)
             radialGradient.setColorAt(0.2, __.green)
             radialGradient.setColorAt(1.0, __.black)
             renderArea.setBrush(QBrush(radialGradient))
-        ____ style == __.ConicalGradientPattern:
+        ____ style __ __.ConicalGradientPattern:
             conicalGradient _ QConicalGradient(50, 50, 150)
             conicalGradient.setColorAt(0.0, __.white)
             conicalGradient.setColorAt(0.2, __.green)
             conicalGradient.setColorAt(1.0, __.black)
             renderArea.setBrush(QBrush(conicalGradient))
-        ____ style == __.TexturePattern:
+        ____ style __ __.TexturePattern:
             renderArea.setBrush(QBrush(QPixmap(':/images/brick.png')))
         ____
             renderArea.setBrush(QBrush(__.green, style))

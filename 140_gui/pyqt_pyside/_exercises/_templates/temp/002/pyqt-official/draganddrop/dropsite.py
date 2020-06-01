@@ -62,7 +62,7 @@ c_ DropArea(QLabel):
         setAlignment(__.AlignCenter)
         setAcceptDrops( st.
         setAutoFillBackground( st.
-        clear()
+        c..
 
     ___ dragEnterEvent  event):
         sT..("<drop content>")
@@ -92,7 +92,7 @@ c_ DropArea(QLabel):
         event.acceptProposedAction()
 
     ___ dragLeaveEvent  event):
-        clear()
+        c..
         event.accept()
 
     ___ clear
@@ -152,11 +152,11 @@ c_ DropSiteWindow(?W..):
             formatItem.setFlags(__.ItemIsEnabled)
             formatItem.setTextAlignment(__.AlignTop | __.AlignLeft)
 
-            __ format == 'text/plain':
+            __ format __ 'text/plain':
                 t__ _ mimeData.t__().strip()
-            ____ format == 'text/html':
+            ____ format __ 'text/html':
                 t__ _ mimeData.html().strip()
-            ____ format == 'text/uri-list':
+            ____ format __ 'text/uri-list':
                 t__ _ " ".join([url.toString() ___ url __ mimeData.urls()])
             ____
                 t__ _ " ".join(["%02X" % ord(datum) ___ datum __ mimeData.data(format)])

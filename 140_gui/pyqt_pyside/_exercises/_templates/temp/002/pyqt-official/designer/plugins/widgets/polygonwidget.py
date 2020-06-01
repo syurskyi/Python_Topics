@@ -182,7 +182,7 @@ c_ PolygonWidget(?W..):
     outerColor _ pyqtProperty(?C.., getOuterColor, setOuterColor)
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
     ______ ___
 

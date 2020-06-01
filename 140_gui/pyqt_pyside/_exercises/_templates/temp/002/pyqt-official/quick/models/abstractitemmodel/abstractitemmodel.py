@@ -87,10 +87,10 @@ c_ AnimalModel(QAbstractListModel):
         _____ IE..
             r_ ?V..
 
-        __ role == TypeRole:
+        __ role __ TypeRole:
             r_ animal.type()
 
-        __ role == SizeRole:
+        __ role __ SizeRole:
             r_ animal.size()
 
         r_ ?V..

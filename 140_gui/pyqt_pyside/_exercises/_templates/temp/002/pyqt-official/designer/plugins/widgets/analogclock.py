@@ -179,7 +179,7 @@ c_ PyAnalogClock(?W..):
     timeZone _ pyqtProperty(int, getTimeZone, setTimeZone, resetTimeZone)
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
     ______ ___
 

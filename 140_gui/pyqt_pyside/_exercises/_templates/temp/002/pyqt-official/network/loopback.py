@@ -104,7 +104,7 @@ c_ Dialog(QDialog):
             ret _ ?MB...critical  "Loopback",
                     "Unable to start the test: %s." % tcpServer.errorString(),
                     ?MB...Retry | ?MB...Cancel)
-            __ ret == ?MB...Cancel:
+            __ ret __ ?MB...Cancel:
                 r_
 
         serverStatusLabel.sT..("Listening")
@@ -132,7 +132,7 @@ c_ Dialog(QDialog):
         serverProgressBar.setValue(bytesReceived)
         serverStatusLabel.sT..("Received %dMB" % (bytesReceived / (1024 * 1024)))
 
-        __ bytesReceived == Dialog.TotalBytes:
+        __ bytesReceived __ Dialog.TotalBytes:
             tcpServerConnection.c..
             startButton.sE..( st.
             ?A...restoreOverrideCursor()
@@ -148,7 +148,7 @@ c_ Dialog(QDialog):
         clientStatusLabel.sT..("Sent %dMB" % (bytesWritten / (1024 * 1024)))
 
     ___ displayError  socketError):
-        __ socketError == QTcpSocket.RemoteHostClosedError:
+        __ socketError __ QTcpSocket.RemoteHostClosedError:
             r_
 
         ?MB...information  "Network error",

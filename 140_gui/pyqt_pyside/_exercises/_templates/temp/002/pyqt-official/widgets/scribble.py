@@ -95,7 +95,7 @@ c_ ScribbleArea(?W..):
         update()
 
     ___ mousePressEvent  event):
-        __ event.button() == __.LeftButton:
+        __ event.button() __ __.LeftButton:
             lastPoint _ event.pos()
             scribbling _ True
 
@@ -104,7 +104,7 @@ c_ ScribbleArea(?W..):
             drawLineTo(event.pos())
 
     ___ mouseReleaseEvent  event):
-        __ event.button() == __.LeftButton and scribbling:
+        __ event.button() __ __.LeftButton and scribbling:
             drawLineTo(event.pos())
             scribbling _ False
 
@@ -134,7 +134,7 @@ c_ ScribbleArea(?W..):
         lastPoint _ QPoint(endPoint)
 
     ___ resizeImage  image, newSize):
-        __ image.size() == newSize:
+        __ image.size() __ newSize:
             r_
 
         newImage _ QImage(newSize, QImage.Format_RGB32)
@@ -147,7 +147,7 @@ c_ ScribbleArea(?W..):
         printer _ QPrinter(QPrinter.HighResolution)
 
         printDialog _ QPrintDialog(printer, self)
-        __ printDialog.e.. == QPrintDialog.Accepted:
+        __ printDialog.e.. __ QPrintDialog.Accepted:
             painter _ QPainter(printer)
             rect _ painter.viewport()
             size _ image.size()
@@ -293,9 +293,9 @@ c_ MainWindow ?MW..
                         "Do you want to save your changes?",
                         ?MB...Save | ?MB...Discard |
                         ?MB...Cancel)
-            __ ret == ?MB...Save:
+            __ ret __ ?MB...Save:
                 r_ saveFile('png')
-            ____ ret == ?MB...Cancel:
+            ____ ret __ ?MB...Cancel:
                 r_ False
 
         r_ True

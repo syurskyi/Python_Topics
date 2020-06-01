@@ -53,7 +53,7 @@ c_ PyMultiPageWidget(?W..):
         page.setParent(stackWidget)
         stackWidget.insertWidget(index, page)
         title _ page.windowTitle()
-        __ title == "":
+        __ title __ "":
             title _ "Page %d" % (comboBox.count() + 1)
             page.sWT..(title)
         comboBox.iI..(index, title)
@@ -66,7 +66,7 @@ c_ PyMultiPageWidget(?W..):
 
     ___ getPageTitle
         cw _ stackWidget.currentWidget()
-        r_ cw.windowTitle() __ cw __ no. N.. else ''
+        r_ cw.windowTitle() __ cw __ no. N.. ____ ''
     
     @pyqtSlot st.
     ___ setPageTitle  newTitle):
@@ -93,7 +93,7 @@ c_ PyMultiPageWidget(?W..):
 #============================================================================#
 # Main for testing the class                                                 #
 #----------------------------------------------------------------------------#
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     ______ ___
     app _ ?A..(___.a..
     widget _ PyMultiPageWidget()

@@ -75,7 +75,7 @@ designer.setProcessEnvironment(env)
 
 designer_bin _ QLibraryInfo.location(QLibraryInfo.BinariesPath)
 
-__ ___.platform == 'darwin':
+__ ___.platform __ 'darwin':
     designer_bin +_ '/Designer.app/Contents/MacOS/Designer'
 ____
     designer_bin +_ '/designer'

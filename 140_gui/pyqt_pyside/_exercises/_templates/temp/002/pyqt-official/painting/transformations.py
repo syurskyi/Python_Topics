@@ -120,13 +120,13 @@ c_ RenderArea(?W..):
 
     ___ transformPainter  painter):
         ___ operation __ operations:
-            __ operation == Translate:
+            __ operation __ Translate:
                 painter.translate(50, 50)
 
-            ____ operation == Scale:
+            ____ operation __ Scale:
                 painter.scale(0.75, 0.75)
 
-            ____ operation == Rotate:
+            ____ operation __ Rotate:
                 painter.rotate(60)
 
 

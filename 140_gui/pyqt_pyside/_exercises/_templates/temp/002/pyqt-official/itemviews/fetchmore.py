@@ -68,12 +68,12 @@ c_ FileListModel(QAbstractListModel):
         __ index.row() >_ le.(fileList) or index.row() < 0:
             r_ N..
 
-        __ role == __.DisplayRole:
+        __ role __ __.DisplayRole:
             r_ fileList[index.row()]
 
-        __ role == __.BackgroundRole:
+        __ role __ __.BackgroundRole:
             batch _ (index.row() // 100) % 2
-            __ batch == 0:
+            __ batch __ 0:
                 r_ ?A...palette().base()
 
             r_ ?A...palette().alternateBase()

@@ -13,7 +13,7 @@ ___ hhmmss(ms):
     h, r _ divmod(ms, 36000)
     m, r _ divmod(r, 60000)
     s, _ _ divmod(r, 1000)
-    r_ ("%d:%02d:%02d" % (h,m,s)) __ h else ("%d:%02d" % (m,s))
+    r_ ("%d:%02d:%02d" % (h,m,s)) __ h ____ ("%d:%02d" % (m,s))
 
 c_ ViewerWindow ?MW..
     state _ pS..(bool)
@@ -29,7 +29,7 @@ c_ PlaylistModel(QAbstractListModel):
         playlist _ playlist
 
     ___ data  index, role):
-        __ role == __.DisplayRole:
+        __ role __ __.DisplayRole:
             media _ playlist.media(index.row())
             r_ media.canonicalUrl().fileName()
 
@@ -66,8 +66,8 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
         stopButton.pressed.c..(player.stop)
         volumeSlider.valueChanged.c..(player.setVolume)
 
-        viewButton.toggled.c..(toggle_viewer)
-        viewer.state.c..(viewButton.setChecked)
+        viewButton.t__.c..(toggle_viewer)
+        viewer.state.c..(viewButton.sC__)
 
         previousButton.pressed.c..(playlist.previous)
         nextButton.pressed.c..(playlist.next)
@@ -76,7 +76,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
         playlistView.sM..(model)
         playlist.currentIndexChanged.c..(playlist_position_changed)
         selection_model _ playlistView.selectionModel()
-        selection_model.selectionChanged.c..(playlist_selection_changed)
+        selection_model.sC__.c..(playlist_selection_changed)
 
         player.durationChanged.c..(update_duration)
         player.positionChanged.c..(update_position)

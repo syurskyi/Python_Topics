@@ -349,7 +349,7 @@ c_ PyDateTimeEdit(?DTE..):
                                                freset_resetNavigationBarVisible)
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
     ______ ___
 

@@ -151,8 +151,8 @@ c_ SpreadSheet ?MW..
                     triggered_self.changeDateFormat)
             dateFormatGroup.aA..(action)
             dateFormatMenu.aA..(action)
-            __ f == currentDateFormat:
-                action.setChecked( st.
+            __ f __ currentDateFormat:
+                action.sC__( st.
                 
         fileMenu.aA..(printAction)
         fileMenu.aA..(exitAction)
@@ -179,7 +179,7 @@ c_ SpreadSheet ?MW..
             item.sT..(date.toString(newFormat))
 
     ___ updateStatus  item):
-        __ item and item == table.currentItem
+        __ item and item __ table.currentItem
             statusBar().showMessage(item.data(__.StatusTipRole), 1000)
             cellLabel.sT..("Cell: (%s)" % encode_pos(table.row(item),
                                                                      table.column(item)))
@@ -209,11 +209,11 @@ c_ SpreadSheet ?MW..
         __ item:
             formulaInput.sT..(item.data(__.EditRole))
         ____
-            formulaInput.clear()
+            formulaInput.c..
 
     ___ rP__ 
         t__ _ formulaInput.t__()
-        row _ table.currentRow()
+        row _ table.cR..
         col _ table.currentColumn()
         item _ table.item(row, col)
         __ no. item:
@@ -373,7 +373,7 @@ c_ SpreadSheet ?MW..
         out _ "C3"
         current _ table.currentItem()
         __ current:
-            out _ encode_pos(table.currentRow(), table.currentColumn())
+            out _ encode_pos(table.cR.., table.currentColumn())
         ok, cell1, cell2, out _ runInputDialog(title, "Cell 1", "Cell 2",
                 op, "Output to:", cell1, cell2, out)
         __ ok:

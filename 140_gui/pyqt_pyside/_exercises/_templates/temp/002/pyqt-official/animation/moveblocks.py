@@ -74,8 +74,8 @@ c_ StateSwitchTransition(QAbstractTransition):
         m_rand _ rand
 
     ___ eventTest  event):
-        r_ (event.type() == StateSwitchEvent.StateSwitchType and
-                event.rand() == m_rand)
+        r_ (event.type() __ StateSwitchEvent.StateSwitchType and
+                event.rand() __ m_rand)
 
     ___ onTransition  event):
         pass
@@ -90,7 +90,7 @@ c_ StateSwitcher(QState):
 
     ___ onEntry  event):
         n _ qrand() % m_stateCount + 1
-        w__ n == m_lastIndex:
+        w__ n __ m_lastIndex:
             n _ qrand() % m_stateCount + 1
 
         m_lastIndex _ n

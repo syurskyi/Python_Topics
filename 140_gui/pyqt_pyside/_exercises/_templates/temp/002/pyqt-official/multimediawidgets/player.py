@@ -68,10 +68,10 @@ c_ VideoWidget(QVideoWidget):
         setAttribute(__.WA_OpaquePaintEvent)
 
     ___ keyPressEvent  event):
-        __ event.key() == __.Key_Escape and isFullScreen
+        __ event.key() __ __.Key_Escape and isFullScreen
             setFullScreen F..
             event.accept()
-        ____ event.key() == __.Key_Enter and event.modifiers() & __.Key_Alt:
+        ____ event.key() __ __.Key_Enter and event.modifiers() & __.Key_Alt:
             setFullScreen(no. isFullScreen())
             event.accept()
         ____
@@ -92,20 +92,20 @@ c_ PlaylistModel(QAbstractItemModel):
         m_playlist _ N..
 
     ___ rowCount  parent_QModelIndex()):
-        r_ m_playlist.mediaCount() __ m_playlist __ no. N.. and no. parent.isValid() else 0
+        r_ m_playlist.mediaCount() __ m_playlist __ no. N.. and no. parent.isValid() ____ 0
 
     ___ columnCount  parent_QModelIndex()):
-        r_ ColumnCount __ no. parent.isValid() else 0
+        r_ ColumnCount __ no. parent.isValid() ____ 0
 
     ___ index  row, column, parent_QModelIndex()):
-        r_ createIndex(row, column) __ m_playlist __ no. N.. and no. parent.isValid() and row >_ 0 and row < m_playlist.mediaCount() and column >_ 0 and column < ColumnCount else QModelIndex()
+        r_ createIndex(row, column) __ m_playlist __ no. N.. and no. parent.isValid() and row >_ 0 and row < m_playlist.mediaCount() and column >_ 0 and column < ColumnCount ____ QModelIndex()
 
     ___ parent  child):
         r_ QModelIndex()
 
     ___ data  index, role_Qt.DisplayRole):
-        __ index.isValid() and role == __.DisplayRole:
-            __ index.column() == Title:
+        __ index.isValid() and role __ __.DisplayRole:
+            __ index.column() __ Title:
                 location _ m_playlist.media(index.row()).canonicalUrl()
                 r_ QFileInfo(location.path()).fileName()
 
@@ -221,15 +221,15 @@ c_ PlayerControls(?W..):
         __ state !_ playerState:
             playerState _ state
 
-            __ state == QMediaPlayer.StoppedState:
+            __ state __ QMediaPlayer.StoppedState:
                 stopButton.sE.. F..
                 playButton.setIcon(
                         style().standardIcon(QStyle.SP_MediaPlay))
-            ____ state == QMediaPlayer.PlayingState:
+            ____ state __ QMediaPlayer.PlayingState:
                 stopButton.sE..( st.
                 playButton.setIcon(
                         style().standardIcon(QStyle.SP_MediaPause))
-            ____ state == QMediaPlayer.PausedState:
+            ____ state __ QMediaPlayer.PausedState:
                 stopButton.sE..( st.
                 playButton.setIcon(
                         style().standardIcon(QStyle.SP_MediaPlay))
@@ -249,12 +249,12 @@ c_ PlayerControls(?W..):
 
             muteButton.setIcon(
                     style().standardIcon(
-                            QStyle.SP_MediaVolumeMuted __ muted else QStyle.SP_MediaVolume))
+                            QStyle.SP_MediaVolumeMuted __ muted ____ QStyle.SP_MediaVolume))
 
     ___ playClicked
         __ playerState __ (QMediaPlayer.StoppedState, QMediaPlayer.PausedState):
             play.e..()
-        ____ playerState == QMediaPlayer.PlayingState:
+        ____ playerState __ QMediaPlayer.PlayingState:
             pause.e..()
 
     ___ muteClicked
@@ -287,7 +287,7 @@ c_ FrameProcessor(QObject):
         __ levels and frame.map(QAbstractVideoBuffer.ReadOnly):
             pixelFormat _ frame.pixelFormat()
 
-            __ pixelFormat == QVideoFrame.Format_YUV420P or pixelFormat == QVideoFrame.Format_NV12:
+            __ pixelFormat __ QVideoFrame.Format_YUV420P or pixelFormat __ QVideoFrame.Format_NV12:
                 # Process YUV data.
                 bits _ frame.bits()
                 ___ idx __ range(frame.height() * frame.width()):
@@ -358,7 +358,7 @@ c_ HistogramWidget(?W..):
     ___ paintEvent  event):
         painter _ QPainter
 
-        __ le.(m_histogram) == 0:
+        __ le.(m_histogram) __ 0:
             painter.fillRect(0, 0, width(), height(),
                     ?C...fromRgb(0, 0, 0))
             r_
@@ -506,7 +506,7 @@ c_ Player(?W..):
             fileInfo _ QFileInfo(name)
             __ fileInfo.exists
                 url _ QUrl.fromLocalFile(fileInfo.absoluteFilePath())
-                __ fileInfo.suffix().lower() == 'm3u':
+                __ fileInfo.suffix().lower() __ 'm3u':
                     playlist.load(url)
                 ____
                     playlist.addMedia(QMediaContent(url))
@@ -558,13 +558,13 @@ c_ Player(?W..):
     ___ statusChanged  status):
         handleCursor(status)
 
-        __ status == QMediaPlayer.LoadingMedia:
+        __ status __ QMediaPlayer.LoadingMedia:
             setStatusInfo("Loading...")
-        ____ status == QMediaPlayer.StalledMedia:
+        ____ status __ QMediaPlayer.StalledMedia:
             setStatusInfo("Media Stalled")
-        ____ status == QMediaPlayer.EndOfMedia:
+        ____ status __ QMediaPlayer.EndOfMedia:
             ?A...alert
-        ____ status == QMediaPlayer.InvalidMedia:
+        ____ status __ QMediaPlayer.InvalidMedia:
             displayErrorMessage()
         ____
             setStatusInfo("")
@@ -583,7 +583,7 @@ c_ Player(?W..):
             fullScreenButton.c__.c..(
                     videoWidget.setFullScreen)
             videoWidget.fullScreenChanged.c..(
-                    fullScreenButton.setChecked)
+                    fullScreenButton.sC__)
 
             __ fullScreenButton.isChecked
                 videoWidget.setFullScreen( st.
@@ -591,7 +591,7 @@ c_ Player(?W..):
             fullScreenButton.c__.disconnect(
                     videoWidget.setFullScreen)
             videoWidget.fullScreenChanged.disconnect(
-                    fullScreenButton.setChecked)
+                    fullScreenButton.sC__)
 
             videoWidget.setFullScreen F..
 
@@ -624,7 +624,7 @@ c_ Player(?W..):
             totalTime _ ?T..((duration/3600)%60, (duration/60)%60,
                     duration%60, (duration*1000)%1000);
 
-            format _ 'hh:mm:ss' __ duration > 3600 else 'mm:ss'
+            format _ 'hh:mm:ss' __ duration > 3600 ____ 'mm:ss'
             tStr _ currentTime.toString(format) + " / " + totalTime.toString(format)
         ____
             tStr _ ""

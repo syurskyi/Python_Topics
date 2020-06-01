@@ -78,7 +78,7 @@ c_ MainWindow ?MW..
 
     ___ newFile 
         __ maybeSave
-            textEdit.clear()
+            textEdit.c..
             setCurrentFile('')
 
     ___ o.. 
@@ -213,10 +213,10 @@ c_ MainWindow ?MW..
                     "your changes?",
                     ?MB...Save | ?MB...Discard | ?MB...Cancel)
 
-            __ ret == ?MB...Save:
+            __ ret __ ?MB...Save:
                 r_ save()
 
-            __ ret == ?MB...Cancel:
+            __ ret __ ?MB...Cancel:
                 r_ False
 
         r_ True

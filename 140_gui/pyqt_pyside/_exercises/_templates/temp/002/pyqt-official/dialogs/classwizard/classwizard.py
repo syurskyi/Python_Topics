@@ -236,9 +236,9 @@ c_ ClassInfoPage(QWizardPage):
         defaultCtorRadioButton _ QRadioButton("&Default constructor")
         copyCtorCheckBox _ QCheckBox("&Generate copy constructor and operator=")
 
-        defaultCtorRadioButton.setChecked( st.
+        defaultCtorRadioButton.sC__( st.
 
-        defaultCtorRadioButton.toggled.c..(copyCtorCheckBox.sE..)
+        defaultCtorRadioButton.t__.c..(copyCtorCheckBox.sE..)
 
         registerField('className*', classNameLineEdit)
         registerField('baseClass', baseClassLineEdit)
@@ -274,11 +274,11 @@ c_ CodeStylePage(QWizardPage):
         setPixmap(QWizard.LogoPixmap, QPixmap(':/images/logo2.png'))
 
         commentCheckBox _ QCheckBox("&Start generated files with a comment")
-        commentCheckBox.setChecked( st.
+        commentCheckBox.sC__( st.
 
         protectCheckBox _ QCheckBox("&Protect header file against multiple "
                 "inclusions")
-        protectCheckBox.setChecked( st.
+        protectCheckBox.sC__( st.
 
         macroNameLabel _ QLabel("&Macro name:")
         macroNameLineEdit _ ?LE..
@@ -289,10 +289,10 @@ c_ CodeStylePage(QWizardPage):
         baseIncludeLineEdit _ ?LE..
         baseIncludeLabel.setBuddy(baseIncludeLineEdit)
 
-        protectCheckBox.toggled.c..(macroNameLabel.sE..)
-        protectCheckBox.toggled.c..(macroNameLineEdit.sE..)
-        includeBaseCheckBox.toggled.c..(baseIncludeLabel.sE..)
-        includeBaseCheckBox.toggled.c..(baseIncludeLineEdit.sE..)
+        protectCheckBox.t__.c..(macroNameLabel.sE..)
+        protectCheckBox.t__.c..(macroNameLineEdit.sE..)
+        includeBaseCheckBox.t__.c..(baseIncludeLabel.sE..)
+        includeBaseCheckBox.t__.c..(baseIncludeLineEdit.sE..)
 
         registerField('comment', commentCheckBox)
         registerField('protect', protectCheckBox)
@@ -318,13 +318,13 @@ c_ CodeStylePage(QWizardPage):
         baseClass _ field('baseClass')
         is_baseClass _ bool(baseClass)
 
-        includeBaseCheckBox.setChecked(is_baseClass)
+        includeBaseCheckBox.sC__(is_baseClass)
         includeBaseCheckBox.sE..(is_baseClass)
         baseIncludeLabel.sE..(is_baseClass)
         baseIncludeLineEdit.sE..(is_baseClass)
 
         __ no. is_baseClass:
-            baseIncludeLineEdit.clear()
+            baseIncludeLineEdit.c..
         ____ QRegExp('Q[A-Z].*').exactMatch(baseClass):
             baseIncludeLineEdit.sT..('<' + baseClass + '>')
         ____

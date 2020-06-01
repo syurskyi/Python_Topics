@@ -197,7 +197,7 @@ c_ InvoiceView(qtw.?TE..):
         # write data
         ___ row __ data['line_items']:
             ___ col, value __ en..(row):
-                t__ _ f'${value}' __ col __ (1, 3) else f'{value}'
+                t__ _ f'${value}' __ col __ (1, 3) ____ f'{value}'
                 cursor.insertText(t__, std_format)
                 cursor.movePosition(qtg.QTextCursor.NextCell)
 

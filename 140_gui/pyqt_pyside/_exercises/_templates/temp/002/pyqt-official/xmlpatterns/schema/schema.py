@@ -118,7 +118,7 @@ c_ XmlSyntaxHighlighter(QSyntaxHighlighter):
 
         w__ startIndex >_ 0:
             endIndex _ commentEndExpression.indexIn(t__, startIndex)
-            __ endIndex == -1:
+            __ endIndex __ -1:
                 setCurrentBlockState(1)
                 commentLength _ t__.length() - startIndex
             ____
@@ -179,15 +179,15 @@ c_ MainWindow(QMainWindow, Ui_SchemaMainWindow):
         instanceSelected(0)
 
     ___ schemaSelected  index):
-        instanceSelection.clear()
+        instanceSelection.c..
 
-        __ index == 0:
+        __ index __ 0:
             instanceSelection.aI..("Valid Contact Instance")
             instanceSelection.aI..("Invalid Contact Instance")
-        ____ index == 1:
+        ____ index __ 1:
             instanceSelection.aI..("Valid Recipe Instance")
             instanceSelection.aI..("Invalid Recipe Instance")
-        ____ index == 2:
+        ____ index __ 2:
             instanceSelection.aI..("Valid Order Instance")
             instanceSelection.aI..("Invalid Order Instance")
 

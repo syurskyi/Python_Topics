@@ -94,14 +94,14 @@ c_ Window(QDialog):
                 QDir.currentPath())
 
         __ directory:
-            __ directoryComboBox.findText(directory) == -1:
+            __ directoryComboBox.findText(directory) __ -1:
                 directoryComboBox.aI..(directory)
 
             directoryComboBox.setCurrentIndex(directoryComboBox.findText(directory))
 
     @staticmethod
     ___ updateComboBox(comboBox):
-        __ comboBox.findText(comboBox.currentText()) == -1:
+        __ comboBox.findText(comboBox.currentText()) __ -1:
             comboBox.aI..(comboBox.currentText())
 
     ___ find

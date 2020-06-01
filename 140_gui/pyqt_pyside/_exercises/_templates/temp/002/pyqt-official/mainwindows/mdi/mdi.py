@@ -137,10 +137,10 @@ c_ MdiChild(?TE..):
                     "changes?" % userFriendlyCurrentFile(),
                     ?MB...Save | ?MB...Discard | ?MB...Cancel)
 
-            __ ret == ?MB...Save:
+            __ ret __ ?MB...Save:
                 r_ save()
 
-            __ ret == ?MB...Cancel:
+            __ ret __ ?MB...Cancel:
                 r_ False
 
         r_ True
@@ -251,7 +251,7 @@ c_ MainWindow ?MW..
         copyAct.sE..(hasSelection)
 
     ___ updateWindowMenu
-        windowMenu.clear()
+        windowMenu.c..
         windowMenu.aA..(closeAct)
         windowMenu.aA..(closeAllAct)
         windowMenu.addSeparator()
@@ -274,7 +274,7 @@ c_ MainWindow ?MW..
 
             action _ windowMenu.aA..(t__)
             action.setCheckable( st.
-            action.setChecked(child __ activeMdiChild())
+            action.sC__(child __ activeMdiChild())
             action.t__.c..(windowMapper.map)
             windowMapper.setMapping(action, window)
 
@@ -421,12 +421,12 @@ c_ MainWindow ?MW..
         canonicalFilePath _ QFileInfo(fileName).canonicalFilePath()
 
         ___ window __ mdiArea.subWindowList
-            __ window.widget().currentFile() == canonicalFilePath:
+            __ window.widget().currentFile() __ canonicalFilePath:
                 r_ window
         r_ N..
 
     ___ switchLayoutDirection
-        __ layoutDirection() == __.LeftToRight:
+        __ layoutDirection() __ __.LeftToRight:
             ?A...setLayoutDirection(__.RightToLeft)
         ____
             ?A...setLayoutDirection(__.LeftToRight)

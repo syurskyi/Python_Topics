@@ -73,21 +73,21 @@ c_ MainWindow ?MW..
         backgroundAction _ viewMenu.aA..("&Background")
         backgroundAction.sE.. F..
         backgroundAction.setCheckable( st.
-        backgroundAction.setChecked F..
-        backgroundAction.toggled.c..(view.setViewBackground)
+        backgroundAction.sC__ F..
+        backgroundAction.t__.c..(view.setViewBackground)
 
         outlineAction _ viewMenu.aA..("&Outline")
         outlineAction.sE.. F..
         outlineAction.setCheckable( st.
-        outlineAction.setChecked( st.
-        outlineAction.toggled.c..(view.setViewOutline)
+        outlineAction.sC__( st.
+        outlineAction.t__.c..(view.setViewOutline)
 
         mB.. .aM..(viewMenu)
 
         rendererMenu _ QMenu("&Renderer", self)
         nativeAction _ rendererMenu.aA..("&Native")
         nativeAction.setCheckable( st.
-        nativeAction.setChecked( st.
+        nativeAction.sC__( st.
 
         __ QGLFormat.hasOpenGL
             glAction _ rendererMenu.aA..("&OpenGL")
@@ -101,8 +101,8 @@ c_ MainWindow ?MW..
             highQualityAntialiasingAction _ rendererMenu.aA..("&High Quality Antialiasing")
             highQualityAntialiasingAction.sE.. F..
             highQualityAntialiasingAction.setCheckable( st.
-            highQualityAntialiasingAction.setChecked F..
-            highQualityAntialiasingAction.toggled.c..(view.setHighQualityAntialiasing)
+            highQualityAntialiasingAction.sC__ F..
+            highQualityAntialiasingAction.t__.c..(view.setHighQualityAntialiasing)
 
         rendererGroup _ QActionGroup
         rendererGroup.aA..(nativeAction)
@@ -151,13 +151,13 @@ c_ MainWindow ?MW..
         __ QGLFormat.hasOpenGL
             highQualityAntialiasingAction.sE.. F..
 
-        __ action == nativeAction:
+        __ action __ nativeAction:
             view.setRenderer(SvgView.Native)
-        ____ action == glAction:
+        ____ action __ glAction:
             __ QGLFormat.hasOpenGL
                 highQualityAntialiasingAction.sE..( st.
                 view.setRenderer(SvgView.OpenGL)
-        ____ action == imageAction:
+        ____ action __ imageAction:
             view.setRenderer(SvgView.Image)
 
 
@@ -212,7 +212,7 @@ c_ SvgView(QGraphicsView):
         ____
             drawOutline _ True
 
-        s.clear()
+        s.c..
         resetTransform()
 
         svgItem _ QGraphicsSvgItem(svg_file.fileName())
@@ -243,7 +243,7 @@ c_ SvgView(QGraphicsView):
     ___ setRenderer  renderer):
         renderer _ renderer
 
-        __ renderer == SvgView.OpenGL:
+        __ renderer __ SvgView.OpenGL:
             __ QGLFormat.hasOpenGL
                 setViewport(QGLWidget(QGLFormat(QGL.SampleBuffers)))
         ____
@@ -263,7 +263,7 @@ c_ SvgView(QGraphicsView):
             outlineItem.setVisible(enable)
 
     ___ paintEvent  event):
-        __ renderer == SvgView.Image:
+        __ renderer __ SvgView.Image:
             __ image.size() !_ viewport().size
                 image _ QImage(viewport().size(),
                         QImage.Format_ARGB32_Premultiplied)
@@ -290,7 +290,7 @@ __ ______ __ ______
     app _ ?A..(___.a..
 
     window _ MainWindow()
-    __ le.(___.a.. == 2:
+    __ le.(___.a.. __ 2:
         window.openFile(___.argv[1])
     ____
         window.openFile(':/files/bubbles.svg')

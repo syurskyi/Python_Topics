@@ -66,8 +66,8 @@ c_ MainWindow ?MW..
         createActions()
         createMenus()
 
-        autoRefreshAct.setChecked( st.
-        fallbacksAct.setChecked( st.
+        autoRefreshAct.sC__( st.
+        fallbacksAct.sC__( st.
 
         sWT..("Settings Editor")
         r..(500, 600)
@@ -143,7 +143,7 @@ c_ MainWindow ?MW..
         autoRefreshAct _ ?A..("&Auto-Refresh", self, shortcut_"Ctrl+A",
                 checkable_True, enabled_False)
         autoRefreshAct.t__.c..(settingsTree.setAutoRefresh)
-        autoRefreshAct.t__.c..(refreshAct.setDisabled)
+        autoRefreshAct.t__.c..(refreshAct.sD..)
 
         fallbacksAct _ ?A..("&Fallbacks", self, shortcut_"Ctrl+F",
                 checkable_True, enabled_False,
@@ -272,13 +272,13 @@ c_ LocationDialog(QDialog):
         r..(650, 400)
 
     ___ format
-        __ formatComboBox.currentIndex() == 0:
+        __ formatComboBox.currentIndex() __ 0:
             r_ QSettings.NativeFormat
         ____
             r_ QSettings.IniFormat
 
     ___ scope
-        __ scopeComboBox.currentIndex() == 0:
+        __ scopeComboBox.currentIndex() __ 0:
             r_ QSettings.UserScope
         ____
             r_ QSettings.SystemScope
@@ -287,7 +287,7 @@ c_ LocationDialog(QDialog):
         r_ organizationComboBox.currentText()
 
     ___ application
-        __ applicationComboBox.currentText() == "Any":
+        __ applicationComboBox.currentText() __ "Any":
             r_ ''
 
         r_ applicationComboBox.currentText()
@@ -297,8 +297,8 @@ c_ LocationDialog(QDialog):
         locationsTable.setRowCount(0)
 
         ___ i __ range(2):
-            __ i == 0:
-                __ scope() == QSettings.SystemScope:
+            __ i __ 0:
+                __ scope() __ QSettings.SystemScope:
                     continue
 
                 actualScope _ QSettings.UserScope
@@ -306,7 +306,7 @@ c_ LocationDialog(QDialog):
                 actualScope _ QSettings.SystemScope
 
             ___ j __ range(2):
-                __ j == 0:
+                __ j __ 0:
                     __ no. application
                         continue
 
@@ -326,13 +326,13 @@ c_ LocationDialog(QDialog):
                 item1 _ QTableWidgetItem()
                 disable _ no. (settings.childKeys() or settings.childGroups())
 
-                __ row == 0:
+                __ row __ 0:
                     __ settings.isWritable
                         item1.sT..("Read-write")
                         disable _ False
                     ____
                         item1.sT..("Read-only")
-                    buttonBox.button(QDialogButtonBox.Ok).setDisabled(disable)
+                    buttonBox.button(QDialogButtonBox.Ok).sD..(disable)
                 ____
                     item1.sT..("Read-only fallback")
 
@@ -373,7 +373,7 @@ c_ SettingsTree(QTreeWidget):
 
     ___ setSettingsObject  settings):
         settings _ settings
-        clear()
+        c..
 
         __ settings __ no. N..:
             settings.setParent
@@ -421,7 +421,7 @@ c_ SettingsTree(QTreeWidget):
         itemChanged.c..(updateSetting)
 
     ___ event  event):
-        __ event.type() == QEvent.WindowActivate:
+        __ event.type() __ QEvent.WindowActivate:
             __ isActiveWindow() and autoRefresh:
                 maybeRefresh()
 
@@ -464,7 +464,7 @@ c_ SettingsTree(QTreeWidget):
 
         ___ key __ settings.childKeys
             childIndex _ findChild(parent, key, 0)
-            __ childIndex == -1 or childIndex >_ dividerIndex:
+            __ childIndex __ -1 or childIndex >_ dividerIndex:
                 __ childIndex !_ -1:
                     child _ childAt(parent, childIndex)
                     ___ i __ range(child.childCount()):
@@ -524,7 +524,7 @@ c_ SettingsTree(QTreeWidget):
 
     ___ findChild  parent, t__, startIndex):
         ___ i __ range(childCount(parent)):
-            __ childAt(parent, i).t__(0) == t__:
+            __ childAt(parent, i).t__(0) __ t__:
                 r_ i
         r_ -1
 
@@ -577,7 +577,7 @@ c_ VariantDelegate(QItemDelegate):
         dateTimeExp.setPattern(dateExp.pattern() + 'T' + timeExp.pattern())
 
     ___ paint  painter, option, index):
-        __ index.column() == 2:
+        __ index.column() __ 2:
             value _ index.model().data(index, __.UserRole)
             __ no. isSupportedType(value):
                 myOption _ QStyleOptionViewItem(option)

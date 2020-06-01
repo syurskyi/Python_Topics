@@ -112,7 +112,7 @@ c_ MainWindow(qtw.QMainWindow):
     ######################
 
     ___ refresh_video_list
-        file_list.clear()
+        file_list.c..
         video_files _ video_dir.entryList(
             ["*.ogg", "*.avi", "*.mov", "*.mp4", "*.mkv"],
             qtc.QDir.Files | qtc.QDir.Readable

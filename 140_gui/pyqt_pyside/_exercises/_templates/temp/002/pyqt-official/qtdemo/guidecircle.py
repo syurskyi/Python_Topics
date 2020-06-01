@@ -63,7 +63,7 @@ c_ GuideCircle(Guide):
         posY _ rect.topLeft().y()
         spanRad _ span * PI2 / -360.0
 
-        __ dir == GuideCircle.CCW:
+        __ dir __ GuideCircle.CCW:
             startAngleRad _ startAngle * PI2 / -360.0
             endAngleRad _ startAngleRad + spanRad
             stepAngleRad _ spanRad / length()

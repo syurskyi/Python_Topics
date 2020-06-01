@@ -138,7 +138,7 @@ c_ MainWindow ?MW..
             ____ sortKey.s_w_('UTF-16'):
                 rank _ 2
             ____ iso8859RegExp.exactMatch(sortKey):
-                __ le.(iso8859RegExp.cap(1)) == 1:
+                __ le.(iso8859RegExp.cap(1)) __ 1:
                     rank _ 3
                 ____
                     rank _ 4
@@ -147,7 +147,7 @@ c_ MainWindow ?MW..
 
             codecMap.ap..((str(rank) + sortKey, codec))
 
-        codecMap.sort()
+        codecMap.s..()
         codecs _ [item[-1] ___ item __ codecMap]
 
     ___ createActions
@@ -220,7 +220,7 @@ c_ PreviewForm(QDialog):
         r..(400, 300)
 
     ___ setCodecList  codecs):
-        encodingComboBox.clear()
+        encodingComboBox.c..
         ___ codec __ codecs:
             encodingComboBox.aI..(codec_name(codec), codec.mibEnum())
 

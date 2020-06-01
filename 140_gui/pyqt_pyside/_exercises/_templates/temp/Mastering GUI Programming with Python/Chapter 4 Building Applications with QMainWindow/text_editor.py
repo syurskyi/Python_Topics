@@ -194,7 +194,7 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
                 'This is beta software, do you want to continue?',
                 qtw.?MB...Yes | qtw.?MB...Abort
             )
-            __ response == qtw.?MB...Abort:
+            __ response __ qtw.?MB...Abort:
                 c..
                 ___.e..
 
@@ -215,7 +215,7 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
             splash_screen.addButton(qtw.?MB...Yes)
             splash_screen.addButton(qtw.?MB...Abort)
             response _ splash_screen.e..
-            __ response == qtw.?MB...Abort:
+            __ response __ qtw.?MB...Abort:
                 c..
                 ___.e..
 

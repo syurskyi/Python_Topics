@@ -160,13 +160,13 @@ c_ Gradient(?W...?W..):
 
     ___ mousePressEvent  e):
         # We're in this stop point.
-        __ e.button() == __.RightButton:
+        __ e.button() __ __.RightButton:
             n _ _find_stop_handle_for_event(e)
             __ n __ no. N..:
                 _, color _ _gradient[n]
                 chooseColorAtPosition(n, color)
 
-        ____ e.button() == __.LeftButton:
+        ____ e.button() __ __.LeftButton:
             n _ _find_stop_handle_for_event(e, to_exclude_self._end_stops)
             __ n __ no. N..:
                 # Activate drag mode.

@@ -66,7 +66,7 @@ c_ DemoTextItem(DemoItem):
         update()
 
     ___ createImage  transform):
-        __ type == DemoTextItem.DYNAMIC_TEXT:
+        __ type __ DemoTextItem.DYNAMIC_TEXT:
             r_ N..
 
         sx _ min(transform.m11(), transform.m22())
@@ -98,14 +98,14 @@ c_ DemoTextItem(DemoItem):
         noSubPixeling _ True
 
     ___ boundingRect
-        __ type == DemoTextItem.STATIC_TEXT:
+        __ type __ DemoTextItem.STATIC_TEXT:
             r_ super(DemoTextItem, self).boundingRect()
 
         # Sorry for using magic number.
         r_ QRectF(0, 0, 50, 20)
 
     ___ paint  painter, option, widget):
-        __ type == DemoTextItem.STATIC_TEXT:
+        __ type __ DemoTextItem.STATIC_TEXT:
             super(DemoTextItem, self).paint(painter, option, widget)
             r_
 

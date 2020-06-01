@@ -68,7 +68,7 @@ c_ ImageItem(DemoItem):
 
         # Optimization: if image is smaller than maximum allowed size, just
         # return the loaded image.
-        __ original.size().height() <_ h and original.size().width() <_ w and no. adjustSize and scale == 1:
+        __ original.size().height() <_ h and original.size().width() <_ w and no. adjustSize and scale __ 1:
             r_ original
 
         # Calculate what the size of the final image will be.

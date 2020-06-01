@@ -39,7 +39,7 @@ c_ Ui_Form(object):
         lineRadio _ ?W...QRadioButton(groupBox_2)
         lineRadio.sMS..(?C...?S..(16777215, 40))
         lineRadio.setLayoutDirection(?C...__.LeftToRight)
-        lineRadio.setChecked( st.
+        lineRadio.sC__( st.
         lineRadio.setObjectName("lineRadio")
         buttonGroup _ ?W...QButtonGroup(Form)
         buttonGroup.setObjectName("buttonGroup")

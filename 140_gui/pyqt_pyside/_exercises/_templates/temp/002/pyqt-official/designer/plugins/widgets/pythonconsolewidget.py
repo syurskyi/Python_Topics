@@ -47,9 +47,9 @@ c_ PythonConsoleWidget(QLineEdit):
     
     ___ keyReleaseEvent  event):
     
-        __ event.type() == QEvent.KeyRelease:
+        __ event.type() __ QEvent.KeyRelease:
         
-            __ event.key() == __.Key_Up:
+            __ event.key() __ __.Key_Up:
                 current _ max(0, current - 1)
                 __ 0 <_ current < le.(history):
                     sT..(history[current])
@@ -57,12 +57,12 @@ c_ PythonConsoleWidget(QLineEdit):
                 
                 event.accept()
             
-            ____ event.key() == __.Key_Down:
+            ____ event.key() __ __.Key_Down:
                 current _ min(le.(history), current + 1)
                 __ 0 <_ current < le.(history):
                     sT..(history[current])
                 ____
-                    clear()
+                    c..
                 current _ current
                 
                 event.accept()
@@ -81,14 +81,14 @@ c_ PythonConsoleWidget(QLineEdit):
 
             # Clear the line edit, append the successful expression to the
             # history, and update the current command index.
-            clear()
+            c..
             history.ap..(expression)
             current _ le.(history)
         _____:
             pass
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
     ______ ___
 

@@ -109,13 +109,13 @@ c_ BorderLayout(QLayout):
             item _ wrapper.item
             position _ wrapper.position
 
-            __ position == North:
+            __ position __ North:
                 item.setGeometry(QRect(rect.x(), northHeight,
                         rect.width(), item.sH..().height()))
 
                 northHeight +_ item.geometry().height() + spacing()
 
-            ____ position == South:
+            ____ position __ South:
                 item.setGeometry(QRect(item.geometry().x(),
                         item.geometry().y(), rect.width(),
                         item.sH..().height()))
@@ -126,7 +126,7 @@ c_ BorderLayout(QLayout):
                         rect.y() + rect.height() - southHeight + spacing(),
                         item.geometry().width(), item.geometry().height()))
 
-            ____ position == Center:
+            ____ position __ Center:
                 center _ wrapper
 
         centerHeight _ rect.height() - northHeight - southHeight
@@ -135,13 +135,13 @@ c_ BorderLayout(QLayout):
             item _ wrapper.item
             position _ wrapper.position
 
-            __ position == West:
+            __ position __ West:
                 item.setGeometry(QRect(rect.x() + westWidth,
                         northHeight, item.sH..().width(), centerHeight))
 
                 westWidth +_ item.geometry().width() + spacing()
 
-            ____ position == East:
+            ____ position __ East:
                 item.setGeometry(QRect(item.geometry().x(),
                         item.geometry().y(), item.sH..().width(),
                         centerHeight))
@@ -176,7 +176,7 @@ c_ BorderLayout(QLayout):
             position _ wrapper.position
             itemSize _ ?S..()
 
-            __ sizeType == MinimumSize:
+            __ sizeType __ MinimumSize:
                 itemSize _ wrapper.item.minimumSize()
             ____ # sizeType == self.SizeHint
                 itemSize _ wrapper.item.sH..()

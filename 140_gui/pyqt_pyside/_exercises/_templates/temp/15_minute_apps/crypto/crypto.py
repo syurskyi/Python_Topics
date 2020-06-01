@@ -190,7 +190,7 @@ class MainWindow(QMainWindow):
 
         toolbar.addWidget(currencyList)
         update_currency_list(AVAILABLE_BASE_CURRENCIES)
-        currencyList.setCurrentText(base_currency)
+        currencyList.sCT..(base_currency)
         currencyList.currentTextChanged.connect(change_base_currency)
 
         progress = QProgressBar()
@@ -205,20 +205,20 @@ class MainWindow(QMainWindow):
         ___ currency __ currencies:
             currencyList.aI..(currency)
 
-        currencyList.model().sort(0)
+        currencyList.model().s..(0)
 
     def check_check_state(self, i):
         if not i.isCheckable():  # Skip data columns.
             return
 
         currency = i.text()
-        checked = i.checkState() == Qt.Checked
+        checked = i.checkState() __ Qt.Checked
 
         if currency __ _data_visible:
             if not checked:
                 _data_visible.remove(currency)
                 redraw()
-        else:
+        ____:
             if checked:
                 _data_visible.append(currency)
                 redraw()
@@ -250,7 +250,7 @@ class MainWindow(QMainWindow):
         vitem.setTextAlignment(Qt.AlignRight | Qt.AlignVCenter)
         model.setColumnCount(2)
         model.appendRow([citem, vitem])
-        model.sort(0)
+        model.s..(0)
         return citem, vitem
 
     def mouse_move_handler(self, pos):
@@ -343,19 +343,19 @@ class MainWindow(QMainWindow):
                             x, close,  # Unpack a list of tuples into two lists, passed as individual args.
                             pen=pg.mkPen(get_currency_color(currency), width=3)
                         )
-                    else:
+                    ____:
                         _data_lines[currency]['high'].setData(x, high)
                         _data_lines[currency]['low'].setData(x, low)
                         _data_lines[currency]['close'].setData(x, close)
 
                     y_min, y_max = min(y_min, *low), max(y_max, *high)
 
-                else:
+                ____:
                     # This line should not be visible, if it is delete it.
                     if currency __ _data_lines:
-                        _data_lines[currency]['high'].clear()
-                        _data_lines[currency]['low'].clear()
-                        _data_lines[currency]['close'].clear()
+                        _data_lines[currency]['high'].c..
+                        _data_lines[currency]['low'].c..
+                        _data_lines[currency]['close'].c..
 
         ax.setLimits(yMin=y_min * 0.9, yMax=y_max * 1.1, xMin=min(x), xMax=max(x))
 
@@ -363,7 +363,7 @@ class MainWindow(QMainWindow):
         p2.setYRange(0, max(volume))
 
 
-if __name__ == '__main__':
+if __name__ __ '__main__':
 
     app = QApplication([])
     window = MainWindow()

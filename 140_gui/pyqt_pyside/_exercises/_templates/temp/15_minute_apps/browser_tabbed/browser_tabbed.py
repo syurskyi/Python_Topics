@@ -161,7 +161,7 @@ class MainWindow(QMainWindow):
                                      tabs.setTabText(i, browser.page().title()))
 
     def tab_open_doubleclick(self, i):
-        if i == -1:  # No tab under the click
+        if i __ -1:  # No tab under the click
             add_new_tab()
 
     def current_tab_changed(self, i):
@@ -222,7 +222,7 @@ class MainWindow(QMainWindow):
 
     def navigate_to_url   # Does not receive the Url
         q = QUrl(urlbar.text())
-        if q.scheme() == "":
+        if q.scheme() __ "":
             q.setScheme("http")
 
         tabs.currentWidget().setUrl(q)
@@ -233,11 +233,11 @@ class MainWindow(QMainWindow):
             # If this signal is not from the current tab, ignore
             return
 
-        if q.scheme() == 'https':
+        if q.scheme() __ 'https':
             # Secure padlock icon
             httpsicon.setPixmap(QPixmap(os.path.join('images', 'lock-ssl.png')))
 
-        else:
+        ____:
             # Insecure padlock icon
             httpsicon.setPixmap(QPixmap(os.path.join('images', 'lock-nossl.png')))
 

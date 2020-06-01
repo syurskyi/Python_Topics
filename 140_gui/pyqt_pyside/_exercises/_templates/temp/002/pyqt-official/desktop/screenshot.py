@@ -83,7 +83,7 @@ c_ Screenshot(?W..):
     ___ newScreenshot
         __ hideThisWindowCheckBox.isChecked
             hide()
-        newScreenshotButton.setDisabled( st.
+        newScreenshotButton.sD..( st.
 
         QTimer.singleShot(delaySpinBox.value() * 1000,
                 shootScreen)
@@ -109,15 +109,15 @@ c_ Screenshot(?W..):
 
         updateScreenshotLabel()
 
-        newScreenshotButton.setDisabled F..
+        newScreenshotButton.sD.. F..
         __ hideThisWindowCheckBox.isChecked
             s..
 
     ___ updateCheckBox
-        __ delaySpinBox.value() == 0:
-            hideThisWindowCheckBox.setDisabled( st.
+        __ delaySpinBox.value() __ 0:
+            hideThisWindowCheckBox.sD..( st.
         ____
-            hideThisWindowCheckBox.setDisabled F..
+            hideThisWindowCheckBox.sD.. F..
 
     ___ createOptionsGroupBox
         optionsGroupBox _ QGroupBox("Options")

@@ -419,10 +419,10 @@ c_ TextEdit ?MW..
                 "Do you want to save your changes?",
                 ?MB...Save | ?MB...Discard | ?MB...Cancel)
 
-        __ ret == ?MB...Save:
+        __ ret __ ?MB...Save:
             r_ fileSave()
 
-        __ ret == ?MB...Cancel:
+        __ ret __ ?MB...Cancel:
             r_ False
 
         r_ True
@@ -441,7 +441,7 @@ c_ TextEdit ?MW..
 
     ___ fileNew 
         __ maybeSave
-            textEdit.clear()
+            textEdit.c..
             setCurrentFileName()
 
     ___ fileOpen 
@@ -486,7 +486,7 @@ c_ TextEdit ?MW..
 
         dlg.sWT..("Print Document")
 
-        __ dlg.e.. == QPrintDialog.Accepted:
+        __ dlg.e.. __ QPrintDialog.Accepted:
             textEdit.print_(printer)
 
         del dlg
@@ -585,13 +585,13 @@ c_ TextEdit ?MW..
         colorChanged(col)
 
     ___ textAlign  action):
-        __ action == actionAlignLeft:
+        __ action __ actionAlignLeft:
             textEdit.setAlignment(__.AlignLeft | __.AlignAbsolute)
-        ____ action == actionAlignCenter:
+        ____ action __ actionAlignCenter:
             textEdit.setAlignment(__.AlignHCenter)
-        ____ action == actionAlignRight:
+        ____ action __ actionAlignRight:
             textEdit.setAlignment(__.AlignRight | __.AlignAbsolute)
-        ____ action == actionAlignJustify:
+        ____ action __ actionAlignJustify:
             textEdit.setAlignment(__.AlignJustify)
 
     ___ currentCharFormatChanged  format):
@@ -623,9 +623,9 @@ c_ TextEdit ?MW..
                 comboFont.findText(QFontInfo(font).family()))
         comboSize.setCurrentIndex(
                 comboSize.findText("%s" % font.pointSize()))
-        actionTextBold.setChecked(font.bold())
-        actionTextItalic.setChecked(font.italic())
-        actionTextUnderline.setChecked(font.underline())
+        actionTextBold.sC__(font.bold())
+        actionTextItalic.sC__(font.italic())
+        actionTextUnderline.sC__(font.underline())
 
     ___ colorChanged  color):
         pix _ QPixmap(16, 16)
@@ -634,13 +634,13 @@ c_ TextEdit ?MW..
 
     ___ alignmentChanged  alignment):
         __ alignment & __.AlignLeft:
-            actionAlignLeft.setChecked( st.
+            actionAlignLeft.sC__( st.
         ____ alignment & __.AlignHCenter:
-            actionAlignCenter.setChecked( st.
+            actionAlignCenter.sC__( st.
         ____ alignment & __.AlignRight:
-            actionAlignRight.setChecked( st.
+            actionAlignRight.sC__( st.
         ____ alignment & __.AlignJustify:
-            actionAlignJustify.setChecked( st.
+            actionAlignJustify.sC__( st.
 
 
 __ ______ __ ______

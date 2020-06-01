@@ -114,13 +114,13 @@ c_ VideoPlayer(?W..):
             playButton.sE..( st.
 
     ___ play
-        __ mediaPlayer.state() == QMediaPlayer.PlayingState:
+        __ mediaPlayer.state() __ QMediaPlayer.PlayingState:
             mediaPlayer.pause()
         ____
             mediaPlayer.play()
 
     ___ mediaStateChanged  state):
-        __ mediaPlayer.state() == QMediaPlayer.PlayingState:
+        __ mediaPlayer.state() __ QMediaPlayer.PlayingState:
             playButton.setIcon(
                     style().standardIcon(QStyle.SP_MediaPause))
         ____

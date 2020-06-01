@@ -122,8 +122,8 @@ c_ AddressBook(?W..):
         oldName _ nameLine.t__()
         oldAddress _ addressText.toPlainText()
 
-        nameLine.clear()
-        addressText.clear()
+        nameLine.c..
+        addressText.c..
 
         nameLine.setReadOnly F..
         nameLine.setFocus(__.OtherFocusReason)
@@ -137,7 +137,7 @@ c_ AddressBook(?W..):
         name _ nameLine.t__()
         address _ addressText.toPlainText()
 
-        __ name == "" or address == "":
+        __ name __ "" or address __ "":
             ?MB...information  "Empty Field",
                     "Please enter a name and address.")
             r_
@@ -152,8 +152,8 @@ c_ AddressBook(?W..):
             r_
 
         __ no. contacts:
-            nameLine.clear()
-            addressText.clear()
+            nameLine.c..
+            addressText.c..
 
         nameLine.setReadOnly( st.
         addressText.setReadOnly( st.

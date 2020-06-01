@@ -147,7 +147,7 @@ c_ MainWindow(qtw.QMainWindow):
 
     ___ update_history  *args):
         # show history
-        history_list.clear()
+        history_list.c..
         webview _ tabs.currentWidget()
         __ webview:
             history _ webview.history()

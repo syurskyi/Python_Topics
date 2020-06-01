@@ -166,7 +166,7 @@ c_ CounterLabel(?W..):
         setValue(_value - 1)
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
     ______ ___
 

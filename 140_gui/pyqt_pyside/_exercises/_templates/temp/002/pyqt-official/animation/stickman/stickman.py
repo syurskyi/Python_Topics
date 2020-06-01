@@ -74,7 +74,7 @@ c_ Node(QGraphicsObject):
         painter.drawEllipse(QPointF(0.0, 0.0), 5.0, 5.0)
 
     ___ itemChange  change, value):
-        __ change == QGraphicsItem.ItemPositionChange:
+        __ change __ QGraphicsItem.ItemPositionChange:
             positionChanged.e..()
 
         r_ super(Node, self).itemChange(change, value)
@@ -365,7 +365,7 @@ c_ GraphicsView(QGraphicsView):
     keyPressed _ pS..(int)
 
     ___ keyPressEvent  e):
-        __ e.key() == __.Key_Escape:
+        __ e.key() __ __.Key_Escape:
             c..
 
         keyPressed.e..(__.Key(e.key()))
@@ -481,7 +481,7 @@ c_ KeyPressTransition(QSignalTransition):
     ___ eventTest  e):
         __ super(KeyPressTransition, self).eventTest(e):
             key _ e.arguments()[0]
-            r_ key == m_key
+            r_ key __ m_key
 
         r_ False
 
@@ -498,7 +498,7 @@ c_ LightningStrikesTransition(QEventTransition):
 
     ___ eventTest  e):
         r_ (super(LightningStrikesTransition, self).eventTest(e) and
-                (qrand() % 50) == 0)
+                (qrand() % 50) __ 0)
 
 
 c_ LifeCycle(object):

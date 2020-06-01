@@ -69,7 +69,7 @@ c_ MainWindow ?MW..
         editor _ TextEdit()
         # Setup the QTextEdit editor configuration
         editor.setAutoFormatting(?TE...AutoAll)
-        editor.selectionChanged.c..(update_format)
+        editor.sC__.c..(update_format)
         # Initialize default font size.
         font _ QFont('Times', 12)
         editor.setFont(font)
@@ -171,7 +171,7 @@ c_ MainWindow ?MW..
         wrap_action _ ?A..(QIcon(__.p__ .join('images', 'arrow-continue.png')), "Wrap text to window", self)
         wrap_action.setStatusTip("Toggle wrap text to window")
         wrap_action.setCheckable( st.
-        wrap_action.setChecked( st.
+        wrap_action.sC__( st.
         wrap_action.t__.c..(edit_toggle_wrap)
         edit_menu.aA..(wrap_action)
 
@@ -197,7 +197,7 @@ c_ MainWindow ?MW..
         bold_action.setStatusTip("Bold")
         bold_action.sS..(?KS...Bold)
         bold_action.setCheckable( st.
-        bold_action.toggled.c..(l___ x: editor.setFontWeight(QFont.Bold __ x else QFont.Normal))
+        bold_action.t__.c..(l___ x: editor.setFontWeight(QFont.Bold __ x ____ QFont.Normal))
         format_toolbar.aA..(bold_action)
         format_menu.aA..(bold_action)
 
@@ -205,7 +205,7 @@ c_ MainWindow ?MW..
         italic_action.setStatusTip("Italic")
         italic_action.sS..(?KS...Italic)
         italic_action.setCheckable( st.
-        italic_action.toggled.c..(editor.setFontItalic)
+        italic_action.t__.c..(editor.setFontItalic)
         format_toolbar.aA..(italic_action)
         format_menu.aA..(italic_action)
 
@@ -213,7 +213,7 @@ c_ MainWindow ?MW..
         underline_action.setStatusTip("Underline")
         underline_action.sS..(?KS...Underline)
         underline_action.setCheckable( st.
-        underline_action.toggled.c..(editor.setFontUnderline)
+        underline_action.t__.c..(editor.setFontUnderline)
         format_toolbar.aA..(underline_action)
         format_menu.aA..(underline_action)
 
@@ -286,16 +286,16 @@ c_ MainWindow ?MW..
 
         fonts.setCurrentFont(editor.currentFont())
         # Nasty, but we get the font-size as a float but want it was an int
-        fontsize.setCurrentText(str(int(editor.fontPointSize())))
+        fontsize.sCT..(str(int(editor.fontPointSize())))
 
-        italic_action.setChecked(editor.fontItalic())
-        underline_action.setChecked(editor.fontUnderline())
-        bold_action.setChecked(editor.fontWeight() == QFont.Bold)
+        italic_action.sC__(editor.fontItalic())
+        underline_action.sC__(editor.fontUnderline())
+        bold_action.sC__(editor.fontWeight() __ QFont.Bold)
 
-        alignl_action.setChecked(editor.alignment() == __.AlignLeft)
-        alignc_action.setChecked(editor.alignment() == __.AlignCenter)
-        alignr_action.setChecked(editor.alignment() == __.AlignRight)
-        alignj_action.setChecked(editor.alignment() == __.AlignJustify)
+        alignl_action.sC__(editor.alignment() __ __.AlignLeft)
+        alignc_action.sC__(editor.alignment() __ __.AlignCenter)
+        alignr_action.sC__(editor.alignment() __ __.AlignRight)
+        alignj_action.sC__(editor.alignment() __ __.AlignJustify)
 
         block_signals(_format_actions, False)
 
@@ -326,7 +326,7 @@ c_ MainWindow ?MW..
             # If we do not have a path, we need to use Save As.
             r_ file_saveas()
 
-        t__ _ editor.toHtml() __ splitext(path) __ HTML_EXTENSIONS else editor.toPlainText()
+        t__ _ editor.toHtml() __ splitext(path) __ HTML_EXTENSIONS ____ editor.toPlainText()
 
         ___
             w__ o..(path, 'w') __ f:
@@ -342,7 +342,7 @@ c_ MainWindow ?MW..
             # If dialog is cancelled, will return ''
             r_
 
-        t__ _ editor.toHtml() __ splitext(path) __ HTML_EXTENSIONS else editor.toPlainText()
+        t__ _ editor.toHtml() __ splitext(path) __ HTML_EXTENSIONS ____ editor.toPlainText()
 
         ___
             w__ o..(path, 'w') __ f:
@@ -361,10 +361,10 @@ c_ MainWindow ?MW..
             editor.print_(dlg.printer())
 
     ___ update_title
-        sWT..("%s - Megasolid Idiom" % (__.p__ .basename(path) __ path else "Untitled"))
+        sWT..("%s - Megasolid Idiom" % (__.p__ .basename(path) __ path ____ "Untitled"))
 
     ___ edit_toggle_wrap
-        editor.setLineWrapMode( 1 __ editor.lineWrapMode() == 0 else 0 )
+        editor.setLineWrapMode( 1 __ editor.lineWrapMode() __ 0 ____ 0 )
 
 
 __ ______ __ ______

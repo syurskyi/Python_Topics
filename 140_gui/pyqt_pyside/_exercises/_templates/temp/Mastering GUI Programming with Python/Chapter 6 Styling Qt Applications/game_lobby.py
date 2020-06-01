@@ -26,7 +26,7 @@ c_ StyleOverrides(qtw.QProxyStyle):
         """Outline QLineEdits in Green"""
         green_pen _ qtg.QPen(qtg.?C..('green'))
         green_pen.setWidth(4)
-        __ element == qtw.QStyle.PE_FrameLineEdit:
+        __ element __ qtw.QStyle.PE_FrameLineEdit:
             painter.setPen(green_pen)
             painter.drawRoundedRect(widget.rect(), 10, 10)
         ____
@@ -179,9 +179,9 @@ c_ MainWindow(qtw.QMainWindow):
         connect_icon.addPixmap(go_pixmap, qtg.QIcon.Active)
         connect_icon.addPixmap(stop_pixmap, qtg.QIcon.Disabled)
         submit.setIcon(connect_icon)
-        submit.setDisabled( st.
+        submit.sD..( st.
         inputs['Server'].tC...c..(
-            l___ x: submit.setDisabled(x == '')
+            l___ x: submit.sD..(x __ '')
         )
 
         # using resources

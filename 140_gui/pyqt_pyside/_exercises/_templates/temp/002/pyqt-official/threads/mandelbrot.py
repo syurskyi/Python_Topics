@@ -160,7 +160,7 @@ c_ RenderThread(QThread):
                         ____
                             image.setPixel(x + halfWidth, y + halfHeight, qRgb(0, 0, 0))
 
-                __ allBlack and curpass == 0:
+                __ allBlack and curpass __ 0:
                     curpass _ 4
                 ____
                     __ no. restart:
@@ -239,7 +239,7 @@ c_ MandelbrotWidget(?W..):
                     "Rendering initial image, please wait...")
             r_
 
-        __ curScale == pixmapScale:
+        __ curScale __ pixmapScale:
             painter.drawPixmap(pixmapOffset, pixmap)
         ____
             scaleFactor _ pixmapScale / curScale
@@ -274,17 +274,17 @@ c_ MandelbrotWidget(?W..):
                 size())
 
     ___ keyPressEvent  event):
-        __ event.key() == __.Key_Plus:
+        __ event.key() __ __.Key_Plus:
             zoom(ZoomInFactor)
-        ____ event.key() == __.Key_Minus:
+        ____ event.key() __ __.Key_Minus:
             zoom(ZoomOutFactor)
-        ____ event.key() == __.Key_Left:
+        ____ event.key() __ __.Key_Left:
             scroll(-ScrollStep, 0)
-        ____ event.key() == __.Key_Right:
+        ____ event.key() __ __.Key_Right:
             scroll(+ScrollStep, 0)
-        ____ event.key() == __.Key_Down:
+        ____ event.key() __ __.Key_Down:
             scroll(0, -ScrollStep)
-        ____ event.key() == __.Key_Up:
+        ____ event.key() __ __.Key_Up:
             scroll(0, +ScrollStep)
         ____
             super(MandelbrotWidget, self).keyPressEvent(event)
@@ -295,7 +295,7 @@ c_ MandelbrotWidget(?W..):
         zoom(pow(ZoomInFactor, numSteps))
 
     ___ mousePressEvent  event):
-        __ event.buttons() == __.LeftButton:
+        __ event.buttons() __ __.LeftButton:
             lastDragPos _ QPoint(event.pos())
 
     ___ mouseMoveEvent  event):
@@ -305,7 +305,7 @@ c_ MandelbrotWidget(?W..):
             update()
 
     ___ mouseReleaseEvent  event):
-        __ event.button() == __.LeftButton:
+        __ event.button() __ __.LeftButton:
             pixmapOffset +_ event.pos() - lastDragPos
             lastDragPos _ QPoint()
 

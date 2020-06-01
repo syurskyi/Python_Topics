@@ -101,9 +101,9 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
         pb.setValue(a)
 
     ___ on_WebBrowser_CommandStateChange  cmd, on):
-        __ cmd == 1:
+        __ cmd __ 1:
             actionForward.sE..(on)
-        ____ cmd == 2:
+        ____ cmd __ 2:
             actionBack.sE..(on)
 
     ___ on_WebBrowser_BeforeNavigate
@@ -140,7 +140,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
         ?MB...aboutQt  "About Qt")
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     a _ ?A..(___.a..
     w _ MainWindow()
     w.s..

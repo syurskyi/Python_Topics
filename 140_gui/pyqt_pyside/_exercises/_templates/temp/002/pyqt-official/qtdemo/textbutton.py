@@ -96,7 +96,7 @@ c_ ButtonBackground(DemoItem):
             shadow _ ?C..(0, 0, 0, 70)
             sunken _ ?C..(220, 220, 220, 30)
 
-            __ type == TextButton.PANEL:
+            __ type __ TextButton.PANEL:
                 normal1 _ ?C..(200, 170, 160, 50)
                 normal2 _ ?C..(50, 10, 0, 50)
             ____
@@ -118,7 +118,7 @@ c_ ButtonBackground(DemoItem):
 
             painter.setBrush(brush)
 
-        __ type == TextButton.PANEL:
+        __ type __ TextButton.PANEL:
             painter.drawRect(0, 0, scaledRect.width(), scaledRect.height())
         ____
             painter.drawRoundedRect(0, 0, scaledRect.width(),
@@ -178,7 +178,7 @@ c_ ButtonBackground(DemoItem):
         yOff _ scaledRect.height() / 2
         sizex _ 3.0 * transform.m11()
         sizey _ 1.5 * transform.m22()
-        __ type == TextButton.UP:
+        __ type __ TextButton.UP:
             sizey *_ -1
         path _ QPainterPath()
         path.moveTo(xOff, yOff + (5 * sizey))
@@ -263,7 +263,7 @@ c_ TextButton(DemoItem):
             x _ 1.0
             y _ 1.5
             stop _ TextButton.BUTTON_WIDTH - scanItem.boundingRect().width() - x
-            __ alignment == TextButton.LEFT:
+            __ alignment __ TextButton.LEFT:
                 scanAnim.setDuration(2500)
                 scanAnim.setKeyValueAt(0.0, QPointF(x, y))
                 scanAnim.setKeyValueAt(0.5, QPointF(x, y))
@@ -278,11 +278,11 @@ c_ TextButton(DemoItem):
 
     ___ setState  state):
         state _ state
-        bgOn.setRecursiveVisible(state == TextButton.ON)
-        bgOff.setRecursiveVisible(state == TextButton.OFF)
-        bgHighlight.setRecursiveVisible(state == TextButton.HIGHLIGHT)
-        bgDisabled.setRecursiveVisible(state == TextButton.DISABLED)
-        __ state == TextButton.DISABLED:
+        bgOn.setRecursiveVisible(state __ TextButton.ON)
+        bgOff.setRecursiveVisible(state __ TextButton.OFF)
+        bgHighlight.setRecursiveVisible(state __ TextButton.HIGHLIGHT)
+        bgDisabled.setRecursiveVisible(state __ TextButton.DISABLED)
+        __ state __ TextButton.DISABLED:
             setCursor(__.ArrowCursor)
         ____
             setCursor(__.PointingHandCursor)
@@ -299,10 +299,10 @@ c_ TextButton(DemoItem):
         setState(TextButton.OFF)
 
     ___ hoverEnterEvent  event):
-        __ no. isEnabled() or state == TextButton.DISABLED:
+        __ no. isEnabled() or state __ TextButton.DISABLED:
             r_
 
-        __ state == TextButton.OFF:
+        __ state __ TextButton.OFF:
             setState(TextButton.HIGHLIGHT)
 
             __ Colors.noAnimations and Colors.useButtonBalls:
@@ -317,7 +317,7 @@ c_ TextButton(DemoItem):
                     scanAnim.play(True,  st.
 
     ___ hoverLeaveEvent  event):
-        __ state == TextButton.DISABLED:
+        __ state __ TextButton.DISABLED:
             r_
 
         setState(TextButton.OFF)
@@ -326,20 +326,20 @@ c_ TextButton(DemoItem):
             scanAnim.stop()
 
     ___ mousePressEvent  event):
-        __ state == TextButton.DISABLED:
+        __ state __ TextButton.DISABLED:
             r_
 
-        __ state == TextButton.HIGHLIGHT or state == TextButton.OFF:
+        __ state __ TextButton.HIGHLIGHT or state __ TextButton.OFF:
             setState(TextButton.ON)
 
     ___ mouseReleaseEvent  event):
-        __ state == TextButton.ON:
+        __ state __ TextButton.ON:
             setState(TextButton.OFF)
             __ isEnabled() and boundingRect().contains(event.pos()):
                 _menu_manager.itemSelected(userCode, menuString)
 
     ___ animationStarted  _):
-        __ state == TextButton.DISABLED:
+        __ state __ TextButton.DISABLED:
             r_
 
         setState(TextButton.OFF)

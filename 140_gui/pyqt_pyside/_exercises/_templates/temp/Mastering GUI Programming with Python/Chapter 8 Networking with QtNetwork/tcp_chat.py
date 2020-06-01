@@ -89,7 +89,7 @@ c_ ChatWindow ?.?W..
         message _ message_entry.t__().strip()
         __ message:
             submitted.e..(message)
-            message_entry.clear()
+            message_entry.c..
 
 
 c_ MainWindow(qtw.QMainWindow):

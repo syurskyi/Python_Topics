@@ -251,7 +251,7 @@ c_ HelloGLWidget(QOpenGLWidget):
         gl.glColor4f(c.redF(), c.greenF(), c.blueF(), c.alphaF())
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
     ______ ___
 

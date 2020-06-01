@@ -120,7 +120,7 @@ c_ HttpWindow(QDialog):
                     "directory. Overwrite?" % fileName,
                     ?MB...Yes | ?MB...No, ?MB...No)
 
-            __ ret == ?MB...No:
+            __ ret __ ?MB...No:
                 r_
 
             QFile.remove(fileName)
@@ -176,7 +176,7 @@ c_ HttpWindow(QDialog):
                     "Redirect to %s?" % newUrl.toString(),
                     ?MB...Yes | ?MB...No)
 
-            __ ret == ?MB...Yes:
+            __ ret __ ?MB...Yes:
                 url _ newUrl
                 reply.deleteLater()
                 reply _ N..
@@ -220,7 +220,7 @@ c_ HttpWindow(QDialog):
         dlg.userEdit.sT..(url.userName())
         dlg.passwordEdit.sT..(url.password())
 
-        __ dlg.e.. == QDialog.Accepted:
+        __ dlg.e.. __ QDialog.Accepted:
             authenticator.setUser(dlg.userEdit.t__())
             authenticator.setPassword(dlg.passwordEdit.t__())
 
@@ -231,7 +231,7 @@ c_ HttpWindow(QDialog):
                 "One or more SSL errors has occurred: %s" % errorString,
                 ?MB...Ignore | ?MB...Abort)
 
-        __ ret == ?MB...Ignore:
+        __ ret __ ?MB...Ignore:
             reply.ignoreSslErrors()
 
 

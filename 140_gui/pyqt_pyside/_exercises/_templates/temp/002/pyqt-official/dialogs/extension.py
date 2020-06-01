@@ -58,7 +58,7 @@ c_ FindDialog(QDialog):
 
         caseCheckBox _ QCheckBox("Match &case")
         fromStartCheckBox _ QCheckBox("Search from &start")
-        fromStartCheckBox.setChecked( st.
+        fromStartCheckBox.sC__( st.
 
         findButton _ ?PB..("&Find")
         findButton.setDefault( st.
@@ -77,7 +77,7 @@ c_ FindDialog(QDialog):
         buttonBox.addButton(findButton, QDialogButtonBox.ActionRole)
         buttonBox.addButton(moreButton, QDialogButtonBox.ActionRole)
 
-        moreButton.toggled.c..(extension.setVisible)
+        moreButton.t__.c..(extension.setVisible)
 
         extensionLayout _ ?VBL..
         extensionLayout.setContentsMargins(0, 0, 0, 0)

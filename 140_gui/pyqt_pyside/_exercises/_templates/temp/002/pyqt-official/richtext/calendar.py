@@ -101,7 +101,7 @@ c_ MainWindow ?MW..
         sCW..(centralWidget)
 
     ___ insertCalendar
-        editor.clear()
+        editor.c..
         cursor _ editor.textCursor()
         cursor.beginEditBlock()
 
@@ -145,19 +145,19 @@ c_ MainWindow ?MW..
 
         table.insertRows(table.rows(), 1)
 
-        w__ date.month() == selectedDate.month
+        w__ date.month() __ selectedDate.month
             weekDay _ date.dayOfWeek()
             cell _ table.cellAt(table.rows()-1, weekDay-1)
             cellCursor _ cell.firstCursorPosition()
 
-            __ date == QDate.currentDate
+            __ date __ QDate.currentDate
                 cellCursor.insertText(str(date.day()), highlightedFormat)
             ____
                 cellCursor.insertText(str(date.day()), format)
 
             date _ date.addDays(1)
 
-            __ weekDay == 7 and date.month() == selectedDate.month
+            __ weekDay __ 7 and date.month() __ selectedDate.month
                 table.insertRows(table.rows(), 1)
 
         cursor.endEditBlock()

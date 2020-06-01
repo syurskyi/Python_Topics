@@ -65,7 +65,7 @@ c_ Ui_MainWindow(object):
         horizontalLayout.aL..(verticalLayout)
 
         retranslateUi(MainWindow)
-        allday_check.toggled['bool'].c..(event_time.setDisabled)
+        allday_check.t__['bool'].c..(event_time.sD..)
         ?C...QMetaObject.connectSlotsByName(MainWindow)
 
     ___ retranslateUi  MainWindow):

@@ -204,7 +204,7 @@ void main(void)
                             QImage(root + ('/images/side%d.png' % (i + 1))).mirrored()))
 
             ___ j __ range(4):
-                texCoords.ap..(((j == 0 or j == 3), (j == 0 or j == 1)))
+                texCoords.ap..(((j __ 0 or j __ 3), (j __ 0 or j __ 1)))
 
                 x, y, z _ coords[i][j]
                 vertices.ap..((0.2 * x, 0.2 * y, 0.2 * z))

@@ -49,7 +49,7 @@ c_ MainWindow(MW_Base, MW_Ui):
         #self.allday_check.stateChanged.connect(self.event_time.setDisabled)
 
         # Populate the event list when the calendar is clicked
-        calendar.selectionChanged.c..(populate_list)
+        calendar.sC__.c..(populate_list)
 
         # Populate the event form when an item is selected
         event_list.itemSelectionChanged.c..(populate_form)
@@ -71,38 +71,38 @@ c_ MainWindow(MW_Base, MW_Ui):
         s..
 
     ___ clear_form
-        event_title.clear()
+        event_title.c..
         event_category.setCurrentIndex(0)
-        event_time.setTime(qtc.?T..(8, 0))
-        allday_check.setChecked F..
+        event_time.sT..(qtc.?T..(8, 0))
+        allday_check.sC__ F..
         event_detail.sPT..('')
 
     ___ populate_list
-        event_list.clear()
+        event_list.c..
         clear_form()
-        date _ calendar.selectedDate()
+        date _ calendar.sD..
         ___ event __ events.g..(date,   # list):
             time _ (
                 event['time'].toString('hh:mm')
                 __ event['time']
-                else 'All Day'
+                ____ 'All Day'
             )
             event_list.aI..(f"{time}: {event['title']}")
 
     ___ populate_form
         clear_form()
-        date _ calendar.selectedDate()
-        event_number _ event_list.currentRow()
-        __ event_number == -1:
+        date _ calendar.sD..
+        event_number _ event_list.cR..
+        __ event_number __ -1:
             r_
 
         event_data _ events.g..(date)[event_number]
 
-        event_category.setCurrentText(event_data['category'])
+        event_category.sCT..(event_data['category'])
         __ event_data['time'] __ N..:
-            allday_check.setChecked( st.
+            allday_check.sC__( st.
         ____
-            event_time.setTime(event_data['time'])
+            event_time.sT..(event_data['time'])
         event_title.sT..(event_data['title'])
         event_detail.sPT..(event_data['detail'])
 
@@ -112,46 +112,46 @@ c_ MainWindow(MW_Base, MW_Ui):
             'time': (
                 N..
                 __ allday_check.isChecked()
-                else event_time.time()
+                ____ event_time.time()
                 ),
             'title': event_title.t__(),
             'detail': event_detail.toPlainText()
             }
 
-        date _ calendar.selectedDate()
+        date _ calendar.sD..
         event_list _ events.g..(date,   # list)
-        event_number _ event_list.currentRow()
+        event_number _ event_list.cR..
 
         # if no events are selected, this is a new event
-        __ event_number == -1:
+        __ event_number __ -1:
             event_list.ap..(event)
         ____
             event_list[event_number] _ event
 
-        event_list.sort(key_lambda x: x['time'] or qtc.?T..(0, 0))
+        event_list.s..(key_lambda x: x['time'] or qtc.?T..(0, 0))
         events[date] _ event_list
         populate_list()
 
     ___ delete_event
-        date _ calendar.selectedDate()
-        row _ event_list.currentRow()
+        date _ calendar.sD..
+        row _ event_list.cR..
         del(events[date][row])
         event_list.setCurrentRow(-1)
         clear_form()
         populate_list()
 
     ___ check_delete_btn
-        del_button.setDisabled(event_list.currentRow() == -1)
+        del_button.sD..(event_list.cR.. __ -1)
 
     ___ on_category_change  t__):
-        __ t__ == 'New…':
+        __ t__ __ 'New…':
             dialog _ CategoryWindow()
             dialog.submitted.c..(add_category)
             event_category.setCurrentIndex(0)
 
     ___ add_category  category):
         event_category.aI..(category)
-        event_category.setCurrentText(category)
+        event_category.sCT..(category)
 
 __ ______ __ ______
     app _ qtw.?A..(___.a..

@@ -63,7 +63,7 @@ c_ WidgetGallery(QDialog):
         styleLabel.setBuddy(styleComboBox)
 
         useStylePaletteCheckBox _ QCheckBox("&Use style's standard palette")
-        useStylePaletteCheckBox.setChecked( st.
+        useStylePaletteCheckBox.sC__( st.
 
         disableWidgetsCheckBox _ QCheckBox("&Disable widgets")
 
@@ -74,11 +74,11 @@ c_ WidgetGallery(QDialog):
         createProgressBar()
 
         styleComboBox.activated[str].c..(changeStyle)
-        useStylePaletteCheckBox.toggled.c..(changePalette)
-        disableWidgetsCheckBox.toggled.c..(topLeftGroupBox.setDisabled)
-        disableWidgetsCheckBox.toggled.c..(topRightGroupBox.setDisabled)
-        disableWidgetsCheckBox.toggled.c..(bottomLeftTabWidget.setDisabled)
-        disableWidgetsCheckBox.toggled.c..(bottomRightGroupBox.setDisabled)
+        useStylePaletteCheckBox.t__.c..(changePalette)
+        disableWidgetsCheckBox.t__.c..(topLeftGroupBox.sD..)
+        disableWidgetsCheckBox.t__.c..(topRightGroupBox.sD..)
+        disableWidgetsCheckBox.t__.c..(bottomLeftTabWidget.sD..)
+        disableWidgetsCheckBox.t__.c..(bottomRightGroupBox.sD..)
 
         topLayout _ QHBoxLayout()
         topLayout.aW..(styleLabel)
@@ -124,7 +124,7 @@ c_ WidgetGallery(QDialog):
         radioButton1 _ QRadioButton("Radio button 1")
         radioButton2 _ QRadioButton("Radio button 2")
         radioButton3 _ QRadioButton("Radio button 3")
-        radioButton1.setChecked( st.
+        radioButton1.sC__( st.
 
         checkBox _ QCheckBox("Tri-state check box")
         checkBox.setTristate( st.
@@ -146,7 +146,7 @@ c_ WidgetGallery(QDialog):
 
         togglePushButton _ ?PB..("Toggle Push Button")
         togglePushButton.setCheckable( st.
-        togglePushButton.setChecked( st.
+        togglePushButton.sC__( st.
 
         flatPushButton _ ?PB..("Flat Push Button")
         flatPushButton.setFlat( st.
@@ -192,7 +192,7 @@ c_ WidgetGallery(QDialog):
     ___ createBottomRightGroupBox 
         bottomRightGroupBox _ QGroupBox("Group 3")
         bottomRightGroupBox.setCheckable( st.
-        bottomRightGroupBox.setChecked( st.
+        bottomRightGroupBox.sC__( st.
 
         lineEdit _ QLineEdit('s3cRe7')
         lineEdit.setEchoMode(QLineEdit.Password)

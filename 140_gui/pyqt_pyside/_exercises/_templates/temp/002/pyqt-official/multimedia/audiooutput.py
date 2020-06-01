@@ -72,20 +72,20 @@ c_ Generator(QIODevice):
     ___ generateData  format, durationUs, sampleRate):
         pack_format _ ''
 
-        __ format.sampleSize() == 8:
-            __ format.sampleType() == QAudioFormat.UnSignedInt:
+        __ format.sampleSize() __ 8:
+            __ format.sampleType() __ QAudioFormat.UnSignedInt:
                 scaler _ l___ x: ((1.0 + x) / 2 * 255)
                 pack_format _ 'B'
-            ____ format.sampleType() == QAudioFormat.SignedInt:
+            ____ format.sampleType() __ QAudioFormat.SignedInt:
                 scaler _ l___ x: x * 127
                 pack_format _ 'b'
-        ____ format.sampleSize() == 16:
-            __ format.sampleType() == QAudioFormat.UnSignedInt:
+        ____ format.sampleSize() __ 16:
+            __ format.sampleType() __ QAudioFormat.UnSignedInt:
                 scaler _ l___ x: (1.0 + x) / 2 * 65535
-                pack_format _ '<H' __ format.byteOrder() == QAudioFormat.LittleEndian else '>H'
-            ____ format.sampleType() == QAudioFormat.SignedInt:
+                pack_format _ '<H' __ format.byteOrder() __ QAudioFormat.LittleEndian ____ '>H'
+            ____ format.sampleType() __ QAudioFormat.SignedInt:
                 scaler _ l___ x: x * 32767
-                pack_format _ '<h' __ format.byteOrder() == QAudioFormat.LittleEndian else '>h'
+                pack_format _ '<h' __ format.byteOrder() __ QAudioFormat.LittleEndian ____ '>h'
 
         assert(pack_format !_ '')
 
@@ -94,7 +94,7 @@ c_ Generator(QIODevice):
 
         length _ (format.sampleRate() * format.channelCount() * (format.sampleSize() // 8)) * durationUs // 100000
 
-        m_buffer.clear()
+        m_buffer.c..
         sampleIndex _ 0
         factor _ 2 * pi * sampleRate / format.sampleRate()
 
@@ -257,19 +257,19 @@ c_ AudioTest ?MW..
         m_suspendResumeButton.sT..(SUSPEND_LABEL)
 
     ___ toggleSuspendResume
-        __ m_audioOutput.state() == QAudio.SuspendedState:
+        __ m_audioOutput.state() __ QAudio.SuspendedState:
             qWarning("status: Suspended, resume()")
             m_audioOutput.resume()
             m_suspendResumeButton.sT..(SUSPEND_LABEL)
-        ____ m_audioOutput.state() == QAudio.ActiveState:
+        ____ m_audioOutput.state() __ QAudio.ActiveState:
             qWarning("status: Active, suspend()")
             m_audioOutput.suspend()
             m_suspendResumeButton.sT..(RESUME_LABEL)
-        ____ m_audioOutput.state() == QAudio.StoppedState:
+        ____ m_audioOutput.state() __ QAudio.StoppedState:
             qWarning("status: Stopped, resume()")
             m_audioOutput.resume()
             m_suspendResumeButton.sT..(SUSPEND_LABEL)
-        ____ m_audioOutput.state() == QAudio.IdleState:
+        ____ m_audioOutput.state() __ QAudio.IdleState:
             qWarning("status: IdleState")
 
     stateMap _ {

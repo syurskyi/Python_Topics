@@ -72,7 +72,7 @@ c_ SlidersGroup(QGroupBox):
         dial.valueChanged.c..(slider.setValue)
         dial.valueChanged.c..(valueChanged)
 
-        __ orientation == __.Horizontal:
+        __ orientation __ __.Horizontal:
             direction _ QBoxLayout.TopToBottom
         ____
             direction _ QBoxLayout.LeftToRight
@@ -167,10 +167,10 @@ c_ Window(?W..):
         minimumSpinBox.valueChanged.c..(verticalSliders.setMinimum)
         maximumSpinBox.valueChanged.c..(horizontalSliders.setMaximum)
         maximumSpinBox.valueChanged.c..(verticalSliders.setMaximum)
-        invertedAppearance.toggled.c..(horizontalSliders.invertAppearance)
-        invertedAppearance.toggled.c..(verticalSliders.invertAppearance)
-        invertedKeyBindings.toggled.c..(horizontalSliders.invertKeyBindings)
-        invertedKeyBindings.toggled.c..(verticalSliders.invertKeyBindings)
+        invertedAppearance.t__.c..(horizontalSliders.invertAppearance)
+        invertedAppearance.t__.c..(verticalSliders.invertAppearance)
+        invertedKeyBindings.t__.c..(horizontalSliders.invertKeyBindings)
+        invertedKeyBindings.t__.c..(verticalSliders.invertKeyBindings)
 
         controlsLayout _ QGridLayout()
         controlsLayout.aW..(minimumLabel, 0, 0)

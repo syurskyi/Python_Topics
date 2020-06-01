@@ -58,7 +58,7 @@ SUBJECT, SENDER, DATE _ range(3)
 c_ SortFilterProxyModel(QSortFilterProxyModel):
     ___ filterAcceptsRow  sourceRow, sourceParent):
         # Do we filter for the date column?
-        __ filterKeyColumn() == DATE:
+        __ filterKeyColumn() __ DATE:
             # Fetch datetime value.
             index _ sourceModel().index(sourceRow, DATE, sourceParent)
             data _ sourceModel().data(index)
@@ -114,8 +114,8 @@ c_ Window(?W..):
         filterPatternLineEdit.tC...c..(filterRegExpChanged)
         filterSyntaxComboBox.currentIndexChanged.c..(filterRegExpChanged)
         filterColumnComboBox.currentIndexChanged.c..(filterColumnChanged)
-        filterCaseSensitivityCheckBox.toggled.c..(filterRegExpChanged)
-        sortCaseSensitivityCheckBox.toggled.c..(sortChanged)
+        filterCaseSensitivityCheckBox.t__.c..(filterRegExpChanged)
+        sortCaseSensitivityCheckBox.t__.c..(sortChanged)
 
         sourceLayout _ QHBoxLayout()
         sourceLayout.aW..(sourceView)
@@ -145,8 +145,8 @@ c_ Window(?W..):
         filterColumnComboBox.setCurrentIndex(SENDER)
 
         filterPatternLineEdit.sT..("Andy|Grace")
-        filterCaseSensitivityCheckBox.setChecked( st.
-        sortCaseSensitivityCheckBox.setChecked( st.
+        filterCaseSensitivityCheckBox.sC__( st.
+        sortCaseSensitivityCheckBox.sC__( st.
 
     ___ setSourceModel  model):
         proxyModel.setSourceModel(model)

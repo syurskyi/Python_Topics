@@ -127,7 +127,7 @@ c_ Edge(QGraphicsItem):
         # Draw the line itself.
         line _ QLineF(sourcePoint, destPoint)
 
-        __ line.length() == 0.0:
+        __ line.length() __ 0.0:
             r_
 
         painter.setPen(QPen(__.black, 1, __.SolidLine, __.RoundCap,
@@ -217,7 +217,7 @@ c_ Node(QGraphicsItem):
         newPos.setY(min(max(newPos.y(), sceneRect.top() + 10), sceneRect.bottom() - 10))
 
     ___ advance
-        __ newPos == pos
+        __ newPos __ pos
             r_ False
 
         setPos(newPos)
@@ -252,7 +252,7 @@ c_ Node(QGraphicsItem):
         painter.drawEllipse(-10, -10, 20, 20)
 
     ___ itemChange  change, value):
-        __ change == QGraphicsItem.ItemPositionHasChanged:
+        __ change __ QGraphicsItem.ItemPositionHasChanged:
             ___ edge __ edgeList:
                 edge.adjust()
             graph.itemMoved()
@@ -336,19 +336,19 @@ c_ GraphWidget(QGraphicsView):
     ___ keyPressEvent  event):
         key _ event.key()
 
-        __ key == __.Key_Up:
+        __ key __ __.Key_Up:
             centerNode.moveBy(0, -20)
-        ____ key == __.Key_Down:
+        ____ key __ __.Key_Down:
             centerNode.moveBy(0, 20)
-        ____ key == __.Key_Left:
+        ____ key __ __.Key_Left:
             centerNode.moveBy(-20, 0)
-        ____ key == __.Key_Right:
+        ____ key __ __.Key_Right:
             centerNode.moveBy(20, 0)
-        ____ key == __.Key_Plus:
+        ____ key __ __.Key_Plus:
             scaleView(1.2)
-        ____ key == __.Key_Minus:
+        ____ key __ __.Key_Minus:
             scaleView(1 / 1.2)
-        ____ key == __.Key_Space or key == __.Key_Enter:
+        ____ key __ __.Key_Space or key __ __.Key_Enter:
             ___ item __ scene().items
                 __ isinstance(item, Node):
                     item.setPos(-150 + qrand() % 300, -150 + qrand() % 300)

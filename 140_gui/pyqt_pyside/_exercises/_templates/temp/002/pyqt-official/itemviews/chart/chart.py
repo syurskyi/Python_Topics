@@ -88,13 +88,13 @@ c_ PieView(QAbstractItemView):
         viewport().update()
 
     ___ edit  index, trigger, event):
-        __ index.column() == 0:
+        __ index.column() __ 0:
             r_ super(PieView, self).edit(index, trigger, event)
         ____
             r_ False
 
     ___ indexAt  point):
-        __ validItems == 0:
+        __ validItems __ 0:
             r_ QModelIndex()
 
         # Transform the view coordinates into contents widget coordinates.
@@ -108,7 +108,7 @@ c_ PieView(QAbstractItemView):
             # Determine the distance from the center point of the pie chart.
             d _ (cx**2 + cy**2)**0.5
 
-            __ d == 0 or d > pieSize/2:
+            __ d __ 0 or d > pieSize/2:
                 r_ QModelIndex()
 
             # Determine the angle of the point.
@@ -142,7 +142,7 @@ c_ PieView(QAbstractItemView):
                 index _ model().index(row, 1, rootIndex())
                 __ model().data(index) > 0.0:
 
-                    __ listItem == validRow:
+                    __ listItem __ validRow:
                         r_ model().index(row, 0, rootIndex())
 
                     # Update the list index that corresponds to the next valid
@@ -174,13 +174,13 @@ c_ PieView(QAbstractItemView):
                 __ model().data(model().index(row, 1, rootIndex())) > 0.0:
                     listItem +_ 1
 
-            __ index.column() == 0:
+            __ index.column() __ 0:
             
                 itemHeight _ QFontMetrics(viewOptions().font).height()
                 r_ QRect(totalSize,
                              int(margin + listItem*itemHeight),
                              totalSize - margin, int(itemHeight))
-            ____ index.column() == 1:
+            ____ index.column() __ 1:
                 r_ viewport().rect()
 
         r_ QRect()
@@ -204,7 +204,7 @@ c_ PieView(QAbstractItemView):
             __ value > 0.0:
                 angle _ 360*value/totalValue
 
-                __ sliceIndex == index:
+                __ sliceIndex __ index:
                     slicePath _ QPainterPath()
                     slicePath.moveTo(totalSize/2, totalSize/2)
                     slicePath.arcTo(margin, margin,
@@ -308,7 +308,7 @@ c_ PieView(QAbstractItemView):
                     colorIndex _ model().index(row, 0, rootIndex())
                     color _ model().data(colorIndex, __.DecorationRole)
 
-                    __ currentIndex() == index:
+                    __ currentIndex() __ index:
                         painter.setBrush(QBrush(color, __.Dense4Pattern))
                     ____ selections.isSelected(index):
                         painter.setBrush(QBrush(color, __.Dense3Pattern))
@@ -335,7 +335,7 @@ c_ PieView(QAbstractItemView):
                     option.rect _ visualRect(labelIndex)
                     __ selections.isSelected(labelIndex):
                         option.state |_ QStyle.State_Selected
-                    __ currentIndex() == labelIndex:
+                    __ currentIndex() __ labelIndex:
                         option.state |_ QStyle.State_HasFocus
                     itemDelegate().paint(painter, option, labelIndex)
 

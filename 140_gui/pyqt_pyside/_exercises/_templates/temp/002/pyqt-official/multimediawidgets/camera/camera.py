@@ -99,7 +99,7 @@ c_ ImageSettings(QDialog):
     @staticmethod
     ___ boxValue(box):
         idx _ box.currentIndex()
-        __ idx == -1:
+        __ idx __ -1:
             r_ N..
 
         r_ box.itemData(idx)
@@ -107,7 +107,7 @@ c_ ImageSettings(QDialog):
     @staticmethod
     ___ selectComboBoxItem(box, value):
         ___ i __ range(box.count()):
-            __ box.itemData(i) == value:
+            __ box.itemData(i) __ value:
                 box.setCurrentIndex(i)
                 break
 
@@ -209,7 +209,7 @@ c_ VideoSettings(QDialog):
     @staticmethod
     ___ boxValue(box):
         idx _ box.currentIndex()
-        __ idx == -1:
+        __ idx __ -1:
             r_ N..
 
         r_ box.itemData(idx)
@@ -217,7 +217,7 @@ c_ VideoSettings(QDialog):
     @staticmethod
     ___ selectComboBoxItem(box, value):
         ___ i __ range(box.count()):
-            __ box.itemData(i) == value:
+            __ box.itemData(i) __ value:
                 box.setCurrentIndex(i)
                 break
 
@@ -254,7 +254,7 @@ c_ Camera ?MW..
 
             __ cameraDevice.isEmpty
                 cameraDevice _ deviceName
-                videoDeviceAction.setChecked( st.
+                videoDeviceAction.sC__( st.
 
             ui.menuDevices.aA..(videoDeviceAction)
 
@@ -311,14 +311,14 @@ c_ Camera ?MW..
         __ event.isAutoRepeat
             r_
 
-        __ event.key() == __.Key_CameraFocus:
+        __ event.key() __ __.Key_CameraFocus:
             displayViewfinder()
             camera.searchAndLock()
             event.accept()
-        ____ event.key() == __.Key_Camera:
-            __ camera.captureMode() == QCamera.CaptureStillImage:
+        ____ event.key() __ __.Key_Camera:
+            __ camera.captureMode() __ QCamera.CaptureStillImage:
                 takeImage()
-            ____ mediaRecorder.state() == QMediaRecorder.RecordingState:
+            ____ mediaRecorder.state() __ QMediaRecorder.RecordingState:
                 stop()
             ____
                 record()
@@ -331,7 +331,7 @@ c_ Camera ?MW..
         __ event.isAutoRepeat
             r_
 
-        __ event.key() == __.Key_CameraFocus:
+        __ event.key() __ __.Key_CameraFocus:
             camera.unlock()
         ____
             super(Camera, self).keyReleaseEvent(event)
@@ -350,9 +350,9 @@ c_ Camera ?MW..
         QTimer.singleShot(4000, displayViewfinder)
 
     ___ configureCaptureSettings
-        __ camera.captureMode() == QCamera.CaptureStillImage:
+        __ camera.captureMode() __ QCamera.CaptureStillImage:
             configureImageSettings()
-        ____ camera.captureMode() == QCamera.CaptureVideo:
+        ____ camera.captureMode() __ QCamera.CaptureVideo:
             configureVideoSettings()
 
     ___ configureVideoSettings
@@ -395,24 +395,24 @@ c_ Camera ?MW..
     ___ toggleLock
         __ camera.lockStatus() __ (QCamera.Searching, QCamera.Locked):
             camera.unlock()
-        ____ camera.lockStatus() == QCamera.Unlocked:
+        ____ camera.lockStatus() __ QCamera.Unlocked:
             camera.searchAndLock()
 
     ___ updateLockStatus  status, reason):
         indicationColor _ __.black
 
-        __ status == QCamera.Searching:
+        __ status __ QCamera.Searching:
             ui.statusbar.showMessage("Focusing...")
             ui.lockButton.sT..("Focusing...")
             indicationColor _ __.yellow
-        ____ status == QCamera.Locked:
+        ____ status __ QCamera.Locked:
             ui.lockButton.sT..("Unlock")
             ui.statusbar.showMessage("Focused", 2000)
             indicationColor _ __.darkGreen
-        ____ status == QCamera.Unlocked:
+        ____ status __ QCamera.Unlocked:
             ui.lockButton.sT..("Focus")
 
-            __ reason == QCamera.LockFailed:
+            __ reason __ QCamera.LockFailed:
                 ui.statusbar.showMessage("Focus Failed", 2000)
                 indicationColor _ __.red
 
@@ -432,13 +432,13 @@ c_ Camera ?MW..
 
     ___ updateCaptureMode
         tabIndex _ ui.captureWidget.currentIndex()
-        captureMode _ QCamera.CaptureStillImage __ tabIndex == 0 else QCamera.CaptureVideo
+        captureMode _ QCamera.CaptureStillImage __ tabIndex __ 0 ____ QCamera.CaptureVideo
 
         __ camera.isCaptureModeSupported(captureMode):
             camera.setCaptureMode(captureMode)
 
     ___ updateCameraState  state):
-        __ state == QCamera.ActiveState:
+        __ state __ QCamera.ActiveState:
             ui.actionStartCamera.sE.. F..
             ui.actionStopCamera.sE..( st.
             ui.captureWidget.sE..( st.
@@ -450,15 +450,15 @@ c_ Camera ?MW..
             ui.actionSettings.sE.. F..
 
     ___ updateRecorderState  state):
-        __ state == QMediaRecorder.StoppedState:
+        __ state __ QMediaRecorder.StoppedState:
             ui.recordButton.sE..( st.
             ui.pauseButton.sE..( st.
             ui.stopButton.sE.. F..
-        ____ state == QMediaRecorder.PausedState:
+        ____ state __ QMediaRecorder.PausedState:
             ui.recordButton.sE..( st.
             ui.pauseButton.sE.. F..
             ui.stopButton.sE..( st.
-        ____ state == QMediaRecorder.RecordingState:
+        ____ state __ QMediaRecorder.RecordingState:
             ui.recordButton.sE.. F..
             ui.pauseButton.sE..( st.
             ui.stopButton.sE..( st.

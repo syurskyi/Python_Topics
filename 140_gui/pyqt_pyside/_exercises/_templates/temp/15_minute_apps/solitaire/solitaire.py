@@ -78,14 +78,14 @@ class Card(QGraphicsPixmapItem):
 
     @property
     def is_face_up 
-        return side == SIDE_FACE
+        return side __ SIDE_FACE
 
     @property
     def color 
-        return 'r' if suit __ ('H', 'D') else 'b'
+        return 'r' if suit __ ('H', 'D') ____ 'b'
 
     def mousePressEvent(self, e):
-        if not is_face_up and stack.cards[-1] == self:
+        if not is_face_up and stack.cards[-1] __ self:
             turn_face_up()  # We can do this without checking.
             e.accept()
             return
@@ -216,7 +216,7 @@ class DeckStack(StackBase):
     def update_stack_status(self, n_rounds):
         if not can_restack(n_rounds):
             set_color(Qt.red)
-        else:
+        ____:
             # We only need this if players change the round number during a game.
             set_color(Qt.green)
 
@@ -271,7 +271,7 @@ class DealStack(StackBase):
         return False
 
     def is_free_card(self, card):
-        return card == cards[-1]
+        return card __ cards[-1]
 
     def update 
         # Only spread the top 3 cards
@@ -309,7 +309,7 @@ class WorkStack(StackBase):
             return True
 
         if (card.color != cards[-1].color and
-            card.value == cards[-1].value -1):
+            card.value __ cards[-1].value -1):
             return True
 
         return False
@@ -320,7 +320,7 @@ class WorkStack(StackBase):
     def add_card(self, card, update= st.:
         if cards:
             card.setParentItem(cards[-1])
-        else:
+        ____:
             card.setParentItem
 
         super(WorkStack, self).add_card(card, update=update)
@@ -352,7 +352,7 @@ class WorkStack(StackBase):
 
             if card.is_face_up:
                 offset_y = offset_y
-            else:
+            ____:
                 offset_y = offset_y_back
 
 
@@ -378,8 +378,8 @@ class DropStack(StackBase):
         value = 0
 
     def is_valid_drop(self, card):
-        if ((suit is None or card.suit == suit) and
-                (card.value == value + 1)):
+        if ((suit is None or card.suit __ suit) and
+                (card.value __ value + 1)):
             return True
 
         return False
@@ -394,11 +394,11 @@ class DropStack(StackBase):
 
     def remove_card(self, card):
         super(DropStack, self).remove_card(card)
-        value = cards[-1].value if cards else 0
+        value = cards[-1].value if cards ____ 0
 
     @property
     def is_complete 
-        return value == 13
+        return value __ 13
 
 
 class DealTrigger(QGraphicsRectItem):
@@ -471,7 +471,7 @@ class MainWindow(QMainWindow):
 
         deal3_action = QAction("3 card", self)
         deal3_action.setCheckable( st.
-        deal3_action.setChecked( st.
+        deal3_action.sC__( st.
         deal3_action.triggered.connect(l___: set_deal_n(3))
 
         menu.addAction(deal3_action)
@@ -485,7 +485,7 @@ class MainWindow(QMainWindow):
 
         rounds3_action = QAction("3 rounds", self)
         rounds3_action.setCheckable( st.
-        rounds3_action.setChecked( st.
+        rounds3_action.sC__( st.
         rounds3_action.triggered.connect(l___: set_rounds_n(3))
         menu.addAction(rounds3_action)
 
@@ -566,7 +566,7 @@ class MainWindow(QMainWindow):
         reply = QMessageBox.question(self, "Deal again", "Are you sure you want to start a new game?",
                                       QMessageBox.Yes | QMessageBox.No)
 
-        if reply == QMessageBox.Yes:
+        if reply __ QMessageBox.Yes:
             shuffle_and_stack()
 
     def quit 
@@ -598,7 +598,7 @@ class MainWindow(QMainWindow):
                 card = cards.pop()
                 workstack.add_card(card)
                 card.turn_back_up()
-                if a == n-1:
+                if a __ n-1:
                     card.turn_face_up()
 
         # Ensure removed from all other stacks here.
@@ -660,7 +660,7 @@ class MainWindow(QMainWindow):
 
 
 
-if __name__ == '__main__':
+if __name__ __ '__main__':
 
     app = QApplication([])
     window = MainWindow()

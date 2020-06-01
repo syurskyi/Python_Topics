@@ -194,7 +194,7 @@ c_ MainWindow ?MW..
     ___ openDialog
         dialog _ DetailsDialog("Enter Customer Details", self)
 
-        __ dialog.e.. == QDialog.Accepted:
+        __ dialog.e.. __ QDialog.Accepted:
             createLetter(dialog.senderName(), dialog.senderAddress(),
                     dialog.orderItems(), dialog.sendOffers())
 
@@ -287,7 +287,7 @@ c_ DetailsDialog(QDialog):
                 "Do you want to discard it?",
                 ?MB...Yes, ?MB...No)
 
-        __ answer == ?MB...Yes:
+        __ answer __ ?MB...Yes:
             reject()
 
 

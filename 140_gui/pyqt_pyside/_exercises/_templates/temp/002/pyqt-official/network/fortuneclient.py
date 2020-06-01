@@ -135,7 +135,7 @@ c_ Client(QDialog):
             settings.endGroup()
 
             config _ manager.configurationFromIdentifier(id)
-            __ config.state() & QNetworkConfiguration.Discovered == 0:
+            __ config.state() & QNetworkConfiguration.Discovered __ 0:
                 config _ manager.defaultConfiguration()
 
             networkSession _ QNetworkSession(config, self)
@@ -156,7 +156,7 @@ c_ Client(QDialog):
         instr _ QDataStream(tcpSocket)
         instr.setVersion(QDataStream.Qt_4_0)
 
-        __ blockSize == 0:
+        __ blockSize __ 0:
             __ tcpSocket.bytesAvailable() < 2:
                 r_
 
@@ -166,7 +166,7 @@ c_ Client(QDialog):
             r_
 
         nextFortune _ instr.readQString()
-        __ nextFortune == currentFortune:
+        __ nextFortune __ currentFortune:
             QTimer.singleShot(0, requestNewFortune)
             r_
 
@@ -175,13 +175,13 @@ c_ Client(QDialog):
         getFortuneButton.sE..( st.
 
     ___ displayError  socketError):
-        __ socketError == QAbstractSocket.RemoteHostClosedError:
+        __ socketError __ QAbstractSocket.RemoteHostClosedError:
             pass
-        ____ socketError == QAbstractSocket.HostNotFoundError:
+        ____ socketError __ QAbstractSocket.HostNotFoundError:
             ?MB...information  "Fortune Client",
                     "The host was not found. Please check the host name and "
                     "port settings.")
-        ____ socketError == QAbstractSocket.ConnectionRefusedError:
+        ____ socketError __ QAbstractSocket.ConnectionRefusedError:
             ?MB...information  "Fortune Client",
                     "The connection was refused by the peer. Make sure the "
                     "fortune server is running, and check that the host name "
@@ -201,7 +201,7 @@ c_ Client(QDialog):
     ___ sessionOpened
         config _ networkSession.configuration()
 
-        __ config.type() == QNetworkConfiguration.UserChoice:
+        __ config.type() __ QNetworkConfiguration.UserChoice:
             id _ networkSession.sessionProperty('UserChoiceConfiguration')
         ____
             id _ config.identifier()

@@ -162,7 +162,7 @@ c_ ChatMainWindow(QMainWindow, Ui_ChatMainWindow):
     ___ changeNickname 
         dialog _ NicknameDialog
 
-        __ dialog.e.. == QDialog.Accepted:
+        __ dialog.e.. __ QDialog.Accepted:
             old _ m_nickname
             m_nickname _ dialog.nickname.t__().strip()
             action.e..(old, "is now known as %s" % m_nickname)

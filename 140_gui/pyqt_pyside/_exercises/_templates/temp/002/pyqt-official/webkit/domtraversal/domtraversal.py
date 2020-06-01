@@ -60,7 +60,7 @@ c_ Window(QMainWindow, Ui_Window):
   
     ___ on_webView_loadFinished 
         # Begin document inspection.
-        treeWidget.clear()
+        treeWidget.c..
         frame _ webView.page().mainFrame()
         document _ frame.documentElement()
         examineChildElements(document, treeWidget.invisibleRootItem())

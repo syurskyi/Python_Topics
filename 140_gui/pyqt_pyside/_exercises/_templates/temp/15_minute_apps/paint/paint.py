@@ -89,8 +89,8 @@ class Canvas(QLabel):
     current_stamp = None
 
     def initialize
-        background_color = QColor(secondary_color) if secondary_color else QColor(Qt.white)
-        eraser_color = QColor(secondary_color) if secondary_color else QColor(Qt.white)
+        background_color = QColor(secondary_color) if secondary_color ____ QColor(Qt.white)
+        eraser_color = QColor(secondary_color) if secondary_color ____ QColor(Qt.white)
         eraser_color.setAlpha(100)
         reset()
 
@@ -176,9 +176,9 @@ class Canvas(QLabel):
     def generic_mousePressEvent(self, e):
         last_pos = e.pos()
 
-        if e.button() == Qt.LeftButton:
+        if e.button() __ Qt.LeftButton:
             active_color = primary_color
-        else:
+        ____:
             active_color = secondary_color
 
     def generic_mouseReleaseEvent(self, e):
@@ -189,7 +189,7 @@ class Canvas(QLabel):
     # Select polygon events
 
     def selectpoly_mousePressEvent(self, e):
-        if not locked or e.button == Qt.RightButton:
+        if not locked or e.button __ Qt.RightButton:
             active_shape_fn = 'drawPolygon'
             preview_pen = SELECTION_PEN
             generic_poly_mousePressEvent(e)
@@ -219,7 +219,7 @@ class Canvas(QLabel):
 
         pixmap = pixmap().copy()
         bitmap = QBitmap(*CANVAS_DIMENSIONS)
-        bitmap.clear()  # Starts with random data visible.
+        bitmap.c..  # Starts with random data visible.
 
         p = QPainter(bitmap)
         # Construct a mask where the user selected area will be kept, the rest removed from the image is transparent.
@@ -344,19 +344,19 @@ class Canvas(QLabel):
     # Text events
 
     def keyPressEvent(self, e):
-        if mode == 'text':
-            if e.key() == Qt.Key_Backspace:
+        if mode __ 'text':
+            if e.key() __ Qt.Key_Backspace:
                 current_text = current_text[:-1]
-            else:
+            ____:
                 current_text = current_text + e.text()
 
     def text_mousePressEvent(self, e):
-        if e.button() == Qt.LeftButton and current_pos is None:
+        if e.button() __ Qt.LeftButton and current_pos is None:
             current_pos = e.pos()
             current_text = ""
             timer_event = text_timerEvent
 
-        elif e.button() == Qt.LeftButton:
+        elif e.button() __ Qt.LeftButton:
 
             timer_cleanup()
             # Draw the text to the image
@@ -371,7 +371,7 @@ class Canvas(QLabel):
 
             reset_mode()
 
-        elif e.button() == Qt.RightButton and current_pos:
+        elif e.button() __ Qt.RightButton and current_pos:
             reset_mode()
 
     def text_timerEvent(self, final=False):
@@ -397,9 +397,9 @@ class Canvas(QLabel):
 
     def fill_mousePressEvent(self, e):
 
-        if e.button() == Qt.LeftButton:
+        if e.button() __ Qt.LeftButton:
             active_color = primary_color
-        else:
+        ____:
             active_color = secondary_color
 
         image = pixmap().toImage()
@@ -432,7 +432,7 @@ class Canvas(QLabel):
 
         while queue:
             x, y = queue.pop()
-            if image.pixel(x, y) == target_color:
+            if image.pixel(x, y) __ target_color:
                 p.drawPoint(QPoint(x, y))
                 queue.extend(get_cardinal_points(have_seen, (x, y)))
 
@@ -444,11 +444,11 @@ class Canvas(QLabel):
         c = pixmap().toImage().pixel(e.pos())
         hex = QColor(c).name()
 
-        if e.button() == Qt.LeftButton:
+        if e.button() __ Qt.LeftButton:
             set_primary_color(hex)
             primary_color_updated.e..(hex)  # Update UI.
 
-        elif e.button() == Qt.RightButton:
+        elif e.button() __ Qt.RightButton:
             set_secondary_color(hex)
             secondary_color_updated.e..(hex)  # Update UI.
 
@@ -535,15 +535,15 @@ class Canvas(QLabel):
 
     # Generic poly events
     def generic_poly_mousePressEvent(self, e):
-        if e.button() == Qt.LeftButton:
+        if e.button() __ Qt.LeftButton:
             if history_pos:
                 history_pos.append(e.pos())
-            else:
+            ____:
                 history_pos = [e.pos()]
                 current_pos = e.pos()
                 timer_event = generic_poly_timerEvent
 
-        elif e.button() == Qt.RightButton and history_pos:
+        elif e.button() __ Qt.RightButton and history_pos:
             # Clean up, we're not drawing
             timer_cleanup()
             reset_mode()
@@ -703,10 +703,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             btn.hex = hex  # For use in the event below
 
             def patch_mousePressEvent(self_, e):
-                if e.button() == Qt.LeftButton:
+                if e.button() __ Qt.LeftButton:
                     set_primary_color(self_.hex)
 
-                elif e.button() == Qt.RightButton:
+                elif e.button() __ Qt.RightButton:
                     set_secondary_color(self_.hex)
 
             btn.mousePressEvent = types.MethodType(patch_mousePressEvent, btn)
@@ -774,7 +774,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         actionFillShapes.triggered.connect(l___ s: canvas.set_config('fill', s))
         drawingToolbar.addAction(actionFillShapes)
-        actionFillShapes.setChecked( st.
+        actionFillShapes.sC__( st.
 
         show()
 
@@ -804,13 +804,13 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def copy_to_clipboard
         clipboard = QApplication.clipboard()
 
-        if canvas.mode == 'selectrect' and canvas.locked:
+        if canvas.mode __ 'selectrect' and canvas.locked:
             clipboard.setPixmap(canvas.selectrect_copy())
 
-        elif canvas.mode == 'selectpoly' and canvas.locked:
+        elif canvas.mode __ 'selectpoly' and canvas.locked:
             clipboard.setPixmap(canvas.selectpoly_copy())
 
-        else:
+        ____:
             clipboard.setPixmap(canvas.pixmap())
 
     def open_file
@@ -876,7 +876,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
 
 
-if __name__ == '__main__':
+if __name__ __ '__main__':
 
     app = QApplication([])
     window = MainWindow()

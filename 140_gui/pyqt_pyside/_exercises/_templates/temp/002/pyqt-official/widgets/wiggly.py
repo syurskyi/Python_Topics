@@ -86,7 +86,7 @@ c_ WigglyWidget(?W..):
         t__ _ newText
 
     ___ timerEvent  event):
-        __ event.timerId() == timer.timerId
+        __ event.timerId() __ timer.timerId
             step +_ 1
             update()
         ____

@@ -80,7 +80,7 @@ c_ PaletteGrid(_PaletteBase):
             )
             palette.aW..(b, row, col)
             col +_ 1
-            __ col == n_columns:
+            __ col __ n_columns:
                 col _ 0
                 row +_ 1
 

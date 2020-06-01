@@ -144,7 +144,7 @@ c_ Dialog(QDialog):
 
         native _ QCheckBox()
         native.sT..("Use native file dialog.")
-        native.setChecked( st.
+        native.sC__( st.
         __ ___.platform no. __ ("win32", "darwin"):
             native.hide()
 
@@ -269,9 +269,9 @@ c_ Dialog(QDialog):
         reply _ ?MB...critical  "QMessageBox.critical()",
                 Dialog.MESSAGE,
                 ?MB...Abort | ?MB...Retry | ?MB...Ignore)
-        __ reply == ?MB...Abort:
+        __ reply __ ?MB...Abort:
             criticalLabel.sT..("Abort")
-        ____ reply == ?MB...Retry:
+        ____ reply __ ?MB...Retry:
             criticalLabel.sT..("Retry")
         ____
             criticalLabel.sT..("Ignore")
@@ -279,7 +279,7 @@ c_ Dialog(QDialog):
     ___ informationMessage 
         reply _ ?MB...information
                 "QMessageBox.information()", Dialog.MESSAGE)
-        __ reply == ?MB...Ok:
+        __ reply __ ?MB...Ok:
             informationLabel.sT..("OK")
         ____
             informationLabel.sT..("Escape")
@@ -288,9 +288,9 @@ c_ Dialog(QDialog):
         reply _ ?MB...q..  "QMessageBox.question()",
                 Dialog.MESSAGE,
                 ?MB...Yes | ?MB...No | ?MB...Cancel)
-        __ reply == ?MB...Yes:
+        __ reply __ ?MB...Yes:
             questionLabel.sT..("Yes")
-        ____ reply == ?MB...No:
+        ____ reply __ ?MB...No:
             questionLabel.sT..("No")
         ____
             questionLabel.sT..("Cancel")
@@ -300,7 +300,7 @@ c_ Dialog(QDialog):
                 Dialog.MESSAGE, ?MB...NoButton, self)
         msgBox.addButton("Save &Again", ?MB...AcceptRole)
         msgBox.addButton("&Continue", ?MB...RejectRole)
-        __ msgBox.e.. == ?MB...AcceptRole:
+        __ msgBox.e.. __ ?MB...AcceptRole:
             warningLabel.sT..("Save Again")
         ____
             warningLabel.sT..("Continue")

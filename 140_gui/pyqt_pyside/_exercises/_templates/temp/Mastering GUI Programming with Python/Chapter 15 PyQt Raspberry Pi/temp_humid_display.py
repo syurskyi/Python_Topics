@@ -17,7 +17,7 @@ c_ HWButton(qtc.QObject):
         s_. - ()
         GPIO.setup(pin, GPIO.IN, pull_up_down_GPIO.PUD_UP)
         pin _ pin
-        pressed _ GPIO.__.. (pin) == GPIO.LOW
+        pressed _ GPIO.__.. (pin) __ GPIO.LOW
         # Using a timer to Poll
         #self.timer = qtc.QTimer(interval=50, timeout=self.check)
         #self.timer.start()
@@ -32,7 +32,7 @@ c_ HWButton(qtc.QObject):
         button_press.e..()
 
     ___ check 
-        pressed _ GPIO.__.. (pin) == GPIO.LOW
+        pressed _ GPIO.__.. (pin) __ GPIO.LOW
         __ pressed !_ pressed:
             __ pressed:
                 button_press.e..()

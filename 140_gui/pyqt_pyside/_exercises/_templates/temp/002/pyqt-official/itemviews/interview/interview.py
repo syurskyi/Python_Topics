@@ -109,18 +109,18 @@ c_ Model(QAbstractItemModel):
     ___ data  index, role):
         __ no. index.isValid
             r_ N..
-        ____ role == __.DisplayRole:
+        ____ role __ __.DisplayRole:
             r_ "Item %d:%s" % (index.row(), index.column())
-        ____ role == __.DecorationRole:
-            __ index.column() == 0:
+        ____ role __ __.DecorationRole:
+            __ index.column() __ 0:
                 r_ iconProvider.icon(QFileIconProvider.Folder)
             r_ iconProvider.icon(QFileIconProvider.File)
         r_ N..
 
     ___ headerData  section, orientation, role):
-        __ role == __.DisplayRole:
+        __ role __ __.DisplayRole:
             r_ str(section)
-        __ role == __.DecorationRole:
+        __ role __ __.DecorationRole:
             r_ services
         r_ super(Model, self).headerData(section, orientation, role)
 

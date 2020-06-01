@@ -165,7 +165,7 @@ c_ TreeModel(QAbstractItemModel):
         r_ rootItem
 
     ___ headerData  section, orientation, role_Qt.DisplayRole):
-        __ orientation == __.Horizontal and role == __.DisplayRole:
+        __ orientation __ __.Horizontal and role __ __.DisplayRole:
             r_ rootItem.data(section)
 
         r_ N..
@@ -204,7 +204,7 @@ c_ TreeModel(QAbstractItemModel):
         childItem _ getItem(index)
         parentItem _ childItem.parent()
 
-        __ parentItem == rootItem:
+        __ parentItem __ rootItem:
             r_ QModelIndex()
 
         r_ createIndex(parentItem.childNumber(), 0, parentItem)
@@ -214,7 +214,7 @@ c_ TreeModel(QAbstractItemModel):
         success _ rootItem.removeColumns(position, columns)
         endRemoveColumns()
 
-        __ rootItem.columnCount() == 0:
+        __ rootItem.columnCount() __ 0:
             removeRows(0, rowCount())
 
         r_ success
@@ -316,7 +316,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
 
         exitAction.t__.c..(?A...instance().quit)
 
-        view.selectionModel().selectionChanged.c..(updateActions)
+        view.selectionModel().sC__.c..(updateActions)
 
         actionsMenu.aboutToShow.c..(updateActions)
         insertRowAction.t__.c..(insertRow)
@@ -331,7 +331,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
         index _ view.selectionModel().currentIndex()
         model _ view.model()
 
-        __ model.columnCount(index) == 0:
+        __ model.columnCount(index) __ 0:
             __ no. model.insertColumn(0, index):
                 r_
 

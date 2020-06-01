@@ -75,7 +75,7 @@ c_ DragLabel(QLabel):
 
         dropAction _ drag.exec_(__.CopyAction | __.MoveAction, __.CopyAction)
 
-        __ dropAction == __.MoveAction:
+        __ dropAction __ __.MoveAction:
             c..
             update()
 
@@ -125,7 +125,7 @@ c_ DragWidget(?W..):
             hotSpot _ QPoint()
 
             hotSpotPos _ mime.data('application/x-hotspot').sp..(' ')
-            __ le.(hotSpotPos) == 2:
+            __ le.(hotSpotPos) __ 2:
                hotSpot.setX(hotSpotPos[0].toInt()[0])
                hotSpot.setY(hotSpotPos[1].toInt()[0])
 

@@ -66,22 +66,22 @@ c_ SpreadSheetItem(QTableWidgetItem):
     ___ data  role):
         __ role __ (__.EditRole, __.StatusTipRole):
             r_ formula()
-        __ role == __.DisplayRole:
+        __ role __ __.DisplayRole:
             r_ display()
         t _ str(display())
         ___
             number _ int(t)
         _____ ValueError:
             number _ N..
-        __ role == __.TextColorRole:
+        __ role __ __.TextColorRole:
             __ number __ N..:
                 r_ ?C..(__.black)
             ____ number < 0:
                 r_ ?C..(__.red)
             r_ ?C..(__.blue)
 
-        __ role == __.TextAlignmentRole:
-            __ t and (t[0].i_d.. or t[0] == '-'):
+        __ role __ __.TextAlignmentRole:
+            __ t and (t[0].i_d.. or t[0] __ '-'):
                 r_ __.AlignRight | __.AlignVCenter
         r_ super(SpreadSheetItem, self).data(role)
 
@@ -129,7 +129,7 @@ c_ SpreadSheetItem(QTableWidgetItem):
         _____ ValueError:
             pass
         result _ N..
-        __ op == "sum":
+        __ op __ "sum":
             sum_ _ 0
             ___ r __ range(firstRow, secondRow + 1):
                 ___ c __ range(firstCol, secondCol + 1):
@@ -140,18 +140,18 @@ c_ SpreadSheetItem(QTableWidgetItem):
                         _____ ValueError:
                             pass
             result _ sum_
-        ____ op == "+":
+        ____ op __ "+":
             result _ (firstVal + secondVal)
-        ____ op == "-":
+        ____ op __ "-":
             result _ (firstVal - secondVal)
-        ____ op == "*":
+        ____ op __ "*":
             result _ (firstVal * secondVal)
-        ____ op == "/":
-            __ secondVal == 0:
+        ____ op __ "/":
+            __ secondVal __ 0:
                 result _ "nan"
             ____
                 result _ (firstVal / secondVal)
-        ____ op == "=":
+        ____ op __ "=":
             __ start:
                 result _ start.t__()
         ____

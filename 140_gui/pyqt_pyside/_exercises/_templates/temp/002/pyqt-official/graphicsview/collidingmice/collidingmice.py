@@ -174,7 +174,7 @@ c_ Mouse(QGraphicsItem):
                 angle -_ 0.5
 
         # Add some random movement.
-        __ le.(dangerMice) > 1 and (qrand() % 10) == 0:
+        __ le.(dangerMice) > 1 and (qrand() % 10) __ 0:
             __ qrand() % 1:
                 angle +_ (qrand() % 100) / 500.0
             ____
@@ -183,7 +183,7 @@ c_ Mouse(QGraphicsItem):
         speed +_ (-50 + qrand() % 100) / 100.0
 
         dx _ math.sin(angle) * 10
-        mouseEyeDirection _ 0.0 __ qAbs(dx / 5) < 1 else dx / 5
+        mouseEyeDirection _ 0.0 __ qAbs(dx / 5) < 1 ____ dx / 5
 
         setRotation(rotation() + dx)
         setPos(mapToParent(0, -(3 + math.sin(speed) * 3)))

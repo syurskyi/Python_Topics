@@ -88,10 +88,10 @@ c_ MySortFilterProxyModel(QSortFilterProxyModel):
         __ no. isinstance(leftData, QDate):
             emailPattern _ QRegExp("([\\w\\.]*@[\\w\\.]*)")
 
-            __ left.column() == 1 and emailPattern.indexIn(leftData) !_ -1:
+            __ left.column() __ 1 and emailPattern.indexIn(leftData) !_ -1:
                 leftData _ emailPattern.cap(1)
 
-            __ right.column() == 1 and emailPattern.indexIn(rightData) !_ -1:
+            __ right.column() __ 1 and emailPattern.indexIn(rightData) !_ -1:
                 rightData _ emailPattern.cap(1)
 
         r_ leftData < rightData
@@ -121,7 +121,7 @@ c_ Window(?W..):
         sourceGroupBox.sL..(sourceLayout)
 
         filterCaseSensitivityCheckBox _ QCheckBox("Case sensitive filter")
-        filterCaseSensitivityCheckBox.setChecked( st.
+        filterCaseSensitivityCheckBox.sC__( st.
         filterPatternLineEdit _ ?LE..
         filterPatternLineEdit.sT..("Grace|Sports")
         filterPatternLabel _ QLabel("&Filter pattern:")
@@ -143,7 +143,7 @@ c_ Window(?W..):
 
         filterPatternLineEdit.tC...c..(textFilterChanged)
         filterSyntaxComboBox.currentIndexChanged.c..(textFilterChanged)
-        filterCaseSensitivityCheckBox.toggled.c..(textFilterChanged)
+        filterCaseSensitivityCheckBox.t__.c..(textFilterChanged)
         fromDateEdit.dateChanged.c..(dateFilterChanged)
         toDateEdit.dateChanged.c..(dateFilterChanged)
 
@@ -235,7 +235,7 @@ ___ createMailModel(parent):
     r_ model
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
     ______ ___
 

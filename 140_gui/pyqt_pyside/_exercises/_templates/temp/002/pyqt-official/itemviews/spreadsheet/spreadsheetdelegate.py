@@ -47,7 +47,7 @@ c_ SpreadSheetDelegate(QItemDelegate):
         super(SpreadSheetDelegate, self). - (parent)
 
     ___ createEditor  parent, styleOption, index):
-        __ index.column() == 1:
+        __ index.column() __ 1:
             editor _ ?DTE..(parent)
             editor.setDisplayFormat(parent().currentDateFormat)
             editor.setCalendarPopup( st.

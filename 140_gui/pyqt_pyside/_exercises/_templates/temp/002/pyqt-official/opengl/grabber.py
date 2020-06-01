@@ -195,7 +195,7 @@ c_ GLWidget(QOpenGLWidget):
         gl.glShadeModel(gl.GL_FLAT)
 
         ___ i __ range(2):
-            __ i == 0:
+            __ i __ 0:
                 sign _ +1.0
             ____
                 sign _ -1.0
@@ -232,7 +232,7 @@ c_ GLWidget(QOpenGLWidget):
                 s1 _ r1
                 s2 _ r2
 
-                __ j == 1:
+                __ j __ 1:
                     s1, s2 _ s2, s1
 
                 gl.glNormal3d(math.cos(angle), math.sin(angle), 0.0)
@@ -383,7 +383,7 @@ c_ MainWindow ?MW..
         pixmapLabel.setPixmap(pixmap)
         size _ pixmap.size()
 
-        __ size - ?S..(1, 0) == pixmapLabelArea.maximumViewportSize
+        __ size - ?S..(1, 0) __ pixmapLabelArea.maximumViewportSize
             size -_ ?S..(1, 0)
 
         pixmapLabel.r..(size)

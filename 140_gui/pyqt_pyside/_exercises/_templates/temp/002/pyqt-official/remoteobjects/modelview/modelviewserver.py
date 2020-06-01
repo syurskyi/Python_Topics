@@ -103,14 +103,14 @@ c_ TimerHandler(QObject):
 ___ addChild(numChildren, nestingLevel):
     result _   # list
 
-    __ nestingLevel == 0:
+    __ nestingLevel __ 0:
         r_ result
 
     ___ i __ range(numChildren):
         child _ QStandardItem(
                 "Child num {}, nesting level {}".format(i + 1, nestingLevel))
 
-        __ i == 0:
+        __ i __ 0:
             child.appendRow(addChild(numChildren, nestingLevel - 1))
 
         result.ap..(child)
@@ -131,11 +131,11 @@ __ ______ __ ______
 
     ___ i __ range(10000):
         firstItem _ QStandardItem("FancyTextNumber {}".format(i))
-        __ i == 0:
+        __ i __ 0:
             firstItem.appendRow(addChild(2, 2))
 
         secondItem _ QStandardItem("FancyRow2TextNumber {}".format(i))
-        __ i % 2 == 0:
+        __ i % 2 __ 0:
             firstItem.setBackground(__.red)
 
         sourceModel.invisibleRootItem().appendRow([firstItem, secondItem])

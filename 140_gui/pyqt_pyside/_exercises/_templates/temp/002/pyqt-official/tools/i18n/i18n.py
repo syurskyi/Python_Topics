@@ -67,7 +67,7 @@ c_ LanguageChooser(QDialog):
         ___ i, qmf __ en..(qmFiles):
             checkBox _ QCheckBox(languageName(qmf))
             qmFileForCheckBoxMap[checkBox] _ qmf
-            checkBox.toggled.c..(checkBoxToggled)
+            checkBox.t__.c..(checkBoxToggled)
             groupBoxLayout.aW..(checkBox, i / 2, i % 2)
 
         groupBox.sL..(groupBoxLayout)
@@ -90,7 +90,7 @@ c_ LanguageChooser(QDialog):
         sWT..("I18N")
 
     ___ eventFilter  object, event):
-        __ event.type() == QEvent.Close:
+        __ event.type() __ QEvent.Close:
             __ isinstance(object, MainWindow):
                 window _ object
 
@@ -101,7 +101,7 @@ c_ LanguageChooser(QDialog):
                     checkBox _ N..
 
                 __ checkBox:
-                    checkBox.setChecked F..
+                    checkBox.sC__ F..
 
         r_ ?W...eventFilter  object, event)
 
@@ -131,11 +131,11 @@ c_ LanguageChooser(QDialog):
 
     ___ showAll 
         ___ checkBox __ qmFileForCheckBoxMap.keys
-            checkBox.setChecked( st.
+            checkBox.sC__( st.
 
     ___ hideAll 
         ___ checkBox __ qmFileForCheckBoxMap.keys
-            checkBox.setChecked F..
+            checkBox.sC__ F..
 
     ___ findQmFiles 
         trans_dir _ QDir(':/translations')
@@ -190,7 +190,7 @@ c_ MainWindow ?MW..
         sWT..(tr("Language: %s") % tr("English"))
         statusBar().showMessage(tr("Internationalization Example"))
 
-        __ tr("LTR") == "RTL":
+        __ tr("LTR") __ "RTL":
             setLayoutDirection(__.RightToLeft)
 
     ___ createGroupBox 
@@ -198,7 +198,7 @@ c_ MainWindow ?MW..
         perspectiveRadioButton _ QRadioButton(tr("Perspective"))
         isometricRadioButton _ QRadioButton(tr("Isometric"))
         obliqueRadioButton _ QRadioButton(tr("Oblique"))
-        perspectiveRadioButton.setChecked( st.
+        perspectiveRadioButton.sC__( st.
 
         groupBoxLayout _ ?VBL..
         groupBoxLayout.aW..(perspectiveRadioButton)
@@ -207,7 +207,7 @@ c_ MainWindow ?MW..
         groupBox.sL..(groupBoxLayout)
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
     ______ ___
 

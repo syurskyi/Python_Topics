@@ -151,49 +151,49 @@ c_ Window(?W..):
         sWT..("Line Edits")
 
     ___ echoChanged  index):
-        __ index == 0:
+        __ index __ 0:
             echoLineEdit.setEchoMode(QLineEdit.Normal)
-        ____ index == 1:
+        ____ index __ 1:
             echoLineEdit.setEchoMode(QLineEdit.Password)
-        ____ index == 2:
+        ____ index __ 2:
             echoLineEdit.setEchoMode(QLineEdit.PasswordEchoOnEdit)
-        ____ index == 3:
+        ____ index __ 3:
     	    echoLineEdit.setEchoMode(QLineEdit.NoEcho)
 
     ___ validatorChanged  index):
-        __ index == 0:
+        __ index __ 0:
             validatorLineEdit.sV..(0)
-        ____ index == 1:
+        ____ index __ 1:
             validatorLineEdit.sV..(QIntValidator(validatorLineEdit))
-        ____ index == 2:
+        ____ index __ 2:
             validatorLineEdit.sV..(QDoubleValidator(-999.0, 999.0, 2, validatorLineEdit))
 
-        validatorLineEdit.clear()
+        validatorLineEdit.c..
 
     ___ alignmentChanged  index):
-        __ index == 0:
+        __ index __ 0:
             alignmentLineEdit.setAlignment(__.AlignLeft)
-        ____ index == 1:
+        ____ index __ 1:
             alignmentLineEdit.setAlignment(__.AlignCenter)
-        ____ index == 2:
+        ____ index __ 2:
     	    alignmentLineEdit.setAlignment(__.AlignRight)
 
     ___ inputMaskChanged  index):
-        __ index == 0:
+        __ index __ 0:
             inputMaskLineEdit.setInputMask('')
-        ____ index == 1:
+        ____ index __ 1:
             inputMaskLineEdit.setInputMask('+99 99 99 99 99;_')
-        ____ index == 2:
+        ____ index __ 2:
             inputMaskLineEdit.setInputMask('0000-00-00')
             inputMaskLineEdit.sT..('00000000')
             inputMaskLineEdit.setCursorPosition(0)
-        ____ index == 3:
+        ____ index __ 3:
             inputMaskLineEdit.setInputMask('>AAAAA-AAAAA-AAAAA-AAAAA-AAAAA;#')
 
     ___ accessChanged  index):
-        __ index == 0:
+        __ index __ 0:
             accessLineEdit.setReadOnly F..
-        ____ index == 1:
+        ____ index __ 1:
             accessLineEdit.setReadOnly( st.
 
 

@@ -165,8 +165,8 @@ c_ AddressBook(?W..):
         oldName _ nameLine.t__()
         oldAddress _ addressText.toPlainText()
 
-        nameLine.clear()
-        addressText.clear()
+        nameLine.c..
+        addressText.c..
 
         updateInterface(AddingMode)
 
@@ -180,12 +180,12 @@ c_ AddressBook(?W..):
         name _ nameLine.t__()
         address _ addressText.toPlainText()
 
-        __ name == "" or address == "":
+        __ name __ "" or address __ "":
             ?MB...information  "Empty Field",
                     "Please enter a name and address.")
             r_
 
-        __ currentMode == AddingMode:
+        __ currentMode __ AddingMode:
             __ name no. __ contacts:
                 contacts[name] _ address
                 ?MB...information  "Add Successful",
@@ -195,7 +195,7 @@ c_ AddressBook(?W..):
                         "Sorry, \"%s\" is already in your address book." % name)
                 r_
 
-        ____ currentMode == EditingMode:
+        ____ currentMode __ EditingMode:
             __ oldName !_ name:
                 __ name no. __ contacts:
                     ?MB...information  "Edit Successful",
@@ -227,7 +227,7 @@ c_ AddressBook(?W..):
                     "Are you sure you want to remove \"%s\"?" % name,
                     ?MB...Yes | ?MB...No)
 
-            __ button == ?MB...Yes:
+            __ button __ ?MB...Yes:
                 previous()
                 del contacts[name]
 
@@ -244,7 +244,7 @@ c_ AddressBook(?W..):
             w__ T..
                 this_name, _ _ it.next()
 
-                __ this_name == name:
+                __ this_name __ name:
                     next_name, next_address _ it.next()
                     break
         _____ StopIteration:
@@ -258,14 +258,14 @@ c_ AddressBook(?W..):
 
         prev_name _ prev_address _ N..
         ___ this_name, this_address __ contacts:
-            __ this_name == name:
+            __ this_name __ name:
                 break
 
             prev_name _ this_name
             prev_address _ this_address
         ____
-            nameLine.clear()
-            addressText.clear()
+            nameLine.c..
+            addressText.c..
             r_
 
         __ prev_name __ N..:
@@ -278,7 +278,7 @@ c_ AddressBook(?W..):
     ___ findContact 
         dialog.s..
 
-        __ dialog.e.. == QDialog.Accepted:
+        __ dialog.e.. __ QDialog.Accepted:
             contactName _ dialog.getFindText()
 
             __ contactName __ contacts:
@@ -312,10 +312,10 @@ c_ AddressBook(?W..):
             loadButton.sE.. F..
             saveButton.sE.. F..
 
-        ____ currentMode == NavigationMode:
+        ____ currentMode __ NavigationMode:
             __ no. contacts:
-                nameLine.clear()
-                addressText.clear()
+                nameLine.c..
+                addressText.c..
 
             nameLine.setReadOnly( st.
             addressText.setReadOnly( st.
@@ -368,7 +368,7 @@ c_ AddressBook(?W..):
         contacts _ pickle.load(in_file)
         in_file.c..
 
-        __ le.(contacts) == 0:
+        __ le.(contacts) __ 0:
             ?MB...information  "No contacts in file",
                     "The file you are attempting to open contains no "
                     "contacts.")
@@ -410,7 +410,7 @@ c_ FindDialog(QDialog):
             r_
 
         findText _ t__
-        lineEdit.clear()
+        lineEdit.c..
         hide()
 
     ___ getFindText 

@@ -164,7 +164,7 @@ c_ BubblesWidget(BaseClass):
 
     ___ mousePressEvent  event):
 
-        __ event.button() == __.LeftButton and newBubble __ N..:
+        __ event.button() __ __.LeftButton and newBubble __ N..:
 
             newBubble _ Bubble(QPointF(event.pos()), 4.0,
                                     1.0 + random.random() * 7,
@@ -325,7 +325,7 @@ c_ BubblesWidget(BaseClass):
         animation_timer.start(25)
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
     ______ ___
 

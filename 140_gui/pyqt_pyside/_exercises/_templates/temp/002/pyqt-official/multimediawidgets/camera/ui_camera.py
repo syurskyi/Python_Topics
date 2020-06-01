@@ -153,7 +153,7 @@ c_ Ui_Camera(object):
         actionExit.t__.c..(Camera.close)
         takeImageButton.c__.c..(Camera.takeImage)
         lockButton.c__.c..(Camera.toggleLock)
-        muteButton.toggled['bool'].c..(Camera.setMuted)
+        muteButton.t__['bool'].c..(Camera.setMuted)
         exposureCompensation.valueChanged['int'].c..(Camera.setExposureCompensation)
         actionSettings.t__.c..(Camera.configureCaptureSettings)
         actionStartCamera.t__.c..(Camera.startCamera)

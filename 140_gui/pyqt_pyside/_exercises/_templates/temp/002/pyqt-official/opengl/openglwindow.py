@@ -108,7 +108,7 @@ c_ OpenGLWindow(QWindow):
             renderLater()
 
     ___ event  event):
-        __ event.type() == QEvent.UpdateRequest:
+        __ event.type() __ QEvent.UpdateRequest:
             renderNow()
             r_ True
 

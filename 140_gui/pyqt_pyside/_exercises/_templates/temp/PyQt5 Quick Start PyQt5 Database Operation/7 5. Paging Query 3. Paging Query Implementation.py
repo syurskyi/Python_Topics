@@ -80,7 +80,7 @@ c_ DataGrid(?W..):
         sql _ "SELECT * FROM student"
         queryModel.setQuery(sql, db)
         totalRecordCount _ queryModel.rowCount()
-        __ totalRecordCount % pageRecordCount == 0:
+        __ totalRecordCount % pageRecordCount __ 0:
             totalPage _ totalRecordCount / pageRecordCount
         ____
             totalPage _ int(totalRecordCount / pageRecordCount) + 1
@@ -107,7 +107,7 @@ c_ DataGrid(?W..):
         __ no. match:
             ?MB...information  "Tips", "please enter a number.")
             r_
-        __ szText == "":
+        __ szText __ "":
             ?MB...information  "Tips", "Please enter a jump page.")
             r_
         pageIndex _ int(szText)
@@ -143,7 +143,7 @@ c_ DataGrid(?W..):
     ___ closeEvent  event):
         db.c..
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     app _ ?A..(___.a..
     window _ DataGrid()
     window.s..

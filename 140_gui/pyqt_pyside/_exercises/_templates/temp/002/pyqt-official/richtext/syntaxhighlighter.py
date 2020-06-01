@@ -67,7 +67,7 @@ c_ MainWindow ?MW..
                 "rules using regular expressions.</p>")
 
     ___ newFile
-        editor.clear()
+        editor.c..
 
     ___ openFile  path_None):
         __ no. path:
@@ -181,7 +181,7 @@ c_ Highlighter(QSyntaxHighlighter):
         w__ startIndex >_ 0:
             endIndex _ commentEndExpression.indexIn(t__, startIndex)
 
-            __ endIndex == -1:
+            __ endIndex __ -1:
                 setCurrentBlockState(1)
                 commentLength _ le.(t__) - startIndex
             ____

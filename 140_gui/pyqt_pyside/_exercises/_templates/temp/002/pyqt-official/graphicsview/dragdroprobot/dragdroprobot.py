@@ -89,7 +89,7 @@ c_ ColorItem(QGraphicsItem):
         drag.setMimeData(mime)
 
         ColorItem.n +_ 1
-        __ ColorItem.n > 2 and qrand() % 3 == 0:
+        __ ColorItem.n > 2 and qrand() % 3 __ 0:
             root _ QFileInfo(__file__).absolutePath()
 
             image _ QImage(root + '/images/head.png')
@@ -161,7 +161,7 @@ c_ RobotHead(RobotPart):
 
     ___ paint  painter, option, widget_None):
         __ pixmap.isNull
-            painter.setBrush(color.lighter(130) __ dragOver else color)
+            painter.setBrush(color.lighter(130) __ dragOver ____ color)
             painter.drawRoundedRect(-10, -30, 20, 30, 25, 25, __.RelativeSize)
             painter.setBrush(__.white)
             painter.drawEllipse(-7, -3 - 20, 7, 7)
@@ -198,7 +198,7 @@ c_ RobotTorso(RobotPart):
         r_ QRectF(-30, -20, 60, 60)
 
     ___ paint  painter, option, widget_None):
-        painter.setBrush(color.lighter(130) __ dragOver else color)
+        painter.setBrush(color.lighter(130) __ dragOver ____ color)
         painter.drawRoundedRect(-20, -20, 40, 60, 25, 25, __.RelativeSize)
         painter.drawEllipse(-25, -20, 20, 20)
         painter.drawEllipse(5, -20, 20, 20)
@@ -211,7 +211,7 @@ c_ RobotLimb(RobotPart):
         r_ QRectF(-5, -5, 40, 10)
 
     ___ paint  painter, option, widget_None):
-        painter.setBrush(color.lighter(130) __ dragOver else  color)
+        painter.setBrush(color.lighter(130) __ dragOver ____  color)
         painter.drawRoundedRect(boundingRect(), 50, 50, __.RelativeSize)
         painter.drawEllipse(-5, -5, 10, 10)
 
@@ -282,7 +282,7 @@ c_ GraphicsView(QGraphicsView):
         pass
 
 
-__ __name__== '__main__':
+__ __name____ '__main__':
 
     ______ ___
     ______ math

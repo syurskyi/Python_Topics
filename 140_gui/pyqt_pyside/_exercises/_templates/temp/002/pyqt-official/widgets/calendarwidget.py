@@ -134,11 +134,11 @@ c_ Window(?W..):
         t__ _ headerTextFormatCombo.currentText()
         format _ QTextCharFormat()
 
-        __ t__ == "Bold":
+        __ t__ __ "Bold":
             format.setFontWeight(QFont.Bold)
-        ____ t__ == "Italic":
+        ____ t__ __ "Italic":
             format.setFontItalic( st.
-        ____ t__ == "Green":
+        ____ t__ __ "Green":
             format.setForeground(__.green)
 
         calendar.setHeaderTextFormat(format)
@@ -193,7 +193,7 @@ c_ Window(?W..):
             language _ locale.nativeLanguageName()
             country _ locale.nativeCountryName()
 
-            __ language == this_language and country == this_country:
+            __ language __ this_language and country __ this_country:
                 curLocaleIndex _ index
 
             localeCombo.aI..('%s/%s' % (language, country), locale)
@@ -226,10 +226,10 @@ c_ Window(?W..):
         selectionModeLabel.setBuddy(selectionModeCombo)
 
         gridCheckBox _ QCheckBox("&Grid")
-        gridCheckBox.setChecked(calendar.isGridVisible())
+        gridCheckBox.sC__(calendar.isGridVisible())
 
         navigationCheckBox _ QCheckBox("&Navigation bar")
-        navigationCheckBox.setChecked( st.
+        navigationCheckBox.sC__( st.
 
         horizontalHeaderCombo _ ?CB()
         horizontalHeaderCombo.aI..("Single letter day names",
@@ -258,8 +258,8 @@ c_ Window(?W..):
         firstDayCombo.currentIndexChanged.c..(firstDayChanged)
         selectionModeCombo.currentIndexChanged.c..(
                 selectionModeChanged)
-        gridCheckBox.toggled.c..(calendar.setGridVisible)
-        navigationCheckBox.toggled.c..(
+        gridCheckBox.t__.c..(calendar.setGridVisible)
+        navigationCheckBox.t__.c..(
                 calendar.setNavigationBarVisible)
         horizontalHeaderCombo.currentIndexChanged.c..(
                 horizontalHeaderChanged)
@@ -321,7 +321,7 @@ c_ Window(?W..):
         maximumDateLabel.setBuddy(maximumDateEdit)
 
         currentDateEdit.dateChanged.c..(calendar.setSelectedDate)
-        calendar.selectionChanged.c..(selectedDateChanged)
+        calendar.sC__.c..(selectedDateChanged)
         minimumDateEdit.dateChanged.c..(minimumDateChanged)
         maximumDateEdit.dateChanged.c..(maximumDateChanged)
  
@@ -371,8 +371,8 @@ c_ Window(?W..):
                 weekendFormatChanged)
         headerTextFormatCombo.currentIndexChanged.c..(
                 reformatHeaders)
-        firstFridayCheckBox.toggled.c..(reformatCalendarPage)
-        mayFirstCheckBox.toggled.c..(reformatCalendarPage)
+        firstFridayCheckBox.t__.c..(reformatCalendarPage)
+        mayFirstCheckBox.t__.c..(reformatCalendarPage)
 
         checkBoxLayout _ QHBoxLayout()
         checkBoxLayout.aW..(firstFridayCheckBox)

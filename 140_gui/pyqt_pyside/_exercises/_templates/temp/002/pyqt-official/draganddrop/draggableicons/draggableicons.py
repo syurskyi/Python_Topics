@@ -78,7 +78,7 @@ c_ DragWidget(QFrame):
 
     ___ dragEnterEvent  event):
         __ event.mimeData().hasFormat('application/x-dnditemdata'):
-            __ event.source() == self:
+            __ event.source() __ self:
                 event.setDropAction(__.MoveAction)
                 event.accept()
             ____
@@ -103,7 +103,7 @@ c_ DragWidget(QFrame):
             newIcon.s..
             newIcon.setAttribute(__.WA_DeleteOnClose)
 
-            __ event.source() == self:
+            __ event.source() __ self:
                 event.setDropAction(__.MoveAction)
                 event.accept()
             ____
@@ -138,7 +138,7 @@ c_ DragWidget(QFrame):
 
         child.setPixmap(tempPixmap)
 
-        __ drag.exec_(__.CopyAction | __.MoveAction, __.CopyAction) == __.MoveAction:
+        __ drag.exec_(__.CopyAction | __.MoveAction, __.CopyAction) __ __.MoveAction:
             child.c..
         ____
             child.s..

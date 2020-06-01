@@ -97,12 +97,12 @@ c_ MainWindow(qtw.QMainWindow):
     ___ submit
         url _ qtc.QUrl(url.t__())
         filename _ fname.t__()
-        __ filename == '(No File)':
+        __ filename __ '(No File)':
             filename _ N..
         data _   # dict
         ___ rownum __ range(table.rowCount()):
             key_item _ table.item(rownum, 0)
-            key _ key_item.t__() __ key_item else N..
+            key _ key_item.t__() __ key_item ____ N..
             __ key:
                 data[key] _ table.item(rownum, 1).t__()
         poster.make_request(url, data, filename)

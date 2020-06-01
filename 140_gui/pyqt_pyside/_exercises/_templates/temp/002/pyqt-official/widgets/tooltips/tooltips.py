@@ -133,7 +133,7 @@ c_ SortingBox(?W..):
                 initialItemColor())
 
     ___ event  event):
-        __ event.type() == QEvent.ToolTip:
+        __ event.type() __ QEvent.ToolTip:
             helpEvent _ event
             index _ itemAt(helpEvent.pos())
             __ index !_ -1:
@@ -166,7 +166,7 @@ c_ SortingBox(?W..):
             painter.translate(-shapeItem.position())
 
     ___ mousePressEvent  event):
-        __ event.button() == __.LeftButton:
+        __ event.button() __ __.LeftButton:
             index _ itemAt(event.pos())
             __ index !_ -1:
                 itemInMotion _ shapeItems[index]
@@ -183,7 +183,7 @@ c_ SortingBox(?W..):
             moveItemTo(event.pos())
 
     ___ mouseReleaseEvent  event):
-        __ (event.button() == __.LeftButton) and itemInMotion:
+        __ (event.button() __ __.LeftButton) and itemInMotion:
             moveItemTo(event.pos())
             itemInMotion _ N..
 
@@ -247,7 +247,7 @@ c_ SortingBox(?W..):
     ___ initialItemPosition  path):
         y _ (height() - path.controlPointRect().height()) / 2
 
-        __ le.(shapeItems) == 0:
+        __ le.(shapeItems) __ 0:
             x _ ((3 * width()) / 2 - path.controlPointRect().width()) / 2
         ____
             x _ (width() / le.(shapeItems) - path.controlPointRect().width()) / 2
@@ -268,7 +268,7 @@ c_ SortingBox(?W..):
         r_ ?C...fromHsv(random.randint(0, 256), 255, 190)
 
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
 
     ______ ___
 

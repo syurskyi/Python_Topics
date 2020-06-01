@@ -90,7 +90,7 @@ c_ RegExpDialog(QDialog):
         textLabel.setBuddy(textComboBox)
 
         caseSensitiveCheckBox _ QCheckBox("Case &Sensitive")
-        caseSensitiveCheckBox.setChecked( st.
+        caseSensitiveCheckBox.sC__( st.
         minimalCheckBox _ QCheckBox("&Minimal")
 
         indexLabel _ QLabel("Index of Match:")
@@ -136,8 +136,8 @@ c_ RegExpDialog(QDialog):
 
         patternComboBox.editTextChanged.c..(refresh)
         textComboBox.editTextChanged.c..(refresh)
-        caseSensitiveCheckBox.toggled.c..(refresh)
-        minimalCheckBox.toggled.c..(refresh)
+        caseSensitiveCheckBox.t__.c..(refresh)
+        minimalCheckBox.t__.c..(refresh)
         syntaxComboBox.currentIndexChanged.c..(refresh)
 
         patternComboBox.aI..("[A-Za-z_]+([A-Za-z_0-9]*)")
@@ -159,7 +159,7 @@ c_ RegExpDialog(QDialog):
         escapedPatternLineEdit.sT..('"' + escaped + '"')
 
         rx _ QRegExp(pattern)
-        cs _ __.CaseSensitive __ caseSensitiveCheckBox.isChecked() else __.CaseInsensitive
+        cs _ __.CaseSensitive __ caseSensitiveCheckBox.isChecked() ____ __.CaseInsensitive
         rx.setCaseSensitivity(cs)
         rx.setMinimal(minimalCheckBox.isChecked())
         syntax _ syntaxComboBox.itemData(syntaxComboBox.currentIndex())

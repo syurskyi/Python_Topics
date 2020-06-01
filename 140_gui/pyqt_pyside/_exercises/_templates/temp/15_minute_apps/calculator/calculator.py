@@ -62,7 +62,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
         display()
 
     ___ input_number  v):
-        __ state == READY:
+        __ state __ READY:
             state _ INPUT
             stack[-1] _ v
         ____
@@ -86,7 +86,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
     ___ equals
         # Support to allow '=' to repeat previous operation
         # if no further input has been added.
-        __ state == READY and last_operation:
+        __ state __ READY and last_operation:
             s, current_op _ last_operation
             stack.ap..(s)
 

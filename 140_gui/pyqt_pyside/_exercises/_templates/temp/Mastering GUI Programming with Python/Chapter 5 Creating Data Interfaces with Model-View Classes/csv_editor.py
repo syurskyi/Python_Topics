@@ -34,15 +34,15 @@ c_ CsvTableModel(qtc.QAbstractTableModel):
 
     ___ headerData  section, orientation, role):
 
-        __ orientation == qtc.__.Horizontal and role == qtc.__.DisplayRole:
+        __ orientation __ qtc.__.Horizontal and role __ qtc.__.DisplayRole:
             r_ _headers[section]
         ____
             r_ s_.headerData(section, orientation, role)
 
-    ___ sort  column, order):
+    ___ s..  column, order):
         layoutAboutToBeChanged.e..()  # needs to be emitted before a sort
-        _data.sort(key_lambda x: x[column])
-        __ order == qtc.__.DescendingOrder:
+        _data.s..(key_lambda x: x[column])
+        __ order __ qtc.__.DescendingOrder:
             _data.reverse()
         layoutChanged.e..()  # needs to be emitted after a sort
 
@@ -52,7 +52,7 @@ c_ CsvTableModel(qtc.QAbstractTableModel):
         r_ s_.flags(index) | qtc.__.ItemIsEditable
 
     ___ setData  index, value, role):
-        __ index.isValid() and role == qtc.__.EditRole:
+        __ index.isValid() and role __ qtc.__.EditRole:
             _data[index.row()][index.column()] _ value
             dataChanged.e..(index, index, [role])
             r_ True
@@ -142,12 +142,12 @@ c_ MainWindow(qtw.QMainWindow):
 
     ___ insert_above
         selected _ tableview.selectedIndexes()
-        row _ selected[0].row() __ selected else 0
+        row _ selected[0].row() __ selected ____ 0
         model.insertRows(row, 1, N..)
 
     ___ insert_below
         selected _ tableview.selectedIndexes()
-        row _ selected[-1].row() __ selected else model.rowCount(N..)
+        row _ selected[-1].row() __ selected ____ model.rowCount(N..)
         model.insertRows(row + 1, 1, N..)
 
     ___ remove_rows

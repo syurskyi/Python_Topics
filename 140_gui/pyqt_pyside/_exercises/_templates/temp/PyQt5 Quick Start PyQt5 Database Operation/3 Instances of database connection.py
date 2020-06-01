@@ -2,7 +2,7 @@ ______ ___
 ____ ?.?S.. ______ ?SD..
 ____ ?.?C.. ______ *
 
-__ __name__ == "__main__":
+__ __name__ __ "__main__":
     app _ QCoreApplication(___.a..
     db _ ?SD...aD..("QSQLITE")
     db.sDN..("test.db")

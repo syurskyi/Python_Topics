@@ -105,7 +105,7 @@ c_ FinalWidget(QFrame):
         """ Check for left mouse button presses in order to enable drag and
             drop.
         """
-        __ event.button() == __.LeftButton:
+        __ event.button() __ __.LeftButton:
             dragStartPosition _ event.pos()
 
     ___ pixmap 
@@ -307,7 +307,7 @@ c_ Viewer ?MW..
         menuMap[fullBrightness] _ Full
 
         currentBrightness _ fullBrightness
-        currentBrightness.setChecked( st.
+        currentBrightness.sC__( st.
         brightnessMenu.sE.. F..
 
         mB.. .aM..(fileMenu)
@@ -378,9 +378,9 @@ c_ Viewer ?MW..
         __ brightness __ N..:
             r_
 
-        currentBrightness.setChecked F..
+        currentBrightness.sC__ F..
         currentBrightness _ action
-        currentBrightness.setChecked( st.
+        currentBrightness.sC__( st.
 
         createImage()
 

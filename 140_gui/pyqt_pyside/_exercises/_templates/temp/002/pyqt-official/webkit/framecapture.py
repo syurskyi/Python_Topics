@@ -96,7 +96,7 @@ c_ FrameCapture(QObject):
         cout("Loading %s\n" % url.toString())
         _percent _ 0
         index _ outputFileName.rfind('.')
-        _fileName _ index == -1 and outputFileName + ".png" or outputFileName
+        _fileName _ index __ -1 and outputFileName + ".png" or outputFileName
         _page.mainFrame().load(url)
         _page.setViewportSize(?S..(1024, 768))
  

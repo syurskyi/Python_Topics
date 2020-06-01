@@ -65,7 +65,7 @@ __ ______ __ ______
     app _ ?A..(___.a..
     Colors.parseArgs(___.a..
 
-    __ ___.platform == 'win32':
+    __ ___.platform __ 'win32':
         ?MB...information(N.., "Documentation Warning",
                 "If you are using the GPL version of PyQt from the binary "
                 "installer then you will probably see warning messages about "

@@ -239,7 +239,7 @@ c_ MainWindow ?MW..
         alignmentGroup.aA..(rightAlignAct)
         alignmentGroup.aA..(justifyAct)
         alignmentGroup.aA..(centerAct)
-        leftAlignAct.setChecked( st.
+        leftAlignAct.sC__( st.
 
     ___ createMenus
         fileMenu _ mB.. .aM..("&File")

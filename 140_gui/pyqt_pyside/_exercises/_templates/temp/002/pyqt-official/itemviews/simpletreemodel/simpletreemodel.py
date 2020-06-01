@@ -113,7 +113,7 @@ c_ TreeModel(QAbstractItemModel):
         r_ __.ItemIsEnabled | __.ItemIsSelectable
 
     ___ headerData  section, orientation, role):
-        __ orientation == __.Horizontal and role == __.DisplayRole:
+        __ orientation __ __.Horizontal and role __ __.DisplayRole:
             r_ rootItem.data(section)
 
         r_ N..
@@ -140,7 +140,7 @@ c_ TreeModel(QAbstractItemModel):
         childItem _ index.internalPointer()
         parentItem _ childItem.parent()
 
-        __ parentItem == rootItem:
+        __ parentItem __ rootItem:
             r_ QModelIndex()
 
         r_ createIndex(parentItem.row(), 0, parentItem)

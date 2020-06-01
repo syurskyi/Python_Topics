@@ -107,20 +107,20 @@ c_ TextEdit(?TE..):
                 # Let the completer do default behavior.
                 r_
 
-        isShortcut _ ((e.modifiers() & __.ControlModifier) !_ 0 and e.key() == __.Key_E)
+        isShortcut _ ((e.modifiers() & __.ControlModifier) !_ 0 and e.key() __ __.Key_E)
         __ _completer __ N.. or no. isShortcut:
             # Do not process the shortcut when we have a completer.
             super(TextEdit, self).keyPressEvent(e)
 
         ctrlOrShift _ e.modifiers() & (__.ControlModifier | __.ShiftModifier)
-        __ _completer __ N.. or (ctrlOrShift and le.(e.t__()) == 0):
+        __ _completer __ N.. or (ctrlOrShift and le.(e.t__()) __ 0):
             r_
 
         eow _ "~!@#$%^&*()_+{}|:\"<>?,./;'[]\\-="
         hasModifier _ (e.modifiers() !_ __.NoModifier) and no. ctrlOrShift
         completionPrefix _ textUnderCursor()
 
-        __ no. isShortcut and (hasModifier or le.(e.t__()) == 0 or le.(completionPrefix) < 3 or e.t__()[-1] __ eow):
+        __ no. isShortcut and (hasModifier or le.(e.t__()) __ 0 or le.(completionPrefix) < 3 or e.t__()[-1] __ eow):
             _completer.popup().hide()
             r_
 

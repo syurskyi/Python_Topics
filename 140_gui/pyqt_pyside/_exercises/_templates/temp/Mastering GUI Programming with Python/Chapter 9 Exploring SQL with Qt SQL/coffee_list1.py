@@ -28,7 +28,7 @@ c_ CoffeeForm ?.?W..
         coffee_brand.sT..(coffee_data.g..('coffee_brand'))
         coffee_name.sT..(coffee_data.g..('coffee_name'))
         roast.setCurrentIndex(coffee_data.g..('roast_id'))
-        reviews.clear()
+        reviews.c..
         reviews.setHorizontalHeaderLabels(
             ['Reviewer', 'Date', 'Review'])
         reviews.setRowCount(le.(reviews))

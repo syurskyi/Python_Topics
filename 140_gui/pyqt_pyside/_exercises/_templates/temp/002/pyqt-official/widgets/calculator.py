@@ -160,11 +160,11 @@ c_ Calculator(?W..):
         clickedButton _ sender()
         digitValue _ int(clickedButton.t__())
 
-        __ display.t__() == '0' and digitValue == 0.0:
+        __ display.t__() __ '0' and digitValue __ 0.0:
             r_
 
         __ waitingForOperand:
-            display.clear()
+            display.c..
             waitingForOperand _ False
 
         display.sT..(display.t__() + str(digitValue))
@@ -174,16 +174,16 @@ c_ Calculator(?W..):
         clickedOperator _ clickedButton.t__()
         operand _ float(display.t__())
 
-        __ clickedOperator == "Sqrt":
+        __ clickedOperator __ "Sqrt":
             __ operand < 0.0:
                 abortOperation()
                 r_
 
             result _ math.sqrt(operand)
-        ____ clickedOperator == u"x\N{SUPERSCRIPT TWO}":
+        ____ clickedOperator __ u"x\N{SUPERSCRIPT TWO}":
             result _ math.pow(operand, 2.0)
-        ____ clickedOperator == "1/x":
-            __ operand == 0.0:
+        ____ clickedOperator __ "1/x":
+            __ operand __ 0.0:
                 abortOperation()
                 r_
 
@@ -332,14 +332,14 @@ c_ Calculator(?W..):
         display.sT..("####")
 
     ___ calculate  rightOperand, pendingOperator):
-        __ pendingOperator == "+":
+        __ pendingOperator __ "+":
             sumSoFar +_ rightOperand
-        ____ pendingOperator == "-":
+        ____ pendingOperator __ "-":
             sumSoFar -_ rightOperand
-        ____ pendingOperator == u"\N{MULTIPLICATION SIGN}":
+        ____ pendingOperator __ u"\N{MULTIPLICATION SIGN}":
             factorSoFar *_ rightOperand
-        ____ pendingOperator == u"\N{DIVISION SIGN}":
-            __ rightOperand == 0.0:
+        ____ pendingOperator __ u"\N{DIVISION SIGN}":
+            __ rightOperand __ 0.0:
                 r_ False
 
             factorSoFar /_ rightOperand

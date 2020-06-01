@@ -101,10 +101,10 @@ c_ DomModel(QAbstractItemModel):
         attributes _   # list
         attributeMap _ node.attributes()
 
-        __ index.column() == 0:
+        __ index.column() __ 0:
             r_ node.nodeName()
         
-        ____ index.column() == 1:
+        ____ index.column() __ 1:
             ___ i __ range(0, attributeMap.count()):
                 attribute _ attributeMap.item(i)
                 attributes.ap..(attribute.nodeName() + '="' +
@@ -112,7 +112,7 @@ c_ DomModel(QAbstractItemModel):
 
             r_ " ".join(attributes)
 
-        __ index.column() == 2:
+        __ index.column() __ 2:
             value _ node.nodeValue()
             __ value __ N..:
                 r_ ''
@@ -128,14 +128,14 @@ c_ DomModel(QAbstractItemModel):
         r_ __.ItemIsEnabled | __.ItemIsSelectable
 
     ___ headerData  section, orientation, role):
-        __ orientation == __.Horizontal and role == __.DisplayRole:
-            __ section == 0:
+        __ orientation __ __.Horizontal and role __ __.DisplayRole:
+            __ section __ 0:
                 r_ "Name"
 
-            __ section == 1:
+            __ section __ 1:
                 r_ "Attributes"
 
-            __ section == 2:
+            __ section __ 2:
                 r_ "Value"
 
         r_ N..
@@ -162,7 +162,7 @@ c_ DomModel(QAbstractItemModel):
         childItem _ child.internalPointer()
         parentItem _ childItem.parent()
 
-        __ no. parentItem or parentItem == rootItem:
+        __ no. parentItem or parentItem __ rootItem:
             r_ QModelIndex()
 
         r_ createIndex(parentItem.row(), 0, parentItem)

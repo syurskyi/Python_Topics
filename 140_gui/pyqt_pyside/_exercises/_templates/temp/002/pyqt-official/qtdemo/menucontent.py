@@ -72,11 +72,11 @@ c_ MenuContentItem(DemoItem):
             _prepared_ True
 
     ___ animationStopped  id):
-        __ name == Colors.rootMenuName:
+        __ name __ Colors.rootMenuName:
             # Optimization hack.
             r_
 
-        __ id == DemoItemAnimation.ANIM_OUT:
+        __ id __ DemoItemAnimation.ANIM_OUT:
             # Free up some memory
             heading _ N..
             description1 _ N..
@@ -105,7 +105,7 @@ c_ MenuContentItem(DemoItem):
                 nrPara -_ 1
                 line _ "<br><br>" + in_str.readLine()
 
-            __ nrPara == 0 or in_str.atEnd
+            __ nrPara __ 0 or in_str.atEnd
                 break
 
         r_ Colors.contentColor + result

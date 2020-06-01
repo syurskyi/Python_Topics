@@ -70,7 +70,7 @@ c_ MainWindow ?MW..
         newLetter()
 
     ___ newLetter
-        textEdit.clear()
+        textEdit.c..
 
         cursor _ textEdit.textCursor()
         cursor.movePosition(QTextCursor.Start)

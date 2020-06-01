@@ -86,7 +86,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
 
     ___ delete_window
         result _ ?MB...q..  "Confirm delete", "Are you sure you want to delete this note?")
-        __ result == ?MB...Yes:
+        __ result __ ?MB...Yes:
             session.delete(obj)
             session.commit()
             c..
@@ -108,7 +108,7 @@ __ ______ __ ______
     app.sP..(palette)
 
     existing_notes _ session.query(Note).al.()
-    __ le.(existing_notes) == 0:
+    __ le.(existing_notes) __ 0:
         MainWindow()
     ____
         ___ note __ existing_notes:

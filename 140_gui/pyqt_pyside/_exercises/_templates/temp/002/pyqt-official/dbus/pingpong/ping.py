@@ -61,7 +61,7 @@ __ ______ __ ______
             QDBusConnection.sessionBus())
 
     __ iface.isValid
-        msg _ iface.call('ping', ___.argv[1] __ le.(___.a.. > 1 else "")
+        msg _ iface.call('ping', ___.argv[1] __ le.(___.a.. > 1 ____ "")
         reply _ QDBusReply(msg)
 
         __ reply.isValid

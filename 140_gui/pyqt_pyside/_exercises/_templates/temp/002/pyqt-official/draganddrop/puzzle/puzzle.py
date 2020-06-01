@@ -94,7 +94,7 @@ c_ PuzzleWidget(?W..):
     ___ dragMoveEvent  event):
         updateRect _ highlightedRect.united(targetSquare(event.pos()))
 
-        __ event.mimeData().hasFormat('image/x-puzzle-piece') and findPiece(targetSquare(event.pos())) == -1:
+        __ event.mimeData().hasFormat('image/x-puzzle-piece') and findPiece(targetSquare(event.pos())) __ -1:
             highlightedRect _ targetSquare(event.pos())
             event.setDropAction(__.MoveAction)
             event.accept()
@@ -105,7 +105,7 @@ c_ PuzzleWidget(?W..):
         update(updateRect)
 
     ___ dropEvent  event):
-        __ event.mimeData().hasFormat('image/x-puzzle-piece') and findPiece(targetSquare(event.pos())) == -1:
+        __ event.mimeData().hasFormat('image/x-puzzle-piece') and findPiece(targetSquare(event.pos())) __ -1:
             pieceData _ event.mimeData().data('image/x-puzzle-piece')
             dataStream _ QDataStream(pieceData, QIODevice.ReadOnly)
             square _ targetSquare(event.pos())
@@ -123,9 +123,9 @@ c_ PuzzleWidget(?W..):
             event.setDropAction(__.MoveAction)
             event.accept()
 
-            __ location == QPoint(square.x() / 80, square.y() / 80):
+            __ location __ QPoint(square.x() / 80, square.y() / 80):
                 inPlace +_ 1
-                __ inPlace == 25:
+                __ inPlace __ 25:
                     puzzleCompleted.e..()
         ____
             highlightedRect _ QRect()
@@ -141,7 +141,7 @@ c_ PuzzleWidget(?W..):
         square _ targetSquare(event.pos())
         found _ findPiece(square)
 
-        __ found == -1:
+        __ found __ -1:
             r_
 
         location _ pieceLocations[found]
@@ -150,7 +150,7 @@ c_ PuzzleWidget(?W..):
         del piecePixmaps[found]
         del pieceRects[found]
 
-        __ location == QPoint(square.x() / 80, square.y() / 80):
+        __ location __ QPoint(square.x() / 80, square.y() / 80):
             inPlace -_ 1
 
         update(square)
@@ -174,7 +174,7 @@ c_ PuzzleWidget(?W..):
             pieceRects.insert(found, square)
             update(targetSquare(event.pos()))
 
-            __ location == QPoint(square.x() / 80, square.y() / 80):
+            __ location __ QPoint(square.x() / 80, square.y() / 80):
                 inPlace +_ 1
 
     ___ paintEvent  event):
@@ -260,7 +260,7 @@ c_ PiecesList(QListWidget):
         drag.setHotSpot(QPoint(pixmap.width()/2, pixmap.height()/2))
         drag.setPixmap(pixmap)
 
-        __ drag.exec_(__.MoveAction) == __.MoveAction:
+        __ drag.exec_(__.MoveAction) __ __.MoveAction:
             __ currentItem() __ no. N..:
                 takeItem(row(item))
 
@@ -307,7 +307,7 @@ c_ MainWindow ?MW..
                 (puzzleImage.width() - size)/2,
                 (puzzleImage.height() - size)/2, size, size).scaled(400, 400, __.IgnoreAspectRatio, __.SmoothTransformation)
 
-        piecesList.clear()
+        piecesList.c..
 
         ___ y __ range(5):
             ___ x __ range(5):
@@ -321,7 +321,7 @@ c_ MainWindow ?MW..
                 item _ piecesList.takeItem(i)
                 piecesList.iI..(0, item)
 
-        puzzleWidget.clear()
+        puzzleWidget.c..
 
     ___ setupMenus
         fileMenu _ mB.. .aM..("&File")

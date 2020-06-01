@@ -109,7 +109,7 @@ c_ MainWindow ?MW..
         wrap_action _ ?A..(QIcon(__.p__ .join('images', 'arrow-continue.png')), "Wrap text to window", self)
         wrap_action.setStatusTip("Toggle wrap text to window")
         wrap_action.setCheckable( st.
-        wrap_action.setChecked( st.
+        wrap_action.sC__( st.
         wrap_action.t__.c..(edit_toggle_wrap)
         edit_menu.aA..(wrap_action)
 
@@ -173,10 +173,10 @@ c_ MainWindow ?MW..
             editor.print_(dlg.printer())
 
     ___ update_title
-        sWT..("%s - No2Pads" % (__.p__ .basename(path) __ path else "Untitled"))
+        sWT..("%s - No2Pads" % (__.p__ .basename(path) __ path ____ "Untitled"))
 
     ___ edit_toggle_wrap
-        editor.setLineWrapMode( 1 __ editor.lineWrapMode() == 0 else 0 )
+        editor.setLineWrapMode( 1 __ editor.lineWrapMode() __ 0 ____ 0 )
 
 
 __ ______ __ ______

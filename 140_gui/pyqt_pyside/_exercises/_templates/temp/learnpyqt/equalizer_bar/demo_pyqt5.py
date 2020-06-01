@@ -21,7 +21,7 @@ c_ Window(?W...QMainWindow):
 
     ___ update_values 
         equalizer.setValues([
-            min(100, v+random.randint(0, 50) __ random.randint(0, 5) > 2 else v)
+            min(100, v+random.randint(0, 50) __ random.randint(0, 5) > 2 ____ v)
             ___ v __ equalizer.values()
             ])
 

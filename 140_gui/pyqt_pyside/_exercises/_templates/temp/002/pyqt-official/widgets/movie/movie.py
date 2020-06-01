@@ -129,9 +129,9 @@ c_ MoviePlayer(?W..):
         state _ movie.state()
 
         playButton.sE..(movie.isValid() and
-                movie.frameCount() !_ 1 and state == QMovie.NotRunning)
+                movie.frameCount() !_ 1 and state __ QMovie.NotRunning)
         pauseButton.sE..(state !_ QMovie.NotRunning)
-        pauseButton.setChecked(state == QMovie.Paused)
+        pauseButton.sC__(state __ QMovie.Paused)
         stopButton.sE..(state !_ QMovie.NotRunning)
 
     ___ createControls
