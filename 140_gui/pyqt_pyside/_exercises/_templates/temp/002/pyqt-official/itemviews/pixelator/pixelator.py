@@ -209,7 +209,7 @@ c_ MainWindow ?MW..
                 currentPath _ fileName
                 sWT..("%s - Pixelator" % currentPath)
 
-            printAction.sE..(True)
+            printAction.sE..( st.
             updateView()
 
     ___ printImage 

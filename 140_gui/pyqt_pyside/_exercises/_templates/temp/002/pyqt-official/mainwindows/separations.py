@@ -43,7 +43,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ (pyqtSignal, QBuffer, QByteArray, QFileInfo,
+____ ?.?C.. ______ (pS.., QBuffer, QByteArray, QFileInfo,
         QIODevice, QMimeData, QPoint, ?S.., __)
 ____ ?.?G.. ______ (qBlue, ?C.., QDrag, qGreen, QImage, ?KS..,
         ?P.., QPixmap, qRed)
@@ -92,7 +92,7 @@ c_ FinalWidget(QFrame):
         outputBuffer _ QBuffer(output)
         outputBuffer.o..(QIODevice.WriteOnly)
         imageLabel.pixmap().toImage().save(outputBuffer, 'PNG')
-        outputBuffer.close()
+        outputBuffer.c..
         mimeData.setData('image/png', output)
 
         drag.setMimeData(mimeData)
@@ -126,7 +126,7 @@ c_ ScreenWidget(QFrame):
         Yellow: qBlue,
     }
 
-    imageChanged _ pyqtSignal()
+    imageChanged _ pS..()
 
     ___  -   parent, initialColor, name, mask, labelSize):
         """ Initializes the paint color, the mask color (cyan, magenta, or
@@ -215,7 +215,7 @@ c_ ScreenWidget(QFrame):
         """
         inverted _ no. inverted
         createImage()
-        imageChanged.emit()
+        imageChanged.e..()
 
     ___ sC.. 
         """ Separate the current image into cyan, magenta, and yellow
@@ -230,7 +230,7 @@ c_ ScreenWidget(QFrame):
             palette.sC..(?P...Button, paintColor)
             colorButton.sP..(palette)
             createImage()
-            imageChanged.emit()
+            imageChanged.e..()
 
     ___ setImage  image):
         """ Records the original image selected by the user, creates a color
@@ -238,7 +238,7 @@ c_ ScreenWidget(QFrame):
         """
         originalImage _ image
         createImage()
-        invertButton.sE..(True)
+        invertButton.sE..( st.
 
 
 c_ Viewer ?MW..
@@ -262,7 +262,7 @@ c_ Viewer ?MW..
         super(Viewer, self). - ()
 
         scaledImage _ QImage()
-        menuMap _ {}
+        menuMap _   # dict
         path _ ''
         brightness _ 255
 
@@ -290,15 +290,15 @@ c_ Viewer ?MW..
         quitAction.sS..(?KS..('Ctrl+Q'))
 
         noBrightness _ brightnessMenu.aA..("&0%")
-        noBrightness.setCheckable(True)
+        noBrightness.setCheckable( st.
         quarterBrightness _ brightnessMenu.aA..("&25%")
-        quarterBrightness.setCheckable(True)
+        quarterBrightness.setCheckable( st.
         halfBrightness _ brightnessMenu.aA..("&50%")
-        halfBrightness.setCheckable(True)
+        halfBrightness.setCheckable( st.
         threeQuartersBrightness _ brightnessMenu.aA..("&75%")
-        threeQuartersBrightness.setCheckable(True)
+        threeQuartersBrightness.setCheckable( st.
         fullBrightness _ brightnessMenu.aA..("&100%")
-        fullBrightness.setCheckable(True)
+        fullBrightness.setCheckable( st.
 
         menuMap[noBrightness] _ Gloom
         menuMap[quarterBrightness] _ Quarter
@@ -307,7 +307,7 @@ c_ Viewer ?MW..
         menuMap[fullBrightness] _ Full
 
         currentBrightness _ fullBrightness
-        currentBrightness.setChecked(True)
+        currentBrightness.setChecked( st.
         brightnessMenu.sE.. F..
 
         mB.. .aM..(fileMenu)
@@ -380,7 +380,7 @@ c_ Viewer ?MW..
 
         currentBrightness.setChecked F..
         currentBrightness _ action
-        currentBrightness.setChecked(True)
+        currentBrightness.setChecked( st.
 
         createImage()
 
@@ -394,8 +394,8 @@ c_ Viewer ?MW..
 
         __ originalImage.load(imageFile):
             sWT..(imageFile)
-            saveAction.sE..(True)
-            brightnessMenu.sE..(True)
+            saveAction.sE..( st.
+            brightnessMenu.sE..( st.
 
             scaledImage _ originalImage.scaled(256, 256, __.KeepAspectRatio)
 

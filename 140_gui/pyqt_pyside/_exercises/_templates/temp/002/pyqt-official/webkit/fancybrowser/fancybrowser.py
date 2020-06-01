@@ -61,11 +61,11 @@ c_ MainWindow ?MW..
 
         __ fd.o..(QIODevice.ReadOnly | QFile.Text):
             jQuery _ QTextStream(fd).readAll()
-            fd.close()
+            fd.c..
         ____
             jQuery _ ''
 
-        QNetworkProxyFactory.setUseSystemConfiguration(True)
+        QNetworkProxyFactory.setUseSystemConfiguration( st.
 
         view _ QWebView
         view.load(url)

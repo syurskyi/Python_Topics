@@ -53,7 +53,7 @@
 
 ______ ___
 
-____ ?.?C.. ______ (pyqtProperty, pyqtSignal, pyqtSlot, QCoreApplication,
+____ ?.?C.. ______ (pyqtProperty, pS.., pyqtSlot, QCoreApplication,
         QObject, QTimer, QUrl)
 ____ ?.QtRemoteObjects ______ QRemoteObjectHost, QRemoteObjectRegistryHost
 
@@ -91,10 +91,10 @@ c_ SimpleSwitch(QObject):
         # If the value has changed then update it and emit the notify signal.
         __ _currState !_ value:
             _currState _ value
-            currStateChanged.emit(value)
+            currStateChanged.e..(value)
 
     # The property's notify signal.
-    currStateChanged _ pyqtSignal(bool)
+    currStateChanged _ pS..(bool)
 
     # The property exposed to a remote client.
     currState _ pyqtProperty(bool, fget__get_currState, fset__set_currState,

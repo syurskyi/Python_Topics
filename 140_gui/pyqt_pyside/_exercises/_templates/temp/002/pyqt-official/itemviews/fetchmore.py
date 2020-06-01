@@ -43,14 +43,14 @@
 #############################################################################
 
 
-____ ?.?C.. ______ (pyqtSignal, QAbstractListModel, QDir, QLibraryInfo,
+____ ?.?C.. ______ (pS.., QAbstractListModel, QDir, QLibraryInfo,
         QModelIndex, __)
 ____ ?.?W.. ______ (?A.., QGridLayout, QLabel, QLineEdit,
         QListView, QSizePolicy, QTextBrowser, ?W..)
 
 
 c_ FileListModel(QAbstractListModel):
-    numberPopulated _ pyqtSignal(int)
+    numberPopulated _ pS..(int)
 
     ___  -   parent_None):
         super(FileListModel, self). - (parent)
@@ -94,7 +94,7 @@ c_ FileListModel(QAbstractListModel):
 
         endInsertRows()
 
-        numberPopulated.emit(itemsToFetch)
+        numberPopulated.e..(itemsToFetch)
 
     ___ setDirPath  path):
         dir _ QDir(path)
@@ -122,8 +122,8 @@ c_ Window(?W..):
         logViewer _ QTextBrowser()
         logViewer.sSP..(QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred))
 
-        lineEdit.textChanged.c..(model.setDirPath)
-        lineEdit.textChanged.c..(logViewer.clear)
+        lineEdit.tC...c..(model.setDirPath)
+        lineEdit.tC...c..(logViewer.clear)
         model.numberPopulated.c..(updateLog)
 
         layout _ QGridLayout()

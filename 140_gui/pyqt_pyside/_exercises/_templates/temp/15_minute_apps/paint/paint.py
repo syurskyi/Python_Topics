@@ -65,8 +65,8 @@ class Canvas(QLabel):
     primary_color = QColor(Qt.black)
     secondary_color = None
 
-    primary_color_updated = pyqtSignal(str)
-    secondary_color_updated = pyqtSignal(str)
+    primary_color_updated = pS.. st.
+    secondary_color_updated = pS.. st.
 
     # Store configuration settings, including pen width, fonts etc.
     config = {
@@ -128,7 +128,7 @@ class Canvas(QLabel):
         current_text = ""
         last_text = ""
 
-        last_config = {}
+        last_config =   # dict
 
         dash_offset = 0
         locked = False
@@ -147,7 +147,7 @@ class Canvas(QLabel):
             # Stop the timer, then trigger cleanup.
             timer_event = timer_event
             timer_event = None
-            timer_event(final=True)
+            timer_event(final= st.
 
     # Mouse events.
 
@@ -446,11 +446,11 @@ class Canvas(QLabel):
 
         if e.button() == Qt.LeftButton:
             set_primary_color(hex)
-            primary_color_updated.emit(hex)  # Update UI.
+            primary_color_updated.e..(hex)  # Update UI.
 
         elif e.button() == Qt.RightButton:
             set_secondary_color(hex)
-            secondary_color_updated.emit(hex)  # Update UI.
+            secondary_color_updated.e..(hex)  # Update UI.
 
     # Generic shape events: Rectangle, Ellipse, Rounded-rect
 
@@ -678,14 +678,14 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         canvas = Canvas()
         canvas.initialize()
         # We need to enable mouse tracking to follow the mouse without the button pressed.
-        canvas.setMouseTracking(True)
+        canvas.setMouseTracking( st.
         # Enable focus to capture key inputs.
         canvas.setFocusPolicy(Qt.StrongFocus)
         horizontalLayout.addWidget(canvas)
 
         # Setup the mode buttons
         mode_group = QButtonGroup
-        mode_group.setExclusive(True)
+        mode_group.setExclusive( st.
 
         ___ mode __ MODES:
             btn = getattr(self, '%sButton' % mode)
@@ -774,7 +774,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         actionFillShapes.triggered.connect(l___ s: canvas.set_config('fill', s))
         drawingToolbar.addAction(actionFillShapes)
-        actionFillShapes.setChecked(True)
+        actionFillShapes.setChecked( st.
 
         show()
 

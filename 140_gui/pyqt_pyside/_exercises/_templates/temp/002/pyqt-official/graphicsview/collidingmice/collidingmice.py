@@ -45,7 +45,7 @@
 ______ math
 
 ____ ?.?C.. ______ (qAbs, QLineF, QPointF, QRectF, qrand, qsrand, __,
-        QTime, QTimer)
+        ?T.., QTimer)
 ____ ?.?G.. ______ (QBrush, ?C.., QPainter, QPainterPath, QPixmap,
         QPolygonF)
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsScene,
@@ -196,7 +196,7 @@ __ ______ __ ______
     MouseCount _ 7
 
     app _ ?A..(___.a..
-    qsrand(QTime(0,0,0).secsTo(QTime.currentTime()))
+    qsrand(?T..(0,0,0).secsTo(?T...currentTime()))
 
     scene _ QGraphicsScene()
     scene.setSceneRect(-300, -300, 600, 600)

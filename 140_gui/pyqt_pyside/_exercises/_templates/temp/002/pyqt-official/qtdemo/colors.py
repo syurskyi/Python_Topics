@@ -122,7 +122,7 @@ c_ Colors(object):
         font.setStyleStrategy(QFont.PreferAntialias)
 
         font.setPixelSize(23)
-        font.setBold(True)
+        font.setBold( st.
         font.setFamily('Verdana')
 
         r_ font;
@@ -144,11 +144,11 @@ c_ Colors(object):
 
         __ ___.platform == 'darwin':
             font.setPixelSize(11)
-            font.setBold(True)
+            font.setBold( st.
             font.setFamily('Arial')
         ____
             font.setPixelSize(10)
-            font.setBold(True)
+            font.setBold( st.
             font.setFamily('sans serif')
 
         r_ font

@@ -64,7 +64,7 @@ c_ PieSlice(QQuickPaintedItem):
 
     ___ paint  painter):
         painter.setPen(QPen(_color, 2))
-        painter.setRenderHints(QPainter.Antialiasing, True)
+        painter.setRenderHints(QPainter.Antialiasing,  st.
 
         rect _ QRectF(0, 0, width(), height()).adjusted(1, 1, -1, -1)
         painter.drawPie(rect, 90 * 16, 290 * 16)
@@ -81,7 +81,7 @@ c_ PieChart(QQuickItem):
         _pieSlice _ pieSlice
         pieSlice.setParentItem
 
-    @pyqtProperty(str)
+    @pyqtProperty st.
     ___ name
         r_ _name
 

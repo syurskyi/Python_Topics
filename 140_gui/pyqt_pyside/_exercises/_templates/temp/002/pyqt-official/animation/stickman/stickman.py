@@ -44,7 +44,7 @@
 
 ______ math
 
-____ ?.?C.. ______ (pyqtProperty, pyqtSignal, QDataStream, QDateTime,
+____ ?.?C.. ______ (pyqtProperty, pS.., QDataStream, QDateTime,
         QEvent, QEventTransition, QFile, QIODevice, QParallelAnimationGroup,
         QPointF, QPropertyAnimation, qrand, QRectF, QSignalTransition, qsrand,
         QState, QStateMachine, __, QTimer)
@@ -56,7 +56,7 @@ ______ stickman_rc
 
 
 c_ Node(QGraphicsObject):
-    positionChanged _ pyqtSignal()
+    positionChanged _ pS..()
 
     ___  -   pos, parent_None):
         super(Node, self). - (parent)
@@ -75,7 +75,7 @@ c_ Node(QGraphicsObject):
 
     ___ itemChange  change, value):
         __ change == QGraphicsItem.ItemPositionChange:
-            positionChanged.emit()
+            positionChanged.e..()
 
         r_ super(Node, self).itemChange(change, value)
 
@@ -362,13 +362,13 @@ c_ StickMan(QGraphicsObject):
 
 
 c_ GraphicsView(QGraphicsView):
-    keyPressed _ pyqtSignal(int)
+    keyPressed _ pS..(int)
 
     ___ keyPressEvent  e):
         __ e.key() == __.Key_Escape:
-            close()
+            c..
 
-        keyPressed.emit(__.Key(e.key()))
+        keyPressed.e..(__.Key(e.key()))
 
 
 c_ Frame(object):
@@ -528,10 +528,10 @@ c_ LifeCycle(object):
                 'backgroundBrush', __.white)
         lightningBlink.assignProperty(m_stickMan, 'penColor', __.black)
         lightningBlink.assignProperty(m_stickMan, 'fillColor', __.white)
-        lightningBlink.assignProperty(m_stickMan, 'isDead', True)
+        lightningBlink.assignProperty(m_stickMan, 'isDead',  st.
 
         timer _ QTimer(lightningBlink)
-        timer.setSingleShot(True)
+        timer.setSingleShot( st.
         timer.setInterval(100)
         lightningBlink.entered.c..(timer.start)
         lightningBlink.exited.c..(timer.stop)

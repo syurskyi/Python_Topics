@@ -53,7 +53,7 @@ c_ DragLabel(QLabel):
     ___  -   t__, parent):
         super(DragLabel, self). - (t__, parent)
 
-        setAutoFillBackground(True)
+        setAutoFillBackground( st.
         setFrameShape(QFrame.Panel)
         setFrameShadow(QFrame.Raised)
 
@@ -76,7 +76,7 @@ c_ DragLabel(QLabel):
         dropAction _ drag.exec_(__.CopyAction | __.MoveAction, __.CopyAction)
 
         __ dropAction == __.MoveAction:
-            close()
+            c..
             update()
 
 
@@ -103,7 +103,7 @@ c_ DragWidget(?W..):
         newPalette.sC..(?P...Window, __.white)
         sP..(newPalette)
 
-        setAcceptDrops(True)
+        setAcceptDrops( st.
         sMS..(400, max(200, y))
         sWT..("Draggable Text")
 

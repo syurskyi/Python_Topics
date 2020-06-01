@@ -205,7 +205,7 @@ c_ MainWindow ?MW..
                 statusBar().showMessage("File loaded", 2000)
                 child.s..
             ____
-                child.close()
+                child.c..
 
     ___ save
         __ activeMdiChild() and activeMdiChild().save
@@ -273,7 +273,7 @@ c_ MainWindow ?MW..
                 t__ _ '&' + t__
 
             action _ windowMenu.aA..(t__)
-            action.setCheckable(True)
+            action.setCheckable( st.
             action.setChecked(child __ activeMdiChild())
             action.t__.c..(windowMapper.map)
             windowMapper.setMapping(action, window)
@@ -349,7 +349,7 @@ c_ MainWindow ?MW..
                 triggered_self.mdiArea.activatePreviousSubWindow)
 
         separatorAct _ ?A..
-        separatorAct.setSeparator(True)
+        separatorAct.setSeparator( st.
 
         aboutAct _ ?A..("&About", self,
                 statusTip_"Show the application's About box",

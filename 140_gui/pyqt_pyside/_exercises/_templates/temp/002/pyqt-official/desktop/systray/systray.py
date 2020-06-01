@@ -133,7 +133,7 @@ c_ Window(QDialog):
         iconComboBox.aI..(QIcon(':/images/trash.png'), "Trash")
 
         showIconCheckBox _ QCheckBox("Show icon")
-        showIconCheckBox.setChecked(True)
+        showIconCheckBox.setChecked( st.
 
         iconLayout _ QHBoxLayout()
         iconLayout.aW..(iconLabel)
@@ -181,7 +181,7 @@ c_ Window(QDialog):
                 "a clue.\nClick this balloon for details.")
 
         showMessageButton _ ?PB..("Show Message")
-        showMessageButton.setDefault(True)
+        showMessageButton.setDefault( st.
 
         messageLayout _ QGridLayout()
         messageLayout.aW..(typeLabel, 0, 0)

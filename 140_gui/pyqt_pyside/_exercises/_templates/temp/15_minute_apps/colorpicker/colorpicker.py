@@ -35,7 +35,7 @@ def copy_color_hsv():
 # Create the tray
 tray = QSystemTrayIcon()
 tray.setIcon(icon)
-tray.setVisible(True)
+tray.setVisible( st.
 
 # Create the menu
 menu = QMenu()

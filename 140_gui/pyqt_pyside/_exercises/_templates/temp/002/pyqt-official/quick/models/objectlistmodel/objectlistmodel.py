@@ -41,7 +41,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ pyqtProperty, pyqtSignal, QObject, QUrl
+____ ?.?C.. ______ pyqtProperty, pS.., QObject, QUrl
 ____ ?.?G.. ______ QGuiApplication
 ____ ?.QtQuick ______ QQuickView
 
@@ -50,7 +50,7 @@ ______ objectlistmodel_rc
 
 c_ DataObject(QObject):
 
-    nameChanged _ pyqtSignal()
+    nameChanged _ pS..()
 
     @pyqtProperty(str, notify_nameChanged)
     ___ name
@@ -60,9 +60,9 @@ c_ DataObject(QObject):
     ___ name  name):
         __ _name !_ name:
             _name _ name
-            nameChanged.emit()
+            nameChanged.e..()
 
-    colorChanged _ pyqtSignal()
+    colorChanged _ pS..()
 
     @pyqtProperty(str, notify_colorChanged)
     ___ color
@@ -72,7 +72,7 @@ c_ DataObject(QObject):
     ___ color  color):
         __ _color !_ color:
             _color _ color
-            colorChanged.emit()
+            colorChanged.e..()
 
     ___  -   name_'', color_'', parent_None):
         super(DataObject, self). - (parent)

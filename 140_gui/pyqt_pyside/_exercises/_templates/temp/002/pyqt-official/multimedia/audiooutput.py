@@ -67,7 +67,7 @@ c_ Generator(QIODevice):
 
     ___ stop
         m_pos _ 0
-        close()
+        c..
 
     ___ generateData  format, durationUs, sampleRate):
         pack_format _ ''

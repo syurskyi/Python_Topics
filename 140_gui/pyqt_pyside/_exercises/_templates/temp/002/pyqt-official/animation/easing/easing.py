@@ -87,7 +87,7 @@ c_ Animation(QPropertyAnimation):
 
             pt _ m_path.pointAtPercent(easedProgress)
             updateCurrentValue(pt)
-            valueChanged.emit(pt)
+            valueChanged.e..(pt)
         ____
             super(Animation, self).updateCurrentTime(currentTime)
 
@@ -207,7 +207,7 @@ c_ Window(?W..):
                 curvePath.lineTo(to)
                 t +_ 1.0 / curveScale
 
-            painter.setRenderHint(QPainter.Antialiasing, True)
+            painter.setRenderHint(QPainter.Antialiasing,  st.
             painter.strokePath(curvePath, ?C..(32, 32, 32))
             painter.setRenderHint(QPainter.Antialiasing, False)
 

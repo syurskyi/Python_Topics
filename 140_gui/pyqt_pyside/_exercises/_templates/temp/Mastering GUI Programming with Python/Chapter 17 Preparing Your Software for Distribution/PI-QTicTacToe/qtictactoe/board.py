@@ -20,7 +20,7 @@ c_ TTTBoard(qtw.QGraphicsScene):
         qtc.QRectF(405, 405, 190, 190)
     )
 
-    square_clicked _ qtc.pyqtSignal(int)
+    square_clicked _ qtc.pS..(int)
 
     ___  -  
         s_. - ()
@@ -55,5 +55,5 @@ c_ TTTBoard(qtw.QGraphicsScene):
         position _ mouse_event.buttonDownScenePos(qtc.__.LeftButton)
         ___ square, qrect __ en..(square_rects):
             __ qrect.contains(position):
-                square_clicked.emit(square)
+                square_clicked.e..(square)
                 break

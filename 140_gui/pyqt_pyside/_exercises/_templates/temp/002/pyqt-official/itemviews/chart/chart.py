@@ -511,7 +511,7 @@ c_ MainWindow ?MW..
         table.setSelectionModel(selectionModel)
         pieChart.setSelectionModel(selectionModel)
 
-        table.horizontalHeader().setStretchLastSection(True)
+        table.horizontalHeader().setStretchLastSection( st.
 
         sCW..(splitter)
 
@@ -545,7 +545,7 @@ c_ MainWindow ?MW..
                     row +_ 1
                     line _ stream.readLine()
 
-                f.close()
+                f.c..
                 statusBar().showMessage("Loaded %s" % path, 2000)
 
     ___ saveFile
@@ -575,7 +575,7 @@ c_ MainWindow ?MW..
                     f.w..(b','.join([p.encode('utf-8') ___ p __ pieces]))
                     f.w..(b'\n')
 
-            f.close()
+            f.c..
             statusBar().showMessage("Saved %s" % fileName, 2000)
 
 

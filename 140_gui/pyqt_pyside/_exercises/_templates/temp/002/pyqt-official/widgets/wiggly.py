@@ -53,7 +53,7 @@ c_ WigglyWidget(?W..):
         super(WigglyWidget, self). - (parent)
 
         setBackgroundRole(?P...Midlight)
-        setAutoFillBackground(True)
+        setAutoFillBackground( st.
 
         newFont _ font()
         newFont.setPointSize(newFont.pointSize() + 20)
@@ -105,7 +105,7 @@ c_ Dialog(QDialog):
         layout.aW..(lineEdit)
         sL..(layout)
 
-        lineEdit.textChanged.c..(wigglyWidget.sT..)
+        lineEdit.tC...c..(wigglyWidget.sT..)
 
         lineEdit.sT..("Hello world!")
 

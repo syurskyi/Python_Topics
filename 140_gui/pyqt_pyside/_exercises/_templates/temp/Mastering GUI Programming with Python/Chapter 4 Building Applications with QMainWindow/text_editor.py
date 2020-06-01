@@ -8,7 +8,7 @@ c_ SettingsDialog(qtw.QDialog):
     """Dialog for setting the settings"""
 
     ___  -   settings, parent_None):
-        s_. - (parent, modal_True)
+        s_. - (parent, modal_ st.
         sL..(qtw.QFormLayout())
         settings _ settings
         layout().aR..(
@@ -68,7 +68,7 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
 
         # add widgets to statusbar
         charcount_label _ ?.?L..("chars: 0")
-        textedit.textChanged.c..(
+        textedit.tC...c..(
             l___: charcount_label.sT..(
                 "chars: " +
                 str(le.(textedit.toPlainText()))
@@ -195,7 +195,7 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
                 qtw.?MB...Yes | qtw.?MB...Abort
             )
             __ response == qtw.?MB...Abort:
-                close()
+                c..
                 ___.e..
 
             # custom message box
@@ -216,7 +216,7 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
             splash_screen.addButton(qtw.?MB...Abort)
             response _ splash_screen.e..
             __ response == qtw.?MB...Abort:
-                close()
+                c..
                 ___.e..
 
         # QFileDialog

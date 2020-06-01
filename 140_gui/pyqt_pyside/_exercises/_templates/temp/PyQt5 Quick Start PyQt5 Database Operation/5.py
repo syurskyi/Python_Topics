@@ -11,7 +11,7 @@ c_ MainWindow(?W..):
         db.o..()
 
     ___ closeEvent  event):
-        db.close()
+        db.c..
 
 __ __name__ == "__main__":
     app _ ?A..(___.a..

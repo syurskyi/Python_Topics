@@ -72,7 +72,7 @@ c_ MenuManager(QObject):
         docDir _ QDir()
         imgDir _ QDir()
 
-        info _ {}
+        info _   # dict
         window _ N..
 
         ticker _ N..
@@ -102,7 +102,7 @@ c_ MenuManager(QObject):
         xml_file _ QFile(root + '/examples.xml')
         xml_file.o..(QFile.ReadOnly | QFile.Text)
         contents _ xml_file.readAll().data()
-        xml_file.close()
+        xml_file.c..
 
         contentsDoc _ parseString(contents)
 
@@ -236,7 +236,7 @@ c_ MenuManager(QObject):
                 itemSelected(MenuManager.ROOT, Colors.rootMenuName)
 
         # Update back and more buttons.
-        __ info.setdefault(currentMenu, {}).g..('back'):
+        __ info.setdefault(currentMenu,   # dict).g..('back'):
             back_state _ TextButton.OFF
         ____
             back_state _ TextButton.DISABLED
@@ -372,7 +372,7 @@ c_ MenuManager(QObject):
                          "Demo/example with name", name, "appears twice in "
                          "the xml-file!__")
 
-        info.setdefault(name, {})['filename'] _ example.getAttribute('filename')
+        info.setdefault(name,   # dict)['filename'] _ example.getAttribute('filename')
         info[name]['dirname'] _ example.parentNode.getAttribute('dirname')
         info[name]['changedirectory'] _ example.getAttribute('changedirectory')
         info[name]['image'] _ example.getAttribute('image')
@@ -543,7 +543,7 @@ c_ MenuManager(QObject):
 
                 # Create out-animation.
                 anim _ DemoItemAnimation(item, DemoItemAnimation.ANIM_OUT)
-                anim.setHideOnFinished(True)
+                anim.setHideOnFinished( st.
                 anim.setDuration(700 + (30 * i))
                 anim.setStartValue(QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
                 anim.setKeyValueAt(0.60, QPointF(xOffset, 600 - ih - ih))
@@ -564,7 +564,7 @@ c_ MenuManager(QObject):
 
                 # Create next-menu top-out-animation.
                 anim _ DemoItemAnimation(item, DemoItemAnimation.ANIM_OUT)
-                anim.setHideOnFinished(True)
+                anim.setHideOnFinished( st.
                 anim.setDuration(200 + (30 * i))
                 anim.setStartValue(QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
                 anim.setKeyValueAt(0.70, QPointF(xOffset, yOffset + Colors.contentStartY))
@@ -573,7 +573,7 @@ c_ MenuManager(QObject):
 
                 # Create next-menu bottom-out-animation.
                 anim _ DemoItemAnimation(item, DemoItemAnimation.ANIM_OUT)
-                anim.setHideOnFinished(True)
+                anim.setHideOnFinished( st.
                 anim.setDuration(200 + (30 * i))
                 anim.setStartValue(QPointF(xOffset, (i * ihp) + yOffset + Colors.contentStartY))
                 anim.setKeyValueAt(0.70, QPointF(xOffset, (maxExamples * ihp) + yOffset + Colors.contentStartY))
@@ -604,9 +604,9 @@ c_ MenuManager(QObject):
                 # We need another menu, so register for 'more' and 'back'
                 # buttons.
                 menuIndex +_ 1
-                info.setdefault(currentMenu, {})['more'] _ '%s -menu%d' % (name, menuIndex)
+                info.setdefault(currentMenu,   # dict)['more'] _ '%s -menu%d' % (name, menuIndex)
                 currentMenu _ '%s -menu%d' % (name, menuIndex)
-                info.setdefault(currentMenu, {})['back'] _ '%s -menu%d' % (name, menuIndex - 1)
+                info.setdefault(currentMenu,   # dict)['back'] _ '%s -menu%d' % (name, menuIndex - 1)
 
     ___ createLowLeftButton  label, type, movieIn, movieOut, movieShake, menuString_""):
         button _ TextButton(label, TextButton.RIGHT, type,
@@ -630,7 +630,7 @@ c_ MenuManager(QObject):
 
         # Create out-animation.
         buttonOut _ DemoItemAnimation(button, DemoItemAnimation.ANIM_OUT)
-        buttonOut.setHideOnFinished(True)
+        buttonOut.setHideOnFinished( st.
         buttonOut.setDuration(400)
         buttonOut.setStartValue(QPointF(xOffset, Colors.contentStartY + Colors.contentHeight - 26))
         buttonOut.setEndValue(QPointF(-iw, Colors.contentStartY + Colors.contentHeight - 26))
@@ -667,7 +667,7 @@ c_ MenuManager(QObject):
 
         # Create out-animation.
         anim _ DemoItemAnimation(item, DemoItemAnimation.ANIM_OUT)
-        anim.setHideOnFinished(True)
+        anim.setHideOnFinished( st.
         anim.setDuration(400)
         anim.setStartValue(QPointF(xOffset + 535, Colors.contentStartY + Colors.contentHeight - 26))
         anim.setEndValue(QPointF(sw, Colors.contentStartY + Colors.contentHeight - 26))
@@ -697,7 +697,7 @@ c_ MenuManager(QObject):
 
         # Create out-animation.
         anim _ DemoItemAnimation(item, DemoItemAnimation.ANIM_OUT)
-        anim.setHideOnFinished(True)
+        anim.setHideOnFinished( st.
         anim.setDuration(300)
         anim.setStartValue(QPointF(xOffset, Colors.contentStartY + Colors.contentHeight - 26))
         anim.setEndValue(QPointF(xOffset, sh))
@@ -723,7 +723,7 @@ c_ MenuManager(QObject):
         infoOut _ DemoItemAnimation(item, DemoItemAnimation.ANIM_OUT)
         infoOut.setCurveShape(QEasingCurve.InQuad)
         infoOut.setDuration(300)
-        infoOut.setHideOnFinished(True)
+        infoOut.setHideOnFinished( st.
         infoOut.setStartValue(QPointF(xOffset, Colors.contentStartY))
         infoOut.setEndValue(QPointF(-600, Colors.contentStartY))
         movie_out.ap..(infoOut)
@@ -757,7 +757,7 @@ c_ MenuManager(QObject):
 
         # Move ticker out.
         qtOut _ DemoItemAnimation(ticker, DemoItemAnimation.ANIM_OUT)
-        qtOut.setHideOnFinished(True)
+        qtOut.setHideOnFinished( st.
         qtOut.setDuration(500)
         qtOut.setStartValue(QPointF(qtendpos, Colors.contentStartY + qtPosY))
         qtOut.setEndValue(QPointF(window.scene.sceneRect().width() + 700, Colors.contentStartY + qtPosY))
@@ -776,7 +776,7 @@ c_ MenuManager(QObject):
 
         # Move ticker out on deactivate.
         qtDeactivate _ DemoItemAnimation(ticker)
-        qtDeactivate.setHideOnFinished(True)
+        qtDeactivate.setHideOnFinished( st.
         qtDeactivate.setDuration(400)
         qtDeactivate.setStartValue(QPointF(qtendpos, Colors.contentStartY + qtPosY))
         qtDeactivate.setEndValue(QPointF(qtendpos, 800))

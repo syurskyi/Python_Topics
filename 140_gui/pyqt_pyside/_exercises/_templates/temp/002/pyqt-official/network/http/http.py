@@ -66,10 +66,10 @@ c_ HttpWindow(QDialog):
         urlLabel.setBuddy(urlLineEdit)
         statusLabel _ QLabel(
                 "Please enter the URL of a file you want to download.")
-        statusLabel.setWordWrap(True)
+        statusLabel.setWordWrap( st.
 
         downloadButton _ ?PB..("Download")
-        downloadButton.setDefault(True)
+        downloadButton.setDefault( st.
         quitButton _ ?PB..("Quit")
         quitButton.setAutoDefault F..
 
@@ -79,7 +79,7 @@ c_ HttpWindow(QDialog):
 
         progressDialog _ QProgressDialog
 
-        urlLineEdit.textChanged.c..(enableDownloadButton)
+        urlLineEdit.tC...c..(enableDownloadButton)
         qnam.authenticationRequired.c..(
                 slotAuthenticationRequired)
         qnam.sslErrors.c..(sslErrors)
@@ -144,12 +144,12 @@ c_ HttpWindow(QDialog):
         httpRequestAborted _ True
         __ reply __ no. N..:
             reply.abort()
-        downloadButton.sE..(True)
+        downloadButton.sE..( st.
 
     ___ httpFinished 
         __ httpRequestAborted:
             __ outFile __ no. N..:
-                outFile.close()
+                outFile.c..
                 outFile.remove()
                 outFile _ N..
 
@@ -160,7 +160,7 @@ c_ HttpWindow(QDialog):
 
         progressDialog.hide()
         outFile.flush()
-        outFile.close()
+        outFile.c..
 
         redirectionTarget _ reply.attribute(QNetworkRequest.RedirectionTargetAttribute)
 
@@ -168,7 +168,7 @@ c_ HttpWindow(QDialog):
             outFile.remove()
             ?MB...information  "HTTP",
                     "Download failed: %s." % reply.errorString())
-            downloadButton.sE..(True)
+            downloadButton.sE..( st.
         ____ redirectionTarget __ no. N..:
             newUrl _ url.resolved(redirectionTarget)
 
@@ -188,7 +188,7 @@ c_ HttpWindow(QDialog):
             fileName _ QFileInfo(QUrl(urlLineEdit.t__()).path()).fileName()
             statusLabel.sT..("Downloaded %s to %s." % (fileName, QDir.currentPath()))
 
-            downloadButton.sE..(True)
+            downloadButton.sE..( st.
 
         reply.deleteLater()
         reply _ N..

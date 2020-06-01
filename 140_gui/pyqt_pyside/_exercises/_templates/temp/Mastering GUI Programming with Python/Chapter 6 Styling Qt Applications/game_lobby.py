@@ -179,8 +179,8 @@ c_ MainWindow(qtw.QMainWindow):
         connect_icon.addPixmap(go_pixmap, qtg.QIcon.Active)
         connect_icon.addPixmap(stop_pixmap, qtg.QIcon.Disabled)
         submit.setIcon(connect_icon)
-        submit.setDisabled(True)
-        inputs['Server'].textChanged.c..(
+        submit.setDisabled( st.
+        inputs['Server'].tC...c..(
             l___ x: submit.setDisabled(x == '')
         )
 

@@ -12,7 +12,7 @@ c_ Ui_MainWindow(object):
     ___ setupUi  MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.r..(264, 279)
-        MainWindow.setAutoFillBackground(True)
+        MainWindow.setAutoFillBackground( st.
         centralWidget _ ?W...?W..(MainWindow)
         sizePolicy _ ?W...QSizePolicy(?W...QSizePolicy.Maximum, ?W...QSizePolicy.Maximum)
         sizePolicy.setHorizontalStretch(0)
@@ -35,7 +35,7 @@ c_ Ui_MainWindow(object):
         closeButton.setBaseSize(?C...?S..(2, 0))
         font _ ?G...QFont()
         font.setPointSize(30)
-        font.setBold(True)
+        font.setBold( st.
         font.setWeight(75)
         closeButton.setFont(font)
         closeButton.setLayoutDirection(?C...__.LeftToRight)
@@ -51,7 +51,7 @@ c_ Ui_MainWindow(object):
         moreButton.sMS..(?C...?S..(25, 25))
         font _ ?G...QFont()
         font.setPointSize(30)
-        font.setBold(True)
+        font.setBold( st.
         font.setWeight(75)
         moreButton.setFont(font)
         moreButton.setStyleSheet("QPushButton {\n"

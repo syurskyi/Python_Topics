@@ -45,7 +45,7 @@ c_ DiskUsageChartView(qtch.QChartView):
         series.attachAxis(y_axis)
 
         # Add labels
-        series.setLabelsVisible(True)
+        series.setLabelsVisible( st.
 
 
 c_ CPUUsageView(qtch.QChartView):
@@ -167,7 +167,7 @@ c_ MemoryChartView(qtch.QChartView):
         chart.setAnimationDuration(1000)
 
         # Add shadow around the chart area
-        chart.setDropShadowEnabled(True)
+        chart.setDropShadowEnabled( st.
 
         # Set the theme
         chart.setTheme(qtch.QChart.ChartThemeBrownSand)
@@ -201,14 +201,14 @@ c_ MemoryChartView(qtch.QChartView):
         y_axis.setTickCount(11)
 
         #Shades
-        y_axis.setShadesVisible(True)
+        y_axis.setShadesVisible( st.
         y_axis.setShadesColor(qtg.?C..('#884'))
 
         # Styling the legend
         legend _ chart.legend()
 
         # Background
-        legend.setBackgroundVisible(True)
+        legend.setBackgroundVisible( st.
         legend.setBrush(
             qtg.QBrush(qtg.?C..('white')))
 

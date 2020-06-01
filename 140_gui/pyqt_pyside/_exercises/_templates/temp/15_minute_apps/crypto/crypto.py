@@ -44,11 +44,11 @@ class WorkerSignals(QObject):
     """
     Defines the signals available from a running worker thread.
     """
-    finished = pyqtSignal()
-    error = pyqtSignal(tuple)
-    progress = pyqtSignal(int)
-    data = pyqtSignal(dict, list)
-    cancel = pyqtSignal()
+    finished = pS..()
+    error = pS..(tuple)
+    progress = pS..(int)
+    data = pS..(dict, list)
+    cancel = pS..()
 
 
 class UpdateWorker(QRunnable):
@@ -69,7 +69,7 @@ class UpdateWorker(QRunnable):
             'Apikey': CRYPTOCOMPARE_API_KEY
         }
         ___
-            rates = {}
+            rates =   # dict
             ___ n, crypto __ en..(AVAILABLE_CRYPTO_CURRENCIES, 1):
                 url = 'https://min-api.cryptocompare.com/data/histoday?fsym={fsym}&tsym={tsym}&limit={limit}'
                 r = requests.get(
@@ -85,7 +85,7 @@ class UpdateWorker(QRunnable):
                 r.raise_for_status()
                 rates[crypto] = r.json().get('Data')
 
-                signals.progress.emit(int(100 * n / len(AVAILABLE_CRYPTO_CURRENCIES)))
+                signals.progress.e..(int(100 * n / len(AVAILABLE_CRYPTO_CURRENCIES)))
 
                 if is_interrupted:
                     # Stop without emitting finish signals.
@@ -105,11 +105,11 @@ class UpdateWorker(QRunnable):
             volume = [d['volume'] ___ d __ r.json().get('Data')]
 
         _____ Exception as e:
-            signals.error.emit((e, traceback.format_exc()))
+            signals.error.e..((e, traceback.format_exc()))
             return
 
-        signals.data.emit(rates, volume)
-        signals.finished.emit()
+        signals.data.e..(rates, volume)
+        signals.finished.e..()
 
     def cancel
         is_interrupted = True
@@ -123,7 +123,7 @@ class MainWindow(QMainWindow):
         layout = QHBoxLayout()
 
         ax = pg.PlotWidget()
-        ax.showGrid(True, True)
+        ax.showGrid(True,  st.
 
         line = pg.InfiniteLine(
             pos=-20,
@@ -138,7 +138,7 @@ class MainWindow(QMainWindow):
 
         # Add the right-hand axis for the market activity.
         p2 = pg.ViewBox()
-        p2.enableAutoRange(axis=pg.ViewBox.XYAxes, enable=True)
+        p2.enableAutoRange(axis=pg.ViewBox.XYAxes, enable= st.
         p1.showAxis('right')
         p1.scene().aI..(p2)
         p2.setXLink(p1)
@@ -241,7 +241,7 @@ class MainWindow(QMainWindow):
             get_currency_color(currency)
         )))
         citem.setColumnCount(2)
-        citem.setCheckable(True)
+        citem.setCheckable( st.
         if currency __ DEFAULT_DISPLAY_CURRENCIES:
             citem.setCheckState(Qt.Checked)
 
@@ -276,10 +276,10 @@ class MainWindow(QMainWindow):
     def refresh_historic_rates
         if worker:
             # If we have a current worker, send a kill signal
-            worker.signals.cancel.emit()
+            worker.signals.cancel.e..()
 
         # Prefill our data store with None ('no data')
-        data = {}
+        data =   # dict
         volume = []
 
         worker = UpdateWorker(base_currency)
@@ -330,7 +330,7 @@ class MainWindow(QMainWindow):
                 if currency __ _data_visible:
                     # This line should be visible, if it's not drawn draw it.
                     if currency not __ _data_lines:
-                        _data_lines[currency] = {}
+                        _data_lines[currency] =   # dict
                         _data_lines[currency]['high'] = ax.plot(
                             x, high,  # Unpack a list of tuples into two lists, passed as individual args.
                             pen=pg.mkPen(get_currency_color(currency), width=2, style=Qt.DotLine)

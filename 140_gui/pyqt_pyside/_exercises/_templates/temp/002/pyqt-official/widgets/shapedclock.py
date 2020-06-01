@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QPoint, ?S.., __, QTime, QTimer
+____ ?.?C.. ______ QPoint, ?S.., __, ?T.., QTimer
 ____ ?.?G.. ______ ?C.., QPainter, QPolygon, QRegion
 ____ ?.?W.. ______ ?A.., ?A.., ?W..
 
@@ -92,7 +92,7 @@ c_ ShapedClock(?W..):
 
     ___ paintEvent  event):
         side _ min(width(), height())
-        time _ QTime.currentTime()
+        time _ ?T...currentTime()
 
         painter _ QPainter
         painter.setRenderHint(QPainter.Antialiasing)

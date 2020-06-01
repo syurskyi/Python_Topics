@@ -45,7 +45,7 @@
 ______ ___
 ______ math, random
 
-____ ?.?C.. ______ (QPoint, QPointF, QRect, QRectF, ?S.., __, QTime,
+____ ?.?C.. ______ (QPoint, QPointF, QRect, QRectF, ?S.., __, ?T..,
         QTimer)
 ____ ?.?G.. ______ (QBrush, ?C.., QFontMetrics, QImage,
         QOpenGLVersionProfile, QPainter, QRadialGradient, QSurfaceFormat)
@@ -118,8 +118,8 @@ c_ GLWidget(QOpenGLWidget):
     ___  -   parent_None):
         super(GLWidget, self). - (parent)
 
-        midnight _ QTime(0, 0, 0)
-        random.seed(midnight.secsTo(QTime.currentTime()))
+        midnight _ ?T..(0, 0, 0)
+        random.seed(midnight.secsTo(?T...currentTime()))
 
         object _ 0
         xRot _ 0

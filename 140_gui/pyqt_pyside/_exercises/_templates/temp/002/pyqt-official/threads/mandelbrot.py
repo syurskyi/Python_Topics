@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ (pyqtSignal, QMutex, QMutexLocker, QPoint, ?S.., __,
+____ ?.?C.. ______ (pS.., QMutex, QMutexLocker, QPoint, ?S.., __,
         QThread, QWaitCondition)
 ____ ?.?G.. ______ ?C.., QImage, QPainter, QPixmap, qRgb
 ____ ?.?W.. ______ ?A.., ?W..
@@ -60,7 +60,7 @@ ScrollStep _ 20
 c_ RenderThread(QThread):
     ColormapSize _ 512
 
-    renderedImage _ pyqtSignal(QImage, float)
+    renderedImage _ pS..(QImage, float)
 
     ___  -   parent_None):
         super(RenderThread, self). - (parent)
@@ -164,7 +164,7 @@ c_ RenderThread(QThread):
                     curpass _ 4
                 ____
                     __ no. restart:
-                        renderedImage.emit(image, scaleFactor)
+                        renderedImage.e..(image, scaleFactor)
                     curpass +_ 1
 
             mutex.lock()

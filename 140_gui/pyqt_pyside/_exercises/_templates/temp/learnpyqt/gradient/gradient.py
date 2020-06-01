@@ -2,7 +2,7 @@ ______ ___
 __ 'PyQt5' __ ___.modules:
     ____ ? ______ ?C.., ?G.., ?W..
     ____ ?.?C.. ______ __
-    ____ ?.?C.. ______ pyqtSignal __ Signal
+    ____ ?.?C.. ______ pS.. __ Signal
 
 ____
     ____ PySide2 ______ ?C.., ?G.., ?W..
@@ -93,7 +93,7 @@ c_ Gradient(?W...?W..):
         _gradient _ gradient
         _constrain_gradient()
         _sort_gradient()
-        gradientChanged.emit()
+        gradientChanged.e..()
 
     ___ gradient
         r_ _gradient
@@ -113,20 +113,20 @@ c_ Gradient(?W...?W..):
                 _gradient.insert(n, (stop, color or g[1]))
                 break
         _constrain_gradient()
-        gradientChanged.emit()
+        gradientChanged.e..()
         update()
 
     ___ removeStopAtPosition  n):
         __ n no. __ _end_stops:
             del _gradient[n]
-            gradientChanged.emit()
+            gradientChanged.e..()
             update()
 
     ___ setColorAtPosition  n, color):
         __ n < le.(_gradient):
             stop, _ _ _gradient[n]
             _gradient[n] _ stop, color
-            gradientChanged.emit()
+            gradientChanged.e..()
             update()
 
     ___ chooseColorAtPosition  n, current_color_None):

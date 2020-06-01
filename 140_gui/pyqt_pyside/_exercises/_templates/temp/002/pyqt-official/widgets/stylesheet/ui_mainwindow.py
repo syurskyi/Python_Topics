@@ -80,7 +80,7 @@ c_ Ui_MainWindow(object):
         ageSpinBox.setObjectName("ageSpinBox")
         gridlayout.aW..(ageSpinBox, 2, 1, 1, 2)
         nameCombo _ ?W...?CB(mainFrame)
-        nameCombo.setEditable(True)
+        nameCombo.setEditable( st.
         nameCombo.setObjectName("nameCombo")
         gridlayout.aW..(nameCombo, 0, 1, 1, 4)
         spacerItem _ ?W...QSpacerItem(40, 20, ?W...QSizePolicy.E.., ?W...QSizePolicy.Minimum)

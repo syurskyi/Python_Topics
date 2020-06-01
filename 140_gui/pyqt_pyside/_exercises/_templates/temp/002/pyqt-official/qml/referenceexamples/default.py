@@ -73,7 +73,7 @@ c_ Person(QObject):
         _name _ ''
         _shoeSize _ 0
 
-    @pyqtProperty(str)
+    @pyqtProperty st.
     ___ name
         r_ _name
 

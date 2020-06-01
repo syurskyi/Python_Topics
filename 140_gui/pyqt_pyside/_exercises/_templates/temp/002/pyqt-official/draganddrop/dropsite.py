@@ -43,7 +43,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ pyqtSignal, QMimeData, __
+____ ?.?C.. ______ pS.., QMimeData, __
 ____ ?.?G.. ______ ?P.., QPixmap
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., QDialogButtonBox,
         QFrame, QLabel, ?PB.., QTableWidget, QTableWidgetItem,
@@ -52,7 +52,7 @@ ____ ?.?W.. ______ (QAbstractItemView, ?A.., QDialogButtonBox,
 
 c_ DropArea(QLabel):
 
-    changed _ pyqtSignal(QMimeData)
+    changed _ pS..(QMimeData)
 
     ___  -   parent _ N..):
         super(DropArea, self). - (parent)
@@ -60,15 +60,15 @@ c_ DropArea(QLabel):
         sMS..(200, 200)
         setFrameStyle(QFrame.Sunken | QFrame.StyledPanel)
         setAlignment(__.AlignCenter)
-        setAcceptDrops(True)
-        setAutoFillBackground(True)
+        setAcceptDrops( st.
+        setAutoFillBackground( st.
         clear()
 
     ___ dragEnterEvent  event):
         sT..("<drop content>")
         setBackgroundRole(?P...Highlight)
         event.acceptProposedAction()
-        changed.emit(event.mimeData())
+        changed.e..(event.mimeData())
 
     ___ dragMoveEvent  event):
         event.acceptProposedAction()
@@ -98,7 +98,7 @@ c_ DropArea(QLabel):
     ___ clear
         sT..("<drop content>")
         setBackgroundRole(?P...Dark)
-        changed.emit(N..)
+        changed.e..(N..)
 
 
 c_ DropSiteWindow(?W..):
@@ -109,7 +109,7 @@ c_ DropSiteWindow(?W..):
         abstractLabel _ QLabel(
                 "This example accepts drags from other applications and "
                 "displays the MIME types provided by the drag object.")
-        abstractLabel.setWordWrap(True)
+        abstractLabel.setWordWrap( st.
         abstractLabel.adjustSize()
 
         dropArea _ DropArea()
@@ -119,7 +119,7 @@ c_ DropSiteWindow(?W..):
         formatsTable.setColumnCount(2)
         formatsTable.setEditTriggers(QAbstractItemView.NoEditTriggers)
         formatsTable.setHorizontalHeaderLabels(["Format", "Content"])
-        formatsTable.horizontalHeader().setStretchLastSection(True)
+        formatsTable.horizontalHeader().setStretchLastSection( st.
 
         clearButton _ ?PB..("Clear")
         quitButton _ ?PB..("Quit")

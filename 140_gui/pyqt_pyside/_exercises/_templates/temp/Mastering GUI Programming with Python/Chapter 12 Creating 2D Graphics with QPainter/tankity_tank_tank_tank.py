@@ -17,9 +17,9 @@ BORDER_HEIGHT _ 100
 c_ Bullet(qtw.QGraphicsObject):
 
     # arguments are the tank and the bullet
-    hit _ qtc.pyqtSignal()
+    hit _ qtc.pS..()
 
-    ___  -   y_pos, up_True):
+    ___  -   y_pos, up_ st.:
         s_. - ()
         up _ up
         y_pos _ y_pos
@@ -58,7 +58,7 @@ c_ Bullet(qtw.QGraphicsObject):
             scene().removeItem
             ___ item __ colliding_items:
                 __ type(item).__name__ == 'Tank':
-                    hit.emit()
+                    hit.e..()
 
 
 c_ Tank(qtw.QGraphicsObject):

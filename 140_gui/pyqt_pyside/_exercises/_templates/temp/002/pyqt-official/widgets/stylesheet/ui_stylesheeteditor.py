@@ -52,7 +52,7 @@ c_ Ui_StyleSheetEditor(object):
         spacerItem3 _ ?W...QSpacerItem(321, 20, ?W...QSizePolicy.E.., ?W...QSizePolicy.Minimum)
         hboxlayout.aI..(spacerItem3)
         saveButton _ ?W...?PB..(StyleSheetEditor)
-        saveButton.sE..(True)
+        saveButton.sE..( st.
         saveButton.setObjectName("saveButton")
         hboxlayout.aW..(saveButton)
         applyButton _ ?W...?PB..(StyleSheetEditor)

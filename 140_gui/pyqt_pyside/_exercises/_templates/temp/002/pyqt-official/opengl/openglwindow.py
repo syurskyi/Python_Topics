@@ -218,6 +218,6 @@ __ ______ __ ______
     window.r..(640, 480)
     window.s..
 
-    window.setAnimating(True)
+    window.setAnimating( st.
 
     ___.e..(app.exec_())

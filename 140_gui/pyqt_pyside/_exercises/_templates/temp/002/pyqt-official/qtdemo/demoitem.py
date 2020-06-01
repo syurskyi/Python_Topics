@@ -57,7 +57,7 @@ c_ SharedImage(object):
 
 
 c_ DemoItem(QGraphicsObject):
-    _sharedImageHash _ {}
+    _sharedImageHash _   # dict
 
     _transform _ QTransform()
 

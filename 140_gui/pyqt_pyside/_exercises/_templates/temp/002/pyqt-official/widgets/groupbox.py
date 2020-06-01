@@ -68,7 +68,7 @@ c_ Window(?W..):
         radio2 _ QRadioButton("R&adio button 2")
         radio3 _ QRadioButton("Ra&dio button 3")
 
-        radio1.setChecked(True)
+        radio1.setChecked( st.
 
         vbox _ ?VBL..
         vbox.aW..(radio1)
@@ -81,15 +81,15 @@ c_ Window(?W..):
 
     ___ createSecondExclusiveGroup 
         groupBox _ QGroupBox("E&xclusive Radio Buttons")
-        groupBox.setCheckable(True)
+        groupBox.setCheckable( st.
         groupBox.setChecked F..
 
         radio1 _ QRadioButton("Rad&io button 1")
         radio2 _ QRadioButton("Radi&o button 2")
         radio3 _ QRadioButton("Radio &button 3")
-        radio1.setChecked(True)
+        radio1.setChecked( st.
         checkBox _ QCheckBox("Ind&ependent checkbox")
-        checkBox.setChecked(True)
+        checkBox.setChecked( st.
 
         vbox _ ?VBL..
         vbox.aW..(radio1)
@@ -103,13 +103,13 @@ c_ Window(?W..):
 
     ___ createNonExclusiveGroup 
         groupBox _ QGroupBox("Non-Exclusive Checkboxes")
-        groupBox.setFlat(True)
+        groupBox.setFlat( st.
 
         checkBox1 _ QCheckBox("&Checkbox 1")
         checkBox2 _ QCheckBox("C&heckbox 2")
-        checkBox2.setChecked(True)
+        checkBox2.setChecked( st.
         tristateBox _ QCheckBox("Tri-&state button")
-        tristateBox.setTristate(True)
+        tristateBox.setTristate( st.
         tristateBox.setCheckState(__.PartiallyChecked)
 
         vbox _ ?VBL..
@@ -123,15 +123,15 @@ c_ Window(?W..):
 
     ___ createPushButtonGroup 
         groupBox _ QGroupBox("&Push Buttons")
-        groupBox.setCheckable(True)
-        groupBox.setChecked(True)
+        groupBox.setCheckable( st.
+        groupBox.setChecked( st.
 
         pushButton _ ?PB..("&Normal Button")
         toggleButton _ ?PB..("&Toggle Button")
-        toggleButton.setCheckable(True)
-        toggleButton.setChecked(True)
+        toggleButton.setCheckable( st.
+        toggleButton.setChecked( st.
         flatButton _ ?PB..("&Flat Button")
-        flatButton.setFlat(True)
+        flatButton.setFlat( st.
 
         popupButton _ ?PB..("Pop&up Button")
         menu _ QMenu

@@ -12,8 +12,8 @@ c_ TicTacToeEngine(qtc.QObject):
     ]
     players _ ('X', 'O')
 
-    game_won _ qtc.pyqtSignal(str)
-    game_draw _ qtc.pyqtSignal()
+    game_won _ qtc.pS.. st.
+    game_draw _ qtc.pS..()
 
     ___  -
         s_. - ()
@@ -45,7 +45,7 @@ c_ TicTacToeEngine(qtc.QObject):
             }
             ___ win __ winning_sets:
                 __ no. win - plays:  # player has a winning combo
-                    game_won.emit(player)
+                    game_won.e..(player)
                     r_
         __ N.. no. __ board:
-            game_draw.emit()
+            game_draw.e..()

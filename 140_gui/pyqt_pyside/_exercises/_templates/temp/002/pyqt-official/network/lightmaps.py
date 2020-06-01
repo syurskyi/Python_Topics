@@ -46,7 +46,7 @@
 
 ______ math
 
-____ ?.?C.. ______ (pyqtSignal, QBasicTimer, QObject, QPoint, QPointF,
+____ ?.?C.. ______ (pS.., QBasicTimer, QObject, QPoint, QPointF,
         QRect, ?S.., QStandardPaths, __, QUrl)
 ____ ?.?G.. ______ (?C.., QDesktopServices, QImage, QPainter,
         QPainterPath, QPixmap, QRadialGradient)
@@ -110,14 +110,14 @@ ___ latitudeFromTile(ty, zoom):
 
 c_ SlippyMap(QObject):
 
-    updated _ pyqtSignal(QRect)
+    updated _ pS..(QRect)
 
     ___  -   parent_None):
         super(SlippyMap, self). - (parent)
 
         _offset _ QPoint()
         _tilesRect _ QRect()
-        _tilePixmaps _ {} # Point(x, y) to QPixmap mapping
+        _tilePixmaps _   # dict # Point(x, y) to QPixmap mapping
         _manager _ QNetworkAccessManager()
         _url _ QUrl()
         # public vars
@@ -167,7 +167,7 @@ c_ SlippyMap(QObject):
         __ _url.isEmpty
             download()
 
-        updated.emit(QRect(0, 0, width, height))
+        updated.e..(QRect(0, 0, width, height))
 
     ___ render  p, rect):
         ___ x __ range(_tilesRect.width()):
@@ -193,7 +193,7 @@ c_ SlippyMap(QObject):
             __ img.load(reply, N..):
                 _tilePixmaps[tp] _ QPixmap.fromImage(img)
         reply.deleteLater()
-        updated.emit(tileRect(tp))
+        updated.e..(tileRect(tp))
 
         # purge unused tiles
         bound _ _tilesRect.adjusted(-2, -2, 2, 2)
@@ -438,7 +438,7 @@ c_ MapZoom ?MW..
         berlinAction _ ?A..("&Berlin", self)
         jakartaAction _ ?A..("&Jakarta", self)
         nightModeAction _ ?A..("Night Mode", self)
-        nightModeAction.setCheckable(True)
+        nightModeAction.setCheckable( st.
         nightModeAction.setChecked F..
         osmAction _ ?A..("About OpenStreetMap", self)
         osloAction.t__.c..(chooseOslo)

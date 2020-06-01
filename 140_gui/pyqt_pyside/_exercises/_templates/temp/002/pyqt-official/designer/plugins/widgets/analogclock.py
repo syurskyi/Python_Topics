@@ -42,8 +42,8 @@
 #############################################################################
 
 
-____ ?.?C.. ______ (pyqtProperty, pyqtSignal, pyqtSlot, QPoint, ?S..,
-        __, QTime, QTimer)
+____ ?.?C.. ______ (pyqtProperty, pS.., pyqtSlot, QPoint, ?S..,
+        __, ?T.., QTimer)
 ____ ?.?G.. ______ QBrush, ?C.., QPainter, QPen, QPolygon
 ____ ?.?W.. ______ ?A.., ?W..
 
@@ -57,10 +57,10 @@ c_ PyAnalogClock(?W..):
     """
 
     # Emitted when the clock's time changes.
-    timeChanged _ pyqtSignal(QTime)
+    timeChanged _ pS..(?T..)
 
     # Emitted when the clock's time zone changes.
-    timeZoneChanged _ pyqtSignal(int)
+    timeZoneChanged _ pS..(int)
 
     ___  -   parent_None):
 
@@ -93,7 +93,7 @@ c_ PyAnalogClock(?W..):
     ___ paintEvent  event):
 
         side _ min(width(), height())
-        time _ QTime.currentTime()
+        time _ ?T...currentTime()
         time _ time.addSecs(timeZoneOffset * 3600)
 
         painter _ QPainter()
@@ -143,7 +143,7 @@ c_ PyAnalogClock(?W..):
 
     ___ updateTime
 
-        timeChanged.emit(QTime.currentTime())
+        timeChanged.e..(?T...currentTime())
 
     # The timeZone property is implemented using the getTimeZone() getter
     # method, the setTimeZone() setter method, and the resetTimeZone() method.
@@ -162,7 +162,7 @@ c_ PyAnalogClock(?W..):
     ___ setTimeZone  value):
 
         timeZoneOffset _ value
-        timeZoneChanged.emit(value)
+        timeZoneChanged.e..(value)
         update()
 
     # Qt's property system supports properties that can be reset to their
@@ -170,7 +170,7 @@ c_ PyAnalogClock(?W..):
     ___ resetTimeZone
 
         timeZoneOffset _ 0
-        timeZoneChanged.emit(0)
+        timeZoneChanged.e..(0)
         update()
 
     # Qt-style properties are defined differently to Python's properties.

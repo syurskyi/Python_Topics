@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ pyqtSignal, pyqtSlot, Q_CLASSINFO
+____ ?.?C.. ______ pS.., pyqtSlot, Q_CLASSINFO
 ____ ?.?W.. ______ ?A.., QDialog, QMainWindow, ?MB..
 ____ ?.QtDBus ______ (QDBusAbstractAdaptor, QDBusAbstractInterface,
         QDBusConnection, QDBusMessage)
@@ -68,21 +68,21 @@ c_ ChatAdaptor(QDBusAbstractAdaptor):
         '  </interface>\n'
         '')
 
-    action _ pyqtSignal(str, str)
+    action _ pS..(str, str)
 
-    message _ pyqtSignal(str, str)
+    message _ pS..(str, str)
 
     ___  -   parent):
         super(ChatAdaptor, self). - (parent)
 
-        setAutoRelaySignals(True)
+        setAutoRelaySignals( st.
 
 
 c_ ChatInterface(QDBusAbstractInterface):
 
-    action _ pyqtSignal(str, str)
+    action _ pS..(str, str)
 
-    message _ pyqtSignal(str, str)
+    message _ pS..(str, str)
 
     ___  -   service, path, connection, parent_None):
         super(ChatInterface, self). - (service, path, 'org.example.chat',
@@ -91,9 +91,9 @@ c_ ChatInterface(QDBusAbstractInterface):
 
 c_ ChatMainWindow(QMainWindow, Ui_ChatMainWindow):
 
-    action _ pyqtSignal(str, str)
+    action _ pS..(str, str)
 
-    message _ pyqtSignal(str, str)
+    message _ pS..(str, str)
 
     ___  -
         super(ChatMainWindow, self). - ()
@@ -104,7 +104,7 @@ c_ ChatMainWindow(QMainWindow, Ui_ChatMainWindow):
         setupUi
         sendButton.sE.. F..
 
-        messageLineEdit.textChanged.c..(textChangedSlot)
+        messageLineEdit.tC...c..(textChangedSlot)
         sendButton.c__.c..(sendClickedSlot)
         actionChangeNickname.t__.c..(changeNickname)
         actionAboutQt.t__.c..(aboutQt)
@@ -123,7 +123,7 @@ c_ ChatMainWindow(QMainWindow, Ui_ChatMainWindow):
         dialog.cancelButton.setVisible F..
         dialog.e..
         m_nickname _ dialog.nickname.t__().strip()
-        action.emit(m_nickname, "joins the chat")
+        action.e..(m_nickname, "joins the chat")
 
     ___ rebuildHistory 
         history _ '\n'.join(m_messages)
@@ -147,7 +147,7 @@ c_ ChatMainWindow(QMainWindow, Ui_ChatMainWindow):
 
         rebuildHistory()
 
-    @pyqtSlot(str)
+    @pyqtSlot st.
     ___ textChangedSlot  newText):
         sendButton.sE..(newText !_ '')
 
@@ -165,7 +165,7 @@ c_ ChatMainWindow(QMainWindow, Ui_ChatMainWindow):
         __ dialog.e.. == QDialog.Accepted:
             old _ m_nickname
             m_nickname _ dialog.nickname.t__().strip()
-            action.emit(old, "is now known as %s" % m_nickname)
+            action.e..(old, "is now known as %s" % m_nickname)
 
     @pyqtSlot()
     ___ aboutQt 
@@ -173,7 +173,7 @@ c_ ChatMainWindow(QMainWindow, Ui_ChatMainWindow):
 
     @pyqtSlot()
     ___ exiting 
-        action.emit(m_nickname, "leaves the chat")
+        action.e..(m_nickname, "leaves the chat")
 
 
 c_ NicknameDialog(QDialog, Ui_NicknameDialog):

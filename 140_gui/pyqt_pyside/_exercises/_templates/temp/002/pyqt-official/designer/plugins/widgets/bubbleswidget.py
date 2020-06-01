@@ -25,7 +25,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 ______ random
 
-____ ?.?C.. ______ (pyqtProperty, pyqtSignal, pyqtSlot, QPointF, QRectF,
+____ ?.?C.. ______ (pyqtProperty, pS.., pyqtSlot, QPointF, QRectF,
         ?S.., QSizeF, __, QTimer)
 ____ ?.?G.. ______ QBrush, ?C.., QPainter, QPen, QRadialGradient
 ____ ?.?W.. ______ ?A.., ?W..
@@ -108,8 +108,8 @@ c_ BubblesWidget(BaseClass):
 
     # We define two signals that are used to indicate changes to the status
     # of the widget.
-    bubbleLeft _ pyqtSignal()
-    bubblesRemaining _ pyqtSignal(int)
+    bubbleLeft _ pS..()
+    bubblesRemaining _ pS..(int)
 
     ___  -   parent_None):
 
@@ -132,7 +132,7 @@ c_ BubblesWidget(BaseClass):
         bubbleTimer.setSingleShot F..
         bubbleTimer.timeout.c..(expandBubble)
 
-        setMouseTracking(True)
+        setMouseTracking( st.
         sMS..(?S..(200, 200))
         sWT..("Bubble Maker")
 
@@ -197,7 +197,7 @@ c_ BubblesWidget(BaseClass):
             bubbles.ap..(newBubble)
             newBubble _ N..
             bubbleTimer.stop()
-            bubblesRemaining.emit(le.(bubbles))
+            bubblesRemaining.e..(le.(bubbles))
 
         event.accept()
 
@@ -239,7 +239,7 @@ c_ BubblesWidget(BaseClass):
             __ bubble.position.y() + bubble.radius > 0:
                 bubbles.ap..(bubble)
             ____
-                bubbleLeft.emit()
+                bubbleLeft.e..()
                 left _ True
 
         __ newBubble:
@@ -251,7 +251,7 @@ c_ BubblesWidget(BaseClass):
 
         bubbles _ bubbles
         __ left:
-            bubblesRemaining.emit(le.(bubbles))
+            bubblesRemaining.e..(le.(bubbles))
 
     ___ sH..
 
@@ -279,7 +279,7 @@ c_ BubblesWidget(BaseClass):
             bubbles.ap..(newBubble)
 
         bubbles _ bubbles[:value]
-        bubblesRemaining.emit(value)
+        bubblesRemaining.e..(value)
         update()
 
     numberOfBubbles _ pyqtProperty(int, getBubbles, setBubbles)

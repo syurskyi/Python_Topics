@@ -96,7 +96,7 @@ c_ XmlSyntaxHighlighter(QSyntaxHighlighter):
         # Comment format.
         commentFormat _ QTextCharFormat()
         commentFormat.setForeground(__.lightGray)
-        commentFormat.setFontItalic(True)
+        commentFormat.setFontItalic( st.
 
         commentStartExpression _ QRegExp("<!--")
         commentEndExpression _ QRegExp("-->")
@@ -171,7 +171,7 @@ c_ MainWindow(QMainWindow, Ui_SchemaMainWindow):
         schemaSelection.currentIndexChanged.c..(schemaSelected)
         instanceSelection.currentIndexChanged.c..(instanceSelected)
         validateButton.c__.c..(validate)
-        instanceEdit.textChanged.c..(textChanged)
+        instanceEdit.tC...c..(tC..)
 
         validationStatus.setAlignment(__.AlignCenter | __.AlignVCenter)
 
@@ -191,7 +191,7 @@ c_ MainWindow(QMainWindow, Ui_SchemaMainWindow):
             instanceSelection.aI..("Valid Order Instance")
             instanceSelection.aI..("Invalid Order Instance")
 
-        textChanged()
+        tC..()
 
         schemaFile _ QFile(':/schema_%d.xsd' % index)
         schemaFile.o..(QFile.ReadOnly)
@@ -238,7 +238,7 @@ c_ MainWindow(QMainWindow, Ui_SchemaMainWindow):
         styleSheet _ 'QLabel {background: %s; padding: 3px}' % ?C..(background).lighter(160).name()
         validationStatus.setStyleSheet(styleSheet)
 
-    ___ textChanged
+    ___ tC..
         instanceEdit.setExtraSelections(  # list)
 
     ___ moveCursor  line, column):
@@ -255,7 +255,7 @@ c_ MainWindow(QMainWindow, Ui_SchemaMainWindow):
 
         lineColor _ ?C..(__.red).lighter(160)
         selection.format.setBackground(lineColor)
-        selection.format.setProperty(QTextFormat.FullWidthSelection, True)
+        selection.format.setProperty(QTextFormat.FullWidthSelection,  st.
         selection.cursor _ instanceEdit.textCursor()
         selection.cursor.clearSelection()
         extraSelections.ap..(selection)

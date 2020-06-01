@@ -43,7 +43,7 @@
 ______ math
 ______ random
 
-____ ?.?C.. ______ QLineF, QPointF, QRectF, __, QTime
+____ ?.?C.. ______ QLineF, QPointF, QRectF, __, ?T..
 
 ____ colors ______ Colors
 ____ demoitem ______ DemoItem
@@ -202,7 +202,7 @@ c_ ItemCircleAnimation(DemoItem):
         tickOnPaint _ False
         paused _ False
         doIntroTransitions _ True
-        setAcceptHoverEvents(True)
+        setAcceptHoverEvents( st.
         setCursor(__.OpenHandCursor)
         setupGuides()
         setupLetters()
@@ -210,7 +210,7 @@ c_ ItemCircleAnimation(DemoItem):
         effect _ N..
 
         mouseMoveLastPosition _ QPointF()
-        tickTimer _ QTime()
+        tickTimer _ ?T..()
 
     ___ createLetter  c):
         letter _ LetterItem(c, self)
@@ -328,7 +328,7 @@ c_ ItemCircleAnimation(DemoItem):
         ____ effect __ no. N..:
             effect.useSheepDog _ False
 
-        tickTimer _ QTime.currentTime()
+        tickTimer _ ?T...currentTime()
 
     ___ swapModel
         __ currGuide __ qtGuide2:
@@ -377,14 +377,14 @@ c_ ItemCircleAnimation(DemoItem):
 
     ___ pause  on):
         paused _ on
-        tickTimer _ QTime.currentTime()
+        tickTimer _ ?T...currentTime()
 
     ___ tick
         __ paused or no. effect:
             r_
 
-        t _ tickTimer.msecsTo(QTime.currentTime())
-        tickTimer _ QTime.currentTime()
+        t _ tickTimer.msecsTo(?T...currentTime())
+        tickTimer _ ?T...currentTime()
         effect.tick(t / 10.0)
 
     ___ paint  painter, opt, widget):

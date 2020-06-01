@@ -40,11 +40,11 @@ c_ CsvTableModel(qtc.QAbstractTableModel):
             r_ s_.headerData(section, orientation, role)
 
     ___ sort  column, order):
-        layoutAboutToBeChanged.emit()  # needs to be emitted before a sort
+        layoutAboutToBeChanged.e..()  # needs to be emitted before a sort
         _data.sort(key_lambda x: x[column])
         __ order == qtc.__.DescendingOrder:
             _data.reverse()
-        layoutChanged.emit()  # needs to be emitted after a sort
+        layoutChanged.e..()  # needs to be emitted after a sort
 
     # Methods for Read/Write
 
@@ -54,7 +54,7 @@ c_ CsvTableModel(qtc.QAbstractTableModel):
     ___ setData  index, value, role):
         __ index.isValid() and role == qtc.__.EditRole:
             _data[index.row()][index.column()] _ value
-            dataChanged.emit(index, index, [role])
+            dataChanged.e..(index, index, [role])
             r_ True
         ____
             r_ False
@@ -105,7 +105,7 @@ c_ MainWindow(qtw.QMainWindow):
         # Main UI code goes here
 
         tableview _ qtw.QTableView()
-        tableview.setSortingEnabled(True)
+        tableview.setSortingEnabled( st.
         sCW..(tableview)
 
         # Setup the menu

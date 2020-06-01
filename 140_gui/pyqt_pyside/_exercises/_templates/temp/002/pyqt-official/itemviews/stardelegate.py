@@ -45,7 +45,7 @@
 
 ______ math
 
-____ ?.?C.. ______ pyqtSignal, QPointF, ?S.., __
+____ ?.?C.. ______ pS.., QPointF, ?S.., __
 ____ ?.?G.. ______ QPainter, QPolygonF
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., QStyle,
         QStyledItemDelegate, QTableWidget, QTableWidgetItem, ?W..)
@@ -91,7 +91,7 @@ c_ StarRating(object):
     ___ paint  painter, rect, palette, editMode):
         painter.save()
 
-        painter.setRenderHint(QPainter.Antialiasing, True)
+        painter.setRenderHint(QPainter.Antialiasing,  st.
         painter.setPen(__.NoPen)
 
         __ editMode == StarRating.Editable:
@@ -116,15 +116,15 @@ c_ StarRating(object):
 
 c_ StarEditor(?W..):
 
-    editingFinished _ pyqtSignal()
+    eF__ _ pS..()
 
     ___  -   parent _ N..):
         super(StarEditor, self). - (parent)
 
         _starRating _ StarRating()
 
-        setMouseTracking(True)
-        setAutoFillBackground(True)
+        setMouseTracking( st.
+        setAutoFillBackground( st.
 
     ___ setStarRating  starRating):
         _starRating _ starRating
@@ -148,7 +148,7 @@ c_ StarEditor(?W..):
             update()
 
     ___ mouseReleaseEvent  event):
-        editingFinished.emit()
+        eF__.e..()
 
     ___ starAtPosition  x):
         # Enable a star, if pointer crosses the center horizontally.
@@ -183,7 +183,7 @@ c_ StarDelegate(QStyledItemDelegate):
         starRating _ index.data()
         __ isinstance(starRating, StarRating):
             editor _ StarEditor(parent)
-            editor.editingFinished.c..(commitAndCloseEditor)
+            editor.eF__.c..(commitAndCloseEditor)
             r_ editor
         ____
             r_ super(StarDelegate, self).createEditor(parent, option, index)
@@ -204,8 +204,8 @@ c_ StarDelegate(QStyledItemDelegate):
 
     ___ commitAndCloseEditor
         editor _ sender()
-        commitData.emit(editor)
-        closeEditor.emit(editor)
+        commitData.e..(editor)
+        closeEditor.e..(editor)
 
 
 ___ populateTableWidget(tableWidget):

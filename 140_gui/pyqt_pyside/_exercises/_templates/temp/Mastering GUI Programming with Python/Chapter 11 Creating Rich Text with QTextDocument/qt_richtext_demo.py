@@ -25,7 +25,7 @@ c_ MainWindow(qtw.QMainWindow):
         w__ o..('fight_fighter2.html', 'r') __ fh:
             main.insertHtml(fh.r..
 
-        main.setOpenExternalLinks(True)
+        main.setOpenExternalLinks( st.
 
         # End main UI code
         s..

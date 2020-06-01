@@ -1,15 +1,15 @@
-____ ?.?C.. ______ QObject, pyqtSignal
+____ ?.?C.. ______ QObject, pS..
 
 c_ CurrentThread(QObject):
 
-    _on_execute _ pyqtSignal(object, tuple, dict)
+    _on_execute _ pS..(object, tuple, dict)
 
     ___  -
         super(QObject, self). - ()
         _on_execute.c..(_execute_in_thread)
 
     ___ execute  f, args, kwargs):
-        _on_execute.emit(f, args, kwargs)
+        _on_execute.e..(f, args, kwargs)
 
     ___ _execute_in_thread  f, args, kwargs):
         f($ $$)

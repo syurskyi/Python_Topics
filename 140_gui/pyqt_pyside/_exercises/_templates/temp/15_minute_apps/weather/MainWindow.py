@@ -163,7 +163,7 @@ c_ Ui_MainWindow(object):
         formLayout.setObjectName("formLayout")
         label_5 _ ?W...QLabel(centralwidget)
         font _ ?G...QFont()
-        font.setBold(True)
+        font.setBold( st.
         font.setWeight(75)
         label_5.setFont(font)
         label_5.setAlignment(?C...__.AlignRight|?C...__.AlignTrailing|?C...__.AlignVCenter)
@@ -195,7 +195,7 @@ c_ Ui_MainWindow(object):
         formLayout.setWidget(5, ?W...QFormLayout.FieldRole, pressureLabel)
         label _ ?W...QLabel(centralwidget)
         font _ ?G...QFont()
-        font.setBold(True)
+        font.setBold( st.
         font.setWeight(75)
         label.setFont(font)
         label.setAlignment(?C...__.AlignRight|?C...__.AlignTrailing|?C...__.AlignVCenter)
@@ -231,7 +231,7 @@ c_ Ui_MainWindow(object):
         formLayout.setWidget(1, ?W...QFormLayout.LabelRole, label_9)
         label_10 _ ?W...QLabel(centralwidget)
         font _ ?G...QFont()
-        font.setBold(True)
+        font.setBold( st.
         font.setWeight(75)
         label_10.setFont(font)
         label_10.setAlignment(?C...__.AlignRight|?C...__.AlignTrailing|?C...__.AlignVCenter)

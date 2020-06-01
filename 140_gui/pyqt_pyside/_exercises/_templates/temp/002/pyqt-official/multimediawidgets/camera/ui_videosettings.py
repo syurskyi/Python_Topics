@@ -17,7 +17,7 @@ c_ Ui_VideoSettingsUi(object):
         gridLayout_4.setObjectName("gridLayout_4")
         scrollArea _ ?W...QScrollArea(VideoSettingsUi)
         scrollArea.setFrameShape(?W...QFrame.NoFrame)
-        scrollArea.setWidgetResizable(True)
+        scrollArea.setWidgetResizable( st.
         scrollArea.setObjectName("scrollArea")
         scrollAreaWidgetContents _ ?W...?W..
         scrollAreaWidgetContents.setGeometry(?C...QRect(0, 0, 543, 250))

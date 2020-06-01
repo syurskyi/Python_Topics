@@ -25,7 +25,7 @@ c_ Ui_ChatMainWindow(object):
         vboxlayout.setObjectName("vboxlayout")
         chatHistory _ ?W...QTextBrowser(centralwidget)
         chatHistory.setAcceptDrops F..
-        chatHistory.setAcceptRichText(True)
+        chatHistory.setAcceptRichText( st.
         chatHistory.setObjectName("chatHistory")
         vboxlayout.aW..(chatHistory)
         hboxlayout1 _ ?W...QHBoxLayout()

@@ -67,17 +67,17 @@ c_ StyleSheetEditor(QDialog):
 
         loadStyleSheet('Coffee')
 
-    @pyqtSlot(str)
+    @pyqtSlot st.
     ___ on_styleCombo_activated  styleName):
         ?A...setStyle(styleName)
         ui.applyButton.sE.. F..
 
-    @pyqtSlot(str)
+    @pyqtSlot st.
     ___ on_styleSheetCombo_activated  sheetName):
         loadStyleSheet(sheetName)
 
     ___ on_styleTextEdit_textChanged 
-        ui.applyButton.sE..(True)
+        ui.applyButton.sE..( st.
 
     ___ on_applyButton_clicked 
         ?A...instance().setStyleSheet(

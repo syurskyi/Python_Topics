@@ -43,7 +43,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ (pyqtSignal, QBuffer, QByteArray, QFile, QIODevice,
+____ ?.?C.. ______ (pS.., QBuffer, QByteArray, QFile, QIODevice,
         QMimeData, __)
 ____ ?.?G.. ______ QDrag, QIcon, QImage, QPainter, QPixmap
 ____ ?.?W.. ______ (?A.., QGridLayout, QLabel, ?PB..,
@@ -55,7 +55,7 @@ ______ delayedencoding_rc
 
 c_ MimeData(QMimeData):
 
-    dataRequested _ pyqtSignal(str)
+    dataRequested _ pS.. st.
 
     ___ formats
         formats _ QMimeData.formats
@@ -64,7 +64,7 @@ c_ MimeData(QMimeData):
         r_ formats
 
     ___ retrieveData  mimeType, qvtype):
-        dataRequested.emit(mimeType)
+        dataRequested.e..(mimeType)
 
         r_ QMimeData.retrieveData  mimeType, qvtype)
 
@@ -78,7 +78,7 @@ c_ SourceWidget(?W..):
         imageFile _ QFile(':/images/example.svg')
         imageFile.o..(QIODevice.ReadOnly)
         imageData _ imageFile.readAll()
-        imageFile.close()
+        imageFile.c..
 
         imageArea _ QScrollArea()
         imageLabel _ QSvgWidget()
@@ -113,7 +113,7 @@ c_ SourceWidget(?W..):
         buffer _ QBuffer(data)
         buffer.o..(QIODevice.WriteOnly)
         image.save(buffer, 'PNG')
-        buffer.close()
+        buffer.c..
         mimeData.setData('image/png', data)
 
     ___ startDrag

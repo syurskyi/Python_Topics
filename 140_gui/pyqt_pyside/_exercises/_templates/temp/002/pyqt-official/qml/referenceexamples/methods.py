@@ -78,7 +78,7 @@ c_ Person(QObject):
         _name _ ''
         _shoeSize _ 0
 
-    @pyqtProperty(str)
+    @pyqtProperty st.
     ___ name
         r_ _name
 
@@ -114,7 +114,7 @@ c_ BirthdayParty(QObject):
     ___ guests
         r_ QQmlListProperty(Person, self, _guests)
 
-    @pyqtSlot(str)
+    @pyqtSlot st.
     ___ invite  name):
         person _ Person
         person.name _ name

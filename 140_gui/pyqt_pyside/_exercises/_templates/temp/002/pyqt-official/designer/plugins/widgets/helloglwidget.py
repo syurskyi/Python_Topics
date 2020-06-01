@@ -25,7 +25,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 ______ math
 
-____ ?.?C.. ______ pyqtProperty, pyqtSignal, pyqtSlot, QPoint, ?S.., __
+____ ?.?C.. ______ pyqtProperty, pS.., pyqtSlot, QPoint, ?S.., __
 ____ ?.?G.. ______ ?C..
 ____ ?.?W.. ______ ?A.., QOpenGLWidget
 
@@ -41,9 +41,9 @@ c_ HelloGLWidget(QOpenGLWidget):
 
     # We define three signals that are used to indicate changes to the
     # rotation of the logo.
-    xRotationChanged _ pyqtSignal(int)
-    yRotationChanged _ pyqtSignal(int)
-    zRotationChanged _ pyqtSignal(int)
+    xRotationChanged _ pS..(int)
+    yRotationChanged _ pS..(int)
+    zRotationChanged _ pS..(int)
 
     ___  -   parent_None):
         super(HelloGLWidget, self). - (parent)
@@ -73,7 +73,7 @@ c_ HelloGLWidget(QOpenGLWidget):
         angle _ normalizeAngle(angle)
         __ angle !_ xRot:
             xRot _ angle
-            xRotationChanged.emit(angle)
+            xRotationChanged.e..(angle)
             update()
 
     xRotation _ pyqtProperty(int, getXRotation, setXRotation)
@@ -91,7 +91,7 @@ c_ HelloGLWidget(QOpenGLWidget):
         angle _ normalizeAngle(angle)
         __ angle !_ yRot:
             yRot _ angle
-            yRotationChanged.emit(angle)
+            yRotationChanged.e..(angle)
             update()
 
     yRotation _ pyqtProperty(int, getYRotation, setYRotation)
@@ -109,7 +109,7 @@ c_ HelloGLWidget(QOpenGLWidget):
         angle _ normalizeAngle(angle)
         __ angle !_ zRot:
             zRot _ angle
-            zRotationChanged.emit(angle)
+            zRotationChanged.e..(angle)
             update()
 
     zRotation _ pyqtProperty(int, getZRotation, setZRotation)

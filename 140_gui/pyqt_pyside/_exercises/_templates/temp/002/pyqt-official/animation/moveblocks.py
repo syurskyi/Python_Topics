@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ (QAbstractTransition, QEasingCurve, QEvent,
         QParallelAnimationGroup, QPropertyAnimation, qrand, QRect,
-        QSequentialAnimationGroup, qsrand, QState, QStateMachine, __, QTime,
+        QSequentialAnimationGroup, qsrand, QState, QStateMachine, __, ?T..,
         QTimer)
 ____ ?.?W.. ______ (?A.., QGraphicsScene, QGraphicsView,
         QGraphicsWidget)
@@ -151,7 +151,7 @@ __ ______ __ ______
     group _ QState()
     timer _ ?T..
     timer.setInterval(1250)
-    timer.setSingleShot(True)
+    timer.setSingleShot( st.
     group.entered.c..(timer.start)
 
     state1 _ createGeometryState(button1, QRect(100, 0, 50, 50), button2,
@@ -228,6 +228,6 @@ __ ______ __ ______
     window.r..(300, 300)
     window.s..
 
-    qsrand(QTime(0, 0, 0).secsTo(QTime.currentTime()))
+    qsrand(?T..(0, 0, 0).secsTo(?T...currentTime()))
 
     ___.e..(app.exec_())

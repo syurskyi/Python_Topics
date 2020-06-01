@@ -64,7 +64,7 @@ c_ Client(QDialog):
         portLabel _ QLabel("S&erver port:")
 
         hostCombo _ ?CB()
-        hostCombo.setEditable(True)
+        hostCombo.setEditable( st.
 
         name _ QHostInfo.localHostName()
         __ name !_ '':
@@ -97,7 +97,7 @@ c_ Client(QDialog):
                 "the Fortune Server example as well.")
 
         getFortuneButton _ ?PB..("Get Fortune")
-        getFortuneButton.setDefault(True)
+        getFortuneButton.setDefault( st.
         getFortuneButton.sE.. F..
 
         quitButton _ ?PB..("Quit")
@@ -109,7 +109,7 @@ c_ Client(QDialog):
         tcpSocket _ QTcpSocket
 
         hostCombo.editTextChanged.c..(enableGetFortuneButton)
-        portLineEdit.textChanged.c..(enableGetFortuneButton)
+        portLineEdit.tC...c..(enableGetFortuneButton)
         getFortuneButton.c__.c..(requestNewFortune)
         quitButton.c__.c..(close)
         tcpSocket.readyRead.c..(readFortune)
@@ -172,7 +172,7 @@ c_ Client(QDialog):
 
         currentFortune _ nextFortune
         statusLabel.sT..(currentFortune)
-        getFortuneButton.sE..(True)
+        getFortuneButton.sE..( st.
 
     ___ displayError  socketError):
         __ socketError == QAbstractSocket.RemoteHostClosedError:
@@ -190,7 +190,7 @@ c_ Client(QDialog):
             ?MB...information  "Fortune Client",
                     "The following error occurred: %s." % tcpSocket.errorString())
 
-        getFortuneButton.sE..(True)
+        getFortuneButton.sE..( st.
 
     ___ enableGetFortuneButton
         getFortuneButton.sE..(

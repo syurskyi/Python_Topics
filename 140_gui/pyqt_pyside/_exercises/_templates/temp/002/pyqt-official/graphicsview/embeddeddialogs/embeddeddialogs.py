@@ -211,7 +211,7 @@ __ ______ __ ______
     app _ ?A..(___.a..
 
     scene _ QGraphicsScene()
-    scene.setStickyFocus(True)
+    scene.setStickyFocus( st.
 
     ___ y __ range(10):
         ___ x __ range(10):

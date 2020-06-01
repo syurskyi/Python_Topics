@@ -1,7 +1,7 @@
 ______ ___
 __ 'PyQt5' __ ___.modules:
     ____ ? ______ ?C.., ?W..
-    ____ ?.?C.. ______ __, pyqtSignal __ Signal
+    ____ ?.?C.. ______ __, pS.. __ Signal
 
 ____
     ____ PySide2 ______ ?C.., ?W..
@@ -29,8 +29,8 @@ c_ _PaletteBase(?W...?W..):
 
     selected _ Signal(object)
 
-    ___ _emit_color  color):
-        selected.emit(color)
+    ___ _e.._color  color):
+        selected.e..(color)
 
 
 c_ _PaletteLinearBase(_PaletteBase):
@@ -46,7 +46,7 @@ c_ _PaletteLinearBase(_PaletteBase):
         ___ c __ colors:
             b _ _PaletteButton(c)
             b.pressed.c..(
-                l___ c_c: _emit_color(c)
+                l___ c_c: _e.._color(c)
             )
             palette.aW..(b)
 
@@ -76,7 +76,7 @@ c_ PaletteGrid(_PaletteBase):
         ___ c __ colors:
             b _ _PaletteButton(c)
             b.pressed.c..(
-                l___ c_c: _emit_color(c)
+                l___ c_c: _e.._color(c)
             )
             palette.aW..(b, row, col)
             col +_ 1

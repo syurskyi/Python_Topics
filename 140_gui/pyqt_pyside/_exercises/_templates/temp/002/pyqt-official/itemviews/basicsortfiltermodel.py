@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ (QDate, QDateTime, QRegExp, QSortFilterProxyModel, __,
-        QTime)
+        ?T..)
 ____ ?.?G.. ______ QStandardItemModel
 ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, QGridLayout,
         QGroupBox, QHBoxLayout, QLabel, QLineEdit, QTreeView, QVBoxLayout,
@@ -75,20 +75,20 @@ c_ Window(?W..):
         super(Window, self). - ()
 
         proxyModel _ SortFilterProxyModel()
-        proxyModel.setDynamicSortFilter(True)
+        proxyModel.setDynamicSortFilter( st.
 
         sourceGroupBox _ QGroupBox("Original Model")
         proxyGroupBox _ QGroupBox("Sorted/Filtered Model")
 
         sourceView _ ?TV..
         sourceView.setRootIsDecorated F..
-        sourceView.setAlternatingRowColors(True)
+        sourceView.setAlternatingRowColors( st.
 
         proxyView _ ?TV..
         proxyView.setRootIsDecorated F..
-        proxyView.setAlternatingRowColors(True)
+        proxyView.setAlternatingRowColors( st.
         proxyView.sM..(proxyModel)
-        proxyView.setSortingEnabled(True)
+        proxyView.setSortingEnabled( st.
 
         sortCaseSensitivityCheckBox _ QCheckBox("Case sensitive sorting")
         filterCaseSensitivityCheckBox _ QCheckBox("Case sensitive filter")
@@ -111,7 +111,7 @@ c_ Window(?W..):
         filterColumnLabel _ QLabel("Filter &column:")
         filterColumnLabel.setBuddy(filterColumnComboBox)
 
-        filterPatternLineEdit.textChanged.c..(filterRegExpChanged)
+        filterPatternLineEdit.tC...c..(filterRegExpChanged)
         filterSyntaxComboBox.currentIndexChanged.c..(filterRegExpChanged)
         filterColumnComboBox.currentIndexChanged.c..(filterColumnChanged)
         filterCaseSensitivityCheckBox.toggled.c..(filterRegExpChanged)
@@ -145,8 +145,8 @@ c_ Window(?W..):
         filterColumnComboBox.setCurrentIndex(SENDER)
 
         filterPatternLineEdit.sT..("Andy|Grace")
-        filterCaseSensitivityCheckBox.setChecked(True)
-        sortCaseSensitivityCheckBox.setChecked(True)
+        filterCaseSensitivityCheckBox.setChecked( st.
+        sortCaseSensitivityCheckBox.setChecked( st.
 
     ___ setSourceModel  model):
         proxyModel.setSourceModel(model)
@@ -192,25 +192,25 @@ ___ createMailModel(parent):
     model.setHeaderData(DATE, __.Horizontal, "Date")
 
     addMail(model, "Happy New Year!", "Grace K. <grace@software-inc.com>",
-            QDateTime(QDate(2006, 12, 31), QTime(17, 3)))
+            QDateTime(QDate(2006, 12, 31), ?T..(17, 3)))
     addMail(model, "Radically new concept", "Grace K. <grace@software-inc.com>",
-            QDateTime(QDate(2006, 12, 22), QTime(9, 44)))
+            QDateTime(QDate(2006, 12, 22), ?T..(9, 44)))
     addMail(model, "Accounts", "pascale@nospam.com",
-            QDateTime(QDate(2006, 12, 31), QTime(12, 50)))
+            QDateTime(QDate(2006, 12, 31), ?T..(12, 50)))
     addMail(model, "Expenses", "Joe Bloggs <joe@bloggs.com>",
-            QDateTime(QDate(2006, 12, 25), QTime(11, 39)))
+            QDateTime(QDate(2006, 12, 25), ?T..(11, 39)))
     addMail(model, "Re: Expenses", "Andy <andy@nospam.com>",
-            QDateTime(QDate(2007, 1, 2), QTime(16, 5)))
+            QDateTime(QDate(2007, 1, 2), ?T..(16, 5)))
     addMail(model, "Re: Accounts", "Joe Bloggs <joe@bloggs.com>",
-            QDateTime(QDate(2007, 1, 3), QTime(14, 18)))
+            QDateTime(QDate(2007, 1, 3), ?T..(14, 18)))
     addMail(model, "Re: Accounts", "Andy <andy@nospam.com>",
-            QDateTime(QDate(2007, 1, 3), QTime(14, 26)))
+            QDateTime(QDate(2007, 1, 3), ?T..(14, 26)))
     addMail(model, "Sports", "Linda Smith <linda.smith@nospam.com>",
-            QDateTime(QDate(2007, 1, 5), QTime(11, 33)))
+            QDateTime(QDate(2007, 1, 5), ?T..(11, 33)))
     addMail(model, "AW: Sports", "Rolf Newschweinstein <rolfn@nospam.com>",
-            QDateTime(QDate(2007, 1, 5), QTime(12, 0)))
+            QDateTime(QDate(2007, 1, 5), ?T..(12, 0)))
     addMail(model, "RE: Sports", "Petra Schmidt <petras@nospam.com>",
-            QDateTime(QDate(2007, 1, 5), QTime(12, 1)))
+            QDateTime(QDate(2007, 1, 5), ?T..(12, 1)))
 
     r_ model
 

@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QTime, QTimer
+____ ?.?C.. ______ ?T.., QTimer
 ____ ?.?W.. ______ ?A.., QLCDNumber
 
 
@@ -62,7 +62,7 @@ c_ DigitalClock(QLCDNumber):
         r..(150, 60)
 
     ___ showTime 
-        time _ QTime.currentTime()
+        time _ ?T...currentTime()
         t__ _ time.toString('hh:mm')
         __ (time.second() % 2) == 0:
             t__ _ t__[:2] + ' ' + t__[3:]

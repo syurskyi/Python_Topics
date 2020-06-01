@@ -7,27 +7,27 @@ ____ ? ______ ?C.. __ qtc
 c_ SlowSearcherThread(qtc.QThread):
     """A somewhat deliberately slow searcher."""
 
-    match_found _ qtc.pyqtSignal(str)
-    directory_changed _ qtc.pyqtSignal(str)
-    finished _ qtc.pyqtSignal()
+    match_found _ qtc.pS.. st.
+    directory_changed _ qtc.pS.. st.
+    finished _ qtc.pS..()
 
     ___  -  
         s_. - ()
         term _ N..
 
-    @qtc.pyqtSlot(str)
+    @qtc.pyqtSlot st.
     ___ set_term  term):
         term _ term
 
-    @qtc.pyqtSlot()
+    ??.?
     ___ run 
         #print(f'Beginning search for: {self.term}')
         root _ qtc.QDir.rootPath()
         _search(term, root)
-        finished.emit()
+        finished.e..()
 
     ___ _search  term, path):
-        directory_changed.emit(path)
+        directory_changed.e..(path)
         directory _ qtc.QDir(path)
         directory.setFilter(
             directory.filter() |
@@ -37,22 +37,22 @@ c_ SlowSearcherThread(qtc.QThread):
         ___ entry __ directory.entryInfoList
             __ term __ entry.filePath
                 print(entry.filePath())
-                match_found.emit(entry.filePath())
+                match_found.e..(entry.filePath())
             __ entry.isDir
                 _search(term, entry.filePath())
 
 
 c_ SearchForm ?.?W..
 
-    textChanged _ qtc.pyqtSignal(str)
-    rP__ _ qtc.pyqtSignal()
+    tC.. _ qtc.pS.. st.
+    rP__ _ qtc.pS..()
 
     ___  -  
         s_. - ()
         sL.. ?.?VBL..
         search_term_inp _ ?.?LE..(
             placeholderText_'Search Term',
-            textChanged_self.textChanged,
+            textChanged_self.tC..,
             returnPressed_self.rP__)
         layout().aW..(search_term_inp)
         results _ ?.?LW..
@@ -80,7 +80,7 @@ c_ MainWindow(qtw.QMainWindow):
         ss _ SlowSearcherThread()
 
         # Connect to search engine
-        form.textChanged.c..(ss.set_term)
+        form.tC...c..(ss.set_term)
         form.rP__.c..(ss.start)
         ss.match_found.c..(form.addResult)
         ss.finished.c..(on_finished)

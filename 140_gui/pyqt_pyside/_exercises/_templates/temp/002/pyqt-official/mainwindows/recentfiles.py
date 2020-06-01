@@ -215,7 +215,7 @@ c_ MainWindow ?MW..
             t__ _ "&%d %s" % (i + 1, strippedName(files[i]))
             recentFileActs[i].sT..(t__)
             recentFileActs[i].setData(files[i])
-            recentFileActs[i].setVisible(True)
+            recentFileActs[i].setVisible( st.
 
         ___ j __ range(numRecentFiles, MainWindow.MaxRecentFiles):
             recentFileActs[j].setVisible F..

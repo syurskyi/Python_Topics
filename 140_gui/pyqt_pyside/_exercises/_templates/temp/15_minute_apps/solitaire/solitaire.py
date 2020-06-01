@@ -29,9 +29,9 @@ SUITS = ["C", "S", "H", "D"]
 
 
 class Signals(QObject):
-    complete = pyqtSignal()
-    clicked = pyqtSignal()
-    doubleclicked = pyqtSignal()
+    complete = pS..()
+    clicked = pS..()
+    doubleclicked = pS..()
 
 
 class Card(QGraphicsPixmapItem):
@@ -124,7 +124,7 @@ class Card(QGraphicsPixmapItem):
 
     def mouseDoubleClickEvent(self, e):
         if stack.is_free_card
-            signals.doubleclicked.emit()
+            signals.doubleclicked.e..()
             e.accept()
 
         super(Card, self).mouseDoubleClickEvent(e)
@@ -164,7 +164,7 @@ class StackBase(QGraphicsRectItem):
     def deactivate 
         pass
 
-    def add_card(self, card, update=True):
+    def add_card(self, card, update= st.:
         card.stack = self
         cards.append(card)
         if update:
@@ -317,7 +317,7 @@ class WorkStack(StackBase):
     def is_free_card(self, card):
         return card.is_face_up #self.cards and card == self.cards[-1]
 
-    def add_card(self, card, update=True):
+    def add_card(self, card, update= st.:
         if cards:
             card.setParentItem(cards[-1])
         else:
@@ -384,13 +384,13 @@ class DropStack(StackBase):
 
         return False
 
-    def add_card(self, card, update=True):
+    def add_card(self, card, update= st.:
         super(DropStack, self).add_card(card, update=update)
         suit = card.suit
         value = cards[-1].value
 
         if is_complete:
-            signals.complete.emit()
+            signals.complete.e..()
 
     def remove_card(self, card):
         super(DropStack, self).remove_card(card)
@@ -414,7 +414,7 @@ class DealTrigger(QGraphicsRectItem):
         signals = Signals()
 
     def mousePressEvent(self, e):
-        signals.clicked.emit()
+        signals.clicked.e..()
 
 
 class AnimationCover(QGraphicsRectItem):
@@ -465,13 +465,13 @@ class MainWindow(QMainWindow):
         menu.addSeparator()
 
         deal1_action = QAction("1 card", self)
-        deal1_action.setCheckable(True)
+        deal1_action.setCheckable( st.
         deal1_action.triggered.connect(l___: set_deal_n(1))
         menu.addAction(deal1_action)
 
         deal3_action = QAction("3 card", self)
-        deal3_action.setCheckable(True)
-        deal3_action.setChecked(True)
+        deal3_action.setCheckable( st.
+        deal3_action.setChecked( st.
         deal3_action.triggered.connect(l___: set_deal_n(3))
 
         menu.addAction(deal3_action)
@@ -479,23 +479,23 @@ class MainWindow(QMainWindow):
         dealgroup = QActionGroup
         dealgroup.addAction(deal1_action)
         dealgroup.addAction(deal3_action)
-        dealgroup.setExclusive(True)
+        dealgroup.setExclusive( st.
 
         menu.addSeparator()
 
         rounds3_action = QAction("3 rounds", self)
-        rounds3_action.setCheckable(True)
-        rounds3_action.setChecked(True)
+        rounds3_action.setCheckable( st.
+        rounds3_action.setChecked( st.
         rounds3_action.triggered.connect(l___: set_rounds_n(3))
         menu.addAction(rounds3_action)
 
         rounds5_action = QAction("5 rounds", self)
-        rounds5_action.setCheckable(True)
+        rounds5_action.setCheckable( st.
         rounds5_action.triggered.connect(l___: set_rounds_n(5))
         menu.addAction(rounds5_action)
 
         roundsu_action = QAction("Unlimited rounds", self)
-        roundsu_action.setCheckable(True)
+        roundsu_action.setCheckable( st.
         roundsu_action.triggered.connect(l___: set_rounds_n(None))
         menu.addAction(roundsu_action)
 
@@ -503,7 +503,7 @@ class MainWindow(QMainWindow):
         roundgroup.addAction(rounds3_action)
         roundgroup.addAction(rounds5_action)
         roundgroup.addAction(roundsu_action)
-        roundgroup.setExclusive(True)
+        roundgroup.setExclusive( st.
 
         menu.addSeparator()
 
@@ -570,7 +570,7 @@ class MainWindow(QMainWindow):
             shuffle_and_stack()
 
     def quit 
-        close()
+        c..
 
     def set_deal_n(self, n):
         deal_n = n

@@ -59,7 +59,7 @@ c_ ImageViewer ?MW..
         imageLabel _ QLabel()
         imageLabel.setBackgroundRole(?P...Base)
         imageLabel.sSP..(QSizePolicy.Ignored, QSizePolicy.Ignored)
-        imageLabel.setScaledContents(True)
+        imageLabel.setScaledContents( st.
 
         scrollArea _ QScrollArea()
         scrollArea.setBackgroundRole(?P...Dark)
@@ -85,8 +85,8 @@ c_ ImageViewer ?MW..
             imageLabel.setPixmap(QPixmap.fromImage(image))
             scaleFactor _ 1.0
 
-            printAct.sE..(True)
-            fitToWindowAct.sE..(True)
+            printAct.sE..( st.
+            fitToWindowAct.sE..( st.
             updateActions()
 
             __ no. fitToWindowAct.isChecked

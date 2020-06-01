@@ -43,7 +43,7 @@ c_ Ui_MainWindow(object):
         event_category.aI..("")
         event_category.aI..("")
         gridLayout.aW..(event_category, 1, 0, 1, 1)
-        event_time _ ?W...QTimeEdit(groupBox)
+        event_time _ ?W...?TE..(groupBox)
         event_time.setObjectName("event_time")
         gridLayout.aW..(event_time, 1, 1, 1, 1)
         event_detail _ ?W...?TE..(groupBox)

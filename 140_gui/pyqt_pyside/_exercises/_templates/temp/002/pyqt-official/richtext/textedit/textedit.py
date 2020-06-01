@@ -255,9 +255,9 @@ c_ TextEdit ?MW..
                         QIcon(rsrcPath + '/textbold.png')),
                 "&Bold", self, priority_QAction.LowPriority,
                 shortcut_Qt.CTRL + __.Key_B, triggered_self.textBold,
-                checkable_True)
+                checkable_ st.
         bold _ QFont()
-        bold.setBold(True)
+        bold.setBold( st.
         actionTextBold.setFont(bold)
         tb.aA..(actionTextBold)
         menu.aA..(actionTextBold)
@@ -267,9 +267,9 @@ c_ TextEdit ?MW..
                         QIcon(rsrcPath + '/textitalic.png')),
                 "&Italic", self, priority_QAction.LowPriority,
                 shortcut_Qt.CTRL + __.Key_I, triggered_self.textItalic,
-                checkable_True)
+                checkable_ st.
         italic _ QFont()
-        italic.setItalic(True)
+        italic.setItalic( st.
         actionTextItalic.setFont(italic)
         tb.aA..(actionTextItalic)
         menu.aA..(actionTextItalic)
@@ -279,9 +279,9 @@ c_ TextEdit ?MW..
                         QIcon(rsrcPath + '/textunder.png')),
                 "&Underline", self, priority_QAction.LowPriority,
                 shortcut_Qt.CTRL + __.Key_U, triggered_self.textUnderline,
-                checkable_True)
+                checkable_ st.
         underline _ QFont()
-        underline.setUnderline(True)
+        underline.setUnderline( st.
         actionTextUnderline.setFont(underline)
         tb.aA..(actionTextUnderline)
         menu.aA..(actionTextUnderline)
@@ -324,19 +324,19 @@ c_ TextEdit ?MW..
                 "&Justify", grp)
 
         actionAlignLeft.sS..(__.CTRL + __.Key_L)
-        actionAlignLeft.setCheckable(True)
+        actionAlignLeft.setCheckable( st.
         actionAlignLeft.setPriority(?A...LowPriority)
 
         actionAlignCenter.sS..(__.CTRL + __.Key_E)
-        actionAlignCenter.setCheckable(True)
+        actionAlignCenter.setCheckable( st.
         actionAlignCenter.setPriority(?A...LowPriority)
 
         actionAlignRight.sS..(__.CTRL + __.Key_R)
-        actionAlignRight.setCheckable(True)
+        actionAlignRight.setCheckable( st.
         actionAlignRight.setPriority(?A...LowPriority)
 
         actionAlignJustify.sS..(__.CTRL + __.Key_J)
-        actionAlignJustify.setCheckable(True)
+        actionAlignJustify.setCheckable( st.
         actionAlignJustify.setPriority(?A...LowPriority)
 
         tb.addActions(grp.actions())
@@ -376,7 +376,7 @@ c_ TextEdit ?MW..
         comboSize _ ?CB(tb)
         comboSize.setObjectName("comboSize")
         tb.aW..(comboSize)
-        comboSize.setEditable(True)
+        comboSize.setEditable( st.
 
         db _ QFontDatabase()
         ___ size __ db.standardSizes
@@ -634,13 +634,13 @@ c_ TextEdit ?MW..
 
     ___ alignmentChanged  alignment):
         __ alignment & __.AlignLeft:
-            actionAlignLeft.setChecked(True)
+            actionAlignLeft.setChecked( st.
         ____ alignment & __.AlignHCenter:
-            actionAlignCenter.setChecked(True)
+            actionAlignCenter.setChecked( st.
         ____ alignment & __.AlignRight:
-            actionAlignRight.setChecked(True)
+            actionAlignRight.setChecked( st.
         ____ alignment & __.AlignJustify:
-            actionAlignJustify.setChecked(True)
+            actionAlignJustify.setChecked( st.
 
 
 __ ______ __ ______

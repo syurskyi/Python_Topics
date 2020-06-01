@@ -45,7 +45,7 @@
 ______ ___
 ______ math
 
-____ ?.?C.. ______ pyqtSignal, ?S.., __, QTimer
+____ ?.?C.. ______ pS.., ?S.., __, QTimer
 ____ ?.?G.. ______ QOpenGLVersionProfile, QPixmap
 ____ ?.?W.. ______ (?A.., ?A.., QGridLayout, QLabel,
         QLineEdit, QMainWindow, ?MB.., QOpenGLWidget, QScrollArea,
@@ -53,9 +53,9 @@ ____ ?.?W.. ______ (?A.., ?A.., QGridLayout, QLabel,
 
 
 c_ GLWidget(QOpenGLWidget):
-    xRotationChanged _ pyqtSignal(int)
-    yRotationChanged _ pyqtSignal(int)
-    zRotationChanged _ pyqtSignal(int)
+    xRotationChanged _ pS..(int)
+    yRotationChanged _ pS..(int)
+    zRotationChanged _ pS..(int)
 
     ___  -   parent_None):
         super(GLWidget, self). - (parent)
@@ -77,7 +77,7 @@ c_ GLWidget(QOpenGLWidget):
 
         __ angle !_ xRot:
             xRot _ angle
-            xRotationChanged.emit(angle)
+            xRotationChanged.e..(angle)
             update()
 
     ___ setYRotation  angle):
@@ -85,7 +85,7 @@ c_ GLWidget(QOpenGLWidget):
 
         __ angle !_ yRot:
             yRot _ angle
-            yRotationChanged.emit(angle)
+            yRotationChanged.e..(angle)
             update()
 
     ___ setZRotation  angle):
@@ -93,7 +93,7 @@ c_ GLWidget(QOpenGLWidget):
 
         __ angle !_ zRot:
             zRot _ angle
-            zRotationChanged.emit(angle)
+            zRotationChanged.e..(angle)
             update()
 
     ___ initializeGL
@@ -290,7 +290,7 @@ c_ MainWindow ?MW..
 
         glWidgetArea _ QScrollArea()
         glWidgetArea.setWidget(glWidget)
-        glWidgetArea.setWidgetResizable(True)
+        glWidgetArea.setWidgetResizable( st.
         glWidgetArea.setHorizontalScrollBarPolicy(__.ScrollBarAlwaysOff)
         glWidgetArea.setVerticalScrollBarPolicy(__.ScrollBarAlwaysOff)
         glWidgetArea.sSP..(QSizePolicy.Ignored,

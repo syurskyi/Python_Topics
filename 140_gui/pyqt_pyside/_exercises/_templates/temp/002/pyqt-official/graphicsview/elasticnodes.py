@@ -45,7 +45,7 @@
 ______ math
 
 ____ ?.?C.. ______ (qAbs, QLineF, QPointF, qrand, QRectF, QSizeF, qsrand,
-        __, QTime)
+        __, ?T..)
 ____ ?.?G.. ______ (QBrush, ?C.., QLinearGradient, QPainter,
         QPainterPath, QPen, QPolygonF, QRadialGradient)
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsScene,
@@ -400,7 +400,7 @@ c_ GraphWidget(QGraphicsView):
                 "mouse wheel or the '+' and '-' keys"
 
         font _ painter.font()
-        font.setBold(True)
+        font.setBold( st.
         font.setPointSize(14)
         painter.setFont(font)
         painter.setPen(__.lightGray)
@@ -422,7 +422,7 @@ __ ______ __ ______
     ______ ___
 
     app _ ?A..(___.a..
-    qsrand(QTime(0,0,0).secsTo(QTime.currentTime()))
+    qsrand(?T..(0,0,0).secsTo(?T...currentTime()))
 
     widget _ GraphWidget()
     widget.s..

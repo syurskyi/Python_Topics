@@ -47,7 +47,7 @@ c_ MainWindow(?W..):
         model.select()
 
     ___ closeEvent  event):
-        db.close()
+        db.c..
 
 __ __name__ == "__main__":
     app _ ?A..(___.a..

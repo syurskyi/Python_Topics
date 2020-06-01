@@ -38,7 +38,7 @@ c_ DataGrid(?W..):
         updateStatus()
 
     ___ initUI 
-        tableView.horizontalHeader().setStretchLastSection(True)
+        tableView.horizontalHeader().setStretchLastSection( st.
         tableView.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
         layout.aW..(tableView)
 
@@ -132,16 +132,16 @@ c_ DataGrid(?W..):
         __ currentPage <_ 1:
             prevButton.sE.. F..
         ____
-            prevButton.sE..(True)
+            prevButton.sE..( st.
 
         __ currentPage >_ totalPage:
             nextButton.sE.. F..
         ____
-            nextButton.sE..(True)
+            nextButton.sE..( st.
 
     # Close database connection when interface is closed
     ___ closeEvent  event):
-        db.close()
+        db.c..
 
 __ __name__ == "__main__":
     app _ ?A..(___.a..

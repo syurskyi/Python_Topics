@@ -92,7 +92,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         translator = Translator()
 
-        destTextEdit.setReadOnly(True)
+        destTextEdit.setReadOnly( st.
 
         if GOOGLE_TRANSLATE_AVAILABLE:
             srcLanguage.aI..(LANGUAGES.keys())

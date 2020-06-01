@@ -86,11 +86,11 @@ c_ AddressBook(?W..):
 
         nameLabel _ QLabel("Name:")
         nameLine _ ?LE..
-        nameLine.setReadOnly(True)
+        nameLine.setReadOnly( st.
 
         addressLabel _ QLabel("Address:")
         addressText _ ?TE..()
-        addressText.setReadOnly(True)
+        addressText.setReadOnly( st.
 
         addButton _ ?PB..("&Add")
         addButton.s..
@@ -169,9 +169,9 @@ c_ AddressBook(?W..):
             nameLine.clear()
             addressText.clear()
 
-        nameLine.setReadOnly(True)
-        addressText.setReadOnly(True)
-        addButton.sE..(True)
+        nameLine.setReadOnly( st.
+        addressText.setReadOnly( st.
+        addButton.sE..( st.
 
         number _ le.(contacts)
         nextButton.sE..(number > 1)
@@ -188,9 +188,9 @@ c_ AddressBook(?W..):
             nameLine.clear()
             addressText.clear()
 
-        nameLine.setReadOnly(True)
-        addressText.setReadOnly(True)
-        addButton.sE..(True)
+        nameLine.setReadOnly( st.
+        addressText.setReadOnly( st.
+        addButton.sE..( st.
 
         number _ le.(contacts)
         nextButton.sE..(number > 1)

@@ -203,7 +203,7 @@ __ ______ __ ______
     f _ QFile(':/default.txt')
     f.o..(QIODevice.ReadOnly)
     model _ TreeModel(f.readAll())
-    f.close()
+    f.c..
 
     view _ ?TV..
     view.sM..(model)

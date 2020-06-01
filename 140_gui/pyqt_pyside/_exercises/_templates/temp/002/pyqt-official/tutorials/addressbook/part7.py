@@ -92,11 +92,11 @@ c_ AddressBook(?W..):
 
         nameLabel _ QLabel("Name:")
         nameLine _ ?LE..
-        nameLine.setReadOnly(True)
+        nameLine.setReadOnly( st.
 
         addressLabel _ QLabel("Address:")
         addressText _ ?TE..()
-        addressText.setReadOnly(True)
+        addressText.setReadOnly( st.
 
         addButton _ ?PB..("&Add")
         addButton.s..
@@ -324,9 +324,9 @@ c_ AddressBook(?W..):
                 nameLine.clear()
                 addressText.clear()
 
-            nameLine.setReadOnly(True)
-            addressText.setReadOnly(True)
-            addButton.sE..(True)
+            nameLine.setReadOnly( st.
+            addressText.setReadOnly( st.
+            addButton.sE..( st.
 
             number _ le.(contacts)
             editButton.sE..(number >_ 1)
@@ -340,7 +340,7 @@ c_ AddressBook(?W..):
 
             exportButton.sE..(number >_ 1)
 
-            loadButton.sE..(True)
+            loadButton.sE..( st.
             saveButton.sE..(number >_ 1)
 
     ___ saveToFile 
@@ -358,7 +358,7 @@ c_ AddressBook(?W..):
             r_
 
         pickle.dump(contacts, out_file)
-        out_file.close()
+        out_file.c..
 
     ___ loadFromFile 
         fileName, _ _ ?FD...gOFN..  "Open Address Book",
@@ -375,7 +375,7 @@ c_ AddressBook(?W..):
             r_
 
         contacts _ pickle.load(in_file)
-        in_file.close()
+        in_file.c..
 
         __ le.(contacts) == 0:
             ?MB...information  "No contacts in file",

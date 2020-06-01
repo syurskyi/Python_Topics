@@ -11,7 +11,7 @@ GPIO.setmode(GPIO.BCM)
 
 c_ HWButton(qtc.QObject):
 
-    button_press _ qtc.pyqtSignal()
+    button_press _ qtc.pS..()
 
     ___  -   pin):
         s_. - ()
@@ -29,21 +29,21 @@ c_ HWButton(qtc.QObject):
             callback_self.on_event_detect)
 
     ___ on_event_detect  *args):
-        button_press.emit()
+        button_press.e..()
 
     ___ check 
         pressed _ GPIO.__.. (pin) == GPIO.LOW
         __ pressed !_ pressed:
             __ pressed:
-                button_press.emit()
+                button_press.e..()
             pressed _ pressed
 
 
 c_ SensorInterface(qtc.QObject):
 
-    temperature _ qtc.pyqtSignal(float)
-    humidity _ qtc.pyqtSignal(float)
-    read_time _ qtc.pyqtSignal(qtc.QTime)
+    temperature _ qtc.pS..(float)
+    humidity _ qtc.pS..(float)
+    read_time _ qtc.pS..(qtc.?T..)
 
     ___  -   pin, sensor_model, fahrenheit_False):
         s_. - ()
@@ -51,14 +51,14 @@ c_ SensorInterface(qtc.QObject):
         model _ sensor_model
         fahrenheit _ fahrenheit
 
-    @qtc.pyqtSlot()
+    ??.?
     ___ take_reading 
         h, t _ Adafruit_DHT.read_retry(model, pin)
         __ fahrenheit:
             t _ ((9/5) * t) + 32
-        temperature.emit(t)
-        humidity.emit(h)
-        read_time.emit(qtc.QTime.currentTime())
+        temperature.e..(t)
+        humidity.e..(h)
+        read_time.e..(qtc.?T...currentTime())
 
 
 c_ MainWindow(qtw.QMainWindow):
@@ -86,7 +86,7 @@ c_ MainWindow(qtw.QMainWindow):
         widget.layout().aR..('Humidity', humview)
 
         # Create sensor in its own thread
-        sensor _ SensorInterface(4, SENSOR_MODEL, True)
+        sensor _ SensorInterface(4, SENSOR_MODEL,  st.
         sensor_thread _ qtc.QThread()
         sensor.moveToThread(sensor_thread)
         sensor_thread.start()

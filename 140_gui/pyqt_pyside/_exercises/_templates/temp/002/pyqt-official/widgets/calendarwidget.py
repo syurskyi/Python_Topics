@@ -137,7 +137,7 @@ c_ Window(?W..):
         __ t__ == "Bold":
             format.setFontWeight(QFont.Bold)
         ____ t__ == "Italic":
-            format.setFontItalic(True)
+            format.setFontItalic( st.
         ____ t__ == "Green":
             format.setForeground(__.green)
 
@@ -171,7 +171,7 @@ c_ Window(?W..):
         calendar _ QCalendarWidget()
         calendar.setMinimumDate(QDate(1900, 1, 1))
         calendar.setMaximumDate(QDate(3000, 1, 1))
-        calendar.setGridVisible(True)
+        calendar.setGridVisible( st.
         calendar.currentPageChanged.c..(reformatCalendarPage)
 
         previewLayout _ QGridLayout()
@@ -229,7 +229,7 @@ c_ Window(?W..):
         gridCheckBox.setChecked(calendar.isGridVisible())
 
         navigationCheckBox _ QCheckBox("&Navigation bar")
-        navigationCheckBox.setChecked(True)
+        navigationCheckBox.setChecked( st.
 
         horizontalHeaderCombo _ ?CB()
         horizontalHeaderCombo.aI..("Single letter day names",

@@ -83,7 +83,7 @@ c_ MainWindow ?MW..
         boldFormat _ QTextCharFormat()
         boldFormat.setFontWeight(QFont.Bold)
         italicFormat _ QTextCharFormat()
-        italicFormat.setFontItalic(True)
+        italicFormat.setFontItalic( st.
 
         tableFormat _ QTextTableFormat()
         tableFormat.setBorder(1)

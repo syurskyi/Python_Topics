@@ -170,8 +170,8 @@ c_ MainWindow ?MW..
 
         wrap_action _ ?A..(QIcon(__.p__ .join('images', 'arrow-continue.png')), "Wrap text to window", self)
         wrap_action.setStatusTip("Toggle wrap text to window")
-        wrap_action.setCheckable(True)
-        wrap_action.setChecked(True)
+        wrap_action.setCheckable( st.
+        wrap_action.setChecked( st.
         wrap_action.t__.c..(edit_toggle_wrap)
         edit_menu.aA..(wrap_action)
 
@@ -196,7 +196,7 @@ c_ MainWindow ?MW..
         bold_action _ ?A..(QIcon(__.p__ .join('images', 'edit-bold.png')), "Bold", self)
         bold_action.setStatusTip("Bold")
         bold_action.sS..(?KS...Bold)
-        bold_action.setCheckable(True)
+        bold_action.setCheckable( st.
         bold_action.toggled.c..(l___ x: editor.setFontWeight(QFont.Bold __ x else QFont.Normal))
         format_toolbar.aA..(bold_action)
         format_menu.aA..(bold_action)
@@ -204,7 +204,7 @@ c_ MainWindow ?MW..
         italic_action _ ?A..(QIcon(__.p__ .join('images', 'edit-italic.png')), "Italic", self)
         italic_action.setStatusTip("Italic")
         italic_action.sS..(?KS...Italic)
-        italic_action.setCheckable(True)
+        italic_action.setCheckable( st.
         italic_action.toggled.c..(editor.setFontItalic)
         format_toolbar.aA..(italic_action)
         format_menu.aA..(italic_action)
@@ -212,7 +212,7 @@ c_ MainWindow ?MW..
         underline_action _ ?A..(QIcon(__.p__ .join('images', 'edit-underline.png')), "Underline", self)
         underline_action.setStatusTip("Underline")
         underline_action.sS..(?KS...Underline)
-        underline_action.setCheckable(True)
+        underline_action.setCheckable( st.
         underline_action.toggled.c..(editor.setFontUnderline)
         format_toolbar.aA..(underline_action)
         format_menu.aA..(underline_action)
@@ -221,34 +221,34 @@ c_ MainWindow ?MW..
 
         alignl_action _ ?A..(QIcon(__.p__ .join('images', 'edit-alignment.png')), "Align left", self)
         alignl_action.setStatusTip("Align text left")
-        alignl_action.setCheckable(True)
+        alignl_action.setCheckable( st.
         alignl_action.t__.c..(l___: editor.setAlignment(__.AlignLeft))
         format_toolbar.aA..(alignl_action)
         format_menu.aA..(alignl_action)
 
         alignc_action _ ?A..(QIcon(__.p__ .join('images', 'edit-alignment-center.png')), "Align center", self)
         alignc_action.setStatusTip("Align text center")
-        alignc_action.setCheckable(True)
+        alignc_action.setCheckable( st.
         alignc_action.t__.c..(l___: editor.setAlignment(__.AlignCenter))
         format_toolbar.aA..(alignc_action)
         format_menu.aA..(alignc_action)
 
         alignr_action _ ?A..(QIcon(__.p__ .join('images', 'edit-alignment-right.png')), "Align right", self)
         alignr_action.setStatusTip("Align text right")
-        alignr_action.setCheckable(True)
+        alignr_action.setCheckable( st.
         alignr_action.t__.c..(l___: editor.setAlignment(__.AlignRight))
         format_toolbar.aA..(alignr_action)
         format_menu.aA..(alignr_action)
 
         alignj_action _ ?A..(QIcon(__.p__ .join('images', 'edit-alignment-justify.png')), "Justify", self)
         alignj_action.setStatusTip("Justify text")
-        alignj_action.setCheckable(True)
+        alignj_action.setCheckable( st.
         alignj_action.t__.c..(l___: editor.setAlignment(__.AlignJustify))
         format_toolbar.aA..(alignj_action)
         format_menu.aA..(alignj_action)
 
         format_group _ QActionGroup
-        format_group.setExclusive(True)
+        format_group.setExclusive( st.
         format_group.aA..(alignl_action)
         format_group.aA..(alignc_action)
         format_group.aA..(alignr_action)
@@ -282,7 +282,7 @@ c_ MainWindow ?MW..
         :return:
         """
         # Disable signals for all format widgets, so changing values here does not trigger further formatting.
-        block_signals(_format_actions, True)
+        block_signals(_format_actions,  st.
 
         fonts.setCurrentFont(editor.currentFont())
         # Nasty, but we get the font-size as a float but want it was an int

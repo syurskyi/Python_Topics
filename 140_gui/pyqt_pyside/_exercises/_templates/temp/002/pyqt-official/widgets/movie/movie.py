@@ -60,7 +60,7 @@ c_ MoviePlayer(?W..):
         movieLabel.setAlignment(__.AlignCenter)
         movieLabel.sSP..(QSizePolicy.Ignored, QSizePolicy.Ignored)
         movieLabel.setBackgroundRole(?P...Dark)
-        movieLabel.setAutoFillBackground(True)
+        movieLabel.setAutoFillBackground( st.
 
         currentMovieDirectory _ ''
 
@@ -173,7 +173,7 @@ c_ MoviePlayer(?W..):
         playButton.c__.c..(movie.start)
 
         pauseButton _ QToolButton()
-        pauseButton.setCheckable(True)
+        pauseButton.setCheckable( st.
         pauseButton.setIcon(style().standardIcon(QStyle.SP_MediaPause))
         pauseButton.setIconSize(iconSize)
         pauseButton.sTT..("Pause")

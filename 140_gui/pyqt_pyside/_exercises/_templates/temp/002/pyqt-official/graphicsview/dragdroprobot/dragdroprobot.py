@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ (QEasingCurve, QFileInfo, QLineF, QMimeData,
         QParallelAnimationGroup, QPoint, QPointF, QPropertyAnimation, qrand,
-        QRectF, qsrand, __, QTime)
+        QRectF, qsrand, __, ?T..)
 ____ ?.?G.. ______ (QBrush, ?C.., QDrag, QImage, QPainter, QPen,
         QPixmap, QTransform)
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsObject,
@@ -128,11 +128,11 @@ c_ RobotPart(QGraphicsObject):
         color _ ?C..(__.lightGray)
         dragOver _ False
 
-        setAcceptDrops(True)
+        setAcceptDrops( st.
 
     ___ dragEnterEvent  event):
         __ event.mimeData().hasColor
-            event.setAccepted(True)
+            event.setAccepted( st.
             dragOver _ True
             update()
         ____
@@ -178,7 +178,7 @@ c_ RobotHead(RobotPart):
 
     ___ dragEnterEvent  event):
         __ event.mimeData().hasImage
-            event.setAccepted(True)
+            event.setAccepted( st.
             dragOver _ True
             update()
         ____
@@ -289,7 +289,7 @@ __ __name__== '__main__':
 
     app _ ?A..(___.a..
 
-    qsrand(QTime(0, 0, 0).secsTo(QTime.currentTime()))
+    qsrand(?T..(0, 0, 0).secsTo(?T...currentTime()))
 
     scene _ QGraphicsScene(-200, -200, 400, 400)
 
@@ -300,7 +300,7 @@ __ __name__== '__main__':
         scene.aI..(item)
 
     robot _ Robot()
-    robot.setTransform(QTransform.fromScale(1.2, 1.2), True)
+    robot.setTransform(QTransform.fromScale(1.2, 1.2),  st.
     robot.setPos(0, -20)
     scene.aI..(robot)
 

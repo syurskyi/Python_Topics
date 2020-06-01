@@ -8,7 +8,7 @@ ____ ? ______ QtNetwork __ qtn
 c_ Poster(qtc.QObject):
 
     # emit body of reply
-    replyReceived _ qtc.pyqtSignal(str)
+    replyReceived _ qtc.pS.. st.
 
     ___  -
         s_. - ()
@@ -24,7 +24,7 @@ c_ Poster(qtc.QObject):
         multipart _ qtn.QHttpMultiPart(qtn.QHttpMultiPart.FormDataType)
 
         # Write the key-value data to the multipart
-        ___ key, value __ (data or {}).items
+        ___ key, value __ (data or   # dict).items
             http_part _ qtn.QHttpPart()
             http_part.setHeader(
                 qtn.QNetworkRequest.ContentDispositionHeader,
@@ -53,7 +53,7 @@ c_ Poster(qtc.QObject):
         reply_string _ bytes(reply_bytes).decode('utf-8')
 
         # emit reply
-        replyReceived.emit(reply_string)
+        replyReceived.e..(reply_string)
 
 
 
@@ -78,7 +78,7 @@ c_ MainWindow(qtw.QMainWindow):
         fname _ qtw.?PB..(
             '(No File)', c___self.on_file_btn)
         submit _ qtw.?PB..('Submit Post', c___self.submit)
-        response _ ?.?TE..readOnly_True)
+        response _ ?.?TE..readOnly_ st.
         ___ w __ (url, table, fname, submit, response):
             widget.layout().aW..(w)
 
@@ -99,7 +99,7 @@ c_ MainWindow(qtw.QMainWindow):
         filename _ fname.t__()
         __ filename == '(No File)':
             filename _ N..
-        data _ {}
+        data _   # dict
         ___ rownum __ range(table.rowCount()):
             key_item _ table.item(rownum, 0)
             key _ key_item.t__() __ key_item else N..

@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ (pyqtProperty, pyqtSignal, QEasingCurve, QObject,
+____ ?.?C.. ______ (pyqtProperty, pS.., QEasingCurve, QObject,
         QParallelAnimationGroup, QPointF, QPropertyAnimation, qrand, QRectF,
         QState, QStateMachine, __, QTimer)
 ____ ?.?G.. ______ (QBrush, QLinearGradient, QPainter, QPainterPath,
@@ -70,14 +70,14 @@ c_ Pixmap(QObject):
 
 
 c_ Button(QGraphicsWidget):
-    pressed _ pyqtSignal()
+    pressed _ pS..()
 
     ___  -   pixmap, parent_None):
         super(Button, self). - (parent)
 
         _pix _ pixmap
 
-        setAcceptHoverEvents(True)
+        setAcceptHoverEvents( st.
         setCacheMode(QGraphicsItem.DeviceCoordinateCache)
 
     ___ boundingRect
@@ -131,7 +131,7 @@ c_ Button(QGraphicsWidget):
                 _pix)
 
     ___ mousePressEvent  ev):
-        pressed.emit()
+        pressed.e..()
         update()
 
     ___ mouseReleaseEvent  ev):
@@ -254,7 +254,7 @@ __ ______ __ ______
 
     timer _ ?T..
     timer.start(125)
-    timer.setSingleShot(True)
+    timer.setSingleShot( st.
     trans _ rootState.addTransition(timer.timeout, ellipseState)
     trans.addAnimation(group)
 

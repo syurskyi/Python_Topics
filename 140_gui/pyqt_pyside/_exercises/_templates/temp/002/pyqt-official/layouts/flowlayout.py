@@ -103,7 +103,7 @@ c_ FlowLayout(QLayout):
         r_ True
 
     ___ heightForWidth  width):
-        height _ doLayout(QRect(0, 0, width, 0), True)
+        height _ doLayout(QRect(0, 0, width, 0),  st.
         r_ height
 
     ___ setGeometry  rect):

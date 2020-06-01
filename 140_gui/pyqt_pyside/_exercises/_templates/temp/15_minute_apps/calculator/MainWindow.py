@@ -37,7 +37,7 @@ c_ Ui_MainWindow(object):
         pushButton_n4.sMS..(?C...?S..(0, 50))
         font _ ?G...QFont()
         font.setPointSize(27)
-        font.setBold(True)
+        font.setBold( st.
         font.setWeight(75)
         pushButton_n4.setFont(font)
         pushButton_n4.setStyleSheet("QPushButton {\n"
@@ -49,7 +49,7 @@ c_ Ui_MainWindow(object):
         pushButton_n1.sMS..(?C...?S..(0, 50))
         font _ ?G...QFont()
         font.setPointSize(27)
-        font.setBold(True)
+        font.setBold( st.
         font.setWeight(75)
         pushButton_n1.setFont(font)
         pushButton_n1.setStyleSheet("QPushButton {\n"
@@ -61,7 +61,7 @@ c_ Ui_MainWindow(object):
         pushButton_n8.sMS..(?C...?S..(0, 50))
         font _ ?G...QFont()
         font.setPointSize(27)
-        font.setBold(True)
+        font.setBold( st.
         font.setWeight(75)
         pushButton_n8.setFont(font)
         pushButton_n8.setStyleSheet("QPushButton {\n"
@@ -82,7 +82,7 @@ c_ Ui_MainWindow(object):
         pushButton_n7.sMS..(?C...?S..(0, 50))
         font _ ?G...QFont()
         font.setPointSize(27)
-        font.setBold(True)
+        font.setBold( st.
         font.setWeight(75)
         pushButton_n7.setFont(font)
         pushButton_n7.setStyleSheet("QPushButton {\n"
@@ -94,7 +94,7 @@ c_ Ui_MainWindow(object):
         pushButton_n6.sMS..(?C...?S..(0, 50))
         font _ ?G...QFont()
         font.setPointSize(27)
-        font.setBold(True)
+        font.setBold( st.
         font.setWeight(75)
         pushButton_n6.setFont(font)
         pushButton_n6.setStyleSheet("QPushButton {\n"
@@ -106,7 +106,7 @@ c_ Ui_MainWindow(object):
         pushButton_n5.sMS..(?C...?S..(0, 50))
         font _ ?G...QFont()
         font.setPointSize(27)
-        font.setBold(True)
+        font.setBold( st.
         font.setWeight(75)
         pushButton_n5.setFont(font)
         pushButton_n5.setStyleSheet("QPushButton {\n"
@@ -118,7 +118,7 @@ c_ Ui_MainWindow(object):
         pushButton_n0.sMS..(?C...?S..(0, 50))
         font _ ?G...QFont()
         font.setPointSize(27)
-        font.setBold(True)
+        font.setBold( st.
         font.setWeight(75)
         pushButton_n0.setFont(font)
         pushButton_n0.setStyleSheet("QPushButton {\n"
@@ -130,7 +130,7 @@ c_ Ui_MainWindow(object):
         pushButton_n2.sMS..(?C...?S..(0, 50))
         font _ ?G...QFont()
         font.setPointSize(27)
-        font.setBold(True)
+        font.setBold( st.
         font.setWeight(75)
         pushButton_n2.setFont(font)
         pushButton_n2.setStyleSheet("QPushButton {\n"
@@ -142,7 +142,7 @@ c_ Ui_MainWindow(object):
         pushButton_n9.sMS..(?C...?S..(0, 50))
         font _ ?G...QFont()
         font.setPointSize(27)
-        font.setBold(True)
+        font.setBold( st.
         font.setWeight(75)
         pushButton_n9.setFont(font)
         pushButton_n9.setStyleSheet("QPushButton {\n"
@@ -154,7 +154,7 @@ c_ Ui_MainWindow(object):
         pushButton_n3.sMS..(?C...?S..(0, 50))
         font _ ?G...QFont()
         font.setPointSize(27)
-        font.setBold(True)
+        font.setBold( st.
         font.setWeight(75)
         pushButton_n3.setFont(font)
         pushButton_n3.setStyleSheet("QPushButton {\n"
@@ -238,7 +238,7 @@ c_ Ui_MainWindow(object):
         pushButton_eq.sMS..(?C...?S..(0, 50))
         font _ ?G...QFont()
         font.setPointSize(27)
-        font.setBold(True)
+        font.setBold( st.
         font.setWeight(75)
         pushButton_eq.setFont(font)
         pushButton_eq.setStyleSheet("QPushButton {\n"

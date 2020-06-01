@@ -75,7 +75,7 @@ c_ RenderArea(?W..):
         pixmap.load(':/images/qt-logo.png')
 
         setBackgroundRole(?P...Base)
-        setAutoFillBackground(True)
+        setAutoFillBackground( st.
 
     ___ minimumSizeHint
         r_ ?S..(100, 100)
@@ -291,7 +291,7 @@ c_ Window(?W..):
         shapeChanged()
         penChanged()
         brushChanged()
-        antialiasingCheckBox.setChecked(True)
+        antialiasingCheckBox.setChecked( st.
 
         sWT..("Basic Drawing")
 

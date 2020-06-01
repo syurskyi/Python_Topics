@@ -57,7 +57,7 @@ c_ Server(QDialog):
         super(Server, self). - (parent)
 
         statusLabel _ QLabel()
-        statusLabel.setWordWrap(True)
+        statusLabel.setWordWrap( st.
         quitButton _ ?PB..("Quit")
         quitButton.setAutoDefault F..
 
@@ -75,7 +75,7 @@ c_ Server(QDialog):
         __ no. server.listen('fortune'):
             ?MB...critical  "Fortune Server",
                     "Unable to start the server: %s." % server.errorString())
-            close()
+            c..
             r_
 
         statusLabel.sT..("The server is running.\nRun the Fortune Client "

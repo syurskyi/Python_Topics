@@ -15,7 +15,7 @@ Base _ declarative_base()
 
 c_ Note(Base):
     __tablename__ _ 'note'
-    id _ Column(Integer, primary_key_True)
+    id _ Column(Integer, primary_key_ st.
     t__ _ Column(String(1000), nullable_False)
     x _ Column(Integer, nullable_False, default_0)
     y _ Column(Integer, nullable_False, default_0)
@@ -29,7 +29,7 @@ Base.metadata.create_all(engine)
 Session _ sessionmaker(bind_engine)
 session _ Session()
 
-_ACTIVE_NOTES _ {}
+_ACTIVE_NOTES _   # dict
 
 ___ create_new_note
     MainWindow()
@@ -51,7 +51,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
 
         closeButton.pressed.c..(delete_window)
         moreButton.pressed.c..(create_new_note)
-        textEdit.textChanged.c..(save)
+        textEdit.tC...c..(save)
 
         # Flags to store dragged-dropped
         _drag_active _ False
@@ -89,7 +89,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
         __ result == ?MB...Yes:
             session.delete(obj)
             session.commit()
-            close()
+            c..
 
 
 __ ______ __ ______

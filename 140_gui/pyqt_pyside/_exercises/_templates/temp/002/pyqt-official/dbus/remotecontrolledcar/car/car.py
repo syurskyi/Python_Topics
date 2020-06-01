@@ -61,8 +61,8 @@ c_ Car(QGraphicsObject):
         speed _ 0.0
 
         startTimer(1000 // 33)
-        setFlag(QGraphicsItem.ItemIsMovable, True)
-        setFlag(QGraphicsItem.ItemIsFocusable, True)
+        setFlag(QGraphicsItem.ItemIsMovable,  st.
+        setFlag(QGraphicsItem.ItemIsFocusable,  st.
 
     ___ accelerate 
         __ speed < 10:
@@ -91,8 +91,8 @@ c_ Car(QGraphicsObject):
         turnRate _ (turnRateRads * 180) / math.pi
         rotation _ speed * turnRate
 
-        setTransform(QTransform().rotate(rotation), True)
-        setTransform(QTransform.fromTranslate(0, -speed), True)
+        setTransform(QTransform().rotate(rotation),  st.
+        setTransform(QTransform.fromTranslate(0, -speed),  st.
         update()
 
     ___ paint  painter, option, widget):
@@ -147,7 +147,7 @@ c_ CarInterfaceAdaptor(QDBusAbstractAdaptor):
     ___  -   parent):
         super(CarInterfaceAdaptor, self). - (parent)
 
-        setAutoRelaySignals(True)
+        setAutoRelaySignals( st.
 
     @pyqtSlot()
     ___ accelerate 

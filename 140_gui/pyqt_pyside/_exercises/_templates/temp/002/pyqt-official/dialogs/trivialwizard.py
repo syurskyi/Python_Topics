@@ -53,7 +53,7 @@ ___ createIntroPage
     label _ QLabel(
             "This wizard will help you register your copy of Super Product "
             "Two.")
-    label.setWordWrap(True)
+    label.setWordWrap( st.
 
     layout _ ?VBL..
     layout.aW..(label)
@@ -88,7 +88,7 @@ ___ createConclusionPage
     page.setTitle("Conclusion")
 
     label _ QLabel("You are now successfully registered. Have a nice day!")
-    label.setWordWrap(True)
+    label.setWordWrap( st.
 
     layout _ ?VBL..
     layout.aW..(label)

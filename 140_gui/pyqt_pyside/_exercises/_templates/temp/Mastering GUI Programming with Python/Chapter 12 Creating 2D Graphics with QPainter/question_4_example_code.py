@@ -6,7 +6,7 @@ ____ ? ______ ?C.. __ qtc
 
 c_ ColorButton(qtw.?PB..):
 
-    changed _ qtc.pyqtSignal()
+    changed _ qtc.pS..()
 
     ___  -   default_color, changed_None):
         s_. - ()
@@ -26,12 +26,12 @@ c_ ColorButton(qtw.?PB..):
         color _ qtw.QColorDialog.getColor(_color)
         __ color:
             set_color(color)
-            changed.emit()
+            changed.e..()
 
 
 c_ FontButton(qtw.?PB..):
 
-    changed _ qtc.pyqtSignal()
+    changed _ qtc.pS..()
 
     ___  -   default_family, default_size, changed_None):
         s_. - ()
@@ -49,12 +49,12 @@ c_ FontButton(qtw.?PB..):
         font, accepted _ qtw.QFontDialog.getFont(_font)
         __ accepted:
             set_font(font)
-            changed.emit()
+            changed.e..()
 
 
 c_ ImageFileButton(qtw.?PB..):
 
-    changed _ qtc.pyqtSignal()
+    changed _ qtc.pS..()
 
     ___  -   changed_None):
         s_. - ("Click to select…")
@@ -71,12 +71,12 @@ c_ ImageFileButton(qtw.?PB..):
             _filename _ filename
             # set button text to filename without path
             sT..(qtc.QFileInfo(filename).fileName())
-            changed.emit()
+            changed.e..()
 
 
 c_ MemeEditForm ?.?W..
 
-    changed _ qtc.pyqtSignal(dict)
+    changed _ qtc.pS..(dict)
 
     ___  -
         s_. - ()
@@ -131,7 +131,7 @@ c_ MemeEditForm ?.?W..
             'deep_fry': deep_fry.isChecked()
         }
 
-        changed.emit(data)
+        changed.e..(data)
 
 
 c_ MainWindow(qtw.QMainWindow):

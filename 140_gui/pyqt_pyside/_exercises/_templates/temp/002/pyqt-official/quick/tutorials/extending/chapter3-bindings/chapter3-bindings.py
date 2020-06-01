@@ -41,7 +41,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ pyqtProperty, pyqtSignal, pyqtSlot, QRectF, __, QUrl
+____ ?.?C.. ______ pyqtProperty, pS.., pyqtSlot, QRectF, __, QUrl
 ____ ?.?G.. ______ ?C.., QGuiApplication, QPainter, QPen
 ____ ?.QtQml ______ qmlRegisterType
 ____ ?.QtQuick ______ QQuickPaintedItem, QQuickView
@@ -49,7 +49,7 @@ ____ ?.QtQuick ______ QQuickPaintedItem, QQuickView
 
 c_ PieChart(QQuickPaintedItem):
 
-    @pyqtProperty(str)
+    @pyqtProperty st.
     ___ name
         r_ _name
 
@@ -57,7 +57,7 @@ c_ PieChart(QQuickPaintedItem):
     ___ name  name):
         _name _ name
 
-    colorChanged _ pyqtSignal()
+    colorChanged _ pS..()
 
     @pyqtProperty(?C.., notify_colorChanged)
     ___ color
@@ -68,7 +68,7 @@ c_ PieChart(QQuickPaintedItem):
         __ _color !_ color:
             _color _ ?C..(color)
             update()
-            colorChanged.emit()
+            colorChanged.e..()
 
     ___  -   parent_None):
         super(PieChart, self). - (parent)
@@ -78,7 +78,7 @@ c_ PieChart(QQuickPaintedItem):
 
     ___ paint  painter):
         painter.setPen(QPen(_color, 2))
-        painter.setRenderHints(QPainter.Antialiasing, True)
+        painter.setRenderHints(QPainter.Antialiasing,  st.
 
         rect _ QRectF(0, 0, width(), height()).adjusted(1, 1, -1, -1)
         painter.drawPie(rect, 90 * 16, 290 * 16)

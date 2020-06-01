@@ -107,7 +107,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
             actionBack.sE..(on)
 
     ___ on_WebBrowser_BeforeNavigate
-        actionStop.sE..(True)
+        actionStop.sE..( st.
 
     ___ on_WebBrowser_NavigateComplete  _):
         actionStop.sE.. F..
@@ -125,7 +125,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
             r_;
 
         window.addressEdit.sT..(addressEdit.t__())
-        window.actionStop.sE..(True)
+        window.actionStop.sE..( st.
         window.on_actionGo_triggered()
 
     @pyqtSlot()

@@ -27,11 +27,11 @@ c_ Ui_MainWindow(object):
         verticalLayout.setSpacing(6)
         verticalLayout.setObjectName("verticalLayout")
         playlistView _ ?W...QListView(centralWidget)
-        playlistView.setAcceptDrops(True)
-        playlistView.setProperty("showDropIndicator", True)
+        playlistView.setAcceptDrops( st.
+        playlistView.setProperty("showDropIndicator",  st.
         playlistView.setDragDropMode(?W...QAbstractItemView.DropOnly)
-        playlistView.setAlternatingRowColors(True)
-        playlistView.setUniformItemSizes(True)
+        playlistView.setAlternatingRowColors( st.
+        playlistView.setUniformItemSizes( st.
         playlistView.setObjectName("playlistView")
         verticalLayout.aW..(playlistView)
         horizontalLayout_4 _ ?W...QHBoxLayout()
@@ -95,7 +95,7 @@ c_ Ui_MainWindow(object):
         icon5 _ ?G...QIcon()
         icon5.addPixmap(?G...QPixmap("images/application-image.png"), ?G...QIcon.Normal, ?G...QIcon.Off)
         viewButton.setIcon(icon5)
-        viewButton.setCheckable(True)
+        viewButton.setCheckable( st.
         viewButton.setObjectName("viewButton")
         horizontalLayout_5.aW..(viewButton)
         spacerItem _ ?W...QSpacerItem(40, 20, ?W...QSizePolicy.E.., ?W...QSizePolicy.Minimum)

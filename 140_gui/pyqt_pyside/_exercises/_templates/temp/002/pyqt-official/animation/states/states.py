@@ -86,7 +86,7 @@ __ ______ __ ______
     editProxy.setWidget(edit)
 
     box _ QGroupBox()
-    box.setFlat(True)
+    box.setFlat( st.
     box.setTitle("Options")
 
     layout2 _ ?VBL..

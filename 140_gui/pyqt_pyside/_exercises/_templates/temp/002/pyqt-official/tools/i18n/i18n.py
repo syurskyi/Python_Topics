@@ -55,8 +55,8 @@ c_ LanguageChooser(QDialog):
     ___  -   parent_None):
         super(LanguageChooser, self). - (parent, __.WindowStaysOnTopHint)
 
-        qmFileForCheckBoxMap _ {}
-        mainWindowForCheckBoxMap _ {} 
+        qmFileForCheckBoxMap _   # dict
+        mainWindowForCheckBoxMap _   # dict
 
         groupBox _ QGroupBox("Languages")
 
@@ -131,7 +131,7 @@ c_ LanguageChooser(QDialog):
 
     ___ showAll 
         ___ checkBox __ qmFileForCheckBoxMap.keys
-            checkBox.setChecked(True)
+            checkBox.setChecked( st.
 
     ___ hideAll 
         ___ checkBox __ qmFileForCheckBoxMap.keys
@@ -198,7 +198,7 @@ c_ MainWindow ?MW..
         perspectiveRadioButton _ QRadioButton(tr("Perspective"))
         isometricRadioButton _ QRadioButton(tr("Isometric"))
         obliqueRadioButton _ QRadioButton(tr("Oblique"))
-        perspectiveRadioButton.setChecked(True)
+        perspectiveRadioButton.setChecked( st.
 
         groupBoxLayout _ ?VBL..
         groupBoxLayout.aW..(perspectiveRadioButton)

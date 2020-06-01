@@ -16,11 +16,11 @@ ___ hhmmss(ms):
     r_ ("%d:%02d:%02d" % (h,m,s)) __ h else ("%d:%02d" % (m,s))
 
 c_ ViewerWindow ?MW..
-    state _ pyqtSignal(bool)
+    state _ pS..(bool)
 
     ___ closeEvent  e):
         # Emit the window state, to update the viewer toggle button.
-        state.emit F..
+        state.e.. F..
 
 
 c_ PlaylistModel(QAbstractListModel):
@@ -84,7 +84,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
 
         open_file_action.t__.c..(open_file)
 
-        setAcceptDrops(True)
+        setAcceptDrops( st.
 
         s..
 
@@ -98,7 +98,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
                 QMediaContent(url)
             )
 
-        model.layoutChanged.emit()
+        model.layoutChanged.e..()
 
         # If not playing, seeking to first of newly added + play.
         __ player.state() !_ QMediaPlayer.PlayingState:
@@ -116,7 +116,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
                 )
             )
 
-        model.layoutChanged.emit()
+        model.layoutChanged.e..()
 
     ___ update_duration  duration):
         print("!", duration)
@@ -132,7 +132,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
             currentTimeLabel.sT..(hhmmss(position))
 
         # Disable the events to prevent updating triggering a setPosition event (can cause stuttering).
-        timeSlider.blockSignals(True)
+        timeSlider.blockSignals( st.
         timeSlider.setValue(position)
         timeSlider.blockSignals F..
 

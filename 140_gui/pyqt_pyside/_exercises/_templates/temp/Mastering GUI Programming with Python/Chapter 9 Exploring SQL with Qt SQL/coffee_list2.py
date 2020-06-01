@@ -18,7 +18,7 @@ c_ DateDelegate(qtw.QStyledItemDelegate):
     ___ createEditor  parent, option, proxyModelIndex):
         # make sure to explicitly set the parent
         # otherwise it pops up in a top-level window!
-        date_inp _ qtw.QDateEdit(parent, calendarPopup_True)
+        date_inp _ qtw.QDateEdit(parent, calendarPopup_ st.
         r_ date_inp
 
 

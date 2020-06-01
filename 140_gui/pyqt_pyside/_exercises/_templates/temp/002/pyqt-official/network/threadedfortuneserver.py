@@ -44,7 +44,7 @@
 
 ______ random
 
-____ ?.?C.. ______ (pyqtSignal, QByteArray, QDataStream, QIODevice,
+____ ?.?C.. ______ (pS.., QByteArray, QDataStream, QIODevice,
         QThread)
 ____ ?.?W.. ______ (?A.., QDialog, QHBoxLayout, QLabel,
         ?MB.., ?PB.., QVBoxLayout)
@@ -53,7 +53,7 @@ ____ ?.QtNetwork ______ (QHostAddress, QNetworkInterface, QTcpServer,
 
 
 c_ FortuneThread(QThread):
-    error _ pyqtSignal(QTcpSocket.SocketError)
+    error _ pS..(QTcpSocket.SocketError)
 
     ___  -   socketDescriptor, fortune, parent):
         super(FortuneThread, self). - (parent)
@@ -64,7 +64,7 @@ c_ FortuneThread(QThread):
     ___ run
         tcpSocket _ QTcpSocket()
         __ no. tcpSocket.setSocketDescriptor(socketDescriptor):
-            error.emit(tcpSocket.error())
+            error.e..(tcpSocket.error())
             r_
 
         block _ QByteArray()
@@ -105,14 +105,14 @@ c_ Dialog(QDialog):
         server _ FortuneServer()
 
         statusLabel _ QLabel()
-        statusLabel.setWordWrap(True)
+        statusLabel.setWordWrap( st.
         quitButton _ ?PB..("Quit")
         quitButton.setAutoDefault F..
 
         __ no. server.listen
             ?MB...critical  "Threaded Fortune Server",
                     "Unable to start the server: %s." % server.errorString())
-            close()
+            c..
             r_
 
         ___ ipAddress __ QNetworkInterface.allAddresses

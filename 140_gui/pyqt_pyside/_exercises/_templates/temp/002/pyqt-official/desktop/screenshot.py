@@ -83,7 +83,7 @@ c_ Screenshot(?W..):
     ___ newScreenshot
         __ hideThisWindowCheckBox.isChecked
             hide()
-        newScreenshotButton.setDisabled(True)
+        newScreenshotButton.setDisabled( st.
 
         QTimer.singleShot(delaySpinBox.value() * 1000,
                 shootScreen)
@@ -115,7 +115,7 @@ c_ Screenshot(?W..):
 
     ___ updateCheckBox
         __ delaySpinBox.value() == 0:
-            hideThisWindowCheckBox.setDisabled(True)
+            hideThisWindowCheckBox.setDisabled( st.
         ____
             hideThisWindowCheckBox.setDisabled F..
 

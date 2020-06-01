@@ -55,7 +55,7 @@ c_ RegExpDialog(QDialog):
         super(RegExpDialog, self). - (parent)
 
         patternComboBox _ ?CB()
-        patternComboBox.setEditable(True)
+        patternComboBox.setEditable( st.
         patternComboBox.sSP..(QSizePolicy.E..,
                 QSizePolicy.Preferred)
 
@@ -63,7 +63,7 @@ c_ RegExpDialog(QDialog):
         patternLabel.setBuddy(patternComboBox)
 
         escapedPatternLineEdit _ ?LE..
-        escapedPatternLineEdit.setReadOnly(True)
+        escapedPatternLineEdit.setReadOnly( st.
         palette _ escapedPatternLineEdit.palette()
         palette.setBrush(?P...Base,
                 palette.brush(?P...Disabled, ?P...Base))
@@ -82,7 +82,7 @@ c_ RegExpDialog(QDialog):
         syntaxLabel.setBuddy(syntaxComboBox)
 
         textComboBox _ ?CB()
-        textComboBox.setEditable(True)
+        textComboBox.setEditable( st.
         textComboBox.sSP..(QSizePolicy.E..,
                 QSizePolicy.Preferred)
 
@@ -90,23 +90,23 @@ c_ RegExpDialog(QDialog):
         textLabel.setBuddy(textComboBox)
 
         caseSensitiveCheckBox _ QCheckBox("Case &Sensitive")
-        caseSensitiveCheckBox.setChecked(True)
+        caseSensitiveCheckBox.setChecked( st.
         minimalCheckBox _ QCheckBox("&Minimal")
 
         indexLabel _ QLabel("Index of Match:")
         indexEdit _ ?LE..
-        indexEdit.setReadOnly(True)
+        indexEdit.setReadOnly( st.
 
         matchedLengthLabel _ QLabel("Matched Length:")
         matchedLengthEdit _ ?LE..
-        matchedLengthEdit.setReadOnly(True)
+        matchedLengthEdit.setReadOnly( st.
 
         captureLabels _   # list
         captureEdits _   # list
         ___ i __ range(MaxCaptures):
             captureLabels.ap..(QLabel("Capture %d:" % i))
             captureEdits.ap..(QLineEdit())
-            captureEdits[i].setReadOnly(True)
+            captureEdits[i].setReadOnly( st.
         captureLabels[0].sT..("Match:")
 
         checkBoxLayout _ QHBoxLayout()
@@ -181,7 +181,7 @@ c_ RegExpDialog(QDialog):
             captureEdits[i].sE..(i <_ rx.captureCount())
             captureEdits[i].sT..(rx.cap(i))
 
-        setUpdatesEnabled(True)
+        setUpdatesEnabled( st.
 
 __ ______ __ ______
 

@@ -53,7 +53,7 @@ c_ PreviewWindow(?W..):
         super(PreviewWindow, self). - (parent)
 
         textEdit _ ?TE..()
-        textEdit.setReadOnly(True)
+        textEdit.setReadOnly( st.
         textEdit.setLineWrapMode(?TE...NoWrap)
 
         closeButton _ ?PB..("&Close")
@@ -216,7 +216,7 @@ c_ ControllerWindow(?W..):
         toolRadioButton _ createRadioButton("Tool")
         toolTipRadioButton _ createRadioButton("Tooltip")
         splashScreenRadioButton _ createRadioButton("Splash screen")
-        windowRadioButton.setChecked(True)
+        windowRadioButton.setChecked( st.
 
         layout _ QGridLayout()
         layout.aW..(windowRadioButton, 0, 0)

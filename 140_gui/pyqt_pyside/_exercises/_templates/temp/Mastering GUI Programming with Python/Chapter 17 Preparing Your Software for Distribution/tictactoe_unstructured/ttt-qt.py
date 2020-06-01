@@ -23,8 +23,8 @@ c_ TicTacToeEngine(qtc.QObject):
     ]
     players _ ('X', 'O')
 
-    game_won _ qtc.pyqtSignal(str)
-    game_draw _ qtc.pyqtSignal()
+    game_won _ qtc.pS.. st.
+    game_draw _ qtc.pS..()
 
     ___  -
         s_. - ()
@@ -56,10 +56,10 @@ c_ TicTacToeEngine(qtc.QObject):
             }
             ___ win __ winning_sets:
                 __ no. win - plays:  # player has a winning combo
-                    game_won.emit(player)
+                    game_won.e..(player)
                     r_
         __ N.. no. __ board:
-            game_draw.emit()
+            game_draw.e..()
 
 
 c_ TTTBoard(qtw.QGraphicsScene):
@@ -76,7 +76,7 @@ c_ TTTBoard(qtw.QGraphicsScene):
         qtc.QRectF(405, 405, 190, 190)
     )
 
-    square_clicked _ qtc.pyqtSignal(int)
+    square_clicked _ qtc.pS..(int)
 
     ___  -
         s_. - ()
@@ -106,7 +106,7 @@ c_ TTTBoard(qtw.QGraphicsScene):
         position _ mouse_event.buttonDownScenePos(qtc.__.LeftButton)
         ___ square, qrect __ en..(square_rects):
             __ qrect.contains(position):
-                square_clicked.emit(square)
+                square_clicked.e..(square)
                 break
 
 c_ MainWindow(qtw.QMainWindow):

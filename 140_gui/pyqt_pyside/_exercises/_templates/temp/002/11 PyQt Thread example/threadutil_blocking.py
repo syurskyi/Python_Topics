@@ -11,7 +11,7 @@ It allows you to receive results from the function invocation:
 """
 
 ____ functools ______ wraps
-____ ?.?C.. ______ pyqtSignal, QObject, QThread
+____ ?.?C.. ______ pS.., QObject, QThread
 ____ ?.?W.. ______ ?A..
 ____ th.. ______ Event, get_ident
 
@@ -71,7 +71,7 @@ c_ Executor:
             receiver.moveToThread(thread)
             sender _ Sender()
             sender.signal.c..(receiver.slot)
-            sender.signal.emit()
+            sender.signal.e..()
             task.has_run.wait()
             r_ task.result
         finally:
@@ -102,7 +102,7 @@ c_ Task:
         r_ _result
 
 c_ Sender(QObject):
-    signal _ pyqtSignal()
+    signal _ pS..()
 
 c_ Receiver(QObject):
     ___  -   callback, parent_None):

@@ -44,7 +44,7 @@
 
 ______ unicodedata
 
-____ ?.?C.. ______ pyqtSignal, ?S.., __
+____ ?.?C.. ______ pS.., ?S.., __
 ____ ?.?G.. ______ (QClipboard, QFont, QFontDatabase, QFontMetrics,
         QPainter)
 ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, QFontComboBox,
@@ -54,7 +54,7 @@ ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, QFontComboBox,
 
 c_ CharacterWidget(?W..):
 
-    characterSelected _ pyqtSignal(str)
+    characterSelected _ pS.. st.
 
     ___  -   parent_None):
         super(CharacterWidget, self). - (parent)
@@ -63,7 +63,7 @@ c_ CharacterWidget(?W..):
         squareSize _ 24
         columns _ 16
         lastKey _ -1
-        setMouseTracking(True)
+        setMouseTracking( st.
 
     ___ updateFont  fontFamily):
         displayFont.setFamily(fontFamily)
@@ -113,7 +113,7 @@ c_ CharacterWidget(?W..):
             key_ch _ _chr(lastKey)
 
             __ unicodedata.category(key_ch) !_ 'Cn':
-                characterSelected.emit(key_ch)
+                characterSelected.e..(key_ch)
             update()
         ____
             super(CharacterWidget, self).mousePressEvent(event)
@@ -179,7 +179,7 @@ c_ MainWindow ?MW..
         styleCombo _ ?CB()
         fontMergingLabel _ QLabel("Automatic Font Merging:")
         fontMerging _ QCheckBox()
-        fontMerging.setChecked(True)
+        fontMerging.setChecked( st.
 
         scrollArea _ QScrollArea()
         characterWidget _ CharacterWidget()
@@ -243,13 +243,13 @@ c_ MainWindow ?MW..
     ___ findSizes  font):
         fontDatabase _ QFontDatabase()
         currentSize _ sizeCombo.currentText()
-        sizeCombo.blockSignals(True)
+        sizeCombo.blockSignals( st.
         sizeCombo.clear()
 
         __ fontDatabase.isSmoothlyScalable(font.family(), fontDatabase.styleString(font)):
             ___ size __ QFontDatabase.standardSizes
                 sizeCombo.aI..(str(size))
-                sizeCombo.setEditable(True)
+                sizeCombo.setEditable( st.
         ____
             ___ size __ fontDatabase.smoothSizes(font.family(), fontDatabase.styleString(font)):
                 sizeCombo.aI..(str(size))

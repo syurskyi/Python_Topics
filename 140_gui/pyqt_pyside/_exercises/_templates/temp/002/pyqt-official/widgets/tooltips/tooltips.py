@@ -97,7 +97,7 @@ c_ SortingBox(?W..):
 
         previousPosition _ QPoint()
 
-        setMouseTracking(True)
+        setMouseTracking( st.
         setBackgroundRole(?P...Base)
 
         itemInMotion _ N..

@@ -112,7 +112,7 @@ c_ ShoeDescription(QObject):
     ___ color  color):
         _color _ color
 
-    @pyqtProperty(str)
+    @pyqtProperty st.
     ___ brand
         r_ _brand
 
@@ -136,7 +136,7 @@ c_ Person(QObject):
         _name _ ''
         _shoe _ ShoeDescription()
 
-    @pyqtProperty(str)
+    @pyqtProperty st.
     ___ name
         r_ _name
 

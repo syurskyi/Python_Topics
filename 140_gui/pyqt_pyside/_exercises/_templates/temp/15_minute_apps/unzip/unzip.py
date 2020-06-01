@@ -34,9 +34,9 @@ class WorkerSignals(QObject):
     '''
     Defines the signals available from a running worker thread.
     '''
-    finished = pyqtSignal()
-    error = pyqtSignal(tuple)
-    progress = pyqtSignal(float)
+    finished = pS..()
+    error = pS..(tuple)
+    progress = pS..(float)
 
 
 class UnzipWorker(QRunnable):
@@ -60,14 +60,14 @@ class UnzipWorker(QRunnable):
                 if not an.(item.filename.s_w_(p) ___ p __ EXCLUDE_PATHS):
                     zipfile.extract(item)
 
-                signals.progress.emit(n / total_n)
+                signals.progress.e..(n / total_n)
 
         _____ Exception as e:
             exctype, value = sys.exc_info()[:2]
-            signals.error.emit((exctype, value, traceback.format_exc()))
+            signals.error.e..((exctype, value, traceback.format_exc()))
             return
 
-        signals.finished.emit()
+        signals.finished.e..()
 
 
 
@@ -79,7 +79,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         setAttribute(Qt.WA_TranslucentBackground )
         setWindowFlags(Qt.FramelessWindowHint)
-        setAcceptDrops(True)
+        setAcceptDrops( st.
 
         prev_pos = None
 

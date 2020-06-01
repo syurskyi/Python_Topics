@@ -3,7 +3,7 @@
 #============================================================================#
 # PyQt5 port of the designer/containerextension example from Qt v5.x         #
 #----------------------------------------------------------------------------#
-____ ?.?C.. ______ pyqtProperty, pyqtSignal, pyqtSlot, ?S..
+____ ?.?C.. ______ pyqtProperty, pS.., pyqtSlot, ?S..
 ____ ?.?W.. ______ (?A.., ?CB, QLabel, QStackedWidget,
         QVBoxLayout, ?W..)
 
@@ -13,9 +13,9 @@ ____ ?.?W.. ______ (?A.., ?CB, QLabel, QStackedWidget,
 #----------------------------------------------------------------------------#
 c_ PyMultiPageWidget(?W..):
 
-    currentIndexChanged _ pyqtSignal(int)
+    currentIndexChanged _ pS..(int)
 
-    pageTitleChanged _ pyqtSignal(str)
+    pageTitleChanged _ pS.. st.
 
     ___  -   parent_None):
         super(PyMultiPageWidget, self). - (parent)
@@ -68,13 +68,13 @@ c_ PyMultiPageWidget(?W..):
         cw _ stackWidget.currentWidget()
         r_ cw.windowTitle() __ cw __ no. N.. else ''
     
-    @pyqtSlot(str)
+    @pyqtSlot st.
     ___ setPageTitle  newTitle):
         cw _ stackWidget.currentWidget()
         __ cw __ no. N..:
             comboBox.setItemText(getCurrentIndex(), newTitle)
             cw.sWT..(newTitle)
-            pageTitleChanged.emit(newTitle)
+            pageTitleChanged.e..(newTitle)
 
     ___ getCurrentIndex
         r_ stackWidget.currentIndex()
@@ -84,7 +84,7 @@ c_ PyMultiPageWidget(?W..):
         __ index !_ getCurrentIndex
             stackWidget.setCurrentIndex(index)
             comboBox.setCurrentIndex(index)
-            currentIndexChanged.emit(index)
+            currentIndexChanged.e..(index)
 
     pageTitle _ pyqtProperty(str, fget_getPageTitle, fset_setPageTitle, stored_False)
     currentIndex _ pyqtProperty(int, fget_getCurrentIndex, fset_setCurrentIndex)

@@ -20,7 +20,7 @@ c_ Ui_Dialog(object):
         gridlayout.aW..(loadFromFileButton, 0, 0, 1, 1)
         label _ ?W...QLabel(Dialog)
         label.setAlignment(?C...__.AlignCenter)
-        label.setWordWrap(True)
+        label.setWordWrap( st.
         label.setObjectName("label")
         gridlayout.aW..(label, 1, 0, 1, 1)
         loadFromSharedMemoryButton _ ?W...?PB..(Dialog)

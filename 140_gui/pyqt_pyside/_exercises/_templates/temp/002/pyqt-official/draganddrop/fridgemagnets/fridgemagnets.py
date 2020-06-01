@@ -98,7 +98,7 @@ c_ DragLabel(QLabel):
         hide()
 
         __ drag.exec_(__.MoveAction | __.CopyAction, __.CopyAction) == __.MoveAction:
-            close()
+            c..
         ____
             s..
 
@@ -128,7 +128,7 @@ c_ DragWidget(?W..):
 
         sMS..(400, max(200, y))
         sWT..("Fridge Magnets")
-        setAcceptDrops(True)
+        setAcceptDrops( st.
 
     ___ dragEnterEvent  event):
         __ event.mimeData().hasFormat('application/x-fridgemagnet'):

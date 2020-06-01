@@ -54,11 +54,11 @@ class WorkerSignals(QObject):
     '''
     Defines the signals available from a running worker thread.
     '''
-    finished = pyqtSignal()
-    error = pyqtSignal(tuple)
-    progress = pyqtSignal(int)
-    data = pyqtSignal(int, dict)
-    cancel = pyqtSignal()
+    finished = pS..()
+    error = pS..(tuple)
+    progress = pS..(int)
+    data = pS..(int, dict)
+    cancel = pS..()
 
 
 class UpdateWorker(QRunnable):
@@ -88,8 +88,8 @@ class UpdateWorker(QRunnable):
                 rates = data['rates']
                 rates[base_currency] = 1.0
 
-                signals.data.emit(offset ,rates)
-                signals.progress.emit(int(100 * n / total_requests))
+                signals.data.e..(offset ,rates)
+                signals.progress.e..(int(100 * n / total_requests))
 
                 if not r.from_cache:
                     time.sleep(1)  # Don't be rude.
@@ -101,10 +101,10 @@ class UpdateWorker(QRunnable):
         _____ Exception as e:
             print(e)
             exctype, value = sys.exc_info()[:2]
-            signals.error.emit((exctype, value, traceback.format_exc()))
+            signals.error.e..((exctype, value, traceback.format_exc()))
             return
 
-        signals.finished.emit()
+        signals.finished.e..()
 
     def cancel 
         is_interrupted = True
@@ -119,7 +119,7 @@ class MainWindow(QMainWindow):
         layout = QHBoxLayout()
 
         ax = pg.PlotWidget()
-        ax.showGrid(True, True)
+        ax.showGrid(True,  st.
 
         line = pg.InfiniteLine(
             pos=-20,
@@ -214,7 +214,7 @@ class MainWindow(QMainWindow):
             get_currency_color(currency)
         )))
         citem.setColumnCount(2)
-        citem.setCheckable(True)
+        citem.setCheckable( st.
         if currency __ DEFAULT_DISPLAY_CURRENCIES:
             citem.setCheckState(Qt.Checked)
 
@@ -259,7 +259,7 @@ class MainWindow(QMainWindow):
     def refresh_historic_rates 
         if worker:
             # If we have a current worker, send a kill signal
-            worker.signals.cancel.emit()
+            worker.signals.cancel.e..()
 
         # Prefill our data store with None ('no data')
         data = [None] * HISTORIC_DAYS_N

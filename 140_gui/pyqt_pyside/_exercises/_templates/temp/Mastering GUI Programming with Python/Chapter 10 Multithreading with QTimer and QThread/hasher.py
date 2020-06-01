@@ -5,7 +5,7 @@ ____ ? ______ ?C.. __ qtc
 
 c_ HashForm ?.?W..
 
-    submitted _ qtc.pyqtSignal(str, str, int)
+    submitted _ qtc.pS..(str, str, int)
 
     ___  - 
         s_. - ()
@@ -32,7 +32,7 @@ c_ HashForm ?.?W..
             destination_file.sT..(filename)
 
     ___ on_submit
-        submitted.emit(
+        submitted.e..(
             source_path.t__(),
             destination_file.t__(),
             threads.value()
@@ -49,7 +49,7 @@ c_ HashRunner(qtc.QRunnable):
         outfile _ outfile
         hasher _ qtc.QCryptographicHash(
             qtc.QCryptographicHash.Md5)
-        setAutoDelete(True)
+        setAutoDelete( st.
 
     ___ run
         print(f'hashing {infile}')
@@ -73,7 +73,7 @@ c_ HashRunner(qtc.QRunnable):
 
 c_ HashManager(qtc.QObject):
 
-    finished _ qtc.pyqtSignal()
+    finished _ qtc.pS..()
 
     ___  - 
         s_. - ()
@@ -92,7 +92,7 @@ c_ HashManager(qtc.QObject):
         # If we don't care about being notified when the process is done,
         # we could leave this out and run HashManager in the main thread.
         pool.waitForDone()
-        finished.emit()
+        finished.e..()
 
 
 c_ MainWindow(qtw.QMainWindow):

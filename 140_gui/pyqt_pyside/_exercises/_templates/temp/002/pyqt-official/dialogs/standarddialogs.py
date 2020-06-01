@@ -144,7 +144,7 @@ c_ Dialog(QDialog):
 
         native _ QCheckBox()
         native.sT..("Use native file dialog.")
-        native.setChecked(True)
+        native.setChecked( st.
         __ ___.platform no. __ ("win32", "darwin"):
             native.hide()
 
@@ -217,7 +217,7 @@ c_ Dialog(QDialog):
         __ color.isValid
             colorLabel.sT..(color.name())
             colorLabel.sP..(?P..(color))
-            colorLabel.setAutoFillBackground(True)
+            colorLabel.setAutoFillBackground( st.
 
     ___ setFont 
         font, ok _ QFontDialog.getFont(QFont(fontLabel.t__()), self)

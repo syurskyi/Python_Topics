@@ -119,15 +119,15 @@ c_ PermissionsTab(?W..):
 
         readable _ QCheckBox("Readable")
         __ fileInfo.isReadable
-            readable.setChecked(True)
+            readable.setChecked( st.
 
         writable _ QCheckBox("Writable")
         __ fileInfo.isWritable
-            writable.setChecked(True)
+            writable.setChecked( st.
 
         executable _ QCheckBox("Executable")
         __ fileInfo.isExecutable
-            executable.setChecked(True)
+            executable.setChecked( st.
 
         ownerGroup _ QGroupBox("Ownership")
 

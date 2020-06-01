@@ -155,10 +155,10 @@ c_ PadNavigator(QGraphicsView):
         frontState.assignProperty(splash, "opacity", 0.0)
         frontState.assignProperty(backItem, "visible", False)
         frontState.assignProperty(flipRotation, "angle", 0.0)
-        frontState.assignProperty(selectionItem, "visible", True)
+        frontState.assignProperty(selectionItem, "visible",  st.
 
-        backState.assignProperty(pad, "fill", True)
-        backState.assignProperty(backItem, "visible", True)
+        backState.assignProperty(pad, "fill",  st.
+        backState.assignProperty(backItem, "visible",  st.
         backState.assignProperty(xRotation, "angle", 0.0)
         backState.assignProperty(yRotation, "angle", 0.0)
         backState.assignProperty(flipRotation, "angle", 180.0)
@@ -224,7 +224,7 @@ c_ PadNavigator(QGraphicsView):
                 state.assignProperty(yRotation, "angle", icon.y() / 6.0)
                 state.assignProperty(selectionItem, "x", icon.x())
                 state.assignProperty(selectionItem, "y", icon.y())
-                frontState.assignProperty(icon, "visible", True)
+                frontState.assignProperty(icon, "visible",  st.
                 backState.assignProperty(icon, "visible", False)
 
                 setIconVisibleAnimation _ QPropertyAnimation(icon, b'visible')

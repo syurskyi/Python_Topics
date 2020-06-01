@@ -29,9 +29,9 @@ c_ WorkerSignals(QObject):
     '''
     Defines the signals available from a running worker thread.
     '''
-    finished _ pyqtSignal()
-    error _ pyqtSignal(str)
-    result _ pyqtSignal(dict, dict)
+    finished _ pS..()
+    error _ pS.. st.
+    result _ pS..(dict, dict)
 
 c_ WeatherWorker(QRunnable):
     '''
@@ -64,12 +64,12 @@ c_ WeatherWorker(QRunnable):
             r _ requests.g..(url)
             forecast _ json.loads(r.t__)
 
-            signals.result.emit(weather, forecast)
+            signals.result.e..(weather, forecast)
 
         _____ Exception __ e:
-            signals.error.emit(str(e))
+            signals.error.e..(str(e))
 
-        signals.finished.emit()
+        signals.finished.e..()
 
 
 

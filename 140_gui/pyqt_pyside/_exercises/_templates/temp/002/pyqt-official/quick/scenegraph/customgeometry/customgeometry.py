@@ -41,7 +41,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ pyqtProperty, pyqtSignal, QPointF, QUrl
+____ ?.?C.. ______ pyqtProperty, pS.., QPointF, QUrl
 ____ ?.?G.. ______ ?C.., QGuiApplication
 ____ ?.QtQml ______ qmlRegisterType
 ____ ?.QtQuick ______ (QQuickItem, QQuickView, QSGFlatColorMaterial,
@@ -52,7 +52,7 @@ ______ customgeometry_rc
 
 c_ BezierCurve(QQuickItem):
 
-    p1Changed _ pyqtSignal(QPointF)
+    p1Changed _ pS..(QPointF)
 
     @pyqtProperty(QPointF, notify_p1Changed)
     ___ p1
@@ -62,10 +62,10 @@ c_ BezierCurve(QQuickItem):
     ___ p1  p):
         __ _p1 !_ p:
             _p1 _ QPointF(p)
-            p1Changed.emit(p)
+            p1Changed.e..(p)
             update()
 
-    p2Changed _ pyqtSignal(QPointF)
+    p2Changed _ pS..(QPointF)
 
     @pyqtProperty(QPointF, notify_p2Changed)
     ___ p2
@@ -75,10 +75,10 @@ c_ BezierCurve(QQuickItem):
     ___ p2  p):
         __ _p2 !_ p:
             _p2 _ QPointF(p)
-            p2Changed.emit(p)
+            p2Changed.e..(p)
             update()
 
-    p3Changed _ pyqtSignal(QPointF)
+    p3Changed _ pS..(QPointF)
 
     @pyqtProperty(QPointF, notify_p3Changed)
     ___ p3
@@ -88,10 +88,10 @@ c_ BezierCurve(QQuickItem):
     ___ p3  p):
         __ _p3 !_ p:
             _p3 _ QPointF(p)
-            p3Changed.emit(p)
+            p3Changed.e..(p)
             update()
 
-    p4Changed _ pyqtSignal(QPointF)
+    p4Changed _ pS..(QPointF)
 
     @pyqtProperty(QPointF, notify_p4Changed)
     ___ p4
@@ -101,10 +101,10 @@ c_ BezierCurve(QQuickItem):
     ___ p4  p):
         __ _p4 !_ p:
             _p4 _ QPointF(p)
-            p4Changed.emit(p)
+            p4Changed.e..(p)
             update()
 
-    segmentCountChanged _ pyqtSignal(int)
+    segmentCountChanged _ pS..(int)
 
     @pyqtProperty(int, notify_segmentCountChanged)
     ___ segmentCount
@@ -114,7 +114,7 @@ c_ BezierCurve(QQuickItem):
     ___ segmentCount  count):
         __ _segmentCount !_ count:
             _segmentCount _ count
-            segmentCountChanged.emit(count)
+            segmentCountChanged.e..(count)
             update()
 
     ___  -   parent_None):
@@ -129,7 +129,7 @@ c_ BezierCurve(QQuickItem):
 
         _root_node _ N..
 
-        setFlag(QQuickItem.ItemHasContents, True)
+        setFlag(QQuickItem.ItemHasContents,  st.
 
     ___ updatePaintNode  oldNode, nodeData):
         __ _root_node __ N..:

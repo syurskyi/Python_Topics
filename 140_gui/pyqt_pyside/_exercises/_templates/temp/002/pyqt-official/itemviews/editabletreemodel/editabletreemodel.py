@@ -241,7 +241,7 @@ c_ TreeModel(QAbstractItemModel):
         result _ item.setData(index.column(), value)
 
         __ result:
-            dataChanged.emit(index, index)
+            dataChanged.e..(index, index)
 
         r_ result
 
@@ -251,7 +251,7 @@ c_ TreeModel(QAbstractItemModel):
 
         result _ rootItem.setData(section, value)
         __ result:
-            headerDataChanged.emit(orientation, section, section)
+            headerDataChanged.e..(orientation, section, section)
 
         r_ result
 
@@ -308,7 +308,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
         file _ QFile(':/default.txt')
         file.o..(QIODevice.ReadOnly)
         model _ TreeModel(headers, file.readAll())
-        file.close()
+        file.c..
 
         view.sM..(model)
         ___ column __ range(model.columnCount()):

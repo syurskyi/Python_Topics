@@ -42,9 +42,9 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QDate, QDateTime, __, QTime
+____ ?.?C.. ______ QDate, QDateTime, __, ?T..
 ____ ?.?W.. ______ (?A.., ?CB, QDateEdit, ?DTE..,
-        QDoubleSpinBox, QGroupBox, QHBoxLayout, QLabel, SB.., QTimeEdit,
+        QDoubleSpinBox, QGroupBox, QHBoxLayout, QLabel, SB.., ?TE..,
         QVBoxLayout, ?W..)
 
 
@@ -108,8 +108,8 @@ c_ Window(?W..):
                     dateEdit.maximumDate().toString(__.ISODate)))
 
         timeLabel _ QLabel()
-        timeEdit _ QTimeEdit(QTime.currentTime())
-        timeEdit.setTimeRange(QTime(9, 0, 0, 0), QTime(16, 30, 0, 0))
+        timeEdit _ ?TE..(?T...currentTime())
+        timeEdit.setTimeRange(?T..(9, 0, 0, 0), ?T..(16, 30, 0, 0))
         timeLabel.sT..("Appointment time (between %s and %s):" %
                     (timeEdit.minimumTime().toString(__.ISODate),
                     timeEdit.maximumTime().toString(__.ISODate)))
@@ -150,7 +150,7 @@ c_ Window(?W..):
                     (meetingEdit.minimumDate().toString(__.ISODate),
                     meetingEdit.maximumDate().toString(__.ISODate)))
         ____
-            meetingEdit.setTimeRange(QTime(0, 7, 20, 0), QTime(21, 0, 0, 0))
+            meetingEdit.setTimeRange(?T..(0, 7, 20, 0), ?T..(21, 0, 0, 0))
             meetingLabel.sT..("Meeting time (between %s and %s):" %
                     (meetingEdit.minimumTime().toString(__.ISODate),
                     meetingEdit.maximumTime().toString(__.ISODate)))

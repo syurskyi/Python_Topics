@@ -121,7 +121,7 @@ c_ MultiPageWidgetPlugin(QPyDesignerCustomWidgetPlugin):
         __ widget and isinstance(widget, PyMultiPageWidget):
             form _ QDesignerFormWindowInterface.findFormWindow(widget)
             __ form:
-                form.emitSelectionChanged()
+                form.e..SelectionChanged()
 
     ___ pageTitleChanged  title):
         widget _ sender()
@@ -135,7 +135,7 @@ c_ MultiPageWidgetPlugin(QPyDesignerCustomWidgetPlugin):
                 # This explicit cast is necessary here
                 sheet _ sip.cast(sheet, QPyDesignerPropertySheetExtension)
                 propertyIndex _ sheet.indexOf('windowTitle')
-                sheet.setChanged(propertyIndex, True)
+                sheet.setChanged(propertyIndex,  st.
 
 #============================================================================#
 # EOF                                                                        #

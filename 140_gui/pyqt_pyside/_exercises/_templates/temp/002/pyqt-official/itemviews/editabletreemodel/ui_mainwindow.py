@@ -20,11 +20,11 @@ c_ Ui_MainWindow(object):
         vboxlayout.setSpacing(0)
         vboxlayout.setObjectName("vboxlayout")
         view _ ?W...QTreeView(centralwidget)
-        view.setAlternatingRowColors(True)
+        view.setAlternatingRowColors( st.
         view.setSelectionBehavior(?W...QAbstractItemView.SelectItems)
         view.setHorizontalScrollMode(?W...QAbstractItemView.ScrollPerPixel)
         view.setAnimated F..
-        view.setAllColumnsShowFocus(True)
+        view.setAllColumnsShowFocus( st.
         view.setObjectName("view")
         vboxlayout.aW..(view)
         MainWindow.sCW..(centralwidget)

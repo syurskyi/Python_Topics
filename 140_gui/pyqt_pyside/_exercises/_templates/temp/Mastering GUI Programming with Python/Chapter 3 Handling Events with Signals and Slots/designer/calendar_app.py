@@ -10,7 +10,7 @@ MW_Ui, MW_Base _ uic.lUT..('calendar_form.ui')
 
 c_ CategoryWindow ?.?W..
 
-    submitted _ qtc.pyqtSignal(str)
+    submitted _ qtc.pS.. st.
 
     ___  - 
         s_. - ()
@@ -19,18 +19,18 @@ c_ CategoryWindow ?.?W..
         ui.setupUi
         s..
 
-    @qtc.pyqtSlot()
+    ??.?
     ___ on_submit_btn_clicked
         # we can take advantage of connectSlotsByName here
         # to avoid explicit UI connections
         __ ui.category_entry.t__
-            submitted.emit(ui.category_entry.t__())
-        close()
+            submitted.e..(ui.category_entry.t__())
+        c..
 
 
 #class MainWindow(qtw.QWidget, Ui_MainWindow):
 c_ MainWindow(MW_Base, MW_Ui):
-    events _ {}
+    events _   # dict
 
     ___  - 
         """MainWindow constructor. """
@@ -73,7 +73,7 @@ c_ MainWindow(MW_Base, MW_Ui):
     ___ clear_form
         event_title.clear()
         event_category.setCurrentIndex(0)
-        event_time.setTime(qtc.QTime(8, 0))
+        event_time.setTime(qtc.?T..(8, 0))
         allday_check.setChecked F..
         event_detail.sPT..('')
 
@@ -100,7 +100,7 @@ c_ MainWindow(MW_Base, MW_Ui):
 
         event_category.setCurrentText(event_data['category'])
         __ event_data['time'] __ N..:
-            allday_check.setChecked(True)
+            allday_check.setChecked( st.
         ____
             event_time.setTime(event_data['time'])
         event_title.sT..(event_data['title'])
@@ -128,7 +128,7 @@ c_ MainWindow(MW_Base, MW_Ui):
         ____
             event_list[event_number] _ event
 
-        event_list.sort(key_lambda x: x['time'] or qtc.QTime(0, 0))
+        event_list.sort(key_lambda x: x['time'] or qtc.?T..(0, 0))
         events[date] _ event_list
         populate_list()
 

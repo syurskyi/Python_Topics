@@ -154,7 +154,7 @@ c_ Window(QDialog):
                         foundFiles.ap..(files[i])
                         break
 
-        progressDialog.close()
+        progressDialog.c..
 
         r_ foundFiles
 
@@ -183,7 +183,7 @@ c_ Window(QDialog):
 
     ___ createComboBox  text_""):
         comboBox _ ?CB()
-        comboBox.setEditable(True)
+        comboBox.setEditable( st.
         comboBox.aI..(t__)
         comboBox.sSP..(QSizePolicy.E.., QSizePolicy.Preferred)
         r_ comboBox

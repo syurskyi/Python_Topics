@@ -40,7 +40,7 @@ c_ MainWindow(qtw.QMainWindow):
 
         # browser tabs
         tabs _ qtw.?TW..(
-            tabsClosable_True, movable_True)
+            tabsClosable_True, movable_ st.
         tabs.tabCloseRequested.c..(tabs.removeTab)
         new _ qtw.?PB..('New')
         tabs.setCornerWidget(new)
@@ -70,7 +70,7 @@ c_ MainWindow(qtw.QMainWindow):
         settings.setFontFamily(
             qtwe.QWebEngineSettings.SansSerifFont, 'Impact')
         settings.setAttribute(
-            qtwe.QWebEngineSettings.PluginsEnabled, True)
+            qtwe.QWebEngineSettings.PluginsEnabled,  st.
 
 
         # Text search feature
@@ -78,7 +78,7 @@ c_ MainWindow(qtw.QMainWindow):
         addDockWidget(qtc.__.BottomDockWidgetArea, find_dock)
         find_text _ qtw.?LE..
         find_dock.setWidget(find_text)
-        find_text.textChanged.c..(text_search)
+        find_text.tC...c..(text_search)
         # init javascript
         w__ o..('finder.js', 'r') __ fh:
             finder_js _ fh.read()

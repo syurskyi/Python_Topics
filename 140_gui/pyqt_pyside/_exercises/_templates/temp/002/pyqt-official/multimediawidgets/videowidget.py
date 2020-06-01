@@ -100,7 +100,7 @@ c_ VideoPlayer(?W..):
         __ fileName !_ '':
             mediaPlayer.setMedia(
                     QMediaContent(QUrl.fromLocalFile(fileName)))
-            playButton.sE..(True)
+            playButton.sE..( st.
 
     ___ play 
         __ mediaPlayer.state() == QMediaPlayer.PlayingState:

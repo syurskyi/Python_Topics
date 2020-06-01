@@ -110,7 +110,7 @@ c_ Ui_Camera(object):
         spacerItem1 _ ?W...QSpacerItem(20, 76, ?W...QSizePolicy.Minimum, ?W...QSizePolicy.E..)
         gridLayout_2.aI..(spacerItem1, 3, 0, 1, 1)
         muteButton _ ?W...?PB..(tab)
-        muteButton.setCheckable(True)
+        muteButton.setCheckable( st.
         muteButton.setObjectName("muteButton")
         gridLayout_2.aW..(muteButton, 4, 0, 1, 1)
         captureWidget.aT..(tab, "")

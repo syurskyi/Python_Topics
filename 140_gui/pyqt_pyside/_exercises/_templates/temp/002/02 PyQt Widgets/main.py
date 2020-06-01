@@ -63,7 +63,7 @@ c_ WidgetGallery(QDialog):
         styleLabel.setBuddy(styleComboBox)
 
         useStylePaletteCheckBox _ QCheckBox("&Use style's standard palette")
-        useStylePaletteCheckBox.setChecked(True)
+        useStylePaletteCheckBox.setChecked( st.
 
         disableWidgetsCheckBox _ QCheckBox("&Disable widgets")
 
@@ -124,10 +124,10 @@ c_ WidgetGallery(QDialog):
         radioButton1 _ QRadioButton("Radio button 1")
         radioButton2 _ QRadioButton("Radio button 2")
         radioButton3 _ QRadioButton("Radio button 3")
-        radioButton1.setChecked(True)
+        radioButton1.setChecked( st.
 
         checkBox _ QCheckBox("Tri-state check box")
-        checkBox.setTristate(True)
+        checkBox.setTristate( st.
         checkBox.setCheckState(__.PartiallyChecked)
 
         layout _ ?VBL..
@@ -142,14 +142,14 @@ c_ WidgetGallery(QDialog):
         topRightGroupBox _ QGroupBox("Group 2")
 
         defaultPushButton _ ?PB..("Default Push Button")
-        defaultPushButton.setDefault(True)
+        defaultPushButton.setDefault( st.
 
         togglePushButton _ ?PB..("Toggle Push Button")
-        togglePushButton.setCheckable(True)
-        togglePushButton.setChecked(True)
+        togglePushButton.setCheckable( st.
+        togglePushButton.setChecked( st.
 
         flatPushButton _ ?PB..("Flat Push Button")
-        flatPushButton.setFlat(True)
+        flatPushButton.setFlat( st.
 
         layout _ ?VBL..
         layout.aW..(defaultPushButton)
@@ -191,8 +191,8 @@ c_ WidgetGallery(QDialog):
 
     ___ createBottomRightGroupBox 
         bottomRightGroupBox _ QGroupBox("Group 3")
-        bottomRightGroupBox.setCheckable(True)
-        bottomRightGroupBox.setChecked(True)
+        bottomRightGroupBox.setCheckable( st.
+        bottomRightGroupBox.setChecked( st.
 
         lineEdit _ QLineEdit('s3cRe7')
         lineEdit.setEchoMode(QLineEdit.Password)
@@ -211,7 +211,7 @@ c_ WidgetGallery(QDialog):
 
         dial _ QDial(bottomRightGroupBox)
         dial.setValue(30)
-        dial.setNotchesVisible(True)
+        dial.setNotchesVisible( st.
 
         layout _ QGridLayout()
         layout.aW..(lineEdit, 0, 0, 1, 2)

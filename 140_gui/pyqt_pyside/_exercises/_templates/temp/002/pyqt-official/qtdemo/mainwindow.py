@@ -40,7 +40,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QFileInfo, QPoint, QRect, qRound, __, QTime, QTimer
+____ ?.?C.. ______ QFileInfo, QPoint, QRect, qRound, __, ?T.., QTimer
 ____ ?.?G.. ______ (QFontMetricsF, QImage, QPainter, QPixmap, QPolygon,
         QRegion)
 ____ ?.?W.. ______ (?A.., QFrame, QGraphicsScene,
@@ -60,8 +60,8 @@ c_ MainWindow(QGraphicsView):
         imagesDir _ QFileInfo(__file__).absolutePath() + '/images'
 
         updateTimer _ QTimer
-        demoStartTime _ QTime()
-        fpsTime _ QTime()
+        demoStartTime _ ?T..()
+        fpsTime _ ?T..()
         background _ QPixmap()
 
         scene _ N..
@@ -75,7 +75,7 @@ c_ MainWindow(QGraphicsView):
         pausedLabel _ N..
         doneAdapt _ False
         useTimer _ False
-        updateTimer.setSingleShot(True)
+        updateTimer.setSingleShot( st.
         companyLogo _ N..
         qtLogo _ N..
 
@@ -111,7 +111,7 @@ c_ MainWindow(QGraphicsView):
         setViewport(?W..())
 
     ___ start
-        switchTimerOnOff(True)
+        switchTimerOnOff( st.
         demoStartTime.restart()
         MenuManager.instance().itemSelected(MenuManager.ROOT,
                 Colors.rootMenuName)
@@ -159,7 +159,7 @@ c_ MainWindow(QGraphicsView):
 
         __ on and no. Colors.noTimerUpdate:
             useTimer _ True
-            fpsTime _ QTime.currentTime()
+            fpsTime _ ?T...currentTime()
             updateTimer.start(int(1000 / Colors.fps))
             update_mode _ QGraphicsView.NoViewportUpdate
         ____
@@ -175,13 +175,13 @@ c_ MainWindow(QGraphicsView):
 
     ___ measureFps
         # Calculate time difference.
-        t _ fpsTime.msecsTo(QTime.currentTime())
+        t _ fpsTime.msecsTo(?T...currentTime())
         __ t == 0:
             t _ 0.01
 
         currentFps _ (1000.0 / t)
         fpsHistory.ap..(currentFps)
-        fpsTime _ QTime.currentTime()
+        fpsTime _ ?T...currentTime()
 
         # Calculate median.
         size _ le.(fpsHistory)
@@ -300,7 +300,7 @@ c_ MainWindow(QGraphicsView):
 
     ___ toggleFullscreen
         __ isFullScreen
-            enableMask(True)
+            enableMask( st.
             showNormal()
             __ MenuManager.instance().ticker:
                 MenuManager.instance().ticker.pause F..
@@ -354,7 +354,7 @@ c_ MainWindow(QGraphicsView):
 
         code _ MenuManager.instance().currentMenuCode
         __ code __ (MenuManager.ROOT, MenuManager.MENU1):
-            switchTimerOnOff(True)
+            switchTimerOnOff( st.
 
         pausedLabel.setRecursiveVisible F..
 
@@ -363,13 +363,13 @@ c_ MainWindow(QGraphicsView):
             r_
 
         __ MenuManager.instance().ticker:
-            MenuManager.instance().ticker.pause(True)
+            MenuManager.instance().ticker.pause( st.
 
         code _ MenuManager.instance().currentMenuCode
         __ code __ (MenuManager.ROOT, MenuManager.MENU1):
             switchTimerOnOff F..
 
-        pausedLabel.setRecursiveVisible(True)
+        pausedLabel.setRecursiveVisible( st.
 
     ___ resizeEvent  event):
         resetTransform()

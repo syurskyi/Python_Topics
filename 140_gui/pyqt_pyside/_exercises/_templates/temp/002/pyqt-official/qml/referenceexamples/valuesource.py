@@ -44,8 +44,8 @@
 
 ______ ___
 
-____ ?.?C.. ______ (pyqtProperty, pyqtSignal, pyqtSlot, Q_CLASSINFO,
-        QCoreApplication, QDate, QObject, QTime, QTimer, QUrl)
+____ ?.?C.. ______ (pyqtProperty, pS.., pyqtSlot, Q_CLASSINFO,
+        QCoreApplication, QDate, QObject, ?T.., QTimer, QUrl)
 ____ ?.?G.. ______ ?C..
 ____ ?.QtQml ______ (qmlAttachedPropertiesObject, qmlRegisterType,
         QQmlComponent, QQmlEngine, QQmlListProperty, QQmlProperty,
@@ -98,7 +98,7 @@ c_ ShoeDescription(QObject):
         _brand _ ''
         _price _ 0.0
 
-    shoeChanged _ pyqtSignal()
+    shoeChanged _ pS..()
 
     @pyqtProperty(int, notify_shoeChanged)
     ___ size 
@@ -108,7 +108,7 @@ c_ ShoeDescription(QObject):
     ___ size  size):
         __ _size !_ size:
             _size _ size
-            shoeChanged.emit()
+            shoeChanged.e..()
 
     @pyqtProperty(?C.., notify_shoeChanged)
     ___ color 
@@ -118,7 +118,7 @@ c_ ShoeDescription(QObject):
     ___ color  color):
         __ _color !_ color:
             _color _ color
-            shoeChanged.emit()
+            shoeChanged.e..()
 
     @pyqtProperty(str, notify_shoeChanged)
     ___ brand 
@@ -128,7 +128,7 @@ c_ ShoeDescription(QObject):
     ___ brand  brand):
         __ _brand !_ brand:
             _brand _ brand
-            shoeChanged.emit()
+            shoeChanged.e..()
 
     @pyqtProperty(float, notify_shoeChanged)
     ___ price 
@@ -138,7 +138,7 @@ c_ ShoeDescription(QObject):
     ___ price  price):
         __ _price !_ price:
             _price _ price
-            shoeChanged.emit()
+            shoeChanged.e..()
 
 
 c_ Person(QObject):
@@ -148,7 +148,7 @@ c_ Person(QObject):
         _name _ ''
         _shoe _ ShoeDescription()
 
-    nameChanged _ pyqtSignal()
+    nameChanged _ pS..()
 
     @pyqtProperty(str, notify_nameChanged)
     ___ name 
@@ -158,7 +158,7 @@ c_ Person(QObject):
     ___ name  name):
         __ _name !_ name:
             _name _ name
-            nameChanged.emit()
+            nameChanged.e..()
 
     @pyqtProperty(ShoeDescription)
     ___ shoe 
@@ -179,7 +179,7 @@ c_ BirthdayPartyAttached(QObject):
 
         _rsvp _ QDate()
 
-    rsvpChanged _ pyqtSignal()
+    rsvpChanged _ pS..()
 
     @pyqtProperty(QDate, notify_rsvpChanged)
     ___ rsvp 
@@ -189,13 +189,13 @@ c_ BirthdayPartyAttached(QObject):
     ___ rsvp  rsvp):
         __ _rsvp !_ rsvp:
             _rsvp _ rsvp
-            rsvpChanged.emit()
+            rsvpChanged.e..()
 
 
 c_ BirthdayParty(QObject):
     Q_CLASSINFO('DefaultProperty', 'guests')
 
-    partyStarted _ pyqtSignal(QTime, arguments_['time'])
+    partyStarted _ pS..(?T.., arguments_['time'])
 
     ___  -   parent_None):
         super(BirthdayParty, self). - (parent)
@@ -203,7 +203,7 @@ c_ BirthdayParty(QObject):
         _host _ N..
         _guests _   # list
 
-    hostChanged _ pyqtSignal()
+    hostChanged _ pS..()
 
     @pyqtProperty(Person, notify_hostChanged)
     ___ host 
@@ -213,13 +213,13 @@ c_ BirthdayParty(QObject):
     ___ host  host):
         __ _host !_ host:
             _host _ host
-            hostChanged.emit()
+            hostChanged.e..()
 
     @pyqtProperty(QQmlListProperty)
     ___ guests 
         r_ QQmlListProperty(Person, self, _guests)
 
-    @pyqtProperty(str)
+    @pyqtProperty st.
     ___ announcement 
         r_ ''
 
@@ -228,7 +228,7 @@ c_ BirthdayParty(QObject):
         print(announcement)
 
     ___ startParty 
-        partyStarted.emit(QTime.currentTime())
+        partyStarted.e..(?T...currentTime())
 
 
 c_ HappyBirthdaySong(QObject, QQmlPropertyValueSource):
@@ -244,7 +244,7 @@ c_ HappyBirthdaySong(QObject, QQmlPropertyValueSource):
         timer.timeout.c..(advance)
         timer.start(1000)
 
-    nameChanged _ pyqtSignal()
+    nameChanged _ pS..()
 
     @pyqtProperty(str, notify_nameChanged)
     ___ name 
@@ -263,7 +263,7 @@ c_ HappyBirthdaySong(QObject, QQmlPropertyValueSource):
                 "Happy birthday to you!"
             ]
 
-            nameChanged.emit()
+            nameChanged.e..()
 
     ___ setTarget  target):
         _target _ target

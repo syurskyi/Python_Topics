@@ -41,7 +41,7 @@ c_ PyDateEdit(QDateEdit):
     ___  -   *args):
         super(PyDateEdit, self). - (*args)
 
-        setCalendarPopup(True)
+        setCalendarPopup( st.
         __cw _ N..
         __firstDayOfWeek _ __.Monday
         __gridVisible _ False
@@ -182,7 +182,7 @@ c_ PyDateEdit(QDateEdit):
         __ __navigationBarVisible !_ T..
             __navigationBarVisible _ True
             __ __cw:
-                __cw.setNavigationBarVisible(True)
+                __cw.setNavigationBarVisible( st.
     navigationBarVisible _ pyqtProperty(bool,
                                                fget_isNavigationBarVisible,
                                                fset_setNavigationBarVisible,
@@ -201,7 +201,7 @@ c_ PyDateTimeEdit(?DTE..):
     ___  -   *args):
         super(PyDateTimeEdit, self). - (*args)
 
-        setCalendarPopup(True)
+        setCalendarPopup( st.
         __cw _ N..
         __firstDayOfWeek _ __.Monday
         __gridVisible _ False
@@ -342,7 +342,7 @@ c_ PyDateTimeEdit(?DTE..):
         __ __navigationBarVisible !_ T..
             __navigationBarVisible _ True
             __ __cw:
-                __cw.setNavigationBarVisible(True)
+                __cw.setNavigationBarVisible( st.
     navigationBarVisible _ pyqtProperty(bool,
                                                fget_isNavigationBarVisible,
                                                fset_setNavigationBarVisible,

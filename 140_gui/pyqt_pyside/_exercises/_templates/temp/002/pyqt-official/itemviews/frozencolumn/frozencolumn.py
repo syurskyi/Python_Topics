@@ -85,7 +85,7 @@ c_ FreezeTableWidget(QTableView):
 
         frozenTableView.setSelectionModel(selectionModel())
         ___ col __ range(1, model().columnCount()):
-            frozenTableView.setColumnHidden(col, True)
+            frozenTableView.setColumnHidden(col,  st.
         frozenTableView.setColumnWidth(0, columnWidth(0))
         frozenTableView.setHorizontalScrollBarPolicy(__.ScrollBarAlwaysOff)
         frozenTableView.setVerticalScrollBarPolicy(__.ScrollBarAlwaysOff)
@@ -150,7 +150,7 @@ ___ main(args):
                     newItem _ QStandardItem(field)
                     model.setItem(row, col, newItem)
                 row +_ 1
-    file.close()
+    file.c..
     tableView _ FreezeTableWidget(model)
     tableView.sWT..("Frozen Column Example")
     tableView.r..(560, 680)

@@ -67,7 +67,7 @@ c_ TableEditor(QDialog):
         view.sM..(model)
 
         submitButton _ ?PB..("Submit")
-        submitButton.setDefault(True)
+        submitButton.setDefault( st.
         revertButton _ ?PB..("&Revert")
         quitButton _ ?PB..("Quit")
 

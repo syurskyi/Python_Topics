@@ -45,7 +45,7 @@
 ______ copy
 ______ random
 
-____ ?.?C.. ______ pyqtSignal, QBasicTimer, ?S.., __
+____ ?.?C.. ______ pS.., QBasicTimer, ?S.., __
 ____ ?.?G.. ______ ?C.., QPainter, QPixmap
 ____ ?.?W.. ______ (?A.., QFrame, QGridLayout, QLabel,
         QLCDNumber, ?PB.., ?W..)
@@ -114,11 +114,11 @@ c_ TetrixBoard(QFrame):
     BoardWidth _ 10
     BoardHeight _ 22
 
-    scoreChanged _ pyqtSignal(int)
+    scoreChanged _ pS..(int)
 
-    levelChanged _ pyqtSignal(int)
+    levelChanged _ pS..(int)
 
-    linesRemovedChanged _ pyqtSignal(int)
+    linesRemovedChanged _ pS..(int)
 
     ___  -   parent_None):
         super(TetrixBoard, self). - (parent)
@@ -182,9 +182,9 @@ c_ TetrixBoard(QFrame):
         level _ 1
         clearBoard()
 
-        linesRemovedChanged.emit(numLinesRemoved)
-        scoreChanged.emit(score)
-        levelChanged.emit(level)
+        linesRemovedChanged.e..(numLinesRemoved)
+        scoreChanged.e..(score)
+        levelChanged.e..(level)
 
         newPiece()
         timer.start(timeoutTime(), self)
@@ -289,10 +289,10 @@ c_ TetrixBoard(QFrame):
         __ numPiecesDropped % 25 == 0:
             level +_ 1
             timer.start(timeoutTime(), self)
-            levelChanged.emit(level)
+            levelChanged.e..(level)
 
         score +_ dropHeight + 7
-        scoreChanged.emit(score)
+        scoreChanged.e..(score)
         removeFullLines()
 
         __ no. isWaitingAfterLine:
@@ -321,8 +321,8 @@ c_ TetrixBoard(QFrame):
         __ numFullLines > 0:
             numLinesRemoved +_ numFullLines
             score +_ 10 * numFullLines
-            linesRemovedChanged.emit(numLinesRemoved)
-            scoreChanged.emit(score)
+            linesRemovedChanged.e..(numLinesRemoved)
+            scoreChanged.e..(score)
 
             timer.start(500, self)
             isWaitingAfterLine _ True

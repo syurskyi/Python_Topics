@@ -20,7 +20,7 @@ c_ MainWindow(qtw.QMainWindow):
             ?.?LE..(placeholderText_"I am a line edit"),
             qtw.SB..(),
             ?.?CB..("I am a checkbox"),
-            qtw.?CB(editable_True)
+            qtw.?CB(editable_ st.
         ]
         container _ qtw.?W..
         sCW..(container)

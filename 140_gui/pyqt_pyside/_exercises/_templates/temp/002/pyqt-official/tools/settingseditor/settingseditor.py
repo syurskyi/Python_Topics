@@ -45,7 +45,7 @@
 ______ ___
 
 ____ ?.?C.. ______ (QByteArray, QDate, QDateTime, QEvent, QPoint, QRect,
-        QRegExp, QSettings, ?S.., __, QTime, QTimer)
+        QRegExp, QSettings, ?S.., __, ?T.., QTimer)
 ____ ?.?G.. ______ ?C.., QIcon, QRegExpValidator, ?V..
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., ?A..,
         ?CB, QDialog, QDialogButtonBox, ?FD.., QGridLayout,
@@ -66,8 +66,8 @@ c_ MainWindow ?MW..
         createActions()
         createMenus()
 
-        autoRefreshAct.setChecked(True)
-        fallbacksAct.setChecked(True)
+        autoRefreshAct.setChecked( st.
+        fallbacksAct.setChecked( st.
 
         sWT..("Settings Editor")
         r..(500, 600)
@@ -82,7 +82,7 @@ c_ MainWindow ?MW..
                                         locationDialog.organization(),
                                         locationDialog.application())
             setSettingsObject(settings)
-            fallbacksAct.sE..(True)
+            fallbacksAct.sE..( st.
 
     ___ openIniFile
         fileName, _ _ ?FD...gOFN..  "Open INI File", '',
@@ -179,8 +179,8 @@ c_ MainWindow ?MW..
         settings.setFallbacksEnabled(fallbacksAct.isChecked())
         settingsTree.setSettingsObject(settings)
 
-        refreshAct.sE..(True)
-        autoRefreshAct.sE..(True)
+        refreshAct.sE..( st.
+        autoRefreshAct.sE..( st.
 
         niceName _ settings.fileName()
         niceName.replace('\\', '/')
@@ -206,7 +206,7 @@ c_ LocationDialog(QDialog):
 
         organizationComboBox _ ?CB()
         organizationComboBox.aI..("Trolltech")
-        organizationComboBox.setEditable(True)
+        organizationComboBox.setEditable( st.
 
         applicationComboBox _ ?CB()
         applicationComboBox.aI..("Any")
@@ -214,7 +214,7 @@ c_ LocationDialog(QDialog):
         applicationComboBox.aI..("Assistant")
         applicationComboBox.aI..("Designer")
         applicationComboBox.aI..("Linguist")
-        applicationComboBox.setEditable(True)
+        applicationComboBox.setEditable( st.
         applicationComboBox.setCurrentIndex(3)
 
         formatLabel _ QLabel("&Format:")
@@ -244,8 +244,8 @@ c_ LocationDialog(QDialog):
 
         formatComboBox.activated.c..(updateLocationsTable)
         scopeComboBox.activated.c..(updateLocationsTable)
-        organizationComboBox.lineEdit().editingFinished.c..(updateLocationsTable)
-        applicationComboBox.lineEdit().editingFinished.c..(updateLocationsTable)
+        organizationComboBox.lineEdit().eF__.c..(updateLocationsTable)
+        applicationComboBox.lineEdit().eF__.c..(updateLocationsTable)
         buttonBox.accepted.c..(accept)
         buttonBox.rejected.c..(reject)
 
@@ -343,7 +343,7 @@ c_ LocationDialog(QDialog):
                 locationsTable.setItem(row, 0, item0)
                 locationsTable.setItem(row, 1, item1)
 
-        locationsTable.setUpdatesEnabled(True)
+        locationsTable.setUpdatesEnabled( st.
 
 
 c_ SettingsTree(QTreeWidget):
@@ -612,7 +612,7 @@ c_ VariantDelegate(QItemDelegate):
             regExp _ dateExp
         ____ isinstance(originalValue, QDateTime):
             regExp _ dateTimeExp
-        ____ isinstance(originalValue, QTime):
+        ____ isinstance(originalValue, ?T..):
             regExp _ timeExp
         ____ isinstance(originalValue, QPoint):
             regExp _ pointExp
@@ -661,8 +661,8 @@ c_ VariantDelegate(QItemDelegate):
             value _ QDateTime.fromString(t__, __.ISODate)
             __ no. value.isValid
                 r_
-        ____ isinstance(originalValue, QTime):
-            value _ QTime.fromString(t__, __.ISODate)
+        ____ isinstance(originalValue, ?T..):
+            value _ ?T...fromString(t__, __.ISODate)
             __ no. value.isValid
                 r_
         ____ isinstance(originalValue, QPoint):
@@ -690,7 +690,7 @@ c_ VariantDelegate(QItemDelegate):
     @staticmethod
     ___ isSupportedType(value):
         r_ isinstance(value, (bool, float, int, QByteArray, str, ?C..,
-                QDate, QDateTime, QTime, QPoint, QRect, ?S.., list))
+                QDate, QDateTime, ?T.., QPoint, QRect, ?S.., list))
 
     @staticmethod
     ___ displayText(value):
@@ -702,7 +702,7 @@ c_ VariantDelegate(QItemDelegate):
             r_ '%g' % value
         ____ isinstance(value, ?C..):
             r_ '(%u,%u,%u,%u)' % (value.red(), value.green(), value.blue(), value.alpha())
-        ____ isinstance(value, (QDate, QDateTime, QTime)):
+        ____ isinstance(value, (QDate, QDateTime, ?T..)):
             r_ value.toString(__.ISODate)
         ____ isinstance(value, QPoint):
             r_ '(%d,%d)' % (value.x(), value.y())

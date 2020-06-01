@@ -7,7 +7,7 @@ ____ ? ______ QtPrintSupport __ qtps
 
 c_ InvoiceForm ?.?W..
 
-    submitted _ qtc.pyqtSignal(dict)
+    submitted _ qtc.pS..(dict)
 
     ___  -
         s_. - ()
@@ -16,7 +16,7 @@ c_ InvoiceForm ?.?W..
         inputs['Customer Name'] _ qtw.?LE..
         inputs['Customer Address'] _ qtw.?PTE..
         inputs['Invoice Date'] _ qtw.QDateEdit(
-            date_qtc.QDate.currentDate(), calendarPopup_True)
+            date_qtc.QDate.currentDate(), calendarPopup_ st.
         inputs['Days until Due'] _ qtw.SB..(
             minimum_0, maximum_60, value_30)
         ___ label, widget __ inputs.items
@@ -60,7 +60,7 @@ c_ InvoiceForm ?.?W..
             __ an.(row_data):
                 data['line_items'].ap..(row_data)
         data['total_due'] _ sum(x[3] ___ x __ data['line_items'])
-        submitted.emit(data)
+        submitted.e..(data)
 
 
 c_ InvoiceView(qtw.?TE..):
@@ -70,7 +70,7 @@ c_ InvoiceView(qtw.?TE..):
     doc_height _ 11 * dpi
 
     ___  -
-        s_. - (readOnly_True)
+        s_. - (readOnly_ st.
         sFS..(qtc.?S..(doc_width, doc_height))
 
 

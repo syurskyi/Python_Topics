@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ (pyqtSignal, QPointF, QPropertyAnimation, QRect,
+____ ?.?C.. ______ (pS.., QPointF, QPropertyAnimation, QRect,
         QRectF, QState, QStateMachine, __)
 ____ ?.?G.. ______ QPixmap
 ____ ?.?W.. ______ (?A.., QGraphicsScene, QGraphicsView,
@@ -52,7 +52,7 @@ ______ appchooser_rc
 
 
 c_ Pixmap(QGraphicsWidget):
-    c__ _ pyqtSignal()
+    c__ _ pS..()
 
     ___  -   pix, parent_None):
         super(Pixmap, self). - (parent)
@@ -64,7 +64,7 @@ c_ Pixmap(QGraphicsWidget):
         painter.drawPixmap(QPointF(), p)
 
     ___ mousePressEvent  ev):
-        c__.emit()
+        c__.e..()
 
     ___ setGeometry  rect):
         super(Pixmap, self).setGeometry(rect)

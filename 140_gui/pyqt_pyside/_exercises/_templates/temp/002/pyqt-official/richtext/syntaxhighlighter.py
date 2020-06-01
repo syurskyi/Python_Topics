@@ -91,7 +91,7 @@ c_ MainWindow ?MW..
     ___ setupEditor
         font _ QFont()
         font.setFamily('Courier')
-        font.setFixedPitch(True)
+        font.setFixedPitch( st.
         font.setPointSize(10)
 
         editor _ ?TE..()
@@ -155,7 +155,7 @@ c_ Highlighter(QSyntaxHighlighter):
         highlightingRules.ap..((QRegExp("\".*\""), quotationFormat))
 
         functionFormat _ QTextCharFormat()
-        functionFormat.setFontItalic(True)
+        functionFormat.setFontItalic( st.
         functionFormat.setForeground(__.blue)
         highlightingRules.ap..((QRegExp("\\b[A-Za-z0-9_]+(?=\\()"),
                 functionFormat))

@@ -119,7 +119,7 @@ c_ MainWindow ?MW..
                 "document interface applications using Qt.")
 
     ___ documentWasModified
-        setWindowModified(True)
+        setWindowModified( st.
 
     ___ init
         setAttribute(__.WA_DeleteOnClose)

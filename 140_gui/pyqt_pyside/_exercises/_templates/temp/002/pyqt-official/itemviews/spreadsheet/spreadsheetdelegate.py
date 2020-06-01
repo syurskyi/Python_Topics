@@ -50,7 +50,7 @@ c_ SpreadSheetDelegate(QItemDelegate):
         __ index.column() == 1:
             editor _ ?DTE..(parent)
             editor.setDisplayFormat(parent().currentDateFormat)
-            editor.setCalendarPopup(True)
+            editor.setCalendarPopup( st.
             r_ editor
 
         editor _ QLineEdit(parent)
@@ -63,13 +63,13 @@ c_ SpreadSheetDelegate(QItemDelegate):
 
         autoComplete _ QCompleter(allStrings)
         editor.setCompleter(autoComplete)
-        editor.editingFinished.c..(commitAndCloseEditor)
+        editor.eF__.c..(commitAndCloseEditor)
         r_ editor
 
     ___ commitAndCloseEditor
         editor _ sender()
-        commitData.emit(editor)
-        closeEditor.emit(editor, QItemDelegate.NoHint)
+        commitData.e..(editor)
+        closeEditor.e..(editor, QItemDelegate.NoHint)
 
     ___ setEditorData  editor, index):
         __ isinstance(editor, QLineEdit):

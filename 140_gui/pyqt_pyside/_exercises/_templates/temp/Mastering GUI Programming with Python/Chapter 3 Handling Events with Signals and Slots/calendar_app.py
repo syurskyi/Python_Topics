@@ -8,69 +8,69 @@ c_ CategoryWindow ?.?W..
 
     # when submitted, we'll emit this signal
     # with the entered string
-    submitted _ qtc.pyqtSignal(str)
+    submitted _ qtc.pS.. st.
 
     ___  -
-        s_. - (N.., modal_True)
+        s_. - N.. modal_ st.
 
         sL.. ?.?VBL..
-        layout().aW..(
+        l__ .aW..
             ?.?L..('Please enter a new catgory name:')
             )
-        category_entry _ qtw.?LE..
-        layout().aW..(category_entry)
+        category_entry _ ?.?LE..
+        la__ .aW.. ?
 
-        submit_btn _ qtw.?PB..(
+        submit_btn _ ?.?PB..
             'Submit',
-            c___self.onSubmit
+            c___self.oS..
+            
+        la__ .aW.. ?
+        cancel_btn _ ?.?PB..
+            Cancel
+            c___self.d..
             )
-        layout().aW..(submit_btn)
-        cancel_btn _ qtw.?PB..(
-            'Cancel',
-            c___self.destroy
-            )
-        layout().aW..(cancel_btn)
+        la__ .aW.. ?
         s..
 
-    @qtc.pyqtSlot()
+    ??.?
     ___ onSubmit 
-        __ category_entry.t__
-            submitted.emit(category_entry.t__())
-        close()
+        __ c_e_.t__
+            su__.e.. c_e_.t__
+        c..
 
 
 c_ MainWindow ?.?W..
 
-    events _ {}
+    events _   # dict
 
     ___  -
         """MainWindow constructor. """
-        s_. - ()
+        s_. -
         # Configure the window
         sWT..("My Calendar App")
-        r..(800, 600)
+        r.. 800, 600
 
 
         # Create our widgets
         calendar _ ?.?CW..
         event_list _ ?.?LW..
-        event_title _ qtw.?LE..
+        event_title _ ?.?LE..
         event_category _ ?.?CB..
-        event_time _ qtw.QTimeEdit(qtc.QTime(8, 0))
-        allday_check _ ?.?CB..('All Day')
-        event_detail _ ?.?TE..)
-        add_button _ qtw.?PB..('Add/Update')
-        del_button _ qtw.?PB..('Delete')
+        event_time _ ?.?TE..(qtc.?T.. 8, 0
+        allday_check _ ?.?CB.. All Day
+        event_detail _ ?.?TE..
+        add_button _ ?.?PB.. Add/Update
+        del_button _ ?.?PB.. Delete
 
         # Configure some widgets
 
         # Add event categories
-        event_category.aI..(
-            ['Select category…', 'New…', 'Work',
+        e_c_.aI..
+            'Select category…', 'New…', 'Work',
              'Meeting', 'Doctor', 'Family']
-            )
+
         # disable the first category item
-        event_category.model().item(0).sE.. F..
+        e_c_.model().item(0).sE.. F..
 
         # Arrange the widgets
         main_layout _ ?.?HBL..
@@ -96,7 +96,7 @@ c_ MainWindow ?.?W..
         right_layout.aW..(event_form)
         event_form_layout _ ?.?GL..
         event_form_layout.aW..(event_title, 1, 1, 1, 3)
-        event_form_layout.aW..(event_category, 2, 1)
+        event_form_layout.aW..(e_c_, 2, 1)
         event_form_layout.aW..(event_time, 2, 2,)
         event_form_layout.aW..(allday_check, 2, 3)
         event_form_layout.aW..(event_detail, 3, 1, 1, 3)
@@ -131,14 +131,14 @@ c_ MainWindow ?.?W..
         check_delete_btn()
 
         # check for selection of "new…" for category
-        event_category.currentTextChanged.c..(on_category_change)
+        e_c_.currentTextChanged.c..(on_category_change)
 
         s..
 
     ___ clear_form 
         event_title.clear()
-        event_category.setCurrentIndex(0)
-        event_time.setTime(qtc.QTime(8, 0))
+        e_c_.setCurrentIndex(0)
+        event_time.setTime(qtc.?T..(8, 0))
         allday_check.setChecked F..
         event_detail.sPT..('')
 
@@ -163,9 +163,9 @@ c_ MainWindow ?.?W..
 
         event_data _ events.g..(date)[event_number]
 
-        event_category.setCurrentText(event_data['category'])
+        e_c_.setCurrentText(event_data['category'])
         __ event_data['time'] __ N..:
-            allday_check.setChecked(True)
+            allday_check.setChecked( st.
         ____
             event_time.setTime(event_data['time'])
         event_title.sT..(event_data['title'])
@@ -173,7 +173,7 @@ c_ MainWindow ?.?W..
 
     ___ save_event 
         event _ {
-            'category': event_category.currentText(),
+            'category': e_c_.currentText(),
             'time': (
                 N..
                 __ allday_check.isChecked()
@@ -193,7 +193,7 @@ c_ MainWindow ?.?W..
         ____
             event_list[event_number] _ event
 
-        event_list.sort(key_lambda x: x['time'] or qtc.QTime(0, 0))
+        event_list.sort(key_lambda x: x['time'] or qtc.?T..(0, 0))
         events[date] _ event_list
         populate_list()
 
@@ -212,11 +212,11 @@ c_ MainWindow ?.?W..
         __ t__ == 'New…':
             dialog _ CategoryWindow()
             dialog.submitted.c..(add_category)
-            event_category.setCurrentIndex(0)
+            e_c_.setCurrentIndex(0)
 
     ___ add_category  category):
-        event_category.aI..(category)
-        event_category.setCurrentText(category)
+        e_c_.aI..(category)
+        e_c_.setCurrentText(category)
 
 __ ______ __ ______
     app _ qtw.?A..(___.a..

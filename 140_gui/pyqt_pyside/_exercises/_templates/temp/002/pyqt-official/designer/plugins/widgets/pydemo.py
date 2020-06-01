@@ -39,7 +39,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ pyqtProperty, pyqtSignal, pyqtSlot
+____ ?.?C.. ______ pyqtProperty, pS.., pyqtSlot
 ____ ?.?W.. ______ ?A.., ?TE..
 
 
@@ -51,7 +51,7 @@ c_ PyTextViewer(?TE..):
     ___  -   parent_None):
         super(PyTextViewer, self). - (parent)
 
-        setReadOnly(True)
+        setReadOnly( st.
 
         # Initialise the author property by calling it's reset function.
         resetAuthor()
@@ -82,7 +82,7 @@ c_ PyDemo(PyTextViewer):
     # Define the Qt signals as a sequence of C++ function signatures excluding
     # the return type.  These may be connected to other signals or slots in Qt
     # Designer.
-    zoomChanged _ pyqtSignal(int)
+    zoomChanged _ pS..(int)
 
     # Initialise the instance.
     ___  -   parent_None):
@@ -117,7 +117,7 @@ c_ PyDemo(PyTextViewer):
         _zoom _ zoom
 
         # Emit the Qt signal to say that the zoom level has changed.
-        zoomChanged.emit(zoom)
+        zoomChanged.e..(zoom)
 
     # The resetter for the zoom property.
     ___ resetZoom

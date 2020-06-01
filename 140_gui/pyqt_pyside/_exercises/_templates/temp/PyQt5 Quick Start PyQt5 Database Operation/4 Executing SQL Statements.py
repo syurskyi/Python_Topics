@@ -12,7 +12,7 @@ ___ createDB
         query.exec_("insert into person values(2, 'Jack', 'shanghai')")
         query.exec_("insert into person values(3, 'Alex', 'chengdu')")
 
-        db.close()
+        db.c..
 
 __ __name__ == "__main__":
     app _ QCoreApplication(___.a..

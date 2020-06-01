@@ -53,7 +53,7 @@ c_ DomItem(object):
         # Record the item's location within its parent.
         rowNumber _ row
         parentItem _ parent
-        childItems _ {}
+        childItems _   # dict
 
     ___ node
         r_ domNode
@@ -210,7 +210,7 @@ c_ MainWindow ?MW..
                     model _ newModel
                     xmlPath _ filePath
 
-                f.close()
+                f.c..
 
 
 __ ______ __ ______

@@ -44,7 +44,7 @@
 
 ______ math
 
-____ ?.?C.. ______ (pyqtSignal, QLineF, QPointF, QRect, QRectF, ?S..,
+____ ?.?C.. ______ (pS.., QLineF, QPointF, QRect, QRectF, ?S..,
         QSizeF, __)
 ____ ?.?G.. ______ (QBrush, ?C.., QFont, QIcon, QIntValidator, QPainter,
         QPainterPath, QPen, QPixmap, QPolygonF)
@@ -65,7 +65,7 @@ c_ Arrow(QGraphicsLineItem):
 
         myStartItem _ startItem
         myEndItem _ endItem
-        setFlag(QGraphicsItem.ItemIsSelectable, True)
+        setFlag(QGraphicsItem.ItemIsSelectable,  st.
         myColor _ __.black
         setPen(QPen(myColor, 2, __.SolidLine, __.RoundCap,
                 __.RoundJoin))
@@ -148,9 +148,9 @@ c_ Arrow(QGraphicsLineItem):
 
 
 c_ DiagramTextItem(QGraphicsTextItem):
-    lostFocus _ pyqtSignal(QGraphicsTextItem)
+    lostFocus _ pS..(QGraphicsTextItem)
 
-    selectedChange _ pyqtSignal(QGraphicsItem)
+    selectedChange _ pS..(QGraphicsItem)
 
     ___  -   parent_None, scene_None):
         super(DiagramTextItem, self). - (parent, scene)
@@ -160,12 +160,12 @@ c_ DiagramTextItem(QGraphicsTextItem):
 
     ___ itemChange  change, value):
         __ change == QGraphicsItem.ItemSelectedChange:
-            selectedChange.emit
+            selectedChange.e..
         r_ value
 
     ___ focusOutEvent  event):
         setTextInteractionFlags(__.NoTextInteraction)
-        lostFocus.emit
+        lostFocus.e..
         super(DiagramTextItem, self).focusOutEvent(event)
 
     ___ mouseDoubleClickEvent  event):
@@ -211,8 +211,8 @@ c_ DiagramItem(QGraphicsPolygonItem):
                     QPointF(-120, -80)])
 
         setPolygon(myPolygon)
-        setFlag(QGraphicsItem.ItemIsMovable, True)
-        setFlag(QGraphicsItem.ItemIsSelectable, True)
+        setFlag(QGraphicsItem.ItemIsMovable,  st.
+        setFlag(QGraphicsItem.ItemIsSelectable,  st.
 
     ___ removeArrow  arrow):
         ___
@@ -240,7 +240,7 @@ c_ DiagramItem(QGraphicsPolygonItem):
 
     ___ contextMenuEvent  event):
         scene().clearSelection()
-        setSelected(True)
+        setSelected( st.
         myContextMenu.exec_(event.screenPos())
 
     ___ itemChange  change, value):
@@ -254,11 +254,11 @@ c_ DiagramItem(QGraphicsPolygonItem):
 c_ DiagramScene(QGraphicsScene):
     InsertItem, InsertLine, InsertText, MoveItem  _ range(4)
 
-    itemInserted _ pyqtSignal(DiagramItem)
+    itemInserted _ pS..(DiagramItem)
 
-    textInserted _ pyqtSignal(QGraphicsTextItem)
+    textInserted _ pS..(QGraphicsTextItem)
 
-    itemSelected _ pyqtSignal(QGraphicsItem)
+    itemSelected _ pS..(QGraphicsItem)
 
     ___  -   itemMenu, parent_None):
         super(DiagramScene, self). - (parent)
@@ -322,7 +322,7 @@ c_ DiagramScene(QGraphicsScene):
             item.setBrush(myItemColor)
             aI..(item)
             item.setPos(mouseEvent.scenePos())
-            itemInserted.emit(item)
+            itemInserted.e..(item)
         ____ myMode == InsertLine:
             line _ QGraphicsLineItem(QLineF(mouseEvent.scenePos(),
                     mouseEvent.scenePos()))
@@ -338,7 +338,7 @@ c_ DiagramScene(QGraphicsScene):
             aI..(textItem)
             textItem.setDefaultTextColor(myTextColor)
             textItem.setPos(mouseEvent.scenePos())
-            textInserted.emit(textItem)
+            textInserted.e..(textItem)
 
         super(DiagramScene, self).mousePressEvent(mouseEvent)
 
@@ -481,7 +481,7 @@ c_ MainWindow ?MW..
         selectedItem.setZValue(zValue)
 
     ___ itemInserted  item):
-        pointerTypeGroup.button(DiagramScene.MoveItem).setChecked(True)
+        pointerTypeGroup.button(DiagramScene.MoveItem).setChecked( st.
         scene.setMode(pointerTypeGroup.checkedId())
         buttonGroup.button(item.diagramType).setChecked F..
 
@@ -571,7 +571,7 @@ c_ MainWindow ?MW..
                 1, 0)
 
         textButton _ QToolButton()
-        textButton.setCheckable(True)
+        textButton.setCheckable( st.
         buttonGroup.addButton(textButton, InsertTextButton)
         textButton.setIcon(QIcon(QPixmap(':/images/textpointer.png').scaled(30, 30)))
         textButton.setIconSize(?S..(50, 50))
@@ -672,7 +672,7 @@ c_ MainWindow ?MW..
         fontCombo.currentFontChanged.c..(currentFontChanged)
 
         fontSizeCombo _ ?CB()
-        fontSizeCombo.setEditable(True)
+        fontSizeCombo.setEditable( st.
         ___ i __ range(8, 30, 2):
             fontSizeCombo.aI..(str(i))
         validator _ QIntValidator(2, 64, self)
@@ -687,7 +687,7 @@ c_ MainWindow ?MW..
         fontColorToolButton.setIcon(
                 createColorToolButtonIcon(':/images/textpointer.png',
                         __.black))
-        fontColorToolButton.setAutoFillBackground(True)
+        fontColorToolButton.setAutoFillBackground( st.
         fontColorToolButton.c__.c..(textButtonTriggered)
 
         fillColorToolButton _ QToolButton()
@@ -723,11 +723,11 @@ c_ MainWindow ?MW..
         colorToolBar.aW..(lineColorToolButton)
 
         pointerButton _ QToolButton()
-        pointerButton.setCheckable(True)
-        pointerButton.setChecked(True)
+        pointerButton.setCheckable( st.
+        pointerButton.setChecked( st.
         pointerButton.setIcon(QIcon(':/images/pointer.png'))
         linePointerButton _ QToolButton()
-        linePointerButton.setCheckable(True)
+        linePointerButton.setCheckable( st.
         linePointerButton.setIcon(QIcon(':/images/linepointer.png'))
 
         pointerTypeGroup _ QButtonGroup()
@@ -751,7 +751,7 @@ c_ MainWindow ?MW..
         button.sT..(t__)
         button.setIcon(QIcon(image))
         button.setIconSize(?S..(50, 50))
-        button.setCheckable(True)
+        button.setCheckable( st.
         backgroundButtonGroup.addButton(button)
 
         layout _ QGridLayout()
@@ -770,7 +770,7 @@ c_ MainWindow ?MW..
         button _ QToolButton()
         button.setIcon(icon)
         button.setIconSize(?S..(50, 50))
-        button.setCheckable(True)
+        button.setCheckable( st.
         buttonGroup.addButton(button, diagramType)
 
         layout _ QGridLayout()

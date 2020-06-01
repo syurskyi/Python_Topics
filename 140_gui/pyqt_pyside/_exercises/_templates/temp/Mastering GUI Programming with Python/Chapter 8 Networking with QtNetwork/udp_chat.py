@@ -9,8 +9,8 @@ c_ UdpChatInterface(qtc.QObject):
 
     port _ 7777
     delimiter _ '||'
-    received _ qtc.pyqtSignal(str, str)
-    error _ qtc.pyqtSignal(str)
+    received _ qtc.pS..(str, str)
+    error _ qtc.pS.. st.
 
     ___  -   username):
         s_. - ()
@@ -32,7 +32,7 @@ c_ UdpChatInterface(qtc.QObject):
                 # invalid message, ignore
                 continue
             username, message _ raw_message.sp..(delimiter, 1)
-            received.emit(username, message)
+            received.e..(username, message)
 
     ___ on_error  socket_error):
         # Magic to get the enum name
@@ -44,7 +44,7 @@ c_ UdpChatInterface(qtc.QObject):
                  .enumerator(error_index)
                  .valueToKey(socket_error))
         message _ f"There was a network error: {error}"
-        error.emit(message)
+        error.e..(message)
 
     ___ send_message  message):
         """Prepare and send a message"""
@@ -61,13 +61,13 @@ c_ UdpChatInterface(qtc.QObject):
 c_ ChatWindow ?.?W..
     """The form to show and enter chats"""
 
-    submitted _ qtc.pyqtSignal(str)
+    submitted _ qtc.pS.. st.
 
     ___  - 
         s_. - ()
 
         sL..(qtw.QGridLayout())
-        message_view _ ?.?TE..readOnly_True)
+        message_view _ ?.?TE..readOnly_ st.
         layout().aW..(message_view, 1, 1, 1, 2)
         message_entry _ qtw.?LE..
         layout().aW..(message_entry, 2, 1)
@@ -80,7 +80,7 @@ c_ ChatWindow ?.?W..
     ___ send
         message _ message_entry.t__().strip()
         __ message:
-            submitted.emit(message)
+            submitted.e..(message)
             message_entry.clear()
 
 

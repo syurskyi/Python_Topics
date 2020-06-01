@@ -118,7 +118,7 @@ c_ Dialog(QDialog):
         tcpServerConnection.error.c..(displayError)
 
         serverStatusLabel.sT..("Accepted connection")
-        tcpServer.close()
+        tcpServer.c..
 
     ___ startTransfer
         bytesToWrite _ Dialog.TotalBytes - tcpClient.w..(QByteArray(Dialog.PayloadSize, '@'))
@@ -133,8 +133,8 @@ c_ Dialog(QDialog):
         serverStatusLabel.sT..("Received %dMB" % (bytesReceived / (1024 * 1024)))
 
         __ bytesReceived == Dialog.TotalBytes:
-            tcpServerConnection.close()
-            startButton.sE..(True)
+            tcpServerConnection.c..
+            startButton.sE..( st.
             ?A...restoreOverrideCursor()
 
     ___ updateClientProgress  numBytes):
@@ -154,13 +154,13 @@ c_ Dialog(QDialog):
         ?MB...information  "Network error",
                 "The following error occured: %s." % tcpClient.errorString())
 
-        tcpClient.close()
-        tcpServer.close()
+        tcpClient.c..
+        tcpServer.c..
         clientProgressBar.reset()
         serverProgressBar.reset()
         clientStatusLabel.sT..("Client ready")
         serverStatusLabel.sT..("Server ready")
-        startButton.sE..(True)
+        startButton.sE..( st.
         ?A...restoreOverrideCursor()
 
 

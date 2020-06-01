@@ -194,7 +194,7 @@ c_ Window(?W..):
         __ index == 0:
             accessLineEdit.setReadOnly F..
         ____ index == 1:
-            accessLineEdit.setReadOnly(True)
+            accessLineEdit.setReadOnly( st.
 
 
 __ ______ __ ______

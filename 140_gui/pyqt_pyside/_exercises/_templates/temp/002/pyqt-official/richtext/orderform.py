@@ -183,13 +183,13 @@ c_ MainWindow ?MW..
         cursor.insertBlock()
         cursor.insertText(name)
 
-        printAction.sE..(True)
+        printAction.sE..( st.
 
     ___ createSample
         dialog _ DetailsDialog('Dialog with default values', self)
         createLetter('Mr Smith',
                 '12 High Street\nSmall Town\nThis country',
-                dialog.orderItems(), True)
+                dialog.orderItems(),  st.
 
     ___ openDialog
         dialog _ DetailsDialog("Enter Customer Details", self)

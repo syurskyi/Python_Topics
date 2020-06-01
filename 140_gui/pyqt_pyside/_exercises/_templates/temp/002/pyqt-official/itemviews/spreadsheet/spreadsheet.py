@@ -137,10 +137,10 @@ c_ SpreadSheet ?MW..
         printAction.t__.c..(print_)
 
         firstSeparator _ ?A..
-        firstSeparator.setSeparator(True)
+        firstSeparator.setSeparator( st.
 
         secondSeparator _ ?A..
-        secondSeparator.setSeparator(True)
+        secondSeparator.setSeparator( st.
 
     ___ setupMenuBar 
         fileMenu _ mB.. .aM..("&File")
@@ -152,7 +152,7 @@ c_ SpreadSheet ?MW..
             dateFormatGroup.aA..(action)
             dateFormatMenu.aA..(action)
             __ f == currentDateFormat:
-                action.setChecked(True)
+                action.setChecked( st.
                 
         fileMenu.aA..(printAction)
         fileMenu.aA..(exitAction)
@@ -289,7 +289,7 @@ c_ SpreadSheet ?MW..
         cancelButton _ ?PB..("Cancel", addDialog)
         cancelButton.c__.c..(addDialog.reject)
         okButton _ ?PB..("OK", addDialog)
-        okButton.setDefault(True)
+        okButton.setDefault( st.
         okButton.c__.c..(addDialog.accept)
         buttonsLayout _ QHBoxLayout()
         buttonsLayout.addStretch(1)
@@ -412,7 +412,7 @@ c_ SpreadSheet ?MW..
     ___ setupContents 
         titleBackground _ ?C..(__.lightGray)
         titleFont _ table.font()
-        titleFont.setBold(True)
+        titleFont.setBold( st.
         # column 0
         table.setItem(0, 0, SpreadSheetItem("Item"))
         table.item(0, 0).setBackground(titleBackground)

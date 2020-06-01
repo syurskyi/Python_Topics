@@ -78,7 +78,7 @@ c_ ImageDelegate(QItemDelegate):
             comboBox.aI..("Off")
             comboBox.aI..("On")
 
-        comboBox.activated.c..(emitCommitData)
+        comboBox.activated.c..(e..CommitData)
 
         r_ comboBox
 
@@ -97,8 +97,8 @@ c_ ImageDelegate(QItemDelegate):
 
         model.setData(index, comboBox.currentText())
 
-    ___ emitCommitData 
-        commitData.emit(sender())
+    ___ e..CommitData
+        commitData.e..(sender())
 
 
 c_ IconPreviewArea(?W..):
@@ -154,7 +154,7 @@ c_ IconPreviewArea(?W..):
         label.setFrameShape(QFrame.Box)
         label.sSP..(QSizePolicy.E.., QSizePolicy.E..)
         label.setBackgroundRole(?P...Base)
-        label.setAutoFillBackground(True)
+        label.setAutoFillBackground( st.
         label.sMS..(132, 132)
         r_ label
 
@@ -240,7 +240,7 @@ c_ MainWindow ?MW..
         metric_value _ style.pixelMetric(metric)
         button.sT..(label % (metric_value, metric_value))
 
-    ___ changeSize  checked_True):
+    ___ changeSize  checked_ st.:
         __ no. checked:
             r_
 
@@ -422,7 +422,7 @@ c_ MainWindow ?MW..
             action.setData(styleName)
 
         guessModeStateAct _ ?A..("&Guess Image Mode/State", self,
-                checkable_True, checked_True)
+                checkable_True, checked_ st.
 
         aboutAct _ ?A..("&About", self, triggered_self.about)
 

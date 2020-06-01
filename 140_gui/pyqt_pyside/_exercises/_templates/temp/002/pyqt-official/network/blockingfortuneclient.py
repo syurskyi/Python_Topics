@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ (pyqtSignal, QDataStream, QMutex, QMutexLocker,
+____ ?.?C.. ______ (pS.., QDataStream, QMutex, QMutexLocker,
         QThread, QWaitCondition)
 ____ ?.?G.. ______ QIntValidator
 ____ ?.?W.. ______ (?A.., QDialogButtonBox, QGridLayout,
@@ -52,9 +52,9 @@ ____ ?.QtNetwork ______ (QAbstractSocket, QHostAddress, QNetworkInterface,
 
 
 c_ FortuneThread(QThread):
-    newFortune _ pyqtSignal(str)
+    newFortune _ pS.. st.
 
-    error _ pyqtSignal(int, str)
+    error _ pS..(int, str)
 
     ___  -   parent_None):
         super(FortuneThread, self). - (parent)
@@ -94,12 +94,12 @@ c_ FortuneThread(QThread):
             socket.connectToHost(serverName, serverPort)
 
             __ no. socket.waitForConnected(Timeout):
-                error.emit(socket.error(), socket.errorString())
+                error.e..(socket.error(), socket.errorString())
                 r_
 
             w__ socket.bytesAvailable() < 2:
                 __ no. socket.waitForReadyRead(Timeout):
-                    error.emit(socket.error(), socket.errorString())
+                    error.e..(socket.error(), socket.errorString())
                     r_
 
             instr _ QDataStream(socket)
@@ -108,12 +108,12 @@ c_ FortuneThread(QThread):
 
             w__ socket.bytesAvailable() < blockSize:
                 __ no. socket.waitForReadyRead(Timeout):
-                    error.emit(socket.error(), socket.errorString())
+                    error.e..(socket.error(), socket.errorString())
                     r_
 
             mutex.lock()
             fortune _ instr.readQString()
-            newFortune.emit(fortune)
+            newFortune.e..(fortune)
 
             cond.wait(mutex)
             serverName _ hostName
@@ -148,10 +148,10 @@ c_ BlockingClient(?W..):
 
         statusLabel _ QLabel(
                 "This example requires that you run the Fortune Server example as well.")
-        statusLabel.setWordWrap(True)
+        statusLabel.setWordWrap( st.
 
         getFortuneButton _ ?PB..("Get Fortune")
-        getFortuneButton.setDefault(True)
+        getFortuneButton.setDefault( st.
         getFortuneButton.sE.. F..
 
         quitButton _ ?PB..("Quit")
@@ -162,8 +162,8 @@ c_ BlockingClient(?W..):
 
         getFortuneButton.c__.c..(requestNewFortune)
         quitButton.c__.c..(close)
-        hostLineEdit.textChanged.c..(enableGetFortuneButton)
-        portLineEdit.textChanged.c..(enableGetFortuneButton)
+        hostLineEdit.tC...c..(enableGetFortuneButton)
+        portLineEdit.tC...c..(enableGetFortuneButton)
         thread.newFortune.c..(showFortune)
         thread.error.c..(displayError)
 
@@ -191,7 +191,7 @@ c_ BlockingClient(?W..):
 
         currentFortune _ nextFortune
         statusLabel.sT..(currentFortune)
-        getFortuneButton.sE..(True)
+        getFortuneButton.sE..( st.
 
     ___ displayError  socketError, message):
         __ socketError == QAbstractSocket.HostNotFoundError:
@@ -207,7 +207,7 @@ c_ BlockingClient(?W..):
             ?MB...information  "Blocking Fortune Client",
                     "The following error occurred: %s." % message)
 
-        getFortuneButton.sE..(True)
+        getFortuneButton.sE..( st.
 
     ___ enableGetFortuneButton
         getFortuneButton.sE..(hostLineEdit.t__() !_ '' and

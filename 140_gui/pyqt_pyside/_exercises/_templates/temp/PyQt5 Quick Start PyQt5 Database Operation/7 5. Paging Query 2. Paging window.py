@@ -28,7 +28,7 @@ c_ DataGrid(?W..):
         pageRecordCount _ 5
 
     ___ initUI 
-        tableView.horizontalHeader().setStretchLastSection(True)
+        tableView.horizontalHeader().setStretchLastSection( st.
         tableView.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
         layout.aW..(tableView)
 
@@ -53,7 +53,7 @@ c_ DataGrid(?W..):
         r..(600, 300)
 
     ___ closeEvent  event):
-        db.close()
+        db.c..
 
 __ __name__ == "__main__":
     app _ ?A..(___.a..

@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ pyqtSignal, __
+____ ?.?C.. ______ pS.., __
 ____ ?.?W.. ______ (?A.., QBoxLayout, QCheckBox, ?CB,
         QDial, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QScrollBar,
         QSlider, SB.., QStackedWidget, ?W..)
@@ -50,7 +50,7 @@ ____ ?.?W.. ______ (?A.., QBoxLayout, QCheckBox, ?CB,
 
 c_ SlidersGroup(QGroupBox):
 
-    valueChanged _ pyqtSignal(int)
+    valueChanged _ pS..(int)
 
     ___  -   orientation, title, parent_None):
         super(SlidersGroup, self). - (title, parent)

@@ -157,15 +157,15 @@ ___ main(args):
     table _ QTableView()
     table.sM..(data)
     table.setSelectionModel(selections)
-    table.horizontalHeader().setSectionsMovable(True)
-    table.verticalHeader().setSectionsMovable(True)
+    table.horizontalHeader().setSectionsMovable( st.
+    table.verticalHeader().setSectionsMovable( st.
     # Set StaticContents to enable minimal repaints on resizes.
     table.viewport().setAttribute(__.WA_StaticContents)
     page.aW..(table)
     tree _ ?TV..
     tree.sM..(data)
     tree.setSelectionModel(selections)
-    tree.setUniformRowHeights(True)
+    tree.setUniformRowHeights( st.
     tree.header().setStretchLastSection F..
     tree.viewport().setAttribute(__.WA_StaticContents)
     # Disable the focus rect to get minimal repaints when scrolling on Mac.

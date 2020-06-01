@@ -63,7 +63,7 @@ c_ Guide(object):
             nextGuide _ self
             startLength _ 0
 
-    ___ setScale  scaleX, scaleY, all_True):
+    ___ setScale  scaleX, scaleY, all_ st.:
         scaleX _ scaleX
         scaleY _ scaleY
 
@@ -74,7 +74,7 @@ c_ Guide(object):
                 next.scaleY _ scaleY
                 next _ next.nextGuide
 
-    ___ setFence  fence, all_True):
+    ___ setFence  fence, all_ st.:
         fence _ fence
 
         __ al.:

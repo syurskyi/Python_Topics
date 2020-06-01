@@ -201,7 +201,7 @@ c_ PreviewForm(QDialog):
 
         textEdit _ ?TE..()
         textEdit.setLineWrapMode(?TE...NoWrap)
-        textEdit.setReadOnly(True)
+        textEdit.setReadOnly( st.
 
         buttonBox _ QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
 

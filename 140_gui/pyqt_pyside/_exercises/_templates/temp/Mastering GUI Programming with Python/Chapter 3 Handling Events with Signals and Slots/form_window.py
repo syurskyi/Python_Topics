@@ -5,7 +5,7 @@ ____ ? ______ ?C.. __ qtc
 
 c_ FormWindow ?.?W..
 
-    submitted _ qtc.pyqtSignal([str], [int, str])
+    submitted _ qtc.pS..([str], [int, str])
 
     ___  -
         s_. - ()
@@ -20,10 +20,10 @@ c_ FormWindow ?.?W..
     ___ onSubmit
         __ edit.t__().isdigit
             t__ _ edit.t__()
-            submitted[int, str].emit(int(t__), t__)
+            submitted[int, str].e..(int(t__), t__)
         ____
-            submitted[str].emit(edit.t__())
-        close()
+            submitted[str].e..(edit.t__())
+        c..
 
 c_ MainWindow ?.?W..
 
@@ -37,7 +37,7 @@ c_ MainWindow ?.?W..
         layout().aW..(change)
         s..
 
-    @qtc.pyqtSlot()
+    ??.?
     ___ onChange
         formwindow _ FormWindow()
         #self.formwindow.submitted.connect(self.label.setText)
@@ -45,7 +45,7 @@ c_ MainWindow ?.?W..
         formwindow.submitted[int, str].c..(onSubmittedIntStr)
         formwindow.s..
 
-    @qtc.pyqtSlot(str)
+    @qtc.pyqtSlot st.
     ___ onSubmittedStr  string):
         label.sT..(string)
 

@@ -78,7 +78,7 @@ c_ Calculator(?W..):
         waitingForOperand _ True
 
         display _ QLineEdit('0')
-        display.setReadOnly(True)
+        display.setReadOnly( st.
         display.setAlignment(__.AlignRight)
         display.setMaxLength(15)
 

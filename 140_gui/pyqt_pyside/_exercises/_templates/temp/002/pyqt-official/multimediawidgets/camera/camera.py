@@ -244,17 +244,17 @@ c_ Camera ?MW..
         cameraDevice _ QByteArray()
 
         videoDevicesGroup _ QActionGroup
-        videoDevicesGroup.setExclusive(True)
+        videoDevicesGroup.setExclusive( st.
 
         ___ deviceName __ QCamera.availableDevices
             description _ QCamera.deviceDescription(deviceName)
             videoDeviceAction _ ?A..(description, videoDevicesGroup)
-            videoDeviceAction.setCheckable(True)
+            videoDeviceAction.setCheckable( st.
             videoDeviceAction.setData(deviceName)
 
             __ cameraDevice.isEmpty
                 cameraDevice _ deviceName
-                videoDeviceAction.setChecked(True)
+                videoDeviceAction.setChecked( st.
 
             ui.menuDevices.aA..(videoDeviceAction)
 
@@ -440,28 +440,28 @@ c_ Camera ?MW..
     ___ updateCameraState  state):
         __ state == QCamera.ActiveState:
             ui.actionStartCamera.sE.. F..
-            ui.actionStopCamera.sE..(True)
-            ui.captureWidget.sE..(True)
-            ui.actionSettings.sE..(True)
+            ui.actionStopCamera.sE..( st.
+            ui.captureWidget.sE..( st.
+            ui.actionSettings.sE..( st.
         ____ state __ (QCamera.UnloadedState, QCamera.LoadedState):
-            ui.actionStartCamera.sE..(True)
+            ui.actionStartCamera.sE..( st.
             ui.actionStopCamera.sE.. F..
             ui.captureWidget.sE.. F..
             ui.actionSettings.sE.. F..
 
     ___ updateRecorderState  state):
         __ state == QMediaRecorder.StoppedState:
-            ui.recordButton.sE..(True)
-            ui.pauseButton.sE..(True)
+            ui.recordButton.sE..( st.
+            ui.pauseButton.sE..( st.
             ui.stopButton.sE.. F..
         ____ state == QMediaRecorder.PausedState:
-            ui.recordButton.sE..(True)
+            ui.recordButton.sE..( st.
             ui.pauseButton.sE.. F..
-            ui.stopButton.sE..(True)
+            ui.stopButton.sE..( st.
         ____ state == QMediaRecorder.RecordingState:
             ui.recordButton.sE.. F..
-            ui.pauseButton.sE..(True)
-            ui.stopButton.sE..(True)
+            ui.pauseButton.sE..( st.
+            ui.stopButton.sE..( st.
 
     ___ setExposureCompensation  index):
         camera.exposure().setExposureCompensation(index * 0.5)
@@ -489,7 +489,7 @@ c_ Camera ?MW..
         isCapturingImage _ False
 
         __ applicationExiting:
-            close()
+            c..
 
     ___ closeEvent  event):
         __ isCapturingImage:

@@ -56,7 +56,7 @@ c_ DragWidget(QFrame):
 
         sMS..(200, 200)
         setFrameStyle(QFrame.Sunken | QFrame.StyledPanel)
-        setAcceptDrops(True)
+        setAcceptDrops( st.
 
         boatIcon _ QLabel
         boatIcon.setPixmap(QPixmap(':/images/boat.png'))
@@ -139,7 +139,7 @@ c_ DragWidget(QFrame):
         child.setPixmap(tempPixmap)
 
         __ drag.exec_(__.CopyAction | __.MoveAction, __.CopyAction) == __.MoveAction:
-            child.close()
+            child.c..
         ____
             child.s..
             child.setPixmap(pixmap)

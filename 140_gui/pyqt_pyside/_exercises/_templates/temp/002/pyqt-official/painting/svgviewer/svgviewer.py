@@ -72,35 +72,35 @@ c_ MainWindow ?MW..
         viewMenu _ QMenu("&View", self)
         backgroundAction _ viewMenu.aA..("&Background")
         backgroundAction.sE.. F..
-        backgroundAction.setCheckable(True)
+        backgroundAction.setCheckable( st.
         backgroundAction.setChecked F..
         backgroundAction.toggled.c..(view.setViewBackground)
 
         outlineAction _ viewMenu.aA..("&Outline")
         outlineAction.sE.. F..
-        outlineAction.setCheckable(True)
-        outlineAction.setChecked(True)
+        outlineAction.setCheckable( st.
+        outlineAction.setChecked( st.
         outlineAction.toggled.c..(view.setViewOutline)
 
         mB.. .aM..(viewMenu)
 
         rendererMenu _ QMenu("&Renderer", self)
         nativeAction _ rendererMenu.aA..("&Native")
-        nativeAction.setCheckable(True)
-        nativeAction.setChecked(True)
+        nativeAction.setCheckable( st.
+        nativeAction.setChecked( st.
 
         __ QGLFormat.hasOpenGL
             glAction _ rendererMenu.aA..("&OpenGL")
-            glAction.setCheckable(True)
+            glAction.setCheckable( st.
 
         imageAction _ rendererMenu.aA..("&Image")
-        imageAction.setCheckable(True)
+        imageAction.setCheckable( st.
 
         __ QGLFormat.hasOpenGL
             rendererMenu.addSeparator()
             highQualityAntialiasingAction _ rendererMenu.aA..("&High Quality Antialiasing")
             highQualityAntialiasingAction.sE.. F..
-            highQualityAntialiasingAction.setCheckable(True)
+            highQualityAntialiasingAction.setCheckable( st.
             highQualityAntialiasingAction.setChecked F..
             highQualityAntialiasingAction.toggled.c..(view.setHighQualityAntialiasing)
 
@@ -142,8 +142,8 @@ c_ MainWindow ?MW..
                 currentPath _ path
                 sWT..("%s - SVGViewer" % currentPath)
 
-            outlineAction.sE..(True)
-            backgroundAction.sE..(True)
+            outlineAction.sE..( st.
+            backgroundAction.sE..( st.
 
             r..(view.sH..() + ?S..(80, 80 + mB.. .height()))
 
@@ -155,7 +155,7 @@ c_ MainWindow ?MW..
             view.setRenderer(SvgView.Native)
         ____ action == glAction:
             __ QGLFormat.hasOpenGL
-                highQualityAntialiasingAction.sE..(True)
+                highQualityAntialiasingAction.sE..( st.
                 view.setRenderer(SvgView.OpenGL)
         ____ action == imageAction:
             view.setRenderer(SvgView.Image)
@@ -228,7 +228,7 @@ c_ SvgView(QGraphicsView):
 
         outlineItem _ QGraphicsRectItem(svgItem.boundingRect())
         outline _ QPen(__.black, 2, __.DashLine)
-        outline.setCosmetic(True)
+        outline.setCosmetic( st.
         outlineItem.setPen(outline)
         outlineItem.setBrush(QBrush(__.NoBrush))
         outlineItem.setVisible(drawOutline)

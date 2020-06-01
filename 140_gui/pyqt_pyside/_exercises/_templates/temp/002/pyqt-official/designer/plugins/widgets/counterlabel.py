@@ -23,7 +23,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 """
 
-____ ?.?C.. ______ pyqtProperty, pyqtSignal, pyqtSlot, QRectF, ?S.., __
+____ ?.?C.. ______ pyqtProperty, pS.., pyqtSlot, QRectF, ?S.., __
 ____ ?.?G.. ______ QFont, QFontMetricsF, QPainter
 ____ ?.?W.. ______ ?A.., ?W..
 
@@ -38,7 +38,7 @@ c_ CounterLabel(?W..):
 
     # We define two signals that are used to indicate changes to the status
     # of the widget.
-    valueChanged _ pyqtSignal((int, ), (str, ))
+    valueChanged _ pS..((int, ), (str, ))
 
     ___  -   parent_None):
 
@@ -148,8 +148,8 @@ c_ CounterLabel(?W..):
         __ no. _minimum <_ value <_ _maximum:
             r_
         _value _ value
-        valueChanged[int].emit(value + _offset)
-        valueChanged[str].emit(str(value + _offset))
+        valueChanged[int].e..(value + _offset)
+        valueChanged[str].e..(str(value + _offset))
         reposition()
 
     value _ pyqtProperty(int, getValue, setValue)

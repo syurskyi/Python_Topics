@@ -43,7 +43,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QEventLoop, QTime
+____ ?.?C.. ______ QEventLoop, ?T..
 ____ ?.?W.. ______ ?A.., ?MB..
 
 ____ colors ______ Colors
@@ -52,7 +52,7 @@ ____ menumanager ______ MenuManager
 
 
 ___ artisticSleep(sleepTime):
-    time _ QTime()
+    time _ ?T..()
     time.restart()
     w__ time.elapsed() < sleepTime:
         ?A...processEvents(QEventLoop.AllEvents, 50)
@@ -80,7 +80,7 @@ __ ______ __ ______
     __ Colors.fullscreen:
         mainWindow.showFullScreen()
     ____
-        mainWindow.enableMask(True)
+        mainWindow.enableMask( st.
         mainWindow.s..
 
     artisticSleep(500)

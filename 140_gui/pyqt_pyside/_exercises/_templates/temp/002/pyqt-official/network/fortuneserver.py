@@ -124,7 +124,7 @@ c_ Server(QDialog):
         __ no. tcpServer.listen
             ?MB...critical  "Fortune Server",
                     "Unable to start the server: %s." % tcpServer.errorString())
-            close()
+            c..
             r_
 
         ___ ipAddress __ QNetworkInterface.allAddresses

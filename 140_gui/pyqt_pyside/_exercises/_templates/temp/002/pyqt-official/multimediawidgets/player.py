@@ -42,9 +42,9 @@
 #############################################################################
 
 
-____ ?.?C.. ______ (pyqtSignal, pyqtSlot, Q_ARG, QAbstractItemModel,
+____ ?.?C.. ______ (pS.., pyqtSlot, Q_ARG, QAbstractItemModel,
         QFileInfo, qFuzzyCompare, QMetaObject, QModelIndex, QObject, __,
-        QThread, QTime, QUrl)
+        QThread, ?T.., QUrl)
 ____ ?.?G.. ______ ?C.., qGray, QImage, QPainter, ?P..
 ____ ?.QtMultimedia ______ (QAbstractVideoBuffer, QMediaContent,
         QMediaMetaData, QMediaPlayer, QMediaPlaylist, QVideoFrame, QVideoProbe)
@@ -153,20 +153,20 @@ c_ PlaylistModel(QAbstractItemModel):
         endRemoveRows()
 
     ___ changeItems  start, end):
-        dataChanged.emit(index(start, 0),
+        dataChanged.e..(index(start, 0),
                 index(end, ColumnCount))
 
 
 c_ PlayerControls(?W..):
 
-    play _ pyqtSignal()
-    pause _ pyqtSignal()
-    stop _ pyqtSignal()
-    next _ pyqtSignal()
-    previous _ pyqtSignal()
-    changeVolume _ pyqtSignal(int)
-    changeMuting _ pyqtSignal(bool)
-    changeRate _ pyqtSignal(float)
+    play _ pS..()
+    pause _ pS..()
+    stop _ pS..()
+    next _ pS..()
+    previous _ pS..()
+    changeVolume _ pS..(int)
+    changeMuting _ pS..(bool)
+    changeRate _ pS..(float)
 
     ___  -   parent_None):
         super(PlayerControls, self). - (parent)
@@ -226,11 +226,11 @@ c_ PlayerControls(?W..):
                 playButton.setIcon(
                         style().standardIcon(QStyle.SP_MediaPlay))
             ____ state == QMediaPlayer.PlayingState:
-                stopButton.sE..(True)
+                stopButton.sE..( st.
                 playButton.setIcon(
                         style().standardIcon(QStyle.SP_MediaPause))
             ____ state == QMediaPlayer.PausedState:
-                stopButton.sE..(True)
+                stopButton.sE..( st.
                 playButton.setIcon(
                         style().standardIcon(QStyle.SP_MediaPlay))
 
@@ -253,12 +253,12 @@ c_ PlayerControls(?W..):
 
     ___ playClicked
         __ playerState __ (QMediaPlayer.StoppedState, QMediaPlayer.PausedState):
-            play.emit()
+            play.e..()
         ____ playerState == QMediaPlayer.PlayingState:
-            pause.emit()
+            pause.e..()
 
     ___ muteClicked
-        changeMuting.emit(no. playerMuted)
+        changeMuting.e..(no. playerMuted)
 
     ___ playbackRate
         r_ rateBox.itemData(rateBox.currentIndex())
@@ -273,12 +273,12 @@ c_ PlayerControls(?W..):
         rateBox.setCurrentIndex(rateBox.count() - 1)
 
     ___ updateRate
-        changeRate.emit(playbackRate())
+        changeRate.e..(playbackRate())
 
 
 c_ FrameProcessor(QObject):
 
-    histogramReady _ pyqtSignal(list)
+    histogramReady _ pS..(list)
 
     @pyqtSlot(QVideoFrame, int)
     ___ processFrame  frame, levels):
@@ -316,7 +316,7 @@ c_ FrameProcessor(QObject):
 
             frame.unmap()
 
-        histogramReady.emit(histogram)
+        histogramReady.e..(histogram)
 
 
 c_ HistogramWidget(?W..):
@@ -377,7 +377,7 @@ c_ HistogramWidget(?W..):
 
 c_ Player(?W..):
 
-    fullScreenChanged _ pyqtSignal(bool)
+    fullScreenChanged _ pS..(bool)
 
     ___  -   playlist, parent_None):
         super(Player, self). - (parent)
@@ -452,7 +452,7 @@ c_ Player(?W..):
         player.mutedChanged.c..(controls.setMuted)
 
         fullScreenButton _ ?PB..("FullScreen")
-        fullScreenButton.setCheckable(True)
+        fullScreenButton.setCheckable( st.
 
         colorButton _ ?PB..("Color Options...")
         colorButton.sE.. F..
@@ -586,7 +586,7 @@ c_ Player(?W..):
                     fullScreenButton.setChecked)
 
             __ fullScreenButton.isChecked
-                videoWidget.setFullScreen(True)
+                videoWidget.setFullScreen( st.
         ____
             fullScreenButton.c__.disconnect(
                     videoWidget.setFullScreen)
@@ -619,9 +619,9 @@ c_ Player(?W..):
     ___ updateDurationInfo  currentInfo):
         duration _ duration
         __ currentInfo or duration:
-            currentTime _ QTime((currentInfo/3600)%60, (currentInfo/60)%60,
+            currentTime _ ?T..((currentInfo/3600)%60, (currentInfo/60)%60,
                     currentInfo%60, (currentInfo*1000)%1000)
-            totalTime _ QTime((duration/3600)%60, (duration/60)%60,
+            totalTime _ ?T..((duration/3600)%60, (duration/60)%60,
                     duration%60, (duration*1000)%1000);
 
             format _ 'hh:mm:ss' __ duration > 3600 else 'mm:ss'

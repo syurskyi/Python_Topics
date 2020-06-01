@@ -23,7 +23,7 @@ c_ Ui_AudioDevicesBase(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(scrollArea.sizePolicy().hasHeightForWidth())
         scrollArea.sSP..(sizePolicy)
-        scrollArea.setWidgetResizable(True)
+        scrollArea.setWidgetResizable( st.
         scrollArea.setObjectName("scrollArea")
         scrollAreaWidgetContents _ ?W...?W..
         scrollAreaWidgetContents.setGeometry(?C...QRect(0, 0, 659, 558))
@@ -134,7 +134,7 @@ c_ Ui_AudioDevicesBase(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(label.sizePolicy().hasHeightForWidth())
         label.sSP..(sizePolicy)
-        label.setWordWrap(True)
+        label.setWordWrap( st.
         label.setObjectName("label")
         gridLayout.aW..(label, 16, 0, 1, 3)
         actualCodecLabel _ ?W...QLabel(testFormatTab)

@@ -16,8 +16,8 @@ c_ Ui_Form(object):
         verticalLayout_2 _ ?W...QVBoxLayout(Form)
         verticalLayout_2.setObjectName("verticalLayout_2")
         groupBox _ ?W...QGroupBox(Form)
-        groupBox.setFlat(True)
-        groupBox.setCheckable(True)
+        groupBox.setFlat( st.
+        groupBox.setCheckable( st.
         groupBox.setObjectName("groupBox")
         gridLayout _ ?W...QGridLayout(groupBox)
         gridLayout.setObjectName("gridLayout")
@@ -50,8 +50,8 @@ c_ Ui_Form(object):
         gridLayout.aW..(dateTimeEdit, 1, 1, 1, 1)
         verticalLayout_2.aW..(groupBox)
         groupBox_2 _ ?W...QGroupBox(Form)
-        groupBox_2.setFlat(True)
-        groupBox_2.setCheckable(True)
+        groupBox_2.setFlat( st.
+        groupBox_2.setCheckable( st.
         groupBox_2.setObjectName("groupBox_2")
         horizontalLayout_2 _ ?W...QHBoxLayout(groupBox_2)
         horizontalLayout_2.setObjectName("horizontalLayout_2")

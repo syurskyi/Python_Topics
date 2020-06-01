@@ -218,7 +218,7 @@ c_ Window(?W..):
 
         rotationAngleSpinBox _ SB..()
         rotationAngleSpinBox.setRange(0, 359)
-        rotationAngleSpinBox.setWrapping(True)
+        rotationAngleSpinBox.setWrapping( st.
         rotationAngleSpinBox.setSuffix(u'\N{DEGREE SIGN}')
 
         rotationAngleLabel _ QLabel("&Rotation Angle:")

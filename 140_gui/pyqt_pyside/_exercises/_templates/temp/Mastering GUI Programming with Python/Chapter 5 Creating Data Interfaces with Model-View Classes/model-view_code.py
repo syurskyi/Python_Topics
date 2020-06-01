@@ -8,7 +8,7 @@ ____ ? ______ ?C.. __ qtc
 
 c_ Model(qtc.QObject):
 
-    error _ qtc.pyqtSignal(str)
+    error _ qtc.pS.. st.
 
     ___ save  filename, content):
         print("save_called")
@@ -24,12 +24,12 @@ c_ Model(qtc.QObject):
             _____ Exception __ e:
                 error _ f'Cannot write file: {e}'
         __ error:
-            error.emit(error)
+            error.e..(error)
 
 
 c_ View ?.?W..
 
-    submitted _ qtc.pyqtSignal(str, str)
+    submitted _ qtc.pS..(str, str)
 
     ___  -
         s_. - ()
@@ -47,7 +47,7 @@ c_ View ?.?W..
     ___ submit 
         filename _ filename.t__()
         filecontent _ filecontent.toPlainText()
-        submitted.emit(filename, filecontent)
+        submitted.e..(filename, filecontent)
 
     ___ show_error  error):
         qtw.?MB...critical(N.., 'Error', error)

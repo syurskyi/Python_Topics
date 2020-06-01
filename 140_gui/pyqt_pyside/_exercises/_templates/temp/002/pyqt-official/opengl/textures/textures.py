@@ -44,7 +44,7 @@
 
 ______ ___
 
-____ ?.?C.. ______ pyqtSignal, QFileInfo, QPoint, ?S.., __, QTimer
+____ ?.?C.. ______ pS.., QFileInfo, QPoint, ?S.., __, QTimer
 ____ ?.?G.. ______ (?C.., QImage, QMatrix4x4, QOpenGLShader,
         QOpenGLShaderProgram, QOpenGLTexture, QOpenGLVersionProfile,
         QSurfaceFormat)
@@ -53,7 +53,7 @@ ____ ?.?W.. ______ ?A.., QGridLayout, QOpenGLWidget, ?W..
 
 c_ GLWidget(QOpenGLWidget):
 
-    c__ _ pyqtSignal()
+    c__ _ pS..()
 
     PROGRAM_VERTEX_ATTRIBUTE, PROGRAM_TEXCOORD_ATTRIBUTE _ range(2)
 
@@ -189,7 +189,7 @@ void main(void)
         lastPos _ event.pos()
 
     ___ mouseReleaseEvent  event):
-        c__.emit()
+        c__.e..()
 
     ___ makeObject
         textures _   # list

@@ -63,7 +63,7 @@ c_ ColorListEditor(?CB):
     ___ sC..  color):
         setCurrentIndex(findData(color, __.DecorationRole))
 
-    color _ pyqtProperty(?C.., getColor, sC.., user_True)
+    color _ pyqtProperty(?C.., getColor, sC.., user_ st.
 
     ___ populateList
         ___ i, colorName __ en..(?C...colorNames()):
@@ -107,7 +107,7 @@ c_ Window(?W..):
             table.setItem(i, 1, colorItem)
 
         table.resizeColumnToContents(0)
-        table.horizontalHeader().setStretchLastSection(True)
+        table.horizontalHeader().setStretchLastSection( st.
 
         layout _ QGridLayout()
         layout.aW..(table, 0, 0)

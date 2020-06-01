@@ -190,7 +190,7 @@ c_ MainWindow ?MW..
                 triggered_self.bold)
 
         boldFont _ boldAct.font()
-        boldFont.setBold(True)
+        boldFont.setBold( st.
         boldAct.setFont(boldFont)
 
         italicAct _ ?A..("&Italic", self, checkable_True,
@@ -198,7 +198,7 @@ c_ MainWindow ?MW..
                 triggered_self.italic)
 
         italicFont _ italicAct.font()
-        italicFont.setItalic(True)
+        italicFont.setItalic( st.
         italicAct.setFont(italicFont)
 
         setLineSpacingAct _ ?A..("Set &Line Spacing...", self,
@@ -239,7 +239,7 @@ c_ MainWindow ?MW..
         alignmentGroup.aA..(rightAlignAct)
         alignmentGroup.aA..(justifyAct)
         alignmentGroup.aA..(centerAct)
-        leftAlignAct.setChecked(True)
+        leftAlignAct.setChecked( st.
 
     ___ createMenus
         fileMenu _ mB.. .aM..("&File")

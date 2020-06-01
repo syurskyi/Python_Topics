@@ -23,7 +23,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 """
 
-____ ?.?C.. ______ pyqtSignal, QEvent, __
+____ ?.?C.. ______ pS.., QEvent, __
 ____ ?.?W.. ______ ?A.., QLineEdit
 
 
@@ -34,7 +34,7 @@ c_ PythonConsoleWidget(QLineEdit):
     to other components via a custom signal.
     """
     
-    pythonOutput _ pyqtSignal(str)
+    pythonOutput _ pS.. st.
     
     ___  -   parent_None):
     
@@ -77,7 +77,7 @@ c_ PythonConsoleWidget(QLineEdit):
             result _ str(eval(str(expression)))
             
             # Emit the result of the evaluated expression.
-            pythonOutput.emit(result)
+            pythonOutput.e..(result)
 
             # Clear the line edit, append the successful expression to the
             # history, and update the current command index.

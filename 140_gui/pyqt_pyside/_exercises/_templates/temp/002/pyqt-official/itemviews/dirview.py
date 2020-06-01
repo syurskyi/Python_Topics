@@ -84,7 +84,7 @@ __ rootPath __ no. N..:
 # Demonstrating look and feel features.
 tree.setAnimated F..
 tree.setIndentation(20)
-tree.setSortingEnabled(True)
+tree.setSortingEnabled( st.
 
 availableSize _ ?A...desktop().availableGeometry(tree).size()
 tree.r..(availableSize / 2)

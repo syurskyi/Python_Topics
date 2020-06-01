@@ -60,7 +60,7 @@ Result:
 
 ______ ___
 
-____ ?.?C.. ______ pyqtSignal, QObject, ?S.., __, QUrl
+____ ?.?C.. ______ pS.., QObject, ?S.., __, QUrl
 ____ ?.?G.. ______ QImage, QPainter
 ____ ?.?W.. ______ ?A..
 ____ ?.QtWebKitWidgets ______ QWebPage
@@ -78,7 +78,7 @@ ___ cerr(s):
 
 c_ FrameCapture(QObject):
 
-    finished _ pyqtSignal()
+    finished _ pS..()
 
     ___  -
         super(FrameCapture, self). - ()
@@ -113,13 +113,13 @@ c_ FrameCapture(QObject):
         # Crude error-checking.
         __ no. ok:
             cerr("Failed loading %s\n" % _page.mainFrame().url().toString())
-            finished.emit()
+            finished.e..()
             r_
 
         # Save each frame in different image files.
         _frameCounter _ 0
         saveFrame(_page.mainFrame())
-        finished.emit()
+        finished.e..()
  
     ___ saveFrame  frame):
         fileName _ _fileName
@@ -129,9 +129,9 @@ c_ FrameCapture(QObject):
         image _ QImage(frame.contentsSize(), QImage.Format_ARGB32_Premultiplied)
         image.fill(__.transparent)
         painter _ QPainter(image)
-        painter.setRenderHint(QPainter.Antialiasing, True)
-        painter.setRenderHint(QPainter.TextAntialiasing, True)
-        painter.setRenderHint(QPainter.SmoothPixmapTransform, True)
+        painter.setRenderHint(QPainter.Antialiasing,  st.
+        painter.setRenderHint(QPainter.TextAntialiasing,  st.
+        painter.setRenderHint(QPainter.SmoothPixmapTransform,  st.
         frame.documentElement().render(painter)
         painter.end()
         image.save(fileName)

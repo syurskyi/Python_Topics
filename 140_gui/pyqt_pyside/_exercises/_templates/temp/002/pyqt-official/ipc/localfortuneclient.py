@@ -64,10 +64,10 @@ c_ Client(QDialog):
         statusLabel _ QLabel(
                 "This examples requires that you run the Fortune Server "
                 "example as well.")
-        statusLabel.setWordWrap(True)
+        statusLabel.setWordWrap( st.
 
         getFortuneButton _ ?PB..("Get Fortune")
-        getFortuneButton.setDefault(True)
+        getFortuneButton.setDefault( st.
 
         quitButton _ ?PB..("Quit")
         buttonBox _ QDialogButtonBox()
@@ -76,7 +76,7 @@ c_ Client(QDialog):
 
         socket _ QLocalSocket()
 
-        hostLineEdit.textChanged.c..(enableGetFortuneButton)
+        hostLineEdit.tC...c..(enableGetFortuneButton)
         getFortuneButton.c__.c..(requestNewFortune)
         quitButton.c__.c..(close)
         socket.readyRead.c..(readFortune)
@@ -117,7 +117,7 @@ c_ Client(QDialog):
  
         currentFortune _ nextFortune
         statusLabel.sT..(currentFortune)
-        getFortuneButton.sE..(True)
+        getFortuneButton.sE..( st.
 
     ___ displayError  socketError):
         errors _ {
@@ -139,7 +139,7 @@ c_ Client(QDialog):
         __ msg __ no. N..:
             ?MB...information  "Fortune Client", msg)
 
-        getFortuneButton.sE..(True)
+        getFortuneButton.sE..( st.
 
     ___ enableGetFortuneButton
         getFortuneButton.sE..(hostLineEdit.t__() !_ "")

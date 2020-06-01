@@ -49,7 +49,7 @@ c_ Score(object):
     FROM_CURRENT, FROM_START, NEW_ANIMATION_ONLY, ONLY_IF_VISIBLE _ range(4)
 
     ___  -
-        _index _ {}
+        _index _   # dict
         _playlist _   # list
 
     ___ hasQueuedMovies
@@ -64,7 +64,7 @@ c_ Score(object):
         ____ lockMode == Score.UNLOCK_ITEMS:
             ___ item __ movie:
                 __ runMode !_ Score.ONLY_IF_VISIBLE or item.isVisible
-                    item.sE..(True)
+                    item.sE..( st.
                     item.prepare()
         ____
             ___ item __ movie:
@@ -75,7 +75,7 @@ c_ Score(object):
         __ runMode == Score.NEW_ANIMATION_ONLY:
             ___ item __ movie:
                 __ item.notOwnerOfItem
-                    item.play(True)
+                    item.play( st.
         ____ runMode == Score.ONLY_IF_VISIBLE:
             ___ item __ movie:
                 __ item.isVisible

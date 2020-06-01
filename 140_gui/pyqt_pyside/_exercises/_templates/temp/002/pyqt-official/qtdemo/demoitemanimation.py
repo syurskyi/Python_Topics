@@ -95,7 +95,7 @@ c_ DemoItemAnimation(QPropertyAnimation):
                 item.setPos(startValue())
 
         __ _inOrOut == DemoItemAnimation.ANIM_IN:
-            item.setRecursiveVisible(True)
+            item.setRecursiveVisible( st.
 
         __ no. Colors.noAnimations or force:
             __ _startDelay:

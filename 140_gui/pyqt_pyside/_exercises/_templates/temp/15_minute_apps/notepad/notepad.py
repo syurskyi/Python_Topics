@@ -108,8 +108,8 @@ c_ MainWindow ?MW..
 
         wrap_action _ ?A..(QIcon(__.p__ .join('images', 'arrow-continue.png')), "Wrap text to window", self)
         wrap_action.setStatusTip("Toggle wrap text to window")
-        wrap_action.setCheckable(True)
-        wrap_action.setChecked(True)
+        wrap_action.setCheckable( st.
+        wrap_action.setChecked( st.
         wrap_action.t__.c..(edit_toggle_wrap)
         edit_menu.aA..(wrap_action)
 

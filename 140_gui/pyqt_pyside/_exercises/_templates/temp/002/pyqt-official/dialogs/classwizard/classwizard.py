@@ -203,7 +203,7 @@ c_ IntroPage(QWizardPage):
                 "specify the class name and set a few options to produce a "
                 "header file and an implementation file for your new C++ "
                 "class.")
-        label.setWordWrap(True)
+        label.setWordWrap( st.
 
         layout _ ?VBL..
         layout.aW..(label)
@@ -236,7 +236,7 @@ c_ ClassInfoPage(QWizardPage):
         defaultCtorRadioButton _ QRadioButton("&Default constructor")
         copyCtorCheckBox _ QCheckBox("&Generate copy constructor and operator=")
 
-        defaultCtorRadioButton.setChecked(True)
+        defaultCtorRadioButton.setChecked( st.
 
         defaultCtorRadioButton.toggled.c..(copyCtorCheckBox.sE..)
 
@@ -274,11 +274,11 @@ c_ CodeStylePage(QWizardPage):
         setPixmap(QWizard.LogoPixmap, QPixmap(':/images/logo2.png'))
 
         commentCheckBox _ QCheckBox("&Start generated files with a comment")
-        commentCheckBox.setChecked(True)
+        commentCheckBox.setChecked( st.
 
         protectCheckBox _ QCheckBox("&Protect header file against multiple "
                 "inclusions")
-        protectCheckBox.setChecked(True)
+        protectCheckBox.setChecked( st.
 
         macroNameLabel _ QLabel("&Macro name:")
         macroNameLineEdit _ ?LE..
@@ -381,7 +381,7 @@ c_ ConclusionPage(QWizardPage):
                 QPixmap(':/images/watermark2.png'))
 
         label _ QLabel()
-        label.setWordWrap(True)
+        label.setWordWrap( st.
 
         layout _ ?VBL..
         layout.aW..(label)

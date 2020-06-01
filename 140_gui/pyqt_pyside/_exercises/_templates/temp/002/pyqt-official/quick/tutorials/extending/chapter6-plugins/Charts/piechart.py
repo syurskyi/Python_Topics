@@ -52,7 +52,7 @@ c_ PieChart(QQuickItem):
         r_ QQmlListProperty(PieSlice, self,
                 append_lambda pie_ch, pie_sl: pie_sl.setParentItem(pie_ch))
 
-    @pyqtProperty(str)
+    @pyqtProperty st.
     ___ name 
         r_ _name
 

@@ -46,10 +46,10 @@ class MainWindow(QMainWindow):
         super(MainWindow, self). - ($ $$)
 
         tabs = ?TW..()
-        tabs.setDocumentMode(True)
+        tabs.setDocumentMode( st.
         tabs.tabBarDoubleClicked.connect(tab_open_doubleclick)
         tabs.currentChanged.connect(current_tab_changed)
-        tabs.setTabsClosable(True)
+        tabs.setTabsClosable( st.
         tabs.tabCloseRequested.connect(close_current_tab)
 
         setCentralWidget(tabs)

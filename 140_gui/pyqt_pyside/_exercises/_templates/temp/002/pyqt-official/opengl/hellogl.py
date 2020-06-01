@@ -45,7 +45,7 @@
 ______ ___
 ______ math
 
-____ ?.?C.. ______ pyqtSignal, QPoint, ?S.., __
+____ ?.?C.. ______ pS.., QPoint, ?S.., __
 ____ ?.?G.. ______ ?C.., QOpenGLVersionProfile
 ____ ?.?W.. ______ (?A.., QHBoxLayout, QOpenGLWidget, QSlider,
         ?W..)
@@ -94,9 +94,9 @@ c_ Window(?W..):
 
 
 c_ GLWidget(QOpenGLWidget):
-    xRotationChanged _ pyqtSignal(int)
-    yRotationChanged _ pyqtSignal(int)
-    zRotationChanged _ pyqtSignal(int)
+    xRotationChanged _ pS..(int)
+    yRotationChanged _ pS..(int)
+    zRotationChanged _ pS..(int)
 
     ___  -   parent_None):
         super(GLWidget, self). - (parent)
@@ -121,21 +121,21 @@ c_ GLWidget(QOpenGLWidget):
         angle _ normalizeAngle(angle)
         __ angle !_ xRot:
             xRot _ angle
-            xRotationChanged.emit(angle)
+            xRotationChanged.e..(angle)
             update()
 
     ___ setYRotation  angle):
         angle _ normalizeAngle(angle)
         __ angle !_ yRot:
             yRot _ angle
-            yRotationChanged.emit(angle)
+            yRotationChanged.e..(angle)
             update()
 
     ___ setZRotation  angle):
         angle _ normalizeAngle(angle)
         __ angle !_ zRot:
             zRot _ angle
-            zRotationChanged.emit(angle)
+            zRotationChanged.e..(angle)
             update()
 
     ___ initializeGL

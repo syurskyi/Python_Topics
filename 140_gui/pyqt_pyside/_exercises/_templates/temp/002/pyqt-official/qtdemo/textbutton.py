@@ -219,7 +219,7 @@ c_ TextButton(DemoItem):
         bgDisabled _ N..
         state _ TextButton.OFF
 
-        setAcceptHoverEvents(True)
+        setAcceptHoverEvents( st.
         setCursor(__.PointingHandCursor)
 
         # Calculate the button size.
@@ -314,7 +314,7 @@ c_ TextButton(DemoItem):
             __ (_menu_manager.window.fpsMedian > 10 or Colors.noAdapt or
                     Colors.noTimerUpdate):
                 __ Colors.useButtonBalls:
-                    scanAnim.play(True, True)
+                    scanAnim.play(True,  st.
 
     ___ hoverLeaveEvent  event):
         __ state == TextButton.DISABLED:

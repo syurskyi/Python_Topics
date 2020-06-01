@@ -58,13 +58,13 @@ c_ FindDialog(QDialog):
 
         caseCheckBox _ QCheckBox("Match &case")
         fromStartCheckBox _ QCheckBox("Search from &start")
-        fromStartCheckBox.setChecked(True)
+        fromStartCheckBox.setChecked( st.
 
         findButton _ ?PB..("&Find")
-        findButton.setDefault(True)
+        findButton.setDefault( st.
 
         moreButton _ ?PB..("&More")
-        moreButton.setCheckable(True)
+        moreButton.setCheckable( st.
         moreButton.setAutoDefault F..
 
         extension _ ?W..

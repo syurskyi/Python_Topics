@@ -41,7 +41,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ pyqtProperty, pyqtSignal, QRectF, QUrl
+____ ?.?C.. ______ pyqtProperty, pS.., QRectF, QUrl
 ____ ?.?G.. ______ ?C.., QGuiApplication, QPainter, QPen
 ____ ?.QtQml ______ qmlRegisterType
 ____ ?.QtQuick ______ QQuickPaintedItem, QQuickView
@@ -49,7 +49,7 @@ ____ ?.QtQuick ______ QQuickPaintedItem, QQuickView
 
 c_ PieChart(QQuickPaintedItem):
 
-    nameChanged _ pyqtSignal(str)
+    nameChanged _ pS.. st.
 
     @pyqtProperty(str, notify_nameChanged)
     ___ name
@@ -59,7 +59,7 @@ c_ PieChart(QQuickPaintedItem):
     ___ name  name):
         __ _name !_ name:
             _name _ name
-            nameChanged.emit(name)
+            nameChanged.e..(name)
             update()
 
     @pyqtProperty(?C..)
@@ -78,7 +78,7 @@ c_ PieChart(QQuickPaintedItem):
 
     ___ paint  painter):
         painter.setPen(QPen(_color, 2))
-        painter.setRenderHints(QPainter.Antialiasing, True)
+        painter.setRenderHints(QPainter.Antialiasing,  st.
 
         rect _ QRectF(0, 0, width(), height()).adjusted(1, 1, -1, -1)
         painter.drawPie(rect, 90 * 16, 290 * 16)

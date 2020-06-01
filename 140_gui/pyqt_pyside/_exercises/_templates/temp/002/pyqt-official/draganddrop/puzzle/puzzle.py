@@ -44,7 +44,7 @@
 
 ______ random
 
-____ ?.?C.. ______ (pyqtSignal, QByteArray, QDataStream, QIODevice,
+____ ?.?C.. ______ (pS.., QByteArray, QDataStream, QIODevice,
         QMimeData, QPoint, QRect, ?S.., __)
 ____ ?.?G.. ______ QDrag, ?C.., QCursor, QIcon, QPainter, QPixmap
 ____ ?.?W.. ______ (?A.., ?FD.., QFrame, QHBoxLayout,
@@ -56,7 +56,7 @@ ______ puzzle_rc
 
 c_ PuzzleWidget(?W..):
 
-    puzzleCompleted _ pyqtSignal()
+    puzzleCompleted _ pS..()
 
     ___  -   parent_None):
         super(PuzzleWidget, self). - (parent)
@@ -67,7 +67,7 @@ c_ PuzzleWidget(?W..):
         highlightedRect _ QRect()
         inPlace _ 0
 
-        setAcceptDrops(True)
+        setAcceptDrops( st.
         sMS..(400, 400)
         sMS..(400, 400)
 
@@ -126,7 +126,7 @@ c_ PuzzleWidget(?W..):
             __ location == QPoint(square.x() / 80, square.y() / 80):
                 inPlace +_ 1
                 __ inPlace == 25:
-                    puzzleCompleted.emit()
+                    puzzleCompleted.e..()
         ____
             highlightedRect _ QRect()
             event.ignore()
@@ -200,12 +200,12 @@ c_ PiecesList(QListWidget):
     ___  -   parent_None):
         super(PiecesList, self). - (parent)
 
-        setDragEnabled(True)
+        setDragEnabled( st.
         setViewMode(QListView.IconMode)
         setIconSize(?S..(60, 60))
         setSpacing(10)
-        setAcceptDrops(True)
-        setDropIndicatorShown(True)
+        setAcceptDrops( st.
+        setDropIndicatorShown( st.
 
     ___ dragEnterEvent  event):
         __ event.mimeData().hasFormat('image/x-puzzle-piece'):
