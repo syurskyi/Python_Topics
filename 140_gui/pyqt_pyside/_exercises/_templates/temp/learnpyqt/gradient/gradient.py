@@ -89,7 +89,7 @@ c_ Gradient(?W...QWidget):
         ]
 
     ___ setGradient  gradient):
-        assert all([0.0 <_ stop <_ 1.0 ___ stop, _ __ gradient])
+        assert al.([0.0 <_ stop <_ 1.0 ___ stop, _ __ gradient])
         _gradient _ gradient
         _constrain_gradient()
         _sort_gradient()

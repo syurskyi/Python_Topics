@@ -27,30 +27,30 @@ c_ ChoiceSpinBox(qtw.QSpinBox):
 
     ___ validate  string, index):
         __ string __ choices:
-            state _ qtg.QValidator.Acceptable
+            state _ qtg.?V...A..
         ____ any([v.startswith(string) ___ v __ choices]):
-            state _ qtg.QValidator.Intermediate
+            state _ qtg.?V...Intermediate
         ____
-            state _ qtg.QValidator.Invalid
+            state _ qtg.?V...Invalid
         r_ (state, string, index)
 
-c_ IPv4Validator(qtg.QValidator):
+c_ IPv4Validator ?.?V..
     """Enforce entry of IPv4 Addresses"""
 
     ___ validate  string, index):
         octets _ string.split('.')
         __ le.(octets) > 4:
-            state _ qtg.QValidator.Invalid
-        ____ no. all([x.isdigit() ___ x __ octets __ x !_ '']):
-            state _ qtg.QValidator.Invalid
-        ____ no. all([0 <_ int(x) <_ 255 ___ x __ octets __ x !_ '']):
-            state _ qtg.QValidator.Invalid
+            state _ qtg.?V...Invalid
+        ____ no. al.([x.i_d.. ___ x __ octets __ x !_ '']):
+            state _ qtg.?V...Invalid
+        ____ no. al.([0 <_ int(x) <_ 255 ___ x __ octets __ x !_ '']):
+            state _ qtg.?V...Invalid
         ____ le.(octets) < 4:
-            state _ qtg.QValidator.Intermediate
+            state _ qtg.?V...Intermediate
         ____ any([x == '' ___ x __ octets]):
-            state _ qtg.QValidator.Intermediate
+            state _ qtg.?V...Intermediate
         ____
-            state _ qtg.QValidator.Acceptable
+            state _ qtg.?V...A..
         r_ (state, string, index)
 
 
@@ -243,7 +243,7 @@ c_ MainWindow ?.?W..
         # Validation #
         ##############
         line_edit.sT..('0.0.0.0')
-        line_edit.setValidator(IPv4Validator())
+        line_edit.sV..(IPv4Validator())
 
         ratingbox _ ChoiceSpinBox(['bad', 'average', 'good', 'awesome'], self)
         sublayout.aW..(ratingbox)

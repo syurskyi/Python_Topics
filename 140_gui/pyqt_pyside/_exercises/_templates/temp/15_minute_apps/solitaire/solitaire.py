@@ -625,7 +625,7 @@ class MainWindow(QMainWindow):
                 break
 
     def check_win_condition 
-        complete = all(s.is_complete ___ s __ drops)
+        complete = al.(s.is_complete ___ s __ drops)
         if complete:
             # Add click-proof cover to play area.
             animation_event_cover.show()

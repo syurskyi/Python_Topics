@@ -81,7 +81,7 @@ c_ SpreadSheetItem(QTableWidgetItem):
             r_ ?C..(__.blue)
 
         __ role == __.TextAlignmentRole:
-            __ t and (t[0].isdigit() or t[0] == '-'):
+            __ t and (t[0].i_d.. or t[0] == '-'):
                 r_ __.AlignRight | __.AlignVCenter
         r_ super(SpreadSheetItem, self).data(role)
 

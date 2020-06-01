@@ -162,11 +162,11 @@ c_ Window(QWidget):
 
     ___ validatorChanged  index):
         __ index == 0:
-            validatorLineEdit.setValidator(0)
+            validatorLineEdit.sV..(0)
         ____ index == 1:
-            validatorLineEdit.setValidator(QIntValidator(validatorLineEdit))
+            validatorLineEdit.sV..(QIntValidator(validatorLineEdit))
         ____ index == 2:
-            validatorLineEdit.setValidator(QDoubleValidator(-999.0, 999.0, 2, validatorLineEdit))
+            validatorLineEdit.sV..(QDoubleValidator(-999.0, 999.0, 2, validatorLineEdit))
 
         validatorLineEdit.clear()
 

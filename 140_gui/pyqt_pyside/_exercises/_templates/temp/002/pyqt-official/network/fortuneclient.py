@@ -88,7 +88,7 @@ c_ Client(QDialog):
                 hostCombo.addItem(ipAddress.toString())
 
         portLineEdit _ ?LE..
-        portLineEdit.setValidator(QIntValidator(1, 65535, self))
+        portLineEdit.sV..(QIntValidator(1, 65535, self))
 
         hostLabel.setBuddy(hostCombo)
         portLabel.setBuddy(portLineEdit)

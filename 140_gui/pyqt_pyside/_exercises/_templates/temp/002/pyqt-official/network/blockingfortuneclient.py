@@ -141,7 +141,7 @@ c_ BlockingClient(QWidget):
 
         hostLineEdit _ QLineEdit(ipAddress)
         portLineEdit _ ?LE..
-        portLineEdit.setValidator(QIntValidator(1, 65535, self))
+        portLineEdit.sV..(QIntValidator(1, 65535, self))
 
         hostLabel.setBuddy(hostLineEdit)
         portLabel.setBuddy(portLineEdit)

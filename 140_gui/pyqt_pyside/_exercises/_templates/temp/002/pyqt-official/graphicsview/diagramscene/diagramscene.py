@@ -676,7 +676,7 @@ c_ MainWindow ?MW..
         ___ i __ range(8, 30, 2):
             fontSizeCombo.addItem(str(i))
         validator _ QIntValidator(2, 64, self)
-        fontSizeCombo.setValidator(validator)
+        fontSizeCombo.sV..(validator)
         fontSizeCombo.currentIndexChanged.c..(fontSizeChanged)
 
         fontColorToolButton _ QToolButton()

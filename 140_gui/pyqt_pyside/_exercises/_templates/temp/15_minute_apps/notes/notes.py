@@ -107,7 +107,7 @@ __ ______ __ ______
     palette.sC..(?P...AlternateBase, ?C..(188,170,164))
     app.sP..(palette)
 
-    existing_notes _ session.query(Note).all()
+    existing_notes _ session.query(Note).al.()
     __ le.(existing_notes) == 0:
         MainWindow()
     ____

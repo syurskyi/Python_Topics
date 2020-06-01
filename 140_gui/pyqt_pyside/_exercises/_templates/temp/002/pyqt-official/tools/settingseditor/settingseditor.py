@@ -46,7 +46,7 @@ ______ ___
 
 ____ ?.?C.. ______ (QByteArray, QDate, QDateTime, QEvent, QPoint, QRect,
         QRegExp, QSettings, QSize, __, QTime, QTimer)
-____ ?.?G.. ______ ?C.., QIcon, QRegExpValidator, QValidator
+____ ?.?G.. ______ ?C.., QIcon, QRegExpValidator, ?V..
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., ?A..,
         QComboBox, QDialog, QDialogButtonBox, ?FD.., QGridLayout,
         QGroupBox, QHeaderView, QInputDialog, QItemDelegate, QLabel, QLineEdit,
@@ -625,7 +625,7 @@ c_ VariantDelegate(QItemDelegate):
 
         __ no. regExp.isEmpty
             validator _ QRegExpValidator(regExp, lineEdit)
-            lineEdit.setValidator(validator)
+            lineEdit.sV..(validator)
 
         r_ lineEdit
 
@@ -642,7 +642,7 @@ c_ VariantDelegate(QItemDelegate):
         validator _ editor.validator()
         __ validator __ no. N..:
             state, t__, _ _ validator.validate(t__, 0)
-            __ state !_ QValidator.Acceptable:
+            __ state !_ ?V...A..:
                 r_
 
         originalValue _ index.model().data(index, __.UserRole)
