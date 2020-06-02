@@ -129,7 +129,7 @@ c_ MainWindow ?MW..
         __ pa__:
             svg_file _ QFile(pa__)
             __ no. svg_file.e..
-                ?MB...critical  "Open SVG File",
+                ?MB...c..  "Open SVG File",
                         "Could not open file '%s'." % pa__)
 
                 outlineAction.sE.. F..

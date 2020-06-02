@@ -110,7 +110,7 @@ c_ Dialog(QDialog):
         quitButton.setAutoDefault F..
 
         __ no. server.listen
-            ?MB...critical  "Threaded Fortune Server",
+            ?MB...c..  "Threaded Fortune Server",
                     "Unable to start the server: %s." % server.errorString())
             c..
             r_

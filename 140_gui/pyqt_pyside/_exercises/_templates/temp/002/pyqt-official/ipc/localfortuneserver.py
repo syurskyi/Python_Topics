@@ -73,7 +73,7 @@ c_ Server(QDialog):
 
         server _ QLocalServer()
         __ no. server.listen('fortune'):
-            ?MB...critical  "Fortune Server",
+            ?MB...c..  "Fortune Server",
                     "Unable to start the server: %s." % server.errorString())
             c..
             r_

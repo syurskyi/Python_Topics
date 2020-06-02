@@ -226,7 +226,7 @@ __ ______ __ ______
     app _ ?A..(___.a..
 
     __ no. QSystemTrayIcon.isSystemTrayAvailable
-        ?MB...critical(N.., "Systray",
+        ?MB...c..(N.., "Systray",
                 "I couldn't detect any system tray on this system.")
         ___.e..(1)
 

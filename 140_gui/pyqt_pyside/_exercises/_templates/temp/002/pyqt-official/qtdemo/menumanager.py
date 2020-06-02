@@ -271,7 +271,7 @@ c_ MenuManager(?O..):
             args _ ['-enableRemoteControl']
             assistantProcess.start(app, args)
             __ no. assistantProcess.waitForStarted
-                ?MB...critical(N.., "PyQt Demo",
+                ?MB...c..(N.., "PyQt Demo",
                         "Could not start %s." % app)
                 r_
 
@@ -319,7 +319,7 @@ c_ MenuManager(?O..):
 
     ___ launchError  error):
         __ error !_ QProcess.Crashed:
-            ?MB...critical(N.., "Failed to launch the example",
+            ?MB...c..(N.., "Failed to launch the example",
                     "Could not launch the example. Ensure that it has been "
                     "built.",
                     ?MB...Cancel)

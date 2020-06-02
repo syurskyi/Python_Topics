@@ -269,7 +269,7 @@ c_ MainWindow(qtw.?MW..): # change to mainwindow
                 w__ o..(filename, 'r') __ fh:
                     textedit.sT..(fh.r..
             _____ E.. __ e:
-                qtw.?MB...critical(f"Could not load file: {e}")
+                qtw.?MB...c..(f"Could not load file: {e}")
 
     ___ saveFile
         filename, _ _ qtw.?FD...getSaveFileName(
@@ -283,7 +283,7 @@ c_ MainWindow(qtw.?MW..): # change to mainwindow
                 w__ o..(filename, 'w') __ fh:
                     fh.w..(textedit.tPT..
             _____ E.. __ e:
-                qtw.?MB...critical(f"Could not save file: {e}")
+                qtw.?MB...c..(f"Could not save file: {e}")
 
     ___ set_font
         current _ textedit.currentFont()

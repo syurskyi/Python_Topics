@@ -135,7 +135,7 @@ c_ MainWindow(qtw.?MW..):
         cameras _ qtmm.QCameraInfo.availableCameras()
         print(cameras)
         __ no. cameras:
-            qtw.?MB...critical(
+            qtw.?MB...c..(
                 self,
                 'No cameras',
                 'No cameras were found, recording disabled.'

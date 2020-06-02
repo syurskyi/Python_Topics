@@ -6,7 +6,7 @@ ___ createDB
     db.sDN..('sports.db')
 
     __ no. db.o..
-        ?G...?MB...critical(N.., ?G...qApp.tr("Cannot open database"),
+        ?G...?MB...c..(N.., ?G...qApp.tr("Cannot open database"),
                                    ?G...qApp.tr("Unable to establish a database connection.\n"
                                                  "This example needs SQLite support. Please read "
                                                  "the Qt SQL driver documentation for information "

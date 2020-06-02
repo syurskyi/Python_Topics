@@ -47,7 +47,7 @@ ___ createConnection
     db _ ?SD...aD..('QSQLITE')
     db.sDN..(':memory:')
     __ no. db.o..
-        ?MB...critical(N.., "Cannot open database",
+        ?MB...c..(N.., "Cannot open database",
                 "Unable to establish a database connection.\n"
                 "This example needs SQLite support. Please read the Qt SQL "
                 "driver documentation for information how to build it.\n\n"

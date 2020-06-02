@@ -101,7 +101,7 @@ c_ Dialog(QDialog):
         bytesReceived _ 0
 
         w__ no. tcpServer.isListening() and no. tcpServer.listen
-            ret _ ?MB...critical  "Loopback",
+            ret _ ?MB...c..  "Loopback",
                     "Unable to start the test: %s." % tcpServer.errorString(),
                     ?MB...Retry | ?MB...Cancel)
             __ ret __ ?MB...Cancel:

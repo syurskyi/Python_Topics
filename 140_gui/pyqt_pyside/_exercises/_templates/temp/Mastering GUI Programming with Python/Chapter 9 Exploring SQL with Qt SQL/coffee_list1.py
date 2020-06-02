@@ -55,7 +55,7 @@ c_ MainWindow(qtw.?MW..):
         db.sDN..('coffee.db')
         __ no. db.o..
             error _ db.lastError().t__()
-            qtw.?MB...critical(
+            qtw.?MB...c..(
                 N.., 'DB Connection Error',
                 'Could not open database file: '
                 f'{error}')

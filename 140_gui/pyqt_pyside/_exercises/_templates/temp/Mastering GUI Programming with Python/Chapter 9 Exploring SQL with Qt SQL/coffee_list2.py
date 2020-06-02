@@ -137,7 +137,7 @@ c_ MainWindow(qtw.?MW..):
         db _ qts.?SD...aD..('QSQLITE')
         db.sDN..('coffee.db')
         __ no. db.o..
-            qtw.?MB...critical(
+            qtw.?MB...c..(
                 N.., 'DB Connection Error',
                 'Could not open database file: '
                 f'{db.lastError().t__()}')
@@ -147,7 +147,7 @@ c_ MainWindow(qtw.?MW..):
         required_tables _ {'roasts', 'coffees', 'reviews'}
         missing_tables _ required_tables - set(db.tables())
         __ missing_tables:
-            qtw.?MB...critical(
+            qtw.?MB...c..(
                 N.., 'DB Integrity Error',
                 'Missing tables, please repair DB: '
                 f'{missing_tables}')

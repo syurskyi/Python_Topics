@@ -115,7 +115,7 @@ c_ MainWindow(qtw.?MW..):
         cw.submitted.c..(interface.send_message)
         interface.received.c..(cw.write_message)
         interface.error.c..(
-            l___ x: qtw.?MB...critical(N.., 'Error', x))
+            l___ x: qtw.?MB...c..(N.., 'Error', x))
         # Code ends here
         s..
 

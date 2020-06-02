@@ -266,7 +266,7 @@ c_ Dialog(QDialog):
             saveFileNameLabel.sT..(fileName)
 
     ___ criticalMessage 
-        reply _ ?MB...critical  "QMessageBox.critical()",
+        reply _ ?MB...c..  "QMessageBox.critical()",
                 Dialog.MESSAGE,
                 ?MB...Abort | ?MB...Retry | ?MB...Ignore)
         __ reply __ ?MB...Abort:

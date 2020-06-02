@@ -122,7 +122,7 @@ c_ Server(QDialog):
 
         tcpServer _ QTcpServer
         __ no. tcpServer.listen
-            ?MB...critical  "Fortune Server",
+            ?MB...c..  "Fortune Server",
                     "Unable to start the server: %s." % tcpServer.errorString())
             c..
             r_
