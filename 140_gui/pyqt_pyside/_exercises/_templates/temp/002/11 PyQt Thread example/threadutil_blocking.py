@@ -11,7 +11,7 @@ It allows you to receive results from the function invocation:
 """
 
 ____ functools ______ wraps
-____ ?.?C.. ______ pS.., ?O.., QThread
+____ ?.?C.. ______ pS.., ?O.., ?T..
 ____ ?.?W.. ______ ?A..
 ____ th.. ______ Event, get_ident
 
@@ -29,14 +29,14 @@ ___ _main_thread
     __ app:
         r_ app.thread()
     # We reach here in tests that don't (want to) create a QApplication.
-    __ int(QThread.currentThreadId()) __ get_ident
-        r_ QThread.currentThread()
+    __ int(?T...currentThreadId()) __ get_ident
+        r_ ?T...currentThread()
     raise RuntimeError('Could not determine main thread')
 
 run_in_main_thread _ run_in_thread(_main_thread)
 
 ___ is_in_main_thread
-    r_ QThread.currentThread() __ _main_thread()
+    r_ ?T...currentThread() __ _main_thread()
 
 c_ Executor:
 
@@ -57,7 +57,7 @@ c_ Executor:
             task.set_exception(SystemExit())
             task.has_run.set()
     ___ run_in_thread  thread, f, args, kwargs):
-        __ QThread.currentThread() __ thread:
+        __ ?T...currentThread() __ thread:
             r_ f($ $$)
         ____ _app_is_about_to_quit:
             # In this case, the target thread's event loop most likely is not

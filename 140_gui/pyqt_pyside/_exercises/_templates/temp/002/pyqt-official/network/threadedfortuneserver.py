@@ -45,14 +45,14 @@
 ______ random
 
 ____ ?.?C.. ______ (pS.., QByteArray, ?DS.., QIODevice,
-        QThread)
+        ?T..)
 ____ ?.?W.. ______ (?A.., QDialog, QHBoxLayout, QLabel,
         ?MB.., ?PB.., QVBoxLayout)
 ____ ?.?N.. ______ (?HA.., QNetworkInterface, QTcpServer,
         QTcpSocket)
 
 
-c_ FortuneThread(QThread):
+c_ FortuneThread(?T..):
     error _ pS..(QTcpSocket.SocketError)
 
     ___  -   socketDescriptor, fortune, parent):

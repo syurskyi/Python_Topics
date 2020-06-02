@@ -45,7 +45,7 @@
 ______ ___
 ______ random
 
-____ ?.?C.. ______  ?CA.., QSemaphore, QThread
+____ ?.?C.. ______  ?CA.., QSemaphore, ?T..
 
 
 DataSize _ 100000
@@ -56,7 +56,7 @@ freeBytes _ QSemaphore(BufferSize)
 usedBytes _ QSemaphore()
 
 
-c_ Producer(QThread):
+c_ Producer(?T..):
     ___ run 
         ___ i __ ra..(DataSize):
             freeBytes.acquire()
@@ -64,7 +64,7 @@ c_ Producer(QThread):
             usedBytes.release()
 
 
-c_ Consumer(QThread):
+c_ Consumer(?T..):
     ___ run 
         ___ i __ ra..(DataSize):
             usedBytes.acquire()

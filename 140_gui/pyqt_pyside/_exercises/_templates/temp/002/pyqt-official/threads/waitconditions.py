@@ -45,7 +45,7 @@
 ______ ___
 ______ random
 
-____ ?.?C.. ______  ?CA.., QMutex, QThread, QWaitCondition
+____ ?.?C.. ______  ?CA.., QMutex, ?T.., QWaitCondition
 
 
 DataSize _ 100000
@@ -58,7 +58,7 @@ mutex _ QMutex()
 numUsedBytes _ 0
 
 
-c_ Producer(QThread):
+c_ Producer(?T..):
     ___ run 
         gl.. numUsedBytes
 
@@ -76,7 +76,7 @@ c_ Producer(QThread):
             mutex.unlock()
 
 
-c_ Consumer(QThread):
+c_ Consumer(?T..):
     ___ run 
         gl.. numUsedBytes
 

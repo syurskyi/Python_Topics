@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ (pS.., pyqtSlot, Q_ARG, QAbstractItemModel,
         QFileInfo, qFuzzyCompare, QMetaObject, QModelIndex, ?O.., __,
-        QThread, ?T.., ?U..)
+        ?T.., ?T.., ?U..)
 ____ ?.?G.. ______ ?C.., qGray, QImage, QPainter, ?P..
 ____ ?.?M.. ______ (QAbstractVideoBuffer, ?MC..,
         QMediaMetaData, ?MP.., ?MPl.., QVideoFrame, QVideoProbe)
@@ -328,7 +328,7 @@ c_ HistogramWidget(?W..):
         m_isBusy _ F..
         m_histogram _   # list
         m_processor _ FrameProcessor()
-        m_processorThread _ QThread()
+        m_processorThread _ ?T..()
 
         m_processor.moveToThread(m_processorThread)
         m_processor.histogramReady.c..(setHistogram)

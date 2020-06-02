@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ (pS.., QMutex, ?ML.., QPoint, ?S.., __,
-        QThread, QWaitCondition)
+        ?T.., QWaitCondition)
 ____ ?.?G.. ______ ?C.., QImage, QPainter, ?P.., qRgb
 ____ ?.?W.. ______ ?A.., ?W..
 
@@ -57,7 +57,7 @@ ZoomOutFactor _ 1 / ZoomInFactor
 ScrollStep _ 20
 
 
-c_ RenderThread(QThread):
+c_ RenderThread(?T..):
     ColormapSize _ 512
 
     renderedImage _ pS..(QImage, float)
@@ -96,7 +96,7 @@ c_ RenderThread(QThread):
         resultSize _ resultSize
 
         __ no. isRunning
-            start(QThread.LowPriority)
+            start(?T...LowPriority)
         ____
             restart _ T..
             condition.wakeOne()

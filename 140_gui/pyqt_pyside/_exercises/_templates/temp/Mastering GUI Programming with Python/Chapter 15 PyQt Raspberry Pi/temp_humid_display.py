@@ -87,7 +87,7 @@ c_ MainWindow(qtw.?MW..):
 
         # Create sensor in its own thread
         sensor _ SensorInterface(4, SENSOR_MODEL,  st.
-        sensor_thread _ qtc.QThread()
+        sensor_thread _ qtc.?T..()
         sensor.moveToThread(sensor_thread)
         sensor_thread.start()
 

@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ (pS.., ?DS.., QMutex, ?ML..,
-        QThread, QWaitCondition)
+        ?T.., QWaitCondition)
 ____ ?.?G.. ______ QIntValidator
 ____ ?.?W.. ______ (?A.., QDialogButtonBox, QGridLayout,
         QLabel, QLineEdit, ?MB.., ?PB.., ?W..)
@@ -51,7 +51,7 @@ ____ ?.?N.. ______ (QAbstractSocket, ?HA.., QNetworkInterface,
         QTcpSocket)
 
 
-c_ FortuneThread(QThread):
+c_ FortuneThread(?T..):
     newFortune _ pS.. st.
 
     error _ pS..(int, str)
