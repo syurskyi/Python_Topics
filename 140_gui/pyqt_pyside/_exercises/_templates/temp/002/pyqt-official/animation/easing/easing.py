@@ -44,8 +44,8 @@
 
 ____ ?.?C.. ______ (pyqtProperty, QEasingCurve, ?O.., QPoint, QPointF,
         QPropertyAnimation, QRect, QRectF, ?S.., __)
-____ ?.?G.. ______ (QBrush, ?C.., QIcon, QLinearGradient, QPainter,
-        QPainterPath, QPixmap)
+____ ?.?G.. ______ (?B.., ?C.., QIcon, QLinearGradient, QPainter,
+        QPainterPath, ?P..)
 ____ ?.?W.. ______ (?A.., QGraphicsPixmapItem, QGraphicsScene,
         QListWidgetItem, ?W..)
 
@@ -132,7 +132,7 @@ c_ Window(?W..):
         m_ui.overshootSpinBox.valueChanged.c..(overshootChanged)
         createCurveIcons()
 
-        pix _ QPixmap(':/images/qt-logo.png')
+        pix _ ?P..(':/images/qt-logo.png')
         m_item _ PixmapItem(pix)
         m_scene.aI..(m_item.pixmap_item)
         m_ui.graphicsView.setScene(m_scene)
@@ -144,14 +144,14 @@ c_ Window(?W..):
         startAnimation()
 
     ___ createCurveIcons
-        pix _ QPixmap(m_iconSize)
+        pix _ ?P..(m_iconSize)
         painter _ QPainter()
 
         gradient _ QLinearGradient(0, 0, 0, m_iconSize.height())
         gradient.setColorAt(0.0, ?C..(240, 240, 240))
         gradient.setColorAt(1.0, ?C..(224, 224, 224))
 
-        brush _ QBrush(gradient)
+        brush _ ?B..(gradient)
 
         # The original C++ code uses undocumented calls to get the names of the
         # different curve types.  We do the Python equivalant (but without
@@ -187,13 +187,13 @@ c_ Window(?W..):
             painter.setPen(__.NoPen)
 
             # Start point.
-            painter.setBrush(__.red)
+            painter.sB..(__.red)
             start _ QPoint(yAxis,
                     xAxis - curveScale * curve.valueForProgress(0))
             painter.drawRect(start.x() - 1, start.y() - 1, 3, 3)
 
             # End point.
-            painter.setBrush(__.blue)
+            painter.sB..(__.blue)
             end _ QPoint(yAxis + curveScale,
                     xAxis - curveScale * curve.valueForProgress(1))
             painter.drawRect(end.x() - 1, end.y() - 1, 3, 3)

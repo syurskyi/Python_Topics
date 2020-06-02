@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ QPointF, ?S.., __
-____ ?.?G.. ______ QBrush, QFont, QFontMetrics, QPainter, QPainterPath
+____ ?.?G.. ______ ?B.., QFont, QFontMetrics, QPainter, QPainterPath
 ____ ?.?W.. ______ ?A.., ?CB, QGridLayout, ?W..
 
 
@@ -80,7 +80,7 @@ c_ RenderArea(?W..):
     ___ paintEvent  event):
         painter _ QPainter
         painter.setRenderHint(QPainter.Antialiasing)
-        painter.fillRect(event.rect(), QBrush(__.white))
+        painter.fillRect(event.rect(), ?B..(__.white))
 
         painter.translate(66, 66)
 
@@ -112,7 +112,7 @@ c_ RenderArea(?W..):
     ___ drawOutline  painter):
         painter.setPen(__.darkGreen)
         painter.setPen(__.DashLine)
-        painter.setBrush(__.NoBrush)
+        painter.sB..(__.NoBrush)
         painter.drawRect(0, 0, 100, 100)
 
     ___ drawShape  painter):

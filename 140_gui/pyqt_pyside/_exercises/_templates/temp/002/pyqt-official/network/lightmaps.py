@@ -49,7 +49,7 @@ ______ math
 ____ ?.?C.. ______ (pS.., QBasicTimer, ?O.., QPoint, QPointF,
         QRect, ?S.., QStandardPaths, __, QUrl)
 ____ ?.?G.. ______ (?C.., QDesktopServices, QImage, QPainter,
-        QPainterPath, QPixmap, QRadialGradient)
+        QPainterPath, ?P.., QRadialGradient)
 ____ ?.?W.. ______ ?A.., ?A.., ?MW.., ?W..
 ____ ?.QtNetwork ______ (QNetworkAccessManager, QNetworkDiskCache,
         QNetworkRequest)
@@ -127,7 +127,7 @@ c_ SlippyMap(?O..):
         latitude _ 59.9138204
         longitude _ 10.7387413
 
-        _emptyTile _ QPixmap(TDIM, TDIM)
+        _emptyTile _ ?P..(TDIM, TDIM)
         _emptyTile.fill(__.lightGray)
 
         cache _ QNetworkDiskCache()
@@ -191,7 +191,7 @@ c_ SlippyMap(?O..):
         url _ reply.url()
         __ no. reply.error
             __ img.load(reply, N..):
-                _tilePixmaps[tp] _ QPixmap.fromImage(img)
+                _tilePixmaps[tp] _ ?P...fromImage(img)
         reply.deleteLater()
         updated.e..(tileRect(tp))
 
@@ -244,8 +244,8 @@ c_ LightMaps(?W..):
         pressPos _ QPoint()
         dragPos _ QPoint()
         tapTimer _ QBasicTimer()
-        zoomPixmap _ QPixmap()
-        maskPixmap _ QPixmap()
+        zoomPixmap _ ?P..()
+        maskPixmap _ ?P..()
         _normalMap.updated.c..(updateMap)
         _largeMap.updated.c..(update)
  
@@ -300,7 +300,7 @@ c_ LightMaps(?W..):
 
             # reupdate our mask
             __ maskPixmap.size() !_ box:
-                maskPixmap _ QPixmap(box)
+                maskPixmap _ ?P..(box)
                 maskPixmap.fill(__.transparent)
                 g _ QRadialGradient()
                 g.setCenter(radius, radius)
@@ -311,10 +311,10 @@ c_ LightMaps(?W..):
                 mask _ QPainter(maskPixmap)
                 mask.setRenderHint(QPainter.Antialiasing)
                 mask.setCompositionMode(QPainter.CompositionMode_Source)
-                mask.setBrush(g)
+                mask.sB..(g)
                 mask.setPen(__.NoPen)
                 mask.drawRect(maskPixmap.rect())
-                mask.setBrush(?C..(__.transparent))
+                mask.sB..(?C..(__.transparent))
                 mask.drawEllipse(g.center(), ring, ring)
                 mask.end()
 
@@ -324,7 +324,7 @@ c_ LightMaps(?W..):
             xy _ center * 2 - QPoint(radius, radius)
             # only set the dimension to the magnified portion
             __ zoomPixmap.size() !_ box:
-                zoomPixmap _ QPixmap(box)
+                zoomPixmap _ ?P..(box)
                 zoomPixmap.fill(__.lightGray)
     
             __ T..

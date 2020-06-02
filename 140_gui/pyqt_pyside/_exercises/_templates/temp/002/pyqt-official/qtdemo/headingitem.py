@@ -80,7 +80,7 @@ c_ HeadingItem(DemoItem):
         ____
             brush_shadow.setColorAt(0.0, ?C..(0, 0, 0, 100))
         pen_shadow _ QPen()
-        pen_shadow.setBrush(brush_shadow)
+        pen_shadow.sB..(brush_shadow)
         painter.setPen(pen_shadow)
         painter.drawText(int(xShadow), int(yShadow), int(w), int(h),
                 __.AlignLeft, t__)
@@ -92,7 +92,7 @@ c_ HeadingItem(DemoItem):
         brush_text.setColorAt(0.2, ?C..(255, 255, 255))
         brush_text.setColorAt(0.5, ?C..(190, 190, 190))
         pen_text _ QPen()
-        pen_text.setBrush(brush_text)
+        pen_text.sB..(brush_text)
         painter.setPen(pen_text)
         painter.drawText(0, 0, int(w), int(h), __.AlignLeft, t__)
 

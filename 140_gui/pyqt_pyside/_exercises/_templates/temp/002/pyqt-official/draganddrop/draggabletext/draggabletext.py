@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ QFile, QIODevice, QMimeData, QPoint, __, QTextStream
-____ ?.?G.. ______ QDrag, ?P.., QPixmap
+____ ?.?G.. ______ QDrag, ?P.., ?P..
 ____ ?.?W.. ______ ?A.., QFrame, QLabel, ?W..
 
 ______ draggabletext_rc
@@ -65,7 +65,7 @@ c_ DragLabel(QLabel):
         mimeData.setData('application/x-hotspot',
                 '%d %d' % (hotSpot.x(), hotSpot.y()))
 
-        pixmap _ QPixmap(size())
+        pixmap _ ?P..(size())
         render(pixmap)
 
         drag _ QDrag
@@ -99,7 +99,7 @@ c_ DragWidget(?W..):
                 x _ 5
                 y +_ wordLabel.height() + 2
 
-        newPalette _ palette()
+        newPalette _ p..
         newPalette.sC..(?P...Window, __.white)
         sP..(newPalette)
 

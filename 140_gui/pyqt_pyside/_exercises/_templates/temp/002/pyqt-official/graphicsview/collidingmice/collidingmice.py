@@ -46,7 +46,7 @@ ______ math
 
 ____ ?.?C.. ______ (qAbs, QLineF, QPointF, QRectF, qrand, qsrand, __,
         ?T.., QTimer)
-____ ?.?G.. ______ (QBrush, ?C.., QPainter, QPainterPath, QPixmap,
+____ ?.?G.. ______ (?B.., ?C.., QPainter, QPainterPath, ?P..,
         QPolygonF)
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsScene,
         QGraphicsView, QGraphicsWidget)
@@ -98,16 +98,16 @@ c_ Mouse(QGraphicsItem):
 
     ___ paint  painter, option, widget):
         # Body.
-        painter.setBrush(color)
+        painter.sB..(color)
         painter.drawEllipse(-10, -20, 20, 40)
 
         # Eyes.
-        painter.setBrush(__.white)
+        painter.sB..(__.white)
         painter.drawEllipse(-10, -17, 8, 8)
         painter.drawEllipse(2, -17, 8, 8)
 
         # Nose.
-        painter.setBrush(__.black)
+        painter.sB..(__.black)
         painter.drawEllipse(QRectF(-2, -22, 4, 4))
 
         # Pupils.
@@ -116,9 +116,9 @@ c_ Mouse(QGraphicsItem):
 
         # Ears.
         __ scene().collidingItems
-            painter.setBrush(__.red)
+            painter.sB..(__.red)
         ____
-            painter.setBrush(__.darkYellow)
+            painter.sB..(__.darkYellow)
 
         painter.drawEllipse(-17, -12, 16, 16)
         painter.drawEllipse(1, -12, 16, 16)
@@ -128,7 +128,7 @@ c_ Mouse(QGraphicsItem):
         pa__.cubicTo(-5, 22, -5, 22, 0, 25)
         pa__.cubicTo(5, 27, 5, 32, 0, 30)
         pa__.cubicTo(-5, 32, -5, 42, 0, 35)
-        painter.setBrush(__.NoBrush)
+        painter.sB..(__.NoBrush)
         painter.drawPath(pa__)
 
     ___ timerEvent
@@ -210,7 +210,7 @@ __ ______ __ ______
 
     view _ QGraphicsView(scene)
     view.setRenderHint(QPainter.Antialiasing)
-    view.setBackgroundBrush(QBrush(QPixmap(':/images/cheese.jpg')))
+    view.setBackgroundBrush(?B..(?P..(':/images/cheese.jpg')))
     view.setCacheMode(QGraphicsView.CacheBackground)
     view.setViewportUpdateMode(QGraphicsView.BoundingRectViewportUpdate)
     view.setDragMode(QGraphicsView.ScrollHandDrag)

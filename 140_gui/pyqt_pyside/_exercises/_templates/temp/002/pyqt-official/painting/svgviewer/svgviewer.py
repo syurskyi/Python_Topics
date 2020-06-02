@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ QFile, ?S.., __
-____ ?.?G.. ______ QBrush, ?C.., QImage, QPainter, QPixmap, QPen
+____ ?.?G.. ______ ?B.., ?C.., QImage, QPainter, ?P.., QPen
 ____ ?.?W.. ______ (QActionGroup, ?A.., ?FD..,
         QGraphicsItem, QGraphicsRectItem, QGraphicsScene, QGraphicsView,
         ?MW.., QMenu, ?MB.., ?W..)
@@ -179,7 +179,7 @@ c_ SvgView(QGraphicsView):
         setViewportUpdateMode(QGraphicsView.FullViewportUpdate)
 
         # Prepare background check-board pattern.
-        tilePixmap _ QPixmap(64, 64)
+        tilePixmap _ ?P..(64, 64)
         tilePixmap.fill(__.white)
         tilePainter _ QPainter(tilePixmap)
         color _ ?C..(220, 220, 220)
@@ -187,7 +187,7 @@ c_ SvgView(QGraphicsView):
         tilePainter.fillRect(32, 32, 32, 32, color)
         tilePainter.end()
 
-        setBackgroundBrush(QBrush(tilePixmap))
+        setBackgroundBrush(?B..(tilePixmap))
 
     ___ drawBackground  p, rect):
         p.save()
@@ -221,7 +221,7 @@ c_ SvgView(QGraphicsView):
         svgItem.setZValue(0)
 
         backgroundItem _ QGraphicsRectItem(svgItem.boundingRect())
-        backgroundItem.setBrush(__.white)
+        backgroundItem.sB..(__.white)
         backgroundItem.setPen(QPen(__.NoPen))
         backgroundItem.setVisible(drawBackground)
         backgroundItem.setZValue(-1)
@@ -230,7 +230,7 @@ c_ SvgView(QGraphicsView):
         outline _ QPen(__.black, 2, __.DashLine)
         outline.setCosmetic( st.
         outlineItem.setPen(outline)
-        outlineItem.setBrush(QBrush(__.NoBrush))
+        outlineItem.sB..(?B..(__.NoBrush))
         outlineItem.setVisible(drawOutline)
         outlineItem.setZValue(1)
 

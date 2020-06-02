@@ -48,8 +48,8 @@ ____ ?.?C.. ______ (pyqtProperty, QDirIterator, QEasingCurve, QEvent,
         QEventTransition, QHistoryState, QParallelAnimationGroup, QPointF,
         QPropertyAnimation, QRectF, QSequentialAnimationGroup, ?S.., QState,
         QStateMachine, __)
-____ ?.?G.. ______ (QBrush, ?C.., QFont, QLinearGradient, QPainter,
-        ?P.., QPen, QPixmap, QTransform)
+____ ?.?G.. ______ (?B.., ?C.., QFont, QLinearGradient, QPainter,
+        ?P.., QPen, ?P.., QTransform)
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsObject,
         QGraphicsProxyWidget, QGraphicsRotation, QGraphicsScene, QGraphicsView,
         QKeyEventTransition, ?W..)
@@ -232,7 +232,7 @@ c_ PadNavigator(QGraphicsView):
                 setVariablesSequence.addAnimation(setIconVisibleAnimation)
 
         scene _ QGraphicsScene
-        scene.setBackgroundBrush(QBrush(QPixmap(":/images/blue_angle_swirl.jpg")))
+        scene.setBackgroundBrush(?B..(?P..(":/images/blue_angle_swirl.jpg")))
         scene.setItemIndexMethod(QGraphicsScene.NoIndex)
         scene.aI..(pad)
         scene.setSceneRect(scene.itemsBoundingRect())
@@ -267,7 +267,7 @@ c_ RoundRectItem(QGraphicsObject):
 
         fillRect _ F..
         bounds _ QRectF(bounds)
-        pix _ QPixmap()
+        pix _ ?P..()
 
         gradient _ QLinearGradient()
         gradient.setStart(bounds.topLeft())
@@ -288,13 +288,13 @@ c_ RoundRectItem(QGraphicsObject):
 
     ___ paint  painter, option, widget):
         painter.setPen(__.NoPen)
-        painter.setBrush(?C..(0, 0, 0, 64))
+        painter.sB..(?C..(0, 0, 0, 64))
         painter.drawRoundedRect(bounds.translated(2, 2), 25.0, 25.0)
 
         __ fillRect:
-            painter.setBrush(?A...palette().brush(?P...Window))
+            painter.sB..(?A...p...brush(?P...Window))
         ____
-            painter.setBrush(gradient)
+            painter.sB..(gradient)
 
         painter.setPen(QPen(__.black, 1))
         painter.drawRoundedRect(bounds, 25.0, 25.0)
@@ -306,10 +306,10 @@ c_ RoundRectItem(QGraphicsObject):
         r_ bounds.adjusted(0, 0, 2, 2)
 
     ___ pixmap
-        r_ QPixmap(pix)
+        r_ ?P..(pix)
 
     ___ setPixmap  pixmap):
-        pix _ QPixmap(pixmap)
+        pix _ ?P..(pixmap)
         update()
 
 
@@ -372,7 +372,7 @@ c_ SplashItem(QGraphicsObject):
 
     ___ paint  painter, option, widget):
         painter.setPen(QPen(__.black, 2))
-        painter.setBrush(?C..(245, 245, 255, 220))
+        painter.sB..(?C..(245, 245, 255, 220))
         painter.setClipRect(boundingRect())
         painter.drawRoundedRect(3, -100 + 3, 400 - 6, 250 - 6, 25.0, 25.0)
 

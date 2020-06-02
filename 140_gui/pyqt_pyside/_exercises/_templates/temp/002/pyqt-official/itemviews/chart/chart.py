@@ -47,7 +47,7 @@ ______ math
 ____ ?.?C.. ______ (QByteArray, QFile, QItemSelection,
         QItemSelectionModel, QModelIndex, QPoint, QRect, ?S.., __,
         QTextStream)
-____ ?.?G.. ______ (QBrush, ?C.., QFontMetrics, QPainter, QPainterPath,
+____ ?.?G.. ______ (?B.., ?C.., QFontMetrics, QPainter, QPainterPath,
         ?P.., QPen, QRegion, QStandardItemModel)
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., ?FD..,
         ?MW.., QMenu, QRubberBand, QSplitter, QStyle, QTableView)
@@ -309,11 +309,11 @@ c_ PieView(QAbstractItemView):
                     color _ model().data(colorIndex, __.DecorationRole)
 
                     __ currentIndex() __ index:
-                        painter.setBrush(QBrush(color, __.Dense4Pattern))
+                        painter.sB..(?B..(color, __.Dense4Pattern))
                     ____ selections.isSelected(index):
-                        painter.setBrush(QBrush(color, __.Dense3Pattern))
+                        painter.sB..(?B..(color, __.Dense3Pattern))
                     ____
-                        painter.setBrush(QBrush(color))
+                        painter.sB..(?B..(color))
 
                     painter.drawPie(0, 0, pieSize, pieSize,
                             int(startAngle*16), int(angle*16))

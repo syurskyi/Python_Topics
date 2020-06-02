@@ -43,8 +43,8 @@
 
 
 ____ ?.?C.. ______ QPoint, QRect, ?S.., __
-____ ?.?G.. ______ (QBrush, QConicalGradient, QLinearGradient, QPainter,
-        QPainterPath, ?P.., QPen, QPixmap, QPolygon, QRadialGradient)
+____ ?.?G.. ______ (?B.., QConicalGradient, QLinearGradient, QPainter,
+        QPainterPath, ?P.., QPen, ?P.., QPolygon, QRadialGradient)
 ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, QGridLayout,
         QLabel, SB.., ?W..)
 
@@ -66,8 +66,8 @@ c_ RenderArea(?W..):
         super(RenderArea, self). - (parent)
 
         pen _ QPen()
-        brush _ QBrush()
-        pixmap _ QPixmap()
+        brush _ ?B..()
+        pixmap _ ?P..()
 
         shape _ RenderArea.Polygon
         antialiased _ F..
@@ -91,7 +91,7 @@ c_ RenderArea(?W..):
         pen _ pen
         update()
 
-    ___ setBrush  brush):
+    ___ sB..  brush):
         brush _ brush
         update()
 
@@ -116,7 +116,7 @@ c_ RenderArea(?W..):
 
         painter _ QPainter
         painter.setPen(pen)
-        painter.setBrush(brush)
+        painter.sB..(brush)
         __ antialiased:
             painter.setRenderHint(QPainter.Antialiasing)
 
@@ -160,8 +160,8 @@ c_ RenderArea(?W..):
 
                 painter.restore()
 
-        painter.setPen(palette().dark().color())
-        painter.setBrush(__.NoBrush)
+        painter.setPen(p...dark().color())
+        painter.sB..(__.NoBrush)
         painter.drawRect(QRect(0, 0, width() - 1, height() - 1))
 
 
@@ -320,23 +320,23 @@ c_ Window(?W..):
             linearGradient.setColorAt(0.0, __.white)
             linearGradient.setColorAt(0.2, __.green)
             linearGradient.setColorAt(1.0, __.black)
-            renderArea.setBrush(QBrush(linearGradient))
+            renderArea.sB..(?B..(linearGradient))
         ____ style __ __.RadialGradientPattern:
             radialGradient _ QRadialGradient(50, 50, 50, 70, 70)
             radialGradient.setColorAt(0.0, __.white)
             radialGradient.setColorAt(0.2, __.green)
             radialGradient.setColorAt(1.0, __.black)
-            renderArea.setBrush(QBrush(radialGradient))
+            renderArea.sB..(?B..(radialGradient))
         ____ style __ __.ConicalGradientPattern:
             conicalGradient _ QConicalGradient(50, 50, 150)
             conicalGradient.setColorAt(0.0, __.white)
             conicalGradient.setColorAt(0.2, __.green)
             conicalGradient.setColorAt(1.0, __.black)
-            renderArea.setBrush(QBrush(conicalGradient))
+            renderArea.sB..(?B..(conicalGradient))
         ____ style __ __.TexturePattern:
-            renderArea.setBrush(QBrush(QPixmap(':/images/brick.png')))
+            renderArea.sB..(?B..(?P..(':/images/brick.png')))
         ____
-            renderArea.setBrush(QBrush(__.green, style))
+            renderArea.sB..(?B..(__.green, style))
 
 
 __ ______ __ ______

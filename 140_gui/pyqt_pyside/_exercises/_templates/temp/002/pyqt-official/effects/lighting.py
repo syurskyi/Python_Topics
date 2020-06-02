@@ -45,8 +45,8 @@
 ______ math
 
 ____ ?.?C.. ______ QPointF, __, QTimer
-____ ?.?G.. ______ (QBrush, ?C.., QLinearGradient, QPen, QPainter,
-        QPixmap, QRadialGradient)
+____ ?.?G.. ______ (?B.., ?C.., QLinearGradient, QPen, QPainter,
+        ?P.., QRadialGradient)
 ____ ?.?W.. ______ (?A.., QFrame, QGraphicsDropShadowEffect,
         QGraphicsEllipseItem, QGraphicsRectItem, QGraphicsScene, QGraphicsView)
 
@@ -85,12 +85,12 @@ c_ Lighting(QGraphicsView):
         radialGrad.setColorAt(0.2, __.yellow)
         radialGrad.setColorAt(1, __.transparent)
 
-        pixmap _ QPixmap(60, 60)
+        pixmap _ ?P..(60, 60)
         pixmap.fill(__.transparent)
 
         painter _ QPainter(pixmap)
         painter.setPen(__.NoPen)
-        painter.setBrush(radialGrad)
+        painter.sB..(radialGrad)
         painter.drawEllipse(0, 0, 60, 60)
         painter.end()
 
@@ -105,7 +105,7 @@ c_ Lighting(QGraphicsView):
                     item _ QGraphicsRectItem(0, 0, 50, 50)
 
                 item.setPen(QPen(__.black, 1))
-                item.setBrush(QBrush(__.white))
+                item.sB..(?B..(__.white))
 
                 effect _ QGraphicsDropShadowEffect
                 effect.setBlurRadius(8)

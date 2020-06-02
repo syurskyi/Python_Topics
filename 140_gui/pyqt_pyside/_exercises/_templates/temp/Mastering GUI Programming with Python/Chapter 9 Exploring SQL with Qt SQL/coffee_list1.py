@@ -123,7 +123,7 @@ c_ MainWindow(qtw.?MW..):
         query1 _ qts.QSqlQuery(db)
         query1.prepare('SELECT * FROM coffees WHERE id=:id')
         query1.bindValue(':id', coffee_id)
-        query1.exec()
+        query1.e..
         query1.n__()
         coffee _ {
             'id': query1.value(0),
@@ -135,7 +135,7 @@ c_ MainWindow(qtw.?MW..):
         query2 _ qts.QSqlQuery()
         query2.prepare('SELECT * FROM reviews WHERE coffee_id=:id')
         query2.bindValue(':id', coffee_id)
-        query2.exec()
+        query2.e..
         reviews _   # list
         w__ query2.n__
             reviews.ap..((

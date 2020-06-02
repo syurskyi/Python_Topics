@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ (QByteArray, QDataStream, QFile, QIODevice, QMimeData,
         QPoint, QRect, QRectF, __, QTextStream)
 ____ ?.?G.. ______ (QDrag, QFont, QFontMetrics, QImage, QPainter,
-        ?P.., QPixmap, qRgba)
+        ?P.., ?P.., qRgba)
 ____ ?.?W.. ______ ?A.., QLabel, ?W..
 
 ______ fridgemagnets_rc
@@ -68,17 +68,17 @@ c_ DragLabel(QLabel):
         painter _ QPainter()
         painter.begin(image)
         painter.setRenderHint(QPainter.Antialiasing)
-        painter.setBrush(__.white)
+        painter.sB..(__.white)
         painter.drawRoundedRect(
                 QRectF(0.5, 0.5, image.width()-1, image.height()-1),
                 25, 25, __.RelativeSize)
 
         painter.setFont(font)
-        painter.setBrush(__.black)
+        painter.sB..(__.black)
         painter.drawText(QRect(QPoint(6, 6), size), __.AlignCenter, t__)
         painter.end()
 
-        setPixmap(QPixmap.fromImage(image))
+        setPixmap(?P...fromImage(image))
         labelText _ t__
 
     ___ mousePressEvent  event):
@@ -122,7 +122,7 @@ c_ DragWidget(?W..):
                 x _ 5
                 y +_ wordLabel.height() + 2
 
-        newPalette _ palette()
+        newPalette _ p..
         newPalette.sC..(?P...Window, __.white)
         sP..(newPalette)
 

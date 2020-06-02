@@ -74,9 +74,9 @@ c_ FileListModel(QAbstractListModel):
         __ role __ __.BackgroundRole:
             batch _ (index.row() // 100) % 2
             __ batch __ 0:
-                r_ ?A...palette().base()
+                r_ ?A...p...base()
 
-            r_ ?A...palette().alternateBase()
+            r_ ?A...p...alternateBase()
 
         r_ N..
 

@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ QDir, __, QTimer
-____ ?.?G.. ______ QPixmap
+____ ?.?G.. ______ ?P..
 ____ ?.?W.. ______ (?A.., QCheckBox, ?FD.., QGridLayout,
         QGroupBox, QHBoxLayout, QLabel, ?PB.., QSizePolicy, SB..,
         QVBoxLayout, ?W..)
@@ -105,7 +105,7 @@ c_ Screenshot(?W..):
         __ screen __ no. N..:
             originalPixmap _ screen.grabWindow(0)
         ____
-            originalPixmap _ QPixmap()
+            originalPixmap _ ?P..()
 
         updateScreenshotLabel()
 

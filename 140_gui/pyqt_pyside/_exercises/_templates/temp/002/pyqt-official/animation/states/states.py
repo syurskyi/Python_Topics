@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ (QPointF, QPropertyAnimation, QRect, QRectF,
         QSequentialAnimationGroup, QSizeF, QState, QStateMachine, __)
-____ ?.?G.. ______ QPixmap
+____ ?.?G.. ______ ?P..
 ____ ?.?W.. ______ (?A.., QGraphicsLinearLayout,
         QGraphicsObject, QGraphicsProxyWidget, QGraphicsScene, QGraphicsView,
         QGraphicsWidget, QGroupBox, ?PB.., QRadioButton, ?TE..,
@@ -57,7 +57,7 @@ c_ Pixmap(QGraphicsObject):
     ___  -   pix):
         super(Pixmap, self). - ()
 
-        p _ QPixmap(pix)
+        p _ ?P..(pix)
 
     ___ paint  painter, option, widget):
         painter.drawPixmap(QPointF(), p)
@@ -106,15 +106,15 @@ __ ______ __ ______
     layout.aI..(buttonProxy)
     widget.sL..(layout)
 
-    p1 _ Pixmap(QPixmap(':/digikam.png'))
-    p2 _ Pixmap(QPixmap(':/akregator.png'))
-    p3 _ Pixmap(QPixmap(':/accessories-dictionary.png'))
-    p4 _ Pixmap(QPixmap(':/k3b.png'))
-    p5 _ Pixmap(QPixmap(':/help-browser.png'))
-    p6 _ Pixmap(QPixmap(':/kchart.png'))
+    p1 _ Pixmap(?P..(':/digikam.png'))
+    p2 _ Pixmap(?P..(':/akregator.png'))
+    p3 _ Pixmap(?P..(':/accessories-dictionary.png'))
+    p4 _ Pixmap(?P..(':/k3b.png'))
+    p5 _ Pixmap(?P..(':/help-browser.png'))
+    p6 _ Pixmap(?P..(':/kchart.png'))
 
     scene _ QGraphicsScene(0, 0, 400, 300)
-    scene.setBackgroundBrush(scene.palette().window())
+    scene.setBackgroundBrush(scene.p...window())
     scene.aI..(widget)
     scene.aI..(boxProxy)
     scene.aI..(p1)

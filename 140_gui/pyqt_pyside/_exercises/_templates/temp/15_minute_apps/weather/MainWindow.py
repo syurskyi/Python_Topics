@@ -26,7 +26,7 @@ c_ Ui_MainWindow(object):
         pushButton _ ?W...?PB..(centralwidget)
         pushButton.sT..("")
         icon _ ?G...QIcon()
-        icon.addPixmap(?G...QPixmap("images/arrow-circle-225.png"), ?G...QIcon.Normal, ?G...QIcon.Off)
+        icon.addPixmap(?G...?P..("images/arrow-circle-225.png"), ?G...QIcon.Normal, ?G...QIcon.Off)
         pushButton.setIcon(icon)
         pushButton.setObjectName("pushButton")
         horizontalLayout_3.aW..(pushButton)

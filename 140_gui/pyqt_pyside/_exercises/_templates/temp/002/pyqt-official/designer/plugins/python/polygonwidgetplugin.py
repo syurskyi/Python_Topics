@@ -23,7 +23,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 """
 
-____ ?.?G.. ______ QIcon, QPixmap
+____ ?.?G.. ______ QIcon, ?P..
 ____ ?.QtDesigner ______ QPyDesignerCustomWidgetPlugin
 
 ____ polygonwidget ______ PolygonWidget
@@ -172,4 +172,4 @@ _logo_16x16_xpm _ [
 "#bbbbbbbbcdbbbbe",
 "aeeeeeeeeeeeeeeR"]
 
-_logo_pixmap _ QPixmap(_logo_16x16_xpm)
+_logo_pixmap _ ?P..(_logo_16x16_xpm)

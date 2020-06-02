@@ -46,7 +46,7 @@ ______ ___
 ______ math
 
 ____ ?.?C.. ______ pS.., ?S.., __, QTimer
-____ ?.?G.. ______ QOpenGLVersionProfile, QPixmap
+____ ?.?G.. ______ QOpenGLVersionProfile, ?P..
 ____ ?.?W.. ______ (?A.., ?A.., QGridLayout, QLabel,
         QLineEdit, ?MW.., ?MB.., QOpenGLWidget, QScrollArea,
         QSizePolicy, QSlider, ?W..)
@@ -330,10 +330,10 @@ c_ MainWindow ?MW..
 
     ___ grabFrameBuffer
         image _ glWidget.grabFramebuffer()
-        setPixmap(QPixmap.fromImage(image))
+        setPixmap(?P...fromImage(image))
 
     ___ clearPixmap
-        setPixmap(QPixmap())
+        setPixmap(?P..())
 
     ___ about
         ?MB...about  "About Grabber",

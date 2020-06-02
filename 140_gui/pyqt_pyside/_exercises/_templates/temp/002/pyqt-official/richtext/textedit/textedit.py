@@ -48,7 +48,7 @@ ______ ___
 
 ____ ?.?C.. ______ QFile, QFileInfo, __, QTextCodec
 ____ ?.?G.. ______ (QFont, QFontDatabase, QFontInfo, QIcon, ?KS..,
-        QPixmap, QTextBlockFormat, QTextCharFormat, QTextCursor,
+        ?P.., QTextBlockFormat, QTextCharFormat, QTextCursor,
         QTextDocumentWriter, QTextListFormat)
 ____ ?.?W.. ______ (?A.., QActionGroup, ?A.., QColorDialog,
         ?CB, ?FD.., QFontComboBox, ?MW.., QMenu, ?MB..,
@@ -343,7 +343,7 @@ c_ TextEdit ?MW..
         menu.addActions(grp.actions())
         menu.addSeparator()
 
-        pix _ QPixmap(16, 16)
+        pix _ ?P..(16, 16)
         pix.fill(__.black)
         actionTextColor _ ?A..(QIcon(pix), "&Color...", self,
                 triggered_self.textColor)
@@ -628,7 +628,7 @@ c_ TextEdit ?MW..
         actionTextUnderline.sC__(font.underline())
 
     ___ colorChanged  color):
-        pix _ QPixmap(16, 16)
+        pix _ ?P..(16, 16)
         pix.fill(color)
         actionTextColor.setIcon(QIcon(pix))
 

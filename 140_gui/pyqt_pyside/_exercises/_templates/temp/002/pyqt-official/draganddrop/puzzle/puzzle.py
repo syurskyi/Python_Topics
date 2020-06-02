@@ -46,7 +46,7 @@ ______ random
 
 ____ ?.?C.. ______ (pS.., QByteArray, QDataStream, QIODevice,
         QMimeData, QPoint, QRect, ?S.., __)
-____ ?.?G.. ______ QDrag, ?C.., QCursor, QIcon, QPainter, QPixmap
+____ ?.?G.. ______ QDrag, ?C.., QCursor, QIcon, QPainter, ?P..
 ____ ?.?W.. ______ (?A.., ?FD.., QFrame, QHBoxLayout,
         QListView, QListWidget, QListWidgetItem, ?MW.., ?MB..,
         QSizePolicy, ?W..)
@@ -109,7 +109,7 @@ c_ PuzzleWidget(?W..):
             pieceData _ event.mimeData().data('image/x-puzzle-piece')
             dataStream _ QDataStream(pieceData, QIODevice.ReadOnly)
             square _ targetSquare(event.pos())
-            pixmap _ QPixmap()
+            pixmap _ ?P..()
             location _ QPoint()
             dataStream >> pixmap >> location
 
@@ -183,7 +183,7 @@ c_ PuzzleWidget(?W..):
         painter.fillRect(event.rect(), __.white)
 
         __ highlightedRect.isValid
-            painter.setBrush(?C..("#ffcccc"))
+            painter.sB..(?C..("#ffcccc"))
             painter.setPen(__.NoPen)
             painter.drawRect(highlightedRect.adjusted(0, 0, -1, -1))
 
@@ -224,7 +224,7 @@ c_ PiecesList(QListWidget):
         __ event.mimeData().hasFormat('image/x-puzzle-piece'):
             pieceData _ event.mimeData().data('image/x-puzzle-piece')
             dataStream _ QDataStream(pieceData, QIODevice.ReadOnly)
-            pixmap _ QPixmap()
+            pixmap _ ?P..()
             location _ QPoint()
             dataStream >> pixmap >> location
 
@@ -247,7 +247,7 @@ c_ PiecesList(QListWidget):
 
         itemData _ QByteArray()
         dataStream _ QDataStream(itemData, QIODevice.WriteOnly)
-        pixmap _ QPixmap(item.data(__.UserRole))
+        pixmap _ ?P..(item.data(__.UserRole))
         location _ item.data(__.UserRole+1)
 
         dataStream << pixmap << location
@@ -269,7 +269,7 @@ c_ MainWindow ?MW..
     ___  -   parent_None):
         super(MainWindow, self). - (parent)
 
-        puzzleImage _ QPixmap()
+        puzzleImage _ ?P..()
 
         setupMenus()
         setupWidgets()
@@ -283,7 +283,7 @@ c_ MainWindow ?MW..
                     "Image Files (*.png *.jpg *.bmp)")
 
         __ pa__:
-            newImage _ QPixmap()
+            newImage _ ?P..()
             __ no. newImage.load(pa__):
                 ?MB...warning  "Open Image",
                         "The image file could not be loaded.",

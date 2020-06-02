@@ -27,7 +27,7 @@ ______ random
 
 ____ ?.?C.. ______ (pyqtProperty, pS.., pyqtSlot, QPointF, QRectF,
         ?S.., QSizeF, __, QTimer)
-____ ?.?G.. ______ QBrush, ?C.., QPainter, QPen, QRadialGradient
+____ ?.?G.. ______ ?B.., ?C.., QPainter, QPen, QRadialGradient
 ____ ?.?W.. ______ ?A.., ?W..
 
 
@@ -85,14 +85,14 @@ c_ Bubble:
         gradient.setColorAt(0, ?C..(255, 255, 255, 255))
         gradient.setColorAt(0.25, innerColor)
         gradient.setColorAt(1, outerColor)
-        brush _ QBrush(gradient)
+        brush _ ?B..(gradient)
 
     ___ drawBubble  painter):
 
         painter.save()
         painter.translate(position.x() - radius,
                           position.y() - radius)
-        painter.setBrush(brush)
+        painter.sB..(brush)
         painter.drawEllipse(0.0, 0.0, 2*radius, 2*radius)
         painter.restore()
 
@@ -146,7 +146,7 @@ c_ BubblesWidget(BaseClass):
         painter _ QPainter()
         painter.begin
         painter.setRenderHint(QPainter.Antialiasing)
-        painter.fillRect(event.rect(), QBrush(background))
+        painter.fillRect(event.rect(), ?B..(background))
 
         painter.setPen(pen)
 

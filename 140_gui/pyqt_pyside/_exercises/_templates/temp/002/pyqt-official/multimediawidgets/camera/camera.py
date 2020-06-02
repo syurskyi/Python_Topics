@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ QByteArray, qFuzzyCompare, __, QTimer
-____ ?.?G.. ______ ?P.., QPixmap
+____ ?.?G.. ______ ?P.., ?P..
 ____ ?.QtMultimedia ______ (QAudioEncoderSettings, QCamera,
         QCameraImageCapture, QImageEncoderSettings, QMediaMetaData,
         QMediaRecorder, QMultimedia, QVideoEncoderSettings)
@@ -344,7 +344,7 @@ c_ Camera ?MW..
         scaledImage _ img.scaled(ui.viewfinder.size(), __.KeepAspectRatio,
                 __.SmoothTransformation)
 
-        ui.lastImagePreviewLabel.setPixmap(QPixmap.fromImage(scaledImage))
+        ui.lastImagePreviewLabel.setPixmap(?P...fromImage(scaledImage))
 
         displayCapturedImage()
         QTimer.singleShot(4000, displayViewfinder)
@@ -416,7 +416,7 @@ c_ Camera ?MW..
                 ui.statusbar.showMessage("Focus Failed", 2000)
                 indicationColor _ __.red
 
-        palette _ ui.lockButton.palette()
+        palette _ ui.lockButton.p..
         palette.sC..(?P...ButtonText, indicationColor)
         ui.lockButton.sP..(palette)
 

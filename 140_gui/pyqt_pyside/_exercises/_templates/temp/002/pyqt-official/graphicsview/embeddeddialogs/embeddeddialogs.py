@@ -44,7 +44,7 @@
 
 
 ____ ?.?C.. ______ QEvent, QRectF, __, QTimeLine
-____ ?.?G.. ______ (QBrush, ?C.., QPainter, QPainterPath, QPixmap,
+____ ?.?G.. ______ (?B.., ?C.., QPainter, QPainterPath, ?P..,
         QTransform)
 ____ ?.?W.. ______ (?A.., QDialog, QGraphicsItem,
         QGraphicsProxyWidget, QGraphicsScene, QGraphicsView, QStyleFactory,
@@ -81,7 +81,7 @@ c_ CustomProxy(QGraphicsProxyWidget):
             pa__.addRect(right)
             pa__.addRect(bottom)
             painter.setPen(__.NoPen)
-            painter.setBrush(color)
+            painter.sB..(color)
             painter.drawPath(pa__)
         ____ intersectsBottom:
             painter.fillRect(bottom, color)
@@ -229,7 +229,7 @@ __ ______ __ ______
     view _ QGraphicsView(scene)
     view.scale(0.5, 0.5)
     view.setRenderHints(view.renderHints() | QPainter.Antialiasing  | QPainter.SmoothPixmapTransform)
-    view.setBackgroundBrush(QBrush(QPixmap(':/No-Ones-Laughing-3.jpg')))
+    view.setBackgroundBrush(?B..(?P..(':/No-Ones-Laughing-3.jpg')))
     view.setViewportUpdateMode(QGraphicsView.BoundingRectViewportUpdate)
     view.s..
     view.sWT..("Embedded Dialogs Demo")

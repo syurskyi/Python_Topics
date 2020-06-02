@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ QFileInfo, QRegExp, ?S.., __
-____ ?.?G.. ______ QIcon, QImage, ?P.., QPixmap
+____ ?.?G.. ______ QIcon, QImage, ?P.., ?P..
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., QActionGroup,
         ?A.., ?CB, ?FD.., QFrame, QGridLayout, QGroupBox,
         QHBoxLayout, QHeaderView, QItemDelegate, QLabel, ?MW..,
@@ -291,7 +291,7 @@ c_ MainWindow ?MW..
                 fileName _ item0.data(__.UserRole)
                 image _ QImage(fileName)
                 __ no. image.isNull
-                    icon.addPixmap(QPixmap.fromImage(image), mode, state)
+                    icon.addPixmap(?P...fromImage(image), mode, state)
 
         previewArea.setIcon(icon)
 

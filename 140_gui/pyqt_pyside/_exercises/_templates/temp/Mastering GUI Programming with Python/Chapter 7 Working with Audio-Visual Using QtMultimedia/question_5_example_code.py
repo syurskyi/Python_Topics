@@ -43,4 +43,4 @@ c_ MainWindow ?.?W..
 __ ______ __ ______
     app _ qtw.?
     mw _ MainWindow()
-    app.exec()
+    app.e..

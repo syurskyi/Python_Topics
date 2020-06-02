@@ -41,7 +41,7 @@
 
 
 ____ ?.?C.. ______ QPointF, QRectF, qRound
-____ ?.?G.. ______ ?C.., QPainter, QPixmap, QTransform
+____ ?.?G.. ______ ?C.., QPainter, ?P.., QTransform
 ____ ?.?W.. ______ QGraphicsObject
 
 ____ colors ______ Colors
@@ -181,9 +181,9 @@ c_ DemoItem(QGraphicsObject):
 
                 __ Colors.usePixmaps:
                     __ image.isNull
-                        _sharedImage.pixmap _ QPixmap(1, 1)
+                        _sharedImage.pixmap _ ?P..(1, 1)
                     ____
-                        _sharedImage.pixmap _ QPixmap(image.size())
+                        _sharedImage.pixmap _ ?P..(image.size())
 
                     _sharedImage.pixmap.fill(?C..(0, 0, 0, 0))
                     painter _ QPainter(_sharedImage.pixmap)

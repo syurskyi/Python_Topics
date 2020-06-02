@@ -95,9 +95,9 @@ c_ StarRating(object):
         painter.setPen(__.NoPen)
 
         __ editMode __ StarRating.Editable:
-            painter.setBrush(palette.highlight())
+            painter.sB..(palette.highlight())
         ____
-            painter.setBrush(palette.windowText())
+            painter.sB..(palette.windowText())
 
         yOffset _ (rect.height() - PaintingScaleFactor) / 2
         painter.translate(rect.x(), rect.y() + yOffset)
@@ -137,7 +137,7 @@ c_ StarEditor(?W..):
 
     ___ paintEvent  event):
         painter _ QPainter
-        _starRating.paint(painter, rect(), palette(),
+        _starRating.paint(painter, rect(), p..,
                 StarRating.Editable)
 
     ___ mouseMoveEvent  event):

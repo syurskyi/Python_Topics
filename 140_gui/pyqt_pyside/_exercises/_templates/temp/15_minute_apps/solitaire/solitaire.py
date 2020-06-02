@@ -60,11 +60,11 @@ class Card(QGraphicsPixmapItem):
         load_images()
 
     def load_images 
-        face = QPixmap(
+        face = ?P..(
             os.pa__.join('cards', '%s%s.png' % (value, suit))
         )
 
-        back = QPixmap(
+        back = ?P..(
             os.pa__.join('images', 'back.png')
         )
 
@@ -241,8 +241,8 @@ class DeckStack(StackBase):
     def set_color(self, color):
         color = QColor(color)
         color.setAlpha(50)
-        brush = QBrush(color)
-        setBrush(brush)
+        brush = ?B..(color)
+        sB..(brush)
         setPen(QPen(Qt.NoPen))
 
     def is_valid_drop(self, card):
@@ -260,8 +260,8 @@ class DealStack(StackBase):
         setPen(QPen(Qt.NoPen))
         color = QColor(Qt.black)
         color.setAlpha(50)
-        brush = QBrush(color)
-        setBrush(brush)
+        brush = ?B..(color)
+        sB..(brush)
 
     def reset 
         super(DealStack, self).reset()
@@ -294,8 +294,8 @@ class WorkStack(StackBase):
         setPen(QPen(Qt.NoPen))
         color = QColor(Qt.black)
         color.setAlpha(50)
-        brush = QBrush(color)
-        setBrush(brush)
+        brush = ?B..(color)
+        sB..(brush)
 
     def activate 
         # Raise z-value of this stack so children float above all other cards.
@@ -438,11 +438,11 @@ class MainWindow(?MW..):
         scene = QGraphicsScene()
         scene.setSceneRect(QRectF(0, 0, *WINDOW_SIZE))
 
-        felt = QBrush(QPixmap(os.pa__.join('images','felt.png')))
+        felt = ?B..(?P..(os.pa__.join('images','felt.png')))
         scene.setBackgroundBrush(felt)
 
         name = QGraphicsPixmapItem()
-        name.setPixmap(QPixmap(os.pa__.join('images','ronery.png')))
+        name.setPixmap(?P..(os.pa__.join('images','ronery.png')))
         name.setPos(QPointF(170, 375))
         scene.aI..(name)
 

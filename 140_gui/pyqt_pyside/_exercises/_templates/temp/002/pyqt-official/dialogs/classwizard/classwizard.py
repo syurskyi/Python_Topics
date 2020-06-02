@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ QDir, QFile, QRegExp
-____ ?.?G.. ______ QPixmap
+____ ?.?G.. ______ ?P..
 ____ ?.?W.. ______ (?A.., QCheckBox, QGridLayout, QGroupBox,
         QLabel, QLineEdit, ?MB.., QRadioButton, QVBoxLayout, QWizard,
         QWizardPage)
@@ -61,9 +61,9 @@ c_ ClassWizard(QWizard):
         addPage(OutputFilesPage())
         addPage(ConclusionPage())
 
-        setPixmap(QWizard.BannerPixmap, QPixmap(':/images/banner.png'))
+        setPixmap(QWizard.BannerPixmap, ?P..(':/images/banner.png'))
         setPixmap(QWizard.BackgroundPixmap,
-                QPixmap(':/images/background.png'))
+                ?P..(':/images/background.png'))
 
         sWT..("Class Wizard")
 
@@ -196,7 +196,7 @@ c_ IntroPage(QWizardPage):
 
         setTitle("Introduction")
         setPixmap(QWizard.WatermarkPixmap,
-                QPixmap(':/images/watermark1.png'))
+                ?P..(':/images/watermark1.png'))
 
         label _ QLabel("This wizard will generate a skeleton C++ class "
                 "definition, including a few functions. You simply need to "
@@ -217,7 +217,7 @@ c_ ClassInfoPage(QWizardPage):
         setTitle("Class Information")
         setSubTitle("Specify basic information about the class for "
                 "which you want to generate skeleton source code files.")
-        setPixmap(QWizard.LogoPixmap, QPixmap(':/images/logo1.png'))
+        setPixmap(QWizard.LogoPixmap, ?P..(':/images/logo1.png'))
 
         classNameLabel _ QLabel("&Class name:")
         classNameLineEdit _ ?LE..
@@ -271,7 +271,7 @@ c_ CodeStylePage(QWizardPage):
 
         setTitle("Code Style Options")
         setSubTitle("Choose the formatting of the generated code.")
-        setPixmap(QWizard.LogoPixmap, QPixmap(':/images/logo2.png'))
+        setPixmap(QWizard.LogoPixmap, ?P..(':/images/logo2.png'))
 
         commentCheckBox _ QCheckBox("&Start generated files with a comment")
         commentCheckBox.sC__( st.
@@ -338,7 +338,7 @@ c_ OutputFilesPage(QWizardPage):
         setTitle("Output Files")
         setSubTitle("Specify where you want the wizard to put the "
                 "generated skeleton code.")
-        setPixmap(QWizard.LogoPixmap, QPixmap(':/images/logo3.png'))
+        setPixmap(QWizard.LogoPixmap, ?P..(':/images/logo3.png'))
 
         outputDirLabel _ QLabel("&Output directory:")
         outputDirLineEdit _ ?LE..
@@ -378,7 +378,7 @@ c_ ConclusionPage(QWizardPage):
 
         setTitle("Conclusion")
         setPixmap(QWizard.WatermarkPixmap,
-                QPixmap(':/images/watermark2.png'))
+                ?P..(':/images/watermark2.png'))
 
         label _ QLabel()
         label.setWordWrap( st.

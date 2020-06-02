@@ -47,8 +47,8 @@ c_ GraphWidget ?.?W..
         painter _ qtg.QPainter
 
         # draw the background
-        brush _ qtg.QBrush(qtg.?C..(48, 48, 48))
-        painter.setBrush(brush)
+        brush _ qtg.?B..(qtg.?C..(48, 48, 48))
+        painter.sB..(brush)
         painter.drawRect(0, 0, width(), height())
 
         # draw the boundary lines
@@ -77,8 +77,8 @@ c_ GraphWidget ?.?W..
         gradient.setColorAt(
             crit_val/(maximum - minimum),
             crit_color)
-        brush _ qtg.QBrush(gradient)
-        painter.setBrush(brush)
+        brush _ qtg.?B..(gradient)
+        painter.sB..(brush)
         painter.setPen(qtc.__.NoPen)
 
         # Draw the paths for the chart

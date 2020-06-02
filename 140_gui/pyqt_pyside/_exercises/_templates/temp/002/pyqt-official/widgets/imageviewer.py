@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ QDir, __
-____ ?.?G.. ______ QImage, QPainter, ?P.., QPixmap
+____ ?.?G.. ______ QImage, QPainter, ?P.., ?P..
 ____ ?.?W.. ______ (?A.., ?A.., ?FD.., QLabel,
         ?MW.., QMenu, ?MB.., QScrollArea, QSizePolicy)
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
@@ -82,7 +82,7 @@ c_ ImageViewer ?MW..
                         "Cannot load %s." % fileName)
                 r_
 
-            imageLabel.setPixmap(QPixmap.fromImage(image))
+            imageLabel.setPixmap(?P...fromImage(image))
             scaleFactor _ 1.0
 
             printAct.sE..( st.

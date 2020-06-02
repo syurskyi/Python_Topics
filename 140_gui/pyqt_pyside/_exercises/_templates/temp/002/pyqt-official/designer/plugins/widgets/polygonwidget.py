@@ -26,7 +26,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 ______ math
 
 ____ ?.?C.. ______ pyqtProperty, pyqtSlot, QPointF, ?S..
-____ ?.?G.. ______ QBrush, ?C.., QPainter, QPainterPath, QRadialGradient
+____ ?.?G.. ______ ?B.., ?C.., QPainter, QPainterPath, QRadialGradient
 ____ ?.?W.. ______ ?A.., ?W..
 
 
@@ -58,12 +58,12 @@ c_ PolygonWidget(?W..):
         painter _ QPainter()
         painter.begin
         painter.setRenderHint(QPainter.Antialiasing)
-        painter.setBrush(QBrush(?C..(192, 192, 255)))
+        painter.sB..(?B..(?C..(192, 192, 255)))
         painter.drawRect(event.rect())
         
         painter.translate(width()/2.0, height()/2.0)
         painter.rotate(_angle)
-        painter.setBrush(QBrush(gradient))
+        painter.sB..(?B..(gradient))
         painter.drawPath(pa__)
         painter.end()
     

@@ -3,7 +3,7 @@
 # Copyright (c) 2013 Riverbank Computing Limited
 
 
-____ ?.?G.. ______ QIcon, QPixmap
+____ ?.?G.. ______ QIcon, ?P..
 ____ ?.QtDesigner ______ QPyDesignerCustomWidgetPlugin
 
 ____ pydemo ______ PyDemo
@@ -165,4 +165,4 @@ _logo_16x16_xpm _ [
 "6666666666666666",
 "BBBBBBBBBBBBBBBB"]
 
-_logo_pixmap _ QPixmap(_logo_16x16_xpm)
+_logo_pixmap _ ?P..(_logo_16x16_xpm)

@@ -81,12 +81,12 @@ c_ TTTBoard(qtw.QGraphicsScene):
     ___  -
         s_. - ()
         setSceneRect(0, 0, 600, 600)
-        setBackgroundBrush(qtg.QBrush(qtc.__.cyan))
+        setBackgroundBrush(qtg.?B..(qtc.__.cyan))
         ___ square __ square_rects:
-            addRect(square, brush_qtg.QBrush(qtc.__.white))
+            addRect(square, brush_qtg.?B..(qtc.__.white))
         mark_pngs _ {
-            'X': qtg.QPixmap('X.png'),
-            'O': qtg.QPixmap('O.png')
+            'X': qtg.?P..('X.png'),
+            'O': qtg.?P..('O.png')
         }
         marks _   # list
 

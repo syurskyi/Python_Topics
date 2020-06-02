@@ -56,7 +56,7 @@ c_ EqualizerBar(?W...?W..):
     ___ paintEvent  e):
         painter _ ?G...QPainter
 
-        brush _ ?G...QBrush()
+        brush _ ?G...?B..()
         brush.sC..(_background_color)
         brush.setStyle(__.SolidPattern)
         rect _ ?C...QRect(0, 0, painter.device().width(), painter.device().height())

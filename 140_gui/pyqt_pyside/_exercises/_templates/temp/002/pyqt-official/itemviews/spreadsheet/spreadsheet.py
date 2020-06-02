@@ -41,7 +41,7 @@
 
 
 ____ ?.?C.. ______ QDate, QPoint, __
-____ ?.?G.. ______ ?C.., QIcon, ?KS.., QPainter, QPixmap
+____ ?.?G.. ______ ?C.., QIcon, ?KS.., QPainter, ?P..
 ____ ?.?W.. ______ (?A.., QActionGroup, ?A.., QColorDialog,
         ?CB, QDialog, QFontDialog, QGroupBox, QHBoxLayout, QLabel,
         QLineEdit, ?MW.., ?MB.., ?PB.., QTableWidget,
@@ -118,7 +118,7 @@ c_ SpreadSheet ?MW..
         fontAction.sS..(__.CTRL | __.Key_F)
         fontAction.t__.c..(selectFont)
 
-        colorAction _ ?A..(QIcon(QPixmap(16, 16)), "Background &Color...", self)
+        colorAction _ ?A..(QIcon(?P..(16, 16)), "Background &Color...", self)
         colorAction.t__.c..(selectColor)
 
         clearAction _ ?A..("Clear", self)
@@ -185,12 +185,12 @@ c_ SpreadSheet ?MW..
                                                                      table.column(item)))
 
     ___ updateColor  item):
-        pixmap _ QPixmap(16, 16)
+        pixmap _ ?P..(16, 16)
         color _ ?C..()
         __ item:
             color _ item.backgroundColor()
         __ no. color.isValid
-            color _ palette().base().color()
+            color _ p...base().color()
         painter _ QPainter(pixmap)
         painter.fillRect(0, 0, 16, 16, color)
         lighter _ color.lighter()
@@ -224,7 +224,7 @@ c_ SpreadSheet ?MW..
 
     ___ selectColor 
         item _ table.currentItem()
-        color _ item and ?C..(item.background()) or table.palette().base().color()
+        color _ item and ?C..(item.background()) or table.p...base().color()
         color _ QColorDialog.getColor(color, self)
         __ no. color.isValid
             r_
@@ -537,7 +537,7 @@ __ ______ __ ______
 
     app _ ?A..(___.a..
     sheet _ SpreadSheet(10, 6)
-    sheet.setWindowIcon(QIcon(QPixmap(":/images/interview.png")))
+    sheet.setWindowIcon(QIcon(?P..(":/images/interview.png")))
     sheet.r..(640, 420)
     sheet.s..
     ___.e..(app.exec_())

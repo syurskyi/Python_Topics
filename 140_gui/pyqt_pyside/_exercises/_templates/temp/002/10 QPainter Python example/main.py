@@ -7,7 +7,7 @@ c_ PlainTextEdit(QPlainTextEdit):
     ___  -
         s_. - ()
         _holes _   # list
-        _bullet _ QPixmap("bullet.png")
+        _bullet _ ?P..("bullet.png")
         size _ _bullet.size()
         _offset _ QPoint(size.width() / 2, size.height() / 2)
     ___ mousePressEvent  e):

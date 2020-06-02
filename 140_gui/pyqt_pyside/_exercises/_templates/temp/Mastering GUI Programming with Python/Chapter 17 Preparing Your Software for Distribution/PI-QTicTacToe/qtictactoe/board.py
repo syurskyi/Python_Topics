@@ -25,17 +25,17 @@ c_ TTTBoard(qtw.QGraphicsScene):
     ___  -  
         s_. - ()
         setSceneRect(0, 0, 600, 600)
-        setBackgroundBrush(qtg.QBrush(qtc.__.cyan))
+        setBackgroundBrush(qtg.?B..(qtc.__.cyan))
         ___ square __ square_rects:
-            addRect(square, brush_qtg.QBrush(qtc.__.white))
+            addRect(square, brush_qtg.?B..(qtc.__.white))
 
         __ getattr(___, 'frozen', F..):
             directory _ ___._MEIPASS
         ____  # Not frozen
             directory _ pa__.dirname(__file__)
         mark_pngs _ {
-            'X': qtg.QPixmap(pa__.join(directory, 'images', 'X.png')),
-            'O': qtg.QPixmap(pa__.join(directory, 'images', 'O.png'))
+            'X': qtg.?P..(pa__.join(directory, 'images', 'X.png')),
+            'O': qtg.?P..(pa__.join(directory, 'images', 'O.png'))
         }
         marks _   # list
 

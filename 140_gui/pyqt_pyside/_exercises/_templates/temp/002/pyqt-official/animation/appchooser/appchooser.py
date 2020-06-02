@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ (pS.., QPointF, QPropertyAnimation, QRect,
         QRectF, QState, QStateMachine, __)
-____ ?.?G.. ______ QPixmap
+____ ?.?G.. ______ ?P..
 ____ ?.?W.. ______ (?A.., QGraphicsScene, QGraphicsView,
         QGraphicsWidget)
 
@@ -57,8 +57,8 @@ c_ Pixmap(QGraphicsWidget):
     ___  -   pix, parent_None):
         super(Pixmap, self). - (parent)
 
-        orig _ QPixmap(pix)
-        p _ QPixmap(pix)
+        orig _ ?P..(pix)
+        p _ ?P..(pix)
 
     ___ paint  painter, option, widget):
         painter.drawPixmap(QPointF(), p)
@@ -72,7 +72,7 @@ c_ Pixmap(QGraphicsWidget):
         __ rect.size().width() > orig.size().width
             p _ orig.scaled(rect.size().toSize())
         ____
-            p _ QPixmap(orig)
+            p _ ?P..(orig)
 
 
 ___ createStates(objects, selectedRect, parent):
@@ -94,10 +94,10 @@ __ ______ __ ______
 
     app _ ?A..(___.a..
 
-    p1 _ Pixmap(QPixmap(':/digikam.png'))
-    p2 _ Pixmap(QPixmap(':/akregator.png'))
-    p3 _ Pixmap(QPixmap(':/accessories-dictionary.png'))
-    p4 _ Pixmap(QPixmap(':/k3b.png'))
+    p1 _ Pixmap(?P..(':/digikam.png'))
+    p2 _ Pixmap(?P..(':/akregator.png'))
+    p3 _ Pixmap(?P..(':/accessories-dictionary.png'))
+    p4 _ Pixmap(?P..(':/k3b.png'))
 
     p1.setGeometry(QRectF(0.0, 0.0, 64.0, 64.0))
     p2.setGeometry(QRectF(236.0, 0.0, 64.0, 64.0))

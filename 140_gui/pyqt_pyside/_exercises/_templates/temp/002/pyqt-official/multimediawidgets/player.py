@@ -61,7 +61,7 @@ c_ VideoWidget(QVideoWidget):
 
         sSP..(QSizePolicy.Ignored, QSizePolicy.Ignored)
 
-        p _ palette()
+        p _ p..
         p.sC..(?P...Window, __.black)
         sP..(p)
 

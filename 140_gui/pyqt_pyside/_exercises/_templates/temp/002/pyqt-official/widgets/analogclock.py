@@ -83,7 +83,7 @@ c_ AnalogClock(?W..):
         painter.scale(side / 200.0, side / 200.0)
 
         painter.setPen(__.NoPen)
-        painter.setBrush(AnalogClock.hourColor)
+        painter.sB..(AnalogClock.hourColor)
 
         painter.save()
         painter.rotate(30.0 * ((time.hour() + time.minute() / 60.0)))
@@ -97,7 +97,7 @@ c_ AnalogClock(?W..):
             painter.rotate(30.0)
 
         painter.setPen(__.NoPen)
-        painter.setBrush(AnalogClock.minuteColor)
+        painter.sB..(AnalogClock.minuteColor)
 
         painter.save()
         painter.rotate(6.0 * (time.minute() + time.second() / 60.0))

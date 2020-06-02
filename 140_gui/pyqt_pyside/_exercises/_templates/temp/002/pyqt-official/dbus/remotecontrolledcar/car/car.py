@@ -45,7 +45,7 @@
 ______ math
 
 ____ ?.?C.. ______ pyqtSlot, Q_CLASSINFO, QRectF, __
-____ ?.?G.. ______ QBrush, QPainter, QTransform
+____ ?.?G.. ______ ?B.., QPainter, QTransform
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsObject,
         QGraphicsScene, QGraphicsView)
 ____ ?.QtDBus ______ QDBusAbstractAdaptor, QDBusConnection
@@ -56,7 +56,7 @@ c_ Car(QGraphicsObject):
     ___  -
         super(Car, self). - ()
 
-        color _ QBrush(__.green)
+        color _ ?B..(__.green)
         wheelsAngle _ 0.0
         speed _ 0.0
 
@@ -96,11 +96,11 @@ c_ Car(QGraphicsObject):
         update()
 
     ___ paint  painter, option, widget):
-        painter.setBrush(__.gray)
+        painter.sB..(__.gray)
         painter.drawRect(-20, -58, 40, 2)       # Front axel
         painter.drawRect(-20, 7, 40, 2)         # Rear axel
 
-        painter.setBrush(color)
+        painter.sB..(color)
         painter.drawRect(-25, -79, 50, 10)      # Front wing
 
         painter.drawEllipse(-25, -48, 50, 20)   # Side pods
@@ -111,7 +111,7 @@ c_ Car(QGraphicsObject):
 
         painter.drawRect(-17, 19, 34, 15)       # Rear wing
 
-        painter.setBrush(__.black)
+        painter.sB..(__.black)
         painter.drawPie(-5, -51, 10, 15, 0, 180 * 16)
         painter.drawRect(-5, -44, 10, 10)       # Cockpit
 

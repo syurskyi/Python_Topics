@@ -46,8 +46,8 @@ ______ math
 
 ____ ?.?C.. ______ (pS.., QLineF, QPointF, QRect, QRectF, ?S..,
         QSizeF, __)
-____ ?.?G.. ______ (QBrush, ?C.., QFont, QIcon, QIntValidator, QPainter,
-        QPainterPath, QPen, QPixmap, QPolygonF)
+____ ?.?G.. ______ (?B.., ?C.., QFont, QIcon, QIntValidator, QPainter,
+        QPainterPath, QPen, ?P.., QPolygonF)
 ____ ?.?W.. ______ (?A.., ?A.., QButtonGroup, ?CB,
         QFontComboBox, QGraphicsItem, QGraphicsLineItem, QGraphicsPolygonItem,
         QGraphicsScene, QGraphicsTextItem, QGraphicsView, QGridLayout,
@@ -105,7 +105,7 @@ c_ Arrow(QGraphicsLineItem):
         myPen.sC..(myColor)
         arrowSize _ 20.0
         painter.setPen(myPen)
-        painter.setBrush(myColor)
+        painter.sB..(myColor)
 
         centerLine _ QLineF(myStartItem.pos(), myEndItem.pos())
         endPolygon _ myEndItem.polygon()
@@ -230,7 +230,7 @@ c_ DiagramItem(QGraphicsPolygonItem):
         arrows.ap..(arrow)
 
     ___ image
-        pixmap _ QPixmap(250, 250)
+        pixmap _ ?P..(250, 250)
         pixmap.fill(__.transparent)
         painter _ QPainter(pixmap)
         painter.setPen(QPen(__.black, 8))
@@ -290,7 +290,7 @@ c_ DiagramScene(QGraphicsScene):
         myItemColor _ color
         __ isItemChange(DiagramItem):
             item _ selectedItems()[0]
-            item.setBrush(myItemColor)
+            item.sB..(myItemColor)
 
     ___ setFont  font):
         myFont _ font
@@ -319,7 +319,7 @@ c_ DiagramScene(QGraphicsScene):
 
         __ myMode __ InsertItem:
             item _ DiagramItem(myItemType, myItemMenu)
-            item.setBrush(myItemColor)
+            item.sB..(myItemColor)
             aI..(item)
             item.setPos(mouseEvent.scenePos())
             itemInserted.e..(item)
@@ -422,13 +422,13 @@ c_ MainWindow ?MW..
 
         t__ _ button.t__()
         __ t__ __ "Blue Grid":
-            scene.setBackgroundBrush(QBrush(QPixmap(':/images/background1.png')))
+            scene.setBackgroundBrush(?B..(?P..(':/images/background1.png')))
         ____ t__ __ "White Grid":
-            scene.setBackgroundBrush(QBrush(QPixmap(':/images/background2.png')))
+            scene.setBackgroundBrush(?B..(?P..(':/images/background2.png')))
         ____ t__ __ "Gray Grid":
-            scene.setBackgroundBrush(QBrush(QPixmap(':/images/background3.png')))
+            scene.setBackgroundBrush(?B..(?P..(':/images/background3.png')))
         ____
-            scene.setBackgroundBrush(QBrush(QPixmap(':/images/background4.png')))
+            scene.setBackgroundBrush(?B..(?P..(':/images/background4.png')))
 
         scene.update()
         view.update()
@@ -573,7 +573,7 @@ c_ MainWindow ?MW..
         textButton _ QToolButton()
         textButton.setCheckable( st.
         buttonGroup.addButton(textButton, InsertTextButton)
-        textButton.setIcon(QIcon(QPixmap(':/images/textpointer.png').scaled(30, 30)))
+        textButton.setIcon(QIcon(?P..(':/images/textpointer.png').scaled(30, 30)))
         textButton.setIconSize(?S..(50, 50))
 
         textLayout _ QGridLayout()
@@ -797,10 +797,10 @@ c_ MainWindow ?MW..
         r_ colorMenu
 
     ___ createColorToolButtonIcon  imageFile, color):
-        pixmap _ QPixmap(50, 80)
+        pixmap _ ?P..(50, 80)
         pixmap.fill(__.transparent)
         painter _ QPainter(pixmap)
-        image _ QPixmap(imageFile)
+        image _ ?P..(imageFile)
         target _ QRect(0, 0, 50, 60)
         source _ QRect(0, 0, 42, 42)
         painter.fillRect(QRect(0, 60, 50, 80), color)
@@ -810,7 +810,7 @@ c_ MainWindow ?MW..
         r_ QIcon(pixmap)
 
     ___ createColorIcon  color):
-        pixmap _ QPixmap(20, 20)
+        pixmap _ ?P..(20, 20)
         painter _ QPainter(pixmap)
         painter.setPen(__.NoPen)
         painter.fillRect(QRect(0, 0, 20, 20), color)

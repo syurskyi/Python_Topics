@@ -45,8 +45,8 @@
 ____ ?.?C.. ______ (QEasingCurve, QFileInfo, QLineF, QMimeData,
         QParallelAnimationGroup, QPoint, QPointF, QPropertyAnimation, qrand,
         QRectF, qsrand, __, ?T..)
-____ ?.?G.. ______ (QBrush, ?C.., QDrag, QImage, QPainter, QPen,
-        QPixmap, QTransform)
+____ ?.?G.. ______ (?B.., ?C.., QDrag, QImage, QPainter, QPen,
+        ?P.., QTransform)
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsObject,
         QGraphicsScene, QGraphicsView)
 
@@ -71,10 +71,10 @@ c_ ColorItem(QGraphicsItem):
 
     ___ paint  painter, option, widget):
         painter.setPen(__.NoPen)
-        painter.setBrush(__.darkGray)
+        painter.sB..(__.darkGray)
         painter.drawEllipse(-12, -12, 30, 30)
         painter.setPen(QPen(__.black, 1))
-        painter.setBrush(QBrush(color))
+        painter.sB..(?B..(color))
         painter.drawEllipse(-15, -15, 30, 30)
 
     ___ mousePressEvent  event):
@@ -94,13 +94,13 @@ c_ ColorItem(QGraphicsItem):
 
             image _ QImage(root + '/images/head.png')
             mime.setImageData(image)
-            drag.setPixmap(QPixmap.fromImage(image).scaled(30,40))
+            drag.setPixmap(?P...fromImage(image).scaled(30,40))
             drag.setHotSpot(QPoint(15, 30))
         ____
             mime.setColorData(color)
             mime.sT..("#%02x%02x%02x" % (color.red(), color.green(), color.blue()))
 
-            pixmap _ QPixmap(34, 34)
+            pixmap _ ?P..(34, 34)
             pixmap.fill(__.white)
 
             painter _ QPainter(pixmap)
@@ -154,23 +154,23 @@ c_ RobotHead(RobotPart):
     ___  -   parent_None):
         super(RobotHead, self). - (parent)
 
-        pixmap _ QPixmap()
+        pixmap _ ?P..()
 
     ___ boundingRect
         r_ QRectF(-15, -50, 30, 50)
 
     ___ paint  painter, option, widget_None):
         __ pixmap.isNull
-            painter.setBrush(color.lighter(130) __ dragOver ____ color)
+            painter.sB..(color.lighter(130) __ dragOver ____ color)
             painter.drawRoundedRect(-10, -30, 20, 30, 25, 25, __.RelativeSize)
-            painter.setBrush(__.white)
+            painter.sB..(__.white)
             painter.drawEllipse(-7, -3 - 20, 7, 7)
             painter.drawEllipse(0, -3 - 20, 7, 7)
-            painter.setBrush(__.black)
+            painter.sB..(__.black)
             painter.drawEllipse(-5, -1 - 20, 2, 2)
             painter.drawEllipse(2, -1 - 20, 2, 2)
             painter.setPen(QPen(__.black, 2))
-            painter.setBrush(__.NoBrush)
+            painter.sB..(__.NoBrush)
             painter.drawArc(-6, -2 - 20, 12, 15, 190 * 16, 160 * 16)
         ____
             painter.scale(.2272, .2824)
@@ -187,7 +187,7 @@ c_ RobotHead(RobotPart):
     ___ dropEvent  event):
         __ event.mimeData().hasImage
             dragOver _ F..
-            pixmap _ QPixmap(event.mimeData().imageData())
+            pixmap _ ?P..(event.mimeData().imageData())
             update()
         ____
             super(RobotHead, self).dropEvent(event)
@@ -198,7 +198,7 @@ c_ RobotTorso(RobotPart):
         r_ QRectF(-30, -20, 60, 60)
 
     ___ paint  painter, option, widget_None):
-        painter.setBrush(color.lighter(130) __ dragOver ____ color)
+        painter.sB..(color.lighter(130) __ dragOver ____ color)
         painter.drawRoundedRect(-20, -20, 40, 60, 25, 25, __.RelativeSize)
         painter.drawEllipse(-25, -20, 20, 20)
         painter.drawEllipse(5, -20, 20, 20)
@@ -211,7 +211,7 @@ c_ RobotLimb(RobotPart):
         r_ QRectF(-5, -5, 40, 10)
 
     ___ paint  painter, option, widget_None):
-        painter.setBrush(color.lighter(130) __ dragOver ____  color)
+        painter.sB..(color.lighter(130) __ dragOver ____  color)
         painter.drawRoundedRect(boundingRect(), 50, 50, __.RelativeSize)
         painter.drawEllipse(-5, -5, 10, 10)
 

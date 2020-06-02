@@ -47,7 +47,7 @@ ______ math, random
 
 ____ ?.?C.. ______ (QPoint, QPointF, QRect, QRectF, ?S.., __, ?T..,
         QTimer)
-____ ?.?G.. ______ (QBrush, ?C.., QFontMetrics, QImage,
+____ ?.?G.. ______ (?B.., ?C.., QFontMetrics, QImage,
         QOpenGLVersionProfile, QPainter, QRadialGradient, QSurfaceFormat)
 ____ ?.?W.. ______ ?A.., QOpenGLWidget
 
@@ -69,13 +69,13 @@ c_ Bubble(object):
         gradient.setColorAt(0, ?C..(255, 255, 255, 255))
         gradient.setColorAt(0.25, innerColor)
         gradient.setColorAt(1, outerColor)
-        brush _ QBrush(gradient)
+        brush _ ?B..(gradient)
 
     ___ drawBubble  painter):
         painter.save()
         painter.translate(position.x() - radius,
                 position.y() - radius)
-        painter.setBrush(brush)
+        painter.sB..(brush)
         painter.drawEllipse(0, 0, int(2*radius), int(2*radius))
         painter.restore()
 

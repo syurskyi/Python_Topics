@@ -70,7 +70,7 @@ c_ MainWindow(qtw.?MW..):
         widget _ qtw.?W..
         widget.sL..(qtw.QFormLayout())
         sCW..(widget)
-        p _ widget.palette()
+        p _ widget.p..
         p.sC..(qtg.?P...WindowText, qtg.?C..('cyan'))
         p.sC..(qtg.?P...Window, qtg.?C..('navy'))
         p.sC..(qtg.?P...Button, qtg.?C..('#335'))
@@ -121,4 +121,4 @@ c_ MainWindow(qtw.?MW..):
 __ ______ __ ______
     app _ qtw.?A..(___.a..
     mw _ MainWindow()
-    app.exec()
+    app.e..

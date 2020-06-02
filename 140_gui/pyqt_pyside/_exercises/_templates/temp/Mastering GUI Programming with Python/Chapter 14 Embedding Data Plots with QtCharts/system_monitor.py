@@ -177,19 +177,19 @@ c_ MemoryChartView(qtch.QChartView):
             chart.plotArea().topLeft(), chart.plotArea().bottomRight())
         gradient.setColorAt(0, qtg.?C..("#333"))
         gradient.setColorAt(1, qtg.?C..("#660"))
-        chart.setBackgroundBrush(qtg.QBrush(gradient))
+        chart.setBackgroundBrush(qtg.?B..(gradient))
 
         # Background Pen draws a border around the chart
         chart.setBackgroundPen(qtg.QPen(qtg.?C..('black'), 5))
 
         # Set title font and brush
         chart.setTitleBrush(
-            qtg.QBrush(qtc.__.white))
+            qtg.?B..(qtc.__.white))
         chart.setTitleFont(qtg.QFont('Impact', 32, qtg.QFont.Bold))
 
         # Set axes fonts and brushes
         axis_font _ qtg.QFont('Mono', 16)
-        axis_brush _ qtg.QBrush(qtg.?C..('#EEF'))
+        axis_brush _ qtg.?B..(qtg.?C..('#EEF'))
         y_axis.setLabelsFont(axis_font)
         y_axis.setLabelsBrush(axis_brush)
 
@@ -209,8 +209,8 @@ c_ MemoryChartView(qtch.QChartView):
 
         # Background
         legend.setBackgroundVisible( st.
-        legend.setBrush(
-            qtg.QBrush(qtg.?C..('white')))
+        legend.sB..(
+            qtg.?B..(qtg.?C..('white')))
 
         # Font
         legend.setFont(qtg.QFont('Courier', 14))

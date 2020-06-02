@@ -82,11 +82,11 @@ c_ ButtonBackground(DemoItem):
         __ Colors.useEightBitPalette:
             painter.setPen(?C..(120, 120, 120))
             __ pressed:
-                painter.setBrush(?C..(60, 60, 60))
+                painter.sB..(?C..(60, 60, 60))
             ____ highlighted:
-                painter.setBrush(?C..(100, 100, 100))
+                painter.sB..(?C..(100, 100, 100))
             ____
-                painter.setBrush(?C..(80, 80, 80))
+                painter.sB..(?C..(80, 80, 80))
         ____
             outlinebrush _ QLinearGradient(0, 0, 0, scaledRect.height())
             brush _ QLinearGradient(0, 0, 0, scaledRect.height())
@@ -116,7 +116,7 @@ c_ ButtonBackground(DemoItem):
                     brush.setColorAt(1, normal2)
                 painter.setPen(QPen(outlinebrush, 1))
 
-            painter.setBrush(brush)
+            painter.sB..(brush)
 
         __ type __ TextButton.PANEL:
             painter.drawRect(0, 0, scaledRect.width(), scaledRect.height())
@@ -141,11 +141,11 @@ c_ ButtonBackground(DemoItem):
         __ Colors.useEightBitPalette:
             painter.setPen(?C..(120, 120, 120))
             __ pressed:
-                painter.setBrush(?C..(60, 60, 60))
+                painter.sB..(?C..(60, 60, 60))
             ____ highlighted:
-                painter.setBrush(?C..(100, 100, 100))
+                painter.sB..(?C..(100, 100, 100))
             ____
-                painter.setBrush(?C..(80, 80, 80))
+                painter.sB..(?C..(80, 80, 80))
         ____
             outlinebrush _ QLinearGradient(0, 0, 0, scaledRect.height())
             brush _ QLinearGradient(0, 0, 0, scaledRect.height())
@@ -170,7 +170,7 @@ c_ ButtonBackground(DemoItem):
                     brush.setColorAt(1, normal2)
                 painter.setPen(QPen(outlinebrush, 1))
 
-            painter.setBrush(brush);
+            painter.sB..(brush);
 
         painter.drawRect(0, 0, scaledRect.width(), scaledRect.height())
 

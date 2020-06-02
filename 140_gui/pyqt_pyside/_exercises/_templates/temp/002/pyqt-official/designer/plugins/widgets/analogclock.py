@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ (pyqtProperty, pS.., pyqtSlot, QPoint, ?S..,
         __, ?T.., QTimer)
-____ ?.?G.. ______ QBrush, ?C.., QPainter, QPen, QPolygon
+____ ?.?G.. ______ ?B.., ?C.., QPainter, QPen, QPolygon
 ____ ?.?W.. ______ ?A.., ?W..
 
 
@@ -103,7 +103,7 @@ c_ PyAnalogClock(?W..):
         painter.scale(side / 200.0, side / 200.0)
 
         painter.setPen(__.NoPen)
-        painter.setBrush(QBrush(hourColor))
+        painter.sB..(?B..(hourColor))
 
         painter.save()
         painter.rotate(30.0 * ((time.hour() + time.minute() / 60.0)))
@@ -117,7 +117,7 @@ c_ PyAnalogClock(?W..):
             painter.rotate(30.0)
 
         painter.setPen(__.NoPen)
-        painter.setBrush(QBrush(minuteColor))
+        painter.sB..(?B..(minuteColor))
 
         painter.save()
         painter.rotate(6.0 * (time.minute() + time.second() / 60.0))

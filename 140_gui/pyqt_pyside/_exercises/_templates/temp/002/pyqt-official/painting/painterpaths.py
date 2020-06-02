@@ -45,7 +45,7 @@
 ____ math ______ cos, pi, sin
 
 ____ ?.?C.. ______ ?S.., __
-____ ?.?G.. ______ (QBrush, ?C.., QFont, QLinearGradient, QPainter,
+____ ?.?G.. ______ (?B.., ?C.., QFont, QLinearGradient, QPainter,
         QPainterPath, ?P.., QPen)
 ____ ?.?W.. ______ (?A.., ?CB, QGridLayout, QLabel,
         QSizePolicy, SB.., ?W..)
@@ -102,7 +102,7 @@ c_ RenderArea(?W..):
         gradient _ QLinearGradient(0, 0, 0, 100)
         gradient.setColorAt(0.0, fillColor1)
         gradient.setColorAt(1.0, fillColor2)
-        painter.setBrush(QBrush(gradient))
+        painter.sB..(?B..(gradient))
         painter.drawPath(pa__)
 
 

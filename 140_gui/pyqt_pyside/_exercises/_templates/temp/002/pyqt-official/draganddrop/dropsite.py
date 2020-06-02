@@ -44,7 +44,7 @@
 
 
 ____ ?.?C.. ______ pS.., QMimeData, __
-____ ?.?G.. ______ ?P.., QPixmap
+____ ?.?G.. ______ ?P.., ?P..
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., QDialogButtonBox,
         QFrame, QLabel, ?PB.., QTableWidget, QTableWidgetItem,
         QVBoxLayout, ?W..)
@@ -76,7 +76,7 @@ c_ DropArea(QLabel):
     ___ dropEvent  event):
         mimeData _ event.mimeData()
         __ mimeData.hasImage
-            setPixmap(QPixmap(mimeData.imageData()))
+            setPixmap(?P..(mimeData.imageData()))
         ____ mimeData.hasHtml
             sT..(mimeData.html())
             setTextFormat(__.RichText)

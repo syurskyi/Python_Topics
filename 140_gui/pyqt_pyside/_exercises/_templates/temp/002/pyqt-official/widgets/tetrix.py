@@ -46,7 +46,7 @@ ______ copy
 ______ random
 
 ____ ?.?C.. ______ pS.., QBasicTimer, ?S.., __
-____ ?.?G.. ______ ?C.., QPainter, QPixmap
+____ ?.?G.. ______ ?C.., QPainter, ?P..
 ____ ?.?W.. ______ (?A.., QFrame, QGridLayout, QLabel,
         QLCDNumber, ?PB.., ?W..)
 
@@ -348,9 +348,9 @@ c_ TetrixBoard(QFrame):
         dx _ nextPiece.maxX() - nextPiece.minX() + 1
         dy _ nextPiece.maxY() - nextPiece.minY() + 1
 
-        pixmap _ QPixmap(dx * squareWidth(), dy * squareHeight())
+        pixmap _ ?P..(dx * squareWidth(), dy * squareHeight())
         painter _ QPainter(pixmap)
-        painter.fillRect(pixmap.rect(), nextPieceLabel.palette().window())
+        painter.fillRect(pixmap.rect(), nextPieceLabel.p...window())
 
         ___ i __ ra..(4):
             x _ nextPiece.x(i) - nextPiece.minX()

@@ -46,7 +46,7 @@
 ____ ?.?C.. ______ (pS.., QBuffer, QByteArray, QFileInfo,
         QIODevice, QMimeData, QPoint, ?S.., __)
 ____ ?.?G.. ______ (qBlue, ?C.., QDrag, qGreen, QImage, ?KS..,
-        ?P.., QPixmap, qRed)
+        ?P.., ?P.., qRed)
 ____ ?.?W.. ______ (?A.., QColorDialog, ?FD.., QFrame,
         QGridLayout, QLabel, QLayout, ?MW.., QMenu, ?MB..,
         ?PB.., QVBoxLayout)
@@ -202,7 +202,7 @@ c_ ScreenWidget(QFrame):
 
                 newImage.setPixel(x, y, newColor.rgb())
 
-        imageLabel.setPixmap(QPixmap.fromImage(newImage))
+        imageLabel.setPixmap(?P...fromImage(newImage))
 
     ___ image 
         """ Returns a reference to the modified image. """
@@ -451,7 +451,7 @@ c_ Viewer ?MW..
 
                 newImage.setPixel(x, y, newColor.rgb())
 
-        finalWidget.setPixmap(QPixmap.fromImage(newImage))
+        finalWidget.setPixmap(?P...fromImage(newImage))
 
     ___ saveImage 
         """ Provides a dialog window to allow the user to save the image file.

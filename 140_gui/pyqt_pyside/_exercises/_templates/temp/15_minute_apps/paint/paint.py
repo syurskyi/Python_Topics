@@ -96,7 +96,7 @@ class Canvas(QLabel):
 
     def reset
         # Create the pixmap for display.
-        setPixmap(QPixmap(*CANVAS_DIMENSIONS))
+        setPixmap(?P..(*CANVAS_DIMENSIONS))
 
         # Clear the canvas.
         pixmap().fill(background_color)
@@ -225,7 +225,7 @@ class Canvas(QLabel):
         # Construct a mask where the user selected area will be kept, the rest removed from the image is transparent.
         userpoly = QPolygon(history_pos + [current_pos])
         p.setPen(QPen(Qt.color1))
-        p.setBrush(QBrush(Qt.color1))  # Solid color, Qt.color1 == bit on.
+        p.sB..(?B..(Qt.color1))  # Solid color, Qt.color1 == bit on.
         p.drawPolygon(userpoly)
         p.end()
 
@@ -489,7 +489,7 @@ class Canvas(QLabel):
             p.setPen(QPen(primary_color, config['size'], Qt.SolidLine, Qt.SquareCap, Qt.MiterJoin))
 
             if config['fill']:
-                p.setBrush(QBrush(secondary_color))
+                p.sB..(?B..(secondary_color))
             getattr(p, active_shape_fn)(QRect(origin_pos, e.pos()), *active_shape_args)
             update()
 
@@ -577,7 +577,7 @@ class Canvas(QLabel):
 
         # Note the brush is ignored for polylines.
         if secondary_color:
-            p.setBrush(QBrush(secondary_color))
+            p.sB..(?B..(secondary_color))
 
         getattr(p, active_shape_fn)(*history_pos + [e.pos()])
         update()
@@ -764,7 +764,7 @@ class MainWindow(?MW.., Ui_MainWindow):
         actionUnderline.triggered.connect(l___ s: canvas.set_config('underline', s))
 
         sizeicon = QLabel()
-        sizeicon.setPixmap(QPixmap(os.pa__.join('images', 'border-weight.png')))
+        sizeicon.setPixmap(?P..(os.pa__.join('images', 'border-weight.png')))
         drawingToolbar.addWidget(sizeicon)
         sizeselect = QSlider()
         sizeselect.setRange(1,20)
@@ -780,7 +780,7 @@ class MainWindow(?MW.., Ui_MainWindow):
 
     def choose_color(self, callback):
         dlg = QColorDialog()
-        if dlg.exec():
+        if dlg.e..:
             callback( dlg.selectedColor().name() )
 
     def set_primary_color(self, hex):
@@ -796,7 +796,7 @@ class MainWindow(?MW.., Ui_MainWindow):
         if current_stamp_n >= len(STAMPS):
             current_stamp_n = 0
 
-        pixmap = QPixmap(STAMPS[current_stamp_n])
+        pixmap = ?P..(STAMPS[current_stamp_n])
         stampnextButton.setIcon(QIcon(pixmap))
 
         canvas.current_stamp = pixmap
@@ -821,7 +821,7 @@ class MainWindow(?MW.., Ui_MainWindow):
         pa__, _ = QFileDialog.getOpenFileName(self, "Open file", "", "PNG image files (*.png); JPEG image files (*jpg); All files (*.*)")
 
         if pa__:
-            pixmap = QPixmap()
+            pixmap = ?P..()
             pixmap.load(pa__)
 
             # We need to crop down to the size of our canvas. Get the size of the loaded image.
@@ -862,7 +862,7 @@ class MainWindow(?MW.., Ui_MainWindow):
     def invert
         img = QImage(canvas.pixmap())
         img.invertPixels()
-        pixmap = QPixmap()
+        pixmap = ?P..()
         pixmap.convertFromImage(img)
         canvas.setPixmap(pixmap)
 

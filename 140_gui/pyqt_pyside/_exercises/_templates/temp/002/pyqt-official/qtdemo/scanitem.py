@@ -66,12 +66,12 @@ c_ ScanItem(DemoItem):
 
         __ Colors.useEightBitPalette:
             painter.setPen(QPen(?C..(100, 100, 100), 2))
-            painter.setBrush(?C..(206, 246, 117))
+            painter.sB..(?C..(206, 246, 117))
             painter.drawEllipse(1, 1, scaledRect.width() - 2,
                     scaledRect.height() - 2)
         ____
             painter.setPen(QPen(?C..(0, 0, 0, 15), 1))
-            painter.setBrush(?C..(0, 0, 0, 15))
+            painter.sB..(?C..(0, 0, 0, 15))
             painter.drawEllipse(1, 1, scaledRect.width() - 2,
                     scaledRect.height() - 2)
 

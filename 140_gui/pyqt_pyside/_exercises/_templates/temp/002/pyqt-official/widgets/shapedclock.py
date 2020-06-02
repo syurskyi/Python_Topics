@@ -100,7 +100,7 @@ c_ ShapedClock(?W..):
         painter.scale(side / 200.0, side / 200.0)
 
         painter.setPen(__.NoPen)
-        painter.setBrush(ShapedClock.hourColor)
+        painter.sB..(ShapedClock.hourColor)
 
         painter.save()
         painter.rotate(30.0 * ((time.hour() + time.minute() / 60.0)))
@@ -114,7 +114,7 @@ c_ ShapedClock(?W..):
             painter.rotate(30.0)
 
         painter.setPen(__.NoPen)
-        painter.setBrush(ShapedClock.minuteColor)
+        painter.sB..(ShapedClock.minuteColor)
 
         painter.save()
         painter.rotate(6.0 * (time.minute() + time.second() / 60.0))

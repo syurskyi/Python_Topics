@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ (pS.., QMutex, QMutexLocker, QPoint, ?S.., __,
         QThread, QWaitCondition)
-____ ?.?G.. ______ ?C.., QImage, QPainter, QPixmap, qRgb
+____ ?.?G.. ______ ?C.., QImage, QPainter, ?P.., qRgb
 ____ ?.?W.. ______ ?A.., ?W..
 
 
@@ -214,7 +214,7 @@ c_ MandelbrotWidget(?W..):
         super(MandelbrotWidget, self). - (parent)
 
         thread _ RenderThread()
-        pixmap _ QPixmap()
+        pixmap _ ?P..()
         pixmapOffset _ QPoint()
         lastDragPos _ QPoint()
 
@@ -262,7 +262,7 @@ c_ MandelbrotWidget(?W..):
         textWidth _ metrics.width(t__)
 
         painter.setPen(__.NoPen)
-        painter.setBrush(?C..(0, 0, 0, 127))
+        painter.sB..(?C..(0, 0, 0, 127))
         painter.drawRect((width() - textWidth) / 2 - 5, 0, textWidth + 10,
                 metrics.lineSpacing() + 5)
         painter.setPen(__.white)
@@ -317,7 +317,7 @@ c_ MandelbrotWidget(?W..):
         __ no. lastDragPos.isNull
             r_
 
-        pixmap _ QPixmap.fromImage(image)
+        pixmap _ ?P...fromImage(image)
         pixmapOffset _ QPoint()
         lastDragPosition _ QPoint()
         pixmapScale _ scaleFactor

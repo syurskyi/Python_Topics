@@ -41,7 +41,7 @@
 
 
 ____ ?.?C.. ______ QFileInfo, QPoint, QRect, qRound, __, ?T.., QTimer
-____ ?.?G.. ______ (QFontMetricsF, QImage, QPainter, QPixmap, QPolygon,
+____ ?.?G.. ______ (QFontMetricsF, QImage, QPainter, ?P.., QPolygon,
         QRegion)
 ____ ?.?W.. ______ (?A.., QFrame, QGraphicsScene,
         QGraphicsView, QGraphicsWidget, ?MB.., ?W..)
@@ -62,7 +62,7 @@ c_ MainWindow(QGraphicsView):
         updateTimer _ QTimer
         demoStartTime _ ?T..()
         fpsTime _ ?T..()
-        background _ QPixmap()
+        background _ ?P..()
 
         scene _ N..
         mainSceneRoot _ N..
@@ -288,7 +288,7 @@ c_ MainWindow(QGraphicsView):
 
     ___ drawBackgroundToPixmap
         r _ scene.sceneRect()
-        background _ QPixmap(qRound(r.width()), qRound(r.height()))
+        background _ ?P..(qRound(r.width()), qRound(r.height()))
         background.fill(__.black)
         painter _ QPainter(background)
 

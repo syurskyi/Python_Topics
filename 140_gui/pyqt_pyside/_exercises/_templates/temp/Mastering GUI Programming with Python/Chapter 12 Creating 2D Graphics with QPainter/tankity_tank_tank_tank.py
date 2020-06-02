@@ -44,7 +44,7 @@ c_ Bullet(qtw.QGraphicsObject):
         r_ qtc.QRectF(0, 0, 10, 10)
 
     ___ paint  painter, options, widget):
-        painter.setBrush(qtg.QBrush(qtg.?C..('yellow')))
+        painter.sB..(qtg.?B..(qtg.?C..('yellow')))
         painter.drawRect(0, 0, 10, 10)
 
     ___ shoot  x_pos):
@@ -134,11 +134,11 @@ c_ Scene(qtw.QGraphicsScene):
 
     ___  -
         s_. - ()
-        setBackgroundBrush(qtg.QBrush(qtg.?C..('black')))
+        setBackgroundBrush(qtg.?B..(qtg.?C..('black')))
         setSceneRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)
 
         # add a drawn item
-        wall_brush _ qtg.QBrush(qtg.?C..('blue'), qtc.__.Dense5Pattern)
+        wall_brush _ qtg.?B..(qtg.?C..('blue'), qtc.__.Dense5Pattern)
         floor _ addRect(
             qtc.QRectF(0, SCREEN_HEIGHT - BORDER_HEIGHT,
                        SCREEN_WIDTH, BORDER_HEIGHT),

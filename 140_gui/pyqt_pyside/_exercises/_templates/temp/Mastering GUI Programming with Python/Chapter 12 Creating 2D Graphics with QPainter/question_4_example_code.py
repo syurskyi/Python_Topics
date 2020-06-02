@@ -18,7 +18,7 @@ c_ ColorButton(qtw.?PB..):
     ___ set_color  color):
         _color _ color
         # update icon
-        pixmap _ qtg.QPixmap(32, 32)
+        pixmap _ qtg.?P..(32, 32)
         pixmap.fill(_color)
         setIcon(qtg.QIcon(pixmap))
 
@@ -158,7 +158,7 @@ c_ MainWindow(qtw.?MW..):
         mainwidget.sL..(qtw.?HBL..
 
         # Image Previewer
-        image_display _ ?.?L..(pixmap_qtg.QPixmap(image))
+        image_display _ ?.?L..(pixmap_qtg.?P..(image))
         mainwidget.la__ .aW..(image_display)
 
         # The editing form
@@ -206,7 +206,7 @@ c_ MainWindow(qtw.?MW..):
         bottom_block_rect _ qtc.QRect(
             0, bottom_px, image.width(), image.height())
 
-        painter.setBrush(qtg.QBrush(data['bg_color']))
+        painter.sB..(qtg.?B..(data['bg_color']))
         painter.drawRect(top_block_rect)
         painter.drawRect(bottom_block_rect)
 
@@ -250,7 +250,7 @@ c_ MainWindow(qtw.?MW..):
             image _ image.convertToFormat(qtg.QImage.Format_ARGB32)
 
         # show the image
-        image_display.setPixmap(qtg.QPixmap(image))
+        image_display.setPixmap(qtg.?P..(image))
 
 
 __ ______ __ ______

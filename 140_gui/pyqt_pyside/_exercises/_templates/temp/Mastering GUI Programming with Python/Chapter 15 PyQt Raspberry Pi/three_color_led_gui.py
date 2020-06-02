@@ -70,5 +70,5 @@ c_ MainWindow(qtw.?MW..):
 __ ______ __ ______
     app _ qtw.?A..(___.a..
     mw _ MainWindow()
-    app.exec()
+    app.e..
     mw.tcl.cleanup()

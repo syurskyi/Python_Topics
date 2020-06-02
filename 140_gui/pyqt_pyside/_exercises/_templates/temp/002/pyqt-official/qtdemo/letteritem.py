@@ -66,7 +66,7 @@ c_ LetterItem(DemoItem):
         painter.setPen(__.NoPen)
 
         __ Colors.useEightBitPalette:
-            painter.setBrush(?C..(102, 175, 54))
+            painter.sB..(?C..(102, 175, 54))
             painter.drawEllipse(0, 0, 25, 25)
             painter.setFont(Colors.tickerFont())
             painter.setPen(?C..(255, 255, 255))
@@ -76,7 +76,7 @@ c_ LetterItem(DemoItem):
             brush.setSpread(QLinearGradient.PadSpread)
             brush.setColorAt(0.0, ?C..(102, 175, 54, 200))
             brush.setColorAt(1.0, ?C..(102, 175, 54, 60))
-            painter.setBrush(brush)
+            painter.sB..(brush)
             painter.drawEllipse(0, 0, 25, 25)
             painter.setFont(Colors.tickerFont())
             painter.setPen(?C..(255, 255, 255, 255))

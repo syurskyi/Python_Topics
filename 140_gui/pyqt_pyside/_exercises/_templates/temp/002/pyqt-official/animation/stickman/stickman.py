@@ -48,7 +48,7 @@ ____ ?.?C.. ______ (pyqtProperty, pS.., QDataStream, QDateTime,
         QEvent, QEventTransition, QFile, QIODevice, QParallelAnimationGroup,
         QPointF, QPropertyAnimation, qrand, QRectF, QSignalTransition, qsrand,
         QState, QStateMachine, __, QTimer)
-____ ?.?G.. ______ ?C.., QPen, QPainter, QPainterPath, QPixmap
+____ ?.?G.. ______ ?C.., QPen, QPainter, QPainterPath, ?P..
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsObject,
         QGraphicsScene, QGraphicsTextItem, QGraphicsView)
 
@@ -168,7 +168,7 @@ c_ StickMan(QGraphicsObject):
 
         m_sticks _ T..
         m_isDead _ F..
-        m_pixmap _ QPixmap('images/head.png')
+        m_pixmap _ ?P..('images/head.png')
         m_penColor _ ?C..(__.white)
         m_fillColor _ ?C..(__.black)
 
@@ -329,10 +329,10 @@ c_ StickMan(QGraphicsObject):
             painter.translate(headPos)
             painter.rotate(-angle)
 
-            painter.setBrush(m_fillColor)
+            painter.sB..(m_fillColor)
             painter.drawEllipse(QPointF(0, 0), 50.0, 50.0)
 
-            painter.setBrush(m_penColor)
+            painter.sB..(m_penColor)
             painter.setPen(QPen(m_penColor, 2.5, __.SolidLine, __.RoundCap))
 
             # Eyes.
@@ -350,13 +350,13 @@ c_ StickMan(QGraphicsObject):
             __ m_isDead:
                 painter.drawLine(-28.0, 2.0, 29.0, 2.0)
             ____
-                painter.setBrush(?C..(128, 0, 64 ))
+                painter.sB..(?C..(128, 0, 64 ))
                 painter.drawChord(QRectF(-28.0, 2.0 - 55.0 / 2.0, 57.0, 55.0), 0.0, -180.0 * 16)
 
             # Pupils.
             __ no. m_isDead:
                 painter.setPen(QPen(m_fillColor, 1.0, __.SolidLine, __.RoundCap))
-                painter.setBrush(m_fillColor)
+                painter.sB..(m_fillColor)
                 painter.drawEllipse(QPointF(-12.0, -25.0), 5.0, 5.0)
                 painter.drawEllipse(QPointF(22.0, -25.0), 5.0, 5.0)
 

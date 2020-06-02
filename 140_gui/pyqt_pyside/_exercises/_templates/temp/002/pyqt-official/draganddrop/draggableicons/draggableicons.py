@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ (QByteArray, QDataStream, QIODevice, QMimeData,
         QPoint, __)
-____ ?.?G.. ______ ?C.., QDrag, QPainter, QPixmap
+____ ?.?G.. ______ ?C.., QDrag, QPainter, ?P..
 ____ ?.?W.. ______ ?A.., QFrame, QHBoxLayout, QLabel, ?W..
 
 ______ draggableicons_rc
@@ -59,19 +59,19 @@ c_ DragWidget(QFrame):
         setAcceptDrops( st.
 
         boatIcon _ QLabel
-        boatIcon.setPixmap(QPixmap(':/images/boat.png'))
+        boatIcon.setPixmap(?P..(':/images/boat.png'))
         boatIcon.move(20, 20)
         boatIcon.s..
         boatIcon.setAttribute(__.WA_DeleteOnClose)
 
         carIcon _ QLabel
-        carIcon.setPixmap(QPixmap(':/images/car.png'))
+        carIcon.setPixmap(?P..(':/images/car.png'))
         carIcon.move(120, 20)
         carIcon.s..
         carIcon.setAttribute(__.WA_DeleteOnClose)
 
         houseIcon _ QLabel
-        houseIcon.setPixmap(QPixmap(':/images/house.png'))
+        houseIcon.setPixmap(?P..(':/images/house.png'))
         houseIcon.move(20, 120)
         houseIcon.s..
         houseIcon.setAttribute(__.WA_DeleteOnClose)
@@ -93,7 +93,7 @@ c_ DragWidget(QFrame):
             itemData _ event.mimeData().data('application/x-dnditemdata')
             dataStream _ QDataStream(itemData, QIODevice.ReadOnly)
 
-            pixmap _ QPixmap()
+            pixmap _ ?P..()
             offset _ QPoint()
             dataStream >> pixmap >> offset
 
@@ -116,7 +116,7 @@ c_ DragWidget(QFrame):
         __ no. child:
             r_
 
-        pixmap _ QPixmap(child.pixmap())
+        pixmap _ ?P..(child.pixmap())
 
         itemData _ QByteArray()
         dataStream _ QDataStream(itemData, QIODevice.WriteOnly)
@@ -130,7 +130,7 @@ c_ DragWidget(QFrame):
         drag.setPixmap(pixmap)
         drag.setHotSpot(event.pos() - child.pos())
 
-        tempPixmap _ QPixmap(pixmap)
+        tempPixmap _ ?P..(pixmap)
         painter _ QPainter()
         painter.begin(tempPixmap)
         painter.fillRect(pixmap.rect(), ?C..(127, 127, 127, 127))

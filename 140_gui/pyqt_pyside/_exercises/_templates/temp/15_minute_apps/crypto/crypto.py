@@ -237,7 +237,7 @@ class MainWindow(?MW..):
     def add_data_row(self, currency):
         citem = QStandardItem()
         citem.setText(currency)
-        citem.setForeground(QBrush(QColor(
+        citem.setForeground(?B..(QColor(
             get_currency_color(currency)
         )))
         citem.setColumnCount(2)

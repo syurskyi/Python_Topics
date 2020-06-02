@@ -47,7 +47,7 @@ ______ random
 ____ ?.?C.. ______ (pS.., QAbstractListModel, QByteArray,
         QDataStream, QIODevice, QMimeData, QModelIndex, QPoint, QRect, ?S..,
         __)
-____ ?.?G.. ______ ?C.., QCursor, QDrag, QIcon, QPainter, QPixmap
+____ ?.?G.. ______ ?C.., QCursor, QDrag, QIcon, QPainter, ?P..
 ____ ?.?W.. ______ (?A.., ?FD.., QFrame, QHBoxLayout,
         QListView, ?MW.., ?MB.., QSizePolicy, ?W..)
 
@@ -109,7 +109,7 @@ c_ PuzzleWidget(?W..):
             pieceData _ event.mimeData().data('image/x-puzzle-piece')
             stream _ QDataStream(pieceData, QIODevice.ReadOnly)
             square _ targetSquare(event.pos())
-            pixmap _ QPixmap()
+            pixmap _ ?P..()
             location _ QPoint()
             stream >> pixmap >> location
 
@@ -183,7 +183,7 @@ c_ PuzzleWidget(?W..):
         painter.fillRect(event.rect(), __.white)
 
         __ highlightedRect.isValid
-            painter.setBrush(?C..("#ffcccc"))
+            painter.sB..(?C..("#ffcccc"))
             painter.setPen(__.NoPen)
             painter.drawRect(highlightedRect.adjusted(0, 0, -1, -1))
 
@@ -266,7 +266,7 @@ c_ PiecesModel(QAbstractListModel):
 
         ___ index __ indexes:
             __ index.isValid
-                pixmap _ QPixmap(data(index, __.UserRole))
+                pixmap _ ?P..(data(index, __.UserRole))
                 location _ data(index, __.UserRole + 1)
                 stream << pixmap << location
 
@@ -295,7 +295,7 @@ c_ PiecesModel(QAbstractListModel):
         stream _ QDataStream(encodedData, QIODevice.ReadOnly)
 
         w__ no. stream.atEnd
-            pixmap _ QPixmap()
+            pixmap _ ?P..()
             location _ QPoint()
             stream >> pixmap >> location
 
@@ -333,7 +333,7 @@ c_ MainWindow ?MW..
     ___  -   parent_None):
         super(MainWindow, self). - (parent)
 
-        puzzleImage _ QPixmap()
+        puzzleImage _ ?P..()
 
         setupMenus()
         setupWidgets()
@@ -347,7 +347,7 @@ c_ MainWindow ?MW..
                     "Image Files (*.png *.jpg *.bmp)")
 
         __ pa__:
-            newImage _ QPixmap()
+            newImage _ ?P..()
             __ no. newImage.load(pa__):
                 ?MB...warning  "Open Image",
                         "The image file could not be loaded.",

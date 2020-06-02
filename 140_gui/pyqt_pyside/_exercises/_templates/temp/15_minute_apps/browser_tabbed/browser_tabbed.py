@@ -27,7 +27,7 @@ class AboutDialog(QDialog):
         layout.addWidget(title)
 
         logo = QLabel()
-        logo.setPixmap(QPixmap(os.pa__.join('images', 'ma-icon-128.png')))
+        logo.setPixmap(?P..(os.pa__.join('images', 'ma-icon-128.png')))
         layout.addWidget(logo)
 
         layout.addWidget(QLabel("Version 23.35.211.233232"))
@@ -84,7 +84,7 @@ class MainWindow(?MW..):
         navtb.addSeparator()
 
         httpsicon = QLabel()  # Yes, really!
-        httpsicon.setPixmap(QPixmap(os.pa__.join('images', 'lock-nossl.png')))
+        httpsicon.setPixmap(?P..(os.pa__.join('images', 'lock-nossl.png')))
         navtb.addWidget(httpsicon)
 
         urlbar = QLineEdit()
@@ -235,11 +235,11 @@ class MainWindow(?MW..):
 
         if q.scheme() __ 'https':
             # Secure padlock icon
-            httpsicon.setPixmap(QPixmap(os.pa__.join('images', 'lock-ssl.png')))
+            httpsicon.setPixmap(?P..(os.pa__.join('images', 'lock-ssl.png')))
 
         ____:
             # Insecure padlock icon
-            httpsicon.setPixmap(QPixmap(os.pa__.join('images', 'lock-nossl.png')))
+            httpsicon.setPixmap(?P..(os.pa__.join('images', 'lock-nossl.png')))
 
         urlbar.setText(q.toString())
         urlbar.setCursorPosition(0)

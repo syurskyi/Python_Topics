@@ -45,8 +45,8 @@
 ____ ?.?C.. ______ (pyqtProperty, pS.., QEasingCurve, ?O..,
         QParallelAnimationGroup, QPointF, QPropertyAnimation, qrand, QRectF,
         QState, QStateMachine, __, QTimer)
-____ ?.?G.. ______ (QBrush, QLinearGradient, QPainter, QPainterPath,
-        QPixmap)
+____ ?.?G.. ______ (?B.., QLinearGradient, QPainter, QPainterPath,
+        ?P..)
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsPixmapItem,
         QGraphicsRectItem, QGraphicsScene, QGraphicsView, QGraphicsWidget,
         QStyle)
@@ -108,7 +108,7 @@ c_ Button(QGraphicsWidget):
         grad.setColorAt(1, color_1)
 
         painter.setPen(__.darkGray)
-        painter.setBrush(grad)
+        painter.sB..(grad)
         painter.drawEllipse(r)
 
         color_0 _ __.darkGray
@@ -121,7 +121,7 @@ c_ Button(QGraphicsWidget):
         grad.setColorAt(1, color_1)
 
         painter.setPen(__.NoPen)
-        painter.setBrush(grad)
+        painter.sB..(grad)
 
         __ down:
             painter.translate(2, 2)
@@ -151,8 +151,8 @@ __ ______ __ ______
 
     app _ ?A..(___.a..
 
-    kineticPix _ QPixmap(':/images/kinetic.png')
-    bgPix _ QPixmap(':/images/Time-For-Lunch-2.jpg')
+    kineticPix _ ?P..(':/images/kinetic.png')
+    bgPix _ ?P..(':/images/Time-For-Lunch-2.jpg')
 
     scene _ QGraphicsScene(-350, -350, 700, 700)
 
@@ -167,11 +167,11 @@ __ ______ __ ______
 
     # Buttons.
     buttonParent _ QGraphicsRectItem()
-    ellipseButton _ Button(QPixmap(':/images/ellipse.png'), buttonParent)
-    figure8Button _ Button(QPixmap(':/images/figure8.png'), buttonParent)
-    randomButton _ Button(QPixmap(':/images/random.png'), buttonParent)
-    tiledButton _ Button(QPixmap(':/images/tile.png'), buttonParent)
-    centeredButton _ Button(QPixmap(':/images/centered.png'), buttonParent)
+    ellipseButton _ Button(?P..(':/images/ellipse.png'), buttonParent)
+    figure8Button _ Button(?P..(':/images/figure8.png'), buttonParent)
+    randomButton _ Button(?P..(':/images/random.png'), buttonParent)
+    tiledButton _ Button(?P..(':/images/tile.png'), buttonParent)
+    centeredButton _ Button(?P..(':/images/centered.png'), buttonParent)
 
     ellipseButton.setPos(-100, -100)
     figure8Button.setPos(100, -100)
@@ -220,7 +220,7 @@ __ ______ __ ______
     view _ View(scene)
     view.sWT..("Animated Tiles")
     view.setViewportUpdateMode(QGraphicsView.BoundingRectViewportUpdate)
-    view.setBackgroundBrush(QBrush(bgPix))
+    view.setBackgroundBrush(?B..(bgPix))
     view.setCacheMode(QGraphicsView.CacheBackground)
     view.setRenderHints(QPainter.Antialiasing | QPainter.SmoothPixmapTransform)
     view.s..

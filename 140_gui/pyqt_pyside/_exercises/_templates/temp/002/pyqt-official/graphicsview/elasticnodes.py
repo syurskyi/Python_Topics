@@ -46,7 +46,7 @@ ______ math
 
 ____ ?.?C.. ______ (qAbs, QLineF, QPointF, qrand, QRectF, QSizeF, qsrand,
         __, ?T..)
-____ ?.?G.. ______ (QBrush, ?C.., QLinearGradient, QPainter,
+____ ?.?G.. ______ (?B.., ?C.., QLinearGradient, QPainter,
         QPainterPath, QPen, QPolygonF, QRadialGradient)
 ____ ?.?W.. ______ (?A.., QGraphicsItem, QGraphicsScene,
         QGraphicsView, QStyle)
@@ -148,7 +148,7 @@ c_ Edge(QGraphicsItem):
         destArrowP2 _ destPoint + QPointF(math.sin(angle - Edge.Pi + Edge.Pi / 3) * arrowSize,
                                                       math.cos(angle - Edge.Pi + Edge.Pi / 3) * arrowSize)
 
-        painter.setBrush(__.black)
+        painter.sB..(__.black)
         painter.drawPolygon(QPolygonF([line.p1(), sourceArrowP1, sourceArrowP2]))
         painter.drawPolygon(QPolygonF([line.p2(), destArrowP1, destArrowP2]))
 
@@ -234,7 +234,7 @@ c_ Node(QGraphicsItem):
 
     ___ paint  painter, option, widget):
         painter.setPen(__.NoPen)
-        painter.setBrush(__.darkGray)
+        painter.sB..(__.darkGray)
         painter.drawEllipse(-7, -7, 20, 20)
 
         gradient _ QRadialGradient(-3, -3, 10)
@@ -247,7 +247,7 @@ c_ Node(QGraphicsItem):
             gradient.setColorAt(0, __.yellow)
             gradient.setColorAt(1, __.darkYellow)
 
-        painter.setBrush(QBrush(gradient))
+        painter.sB..(?B..(gradient))
         painter.setPen(QPen(__.black, 0))
         painter.drawEllipse(-10, -10, 20, 20)
 
@@ -389,8 +389,8 @@ c_ GraphWidget(QGraphicsView):
         gradient _ QLinearGradient(sceneRect.topLeft(), sceneRect.bottomRight())
         gradient.setColorAt(0, __.white)
         gradient.setColorAt(1, __.lightGray)
-        painter.fillRect(rect.intersected(sceneRect), QBrush(gradient))
-        painter.setBrush(__.NoBrush)
+        painter.fillRect(rect.intersected(sceneRect), ?B..(gradient))
+        painter.sB..(__.NoBrush)
         painter.drawRect(sceneRect)
 
         # Text.

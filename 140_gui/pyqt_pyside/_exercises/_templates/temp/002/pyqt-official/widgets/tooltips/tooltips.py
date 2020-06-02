@@ -161,7 +161,7 @@ c_ SortingBox(?W..):
         painter.setRenderHint(QPainter.Antialiasing)
         ___ shapeItem __ shapeItems:
             painter.translate(shapeItem.position())
-            painter.setBrush(shapeItem.color())
+            painter.sB..(shapeItem.color())
             painter.drawPath(shapeItem.pa__())
             painter.translate(-shapeItem.position())
 

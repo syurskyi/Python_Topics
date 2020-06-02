@@ -54,7 +54,7 @@ c_ WidgetGallery(QDialog):
     ___  -   parent_None):
         super(WidgetGallery, self). - (parent)
 
-        originalPalette _ ?A...palette()
+        originalPalette _ ?A...p..
 
         styleComboBox _ ?CB()
         styleComboBox.aI..(QStyleFactory.keys())

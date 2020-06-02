@@ -301,7 +301,7 @@ c_ MainWindow(qtw.?MW..): # change to mainwindow
     ___ show_settings
 
         settings_dialog _ SettingsDialog(settings, self)
-        settings_dialog.exec()
+        settings_dialog.e..
 
 
 __ ______ __ ______

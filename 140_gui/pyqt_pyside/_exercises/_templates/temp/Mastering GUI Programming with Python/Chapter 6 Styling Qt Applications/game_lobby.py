@@ -37,10 +37,10 @@ c_ ColorButton(qtw.?PB..):
     """Button with color and backgroundColor properties for animation"""
 
     ___ _color
-        r_ palette().color(qtg.?P...ButtonText)
+        r_ p...color(qtg.?P...ButtonText)
 
     ___ _setColor  qcolor):
-        palette _ palette()
+        palette _ p..
         palette.sC..(qtg.?P...ButtonText, qcolor)
         sP..(palette)
 
@@ -48,11 +48,11 @@ c_ ColorButton(qtw.?PB..):
 
     @qtc.pyqtProperty(qtg.?C..)
     ___ backgroundColor
-        r_ palette().color(qtg.?P...Button)
+        r_ p...color(qtg.?P...Button)
 
     @backgroundColor.setter
     ___ backgroundColor  qcolor):
-        palette _ palette()
+        palette _ p..
         palette.sC..(qtg.?P...Button, qcolor)
         sP..(palette)
 
@@ -161,15 +161,15 @@ c_ MainWindow(qtw.?MW..):
         ####################
 
         # Display a simple raster image
-        logo _ qtg.QPixmap('logo.png')
+        logo _ qtg.?P..('logo.png')
         __ logo.width() > 400:
             logo _ logo.scaledToWidth(400, qtc.__.SmoothTransformation)
         heading.setPixmap(logo)
 
         # Create images
 
-        go_pixmap _ qtg.QPixmap(qtc.?S..(32, 32))
-        stop_pixmap _ qtg.QPixmap(qtc.?S..(32, 32))
+        go_pixmap _ qtg.?P..(qtc.?S..(32, 32))
+        stop_pixmap _ qtg.?P..(qtc.?S..(32, 32))
         go_pixmap.fill(qtg.?C..('green'))
         stop_pixmap.fill(qtg.?C..('red'))
 
@@ -208,7 +208,7 @@ c_ MainWindow(qtw.?MW..):
         # Colors #
         ##########
         app _ qtw.?A...instance()
-        palette _ app.palette()
+        palette _ app.p..
         palette.sC..(
             qtg.?P...Button,
             qtg.?C..('#333')
@@ -231,20 +231,20 @@ c_ MainWindow(qtw.?MW..):
         cancel.sP..(palette)
 
         # Using Brushes
-        dotted_brush _ qtg.QBrush(qtg.?C..('white'), qtc.__.Dense2Pattern)
+        dotted_brush _ qtg.?B..(qtg.?C..('white'), qtc.__.Dense2Pattern)
 
         gradient _ qtg.QLinearGradient(0, 0, width(), height())
         gradient.setColorAt(0, qtg.?C..('navy'))
         gradient.setColorAt(0.5, qtg.?C..('darkred'))
         gradient.setColorAt(1, qtg.?C..('orange'))
-        gradient_brush _ qtg.QBrush(gradient)
+        gradient_brush _ qtg.?B..(gradient)
 
-        window_palette _ app.palette()
-        window_palette.setBrush(
+        window_palette _ app.p..
+        window_palette.sB..(
             qtg.?P...Window,
             gradient_brush
         )
-        window_palette.setBrush(
+        window_palette.sB..(
             qtg.?P...Active,
             qtg.?P...WindowText,
             dotted_brush

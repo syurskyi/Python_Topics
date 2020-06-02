@@ -45,7 +45,7 @@
 
 ____ ?.?C.. ______ (pS.., QBuffer, QByteArray, QFile, QIODevice,
         QMimeData, __)
-____ ?.?G.. ______ QDrag, QIcon, QImage, QPainter, QPixmap
+____ ?.?G.. ______ QDrag, QIcon, QImage, QPainter, ?P..
 ____ ?.?W.. ______ (?A.., QGridLayout, QLabel, ?PB..,
         QScrollArea, ?W..)
 ____ ?.QtSvg ______ QSvgWidget
@@ -122,7 +122,7 @@ c_ SourceWidget(?W..):
 
         drag _ QDrag
         drag.setMimeData(mimeData)
-        drag.setPixmap(QPixmap(':/images/drag.png'))
+        drag.setPixmap(?P..(':/images/drag.png'))
         drag.exec_(__.CopyAction)
 
 

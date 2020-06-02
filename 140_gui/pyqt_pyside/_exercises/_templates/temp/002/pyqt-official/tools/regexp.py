@@ -64,8 +64,8 @@ c_ RegExpDialog(QDialog):
 
         escapedPatternLineEdit _ ?LE..
         escapedPatternLineEdit.setReadOnly( st.
-        palette _ escapedPatternLineEdit.palette()
-        palette.setBrush(?P...Base,
+        palette _ escapedPatternLineEdit.p..
+        palette.sB..(?P...Base,
                 palette.brush(?P...Disabled, ?P...Base))
         escapedPatternLineEdit.sP..(palette)
 
@@ -165,10 +165,10 @@ c_ RegExpDialog(QDialog):
         syntax _ syntaxComboBox.itemData(syntaxComboBox.currentIndex())
         rx.setPatternSyntax(syntax)
 
-        palette _ patternComboBox.palette()
+        palette _ patternComboBox.p..
         __ rx.isValid
             palette.sC..(?P...Text,
-                    textComboBox.palette().color(?P...Text))
+                    textComboBox.p...color(?P...Text))
         ____
             palette.sC..(?P...Text, __.red)
         patternComboBox.sP..(palette)

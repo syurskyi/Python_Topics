@@ -250,7 +250,7 @@ c_ MainWindow(qtw.?MW..):
 
     ___ printer_config 
         dialog _ qtps.QPageSetupDialog(printer, self)
-        dialog.exec()
+        dialog.e..
         _update_preview_size()
 
     ___ _print_document 
@@ -261,13 +261,13 @@ c_ MainWindow(qtw.?MW..):
     ___ print_dialog 
         _print_document()
         dialog _ qtps.QPrintDialog(printer, self)
-        dialog.exec()
+        dialog.e..
         _update_preview_size()
 
     ___ print_preview 
         dialog _ qtps.QPrintPreviewDialog(printer, self)
         dialog.paintRequested.c..(_print_document)
-        dialog.exec()
+        dialog.e..
         _update_preview_size()
 
     ___ export_pdf 

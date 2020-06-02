@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ (?ATM.., QDir, QModelIndex, QRect,
         QRectF, ?S.., __)
-____ ?.?G.. ______ QBrush, qGray, QImage, QPainter
+____ ?.?G.. ______ ?B.., qGray, QImage, QPainter
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
 ____ ?.?W.. ______ (QAbstractItemDelegate, ?A.., QDialog,
         ?FD.., QHBoxLayout, QLabel, ?MW.., ?MB.., QMenu,
@@ -78,9 +78,9 @@ c_ PixelDelegate(QAbstractItemDelegate):
         painter.setPen(__.NoPen)
 
         __ option.state & QStyle.State_Selected:
-            painter.setBrush(option.palette.highlightedText())
+            painter.sB..(option.palette.highlightedText())
         ____
-            painter.setBrush(QBrush(__.black))
+            painter.sB..(?B..(__.black))
 
         painter.drawEllipse(QRectF(
                             option.rect.x() + option.rect.width()/2 - radius,

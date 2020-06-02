@@ -46,7 +46,7 @@ ______ ___
 ______ math
 
 ____ ?.?C.. ______ QPointF, QRect, QRectF, __, QTimer
-____ ?.?G.. ______ (QBrush, ?C.., QFont, QLinearGradient, QPainter,
+____ ?.?G.. ______ (?B.., ?C.., QFont, QLinearGradient, QPainter,
         QPen, QSurfaceFormat)
 ____ ?.?W.. ______ (?A.., QGridLayout, QLabel, QOpenGLWidget,
         ?W..)
@@ -58,8 +58,8 @@ c_ Helper(object):
         gradient.setColorAt(0.0, __.white)
         gradient.setColorAt(1.0, ?C..(0xa6, 0xce, 0x39))
 
-        background _ QBrush(?C..(64, 32, 64))
-        circleBrush _ QBrush(gradient)
+        background _ ?B..(?C..(64, 32, 64))
+        circleBrush _ ?B..(gradient)
         circlePen _ QPen(__.black)
         circlePen.setWidth(1)
         textPen _ QPen(__.white)
@@ -71,7 +71,7 @@ c_ Helper(object):
         painter.translate(100, 100)
 
         painter.save()
-        painter.setBrush(circleBrush)
+        painter.sB..(circleBrush)
         painter.setPen(circlePen)
         painter.rotate(elapsed * 0.030)
 
