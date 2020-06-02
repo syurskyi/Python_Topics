@@ -46,7 +46,7 @@ class MainWindow(?MW..):
         super(MainWindow, self). - ($ $$)
 
         browser = QWebEngineView()
-        browser.setUrl(QUrl("http://google.com"))
+        browser.setUrl(?U..("http://google.com"))
 
         browser.urlChanged.connect(update_urlbar)
         browser.loadFinished.connect(update_title)
@@ -57,7 +57,7 @@ class MainWindow(?MW..):
 
         navtb = QToolBar("Navigation")
         navtb.setIconSize(?S..(16, 16))
-        addToolBar(navtb)
+        aTB..(navtb)
 
         back_btn = QAction(QIcon(os.pa__.join('images', 'arrow-180.png')), "Back", self)
         back_btn.setStatusTip("Back to previous page")
@@ -135,7 +135,7 @@ class MainWindow(?MW..):
         sWT..("%s - MooseAche" % title)
 
     def navigate_mozarella
-        browser.setUrl(QUrl("https://www.udemy.com/522076"))
+        browser.setUrl(?U..("https://www.udemy.com/522076"))
 
     def about
         dlg = AboutDialog()
@@ -169,10 +169,10 @@ class MainWindow(?MW..):
         dlg.exec_()
 
     def navigate_home
-        browser.setUrl(QUrl("http://www.google.com"))
+        browser.setUrl(?U..("http://www.google.com"))
 
     def navigate_to_url   # Does not receive the Url
-        q = QUrl(urlbar.text())
+        q = ?U..(urlbar.text())
         if q.scheme() __ "":
             q.setScheme("http")
 

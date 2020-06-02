@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QDir, __, QTimer
+____ ?.?C.. ______ ?D.., __, QTimer
 ____ ?.?G.. ______ ?P..
 ____ ?.?W.. ______ (?A.., QCheckBox, ?FD.., QGridLayout,
         QGroupBox, QHBoxLayout, QLabel, ?PB.., QSizePolicy, SB..,
@@ -90,7 +90,7 @@ c_ Screenshot(?W..):
 
     ___ saveScreenshot
         format _ 'png'
-        initialPath _ QDir.currentPath() + "/untitled." + format
+        initialPath _ ?D...currentPath() + "/untitled." + format
 
         fileName, _ _ ?FD...getSaveFileName  "Save As", initialPath,
                 "%s Files (*.%s);;All Files (*)" % (format.upper(), format))

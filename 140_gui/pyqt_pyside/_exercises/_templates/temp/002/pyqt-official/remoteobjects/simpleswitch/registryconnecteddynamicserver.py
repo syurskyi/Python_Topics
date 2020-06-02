@@ -54,7 +54,7 @@
 ______ ___
 
 ____ ?.?C.. ______ (pyqtProperty, pS.., pyqtSlot, QCoreApplication,
-        ?O.., QTimer, QUrl)
+        ?O.., QTimer, ?U..)
 ____ ?.QtRemoteObjects ______ QRemoteObjectHost, QRemoteObjectRegistryHost
 
 
@@ -123,11 +123,11 @@ __ ______ __ ______
 
     # Create the node that hosts the registry.  This could be in a separate
     # process.
-    regNode _ QRemoteObjectRegistryHost(QUrl('local:registry'))
+    regNode _ QRemoteObjectRegistryHost(?U..('local:registry'))
 
     # Create the host object node.  This will connect to the registry node
     # rather than to a client.
-    srcNode _ QRemoteObjectHost(QUrl('local:replica'), QUrl('local:registry'))
+    srcNode _ QRemoteObjectHost(?U..('local:replica'), ?U..('local:registry'))
 
     # Enable remoting.
     srcNode.enableRemoting(srcSwitch, 'SimpleSwitch')

@@ -3,7 +3,7 @@ ____ ?.?M.. ______ *
 
 app _ QCoreApplication(  # list)
 
-___ camera_info __ QCameraInfo.availableCameras
+___ camera_info __ ?CI__.availableCameras
     print('Camera: ', camera_info.deviceName())
     camera _ QCamera(camera_info)
     r _ QMediaRecorder(camera)

@@ -94,7 +94,7 @@ c_ MainWindow(qtw.?MW..):
         cw _ ChatWindow()
         sCW..(cw)
 
-        username _ qtc.QDir.home().dirName()
+        username _ qtc.?D...h.. .dirName()
         interface _ UdpChatInterface(username)
         cw.submitted.c..(interface.send_message)
         interface.received.c..(cw.write_message)

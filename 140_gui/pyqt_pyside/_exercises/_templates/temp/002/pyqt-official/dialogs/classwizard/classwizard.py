@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QDir, QFile, QRegExp
+____ ?.?C.. ______ ?D.., QFile, QRegExp
 ____ ?.?G.. ______ ?P..
 ____ ?.?W.. ______ (?A.., QCheckBox, QGridLayout, QGroupBox,
         QLabel, QLineEdit, ?MB.., QRadioButton, QVBoxLayout, QWizard,
@@ -369,7 +369,7 @@ c_ OutputFilesPage(QWizardPage):
         className _ field('className')
         headerLineEdit.sT..(className.lower() + '.h')
         implementationLineEdit.sT..(className.lower() + '.cpp')
-        outputDirLineEdit.sT..(QDir.toNativeSeparators(QDir.tempPath()))
+        outputDirLineEdit.sT..(?D...toNativeSeparators(?D...tempPath()))
 
 
 c_ ConclusionPage(QWizardPage):

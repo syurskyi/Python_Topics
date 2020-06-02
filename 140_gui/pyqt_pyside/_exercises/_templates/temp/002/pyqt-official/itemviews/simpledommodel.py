@@ -196,19 +196,19 @@ c_ MainWindow ?MW..
         sWT..("Simple DOM Model")
 
     ___ openFile
-        filePath, _ _ ?FD...gOFN..  "Open File",
+        fP.., _ _ ?FD...gOFN..  "Open File",
                 xmlPath, "XML files (*.xml);;HTML files (*.html);;"
                 "SVG files (*.svg);;User Interface files (*.ui)")
 
-        __ filePath:
-            f _ QFile(filePath)
+        __ fP..:
+            f _ QFile(fP..)
             __ f.o..(QIODevice.ReadOnly):
                 document _ QDomDocument()
                 __ document.setContent(f):
                     newModel _ DomModel(document, self)
                     view.sM..(newModel)
                     model _ newModel
-                    xmlPath _ filePath
+                    xmlPath _ fP..
 
                 f.c..
 

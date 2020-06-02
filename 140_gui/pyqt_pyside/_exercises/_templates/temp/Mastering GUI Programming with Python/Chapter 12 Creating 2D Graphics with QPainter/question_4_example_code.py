@@ -66,7 +66,7 @@ c_ ImageFileButton(qtw.?PB..):
     ___ on_click
         filename, _ _ qtw.?FD...gOFN..(
             N.., "Select an image to use",
-            qtc.QDir.homePath(), "Images (*.png *.xpm *.jpg)")
+            qtc.?D...homePath(), "Images (*.png *.xpm *.jpg)")
         __ filename:
             _filename _ filename
             # set button text to filename without path
@@ -167,7 +167,7 @@ c_ MainWindow(qtw.?MW..):
         form.changed.c..(build_image)
 
         # Create file loading and saving
-        toolbar _ addToolBar('File')
+        toolbar _ aTB..('File')
         toolbar.aA..("Save Image", save_image)
 
         # End main UI code
@@ -176,7 +176,7 @@ c_ MainWindow(qtw.?MW..):
     ___ save_image
         save_file, _ _ qtw.?FD...getSaveFileName(
             N.., "Save your image",
-            qtc.QDir.homePath(), "PNG Images (*.png)")
+            qtc.?D...homePath(), "PNG Images (*.png)")
         __ save_file:
             image.save(save_file, "PNG")
 

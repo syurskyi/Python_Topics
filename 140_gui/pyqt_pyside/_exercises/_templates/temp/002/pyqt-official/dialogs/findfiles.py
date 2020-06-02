@@ -42,8 +42,8 @@
 #############################################################################
 
 
-____ ?.?C.. ______ (QDir, QIODevice, QFile, QFileInfo, __, QTextStream,
-        QUrl)
+____ ?.?C.. ______ (?D.., QIODevice, QFile, QFileInfo, __, QTextStream,
+        ?U..)
 ____ ?.?G.. ______ QDesktopServices
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., ?CB,
         QDialog, ?FD.., QGridLayout, QHBoxLayout, QHeaderView, QLabel,
@@ -60,7 +60,7 @@ c_ Window(QDialog):
 
         fileComboBox _ createComboBox("*")
         textComboBox _ createComboBox()
-        directoryComboBox _ createComboBox(QDir.currentPath())
+        directoryComboBox _ createComboBox(?D...currentPath())
 
         fileLabel _ QLabel("Named:")
         textLabel _ QLabel("Containing text:")
@@ -91,7 +91,7 @@ c_ Window(QDialog):
 
     ___ browse
         directory _ ?FD...getExistingDirectory  "Find Files",
-                QDir.currentPath())
+                ?D...currentPath())
 
         __ directory:
             __ directoryComboBox.findText(directory) __ -1:
@@ -115,11 +115,11 @@ c_ Window(QDialog):
         updateComboBox(textComboBox)
         updateComboBox(directoryComboBox)
 
-        currentDir _ QDir(pa__)
+        currentDir _ ?D..(pa__)
         __ no. fileName:
             fileName _ "*"
         files _ currentDir.entryList([fileName],
-                QDir.Files | QDir.NoSymLinks)
+                ?D...Files | ?D...NoSymLinks)
 
         __ t__:
             files _ findFiles(files, t__)
@@ -202,7 +202,7 @@ c_ Window(QDialog):
     ___ openFileOfItem  row, column):
         item _ filesTable.item(row, 0)
 
-        QDesktopServices.openUrl(QUrl(currentDir.absoluteFilePath(item.t__())))
+        QDesktopServices.openUrl(?U..(currentDir.absoluteFilePath(item.t__())))
 
 
 __ ______ __ ______

@@ -19,7 +19,7 @@ c_ Ui_Window(object):
         verticalLayout_2.setContentsMargins(-1, 4, -1, 4)
         verticalLayout_2.setObjectName("verticalLayout_2")
         webView _ QtWebKitWidgets.QWebView(centralwidget)
-        webView.setUrl(?C...QUrl("http://qt.nokia.com/"))
+        webView.setUrl(?C...?U..("http://qt.nokia.com/"))
         webView.setObjectName("webView")
         verticalLayout_2.aW..(webView)
         Window.sCW..(centralwidget)

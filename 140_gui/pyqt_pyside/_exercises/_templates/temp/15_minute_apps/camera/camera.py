@@ -15,7 +15,7 @@ c_ MainWindow ?MW..
     ___  -   $ $$
         super(MainWindow, self). - ($ $$)
 
-        available_cameras _ QCameraInfo.availableCameras()
+        available_cameras _ ?CI__.aC..
         __ no. available_cameras:
             pass #quit
 
@@ -25,7 +25,7 @@ c_ MainWindow ?MW..
 
         save_path _ ""
 
-        viewfinder _ QCameraViewfinder()
+        viewfinder _ ?CV..
         viewfinder.s..
         sCW..(viewfinder)
 
@@ -35,7 +35,7 @@ c_ MainWindow ?MW..
         # Setup tools
         camera_toolbar _ QToolBar("Camera")
         camera_toolbar.setIconSize(?S..(14, 14))
-        addToolBar(camera_toolbar)
+        aTB..(camera_toolbar)
 
         photo_action _ ?A..(QIcon(__.p__ .join('images', 'camera-black.png')), "Take photo...", self)
         photo_action.setStatusTip("Take photo of current view")
@@ -61,7 +61,7 @@ c_ MainWindow ?MW..
     ___ select_camera  i):
         camera _ QCamera(available_cameras[i])
         camera.setViewfinder(viewfinder)
-        camera.setCaptureMode(QCamera.CaptureStillImage)
+        camera.sCM..(QCamera.CaptureStillImage)
         camera.error.c..(l___: alert(camera.errorString()))
         camera.start()
 

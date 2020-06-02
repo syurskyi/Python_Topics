@@ -435,7 +435,7 @@ c_ Camera ?MW..
         captureMode _ QCamera.CaptureStillImage __ tabIndex __ 0 ____ QCamera.CaptureVideo
 
         __ camera.isCaptureModeSupported(captureMode):
-            camera.setCaptureMode(captureMode)
+            camera.sCM..(captureMode)
 
     ___ updateCameraState  state):
         __ state __ QCamera.ActiveState:

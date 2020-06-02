@@ -43,7 +43,7 @@
 ###########################################################################
 
 
-____ ?.?C.. ______ pyqtSlot, QUrl
+____ ?.?C.. ______ pyqtSlot, ?U..
 ____ ?.?G.. ______ ?KS..
 ____ ?.?W.. ______ (?A.., ?A.., ?MW.., ?MB..,
         ?W..)
@@ -60,7 +60,7 @@ c_ FormExtractor(?W..):
         ui.setupUi
 
         webView _ ui.webView
-        webView.setUrl(QUrl('qrc:/form.html'))
+        webView.setUrl(?U..('qrc:/form.html'))
         webView.page().mainFrame().javaScriptWindowObjectCleared.c..(
                 populateJavaScriptWindowObject)
 

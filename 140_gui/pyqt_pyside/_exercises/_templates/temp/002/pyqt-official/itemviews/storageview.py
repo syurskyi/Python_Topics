@@ -54,7 +54,7 @@
 
 ______ math
 
-____ ?.?C.. ______ ?ATM.., QByteArray, QDir, QStorageInfo, __
+____ ?.?C.. ______ ?ATM.., QByteArray, ?D.., QStorageInfo, __
 ____ ?.?W.. ______ QAbstractItemView, ?A.., QTreeView
 
 
@@ -82,7 +82,7 @@ c_ StorageModel ?ATM..
     ColumnIsReadOnly, ColumnIsValid, ColumnCount _ ra..(11)
 
     columnFuncMap _ {
-        ColumnRootPath: l___ volume: QDir.toNativeSeparators(volume.rootPath()),
+        ColumnRootPath: l___ volume: ?D...toNativeSeparators(volume.rootPath()),
         ColumnName: l___ volume: volume.name(),
         ColumnDevice: l___ volume: volume.device(),
         ColumnFileSystemName: l___ volume: volume.fileSystemType(),

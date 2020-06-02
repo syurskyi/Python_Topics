@@ -43,9 +43,9 @@ c_ InvoiceForm ?.?W..
         data _ {
             'c_name': inputs['Customer Name'].t__(),
             'c_addr': inputs['Customer Address'].toPlainText(),
-            'i_date': inputs['Invoice Date'].date().toString(),
+            'i_date': inputs['Invoice Date'].date().tS..,
             'i_due': inputs['Invoice Date'].date().addDays(
-                inputs['Days until Due'].value()).toString(),
+                inputs['Days until Due'].value()).tS..,
             'i_terms': '{} days'.format(inputs['Days until Due'].value())
         }
         data['line_items'] _ li..()
@@ -228,7 +228,7 @@ c_ MainWindow(qtw.?MW..):
         form.submitted.c..(preview.build_invoice)
 
         # Printing
-        print_tb _ addToolBar('Printing')
+        print_tb _ aTB..('Printing')
         print_tb.aA..('Configure Printer', printer_config)
         print_tb.aA..('Print Preview', print_preview)
         print_tb.aA..('Print dialog', print_dialog)
@@ -272,7 +272,7 @@ c_ MainWindow(qtw.?MW..):
 
     ___ export_pdf 
         filename, _ _ qtw.?FD...getSaveFileName(
-            self, "Save to PDF", qtc.QDir.homePath(), "PDF Files (*.pdf)")
+            self, "Save to PDF", qtc.?D...homePath(), "PDF Files (*.pdf)")
         __ filename:
             printer.setOutputFileName(filename)
             printer.setOutputFormat(qtps.QPrinter.PdfFormat)

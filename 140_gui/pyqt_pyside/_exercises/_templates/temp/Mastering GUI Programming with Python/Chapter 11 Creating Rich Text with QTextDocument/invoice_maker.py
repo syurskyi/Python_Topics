@@ -40,9 +40,9 @@ c_ InvoiceForm ?.?W..
         data _ {
             'c_name': inputs['Customer Name'].t__(),
             'c_addr': inputs['Customer Address'].toPlainText(),
-            'i_date': inputs['Invoice Date'].date().toString(),
+            'i_date': inputs['Invoice Date'].date().tS..,
             'i_due': inputs['Invoice Date'].date().addDays(
-                inputs['Days until Due'].value()).toString(),
+                inputs['Days until Due'].value()).tS..,
             'i_terms': '{} days'.format(inputs['Days until Due'].value())
         }
         data['line_items'] _   # list

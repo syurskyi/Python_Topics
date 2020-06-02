@@ -41,7 +41,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ pyqtProperty, pS.., QPointF, QUrl
+____ ?.?C.. ______ pyqtProperty, pS.., QPointF, ?U..
 ____ ?.?G.. ______ ?C.., QGuiApplication
 ____ ?.QtQml ______ qmlRegisterType
 ____ ?.QtQuick ______ (QQuickItem, QQuickView, QSGFlatColorMaterial,
@@ -182,7 +182,7 @@ __ ______ __ ______
     format.setSamples(16)
     view.setFormat(format)
 
-    view.setSource(QUrl('qrc:///scenegraph/customgeometry/main.qml'))
+    view.setSource(?U..('qrc:///scenegraph/customgeometry/main.qml'))
     view.s..
 
     ___.e..(app.exec_())

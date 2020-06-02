@@ -57,7 +57,7 @@ c_ SoundWidget ?.?W..
         play_button _ PlayButton()
         la__ .aW..(play_button, 3, 0, 1, 2)
 
-        player _ qtmm.QMediaPlayer()
+        player _ qtmm.?MP..
         play_button.c__.c..(on_playbutton)
         player.stateChanged.c..(play_button.on_state_changed)
 
@@ -129,7 +129,7 @@ c_ SoundWidget ?.?W..
         label.sT..(url.fileName())
         __ url.scheme() __ '':
             url.setScheme('file')
-        content _ qtmm.QMediaContent(url)
+        content _ qtmm.?MC..(url)
         #self.player.setMedia(content)
         # Looping
         # must retain a reference to the playlist
@@ -144,7 +144,7 @@ c_ SoundWidget ?.?W..
         fn, _ _ qtw.?FD...getOpenFileUrl(
             self,
             "Select File",
-            qtc.QDir.homePath(),
+            qtc.?D...homePath(),
             "Audio files (*.wav *.flac *.mp3 *.ogg *.aiff);; All files (*)"
         )
         __ fn:

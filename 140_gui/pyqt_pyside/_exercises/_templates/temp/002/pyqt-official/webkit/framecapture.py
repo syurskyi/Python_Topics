@@ -60,7 +60,7 @@ Result:
 
 ______ ___
 
-____ ?.?C.. ______ pS.., ?O.., ?S.., __, QUrl
+____ ?.?C.. ______ pS.., ?O.., ?S.., __, ?U..
 ____ ?.?G.. ______ QImage, QPainter
 ____ ?.?W.. ______ ?A..
 ____ ?.QtWebKitWidgets ______ QWebPage
@@ -145,7 +145,7 @@ __ ______ __ ______
         cerr(__doc__)
         ___.e..(1)
 
-    url _ QUrl.fromUserInput(___.argv[1])
+    url _ ?U...fromUserInput(___.argv[1])
     fileName _ ___.argv[2]
 
     app _ ?A..(___.a..

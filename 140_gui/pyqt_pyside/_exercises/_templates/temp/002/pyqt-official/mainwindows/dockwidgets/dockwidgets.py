@@ -239,12 +239,12 @@ c_ MainWindow ?MW..
         helpMenu.aA..(aboutQtAct)
 
     ___ createToolBars
-        fileToolBar _ addToolBar("File")
+        fileToolBar _ aTB..("File")
         fileToolBar.aA..(newLetterAct)
         fileToolBar.aA..(saveAct)
         fileToolBar.aA..(printAct)
 
-        editToolBar _ addToolBar("Edit")
+        editToolBar _ aTB..("Edit")
         editToolBar.aA..(undoAct)
 
     ___ createStatusBar

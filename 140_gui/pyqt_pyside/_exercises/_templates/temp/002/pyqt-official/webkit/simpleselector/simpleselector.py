@@ -43,7 +43,7 @@
 ###########################################################################
 
 
-____ ?.?C.. ______ QUrl
+____ ?.?C.. ______ ?U..
 ____ ?.?W.. ______ ?A.., ?W..
 
 ____ ui_window ______ Ui_Window
@@ -79,7 +79,7 @@ __ ______ __ ______
     app _ ?A..(___.a..
 
     win _ SimpleSelector()
-    win.setUrl(QUrl('http://www.webkit.org'))
+    win.setUrl(?U..('http://www.webkit.org'))
     win.s..
 
     ___.e..(app.exec_())

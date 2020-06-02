@@ -12,7 +12,7 @@ c_ MainWindow(qtw.?MW..):
         s_. - ()
         # Main UI code goes here
         # navigation toolbar
-        navigation _ addToolBar('Navigation')
+        navigation _ aTB..('Navigation')
         style _ style()
         back _ navigation.aA..('Back')
         back.setIcon(style.standardIcon(style.SP_ArrowBack))
@@ -63,7 +63,7 @@ c_ MainWindow(qtw.?MW..):
         history_list _ ?.?LW..
         history_dock.setWidget(history_list)
         tabs.currentChanged.c..(update_history)
-        history_list.itemDoubleClicked.c..(navigate_history)
+        history_list.iDC__.c..(navigate_history)
 
         # Altering Settings
         settings _ qtwe.QWebEngineSettings.defaultSettings()
@@ -121,7 +121,7 @@ c_ MainWindow(qtw.?MW..):
         # set default content
         webview.setHtml(
             '<h1>Blank Tab</h1><p>It is a blank tab!</p>',
-            qtc.QUrl('about:blank'))
+            qtc.?U..('about:blank'))
 
         r_ webview
 
@@ -139,7 +139,7 @@ c_ MainWindow(qtw.?MW..):
 
     ___ on_go 
         tabs.currentWidget().load(
-            qtc.QUrl(urlbar.t__()))
+            qtc.?U..(urlbar.t__()))
 
     ##################
     # History Method #

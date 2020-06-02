@@ -44,9 +44,9 @@
 
 ____ ?.?C.. ______ (pS.., pyqtSlot, Q_ARG, QAbstractItemModel,
         QFileInfo, qFuzzyCompare, QMetaObject, QModelIndex, ?O.., __,
-        QThread, ?T.., QUrl)
+        QThread, ?T.., ?U..)
 ____ ?.?G.. ______ ?C.., qGray, QImage, QPainter, ?P..
-____ ?.?M.. ______ (QAbstractVideoBuffer, QMediaContent,
+____ ?.?M.. ______ (QAbstractVideoBuffer, ?MC..,
         QMediaMetaData, QMediaPlayer, QMediaPlaylist, QVideoFrame, QVideoProbe)
 ____ ?.QtMultimediaWidgets ______ QVideoWidget
 ____ ?.?W.. ______ (?A.., ?CB, QDialog, ?FD..,
@@ -387,7 +387,7 @@ c_ Player(?W..):
         statusInfo _ ""
         duration _ 0
 
-        player _ QMediaPlayer()
+        player _ ?MP..
         playlist _ QMediaPlaylist()
         player.setPlaylist(playlist)
 
@@ -505,15 +505,15 @@ c_ Player(?W..):
         ___ name __ fileNames:
             fileInfo _ QFileInfo(name)
             __ fileInfo.e..
-                url _ QUrl.fromLocalFile(fileInfo.absoluteFilePath())
+                url _ ?U...fLF..(fileInfo.absoluteFilePath())
                 __ fileInfo.suffix().lower() __ 'm3u':
                     playlist.load(url)
                 ____
-                    playlist.addMedia(QMediaContent(url))
+                    playlist.addMedia(?MC..(url))
             ____
-                url _ QUrl(name)
+                url _ ?U..(name)
                 __ url.isValid
-                    playlist.addMedia(QMediaContent(url))
+                    playlist.addMedia(?MC..(url))
 
     ___ durationChanged  duration):
         duration /_ 1000

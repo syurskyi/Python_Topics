@@ -54,7 +54,7 @@
 ______ ___
 
 ____ ?.?C.. ______ (pyqtProperty, pS.., pyqtSlot, QCoreApplication,
-        ?O.., QTimer, QUrl)
+        ?O.., QTimer, ?U..)
 ____ ?.QtRemoteObjects ______ QRemoteObjectHost
 
 
@@ -122,7 +122,7 @@ __ ______ __ ______
     srcSwitch _ SimpleSwitch()
 
     # Create the host object node.
-    srcNode _ QRemoteObjectHost(QUrl('local:replica'))
+    srcNode _ QRemoteObjectHost(?U..('local:replica'))
 
     # Enable remoting.
     srcNode.enableRemoting(srcSwitch, 'SimpleSwitch')

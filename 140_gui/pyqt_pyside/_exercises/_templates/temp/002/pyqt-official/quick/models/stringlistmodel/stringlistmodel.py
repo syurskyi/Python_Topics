@@ -44,7 +44,7 @@
 ______ os
 ______ ___
 
-____ ?.?C.. ______ QUrl
+____ ?.?C.. ______ ?U..
 ____ ?.?G.. ______ QGuiApplication
 ____ ?.QtQuick ______ QQuickView
 
@@ -64,7 +64,7 @@ view _ QQuickView()
 ctxt _ view.rootContext()
 ctxt.setContextProperty('myModel', dataList)
 
-view.setSource(QUrl('qrc:view.qml'))
+view.setSource(?U..('qrc:view.qml'))
 view.s..
 
 ___.e..(app.exec_())

@@ -157,7 +157,7 @@ c_ DropSiteWindow(?W..):
             ____ format __ 'text/html':
                 t__ _ mimeData.html().strip()
             ____ format __ 'text/uri-list':
-                t__ _ " ".join([url.toString() ___ url __ mimeData.urls()])
+                t__ _ " ".join([url.tS.. ___ url __ mimeData.urls()])
             ____
                 t__ _ " ".join(["%02X" % ord(datum) ___ datum __ mimeData.data(format)])
 

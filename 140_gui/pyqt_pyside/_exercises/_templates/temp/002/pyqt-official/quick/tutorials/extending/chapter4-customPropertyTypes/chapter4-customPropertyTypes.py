@@ -41,7 +41,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ pyqtProperty, QRectF, QUrl
+____ ?.?C.. ______ pyqtProperty, QRectF, ?U..
 ____ ?.?G.. ______ ?C.., QGuiApplication, QPainter, QPen
 ____ ?.QtQml ______ qmlRegisterType
 ____ ?.QtQuick ______ QQuickItem, QQuickPaintedItem, QQuickView
@@ -108,7 +108,7 @@ __ ______ __ ______
     view _ QQuickView()
     view.setResizeMode(QQuickView.SizeRootObjectToView)
     view.setSource(
-            QUrl.fromLocalFile(
+            ?U...fLF..(
                     __.p__ .join(__.p__ .dirname(__.p__ .abspath(__file__)),
                             'app.qml')))
     view.s..

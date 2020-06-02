@@ -59,7 +59,7 @@ class MainWindow(?MW..):
 
         navtb = QToolBar("Navigation")
         navtb.setIconSize(?S..(16, 16))
-        addToolBar(navtb)
+        aTB..(navtb)
 
         back_btn = QAction(QIcon(os.pa__.join('images', 'arrow-180.png')), "Back", self)
         back_btn.setStatusTip("Back to previous page")
@@ -134,7 +134,7 @@ class MainWindow(?MW..):
         navigate_mozarella_action.triggered.connect(navigate_mozarella)
         help_menu.addAction(navigate_mozarella_action)
 
-        add_new_tab(QUrl('http://www.google.com'), 'Homepage')
+        add_new_tab(?U..('http://www.google.com'), 'Homepage')
 
         show()
 
@@ -144,7 +144,7 @@ class MainWindow(?MW..):
     def add_new_tab(self, qurl=None, label="Blank"):
 
         if qurl is None:
-            qurl = QUrl('')
+            qurl = ?U..('')
 
         browser = QWebEngineView()
         browser.setUrl(qurl)
@@ -184,7 +184,7 @@ class MainWindow(?MW..):
         sWT..("%s - Mozarella Ashbadger" % title)
 
     def navigate_mozarella
-        tabs.currentWidget().setUrl(QUrl("https://www.udemy.com/522076"))
+        tabs.currentWidget().setUrl(?U..("https://www.udemy.com/522076"))
 
     def about
         dlg = AboutDialog()
@@ -218,10 +218,10 @@ class MainWindow(?MW..):
         dlg.exec_()
 
     def navigate_home
-        tabs.currentWidget().setUrl(QUrl("http://www.google.com"))
+        tabs.currentWidget().setUrl(?U..("http://www.google.com"))
 
     def navigate_to_url   # Does not receive the Url
-        q = QUrl(urlbar.text())
+        q = ?U..(urlbar.text())
         if q.scheme() __ "":
             q.setScheme("http")
 

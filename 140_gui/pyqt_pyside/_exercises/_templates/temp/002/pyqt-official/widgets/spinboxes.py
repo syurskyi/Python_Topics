@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QDate, QDateTime, __, ?T..
+____ ?.?C.. ______ QDate, ?DT__, __, ?T..
 ____ ?.?W.. ______ (?A.., ?CB, QDateEdit, ?DTE..,
         QDoubleSpinBox, QGroupBox, QHBoxLayout, QLabel, SB.., ?TE..,
         QVBoxLayout, ?W..)
@@ -115,7 +115,7 @@ c_ Window(?W..):
                     timeEdit.maximumTime().toString(__.ISODate)))
 
         meetingLabel _ QLabel()
-        meetingEdit _ ?DTE..(QDateTime.currentDateTime())
+        meetingEdit _ ?DTE..(?DT__.currentDateTime())
 
         formatLabel _ QLabel("Format string for the meeting date and time:")
 

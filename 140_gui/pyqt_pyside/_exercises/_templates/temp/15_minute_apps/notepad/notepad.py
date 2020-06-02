@@ -36,7 +36,7 @@ c_ MainWindow ?MW..
 
         file_toolbar _ QToolBar("File")
         file_toolbar.setIconSize(?S..(14, 14))
-        addToolBar(file_toolbar)
+        aTB..(file_toolbar)
         file_menu _ mB.. .aM..("&File")
 
         open_file_action _ ?A..(QIcon(__.p__ .join('images', 'blue-folder-open-document.png')), "Open file...", self)
@@ -65,7 +65,7 @@ c_ MainWindow ?MW..
 
         edit_toolbar _ QToolBar("Edit")
         edit_toolbar.setIconSize(?S..(16, 16))
-        addToolBar(edit_toolbar)
+        aTB..(edit_toolbar)
         edit_menu _ mB.. .aM..("&Edit")
 
         undo_action _ ?A..(QIcon(__.p__ .join('images', 'arrow-curve-180-left.png')), "Undo", self)

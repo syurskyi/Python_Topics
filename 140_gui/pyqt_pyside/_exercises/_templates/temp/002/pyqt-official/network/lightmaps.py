@@ -47,7 +47,7 @@
 ______ math
 
 ____ ?.?C.. ______ (pS.., QBasicTimer, ?O.., QPoint, QPointF,
-        QRect, ?S.., QStandardPaths, __, QUrl)
+        QRect, ?S.., QStandardPaths, __, ?U..)
 ____ ?.?G.. ______ (?C.., QDesktopServices, QImage, QPainter,
         QPainterPath, ?P.., QRadialGradient)
 ____ ?.?W.. ______ ?A.., ?A.., ?MW.., ?W..
@@ -119,7 +119,7 @@ c_ SlippyMap(?O..):
         _tilesRect _ QRect()
         _tilePixmaps _   # dict # Point(x, y) to QPixmap mapping
         _manager _ QNetworkAccessManager()
-        _url _ QUrl()
+        _url _ ?U..()
         # public vars
         width _ 400
         height _ 300
@@ -212,11 +212,11 @@ c_ SlippyMap(?O..):
                     break
 
         __ grab __ N..:
-            _url _ QUrl()
+            _url _ ?U..()
             r_
 
         pa__ _ 'http://tile.openstreetmap.org/%d/%d/%d.png' % (zoom, grab.x(), grab.y())
-        _url _ QUrl(pa__)
+        _url _ ?U..(pa__)
         request _ QNetworkRequest()
         request.setUrl(_url)
         request.setRawHeader(b'User-Agent', b'Nokia (PyQt) Graphics Dojo 1.0')
@@ -466,7 +466,7 @@ c_ MapZoom ?MW..
         map_.setCenter(-6.211544, 106.845172)
 
     ___ aboutOsm 
-        QDesktopServices.openUrl(QUrl('http://www.openstreetmap.org'))
+        QDesktopServices.openUrl(?U..('http://www.openstreetmap.org'))
 
 
 __ ______ __ ______

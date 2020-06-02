@@ -44,7 +44,7 @@
 
 ______ ___
 
-____ ?.?C.. ______ (QByteArray, QDate, QDateTime, QEvent, QPoint, QRect,
+____ ?.?C.. ______ (QByteArray, QDate, ?DT__, QEvent, QPoint, QRect,
         QRegExp, QSettings, ?S.., __, ?T.., QTimer)
 ____ ?.?G.. ______ ?C.., QIcon, QRegExpValidator, ?V..
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., ?A..,
@@ -610,7 +610,7 @@ c_ VariantDelegate(QItemDelegate):
             regExp _ colorExp
         ____ isinstance(originalValue, QDate):
             regExp _ dateExp
-        ____ isinstance(originalValue, QDateTime):
+        ____ isinstance(originalValue, ?DT__):
             regExp _ dateTimeExp
         ____ isinstance(originalValue, ?T..):
             regExp _ timeExp
@@ -657,8 +657,8 @@ c_ VariantDelegate(QItemDelegate):
             value _ QDate.fromString(t__, __.ISODate)
             __ no. value.isValid
                 r_
-        ____ isinstance(originalValue, QDateTime):
-            value _ QDateTime.fromString(t__, __.ISODate)
+        ____ isinstance(originalValue, ?DT__):
+            value _ ?DT__.fromString(t__, __.ISODate)
             __ no. value.isValid
                 r_
         ____ isinstance(originalValue, ?T..):
@@ -690,7 +690,7 @@ c_ VariantDelegate(QItemDelegate):
     @staticmethod
     ___ isSupportedType(value):
         r_ isinstance(value, (bool, float, int, QByteArray, str, ?C..,
-                QDate, QDateTime, ?T.., QPoint, QRect, ?S.., li..))
+                QDate, ?DT__, ?T.., QPoint, QRect, ?S.., li..))
 
     @staticmethod
     ___ displayText(value):
@@ -702,7 +702,7 @@ c_ VariantDelegate(QItemDelegate):
             r_ '%g' % value
         ____ isinstance(value, ?C..):
             r_ '(%u,%u,%u,%u)' % (value.red(), value.green(), value.blue(), value.alpha())
-        ____ isinstance(value, (QDate, QDateTime, ?T..)):
+        ____ isinstance(value, (QDate, ?DT__, ?T..)):
             r_ value.toString(__.ISODate)
         ____ isinstance(value, QPoint):
             r_ '(%d,%d)' % (value.x(), value.y())

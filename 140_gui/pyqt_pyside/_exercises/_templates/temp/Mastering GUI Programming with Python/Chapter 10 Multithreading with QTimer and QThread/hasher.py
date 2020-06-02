@@ -82,8 +82,8 @@ c_ HashManager(qtc.?O..):
     @qtc.pyqtSlot(str, str, int)
     ___ do_hashing  source, destination, threads):
         pool.setMaxThreadCount(threads)
-        qdir _ qtc.QDir(source)
-        ___ filename __ qdir.entryList(qtc.QDir.Files):
+        qdir _ qtc.?D..(source)
+        ___ filename __ qdir.entryList(qtc.?D...Files):
             filepath _ qdir.absoluteFilePath(filename)
             runner _ HashRunner(filepath, destination)
             pool.start(runner)

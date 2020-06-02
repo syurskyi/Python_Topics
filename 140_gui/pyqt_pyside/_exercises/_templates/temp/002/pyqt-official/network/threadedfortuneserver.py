@@ -121,7 +121,7 @@ c_ Dialog(QDialog):
         ____
             ipAddress _ QHostAddress(QHostAddress.LocalHost)
 
-        ipAddress _ ipAddress.toString()
+        ipAddress _ ipAddress.tS..
 
         statusLabel.sT..("The server is running on\n\nIP: %s\nport: %d\n\n"
                 "Run the Fortune Client example now." % (ipAddress, server.serverPort()))

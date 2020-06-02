@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QDir, __
+____ ?.?C.. ______ ?D.., __
 ____ ?.?G.. ______ QImage, QPainter, ?P.., ?P..
 ____ ?.?W.. ______ (?A.., ?A.., ?FD.., QLabel,
         ?MW.., QMenu, ?MB.., QScrollArea, QSizePolicy)
@@ -74,7 +74,7 @@ c_ ImageViewer ?MW..
 
     ___ o..
         fileName, _ _ ?FD...gOFN..  "Open File",
-                QDir.currentPath())
+                ?D...currentPath())
         __ fileName:
             image _ QImage(fileName)
             __ image.isNull

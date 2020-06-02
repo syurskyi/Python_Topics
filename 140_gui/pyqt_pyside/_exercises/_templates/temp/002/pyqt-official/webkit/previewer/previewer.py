@@ -43,7 +43,7 @@
 ###########################################################################
 
 
-____ ?.?C.. ______ QFile, QIODevice, QTextStream, QUrl
+____ ?.?C.. ______ QFile, QIODevice, QTextStream, ?U..
 ____ ?.?G.. ______ ?KS..
 ____ ?.?W.. ______ (?A.., ?A.., ?FD.., QInputDialog,
         QLineEdit, ?MW.., ?MB.., ?W..)
@@ -56,7 +56,7 @@ c_ Previewer(?W.., Ui_Form):
         super(Previewer, self). - (parent)
 
         setupUi
-        baseUrl _ QUrl()
+        baseUrl _ ?U..()
  
     ___ setBaseUrl  url):
         baseUrl _ url
@@ -129,14 +129,14 @@ c_ MainWindow ?MW..
 
             # Display contents.
             centralWidget.plainTextEdit.sPT..(output)
-            centralWidget.setBaseUrl(QUrl.fromLocalFile(fileName))
+            centralWidget.setBaseUrl(?U...fLF..(fileName))
 
     ___ openUrl
         url, ok _ QInputDialog.getText  "Enter a URL", "URL:",
                 QLineEdit.Normal, "http://")
 
         __ ok and url:
-            url _ QUrl(url)
+            url _ ?U..(url)
             centralWidget.webView.setUrl(url)
 
     ___ save

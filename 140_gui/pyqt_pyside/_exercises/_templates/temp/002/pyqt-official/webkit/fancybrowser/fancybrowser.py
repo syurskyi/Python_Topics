@@ -42,7 +42,7 @@
 ###########################################################################
 
 
-____ ?.?C.. ______ QFile, QIODevice, __, QTextStream, QUrl
+____ ?.?C.. ______ QFile, QIODevice, __, QTextStream, ?U..
 ____ ?.?W.. ______ (?A.., ?A.., QLineEdit, ?MW..,
         QSizePolicy, QStyle, ?TE..)
 ____ ?.QtNetwork ______ QNetworkProxyFactory, QNetworkRequest
@@ -79,7 +79,7 @@ c_ MainWindow ?MW..
                 locationEdit.sizePolicy().verticalPolicy())
         locationEdit.rP__.c..(changeLocation)
 
-        toolBar _ addToolBar("Navigation")
+        toolBar _ aTB..("Navigation")
         toolBar.aA..(view.pageAction(QWebPage.Back))
         toolBar.aA..(view.pageAction(QWebPage.Forward))
         toolBar.aA..(view.pageAction(QWebPage.Reload))
@@ -129,7 +129,7 @@ c_ MainWindow ?MW..
         locationEdit.sT..(view.url().toString())
 
     ___ changeLocation 
-        url _ QUrl.fromUserInput(locationEdit.t__())
+        url _ ?U...fromUserInput(locationEdit.t__())
         view.load(url)
         view.setFocus()
 
@@ -201,9 +201,9 @@ __ ______ __ ______
     app _ ?A..(___.a..
 
     __ le.(___.a.. > 1:
-        url _ QUrl(___.argv[1])
+        url _ ?U..(___.argv[1])
     ____
-        url _ QUrl('http://www.google.com/ncr')
+        url _ ?U..('http://www.google.com/ncr')
 
     browser _ MainWindow(url)
     browser.s..

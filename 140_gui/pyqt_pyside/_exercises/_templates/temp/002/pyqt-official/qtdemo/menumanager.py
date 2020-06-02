@@ -43,9 +43,9 @@
 ______ ___
 ____ xml.dom.minidom ______ parseString
 
-____ ?.?C.. ______ (QByteArray, QDir, QEasingCurve, QFile, QFileInfo,
+____ ?.?C.. ______ (QByteArray, ?D.., QEasingCurve, QFile, QFileInfo,
         QLibraryInfo, ?O.., QPointF, QProcess, QProcessEnvironment,
-        QStandardPaths, __, QT_VERSION, QT_VERSION_STR, QTextStream, QUrl)
+        QStandardPaths, __, QT_VERSION, QT_VERSION_STR, QTextStream, ?U..)
 ____ ?.?W.. ______ ?A.., ?MB..
 
 ____ colors ______ Colors
@@ -69,8 +69,8 @@ c_ MenuManager(?O..):
         contentsDoc _ N..
         assistantProcess _ QProcess()
         helpRootUrl _ ''
-        docDir _ QDir()
-        imgDir _ QDir()
+        docDir _ ?D..()
+        imgDir _ ?D..()
 
         info _   # dict
         window _ N..
@@ -261,7 +261,7 @@ c_ MenuManager(?O..):
 
         # Start assistant if it's not already running.
         __ assistantProcess.state() !_ QProcess.Running:
-            app _ QLibraryInfo.location(QLibraryInfo.BinariesPath) + QDir.separator()
+            app _ QLibraryInfo.location(QLibraryInfo.BinariesPath) + ?D...separator()
 
             __ ___.platform __ 'darwin':
                 app +_ 'Assistant.app/Contents/MacOS/Assistant'

@@ -22,24 +22,24 @@ c_ SlowSearcher(qtc.?O..):
     ??.?
     ___ do_search 
         #print(f'Beginning search for: {self.term}')
-        root _ qtc.QDir.rootPath()
+        root _ qtc.?D...rootPath()
         _search(term, root)
         finished.e..()
 
     ___ _search  term, pa__):
         directory_changed.e..(pa__)
-        directory _ qtc.QDir(pa__)
+        directory _ qtc.?D..(pa__)
         directory.setFilter(
             directory.filter() |
-            qtc.QDir.NoDotAndDotDot |
-            qtc.QDir.NoSymLinks
+            qtc.?D...NoDotAndDotDot |
+            qtc.?D...NoSymLinks
         )
         ___ entry __ directory.entryInfoList
-            __ term __ entry.filePath
-                print(entry.filePath())
-                match_found.e..(entry.filePath())
+            __ term __ entry.fP..
+                print(entry.fP..())
+                match_found.e..(entry.fP..())
             __ entry.isDir
-                _search(term, entry.filePath())
+                _search(term, entry.fP..())
 
 
 c_ SearchForm ?.?W..

@@ -185,7 +185,7 @@ class MainWindow(?MW..):
         sFS..(650, 400)
 
         toolbar = QToolBar("Main")
-        addToolBar(toolbar)
+        aTB..(toolbar)
         currencyList = ?CB()
 
         toolbar.addWidget(currencyList)

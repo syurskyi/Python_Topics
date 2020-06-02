@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QDateTime, __, QTimer
+____ ?.?C.. ______ ?DT__, __, QTimer
 ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, ?DTE..,
         QDial, QDialog, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit,
         QProgressBar, ?PB.., QRadioButton, QScrollBar, QSizePolicy,
@@ -201,7 +201,7 @@ c_ WidgetGallery(QDialog):
         spinBox.setValue(50)
 
         dateTimeEdit _ ?DTE..(bottomRightGroupBox)
-        dateTimeEdit.setDateTime(QDateTime.currentDateTime())
+        dateTimeEdit.setDateTime(?DT__.currentDateTime())
 
         slider _ QSlider(__.H.., bottomRightGroupBox)
         slider.setValue(40)

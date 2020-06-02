@@ -46,7 +46,7 @@
 ______ ___
 
 ____ ?.?C.. ______ (QCommandLineOption, QCommandLineParser,
-        QCoreApplication, QDir, QT_VERSION_STR)
+        QCoreApplication, ?D.., QT_VERSION_STR)
 ____ ?.?W.. ______ (?A.., QFileIconProvider, QFileSystemModel,
         QTreeView)
 
@@ -77,7 +77,7 @@ __ parser.isSet(dontUseCustomDirectoryIconsOption):
 tree _ ?TV..
 tree.sM..(model)
 __ rootPath __ no. N..:
-    rootIndex _ model.index(QDir.cleanPath(rootPath))
+    rootIndex _ model.index(?D...cleanPath(rootPath))
     __ rootIndex.isValid
         tree.setRootIndex(rootIndex)
 

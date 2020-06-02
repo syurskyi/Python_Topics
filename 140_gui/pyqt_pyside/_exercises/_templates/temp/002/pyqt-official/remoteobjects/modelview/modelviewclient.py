@@ -52,7 +52,7 @@
 
 ______ ___
 
-____ ?.?C.. ______ QLoggingCategory, QUrl
+____ ?.?C.. ______ QLoggingCategory, ?U..
 ____ ?.QtRemoteObjects ______ QRemoteObjectNode
 ____ ?.?W.. ______ ?A.., QTreeView
 
@@ -64,7 +64,7 @@ QLoggingCategory.setFilterRules('qt.remoteobjects.debug=false\n'
 
 app _ ?A..(___.a..
 
-node _ QRemoteObjectNode(QUrl('local:registry'))
+node _ QRemoteObjectNode(?U..('local:registry'))
 node.setHeartbeatInterval(1000)
 
 view _ ?TV..

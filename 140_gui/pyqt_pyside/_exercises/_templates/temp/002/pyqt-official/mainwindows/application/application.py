@@ -181,12 +181,12 @@ c_ MainWindow ?MW..
         helpMenu.aA..(aboutQtAct)
 
     ___ createToolBars 
-        fileToolBar _ addToolBar("File")
+        fileToolBar _ aTB..("File")
         fileToolBar.aA..(newAct)
         fileToolBar.aA..(openAct)
         fileToolBar.aA..(saveAct)
 
-        editToolBar _ addToolBar("Edit")
+        editToolBar _ aTB..("Edit")
         editToolBar.aA..(cutAct)
         editToolBar.aA..(copyAct)
         editToolBar.aA..(pasteAct)

@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QDir, QPoint, QRect, ?S.., __
+____ ?.?C.. ______ ?D.., QPoint, QRect, ?S.., __
 ____ ?.?G.. ______ QImage, QImageWriter, QPainter, QPen, qRgb
 ____ ?.?W.. ______ (?A.., ?A.., QColorDialog, ?FD..,
         QInputDialog, ?MW.., QMenu, ?MB.., ?W..)
@@ -191,7 +191,7 @@ c_ MainWindow ?MW..
     ___ o..
         __ maybeSave
             fileName, _ _ ?FD...gOFN..  "Open File",
-                    QDir.currentPath())
+                    ?D...currentPath())
             __ fileName:
                 scribbleArea.openImage(fileName)
 
@@ -301,7 +301,7 @@ c_ MainWindow ?MW..
         r_ T..
 
     ___ saveFile  fileFormat):
-        initialPath _ QDir.currentPath() + '/untitled.' + fileFormat
+        initialPath _ ?D...currentPath() + '/untitled.' + fileFormat
 
         fileName, _ _ ?FD...getSaveFileName  "Save As", initialPath,
                 "%s Files (*.%s);;All Files (*)" % (fileFormat.upper(), fileFormat))

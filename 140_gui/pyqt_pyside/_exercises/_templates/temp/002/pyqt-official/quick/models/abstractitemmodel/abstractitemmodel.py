@@ -41,7 +41,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QAbstractListModel, QModelIndex, __, QUrl, QVariant
+____ ?.?C.. ______ QAbstractListModel, QModelIndex, __, ?U.., QVariant
 ____ ?.?G.. ______ QGuiApplication
 ____ ?.QtQuick ______ QQuickView
 
@@ -120,7 +120,7 @@ __ ______ __ ______
     ctxt _ view.rootContext()
     ctxt.setContextProperty('myModel', model)
 
-    view.setSource(QUrl('qrc:view.qml'))
+    view.setSource(?U..('qrc:view.qml'))
     view.s..
 
     ___.e..(app.exec_())

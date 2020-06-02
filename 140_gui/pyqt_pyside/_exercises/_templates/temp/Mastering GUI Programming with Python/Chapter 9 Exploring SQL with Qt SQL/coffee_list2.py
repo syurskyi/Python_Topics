@@ -175,7 +175,7 @@ c_ MainWindow(qtw.?MW..):
         show_list()
 
         # Inserting and deleting rows.
-        toolbar _ addToolBar('Controls')
+        toolbar _ aTB..('Controls')
         toolbar.aA..('Delete Coffee(s)', delete_coffee)
         toolbar.aA..('Add Coffee', add_coffee)
 

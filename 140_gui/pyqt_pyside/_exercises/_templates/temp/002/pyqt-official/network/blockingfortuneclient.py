@@ -137,7 +137,7 @@ c_ BlockingClient(?W..):
         ____
             ipAddress _ QHostAddress(QHostAddress.LocalHost)
 
-        ipAddress _ ipAddress.toString()
+        ipAddress _ ipAddress.tS..
 
         hostLineEdit _ QLineEdit(ipAddress)
         portLineEdit _ ?LE..

@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QDir, QEvent, __, QT_TRANSLATE_NOOP, QTranslator
+____ ?.?C.. ______ ?D.., QEvent, __, QT_TRANSLATE_NOOP, QTranslator
 ____ ?.?G.. ______ ?C.., ?P..
 ____ ?.?W.. ______ (?A.., ?A.., QCheckBox, QDialog,
         QDialogButtonBox, QGridLayout, QGroupBox, QListWidget, ?MW..,
@@ -138,10 +138,10 @@ c_ LanguageChooser(QDialog):
             checkBox.sC__ F..
 
     ___ findQmFiles 
-        trans_dir _ QDir(':/translations')
-        fileNames _ trans_dir.entryList(['*.qm'], QDir.Files, QDir.Name)
+        trans_dir _ ?D..(':/translations')
+        fileNames _ trans_dir.entryList(['*.qm'], ?D...Files, ?D...Name)
 
-        r_ [trans_dir.filePath(fn) ___ fn __ fileNames]
+        r_ [trans_dir.fP..(fn) ___ fn __ fileNames]
 
     ___ languageName  qmFile):
         translator _ QTranslator() 

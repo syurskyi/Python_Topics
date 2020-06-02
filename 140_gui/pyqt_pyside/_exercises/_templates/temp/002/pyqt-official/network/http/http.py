@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QDir, QFile, QFileInfo, QIODevice, QUrl
+____ ?.?C.. ______ ?D.., QFile, QFileInfo, QIODevice, ?U..
 ____ ?.?W.. ______ (?A.., QDialog, QDialogButtonBox,
         QHBoxLayout, QLabel, QLineEdit, ?MB.., QProgressDialog,
         ?PB.., QVBoxLayout)
@@ -53,7 +53,7 @@ c_ HttpWindow(QDialog):
     ___  -   parent_None):
         super(HttpWindow, self). - (parent)
 
-        url _ QUrl()
+        url _ ?U..()
         qnam _ QNetworkAccessManager()
         reply _ N..
         outFile _ N..
@@ -107,7 +107,7 @@ c_ HttpWindow(QDialog):
         reply.downloadProgress.c..(updateDataReadProgress)
 
     ___ downloadFile 
-        url _ QUrl(urlLineEdit.t__())
+        url _ ?U..(urlLineEdit.t__())
         fileInfo _ QFileInfo(url.pa__())
         fileName _ fileInfo.fileName()
 
@@ -173,7 +173,7 @@ c_ HttpWindow(QDialog):
             newUrl _ url.resolved(redirectionTarget)
 
             ret _ ?MB...q..  "HTTP",
-                    "Redirect to %s?" % newUrl.toString(),
+                    "Redirect to %s?" % newUrl.tS..,
                     ?MB...Yes | ?MB...No)
 
             __ ret __ ?MB...Yes:
@@ -185,8 +185,8 @@ c_ HttpWindow(QDialog):
                 startRequest(url)
                 r_
         ____
-            fileName _ QFileInfo(QUrl(urlLineEdit.t__()).pa__()).fileName()
-            statusLabel.sT..("Downloaded %s to %s." % (fileName, QDir.currentPath()))
+            fileName _ QFileInfo(?U..(urlLineEdit.t__()).pa__()).fileName()
+            statusLabel.sT..("Downloaded %s to %s." % (fileName, ?D...currentPath()))
 
             downloadButton.sE..( st.
 

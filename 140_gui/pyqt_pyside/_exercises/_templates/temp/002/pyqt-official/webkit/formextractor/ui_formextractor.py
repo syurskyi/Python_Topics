@@ -24,7 +24,7 @@ c_ Ui_Form(object):
         webView _ QtWebKitWidgets.QWebView(webFormGroupBox)
         webView.sMS..(?C...?S..(200, 150))
         webView.sMS..(?C...?S..(400, 16777215))
-        webView.setUrl(?C...QUrl("about:blank"))
+        webView.setUrl(?C...?U..("about:blank"))
         webView.setObjectName("webView")
         verticalLayout.aW..(webView)
         verticalLayout_2.aL..(verticalLayout)

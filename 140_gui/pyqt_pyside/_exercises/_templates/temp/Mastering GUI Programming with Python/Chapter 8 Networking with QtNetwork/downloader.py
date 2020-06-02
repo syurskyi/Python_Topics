@@ -10,7 +10,7 @@ c_ Downloader(qtc.?O..):
         s_. - ()
         manager _ qtn.QNetworkAccessManager(
             finished_self.on_finished)
-        request _ qtn.QNetworkRequest(qtc.QUrl(url))
+        request _ qtn.QNetworkRequest(qtc.?U..(url))
         manager.g..(request)
 
     ___ on_finished  reply):

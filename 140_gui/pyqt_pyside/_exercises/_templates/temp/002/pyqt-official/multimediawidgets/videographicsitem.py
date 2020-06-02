@@ -42,9 +42,9 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QDir, ?S.., QSizeF, __, QUrl
+____ ?.?C.. ______ ?D.., ?S.., QSizeF, __, ?U..
 ____ ?.?G.. ______ QTransform
-____ ?.?M.. ______ QMediaContent, QMediaPlayer
+____ ?.?M.. ______ ?MC.., QMediaPlayer
 ____ ?.QtMultimediaWidgets ______ QGraphicsVideoItem
 ____ ?.?W.. ______ (?A.., ?FD.., QGraphicsScene,
         QGraphicsView, QHBoxLayout, ?PB.., QSlider, QStyle, QVBoxLayout,
@@ -106,11 +106,11 @@ c_ VideoPlayer(?W..):
 
     ___ openFile
         fileName, _ _ ?FD...gOFN..  "Open Movie",
-                QDir.homePath())
+                ?D...homePath())
 
         __ fileName !_ '':
-            mediaPlayer.setMedia(
-                    QMediaContent(QUrl.fromLocalFile(fileName)))
+            mediaPlayer.sM..(
+                    ?MC..(?U...fLF..(fileName)))
             playButton.sE..( st.
 
     ___ play

@@ -42,7 +42,7 @@ c_ MainWindow(?MW.., Ui_MainWindow):
         super(MainWindow, self). - ($ $$)
         setupUi
 
-        player _ QMediaPlayer()
+        player _ ?MP..
 
         player.error.c..(erroralert)
         player.play()
@@ -56,7 +56,7 @@ c_ MainWindow(?MW.., Ui_MainWindow):
         viewer.setWindowFlags(viewer.windowFlags() | __.WindowStaysOnTopHint)
         viewer.sMS..(?S..(480,360))
 
-        videoWidget _ QVideoWidget()
+        videoWidget _ ?VW..
         viewer.sCW..(videoWidget)
         player.setVideoOutput(videoWidget)
 
@@ -95,7 +95,7 @@ c_ MainWindow(?MW.., Ui_MainWindow):
     ___ dropEvent  e):
         ___ url __ e.mimeData().urls
             playlist.addMedia(
-                QMediaContent(url)
+                ?MC..(url)
             )
 
         model.layoutChanged.e..()
@@ -111,8 +111,8 @@ c_ MainWindow(?MW.., Ui_MainWindow):
 
         __ pa__:
             playlist.addMedia(
-                QMediaContent(
-                    QUrl.fromLocalFile(pa__)
+                ?MC..(
+                    ?U...fLF..(pa__)
                 )
             )
 

@@ -663,7 +663,7 @@ c_ MainWindow ?MW..
         aboutMenu.aA..(aboutAction)
 
     ___ createToolbars
-        editToolBar _ addToolBar("Edit")
+        editToolBar _ aTB..("Edit")
         editToolBar.aA..(deleteAction)
         editToolBar.aA..(toFrontAction)
         editToolBar.aA..(sendBackAction)
@@ -710,14 +710,14 @@ c_ MainWindow ?MW..
                         __.black))
         lineColorToolButton.c__.c..(lineButtonTriggered)
 
-        textToolBar _ addToolBar("Font")
+        textToolBar _ aTB..("Font")
         textToolBar.aW..(fontCombo)
         textToolBar.aW..(fontSizeCombo)
         textToolBar.aA..(boldAction)
         textToolBar.aA..(italicAction)
         textToolBar.aA..(underlineAction)
 
-        colorToolBar _ addToolBar("Color")
+        colorToolBar _ aTB..("Color")
         colorToolBar.aW..(fontColorToolButton)
         colorToolBar.aW..(fillColorToolButton)
         colorToolBar.aW..(lineColorToolButton)
@@ -741,7 +741,7 @@ c_ MainWindow ?MW..
         sceneScaleCombo.setCurrentIndex(2)
         sceneScaleCombo.currentIndexChanged[str].c..(sceneScaleChanged)
 
-        pointerToolbar _ addToolBar("Pointer type")
+        pointerToolbar _ aTB..("Pointer type")
         pointerToolbar.aW..(pointerButton)
         pointerToolbar.aW..(linePointerButton)
         pointerToolbar.aW..(sceneScaleCombo)

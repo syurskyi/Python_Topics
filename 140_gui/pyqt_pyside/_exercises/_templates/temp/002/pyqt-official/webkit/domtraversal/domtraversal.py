@@ -43,7 +43,7 @@
 ###########################################################################
 
 
-____ ?.?C.. ______ QUrl
+____ ?.?C.. ______ ?U..
 ____ ?.?W.. ______ ?A.., ?MW.., QTreeWidgetItem
 
 ____ ui_window ______ Ui_Window
@@ -84,6 +84,6 @@ __ ______ __ ______
 
     window _ Window()
     window.s..
-    window.setUrl(QUrl('http://qt-project.org/'))
+    window.setUrl(?U..('http://qt-project.org/'))
 
     ___.e..(app.exec_())

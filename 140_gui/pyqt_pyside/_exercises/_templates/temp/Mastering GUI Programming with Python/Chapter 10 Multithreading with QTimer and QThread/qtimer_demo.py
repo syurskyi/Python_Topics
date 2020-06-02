@@ -56,7 +56,7 @@ c_ MainWindow(qtw.?MW..):
             "since this dialog was last shown.", 2000)
         timer.timeout.c..(interval_dialog.show)
         timer.start()
-        toolbar _ addToolBar('Tools')
+        toolbar _ aTB..('Tools')
         toolbar.aA..('Stop Bugging Me', timer.stop)
         toolbar.aA..('Start Bugging Me', timer.start)
 

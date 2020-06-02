@@ -14,7 +14,7 @@ c_ MainWindow ?.?W..
         camera _ qtmm.QCamera()
 
         # viewfinder
-        cvf _ qtmmw.QCameraViewfinder()
+        cvf _ qtmmw.?CV..
         camera.setViewfinder(cvf)
         la__ .aW..(cvf)
 

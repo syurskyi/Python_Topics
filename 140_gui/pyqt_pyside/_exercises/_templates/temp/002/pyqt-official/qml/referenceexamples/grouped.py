@@ -45,7 +45,7 @@
 ______ ___
 
 ____ ?.?C.. ______ (pyqtProperty, Q_CLASSINFO, QCoreApplication, ?O..,
-        QUrl)
+        ?U..)
 ____ ?.?G.. ______ ?C..
 ____ ?.QtQml ______ (qmlRegisterType, QQmlComponent, QQmlEngine,
         QQmlListProperty)
@@ -190,7 +190,7 @@ qmlRegisterType(Girl, "People", 1, 0, "Girl")
 engine _ QQmlEngine()
 
 component _ QQmlComponent(engine)
-component.setData(QML, QUrl())
+component.setData(QML, ?U..())
 
 party _ component.create()
 

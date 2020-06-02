@@ -53,7 +53,7 @@
 
 ______ ___
 
-____ ?.?C.. ______ pS.., pyqtSlot, QCoreApplication, ?O.., QUrl
+____ ?.?C.. ______ pS.., pyqtSlot, QCoreApplication, ?O.., ?U..
 ____ ?.QtRemoteObjects ______ QRemoteObjectNode
 
 
@@ -99,7 +99,7 @@ __ ______ __ ______
     repNode _ QRemoteObjectNode()
 
     # Connect with the remote host node.
-    repNode.connectToNode(QUrl('local:replica'))
+    repNode.connectToNode(?U..('local:replica'))
 
     # Acquire a replica of the source from the host node.
     replica _ repNode.acquireDynamic('SimpleSwitch')

@@ -44,7 +44,7 @@
 
 ______ ___
 
-____ ?.?C.. ______ QDir, __
+____ ?.?C.. ______ ?D.., __
 ____ ?.?G.. ______ QFont, ?P..
 ____ ?.?W.. ______ (?A.., QCheckBox, QColorDialog, QDialog,
         QErrorMessage, ?FD.., QFontDialog, QFrame, QGridLayout,
@@ -208,7 +208,7 @@ c_ Dialog(QDialog):
 
     ___ sT.. 
         t__, ok _ QInputDialog.getText  "QInputDialog.getText()",
-                "User name:", QLineEdit.Normal, QDir.home().dirName())
+                "User name:", QLineEdit.Normal, ?D...h.. .dirName())
         __ ok and t__ !_ '':
             textLabel.sT..(t__)
 

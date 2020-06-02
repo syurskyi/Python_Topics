@@ -66,7 +66,7 @@ c_ SpreadSheet ?MW..
         super(SpreadSheet, self). - (parent)
 
         toolBar _ QToolBar()
-        addToolBar(toolBar)
+        aTB..(toolBar)
         formulaInput _ ?LE..
         cellLabel _ QLabel(toolBar)
         cellLabel.sMS..(80, 0)

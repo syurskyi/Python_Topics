@@ -95,7 +95,7 @@ c_ MainWindow(qtw.?MW..):
             fname.sT..(filename)
 
     ___ submit
-        url _ qtc.QUrl(url.t__())
+        url _ qtc.?U..(url.t__())
         filename _ fname.t__()
         __ filename __ '(No File)':
             filename _ N..

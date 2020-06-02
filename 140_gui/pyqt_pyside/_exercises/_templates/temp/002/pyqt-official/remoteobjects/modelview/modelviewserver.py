@@ -54,7 +54,7 @@
 ______ ___
 
 ____ ?.?C.. ______ (pyqtSlot, QLoggingCategory, QModelIndex, ?O.., __,
-        QTimer, QUrl)
+        QTimer, ?U..)
 ____ ?.?G.. ______ ?C.., QStandardItem, QStandardItemModel
 ____ ?.QtRemoteObjects ______ QRemoteObjectHost, QRemoteObjectRegistryHost
 ____ ?.?W.. ______ ?A.., QTreeView
@@ -149,9 +149,9 @@ __ ______ __ ______
 
     roles _ [__.DR.., __.BackgroundRole]
 
-    node _ QRemoteObjectRegistryHost(QUrl('local:registry'))
+    node _ QRemoteObjectRegistryHost(?U..('local:registry'))
 
-    node2 _ QRemoteObjectHost(QUrl('local:replica'), QUrl('local:registry'))
+    node2 _ QRemoteObjectHost(?U..('local:replica'), ?U..('local:registry'))
     node2.enableRemoting(sourceModel, 'RemoteModel', roles)
 
     view _ ?TV..

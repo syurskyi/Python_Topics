@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ (?ATM.., QDir, QModelIndex, QRect,
+____ ?.?C.. ______ (?ATM.., ?D.., QModelIndex, QRect,
         QRectF, ?S.., __)
 ____ ?.?G.. ______ ?B.., qGray, QImage, QPainter
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
@@ -130,7 +130,7 @@ c_ MainWindow ?MW..
     ___  -
         super(MainWindow, self). - ()
 
-        currentPath _ QDir.homePath()
+        currentPath _ ?D...homePath()
         model _ ImageModel
 
         centralWidget _ ?W..

@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ (QDate, QDateTime, QRegExp, QSortFilterProxyModel, __,
+____ ?.?C.. ______ (QDate, ?DT__, QRegExp, QSortFilterProxyModel, __,
         ?T..)
 ____ ?.?G.. ______ QStandardItemModel
 ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, QGridLayout,
@@ -192,25 +192,25 @@ ___ createMailModel(parent):
     model.setHeaderData(DATE, __.H.., "Date")
 
     addMail(model, "Happy New Year!", "Grace K. <grace@software-inc.com>",
-            QDateTime(QDate(2006, 12, 31), ?T..(17, 3)))
+            ?DT__(QDate(2006, 12, 31), ?T..(17, 3)))
     addMail(model, "Radically new concept", "Grace K. <grace@software-inc.com>",
-            QDateTime(QDate(2006, 12, 22), ?T..(9, 44)))
+            ?DT__(QDate(2006, 12, 22), ?T..(9, 44)))
     addMail(model, "Accounts", "pascale@nospam.com",
-            QDateTime(QDate(2006, 12, 31), ?T..(12, 50)))
+            ?DT__(QDate(2006, 12, 31), ?T..(12, 50)))
     addMail(model, "Expenses", "Joe Bloggs <joe@bloggs.com>",
-            QDateTime(QDate(2006, 12, 25), ?T..(11, 39)))
+            ?DT__(QDate(2006, 12, 25), ?T..(11, 39)))
     addMail(model, "Re: Expenses", "Andy <andy@nospam.com>",
-            QDateTime(QDate(2007, 1, 2), ?T..(16, 5)))
+            ?DT__(QDate(2007, 1, 2), ?T..(16, 5)))
     addMail(model, "Re: Accounts", "Joe Bloggs <joe@bloggs.com>",
-            QDateTime(QDate(2007, 1, 3), ?T..(14, 18)))
+            ?DT__(QDate(2007, 1, 3), ?T..(14, 18)))
     addMail(model, "Re: Accounts", "Andy <andy@nospam.com>",
-            QDateTime(QDate(2007, 1, 3), ?T..(14, 26)))
+            ?DT__(QDate(2007, 1, 3), ?T..(14, 26)))
     addMail(model, "Sports", "Linda Smith <linda.smith@nospam.com>",
-            QDateTime(QDate(2007, 1, 5), ?T..(11, 33)))
+            ?DT__(QDate(2007, 1, 5), ?T..(11, 33)))
     addMail(model, "AW: Sports", "Rolf Newschweinstein <rolfn@nospam.com>",
-            QDateTime(QDate(2007, 1, 5), ?T..(12, 0)))
+            ?DT__(QDate(2007, 1, 5), ?T..(12, 0)))
     addMail(model, "RE: Sports", "Petra Schmidt <petras@nospam.com>",
-            QDateTime(QDate(2007, 1, 5), ?T..(12, 1)))
+            ?DT__(QDate(2007, 1, 5), ?T..(12, 1)))
 
     r_ model
 

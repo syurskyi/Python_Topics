@@ -43,7 +43,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ (pS.., QAbstractListModel, QDir, QLibraryInfo,
+____ ?.?C.. ______ (pS.., QAbstractListModel, ?D.., QLibraryInfo,
         QModelIndex, __)
 ____ ?.?W.. ______ (?A.., QGridLayout, QLabel, QLineEdit,
         QListView, QSizePolicy, QTextBrowser, ?W..)
@@ -97,7 +97,7 @@ c_ FileListModel(QAbstractListModel):
         numberPopulated.e..(itemsToFetch)
 
     ___ setDirPath  pa__):
-        dir _ QDir(pa__)
+        dir _ ?D..(pa__)
 
         beginResetModel()
         fileList _ dir.entryList()

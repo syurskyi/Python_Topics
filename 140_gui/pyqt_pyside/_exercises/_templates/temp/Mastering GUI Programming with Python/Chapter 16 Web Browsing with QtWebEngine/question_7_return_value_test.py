@@ -33,7 +33,7 @@ c_ MainWindow(qtw.?MW..):
         # Main UI code goes here
         wv _ WebView()
         sCW..(wv)
-        wv.load(qtc.QUrl('about:blank'))
+        wv.load(qtc.?U..('about:blank'))
         # End main UI code
         s..
 

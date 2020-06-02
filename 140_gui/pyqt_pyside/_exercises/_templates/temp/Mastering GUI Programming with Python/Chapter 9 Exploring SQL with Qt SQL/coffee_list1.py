@@ -102,7 +102,7 @@ c_ MainWindow(qtw.?MW..):
         coffees.setHeaderData(2, qtc.__.H.., 'Product')
 
         # Navigation between stacked widgets
-        navigation _ addToolBar("Navigation")
+        navigation _ aTB..("Navigation")
         navigation.aA..(
             "Back to list",
             l___: stack.setCurrentWidget(coffee_list))

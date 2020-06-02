@@ -44,7 +44,7 @@
 
 ______ math
 
-____ ?.?C.. ______ (pyqtProperty, pS.., QDataStream, QDateTime,
+____ ?.?C.. ______ (pyqtProperty, pS.., QDataStream, ?DT__,
         QEvent, QEventTransition, QFile, QIODevice, QParallelAnimationGroup,
         QPointF, QPropertyAnimation, qrand, QRectF, QSignalTransition, qsrand,
         QState, QStateMachine, __, QTimer)
@@ -493,7 +493,7 @@ c_ LightningStrikesTransition(QEventTransition):
         setEventSource
         setEventType(QEvent.Timer)
         setTargetState(target)
-        qsrand(QDateTime.currentDateTime().toTime_t())
+        qsrand(?DT__.cDT.. .toTime_t())
         startTimer(1000)
 
     ___ eventTest  e):

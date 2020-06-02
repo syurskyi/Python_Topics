@@ -16,7 +16,7 @@ c_ Ui_Window(object):
         verticalLayout _ ?W...QVBoxLayout(Window)
         verticalLayout.setObjectName("verticalLayout")
         webView _ QtWebKitWidgets.QWebView(Window)
-        webView.setUrl(?C...QUrl("http://webkit.org/"))
+        webView.setUrl(?C...?U..("http://webkit.org/"))
         webView.setObjectName("webView")
         verticalLayout.aW..(webView)
         horizontalLayout _ ?W...QHBoxLayout()

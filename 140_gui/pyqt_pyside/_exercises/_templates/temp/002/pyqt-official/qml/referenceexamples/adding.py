@@ -44,7 +44,7 @@
 
 ______ ___
 
-____ ?.?C.. ______ pyqtProperty, QCoreApplication, ?O.., QUrl
+____ ?.?C.. ______ pyqtProperty, QCoreApplication, ?O.., ?U..
 ____ ?.QtQml ______ qmlRegisterType, QQmlComponent, QQmlEngine
 
 
@@ -89,7 +89,7 @@ qmlRegisterType(Person, "People", 1, 0, "Person")
 engine _ QQmlEngine()
 
 component _ QQmlComponent(engine)
-component.setData(QML, QUrl())
+component.setData(QML, ?U..())
 
 person _ component.create()
 

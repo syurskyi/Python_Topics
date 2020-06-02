@@ -109,7 +109,7 @@ c_ MainWindow(qtw.?MW..): # change to mainwindow
         # The Toolbar and QActions #
         ############################
 
-        toolbar _ addToolBar('File')
+        toolbar _ aTB..('File')
         #toolbar.addAction(open_action)
         #toolbar.addAction("Save")
 
@@ -146,7 +146,7 @@ c_ MainWindow(qtw.?MW..): # change to mainwindow
 
         # create a toolbar in another part of the screen:
         toolbar2 _ qtw.QToolBar('Edit')
-        addToolBar(qtc.__.RightToolBarArea, toolbar2)
+        aTB..(qtc.__.RightToolBarArea, toolbar2)
         toolbar2.aA..('Copy', textedit.copy)
         toolbar2.aA..('Cut', textedit.cut)
         toolbar2.aA..('Paste', textedit.paste)
@@ -258,7 +258,7 @@ c_ MainWindow(qtw.?MW..): # change to mainwindow
         filename, _ _ qtw.?FD...gOFN..(
             self,
             "Select a text file to open…",
-            qtc.QDir.homePath(),
+            qtc.?D...homePath(),
             'Text Files (*.txt) ;;Python Files (*.py) ;;All Files (*)',
             'Python Files (*.py)',
             qtw.?FD...DontUseNativeDialog |
@@ -275,7 +275,7 @@ c_ MainWindow(qtw.?MW..): # change to mainwindow
         filename, _ _ qtw.?FD...getSaveFileName(
             self,
             "Select the file to save to…",
-            qtc.QDir.homePath(),
+            qtc.?D...homePath(),
             'Text Files (*.txt) ;;Python Files (*.py) ;;All Files (*)'
         )
         __ filename:

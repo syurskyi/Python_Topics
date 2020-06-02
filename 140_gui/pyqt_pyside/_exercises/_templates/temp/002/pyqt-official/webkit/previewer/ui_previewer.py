@@ -42,7 +42,7 @@ c_ Ui_Form(object):
         horizontalLayout_3 _ ?W...QHBoxLayout(previewerBox)
         horizontalLayout_3.setObjectName("horizontalLayout_3")
         webView _ QtWebKitWidgets.QWebView(previewerBox)
-        webView.setUrl(?C...QUrl("about:blank"))
+        webView.setUrl(?C...?U..("about:blank"))
         webView.setObjectName("webView")
         horizontalLayout_3.aW..(webView)
         horizontalLayout_4.aW..(splitter)

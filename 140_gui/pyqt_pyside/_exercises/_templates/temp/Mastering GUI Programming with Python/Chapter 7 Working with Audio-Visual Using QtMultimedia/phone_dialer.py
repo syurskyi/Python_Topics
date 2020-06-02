@@ -12,7 +12,7 @@ c_ SoundButton(qtw.?PB..):
         s_. - ($ $$)
         wav_file _ wav_file
         player _ qtmm.QSoundEffect()
-        player.setSource(qtc.QUrl.fromLocalFile(wav_file))
+        player.setSource(qtc.?U...fLF..(wav_file))
         c__.c..(player.play)
 
 

@@ -44,7 +44,7 @@
 ______ ___
 ______ __.p__
 
-____ ?.?C.. ______ QUrl
+____ ?.?C.. ______ ?U..
 ____ ?.?G.. ______ QGuiApplication
 ____ ?.QtQuick ______ QQuickView
 
@@ -63,7 +63,7 @@ app _ QGuiApplication(___.a..
 view _ QQuickView()
 view.engine().quit.c..(app.quit)
 
-view.setSource(QUrl('qrc:///animation/animation.qml'))
+view.setSource(?U..('qrc:///animation/animation.qml'))
 view.s..
 
 ___.e..(app.exec_())

@@ -127,7 +127,7 @@ c_ TextEdit ?MW..
     ___ setupFileActions 
         tb _ QToolBar
         tb.sWT..("File Actions")
-        addToolBar(tb)
+        aTB..(tb)
 
         menu _ QMenu("&File", self)
         mB.. .aM..(menu)
@@ -197,7 +197,7 @@ c_ TextEdit ?MW..
     ___ setupEditActions 
         tb _ QToolBar
         tb.sWT..("Edit Actions")
-        addToolBar(tb)
+        aTB..(tb)
 
         menu _ QMenu("&Edit", self)
         mB.. .aM..(menu)
@@ -245,7 +245,7 @@ c_ TextEdit ?MW..
     ___ setupTextActions 
         tb _ QToolBar
         tb.sWT..("Format Actions")
-        addToolBar(tb)
+        aTB..(tb)
 
         menu _ QMenu("F&ormat", self)
         mB.. .aM..(menu)
@@ -354,7 +354,7 @@ c_ TextEdit ?MW..
         tb.setAllowedAreas(__.TopToolBarArea | __.BottomToolBarArea)
         tb.sWT..("Format Actions")
         addToolBarBreak(__.TopToolBarArea)
-        addToolBar(tb)
+        aTB..(tb)
 
         comboStyle _ ?CB(tb)
         tb.aW..(comboStyle)

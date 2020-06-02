@@ -102,7 +102,7 @@ c_ MainWindow(qtw.?MW..):
         """
         s_. - ()
         # Code starts here
-        username _ qtc.QDir.home().dirName()
+        username _ qtc.?D...h.. .dirName()
         cw _ ChatWindow()
         sCW..(cw)
         recipient, _ _ qtw.QInputDialog.getText(
