@@ -88,7 +88,7 @@ c_ CoffeeForm ?.?W..
     ___ show_coffee  coffee_index):
         mapper.sCI..(coffee_index.row())
         # show the reviews
-        id_index _ coffee_index.siblingAtColumn(0)
+        id_index _ coffee_index.sAC..(0)
         coffee_id _ int(coffees_model.data(id_index))
         reviews.model().setFilter(f'coffee_id = {coffee_id}')
         reviews.model().setSort(3, qtc.__.DO..)
@@ -131,7 +131,7 @@ c_ MainWindow(qtw.?MW..):
         """
         s_. - ()
         # Code starts here
-        stack _ qtw.QStackedWidget()
+        stack _ qtw.?SW..()
         sCW..(stack)
         # Connect to the database
         db _ qts.?SD...aD..('QSQLITE')
@@ -190,9 +190,9 @@ c_ MainWindow(qtw.?MW..):
             reviews_model
         )
         stack.aW..(coffee_form)
-        coffee_list.doubleClicked.c..(
+        coffee_list.dC...c..(
             coffee_form.show_coffee)
-        coffee_list.doubleClicked.c..(
+        coffee_list.dC...c..(
             l___: stack.setCurrentWidget(coffee_form))
 
         toolbar.aA..("Back to list", show_list)

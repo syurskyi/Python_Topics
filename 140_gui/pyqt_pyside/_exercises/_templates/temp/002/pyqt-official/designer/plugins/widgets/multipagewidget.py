@@ -4,7 +4,7 @@
 # PyQt5 port of the designer/containerextension example from Qt v5.x         #
 #----------------------------------------------------------------------------#
 ____ ?.?C.. ______ pyqtProperty, pS.., pyqtSlot, ?S..
-____ ?.?W.. ______ (?A.., ?CB, QLabel, QStackedWidget,
+____ ?.?W.. ______ (?A.., ?CB, QLabel, ?SW..,
         QVBoxLayout, ?W..)
 
 
@@ -28,7 +28,7 @@ c_ PyMultiPageWidget(?W..):
         # combo box.
         # MAGIC
         comboBox.setObjectName('__qt__passive_comboBox')
-        stackWidget _ QStackedWidget()
+        stackWidget _ ?SW..()
         comboBox.activated.c..(sCI..)
         layout _ ?VBL..
         layout.aW..(comboBox)

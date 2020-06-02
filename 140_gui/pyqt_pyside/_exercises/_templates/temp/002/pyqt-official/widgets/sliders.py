@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ pS.., __
 ____ ?.?W.. ______ (?A.., QBoxLayout, QCheckBox, ?CB,
         QDial, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QScrollBar,
-        ?S.., SB.., QStackedWidget, ?W..)
+        ?S.., SB.., ?SW.., ?W..)
 
 
 c_ SlidersGroup(QGroupBox):
@@ -115,7 +115,7 @@ c_ Window(?W..):
                 "Horizontal")
         verticalSliders _ SlidersGroup(__.Vertical, "Vertical")
 
-        stackedWidget _ QStackedWidget()
+        stackedWidget _ ?SW..()
         stackedWidget.aW..(horizontalSliders)
         stackedWidget.aW..(verticalSliders)
 

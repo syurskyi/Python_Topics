@@ -17,7 +17,7 @@ c_ Ui_Camera(object):
         centralwidget.setObjectName("centralwidget")
         gridLayout_3 _ ?W...QGridLayout(centralwidget)
         gridLayout_3.setObjectName("gridLayout_3")
-        stackedWidget _ ?W...QStackedWidget(centralwidget)
+        stackedWidget _ ?W...?SW..(centralwidget)
         sizePolicy _ ?W...QSizePolicy(?W...QSizePolicy.Preferred, ?W...QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(1)
         sizePolicy.setVerticalStretch(0)

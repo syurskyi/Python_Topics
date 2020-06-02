@@ -47,7 +47,7 @@ ____ ?.?G.. ______ QIcon
 ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, ?DTE..,
         QDialog, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit,
         QListView, QListWidget, QListWidgetItem, ?PB.., SB..,
-        QStackedWidget, QVBoxLayout, ?W..)
+        ?SW.., QVBoxLayout, ?W..)
 
 ______ configdialog_rc
 
@@ -177,7 +177,7 @@ c_ ConfigDialog(QDialog):
         contentsWidget.setMaximumWidth(128)
         contentsWidget.setSpacing(12)
 
-        pagesWidget _ QStackedWidget()
+        pagesWidget _ ?SW..()
         pagesWidget.aW..(ConfigurationPage())
         pagesWidget.aW..(UpdatePage())
         pagesWidget.aW..(QueryPage())
