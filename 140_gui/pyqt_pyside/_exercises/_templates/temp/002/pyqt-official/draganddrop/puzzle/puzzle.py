@@ -309,14 +309,14 @@ c_ MainWindow ?MW..
 
         piecesList.c..
 
-        ___ y __ range(5):
-            ___ x __ range(5):
+        ___ y __ ra..(5):
+            ___ x __ ra..(5):
                 pieceImage _ puzzleImage.copy(x*80, y*80, 80, 80)
                 piecesList.addPiece(pieceImage, QPoint(x,y))
 
         random.seed(QCursor.pos().x() ^ QCursor.pos().y())
 
-        ___ i __ range(piecesList.count()):
+        ___ i __ ra..(piecesList.count()):
             __ random.random() < 0.5:
                 item _ piecesList.takeItem(i)
                 piecesList.iI..(0, item)

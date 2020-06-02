@@ -89,7 +89,7 @@ c_ Ui_Camera(object):
         exposureCompensation.setMinimum(-4)
         exposureCompensation.setMaximum(4)
         exposureCompensation.setPageStep(2)
-        exposureCompensation.setOrientation(?C...__.Horizontal)
+        exposureCompensation.setOrientation(?C...__.H..)
         exposureCompensation.setTickPosition(?W...QSlider.TicksAbove)
         exposureCompensation.setObjectName("exposureCompensation")
         gridLayout.aW..(exposureCompensation, 3, 0, 1, 1)

@@ -48,7 +48,7 @@ ____ demoitem ______ DemoItem
 
 
 c_ DemoTextItem(DemoItem):
-    STATIC_TEXT, DYNAMIC_TEXT _ range(2)
+    STATIC_TEXT, DYNAMIC_TEXT _ ra..(2)
 
     ___  -   t__, font, textColor, textWidth, parent_None, type_STATIC_TEXT, bgColor_QColor()):
         super(DemoTextItem, self). - (parent)
@@ -59,7 +59,7 @@ c_ DemoTextItem(DemoItem):
         textColor _ textColor
         bgColor _ bgColor
         textWidth _ textWidth
-        noSubPixeling _ True
+        noSubPixeling _ T..
 
     ___ sT..  t__):
         t__ _ t__
@@ -92,10 +92,10 @@ c_ DemoTextItem(DemoItem):
         r_ image
 
     ___ animationStarted  id_0):
-        noSubPixeling _ False
+        noSubPixeling _ F..
 
     ___ animationStopped  id_0):
-        noSubPixeling _ True
+        noSubPixeling _ T..
 
     ___ boundingRect
         __ type __ DemoTextItem.STATIC_TEXT:

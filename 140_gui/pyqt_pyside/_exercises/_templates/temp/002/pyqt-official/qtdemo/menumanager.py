@@ -59,7 +59,7 @@ ____ textbutton ______ TextButton
 
 c_ MenuManager(QObject):
     ROOT, MENU1, MENU2, LAUNCH, DOCUMENTATION, QUIT, FULLSCREEN, UP, DOWN, \
-            BACK, LAUNCH_QML _ range(11)
+            BACK, LAUNCH_QML _ ra..(11)
 
     pInstance _ N..
 
@@ -143,7 +143,7 @@ c_ MenuManager(QObject):
             score.queueMovie(currentInfo)
 
             __ no. Colors.noTicker:
-                ticker.doIntroTransitions _ True
+                ticker.doIntroTransitions _ T..
                 tickerInAnim.setStartDelay(2000)
                 ticker.useGuideQt()
                 score.queueMovie('ticker', Score.NEW_ANIMATION_ONLY)
@@ -229,7 +229,7 @@ c_ MenuManager(QObject):
                         Score.NEW_ANIMATION_ONLY)
 
                 __ no. Colors.noTicker:
-                    ticker.doIntroTransitions _ False
+                    ticker.doIntroTransitions _ F..
                     tickerInAnim.setStartDelay(500)
                     score.queueMovie('ticker', Score.NEW_ANIMATION_ONLY)
             ____ currentMenuCode !_ MenuManager.ROOT:

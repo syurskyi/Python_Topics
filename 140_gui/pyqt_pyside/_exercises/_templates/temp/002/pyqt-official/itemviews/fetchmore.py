@@ -61,14 +61,14 @@ c_ FileListModel(QAbstractListModel):
     ___ rowCount  parent_QModelIndex()):
         r_ fileCount
 
-    ___ data  index, role_Qt.DisplayRole):
+    ___ data  index, role_Qt.DR..):
         __ no. index.isValid
             r_ N..
 
         __ index.row() >_ le.(fileList) or index.row() < 0:
             r_ N..
 
-        __ role __ __.DisplayRole:
+        __ role __ __.DR..:
             r_ fileList[index.row()]
 
         __ role __ __.BackgroundRole:

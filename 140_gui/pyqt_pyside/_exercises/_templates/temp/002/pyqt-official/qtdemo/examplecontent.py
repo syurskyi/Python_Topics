@@ -66,12 +66,12 @@ c_ ExampleContent(DemoItem):
         description _ N..
         screenshot _ N..
 
-        _prepared _ False
+        _prepared _ F..
 
     ___ prepare 
         __ no. _prepared:
             createContent()
-            _prepared _ True
+            _prepared _ T..
 
     ___ animationStopped  id):
         __ id __ DemoItemAnimation.ANIM_OUT:
@@ -79,7 +79,7 @@ c_ ExampleContent(DemoItem):
             heading _ N..
             description _ N..
             screenshot _ N..
-            _prepared _ False
+            _prepared _ F..
 
     ___ loadDescription 
         contents _ _menu_manager.getHtml(name).data().decode('utf8')

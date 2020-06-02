@@ -103,7 +103,7 @@ c_ RegExpDialog(QDialog):
 
         captureLabels _   # list
         captureEdits _   # list
-        ___ i __ range(MaxCaptures):
+        ___ i __ ra..(MaxCaptures):
             captureLabels.ap..(QLabel("Capture %d:" % i))
             captureEdits.ap..(QLineEdit())
             captureEdits[i].setReadOnly( st.
@@ -129,7 +129,7 @@ c_ RegExpDialog(QDialog):
         mainLayout.aW..(matchedLengthLabel, 6, 0)
         mainLayout.aW..(matchedLengthEdit, 6, 1)
 
-        ___ i __ range(MaxCaptures):
+        ___ i __ ra..(MaxCaptures):
             mainLayout.aW..(captureLabels[i], 7 + i, 0)
             mainLayout.aW..(captureEdits[i], 7 + i, 1)
         sL..(mainLayout)
@@ -176,7 +176,7 @@ c_ RegExpDialog(QDialog):
         indexEdit.sT..(str(rx.indexIn(t__)))
         matchedLengthEdit.sT..(str(rx.matchedLength()))
 
-        ___ i __ range(MaxCaptures):
+        ___ i __ ra..(MaxCaptures):
             captureLabels[i].sE..(i <_ rx.captureCount())
             captureEdits[i].sE..(i <_ rx.captureCount())
             captureEdits[i].sT..(rx.cap(i))

@@ -22,7 +22,7 @@ c_ TextEdit(?TE..):
     ___ canInsertFromMimeData  source):
 
         __ source.hasImage
-            r_ True
+            r_ T..
         ____
             r_ super(TextEdit, self).canInsertFromMimeData(source)
 
@@ -297,7 +297,7 @@ c_ MainWindow ?MW..
         alignr_action.sC__(editor.alignment() __ __.AlignRight)
         alignj_action.sC__(editor.alignment() __ __.AlignJustify)
 
-        block_signals(_format_actions, False)
+        block_signals(_format_actions, F..)
 
     ___ dialog_critical  s):
         dlg _ ?MB..

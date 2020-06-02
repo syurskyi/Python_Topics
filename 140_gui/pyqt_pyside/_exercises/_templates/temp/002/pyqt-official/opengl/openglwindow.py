@@ -54,8 +54,8 @@ c_ OpenGLWindow(QWindow):
     ___  -   parent_None):
         super(OpenGLWindow, self). - (parent)
 
-        m_update_pending _ False
-        m_animating _ False
+        m_update_pending _ F..
+        m_animating _ F..
         m_context _ N..
         m_gl _ N..
 
@@ -72,23 +72,23 @@ c_ OpenGLWindow(QWindow):
 
     ___ renderLater 
         __ no. m_update_pending:
-            m_update_pending _ True
+            m_update_pending _ T..
             QGuiApplication.postEvent  QEvent(QEvent.UpdateRequest))
 
     ___ renderNow 
         __ no. isExposed
             r_
 
-        m_update_pending _ False
+        m_update_pending _ F..
 
-        needsInitialize _ False
+        needsInitialize _ F..
 
         __ m_context __ N..:
             m_context _ QOpenGLContext
             m_context.setFormat(requestedFormat())
             m_context.create()
 
-            needsInitialize _ True
+            needsInitialize _ T..
 
         m_context.makeCurrent
 
@@ -110,7 +110,7 @@ c_ OpenGLWindow(QWindow):
     ___ event  event):
         __ event.type() __ QEvent.UpdateRequest:
             renderNow()
-            r_ True
+            r_ T..
 
         r_ super(OpenGLWindow, self).event(event)
 
@@ -184,7 +184,7 @@ void main() {
                 -0.5, -0.5,
                  0.5, -0.5])
 
-        gl.glVertexAttribPointer(m_posAttr, 2, gl.GL_FLOAT, False, 0,
+        gl.glVertexAttribPointer(m_posAttr, 2, gl.GL_FLOAT, F.., 0,
                 vertices)
         gl.glEnableVertexAttribArray(m_posAttr)
 
@@ -193,7 +193,7 @@ void main() {
                 0.0, 1.0, 0.0,
                 0.0, 0.0, 1.0])
 
-        gl.glVertexAttribPointer(m_colAttr, 3, gl.GL_FLOAT, False, 0,
+        gl.glVertexAttribPointer(m_colAttr, 3, gl.GL_FLOAT, F.., 0,
                 colors)
         gl.glEnableVertexAttribArray(m_colAttr)
 

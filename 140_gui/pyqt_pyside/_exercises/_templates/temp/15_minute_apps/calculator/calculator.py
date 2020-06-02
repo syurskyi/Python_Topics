@@ -17,7 +17,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
         setupUi
 
         # Setup numbers.
-        ___ n __ range(0, 10):
+        ___ n __ ra..(0, 10):
             getattr  'pushButton_n%s' % n).pressed.c..(l___ v_n: input_number(v))
 
         # Setup operations.

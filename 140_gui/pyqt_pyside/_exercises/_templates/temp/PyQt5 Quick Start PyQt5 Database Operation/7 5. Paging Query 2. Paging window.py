@@ -13,7 +13,7 @@ c_ DataGrid(?W..):
         # Query Model
         queryModel _ QSqlQueryModel()
         # Table View
-        tableView _ QTableView()
+        tableView _ ?TV..
         tableView.sM..(queryModel)
         #
         totalPageLabel _ QLabel()

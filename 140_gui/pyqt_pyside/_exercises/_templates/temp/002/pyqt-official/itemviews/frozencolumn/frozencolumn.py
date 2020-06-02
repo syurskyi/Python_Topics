@@ -84,7 +84,7 @@ c_ FreezeTableWidget(QTableView):
             }''') # for demo purposes
 
         frozenTableView.setSelectionModel(selectionModel())
-        ___ col __ range(1, model().columnCount()):
+        ___ col __ ra..(1, model().columnCount()):
             frozenTableView.setColumnHidden(col,  st.
         frozenTableView.setColumnWidth(0, columnWidth(0))
         frozenTableView.setHorizontalScrollBarPolicy(__.ScrollBarAlwaysOff)

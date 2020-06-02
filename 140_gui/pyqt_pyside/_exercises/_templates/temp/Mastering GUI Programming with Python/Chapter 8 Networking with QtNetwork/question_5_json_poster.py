@@ -101,7 +101,7 @@ c_ MainWindow(qtw.QMainWindow):
         __ filename __ '(No File)':
             filename _ N..
         data _   # dict
-        ___ rownum __ range(table.rowCount()):
+        ___ rownum __ ra..(table.rowCount()):
             key_item _ table.item(rownum, 0)
             key _ key_item.t__() __ key_item ____ N..
             __ key:

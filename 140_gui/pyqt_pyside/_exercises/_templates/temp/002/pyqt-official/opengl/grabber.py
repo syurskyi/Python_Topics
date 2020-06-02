@@ -181,8 +181,8 @@ c_ GLWidget(QOpenGLWidget):
         r_ zRot
 
     ___ makeGear  reflectance, innerRadius, outerRadius, thickness, toothSize, toothCount):
-        list _ gl.glGenLists(1)
-        gl.glNewList(list, gl.GL_COMPILE)
+        li.. _ gl.glGenLists(1)
+        gl.glNewList(li.., gl.GL_COMPILE)
         gl.glMaterialfv(gl.GL_FRONT, gl.GL_AMBIENT_AND_DIFFUSE,
                 reflectance)
 
@@ -194,7 +194,7 @@ c_ GLWidget(QOpenGLWidget):
 
         gl.glShadeModel(gl.GL_FLAT)
 
-        ___ i __ range(2):
+        ___ i __ ra..(2):
             __ i __ 0:
                 sign _ +1.0
             ____
@@ -204,7 +204,7 @@ c_ GLWidget(QOpenGLWidget):
 
             gl.glBegin(gl.GL_QUAD_STRIP)
 
-            ___ j __ range(toothCount+1):
+            ___ j __ ra..(toothCount+1):
                 angle _ 2.0 * math.pi * j / toothCount
                 gl.glVertex3d(r0 * math.cos(angle), r0 * math.sin(angle), sign * z)
                 gl.glVertex3d(r1 * math.cos(angle), r1 * math.sin(angle), sign * z)
@@ -215,7 +215,7 @@ c_ GLWidget(QOpenGLWidget):
 
             gl.glBegin(gl.GL_QUADS)
 
-            ___ j __ range(toothCount):
+            ___ j __ ra..(toothCount):
                 angle _ 2.0 * math.pi * j / toothCount
                 gl.glVertex3d(r1 * math.cos(angle), r1 * math.sin(angle), sign * z)
                 gl.glVertex3d(r2 * math.cos(angle + delta), r2 * math.sin(angle + delta), sign * z)
@@ -226,8 +226,8 @@ c_ GLWidget(QOpenGLWidget):
 
         gl.glBegin(gl.GL_QUAD_STRIP)
 
-        ___ i __ range(toothCount):
-            ___ j __ range(2):
+        ___ i __ ra..(toothCount):
+            ___ j __ ra..(2):
                 angle _ 2.0 * math.pi * (i + (j / 2.0)) / toothCount
                 s1 _ r1
                 s2 _ r2
@@ -251,7 +251,7 @@ c_ GLWidget(QOpenGLWidget):
 
         gl.glBegin(gl.GL_QUAD_STRIP)
 
-        ___ i __ range(toothCount+1):
+        ___ i __ ra..(toothCount+1):
             angle _ i * 2.0 * math.pi / toothCount
             gl.glNormal3d(-math.cos(angle), -math.sin(angle), 0.0)
             gl.glVertex3d(r0 * math.cos(angle), r0 * math.sin(angle), +z)
@@ -261,7 +261,7 @@ c_ GLWidget(QOpenGLWidget):
 
         gl.glEndList()
 
-        r_ list    
+        r_ li..
 
     ___ drawGear  gear, dx, dy, dz, angle):
         gl.glPushMatrix()
@@ -367,7 +367,7 @@ c_ MainWindow ?MW..
         helpMenu.aA..(aboutQtAct)
 
     ___ createSlider  changedSignal, setterSlot):
-        slider _ QSlider(__.Horizontal)
+        slider _ QSlider(__.H..)
         slider.setRange(0, 360 * 16)
         slider.setSingleStep(16)
         slider.setPageStep(15 * 16)

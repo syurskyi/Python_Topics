@@ -20,7 +20,7 @@ c_ EqualizerBar(?W...?W..):
             ?W...QSizePolicy.ME..
         )
 
-        __ isinstance(steps, list):
+        __ isinstance(steps, li..):
             # list of colours.
             n_steps _ le.(steps)
             steps _ steps
@@ -75,13 +75,13 @@ c_ EqualizerBar(?W...?W..):
         bar_width _ step_x * _x_solid_percent
         bar_width_space _ step_x * (1 - _y_solid_percent) / 2
 
-        ___ b __ range(n_bars):
+        ___ b __ ra..(n_bars):
 
             # Calculate the y-stop position for this bar, from the value in range.
             pc _ (_values[b] - _vmin) / (_vmax - _vmin)
             n_steps_to_draw _ int(pc * n_steps)
 
-            ___ n __ range(n_steps_to_draw):
+            ___ n __ ra..(n_steps_to_draw):
                 brush.sC..(?G...?C..(steps[n]))
                 rect _ ?C...QRect(
                     _padding + (step_x * b) + bar_width_space,

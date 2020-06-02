@@ -93,7 +93,7 @@ c_ PostRotateXYTwist(PostRotateXY):
 
 
 c_ TickerEffect(object):
-    Normal, Intro, Outro _ range(3)
+    Normal, Intro, Outro _ ra..(3)
 
     ___  -   letters):
         postEffect _ TickerPostEffect()
@@ -101,7 +101,7 @@ c_ TickerEffect(object):
         letters _ letters
         morphSpeed _ normalMorphSpeed _ Colors.tickerMorphSpeed
         moveSpeed _ normalMoveSpeed _ Colors.tickerMoveSpeed
-        useSheepDog _ True
+        useSheepDog _ T..
         morphBetweenModels _ no. Colors.noTickerMorph
 
     ___ setPostEffect  effect):
@@ -199,9 +199,9 @@ c_ ItemCircleAnimation(DemoItem):
         letterCount _ Colors.tickerLetterCount
         scale _ 1.0
         showCount _ -1
-        tickOnPaint _ False
-        paused _ False
-        doIntroTransitions _ True
+        tickOnPaint _ F..
+        paused _ F..
+        doIntroTransitions _ T..
         setAcceptHoverEvents( st.
         setCursor(__.OpenHandCursor)
         setupGuides()
@@ -326,7 +326,7 @@ c_ ItemCircleAnimation(DemoItem):
                 # are showing, use a more appropriate value.
                 currentAnimation.setStartDelay(1500)
         ____ effect __ no. N..:
-            effect.useSheepDog _ False
+            effect.useSheepDog _ F..
 
         tickTimer _ ?T...currentTime()
 

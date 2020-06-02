@@ -73,7 +73,7 @@ c_ SpreadSheet ?MW..
         toolBar.aW..(cellLabel)
         toolBar.aW..(formulaInput)
         table _ QTableWidget(rows, cols, self)
-        ___ c __ range(cols):
+        ___ c __ ra..(cols):
             character _ chr(ord('A') + c)
             table.setHorizontalHeaderItem(c, QTableWidgetItem(character))
 
@@ -173,7 +173,7 @@ c_ SpreadSheet ?MW..
         action _ sender()
         oldFormat _ currentDateFormat
         newFormat _ currentDateFormat _ action.t__()
-        ___ row __ range(table.rowCount()):
+        ___ row __ ra..(table.rowCount()):
             item _ table.item(row, 1)
             date _ QDate.fromString(item.t__(), oldFormat)
             item.sT..(date.toString(newFormat))
@@ -207,7 +207,7 @@ c_ SpreadSheet ?MW..
         __ item !_ table.currentItem
             r_
         __ item:
-            formulaInput.sT..(item.data(__.EditRole))
+            formulaInput.sT..(item.data(__.ER..))
         ____
             formulaInput.c..
 
@@ -219,7 +219,7 @@ c_ SpreadSheet ?MW..
         __ no. item:
             table.setItem(row, col, SpreadSheetItem(t__))
         ____
-            item.setData(__.EditRole, t__)
+            item.setData(__.ER.., t__)
         table.viewport().update()
 
     ___ selectColor 
@@ -249,9 +249,9 @@ c_ SpreadSheet ?MW..
                        outText, cell1, cell2, outCell):
         rows _   # list
         cols _   # list
-        ___ r __ range(table.rowCount()):
+        ___ r __ ra..(table.rowCount()):
             rows.ap..(str(r + 1))
-        ___ c __ range(table.columnCount()):
+        ___ c __ ra..(table.columnCount()):
             cols.ap..(chr(ord('A') + c))
         addDialog _ QDialog
         addDialog.sWT..(title)
@@ -332,9 +332,9 @@ c_ SpreadSheet ?MW..
             cell1 _ cell1ColInput.currentText() + cell1RowInput.currentText()
             cell2 _ cell2ColInput.currentText() + cell2RowInput.currentText()
             outCell _ outColInput.currentText() + outRowInput.currentText()
-            r_ True, cell1, cell2, outCell
+            r_ T.., cell1, cell2, outCell
 
-        r_ False, N.., N.., N..
+        r_ F.., N.., N.., N..
 
     ___ actionSum 
         row_first _ 0

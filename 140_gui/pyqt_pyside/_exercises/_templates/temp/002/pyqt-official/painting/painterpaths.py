@@ -167,7 +167,7 @@ c_ Window(?W..):
 
         starPath _ QPainterPath()
         starPath.moveTo(90, 50)
-        ___ i __ range(1, 5):
+        ___ i __ ra..(1, 5):
             starPath.lineTo(50 + 40 * cos(0.8 * i * pi),
                     50 + 40 * sin(0.8 * i * pi))
         starPath.closeSubpath()
@@ -229,12 +229,12 @@ c_ Window(?W..):
         fillColor2ComboBox.activated.c..(fillGradientChanged)
         penColorComboBox.activated.c..(penColorChanged)
 
-        ___ i __ range(Window.NumRenderAreas):
+        ___ i __ ra..(Window.NumRenderAreas):
             penWidthSpinBox.valueChanged.c..(renderAreas[i].setPenWidth)
             rotationAngleSpinBox.valueChanged.c..(renderAreas[i].setRotationAngle)
 
         topLayout _ QGridLayout()
-        ___ i __ range(Window.NumRenderAreas):
+        ___ i __ ra..(Window.NumRenderAreas):
             topLayout.aW..(renderAreas[i], i / 3, i % 3)
 
         mainLayout _ QGridLayout()
@@ -263,20 +263,20 @@ c_ Window(?W..):
     ___ fillRuleChanged
         rule _ __.FillRule(currentItemData(fillRuleComboBox))
 
-        ___ i __ range(Window.NumRenderAreas):
+        ___ i __ ra..(Window.NumRenderAreas):
             renderAreas[i].setFillRule(rule)
 
     ___ fillGradientChanged
         color1 _ ?C..(currentItemData(fillColor1ComboBox))
         color2 _ ?C..(currentItemData(fillColor2ComboBox))
 
-        ___ i __ range(Window.NumRenderAreas):
+        ___ i __ ra..(Window.NumRenderAreas):
             renderAreas[i].setFillGradient(color1, color2)
 
     ___ penColorChanged
         color _ ?C..(currentItemData(penColorComboBox))
 
-        ___ i __ range(Window.NumRenderAreas):
+        ___ i __ ra..(Window.NumRenderAreas):
             renderAreas[i].setPenColor(color)
 
     ___ populateWithColors  comboBox):

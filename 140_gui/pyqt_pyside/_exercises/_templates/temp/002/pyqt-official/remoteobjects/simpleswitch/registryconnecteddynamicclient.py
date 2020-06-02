@@ -67,7 +67,7 @@ c_ DynamicClient(QObject):
         s_. - (parent)
 
         _replica _ replica
-        _clientSwitchState _ False
+        _clientSwitchState _ F..
 
         replica.initialized.c..(initConnection)
 

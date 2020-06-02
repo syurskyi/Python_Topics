@@ -92,7 +92,7 @@ c_ AnalogClock(?W..):
 
         painter.setPen(AnalogClock.hourColor)
 
-        ___ i __ range(12):
+        ___ i __ ra..(12):
             painter.drawLine(88, 0, 96, 0)
             painter.rotate(30.0)
 
@@ -106,7 +106,7 @@ c_ AnalogClock(?W..):
 
         painter.setPen(AnalogClock.minuteColor)
 
-        ___ j __ range(60):
+        ___ j __ ra..(60):
             __ (j % 5) !_ 0:
                 painter.drawLine(92, 0, 96, 0)
             painter.rotate(6.0)

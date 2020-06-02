@@ -261,9 +261,9 @@ c_ DetailsDialog(QDialog):
     ___ orderItems
         orderList _   # list
 
-        ___ row __ range(le.(items)):
+        ___ row __ ra..(le.(items)):
             t__ _ itemsTable.item(row, 0).t__()
-            quantity _ int(itemsTable.item(row, 1).data(__.DisplayRole))
+            quantity _ int(itemsTable.item(row, 1).data(__.DR..))
             orderList.ap..((t__, max(0, quantity)))
 
         r_ orderList

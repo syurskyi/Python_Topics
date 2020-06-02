@@ -157,7 +157,7 @@ __ ______ __ ______
     scene _ QGraphicsScene(-350, -350, 700, 700)
 
     items _   # list
-    ___ i __ range(64):
+    ___ i __ ra..(64):
         item _ Pixmap(kineticPix)
         item.pixmap_item.setOffset(-kineticPix.width() / 2,
                 -kineticPix.height() / 2)

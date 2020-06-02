@@ -61,7 +61,7 @@ c_ Node(QGraphicsObject):
     ___  -   pos, parent_None):
         super(Node, self). - (parent)
 
-        m_dragging _ False
+        m_dragging _ F..
 
         setPos(pos)
         setFlag(QGraphicsItem.ItemSendsGeometryChanges)
@@ -80,14 +80,14 @@ c_ Node(QGraphicsObject):
         r_ super(Node, self).itemChange(change, value)
 
     ___ mousePressEvent  event):
-        m_dragging _ True
+        m_dragging _ T..
 
     ___ mouseMoveEvent  event):
         __ m_dragging:
             setPos(mapToParent(event.pos()))
 
     ___ mouseReleaseEvent  event):
-        m_dragging _ False
+        m_dragging _ F..
 
 
 Coords _ (
@@ -166,8 +166,8 @@ c_ StickMan(QGraphicsObject):
     ___  -
         super(StickMan, self). - ()
 
-        m_sticks _ True
-        m_isDead _ False
+        m_sticks _ T..
+        m_isDead _ F..
         m_pixmap _ QPixmap('images/head.png')
         m_penColor _ ?C..(__.white)
         m_fillColor _ ?C..(__.black)
@@ -444,7 +444,7 @@ c_ Animation(object):
         ___ frame __ m_frames:
             stream.writeInt(frame.nodeCount())
 
-            ___ i __ range(frame.nodeCount()):
+            ___ i __ ra..(frame.nodeCount()):
                 stream << frame.nodePos(i)
 
     ___ load  device):
@@ -454,13 +454,13 @@ c_ Animation(object):
         m_name _ stream.readQString()
         frameCount _ stream.readInt()
 
-        ___ i __ range(frameCount):
+        ___ i __ ra..(frameCount):
             nodeCount _ stream.readInt()
 
             frame _ Frame()
             frame.setNodeCount(nodeCount)
 
-            ___ j __ range(nodeCount):
+            ___ j __ ra..(nodeCount):
                 pos _ QPointF()
                 stream >> pos
 
@@ -483,7 +483,7 @@ c_ KeyPressTransition(QSignalTransition):
             key _ e.arguments()[0]
             r_ key __ m_key
 
-        r_ False
+        r_ F..
 
 
 c_ LightningStrikesTransition(QEventTransition):
@@ -510,7 +510,7 @@ c_ LifeCycle(object):
         m_animationGroup _ QParallelAnimationGroup()
         stickManNodeCount _ m_stickMan.nodeCount()
         _pas _   # list
-        ___ i __ range(stickManNodeCount):
+        ___ i __ ra..(stickManNodeCount):
             pa _ QPropertyAnimation(m_stickMan.node(i), b'pos')
             _pas.ap..(pa)
             m_animationGroup.addAnimation(pa)
@@ -577,12 +577,12 @@ c_ LifeCycle(object):
 
         frameCount _ animation.totalFrames()
         previousState _ N..
-        ___ i __ range(frameCount):
+        ___ i __ ra..(frameCount):
             animation.setCurrentFrame(i)
 
             frameState _ QState(topLevel)
             nodeCount _ animation.nodeCount()
-            ___ j __ range(nodeCount):
+            ___ j __ ra..(nodeCount):
                 frameState.assignProperty(m_stickMan.node(j), 'pos',
                         animation.nodePos(j))
 

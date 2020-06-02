@@ -187,7 +187,7 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
         # QMessageBox
         help_menu.aA..('About', showAboutDialog)
 
-        __ settings.value('show_warnings', False, type_bool):
+        __ settings.value('show_warnings', F.., type_bool):
             response _ qtw.?MB...q..(
                 self,
                 'My Text Editor',

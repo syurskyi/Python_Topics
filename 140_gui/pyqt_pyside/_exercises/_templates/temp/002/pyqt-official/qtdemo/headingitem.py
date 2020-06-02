@@ -53,7 +53,7 @@ c_ HeadingItem(DemoItem):
         super(HeadingItem, self). - (parent)
 
         t__ _ t__
-        noSubPixeling _ True
+        noSubPixeling _ T..
 
     ___ createImage  transform):
         sx _ min(transform.m11(), transform.m22())
@@ -99,7 +99,7 @@ c_ HeadingItem(DemoItem):
         r_ image
 
     ___ animationStarted  id_0):
-        noSubPixeling _ False
+        noSubPixeling _ F..
 
     ___ animationStopped  id_0):
-        noSubPixeling _ True
+        noSubPixeling _ T..

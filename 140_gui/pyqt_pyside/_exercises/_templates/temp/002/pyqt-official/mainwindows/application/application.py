@@ -98,7 +98,7 @@ c_ MainWindow ?MW..
         __ fileName:
             r_ saveFile(fileName)
 
-        r_ False
+        r_ F..
 
     ___ about 
         ?MB...about  "About Application",
@@ -217,9 +217,9 @@ c_ MainWindow ?MW..
                 r_ save()
 
             __ ret __ ?MB...Cancel:
-                r_ False
+                r_ F..
 
-        r_ True
+        r_ T..
 
     ___ loadFile  fileName):
         file _ QFile(fileName)
@@ -241,7 +241,7 @@ c_ MainWindow ?MW..
         __ no. file.o..(QFile.WriteOnly | QFile.Text):
             ?MB...warning  "Application",
                     "Cannot write file %s:\n%s." % (fileName, file.errorString()))
-            r_ False
+            r_ F..
 
         outf _ QTextStream(file)
         ?A...setOverrideCursor(__.WaitCursor)
@@ -250,7 +250,7 @@ c_ MainWindow ?MW..
 
         setCurrentFile(fileName);
         statusBar().showMessage("File saved", 2000)
-        r_ True
+        r_ T..
 
     ___ setCurrentFile  fileName):
         curFile _ fileName

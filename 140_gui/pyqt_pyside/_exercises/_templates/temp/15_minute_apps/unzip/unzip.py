@@ -137,7 +137,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         # Initialize
         head.current_rotation = 0
         head.current_y = 0
-        head.locked = True
+        head.locked = T..
         worker = None
 
         # Reset bar to complete (empty)
@@ -158,7 +158,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         head.update()
 
         if head.current_y __ 0 and head.current_rotation __ 0:
-            head.locked = False
+            head.locked = F..
 
     def dragEnterEvent(self, e):
         data = e.mimeData()
@@ -195,7 +195,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         :return:
         """
         current_n = int(pc * 10)
-        ___ n __ range(1, 11):
+        ___ n __ ra..(1, 11):
             getattr(self, 'progress_%d' % n).setStyleSheet(
                 PROGRESS_ON if n > current_n ____ PROGRESS_OFF
             )

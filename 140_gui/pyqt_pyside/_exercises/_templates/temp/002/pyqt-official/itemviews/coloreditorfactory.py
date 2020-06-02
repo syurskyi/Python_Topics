@@ -102,7 +102,7 @@ c_ Window(?W..):
         ___ i, (name, color) __ en..(tableData):
             nameItem _ QTableWidgetItem(name)
             colorItem _ QTableWidgetItem()
-            colorItem.setData(__.DisplayRole, color)
+            colorItem.setData(__.DR.., color)
             table.setItem(i, 0, nameItem)
             table.setItem(i, 1, colorItem)
 

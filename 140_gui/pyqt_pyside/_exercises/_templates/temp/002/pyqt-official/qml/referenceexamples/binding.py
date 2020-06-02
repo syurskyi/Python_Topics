@@ -307,7 +307,7 @@ __ party __ no. N.. and party.host __ no. N..:
         print("She is inviting:")
 
     ___ guest __ party.guests:
-        attached _ qmlAttachedPropertiesObject(BirthdayParty, guest, False)
+        attached _ qmlAttachedPropertiesObject(BirthdayParty, guest, F..)
 
         __ attached __ no. N..:
             rsvpDate _ attached.property('rsvp')

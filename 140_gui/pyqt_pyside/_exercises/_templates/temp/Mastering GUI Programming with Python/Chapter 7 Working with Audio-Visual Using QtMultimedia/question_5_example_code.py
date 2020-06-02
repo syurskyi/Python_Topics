@@ -27,7 +27,7 @@ c_ MainWindow ?.?W..
             minimum_1,
             maximum_10,
             sliderMoved_self.on_slider_moved,
-            orientation_qtc.__.Horizontal
+            orientation_qtc.__.H..
         )
         form.aR..('Zoom', zoomslider)
 

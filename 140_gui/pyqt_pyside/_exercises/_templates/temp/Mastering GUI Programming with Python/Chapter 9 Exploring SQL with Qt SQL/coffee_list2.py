@@ -63,7 +63,7 @@ c_ CoffeeForm ?.?W..
         # Cause data to be written when changed
 
         # Reviews
-        reviews _ qtw.QTableView()
+        reviews _ qtw.?TV..
         layout().aR..(reviews)
         reviews.sM..(reviews_model)
         reviews.hideColumn(0)
@@ -91,13 +91,13 @@ c_ CoffeeForm ?.?W..
         id_index _ coffee_index.siblingAtColumn(0)
         coffee_id _ int(coffees_model.data(id_index))
         reviews.model().setFilter(f'coffee_id = {coffee_id}')
-        reviews.model().setSort(3, qtc.__.DescendingOrder)
+        reviews.model().setSort(3, qtc.__.DO..)
         reviews.model().select()
         reviews.resizeRowsToContents()
         reviews.resizeColumnsToContents()
 
     ___ delete_review 
-        ___ index __ reviews.selectedIndexes() or   # list:
+        ___ index __ reviews.sI.. or   # list:
             reviews.model().removeRow(index.row())
         reviews.model().select()
 
@@ -165,7 +165,7 @@ c_ MainWindow(qtw.QMainWindow):
         )
         coffees_model.setEditStrategy(0)
         coffees_model.dataChanged.c..(print)
-        coffee_list _ qtw.QTableView()
+        coffee_list _ qtw.?TV..
         coffee_list.sM..(coffees_model)
         stack.aW..(coffee_list)
 
@@ -201,7 +201,7 @@ c_ MainWindow(qtw.QMainWindow):
         s..
 
     ___ delete_coffee 
-        selected _ coffee_list.selectedIndexes()
+        selected _ coffee_list.sI..
         ___ index __ selected or   # list:
             coffees_model.removeRow(index.row())
         coffees_model.select()

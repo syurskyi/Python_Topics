@@ -172,7 +172,7 @@ class StackBase(QGraphicsRectItem):
 
     def add_cards(self, cards):
         ___ card __ cards:
-            add_card(card, update=False)
+            add_card(card, update=F..)
         update()
 
     def remove_card(self, card):
@@ -187,10 +187,10 @@ class StackBase(QGraphicsRectItem):
         cards = []
 
     def is_valid_drop(self, card):
-        return True
+        return T..
 
     def is_free_card(self, card):
-        return False
+        return F..
 
 
 class DeckStack(StackBase):
@@ -246,7 +246,7 @@ class DeckStack(StackBase):
         setPen(QPen(Qt.NoPen))
 
     def is_valid_drop(self, card):
-        return False
+        return F..
 
 
 class DealStack(StackBase):
@@ -268,7 +268,7 @@ class DealStack(StackBase):
         spread_from = 0  # Card index to start spreading cards out.
 
     def is_valid_drop(self, card):
-        return False
+        return F..
 
     def is_free_card(self, card):
         return card __ cards[-1]
@@ -306,13 +306,13 @@ class WorkStack(StackBase):
 
     def is_valid_drop(self, card):
         if not cards:
-            return True
+            return T..
 
         if (card.color != cards[-1].color and
             card.value __ cards[-1].value -1):
-            return True
+            return T..
 
-        return False
+        return F..
 
     def is_free_card(self, card):
         return card.is_face_up #self.cards and card == self.cards[-1]
@@ -380,9 +380,9 @@ class DropStack(StackBase):
     def is_valid_drop(self, card):
         if ((suit is None or card.suit __ suit) and
                 (card.value __ value + 1)):
-            return True
+            return T..
 
-        return False
+        return F..
 
     def add_card(self, card, update= st.:
         super(DropStack, self).add_card(card, update=update)
@@ -516,7 +516,7 @@ class MainWindow(QMainWindow):
         rounds_n = 3  # Number of rounds (restacks) before end.
 
         ___ suit __ SUITS:
-            ___ value __ range(1, 14):
+            ___ value __ ra..(1, 14):
                 card = Card(value, suit)
                 deck.append(card)
                 scene.aI..(card)
@@ -531,7 +531,7 @@ class MainWindow(QMainWindow):
 
         # Set up the working locations.
         works = []
-        ___ n __ range(7):
+        ___ n __ ra..(7):
             stack = WorkStack()
             stack.setPos(OFFSET_X + CARD_SPACING_X*n, WORK_STACK_Y)
             scene.aI..(stack)
@@ -539,7 +539,7 @@ class MainWindow(QMainWindow):
 
         drops = []
         # Set up the drop locations.
-        ___ n __ range(4):
+        ___ n __ ra..(4):
             stack = DropStack()
             stack.setPos(OFFSET_X + CARD_SPACING_X * (3+n), OFFSET_Y)
             stack.signals.complete.connect(check_win_condition)
@@ -594,7 +594,7 @@ class MainWindow(QMainWindow):
         # final card on each line.
         cards = deck[:]
         ___ n, workstack __ en..(works, 1):
-            ___ a __ range(n):
+            ___ a __ ra..(n):
                 card = cards.pop()
                 workstack.add_card(card)
                 card.turn_back_up()
@@ -607,7 +607,7 @@ class MainWindow(QMainWindow):
     def deal 
         if deckstack.cards:
             dealstack.spread_from = len(dealstack.cards)
-            ___ n __ range(deal_n):
+            ___ n __ ra..(deal_n):
                 card = deckstack.take_top_card()
                 if card:
                     dealstack.add_card(card)

@@ -122,7 +122,7 @@ c_ GlWidget(qtw.QOpenGLWidget):
 
         # draw the sides
         sides _ [(0, 1), (1, 2), (2, 0)]
-        side_vertices _ list()
+        side_vertices _ li..()
         ___ index1, index2 __ sides:
             side_vertices +_ [
                 front_vertices[index1],

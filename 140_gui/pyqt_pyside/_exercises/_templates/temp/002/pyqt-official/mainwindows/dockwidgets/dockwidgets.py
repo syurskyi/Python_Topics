@@ -105,10 +105,10 @@ c_ MainWindow ?MW..
         cursor.insertText("Dear ", textFormat)
         cursor.insertText("NAME", italicFormat)   
         cursor.insertText(",", textFormat)
-        ___ i __ range(3):
+        ___ i __ ra..(3):
             cursor.insertBlock()
         cursor.insertText("Yours sincerely,", textFormat)
-        ___ i __ range(3):
+        ___ i __ ra..(3):
             cursor.insertBlock()
         cursor.insertText("The Boss", textFormat)
         cursor.insertBlock()

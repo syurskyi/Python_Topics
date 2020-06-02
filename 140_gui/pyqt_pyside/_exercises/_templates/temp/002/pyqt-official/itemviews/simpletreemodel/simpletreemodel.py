@@ -99,7 +99,7 @@ c_ TreeModel(QAbstractItemModel):
         __ no. index.isValid
             r_ N..
 
-        __ role !_ __.DisplayRole:
+        __ role !_ __.DR..:
             r_ N..
 
         item _ index.internalPointer()
@@ -112,8 +112,8 @@ c_ TreeModel(QAbstractItemModel):
 
         r_ __.ItemIsEnabled | __.ItemIsSelectable
 
-    ___ headerData  section, orientation, role):
-        __ orientation __ __.Horizontal and role __ __.DisplayRole:
+    ___ hD..  section, orientation, role):
+        __ orientation __ __.H.. and role __ __.DR..:
             r_ rootItem.data(section)
 
         r_ N..

@@ -109,7 +109,7 @@ c_ MainWindow ?MW..
         fileName, _ _ ?FD...getSaveFileName  "Save As",
                 curFile)
         __ no. fileName:
-            r_ False
+            r_ F..
 
         r_ saveFile(fileName)
 
@@ -123,7 +123,7 @@ c_ MainWindow ?MW..
 
     ___ init
         setAttribute(__.WA_DeleteOnClose)
-        isUntitled _ True
+        isUntitled _ T..
         textEdit _ ?TE..()
         sCW..(textEdit)
 
@@ -246,9 +246,9 @@ c_ MainWindow ?MW..
                 r_ save()
 
             __ ret __ ?MB...Cancel:
-                r_ False
+                r_ F..
 
-        r_ True
+        r_ T..
 
     ___ loadFile  fileName):
         file _ QFile(fileName)
@@ -270,7 +270,7 @@ c_ MainWindow ?MW..
         __ no. file.o..(QFile.WriteOnly | QFile.Text):
             ?MB...warning  "SDI",
                     "Cannot write file %s:\n%s." % (fileName, file.errorString()))
-            r_ False
+            r_ F..
 
         outstr _ QTextStream(file)
         ?A...setOverrideCursor(__.WaitCursor)
@@ -279,7 +279,7 @@ c_ MainWindow ?MW..
 
         setCurrentFile(fileName)
         statusBar().showMessage("File saved", 2000)
-        r_ True
+        r_ T..
 
     ___ setCurrentFile  fileName):
         isUntitled _ no. fileName

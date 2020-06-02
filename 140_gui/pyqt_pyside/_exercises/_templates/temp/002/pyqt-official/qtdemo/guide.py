@@ -69,9 +69,9 @@ c_ Guide(object):
 
         __ al.:
             next _ nextGuide
-            w__ next __ no. self:
-                next.scaleX _ scaleX
-                next.scaleY _ scaleY
+            w__ n.. __ no. self:
+                n__.scaleX _ scaleX
+                n__.scaleY _ scaleY
                 next _ next.nextGuide
 
     ___ setFence  fence, all_ st.:

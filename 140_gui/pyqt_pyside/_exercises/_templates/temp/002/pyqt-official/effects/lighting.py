@@ -97,8 +97,8 @@ c_ Lighting(QGraphicsView):
         m_lightSource _ m_scene.addPixmap(pixmap)
         m_lightSource.setZValue(2)
 
-        ___ i __ range(-2, 3):
-            ___ j __ range(-2, 3):
+        ___ i __ ra..(-2, 3):
+            ___ j __ ra..(-2, 3):
                 __ (i + j) & 1:
                     item _ QGraphicsEllipseItem(0, 0, 50, 50)
                 ____

@@ -47,7 +47,7 @@ ____ ?.?G.. ______ QBrush, QFont, QFontMetrics, QPainter, QPainterPath
 ____ ?.?W.. ______ ?A.., ?CB, QGridLayout, ?W..
 
 
-NoTransformation, Translate, Rotate, Scale _ range(4)
+NoTransformation, Translate, Rotate, Scale _ ra..(4)
 
 c_ RenderArea(?W..):
     ___  -   parent_None):
@@ -150,10 +150,10 @@ c_ Window(?W..):
         layout.aW..(originalRenderArea, 0, 0)
         layout.aW..(shapeComboBox, 1, 0)
 
-        transformedRenderAreas _ list(range(Window.NumTransformedAreas))
-        operationComboBoxes _ list(range(Window.NumTransformedAreas))
+        transformedRenderAreas _ li..(ra..(Window.NumTransformedAreas))
+        operationComboBoxes _ li..(ra..(Window.NumTransformedAreas))
 
-        ___ i __ range(Window.NumTransformedAreas):
+        ___ i __ ra..(Window.NumTransformedAreas):
             transformedRenderAreas[i] _ RenderArea()
 
             operationComboBoxes[i] _ ?CB()
@@ -227,7 +227,7 @@ c_ Window(?W..):
 
     ___ operationChanged
         operations _   # list
-        ___ i __ range(Window.NumTransformedAreas):
+        ___ i __ ra..(Window.NumTransformedAreas):
             index _ operationComboBoxes[i].currentIndex()
             operations.ap..(Window.operationTable[index])
             transformedRenderAreas[i].setOperations(operations[:])
@@ -235,7 +235,7 @@ c_ Window(?W..):
     ___ shapeSelected  index):
         shape _ shapes[index]
         originalRenderArea.setShape(shape)
-        ___ i __ range(Window.NumTransformedAreas):
+        ___ i __ ra..(Window.NumTransformedAreas):
             transformedRenderAreas[i].setShape(shape)
 
 

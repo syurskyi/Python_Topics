@@ -153,11 +153,11 @@ c_ MainWindow(qtw.QMainWindow):
             history _ webview.history()
             ___ history_item __ reversed(history.items()):
                 list_item _ qtw.QListWidgetItem()
-                list_item.setData(qtc.__.DisplayRole, history_item.url())
+                list_item.setData(qtc.__.DR.., history_item.url())
                 history_list.aI..(list_item)
 
     ___ navigate_history  item):
-        qurl _ item.data(qtc.__.DisplayRole)
+        qurl _ item.data(qtc.__.DR..)
         __ tabs.currentWidget
             tabs.currentWidget().load(qurl)
 

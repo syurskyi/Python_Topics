@@ -66,7 +66,7 @@ c_ VideoPlayer(?W..):
 
         scene.aI..(videoItem)
 
-        rotateSlider _ QSlider(__.Horizontal)
+        rotateSlider _ QSlider(__.H..)
         rotateSlider.setRange(-180,  180)
         rotateSlider.setValue(0)
         rotateSlider.valueChanged.c..(rotateVideo)
@@ -79,7 +79,7 @@ c_ VideoPlayer(?W..):
         playButton.setIcon(style().standardIcon(QStyle.SP_MediaPlay))
         playButton.c__.c..(play)
 
-        positionSlider _ QSlider(__.Horizontal)
+        positionSlider _ QSlider(__.H..)
         positionSlider.setRange(0, 0)
         positionSlider.sliderMoved.c..(setPosition)
 

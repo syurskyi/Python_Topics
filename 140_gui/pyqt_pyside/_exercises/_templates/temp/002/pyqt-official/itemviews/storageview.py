@@ -54,7 +54,7 @@
 
 ______ math
 
-____ ?.?C.. ______ QAbstractTableModel, QByteArray, QDir, QStorageInfo, __
+____ ?.?C.. ______ ?ATM.., QByteArray, QDir, QStorageInfo, __
 ____ ?.?W.. ______ QAbstractItemView, ?A.., QTreeView
 
 
@@ -79,7 +79,7 @@ ___ sizeToString(size):
 c_ StorageModel ?ATM..
     ColumnRootPath, ColumnName, ColumnDevice, ColumnFileSystemName, \
     ColumnTotal, ColumnFree, ColumnAvailable, ColumnIsReady, \
-    ColumnIsReadOnly, ColumnIsValid, ColumnCount _ range(11)
+    ColumnIsReadOnly, ColumnIsValid, ColumnCount _ ra..(11)
 
     columnFuncMap _ {
         ColumnRootPath: l___ volume: QDir.toNativeSeparators(volume.rootPath()),
@@ -91,7 +91,7 @@ c_ StorageModel ?ATM..
         ColumnAvailable: l___ volume: sizeToString(volume.bytesAvailable()),
         ColumnIsReady: l___ volume: volume.isReady(),
         ColumnIsReadOnly: l___ volume: volume.isReadOnly(),
-        ColumnIsValid: l___ volume: volume.isValid(),
+        ColumnIsValid: l___ volume: volume.iV..,
     }
 
     columnNameMap _ {
@@ -122,7 +122,7 @@ c_ StorageModel ?ATM..
     ___ data  index, role):
         __ no. index.isValid
             r_ N..
-        __ role __ __.DisplayRole:
+        __ role __ __.DR..:
             volume _ volumes[index.row()]
             func _ columnFuncMap.g..(index.column())
             __ func __ no. N..:
@@ -131,7 +131,7 @@ c_ StorageModel ?ATM..
         ____ role __ __.ToolTipRole:
             volume _ volumes[index.row()]
             tooltip _   # list
-            ___ column __ range(ColumnCount):
+            ___ column __ ra..(ColumnCount):
                 label _ columnNameMap.g..(column)
                 value _ columnFuncMap[column](volume)
                 __ isinstance(value, QByteArray):
@@ -139,10 +139,10 @@ c_ StorageModel ?ATM..
                 tooltip.ap..("{0}: {1}".format(label, value))
             r_ "\n".join(tooltip)
 
-    ___ headerData  section, orientation, role):
-        __ orientation !_ __.Horizontal:
+    ___ hD..  section, orientation, role):
+        __ orientation !_ __.H..:
             r_ N..
-        __ role !_ __.DisplayRole:
+        __ role !_ __.DR..:
             r_ N..
         r_ columnNameMap.g..(section)
 
@@ -153,7 +153,7 @@ ___ main(args):
     view.sM..(StorageModel(view))
     view.r..(640, 480)
     view.setSelectionBehavior(QAbstractItemView.SelectRows)
-    ___ column __ range(view.model().columnCount()):
+    ___ column __ ra..(view.model().columnCount()):
         view.resizeColumnToContents(column)
     view.s..
     r_ app.e..

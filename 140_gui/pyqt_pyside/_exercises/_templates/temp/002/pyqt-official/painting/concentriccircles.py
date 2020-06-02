@@ -52,8 +52,8 @@ c_ CircleWidget(?W..):
     ___  -   parent_None):
         super(CircleWidget, self). - (parent)
 
-        floatBased _ False
-        antialiased _ False
+        floatBased _ F..
+        antialiased _ F..
         frameNo _ 0
 
         setBackgroundRole(?P...Base)
@@ -82,7 +82,7 @@ c_ CircleWidget(?W..):
         painter.setRenderHint(QPainter.Antialiasing, antialiased)
         painter.translate(width() / 2, height() / 2)
 
-        ___ diameter __ range(0, 256, 9):
+        ___ diameter __ ra..(0, 256, 9):
             delta _ abs((frameNo % 128) - diameter / 2)
             alpha _ 255 - (delta * delta) / 4 - diameter
             __ alpha > 0:
@@ -113,8 +113,8 @@ c_ Window(?W..):
 
         timer _ QTimer
 
-        ___ i __ range(2):
-            ___ j __ range(2):
+        ___ i __ ra..(2):
+            ___ j __ ra..(2):
                 w _ CircleWidget()
                 w.setAntialiased(j !_ 0)
                 w.setFloatBased(i !_ 0)

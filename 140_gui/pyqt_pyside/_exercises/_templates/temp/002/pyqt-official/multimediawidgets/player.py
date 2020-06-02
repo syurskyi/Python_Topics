@@ -84,7 +84,7 @@ c_ VideoWidget(QVideoWidget):
 
 c_ PlaylistModel(QAbstractItemModel):
 
-    Title, ColumnCount _ range(2)
+    Title, ColumnCount _ ra..(2)
 
     ___  -   parent_None):
         super(PlaylistModel, self). - (parent)
@@ -92,19 +92,19 @@ c_ PlaylistModel(QAbstractItemModel):
         m_playlist _ N..
 
     ___ rowCount  parent_QModelIndex()):
-        r_ m_playlist.mediaCount() __ m_playlist __ no. N.. and no. parent.isValid() ____ 0
+        r_ m_playlist.mediaCount() __ m_playlist __ no. N.. and no. parent.iV.. ____ 0
 
     ___ columnCount  parent_QModelIndex()):
-        r_ ColumnCount __ no. parent.isValid() ____ 0
+        r_ ColumnCount __ no. parent.iV.. ____ 0
 
     ___ index  row, column, parent_QModelIndex()):
-        r_ createIndex(row, column) __ m_playlist __ no. N.. and no. parent.isValid() and row >_ 0 and row < m_playlist.mediaCount() and column >_ 0 and column < ColumnCount ____ QModelIndex()
+        r_ createIndex(row, column) __ m_playlist __ no. N.. and no. parent.iV.. and row >_ 0 and row < m_playlist.mediaCount() and column >_ 0 and column < ColumnCount ____ QModelIndex()
 
     ___ parent  child):
         r_ QModelIndex()
 
-    ___ data  index, role_Qt.DisplayRole):
-        __ index.isValid() and role __ __.DisplayRole:
+    ___ data  index, role_Qt.DR..):
+        __ index.iV.. and role __ __.DR..:
             __ index.column() __ Title:
                 location _ m_playlist.media(index.row()).canonicalUrl()
                 r_ QFileInfo(location.path()).fileName()
@@ -172,7 +172,7 @@ c_ PlayerControls(?W..):
         super(PlayerControls, self). - (parent)
 
         playerState _ QMediaPlayer.StoppedState
-        playerMuted _ False
+        playerMuted _ F..
 
         playButton _ QToolButton(c___self.playClicked)
         playButton.setIcon(style().standardIcon(QStyle.SP_MediaPlay))
@@ -181,7 +181,7 @@ c_ PlayerControls(?W..):
         stopButton.setIcon(style().standardIcon(QStyle.SP_MediaStop))
         stopButton.sE.. F..
 
-        nextButton _ QToolButton(c___self.next)
+        nextButton _ QToolButton(c___self.n__)
         nextButton.setIcon(
                 style().standardIcon(QStyle.SP_MediaSkipForward))
 
@@ -193,7 +193,7 @@ c_ PlayerControls(?W..):
         muteButton.setIcon(
                 style().standardIcon(QStyle.SP_MediaVolume))
 
-        volumeSlider _ QSlider(__.Horizontal,
+        volumeSlider _ QSlider(__.H..,
                 sliderMoved_self.changeVolume)
         volumeSlider.setRange(0, 100)
 
@@ -264,7 +264,7 @@ c_ PlayerControls(?W..):
         r_ rateBox.itemData(rateBox.currentIndex())
 
     ___ setPlaybackRate  rate):
-        ___ i __ range(rateBox.count()):
+        ___ i __ ra..(rateBox.count()):
             __ qFuzzyCompare(rate, rateBox.itemData(i)):
                 rateBox.setCurrentIndex(i)
                 r_
@@ -278,7 +278,7 @@ c_ PlayerControls(?W..):
 
 c_ FrameProcessor(QObject):
 
-    histogramReady _ pS..(list)
+    histogramReady _ pS..(li..)
 
     @pyqtSlot(QVideoFrame, int)
     ___ processFrame  frame, levels):
@@ -290,7 +290,7 @@ c_ FrameProcessor(QObject):
             __ pixelFormat __ QVideoFrame.Format_YUV420P or pixelFormat __ QVideoFrame.Format_NV12:
                 # Process YUV data.
                 bits _ frame.bits()
-                ___ idx __ range(frame.height() * frame.width()):
+                ___ idx __ ra..(frame.height() * frame.width()):
                     histogram[(bits[idx] * levels) >> 8] +_ 1.0
             ____
                 imageFormat _ QVideoFrame.imageFormatFromPixelFormat(pixelFormat)
@@ -298,8 +298,8 @@ c_ FrameProcessor(QObject):
                     # Process RGB data.
                     image _ QImage(frame.bits(), frame.width(), frame.height(), imageFormat)
 
-                    ___ y __ range(image.height()):
-                        ___ x __ range(image.width()):
+                    ___ y __ ra..(image.height()):
+                        ___ x __ ra..(image.width()):
                             pixel _ image.pixel(x, y)
                             histogram[(qGray(pixel) * levels) >> 8] +_ 1.0
 
@@ -311,7 +311,7 @@ c_ FrameProcessor(QObject):
 
             # Normalise the values between 0 and 1.
             __ maxValue > 0.0:
-                ___ i __ range(le.(histogram)):
+                ___ i __ ra..(le.(histogram)):
                     histogram[i] /_ maxValue
 
             frame.unmap()
@@ -325,7 +325,7 @@ c_ HistogramWidget(?W..):
         super(HistogramWidget, self). - (parent)
 
         m_levels _ 128
-        m_isBusy _ False
+        m_isBusy _ F..
         m_histogram _   # list
         m_processor _ FrameProcessor()
         m_processorThread _ QThread()
@@ -344,15 +344,15 @@ c_ HistogramWidget(?W..):
         __ m_isBusy:
             r_
 
-        m_isBusy _ True
+        m_isBusy _ T..
         QMetaObject.invokeMethod(m_processor, 'processFrame',
                 __.QueuedConnection, Q_ARG(QVideoFrame, frame),
                 Q_ARG(int, m_levels))
 
-    @pyqtSlot(list)
+    @pyqtSlot(li..)
     ___ setHistogram  histogram):
-        m_isBusy _ False
-        m_histogram _ list(histogram)
+        m_isBusy _ F..
+        m_histogram _ li..(histogram)
         update()
 
     ___ paintEvent  event):
@@ -413,7 +413,7 @@ c_ Player(?W..):
 
         playlistView.activated.c..(jump)
 
-        slider _ QSlider(__.Horizontal)
+        slider _ QSlider(__.H..)
         slider.setRange(0, player.duration() / 1000)
 
         labelDuration _ QLabel()
@@ -633,7 +633,7 @@ c_ Player(?W..):
 
     ___ showColorDialog
         __ colorDialog __ N..:
-            brightnessSlider _ QSlider(__.Horizontal)
+            brightnessSlider _ QSlider(__.H..)
             brightnessSlider.setRange(-100, 100)
             brightnessSlider.setValue(videoWidget.brightness())
             brightnessSlider.sliderMoved.c..(
@@ -641,19 +641,19 @@ c_ Player(?W..):
             videoWidget.brightnessChanged.c..(
                     brightnessSlider.setValue)
 
-            contrastSlider _ QSlider(__.Horizontal)
+            contrastSlider _ QSlider(__.H..)
             contrastSlider.setRange(-100, 100)
             contrastSlider.setValue(videoWidget.contrast())
             contrastSlider.sliderMoved.c..(videoWidget.setContrast)
             videoWidget.contrastChanged.c..(contrastSlider.setValue)
 
-            hueSlider _ QSlider(__.Horizontal)
+            hueSlider _ QSlider(__.H..)
             hueSlider.setRange(-100, 100)
             hueSlider.setValue(videoWidget.hue())
             hueSlider.sliderMoved.c..(videoWidget.setHue)
             videoWidget.hueChanged.c..(hueSlider.setValue)
 
-            saturationSlider _ QSlider(__.Horizontal)
+            saturationSlider _ QSlider(__.H..)
             saturationSlider.setRange(-100, 100)
             saturationSlider.setValue(videoWidget.saturation())
             saturationSlider.sliderMoved.c..(

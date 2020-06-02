@@ -76,7 +76,7 @@ c_ PolygonWidget(?W..):
         path _ QPainterPath()
         angle _ 2*math.pi/_sides
         path.moveTo(_outerRadius, 0)
-        ___ step __ range(1, _sides + 1):
+        ___ step __ ra..(1, _sides + 1):
             path.lineTo(
                 _innerRadius * math.cos((step - 0.5) * angle),
                 _innerRadius * math.sin((step - 0.5) * angle)

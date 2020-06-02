@@ -50,7 +50,7 @@ ____ ?.?W.. ______ (?A.., QCheckBox, ?CB, QGridLayout,
         ?W..)
 
 
-SUBJECT, SENDER, DATE _ range(3)
+SUBJECT, SENDER, DATE _ ra..(3)
 
 # Work around the fact that QSortFilterProxyModel always filters datetime
 # values in QtCore.Qt.ISODate format, but the tree views display using
@@ -88,7 +88,7 @@ c_ Window(?W..):
         proxyView.setRootIsDecorated F..
         proxyView.setAlternatingRowColors( st.
         proxyView.sM..(proxyModel)
-        proxyView.setSortingEnabled( st.
+        proxyView.sSE.. st.
 
         sortCaseSensitivityCheckBox _ QCheckBox("Case sensitive sorting")
         filterCaseSensitivityCheckBox _ QCheckBox("Case sensitive filter")
@@ -187,9 +187,9 @@ ___ addMail(model, subject, sender, date):
 ___ createMailModel(parent):
     model _ QStandardItemModel(0, 3, parent)
 
-    model.setHeaderData(SUBJECT, __.Horizontal, "Subject")
-    model.setHeaderData(SENDER, __.Horizontal, "Sender")
-    model.setHeaderData(DATE, __.Horizontal, "Date")
+    model.setHeaderData(SUBJECT, __.H.., "Subject")
+    model.setHeaderData(SENDER, __.H.., "Sender")
+    model.setHeaderData(DATE, __.H.., "Date")
 
     addMail(model, "Happy New Year!", "Grace K. <grace@software-inc.com>",
             QDateTime(QDate(2006, 12, 31), ?T..(17, 3)))

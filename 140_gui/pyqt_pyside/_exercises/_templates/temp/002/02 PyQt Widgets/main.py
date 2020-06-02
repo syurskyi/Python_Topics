@@ -203,10 +203,10 @@ c_ WidgetGallery(QDialog):
         dateTimeEdit _ ?DTE..(bottomRightGroupBox)
         dateTimeEdit.setDateTime(QDateTime.currentDateTime())
 
-        slider _ QSlider(__.Horizontal, bottomRightGroupBox)
+        slider _ QSlider(__.H.., bottomRightGroupBox)
         slider.setValue(40)
 
-        scrollBar _ QScrollBar(__.Horizontal, bottomRightGroupBox)
+        scrollBar _ QScrollBar(__.H.., bottomRightGroupBox)
         scrollBar.setValue(60)
 
         dial _ QDial(bottomRightGroupBox)

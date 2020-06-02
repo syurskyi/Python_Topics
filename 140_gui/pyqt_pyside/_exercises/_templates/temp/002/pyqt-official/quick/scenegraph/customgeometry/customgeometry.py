@@ -154,7 +154,7 @@ c_ BezierCurve(QQuickItem):
         h _ height()
         vertices _ geometry.vertexDataAsPoint2D()
 
-        ___ i __ range(_segmentCount):
+        ___ i __ ra..(_segmentCount):
             t _ i / float(_segmentCount - 1)
             invt _ 1 - t
 

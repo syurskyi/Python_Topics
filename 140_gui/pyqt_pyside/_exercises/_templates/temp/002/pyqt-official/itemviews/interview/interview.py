@@ -73,7 +73,7 @@ c_ Model(QAbstractItemModel):
         services _ QIcon(images_dir + '/services.png')
         rc _ rows
         cc _ columns
-        tree _ [Node() ___ node __ range(rows)]
+        tree _ [Node() ___ node __ ra..(rows)]
         iconProvider _ QFileIconProvider()
 
     ___ index  row, column, parent):
@@ -99,7 +99,7 @@ c_ Model(QAbstractItemModel):
                 r_ child.parent
 
     ___ rowCount  parent):
-        __ parent.isValid() and parent.column() !_ 0:
+        __ parent.iV.. and parent.column() !_ 0:
             r_ 0
         r_ rc
 
@@ -109,7 +109,7 @@ c_ Model(QAbstractItemModel):
     ___ data  index, role):
         __ no. index.isValid
             r_ N..
-        ____ role __ __.DisplayRole:
+        ____ role __ __.DR..:
             r_ "Item %d:%s" % (index.row(), index.column())
         ____ role __ __.DecorationRole:
             __ index.column() __ 0:
@@ -117,16 +117,16 @@ c_ Model(QAbstractItemModel):
             r_ iconProvider.icon(QFileIconProvider.File)
         r_ N..
 
-    ___ headerData  section, orientation, role):
-        __ role __ __.DisplayRole:
+    ___ hD..  section, orientation, role):
+        __ role __ __.DR..:
             r_ str(section)
         __ role __ __.DecorationRole:
             r_ services
-        r_ super(Model, self).headerData(section, orientation, role)
+        r_ super(Model, self).hD..(section, orientation, role)
 
     ___ hasChildren  parent):
-        __ parent.isValid() and parent.column() !_ 0:
-            r_ False
+        __ parent.iV.. and parent.column() !_ 0:
+            r_ F..
         r_ rc > 0 and cc > 0
 
     ___ flags  index):
@@ -136,7 +136,7 @@ c_ Model(QAbstractItemModel):
 
     ___ node  row, parent):
         __ parent and no. parent.children:
-            parent.children _ [Node(parent) ___ node __ range(rc)]
+            parent.children _ [Node(parent) ___ node __ ra..(rc)]
         __ parent:
             r_ parent.children[row]
         ____
@@ -154,7 +154,7 @@ ___ main(args):
     page _ QSplitter()
     data _ Model(1000, 10, page)
     selections _ QItemSelectionModel(data)
-    table _ QTableView()
+    table _ ?TV..
     table.sM..(data)
     table.setSelectionModel(selections)
     table.horizontalHeader().setSectionsMovable( st.
@@ -169,17 +169,17 @@ ___ main(args):
     tree.header().setStretchLastSection F..
     tree.viewport().setAttribute(__.WA_StaticContents)
     # Disable the focus rect to get minimal repaints when scrolling on Mac.
-    tree.setAttribute(__.WA_MacShowFocusRect, False)
+    tree.setAttribute(__.WA_MacShowFocusRect, F..)
     page.aW..(tree)
-    list _ QListView()
-    list.sM..(data)
-    list.setSelectionModel(selections)
-    list.setViewMode(QListView.IconMode)
-    list.setSelectionMode(QAbstractItemView.ExtendedSelection)
-    list.setAlternatingRowColors F..
-    list.viewport().setAttribute(__.WA_StaticContents)
-    list.setAttribute(__.WA_MacShowFocusRect, False)
-    page.aW..(list)
+    li.. _ QListView()
+    li...sM..(data)
+    li...setSelectionModel(selections)
+    li...setViewMode(QListView.IconMode)
+    li...setSelectionMode(QAbstractItemView.ExtendedSelection)
+    li...setAlternatingRowColors F..
+    li...viewport().setAttribute(__.WA_StaticContents)
+    li...setAttribute(__.WA_MacShowFocusRect, F..)
+    page.aW..(li..)
     page.setWindowIcon(QIcon(images_dir + '/interview.png'))
     page.sWT..("Interview")
     page.s..

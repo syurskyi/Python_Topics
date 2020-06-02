@@ -77,7 +77,7 @@ c_ Helper(object):
 
         r _ elapsed / 1000.0
         n _ 30
-        ___ i __ range(n):
+        ___ i __ ra..(n):
             painter.rotate(30)
             radius _ 0 + 120.0*((i+r)/n)
             circleRadius _ 1 + ((i+r)/n)*20

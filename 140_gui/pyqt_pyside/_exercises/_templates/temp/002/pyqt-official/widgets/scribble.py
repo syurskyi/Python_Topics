@@ -54,8 +54,8 @@ c_ ScribbleArea(?W..):
         super(ScribbleArea, self). - (parent)
 
         setAttribute(__.WA_StaticContents)
-        modified _ False
-        scribbling _ False
+        modified _ F..
+        scribbling _ F..
         myPenWidth _ 1
         myPenColor _ __.blue
         image _ QImage()
@@ -64,24 +64,24 @@ c_ ScribbleArea(?W..):
     ___ openImage  fileName):
         loadedImage _ QImage()
         __ no. loadedImage.load(fileName):
-            r_ False
+            r_ F..
 
         newSize _ loadedImage.size().expandedTo(size())
         resizeImage(loadedImage, newSize)
         image _ loadedImage
-        modified _ False
+        modified _ F..
         update()
-        r_ True
+        r_ T..
 
     ___ saveImage  fileName, fileFormat):
         visibleImage _ image
         resizeImage(visibleImage, size())
 
         __ visibleImage.save(fileName, fileFormat):
-            modified _ False
-            r_ True
+            modified _ F..
+            r_ T..
         ____
-            r_ False
+            r_ F..
 
     ___ setPenColor  newColor):
         myPenColor _ newColor
@@ -91,13 +91,13 @@ c_ ScribbleArea(?W..):
 
     ___ clearImage
         image.fill(qRgb(255, 255, 255))
-        modified _ True
+        modified _ T..
         update()
 
     ___ mousePressEvent  event):
         __ event.button() __ __.LeftButton:
             lastPoint _ event.pos()
-            scribbling _ True
+            scribbling _ T..
 
     ___ mouseMoveEvent  event):
         __ (event.buttons() & __.LeftButton) and scribbling:
@@ -106,7 +106,7 @@ c_ ScribbleArea(?W..):
     ___ mouseReleaseEvent  event):
         __ event.button() __ __.LeftButton and scribbling:
             drawLineTo(event.pos())
-            scribbling _ False
+            scribbling _ F..
 
     ___ paintEvent  event):
         painter _ QPainter
@@ -127,7 +127,7 @@ c_ ScribbleArea(?W..):
         painter.setPen(QPen(myPenColor, myPenWidth, __.SolidLine,
                 __.RoundCap, __.RoundJoin))
         painter.drawLine(lastPoint, endPoint)
-        modified _ True
+        modified _ T..
 
         rad _ myPenWidth / 2 + 2
         update(QRect(lastPoint, endPoint).normalized().adjusted(-rad, -rad, +rad, +rad))
@@ -296,9 +296,9 @@ c_ MainWindow ?MW..
             __ ret __ ?MB...Save:
                 r_ saveFile('png')
             ____ ret __ ?MB...Cancel:
-                r_ False
+                r_ F..
 
-        r_ True
+        r_ T..
 
     ___ saveFile  fileFormat):
         initialPath _ QDir.currentPath() + '/untitled.' + fileFormat
@@ -308,7 +308,7 @@ c_ MainWindow ?MW..
         __ fileName:
             r_ scribbleArea.saveImage(fileName, fileFormat)
 
-        r_ False
+        r_ F..
 
 
 __ ______ __ ______

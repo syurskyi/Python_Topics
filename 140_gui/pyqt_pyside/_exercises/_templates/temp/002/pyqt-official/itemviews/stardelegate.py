@@ -53,7 +53,7 @@ ____ ?.?W.. ______ (QAbstractItemView, ?A.., QStyle,
 
 c_ StarRating(object):
     # enum EditMode
-    Editable, ReadOnly _ range(2)
+    Editable, ReadOnly _ ra..(2)
 
     PaintingScaleFactor _ 20
 
@@ -62,7 +62,7 @@ c_ StarRating(object):
         _maxStarCount _ maxStarCount
 
         starPolygon _ QPolygonF([QPointF(1.0, 0.5)])
-        ___ i __ range(5):
+        ___ i __ ra..(5):
             starPolygon << QPointF(0.5 + 0.5 * math.cos(0.8 * i * math.pi),
                                         0.5 + 0.5 * math.sin(0.8 * i * math.pi))
 
@@ -103,7 +103,7 @@ c_ StarRating(object):
         painter.translate(rect.x(), rect.y() + yOffset)
         painter.scale(PaintingScaleFactor, PaintingScaleFactor)
 
-        ___ i __ range(_maxStarCount):
+        ___ i __ ra..(_maxStarCount):
             __ i < _starCount:
                 painter.drawPolygon(starPolygon, __.WindingFill)
             ____ editMode __ StarRating.Editable:

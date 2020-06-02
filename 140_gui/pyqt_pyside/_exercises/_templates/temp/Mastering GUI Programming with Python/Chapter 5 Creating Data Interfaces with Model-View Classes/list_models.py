@@ -28,9 +28,9 @@ c_ MainWindow ?.?W..
         layout().aW..(combobox)
 
         # make the list widget editable
-        ___ i __ range(listwidget.count()):
+        ___ i __ ra..(listwidget.count()):
             item _ listwidget.item(i)
-            item.setFlags(item.flags() | qtc.__.ItemIsEditable)
+            item.setFlags(item.flags() | qtc.__.IIE..)
 
 
         # The same, but with a model

@@ -54,7 +54,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
         textEdit.tC...c..(save)
 
         # Flags to store dragged-dropped
-        _drag_active _ False
+        _drag_active _ F..
 
     ___ load
         move(obj.x, obj.y)
@@ -77,12 +77,12 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
         move(x() + delta.x(), y()+delta.y())
         previous_pos _ e.globalPos()
 
-        _drag_active _ True
+        _drag_active _ T..
 
     ___ mouseReleaseEvent  e):
         __ _drag_active:
             save()
-            _drag_active _ False
+            _drag_active _ F..
 
     ___ delete_window
         result _ ?MB...q..  "Confirm delete", "Are you sure you want to delete this note?")

@@ -129,7 +129,7 @@ c_ IconPreviewArea(?W..):
             mainLayout.aW..(label, 0, i + 1)
 
             pixmapLabels.ap..(  # list)
-            ___ j __ range(le.(stateLabels)):
+            ___ j __ ra..(le.(stateLabels)):
                 pixmapLabels[i].ap..(createPixmapLabel())
                 mainLayout.aW..(pixmapLabels[i][j], j + 1, i + 1)
 
@@ -159,7 +159,7 @@ c_ IconPreviewArea(?W..):
         r_ label
 
     ___ updatePixmapLabels 
-        ___ i __ range(le.(modeLabels)):
+        ___ i __ ra..(le.(modeLabels)):
             __ i __ 0:
                 mode _ QIcon.Normal
             ____ i __ 1:
@@ -169,7 +169,7 @@ c_ IconPreviewArea(?W..):
             ____
                 mode _ QIcon.Selected
 
-            ___ j __ range(le.(stateLabels)):
+            ___ j __ ra..(le.(stateLabels)):
                 state _ QIcon.Off __ j __ 0 ____ QIcon.On
                 pixmap _ icon.pixmap(size, mode, state)
                 pixmapLabels[i][j].setPixmap(pixmap)
@@ -268,7 +268,7 @@ c_ MainWindow ?MW..
     ___ changeIcon 
         icon _ QIcon()
 
-        ___ row __ range(imagesTable.rowCount()):
+        ___ row __ ra..(imagesTable.rowCount()):
             item0 _ imagesTable.item(row, 0)
             item1 _ imagesTable.item(row, 1)
             item2 _ imagesTable.item(row, 2)
@@ -306,7 +306,7 @@ c_ MainWindow ?MW..
             imageName _ QFileInfo(fileName).baseName()
             item0 _ QTableWidgetItem(imageName)
             item0.setData(__.UserRole, fileName)
-            item0.setFlags(item0.flags() & ~__.ItemIsEditable)
+            item0.setFlags(item0.flags() & ~__.IIE..)
 
             item1 _ QTableWidgetItem("Normal")
             item2 _ QTableWidgetItem("Off")

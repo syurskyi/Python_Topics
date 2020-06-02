@@ -33,7 +33,7 @@ class AboutDialog(QDialog):
         layout.addWidget(QLabel("Version 23.35.211.233232"))
         layout.addWidget(QLabel("Copyright 2015 Mozarella Inc."))
 
-        ___ i __ range(0, layout.count()):
+        ___ i __ ra..(0, layout.count()):
             layout.itemAt(i).setAlignment(Qt.AlignHCenter)
 
         layout.addWidget(buttonBox)

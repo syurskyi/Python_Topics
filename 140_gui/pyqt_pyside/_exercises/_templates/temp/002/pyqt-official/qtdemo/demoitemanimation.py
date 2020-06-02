@@ -46,14 +46,14 @@ ____ colors ______ Colors
 
 
 c_ DemoItemAnimation(QPropertyAnimation):
-    ANIM_IN, ANIM_OUT, ANIM_UNSPECIFIED _ range(3)
+    ANIM_IN, ANIM_OUT, ANIM_UNSPECIFIED _ ra..(3)
 
     ___  -   item, inOrOut_ANIM_UNSPECIFIED):
         super(DemoItemAnimation, self). - (item, b'pos')
 
         _startDelay _ 0
         _inOrOut _ inOrOut
-        _hideOnFinished _ False
+        _hideOnFinished _ F..
 
     ___ prepare 
         targetObject().prepare()

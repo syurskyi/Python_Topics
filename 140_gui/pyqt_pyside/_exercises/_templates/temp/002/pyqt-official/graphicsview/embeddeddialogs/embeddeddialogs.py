@@ -58,7 +58,7 @@ c_ CustomProxy(QGraphicsProxyWidget):
     ___  -   parent_None, wFlags_0):
         super(CustomProxy, self). - (parent, wFlags)
 
-        popupShown _ False
+        popupShown _ F..
         currentPopup _ N..
 
         timeLine _ QTimeLine(250, self)
@@ -213,8 +213,8 @@ __ ______ __ ______
     scene _ QGraphicsScene()
     scene.setStickyFocus( st.
 
-    ___ y __ range(10):
-        ___ x __ range(10):
+    ___ y __ ra..(10):
+        ___ x __ ra..(10):
             proxy _ CustomProxy(N.., __.Window)
             proxy.setWidget(EmbeddedDialog())
 

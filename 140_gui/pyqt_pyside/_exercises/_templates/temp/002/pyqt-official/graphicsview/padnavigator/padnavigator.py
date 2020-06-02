@@ -151,9 +151,9 @@ c_ PadNavigator(QGraphicsView):
         historyState _ QHistoryState(frontState)
         backState _ QState(stateMachine)
 
-        frontState.assignProperty(pad, "fill", False)
+        frontState.assignProperty(pad, "fill", F..)
         frontState.assignProperty(splash, "opacity", 0.0)
-        frontState.assignProperty(backItem, "visible", False)
+        frontState.assignProperty(backItem, "visible", F..)
         frontState.assignProperty(flipRotation, "angle", 0.0)
         frontState.assignProperty(selectionItem, "visible",  st.
 
@@ -162,7 +162,7 @@ c_ PadNavigator(QGraphicsView):
         backState.assignProperty(xRotation, "angle", 0.0)
         backState.assignProperty(yRotation, "angle", 0.0)
         backState.assignProperty(flipRotation, "angle", 180.0)
-        backState.assignProperty(selectionItem, "visible", False)
+        backState.assignProperty(selectionItem, "visible", F..)
 
         stateMachine.addDefaultAnimation(smoothXRotation)
         stateMachine.addDefaultAnimation(smoothYRotation)
@@ -195,14 +195,14 @@ c_ PadNavigator(QGraphicsView):
         columns _ size.width()
         rows _ size.height()
         stateGrid _   # list
-        ___ y __ range(rows):
-            stateGrid.ap..([QState(frontState) ___ _ __ range(columns)])
+        ___ y __ ra..(rows):
+            stateGrid.ap..([QState(frontState) ___ _ __ ra..(columns)])
 
         frontState.setInitialState(stateGrid[0][0])
         selectionItem.setPos(pad.iconAt(0, 0).pos())
 
-        ___ y __ range(rows):
-            ___ x __ range(columns):
+        ___ y __ ra..(rows):
+            ___ x __ ra..(columns):
                 state _ stateGrid[y][x]
 
                 rightTransition _ QKeyEventTransition  QEvent.KeyPress,
@@ -225,7 +225,7 @@ c_ PadNavigator(QGraphicsView):
                 state.assignProperty(selectionItem, "x", icon.x())
                 state.assignProperty(selectionItem, "y", icon.y())
                 frontState.assignProperty(icon, "visible",  st.
-                backState.assignProperty(icon, "visible", False)
+                backState.assignProperty(icon, "visible", F..)
 
                 setIconVisibleAnimation _ QPropertyAnimation(icon, b'visible')
                 setIconVisibleAnimation.setDuration(0)
@@ -265,7 +265,7 @@ c_ RoundRectItem(QGraphicsObject):
     ___  -   bounds, color, parent_None):
         super(RoundRectItem, self). - (parent)
 
-        fillRect _ False
+        fillRect _ F..
         bounds _ QRectF(bounds)
         pix _ QPixmap()
 
@@ -329,10 +329,10 @@ c_ FlippablePad(RoundRectItem):
         iconGrid _   # list
         n _ 0
 
-        ___ y __ range(size.height()):
+        ___ y __ ra..(size.height()):
             row _   # list
 
-            ___ x __ range(size.width()):
+            ___ x __ ra..(size.width()):
                 rect _ RoundRectItem(iconRect, iconColor, self)
                 rect.setZValue(1)
                 rect.setPos(posForLocation(x, y, size))

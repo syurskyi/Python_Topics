@@ -16,7 +16,7 @@ c_ Ui_Form(object):
         horizontalLayout_4 _ ?W...QHBoxLayout(Form)
         horizontalLayout_4.setObjectName("horizontalLayout_4")
         splitter _ ?W...QSplitter(Form)
-        splitter.setOrientation(?C...__.Horizontal)
+        splitter.setOrientation(?C...__.H..)
         splitter.setObjectName("splitter")
         editorBox _ ?W...QGroupBox(splitter)
         editorBox.setObjectName("editorBox")

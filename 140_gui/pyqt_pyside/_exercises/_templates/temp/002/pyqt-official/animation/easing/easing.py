@@ -54,7 +54,7 @@ ____ ui_form ______ Ui_Form
 
 
 c_ Animation(QPropertyAnimation):
-    LinearPath, CirclePath _ range(2)
+    LinearPath, CirclePath _ ra..(2)
 
     ___  -   target, prop):
         super(Animation, self). - (target, prop)
@@ -209,7 +209,7 @@ c_ Window(?W..):
 
             painter.setRenderHint(QPainter.Antialiasing,  st.
             painter.strokePath(curvePath, ?C..(32, 32, 32))
-            painter.setRenderHint(QPainter.Antialiasing, False)
+            painter.setRenderHint(QPainter.Antialiasing, F..)
 
             item _ QListWidgetItem()
             item.setIcon(QIcon(pix))

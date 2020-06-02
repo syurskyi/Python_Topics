@@ -73,15 +73,15 @@ c_ RenderThread(QThread):
         resultSize _ ?S..()
         colormap _   # list
 
-        restart _ False
-        abort _ False
+        restart _ F..
+        abort _ F..
 
-        ___ i __ range(RenderThread.ColormapSize):
+        ___ i __ ra..(RenderThread.ColormapSize):
             colormap.ap..(rgbFromWaveLength(380.0 + (i * 400.0 / RenderThread.ColormapSize)))
 
     ___ __del__ 
         mutex.lock()
-        abort _ True
+        abort _ T..
         condition.wakeOne()
         mutex.unlock()
 
@@ -98,7 +98,7 @@ c_ RenderThread(QThread):
         __ no. isRunning
             start(QThread.LowPriority)
         ____
-            restart _ True
+            restart _ T..
             condition.wakeOne()
 
     ___ run 
@@ -120,9 +120,9 @@ c_ RenderThread(QThread):
             w__ curpass < NumPasses:
                 MaxIterations _ (1 << (2 * curpass + 6)) + 32
                 Limit _ 4
-                allBlack _ True
+                allBlack _ T..
 
-                ___ y __ range(-halfHeight, halfHeight):
+                ___ y __ ra..(-halfHeight, halfHeight):
                     __ restart:
                         break
                     __ abort:
@@ -130,7 +130,7 @@ c_ RenderThread(QThread):
 
                     ay _ 1j * (centerY + (y * scaleFactor))
 
-                    ___ x __ range(-halfWidth, halfWidth):
+                    ___ x __ ra..(-halfWidth, halfWidth):
                         c0 _ centerX + (x * scaleFactor) + ay
                         c _ c0
                         numIterations _ 0
@@ -156,7 +156,7 @@ c_ RenderThread(QThread):
                         __ numIterations < MaxIterations:
                             image.setPixel(x + halfWidth, y + halfHeight,
                                            colormap[numIterations % RenderThread.ColormapSize])
-                            allBlack _ False
+                            allBlack _ F..
                         ____
                             image.setPixel(x + halfWidth, y + halfHeight, qRgb(0, 0, 0))
 
@@ -170,7 +170,7 @@ c_ RenderThread(QThread):
             mutex.lock()
             __ no. restart:
                 condition.wait(mutex)
-            restart _ False
+            restart _ F..
             mutex.unlock()
 
     ___ rgbFromWaveLength  wave):

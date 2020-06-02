@@ -128,7 +128,7 @@ c_ MoviePlayer(?W..):
     ___ updateButtons
         state _ movie.state()
 
-        playButton.sE..(movie.isValid() and
+        playButton.sE..(movie.iV.. and
                 movie.frameCount() !_ 1 and state __ QMovie.NotRunning)
         pauseButton.sE..(state !_ QMovie.NotRunning)
         pauseButton.sC__(state __ QMovie.Paused)
@@ -139,7 +139,7 @@ c_ MoviePlayer(?W..):
 
         frameLabel _ QLabel("Current frame:")
 
-        frameSlider _ QSlider(__.Horizontal)
+        frameSlider _ QSlider(__.H..)
         frameSlider.setTickPosition(QSlider.TicksBelow)
         frameSlider.setTickInterval(10)
 

@@ -50,7 +50,7 @@ ____ ?.?C.. ______ QCoreApplication, QSemaphore, QThread
 
 DataSize _ 100000
 BufferSize _ 8192
-buffer _ list(range(BufferSize))
+buffer _ li..(ra..(BufferSize))
 
 freeBytes _ QSemaphore(BufferSize)
 usedBytes _ QSemaphore()
@@ -58,7 +58,7 @@ usedBytes _ QSemaphore()
 
 c_ Producer(QThread):
     ___ run 
-        ___ i __ range(DataSize):
+        ___ i __ ra..(DataSize):
             freeBytes.acquire()
             buffer[i % BufferSize] _ "ACGT"[random.randint(0, 3)]
             usedBytes.release()
@@ -66,7 +66,7 @@ c_ Producer(QThread):
 
 c_ Consumer(QThread):
     ___ run 
-        ___ i __ range(DataSize):
+        ___ i __ ra..(DataSize):
             usedBytes.acquire()
             ___.stderr.w..(buffer[i % BufferSize])
             freeBytes.release()

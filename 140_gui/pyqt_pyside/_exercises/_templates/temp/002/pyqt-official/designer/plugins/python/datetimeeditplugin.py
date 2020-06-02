@@ -42,18 +42,18 @@ c_ PyDateEditPlugin(QPyDesignerCustomWidgetPlugin):
     ___  -   parent_None):
         super(PyDateEditPlugin, self). - (parent)
 
-        initialized _ False
+        initialized _ F..
 
     ___ initialize  formEditor):
         __ initialized:
             r_
-        initialized _ True
+        initialized _ T..
 
     ___ isInitialized 
         r_ initialized
 
     ___ isContainer 
-        r_ False
+        r_ F..
 
     ___ icon 
         r_ QIcon()
@@ -88,18 +88,18 @@ c_ PyDateTimeEditPlugin(QPyDesignerCustomWidgetPlugin):
     ___  -   parent_None):
         super(PyDateTimeEditPlugin, self). - (parent)
 
-        initialized _ False
+        initialized _ F..
 
     ___ initialize  formEditor):
         __ initialized:
             r_
-        initialized _ True
+        initialized _ T..
 
     ___ isInitialized 
         r_ initialized
 
     ___ isContainer 
-        r_ False
+        r_ F..
 
     ___ icon 
         r_ QIcon()

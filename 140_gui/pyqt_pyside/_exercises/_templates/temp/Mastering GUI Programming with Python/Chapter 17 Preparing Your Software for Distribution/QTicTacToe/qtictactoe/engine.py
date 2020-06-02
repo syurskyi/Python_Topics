@@ -31,10 +31,10 @@ c_ TicTacToeEngine(qtc.QObject):
                 no. (0 <_ square < le.(board)),
                 board[square] __ no. N..
         ]):
-            r_ False
+            r_ F..
         board[square] _ current_player
         next_player()
-        r_ True
+        r_ T..
 
     ___ check_board
         """See if the game is won or a draw"""

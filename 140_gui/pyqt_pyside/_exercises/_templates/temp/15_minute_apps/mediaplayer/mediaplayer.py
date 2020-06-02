@@ -29,7 +29,7 @@ c_ PlaylistModel(QAbstractListModel):
         playlist _ playlist
 
     ___ data  index, role):
-        __ role __ __.DisplayRole:
+        __ role __ __.DR..:
             media _ playlist.media(index.row())
             r_ media.canonicalUrl().fileName()
 

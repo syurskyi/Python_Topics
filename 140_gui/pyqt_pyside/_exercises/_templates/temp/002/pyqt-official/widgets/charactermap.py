@@ -130,16 +130,16 @@ c_ CharacterWidget(?W..):
         endColumn _ redrawRect.right() // squareSize
 
         painter.setPen(__.gray)
-        ___ row __ range(beginRow, endRow + 1):
-            ___ column __ range(beginColumn, endColumn + 1):
+        ___ row __ ra..(beginRow, endRow + 1):
+            ___ column __ ra..(beginColumn, endColumn + 1):
                 painter.drawRect(column * squareSize,
                         row * squareSize, squareSize,
                         squareSize)
 
         fontMetrics _ QFontMetrics(displayFont)
         painter.setPen(__.black)
-        ___ row __ range(beginRow, endRow + 1):
-            ___ column __ range(beginColumn, endColumn + 1):
+        ___ row __ ra..(beginRow, endRow + 1):
+            ___ column __ ra..(beginColumn, endColumn + 1):
                 key _ row * columns + column
                 painter.setClipRect(column * squareSize,
                         row * squareSize, squareSize,

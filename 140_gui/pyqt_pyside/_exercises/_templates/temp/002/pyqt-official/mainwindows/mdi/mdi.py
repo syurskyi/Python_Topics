@@ -58,10 +58,10 @@ c_ MdiChild(?TE..):
         super(MdiChild, self). - ()
 
         setAttribute(__.WA_DeleteOnClose)
-        isUntitled _ True
+        isUntitled _ T..
 
     ___ newFile
-        isUntitled _ True
+        isUntitled _ T..
         curFile _ "document%d.txt" % MdiChild.sequenceNumber
         MdiChild.sequenceNumber +_ 1
         sWT..(curFile + '[*]')
@@ -73,7 +73,7 @@ c_ MdiChild(?TE..):
         __ no. file.o..(QFile.ReadOnly | QFile.Text):
             ?MB...warning  "MDI",
                     "Cannot read file %s:\n%s." % (fileName, file.errorString()))
-            r_ False
+            r_ F..
 
         instr _ QTextStream(file)
         ?A...setOverrideCursor(__.WaitCursor)
@@ -84,7 +84,7 @@ c_ MdiChild(?TE..):
 
         document().contentsChanged.c..(documentWasModified)
 
-        r_ True
+        r_ T..
 
     ___ save
         __ isUntitled:
@@ -95,7 +95,7 @@ c_ MdiChild(?TE..):
     ___ saveAs
         fileName, _ _ ?FD...getSaveFileName  "Save As", curFile)
         __ no. fileName:
-            r_ False
+            r_ F..
 
         r_ saveFile(fileName)
 
@@ -105,7 +105,7 @@ c_ MdiChild(?TE..):
         __ no. file.o..(QFile.WriteOnly | QFile.Text):
             ?MB...warning  "MDI",
                     "Cannot write file %s:\n%s." % (fileName, file.errorString()))
-            r_ False
+            r_ F..
 
         outstr _ QTextStream(file)
         ?A...setOverrideCursor(__.WaitCursor)
@@ -113,7 +113,7 @@ c_ MdiChild(?TE..):
         ?A...restoreOverrideCursor()
 
         setCurrentFile(fileName)
-        r_ True
+        r_ T..
 
     ___ userFriendlyCurrentFile
         r_ strippedName(curFile)
@@ -141,13 +141,13 @@ c_ MdiChild(?TE..):
                 r_ save()
 
             __ ret __ ?MB...Cancel:
-                r_ False
+                r_ F..
 
-        r_ True
+        r_ T..
 
     ___ setCurrentFile  fileName):
         curFile _ QFileInfo(fileName).canonicalFilePath()
-        isUntitled _ False
+        isUntitled _ F..
         document().setModified F..
         setWindowModified F..
         sWT..(userFriendlyCurrentFile() + "[*]")

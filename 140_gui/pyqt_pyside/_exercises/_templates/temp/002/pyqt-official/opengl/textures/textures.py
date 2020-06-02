@@ -55,7 +55,7 @@ c_ GLWidget(QOpenGLWidget):
 
     c__ _ pS..()
 
-    PROGRAM_VERTEX_ATTRIBUTE, PROGRAM_TEXCOORD_ATTRIBUTE _ range(2)
+    PROGRAM_VERTEX_ATTRIBUTE, PROGRAM_TEXCOORD_ATTRIBUTE _ ra..(2)
 
     vsrc _ """
 attribute highp vec4 vertex;
@@ -198,12 +198,12 @@ void main(void)
 
         root _ QFileInfo(__file__).absolutePath()
 
-        ___ i __ range(6):
+        ___ i __ ra..(6):
             textures.ap..(
                     QOpenGLTexture(
                             QImage(root + ('/images/side%d.png' % (i + 1))).mirrored()))
 
-            ___ j __ range(4):
+            ___ j __ ra..(4):
                 texCoords.ap..(((j __ 0 or j __ 3), (j __ 0 or j __ 1)))
 
                 x, y, z _ coords[i][j]
@@ -221,10 +221,10 @@ c_ Window(?W..):
 
         mainLayout _ QGridLayout()
 
-        ___ i __ range(Window.NumRows):
+        ___ i __ ra..(Window.NumRows):
             row _   # list
 
-            ___ j __ range(Window.NumColumns):
+            ___ j __ ra..(Window.NumColumns):
                 clearColor _ ?C..()
                 clearColor.setHsv(((i * Window.NumColumns) + j) * 255
                                   / (Window.NumRows * Window.NumColumns - 1),

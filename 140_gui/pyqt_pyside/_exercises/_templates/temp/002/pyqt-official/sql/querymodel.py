@@ -53,7 +53,7 @@ ______ connection
 c_ CustomSqlModel(QSqlQueryModel):
     ___ data  index, role):
         value _ super(CustomSqlModel, self).data(index, role)
-        __ value __ no. N.. and role __ __.DisplayRole:
+        __ value __ no. N.. and role __ __.DR..:
             __ index.column() __ 0:
                 r_ '#%d' % value
             ____ index.column() __ 2:
@@ -70,13 +70,13 @@ c_ EditableSqlModel(QSqlQueryModel):
         flags _ super(EditableSqlModel, self).flags(index)
 
         __ index.column() __ (1, 2):
-            flags |_ __.ItemIsEditable
+            flags |_ __.IIE..
 
         r_ flags
 
     ___ setData  index, value, role):
         __ index.column() no. __ (1, 2):
-            r_ False
+            r_ F..
 
         primaryKeyIndex _ index(index.row(), 0)
         id _ data(primaryKeyIndex)
@@ -93,9 +93,9 @@ c_ EditableSqlModel(QSqlQueryModel):
 
     ___ refresh
         setQuery('select * from person')
-        setHeaderData(0, __.Horizontal, "ID")
-        setHeaderData(1, __.Horizontal, "First name")
-        setHeaderData(2, __.Horizontal, "Last name")
+        setHeaderData(0, __.H.., "ID")
+        setHeaderData(1, __.H.., "First name")
+        setHeaderData(2, __.H.., "Last name")
 
     ___ setFirstName  personId, firstName):
         query _ QSqlQuery()
@@ -114,9 +114,9 @@ c_ EditableSqlModel(QSqlQueryModel):
 
 ___ initializeModel(model):
     model.setQuery('select * from person')
-    model.setHeaderData(0, __.Horizontal, "ID")
-    model.setHeaderData(1, __.Horizontal, "First name")
-    model.setHeaderData(2, __.Horizontal, "Last name")
+    model.setHeaderData(0, __.H.., "ID")
+    model.setHeaderData(1, __.H.., "First name")
+    model.setHeaderData(2, __.H.., "Last name")
 
 
 offset _ 0
@@ -125,7 +125,7 @@ views _   # list
 ___ createView(title, model):
     gl.. offset, views
 
-    view _ QTableView()
+    view _ ?TV..
     views.ap..(view)
     view.sM..(model)
     view.sWT..(title)

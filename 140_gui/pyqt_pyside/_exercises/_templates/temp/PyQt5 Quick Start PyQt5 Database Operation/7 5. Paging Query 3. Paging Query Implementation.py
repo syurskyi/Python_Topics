@@ -14,7 +14,7 @@ c_ DataGrid(?W..):
         # Query Model
         queryModel _ QSqlQueryModel()
         # Table View
-        tableView _ QTableView()
+        tableView _ ?TV..
         tableView.sM..(queryModel)
         #
         totalPageLabel _ QLabel()
@@ -71,11 +71,11 @@ c_ DataGrid(?W..):
         db _ ?SD...aD..("QSQLITE")
         db.sDN..("/home/user/test.db")
         __ no. db.o..
-            r_ False
-        queryModel.setHeaderData(0, __.Horizontal, "ID")
-        queryModel.setHeaderData(1, __.Horizontal, "Name")
-        queryModel.setHeaderData(2, __.Horizontal, "Sex")
-        queryModel.setHeaderData(3, __.Horizontal, "Age")
+            r_ F..
+        queryModel.setHeaderData(0, __.H.., "ID")
+        queryModel.setHeaderData(1, __.H.., "Name")
+        queryModel.setHeaderData(2, __.H.., "Sex")
+        queryModel.setHeaderData(3, __.H.., "Age")
         # Get all the records of the table
         sql _ "SELECT * FROM student"
         queryModel.setQuery(sql, db)

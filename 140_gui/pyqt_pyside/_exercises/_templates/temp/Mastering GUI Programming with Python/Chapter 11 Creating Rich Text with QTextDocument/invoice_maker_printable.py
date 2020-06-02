@@ -29,8 +29,8 @@ c_ InvoiceForm ?.?W..
         line_items.horizontalHeader().setSectionResizeMode(
             qtw.QHeaderView.Stretch)
         layout().aR..(line_items)
-        ___ row __ range(line_items.rowCount()):
-            ___ col __ range(line_items.columnCount()):
+        ___ row __ ra..(line_items.rowCount()):
+            ___ col __ ra..(line_items.columnCount()):
                 __ col > 0:
                     w _ qtw.SB..(minimum_0, maximum_300)
                     line_items.setCellWidget(row, col, w)
@@ -48,8 +48,8 @@ c_ InvoiceForm ?.?W..
                 inputs['Days until Due'].value()).toString(),
             'i_terms': '{} days'.format(inputs['Days until Due'].value())
         }
-        data['line_items'] _ list()
-        ___ row __ range(line_items.rowCount()):
+        data['line_items'] _ li..()
+        ___ row __ ra..(line_items.rowCount()):
             __ no. line_items.item(row, 0):
                 continue
             job _ line_items.item(row, 0).t__()

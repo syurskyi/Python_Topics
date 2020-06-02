@@ -92,7 +92,7 @@ c_ DomModel(QAbstractItemModel):
         __ no. index.isValid
             r_ N..
 
-        __ role !_ __.DisplayRole:
+        __ role !_ __.DR..:
             r_ N..
 
         item _ index.internalPointer()
@@ -105,7 +105,7 @@ c_ DomModel(QAbstractItemModel):
             r_ node.nodeName()
         
         ____ index.column() __ 1:
-            ___ i __ range(0, attributeMap.count()):
+            ___ i __ ra..(0, attributeMap.count()):
                 attribute _ attributeMap.item(i)
                 attributes.ap..(attribute.nodeName() + '="' +
                                   attribute.nodeValue() + '"')
@@ -127,8 +127,8 @@ c_ DomModel(QAbstractItemModel):
 
         r_ __.ItemIsEnabled | __.ItemIsSelectable
 
-    ___ headerData  section, orientation, role):
-        __ orientation __ __.Horizontal and role __ __.DisplayRole:
+    ___ hD..  section, orientation, role):
+        __ orientation __ __.H.. and role __ __.DR..:
             __ section __ 0:
                 r_ "Name"
 

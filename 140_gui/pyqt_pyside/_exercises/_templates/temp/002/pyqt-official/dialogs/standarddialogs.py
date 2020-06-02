@@ -202,7 +202,7 @@ c_ Dialog(QDialog):
         items _ ("Spring", "Summer", "Fall", "Winter")
 
         item, ok _ QInputDialog.getItem  "QInputDialog.getItem()",
-                "Season:", items, 0, False)
+                "Season:", items, 0, F..)
         __ ok and item:
             itemLabel.sT..(item)
 

@@ -53,7 +53,7 @@ ___ createConnection
                 "driver documentation for information how to build it.\n\n"
                 "Click Cancel to exit.",
                 ?MB...Cancel)
-        r_ False
+        r_ F..
     
     query _ QSqlQuery()
     query.exec_("create table person(id int primary key, "
@@ -112,4 +112,4 @@ ___ createConnection
     query.exec_("insert into images values(4, 'images/munich.png')")
     query.exec_("insert into images values(5, 'images/beijing.png')")
 
-    r_ True
+    r_ T..

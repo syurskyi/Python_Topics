@@ -72,13 +72,13 @@ class Canvas(QLabel):
     config = {
         # Drawing options.
         'size': 1,
-        'fill': True,
+        'fill': T..,
         # Font options.
         'font': QFont('Times'),
         'fontsize': 12,
-        'bold': False,
-        'italic': False,
-        'underline': False,
+        'bold': F..,
+        'italic': F..,
+        'underline': F..,
     }
 
     active_color = None
@@ -131,7 +131,7 @@ class Canvas(QLabel):
         last_config =   # dict
 
         dash_offset = 0
-        locked = False
+        locked = F..
         # Apply the mode
         mode = mode
 
@@ -194,7 +194,7 @@ class Canvas(QLabel):
             preview_pen = SELECTION_PEN
             generic_poly_mousePressEvent(e)
 
-    def selectpoly_timerEvent(self, final=False):
+    def selectpoly_timerEvent(self, final=F..):
         generic_poly_timerEvent(final)
 
     def selectpoly_mouseMoveEvent(self, e):
@@ -203,7 +203,7 @@ class Canvas(QLabel):
 
     def selectpoly_mouseDoubleClickEvent(self, e):
         current_pos = e.pos()
-        locked = True
+        locked = T..
 
     def selectpoly_copy
         """
@@ -242,7 +242,7 @@ class Canvas(QLabel):
         preview_pen = SELECTION_PEN
         generic_shape_mousePressEvent(e)
 
-    def selectrect_timerEvent(self, final=False):
+    def selectrect_timerEvent(self, final=F..):
         generic_shape_timerEvent(final)
 
     def selectrect_mouseMoveEvent(self, e):
@@ -251,7 +251,7 @@ class Canvas(QLabel):
 
     def selectrect_mouseReleaseEvent(self, e):
         current_pos = e.pos()
-        locked = True
+        locked = T..
 
     def selectrect_copy
         """
@@ -331,7 +331,7 @@ class Canvas(QLabel):
             p = QPainter(pixmap())
             p.setPen(QPen(active_color, 1))
 
-            ___ n __ range(config['size'] * SPRAY_PAINT_N):
+            ___ n __ ra..(config['size'] * SPRAY_PAINT_N):
                 xo = random.gauss(0, config['size'] * SPRAY_PAINT_MULT)
                 yo = random.gauss(0, config['size'] * SPRAY_PAINT_MULT)
                 p.drawPoint(e.x() + xo, e.y() + yo)
@@ -374,7 +374,7 @@ class Canvas(QLabel):
         elif e.button() __ Qt.RightButton and current_pos:
             reset_mode()
 
-    def text_timerEvent(self, final=False):
+    def text_timerEvent(self, final=F..):
         p = QPainter(pixmap())
         p.setCompositionMode(QPainter.RasterOp_SourceXorDestination)
         pen = PREVIEW_PEN
@@ -459,7 +459,7 @@ class Canvas(QLabel):
         current_pos = e.pos()
         timer_event = generic_shape_timerEvent
 
-    def generic_shape_timerEvent(self, final=False):
+    def generic_shape_timerEvent(self, final=F..):
         p = QPainter(pixmap())
         p.setCompositionMode(QPainter.RasterOp_SourceXorDestination)
         pen = preview_pen
@@ -503,7 +503,7 @@ class Canvas(QLabel):
         preview_pen = PREVIEW_PEN
         timer_event = line_timerEvent
 
-    def line_timerEvent(self, final=False):
+    def line_timerEvent(self, final=F..):
         p = QPainter(pixmap())
         p.setCompositionMode(QPainter.RasterOp_SourceXorDestination)
         pen = preview_pen
@@ -548,7 +548,7 @@ class Canvas(QLabel):
             timer_cleanup()
             reset_mode()
 
-    def generic_poly_timerEvent(self, final=False):
+    def generic_poly_timerEvent(self, final=F..):
         p = QPainter(pixmap())
         p.setCompositionMode(QPainter.RasterOp_SourceXorDestination)
         pen = preview_pen
@@ -590,7 +590,7 @@ class Canvas(QLabel):
         preview_pen = PREVIEW_PEN
         generic_poly_mousePressEvent(e)
 
-    def polyline_timerEvent(self, final=False):
+    def polyline_timerEvent(self, final=F..):
         generic_poly_timerEvent(final)
 
     def polyline_mouseMoveEvent(self, e):
@@ -607,7 +607,7 @@ class Canvas(QLabel):
         preview_pen = PREVIEW_PEN
         generic_shape_mousePressEvent(e)
 
-    def rect_timerEvent(self, final=False):
+    def rect_timerEvent(self, final=F..):
         generic_shape_timerEvent(final)
 
     def rect_mouseMoveEvent(self, e):
@@ -623,7 +623,7 @@ class Canvas(QLabel):
         preview_pen = PREVIEW_PEN
         generic_poly_mousePressEvent(e)
 
-    def polygon_timerEvent(self, final=False):
+    def polygon_timerEvent(self, final=F..):
         generic_poly_timerEvent(final)
 
     def polygon_mouseMoveEvent(self, e):
@@ -640,7 +640,7 @@ class Canvas(QLabel):
         preview_pen = PREVIEW_PEN
         generic_shape_mousePressEvent(e)
 
-    def ellipse_timerEvent(self, final=False):
+    def ellipse_timerEvent(self, final=F..):
         generic_shape_timerEvent(final)
 
     def ellipse_mouseMoveEvent(self, e):
@@ -657,7 +657,7 @@ class Canvas(QLabel):
         preview_pen = PREVIEW_PEN
         generic_shape_mousePressEvent(e)
 
-    def roundrect_timerEvent(self, final=False):
+    def roundrect_timerEvent(self, final=F..):
         generic_shape_timerEvent(final)
 
     def roundrect_mouseMoveEvent(self, e):
@@ -768,7 +768,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         drawingToolbar.addWidget(sizeicon)
         sizeselect = QSlider()
         sizeselect.setRange(1,20)
-        sizeselect.setOrientation(Qt.Horizontal)
+        sizeselect.setOrientation(Qt.H..)
         sizeselect.valueChanged.connect(l___ s: canvas.set_config('size', s))
         drawingToolbar.addWidget(sizeselect)
 

@@ -42,14 +42,14 @@ c_ CounterLabelPlugin(QPyDesignerCustomWidgetPlugin):
     
         super(CounterLabelPlugin, self). - (parent)
 
-        initialized _ False
+        initialized _ F..
 
     ___ initialize  formEditor):
 
         __ initialized:
             r_
         
-        initialized _ True
+        initialized _ T..
 
     ___ isInitialized
 
@@ -91,7 +91,7 @@ c_ CounterLabelPlugin(QPyDesignerCustomWidgetPlugin):
     # need to provide an implementation of the QDesignerContainerExtension
     # interface if they need to add custom editing support to Qt Designer.
     ___ isContainer
-        r_ False
+        r_ F..
 
     # Returns an XML description of a custom widget instance that describes
     # default values for its properties. Each custom widget created by this

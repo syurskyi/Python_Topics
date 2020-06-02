@@ -4,7 +4,7 @@ from PyQt5.QtWidgets import *
 import os
 
 app = QApplication([])
-app.setQuitOnLastWindowClosed(False)
+app.setQuitOnLastWindowClosed(F..)
 
 # Create the icon
 icon = QIcon(os.path.join("images","color.png"))

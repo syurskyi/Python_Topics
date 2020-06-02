@@ -74,14 +74,14 @@ c_ MainWindow(qtw.QMainWindow):
 
         # Make a query
         query _ db.exec('SELECT count(*) FROM coffees')
-        query.next()
+        query.n__()
         count _ query.value(0)
         print(f'There are {count} coffees in the database.')
 
         # Retreive the roasts table
         query _ db.exec('SELECT * FROM roasts ORDER BY id')
         roasts _   # list
-        w__ query.next
+        w__ query.n__
             roasts.ap..(query.value(1))
 
         # create the form
@@ -93,13 +93,13 @@ c_ MainWindow(qtw.QMainWindow):
         coffees.setQuery(
             "SELECT id, coffee_brand, coffee_name AS coffee "
             "FROM coffees ORDER BY id")
-        coffee_list _ qtw.QTableView()
+        coffee_list _ qtw.?TV..
         coffee_list.sM..(coffees)
         stack.aW..(coffee_list)
         stack.setCurrentWidget(coffee_list)
 
-        coffees.setHeaderData(1, qtc.__.Horizontal, 'Brand')
-        coffees.setHeaderData(2, qtc.__.Horizontal, 'Product')
+        coffees.setHeaderData(1, qtc.__.H.., 'Brand')
+        coffees.setHeaderData(2, qtc.__.H.., 'Product')
 
         # Navigation between stacked widgets
         navigation _ addToolBar("Navigation")
@@ -124,7 +124,7 @@ c_ MainWindow(qtw.QMainWindow):
         query1.prepare('SELECT * FROM coffees WHERE id=:id')
         query1.bindValue(':id', coffee_id)
         query1.exec()
-        query1.next()
+        query1.n__()
         coffee _ {
             'id': query1.value(0),
             'coffee_brand': query1.value(1),
@@ -137,7 +137,7 @@ c_ MainWindow(qtw.QMainWindow):
         query2.bindValue(':id', coffee_id)
         query2.exec()
         reviews _   # list
-        w__ query2.next
+        w__ query2.n__
             reviews.ap..((
                 query2.value('reviewer'),
                 query2.value('review_date'),

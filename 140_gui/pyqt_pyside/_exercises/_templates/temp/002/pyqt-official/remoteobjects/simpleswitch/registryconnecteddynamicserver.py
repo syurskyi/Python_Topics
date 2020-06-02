@@ -63,7 +63,7 @@ c_ SimpleSwitch(QObject):
     ___  -   parent_None):
         s_. - (parent)
 
-        _currState _ False
+        _currState _ F..
 
         _stateChangeTimer _ QTimer
         _stateChangeTimer.timeout.c..(_timeout)

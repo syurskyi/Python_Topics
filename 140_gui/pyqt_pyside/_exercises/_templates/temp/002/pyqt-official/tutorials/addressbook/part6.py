@@ -80,7 +80,7 @@ c_ SortedDict(dict):
 
 
 c_ AddressBook(?W..):
-    NavigationMode, AddingMode, EditingMode _ range(3)
+    NavigationMode, AddingMode, EditingMode _ ra..(3)
 
     ___  -   parent_None):
         super(AddressBook, self). - (parent)

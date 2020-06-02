@@ -38,7 +38,7 @@ c_ WeatherWorker(QRunnable):
     Worker thread for weather updates.
     '''
     signals _ WorkerSignals()
-    is_interrupted _ False
+    is_interrupted _ F..
 
     ___  -   location):
         super(WeatherWorker, self). - ()

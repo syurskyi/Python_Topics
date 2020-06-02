@@ -72,25 +72,25 @@ c_ Colors(object):
     contentHeight _ 510
 
     # Properties:
-    noTicker _ False
-    noRescale _ False
-    noAnimations _ False
-    noBlending _ False
-    noScreenSync _ False
-    fullscreen _ False
-    usePixmaps _ False
-    useLoop _ False
-    showBoundingRect _ False
-    showFps _ False
-    noAdapt _ False
-    noWindowMask _ True
-    useButtonBalls _ False
-    useEightBitPalette _ False
-    noTimerUpdate _ False
-    noTickerMorph _ False
-    adapted _ False
-    verbose _ False
-    pause _ True
+    noTicker _ F..
+    noRescale _ F..
+    noAnimations _ F..
+    noBlending _ F..
+    noScreenSync _ F..
+    fullscreen _ F..
+    usePixmaps _ F..
+    useLoop _ F..
+    showBoundingRect _ F..
+    showFps _ F..
+    noAdapt _ F..
+    noWindowMask _ T..
+    useButtonBalls _ F..
+    useEightBitPalette _ F..
+    noTimerUpdate _ F..
+    noTickerMorph _ F..
+    adapted _ F..
+    verbose _ F..
+    pause _ T..
 
     fps _ 100
     menuCount _ 18
@@ -162,38 +162,38 @@ c_ Colors(object):
     ___ parseArgs(cls, a..:
         # Some arguments should be processed before others.  Handle them now.
         __ "-verbose" __ argv:
-            cls.verbose _ True
+            cls.verbose _ T..
 
         # Handle the rest of the arguments.  They may override attributes
         # already set.
         ___ s __ argv:
             __ s __ "-no-ticker":
-                cls.noTicker _ True
+                cls.noTicker _ T..
             ____ s.s_w_("-ticker"):
                 cls.noTicker _  no. bool(parseFloat(s, "-ticker"))
             ____ s __ "-no-animations":
-                cls.noAnimations _ True
+                cls.noAnimations _ T..
             ____ s.s_w_("-animations"):
                 cls.noAnimations _ no. bool(parseFloat(s, "-animations"))
             ____ s __ "-no-adapt":
                 # Don't adapt the animations based on the actual performance.
-                cls.noAdapt _ True
+                cls.noAdapt _ T..
             ____ s __ "-low":
                 cls.setLowSettings()
             ____ s __ "-no-rescale":
-                cls.noRescale _ True
+                cls.noRescale _ T..
             ____ s __ "-use-pixmaps":
-                cls.usePixmaps _ True
+                cls.usePixmaps _ T..
             ____ s __ "-fullscreen":
-                cls.fullscreen _ True
+                cls.fullscreen _ T..
             ____ s __ "-show-br":
-                cls.showBoundingRect _ True
+                cls.showBoundingRect _ T..
             ____ s __ "-show-fps":
-                cls.showFps _ True
+                cls.showFps _ T..
             ____ s __ "-no-blending":
-                cls.noBlending _ True
+                cls.noBlending _ T..
             ____ s __ "-no-sync":
-                cls.noScreenSync _ True
+                cls.noScreenSync _ T..
             ____ s.s_w_("-menu"):
                 cls.menuCount _ int(parseFloat(s, "-menu"))
             ____ s.s_w_("-use-timer-update"):
@@ -201,17 +201,17 @@ c_ Colors(object):
             ____ s.s_w_("-pause"):
                 cls.pause _ bool(parseFloat(s, "-pause"))
             ____ s __ "-no-ticker-morph":
-                cls.noTickerMorph _ True
+                cls.noTickerMorph _ T..
             ____ s __ "-use-window-mask":
-                cls.noWindowMask _ False
+                cls.noWindowMask _ F..
             ____ s __ "-use-loop":
-                cls.useLoop _ True
+                cls.useLoop _ T..
             ____ s __ "-use-8bit":
-                cls.useEightBitPalette _ True
+                cls.useEightBitPalette _ T..
             ____ s.s_w_("-8bit"):
                 cls.useEightBitPalette _ bool(parseFloat(s, "-8bit"))
             ____ s __ "-use-balls":
-                cls.useButtonBalls _ True
+                cls.useButtonBalls _ T..
             ____ s.s_w_("-ticker-letters"):
                 cls.tickerLetterCount _ int(parseFloat(s, "-ticker-letters"))
             ____ s.s_w_("-ticker-text"):
@@ -242,12 +242,12 @@ c_ Colors(object):
 
     @classmethod
     ___ setLowSettings(cls):
-        cls.noTicker _ True
-        cls.noTimerUpdate _ True
+        cls.noTicker _ T..
+        cls.noTimerUpdate _ T..
         cls.fps _ 30
-        cls.usePixmaps _ True
-        cls.noAnimations _ True
-        cls.noBlending _ True
+        cls.usePixmaps _ T..
+        cls.noAnimations _ T..
+        cls.noBlending _ T..
 
     @classmethod
     ___ postConfigure(cls):
@@ -255,8 +255,8 @@ c_ Colors(object):
             w _ ?W..
 
             __ w.depth() < 16:
-                cls.useEightBitPalette _ True
-                cls.adapted _ True
+                cls.useEightBitPalette _ T..
+                cls.adapted _ T..
                 cls.debug("- Adapt: Color depth less than 16 bit. Using 8 bit palette")
 
 

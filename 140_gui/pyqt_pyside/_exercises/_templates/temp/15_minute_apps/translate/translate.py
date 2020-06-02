@@ -6,10 +6,10 @@ from MainWindow import Ui_MainWindow
 
 ___
     from googletrans import Translator
-    GOOGLE_TRANSLATE_AVAILABLE = True
+    GOOGLE_TRANSLATE_AVAILABLE = T..
 
 _____ ImportError:
-    GOOGLE_TRANSLATE_AVAILABLE = False
+    GOOGLE_TRANSLATE_AVAILABLE = F..
 
 import json
 from urllib import parse
@@ -122,7 +122,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         _____ Exception:
             destTextEdit.setPlainText('Google translate error :(. Try translating from English')
-            return False
+            return F..
 
         ____:
             return tr.text
@@ -132,7 +132,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         if language_src != 'en':
             text = google_translate(srcTextEdit.toPlainText())
             if not text:
-                return False
+                return F..
 
         # Already in English.
         ____:

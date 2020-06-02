@@ -52,7 +52,7 @@ c_ SpreadSheetItem(QTableWidgetItem):
         ____
             super(SpreadSheetItem, self). - ()
 
-        isResolving _ False
+        isResolving _ F..
 
     ___ clone
         item _ super(SpreadSheetItem, self).clone()
@@ -61,12 +61,12 @@ c_ SpreadSheetItem(QTableWidgetItem):
         r_ item
 
     ___ formula
-        r_ super(SpreadSheetItem, self).data(__.DisplayRole)
+        r_ super(SpreadSheetItem, self).data(__.DR..)
 
     ___ data  role):
-        __ role __ (__.EditRole, __.StatusTipRole):
+        __ role __ (__.ER.., __.StatusTipRole):
             r_ formula()
-        __ role __ __.DisplayRole:
+        __ role __ __.DR..:
             r_ display()
         t _ str(display())
         ___
@@ -94,9 +94,9 @@ c_ SpreadSheetItem(QTableWidgetItem):
         # avoid circular dependencies
         __ isResolving:
             r_ N..
-        isResolving _ True
+        isResolving _ T..
         result _ computeFormula(formula(), tableWidget())
-        isResolving _ False
+        isResolving _ F..
         r_ result
 
     ___ computeFormula  formula, widget):
@@ -131,8 +131,8 @@ c_ SpreadSheetItem(QTableWidgetItem):
         result _ N..
         __ op __ "sum":
             sum_ _ 0
-            ___ r __ range(firstRow, secondRow + 1):
-                ___ c __ range(firstCol, secondCol + 1):
+            ___ r __ ra..(firstRow, secondRow + 1):
+                ___ c __ ra..(firstCol, secondCol + 1):
                     tableItem _ widget.item(r, c)
                     __ tableItem and tableItem !_ self:
                         ___

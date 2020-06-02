@@ -205,13 +205,13 @@ c_ AddressBook(?W..):
 
         ___
             w__ T..
-                this_name, _ _ it.next()
+                this_name, _ _ it.n__()
 
                 __ this_name __ name:
-                    next_name, next_address _ it.next()
+                    next_name, next_address _ it.n__()
                     break
         _____ StopIteration:
-            next_name, next_address _ iter(contacts).next()
+            next_name, next_address _ iter(contacts).n__()
 
         nameLine.sT..(next_name)
         addressText.sT..(next_address)

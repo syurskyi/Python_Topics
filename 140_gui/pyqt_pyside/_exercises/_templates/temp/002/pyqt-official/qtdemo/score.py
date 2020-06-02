@@ -44,9 +44,9 @@ ____ colors ______ Colors
 
 
 c_ Score(object):
-    LOCK_ITEMS, UNLOCK_ITEMS, SKIP_LOCK _ range(3)
+    LOCK_ITEMS, UNLOCK_ITEMS, SKIP_LOCK _ ra..(3)
 
-    FROM_CURRENT, FROM_START, NEW_ANIMATION_ONLY, ONLY_IF_VISIBLE _ range(4)
+    FROM_CURRENT, FROM_START, NEW_ANIMATION_ONLY, ONLY_IF_VISIBLE _ ra..(4)
 
     ___  -
         _index _   # dict

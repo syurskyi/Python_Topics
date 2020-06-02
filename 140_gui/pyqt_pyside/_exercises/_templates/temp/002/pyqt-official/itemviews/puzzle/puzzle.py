@@ -203,7 +203,7 @@ c_ PiecesModel(QAbstractListModel):
         locations _   # list
         pixmaps _   # list
 
-    ___ data  index, role_Qt.DisplayRole):
+    ___ data  index, role_Qt.DR..):
         __ no. index.isValid
             r_ N..
 
@@ -239,10 +239,10 @@ c_ PiecesModel(QAbstractListModel):
 
     ___ removeRows row, count, parent):
         __ parent.isValid
-            r_ False
+            r_ F..
 
         __ row >_ le.(pixmaps) or row + count <_ 0:
-            r_ False
+            r_ F..
 
         beginRow _ max(0, row)
         endRow _ min(row + count - 1, le.(pixmaps) - 1)
@@ -253,7 +253,7 @@ c_ PiecesModel(QAbstractListModel):
         del locations[beginRow:endRow + 1]
 
         endRemoveRows()
-        r_ True
+        r_ T..
 
     ___ mimeTypes 
         r_ ['image/x-puzzle-piece']
@@ -275,13 +275,13 @@ c_ PiecesModel(QAbstractListModel):
 
     ___ dropMimeData  data, action, row, column, parent):
         __ no. data.hasFormat('image/x-puzzle-piece'):
-            r_ False
+            r_ F..
 
         __ action __ __.IgnoreAction:
-            r_ True
+            r_ T..
 
         __ column > 0:
-            r_ False
+            r_ F..
 
         __ no. parent.isValid
             __ row < 0:
@@ -306,7 +306,7 @@ c_ PiecesModel(QAbstractListModel):
 
             endRow +_ 1
 
-        r_ True
+        r_ T..
 
     ___ rowCount  parent):
         __ parent.isValid
@@ -323,8 +323,8 @@ c_ PiecesModel(QAbstractListModel):
         locations _   # list
         endRemoveRows()
 
-        ___ y __ range(5):
-            ___ x __ range(5):
+        ___ y __ ra..(5):
+            ___ x __ ra..(5):
                 pieceImage _ pixmap.copy(x*80, y*80, 80, 80)
                 addPiece(pieceImage, QPoint(x, y))
 

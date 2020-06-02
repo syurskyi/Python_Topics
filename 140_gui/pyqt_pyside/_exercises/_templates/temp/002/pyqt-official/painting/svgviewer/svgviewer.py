@@ -162,7 +162,7 @@ c_ MainWindow ?MW..
 
 
 c_ SvgView(QGraphicsView):
-    Native, OpenGL, Image _ range(3)
+    Native, OpenGL, Image _ ra..(3)
 
     ___  -   parent_None):
         super(SvgView, self). - (parent)
@@ -205,12 +205,12 @@ c_ SvgView(QGraphicsView):
         __ backgroundItem:
             drawBackground _ backgroundItem.isVisible()
         ____
-            drawBackground _ False
+            drawBackground _ F..
 
         __ outlineItem:
             drawOutline _ outlineItem.isVisible()
         ____
-            drawOutline _ True
+            drawOutline _ T..
 
         s.c..
         resetTransform()

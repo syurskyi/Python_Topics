@@ -73,8 +73,8 @@ c_ MainWindow(QGraphicsView):
         fpsMedian _ -1
         fpsLabel _ N..
         pausedLabel _ N..
-        doneAdapt _ False
-        useTimer _ False
+        doneAdapt _ F..
+        useTimer _ F..
         updateTimer.setSingleShot( st.
         companyLogo _ N..
         qtLogo _ N..
@@ -158,12 +158,12 @@ c_ MainWindow(QGraphicsView):
             ticker.tickOnPaint _ no. on or Colors.noTimerUpdate
 
         __ on and no. Colors.noTimerUpdate:
-            useTimer _ True
+            useTimer _ T..
             fpsTime _ ?T...currentTime()
             updateTimer.start(int(1000 / Colors.fps))
             update_mode _ QGraphicsView.NoViewportUpdate
         ____
-            useTimer _ False
+            useTimer _ F..
             updateTimer.stop()
 
             __ Colors.noTicker:
@@ -194,9 +194,9 @@ c_ MainWindow(QGraphicsView):
 
             fpsHistory _   # list
 
-            r_ True
+            r_ T..
 
-        r_ False
+        r_ F..
 
     ___ forceFpsMedianCalculation
         # Used for adaption in case things are so slow that no median has yet
@@ -243,9 +243,9 @@ c_ MainWindow(QGraphicsView):
 
         companyLogo _ ImageItem(
                 QImage(imagesDir + '/trolltech-logo.png'),
-                1000, 1000, N.., True, 0.5)
+                1000, 1000, N.., T.., 0.5)
         qtLogo _ ImageItem(QImage(imagesDir + '/qtlogo_small.png'),
-                1000, 1000, N.., True, 0.5)
+                1000, 1000, N.., T.., 0.5)
         companyLogo.setZValue(100)
         qtLogo.setZValue(100)
         pausedLabel _ DemoTextItem("PAUSED", Colors.buttonFont(),
@@ -260,7 +260,7 @@ c_ MainWindow(QGraphicsView):
         __ doneAdapt or Colors.noTimerUpdate or demoStartTime.elapsed() < 2000:
             r_
 
-        doneAdapt _ True
+        doneAdapt _ T..
         forceFpsMedianCalculation()
         Colors.benchmarkFps _ fpsMedian
         Colors.debug("- benchmark: %d FPS" % int(Colors.benchmarkFps))
@@ -272,7 +272,7 @@ c_ MainWindow(QGraphicsView):
             ticker _ MenuManager.instance().ticker
             __ ticker and ticker.scene
                 scene.removeItem(ticker)
-                Colors.noTimerUpdate _ True
+                Colors.noTimerUpdate _ T..
                 switchTimerOnOff F..
 
                 __ fpsLabel:
@@ -281,10 +281,10 @@ c_ MainWindow(QGraphicsView):
                 Colors.debug("- benchmark adaption: removed ticker (fps < 30)")
 
             __ fpsMedian < 20:
-                Colors.noAnimations _ True
+                Colors.noAnimations _ T..
                 Colors.debug("- benchmark adaption: animations switched off (fps < 20)")
 
-            Colors.adapted _ True
+            Colors.adapted _ T..
 
     ___ drawBackgroundToPixmap
         r _ scene.sceneRect()

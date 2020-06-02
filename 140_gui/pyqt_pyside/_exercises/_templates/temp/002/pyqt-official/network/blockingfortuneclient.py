@@ -59,7 +59,7 @@ c_ FortuneThread(QThread):
     ___  -   parent_None):
         super(FortuneThread, self). - (parent)
 
-        quit _ False
+        quit _ F..
         hostName _ ''
         cond _ QWaitCondition()
         mutex _ QMutex()
@@ -67,7 +67,7 @@ c_ FortuneThread(QThread):
 
     ___ __del__
         mutex.lock()
-        quit _ True
+        quit _ T..
         cond.wakeOne()
         mutex.unlock()
         wait()

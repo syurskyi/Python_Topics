@@ -219,13 +219,13 @@ c_ MainWindow(QMainWindow, Ui_SchemaMainWindow):
         schema.setMessageHandler(messageHandler)
         schema.load(schemaData)
 
-        errorOccurred _ False
+        errorOccurred _ F..
         __ no. schema.isValid
-            errorOccurred _ True
+            errorOccurred _ T..
         ____
             validator _ QXmlSchemaValidator(schema)
             __ no. validator.validate(instanceData):
-                errorOccurred _ True
+                errorOccurred _ T..
 
         __ errorOccurred:
             validationStatus.sT..(messageHandler.statusMessage())
@@ -244,10 +244,10 @@ c_ MainWindow(QMainWindow, Ui_SchemaMainWindow):
     ___ moveCursor  line, column):
         instanceEdit.moveCursor(QTextCursor.Start)
 
-        ___ i __ range(1, line):
+        ___ i __ ra..(1, line):
             instanceEdit.moveCursor(QTextCursor.Down)
 
-        ___ i __ range(1, column):
+        ___ i __ ra..(1, column):
             instanceEdit.moveCursor(QTextCursor.Right)
 
         extraSelections _   # list

@@ -226,7 +226,7 @@ c_ BubblesWidget(BaseClass):
     ___ animate
 
         bubbles _   # list
-        left _ False
+        left _ F..
         ___ bubble __ bubbles:
 
             bubble.position _ bubble.position + QPointF(0, -bubble.speed)
@@ -240,7 +240,7 @@ c_ BubblesWidget(BaseClass):
                 bubbles.ap..(bubble)
             ____
                 bubbleLeft.e..()
-                left _ True
+                left _ T..
 
         __ newBubble:
             update(

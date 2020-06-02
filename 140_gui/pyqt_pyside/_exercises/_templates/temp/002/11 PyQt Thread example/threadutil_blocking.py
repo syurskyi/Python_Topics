@@ -49,10 +49,10 @@ c_ Executor:
         r_ cls._INSTANCE
     ___  -   app):
         _pending_tasks _   # list
-        _app_is_about_to_quit _ False
+        _app_is_about_to_quit _ F..
         app.aboutToQuit.c..(_about_to_quit)
     ___ _about_to_quit
-        _app_is_about_to_quit _ True
+        _app_is_about_to_quit _ T..
         ___ task __ _pending_tasks:
             task.set_exception(SystemExit())
             task.has_run.set()

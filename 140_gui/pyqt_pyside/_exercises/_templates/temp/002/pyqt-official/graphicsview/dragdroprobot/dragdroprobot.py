@@ -126,24 +126,24 @@ c_ RobotPart(QGraphicsObject):
         super(RobotPart, self). - (parent)
 
         color _ ?C..(__.lightGray)
-        dragOver _ False
+        dragOver _ F..
 
         setAcceptDrops( st.
 
     ___ dragEnterEvent  event):
         __ event.mimeData().hasColor
             event.setAccepted( st.
-            dragOver _ True
+            dragOver _ T..
             update()
         ____
             event.setAccepted F..
 
     ___ dragLeaveEvent  event):
-        dragOver _ False
+        dragOver _ F..
         update()
  
     ___ dropEvent  event):
-        dragOver _ False
+        dragOver _ F..
         __ event.mimeData().hasColor
             color _ ?C..(event.mimeData().colorData())
 
@@ -179,14 +179,14 @@ c_ RobotHead(RobotPart):
     ___ dragEnterEvent  event):
         __ event.mimeData().hasImage
             event.setAccepted( st.
-            dragOver _ True
+            dragOver _ T..
             update()
         ____
             super(RobotHead, self).dragEnterEvent(event)
 
     ___ dropEvent  event):
         __ event.mimeData().hasImage
-            dragOver _ False
+            dragOver _ F..
             pixmap _ QPixmap(event.mimeData().imageData())
             update()
         ____
@@ -293,7 +293,7 @@ __ __name____ '__main__':
 
     scene _ QGraphicsScene(-200, -200, 400, 400)
 
-    ___ i __ range(10):
+    ___ i __ ra..(10):
         item _ ColorItem()
         angle _ i*6.28 / 10.0
         item.setPos(math.sin(angle)*150, math.cos(angle)*150)

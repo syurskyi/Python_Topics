@@ -115,7 +115,7 @@ c_ MainWindow ?MW..
                 statusTip_"Save the document under a new name",
                 triggered_self.saveAs)
 
-        ___ i __ range(MainWindow.MaxRecentFiles):
+        ___ i __ ra..(MainWindow.MaxRecentFiles):
             recentFileActs.ap..(
                     ?A..  visible_False,
                             triggered_self.openRecentFile))
@@ -139,7 +139,7 @@ c_ MainWindow ?MW..
         fileMenu.aA..(saveAct)
         fileMenu.aA..(saveAsAct)
         separatorAct _ fileMenu.addSeparator()
-        ___ i __ range(MainWindow.MaxRecentFiles):
+        ___ i __ ra..(MainWindow.MaxRecentFiles):
             fileMenu.aA..(recentFileActs[i])
         fileMenu.addSeparator()
         fileMenu.aA..(exitAct)
@@ -211,13 +211,13 @@ c_ MainWindow ?MW..
 
         numRecentFiles _ min(le.(files), MainWindow.MaxRecentFiles)
 
-        ___ i __ range(numRecentFiles):
+        ___ i __ ra..(numRecentFiles):
             t__ _ "&%d %s" % (i + 1, strippedName(files[i]))
             recentFileActs[i].sT..(t__)
             recentFileActs[i].setData(files[i])
             recentFileActs[i].setVisible( st.
 
-        ___ j __ range(numRecentFiles, MainWindow.MaxRecentFiles):
+        ___ j __ ra..(numRecentFiles, MainWindow.MaxRecentFiles):
             recentFileActs[j].setVisible F..
 
         separatorAct.setVisible((numRecentFiles > 0))

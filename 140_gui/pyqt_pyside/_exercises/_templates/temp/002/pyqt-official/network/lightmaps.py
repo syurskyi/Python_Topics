@@ -170,8 +170,8 @@ c_ SlippyMap(QObject):
         updated.e..(QRect(0, 0, width, height))
 
     ___ render  p, rect):
-        ___ x __ range(_tilesRect.width()):
-            ___ y __ range(_tilesRect.height()):
+        ___ x __ ra..(_tilesRect.width()):
+            ___ y __ ra..(_tilesRect.height()):
                 tp _ Point(x + _tilesRect.left(), y + _tilesRect.top())
                 box _ tileRect(tp)
                 __ rect.intersects(box):
@@ -197,15 +197,15 @@ c_ SlippyMap(QObject):
 
         # purge unused tiles
         bound _ _tilesRect.adjusted(-2, -2, 2, 2)
-        ___ tp __ list(_tilePixmaps.keys()):
+        ___ tp __ li..(_tilePixmaps.keys()):
             __ no. bound.contains(tp):
                 del _tilePixmaps[tp]
         download()
 
     ___ download 
         grab _ N..
-        ___ x __ range(_tilesRect.width()):
-            ___ y __ range(_tilesRect.height()):
+        ___ x __ ra..(_tilesRect.width()):
+            ___ y __ ra..(_tilesRect.height()):
                 tp _ Point(_tilesRect.topLeft() + QPoint(x, y))
                 __ tp no. __ _tilePixmaps:
                     grab _ QPoint(tp)
@@ -235,10 +235,10 @@ c_ LightMaps(?W..):
     ___  -   parent _ N..):
         super(LightMaps, self). - (parent)
 
-        pressed _ False
-        snapped _ False
-        zoomed _ False
-        invert _ False
+        pressed _ F..
+        snapped _ F..
+        zoomed _ F..
+        invert _ F..
         _normalMap _ SlippyMap
         _largeMap _ SlippyMap
         pressPos _ QPoint()
@@ -264,7 +264,7 @@ c_ LightMaps(?W..):
         update(r)
 
     ___ activateZoom 
-        zoomed _ True
+        zoomed _ T..
         tapTimer.stop()
         _largeMap.zoom _ _normalMap.zoom + 1
         _largeMap.width _ _normalMap.width * 2
@@ -360,7 +360,7 @@ c_ LightMaps(?W..):
         __ event.buttons() !_ __.LeftButton:
             r_
 
-        pressed _ snapped _ True
+        pressed _ snapped _ T..
         pressPos _ dragPos _ event.pos()
         tapTimer.stop()
         tapTimer.start(HOLD_TIME, self)
@@ -392,7 +392,7 @@ c_ LightMaps(?W..):
             update()
 
     ___ mouseReleaseEvent  event):
-        zoomed _ False
+        zoomed _ F..
         update()
  
     ___ keyPressEvent  event):
@@ -410,7 +410,7 @@ c_ LightMaps(?W..):
                 activateZoom()
         ____
             __ event.key() __ __.Key_Z or event.key() __ __.Key_Select:
-                zoomed _ False
+                zoomed _ F..
                 update()
 
             delta _ QPoint(0, 0)

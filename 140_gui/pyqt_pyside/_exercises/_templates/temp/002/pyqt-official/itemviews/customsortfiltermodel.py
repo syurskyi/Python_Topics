@@ -100,8 +100,8 @@ c_ MySortFilterProxyModel(QSortFilterProxyModel):
         __ isinstance(date, QDateTime):
             date _ date.date()
 
-        r_ (    (no. minDate.isValid() or date >_ minDate)
-                and (no. maxDate.isValid() or date <_ maxDate))
+        r_ (    (no. minDate.iV.. or date >_ minDate)
+                and (no. maxDate.iV.. or date <_ maxDate))
 
 
 c_ Window(?W..):
@@ -151,7 +151,7 @@ c_ Window(?W..):
         proxyView.setRootIsDecorated F..
         proxyView.setAlternatingRowColors( st.
         proxyView.sM..(proxyModel)
-        proxyView.setSortingEnabled( st.
+        proxyView.sSE.. st.
         proxyView.sortByColumn(1, __.AscendingOrder)
 
         textFilterChanged()
@@ -207,9 +207,9 @@ ___ addMail(model, subject, sender, date):
 ___ createMailModel(parent):
     model _ QStandardItemModel(0, 3, parent)
 
-    model.setHeaderData(0, __.Horizontal, "Subject")
-    model.setHeaderData(1, __.Horizontal, "Sender")
-    model.setHeaderData(2, __.Horizontal, "Date")
+    model.setHeaderData(0, __.H.., "Subject")
+    model.setHeaderData(1, __.H.., "Sender")
+    model.setHeaderData(2, __.H.., "Date")
 
     addMail(model, "Happy New Year!", "Grace K. <grace@software-inc.com>",
             QDateTime(QDate(2006, 12, 31), ?T..(17, 3)))

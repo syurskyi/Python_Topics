@@ -12,7 +12,7 @@ c_ MainWindow(?W..):
         model _ ?STM..()
         initializedModel()
 
-        tableView _ QTableView()
+        tableView _ ?TV..
         tableView.sM..(model)
 
         layout _ ?VBL..
@@ -33,9 +33,9 @@ c_ MainWindow(?W..):
         model.setTable("person")
         model.setEditStrategy(?STM...OnFieldChange)
         model.select()
-        model.setHeaderData(0, __.Horizontal, "ID")
-        model.setHeaderData(1, __.Horizontal, "Name")
-        model.setHeaderData(2, __.Horizontal, "Address")
+        model.setHeaderData(0, __.H.., "ID")
+        model.setHeaderData(1, __.H.., "Name")
+        model.setHeaderData(2, __.H.., "Address")
 
     ___ onAddRow
         model.insertRows(model.rowCount(), 1)

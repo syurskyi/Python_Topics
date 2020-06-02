@@ -18,7 +18,7 @@ c_ PyDemoPlugin(QPyDesignerCustomWidgetPlugin):
     ___  -   parent_None):
         super(PyDemoPlugin, self). - (parent)
 
-        _initialized _ False
+        _initialized _ F..
 
     # Initialise the custom widget for use with the specified formEditor
     # interface.
@@ -26,7 +26,7 @@ c_ PyDemoPlugin(QPyDesignerCustomWidgetPlugin):
         __ _initialized:
             r_
 
-        _initialized _ True
+        _initialized _ T..
 
     # Return True if the custom widget has been intialised.
     ___ isInitialized
@@ -63,7 +63,7 @@ c_ PyDemoPlugin(QPyDesignerCustomWidgetPlugin):
 
     # Return True if the custom widget acts as a container for other widgets.
     ___ isContainer
-        r_ False
+        r_ F..
 
     # Return an XML fragment that allows the default values of the custom
     # widget's properties to be overridden.

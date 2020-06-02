@@ -72,7 +72,7 @@ c_ SlidersGroup(QGroupBox):
         dial.valueChanged.c..(slider.setValue)
         dial.valueChanged.c..(valueChanged)
 
-        __ orientation __ __.Horizontal:
+        __ orientation __ __.H..:
             direction _ QBoxLayout.TopToBottom
         ____
             direction _ QBoxLayout.LeftToRight
@@ -111,7 +111,7 @@ c_ Window(?W..):
     ___  -
         super(Window, self). - ()
 
-        horizontalSliders _ SlidersGroup(__.Horizontal,
+        horizontalSliders _ SlidersGroup(__.H..,
                 "Horizontal")
         verticalSliders _ SlidersGroup(__.Vertical, "Vertical")
 

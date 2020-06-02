@@ -106,7 +106,7 @@ c_ ImageSettings(QDialog):
 
     @staticmethod
     ___ selectComboBoxItem(box, value):
-        ___ i __ range(box.count()):
+        ___ i __ ra..(box.count()):
             __ box.itemData(i) __ value:
                 box.setCurrentIndex(i)
                 break
@@ -194,7 +194,7 @@ c_ VideoSettings(QDialog):
                 settings.resolution())
         ui.videoQualitySlider.setValue(settings.quality())
 
-        ___ i __ range(1, ui.videoFramerateBox.count()):
+        ___ i __ ra..(1, ui.videoFramerateBox.count()):
             itemRate _ ui.videoFramerateBox.itemData(i)
             __ qFuzzyCompare(itemRate, settings.frameRate()):
                 ui.videoFramerateBox.setCurrentIndex(i)
@@ -216,7 +216,7 @@ c_ VideoSettings(QDialog):
 
     @staticmethod
     ___ selectComboBoxItem(box, value):
-        ___ i __ range(box.count()):
+        ___ i __ ra..(box.count()):
             __ box.itemData(i) __ value:
                 box.setCurrentIndex(i)
                 break
@@ -231,8 +231,8 @@ c_ Camera ?MW..
         camera _ N..
         imageCapture _ N..
         mediaRecorder _ N..
-        isCapturingImage _ False
-        applicationExiting _ False
+        isCapturingImage _ F..
+        applicationExiting _ F..
 
         imageSettings _ QImageEncoderSettings()
         audioSettings _ QAudioEncoderSettings()
@@ -421,7 +421,7 @@ c_ Camera ?MW..
         ui.lockButton.sP..(palette)
 
     ___ takeImage
-        isCapturingImage _ True
+        isCapturingImage _ T..
         imageCapture.capture()
 
     ___ startCamera
@@ -486,7 +486,7 @@ c_ Camera ?MW..
         ui.takeImageButton.sE..(ready)
 
     ___ imageSaved  id, fileName):
-        isCapturingImage _ False
+        isCapturingImage _ F..
 
         __ applicationExiting:
             c..
@@ -494,7 +494,7 @@ c_ Camera ?MW..
     ___ closeEvent  event):
         __ isCapturingImage:
             sE.. F..
-            applicationExiting _ True
+            applicationExiting _ T..
             event.ignore()
         ____
             event.accept()

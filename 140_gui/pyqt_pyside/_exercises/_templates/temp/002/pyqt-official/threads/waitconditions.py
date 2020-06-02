@@ -50,7 +50,7 @@ ____ ?.?C.. ______ QCoreApplication, QMutex, QThread, QWaitCondition
 
 DataSize _ 100000
 BufferSize _ 8192
-buffer _ list(range(BufferSize))
+buffer _ li..(ra..(BufferSize))
 
 bufferNotEmpty _ QWaitCondition()
 bufferNotFull _ QWaitCondition()
@@ -62,7 +62,7 @@ c_ Producer(QThread):
     ___ run 
         gl.. numUsedBytes
 
-        ___ i __ range(DataSize):
+        ___ i __ ra..(DataSize):
             mutex.lock()
             __ numUsedBytes __ BufferSize:
                 bufferNotFull.wait(mutex)
@@ -80,7 +80,7 @@ c_ Consumer(QThread):
     ___ run 
         gl.. numUsedBytes
 
-        ___ i __ range(DataSize):
+        ___ i __ ra..(DataSize):
             mutex.lock()
             __ numUsedBytes __ 0:
                 bufferNotEmpty.wait(mutex)

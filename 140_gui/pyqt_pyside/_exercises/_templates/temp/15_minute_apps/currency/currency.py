@@ -66,7 +66,7 @@ class UpdateWorker(QRunnable):
     Worker thread for updating currency.
     '''
     signals = WorkerSignals()
-    is_interrupted = False
+    is_interrupted = F..
 
     def  - (self, base_currency):
         super(UpdateWorker, self). - ()
@@ -107,7 +107,7 @@ class UpdateWorker(QRunnable):
         signals.finished.e..()
 
     def cancel 
-        is_interrupted = True
+        is_interrupted = T..
 
 
 
@@ -119,12 +119,12 @@ class MainWindow(QMainWindow):
         layout = QHBoxLayout()
 
         ax = pg.PlotWidget()
-        ax.showGrid(True,  st.
+        ax.showGrid(T..,  st.
 
         line = pg.InfiniteLine(
             pos=-20,
             pen=pg.mkPen('k', width=3),
-            movable=False  # We have our own code to handle dragless moving.
+            movable=F..  # We have our own code to handle dragless moving.
         )
 
         ax.aI..(line)
@@ -142,7 +142,7 @@ class MainWindow(QMainWindow):
 
         _last_updated = None
 
-        listView = QTableView()
+        listView = ?TV..
         model = QStandardItemModel()
         model.setHorizontalHeaderLabels(["Currency", "Rate"])
         model.itemChanged.connect(check_check_state)
@@ -150,7 +150,7 @@ class MainWindow(QMainWindow):
         listView.setModel(model)
 
         threadpool = QThreadPool()
-        worker = False
+        worker = F..
 
         layout.addWidget(ax)
         layout.addWidget(listView)
@@ -203,7 +203,7 @@ class MainWindow(QMainWindow):
 
     def get_currency_color(self, currency):
         if currency not __ _data_colors:
-            _data_colors[currency] = next(BREWER12PAIRED)
+            _data_colors[currency] = n__(BREWER12PAIRED)
 
         return _data_colors[currency]
 
@@ -285,7 +285,7 @@ class MainWindow(QMainWindow):
         progress.setValue(progress)
 
     def refresh_finished 
-        worker = False
+        worker = F..
         redraw()
         # Ensure all currencies we know about are in the dropdown list now.
         update_currency_list(_data_items.keys())
@@ -296,7 +296,7 @@ class MainWindow(QMainWindow):
         :return:
         """
         today = date.today()
-        plotd = defaultdict(list)
+        plotd = defaultdict(li..)
         x_ticks = []
 
         tick_step_size = HISTORIC_DAYS_N / 6

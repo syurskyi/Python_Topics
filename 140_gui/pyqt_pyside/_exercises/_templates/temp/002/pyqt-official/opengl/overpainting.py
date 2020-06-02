@@ -230,8 +230,8 @@ c_ GLWidget(QOpenGLWidget):
         r_ ?S..(400, 400)
 
     ___ makeObject 
-        list _ gl.glGenLists(1)
-        gl.glNewList(list, gl.GL_COMPILE)
+        li.. _ gl.glGenLists(1)
+        gl.glNewList(li.., gl.GL_COMPILE)
 
         gl.glEnable(gl.GL_NORMALIZE)
         gl.glBegin(gl.GL_QUADS)
@@ -263,7 +263,7 @@ c_ GLWidget(QOpenGLWidget):
 
         NumSectors _ 200
 
-        ___ i __ range(NumSectors):
+        ___ i __ ra..(NumSectors):
             angle1 _ (i * 2 * math.pi) / NumSectors
             x5 _ 0.30 * math.sin(angle1)
             y5 _ 0.30 * math.cos(angle1)
@@ -284,7 +284,7 @@ c_ GLWidget(QOpenGLWidget):
         gl.glEnd()
 
         gl.glEndList()
-        r_ list
+        r_ li..
 
     ___ quad  x1, y1, x2, y2, x3, y3, x4, y4):
         gl.glNormal3d(0.0, 0.0, -1.0)
@@ -316,7 +316,7 @@ c_ GLWidget(QOpenGLWidget):
         r_ angle
 
     ___ createBubbles  number):
-        ___ i __ range(number):
+        ___ i __ ra..(number):
             position _ QPointF(width()*(0.1 + 0.8*random.random()),
                                height()*(0.1 + 0.8*random.random()))
             radius _ min(width(), height())*(0.0125 + 0.0875*random.random())

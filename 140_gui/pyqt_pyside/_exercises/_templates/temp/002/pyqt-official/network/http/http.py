@@ -58,7 +58,7 @@ c_ HttpWindow(QDialog):
         reply _ N..
         outFile _ N..
         httpGetId _ 0
-        httpRequestAborted _ False
+        httpRequestAborted _ F..
 
         urlLineEdit _ QLineEdit('https://www.qt.io')
 
@@ -136,12 +136,12 @@ c_ HttpWindow(QDialog):
         progressDialog.setLabelText("Downloading %s." % fileName)
         downloadButton.sE.. F..
 
-        httpRequestAborted _ False
+        httpRequestAborted _ F..
         startRequest(url)
 
     ___ cancelDownload 
         statusLabel.sT..("Download canceled.")
-        httpRequestAborted _ True
+        httpRequestAborted _ T..
         __ reply __ no. N..:
             reply.abort()
         downloadButton.sE..( st.

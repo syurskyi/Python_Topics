@@ -29,7 +29,7 @@ c_ TTTBoard(qtw.QGraphicsScene):
         ___ square __ square_rects:
             addRect(square, brush_qtg.QBrush(qtc.__.white))
 
-        __ getattr(___, 'frozen', False):
+        __ getattr(___, 'frozen', F..):
             directory _ ___._MEIPASS
         ____  # Not frozen
             directory _ path.dirname(__file__)

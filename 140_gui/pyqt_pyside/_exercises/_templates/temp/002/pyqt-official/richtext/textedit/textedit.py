@@ -389,11 +389,11 @@ c_ TextEdit ?MW..
 
     ___ load  f):
         __ no. QFile.exists(f):
-            r_ False
+            r_ F..
 
         fh _ QFile(f)
         __ no. fh.o..(QFile.ReadOnly):
-            r_ False
+            r_ F..
 
         data _ fh.readAll()
         codec _ QTextCodec.codecForHtml(data)
@@ -405,14 +405,14 @@ c_ TextEdit ?MW..
             textEdit.sPT..(unistr)
 
         setCurrentFileName(f)
-        r_ True
+        r_ T..
 
     ___ maybeSave 
         __ no. textEdit.document().iM..
-            r_ True
+            r_ T..
 
         __ fileName.s_w_(':/'):
-            r_ True
+            r_ T..
 
         ret _ ?MB...warning  "Application",
                 "The document has been modified.\n"
@@ -423,9 +423,9 @@ c_ TextEdit ?MW..
             r_ fileSave()
 
         __ ret __ ?MB...Cancel:
-            r_ False
+            r_ F..
 
-        r_ True
+        r_ T..
 
     ___ setCurrentFileName  fileName_''):
         fileName _ fileName
@@ -467,7 +467,7 @@ c_ TextEdit ?MW..
                 "ODF files (*.odt);;HTML-Files (*.htm *.html);;All Files (*)")
 
         __ no. fn:
-            r_ False
+            r_ F..
 
         lfn _ fn.lower()
         __ no. lfn.endswith(('.odt', '.htm', '.html')):

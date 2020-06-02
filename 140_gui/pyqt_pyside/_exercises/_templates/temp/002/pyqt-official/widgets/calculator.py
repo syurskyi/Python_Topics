@@ -75,7 +75,7 @@ c_ Calculator(?W..):
         sumInMemory _ 0.0
         sumSoFar _ 0.0
         factorSoFar _ 0.0
-        waitingForOperand _ True
+        waitingForOperand _ T..
 
         display _ QLineEdit('0')
         display.setReadOnly( st.
@@ -88,7 +88,7 @@ c_ Calculator(?W..):
 
         digitButtons _   # list
         
-        ___ i __ range(Calculator.NumDigitButtons):
+        ___ i __ ra..(Calculator.NumDigitButtons):
             digitButtons.ap..(createButton(str(i),
                     digitClicked))
 
@@ -134,7 +134,7 @@ c_ Calculator(?W..):
         mainLayout.aW..(setMemoryButton, 4, 0)
         mainLayout.aW..(addToMemoryButton, 5, 0)
 
-        ___ i __ range(1, Calculator.NumDigitButtons):
+        ___ i __ ra..(1, Calculator.NumDigitButtons):
             row _ ((9 - i) / 3) + 2
             column _ ((i - 1) % 3) + 1
             mainLayout.aW..(digitButtons[i], row, column)
@@ -165,7 +165,7 @@ c_ Calculator(?W..):
 
         __ waitingForOperand:
             display.c..
-            waitingForOperand _ False
+            waitingForOperand _ F..
 
         display.sT..(display.t__() + str(digitValue))
 
@@ -190,7 +190,7 @@ c_ Calculator(?W..):
             result _ 1.0 / operand
 
         display.sT..(str(result))
-        waitingForOperand _ True
+        waitingForOperand _ T..
 
     ___ additiveOperatorClicked
         clickedButton _ sender()
@@ -217,7 +217,7 @@ c_ Calculator(?W..):
             sumSoFar _ operand
 
         pendingAdditiveOperator _ clickedOperator
-        waitingForOperand _ True
+        waitingForOperand _ T..
 
     ___ multiplicativeOperatorClicked
         clickedButton _ sender()
@@ -234,7 +234,7 @@ c_ Calculator(?W..):
             factorSoFar _ operand
 
         pendingMultiplicativeOperator _ clickedOperator
-        waitingForOperand _ True
+        waitingForOperand _ T..
 
     ___ equalClicked
         operand _ float(display.t__())
@@ -259,7 +259,7 @@ c_ Calculator(?W..):
 
         display.sT..(str(sumSoFar))
         sumSoFar _ 0.0
-        waitingForOperand _ True
+        waitingForOperand _ T..
 
     ___ pointClicked
         __ waitingForOperand:
@@ -268,7 +268,7 @@ c_ Calculator(?W..):
         __ "." no. __ display.t__
             display.sT..(display.t__() + ".")
 
-        waitingForOperand _ False
+        waitingForOperand _ F..
 
     ___ changeSignClicked
         t__ _ display.t__()
@@ -288,7 +288,7 @@ c_ Calculator(?W..):
         t__ _ display.t__()[:-1]
         __ no. t__:
             t__ _ '0'
-            waitingForOperand _ True
+            waitingForOperand _ T..
 
         display.sT..(t__)
 
@@ -297,7 +297,7 @@ c_ Calculator(?W..):
             r_
 
         display.sT..('0')
-        waitingForOperand _ True
+        waitingForOperand _ T..
 
     ___ clearAll
         sumSoFar _ 0.0
@@ -305,14 +305,14 @@ c_ Calculator(?W..):
         pendingAdditiveOperator _ ''
         pendingMultiplicativeOperator _ ''
         display.sT..('0')
-        waitingForOperand _ True
+        waitingForOperand _ T..
 
     ___ clearMemory
         sumInMemory _ 0.0
 
     ___ readMemory
         display.sT..(str(sumInMemory))
-        waitingForOperand _ True
+        waitingForOperand _ T..
 
     ___ setMemory
         equalClicked()
@@ -340,11 +340,11 @@ c_ Calculator(?W..):
             factorSoFar *_ rightOperand
         ____ pendingOperator __ u"\N{DIVISION SIGN}":
             __ rightOperand __ 0.0:
-                r_ False
+                r_ F..
 
             factorSoFar /_ rightOperand
 
-        r_ True
+        r_ T..
 
 
 __ ______ __ ______

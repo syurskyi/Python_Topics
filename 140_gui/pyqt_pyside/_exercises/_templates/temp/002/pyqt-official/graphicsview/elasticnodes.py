@@ -218,10 +218,10 @@ c_ Node(QGraphicsItem):
 
     ___ advance
         __ newPos __ pos
-            r_ False
+            r_ F..
 
         setPos(newPos)
-        r_ True
+        r_ T..
 
     ___ boundingRect
         adjust _ 2.0
@@ -361,10 +361,10 @@ c_ GraphWidget(QGraphicsView):
         ___ node __ nodes:
             node.calculateForces()
 
-        itemsMoved _ False
+        itemsMoved _ F..
         ___ node __ nodes:
             __ node.advance
-                itemsMoved _ True
+                itemsMoved _ T..
 
         __ no. itemsMoved:
             killTimer(timerId)

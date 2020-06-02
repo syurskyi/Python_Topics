@@ -58,7 +58,7 @@ c_ SpinBoxDelegate(QStyledItemDelegate):
         r_ editor
 
     ___ setEditorData  spinBox, index):
-        value _ index.model().data(index, __.EditRole)
+        value _ index.model().data(index, __.ER..)
 
         spinBox.setValue(value)
 
@@ -66,7 +66,7 @@ c_ SpinBoxDelegate(QStyledItemDelegate):
         spinBox.interpretText()
         value _ spinBox.value()
 
-        model.setData(index, value, __.EditRole)
+        model.setData(index, value, __.ER..)
 
     ___ updateEditorGeometry  editor, option, index):
         editor.setGeometry(option.rect)
@@ -79,14 +79,14 @@ __ ______ __ ______
     app _ ?A..(___.a..
 
     model _ QStandardItemModel(4, 2)
-    tableView _ QTableView()
+    tableView _ ?TV..
     tableView.sM..(model)
 
     delegate _ SpinBoxDelegate()
     tableView.setItemDelegate(delegate)
 
-    ___ row __ range(4):
-        ___ column __ range(2):
+    ___ row __ ra..(4):
+        ___ column __ ra..(2):
             index _ model.index(row, column, QModelIndex())
             model.setData(index, (row + 1) * (column + 1))
 

@@ -57,16 +57,16 @@ ___ initializeModel(model):
     model.setRelation(2, QSqlRelation('city', 'id', 'name'))
     model.setRelation(3, QSqlRelation('country', 'id', 'name'))
 
-    model.setHeaderData(0, __.Horizontal, "ID")
-    model.setHeaderData(1, __.Horizontal, "Name")
-    model.setHeaderData(2, __.Horizontal, "City")
-    model.setHeaderData(3, __.Horizontal, "Country")
+    model.setHeaderData(0, __.H.., "ID")
+    model.setHeaderData(1, __.H.., "Name")
+    model.setHeaderData(2, __.H.., "City")
+    model.setHeaderData(3, __.H.., "Country")
 
     model.select()
 
 
 ___ createView(title, model):
-    view _ QTableView()
+    view _ ?TV..
     view.sM..(model)
     view.setItemDelegate(QSqlRelationalDelegate(view))
     view.sWT..(title)

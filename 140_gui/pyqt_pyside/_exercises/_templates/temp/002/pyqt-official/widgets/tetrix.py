@@ -51,7 +51,7 @@ ____ ?.?W.. ______ (?A.., QFrame, QGridLayout, QLabel,
         QLCDNumber, ?PB.., ?W..)
 
 
-NoShape, ZShape, SShape, LineShape, TShape, SquareShape, LShape, MirroredLShape _ range(8)
+NoShape, ZShape, SShape, LineShape, TShape, SquareShape, LShape, MirroredLShape _ ra..(8)
 
 
 c_ TetrixWindow(?W..):
@@ -125,7 +125,7 @@ c_ TetrixBoard(QFrame):
 
         timer _ QBasicTimer()
         nextPieceLabel _ N..
-        isWaitingAfterLine _ False
+        isWaitingAfterLine _ F..
         curPiece _ TetrixPiece()
         nextPiece _ TetrixPiece()
         curX _ 0
@@ -138,8 +138,8 @@ c_ TetrixBoard(QFrame):
 
         setFrameStyle(QFrame.Panel | QFrame.Sunken)
         sFP..(__.StrongFocus)
-        isStarted _ False
-        isPaused _ False
+        isStarted _ F..
+        isPaused _ F..
         clearBoard()
 
         nextPiece.setRandomShape()
@@ -174,8 +174,8 @@ c_ TetrixBoard(QFrame):
         __ isPaused:
             r_
 
-        isStarted _ True
-        isWaitingAfterLine _ False
+        isStarted _ T..
+        isWaitingAfterLine _ F..
         numLinesRemoved _ 0
         numPiecesDropped _ 0
         score _ 0
@@ -213,8 +213,8 @@ c_ TetrixBoard(QFrame):
 
         boardTop _ rect.bottom() - TetrixBoard.BoardHeight * squareHeight()
 
-        ___ i __ range(TetrixBoard.BoardHeight):
-            ___ j __ range(TetrixBoard.BoardWidth):
+        ___ i __ ra..(TetrixBoard.BoardHeight):
+            ___ j __ ra..(TetrixBoard.BoardWidth):
                 shape _ shapeAt(j, TetrixBoard.BoardHeight - i - 1)
                 __ shape !_ NoShape:
                     drawSquare(painter,
@@ -222,7 +222,7 @@ c_ TetrixBoard(QFrame):
                             boardTop + i * squareHeight(), shape)
 
         __ curPiece.shape() !_ NoShape:
-            ___ i __ range(4):
+            ___ i __ ra..(4):
                 x _ curX + curPiece.x(i)
                 y _ curY - curPiece.y(i)
                 drawSquare(painter, rect.left() + x * squareWidth(),
@@ -253,7 +253,7 @@ c_ TetrixBoard(QFrame):
     ___ timerEvent  event):
         __ event.timerId() __ timer.timerId
             __ isWaitingAfterLine:
-                isWaitingAfterLine _ False
+                isWaitingAfterLine _ F..
                 newPiece()
                 timer.start(timeoutTime(), self)
             ____
@@ -262,7 +262,7 @@ c_ TetrixBoard(QFrame):
             super(TetrixBoard, self).timerEvent(event)
 
     ___ clearBoard 
-        board _ [NoShape ___ i __ range(TetrixBoard.BoardHeight * TetrixBoard.BoardWidth)]
+        board _ [NoShape ___ i __ ra..(TetrixBoard.BoardHeight * TetrixBoard.BoardWidth)]
 
     ___ dropDown 
         dropHeight _ 0
@@ -280,7 +280,7 @@ c_ TetrixBoard(QFrame):
             pieceDropped(0)
 
     ___ pieceDropped  dropHeight):
-        ___ i __ range(4):
+        ___ i __ ra..(4):
             x _ curX + curPiece.x(i)
             y _ curY - curPiece.y(i)
             setShapeAt(x, y, curPiece.shape())
@@ -301,21 +301,21 @@ c_ TetrixBoard(QFrame):
     ___ removeFullLines 
         numFullLines _ 0
 
-        ___ i __ range(TetrixBoard.BoardHeight - 1, -1, -1):
-            lineIsFull _ True
+        ___ i __ ra..(TetrixBoard.BoardHeight - 1, -1, -1):
+            lineIsFull _ T..
 
-            ___ j __ range(TetrixBoard.BoardWidth):
+            ___ j __ ra..(TetrixBoard.BoardWidth):
                 __ shapeAt(j, i) __ NoShape:
-                    lineIsFull _ False
+                    lineIsFull _ F..
                     break
 
             __ lineIsFull:
                 numFullLines +_ 1
-                ___ k __ range(TetrixBoard.BoardHeight - 1):
-                    ___ j __ range(TetrixBoard.BoardWidth):
+                ___ k __ ra..(TetrixBoard.BoardHeight - 1):
+                    ___ j __ ra..(TetrixBoard.BoardWidth):
                         setShapeAt(j, k, shapeAt(j, k + 1))
 
-                ___ j __ range(TetrixBoard.BoardWidth):
+                ___ j __ ra..(TetrixBoard.BoardWidth):
                     setShapeAt(j, TetrixBoard.BoardHeight - 1, NoShape)
 
         __ numFullLines > 0:
@@ -325,7 +325,7 @@ c_ TetrixBoard(QFrame):
             scoreChanged.e..(score)
 
             timer.start(500, self)
-            isWaitingAfterLine _ True
+            isWaitingAfterLine _ T..
             curPiece.setShape(NoShape)
             update()
 
@@ -339,7 +339,7 @@ c_ TetrixBoard(QFrame):
         __ no. tryMove(curPiece, curX, curY):
             curPiece.setShape(NoShape)
             timer.stop()
-            isStarted _ False
+            isStarted _ F..
 
     ___ showNextPiece 
         __ nextPieceLabel __ N..:
@@ -352,7 +352,7 @@ c_ TetrixBoard(QFrame):
         painter _ QPainter(pixmap)
         painter.fillRect(pixmap.rect(), nextPieceLabel.palette().window())
 
-        ___ i __ range(4):
+        ___ i __ ra..(4):
             x _ nextPiece.x(i) - nextPiece.minX()
             y _ nextPiece.y(i) - nextPiece.minY()
             drawSquare(painter, x * squareWidth(),
@@ -363,19 +363,19 @@ c_ TetrixBoard(QFrame):
         nextPieceLabel.setPixmap(pixmap)
 
     ___ tryMove  newPiece, newX, newY):
-        ___ i __ range(4):
+        ___ i __ ra..(4):
             x _ newX + newPiece.x(i)
             y _ newY - newPiece.y(i)
             __ x < 0 or x >_ TetrixBoard.BoardWidth or y < 0 or y >_ TetrixBoard.BoardHeight:
-                r_ False
+                r_ F..
             __ shapeAt(x, y) !_ NoShape:
-                r_ False
+                r_ F..
 
         curPiece _ newPiece
         curX _ newX
         curY _ newY
         update()
-        r_ True
+        r_ T..
 
     ___ drawSquare  painter, x, y, shape):
         colorTable _ [0x000000, 0xCC6666, 0x66CC66, 0x6666CC,
@@ -409,7 +409,7 @@ c_ TetrixPiece(object):
     )
 
     ___  -
-        coords _ [[0, 0] ___ _ __ range(4)]
+        coords _ [[0, 0] ___ _ __ ra..(4)]
         pieceShape _ NoShape
 
         setShape(NoShape)
@@ -419,8 +419,8 @@ c_ TetrixPiece(object):
 
     ___ setShape  shape):
         table _ TetrixPiece.coordsTable[shape]
-        ___ i __ range(4):
-            ___ j __ range(2):
+        ___ i __ ra..(4):
+            ___ j __ ra..(2):
                 coords[i][j] _ table[i][j]
 
         pieceShape _ shape
@@ -442,28 +442,28 @@ c_ TetrixPiece(object):
 
     ___ minX 
         m _ coords[0][0]
-        ___ i __ range(4):
+        ___ i __ ra..(4):
             m _ min(m, coords[i][0])
 
         r_ m
 
     ___ maxX 
         m _ coords[0][0]
-        ___ i __ range(4):
+        ___ i __ ra..(4):
             m _ max(m, coords[i][0])
 
         r_ m
 
     ___ minY 
         m _ coords[0][1]
-        ___ i __ range(4):
+        ___ i __ ra..(4):
             m _ min(m, coords[i][1])
 
         r_ m
 
     ___ maxY 
         m _ coords[0][1]
-        ___ i __ range(4):
+        ___ i __ ra..(4):
             m _ max(m, coords[i][1])
 
         r_ m
@@ -474,7 +474,7 @@ c_ TetrixPiece(object):
 
         result _ TetrixPiece()
         result.pieceShape _ pieceShape
-        ___ i __ range(4):
+        ___ i __ ra..(4):
             result.setX(i, y(i))
             result.setY(i, -x(i))
 
@@ -486,7 +486,7 @@ c_ TetrixPiece(object):
 
         result _ TetrixPiece()
         result.pieceShape _ pieceShape
-        ___ i __ range(4):
+        ___ i __ ra..(4):
             result.setX(i, -y(i))
             result.setY(i, x(i))
 

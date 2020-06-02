@@ -59,7 +59,7 @@ c_ DemoImpl(QDialog, form_class):
     @pyqtSlot()
     ___ on_button1_clicked
         ___ s __ "This is a demo".sp..(" "):
-            list.aI..(s)
+            li...aI..(s)
 
 
 form _ DemoImpl()

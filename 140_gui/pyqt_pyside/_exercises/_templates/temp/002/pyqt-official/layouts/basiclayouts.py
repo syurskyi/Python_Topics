@@ -93,7 +93,7 @@ c_ Dialog(QDialog):
         horizontalGroupBox _ QGroupBox("Horizontal layout")
         layout _ QHBoxLayout()
 
-        ___ i __ range(Dialog.NumButtons):
+        ___ i __ ra..(Dialog.NumButtons):
             button _ ?PB..("Button %d" % (i + 1))
             layout.aW..(button)
 
@@ -103,7 +103,7 @@ c_ Dialog(QDialog):
         gridGroupBox _ QGroupBox("Grid layout")
         layout _ QGridLayout()
 
-        ___ i __ range(Dialog.NumGridRows):
+        ___ i __ ra..(Dialog.NumGridRows):
             label _ QLabel("Line %d:" % (i + 1))
             lineEdit _ ?LE..
             layout.aW..(label, i + 1, 0)

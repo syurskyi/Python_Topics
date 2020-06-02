@@ -13,7 +13,7 @@ ___ createDB
                                                  "how to build it.\n\n" "Click Cancel to exit."),
                                    ?G...?MB...Cancel)
 
-        r_ False
+        r_ F..
 
     query _ ?S...QSqlQuery()
 
@@ -25,7 +25,7 @@ ___ createDB
     query.exec_("insert into sportsmen values(103, 'Ussain', 'Bolt')")
     query.exec_("insert into sportsmen values(104, 'Sachin', 'Tendulkar')")
     query.exec_("insert into sportsmen values(105, 'Saina', 'Nehwal')")
-    r_ True
+    r_ T..
 
 
 __ ______ __ ______

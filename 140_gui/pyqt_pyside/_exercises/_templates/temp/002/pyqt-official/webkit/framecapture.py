@@ -87,7 +87,7 @@ c_ FrameCapture(QObject):
         _page _ QWebPage()
         _page.mainFrame().setScrollBarPolicy(__.Vertical,
                 __.ScrollBarAlwaysOff)
-        _page.mainFrame().setScrollBarPolicy(__.Horizontal,
+        _page.mainFrame().setScrollBarPolicy(__.H..,
                 __.ScrollBarAlwaysOff)
         _page.loadProgress.c..(printProgress)
         _page.loadFinished.c..(saveResult)

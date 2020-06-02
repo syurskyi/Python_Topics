@@ -134,7 +134,7 @@ c_ Window(QDialog):
 
         foundFiles _   # list
 
-        ___ i __ range(files.count()):
+        ___ i __ ra..(files.count()):
             progressDialog.setValue(i)
             progressDialog.setLabelText("Searching file number %d of %d..." % (i, files.count()))
             ?A...processEvents()
@@ -164,10 +164,10 @@ c_ Window(QDialog):
             size _ QFileInfo(file).size()
 
             fileNameItem _ QTableWidgetItem(fn)
-            fileNameItem.setFlags(fileNameItem.flags() ^ __.ItemIsEditable)
+            fileNameItem.setFlags(fileNameItem.flags() ^ __.IIE..)
             sizeItem _ QTableWidgetItem("%d KB" % (int((size + 1023) / 1024)))
             sizeItem.setTextAlignment(__.AlignVCenter | __.AlignRight)
-            sizeItem.setFlags(sizeItem.flags() ^ __.ItemIsEditable)
+            sizeItem.setFlags(sizeItem.flags() ^ __.IIE..)
 
             row _ filesTable.rowCount()
             filesTable.insertRow(row)

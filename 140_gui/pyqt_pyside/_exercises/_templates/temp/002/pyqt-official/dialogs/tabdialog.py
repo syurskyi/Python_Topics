@@ -168,7 +168,7 @@ c_ ApplicationsTab(?W..):
         applicationsListBox _ QListWidget()
         applications _   # list
 
-        ___ i __ range(1, 31):
+        ___ i __ ra..(1, 31):
             applications.ap..("Application %d" % i)
 
         applicationsListBox.insertItems(0, applications)

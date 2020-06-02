@@ -54,8 +54,8 @@ c_ ItemWrapper(object):
 
 
 c_ BorderLayout(QLayout):
-    West, North, South, East, Center _ range(5)
-    MinimumSize, SizeHint _ range(2)
+    West, North, South, East, Center _ ra..(5)
+    MinimumSize, SizeHint _ ra..(2)
 
     ___  -   parent_None, margin_None, spacing_-1):
         super(BorderLayout, self). - (parent)
@@ -64,7 +64,7 @@ c_ BorderLayout(QLayout):
             setContentsMargins(margin, margin, margin, margin)
 
         setSpacing(spacing)
-        list _   # list
+        li.. _   # list
 
     ___ __del__
         l _ takeAt(0)
@@ -78,17 +78,17 @@ c_ BorderLayout(QLayout):
         add(QWidgetItem(widget), position)
 
     ___ expandingDirections
-        r_ __.Horizontal | __.Vertical
+        r_ __.H.. | __.Vertical
 
     ___ hasHeightForWidth
-        r_ False
+        r_ F..
 
     ___ count
-        r_ le.(list)
+        r_ le.(li..)
 
     ___ itemAt  index):
-        __ index < le.(list):
-            r_ list[index].item
+        __ index < le.(li..):
+            r_ li..[index].item
 
         r_ N..
 
@@ -105,7 +105,7 @@ c_ BorderLayout(QLayout):
 
         super(BorderLayout, self).setGeometry(rect)
 
-        ___ wrapper __ list:
+        ___ wrapper __ li..:
             item _ wrapper.item
             position _ wrapper.position
 
@@ -131,7 +131,7 @@ c_ BorderLayout(QLayout):
 
         centerHeight _ rect.height() - northHeight - southHeight
 
-        ___ wrapper __ list:
+        ___ wrapper __ li..:
             item _ wrapper.item
             position _ wrapper.position
 
@@ -160,19 +160,19 @@ c_ BorderLayout(QLayout):
         r_ calculateSize(SizeHint)
 
     ___ takeAt  index):
-        __ index >_ 0 and index < le.(list):
-            layoutStruct _ list.p.. index)
+        __ index >_ 0 and index < le.(li..):
+            layoutStruct _ li...p.. index)
             r_ layoutStruct.item
 
         r_ N..
 
     ___ add  item, position):
-        list.ap..(ItemWrapper(item, position))
+        li...ap..(ItemWrapper(item, position))
 
     ___ calculateSize  sizeType):
         totalSize _ ?S..()
 
-        ___ wrapper __ list:
+        ___ wrapper __ li..:
             position _ wrapper.position
             itemSize _ ?S..()
 

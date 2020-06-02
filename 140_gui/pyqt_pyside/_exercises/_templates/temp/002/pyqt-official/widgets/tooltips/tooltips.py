@@ -143,7 +143,7 @@ c_ SortingBox(?W..):
                 QToolTip.hideText()
                 event.ignore()
 
-            r_ True
+            r_ T..
 
         r_ super(SortingBox, self).event(event)
 
@@ -206,7 +206,7 @@ c_ SortingBox(?W..):
                 randomItemPosition(), randomItemColor())
 
     ___ itemAt  pos):
-        ___ i __ range(le.(shapeItems) - 1, -1, -1):
+        ___ i __ ra..(le.(shapeItems) - 1, -1, -1):
             item _ shapeItems[i]
             __ item.path().contains(QPointF(pos - item.position())):
                 r_ i

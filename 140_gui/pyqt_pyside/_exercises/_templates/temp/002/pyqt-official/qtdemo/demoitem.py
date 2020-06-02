@@ -64,7 +64,7 @@ c_ DemoItem(QGraphicsObject):
     ___  -   parent_None):
         super(DemoItem, self). - (parent)
 
-        noSubPixeling _ False
+        noSubPixeling _ F..
         currentAnimation _ N..
         currGuide _ N..
         guideFrame _ 0.0
@@ -191,11 +191,11 @@ c_ DemoItem(QGraphicsObject):
                 ____
                     _sharedImage.image _ image
 
-                r_ True
+                r_ T..
             ____
-                r_ False
+                r_ F..
 
-        r_ True
+        r_ T..
 
     ___ boundingRect
         _validateImage()
@@ -230,7 +230,7 @@ c_ DemoItem(QGraphicsObject):
 
             __ no. wasSmoothPixmapTransform:
                 painter.setRenderHint(QPainter.SmoothPixmapTransform,
-                        False)
+                        F..)
 
     ___ collidesWithItem  item, mode):
-        r_ False
+        r_ F..

@@ -68,7 +68,7 @@ c_ SoundWidget ?.?W..
 
         # Slider
         position _ qtw.QSlider(
-            minimum_0, orientation_qtc.__.Horizontal)
+            minimum_0, orientation_qtc.__.H..)
         layout().aW..(position, 1, 0, 1, 2)
 
         player.positionChanged.c..(position.setSliderPosition)
@@ -88,7 +88,7 @@ c_ SoundWidget ?.?W..
             minimum_0,
             maximum_100,
             sliderPosition_75,
-            orientation_qtc.__.Horizontal,
+            orientation_qtc.__.H..,
             sliderMoved_self.player.setVolume
         )
         layout().aW..(volume, 2, 1)
@@ -180,8 +180,8 @@ c_ MainWindow(qtw.QMainWindow):
         soundboard _ qtw.?W..
         soundboard.sL..(qtw.QGridLayout())
         sCW..(soundboard)
-        ___ c __ range(columns):
-            ___ r __ range(rows):
+        ___ c __ ra..(columns):
+            ___ r __ ra..(rows):
                 sw _ SoundWidget()
                 soundboard.layout().aW..(sw, c, r)
 

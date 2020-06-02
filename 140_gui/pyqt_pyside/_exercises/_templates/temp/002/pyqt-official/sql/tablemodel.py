@@ -55,13 +55,13 @@ ___ initializeModel(model):
     model.setEditStrategy(?STM...OnManualSubmit)
     model.select()
 
-    model.setHeaderData(0, __.Horizontal, "ID")
-    model.setHeaderData(1, __.Horizontal, "First name")
-    model.setHeaderData(2, __.Horizontal, "Last name")
+    model.setHeaderData(0, __.H.., "ID")
+    model.setHeaderData(1, __.H.., "First name")
+    model.setHeaderData(2, __.H.., "Last name")
 
 
 ___ createView(title, model):
-    view _ QTableView()
+    view _ ?TV..
     view.sM..(model)
     view.sWT..(title)
     r_ view

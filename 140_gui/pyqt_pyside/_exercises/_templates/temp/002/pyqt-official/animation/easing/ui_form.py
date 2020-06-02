@@ -24,7 +24,7 @@ c_ Ui_Form(object):
         easingCurvePicker.sMS..(?C...?S..(16777215, 120))
         easingCurvePicker.setVerticalScrollBarPolicy(?C...__.ScrollBarAlwaysOff)
         easingCurvePicker.setMovement(?W...QListView.Static)
-        easingCurvePicker.setProperty("isWrapping", False)
+        easingCurvePicker.setProperty("isWrapping", F..)
         easingCurvePicker.setViewMode(?W...QListView.IconMode)
         easingCurvePicker.setSelectionRectVisible F..
         easingCurvePicker.setObjectName("easingCurvePicker")

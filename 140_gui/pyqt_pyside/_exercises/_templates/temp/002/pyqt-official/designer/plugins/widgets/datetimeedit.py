@@ -44,10 +44,10 @@ c_ PyDateEdit(QDateEdit):
         setCalendarPopup( st.
         __cw _ N..
         __firstDayOfWeek _ __.Monday
-        __gridVisible _ False
+        __gridVisible _ F..
         __horizontalHeaderFormat _ QCalendarWidget.ShortDayNames
         __verticalHeaderFormat _ QCalendarWidget.ISOWeekNumbers
-        __navigationBarVisible _ True
+        __navigationBarVisible _ T..
 
     #
     # Call event handler of base class
@@ -70,7 +70,7 @@ c_ PyDateEdit(QDateEdit):
     # Make sure, the calendarPopup property is invisible in Designer
     #
     ___ getCalendarPopup
-        r_ True
+        r_ T..
     calendarPopup _ pyqtProperty(bool, fget_getCalendarPopup)
 
     #
@@ -110,8 +110,8 @@ c_ PyDateEdit(QDateEdit):
             __ __cw:
                 __cw.setGridVisible(show)
     ___ resetGridVisible
-        __ __gridVisible !_ False:
-            __gridVisible _ False
+        __ __gridVisible !_ F..:
+            __gridVisible _ F..
             __ __cw:
                 __cw.setGridVisible F..
     gridVisible _ pyqtProperty(bool,
@@ -180,7 +180,7 @@ c_ PyDateEdit(QDateEdit):
                 __cw.setNavigationBarVisible(visible)
     ___ resetNavigationBarVisible
         __ __navigationBarVisible !_ T..
-            __navigationBarVisible _ True
+            __navigationBarVisible _ T..
             __ __cw:
                 __cw.setNavigationBarVisible( st.
     navigationBarVisible _ pyqtProperty(bool,
@@ -204,10 +204,10 @@ c_ PyDateTimeEdit(?DTE..):
         setCalendarPopup( st.
         __cw _ N..
         __firstDayOfWeek _ __.Monday
-        __gridVisible _ False
+        __gridVisible _ F..
         __horizontalHeaderFormat _ QCalendarWidget.ShortDayNames
         __verticalHeaderFormat _ QCalendarWidget.ISOWeekNumbers
-        __navigationBarVisible _ True
+        __navigationBarVisible _ T..
 
     #
     # Call event handler of base class
@@ -230,7 +230,7 @@ c_ PyDateTimeEdit(?DTE..):
     # Make sure, the calendarPopup property is invisible in Designer
     #
     ___ getCalendarPopup
-        r_ True
+        r_ T..
     calendarPopup _ pyqtProperty(bool, fget_getCalendarPopup)
 
     #
@@ -270,8 +270,8 @@ c_ PyDateTimeEdit(?DTE..):
             __ __cw:
                 __cw.setGridVisible(show)
     ___ resetGridVisible
-        __ __gridVisible !_ False:
-            __gridVisible _ False
+        __ __gridVisible !_ F..:
+            __gridVisible _ F..
             __ __cw:
                 __cw.setGridVisible F..
     gridVisible _ pyqtProperty(bool,
@@ -340,7 +340,7 @@ c_ PyDateTimeEdit(?DTE..):
                 __cw.setNavigationBarVisible(visible)
     ___ resetNavigationBarVisible
         __ __navigationBarVisible !_ T..
-            __navigationBarVisible _ True
+            __navigationBarVisible _ T..
             __ __cw:
                 __cw.setNavigationBarVisible( st.
     navigationBarVisible _ pyqtProperty(bool,

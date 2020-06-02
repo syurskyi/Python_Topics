@@ -62,7 +62,7 @@ c_ MainWindow ?MW..
         dateLabel _ QLabel("Date:")
         monthCombo _ ?CB()
 
-        ___ month __ range(1, 13):
+        ___ month __ ra..(1, 13):
             monthCombo.aI..(QDate.longMonthName(month))
 
         yearEdit _ ?DTE..()
@@ -138,7 +138,7 @@ c_ MainWindow ?MW..
         highlightedFormat _ QTextCharFormat(boldFormat)
         highlightedFormat.setBackground(__.yellow)
 
-        ___ weekDay __ range(1, 8):
+        ___ weekDay __ ra..(1, 8):
             cell _ table.cellAt(0, weekDay-1)
             cellCursor _ cell.firstCursorPosition()
             cellCursor.insertText(QDate.longDayName(weekDay), boldFormat)

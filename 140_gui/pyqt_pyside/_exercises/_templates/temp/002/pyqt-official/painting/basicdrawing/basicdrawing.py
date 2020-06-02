@@ -60,7 +60,7 @@ c_ RenderArea(?W..):
     ])
 
     Line, Points, Polyline, Polygon, Rect, RoundedRect, Ellipse, Arc, Chord, \
-            Pie, Path, Text, Pixmap _ range(13)
+            Pie, Path, Text, Pixmap _ ra..(13)
 
     ___  -   parent_None):
         super(RenderArea, self). - (parent)
@@ -70,8 +70,8 @@ c_ RenderArea(?W..):
         pixmap _ QPixmap()
 
         shape _ RenderArea.Polygon
-        antialiased _ False
-        transformed _ False
+        antialiased _ F..
+        transformed _ F..
         pixmap.load(':/images/qt-logo.png')
 
         setBackgroundRole(?P...Base)
@@ -120,8 +120,8 @@ c_ RenderArea(?W..):
         __ antialiased:
             painter.setRenderHint(QPainter.Antialiasing)
 
-        ___ x __ range(0, width(), 100):
-            ___ y __ range(0, height(), 100):
+        ___ x __ ra..(0, width(), 100):
+            ___ y __ ra..(0, height(), 100):
                 painter.save()
                 painter.translate(x, y)
                 __ transformed:

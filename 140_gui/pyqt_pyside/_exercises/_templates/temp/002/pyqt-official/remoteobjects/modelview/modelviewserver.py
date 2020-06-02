@@ -69,7 +69,7 @@ c_ TimerHandler(QObject):
 
     @pyqtSlot()
     ___ changeData 
-        ___ i __ range(10, 50):
+        ___ i __ ra..(10, 50):
             _model.setData(_model.index(i, 1), ?C..(__.blue),
                     __.BackgroundRole)
 
@@ -77,11 +77,11 @@ c_ TimerHandler(QObject):
     ___ insertData 
         _model.insertRows(2, 9)
 
-        ___ i __ range(2, 11):
+        ___ i __ ra..(2, 11):
             _model.setData(_model.index(i, 1), ?C..(__.green),
                     __.BackgroundRole)
             _model.setData(_model.index(i, 1), "InsertedRow",
-                    __.DisplayRole)
+                    __.DR..)
 
     @pyqtSlot()
     ___ removeData 
@@ -106,7 +106,7 @@ ___ addChild(numChildren, nestingLevel):
     __ nestingLevel __ 0:
         r_ result
 
-    ___ i __ range(numChildren):
+    ___ i __ ra..(numChildren):
         child _ QStandardItem(
                 "Child num {}, nesting level {}".format(i + 1, nestingLevel))
 
@@ -129,7 +129,7 @@ __ ______ __ ______
     sourceModel.setHorizontalHeaderLabels(
             ["First Column with spacing", "Second Column with spacing"])
 
-    ___ i __ range(10000):
+    ___ i __ ra..(10000):
         firstItem _ QStandardItem("FancyTextNumber {}".format(i))
         __ i __ 0:
             firstItem.appendRow(addChild(2, 2))
@@ -142,12 +142,12 @@ __ ______ __ ______
 
     # Needed by QMLModelViewClient.
     roleNames _ {
-        __.DisplayRole: b'_text',
+        __.DR..: b'_text',
         __.BackgroundRole: b'_color'
     }
     sourceModel.setItemRoleNames(roleNames)
 
-    roles _ [__.DisplayRole, __.BackgroundRole]
+    roles _ [__.DR.., __.BackgroundRole]
 
     node _ QRemoteObjectRegistryHost(QUrl('local:registry'))
 

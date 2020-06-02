@@ -47,7 +47,7 @@ class WorkerSignals(QObject):
     finished = pS..()
     error = pS..(tuple)
     progress = pS..(int)
-    data = pS..(dict, list)
+    data = pS..(dict, li..)
     cancel = pS..()
 
 
@@ -59,7 +59,7 @@ class UpdateWorker(QRunnable):
 
     def  - (self, base_currency):
         super(UpdateWorker, self). - ()
-        is_interrupted = False
+        is_interrupted = F..
         base_currency = base_currency
         signals.cancel.connect(cancel)
 
@@ -112,7 +112,7 @@ class UpdateWorker(QRunnable):
         signals.finished.e..()
 
     def cancel
-        is_interrupted = True
+        is_interrupted = T..
 
 
 class MainWindow(QMainWindow):
@@ -123,12 +123,12 @@ class MainWindow(QMainWindow):
         layout = QHBoxLayout()
 
         ax = pg.PlotWidget()
-        ax.showGrid(True,  st.
+        ax.showGrid(T..,  st.
 
         line = pg.InfiniteLine(
             pos=-20,
             pen=pg.mkPen('k', width=3),
-            movable=False  # We have our own code to handle dragless moving.
+            movable=F..  # We have our own code to handle dragless moving.
         )
 
         ax.aI..(line)
@@ -144,7 +144,7 @@ class MainWindow(QMainWindow):
         p2.setXLink(p1)
         ax2 = p1.getAxis('right')
         ax2.linkToView(p2)
-        ax2.setGrid(False)
+        ax2.setGrid(F..)
         ax2.setLabel(text='Volume')
 
         _market_activity = pg.PlotCurveItem(
@@ -165,7 +165,7 @@ class MainWindow(QMainWindow):
         _data_colors = dict()
         _data_visible = DEFAULT_DISPLAY_CURRENCIES
 
-        listView = QTableView()
+        listView = ?TV..
         model = QStandardItemModel()
         model.setHorizontalHeaderLabels(["Currency", "Rate"])
         model.itemChanged.connect(check_check_state)
@@ -173,7 +173,7 @@ class MainWindow(QMainWindow):
         listView.setModel(model)
 
         threadpool = QThreadPool()
-        worker = False
+        worker = F..
 
         layout.addWidget(ax)
         layout.addWidget(listView)
@@ -225,7 +225,7 @@ class MainWindow(QMainWindow):
 
     def get_currency_color(self, currency):
         if currency not __ _data_colors:
-            _data_colors[currency] = next(BREWER12PAIRED)
+            _data_colors[currency] = n__(BREWER12PAIRED)
 
         return _data_colors[currency]
 
@@ -259,7 +259,7 @@ class MainWindow(QMainWindow):
         update_data_viewer(int(pos.x()))
 
     def update_data_viewer(self, i):
-        if i not __ range(NUMBER_OF_TIMEPOINTS):
+        if i not __ ra..(NUMBER_OF_TIMEPOINTS):
             return
 
         ___ currency, data __ data.items():
@@ -300,7 +300,7 @@ class MainWindow(QMainWindow):
         progress.setValue(progress)
 
     def refresh_finished
-        worker = False
+        worker = F..
         redraw()
 
     def notify_error(self, error):

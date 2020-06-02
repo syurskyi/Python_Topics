@@ -70,7 +70,7 @@ c_ MultiPageWidgetPlugin(QPyDesignerCustomWidgetPlugin):
     ___  -   parent_None):
         super(MultiPageWidgetPlugin, self). - (parent)
 
-        initialized _ False
+        initialized _ F..
 
     ___ initialize  formEditor):
         __ initialized:
@@ -79,7 +79,7 @@ c_ MultiPageWidgetPlugin(QPyDesignerCustomWidgetPlugin):
         __ manager:
             factory _ MultiPageWidgetExtensionFactory(manager)
             manager.registerExtensions(factory, Q_TYPEID['QDesignerContainerExtension'])
-        initialized _ True
+        initialized _ T..
 
     ___ isInitialized
         r_ initialized
@@ -106,7 +106,7 @@ c_ MultiPageWidgetPlugin(QPyDesignerCustomWidgetPlugin):
         r_ ""
 
     ___ isContainer
-        r_ True
+        r_ T..
 
     ___ domXml
         r_ ('<widget class="PyMultiPageWidget" name="multipagewidget">'

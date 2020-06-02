@@ -56,8 +56,8 @@ c_ SpreadSheetDelegate(QItemDelegate):
         editor _ QLineEdit(parent)
         # create a completer with the strings in the column as model
         allStrings _   # list
-        ___ i __ range(1, index.model().rowCount()):
-            strItem _ index.model().data(index.sibling(i, index.column()), __.EditRole)
+        ___ i __ ra..(1, index.model().rowCount()):
+            strItem _ index.model().data(index.sibling(i, index.column()), __.ER..)
             __ strItem no. __ allStrings:
                 allStrings.ap..(strItem)
 
@@ -73,10 +73,10 @@ c_ SpreadSheetDelegate(QItemDelegate):
 
     ___ setEditorData  editor, index):
         __ isinstance(editor, QLineEdit):
-            editor.sT..(index.model().data(index, __.EditRole))
+            editor.sT..(index.model().data(index, __.ER..))
         ____ isinstance(editor, ?DTE..):
             editor.setDate(QDate.fromString(
-                index.model().data(index, __.EditRole), parent().currentDateFormat))
+                index.model().data(index, __.ER..), parent().currentDateFormat))
 
     ___ setModelData  editor, model, index):
         __ isinstance(editor, QLineEdit):

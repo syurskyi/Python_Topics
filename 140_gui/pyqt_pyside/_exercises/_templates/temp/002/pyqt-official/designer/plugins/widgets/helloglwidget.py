@@ -193,7 +193,7 @@ c_ HelloGLWidget(QOpenGLWidget):
         Pi _ 3.14159265358979323846
         NumSectors _ 200
 
-        ___ i __ range(NumSectors):
+        ___ i __ ra..(NumSectors):
             angle1 _ (i * 2 * Pi) / NumSectors
             x5 _ 0.30 * math.sin(angle1)
             y5 _ 0.30 * math.cos(angle1)

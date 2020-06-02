@@ -7,13 +7,13 @@ ___ initializeModel model
     model.setTable('sportsmen')
     model.setEditStrategy(?S...?STM...OnFieldChange)
     model.select()
-    model.setHeaderData(0, ?C...__.Horizontal, "ID")
-    model.setHeaderData(1, ?C...__.Horizontal, "First name")
-    model.setHeaderData(2, ?C...__.Horizontal, "Last name")
+    model.setHeaderData(0, ?C...__.H.., "ID")
+    model.setHeaderData(1, ?C...__.H.., "First name")
+    model.setHeaderData(2, ?C...__.H.., "Last name")
 
 
 ___ createView(title, model):
-    view _ ?W...QTableView()
+    view _ ?W...?TV..
     view.sM..(model)
     view.sWT..(title)
     r_ view

@@ -202,7 +202,7 @@ __ ______ __ ______
     scene.setSceneRect(-300, -300, 600, 600)
     scene.setItemIndexMethod(QGraphicsScene.NoIndex)
 
-    ___ i __ range(MouseCount):
+    ___ i __ ra..(MouseCount):
         mouse _ Mouse()
         mouse.setPos(math.sin((i * 6.28) / MouseCount) * 200,
                      math.cos((i * 6.28) / MouseCount) * 200)

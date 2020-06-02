@@ -194,11 +194,11 @@ c_ TextButton(DemoItem):
     BUTTON_WIDTH _ 180
     BUTTON_HEIGHT _ 19
 
-    LEFT, RIGHT _ range(2)
+    LEFT, RIGHT _ ra..(2)
 
-    SIDEBAR, PANEL, UP, DOWN _ range(4)
+    SIDEBAR, PANEL, UP, DOWN _ ra..(4)
 
-    ON, OFF, HIGHLIGHT, DISABLED _ range(4)
+    ON, OFF, HIGHLIGHT, DISABLED _ ra..(4)
 
     ___  -   t__, align_LEFT, userCode_0, parent_None, type_SIDEBAR):
         super(TextButton, self). - (parent)
@@ -228,7 +228,7 @@ c_ TextButton(DemoItem):
         ____
             logicalSize _ ?S..(int((TextButton.BUTTON_WIDTH / 2.0) - 5), int(TextButton.BUTTON_HEIGHT * 1.5))
 
-        _prepared _ False
+        _prepared _ F..
 
     ___ setMenuString  menu):
         menuString _ menu
@@ -238,7 +238,7 @@ c_ TextButton(DemoItem):
             setupHoverText()
             setupScanItem()
             setupButtonBg()
-            _prepared _ True
+            _prepared _ T..
 
     ___ boundingRect 
         r_ QRectF(0, 0, logicalSize.width(),
@@ -288,13 +288,13 @@ c_ TextButton(DemoItem):
             setCursor(__.PointingHandCursor)
 
     ___ setupButtonBg 
-        bgOn _ ButtonBackground(buttonType, True, True,
+        bgOn _ ButtonBackground(buttonType, T.., T..,
                 logicalSize, self)
-        bgOff _ ButtonBackground(buttonType, False, False,
+        bgOff _ ButtonBackground(buttonType, F.., F..,
                 logicalSize, self)
-        bgHighlight _ ButtonBackground(buttonType, True, False,
+        bgHighlight _ ButtonBackground(buttonType, T.., F..,
                 logicalSize, self)
-        bgDisabled _ ButtonBackground(buttonType, True, True,
+        bgDisabled _ ButtonBackground(buttonType, T.., T..,
                 logicalSize, self)
         setState(TextButton.OFF)
 
@@ -314,7 +314,7 @@ c_ TextButton(DemoItem):
             __ (_menu_manager.window.fpsMedian > 10 or Colors.noAdapt or
                     Colors.noTimerUpdate):
                 __ Colors.useButtonBalls:
-                    scanAnim.play(True,  st.
+                    scanAnim.play(T..,  st.
 
     ___ hoverLeaveEvent  event):
         __ state __ TextButton.DISABLED:

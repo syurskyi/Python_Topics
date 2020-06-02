@@ -81,7 +81,7 @@ c_ AnimalModel(QAbstractListModel):
     ___ rowCount  parent_QModelIndex()):
         r_ le.(_animals)
 
-    ___ data  index, role_Qt.DisplayRole):
+    ___ data  index, role_Qt.DR..):
         ___
             animal _ _animals[index.row()]
         _____ IE..

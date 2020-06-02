@@ -42,7 +42,7 @@ c_ HelloGLWidgetPlugin(QPyDesignerCustomWidgetPlugin):
     
         super(HelloGLWidgetPlugin, self). - (parent)
 
-        initialized _ False
+        initialized _ F..
 
     # The initialize() and isInitialized() methods allow the plugin to set up
     # any required resources, ensuring that this can only happen once for each
@@ -52,7 +52,7 @@ c_ HelloGLWidgetPlugin(QPyDesignerCustomWidgetPlugin):
         __ initialized:
             r_
 
-        initialized _ True
+        initialized _ T..
 
     ___ isInitialized
         r_ initialized
@@ -91,7 +91,7 @@ c_ HelloGLWidgetPlugin(QPyDesignerCustomWidgetPlugin):
     # need to provide an implementation of the QDesignerContainerExtension
     # interface if they need to add custom editing support to Qt Designer.
     ___ isContainer
-        r_ False
+        r_ F..
 
     # Returns an XML description of a custom widget instance that describes
     # default values for its properties. Each custom widget created by this

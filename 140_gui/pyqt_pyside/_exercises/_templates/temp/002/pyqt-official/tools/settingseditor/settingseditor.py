@@ -296,7 +296,7 @@ c_ LocationDialog(QDialog):
         locationsTable.setUpdatesEnabled F..
         locationsTable.setRowCount(0)
 
-        ___ i __ range(2):
+        ___ i __ ra..(2):
             __ i __ 0:
                 __ scope() __ QSettings.SystemScope:
                     continue
@@ -305,7 +305,7 @@ c_ LocationDialog(QDialog):
             ____
                 actualScope _ QSettings.SystemScope
 
-            ___ j __ range(2):
+            ___ j __ ra..(2):
                 __ j __ 0:
                     __ no. application
                         continue
@@ -329,7 +329,7 @@ c_ LocationDialog(QDialog):
                 __ row __ 0:
                     __ settings.isWritable
                         item1.sT..("Read-write")
-                        disable _ False
+                        disable _ F..
                     ____
                         item1.sT..("Read-only")
                     buttonBox.button(QDialogButtonBox.Ok).sD..(disable)
@@ -359,7 +359,7 @@ c_ SettingsTree(QTreeWidget):
         settings _ N..
         refreshTimer _ ?T..
         refreshTimer.setInterval(2000)
-        autoRefresh _ False
+        autoRefresh _ F..
 
         groupIcon _ QIcon()
         groupIcon.addPixmap(style().standardPixmap(QStyle.SP_DirClosedIcon),
@@ -467,7 +467,7 @@ c_ SettingsTree(QTreeWidget):
             __ childIndex __ -1 or childIndex >_ dividerIndex:
                 __ childIndex !_ -1:
                     child _ childAt(parent, childIndex)
-                    ___ i __ range(child.childCount()):
+                    ___ i __ ra..(child.childCount()):
                         deleteItem(child, i)
                     moveItemForward(parent, childIndex, dividerIndex)
                 ____
@@ -500,7 +500,7 @@ c_ SettingsTree(QTreeWidget):
             item _ QTreeWidgetItem  after)
 
         item.sT..(0, t__)
-        item.setFlags(item.flags() | __.ItemIsEditable)
+        item.setFlags(item.flags() | __.IIE..)
         r_ item
 
     ___ deleteItem  parent, index):
@@ -523,13 +523,13 @@ c_ SettingsTree(QTreeWidget):
             r_ topLevelItemCount()
 
     ___ findChild  parent, t__, startIndex):
-        ___ i __ range(childCount(parent)):
+        ___ i __ ra..(childCount(parent)):
             __ childAt(parent, i).t__(0) __ t__:
                 r_ i
         r_ -1
 
     ___ moveItemForward  parent, oldIndex, newIndex):
-        ___ int __ range(oldIndex - newIndex):
+        ___ int __ ra..(oldIndex - newIndex):
             deleteItem(parent, newIndex)
 
 
@@ -679,18 +679,18 @@ c_ VariantDelegate(QItemDelegate):
             sizeExp.exactMatch(t__)
             value _ ?S..(int(sizeExp.cap(1)),
                           int(sizeExp.cap(2)))
-        ____ isinstance(originalValue, list):
+        ____ isinstance(originalValue, li..):
             value _ t__.sp..(',')
         ____
             value _ type(originalValue)(t__)
 
-        model.setData(index, displayText(value), __.DisplayRole)
+        model.setData(index, displayText(value), __.DR..)
         model.setData(index, value, __.UserRole)
 
     @staticmethod
     ___ isSupportedType(value):
         r_ isinstance(value, (bool, float, int, QByteArray, str, ?C..,
-                QDate, QDateTime, ?T.., QPoint, QRect, ?S.., list))
+                QDate, QDateTime, ?T.., QPoint, QRect, ?S.., li..))
 
     @staticmethod
     ___ displayText(value):
@@ -710,7 +710,7 @@ c_ VariantDelegate(QItemDelegate):
             r_ '(%d,%d,%d,%d)' % (value.x(), value.y(), value.width(), value.height())
         ____ isinstance(value, ?S..):
             r_ '(%d,%d)' % (value.width(), value.height())
-        ____ isinstance(value, list):
+        ____ isinstance(value, li..):
             r_ ','.join(value)
         ____ value __ N..:
             r_ '<Invalid>'

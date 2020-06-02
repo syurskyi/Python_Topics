@@ -64,12 +64,12 @@ c_ MenuContentItem(DemoItem):
 
         readmePath _ readme_dir.absoluteFilePath('README')
 
-        _prepared _ False
+        _prepared _ F..
 
     ___ prepare 
         __ no. _prepared:
             createContent()
-            _prepared_ True
+            _prepared_ T..
 
     ___ animationStopped  id):
         __ name __ Colors.rootMenuName:
@@ -81,7 +81,7 @@ c_ MenuContentItem(DemoItem):
             heading _ N..
             description1 _ N..
             description2 _ N..
-            _prepared _ False
+            _prepared _ F..
 
     ___ loadDescription  startPara, nrPara):
         readme _ QFile(readmePath)

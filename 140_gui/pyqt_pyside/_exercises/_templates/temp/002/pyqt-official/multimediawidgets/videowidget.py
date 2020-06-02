@@ -66,7 +66,7 @@ c_ VideoPlayer(?W..):
         playButton.setIcon(style().standardIcon(QStyle.SP_MediaPlay))
         playButton.c__.c..(play)
 
-        positionSlider _ QSlider(__.Horizontal)
+        positionSlider _ QSlider(__.H..)
         positionSlider.setRange(0, 0)
         positionSlider.sliderMoved.c..(setPosition)
 

@@ -175,7 +175,7 @@ c_ DiagramTextItem(QGraphicsTextItem):
 
 
 c_ DiagramItem(QGraphicsPolygonItem):
-    Step, Conditional, StartEnd, Io _ range(4)
+    Step, Conditional, StartEnd, Io _ ra..(4)
 
     ___  -   diagramType, contextMenu, parent_None):
         super(DiagramItem, self). - (parent)
@@ -252,7 +252,7 @@ c_ DiagramItem(QGraphicsPolygonItem):
 
 
 c_ DiagramScene(QGraphicsScene):
-    InsertItem, InsertLine, InsertText, MoveItem  _ range(4)
+    InsertItem, InsertLine, InsertText, MoveItem  _ ra..(4)
 
     itemInserted _ pS..(DiagramItem)
 
@@ -381,8 +381,8 @@ c_ DiagramScene(QGraphicsScene):
     ___ isItemChange  type):
         ___ item __ selectedItems
             __ isinstance(item, type):
-                r_ True
-        r_ False
+                r_ T..
+        r_ F..
 
 
 c_ MainWindow ?MW..
@@ -673,7 +673,7 @@ c_ MainWindow ?MW..
 
         fontSizeCombo _ ?CB()
         fontSizeCombo.setEditable( st.
-        ___ i __ range(8, 30, 2):
+        ___ i __ ra..(8, 30, 2):
             fontSizeCombo.aI..(str(i))
         validator _ QIntValidator(2, 64, self)
         fontSizeCombo.sV..(validator)

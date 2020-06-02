@@ -217,7 +217,7 @@ c_ GLWidget(QOpenGLWidget):
 
         NumSectors _ 200
 
-        ___ i __ range(NumSectors):
+        ___ i __ ra..(NumSectors):
             angle1 _ (i * 2 * math.pi) / NumSectors
             x5 _ 0.30 * math.sin(angle1)
             y5 _ 0.30 * math.cos(angle1)

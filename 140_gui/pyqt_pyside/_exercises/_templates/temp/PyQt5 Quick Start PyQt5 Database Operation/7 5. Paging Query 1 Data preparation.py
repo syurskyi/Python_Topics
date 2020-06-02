@@ -1,7 +1,7 @@
 db _ ?SD...aD..("QSQLITE")
 db.sDN..("/home/user/test.db")
 __ no. db.o..
-    r_ False
+    r_ F..
 query _ QSqlQuery()
 query.exec_("create table student(id int primary key, name varchar(20), sex varchar(8), age int);")
 

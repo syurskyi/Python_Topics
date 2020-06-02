@@ -80,7 +80,7 @@ c_ SortedDict(dict):
 
 
 c_ AddressBook(?W..):
-    NavigationMode, AddingMode, EditingMode _ range(3)
+    NavigationMode, AddingMode, EditingMode _ ra..(3)
 
     ___  -   parent_None):
         super(AddressBook, self). - (parent)
@@ -251,10 +251,10 @@ c_ AddressBook(?W..):
                 this_name, _ _ it.next()
 
                 __ this_name __ name:
-                    next_name, next_address _ it.next()
+                    next_name, next_address _ it.n__()
                     break
         _____ StopIteration:
-            next_name, next_address _ iter(contacts).next()
+            next_name, next_address _ iter(contacts).n__()
 
         nameLine.sT..(next_name)
         addressText.sT..(next_address)

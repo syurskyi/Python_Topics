@@ -59,7 +59,7 @@ c_ FinalWidget(QFrame):
 
         dragStartPosition _ QPoint()
 
-        hasImage _ False
+        hasImage _ F..
         imageLabel _ QLabel()
         imageLabel.setFrameShadow(QFrame.Sunken)
         imageLabel.setFrameShape(QFrame.StyledPanel)
@@ -113,12 +113,12 @@ c_ FinalWidget(QFrame):
 
     ___ setPixmap  pixmap):
         imageLabel.setPixmap(pixmap)
-        hasImage _ True
+        hasImage _ T..
 
 
 c_ ScreenWidget(QFrame):
     # Separation.
-    Cyan, Magenta, Yellow _ range(3)
+    Cyan, Magenta, Yellow _ ra..(3)
 
     convertMap _ {
         Cyan: qRed,
@@ -140,7 +140,7 @@ c_ ScreenWidget(QFrame):
 
         paintColor _ initialColor
         maskColor _ mask
-        inverted _ False
+        inverted _ F..
 
         imageLabel _ QLabel()
         imageLabel.setFrameShadow(QFrame.Sunken)
@@ -185,8 +185,8 @@ c_ ScreenWidget(QFrame):
 
         convert _ convertMap[maskColor]
 
-        ___ y __ range(newImage.height()):
-            ___ x __ range(newImage.width()):
+        ___ y __ ra..(newImage.height()):
+            ___ x __ ra..(newImage.width()):
                 p _ originalImage.pixel(x, y)
 
                 # Separate the source pixel into its cyan component.
@@ -243,7 +243,7 @@ c_ ScreenWidget(QFrame):
 
 c_ Viewer ?MW..
     # Brightness.
-    Gloom, Quarter, Half, ThreeQuarters, Full _ range(5)
+    Gloom, Quarter, Half, ThreeQuarters, Full _ ra..(5)
 
     # Brightness value map.
     brightnessValueMap _ {
@@ -424,8 +424,8 @@ c_ Viewer ?MW..
         image3 _ yellowWidget.image()
         darkness _ 255 - brightness
 
-        ___ y __ range(newImage.height()):
-            ___ x __ range(newImage.width()):
+        ___ y __ ra..(newImage.height()):
+            ___ x __ ra..(newImage.width()):
                 # Create three screens, using the quantities of the source CMY
                 # components to determine how much of each of the inks are to
                 # be put on each screen.

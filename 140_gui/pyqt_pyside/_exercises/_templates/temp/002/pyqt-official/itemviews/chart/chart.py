@@ -76,7 +76,7 @@ c_ PieView(QAbstractItemView):
         validItems _ 0
         totalValue _ 0.0
 
-        ___ row __ range(model().rowCount(rootIndex())):
+        ___ row __ ra..(model().rowCount(rootIndex())):
 
             index _ model().index(row, 1, rootIndex())
             value _ model().data(index)
@@ -91,7 +91,7 @@ c_ PieView(QAbstractItemView):
         __ index.column() __ 0:
             r_ super(PieView, self).edit(index, trigger, event)
         ____
-            r_ False
+            r_ F..
 
     ___ indexAt  point):
         __ validItems __ 0:
@@ -119,7 +119,7 @@ c_ PieView(QAbstractItemView):
             # Find the relevant slice of the pie.
             startAngle _ 0.0
 
-            ___ row __ range(model().rowCount(rootIndex())):
+            ___ row __ ra..(model().rowCount(rootIndex())):
 
                 index _ model().index(row, 1, rootIndex())
                 value _ model().data(index)
@@ -137,7 +137,7 @@ c_ PieView(QAbstractItemView):
             listItem _ int((wy - margin) / itemHeight)
             validRow _ 0
 
-            ___ row __ range(model().rowCount(rootIndex())):
+            ___ row __ ra..(model().rowCount(rootIndex())):
 
                 index _ model().index(row, 1, rootIndex())
                 __ model().data(index) > 0.0:
@@ -152,7 +152,7 @@ c_ PieView(QAbstractItemView):
         r_ QModelIndex()
 
     ___ isIndexHidden  index):
-        r_ False
+        r_ F..
 
     ___ itemRect  index):
         __ no. index.isValid
@@ -170,7 +170,7 @@ c_ PieView(QAbstractItemView):
         __ value __ no. N.. and value > 0.0:
 
             listItem _ 0
-            ___ row __ range(index.row()-1, -1, -1):
+            ___ row __ ra..(index.row()-1, -1, -1):
                 __ model().data(model().index(row, 1, rootIndex())) > 0.0:
                     listItem +_ 1
 
@@ -196,7 +196,7 @@ c_ PieView(QAbstractItemView):
             r_ QRegion()
 
         startAngle _ 0.0
-        ___ row __ range(model().rowCount(rootIndex())):
+        ___ row __ ra..(model().rowCount(rootIndex())):
 
             sliceIndex _ model().index(row, 1, rootIndex())
             value _ model().data(sliceIndex)
@@ -297,7 +297,7 @@ c_ PieView(QAbstractItemView):
             painter.drawEllipse(0, 0, pieSize, pieSize)
             startAngle _ 0.0
 
-            ___ row __ range(model().rowCount(rootIndex())):
+            ___ row __ ra..(model().rowCount(rootIndex())):
 
                 index _ model().index(row, 1, rootIndex())
                 value _ model().data(index)
@@ -324,7 +324,7 @@ c_ PieView(QAbstractItemView):
 
             keyNumber _ 0
 
-            ___ row __ range(model().rowCount(rootIndex())):
+            ___ row __ ra..(model().rowCount(rootIndex())):
                 index _ model().index(row, 1, rootIndex())
                 value _ model().data(index)
 
@@ -348,7 +348,7 @@ c_ PieView(QAbstractItemView):
         r_ model().rowCount(model().parent(index))
 
     ___ rowsInserted  parent, start, end):
-        ___ row __ range(start, end + 1):
+        ___ row __ ra..(start, end + 1):
             index _ model().index(row, 1, rootIndex())
             value _ model().data(index)
 
@@ -359,7 +359,7 @@ c_ PieView(QAbstractItemView):
         super(PieView, self).rowsInserted(parent, start, end)
 
     ___ rowsAboutToBeRemoved  parent, start, end):
-        ___ row __ range(start, end + 1):
+        ___ row __ ra..(start, end + 1):
             index _ model().index(row, 1, rootIndex())
             value _ model().data(index)
 
@@ -403,8 +403,8 @@ c_ PieView(QAbstractItemView):
         columns _ model().columnCount(rootIndex())
         indexes _   # list
 
-        ___ row __ range(rows):
-            ___ column __ range(columns):
+        ___ row __ ra..(rows):
+            ___ column __ ra..(columns):
                 index _ model().index(row, column, rootIndex())
                 region _ itemRegion(index)
                 __ region.intersects(QRegion(contentsRect)):
@@ -416,7 +416,7 @@ c_ PieView(QAbstractItemView):
             firstColumn _ indexes[0].column()
             lastColumn _ indexes[0].column()
 
-            ___ i __ range(1, le.(indexes)):
+            ___ i __ ra..(1, le.(indexes)):
                 firstRow _ min(firstRow, indexes[i].row())
                 lastRow _ max(lastRow, indexes[i].row())
                 firstColumn _ min(firstColumn, indexes[i].column())
@@ -455,8 +455,8 @@ c_ PieView(QAbstractItemView):
         region _ QRegion()
 
         ___ span __ selection:
-            ___ row __ range(span.top(), span.bottom() + 1):
-                ___ col __ range(span.left(), span.right() + 1):
+            ___ row __ ra..(span.top(), span.bottom() + 1):
+                ___ col __ ra..(span.left(), span.right() + 1):
                     index _ model().index(row, col, rootIndex())
                     region +_ visualRect(index)
 
@@ -492,12 +492,12 @@ c_ MainWindow ?MW..
 
     ___ setupModel
         model _ QStandardItemModel(8, 2, self)
-        model.setHeaderData(0, __.Horizontal, "Label")
-        model.setHeaderData(1, __.Horizontal, "Quantity")
+        model.setHeaderData(0, __.H.., "Label")
+        model.setHeaderData(1, __.H.., "Quantity")
 
     ___ setupViews
         splitter _ QSplitter()
-        table _ QTableView()
+        table _ ?TV..
         pieChart _ PieView()
         splitter.aW..(table)
         splitter.aW..(pieChart)
@@ -556,17 +556,17 @@ c_ MainWindow ?MW..
             f _ QFile(fileName)
 
             __ f.o..(QFile.WriteOnly | QFile.Text):
-                ___ row __ range(model.rowCount(QModelIndex())):
+                ___ row __ ra..(model.rowCount(QModelIndex())):
                     pieces _   # list
 
                     pieces.ap..(
                             model.data(
                                     model.index(row, 0, QModelIndex()),
-                                    __.DisplayRole))
+                                    __.DR..))
                     pieces.ap..(
                             '%g' % model.data(
                                     model.index(row, 1, QModelIndex()),
-                                    __.DisplayRole))
+                                    __.DR..))
                     pieces.ap..(
                             model.data(
                                     model.index(row, 0, QModelIndex()),

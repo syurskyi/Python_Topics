@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ (QAbstractTableModel, QDir, QModelIndex, QRect,
+____ ?.?C.. ______ (?ATM.., QDir, QModelIndex, QRect,
         QRectF, ?S.., __)
 ____ ?.?G.. ______ QBrush, qGray, QImage, QPainter
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
@@ -68,7 +68,7 @@ c_ PixelDelegate(QAbstractItemDelegate):
             painter.fillRect(option.rect, option.palette.highlight())
 
         size _ min(option.rect.width(), option.rect.height())
-        brightness _ index.model().data(index, __.DisplayRole)
+        brightness _ index.model().data(index, __.DR..)
         radius _ (size/2.0) - (brightness/255.0 * size/2.0)
         __ radius __ 0.0:
             r_
@@ -114,12 +114,12 @@ c_ ImageModel ?ATM..
         r_ modelImage.width()
 
     ___ data  index, role):
-        __ no. index.isValid() or role !_ __.DisplayRole:
+        __ no. index.iV.. or role !_ __.DR..:
             r_ N..
 
         r_ qGray(modelImage.pixel(index.column(), index.row()))
 
-    ___ headerData  section, orientation, role):
+    ___ hD..  section, orientation, role):
         __ role __ __.SizeHintRole:
             r_ ?S..(1, 1)
 
@@ -135,7 +135,7 @@ c_ MainWindow ?MW..
 
         centralWidget _ ?W..
 
-        view _ QTableView()
+        view _ ?TV..
         view.setShowGrid F..
         view.horizontalHeader().hide()
         view.verticalHeader().hide()
@@ -255,7 +255,7 @@ c_ MainWindow ?MW..
         progress.setWindowModality(__.ApplicationModal)
         y _ ItemSize / 2.0
 
-        ___ row __ range(rows):
+        ___ row __ ra..(rows):
             progress.setValue(row)
             ?A...processEvents()
             __ progress.wasCanceled
@@ -263,7 +263,7 @@ c_ MainWindow ?MW..
 
             x _ ItemSize / 2.0
 
-            ___ column __ range(columns):
+            ___ column __ ra..(columns):
                 option.rect _ QRect(x, y, ItemSize, ItemSize)
                 view.itemDelegate().paint(painter, option,
                         model.index(row, column, parent))

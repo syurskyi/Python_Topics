@@ -37,7 +37,7 @@ c_ Ui_Form(object):
         horizontalLayout.setObjectName("horizontalLayout")
         horizontalSlider _ ?W...QSlider(groupBox)
         horizontalSlider.setProperty("value", 42)
-        horizontalSlider.setOrientation(?C...__.Horizontal)
+        horizontalSlider.setOrientation(?C...__.H..)
         horizontalSlider.setObjectName("horizontalSlider")
         horizontalLayout.aW..(horizontalSlider)
         spinBox _ ?W...SB..(groupBox)
@@ -105,5 +105,5 @@ c_ Ui_Form(object):
         treeWidget.topLevelItem(2).sT..(0, _translate("Form", "QGraphicsLinearLayout"))
         treeWidget.topLevelItem(2).child(0).sT..(0, _translate("Form", "QGraphicsLayout"))
         treeWidget.topLevelItem(2).child(0).child(0).sT..(0, _translate("Form", "QGraphicsLayoutItem"))
-        treeWidget.setSortingEnabled(__sortingEnabled)
+        treeWidget.sSE..__sortingEnabled)
 

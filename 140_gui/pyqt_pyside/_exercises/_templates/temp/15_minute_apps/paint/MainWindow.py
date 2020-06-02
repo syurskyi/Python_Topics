@@ -249,7 +249,7 @@ class Ui_MainWindow(object):
         icon15.addPixmap(QtGui.QPixmap("images/spray.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         sprayButton.setIcon(icon15)
         sprayButton.setCheckable( st.
-        sprayButton.setFlat(False)
+        sprayButton.setFlat(F..)
         sprayButton.setObjectName("sprayButton")
         gridLayout.addWidget(sprayButton, 4, 0, 1, 1)
         verticalLayout_2.addWidget(widget)

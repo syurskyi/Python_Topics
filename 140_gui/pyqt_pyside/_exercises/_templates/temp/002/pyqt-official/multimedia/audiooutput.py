@@ -102,7 +102,7 @@ c_ Generator(QIODevice):
             x _ sin((sampleIndex % format.sampleRate()) * factor)
             packed _ pack(pack_format, int(scaler(x)))
 
-            ___ _ __ range(format.channelCount()):
+            ___ _ __ ra..(format.channelCount()):
                 m_buffer.ap..(packed)
                 length -_ channelBytes
 
@@ -169,7 +169,7 @@ c_ AudioTest ?MW..
 
         volumeBox _ QHBoxLayout()
         volumeLabel _ QLabel("Volume:")
-        m_volumeSlider _ QSlider(__.Horizontal, minimum_0, maximum_100,
+        m_volumeSlider _ QSlider(__.H.., minimum_0, maximum_100,
                 singleStep_10, valueChanged_self.volumeChanged)
         volumeBox.aW..(volumeLabel)
         volumeBox.aW..(m_volumeSlider)
@@ -183,7 +183,7 @@ c_ AudioTest ?MW..
 
     ___ initializeAudio
         m_pullTimer _ QTimer  timeout_self.pullTimerExpired)
-        m_pullMode _ True
+        m_pullMode _ T..
 
         m_format _ QAudioFormat()
         m_format.setSampleRate(DataSampleRateHz)
@@ -233,7 +233,7 @@ c_ AudioTest ?MW..
     ___ pullTimerExpired
         __ m_audioOutput __ no. N.. and m_audioOutput.state() !_ QAudio.StoppedState:
             chunks _ m_audioOutput.bytesFree() // m_audioOutput.periodSize()
-            ___ _ __ range(chunks):
+            ___ _ __ ra..(chunks):
                 data _ m_generator.read(m_audioOutput.periodSize())
                 __ data __ N.. or le.(data) !_ m_audioOutput.periodSize
                     break
@@ -247,11 +247,11 @@ c_ AudioTest ?MW..
         __ m_pullMode:
             m_modeButton.sT..(PULL_MODE_LABEL)
             m_output _ m_audioOutput.start()
-            m_pullMode _ False
+            m_pullMode _ F..
             m_pullTimer.start(20)
         ____
             m_modeButton.sT..(PUSH_MODE_LABEL)
-            m_pullMode _ True
+            m_pullMode _ T..
             m_audioOutput.start(m_generator)
 
         m_suspendResumeButton.sT..(SUSPEND_LABEL)

@@ -112,7 +112,7 @@ c_ PyAnalogClock(?W..):
 
         painter.setPen(hourColor)
 
-        ___ i __ range(0, 12):
+        ___ i __ ra..(0, 12):
             painter.drawLine(88, 0, 96, 0)
             painter.rotate(30.0)
 
@@ -126,7 +126,7 @@ c_ PyAnalogClock(?W..):
 
         painter.setPen(QPen(minuteColor))
 
-        ___ j __ range(0, 60):
+        ___ j __ ra..(0, 60):
             __ (j % 5) !_ 0:
                 painter.drawLine(92, 0, 96, 0)
             painter.rotate(6.0)

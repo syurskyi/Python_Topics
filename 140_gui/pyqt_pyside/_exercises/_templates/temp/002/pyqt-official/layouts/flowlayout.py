@@ -100,7 +100,7 @@ c_ FlowLayout(QLayout):
         r_ __.Orientations(__.Orientation(0))
 
     ___ hasHeightForWidth
-        r_ True
+        r_ T..
 
     ___ heightForWidth  width):
         height _ doLayout(QRect(0, 0, width, 0),  st.
@@ -108,7 +108,7 @@ c_ FlowLayout(QLayout):
 
     ___ setGeometry  rect):
         super(FlowLayout, self).setGeometry(rect)
-        doLayout(rect, False)
+        doLayout(rect, F..)
 
     ___ sH..
         r_ minimumSize()
@@ -131,7 +131,7 @@ c_ FlowLayout(QLayout):
 
         ___ item __ itemList:
             wid _ item.widget()
-            spaceX _ spacing() + wid.style().layoutSpacing(QSizePolicy.PushButton, QSizePolicy.PushButton, __.Horizontal)
+            spaceX _ spacing() + wid.style().layoutSpacing(QSizePolicy.PushButton, QSizePolicy.PushButton, __.H..)
             spaceY _ spacing() + wid.style().layoutSpacing(QSizePolicy.PushButton, QSizePolicy.PushButton, __.Vertical)
             nextX _ x + item.sH..().width() + spaceX
             __ nextX - spaceX > rect.right() and lineHeight > 0:
