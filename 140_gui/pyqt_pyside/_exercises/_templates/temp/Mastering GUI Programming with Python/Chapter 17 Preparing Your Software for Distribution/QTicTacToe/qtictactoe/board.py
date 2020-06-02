@@ -2,7 +2,7 @@ ____ ? ______ ?W.. __ qtw
 ____ ? ______ ?G.. __ qtg
 ____ ? ______ ?C.. __ qtc
 
-____ os ______ path
+____ os ______ pa__
 
 c_ TTTBoard(qtw.QGraphicsScene):
 
@@ -26,10 +26,10 @@ c_ TTTBoard(qtw.QGraphicsScene):
         setBackgroundBrush(qtg.QBrush(qtc.__.cyan))
         ___ square __ square_rects:
             addRect(square, brush_qtg.QBrush(qtc.__.white))
-        directory _ path.dirname(__file__)
+        directory _ pa__.dirname(__file__)
         mark_pngs _ {
-            'X': qtg.QPixmap(path.join(directory, 'images', 'X.png')),
-            'O': qtg.QPixmap(path.join(directory, 'images', 'O.png'))
+            'X': qtg.QPixmap(pa__.join(directory, 'images', 'X.png')),
+            'O': qtg.QPixmap(pa__.join(directory, 'images', 'O.png'))
         }
         marks _   # list
 

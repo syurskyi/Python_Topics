@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ (QFile, QFileInfo, QPoint, QSettings, ?S.., __,
         QTextStream)
 ____ ?.?G.. ______ QIcon, ?KS..
-____ ?.?W.. ______ (?A.., ?A.., ?FD.., QMainWindow,
+____ ?.?W.. ______ (?A.., ?A.., ?FD.., ?MW..,
         ?MB.., ?TE..)
 
 ______ sdi_rc

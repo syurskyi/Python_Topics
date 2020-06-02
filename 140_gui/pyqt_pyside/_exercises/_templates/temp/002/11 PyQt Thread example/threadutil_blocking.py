@@ -11,7 +11,7 @@ It allows you to receive results from the function invocation:
 """
 
 ____ functools ______ wraps
-____ ?.?C.. ______ pS.., QObject, QThread
+____ ?.?C.. ______ pS.., ?O.., QThread
 ____ ?.?W.. ______ ?A..
 ____ th.. ______ Event, get_ident
 
@@ -87,7 +87,7 @@ c_ Task:
     ___ __call__
         ___
             _result _ _fn(*_args, **_kwargs)
-        _____ Exception __ e:
+        _____ E.. __ e:
             _exception _ e
         finally:
             has_run.set()
@@ -101,10 +101,10 @@ c_ Task:
             raise _exception
         r_ _result
 
-c_ Sender(QObject):
+c_ Sender(?O..):
     signal _ pS..()
 
-c_ Receiver(QObject):
+c_ Receiver(?O..):
     ___  -   callback, parent_None):
         s_. - (parent)
         callback _ callback

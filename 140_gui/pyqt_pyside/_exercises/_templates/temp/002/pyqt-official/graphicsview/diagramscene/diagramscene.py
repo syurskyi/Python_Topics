@@ -51,7 +51,7 @@ ____ ?.?G.. ______ (QBrush, ?C.., QFont, QIcon, QIntValidator, QPainter,
 ____ ?.?W.. ______ (?A.., ?A.., QButtonGroup, ?CB,
         QFontComboBox, QGraphicsItem, QGraphicsLineItem, QGraphicsPolygonItem,
         QGraphicsScene, QGraphicsTextItem, QGraphicsView, QGridLayout,
-        QHBoxLayout, QLabel, QMainWindow, QMenu, ?MB.., QSizePolicy,
+        QHBoxLayout, QLabel, ?MW.., QMenu, ?MB.., QSizePolicy,
         QToolBox, QToolButton, ?W..)
 
 ______ diagramscene_rc
@@ -86,9 +86,9 @@ c_ Arrow(QGraphicsLineItem):
         r_ QRectF(p1, QSizeF(p2.x() - p1.x(), p2.y() - p1.y())).normalized().adjusted(-extra, -extra, extra, extra)
 
     ___ shape
-        path _ super(Arrow, self).shape()
-        path.addPolygon(arrowHead)
-        r_ path
+        pa__ _ super(Arrow, self).shape()
+        pa__.addPolygon(arrowHead)
+        r_ pa__
 
     ___ updatePosition
         line _ QLineF(mapFromItem(myStartItem, 0, 0), mapFromItem(myEndItem, 0, 0))
@@ -185,15 +185,15 @@ c_ DiagramItem(QGraphicsPolygonItem):
         diagramType _ diagramType
         contextMenu _ contextMenu
 
-        path _ QPainterPath()
+        pa__ _ QPainterPath()
         __ diagramType __ StartEnd:
-            path.moveTo(200, 50)
-            path.arcTo(150, 0, 50, 50, 0, 90)
-            path.arcTo(50, 0, 50, 50, 90, 90)
-            path.arcTo(50, 50, 50, 50, 180, 90)
-            path.arcTo(150, 50, 50, 50, 270, 90)
-            path.lineTo(200, 25)
-            myPolygon _ path.toFillPolygon()
+            pa__.moveTo(200, 50)
+            pa__.arcTo(150, 0, 50, 50, 0, 90)
+            pa__.arcTo(50, 0, 50, 50, 90, 90)
+            pa__.arcTo(50, 50, 50, 50, 180, 90)
+            pa__.arcTo(150, 50, 50, 50, 270, 90)
+            pa__.lineTo(200, 25)
+            myPolygon _ pa__.toFillPolygon()
         ____ diagramType __ Conditional:
             myPolygon _ QPolygonF([
                     QPointF(-100, 0), QPointF(0, 100),

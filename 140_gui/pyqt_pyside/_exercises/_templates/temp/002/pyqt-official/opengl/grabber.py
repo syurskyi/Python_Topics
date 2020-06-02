@@ -48,7 +48,7 @@ ______ math
 ____ ?.?C.. ______ pS.., ?S.., __, QTimer
 ____ ?.?G.. ______ QOpenGLVersionProfile, QPixmap
 ____ ?.?W.. ______ (?A.., ?A.., QGridLayout, QLabel,
-        QLineEdit, QMainWindow, ?MB.., QOpenGLWidget, QScrollArea,
+        QLineEdit, ?MW.., ?MB.., QOpenGLWidget, QScrollArea,
         QSizePolicy, QSlider, ?W..)
 
 

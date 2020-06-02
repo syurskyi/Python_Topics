@@ -24,7 +24,7 @@ c_ AutoCloseDialog(qtw.QDialog):
         qtc.QTimer.singleShot(timeout * 1000, hide)
 
 
-c_ MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.?MW..):
 
     ___  -
         """MainWindow constructor.

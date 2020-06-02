@@ -46,7 +46,7 @@ ____ ?.?C.. ______ QFile, ?S.., __
 ____ ?.?G.. ______ QBrush, ?C.., QImage, QPainter, QPixmap, QPen
 ____ ?.?W.. ______ (QActionGroup, ?A.., ?FD..,
         QGraphicsItem, QGraphicsRectItem, QGraphicsScene, QGraphicsView,
-        QMainWindow, QMenu, ?MB.., ?W..)
+        ?MW.., QMenu, ?MB.., ?W..)
 ____ ?.QtOpenGL ______ QGL, QGLFormat, QGLWidget
 ____ ?.QtSvg ______ QGraphicsSvgItem
 
@@ -122,15 +122,15 @@ c_ MainWindow ?MW..
         sWT..("SVG Viewer")
 
     ___ openFile  path_None):
-        __ no. path:
-            path, _ _ ?FD...gOFN..  "Open SVG File",
+        __ no. pa__:
+            pa__, _ _ ?FD...gOFN..  "Open SVG File",
                     currentPath, "SVG files (*.svg *.svgz *.svg.gz)")
 
-        __ path:
-            svg_file _ QFile(path)
-            __ no. svg_file.exists
+        __ pa__:
+            svg_file _ QFile(pa__)
+            __ no. svg_file.e..
                 ?MB...critical  "Open SVG File",
-                        "Could not open file '%s'." % path)
+                        "Could not open file '%s'." % pa__)
 
                 outlineAction.sE.. F..
                 backgroundAction.sE.. F..
@@ -138,8 +138,8 @@ c_ MainWindow ?MW..
 
             view.openFile(svg_file)
 
-            __ no. path.s_w_(':/'):
-                currentPath _ path
+            __ no. pa__.s_w_(':/'):
+                currentPath _ pa__
                 sWT..("%s - SVGViewer" % currentPath)
 
             outlineAction.sE..( st.
@@ -197,7 +197,7 @@ c_ SvgView(QGraphicsView):
         p.restore()
 
     ___ openFile  svg_file):
-        __ no. svg_file.exists
+        __ no. svg_file.e..
             r_
 
         s _ scene()

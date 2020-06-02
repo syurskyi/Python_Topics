@@ -7,7 +7,7 @@ app = QApplication([])
 app.setQuitOnLastWindowClosed(F..)
 
 # Create the icon
-icon = QIcon(os.path.join("images","color.png"))
+icon = QIcon(os.pa__.join("images","color.png"))
 
 clipboard = QApplication.clipboard()
 dialog = QColorDialog()

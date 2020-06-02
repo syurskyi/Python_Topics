@@ -53,11 +53,11 @@
 
 ______ ___
 
-____ ?.?C.. ______ pS.., pyqtSlot, QCoreApplication, QObject, QUrl
+____ ?.?C.. ______ pS.., pyqtSlot, QCoreApplication, ?O.., QUrl
 ____ ?.QtRemoteObjects ______ QRemoteObjectNode
 
 
-c_ DynamicClient(QObject):
+c_ DynamicClient(?O..):
 
     # This signal is connected with server_slot() slot of the source object and
     # echoes back the switch state received from the source.

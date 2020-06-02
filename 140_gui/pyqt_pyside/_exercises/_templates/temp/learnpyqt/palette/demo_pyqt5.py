@@ -2,7 +2,7 @@ ____ ? ______ ?C.., ?G.., ?W..
 ____ palette ______ PaletteGrid, PaletteHorizontal, PaletteVertical
 
 
-c_ Window(?W...QMainWindow):
+c_ Window(?W...?MW..):
 
     ___  -
         s_. - ()

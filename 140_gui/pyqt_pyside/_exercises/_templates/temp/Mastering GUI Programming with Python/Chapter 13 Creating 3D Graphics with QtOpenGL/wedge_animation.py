@@ -3,7 +3,7 @@ ____ ? ______ ?G.. __ qtg
 ______ ___
 
 
-c_ MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.?MW..):
 
     ___  -  
         s_. - ()

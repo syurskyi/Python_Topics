@@ -51,10 +51,10 @@ menu _ window.mB.. .aM..("&File")
 open_action _ ?A..("&Open")
 ___ open_file
     gl.. file_path
-    path _ ?FD...gOFN..(window, "Open")[0]
-    __ path:
-        t__.sPT..(o..(path).r..
-        file_path _ path
+    pa__ _ ?FD...gOFN..(window, "Open")[0]
+    __ pa__:
+        t__.sPT..(o..(pa__).r..
+        file_path _ pa__
 open_action.t__.c..(open_file)
 open_action.sS..(?KS...Open)
 menu.aA..(open_action)
@@ -74,9 +74,9 @@ menu.aA..(save_action)
 save_as_action _ ?A..("Save &As...")
 ___ save_as
     gl.. file_path
-    path _ ?FD...getSaveFileName(window, "Save As")[0]
-    __ path:
-        file_path _ path
+    pa__ _ ?FD...getSaveFileName(window, "Save As")[0]
+    __ pa__:
+        file_path _ pa__
         save()
 save_as_action.t__.c..(save_as)
 menu.aA..(save_as_action)

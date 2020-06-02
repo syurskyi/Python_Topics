@@ -16,7 +16,7 @@ c_ SoundButton(qtw.?PB..):
         c__.c..(player.play)
 
 
-c_ MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.?MW..):
 
     ___  -
         """MainWindow constructor.

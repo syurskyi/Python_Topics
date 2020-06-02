@@ -5,7 +5,7 @@ ____ ? ______ ?C.. __ qtc
 ____ ? ______ QtWebEngineWidgets __ qtwe
 
 
-c_ MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.?MW..):
 
     ___  -  
         """MainWindow constructor."""

@@ -90,10 +90,10 @@ c_ GraphWidget ?.?W..
             last_x _ indx * scale
             y _ val_to_y(value)
             last_y _ val_to_y(last_value)
-            path _ qtg.QPainterPath()
-            path.moveTo(x, height())
-            path.lineTo(last_x, height())
-            path.lineTo(last_x, last_y)
+            pa__ _ qtg.QPainterPath()
+            pa__.moveTo(x, height())
+            pa__.lineTo(last_x, height())
+            pa__.lineTo(last_x, last_y)
             # Straight tops
             #path.lineTo(x, y)
 
@@ -101,14 +101,14 @@ c_ GraphWidget ?.?W..
             c_x _ round(scale * .5) + last_x
             c1 _ (c_x, last_y)
             c2 _ (c_x, y)
-            path.cubicTo(*c1, *c2, x, y)
+            pa__.cubicTo(*c1, *c2, x, y)
 
             # Draw path
-            painter.drawPath(path)
+            painter.drawPath(pa__)
             last_value _ value
 
 
-c_ MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.?MW..):
 
     ___  -
         """MainWindow constructor."""

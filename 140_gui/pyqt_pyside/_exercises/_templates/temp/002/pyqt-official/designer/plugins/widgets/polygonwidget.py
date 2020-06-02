@@ -64,7 +64,7 @@ c_ PolygonWidget(?W..):
         painter.translate(width()/2.0, height()/2.0)
         painter.rotate(_angle)
         painter.setBrush(QBrush(gradient))
-        painter.drawPath(path)
+        painter.drawPath(pa__)
         painter.end()
     
     ___ sH..
@@ -73,19 +73,19 @@ c_ PolygonWidget(?W..):
     
     ___ createPath
     
-        path _ QPainterPath()
+        pa__ _ QPainterPath()
         angle _ 2*math.pi/_sides
-        path.moveTo(_outerRadius, 0)
+        pa__.moveTo(_outerRadius, 0)
         ___ step __ ra..(1, _sides + 1):
-            path.lineTo(
+            pa__.lineTo(
                 _innerRadius * math.cos((step - 0.5) * angle),
                 _innerRadius * math.sin((step - 0.5) * angle)
                 )
-            path.lineTo(
+            pa__.lineTo(
                 _outerRadius * math.cos(step * angle),
                 _outerRadius * math.sin(step * angle)
                 )
-        path.closeSubpath()
+        pa__.closeSubpath()
     
     ___ createGradient
     

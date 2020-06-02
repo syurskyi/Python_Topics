@@ -26,9 +26,9 @@ c_ SlowSearcherThread(qtc.QThread):
         _search(term, root)
         finished.e..()
 
-    ___ _search  term, path):
-        directory_changed.e..(path)
-        directory _ qtc.QDir(path)
+    ___ _search  term, pa__):
+        directory_changed.e..(pa__)
+        directory _ qtc.QDir(pa__)
         directory.setFilter(
             directory.filter() |
             qtc.QDir.NoDotAndDotDot |
@@ -64,7 +64,7 @@ c_ SearchForm ?.?W..
 
 
 
-c_ MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.?MW..):
 
     ___  -  
         """MainWindow constructor.
@@ -92,8 +92,8 @@ c_ MainWindow(qtw.QMainWindow):
     ___ on_finished 
         statusBar().showMessage('Search Finished')
 
-    ___ on_directory_changed  path):
-        statusBar().showMessage(f'Searching in: {path}')
+    ___ on_directory_changed  pa__):
+        statusBar().showMessage(f'Searching in: {pa__}')
 
 
 __ ______ __ ______

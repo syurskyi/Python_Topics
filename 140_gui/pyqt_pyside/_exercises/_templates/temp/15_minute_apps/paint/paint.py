@@ -37,7 +37,7 @@ MODES = [
 CANVAS_DIMENSIONS = 600, 400
 
 STAMP_DIR = './stamps'
-STAMPS = [os.path.join(STAMP_DIR, f) ___ f __ os.listdir(STAMP_DIR)]
+STAMPS = [os.pa__.join(STAMP_DIR, f) ___ f __ os.listdir(STAMP_DIR)]
 
 SELECTION_PEN = QPen(QColor(0xff, 0xff, 0xff), 1, Qt.DashLine)
 PREVIEW_PEN = QPen(QColor(0xff, 0xff, 0xff), 1, Qt.SolidLine)
@@ -667,7 +667,7 @@ class Canvas(QLabel):
         generic_shape_mouseReleaseEvent(e)
 
 
-class MainWindow(QMainWindow, Ui_MainWindow):
+class MainWindow(?MW.., Ui_MainWindow):
 
     def  - (self, $ $$
         super(MainWindow, self). - ($ $$)
@@ -764,7 +764,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         actionUnderline.triggered.connect(l___ s: canvas.set_config('underline', s))
 
         sizeicon = QLabel()
-        sizeicon.setPixmap(QPixmap(os.path.join('images', 'border-weight.png')))
+        sizeicon.setPixmap(QPixmap(os.pa__.join('images', 'border-weight.png')))
         drawingToolbar.addWidget(sizeicon)
         sizeselect = QSlider()
         sizeselect.setRange(1,20)
@@ -818,11 +818,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         Open image file for editing, scaling the smaller dimension and cropping the remainder.
         :return:
         """
-        path, _ = QFileDialog.getOpenFileName(self, "Open file", "", "PNG image files (*.png); JPEG image files (*jpg); All files (*.*)")
+        pa__, _ = QFileDialog.getOpenFileName(self, "Open file", "", "PNG image files (*.png); JPEG image files (*jpg); All files (*.*)")
 
-        if path:
+        if pa__:
             pixmap = QPixmap()
-            pixmap.load(path)
+            pixmap.load(pa__)
 
             # We need to crop down to the size of our canvas. Get the size of the loaded image.
             iw = pixmap.width()
@@ -853,11 +853,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         Save active canvas to image file.
         :return:
         """
-        path, _ = QFileDialog.getSaveFileName(self, "Save file", "", "PNG Image file (*.png)")
+        pa__, _ = QFileDialog.getSaveFileName(self, "Save file", "", "PNG Image file (*.png)")
 
-        if path:
+        if pa__:
             pixmap = canvas.pixmap()
-            pixmap.save(path, "PNG" )
+            pixmap.save(pa__, "PNG" )
 
     def invert
         img = QImage(canvas.pixmap())

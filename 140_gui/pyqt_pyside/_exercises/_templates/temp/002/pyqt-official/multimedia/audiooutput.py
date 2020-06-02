@@ -49,7 +49,7 @@ ____ ?.?C.. ______ QByteArray, QIODevice, __, QTimer, qWarning
 ____ ?.QtMultimedia ______ (QAudio, QAudioDeviceInfo, QAudioFormat,
         QAudioOutput)
 ____ ?.?W.. ______ (?A.., ?CB, QHBoxLayout, QLabel,
-        QMainWindow, ?PB.., QSlider, QVBoxLayout, ?W..)
+        ?MW.., ?PB.., QSlider, QVBoxLayout, ?W..)
 
 
 c_ Generator(QIODevice):

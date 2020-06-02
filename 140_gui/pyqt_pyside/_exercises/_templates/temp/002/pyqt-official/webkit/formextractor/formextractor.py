@@ -45,7 +45,7 @@
 
 ____ ?.?C.. ______ pyqtSlot, QUrl
 ____ ?.?G.. ______ ?KS..
-____ ?.?W.. ______ (?A.., ?A.., QMainWindow, ?MB..,
+____ ?.?W.. ______ (?A.., ?A.., ?MW.., ?MB..,
         ?W..)
 
 ______ formextractor_rc

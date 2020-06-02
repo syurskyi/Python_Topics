@@ -4,7 +4,7 @@ ____ ? ______ ?G.. __ qtg
 ____ ? ______ ?C.. __ qtc
 
 
-c_ SlowSearcher(qtc.QObject):
+c_ SlowSearcher(qtc.?O..):
     """A somewhat deliberately slow searcher."""
 
     match_found _ qtc.pS.. st.
@@ -26,9 +26,9 @@ c_ SlowSearcher(qtc.QObject):
         _search(term, root)
         finished.e..()
 
-    ___ _search  term, path):
-        directory_changed.e..(path)
-        directory _ qtc.QDir(path)
+    ___ _search  term, pa__):
+        directory_changed.e..(pa__)
+        directory _ qtc.QDir(pa__)
         directory.setFilter(
             directory.filter() |
             qtc.QDir.NoDotAndDotDot |
@@ -63,7 +63,7 @@ c_ SearchForm ?.?W..
         results.aI..(result)
 
 
-c_ MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.?MW..):
 
     ___  -  
         """MainWindow constructor.
@@ -113,8 +113,8 @@ c_ MainWindow(qtw.QMainWindow):
     ___ on_finished 
         statusBar().showMessage('Search Finished')
 
-    ___ on_directory_changed  path):
-        statusBar().showMessage(f'Searching in: {path}')
+    ___ on_directory_changed  pa__):
+        statusBar().showMessage(f'Searching in: {pa__}')
 
 __ ______ __ ______
     app _ qtw.?A..(___.a..

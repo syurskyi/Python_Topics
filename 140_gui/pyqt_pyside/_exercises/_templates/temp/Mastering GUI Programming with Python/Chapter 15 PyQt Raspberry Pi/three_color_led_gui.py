@@ -48,7 +48,7 @@ c_ ThreeColorLed
         pwms['blue'].ChangeDutyCycle(convert(blue))
 
 
-c_ MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.?MW..):
 
     ___  -
         s_. - ()

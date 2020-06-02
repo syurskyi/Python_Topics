@@ -1,12 +1,12 @@
 ______ ___
-____ os ______ path
+____ os ______ pa__
 
 ____ ? ______ ?W.. __ qtw
 ____ ? ______ ?G.. __ qtg
 ____ ? ______ ?C.. __ qtc
 
 
-c_ MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.?MW..):
 
     ___  -  
         """MainWindow constructor.
@@ -39,13 +39,13 @@ c_ MainWindow(qtw.QMainWindow):
         error _ ''
         __ no. filename:
             error _ 'Filename empty'
-        ____ path.exists(filename):
+        ____ pa__.e..(filename):
             error _ f'Will not overwrite {filename}'
         ____
             ___
                 w__ o..(filename, 'w') __ fh:
                     fh.w..(filecontent.tPT..
-            _____ Exception __ e:
+            _____ E.. __ e:
                 error _ f'Cannot write file: {e}'
         __ error:
             qtw.?MB...critical(N.., 'Error', error)

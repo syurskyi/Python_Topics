@@ -77,12 +77,12 @@ c_ CustomProxy(QGraphicsProxyWidget):
         intersectsRight _ right.intersects(option.exposedRect)
         intersectsBottom _ bottom.intersects(option.exposedRect)
         __ intersectsRight and intersectsBottom:
-            path _ QPainterPath()
-            path.addRect(right)
-            path.addRect(bottom)
+            pa__ _ QPainterPath()
+            pa__.addRect(right)
+            pa__.addRect(bottom)
             painter.setPen(__.NoPen)
             painter.setBrush(color)
-            painter.drawPath(path)
+            painter.drawPath(pa__)
         ____ intersectsBottom:
             painter.fillRect(bottom, color)
         ____ intersectsRight:

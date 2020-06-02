@@ -44,11 +44,11 @@
 
 ______ ___
 
-____ ?.?C.. ______ pyqtSlot, QCoreApplication, QMetaObject, QObject
+____ ?.?C.. ______ pyqtSlot, QCoreApplication, QMetaObject, ?O..
 ____ ?.QtDBus ______ QDBusConnection
 
 
-c_ Pong(QObject):
+c_ Pong(?O..):
 
     @pyqtSlot(str, result_str)
     ___ ping  arg):

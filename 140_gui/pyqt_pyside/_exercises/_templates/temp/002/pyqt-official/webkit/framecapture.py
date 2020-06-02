@@ -60,7 +60,7 @@ Result:
 
 ______ ___
 
-____ ?.?C.. ______ pS.., QObject, ?S.., __, QUrl
+____ ?.?C.. ______ pS.., ?O.., ?S.., __, QUrl
 ____ ?.?G.. ______ QImage, QPainter
 ____ ?.?W.. ______ ?A..
 ____ ?.QtWebKitWidgets ______ QWebPage
@@ -76,7 +76,7 @@ ___ cerr(s):
     ___.stderr.flush()
 
 
-c_ FrameCapture(QObject):
+c_ FrameCapture(?O..):
 
     finished _ pS..()
 

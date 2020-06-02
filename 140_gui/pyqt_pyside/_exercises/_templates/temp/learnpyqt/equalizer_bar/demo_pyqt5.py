@@ -4,7 +4,7 @@ ____ equalizer_bar ______ EqualizerBar
 ______ random
 
 
-c_ Window(?W...QMainWindow):
+c_ Window(?W...?MW..):
 
     ___  -  
         s_. - ()

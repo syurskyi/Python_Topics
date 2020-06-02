@@ -49,7 +49,7 @@ ____ ?.?G.. ______ QGuiApplication
 ____ ?.QtQuick ______ QQuickView
 
 # Access the shared module.
-___.path.insert(1,
+___.pa__.insert(1,
         __.p__ .join(
                 __.p__ .dirname(__.p__ .dirname(__.p__ .abspath(__file__))),
                 'shared'))

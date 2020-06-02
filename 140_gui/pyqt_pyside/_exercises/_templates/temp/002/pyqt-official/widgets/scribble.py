@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ QDir, QPoint, QRect, ?S.., __
 ____ ?.?G.. ______ QImage, QImageWriter, QPainter, QPen, qRgb
 ____ ?.?W.. ______ (?A.., ?A.., QColorDialog, ?FD..,
-        QInputDialog, QMainWindow, QMenu, ?MB.., ?W..)
+        QInputDialog, ?MW.., QMenu, ?MB.., ?W..)
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
 
 

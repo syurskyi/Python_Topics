@@ -50,7 +50,7 @@ ____ ?.?C.. ______ (QByteArray, QFile, QItemSelection,
 ____ ?.?G.. ______ (QBrush, ?C.., QFontMetrics, QPainter, QPainterPath,
         ?P.., QPen, QRegion, QStandardItemModel)
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., ?FD..,
-        QMainWindow, QMenu, QRubberBand, QSplitter, QStyle, QTableView)
+        ?MW.., QMenu, QRubberBand, QSplitter, QStyle, QTableView)
 
 ______ chart_rc
 
@@ -516,12 +516,12 @@ c_ MainWindow ?MW..
         sCW..(splitter)
 
     ___ openFile  path_None):
-        __ no. path:
-            path, _ _ ?FD...gOFN..  "Choose a data file",
+        __ no. pa__:
+            pa__, _ _ ?FD...gOFN..  "Choose a data file",
                     '', '*.cht')
 
-        __ path:
-            f _ QFile(path)
+        __ pa__:
+            f _ QFile(pa__)
 
             __ f.o..(QFile.ReadOnly | QFile.Text):
                 stream _ QTextStream(f)
@@ -546,7 +546,7 @@ c_ MainWindow ?MW..
                     line _ stream.readLine()
 
                 f.c..
-                statusBar().showMessage("Loaded %s" % path, 2000)
+                statusBar().showMessage("Loaded %s" % pa__, 2000)
 
     ___ saveFile
         fileName, _ _ ?FD...getSaveFileName  "Save file as", '',

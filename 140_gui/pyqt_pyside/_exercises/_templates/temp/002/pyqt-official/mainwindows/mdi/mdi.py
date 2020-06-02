@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ (QFile, QFileInfo, QPoint, QSettings, QSignalMapper,
         ?S.., QTextStream, __)
 ____ ?.?G.. ______ QIcon, ?KS..
-____ ?.?W.. ______ (?A.., ?A.., ?FD.., QMainWindow,
+____ ?.?W.. ______ (?A.., ?A.., ?FD.., ?MW..,
         QMdiArea, ?MB.., ?TE.., ?W..)
 
 ______ mdi_rc

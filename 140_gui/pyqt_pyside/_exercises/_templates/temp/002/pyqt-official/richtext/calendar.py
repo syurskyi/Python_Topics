@@ -46,7 +46,7 @@ ____ ?.?C.. ______ QDate, __
 ____ ?.?G.. ______ (?C.., QFont, QTextCharFormat, QTextLength,
         QTextTableFormat)
 ____ ?.?W.. ______ (?A.., ?CB, ?DTE..,
-        QHBoxLayout, QLabel, QMainWindow, SB.., QTextBrowser, QVBoxLayout,
+        QHBoxLayout, QLabel, ?MW.., SB.., QTextBrowser, QVBoxLayout,
         ?W..)
 
 

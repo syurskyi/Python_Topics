@@ -1,11 +1,11 @@
-____ ?.?C.. ______ QObject, pS..
+____ ?.?C.. ______ ?O.., pS..
 
-c_ CurrentThread(QObject):
+c_ CurrentThread(?O..):
 
     _on_execute _ pS..(object, tuple, dict)
 
     ___  -
-        super(QObject, self). - ()
+        super(?O.., self). - ()
         _on_execute.c..(_execute_in_thread)
 
     ___ execute  f, args, kwargs):

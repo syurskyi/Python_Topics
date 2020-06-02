@@ -11,7 +11,7 @@ READY _ 0
 INPUT _ 1
 
 
-c_ MainWindow(QMainWindow, Ui_MainWindow):
+c_ MainWindow(?MW.., Ui_MainWindow):
     ___  -   $ $$
         super(MainWindow, self). - ($ $$)
         setupUi
@@ -95,7 +95,7 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
 
             ___
                 stack _ [current_op(*stack)]
-            _____ Exception:
+            _____ E..:
                 lcdNumber.display('Err')
                 stack _ [0]
             ____

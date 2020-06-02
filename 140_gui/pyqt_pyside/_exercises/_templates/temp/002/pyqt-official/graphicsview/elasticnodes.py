@@ -228,9 +228,9 @@ c_ Node(QGraphicsItem):
         r_ QRectF(-10 - adjust, -10 - adjust, 23 + adjust, 23 + adjust)
 
     ___ shape
-        path _ QPainterPath()
-        path.addEllipse(-10, -10, 20, 20)
-        r_ path
+        pa__ _ QPainterPath()
+        pa__.addEllipse(-10, -10, 20, 20)
+        r_ pa__
 
     ___ paint  painter, option, widget):
         painter.setPen(__.NoPen)

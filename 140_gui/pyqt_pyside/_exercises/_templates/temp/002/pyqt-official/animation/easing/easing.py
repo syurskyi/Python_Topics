@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ (pyqtProperty, QEasingCurve, QObject, QPoint, QPointF,
+____ ?.?C.. ______ (pyqtProperty, QEasingCurve, ?O.., QPoint, QPointF,
         QPropertyAnimation, QRect, QRectF, ?S.., __)
 ____ ?.?G.. ______ (QBrush, ?C.., QIcon, QLinearGradient, QPainter,
         QPainterPath, QPixmap)
@@ -94,7 +94,7 @@ c_ Animation(QPropertyAnimation):
 
 # PyQt doesn't support deriving from more than one wrapped class so we use
 # composition and delegate the property.
-c_ PixmapItem(QObject):
+c_ PixmapItem(?O..):
     ___  -   pix):
         super(PixmapItem, self). - ()
 

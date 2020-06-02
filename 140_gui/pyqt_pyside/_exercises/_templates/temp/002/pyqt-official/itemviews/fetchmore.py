@@ -96,8 +96,8 @@ c_ FileListModel(QAbstractListModel):
 
         numberPopulated.e..(itemsToFetch)
 
-    ___ setDirPath  path):
-        dir _ QDir(path)
+    ___ setDirPath  pa__):
+        dir _ QDir(pa__)
 
         beginResetModel()
         fileList _ dir.entryList()

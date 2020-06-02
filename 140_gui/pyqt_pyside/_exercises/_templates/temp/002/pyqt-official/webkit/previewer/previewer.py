@@ -46,7 +46,7 @@
 ____ ?.?C.. ______ QFile, QIODevice, QTextStream, QUrl
 ____ ?.?G.. ______ ?KS..
 ____ ?.?W.. ______ (?A.., ?A.., ?FD.., QInputDialog,
-        QLineEdit, QMainWindow, ?MB.., ?W..)
+        QLineEdit, ?MW.., ?MB.., ?W..)
 
 ____ ui_previewer ______ Ui_Form
 

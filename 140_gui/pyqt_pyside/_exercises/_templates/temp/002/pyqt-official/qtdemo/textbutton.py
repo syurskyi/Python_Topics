@@ -180,12 +180,12 @@ c_ ButtonBackground(DemoItem):
         sizey _ 1.5 * transform.m22()
         __ type __ TextButton.UP:
             sizey *_ -1
-        path _ QPainterPath()
-        path.moveTo(xOff, yOff + (5 * sizey))
-        path.lineTo(xOff - (4 * sizex), yOff - (3 * sizey))
-        path.lineTo(xOff + (4 * sizex), yOff - (3 * sizey))
-        path.lineTo(xOff, yOff + (5 * sizey))
-        painter.drawPath(path)
+        pa__ _ QPainterPath()
+        pa__.moveTo(xOff, yOff + (5 * sizey))
+        pa__.lineTo(xOff - (4 * sizex), yOff - (3 * sizey))
+        pa__.lineTo(xOff + (4 * sizex), yOff - (3 * sizey))
+        pa__.lineTo(xOff, yOff + (5 * sizey))
+        painter.drawPath(pa__)
 
         r_ image
 

@@ -34,7 +34,7 @@ c_ SettingsDialog(qtw.QDialog):
         s_.accept()
 
 
-c_ MainWindow(qtw.QMainWindow): # change to mainwindow
+c_ MainWindow(qtw.?MW..): # change to mainwindow
 
     #settings = {'show_warnings': True}
     settings _ qtc.QSettings('Alan D Moore', 'text editor')
@@ -268,7 +268,7 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
             ___
                 w__ o..(filename, 'r') __ fh:
                     textedit.sT..(fh.r..
-            _____ Exception __ e:
+            _____ E.. __ e:
                 qtw.?MB...critical(f"Could not load file: {e}")
 
     ___ saveFile
@@ -282,7 +282,7 @@ c_ MainWindow(qtw.QMainWindow): # change to mainwindow
             ___
                 w__ o..(filename, 'w') __ fh:
                     fh.w..(textedit.tPT..
-            _____ Exception __ e:
+            _____ E.. __ e:
                 qtw.?MB...critical(f"Could not save file: {e}")
 
     ___ set_font

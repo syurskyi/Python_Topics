@@ -50,8 +50,8 @@ ____ ui_controller ______ Ui_Controller
 
 c_ CarInterface(QDBusAbstractInterface):
 
-    ___  -   service, path, connection, parent_None):
-        super(CarInterface, self). - (service, path,
+    ___  -   service, pa__, connection, parent_None):
+        super(CarInterface, self). - (service, pa__,
                 'org.example.Examples.CarInterface', connection, parent)
 
     ___ accelerate

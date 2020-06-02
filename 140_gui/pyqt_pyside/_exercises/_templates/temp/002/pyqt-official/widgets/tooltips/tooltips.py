@@ -59,7 +59,7 @@ c_ ShapeItem(object):
         myColor  _ ?C..()
         myToolTip _ ''
 
-    ___ path 
+    ___ pa__
         r_ myPath
 
     ___ position 
@@ -71,8 +71,8 @@ c_ ShapeItem(object):
     ___ toolTip 
         r_ myToolTip
 
-    ___ setPath  path):
-        myPath _ path
+    ___ setPath  pa__):
+        myPath _ pa__
 
     ___ sTT..  toolTip):
         myToolTip _ toolTip
@@ -162,7 +162,7 @@ c_ SortingBox(?W..):
         ___ shapeItem __ shapeItems:
             painter.translate(shapeItem.position())
             painter.setBrush(shapeItem.color())
-            painter.drawPath(shapeItem.path())
+            painter.drawPath(shapeItem.pa__())
             painter.translate(-shapeItem.position())
 
     ___ mousePressEvent  event):
@@ -208,7 +208,7 @@ c_ SortingBox(?W..):
     ___ itemAt  pos):
         ___ i __ ra..(le.(shapeItems) - 1, -1, -1):
             item _ shapeItems[i]
-            __ item.path().contains(QPointF(pos - item.position())):
+            __ item.pa__().contains(QPointF(pos - item.position())):
                 r_ i
 
         r_ -1
@@ -226,9 +226,9 @@ c_ SortingBox(?W..):
 
         r_ y - size.height() - style().pixelMetric(QStyle.PM_DefaultLayoutSpacing)
 
-    ___ createShapeItem  path, toolTip, pos, color):
+    ___ createShapeItem  pa__, toolTip, pos, color):
         shapeItem _ ShapeItem()
-        shapeItem.setPath(path)
+        shapeItem.setPath(pa__)
         shapeItem.sTT..(toolTip)
         shapeItem.setPosition(pos)
         shapeItem.sC..(color)
@@ -244,13 +244,13 @@ c_ SortingBox(?W..):
 
         r_ button
 
-    ___ initialItemPosition  path):
-        y _ (height() - path.controlPointRect().height()) / 2
+    ___ initialItemPosition  pa__):
+        y _ (height() - pa__.controlPointRect().height()) / 2
 
         __ le.(shapeItems) __ 0:
-            x _ ((3 * width()) / 2 - path.controlPointRect().width()) / 2
+            x _ ((3 * width()) / 2 - pa__.controlPointRect().width()) / 2
         ____
-            x _ (width() / le.(shapeItems) - path.controlPointRect().width()) / 2
+            x _ (width() / le.(shapeItems) - pa__.controlPointRect().width()) / 2
 
         r_ QPoint(x, y)
 

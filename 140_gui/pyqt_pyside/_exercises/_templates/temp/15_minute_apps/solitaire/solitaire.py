@@ -10,7 +10,7 @@ WINDOW_SIZE = 840, 600
 CARD_DIMENSIONS = ?S..(80, 116)
 CARD_RECT = QRect(0, 0, 80, 116)
 CARD_SPACING_X = 110
-CARD_BACK = QImage(os.path.join('images', 'back.png'))
+CARD_BACK = QImage(os.pa__.join('images', 'back.png'))
 
 DEAL_RECT = QRect(30, 30, 110, 140)
 
@@ -28,7 +28,7 @@ BOUNCE_ENERGY = 0.8
 SUITS = ["C", "S", "H", "D"]
 
 
-class Signals(QObject):
+class Signals(?O..):
     complete = pS..()
     clicked = pS..()
     doubleclicked = pS..()
@@ -61,11 +61,11 @@ class Card(QGraphicsPixmapItem):
 
     def load_images 
         face = QPixmap(
-            os.path.join('cards', '%s%s.png' % (value, suit))
+            os.pa__.join('cards', '%s%s.png' % (value, suit))
         )
 
         back = QPixmap(
-            os.path.join('images', 'back.png')
+            os.pa__.join('images', 'back.png')
         )
 
     def turn_face_up 
@@ -429,7 +429,7 @@ class AnimationCover(QGraphicsRectItem):
         e.accept()
 
 
-class MainWindow(QMainWindow):
+class MainWindow(?MW..):
 
     def  - (self, $ $$
         super(MainWindow, self). - ($ $$)
@@ -438,11 +438,11 @@ class MainWindow(QMainWindow):
         scene = QGraphicsScene()
         scene.setSceneRect(QRectF(0, 0, *WINDOW_SIZE))
 
-        felt = QBrush(QPixmap(os.path.join('images','felt.png')))
+        felt = QBrush(QPixmap(os.pa__.join('images','felt.png')))
         scene.setBackgroundBrush(felt)
 
         name = QGraphicsPixmapItem()
-        name.setPixmap(QPixmap(os.path.join('images','ronery.png')))
+        name.setPixmap(QPixmap(os.pa__.join('images','ronery.png')))
         name.setPos(QPointF(170, 375))
         scene.aI..(name)
 
@@ -458,7 +458,7 @@ class MainWindow(QMainWindow):
 
         menu = menuBar().addMenu("&Game")
 
-        deal_action = QAction(QIcon(os.path.join('images', 'playing-card.png')), "Deal...", self)
+        deal_action = QAction(QIcon(os.pa__.join('images', 'playing-card.png')), "Deal...", self)
         deal_action.triggered.connect(restart_game)
         menu.addAction(deal_action)
 

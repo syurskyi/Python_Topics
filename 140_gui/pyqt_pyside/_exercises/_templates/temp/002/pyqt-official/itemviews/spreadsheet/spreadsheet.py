@@ -44,7 +44,7 @@ ____ ?.?C.. ______ QDate, QPoint, __
 ____ ?.?G.. ______ ?C.., QIcon, ?KS.., QPainter, QPixmap
 ____ ?.?W.. ______ (?A.., QActionGroup, ?A.., QColorDialog,
         ?CB, QDialog, QFontDialog, QGroupBox, QHBoxLayout, QLabel,
-        QLineEdit, QMainWindow, ?MB.., ?PB.., QTableWidget,
+        QLineEdit, ?MW.., ?MB.., ?PB.., QTableWidget,
         QTableWidgetItem, QToolBar, QVBoxLayout)
 ____ ?.QtPrintSupport ______ QPrinter, QPrintPreviewDialog
 

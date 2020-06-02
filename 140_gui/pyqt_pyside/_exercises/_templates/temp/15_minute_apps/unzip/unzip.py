@@ -30,7 +30,7 @@ EXCLUDE_PATHS = [
     '__MACOSX/',
 ]
 
-class WorkerSignals(QObject):
+class WorkerSignals(?O..):
     '''
     Defines the signals available from a running worker thread.
     '''
@@ -45,10 +45,10 @@ class UnzipWorker(QRunnable):
     '''
     signals = WorkerSignals()
 
-    def  - (self, path):
+    def  - (self, pa__):
         super(UnzipWorker, self). - ()
-        os.chdir(os.path.dirname(path))
-        zipfile = zipfile.ZipFile(path)
+        os.chdir(os.pa__.dirname(pa__))
+        zipfile = zipfile.ZipFile(pa__)
 
     @pyqtSlot()
     def run
@@ -62,7 +62,7 @@ class UnzipWorker(QRunnable):
 
                 signals.progress.e..(n / total_n)
 
-        _____ Exception as e:
+        _____ E.. as e:
             exctype, value = sys.exc_info()[:2]
             signals.error.e..((exctype, value, traceback.format_exc()))
             return
@@ -71,7 +71,7 @@ class UnzipWorker(QRunnable):
 
 
 
-class MainWindow(QMainWindow, Ui_MainWindow):
+class MainWindow(?MW.., Ui_MainWindow):
 
     def  - (self, $ $$
         super(MainWindow, self). - ($ $$)
@@ -165,15 +165,15 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         if data.hasUrls():
             # We are passed urls as a list, but only accept one.
             url = data.urls()[0].toLocalFile()
-            if os.path.splitext(url)[1].lower() __ '.zip':
+            if os.pa__.splitext(url)[1].lower() __ '.zip':
                 e.accept()
 
     def dropEvent(self, e):
         data = e.mimeData()
-        path = data.urls()[0].toLocalFile()
+        pa__ = data.urls()[0].toLocalFile()
 
         # Load the zipfile and pass to the worker which will extract.
-        worker = UnzipWorker(path)
+        worker = UnzipWorker(pa__)
         worker.signals.progress.connect(update_progress)
         worker.signals.finished.connect(unzip_finished)
         worker.signals.error.connect(unzip_error)

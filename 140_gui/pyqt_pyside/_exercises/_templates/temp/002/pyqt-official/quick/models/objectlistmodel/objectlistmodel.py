@@ -41,14 +41,14 @@
 #############################################################################
 
 
-____ ?.?C.. ______ pyqtProperty, pS.., QObject, QUrl
+____ ?.?C.. ______ pyqtProperty, pS.., ?O.., QUrl
 ____ ?.?G.. ______ QGuiApplication
 ____ ?.QtQuick ______ QQuickView
 
 ______ objectlistmodel_rc
 
 
-c_ DataObject(QObject):
+c_ DataObject(?O..):
 
     nameChanged _ pS..()
 

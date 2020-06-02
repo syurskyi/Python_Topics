@@ -42,7 +42,7 @@
 #############################################################################
 
 
-____ ?.?C.. ______ (pyqtProperty, pS.., QEasingCurve, QObject,
+____ ?.?C.. ______ (pyqtProperty, pS.., QEasingCurve, ?O..,
         QParallelAnimationGroup, QPointF, QPropertyAnimation, qrand, QRectF,
         QState, QStateMachine, __, QTimer)
 ____ ?.?G.. ______ (QBrush, QLinearGradient, QPainter, QPainterPath,
@@ -56,7 +56,7 @@ ______ animatedtiles_rc
 
 # PyQt doesn't support deriving from more than one wrapped class so we use
 # composition and delegate the property.
-c_ Pixmap(QObject):
+c_ Pixmap(?O..):
     ___  -   pix):
         super(Pixmap, self). - ()
 
@@ -84,10 +84,10 @@ c_ Button(QGraphicsWidget):
         r_ QRectF(-65, -65, 130, 130)
 
     ___ shape
-        path _ QPainterPath()
-        path.addEllipse(boundingRect())
+        pa__ _ QPainterPath()
+        pa__.addEllipse(boundingRect())
 
-        r_ path
+        r_ pa__
 
     ___ paint  painter, option, widget):
         down _ option.state & QStyle.State_Sunken

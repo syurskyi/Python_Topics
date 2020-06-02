@@ -9,7 +9,7 @@ SENSOR_MODEL _ 11
 GPIO.setmode(GPIO.BCM)
 
 
-c_ HWButton(qtc.QObject):
+c_ HWButton(qtc.?O..):
 
     button_press _ qtc.pS..()
 
@@ -39,7 +39,7 @@ c_ HWButton(qtc.QObject):
             pressed _ pressed
 
 
-c_ SensorInterface(qtc.QObject):
+c_ SensorInterface(qtc.?O..):
 
     temperature _ qtc.pS..(float)
     humidity _ qtc.pS..(float)
@@ -61,7 +61,7 @@ c_ SensorInterface(qtc.QObject):
         read_time.e..(qtc.?T...currentTime())
 
 
-c_ MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.?MW..):
 
     ___  -
         s_. - ()

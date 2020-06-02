@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ (pS.., pyqtSlot, Q_ARG, QAbstractItemModel,
-        QFileInfo, qFuzzyCompare, QMetaObject, QModelIndex, QObject, __,
+        QFileInfo, qFuzzyCompare, QMetaObject, QModelIndex, ?O.., __,
         QThread, ?T.., QUrl)
 ____ ?.?G.. ______ ?C.., qGray, QImage, QPainter, ?P..
 ____ ?.QtMultimedia ______ (QAbstractVideoBuffer, QMediaContent,
@@ -107,7 +107,7 @@ c_ PlaylistModel(QAbstractItemModel):
         __ index.iV.. and role __ __.DR..:
             __ index.column() __ Title:
                 location _ m_playlist.media(index.row()).canonicalUrl()
-                r_ QFileInfo(location.path()).fileName()
+                r_ QFileInfo(location.pa__()).fileName()
 
             r_ m_data[index]
 
@@ -276,7 +276,7 @@ c_ PlayerControls(?W..):
         changeRate.e..(playbackRate())
 
 
-c_ FrameProcessor(QObject):
+c_ FrameProcessor(?O..):
 
     histogramReady _ pS..(li..)
 
@@ -504,7 +504,7 @@ c_ Player(?W..):
     ___ addToPlaylist  fileNames):
         ___ name __ fileNames:
             fileInfo _ QFileInfo(name)
-            __ fileInfo.exists
+            __ fileInfo.e..
                 url _ QUrl.fromLocalFile(fileInfo.absoluteFilePath())
                 __ fileInfo.suffix().lower() __ 'm3u':
                     playlist.load(url)

@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ QFile, QRegExp, __
 ____ ?.?G.. ______ QFont, QSyntaxHighlighter, QTextCharFormat
-____ ?.?W.. ______ (?A.., ?FD.., QMainWindow, QMenu,
+____ ?.?W.. ______ (?A.., ?FD.., ?MW.., QMenu,
         ?MB.., ?TE..)
 
 
@@ -70,12 +70,12 @@ c_ MainWindow ?MW..
         editor.c..
 
     ___ openFile  path_None):
-        __ no. path:
-            path, _ _ ?FD...gOFN..  "Open File", '',
+        __ no. pa__:
+            pa__, _ _ ?FD...gOFN..  "Open File", '',
                     "C++ Files (*.cpp *.h)")
 
-        __ path:
-            inFile _ QFile(path)
+        __ pa__:
+            inFile _ QFile(pa__)
             __ inFile.o..(QFile.ReadOnly | QFile.Text):
                 t__ _ inFile.readAll()
 

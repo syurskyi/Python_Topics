@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ QFile, QIODevice, __, QTextStream, QUrl
-____ ?.?W.. ______ (?A.., ?A.., QLineEdit, QMainWindow,
+____ ?.?W.. ______ (?A.., ?A.., QLineEdit, ?MW..,
         QSizePolicy, QStyle, ?TE..)
 ____ ?.QtNetwork ______ QNetworkProxyFactory, QNetworkRequest
 ____ ?.QtWebKitWidgets ______ QWebPage, QWebView

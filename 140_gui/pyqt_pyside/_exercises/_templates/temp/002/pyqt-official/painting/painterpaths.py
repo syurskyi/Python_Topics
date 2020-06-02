@@ -52,10 +52,10 @@ ____ ?.?W.. ______ (?A.., ?CB, QGridLayout, QLabel,
 
 
 c_ RenderArea(?W..):
-    ___  -   path, parent_None):
+    ___  -   pa__, parent_None):
         super(RenderArea, self). - (parent)
 
-        path _ path
+        pa__ _ pa__
 
         penWidth _ 1
         rotationAngle _ 0
@@ -68,7 +68,7 @@ c_ RenderArea(?W..):
         r_ ?S..(100, 100)
 
     ___ setFillRule  rule):
-        path.setFillRule(rule)
+        pa__.setFillRule(rule)
         update()
 
     ___ setFillGradient  color1, color2):
@@ -103,7 +103,7 @@ c_ RenderArea(?W..):
         gradient.setColorAt(0.0, fillColor1)
         gradient.setColorAt(1.0, fillColor2)
         painter.setBrush(QBrush(gradient))
-        painter.drawPath(path)
+        painter.drawPath(pa__)
 
 
 c_ Window(?W..):

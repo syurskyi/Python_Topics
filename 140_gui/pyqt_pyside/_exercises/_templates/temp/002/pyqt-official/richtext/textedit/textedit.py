@@ -51,7 +51,7 @@ ____ ?.?G.. ______ (QFont, QFontDatabase, QFontInfo, QIcon, ?KS..,
         QPixmap, QTextBlockFormat, QTextCharFormat, QTextCursor,
         QTextDocumentWriter, QTextListFormat)
 ____ ?.?W.. ______ (?A.., QActionGroup, ?A.., QColorDialog,
-        ?CB, ?FD.., QFontComboBox, QMainWindow, QMenu, ?MB..,
+        ?CB, ?FD.., QFontComboBox, ?MW.., QMenu, ?MB..,
         ?TE.., QToolBar)
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter, QPrintPreviewDialog
 
@@ -388,7 +388,7 @@ c_ TextEdit ?MW..
                         "%s" % (?A...font().pointSize())))
 
     ___ load  f):
-        __ no. QFile.exists(f):
+        __ no. QFile.e..(f):
             r_ F..
 
         fh _ QFile(f)

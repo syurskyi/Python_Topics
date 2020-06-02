@@ -47,7 +47,7 @@ ____ ?.?G.. ______ (QFont, QIcon, ?KS.., QTextCharFormat,
         QTextCursor, QTextTableFormat)
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
 ____ ?.?W.. ______ (?A.., ?A.., QDialog, QDockWidget,
-        ?FD.., QListWidget, QMainWindow, ?MB.., ?TE..)
+        ?FD.., QListWidget, ?MW.., ?MB.., ?TE..)
 
 ______ dockwidgets_rc
 

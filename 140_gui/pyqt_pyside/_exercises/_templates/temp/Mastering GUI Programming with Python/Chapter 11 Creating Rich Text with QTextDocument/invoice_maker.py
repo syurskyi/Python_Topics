@@ -203,7 +203,7 @@ c_ InvoiceView(qtw.?TE..):
 
 
 
-c_ MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.?MW..):
 
     ___  -
         """MainWindow constructor."""

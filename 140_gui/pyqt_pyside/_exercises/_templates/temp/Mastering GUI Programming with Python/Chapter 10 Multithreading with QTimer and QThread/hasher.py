@@ -71,7 +71,7 @@ c_ HashRunner(qtc.QRunnable):
                 out.w..(f'{infile}\t{hash_string}\n')
 
 
-c_ HashManager(qtc.QObject):
+c_ HashManager(qtc.?O..):
 
     finished _ qtc.pS..()
 
@@ -95,7 +95,7 @@ c_ HashManager(qtc.QObject):
         finished.e..()
 
 
-c_ MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.?MW..):
 
     ___  - 
         """MainWindow constructor.

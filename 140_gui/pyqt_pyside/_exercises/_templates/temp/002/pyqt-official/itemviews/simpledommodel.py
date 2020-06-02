@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ QAbstractItemModel, QFile, QIODevice, QModelIndex, __
-____ ?.?W.. ______ ?A.., ?FD.., QMainWindow, QTreeView
+____ ?.?W.. ______ ?A.., ?FD.., ?MW.., QTreeView
 ____ ?.QtXml ______ QDomDocument
 
 

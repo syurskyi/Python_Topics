@@ -44,7 +44,7 @@
 
 ______ ___
 
-____ ?.?C.. ______ (pyqtProperty, Q_CLASSINFO, QCoreApplication, QObject,
+____ ?.?C.. ______ (pyqtProperty, Q_CLASSINFO, QCoreApplication, ?O..,
         QUrl)
 ____ ?.QtQml ______ (qmlRegisterType, QQmlComponent, QQmlEngine,
         QQmlListProperty)
@@ -66,7 +66,7 @@ BirthdayParty {
 '''
 
 
-c_ Person(QObject):
+c_ Person(?O..):
     ___  -   parent_None):
         super(Person, self). - (parent)
 
@@ -98,7 +98,7 @@ c_ Girl(Person):
     pass
 
 
-c_ BirthdayParty(QObject):
+c_ BirthdayParty(?O..):
     Q_CLASSINFO('DefaultProperty', 'guests')
 
     ___  -   parent_None):

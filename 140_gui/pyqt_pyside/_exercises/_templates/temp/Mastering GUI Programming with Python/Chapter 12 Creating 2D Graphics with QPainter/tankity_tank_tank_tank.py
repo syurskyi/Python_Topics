@@ -195,7 +195,7 @@ c_ Scene(qtw.QGraphicsScene):
             callback()
 
 
-c_ MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.?MW..):
 
     ___  -
         """MainWindow constructor.

@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ QFile, QRegExp, QTextCodec, QTextStream
 ____ ?.?W.. ______ (?A.., ?A.., ?CB, QDialog,
-        QDialogButtonBox, ?FD.., QGridLayout, QLabel, QMainWindow, QMenu,
+        QDialogButtonBox, ?FD.., QGridLayout, QLabel, ?MW.., QMenu,
         ?MB.., ?TE..)
 
 

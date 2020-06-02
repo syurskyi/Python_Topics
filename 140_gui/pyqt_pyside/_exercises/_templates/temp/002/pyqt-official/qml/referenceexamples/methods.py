@@ -44,7 +44,7 @@
 
 ______ ___
 
-____ ?.?C.. ______ (pyqtProperty, pyqtSlot, QCoreApplication, QObject,
+____ ?.?C.. ______ (pyqtProperty, pyqtSlot, QCoreApplication, ?O..,
         QUrl)
 ____ ?.QtQml ______ (qmlRegisterType, QQmlComponent, QQmlEngine,
         QQmlListProperty)
@@ -71,7 +71,7 @@ BirthdayParty {
 '''
 
 
-c_ Person(QObject):
+c_ Person(?O..):
     ___  -   parent_None):
         super(Person, self). - (parent)
 
@@ -95,7 +95,7 @@ c_ Person(QObject):
         _shoeSize _ shoeSize
 
 
-c_ BirthdayParty(QObject):
+c_ BirthdayParty(?O..):
     ___  -   parent_None):
         super(BirthdayParty, self). - (parent)
 

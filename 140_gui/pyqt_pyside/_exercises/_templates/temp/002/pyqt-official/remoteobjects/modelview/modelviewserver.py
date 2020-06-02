@@ -53,14 +53,14 @@
 
 ______ ___
 
-____ ?.?C.. ______ (pyqtSlot, QLoggingCategory, QModelIndex, QObject, __,
+____ ?.?C.. ______ (pyqtSlot, QLoggingCategory, QModelIndex, ?O.., __,
         QTimer, QUrl)
 ____ ?.?G.. ______ ?C.., QStandardItem, QStandardItemModel
 ____ ?.QtRemoteObjects ______ QRemoteObjectHost, QRemoteObjectRegistryHost
 ____ ?.?W.. ______ ?A.., QTreeView
 
 
-c_ TimerHandler(QObject):
+c_ TimerHandler(?O..):
 
     ___  -   model, parent_None):
         s_. - (parent)

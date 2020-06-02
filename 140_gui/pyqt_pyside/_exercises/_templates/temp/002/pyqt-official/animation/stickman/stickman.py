@@ -280,41 +280,41 @@ c_ StickMan(QGraphicsObject):
         ____
             # First bone is neck and will be used for head.
 
-            path _ QPainterPath()
-            path.moveTo(posFor(0))
-            path.lineTo(posFor(1))
+            pa__ _ QPainterPath()
+            pa__.moveTo(posFor(0))
+            pa__.lineTo(posFor(1))
 
             # Right arm.
-            path.lineTo(posFor(2))
-            path.lineTo(posFor(6))
-            path.lineTo(posFor(7))
+            pa__.lineTo(posFor(2))
+            pa__.lineTo(posFor(6))
+            pa__.lineTo(posFor(7))
 
             # Left arm.
-            path.moveTo(posFor(3))
-            path.lineTo(posFor(8))
-            path.lineTo(posFor(9))
+            pa__.moveTo(posFor(3))
+            pa__.lineTo(posFor(8))
+            pa__.lineTo(posFor(9))
 
             # Body.
-            path.moveTo(posFor(2))
-            path.lineTo(posFor(4))
-            path.lineTo(posFor(10))
-            path.lineTo(posFor(11))
-            path.lineTo(posFor(5))
-            path.lineTo(posFor(3))
-            path.lineTo(posFor(1))
+            pa__.moveTo(posFor(2))
+            pa__.lineTo(posFor(4))
+            pa__.lineTo(posFor(10))
+            pa__.lineTo(posFor(11))
+            pa__.lineTo(posFor(5))
+            pa__.lineTo(posFor(3))
+            pa__.lineTo(posFor(1))
 
             # Right leg.
-            path.moveTo(posFor(10))
-            path.lineTo(posFor(12))
-            path.lineTo(posFor(13))
+            pa__.moveTo(posFor(10))
+            pa__.lineTo(posFor(12))
+            pa__.lineTo(posFor(13))
 
             # Left leg.
-            path.moveTo(posFor(11))
-            path.lineTo(posFor(14))
-            path.lineTo(posFor(15))
+            pa__.moveTo(posFor(11))
+            pa__.lineTo(posFor(14))
+            pa__.lineTo(posFor(15))
 
             painter.setPen(QPen(m_penColor, 5.0, __.SolidLine, __.RoundCap))
-            painter.drawPath(path)
+            painter.drawPath(pa__)
 
             n1, n2 _ Bones[0]
             node1 _ m_nodes[n1]

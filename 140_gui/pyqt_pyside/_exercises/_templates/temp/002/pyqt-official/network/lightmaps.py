@@ -46,11 +46,11 @@
 
 ______ math
 
-____ ?.?C.. ______ (pS.., QBasicTimer, QObject, QPoint, QPointF,
+____ ?.?C.. ______ (pS.., QBasicTimer, ?O.., QPoint, QPointF,
         QRect, ?S.., QStandardPaths, __, QUrl)
 ____ ?.?G.. ______ (?C.., QDesktopServices, QImage, QPainter,
         QPainterPath, QPixmap, QRadialGradient)
-____ ?.?W.. ______ ?A.., ?A.., QMainWindow, ?W..
+____ ?.?W.. ______ ?A.., ?A.., ?MW.., ?W..
 ____ ?.QtNetwork ______ (QNetworkAccessManager, QNetworkDiskCache,
         QNetworkRequest)
 
@@ -108,7 +108,7 @@ ___ latitudeFromTile(ty, zoom):
     r_ lng
 
 
-c_ SlippyMap(QObject):
+c_ SlippyMap(?O..):
 
     updated _ pS..(QRect)
 
@@ -215,8 +215,8 @@ c_ SlippyMap(QObject):
             _url _ QUrl()
             r_
 
-        path _ 'http://tile.openstreetmap.org/%d/%d/%d.png' % (zoom, grab.x(), grab.y())
-        _url _ QUrl(path)
+        pa__ _ 'http://tile.openstreetmap.org/%d/%d/%d.png' % (zoom, grab.x(), grab.y())
+        _url _ QUrl(pa__)
         request _ QNetworkRequest()
         request.setUrl(_url)
         request.setRawHeader(b'User-Agent', b'Nokia (PyQt) Graphics Dojo 1.0')

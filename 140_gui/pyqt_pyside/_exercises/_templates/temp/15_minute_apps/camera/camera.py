@@ -82,9 +82,9 @@ c_ MainWindow ?MW..
         save_seq +_ 1
 
     ___ change_folder
-        path _ ?FD...getExistingDirectory  "Snapshot save location", "")
-        __ path:
-            save_path _ path
+        pa__ _ ?FD...getExistingDirectory  "Snapshot save location", "")
+        __ pa__:
+            save_path _ pa__
             save_seq _ 0
 
     ___ alert  s):

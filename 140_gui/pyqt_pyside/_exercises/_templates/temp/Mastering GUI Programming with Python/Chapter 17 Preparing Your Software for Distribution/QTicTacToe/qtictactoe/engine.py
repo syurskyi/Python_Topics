@@ -1,6 +1,6 @@
 ____ ? ______ ?C.. __ qtc
 
-c_ TicTacToeEngine(qtc.QObject):
+c_ TicTacToeEngine(qtc.?O..):
     """Engine for the game Tic Tac Toe"""
     winning_sets _ [
         # Across

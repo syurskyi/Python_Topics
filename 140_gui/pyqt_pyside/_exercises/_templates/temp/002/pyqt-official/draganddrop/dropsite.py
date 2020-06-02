@@ -84,7 +84,7 @@ c_ DropArea(QLabel):
             sT..(mimeData.t__())
             setTextFormat(__.PlainText)
         ____ mimeData.hasUrls
-            sT..("\n".join([url.path() ___ url __ mimeData.urls()]))
+            sT..("\n".join([url.pa__() ___ url __ mimeData.urls()]))
         ____
             sT..("Cannot display data")
 

@@ -44,12 +44,12 @@
 
 
 ____ ?.?C.. ______ QUrl
-____ ?.?W.. ______ ?A.., QMainWindow, QTreeWidgetItem
+____ ?.?W.. ______ ?A.., ?MW.., QTreeWidgetItem
 
 ____ ui_window ______ Ui_Window
 
 
-c_ Window(QMainWindow, Ui_Window):
+c_ Window(?MW.., Ui_Window):
     ___  -   parent_None):
         super(Window, self). - (parent)
 

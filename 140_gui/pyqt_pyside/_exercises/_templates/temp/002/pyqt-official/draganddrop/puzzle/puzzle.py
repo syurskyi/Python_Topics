@@ -48,7 +48,7 @@ ____ ?.?C.. ______ (pS.., QByteArray, QDataStream, QIODevice,
         QMimeData, QPoint, QRect, ?S.., __)
 ____ ?.?G.. ______ QDrag, ?C.., QCursor, QIcon, QPainter, QPixmap
 ____ ?.?W.. ______ (?A.., ?FD.., QFrame, QHBoxLayout,
-        QListView, QListWidget, QListWidgetItem, QMainWindow, ?MB..,
+        QListView, QListWidget, QListWidgetItem, ?MW.., ?MB..,
         QSizePolicy, ?W..)
 
 ______ puzzle_rc
@@ -278,13 +278,13 @@ c_ MainWindow ?MW..
         sWT..("Puzzle")
 
     ___ openImage  path_None):
-        __ no. path:
-            path, _ _ ?FD...gOFN..  "Open Image", '',
+        __ no. pa__:
+            pa__, _ _ ?FD...gOFN..  "Open Image", '',
                     "Image Files (*.png *.jpg *.bmp)")
 
-        __ path:
+        __ pa__:
             newImage _ QPixmap()
-            __ no. newImage.load(path):
+            __ no. newImage.load(pa__):
                 ?MB...warning  "Open Image",
                         "The image file could not be loaded.",
                         ?MB...Cancel)

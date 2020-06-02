@@ -6,7 +6,7 @@ ____ ? ______ ?C.. __ qtc
 ____ ? ______ QtNetwork __ qtn
 
 
-c_ Poster(qtc.QObject):
+c_ Poster(qtc.?O..):
 
     # emit body of reply
     replyReceived _ qtc.pS.. st.
@@ -58,7 +58,7 @@ c_ Poster(qtc.QObject):
 
 
 
-c_ MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.?MW..):
 
     ___  -
         """MainWindow constructor.

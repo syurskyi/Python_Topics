@@ -54,11 +54,11 @@
 ______ ___
 
 ____ ?.?C.. ______ (pyqtProperty, pS.., pyqtSlot, QCoreApplication,
-        QObject, QTimer, QUrl)
+        ?O.., QTimer, QUrl)
 ____ ?.QtRemoteObjects ______ QRemoteObjectHost, QRemoteObjectRegistryHost
 
 
-c_ SimpleSwitch(QObject):
+c_ SimpleSwitch(?O..):
 
     ___  -   parent_None):
         s_. - (parent)

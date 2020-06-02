@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ (QAbstractItemModel, QFile, QIODevice,
         QItemSelectionModel, QModelIndex, __)
-____ ?.?W.. ______ ?A.., QMainWindow
+____ ?.?W.. ______ ?A.., ?MW..
 
 ______ editabletreemodel_rc
 ____ ui_mainwindow ______ Ui_MainWindow
@@ -297,7 +297,7 @@ c_ TreeModel(QAbstractItemModel):
             number +_ 1
 
 
-c_ MainWindow(QMainWindow, Ui_MainWindow):
+c_ MainWindow(?MW.., Ui_MainWindow):
     ___  -   parent_None):
         super(MainWindow, self). - (parent)
 

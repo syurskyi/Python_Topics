@@ -34,7 +34,7 @@ _ACTIVE_NOTES _   # dict
 ___ create_new_note
     MainWindow()
 
-c_ MainWindow(QMainWindow, Ui_MainWindow):
+c_ MainWindow(?MW.., Ui_MainWindow):
     ___  -   $ obj_None, $$):
         super(MainWindow, self). - ($ $$)
         setupUi

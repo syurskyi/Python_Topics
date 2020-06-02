@@ -46,7 +46,7 @@ ____ ?.?C.. ______ QDate, __
 ____ ?.?G.. ______ (QFont, QTextCharFormat, QTextCursor, QTextFrameFormat,
         QTextLength, QTextTableFormat)
 ____ ?.?W.. ______ (?A.., QCheckBox, QDialog,
-        QDialogButtonBox, QGridLayout, QLabel, QLineEdit, QMainWindow,
+        QDialogButtonBox, QGridLayout, QLabel, QLineEdit, ?MW..,
         ?MB.., QMenu, QTableWidget, QTableWidgetItem, ?TW..,
         ?TE..)
 ____ ?.QtPrintSupport ______ QAbstractPrintDialog, QPrintDialog, QPrinter

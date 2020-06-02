@@ -43,12 +43,12 @@
 
 
 ____ ?.QtMultimedia ______ QAudio, QAudioDeviceInfo, QAudioFormat
-____ ?.?W.. ______ ?A.., QTableWidgetItem, QMainWindow
+____ ?.?W.. ______ ?A.., QTableWidgetItem, ?MW..
 
 ____ ui_audiodevicesbase ______ Ui_AudioDevicesBase
 
 
-c_ AudioDevicesBase(QMainWindow, Ui_AudioDevicesBase):
+c_ AudioDevicesBase(?MW.., Ui_AudioDevicesBase):
 
     ___  -   parent_None):
         super(AudioDevicesBase, self). - (parent)

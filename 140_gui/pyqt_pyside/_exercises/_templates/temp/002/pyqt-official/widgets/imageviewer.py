@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ QDir, __
 ____ ?.?G.. ______ QImage, QPainter, ?P.., QPixmap
 ____ ?.?W.. ______ (?A.., ?A.., ?FD.., QLabel,
-        QMainWindow, QMenu, ?MB.., QScrollArea, QSizePolicy)
+        ?MW.., QMenu, ?MB.., QScrollArea, QSizePolicy)
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
 
 

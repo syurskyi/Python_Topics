@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ QFile, QFileInfo, QSettings, __, QTextStream
 ____ ?.?G.. ______ ?KS..
-____ ?.?W.. ______ (?A.., ?A.., ?FD.., QMainWindow,
+____ ?.?W.. ______ (?A.., ?A.., ?FD.., ?MW..,
         ?MB.., ?TE..)
 
 

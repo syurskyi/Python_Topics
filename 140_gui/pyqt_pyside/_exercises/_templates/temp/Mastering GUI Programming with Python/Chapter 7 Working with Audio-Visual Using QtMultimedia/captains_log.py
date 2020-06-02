@@ -5,7 +5,7 @@ ____ ? ______ QtMultimedia __ qtmm
 ____ ? ______ QtMultimediaWidgets __ qtmmw
 
 
-c_ MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.?MW..):
 
     ___  -
         """MainWindow constructor.

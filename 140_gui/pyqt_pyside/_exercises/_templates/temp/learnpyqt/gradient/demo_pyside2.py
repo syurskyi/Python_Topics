@@ -2,7 +2,7 @@ ____ PySide2 ______ ?C.., ?G.., ?W..
 ____ gradient ______ Gradient
 
 
-c_ Window(?W...QMainWindow):
+c_ Window(?W...?MW..):
 
     ___  - 
         s_. - ()

@@ -48,7 +48,7 @@ ____ ?.?C.. ______ (pS.., QBuffer, QByteArray, QFileInfo,
 ____ ?.?G.. ______ (qBlue, ?C.., QDrag, qGreen, QImage, ?KS..,
         ?P.., QPixmap, qRed)
 ____ ?.?W.. ______ (?A.., QColorDialog, ?FD.., QFrame,
-        QGridLayout, QLabel, QLayout, QMainWindow, QMenu, ?MB..,
+        QGridLayout, QLabel, QLayout, ?MW.., QMenu, ?MB..,
         ?PB.., QVBoxLayout)
 
 
@@ -263,7 +263,7 @@ c_ Viewer ?MW..
 
         scaledImage _ QImage()
         menuMap _   # dict
-        path _ ''
+        pa__ _ ''
         brightness _ 255
 
         sWT..("QImage Color Separations")
@@ -359,11 +359,11 @@ c_ Viewer ?MW..
             and display it.
         """
         imageFile, _ _ ?FD...gOFN..
-                "Choose an image file to open", path, "Images (*.*)")
+                "Choose an image file to open", pa__, "Images (*.*)")
 
         __ imageFile !_ '':
             openImageFile(imageFile)
-            path _ imageFile
+            pa__ _ imageFile
 
     ___ setBrightness  action):
         """ Changes the value of the brightness according to the entry selected in the

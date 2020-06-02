@@ -106,10 +106,10 @@ c_ RenderArea(?W..):
     ___ paintEvent  event):
         rect _ QRect(10, 20, 80, 60)
 
-        path _ QPainterPath()
-        path.moveTo(20, 80)
-        path.lineTo(20, 30)
-        path.cubicTo(80, 0, 50, 50, 80, 80)
+        pa__ _ QPainterPath()
+        pa__.moveTo(20, 80)
+        pa__.lineTo(20, 30)
+        pa__.cubicTo(80, 0, 50, 50, 80, 80)
 
         startAngle _ 30 * 16
         arcLength _ 120 * 16
@@ -151,7 +151,7 @@ c_ RenderArea(?W..):
                 ____ shape __ RenderArea.Pie:
                     painter.drawPie(rect, startAngle, arcLength)
                 ____ shape __ RenderArea.Path:
-                    painter.drawPath(path)
+                    painter.drawPath(pa__)
                 ____ shape __ RenderArea.Text:
                     painter.drawText(rect, __.AlignCenter,
                             "PyQt by\nRiverbank Computing")

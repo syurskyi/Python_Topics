@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ __
 ____ ?.?G.. ______ ?KS..
 ____ ?.?W.. ______ (?A.., QActionGroup, ?A.., QFrame,
-        QLabel, QMainWindow, QMenu, ?MB.., QSizePolicy, QVBoxLayout,
+        QLabel, ?MW.., QMenu, ?MB.., QSizePolicy, QVBoxLayout,
         ?W..)
 
 

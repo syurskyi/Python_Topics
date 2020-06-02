@@ -43,7 +43,7 @@
 
 
 ____ ?.?C.. ______ pS.., pyqtSlot, Q_CLASSINFO
-____ ?.?W.. ______ ?A.., QDialog, QMainWindow, ?MB..
+____ ?.?W.. ______ ?A.., QDialog, ?MW.., ?MB..
 ____ ?.QtDBus ______ (QDBusAbstractAdaptor, QDBusAbstractInterface,
         QDBusConnection, QDBusMessage)
 
@@ -84,12 +84,12 @@ c_ ChatInterface(QDBusAbstractInterface):
 
     message _ pS..(str, str)
 
-    ___  -   service, path, connection, parent_None):
-        super(ChatInterface, self). - (service, path, 'org.example.chat',
+    ___  -   service, pa__, connection, parent_None):
+        super(ChatInterface, self). - (service, pa__, 'org.example.chat',
                 connection, parent)
 
 
-c_ ChatMainWindow(QMainWindow, Ui_ChatMainWindow):
+c_ ChatMainWindow(?MW.., Ui_ChatMainWindow):
 
     action _ pS..(str, str)
 

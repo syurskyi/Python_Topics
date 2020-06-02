@@ -44,7 +44,7 @@
 
 ______ ___
 
-____ ?.?C.. ______ pyqtProperty, QCoreApplication, QObject, QUrl
+____ ?.?C.. ______ pyqtProperty, QCoreApplication, ?O.., QUrl
 ____ ?.QtQml ______ qmlRegisterType, QQmlComponent, QQmlEngine
 
 
@@ -58,7 +58,7 @@ Person {
 '''
 
 
-c_ Person(QObject):
+c_ Person(?O..):
     ___  -   parent_None):
         super(Person, self). - (parent)
 

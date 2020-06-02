@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ QDir, QEvent, __, QT_TRANSLATE_NOOP, QTranslator
 ____ ?.?G.. ______ ?C.., ?P..
 ____ ?.?W.. ______ (?A.., ?A.., QCheckBox, QDialog,
-        QDialogButtonBox, QGridLayout, QGroupBox, QListWidget, QMainWindow,
+        QDialogButtonBox, QGridLayout, QGroupBox, QListWidget, ?MW..,
         QRadioButton, QVBoxLayout, ?W..)
 
 ______ i18n_rc

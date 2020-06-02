@@ -42,14 +42,14 @@
 #############################################################################
 
 
-____ ?.?C.. ______ QFile, QIODevice, QObject, QSizeF
+____ ?.?C.. ______ QFile, QIODevice, ?O.., QSizeF
 ____ ?.?G.. ______ QTextCharFormat, QTextFormat, QTextObjectInterface
 ____ ?.?W.. ______ (?A.., QHBoxLayout, QLabel, QLineEdit,
         ?MB.., ?PB.., ?TE.., QVBoxLayout, ?W..)
 ____ ?.QtSvg ______ QSvgRenderer
 
 
-c_ SvgTextObject(QObject, QTextObjectInterface):
+c_ SvgTextObject(?O.., QTextObjectInterface):
     ___ intrinsicSize  doc, posInDocument, format):
         renderer _ QSvgRenderer(format.property(Window.SvgData))
         size _ renderer.defaultSize()

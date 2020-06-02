@@ -1,10 +1,10 @@
 ______ ___
-____ os ______ path
+____ os ______ pa__
 ____ ? ______ QtNetwork __ qtn
 ____ ? ______ ?C.. __ qtc
 
 
-c_ Downloader(qtc.QObject):
+c_ Downloader(qtc.?O..):
 
     ___  -   url):
         s_. - ()
@@ -15,7 +15,7 @@ c_ Downloader(qtc.QObject):
 
     ___ on_finished  reply):
         filename _ reply.url().fileName() or 'download'
-        __ path.exists(filename):
+        __ pa__.e..(filename):
             print('File already exists, not overwriting.')
             ___.e..(1)
         w__ o..(filename, 'wb') __ fh:

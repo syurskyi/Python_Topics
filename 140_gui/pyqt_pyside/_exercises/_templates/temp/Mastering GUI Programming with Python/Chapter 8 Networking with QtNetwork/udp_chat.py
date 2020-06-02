@@ -4,7 +4,7 @@ ____ ? ______ QtNetwork __ qtn
 ____ ? ______ ?C.. __ qtc
 
 
-c_ UdpChatInterface(qtc.QObject):
+c_ UdpChatInterface(qtc.?O..):
     """Network interface for chat messages."""
 
     port _ 7777
@@ -84,7 +84,7 @@ c_ ChatWindow ?.?W..
             message_entry.c..
 
 
-c_ MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.?MW..):
 
     ___  - 
         """MainWindow constructor."""

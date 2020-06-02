@@ -44,7 +44,7 @@ ______ ___
 ____ xml.dom.minidom ______ parseString
 
 ____ ?.?C.. ______ (QByteArray, QDir, QEasingCurve, QFile, QFileInfo,
-        QLibraryInfo, QObject, QPointF, QProcess, QProcessEnvironment,
+        QLibraryInfo, ?O.., QPointF, QProcess, QProcessEnvironment,
         QStandardPaths, __, QT_VERSION, QT_VERSION_STR, QTextStream, QUrl)
 ____ ?.?W.. ______ ?A.., ?MB..
 
@@ -57,7 +57,7 @@ ____ score ______ Score
 ____ textbutton ______ TextButton
 
 
-c_ MenuManager(QObject):
+c_ MenuManager(?O..):
     ROOT, MENU1, MENU2, LAUNCH, DOCUMENTATION, QUIT, FULLSCREEN, UP, DOWN, \
             BACK, LAUNCH_QML _ ra..(11)
 
@@ -404,15 +404,15 @@ c_ MenuManager(QObject):
 
         fileName _ info[name]['filename'].sp..('/')[-1]
 
-        pyFile _ QFile(dir.path() + '/' + fileName + '.py')
-        __ pyFile.exists
+        pyFile _ QFile(dir.pa__() + '/' + fileName + '.py')
+        __ pyFile.e..
             r_ pyFile.fileName()
 
-        pywFile _ QFile(dir.path() + '/' + fileName + '.pyw')
-        __ pywFile.exists
+        pywFile _ QFile(dir.pa__() + '/' + fileName + '.pyw')
+        __ pywFile.e..
             r_ pywFile.fileName()
 
-        Colors.debug("- WARNING: Could not resolve executable:", dir.path(),
+        Colors.debug("- WARNING: Could not resolve executable:", dir.pa__(),
                 fileName)
         r_ '__executable not found__'
 
@@ -421,11 +421,11 @@ c_ MenuManager(QObject):
 
         fileName _ info[name]['filename'].sp..('/')[-1]
 
-        qmlFile _ QFile(dir.path() + '/' + fileName + '.qml')
-        __ qmlFile.exists
+        qmlFile _ QFile(dir.pa__() + '/' + fileName + '.qml')
+        __ qmlFile.e..
             r_ qmlFile.fileName()
 
-        Colors.debug("- WARNING: Could not resolve QML file:", dir.path(),
+        Colors.debug("- WARNING: Could not resolve QML file:", dir.pa__(),
                 fileName)
         r_ '__QML not found__'
 

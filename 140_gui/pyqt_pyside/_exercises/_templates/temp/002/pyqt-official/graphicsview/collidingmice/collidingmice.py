@@ -92,9 +92,9 @@ c_ Mouse(QGraphicsItem):
         r_ Mouse.BoundingRect
 
     ___ shape
-        path _ QPainterPath()
-        path.addRect(-10, -20, 20, 40)
-        r_ path;
+        pa__ _ QPainterPath()
+        pa__.addRect(-10, -20, 20, 40)
+        r_ pa__;
 
     ___ paint  painter, option, widget):
         # Body.
@@ -124,12 +124,12 @@ c_ Mouse(QGraphicsItem):
         painter.drawEllipse(1, -12, 16, 16)
 
         # Tail.
-        path _ QPainterPath(QPointF(0, 20))
-        path.cubicTo(-5, 22, -5, 22, 0, 25)
-        path.cubicTo(5, 27, 5, 32, 0, 30)
-        path.cubicTo(-5, 32, -5, 42, 0, 35)
+        pa__ _ QPainterPath(QPointF(0, 20))
+        pa__.cubicTo(-5, 22, -5, 22, 0, 25)
+        pa__.cubicTo(5, 27, 5, 32, 0, 30)
+        pa__.cubicTo(-5, 32, -5, 42, 0, 35)
         painter.setBrush(__.NoBrush)
-        painter.drawPath(path)
+        painter.drawPath(pa__)
 
     ___ timerEvent
         # Don't move too far away.

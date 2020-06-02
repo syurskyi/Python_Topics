@@ -109,13 +109,13 @@ c_ Window(QDialog):
 
         fileName _ fileComboBox.currentText()
         t__ _ textComboBox.currentText()
-        path _ directoryComboBox.currentText()
+        pa__ _ directoryComboBox.currentText()
 
         updateComboBox(fileComboBox)
         updateComboBox(textComboBox)
         updateComboBox(directoryComboBox)
 
-        currentDir _ QDir(path)
+        currentDir _ QDir(pa__)
         __ no. fileName:
             fileName _ "*"
         files _ currentDir.entryList([fileName],

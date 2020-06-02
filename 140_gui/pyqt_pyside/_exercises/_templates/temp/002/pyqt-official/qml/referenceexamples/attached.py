@@ -45,7 +45,7 @@
 ______ ___
 
 ____ ?.?C.. ______ (pyqtProperty, Q_CLASSINFO, QCoreApplication, QDate,
-        QObject, QUrl)
+        ?O.., QUrl)
 ____ ?.?G.. ______ ?C..
 ____ ?.QtQml ______ (qmlAttachedPropertiesObject, qmlRegisterType,
         QQmlComponent, QQmlEngine, QQmlListProperty)
@@ -75,7 +75,7 @@ BirthdayParty {
 '''
 
 
-c_ ShoeDescription(QObject):
+c_ ShoeDescription(?O..):
     ___  -   parent_None):
         super(ShoeDescription, self). - (parent)
 
@@ -117,7 +117,7 @@ c_ ShoeDescription(QObject):
         _price _ price
 
 
-c_ Person(QObject):
+c_ Person(?O..):
     ___  -   parent_None):
         super(Person, self). - (parent)
 
@@ -145,7 +145,7 @@ c_ Girl(Person):
     pass
 
 
-c_ BirthdayPartyAttached(QObject):
+c_ BirthdayPartyAttached(?O..):
     ___  -   parent):
         super(BirthdayPartyAttached, self). - (parent)
 
@@ -160,7 +160,7 @@ c_ BirthdayPartyAttached(QObject):
         _rsvp _ rsvp
 
 
-c_ BirthdayParty(QObject):
+c_ BirthdayParty(?O..):
     Q_CLASSINFO('DefaultProperty', 'guests')
 
     ___  -   parent_None):

@@ -50,7 +50,7 @@ while current:
 
 
 
-class WorkerSignals(QObject):
+class WorkerSignals(?O..):
     '''
     Defines the signals available from a running worker thread.
     '''
@@ -98,7 +98,7 @@ class UpdateWorker(QRunnable):
                     break
 
 
-        _____ Exception as e:
+        _____ E.. as e:
             print(e)
             exctype, value = sys.exc_info()[:2]
             signals.error.e..((exctype, value, traceback.format_exc()))
@@ -111,7 +111,7 @@ class UpdateWorker(QRunnable):
 
 
 
-class MainWindow(QMainWindow):
+class MainWindow(?MW..):
 
     def  - (self, $ $$
         super(MainWindow, self). - ($ $$)

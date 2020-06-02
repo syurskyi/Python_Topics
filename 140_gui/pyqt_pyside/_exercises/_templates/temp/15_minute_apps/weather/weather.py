@@ -25,7 +25,7 @@ ___ from_ts_to_time_of_day(ts):
     r_ dt.strftime("%I%p").lstrip("0")
 
 
-c_ WorkerSignals(QObject):
+c_ WorkerSignals(?O..):
     '''
     Defines the signals available from a running worker thread.
     '''
@@ -58,7 +58,7 @@ c_ WeatherWorker(QRunnable):
 
             # Check if we had a failure (the forecast will fail in the same way).
             __ weather['cod'] !_ 200:
-                raise Exception(weather['message'])
+                raise E..(weather['message'])
 
             url _ 'http://api.openweathermap.org/data/2.5/forecast?%s&units=metric' % urlencode(params)
             r _ requests.g..(url)
@@ -66,14 +66,14 @@ c_ WeatherWorker(QRunnable):
 
             signals.result.e..(weather, forecast)
 
-        _____ Exception __ e:
+        _____ E.. __ e:
             signals.error.e..(str(e))
 
         signals.finished.e..()
 
 
 
-c_ MainWindow(QMainWindow, Ui_MainWindow):
+c_ MainWindow(?MW.., Ui_MainWindow):
 
     ___  -   $ $$
         super(MainWindow, self). - ($ $$)

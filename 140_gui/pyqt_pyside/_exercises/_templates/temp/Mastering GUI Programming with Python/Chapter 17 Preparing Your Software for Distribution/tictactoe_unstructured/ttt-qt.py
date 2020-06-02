@@ -11,7 +11,7 @@ ____ ? ______ ?G.. __ qtg
 ____ ? ______ ?C.. __ qtc
 
 
-c_ TicTacToeEngine(qtc.QObject):
+c_ TicTacToeEngine(qtc.?O..):
     """Engine for the game Tic Tac Toe"""
     winning_sets _ [
         # Across
@@ -109,7 +109,7 @@ c_ TTTBoard(qtw.QGraphicsScene):
                 square_clicked.e..(square)
                 break
 
-c_ MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.?MW..):
 
     ___  -
         """MainWindow constructor."""

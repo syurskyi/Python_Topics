@@ -78,7 +78,7 @@ c_ MainWindow ?MW..
 
         # self.path holds the path of the currently open file.
         # If none, we haven't got a file open yet (or creating new).
-        path _ N..
+        pa__ _ N..
 
         layout.aW..(editor)
 
@@ -306,53 +306,53 @@ c_ MainWindow ?MW..
         dlg.s..
 
     ___ file_open
-        path, _ _ ?FD...gOFN..  "Open file", "", "HTML documents (*.html);Text documents (*.txt);All files (*.*)")
+        pa__, _ _ ?FD...gOFN..  "Open file", "", "HTML documents (*.html);Text documents (*.txt);All files (*.*)")
 
         ___
-            w__ o..(path, 'rU') __ f:
+            w__ o..(pa__, 'rU') __ f:
                 t__ _ f.read()
 
-        _____ Exception __ e:
+        _____ E.. __ e:
             dialog_critical(str(e))
 
         ____
-            path _ path
+            pa__ _ pa__
             # Qt will automatically try and guess the format as txt/html
             editor.sT..(t__)
             update_title()
 
     ___ file_save
-        __ path __ N..:
+        __ pa__ __ N..:
             # If we do not have a path, we need to use Save As.
             r_ file_saveas()
 
-        t__ _ editor.toHtml() __ splitext(path) __ HTML_EXTENSIONS ____ editor.toPlainText()
+        t__ _ editor.toHtml() __ splitext(pa__) __ HTML_EXTENSIONS ____ editor.toPlainText()
 
         ___
-            w__ o..(path, 'w') __ f:
+            w__ o..(pa__, 'w') __ f:
                 f.w..(t__)
 
-        _____ Exception __ e:
+        _____ E.. __ e:
             dialog_critical(str(e))
 
     ___ file_saveas
-        path, _ _ ?FD...getSaveFileName  "Save file", "", "HTML documents (*.html);Text documents (*.txt);All files (*.*)")
+        pa__, _ _ ?FD...getSaveFileName  "Save file", "", "HTML documents (*.html);Text documents (*.txt);All files (*.*)")
 
-        __ no. path:
+        __ no. pa__:
             # If dialog is cancelled, will return ''
             r_
 
-        t__ _ editor.toHtml() __ splitext(path) __ HTML_EXTENSIONS ____ editor.toPlainText()
+        t__ _ editor.toHtml() __ splitext(pa__) __ HTML_EXTENSIONS ____ editor.toPlainText()
 
         ___
-            w__ o..(path, 'w') __ f:
+            w__ o..(pa__, 'w') __ f:
                 f.w..(t__)
 
-        _____ Exception __ e:
+        _____ E.. __ e:
             dialog_critical(str(e))
 
         ____
-            path _ path
+            pa__ _ pa__
             update_title()
 
     ___ file_print
@@ -361,7 +361,7 @@ c_ MainWindow ?MW..
             editor.print_(dlg.printer())
 
     ___ update_title
-        sWT..("%s - Megasolid Idiom" % (__.p__ .basename(path) __ path ____ "Untitled"))
+        sWT..("%s - Megasolid Idiom" % (__.p__ .basename(pa__) __ pa__ ____ "Untitled"))
 
     ___ edit_toggle_wrap
         editor.setLineWrapMode( 1 __ editor.lineWrapMode() __ 0 ____ 0 )

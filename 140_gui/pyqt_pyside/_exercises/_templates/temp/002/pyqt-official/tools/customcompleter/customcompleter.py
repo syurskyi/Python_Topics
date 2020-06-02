@@ -44,7 +44,7 @@
 
 ____ ?.?C.. ______ QFile, QStringListModel, __
 ____ ?.?G.. ______ QCursor, ?KS.., QTextCursor
-____ ?.?W.. ______ (?A.., ?A.., QCompleter, QMainWindow,
+____ ?.?W.. ______ (?A.., ?A.., QCompleter, ?MW..,
         ?MB.., ?TE..)
 
 ______ customcompleter_rc

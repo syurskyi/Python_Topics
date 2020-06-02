@@ -84,7 +84,7 @@ LANGUAGES = {
 }
 
 
-class MainWindow(QMainWindow, Ui_MainWindow):
+class MainWindow(?MW.., Ui_MainWindow):
 
     def  - (self, $ $$
         super(MainWindow, self). - ($ $$)
@@ -120,7 +120,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         ___
             tr = translator.translate(**params)
 
-        _____ Exception:
+        _____ E..:
             destTextEdit.setPlainText('Google translate error :(. Try translating from English')
             return F..
 

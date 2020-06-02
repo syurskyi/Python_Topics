@@ -93,7 +93,7 @@ c_ MoviePlayer(?W..):
             openFile(fileName)
 
     ___ openFile  fileName):
-        currentMovieDirectory _ QFileInfo(fileName).path()
+        currentMovieDirectory _ QFileInfo(fileName).pa__()
 
         movie.stop()
         movieLabel.setMovie(movie)

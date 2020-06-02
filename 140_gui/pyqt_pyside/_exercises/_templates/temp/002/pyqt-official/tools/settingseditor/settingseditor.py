@@ -50,7 +50,7 @@ ____ ?.?G.. ______ ?C.., QIcon, QRegExpValidator, ?V..
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., ?A..,
         ?CB, QDialog, QDialogButtonBox, ?FD.., QGridLayout,
         QGroupBox, QHeaderView, QInputDialog, QItemDelegate, QLabel, QLineEdit,
-        QMainWindow, ?MB.., QStyle, QStyleOptionViewItem, QTableWidget,
+        ?MW.., ?MB.., QStyle, QStyleOptionViewItem, QTableWidget,
         QTableWidgetItem, QTreeWidget, QTreeWidgetItem, QVBoxLayout)
 
 
@@ -103,12 +103,12 @@ c_ MainWindow ?MW..
             fallbacksAct.sE.. F..
 
     ___ openRegistryPath
-        path, ok _ QInputDialog.getText  "Open Registry Path",
+        pa__, ok _ QInputDialog.getText  "Open Registry Path",
                 "Enter the path in the Windows registry:", QLineEdit.Normal,
                 'HKEY_CURRENT_USER\\')
 
-        __ ok and path !_ '':
-            settings _ QSettings(path, QSettings.NativeFormat)
+        __ ok and pa__ !_ '':
+            settings _ QSettings(pa__, QSettings.NativeFormat)
             setSettingsObject(settings)
             fallbacksAct.sE.. F..
 

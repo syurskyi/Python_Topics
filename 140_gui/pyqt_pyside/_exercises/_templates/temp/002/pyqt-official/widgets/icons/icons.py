@@ -46,7 +46,7 @@ ____ ?.?C.. ______ QFileInfo, QRegExp, ?S.., __
 ____ ?.?G.. ______ QIcon, QImage, ?P.., QPixmap
 ____ ?.?W.. ______ (QAbstractItemView, ?A.., QActionGroup,
         ?A.., ?CB, ?FD.., QFrame, QGridLayout, QGroupBox,
-        QHBoxLayout, QHeaderView, QItemDelegate, QLabel, QMainWindow,
+        QHBoxLayout, QHeaderView, QItemDelegate, QLabel, ?MW..,
         ?MB.., QRadioButton, QSizePolicy, SB.., QStyle,
         QStyleFactory, QTableWidget, QTableWidgetItem, QVBoxLayout, ?W..)
 

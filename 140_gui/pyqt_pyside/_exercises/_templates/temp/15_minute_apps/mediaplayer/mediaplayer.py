@@ -37,7 +37,7 @@ c_ PlaylistModel(QAbstractListModel):
         r_ playlist.mediaCount()
 
 
-c_ MainWindow(QMainWindow, Ui_MainWindow):
+c_ MainWindow(?MW.., Ui_MainWindow):
     ___  -   $ $$
         super(MainWindow, self). - ($ $$)
         setupUi
@@ -107,12 +107,12 @@ c_ MainWindow(QMainWindow, Ui_MainWindow):
             player.play()
 
     ___ open_file
-        path, _ _ ?FD...gOFN..  "Open file", "", "mp3 Audio (*.mp3);mp4 Video (*.mp4);Movie files (*.mov);All files (*.*)")
+        pa__, _ _ ?FD...gOFN..  "Open file", "", "mp3 Audio (*.mp3);mp4 Video (*.mp4);Movie files (*.mov);All files (*.*)")
 
-        __ path:
+        __ pa__:
             playlist.addMedia(
                 QMediaContent(
-                    QUrl.fromLocalFile(path)
+                    QUrl.fromLocalFile(pa__)
                 )
             )
 

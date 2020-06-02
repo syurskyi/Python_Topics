@@ -48,7 +48,7 @@ ____ ?.QtMultimedia ______ (QAudioEncoderSettings, QCamera,
         QCameraImageCapture, QImageEncoderSettings, QMediaMetaData,
         QMediaRecorder, QMultimedia, QVideoEncoderSettings)
 ____ ?.?W.. ______ (?A.., QActionGroup, ?A.., QDialog,
-        QMainWindow, ?MB..)
+        ?MW.., ?MB..)
 
 ____ ui_camera ______ Ui_Camera
 ____ ui_imagesettings ______ Ui_ImageSettingsUi

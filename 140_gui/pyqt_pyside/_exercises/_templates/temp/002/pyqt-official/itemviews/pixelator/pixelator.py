@@ -47,7 +47,7 @@ ____ ?.?C.. ______ (?ATM.., QDir, QModelIndex, QRect,
 ____ ?.?G.. ______ QBrush, qGray, QImage, QPainter
 ____ ?.QtPrintSupport ______ QPrintDialog, QPrinter
 ____ ?.?W.. ______ (QAbstractItemDelegate, ?A.., QDialog,
-        ?FD.., QHBoxLayout, QLabel, QMainWindow, ?MB.., QMenu,
+        ?FD.., QHBoxLayout, QLabel, ?MW.., ?MB.., QMenu,
         QProgressDialog, SB.., QStyle, QStyleOptionViewItem, QTableView,
         QVBoxLayout, ?W..)
 

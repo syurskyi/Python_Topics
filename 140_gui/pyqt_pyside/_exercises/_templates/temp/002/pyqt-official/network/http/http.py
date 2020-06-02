@@ -108,13 +108,13 @@ c_ HttpWindow(QDialog):
 
     ___ downloadFile 
         url _ QUrl(urlLineEdit.t__())
-        fileInfo _ QFileInfo(url.path())
+        fileInfo _ QFileInfo(url.pa__())
         fileName _ fileInfo.fileName()
 
         __ no. fileName:
             fileName _ 'index.html'
 
-        __ QFile.exists(fileName):
+        __ QFile.e..(fileName):
             ret _ ?MB...q..  "HTTP",
                     "There already exists a file called %s in the current "
                     "directory. Overwrite?" % fileName,
@@ -185,7 +185,7 @@ c_ HttpWindow(QDialog):
                 startRequest(url)
                 r_
         ____
-            fileName _ QFileInfo(QUrl(urlLineEdit.t__()).path()).fileName()
+            fileName _ QFileInfo(QUrl(urlLineEdit.t__()).pa__()).fileName()
             statusLabel.sT..("Downloaded %s to %s." % (fileName, QDir.currentPath()))
 
             downloadButton.sE..( st.

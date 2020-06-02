@@ -42,14 +42,14 @@
 ______ ___
 
 ____ ?.?C.. ______ pyqtSlot
-____ ?.?W.. ______ (?A.., QLabel, QLineEdit, QMainWindow,
+____ ?.?W.. ______ (?A.., QLabel, QLineEdit, ?MW..,
         ?MB.., QProgressBar)
 
 ______ mainwindow_rc
 ____ ui_mainwindow ______ Ui_MainWindow
 
 
-c_ MainWindow(QMainWindow, Ui_MainWindow):
+c_ MainWindow(?MW.., Ui_MainWindow):
     # Maintain the list of browser windows so that they do not get garbage
     # collected.
     _window_list _   # list

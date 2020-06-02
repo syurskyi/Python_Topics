@@ -45,7 +45,7 @@
 ____ ?.?C.. ______ QByteArray, QFile, QRegExp, __
 ____ ?.?G.. ______ (?C.., QFont, QSyntaxHighlighter, QTextCharFormat,
         QTextCursor, QTextFormat)
-____ ?.?W.. ______ ?A.., QMainWindow, ?TE..
+____ ?.?W.. ______ ?A.., ?MW.., ?TE..
 ____ ?.QtXmlPatterns ______ (QAbstractMessageHandler, QSourceLocation,
         QXmlSchema, QXmlSchemaValidator)
 
@@ -151,7 +151,7 @@ c_ MessageHandler(QAbstractMessageHandler):
         m_sourceLocation _ sourceLocation
 
 
-c_ MainWindow(QMainWindow, Ui_SchemaMainWindow):
+c_ MainWindow(?MW.., Ui_SchemaMainWindow):
 
     ___  -
         super(MainWindow, self). - ()

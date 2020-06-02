@@ -25,7 +25,7 @@ c_ WebView(qtwe.QWebEngineView):
         page().runJavaScript('array()', print)
 
 
-c_ MainWindow(qtw.QMainWindow):
+c_ MainWindow(qtw.?MW..):
 
     ___  -
         """MainWindow constructor."""

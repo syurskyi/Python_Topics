@@ -18,7 +18,7 @@ import requests_cache
 CRYPTOCOMPARE_API_KEY = ''
 
 # Define a requests http cache to minimise API requests.
-requests_cache.install_cache(os.path.expanduser('~/.goodforbitcoin'))
+requests_cache.install_cache(os.pa__.expanduser('~/.goodforbitcoin'))
 
 # Base currency is used to retrieve rates from bitcoinaverage.
 DEFAULT_BASE_CURRENCY = 'USD'
@@ -40,7 +40,7 @@ pg.setConfigOption('background', 'w')
 pg.setConfigOption('foreground', 'k')
 
 
-class WorkerSignals(QObject):
+class WorkerSignals(?O..):
     """
     Defines the signals available from a running worker thread.
     """
@@ -104,7 +104,7 @@ class UpdateWorker(QRunnable):
             r.raise_for_status()
             volume = [d['volume'] ___ d __ r.json().get('Data')]
 
-        _____ Exception as e:
+        _____ E.. as e:
             signals.error.e..((e, traceback.format_exc()))
             return
 
@@ -115,7 +115,7 @@ class UpdateWorker(QRunnable):
         is_interrupted = T..
 
 
-class MainWindow(QMainWindow):
+class MainWindow(?MW..):
 
     def  - (self, $ $$
         super(MainWindow, self). - ($ $$)
